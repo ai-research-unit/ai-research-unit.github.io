@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Algebraic Varieties — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-algebraic-varieties"><strong>Real Algebraic Varieties</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>real algebraic variety</strong> is a variety of finite type over $\mathbb{R}$, and it is the real form of its complexification: the complex variety $X_{\mathbb{C}} = X\times_{\mathbb{R}}\mathbb{C}$ carries the conjugation over $\mathbb{R}$, and $X$ is the fixed locus. The real points $X(\mathbb{R})$ are the $\mathbb{R}$-points, they form a <strong>semialgebraic</strong> set with the topology of the real line, and their orders are recorded by a second spectrum built from the orderings rather than from the prime ideals: the <strong>real spectrum</strong> $\operatorname{Spec}_r$, whose points are the orderings of the residue fields. Between the two lies the <strong>semialgebraic structure</strong>, the Boolean algebra of the sets defined by polynomial inequalities, and above it the <strong>Nash structure</strong>, the same sets with the smooth structure that Part III supplies. This article fixes the real variety, the real points and their topology, the real spectrum with the real Nullstellensatz, and the semialgebraic structure, and it names and defers the Nash structure. It is the third article of the <code>- * Theory</code> group.</p>
+<p>The article reads the real structure of <em>Real Structures on Varieties and Galois Descent</em> at the level of the real points, and it is the foundational article for <em>Real Structures on a Curve</em>, later in this group, where the number of the connected components of the real points is classified by the genus. The orderings it uses are Part I's <em>Ordered Fields</em> and <em>Real-Closed and Complete Ordered Fields</em>, with the quantifier elimination of the latter; the topology of the real points is the written <em>Real Topology</em> of this Part, with its connectedness and compactness; the bilinear and quadratic forms of <em>The Weil Restriction and the Trace Form</em> and of the written <em>Quadratic Forms and Polarisation</em> supply the positivity that the orderings express. The <strong>smooth</strong> structure — the real manifold of the regular real points and the Nash refinement of the semialgebraic sheaf — is Part III, and it is named here with an explicit deferral in the terms the boundary of this Part allows.</p>
+<p>Throughout $X$ is a variety of finite type over $\mathbb{R}$, $A = \Gamma(X,\mathcal{O}_X)$ its coordinate ring when affine, $X(\mathbb{R})$ its set of real points, and $X_{\mathbb{C}}$ its complexification. The real spectrum is $\operatorname{Spec}_r A$; the support of a point is its prime ideal.</p>
+<h2 id="real-algebraic-varieties-and-the-real-points">Real Algebraic Varieties and the Real Points</h2>
+<h3 id="real-forms-and-the-complexification">Real Forms and the Complexification</h3>
+<p><strong>Definition.</strong> A <strong>real algebraic variety</strong> is a variety $X$ of finite type over $\mathbb{R}$. Its <strong>complexification</strong> is $X_{\mathbb{C}} = X\times_{\mathbb{R}}\mathbb{C}$, carrying the real structure — the conjugation — that is the descent datum of <em>Real Structures on Varieties and Galois Descent</em>, and $X$ is the fixed locus of the conjugation: $X = (X_{\mathbb{C}})^\sigma$. Two real varieties are <strong>real forms</strong> of the same complex variety when their complexifications are isomorphic over $\mathbb{C}$.</p>
+<p><strong>Proposition (the real points are the fixed points).</strong> The real points are the fixed locus of the conjugation on the complex points,
+$$
+X(\mathbb{R}) = X_{\mathbb{C}}(\mathbb{C})^{\sigma},
+$$
+and the fixed-point theorem of <em>The Galois Action as an Operator</em> identifies them with the $\mathbb{R}$-points of the descended variety.</p>
+<p><em>Proof.</em> This is the real-points theorem of <em>Real Structures on Varieties and Galois Descent</em> applied to the conjugation of $\mathbb{C}/\mathbb{R}$, with the fixed locus of the real structure.</p>
+<p><strong>Example (real forms of the affine line and of the conic).</strong> The complexification of $\mathbb{A}^1_{\mathbb{R}}$ is $\mathbb{A}^1_{\mathbb{C}}$ with the conjugation, and $\mathbb{A}^1_{\mathbb{R}}$ has the real points $\mathbb{R}$. The conic $x^2+y^2+z^2 = 0$ over $\mathbb{R}$ has the same complexification $\mathbb{P}^1_{\mathbb{C}}$ as $\mathbb{P}^1_{\mathbb{R}}$ but no real point, so the two are nonisomorphic real forms of the projective line; real points can be empty for a nonempty real variety.</p>
+<h3 id="the-real-topology-of-the-real-points">The Real Topology of the Real Points</h3>
+<p><strong>Definition.</strong> The set $X(\mathbb{R})$ carries the <strong>real topology</strong> (also the <strong>strong topology</strong>), the topology it inherits from the metric topology of $\mathbb{R}$ through the coordinates: it is the coarsest topology that makes every regular function $X(\mathbb{R})\to\mathbb{R}$ continuous, and on an affine chart it is the topology induced from the metric topology of $\mathbb{R}^m$ by the coordinate functions.</p>
+<p><strong>Theorem (the real points as a topological space).</strong> For $X$ of finite type over $\mathbb{R}$ the real points $X(\mathbb{R})$ are a locally compact, locally closed and locally path-connected topological space; for $X$ affine they are a closed subspace of some $\mathbb{R}^m$, and for $X$ projective they are compact. The set $X(\mathbb{R})$ is a finite union of connected components, and the number of components of a semialgebraic set is finite.</p>
+<p><em>Proof.</em> On an affine chart $X\subseteq\mathbb{A}^m_{\mathbb{R}}$ the set $X(\mathbb{R})$ is the zero locus of the defining polynomials, closed in $\mathbb{R}^m$ by continuity, and locally compact because $\mathbb{R}^m$ is; a projective $X$ is a closed subspace of some $\mathbb{P}^m(\mathbb{R})$, which is compact, so $X(\mathbb{R})$ is compact. The finiteness of the number of the connected components is the semialgebraic finiteness theorem: a semialgebraic set of $\mathbb{R}^m$ has finitely many connected components, each semialgebraic, by the argument of the next section and the connectedness of <em>Real Topology</em>.</p>
+<p><strong>Remark (the topology at a regular point, and the deferral).</strong> At a real point of $X$ at which the local ring is regular, the real points of a neighbourhood form a real manifold of dimension $\dim X$: the coordinate functions give local coordinates. The <strong>smooth</strong> structure of the real algebraic variety — the atlas, the tangent space and the differentiable functions — is Part III's <em>Smooth Manifolds and Differential Topology</em>; this article records the topology of the real points and defers the differentiable structure to that article.</p>
+<h2 id="the-real-spectrum">The Real Spectrum</h2>
+<h3 id="orderings-and-the-real-spectrum">Orderings and the Real Spectrum</h3>
+<p><strong>Definition.</strong> Let $A$ be a commutative ring. The <strong>real spectrum</strong> $\operatorname{Spec}_r A$ is the set of pairs $\alpha = (\mathfrak{p},\leq)$, where $\mathfrak{p}$ is a prime ideal of $A$ and $\leq$ is an ordering of the residue field $\kappa(\mathfrak{p}) = \operatorname{Frac}(A/\mathfrak{p})$ that makes it an ordered field. Equivalently, a point of the real spectrum is a ring homomorphism $A\to R$ into a real-closed field $R$, up to the equivalence of ordered extensions; the <strong>support</strong> of $\alpha$ is the prime $\mathfrak{p} = \operatorname{supp}\alpha$, and $\kappa(\alpha) = \kappa(\mathfrak{p})$ is its residue field.</p>
+<p><strong>Definition (the topology).</strong> The <strong>real spectrum</strong> carries the topology generated by the sets
+$$
+[f>0] = \{\alpha : f(\alpha)>0\}, \qquad f\in A ,
+$$
+where $f(\alpha)$ is the image of $f$ in the real closure of $\kappa(\alpha)$; the sets $[f>0]$ and $[f=0] = \{\alpha : f(\alpha)=0\}$ are the <strong>constructible</strong> and <strong>Zariski</strong> sets of the real spectrum, and the topology they generate is the <strong>spectral topology</strong> of $\operatorname{Spec}_r A$.</p>
+<p><strong>Theorem (the real spectrum is a spectral space).</strong> The real spectrum of a ring is a spectral space: it is compact, sober and has a basis of compact open sets that is closed under finite intersections. The <strong>support map</strong>
+$$
+\operatorname{supp} : \operatorname{Spec}_r A\longrightarrow\operatorname{Spec}A, \qquad (\mathfrak{p},\leq)\longmapsto\mathfrak{p},
+$$
+is continuous, and its image is the set of the primes with a real residue field at a suitable place, that is, the primes whose residue field admits an ordering. The support map is spectral, and the real spectrum is the <strong>real</strong> companion of the prime spectrum, with the orderings in place of the primes alone.</p>
+<p><em>Proof.</em> The sets $[f_1>0,\ldots,f_k>0]$ form a basis closed under finite intersections by construction, and the compactness is the theorem that every open cover by such basic opens is refined by a finite subcover, which rests on the real-closed field properties of Part I's <em>Real-Closed and Complete Ordered Fields</em>. The support of a point is a prime by definition, so the support map is well defined and continuous for the two spectral topologies; a prime lies in its image exactly when its residue field is formally real, since a formally real field has an ordering and the residue field of a point of the real spectrum is ordered. The soberness and the basis of compact opens are the standard properties of a spectral space, the same as for $\operatorname{Spec}A$ in <em>Schemes</em>.</p>
+<p><strong>Example (the real spectrum of a polynomial ring).</strong> For $A = \mathbb{R}[x]$ the real spectrum consists of the orderings of $\mathbb{R}[x]/(x-a)\cong\mathbb{R}$, one for each $a\in\mathbb{R}$ and each ordering of $\mathbb{R}$ — there is only one — and the orderings of the fraction field $\mathbb{R}(x)$ of the whole ring. The support of the first class is the maximal ideal $(x-a)$ and of the second the zero ideal; the first class is the closed and open copy of the real points, and the second class is the "generic point" of the real spectrum, whose orderings record whether the polynomial is positive near $+\infty$ or near $-\infty$.</p>
+<h3 id="the-real-nullstellensatz">The Real Nullstellensatz</h3>
+<p><strong>Definition.</strong> For a real algebraic variety $X$ with real coordinate ring $A$, the <strong>real points</strong> embed in the real spectrum, $X(\mathbb{R})\hookrightarrow\operatorname{Spec}_r A$, by sending a point $P$ to the ordering of $\mathbb{R}$ through the evaluation at $P$. The image is the set of the <strong>real-closed points</strong> of the real spectrum, the points whose residue field is $\mathbb{R}$ itself.</p>
+<p><strong>Theorem (the real Nullstellensatz).</strong> Let $X$ be affine over $\mathbb{R}$ with coordinate ring $A$. An ideal $I\subseteq A$ vanishes on $X(\mathbb{R})$ if and only if $I$ is <strong>real</strong>, that is, if and only if every sum of squares in $A/I$ is nonzero; equivalently, the real ideals are exactly the ideals cut out by their real points. In particular the coordinate ring of the real points is the quotient of $A$ by the real radical $I_{\mathrm r}$, and the real spectra agree, $\operatorname{Spec}_r A = \operatorname{Spec}_r(A/I_{\mathrm r})$.</p>
+<p><em>Proof.</em> The statement is the real Nullstellensatz of Krivine and Dubois, the real analogue of the Nullstellensatz of <em>Algebraic Geometry</em> and <em>Schemes</em>, with the orderings of the real spectrum replacing the points with values in an algebraically closed field and the sums of squares replacing the vanishing of the powers. Its proof uses the real-closed field properties of Part I and the Positivstellensatz below; it is cited rather than reproduced.</p>
+<p><strong>Theorem (the Positivstellensatz).</strong> For a finitely generated ring $A$ over $\mathbb{R}$ and functions $f_1,\ldots,f_m,g_1,\ldots,g_r\in A$, the following are equivalent: the system $g_i\geq0$, $g_i\neq0$ has a solution in the real spectrum; and every $f_j$ is not of the form $-(\text{sum of squares})$ modulo the cone generated by the $g_i$. Equivalently, a polynomial is nonnegative on $X(\mathbb{R})$ if and only if it is a sum of products of the defining inequalities with sums of squares — the sharp statement that the orderings detect positivity.</p>
+<p><em>Proof.</em> The equivalence is Stengle's Positivstellensatz, the ordered-ring form of the real Nullstellensatz and the statement that the real spectrum is the right object for the real solutions of inequalities: the absence of a solution forces an algebraic certificate of nonnegativity, and the presence of one exhibits a point of the real spectrum. The proof is by the induction on the number of the inequalities with the resolution of the orderings, and it is cited.</p>
+<h2 id="the-semialgebraic-and-nash-structures">The Semialgebraic and Nash Structures</h2>
+<h3 id="semialgebraic-sets">Semialgebraic Sets</h3>
+<p><strong>Definition.</strong> A subset $S\subseteq X(\mathbb{R})$ is <strong>semialgebraic</strong> if it is a finite Boolean combination of the sets $\{f = 0\}$ and $\{f > 0\}$ for regular functions $f\in A$; equivalently, it is a finite union of the sets $\{x : f_1(x)=\cdots=f_k(x)=0,\ g_1(x)>0,\ldots,g_l(x)>0\}$. The <strong>semialgebraic structure</strong> of the real variety is the Boolean algebra of its semialgebraic subsets.</p>
+<p><strong>Theorem (Tarski–Seidenberg).</strong> The image of a semialgebraic set under a polynomial map is semialgebraic, and the closure and the boundary of a semialgebraic set are semialgebraic. Consequently the semialgebraic sets of the powers $\mathbb{R}^n$ form a structure closed under the polynomial maps and their projections.</p>
+<p><em>Proof.</em> The image is the projection of a set defined by polynomial equalities and inequalities, and the elimination of a variable from such a system is the quantifier elimination of the theory of real-closed fields, Part I's <em>Real-Closed and Complete Ordered Fields</em>: an existential formula is equivalent to a quantifier-free one, which is a finite Boolean combination of polynomial inequalities. The closure and the boundary are projections of semialgebraic sets, hence semialgebraic.</p>
+<p><strong>Corollary (the finiteness of the components).</strong> Every semialgebraic set has finitely many connected components, each of them semialgebraic, and the semialgebraic sets form an <strong>o-minimal</strong> structure: the semialgebraic subsets of $\mathbb{R}$ itself are exactly the finite unions of points and intervals.</p>
+<p><em>Proof.</em> The semialgebraic subsets of the line are the finite Boolean combinations of points and intervals by the definition, so the structure is o-minimal; the finiteness of the components in every dimension is the theorem of the o-minimal structures, proved by the cell decomposition of a semialgebraic set, which is the induction on the number of variables with the quantifier elimination above.</p>
+<h3 id="the-transfer-principle">The Transfer Principle</h3>
+<p><strong>Theorem (the completeness of the real-closed fields).</strong> The theory of real-closed ordered fields in the language of ordered rings is complete and admits the elimination of quantifiers, and every real-closed field is elementarily equivalent to $\mathbb{R}$; consequently an embedding of real-closed fields is elementary, $k\preceq R$.</p>
+<p><em>Proof.</em> The completeness and the quantifier elimination are Tarski's theorem, proved for $\mathbb{R}$ and transferred to every real-closed field by the axioms of Part I's <em>Real-Closed and Complete Ordered Fields</em>; a complete theory with one model per cardinal has the elementary-embedding property for its models, so the inclusion $k\subseteq R$ of real-closed fields is elementary.</p>
+<p><strong>Corollary (the transfer for the inequalities).</strong> Let $k$ be a real-closed field, $R\supseteq k$ a real-closed extension, and let a system of polynomial equalities and inequalities have coefficients in $k$. The system has a solution in $k$ if and only if it has a solution in $R$; equivalently, the real points of a variety over $k$ are the $k$-points of the base change to $R$, $X(k) = (X\times_kR)(R)$.</p>
+<p><em>Proof.</em> The solvability is the truth of an existential formula with parameters in $k$, and $k\preceq R$, so the existential formula holds in $k$ exactly when it holds in $R$; the equality of the real points then follows from the definition of the $k$-points of the base change. This is the sense in which the real points are governed by the ordering of the base field, and it is the transfer principle of <em>Real-Closed and Complete Ordered Fields</em>.</p>
+<h3 id="the-nash-structure">The Nash Structure</h3>
+<p><strong>Definition (named, and deferred).</strong> A <strong>Nash function</strong> on an open semialgebraic set $U\subseteq\mathbb{R}^n$ is a semialgebraic function that is also smooth, in the differentiable sense of Part III; the <strong>Nash structure</strong> of a real algebraic variety is the sheaf of the Nash functions, and a <strong>Nash manifold</strong> is a real algebraic variety whose real points carry the Nash structure of a manifold. The Nash functions contain the regular functions and are contained in the continuous semialgebraic functions.</p>
+<p><strong>Remark (the deferral).</strong> The construction of the Nash sheaf and the theory of the Nash manifolds need the smooth structure — the atlas, the tangent space and the derivatives — which is Part III's <em>Smooth Manifolds and Differential Topology</em>, and they are not constructed here. What this article supplies for them is the underlying semialgebraic structure: a Nash manifold is a real algebraic variety whose semialgebraic structure is that of a manifold, and the connected components, the compactness and the finiteness of the previous sections are the set-theoretic and topological skeleton on which the smooth Nash structure is placed. The reader meets the Nash structure when Part III reaches the smooth manifolds over the reals.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the real points of quadrics).</strong> The real points of the affine quadric $x_1^2+\cdots+x_n^2 = 1$ form a compact subset of $\mathbb{R}^n$ with the real topology, connected for $n\geq2$ and consisting of two points for $n=1$; the real points of $x_2^2 = x_1^2-1$ in the affine plane have two connected components, each semialgebraic and an interval unbounded on one side. The examples are recorded for the finiteness of the components and the compactness.</p>
+<p><strong>Example (the real spectrum of the line and the orderings).</strong> For $A=\mathbb{R}[x]$ the real spectrum consists of the closed points over the real points and of the orderings of $\mathbb{R}(x)$, and the real points of the affine line are the subset of the real-closed points. The polynomial $f = x^2-1$ is positive on the two unbounded intervals of the real points and negative in the middle interval; the points of the real spectrum at which $f>0$ are the constructible set $[f>0]$, whose intersection with $X(\mathbb{R})$ is the two intervals. This is the sense in which the real spectrum organizes the inequalities.</p>
+<p><strong>Example (a real variety with no real points).</strong> The projective conic $x^2+y^2+z^2=0$ has no real point, while its real spectrum is nonempty: the orderings of the function field supply points, and the Positivstellensatz certifies the absence of a real point by the certificate $x^2+y^2+z^2 = 0$ with the sum of squares. The real spectrum is thus strictly larger than the real points, and it detects the real solutions of the inequalities even when there is none.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>real algebraic variety</strong> is a variety of finite type over $\mathbb{R}$, the fixed locus of the conjugation on its complexification $X_{\mathbb{C}} = X\times_{\mathbb{R}}\mathbb{C}$; its <strong>real points</strong> $X(\mathbb{R}) = X_{\mathbb{C}}(\mathbb{C})^\sigma$ carry the <strong>real topology</strong>, are locally compact, and are compact when $X$ is projective, and they have finitely many connected components. The <strong>real spectrum</strong> $\operatorname{Spec}_r A$ consists of the pairs of a prime ideal and an ordering of its residue field, equivalently of the homomorphisms into real-closed fields; it carries the spectral topology generated by the sets $[f>0]$ and $[f=0]$, it is a spectral space, and the support map $\operatorname{supp} : \operatorname{Spec}_r A\to\operatorname{Spec}A$ is continuous and spectral. The real Nullstellensatz identifies the ideals vanishing on the real points with the real ideals, the two real spectra of a ring and of its real radical agreeing; the Positivstellensatz certifies the nonnegativity on $X(\mathbb{R})$ by the sums of squares and the inequalities.</p>
+<p>The <strong>semialgebraic structure</strong> is the Boolean algebra generated by the sets $\{f=0\}$ and $\{f>0\}$; it is closed under the polynomial maps by Tarski–Seidenberg, which is the quantifier elimination of the real-closed fields, and it is o-minimal, so every semialgebraic set has finitely many semialgebraic connected components. The <strong>Nash structure</strong> refines the semialgebraic structure by the smooth structure of Part III — the Nash functions are the smooth semialgebraic functions, and a Nash manifold is a real algebraic variety whose semialgebraic structure is that of a manifold — and it is named here and deferred to that Part. The real variety, its real points, the real spectrum and the semialgebraic structure are the objects of the article, and the smooth refinement is the object of the next Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $X_{\mathbb{C}}=X\times_{\mathbb{R}}\mathbb{C}$</td>
+<td>real variety and its complexification with the conjugation</td>
+</tr>
+<tr>
+<td>$X(\mathbb{R})=X_{\mathbb{C}}(\mathbb{C})^\sigma$</td>
+<td>the real points; the fixed points of the conjugation</td>
+</tr>
+<tr>
+<td>real topology (strong topology)</td>
+<td>the topology of $X(\mathbb{R})$ from the metric topology of $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$X(\mathbb{R})\subseteq\mathbb{R}^m$, $\mathbb{P}^m(\mathbb{R})$</td>
+<td>closed for affine $X$; compact for projective $X$</td>
+</tr>
+<tr>
+<td>$\operatorname{Spec}_r A$</td>
+<td>the real spectrum: pairs (prime, ordering), or maps into real-closed fields</td>
+</tr>
+<tr>
+<td>$\operatorname{supp}\alpha$, $\kappa(\alpha)$</td>
+<td>the prime ideal of a point of the real spectrum; its residue field</td>
+</tr>
+<tr>
+<td>$[f>0]$, $[f=0]$</td>
+<td>constructible and Zariski basic sets of the real spectrum</td>
+</tr>
+<tr>
+<td>$\operatorname{supp}:\operatorname{Spec}_r A\to\operatorname{Spec}A$</td>
+<td>the support map, continuous and spectral</td>
+</tr>
+<tr>
+<td>real ideal, real radical</td>
+<td>ideals vanishing on the real points; the real Nullstellensatz</td>
+</tr>
+<tr>
+<td>Positivstellensatz</td>
+<td>nonnegativity certified by sums of squares and the inequalities</td>
+</tr>
+<tr>
+<td>semialgebraic set</td>
+<td>finite Boolean combination of $\{f=0\}$, $\{f>0\}$</td>
+</tr>
+<tr>
+<td>Tarski–Seidenberg</td>
+<td>the image of a semialgebraic set under a polynomial map is semialgebraic</td>
+</tr>
+<tr>
+<td>o-minimal structure</td>
+<td>the semialgebraic subsets of the line are the finite unions of points and intervals</td>
+</tr>
+<tr>
+<td>$k\preceq R$, real-closed</td>
+<td>elementary extension of real-closed fields; the transfer principle</td>
+</tr>
+<tr>
+<td>$X(k)=(X\times_kR)(R)$</td>
+<td>the real points are the $k$-points of the base change</td>
+</tr>
+<tr>
+<td>Nash function, Nash manifold</td>
+<td>smooth semialgebraic functions; deferred to Part III</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Eberhard Becker, <em>On the real spectrum of a ring and its application to semialgebraic geometry</em> (Bulletin of the American Mathematical Society 83, 1977), for the real spectrum and its topology.</li>
+<li>Jacek Bochnak, Michel Coste and Marie-Françoise Roy, <em>Real Algebraic Geometry</em> (Springer, Ergebnisse der Mathematik 36, 1998), for the real algebraic varieties, the real points and the Nash structure.</li>
+<li>Ludwig Bröcker, <em>On the real spectrum of a ring</em> (Manuscripta Mathematica 24, 1978), for the comparison of the real spectrum with the prime spectrum.</li>
+<li>Alexander Prestel and Charles N. Delzell, <em>Positive Polynomials</em> (Springer Monographs in Mathematics, 2001), for the Positivstellensatz and its certificates.</li>
+<li>Michel Coste, <em>An Introduction to O-minimal Geometry</em> (Dip. Mat. Univ. Pisa, 2000), for the o-minimal structures and the finiteness of the connected components.</li>
+<li>John Nash, <em>Real algebraic manifolds</em> (Annals of Mathematics 56, 1952), for the Nash structure and the Nash functions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

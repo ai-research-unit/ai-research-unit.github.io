@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Banach Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-banach-spaces"><strong>Involutive Banach Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involutive Banach space is a Banach space with a continuous involution, and completeness turns the generalities of the normed case into theorems: the fixed and negated subspaces are themselves Banach spaces, a continuous involution extends uniquely to the completion with the fixed subspace of the completion equal to the closure of the fixed subspace, an everywhere-defined linear involution with closed graph is continuous by the closed graph theorem, and the dual with the transposed involution is again an involutive Banach space with the same norm. Completeness also gives the automatic continuity of a linear involution with closed graph, so on a Banach space the only obstruction to continuity is the failure of the graph to be closed.</p>
+<p>This article develops the Banach theory of an involution. The completion of an involutive topological space and the extension of the involution are <em>Involutive Topological Linear Spaces</em>; the norm of an involution and the equivalent invariant norm are <em>Involutive Normed Spaces</em>; the dual norm and the transposed involution are <em>The Involution and the Dual Pairing</em> and <em>Involutive Normed Spaces</em>; the open mapping and closed graph theorems and the completeness of the dual are <em>Banach Spaces</em>, <em>The Open Mapping Theorem</em> and <em>The Closed Graph Theorem</em>. The separable and reflexive refinements and the weak topologies are <em>Duality Theory</em> and the later articles of the category. No form and no Hilbert structure is used.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $X$ is a Banach space over $\mathbb{K}$ with norm $\lVert\cdot\rVert$, and $\theta$ is a continuous $\varsigma$-semilinear involution of $X$ with $\theta^{2} = \mathrm{id}$; the linear case is written $T$, the fixed and negated subspaces are $X^{\theta}$ and $X^{-}$, and $\widehat{X}$ is the completion of a normed space $X$ with $\iota : X \to \widehat{X}$ the inclusion.</p>
+<h2 id="completeness-of-the-summands-and-the-splitting">Completeness of the Summands and the Splitting</h2>
+<p><strong>Theorem (the summands are Banach spaces).</strong> Let $X$ be a Banach space and $\theta$ a continuous involution. Then the fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed, hence complete, subspaces of $X$, and each is a Banach space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real Banach space.</p>
+<p><strong>Proof.</strong> The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \theta$, hence closed by <em>Involutive Normed Spaces</em>; a closed subspace of a complete normed space is complete, so each is a Banach space for the restricted norm of <em>Banach Spaces</em>. The antilinear statement is that the restriction of the scalars to $\mathbb{R}$ preserves completeness.</p>
+<p><strong>Theorem (topological direct sum).</strong> With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and</p>
+<p>$$
+X = X^{\theta} \oplus X^{-}
+$$</p>
+<p>is a topological direct sum of Banach spaces; the projection onto $X^{\theta}$ along $X^{-}$ is bounded, and the direct sum norm is equivalent to the norm of $X$.</p>
+<p><strong>Proof.</strong> The projections are bounded as composites of $\mathrm{id}$ and $\theta$ with the scalar $\frac12$, and they exhibit the direct sum by <em>Involutive Normed Spaces</em>; the open mapping theorem applied to the bounded bijection $X^{\theta}\oplus X^{-} \to X$, $(x_{+}, x_{-}) \mapsto x_{+} + x_{-}$, from the complete space $X^{\theta}\oplus X^{-}$ onto the complete space $X$, gives that the inverse is bounded, hence the equivalence of the norms.</p>
+<h2 id="the-extension-to-the-completion">The Extension to the Completion</h2>
+<p><strong>Theorem (extension of a bounded involution).</strong> Let $X$ be a normed space with a continuous involution $\theta$ and let $\widehat{X}$ be its completion. Then $\theta$ extends uniquely to a continuous involution $\widehat{\theta}$ of $\widehat{X}$ with $\widehat{\theta}^{\,2} = \mathrm{id}$, of the same kind as $\theta$, and</p>
+<p>$$
+\lVert\widehat{\theta}\rVert = \lVert\theta\rVert ;
+$$</p>
+<p>if $\theta$ is isometric then so is $\widehat{\theta}$.</p>
+<p><strong>Proof.</strong> The extension of a continuous involution to the completion and its uniqueness are <em>Involutive Topological Linear Spaces</em>; the norm identity is the density of $X$ in $\widehat{X}$, the unit ball of $X$ being dense in that of $\widehat{X}$, so the suprema defining the two operator norms agree; the isometric statement follows.</p>
+<p><strong>Theorem (the fixed subspace of the completion).</strong> With $2$ invertible in $\mathbb{K}$, the fixed subspace of the extension is the closure of the fixed subspace,</p>
+<p>$$
+\widehat{X}^{\widehat{\theta}} = \overline{\iota(X^{\theta})} ,
+$$</p>
+<p>and the negated subspace of the completion is the closure of the negated subspace.</p>
+<p><strong>Proof.</strong> The direction $\overline{\iota(X^{\theta})} \subseteq \widehat{X}^{\widehat{\theta}}$ is the continuity of $\widehat{\theta}$ and the closedness of its fixed subspace; conversely, if $\hat x \in \widehat{X}^{\widehat{\theta}}$ and $x_{n} \to \hat x$ with $x_{n} \in X$, then $\pi_{+}x_{n} \to \pi_{+}\hat x = \hat x$ by the boundedness of $\pi_{+}$ and the continuity of $\widehat{\theta}$, and $\pi_{+}x_{n} \in X^{\theta}$, so $\hat x$ is a limit of fixed elements.</p>
+<p><strong>Corollary (fixed points are limits of fixed points).</strong> An element of the completion is fixed exactly when it is a limit of fixed elements of the original space; in particular a dense fixed subspace of a normed space forces the involution to be the identity, and the extension adds limits and no new fixed element.</p>
+<p><strong>Proof.</strong> The theorem together with the density criterion of <em>Involutive Topological Linear Spaces</em>.</p>
+<h2 id="automatic-continuity-on-a-banach-space">Automatic Continuity on a Banach Space</h2>
+<p><strong>Theorem (closed graph).</strong> Let $X$ be a Banach space and let $T$ be an everywhere-defined linear involution of $X$ with closed graph. Then $T$ is continuous and is a topological isomorphism of $X$ onto itself; its norm satisfies $\lVert T\rVert \geq 1$, with equality exactly in the isometric case.</p>
+<p><strong>Proof.</strong> The closed graph theorem of <em>The Closed Graph Theorem</em> gives the continuity of an everywhere-defined linear map between Banach spaces with closed graph; the involution is then a continuous bijection with inverse itself, hence a topological isomorphism, and $\lVert T\rVert \geq 1$ by <em>Involutive Normed Spaces</em>.</p>
+<p><strong>Corollary (the open mapping form).</strong> A continuous linear surjection of Banach spaces is open, so a continuous linear involution of a Banach space is automatically a homeomorphism; the continuity cannot be improved to isometry without renorming, and $\lVert x\rVert_{T} = \sup(\lVert x\rVert, \lVert Tx\rVert)$ is the equivalent norm that makes it isometric.</p>
+<p><strong>Proof.</strong> The open mapping theorem is <em>The Open Mapping Theorem</em>; the renorming statement is <em>Involutive Normed Spaces</em>.</p>
+<h2 id="the-dual">The Dual</h2>
+<p><strong>Theorem (the dual is an involutive Banach space).</strong> The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\theta'(\varphi) = \varphi\circ\theta$ is a continuous involution of the same kind with</p>
+<p>$$
+\lVert\theta'\rVert = \lVert\theta\rVert ,
+$$</p>
+<p>and the fixed and negated subspaces of $\theta'$ are the annihilators of $X^{-}$ and $X^{\theta}$; hence $(X^{*}, \theta')$ is an involutive Banach space, isometric exactly when $\theta$ is isometric.</p>
+<p><strong>Proof.</strong> The completeness of the dual is <em>Banach Spaces</em>; the transposed involution and its norm are <em>Involutive Normed Spaces</em>, and the annihilator identification is <em>The Involution and the Dual Pairing</em>.</p>
+<p><strong>Theorem (reflexivity and the second transpose).</strong> If $X$ is reflexive then $(\theta')' = \theta$ under the canonical identification $X^{**} = X$, so the operation $\theta \mapsto \theta'$ is an involution of the class of involutive Banach spaces, and $(X^{*}, \theta')$ is reflexive exactly when $X$ is.</p>
+<p><strong>Proof.</strong> The identity $(\theta')' = \theta$ is the symmetry $(\theta^{t})^{t} = \theta$ of <em>The Involution and the Dual Pairing</em> under the canonical identification; reflexivity of the dual is <em>Duality Theory</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the sequence spaces).</strong> On $\ell^{p}$, $1 \leq p \leq \infty$, and on $c_{0}$ the coordinatewise conjugation is an antilinear isometric involution, so each is an involutive Banach space with $\lVert\theta\rVert = 1$; the fixed subspace is the corresponding real sequence space, itself a Banach space over $\mathbb{R}$, and the dual of $\ell^{p}$ with the transposed involution is $\ell^{q}$ with the coordinatewise conjugation.</p>
+<p><strong>Example (the function spaces).</strong> On $C(K)$ for a compact Hausdorff $K$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real Banach space $C(K,\mathbb{R})$; on $L^{p}(\mu)$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real space $L^{p}(\mu,\mathbb{R})$, the completions of the corresponding finitely supported spaces.</p>
+<p><strong>Example (the completion of an involutive space).</strong> On $\mathbb{C}[x]$ with the $(x)$-adic topology the involution $\varphi_{0}(f)(x) = f(-x)$ is continuous with fixed subspace the even polynomials; its extension to the completion $\mathbb{C}[[x]]$ has fixed subspace the even power series, the closure of the even polynomials, and the extension adds limits and no new fixed element.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Banach space a continuous involution has closed fixed and negated subspaces, which are therefore Banach spaces for the restricted norms; when $2$ is invertible the averaging projections exhibit the space as the topological direct sum $X^{\theta}\oplus X^{-}$, with the norms equivalent by the open mapping theorem. A continuous involution of a normed space extends uniquely to a continuous involution of the completion with the same norm and the same kind, and with $2$ invertible the fixed subspace of the completion is the closure of the fixed subspace, so the extension adds limits and no new fixed element. An everywhere-defined linear involution of a Banach space with closed graph is continuous by the closed graph theorem, and a continuous linear involution is automatically a homeomorphism. The dual with the transposed involution is again an involutive Banach space, $\lVert\theta'\rVert = \lVert\theta\rVert$, isometric exactly when $\theta$ is, with the fixed and negated parts the annihilators of the summands; when $X$ is reflexive the operation is an involution, $(\theta')' = \theta$. The sequence and function spaces with conjugation and the completion of the involutive $\mathbb{C}[x]$ are the standard examples. The metrisable locally convex case is <em>Involutive Fréchet Spaces</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $\lVert\cdot\rVert$</td>
+<td>Banach space and its norm</td>
+</tr>
+<tr>
+<td>$\theta$, $T$</td>
+<td>Continuous involution; the linear case</td>
+</tr>
+<tr>
+<td>$X^{\theta}$, $X^{-}$</td>
+<td>Closed summands, Banach spaces</td>
+</tr>
+<tr>
+<td>$\pi_{\pm} = \frac12(\mathrm{id}\pm\theta)$</td>
+<td>Bounded averaging projections</td>
+</tr>
+<tr>
+<td>$\widehat{X}$, $\iota$</td>
+<td>Completion and inclusion of a normed space</td>
+</tr>
+<tr>
+<td>$\widehat{\theta}$, $\lVert\widehat{\theta}\rVert = \lVert\theta\rVert$</td>
+<td>Extended involution and its norm</td>
+</tr>
+<tr>
+<td>$\widehat{X}^{\widehat{\theta}} = \overline{\iota(X^{\theta})}$</td>
+<td>Fixed subspace of the completion</td>
+</tr>
+<tr>
+<td>$\theta'$, $\lVert\theta'\rVert = \lVert\theta\rVert$</td>
+<td>Transposed involution and its norm</td>
+</tr>
+<tr>
+<td>$(\theta')' = \theta$</td>
+<td>Reflexive symmetry</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Stefan Banach, <em>Theory of Linear Operations</em> (North-Holland, 1987), for the completeness, the open mapping theorem and the closed graph theorem.</li>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the involutive Banach spaces and the extension to the completion.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw-Hill, second edition, 1991), for the duality, the annihilators and the reflexivity.</li>
+<li>Robert E. Megginson, <em>An Introduction to Banach Space Theory</em> (Springer, 1998), for the normed and Banach background and the equivalences of norms.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the real structures and the transposed involutions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

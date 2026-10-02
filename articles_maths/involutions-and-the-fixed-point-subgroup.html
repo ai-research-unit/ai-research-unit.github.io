@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions and the Fixed-Point Subgroup — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-and-the-fixed-point-subgroup"><strong>Involutions and the Fixed-Point Subgroup</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a group carries a set of elements it fixes, and that set is the first invariant the involution defines. For an automorphism the fixed set is always a subgroup, because an automorphism is multiplicative; for an anti-automorphism it need not be, because a product of two fixed elements is fixed only when the two commute. This article develops the fixed set as an object: the exact criterion under which it is a subgroup, the properties of the fixed-point subgroup when it exists, and the canonical case of the inversion, whose fixed set is the set of elements of order at most two. The article is the first of the involutive <code>*</code>-articles; the involution itself, the bijection between involutions and involutive automorphisms, the inverted set and the induced involution on a quotient are owned by <em>Involutive Groups</em> and are used, not restated.</p>
+<p>Throughout, $(G,\sigma)$ is an involutive group as in <em>Involutive Groups</em>: $\sigma$ is an anti-automorphism with $\sigma^2=\mathrm{id}$, the fixed set is $G^{\sigma}=\{g:\sigma(g)=g\}$, the inverted set is $I(\sigma)=\{g:\sigma(g)=g^{-1}\}$, and $\alpha=\sigma\iota$ is the involutive automorphism associated with $\sigma$ by the bijection $\sigma\mapsto\sigma\iota$.</p>
+<h2 id="the-fixed-set-and-the-subgroup-criterion">The Fixed Set and the Subgroup Criterion</h2>
+<p><strong>Proposition (the fixed set contains the identity and is inversion-closed).</strong> $e\in G^{\sigma}$, and if $g\in G^{\sigma}$ then $g^{-1}\in G^{\sigma}$; the same holds for $G^{\alpha}$.</p>
+<p><strong>Proof.</strong> $\sigma(e)=e$ because $\sigma$ is a bijection preserving the identity; and $\sigma(g^{-1})=\sigma(g)^{-1}=g^{-1}$ for $g$ fixed, the first equality holding for every anti-automorphism.</p>
+<p>So the only question is closure under multiplication, and there the anti-automorphism shows itself.</p>
+<p><strong>Proposition (the closure computation).</strong> For $a,b\in G^{\sigma}$ one has $\sigma(ab)=ba$. Hence $ab\in G^{\sigma}$ if and only if $a$ and $b$ commute. For an involutive automorphism $\alpha$ the same computation gives $\alpha(ab)=\alpha(a)\alpha(b)$, and no commutation is required.</p>
+<p><strong>Proof.</strong> For the involution, $\sigma(ab)=\sigma(b)\sigma(a)=ba$ because $a$ and $b$ are fixed. So $ab$ is fixed exactly when $ba=ab$. For the automorphism, multiplicativity gives the second statement. The contrast is the whole content of the next two sections.</p>
+<p><strong>Theorem (the criterion).</strong> The fixed set $G^{\sigma}$ is a subgroup of $G$ if and only if its elements commute pairwise; equivalently, if and only if $G^{\sigma}$ is abelian. When this holds, $G^{\sigma}$ is an abelian subgroup of $G$, and it is the largest subgroup of $G$ on which $\sigma$ acts as the identity.</p>
+<p><strong>Proof.</strong> $G^{\sigma}$ contains $e$ and is inversion-closed. It is closed under multiplication if and only if $ab\in G^{\sigma}$ for all $a,b\in G^{\sigma}$, which by the closure computation is exactly the pairwise commutation. If $H\leq G$ is fixed pointwise by $\sigma$ then $H\subseteq G^{\sigma}$ by definition, so $G^{\sigma}$ is the largest such subgroup, and it is abelian because it is a subgroup whose elements commute pairwise. This is the criterion stated in <em>Involutive Groups</em>, §4.</p>
+<p><strong>Remark (the two sources of failure).</strong> The criterion can fail in two visibly different ways: the fixed set may be a subgroup that is not central, or it may not be a subgroup at all. The involution on $S_3$ given by $\sigma=\iota\alpha$ with $\alpha$ the conjugation by a transposition has $G^{\sigma}=\{e,(1\,2),(1\,2\,3),(1\,3\,2)\}$, four elements that do not close, so the fixed set is not a subgroup; the inversion on $A_4$ has fixed set the Klein four group $V_4=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}$, which is a subgroup and is not central in $A_4$.</p>
+<h2 id="the-fixed-point-subgroup">The Fixed-Point Subgroup</h2>
+<p>When the criterion holds, $G^{\sigma}$ is a subgroup with several forced properties.</p>
+<p><strong>Proposition (the fixed-point subgroup is abelian and self-centralising in the sense of elements).</strong> Let $H=G^{\sigma}$ be a subgroup. Then $H$ is abelian, $\sigma|_H=\mathrm{id}$, and $H\subseteq C_G(H)$; the normaliser $N_G(H)$ contains $H$ and is $\sigma$-stable.</p>
+<p><strong>Proof.</strong> The abelian property is the criterion. Every element of $H$ is fixed, so $\sigma$ restricts to the identity of $H$. The centraliser contains $H$ exactly because $H$ is abelian. For the normaliser, if $g\in N_G(H)$ then $\sigma(g)\in N_G(\sigma(H))=N_G(H)$ because $\sigma$ is an automorphism of the subgroup lattice (<em>Involutive Groups</em>, §3), so $N_G(H)$ is $\sigma$-stable.</p>
+<p><strong>Proposition (the pairing with the inverted set).</strong> The fixed set and the inverted set meet in the $\sigma$-fixed elements of order at most two: $G^{\sigma}\cap I(\sigma)=\{g:g=g^{-1},\ \sigma(g)=g\}=\{g\in G^{\sigma}:g^{2}=e\}$. In particular, when $G^{\sigma}$ is a subgroup its intersection with $I(\sigma)$ is the $2$-torsion of $G^{\sigma}$.</p>
+<p><strong>Proof.</strong> $g\in G^{\sigma}\cap I(\sigma)$ means $\sigma(g)=g$ and $\sigma(g)=g^{-1}$, hence $g=g^{-1}$; conversely $g=g^{-1}$ and $\sigma(g)=g$ give both memberships. The last statement restricts to the subgroup $G^{\sigma}$.</p>
+<p><strong>Proposition (the fixed-point subgroup of the inversion of a subgroup).</strong> Let $H\leq G$ be $\sigma$-stable, so that $\sigma$ restricts to an involution $\sigma|_H$ of $H$. Then $H^{\sigma|_H}=H\cap G^{\sigma}$ and $I(\sigma|_H)=H\cap I(\sigma)$.</p>
+<p><strong>Proof.</strong> Both statements unwind the definitions; the first says that an element of $H$ fixed by the restriction is fixed by $\sigma$, and the second that it is inverted by the restriction exactly when it is inverted by $\sigma$.</p>
+<h2 id="the-canonical-involution">The Canonical Involution</h2>
+<p>The inversion $\iota(g)=g^{-1}$ is the involution every group carries, and its fixed set is the set of elements of order at most two.</p>
+<p><strong>Proposition (the fixed set of the inversion).</strong> $G^{\iota}=\{g\in G:g^{2}=e\}$, the $2$-torsion set of $G$; $I(\iota)=G$.</p>
+<p><strong>Proof.</strong> $\iota(g)=g$ is $g^{-1}=g$, which is $g^{2}=e$; and $\iota(g)=g^{-1}$ holds identically.</p>
+<p><strong>Proposition (when the $2$-torsion is a subgroup, and when it is central).</strong> The $2$-torsion set $G^{\iota}$ is a subgroup if and only if the elements of order at most two commute pairwise; it is central if and only if every element of order at most two is central. The two conditions are independent: $G^{\iota}$ may be a non-central subgroup, and it may be central without being the whole group.</p>
+<p><strong>Proof.</strong> The subgroup criterion is the theorem above applied to $\iota$. The fixed set is central exactly when $G^{\iota}\subseteq Z(G)$ by the definition of the centre. The two conditions are independent by the examples below.</p>
+<p><strong>Example ($A_4$: a subgroup that is not central).</strong> In $A_4$ the elements of order at most two are the identity and the three double transpositions, which form the Klein four group $V_4$. The subgroup $V_4$ is normal in $A_4$ and is not central, since $Z(A_4)=\{e\}$. So the fixed set of the inversion is a non-central subgroup.</p>
+<p><strong>Example ($S_3$: not a subgroup).</strong> In $S_3$ the elements of order at most two are $e$ and the three transpositions, four elements in all. The product $(1\,2)(1\,3)=(1\,3\,2)$ has order three, so the set is not closed; the fixed set of the inversion is not a subgroup. Its elements do not commute pairwise, the transpositions $(1\,2)$ and $(1\,3)$ failing.</p>
+<p><strong>Example ($Q_8$: a central subgroup).</strong> In $Q_8$ the only elements of order at most two are $1$ and $-1$, so $G^{\iota}=\{1,-1\}=Z(Q_8)$ is a central subgroup of order two. The inversion here fixes the centre and inverts the six elements of order four.</p>
+<p><strong>Example (elementary abelian groups).</strong> If $G$ has exponent dividing two then $G^{\iota}=G$ and $G$ is abelian of exponent two, so every element is central; the fixed set is the whole group and it is central.</p>
+<p><strong>Remark (the word "central" in the menu).</strong> The fixed set of the inversion is not central in general, and the correct statement is the one proved here: it is a subgroup exactly when the involutions commute pairwise, and it is central exactly when every element of order at most two is central. The two are independent, and $A_4$ separates them. This is a point at which the article's statement departs from the phrase in the source that prompted it.</p>
+<h2 id="the-fixed-set-and-the-centre">The Fixed Set and the Centre</h2>
+<p><strong>Proposition (the fixed set of an involution on the centre).</strong> The centre $Z(G)$ is $\sigma$-stable, and $\sigma$ restricts to an involution $\sigma|_{Z(G)}$ of the abelian group $Z(G)$; its fixed set is $Z(G)\cap G^{\sigma}$ and its inverted set is $Z(G)\cap I(\sigma)$.</p>
+<p><strong>Proof.</strong> If $g$ is central and $x\in G$ then $\sigma(g)x=\sigma(g\sigma^{-1}(x))=\sigma(\sigma^{-1}(x)g)=x\sigma(g)$, so $\sigma(g)$ is central; hence $Z(G)$ is $\sigma$-stable and the restriction is an involution. The fixed and inverted sets of the restriction are the intersections with $Z(G)$.</p>
+<p><strong>Proposition (central fixed points and the involutive automorphism).</strong> An element $g$ lies in $Z(G)\cap G^{\sigma}$ if and only if $g$ is central and $\alpha(g)=g^{-1}$; hence the central fixed points of $\sigma$ are the central elements inverted by $\alpha$. In particular $G^{\sigma}$ contains $I(\alpha)\cap Z(G)$, and $G^{\sigma}\cap Z(G)=I(\alpha)\cap Z(G)$.</p>
+<p><strong>Proof.</strong> $g\in G^{\sigma}$ and $\sigma=\iota\alpha$ give $g=\sigma(g)=\alpha(g)^{-1}$, that is $\alpha(g)=g^{-1}$; conversely $\alpha(g)=g^{-1}$ gives $\sigma(g)=\iota(\alpha(g))=\iota(g^{-1})=g$. Intersecting with the centre gives both inclusions.</p>
+<p><strong>Remark.</strong> The proposition is the compatibility of an involution with centrality in its sharpest form: on the centre, the involution $\sigma$ and the involutive automorphism $\alpha$ differ by the inversion, and the central fixed points of $\sigma$ are read off from $\alpha$ as the central elements it inverts. The next article, <em>The Centre of an Involutive Group</em>, develops the centre as an involutive group in its own right.</p>
+<h2 id="summary">Summary</h2>
+<p>For an involutive group $(G,\sigma)$ the <strong>fixed set</strong> $G^{\sigma}=\{g:\sigma(g)=g\}$ contains $e$, is closed under inversion, and is a <strong>subgroup if and only if its elements commute pairwise</strong>, equivalently if and only if $G^{\sigma}$ is abelian; the obstruction is the anti-multiplicativity, $\sigma(ab)=ba$, so that a product of two fixed elements is fixed exactly when they commute. When $G^{\sigma}$ is a subgroup it is the largest subgroup fixed pointwise by $\sigma$, it is abelian, and it is contained in its own centraliser and normaliser; for a $\sigma$-stable subgroup $H$ the fixed and inverted sets of the restriction are $H\cap G^{\sigma}$ and $H\cap I(\sigma)$.</p>
+<p>The <strong>inversion</strong> is the canonical involution, and its fixed set is the $2$-torsion $G^{\iota}=\{g:g^{2}=e\}$. It is a subgroup exactly when the elements of order at most two commute pairwise and it is central exactly when those elements are central; the conditions are independent, $A_4$ giving a non-central subgroup $V_4$ and $S_3$ giving a set that is not a subgroup.</p>
+<p>The centre $Z(G)$ is $\sigma$-stable and inherits an involution; its fixed points are $Z(G)\cap G^{\sigma}=I(\alpha)\cap Z(G)$, the central elements inverted by the associated involutive automorphism $\alpha=\sigma\iota$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>involution of $G$, an anti-automorphism with $\sigma^{2}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\alpha=\sigma\iota$</td>
+<td>the involutive automorphism associated with $\sigma$</td>
+</tr>
+<tr>
+<td>$G^{\sigma}$</td>
+<td>fixed set, a subgroup iff its elements commute pairwise</td>
+</tr>
+<tr>
+<td>$I(\sigma)$</td>
+<td>inverted set, always a subgroup</td>
+</tr>
+<tr>
+<td>$\sigma(ab)=\sigma(b)\sigma(a)$</td>
+<td>anti-multiplicativity, the source of the criterion</td>
+</tr>
+<tr>
+<td>$G^{\iota}=\{g:g^{2}=e\}$</td>
+<td>$2$-torsion set, the fixed set of the inversion</td>
+</tr>
+<tr>
+<td>$Z(G)\cap G^{\sigma}=I(\alpha)\cap Z(G)$</td>
+<td>central fixed points of $\sigma$</td>
+</tr>
+<tr>
+<td>$H^{\sigma|_H}=H\cap G^{\sigma}$</td>
+<td>fixed set of the restriction to a stable subgroup</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions, their fixed points and the associated symmetric and alternating forms.</li>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for the centre, the centraliser, the normaliser and automorphisms of order two.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for involutions, the $2$-torsion and the small examples $S_3$, $A_4$, $Q_8$.</li>
+<li>I. Martin Isaacs, <em>Finite Group Theory</em> (American Mathematical Society, Graduate Studies in Mathematics 92, 2008), for fixed-point sets of automorphisms and their local properties.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

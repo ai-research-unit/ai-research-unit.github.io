@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-jordan-algebra"><strong>The Signed Adjoint of the Reflection on a Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>reflection</strong> in the algebraic sense is an operator of order two; on a Jordan algebra the signed two-sided operators of order two are the <strong>signed conjugations</strong> $r_u(x) = u\,\alpha(x)\,u^{-1}$ of <em>Reflections as Signed Two-Sided Operators on a Jordan Algebra</em>, built from the <strong>grade involution</strong> $\alpha$ and the inner conjugation by a unit $u$. Such an operator is an automorphism of the Jordan algebra whenever it is defined, and it is an involution exactly when the <strong>twisted square</strong> $u\alpha(u)$ is central; this is the reflection correspondence of that article. The present article computes the <strong>adjoint</strong> of the reflection with respect to the <strong>natural pairing</strong> of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ of <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>, and decides when a reflection is <strong>self-adjoint</strong>.</p>
+<p>Because the trace form is associative and the grade involution is an isometry, every operator of the multiplication algebra is self-adjoint and the involution satisfies $\alpha^{\dagger} = \alpha$; the reflection that lives in the Jordan operator algebra is the symmetrisation $U_u\circ\alpha$ of the signed conjugation at a <strong>symmetry</strong> $u$, and its adjoint is the reflection at the image of the parameter,</p>
+<p>$$
+\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
+$$</p>
+<p>A reflection is therefore <strong>self-adjoint exactly when it is fixed by the grade involution</strong>, $\alpha(u) = u$, and the self-adjointness fails precisely in the <strong>degenerate case</strong> in which the twisted square $u\alpha(u)$ is not central, where the operator $r_u$ is not an involution at all but an automorphism of infinite order, and its adjoint is a different signed conjugation. The article also records the reflection for its own grade involution, where the operator collapses to the identity, and it states the unitarity of the reflections that are symmetries.</p>
+<p>The article assumes <em>Reflections as Signed Two-Sided Operators on a Jordan Algebra</em> for the signed conjugation, the twisted square and the reflection criterion; <em>The Signed Sandwich on a Jordan Algebra</em> for the symmetrisation $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$; <em>The Signed Adjoint Sandwich on a Jordan Algebra</em> for the adjoint computation and the unitarity condition; <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em> for the trace form, its associativity and the self-adjointness of the quadratic representations; and <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the symmetries and the inner structure group. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $u$ is a unit of $A$, $r_u(x) = u\alpha(x)u^{-1}$ is the signed conjugation, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs, and the symmetric-space reading of "reflection" is deferred to Part IV.</p>
+<h2 id="the-reflection-and-its-adjoint">The Reflection and Its Adjoint</h2>
+<h3 id="the-signed-conjugation">The Signed Conjugation</h3>
+<p><strong>Definition.</strong> The <strong>signed conjugation</strong> by the unit $u$ is $r_u(x) = u\,\alpha(x)\,u^{-1}$; it is an automorphism of $J$, and it is a <strong>reflection</strong> when $r_u^2 = \mathrm{id}$, which holds exactly when the <strong>twisted square</strong> $u\alpha(u)$ is central.</p>
+<p><strong>Proposition (the symmetrised form).</strong> The reflection by a <strong>symmetry</strong> $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$, and the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ has this symmetrisation.</p>
+<p><em>Proof.</em> The symmetrisation of the sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in <em>The Signed Sandwich on a Jordan Algebra</em>. $\square$</p>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>Theorem.</strong> The adjoint of the reflection $U_u\circ\alpha$ with respect to the trace form is the reflection at the image of the parameter:</p>
+<p>$$
+\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
+$$</p>
+<p><em>Proof.</em> By <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula. $\square$</p>
+<p><strong>Theorem (self-adjointness).</strong> A reflection is self-adjoint exactly when its parameter is fixed by the grade involution:</p>
+<p>$$
+\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_u\circ\alpha \iff \alpha(u) = u .
+$$</p>
+<p><em>Proof.</em> The adjoint is $U_{\alpha(u)}\circ\alpha$; it is equal to $U_u\circ\alpha$ exactly when $U_{\alpha(u)} = U_u$, which for a non-degenerate trace form holds exactly when $\alpha(u) = u$. $\square$</p>
+<h3 id="the-degenerate-case">The Degenerate Case</h3>
+<p><strong>Proposition.</strong> If the twisted square $u\alpha(u)$ is not central, then $r_u$ is not an involution, the reflection correspondence fails, and $r_u$ is an automorphism of infinite order; its adjoint $r_{\alpha(u)}$ is a different signed conjugation, and the operator is neither self-adjoint nor unitary in general.</p>
+<p><em>Proof.</em> The square of the signed conjugation is the inner conjugation by $u\alpha(u)$, which is trivial exactly when that element is central; when it is not central, $r_u^2\ne\mathrm{id}$ and $r_u$ has infinite order. The adjoint is computed as the signed conjugation at $\alpha(u)$, which differs from $r_u$ whenever $\alpha(u)\ne u$. $\square$</p>
+<h2 id="reflection-for-its-own-grade-involution">Reflection for Its Own Grade Involution</h2>
+<p><strong>Theorem.</strong> For the grade involution $\alpha_r$ defined by a reflection, the signed conjugation by $r$ is the identity,</p>
+<p>$$
+r_r(x) = r\,\alpha_r(x)\,r^{-1} = x ,
+$$</p>
+<p>which is self-adjoint and unitary; the reflection at the parameter equal to its own involution degenerates to the identity of the algebra.</p>
+<p><em>Proof.</em> $\alpha_r(x) = rxr$ and $r^{-1} = r$, so $r_r(x) = r(rxr)r^{-1} = x$; the identity is self-adjoint for every pairing and unitary. $\square$</p>
+<h2 id="unitarity">Unitarity</h2>
+<p><strong>Proposition.</strong> A reflection that is a symmetry is unitary with respect to the adjoint exactly when the quadratic representation is an involution, $U_u^2 = \mathrm{id}$, which holds for the symmetries; in that case $(U_u\circ\alpha)^{\dagger}(U_u\circ\alpha) = \mathrm{id}$.</p>
+<p><em>Proof.</em> By <em>The Signed Adjoint Sandwich on a Jordan Algebra</em> the unitarity of the signed sandwich is $U_{u,u}^2 = \mathrm{id}$, that is $U_u^2 = \mathrm{id}$; the symmetries satisfy it. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the identity reflection).</strong> For $u = 1$ the signed conjugation is $\alpha$ itself, a reflection of order two; it is self-adjoint because $\alpha(1) = 1$, and unitary because $U_1 = \mathrm{id}$.</p>
+<p><strong>Example (the matrix algebra).</strong> Let $J = A^+$ for $A = M_n(F)$ with the transpose grade involution; a symmetry $u = u^{-1}$ gives the reflection $U_u\circ\alpha$, $x\mapsto u x^{\mathsf{T}} u$, whose adjoint is $U_{u^{\mathsf{T}}}\circ\alpha = U_u\circ\alpha$ because $u$ is symmetric; the reflection is self-adjoint, and it degenerates to the identity when $u$ is the involution defining $\alpha$.</p>
+<p><strong>Example (the degenerate conjugation).</strong> Let $A$ be the polynomial algebra $F[x,y]$ with the swap grade involution and $u = x$; the twisted square $u\alpha(u) = xy$ is not central, so $r_u$ is not a reflection but an automorphism of infinite order, and its adjoint $r_{\alpha(u)} = r_y$ is a different conjugation.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>reflection</strong> on a Jordan algebra is a signed conjugation $r_u(x) = u\alpha(x)u^{-1}$ of order two, which exists exactly when the twisted square $u\alpha(u)$ is central; at a symmetry it coincides with the symmetrised signed sandwich $U_u\circ\alpha$. With respect to the <strong>trace form</strong>, the associativity of the form and the isometry property of the grade involution give the adjoint</p>
+<p>$$
+\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha ,
+$$</p>
+<p>so a reflection is <strong>self-adjoint exactly when $\alpha(u) = u$</strong>; when the twisted square is not central the operator is an automorphism of infinite order, the reflection correspondence fails, and the adjoint is a different signed conjugation. The reflection for its own grade involution is the identity, and the reflections that are symmetries are unitary when $U_u^2 = \mathrm{id}$. No norm, form, distance or geometric reflection occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r_u(x) = u\alpha(x)u^{-1}$</td>
+<td>Signed conjugation (reflection when of order two)</td>
+</tr>
+<tr>
+<td>$u\alpha(u)$ central</td>
+<td>Reflection criterion</td>
+</tr>
+<tr>
+<td>$u = u^{-1}$</td>
+<td>Symmetry, where the reflection is $U_u\circ\alpha$</td>
+</tr>
+<tr>
+<td>$(U_u\circ\alpha)^{\dagger} = U_{\alpha(u)}\circ\alpha$</td>
+<td>Adjoint of the reflection</td>
+</tr>
+<tr>
+<td>$\alpha(u) = u$</td>
+<td>Self-adjointness condition</td>
+</tr>
+<tr>
+<td>$u\alpha(u)$ not central</td>
+<td>Degenerate case, infinite order</td>
+</tr>
+<tr>
+<td>$r_r = \mathrm{id}$</td>
+<td>Reflection for its own grade involution</td>
+</tr>
+<tr>
+<td>$U_u^2 = \mathrm{id}$</td>
+<td>Unitarity condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the reflections, the symmetries and their adjoints.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the quadratic representations, the symmetries and the structure group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the signed conjugations, the reflections and the adjoints.</li>
+<li>Hel Braun and Max Koecher, <em>The Jordan Algebra Approach to Bounded Symmetric Domains</em> (Springer, 1966), for the reflections, the structure group and the trace form.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the multiplication algebra, the involutions and the conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

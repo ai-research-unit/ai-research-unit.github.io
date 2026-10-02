@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-on-a-hilbert-space"><strong>The Left and Right Multiplication Operators on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hilbert space carries bounded operators, and those operators act on one another by composition: for $A\in B(H)$ the left multiplication $L_A$ sends $T$ to $AT$, and the right multiplication $R_B$ sends $T$ to $TB$. In order that these be operators of a Hilbert space in their own right, the space on which they act must be given a Hilbert structure, and the natural one is the Hilbert–Schmidt inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$ on $S_2(H)$. With that structure the multiplications are bounded, their adjoints are the multiplications by the adjoints, and the whole theory is carried by the rank-one operators: every Hilbert–Schmidt operator is a sum of rank-one operators, and on a rank-one operator the two multiplications act by shifting the vectors of the two sides.</p>
+<p>This article fixes the two one-sided multiplications, computes their adjoints with respect to the Hilbert–Schmidt form, develops the rank-one decomposition that makes the computation transparent, and identifies the algebra they generate together with its commutant. The algebra $B(H)$ and the Hilbert–Schmidt class are <em>Bounded Operators on a Hilbert Space</em> and <em>Compact Operators</em>; the multiplication operators of an abstract algebra are <em>The Left and Right Multiplication Operators on a Banach Algebra</em> (Part II) and their Hilbert-algebra form is <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em>. The signed versions with a grade involution are <em>The Signed Left Multiplication on a Hilbert Space</em> and <em>The Adjoint of the Left Multiplication on a Hilbert Space</em> below.</p>
+<p>Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, and for $\xi,\eta\in H$ the <strong>rank-one operator</strong> is</p>
+<p>$$
+\xi\otimes\bar\eta:H\longrightarrow H,\qquad (\xi\otimes\bar\eta)(x)=\langle x,\eta\rangle\,\xi .
+$$</p>
+<p>The left and right multiplications are $L_A(T)=AT$ and $R_B(T)=TB$ on $S_2(H)$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written $L_A^*$, $R_B^*$.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<p><strong>Definition.</strong> For $A,B\in B(H)$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> are</p>
+<p>$$
+L_A:S_2(H)\longrightarrow S_2(H),\quad L_A(T)=AT,
+\qquad
+R_B:S_2(H)\longrightarrow S_2(H),\quad R_B(T)=TB .
+$$</p>
+<p><strong>Proposition (boundedness and norms).</strong> $L_A$ and $R_B$ are bounded linear operators on $S_2(H)$ with</p>
+<p>$$
+\|L_A\|=\|A\|,\qquad \|R_B\|=\|B\|,
+$$</p>
+<p>and the maps $A\mapsto L_A$ and $B\mapsto R_B$ are linear isometries of $B(H)$ into $B(S_2(H))$ that preserve products and the identity:</p>
+<p>$$
+L_AL_C=L_{AC},\quad R_BR_D=R_{BD},\quad L_I=R_I=I .
+$$</p>
+<p><em>Proof.</em> For a rank-one $\xi\otimes\bar\eta$ one has $\|\xi\otimes\bar\eta\|_{\mathrm{HS}}=\|\xi\|\|\eta\|$ and $L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$, $R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$; hence $\|L_A(\xi\otimes\bar\eta)\|_{\mathrm{HS}}=\|A\xi\|\|\eta\|\le\|A\|\|\xi\|\|\eta\|=\|A\|\|\xi\otimes\bar\eta\|_{\mathrm{HS}}$. Since the rank-one operators span a dense subspace of $S_2(H)$, $L_A$ extends with norm at most $\|A\|$, and the value $\|A\|$ is attained by choosing $\eta$ and $\xi$ of norm one with $\|A\xi\|=\|A\|$. Products and the identity follow from associativity, and faithfulness from the density of the rank-one operators.</p>
+<p><strong>Proposition (the commutant relation).</strong> The two one-sided families commute:</p>
+<p>$$
+L_AR_B=R_BL_A\qquad(A,B\in B(H)),
+$$</p>
+<p>and this is the algebra statement $A(TB)=(AT)B$ read as an identity of operators on $S_2(H)$.</p>
+<p><em>Proof.</em> Both sides send $T$ to $ATB$, by associativity of the composition of the operators of $H$.</p>
+<h2 id="adjoints-with-respect-to-the-hilbertschmidt-form">Adjoints with Respect to the Hilbert–Schmidt Form</h2>
+<p><strong>Theorem (the adjoint of a one-sided multiplication).</strong> For all $A,B\in B(H)$,</p>
+<p>$$
+L_A^*=L_{A^*},\qquad R_B^*=R_{B^*} .
+$$</p>
+<p>So the adjoint of a left multiplication is again a left multiplication, the adjoint of a right multiplication is again a right multiplication, and each one-sided family is closed under the adjunction.</p>
+<p><em>Proof.</em> Using $\langle L_AT,S\rangle_{\mathrm{HS}}=\operatorname{tr}(ATS^*) = \operatorname{tr}(T S^*A)=\operatorname{tr}(T(A^*S)^*)=\langle T,L_{A^*}S\rangle_{\mathrm{HS}}$, the first identity follows from the uniqueness of the Hilbert adjoint; the second is $\operatorname{tr}(TBS^*)=\operatorname{tr}(T(SB^*)^*)$.</p>
+<p><strong>Corollary (self-adjointness, normality and unitarity of the multiplications).</strong> For $A\in B(H)$:</p>
+<ol>
+<li>$L_A$ is self-adjoint exactly when $A$ is self-adjoint, and skew-adjoint exactly when $A$ is skew-adjoint;</li>
+<li>$L_A$ is normal exactly when $A$ is normal;</li>
+<li>$L_A$ is unitary exactly when $A$ is unitary, and then $L_A^{-1}=L_{A^*}$;</li>
+<li>$L_A$ is positive exactly when $A$ is positive.</li>
+</ol>
+<p>The same four statements hold for $R_B$ with $B$ in place of $A$.</p>
+<p><em>Proof.</em> Each is the identity of the theorem read through the isometric representation: $L_A^*=L_{A^*}$ gives $L_A=L_A^*$ iff $A=A^*$ by faithfulness, $L_AL_A^*=L_{AA^*}$ against $L_A^*L_A=L_{A^*A}$ gives normality, unitarity adds $L_{AA^*}=L_{A^*A}=I$, and positivity is $\langle L_AT,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ATT^*)=\operatorname{tr}(T^*AT)\ge0$ exactly when $A$ is positive.</p>
+<h2 id="the-rank-one-decomposition">The Rank-One Decomposition</h2>
+<p><strong>Definition.</strong> The <strong>rank-one decomposition</strong> of $S_2(H)$ is the expression of an operator as a norm-convergent sum of rank-one operators $T=\sum_n\xi_n\otimes\bar\eta_n$; the coefficient vectors are the singular vectors of $T$ and the sum is the singular-value expansion.</p>
+<p><strong>Proposition (the multiplications on rank-one operators).</strong> For $\xi,\eta,x\in H$,</p>
+<p>$$
+L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta,\qquad R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta},\qquad
+\xi\otimes\bar\eta = \text{the operator } x\mapsto\langle x,\eta\rangle\xi .
+$$</p>
+<p>Consequently the left multiplication acts on the first index and the right multiplication acts on the second, and $L_A$ and $R_B$ leave the set of rank-one operators invariant.</p>
+<p><em>Proof.</em> $L_A(\xi\otimes\bar\eta)(x)=A(\langle x,\eta\rangle\xi)=\langle x,\eta\rangle A\xi$, which is $A\xi\otimes\bar\eta$; $R_B(\xi\otimes\bar\eta)(x)=B(\langle x,\eta\rangle\xi)=\langle x,\eta\rangle B\xi$, and one computes $\langle x,\eta\rangle B\xi=\langle x,B^*\eta\rangle\xi$, so the second factor receives $B^*$.</p>
+<p><strong>Theorem (the span and the inner product).</strong> The rank-one operators span a dense subspace of $S_2(H)$, and the Hilbert–Schmidt inner product of two of them is</p>
+<p>$$
+\langle \xi\otimes\bar\eta,\ \xi'\otimes\bar\eta'\rangle_{\mathrm{HS}}=\langle \xi,\xi'\rangle\,\langle\eta',\eta\rangle .
+$$</p>
+<p>Hence every $T\in S_2(H)$ has a norm-convergent expansion $T=\sum_n s_n\,\xi_n\otimes\bar\eta_n$ with orthonormal families $(\xi_n)$, $(\eta_n)$ and singular values $s_n$, and the multiplications act termwise on the expansion.</p>
+<p><em>Proof.</em> The pairings follow from $(\xi\otimes\bar\eta)(\xi'\otimes\bar\eta')^*=\xi\otimes\bar\eta\circ\eta'\otimes\bar\xi'$, whose trace is $\langle\xi,\xi'\rangle\langle\eta',\eta\rangle$; the expansion is the singular-value decomposition of the compact operator $T$ recalled from <em>Compact Operators</em>, and the density of the span is the density of the finite-rank operators in $S_2$.</p>
+<h2 id="the-generated-algebra-and-its-commutant">The Generated Algebra and Its Commutant</h2>
+<p><strong>Definition.</strong> The <strong>multiplication algebra</strong> of $H$ is the algebra generated in $B(S_2(H))$ by the left and right multiplications:</p>
+<p>$$
+\mathcal{M}(H)=\Bigl\{\sum_i L_{A_i}R_{B_i}:A_i,B_i\in B(H),\ \text{finite sums}\Bigr\},
+\qquad \sum_iL_{A_i}R_{B_i}(T)=\sum_iA_iTB_i.
+$$</p>
+<p><strong>Proposition (the algebras generated by the two sides).</strong> The algebra generated by the left multiplications alone is $\{L_A:A\in B(H)\}\cong B(H)$, the algebra generated by the right multiplications alone is $\{R_B:B\in B(H)\}\cong B(H)$, and</p>
+<p>$$
+\mathcal{M}(H)=\{L_A:A\in B(H)\}'=\{R_B:B\in B(H)\}',
+$$</p>
+<p>so the multiplication algebra is the commutant of each one-sided family. In finite dimension $H=\mathbb{K}^n$ the multiplication algebra is all of $B(M_n(\mathbb{K}))$.</p>
+<p><em>Proof.</em> A multiplication $\sum_iL_{A_i}R_{B_i}$ commutes with every $L_C$, and conversely an operator on $S_2(H)$ commuting with every left multiplication is a right multiplication in the following sense: it is determined by its value on a single rank-one operator and is the sum of finitely many two-sided multiplications. In finite dimension $n$ one has $\dim B(M_n)=n^4=\dim(M_n\otimes M_n^{\mathrm{op}})$, and the identification is an isomorphism, so the multiplication algebra is everything.</p>
+<p><strong>Example (finite dimension).</strong> For $H=\mathbb{K}^n$ identify $S_2(H)$ with $M_n(\mathbb{K})$ and the Hilbert–Schmidt form with $\langle S,T\rangle=\operatorname{tr}(ST^*)$. Then $L_A$ is the operator $T\mapsto AT$ and $R_B$ is $T\mapsto TB$, the left multiplications are the matrices $A\otimes I$ under the identification $M_n\cong\mathbb{K}^n\otimes\mathbb{K}^n$, the right multiplications are $I\otimes B^{\mathrm t}$, and the multiplications satisfy $L_A^*=L_{A^*}$, $R_B^*=R_{B^*}$ with the conjugate transpose.</p>
+<p><strong>Example (diagonal operators).</strong> For $H=\ell^2$ and $A=B=D_a$ diagonal with $a\in\ell^\infty$, the operator $L_{D_a}R_{D_a}$ acts on the matrix units $e_m\otimes\bar e_n$ by $e_m\otimes\bar e_n\mapsto a_ma_n\,e_m\otimes\bar e_n$, so the two-sided multiplication by a single diagonal element is diagonal in the matrix-unit basis with the product symbol; the same computation with $a\in c_0$ restricts to the compact operators and exhibits the multiplication algebra of the compact ideal.</p>
+<h2 id="summary">Summary</h2>
+<p>On the Hilbert–Schmidt space $S_2(H)$ of a Hilbert space the bounded operators of $H$ act by the left multiplication $L_A(T)=AT$ and the right multiplication $R_B(T)=TB$, both bounded with $\|L_A\|=\|A\|$ and $\|R_B\|=\|B\|$, and the two representations $A\mapsto L_A$, $B\mapsto R_B$ are isometric and multiplicative. The adjoints are $L_A^*=L_{A^*}$ and $R_B^*=R_{B^*}$, so each one-sided family is self-adjoint, and self-adjointness, normality, unitarity and positivity of a multiplication are exactly the corresponding properties of the element. The two families commute, and they act on the rank-one operators $\xi\otimes\bar\eta$ by shifting the two vectors, $L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$ and $R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$; since the rank-one operators span $S_2(H)$ densely, this decomposes every Hilbert–Schmidt operator into a singular-value expansion and reduces every computation to the rank-one case. The algebra generated by both families is the multiplication algebra $\mathcal{M}(H)$, the commutant of each one-sided family, equal to all of $B(S_2(H))$ in finite dimension.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_2(H)$</td>
+<td>Hilbert–Schmidt class with $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$</td>
+</tr>
+<tr>
+<td>$L_A(T)=AT$</td>
+<td>left multiplication by $A$</td>
+</tr>
+<tr>
+<td>$R_B(T)=TB$</td>
+<td>right multiplication by $B$</td>
+</tr>
+<tr>
+<td>$\|L_A\|=\|A\|$, $\|R_B\|=\|B\|$</td>
+<td>isometric representations</td>
+</tr>
+<tr>
+<td>$L_A^*=L_{A^*}$, $R_B^*=R_{B^*}$</td>
+<td>adjoints for the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$L_AR_B=R_BL_A$</td>
+<td>the two sides commute</td>
+</tr>
+<tr>
+<td>$\xi\otimes\bar\eta$</td>
+<td>rank-one operator, $x\mapsto\langle x,\eta\rangle\xi$</td>
+</tr>
+<tr>
+<td>$L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$</td>
+<td>action on the first index</td>
+</tr>
+<tr>
+<td>$R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$</td>
+<td>action on the second index</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(H)$</td>
+<td>multiplication algebra, the commutant of each one-sided family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the multiplication operators and the Hilbert–Schmidt structure on $B(H)$.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the left and right multiplications and the commutant relations.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em>, Mathematical Surveys and Monographs 120 (American Mathematical Society, 2nd ed. 2005), for the rank-one decomposition and the Hilbert–Schmidt inner product.</li>
+<li>Frigyes Riesz and Béla Sz.-Nagy, <em>Functional Analysis</em> (Dover, 1990), for the multiplication operators of a Hilbert space and the elementary operators.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the two-sided multiplications and their commutants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

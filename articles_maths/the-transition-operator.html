@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transition Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transition-operator"><strong>The Transition Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Markov process is described by its transition operator, the family $\{P_t\}_{t\ge0}$ whose element $P_t$ sends the state at one moment to the law of the state $t$ units later: on functions $P_tf(x)=\mathbb E_x[f(X_t)]$ and on measures $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$. The family carries the structure of a semigroup, $P_0=I$ and $P_{s+t}=P_sP_t$, and the semigroup is the whole process; the local description of the process is its <strong>generator</strong>, the operator $L=\lim_{t\to0}(P_t-I)/t$, and the passage between the two is the content of this article. The generator is the derivative of the semigroup at the origin, the semigroup is recovered from the generator by $P_t=e^{tL}$ where the exponential is defined, and the resolvent $(\lambda-L)^{-1}$ is the Laplace transform of the semigroup. The article states the semigroup law, the Feller regularity that makes the theory work, the definition and the maximal domain of the generator, the resolvent identity, the Hille–Yosida characterisation, the Kolmogorov forward and backward equations, and the examples that fix the meaning: the Poisson process, whose generator is a difference operator, and the Brownian motion, whose generator is one half of the Laplacian.</p>
+<p>The chain theory is fixed elsewhere. The discrete semigroup $\{P^n\}$ and the Markov operator $P=P_1$ of a chain are <em>The Markov Operator</em>, the preceding article of this category, and the semigroup statements there are the case of integer times; the transition semigroup, its generator, the Kolmogorov equations, the Hille–Yosida theorem and the martingale problem are <em>Markov Chains and Processes</em>, written, and are quoted here rather than proved; the heat semigroup, the Brownian motion and its generator $\frac12\Delta$ are <em>Brownian Motion and Stochastic Calculus</em>, written; the semigroups of operators on a Banach space and the $C_0$ theory are <em>Operator Algebras</em>; the spectral theory used in the examples is <em>Banach and Hilbert Spaces</em>; the invariant measures and the ergodicity of the semigroup are <em>Ergodic Theory</em>; and the adjoint semigroup and the time reversal are <em>The Adjoint of the Transition Operator</em>, later in this category. No physics is invoked.</p>
+<p>Throughout, $E$ is a Polish space with its Borel $\sigma$-algebra, $\{X_t\}_{t\ge0}$ is a Markov process on $(\Omega,\mathcal F,\mathbb P)$ with $\mathbb P_x$ and $\mathbb E_x$ marking the law started at $x$, and $p_t(x,B)=\mathbb P_x(X_t\in B)$ is the transition kernel. The pairing is $\langle f,\mu\rangle=\int_E f\,d\mu$, the sup norm is $\|f\|_\infty$, the total variation is $\|\mu\|_{\mathrm{TV}}$, and $C_0(E)$ is the Banach space of continuous functions vanishing at infinity with the sup norm. The generator is written $L$ and its domain $\mathcal D(L)$; the resolvent is $R_\lambda=(\lambda-L)^{-1}$.</p>
+<h2 id="the-transition-semigroup">The Transition Semigroup</h2>
+<h3 id="definition-and-the-semigroup-law">Definition and the semigroup law</h3>
+<p><strong>Definition.</strong> A <strong>transition operator</strong> (or transition semigroup) on $E$ is a family $\{P_t\}_{t\ge0}$ of Markov kernels, acting on bounded measurable functions by
+$$
+P_tf(x)=\int_E f(y)\,p_t(x,dy)=\mathbb E_x[f(X_t)],
+$$
+and on finite measures by $\mu P_t(B)=\int_E\mu(dx)\,p_t(x,B)$, such that
+$$
+P_0=I,\qquad P_{s+t}=P_sP_t\quad(s,t\ge0).
+$$</p>
+<p><strong>Theorem (basic properties).</strong> Each $P_t$ is positive, unital and a contraction of the sup norm, and its measure action preserves the probability measures; the map $t\mapsto P_tf$ is measurable for every bounded measurable $f$; and the discrete semigroup is the case $P_n=P^n$ of <em>The Markov Operator</em>, the preceding article.</p>
+<p><em>Proof.</em> The positivity, the unitality and the sup-norm bound are the properties of a Markov kernel; the semigroup law is the Chapman–Kolmogorov identity for the transition kernels; the measurability is the measurability of $(t,x)\mapsto p_t(x,B)$.</p>
+<h3 id="the-feller-property-and-the-action-on-math39">The Feller property and the action on $C_0(E)$</h3>
+<p><strong>Definition.</strong> The semigroup is a <strong>Feller semigroup</strong> if each $P_t$ maps $C_0(E)$ into itself and $P_tf\to f$ uniformly as $t\to0$ for every $f\in C_0(E)$.</p>
+<p>The Feller property is the regularity hypothesis under which the generator has the Hille–Yosida characterisation below; it is automatic for the transition semigroup of a random walk on a locally compact group, whose kernels are translates of one another, and it holds for the diffusions whose coefficients are continuous. On the Banach space $C_0(E)$ the Feller semigroup is a strongly continuous contraction semigroup, and the general theory of such semigroups is the subject of <em>Operator Algebras</em>.</p>
+<h2 id="the-generator">The Generator</h2>
+<h3 id="definition-and-the-domain">Definition and the domain</h3>
+<p><strong>Definition.</strong> The <strong>generator</strong> of the transition semigroup is
+$$
+Lf=\lim_{t\to0}\frac{P_tf-f}{t},
+$$
+with domain $\mathcal D(L)$ the set of $f\in C_0(E)$ for which the limit exists uniformly.</p>
+<p><strong>Theorem (the generator is closed and densely defined).</strong> For a Feller semigroup, $\mathcal D(L)$ is dense in $C_0(E)$, the generator is closed, and it determines the semigroup: two Feller semigroups with the same generator coincide on $C_0(E)$.</p>
+<p><em>Proof.</em> The density and the closedness are the standard properties of the generator of a strongly continuous contraction semigroup; the uniqueness is the Hille–Yosida theorem below. The statements are <em>Markov Chains and Processes</em>.</p>
+<h3 id="the-resolvent">The resolvent</h3>
+<p><strong>Definition.</strong> For $\lambda>0$ the <strong>resolvent</strong> of the semigroup is the bounded operator
+$$
+R_\lambda f=\int_0^\infty e^{-\lambda t}P_tf\,dt .
+$$</p>
+<p><strong>Theorem (resolvent identity).</strong> For $\lambda,\mu>0$,
+$$
+R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L),
+$$
+and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
+<p><em>Proof.</em> The resolvent identity is the algebra of $\int_0^\infty e^{-\lambda t}P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial_t(P_tf)=-e^{-\lambda t}\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.</p>
+<h3 id="the-hilleyosida-characterisation">The Hille–Yosida characterisation</h3>
+<p><strong>Theorem (Hille–Yosida).</strong> A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative, and the range of $\lambda-L$ is dense for some, equivalently every, $\lambda>0$. Equivalently, $\lambda-L$ is invertible with $\|\lambda R_\lambda\|\le1$ for every $\lambda>0$.</p>
+<p><em>Proof.</em> The necessity is the contraction property of the semigroup written through the resolvent; the sufficiency is the construction of the semigroup as the strong limit of the Yosida approximations $P_t=\lim_n e^{tLnR_n}$, by the exponential formula. The theorem is <em>Markov Chains and Processes</em>, and it is the functional-analytic characterisation that makes the generator an equivalent description of the process.</p>
+<h2 id="the-kolmogorov-equations-and-the-discrete-case">The Kolmogorov Equations and the Discrete Case</h2>
+<h3 id="the-forward-and-backward-equations">The forward and backward equations</h3>
+<p><strong>Theorem (Kolmogorov equations).</strong> Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the <strong>backward equation</strong>
+$$
+\partial_tu=Lu,\qquad u(0,x)=f(x),
+$$
+and the transition kernels solve the <strong>forward equation</strong> $\partial_t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=e^{tL}$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.</p>
+<p><em>Proof.</em> The backward equation is the semigroup law differentiated at $t=0$ in the space variable; the forward equation is the same statement read on the measures, where the generator acts as the transpose $L^*$ on the predual. The exponential formula is the Hille–Yosida approximation.</p>
+<h3 id="the-math80-matrix-of-a-countable-chain">The $Q$-matrix of a countable chain</h3>
+<p><strong>Definition.</strong> For a continuous-time chain on a countable $E$ the <strong>generator matrix</strong> (or $Q$-matrix) has entries
+$$
+q_{xy}=\lim_{t\to0}\frac{p_t(x,y)-\delta_{xy}}{t},\qquad q_{xy}\ge0\ (x\ne y),\qquad \sum_y q_{xy}=0 .
+$$</p>
+<p><strong>Theorem.</strong> The $Q$-matrix acts on finitely supported functions by $Lf(x)=\sum_y q_{xy}f(y)$, and on a finite state space the semigroup is the matrix exponential $P_t=e^{tQ}$.</p>
+<p><em>Proof.</em> The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial_tP_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.</p>
+<h2 id="the-invariant-measures-of-the-semigroup">The Invariant Measures of the Semigroup</h2>
+<p><strong>Definition.</strong> A probability measure $\pi$ is <strong>invariant</strong> for the semigroup if $\pi P_t=\pi$ for all $t\ge0$; it is <strong>ergodic</strong> if the only invariant sets of the semigroup have measure $0$ or $1$.</p>
+<p><strong>Theorem (invariance and the generator).</strong> Let the semigroup be Feller with generator $L$ and let $\pi$ be a probability measure with $\pi(Lf)=0$ for every $f$ in a core of $L$. Then $\pi$ is invariant. Conversely, if $\pi$ is invariant then $\pi(Lf)=0$ for $f\in\mathcal D(L)$, and $\pi$ is ergodic exactly when the fixed space of the semigroup in $L^2(\pi)$ is one-dimensional.</p>
+<p><em>Proof.</em> Invariance of $\pi$ means that $t\mapsto\pi(P_tf)$ is constant for every $f$, and differentiating at $t=0$ gives $\pi(Lf)=0$; conversely $\pi(Lf)=0$ on a core makes the derivative of $t\mapsto\pi(P_tf)$ vanish, and the semigroup law makes the function constant. The ergodicity statement is the semigroup form of the ergodicity criterion of <em>The Markov Operator</em>, the preceding article.</p>
+<p><strong>Theorem (the reversible case).</strong> If $\pi$ is invariant and the semigroup is <strong>reversible</strong>, $\langle P_tf,g\rangle_\pi=\langle f,P_tg\rangle_\pi$ for all $t$, then the generator is self-adjoint on $L^2(\pi)$ and the semigroup consists of self-adjoint contractions; the spectral gap of $L$ is the exponential rate of convergence of the semigroup to the constants.</p>
+<p><em>Proof.</em> Self-adjointness of the generator is the derivative of the symmetry of $P_t$ at $t=0$, and the converse is the exponential formula; the rate is the spectral theorem applied to the self-adjoint generator. The reversibility itself is <em>Reversible Markov Chains and Time Reversal</em>, later in this category.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the Poisson process).</strong> Let $X_t$ count the arrivals of rate $\lambda>0$: the increments are independent and $X_{t+s}-X_s\sim\mathrm{Pois}(\lambda t)$. The semigroup is $P_tf(n)=\sum_{k\ge0}e^{-\lambda t}(\lambda t)^kf(n+k)/k!$, and the generator is the difference operator
+$$
+Lf(n)=\lambda\bigl(f(n+1)-f(n)\bigr),
+$$
+with domain the bounded functions; for $\mu>0$ the resolvent is
+$$
+R_\mu f(n)=\frac{1}{\mu+\lambda}\sum_{k\ge0}\Bigl(\frac{\lambda}{\mu+\lambda}\Bigr)^k f(n+k),
+$$
+and the semigroup has no invariant probability, the process drifting to infinity.</p>
+<p><strong>Example (Brownian motion and the heat semigroup).</strong> For the standard Brownian motion on $\mathbb R^d$ the semigroup is the <strong>heat semigroup</strong> $P_tf(x)=\int_{\mathbb R^d}(2\pi t)^{-d/2}e^{-|x-y|^2/2t}f(y)\,dy$, with the Fourier multiplier $\widehat{P_tf}(\xi)=e^{-t|\xi|^2/2}\hat f(\xi)$ and the generator
+$$
+L=\tfrac12\Delta,
+$$
+the Laplacian being <em>Brownian Motion and Stochastic Calculus</em>, written; the semigroup is self-adjoint on $L^2(\mathbb R^d)$ and has no invariant probability, since Lebesgue measure is only invariant up to the normalisation.</p>
+<p><strong>Example (the Ornstein–Uhlenbeck semigroup).</strong> For $dX_t=-\theta X_t\,dt+\sigma\,dW_t$ with $\theta,\sigma>0$ the semigroup is $P_tf(x)=\mathbb E[f(e^{-\theta t}x+\sigma\int_0^te^{-\theta(t-s)}dW_s)]$, the generator is
+$$
+L=\tfrac{\sigma^2}{2}\frac{d^2}{dx^2}-\theta x\frac{d}{dx},
+$$
+and the invariant law is the normal distribution $N(0,\sigma^2/(2\theta))$, for which the semigroup is reversible and self-adjoint with purely discrete spectrum, the Hermite eigenvalues $-n\theta$.</p>
+<p><strong>Example (the birth–death chain).</strong> For $q_{n,n+1}=b_n$, $q_{n,n-1}=a_n$ the generator is $Lf(n)=b_n(f(n+1)-f(n))+a_n(f(n-1)-f(n))$, and the invariant law $\pi(n)=\pi(0)\prod_{k<n}b_k/a_{k+1}$ exists exactly when the product converges; the simple random walk on $\mathbb Z$ is the case $a_n=b_n=\frac12$ and is null recurrent, so it has no invariant probability.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The transition operator degenerates in four configurations. First, the generator may not determine the semigroup on the whole space: on a non-Feller semigroup, or on a state space where the process is explosive, the semigroup must be specified on a boundary, and the generator only controls the interior. Second, on an infinite state space the semigroup may fail to be continuous at $t=0$ in the strong operator topology unless the Feller condition is imposed, and then the generator is not densely defined. Third, $\lambda-L$ may fail to be invertible for some $\lambda>0$ when $L$ is not dissipative, which is the failure of the Hille–Yosida hypotheses; the process then has no semigroup of contractions. Fourth, the invariant probability need not exist even for a recurrent process, as the simple random walk shows, so the $L^2(\pi)$ spectral theory has no invariant state on which to rest; the reversible case, where the self-adjointness is available, is the boundary on which the spectral statements are sharpest.</p>
+<h2 id="summary">Summary</h2>
+<p>A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0=I$ and $P_{s+t}=P_sP_t$, acting by $P_tf(x)=\mathbb E_x[f(X_t)]$ and $\mu P_t(B)=\mathbb P_\mu(X_t\in B)$; it is Feller when it preserves $C_0(E)$ and is strongly continuous at the origin, and then its generator $L=\lim_{t\to0}(P_t-I)/t$ is closed and densely defined and determines the semigroup. The resolvent $R_\lambda=\int_0^\infty e^{-\lambda t}P_t\,dt$ satisfies the resolvent identity and inverts $\lambda-L$, and the Hille–Yosida theorem characterises the generators of Feller semigroups by density, dissipativity and the range condition. The Kolmogorov backward and forward equations are the differentiated forms of the semigroup law, reducing on a finite state space to $P_t=e^{tL}$ and on a countable state space to the $Q$-matrix exponential. The invariant measures are characterised by $\pi(Lf)=0$ on a core, they are the fixed vectors of $\pi P_t=\pi$, and the reversible case is the self-adjoint one in which the spectral gap of the generator gives the exponential rate. The Poisson process, the Brownian motion with the heat semigroup and the generator $\frac12\Delta$, the Ornstein–Uhlenbeck semigroup and the birth–death chain are the standard examples; the adjoint semigroup is <em>The Adjoint of the Transition Operator</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$, $\{X_t\}$, $p_t(x,B)$</td>
+<td>state space, process, transition kernel</td>
+</tr>
+<tr>
+<td>$P_tf(x)=\int f\,dp_t(x,\cdot)$</td>
+<td>transition operator on functions</td>
+</tr>
+<tr>
+<td>$\mu P_t(B)=\int\mu(dx)p_t(x,B)$</td>
+<td>the action on measures</td>
+</tr>
+<tr>
+<td>$P_0=I$, $P_{s+t}=P_sP_t$</td>
+<td>the semigroup law</td>
+</tr>
+<tr>
+<td>$C_0(E)$, Feller</td>
+<td>continuous functions vanishing at infinity; preservation and continuity</td>
+</tr>
+<tr>
+<td>$Lf=\lim_{t\to0}(P_tf-f)/t$</td>
+<td>generator, domain $\mathcal D(L)$</td>
+</tr>
+<tr>
+<td>$R_\lambda=(\lambda-L)^{-1}=\int_0^\infty e^{-\lambda t}P_t\,dt$</td>
+<td>resolvent</td>
+</tr>
+<tr>
+<td>$P_t=e^{tL}$, $\partial_tu=Lu$</td>
+<td>exponential formula and Kolmogorov backward equation</td>
+</tr>
+<tr>
+<td>$q_{xy}$, $Q$</td>
+<td>generator matrix and its action on finitely supported functions</td>
+</tr>
+<tr>
+<td>$\pi P_t=\pi$, $\pi(Lf)=0$</td>
+<td>invariant measure, its generator characterisation</td>
+</tr>
+<tr>
+<td>$\widehat{P_tf}(\xi)=e^{-t|\xi|^2/2}\hat f$</td>
+<td>heat semigroup on $\mathbb R^d$</td>
+</tr>
+<tr>
+<td>$L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$</td>
+<td>Brownian and Ornstein–Uhlenbeck generators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Daniel W. Stroock, <em>An Introduction to Markov Processes</em> (Springer, 2nd edition, 2014), for the Feller semigroups, the generator and the martingale problem.</li>
+<li>Stewart N. Ethier and Thomas G. Kurtz, <em>Markov Processes: Characterization and Convergence</em> (Wiley, 1986), for the Hille–Yosida theorem and the convergence of semigroups.</li>
+<li>Einar Hille and Ralph Phillips, <em>Functional Analysis and Semi-Groups</em> (American Mathematical Society, 1957), for the $C_0$ semigroups, the resolvent identities and the exponential formula.</li>
+<li>Kiyosi Itô and Henry P. McKean, <em>Diffusion Processes and their Sample Paths</em> (Springer, 1965), for the heat semigroup and the diffusions.</li>
+<li>Andrey N. Kolmogorov, "Über die analytischen Methoden in der Wahrscheinlichkeitsrechnung", <em>Mathematische Annalen</em> 104 (1931), 415–458, for the forward and backward equations.</li>
+<li>William Feller, <em>An Introduction to Probability Theory and Its Applications</em>, Vol. II (Wiley, 1971), for the semigroups, the generators and the boundary theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

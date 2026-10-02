@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of a Module Homomorphism — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-a-module-homomorphism"><strong>The Adjoint of a Module Homomorphism</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A pairing between two modules lets a homomorphism be moved from one side of the pairing to the other, and the operator it becomes is its <strong>adjoint</strong>. This article defines the adjoint with respect to a non-degenerate reflexive pairing, proves existence and uniqueness, computes its kernel and image as the paired complements of the image and kernel of the original homomorphism, and identifies it with the transpose in the bilinear case. It also separates the two ways the adjoint can be taken — the left and the right adjoint — and shows that for a reflexive pairing they coincide.</p>
+<p>The article is the second of the <code>* Theory</code> group of this category. It assumes the modules and the operator layer of <em>Modules over an Involutive Algebra</em>, <em>Left and Right Multiplication of a Module</em> and <em>Module Endomorphisms</em>, and it assumes the involutive algebra of <em>Involutive Linear Algebras</em>. The pairing here is the abstract pairing named in <em>Modules over an Involutive Algebra</em>; the involution it induces on the whole endomorphism ring, its self-adjoint part and its unitary group are the subject of the next article, <em>The Involution on the Endomorphism Ring of a Module</em>. The article stays inside Part I: no distance, norm, form, topology or limit, and <em>pairing</em> means a biadditive map, not a form with a norm. Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra with involution $\sigma$, $M$ and $N$ are left $A$-modules, and the pairing is written $\langle\cdot,\cdot\rangle$.</p>
+<h2 id="the-pairing">The Pairing</h2>
+<h3 id="sesquilinear-pairings">Sesquilinear pairings</h3>
+<p><strong>Definition.</strong> A <strong>$\sigma$-sesquilinear pairing</strong> between left $A$-modules $M$ and $N$ is a biadditive map</p>
+<p>$$
+\langle\cdot,\cdot\rangle : M \times N \to R,
+$$</p>
+<p>such that for all $a \in A$, $m \in M$, $n \in N$,</p>
+<p>$$
+\langle am, n\rangle=\langle m,\sigma(a)n\rangle, \qquad\text{equivalently}\qquad \langle m, an\rangle=\langle\sigma(a)m,n\rangle .
+$$</p>
+<p>When $\sigma=\mathrm{id}$ the pairing is <strong>bilinear</strong>. The pairing is <strong>non-degenerate</strong> when</p>
+<p>$$
+\langle m,N\rangle=0 \implies m=0, \qquad \langle M,n\rangle=0 \implies n=0,
+$$</p>
+<p>and <strong>reflexive</strong> when there is a sign $\varepsilon \in \{1,-1\}$ with $\langle n,m\rangle=\varepsilon\langle m,n\rangle$ for all $m \in M$, $n \in N$.</p>
+<p>The second display in the definition follows from the first by replacing $a$ with $\sigma(a)$ and using $\sigma^{2}=\mathrm{id}$. Non-degeneracy says that the two maps $m \mapsto \langle m,\cdot\rangle$ and $n \mapsto \langle\cdot,n\rangle$ have trivial kernels, so each of $M$ and $N$ detects the other; reflexivity says the pairing is symmetric or alternating up to a sign.</p>
+<h3 id="the-standard-examples">The standard examples</h3>
+<p><strong>(a) The bilinear square.</strong> For $A=R$ commutative and $\sigma=\mathrm{id}$, every $R$-module is an $A$-module, and a bilinear pairing is an ordinary $R$-bilinear form. The standard one on $R^n$ is $\langle x,y\rangle=\sum_i x_iy_i$.</p>
+<p><strong>(b) The regular pairing of an involutive algebra.</strong> For $M=N=A$ with the product, the map $\langle a,b\rangle=\sigma(a)\,b$ is additive in each variable and satisfies the sesquilinear identity; it is non-degenerate when $A$ is a division ring and is the model for the forms of <em>Hermitian Forms over an Involution Ring</em>, which owns them.</p>
+<p><strong>(c) The evaluation pairing.</strong> For $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the twisted structure, $\langle m,\varphi\rangle=\varphi(m)$ is the evaluation pairing; it is bilinear and non-degenerate when $M$ is a finite free $R$-module.</p>
+<h2 id="the-adjoint">The Adjoint</h2>
+<h3 id="existence-and-uniqueness">Existence and uniqueness</h3>
+<p><strong>Theorem.</strong> Let $\langle\cdot,\cdot\rangle$ be a non-degenerate pairing on the pairs $(M,M)$ and $(N,N)$, and let $f : M \to N$ be $A$-linear. Suppose that for every $n \in N$ the functional $m \mapsto \langle f(m),n\rangle$ is represented by an element of $M$; that is, there is $f^{*}(n) \in M$ with</p>
+<p>$$
+\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle \qquad (m \in M).
+$$</p>
+<p>Then $f^{*}(n)$ is unique, the assignment $n \mapsto f^{*}(n)$ is $A$-linear, and</p>
+<p>$$
+f^{*} \in \operatorname{Hom}_A(N,M).
+$$</p>
+<p><em>Proof.</em> Uniqueness: if $g^{*}(n)$ also represents the functional, then $\langle m,f^{*}(n)-g^{*}(n)\rangle=0$ for all $m$, so $f^{*}(n)=g^{*}(n)$ by non-degeneracy in the first variable. $A$-linearity: for the left action, $\langle m,f^{*}(an)\rangle=\langle f(m),an\rangle=\langle\sigma(a)f(m),n\rangle$ by the sesquilinear identity; since $f$ is $A$-linear, $\sigma(a)f(m)=f(\sigma(a)m)$, so this is $\langle f(\sigma(a)m),n\rangle=\langle\sigma(a)m,f^{*}(n)\rangle=\langle m,a f^{*}(n)\rangle$; non-degeneracy gives $f^{*}(an)=a f^{*}(n)$. Additivity is the same argument applied to the sum. $\square$</p>
+<p>When $M=N$ and the pairing is non-degenerate, the representing element always exists after one adds the hypothesis used below, namely that the pairing be <strong>perfect</strong>: every $R$-linear functional on $M$ of the form $m \mapsto \langle m,n\rangle$ is represented. For finite free modules over a field, or more generally for modules with a non-degenerate pairing and a dual basis, this holds; the theorem is stated with the hypothesis explicit.</p>
+<h3 id="the-elementary-laws">The elementary laws</h3>
+<p><strong>Theorem.</strong> For a perfect non-degenerate reflexive pairing, the adjoint is additive, anti-multiplicative, involutive and $R$-linear:</p>
+<p>$$
+(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}.
+$$</p>
+<p><em>Proof.</em> Additivity and $R$-linearity follow from the defining identity and uniqueness. For the product, $\langle fg(m),n\rangle=\langle g(m),f^{*}(n)\rangle=\langle m,g^{*}(f^{*}(n))\rangle$, so $(fg)^{*}=g^{*}f^{*}$ by uniqueness. For order two, reflexivity gives $\langle f^{*}(n),m\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\varepsilon\langle f(m),n\rangle=\langle n,f(m)\rangle$, so $f$ represents the functional defining $(f^{*})^{*}$; uniqueness gives $(f^{*})^{*}=f$. $\square$</p>
+<p>The assignment $f \mapsto f^{*}$ is therefore an involution of the endomorphism ring when $M=N$, which is the subject of <em>The Involution on the Endomorphism Ring of a Module</em>; the article here treats the adjoint as an operator.</p>
+<h3 id="the-adjoint-of-the-one-sided-multiplications">The adjoint of the one-sided multiplications</h3>
+<p><strong>Proposition.</strong> Let $M$ be a left $A$-module with a non-degenerate reflexive $\sigma$-sesquilinear pairing. Then for every $a \in A$, the adjoint of the left multiplication $L_a$ on $M$, when it exists, is</p>
+<p>$$
+L_a^{*}=L_{\sigma(a)} .
+$$</p>
+<p><em>Proof.</em> $\langle L_a(m),n\rangle=\langle am,n\rangle=\langle m,\sigma(a)n\rangle=\langle m,L_{\sigma(a)}(n)\rangle$, so $L_{\sigma(a)}$ represents the functional, and uniqueness gives the identity. $\square$</p>
+<p>The formula is the reason the involution of the algebra and the adjoint of the module are one construction: applying the adjoint to the action applies $\sigma$ to the scalar.</p>
+<h2 id="kernel-image-and-the-paired-complement">Kernel, Image and the Paired Complement</h2>
+<h3 id="paired-complements">Paired complements</h3>
+<p><strong>Definition.</strong> For a submodule $U \subseteq M$ and a submodule $V \subseteq N$,</p>
+<p>$$
+U^{\mathrm{c}}=\{n \in N : \langle U,n\rangle=0\}, \qquad {}^{\mathrm{c}}V=\{m \in M : \langle m,V\rangle=0\}.
+$$</p>
+<p>Both are submodules, the first of $N$ and the second of $M$.</p>
+<p><strong>Proposition.</strong> $U^{\mathrm{c}}$ and ${}^{\mathrm{c}}V$ are submodules, and for a reflexive pairing $(U^{\mathrm{c}})^{\mathrm{c}}=U$ and ${}^{\mathrm{c}}({}^{\mathrm{c}}V)=V$. When $M$ and $N$ have a finite length function and the pairing is non-degenerate, the length is complementary, $\ell(U^{\mathrm{c}})=\ell(N)-\ell(U)$, and the assignment $U \mapsto U^{\mathrm{c}}$ is an order-reversing bijection.</p>
+<p><em>Proof.</em> The submodule statements are immediate from biadditivity; reflexivity gives the double-complement identities as in the linear-space case, because $\langle m,n\rangle=\varepsilon\langle n,m\rangle$ makes the two kernels dual; for the length formula, the map $N \to U^{\vee}$, $n \mapsto \langle\cdot,n\rangle$, has kernel $U^{\mathrm{c}}$ and image the functionals represented on $U$, which for a perfect pairing is all of $U^{\vee}$, so the length is complementary. $\square$</p>
+<h3 id="the-kernel-and-the-image">The kernel and the image</h3>
+<p><strong>Theorem.</strong> For a homomorphism $f : M \to N$ with adjoint $f^{*} : N \to M$,</p>
+<p>$$
+\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f).
+$$</p>
+<p><em>Proof.</em> $f^{*}(n)=0$ means $\langle m,f^{*}(n)\rangle=0$ for all $m$, that is $\langle f(m),n\rangle=0$ for all $m$, which says $n \in (\operatorname{im}f)^{\mathrm{c}}$; this is the first identity. For the second, $\langle m,f^{*}(n)\rangle=\langle f(m),n\rangle$ vanishes for all $n$ exactly when $f(m) \in {}^{\mathrm{c}}N$, that is $m \in \ker f$, so ${}^{\mathrm{c}}(\operatorname{im}f^{*})=\ker f$; taking complements gives the identity. $\square$</p>
+<p><strong>Corollary.</strong> If $M$ and $N$ have equal finite length and the pairing is non-degenerate and perfect, then $\ell(\ker f^{*})=\ell(\ker f)$ and $\ell(\operatorname{im}f^{*})=\ell(\operatorname{im}f)$: the adjoint preserves the length of the kernel, the image and the cokernel.</p>
+<p><em>Proof.</em> $\ell(\ker f^{*})=\ell((\operatorname{im}f)^{\mathrm{c}})=\ell(N)-\ell(\operatorname{im}f)=\ell(M)-\ell(\operatorname{im}f)=\ell(\ker f)$, using the length formula and $\ell(M)=\ell(N)$. The image statement follows from $\ell(\operatorname{im}f^{*})=\ell(M)-\ell(\ker f^{*})$. $\square$</p>
+<p><strong>Corollary (invertibility).</strong> $f$ is invertible if and only if $f^{*}$ is, and then $(f^{-1})^{*}=(f^{*})^{-1}$; the adjoint of the identity is the identity, and the adjoint of the scalar $r \in R$ is $r$.</p>
+<p><em>Proof.</em> Length preservation makes invertibility correspond; from $ff^{-1}=\mathrm{id}$ and anti-multiplicativity, $(f^{-1})^{*}f^{*}=\mathrm{id}$ and $f^{*}(f^{-1})^{*}=\mathrm{id}$, which is the inverse statement. The last clauses are the definitions. $\square$</p>
+<h2 id="the-transpose">The Transpose</h2>
+<h3 id="the-evaluation-pairing">The evaluation pairing</h3>
+<p>In the bilinear case the adjoint of a homomorphism with respect to the evaluation pairing is the transpose.</p>
+<p><strong>Proposition.</strong> Let $A=R$ be commutative, $\sigma=\mathrm{id}$, and let $N=M^{\vee}=\operatorname{Hom}_R(M,R)$ with the evaluation pairing $\langle m,\varphi\rangle=\varphi(m)$. Then for $f : M \to M$ the adjoint with respect to the evaluation pairing is the transpose</p>
+<p>$$
+f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\varphi)=\varphi \circ f .
+$$</p>
+<p><em>Proof.</em> $\langle f(m),\varphi\rangle=\varphi(f(m))=(f^{\mathrm{t}}\varphi)(m)=\langle m,f^{\mathrm{t}}\varphi\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness. $\square$</p>
+<p>The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$, and involutive when $M$ is reflexive, in agreement with the general laws.</p>
+<h3 id="the-matrix-form">The matrix form</h3>
+<p><strong>Proposition.</strong> Let $M=R^n$ with the standard pairing $\langle x,y\rangle=\sum_i x_iy_i$, and let $f$ have matrix $X$. Then $f^{*}$ has matrix $X^{\mathsf{T}}$. If instead the pairing has Gram matrix $\Phi$, then $[f^{*}]=\Phi^{-1}X^{\mathsf{T}}\Phi$.</p>
+<p><em>Proof.</em> The identity $\langle Xx,y\rangle=\langle x,X^{\mathsf{T}}y\rangle$ is the definition of the transpose; conjugating by the Gram matrix replaces the standard pairing by a general one. $\square$</p>
+<p>In the $\sigma$-sesquilinear case the matrix description acquires $\sigma$: the adjoint of a matrix is the conjugate transpose, and its precise form for a module over an involutive algebra is the matrix involution $\Theta(X)_{ij}=\sigma(X_{ji})$ of <em>Modules over an Involutive Algebra</em> when the pairing is the standard one on $A^n$.</p>
+<h2 id="the-left-and-the-right-adjoint">The Left and the Right Adjoint</h2>
+<h3 id="the-two-definitions">The two definitions</h3>
+<p>The defining identity moves $f$ from the first to the second variable. There is a second way to move it, and the two agree for a reflexive pairing.</p>
+<p><strong>Definition.</strong> Let $f \in \operatorname{Hom}_A(M,N)$ with adjoint $f^{*}$ defined by $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$. A <strong>left adjoint</strong> of $f$ is a map ${}^{*}f \in \operatorname{Hom}_A(N,M)$ with</p>
+<p>$$
+\langle n,f(m)\rangle=\langle {}^{*}f(n),m\rangle \qquad (m \in M,\ n \in N).
+$$</p>
+<p><strong>Proposition.</strong> For a reflexive pairing the left adjoint exists, is unique, and equals the adjoint: ${}^{*}f=f^{*}$. Without reflexivity, a left adjoint may fail to exist, and when it exists it differs from the adjoint by the reflexivity defect.</p>
+<p><em>Proof.</em> Using $\langle n,f(m)\rangle=\varepsilon\langle f(m),n\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\langle f^{*}(n),m\rangle$, the map $f^{*}$ satisfies the defining identity of ${}^{*}f$, so it is a left adjoint; uniqueness is the same non-degeneracy argument as for the adjoint. Conversely, if $\langle n,f(m)\rangle$ is not proportional to $\langle f(m),n\rangle$, nothing guarantees a representing element. $\square$</p>
+<p>Thus for the pairings used here the words <em>left adjoint</em> and <em>right adjoint</em> name the same operator; the distinction is real only for a pairing without reflexivity, and in the sesquilinear case it is the involution $\sigma$ that relates the two conventions.</p>
+<h3 id="relation-to-the-transpose">Relation to the transpose</h3>
+<p><strong>Corollary.</strong> In the bilinear case with the evaluation pairing, the left adjoint of $f$ is its transpose on the dual. In the $\sigma$-sesquilinear case, the adjoint with respect to the pairing $\langle m,n\rangle$ and the adjoint with respect to the pairing $\langle n,m\rangle$ are related by $\sigma$ on the coefficients.</p>
+<p><em>Proof.</em> The first clause is the transpose proposition; the second restates the sesquilinear identity $L_a^{*}=L_{\sigma(a)}$ in the two conventions. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The standard form.</strong> For $A=R$ commutative, $M=R^n$ and $\langle x,y\rangle=\sum x_iy_i$, the adjoint is the transpose, $\ker f^{*}=(\operatorname{im}f)^{\perp}$ and $\operatorname{im}f^{*}=(\ker f)^{\perp}$.</p>
+<p><strong>(b) The symplectic form.</strong> For $M=R^2$ with $\langle x,y\rangle=x_1y_2-x_2y_1$, the pairing is reflexive with sign $\varepsilon=-1$, and the adjoint of a matrix $X$ is $J^{-1}X^{\mathsf{T}}J$ with $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$; the length identities hold and the self-adjoint endomorphisms are the symplectic Lie algebra.</p>
+<p><strong>(c) The regular pairing.</strong> For $M=N=A$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the adjoint of the left multiplication $L_a$ is $L_{\sigma(a)}$, and the adjoint of the right multiplication $R_b$ is $R_{\sigma(b)}$; the pairing is reflexive with sign $\varepsilon=1$ when $\sigma$ fixes the coefficient ring.</p>
+<p><strong>(d) The involution induced by a free basis.</strong> For $M=A^n$ with the standard sesquilinear pairing, the adjoint of a matrix is $\Theta(X)_{ij}=\sigma(X_{ji})$, the involution of <em>Modules over an Involutive Algebra</em>; the basis-independent description of that involution is exactly the adjoint with respect to the standard pairing.</p>
+<h2 id="summary">Summary</h2>
+<p>A $\sigma$-sesquilinear pairing between left $A$-modules $M$ and $N$ is a biadditive map with $\langle am,n\rangle=\langle m,\sigma(a)n\rangle$; it is non-degenerate when each module detects the other and reflexive when $\langle n,m\rangle=\varepsilon\langle m,n\rangle$. For an $A$-linear $f : M \to N$ the adjoint $f^{*} : N \to M$ is defined by $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$; it exists and is unique when the pairing is non-degenerate and the functional is represented, and it is $A$-linear. The adjoint is additive, anti-multiplicative, $R$-linear and of order two, and it carries $L_a$ to $L_{\sigma(a)}$. It is described by the paired complements: $\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}$ and $\operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f)$, so with a finite length function and a perfect pairing it preserves the lengths of the kernel, image and cokernel, and it preserves invertibility with $(f^{-1})^{*}=(f^{*})^{-1}$. In the bilinear case with the evaluation pairing the adjoint is the transpose, with matrix $X^{\mathsf{T}}$ for the standard pairing and $\Phi^{-1}X^{\mathsf{T}}\Phi$ for the pairing with Gram matrix $\Phi$. The left and the right adjoint coincide for a reflexive pairing and differ otherwise, the difference in the sesquilinear case being governed by $\sigma$. The involution the adjoint defines on $\operatorname{End}_A(M)$ is the subject of the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity, the base ring</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>unital associative $R$-algebra with involution $\sigma$</td>
+</tr>
+<tr>
+<td>$M$, $N$</td>
+<td>left $A$-modules</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>$\sigma$-sesquilinear pairing, $\langle am,n\rangle=\langle m,\sigma(a)n\rangle$</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>the reflexivity sign, $\langle n,m\rangle=\varepsilon\langle m,n\rangle$</td>
+</tr>
+<tr>
+<td>$f^{*}$</td>
+<td>the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$</td>
+</tr>
+<tr>
+<td>$U^{\mathrm{c}},{}^{\mathrm{c}}V$</td>
+<td>paired complements</td>
+</tr>
+<tr>
+<td>$\ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}$</td>
+<td>kernel of the adjoint</td>
+</tr>
+<tr>
+<td>$\operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f)$</td>
+<td>image of the adjoint</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplications</td>
+</tr>
+<tr>
+<td>$L_a^{*}=L_{\sigma(a)}$</td>
+<td>the adjoint of a left multiplication</td>
+</tr>
+<tr>
+<td>$f^{\mathrm{t}}$</td>
+<td>the transpose on the dual, for the evaluation pairing</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>Gram matrix, $[f^{*}]=\Phi^{-1}X^{\mathsf{T}}\Phi$</td>
+</tr>
+<tr>
+<td>${}^{*}f$</td>
+<td>the left adjoint, equal to $f^{*}$ for a reflexive pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for sesquilinear forms, duality and adjoints.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for pairings of modules over a ring and the transpose.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, fourth edition, 1975), for the adjoint of an endomorphism with respect to a bilinear form.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for hermitian forms over an involutive ring and the adjoints they define.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for dual modules, non-degenerate pairings and their kernels.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

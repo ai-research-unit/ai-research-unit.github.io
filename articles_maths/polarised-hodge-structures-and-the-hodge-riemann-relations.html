@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polarised Hodge Structures and the Hodge–Riemann Relations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="polarised-hodge-structures-and-the-hodgeriemann-relations"><strong>Polarised Hodge Structures and the Hodge–Riemann Relations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hodge structure on a real vector space of even weight is a decomposition of its complexification into parts $H^{p,q}$ that are exchanged by complex conjugation; equivalently it is a representation of the circle on the complexification, and the decomposition is read from the eigenspaces of the operator that the circle action defines. A <strong>polarisation</strong> is a form on the space that is compatible with the decomposition and positive in a definite sense, the <strong>Hodge–Riemann relations</strong>; with the polarisation the Hodge structure becomes the linear model of the cohomology of a compact Kähler manifold, the Hodge–Riemann bilinear relations being the positivity that the intersection form satisfies on the primitive cohomology. The polarised Hodge structures of a fixed type form the <strong>period domain</strong>, a homogeneous complex manifold on which the cohomology of a family of varieties traces a horizontal holomorphic map, and the theory is the geometry of these moduli.</p>
+<p>The article develops the Hodge decomposition and the Hodge filtration, the <strong>Weil operator</strong> $C$ — the operator of the circle action, whose square is the sign $(-1)^{k}$ on weight $k$ and which is the involution that organizes the decomposition — the polarisation and the two Hodge–Riemann bilinear relations, the <strong>Hodge index theorem</strong> for the signature that follows from the positivity, and the period domain with Griffiths transversality. The motivating example is the cohomology of a compact Kähler manifold with its Hodge decomposition, which is <em>Hermitian Metrics and the Hodge Theory</em>; the form that polarises it is the intersection form of <em>Hermitian Pairings on a Topological Space</em> and <em>The Signature Operator</em>.</p>
+<p>The prerequisites are <em>The Hodge Laplacian</em> for the harmonic forms and the Hodge decomposition; <em>Hermitian Metrics and the Hodge Theory</em> for the Dolbeault cohomology and the Kähler identity that produces the $(p,q)$-decomposition; <em>Hermitian Pairings on a Topological Space</em> and the Part I articles <em>Bilinear Forms</em> and <em>Indefinite Inner Product Spaces</em> for the intersection pairing, the symmetry of a form and the signature; <em>The Signature Operator</em> for the middle form and its positivity; and <em>Transformation Groups and the Erlangen Program</em> and the Lie group articles for the homogeneous space that the period domain is. The analytic existence theory of the Kähler structure and the theory of moduli of varieties belong to other categories and are cited; a Hodge structure here is an algebraic object. No physics is invoked.</p>
+<h2 id="hodge-structures">Hodge Structures</h2>
+<p><strong>Definition.</strong> A <strong>Hodge structure of weight $k$</strong> on a finitely generated real vector space $V$ is a decomposition of the complexification</p>
+<p>$$
+V_{\mathbb{C}}=\bigoplus_{p+q=k}H^{p,q},\qquad \overline{H^{p,q}}=H^{q,p},
+$$</p>
+<p>with the <strong>Hodge numbers</strong> $h^{p,q}=\dim_{\mathbb{C}}H^{p,q}$; the structure is <strong>of type</strong> $(h^{p,q})$. Complex conjugation interchanges the two parts, so $h^{p,q}=h^{q,p}$, and the numbers determine the structure only up to isomorphism of the decomposition. The <strong>Hodge filtration</strong> is the decreasing filtration</p>
+<p>$$
+F^{p}=\bigoplus_{r\geq p}H^{r,k-r},\qquad
+F^{0}=V_{\mathbb{C}}\supseteq F^{1}\supseteq\cdots ,
+$$</p>
+<p>which recovers the decomposition by $H^{p,q}=F^{p}\cap\overline{F^{q}}$; giving the decomposition is equivalent to giving the filtration, since the filtration alone determines the $H^{p,q}$ through this intersection.</p>
+<p><strong>Example (the cohomology of a Kähler manifold).</strong> Let $X$ be a compact Kähler manifold. The Hodge decomposition</p>
+<p>$$
+H^{k}(X;\mathbb{C})=\bigoplus_{p+q=k}H^{p,q}(X),\qquad H^{p,q}(X)\cong H^{q}(X,\Omega^{p}),
+$$</p>
+<p>with $\overline{H^{p,q}}=H^{q,p}$, makes $H^{k}(X;\mathbb{R})$ a Hodge structure of weight $k$; the decomposition is by the $(p,q)$-type of the harmonic representatives and is the Dolbeault cohomology of <em>Hermitian Metrics and the Hodge Theory</em>. For $X$ of complex dimension $n$ the numbers satisfy the symmetry $h^{p,q}=h^{q,p}=h^{n-p,n-q}$, the last by Serre duality, and they compute the Betti numbers, $b_{k}=\sum_{p+q=k}h^{p,q}$.</p>
+<p><strong>Definition.</strong> A <strong>morphism of Hodge structures</strong> of the same weight is a linear map that is defined over $\mathbb{Q}$ (or $\mathbb{Z}$) and preserves the decomposition, $f(H^{p,q})\subseteq H^{p,q}$; the Hodge structures of a fixed weight form an abelian category, and the <strong>Tate twist</strong> $V(1)$ multiplies the weight by $-2$ and shifts the bidegree by $(1,1)$.</p>
+<h2 id="the-involution-and-the-weil-operator">The Involution and the Weil Operator</h2>
+<p><strong>Definition.</strong> The <strong>Weil operator</strong> of a Hodge structure of weight $k$ is the $\mathbb{C}$-linear operator that acts on $H^{p,q}$ by the scalar</p>
+<p>$$
+C=i^{\,p-q},
+$$</p>
+<p>so that $C^2=(-1)^{k}\,\mathrm{id}$ on $V_{\mathbb{C}}$: it is an involution for even weight and a complex structure for odd weight. It commutes with the conjugation in the sense that $C\overline{x}=\overline{Cx}$, and the Hodge structure is recovered from $C$ together with the conjugation.</p>
+<p><strong>Theorem.</strong> The Hodge structures of weight $k$ on $V$ correspond to the real representations of the group $\mathbb{U}(1)$ on $V$ of the form $z\mapsto z^{p}\bar z^{q}$ on $H^{p,q}$, and the Weil operator is the value of the representation at the element $i$; the operator $C$ determines the decomposition as its eigenspaces, and $C^2=(-1)^{k}$.</p>
+<p><strong>Proof.</strong> The representation $z\mapsto z^{p-q}$ on $H^{p,q}$ has derivative data that fix the bidegree; the operator $C$ is the value at $i$, whose eigenspaces are the $H^{p,q}$ because $i^{p-q}$ takes the value $i^{r}$ on the diagonal $p-q=r$; the sum of the eigenspaces is the complexification, and the conjugation condition is the reality of the representation. $\square$</p>
+<p><strong>Remark.</strong> The Weil operator is the involution on the elements of the Hodge structure: the conjugation $\bar\cdot$ is an antilinear involution and $C$ is the linear order-two-up-to-sign operator, and together they generate the structure. In the Kähler case $C$ acts on a $(p,q)$-form as multiplication by $i^{p-q}$, and it is the operator whose commutation with the Laplacian is the Hodge decomposition on the level of harmonic forms of <em>Hermitian Metrics and the Hodge Theory</em>.</p>
+<h2 id="polarisation-and-the-hodgeriemann-relations">Polarisation and the Hodge–Riemann Relations</h2>
+<p><strong>Definition.</strong> A <strong>polarisation</strong> of a Hodge structure of weight $k$ on $V$ is a form $Q$ on $V$, defined over $\mathbb{Q}$ (or $\mathbb{Z}$), that is $(-1)^{k}$-symmetric and nondegenerate, and satisfies the two <strong>Hodge–Riemann bilinear relations</strong></p>
+<p>$$
+Q(H^{p,q},H^{p',q'})=0\quad\text{unless }p'=k-p,\ q'=k-q,
+$$</p>
+<p>$$
+Q\bigl(Cx,\bar x\bigr)>0\quad\text{for every }x\neq0 ;
+$$</p>
+<p>a Hodge structure with a polarisation is a <strong>polarised Hodge structure</strong>. The first relation is the horizontality of $Q$ with respect to the decomposition; the second is the positivity, and it says that the Hermitian form</p>
+<p>$$
+\langle x,y\rangle=Q(Cx,\bar y)
+$$</p>
+<p>is positive definite on $V_{\mathbb{C}}$.</p>
+<p><strong>Theorem.</strong> The second Hodge–Riemann relation makes $\langle x,y\rangle=Q(Cx,\bar y)$ a positive definite Hermitian form on $V_{\mathbb{C}}$; consequently the form $Q$ has a definite signature on the real part of each piece $H^{p,q}$, and the polarisation determines the Hodge numbers through the signature of its restriction to the real forms of the pieces.</p>
+<p><strong>Proof.</strong> The bilinearity and the symmetry of $Q$ give the Hermitian symmetry of $\langle\cdot,\cdot\rangle$, since $Q(Cy,\bar x)=\overline{Q(Cx,\bar y)}$ by the $(-1)^{k}$-symmetry and the reality of $C$; the positivity is the stated relation, and it is a sum of the contributions of the pieces by the first relation. $\square$</p>
+<p><strong>Theorem (Hodge index theorem).</strong> Let $X$ be a compact Kähler manifold of even complex dimension and let $Q$ be the intersection form on its middle cohomology, the polarisation furnished by the $\varepsilon$-Hermitian pairing $\langle u\cup v,[X]\rangle$ of <em>Hermitian Pairings on a Topological Space</em>. Then the signature of $Q$ is</p>
+<p>$$
+\sigma(X)=\sum_{p,q}(-1)^{p}\,h^{p,q}(X),
+$$</p>
+<p>the alternating sum over the Hodge numbers; for a compact Kähler surface this is $\sigma=h^{0,0}-h^{1,0}-h^{1,1}+h^{2,0}+h^{2,2}-\cdots$, and the positivity of the polarisation on the primitive cohomology is what fixes the signs.</p>
+<p><strong>Proof sketch.</strong> The Hodge–Riemann relations make $\langle x,y\rangle=Q(Cx,\bar y)$ positive definite; decomposing $Q$ by bidegree with the first relation and counting the signs of $i^{p-q}=C$ on the primitive part of each $H^{p,q}$ gives the index of $Q$ as the alternating sum of the Hodge numbers, the primitive decomposition contributing $h^{p,q}$ with the sign $(-1)^{p}$; the computation is the Hodge index theorem, and it is the precise form of the positivity of the middle form. $\square$</p>
+<p><strong>Example.</strong> For the complex projective plane $h^{0,0}=h^{1,1}=h^{2,2}=1$ and the remaining Hodge numbers vanish, so $\sigma=1-1+1=1$; for a $K3$ surface $h^{2,0}=h^{0,2}=1$, $h^{1,1}=20$ and $h^{2,2}=h^{0,0}=1$, so $\sigma=2-20+2=-16$. Both agree with the signature computed in <em>The Signature Operator</em>, and they are the standard checks of the Hodge index theorem.</p>
+<h2 id="the-period-domain">The Period Domain</h2>
+<p><strong>Definition.</strong> Fix a lattice $V_{\mathbb{Z}}$ with a form $Q$ and a type $(h^{p,q})$. The <strong>period domain</strong> $D$ is the set of polarisations of the Hodge structures of that type on $V_{\mathbb{Z}}$; equivalently, it is the set of Hodge filtrations $F^{\bullet}$ satisfying the Hodge–Riemann relations for the fixed form $Q$.</p>
+<p><strong>Theorem.</strong> The period domain is an open subset of a flag manifold and a homogeneous complex manifold</p>
+<p>$$
+D=G_{\mathbb{R}}/V ,
+$$</p>
+<p>where $G_{\mathbb{R}}=\operatorname{Aut}(V_{\mathbb{R}},Q)$ is the real form of the orthogonal or symplectic group that preserves $Q$ and $V$ is the compact subgroup preserving the Hodge filtration and the positivity; the tangent space of $D$ at a point is $\operatorname{Hom}(H^{p,q},H^{p-1,q+1})$ modulo the stabiliser.</p>
+<p><strong>Proof.</strong> The flag manifold of filtrations with $\dim F^{p}$ fixed is a complex homogeneous space of $G_{\mathbb{C}}=\operatorname{Aut}(V_{\mathbb{C}},Q)$; the Hodge–Riemann relations are open conditions — an inequality and an incidence condition — so $D$ is an open subset, and the automorphisms of $Q$ act transitively on it with the compact stabiliser $V$ of a polarised structure. The tangent description is the linearisation of the filtration condition. $\square$</p>
+<p><strong>Definition.</strong> A <strong>variation of Hodge structure</strong> over a base $S$ is a local system of lattices with a Hodge filtration varying holomorphically, such that the <strong>Griffiths transversality</strong> holds:</p>
+<p>$$
+\nabla F^{p}\subseteq\Omega^{1}_{S}\otimes F^{p-1}
+$$</p>
+<p>for the Gauss–Manin connection $\nabla$. The <strong>period map</strong> assigns to a family of polarised varieties the varying Hodge structure, and Griffiths transversality says that it is horizontal: the differential of the period map lands in the subspace $\bigoplus_{p}\operatorname{Hom}(H^{p,q},H^{p-1,q+1})$ of the tangent space of $D$ and not in the whole of it.</p>
+<p><strong>Remark.</strong> The period domain is the geometric home of polarised Hodge structures: the polarisation is a chosen form, and the domain classifies the structures it polarises, so the whole construction depends on the chosen $Q$ exactly as the boundary between geometry and the form theory requires. The <strong>Hodge locus</strong>, the locus in the base on which a given class remains of type $(p,p)$, is the subject of the theory of the algebraicity of Hodge classes and of the Hodge conjecture, and it is cited here rather than developed.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Hodge structure of weight $k$</strong> on a real vector space is a decomposition $V_{\mathbb{C}}=\bigoplus_{p+q=k}H^{p,q}$ with $\overline{H^{p,q}}=H^{q,p}$, equivalently a Hodge filtration $F^{\bullet}$; the motivating example is the $(p,q)$-decomposition of the cohomology of a compact Kähler manifold. The <strong>Weil operator</strong> $C=i^{p-q}$ on $H^{p,q}$ is the involution (for even weight) or complex structure (for odd weight) organised by the circle action, $C^2=(-1)^{k}$, and it is the linear operator of the structure. A <strong>polarisation</strong> is a $(-1)^{k}$-symmetric nondegenerate form $Q$ satisfying the two <strong>Hodge–Riemann bilinear relations</strong>, that $Q$ is horizontal for the decomposition and that the Hermitian form $Q(Cx,\bar y)$ is positive definite; the positivity is the exact form of the Hodge index theorem for the cohomology of a Kähler manifold, whose signature is $\sum_{p,q}(-1)^{p}h^{p,q}$, checked on $\mathbb{CP}^{2}$ ($\sigma=1$) and the $K3$ surface ($\sigma=-16$). The polarised structures of a fixed type form the <strong>period domain</strong> $D=G_{\mathbb{R}}/V$, a homogeneous complex manifold on which the period map of a family of varieties is holomorphic and horizontal by <strong>Griffiths transversality</strong>. The polarisation is a chosen form, and the whole structure — the domain, the positivity and the index formula — is its geometry.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_{\mathbb{C}}=\bigoplus_{p+q=k}H^{p,q}$</td>
+<td>Hodge decomposition of weight $k$; $\overline{H^{p,q}}=H^{q,p}$</td>
+</tr>
+<tr>
+<td>$h^{p,q}=\dim H^{p,q}$</td>
+<td>Hodge numbers</td>
+</tr>
+<tr>
+<td>$F^{p}=\bigoplus_{r\geq p}H^{r,k-r}$</td>
+<td>Hodge filtration; $H^{p,q}=F^{p}\cap\overline{F^{q}}$</td>
+</tr>
+<tr>
+<td>$C=i^{p-q}$ on $H^{p,q}$</td>
+<td>Weil operator, $C^2=(-1)^k$</td>
+</tr>
+<tr>
+<td>$Q$, $(-1)^{k}$-symmetric</td>
+<td>Polarisation form</td>
+</tr>
+<tr>
+<td>$Q(H^{p,q},H^{p',q'})=0$ unless $p'=k-p$</td>
+<td>First Hodge–Riemann relation</td>
+</tr>
+<tr>
+<td>$Q(Cx,\bar x)>0$</td>
+<td>Second Hodge–Riemann relation</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle=Q(Cx,\bar y)$</td>
+<td>Positive definite Hermitian form</td>
+</tr>
+<tr>
+<td>$\sigma(X)=\sum_{p,q}(-1)^ph^{p,q}$</td>
+<td>Hodge index theorem</td>
+</tr>
+<tr>
+<td>$D=G_{\mathbb{R}}/V$</td>
+<td>Period domain of polarised Hodge structures</td>
+</tr>
+<tr>
+<td>$\nabla F^{p}\subseteq\Omega^{1}\otimes F^{p-1}$</td>
+<td>Griffiths transversality</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Phillip A. Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for Hodge structures, the Hodge–Riemann bilinear relations, the Hodge index theorem and the period map.</li>
+<li>Claire Voisin, <em>Hodge Theory and Complex Algebraic Geometry I, II</em> (Cambridge University Press, 2002–2003), for the Hodge decomposition, the polarisation and the period domain.</li>
+<li>W. V. D. Hodge, <em>The Theory and Applications of Harmonic Integrals</em> (Cambridge University Press, 1941), for the original Hodge theory and the intersection form.</li>
+<li>Pierre Deligne, "Théorie de Hodge II", <em>Publications Mathématiques de l'IHÉS</em> <strong>40</strong> (1971), 5–57, for the mixed Hodge structures and the foundations of the theory.</li>
+<li>Phillip A. Griffiths, "Periods of integrals on algebraic manifolds I, II", <em>American Journal of Mathematics</em> <strong>90</strong> (1968), 568–626 and 805–865, for the period map and Griffiths transversality.</li>
+<li>James Carlson, Stefan Müller-Stach and Chris Peters, <em>Period Mappings and Period Domains</em> (Cambridge University Press, 2003), for the period domain, its complex structure and the variation of Hodge structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

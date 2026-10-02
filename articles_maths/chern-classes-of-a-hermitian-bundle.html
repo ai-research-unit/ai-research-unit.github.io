@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chern Classes of a Hermitian Bundle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="chern-classes-of-a-hermitian-bundle"><strong>Chern Classes of a Hermitian Bundle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Chern classes</strong> of a complex vector bundle are the characteristic classes that measure its twisting; for a bundle with a <strong>Hermitian metric</strong> they are represented by explicit closed forms in the curvature of the Chern connection. The construction is the <strong>Chern–Weil</strong> one — an invariant polynomial evaluated on the curvature — and the Hermitian metric enters by making the curvature skew-Hermitian, so that the forms are real. The classes themselves are topological, independent of the metric and of the connection; the Hermitian metric produces a preferred connection in each cohomology class and hence a preferred representative.</p>
+<p>The general Chern–Weil homomorphism, the closedness of the invariant forms from the Bianchi identity and their independence of the connection are <em>Fibre Bundles, Connections and Curvature</em>; the topological Chern classes, their integrality, the splitting principle and the characteristic numbers are <em>Characteristic Classes</em>, written in this category. This article owns the <strong>Hermitian</strong> refinement: the invariant polynomials evaluated on the skew-Hermitian curvature of the Chern connection, the realness of the resulting forms, the first Chern class of a Hermitian line bundle, the determinant line bundle and its curvature, and the Chern character of a Hermitian bundle. It uses the Chern connection of <em>Hermitian Vector Bundles and the Chern Connection</em>, the previous entry of this group, whose local formulas $\omega=H^{-1}\partial H$ and $\Theta=\bar\partial(H^{-1}\partial H)$ it takes as given.</p>
+<p>The article assumes the complex vector bundles, the connections, the curvature, the Chern–Weil homomorphism and the normalisation of the first Chern class of a Hermitian line bundle of <em>Fibre Bundles, Connections and Curvature</em>, and the topological Chern classes, their integrality, the axioms and the splitting principle of <em>Characteristic Classes</em>; the Hermitian metrics, the Chern connection and its curvature of the previous entry; the differential forms, the exterior derivative and the de Rham cohomology of <em>Differential Forms and Stokes' Theorem</em>; and the type decomposition of the forms of <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV. No physics is invoked.</p>
+<h2 id="the-chernweil-construction-for-a-hermitian-bundle">The Chern–Weil Construction for a Hermitian Bundle</h2>
+<h3 id="invariant-polynomials-and-the-curvature">Invariant Polynomials and the Curvature</h3>
+<p>Let $E \to M$ be a complex vector bundle of rank $k$ with a Hermitian metric $h$ and the Chern connection $\nabla$, with curvature $\Theta \in \Omega^2(M; \operatorname{End}E)$. The <strong>Chern–Weil homomorphism</strong> assigns to an invariant polynomial $P$ on $\mathfrak{gl}_k(\mathbb{C})$, that is, a polynomial in the entries of a matrix invariant under conjugation, the form $P(\Theta)$; the form is closed, $dP(\Theta) = 0$, by the Bianchi identity, and its de Rham class $[P(\Theta)]$ depends only on the bundle, not on the metric nor on the connection. The construction and the two facts are those of <em>Fibre Bundles, Connections and Curvature</em>; what the Hermitian hypothesis adds is the algebraic form of the curvature, and that is the content of the next proposition.</p>
+<p><strong>Proposition (the curvature is skew-Hermitian).</strong> With respect to the metric $h$, the curvature of the Chern connection satisfies</p>
+<p>$$
+\Theta^* = -\Theta, \qquad \text{equivalently} \qquad H\,\Theta + \Theta^*H = 0 \ \text{ in a holomorphic frame},
+$$</p>
+<p>so the matrix valued $2$-form $\Theta$ is skew-Hermitian, and $\frac{i}{2\pi}\Theta$ is Hermitian.</p>
+<p><em>Proof.</em> The metric compatibility $dH = \omega^*H+H\omega$ differentiates to $0 = (d\omega)^*H+\omega^*dH + dH\,\omega + H\,d\omega$; substituting $dH=\omega^*H+H\omega$ and comparing with the definition $\Theta = d\omega+\omega\wedge\omega$ gives $\Theta^*H+H\Theta=0$, which is the skew-Hermitian condition. Equivalently, the curvature of a metric connection with respect to the metric is skew-adjoint, as in <em>The Covariant Derivative</em>. Multiplying by $\frac{i}{2\pi}$ conjugates the skew-Hermitian matrix into a Hermitian one.</p>
+<h3 id="the-chern-forms">The Chern Forms</h3>
+<p><strong>Definition.</strong> The <strong>Chern forms</strong> of the Hermitian bundle $(E,h)$ are the coefficients of the expansion</p>
+<p>$$
+\det\Bigl(I_k + \frac{i}{2\pi}\Theta\Bigr) = 1 + c_1(\Theta) + c_2(\Theta) + \cdots + c_k(\Theta),
+$$</p>
+<p>with $c_j(\Theta) \in \Omega^{2j}(M)$; equivalently, if $x_1, \ldots, x_k$ are the eigenvalues of the Hermitian matrix $\frac{i}{2\pi}\Theta$ counted with multiplicity, then $c_j(\Theta) = e_j(x_1, \ldots, x_k)$, the $j$-th elementary symmetric function, and</p>
+<p>$$
+\det\Bigl(I_k + \frac{i}{2\pi}\Theta\Bigr) = \prod_{j=1}^{k}\bigl(1 + x_j\bigr).
+$$</p>
+<p>The <strong>total Chern form</strong> is $c(\Theta) = \det(I_k + \frac{i}{2\pi}\Theta)$, and the <strong>Chern classes</strong> of $E$ are the de Rham classes $c_j(E) = [c_j(\Theta)] \in H^{2j}_{dR}(M)$.</p>
+<p><strong>Theorem (realness).</strong> Each Chern form $c_j(\Theta)$ is a real closed form of degree $2j$, and the classes $c_j(E)$ lie in the image of $H^{2j}(M;\mathbb{Z}) \to H^{2j}_{dR}(M)$; that is, they are the integral Chern classes of the underlying topological bundle, as in <em>Characteristic Classes</em>. In particular the Chern forms do not depend on the Hermitian metric up to cohomology, and the choice of a metric is the choice of a real representative of an integral class.</p>
+<p><em>Proof.</em> Since $\Theta^*=-\Theta$, the matrix $A=\frac{i}{2\pi}\Theta$ is Hermitian, so its eigenvalues are real and $\bar A = A^T$. Hence $\overline{\det(I+A)} = \det(I+\bar A) = \det(I+A^T) = \det(I+A)$, so the total Chern form is real; its homogeneous parts are real separately. Closed: $d\det(I+A) = 0$ by the Chern–Weil theorem, since $\det(I+\cdot)$ is an invariant polynomial and $\Theta$ satisfies the Bianchi identity. Integrality is Chern's theorem, quoted: the class $c_j(E)$ is the image of an integral class, which is the topological statement of <em>Characteristic Classes</em>.</p>
+<p><strong>Corollary.</strong> The first Chern form $c_1(\Theta) = \frac{i}{2\pi}\operatorname{tr}\Theta$ is real and closed, and it depends only on the determinant line bundle: $c_1(E) = c_1(\det E)$, where $\det E = \Lambda^kE$ is the determinant line bundle with the metric induced by $h$.</p>
+<p><em>Proof.</em> The trace is the derivative at the identity of the determinant, and the elementary symmetric function $e_1$ is the trace, so $c_1(\Theta) = \frac{i}{2\pi}\operatorname{tr}\Theta$; for the determinant line bundle with the induced metric, the Chern connection is the connection induced on $\Lambda^kE$, whose curvature is $\operatorname{tr}\Theta$, and the first Chern form is the same expression. Both sides are the class of the same invariant polynomial on the two bundles.</p>
+<h2 id="the-first-chern-class-of-a-hermitian-line-bundle">The First Chern Class of a Hermitian Line Bundle</h2>
+<p><strong>Proposition.</strong> Let $L$ be a holomorphic line bundle with a Hermitian metric $h$, and let $\Theta$ be the curvature of its Chern connection. Then in a holomorphic frame</p>
+<p>$$
+\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h, \qquad c_1(L) = \Bigl[\frac{i}{2\pi}\Theta\Bigr] = \Bigl[\frac{i}{2\pi}\bar\partial\partial\log h\Bigr],
+$$</p>
+<p>a real closed $(1,1)$-form, and its cohomology class is the first Chern class of $L$.</p>
+<p><em>Proof.</em> For a line bundle the Chern connection form is $\omega = h^{-1}\partial h = \partial\log h$ and the curvature is $\Theta = \bar\partial\partial\log h$ by the previous article, since $\omega\wedge\omega = 0$ for a $1$-form valued in the abelian Lie algebra. The form is real by the skew-Hermitian theorem of the line bundle case, and closed by Chern–Weil; its class is the first Chern class by the definition of the Chern classes.</p>
+<p><strong>Example.</strong> On $M = \mathbb{C}$ with the constant metric $h = 1$ in the holomorphic frame, $\Theta = 0$ and the bundle is flat; with the metric $h = e^{-\lvert z\rvert^2}$ of the previous article, $\Theta = dz\wedge d\bar z$ and $c_1 = [\frac{i}{2\pi}dz\wedge d\bar z]$ is the class of the Euclidean area form. On the Riemann sphere $\mathbb{CP}^1$ with the Fubini–Study metric $h = 1+\lvert z\rvert^2$ on the line bundle $\mathcal{O}(1)$, the curvature integrates to $\int_{\mathbb{CP}^1}\frac{i}{2\pi}\Theta = 1$, the normalisation $c_1(\mathcal{O}(1)) = 1$ of <em>Characteristic Classes</em>, and the conjugate bundle $\mathcal{O}(-1)$ carries the value $-1$, with $\mathcal{O}(-1)$ the tautological bundle and $c_1(\mathcal{O}(-1)) = -x$.</p>
+<p><strong>Corollary (the determinant line bundle and the Ricci form).</strong> For a Hermitian bundle $E$ of rank $k$ the form $\frac{i}{2\pi}\operatorname{tr}\Theta$ is the curvature form of the induced metric on the determinant line bundle $\det E = \Lambda^kE$, and it is the <strong>Ricci form</strong> of $E$; consequently $c_1(E) = c_1(\det E)$, and for the tangent bundle $E = T^{1,0}M$ of a Hermitian manifold this Ricci form is the curvature of the canonical line bundle $\Lambda^{n,0}M = K_M$.</p>
+<h2 id="the-chern-character-and-further-identities">The Chern Character and Further Identities</h2>
+<p><strong>Definition.</strong> The <strong>Chern character</strong> of the Hermitian bundle $(E,h)$ is the real closed form</p>
+<p>$$
+\mathrm{ch}(\Theta) = \operatorname{tr}\exp\Bigl(\frac{i}{2\pi}\Theta\Bigr) = \sum_{j=1}^{k} e^{x_j} = k + c_1 + \tfrac12(c_1^2 - 2c_2) + \cdots,
+$$</p>
+<p>where the $x_j$ are the eigenvalues of $\frac{i}{2\pi}\Theta$; the total Chern character is $\mathrm{ch}(E) = [\mathrm{ch}(\Theta)]$.</p>
+<p><strong>Proposition.</strong> The Chern character is additive and multiplicative,</p>
+<p>$$
+\mathrm{ch}(E \oplus F) = \mathrm{ch}(E) + \mathrm{ch}(F), \qquad \mathrm{ch}(E \otimes F) = \mathrm{ch}(E)\,\mathrm{ch}(F),
+$$</p>
+<p>for Hermitian bundles with the direct-sum and tensor-product metrics, and it is unchanged by the dual, $\mathrm{ch}(E^*) = \mathrm{ch}(E)$ up to the grading; the classes in the two displays are the topological Chern characters of <em>Characteristic Classes</em>, written with the Hermitian representatives.</p>
+<p><em>Proof.</em> The curvature of a direct sum is block diagonal with the two blocks, so the trace of the exponential is the sum; the curvature of a tensor product is $\Theta_E\otimes I + I\otimes\Theta_F$, whose exponential factors, and the trace of the exponential of a sum of commuting matrices is the product of the characters. The values on the eigenvalues are $e^{x_j}$ for each bundle, and the identities follow from the multiplicativity of the exponential. The dual bundle's curvature is $-\Theta^T$, whose trace of the exponential agrees with the original up to the parity of the degrees.</p>
+<p><strong>Remark (normalisation agreement).</strong> The normalisations of this article — the factor $\frac{i}{2\pi}$, the sign making the class real for a metric connection, and the value $c_1(\mathcal{O}(-1))=-x$ — are the ones of <em>Fibre Bundles, Connections and Curvature</em> and <em>Characteristic Classes</em>, and the identities $c(T\mathbb{CP}^n)=(1+x)^{n+1}$, $p_i(E)=(-1)^ic_{2i}(E\otimes\mathbb{C})$ and $\mathrm{ch}(E)=\sum_je^{x_j}$ of <em>Characteristic Classes</em> agree with the Hermitian representatives computed here. The relation of the Pontryagin and the Chern classes through the realification of a Hermitian bundle, and the torsion phenomena of a flat bundle, are those of the two cited articles.</p>
+<h2 id="summary">Summary</h2>
+<p>For a Hermitian bundle the Chern connection has a skew-Hermitian curvature $\Theta$; the matrix $\frac{i}{2\pi}\Theta$ is Hermitian, and the elementary symmetric functions of its eigenvalues are the <strong>Chern forms</strong>, real closed forms whose de Rham classes are the integral Chern classes. The total Chern form is $\det(I+\frac{i}{2\pi}\Theta)$, the first Chern form is the trace $\frac{i}{2\pi}\operatorname{tr}\Theta$, and it is the class of the determinant line bundle. On a Hermitian line bundle $\Theta=\bar\partial\partial\log h$, and its class is the first Chern class, normalised so that $c_1(\mathcal{O}(1))=1$ on the Riemann sphere and $c_1(\mathcal{O}(-1))=-x$.</p>
+<p>The construction is the Chern–Weil one read with a metric: the invariant polynomials on the curvature give closed forms, their classes are independent of the metric and the connection, and the Hermitian metric supplies the preferred connection and the preferred real representatives. The Chern character $\operatorname{tr}\exp(\frac{i}{2\pi}\Theta)$ is additive and multiplicative, and the normalisations agree with those of <em>Fibre Bundles, Connections and Curvature</em> and <em>Characteristic Classes</em>, to which the topological content — integrality, the splitting principle, characteristic numbers and cobordism — belongs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E, k, h, \nabla, \Theta$</td>
+<td>Hermitian bundle, rank, metric, Chern connection, curvature</td>
+</tr>
+<tr>
+<td>$\Theta^* = -\Theta$</td>
+<td>Skew-Hermitian curvature of a metric connection</td>
+</tr>
+<tr>
+<td>$A = \frac{i}{2\pi}\Theta$</td>
+<td>Hermitian curvature; real eigenvalues $x_1,\ldots,x_k$</td>
+</tr>
+<tr>
+<td>$c(\Theta) = \det(I_k+\frac{i}{2\pi}\Theta)$</td>
+<td>Total Chern form; $c_j(\Theta)$ its degree-$2j$ part</td>
+</tr>
+<tr>
+<td>$c_j(\Theta) = e_j(x_1,\ldots,x_k)$</td>
+<td>Chern forms as elementary symmetric functions</td>
+</tr>
+<tr>
+<td>$c_1(\Theta) = \frac{i}{2\pi}\operatorname{tr}\Theta$</td>
+<td>First Chern form; real and closed</td>
+</tr>
+<tr>
+<td>$c_j(E) = [c_j(\Theta)]$</td>
+<td>Chern classes; integral classes of <em>Characteristic Classes</em></td>
+</tr>
+<tr>
+<td>$\Theta = \bar\partial\partial\log h$ on a line bundle</td>
+<td>Curvature of a Hermitian line bundle; $c_1 = [\frac{i}{2\pi}\Theta]$</td>
+</tr>
+<tr>
+<td>$\det E = \Lambda^kE$, Ricci form $\frac{i}{2\pi}\operatorname{tr}\Theta$</td>
+<td>Determinant line bundle and its curvature; $c_1(E)=c_1(\det E)$</td>
+</tr>
+<tr>
+<td>$\mathrm{ch}(\Theta) = \operatorname{tr}\exp(\frac{i}{2\pi}\Theta)$</td>
+<td>Chern character; $\mathrm{ch}(E\oplus F)=\mathrm{ch}E+\mathrm{ch}F$, $\mathrm{ch}(E\otimes F)=\mathrm{ch}E\,\mathrm{ch}F$</td>
+</tr>
+<tr>
+<td>$c_1(\mathcal{O}(1))=1$, $c_1(\mathcal{O}(-1))=-x$</td>
+<td>Normalisation on the Riemann sphere</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shiing-Shen Chern, "Characteristic classes of Hermitian manifolds", <em>Annals of Mathematics</em> 47 (1946), 85–121, for the original construction of the Chern classes from the curvature of a Hermitian metric.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the Chern–Weil homomorphism, the Chern forms and the Chern character.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the first Chern class of a line bundle, the Fubini–Study normalisation and the determinant line bundle.</li>
+<li>Jean-Pierre Demailly, <em>Complex Analytic and Differential Geometry</em> (OpenContent, 2012), for the Chern forms, the Ricci form and the positivity of Hermitian bundles.</li>
+<li>John W. Milnor and James D. Stasheff, <em>Characteristic Classes</em> (Princeton University Press, 1974), for the integrality, the splitting principle and the normalisations, cited for the agreement with <em>Characteristic Classes</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

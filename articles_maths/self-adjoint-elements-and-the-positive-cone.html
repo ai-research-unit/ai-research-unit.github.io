@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint Elements and the Positive Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-elements-and-the-positive-cone"><strong>Self-Adjoint Elements and the Positive Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The involution singles out the <strong>self-adjoint</strong> elements, those fixed by $\dagger$, and they form a real vector space inside the algebra; among them the <strong>positive</strong> elements are those that can be written as sums of elements $y^{\dagger}y$. The positive elements generate an <strong>order</strong> by $a\leq b$ whenever $b - a$ is positive, and the order is the algebraic substitute for the comparison of magnitudes: it is reflexive and transitive, it is invariant under the inner conjugations $x\mapsto y^{\dagger}xy$, and its positive part is exactly the positive cone. The order structures the algebra of a Hilbert algebra, and it is the object on which the positivity of states and of weights is decided.</p>
+<p>Two facts give the order its power. The positive cone is <strong>proper</strong> in a concrete algebra of operators — an element and its negative are both positive only if the element is zero — so the order is a partial order and not merely a preorder; and every positive element has a <strong>unique positive square root</strong>, which produces the absolute value $|x| = (x^{\dagger}x)^{1/2}$ and the polar decomposition $x = u|x|$. Positivity therefore carries a metric structure: lengths, moduli and decompositions.</p>
+<p>This article fixes the self-adjoint elements, the positive cone, the order and its invariance, and the square roots with the polar decomposition, in the setting of a $\ast$-algebra of bounded operators on a Hilbert space, which is the setting of the Hilbert algebras of the corpus.</p>
+<p>The involution and the adjoint axiom are <em>Hilbert Algebras</em>; the states built on the positive elements are <em>The GNS Construction</em>; the indefinite version of the cone, where positivity depends on the fundamental symmetry, is <em>Krein Algebras</em>; the operator algebras are <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>; the spectral theorem that produces the square roots in the general case is deferred to <em>Analysis on Linear Spaces</em> (Part III). Those are cited. The algebra is a unital $\ast$-algebra $A$ of bounded operators on a Hilbert space with adjoint $*$, and the involution is denoted $*$ when the Hilbert adjoint is meant.</p>
+<h2 id="self-adjoint-elements">Self-Adjoint Elements</h2>
+<p><strong>Definition.</strong> An element $x$ is <strong>self-adjoint</strong>, or <strong>Hermitian</strong>, when $x^{*} = x$. The set $A_{\mathrm{sa}}$ of self-adjoint elements is the fixed set of the involution.</p>
+<p><strong>Proposition (the real vector space).</strong> $A_{\mathrm{sa}}$ is a real vector space; every $x$ decomposes uniquely as $x = a + ib$ with $a, b$ self-adjoint, namely $a = \frac{1}{2}(x + x^{*})$ and $b = \frac{1}{2i}(x - x^{*})$; and $A$ is the complexification of $A_{\mathrm{sa}}$.</p>
+<p><strong>Proof.</strong> The fixed set of an antilinear involution is a real vector space; the decomposition is the standard one, and uniqueness follows by applying the involution.</p>
+<p><strong>Proposition (products and commutation).</strong> The product of two self-adjoint elements is self-adjoint exactly when they commute; $x^{*}x$ and $xx^{*}$ are always self-adjoint, and they have the same norm when the norm is that of a $\ast$-algebra of operators.</p>
+<p><strong>Proof.</strong> $(ab)^{*} = b^{*}a^{*} = ba$, which equals $ab$ exactly when $ab = ba$; $(x^{*}x)^{*} = x^{*}x$ always.</p>
+<p><strong>Remark (the real form).</strong> The self-adjoint part is the real form of the algebra: the involution is the conjugation with respect to it, the norm is determined on it, and every positivity statement in the theory is a statement about $A_{\mathrm{sa}}$.</p>
+<h2 id="the-positive-cone">The Positive Cone</h2>
+<p><strong>Definition.</strong> The <strong>positive cone</strong> is</p>
+<p>$$
+A_{+} = \Bigl\{\sum_{i=1}^{n} y_i^{*}y_i : n\geq1,\ y_i\in A\Bigr\},
+$$</p>
+<p>the set of finite sums of elements $y^{*}y$; an element of $A_{+}$ is <strong>positive</strong> and one writes $x\geq0$.</p>
+<p><strong>Proposition (positivity is positivity of the quadratic form).</strong> $x\in A_{+}$ if and only if $x$ is self-adjoint and $\langle xu,u\rangle\geq0$ for every $u$ in the Hilbert space, and this is also the condition that $x = y^{2}$ for a self-adjoint $y$.</p>
+<p><strong>Proof.</strong> For $x = \sum y_i^{*}y_i$ one has $\langle xu,u\rangle = \sum\|y_iu\|^{2}\geq0$; conversely a self-adjoint operator with nonnegative quadratic form is a limit of polynomials in itself with nonnegative values, hence a sum of squares in the von Neumann algebra generated by $x$, by the functional calculus.</p>
+<p><strong>Proposition (properties of the cone).</strong> $A_{+}$ is a convex cone, closed under $x\mapsto y^{*}xy$ for every $y$, closed under sums and under multiplication by nonnegative real scalars, closed in the norm; and it is <strong>proper</strong>: $x\in A_{+}$ and $-x\in A_{+}$ imply $x = 0$.</p>
+<p><strong>Proof.</strong> Convexity and stability under sums and scalars are immediate from the definition; the inner invariance is $\sum(y_i y)^{*}(y_iy)$; closure is a limit of sums of squares; properness is $\langle xu,u\rangle\geq0$ and $\leq0$, hence $= 0$, for every $u$, which forces $x = 0$.</p>
+<p><strong>Proposition (the cone of a Hilbert algebra).</strong> In a Hilbert algebra the elements $y^{\dagger}y$ are positive, and the positive cone is the closure for the form of the sums of such elements; the involution axiom makes the cone invariant under the inner conjugations, exactly as in the operator case.</p>
+<p><strong>Proof.</strong> $\langle y^{\dagger}yu,u\rangle = \langle yu,yu\rangle\geq0$ by the adjoint axiom, and the closure statement is the positivity of the form.</p>
+<h2 id="the-order">The Order</h2>
+<p><strong>Definition.</strong> The <strong>order</strong> is $a\leq b$ when $b - a\in A_{+}$, and $a < b$ when moreover $b - a$ is not zero.</p>
+<p><strong>Proposition (it is a partial order).</strong> The relation $\leq$ is reflexive, transitive and antisymmetric; it is a partial order on $A_{\mathrm{sa}}$ and its positive part is $A_{+}$.</p>
+<p><strong>Proof.</strong> Reflexivity is $0\in A_{+}$; transitivity is the closure of the cone under addition; antisymmetry is properness: $a\leq b$ and $b\leq a$ give $b - a\in A_{+}$ and $a - b\in A_{+}$, hence $b - a = 0$.</p>
+<p><strong>Proposition (compatibility with the algebra).</strong> The order is invariant under the inner conjugations and compatible with the involution:</p>
+<p>$$
+a\leq b \ \Longrightarrow\ y^{*}ay\leq y^{*}by, \qquad a\leq b \ \Longleftrightarrow\ -b\leq -a .
+$$</p>
+<p><strong>Proof.</strong> Both are the stability and the linearity of the cone.</p>
+<p><strong>Proposition (order and norm).</strong> In a unital $\ast$-algebra of operators the unit is an <strong>order unit</strong> and the order is <strong>Archimedean</strong>: for every self-adjoint $x$ one has $-\|x\|1\leq x\leq\|x\|1$, and if $x\leq\epsilon1$ for every $\epsilon>0$ then $x\leq0$.</p>
+<p><strong>Proof.</strong> For a self-adjoint operator $x$ the operator $\|x\|1 - x$ has nonnegative quadratic form, giving the first bound with its negative; the second is the same bound applied to $x + \delta 1$.</p>
+<p><strong>Remark (what the order is not).</strong> The order is not total: there are self-adjoint elements neither of which dominates the other, because the positive cone is not all of $A_{\mathrm{sa}}$ in dimension greater than one; and it is not compatible with the product: $a\leq b$ does not imply $xa\leq xb$ for a self-adjoint $x$ unless $x$ is positive, and even for positive $x$ the product inequality fails unless the factors commute.</p>
+<h2 id="square-roots-and-the-polar-decomposition">Square Roots and the Polar Decomposition</h2>
+<p><strong>Theorem (unique positive square root).</strong> Every $x\in A_{+}$ has a unique square root in $A_{+}$: there is exactly one $y\in A_{+}$ with $y^{2} = x$.</p>
+<p><strong>Proof.</strong> Uniqueness: if $y, z\in A_{+}$ and $y^{2} = z^{2}$ then $y$ and $z$ commute with $x$ and with each other, and taking the quadratic form at $u$ gives $\|yu\| = \|zu\|$, whence $y = z$. Existence: for a positive element of a von Neumann algebra the square root is produced by the functional calculus, $y = f(x)$ with $f(t) = t^{1/2}$, and the functional calculus is the spectral theorem of <em>Analysis on Linear Spaces</em> (Part III); in the finite-dimensional case it is the diagonalisation of a positive matrix.</p>
+<p><strong>Definition.</strong> The <strong>absolute value</strong> of $x$ is $|x| = (x^{*}x)^{1/2}$, and $x$ has the <strong>polar decomposition</strong></p>
+<p>$$
+x = u\,|x| , \qquad u^{*}u = \text{the projection onto } \overline{\mathrm{im}\,|x|} ,
+$$</p>
+<p>with $u$ a partial isometry.</p>
+<p><strong>Proof.</strong> The identity $\|xu\|^{2} = \langle x^{*}xu,u\rangle = \||x|u\|^{2}$ shows that the map $|x|u\mapsto xu$ is isometric from the image of $|x|$ onto the image of $x$, and it extends by continuity to the partial isometry $u$.</p>
+<p><strong>Proposition (the square root is order preserving and the cone is the set of squares).</strong> $a\leq b$ implies $a^{1/2}\leq b^{1/2}$ when $a, b$ commute, and $A_{+}$ is exactly the set of squares of self-adjoint elements: $x\in A_{+}$ if and only if $x = y^{2}$ for a self-adjoint $y$.</p>
+<p><strong>Proof.</strong> The square root of a positive element is self-adjoint and positive, giving the second statement; the first is the monotonicity of $t\mapsto t^{1/2}$ on commuting positive elements, again by the functional calculus.</p>
+<p><strong>Remark (the three faces of positivity).</strong> An element is positive exactly when it is a sum of squares, when its quadratic form is nonnegative, and when it is the square of a self-adjoint element; the three descriptions are used in different contexts, and the equivalence between them is the content of the two propositions above together with the square root theorem.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="matrices">Matrices</h3>
+<p>For $A = M_n(\mathbb{C})$ the self-adjoint elements are the Hermitian matrices, the positive cone is the set of positive semidefinite matrices, the order is the Loewner order, and every positive matrix has a unique positive semidefinite square root; the polar decomposition is the classical one.</p>
+<h3 id="the-abelian-case">The Abelian Case</h3>
+<p>For $A = C(X)$ the self-adjoint elements are the real-valued functions, $A_{+}$ is the set of nonnegative functions, the order is pointwise, and the square root is the pointwise one; the cone is proper and the order is Archimedean with the constant function $1$ as order unit.</p>
+<h3 id="a-hilbert-algebra">A Hilbert Algebra</h3>
+<p>In a Hilbert algebra the elements $y^{\dagger}y$ generate the positive cone and the order is the one determined by the form; the involution carries the cone to itself and the inner conjugations preserve it, so the order is the order of <em>Hilbert Algebras</em> read in the operator representation of <em>The Left and the Right Regular Representation</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>self-adjoint elements</strong> of a $\ast$-algebra of operators form the real form $A_{\mathrm{sa}}$, and the <strong>positive cone</strong> $A_{+}$ is the set of finite sums of elements $y^{*}y$; by the functional calculus it is also the set of self-adjoint elements with nonnegative quadratic form and the set of squares of self-adjoint elements. The cone is a convex cone, stable under the inner conjugations $x\mapsto y^{*}xy$, closed in the norm, and <strong>proper</strong>, so the <strong>order</strong> $a\leq b$ defined by $b - a\in A_{+}$ is a partial order, invariant under the inner conjugations, Archimedean and with the unit as order unit when the algebra is unital. Every positive element has a <strong>unique positive square root</strong>, which gives the <strong>absolute value</strong> $|x| = (x^{*}x)^{1/2}$ and the <strong>polar decomposition</strong> $x = u|x|$ with $u$ a partial isometry; the square roots are produced by the functional calculus, whose general form — the spectral theorem — is deferred to <em>Analysis on Linear Spaces</em> (Part III), while the finite-dimensional case is diagonalisation. The involution and the Hilbert-algebra positivity are <em>Hilbert Algebras</em>, the states built on the cone are <em>The GNS Construction</em>, and the indefinite analogue where positivity depends on $J$ is <em>Krein Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{\mathrm{sa}}$, $x^{*} = x$</td>
+<td>Self-adjoint elements, the real form</td>
+</tr>
+<tr>
+<td>$x = a+ib$</td>
+<td>Unique decomposition into self-adjoint real and imaginary parts</td>
+</tr>
+<tr>
+<td>$A_{+} = \{\sum y_i^{*}y_i\}$</td>
+<td>Positive cone</td>
+</tr>
+<tr>
+<td>$\langle xu,u\rangle\geq0$</td>
+<td>Positivity as nonnegativity of the quadratic form</td>
+</tr>
+<tr>
+<td>$a\leq b \iff b-a\in A_{+}$</td>
+<td>The order</td>
+</tr>
+<tr>
+<td>$y^{*}ay\leq y^{*}by$</td>
+<td>Invariance under inner conjugations</td>
+</tr>
+<tr>
+<td>$x^{1/2}$, $|x| = (x^{*}x)^{1/2}$</td>
+<td>Square root and absolute value</td>
+</tr>
+<tr>
+<td>$x = u|x|$</td>
+<td>Polar decomposition, $u$ a partial isometry</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for self-adjoint elements, positivity and the order.</li>
+<li>Jacques Dixmier, <em>$C^{*}$-Algebras</em> (North-Holland, 1977), for the positive cone, the order and the square roots.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for positivity in a von Neumann algebra and the polar decomposition.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the order structure and the square roots.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for positivity, states and the order of a von Neumann algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

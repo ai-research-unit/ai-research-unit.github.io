@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dirichlet Forms and the Hermitian Dirichlet Principle — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="dirichlet-forms-and-the-hermitian-dirichlet-principle"><strong>Dirichlet Forms and the Hermitian Dirichlet Principle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Dirichlet form is a closed coercive Hermitian form on a Hilbert space together with a contraction property: the form is not increased by truncating a function at $0$ and $1$. The two halves of the definition play different roles. The closedness and coercivity make the form the inner product of a new Hilbert space, and by the Lax–Milgram theorem they associate to it a self-adjoint operator — the <strong>generator</strong> — through the identity $a(u,v)=\langle Au,v\rangle$; the Markov contraction, which is the analytic form of the maximum principle, makes that operator the generator of a positivity-preserving contraction semigroup. The <strong>Dirichlet principle</strong> is the variational statement that goes with the coercivity: the unique solution of the variational equation is the unique minimiser of the energy functional, and it is the Hermitian case of the principle that the form itself is the energy.</p>
+<p>This article fixes the closed and coercive Hermitian forms, the associated operator, the Dirichlet principle, the Markov property and the contraction semigroup, and the generator of a Dirichlet form. The forms and the representation theorem are <em>Sesquilinear Forms and the Lax–Milgram Theorem</em>; the self-adjointness and the positivity of the generator are <em>Self-Adjoint Operators and the Spectral Theorem</em> and <em>Positive Operators and the Square Root</em>; the semi-bounded forms that are not coercive are handled by <em>The Friedrichs Extension of a Hermitian Form</em>; the Hilbert-space background is <em>Hilbert Spaces</em>, and the integration is <em>Measure Theory and Integration</em>.</p>
+<p>Throughout, $H$ is a complex Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, and $a$ is a <strong>Hermitian form</strong> with domain $\mathcal{D}(a)\subseteq H$ a dense linear subspace, linear in the first argument and conjugate-linear in the second, with $a(u,v)=\overline{a(v,u)}$; the form is <strong>closed</strong> if $\mathcal{D}(a)$ is complete for the norm $u\mapsto\sqrt{a(u,u)+\|u\|^2}$, <strong>coercive</strong> if $a(u,u)\ge c\|u\|^2$ for some $c>0$, and <strong>Markovian</strong> if $u\in\mathcal{D}(a)$ implies $(0\vee u)\wedge1\in\mathcal{D}(a)$ with $a\bigl((0\vee u)\wedge1,(0\vee u)\wedge1\bigr)\le a(u,u)$. The <strong>energy</strong> of $u\in\mathcal{D}(a)$ against $f\in H$ is $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$.</p>
+<h2 id="closed-forms-and-the-associated-operator">Closed Forms and the Associated Operator</h2>
+<p><strong>Definition.</strong> A <strong>closed Hermitian form</strong> is a Hermitian form whose domain is complete for the form norm $\|u\|_a=\sqrt{a(u,u)+\|u\|^2}$; a <strong>Dirichlet form</strong> is a closed coercive Markovian Hermitian form on $H$.</p>
+<p><strong>Proposition (the form domain is a Hilbert space).</strong> If $a$ is closed and Hermitian then $\mathcal{D}(a)$ with $\langle u,v\rangle_a=a(u,v)+\langle u,v\rangle$ is a Hilbert space continuously embedded in $H$; if $a$ is coercive with constant $c$ then the form norm is equivalent to $u\mapsto\sqrt{a(u,u)}$ and $\mathcal{D}(a)$ is complete for that norm as well.</p>
+<p><em>Proof.</em> Closedness is the completeness of the form norm; the embedding is the inequality $\|u\|\le\|u\|_a$, and coercivity gives $a(u,u)\le\|u\|_a^2\le(1+\|a\|/c)a(u,u)$ when the form is bounded by $\|a\|$, so the two norms are equivalent.</p>
+<p><strong>Theorem (the generator).</strong> Let $a$ be a closed coercive Hermitian form. Then there is a unique self-adjoint positive operator $A$ with domain</p>
+<p>$$
+\mathcal{D}(A)=\{u\in\mathcal{D}(a):v\mapsto a(u,v)\ \text{is bounded in }H\}\subseteq\mathcal{D}(a)
+$$</p>
+<p>such that</p>
+<p>$$
+a(u,v)=\langle Au,v\rangle\qquad(u\in\mathcal{D}(A),\ v\in\mathcal{D}(a)).
+$$</p>
+<p>The operator $A$ is boundedly invertible with $\|A^{-1}\|\le1/c$, its form domain contains the domain of $A$, and $a$ is the closure of the form $u,v\mapsto\langle Au,v\rangle$ on $\mathcal{D}(A)\times\mathcal{D}(A)$.</p>
+<p><em>Proof.</em> On the Hilbert space $(\mathcal{D}(a),\langle\cdot,\cdot\rangle_a)$ the pairing $a$ is bounded and coercive, so by Lax–Milgram it is represented by a bounded operator; restricting the representing operator to the vectors whose representing functional is bounded in $H$ gives a symmetric operator, and the representation theorem for forms on the dense subspace $H$ produces $A$. The inverse bound is Lax–Milgram on the form, and the closure statement is the density of $\mathcal{D}(A)$ in $\mathcal{D}(a)$ for the form norm.</p>
+<p><strong>Proposition (the resolvent and the square root).</strong> With $A$ as above, the resolvent $(\lambda+A)^{-1}$ is bounded for $\lambda>0$, and $A$ has a positive square root; the <strong>form domain</strong> of $a$ is the domain of $A^{1/2}$,</p>
+<p>$$
+\mathcal{D}(a)=\mathcal{D}(A^{1/2}),\qquad a(u,v)=\langle A^{1/2}u,A^{1/2}v\rangle ,
+$$</p>
+<p>so the Dirichlet form is the Dirichlet form of its own square root.</p>
+<p><em>Proof.</em> The identification of the form domain with $\mathcal{D}(A^{1/2})$ is the standard spectral-theoretic statement for a positive self-adjoint operator; the factorisation is $a(u,v)=\langle Au,v\rangle=\langle A^{1/2}u,A^{1/2}v\rangle$ on the operator domain, extended by closure to the form domain.</p>
+<h2 id="the-dirichlet-principle">The Dirichlet Principle</h2>
+<p><strong>Theorem (the Hermitian Dirichlet principle).</strong> Let $a$ be a closed coercive Hermitian form on $H$ and let $f\in H$. Then the energy $E_f$ is bounded below on $\mathcal{D}(a)$ and has a unique minimiser $u_0$, which is exactly the unique solution of the variational equation</p>
+<p>$$
+a(u_0,v)=\langle f,v\rangle\qquad(v\in\mathcal{D}(a)),
+$$</p>
+<p>and the minimum value is</p>
+<p>$$
+\inf_{u\in\mathcal{D}(a)}E_f(u)=E_f(u_0)=-a(u_0,u_0)=-\langle f,u_0\rangle .
+$$</p>
+<p><em>Proof.</em> Completing the square, $E_f(u)=a(u-u_0,u-u_0)-a(u_0,u_0)$ for the solution $u_0$ of the variational equation, which exists and is unique by Lax–Milgram applied to the Hilbert space $(\mathcal{D}(a),\langle\cdot,\cdot\rangle_a)$; the first term is nonnegative and vanishes exactly at $u=u_0$, so $u_0$ is the unique minimiser and the minimum value is $-a(u_0,u_0)$.</p>
+<p><strong>Corollary (the linear dependence on the data).</strong> The minimiser depends linearly on $f$: the map $f\mapsto u_0=A^{-1}f$ is linear and bounded with norm at most $1/c$, and it is the inverse of the generator.</p>
+<p><em>Proof.</em> The variational equation reads $a(u_0,v)=\langle f,v\rangle$ for all $v$, which is $\langle Au_0,v\rangle=\langle f,v\rangle$ on the operator domain and extends by continuity; so $u_0=A^{-1}f$, and $A^{-1}$ is bounded with norm at most $1/c$.</p>
+<p><strong>Proposition (the energy identity).</strong> For the minimiser of $E_f$,</p>
+<p>$$
+E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle = \|u-u_0\|_a^2-a(u_0,u_0) ,
+$$</p>
+<p>for every $u\in\mathcal{D}(a)$, and the energy is strictly convex: for $u\neq v$ and $0<t<1$,</p>
+<p>$$
+E_f\bigl(tu+(1-t)v\bigr)<tE_f(u)+(1-t)E_f(v) .
+$$</p>
+<p><em>Proof.</em> The identity is the completed square written with the form norm; strict convexity is the strict positivity $a(u-v,u-v)>0$ of the Hermitian form on a nonzero difference, together with the linearity of the term $\operatorname{Re}\langle f,\cdot\rangle$.</p>
+<p><strong>Example (the classical Dirichlet principle).</strong> For a bounded open $\Omega$ the form $a(u,v)=\int_\Omega\nabla u\cdot\nabla\bar v$ on $H^1_0(\Omega)$ is a closed coercive Hermitian form, and the Dirichlet principle recovers the classical statement that the function minimising $\int|\nabla u|^2-2\operatorname{Re}\int f\bar u$ among functions vanishing on the boundary is the weak solution of $-\Delta u=f$.</p>
+<h2 id="the-markov-property-and-the-semigroup">The Markov Property and the Semigroup</h2>
+<p><strong>Theorem (the Markov property is a contraction).</strong> A closed coercive Hermitian form $a$ is Markovian if and only if the associated semigroup $T_t=e^{-tA}$, $t\ge0$, is submarkovian: $0\le u\le1$ implies $0\le T_tu\le1$ for every $t\ge0$. Equivalently, the Markov property is the statement that the truncations $(0\vee u)\wedge1$ are contractions for the form.</p>
+<p><em>Proof.</em> The equivalence is the Beurling–Deny criterion: the normal contractions operate on the form domain and contract the form exactly when the semigroup is submarkovian, and the truncation $u\mapsto(0\vee u)\wedge1$ is the basic normal contraction from which the others are generated.</p>
+<p><strong>Theorem (the contraction semigroup).</strong> Let $a$ be a Dirichlet form with generator $A$. Then $A$ is self-adjoint, positive and boundedly invertible, the semigroup $T_t=e^{-tA}$ is a strongly continuous contraction semigroup of self-adjoint operators, and</p>
+<p>$$
+a(u,v)=\lim_{t\downarrow0}\frac1t\langle u-T_tu,v\rangle
+$$</p>
+<p>for $u\in\mathcal{D}(A)$ and all $v\in\mathcal{D}(a)$; conversely a strongly continuous contraction semigroup generated by a self-adjoint operator produces a closed coercive Hermitian form through this limit, and the form is Markovian exactly when the semigroup is submarkovian.</p>
+<p><em>Proof.</em> The spectral theorem makes $e^{-tA}$ a contraction for the positive self-adjoint $A$, and strong continuity is the spectral calculus; the limit formula is the differential version of the semigroup equation $\frac{d}{dt}T_tu=-AT_tu$ evaluated at $t=0$; the converse and the Markov equivalence are the Beurling–Deny theorem.</p>
+<p><strong>Proposition (the maximum principle).</strong> A submarkovian semigroup preserves positivity and the bound $\|T_tu\|_\infty\le\|u\|_\infty$ in the ordered setting: if $u\ge0$ then $T_tu\ge0$, and if $u\le1$ then $T_tu\le1$. This is the analytic form of the maximum principle, and it is the reason the Dirichlet form is the variational object of a positivity-preserving contraction semigroup.</p>
+<p><em>Proof.</em> The truncation $u\wedge0$ has form no larger than $u$, so the semigroup does not increase it, giving positivity; the upper bound is the same statement applied to $1-u$.</p>
+<h2 id="the-generator">The Generator</h2>
+<p><strong>Definition.</strong> The <strong>generator</strong> of a Dirichlet form $a$ is the operator $A$ of the representation theorem, characterised by $a(u,v)=\langle Au,v\rangle$ for $u\in\mathcal{D}(A)$ and $v\in\mathcal{D}(a)$.</p>
+<p><strong>Proposition (the generator is determined by the form on a core).</strong> If $\mathcal{C}\subseteq\mathcal{D}(A)$ is dense in $\mathcal{D}(a)$ for the form norm and $A_0=A|_{\mathcal{C}}$ is essentially self-adjoint, then the closure of $A_0$ is $A$ and the closure of the form $u,v\mapsto\langle A_0u,v\rangle$ is $a$; so the Dirichlet form and its generator determine each other.</p>
+<p><em>Proof.</em> Density in the form norm makes the closure of the form equal to $a$; essential self-adjointness makes the closure of $A_0$ the self-adjoint generator of that form, and uniqueness of the representation gives $A$.</p>
+<p><strong>Example (the Laplacian).</strong> For $\Omega=\mathbb{R}^d$ the form $a(u,v)=\int\nabla u\cdot\nabla\bar v$ on $H^1(\mathbb{R}^d)$ has generator the Laplacian $A=-\Delta$ on $H^2(\mathbb{R}^d)$, the associated semigroup is $e^{-tA}=e^{t\Delta}$, and the Markov property is the maximum principle for the generator. For a finite graph the form $a(u,v)=\sum_{x\sim y}(u(x)-u(y))(\bar v(x)-\bar v(y))$ on the vertex space is a Dirichlet form with generator the graph Laplacian and associated semigroup $e^{-tA}$; these two examples are the continuous and the discrete ends of the theory.</p>
+<h2 id="summary">Summary</h2>
+<p>A Dirichlet form is a closed coercive Hermitian form on a Hilbert space that is Markovian, meaning that truncating a function at $0$ and $1$ does not increase the form. Closedness and coercivity make the form domain a Hilbert space and produce, by Lax–Milgram, a unique self-adjoint positive invertible <strong>generator</strong> $A$ with $a(u,v)=\langle Au,v\rangle$ for $u$ in the operator domain and $v$ in the form domain, the form domain being that of $A^{1/2}$ and the form being the Dirichlet form of its own square root. The <strong>Hermitian Dirichlet principle</strong> states that the energy $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$ has a unique minimiser, which is the solution of the variational equation and equals $A^{-1}f$, with minimum value $-a(u_0,u_0)$ and with the energy equal to $\|u-u_0\|_a^2-\|u_0\|_a^2$. The Markov property is equivalent to the semigroup $e^{-tA}$ being submarkovian, so a Dirichlet form is the variational object behind a positivity-preserving contraction semigroup; the Laplacian on a domain and the graph Laplacian on a finite graph are the standard examples.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a(u,v)$</td>
+<td>closed coercive Hermitian form, linear in the first argument</td>
+</tr>
+<tr>
+<td>$\mathcal{D}(a)$</td>
+<td>form domain, a Hilbert space for $\|u\|_a$</td>
+</tr>
+<tr>
+<td>$\|u\|_a^2=a(u,u)+\|u\|^2$</td>
+<td>the form norm</td>
+</tr>
+<tr>
+<td>$a(u,v)=\langle Au,v\rangle$</td>
+<td>the generator $A$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}(a)=\mathcal{D}(A^{1/2})$</td>
+<td>form domain as the domain of the square root</td>
+</tr>
+<tr>
+<td>$E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$</td>
+<td>the energy functional</td>
+</tr>
+<tr>
+<td>$E_f(u_0)=-a(u_0,u_0)$</td>
+<td>minimum value of the Dirichlet principle</td>
+</tr>
+<tr>
+<td>$T_t=e^{-tA}$</td>
+<td>the contraction semigroup</td>
+</tr>
+<tr>
+<td>Markovian</td>
+<td>$(0\vee u)\wedge1$ contracts the form</td>
+</tr>
+<tr>
+<td>submarkovian</td>
+<td>$0\le u\le1\Rightarrow 0\le T_tu\le1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Masatoshi Fukushima, Yoichi Oshima and Masayoshi Takeda, <em>Dirichlet Forms and Symmetric Markov Processes</em> (De Gruyter, 2nd ed. 2011), for the Markov property, the Beurling–Deny criterion and the semigroup.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics IV: Analysis of Operators</em> (Academic Press, 1978), for the form representation of a self-adjoint operator and the semigroup.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for closed forms, the form domain and the square root.</li>
+<li>David Gilbarg and Neil S. Trudinger, <em>Elliptic Partial Differential Equations of Second Order</em> (Springer, 2nd ed. 1983), for the classical Dirichlet principle and the maximum principle.</li>
+<li>Zhi-Ming Ma and Michael Röckner, <em>Introduction to the Theory of (Non-Symmetric) Dirichlet Forms</em> (Springer, 1992), for the general theory and the analytic characterisation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

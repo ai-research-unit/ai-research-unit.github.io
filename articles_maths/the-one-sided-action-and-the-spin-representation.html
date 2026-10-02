@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Action and the Spin Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-action-and-the-spin-representation"><strong>The One-Sided Action and the Spin Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A minimal left ideal of a Clifford algebra is a simple module, and the algebra acts on it by left multiplication. That action is a one-sided operator, and read as a representation it is the <strong>spin representation</strong>: the same left multiplication, restricted from the algebra to the spin group, is the representation that carries the spinors. This article keeps the operator and the representation in one place. The one-sided operator is the action of the algebra on the ideal; the spin representation is its restriction; and the irreducibility of the module is the irreducibility of the representation, with Schur's lemma supplying the commutant.</p>
+<p>Two facts organise the article. First, of the two one-sided families only the left family preserves a left ideal, so the spin representation is intrinsically one-sided: a right multiplication by a rotor does not keep the ideal fixed, and the dual representation requires a minimal right ideal instead. Second, the ideal being simple, the action on it is irreducible and its commutant is a division algebra, so the spin representation has no invariant subspaces and its structure is that of a simple module over a division algebra.</p>
+<p>The algebra and the minimal left ideals are <em>Left Multiplication and the Clifford Module Structure</em> and <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the operator calculus of the left and the right multiplications is <em>One-Sided Operators on a Clifford Algebra</em>; the spinor module and its dimension, the chiral splitting and the complex spin representation are <em>Spin Representations and Clifford Modules with Inner Conjugation</em>; the spin group and the double cover are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> and <em>The Two-Sided Operators and the Spin Group</em>. Those constructions are quoted, not repeated; what this article adds is the description of the representation as the one-sided action on a minimal left ideal, with its irreducibility and its commutant. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate, and the algebra is semisimple.</p>
+<h2 id="the-one-sided-action-on-a-left-ideal">The One-Sided Action on a Left Ideal</h2>
+<p><strong>Definition.</strong> Let $I = \mathrm{Cl}(V,q)\pi$ be a minimal left ideal. The <strong>one-sided action</strong> of the algebra on $I$ is the restriction of the left multiplication,</p>
+<p>$$
+\rho_I : \mathrm{Cl}(V,q) \longrightarrow \mathrm{End}_F(I), \qquad \rho_I(x)\psi = x\,\psi , \qquad \psi \in I .
+$$</p>
+<p>It is the module action of the regular module on its submodule $I$, and it is an algebra homomorphism.</p>
+<p><strong>Proposition.</strong> $\rho_I$ is well defined – that is, $x\psi \in I$ for $x \in \mathrm{Cl}$ and $\psi \in I$ – precisely because $I$ is a left ideal; and $\rho_I(xz) = \rho_I(x)\rho_I(z)$, $\rho_I(1) = \mathrm{id}_I$.</p>
+<p><strong>Proof.</strong> $x\psi \in \mathrm{Cl}\psi \subseteq \mathrm{Cl}\,\mathrm{Cl}\pi \subseteq \mathrm{Cl}\pi = I$; the homomorphism properties are associativity and $1\psi = \psi$.</p>
+<p><strong>Proposition (only the left family acts).</strong> Let $R_y(\psi) = \psi y$ be the right multiplication. Then $R_y$ preserves $I$ for every $y$ only when $I$ is a two-sided ideal, which for a minimal left ideal of a simple algebra it is not. A right multiplication by a unit preserves a minimal <em>right</em> ideal, and the resulting action is the dual of $\rho_I$.</p>
+<p><strong>Proof.</strong> If $R_y(I) \subseteq I$ for all $y$ then $\mathrm{Cl}\pi\,\mathrm{Cl} \subseteq \mathrm{Cl}\pi$, so $\mathrm{Cl}\pi$ is two-sided, contrary to minimality in a simple algebra, where the only two-sided ideals are $0$ and the algebra. For a minimal right ideal $J = \pi'\mathrm{Cl}$, right multiplication by a unit $R$ satisfies $JR = \pi'\mathrm{Cl}R = \pi'\mathrm{Cl}$, since $\mathrm{Cl}R = \mathrm{Cl}$.</p>
+<p><strong>Remark (the two actions on the ideal).</strong> The left action of the algebra and the right action of the opposite algebra on the same ideal, the identification of the ideal with the exterior algebra of a Witt basis, and the fact that a left ideal is preserved by every left multiplication while a right ideal is preserved by every right multiplication, are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em>; the operator-theoretic content of the present article is only the restriction of the left family, which is the module action.</p>
+<h2 id="the-spin-representation">The Spin Representation</h2>
+<p><strong>Definition.</strong> The <strong>spin representation</strong> attached to the module $I$ is the restriction of the one-sided action to the spin group,</p>
+<p>$$
+\rho : \mathrm{Spin}(V,q) \longrightarrow GL_F(I), \qquad \rho(x) = \rho_I(x)\big|_{\mathrm{Spin}(V,q)} .
+$$</p>
+<p><strong>Theorem (irreducibility).</strong> Let $I$ be a minimal left ideal. Then the action $\rho_I$ of the algebra on $I$ is irreducible: $I$ has no proper nonzero submodule, and every nonzero element of $I$ is a cyclic vector. Equivalently, the only $F$-linear maps $T : I \to I$ with $T(x\psi) = xT(\psi)$ for every $x$ and $\psi$ are the multiplications by elements of the division ring $D = \mathrm{End}_{\mathrm{Cl}}(I)$, so the commutant is a division algebra and</p>
+<p>$$
+\rho_I\bigl(\mathrm{Cl}(V,q)\bigr) = \mathrm{End}_D(I)
+$$</p>
+<p>whenever the algebra is simple.</p>
+<p><strong>Proof.</strong> A submodule of the left ideal $I$ is a left ideal contained in $I$, and minimality leaves only $0$ and $I$; a nonzero $\psi \in I$ generates $\mathrm{Cl}\psi = I$. For the commutant, a $T$ commuting with the action is an endomorphism of the simple module, so Schur's lemma makes $D = \mathrm{End}_{\mathrm{Cl}}(I)$ a division ring; the density statement is the double centraliser theorem applied to the simple algebra.</p>
+<p><strong>Theorem (the kernel on the group).</strong> The representation $\rho$ satisfies $\rho(-1) = -\mathrm{id}_I \neq \mathrm{id}_I$, so $-1$ is <strong>not</strong> in the kernel. When the Clifford algebra is simple the action of the algebra on the irreducible module is faithful, so an element of the spin group acting as the identity on $I$ is the identity of the algebra, and the kernel of $\rho$ is trivial. When the algebra is a product $A \times A$, the irreducible module of one factor is annihilated by the other and the kernel is the nontrivial subgroup $\mathrm{Spin}(V,q) \cap (\{1\}\times A)$. In both cases $\rho$ does not descend to $SO(V,q)$: the element $-1$ is in the kernel of the projection $\mathrm{Spin} \to SO$ but acts as $-\mathrm{id}_I$ on the module.</p>
+<p><strong>Proof.</strong> The element $-1$ is the scalar $-1$ of the algebra and $I \neq 0$, so it acts as $-\mathrm{id}_I$. In the simple case the action of the algebra on its irreducible module is faithful, so the kernel on the spin group is trivial. The product case and the half-spin kernels are computed in <em>Spin Representations and Clifford Modules with Inner Conjugation</em>.</p>
+<p><strong>Remark (odd dimension and the two simple modules).</strong> In odd dimension the algebra has two simple modules, and a minimal left ideal carries one of them; the two are distinguished by the scalar by which the central volume element acts, and the spin representation attached to one of them is irreducible. Nothing new is needed: the uniqueness in even dimension and the pair in odd dimension are <em>Left Multiplication and the Clifford Module Structure</em>, and the concrete dimension of the module is <em>Spin Representations and Clifford Modules with Inner Conjugation</em>.</p>
+<h2 id="the-one-sided-action-and-the-vector-action">The One-Sided Action and the Vector Action</h2>
+<p><strong>Proposition (the two actions are different).</strong> Let $R$ be a rotor and $\psi \in I$. The <strong>spin action</strong> is left multiplication $\psi \mapsto R\psi$ and carries the half of the double cover that acts on the spinors; the <strong>vector action</strong> is the sandwich $v \mapsto RvR^{-1}$ and acts on $V$, not on $I$ in general. The two actions carry the two halves of the angle of the rotation, and they are not the same representation.</p>
+<p><strong>Proof.</strong> Left multiplication by $R$ is the module action; the sandwich is the two-sided operator of <em>The Sandwich on a Clifford Algebra</em>, which acts on $V$ by construction and does not preserve a general left ideal, as the explicit counterexample of <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> shows.</p>
+<p><strong>Remark (why the one-sided action is the right one for spinors).</strong> A spinor is an element of the ideal, so the only operators that can act on it without leaving the ideal are the left multiplications. This is the operator-theoretic reason the spin representation is written as a one-sided action and not as a sandwich, and the reason the sandwich is reserved for the vector representation.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="a-minimal-left-ideal-in-math77">A Minimal Left Ideal in $\mathrm{Cl}_{1,1}(\mathbb{R})$</h3>
+<p>With $e_1^{2} = 1$, $e_2^{2} = -1$ the algebra is $M_2(\mathbb{R})$, the idempotent $\pi = \tfrac12(1+e_1)$ generates the two-dimensional ideal $I = \mathbb{R}\pi \oplus \mathbb{R}e_2\pi$, and the left action of the algebra on $I$ is the defining two-dimensional representation of $M_2(\mathbb{R})$. It is irreducible, its commutant is $\mathbb{R}$, and $\rho(-1) = -\mathrm{id}_I$.</p>
+<h3 id="a-minimal-left-ideal-in-math87">A Minimal Left Ideal in $\mathrm{Cl}_{0,3}(\mathbb{R})$</h3>
+<p>With $e_j^{2} = -1$ the algebra is $\mathbb{H}\oplus\mathbb{H}$, and a minimal left ideal is four-dimensional over $\mathbb{R}$, carrying one of the two simple modules. The left action is irreducible, the central volume element $\omega$ acts by one of the two scalars $\pm1$, and the spin group acts by left multiplication with kernel $\{\pm1\}$ on this module. The two choices of sign give the two chiral halves.</p>
+<h3 id="the-rotor-and-the-two-actions">The Rotor and the Two Actions</h3>
+<p>In $\mathrm{Cl}_{0,2}(\mathbb{R})\cong\mathbb{H}$ with $R = e_1e_2$ and $I$ a minimal left ideal, left multiplication by $R$ acts on $I$ as an $F$-linear map of order $2$ up to the sign of the double cover, while the sandwich $v \mapsto RvR^{-1}$ acts on the two-dimensional space of vectors as the half-turn. The two operators are different, live on different spaces, and illustrate the two actions of the rotor.</p>
+<h2 id="summary">Summary</h2>
+<p>On a minimal left ideal $I = \mathrm{Cl}(V,q)\pi$ the <strong>one-sided action</strong> $\rho_I(x)\psi = x\psi$ is the module action of the algebra, and it is the left family alone: a right multiplication does not preserve a left ideal, so nothing two-sided acts on the spinors. The action is <strong>irreducible</strong>, because $I$ is a simple module; its commutant is the division algebra $D = \mathrm{End}_{\mathrm{Cl}}(I)$ and, over a simple algebra, the action exhausts $\mathrm{End}_D(I)$. The <strong>spin representation</strong> is the restriction of this action to $\mathrm{Spin}(V,q)$; it satisfies $\rho(-1) = -\mathrm{id}_I$, its kernel is trivial over a simple algebra and is the other factor over a product algebra, and it therefore does not descend to $SO(V,q)$ – the element $-1$ is invisible to $SO$ but acts as $-\mathrm{id}_I$ on the spinors. The action on the vectors by the sandwich is a different representation, on a different space, and the one-sided action is the correct one for spinors because only left multiplication stays in the ideal. The construction of the ideals, their dimension, the chirality and the concrete models are <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> and <em>Spin Representations and Clifford Modules with Inner Conjugation</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I = \mathrm{Cl}(V,q)\pi$</td>
+<td>Minimal left ideal, the spinor space</td>
+</tr>
+<tr>
+<td>$\rho_I(x)$</td>
+<td>One-sided action, the left multiplication restricted to $I$</td>
+</tr>
+<tr>
+<td>$R_y(\psi) = \psi y$</td>
+<td>Right multiplication, which does not preserve $I$</td>
+</tr>
+<tr>
+<td>$\rho = \rho_I\big|_{\mathrm{Spin}}$</td>
+<td>Spin representation</td>
+</tr>
+<tr>
+<td>$D = \mathrm{End}_{\mathrm{Cl}}(I)$</td>
+<td>Commutant, a division algebra</td>
+</tr>
+<tr>
+<td>$\rho_I(\mathrm{Cl}) = \mathrm{End}_D(I)$</td>
+<td>Density over a simple algebra</td>
+</tr>
+<tr>
+<td>$\rho(-1) = -\mathrm{id}_I$</td>
+<td>The sign of the double cover in the representation</td>
+</tr>
+<tr>
+<td>$R\psi$, $RvR^{-1}$</td>
+<td>Spin action and vector action of a rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the spin representation as the action on a minimal left ideal.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for irreducible Clifford modules and the spin representation of the spin group.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the module theory and the density statement.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a simple module.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the spinor spaces of the low-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

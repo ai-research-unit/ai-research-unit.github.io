@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms on a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-on-a-lie-algebra"><strong>Hermitian Forms on a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Hermitian form</strong> on a complex Lie algebra is a sesquilinear form that is conjugate-symmetric; it is <strong>invariant</strong> when the adjoint action is skew with respect to it, and the invariance is the single condition that makes the form the infinitesimal counterpart of a unitary structure. A positive definite invariant Hermitian form turns the Lie algebra into a space whose adjoint operators are skew-adjoint, so its representations by skew-adjoint operators are the unitary ones; and the existence of such a form is the compactness of the algebra. The form is thus the bridge from the algebra to its unitary representations, and it is the object from which the star of the enveloping algebra and the Casimir element are read.</p>
+<p>This article treats Hermitian forms on a Lie algebra, their invariance and the unitary representations they define. It is the first article of the <code>- * Operator Theory</code> group of the category; the real forms and the compact real form are <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>, the Cartan decomposition and the compact type are <em>The Cartan Decomposition and the Cartan Involution</em>, the star structure of the enveloping algebra is <em>The Involution on the Enveloping Algebra of a Lie Group</em>, and the operators built from the adjoint with respect to the form are <em>Unitary Representations and the Adjoint Operator</em>, <em>The Signed Adjoint Sandwich on a Lie Algebra</em>, <em>The Signed Adjoint of the Reflection on a Lie Algebra</em>, <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em> and <em>The Graded Adjoint Action on a Module over a Lie Algebra</em>, all below in this group.</p>
+<p>The article assumes the complex and the real Lie algebra, the Killing form and the semisimple structure from <em>Structure of Lie Algebras</em>, the compact real form and the Cartan involution from <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>, the Hermitian form on a complex vector space and its definite and indefinite cases from <em>Involutive Linear Spaces</em> and <em>Self-Adjoint Operators and the Spectral Theorem</em>, the star of an involutive algebra from <em>Involutive Rings</em>, and the Hilbert space and the adjoint operator from <em>Hilbert Spaces</em> and <em>Bounded Operators on a Hilbert Space</em>. The unitary representations are cited from <em>Unitary Representations of a Lie Group</em>; the analytic theory of their decomposition is not developed here.</p>
+<h2 id="hermitian-forms">Hermitian Forms</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a complex Lie algebra. A <strong>Hermitian form</strong> on $\mathrm{G}$ is a map $H : \mathrm{G}\times\mathrm{G}\to\mathbb{C}$ that is linear in the first argument, conjugate-linear in the second, and conjugate-symmetric,</p>
+<p>$$
+H(\lambda X + \mu Y, Z) = \lambda H(X,Z) + \mu H(Y,Z), \qquad H(X,Y) = \overline{H(Y,X)} ,
+$$</p>
+<p>so that in particular $H(X,X)\in\mathbb{R}$. It is <strong>non-degenerate</strong> when $H(X,Y) = 0$ for all $Y$ forces $X = 0$, <strong>positive definite</strong> when $H(X,X) > 0$ for $X\neq0$, and <strong>indefinite</strong> otherwise.</p>
+<p><strong>Definition.</strong> The <strong>associated antilinear map</strong> is</p>
+<p>$$
+\flat : \mathrm{G}\to\mathrm{G}^{*}, \qquad \flat(X)(Y) = H(X,Y) ,
+$$</p>
+<p>which is conjugate-linear and is a bijection exactly when $H$ is non-degenerate; a Hermitian form is then the same datum as a non-degenerate Hermitian form on $\mathrm{G}^{*}$ by the inverse of $\flat$.</p>
+<p><strong>Proposition.</strong> The non-degenerate Hermitian forms on $\mathrm{G}$ are classified by their signature: over a complex vector space there is a basis in which $H$ has the form</p>
+<p>$$
+H(X,Y) = \sum_{i=1}^{p}X_i\overline{Y_i} - \sum_{j=p+1}^{n}X_j\overline{Y_j} ,
+$$</p>
+<p>and the absolute value of the signature is the only invariant of the form up to linear isomorphism.</p>
+<p><em>Proof.</em> This is the diagonalisation of a Hermitian form, which is the spectral theorem of <em>Self-Adjoint Operators and the Spectral Theorem</em>; the change of basis preserves the Hermitian character and the number of positive and negative squares is invariant by Sylvester's law.</p>
+<h3 id="the-invariance">The Invariance</h3>
+<p><strong>Definition.</strong> A Hermitian form $H$ is <strong>invariant</strong> under the bracket when</p>
+<p>$$
+H([X,Y], Z) = H(X,[Y,Z]) \qquad (X,Y,Z\in\mathrm{G}) .
+$$</p>
+<p><strong>Proposition.</strong> The two conditions</p>
+<p>$$
+H([X,Y],Z) = H(X,[Y,Z]), \qquad H([X,Y],Z) + H(Y,[X,Z]) = 0
+$$</p>
+<p>are equivalent, and under either of them the adjoint operator of $\operatorname{ad}_X$ with respect to $H$ is $-\operatorname{ad}_X$,</p>
+<p>$$
+H(\operatorname{ad}_X Y, Z) = -H(Y,\operatorname{ad}_X Z) ,
+$$</p>
+<p>so the adjoint operators of the algebra are skew-Hermitian.</p>
+<p><em>Proof.</em> The bracket is alternating, so $H([X,Y],Z) = -H([Y,X],Z)$; substituting the first identity and using conjugate symmetry gives the second, and conversely. Reading either identity as the definition of the adjoint of $\operatorname{ad}_X$ gives the skew-Hermitian statement.</p>
+<h2 id="the-unitary-structure">The Unitary Structure</h2>
+<h3 id="the-definite-case">The Definite Case</h3>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a complex Lie algebra with a positive definite invariant Hermitian form $H$. Then the real Lie algebra $\mathrm{G}_{\mathbb{R}}$ of the Hermitian operators of $H$ is compact, its adjoint operators are skew-Hermitian, and $H$ is the negative of a compact form; conversely a compact real form $\mathrm{K}$ of a complex semisimple Lie algebra carries a positive definite invariant form, and the algebra is identified with a space of skew-Hermitian operators.</p>
+<p><em>Proof.</em> The algebra of the skew-Hermitian operators of a positive definite Hermitian form on $\mathbb{C}^n$ is $\mathrm{u}(n)$, which is compact, and the invariance of $H$ says exactly that $\operatorname{ad}_X$ is skew-Hermitian, so the image of $\mathrm{G}$ lies in $\mathrm{u}(n)$ for a faithful representation and $\mathrm{G}$ is compact; the Killing form of a compact algebra is negative definite by <em>Structure of Lie Algebras</em>, hence $-B$ is positive definite and invariant. The converse is the same argument read for $\mathrm{K}$ acting on the complexification.</p>
+<p><strong>Corollary.</strong> A complex semisimple Lie algebra carries a positive definite invariant Hermitian form exactly when it has a compact real form, and then the form is unique up to a positive scalar; the form is the negative of the Killing form of the compact form.</p>
+<p><em>Proof.</em> The uniqueness up to scalar is Schur's lemma applied to the irreducible adjoint representation, whose endomorphisms commuting with the action are the scalars on each simple summand; the identification with $-B$ is the previous theorem.</p>
+<h3 id="the-indefinite-case">The Indefinite Case</h3>
+<p><strong>Proposition.</strong> Let $H$ be a non-degenerate invariant Hermitian form of signature $(p,q)$ on a real Lie algebra $\mathrm{G}$. Then the operators $\operatorname{ad}_X$ are in the Lie algebra $\mathrm{u}(p,q)$ of the form, the isometry algebra of $H$ is a real form of the complex algebra preserving the form, and the Cartan involution of $\mathrm{G}$ with respect to the compact part of the form is the map $+\mathrm{id}$ on the maximal compact subalgebra and $-\mathrm{id}$ on its complement.</p>
+<p><em>Proof.</em> The invariance is the statement that the adjoint action preserves $H$, so the image of $\mathrm{G}$ lies in the isometry algebra $\mathrm{u}(p,q)$; the isometry algebra of the complexification contains the compact part $\mathrm{u}(p)\oplus\mathrm{u}(q)$, whose fixed algebra is the maximal compact subalgebra of the real form, and the Cartan involution is the conjugation of the form. This connects the form with <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>.</p>
+<h2 id="the-forms-and-the-representations">The Forms and the Representations</h2>
+<h3 id="the-form-defines-the-star">The Form Defines the Star</h3>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a real Lie algebra with an invariant Hermitian form $H$, and let $\sigma$ be the principal anti-automorphism of $U(\mathrm{G})$. Then the adjoint operation for $H$ on the operators coincides with the star,</p>
+<p>$$
+\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X = \operatorname{ad}_{\sigma(X)} \qquad (X\in\mathrm{G}),
+$$</p>
+<p>and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to $H$ is a star-representation of $U(\mathrm{G})$; conversely a star-representation of $U(\mathrm{G})$ whose operators are skew-Hermitian for $H$ is unitarisable.</p>
+<p><em>Proof.</em> The identity is the invariance of $H$; the equivalence of the two formulations on the enveloping algebra is that both are generated on the first order, by the universality of $U(\mathrm{G})$. This is the content of <em>The Involution on the Enveloping Algebra of a Lie Group</em>, read with the form as the geometric datum.</p>
+<h3 id="the-casimir-and-positivity">The Casimir and Positivity</h3>
+<p><strong>Theorem.</strong> Let $H$ be a positive definite invariant Hermitian form on a real semisimple Lie algebra $\mathrm{G}$, let $(X_i)$ be an orthonormal basis, and let $\Omega = -\sum_i X_i^2$. Then $\Omega$ is a positive Hermitian element of $U(\mathrm{G})$, it is central, and its image in every star-representation is a positive self-adjoint operator; the scalars by which it acts are the quadratic invariants of the irreducible summands.</p>
+<p><em>Proof.</em> The element is Hermitian because the $X_i$ are skew under the star, and it is positive because $-\sum X_i^2 = \sum X_i^{\star}X_i$; the centrality is the invariance of the form; the positivity of the image is the positivity of the sum of the squares of skew-adjoint operators, and the eigenvalue statement is <em>The Casimir Operator of a Lie Group</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-unitary-algebra">The Unitary Algebra</h3>
+<p>Let $\mathrm{G} = \mathrm{u}(n)$ with $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t}) = -\operatorname{tr}(XY)$ on the skew-Hermitian matrices, using that the conjugate transpose of a skew-Hermitian matrix is its negative. The form is positive definite and invariant under the commutator, the adjoint operators are skew-Hermitian, and the algebra is the model compact case.</p>
+<h3 id="the-special-linear-algebra">The Special Linear Algebra</h3>
+<p>Let $\mathrm{G} = \mathrm{su}(n)$ with $H(X,Y) = -\operatorname{tr}(XY)$ on the traceless skew-Hermitian matrices. The form is positive definite and invariant, it is a positive multiple of $-\frac{1}{2n}B$ with $B$ the Killing form, and the Casimir element is positive; the unitary representations of the compact group act by skew-Hermitian operators, which is the Peter--Weyl situation of <em>Unitary Representations of a Lie Group</em>.</p>
+<h3 id="an-indefinite-form">An Indefinite Form</h3>
+<p>Let $\mathrm{G} = \mathrm{u}(p,q)$ with the Hermitian form of signature $(p,q)$ on $\mathbb{C}^{p+q}$. The form on the algebra $H(X,Y) = \operatorname{tr}(X\overline{Y}^{t})$ has the indefinite signature $(p^2+q^2, 2pq)$, the invariance holds, and the Cartan involution is conjugation by the form; the unitary representations are the discrete series and the analytic continuation of <em>Unitary Representations of a Lie Group</em>, and the geometry of the associated domain is <em>Hermitian Lie Groups and the Bounded Domain</em>.</p>
+<h3 id="the-heisenberg-algebra">The Heisenberg Algebra</h3>
+<p>Let $\mathrm{G}$ be the Heisenberg algebra with the central element $Z$ and the brackets $[X,Y] = Z$. There is no non-degenerate invariant Hermitian form for which $Z$ acts as a scalar in an irreducible representation other than zero: the invariance forces $H([X,Y],Z) = H(X,[Y,Z]) = 0$, so $H(Z,Z) = 0$ and the form is degenerate exactly at the radical; the unitary representations nonetheless exist, and they are those of <em>Unitary Representations and the Orbit Method</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Hermitian form</strong> on a complex Lie algebra is sesquilinear, conjugate-symmetric and real-valued on the diagonal, and it is <strong>invariant</strong> when $H([X,Y],Z) = H(X,[Y,Z])$, equivalently when $H([X,Y],Z) + H(Y,[X,Z]) = 0$; the two forms of the condition are equivalent and they say that each adjoint operator $\operatorname{ad}_X$ is skew-Hermitian for $H$. A positive definite invariant Hermitian form makes the algebra a compact real form, and conversely every compact form carries such a form, unique up to a positive scalar and equal to the negative of the Killing form; non-degenerate indefinite forms have a signature and put the algebra inside the isometry algebra $\mathrm{u}(p,q)$, whose compact part gives the Cartan involution. The adjoint operation of the form coincides with the star of the principal anti-automorphism of the enveloping algebra, so the unitary representations are exactly the star-representations by skew-Hermitian operators, and the Casimir element $-\sum X_i^2$ of an orthonormal basis is a positive central Hermitian element whose images are positive self-adjoint operators. The definite case is the compact theory, the indefinite case is the theory of the real forms, and the degenerate case — in which the form vanishes on the radical — exhibits the limits of the construction, as the Heisenberg algebra shows.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H(X,Y)$</td>
+<td>a Hermitian form, linear in the first and conjugate-linear in the second argument</td>
+</tr>
+<tr>
+<td>$H(X,Y) = \overline{H(Y,X)}$</td>
+<td>conjugate symmetry</td>
+</tr>
+<tr>
+<td>$H([X,Y],Z) = H(X,[Y,Z])$</td>
+<td>invariance of the form</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X$</td>
+<td>skew-Hermitian adjoint operators</td>
+</tr>
+<tr>
+<td>$\flat(X)(Y) = H(X,Y)$</td>
+<td>the associated antilinear map to the dual</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>the signature of a non-degenerate form</td>
+</tr>
+<tr>
+<td>$\mathrm{u}(p,q)$</td>
+<td>the isometry algebra of a form of signature $(p,q)$</td>
+</tr>
+<tr>
+<td>$\Omega = -\sum_i X_i^2$</td>
+<td>the Casimir element of an orthonormal basis</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X^{\dagger} = \operatorname{ad}_{\sigma(X)}$</td>
+<td>the agreement of the adjoint with the star</td>
+</tr>
+<tr>
+<td>positive definite invariant form</td>
+<td>the compact case, $-B$ up to a scalar</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the invariant forms, the compact forms and the Cartan involution.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the Hermitian forms on a real Lie algebra and the hermitian structure of the real forms.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, third edition, 2002), for the Hermitian forms on a vector space, their signature and Sylvester's law.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the unitary representations defined by an invariant form and the embedding into the unitary group.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the invariant forms, the star and the positivity of the Casimir element.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

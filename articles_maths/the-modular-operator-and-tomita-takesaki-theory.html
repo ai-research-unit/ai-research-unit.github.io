@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Modular Operator and Tomita-Takesaki Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-modular-operator-and-tomita-takesaki-theory"><strong>The Modular Operator and Tomita-Takesaki Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Given a von Neumann algebra $\mathcal{M}$ on a Hilbert space $H$ and a vector $\xi$ that is cyclic and separating for it, one can define, without any further structure, an antilinear operator $S$ by $S(x\xi) = x^{*}\xi$. It is densely defined and closable, and its closure has a polar decomposition $S = J\Delta^{1/2}$ whose two factors are the two objects of the <strong>Tomita–Takesaki theory</strong>: the <strong>modular operator</strong> $\Delta = S^{*}S$, a positive self-adjoint operator, and the <strong>modular conjugation</strong> $J$, an antiunitary involution. Neither is visible from the algebra alone, and both are determined by the pair $(\mathcal{M},\xi)$.</p>
+<p>The theorem says what the two factors do. The modular conjugation is an anti-isomorphism of the algebra onto its commutant, $J\mathcal{M}J = \mathcal{M}'$, and it inverts the modular operator, $J\Delta J = \Delta^{-1}$; the modular operator generates a one-parameter group of automorphisms of the algebra, $\sigma_t(x) = \Delta^{it}x\Delta^{-it}$, and the vector $\xi$ satisfies the KMS condition for this group. So a single vector produces the commutant, a flow on the algebra, and the analytic condition — the KMS condition — that identifies the flow. This is the deepest structural result about von Neumann algebras, and it is the reason a von Neumann algebra with a cyclic and separating vector is called a <strong>standard form</strong>.</p>
+<p>This article fixes the Tomita operator, its polar decomposition, the modular operator, the modular conjugation with the commutant theorem, and the modular group, in the definite case; the group and the KMS condition are developed further in <em>The Modular Group and the KMS Condition</em>, and the indefinite version is <em>The Indefinite Modular Operator</em> and <em>Krein–Tomita–Takesaki Theory</em>.</p>
+<p>The Hilbert algebra whose involution produces $S$ is <em>The Completion of a Hilbert Algebra</em>; the positivity and the square roots are <em>Self-Adjoint Elements and the Positive Cone</em>; the operator algebra is <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>; the states are <em>The GNS Construction</em>. Those are cited. The algebra is $\mathcal{M}$, the vector is $\xi$, and the objects are $S$, $\Delta$, $J$.</p>
+<h2 id="the-tomita-operator">The Tomita Operator</h2>
+<p><strong>Definition.</strong> Let $\xi$ be <strong>cyclic</strong> for $\mathcal{M}$, $\overline{\mathcal{M}\xi} = H$, and <strong>separating</strong>, $x\xi = 0\Rightarrow x = 0$. The <strong>Tomita operator</strong> is</p>
+<p>$$
+S : \mathrm{dom}\,S\to H, \qquad \mathrm{dom}\,S = \mathcal{M}\xi, \qquad S(x\xi) = x^{*}\xi .
+$$</p>
+<p><strong>Proposition (well defined, antilinear, involutive, closable).</strong> $S$ is well defined because $\xi$ is separating, it is antilinear, $S^{2} = \mathrm{id}$ on its domain, and it is closable.</p>
+<p><strong>Proof.</strong> Well-definedness and antilinearity are direct; $S^{2}(x\xi) = S(x^{*}\xi) = (x^{*})^{*}\xi = x\xi$; for closability, if $x_n\xi\to0$ and $S(x_n\xi) = x_n^{*}\xi\to u$, then for every $y$ and $v$ one gets $\langle u,y\xi\rangle = \lim\langle x_n^{*}\xi,y\xi\rangle = \lim\langle\xi,x_n y\xi\rangle = 0$, so $u = 0$ by cyclicity.</p>
+<p><strong>Proposition (the adjoint of $S$).</strong> The adjoint $S^{*}$ is the antilinear operator with $S^{*}(x\xi) = x^{*}\xi$ as well; more precisely $S^{*}$ has domain $\mathcal{M}'\xi$ and $S^{*}(y\xi) = y^{*}\xi$ for $y\in\mathcal{M}'$.</p>
+<p><strong>Proof.</strong> $\langle S x\xi, y\xi\rangle = \langle x^{*}\xi,y\xi\rangle = \langle\xi,xy\xi\rangle$ and $\langle x\xi, S^{*}y\xi\rangle = \langle x\xi,y^{*}\xi\rangle = \langle\xi,xy^{*}\xi\rangle$; the two agree for all $x$ exactly when $y$ commutes with $\mathcal{M}$, i.e. for $y\in\mathcal{M}'$.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Theorem (polar decomposition).</strong> The closure $\bar S$ of the Tomita operator has the polar decomposition</p>
+<p>$$
+\bar S = J\,\Delta^{1/2}, \qquad \Delta = \bar S^{*}\bar S , \qquad J = \text{the modular conjugation},
+$$</p>
+<p>with $\Delta$ a positive definite self-adjoint operator and $J$ an antiunitary involution.</p>
+<p><strong>Proof.</strong> Each closed antilinear operator has a polar decomposition $\bar S = U|\bar S|$ with $|\bar S| = (\bar S^{*}\bar S)^{1/2}$ and $U$ an antiunitary partial isometry; the operator $|\bar S|$ is the positive square root of the positive self-adjoint $\bar S^{*}\bar S$, which exists by <em>Self-Adjoint Elements and the Positive Cone</em>; and $U$ is in fact antiunitary and involutive because $S^{2} = \mathrm{id}$ passes to the closure, forcing $J^{2} = \mathrm{id}$ and $\Delta = J\Delta^{-1}J$.</p>
+<p><strong>Definition.</strong> The operator $\Delta = \bar S^{*}\bar S$ is the <strong>modular operator</strong> of the pair $(\mathcal{M},\xi)$ and the antiunitary $J$ in the polar decomposition is the <strong>modular conjugation</strong>.</p>
+<h2 id="the-modular-operator">The Modular Operator</h2>
+<p><strong>Proposition (positivity and the relations with $S$).</strong> $\Delta$ is positive definite and self-adjoint, $\Delta^{1/2}$ is its positive square root, and</p>
+<p>$$
+S = J\Delta^{1/2}, \qquad S^{*} = J\Delta^{-1/2}, \qquad \Delta = S^{*}S, \qquad \Delta^{-1} = SS^{*} .
+$$</p>
+<p><strong>Proof.</strong> The polar decomposition and the involutivity $J^{2} = \mathrm{id}$, $S^{2} = \mathrm{id}$.</p>
+<p><strong>Proposition (the action of $\Delta$ on the orbit).</strong> The orbit $\mathcal{M}\xi$ lies in the domain of $\Delta^{it}$ for every real $t$, and $\Delta^{it}(x\xi) = \sigma_{-t}(x)\xi$, where $\sigma_t$ is the modular group of the next section; equivalently $\Delta$ is the conjugate of $\sigma$ under the identification of the orbit with the algebra.</p>
+<p><strong>Proof.</strong> The identity is the definition of the modular group by the polar decomposition; it is the standard rewriting of $S = J\Delta^{1/2}$.</p>
+<p><strong>Remark (the modular operator records the asymmetry of $\xi$).</strong> $\Delta = \mathrm{id}$ exactly when $\xi$ is <strong>tracial</strong>, $\omega(xy) = \omega(yx)$ for $\omega$ the vector state; in that case $S$ is antiunitary and the modular conjugation alone carries the theory. The deviation of $\Delta$ from the identity is the extent of the non-traciality of the vector state.</p>
+<h2 id="the-modular-conjugation-and-the-commutant">The Modular Conjugation and the Commutant</h2>
+<p><strong>Theorem (Tomita–Takesaki, the conjugation).</strong> With $J$ the modular conjugation of the pair $(\mathcal{M},\xi)$,</p>
+<p>$$
+J\,\mathcal{M}\,J = \mathcal{M}' , \qquad J\,\mathcal{M}'\,J = \mathcal{M} , \qquad J\Delta J = \Delta^{-1} , \qquad J\xi = \xi .
+$$</p>
+<p><strong>Proof.</strong> The statement $J\mathcal{M}J\subseteq\mathcal{M}'$ is read off the adjoint of $S$: $S^{*}$ has domain $\mathcal{M}'\xi$ and agrees with $S$ there, and $J = \bar S\Delta^{-1/2}$ on the dense set gives $JxJ$ commuting with $\mathcal{M}$; the reverse inclusion is the same statement applied to $\mathcal{M}'$, or the bicommutant theorem; the inversion of $\Delta$ is $J\Delta J = JS^{*}SJ = S S^{*}$; and $J\xi = \xi$ is the fact that $\xi$ is fixed by the conjugation of its own polar decomposition.</p>
+<p><strong>Corollary (the standard form).</strong> The quadruple $(\mathcal{M}, \mathcal{M}', H, J)$ is a <strong>standard form</strong>: the algebra acts, the commutant is its conjugate, the conjugation is an anti-isomorphism between them, the vector $\xi$ is cyclic and separating for both, and the positive cone $\mathcal{M}_{+}\xi$ is self-dual.</p>
+<p><strong>Proof.</strong> Cyclicity for $\mathcal{M}'$ follows from the theorem and cyclicity for $\mathcal{M}$; the other statements are the theorem and the definition of the modular conjugation.</p>
+<p><strong>Remark (why the commutant is automatic).</strong> The commutant of a von Neumann algebra is one of the most delicate objects of the theory, and Tomita's theorem computes it from a single vector. This is the practical content of the theorem, and it is the reason it is used everywhere the commutant is needed.</p>
+<h2 id="the-modular-group">The Modular Group</h2>
+<p><strong>Theorem (Tomita–Takesaki, the flow).</strong> With $\Delta$ the modular operator of the pair $(\mathcal{M},\xi)$, the family</p>
+<p>$$
+\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it},
+$$</p>
+<p>is a one-parameter group of automorphisms of $\mathcal{M}$, strongly continuous in the strong topology, and the vector $\xi$ satisfies the KMS condition for it: for all $x, y\in\mathcal{M}$ the function $F(t) = \langle\sigma_t(y)x\xi,\xi\rangle$ extends holomorphically to the strip $0<\mathrm{Im}\,z<1$ with boundary values</p>
+<p>$$
+F(t) = \omega(x\sigma_t(y)), \qquad F(t+i) = \omega(\sigma_t(y)x), \qquad \omega = \text{the vector state of } \xi .
+$$</p>
+<p><strong>Proof.</strong> $\Delta^{it}$ is unitary for every real $t$, hence conjugation by it is an automorphism; the group law is that of $t\mapsto\Delta^{it}$; the strong continuity is the strong continuity of a unitary group generated by a self-adjoint operator; the KMS statement is the analytic continuation of $\Delta = S^{*}S$, the two boundary values corresponding to the two faces $S$ and $S^{*}$ of the Tomita operator.</p>
+<p><strong>Definition.</strong> $\sigma$ is the <strong>modular group</strong> or <strong>modular automorphism group</strong> of the pair $(\mathcal{M},\xi)$.</p>
+<p><strong>Remark (the flow is invisible in the algebra alone).</strong> The modular group is determined by the vector and not only by the algebra: conjugating the representation by a modular group changes the vector but not the algebra, and the modular groups of different vectors are the flows computed from different modular operators. This is taken up in <em>The Modular Group and the KMS Condition</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="tracial-vectors">Tracial Vectors</h3>
+<p>If $\xi$ is a trace vector, $\omega(xy) = \omega(yx)$, then $\Delta = \mathrm{id}$, the modular group is trivial, the modular conjugation is the map $x\xi\mapsto x^{*}\xi$ extended, and the standard form is symmetric between the algebra and its commutant.</p>
+<h3 id="the-unit-vector-of-math127">The Unit Vector of $M_n(\mathbb{C})$</h3>
+<p>For $\mathcal{M} = M_n(\mathbb{C})$ acting on $H = M_n(\mathbb{C})$ by left multiplication with the Hilbert–Schmidt form and $\xi = 1$, the modular operator is the identity (the trace is tracial), the modular conjugation is $J(x) = x^{*}$, and $J\mathcal{M}J = \mathcal{M}'$ is the algebra of right multiplications.</p>
+<h3 id="the-abelian-case">The Abelian Case</h3>
+<p>For $\mathcal{M} = L^{\infty}(X)$ acting on $H = L^{2}(X)$ with $\xi$ the constant function one, the modular operator is the identity, the modular conjugation is complex conjugation of functions, the algebra is its own commutant and the theory degenerates to the statement that the commutant of an abelian algebra is itself.</p>
+<h2 id="summary">Summary</h2>
+<p>For a von Neumann algebra $\mathcal{M}$ with a <strong>cyclic and separating</strong> vector $\xi$, the <strong>Tomita operator</strong> $S(x\xi) = x^{*}\xi$ is a densely defined closable antilinear involution, and its closure has the polar decomposition $\bar S = J\Delta^{1/2}$. The factor $\Delta = \bar S^{*}\bar S$ is the <strong>modular operator</strong>: positive definite and self-adjoint, with $\Delta^{-1} = SS^{*}$. The factor $J$ is the <strong>modular conjugation</strong>: antiunitary, involutive, fixing $\xi$, inverting the modular operator, and carrying the algebra to its commutant, $J\mathcal{M}J = \mathcal{M}'$. Together they turn $(\mathcal{M},H,\xi)$ into a <strong>standard form</strong> in which the commutant is computed from one vector. The <strong>modular group</strong> $\sigma_t = \mathrm{Ad}\,\Delta^{it}$ is a strongly continuous one-parameter group of automorphisms of $\mathcal{M}$, and the vector state of $\xi$ satisfies the <strong>KMS condition</strong> with respect to it; $\Delta$ is the identity exactly when the vector state is tracial, and the modular group and the KMS condition are the subject of <em>The Modular Group and the KMS Condition</em>. The Hilbert algebra that produces $S$ is <em>The Completion of a Hilbert Algebra</em>, the positivity and square roots are <em>Self-Adjoint Elements and the Positive Cone</em>, the indefinite counterparts are <em>The Indefinite Modular Operator</em> and <em>Krein–Tomita–Takesaki Theory</em>, and the operator algebra is <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$, $S(x\xi) = x^{*}\xi$</td>
+<td>Tomita operator, antilinear and involutive</td>
+</tr>
+<tr>
+<td>$S^{*}$, $S^{*}(y\xi) = y^{*}\xi$</td>
+<td>Adjoint, defined on $\mathcal{M}'\xi$</td>
+</tr>
+<tr>
+<td>$\bar S = J\Delta^{1/2}$</td>
+<td>Polar decomposition</td>
+</tr>
+<tr>
+<td>$\Delta = \bar S^{*}\bar S$</td>
+<td>Modular operator, positive definite self-adjoint</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>Modular conjugation, antiunitary, $J^{2} = \mathrm{id}$, $J\xi = \xi$</td>
+</tr>
+<tr>
+<td>$J\mathcal{M}J = \mathcal{M}'$</td>
+<td>The commutant theorem</td>
+</tr>
+<tr>
+<td>$J\Delta J = \Delta^{-1}$</td>
+<td>Inversion of the modular operator</td>
+</tr>
+<tr>
+<td>$\sigma_t = \mathrm{Ad}\,\Delta^{it}$</td>
+<td>Modular group</td>
+</tr>
+<tr>
+<td>$\Delta = \mathrm{id}$</td>
+<td>Tracial vector state</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Minoru Tomita, "On canonical forms of von Neumann algebras" (1967), for the original construction.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular theory in its algebraic form.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the Tomita–Takesaki theorem and the standard form.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the polar decomposition of the Tomita operator and the modular group.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the standard form and the self-dual cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

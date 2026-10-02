@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Triples with an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="jordan-triples-with-an-involution"><strong>Jordan Triples with an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Jordan triple system</strong> is an $R$-module $T$ with a trilinear ternary product $\{\cdot,\cdot,\cdot\} : T^3\to T$ that is symmetric in the outer two variables and satisfies the Jordan triple identity; the ternary product is the symmetrised form of the binary Jordan product, since a Jordan algebra $J$ with product $\circ$ becomes a Jordan triple under $\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$. A <strong>Jordan triple with an involution</strong> is such a system together with a <strong>conjugate-linear involution</strong> $\sigma$ of order two that preserves the ternary product,</p>
+<p>$$
+\sigma\{x,y,z\} = \{\sigma(x),\sigma(y),\sigma(z)\}, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma(\lambda x) = \varsigma(\lambda)\sigma(x),
+$$</p>
+<p>$\varsigma$ being an involution of the scalars. The map $\sigma$ is the triple analogue of the involution of a Jordan algebra of <em>Jordan Algebras with an Involution</em>: the binary picture is recovered by choosing a Jordan algebra and reading its involution, and the <strong>self-adjoint</strong> elements, those with $\sigma(x) = x$, form the <strong>fixed subtriple</strong> $H(T)$. The purpose of this article is to develop that analogue: the fixed subtriple is itself a Jordan triple, the system decomposes as $T = H(T)\oplus iH(T)$ over a quadratic extension, and the structure of $T$ descends to $H(T)$ by the same functors as for an algebra.</p>
+<p>After the definitions the article proves that a $\varsigma$-semilinear involution of a Jordan triple is an automorphism of the ternary structure and that the fixed set is a sub-triple; it specialises to the triple of a Jordan algebra with involution, where the fixed subtriple is the triple of the self-adjoint part and is the object that the rectangular matrix triple and the Hermitian matrices exhibit; and it formulates the descent, according to which the fixed subtriple is the real form of the triple and the structure is recovered by scalar extension. The article stays at the level of the ternary product and never forms a norm, a distance or an operator spectrum.</p>
+<p>The article assumes <em>Jordan Algebras</em> for the binary product and the binary-to-ternary construction, <em>Jordan Algebras with an Involution</em> for the binary involution and its fixed part, <em>Involutive Linear Algebras</em> for the semilinear involution, <em>Algebras</em> for the objects, and <em>Tensor Products of Modules</em> for the scalar extension. The binary case is the companion article <em>Jordan Algebras with an Involution</em>, and the real forms are <em>Real Forms and the Descent of an Algebra</em>, both earlier in this group. Throughout, $R$ is a commutative ring with identity, $\varsigma$ is an involution of the scalars when a conjugate-linear involution is at hand, $T$ is a Jordan triple $R$-module, and $\sigma$ is a $\varsigma$-semilinear involution preserving the triple product; no form, norm, distance or order occurs.</p>
+<h2 id="jordan-triples">Jordan Triples</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>Jordan triple system</strong> over $R$ is an $R$-module $T$ with an $R$-trilinear map</p>
+<p>$$
+\{\cdot,\cdot,\cdot\} : T\times T\times T\to T
+$$</p>
+<p>such that for all $x, y, z, u, v \in T$</p>
+<p>$$
+\{x,y,z\} = \{z,y,x\}, \qquad
+\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\}-\{u,\{y,x,v\},w\}+\{u,v,\{x,y,w\}\}.
+$$</p>
+<p>The first identity is the symmetry in the outer variables and the second is the <strong>Jordan triple identity</strong>.</p>
+<p><strong>Proposition (the triple of a Jordan algebra).</strong> Let $J$ be a Jordan algebra with product $\circ$. Then</p>
+<p>$$
+\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y
+$$</p>
+<p>makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $U_x$, $\{x,y,x\} = 2\,U_x(y)$.</p>
+<p><em>Proof.</em> The symmetry in $x$ and $z$ is the commutativity of $\circ$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2U_x(y)$ is the defining formula $U_x = 2L_x^2-L_{x^2}$ read on $y$. $\square$</p>
+<p><strong>Definition (morphism).</strong> A <strong>homomorphism</strong> of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an <strong>anti-homomorphism</strong> reverses the order of the arguments, and $T$ with the reversed arguments is the <strong>opposite</strong> triple.</p>
+<h2 id="the-involution-of-a-jordan-triple">The Involution of a Jordan Triple</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> A $\varsigma$-semilinear <strong>involution</strong> of a Jordan triple $T$ is a map $\sigma : T\to T$ with</p>
+<p>$$
+\sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\lambda x) = \varsigma(\lambda)\sigma(x), \qquad \sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\}, \qquad \sigma^2 = \mathrm{id}.
+$$</p>
+<p>It is <strong>linear</strong> when $\varsigma = \mathrm{id}$ and <strong>conjugate-linear</strong> otherwise; a <strong>Jordan triple with involution</strong> is a pair $(T,\sigma)$.</p>
+<p><strong>Theorem.</strong> A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the operator $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.</p>
+<p><em>Proof.</em> The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer operator is the product preservation read with the outer variables equal. $\square$</p>
+<h3 id="the-fixed-sub-triple">The Fixed Sub-Triple</h3>
+<p><strong>Definition.</strong> The <strong>self-adjoint part</strong> of $(T,\sigma)$ is</p>
+<p>$$
+H(T) = \{x \in T : \sigma(x) = x\},
+$$</p>
+<p>and the <strong>skew</strong> elements are those with $\sigma(x) = -x$.</p>
+<p><strong>Theorem.</strong> $H(T)$ is a sub-triple of $T$: if $x, y, z \in H(T)$ then $\{x,y,z\}\in H(T)$. If $\sigma$ is conjugate-linear over a quadratic extension $K/F$ with $K = F\oplus Fi$, $\varsigma(i) = -i$, then</p>
+<p>$$
+T = H(T)\oplus i\,H(T), \qquad H(T) = \{x : \sigma(x) = x\}, \qquad iH(T) = \{x : \sigma(x) = -x\},
+$$</p>
+<p>and $H(T)$ is the <strong>fixed subtriple</strong>, a Jordan triple over the fixed field $F$.</p>
+<p><em>Proof.</em> For the closure, $\sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\} = \{x,y,z\}$ when the three arguments are self-adjoint. The decomposition is the one of <em>Jordan Algebras with an Involution</em>: $h_1 = \tfrac12(x+\sigma x)$ and $h_2 = \tfrac{1}{2i}(x-\sigma x)$ are self-adjoint and $x = h_1+ih_2$. The ternary product of the fixed field is the restriction. $\square$</p>
+<p><strong>Corollary.</strong> The fixed subtriple $H(T)$ is the set of the self-adjoint elements and is a Jordan triple over the fixed field; the map $x\mapsto \sigma(x)$ is the identity on $H(T)$ and the negation on the skew part, and it is the semilinear extension of the identity of $H(T)$.</p>
+<h2 id="the-case-of-a-jordan-algebra">The Case of a Jordan Algebra</h2>
+<h3 id="the-binary-to-ternary-involution">The Binary-to-Ternary Involution</h3>
+<p><strong>Theorem.</strong> Let $J$ be a Jordan algebra with a $\varsigma$-semilinear involution $\sigma$ in the sense of <em>Jordan Algebras with an Involution</em>, and let $T = J$ be the associated Jordan triple. Then $\sigma$ is a $\varsigma$-semilinear involution of $T$, and the fixed subtriple of $T$ is the triple of the self-adjoint part:</p>
+<p>$$
+H(T) = H(J), \qquad \{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y \ \text{ on } \ H(J) .
+$$</p>
+<p><em>Proof.</em> The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\circ\sigma y)\circ\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition. $\square$</p>
+<p><strong>Corollary.</strong> The involution of a Jordan triple restricts to the involution of any Jordan subalgebra that it preserves, and the fixed subtriple of the triple of $J$ is the Jordan triple of the fixed subalgebra; in particular the theory of the involutions of a Jordan triple contains that of the involutions of a Jordan algebra.</p>
+<h3 id="the-descent">The Descent</h3>
+<p><strong>Theorem (descent).</strong> Let $T$ be a $K$-Jordan triple with a conjugate-linear involution $\sigma$ over a quadratic extension $K/F$. Then the fixed subtriple is an $F$-Jordan triple and $T = H(T)\otimes_F K$ as $K$-triples with the involution $\mathrm{id}\otimes\varsigma$; a $\sigma$-equivariant $K$-linear morphism of triples is the scalar extension of its restriction to $H(T)$.</p>
+<p><em>Proof.</em> The scalar extension of $H(T)$ by $K$ is $H(T)\oplus iH(T) = T$; the tensor product of triples is taken componentwise and the ternary product is $K$-trilinear; a $\sigma$-equivariant map preserves $H(T)$ and is $K$-linear, hence determined by its restriction. $\square$</p>
+<p><strong>Corollary.</strong> The fixed subtriple is the <strong>real form</strong> of the triple, and the passing to the fixed subtriple is the ternary analogue of the descent of <em>Real Forms and the Descent of an Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the rectangular matrix triple).</strong> Let $T = M_{p,q}(\mathbb{C})$ with the triple $\{x,y,z\} = xy^*z+zy^*x$, where $y^* = \bar y^{\mathsf{T}}$ is the conjugate transpose. This is a Jordan triple, and the map $\sigma(x) = x^*$ is a conjugate-linear involution of $T$: $\sigma\{x,y,z\} = (xy^*z+zy^*x)^* = z^*yx^*+x^*yz^* = \{z^*,y^*,x^*\}$, which is $\{x^*,y^*,z^*\}$ by the outer symmetry. The fixed subtriple $H(T) = \{x : x^* = x\}$ is the space of the Hermitian matrices, nonzero only when $p = q$.</p>
+<p><strong>Example (the Hermitian matrices).</strong> For $p = q = n$ the fixed subtriple $H(T)$ is the space of the Hermitian $n\times n$ matrices, and the ternary product $\{x,y,z\} = xy z+z y x$ restricts to it; this is the triple of the formally real Jordan algebra $H_n(\mathbb{C})$, and its positive structure is the one of <em>Formally Real Algebras and the Sum of Squares</em>.</p>
+<p><strong>Example (the binary reduction).</strong> For a Jordan algebra $J$ with involution and the trivial ternary involution the fixed subtriple is $J$ itself; for the involution $\sigma = \mathrm{id}$ the whole triple is fixed, and for the triple of a formally real algebra the fixed subtriple is the ordered object of Part IV.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Jordan triple system</strong> is a module with a trilinear product symmetric in the outer variables and satisfying the Jordan triple identity; a Jordan algebra yields such a triple by $\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$, with $\{x,y,x\} = 2U_x(y)$. A $\varsigma$-semilinear <strong>involution</strong> of the triple preserves the ternary product and is of order two; its fixed set, the <strong>self-adjoint part</strong> $H(T)$, is a sub-triple, and over a quadratic extension $K/F$ the triple splits as $T = H(T)\oplus iH(T)$, so the fixed subtriple is a <strong>real form</strong> of $T$ and the structure descends to it. The triple of a Jordan algebra with involution inherits the involution, and its fixed subtriple is the triple of the self-adjoint part, so the triple theory contains the binary theory. The rectangular matrix triple with the conjugate transpose is the standard example, its fixed subtriple being the Hermitian matrices. No form, norm, distance or order occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$</td>
+<td>Jordan triple system over $R$</td>
+</tr>
+<tr>
+<td>$\{x,y,z\}$</td>
+<td>Ternary product</td>
+</tr>
+<tr>
+<td>$\{x,y,z\}=\{z,y,x\}$</td>
+<td>Outer symmetry</td>
+</tr>
+<tr>
+<td>$\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\}-\{u,\{y,x,v\},w\}+\{u,v,\{x,y,w\}\}$</td>
+<td>Jordan triple identity</td>
+</tr>
+<tr>
+<td>$\{x,y,z\}=(x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$</td>
+<td>Triple of a Jordan algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>$\varsigma$-semilinear involution of $T$</td>
+</tr>
+<tr>
+<td>$H(T)$</td>
+<td>Self-adjoint part, the fixed subtriple</td>
+</tr>
+<tr>
+<td>$T = H(T)\oplus iH(T)$</td>
+<td>Decomposition over a quadratic extension</td>
+</tr>
+<tr>
+<td>$H(T) = H(J)$</td>
+<td>Fixed subtriple of the triple of $J$</td>
+</tr>
+<tr>
+<td>$M_{p,q}(\mathbb{C})$, $\{x,y,z\}=xy^*z+zy^*x$</td>
+<td>Rectangular matrix example</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ottmar Loos, <em>Jordan Pairs</em> (Springer Lecture Notes in Mathematics 460, 1975), for Jordan triple systems, their identities and their structure.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the binary-to-ternary transition and the involutions.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan triple of an algebra and the quadratic representation.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions, the descent and the real forms.</li>
+<li>Erhard Neher, <em>Jordan Triple Systems by the Grid Approach</em> (Springer Lecture Notes in Mathematics 1280, 1987), for the rectangular triples and the classification of the Jordan triples.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

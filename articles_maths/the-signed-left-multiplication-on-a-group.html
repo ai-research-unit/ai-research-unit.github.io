@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-group"><strong>The Signed Left Multiplication on a Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The one-sided signed operator on a graded group is the left multiplication with the grade involution inserted, $x\mapsto a\,\alpha(x)$. It is the one-sided member of the signed family, the value of the signed sandwich with the right factor the identity, and the operator obtained from the left translation by composing with the grade involution. This article fixes it, relates it to the unsigned left multiplication, derives the law by which two of them compose — a product of two signed left multiplications is an unsigned one — and computes the elements that it fixes.</p>
+<p>The article assumes the elementary theory of groups from <em>Groups</em>, the grade involution and the fixed subgroup $G^{\alpha}$ from <em>Involutive Groups</em>, the left and right translations and the left regular subgroup from <em>Left and Right Multiplication in a Group</em>, and the signed sandwich and its composition laws from <em>The Signed Sandwich on a Group</em>. The two-sided signed operators are <em>The Signed Sandwich on a Group</em>; the adjoint of this operator is <em>The Signed Adjoint of the Left Multiplication on a Group</em>; and the module-theoretic graded action is <em>The Graded Action on a Module over a Group</em>. No distance, no norm and no form is used.</p>
+<h2 id="the-operator">The Operator</h2>
+<p><strong>Definition.</strong> Let $(G,\alpha)$ be a graded group. For $a\in G$ the <strong>signed left multiplication</strong> by $a$ is</p>
+<p>$$
+\ell_a : G\longrightarrow G, \qquad \ell_a(x) = a\,\alpha(x) .
+$$</p>
+<p><strong>Proposition (factorisation).</strong> $\ell_a = L_a\circ\alpha = \Sigma^{\alpha}_{a,e}$, the left translation composed with the grade involution, equivalently the signed sandwich with right factor $e$. In particular $\ell_a$ is a bijection of $G$, with inverse $\ell_a^{-1}=\alpha\circ L_{a^{-1}}=\ell_{a\alpha(a)}$ evaluated as $x\mapsto\alpha(a^{-1}x)$; and $\ell_e=\alpha$, whose fixed subgroup is $G^{\alpha}$.</p>
+<p><strong>Proof.</strong> $L_a(\alpha(x))=a\alpha(x)$ is the definition, and $\Sigma^{\alpha}_{a,e}(x)=a\alpha(x)$ by the signed sandwich, so the two agree. A composite of bijections is a bijection. For the inverse, $L_{a^{-1}}(\ell_a(x))=a^{-1}a\alpha(x)=\alpha(x)$, so $\alpha L_{a^{-1}}$ is a left inverse and hence the inverse. When $a=e$, $\ell_e=\alpha$, and the fixed set of $\alpha$ is the fixed subgroup $G^{\alpha}$ of <em>Involutive Groups</em>.</p>
+<p><strong>Proposition (the composition law).</strong> For all $a,b\in G$,</p>
+<p>$$
+\ell_a \circ \ell_b = L_{a\alpha(b)},
+$$</p>
+<p>an unsigned left multiplication. In particular the signed left multiplications are not closed under composition; the product of two of them is unsigned, and the product of a signed and an unsigned left multiplication is signed.</p>
+<p><strong>Proof.</strong> $\ell_a(\ell_b(x))=a\,\alpha(b\alpha(x))=a\,\alpha(b)\,\alpha(\alpha(x))=a\alpha(b)\,x=L_{a\alpha(b)}(x)$, using that $\alpha$ is an automorphism with $\alpha^2=\mathrm{id}$.</p>
+<h2 id="relation-to-the-unsigned-left-multiplication">Relation to the Unsigned Left Multiplication</h2>
+<p><strong>Proposition (the signed family is a coset).</strong> Let $L(G)=\{L_a:a\in G\}$ be the left regular subgroup of $\operatorname{Sym}(G)$. The signed left multiplications are the coset</p>
+<p>$$
+\{\ell_a : a\in G\} = L(G)\,\alpha ,
+$$</p>
+<p>the assignment $a\mapsto\ell_a$ is injective, and the subgroup of $\operatorname{Sym}(G)$ generated by $L(G)$ and $\alpha$ is $L(G)\sqcup L(G)\alpha$, of order $2|G|$ when $\alpha\neq\mathrm{id}$ and equal to $L(G)$ when $\alpha=\mathrm{id}$.</p>
+<p><strong>Proof.</strong> By the factorisation, $\ell_a=L_a\alpha$, so the set of signed left multiplications is the coset $L(G)\alpha$. If $\ell_a=\ell_b$ then $a\alpha(x)=b\alpha(x)$ for every $x$; at $x=e$ this gives $a\alpha(e)=a$ and $b\alpha(e)=b$, so $a=b$, and the assignment is injective. The generated subgroup contains $L(G)$ and $\alpha$ and consists of all products of these; because every product of two signed elements is in $L(G)$ and every product of a signed and an unsigned element is signed, the union $L(G)\sqcup L(G)\alpha$ is closed, and it is the generated subgroup. The element $\alpha$ lies in $L(G)$ exactly when $\alpha=L_a$ for some $a$, which at $x=e$ forces $a=e$, that is $\alpha=\mathrm{id}$; otherwise the two parts are disjoint and the order is doubled.</p>
+<p><strong>Corollary.</strong> The signed left multiplication by $a$ equals the unsigned one exactly when the grade involution is trivial: $\ell_a=L_a$ for every $a$ if and only if $\alpha=\mathrm{id}$.</p>
+<p><strong>Proof.</strong> $\ell_a=L_a\alpha=L_a$ for every $a$ forces $\alpha=\mathrm{id}$ by composing with $L_{a^{-1}}$ on the left.</p>
+<h2 id="the-fixed-elements">The Fixed Elements</h2>
+<p><strong>Proposition (the fixed set).</strong> The set of fixed elements of $\ell_a$ is</p>
+<p>$$
+\operatorname{Fix}(\ell_a) = \{ x\in G : \alpha(x) = a^{-1}x \} .
+$$</p>
+<p>It is empty, or a left coset of the fixed subgroup $G^{\alpha}$. It is nonempty exactly when $a=\alpha(x)x^{-1}$ for some $x\in G$, and it contains $e$ exactly when $a=e$.</p>
+<p><strong>Proof.</strong> $\ell_a(x)=x$ is $a\alpha(x)=x$, which is $\alpha(x)=a^{-1}x$. If $x_0$ and $x$ are both fixed then $\alpha(x_0^{-1}x)=\alpha(x_0)^{-1}\alpha(x)=(a^{-1}x_0)^{-1}(a^{-1}x)=x_0^{-1}aa^{-1}x=x_0^{-1}x$, so $x_0^{-1}x\in G^{\alpha}$ and $x\in x_0G^{\alpha}$; conversely if $x_0$ is fixed and $h\in G^{\alpha}$ then $\alpha(x_0h)=\alpha(x_0)\alpha(h)=a^{-1}x_0h$, so $x_0h$ is fixed. The fixed set is thus empty or the coset $x_0G^{\alpha}$. A fixed point $x$ satisfies $a^{-1}=\alpha(x)x^{-1}$, that is $a=\alpha(x)x^{-1}$; and $e$ is fixed exactly when $\alpha(e)=e=a^{-1}e$, that is $a=e$.</p>
+<p><strong>Proposition (the contrast with the unsigned operator).</strong> The unsigned left multiplication $L_a$ fixes no point unless $a=e$, whereas the signed left multiplication can fix a whole coset; the special case $\ell_e=\alpha$ fixes the fixed subgroup $G^{\alpha}$.</p>
+<p><strong>Proof.</strong> $L_a(x)=ax=x$ gives $a=e$ by cancellation, so for $a\neq e$ the unsigned operator is fixed-point free. For the signed operator, if $a=\alpha(x)x^{-1}$ for some $x$ then the coset $xG^{\alpha}$ is fixed. The case $a=e$ of the previous proposition gives the fixed subgroup of the grade involution.</p>
+<p><strong>Remark (the reflection value).</strong> When $a$ lies in the inverted set $I(\alpha)=\{a:\alpha(a)=a^{-1}\}$, the signed left multiplication is the composition of the inversion and a translation and is related to the reflections of <em>Reflections as Signed Two-Sided Operators on a Group</em>; the two-sided signed conjugation $\rho_a=a\alpha(x)a^{-1}$ is the signed left multiplication $\ell_a$ further composed with the right translation by $a^{-1}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed left multiplication</strong> by $a$ is $\ell_a(x)=a\alpha(x)$, the operator $L_a\alpha=\Sigma^{\alpha}_{a,e}$ obtained from the left translation by composing with the grade involution. It is a bijection, with inverse $x\mapsto\alpha(a^{-1}x)$; it satisfies $\ell_e=\alpha$, whose fixed subgroup is $G^{\alpha}$; and two of them compose into an unsigned left multiplication, $\ell_a\ell_b=L_{a\alpha(b)}$. The signed left multiplications form the coset $L(G)\alpha$ of the left regular subgroup, and with $L(G)$ they generate $L(G)\sqcup L(G)\alpha$, of order $2|G|$ when the grade involution is not the identity. The signed left multiplication equals the unsigned one for every $a$ exactly when $\alpha=\mathrm{id}$.</p>
+<p>The fixed set of $\ell_a$ is $\{x:\alpha(x)=a^{-1}x\}$, which is empty or a left coset of the fixed subgroup $G^{\alpha}$; it is nonempty exactly when $a=\alpha(x)x^{-1}$ for some $x$, and it contains $e$ exactly when $a=e$. The unsigned left multiplication is fixed-point free away from the identity, so the insertion of the grade involution is what allows a one-sided operator to fix a coset.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell_a(x)=a\alpha(x)$</td>
+<td>the signed left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$\ell_a=L_a\alpha=\Sigma^{\alpha}_{a,e}$</td>
+<td>factorisation into a left translation and the grade involution</td>
+</tr>
+<tr>
+<td>$\ell_a^{-1}=x\mapsto\alpha(a^{-1}x)$</td>
+<td>the inverse of the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\ell_a\ell_b=L_{a\alpha(b)}$</td>
+<td>the composition law, an unsigned left multiplication</td>
+</tr>
+<tr>
+<td>$\{\ell_a\}=L(G)\alpha$</td>
+<td>the signed left multiplications as a coset</td>
+</tr>
+<tr>
+<td>$L(G)\sqcup L(G)\alpha$</td>
+<td>the group they generate with the left regular subgroup, order $2|G|$</td>
+</tr>
+<tr>
+<td>$\ell_e=\alpha$</td>
+<td>the grade involution as the signed left multiplication by $e$</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(\ell_a)=\{x:\alpha(x)=a^{-1}x\}$</td>
+<td>the fixed set, empty or a coset of $G^{\alpha}$</td>
+</tr>
+<tr>
+<td>$G^{\alpha}$</td>
+<td>the fixed subgroup of the grade involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the one-sided graded operators and their role in generating the orthogonal group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the left and right multiplications with a graded twist.</li>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for the left regular representation and the automorphisms of a group of order two.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the inverted set of an involution and the fixed subgroup of an involutive automorphism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on a Linear Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-a-linear-space"><strong>The Adjoint of the Left Multiplication on a Linear Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The endomorphism algebra $E = \operatorname{End}_F(V)$ carries a pairing of its own, the <strong>trace pairing</strong> $\langle X,Y\rangle = \operatorname{tr}(XY)$, which needs no form and no choice: it is non-degenerate, symmetric and associative with respect to the multiplication of $E$, and it is the natural pairing of the category. With respect to it the left multiplication $L_A$ and the right multiplication $R_A$ are adjoint to one another, $(L_A)^{\dagger} = R_A$ and $(R_A)^{\dagger} = L_A$, which is the operator-level statement of the fact that the transpose of a matrix is the matrix of the transposed map. When $E$ also carries a pairing-based involution, the two operations relate by $(L_A)^{\dagger} = R_A$ and $L_A^{*} = R_{A^{*}}$, so the trace-adjoint and the involution differ by the involution of the parameter. This article develops the trace pairing, the adjointness of the left and right multiplications, and the compatibility with the involution.</p>
+<p>The left and right multiplications on a group are <em>Left and Right Multiplication in a Group</em>; their analogues on an algebra are used in <em>Algebras of Endomorphisms</em>, where the commutant is built from them. The adjoint of a single endomorphism with respect to a pairing is <em>The Adjoint of an Endomorphism</em>, the unitary elements are <em>Unitary Endomorphisms</em>, and the pairing-based involution on $E$ is <em>Involutions of the Endomorphism Algebra</em>. The signed version of the left multiplication is <em>The Signed Left Multiplication on a Linear Space</em>, and its adjoint is <em>The Signed Adjoint of the Left Multiplication on a Linear Space</em>. The forms are Part II.</p>
+<p>Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space of dimension $n$, $E = \operatorname{End}_F(V)$, and for $A \in E$ the left and right multiplications are</p>
+<p>$$
+L_A(X) = AX, \qquad R_A(X) = XA .
+$$</p>
+<p>The <strong>trace pairing</strong> is $\langle X,Y\rangle = \operatorname{tr}(XY)$, and the adjoint of an operator on $E$ with respect to it is written ${}^{\dagger}$. When $E$ carries a pairing-based involution the element involution is written ${}^{*}$, and the induced operator involution on $\operatorname{End}_F(E)$ is $S^{*}(X) = S(X^{*})^{*}$.</p>
+<h2 id="the-trace-pairing">The Trace Pairing</h2>
+<p><strong>Proposition.</strong> The trace pairing on $E$ is bilinear, symmetric and non-degenerate:</p>
+<p>$$
+\langle X,Y\rangle = \langle Y,X\rangle, \qquad
+\langle X,Y\rangle = 0 \ \text{for all } Y \implies X = 0 ,
+$$</p>
+<p>and it is associative with respect to the multiplication, $\langle XY,Z\rangle = \langle X,YZ\rangle$.</p>
+<p><strong>Proof.</strong> Symmetry is $\operatorname{tr}(XY) = \operatorname{tr}(YX)$; associativity is $\operatorname{tr}(XYZ)$, which is invariant under cyclic permutation of the factors. For non-degeneracy, if $X \neq 0$ choose $v$ with $Xv \neq 0$ and a functional $\varphi$ with $\varphi(Xv) = 1$; the endomorphism $Y = v\varphi$, $Y(w) = \varphi(w)v$, satisfies $\operatorname{tr}(XY) = \varphi(Xv) = 1$, so $X$ pairs nontrivially.</p>
+<p><strong>Remark (the natural pairing of the category).</strong> The trace pairing is the pairing that the category of endomorphisms carries without any further structure: it is defined for every finite-dimensional $V$, it is invariant under the isomorphism of $E$ with its opposite, and the adjointness it produces is the abstract form of transposition. The pairing-based adjoint articles use an extra form on $V$; this article uses none.</p>
+<h2 id="the-left-and-right-multiplications">The Left and Right Multiplications</h2>
+<p><strong>Proposition.</strong> For $A,B \in E$,</p>
+<p>$$
+L_AL_B = L_{AB}, \qquad R_AR_B = R_{BA}, \qquad L_AR_B = R_BL_A , \qquad L_A + L_B = L_{A+B}, \qquad R_A+R_B = R_{A+B}.
+$$</p>
+<p><strong>Proof.</strong> $(L_AL_B)(X) = A(BX) = (AB)X$; $(R_AR_B)(X) = (XA)B = X(AB) = R_{BA}(X)$; $L_AR_B(X) = A(XB) = (AX)B = R_BL_A(X)$; the additive statements are immediate. The identities exhibit $E$ acting on itself by left and right multiplication with the two actions commuting.</p>
+<p><strong>Proposition (the trace-adjointness).</strong> For every $A \in E$,</p>
+<p>$$
+(L_A)^{\dagger} = R_A, \qquad (R_A)^{\dagger} = L_A ,
+$$</p>
+<p>where ${}^{\dagger}$ is the adjoint with respect to the trace pairing.</p>
+<p><strong>Proof.</strong> $\langle L_AX,Y\rangle = \operatorname{tr}(AXY) = \operatorname{tr}(XYA) = \langle X, R_AY\rangle$ by the cyclic invariance of the trace; the uniqueness of the adjoint with respect to a non-degenerate pairing gives $(L_A)^{\dagger}=R_A$, and the second identity is the same computation read the other way.</p>
+<p><strong>Corollary.</strong> The set of operators on $E$ that are adjoint to a left multiplication is the set of right multiplications and conversely; a left multiplication is self-adjoint with respect to the trace pairing exactly when $A$ is central, and then $L_A = R_A$.</p>
+<p><strong>Proof.</strong> The first statement is the proposition; $L_A = R_A$ means $AX = XA$ for all $X$, that is $A$ central.</p>
+<h2 id="the-compatibility-with-the-involution">The Compatibility with the Involution</h2>
+<p><strong>Proposition (the two operations).</strong> Suppose $E$ carries a pairing-based involution $A \mapsto A^{*}$ as in <em>Involutions of the Endomorphism Algebra</em>. Then on $\operatorname{End}_F(E)$ the induced operator involution $S^{*}(X) = S(X^{*})^{*}$ satisfies</p>
+<p>$$
+L_A^{*} = R_{A^{*}}, \qquad R_A^{*} = L_{A^{*}} ,
+$$</p>
+<p>and the trace-adjoint and the operator involution are related by</p>
+<p>$$
+(L_A)^{\dagger} = R_A, \qquad L_A^{*} = R_{A^{*}} = (L_{A^{*}})^{\dagger} .
+$$</p>
+<p><strong>Proof.</strong> $L_A^{*}(X) = L_A(X^{*})^{*} = (AX^{*})^{*} = XA^{*} = R_{A^{*}}(X)$, using the anti-multiplicativity of the involution; the second identity is the same computation for $R_A$. The last display collects the first with the trace-adjointness of $L_{A^{*}}$.</p>
+<p><strong>Proposition (the trace pairing is compatible with the involution).</strong> If the involution is the adjoint with respect to a pairing on $V$, then</p>
+<p>$$
+\langle X^{*},Y\rangle = \varsigma\bigl(\langle Y^{*},X\rangle\bigr) ,
+$$</p>
+<p>so the trace pairing is $\varsigma$-compatible with the involution; in the bilinear symmetric case it satisfies $\langle X^{*},Y\rangle = \langle X,Y^{*}\rangle$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(X^{*}Y) = \operatorname{tr}((Y^{*}X)^{*}) = \varsigma(\operatorname{tr}(Y^{*}X))$, since the involution is $\varsigma$-semilinear and applies to the trace; when $\varsigma=\mathrm{id}$ this is $\langle Y^{*},X\rangle$, and applying the same identity to $Y^{*},X$ gives $\langle X^{*},Y\rangle=\langle X,Y^{*}\rangle$.</p>
+<p><strong>Example.</strong> With the standard pairing on $F^n$ the element involution is transposition, and $L_A^{*} = R_{A^{\mathsf{T}}}$: the operator involution sends the left multiplication by $A$ to the right multiplication by the transpose, which is the abstract form of $(AXY)^{\mathsf{T}} = Y^{\mathsf{T}}X^{\mathsf{T}}A^{\mathsf{T}}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The endomorphism algebra $E = \operatorname{End}_F(V)$ carries the trace pairing $\langle X,Y\rangle=\operatorname{tr}(XY)$, which is bilinear, symmetric, non-degenerate and associative, and which needs no form on $V$; it is the natural pairing of the category. The left and right multiplications satisfy $L_AL_B=L_{AB}$, $R_AR_B=R_{BA}$ and $L_AR_B=R_BL_A$, and with respect to the trace pairing they are adjoint to one another: $(L_A)^{\dagger}=R_A$ and $(R_A)^{\dagger}=L_A$, a left multiplication being self-adjoint exactly for central $A$. When $E$ carries a pairing-based involution, the induced operator involution satisfies $L_A^{*}=R_{A^{*}}$ and $R_A^{*}=L_{A^{*}}$, so the trace-adjoint and the operator involution differ by the involution of the parameter, $(L_A)^{\dagger}=R_A$ against $L_A^{*}=(L_{A^{*}})^{\dagger}$; and the trace pairing is compatible with the involution, $\langle X^{*},Y\rangle=\varsigma(\langle Y^{*},X\rangle)$, becoming $\langle X^{*},Y\rangle=\langle X,Y^{*}\rangle$ in the bilinear symmetric case. The signed versions of these statements are <em>The Signed Adjoint of the Left Multiplication on a Linear Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $V$, $n$</td>
+<td>the field, the space and its dimension</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_F(V)$</td>
+<td>the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$L_A(X)=AX$, $R_A(X)=XA$</td>
+<td>left and right multiplication</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(XY)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>${}^{\dagger}$</td>
+<td>the adjoint with respect to the trace pairing</td>
+</tr>
+<tr>
+<td>$(L_A)^{\dagger}=R_A$</td>
+<td>the adjointness</td>
+</tr>
+<tr>
+<td>$A^{*}$</td>
+<td>the pairing-based element involution</td>
+</tr>
+<tr>
+<td>$S^{*}(X)=S(X^{*})^{*}$</td>
+<td>the induced operator involution</td>
+</tr>
+<tr>
+<td>$L_A^{*}=R_{A^{*}}$, $R_A^{*}=L_{A^{*}}$</td>
+<td>the compatibility with the involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the left and right multiplications and the trace pairing on an endomorphism ring.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the trace, the trace form and the adjoint.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the structure of endomorphism rings and the centraliser of the left multiplications.</li>
+<li>Joseph J. Rotman, <em>Advanced Modern Algebra</em> (American Mathematical Society, 3rd ed. 2015), for the trace form and the adjoint of a multiplication operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

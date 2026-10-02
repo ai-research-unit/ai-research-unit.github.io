@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounded Operators and the Operator Norm — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounded-operators-and-the-operator-norm"><strong>Bounded Operators and the Operator Norm</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a normed space the bounded operators form not only a normed space but a <strong>normed algebra</strong>, because composition is a multiplication compatible with the operator norm: it is submultiplicative, $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$. When the underlying space is complete the operator algebra is complete, and the single inequality then turns the algebra of operators into a place where convergent series can be manipulated: a series of operators that is absolutely convergent converges, and an operator close enough to the identity in the operator norm is invertible, with an inverse given by the geometric series. This makes the group of invertible operators open and inversion continuous.</p>
+<p>This article treats the operator norm as an algebra norm and the completeness it inherits. The space of bounded operators and the equivalence of continuity with boundedness are <em>Bounded Operators on a Topological Vector Space</em>; the topology of bounded convergence, which for normed spaces is the operator-norm topology, is <em>Operators on a Locally Convex Space</em>; the transpose, which is an isometry, is <em>The Dual Operator</em>; the general theory of Banach algebras, the spectrum and the spectral radius belong to <em>Topological Algebras and Banach Algebras</em> in the next category of this Part, and the spectral theory of a single operator is <em>Analysis on Linear Spaces</em> in Part III. Nothing analytic and nothing geometric is used here beyond the convergence of series in a complete normed space, which is algebraic in nature.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are normed spaces over $\mathbb{K}$, $B(X, Y)$ is the space of bounded linear maps with the <strong>operator norm</strong> $\lVert T\rVert = \sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert$, and $B(X) = B(X, X)$ is the algebra of bounded endomorphisms with composition as product and the identity $\mathrm{id}$.</p>
+<h2 id="the-operator-algebra">The Operator Algebra</h2>
+<p><strong>Proposition (the operator norm is an algebra norm).</strong> On $B(X, Y)$ the operator norm is a norm, and composition is submultiplicative,</p>
+<p>$$
+\lVert ST\rVert \leq \lVert S\rVert\,\lVert T\rVert
+$$</p>
+<p>for $T \in B(X, Y)$ and $S \in B(Y, Z)$. Consequently $B(X)$ is a normed algebra over $\mathbb{K}$ with unit $\mathrm{id}$ of norm one, and $\lVert T^{n}\rVert \leq \lVert T\rVert^{n}$ for all $n \geq 1$.</p>
+<p><strong>Proof.</strong> The norm axioms are <em>Bounded Operators on a Topological Vector Space</em>; submultiplicativity is $\lVert STx\rVert \leq \lVert S\rVert\lVert Tx\rVert \leq \lVert S\rVert\lVert T\rVert\lVert x\rVert$ for $\lVert x\rVert \leq 1$. The unit has $\lVert \mathrm{id}\rVert = \sup_{\lVert x\rVert\leq1}\lVert x\rVert = 1$, and the power bound is induction.</p>
+<p><strong>Proposition (the norm is not multiplicative in general).</strong> A bounded operator $T$ satisfies $\lVert Tx\rVert = \lVert x\rVert$ for all $x$ exactly when $\lVert T\rVert = 1$ and $T$ is an isometry; the norm of a product can be strictly smaller than the product of the norms, $\lVert ST\rVert < \lVert S\rVert\lVert T\rVert$, and it can be zero for nonzero factors. The algebra $B(X)$ is commutative exactly when $X$ has dimension at most one.</p>
+<p><strong>Proof.</strong> If $T$ is an isometry then $\lVert T\rVert = 1$ and the two quantities agree; the strict inequality is exhibited by two non-overlapping rank-one operators on $\ell^{2}$, whose product is $0$, and the commutativity statement by the shifts $L, R$ of $\ell^{p}$ with $LR = \mathrm{id}$, $RL \neq \mathrm{id}$.</p>
+<h2 id="completeness-and-the-neumann-series">Completeness and the Neumann Series</h2>
+<p><strong>Theorem (completeness).</strong> If $Y$ is a Banach space then $B(X, Y)$ is a Banach space; in particular $B(X)$ is a Banach algebra when $X$ is a Banach space.</p>
+<p><strong>Proof.</strong> This is the completeness of the bounded operators of <em>Normed and Banach Spaces</em>: a Cauchy sequence $(T_{n})$ has $(T_{n}x)$ Cauchy for each $x$, defines $Tx = \lim T_{n}x$, and the limit is linear and bounded with $\lVert T - T_{n}\rVert \to 0$. The algebra structure is the proposition above, and a complete normed algebra is a Banach algebra by definition.</p>
+<p><strong>Theorem (the Neumann series and the invertibles).</strong> Let $X$ be a Banach space and let $T \in B(X)$ with $\lVert T\rVert < 1$. Then $\mathrm{id} - T$ is invertible, with</p>
+<p>$$
+(\mathrm{id} - T)^{-1} = \sum_{n \geq 0} T^{n}, \qquad \lVert(\mathrm{id} - T)^{-1}\rVert \leq \frac{1}{1 - \lVert T\rVert} .
+$$</p>
+<p>Consequently the group $B(X)^{\times}$ of invertible operators is open in $B(X)$, and inversion is continuous.</p>
+<p><strong>Proof.</strong> The series converges absolutely, $\sum_{n}\lVert T^{n}\rVert \leq \sum_{n}\lVert T\rVert^{n} < \infty$, and $B(X)$ is complete, so its sum exists; the identity $(\mathrm{id} - T)\sum_{n \leq N}T^{n} = \mathrm{id} - T^{N+1}$ passes to the limit, giving invertibility and the estimate. If $S$ is invertible and $\lVert T - S\rVert < \lVert S^{-1}\rVert^{-1}$ then $T = S(\mathrm{id} - S^{-1}(S - T))$ with $\lVert S^{-1}(S - T)\rVert < 1$, so $T$ is invertible; hence the invertibles are open. Continuity of inversion follows from the same expansion, applied to $T^{-1} = \sum_{n}(S^{-1}(S-T))^{n}S^{-1}$ near $S$.</p>
+<p><strong>Corollary (the closed unit ball of the invertibles).</strong> The set of operators of norm at most one is closed and convex; the invertibles of the form $\mathrm{id} - T$ with $\lVert T\rVert \leq r < 1$ form the closed ball of radius $r$ in the algebra of perturbations, and the image of that ball under inversion is bounded by $1/(1-r)$.</p>
+<p><strong>Proof.</strong> Immediate from the theorem and the triangle inequality for the norm.</p>
+<h2 id="the-operator-norm-and-the-topologies">The Operator Norm and the Topologies</h2>
+<p><strong>Proposition (the operator norm defines the topology of bounded convergence).</strong> On $B(X, Y)$ the operator norm generates the topology of uniform convergence on the bounded subsets of $X$, so $B(X, Y) = \mathcal{L}_{b}(X, Y)$ as topological spaces.</p>
+<p><strong>Proof.</strong> Bounded subsets of a normed space are contained in multiples of the unit ball, and the topology of bounded convergence is generated by the seminorm with $B$ the unit ball, which is the operator norm. This is the normed case of <em>Operators on a Locally Convex Space</em>.</p>
+<p><strong>Proposition (the operator norm and the dual norm).</strong> For $T \in B(X, Y)$ the transpose satisfies $\lVert T'\rVert = \lVert T\rVert$; the operator norm on $B(X, \mathbb{K}) = X^{*}$ is therefore the dual norm, and the operator norm on $B(X, Y)$ is recovered from the dual as</p>
+<p>$$
+\lVert T\rVert = \sup\{\lvert y^{*}(Tx)\rvert : \lVert x\rVert \leq 1, \ \lVert y^{*}\rVert \leq 1\} .
+$$</p>
+<p><strong>Proof.</strong> The equality $\lVert T'\rVert = \lVert T\rVert$ is <em>The Dual Operator</em>; the displayed characterisation is the two-sided supremum over the unit balls of $X$ and $Y^{*}$, which equals $\sup_{\lVert x\rVert\leq1}\lVert Tx\rVert$ by the Hahn–Banach norm-attaining functional.</p>
+<p><strong>Proposition (quotient norm).</strong> Let $M \subseteq X$ be a closed subspace and let $q : X \to X/M$ be the quotient map. The <strong>quotient norm</strong> $\lVert qx\rVert = \inf\{\lVert x - m\rVert : m \in M\}$ makes $X/M$ a normed space, and for $T \in B(X, Y)$ vanishing on $M$ the induced operator $\overline{T}$ on $X/M$ has the same norm, $\lVert \overline{T}\rVert = \lVert T\rVert$. The algebra $B(X)/\mathcal{C}(X)$ of the bounded operators modulo the operators of finite rank has the quotient norm.</p>
+<p><strong>Proof.</strong> The quotient norm is the gauge of the image of the unit ball; the equality $\lVert \overline{T}\rVert = \lVert T\rVert$ holds because $\overline{T}q = T$ and $q$ maps the closed unit ball of $X$ onto a set dense in the closed unit ball of $X/M$. The statement about the finite-rank operators is the same computation with the two-sided ideal $\mathcal{C}(X)$ of finite-rank operators in place of $M$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the matrix algebra).</strong> For $X = \mathbb{K}^{n}$ the algebra $B(X)$ is the matrix algebra $M_{n}(\mathbb{K})$, the operator norm is the spectral norm $\lVert A\rVert = \sigma_{1}(A)$ of <em>Topological Tensor Products</em>, and the Neumann series is the classical expansion $(\mathrm{id} - A)^{-1} = \sum_{n}A^{n}$ for a matrix with spectral norm below one; the group of invertibles is open and dense.</p>
+<p><strong>Example (the diagonal algebra).</strong> On $\ell^{p}$ the diagonal operators $D_{\varphi}$ with $\varphi \in \ell^{\infty}$ form a closed commutative subalgebra of $B(\ell^{p})$ isometric to $\ell^{\infty}$, with $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$ and $D_{\varphi}D_{\psi} = D_{\varphi\psi}$; the subalgebra is isomorphic to the $C(K)$ multiplication operators of the compact case.</p>
+<p><strong>Example (the multiplication operators).</strong> On $C(K)$ for a compact Hausdorff space $K$ the operators $M_{f}(g) = fg$ form a commutative subalgebra of $B(C(K))$ isometric to $C(K)$, and $\lVert M_{f}\rVert = \lVert f\rVert_{\infty}$; the subalgebra is closed because convergence in the operator norm is uniform convergence of the multipliers.</p>
+<p><strong>Example (the operators that attain their norm).</strong> The identity attains its norm $1$ at every unit vector, and the right shift on $\ell^{p}$ attains its norm $1$ at every unit vector; the diagonal operator $D_{\varphi}$ with $\varphi_{k} = 1 - 1/k$ has norm $1$, the supremum of $\lvert \varphi_{k}\rvert$ over $k$, and does not attain it at any unit vector, only in the limit. The operator norm is a supremum in general, not a maximum.</p>
+<h2 id="summary">Summary</h2>
+<p>On the bounded operators between normed spaces the operator norm makes $B(X, Y)$ a normed space and composition an algebra product with $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$, so $B(X)$ is a normed algebra with unit of norm one and $\lVert T^{n}\rVert \leq \lVert T\rVert^{n}$; the norm is not multiplicative in general and the algebra is noncommutative as soon as the dimension exceeds one. When $Y$ is complete $B(X, Y)$ is complete, and on a Banach space $X$ the algebra $B(X)$ is a Banach algebra; then the Neumann series gives $(\mathrm{id} - T)^{-1} = \sum_{n}T^{n}$ with $\lVert(\mathrm{id} - T)^{-1}\rVert \leq (1 - \lVert T\rVert)^{-1}$ whenever $\lVert T\rVert < 1$, the group of invertible operators is open and inversion is continuous. The operator norm generates the topology of bounded convergence, it equals the norm of the transpose, it is recovered from the dual as the two-sided supremum over the unit balls of the space and its dual, and it passes to the induced operator on a quotient by a closed subspace. The matrix algebra with the spectral norm, the diagonal algebra and the multiplication operators of $C(K)$ are the standard examples, and the operator norm is a supremum that need not be attained.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(X, Y)$</td>
+<td>Bounded linear maps with the operator norm</td>
+</tr>
+<tr>
+<td>$B(X)$</td>
+<td>Bounded endomorphisms, a normed algebra</td>
+</tr>
+<tr>
+<td>$\lVert T\rVert$</td>
+<td>Operator norm, $\sup_{\lVert x\rVert \leq 1}\lVert Tx\rVert$</td>
+</tr>
+<tr>
+<td>$\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$</td>
+<td>Submultiplicativity</td>
+</tr>
+<tr>
+<td>$\mathrm{id} - T$, $\sum_n T^{n}$</td>
+<td>Neumann series and invertibility for $\lVert T\rVert < 1$</td>
+</tr>
+<tr>
+<td>$B(X)^{\times}$</td>
+<td>Group of invertible bounded operators, open</td>
+</tr>
+<tr>
+<td>$\lVert T'\rVert = \lVert T\rVert$</td>
+<td>Isometry of the transpose</td>
+</tr>
+<tr>
+<td>$q : X \to X/M$, $\lVert \overline{T}\rVert = \lVert T\rVert$</td>
+<td>Quotient norm and induced operator</td>
+</tr>
+<tr>
+<td>$M_{n}(\mathbb{K})$</td>
+<td>Matrix algebra of $\mathbb{K}^{n}$</td>
+</tr>
+<tr>
+<td>$D_{\varphi}$, $M_{f}$</td>
+<td>Diagonal and multiplication operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the operator norms and the topology of bounded convergence.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw–Hill, second edition, 1991), for the bounded operators, the Neumann series and the group of invertibles.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the operator norm, its completeness and the classical examples.</li>
+<li>Ronald G. Douglas, <em>Banach Algebra Techniques in Operator Theory</em> (Springer, second edition, 1998), for the algebra $B(X)$, its invertibles and the Neumann series.</li>
+<li>M. Reed and B. Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the operator norm and the standard examples of bounded operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

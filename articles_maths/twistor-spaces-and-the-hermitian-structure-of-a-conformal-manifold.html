@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twistor Spaces and the Hermitian Structure of a Conformal Manifold — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="twistor-spaces-and-the-hermitian-structure-of-a-conformal-manifold"><strong>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The twistor space of a four-dimensional oriented conformal manifold is the projectivised negative spinor bundle,</p>
+<p>$$
+Z(M) = \mathbb{P}(\mathcal{S}^-) \longrightarrow M ,
+$$</p>
+<p>a bundle of projective lines whose fibre at $x$ is the sphere of complex structures on the tangent space $T_xM$ compatible with the conformal structure and the orientation. It is the complex-geometric object attached to the conformal class: the projection is holomorphic when the conformal structure is anti-self-dual, the fibres are holomorphic rational curves, and the conformal geometry of $M$ is encoded in the complex geometry of $Z(M)$. This article treats the twistor space as an object with structure — a fibration, a real structure, and a fibrewise Hermitian form — and leaves the complex structure to <em>The Complex Structure of the Twistor Space</em> and the metric to <em>The Hermitian Structure of the Twistor Space</em>.</p>
+<p>The Hermitian content is the fibrewise form and the real structure it carries. Each fibre $\pi^{-1}(x)\cong\mathbb{CP}^1$ is a complex projective line with its Fubini–Study form, the antipodal map of the fibre is the restriction of a global anti-holomorphic involution $\sigma$ of $Z(M)$ without fixed points, and $\sigma$ is the real structure of the twistor space; the fixed loci of $\sigma$ are the twistor lines $\pi^{-1}(x)$, whose normal bundle is $\mathcal{O}(1)\oplus\mathcal{O}(1)$. The conformal structure of $M$ is recovered from the family of these curves, and the Hermitian form on $\mathcal{S}^-$ that defines the real structure is the fibre form of the spinor bundle with its conjugation.</p>
+<p><strong>The boundaries.</strong> The spinor bundle, its chirality and the fibre form are <em>Spin Geometry</em>; the twistor operator and the twistor equation are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the complex structure, the Hermitian structure and the correspondence are the sibling <code>- * Theory</code> articles. The body is a four-dimensional oriented Riemannian manifold with a spin structure, $c(v)^2=-g(v,v)\operatorname{id}$, and the spinor bundle $\mathcal{S}=\mathcal{S}^+\oplus\mathcal{S}^-$.</p>
+<h2 id="the-twistor-fibration">The Twistor Fibration</h2>
+<p><strong>Definition.</strong> The <strong>twistor space</strong> of $(M,[g])$ is $Z(M)=\mathbb{P}(\mathcal{S}^-)$, the projectivisation of the negative spinor bundle; the <strong>twistor projection</strong> is $\pi : Z(M)\to M$, sending a line in $\mathcal{S}^-_x$ to the point $x$.</p>
+<p><strong>Proposition.</strong> The fibre $\pi^{-1}(x)$ is the set of complex structures on $T_xM$ compatible with $[g]$ and the orientation, a copy of $\mathbb{CP}^1$; the twistor projection is a fibre bundle with structure group $U(2)$ containing the fibrewise Möbius transformations; and a connection on $\mathcal{S}^-$ (the spin connection of any metric in the conformal class) gives a horizontal distribution on $Z(M)$.</p>
+<p><strong>Proof.</strong> A compatible complex structure on $T_xM$ is an endomorphism $J$ with $J^2=-\operatorname{id}$ preserving $g$ and the orientation; the set of such $J$ is the homogeneous space $SO(4)/U(2)$, which is $\mathbb{CP}^1$; a complex structure acts on $\mathcal{S}^-_x$ by Clifford multiplication with eigenvalue $i$ on a line, so the set of them is the projectivisation of the two-dimensional complex spinor space $\mathcal{S}^-_x$. The horizontal distribution is the horizontal lift of the Levi-Civita connection of a representative metric, and the replacement of the metric by a conformally equivalent one changes the distribution by a horizontal tensor but not the underlying conformal structure.</p>
+<p><strong>Remark (the four-dimensional restriction).</strong> The twistor space is built from the negative half of the spinor bundle because in dimension four the Hodge star acts on the two-forms and splits the Weyl tensor into self-dual and anti-self-dual parts; the choice of $\mathcal{S}^-$ selects one orientation, and the other choice gives the conjugate twistor space. In higher dimension the analogue is the twistor space of a quaternionic or quaternionic Kähler manifold, which is <em>Quaternionic Geometry</em>.</p>
+<h2 id="the-hermitian-structure">The Hermitian Structure</h2>
+<p><strong>Definition.</strong> The <strong>real structure</strong> of the twistor space is the anti-holomorphic involution $\sigma : Z(M)\to Z(M)$ induced by the conjugation of the spinor bundle $\mathcal{S}^-$ with respect to the fibre form $h$; the <strong>fibrewise Hermitian form</strong> is the pullback to each fibre of the Fubini–Study form of the projective line.</p>
+<p><strong>Proposition.</strong> The real structure $\sigma$ is well defined, it restricts on each fibre to the antipode of $\mathbb{CP}^1$, it has no fixed points, and its fixed "curves" are the twistor lines: $\sigma$ maps the fibre $\pi^{-1}(x)$ to itself with no fixed line, and the twistor lines are the maximally real families. The conjugation on $\mathcal{S}^-$ is the charge conjugation twisted by the chirality, and the Hermitian form $h$ is its reference form.</p>
+<p><strong>Proof.</strong> The fibre form $h$ is a positive definite Hermitian form on $\mathcal{S}^-$, and the choice of a conjugation of the complex vector space with respect to $h$ determines a projective anti-linear map of $\mathbb P(\mathcal{S}^-)$, the antipode on each fibre; the antipodal map of $\mathbb{CP}^1$ has no fixed point, so $\sigma$ is free on the fibres. The identification with the charge conjugation is the standard form of the real structure on the spinor bundle, quoted from <em>Spin Geometry</em>.</p>
+<p><strong>Remark (the Hermitian form and the Kähler question).</strong> The fibrewise Hermitian form is natural, but it does not extend to a Kähler form on $Z(M)$ in general: the twistor space of a self-dual conformal manifold is Kähler only under additional hypotheses, and the natural object is the <strong>Hermitian structure</strong> — a complex structure together with a Hermitian metric — rather than a Kähler one. The metric properties are <em>The Hermitian Structure of the Twistor Space</em>, where the Bers–Salamon and related forms are the subject; no Kähler claim is made here.</p>
+<p><strong>Remark (the Hermitian structure as a family of complex structures).</strong> A second reading of "Hermitian" is the family: the twistor space parametrises the compatible complex structures of $M$, one sphere's worth at each point, and the Hermitian structure of the conformal manifold is this family. For a hyperkähler manifold the family is a full $\mathbb{CP}^1$ of compatible complex structures and the twistor space carries a holomorphic symplectic form; this is <em>Hyperkähler Manifolds and the Twistor Space</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-four-sphere">The Four-Sphere</h3>
+<p>For $S^4$ with the round conformal structure the spinor bundle is the fundamental representation, and the twistor space is the complex projective space $\mathbb{CP}^3$ with the Fubini–Study form; the real structure is the antipodal-type involution, the twistor lines are the $\mathbb{CP}^1$'s of the standard linear family, and the self-dual conformal structures of $\mathbb{CP}^3$ with these lines are the LeBrun and Penrose constructions.</p>
+<h3 id="the-complex-projective-plane">The Complex Projective Plane</h3>
+<p>For $\mathbb{CP}^2$ with the Fubini–Study orientation, the twistor space is a complex threefold of a different kind, and the twistor fibration is the bundle of the standard $\mathbb{CP}^1$-family; the example shows that the twistor space can be a projective variety, not only a bundle over a non-algebraic base.</p>
+<h3 id="a-conformal-compactification">A Conformal Compactification</h3>
+<p>For the conformal compactification of flat space, the twistor space is the complex projective variety of the flat model, and the twistor lines are the real lines of the projective primed spinor space; the flat case is the model on which the Penrose transform is computed and the curved cases are deformations of it.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>twistor space</strong> $Z(M)=\mathbb{P}(\mathcal{S}^-)$ of a four-dimensional oriented conformal manifold is a bundle of projective lines over $M$; the fibre $\pi^{-1}(x)$ is the sphere of compatible complex structures, a $\mathbb{CP}^1$, and the <strong>twistor projection</strong> is a fibre bundle with a horizontal distribution from the spin connection. The space carries a <strong>real structure</strong> $\sigma$, the anti-holomorphic involution induced by the conjugation of the spinor bundle, restricting on each fibre to the antipode and having no fixed points; its fixed curves, the twistor lines, have normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$. The fibrewise <strong>Hermitian form</strong> is the Fubini–Study form of the fibre, and it is a Hermitian structure, not a Kähler one, in general. The twistor space is complex exactly when the conformal structure is anti-self-dual, which is <em>The Complex Structure of the Twistor Space</em>; the metric forms are <em>The Hermitian Structure of the Twistor Space</em>; and the correspondence with the fields on $M$ is <em>Hermitian Spin Geometry and the Twistor Correspondence</em>. For $S^4$ the twistor space is $\mathbb{CP}^3$ with the Fubini–Study form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z(M)=\mathbb{P}(\mathcal{S}^-)$</td>
+<td>Twistor space</td>
+</tr>
+<tr>
+<td>$\pi : Z(M)\to M$</td>
+<td>Twistor projection</td>
+</tr>
+<tr>
+<td>$\pi^{-1}(x)\cong\mathbb{CP}^1$</td>
+<td>Fibre; sphere of compatible complex structures</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(1)\oplus\mathcal{O}(1)$</td>
+<td>Normal bundle of a twistor line</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Real structure; antipodal on each fibre, no fixed points</td>
+</tr>
+<tr>
+<td>$h$ on $\mathcal{S}^-$</td>
+<td>Fibre form defining the real structure</td>
+</tr>
+<tr>
+<td>Kähler condition</td>
+<td>Not assumed; the natural object is Hermitian</td>
+</tr>
+<tr>
+<td>$Z(S^4)=\mathbb{CP}^3$</td>
+<td>The model case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael F. Atiyah, Nigel J. Hitchin and Isidore M. Singer, "Self-Duality in Four-Dimensional Riemannian Geometry", <em>Proceedings of the Royal Society of London A</em> 362 (1978), 425–461, for the twistor space, the real structure and the twistor lines.</li>
+<li>Nigel J. Hitchin, "Kählerian Twistor Spaces", <em>Proceedings of the London Mathematical Society</em> 43 (1981), 133–150, for the Hermitian and Kähler structures on twistor spaces.</li>
+<li>Simon Salamon, "Quaternionic Kähler Manifolds", <em>Inventiones Mathematicae</em> 67 (1982), 143–171, for the higher-dimensional twistor space and its Hermitian structure.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time, Volume 2</em> (Cambridge University Press, 1986), for the twistor space of the conformal compactification and the spinor form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Converse as an Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-converse-as-an-adjoint"><strong>The Converse as an Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a relation $R \subseteq X \times Y$ the converse $R^{-1} \subseteq Y \times X$ is the involution
+studied in <em>The Converse Relation as an Operator</em> and <em>Relation Algebras and the Converse</em>. This
+article reads the converse through a <strong>pairing</strong> of relations and shows that it is the <strong>adjoint</strong> of
+$R$ for that pairing: the operator "compose on the left with $R$" has, under the pairing $\langle U, V
+\rangle = U^{-1} ; V$, the adjoint "compose on the left with $R^{-1}$", and the identity</p>
+<p>$$
+\langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle
+$$</p>
+<p>is the adjointness. The same converse computes the right adjoint of composition in the residuation of
+<em>Operators on a Poset</em>, $R \backslash T = \overline{R^{-1} ; \overline{T}}$, and the <strong>unit</strong> and
+<strong>counit</strong> of the adjunction, $R^{-1} ; R$ and $R ; R^{-1}$, measure exactly when $R$ is surjective or
+functional. The article develops the pairing, the Galois reading and the unit and counit, and it is the
+first article of the <code>- * Operator Theory</code> group, in which the operator itself carries the involution.</p>
+<p>The article presupposes <em>Relation Algebras and the Converse</em> and <em>The Converse Relation as an
+Operator</em>, which supply the converse, composition and their laws, and <em>Operators on a Poset</em>, for the
+residuals and the Galois connections. It names no form, no norm and no topology; the Hilbert-space
+adjoint, where the pairing is an inner product, is Part II and the <code>- * Operator Theory</code> group, and is
+not used.</p>
+<h2 id="the-pairing-of-relations">The Pairing of Relations</h2>
+<p><strong>Definition.</strong> Let $X$ and $Z$ be sets. The <strong>pairing</strong> of two relations $U, V \subseteq X \times Z$
+is the relation</p>
+<p>$$
+\langle U, V \rangle = U^{-1} ; V \subseteq Z \times Z .
+$$</p>
+<p><strong>Proposition.</strong> The pairing is additive in each variable and satisfies $\langle U, V \rangle^{-1} =
+\langle V, U \rangle$; it is nondegenerate, in the sense that $\langle U, W \rangle \subseteq \langle V,
+W \rangle$ for all $W$ implies $U \subseteq V$, and dually.</p>
+<p><strong>Proof.</strong> Composition distributes over unions, so the pairing is additive. The identity is
+$(U^{-1};V)^{-1} = V^{-1};U = \langle V,U \rangle$ by the law of the converse. For the nondegeneracy,
+take $W = Z \times Z$, the greatest relation, so that $\langle U, W \rangle = U^{-1} ; (Z \times Z)$ is
+$Z \times Z$ if $U \neq \emptyset$ and $\emptyset$ if $U = \emptyset$; the inclusion for this $W$ forces
+$U = \emptyset$ whenever $V = \emptyset$, and iterating over the elements of $X$ gives $U \subseteq V$.</p>
+<p><strong>Theorem (adjointness).</strong> For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T
+\subseteq X \times Z$,</p>
+<p>$$
+\langle R ; S, T \rangle = \langle S, R^{-1} ; T \rangle .
+$$</p>
+<dl>
+<dt>Hence the operator $L_R : S \mapsto R ; S$ on relations has, under the pairing, the adjoint $L_{R^{-1}}</dt>
+<dd>T \mapsto R^{-1} ; T$, and the adjoint of $L_R$ is $L_{R^{-1}}$.</dd>
+</dl>
+<p><strong>Proof.</strong> By the law of the converse for a composite, $(R;S)^{-1} = S^{-1};R^{-1}$, so $\langle R;S, T
+\rangle = (R;S)^{-1};T = S^{-1};R^{-1};T = S^{-1};(R^{-1};T) = \langle S, R^{-1};T \rangle$ by
+associativity. The adjoint statement is the identity read as the definition of the adjoint operator for
+the pairing.</p>
+<p><strong>Corollary.</strong> The adjoint operation on the operator layer, $L \mapsto L^{*}$ with $\langle L S, T
+\rangle = \langle S, L^{<em>} T \rangle$, is an involution: $(L_R)^{</em>} = L_{R^{-1}}$ and $(L_{R^{-1}})^{*}
+= L_R$. On the operators that commute with the converse it is the identity, and $L_R$ is self-adjoint
+exactly when $R = R^{-1}$, that is, when $R$ is symmetric.</p>
+<p><strong>Proof.</strong> The two identities are the theorem applied twice; $L_R = L_{R^{-1}}$ means $R;S = R^{-1};S$
+for all $S$, which with $S = \Delta_Y$ gives $R = R^{-1}$.</p>
+<h2 id="the-galois-reading">The Galois Reading</h2>
+<p><strong>Theorem (residuation).</strong> For a fixed relation $R \subseteq X \times Y$ the operator $L_R : S \mapsto R
+; S$ is residuated, with right adjoint $T \mapsto R \backslash T$ where</p>
+<p>$$
+R \backslash T = \overline{R^{-1} ; \overline{T}} \subseteq Y \times Z .
+$$</p>
+<p>Its <strong>unit</strong> and <strong>counit</strong> are the inclusions</p>
+<p>$$
+S \subseteq R \backslash (R ; S), \qquad R ; (R \backslash T) \subseteq T ,
+$$</p>
+<p>which hold for all $S, T$.</p>
+<p><strong>Proof.</strong> The residual identity $R;S \subseteq T \Leftrightarrow S \subseteq R \backslash T$ is proved
+in <em>Relation Algebras and the Converse</em>; the displayed formula for $R \backslash T$ follows from it
+because $R^{-1};\overline{T}$ is the set of $(y,z)$ with some $(x,y) \in R$ and $(x,z) \notin T$, whose
+complement is the set of $(y,z)$ with every $(x,y) \in R$ giving $(x,z) \in T$, which is $R \backslash
+T$. The unit and counit are the two inclusions of the adjunction, with $S$ arbitrary in the first and
+$T$ arbitrary in the second.</p>
+<p>The formula expresses the Galois reading of the scope: the converse $R^{-1}$ is exactly what computes
+the right adjoint of composition with $R$, and the adjunction is the residuation of <em>Operators on a
+Poset</em>. The operator $L_{R^{-1}}$ of the previous section and the right adjoint $T \mapsto R \backslash
+T$ are two different faces of the same converse: the first is the adjoint for the pairing, the second
+the adjoint for the order.</p>
+<h2 id="unit-and-counit">Unit and Counit</h2>
+<p>The unit $R^{-1} ; R$ and the counit $R ; R^{-1}$ of the pairing adjunction are relations on $Y$ and on
+$Y$ respectively, and their comparison with the diagonal decides the nature of $R$.</p>
+<p><strong>Theorem.</strong> For a relation $R \subseteq X \times Y$:</p>
+<ol>
+<li>$\Delta_Y \subseteq R^{-1} ; R$ if and only if $R$ is <strong>surjective</strong>, that is, every $y \in Y$ is
+   related to some $x \in X$;</li>
+<li>$R ; R^{-1} \subseteq \Delta_Y$ if and only if $R$ is a <strong>partial function</strong>, that is, each $y \in
+   Y$ is the image of at most one $x$;</li>
+<li>both hold, so that $R^{-1}$ is a two-sided adjoint of $R$, if and only if $R$ is a bijection, in
+   which case $R^{-1}$ is the inverse function.</li>
+</ol>
+<p><strong>Proof.</strong> $(y,y') \in R^{-1};R$ means that some $x$ is related to both $y$ and $y'$; the diagonal is
+contained exactly when every $y$ is related to at least one $x$, which is surjectivity. $(y,y') \in
+R;R^{-1}$ means that some $z$ with $(y,z) \in R$ and $(y',z) \in R$ exists — that is, $y$ and $y'$
+share an image; this is contained in the diagonal exactly when no two distinct elements share an image,
+which is the partial-function condition. In that case $R$ is a partial function and $R^{-1}$ is its
+partially defined inverse; with the unit as well, the function is total and its inverse is two-sided.</p>
+<p><strong>Corollary.</strong> An adjunction $R \dashv R^{-1}$ in the bicategory of relations exists exactly when $R$
+is a bijection; for a general relation the unit and counit are the two defects of $R$, the failure of
+surjectivity and the failure of single-valuedness.</p>
+<p><strong>Proof.</strong> The two conditions of the theorem are the unit and counit of the 2-categorical adjunction;
+both hold exactly for a bijection, and each fails for the corresponding defect.</p>
+<h2 id="summary">Summary</h2>
+<p>The converse is the adjoint of a relation for the pairing $\langle U, V \rangle = U^{-1};V$: the
+identity $\langle R;S, T \rangle = \langle S, R^{-1};T \rangle$ says that left composition with $R$ has,
+as adjoint under the pairing, left composition with $R^{-1}$, and the adjoint operation is an involution
+fixed exactly by the operators commuting with the converse.</p>
+<p>The same converse computes the right adjoint of composition in the residuation, $R \backslash T =
+\overline{R^{-1};\overline{T}}$, with unit $S \subseteq R \backslash (R;S)$ and counit $R ; (R
+\backslash T) \subseteq T$. The unit $R^{-1};R$ and the counit $R;R^{-1}$ of the pairing measure
+surjectivity and single-valuedness, so that $R$ and $R^{-1}$ are two-sided adjoints exactly when $R$ is
+a bijection.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle U, V \rangle = U^{-1};V$</td>
+<td>The pairing of relations $X \to Z$</td>
+</tr>
+<tr>
+<td>$L_R : S \mapsto R;S$</td>
+<td>Left composition with $R$</td>
+</tr>
+<tr>
+<td>$L_{R^{-1}}$</td>
+<td>The adjoint of $L_R$ under the pairing</td>
+</tr>
+<tr>
+<td>$R \backslash T = \overline{R^{-1};\overline{T}}$</td>
+<td>The right adjoint of $L_R$ in the residuation</td>
+</tr>
+<tr>
+<td>$R^{-1};R$, $R;R^{-1}$</td>
+<td>Unit and counit; surjectivity and single-valuedness of $R$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Chris Brink, Wolfram Kahl and Gunther Schmidt, <em>Relational Methods in Computer Science</em> (Springer, 1997), for the pairing of relations, residuation and the converse as an adjoint.</li>
+<li>Gunther Schmidt and Thomas Ströhlein, <em>Relations and Graphs</em> (Springer, 1993), for the residual calculus and the adjointness of the converse.</li>
+<li>Michael Barr and Charles Wells, <em>Category Theory for Computing Science</em>, 3rd ed. (CRM, 1999), for adjoint functors, units and counits, and the bicategory of relations.</li>
+<li>Francis Borceux, <em>Handbook of Categorical Algebra 1</em> (Cambridge University Press, 1994), for adjunctions, units and counits and their duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

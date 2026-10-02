@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Linear Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-linear-space"><strong>The Signed Sandwich on a Linear Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The endomorphism algebra $E = \operatorname{End}_F(V)$ has a multiplication, and with it the two-sided operators $X \mapsto aXb$ and their <strong>signed</strong> variants $X \mapsto a\alpha(X)b$, where $\alpha$ is the grade involution of $E$, the order-two algebra automorphism induced by a linear involution of $V$. The signed sandwich is the composite of the unsigned one with $\alpha$, so the two families are reparametrisations of one another, and the sign it carries is the parity of the element it acts on; the sandwich maps compose by the rule $(a,b)(r,s) = (ar,sb)$, the signed ones by the twisted rule, and the invertible ones form the group of two-sided operators with the inner automorphisms among them. This article develops the two sandwiches, their composition laws, their relation and the invertibility criterion; the reflections they realise are <em>Reflections as Signed Two-Sided Operators on a Linear Space</em>, the one-sided variant is <em>The Signed Left Multiplication on a Linear Space</em>, and the adjoint with respect to the trace pairing is <em>The Signed Adjoint Sandwich on a Linear Space</em>.</p>
+<p><em>Involutive Linear Spaces</em> treats the linear-space involution of $E$, which is exactly $\alpha$, with its type $(p^2+q^2,2pq)$ and its trace $(p-q)^2$; the present article uses the multiplication of $E$ as well, which the linear-space article does not. <em>Involutive Linear Algebras</em> treats the involutions and the sandwiches of an abstract algebra with an involution; the article here is the concrete case over a linear space, inside the operator group, and it cites that article for the abstract laws. <em>Left and Right Multiplication in a Group</em> is the group-level analogue of the one-sided operators, and <em>The Adjoint of the Left Multiplication on a Linear Space</em> treats the unsigned one-sided operators with respect to the trace pairing.</p>
+<p>Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $\alpha$ is the <strong>grade involution</strong>: an algebra automorphism of $E$ with $\alpha^2 = \mathrm{id}$, given concretely by $\alpha(X) = TXT$ for a linear involution $T \neq \mathrm{id}$ of $V$. An element is <strong>homogeneous</strong> when it lies in an eigenspace of $\alpha$, and its <strong>sign</strong> is $\varepsilon_X = +1$ on the fixed part and $-1$ on the negated part. No form and no topology is used.</p>
+<h2 id="the-two-sandwiches">The Two Sandwiches</h2>
+<p><strong>Definition.</strong> For $a,b \in E$ the <strong>unsigned sandwich</strong> and the <strong>signed sandwich</strong> are the operators on $E$</p>
+<p>$$
+\Phi_{a,b}(X) = aXb, \qquad \Theta^{\alpha}_{a,b}(X) = a\,\alpha(X)\,b .
+$$</p>
+<p><strong>Proposition (composition laws).</strong> For all $a,b,r,s \in E$,</p>
+<p>$$
+\Phi_{a,b}\Phi_{r,s} = \Phi_{ar,sb}, \qquad \Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s} = \Theta^{\alpha}_{a\alpha(r),\alpha(s)b} .
+$$</p>
+<p><strong>Proof.</strong> $\Phi_{a,b}\Phi_{r,s}(X) = a(rXs)b = (ar)X(sb) = \Phi_{ar,sb}(X)$. For the signed case apply $\alpha$ in the middle: $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s}(X) = a\alpha(r\alpha(X)s)b = a\alpha(s)\alpha(\alpha(X))\alpha(r)b = a\alpha(s)X\alpha(r)b$, so the composite is the signed sandwich with the pair $(a\alpha(r),\alpha(s)b)$. This is the twisted form of the unsigned rule $(a,b)(r,s)=(ar,sb)$, and it reduces to it when $\alpha=\mathrm{id}$.</p>
+<p><strong>Proposition (the signed sandwich is the unsigned one composed with $\alpha$).</strong> For all $a,b$,</p>
+<p>$$
+\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)} , \qquad
+\Phi_{a,b} = \alpha\circ\Theta^{\alpha}_{\alpha(a),\alpha(b)} = \Theta^{\alpha}_{\alpha(a),\alpha(b)}\circ\alpha .
+$$</p>
+<p><strong>Proof.</strong> $\Phi_{a,b}(\alpha(X)) = a\alpha(X)b = \Theta^{\alpha}_{a,b}(X)$, which is the first identity; $(\alpha\circ\Phi_{\alpha(a),\alpha(b)})(X) = \alpha(\alpha(a)X\alpha(b)) = a\alpha(X)b$ by the multiplicativity of $\alpha$, which is the second. Replacing $a,b$ by $\alpha(a),\alpha(b)$ in the first identity and composing with $\alpha$ gives the last, since $\alpha^2=\mathrm{id}$.</p>
+<p><strong>Corollary (the sign on homogeneous elements).</strong> If $X$ is homogeneous then</p>
+<p>$$
+\Theta^{\alpha}_{a,b}(X) = \varepsilon_X\,\Phi_{a,b}(X) ,
+$$</p>
+<p>so the signed sandwich differs from the unsigned one by the parity sign of the element acted on; in particular the two agree on the fixed part of $\alpha$ and are opposite on the negated part.</p>
+<p><strong>Proof.</strong> $\alpha(X)=\varepsilon_X X$ for homogeneous $X$, so $a\alpha(X)b=\varepsilon_X aXb$.</p>
+<h2 id="invertibility-and-the-inner-sandwiches">Invertibility and the Inner Sandwiches</h2>
+<p><strong>Proposition.</strong> $\Phi_{a,b}$ is invertible if and only if $a$ and $b$ are invertible, and then $\Phi_{a,b}^{-1}=\Phi_{b^{-1},a^{-1}}$; $\Theta^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are invertible.</p>
+<p><strong>Proof.</strong> If $a,b$ are invertible, $\Phi_{b^{-1},a^{-1}}\Phi_{a,b}=\Phi_{b^{-1}a,ba^{-1}}=\Phi_{\mathrm{id},\mathrm{id}}=\mathrm{id}$ and likewise on the other side; if $\Phi_{a,b}$ is invertible, then $X \mapsto aXb$ is injective, which forces $a$ and $b$ to be injective: if $aX=0$ for some $X\neq0$ then $\Phi_{a,b}$ kills $Xb'$ for suitable $b'$, and similarly for $b$. The signed case follows from $\Theta^{\alpha}_{a,b}=\Phi_{a,b}\alpha$ and the invertibility of $\alpha$.</p>
+<p><strong>Definition.</strong> The <strong>inner sandwich</strong> of an invertible $a$ is $\Phi_{a,a^{-1}}$, also written $\mathrm{Ad}_a$; the <strong>signed inner sandwich</strong> is $\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\circ\alpha$.</p>
+<p><strong>Proposition.</strong> $\mathrm{Ad}_a$ is the inner automorphism of the algebra $E$ determined by $a$, and the signed inner sandwich is an automorphism of $E$; the group $\{\mathrm{Ad}_a : a \in E^{\times}\}$ is isomorphic to $E^{\times}/Z(E)^{\times}$, and its order-two automorphisms are the $\mathrm{Ad}_a$ with $a^2$ central.</p>
+<p><strong>Proof.</strong> $\mathrm{Ad}_a(XY) = aXYa^{-1} = (aXa^{-1})(aYa^{-1})$, so $\mathrm{Ad}_a$ is an automorphism with inverse $\mathrm{Ad}_{a^{-1}}$; the kernel of $a\mapsto\mathrm{Ad}_a$ is the centre $Z(E)$; $\mathrm{Ad}_a^2=\mathrm{Ad}_{a^2}$, which is the identity exactly when $a^2$ is central, and this is the criterion of <em>Algebras of Endomorphisms</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On $E = \operatorname{End}_F(V)$ the unsigned sandwich $\Phi_{a,b}(X)=aXb$ composes by $\Phi_{a,b}\Phi_{r,s}=\Phi_{ar,sb}$, and the signed sandwich $\Theta^{\alpha}_{a,b}(X)=a\alpha(X)b$, formed with the grade involution $\alpha$, composes by the twisted rule $\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s}=\Theta^{\alpha}_{a\alpha(r),\alpha(s)b}$; the two families are related by $\Theta^{\alpha}_{a,b}=\Phi_{a,b}\circ\alpha=\alpha\circ\Phi_{\alpha(a),\alpha(b)}$, and on a homogeneous element the signed sandwich is the unsigned one multiplied by the parity sign. Both are invertible exactly when $a$ and $b$ are, with $\Phi_{a,b}^{-1}=\Phi_{b^{-1},a^{-1}}$; the inner sandwiches $\Phi_{a,a^{-1}}$ are the inner automorphisms of $E$, and the signed inner sandwiches $\Theta^{\alpha}_{a,a^{-1}}=\mathrm{Ad}_a\circ\alpha$ are the composites of an inner automorphism with the grade involution. The reflections realised by the signed sandwiches, the one-sided signed action, and the adjoint with respect to the trace pairing are the subjects of the three companion articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $V$, $n$</td>
+<td>the field, the space and its dimension</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_F(V)$</td>
+<td>the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $\alpha(X)=TXT$, $T^2=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\varepsilon_X$</td>
+<td>the sign of a homogeneous $X$, $+1$ or $-1$</td>
+</tr>
+<tr>
+<td>$\Phi_{a,b}(X)=aXb$</td>
+<td>the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}(X)=a\alpha(X)b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$\Phi_{a,b}\Phi_{r,s}=\Phi_{ar,sb}$</td>
+<td>the composition law</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}\Theta^{\alpha}_{r,s}=\Theta^{\alpha}_{a\alpha(r),\alpha(s)b}$</td>
+<td>the signed composition law</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_a=\Phi_{a,a^{-1}}$</td>
+<td>the inner sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the involutions of an algebra and the sandwich operators.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the general theory of involutions and their sandwiches.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the inner automorphisms of an endomorphism algebra and the centraliser of the multiplications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

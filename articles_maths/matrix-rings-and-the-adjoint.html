@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Rings and the Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="matrix-rings-and-the-adjoint"><strong>Matrix Rings and the Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>When the endomorphism ring of <em>Involutions of the Endomorphism Ring</em> is a matrix ring, the adjoint becomes a concrete formula: with respect to a sesquilinear form with Gram matrix $\Phi$ and coefficient involution $\sigma$, the adjoint of a matrix $X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, and with respect to the $\sigma$-twisted trace pairing of the category it is read off from the left and the right multiplications. Three objects come together in the matrix case and are easy to confuse: the <strong>adjoint involution</strong> $X \mapsto \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$ defined by a form, the <strong>self-adjoint</strong> and <strong>skew-adjoint</strong> matrices it picks out, and the <strong>unitary group</strong> of the matrices with $X^{*}X = XX^{*} = I$, which are exactly the matrices preserving the form. This article computes the adjoint in the matrix ring, identifies the self-adjoint matrices and the unitary group, and relates them to the trace pairing of the ring.</p>
+<p>It assumes <em>Matrix Rings with an Involution</em>, <em>Involutions of the Endomorphism Ring</em> for the adjoint, and <em>The Transpose as an Adjoint</em> for the trace duality; the sesquilinear forms themselves and their classification are Part II, and the Gram matrix is used only as a matrix. Throughout, $R$ is a commutative ring with $1 \neq 0$ and an involution $\sigma$, $\Phi \in M_n(R)$ is a matrix with $\Phi$ invertible when it is used as a Gram matrix, $\tau$ is the matrix trace, and $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$.</p>
+<h2 id="the-adjoint-defined-by-a-form">The Adjoint Defined by a Form</h2>
+<p><strong>Theorem.</strong> Let $\Phi$ be invertible and let the sesquilinear form be $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$ on $R^n$. Then</p>
+<p>$$
+\langle Xx,y\rangle = \langle x, X^{*}y\rangle , \qquad X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi ,
+$$</p>
+<p>so $X\mapsto X^{*}$ is the adjoint involution of $M_n(R)$ determined by $\Phi$ and $\sigma$; for $\Phi = I$ it is $X\mapsto \sigma(X)^{\mathrm t}$, and for $\sigma = \mathrm{id}$ and $\Phi = I$ it is the transpose.</p>
+<p><strong>Proof.</strong> $\langle Xx,y\rangle = \sigma(Xx)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\sigma(X)^{\mathrm t}\Phi y = \sigma(x)^{\mathrm t}\Phi(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi)y = \langle x, X^{*}y\rangle$. The four laws are those of <em>Involutions of the Endomorphism Ring</em>.</p>
+<p><strong>Proposition (self-adjoint and skew-adjoint).</strong> The <strong>self-adjoint</strong> matrices are those with $\sigma(X)^{\mathrm t}\Phi = \Phi X$, equivalently $X^{*} = X$; the <strong>skew-adjoint</strong> ones are those with $X^{*} = -X$. With $2$ invertible the ring is the sum of the two, and for $\Phi = I$ they are the matrices with $\sigma(X)^{\mathrm t} = \pm X$, the Hermitian and skew-Hermitian matrices of the coefficient involution.</p>
+<p><strong>Proof.</strong> $X^{*} = X$ is $\Phi^{-1}\sigma(X)^{\mathrm t}\Phi = X$, i.e. $\sigma(X)^{\mathrm t}\Phi = \Phi X$; the rest is <em>Involutive Rings</em> applied to the adjoint involution.</p>
+<p><strong>Proposition (the unitary group).</strong> The matrices with</p>
+<p>$$
+X^{*}X = XX^{*} = I, \qquad \text{equivalently } \sigma(X)^{\mathrm t}\Phi X = \Phi ,
+$$</p>
+<p>form a subgroup $U_n(R,\Phi,\sigma)$ of $\mathrm{GL}_n(R)$ and are exactly the matrices preserving the form, $\langle Xx,Xy\rangle = \langle x,y\rangle$ for all $x,y$. For $\sigma = \mathrm{id}$ and $\Phi$ symmetric this is the orthogonal group, for $\Phi^{\mathrm t} = -\Phi$ the symplectic group, and for $R = \mathbb{C}$, $\sigma$ the conjugation and $\Phi = I$ the unitary group.</p>
+<p><strong>Proof.</strong> $\sigma(X)^{\mathrm t}\Phi X = \Phi$ is $X^{*}X = I$; multiplying by $X$ on the left gives $X X^{*} = I$ by the standard group argument, and the preservation is the unitary-element proposition of <em>Involutions of the Endomorphism Ring</em>.</p>
+<h2 id="the-trace-pairing">The Trace Pairing</h2>
+<p><strong>Proposition.</strong> With the trace pairing $\beta(X,Y) = \tau(XY)$ of the ring, the adjoint of the left multiplication is the right multiplication, $L_X^{*} = R_X$, and the trace of the adjoint is the $\sigma$-image of the trace,</p>
+<p>$$
+\tau(X^{*}) = \sigma(\tau(X)) .
+$$</p>
+<p>Hence the trace pairing is $\sigma$-semilinear in the appropriate sense and its restriction to the self-adjoint matrices is a symmetric bilinear form.</p>
+<p><strong>Proof.</strong> $\beta(L_XY,Z) = \tau(XYZ) = \tau(YZX) = \beta(Y,R_XZ)$ is <em>The Transpose as an Adjoint</em>; $\tau(X^{*}) = \tau(\Phi^{-1}\sigma(X)^{\mathrm t}\Phi) = \tau(\sigma(X)^{\mathrm t}) = \sigma(\tau(X))$, since the trace is invariant under conjugation by $\Phi$ and additive over the diagonal.</p>
+<p><strong>Corollary (the two involutions).</strong> The adjoint involution $X\mapsto\sigma(X)^{\mathrm t}$ of $\Phi = I$ and the transpose involution $X\mapsto X^{\mathrm t}$ of <em>Matrix Rings with an Involution</em> agree exactly when $\sigma = \mathrm{id}$; for a nontrivial $\sigma$ the adjoint involution is of the second kind and its self-adjoint matrices are the Hermitian ones.</p>
+<p><strong>Proof.</strong> Comparison of the two formulas; the kind is read off from the action on the centre $R\cdot I$, where $\sigma(X)^{\mathrm t}$ acts by $\sigma$ on the scalars.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The real orthogonal case.</strong> $R = \mathbb{R}$, $\sigma = \mathrm{id}$, $\Phi = I$: $X^{*} = X^{\mathrm t}$, the self-adjoint matrices are the symmetric ones, and $U_n$ is the orthogonal group.</p>
+<p><strong>(b) The complex unitary case.</strong> $R = \mathbb{C}$, $\sigma$ the conjugation, $\Phi = I$: $X^{*} = \overline{X}^{\mathrm t}$, the self-adjoint matrices are the Hermitian ones, and $U_n$ is the unitary group. The adjoint involution is of the second kind.</p>
+<p><strong>(c) The symplectic case.</strong> $\Phi = J$ with $J^{\mathrm t} = -J$, $J^2 = -1$: $X^{*} = -JX^{\mathrm t}J$ and $U_n$ is the symplectic group of <em>Matrix Rings with an Involution</em>.</p>
+<p><strong>(d) The indefinite case.</strong> $\Phi = \operatorname{diag}(1,\dots,1,-1,\dots,-1)$: the self-adjoint matrices are the Hermitian matrices of a signature, and the unitary group is the corresponding indefinite unitary group; the signature is a Part II invariant and is only named here.</p>
+<h2 id="summary">Summary</h2>
+<p>In the matrix ring with a coefficient involution $\sigma$ and an invertible Gram matrix $\Phi$, the adjoint is $X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$, defined by the sesquilinear form $\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$; for $\Phi = I$ it is $\sigma(X)^{\mathrm t}$. The self-adjoint matrices satisfy $\sigma(X)^{\mathrm t}\Phi = \Phi X$, the skew-adjoint ones the same with the opposite sign, and the unitary group $U_n(R,\Phi,\sigma) = \{X : X^{*}X = XX^{*} = I\}$ is the group of matrices preserving the form; the transpose, the orthogonal, the symplectic and the unitary groups are the cases $\Phi = I$ with $\sigma = \mathrm{id}$, a symmetric $\Phi$, an antisymmetric $\Phi$, and $R = \mathbb{C}$ with the conjugation. Under the trace pairing $\beta(X,Y) = \tau(XY)$ the adjoint of the left multiplication is the right multiplication and $\tau(X^{*}) = \sigma(\tau(X))$, so the trace pairing restricts to a symmetric form on the self-adjoint part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $\Phi$</td>
+<td>Coefficient involution and invertible Gram matrix</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle = \sigma(x)^{\mathrm t}\Phi y$</td>
+<td>Sesquilinear form</td>
+</tr>
+<tr>
+<td>$X^{*} = \Phi^{-1}\sigma(X)^{\mathrm t}\Phi$</td>
+<td>Adjoint of $X$</td>
+</tr>
+<tr>
+<td>$\sigma(X)^{\mathrm t}\Phi = \Phi X$</td>
+<td>Self-adjoint matrices</td>
+</tr>
+<tr>
+<td>$X^{*}X = XX^{*} = I$</td>
+<td>Unitary group $U_n(R,\Phi,\sigma)$</td>
+</tr>
+<tr>
+<td>$\sigma(X)^{\mathrm t}\Phi X = \Phi$</td>
+<td>Preservation of the form</td>
+</tr>
+<tr>
+<td>$\beta(X,Y) = \tau(XY)$</td>
+<td>Trace pairing; $L_X^{*} = R_X$</td>
+</tr>
+<tr>
+<td>$\tau(X^{*}) = \sigma(\tau(X))$</td>
+<td>Trace of the adjoint</td>
+</tr>
+<tr>
+<td>$\Phi = I$ / $J$ / indefinite</td>
+<td>Orthogonal / symplectic / indefinite unitary cases</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the adjoint involution, the Gram matrix and the classical groups.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the adjoint involution and the unitary elements of a matrix ring.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the Hermitian and skew-Hermitian matrices and the trace.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for sesquilinear forms, their Gram matrices and the groups that preserve them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Operator Algebras and the Commutant — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-operator-algebras-and-the-commutant"><strong>Involutive Operator Algebras and the Commutant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involutive operator algebra</strong> is a $*$-subalgebra of $B(H)$, an algebra of bounded operators on a Hilbert space closed under the adjoint. Two completions of such an algebra are possible, the norm closure and the weak (or strong) closure, and they give the two great classes of the subject: the norm-closed $*$-subalgebras are the $\mathrm{C}^*$-algebras of operators, and the weakly closed ones are the <strong>von Neumann algebras</strong>. The bridge between the algebra and its closure is the <strong>commutant</strong> $A' = \{T : TS = ST \text{ for all } S \in A\}$: the double commutant theorem says that a unital $*$-subalgebra of $B(H)$ has $A'' = A$ exactly when $A$ is weakly closed, so the von Neumann algebras are precisely the algebras equal to their own bicommutant, and the commutant is the structural invariant that computes the weak closure. This article develops the commutant, the double commutant theorem, the weak and strong topologies and the von Neumann algebras they define.</p>
+<p>The article assumes the bounded operators, the adjoint, the strong and weak operator topologies, the $\mathrm{C}^*$-identity, the von Neumann algebras, the bicommutant theorem and the factors from <em>Operator Algebras</em>, which owns the theory; the $\mathrm{C}^*$-algebras and the Gelfand–Naimark theorem from <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>; the states and the GNS construction from <em>States and Positive Functionals on an Involutive Algebra</em>; and the operators on a $\mathrm{C}^*$-algebra from <em>Operators on a C</em>-Algebra*. The grade involution $\alpha$ is not used.</p>
+<p>Throughout, $H$ is a complex Hilbert space, $B(H)$ the algebra of bounded operators with the adjoint $T^*$; $A \subseteq B(H)$ is a $*$-subalgebra, unital when a unital statement is made; the <strong>commutant</strong> is $A' = \{T \in B(H) : TS = ST \text{ for all } S \in A\}$ and the <strong>bicommutant</strong> is $A'' = (A')'$; the <strong>weak</strong> and <strong>strong</strong> operator topologies are those of the pointwise scalar and pointwise norm convergence; a <strong>von Neumann algebra</strong> is a weakly closed unital $*$-subalgebra of $B(H)$; and $Z(A) = A \cap A'$ is the <strong>centre</strong>.</p>
+<h2 id="the-commutant">The Commutant</h2>
+<p><strong>Definition.</strong> For $A \subseteq B(H)$ the <strong>commutant</strong> is</p>
+<p>$$
+A' = \{T \in B(H) : TS = ST \text{ for every } S \in A\} ,
+$$</p>
+<p>and the <strong>bicommutant</strong> is $A'' = (A')'$.</p>
+<p><strong>Proposition (the elementary laws).</strong> $A'$ is a unital subalgebra of $B(H)$; if $A$ is a $*$-subalgebra then $A'$ is a $\sigma$-weakly closed unital $*$-subalgebra; $A \subseteq A''$; $A''' = A'$; and $A \subseteq B$ implies $B' \subseteq A'$.</p>
+<p><strong>Proof.</strong> The commutant of a set is an algebra, closed under the strong and weak topologies because the conditions $TS = ST$ are weakly closed; if $A$ is closed under $*$ then $T \in A'$ implies $T^* \in A'$ because $T^*S = (S^*T)^* = (TS^*)^* = ST^*$ for self-adjoint $S$, extended by linearity. $A \subseteq A''$ is the definition read twice; $A \subseteq A''$ gives $A''' \subseteq A'$, while $A \subseteq A''$ applied to $A'$ gives $A' \subseteq A'''$, so $A' = A'''$. The antitonicity is immediate. $\square$</p>
+<p><strong>Theorem (the double commutant theorem).</strong> Let $A$ be a unital $*$-subalgebra of $B(H)$. Then</p>
+<p>$$
+A'' = \overline{A}^{\,\mathrm{weak}} = \overline{A}^{\,\mathrm{strong}} ,
+$$</p>
+<p>the bicommutant is the weak closure and the strong closure of $A$. Hence $A$ is a von Neumann algebra if and only if $A = A''$.</p>
+<p><strong>Proof (sketch).</strong> The weak closure contains $A$ and is contained in $A''$ because the commutant is weakly closed and $A \subseteq A''$; the converse, $A'' \subseteq \overline{A}^{\,\mathrm{weak}}$, is proved by exhibiting for each $T \in A''$ and each finite tuple $\xi_1,\dots,\xi_n$ an $S \in A$ with $S\xi_i = T\xi_i$, approximating the projection onto the closed $A$-invariant subspace generated by the $\xi_i$ by operators of $A$ and using the invariance of the graph of the tuple under $A$; the result is that $T$ lies in the strong closure, hence in the weak closure. $\square$</p>
+<h2 id="the-topologies-and-the-density">The Topologies and the Density</h2>
+<p><strong>Proposition (norm, strong, weak).</strong> On the unit ball of $B(H)$ the strong and the weak operator topologies have the same closure properties, and the strong topology is finer than the weak; a norm-closed $*$-subalgebra of $B(H)$ is a $\mathrm{C}^*$-algebra, and a weakly closed one is a von Neumann algebra. If $A$ is a norm-closed unital $*$-subalgebra then $A''$ is the weak closure and $A \subseteq A''$ with equality exactly when $A$ is weakly closed.</p>
+<p><strong>Proof.</strong> The topologies are the pointwise convergence in norm and in the weak topology; the adjoint is strongly continuous on bounded sets and weakly continuous on bounded sets, so a weakly closed $*$-subalgebra is a von Neumann algebra; a norm-closed $*$-subalgebra is complete and closed under the involution, hence a $\mathrm{C}^*$-algebra. The identification $A'' = \overline{A}^{\,\mathrm{weak}}$ is the double commutant theorem. $\square$</p>
+<p><strong>Theorem (Kaplansky density).</strong> Let $A$ be a unital $*$-subalgebra of $B(H)$. Then the unit ball of $A$ is strongly dense in the unit ball of $A''$; in particular the self-adjoint part of the unit ball of $A$ is strongly dense in the self-adjoint part of the unit ball of $A''$.</p>
+<p><strong>Proof (sketch).</strong> The density of $A$ itself in $A''$ is the double commutant theorem; the reduction to the unit ball is the standard "cutting down" by a continuous function via the functional calculus, applied to the bounded operators of $A''$ and transported back by the strong density and the strong continuity of the calculus on bounded sets. $\square$</p>
+<h2 id="factors-and-the-centre">Factors and the Centre</h2>
+<p><strong>Definition.</strong> The <strong>centre</strong> of a $*$-subalgebra $A \subseteq B(H)$ is $Z(A) = A \cap A'$; a <strong>factor</strong> is a von Neumann algebra with $Z(A) = \mathbb{C}\cdot 1$.</p>
+<p><strong>Proposition (the commutant of the centre).</strong> For a von Neumann algebra $A$, $Z(A) = Z(A')$, $A = A''$, and if $P \in Z(A)$ is a projection then $A = PA \oplus (1-P)A$, a direct sum of von Neumann algebras; hence a von Neumann algebra is a direct sum of factors exactly when its centre is atomic.</p>
+<p><strong>Proof.</strong> $Z(A) = A \cap A'$ and $Z(A') = A' \cap A'' = A' \cap A$, the same set; a central projection gives invariant complementary subspaces and the decomposition; the factor decomposition is the standard reduction of a commutative centre. $\square$</p>
+<p><strong>Remark (the boundary with the operator theory).</strong> The factors, their classification into types, the traces and the modular theory are <em>Operator Algebras</em>; this article records the commutant, the double commutant theorem and the density it needs, and does not redevelop the von Neumann theory. The states and the GNS representations that produce a von Neumann algebra from a $\mathrm{C}^*$-algebra are <em>States and Positive Functionals on an Involutive Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the whole algebra).</strong> For $A = B(H)$ the commutant is $A' = \mathbb{C}\cdot1$, the bicommutant is $B(H)$, and $B(H)$ is a factor of type $\mathrm{I}_\infty$; the double commutant theorem is immediate because the algebra is already weakly closed.</p>
+<p><strong>Example (the multiplication algebra).</strong> Let $A = \{M_f : f \in L^\infty(X,\mu)\}$ acting on $L^2(X,\mu)$. It is a commutative von Neumann algebra, $A = A'$, and it is a factor only when $X$ is a single point; the double commutant theorem identifies $A$ with its own weak closure, the multiplication algebra.</p>
+<p><strong>Example (a group von Neumann algebra).</strong> For a countable group $G$ the algebra generated by the unitary left regular representation is a von Neumann algebra, $L(G)$; its commutant is generated by the right regular representation, and $L(G)$ is a factor exactly when every nontrivial conjugacy class of $G$ is infinite. The reduced group $\mathrm{C}^*$-algebra is the norm closure inside it, and the group algebras are <em>Group Algebras</em>.</p>
+<h2 id="irreducibility-and-the-bicommutant">Irreducibility and the Bicommutant</h2>
+<p><strong>Definition.</strong> A <code>*</code>-subalgebra $A \subseteq B(H)$ is <strong>irreducible</strong> when it has no nontrivial closed invariant subspace, equivalently when the only projections in $A'$ are $0$ and $1$.</p>
+<p><strong>Theorem (Schur's lemma and the density).</strong> For a unital <code>*</code>-subalgebra $A \subseteq B(H)$, $A$ is irreducible if and only if $A' = \mathbb{C}\cdot1$, and then $A'' = B(H)$, so that $A$ is strongly dense in $B(H)$ by the double commutant theorem; a reducible $A$ admits a nontrivial projection $P \in A'$ and decomposes as the direct sum $A = PA \oplus (1-P)A$.</p>
+<p><strong>Proof.</strong> A closed subspace $K$ invariant under $A$ has the orthogonal projection $P$ commuting with $A$, so $P \in A'$; conversely a projection in $A'$ gives an invariant subspace. If $A' = \mathbb{C}\cdot1$ then $A'' = B(H)$ and the double commutant theorem gives the strong density; if $A'$ contains a nontrivial projection, the algebra splits as the direct sum. $\square$</p>
+<p><strong>Corollary (irreducibility and the centre).</strong> For a <code>*</code>-algebra $A$ with $A = A''$ the irreducibility is the triviality of the centre $Z(A) = A \cap A'$, so a von Neumann algebra is irreducible on its defining space exactly when it is a factor; the topological notion (no invariant subspace) and the algebraic notion ($A' = \mathbb{C}\cdot1$) agree for a <code>*</code>-algebra of operators.</p>
+<p><strong>Example (the matrix algebra).</strong> $A = M_n(\mathbb{C}) \subseteq B(\mathbb{C}^n)$ is irreducible, $A' = \mathbb{C}\cdot1$ and $A'' = B(\mathbb{C}^n) = M_n(\mathbb{C})$; a diagonal algebra is reducible and splits over its coordinate projections.</p>
+<h2 id="summary">Summary</h2>
+<p>For a $*$-subalgebra $A$ of $B(H)$ the commutant $A'$ is a weakly closed unital $*$-subalgebra, $A \subseteq A''$, and $A''' = A'$; the bicommutant is the weak closure and the strong closure of $A$ for a unital $A$, so the von Neumann algebras are exactly the algebras with $A = A''$. A norm-closed unital $*$-subalgebra is a $\mathrm{C}^*$-algebra of operators and its bicommutant is its weak closure, the von Neumann algebra it generates; by the Kaplansky density theorem the unit ball of $A$ is strongly dense in the unit ball of $A''$. The centre is $Z(A) = A \cap A'$, and a factor is a von Neumann algebra with trivial centre; a central projection splits the algebra, so a von Neumann algebra is a direct sum of factors when its centre is atomic. The full theory of the von Neumann algebras, the factors, the traces and the modular theory is <em>Operator Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(H)$, $T^*$</td>
+<td>Bounded operators on $H$, the adjoint</td>
+</tr>
+<tr>
+<td>$A' = \{T : TS = ST\ \forall S \in A\}$</td>
+<td>The commutant</td>
+</tr>
+<tr>
+<td>$A'' = (A')'$</td>
+<td>The bicommutant; $A'' = \overline{A}^{\mathrm{weak}}$ for unital $A$</td>
+</tr>
+<tr>
+<td>$A = A''$</td>
+<td>Characterisation of a von Neumann algebra</td>
+</tr>
+<tr>
+<td>Strong, weak topologies</td>
+<td>Pointwise norm and pointwise scalar convergence</td>
+</tr>
+<tr>
+<td>Kaplansky density</td>
+<td>Unit ball of $A$ strongly dense in that of $A''$</td>
+</tr>
+<tr>
+<td>$Z(A) = A \cap A'$</td>
+<td>The centre; a factor has $Z(A) = \mathbb{C}\cdot 1$</td>
+</tr>
+<tr>
+<td>Factors, types</td>
+<td>The classification, owned by <em>Operator Algebras</em></td>
+</tr>
+<tr>
+<td>Irreducible $A$</td>
+<td>$A' = \mathbb{C}\cdot1$, hence $A'' = B(H)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the commutant, the double commutant theorem and the density theorems.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the von Neumann algebras, the factors and the classification.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the topologies, the bicommutant theorem and the standard form.</li>
+<li>Gérard J. Murphy, <em>$\mathrm{C}^*$-Algebras and Operator Theory</em> (Academic Press, 1990), for the $\mathrm{C}^*$-algebras of operators and the density theorems.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the operator topologies and the weak and strong closures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Completion Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-completion-operator"><strong>The Completion Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The completion of a topological ring is a ring through which the given ring maps, into which its Cauchy sequences converge, and which is characterised by a single universal property; read as an assignment on rings it is an <strong>operator</strong>, $R \mapsto \widehat{R}$, defined on the category of topological rings. This article treats that operator for itself: it fixes the completion, proves that the assignment is a functor, identifies the universal property as the statement that the operator is the reflection of the category into its complete Hausdorff subcategory, computes the kernel as the closure of zero, shows that the operator is idempotent and hence adds nothing the second time, and records its behaviour on ideals, quotients and products.</p>
+<p>The article assumes the topological ring, its neighbourhoods of zero, its linear topologies, the closure of zero, the fundamental system of ideals, the $I$-adic topology and the inverse limit $\varprojlim R/I^n$ from <em>Topological Rings and Fields</em>; the ring homomorphism and the quotient and product constructions from <em>Rings</em>; and the continuous operators, the monoid $\operatorname{Map}_c(R)$, the homeomorphisms and the continuous homomorphisms from <em>Operators on a Topological Ring</em>. The metric completion of a valued field, the fields $\mathbb{Q}_p$ and $\mathbb{R}$ and the persistence of the residue field are <em>Absolute Values, Valuations and Completions</em>, and are named only: this article completes a ring for a linear topology, and the valued completion is a different construction on a different object. No measure, no norm and no form occurs.</p>
+<p>Throughout, $R$ is a topological ring carrying a linear topology, that is a topology for which the neighbourhoods of zero are the ideals of a fundamental system; $\widehat{R}$ is its completion; $\iota_R : R \to \widehat{R}$ is the canonical continuous homomorphism; $\overline{\{0\}}$ is the closure of zero; and $\mathcal{C}$ denotes the category of complete Hausdorff topological rings with continuous homomorphisms.</p>
+<h2 id="the-completion">The Completion</h2>
+<p><strong>Definition.</strong> Let $R$ be a topological ring with a linear topology given by a fundamental system of neighbourhoods of zero consisting of ideals $\{I_\lambda\}_{\lambda \in \Lambda}$, directed by containment. The <strong>completion</strong> of $R$ is the inverse limit</p>
+<p>$$
+\widehat{R} = \varprojlim_{\lambda} R/I_\lambda ,
+$$</p>
+<p>taken in the category of rings, with the inverse limit topology, and the <strong>canonical map</strong> $\iota_R : R \to \widehat{R}$ sends $x$ to the family of its classes. When the topology is the $I$-adic topology of a single ideal $I$, so that the fundamental system is $\{I^n\}_{n\geq 0}$, this reads $\widehat{R} = \varprojlim_n R/I^n$.</p>
+<p><strong>Proposition (the completion is a topological ring).</strong> $\widehat{R}$ is a ring under componentwise operations, the projections $\pi_\lambda : \widehat{R} \to R/I_\lambda$ are ring homomorphisms, the inverse limit topology is a linear topology with fundamental system the kernels of the $\pi_\lambda$, and $\widehat{R}$ is complete and Hausdorff for it. The map $\iota_R$ is a continuous ring homomorphism.</p>
+<p><strong>Proof.</strong> The inverse limit of rings, taken componentwise in $\prod_\lambda R/I_\lambda$, is the subring of the product on which the transition maps agree; the restrictions of the product operations make it a ring and the projections homomorphisms. The inverse limit topology is the weakest making all projections continuous; the kernels of the projections are ideals forming a fundamental system of neighbourhoods of zero, so the topology is linear. An inverse limit of complete Hausdorff rings is complete and Hausdorff, and the $R/I_\lambda$ are complete and Hausdorff because they are discrete, which is the standard statement for the inverse limit of a system of discrete rings. The map $\iota_R$ is a homomorphism because each component $R \to R/I_\lambda$ is one, and it is continuous because each component is.</p>
+<p><strong>Proposition (the kernel and the Hausdorff quotient).</strong> The kernel of $\iota_R$ is the closure of zero, $\ker \iota_R = \overline{\{0\}}$, a closed ideal; $\iota_R$ is injective exactly when $R$ is Hausdorff; and the completion of $R$ depends only on its Hausdorff quotient, $\widehat{R} \cong \widehat{R/\overline{\{0\}}}$.</p>
+<p><strong>Proof.</strong> An element $x$ lies in the kernel exactly when $x \in I_\lambda$ for every $\lambda$, which is exactly the condition $x \in \overline{\{0\}}$ for a linear topology. The closure of zero is an ideal because the ideals $I_\lambda$ are closed and their intersection is closed, and it is the smallest closed ideal. The two rings $R$ and $R/\overline{\{0\}}$ have the same quotients $R/I_\lambda$, because every $I_\lambda$ contains $\overline{\{0\}}$, so their inverse limits coincide.</p>
+<p>So the completion of a non-Hausdorff ring is the completion of its Hausdorff quotient; the operator is blind to the closure of zero, and it is on Hausdorff rings that it embeds.</p>
+<h2 id="functoriality">Functoriality</h2>
+<p><strong>Proposition (continuity gives uniform continuity).</strong> Let $f : R \to S$ be a continuous homomorphism of topological rings with linear topologies. Then $f$ is uniformly continuous for the additive uniformities, and $f(I_\lambda) \subseteq J_\mu$ for every $\mu$ and all sufficiently small $\lambda$.</p>
+<p><strong>Proof.</strong> A homomorphism of additive topological groups commutes with the translations, and a continuous homomorphism at the origin is continuous at every point; for the additive uniform structures, which are the left uniform structures of the additive groups, continuity at every point is uniform continuity. The condition $f(I_\lambda) \subseteq J_\mu$ is the continuity of $f$ at $0$ read on the fundamental systems.</p>
+<p><strong>Theorem (functoriality).</strong> Let $f : R \to S$ be a continuous homomorphism of topological rings with linear topologies. Then there is a unique continuous homomorphism $\widehat{f} : \widehat{R} \to \widehat{S}$ with $\widehat{f}\circ \iota_R = \iota_S \circ f$, given componentwise by the induced maps $\bar{f} : R/I_\lambda \to S/J_\mu$. The assignment $f \mapsto \widehat{f}$ is functorial: $\widehat{\mathrm{id}} = \mathrm{id}$ and $\widehat{g \circ f} = \widehat{g}\circ \widehat{f}$.</p>
+<p><strong>Proof.</strong> Uniform continuity gives, for each $\mu$, a $\lambda$ with $f(I_\lambda) \subseteq J_\mu$, hence a well-defined ring homomorphism $R/I_\lambda \to S/J_\mu$, and these are compatible with the transition maps by construction; passing to the limit gives $\widehat{f}$. Uniqueness holds because $\iota_R(R)$ is dense in $\widehat{R}$ and a continuous map is determined by its values on a dense set; density holds because in each discrete quotient $R/I_\lambda$ the image of $R$ is everything. The functorial identities are immediate from the componentwise definition.</p>
+<p><strong>Corollary (the completion is a functor).</strong> The completion is an endofunctor of the category of topological rings with linear topologies and continuous homomorphisms, and it takes values in the full subcategory $\mathcal{C}$ of complete Hausdorff rings.</p>
+<p><strong>Proof.</strong> The theorem gives the action on morphisms and the preceding proposition gives the object-level statement; the values are complete Hausdorff by the first proposition.</p>
+<h2 id="the-universal-property">The Universal Property</h2>
+<p><strong>Theorem (universal property).</strong> Let $R$ be a topological ring with a linear topology and let $T$ be a complete Hausdorff topological ring. For every continuous homomorphism $g : R \to T$ there is a unique continuous homomorphism $h : \widehat{R} \to T$ with $h \circ \iota_R = g$.</p>
+<p><strong>Proof.</strong> The map $g$ is uniformly continuous, so it carries the Cauchy filter of $R$ to a Cauchy filter of $T$, which converges in the complete ring $T$ to a limit $h(x)$ for each $x \in \widehat{R}$; the limit is independent of the approximating net and is continuous in $x$, and it is additive and multiplicative because those operations are continuous and compatible with limits. Uniqueness is again density of $\iota_R(R)$ in $\widehat{R}$.</p>
+<p><strong>Corollary (the completion is a reflection).</strong> The operator $R \mapsto \widehat{R}$, together with $\iota_R$, is the reflection of the category of topological rings with linear topologies into the full subcategory of complete Hausdorff rings: the functor $\widehat{}$ is left adjoint to the inclusion of $\mathcal{C}$, and the unit of the adjunction is $\iota$.</p>
+<p><strong>Proof.</strong> The universal property is the statement that the map $h \mapsto h\circ\iota_R$ from continuous homomorphisms $\widehat{R} \to T$ to continuous homomorphisms $R \to T$ is a bijection, which is the defining property of a reflection; the inclusion functor is the right adjoint.</p>
+<p><strong>Proposition (Hausdorffisation).</strong> Passing to the Hausdorff quotient and completing are the same in the sense that $\iota_R$ factors as the quotient map $R \to R/\overline{\{0\}}$ followed by the injective completion map of the Hausdorff ring, and the reflection kills exactly the closure of zero.</p>
+<p><strong>Proof.</strong> The quotient map has kernel $\overline{\{0\}}$, and the completion of the quotient is the completion of $R$ by the proposition above; the second map is injective because the quotient is Hausdorff.</p>
+<h2 id="idempotence">Idempotence</h2>
+<p><strong>Theorem (the operator is idempotent).</strong> For a topological ring $R$ with a linear topology the canonical map $\iota_{\widehat{R}} : \widehat{R} \to \widehat{\widehat{R}}$ is an isomorphism of topological rings; equivalently $\widehat{R}$ is complete.</p>
+<p><strong>Proof.</strong> The completion $\widehat{R}$ is complete by the first proposition, so $\iota_{\widehat{R}}$ is the canonical map of a complete ring into its completion and is a homeomorphism; alternatively, the quotients $\widehat{R}/\widehat{I}_\lambda$ equal those of $R$ by the exactness of the inverse limit of a system with surjective transition maps, and the two inverse limits coincide.</p>
+<p><strong>Corollary.</strong> The operator $R \mapsto \widehat{R}$ is idempotent: applied twice it gives the same ring, and the natural transformation $\iota : \mathrm{id} \to \widehat{}$ is an isomorphism precisely on the complete Hausdorff rings. So the operator is a projection of the category of topological rings onto its complete Hausdorff subcategory, which it fixes pointwise.</p>
+<p><strong>Proof.</strong> The theorem is the idempotence; the unit is an isomorphism at a complete Hausdorff ring $T$ because the universal property applied to $\mathrm{id}_T$ inverts $\iota_T$.</p>
+<h2 id="behaviour-on-ideals-and-quotients">Behaviour on Ideals and Quotients</h2>
+<p><strong>Proposition (ideals).</strong> Let $I$ be an ideal of $R$ with the subspace topology and the induced linear topology. Then $\widehat{I}$ is an ideal of $\widehat{R}$, the inclusion extends to a continuous injective map $\widehat{I} \to \widehat{R}$, and when $I$ is closed and $R$ is complete the map is a homeomorphism onto $I$. The completion of the quotient is the quotient of the completion,</p>
+<p>$$
+\widehat{R/I} \cong \widehat{R}/\widehat{I} ,
+$$</p>
+<p>for the topology on $R/I$ given by the images of the $I_\lambda$.</p>
+<p><strong>Proof.</strong> The completion of the inclusion is a continuous homomorphism by functoriality, injective because an element of $\widehat I$ has a vanishing image in each $R/I_\lambda$ only if it vanishes in $I/I_\lambda$ for all $\lambda$, which means it is zero; the image is an ideal because the multiplication of limits is the limit of the products. The quotient statement follows from the exactness of the inverse limit over a directed set for sequences of surjections: $\varprojlim (R/I_\lambda)/(I/I_\lambda) = \varprojlim R/I_\lambda$ modulo the closures of the images.</p>
+<p><strong>Proposition (exactness).</strong> The completion functor is left exact: it preserves kernels and finite products. It need not be right exact, and it is exact on the category of finitely generated modules over a Noetherian ring with the $I$-adic topology, by the Artin–Rees lemma.</p>
+<p><strong>Proof.</strong> The inverse limit over a directed set is left exact, being a limit; it is not right exact in general because the transition maps need not be surjective and the Mittag-Leffler condition can fail, which is the origin of the derived $\varprojlim^1$. For finitely generated modules over a Noetherian ring the topological refinement of the Artin–Rees lemma makes the transition maps essentially surjective on the relevant submodules, restoring exactness; this is the standard theorem of commutative algebra.</p>
+<p><strong>Remark (the field case).</strong> A field has no proper nonzero ideal, so the only linear topology on a field is the trivial one and its $I$-adic completion is the field itself; a nontrivial completion of a field therefore proceeds through an absolute value or a valuation and is the metric completion of <em>Absolute Values, Valuations and Completions</em>. The completion operator of this article is the one of a linear topology on a ring, and the two constructions agree on the subring $\mathcal{O}$ of a valued field, whose completion is $\varprojlim \mathcal{O}/\mathrm{M}^n$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($\mathbb{Z}$ and $\mathbb{Z}_p$).</strong> On $\mathbb{Z}$ with the $(p)$-adic topology, the completion is $\varprojlim_n \mathbb{Z}/p^n\mathbb{Z} = \mathbb{Z}_p$, the ring of $p$-adic integers, and $\iota$ is the diagonal embedding; $\mathbb{Z}$ is Hausdorff and its completion is compact, because it is an inverse limit of finite rings.</p>
+<p><strong>Example ($k[x]$ and $k[[x]]$).</strong> On $k[x]$ with the $(x)$-adic topology, the completion is $\varprojlim_n k[x]/(x^n) = k[[x]]$, the ring of formal power series, and $\iota$ is the map sending a polynomial to its series.</p>
+<p><strong>Example (a polynomial ring completed at the origin).</strong> On $\mathbb{R}[x]$ with the $(x)$-adic topology the completion is $\mathbb{R}[[x]]$; the ideal $(x)$ is closed, its completion is the ideal of series with zero constant term, and the completion of the quotient $\mathbb{R} = \mathbb{R}[x]/(x)$ is the quotient of the completion by that ideal, by the quotient formula above.</p>
+<p><strong>Example (a non-Hausdorff ring).</strong> Let $R$ be a ring and give $R \times R$ the linear topology whose only proper open ideal is $0 \times R$, with the powers of the zero ideal in the second factor; then $\overline{\{0\}} = 0\times R$, the Hausdorff quotient is $R$, and the completion is $\widehat{R}$ computed from the first factor. The completion is blind to the closed ideal that the topology confuses with zero, which is the content of the kernel proposition.</p>
+<h2 id="summary">Summary</h2>
+<p>The completion of a topological ring with a linear topology and fundamental ideals $\{I_\lambda\}$ is the inverse limit $\widehat{R} = \varprojlim_\lambda R/I_\lambda$, a complete Hausdorff topological ring for its inverse limit topology, with a canonical continuous homomorphism $\iota_R : R \to \widehat{R}$ whose kernel is the closure of zero; the completion is injective exactly on Hausdorff rings and depends only on the Hausdorff quotient. A continuous homomorphism is uniformly continuous, so it induces a unique continuous homomorphism of the completions, and this assignment is functorial; the completion is therefore an endofunctor of the category of topological rings with linear topologies taking values in the complete Hausdorff rings. It is characterised by the universal property that every continuous homomorphism from $R$ to a complete Hausdorff ring factors uniquely through $\iota_R$, so that the completion is the reflection of the category into its complete Hausdorff subcategory, left adjoint to the inclusion.</p>
+<p>The operator is idempotent, $\widehat{\widehat{R}} \cong \widehat{R}$, and the unit $\iota$ is an isomorphism exactly on the complete Hausdorff rings, so the completion is a projection of the category onto its complete Hausdorff part, which it fixes. It carries an ideal to an ideal of the completion and a quotient to the quotient of the completion, it is left exact and not generally right exact, being exact on finitely generated modules over a Noetherian ring by Artin–Rees. The standard instances are $\mathbb{Z}_p = \varprojlim \mathbb{Z}/p^n$ and $k[[x]] = \varprojlim k[x]/(x^n)$; a field has no nontrivial linear topology, and the nontrivial completion of a field is the valued completion, which is a different construction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\widehat{R}$</td>
+<td>Topological ring with a linear topology, and its completion</td>
+</tr>
+<tr>
+<td>$I_\lambda$</td>
+<td>Fundamental system of ideals of neighbourhoods of zero</td>
+</tr>
+<tr>
+<td>$\varprojlim_\lambda R/I_\lambda$</td>
+<td>The completion as an inverse limit</td>
+</tr>
+<tr>
+<td>$\iota_R$</td>
+<td>The canonical continuous homomorphism $R \to \widehat{R}$</td>
+</tr>
+<tr>
+<td>$\overline{\{0\}}$</td>
+<td>The closure of zero; the kernel of $\iota_R$</td>
+</tr>
+<tr>
+<td>$\widehat{f}$</td>
+<td>The continuous homomorphism of completions induced by a continuous $f$</td>
+</tr>
+<tr>
+<td>$\mathcal{C}$</td>
+<td>The category of complete Hausdorff topological rings</td>
+</tr>
+<tr>
+<td>$\widehat{R/I} \cong \widehat{R}/\widehat{I}$</td>
+<td>The completion of a quotient</td>
+</tr>
+<tr>
+<td>$\varprojlim^1$</td>
+<td>The obstruction to right exactness of the inverse limit</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p$, $k[[x]]$</td>
+<td>The standard completions of $\mathbb{Z}$ and $k[x]$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>General Topology, Chapters 1–4</em> (Springer, 1995), for the completion of a uniform space, the extension of uniformly continuous maps and the universal property.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra, Chapters 1–7</em> (Springer, 1998), for the $I$-adic completion, its functoriality, its exactness and the Artin–Rees lemma.</li>
+<li>Michael Atiyah and Ian Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for the $I$-adic topology, the Krull intersection theorem and the completion of a local ring.</li>
+<li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1989), for the exactness properties of completion and the behaviour of ideals under it.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the completion of topological rings for a linear topology and its universal property.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

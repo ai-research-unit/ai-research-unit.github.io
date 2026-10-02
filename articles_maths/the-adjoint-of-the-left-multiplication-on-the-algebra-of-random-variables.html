@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on the Algebra of Random Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-the-algebra-of-random-variables"><strong>The Adjoint of the Left Multiplication on the Algebra of Random Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left multiplication of the algebra of random variables is the operator $L_af=af$, acting on the Hilbert space $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form of the category,
+$$
+\langle f,g\rangle=\varphi(fg^*)=\mathbb E\bigl[f\bar g\bigr].
+$$
+Its <strong>adjoint</strong> is the cleanest statement in the category, and it is a point of contrast with the whole of the arithmetic theory: here
+$$
+L_a^*=L_{a^*} ,
+$$
+the adjoint of the left multiplication is the left multiplication by the conjugate, <strong>always</strong> and without exception. In the algebra of arithmetic functions under the coefficient form the adjoint of $L_a$ is the transposed multiplication $\Theta_a$, and $L_a^*=L_{a^*}$ only for the scalar multiples of the identity; here the two coincide for every $a$. The reason is the invariance of the form, which is the traciality of the state in the commutative algebra: the expectation satisfies $\varphi(fg)=\varphi(gf)$ for all $f,g$, and the identity $\varphi(afg^*)=\varphi(f(\bar ag)^*)$ is then a direct computation. This article proves the formula, identifies the adjoint with the left multiplication by the conjugate, derives the self-adjointness, the unitarity and the spectrum, and states the comparison between the involution on the elements and the adjoint on the operators: the representation $\pi(a)=L_a$ is a $*$-representation, and the agreement is proved, never assumed.</p>
+<p>The conventions are those of the category: the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $a^*=\bar a$, the state $\varphi(a)=\mathbb E[a]$ and the form $\langle f,g\rangle=\varphi(fg^*)$ of <em>The Involution on the Algebra of Random Variables</em>, earlier in this category. The adjoint of a left multiplication on a general Hilbert algebra, where the same formula holds under the Hermitian hypothesis, is <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em>, written, and the general adjoint on an algebra is <em>The Adjoint of the Left Multiplication on an Algebra</em>, written; the arithmetic counterpart, with the transpose in place of the multiplication, is <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, written. The signed left multiplication and its adjoint are <em>The Signed Left Multiplication on the Algebra of Random Variables</em>, earlier in this category, and <em>The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, later in this category; the refinement of the spectrum by a reversing symmetry is <em>Reversible Operators and Self-Adjointness</em>, later in this category; the operator-algebra involution is <em>The Involution on the Operator Algebra of a Process</em>, earlier in this category. No physics is invoked.</p>
+<p>Throughout, $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathcal F,\mathbb P)$ is the Hilbert space with the form $\langle f,g\rangle=\varphi(fg^*)$, and $L_a$ is the left multiplication on $\mathcal{H}$, $L_af=af$, a bounded operator with $\|L_a\|=\|a\|_\infty$. The right multiplication is $R_af=fa$, equal to $L_a$ because the algebra is commutative, and the involution on the elements is $a^*=\bar a$.</p>
+<h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
+<h3 id="definition-and-formula">Definition and formula</h3>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> $L_a^*$ is the bounded operator on $\mathcal{H}$ characterised by
+$$
+\langle L_af,g\rangle=\langle f,L_a^*g\rangle\qquad\text{for all }f,g\in\mathcal{H}.
+$$</p>
+<p><strong>Theorem (the adjoint formula).</strong> For every $a\in\mathcal{A}$,
+$$
+L_a^*=L_{a^*}=L_{\bar a},
+$$
+and the left multiplications therefore form a $*$-algebra of operators under the adjoint.</p>
+<p><em>Proof.</em> Compute
+$$
+\langle af,g\rangle=\varphi\bigl(afg^*\bigr)=\varphi\bigl(f\bar a g^*\bigr)=\varphi\bigl(f(\bar ag)^*\bigr)=\langle f,\bar ag\rangle ,
+$$
+using the commutativity of the product in the step $afg^*=f\bar ag^*$ and the identity $(a^*g)^*=g^*a$. Comparing with the definition of the adjoint gives $L_a^*=L_{\bar a}=L_{a^*}$.</p>
+<p><strong>Theorem (the tracial invariance).</strong> The agreement $L_a^*=L_{a^*}$ is equivalent to the invariance of the form under the multiplication,
+$$
+\varphi(afg^*)=\varphi(f\bar ag^*)\qquad\text{for all }f,g\in\mathcal{H},
+$$
+which holds because the state is tracial in the commutative algebra, $\varphi(uv)=\varphi(vu)$.</p>
+<p><em>Proof.</em> The identity of the two sides is the computation above read as the invariance; the traciality is the commutativity $\varphi(uv)=\mathbb E[uv]=\mathbb E[vu]=\varphi(vu)$, which holds for all bounded $u,v$. In the arithmetic case the augmentation is not tracial and the form is not translation-invariant, which is why the adjoint is the transpose there.</p>
+<h3 id="the-comparison-with-the-involution">The comparison with the involution</h3>
+<p><strong>Theorem (the $*$-representation).</strong> The map $\pi(a)=L_a$ is a $*$-representation of the algebra of random variables on $\mathcal{H}$:
+$$
+\pi(ab)=\pi(a)\pi(b),\qquad \pi(a^*)=\pi(a)^*,\qquad \pi(1)=I ,
+$$
+and on the elements it realises the involution exactly, $\pi(a^*)=L_{a^*}=L_a^*$.</p>
+<p><em>Proof.</em> The multiplicativity is $L_{ab}=L_aL_b$, the unit is the identity operator, and the involutivity is the formula above; the representation is faithful, since $L_a=0$ implies $a=0$, so the algebra of random variables is isomorphic to the algebra of the left multiplications as a $*$-algebra.</p>
+<p><strong>Corollary (the comparison with the arithmetic case).</strong> In the algebra of arithmetic functions under the coefficient form the adjoint of $L_a$ is the transposed multiplication $\Theta_a$, the identity $L_a^*=L_{a^*}$ holds only for the scalar multiples of the identity of the algebra, and the representation by the multiplications is not a $*$-representation. The difference is the product and the form: the pointwise product and the faithful tracial state here, the convolution and the non-tracial augmentation there.</p>
+<p><em>Proof.</em> The arithmetic statement is that of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, written; the comparison isolates the traciality as the cause of the agreement here.</p>
+<h2 id="self-adjointness-unitarity-and-spectrum">Self-Adjointness, Unitarity and Spectrum</h2>
+<p><strong>Theorem (the conditions).</strong> For $a\in\mathcal{A}$,
+$$
+L_a\ \text{is self-adjoint}\iff a=a^*\iff a\text{ is real},\qquad L_a\ \text{is an isometry}\iff L_a\ \text{is unitary}\iff|a|=1 ,
+$$
+and every $L_a$ is normal, $L_aL_a^*=L_a^*L_a$, because the multiplications commute and the adjoint is the multiplication by the conjugate.</p>
+<p><em>Proof.</em> Self-adjointness is $L_a=L_{a^*}$, which by the injectivity of $\pi$ is $a=a^*$; the unitary condition is $L_a^*L_a=L_{a^*}L_a=L_{|a|^2}=I$, which is $|a|=1$, and a multiplication by a unimodular function is invertible with the inverse $L_{\bar a}$, so the isometries are exactly the unitaries; the normality is the commutation $L_{|a|^2}=L_{a^*}L_a=L_aL_{a^*}$.</p>
+<p><strong>Theorem (the spectrum).</strong> The spectrum of $L_a$ is the essential range of $a$,
+$$
+\operatorname{spec}(L_a)=\operatorname{ess\,range}(a)=\{\lambda:\mathbb P(|a-\lambda|<\varepsilon)>0\text{ for every }\varepsilon>0\},
+$$
+and the spectral measure of $L_a$ for a real $a$ is the distribution of the random variable $a$.</p>
+<p><em>Proof.</em> The multiplication operator $L_a$ is the multiplication by the function $a$ on $L^2$, and the spectrum of a multiplication operator is the essential range of the multiplier; the spectral measure is the projection onto the sets where $a$ takes its values, whose scalar measure is the law of $a$ by the spectral theorem of <em>The Involution on the Algebra of Random Variables</em>, earlier in this category.</p>
+<p><strong>Corollary (the functional calculus).</strong> For every bounded Borel $F$ on the spectrum,
+$$
+F(L_a)=L_{F(a)},
+$$
+the functional calculus of the multiplication, and for a real $a$ the operator $L_a$ is self-adjoint with the spectral decomposition $L_a=\int\lambda\,dE_{\mu_a}(\lambda)$, the scalar measure being the law of $a$.</p>
+<p><em>Proof.</em> The functional calculus of a multiplication operator sends $F$ to the multiplication by $F\circ a$; the self-adjointness and the spectral decomposition are the theorem applied to a real $a$.</p>
+<h2 id="the-two-sides">The Two Sides</h2>
+<p><strong>Theorem (the right multiplication).</strong> Because the algebra is commutative, $R_a=L_a$; the adjoint of the right multiplication is the right multiplication by the conjugate, $R_a^*=R_{a^*}=L_{a^*}$, and the two-sided multiplication and its adjoint coincide with the one-sided ones. The left ideal $\mathcal{A}a$ is a right ideal, and the adjoint operation preserves the ideals.</p>
+<p><em>Proof.</em> The commutation $R_a=L_a$ is the commutativity; the adjoint is the formula above, and an ideal is preserved because $L_a^*=L_{a^*}$ maps into the same principal ideal.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the multiplications on the two-atom algebra).</strong> For $\mathcal{A}\cong\mathbb{C}^2$ with the form $\langle f,g\rangle=\frac12(f_-\bar g_-+f_+\bar g_+)$ the left multiplication by $a=(a_-,a_+)$ is the diagonal operator with the entries $a_\pm$; its adjoint is the diagonal operator with the entries $\bar a_\pm$, the multiplication by $a^*$, and the operator is self-adjoint exactly when $a$ is real, unitary exactly when $|a_\pm|=1$.</p>
+<p><strong>Example (the multiplication on the circle).</strong> For the circle with the Lebesgue measure and $a(\theta)=e^{2\pi i\theta}$ the multiplication $L_a$ is unitary, $L_a^*=L_{\bar a}=L_a^{-1}$, and its spectrum is the unit circle; for $a(\theta)=\cos(2\pi\theta)$ the operator is self-adjoint with the spectrum $[-1,1]$ and the arcsine law as its spectral measure, the law of the random variable.</p>
+<p><strong>Example (a non-invertible multiplication).</strong> For $a$ vanishing on a set of positive measure the multiplication $L_a$ is injective but not invertible, its image is the proper ideal $a\mathcal{H}$, and it is neither an isometry nor unitary; the adjoint $L_{a^*}$ vanishes on the same set, and the range and the kernel are related by the orthogonality of the multiplication.</p>
+<p><strong>Example (the comparison with the transpose).</strong> In the algebra of arithmetic functions with $\varphi(f)=f(1)$ and the coefficient form, the left multiplication by $a$ has the adjoint $\Theta_a$ with $(\Theta_ag)(k)=\sum_{m\ge1}\overline{a(m)}g(mk)$; for $a\ne\gamma\varepsilon$ the operator $\Theta_a$ is not a left multiplication, so $L_a^*\ne L_{a^*}$, and the representation is not a $*$-representation. The example shows that the agreement here is a property of the form and not of the multiplication alone.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The adjoint of the left multiplication degenerates in four configurations. First, the formula $L_a^*=L_{a^*}$ relies on the traciality of the state, and for a non-tracial state on a non-commutative algebra the adjoint of the left multiplication is the right multiplication by the conjugate up to the modular correction, not the left multiplication; the commutative algebra is the case where the modular correction is trivial. Second, the spectrum of $L_a$ is the essential range, and for a variable $a$ that is zero on a set of positive measure the spectrum contains the value $0$ and the operator is not invertible, with the kernel $L_a$ equal to the functions supported on the zero set. Third, the equality of the adjoint with the left multiplication by the conjugate holds for the form of the category; a different form on the same algebra, for instance the coefficient form of the arithmetic comparison, gives a different adjoint. Fourth, the functional calculus $F(L_a)=L_{F(a)}$ holds for the bounded Borel functions and fails for the unbounded ones without the domain conditions, as in the general spectral theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the left multiplication of the algebra of random variables with respect to the form $\langle f,g\rangle=\varphi(fg^*)$ is the left multiplication by the conjugate,
+$$
+L_a^*=L_{a^*},
+$$
+for every $a$, because the state is tracial in the commutative algebra and the form is invariant under the multiplication; the map $\pi(a)=L_a$ is therefore a faithful $*$-representation, $\pi(a^*)=\pi(a)^*$, and the involution on the elements and the adjoint on the operators coincide on the multiplications. The operator $L_a$ is self-adjoint exactly when $a$ is real, unitary exactly when $|a|=1$, normal for every $a$, and its spectrum is the essential range of the multiplier with the functional calculus $F(L_a)=L_{F(a)}$ and the law of a real $a$ as its spectral measure. In the arithmetic analogue under the coefficient form the adjoint is the transposed multiplication and the two structures differ, the commutativity and the traciality being exactly what is lost. The signed left multiplication and its adjoint are <em>The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, later in this category, and the refinement of the spectrum by a reversing symmetry is <em>Reversible Operators and Self-Adjointness</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_af=af$</td>
+<td>the left multiplication</td>
+</tr>
+<tr>
+<td>$\langle f,g\rangle=\varphi(fg^*)$</td>
+<td>the form of the category</td>
+</tr>
+<tr>
+<td>$L_a^*=L_{a^*}=L_{\bar a}$</td>
+<td>the adjoint, a left multiplication</td>
+</tr>
+<tr>
+<td>$\pi(a)=L_a$</td>
+<td>the $*$-representation by the multiplications</td>
+</tr>
+<tr>
+<td>$\varphi(uv)=\varphi(vu)$</td>
+<td>the traciality of the state</td>
+</tr>
+<tr>
+<td>$L_a$ self-adjoint $\iff a=a^*$</td>
+<td>self-adjointness</td>
+</tr>
+<tr>
+<td>$L_a$ unitary $\iff|a|=1$</td>
+<td>unitarity and isometry</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}(L_a)=\operatorname{ess\,range}(a)$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$F(L_a)=L_{F(a)}$</td>
+<td>the functional calculus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, Vol. I (Academic Press, 1983), for the multiplications, the $*$-representations and the spectral theorem.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd edition, 1990), for the multiplication operators and their spectra.</li>
+<li>Sterling K. Berberian, <em>Lectures in Functional Analysis and Operator Theory</em> (Springer, 1974), for the multiplication operators, the essential range and the functional calculus.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the tracial states, the modular theory and the Hilbert algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-clifford-algebra"><strong>The Signed Adjoint Sandwich on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich of a Clifford algebra is the operator $\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$ of <em>The Signed Sandwich on a Clifford Algebra</em>, the two-sided multiplication twisted by the grade involution; its geometric rôle is to realise the <strong>reflections</strong> of the quadratic space, $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ for a vector $u$ with $q(u)\ne0$. The Clifford algebra carries the <strong>standard form</strong> $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ of <em>The Twisted Adjoint on a Clifford Algebra</em>, and the article computes the adjoint of the signed sandwich for it,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)} ,
+$$</p>
+<p>the signed sandwich with the two parameters conjugated and their order kept — the reversal is already inside the conjugation, $\widehat{ab}=\hat b\hat a$. From the adjoint and the composition law comes the <strong>isometry criterion</strong>, that a signed sandwich is an isometry exactly when its two parameters are inverse units, so that the isometric signed sandwiches are precisely the <strong>reflections</strong>; and from an element Hermitian conjugation $^{\dagger}$ comes the <strong>unitarity condition</strong> $u^{\dagger}u=uu^{\dagger}=1$, which makes the signed sandwiches $\Sigma^{\alpha}_{u,u^{\dagger}}$ isometric.</p>
+<p><strong>The boundaries.</strong> The signed sandwich, its composition law and its reading on the quadratic space are <em>The Signed Sandwich on a Clifford Algebra</em>, <em>Two-Sided Operators with the Signed Product</em> and <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>; the standard form, the Clifford conjugation $\hat x=\alpha(\tilde x)$ and the adjoints of the one-sided factors are <em>The Twisted Adjoint on a Clifford Algebra</em>; the Hermitian conjugation of the elements is <em>Hermitian Clifford Structures</em> and <em>Two-Sided Operators on a Clifford Algebra</em>. The adjoint of a reflection and of the signed left multiplication are <em>The Signed Adjoint of the Reflection on a Clifford Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on a Clifford Algebra</em>, the next two entries of the group, and are not anticipated here. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
+<p><strong>A convention.</strong> The operator adjoint of the category is written ${}^{*}$, following <em>The Twisted Adjoint on a Clifford Algebra</em>; the element Hermitian conjugation is written ${}^{\dagger}$, following <em>Two-Sided Operators on a Clifford Algebra</em> and <em>Hermitian Clifford Structures</em>. The two marks are kept apart throughout.</p>
+<h2 id="the-standard-form-and-the-adjoints">The Standard Form and the Adjoints</h2>
+<p><strong>Definition.</strong> The <strong>standard form</strong> is $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ with $\hat x=\alpha(\tilde x)$ the Clifford conjugation; it is non-degenerate and bilinear, and the <strong>adjoint</strong> of an operator $A$ is the operator $A^{*}$ with $\langle Ax,y\rangle=\langle x,A^{*}y\rangle$.</p>
+<p><strong>Proposition (quoted).</strong> The adjoints of the one-sided factors and of the grade involution for the standard form are</p>
+<p>$$
+L_a^{*}=L_{\hat a} , \qquad R_b^{*}=R_{\hat b} , \qquad \alpha^{*}=\alpha ,
+$$</p>
+<p>so that the ordinary sandwich satisfies $T_{a,b}^{*}=T_{\hat a,\hat b}$ and the left multiplication by a vector is skew-adjoint, $L_u^{*}=-L_u$.</p>
+<p><strong>Proof.</strong> The computation is <em>The Twisted Adjoint on a Clifford Algebra</em>: $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, the right case being identical, and the self-adjointness of $\alpha$ following from $\widehat{\alpha x}=\tilde x$ and the invariance of the scalar part under $\alpha$. The vector value is $\hat u=\alpha(\tilde u)=-u$.</p>
+<p><strong>Theorem.</strong> The adjoint of the signed sandwich is the signed sandwich by the conjugated parameters,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\,\alpha(\hat b)}
+=R_{\hat b}\,\alpha\,L_{\hat a} .
+$$</p>
+<p><strong>Proof.</strong> The adjoint of a composite is the composite of the adjoints in the reverse order, so $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=(L_a\alpha R_b)^{*}=R_b^{*}\alpha^{*}L_a^{*}=R_{\hat b}\alpha L_{\hat a}$. Now $R_{\hat b}\alpha=\alpha R_{\alpha(\hat b)}$ and $L_{\alpha(\hat a)}\alpha=\alpha L_{\hat a}$, so the composite is $\alpha R_{\alpha(\hat b)}L_{\hat a}=L_{\alpha(\hat a)}\alpha R_{\alpha(\hat b)}$, which is the signed sandwich by $\alpha(\hat a)$ and $\alpha(\hat b)$ since the left and right multiplications commute.</p>
+<p><strong>Corollary.</strong> The adjoint is an involution of the signed family, $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{**}=\Sigma^{\alpha}_{a,b}$, and it is the conjugate-linear correspondence of parameters $a\mapsto\alpha(\hat a)$; for a central parameter it reduces to the Clifford conjugation $\hat a=a^{-1}$ for the orthogonal elements of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>.</p>
+<h2 id="isometry-and-the-reflections">Isometry and the Reflections</h2>
+<p><strong>Definition.</strong> An operator $S$ is an <strong>isometry</strong> of the standard form when $S^{*}S=\operatorname{id}$; the isometries form a group.</p>
+<p><strong>Proposition (composition law, quoted).</strong> The composites of the two-sided family are</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\,\alpha(d)b} , \qquad
+\Sigma^{\alpha}_{a,b}T_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} , \qquad
+T_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{ac,\,db} ,
+$$</p>
+<p>so the composite of two signed sandwiches is an <strong>ordinary</strong> sandwich, the two grade involutions cancelling.</p>
+<p><strong>Proof.</strong> The computation is <em>Two-Sided Operators with the Signed Product</em>: $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}(x)=a\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)b=a\alpha(c)\,x\,\alpha(d)b$, the middle twist being the identity.</p>
+<p><strong>Theorem (the isometry criterion).</strong> The signed sandwich $\Sigma^{\alpha}_{a,b}$ is an isometry of the standard form if and only if the products $ba$ and $ab$ are central; in the central-simple case this is equivalent to $b=a^{-1}$, and then the isometric signed sandwiches are exactly the <strong>reflections</strong> $\Sigma^{\alpha}_{a,a^{-1}}$.</p>
+<p><strong>Proof.</strong> By the composition law and the adjoint formula,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}
+=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}\Sigma^{\alpha}_{a,b}
+=\Sigma_{\alpha(b)\alpha(a),\,\alpha(b)\alpha(a)}=\Sigma_{c,c} , \qquad c=\alpha(ba) ,
+$$</p>
+<p>by the composition law, because the two twists cancel; and $\Sigma_{c,c}=\operatorname{id}$ exactly when $c$ is a central unit, by the injectivity of the two-sided correspondence up to the centre recorded in <em>The Sandwich on a Clifford Algebra</em>. Hence $ba$ central; the reverse order gives $ab$ central; in the central-simple case both are the conditions $ba=ab=1$, that is $b=a^{-1}$.</p>
+<p><strong>Corollary.</strong> The graded involution $\alpha=\Sigma^{\alpha}_{1,1}$ is an isometry; every reflection $\Sigma^{\alpha}_{u,u^{-1}}=\rho_u$ with $q(u)\ne0$ is an isometry by <em>The Signed Sandwich on a Clifford Algebra</em>; and the map $a\mapsto\Sigma^{\alpha}_{a,a^{-1}}$ is the reflection correspondence whose injectivity up to the centre is quoted.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Definition.</strong> Let ${}^{\dagger}$ be the element Hermitian conjugation of <em>Hermitian Clifford Structures</em>, an anti-involution with $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$ and $(x^{\dagger})^{\dagger}=x$, compatible with the grade involution in the sense $\alpha(x^{\dagger})=\alpha(x)^{\dagger}$. The <strong>unitary elements</strong> are those with</p>
+<p>$$
+u^{\dagger}u=uu^{\dagger}=1 ,
+$$</p>
+<p>and the condition is the <strong>unitarity condition</strong>; the unitary elements form a group $U(\mathrm{Cl},{}^{\dagger})$.</p>
+<p><strong>Proposition.</strong> If $u$ is unitary, the signed sandwich $\Sigma^{\alpha}_{u,u^{\dagger}}$ is an isometry of the standard form, and its adjoint is $\Sigma^{\alpha}_{\alpha(u),\alpha(u^{\dagger})}$; the assignment $u\mapsto\Sigma^{\alpha}_{u,u^{\dagger}}$ carries the unitary group into the isometries of the standard form, with kernel the central unitary elements.</p>
+<p><strong>Proof.</strong> Put $b=u^{\dagger}$. Since $u^{\dagger}=u^{-1}$ by the unitarity condition, the products $ba=u^{\dagger}u=1$ and $ab=uu^{\dagger}=1$ are central and actually trivial, so the isometry criterion applies. The adjoint is the formula of the theorem; the kernel statement is the injectivity up to the centre.</p>
+<p><strong>Remark (the two conditions).</strong> The unitarity condition is a condition on the <strong>elements</strong> and belongs to the involutive layer; the isometry criterion is a condition on the <strong>parameters</strong> of the sandwich, that the two be inverse to within the centre. The two meet in the statement that a unitary element gives an isometric signed sandwich, and they must not be identified: a signed sandwich may be isometric without its parameters being unitary elements for $^{\dagger}$, and a unitary element may give a signed sandwich whose adjoint is not itself.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $\mathrm{Cl}\cong\mathbb{H}$ with $e_1^2=e_2^2=-1$, the Clifford conjugation is the quaternionic conjugation, $\hat x=\bar x$, and the signed sandwich $\Sigma^{\alpha}_{a,b}$ is the map $x\mapsto a\alpha(x)b$ with $\alpha$ the identity on the scalars and the negation on the pure part. The unitary elements for the quaternionic conjugation satisfy $u\bar u=1$, the unit sphere, and the signed sandwiches $\Sigma^{\alpha}_{u,\bar u}$ are isometric; the reflections are the $\Sigma^{\alpha}_{u,u^{-1}}$ with $u$ a vector of norm one.</p>
+<h3 id="the-negative-definite-plane">The Negative-Definite Plane</h3>
+<p>For the negative-definite plane with $e_1^2=e_2^2=-1$, a vector $u$ has $q(u)<0$ and $\hat u=-u$, so $\Sigma^{\alpha}_{u,-u^{-1}}=\rho_u$ is a reflection and an isometry; the criterion $b=a^{-1}$ is verified by the computation $\alpha(u)\alpha(u^{-1})=\alpha(1)=1$ of the proof, and the isometries so obtained generate the rotation group of the plane.</p>
+<h3 id="the-split-plane">The Split Plane</h3>
+<p>For the split plane with $e_1^2=1$, $e_2^2=-1$, a null vector $u=e_1+e_2\ne0$ has $q(u)=0$ and is not invertible, so the signed sandwich $\Sigma^{\alpha}_{u,u^{-1}}$ does not exist; the operator $\Sigma^{\alpha}_{u,u}$ is defined, and the next entry of the group, <em>The Signed Adjoint of the Reflection on a Clifford Algebra</em>, treats the failure.</p>
+<h2 id="summary">Summary</h2>
+<p>For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the <strong>adjoint of the signed sandwich</strong> is the signed sandwich by the conjugated parameters,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)} ,
+$$</p>
+<p>an involution of the signed family. Combined with the composition law $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\alpha(d)b}$, whose composite is an ordinary sandwich, the adjoint gives the <strong>isometry criterion</strong>: $\Sigma^{\alpha}_{a,b}$ is an isometry exactly when $ba$ and $ab$ are central, that is $b=a^{-1}$ in the central-simple case, so the isometric signed sandwiches are precisely the <strong>reflections</strong> $\Sigma^{\alpha}_{a,a^{-1}}$. With an <strong>element Hermitian conjugation</strong> $^{\dagger}$ the <strong>unitarity condition</strong> $u^{\dagger}u=uu^{\dagger}=1$ makes $\Sigma^{\alpha}_{u,u^{\dagger}}$ an isometry, the two conditions living on the elements and on the parameters respectively. The adjoints of the reflection and of the signed left multiplication are the next two entries of the group; the form is <em>The Twisted Adjoint on a Clifford Algebra</em>, and the sandwich is <em>The Signed Sandwich on a Clifford Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle x,y\rangle=\operatorname{Sc}(\hat xy)$</td>
+<td>Standard form; $\hat x=\alpha(\tilde x)$</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$</td>
+<td>Signed sandwich</td>
+</tr>
+<tr>
+<td>$L_a^{*}=L_{\hat a}$, $R_b^{*}=R_{\hat b}$, $\alpha^{*}=\alpha$</td>
+<td>Adjoints of the one-sided factors</td>
+</tr>
+<tr>
+<td>$\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$</td>
+<td>Adjoint of the signed sandwich</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma_{a\alpha(c),\alpha(d)b}$</td>
+<td>Composition law</td>
+</tr>
+<tr>
+<td>$ba$, $ab$ central (or $b=a^{-1}$)</td>
+<td>Isometry criterion</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,a^{-1}}$</td>
+<td>The reflection-shaped isometries</td>
+</tr>
+<tr>
+<td>$^{\dagger}$</td>
+<td>Element Hermitian conjugation; $u^{\dagger}u=uu^{\dagger}=1$ the unitarity condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the signed conjugations, the reflections and the isometries of the standard form.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the Clifford conjugation, the standard form and the explicit low-dimensional adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for algebras with involution, the unitary group and the unitarity condition.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the reflection operators and their isometry property.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

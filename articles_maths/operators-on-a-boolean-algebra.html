@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on a Boolean Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-a-boolean-algebra"><strong>Operators on a Boolean Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A topological space carries a Boolean algebra, namely its power set with the operations of union, intersection and complement, and its topology is a pair of subfamilies of that algebra, the open sets and the closed sets. The <strong>interior</strong> and the <strong>closure</strong> are the two operators on this algebra that the topology singles out, and their relation is an adjunction: the closure is the left adjoint of the interior, and the interior is the right adjoint of the closure, once the open sets and the closed sets are read as two lattices with the complement identifying them. This article states and proves that adjunction, identifies exactly when it extends from the two sublattices to the whole Boolean algebra, and places the two operators among the Boolean homomorphisms of the algebra, where the preimage operators of continuous maps live.</p>
+<p>The article is the structural companion of <em>Operators on a Fixed Set</em>: the closure and the interior were there read as operators on the power set, with their axioms and the monoid they generate, and they are read here as a pair of adjoint maps between the lattice of open sets and the lattice of closed sets, with the Boolean algebra in the background. The preimage operator of a continuous map, which is the other natural algebra homomorphism of the power set, was fixed in <em>Continuous Maps as Operators</em> and is used to identify which Boolean homomorphisms arise from continuous maps.</p>
+<p>The space is that of <em>Topological Spaces</em>. The algebra of clopen sets, which is a Boolean algebra in its own right and the object of Stone duality, is named and not developed, since the corpus treats no duality theory of that kind at this point. Nothing analytic and nothing geometric is used: no distance is chosen, and no measure, integral, length or angle occurs.</p>
+<h2 id="the-boolean-algebra-of-a-space">The Boolean Algebra of a Space</h2>
+<h3 id="the-power-set-as-a-boolean-algebra">The Power Set as a Boolean Algebra</h3>
+<p><strong>Definition.</strong> The <strong>Boolean algebra of a space</strong> $X$ is its power set $\mathcal{P}(X)$ with the operations</p>
+<p>$$
+A \cup B, \qquad A \cap B, \qquad A^{c}, \qquad \emptyset, \qquad X ,
+$$</p>
+<p>the partial order of inclusion, and the derived operations $A \setminus B = A \cap B^{c}$ and the symmetric difference $A \triangle B = (A \setminus B) \cup (B \setminus A)$.</p>
+<p>Every subset is an element of the algebra, and the operations satisfy the Boolean laws: distributivity of each of $\cup$ and $\cap$ over the other, the identities $A \cap A^{c} = \emptyset$ and $A \cup A^{c} = X$, and the De Morgan laws $(A \cap B)^{c} = A^{c} \cup B^{c}$ and $(A \cup B)^{c} = A^{c} \cap B^{c}$. The algebra is <strong>complete</strong>: every family of elements has a least upper bound, the union, and a greatest lower bound, the intersection.</p>
+<p>The clopen subsets of $X$ form a subalgebra under the same operations, written $\mathcal{C}(X)$. It is the Boolean algebra that carries the topological information of a totally disconnected compact space, and it is the carrier of Stone duality; here it serves only as an example of a subalgebra.</p>
+<h3 id="lattices-of-open-and-closed-sets">Lattices of Open and Closed Sets</h3>
+<p><strong>Definition.</strong> The <strong>lattice of open sets</strong> $\mathcal{O}(X)$ is the family of open subsets with the order of inclusion; the <strong>lattice of closed sets</strong> $\mathcal{F}(X)$ is the family of closed subsets. Both are complete lattices: the join of a family of open sets is its union, the meet is the interior of the intersection; for closed sets the join is the closure of the union and the meet is the intersection.</p>
+<p>The complement is a bijection and reverses the order, so it is an <strong>anti-isomorphism</strong> of the two lattices,</p>
+<p>$$
+\complement : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad U \mapsto U^{c},
+$$</p>
+<p>and its inverse is its own composite with itself. The two lattices are the same poset read in opposite directions, and the open sets determine the closed sets and conversely.</p>
+<p><strong>Definition.</strong> The <strong>closure operator</strong> is the map</p>
+<p>$$
+C : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad C(U) = \overline{U},
+$$</p>
+<p>sending an open set to its closure; the <strong>interior operator</strong> is the map</p>
+<p>$$
+I : \mathcal{F}(X) \longrightarrow \mathcal{O}(X), \qquad I(F) = \operatorname{int} F ,
+$$</p>
+<p>sending a closed set to its interior. Both are monotone, and both are order-preserving.</p>
+<h2 id="the-closure-and-the-interior-as-adjoints">The Closure and the Interior as Adjoints</h2>
+<h3 id="the-adjoint-pair">The Adjoint Pair</h3>
+<p><strong>Definition.</strong> Let $P$ and $Q$ be posets and $g : P \to Q$, $h : Q \to P$ monotone maps. Then $g$ is <strong>left adjoint</strong> to $h$, written $g \dashv h$, when</p>
+<p>$$
+g(p) \leq q \iff p \leq h(q) \qquad (p \in P,\ q \in Q).
+$$</p>
+<p>The relation is a <strong>Galois connection</strong>: $g$ is the lower and $h$ the upper adjoint, and each determines the other.</p>
+<p><strong>Theorem.</strong> The closure is left adjoint to the interior between the lattice of open sets and the lattice of closed sets:</p>
+<p>$$
+C \dashv I, \qquad \overline{U} \subseteq F \iff U \subseteq \operatorname{int} F \qquad (U \in \mathcal{O}(X),\ F \in \mathcal{F}(X)).
+$$</p>
+<p><strong>Proof.</strong> Suppose $\overline{U} \subseteq F$. Then $U \subseteq \overline{U} \subseteq F$, and since $U$ is open and $F$ is closed with $U \subseteq F$, the open set $U$ is contained in the largest open set inside $F$, which is $\operatorname{int} F$. Conversely suppose $U \subseteq \operatorname{int} F$. Then $\overline{U} \subseteq \overline{\operatorname{int} F}$, and since $\operatorname{int} F \subseteq F$ with $F$ closed, the closure of $\operatorname{int} F$ is contained in $F$. Hence $\overline{U} \subseteq F$.</p>
+<p>The adjunction is the exact sense in which the interior is the best open approximation from below and the closure the best closed approximation from above: the theorem says that the closure of $U$ is the smallest closed set containing $U$ and the interior of $F$ the largest open set contained in $F$, which is the content of <em>Operators on a Fixed Set</em>, read as a Galois connection between the two lattices.</p>
+<h3 id="the-two-readings-of-the-adjunction">The Two Readings of the Adjunction</h3>
+<p><strong>Corollary.</strong> The adjunction has the two equivalent forms</p>
+<p>$$
+C(U) = \bigcap \{\, F \in \mathcal{F}(X) : U \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, U \in \mathcal{O}(X) : C(U) \subseteq F \,\},
+$$</p>
+<p>which express each operator through the other.</p>
+<p><strong>Proof.</strong> In a Galois connection $g \dashv h$, the lower adjoint is determined by $g(p) = \bigwedge\{q : p \leq h(q)\}$ and the upper adjoint by $h(q) = \bigvee\{p : g(p) \leq q\}$; the stated formulas are these.</p>
+<p><strong>Remark.</strong> The adjunction is not symmetric: the closure is the lower adjoint and the interior the upper adjoint, and reversing the roles is not possible without replacing one of the two lattices by its opposite. Read on the opposite lattice, the interior becomes a left adjoint and the closure a right adjoint, and this is the same statement seen through the complement anti-isomorphism of the two lattices.</p>
+<h2 id="when-the-adjunction-is-global">When the Adjunction is Global</h2>
+<h3 id="the-condition">The Condition</h3>
+<p>The adjunction of the theorem is stated for $U$ open and $F$ closed. The natural question is when it holds for all pairs of subsets, that is, when</p>
+<p>$$
+\overline{A} \subseteq B \iff A \subseteq \operatorname{int} B \qquad (A, B \subseteq X)
+$$</p>
+<p>for arbitrary $A$ and $B$. The answer is that this is a strong condition on the topology.</p>
+<p><strong>Theorem.</strong> The global adjunction holds for every pair of subsets of $X$ if and only if every open subset of $X$ is closed.</p>
+<p><strong>Proof.</strong> Suppose every open set is closed. Then every closed set is open as well, since the complement of a closed set is open and hence closed. If $\overline{A} \subseteq B$ then $A \subseteq \overline{A} \subseteq B$, and $\overline{A}$ is closed, hence open and contained in $B$, so $\overline{A} \subseteq \operatorname{int} B$ and $A \subseteq \operatorname{int} B$. Conversely if $A \subseteq \operatorname{int} B$ then $\overline{A} \subseteq \overline{\operatorname{int} B} = \operatorname{int} B \subseteq B$, since $\operatorname{int} B$ is open and hence closed. For the converse direction, suppose the global adjunction holds and let $U$ be open. Take $A = B = U$: the right side $U \subseteq \operatorname{int} U = U$ is true, so the left side $\overline{U} \subseteq U$ is true, whence $\overline{U} = U$ and $U$ is closed.</p>
+<p><strong>Corollary.</strong> The global adjunction holds in the discrete spaces, in the indiscrete spaces, in every disjoint union of indiscrete spaces, and more generally whenever every open set is closed; and it fails in every space in which some open set is not closed, in particular in $\mathbb{R}$ and in every Hausdorff space that is not discrete.</p>
+<p><strong>Proof.</strong> In a discrete space every set is clopen, and in an indiscrete space the only open sets are $\emptyset$ and $X$, both closed; a disjoint union of spaces with the property has the property, since its open sets are unions of open sets of the summands. In a space with an open set $U$ that is not closed the pair $A = B = U$ refutes the global adjunction by the last part of the proof. A Hausdorff space that is not discrete has a point $x$ that is not isolated; then $X \setminus \{x\}$ is open, and it is not closed, because its complement $\{x\}$ is not open.</p>
+<h3 id="the-failing-example-and-the-exact-boundary">The Failing Example, and the Exact Boundary</h3>
+<p><strong>Example.</strong> The failure is witnessed by $A = \{0\}$ and $B = [0,1]$ in $\mathbb{R}$: the closure of $A$ is $\{0\}$, which is contained in $B$, while $A$ is not contained in the interior of $B$, which is $(0,1)$. The open–closed adjunction of the theorem avoids this pair because $B = [0,1]$ is closed but $A = \{0\}$ is not open, and the theorem holds precisely for the pairs that the two lattices supply.</p>
+<p><strong>Remark.</strong> The failure of the global adjunction is the failure of the closure to preserve the joins of the whole power set. A left adjoint between complete lattices preserves all joins, and the closure preserves finite unions, which is (K4) of <em>Operators on a Fixed Set</em>, but not arbitrary ones: in $\mathbb{R}$ the union of the singletons $\{q\}$ with $q \in \mathbb{Q}$ has closure $\mathbb{R}$, while the union of their closures is $\mathbb{Q}$, and the two differ. The adjunction therefore lives on the open lattice, where the joins are unions of open sets and the closure does preserve them, since the closure of a union of open sets equals the closure of the union of their closures. Dually the interior preserves the finite intersections, which is (I4), but not arbitrary ones, and that is why the adjunction is not global either.</p>
+<h2 id="boolean-homomorphisms-and-the-operators-of-a-map">Boolean Homomorphisms and the Operators of a Map</h2>
+<p><strong>Definition.</strong> A map $\varphi : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a <strong>Boolean homomorphism</strong> when it preserves the Boolean operations: $\varphi(B \cup C) = \varphi(B) \cup \varphi(C)$, $\varphi(B \cap C) = \varphi(B) \cap \varphi(C)$, $\varphi(B^{c}) = \varphi(B)^{c}$, $\varphi(\emptyset) = \emptyset$ and $\varphi(Y) = X$.</p>
+<p><strong>Theorem.</strong> A map $\varphi : \mathcal{P}(Y) \to \mathcal{P}(X)$ is a Boolean homomorphism preserving arbitrary unions if and only if it is the preimage operator $\varphi = f^{-1}$ of a unique map $f : X \to Y$.</p>
+<p><strong>Proof.</strong> The preimage operator is a Boolean homomorphism preserving arbitrary unions by <em>Continuous Maps as Operators</em>. Conversely, let $\varphi$ preserve the Boolean operations and arbitrary unions. For each $y \in Y$ put $A_{y} = \varphi(\{y\})$; the sets $A_{y}$ are disjoint and their union is $X$, because the singletons are disjoint with union $Y$ and the operations are preserved. Define $f(x) = $ the unique $y$ with $x \in A_{y}$. Then for $B \subseteq Y$, $\varphi(B) = \varphi(\bigcup_{y \in B}\{y\}) = \bigcup_{y \in B} A_{y} = f^{-1}(B)$. Uniqueness is that $f$ is recovered from the family $A_{y}$, and a map with the same preimage operator has the same fibres.</p>
+<p><strong>Corollary.</strong> The closure and the interior are not Boolean homomorphisms: the closure does not preserve complements, since $\overline{A^{c}}$ need not be $\overline{A}^{c}$, and it does not preserve meets; the interior does not preserve joins. The preimage operators of continuous maps are the Boolean homomorphisms that preserve arbitrary unions, and they are the operators of the algebra that come from geometry; the closure and the interior are operators that come from the topology itself.</p>
+<p><strong>Proof.</strong> The failure for a pair of complements is immediate in $\mathbb{R}$, where $\overline{\mathbb{Q}} = \mathbb{R}$ while $\overline{\mathbb{Q}^{c}} = \mathbb{R}$, so $\overline{\mathbb{Q}^{c}} \neq \overline{\mathbb{Q}}^{c} = \emptyset$. The meet failure is $\overline{\mathbb{Q} \cap \mathbb{Q}^{c}} = \emptyset$ while $\overline{\mathbb{Q}} \cap \overline{\mathbb{Q}^{c}} = \mathbb{R}$. The identification of the union-preserving Boolean homomorphisms with the preimage operators is the theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>The power set of a space is a complete Boolean algebra, and the open sets and the closed sets are two complete lattices inside it, exchanged by the complement anti-isomorphism. The closure is a map from the open lattice to the closed lattice and the interior a map back, and they are adjoint: $\overline{U} \subseteq F$ if and only if $U \subseteq \operatorname{int} F$ for open $U$ and closed $F$, so the closure is the left adjoint of the interior. Each adjoint is recovered from the other by the Galois formulas for the smallest closed set containing $U$ and the largest open set contained in $F$. The adjunction extends to all pairs of subsets exactly when every open set is closed, a condition that holds in the discrete spaces, the indiscrete spaces and their disjoint unions, and fails in every space with an open set that is not closed, such as $\mathbb{R}$; the obstruction is that the closure preserves finite unions but not arbitrary ones, so it is a left adjoint on the open lattice and not on the whole power set. Among the operators of the algebra, the Boolean homomorphisms preserving arbitrary unions are exactly the preimage operators of maps, and they include the operators of continuous maps; the closure and the interior are not of this kind.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{P}(X)$</td>
+<td>The power set of $X$, a complete Boolean algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(X)$, $\mathcal{F}(X)$</td>
+<td>Complete lattices of open sets and of closed sets</td>
+</tr>
+<tr>
+<td>$\mathcal{C}(X)$</td>
+<td>The clopen subsets, a Boolean subalgebra</td>
+</tr>
+<tr>
+<td>$\complement$</td>
+<td>Complement, an anti-isomorphism $\mathcal{O}(X) \to \mathcal{F}(X)$</td>
+</tr>
+<tr>
+<td>$C(U) = \overline{U}$</td>
+<td>Closure, a map $\mathcal{O}(X) \to \mathcal{F}(X)$</td>
+</tr>
+<tr>
+<td>$I(F) = \operatorname{int} F$</td>
+<td>Interior, a map $\mathcal{F}(X) \to \mathcal{O}(X)$</td>
+</tr>
+<tr>
+<td>$C \dashv I$, $g \dashv h$</td>
+<td>Adjunction (Galois connection); $g(p) \leq q \iff p \leq h(q)$</td>
+</tr>
+<tr>
+<td>global adjunction</td>
+<td>$\overline{A} \subseteq B \iff A \subseteq \operatorname{int} B$ for all $A, B$; holds iff every open set is closed</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>A Boolean homomorphism $\mathcal{P}(Y) \to \mathcal{P}(X)$</td>
+</tr>
+<tr>
+<td>$f^{-1}$</td>
+<td>The preimage operator; every union-preserving Boolean homomorphism is one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Garrett Birkhoff, <em>Lattice Theory</em> (American Mathematical Society, 3rd ed. 1967), for Galois connections, adjoint pairs and the calculus of closure and interior operators.</li>
+<li>Peter T. Johnstone, <em>Stone Spaces</em> (Cambridge University Press, 1982), for the lattice of open sets as a frame, the adjunction of closure and interior, and Stone duality.</li>
+<li>Brian A. Davey and Hilary A. Priestley, <em>Introduction to Lattices and Order</em> (Cambridge University Press, 2nd ed. 2002), for adjunctions between posets and the two equivalent forms of a Galois connection.</li>
+<li>Steven Vickers, <em>Topology via Logic</em> (Cambridge University Press, 1989), for the point-free reading of the algebra of open sets.</li>
+<li>Kazimierz Kuratowski and Andrzej Mostowski, <em>Set Theory</em> (North-Holland, 1976), for the Boolean algebra of subsets and its complete-lattice structure.</li>
+<li>Paul R. Halmos, <em>Lectures on Boolean Algebras</em> (Van Nostrand, 1963; reprinted Springer, 1974), for Boolean homomorphisms and the representation theory of Boolean algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transpose as an Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transpose-as-an-adjoint"><strong>The Transpose as an Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The transpose of a matrix is the adjoint of the matrix read against the standard pairing of its module, and the identification is the simplest appearance in algebra of the general adjoint of <em>Involutions of the Endomorphism Ring</em>. Two pairings are involved and they must not be confused. The <strong>standard pairing</strong> on the free module $R^n$ is $\langle x,y\rangle = \sum_i x_iy_i$; it is symmetric and perfect, and the defining identity of the adjoint, $\langle Xx,y\rangle = \langle x,X^{\mathrm t}y\rangle$, says exactly that the transpose is the adjoint of $X$. The <strong>trace pairing</strong> on the matrix ring, $(X,Y)\mapsto \tau(XY) = \operatorname{tr}(XY)$, is likewise symmetric and perfect, and it realises the matrix ring as its own dual: this is the <strong>trace duality</strong>, and under it the transpose involution is the adjoint involution of the algebra.</p>
+<p>This article treats the transpose as the adjoint with respect to the standard pairing, the identification of the dual map with the transpose, and the trace duality that identifies the matrix ring with its dual. It assumes <em>Rings</em>, <em>Matrix Rings with an Involution</em> for the transpose, <em>Involutions of the Endomorphism Ring</em> for the adjoint and <em>Modules</em> only by forward reference. Throughout, $R$ is a commutative ring with $1 \neq 0$, $X, Y$ are $n\times n$ matrices over $R$, $x, y$ are columns, $X^{\mathrm t}$ is the transpose, and $\tau$ is the matrix trace.</p>
+<h2 id="the-transpose-as-the-adjoint-of-the-standard-pairing">The Transpose as the Adjoint of the Standard Pairing</h2>
+<p><strong>Definition.</strong> The <strong>standard pairing</strong> of $R^n$ is</p>
+<p>$$
+\langle x,y\rangle = \sum_i x_i y_i = x^{\mathrm t}y .
+$$</p>
+<p>It is biadditive, symmetric, and perfect: the map $x \mapsto \langle x,-\rangle$ is an isomorphism $R^n \to \operatorname{Hom}_R(R^n,R)$.</p>
+<p><strong>Theorem.</strong> For every matrix $X$ and all columns $x, y$,</p>
+<p>$$
+\langle Xx, y\rangle = \langle x, X^{\mathrm t}y\rangle ,
+$$</p>
+<p>so $X^{\mathrm t}$ is the adjoint of $X$ with respect to the standard pairing. Consequently $X \mapsto X^{\mathrm t}$ is the adjoint involution of the matrix ring, it is additive, anti-multiplicative and of order two, and the orthogonal matrices, those with $X^{\mathrm t}X = XX^{\mathrm t} = I$, are exactly the matrices preserving the standard pairing.</p>
+<p><strong>Proof.</strong> $\langle Xx,y\rangle = (Xx)^{\mathrm t}y = x^{\mathrm t}X^{\mathrm t}y = \langle x,X^{\mathrm t}y\rangle$; the identification with <em>Involutions of the Endomorphism Ring</em> is the definition of the adjoint there, the four laws are those of that article, and the preservation statement is its unitary-element proposition.</p>
+<p><strong>Corollary (the dual map).</strong> Let $X$ correspond to the endomorphism $T$ of $R^n$ by the standard basis. Then $X^{\mathrm t}$ corresponds to the <strong>dual map</strong> $T^{\mathrm t} : \operatorname{Hom}_R(R^n,R) \to \operatorname{Hom}_R(R^n,R)$, $f \mapsto f\circ T$, transported back along the isomorphism $R^n \to \operatorname{Hom}_R(R^n,R)$ given by the pairing; the transpose matrix and the dual map are the same object under this identification.</p>
+<p><strong>Proof.</strong> The dual map is defined on the dual basis by the matrix transpose by <em>Linear Maps and Matrices</em>, and the identification with $\operatorname{Hom}_R(R^n,R)$ by the standard pairing converts it into the transpose of the matrix of $T$. The two transposes are one.</p>
+<h2 id="trace-duality">Trace Duality</h2>
+<p><strong>Theorem (trace duality).</strong> The <strong>trace pairing</strong> $\beta(X,Y) = \tau(XY)$ on $M_n(R)$ is biadditive, symmetric and perfect; the induced map $M_n(R) \to \operatorname{Hom}_R(M_n(R),R)$, $X\mapsto \beta(X,-)$, is an isomorphism. Under it the matrix ring is identified with its own dual.</p>
+<p><strong>Proof.</strong> Symmetry and biadditivity are immediate; for perfectness, $\beta(X,E_{ij}) = (X E_{ij})$'s trace $= X_{ji}$, so $X\mapsto \beta(X,-)$ has matrix $X^{\mathrm t}$ in the basis $E_{ij}$ of the dual, and the map sending $X$ to $X^{\mathrm t}$ is an isomorphism with inverse the transpose. Hence the trace pairing is perfect.</p>
+<p><strong>Corollary (the adjoint of the left and right multiplications).</strong> With the trace pairing of the ring, the adjoint of the left multiplication $L_X$ is the right multiplication $R_X$, and conversely; the transpose of the matrix appears through the standard pairing above, while the trace pairing realises the switching of the sides of the regular representation. This is the specialisation to the matrix ring of <em>The Adjoint of the Left Multiplication on a Ring</em>.</p>
+<p><strong>Proof.</strong> $\beta(L_XY,Z) = \tau(XYZ) = \tau(YZX) = \beta(Y,R_XZ)$, and the same computation with the sides exchanged.</p>
+<p><strong>Remark (the two transposes).</strong> The transpose of the standard pairing and the switching of the sides under the trace pairing are different involutions of the matrix ring, and the article separates them. The first is the orthogonal involution and is the adjoint of the matrix as an endomorphism; the second is the transpose of the trace form of the algebra and is not, by itself, the transpose involution. The two agree as maps $X \mapsto X^{\mathrm t}$ but play different roles, the first in the adjoint of the operators and the second in the duality of the algebra with its own dual.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The identity matrix pairing.</strong> $R = \mathbb{R}$, $n = 3$: $\langle x,y\rangle = x^{\mathrm t}y$ is the dot product, the adjoint is the transpose, and the orthogonal group is the group of matrices with $X^{\mathrm t}X = I$.</p>
+<p><strong>(b) The symplectic pairing.</strong> With the pairing of <em>Involutions of the Endomorphism Ring</em>, $B(x,y) = \sum_i(x_iy_{i+n}-x_{i+n}y_i)$, the adjoint of $X$ is the symplectic adjoint $-JX^{\mathrm t}J$; the transpose alone is the adjoint only for the standard pairing.</p>
+<p><strong>(c) The trace duality.</strong> For $R = \mathbb{C}$, the trace pairing $\tau(XY)$ identifies $M_n(\mathbb{C})$ with its dual, and the symmetric matrices $X^{\mathrm t}=X$ pair symmetrically with themselves, $\tau(X^2)\neq 0$ for $X\neq0$ symmetric over $\mathbb{R}$; the pairing is the algebraic ancestor of the trace form of <em>Hilbert Algebras</em> in Part II.</p>
+<p><strong>(d) The transpose involution.</strong> As an involution of the matrix ring the transpose is the first-kind orthogonal involution of <em>Matrix Rings with an Involution</em>; its self-adjoint elements are the symmetric matrices and its skew elements the antisymmetric ones, and the trace vanishes on the latter, the sign structure of <em>The Skew Field of a Ring with Involution</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>standard pairing</strong> $\langle x,y\rangle = x^{\mathrm t}y$ on $R^n$ is symmetric and perfect, and the transpose is the adjoint of a matrix with respect to it, $\langle Xx,y\rangle = \langle x,X^{\mathrm t}y\rangle$; the assignment $X\mapsto X^{\mathrm t}$ is therefore the orthogonal adjoint involution of the matrix ring and its unitary group is the orthogonal group. Under the standard identification of the module with its dual, the transpose matrix is the <strong>dual map</strong> of the endomorphism, so the two transposes coincide. The <strong>trace pairing</strong> $\tau(XY)$ on the matrix ring is likewise symmetric and perfect and identifies the ring with its own dual, the adjoint of the left multiplication being the right multiplication; this is the trace duality, and it is the ring-level form of the general adjoint of <em>Involutions of the Endomorphism Ring</em>. The two pairings and the two roles of the transpose are the whole content of the article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $R^n$</td>
+<td>Commutative ring and free module of columns</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle = x^{\mathrm t}y$</td>
+<td>Standard pairing; symmetric, perfect</td>
+</tr>
+<tr>
+<td>$\langle Xx,y\rangle=\langle x,X^{\mathrm t}y\rangle$</td>
+<td>The transpose is the adjoint</td>
+</tr>
+<tr>
+<td>$X\mapsto X^{\mathrm t}$</td>
+<td>Orthogonal adjoint involution of $M_n(R)$</td>
+</tr>
+<tr>
+<td>$X^{\mathrm t}X=XX^{\mathrm t}=I$</td>
+<td>Orthogonal matrices preserving the standard pairing</td>
+</tr>
+<tr>
+<td>$T^{\mathrm t}$, dual map</td>
+<td>$f\mapsto f\circ T$; identified with the transpose matrix</td>
+</tr>
+<tr>
+<td>$\beta(X,Y)=\tau(XY)$</td>
+<td>Trace pairing; symmetric, perfect</td>
+</tr>
+<tr>
+<td>$\beta(L_XY,Z)=\beta(Y,R_XZ)$</td>
+<td>Adjoint of left multiplication: $L_X^{*}=R_X$</td>
+</tr>
+<tr>
+<td>$\tau$, $E_{ij}$</td>
+<td>Matrix trace and matrix units; duality of the algebra with its dual</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the adjoint involution and the trace duality of a matrix algebra.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for bilinear forms, the dual map and the transposition of a linear map.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the transpose involution, the symmetric and the skew matrices and the trace.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the orthogonal involution, the standard pairing and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

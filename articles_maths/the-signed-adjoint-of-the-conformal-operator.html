@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Conformal Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-conformal-operator"><strong>The Signed Adjoint of the Conformal Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>conformal operator</strong> is a linear operator $T$ that multiplies a quadratic form by a scalar, $q(Tx) = \lambda(T)q(x)$; read as a signed two-sided operator it is the signed sandwich $x \mapsto a\,\alpha(x)\,b$, and the adjoint of that sandwich is computed with the <strong>sign</strong> carried by the grade involution $\alpha$. The <strong>signed adjoint</strong> is the adjoint of the signed operator, and it is <strong>sign-reversing</strong>: it reverses the sign of the parameters, so the adjoint of the sandwich of $a$ and $b$ is the sandwich of the inverse images. The <strong>unitarity condition</strong> it defines, $\Theta^{\ddagger}\Theta = \mathrm{id}$, selects the conformal operators with the factor one, that is, the isometries of the form inside the conformal group; the article proves the selection and identifies the sign-reversing adjoint as the obstruction to unitarity for a conformal operator with a nontrivial factor.</p>
+<p>The article develops the conformal operator and its sign, the adjoint of a conformal operator with the factor $\lambda T^{-1}$, the signed adjoint with the formul\ae{} of the signed sandwich, the unitarity condition it defines and the group of the signed-unitary conformal operators, and the degenerate case in which the sign collapses. The conformal operator itself is <em>The Conformal Operator</em>, the signed sandwich is <em>The Signed Sandwich on an Ordered Algebra</em> and <em>The Signed Adjoint of the Reflection on a Linear Space</em>, and the adjoint is <em>The Adjoint under a Hermitian Pairing</em>.</p>
+<p>The article assumes <em>The Conformal Operator</em> for the similarity group, the conformal Laplacian and the Weyl tensor; <em>The Adjoint under a Hermitian Pairing</em> for the adjoint and the self-adjoint elements; <em>Unitary Geometry over a Field with Involution</em> for the Hermitian forms and the unitary group; <em>The Signed Sandwich on an Ordered Algebra</em> of Part III and <em>Reflections as Signed Two-Sided Operators on a Linear Space</em> and <em>The Signed Adjoint of the Reflection on a Linear Space</em> of Part I for the signed sandwich, its adjoint and the grade involution; and <em>Clifford Algebras</em> of Part II for the reflection elements. No distance and no physics is invoked.</p>
+<h2 id="the-conformal-operator-and-its-sign">The Conformal Operator and Its Sign</h2>
+<h3 id="the-similarity-and-the-signed-sandwich">The Similarity and the Signed Sandwich</h3>
+<p><strong>Definition.</strong> Let $(V,q)$ be a quadratic space over a field of characteristic not two. A <strong>conformal operator</strong> is a linear operator $T \in GL(V)$ with $q(Tx) = \lambda(T)q(x)$ for all $x$ and some $\lambda(T) \in K^\times$; the operators form the conformal group $\operatorname{CO}(V,q)$, the factor is a homomorphism to $K^\times$, and the orthogonal group is its kernel. In the Clifford algebra $\mathrm{Cl}(V,q)$ the conformal operators preserving the quadratic cone are the signed two-sided operators</p>
+<p>$$
+\Theta^{\alpha}_{a,b}(X) = a\,\alpha(X)\,b ,
+$$</p>
+<p>where $\alpha$ is the <strong>grade involution</strong>, negating the odd part and fixing the even part; the sign of the operator is its twist by $\alpha$, and without the twist the sandwich is the ordinary one.</p>
+<p><strong>Proposition.</strong> The signed sandwich is multiplicative in the pair, $\Theta^\alpha_{a,b}\circ\Theta^\alpha_{c,d} = \Theta^\alpha_{ac,db}$ when $\alpha(a) = a$ on the even parameters, and the operators preserving the quadratic cone are the elements $a$, $b$ of the group generated by the units with $a\,\alpha(X)\,b$ preserving the cone; the reflection $x \mapsto -axa^{-1}$ of a vector $a$ with $q(a) \neq 0$ is the case $a$, $b = a^{-1}$ of the signed sandwich, and it is the geometric instance of the conformal operator in the signed form.</p>
+<p><strong>Proof.</strong> The composition is $a\alpha(c\alpha(X)d)b = a\alpha(c)\alpha^2(X)\alpha(d)b$, which is the sandwich by $ac$ and $db$ under the commutation condition; the reflection formula is the geometric reflection of <em>Geodesic Reflection as an Operator</em>, in the signed two-sided form. The statement is in <em>The Signed Sandwich on an Ordered Algebra</em> and <em>Clifford Algebras</em>.</p>
+<h2 id="the-adjoint-of-a-conformal-operator">The Adjoint of a Conformal Operator</h2>
+<p><strong>Theorem.</strong> Let $h$ be a nondegenerate Hermitian pairing compatible with the quadratic form $q$, and let $T$ be a conformal operator with the factor $\lambda = \lambda(T)$. Then the adjoint of $T$ with respect to $h$ is</p>
+<p>$$
+T^{\dagger} = \lambda(T)\, T^{-1} ,
+$$</p>
+<p>so the adjoint of a conformal operator is again a conformal operator, with the factor $\overline{\lambda(T)}$, and the adjoint of a similarity is its inverse multiplied by the factor; for an isometry, $\lambda = 1$, the adjoint is the inverse, and the conformal operator is unitary.</p>
+<p><strong>Proof.</strong> From $h(Tx,Ty) = \lambda h(x,y)$ for all $x,y$ and the substitution $y = T^{-1}z$ one gets $h(Tx,z) = \lambda h(x,T^{-1}z)$, which is the defining identity of the adjoint $T^{\dagger} = \lambda T^{-1}$; the factor of the adjoint is computed from $h(T^\dagger x, T^\dagger y) = \bar\lambda \lambda h(x,y)/\lambda = \bar\lambda h(x,y)$ on the appropriate side, and the isometry case is $\lambda = 1$. The statement is in <em>The Adjoint under a Hermitian Pairing</em> and <em>Unitary Geometry over a Field with Involution</em>.</p>
+<p><strong>Corollary (the factor is the obstruction).</strong> A conformal operator is unitary, $T^{\dagger} = T^{-1}$, exactly when its factor is one; the adjoint differs from the inverse by the factor, so the factor $\lambda(T)$ measures the failure of the conformal operator to be an isometry, and the conformal group is the union of the cosets of the orthogonal group indexed by the factor.</p>
+<h2 id="the-signed-adjoint">The Signed Adjoint</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let the algebra of the operators carry the grade involution $\alpha$, an involutive automorphism, and let $T^{\dagger}$ be the adjoint with respect to $h$. The <strong>signed adjoint</strong> of an operator $T$ is</p>
+<p>$$
+T^{\ddagger} = \alpha\bigl(T^{\dagger}\bigr) ,
+$$</p>
+<p>the adjoint twisted by the grade involution; for the signed sandwich $\Theta^{\alpha}_{a,b}$ of the conformal operator, the signed adjoint is computed by the formula of the signed adjoint sandwich,</p>
+<p>$$
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{\ddagger} = \Theta^{\alpha}_{\alpha(b),\,\alpha(a)} ,
+$$</p>
+<p>which <strong>exchanges the two parameters and applies the grade involution to each</strong>, that is, reverses the sign of the parameters, and which reduces to the adjoint for $\alpha = \mathrm{id}$.</p>
+<p><strong>Theorem.</strong> The signed adjoint of the signed sandwich is the signed sandwich of the adjoint parameters, and it is a <strong>sign-reversing</strong> adjoint: on the even part of the algebra it is the ordinary adjoint, and on the odd part it is the negative of the ordinary adjoint. The signed adjoint is conjugate-linear, additive and anti-multiplicative,</p>
+<p>$$
+(\Theta\Psi)^{\ddagger} = \Psi^{\ddagger}\Theta^{\ddagger}, \qquad (T^{\ddagger})^{\ddagger} = T ,
+$$</p>
+<p>and it is an involution of the algebra of the operators whenever the grade involution and the adjoint commute up to the sign of the grade.</p>
+<p><strong>Proof.</strong> The formula for the sandwich is the adjoint computation of <em>The Signed Adjoint of the Reflection on a Linear Space</em> applied to the two-sided operator $\Theta^\alpha_{a,b}$, whose adjoint is the sandwich of the adjoints of the parameters with the sign reversed by $\alpha$; the sign reversal is the definition of $\alpha$ on the odd part, and the anti-multiplicativity and the involution property follow from the same properties of the adjoint and the multiplicativity of $\alpha$. The statement is in <em>Reflections as Signed Two-Sided Operators on a Linear Space</em> and <em>The Signed Adjoint of the Reflection on a Linear Space</em>.</p>
+<h3 id="the-unitarity-condition">The Unitarity Condition</h3>
+<p><strong>Definition.</strong> The <strong>signed unitarity condition</strong> is</p>
+<p>$$
+T^{\ddagger}\,T = \mathrm{id} ,
+$$</p>
+<p>and the operators satisfying it are the <strong>signed-unitary</strong> operators of the conformal geometry; the signed adjoint is used in the condition in place of the ordinary adjoint, and the difference is exactly the sign.</p>
+<p><strong>Theorem.</strong> For a conformal operator with the factor $\lambda = \lambda(T)$ the signed unitarity condition is equivalent to the ordinary unitarity,</p>
+<p>$$
+T^{\ddagger}T = \mathrm{id} \quad \Longleftrightarrow \quad T^{\dagger}T = \mathrm{id} \quad \Longleftrightarrow \quad \lambda(T) = 1 ,
+$$</p>
+<p>so the signed-unitary conformal operators are exactly the isometries of the form, the intersection of the conformal group with the unitary group,</p>
+<p>$$
+\operatorname{CO}(V,q) \cap U(V,h) = O(V,q) ,
+$$</p>
+<p>and the sign-reversing adjoint is the obstruction that removes the operators with a nontrivial factor; the unitarity condition defines the orthogonal group inside the conformal group.</p>
+<p><strong>Proof.</strong> The condition $T^{\ddagger}T = \mathrm{id}$ reads $\alpha(T^\dagger T) = \mathrm{id}$; because $\alpha$ is an involution and the identity is even, this is $T^\dagger T = \mathrm{id}$; the adjoint of a conformal operator is $\lambda T^{-1}$, so the condition is $\lambda T^{-1}T = \lambda \mathrm{id} = \mathrm{id}$, that is, $\lambda = 1$; the isometry condition is the definition of the orthogonal group and of the unitary group of the form. The statement is in <em>The Conformal Operator</em> and <em>Unitary Geometry over a Field with Involution</em>.</p>
+<p><strong>Remark (the agreement of the involutions).</strong> The signed adjoint and the ordinary adjoint agree exactly on the even part of the algebra, and the unitarity conditions they define agree because the identity is even; the two conditions would differ for a target operator with an odd component, and the difference is the sign. This is the sense in which the article is the intersection of <em>The Conformal Operator</em> and <em>The Adjoint under a Hermitian Pairing</em>, and the agreement is proved by the computation above and not assumed.</p>
+<h2 id="the-degenerate-case">The Degenerate Case</h2>
+<p><strong>Definition.</strong> The <strong>degenerate case</strong> of the signed adjoint is the case in which the grade involution collapses or the form degenerates: in characteristic two the grade involution of a quadratic space collapses to the identity and the signed adjoint is the ordinary adjoint; when the form $q$ is degenerate the reflection element $a$ with $q(a) = 0$ has no inverse in the Clifford algebra, the sandwich $\Theta^\alpha_{a,a^{-1}}$ is undefined, and the signed adjoint of the corresponding conformal operator does not exist.</p>
+<p><strong>Theorem.</strong> When the grade involution is the identity the signed adjoint coincides with the ordinary adjoint and the unitarity condition is the ordinary unitarity; when the form is degenerate the signed adjoint fails to be defined for the isotropic parameters, and the operators with an isotropic reflection element have no signed adjoint. The failure is exactly the loss of the sign of the quadratic form, and it is the boundary case of the conformal geometry, in which the conformal structure degenerates to the orthogonal structure of the associated graded form.</p>
+<p><strong>Proof.</strong> For $\alpha = \mathrm{id}$ the signed adjoint is the adjoint by the definition; for a degenerate form the Clifford algebra has zero divisors and the inverse $a^{-1} = a/q(a)$ does not exist for $q(a) = 0$, so the sandwich formula of the adjoint loses its meaning. The statement is the degenerate-case analysis of <em>The Signed Adjoint of the Reflection on a Linear Space</em> and <em>Clifford Algebras</em>.</p>
+<p><strong>Remark (the Weyl tensor and the sign).</strong> The conformal operators of a conformal manifold act on the densities of a conformal weight, and the unitarity condition of the article is the infinitesimal form of the conformal invariance of the conformal Laplacian; the Weyl tensor of <em>The Conformal Operator</em> is the invariant that survives when the signed-unitary operators are divided out, and the sign-reversing adjoint measures the difference between the conformal and the isometric structures. The article owns the operator-layer sign and leaves the manifold theory to the companion.</p>
+<h2 id="summary">Summary</h2>
+<p>A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The <strong>signed adjoint</strong> is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\Theta^\alpha_{a,b})^{\ddagger} = \Theta^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The <strong>signed unitarity condition</strong> $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,q)\cap U(V,h) = O(V,q)$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q(Tx) = \lambda(T)q(x)$</td>
+<td>Conformal operator and factor</td>
+</tr>
+<tr>
+<td>$\operatorname{CO}(V,q)$</td>
+<td>Conformal group of the quadratic space</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Grade involution of the algebra</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}(X) = a\alpha(X)b$</td>
+<td>Signed two-sided operator</td>
+</tr>
+<tr>
+<td>$T^{\dagger} = \lambda(T)T^{-1}$</td>
+<td>Adjoint of a conformal operator</td>
+</tr>
+<tr>
+<td>$T^{\ddagger} = \alpha(T^{\dagger})$</td>
+<td>Signed adjoint</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{a,b})^{\ddagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}$</td>
+<td>Signed adjoint of the sandwich, the sign reversal</td>
+</tr>
+<tr>
+<td>$T^{\ddagger}T = \mathrm{id}$</td>
+<td>Signed unitarity condition</td>
+</tr>
+<tr>
+<td>$\operatorname{CO}(V,q) \cap U(V,h) = O(V,q)$</td>
+<td>Signed-unitary conformal operators, the isometries</td>
+</tr>
+<tr>
+<td>$a$ with $q(a) = 0$</td>
+<td>Isotropic parameter, the degenerate case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the algebras with involution and the adjoints.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Clifford algebra, the reflections and the conformal group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the reflections, the spin groups and the conformal structure.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the classical groups and their involutions.</li>
+<li>Tsit Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the quadratic forms and the orthogonal groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

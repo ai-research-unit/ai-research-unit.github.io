@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Suspension Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-suspension-operator"><strong>The Suspension Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The suspension of a space is the space $\Sigma X = X \wedge S^1$, the quotient of $X\times I$ that collapses the two ends and the base point, and its homology is the homology of $X$ shifted by one degree. The shift is not a bare isomorphism of graded modules: it is a <strong>natural operator</strong> $\sigma : \tilde H_n(X;R) \to \tilde H_{n+1}(\Sigma X;R)$, defined by taking the cone on a cycle, and it is the first of the stable invariants of the space. Reading it as an operator — a degree-one natural transformation compatible with the boundary and with the products — is what makes the stability of the homology visible: iterating $\sigma$ produces the suspension spectrum of $X$, and the operator is the structure map by which the homology of an infinite suspension is the graded module $\tilde H_*(X)$ with the shift absorbed.</p>
+<p>The article defines the suspension and the suspension of a map, constructs the suspension operator through the cone on a cycle, proves that it is an isomorphism inverse to the connecting homomorphism of the cone pair, and establishes its compatibility with the boundary. It then records what the operator does to the products, to the transfer of the previous article and to the suspension spectra of the stable theory, and it closes with the computations for the spheres and the projective spaces. The suspension isomorphism for the homotopy groups — the Freudenthal theorem — is the subject of <em>Homotopy Groups and Fibrations</em>, where the range of stability is proved, and the periodic isomorphism $\tilde K^0(X) \cong \tilde K^0(S^2 X)$ of the topological $K$-theory of <em>Topological K-Theory</em> is the suspension isomorphism of the cohomology theory $K$ read there. The regular sequence of the suspension, of its operator and of the stable structure is the subject of <em>Stable Homotopy Theory</em>, and the operator is the first structure map of that article.</p>
+<p>The article uses the singular complex and the boundary operator of <em>Simplicial and Singular Homology</em> and the exact sequences of a pair and the Mayer–Vietoris sequence of that article and of <em>Exact Sequences</em>; the products are those of <em>Cup and Cap Products</em>, and the transfer is that of <em>The Transfer Map</em>. The reduced homology, the augmentation and the cone are those of <em>Simplicial and Singular Homology</em>. Nothing analytic and nothing geometric is used: the suspension, the cone and their maps are quotients of the product with the interval, and no distance, no norm and no measure is chosen. Throughout, $\Sigma X$ is the <strong>reduced suspension</strong> of a based space, the space written $S X$ in <em>Topological K-Theory</em>; the <strong>unreduced suspension</strong> is the quotient of $X\times I$ collapsing each end separately, and it is written $S X$ when the difference matters. The reduced homology $\tilde H_*$ and the cone $C X$ are as in <em>Simplicial and Singular Homology</em>, and the suspension of a map and of a homotopy are the maps induced on the quotient.</p>
+<h2 id="the-suspension">The Suspension</h2>
+<h3 id="the-definitions">The Definitions</h3>
+<p><strong>Definition.</strong> For a based space $X$ the <strong>reduced suspension</strong> is</p>
+<p>$$
+\Sigma X = X \times I \big/ \bigl(X \times \{0,1\} \cup \{*\} \times I\bigr),
+$$</p>
+<p>with the quotient topology and the image of $\{*\}\times I$ as base point; the <strong>unreduced suspension</strong> $S X = X\times I/(X\times\{0\} \cup X\times\{1\})$ is the quotient that collapses the two ends separately. For a based map $f : X \to Y$ the <strong>suspension</strong> is the map</p>
+<p>$$
+\Sigma f : \Sigma X \longrightarrow \Sigma Y, \qquad \Sigma f[x,t] = [f(x), t],
+$$</p>
+<p>well defined and continuous on the quotient, and it is based.</p>
+<p>The reduced and unreduced suspensions agree for a well-based space up to homotopy, $\Sigma X \simeq S X$ for $X$ with a nondegenerate base point, and the reduced homology satisfies $\tilde H_n(\Sigma X;R) \cong \tilde H_{n+1}(S X; R)$ up to the shift. The suspension is the join with $S^0$, $\Sigma X \cong X \ast S^0$, and this presentation is the one used for the cone decomposition below.</p>
+<p><strong>Proposition.</strong> The assignments $X \mapsto \Sigma X$ and $f \mapsto \Sigma f$ are functorial on based spaces: $\Sigma(g\circ f) = \Sigma g \circ \Sigma f$ and $\Sigma \mathrm{id} = \mathrm{id}$; a based homotopy $f \simeq g$ gives a based homotopy $\Sigma f \simeq \Sigma g$, and a based homotopy equivalence gives a based homotopy equivalence. Consequently the suspension descends to the based homotopy category.</p>
+<p><em>Proof.</em> The formulas are the definitions on the quotient, and the homotopy $H(x,t)$ suspends to $H\ast\mathrm{id}$, which is continuous on the quotient and has the required endpoints. $\square$</p>
+<h3 id="the-cone-and-the-contracting-homotopy">The Cone and the Contracting Homotopy</h3>
+<p><strong>Definition.</strong> The <strong>cone</strong> on a space $X$ is $C X = X \times I/(X\times\{1\})$, with the image of $X\times\{1\}$ as vertex; the <strong>cone on a simplex</strong> $\sigma : \Delta_n \to X$ is the singular $(n+1)$-simplex</p>
+<p>$$
+C\sigma : \Delta_{n+1} \longrightarrow C X, \qquad C\sigma(t_0,\dots,t_{n+1}) = \Bigl[\sigma\Bigl(\tfrac{t_0,\dots,t_n}{1-t_{n+1}}\Bigr),\, t_{n+1}\Bigr],
+$$</p>
+<p>read as the vertex when $t_{n+1}=1$. The <strong>cone operator</strong> is $E_n = (-1)^{n+1} C : C_n(X;R) \to C_{n+1}(C X;R)$, extended $R$-linearly, the sign being chosen for the clean identity below. The reduced suspension is the union of two cones along $X$,</p>
+<p>$$
+\Sigma X = C X \cup_{X} C X ,
+$$</p>
+<p>with the two copies glued by the identity on $X$; the top cone $C^+X$ and the bottom cone $C^-X$ meet exactly in $X$.</p>
+<p><strong>Theorem (the cone identity).</strong> The cone operator satisfies</p>
+<p>$$
+\partial\, E + E\, \partial = \iota ,
+$$</p>
+<p>as maps $C_n(X;R) \to C_n(C X;R)$, where $\iota : C_n(X;R) \to C_n(C X;R)$ is induced by the inclusion $X \hookrightarrow C X$. Consequently the inclusion $X \to C X$ is a chain homotopy equivalence and the cone is acyclic in reduced homology, $\tilde H_n(C X;R)=0$.</p>
+<p><em>Proof.</em> On a simplex, using the boundary formula of <em>Simplicial and Singular Homology</em>, the faces of $C\sigma$ other than the one dropping the last vertex are the cones on the faces of $\sigma$, and the last face is $\sigma$ with sign $(-1)^{n+1}$; hence $\partial C\sigma = C\partial\sigma + (-1)^{n+1}\sigma$. Multiplying by $(-1)^{n+1}$ and using $E_{n-1}\sigma = (-1)^{n} C\sigma$, this is $\partial E\sigma = -E\partial\sigma + \sigma$, which is the displayed identity. The homotopy equivalence is the identity $\partial E + E\partial = \iota$ with the constant map as homotopy inverse of the inclusion, and the vanishing of the reduced homology follows because the augmented complex of the cone is contractible. $\square$</p>
+<p>The cone is the standard contractible space built on a space, and the identity is the operator form of its contractibility: the cone operator $E$ shifts the degree by one and provides the chain homotopy that contracts the cone onto its vertex.</p>
+<h2 id="the-suspension-isomorphism">The Suspension Isomorphism</h2>
+<h3 id="the-pair-of-the-cone">The Pair of the Cone</h3>
+<p><strong>Theorem.</strong> Let $X$ be a based space and $j : X \hookrightarrow C X$ the inclusion of the base of a cone. The connecting homomorphism of the long exact sequence of the pair $(C X, X)$,</p>
+<p>$$
+\partial : H_{n+1}(C X, X;R) \longrightarrow H_n(X;R),
+$$</p>
+<p>is an isomorphism, because $\tilde H_*(C X;R)=0$. Under the excision identification $H_{n+1}(C X, X;R) \cong \tilde H_{n+1}(\Sigma X;R)$ given by the second cone, this is an isomorphism</p>
+<p>$$
+\partial : \tilde H_{n+1}(\Sigma X;R) \xrightarrow{\ \cong\ } \tilde H_n(X;R).
+$$</p>
+<p><em>Proof.</em> The pair sequence reads $\tilde H_{n+1}(C X)\to \tilde H_{n+1}(C X,X)\xrightarrow{\partial}\tilde H_n(X)\to \tilde H_n(C X)$, and the two outer groups vanish, so the middle map is an isomorphism. The identification of the relative group with the reduced suspension is the excision $H_{n+1}(C X,X)\cong H_{n+1}(C X\cup_X C X, C X)\cong \tilde H_{n+1}(\Sigma X)$ of <em>Simplicial and Singular Homology</em>. $\square$</p>
+<h3 id="the-operator">The Operator</h3>
+<p><strong>Definition.</strong> The <strong>suspension operator</strong> is the inverse of the connecting isomorphism,</p>
+<p>$$
+\sigma_n : \tilde H_n(X;R) \longrightarrow \tilde H_{n+1}(\Sigma X;R), \qquad \sigma_n = \partial^{-1},
+$$</p>
+<p>so that the suspension isomorphism is the statement that $\sigma_n$ is an isomorphism for every $n$.</p>
+<p><strong>Theorem (the operator is the cone).</strong> The suspension operator is induced by the cone operator: for a cycle $c \in \tilde C_n(X;R)$,</p>
+<p>$$
+\sigma_n[c] = [E_n c] \in \tilde H_{n+1}(\Sigma X;R),
+$$</p>
+<p>and it satisfies $\partial \sigma_n = \mathrm{id}$. It is natural: for a based map $f : X \to Y$,</p>
+<p>$$
+\sigma_n \tilde H_n(f) = \tilde H_{n+1}(\Sigma f)\, \sigma_n ,
+$$</p>
+<p>and for a based homotopy the two sides are transported by the suspension of the homotopy.</p>
+<p><em>Proof.</em> By the cone identity, $\partial E_n c = \iota c - E_{n-1}\partial c = c$ for a cycle $c$, so $E_n c$ represents a relative cycle in $(C X, X)$ whose connecting class is $[c]$; that is, $\sigma_n[c]$ is the class of $E_n c$ in the relative group, identified with $\tilde H_{n+1}(\Sigma X;R)$. Naturality is that $\Sigma f \circ E = E \circ f$ on cones and that the connecting map is natural. $\square$</p>
+<p><strong>Corollary.</strong> The suspension operator is an isomorphism whose inverse is the connecting homomorphism, $\sigma_n^{-1} = \partial$; it is additive and carries the reduced homology of a based space isomorphically onto that of its suspension with the degree raised by one. Iterating, $\tilde H_{n+k}(\Sigma^k X;R)\cong \tilde H_n(X;R)$.</p>
+<p><em>Proof.</em> The operator is the inverse of an isomorphism; iteration is the functoriality. $\square$</p>
+<h2 id="compatibility-with-the-boundary">Compatibility with the Boundary</h2>
+<h3 id="the-chain-level-identity">The Chain-Level Identity</h3>
+<p>The cone identity $\partial C + C\partial = \iota$ of the first section is the chain-level statement of compatibility: the boundary of the cone on $c$ is the cone on the boundary of $c$ together with a copy of $c$. On homology, applied to a cycle, it reduces to the statement that the suspension is a section of the connecting map,</p>
+<p>$$
+\partial \circ \sigma = \mathrm{id}, \qquad\qquad \sigma \circ \partial = \mathrm{id}
+$$</p>
+<p>on the relative and absolute reduced homologies respectively; the two are the inverse isomorphisms of the suspension. So the suspension operator commutes with the boundary operator in the only sense available, which is that it inverts the connecting homomorphism built from $\partial$: applying $\partial$ to a suspended class returns the class, and applying the suspension to a boundary returns the connecting class of the boundary.</p>
+<h3 id="the-map-of-long-exact-sequences">The Map of Long Exact Sequences</h3>
+<p><strong>Theorem.</strong> Let $(X,A)$ be a based pair and let $(\Sigma X, \Sigma A)$ be its suspension. The suspension operators for $X$ and for $A$ and the connecting homomorphisms of the two pairs fit into a ladder of exact sequences: every square,</p>
+<p>$$
+\tilde H_n(A) \to \tilde H_n(X) \to \tilde H_n(X/A) \xrightarrow{\ \partial\ } \tilde H_{n-1}(A),
+$$</p>
+<p>suspended by $\sigma$, commutes with the corresponding map of the suspended pair. In particular the suspension operator commutes with the boundary operator of the pair, $\sigma \partial = \partial \sigma$, and it is an isomorphism of the long exact sequences.</p>
+<p><em>Proof.</em> The connecting map of a pair is natural in maps of pairs, and the suspension and the maps of the pair commute; the identification $\Sigma(X/A)\cong \Sigma X/\Sigma A$ makes the suspension of the pair sequence the pair sequence of the suspension. $\square$</p>
+<p><strong>Corollary (the suspension of a cofibration).</strong> If $A\hookrightarrow X$ is a cofibration, the suspension of the quotient is the quotient of the suspensions and the suspension operator gives an isomorphism of the exact sequences of the cofibration and of its suspension; this is the standard form in which the suspension isomorphism is applied to a CW pair.</p>
+<p><em>Proof.</em> The quotient of the suspensions is the suspension of the quotient when the inclusion is a cofibration, and the previous theorem applies. $\square$</p>
+<h2 id="compatibility-with-the-other-operators">Compatibility with the Other Operators</h2>
+<h3 id="the-products">The Products</h3>
+<p><strong>Theorem.</strong> The reduced cohomology of a suspension has trivial product: for classes $u,v$ of positive degree in $\tilde H^*(\Sigma X;R)$,</p>
+<p>$$
+u \smile v = 0 .
+$$</p>
+<p>Equivalently, the cup product of two suspensions is zero, so the ring $\tilde H^*(\Sigma X;R)$ is square-zero in positive degrees; consequently the suspension operator does not transport the products of $X$ to the products of $\Sigma X$, and the product of a cohomology theory is not a stable operation.</p>
+<p><em>Proof.</em> The suspension is the union of the two cones along the base; each positive-degree class can be represented by a cocycle supported on one of the cones, and the two representatives can be chosen with disjoint supports because the intersection of the cones is the base of dimension lower — this is the standard argument for a suspension, given in <em>Simplicial and Singular Homology</em> and in the computation of the cohomology rings. $\square$</p>
+<p>The cup product of the suspensions is therefore lost under the suspension operator, and the stable invariants are the additive invariants. This is why the suspension spectrum of the stable theory of <em>Stable Homotopy Theory</em> carries the smash product and the products of the stable homotopy ring in a new structure, and not the products of the individual spaces.</p>
+<h3 id="the-transfer-and-the-suspension-spectrum">The Transfer and the Suspension Spectrum</h3>
+<p><strong>Theorem (compatibility with the transfer).</strong> Let $p : E \to B$ be a covering with a finite deck group and let $\tau$ be its transfer of <em>The Transfer Map</em>. The suspension $\Sigma p : \Sigma E \to \Sigma B$ is a covering with the same deck group and transfer $\tau^{\Sigma}$, and the two transfers are compatible with the suspension operators:</p>
+<p>$$
+\sigma_n \circ \tau_* = \tau^{\Sigma}_* \circ \sigma_n ,
+$$</p>
+<p>that is, suspending a transferred class gives the transfer of the suspended class. In particular the fixed-part isomorphism $H_n(B;R)\cong H_n(E;R)^G$ of <em>The Transfer Map</em> suspends to the same statement in degree $n+1$.</p>
+<p><em>Proof.</em> Both operators are induced by the cone on the simplices, and the cone of a sum over the deck group is the sum over the deck group of the cones; the connecting maps are natural. $\square$</p>
+<p><strong>Remark (the suspension spectrum).</strong> The suspension operator is the structure map of the suspension spectrum: the sequence</p>
+<p>$$
+X \xrightarrow{\ \sigma\ } \Omega \Sigma X \xrightarrow{\ \sigma\ } \Omega^2 \Sigma^2 X \xrightarrow{\ \sigma\ } \cdots
+$$</p>
+<p>of the homotopy-theoretic adjunction is the unstable form, and the stable homotopy groups are the colimit. The passage from the spaces to the spectra, the smash product and the stable homotopy category is the subject of <em>Stable Homotopy Theory</em>; the suspension operator of this article is its degree-one structure map on homology, and the colimit of the suspended homology is $\tilde H_*(X)$ with the degree absorbed, which is the reason the stable homology is the ordinary homology.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the spheres).</strong> For $X = S^n$ the suspension is $\Sigma S^n = S^{n+1}$, and the suspension operator gives $\tilde H_{n+1}(S^{n+1};R)\cong \tilde H_n(S^n;R)\cong R$. Iterating, $\tilde H_{n+k}(S^{n+k};R)\cong R$ generated by the suspended fundamental class, and the whole of the reduced homology of the spheres is generated from $\tilde H_0(S^0;R)$ by the suspension operator.</p>
+<p><strong>Example (the Euler characteristic).</strong> For a finite CW complex $X$ the alternating sum of the ranks changes under suspension by $\chi(\Sigma X) = 2 - \chi(X)$, since $\tilde\chi(\Sigma X) = -\tilde\chi(X)$ and $\chi = \tilde\chi + 1$ for a non-empty connected space. For $X = S^0$ this gives $\chi(S^1) = 2 - 2 = 0$, and for $X = S^2$ it gives $\chi(S^3) = 2 - 2 = 0$, as the alternating sums of the sphere homologies require.</p>
+<p><strong>Example (the projective spaces).</strong> The suspension operator gives $\tilde H_{k+1}(\Sigma\mathbb{RP}^n;\mathbb{F}_2)\cong \tilde H_k(\mathbb{RP}^n;\mathbb{F}_2)$, so the mod-2 Betti numbers of the suspension are those of the space shifted by one; the product, however, is not transported, by the theorem on the trivial product of a suspension, and the mod-2 cohomology ring of a suspension is square-zero in positive degrees.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X$ glued along $X$, and the cone operator $C$ satisfies the chain identity $\partial C + C\partial = \iota$ with the inclusion of the space in its cone, so that the cone is contractible. The pair $(C X, X)$ has its connecting homomorphism an isomorphism, and the <strong>suspension operator</strong> $\sigma : \tilde H_n(X;R)\to \tilde H_{n+1}(\Sigma X;R)$ is its inverse, realized on a cycle by the cone with a sign, $(-1)^{n+1}C$. The suspension operator is a natural isomorphism, functorial in based maps and homotopies, iterating to $\tilde H_{n+k}(\Sigma^k X)\cong\tilde H_n(X)$; it is compatible with the boundary, in that it inverts the connecting homomorphism and commutes with the connecting maps of a pair, giving a map of the long exact sequences of the suspended pair. It is compatible with the transfer of a covering, suspending the fixed-part isomorphism of <em>The Transfer Map</em>; and it is not compatible with the products, because the reduced cohomology of a suspension has trivial product, which is why the products reappear only in the stable category of <em>Stable Homotopy Theory</em>. The suspension isomorphism for the homotopy groups is the Freudenthal theorem of <em>Homotopy Groups and Fibrations</em>, and the periodic isomorphism of the topological $K$-theory of <em>Topological K-Theory</em> is the same operator for that cohomology theory. Nothing analytic and nothing geometric was used.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma X$, $S X$</td>
+<td>Reduced and unreduced suspension of a based space</td>
+</tr>
+<tr>
+<td>$\Sigma f$</td>
+<td>Suspension of a based map; $\Sigma(gf)=\Sigma g\,\Sigma f$</td>
+</tr>
+<tr>
+<td>$C X$, $C\sigma$, $C$</td>
+<td>Cone on a space; cone on a simplex; the cone operator</td>
+</tr>
+<tr>
+<td>$\partial C + C\partial = \iota$</td>
+<td>Cone identity; the cone is contractible</td>
+</tr>
+<tr>
+<td>$(C X, X)$</td>
+<td>Cone pair; its connecting map is an isomorphism</td>
+</tr>
+<tr>
+<td>$\partial : \tilde H_{n+1}(\Sigma X)\to\tilde H_n(X)$</td>
+<td>Connecting isomorphism of the cone pair</td>
+</tr>
+<tr>
+<td>$\sigma_n = \partial^{-1}$</td>
+<td>Suspension operator, an isomorphism raising the degree</td>
+</tr>
+<tr>
+<td>$\sigma_n[c] = (-1)^{n+1}[Cc]$</td>
+<td>The operator on a cycle</td>
+</tr>
+<tr>
+<td>$\Sigma(X,A)$, $(\Sigma X,\Sigma A)$</td>
+<td>Suspension of a pair; the ladder of exact sequences</td>
+</tr>
+<tr>
+<td>$u\smile v = 0$</td>
+<td>Trivial product in the positive reduced cohomology of a suspension</td>
+</tr>
+<tr>
+<td>$\tilde H_{n+k}(\Sigma^k X)\cong\tilde H_n(X)$</td>
+<td>Iterated suspension isomorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the suspension, the cone, the suspension isomorphism and the Mayer–Vietoris proof.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for the suspension isomorphisms in homology and cohomology and their naturality.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the cone, the connecting homomorphism of the cone pair and the suspension isomorphism.</li>
+<li>George W. Whitehead, <em>Elements of Homotopy Theory</em> (Springer, 1978), for the Freudenthal suspension theorem and the stable homotopy groups of a space.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for the cone and suspension of complexes and the shift operator.</li>
+<li>J. Peter May, <em>A Concise Course in Algebraic Topology</em> (University of Chicago Press, 1999), for the suspension as the structure map of a spectrum and the stable category.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

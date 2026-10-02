@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Decomposition and the Cartan Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-decomposition-and-the-cartan-involution"><strong>The Cartan Decomposition and the Cartan Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a real semisimple Lie algebra the Cartan involution is the involution that makes the twisted Killing form positive definite, and the decomposition of the algebra into its $+1$ and its $-1$ eigenspaces is the <strong>Cartan decomposition</strong>. The two pieces are not symmetric: the fixed part is a subalgebra, the complement is a module over it, and the bracket of two complement elements falls back into the fixed part. Globally the decomposition exponentiates to the polar decomposition of the group, the fixed part integrates to a <strong>maximal compact subgroup</strong>, and the quotient is the symmetric space of the group. The decomposition is the algebraic skeleton on which the real structure theory, the representation theory and the analysis of the group are built.</p>
+<p>This article treats the Cartan decomposition and the Cartan involution and the maximal compact subgroup they produce. It is the third article of the <code>- * Theory</code> group of the category; the real forms and the existence of the Cartan involution for a semisimple algebra are from <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>, the analytic consequences are <em>Unitary Representations of a Lie Group</em>, and the Hermitian case is <em>Hermitian Lie Groups and the Bounded Domain</em>.</p>
+<p>The article assumes the real and the complex Lie group, the exponential map and its differential from <em>Lie Groups</em> and <em>The Lie Algebra and the Exponential Map</em>, the semisimple structure and the Killing form from <em>Structure of Lie Algebras</em>, the involution and its fixed and anti-fixed parts from <em>Involutive Groups</em> and <em>Graded Lie Algebras with an Involution</em>, and the polar decomposition of a real Lie algebra from <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>. The Riemannian geometry of the symmetric space — its metric, its geodesics and its curvature as objects of study — belongs to Part IV, and the present article uses the homogeneous space only through the involution that defines it; the harmonic analysis on the symmetric space belongs to <em>The Convolution Operator on a Symmetric Space</em> and to the later articles of the category.</p>
+<h2 id="the-involution-and-its-eigenspaces">The Involution and Its Eigenspaces</h2>
+<h3 id="the-cartan-involution">The Cartan Involution</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a real semisimple Lie algebra with Killing form $B$. A <strong>Cartan involution</strong> of $\mathrm{G}$ is an involutive automorphism $\theta$ such that the twisted form</p>
+<p>$$
+B_\theta(X,Y) = -B(X,\theta Y)
+$$</p>
+<p>is positive definite. The existence and the conjugacy of the Cartan involutions, and the fact that the compact real form is the fixed algebra of a Cartan involution of the complexification, are established in <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>.</p>
+<p><strong>Definition.</strong> The <strong>Cartan decomposition</strong> attached to $\theta$ is the decomposition into the eigenspaces</p>
+<p>$$
+\mathrm{G} = \mathrm{K}\oplus\mathrm{P}, \qquad \mathrm{K} = \{X : \theta X = X\}, \qquad \mathrm{P} = \{X : \theta X = -X\} .
+$$</p>
+<p>Its elements are written $X = X_{\mathrm{K}} + X_{\mathrm{P}}$ with the two components in the two pieces.</p>
+<h3 id="the-bracket-relations">The Bracket Relations</h3>
+<p><strong>Proposition.</strong> The decomposition satisfies</p>
+<p>$$
+[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}, \qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}, \qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K} .
+$$</p>
+<p><em>Proof.</em> The involution $\theta$ is an automorphism, so $\theta[X,Y] = [\theta X,\theta Y]$; taking $X,Y$ in the eigenpieces with signs $\epsilon,\delta\in\{+1,-1\}$ gives $\theta[X,Y] = \epsilon\delta[X,Y]$, so the bracket lies in the eigenspace of the sign $\epsilon\delta$. In particular $\mathrm{K}$ is a subalgebra, $\mathrm{P}$ is a $\mathrm{K}$-module, and the sum is a $\mathbb{Z}/2$-grading of the Lie algebra in the sense of <em>Graded Lie Algebras with an Involution</em>.</p>
+<p><strong>Proposition.</strong> The two pieces are orthogonal for the Killing form and for the twisted form, and the restrictions satisfy</p>
+<p>$$
+B_\theta(X,Y) = \begin{cases} -B(X,Y), & X,Y\in\mathrm{K},\\ B(X,Y), & X,Y\in\mathrm{P},\\ 0, & X\in\mathrm{K},\ Y\in\mathrm{P}, \end{cases}
+$$</p>
+<p>so that $-B$ is positive definite on $\mathrm{K}$ and $B$ is positive definite on $\mathrm{P}$.</p>
+<p><em>Proof.</em> The decomposition into eigenspaces of an involution that is an automorphism is orthogonal for the invariant form $B$, because $B(X,Y) = B(\theta X,\theta Y) = \epsilon\delta\,B(X,Y)$; the displayed case distinction follows, and the definiteness is the positivity of $B_\theta$ together with the signs.</p>
+<h3 id="the-killing-form-on-the-pieces">The Killing Form on the Pieces</h3>
+<p><strong>Corollary.</strong> The restriction of the Killing form to $\mathrm{K}$ is negative definite and to $\mathrm{P}$ is positive definite, and the involution $\theta$ is symmetric with respect to $B$: $B(\theta X,Y) = B(X,\theta Y)$. The signature of $B$ is therefore $(\dim\mathrm{P},\dim\mathrm{K})$.</p>
+<p><em>Proof.</em> The definiteness is the case distinction above with $B_\theta$ positive; the symmetry of $\theta$ with respect to $B$ is the invariance of $B$ under the automorphism $\theta$, and the signature counts the positive and the negative directions.</p>
+<h2 id="the-structure-of-the-decomposition">The Structure of the Decomposition</h2>
+<h3 id="the-decomposition-determines-the-involution">The Decomposition Determines the Involution</h3>
+<p><strong>Theorem.</strong> Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be a direct sum decomposition of a real semisimple Lie algebra such that $\mathrm{K}$ is a subalgebra, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, and $\mathrm{K}$ and $\mathrm{P}$ are orthogonal under $B$ with $B$ negative definite on $\mathrm{K}$ and positive definite on $\mathrm{P}$. Then the linear map $\theta$ equal to $+\mathrm{id}$ on $\mathrm{K}$ and $-\mathrm{id}$ on $\mathrm{P}$ is a Cartan involution, and the given decomposition is its Cartan decomposition.</p>
+<p><em>Proof.</em> The map $\theta$ is an automorphism because the bracket relations have exactly the signs needed, $\theta[X,Y] = [\theta X,\theta Y]$ on homogeneous pairs; it is involutive by construction; and $B_\theta(X,Y) = -B(X,\theta Y)$ is positive definite because on $\mathrm{K}$ it is $-B$ and on $\mathrm{P}$ it is $B$, with the two pieces orthogonal by hypothesis. Hence $\theta$ is a Cartan involution and the decomposition is its eigenspace decomposition.</p>
+<h3 id="the-compact-type-and-the-non-compact-type">The Compact Type and the Non-Compact Type</h3>
+<p><strong>Definition.</strong> The subalgebra $\mathrm{K}$ is of <strong>compact type</strong> — its Killing form is negative definite, so it is a compact Lie algebra in the sense of <em>Structure of Lie Algebras</em> — and a nonzero element of $\mathrm{P}$ is of <strong>non-compact type</strong>. An element $X\in\mathrm{G}$ is <strong>elliptic</strong> when $\operatorname{ad}_X$ is semisimple with purely imaginary eigenvalues, <strong>hyperbolic</strong> when $\operatorname{ad}_X$ is semisimple with real eigenvalues, and <strong>nilpotent</strong> when $\operatorname{ad}_X$ is nilpotent. Every element has a component in $\mathrm{K}$ that is elliptic and a component in $\mathrm{P}$ that is hyperbolic or zero.</p>
+<p><em>Proof.</em> On $\mathrm{K}$ the form $B$ is negative definite, so $\operatorname{ad}_X$ for $X\in\mathrm{K}$ is skew with respect to $B_\theta$, hence diagonalisable over $\mathbb{C}$ with purely imaginary eigenvalues; on $\mathrm{P}$ it is self-adjoint with respect to the positive form, hence diagonalisable with real eigenvalues. The decomposition of an element into its two components separates the two types, and the nilpotent case occurs when the hyperbolic component vanishes.</p>
+<p><strong>Corollary (the maximal compact subalgebra).</strong> The subalgebra $\mathrm{K}$ is a maximal compactly embedded subalgebra of $\mathrm{G}$: it is compact, it is contained in no larger compactly embedded subalgebra, and every compactly embedded subalgebra is conjugate to a subalgebra of $\mathrm{K}$.</p>
+<p><em>Proof.</em> The compactness is the negative definiteness of the Killing form on $\mathrm{K}$; a larger compactly embedded subalgebra would contain an element of $\mathrm{P}$, whose adjoint is self-adjoint with a nonzero real eigenvalue, contradicting the compactness; the conjugacy is the conjugacy of the Cartan involutions.</p>
+<h2 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h2>
+<h3 id="the-fixed-subgroup">The Fixed Subgroup</h3>
+<p><strong>Definition.</strong> Let $G$ be a connected Lie group with Lie algebra $\mathrm{G}$ and let $\theta$ be a Cartan involution of $\mathrm{G}$. The <strong>fixed subgroup</strong> is the closed subgroup</p>
+<p>$$
+K = \{g\in G : \Theta(g) = g\}
+$$</p>
+<p>where $\Theta$ is the automorphism of $G$ integrating $\theta$; when $G$ is simply connected the automorphism exists and is unique, and in general it exists on a covering group. Its Lie algebra is $\mathrm{K}$.</p>
+<p><strong>Theorem (the maximal compact subgroup).</strong> The subgroup $K$ is a maximal compact subgroup of $G$: it is compact, it is contained in no larger compact subgroup, and every compact subgroup of $G$ is conjugate to a subgroup of $K$. All maximal compact subgroups of $G$ are conjugate, and the quotient $G/K$ is connected when $G$ is connected.</p>
+<p><em>Proof.</em> The compactness of $K$ follows from that of the algebra $\mathrm{K}$ and the closedness of the fixed set of an automorphism; a larger compact subgroup would have a compact Lie algebra strictly containing $\mathrm{K}$, contradicting the maximality of $\mathrm{K}$; the conjugacy of the compact subgroups is the conjugacy of the maximal compactly embedded subalgebras of $\mathrm{G}$, transferable to the group because the adjoint map has the compact subgroups as its fibres up to the centre. The connectedness of $G/K$ is the connectedness of $G$ and the surjectivity of the quotient map.</p>
+<h3 id="the-polar-decomposition">The Polar Decomposition</h3>
+<p><strong>Theorem (the Cartan decomposition of the group).</strong> Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be the Cartan decomposition. The map</p>
+<p>$$
+\mathrm{K}\times\mathrm{P} \longrightarrow G, \qquad (X,Y) \longmapsto \exp X\,\exp Y ,
+$$</p>
+<p>is a diffeomorphism onto $G$; equivalently every $g\in G$ has a unique expression $g = k\exp Y$ with $k\in K$ and $Y\in\mathrm{P}$, and the map $Y\mapsto\exp Y$ is a diffeomorphism from $\mathrm{P}$ onto the image.</p>
+<p><em>Proof.</em> The differential of the map at the identity is the identity because $\mathrm{K}\cap\mathrm{P} = 0$, so it is a local diffeomorphism; the exponential restricted to $\mathrm{P}$ is injective because $B$ is positive definite on $\mathrm{P}$ and the flow of a hyperbolic element is unbounded; the surjectivity follows from the polar decomposition of the linear group and the closedness of the image, which is the standard argument of the Cartan decomposition. The detailed proof is in the references.</p>
+<p><strong>Corollary.</strong> The group $G$ is homotopy equivalent to $K$, the quotient $G/K$ is diffeomorphic to the vector space $\mathrm{P}$, and $\exp : \mathrm{P}\to G/K$ is a diffeomorphism; in particular $G$ has the homotopy type of its maximal compact subgroup and $G/K$ is contractible.</p>
+<p><em>Proof.</em> The polar decomposition exhibits $G$ as the product of the compact $K$ with the contractible space $\exp\mathrm{P}$; the quotient identifies with $\mathrm{P}$, which is a vector space, and the fibration $K\to G\to G/K$ gives the homotopy equivalence.</p>
+<h2 id="the-symmetric-space">The Symmetric Space</h2>
+<p><strong>Definition.</strong> The <strong>symmetric space</strong> attached to the pair $(\mathrm{G},\theta)$ is the quotient $G/K$ with the base point $o = eK$; the involution $\Theta$ descends to the map $gK\mapsto\Theta(g)K$, which fixes $o$, and the tangent space at $o$ identifies with $\mathrm{P}$.</p>
+<p><strong>Theorem.</strong> The map $s_o : gK\mapsto\Theta(g)K$ is an involutive diffeomorphism with isolated fixed point $o$, and for every $p\in G/K$ the conjugate $s_p = g s_o g^{-1}$ with $p = go$ is an involutive diffeomorphism with isolated fixed point $p$; the family $(s_p)$ is the geodesic symmetry of the space, and the curvature at the base point is $R(X,Y)Z = -[[X,Y],Z]$ for $X,Y,Z\in\mathrm{P}$.</p>
+<p><em>Proof.</em> The conjugate maps are well defined because $K$ is the fixed subgroup, and each has the single fixed point $p$ because the differential of $s_p$ at $p$ is $-\mathrm{id}$ on $\mathrm{P}$; the curvature is computed from the Maurer--Cartan equation and the bracket relations of the Cartan decomposition, the components of $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$ producing the double bracket. The development of the geometry — the exponential coordinates, the restricted root system, the Weyl group and the boundary — belongs to Part IV.</p>
+<p><strong>Remark (the boundary with geometry).</strong> The symmetric space is introduced here only as the homogeneous space $G/K$ with the involution that defines it, because the article is about the decomposition of the algebra and the compact subgroup it determines. The metric, the geodesics and the curvature as objects of study, and the compactifications and the boundary theory, are Part IV.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-rank-one-algebra">The Rank-One Algebra</h3>
+<p>Let $\mathrm{G} = \mathrm{sl}_2(\mathbb{R})$ with the Cartan involution $\theta(X) = -X^{t}$, the negative transpose. Then $\mathrm{K} = \mathrm{so}(2)$ is one-dimensional, spanned by $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, and $\mathrm{P}$ consists of the traceless symmetric matrices, a two-dimensional space of non-compact type; the maximal compact subgroup is $SO(2)$ and the symmetric space is the hyperbolic plane up to the connected component, whose geometry belongs to Part IV.</p>
+<h3 id="the-orthogonal-algebras">The Orthogonal Algebras</h3>
+<p>Let $\mathrm{G} = \mathrm{so}(p,q)$ with the involution $\theta(X) = -X^{t}$ for the standard form of signature $(p,q)$. Then $\mathrm{K} = \mathrm{so}(p)\oplus\mathrm{so}(q)$ and $\mathrm{P}$ is the space of the off-diagonal blocks; $\dim\mathrm{K} = \frac{p(p-1)}{2} + \frac{q(q-1)}{2}$ and $\dim\mathrm{P} = pq$, and the symmetric space is the Grassmannian of the $p$-planes of a fixed parity, whose geometry is Part IV.</p>
+<h3 id="the-compact-case">The Compact Case</h3>
+<p>If $\mathrm{G}$ is compact, the Killing form is negative definite and the identity is a Cartan involution; then $\mathrm{K} = \mathrm{G}$, $\mathrm{P} = 0$, and $G/K$ is a point. This is the boundary case of the decomposition, and it is the one in which the analysis of the group is the Peter--Weyl theory of <em>Unitary Representations of a Lie Group</em> with no symmetric space present.</p>
+<h3 id="the-complex-case">The Complex Case</h3>
+<p>Let $\mathrm{G}$ be a complex semisimple Lie algebra regarded as a real Lie algebra with its real form $\mathrm{G}^{\mathbb{R}}$. The Cartan involution is the conjugation $\theta(X) = -X$ with respect to a compact real form; the decomposition $\mathrm{G}^{\mathbb{R}} = \mathrm{G}_u\oplus i\mathrm{G}_u$ has $\mathrm{K} = \mathrm{G}_u$ and $\mathrm{P} = i\mathrm{G}_u$, the maximal compact subgroup is the compact form, and the symmetric space is the space of the conjugacy classes, developed in the Hermitian theory of <em>Hermitian Lie Groups and the Bounded Domain</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Cartan involution</strong> of a real semisimple Lie algebra is an involutive automorphism $\theta$ for which the twisted Killing form $B_\theta(X,Y) = -B(X,\theta Y)$ is positive definite; it exists and is unique up to conjugation by an inner automorphism. Its eigenspaces give the <strong>Cartan decomposition</strong> $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$, with $\mathrm{K}$ a subalgebra, $\mathrm{P}$ a $\mathrm{K}$-module, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, the two pieces orthogonal under $B$, and $B$ negative definite on $\mathrm{K}$ and positive definite on $\mathrm{P}$; the converse holds, a decomposition with these properties determines its involution. The subalgebra $\mathrm{K}$ is of compact type and maximal compactly embedded, its elements are elliptic and the elements of $\mathrm{P}$ are hyperbolic or zero. Globally the fixed subgroup $K$ is a <strong>maximal compact subgroup</strong>, every compact subgroup is conjugate into it, and the Cartan decomposition exponentiates to the polar decomposition $G = K\exp\mathrm{P}$, a diffeomorphism; hence $G$ is homotopy equivalent to $K$ and $G/K$ is diffeomorphic to the vector space $\mathrm{P}$. The quotient $G/K$ is the symmetric space of the pair, with the geodesic symmetries induced by $\theta$ and curvature $R(X,Y)Z = -[[X,Y],Z]$ on $\mathrm{P}$; its geometry and its compactifications are Part IV, and its harmonic analysis is the later articles of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$B_\theta(X,Y) = -B(X,\theta Y)$</td>
+<td>the twisted form, positive definite</td>
+</tr>
+<tr>
+<td>$\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$</td>
+<td>the Cartan decomposition</td>
+</tr>
+<tr>
+<td>$\mathrm{K}$</td>
+<td>the fixed subalgebra, of compact type, maximal compactly embedded</td>
+</tr>
+<tr>
+<td>$\mathrm{P}$</td>
+<td>the complement, of non-compact type, a $\mathrm{K}$-module</td>
+</tr>
+<tr>
+<td>$[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$</td>
+<td>the bracket relations</td>
+</tr>
+<tr>
+<td>$K = G^{\Theta}$</td>
+<td>the maximal compact subgroup</td>
+</tr>
+<tr>
+<td>$G = K\exp\mathrm{P}$</td>
+<td>the polar decomposition, a diffeomorphism</td>
+</tr>
+<tr>
+<td>$G/K$</td>
+<td>the symmetric space</td>
+</tr>
+<tr>
+<td>$R(X,Y)Z = -[[X,Y],Z]$</td>
+<td>the curvature at the base point</td>
+</tr>
+<tr>
+<td>elliptic, hyperbolic, nilpotent</td>
+<td>the types of an element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the Cartan decomposition, the polar decomposition and the symmetric space.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the Cartan involution, the maximal compact subgroup and the structure of the real algebras.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, Volume II (Wiley, 1969), for the symmetric spaces, the geodesic symmetries and the curvature.</li>
+<li>Ottmar Loos, <em>Symmetric Spaces</em>, Volume I (Benjamin, 1969), for the algebraic theory of the symmetric spaces and the Cartan decomposition.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the maximal compact subgroups, the polar decomposition and the compactly embedded subalgebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

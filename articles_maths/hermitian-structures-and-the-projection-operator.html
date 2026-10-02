@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Structures and the Projection Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-structures-and-the-projection-operator"><strong>Hermitian Structures and the Projection Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Hermitian structure</strong> on a projective space is a nondegenerate Hermitian pairing, and among the projections of the space it singles out the <strong>orthogonal projections</strong> $P$: the projections with $P^2 = P = P^{\dagger}$, that is, the idempotents that are self-adjoint for the pairing. The article develops the projection operator together with the adjoint in the <strong>operator built from the involution</strong> layer of this Part: the projection is the idempotent of <em>The Projection Operator</em>, the pairing is the Hermitian structure of the <code>*</code> layer, and their intersection — the orthogonal projection — is the operator the pairing selects, with the kernel and the image orthogonal, the adjoint equal to the operator, and the spectral decomposition as the closure. The article proves which projections are orthogonal, and it proves the agreement of the adjoint with the orthogonal complement rather than assuming it.</p>
+<p>The article develops the Hermitian structures on a vector space and on a projective space, the adjoint of a projection with its image and kernel, the orthogonal projection with the characterisation $P^2 = P = P^{\dagger}$ and the least-squares property, the algebra and the order of the orthogonal projections, and the spectral decomposition of a self-adjoint operator into orthogonal projections. The projection itself is <em>The Projection Operator</em>, the adjoint is <em>The Adjoint under a Hermitian Pairing</em>, and the spectral theory is <em>Self-Adjoint Operators and the Spectral Theorem</em>; the article owns their intersection.</p>
+<p>The article assumes <em>The Projection Operator</em> for the idempotents, the centre of projection and the direct sum decomposition; <em>The Adjoint under a Hermitian Pairing</em> for the pairing, the adjoint and the self-adjoint elements; <em>Unitary Geometry over a Field with Involution</em> for the Hermitian forms and the unitary group; and <em>Vector Spaces</em> and <em>Linear Maps and Matrices</em> of Part I for the subspaces and the operators. The spectral theory of the self-adjoint operators and the orthogonal projections on a Hilbert space are <em>Self-Adjoint Operators and the Spectral Theorem</em>, named as a forward reference, and the article keeps the finite-dimensional case over a general field with an involution. No distance and no physics is invoked.</p>
+<h2 id="hermitian-structures-on-a-projective-space">Hermitian Structures on a Projective Space</h2>
+<h3 id="the-hermitian-structure">The Hermitian Structure</h3>
+<p><strong>Definition.</strong> Let $V$ be a finite-dimensional vector space over a field $K$ with an involution $c$, and let $h$ be a nondegenerate Hermitian pairing with the matrix $H$ with $H^{*} = H$. The <strong>Hermitian structure</strong> on $\mathbb{P}(V)$ is the pairing together with the induced polarity $W \mapsto W^\perp$ of the lattice of the subspaces,</p>
+<p>$$
+W^\perp = \{y \in V : h(w,y) = 0 \ \text{for all } w \in W\} ,
+$$</p>
+<p>an inclusion-reversing involution with $W^{\perp\perp} = W$ and $\dim W + \dim W^\perp = \dim V$.</p>
+<p><strong>Proposition.</strong> The Hermitian structure determines the orthogonal complement of every subspace, hence a <strong>complementary subspace</strong> for each $W$, the space $W^\perp$; the direct sum $V = W \oplus W^\perp$ holds exactly when the restriction of the pairing to $W$ is nondegenerate, and a subspace with a nondegenerate restriction has the pairing of the direct sum of the two restrictions. Every subspace has at least one complement, but the pairing selects the orthogonal one, and this is the structure that the projections of the next sections will use.</p>
+<p><strong>Proof.</strong> The orthogonal complement is an involution of the lattice by the nondegeneracy of the pairing, and the dimension formula is the standard one; the direct sum decomposition holds exactly when $W \cap W^\perp = 0$, which is the nondegeneracy of the restriction; the statement is the elementary linear algebra of a Hermitian pairing, in <em>Unitary Geometry over a Field with Involution</em> and <em>The Adjoint under a Hermitian Pairing</em>.</p>
+<p><strong>Definition.</strong> A subspace $W$ is <strong>isotropic</strong> when $h$ vanishes on it, <strong>nondegenerate</strong> when the restriction of $h$ to $W$ is nondegenerate, and <strong>totally isotropic</strong> when all its vectors are isotropic; the pairing is <strong>definite</strong> when every nonzero vector has $h(x,x) \neq 0$ and <strong>indefinite</strong> otherwise. Over the real and the complex fields the definite pairings are the positive-definite ones after the multiplication by a sign, and they are the pairings for which every subspace is nondegenerate.</p>
+<p><strong>Proposition.</strong> A subspace is nondegenerate exactly when it has the orthogonal complement with the direct sum, and the pairing is definite exactly when every subspace is nondegenerate; for the definite pairings the map $W \mapsto W^\perp$ is a complementation of the lattice, while for the indefinite pairings some subspaces meet their orthogonal complements.</p>
+<p><strong>Proof.</strong> The first statement is the previous proposition; a subspace with an isotropic vector fails to be nondegenerate because the span of the isotropic vector meets its orthogonal complement, and conversely a degenerate subspace has an isotropic vector in its radical. The statement is in <em>Unitary Geometry over a Field with Involution</em>.</p>
+<h2 id="the-adjoint-of-a-projection">The Adjoint of a Projection</h2>
+<h3 id="the-projection-and-its-adjoint">The Projection and Its Adjoint</h3>
+<p><strong>Definition.</strong> Let $P \in \operatorname{End}_K(V)$ be a projection, $P^2 = P$ (of <em>The Projection Operator</em>), and let $P^{\dagger}$ be its adjoint with respect to $h$, $h(Px,y) = h(x,P^{\dagger}y)$ (of <em>The Adjoint under a Hermitian Pairing</em>).</p>
+<p><strong>Theorem.</strong> The adjoint $P^{\dagger}$ of a projection is again a projection,</p>
+<p>$$
+(P^{\dagger})^2 = P^{\dagger} ,
+$$</p>
+<p>and its image and kernel are the orthogonal complements</p>
+<p>$$
+\operatorname{im} P^{\dagger} = (\ker P)^\perp , \qquad \ker P^{\dagger} = (\operatorname{im} P)^\perp ;
+$$</p>
+<p>consequently the adjoint of the projection onto $W$ along $U$ is the projection onto $U^\perp$ along $W^\perp$, and the two projections have the same rank.</p>
+<p><strong>Proof.</strong> The idempotence is $(P^\dagger)^2 = (P^2)^\dagger = P^\dagger$ by the anti-multiplicativity of the adjoint; for the image, $x \in \ker P^\dagger$ exactly when $h(x, Py) = h(P^\dagger x, y) = 0$ for all $y$, that is, exactly when $x$ is orthogonal to the image of $P$; the kernel statement follows, and the image is the orthogonal complement of the kernel by the involution of the lattice. The rank is preserved because the orthogonal complementation preserves the dimension. The statement is in <em>The Adjoint under a Hermitian Pairing</em> and <em>The Projection Operator</em>.</p>
+<p><strong>Corollary.</strong> The adjoint of a projection has the same trace as the projection, $\operatorname{tr} P^\dagger = \overline{\operatorname{tr} P}$, and for a self-adjoint projection the trace lies in the fixed field; the projection and its adjoint are conjugate when the two subspaces have the same dimension relations, and they coincide exactly in the orthogonal case of the next section.</p>
+<h3 id="the-orthogonal-projection">The Orthogonal Projection</h3>
+<p><strong>Definition.</strong> A projection $P$ is <strong>orthogonal</strong> for $h$ when $P = P^{\dagger}$, equivalently when $\ker P = (\operatorname{im} P)^\perp$; it is then the <strong>orthogonal projection</strong> onto $W = \operatorname{im} P$ along $W^\perp = \ker P$, and it is written $P_W$.</p>
+<p><strong>Theorem (the characterisation).</strong> For a projection $P$ the following are equivalent: (i) $P$ is orthogonal; (ii) $P$ is self-adjoint, $P^\dagger = P$; (iii) $h(x - Px, Px) = 0$ for every $x$, that is, the residual is orthogonal to the image; (iv) the kernel and the image of $P$ are orthogonal complements. For a definite pairing there is exactly one orthogonal projection onto each subspace $W$, namely the projection along $W^\perp$; for an indefinite pairing a subspace may have more than one orthogonal projection or none, according to its degeneration.</p>
+<p><strong>Proof.</strong> The equivalence of (i), (ii) and (iv) is the identity $\ker P^\dagger = (\operatorname{im}P)^\perp$ of the previous theorem applied to the projection $P$: $P = P^\dagger$ holds exactly when the kernel of $P$ equals $(\operatorname{im}P)^\perp$. The equality $h(x - Px, Px) = h(x,Px) - h(Px,Px)$ is the statement (iii), and it vanishes exactly when $Px$ realises the orthogonal decomposition; for a definite pairing every subspace is nondegenerate, so the orthogonal projection exists and is unique, while for an indefinite pairing the existence fails for the isotropic subspaces. The statement is the standard orthogonal projection, in <em>Unitary Geometry over a Field with Involution</em>.</p>
+<p><strong>Example (the least-squares property).</strong> Let the pairing be positive definite and let $W \subseteq V$ be a subspace; then for every $x$ the vector $P_W x$ is the unique element of $W$ minimising the square length $h(x - w, x - w)$ over $w \in W$, because $h(x - P_W x, w) = 0$ for all $w \in W$ makes the identity</p>
+<p>$$
+h(x - w, x - w) = h(x - P_W x, x - P_W x) + h(P_W x - w, P_W x - w)
+$$</p>
+<p>an orthogonal decomposition; the orthogonal projection is the minimising element, and the property is the arithmetic content of the self-adjointness.</p>
+<p><strong>Proof.</strong> The displayed identity is the expansion of $x - w = (x - P_W x) + (P_W x - w)$ and the vanishing of the cross term, which is the orthogonality of the residual to $W$; the two summands are nonnegative for a definite pairing, so the minimum is attained at $w = P_W x$. The statement is the classical property of the orthogonal projection, in <em>Unitary Geometry over a Field with Involution</em> and <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>
+<h2 id="the-algebra-of-the-orthogonal-projections">The Algebra of the Orthogonal Projections</h2>
+<h3 id="the-order-and-the-products">The Order and the Products</h3>
+<p><strong>Definition.</strong> The orthogonal projections onto the subspaces are ordered by the inclusion of the images,</p>
+<p>$$
+P_W \leq P_W' \quad \Longleftrightarrow \quad W \subseteq W' ,
+$$</p>
+<p>and the meet and the join of two orthogonal projections are the orthogonal projections onto $W \cap W'$ and $W + W'$ when the two subspaces have the appropriate position.</p>
+<p><strong>Theorem.</strong> For two orthogonal projections $P$ and $Q$ the product $PQ$ is a projection exactly when $P$ and $Q$ commute, $PQ = QP$, in which case $PQ$ is the orthogonal projection onto $\operatorname{im} P \cap \operatorname{im} Q$; the order satisfies $P \leq Q$ exactly when $PQ = P$, and the orthogonal projections form a lattice under the order with the meet $P \wedge Q$ the projection onto the intersection when the two commute. The difference $P - Q$ of two orthogonal projections with $Q \leq P$ is again an orthogonal projection.</p>
+<p><strong>Proof.</strong> The product of two self-adjoint idempotents is a projection exactly when it is self-adjoint and idempotent, which forces the commutation; the image of $PQ$ under the commutation is the intersection of the images; the order relation is the idempotence of the product, and the statements are the standard algebra of the projections. The statement is in <em>Unitary Geometry over a Field with Involution</em> and <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>
+<h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
+<p><strong>Theorem (the spectral decomposition).</strong> Let $T$ be a self-adjoint operator on a Hermitian space over a field in which the characteristic is not two, and suppose that $T$ is diagonalisable with the distinct eigenvalues $t_1, \dots, t_k$ in the fixed field; then $T$ decomposes as</p>
+<p>$$
+T = t_1 P_1 + \cdots + t_k P_k ,
+$$</p>
+<p>where $P_i$ is the orthogonal projection onto the eigenspace of $t_i$, the projections are pairwise orthogonal, $P_i P_j = 0$ for $i \neq j$, and they sum to the identity, $P_1 + \cdots + P_k = \mathrm{id}$; conversely every sum of this form with the $t_i$ in the fixed field is self-adjoint.</p>
+<p><strong>Proof.</strong> The eigenspaces of a self-adjoint operator are pairwise orthogonal: for $x$ in the eigenspace of $t_i$ and $y$ in the eigenspace of $t_j$, the identity $h(Tx,y) = t_i h(x,y)$ equals $h(x,Ty) = \bar{t}_j h(x,y) = t_j h(x,y)$ because the eigenvalues are fixed, so $(t_i - t_j)h(x,y) = 0$; the projections onto the eigenspaces are orthogonal and the sum of the operators is $T$ on the sum of the eigenspaces, which is the whole space by the diagonalisability. The statement is in <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>
+<p><strong>Corollary (the orthogonal projection as a spectral projection).</strong> An operator $P$ is an orthogonal projection exactly when it is self-adjoint with the eigenvalues $0$ and $1$, and the orthogonal projections are exactly the spectral projections of the spectral decomposition; the lattice of the orthogonal projections is the lattice of the self-adjoint idempotents, and the spectral theorem expresses every diagonalisable self-adjoint operator as a combination of them.</p>
+<p><strong>Remark (the pairing selects one projection among many).</strong> A subspace $W$ carries many projections onto it along its various complements, and the projection $P_W$ is the unique one that is self-adjoint for the pairing; the Hermitian structure therefore does not add a new projection to the space but it fixes one among the existing ones, and this is the sense in which the article is the intersection of <em>The Projection Operator</em> and <em>The Adjoint under a Hermitian Pairing</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian structure on $\mathbb{P}(V)$ is a nondegenerate Hermitian pairing $h$ with the polarity $W \mapsto W^\perp$; it selects the complements and the nondegenerate subspaces, and for a definite pairing every subspace is nondegenerate. The adjoint of a projection $P$ is again a projection, with $\operatorname{im} P^\dagger = (\ker P)^\perp$ and $\ker P^\dagger = (\operatorname{im} P)^\perp$, so the adjoint of the projection onto $W$ along $U$ is the projection onto $U^\perp$ along $W^\perp$. A projection is <strong>orthogonal</strong> exactly when $P = P^\dagger$, equivalently when the kernel and the image are orthogonal complements, equivalently when $h(x - Px, Px) = 0$; for a definite pairing the orthogonal projection $P_W$ onto each subspace exists and is unique and is the minimising element of the square length over $W$. The orthogonal projections are ordered by the images, the product of two is a projection exactly when they commute, and the spectral decomposition writes a diagonalisable self-adjoint operator as $T = t_1P_1 + \cdots + t_kP_k$ with pairwise orthogonal projections summing to the identity; the orthogonal projections are exactly the self-adjoint idempotents, and the pairing fixes one projection among the many onto each subspace.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h(x,y) = \overline{h(y,x)}$</td>
+<td>Nondegenerate Hermitian pairing</td>
+</tr>
+<tr>
+<td>$W^\perp = \{y : h(W,y) = 0\}$</td>
+<td>Orthogonal complement, the polarity</td>
+</tr>
+<tr>
+<td>$P^2 = P$</td>
+<td>Projection (idempotent)</td>
+</tr>
+<tr>
+<td>$P^{\dagger}$</td>
+<td>Adjoint of the projection</td>
+</tr>
+<tr>
+<td>$\operatorname{im} P^\dagger = (\ker P)^\perp$</td>
+<td>Image of the adjoint</td>
+</tr>
+<tr>
+<td>$\ker P^\dagger = (\operatorname{im} P)^\perp$</td>
+<td>Kernel of the adjoint</td>
+</tr>
+<tr>
+<td>$P = P^{\dagger}$</td>
+<td>Orthogonal (self-adjoint) projection</td>
+</tr>
+<tr>
+<td>$P_W$</td>
+<td>Orthogonal projection onto $W$ along $W^\perp$</td>
+</tr>
+<tr>
+<td>$h(x - Px, Px) = 0$</td>
+<td>Orthogonality of the residual, the characterisation</td>
+</tr>
+<tr>
+<td>$P \leq Q \iff \operatorname{im} P \subseteq \operatorname{im} Q$</td>
+<td>Order of the orthogonal projections</td>
+</tr>
+<tr>
+<td>$PQ = QP$</td>
+<td>Condition for the product to be a projection</td>
+</tr>
+<tr>
+<td>$T = \sum_i t_i P_i$</td>
+<td>Spectral decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>Finite-Dimensional Vector Spaces</em>, 2nd ed. (Van Nostrand, 1958), for the projections, the adjoints and the orthogonal projections.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em>, 2nd ed. (Springer, 1982), for the algebra and the lattice of the orthogonal projections.</li>
+<li>Tsit Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the Hermitian forms and the nondegenerate subspaces.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the Hermitian structures and the unitary groups.</li>
+<li>Israel M. Gelfand and Mark A. Naimark, <em>Unitäre Darstellungen der klassischen Gruppen</em> (Akademie-Verlag, 1957), for the projection-valued measures and the spectral theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

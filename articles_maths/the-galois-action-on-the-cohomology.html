@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Galois Action on the Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-galois-action-on-the-cohomology"><strong>The Galois Action on the Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Galois action on a variety over a field acts on the cohomology of its sheaves, and at the level of the elements of the cohomology it is an <strong>involution</strong>, or a group action, that is fixed by nothing linear and yet has a rich theory: the cohomology is a <strong>semilinear module</strong>, its invariants are the cohomology of the descended variety, and the comparison between the two is the <strong>Hochschild–Serre spectral sequence</strong>. When the coefficients are chosen so that the twist is absorbed, the semilinear module becomes a <strong>Galois representation</strong>, a continuous linear action of the Galois group on a finite-dimensional space over the coefficient field, and the invariants of the representation are the cohomology of the variety over the base field. This article fixes the semilinear module of the cohomology, its invariants and the spectral sequence, the Galois representations it defines, and the behaviour of the cup product and the intersection pairing under the involution, and it is the fourth article of the <code>- * Theory</code> group.</p>
+<p>The article reads the operator of <em>The Galois Action as an Operator</em> on the cohomology, and it is the cohomological companion of <em>Real Structures on Varieties and Galois Descent</em>: descent gives the variety, and the present article gives the cohomology of the descended variety as the invariants. The cohomology is that of <em>Coherent Sheaves</em> and <em>Sheaf Cohomology</em>, the group cohomology and the spectral sequences are Part I's <em>Group Cohomology</em>, <em>Galois Cohomology</em> and <em>Spectral Sequences</em>, and the cup product and the duality pairing are <em>Sheaf Cohomology</em> and the Serre duality of <em>Sheaves in Algebraic Geometry</em>. The <strong>étale</strong> cohomology, in which the Galois representations of arithmetic are constructed and in which the Frobenius eigenvalues of the Weil conjectures live, is not part of this Part and is named with an explicit deferral; the reader meets it in the literature of <em>The Frobenius Operator</em>.</p>
+<p>Throughout $k$ is a field, $L/k$ is a Galois extension with group $G$, $X$ is a variety over $k$, and $\mathcal{F}$ is a quasi-coherent sheaf on $X_L$ that is $G$-equivariant, with the descent datum $\alpha_\sigma : \sigma^*\mathcal{F}\to\mathcal{F}$ of <em>The Galois Action as an Operator</em>. The cohomology is written $H^i(X_L,\mathcal{F})$ and the invariants $H^i(X_L,\mathcal{F})^G$.</p>
+<h2 id="the-galois-module-of-the-cohomology">The Galois Module of the Cohomology</h2>
+<h3 id="the-semilinear-action">The Semilinear Action</h3>
+<p><strong>Definition.</strong> A <strong>semilinear $G$-module</strong> over $L$ is an $L$-vector space $M$ with an action of $G$ by additive maps such that
+$$
+\sigma(\ell m) = \sigma(\ell)\,\sigma(m) \qquad (\sigma\in G,\ \ell\in L,\ m\in M);
+$$
+the action is $\sigma$-semilinear in each element. The <strong>invariants</strong> are the subspace
+$$
+M^G = \{m\in M : \sigma(m) = m \text{ for all } \sigma\in G\},
+$$
+which is a $k$-vector space.</p>
+<p><strong>Theorem (the cohomology is a semilinear module).</strong> For each $i\geq0$ the action of <em>The Galois Action as an Operator</em> endows the cohomology with the structure of a semilinear $G$-module over $L$,
+$$
+\sigma^* : H^i(X_L,\mathcal{F})\longrightarrow H^i(X_L,\mathcal{F}), \qquad \sigma^*(\ell v) = \sigma(\ell)\,\sigma^*(v),
+$$
+and the assignment $\sigma\mapsto\sigma^*$ is multiplicative, $(\sigma\tau)^* = \sigma^*\tau^*$.</p>
+<p><em>Proof.</em> This is the semilinear action of <em>The Galois Action as an Operator</em>, applied to the cohomology of a $G$-equivariant sheaf; the semilinearity is the semilinearity of the action on the structure sheaf, which the functoriality of the cohomology inherits, and the multiplicativity is the functoriality of the pullback.</p>
+<p><strong>Remark (the module structure is not linear).</strong> The action is not $L$-linear unless $G$ acts trivially on the coefficients, so the cohomology is not a representation of $G$ in the strict sense over $L$; it is a representation of $G$ in the semilinear sense. This is the same phenomenon as the operator-level semilinearity, now read on the elements, and it is the reason the invariant subspace is taken with respect to the twisted action and is only a $k$-space.</p>
+<h3 id="the-twisted-representation">The Twisted Representation</h3>
+<p><strong>Definition.</strong> A <strong>twisted representation</strong> of $G$ over $L$ is a semilinear $G$-module; when a coefficient field $E$ with a linear $G$-action is available and the twist is absorbed, the module $M$ is an $E$-linear representation of $G$, called a <strong>Galois representation</strong>. Concretely, if $\mathcal{F}$ is a sheaf of $E$-modules over $E$ where $G$ acts $E$-linearly and $\mathcal{F}$ is $G$-equivariant, then $H^i(X_L,\mathcal{F})$ is an $E$-linear $G$-module.</p>
+<p><strong>Proposition (the coefficients that linearise the action).</strong> The structure sheaf has the semilinear action with the twist by $G$ on $L$; a constant sheaf with a linear $G$-action over a field on which $G$ acts trivially has a linear one. The passage from the semilinear to the linear is the choice of coefficients, and the two agree when the extension is trivial.</p>
+<p><em>Proof.</em> The action on $H^i(X_L,\mathcal{O}_{X_L})$ is semilinear by the theorem above. For a constant sheaf of $E$-modules with $L\hookrightarrow E$ and $G$ acting $E$-linearly, the twist is absorbed by the moduli of the action on the coefficients, and the resulting action is $E$-linear; when $L=k$ the twist is trivial and the two notions coincide.</p>
+<p><strong>Example (the Galois representation of the arithmetic).</strong> For $k$ a number field and $E=\mathbb{Q}_\ell$ the $\ell$-adic cohomology $H^i_{\mathrm{ét}}(X_{\bar k},\mathbb{Q}_\ell)$ carries a continuous $\mathbb{Q}_\ell$-linear action of the absolute Galois group, a Galois representation unramified outside a finite set when $X$ is smooth and proper and of the expected weight when $X$ has good reduction; this is the representation of the arithmetic, and its construction is the deferred étale theory.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<h3 id="the-invariant-cohomology">The Invariant Cohomology</h3>
+<p><strong>Theorem (the invariants are the cohomology of the descended variety).</strong> Let $X$ be a variety over $k$, let $L/k$ be a finite Galois extension with group $G$, and let $\mathcal{F}$ be a $G$-equivariant quasi-coherent sheaf on $X_L$ descended from a sheaf $\mathcal{F}_0$ on $X$. Then for every $i$
+$$
+H^i(X_L,\mathcal{F})^G\ \cong\ H^i(X,\mathcal{F}_0),
+$$
+the invariants of the semilinear action are the cohomology of the descended sheaf.</p>
+<p><em>Proof.</em> For the structure sheaf this is the invariant-cohomology theorem of <em>The Galois Action as an Operator</em>, proved by the Čech complex of a $G$-stable affine cover with the action on the coefficients; the general sheaf is handled by the same complex with coefficients in $\mathcal{F}_0$, whose invariants are the Čech complex of $\mathcal{F}_0$ by the descent of the module category in Part I's <em>Descent Theory</em>.</p>
+<p><strong>Corollary (the trivial part and the higher parts).</strong> The invariant subspace is the "trivial part" of the cohomology,
+$$
+H^i(X_L,\mathcal{F})^G = H^i(X_L,\mathcal{F})^{\mathrm{triv}} ,
+$$
+and it is exactly the image of the pullback $H^i(X,\mathcal{F}_0)\to H^i(X_L,\mathcal{F})$ when the pullback is injective. The cohomology of the descended variety thus sits inside the cohomology of the extension as the fixed elements, and the remaining elements are the higher cohomology of the group.</p>
+<p><em>Proof.</em> The identification of the invariants with $H^i(X,\mathcal{F}_0)$ is the theorem; the pullback lands in the invariants because it is the composite of the unit with an isomorphism, and it is injective when the Leray description is available, by the low-degree sequence of the next theorem.</p>
+<h3 id="the-hochschildserre-spectral-sequence">The Hochschild–Serre Spectral Sequence</h3>
+<p><strong>Theorem (the Hochschild–Serre spectral sequence).</strong> Let $L/k$ be a Galois extension with group $G$ and let $\mathcal{F}$ be a $G$-equivariant quasi-coherent sheaf on $X_L$ descended from $\mathcal{F}_0$ on $X$. There is a spectral sequence of cohomological type
+$$
+E_2^{pq} = H^p\bigl(G,\ H^q(X_L,\mathcal{F})\bigr)\ \Longrightarrow\ H^{p+q}(X,\mathcal{F}_0),
+$$
+starting from the group cohomology of Part I's <em>Group Cohomology</em> with coefficients in the cohomology of the extension and converging to the cohomology of the descended variety.</p>
+<p><em>Proof.</em> The two functors are the global sections and the invariants under the action, and the composite of "take the $G$-invariants" with "take the global sections of $X_L$" is the global sections of $X$; the spectral sequence of the composite of two derived functors is the Grothendieck spectral sequence of Part I's <em>Spectral Sequences</em>, applied to the invariants functor and the global-sections functor of <em>Sheaf Cohomology</em>. The $E_2$ term is the group cohomology of $G$ with coefficients in the sheaf cohomology, computed on the same cover.</p>
+<p><strong>Corollary (the low-degree exact sequence).</strong> The five-term exact sequence of the spectral sequence is
+$$
+0\longrightarrow H^1\bigl(G,H^0(X_L,\mathcal{F})\bigr)\longrightarrow H^1(X,\mathcal{F}_0)\longrightarrow H^1(X_L,\mathcal{F})^G\longrightarrow H^2\bigl(G,H^0(X_L,\mathcal{F})\bigr)\longrightarrow H^2(X,\mathcal{F}_0),
+$$
+so that the failure of the invariants to compute the cohomology of the descended variety in degree one is detected by the group cohomology of the global sections in degree two.</p>
+<p><em>Proof.</em> The edge maps of the spectral sequence give the five-term sequence of Part I's <em>Spectral Sequences</em>, with the $E_2^{0,q}$ page the invariants by the previous theorem and the $E_2^{p,0}$ page the group cohomology.</p>
+<p><strong>Example (the descent of the structure sheaf).</strong> For $\mathcal{F}=\mathcal{O}_{X_L}$ the global sections are the coordinate ring $A\otimes_kL$ and the invariants are $A$, the group cohomology $H^1(G,A\otimes_kL)$ vanishes by Shapiro's lemma when $L/k$ is finite Galois, and the five-term sequence collapses: $H^1(X_L,\mathcal{O})^G\cong H^1(X,\mathcal{O})$. The higher terms survive when $G$ is infinite, which is the arithmetic case.</p>
+<h2 id="galois-representations">Galois Representations</h2>
+<h3 id="linear-coefficients-and-the-representation">Linear Coefficients and the Representation</h3>
+<p><strong>Definition.</strong> A <strong>Galois representation</strong> of $G$ over a field $E$ is a finite-dimensional $E$-vector space $V$ with a continuous action of $G$ that is $E$-linear, $G$ carrying its profinite topology and $V$ its discrete topology when $E$ is discrete, or the natural topology of $E$ when $E$ is a local field.</p>
+<p><strong>Theorem (the representation of the cohomology).</strong> When the coefficients are $E$-modules with the linear action as in the proposition, the semilinear module $H^i(X_L,\mathcal{F})$ is a Galois representation, its invariants are the cohomology of the descended variety, and the representation is finite-dimensional when the cohomology is. The assignment is functorial in $\mathcal{F}$ and compatible with the long exact sequences and with the cup product.</p>
+<p><em>Proof.</em> The linearity is the proposition; the finite-dimensionality is the finiteness of the cohomology of a coherent sheaf on a projective variety by <em>Coherent Sheaves</em>, and the functoriality and the exactness are the functoriality of the cohomology and the naturality of the semilinear action.</p>
+<h3 id="weights-and-the-frobenius">Weights and the Frobenius</h3>
+<p><strong>Remark (the arithmetic beyond the Part).</strong> For a variety over a finite field and the $\ell$-adic coefficients, the Galois representation is unramified outside a finite set of places, the eigenvalues of the geometric Frobenius are the Weil numbers whose absolute values are the powers $q^{i/2}$ of <em>The Frobenius Operator</em>, and the representation is the object in which the Weil conjectures are stated. The construction of the representation, the weight filtration and the monodromy are the arithmetic of that article and of Part III, and this article records only the abstract representation and its invariants.</p>
+<p><strong>Example (the cyclotomic representation).</strong> For $X=\operatorname{Spec}k$ with $k$ a field containing the roots of unity, the cohomology of the structure sheaf is $k$ in degree zero, and the Galois action on the roots of unity $\mu_n$ of the example of <em>Real Structures on Varieties and Galois Descent</em> is the cyclotomic character $\chi : G\to(\mathbb{Z}/n)^\times$, $\sigma(\zeta)=\zeta^{\chi(\sigma)}$. This is the fundamental Galois representation from which the others are built, and its invariants recover the descended group $\mu_n^G$.</p>
+<h2 id="the-involution-and-the-pairing">The Involution and the Pairing</h2>
+<h3 id="the-action-on-the-cup-product">The Action on the Cup Product</h3>
+<p><strong>Theorem (the action on the cup product).</strong> The cup product of <em>Sheaf Cohomology</em>
+$$
+H^i(X_L,\mathcal{F})\times H^j(X_L,\mathcal{G})\longrightarrow H^{i+j}(X_L,\mathcal{F}\otimes\mathcal{G})
+$$
+is equivariant for the Galois action: for all $\sigma\in G$ and all classes $u,v$,
+$$
+\sigma^*(u\smile v) = \sigma^*(u)\smile\sigma^*(v).
+$$
+Consequently the action is by ring automorphisms of the graded ring $\bigoplus_iH^i(X_L,\mathcal{O}_{X_L})$ when it is defined, and the invariants form a subring, the cohomology ring of the descended variety.</p>
+<p><em>Proof.</em> The cup product is natural in the sheaves and in the morphisms, so the pullback of the composite sheaf map is the composite of the pullbacks; this is the compatibility of the semilinear action with the tensor product and the cup product, and it makes each $\sigma^*$ a ring homomorphism. The invariants are closed under the product by the equivariance, and they are the cohomology ring of $X$ by the invariant theorem.</p>
+<h3 id="the-real-case">The Real Case</h3>
+<p><strong>Theorem (the eigenspaces of the conjugation).</strong> Let $X$ be a variety over $\mathbb{R}$ and let $\sigma$ be the conjugation of $X_{\mathbb{C}}$. On each cohomology group of the structure sheaf the conjugation $\sigma^*$ is a <strong>semilinear</strong> involution of the $\mathbb{C}$-vector space,
+$$
+(\sigma^*)^2 = \mathrm{id}, \qquad \sigma^*(\lambda v) = \bar\lambda\,\sigma^*(v),
+$$
+and it decomposes the cohomology into the $(+1)$-eigenspace $H^i_+ = H^i(X_{\mathbb{C}},\mathcal{O})^\sigma$ and the $(-1)$-eigenspace $H^i_-$, both $\mathbb{R}$-subspaces with
+$$
+H^i(X_{\mathbb{C}},\mathcal{O}) = H^i_+\oplus H^i_-, \qquad H^i_- = i\,H^i_+, \qquad
+H^i_+\cong H^i(X_{\mathbb{R}},\mathcal{O}), \qquad \dim_{\mathbb{C}}H^i(X_{\mathbb{C}},\mathcal{O}) = \dim_{\mathbb{R}}H^i_+ = \dim_{\mathbb{R}}H^i_- .
+$$</p>
+<p><em>Proof.</em> The conjugation is an antilinear involution of $\mathcal{O}_{X_{\mathbb{C}}}$, so $\sigma^*$ is antilinear with $(\sigma^*)^2=\mathrm{id}$. Every $v$ is the sum of the fixed vector $\tfrac12(v+\sigma^*v)$ and the antifixed vector $\tfrac12(v-\sigma^*v)$, so the two eigenspaces span; they intersect in $0$ because a vector fixed and antifixed at once is $0$; and for a fixed $v$ the vector $iv$ satisfies $\sigma^*(iv) = -i\,\sigma^*(v) = -iv$, so $H^i_- = iH^i_+$ and the two $\mathbb{R}$-subspaces have the same real dimension, namely $\dim_{\mathbb{C}}H^i(X_{\mathbb{C}},\mathcal{O})$. The $(+1)$-eigenspace is the invariant subspace, identified with $H^i(X_{\mathbb{R}},\mathcal{O})$ by the invariant theorem.</p>
+<p><strong>Theorem (the invariance of the duality pairing).</strong> Let $X$ be smooth and proper of dimension $d$ over $k$, and let
+$$
+\langle-,-\rangle : H^i(X_L,\mathcal{O})\times H^{d-i}(X_L,\mathcal{O})\longrightarrow k
+$$
+be the Serre duality pairing of <em>Sheaves in Algebraic Geometry</em>. Then the pairing is semilinear for the Galois action,
+$$
+\langle\sigma u,\sigma v\rangle = \sigma\langle u,v\rangle ,
+$$
+so in the real case $\langle\sigma u,\sigma v\rangle = \overline{\langle u,v\rangle}$ and the pairing is invariant on the fixed classes. Consequently the $(+1)$ and $(-1)$ eigenspaces are orthogonal for the pairing, $H^i_+\perp H^{d-i}_-$, and the pairing restricts to a nondegenerate $\mathbb{R}$-bilinear form on $H^i_+\times H^{d-i}_+$ and on $H^i_-\times H^{d-i}_-$.</p>
+<p><em>Proof.</em> The duality pairing is natural in the structure sheaf, and the pullback of the pairing is the pairing of the pullbacks, with the action on the coefficient field: this is the semilinearity. For $u$ fixed and $v$ antifixed, $\langle u,v\rangle = \langle\sigma u,\sigma v\rangle = \langle u,-v\rangle = -\langle u,v\rangle$, so the pairing vanishes; for $u,v$ both fixed the value satisfies $\langle u,v\rangle = \overline{\langle u,v\rangle}$ and is real, and the nondegeneracy restricts because the pairing is nondegenerate on the whole and the eigenspaces are complementary.</p>
+<p><em>Proof.</em> The duality pairing is natural in the structure sheaf, and the pullback of the pairing is the pairing of the pullbacks; since the action on the base field $k$ is trivial in the real case, the pairing is invariant. The orthogonality of the eigenspaces is the elementary statement that an invariant pairing pairs opposite eigenspaces of an involution: $\langle u,v\rangle = \langle\sigma u,\sigma v\rangle = \pm\langle u,v\rangle$ for $u,v$ of the two eigenclasses forces the pairing to vanish unless the signs multiply to $1$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a Galois extension $L/k$ with group $G$ and a $G$-equivariant sheaf $\mathcal{F}$ on $X_L$, the cohomology $H^i(X_L,\mathcal{F})$ is a <strong>semilinear $G$-module</strong> over $L$: the action satisfies $\sigma^*(\ell v) = \sigma(\ell)\sigma^*(v)$, and the invariants $H^i(X_L,\mathcal{F})^G$ are the cohomology $H^i(X,\mathcal{F}_0)$ of the descended variety. The comparison between the invariants and the cohomology is the <strong>Hochschild–Serre spectral sequence</strong>
+$$
+E_2^{pq} = H^p(G,H^q(X_L,\mathcal{F}))\ \Longrightarrow\ H^{p+q}(X,\mathcal{F}_0),
+$$
+whose five-term exact sequence begins with $0\to H^1(G,H^0)\to H^1(X,\mathcal{F}_0)\to H^1(X_L,\mathcal{F})^G\to H^2(G,H^0)\to H^2(X,\mathcal{F}_0)$. With coefficients that absorb the twist the semilinear module is a <strong>Galois representation</strong>, an $E$-linear continuous action, and the invariants are again the cohomology of the descended variety; in the arithmetic case the representation is unramified almost everywhere, its Frobenius eigenvalues are the Weil numbers of <em>The Frobenius Operator</em>, and the étale cohomology in which it is constructed is deferred. The cup product is equivariant, so the action is by ring automorphisms and the invariants form the cohomology ring of the descended variety; in the real case the involution splits each cohomology group into its $(+1)$ and $(-1)$ eigenspaces, with the $(+1)$-eigenspace the cohomology of the real variety and the $(-1)$-eigenspace its conjugate $iH^i_+$, and the duality pairing is semilinear, with the eigenspaces orthogonal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H^i(X_L,\mathcal{F})$</td>
+<td>cohomology of the base change; a semilinear $G$-module</td>
+</tr>
+<tr>
+<td>$\sigma^*(\ell v)=\sigma(\ell)\sigma^*(v)$</td>
+<td>semilinearity of the Galois action on cohomology</td>
+</tr>
+<tr>
+<td>$H^i(X_L,\mathcal{F})^G\cong H^i(X,\mathcal{F}_0)$</td>
+<td>the invariants are the cohomology of the descended variety</td>
+</tr>
+<tr>
+<td>$H^p(G,H^q(X_L,\mathcal{F}))\Rightarrow H^{p+q}(X,\mathcal{F}_0)$</td>
+<td>the Hochschild–Serre spectral sequence</td>
+</tr>
+<tr>
+<td>$0\to H^1(G,H^0)\to H^1(X)\to H^1(X_L)^G\to H^2(G,H^0)\to H^2(X)$</td>
+<td>the five-term exact sequence</td>
+</tr>
+<tr>
+<td>Galois representation</td>
+<td>a finite-dimensional $E$-linear continuous $G$-module</td>
+</tr>
+<tr>
+<td>$\chi:G\to(\mathbb{Z}/n)^\times$, $\sigma(\zeta)=\zeta^{\chi(\sigma)}$</td>
+<td>the cyclotomic representation on $\mu_n$</td>
+</tr>
+<tr>
+<td>$\sigma^*(u\smile v)=\sigma^*u\smile\sigma^*v$</td>
+<td>equivariance of the cup product</td>
+</tr>
+<tr>
+<td>$H^i(X_{\mathbb{C}})=H^i_+\oplus H^i_-$, $H^i_-=iH^i_+$</td>
+<td>the eigenspaces of the conjugation (semilinear)</td>
+</tr>
+<tr>
+<td>$H^i_+\cong H^i(X_{\mathbb{R}},\mathcal{O})$</td>
+<td>the $(+1)$-eigenspace is the real cohomology</td>
+</tr>
+<tr>
+<td>$\langle\sigma u,\sigma v\rangle=\overline{\langle u,v\rangle}$</td>
+<td>semilinearity of the Serre duality pairing</td>
+</tr>
+<tr>
+<td>$H^i_+\perp H^i_-$</td>
+<td>the eigenspaces are orthogonal</td>
+</tr>
+<tr>
+<td>$H^i_{\mathrm{ét}}(X_{\bar k},\mathbb{Q}_\ell)$</td>
+<td>étale cohomology, deferred; the arithmetic representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Galois Cohomology</em> (Springer, 1997), for the Galois action, the cohomology of a group and the descent of the invariants.</li>
+<li>James S. Milne, <em>Lectures on Étale Cohomology</em> (v4.02, 2013), for the Hochschild–Serre spectral sequence of a Galois cover and the Galois representations of the arithmetic.</li>
+<li>Alexander Grothendieck, <em>Sur quelques points d'algèbre homologique</em> (Tohoku Mathematical Journal 9, 1957), for the Grothendieck spectral sequence of a composite of derived functors.</li>
+<li>Michael Artin, <em>Grothendieck topologies</em> (Harvard University Lecture Notes, 1962), for the descent-theoretic form of the comparison of the cohomology of a cover.</li>
+<li>Jean-Louis Verdier, <em>Des catégories dérivées des catégories abéliennes</em> (Astérisque 239, 1996), for the derived-category form of the invariants and the spectral sequence.</li>
+<li>Jean-Pierre Serre and John Tate, <em>Good reduction of abelian varieties</em> (Annals of Mathematics 88, 1968), for the Galois representation on the cohomology of an abelian variety and its ramification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over an Ordered Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-an-ordered-algebra"><strong>The Graded Action on a Module over an Ordered Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>graded module</strong> over a graded algebra is a module $M$ that is itself graded, $M = M_{\bar 0}\oplus M_{\bar 1}$, on which the algebra acts by maps that shift the degree:</p>
+<p>$$
+A_{\bar i}\cdot M_{\bar j}\subseteq M_{\overline{i+j}} .
+$$</p>
+<p>This compatibility of the action with the grading is the definition of a <strong>graded action</strong>, and it forces a <strong>sign rule</strong>: for a homogeneous element $a$ of the algebra and a homogeneous element $m$ of the module,</p>
+<p>$$
+\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}\,a\cdot\alpha_M(m),
+$$</p>
+<p>where $\alpha_M$ is the grading operator of the module; equivalently, the even elements of $A$ act by even operators, preserving the two graded pieces of $M$, and the odd elements act by <strong>odd</strong> operators, exchanging them. The sign rule is the module-level form of the graded structure, and it is what makes the action a morphism of graded objects rather than a morphism of the underlying ungraded ones.</p>
+<p>The <strong>signed action</strong> is the graded action twisted by the module grading,</p>
+<p>$$
+\rho^{\alpha}(a) = \rho(a)\,\alpha_M ,
+$$</p>
+<p>the module version of the signed left multiplication $L^{\alpha}_a = L_a\Gamma$ of the algebra acting on itself. Its operators compose by the twisted law $\rho^{\alpha}(a)\rho^{\alpha}(b) = \rho(a\alpha(b))$ — the products are the <strong>ordinary</strong> action at the twisted parameters — and its square is $\rho(a\alpha(a))$, so that the signed action is an involution on a reflection element exactly as the one-sided operator is. When the module is ordered, the signed action is positive exactly when the module grading and the action preserve the cone, and the parity is again the sign of the order.</p>
+<p>The graded algebra, the grading and the grade involution are <em>Superalgebras and Graded Structures</em> of Part I; the modules and the representations are <em>Modules over a Ring</em> and <em>The Operators on an Algebra</em> of Part I; the signed left multiplication, which is the case $M = A$ of this article, and the signed sandwich are <em>The Signed Left Multiplication on an Ordered Algebra</em> and <em>The Signed Sandwich on an Ordered Algebra</em>; the reflection elements are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the order on the module and the operator order are <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; and the Clifford module instance is <em>The Clifford Algebra of a Quadratic Form</em> and <em>Clifford Modules</em> of Part I. The adjoint action on a module, which is the companion of this article in the adjoint group, is <em>The Graded Adjoint Action on a Module over an Ordered Algebra</em> at the end of this category.</p>
+<h2 id="graded-modules-and-graded-actions">Graded Modules and Graded Actions</h2>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over a graded algebra $A = A_{\bar 0}\oplus A_{\bar 1}$ is a module $M$ with a direct sum decomposition $M = M_{\bar 0}\oplus M_{\bar 1}$, the <strong>even</strong> and <strong>odd</strong> parts, such that the action respects the grading:</p>
+<p>$$
+A_{\bar 0}M_{\bar 0}\subseteq M_{\bar 0}, \quad A_{\bar 0}M_{\bar 1}\subseteq M_{\bar 1}, \quad A_{\bar 1}M_{\bar 0}\subseteq M_{\bar 1}, \quad A_{\bar 1}M_{\bar 1}\subseteq M_{\bar 0},
+$$</p>
+<p>which is the single condition $A_{\bar i}M_{\bar j}\subseteq M_{\overline{i+j}}$. A homogeneous element $m$ has a <strong>parity</strong> $\lvert m\rvert\in\{0,1\}$ and the <strong>module grading operator</strong> is</p>
+<p>$$
+\alpha_M : M\to M, \qquad \alpha_M m = (-1)^{\lvert m\rvert}m ,
+$$</p>
+<p>the linear involution of $M$ with the even part as $(+1)$-eigenspace and the odd part as $(-1)$-eigenspace.</p>
+<p><strong>Proposition (the action is a morphism of graded modules).</strong> An action $\rho : A\to\operatorname{End}(M)$, $\rho(a)m = a\cdot m$, that is associative and unital is a <strong>graded action</strong> exactly when</p>
+<p>$$
+\rho(A_{\bar i})\subseteq \operatorname{End}(M)_{\bar i} ,
+$$</p>
+<p>that is, when $\rho$ preserves the parity of the operators; and then $\rho$ is a morphism of graded algebras from $A$ to the endomorphism algebra of $M$ with its induced grading. The module grading operator commutes with $\rho(a)$ for even $a$ and anticommutes with it for odd $a$.</p>
+<p><em>Proof.</em> The operator $\rho(a)$ for homogeneous $a$ has parity $\lvert a\rvert$ exactly when it sends $M_{\bar j}$ to $M_{\overline{j+\lvert a\rvert}}$, which is the compatibility condition; the multiplicativity of $\rho$ is the associativity of the action and the parity preservation is the graded algebra morphism property. The commutation statement is the eigenvalue computation on the homogeneous pieces.</p>
+<p><strong>Proposition (the graded module is an ordered module when it is ordered).</strong> When $M$ carries a positive cone $M_+$ that is compatible with the grading, $M_{\bar 0}$ and $M_{\bar 1}$ are ordered subspaces and the cone is generated by its intersections with the two parts; a positive operator of the graded algebra acts positively on the ordered module exactly when it preserves $M_+$, which is a condition on the even and the odd parts separately.</p>
+<p><em>Proof.</em> The cone is convex and the grading decomposition is a direct sum of ordered subspaces; an operator preserves the cone exactly when it maps the generators to the cone, and the generators lie in the two parts.</p>
+<h2 id="the-sign-rule">The Sign Rule</h2>
+<p><strong>Theorem (the sign rule).</strong> For a graded action, a homogeneous $a\in A$ and a homogeneous $m\in M$,</p>
+<p>$$
+\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}\,a\cdot\alpha_M(m) ,
+$$</p>
+<p>equivalently $\alpha_M\rho(a)\alpha_M = (-1)^{\lvert a\rvert}\rho(a) = \rho(\alpha(a))$, so that the module grading operator <strong>intertwines the action with its grade-twist</strong>:</p>
+<p>$$
+\alpha_M\,\rho(a) = \rho(\alpha(a))\,\alpha_M .
+$$</p>
+<p><em>Proof.</em> The action sends $M_{\bar j}$ to $M_{\overline{j+\lvert a\rvert}}$, so the grading operator produces the sign $(-1)^{\lvert a\rvert+\lvert m\rvert}$ on the left and the sign $(-1)^{\lvert a\rvert}(-1)^{\lvert m\rvert}$ on the right; the two agree. The second form conjugates the first by $\alpha_M$ and uses $\rho(\alpha(a)) = (-1)^{\lvert a\rvert}\rho(a)$.</p>
+<p><strong>Corollary (the sign on the tensor product).</strong> When the action is extended to a tensor product of graded modules by the rule</p>
+<p>$$
+a\cdot(m\otimes n) = (a\cdot m)\otimes n + (-1)^{\lvert a\rvert\lvert m\rvert}\,m\otimes(a\cdot n) ,
+$$</p>
+<p>the result is a graded action; the Koszul sign $(-1)^{\lvert a\rvert\lvert m\rvert}$ is forced, and it is the unique choice for which the extension is associative with the sign rule.</p>
+<p><em>Proof.</em> The extension is the derivation rule of a graded action; the sign is determined by the requirement that the parity of the result be $\lvert a\rvert+\lvert m\rvert+\lvert n\rvert$ in both terms, which holds for the displayed sign and for no other sign of the possible $\pm1$.</p>
+<h2 id="the-signed-action">The Signed Action</h2>
+<p><strong>Definition.</strong> The <strong>signed action</strong> of the graded algebra on the graded module is</p>
+<p>$$
+\rho^{\alpha}(a) = \rho(a)\,\alpha_M , \qquad \rho^{\alpha}(a)m = a\cdot\alpha_M(m) ,
+$$</p>
+<p>the action composed with the module grading; it is the module analogue of the signed left multiplication $L^{\alpha}_a = L_a\Gamma$ of <em>The Signed Left Multiplication on an Ordered Algebra</em>, and it agrees with it when $M = A$ with $\alpha_M = \alpha$ is the regular module.</p>
+<p><strong>Theorem (the twisted composition law).</strong> The signed action operators compose by</p>
+<p>$$
+\rho^{\alpha}(a)\,\rho^{\alpha}(b) = \rho(a\,\alpha(b)) ,
+$$</p>
+<p>the products being the <strong>ordinary</strong> action at the twisted parameters; consequently</p>
+<p>$$
+\bigl(\rho^{\alpha}(a)\bigr)^2 = \rho(a\,\alpha(a)) ,
+$$</p>
+<p>which is the identity for a faithful action exactly when $a$ is a <strong>reflection element</strong>, $\alpha(a) = a^{-1}$. The signed action is therefore a <strong>crossed</strong> representation and not a representation: the map $\rho^{\alpha}$ is not multiplicative, and its products land in the ordinary image.</p>
+<p><em>Proof.</em> $\rho^{\alpha}(a)\rho^{\alpha}(b) = \rho(a)\alpha_M\rho(b)\alpha_M = \rho(a)\bigl(\alpha_M\rho(b)\alpha_M\bigr) = \rho(a)\rho(\alpha(b)) = \rho(a\alpha(b))$, by the sign rule of the theorem above and the multiplicativity of $\rho$. The square is the case $b = a$; it is the identity when $\rho(a\alpha(a)) = \mathrm{id}_M$, which for a faithful action is $a\alpha(a) = 1$, the reflection-element condition.</p>
+<p><strong>Proposition (the involution and the fixed elements).</strong> When $a$ is a reflection element the signed action $\rho^{\alpha}(a)$ is an involution of the module, and its fixed set is the sum of the fixed space of $\rho(a)$ on the even part and the $(-1)$-eigenspace of $\rho(a)$ on the odd part,</p>
+<p>$$
+\operatorname{Fix}\rho^{\alpha}(a) = \ker(\rho(a)-I)\cap M_{\bar 0}\ \oplus\ \ker(\rho(a)+I)\cap M_{\bar 1} .
+$$</p>
+<p><em>Proof.</em> The involution property is the twisted composition law; the fixed elements satisfy $\rho(a)\alpha_M m = m$, which on the homogeneous pieces is $\rho(a)m = (-1)^{\lvert m\rvert}m$; decomposing gives the direct sum.</p>
+<p><strong>Proposition (positivity of the signed action).</strong> If the module grading is positive ($\alpha_M(M_+)\subseteq M_+$) and the action of $a$ is positive and $a\geq0$, then the signed action is positive; in general, with the parity $\varepsilon_m$,</p>
+<p>$$
+\rho^{\alpha}(a)m = \varepsilon_m\,\rho(a)m \qquad (m \ \text{homogeneous}) ,
+$$</p>
+<p>so the signed action agrees with the action on the even part and is its negative on the odd part, and it is positive for all positive $a$ exactly when the module grading preserves the cone.</p>
+<p><em>Proof.</em> The positivity criterion is that of the product of a positive operator with the positive grading, and the parity formula is the definition of $\alpha_M$ on the homogeneous pieces; the failure of positivity is the presence of odd positive elements.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-regular-module">The Regular Module</h3>
+<p>For $M = A$ the regular module with $\alpha_M = \alpha$ the signed action is the signed left multiplication $L^{\alpha}_a$ of <em>The Signed Left Multiplication on an Ordered Algebra</em>, and every statement of this article specialises to a statement there: the twisted composition law $\rho^{\alpha}(a)\rho^{\alpha}(b) = \rho(a\alpha(b))$ is $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$, the reflection elements are the same, and the fixed elements are the parity eigenvectors. The regular module is thus the base point of the graded action, and the general module carries the same crossed structure.</p>
+<h3 id="the-natural-module-of-the-biquaternion-algebra">The Natural Module of the Biquaternion Algebra</h3>
+<p>Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grading, and let $M = \mathbb{C}^2$ be the natural module with the grading in which the first coordinate is even and the second is odd. The algebra acts by matrix multiplication, the even part preserves the splitting and the odd part exchanges the two coordinates, so the action is graded and the sign rule holds with $\alpha_M = \operatorname{diag}(1,-1)$ on $M$; the signed action is $\rho^{\alpha}(a) = a\,\alpha_M$, an involution for the odd element $a$ with $a^2 = -1$, whose fixed set is the diagonal on the even coordinate and the off-diagonal on the odd coordinate. This is the smallest non-regular module of the corpus.</p>
+<h3 id="the-clifford-module">The Clifford Module</h3>
+<p>Let $A = \mathrm{Cl}(V,q)$ be the Clifford algebra of a nondegenerate quadratic form and $M$ a Clifford module, the spinor module of <em>Clifford Modules</em>, with the parity grading induced by the volume element. The vectors act by odd operators, so the action is graded and the sign rule is the statement that the Clifford relations involve only the even part of the contraction; the signed action of a vector $e$ is the operator $e\,\alpha_M$, which is an involution exactly when $e^2 = -1$, that is, on the reflection elements of <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>. The Clifford module is the instance in which the graded action is the whole content of the structure and the algebra is generated by the odd part.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>graded module</strong> over a graded algebra is a module whose grading is respected by the action, $A_{\bar i}M_{\bar j}\subseteq M_{\overline{i+j}}$; equivalently the action operators preserve parity, so the action is a morphism of graded algebras, and the module grading operator satisfies the <strong>sign rule</strong> $\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}a\cdot\alpha_M(m)$, or $\alpha_M\rho(a) = \rho(\alpha(a))\alpha_M$. The sign rule forces the <strong>Koszul sign</strong> $(-1)^{\lvert a\rvert\lvert m\rvert}$ when the action is extended to a tensor product. The <strong>signed action</strong> $\rho^{\alpha}(a) = \rho(a)\alpha_M$ is the module version of the signed left multiplication; its operators compose by the twisted law $\rho^{\alpha}(a)\rho^{\alpha}(b) = \rho(a\alpha(b))$, its square is $\rho(a\alpha(a))$, and it is an <strong>involution</strong> exactly on the <strong>reflection elements</strong>; its fixed set is the fixed space of $\rho(a)$ on the even part together with the $(-1)$-eigenspace on the odd part, and it is positive when the module grading and the action preserve the cone, acting as $\rho^{\alpha}(a)m = \varepsilon_m\rho(a)m$. The regular module recovers the signed left multiplication. The grading is <em>Superalgebras and Graded Structures</em>; the modules and the representations are <em>Modules over a Ring</em> and <em>The Operators on an Algebra</em>; the signed one-sided multiplication is <em>The Signed Left Multiplication on an Ordered Algebra</em>; the reflection elements are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; the Clifford instance is <em>Clifford Modules</em>; and the adjoint is <em>The Graded Adjoint Action on a Module over an Ordered Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M = M_{\bar 0}\oplus M_{\bar 1}$</td>
+<td>Graded module</td>
+</tr>
+<tr>
+<td>$A_{\bar i}M_{\bar j}\subseteq M_{\overline{i+j}}$</td>
+<td>Compatibility of the action with the grading</td>
+</tr>
+<tr>
+<td>$\lvert m\rvert$</td>
+<td>Parity of a homogeneous module element</td>
+</tr>
+<tr>
+<td>$\alpha_M$</td>
+<td>Module grading operator, $(-1)^{\lvert m\rvert}$ on the homogeneous part</td>
+</tr>
+<tr>
+<td>$\alpha_M(a\cdot m) = (-1)^{\lvert a\rvert}a\cdot\alpha_M(m)$</td>
+<td>Sign rule</td>
+</tr>
+<tr>
+<td>$\alpha_M\rho(a) = \rho(\alpha(a))\alpha_M$</td>
+<td>Intertwining with the grade-twist</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(a) = \rho(a)\alpha_M$</td>
+<td>Signed action</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(a)\rho^{\alpha}(b) = \rho(a\alpha(b))$</td>
+<td>Twisted composition law</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(a)m = \varepsilon_m\rho(a)m$</td>
+<td>Parity formula</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the graded modules and the spinor modules of a Clifford algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the parity of the Clifford action and the sign rule.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1956), for the modules, the representations and the endomorphism algebra.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the representations of an algebra on a graded module.</li>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the module actions of a Jordan structure and their positivity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

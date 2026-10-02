@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-ring"><strong>The Signed Left Multiplication on a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>signed left multiplication</strong> by an element $a$ of a graded ring is the twist of the ordinary left multiplication by the grade involution:
+$$T_a(x) = a\,\alpha(x).$$
+It is not an endomorphism of the ring — it is not even multiplicative in the ordinary sense — but it is a twisted homomorphism, $T_a(xy) = T_a(x)\,\alpha(y)$, and it is the one-sided operator out of which the reflection $r_u = T_u\circ R_{u^{-1}}$ is built. This article studies $T_a$ as an operator: its relation to the plain left multiplication $L_a$, its composition and twisted multiplicativity, its kernel and image, and the point at which it becomes an automorphism.</p>
+<p>The signed left multiplication is the one-sided member of the signed family of <em>The Signed Sandwich on a Ring</em>: with a right factor it gives the signed sandwich $S^{\alpha}_{a,b} = T_a\circ R_b$, and with the unit as right factor it gives the reflection. The article stays inside Part I: the grade involution $\alpha$ is an automorphism of the ring, the operator $T_a$ is additive, and no distance, form or norm occurs. The comparison throughout is with the plain left multiplication $L_a(x) = ax$ of <em>Left and Right Multiplication in a Ring</em>, which is recovered as the case $\alpha = \mathrm{id}$.</p>
+<p>Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a grade involution, $\alpha^2 = \mathrm{id}$; $L_a$, $R_a$ are the one-sided multiplications; and $T_a$ is the signed left multiplication. The notation $\alpha A$ means the image of $A$ under $\alpha$, which is $A$ itself.</p>
+<h2 id="definition-and-the-relation-to-the-plain-left-multiplication">Definition and the Relation to the Plain Left Multiplication</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $A$ be a ring with grade involution $\alpha$. For $a \in A$ the <strong>signed left multiplication</strong> by $a$ is the additive map</p>
+<p>$$
+T_a : A \to A, \qquad T_a(x) = a\,\alpha(x).
+$$</p>
+<p>It is the composite $T_a = L_a \circ \alpha$ of the grade involution with a left multiplication, and it is also the composite $\alpha \circ L_{\alpha(a)}$ of a left multiplication with $\alpha$.</p>
+<p><strong>Proposition.</strong> For all $a \in A$,</p>
+<p>$$
+T_a = L_a \circ \alpha = \alpha \circ L_{\alpha(a)}, \qquad T_a(1) = a, \qquad T_{a+b} = T_a + T_b, \qquad T_a = 0 \iff a = 0 .
+$$</p>
+<p>Hence $a \mapsto T_a$ is an injective additive map $A \to \operatorname{End}(A)$, and $T_a = T_b$ if and only if $a = b$.</p>
+<p><strong>Proof.</strong> $L_a(\alpha(x)) = a\alpha(x)$ and $\alpha(L_{\alpha(a)}(x)) = \alpha(\alpha(a)x) = \alpha^2(a)\alpha(x) = a\alpha(x)$. The value at the unit is $T_a(1) = a\alpha(1) = a$; additivity in the parameter follows from the distributivity; and $T_a = 0$ forces $a = T_a(1) = 0$, while $a=0$ gives the zero map. The value at the unit also separates the parameters.</p>
+<h3 id="the-relation-to-the-plain-left-multiplication">The relation to the plain left multiplication</h3>
+<p>The two operators are related by conjugation with the grade involution, and this is the precise sense in which the signed left multiplication is the plain one twisted.</p>
+<p><strong>Proposition.</strong> For all $a \in A$,</p>
+<p>$$
+T_a = L_a\circ\alpha, \qquad T_{\alpha(a)} = \alpha\circ L_a, \qquad L_a = T_a\circ\alpha, \qquad \alpha\,L_a\,\alpha^{-1} = L_{\alpha(a)} .
+$$</p>
+<p><strong>Proof.</strong> The first is the definition. The second is $\alpha L_a(x) = \alpha(ax) = \alpha(a)\alpha(x) = T_{\alpha(a)}(x)$. The third is $T_a(\alpha(x)) = a\alpha^2(x) = ax$. The fourth follows from the first two, $\alpha L_a\alpha^{-1} = T_{\alpha(a)}\alpha = L_{\alpha(a)}$, and it is the conjugation law already recorded in <em>The Signed Sandwich on a Ring</em>.</p>
+<p><strong>Corollary (recovering the plain case).</strong> $T_a = L_a$ for every $a$ exactly when $\alpha = \mathrm{id}$; for a nontrivial grade involution the two families differ whenever $\alpha(a) \neq a$ somewhere, that is, whenever $A$ has a nonzero odd part.</p>
+<h2 id="the-multiplicative-structure">The Multiplicative Structure</h2>
+<h3 id="the-twisted-product-rule">The twisted product rule</h3>
+<p>The signed left multiplication is not a ring endomorphism, but it is a homomorphism twisted by $\alpha$, and the twist is exactly the price of the sign in the middle.</p>
+<p><strong>Proposition (twisted multiplicativity).</strong> For all $a, x, y \in A$,</p>
+<p>$$
+T_a(xy) = T_a(x)\,\alpha(y) .
+$$</p>
+<p>Thus $T_a$ is a homomorphism <strong>twisted by $\alpha$</strong> on the right.</p>
+<p><strong>Proof.</strong> $T_a(xy) = a\alpha(xy) = a\alpha(x)\alpha(y) = T_a(x)\alpha(y)$.</p>
+<p><strong>Remark.</strong> The companion identity $T_a(xy) = \alpha(x)T_{\alpha^{-1}(a)}(y)$ would require moving $a$ past $\alpha(x)$ and holds only when $a$ commutes with the image of $\alpha$; the first display is the one valid in general. The twist always sits on the second factor, which is the operator form of the sign in the middle of the graded product.</p>
+<p><strong>Corollary.</strong> $T_a$ is a unital ring endomorphism exactly when $a = 1$, and then $T_1 = \alpha$. In general $T_a$ is a twisted homomorphism and not an ordinary one.</p>
+<h3 id="composition">Composition</h3>
+<p><strong>Proposition.</strong> For all $a, b \in A$,</p>
+<p>$$
+T_a \circ T_b = L_{a\,\alpha(b)}, \qquad T_a \circ L_b = T_{a\,\alpha(b)}, \qquad L_b \circ T_a = T_{ba} .
+$$</p>
+<p><strong>Proof.</strong> $T_a(T_b(x)) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)\,x = L_{a\alpha(b)}(x)$. Next, $T_a(L_b(x)) = a\alpha(bx) = a\alpha(b)\alpha(x) = T_{a\alpha(b)}(x)$. Finally, $L_b(T_a(x)) = b\,a\,\alpha(x) = T_{ba}(x)$.</p>
+<p><strong>Corollary (the monoid generated by the plain and signed left multiplications).</strong> The set $\{L_a, T_a : a \in A\}$ is closed under composition and contains the identity $L_1$; it is a monoid of endomorphisms of the additive group $A$. Its composition law is that of the semidirect product $A \rtimes A$ twisted by $\alpha$, in which $(a,0)$ denotes $L_a$ and $(a,1)$ denotes $T_a$ and</p>
+<p>$$
+(a,0)(b,0) = (ab,0), \quad (a,0)(b,1) = (ab,1), \quad (a,1)(b,0) = (a\alpha(b),1), \quad (a,1)(b,1) = (a\alpha(b),0) .
+$$</p>
+<p>In particular the product of two signed left multiplications is a plain left multiplication, and the product of one of each is a signed one.</p>
+<h3 id="comparison-with-the-reflection-and-the-sandwich">Comparison with the reflection and the sandwich</h3>
+<p><strong>Proposition.</strong> For a unit $u$ the reflection of <em>Reflections as Signed Two-Sided Operators on a Ring</em> factors through the signed left multiplication:</p>
+<p>$$
+r_u(x) = u\,\alpha(x)\,u^{-1} = T_u\bigl(R_{u^{-1}}(x)\bigr) = \bigl(T_u \circ R_{u^{-1}}\bigr)(x),
+$$</p>
+<p>and generally the signed sandwich is $S^{\alpha}_{a,b} = T_a \circ R_b$ for all $a, b \in A$.</p>
+<p><strong>Proof.</strong> $T_u(R_{u^{-1}}(x)) = T_u(xu^{-1}) = u\alpha(xu^{-1}) = u\alpha(x)\alpha(u)^{-1} = u\alpha(x)u^{-1}$, since $\alpha(u^{-1}) = \alpha(u)^{-1}$; the sandwich statement is the definition $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ together with $R_b(x) = xb$.</p>
+<h2 id="kernel-image-and-invertibility">Kernel, Image and Invertibility</h2>
+<h3 id="kernel-and-image">Kernel and image</h3>
+<p><strong>Proposition.</strong> For $a \in A$,</p>
+<p>$$
+\ker T_a = \alpha^{-1}\bigl(\ell(a)\bigr), \qquad \operatorname{im} T_a = Aa,
+$$</p>
+<p>where $\ell(a) = \{x : ax = 0\}$ is the left annihilator. Hence the image of $T_a$ is the same left ideal as the image of $L_a$, and the kernel is the $\alpha$-pullback of the left annihilator of $a$.</p>
+<p><strong>Proof.</strong> $T_a(x) = 0 \iff a\alpha(x) = 0 \iff \alpha(x) \in \ell(a) \iff x \in \alpha^{-1}(\ell(a))$. The image is $\{a\alpha(x)\} = a\,\alpha(A) = aA = Aa$, since $\alpha$ is onto and $Aa = \{ax\}$.</p>
+<h3 id="invertibility">Invertibility</h3>
+<p><strong>Proposition.</strong> For $a \in A$, the operator $T_a$ is invertible if and only if $a \in A^\times$, and then</p>
+<p>$$
+T_a^{-1} = T_{\alpha(a)^{-1}} = T_{\alpha(a^{-1})}.
+$$</p>
+<p><strong>Proof.</strong> If $T_a$ is bijective then $T_a(1) = a$ has a two-sided inverse by surjectivity and $a$ is not a zero divisor by injectivity, so $a$ is a unit. Conversely, $T_a T_{\alpha(a^{-1})}(x) = a\alpha(\alpha(a^{-1})\alpha(x)) = a\,a^{-1}\alpha^2(x) = x$, and the opposite composite is computed the same way; so $T_a$ is invertible with that inverse. The two displayed forms of the inverse agree because $\alpha(a^{-1}) = \alpha(a)^{-1}$.</p>
+<p><strong>Corollary.</strong> The signed left multiplications by the units form, together with the plain left multiplications by the units, the two-sided version of the unit group's one-sided action: $T_u = L_u\alpha$ and $T_u^{-1} = T_{\alpha(u)^{-1}}$, so $u \mapsto T_u$ is a map from $A^\times$ onto a set of invertible operators with the composition $T_uT_v = L_{u\alpha(v)}$.</p>
+<h3 id="the-elements-fixed-by-a-signed-left-multiplication">The elements fixed by a signed left multiplication</h3>
+<p><strong>Proposition.</strong> For $a \in A$ the fixed set</p>
+<p>$$
+\operatorname{Fix}(T_a) = \{x \in A : a\,\alpha(x) = x\}
+$$</p>
+<p>is an additive subgroup of $A$; it is an eigenspace of the grade involution exactly for $a = \pm 1$,</p>
+<p>$$
+\operatorname{Fix}(T_1) = \operatorname{Fix}(\alpha) = A_{\bar 0}, \qquad \operatorname{Fix}(T_{-1}) = A_{\bar 1},
+$$</p>
+<p>the even and the odd part; and $\operatorname{Fix}(T_0) = \{0\}$.</p>
+<p><strong>Proof.</strong> If $a\alpha(x)=x$ and $a\alpha(y)=y$ then $a\alpha(x+y)=x+y$, so the fixed set is an additive subgroup; it contains $0$. For $a=1$ the equation is $\alpha(x)=x$, whose solutions are $A_{\bar0}$; for $a=-1$ it is $-\alpha(x)=x$, that is $\alpha(x)=-x$, whose solutions are $A_{\bar1}$; and for $a=0$ it is $0=x$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial grade involution.</strong> If $\alpha = \mathrm{id}$ then $T_a = L_a$ for every $a$, and the whole article collapses to the plain left multiplication. The signed operators are new only when the grading is nontrivial.</p>
+<p><strong>(b) The sign on the odd part.</strong> For every $a$, the signed and the plain left multiplications agree on the even part and differ by a sign on the odd part: for homogeneous $x$,</p>
+<p>$$
+T_a(x) = L_a(x) \ \text{ if } x \in A_{\bar 0}, \qquad T_a(x) = -L_a(x) \ \text{ if } x \in A_{\bar 1},
+$$</p>
+<p>because $\alpha(x) = \pm x$ according to the parity of $x$. So $T_a = L_a$ as operators exactly when $A = A_{\bar 0}$, that is, when $\alpha = \mathrm{id}$; otherwise the two families differ on every nonzero odd element, and the sign is carried by the parity of the <strong>argument</strong>, not by the parity of the parameter $a$.</p>
+<p><strong>(c) The matrix ring with a grading.</strong> In $A = M_2(k)$ with $\alpha = \operatorname{conj}_J$, $J = \operatorname{diag}(1,-1)$, the even part is the diagonal matrices and the odd part the off-diagonal ones, and the sign rule of (b) applies. For the unit $u = E_{12}+E_{21}$, which is odd with $\alpha(u) = -u$, the composition law gives</p>
+<p>$$
+T_u^2 = T_uT_u = L_{u\alpha(u)} = L_{-u^2} = L_{-I} = -L_I,
+$$</p>
+<p>so $T_u^2$ is the negation of the identity and $T_u$ is not an involution; the reflection $r_u = T_uR_{u^{-1}}$ nevertheless satisfies $r_u^2 = \operatorname{conj}_{u\alpha(u)} = \operatorname{conj}_{-I} = \mathrm{id}$, because $-I$ is central.</p>
+<p><strong>(d) The graded action on a module.</strong> When $M$ is a graded module over a graded ring and the action is required to respect the grading, the operators that occur are precisely the signed left multiplications $T_a$ with $a$ homogeneous, the case of <em>The Graded Action on a Module over a Ring</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For a ring $A$ with a grade involution $\alpha$, the <strong>signed left multiplication</strong> by $a$ is $T_a(x) = a\alpha(x) = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}$. It is additive in its parameter with $T_a(1) = a$ and injective in $a$, and it recovers the plain left multiplication as $L_a = T_a\circ\alpha$, so that the two families coincide exactly when $\alpha = \mathrm{id}$. It is not a ring endomorphism but a <strong>twisted</strong> one: $T_a(xy) = T_a(x)\alpha(y)$. Its compositions are $T_aT_b = L_{a\alpha(b)}$, $T_aL_b = T_{a\alpha(b)}$ and $L_bT_a = T_{ba}$, so the plain and signed left multiplications together form a monoid, the twisted semidirect product $A \rtimes A$, and the reflection and the signed sandwich factor through it as $S^{\alpha}_{a,b} = T_aR_b$ and $r_u = T_uR_{u^{-1}}$. The kernel of $T_a$ is $\alpha^{-1}(\ell(a))$, its image is the left ideal $Aa$, and it is invertible exactly when $a$ is a unit, with inverse $T_{\alpha(a)^{-1}}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\alpha$</td>
+<td>Ring with $1 \neq 0$ and its grade involution</td>
+</tr>
+<tr>
+<td>$T_a(x) = a\alpha(x)$</td>
+<td>Signed left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$T_a = L_a\alpha = \alpha L_{\alpha(a)}$</td>
+<td>Relation to the plain left multiplication</td>
+</tr>
+<tr>
+<td>$L_a = T_a\alpha$</td>
+<td>Recovery of the plain left multiplication</td>
+</tr>
+<tr>
+<td>$T_a(xy) = T_a(x)\alpha(y)$</td>
+<td>Twisted multiplicativity</td>
+</tr>
+<tr>
+<td>$T_aT_b = L_{a\alpha(b)}$</td>
+<td>Product of two signed left multiplications is plain</td>
+</tr>
+<tr>
+<td>$T_aL_b = T_{a\alpha(b)}$, $L_bT_a = T_{ba}$</td>
+<td>Mixed composition laws; the monoid $A\rtimes A$</td>
+</tr>
+<tr>
+<td>$\ker T_a = \alpha^{-1}(\ell(a))$</td>
+<td>Kernel, the $\alpha$-pullback of the left annihilator</td>
+</tr>
+<tr>
+<td>$\operatorname{im} T_a = Aa$</td>
+<td>Image, the left ideal generated by $a$</td>
+</tr>
+<tr>
+<td>$T_a^{-1} = T_{\alpha(a)^{-1}}$</td>
+<td>Inverse on the units</td>
+</tr>
+<tr>
+<td>$S^{\alpha}_{a,b} = T_aR_b$, $r_u = T_uR_{u^{-1}}$</td>
+<td>Sandwich and reflection through $T$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the graded structures of an algebra with an involution and the twisted multiplications.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the signed one-sided operators of a Clifford algebra and their composition.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the parity sign and the graded multiplications.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the semilinear maps and the twisted endomorphism rings of a graded algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

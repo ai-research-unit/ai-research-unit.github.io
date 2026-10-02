@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivariant Cohomology — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivariant-cohomology"><strong>Equivariant Cohomology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A group acting on a space has invariants that no single space records: the fixed set, the orbit space and the equivariant families of cohomology classes are not functors of the underlying space alone. <strong>Equivariant cohomology</strong> is the cohomology theory that sees the action, and the <strong>Borel construction</strong> produces it from ordinary cohomology by replacing the space $X$ with the homotopy quotient $X_G = EG\times_G X$. The construction is the one introduced for the group of order two in <em>Two-Fold Coverings and the Borel Construction</em>, generalised here to an arbitrary group: the diagonal action on $X\times EG$ is free, its quotient fibres over the classifying space $BG$ with fibre $X$, and the cohomology of the total space,</p>
+<p>$$
+H_G^*(X;R) = H^*(X_G;R) = H^*(EG\times_G X;R),
+$$</p>
+<p>is the equivariant cohomology. It is a contravariant functor of the $G$-space, homotopy invariant on the equivariant homotopy category, and a module over the ring $H^*(BG;R)$ of the base of the Borel fibration; the two extreme cases are the free action, for which it is the cohomology of the orbit space, and the trivial action, for which it is the cohomology of a product.</p>
+<p>The article develops the Borel model. It defines the construction and proves its functoriality and homotopy invariance; it computes the two extreme cases; it obtains the spectral sequence of the Borel fibration, its edge maps and the resulting module structure and transgression; it computes the rings $H_G^*(\mathrm{pt};R)$ for the classical groups; and it compares the equivariant cohomology with the cohomology of the orbit space, the comparison being the subject of the sibling article <em>The Cohomology of an Orbit Space</em>. The Borel construction for $\mathbb{Z}/2$ and the identification of its cohomology with that of the homotopy quotient are those of <em>Two-Fold Coverings and the Borel Construction</em>; the classifying space and the universal space are those of <em>Classifying Spaces and Cohomology Operations</em>; the spectral sequence of a fibration is that of <em>The Leray–Serre Spectral Sequence</em>; the cohomology ring and the universal coefficient theorem are those of <em>Cup and Cap Products</em> and <em>Cohomology and the Universal Coefficient Theorem</em>. The <strong>Bredon</strong> equivariant cohomology, in which the coefficients are systems of modules over the orbit category, is the other model of the theory and is used in <em>Equivariant Obstruction Theory</em>; the Borel model of this article is the one that reduces to ordinary cohomology of a single space and computes the classic rings.</p>
+<p>Nothing analytic and nothing geometric is used. The group is a topological group, discrete or compact Lie, so that $EG$ and $BG$ of <em>Classifying Spaces and Cohomology Operations</em> may be taken, and the spaces are compactly generated when a convenient category of spaces is needed; the theory is the cohomology of the homotopy quotient, and no distance, no norm, no smooth structure and no measure is chosen. Throughout, $G$ is a topological group acting on the left on a space $X$, $EG \to BG$ is the universal principal $G$-bundle, $X_G = EG\times_G X$ is the <strong>homotopy quotient</strong> with the diagonal action, and the <strong>Borel fibration</strong> is the projection</p>
+<p>$$
+p : X_G \longrightarrow BG
+$$</p>
+<p>with fibre $X$. The coefficient ring is $R$, commutative with identity $1 \neq 0$, and is suppressed in the notation when it is clear. The equivariant cohomology is written $H_G^*(X;R)$ and the cohomology of the group is $H^*(G;R) = H^*(BG;R)$.</p>
+<h2 id="the-borel-construction">The Borel Construction</h2>
+<h3 id="the-construction-and-the-fibration">The Construction and the Fibration</h3>
+<p><strong>Definition.</strong> Let $G$ act on $X$ and let $EG$ be a contractible free $G$-space. The <strong>Borel construction</strong> on $X$ is the quotient</p>
+<p>$$
+X_G = EG \times_G X = \frac{EG\times X}{G},
+$$</p>
+<p>with the diagonal action $g\cdot(e,x) = (ge,gx)$, and the <strong>equivariant cohomology</strong> is</p>
+<p>$$
+H_G^n(X;R) = H^n(X_G;R) = H^n(EG\times_G X;R).
+$$</p>
+<p><strong>Theorem.</strong> The diagonal action is free, so $X_G$ is the base of a fibre bundle with fibre $X$ and the projection $p : X_G \to BG$, $[e,x]\mapsto[e]$, is a fibration with fibre $X$. The construction is natural in the group and in the space: an equivariant map $f : X \to Y$ induces $\mathrm{id}\times_G f : X_G \to Y_G$, giving $H_G^*(f) : H_G^*(Y;R)\to H_G^*(X;R)$, contravariantly and functorially; and a homomorphism $\alpha : H \to G$ induces a map $X_H \to X_G$ from the induced $H$-action.</p>
+<p><em>Proof.</em> The action on the product is free because it is free on the second factor: if $g(e,x)=(e,x)$ then $ge=e$, and $EG$ has trivial stabilisers, so $g=1$. Local triviality is that of the bundle $EG\times_G X\to BG$ along $EG\to BG$, with fibre $X$; the functoriality is the universal property of the quotient. $\square$</p>
+<h3 id="homotopy-invariance">Homotopy Invariance</h3>
+<p><strong>Theorem.</strong> The construction is homotopy invariant on the equivariant homotopy category: if $f$ and $g$ are equivariantly homotopic $G$-maps then $H_G^*(f) = H_G^*(g)$, and an equivariant homotopy equivalence induces an isomorphism in equivariant cohomology.</p>
+<p><em>Proof.</em> An equivariant homotopy $X\times I\to Y$ with the trivial action on $I$ induces $\mathrm{id}\times_G H : X_G\times I\to Y_G$, an ordinary homotopy between the induced maps; homotopic maps induce the same map in cohomology. $\square$</p>
+<p>So $H_G^*(X;R)$ depends only on the equivariant homotopy type of $X$ and not on the free resolution $EG$ chosen, since any two models of $EG$ are $G$-homotopy equivalent and the construction is homotopy invariant.</p>
+<h2 id="the-two-extreme-cases">The Two Extreme Cases</h2>
+<h3 id="the-free-action-and-the-orbit-space">The Free Action and the Orbit Space</h3>
+<p><strong>Theorem.</strong> If $G$ acts freely on $X$, then the projection $EG\times X\to X$, $(e,x)\mapsto x$, is a $G$-equivariant homotopy equivalence, and it descends to a homotopy equivalence</p>
+<p>$$
+X_G = EG\times_G X \ \simeq\ X/G .
+$$</p>
+<p>Hence $H_G^*(X;R) \cong H^*(X/G;R)$ for a free action, and the Borel fibration is the composite $X/G \to BG$ classifying the principal bundle $X\to X/G$.</p>
+<p><em>Proof.</em> The projection $EG\times X\to X$ is a homotopy equivalence because $EG$ is contractible, it is $G$-equivariant for the diagonal action and the action on $X$, and it descends because the action is free; a descended homotopy equivalence is a homotopy equivalence of the quotients of <em>Equivariant Maps and Equivariant Homotopy</em>. $\square$</p>
+<h3 id="the-trivial-action">The Trivial Action</h3>
+<p><strong>Theorem.</strong> If $G$ acts trivially on $X$, then $X_G = X\times BG$ and</p>
+<p>$$
+H_G^*(X;R) \cong H^*(X;R)\otimes_R H^*(BG;R)
+$$</p>
+<p>when the Künneth sequence of <em>Cup and Cap Products</em> splits, in particular over a field; the fibration is the projection $X\times BG\to BG$ and the module structure over $H^*(BG;R)$ is the multiplication on the second factor.</p>
+<p><em>Proof.</em> For the trivial action the diagonal action is only on the first factor of $EG\times X$, so the quotient is $X\times BG$; the cohomology is that of a product and the Künneth theorem applies. $\square$</p>
+<p>The two cases are the anchors of the theory: a free action has the equivariant cohomology of its orbit space, and a trivial action has the equivariant cohomology of the product with the classifying space, so the equivariant groups interpolate between the two according to how far the action is from free.</p>
+<h2 id="the-spectral-sequence-and-the-module-structure">The Spectral Sequence and the Module Structure</h2>
+<h3 id="the-serre-spectral-sequence-of-the-borel-fibration">The Serre Spectral Sequence of the Borel Fibration</h3>
+<p><strong>Theorem.</strong> The Borel fibration $p : X_G \to BG$ has a cohomological Serre spectral sequence of <em>The Leray–Serre Spectral Sequence</em>,</p>
+<p>$$
+E_2^{p,q} = H^p\bigl(BG;\, \mathcal{H}^q(X;R)\bigr) \ \Longrightarrow \ H_G^{p+q}(X;R),
+$$</p>
+<p>where $\mathcal{H}^q(X;R)$ is the local system on $BG$ determined by the action of $\pi_1(BG)$ on the cohomology of the fibre; the system is trivial and the formula reads</p>
+<p>$$
+E_2^{p,q} = H^p(BG;R)\otimes_R H^q(X;R) \ \Longrightarrow \ H_G^{p+q}(X;R)
+$$</p>
+<p>when the action of the fundamental group is trivial, in particular for a connected group $G$ or when $X$ has trivial monodromy. The spectral sequence converges to the equivariant cohomology, is natural in equivariant maps, and its edge maps are the pullback $H^*(BG;R)\to H_G^*(X;R)$ along $X_G\to BG$ and the map $H_G^*(X;R)\to H^*(X;R)^G$ to the invariants.</p>
+<p><em>Proof.</em> The Serre spectral sequence of the fibration with fibre $X$ and base $BG$, with local coefficients in the cohomology of the fibre; the triviality of the monodromy in the stated cases, and the edge maps are the standard edge homomorphisms. $\square$</p>
+<h3 id="the-module-structure-and-the-transgression">The Module Structure and the Transgression</h3>
+<p><strong>Theorem.</strong> The cohomology of the base acts on the equivariant cohomology: the pullback $H^*(BG;R)\to H_G^*(X;R)$ along the projection makes $H_G^*(X;R)$ a graded module over the graded ring $H^*(BG;R)$, and this module structure is natural. When the spectral sequence collapses at $E_2$, the module is free,</p>
+<p>$$
+H_G^*(X;R) \cong H^*(BG;R)\otimes_R H^*(X;R),
+$$</p>
+<p>as a module over $H^*(BG;R)$. A class of $H^*(X;R)$ that survives to the $E_\infty$ page and a class of $H^*(BG;R)$ that transgresses combine by the transgression differential, and the product structure couples the two.</p>
+<p><em>Proof.</em> The action is the ring structure on the cohomology of $X_G$ and the naturality of the pullback along $X_G\to BG$; the collapse at $E_2$ identifies the associated graded with $H^*(BG)\otimes H^*(X)$, and the module is free because the base is the ring and the fibre contributes central coefficients. The transgression is the standard differential of the spectral sequence. $\square$</p>
+<p>The module structure is the precise sense in which the equivariant cohomology is not merely a group but a structure over the cohomology of the group, and it is what the computations below use: the ring $H^*(BG;R)$ is known for the classical groups, and the equivariant groups are modules over it.</p>
+<h2 id="computations">Computations</h2>
+<h3 id="the-group-rings">The Group Rings</h3>
+<p>The following rings are the ones from which the equivariant cohomology of a point is read, $H_G^*(\mathrm{pt};R) = H^*(BG;R)$; they are computed in <em>Classifying Spaces and Cohomology Operations</em> and in the cohomology computations of <em>Cohomology and the Universal Coefficient Theorem</em>, and no more than their statements is used.</p>
+<ol>
+<li>$G = \mathbb{Z}/2$: $B\mathbb{Z}/2 = \mathbb{RP}^{\infty}$ and $H^*(\mathbb{RP}^{\infty};\mathbb{F}_2) = \mathbb{F}_2[x]$ with $|x|=1$; over $\mathbb{Z}$ the ring has $2$-torsion.</li>
+<li>$G = S^1$: $BS^1 = \mathbb{CP}^{\infty}$ and $H^*(BS^1;\mathbb{Z}) = \mathbb{Z}[c]$ with $|c| = 2$, a polynomial ring on one even generator.</li>
+<li>$G = T^n$ a torus: $BT^n = (\mathbb{CP}^{\infty})^n$ and $H^*(BT^n;\mathbb{Z}) = \mathbb{Z}[c_1,\dots,c_n]$ with each $|c_i| = 2$.</li>
+<li>$G$ a compact connected Lie group: $H^*(BG;\mathbb{Q}) = \mathbb{Q}[c_1,\dots,c_r]$ with the generators of even degree, $r$ the rank, by the theorem of Borel and Hopf.</li>
+</ol>
+<h3 id="homogeneous-spaces">Homogeneous Spaces</h3>
+<p><strong>Theorem.</strong> Let $H \leq G$ be a closed subgroup and let $X = G/H$ with the left action of $G$. Then the homotopy quotient is</p>
+<p>$$
+(G/H)_G = EG\times_G (G/H) \cong BH,
+$$</p>
+<p>and hence $H_G^*(G/H;R) \cong H^*(BH;R)$.</p>
+<p><em>Proof.</em> The action of $G$ on $G/H$ is transitive, so the map $EG\times G/H\to BH$ sending $(e,gH)$ to the class of $g$ is a homeomorphism on the quotient, since $EG\times G/H \cong EG/H$ with $H$ acting by the restriction on the right. $\square$</p>
+<p>So the equivariant cohomology of a homogeneous space is the cohomology of the classifying space of its isotropy group, and the Borel fibration $BH\to BG$ is the map induced by the inclusion $H\to G$. For the free case $H=1$ this is $H_G^*(G;R) \cong H^*(\mathrm{pt};R)$.</p>
+<h3 id="free-circle-actions-on-the-odd-spheres">Free Circle Actions on the Odd Spheres</h3>
+<p><strong>Example.</strong> Let $S^1$ act on $S^{2n+1}\subset\mathbb{C}^{n+1}$ by scalar multiplication, the standard free action with orbit space $\mathbb{CP}^n$. Then the Borel construction gives $H_{S^1}^*(S^{2n+1};\mathbb{Z}) \cong H^*(\mathbb{CP}^n;\mathbb{Z}) = \mathbb{Z}[h]/(h^{n+1})$ with $|h|=2$; as a module over $H^*(BS^1;\mathbb{Z})=\mathbb{Z}[c]$ the ring is $\mathbb{Z}[c]/(c^{n+1})$ after the identification $h=c$, and the Borel fibration is the inclusion of $\mathbb{CP}^n$ in $\mathbb{CP}^\infty$ followed by the projection to a point. The free case identifies the equivariant cohomology with the cohomology of the orbit space, and the module structure over the polynomial ring is the truncation.</p>
+<p><strong>Example.</strong> For the antipodal action of $\mathbb{Z}/2$ on $S^n$, the action is free and $S^n_{\mathbb{Z}/2} = \mathbb{RP}^n$; the equivariant cohomology is $H^*(\mathbb{RP}^n;\mathbb{F}_2) = \mathbb{F}_2[x]/(x^{n+1})$, a module over $\mathbb{F}_2[x] = H^*(B\mathbb{Z}/2;\mathbb{F}_2)$ by the truncation, the Borel fibration being $\mathbb{RP}^n\to\mathbb{RP}^\infty$. For the non-free involution with fixed set $F$, the module is no longer the truncation and the spectral sequence carries the fixed-set information, which is the subject of <em>The Mod 2 Cohomology of an Involution</em>.</p>
+<h2 id="the-comparison-with-the-orbit-space">The Comparison with the Orbit Space</h2>
+<p><strong>Theorem.</strong> The equivariant projection $X\times EG\to X$ induces a natural map</p>
+<p>$$
+c : X_G \longrightarrow X/G
+$$</p>
+<p>when the orbit space is formed, and a map in cohomology $H^*(X/G;R)\to H_G^*(X;R)$, the <strong>comparison map</strong>; for a free action $c$ is a homotopy equivalence and the comparison is an isomorphism. For a finite group $G$ acting on a nice space, the comparison is an isomorphism with rational coefficients,</p>
+<p>$$
+H^*(X/G;\mathbb{Q}) \cong H_G^*(X;\mathbb{Q}),
+$$</p>
+<p>and with field coefficients of characteristic not dividing $|G|$.</p>
+<p><em>Proof.</em> The map $c$ exists because the equivariant projection is constant on the orbits; the free case is the theorem above. For a finite $G$ the transfer and the averaging argument of <em>The Transfer Map</em> split the action on the rational cohomology, so the invariants and the coinvariants agree and the Leray–Serre spectral sequence of $EG\times_G X\to X/G$ degenerates; the transfer argument with the group order inverted gives the stated characteristic restriction. $\square$</p>
+<p>The general comparison, the exact sequence that measures the failure of the isomorphism in the presence of fixed points, and the relation to the cohomology of the orbit space are the subject of <em>The Cohomology of an Orbit Space</em>. The essential point is that the Borel construction and the orbit space agree for a free action and differ in a controlled way otherwise, the difference being carried by the cohomology of the group.</p>
+<h2 id="the-localization-theorem">The Localization Theorem</h2>
+<p><strong>Theorem (localization; standard).</strong> Let $T$ be a torus acting on a finite-dimensional $T$-CW complex $X$ and let $F = X^T$ be the fixed set. Then the inclusion $F\hookrightarrow X$ induces an isomorphism after localizing at the multiplicative set of nonzero elements of $H^*(BT;\mathbb{Q})$ that restrict nontrivially to $H^*(BT)$ through every subtorus:</p>
+<p>$$
+H_T^*(X;\mathbb{Q})[\mathcal{S}^{-1}] \;\cong\; H_T^*(F;\mathbb{Q})[\mathcal{S}^{-1}] ,
+$$</p>
+<p>and since the action on $F$ is trivial there, the right side is $H^*(F;\mathbb{Q})\otimes H^*(BT;\mathbb{Q})$ localized. In particular, for a torus action the rational equivariant cohomology is determined by the fixed set.</p>
+<p><em>Proof.</em> The theorem of Atiyah–Bott and Borel; the localization uses the Euler classes of the normal directions to the fixed set and the fact that on the complement of the fixed set the equivariant Euler class is invertible in the localized ring. The statement is quoted, and the equivariant $K$-theory version is used in <em>Equivariant K-Theory</em>. $\square$</p>
+<h2 id="summary">Summary</h2>
+<p>Equivariant cohomology in the Borel model is the ordinary cohomology of the homotopy quotient $X_G = EG\times_G X$; the diagonal action is free, the projection $X_G\to BG$ is a fibration with fibre $X$, and the construction is natural in the equivariant map and homotopy invariant on the equivariant homotopy category. For a free action the homotopy quotient is the orbit space and $H_G^*(X;R)\cong H^*(X/G;R)$; for a trivial action it is $X\times BG$ and the equivariant cohomology is the product with $H^*(BG;R)$; for a homogeneous space $G/H$ it is $H^*(BH;R)$. The Serre spectral sequence of the Borel fibration has $E_2^{p,q}=H^p(BG;\mathcal{H}^q(X;R))$ and converges to $H_G^{p+q}(X;R)$, with the trivial monodromy giving $H^*(BG;R)\otimes H^*(X;R)$; the cohomology of the base makes the equivariant cohomology a module over $H^*(BG;R)$, and the module is free when the sequence collapses. The rings $H^*(BG;R)$ are polynomial for the classical groups, and the localization theorem computes the rational equivariant cohomology of a torus action from the fixed set. The comparison with the cohomology of the orbit space is the isomorphism for free actions and the transfer isomorphism for finite groups with the group order inverted; the general comparison is the subject of <em>The Cohomology of an Orbit Space</em>. Nothing analytic and nothing geometric was used beyond the classifying spaces and the fibration.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $X$</td>
+<td>Topological group and a left $G$-space</td>
+</tr>
+<tr>
+<td>$EG$, $BG$</td>
+<td>Universal $G$-bundle; classifying space, from <em>Classifying Spaces and Cohomology Operations</em></td>
+</tr>
+<tr>
+<td>$X_G = EG\times_G X$</td>
+<td>Homotopy quotient, or Borel construction</td>
+</tr>
+<tr>
+<td>$p : X_G \to BG$</td>
+<td>Borel fibration, with fibre $X$</td>
+</tr>
+<tr>
+<td>$H_G^*(X;R)$</td>
+<td>Equivariant cohomology $H^*(X_G;R)$</td>
+</tr>
+<tr>
+<td>$H^*(G;R) = H^*(BG;R)$</td>
+<td>Cohomology of the group; the base ring</td>
+</tr>
+<tr>
+<td>$H_G^*(f)$, $\mathrm{id}\times_G f$</td>
+<td>Contravariant functoriality in equivariant maps</td>
+</tr>
+<tr>
+<td>$E_2^{p,q} = H^p(BG;\mathcal{H}^q(X))$</td>
+<td>Serre spectral sequence of the Borel fibration</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^q(X;R)$</td>
+<td>Local system of the fibre cohomology over $BG$</td>
+</tr>
+<tr>
+<td>$H^*(BG;R)\otimes H^*(X;R)$</td>
+<td>$E_2$ page and $H_G^*$ when the monodromy is trivial</td>
+</tr>
+<tr>
+<td>$c : X_G \to X/G$</td>
+<td>Comparison map with the orbit space</td>
+</tr>
+<tr>
+<td>$H^*(X/G;\mathbb{Q})\cong H_G^*(X;\mathbb{Q})$</td>
+<td>Comparison isomorphism for a finite group</td>
+</tr>
+<tr>
+<td>$F = X^T$, localization</td>
+<td>Fixed set of a torus; localization theorem</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Armand Borel, <em>Seminar on Transformation Groups</em> (Annals of Mathematics Studies 46, 1960), for the homotopy quotient, the Borel fibration and the equivariant cohomology.</li>
+<li>Wu-yi Hsiang, <em>Cohomology Theory of Topological Transformation Groups</em> (Springer, 1975), for the computations of the equivariant cohomology rings of the classical transformation groups.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the Borel construction, the spectral sequence and the comparison with the orbit space.</li>
+<li>Michael F. Atiyah and Raoul Bott, "The moment map and equivariant cohomology", <em>Topology</em> 23 (1984), 1–28, for the localization theorem and its applications.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the Serre spectral sequence, the classifying spaces and the cohomology of the classical groups.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (de Gruyter, 1987), for equivariant cohomology, the orbit category and the relation between the Borel and Bredon models.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

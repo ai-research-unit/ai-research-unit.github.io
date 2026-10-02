@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Restriction and Extension Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-restriction-and-extension-operators"><strong>The Restriction and Extension Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $j:U\hookrightarrow X$ be the inclusion of an open subset of a topological space. There are three ways of passing between the sheaves on $U$ and the sheaves on $X$, and they are related by adjunction: the <strong>restriction</strong> $j^*$, which sends a sheaf on $X$ to its restriction to $U$; the <strong>extension by zero</strong> $j_!$, which sends a sheaf on $U$ to the smallest sheaf on $X$ with the same sections over $U$ and no sections off $U$; and the <strong>direct image</strong> $j_*$, which sends a sheaf on $U$ to the sheaf on $X$ whose sections over an open set $V$ are the sections over $V\cap U$. Restriction is left adjoint to the direct image and right adjoint to the extension by zero, so the three form an adjoint chain</p>
+<p>$$
+j_!\ \dashv\ j^*\ \dashv\ j_* .
+$$</p>
+<p>The article studies the two ends of the chain as operators between the categories of sheaves on $U$ and on $X$: restriction, which is a ring homomorphism on endomorphisms and preserves every limit and every colimit; the extension by zero, which is left adjoint to restriction and is exact; and the exactness each of the three functors preserves and each fails to preserve. The middle functor, the direct image, is the one already used in <em>Presheaves and Sheaves</em> for an arbitrary continuous map, and it is recalled here only as the right adjoint of restriction.</p>
+<p>The restriction and the extension by zero are the functors from which the cohomological machinery of the category is built: the compactly supported cohomology of an open set is the cohomology of its extension by zero, and the sequences relating the cohomology of a space, of an open set and of its complement are the long exact sequences of these functors. The conventions and the notation for sheaves, stalks, restrictions and the sheaf $\mathcal{H}om$ are those of <em>Presheaves and Sheaves</em>; the cohomology $H^i(X,\mathcal{F})$ and the direct image $f_*$ are those of <em>Sheaf Cohomology</em> and <em>Derived Functors and Sheaf Cohomology</em>. Nothing analytic and nothing geometric is used: the extension by zero is a topological operation on the open subsets of $X$, and no form, no norm and no derivative occurs. Throughout, $j:U\hookrightarrow X$ is an open immersion, $i:Z=X\setminus U\hookrightarrow X$ is the complementary closed immersion, $\mathcal{F},\mathcal{G},\mathcal{H}$ are sheaves on $X$ and $\mathcal{M},\mathcal{N}$ are sheaves on $U$, in the category of abelian groups or of $\mathcal{O}_X$-modules.</p>
+<h2 id="the-restriction-functor">The Restriction Functor</h2>
+<p><strong>Definition.</strong> The <strong>restriction</strong> of a sheaf $\mathcal{F}$ on $X$ to the open set $U$ is the sheaf $j^*\mathcal{F}$ on $U$ with</p>
+<p>$$
+(j^*\mathcal{F})(V)=\mathcal{F}(V),\qquad V\subseteq U \text{ open},
+$$</p>
+<p>and the restriction maps inherited from $\mathcal{F}$; it is also written $\mathcal{F}|_U$. On morphisms, $j^*$ is the assignment $\varphi\mapsto\varphi|_U$, and it is a functor $\mathrm{Sh}(X)\to\mathrm{Sh}(U)$, the <strong>restriction functor</strong>.</p>
+<p><strong>Proposition (stalks and exactness).</strong> For every $x\in U$, $(j^*\mathcal{F})_x=\mathcal{F}_x$, and the restriction functor is <strong>exact</strong>: it preserves kernels, cokernels, images, limits and colimits, the operations being computed sectionwise over the opens of $U$.</p>
+<p><em>Proof.</em> The stalk formula is the identity of the filtered systems of open neighbourhoods of $x$ inside $U$ and inside $X$, which coincide for $x\in U$ because $U$ is open. Exactness in each variable is the fact that the kernel, the cokernel and the image of a morphism of sheaves are computed open by open, as recorded in <em>Presheaves and Sheaves</em>; a functor that is computed open by open preserves all the diagrammatic constructions.</p>
+<p><strong>Proposition (the restriction of operators).</strong> Restriction is a functor, so it carries an operator $T\in\operatorname{End}(\mathcal{F})$ to the operator $T|_U=j^*(T)\in\operatorname{End}(\mathcal{F}|_U)$, and</p>
+<p>$$
+j^*:\operatorname{End}(\mathcal{F})\longrightarrow\operatorname{End}(j^*\mathcal{F}),\qquad T\mapsto T|_U,
+$$</p>
+<p>is a unital ring homomorphism; for sheaves of $\mathcal{O}_X$-modules it is a homomorphism of $\mathcal{O}_X(X)$-algebras whose target is an $\mathcal{O}_X(X)$-algebra through the restriction $\mathcal{O}_X(X)\to\mathcal{O}_X(U)$. The kernel consists of the operators vanishing on $U$, that is, of the operators factoring through the quotient $\mathcal{F}\to i_*(\mathcal{F}|_Z)$ of the closed-complement sequence recalled below.</p>
+<p><em>Proof.</em> A functor carries endomorphisms to endomorphisms and preserves composition and identities; the linearity of $j^*$ on hom-groups gives the additivity, and the compatibility with scalars is the definition of the restriction of a module morphism. An operator is zero on $U$ exactly when its image in $\mathcal{F}|_U$ is zero, which by the universal property of the cokernel is the statement that it factors through the cokernel of the inclusion $j_!(\mathcal{F}|_U)\hookrightarrow\mathcal{F}$.</p>
+<p><strong>Remark (restriction is not full).</strong> Restriction is faithful, since a morphism of sheaves is determined by its restriction to an open cover, but it is not full: an operator on $\mathcal{F}|_U$ need not extend to an operator on $\mathcal{F}$. The obstruction to the extension of operators is the subject of the extension by zero and of the adjunction of the next two sections.</p>
+<h2 id="the-extension-by-zero">The Extension by Zero</h2>
+<p><strong>Definition.</strong> The <strong>extension by zero</strong> of a sheaf $\mathcal{M}$ on $U$ is the sheaf $j_!\mathcal{M}$ on $X$ obtained by sheafifying the presheaf</p>
+<p>$$
+V\longmapsto \begin{cases}\mathcal{M}(V), & V\subseteq U,\\ 0, & V\not\subseteq U.\end{cases}
+$$</p>
+<p>It is a functor $j_!:\mathrm{Sh}(U)\to\mathrm{Sh}(X)$, and it is a subsheaf of the direct image $j_*\mathcal{M}$, namely the subsheaf of sections whose support is contained in $U$, with support in the sense of <em>Presheaves and Sheaves</em>.</p>
+<p><strong>Proposition (stalks and support).</strong> For every $x\in X$,</p>
+<p>$$
+(j_!\mathcal{M})_x= \begin{cases}\mathcal{M}_x, & x\in U,\\ 0, & x\notin U,\end{cases}
+$$</p>
+<p>so that $\operatorname{Supp}(j_!\mathcal{M})$ is a closed subset of $X$ contained in $U$, and $j_!\mathcal{M}$ is the unique sheaf on $X$ with these stalks and with a morphism $j_!\mathcal{M}\to j_*\mathcal{M}$ that is an isomorphism over $U$. In particular $j_!\mathcal{M}$ is a subsheaf of $j_*\mathcal{M}$ and the quotient $j_*\mathcal{M}/j_!\mathcal{M}$ is supported in $X\setminus U$.</p>
+<p><em>Proof.</em> The stalk of the sheafification at $x$ is the stalk of the presheaf, which is the colimit over the open neighbourhoods $V$ of $x$ of the values displayed; for $x\in U$ the cofinal system of the $V\subseteq U$ contributes $\mathcal{M}_x$, and for $x\notin U$ every $V$ in the system contains points outside $U$ and the colimit is $0$. The support statement is the complement of the vanishing locus, which is open by the first part. The identification with a subsheaf of $j_*\mathcal{M}$ is the universal property of the sheafification, and the stalk computation identifies the quotient.</p>
+<p><strong>Proposition (exactness).</strong> The extension by zero is exact.</p>
+<p><em>Proof.</em> On stalks, $(j_!\varphi)_x$ is $\varphi_x$ for $x\in U$ and $0$ for $x\notin U$ by the previous proposition; a sequence of sheaves on $U$ is exact if and only if it is exact on every stalk, and each of the induced maps of stalks is either the corresponding map of the exact sequence or the zero map between zero groups. Hence an exact sequence on $U$ extends to an exact sequence on $X$, and $j_!$ preserves kernels and cokernels.</p>
+<p><strong>Example (the extension is not the direct image).</strong> For $U=(0,1)\subset X=\mathbb{R}$ and the constant sheaf $\underline{\mathbb{Z}}_U$, the direct image $j_*\underline{\mathbb{Z}}_U$ has global sections $\mathbb{Z}$ and the extension by zero $j_!\underline{\mathbb{Z}}_U$ has global sections $0$: a nonzero locally constant function on $(0,1)$ has support $(0,1)$, which is not closed in $\mathbb{R}$, so it is not a section of the extension. The two functors differ exactly on the sections near the boundary of $U$.</p>
+<h2 id="the-adjunction-math115">The Adjunction $j_!\dashv j^*\dashv j_*$</h2>
+<p><strong>Theorem (the adjoint chain).</strong> For an open immersion $j:U\hookrightarrow X$ there are natural bijections, for $\mathcal{M}$ on $U$ and $\mathcal{F}$ on $X$,</p>
+<p>$$
+\operatorname{Hom}_X(j_!\mathcal{M},\mathcal{F})\cong\operatorname{Hom}_U(\mathcal{M},j^*\mathcal{F}),\qquad \operatorname{Hom}_U(j^*\mathcal{F},\mathcal{M})\cong\operatorname{Hom}_X(\mathcal{F},j_*\mathcal{M}),
+$$</p>
+<p>so that $j_!$ is left adjoint to $j^*$, and $j^*$ is left adjoint to $j_*$.</p>
+<p><em>Proof.</em> A morphism $j_!\mathcal{M}\to\mathcal{F}$ is determined by its restriction to the opens contained in $U$, since those opens generate $j_!\mathcal{M}$; its restriction to $U$ is a morphism $\mathcal{M}\to\mathcal{F}|_U$, and conversely such a morphism extends uniquely to $j_!\mathcal{M}$ by the universal property of the sheafification. This is the first adjunction. The second is the adjunction $f^*\dashv f_*$ of <em>Presheaves and Sheaves</em> for the continuous map $j$, with $f^*=f^{-1}=j^*$ for an open immersion.</p>
+<p><strong>Corollary (units and counits).</strong> The unit $\eta:\mathrm{id}\to j^*j_!$ and the counit $\varepsilon:j_!j^*\to\mathrm{id}$ of the first adjunction satisfy: $\eta_{\mathcal{M}}:\mathcal{M}\to j^*(j_!\mathcal{M})$ is an isomorphism for every $\mathcal{M}$, and $\varepsilon_{\mathcal{F}}:j_!(j^*\mathcal{F})\to\mathcal{F}$ is the inclusion of the subsheaf of sections of $\mathcal{F}$ supported in $U$. The unit $\eta':\mathrm{id}\to j^*j_*$ and the counit $\varepsilon':j_*j^*\to\mathrm{id}$ of the second satisfy: $\eta'_{\mathcal{M}}:\mathcal{M}\to j^*(j_*\mathcal{M})$ is an isomorphism for every $\mathcal{M}$, and $\varepsilon'_{\mathcal{F}}:j_*(j^*\mathcal{F})\to\mathcal{F}$ is the natural restriction map.</p>
+<p><em>Proof.</em> The two statements on the units are the stalk identities $(j^*j_!\mathcal{M})_x=\mathcal{M}_x$ for $x\in U$ and $(j^*j_*\mathcal{M})_x=\mathcal{M}_x$ for $x\in U$, which hold for every $x\in U$; the statements on the counits are the descriptions of $j_!\mathcal{M}$ and $j_*\mathcal{M}$ in the previous section.</p>
+<p><strong>Corollary (the three functors preserve limits and colimits).</strong> $j_!$ preserves colimits, being a left adjoint; $j_*$ preserves limits, being a right adjoint; $j^*$ preserves both limits and colimits, being both a left and a right adjoint. Equivalently, $j_!$ is right exact, $j_*$ is left exact, and $j^*$ is exact, in agreement with the direct computations above.</p>
+<p><em>Proof.</em> A left adjoint preserves colimits and a right adjoint preserves limits, by the general adjoint functor theorem; $j^*$ has a left adjoint $j_!$ and a right adjoint $j_*$, so it preserves colimits and limits.</p>
+<p><strong>Remark (the closed complement).</strong> The complementary closed immersion $i:Z\hookrightarrow X$ gives a direct image $i_*$ that is exact and fully faithful, and there is a short exact sequence of sheaves on $X$</p>
+<p>$$
+0\to j_!(\mathcal{F}|_U)\to\mathcal{F}\to i_*(\mathcal{F}|_Z)\to 0 ,
+$$</p>
+<p>the <strong>open-closed sequence</strong>, whose exactness is the stalk computation of the previous section; its long exact sequence in cohomology is derived in <em>Sheaf Cohomology</em>, where the cohomology with support in a closed set is defined, and it is the basic exact sequence relating the cohomology of $X$, of $U$ and of $Z$. The present article supplies the operator-theoretic content of the sequence — the three functors and their adjunctions — and does not repeat the cohomological construction.</p>
+<h2 id="the-exactness-preserved">The Exactness Preserved</h2>
+<p><strong>Theorem (exactness).</strong> Let $j:U\hookrightarrow X$ be an open immersion.</p>
+<ol>
+<li>$j^*$ is exact: it preserves kernels, cokernels, images and all limits and colimits.</li>
+<li>$j_!$ is exact: it preserves kernels and cokernels, and it preserves colimits because it is a left adjoint.</li>
+<li>$j_*$ is left exact and not right exact in general: it preserves kernels and finite limits, and it does not preserve cokernels.</li>
+</ol>
+<p><em>Proof.</em> (1) is the sectionwise computation of <em>The Restriction Functor</em> and the adjoint-chain corollary. (2) is the stalk computation of <em>The Extension by Zero</em> and the left-adjoint property. (3) The preservation of limits is the right-adjoint property; the failure of right exactness is the failure of the direct image to commute with cokernels, recorded for a general continuous map in <em>Presheaves and Sheaves</em>, and exhibited there by the exponential sequence.</p>
+<p><strong>Corollary (derived functors).</strong> Since $j_!$ is exact, $R^p j_!=0$ for $p>0$, and the derived functors of the extension by zero are trivial; in particular the cohomology of $X$ with coefficients in $j_!\mathcal{M}$ is computed by the naive complex, $H^i(X,j_!\mathcal{M})=H^i\bigl(\Gamma(X,j_!\mathcal{M}^\bullet)\bigr)$ for any resolution $\mathcal{M}^\bullet$ of $\mathcal{M}$ by sheaves on $U$. Since $j_*$ is left exact and not right exact, it has higher direct images $R^p j_*$, the sheaves on $X$ with stalk $(R^pj_*\mathcal{M})_x=\varinjlim_{V\ni x}H^p(V\cap U,\mathcal{M})$, computed in <em>Sheaf Cohomology</em> and <em>Derived Functors and Sheaf Cohomology</em>.</p>
+<p><strong>Example (the failure of right exactness of the direct image).</strong> Let $X=\mathbb{C}^*$ and let $U\subset X$ be a simply connected open subset; let $\mathcal{O}$ be the sheaf of continuous complex-valued functions on $U$ and $\mathcal{O}^*$ the sheaf of nowhere-zero ones. The exponential map is a surjection of sheaves on $U$, and $j_*$ preserves its kernel; but a global section of $j_*\mathcal{O}^*$ over $X$ need not lie in the image of $j_*\mathcal{O}\to j_*\mathcal{O}^*$, since the identity function of $X$ has no continuous logarithm. Hence $j_*$ does not preserve the cokernel of the first map, and it is not right exact.</p>
+<h2 id="the-operators-induced-on-cohomology">The Operators Induced on Cohomology</h2>
+<p><strong>Proposition (extension preserves cohomology of the open set).</strong> The exactness of $j_!$ gives, for every $i$,</p>
+<p>$$
+H^i(X,j_!\mathcal{M})\cong H^i_c(U,\mathcal{M}),
+$$</p>
+<p>the cohomology of $U$ with support in the family of closed subsets of $X$ contained in $U$; the identification is the one of <em>Sheaf Cohomology</em> for sections with support in a family, and for a compact space, or when every closed subset of $X$ contained in $U$ is compact, these are the compactly supported sections.</p>
+<p><em>Proof.</em> The global sections of $j_!\mathcal{M}$ are the sections of $\mathcal{M}$ over $U$ whose support is closed in $X$; the functor $\Gamma(X,j_!-)$ is therefore the functor of sections with support in the family of closed subsets contained in $U$, and its right derived functors are the cohomology with support in that family. The derived functors are computed by an injective resolution of $\mathcal{M}$, which $j_!$ carries to an exact functor's image, giving the identification.</p>
+<p><strong>Proposition (restriction on cohomology).</strong> Restriction induces, for every $i$, a natural map</p>
+<p>$$
+H^i(X,\mathcal{F})\longrightarrow H^i(U,\mathcal{F}|_U),
+$$</p>
+<p>the <strong>restriction map on cohomology</strong>, obtained by applying the functor of global sections of $U$ to an acyclic resolution of $\mathcal{F}$ and restricting its terms; it is the edge map of the adjoint chain, and its kernel and cokernel are described by the open-closed sequence of the previous sections. The extension by zero is the left adjoint of the restriction on the level of the operator categories, and its effect on cohomology is the isomorphism of the preceding proposition.</p>
+<p><em>Proof.</em> An acyclic resolution of $\mathcal{F}$ restricts to an acyclic resolution of $\mathcal{F}|_U$, since the restriction functor is exact and carries injective sheaves to injective sheaves; applying $\Gamma(U,-)$ and comparing with the complex of $\Gamma(X,-)$ gives the map. The description of its kernel and cokernel is the long exact sequence of the open-closed sequence.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-constant-sheaf-on-an-open-interval">The Constant Sheaf on an Open Interval</h3>
+<p>Let $X=\mathbb{R}$ and $U=(0,1)$ with the constant sheaf $\underline{\mathbb{Z}}_U$. Every section of $j_!\underline{\mathbb{Z}}_U$ over $\mathbb{R}$ is a locally constant function on $(0,1)$ with support closed in $\mathbb{R}$; a nonzero constant function on $(0,1)$ has support $(0,1)$, which is not closed in $\mathbb{R}$, so</p>
+<p>$$
+\Gamma(\mathbb{R},j_!\underline{\mathbb{Z}}_U)=0,\qquad H^i(\mathbb{R},j_!\underline{\mathbb{Z}}_U)=0 \text{ for all } i,
+$$</p>
+<p>while $\Gamma(X,j_*\underline{\mathbb{Z}}_U)=\mathbb{Z}$ and $\Gamma(U,\underline{\mathbb{Z}}_U)=\mathbb{Z}$. The example separates the three functors on the simplest space.</p>
+<h3 id="the-two-point-space">The Two-Point Space</h3>
+<p>Let $X=\{p,q\}$ be discrete and let $U=\{p\}$. A sheaf on $U$ is an abelian group $A$, and $j_!A$ is the skyscraper at $p$ with value $A$ studied in <em>Operators on a Sheaf</em>; the direct image $j_*A$ is the same skyscraper, since $p$ is also closed and open. Restriction $j^*$ is the functor taking a sheaf to its stalk at $p$. The adjunction $j_!\dashv j^*$ reads $\operatorname{Hom}(j_!A,\mathcal{F})\cong\operatorname{Hom}(A,\mathcal{F}_p)$, which is the universal property of the skyscraper, and $j^*$ is exact on a discrete space.</p>
+<h3 id="the-complement-of-a-point">The Complement of a Point</h3>
+<p>Let $X=S^1$ and $U=S^1\setminus\{x\}$, an open interval. The open-closed sequence attaches to every sheaf $\mathcal{F}$ on $X$ the sequence $0\to j_!(\mathcal{F}|_U)\to\mathcal{F}\to (i_x)_*\mathcal{F}_x\to 0$; the two ends are the extension by zero, the simplest sheaf with no section off $U$, and the skyscraper at $x$, the simplest sheaf concentrated at a point. The intermediate extension $j_!j^*\to\mathrm{id}$ is the counit, and the sequence exhibits it as the subsheaf of sections carried by $U$.</p>
+<h2 id="summary">Summary</h2>
+<p>For an open immersion $j:U\hookrightarrow X$ there are three functors between the sheaves on $U$ and the sheaves on $X$: the restriction $j^*=(-)|_U$, the extension by zero $j_!$, and the direct image $j_*$. Restriction is exact, its stalks at the points of $U$ are the stalks of the sheaf, and on operators it is a ring homomorphism $\operatorname{End}(\mathcal{F})\to\operatorname{End}(\mathcal{F}|_U)$. The extension by zero is the sheafification of the padded presheaf, it has the same stalks as the original sheaf on $U$ and zero stalks off $U$, its support is closed and contained in $U$, and it is a subsheaf of the direct image whose quotient is supported off $U$; it is exact because an exact sequence can be checked on the stalks.</p>
+<p>The three functors form the adjoint chain $j_!\dashv j^*\dashv j_*$: extension is left adjoint to restriction, restriction is left adjoint to the direct image. The unit $\mathrm{id}\to j^*j_!$ is an isomorphism, the counit $j_!j^*\to\mathrm{id}$ is the inclusion of the sections supported in $U$, and dually for the second adjunction. Consequently $j_!$ preserves colimits and is exact, $j^*$ preserves limits and colimits and is exact, and $j_*$ preserves limits and is left exact but not right exact. The derived functors of the extension by zero vanish in positive degree, and its cohomology is the cohomology of the open set with support in $U$; the higher direct images $R^pj_*$ organise the cohomology of the open subset into a sheaf on $X$. The open-closed sequence $0\to j_!(\mathcal{F}|_U)\to\mathcal{F}\to i_*(\mathcal{F}|_Z)\to0$ is the basic exact sequence, whose cohomological consequences belong to <em>Sheaf Cohomology</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$j:U\hookrightarrow X$</td>
+<td>open immersion; $i:Z=X\setminus U\hookrightarrow X$ its closed complement</td>
+</tr>
+<tr>
+<td>$j^*\mathcal{F}=\mathcal{F}\rvert_U$</td>
+<td>restriction to the open set; exact</td>
+</tr>
+<tr>
+<td>$j_!\mathcal{M}$</td>
+<td>extension by zero of a sheaf on $U$; exact</td>
+</tr>
+<tr>
+<td>$j_*\mathcal{M}$</td>
+<td>direct image; left exact, the right adjoint of $j^*$</td>
+</tr>
+<tr>
+<td>$j_!\dashv j^*\dashv j_*$</td>
+<td>the adjoint chain of the three functors</td>
+</tr>
+<tr>
+<td>$\eta,\varepsilon$</td>
+<td>unit and counit of $j_!\dashv j^*$</td>
+</tr>
+<tr>
+<td>$\eta',\varepsilon'$</td>
+<td>unit and counit of $j^*\dashv j_*$</td>
+</tr>
+<tr>
+<td>$\operatorname{Supp}(j_!\mathcal{M})$</td>
+<td>closed set contained in $U$; $j_!\mathcal{M}$ vanishes off $U$</td>
+</tr>
+<tr>
+<td>$R^pj_!$, $R^pj_*$</td>
+<td>derived functors; $R^pj_!=0$ for $p>0$, $R^pj_*$ the higher direct images</td>
+</tr>
+<tr>
+<td>$H^i(X,j_!\mathcal{M})=H^i_c(U,\mathcal{M})$</td>
+<td>cohomology with support in the closed subsets of $U$</td>
+</tr>
+<tr>
+<td>$0\to j_!(\mathcal{F}\rvert_U)\to\mathcal{F}\to i_*(\mathcal{F}\rvert_Z)\to0$</td>
+<td>the open-closed sequence</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the adjoint pairs $j_!\dashv j^*\dashv j_*$ and the extension by zero for the open immersions of schemes.</li>
+<li>Glen E. Bredon, <em>Sheaf Theory</em> (Springer, second edition, 1997), for the extension by zero, the open-closed sequence and cohomology with support.</li>
+<li>Roger Godement, <em>Topologie algébrique et théorie des faisceaux</em> (Hermann, 1958), for the direct and inverse images, their adjunction and their exactness.</li>
+<li>Birger Iversen, <em>Cohomology of Sheaves</em> (Springer, 1986), for the adjoint chain and the exceptional functors attached to an immersion.</li>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em>, 2nd ed. (Springer, 1998), for the general adjoint functor theorem and the preservation of limits and colimits by adjoints.</li>
+<li>Masaki Kashiwara and Pierre Schapira, <em>Sheaves on Manifolds</em> (Springer, 1990), for the six operations and the role of the extension by zero among them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

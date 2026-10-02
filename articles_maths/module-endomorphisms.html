@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Endomorphisms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="module-endomorphisms"><strong>Module Endomorphisms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An endomorphism of a module is an operator on the module that commutes with the action of the algebra. This article reads the endomorphisms in the operator layer opened by <em>Left and Right Multiplication of a Module</em>: it describes the endomorphism ring as the commutant of the action, the action of that ring back on the module, its group of units, and the density theorem, which measures how large the image of the algebra is inside the ring of operators over the division ring of a simple module.</p>
+<p>The article assumes the object of <em>Modules over an Algebra</em> and the elementary theory of the endomorphisms of a module, including Schur's lemma and the statement of the density theorem, which belong to <em>Automorphisms of Modules over an Algebra</em>; what is added here is the operator reading, not a second definition. The endomorphism ring as an algebra in its own right, with its centre and its matrix structure, is <em>The Endomorphism Algebra of a Module</em>, and the involutive layer is the <code>* Theory</code> and <code>* Operator Theory</code> groups of this category. The article stays inside Part I: no distance, norm, form or limit occurs, and the density theorem is stated in the finite algebraic form — every finite set of prescribed values is realised — without the finite topology that Part II owns.</p>
+<p>Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra, $M$ is a left $A$-module, $\rho : A \to \operatorname{End}_R(M)$ is the action homomorphism, and $\operatorname{End}_A(M)$ is the ring of $A$-linear endomorphisms.</p>
+<h2 id="the-endomorphisms-as-operators">The Endomorphisms as Operators</h2>
+<h3 id="the-commutant-reading">The commutant reading</h3>
+<p>The endomorphisms are exactly the operators that commute with the action, and that is their definition in operator terms.</p>
+<p><strong>Proposition.</strong> For a left $A$-module $M$,</p>
+<p>$$
+\operatorname{End}_A(M) = \{f \in \operatorname{End}_R(M) : f L_a = L_a f \text{ for all } a \in A\} = L_A',
+$$</p>
+<p>the centralizer of the image of the left multiplications in $\operatorname{End}_R(M)$.</p>
+<p><em>Proof.</em> $f$ is $A$-linear exactly when $f(am)=af(m)$ for all $a,m$, that is $fL_a=L_af$; the second equality is the definition of the centralizer. $\square$</p>
+<p>Two consequences follow at once. The ring $\operatorname{End}_A(M)$ depends only on the image $\rho(A)=L_A$, hence only on the faithful quotient $A/\operatorname{Ann}_A(M)$; and it grows when the action shrinks. If $A=R$ acts by scalars, $L_R \subseteq R\cdot\mathrm{id}_M$ is central and $\operatorname{End}_A(M)=\operatorname{End}_R(M)$; if the action is larger, the centralizer is smaller.</p>
+<h3 id="the-module-read-over-its-endomorphism-ring">The module read over its endomorphism ring</h3>
+<p>The set $M$ is simultaneously acted on by $A$ on the left and by its own endomorphisms.</p>
+<p><strong>Proposition.</strong> Let $E = \operatorname{End}_A(M)$, with the opposite multiplication $f \cdot_{\mathrm{op}} g = gf$. Then $M$ is a left $E^{\mathrm{op}}$-module by $f \cdot m = f(m)$, and the two actions commute:</p>
+<p>$$
+f(am) = a f(m) \qquad (f \in E,\ a \in A,\ m \in M).
+$$</p>
+<p><em>Proof.</em> $(\mathrm{id})\cdot m=m$ and $(f\cdot_{\mathrm{op}}g)\cdot m=(gf)(m)=g(f(m))=f\cdot_{\mathrm{op}}(g\cdot m)$ when the action is written on the left with the opposite multiplication; the commutation is exactly the $A$-linearity of $f$. $\square$</p>
+<p>Thus $M$ is an $(E^{\mathrm{op}}, A)$-bimodule, and the algebra generated by the two actions is the image of $E^{\mathrm{op}} \otimes_R A$ in $\operatorname{End}_R(M)$ by <em>Left and Right Multiplication of a Module</em>. The inclusion $A \to \operatorname{End}_R(M)$ lands inside the centralizer of $E$, which is the bicommutant statement named in that article.</p>
+<h3 id="functoriality">Functoriality</h3>
+<p>The endomorphism ring is a functor of the module.</p>
+<p><strong>Proposition.</strong> An isomorphism $u : M \to N$ of $A$-modules induces a unital ring isomorphism</p>
+<p>$$
+\operatorname{End}_A(M) \to \operatorname{End}_A(N), \qquad f \mapsto u f u^{-1},
+$$</p>
+<p>which carries $\operatorname{Aut}_A(M)$ onto $\operatorname{Aut}_A(N)$.</p>
+<p><em>Proof.</em> $ufu^{-1}$ is $A$-linear as a composite of $A$-linear maps, the assignment is a ring homomorphism with inverse $g \mapsto u^{-1}gu$, and it preserves invertibility. $\square$</p>
+<p>Hence the endomorphism ring is an invariant of the isomorphism class of $M$, and nothing in the construction uses a basis.</p>
+<h2 id="the-endomorphism-ring-and-its-units">The Endomorphism Ring and Its Units</h2>
+<h3 id="ring-structure">Ring structure</h3>
+<p>The endomorphism ring is the centralizer of the action, and a centralizer inherits the ambient $R$-algebra structure.</p>
+<p><strong>Proposition.</strong> $\operatorname{End}_A(M)$ is a unital $R$-subalgebra of $\operatorname{End}_R(M)$: it is closed under addition, composition and multiplication by $R$, and contains $\mathrm{id}_M$.</p>
+<p><em>Proof.</em> If $f,g$ commute with every $L_a$, then so do $f+g$, $fg$ and $rf$; the identity commutes with everything; and the multiplication by $R$ is central in $\operatorname{End}_R(M)$. $\square$</p>
+<p>The ring need not be commutative. It is commutative exactly when every pair of endomorphisms commutes, which fails as soon as the module has two independent summands: if $M=N\oplus N'$ with both summands nonzero, the projections $p_N$ and $p_{N'}$ commute but the inclusions and projections mix, and $\operatorname{End}_A(M)$ contains the matrix-like maps of the next article.</p>
+<h3 id="units">Units</h3>
+<p>The units of the endomorphism ring are exactly the invertible endomorphisms, and they carry the name of automorphisms.</p>
+<p><strong>Proposition.</strong> For a left $A$-module $M$,</p>
+<p>$$
+\operatorname{End}_A(M)^{\times} = \operatorname{Aut}_A(M) = \{f \in \operatorname{End}_A(M) : f \text{ is bijective}\},
+$$</p>
+<p>and $\operatorname{Aut}_A(M)$ is a group under composition acting faithfully on $M$.</p>
+<p><em>Proof.</em> A two-sided inverse of $f$ is in particular a set-theoretic inverse, so an invertible endomorphism is bijective; conversely a bijective $A$-linear map has an $A$-linear inverse. The group axioms are inherited from $\operatorname{End}_A(M)$, and the action is faithful because the identity is the only map fixing every element. $\square$</p>
+<p>The group $\operatorname{Aut}_A(M)$ is the group of units of the ring, and it is small when the module is small: for a simple module it is the unit group of a division ring, by Schur's lemma, as <em>Automorphisms of Modules over an Algebra</em> records. An element of $\operatorname{End}_A(M)$ that is only injective or only surjective need not be a unit; the two-sided inverse is the requirement.</p>
+<h3 id="idempotents-and-summands">Idempotents and summands</h3>
+<p>The ring of operators sees the direct-sum decompositions of the module.</p>
+<p><strong>Proposition.</strong> A submodule $N \subseteq M$ is a direct summand of $M$ exactly when $N = \operatorname{im} e$ for an idempotent $e \in \operatorname{End}_A(M)$, and then $M = \operatorname{im} e \oplus \ker e$.</p>
+<p><em>Proof.</em> This is the projection argument of <em>Modules over an Algebra</em>: a projection onto a summand is idempotent and $A$-linear, and conversely $m=e(m)+(m-e(m))$ splits $m$ into an element of $\operatorname{im} e$ and an element of $\ker e$ for an idempotent $e$. $\square$</p>
+<p>Consequently the decompositions of $M$ are read in the idempotents of $\operatorname{End}_A(M)$, and an indecomposable module is one whose endomorphism ring has no nontrivial idempotent.</p>
+<h2 id="the-density-theorem">The Density Theorem</h2>
+<h3 id="the-statement">The statement</h3>
+<p>The density theorem of <em>Automorphisms of Modules over an Algebra</em> says that the action of the algebra realises arbitrary values on finitely many independent elements, as far as the endomorphism division ring permits.</p>
+<p><strong>Theorem (density).</strong> Let $S$ be a simple left $A$-module and put $D=\operatorname{End}_A(S)$, a division ring by Schur's lemma, acting on $S$ on the left. Let $x_1,\dots,x_n \in S$ be $D$-linearly independent and let $y_1,\dots,y_n \in S$ be arbitrary. Then there exists $a \in A$ with</p>
+<p>$$
+a x_i = y_i \qquad (i=1,\dots,n).
+$$</p>
+<p><em>Proof sketch.</em> For $n=1$ simplicity gives $S=A x_1$, so some $a$ carries $x_1$ to $y_1$. For general $n$, form the submodule $N=\{(a x_1,\dots,a x_n) : a \in A\} \subseteq S^n$; one shows $N=S^n$ by using the $D$-independence of the $x_i$ and the simplicity of $S$, and a surjectivity statement on $S^n$ is exactly the existence of $a$ with the prescribed values. The complete argument is in <em>Automorphisms of Modules over an Algebra</em>. $\square$</p>
+<h3 id="the-operator-reading">The operator reading</h3>
+<p>The theorem measures the image of the algebra inside the operators of the module.</p>
+<p><strong>Corollary.</strong> Let $S$ be simple and $D=\operatorname{End}_A(S)$. Then the bicommutant of $L_A$ in $\operatorname{End}_R(S)$ is $\operatorname{End}_D(S)$, and the density theorem says that $L_A$ is large inside it: no element of $\operatorname{End}_D(S)$ is separated from $L_A$ by finitely many conditions — for finitely many $D$-independent $x_1,\dots,x_n$ and arbitrary $y_1,\dots,y_n$, some $a \in A$ has $a x_i=y_i$. In particular, if $S$ is finite-dimensional over an algebraically closed field $F$, then $\operatorname{End}_A(S)=F$ and the density theorem gives</p>
+<p>$$
+A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S).
+$$</p>
+<p><em>Proof.</em> The centralizer of $L_A$ is $D$, so the centralizer of $D$ — the bicommutant — is $\operatorname{End}_D(S)$. The middle clause is the theorem restated. For the last, Schur's lemma gives $D=F$ when $F$ is algebraically closed and $S$ is finite-dimensional, and $S$ being finite-dimensional over $F$ means the finite conditions already determine every operator, so a subalgebra realising every finite set of values is all of $\operatorname{End}_F(S)$; passing to the image gives $A/\operatorname{Ann}_A(S) \cong \operatorname{End}_F(S)$. $\square$</p>
+<h3 id="isotypic-modules">Isotypic modules</h3>
+<p>The density theorem computes the endomorphism ring of a sum of copies of one simple module.</p>
+<p><strong>Proposition.</strong> Let $S$ be simple with $D=\operatorname{End}_A(S)$ and let $M=S^n$ be a finite direct sum. Then</p>
+<p>$$
+\operatorname{End}_A(M) \cong M_n(D),
+$$</p>
+<p>and with $D$-linear coordinates the endomorphisms act by matrices.</p>
+<p><em>Proof.</em> An endomorphism of $S^n$ is a map that sends each component to a sum of components; its $(i,j)$-entry is the composite $S \hookrightarrow S^n \to S$, an element of $D$, and composition of endomorphisms composes the matrices. Conversely every matrix over $D$ defines an $A$-linear map because each entry is $A$-linear. $\square$</p>
+<p>This is the operator form of the semisimple structure theorem, and it is the reason the endomorphism ring of a semisimple module is a product of matrix rings over division rings.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) A field.</strong> For $A=F$ a field and $M=V$ a vector space, $\operatorname{End}_A(M)=\operatorname{End}_F(V)$ and $\operatorname{Aut}_A(M)=GL(V)$: the action imposes nothing, and the endomorphism ring is the full ring of operators.</p>
+<p><strong>(b) A matrix algebra on its defining module.</strong> For $A=M_n(F)$ and $M=F^n$, the commutant of $M_n(F)$ in $\operatorname{End}_F(F^n)$ is $F\cdot\mathrm{id}$, so $\operatorname{End}_A(M)=F$ and $\operatorname{Aut}_A(M)=F^{\times}$; the module is simple, and the density theorem with $D=F$ says the image $M_n(F)$ is all of $\operatorname{End}_F(F^n)$.</p>
+<p><strong>(c) A matrix algebra on itself.</strong> For $A=M_n(F)$ and $M=A$, the commutant is $A^{\mathrm{op}}$, so $\operatorname{End}_A(M)=M_n(F)^{\mathrm{op}}$ and $\operatorname{Aut}_A(M)=GL_n(F)$; the module is not simple, and its endomorphism ring is commutative exactly when $n=1$.</p>
+<p><strong>(d) A division algebra.</strong> If $D$ is a division ring acting on itself, $\operatorname{End}_D(D)\cong D^{\mathrm{op}}$ and $\operatorname{Aut}_D(D)\cong D^{\times}$; the module is simple and its endomorphism ring is a division ring, as Schur's lemma requires.</p>
+<p><strong>(e) The quaternions.</strong> For $A=\mathbb{H}$ and $M=\mathbb{H}$, the $\mathbb{H}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{H}}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$, and the automorphism group is the sphere of units of $\mathbb{H}$; a merely $\mathbb{R}$-linear map such as a left multiplication by a non-real quaternion is not among them.</p>
+<h2 id="summary">Summary</h2>
+<p>For a left $A$-module $M$, the endomorphism ring $\operatorname{End}_A(M)$ is the centralizer of the action, $L_A'$, inside $\operatorname{End}_R(M)$; it depends only on $A/\operatorname{Ann}_A(M)$, it is a unital $R$-subalgebra, and it acts on $M$ commuting with $A$, so $M$ is an $(E^{\mathrm{op}},A)$-bimodule for $E=\operatorname{End}_A(M)$. Its units are the automorphisms, $\operatorname{End}_A(M)^{\times}=\operatorname{Aut}_A(M)$, the bijective endomorphisms, and its idempotents are the projections onto the direct summands of $M$. The density theorem states that a simple module admits the algebra's action realising arbitrary values on finitely many $D$-linearly independent elements, where $D=\operatorname{End}_A(S)$ is a division ring by Schur's lemma; in the operator reading it says the image of the algebra has the whole $\operatorname{End}_D(S)$ as its bicommutant, and for a finite-dimensional simple module over an algebraically closed field it forces $A/\operatorname{Ann}_A(S)\cong\operatorname{End}_F(S)$. A finite isotypic module $S^n$ has $\operatorname{End}_A(S^n)\cong M_n(D)$, the operator form of the semisimple structure theorem. The centre, the matrix structure and the involutive layer of the endomorphism ring are the subjects of the articles that follow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity, the base ring</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>unital associative $R$-algebra, generally noncommutative</td>
+</tr>
+<tr>
+<td>$M$, $N$</td>
+<td>left $A$-modules</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>a simple left $A$-module</td>
+</tr>
+<tr>
+<td>$\rho : A \to \operatorname{End}_R(M)$</td>
+<td>the action homomorphism</td>
+</tr>
+<tr>
+<td>$L_A = \rho(A)$</td>
+<td>the image of the action, the algebra of one-sided operators</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(M)$</td>
+<td>the endomorphism ring, $=L_A'$</td>
+</tr>
+<tr>
+<td>$E = \operatorname{End}_A(M)$</td>
+<td>the endomorphism ring, for the bimodule reading</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_A(M)$</td>
+<td>the automorphism group, $=\operatorname{End}_A(M)^{\times}$</td>
+</tr>
+<tr>
+<td>$D = \operatorname{End}_A(S)$</td>
+<td>the division ring of a simple module</td>
+</tr>
+<tr>
+<td>$M_n(D)$</td>
+<td>matrix ring over a division ring, $=\operatorname{End}_A(S^n)$</td>
+</tr>
+<tr>
+<td>$\operatorname{id}_M$</td>
+<td>the identity operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, second edition, 1992), for the centralizer description of endomorphisms and the density theorem.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for endomorphism rings, the commutant and the double centralizer in the module setting.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the Jacobson density theorem and its consequences.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the density theorem in its original form.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, second edition, 2001), for Schur's lemma, division rings as endomorphism rings and semisimple modules.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the commutant of a module action and the idempotents attached to direct summands.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

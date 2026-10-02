@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on an Ordered Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-an-ordered-algebra"><strong>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>signed left multiplication</strong> of a graded algebra is the one-sided operator</p>
+<p>$$
+L^{\alpha}_a : x\mapsto a\,\alpha(x) = (L_a\circ\Gamma)(x) ,
+$$</p>
+<p>the left multiplication with the argument twisted by the grade involution; its companion is the <strong>signed right multiplication</strong> $R^{\alpha}_a x = \alpha(x)a$. The article computes their <strong>adjoints</strong> for the trace form:</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(a^{*})} , \qquad \bigl(R^{\alpha}_a\bigr)^{*} = R^{\alpha}_{\alpha(a^{*})} ,
+$$</p>
+<p>so the adjoint of a signed left multiplication is again a signed left multiplication, with the parameter replaced by the $\alpha$-twist of the adjoint. The computation has two ingredients: the adjoint of the grading operator, $\Gamma^{*} = \alpha$, which is the statement that the grade involution is <strong>self-adjoint</strong> for the trace form, and the adjoint of the unsigned left multiplication, $(L_a)^{*} = L_{a^{*}}$; the product rule then gives $(L_a\Gamma)^{*} = \Gamma^{*}L_{a^{*}} = \alpha L_{a^{*}} = L_{\alpha(a^{*})}\alpha = L^{\alpha}_{\alpha(a^{*})}$. The identity grade involution recovers $(L_a)^{*} = L_{a^{*}}$ of <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<p>The article states the formula, identifies the <strong>self-adjoint</strong> and the <strong>skew-adjoint</strong> signed left multiplications (the parameters with $a = \alpha(a^{*})$ and $a = -\alpha(a^{*})$), relates the result to the twisted composition law $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$ and to the reflection elements, and describes the interaction with the <strong>order</strong>: a signed left multiplication with a positive grade involution and a positive parameter is a positive operator, its adjoint is positive, and the <strong>order detects the parity</strong> exactly as it does for the sandwich, because on the odd part the signed operator is the negative of the unsigned one. The adjoint of the signed left multiplication is thus the one-sided counterpart of <em>The Signed Adjoint Sandwich on an Ordered Algebra</em> and of <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em>.</p>
+<p>The signed left multiplication is <em>The Signed Left Multiplication on an Ordered Algebra</em>; the reflections and the reflection elements are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the signed sandwich and its adjoint are <em>The Signed Sandwich on an Ordered Algebra</em> and <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>; the signed adjoint of the reflection is <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em>; the unsigned left multiplication and its adjoint are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Action on a Module over an Ordered Algebra</em>; the adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the order of the elements is <em>Self-Adjoint Elements and the Order</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; the grading is <em>Superalgebras and Graded Structures</em> of Part I; and the algebra is <em>Ordered Involutive Algebras</em>.</p>
+<h2 id="the-adjoint-of-the-signed-one-sided-multiplications">The Adjoint of the Signed One-Sided Multiplications</h2>
+<p><strong>Definition.</strong> For $a\in A$ the <strong>signed left multiplication</strong> and the <strong>signed right multiplication</strong> are</p>
+<p>$$
+L^{\alpha}_a : A\to A, \quad L^{\alpha}_a x = a\,\alpha(x) , \qquad R^{\alpha}_a : A\to A, \quad R^{\alpha}_a x = \alpha(x)\,a ,
+$$</p>
+<p>and they factor as $L^{\alpha}_a = L_a\Gamma$ and $R^{\alpha}_a = R_a\Gamma$ through the grading operator $\Gamma = \alpha$ on the underlying vector space.</p>
+<p><strong>Theorem (the adjoints).</strong> For the trace form,</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(a^{*})} , \qquad \bigl(R^{\alpha}_a\bigr)^{*} = R^{\alpha}_{\alpha(a^{*})} ,
+$$</p>
+<p>so the adjoint of a signed one-sided multiplication is a signed one-sided multiplication with the $\alpha$-twisted adjoint parameter, and the family of the signed one-sided multiplications is <strong>closed under the adjoint</strong>.</p>
+<p><em>Proof.</em> The grading operator is self-adjoint, $\Gamma^{*} = \alpha$: indeed $\langle\Gamma x,y\rangle = \operatorname{tr}((\alpha(x))^{*}y) = \operatorname{tr}(\alpha(x^{*})y) = \operatorname{tr}(x^{*}\alpha^{-1}(y)) = \langle x,\alpha(y)\rangle$, using that $\alpha$ commutes with the involution and preserves the trace. Hence $\bigl(L_a\Gamma\bigr)^{*} = \Gamma^{*}L_{a^{*}} = \alpha L_{a^{*}} = L_{\alpha(a^{*})}\alpha = L^{\alpha}_{\alpha(a^{*})}$, using $(L_a)^{*} = L_{a^{*}}$ of <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em> and the relation $\alpha L_c = L_{\alpha(c)}\alpha$. The right-handed computation is the same.</p>
+<p><strong>Corollary (the identity grade involution).</strong> When $\alpha$ is the identity, $\bigl(L_a\bigr)^{*} = L_{a^{*}}$ and $\bigl(R_a\bigr)^{*} = R_{a^{*}}$, the unsigned case of <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<p><em>Proof.</em> The formula with $\alpha = 1$.</p>
+<p><strong>Corollary (the twisted composition and its adjoint).</strong> The signed one-sided multiplications compose by the twisted law $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$, and the adjoint of a product is the product of the adjoints in the reverse order,</p>
+<p>$$
+\bigl(L^{\alpha}_aL^{\alpha}_b\bigr)^{*} = \bigl(L^{\alpha}_b\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(b^{*})}L^{\alpha}_{\alpha(a^{*})} = L_{\alpha(b^{*})a^{*}} ,
+$$</p>
+<p>which agrees with the direct computation $(L_{a\alpha(b)})^{*} = L_{(a\alpha(b))^{*}} = L_{\alpha(b^{*})a^{*}}$; hence the adjoint is compatible with the twisted composition law.</p>
+<p><em>Proof.</em> The composition law is that of <em>The Signed Left Multiplication on an Ordered Algebra</em>; the anti-homomorphism property is general for operators; the direct computation uses $(L_c)^{*} = L_{c^{*}}$ and $(a\alpha(b))^{*} = \alpha(b)^{*}a^{*} = \alpha(b^{*})a^{*}$; the two agree.</p>
+<h2 id="self-adjointness-and-skew-adjointness">Self-Adjointness and Skew-Adjointness</h2>
+<p><strong>Proposition (the self-adjoint signed one-sided multiplications).</strong> The signed left multiplication is self-adjoint,</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_a ,
+$$</p>
+<p>exactly when the parameter is <strong>$\alpha$-Hermitian</strong>, $a = \alpha(a^{*})$; it is <strong>skew-adjoint</strong>, $\bigl(L^{\alpha}_a\bigr)^{*} = -L^{\alpha}_a$, exactly when $a = -\alpha(a^{*})$.</p>
+<p><em>Proof.</em> The operator $L^{\alpha}_a$ is the left multiplication by $a$ of the graded structure; its adjoint is $L^{\alpha}_{\alpha(a^{*})}$, so the self-adjointness is $\alpha(a^{*}) = a$; the skew-adjointness is the equation with the minus sign.</p>
+<p><strong>Corollary (the decomposition of a signed left multiplication).</strong> Every signed left multiplication decomposes into the self-adjoint and the skew-adjoint parts,</p>
+<p>$$
+L^{\alpha}_a = \tfrac12\bigl(L^{\alpha}_a + L^{\alpha}_{\alpha(a^{*})}\bigr) + \tfrac12\bigl(L^{\alpha}_a - L^{\alpha}_{\alpha(a^{*})}\bigr) ,
+$$</p>
+<p>and it is <strong>normal</strong> exactly when the two parts commute; in particular the $\alpha$-Hermitian parameters give the self-adjoint signed left multiplications, which form a real vector space.</p>
+<p><em>Proof.</em> The decomposition is the standard one for an operator with an adjoint; the normality criterion is $TT^{*} = T^{*}T$; the linearity in the parameter gives the vector-space statement.</p>
+<p><strong>Proposition (the reflection elements and the adjoint).</strong> If $a$ is a reflection element, $\alpha(a) = a^{-1}$, then $L^{\alpha}_a$ is an involution of the underlying vector space and its adjoint is $L^{\alpha}_{\alpha(a^{*})}$, again an involution; the two-sided reflection of <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em> is $\tau_a = L^{\alpha}_aR_{\alpha(a)^{-1}} = L^{\alpha}_aR_a$, and its adjoint is the product of the adjoints in the reverse order, which is the reflection $\tau_{\alpha(a^{*})}$ of <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em>.</p>
+<p><em>Proof.</em> The involution statement is the square formula $(L^{\alpha}_a)^{2} = L_{a\alpha(a)}$ of <em>The Signed Left Multiplication on an Ordered Algebra</em>, which is the identity for a reflection element because $a\alpha(a) = 1$; the adjoint is the theorem; the factorisation of the reflection is the proposition of the same article, and the adjoint product is the anti-homomorphism applied to the two factors.</p>
+<h2 id="the-adjoint-and-the-order">The Adjoint and the Order</h2>
+<p><strong>Theorem (the order of the signed left multiplications).</strong> If the grade involution is <strong>positive</strong> and $a\geq0$, then</p>
+<p>$$
+L^{\alpha}_a\geq0 \quad \text{and} \quad R^{\alpha}_a\geq0 , \qquad \bigl(L^{\alpha}_a\bigr)^{*}\geq0 \quad \text{and} \quad \bigl(R^{\alpha}_a\bigr)^{*}\geq0 ,
+$$</p>
+<p>so the signed one-sided multiplications of positive parameters are positive and their adjoints are positive; the family is <strong>closed under the adjoint</strong> and the adjoint is an order isomorphism of it.</p>
+<p><em>Proof.</em> The positivity of $L^{\alpha}_a$ and $R^{\alpha}_a$ is the positivity proposition of <em>The Signed Left Multiplication on an Ordered Algebra</em>; the positivity of the adjoints is the general positivity preservation of <em>The Adjoint of a Positive Operator</em>; the order-isomorphism statement is the two-sided preservation.</p>
+<p><strong>Corollary (the order detects the parity).</strong> On the even part the signed left multiplication agrees with the unsigned one, and on the odd part it is its negative, $L^{\alpha}_ax = \varepsilon_xL_ax$ for homogeneous $x$; hence the signed left multiplication is positive for all positive $a$ exactly when the grade involution is positive, and the adjoint transports the same parity, so the order is the invariant that detects the sign of the grading.</p>
+<p><em>Proof.</em> The parity formula is the definition of the signed left multiplication in the graded case; the positivity criterion is the theorem; the adjoint statement is the parity of the adjoint, which is the same because the adjoint of the even part is the even part.</p>
+<p><strong>Corollary (the order interval at the identity).</strong> If the family is generated by the $L^{\alpha}_a$ with $a\geq0$ and the grade involution is positive, then the order interval at the identity is the set of the $L^{\alpha}_a$ with $L^{\alpha}_a\leq I$, and the adjoint preserves the interval; the signed left multiplications of the $\alpha$-Hermitian parameters combine with the self-adjointness, so the interval is adjoint stable.</p>
+<p><em>Proof.</em> The interval is defined by the order of the operators; the preservation by the adjoint is the order isomorphism; the $\alpha$-Hermitian statement is the self-adjointness criterion.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the trace form and the parity grading $\alpha(X) = UXU^{-1}$ for the diagonal sign matrix $U$. The signed left multiplication is $L^{\alpha}_a(X) = aUXU^{-1}$, and its adjoint is $L^{\alpha}_{\alpha(a^{*})}(X) = \alpha(a^{*})UXU^{-1}$; the self-adjoint signed left multiplications are the $\alpha$-Hermitian parameters, and the positivity is the positivity of $a$ together with the positivity of the grading. This is the finite-dimensional model.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grading. The signed left multiplication is the ordinary left multiplication composed with the grading operator; because the grade involution is inner, it is the unsigned left multiplication at the shifted parameter, and its adjoint is the unsigned adjoint at the corresponding shifted parameter. The example shows that the signed and the unsigned adjoints agree after the inner shift, and that the $\alpha$-Hermiticity criterion is the appropriate one.</p>
+<h3 id="the-clifford-algebra">The Clifford Algebra</h3>
+<p>Let $A = \mathrm{Cl}(V,q)$ with the parity grading and let $e$ be a vector with $e^2 = -1$, an odd reflection element. The signed left multiplication $L^{\alpha}_e$ is an involution, its adjoint is $L^{\alpha}_{\alpha(e^{*})} = L^{\alpha}_{-e^{*}}$, and the reflection $\tau_e = L^{\alpha}_eR_e$ has the adjoint $\tau_{\alpha(e^{*})}$ of <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em>. The Clifford case is the geometric instance of the one-sided adjoint formula.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed left multiplication</strong> $L^{\alpha}_ax = a\alpha(x) = (L_a\Gamma)x$ and the <strong>signed right multiplication</strong> $R^{\alpha}_ax = \alpha(x)a$ of a graded ordered involutive algebra have, for the trace form, the adjoints</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*} = L^{\alpha}_{\alpha(a^{*})} , \qquad \bigl(R^{\alpha}_a\bigr)^{*} = R^{\alpha}_{\alpha(a^{*})} ,
+$$</p>
+<p>because the grading operator is self-adjoint, $\Gamma^{*} = \alpha$; hence the family of the signed one-sided multiplications is <strong>closed under the adjoint</strong>, the identity grade involution recovers $(L_a)^{*} = L_{a^{*}}$, and the adjoint is compatible with the twisted composition law $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$. The signed left multiplication is <strong>self-adjoint</strong> exactly for the <strong>$\alpha$-Hermitian</strong> parameters, $a = \alpha(a^{*})$, and <strong>skew-adjoint</strong> for the skew ones; it decomposes into the self-adjoint and the skew-adjoint parts and is normal when these commute. With a positive grade involution and a positive parameter the signed one-sided multiplications are <strong>positive</strong> and so are their adjoints, so the adjoint is an <strong>order isomorphism</strong> of the family; the order <strong>detects the parity</strong>, since on the odd part the signed operator is the negative of the unsigned one. The signed left multiplication is <em>The Signed Left Multiplication on an Ordered Algebra</em>; the reflections are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the sandwich and its adjoint are <em>The Signed Sandwich on an Ordered Algebra</em> and <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>; the adjoint of the reflection is <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em>; the unsigned case is <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Action on a Module over an Ordered Algebra</em>; the adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the order is <em>Self-Adjoint Elements and the Order</em> and <em>Ordered Vector Spaces and the Order Unit</em>; and the grading is <em>Superalgebras and Graded Structures</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^{\alpha}_ax = a\alpha(x)$, $R^{\alpha}_ax = \alpha(x)a$</td>
+<td>Signed one-sided multiplications</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_a = L_a\Gamma$</td>
+<td>Factorisation through the grading operator</td>
+</tr>
+<tr>
+<td>$\Gamma^{*} = \alpha$</td>
+<td>The grade involution is self-adjoint</td>
+</tr>
+<tr>
+<td>$(L^{\alpha}_a)^{*} = L^{\alpha}_{\alpha(a^{*})}$</td>
+<td>Adjoint of a signed left multiplication</td>
+</tr>
+<tr>
+<td>$a = \alpha(a^{*})$</td>
+<td>$\alpha$-Hermitian parameter, the self-adjoint case</td>
+</tr>
+<tr>
+<td>$a = -\alpha(a^{*})$</td>
+<td>Skew-adjoint case</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$</td>
+<td>Twisted composition law</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_ax = \varepsilon_xL_ax$</td>
+<td>The order detects the parity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the left multiplications, the adjoints and the order.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the automorphisms, the graded structures and the positivity.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the graded left multiplications and the parity.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the graded operators and the reflection elements of a Clifford algebra.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the order, the positivity and the operator adjoints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

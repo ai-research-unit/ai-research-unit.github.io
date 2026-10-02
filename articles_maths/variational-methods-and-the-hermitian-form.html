@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variational Methods and the Hermitian Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="variational-methods-and-the-hermitian-form"><strong>Variational Methods and the Hermitian Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian form is a quadratic functional, and its critical points on a constraint are eigenvectors. For a Hermitian form $a$ and a positive Hermitian form $b$ — the pairing of the space — the <strong>Rayleigh quotient</strong></p>
+<p>$$
+R(u) = \frac{a(u,u)}{b(u,u)}
+$$</p>
+<p>has for its critical values the eigenvalues of the pair $(a,b)$, and the eigenvalues are recovered from $R$ by the <strong>min–max principle</strong>: the $k$-th eigenvalue is the maximum of $R$ over the $k$-dimensional subspaces, minimised over the choice of subspace. The eigenvalue equation is the <strong>Euler–Lagrange equation</strong> of the quotient, the first variation $a(u,v)=\lambda b(u,v)$ being the vanishing of the derivative of $R$ in every admissible direction, and the form $a$ is the second variation of the functional.</p>
+<p>This article reads the Hermitian form variationally. It fixes the quadratic functional of the form and the polarisation identity that recovers the form from it; derives the Euler–Lagrange equation of a constrained critical point and identifies it with the eigenvalue problem; proves the min–max principle for the eigenvalues of a Hermitian form relative to a positive one, with the reality and the ordering of the critical values; and connects the general first variation of a Lagrangian functional to the Euler–Lagrange equation, showing that for a quadratic Lagrangian the second variation is the Hermitian form itself. It closes with the comparison of the two variational principles of the elliptic problem, the minimisation of the energy with a source and the minimisation of the quotient without one.</p>
+<p>The sesquilinear form, its Hermitian property and the Hermitian form $a(u,v)=\langle Lu,v\rangle$ of a boundary-value problem are those of <em>Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</em> and <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>; the Dirichlet principle and the energy functional are <em>The Dirichlet Principle and the Hermitian Functional</em>; the general calculus of variations, the first variation and the Euler–Lagrange equation are <em>The Calculus of Variations</em> and <em>The Euler–Lagrange Equation</em>; the compact self-adjoint spectral theorem is <em>Banach and Hilbert Spaces</em>; and the eigenvalues of the Sturm–Liouville problem and the eigenvalue asymptotics are <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>. The spectral theorem for the elliptic operator and the Weyl law are <em>Self-Adjoint Elliptic Operators and the Spectral Theorem</em>, below.</p>
+<h2 id="the-quadratic-functional-of-a-hermitian-form">The Quadratic Functional of a Hermitian Form</h2>
+<p><strong>Definition.</strong> Let $a$ be a Hermitian sesquilinear form on a complex vector space $\mathcal{D}$, linear in the first argument and conjugate-linear in the second. Its <strong>quadratic functional</strong> is</p>
+<p>$$
+Q(u) = a(u,u) ,
+$$</p>
+<p>real-valued on $\mathcal{D}$; a second positive Hermitian form $b$ plays the role of the constraint pairing. The <strong>polarisation identity</strong></p>
+<p>$$
+a(u,v) = \frac14\Bigl(Q(u+v)-Q(u-v)+i\,Q(u+iv)-i\,Q(u-iv)\Bigr)
+$$</p>
+<p>recovers the form from its quadratic functional, so the form and the functional carry the same information.</p>
+<p><strong>Proof of the polarisation identity.</strong> Expanding, $Q(u\pm v)=a(u,u)\pm2\operatorname{Re}a(u,v)+a(v,v)$ and $Q(u\pm iv)=a(u,u)\pm2\operatorname{Im}a(u,v)+a(v,v)$, so the four terms $Q(u+v)-Q(u-v)+iQ(u+iv)-iQ(u-iv)$ combine to $4\operatorname{Re}a(u,v)+4i\operatorname{Im}a(u,v)=4a(u,v)$; the display is the combination divided by four.</p>
+<p><strong>Definition.</strong> A <strong>critical point</strong> of $Q$ on the set $\{u : b(u,u)=1\}$ is a $u$ with $b(u,u)=1$ at which the derivative of $Q$ vanishes in every direction tangent to the set; equivalently, a $u$ with</p>
+<p>$$
+a(u,v) = \lambda\,b(u,v) \qquad \text{for every } v ,
+$$</p>
+<p>for some $\lambda$, the <strong>Lagrange multiplier</strong>; this equation is the <strong>Euler–Lagrange equation</strong> of the constrained problem, and $\lambda=R(u)$.</p>
+<p><strong>Theorem (critical points are eigenvectors).</strong> Let $a,b$ be Hermitian, with $b$ positive, and let $u$ be a critical point of $Q$ on $\{b(u,u)=1\}$. Then $\lambda=R(u)$ is real and $u$ solves the eigenvalue problem $a(u,v)=\lambda b(u,v)$ for every $v$; conversely a solution of the eigenvalue problem with $b(u,u)=1$ is a critical point of $Q$.</p>
+<p><em>Proof.</em> The constraint is $b(u,u)=1$, and a tangent direction is a $v$ with $\operatorname{Re}b(u,v)=0$; the derivative of $Q$ in the direction $v$ is $2\operatorname{Re}a(u,v)$. The Lagrange multiplier rule gives $a(u,v)=\lambda b(u,v)$ for all $v$, with $\mu$ the multiplier; testing with $v=u$ gives $\lambda=a(u,u)/b(u,u)=R(u)$, which is real because both forms are Hermitian. The converse is the computation in reverse.</p>
+<h2 id="the-rayleigh-quotient-and-the-minmax-principle">The Rayleigh Quotient and the Min–Max Principle</h2>
+<p><strong>Theorem (the min–max principle).</strong> Let $a$ be a Hermitian form and $b$ a positive Hermitian form on a space $\mathcal{D}$, with $a$ coercive relative to $b$, $a(u,u)\ge c\,b(u,u)$, and suppose that the operator representing $a$ relative to $b$ has a compact inverse. Then the eigenvalues $\lambda_1\le\lambda_2\le\cdots$ of the pair are positive, of finite multiplicity and tending to $+\infty$, and for every $k$,</p>
+<p>$$
+\lambda_k = \min_{\substack{V\subseteq\mathcal{D}\\ \dim V=k}}\ \max_{\substack{u\in V\\ u\neq0}} R(u) = \max_{\substack{V\subseteq\mathcal{D}\\ \operatorname{codim}V=k-1}}\ \min_{\substack{u\in V\\ u\neq0}} R(u) ,
+$$</p>
+<p>the minimum and the maximum being attained at the $k$-dimensional span of the first $k$ eigenfunctions and its orthogonal complement, respectively.</p>
+<p><em>Proof.</em> The coercivity and the compactness make the operator $A$ representing $a$ relative to $b$, $a(u,v)=b(Au,v)$, boundedly invertible with a compact self-adjoint inverse; the spectral theorem of <em>Banach and Hilbert Spaces</em> gives an orthonormal basis $(\varphi_n)$ for $b$ of eigenvectors, $A\varphi_n=\lambda_n\varphi_n$, with the eigenvalues real, of finite multiplicity and tending to zero for $A^{-1}$, hence $\lambda_n\to\infty$ with no accumulation. Ordering them gives the sequence. For the first formula: if $V$ has dimension $k$ then the intersection of $V$ with the $b$-orthogonal complement of $\varphi_1,\dots,\varphi_{k-1}$ is nonzero, and on it every $u$ has the expansion on $\varphi_k,\varphi_{k+1},\dots$, so $R(u)\ge\lambda_k$; hence $\max_V R\ge\lambda_k$ for every $V$, and the minimum over $V$ is at least $\lambda_k$. Choosing $V=\operatorname{span}(\varphi_1,\dots,\varphi_k)$ gives $\max R=\lambda_k$, since there $R$ is the Rayleigh quotient of the diagonal matrix $\operatorname{diag}(\lambda_1,\dots,\lambda_k)$, whose maximum is $\lambda_k$; so the minimum over $V$ equals $\lambda_k$. For the second formula: if $\operatorname{codim}V=k-1$ then $V\cap\operatorname{span}(\varphi_1,\dots,\varphi_k)\neq0$, and on that intersection $R\le\lambda_k$, so $\min_VR\le\lambda_k$; the choice of $V$ as the $b$-orthogonal complement of $\varphi_1,\dots,\varphi_{k-1}$ gives $\min_VR=\lambda_k$. Hence the max–min also equals $\lambda_k$.</p>
+<p><strong>Corollary (the smallest eigenvalue).</strong> The smallest eigenvalue of the pair is the minimum of the Rayleigh quotient,</p>
+<p>$$
+\lambda_1 = \min_{u\neq0} R(u) ,
+$$</p>
+<p>attained at the eigenfunction belonging to $\lambda_1$; when $a$ is coercive with respect to $b$ this minimum is positive and $R$ is bounded below.</p>
+<p><strong>Example (the Sturm–Liouville eigenvalues).</strong> For the Sturm–Liouville form $a(u,v)=\int_a^b(p\,u'\bar v'+q\,u\bar v)\,dx$ and the weighted pairing $b(u,v)=\int_a^b u\bar v\,w\,dx$ on the space of admissible functions, the Rayleigh quotient is</p>
+<p>$$
+R(u) = \frac{\int_a^b\bigl(p|u'|^2+q|u|^2\bigr)dx}{\int_a^b|u|^2 w\,dx} ,
+$$</p>
+<p>and the min–max principle gives the $k$-th eigenvalue as the minimum over the $k$-dimensional subspaces of the maximal quotient; for $p>0$ and $q\ge0$ the eigenvalues are positive and $\lambda_k\to\infty$. The classical comparison with the eigenvalue asymptotics and the Sturm oscillation theorem is that of <em>Ordinary Differential Equations</em> and <em>The Sturm–Liouville Operator</em>, and the min–max formula there is the same statement read with the eigenfunction expansion.</p>
+<h2 id="the-eulerlagrange-equation">The Euler–Lagrange Equation</h2>
+<p><strong>Definition.</strong> Let $L(x,u,\nabla u)$ be a Lagrangian on a domain, real-valued and smooth, and let</p>
+<p>$$
+\mathcal{J}(u) = \int_\Omega L(x,u,\nabla u)\,dx
+$$</p>
+<p>be the <strong>action</strong>. A <strong>critical point</strong> of $\mathcal{J}$ is a $u$ at which the first variation vanishes in every direction $v\in C_c^\infty(\Omega)$:</p>
+<p>$$
+\frac{d}{dt}\Bigr|_{t=0}\mathcal{J}(u+tv) = 0 \qquad \text{for every } v .
+$$</p>
+<p><strong>Theorem (the Euler–Lagrange equation).</strong> For a smooth Lagrangian $L$, a critical point $u$ of $\mathcal{J}$ satisfies</p>
+<p>$$
+\frac{\partial L}{\partial u} - \sum_j \partial_j\Bigl(\frac{\partial L}{\partial u_j}\Bigr) = 0 ,
+$$</p>
+<p>the <strong>Euler–Lagrange equation</strong>, in the weak sense; conversely a solution of the equation is a critical point.</p>
+<p><em>Proof.</em> The derivative of $\mathcal{J}$ at $u$ in the direction $v$ is $\int_\Omega\bigl(L_u v+L_{u_j}\partial_jv\bigr)dx$ with $L_u,L_{u_j}$ evaluated at $(x,u,\nabla u)$; integrating the second term by parts and using $v\in C_c^\infty$ gives $\int_\Omega\bigl(L_u-\sum_j\partial_jL_{u_j}\bigr)\bar v\,dx$, which vanishes for all $v$ exactly at the equation. The converse is the same computation.</p>
+<p><strong>Theorem (the quadratic Lagrangian).</strong> Let the Lagrangian be quadratic in $u$ and $\nabla u$ with the Hermitian form $a$ as its integral,</p>
+<p>$$
+L(x,u,\nabla u) = \sum_{i,j}a_{ij}\,\partial_ju\,\overline{\partial_iu} + c\,|u|^2 ,
+$$</p>
+<p>so that $\mathcal{J}(u)=a(u,u)$. Then the Euler–Lagrange equation of the Lagrangian is $a(u,v)=0$ for every $v$ — the homogeneous equation, whose only solution is $u=0$ when $a$ is coercive — and the <strong>second variation</strong> of $\mathcal{J}$ at any $u$ is</p>
+<p>$$
+\frac{d^2}{dt^2}\Bigr|_{t=0}\mathcal{J}(u+tv) = 2\,a(v,v) ,
+$$</p>
+<p>so a critical point is a local minimum exactly when $a(v,v)\ge0$ for every $v$, that is, exactly when the form is positive semidefinite.</p>
+<p><em>Proof.</em> The first variation of $a(u,u)$ is $2\operatorname{Re}a(u,v)$ and its vanishing for all $v$ is the equation $a(u,v)=0$ for all $v$; the second derivative is $2a(v,v)$ by the expansion $a(u+tv,u+tv)=a(u,u)+2t\operatorname{Re}a(u,v)+t^2a(v,v)$. The sign of the second variation is the definiteness of $a$.</p>
+<p><strong>Remark (the two variational principles).</strong> The Dirichlet principle of <em>The Dirichlet Principle and the Hermitian Functional</em> minimises the energy $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$ with a fixed source, and its stationarity is the equation $a(u,v)=\langle f,v\rangle$. The Rayleigh quotient minimises the ratio $R(u)$ on the whole space, and its stationarity is the eigenvalue equation $a(u,v)=\lambda b(u,v)$; the first principle produces the weak solution of the inhomogeneous problem, the second the eigenvalues of the homogeneous one, and both are the vanishing of the first variation of a Hermitian functional with the same form $a$ as the second variation.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian form $a$ is the quadratic functional $Q(u)=a(u,u)$, from which the polarisation identity recovers the form; relative to a positive Hermitian form $b$ its critical points on the constraint $b(u,u)=1$ are the eigenvectors, the Lagrange multiplier being the eigenvalue and the derivative condition being $a(u,v)=\lambda b(u,v)$. The Rayleigh quotient $R(u)=a(u,u)/b(u,u)$ has for its critical values the eigenvalues of the pair, and the min–max principle gives them as alternating extrema: $\lambda_k$ is the smallest over the $k$-dimensional subspaces of the largest value of $R$, equivalently the largest over the codimension-$k-1$ subspaces of the smallest value. The smallest eigenvalue is the minimum of $R$ over the whole space, and for a coercive form the minimum is positive; the Sturm–Liouville eigenvalues are the instance, with the classical quotient $\int(p|u'|^2+q|u|^2)/\int|u|^2w$. For a Lagrangian functional the first variation vanishes exactly at the Euler–Lagrange equation, and for a quadratic Lagrangian the equation is the Euler–Lagrange equation of the Hermitian form, a critical point being a minimum exactly when the form is positive semidefinite; the Dirichlet principle and the Rayleigh quotient are the two variational principles of the same form, with and without a source.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a(u,v)$</td>
+<td>Hermitian form</td>
+</tr>
+<tr>
+<td>$b(u,v)$</td>
+<td>Positive Hermitian form, the constraint pairing</td>
+</tr>
+<tr>
+<td>$Q(u)=a(u,u)$</td>
+<td>Quadratic functional</td>
+</tr>
+<tr>
+<td>$R(u)=a(u,u)/b(u,u)$</td>
+<td>Rayleigh quotient</td>
+</tr>
+<tr>
+<td>$\lambda$, $\lambda_k$</td>
+<td>Eigenvalues, the critical values of $R$</td>
+</tr>
+<tr>
+<td>$\varphi_k$</td>
+<td>Eigenfunctions, the critical points</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>$k$-dimensional subspace in the min–max</td>
+</tr>
+<tr>
+<td>$\mathcal{J}(u)=\int L$</td>
+<td>Action functional of a Lagrangian</td>
+</tr>
+<tr>
+<td>$L_u$, $L_{u_j}$</td>
+<td>Partial derivatives of the Lagrangian</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Courant and David Hilbert, <em>Methods of Mathematical Physics I</em> (Interscience, 1953), for the Rayleigh quotient, the min–max principle and the eigenvalue variational problem.</li>
+<li>Richard Courant, <em>Variational methods for the solution of problems of equilibrium and vibration</em> (Bulletin of the American Mathematical Society 49, 1943), for the variational approach to eigenvalues.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics IV: Analysis of Operators</em> (Academic Press, 1978), for the min–max principle and the Courant–Fischer theorem.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the variational characterisation of the eigenvalues of a self-adjoint operator.</li>
+<li>Jean Dieudonné, <em>Foundations of Modern Analysis</em> (Academic Press, 1969), for the first variation and the Euler–Lagrange equation.</li>
+<li>Israel M. Gelfand and Sergei V. Fomin, <em>Calculus of Variations</em> (Prentice–Hall, 1963), for the Euler–Lagrange equation and the second variation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

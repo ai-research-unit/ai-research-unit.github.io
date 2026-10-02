@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Multiplication Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-multiplication-operators"><strong>Involutions of the Multiplication Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The multiplication operators of a commutative $R$-algebra $A$ are the maps $L_a : x\mapsto ax$; they form the multiplication algebra $\operatorname{Mult}(A)$, which for a unital $A$ is isomorphic to $A$ itself through $a\mapsto L_a$, with $L_aL_b = L_{ab}$. When $A$ carries an involution $\sigma$ of the kind studied in <em>Commutative Algebras with an Involution</em>, the multiplication operators inherit a map</p>
+<p>$$
+{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad L_a^{*} = L_{\sigma(a)} ,
+$$</p>
+<p>the <strong>induced involution of the multiplication operators</strong>. Because $A$ is commutative the anti-multiplicativity and the multiplicativity of this map coincide, so ${}^{*}$ is a ring automorphism of order two of $\operatorname{Mult}(A)$; its <strong>fixed part</strong> is the set of the multiplications by the self-adjoint elements, and it is itself a multiplication algebra, $\operatorname{Mult}(A)^* = L_{A^\sigma}\cong A^\sigma$. This is the operator-level counterpart of the element-level involution, and it is the object through which the involution of an algebra acts on the modules and on the bimodules of the next articles of this group.</p>
+<p>The article sets up the isomorphism $\operatorname{Mult}(A)\cong A$, transports the involution of $A$ to the multiplication operators, and proves that the transported map is an automorphism of order two compatible with the product and with the module structure: $(L_aL_b)^* = L_b^*L_a^*$, and $L_a^*$ acts on an $A$-module by the same scalar as $L_a$ twisted by $\sigma$ on the scalars. It computes the fixed part, the skew part and the commutant of the involution, and it records the naturality: a $\sigma$-equivariant homomorphism of involutive commutative algebras intertwines the induced involutions of the multiplication operators. The two closed forms are the polynomial ring with the negation and with the swap, where the induced involution is the substitution and the exchange of the variables respectively. The article assumes <em>Commutative Algebras with an Involution</em> for the involution and the fixed subalgebra, <em>The Operators on an Algebra</em> and <em>Left and Right Multiplication in a Ring</em> for the multiplications, <em>Jordan Algebras</em> for the multiplication algebra of a Jordan algebra in the companion case, and <em>Modules over a Ring</em> for the module action. No form, norm, distance or order occurs; the adjoint with respect to a pairing is <em>Adjoints in a Commutative Involutive Algebra</em>, and the module-level object is <em>The Graded Adjoint Action on a Module over a Jordan Algebra</em> and <em>The Involution on the Multiplication Operators</em>.</p>
+<h2 id="the-multiplication-operators-and-their-involution">The Multiplication Operators and Their Involution</h2>
+<h3 id="the-multiplication-algebra">The Multiplication Algebra</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>left multiplication</strong> is $L_a : A\to A$, $L_a(x) = ax$; the <strong>multiplication operators</strong> are the $R$-linear combinations of the $L_a$, and they form the unital associative $R$-algebra $\operatorname{Mult}(A)\subseteq\operatorname{End}_R(A)$ generated by the $L_a$, with the multiplication $L_aL_b = L_{ab}$.</p>
+<p><strong>Proposition.</strong> For a unital commutative $A$ the map $a\mapsto L_a$ is an isomorphism of $R$-algebras $A\to\operatorname{Mult}(A)$; it is injective because $L_a(1) = a$, and it is surjective because the $L_a$ generate the multiplication algebra. Hence $\operatorname{Mult}(A)$ is commutative and its centre is itself.</p>
+<p><em>Proof.</em> $L_{a+b} = L_a+L_b$, $L_{ab} = L_aL_b$ and $L_1 = \mathrm{id}$ give the homomorphism; $a = L_a(1)$ gives injectivity; the generation is the definition. $\square$</p>
+<h3 id="the-induced-involution">The Induced Involution</h3>
+<p><strong>Definition.</strong> Let $\sigma$ be an $R$-algebra involution of $A$. The <strong>induced involution</strong> of the multiplication operators is the $R$-linear map</p>
+<p>$$
+{}^{*} : \operatorname{Mult}(A)\to\operatorname{Mult}(A), \qquad L_a^{*} = L_{\sigma(a)} ,
+$$</p>
+<p>extended linearly to the combinations of the $L_a$.</p>
+<p><strong>Theorem.</strong> The map ${}^{*}$ is well defined, $R$-linear, multiplicative and of order two; it is an $R$-algebra automorphism of $\operatorname{Mult}(A)$, and it is at the same time the anti-automorphism, since $\operatorname{Mult}(A)$ is commutative. Under the isomorphism $a\mapsto L_a$ it corresponds to $\sigma$.</p>
+<p><em>Proof.</em> Well definedness is the linearity of the assignment over the span of the $L_a$. Multiplicativity: $(L_aL_b)^* = L_{ab}^* = L_{\sigma(ab)} = L_{\sigma(a)\sigma(b)} = L_{\sigma(a)}L_{\sigma(b)} = L_a^*L_b^*$. Order two: $(L_a^*)^* = L_{\sigma^2(a)} = L_a$. The identification with $\sigma$ is the definition. $\square$</p>
+<p><strong>Corollary.</strong> The multiplication algebra is an <strong>involutive commutative algebra</strong> in the sense of <em>Involutive Linear Algebras</em>, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its skew part is $L_{A^-}$.</p>
+<p><em>Proof.</em> The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the skew elements are the $L_a$ with $\sigma(a) = -a$. $\square$</p>
+<h2 id="the-fixed-part-and-compatibility">The Fixed Part and Compatibility</h2>
+<h3 id="the-fixed-part">The Fixed Part</h3>
+<p><strong>Theorem.</strong> The fixed part and the skew part of the multiplication operators are</p>
+<p>$$
+\operatorname{Mult}(A)^* = \{L_a : \sigma(a) = a\} \cong A^\sigma, \qquad \operatorname{Mult}(A)^- = \{L_a : \sigma(a) = -a\} \cong A^- ,
+$$</p>
+<p>and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(A)^-$ when $2$ is invertible.</p>
+<p><em>Proof.</em> The isomorphism $a\mapsto L_a$ carries the fixed elements of $A$ to the fixed elements of the operators and the skew elements to the skew elements, and preserves the direct sum. $\square$</p>
+<p><strong>Corollary.</strong> The fixed part is the multiplication algebra of the fixed subalgebra, $\operatorname{Mult}(A)^*\cong\operatorname{Mult}(A^\sigma)$; the multiplication operators invariant under the involution are exactly the multiplications by the invariant elements of the algebra.</p>
+<h3 id="compatibility-with-the-product-and-the-module">Compatibility with the Product and the Module</h3>
+<p><strong>Proposition.</strong> The induced involution is compatible with composition, $(FG)^* = G^*F^*$ for all $F, G\in\operatorname{Mult}(A)$; since the algebra is commutative this reads $(FG)^* = F^*G^*$ as well, and the two orders agree.</p>
+<p><em>Proof.</em> Write $F = \sum\lambda_aL_a$, $G = \sum\mu_bL_b$; the anti-multiplicativity and the multiplicativity of ${}^{*}$ coincide because the products commute. $\square$</p>
+<p><strong>Proposition (action on a module).</strong> Let $M$ be an $A$-module and let $\rho : \operatorname{Mult}(A)\to\operatorname{End}_R(M)$ be the action, $\rho(L_a)(m) = a\cdot m$. Then $\rho(L_a^*)$ acts by the twisted scalar: $\rho(L_a^*)(m) = \sigma(a)\cdot m$. If moreover $M$ carries a $\sigma$-semilinear involution $\tau$ compatible with the action, then $\rho(L_a^*)\tau = \tau\rho(L_a)$.</p>
+<p><em>Proof.</em> $\rho(L_a^*) = \rho(L_{\sigma(a)})$ acts by $\sigma(a)$; the compatibility with $\tau$ is $\tau(a\cdot m) = \sigma(a)\cdot\tau(m)$, which is the assumed semilinearity. $\square$</p>
+<p><strong>Proposition (naturality).</strong> Let $\varphi : (A,\sigma)\to(B,\tau)$ be a $\sigma$-equivariant homomorphism of involutive commutative algebras. Then the induced map $\operatorname{Mult}(\varphi) : \operatorname{Mult}(A)\to\operatorname{Mult}(B)$, $L_a\mapsto L_{\varphi(a)}$, satisfies $\operatorname{Mult}(\varphi)(F^*) = \operatorname{Mult}(\varphi)(F)^*$.</p>
+<p><em>Proof.</em> On the generators $L_a$: $\operatorname{Mult}(\varphi)(L_a^*) = \operatorname{Mult}(\varphi)(L_{\sigma(a)}) = L_{\varphi\sigma(a)} = L_{\tau\varphi(a)} = \operatorname{Mult}(\varphi)(L_a)^*$, and the maps are linear. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the negated variable).</strong> Let $A = R[x]$ with $\sigma(x) = -x$. The multiplication operators are $L_f$ for $f \in R[x]$, and $L_x^* = L_{-x} = -L_x$; the fixed part is $L_{R[x^2]}$, the multiplications by the even polynomials, and the skew part is $L_{xR[x^2]}$. On the quotient $R[x]/(x^k)$ of <em>Involution-Invariant Ideals of the Symmetric Algebra</em> the induced involution of the multiplication operators is the same substitution $x\mapsto -x$.</p>
+<p><strong>Example (the swap).</strong> Let $A = R[x,y]$ with $\sigma$ exchanging $x$ and $y$. Then $L_x^* = L_y$, $L_y^* = L_x$, and the fixed part is the multiplication algebra of $R[x+y,xy]$; the operator $L_{x+y}$ and $L_{xy}$ are fixed, while $L_{x-y}$ is skew. The induced involution exchanges the two variable multiplications, exactly as $\sigma$ exchanges the two variables.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>multiplication operators</strong> of a unital commutative algebra $A$ are the $L_a$, and $\operatorname{Mult}(A)\cong A$ through $a\mapsto L_a$. An involution $\sigma$ of $A$ induces the <strong>involution of the multiplication operators</strong> $L_a^* = L_{\sigma(a)}$, an $R$-algebra automorphism of order two which, the algebra being commutative, is also an anti-automorphism; its <strong>fixed part</strong> is $\operatorname{Mult}(A)^*\cong A^\sigma$, the multiplications by the self-adjoint elements, and its skew part is $L_{A^-}$. The induced involution is compatible with the composition, with the action on a module through the twisted scalar, and with the equalities $L_aL_b = L_{ab}$; it is natural in $\sigma$-equivariant homomorphisms. The polynomial ring with the negation and with the swap are the worked examples. No form, norm, distance or order occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>Commutative unital $R$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Involution of $A$</td>
+</tr>
+<tr>
+<td>$L_a(x) = ax$</td>
+<td>Left (multiplication) operator</td>
+</tr>
+<tr>
+<td>$\operatorname{Mult}(A)\cong A$</td>
+<td>Multiplication algebra</td>
+</tr>
+<tr>
+<td>$L_a^* = L_{\sigma(a)}$</td>
+<td>Induced involution of the operators</td>
+</tr>
+<tr>
+<td>$\operatorname{Mult}(A)^*\cong A^\sigma$</td>
+<td>Fixed part</td>
+</tr>
+<tr>
+<td>$\operatorname{Mult}(A)^-\cong A^-$</td>
+<td>Skew part</td>
+</tr>
+<tr>
+<td>$(FG)^* = G^*F^* = F^*G^*$</td>
+<td>Compatibility with composition</td>
+</tr>
+<tr>
+<td>$\rho(L_a^*)(m) = \sigma(a)\cdot m$</td>
+<td>Action on a module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of an algebra and their induced maps on the operators.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the multiplication algebra and its involutions.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the multiplication algebra of an algebra and its action on the modules.</li>
+<li>Nicolas Bourbaki, <em>Algebra II</em> (Springer, 2003), for the commutative algebras, their modules and the multiplication operators.</li>
+<li>Atiyah and Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for the multiplication operators and the module theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

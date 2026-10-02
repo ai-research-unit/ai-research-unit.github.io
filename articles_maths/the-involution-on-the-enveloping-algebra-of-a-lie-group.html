@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Enveloping Algebra of a Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-enveloping-algebra-of-a-lie-group"><strong>The Involution on the Enveloping Algebra of a Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The universal enveloping algebra of a real Lie algebra carries a canonical involution, the <strong>principal anti-automorphism</strong>, which reverses the order of a product and sends each generator $X$ to $-X$; with it the enveloping algebra becomes an involutive algebra, and the unitary representations of the group are exactly its representations that are compatible with the involution. The grade involution of a graded Lie algebra is a second, multiplicative involution, and the two together generate the full symmetry the enveloping algebra inherits from the Lie algebra. On the level of the group the principal anti-automorphism is the infinitesimal form of the inversion, and the unitary condition is the infinitesimal form of the unitarity of the representation.</p>
+<p>This article treats the involution on the enveloping algebra of a Lie group, the star structure and the unitary representations. It is the fifth article of the <code>- * Theory</code> group of the category; the algebra structure and the Poincaré--Birkhoff--Witt theorem are from <em>Universal Enveloping Algebras</em>, the involutions on the group and on the algebra are <em>Involutive Groups</em> and <em>Graded Lie Algebras with an Involution</em>, the unitary representations are <em>Unitary Representations of a Lie Group</em>, and the form is <em>Hermitian Forms on a Lie Algebra</em> of the <code>- * Operator Theory</code> group.</p>
+<p>The article assumes the universal enveloping algebra and its universality from <em>Universal Enveloping Algebras</em>, the involutive algebra with its star and its Hermitian and positive elements from <em>Involutive Rings</em>, the adjoint of an operator on a Hilbert space from <em>Bounded Operators on a Hilbert Space</em>, the Lie group and the inversion from <em>Lie Groups</em>, and the grading and the grade involution from <em>Graded Lie Algebras with an Involution</em>. The unitary representations are used by name and their decomposition belongs to <em>Unitary Representations of a Lie Group</em>; the particular unitary dual is not determined here.</p>
+<h2 id="the-principal-anti-automorphism">The Principal Anti-Automorphism</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a real Lie algebra and $U(\mathrm{G})$ its universal enveloping algebra. The <strong>principal anti-automorphism</strong> is the unique $\mathbb{R}$-linear map $\sigma : U(\mathrm{G})\to U(\mathrm{G})$ with</p>
+<p>$$
+\sigma(1) = 1, \qquad \sigma(X) = -X \quad (X\in\mathrm{G}), \qquad \sigma(uv) = \sigma(v)\sigma(u) ,
+$$</p>
+<p>and the <strong>star</strong> of an element is written $u^{\star} = \sigma(u)$.</p>
+<p><strong>Theorem.</strong> The principal anti-automorphism exists and is unique; it is an involutive anti-automorphism of $U(\mathrm{G})$, $\sigma^2 = \mathrm{id}$, and it is the unique anti-automorphism of $U(\mathrm{G})$ that is $-\mathrm{id}$ on $\mathrm{G}$.</p>
+<p><em>Proof.</em> The map $X\mapsto -X$ is a homomorphism from the Lie algebra $\mathrm{G}$ to the opposite Lie algebra $U(\mathrm{G})^{\mathrm{op}}$: it is linear, and $[-X,-Y] = [X,Y]$ equals the opposite bracket. By the universal property of $U(\mathrm{G})$ applied to $U(\mathrm{G})^{\mathrm{op}}$ it extends to an algebra homomorphism from $U(\mathrm{G})$ to $U(\mathrm{G})^{\mathrm{op}}$, that is to an anti-automorphism of $U(\mathrm{G})$; it is involutive because its square is an endomorphism of $U(\mathrm{G})$ equal to the identity on $\mathrm{G}$ and hence on the whole algebra; uniqueness is the uniqueness in the universal property.</p>
+<h3 id="the-properties">The Properties</h3>
+<p><strong>Proposition.</strong> The star is $\mathbb{R}$-linear, $(\lambda u)^{\star} = \lambda u^{\star}$ for $\lambda\in\mathbb{R}$, and on the PBW monomials</p>
+<p>$$
+(X_{i_1}\cdots X_{i_k})^{\star} = (-1)^k\,X_{i_k}\cdots X_{i_1} .
+$$</p>
+<p>The star is an anti-automorphism of the filtered algebra and preserves the filtration degree; the centre is stable under it, $Z(U(\mathrm{G}))^{\star} = Z(U(\mathrm{G}))$.</p>
+<p><em>Proof.</em> The formula follows by reversing the product and negating each factor; the filtration degree is the number of factors, unchanged; the stability of the centre is because an anti-automorphism preserves centrality.</p>
+<h3 id="the-infinitesimal-inversion">The Infinitesimal Inversion</h3>
+<p><strong>Theorem (the star is the derivative of the inversion).</strong> Let $G$ be a Lie group with Lie algebra $\mathrm{G}$ and let $\iota : G\to G$ be the inversion. Then for every $X\in\mathrm{G}$ the differential of $\iota$ at $e$ is $-\mathrm{id}$, and on the distributions supported at the identity the transpose of $\iota$ is the principal anti-automorphism $\sigma$,</p>
+<p>$$
+\iota^{*}(u) = u^{\star} \qquad (u\in U(\mathrm{G})\cong\mathcal{D}_e(G)) .
+$$</p>
+<p><em>Proof.</em> The inversion is a diffeomorphism with differential $-\mathrm{id}$ at the identity because its square is the identity; the transpose on distributions reverses the convolution product, because $\iota(xy) = \iota(y)\iota(x)$, and it sends the left-invariant vector field $X$ to $-X$; the two facts identify it with $\sigma$ under the isomorphism of <em>Operators on a Lie Group</em>.</p>
+<h2 id="the-involutive-algebra">The Involutive Algebra</h2>
+<h3 id="the-star-structure">The Star Structure</h3>
+<p><strong>Definition.</strong> The pair $(U(\mathrm{G}),\sigma)$ is an <strong>involutive algebra</strong>: an associative algebra over $\mathbb{R}$ with an involutive anti-automorphism. An element is <strong>Hermitian</strong> when $u^{\star} = u$, and <strong>skew</strong> when $u^{\star} = -u$; the Hermitian elements form a real subspace, and a Hermitian element is <strong>positive</strong> when it is a sum of elements of the form $u^{\star}u$.</p>
+<p><strong>Proposition.</strong> Every element is the sum of a Hermitian and a skew part, $u = \tfrac12(u + u^{\star}) + \tfrac12(u - u^{\star})$; the generators $X\in\mathrm{G}$ are skew, the unit is Hermitian, and the real span of the products $u^{\star}u$ is a cone stable under the star.</p>
+<p><em>Proof.</em> The decomposition is the standard one for an involution, and the statements about the generators and the unit follow from $\sigma(X) = -X$ and $\sigma(1) = 1$; the cone statement is that $(u^{\star}u)^{\star} = u^{\star}u$.</p>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p><strong>Definition.</strong> The <strong>trace form</strong> of $U(\mathrm{G})$ is the symmetric bilinear form $\langle u,v\rangle = \tau(uv)$ where $\tau$ is the linear functional vanishing on the monomials of PBW degree different from the top and equal to the coefficient of the top monomial; it is invariant, $\langle uv,w\rangle = \langle u,vw\rangle$, and compatible with the star, $\langle u^{\star},v^{\star}\rangle = \langle u,v\rangle$.</p>
+<p><strong>Proposition.</strong> The trace form is non-degenerate on each finite-dimensional filtered piece, and its restriction to the Hermitian elements is definite on the semisimple case; the Casimir element is Hermitian and, for a compact form, positive.</p>
+<p><em>Proof.</em> The indicated functional is the standard trace like functional on the PBW basis, whose matrix is triangular with nonzero diagonal; the invariance is the associativity; the Hermitian statement for the Casimir follows from the reality of the structure constants of the compact form, and its positivity from the negative definiteness of the Killing form there.</p>
+<h2 id="the-grade-involution">The Grade Involution</h2>
+<h3 id="the-extension-of-the-involution">The Extension of the Involution</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G} = \mathrm{G}^0\oplus\mathrm{G}^1$ be a graded Lie algebra, $\alpha$ the grade involution, $+1$ on the even part and $-1$ on the odd part. The <strong>grade involution of the enveloping algebra</strong> is the algebra automorphism $\alpha : U(\mathrm{G})\to U(\mathrm{G})$ extending the linear map that is $\pm\mathrm{id}$ on the homogeneous components.</p>
+<p><strong>Proposition.</strong> The grade involution is an algebra automorphism with $\alpha^2 = \mathrm{id}$, it commutes with the principal anti-automorphism, $\alpha\sigma = \sigma\alpha$, and in the parity grading of <em>Superalgebras and Graded Structures</em> it is the automorphism that changes the sign of the odd part. On a generator $X$ of parity $\lvert X\rvert$ the two involutions act by</p>
+<p>$$
+\sigma(X) = -X, \qquad \alpha(X) = (-1)^{\lvert X\rvert}X, \qquad (\alpha\sigma)(X) = -(-1)^{\lvert X\rvert}X .
+$$</p>
+<p><em>Proof.</em> The grade involution is multiplicative because the bracket preserves parity, so it is an algebra automorphism by the universal property; its square is the identity on the generators and hence everywhere; it commutes with $\sigma$ because it is an automorphism on the generators and $\sigma$ is determined on the generators.</p>
+<h3 id="the-two-involutions">The Two Involutions</h3>
+<p><strong>Theorem.</strong> The group generated by $\sigma$ and $\alpha$ inside the algebra of linear maps of $U(\mathrm{G})$ is the Klein four-group, and its three non-trivial elements are $\sigma$, $\alpha$ and the composite $\alpha\sigma$, with</p>
+<p>$$
+\sigma^2 = \alpha^2 = (\alpha\sigma)^2 = \mathrm{id} .
+$$</p>
+<p>The composite $\alpha\sigma$ is the <strong>graded transposition</strong>, the anti-automorphism reversing the product and changing the sign of the odd part.</p>
+<p><em>Proof.</em> The relations are immediate; the composite is an anti-automorphism as a product of an automorphism and an anti-automorphism, its square is the identity, and the action on a monomial is the reversal with the sign $(-1)^{k}$ times the parity sign of each factor.</p>
+<h2 id="the-star-structure-and-the-unitary-representations">The Star Structure and the Unitary Representations</h2>
+<h3 id="the-star-representations">The Star-Representations</h3>
+<p><strong>Definition.</strong> A <strong>star-representation</strong> of $(U(\mathrm{G}),\sigma)$ on a Hilbert space $\mathcal{H}$ is an algebra homomorphism $\pi$ such that</p>
+<p>$$
+\pi(u^{\star}) = \pi(u)^{*}
+$$</p>
+<p>where the adjoint on the right is the Hilbert-space adjoint. A <strong>unitary representation</strong> of $G$ is a strongly continuous homomorphism into the unitary group; its derived representation is a star-representation on the smooth vectors.</p>
+<p><strong>Theorem.</strong> Let $\pi$ be a unitary representation of $G$ and $\pi_*$ its derived representation on the smooth vectors. Then</p>
+<p>$$
+\pi_*(X)^{*} = -\pi_*(X) \qquad (X\in\mathrm{G}),
+$$</p>
+<p>so $\pi_*$ is a star-representation of $U(\mathrm{G})$: the generators are skew-adjoint and the star is the adjoint operation. Conversely a star-representation of $U(\mathrm{G})$ whose operators integrate to a group representation gives a unitary representation.</p>
+<p><em>Proof.</em> The skew-adjointness of $\pi_*(X)$ is the derivative of the unitarity at the identity; since the generators are skew and generate $U(\mathrm{G})$, the identity $\pi_*(u^{\star}) = \pi_*(u)^{*}$ holds on the whole algebra by multiplicativity and the adjoint of a product; the converse is the integration of the skew operators to a unitary group, which is Stone's theorem of <em>Unitary Representations of a Lie Group</em>.</p>
+<h3 id="the-form-and-the-star">The Form and the Star</h3>
+<p><strong>Theorem.</strong> Let $H$ be an invariant Hermitian form on $\mathrm{G}$ whose associated operator is the star, in the sense that $H([X,Y],Z) + H(Y,[X,Z]) = 0$ for all $X,Y,Z$. Then the adjoint of the operator of left multiplication $\pi_*(X)$ with respect to $H$ is $-\pi_*(X)$, and the star of $U(\mathrm{G})$ is the adjoint operation for the extended form on the enveloping algebra; the invariance of $H$ on $\mathrm{G}$ is equivalent to the star identity on $U(\mathrm{G})$.</p>
+<p><em>Proof.</em> The invariance of $H$ under the adjoint action says that $\operatorname{ad}_X$ is skew for $H$, so the adjoint of $\operatorname{ad}_X$ is $-\operatorname{ad}_X = \operatorname{ad}_{X^{\star}}$; the extension to the enveloping algebra is by multiplicativity of the adjoint and of the star. The equivalence is the statement that both properties are generated on the first order.</p>
+<p><strong>Corollary (the Casimir is positive).</strong> For a compact real form the Casimir element is a positive Hermitian element and the operator $\pi_*(\Omega)$ is a negative semidefinite self-adjoint operator on each unitary representation, with a negative eigenvalue on each irreducible summand.</p>
+<p><em>Proof.</em> The Casimir is a sum of products $X_iX^i$ which is a sum of the elements $X_i^{\star}X_i$ up to signs for a compact form, hence positive; its image is self-adjoint because the star is the adjoint, and its spectrum is negative on a compact group because it is minus the Laplacian, whose eigenvalues are non-negative; the value on an irreducible summand is the scalar of <em>The Casimir Operator of a Lie Group</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-universal-enveloping-algebra-of-math116">The Universal Enveloping Algebra of $\mathrm{sl}_2(\mathbb{R})$</h3>
+<p>The algebra $\mathrm{sl}_2(\mathbb{R})$ has the basis $E,F,H$ with $[H,E] = 2E$, $[H,F] = -2F$, $[E,F] = H$; the star is $E^{\star} = -E$, $F^{\star} = -F$, $H^{\star} = -H$, and the Casimir $\Omega = EF + FE + \frac12H^2$ is Hermitian. Its image in a unitary representation is the negative of the standard Laplacian, and the eigenvalues are computed in <em>The Casimir Operator of a Lie Group</em>.</p>
+<h3 id="the-heisenberg-algebra">The Heisenberg Algebra</h3>
+<p>For the Heisenberg algebra with $[P,Q] = Z$ central, the star sends each generator to its negative, and the symmetric elements include $PQ + QP$ and $Z$; a unitary representation sends $P$ and $Q$ to skew-adjoint operators and $Z$ to a central skew-adjoint scalar, so the imaginary parts are the self-adjoint position and momentum operators of the Schrödinger representation, named here only as the analytic model, with no physical interpretation.</p>
+<h3 id="a-graded-case">A Graded Case</h3>
+<p>For a Lie superalgebra with a non-trivial odd part the grade involution is not the identity, and the two involutions $\sigma$ and $\alpha$ act by the four sign patterns; the star representation of the enveloping algebra of a Lie superalgebra is the super-analogue of the unitary representation, and the compatible structures are the ones of <em>Graded Lie Algebras and Lie Superalgebras</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The universal enveloping algebra of a real Lie algebra carries the <strong>principal anti-automorphism</strong> $\sigma$, the unique anti-automorphism equal to $-\mathrm{id}$ on the generators; it is involutive, it reverses the order of a product, it preserves the filtration and the centre, and it is the infinitesimal form of the inversion of the group, acting on the distributions supported at the identity as the transpose of the inversion. Its square is the identity and its fixed elements are the Hermitian ones, the generators being skew; the trace form is invariant and compatible with it, and the Casimir element of a compact form is positive. A graded Lie algebra carries in addition the <strong>grade involution</strong> $\alpha$, an involutive automorphism changing the sign of the odd part; $\sigma$ and $\alpha$ commute and generate the Klein four-group, whose third element is the graded transposition. A star-representation of $U(\mathrm{G})$ on a Hilbert space is one with $\pi(u^{\star}) = \pi(u)^{*}$, and the derived representation of a unitary representation is a star-representation with skew-adjoint generators, the star playing the role of the Hilbert-space adjoint; the invariance of a Hermitian form on the Lie algebra is equivalent to the star identity on the enveloping algebra, so the unitary representations are the star-representations and the adjoint operation is the star.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $u^{\star} = \sigma(u)$</td>
+<td>the principal anti-automorphism and the star</td>
+</tr>
+<tr>
+<td>$\sigma(X) = -X$</td>
+<td>the action on the generators</td>
+</tr>
+<tr>
+<td>$\sigma(uv) = \sigma(v)\sigma(u)$, $\sigma^2 = \mathrm{id}$</td>
+<td>anti-multiplicativity and involution</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $\alpha(X) = (-1)^{\lvert X\rvert}X$</td>
+</tr>
+<tr>
+<td>$\alpha\sigma$</td>
+<td>the graded transposition</td>
+</tr>
+<tr>
+<td>Hermitian, skew, positive</td>
+<td>the elements with $u^{\star} = u$, $u^{\star} = -u$, and sums $u^{\star}u$</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle = \tau(uv)$</td>
+<td>the trace form</td>
+</tr>
+<tr>
+<td>$\pi(u^{\star}) = \pi(u)^{*}$</td>
+<td>the star-representation, the unitary condition</td>
+</tr>
+<tr>
+<td>$\pi_*(X)^{*} = -\pi_*(X)$</td>
+<td>skew-adjointness of the generators</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>the Casimir, Hermitian and positive for a compact form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Enveloping Algebras</em> (North-Holland, 1977), for the principal anti-automorphism, the filtration and the centre of the enveloping algebra.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the star-representations and the unitary representations of a Lie group.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for the infinitesimal unitarity condition and the Casimir element.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the general theory of involutions on an algebra and their Hermitian elements.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the enveloping algebra of a real form and the inversion of the group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

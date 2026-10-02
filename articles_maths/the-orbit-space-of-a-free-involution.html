@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Orbit Space of a Free Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-orbit-space-of-a-free-involution"><strong>The Orbit Space of a Free Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>free</strong> involution is one with no fixed point, so that every orbit has exactly two points, and the orbit map of a free involution pairs the two points of each orbit and is otherwise a local homeomorphism. This article proves the precise form of that statement: for a free continuous involution of a Hausdorff space the orbit map is a <strong>two-fold covering</strong>, and it classifies the two-fold coverings of a connected space as the orbit maps of free involutions. The orbit space of a free involution is therefore the base of a covering, the involution is its <strong>deck transformation</strong>, and the whole of the covering theory of the later articles applies. The <strong>two-fold coverings and the Borel construction</strong> of the next article take the construction one step further, to a space on which the involution acts in a way that survives the passage to the quotient, and the classification of the two-fold coverings by a cohomology group is the subject of the algebraic topology of this Part.</p>
+<p>The article begins with a free involution and constructs a neighbourhood that the orbit map identifies with a product, the <strong>trivializing neighbourhood</strong>; it then reviews the definition of a covering map, proves that the orbit map of a free involution of a Hausdorff space is a two-fold covering, computes the group of deck transformations, and proves that a connected two-fold covering is, up to equivalence, the orbit map of a free involution. It continues <em>Spaces with an Involution and the Orbit Space</em>, whose functoriality and quotient results are used, and it precedes <em>Two-Fold Coverings and the Borel Construction</em>.</p>
+<p>Nothing analytic and nothing geometric is used. The circle and the sphere occur with the involutions $z \mapsto -z$ and $x \mapsto -x$, and the covering they define is named; no distance, length or angle is read from them.</p>
+<h2 id="free-involutions">Free Involutions</h2>
+<h3 id="free-involution-and-the-trivializing-neighbourhood">Free Involution and the Trivializing Neighbourhood</h3>
+<p><strong>Definition.</strong> The continuous involution $\sigma$ of $X$ is <strong>free</strong> when $X^{\sigma} = \emptyset$, that is, when $\sigma(x) \neq x$ for every $x$. Then every orbit $\{x, \sigma(x)\}$ has exactly two points.</p>
+<p><strong>Theorem (trivializing neighbourhood).</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $x \in X$. Then there is an open neighbourhood $U$ of $x$ with</p>
+<p>$$
+U \cap \sigma(U) = \emptyset .
+$$</p>
+<p>Moreover $U$ can be chosen so that the image $\pi(U)$ is open in $X/\sigma$ and $\pi^{-1}(\pi(U)) = U \cup \sigma(U)$ is the disjoint union of two homeomorphic copies of $U$.</p>
+<p><strong>Proof.</strong> For the single element $g = \sigma \neq \mathrm{id}$ the points $x$ and $\sigma(x)$ are distinct, so by the Hausdorff property there are open sets $O \ni x$ and $P \ni \sigma(x)$ with $O \cap P = \emptyset$. Put $U = O \cap \sigma^{-1}(P)$; then $U$ is open and contains $x$, because $\sigma^{-1}(P)$ contains $\sigma^{-1}(\sigma(x)) = x$, and</p>
+<p>$$
+U \cap \sigma(U) = (O \cap \sigma^{-1}P) \cap \sigma(O \cap \sigma^{-1}P) \subseteq O \cap P = \emptyset ,
+$$</p>
+<p>since $\sigma(U) \subseteq P$. The image $\pi(U)$ is open because $\pi$ is open, and its preimage is $U \cup \sigma(U)$ because the orbits are the two-point sets, and the two members are disjoint by the first part. The involution restricts to a homeomorphism $U \to \sigma(U)$.</p>
+<p>The neighbourhood is the two-fold analogue of the disjoint neighbourhoods of the two points of an orbit; it exists because a finite group action on a Hausdorff space has only finitely many translates to separate. For a general group the corresponding statement can fail, and the orbit space can fail to be a covering even when the action is free.</p>
+<h3 id="local-injectivity-of-the-orbit-map">Local Injectivity of the Orbit Map</h3>
+<p><strong>Corollary.</strong> Under the hypotheses of the theorem the orbit map is a local homeomorphism: on the trivializing neighbourhood $U$ it restricts to a homeomorphism $U \to \pi(U)$.</p>
+<p><strong>Proof.</strong> The restriction is continuous, injective because $\pi$ is injective on a set disjoint from its translate, and open because $\pi$ is open; hence it is a homeomorphism onto its image.</p>
+<h2 id="the-orbit-map-as-a-two-fold-covering">The Orbit Map as a Two-Fold Covering</h2>
+<h3 id="covering-maps">Covering Maps</h3>
+<p><strong>Definition.</strong> A continuous surjection $p : E \to B$ is a <strong>covering map</strong> when every point of $B$ has an open neighbourhood $V$ that is <strong>evenly covered</strong>: there is a discrete space $F$ and a homeomorphism</p>
+<p>$$
+\varphi : p^{-1}(V) \longrightarrow V \times F
+$$</p>
+<p>over $V$, that is, $\mathrm{pr}_{V} \circ \varphi = p$ on $p^{-1}(V)$. The space $F$ is the <strong>fibre</strong>, and the covering is <strong>$n$-fold</strong> when $F$ has $n$ points. A <strong>two-fold covering</strong> is a covering with two points in the fibre.</p>
+<p>For a two-fold covering the preimage of an evenly covered $V$ is the disjoint union of two open sets each homeomorphic to $V$ under $p$. When $B$ is connected the fibre is the same finite cardinal over every point, and the covering is $n$-fold for a fixed $n$; the two-fold case is $n = 2$.</p>
+<h3 id="the-orbit-map-is-a-two-fold-covering">The Orbit Map is a Two-Fold Covering</h3>
+<p><strong>Theorem.</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$. Then the orbit map</p>
+<p>$$
+\pi : X \longrightarrow X/\sigma
+$$</p>
+<p>is a two-fold covering. The fibre over the orbit of $x$ is the two-point set $\{x, \sigma(x)\}$, and the trivializing neighbourhood of the previous section provides the evenly covered neighbourhood of its image.</p>
+<p><strong>Proof.</strong> Let $y \in X/\sigma$ and let $x$ be a point of the orbit $y$, so that $y = \{x, \sigma(x)\}$. By the trivializing theorem there is an open $U \ni x$ with $U \cap \sigma(U) = \emptyset$ and $\pi^{-1}(\pi(U)) = U \cup \sigma(U)$. The set $V = \pi(U)$ is open in $X/\sigma$ and</p>
+<p>$$
+\pi^{-1}(V) = U \sqcup \sigma(U) ,
+$$</p>
+<p>a disjoint union of two open sets, and $\pi$ restricts to a homeomorphism on each of them by the local injectivity. Hence $V$ is evenly covered with fibre $\{0,1\}$, and $y$ was arbitrary, so $\pi$ is a covering. The fibre over $y$ is $\{x,\sigma(x)\}$, two points.</p>
+<p><strong>Corollary.</strong> The orbit space of a free involution of a Hausdorff space is the base of a two-fold covering with total space $X$; the covering is surjective, open and closed when $X$ is compact, and the orbit space is Hausdorff when $X$ is.</p>
+<p><strong>Proof.</strong> The covering statement is the theorem; the orbit map is surjective and open; it is closed for a finite group action on a compact space, and the orbit space inherits Hausdorffness by <em>Spaces with an Involution and the Orbit Space</em>.</p>
+<h3 id="deck-transformations">Deck Transformations</h3>
+<p><strong>Definition.</strong> Let $p : E \to B$ be a covering. A <strong>deck transformation</strong> is a homeomorphism $\varphi : E \to E$ with $p \circ \varphi = p$. The deck transformations form a group under composition, the <strong>deck group</strong> of the covering.</p>
+<p><strong>Theorem.</strong> Let $\sigma$ be a free continuous involution of a connected Hausdorff space $X$. Then the deck group of $\pi : X \to X/\sigma$ is $\{1, \sigma\} \cong \mathbb{Z}/2$, and it acts transitively on every fibre.</p>
+<p><strong>Proof.</strong> The involution satisfies $\pi \circ \sigma = \pi$, so it is a deck transformation, and it is not the identity because $\sigma(x) \neq x$ for every $x$. Every deck transformation permutes the two points of each fibre, so the action on a fixed fibre defines a homomorphism from the deck group to the symmetric group on two letters. Its kernel consists of the deck transformations that fix the two points of that fibre. A deck transformation with a fixed point is the identity when $X$ is connected: the set of its fixed points is nonempty, closed, and open, since near a fixed point it must agree with the identity on a trivializing neighbourhood, so by connectedness it is all of $X$. Hence the kernel is trivial, the deck group embeds in the two-element symmetric group, and since it contains the non-identity element $\sigma$ it has exactly two elements. Transitivity on the fibre $\{x,\sigma(x)\}$ is that $\sigma$ carries $x$ to the other point.</p>
+<p><strong>Remark.</strong> The connectedness of $X$ is used, and the deck group can be larger without it. If $X$ is the disjoint union of two copies of a space and $\sigma$ acts freely on each copy separately, then the orbit map is still a two-fold covering, but a deck transformation may act as the identity on one copy and as the involution on the other, and the deck group then has four elements. The obstruction disappears when $X$ is connected.</p>
+<p><strong>Remark.</strong> A covering whose deck group acts transitively on each fibre is <strong>regular</strong>, or <strong>normal</strong>, and the theorem says that the orbit map of a free involution is a regular two-fold covering. Conversely a regular covering with deck group $G$ is the orbit map of the action of $G$ on the total space, which is the content of the converse below in the two-fold case.</p>
+<h2 id="the-converse">The Converse</h2>
+<h3 id="two-fold-coverings-of-a-connected-base">Two-Fold Coverings of a Connected Base</h3>
+<p><strong>Theorem.</strong> Let $p : E \to B$ be a two-fold covering with $B$ connected. Then the deck group of $p$ has two elements, the action of the nontrivial deck transformation on $E$ is a free involution, $E/\sigma$ is homeomorphic to $B$ in such a way that $\pi$ becomes $p$, and the covering is regular.</p>
+<p><strong>Proof sketch.</strong> The deck group permutes the two points of each fibre, so it embeds in the two-element symmetric group once a fibre is fixed, and the standard theory of covering spaces shows that the image is transitive on the fibre when $B$ is connected: a loop in $B$ based at the point under the fibre either returns the two points to themselves or exchanges them, and the exchanging loops form the complement of the image of the fundamental group of $E$, a subgroup of index two and hence normal. Regularity, and the transitivity of the deck group on the fibre, follow. The nontrivial deck transformation $\sigma$ then has no fixed point, since a fixed point would lie in a fibre whose two points it interchanges; the universal property gives a continuous bijection $E/\sigma \to B$, which is a homeomorphism because $p$ is a covering and hence open, and $\pi$ becomes $p$ under this identification.</p>
+<p><strong>Remark.</strong> The proof sketch invokes the covering-space theory that is developed later in this Part, in <em>Covering Spaces</em> and <em>Simplicial and Singular Homology</em>; the reader may read the forward direction of this article, that a free involution gives a two-fold covering, without it, and return to the converse after the covering theory. The two-fold case is simpler than the general one because a subgroup of index two is normal, so a two-fold covering of a connected base is always regular.</p>
+<p><strong>Corollary.</strong> For a connected base the two-fold coverings are exactly the orbit maps of free involutions, up to homeomorphism over the base; and the correspondence is natural in the base.</p>
+<p><strong>Proof.</strong> The first clause is the theorem; the naturality is that a map of bases that lifts to the total spaces commutes with the involutions, and every equivalence of coverings over the base is such a lift.</p>
+<p><strong>Remark.</strong> The converse uses that a subgroup of index two is normal, so that a two-fold covering of a connected base is automatically regular; for a covering of degree greater than two the deck group need not act transitively on the fibre, and the orbit map of the deck group is then only a quotient of the total space, not the total space itself. The two-fold case is the case in which the orbit description is complete.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the antipodal involution).</strong> On the sphere $S^{n}$ the antipodal map is a free involution and the orbit map $S^{n} \to \mathbb{RP}^{n}$ is a two-fold covering; the deck group is generated by the antipodal map.</p>
+<p><strong>Example (the squaring cover of the circle).</strong> On the circle $S^{1}$, read as the set of complex numbers of modulus one, the involution $z \mapsto -z$ is free; the orbit space is again a circle under $z \mapsto z^{2}$, and the orbit map $S^{1} \to S^{1}$, $z \mapsto z^{2}$, is a two-fold covering. This is the standard example of a nontrivial two-fold covering and of the free involution that defines it.</p>
+<p><strong>Example (the punctured line).</strong> On $\mathbb{R} \setminus \{0\}$ the involution $x \mapsto -x$ is free, and the orbit map onto $(0,\infty)$ is a two-fold covering; the involution is the restriction of the map $x \mapsto -x$ of the line to the punctured line. The same map on the whole line is not free, and its orbit map is not a covering, because the fixed point $0$ has no evenly covered neighbourhood: the preimage of a connected neighbourhood of the class of $0$ is a single interval, not two.</p>
+<p><strong>Example (the split covering).</strong> On $X \times \{0,1\}$ the exchange of the two copies is a free involution, the orbit map is the projection $X \times \{0,1\} \to X$, which is a two-fold covering with two disjoint sheets; the covering is <strong>trivial</strong>, and its deck group is $\mathbb{Z}/2$.</p>
+<p><strong>Example (a nonfree involution fails to cover).</strong> On $[0,1]$ the involution $x \mapsto 1-x$ has the fixed point $\tfrac12$, so it is not free and its orbit map is not a covering: the preimage of a connected neighbourhood of the class of $\tfrac12$ is connected. The failure is local at the fixed set, and it is the reason the covering theory of a nonfree involution must be replaced by the Borel construction of the next article.</p>
+<h2 id="summary">Summary</h2>
+<p>A free continuous involution of a Hausdorff space has, at each point, an open neighbourhood $U$ with $U \cap \sigma(U) = \emptyset$, obtained by separating $x$ from $\sigma(x)$ and intersecting with a translate; the image $\pi(U)$ is then evenly covered, and the orbit map is a <strong>two-fold covering</strong>. Its fibres are the two-point orbits, its deck group is $\mathbb{Z}/2$ generated by the involution, and it acts transitively on each fibre, so the covering is regular. Conversely every two-fold covering of a connected base has deck group $\mathbb{Z}/2$, and the nontrivial deck transformation is a free involution whose orbit map is the covering; hence for a connected base the two-fold coverings are exactly the orbit maps of free involutions, up to homeomorphism over the base. The examples are the antipodal covering of projective space, the squaring cover of the circle, and the covering of the half-line by the punctured line; a nonfree involution has no such covering, and its fixed set is the obstruction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>free involution</td>
+<td>$\sigma(x) \neq x$ for all $x$; every orbit has two points</td>
+</tr>
+<tr>
+<td>trivializing neighbourhood</td>
+<td>Open $U$ with $U \cap \sigma(U) = \emptyset$</td>
+</tr>
+<tr>
+<td>covering map $p : E \to B$</td>
+<td>Every point of $B$ has an evenly covered neighbourhood</td>
+</tr>
+<tr>
+<td>evenly covered, fibre</td>
+<td>$p^{-1}(V) \cong V \times F$ over $V$; $F$ the fibre</td>
+</tr>
+<tr>
+<td>two-fold covering</td>
+<td>A covering with a two-point fibre</td>
+</tr>
+<tr>
+<td>$\pi : X \to X/\sigma$</td>
+<td>The orbit map; a two-fold covering for free $\sigma$ and Hausdorff $X$</td>
+</tr>
+<tr>
+<td>deck transformation</td>
+<td>Homeomorphism $\varphi$ of $E$ with $p\varphi = p$</td>
+</tr>
+<tr>
+<td>deck group</td>
+<td>The group of deck transformations; $\mathbb{Z}/2$ for the orbit map</td>
+</tr>
+<tr>
+<td>regular covering</td>
+<td>Deck group acts transitively on each fibre</td>
+</tr>
+<tr>
+<td>$z \mapsto z^{2}$</td>
+<td>The squaring cover $S^{1} \to S^{1}$, the orbit map of $z \mapsto -z$</td>
+</tr>
+<tr>
+<td>$S^{n} \to \mathbb{RP}^{n}$</td>
+<td>The antipodal two-fold covering</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for covering maps, deck transformations and the orbit map of a free finite group action.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for covering spaces, the classification of coverings and the deck group.</li>
+<li>William S. Massey, <em>Algebraic Topology: An Introduction</em> (Springer, 1967; reprinted 1977), for two-fold coverings and the classification of coverings by the fundamental group.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (de Gruyter, 1987), for free actions, principal bundles and the orbit map as a covering.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for the existence of invariant neighbourhoods and the quotient by a finite group action.</li>
+<li>John L. Kelley, <em>General Topology</em> (Van Nostrand, 1955; reprinted Springer, 1975), for coverings and the local structure of a quotient map.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

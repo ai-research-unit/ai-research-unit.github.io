@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-topological-group"><strong>The Signed Sandwich on a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A two-sided operator on a topological group dresses an element between two factors, $x \mapsto axb$, and the sandwich is the operator so formed; when the group carries a continuous involutive automorphism $\alpha$, the element in the middle may be twisted by it before it is dressed, and the operator $x \mapsto a\,\alpha(x)\,b$ is the <strong>signed sandwich</strong>. The algebra of these operators is settled on an abstract group, and what the topology adds is exactly what the topology always adds to an operator layer: the sandwiches are homeomorphisms rather than mere bijections, the families they form are topological subgroups and cosets of $\operatorname{Homeo}(G)$, the parametrisation is a continuous map whose kernel is the anti-diagonal centre, and the fixed sets of the reflections are closed.</p>
+<p>The article assumes the continuous involutive automorphism, the fixed set and the dictionary of the fixed and inverted sets from <em>Involutive Topological Groups</em>; the abstract signed sandwich, its factorisation $\Sigma^\alpha_{a,b} = \Sigma_{a,b}\alpha$, the composition laws, the coset $\mathfrak{S}^\alpha = \mathfrak{S}\alpha$ and the square of the signed conjugation from <em>The Signed Sandwich on a Group</em>; the translations and the operator layer from <em>Operators on a Topological Group</em>; and the local base at the identity, the uniformities and the compactness theorems from <em>Topological Groups</em>. The reflections read as operators, the correspondence with the elements that carry them and the degenerate cases are <em>Reflections as Signed Two-Sided Operators on a Topological Group</em>; the adjoint of the signed sandwich is <em>The Signed Adjoint Sandwich on a Topological Group</em>. Nothing analytic and nothing geometric is used.</p>
+<p>Throughout, $G$ is a Hausdorff topological group with identity $e$, $\iota$ is the inversion, $\sigma$ is a topological involution, $\alpha = \sigma\iota$ is the associated <strong>continuous involutive automorphism</strong> — the grade involution — and $(G,\alpha)$ is a graded topological group. The fixed subgroup of $\alpha$ is $G^\alpha = \{x : \alpha(x) = x\}$ and the fixed set of $\sigma$ is $G^\sigma = I(\alpha)$, by the dictionary of <em>Involutive Topological Groups</em>.</p>
+<h2 id="the-continuous-grade-involution">The Continuous Grade Involution</h2>
+<p><strong>Definition.</strong> A <strong>grade involution</strong> of the topological group $G$ is a continuous automorphism $\alpha : G \to G$ with $\alpha^2 = \mathrm{id}$; the pair $(G,\alpha)$ is a <strong>graded topological group</strong>.</p>
+<p><strong>Proposition.</strong> The grade involution is a homeomorphism of $G$ of order two, so it conjugates $\operatorname{Homeo}(G)$ to itself and preserves every topological property of the group; it commutes with the inversion and with every topological involution of $G$ in the sense that $\iota\alpha = \alpha\iota$.</p>
+<p><strong>Proof.</strong> $\alpha$ is a continuous bijection with continuous inverse $\alpha$, hence a homeomorphism; a homeomorphism preserves open sets, compactness, connectedness and the uniformities. The inversion commutes with every homomorphism, so $\iota\alpha = \alpha\iota$.</p>
+<p><strong>Proposition (the grade involution acts on the translations).</strong> For all $a, b \in G$,</p>
+<p>$$
+\alpha\,L_a\,\alpha = L_{\alpha(a)}, \qquad \alpha\,R_b\,\alpha = R_{\alpha(b)} .
+$$</p>
+<p><strong>Proof.</strong> $(\alpha L_a\alpha)(x) = \alpha(a\alpha(x)) = \alpha(a)x = L_{\alpha(a)}(x)$, and symmetrically for $R_b$.</p>
+<p>So the grade involution is an automorphism of the operator layer: it conjugates each of the two translation subgroups onto itself, and it is a homeomorphism of the group.</p>
+<h2 id="the-unsigned-sandwich">The Unsigned Sandwich</h2>
+<p><strong>Definition.</strong> For $a, b \in G$ the <strong>sandwich</strong> by $(a,b)$ is</p>
+<p>$$
+\Sigma_{a,b} : G \longrightarrow G, \qquad \Sigma_{a,b}(x) = a\,x\,b .
+$$</p>
+<p><strong>Theorem (the sandwiche is a homeomorphism).</strong> Each $\Sigma_{a,b}$ is a homeomorphism of $G$, with inverse $\Sigma_{a^{-1},b^{-1}}$, and the assignment $(a,b) \mapsto \Sigma_{a,b}$ is a continuous homomorphism</p>
+<p>$$
+\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b ,
+$$</p>
+<p>onto the subgroup $\mathfrak{S} = \{\Sigma_{a,b}\}$ of $\operatorname{Homeo}(G)$, whose kernel is $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$; hence $\mathfrak{S} \cong (G\times G)/Z(G)$ as an abstract group.</p>
+<p><strong>Proof.</strong> $\Sigma_{a,b} = L_aR_b$ is a composite of homeomorphisms, so it is a homeomorphism, and its inverse is $L_{a^{-1}}R_{b^{-1}} = \Sigma_{a^{-1},b^{-1}}$. The composition law $\Sigma_{a,b}\Sigma_{c,d} = \Sigma_{ac,db}$ and the kernel computation are those of <em>Operators on a Topological Group</em>; continuity of $\pi$ is the continuity of the action by translation and of the parametrisation in the compact-open topology.</p>
+<p><strong>Corollary (closedness and compactness).</strong> If $G$ is compact then $\pi$ is a homeomorphism onto its image and $\mathfrak{S}$ is a compact, hence closed, subgroup of $\operatorname{Homeo}(G)$; the same holds for a closed subgroup of $G$ with the induced topology. For locally compact $G$ the map $\pi$ is a continuous injection on $(G\times G)/Z(G)$, and $\mathfrak{S}$ is a subgroup of $\operatorname{Homeo}(G)$.</p>
+<p><strong>Proof.</strong> A compact group is locally compact, and for locally compact $G$ the compact-open topology on $\operatorname{Homeo}(G)$ is a group topology in which $(a,b)\mapsto L_aR_b$ is continuous; when $G$ is compact the domain $G\times G$ is compact, so the quotient $(G\times G)/Z(G)$ is compact, and a continuous bijection from a compact space onto a Hausdorff image is a homeomorphism, which makes the image compact and closed.</p>
+<h2 id="the-signed-sandwich">The Signed Sandwich</h2>
+<p><strong>Definition.</strong> Let $(G,\alpha)$ be a graded topological group. The <strong>signed sandwich</strong> by $(a,b)$ is</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} : G \longrightarrow G, \qquad \Sigma^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b .
+$$</p>
+<p><strong>Theorem (factorisation and continuity).</strong> $\Sigma^{\alpha}_{a,b} = \Sigma_{a,b} \circ \alpha$, so every signed sandwich is a homeomorphism, with inverse $(\Sigma^{\alpha}_{a,b})^{-1} = \Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}} = \Sigma^{\alpha}_{a^{-1},b^{-1}}$ when $a,b$ are inverted by $\alpha$, and the signed sandwiches are the coset</p>
+<p>$$
+\mathfrak{S}^{\alpha} = \{\Sigma^{\alpha}_{a,b} : a,b\in G\} = \mathfrak{S}\,\alpha .
+$$</p>
+<p><strong>Proof.</strong> $(\Sigma_{a,b}\circ\alpha)(x) = a\alpha(x)b$ is the definition; a composite of homeomorphisms is a homeomorphism, and the inverse is computed by solving $a\alpha(x)b = y$, which gives $x = \alpha(a^{-1}yb^{-1}) = \alpha(a)^{-1}\alpha(y)\alpha(b)^{-1}$ because $\alpha$ is an automorphism. The coset statement is the abstract one, and it is an identity of maps, so it survives the passage to $\operatorname{Homeo}(G)$.</p>
+<p><strong>Proposition (the composition laws).</strong> For all $a,b,c,d \in G$,</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\,\alpha(d)b}, \qquad
+\Sigma_{a,b}\circ\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{ac,\,db}, \qquad
+\Sigma^{\alpha}_{a,b}\circ\Sigma_{c,d} = \Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b} .
+$$</p>
+<p><strong>Proof.</strong> The computations are those of <em>The Signed Sandwich on a Group</em>; each is performed by inserting $\alpha^2 = \mathrm{id}$ into the middle factor, and the continuity of the operators is already established.</p>
+<p><strong>Corollary.</strong> A product of two signed sandwiches is an unsigned sandwich, a product of an unsigned and a signed sandwich is signed, and the group generated by $\mathfrak{S}$ and $\alpha$ inside $\operatorname{Homeo}(G)$ is $\mathfrak{S} \sqcup \mathfrak{S}\alpha$, of order $2\lvert\mathfrak{S}\rvert$ when $\alpha \notin \mathfrak{S}$ and equal to $\mathfrak{S}$ otherwise. Moreover $\alpha \in \mathfrak{S}$ exactly when $\alpha$ is an inner automorphism.</p>
+<p><strong>Proof.</strong> The coset identity $\mathfrak{S}^\alpha = \mathfrak{S}\alpha$ and the parity of the product are abstract; the last statement is <em>The Signed Sandwich on a Group</em>. The point here is that both families lie in $\operatorname{Homeo}(G)$, so the generated object is a group of homeomorphisms.</p>
+<p><strong>Corollary (degeneracy).</strong> If $\alpha$ is inner then the signed sandwiches are exactly the unsigned ones and the operator adds nothing; the signed family is a genuinely new coset exactly when $\alpha$ is not inner. In particular the signed sandwich collapses to the unsigned one on an abelian group, where every continuous involutive automorphism is either the identity or the inversion, and every such automorphism is inner.</p>
+<p><strong>Proof.</strong> This is the abstract degeneracy, retained verbatim; the topological statement adds only that inner automorphisms are continuous.</p>
+<h2 id="the-reflections-it-realises">The Reflections it Realises</h2>
+<p><strong>Definition.</strong> For $a \in G$ the <strong>signed conjugation</strong> by $a$ is the signed sandwich with $b = a^{-1}$,</p>
+<p>$$
+\rho_a := \Sigma^{\alpha}_{a,\,a^{-1}} : G \longrightarrow G, \qquad \rho_a(x) = a\,\alpha(x)\,a^{-1} .
+$$</p>
+<p><strong>Proposition (its square).</strong> $\rho_a$ is the continuous automorphism $c_a\alpha$, and</p>
+<p>$$
+\rho_a^2 = c_{a\alpha(a)} = \Sigma_{a\alpha(a),\,(a\alpha(a))^{-1}} ,
+$$</p>
+<p>so $\rho_a$ is an involution of the set $G$ exactly when $a\alpha(a) \in Z(G)$.</p>
+<p><strong>Proof.</strong> $\rho_a = c_a\circ\alpha$ is a composite of continuous automorphisms, hence a continuous automorphism; the square is the abstract computation of <em>The Signed Sandwich on a Group</em>, and an inner conjugation is the identity exactly on the central elements.</p>
+<p><strong>Definition.</strong> A <strong>reflection</strong> of the graded topological group $(G,\alpha)$ is a signed conjugation that is an involution, $\rho_a^2 = \mathrm{id}$, equivalently $a\alpha(a) \in Z(G)$.</p>
+<p><strong>Theorem (the reflections are topological involutions).</strong> A reflection $\rho_a$ is a continuous involutive automorphism of $G$; its fixed set</p>
+<p>$$
+\operatorname{Fix}(a) = \{x \in G : \alpha(x) = a^{-1}xa\}
+$$</p>
+<p>is closed, it is a subgroup of $G$ containing $e$, and it is a coset of the fixed subgroup $G^\alpha$ when it is nonempty. Every element of the inverted subgroup $I(\sigma) = G^\alpha$ carries a reflection automatically.</p>
+<p><strong>Proof.</strong> A reflection is a homeomorphism of order two, hence a topological involution in the sense of <em>Involutive Topological Groups</em>, and its fixed set is closed, being the equalizer of the continuous maps $\alpha$ and $c_{a^{-1}}$. That the fixed set is a subgroup and a coset of $G^\alpha$ is the abstract statement of <em>Reflections as Signed Two-Sided Operators on a Group</em>; the closedness is the new ingredient and it is the general theorem on continuous involutions. For $a \in I(\sigma) = G^\alpha$, the dictionary gives $\alpha(a) = a^{-1}$, so $a\alpha(a) = e$ is central and $\rho_a$ is an involution.</p>
+<p><strong>Corollary (the reflections are closed under composition).</strong> The reflections generate a subgroup of $\operatorname{Homeo}(G)$ contained in $\operatorname{Aut}_c(G)$, and the set of reflections that are carried by the elements $a$ with $a\alpha(a)$ central is the union of the cosets $aZ(G)$ for those $a$.</p>
+<p><strong>Proof.</strong> Each reflection is a continuous automorphism, so products are continuous automorphisms; the coset description of the carrying elements is the abstract statement that $\rho_a = \rho_{a'}$ exactly when $a' \in aZ(G)$.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded topological group is a topological group with a continuous involutive automorphism $\alpha$, the grade involution, which is a homeomorphism and acts on the translations by $\alpha L_a\alpha = L_{\alpha(a)}$ and $\alpha R_b\alpha = R_{\alpha(b)}$. The unsigned sandwich $\Sigma_{a,b}(x) = axb$ is a homeomorphism, the map $(a,b)\mapsto\Sigma_{a,b} = L_aR_b$ is a continuous homomorphism onto a subgroup $\mathfrak{S}$ of $\operatorname{Homeo}(G)$ with kernel the anti-diagonal centre, and $\mathfrak{S}$ is compact and closed when $G$ is compact. The signed sandwich $\Sigma^\alpha_{a,b}(x) = a\alpha(x)b$ is the composite $\Sigma_{a,b}\alpha$, hence a homeomorphism, and the signed sandwiches form the coset $\mathfrak{S}^\alpha = \mathfrak{S}\alpha$; they coincide with the unsigned ones exactly when the grade involution is inner, and they collapse on an abelian group. The signed conjugation $\rho_a(x) = a\alpha(x)a^{-1}$ is the continuous automorphism $c_a\alpha$ whose square is the inner conjugation by $a\alpha(a)$, so it is a <strong>reflection</strong>, an involution of the topological group, exactly when $a\alpha(a)$ is central; its fixed set is closed, a subgroup, and a coset of $G^\alpha$ when nonempty, and every element of the inverted subgroup $G^\alpha$ carries a reflection automatically. The degeneracies are the three abstract ones — inner $\alpha$, abelian $G$, and non-central $a\alpha(a)$ — and the topology changes none of them; it adds the closedness of the fixed sets and the topological nature of the operator families.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, a continuous involutive automorphism of $G$</td>
+</tr>
+<tr>
+<td>$\alpha L_a\alpha = L_{\alpha(a)}$, $\alpha R_b\alpha = R_{\alpha(b)}$</td>
+<td>the action of $\alpha$ on the translations</td>
+</tr>
+<tr>
+<td>$\Sigma_{a,b}(x) = axb$</td>
+<td>the unsigned sandwich, a homeomorphism</td>
+</tr>
+<tr>
+<td>$\pi(a,b) = L_aR_b$</td>
+<td>its parametrisation, continuous with kernel the anti-diagonal centre</td>
+</tr>
+<tr>
+<td>$\mathfrak{S} = \{\Sigma_{a,b}\}$</td>
+<td>the subgroup of $\operatorname{Homeo}(G)$ of unsigned sandwiches</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(x) = a\alpha(x)b$</td>
+<td>the signed sandwich, $= \Sigma_{a,b}\alpha$</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d} = \Sigma_{a\alpha(c),\alpha(d)b}$</td>
+<td>the product of two signed sandwiches</td>
+</tr>
+<tr>
+<td>$\mathfrak{S}^{\alpha} = \mathfrak{S}\alpha$</td>
+<td>the signed sandwiches as a coset</td>
+</tr>
+<tr>
+<td>$\alpha \in \mathfrak{S} \iff \alpha$ inner</td>
+<td>degeneracy of the signed family</td>
+</tr>
+<tr>
+<td>$\rho_a = \Sigma^{\alpha}_{a,a^{-1}}(x) = a\alpha(x)a^{-1}$</td>
+<td>the signed conjugation</td>
+</tr>
+<tr>
+<td>$\rho_a^2 = c_{a\alpha(a)}$</td>
+<td>its square; a reflection iff $a\alpha(a) \in Z(G)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(a) = \{x : \alpha(x) = a^{-1}xa\}$</td>
+<td>the fixed set of $\rho_a$, closed</td>
+</tr>
+<tr>
+<td>$G^\alpha = I(\sigma)$</td>
+<td>the fixed subgroup of $\alpha$, the inverted subgroup of $\sigma$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lev S. Pontryagin, <em>Topological Groups</em> (Gordon and Breach, second edition, 1966), for the continuous automorphisms and the compact-open topology on the group of homeomorphisms.</li>
+<li>Karl H. Hofmann and Sidney A. Morris, <em>The Structure of Compact Groups</em> (De Gruyter, third edition, 2013), for the group of continuous automorphisms of a compact group and the conjugation action.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutive automorphisms and the operators built from them.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the sandwich action and the reflections it generates.</li>
+<li>Alexander Arhangel'skii and Mikhail Tkachenko, <em>Topological Groups and Related Structures</em> (Atlantis Press, 2008), for the compact-open topology on $\operatorname{Homeo}(G)$ and the topological automorphism group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

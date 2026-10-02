@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjugate Orthogonality and the Hecke Characters — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conjugate-orthogonality-and-the-hecke-characters"><strong>Conjugate Orthogonality and the Hecke Characters</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hecke character of a number field $K$ is a continuous homomorphism from the idèle class group $C_K=I_K/K^\times$ to the circle group; for $K=\mathbb{Q}$ these are the Dirichlet characters, and in general they are the abelian characters of the arithmetic of $K$. The characters carrying an $L$-function, the orthogonality of the characters under the Hermitian pairing, and the way the conductor of a character enters the functional equation are the subject of this article. The orthogonality is a special case of the Peter–Weyl theory of a locally compact abelian group; the arithmetic content is the conductor-discriminant formula, and the analytic content is the Hecke $L$-function of <em>The Functional Equation and the Conjugate Symmetry of an L-Function</em>. The idèles are as in <em>Adeles and Ideles</em> and the class field theory as in <em>Class Field Theory</em>. Nothing here reads a distance as an object.</p>
+<h2 id="hecke-characters">Hecke Characters</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>Hecke character</strong> (or grossencharacter) of $K$ is a continuous homomorphism
+$$
+\chi:C_K=I_K/K^\times\to\mathbb{T},\qquad \mathbb{T}=\{z\in\mathbb{C}^\times:|z|=1\},
+$$
+equivalently a continuous homomorphism $\chi:I_K\to\mathbb{T}$ trivial on $K^\times$; a <strong>quasi-character</strong> is the same with values in $\mathbb{C}^\times$, and a <strong>Dirichlet character</strong> is the case $K=\mathbb{Q}$.</p>
+<p><strong>Theorem.</strong> The Hecke characters of $K$ form a group under pointwise multiplication, equal to the Pontryagin dual of the compact group $C_K^0$ of idèle classes of norm one times a discrete free part; each character factors as
+$$
+\chi=\prod_{v}\chi_v,
+$$
+a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of which are unramified, and a character is <strong>unramified</strong> at $v$ if $\chi_v$ is trivial on the units $\mathcal{O}_v^\times$.</p>
+<p><strong>Proof.</strong> The idèle class group is a product of the local multiplicative groups modulo the global units; a continuous character of a restricted product of locally compact abelian groups factors as a product of local characters with almost all factors unramified, by the theory of local compact abelian groups in <em>Abstract Harmonic Analysis</em>. The decomposition is the content of the idèle-class version of the Chinese remainder theorem.</p>
+<h3 id="the-local-and-global-conductor">The local and global conductor</h3>
+<p><strong>Definition.</strong> The <strong>conductor</strong> of a Hecke character is the ideal $\mathfrak{f}=\prod_v\mathfrak{p}_v^{a_v}$, where $a_v$ is the smallest integer such that $\chi_v$ is trivial on $1+\mathfrak{p}_v^{a_v}$, together with the archimedean part recording the order of vanishing of $\chi_v$ at the archimedean places; the character is <strong>primitive</strong> if it is not induced from a character of a smaller modulus.</p>
+<p><strong>Theorem.</strong> Every Hecke character is induced from a primitive character of its conductor, and the $L$-function $L(s,\chi)$ attached to a primitive character satisfies an Euler product and a functional equation with conductor $\mathfrak{f}$ and root number $W(\chi)$.</p>
+<p><strong>Proof.</strong> The induction of characters along the norm map of ideals is the standard construction; the Euler product is the multiplicativity of $\chi$, and the functional equation is the completed form of <em>The Functional Equation and the Conjugate Symmetry of an L-Function</em> with the conductor $\mathfrak{f}$ in place of $N$ and the root number in place of the sign.</p>
+<h2 id="conjugate-orthogonality">Conjugate Orthogonality</h2>
+<h3 id="the-general-theory">The general theory</h3>
+<p><strong>Theorem (orthogonality).</strong> Let $G$ be a compact abelian group with normalised Haar measure and dual $\widehat G$. Then
+$$
+\int_G\chi(g)\overline{\psi(g)}\,dg=\delta_{\chi\psi},\qquad \sum_{\chi\in\widehat G}\chi(g)\overline{\chi(h)}=\delta_{gh},
+$$
+where the second identity holds in the appropriate sense for the discrete dual and is the <strong>second orthogonality</strong> relation.</p>
+<p><strong>Proof.</strong> For $\chi\ne\psi$ the function $\chi\overline\psi$ is a nontrivial character and its integral vanishes by the invariance of the measure; for $\chi=\psi$ the integral is $1$. The second relation is the dual statement, in <em>Abstract Harmonic Analysis</em>.</p>
+<p><strong>Definition.</strong> The <strong>conjugate orthogonality pairing</strong> on the Hecke characters is the Hermitian form
+$$
+\langle\chi,\psi\rangle=\lim_{T\to\infty}\frac{1}{T}\int_{C_K^T}\chi\,\overline\psi\,d\mu ,
+$$
+the limit over the growing compact subgroups $C_K^T$ of the idèle class group; it is well defined on the characters of bounded conductor and it is $\delta_{\chi\psi}$.</p>
+<p><strong>Theorem.</strong> For Hecke characters of bounded conductor the conjugate orthogonality holds, and for the Dirichlet characters modulo $q$ it specialises to
+$$
+\frac{1}{\varphi(q)}\sum_{a\in(\mathbb{Z}/q)^\times}\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}.
+$$</p>
+<p><strong>Proof.</strong> The first statement is the orthogonality applied to the compact group $(C_K)_T$ and the passage to the limit; the specialisation is the identification of the Dirichlet characters with the characters of $(\mathbb{Z}/q)^\times$ and the orthogonality of the finite abelian group, in <em>Algebraic Number Theory</em>.</p>
+<h3 id="the-conductor-discriminant-formula">The conductor-discriminant formula</h3>
+<p><strong>Theorem (conductor-discriminant formula).</strong> For an abelian extension $L/K$ with Galois group $\operatorname{Gal}(L/K)$ and group of characters $\widehat G$,
+$$
+\mathfrak{d}_{L/K}=\prod_{\chi\in\widehat G}\mathfrak{f}(\chi),\qquad \operatorname{disc}(L/K)=\prod_{\chi}\operatorname{disc}(\chi),
+$$
+the discriminant of the extension being the product of the conductors of its characters.</p>
+<p><strong>Proof.</strong> The discriminant is the product of the local discriminants, and each local discriminant is the product of the local conductors of the characters of the local Galois group; summing over the places and using the orthogonality of the characters to distribute the factors gives the formula. This is the Führerdiskriminantenproduktformel of <em>Algebraic Number Theory</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the Dirichlet characters).</strong> For $q$ prime the group $(\mathbb{Z}/q)^\times$ is cyclic of order $q-1$ and the orthogonality is the discrete Fourier transform on a cyclic group; the Dirichlet characters are the Hecke characters of $\mathbb{Q}$ of conductor $q$.</p>
+<p><strong>Example (a quadratic character).</strong> The nontrivial character modulo $q$ of order $2$ is real, $\chi=\bar\chi$, its conductor is the discriminant of the quadratic field, and the conductor-discriminant formula gives the discriminant of $\mathbb{Q}(\sqrt{d})$ as the conductor of the character.</p>
+<p><strong>Example (a grossencharacter of an imaginary quadratic field).</strong> The Hecke characters of $\mathbb{Q}(i)$ of conductor $1$ are the powers of the character $z\mapsto z/|z|$ on the idèle class group; their $L$-functions are the Hecke $L$-functions of the Gaussian integers.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The orthogonality fails in four degenerate configurations. First, for characters of unbounded conductor the limit in the pairing does not exist and the orthogonality must be read locally; the space of all Hecke characters is not compactly generated by a single orthonormal basis. Second, at the archimedean places the character is not of finite order, so the "conductor" has an archimedean component that is not an ideal; the orthogonality is then with respect to the archimedean unitary representation, not a finite sum. Third, the conjugate orthogonality for the quasi-characters with values in $\mathbb{C}^\times$ is not Hermitian and the pairing must be replaced by a sesquilinear one with a growth condition. Fourth, the nonabelian generalisation replaces the characters by the automorphic representations, and the orthogonality by the Arthur–Selberg trace formula; the abelian statement of this article is the boundary case of the general theory of <em>The Langlands Program</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hecke character of a number field is a continuous homomorphism from the idèle class group to the circle group, factoring as a product of local characters; for $\mathbb{Q}$ these are the Dirichlet characters. The characters satisfy the conjugate orthogonality $\langle\chi,\psi\rangle=\delta_{\chi\psi}$, which specialises for the Dirichlet characters modulo $q$ to $\frac1{\varphi(q)}\sum_a\chi(a)\overline{\psi(a)}=\delta_{\chi\psi}$, and the arithmetic content of the pairing is the conductor-discriminant formula, $\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$, which expresses the discriminant of an abelian extension as the product of the conductors of its characters. The degenerate cases are the characters of unbounded conductor, the archimedean ramification, the quasi-characters and the nonabelian generalisation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_K=I_K/K^\times$</td>
+<td>Idèle class group</td>
+</tr>
+<tr>
+<td>$\chi:C_K\to\mathbb{T}$</td>
+<td>Hecke character</td>
+</tr>
+<tr>
+<td>$\chi=\prod_v\chi_v$</td>
+<td>Local factorisation</td>
+</tr>
+<tr>
+<td>$\mathfrak{f}(\chi)$</td>
+<td>Conductor</td>
+</tr>
+<tr>
+<td>$L(s,\chi)$</td>
+<td>Hecke $L$-function</td>
+</tr>
+<tr>
+<td>$W(\chi)$</td>
+<td>Root number</td>
+</tr>
+<tr>
+<td>$\langle\chi,\psi\rangle=\delta_{\chi\psi}$</td>
+<td>Conjugate orthogonality</td>
+</tr>
+<tr>
+<td>$\mathfrak{d}_{L/K}=\prod_\chi\mathfrak{f}(\chi)$</td>
+<td>Conductor-discriminant formula</td>
+</tr>
+<tr>
+<td>$\widehat G$</td>
+<td>Dual group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Tate, <em>Fourier Analysis in Number Fields and Hecke's Zeta-Functions</em> (thesis, Princeton, 1950), for the Hecke characters and their $L$-functions.</li>
+<li>John Cassels and Albrecht Fröhlich, <em>Algebraic Number Theory</em> (Academic Press, 1967), for the conductor-discriminant formula and the class field theory.</li>
+<li>Jürgen Neukirch, <em>Algebraic Number Theory</em> (Springer, 1999), for the Hecke characters and the idèle class group.</li>
+<li>Edwin Hewitt and Kenneth Ross, <em>Abstract Harmonic Analysis</em> (Springer, 1963), for the orthogonality and the duality of locally compact abelian groups.</li>
+<li>Jean-Pierre Serre, <em>Abelian $\ell$-adic Representations and Elliptic Curves</em> (Benjamin, 1968), for the correspondence with the Galois characters.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conjugation Representation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-conjugation-representation"><strong>The Conjugation Representation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The assignment that sends an element $g$ to the inner automorphism $c_g$ is a homomorphism from the group into its own automorphism group. This article treats that homomorphism as a representation: it fixes its kernel and its image, so that the inner automorphisms are a quotient of the group by its centre; it separates the inner automorphisms from the outer ones, which are the quotient by the inner ones; and it follows the representation to the action of the automorphism group on the set of conjugacy classes, which is the one place where the outer automorphisms are visible as permutations.</p>
+<p>The article assumes the definition of the automorphism group and the centre from <em>Groups</em>, the automorphism group of a structure, its inner automorphisms and the identity $\operatorname{Inn}(G)\cong G/Z(G)$ from <em>Transformation Groups</em>, and the inner conjugation operator $c_g$, its composition law and the conjugacy classes from <em>Inner Conjugation and the Class Operator</em>. The action of the group on itself by conjugation is <em>The Action of a Group on Itself</em>; the linearisation of the representation on the group algebra is mentioned only to be pointed at. No distance, no norm and no form is used.</p>
+<h2 id="the-representation">The Representation</h2>
+<p><strong>Definition.</strong> The <strong>conjugation representation</strong> of $G$ is</p>
+<p>$$
+\rho : G \longrightarrow \operatorname{Aut}(G), \qquad \rho(g) = c_g, \quad c_g(x)=gxg^{-1}.
+$$</p>
+<p><strong>Proposition.</strong> $\rho$ is a homomorphism of groups, with</p>
+<p>$$
+\ker\rho = Z(G), \qquad \operatorname{im}\rho = \operatorname{Inn}(G), \qquad \operatorname{Inn}(G) \cong G/Z(G).
+$$</p>
+<p><strong>Proof.</strong> The composition law $c_gc_h=c_{gh}$ and $c_e=\mathrm{id}$ from <em>Inner Conjugation and the Class Operator</em> say that $\rho$ is a homomorphism. An element $g$ lies in the kernel exactly when $gxg^{-1}=x$ for every $x$, which is $g\in Z(G)$. The image is by definition the group of inner automorphisms, and the isomorphism is the first isomorphism theorem. The identity $\operatorname{Inn}(G)\cong G/Z(G)$ is also stated in <em>Transformation Groups</em>, where the conjugation action is introduced.</p>
+<p><strong>Corollary (faithfulness).</strong> The conjugation representation is injective exactly when $Z(G)=\{e\}$; in that case $G$ is isomorphic to its group of inner automorphisms.</p>
+<p><strong>Proof.</strong> Immediate from the kernel statement.</p>
+<p><strong>Remark.</strong> The representation is the discrete form of the adjoint representation of a Lie group; here it is a homomorphism of abstract groups, and no differentiability is involved. The linearisation of the representation, in which the group algebra is acted on by the inner automorphisms of the algebra induced by the units of $G$, is <em>Group Algebras</em> together with the representation theory of the later parts.</p>
+<h2 id="inner-and-outer-automorphisms">Inner and Outer Automorphisms</h2>
+<p><strong>Definition.</strong> The <strong>outer automorphism group</strong> of $G$ is the quotient</p>
+<p>$$
+\operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G).
+$$</p>
+<p>Its elements are the <strong>outer automorphisms</strong>: they are cosets of inner automorphisms, and no single representative of a nontrivial coset is itself inner.</p>
+<p><strong>Proposition (normality).</strong> $\operatorname{Inn}(G)$ is a normal subgroup of $\operatorname{Aut}(G)$. Indeed, for $\varphi\in\operatorname{Aut}(G)$ and $g\in G$,</p>
+<p>$$
+\varphi\, c_g\, \varphi^{-1} = c_{\varphi(g)} .
+$$</p>
+<p><strong>Proof.</strong> For every $x$, $(\varphi c_g \varphi^{-1})(x) = \varphi\bigl(g\,\varphi^{-1}(x)\,g^{-1}\bigr) = \varphi(g)\,x\,\varphi(g)^{-1} = c_{\varphi(g)}(x)$, using the multiplicativity of $\varphi$ and $\varphi^{-1}$. The right-hand side is inner, so the conjugate of an inner automorphism is inner.</p>
+<p><strong>Proposition (the two exact sequences).</strong> There are exact sequences of groups</p>
+<p>$$
+1 \longrightarrow Z(G) \longrightarrow G \xrightarrow{\ \rho\ } \operatorname{Aut}(G) \longrightarrow \operatorname{Out}(G) \longrightarrow 1 ,
+$$</p>
+<p>and, if $\operatorname{Inn}(G)$ is identified with $G/Z(G)$,</p>
+<p>$$
+1 \longrightarrow \operatorname{Inn}(G) \longrightarrow \operatorname{Aut}(G) \longrightarrow \operatorname{Out}(G) \longrightarrow 1 .
+$$</p>
+<p><strong>Proof.</strong> The kernel of $\rho$ is $Z(G)$ and its image is $\operatorname{Inn}(G)$; the quotient map $\operatorname{Aut}(G)\to\operatorname{Out}(G)$ is surjective with kernel $\operatorname{Inn}(G)$. Gluing the two statements at $\operatorname{Inn}(G)$ gives the first sequence, and the second is the definition of $\operatorname{Out}(G)$.</p>
+<p><strong>Corollary (the semidirect decomposition when the centre is trivial).</strong> If $Z(G)=\{e\}$ then $G\cong\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$, so $G$ sits inside its automorphism group as a normal subgroup, and $\operatorname{Aut}(G)$ is an extension of $\operatorname{Out}(G)$ by $G$.</p>
+<p><strong>Proof.</strong> The isomorphism $G\cong\operatorname{Inn}(G)$ is the corollary on faithfulness, normality is the proposition above, and an extension is a group with a normal subgroup and a quotient, which is what the second exact sequence exhibits. Whether the extension splits is a question about the existence of a complement; the semidirect products themselves are <em>Generators, Presentations and Free Products</em>, and the cohomological obstruction to splitting is <em>Group Cohomology</em>.</p>
+<p>The inner automorphisms are those that come from elements; the outer ones measure what is left when they are divided out. The quotient is trivial exactly when every automorphism is inner, and this is the property that makes a group <strong>complete</strong> — centreless with all automorphisms inner — a notion that recurs in the study of the symmetric groups and is not pursued here.</p>
+<h2 id="the-action-on-the-conjugacy-classes">The Action on the Conjugacy Classes</h2>
+<p>Every automorphism carries a conjugacy class to a conjugacy class, so the automorphism group acts on the set of classes.</p>
+<p><strong>Proposition (the action is well defined).</strong> For $\varphi\in\operatorname{Aut}(G)$ and $x\in G$,</p>
+<p>$$
+\varphi\bigl(\chi(x)\bigr) = \chi\bigl(\varphi(x)\bigr),
+$$</p>
+<p>so $\varphi$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{Sym}(\operatorname{Cl}(G))$ is an action.</p>
+<p><strong>Proof.</strong> For $g\in G$, $\varphi(gxg^{-1}) = \varphi(g)\varphi(x)\varphi(g)^{-1}$, so the image of the class of $x$ is the class of $\varphi(x)$. The assignment is compatible with composition and sends the identity to the identity, hence is an action in the sense of <em>Transformation Groups</em>.</p>
+<p><strong>Proposition (the kernel of the action on the classes).</strong> Let</p>
+<p>$$
+K = \{\varphi\in\operatorname{Aut}(G) : \varphi(x) \text{ is conjugate to } x \text{ for every } x\} .
+$$</p>
+<p>Then $K$ is a normal subgroup of $\operatorname{Aut}(G)$, it contains $\operatorname{Inn}(G)$, and it is the kernel of the action of $\operatorname{Aut}(G)$ on $\operatorname{Cl}(G)$. Hence the action factors through $\operatorname{Aut}(G)/K$, and $\operatorname{Out}(G)$ maps onto that quotient with kernel $K/\operatorname{Inn}(G)$.</p>
+<p><strong>Proof.</strong> The set $K$ is the kernel of a homomorphism, hence normal. An inner automorphism carries $x$ to $gxg^{-1}$, which is conjugate to $x$ by definition, so $\operatorname{Inn}(G)\subseteq K$. Conversely a representative of the kernel carries every $x$ to a conjugate, so it lies in $K$. The factorisation is the first isomorphism theorem applied to the action, and the identification of the quotient $\operatorname{Out}(G)/(K/\operatorname{Inn}(G))$ with $\operatorname{Aut}(G)/K$ is the third isomorphism theorem. The automorphisms in $K$ are the <strong>class-preserving</strong> automorphisms.</p>
+<p><strong>Corollary (the group acts trivially on its own classes).</strong> The restriction of the action to the inner automorphisms is trivial: for every $g$ and every class $\chi$, $c_g(\chi)=\chi$. Consequently the conjugation action of $G$ on $\operatorname{Cl}(G)$ factors through the trivial action, and it is the outer automorphisms that permute the classes nontrivially.</p>
+<p><strong>Proof.</strong> By the first of the two propositions above with $\varphi=c_g$, the image of $\chi(x)$ is $\chi(gxg^{-1})=\chi(x)$, because $gxg^{-1}$ is conjugate to $x$. So each $c_g$ fixes every class, and the action of $G$ through $\rho$ is trivial. The action of $\operatorname{Aut}(G)$ is the only one that can move a class, and it does so through the quotient $\operatorname{Aut}(G)/K$.</p>
+<p>The corollary is the sense in which the outer automorphisms are invisible in the group's own conjugation and visible only in its symmetries: an inner automorphism cannot move a class, because moving a class requires leaving the group, and an automorphism that is class-preserving cannot move it either. The class-preserving automorphisms can be strictly larger than the inner ones, and then the action carries strictly less information than $\operatorname{Out}(G)$; the general study of that gap is a theorem of the finite-group literature and is cited rather than reproduced.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>conjugation representation</strong> is the homomorphism $\rho : G\to\operatorname{Aut}(G)$, $\rho(g)=c_g$, $c_g(x)=gxg^{-1}$. Its kernel is the centre and its image is the group of inner automorphisms, so $\operatorname{Inn}(G)\cong G/Z(G)$ and the representation is faithful exactly when $Z(G)$ is trivial. The inner automorphisms are normal in $\operatorname{Aut}(G)$, because $\varphi c_g\varphi^{-1}=c_{\varphi(g)}$; the quotient is the <strong>outer automorphism group</strong> $\operatorname{Out}(G)=\operatorname{Aut}(G)/\operatorname{Inn}(G)$, and the two fit the exact sequences $1\to Z(G)\to G\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$ and $1\to\operatorname{Inn}(G)\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$. When the centre is trivial, $G\cong\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$ and $\operatorname{Aut}(G)$ is an extension of $\operatorname{Out}(G)$ by $G$.</p>
+<p>Every automorphism permutes the conjugacy classes, $\varphi(\chi(x))=\chi(\varphi(x))$, so $\operatorname{Aut}(G)$ acts on the set of classes; the kernel of that action is the normal subgroup $K$ of <strong>class-preserving</strong> automorphisms, which contains $\operatorname{Inn}(G)$. The group $G$ itself acts trivially on its own classes, since each inner automorphism fixes every class, and the nontrivial part of the action is carried by $\operatorname{Aut}(G)/K$, a quotient of $\operatorname{Out}(G)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho : G\to\operatorname{Aut}(G)$</td>
+<td>the conjugation representation, $\rho(g)=c_g$</td>
+</tr>
+<tr>
+<td>$c_g(x)=gxg^{-1}$</td>
+<td>the inner conjugation by $g$</td>
+</tr>
+<tr>
+<td>$Z(G)$</td>
+<td>the centre, the kernel of $\rho$</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(G)$</td>
+<td>the inner automorphisms, the image of $\rho$; $\operatorname{Inn}(G)\cong G/Z(G)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Out}(G)=\operatorname{Aut}(G)/\operatorname{Inn}(G)$</td>
+<td>the outer automorphism group</td>
+</tr>
+<tr>
+<td>$1\to Z(G)\to G\to\operatorname{Aut}(G)\to\operatorname{Out}(G)\to1$</td>
+<td>the exact sequence of the representation</td>
+</tr>
+<tr>
+<td>$\operatorname{Cl}(G)$</td>
+<td>the set of conjugacy classes of $G$</td>
+</tr>
+<tr>
+<td>$\varphi(\chi(x))=\chi(\varphi(x))$</td>
+<td>the action of an automorphism on the classes</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>the class-preserving automorphisms, the kernel of the action on $\operatorname{Cl}(G)$</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>centreless with every automorphism inner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for the inner automorphism group, its normality and the exact sequences of the automorphism group.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for $\operatorname{Inn}(G)\cong G/Z(G)$, the outer automorphism group and the automorphisms of the standard families.</li>
+<li>I. Martin Isaacs, <em>Finite Group Theory</em> (American Mathematical Society, Graduate Studies in Mathematics 92, 2008), for class-preserving automorphisms and their relation to the inner ones in a finite group.</li>
+<li>G. E. Wall, "Finite groups with class-preserving outer automorphisms", <em>Journal of the London Mathematical Society</em> <strong>22</strong> (1947), 315–320, for the existence of class-preserving automorphisms outside the inner ones.</li>
+<li>John D. Dixon and Brian Mortimer, <em>Permutation Groups</em> (Springer, Graduate Texts in Mathematics 163, 1996), for the automorphism group acting on the conjugacy classes and the completeness of the symmetric groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthomodular Lattices — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="orthomodular-lattices"><strong>Orthomodular Lattices</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>orthomodular lattice</strong> is an ortholattice in which the orthocomplement and the order are linked
+by one further law, the <strong>orthomodular law</strong>: whenever $x \leq y$, the element $y$ is recovered from
+$x$ and $x^{\perp}$ by</p>
+<p>$$
+y = x \vee (x^{\perp} \wedge y) .
+$$</p>
+<p>The law is a one-sided form of the modular law, and it is the exact amount of modularity that the
+orthocomplement can supply. This article develops it: it defines the law, proves its equivalence with
+two other forms, shows that it is self-dual, and proves that a <strong>modular</strong> ortholattice is
+orthomodular, so the orthomodular law is the weak form of modularity that remains available once a
+lattice is read with an involution. It then turns to the failure of distributivity: a distributive
+orthomodular lattice is a Boolean algebra, and the smallest non-distributive example is the six-element
+lattice $M_4$, whose four atoms are paired by the orthocomplement. The standard infinite example, the
+<strong>projection lattice</strong> of a Hilbert space, is named and deferred to Part II.</p>
+<p>The article presupposes <em>Order Theory and Lattices</em> — posets, lattices, bounded, complete,
+distributive and modular lattices, and the Boolean lattice — and <em>Orthocomplemented Lattices and the
+Involution</em>, which precedes it in this group and supplies the ortholattice, the De Morgan laws and the
+failure of the complement. The <strong>Boolean</strong> case and the involutive Boolean algebra are <em>Boolean
+Algebras with an Involution</em>, later in this group, and the general Boolean algebra is <em>Boolean Algebras
+and Lattices</em>, in Part V; both are named only. The <strong>projection lattice</strong> of a Hilbert space is a
+forward reference to Part II and is not defined or used.</p>
+<p>Three boundaries are observed. No <strong>topology</strong> is used, and no <strong>form</strong> is formed: the projection
+lattice is named only, the orthogonal complement is the name of an involution on it, and nothing is
+measured with an inner product. No <strong>measure</strong> and no probability is used; the logical reading of the
+lattice is <em>Logic and Proof</em> in Part 0 and <em>Effect Algebras and Orthomodular Lattices</em> in Part V, and
+neither is used here. The adjoint of an operator, and the involution on the operator layer, belong to
+the <code>* Operator Theory</code> group of this category and are named only.</p>
+<h2 id="the-orthomodular-law">The Orthomodular Law</h2>
+<h3 id="definition-and-equivalent-forms">Definition and Equivalent Forms</h3>
+<p>Let $L$ be an ortholattice.</p>
+<p><strong>Definition.</strong> $L$ is <strong>orthomodular</strong> if</p>
+<p>$$
+x \leq y \quad\Longrightarrow\quad y = x \vee (x^{\perp} \wedge y) \qquad \text{for all } x, y \in L .
+$$</p>
+<p>An <strong>orthomodular lattice</strong> is an ortholattice satisfying this law.</p>
+<p><strong>Proposition.</strong> The following are equivalent for an ortholattice:</p>
+<ol>
+<li>$x \leq y \Rightarrow y = x \vee (x^{\perp} \wedge y)$ for all $x, y$;</li>
+<li>$x \vee (x^{\perp} \wedge (x \vee y)) = x \vee y$ for all $x, y$.</li>
+</ol>
+<p><strong>Proof.</strong> (1) $\Rightarrow$ (2): apply (1) to the pair $x \leq x \vee y$, for which the right side
+reads $x \vee (x^{\perp} \wedge (x \vee y))$ and the left side $x \vee y$. (2) $\Rightarrow$ (1): if $x
+\leq y$ then $x \vee y = y$, and (2) reads $y = x \vee (x^{\perp} \wedge y)$.</p>
+<p><strong>Remark.</strong> The law is equivalently the statement that the inequality $x \vee (x^{\perp} \wedge y)
+\leq y$, which holds for all $x \leq y$ because both $x$ and $x^{\perp} \wedge y$ are below $y$, is
+always an equality. In the modular law the same identity holds with an arbitrary $z$ in place of
+$x^{\perp}$; the orthomodular law is the one instance of it that the complement permits, and the next
+subsection makes the implication precise.</p>
+<p><strong>Theorem (self-duality).</strong> The dual of an orthomodular lattice, in which the order and the two
+operations are reversed and the orthocomplement is kept, is orthomodular with the same orthocomplement.
+The dual form of the law is</p>
+<p>$$
+x \geq y \quad\Longrightarrow\quad y = x \wedge (x^{\perp} \vee y) \qquad \text{for all } x, y \in L .
+$$</p>
+<p><strong>Proof.</strong> Taking the order-dual of the identity $y = x \vee (x^{\perp} \wedge y)$ and exchanging the
+names of $x$ and $y$ gives the displayed law; the orthocomplement is unchanged because it is an
+order-reversing involution, which is the same condition in the opposite order. So the class of
+orthomodular lattices is closed under duality.</p>
+<p>The law says exactly that the inequality that always holds is an equality: for $x \leq y$ one has $x
+\vee (x^{\perp} \wedge y) \leq y$ by the two joins, and orthomodularity is the statement that the
+opposite inequality also holds. In the modular law the same identity holds with an arbitrary $z$ in
+place of $x^{\perp}$, and the orthomodular law is the one instance of it that the complement permits.</p>
+<h3 id="modularity-implies-orthomodularity">Modularity Implies Orthomodularity</h3>
+<p><strong>Theorem.</strong> Every modular ortholattice is orthomodular.</p>
+<p><strong>Proof.</strong> Let $L$ be a modular ortholattice and let $x \leq y$. Applying the modular law to the
+instances $x$, $y$ and $z = x^{\perp}$, which one may do because $x \wedge z = 0$ and $x \vee z = 1$,</p>
+<p>$$
+y = y \wedge (x \vee x^{\perp}) = x \vee (y \wedge x^{\perp}),
+$$</p>
+<p>so the orthomodular law holds.</p>
+<p>The converse fails: the projection lattice of a Hilbert space of dimension at least two is
+orthomodular and not modular, as the next section records and Part II proves. So orthomodularity is the
+weak form of modularity, and it is the form that the orthocomplement forces.</p>
+<h2 id="the-failure-of-distributivity">The Failure of Distributivity</h2>
+<h3 id="distributive-orthomodular-lattices-are-boolean">Distributive Orthomodular Lattices are Boolean</h3>
+<p><strong>Theorem.</strong> An orthomodular lattice is distributive if and only if it is a Boolean algebra.</p>
+<p><strong>Proof.</strong> A Boolean algebra is distributive by definition, so one direction is immediate. Conversely,
+if $L$ is distributive then it is a complemented distributive lattice, its orthocomplement being a
+complement of every element, and every complemented distributive lattice is a Boolean algebra by <em>Order
+Theory and Lattices</em>.</p>
+<p>So a non-Boolean orthomodular lattice fails distributivity. The smallest such lattice is found among
+the small ortholattices.</p>
+<h3 id="the-smallest-non-distributive-example">The Smallest Non-Distributive Example</h3>
+<p><strong>Example ($M_4$).</strong> Let $M_4$ be the lattice with bottom $0$, top $1$ and four pairwise incomparable
+atoms $a, b, c, d$. Define $a^{\perp} = b$, $b^{\perp} = a$, $c^{\perp} = d$, $d^{\perp} = c$, and
+$0^{\perp} = 1$, $1^{\perp} = 0$. This is an orthocomplement: it is an order-reversing involution, and
+every atom is disjoint from its image with join $1$. The lattice is orthomodular, because the only
+pairs $x \leq y$ are those with $x = 0$, with $x = y$, or with $y = 1$, and in each case the law
+reduces to an identity. It is modular and it is not distributive: $a \wedge (b \vee c) = a$ while $(a
+\wedge b) \vee (a \wedge c) = 0$. So $M_4$ is a modular, non-distributive orthomodular lattice with
+six elements. It is the smallest non-Boolean orthomodular lattice: a nondegenerate ortholattice has
+even cardinality, so the two-element and four-element cases are $B_1$ and $B_2$ and are Boolean, and
+$M_4$ is a non-Boolean orthomodular lattice on six elements, which an exhaustive check of the six-
+element lattices confirms.</p>
+<p><strong>Example (the Boolean lattices).</strong> Every Boolean lattice is an orthomodular lattice, its
+orthocomplement being the Boolean complement; the smallest is $B_2$, the four-element lattice. The
+Boolean orthomodular lattices are exactly the distributive ones by the theorem above, so the examples
+of the non-distributive behaviour provable without a topology are the $M_n$ with $n$ even and $n \geq
+4$, of which $M_4$ is the smallest, and their subortholattices.</p>
+<h2 id="the-projection-lattice-of-a-hilbert-space">The Projection Lattice of a Hilbert Space</h2>
+<p>The standard example of an orthomodular lattice is the family of closed subspaces of a Hilbert space,
+ordered by inclusion, with the <strong>orthogonal complement</strong> as the orthocomplement and the closed span as
+the join. The structure is a <strong>complete</strong> orthomodular lattice; it is not distributive when the
+dimension is at least two, and it is not modular; and the elements of its associated operator layer are
+the projections. The Hilbert space, its inner product and the orthogonal complement are Part II, and
+this article names the lattice only: the definition of the space, of the complement, and the proof that
+the lattice is orthomodular and not distributive are met when Part II reaches them, and nothing of the
+kind is used or computed here.</p>
+<p>The projection lattice is the reason the notion is studied at all: it is the instance in which
+orthomodularity is the natural axiom, and it is non-Boolean, so no amount of distributivity is
+available there. Its place in the corpus is fixed by this paragraph and its content is deferred.</p>
+<h2 id="summary">Summary</h2>
+<p>An orthomodular lattice is an ortholattice in which $x \leq y$ implies $y = x \vee (x^{\perp} \wedge
+y)$. The law is equivalent to $x \vee (x^{\perp} \wedge (x \vee y)) = x \vee y$, and it says that the
+inequality $x \vee (x^{\perp} \wedge y) \leq y$, which always holds for $x \leq y$, is an equality; it
+is self-dual, so the class is closed under duality; and every modular ortholattice is orthomodular,
+with the orthomodular law the one instance of the modular law that the complement forces.</p>
+<p>An orthomodular lattice is distributive if and only if it is a Boolean algebra. The smallest
+non-distributive orthomodular lattice is $M_4$, with six elements, whose four atoms are paired by the
+orthocomplement; it is modular and not distributive. The standard infinite example is the projection
+lattice of a Hilbert space, complete, orthomodular, non-modular and non-distributive, which is a
+forward reference to Part II and is not defined or used here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L$</td>
+<td>An ortholattice, with orthocomplement ${}^{\perp}$</td>
+</tr>
+<tr>
+<td>orthomodular law</td>
+<td>$x \leq y \Rightarrow y = x \vee (x^{\perp} \wedge y)$</td>
+</tr>
+<tr>
+<td>$M_n$</td>
+<td>The lattice with bottom, top and $n$ pairwise incomparable atoms</td>
+</tr>
+<tr>
+<td>$M_4$</td>
+<td>The six-element lattice with four atoms, the smallest non-distributive orthomodular lattice</td>
+</tr>
+<tr>
+<td>$B_2$</td>
+<td>The four-element Boolean lattice, the smallest orthomodular lattice</td>
+</tr>
+<tr>
+<td>projection lattice</td>
+<td>The lattice of closed subspaces of a Hilbert space, deferred to Part II</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gudrun Kalmbach, <em>Orthomodular Lattices</em> (Academic Press, 1983), for the orthomodular law, its equivalent forms and the structure theory of orthomodular lattices.</li>
+<li>Garrett Birkhoff, <em>Lattice Theory</em>, 3rd ed. (American Mathematical Society, 1967), for modular and distributive laws, the Boolean algebras and the complement in a bounded lattice.</li>
+<li>László Fuchs, <em>Partially Ordered Algebraic Systems</em> (Pergamon Press, 1963), for orthomodular posets and their relation to the modular law.</li>
+<li>Peter D. Finch, "On the structure of orthomodular lattices", <em>Journal of Symbolic Logic</em> <strong>32</strong> (1967), 402–403, for the failure of distributivity and the place of the modular case.</li>
+<li>Richard J. Greechie, "Hypergraphic orthomodular lattices", <em>Journal of Combinatorial Theory Series A</em> <strong>10</strong> (1971), 119–132, for the construction of orthomodular lattices from combinatorial data.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

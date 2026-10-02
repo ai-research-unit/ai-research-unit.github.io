@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Graded Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-graded-algebra"><strong>The Signed Sandwich on a Graded Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $A$ be an associative algebra with a $\mathbb{Z}/2$-grading, $A=A^0\oplus A^1$, and let $\alpha$ be its <strong>grade involution</strong>, the algebra automorphism acting by $(-1)^k$ on the homogeneous part $A^k$. For a pair of elements $a,b$ the <strong>unsigned sandwich</strong> is the operator $x\mapsto axb$, and the <strong>signed sandwich</strong> is the operator</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b,
+$$</p>
+<p>the two-sided multiplication with the argument twisted by $\alpha$. This article is the operator layer of the graded algebra: it defines the two sandwiches, computes their composition law, relates them through the grade involution, reads their parity and their invertibility, and examines when a signed sandwich is an involution, which is the algebraic form in which the reflections of a Clifford algebra appear. The graded algebra, the sign rule and the parity are the subject of <em>Superalgebras and Graded Structures</em> and are cited; the realisation of the reflections by the signed sandwiches, the one-sided signed operator and the graded action on a module are the companion entries <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em>, <em>The Signed Left Multiplication on a Graded Algebra</em> and <em>The Graded Action on a Module over a Graded Algebra</em>; the adjoints of these operators belong to the <code>- * Operator Theory</code> group and are deferred.</p>
+<p>The base is a commutative ring $R$ with $1$; when invertibility is needed a field $K$ is used, and the algebra is written $A$ with homogeneous parts $A^0,A^1$. The grade involution is $\alpha$, the unsigned sandwich $\Sigma_{a,b}$, the signed sandwich $\Sigma^{\alpha}_{a,b}$, and the left multiplication by $a$ is $L_a$. The article reasons with the ring structure and the grading only.</p>
+<h2 id="the-two-sandwiches">The Two Sandwiches</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> For elements $a,b\in A$ the <strong>unsigned sandwich</strong> is</p>
+<p>$$
+\Sigma_{a,b}:A\longrightarrow A,\qquad \Sigma_{a,b}(x)=axb,
+$$</p>
+<p>and the <strong>signed sandwich</strong> is</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}:A\longrightarrow A,\qquad \Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b .
+$$</p>
+<p>Both are $R$-linear, and $\Sigma^{\alpha}_{a,b}$ differs from $\Sigma_{a,b}$ by the twist of the argument by the grade involution.</p>
+<p><strong>Proposition.</strong> The signed sandwich factors through the unsigned one and the grade involution:</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}=\Sigma_{a,b}\circ\alpha=L_a\circ\alpha\circ R_b .
+$$</p>
+<p><strong>Proof.</strong> Both sides send $x$ to $a\alpha(x)b$. $\square$</p>
+<p><strong>Corollary.</strong> Since $\alpha$ is an algebra automorphism and additive, the map $\Sigma_{a,b}\mapsto\Sigma^{\alpha}_{a,b}$ is an involutive transformation of the set of unsigned sandwiches, and the signed sandwich is unsigned exactly when $\alpha(x)=x$ on the elements that matter, in particular when $\alpha=\mathrm{id}$, that is when $A^1=0$.</p>
+<h3 id="composition-and-invertibility">Composition and Invertibility</h3>
+<p><strong>Theorem.</strong> The signed sandwiches compose by</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\,\alpha(c),\ \alpha(d)\,b},
+$$</p>
+<p>and the unsigned sandwiches compose by $\Sigma_{a,b}\circ\Sigma_{c,d}=\Sigma_{ac,db}$.</p>
+<p><strong>Proof.</strong> For the signed case, $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{c,d}(x))=a\,\alpha(c\alpha(x)d)\,b=a\,\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)\,b=a\alpha(c)\,x\,\alpha(d)\,b=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}(x)$, using $\alpha^2=\mathrm{id}$ and the multiplicativity of $\alpha$. The unsigned case is associativity. $\square$</p>
+<p><strong>Corollary.</strong> The signed sandwiches form a monoid under composition, with unit $\Sigma^{\alpha}_{1,1}$; the unsigned sandwiches form a monoid with unit $\Sigma_{1,1}$. The product of two signed sandwiches is a signed sandwich, not an unsigned one; the product of a signed and an unsigned sandwich is a signed sandwich, and the unsigned part is a submonoid.</p>
+<p><strong>Theorem.</strong> The signed sandwich $\Sigma^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1}=\Sigma^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})} .
+$$</p>
+<p><strong>Proof.</strong> Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is a unit, and right multiplication by $b$ is invertible, so $b$ is a unit. $\square$</p>
+<h2 id="the-parity-of-the-sandwiches">The Parity of the Sandwiches</h2>
+<p><strong>Definition.</strong> The algebra $A$ is $\mathbb{Z}/2$-graded; an element is <strong>homogeneous</strong> of degree $|a|\in\mathbb{Z}/2$ when it lies in $A^{|a|}$. The grade involution acts on homogeneous elements by $\alpha(a)=(-1)^{|a|}a$.</p>
+<p><strong>Proposition.</strong> If $a$ and $b$ are homogeneous of degrees $|a|,|b|$, then $\Sigma_{a,b}$ and $\Sigma^{\alpha}_{a,b}$ map $A^k$ to $A^{k+|a|+|b|}$; the sign of the twist is $(-1)^k$ on $A^k$.</p>
+<p><strong>Proof.</strong> The left multiplication by $a$ shifts the degree by $|a|$, the right by $|b|$; the twist multiplies by $(-1)^k$ on $A^k$. $\square$</p>
+<p><strong>Corollary.</strong> The signed sandwich is homogeneous of degree $|a|+|b|$ as a map of graded $R$-modules, and the unsigned sandwich has the same degree; the two differ only by the sign $(-1)^k$ on each homogeneous component.</p>
+<h2 id="the-signed-sandwich-and-the-reflections">The Signed Sandwich and the Reflections</h2>
+<p><strong>Definition.</strong> An operator $S$ on $A$ is an <strong>involution</strong>, or a <strong>reflection</strong>, when $S^2=\mathrm{id}$, and a signed sandwich is a <strong>signed reflection</strong> when it is an involution.</p>
+<p><strong>Theorem.</strong> If $a$ is a unit with $a\,\alpha(a)=1$, then the signed sandwich</p>
+<p>$$
+\Sigma^{\alpha}_{a,\,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}
+$$</p>
+<p>is an involution, a <strong>signed reflection</strong>; more generally $\Sigma^{\alpha}_{a,b}$ is an involution whenever $a,b$ are units with $a\alpha(a)=1$ and $b\alpha(b)=1$ and $a,b$ lie in the centre. An element $x$ is fixed by $\Sigma^{\alpha}_{a,a^{-1}}$ exactly when $\alpha(x)=a^{-1}xa$.</p>
+<p><strong>Proof.</strong> By the composition law $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$; with $a\alpha(a)=1$ the first factor is $1$, and the second is $\alpha(a^{-1})a^{-1}=(a\alpha(a))^{-1}=1$. The general condition is the same computation with two pairs; the fixed-point statement is $a\alpha(x)a^{-1}=x$. $\square$</p>
+<p><strong>Corollary.</strong> In a Clifford algebra the signed sandwich $x\mapsto u\alpha(x)u^{-1}$ with $u\alpha(u)=1$ is the reflection in the direction of $u$ on the space of vectors, since $\alpha(v)=-v$ there; this is the algebraic mechanism by which a signed sandwich realises a reflection, and it is developed in <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em>. The Clifford algebra itself, its quadratic form and its orthogonal group belong to the symmetric linear algebras and are named here only as the model; nothing of them is used.</p>
+<h2 id="worked-case-the-exterior-algebra">Worked Case: The Exterior Algebra</h2>
+<p>Let $A=\Lambda^\bullet V$ be the exterior algebra of a finite-dimensional $K$-vector space $V$, graded by the degree modulo two, with the grade involution $\alpha$ acting by $(-1)^k$ on $\Lambda^kV$. For homogeneous $a,b$ the signed sandwich is $\Sigma^{\alpha}_{a,b}(\omega)=a\wedge\alpha(\omega)\wedge b$, and the composition law reads $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\wedge\alpha(c),\alpha(d)\wedge b}$. For $a$ of even degree and $b=a^{-1}$ when $a$ is a unit in the even part, the sandwich is an unsigned conjugation; for $a$ of odd degree, for example $a=v$ a vector, one has $\alpha(v)=-v$ and $\Sigma^{\alpha}_{v,v}(\omega)=v\wedge\alpha(\omega)\wedge v=v\wedge(-1)^{|\omega|}\omega\wedge v$, which is $0$ on the whole algebra because $v\wedge v=0$. The degenerate case shows that the involution condition is not automatic and is the reason the next entry separates the nondegenerate from the degenerate correspondences.</p>
+<p><strong>Verified.</strong> The composition law and the parity of $\Sigma^{\alpha}_{a,b}$ were checked on the exterior algebra of a two-dimensional space on homogeneous basis elements, and the vanishing of the odd vector sandwich was checked on the four basis elements $1,e_1,e_2,e_1e_2$.</p>
+<h2 id="summary">Summary</h2>
+<p>On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the <strong>unsigned sandwich</strong> is $\Sigma_{a,b}(x)=axb$ and the <strong>signed sandwich</strong> is $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b=\Sigma_{a,b}\alpha$. The signed sandwiches compose by $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}$, so they form a monoid with unit $\Sigma^{\alpha}_{1,1}$, and the product of two signed sandwiches is again signed; a signed sandwich is invertible exactly when its two elements are units. Homogeneous elements give homogeneous sandwiches of degree $|a|+|b|$, the twist contributing the sign $(-1)^k$ on $A^k$. A signed sandwich is an involution, a <strong>signed reflection</strong>, exactly under the stated centrality conditions, and the special case $\Sigma^{\alpha}_{a,a^{-1}}$ with $a\alpha(a)=1$ gives the algebraic reflection of a Clifford algebra, model only, while in the exterior algebra an odd element with $a\wedge a=0$ gives the degenerate vanishing. The reflections, the one-sided signed operators and the graded actions are the companion entries, and the adjoints belong to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>the commutative base ring, $K$ a field when units are needed</td>
+</tr>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>a $\mathbb{Z}/2$-graded associative algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $\alpha(x)=(-1)^k x$ on $A^k$</td>
+</tr>
+<tr>
+<td>$\Sigma_{a,b}(x)=axb$</td>
+<td>the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$\vert a\vert$</td>
+<td>the parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>a central unit in the involution conditions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for graded algebras and the exterior algebra as the model case.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the signed inner conjugation and the generation of reflections.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the signed conjugation action on a Clifford algebra.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em>, Cambridge Studies in Advanced Mathematics 38 (Cambridge University Press, 1994), for the graded-structure conventions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

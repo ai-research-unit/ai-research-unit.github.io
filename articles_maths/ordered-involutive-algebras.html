@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordered Involutive Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ordered-involutive-algebras"><strong>Ordered Involutive Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>ordered involutive algebra</strong> is an involutive algebra carrying an order, in which the involution and the order are <strong>compatible</strong>. The compatibility has three parts: the involution is <strong>positive</strong>,</p>
+<p>$$
+a\geq0 \implies a^{*}\geq0 ,
+$$</p>
+<p>so that it is an order isomorphism of order two; the order is <strong>compatible with the multiplication</strong>, so that the positive cone is closed under the congruences $x\mapsto c^{*}xc$ and hence under the symmetrised product $\{a,b\} = \frac12(ab+ba)$; and the order is <strong>Archimedean</strong> with respect to a positive <strong>order unit</strong>, usually the identity, under which the order interval is the unit ball of the order-unit norm. The article states these compatibilities, proves their equivalence with the closure of the cone under the conjugations, and draws the order-theoretic consequences: the <strong>positive cone</strong> and the <strong>Jordan decomposition</strong> of a Hermitian element into its positive and negative parts.</p>
+<p>The reason to isolate the compatibility is that the involution alone (of <em>The Positive Cone of an Involutive Algebra</em>) does not determine the order, and the order alone (of <em>Ordered Vector Spaces and the Order Unit</em>) does not determine the involution; the ordered involutive algebra is the structure in which the two are compatible, and it is the abstract frame of the $C^{*}$-algebras, the JB*-algebras and their commutative and Jordan relatives. The article is therefore the structural keystone of the <code>- *</code> group: the cone of an involutive algebra, the Hermitian elements, the positive functionals, the forms and the Jordan algebra of the self-adjoint elements are all its specialisations.</p>
+<p>The positive cone and the symmetrised product are <em>The Positive Cone of an Involutive Algebra</em>; the Hermitian elements, the order unit and the Jordan decomposition are <em>Hermitian Elements and the Order Unit</em>; the states are <em>The Cone of Positive Functionals</em>; the forms and the GNS representation are <em>Positive Definite Forms and the Order</em>; the Jordan algebra of the self-adjoint elements is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the Hilbert cone and the JBW structure are <em>The Hilbert Cone of an Involutive Algebra</em>; the forms on an ordered space are <em>Positive Definite Forms on an Ordered Space</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; and the $C^{*}$-algebras are <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em>.</p>
+<h2 id="the-compatibility-axioms">The Compatibility Axioms</h2>
+<p><strong>Definition.</strong> An <strong>ordered involutive algebra</strong> is an involutive algebra $A$ with a positive cone $A_+$ such that</p>
+<p>$$
+\text{(i)} \quad A_+^{*} = A_+ , \qquad \text{(ii)} \quad c^{*}A_+c\subseteq A_+ \ \text{ for every } c\in A , \qquad \text{(iii)} \quad 1\in A_+ \ \text{ and } 1 \text{ is an order unit} ,
+$$</p>
+<p>with the order $a\leq b\iff b - a\in A_+$, the closedness of the cone under the involution, the <strong>congruence property</strong>, and the <strong>order unit</strong>.</p>
+<p><strong>Proposition (the axioms are the compatibility).</strong> In an ordered involutive algebra the involution is an <strong>order isomorphism</strong> of order two, $a\leq b\iff a^{*}\leq b^{*}$; the order is <strong>compatible with the multiplication</strong> in the sense that the cone is closed under the involutive congruences $x\mapsto c^{*}xc$ and under the symmetrised product; the left and right multiplications by a positive element are positive operators, $a\geq0\implies L_a\geq0$, $R_a\geq0$; and the cone is generated by the Hermitian positive elements.</p>
+<p><em>Proof.</em> The order isomorphy is the closedness of the cone under the involution, and the involution is of order two. The congruence property is the axiom (ii); the symmetrised-product statement is inherited from <em>The Positive Cone of an Involutive Algebra</em> and is equivalent, by the polarisation $\{a,b\} = \frac12\bigl((a+b)^{*}(a+b) - a^{*}a - b^{*}b\bigr)$ for Hermitian $a,b$, to a statement about the generators $c^{*}c$. The positivity of the one-sided multiplications is the axiom (ii) with $c$ fixed and $a$ varying in $A_+$. The generation statement is that every element of $A_+$ is a sum of the generators $c^{*}c$, each of which is Hermitian.</p>
+<p><strong>Proposition (the involution on the whole algebra).</strong> The involution is a <strong>conjugate-linear order isomorphism</strong> in the sense that $a\leq b\implies a^{*}\leq b^{*}$, and $a\in A_+$ is equivalent to $a = a^{*}$ and $a\geq0$; the Hermitian part is the <strong>order core</strong> on which the order is decided, and the order on the whole algebra is recovered from the order on the Hermitian part together with the decomposition $a = \operatorname{Re}a + i\operatorname{Im}a$ and the congruence property.</p>
+<p><em>Proof.</em> The implication is the closedness of the cone under the involution; an element of the cone is Hermitian because the generators $c^{*}c$ are; the recovery of the order from the Hermitian part is the decomposition together with the congruence property, which makes the imaginary direction an order-theoretic factor of the real one.</p>
+<h2 id="the-positive-cone">The Positive Cone</h2>
+<p><strong>Proposition (closure properties of the ordered cone).</strong> The cone $A_+$ is a proper convex cone, closed under addition, nonnegative scaling, the involution, the congruences, the symmetrised product and the products with a positive element; it contains $1$ and is Archimedean in a $\ast$-normed algebra, and the order-unit norm coincides with the $\ast$-norm.</p>
+<p><em>Proof.</em> The closure properties are those of <em>The Positive Cone of an Involutive Algebra</em> together with the congruence axiom; the properness is the reducedness; the Archimedean property and the order-unit norm are those of <em>Hermitian Elements and the Order Unit</em>.</p>
+<p><strong>Proposition (the cone generates the Hermitian part).</strong> The cone generates the Hermitian part when the algebra is unital and reduced: every Hermitian element is a difference of two positive elements, so that the order is <strong>directed</strong>, and the positive part $h_+$ and the negative part $h_-$ of a Hermitian element are the least elements with $h_+\geq h$, $h_-\geq -h$ and $h = h_+ - h_-$.</p>
+<p><em>Proof.</em> The generation is the Jordan decomposition of <em>Hermitian Elements and the Order Unit</em>; the directness is the existence of an upper bound, which the decomposition supplies; the extremal property of the parts is the definition of the positive and negative parts.</p>
+<h2 id="the-jordan-decomposition">The Jordan Decomposition</h2>
+<p><strong>Theorem (the decomposition in the ordered involutive algebra).</strong> Every Hermitian element $h$ of a unital reduced $\ast$-normed ordered involutive algebra has a unique decomposition</p>
+<p>$$
+h = h_+ - h_-, \qquad h_+\geq0, \quad h_-\geq0, \quad h_+h_- = 0 ,
+$$</p>
+<p>with $h_\pm$ commuting and Hermitian, produced by the functional calculus through the absolute value $\lvert h\rvert = (h^{2})^{1/2}$, $h_\pm = \frac12(\lvert h\rvert\pm h)$; the decomposition satisfies $\lvert h\rvert = h_+ + h_-$, $\lvert h\rvert\geq h$ and $\lvert h\rvert\geq -h$, and the order interval is</p>
+<p>$$
+[0,1] = \{h = h^{*} : 0\leq h\leq1\} = \{h = h^{*} : \lVert h\rVert\leq1,\ h\geq0\} .
+$$</p>
+<p><em>Proof.</em> The existence, the uniqueness and the commutativity are the theorem of <em>Hermitian Elements and the Order Unit</em>; the identities $\lvert h\rvert = h_+ + h_-$ and $\lvert h\rvert\pm h\geq0$ are read off the definitions of the parts; the identification of the interval is the order-unit-norm statement.</p>
+<p><strong>Corollary (the order is determined by the involution and the unit).</strong> The order of an ordered involutive algebra is determined by the involution and the cone generated by the order unit: the positive elements are the sums $c^{*}c$ for $c$ in the unit ball, the order interval $[-1,1]$ is the set of the Hermitian elements of norm at most one, and the order and the norm determine each other through the involution and the unit.</p>
+<p><em>Proof.</em> The positive elements are the sums of the generators $c^{*}c$; the unit-ball description of the generators is the spectral bound $\lVert c\rVert\leq1\iff c^{*}c\leq1$, which is the C*-norm condition; the interval statement is the order-unit-norm coincidence.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-c-algebras">The C*-Algebras</h3>
+<p>A unital C*-algebra with the cone of the positive elements is an ordered involutive algebra: the involution is positive, the cone is closed under the congruences $x\mapsto c^{*}xc$, the identity is an order unit, and the order-unit norm is the C*-norm; the Jordan decomposition is the spectral decomposition into the positive and the negative spectral parts; the order interval $[0,1]$ is the set of the effects. This is the model, and the Gelfand–Naimark theorem represents every abstract ordered involutive algebra of this kind in this form.</p>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p>For $A = C(X,\mathbb{C})$ the order is pointwise, the involution is the conjugation, the cone is the pointwise nonnegative cone, and the congruences are the multiplications by $c^{*}c$. The algebra is <strong>lattice-ordered</strong> on the Hermitian part, the Jordan decomposition is $h_\pm = \frac12(\lvert h\rvert\pm h)$ pointwise, and the order-unit norm is the supremum norm; the compatibility axioms are all visible as pointwise inequalities.</p>
+<h3 id="the-ordered-involutive-group-algebra">The Ordered Involutive Group Algebra</h3>
+<p>For $A = \mathbb{C}[G]$ with $g^{*} = g^{-1}$ and the Hilbert cone of <em>The Hilbert Cone of an Involutive Algebra</em>, the ordered involutive algebra structure is the one in which the positive cone is the Hilbert cone, the involution is positive, the congruences preserve the cone, and the Jordan decomposition is the decomposition in the Hilbert cone; the order unit is the identity element of the group, and the order is the one whose states are the positive-definite functions.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>ordered involutive algebra</strong> is an involutive algebra with a positive cone such that the involution preserves the cone, the cone is closed under the congruences $x\mapsto c^{*}xc$, and the identity is an order unit. The involution is then an <strong>order isomorphism</strong> of order two, the cone is closed under the symmetrised product and the positive one-sided multiplications are positive, the Hermitian part is the <strong>order core</strong>, and the cone <strong>generates</strong> it in the unital reduced case, so the order is directed. Every Hermitian element has a unique <strong>Jordan decomposition</strong> $h = h_+ - h_-$ with $h_\pm\geq0$, $h_+h_- = 0$ and $\lvert h\rvert = h_+ + h_-$, and the order interval $[0,1]$ is the set of the Hermitian elements of norm at most one; the order is determined by the involution and the order unit. The model is the unital C*-algebra with the positive cone, the effects on $[0,1]$ and the order-unit norm equal to the C*-norm. The positive cone is <em>The Positive Cone of an Involutive Algebra</em>; the Hermitian elements and the decomposition are <em>Hermitian Elements and the Order Unit</em>; the states are <em>The Cone of Positive Functionals</em>; the forms are <em>Positive Definite Forms and the Order</em>; the Jordan algebra of the self-adjoint elements is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the forms on an ordered space are <em>Positive Definite Forms on an Ordered Space</em>; and the C*-theory is <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_+^{*} = A_+$</td>
+<td>The involution is positive</td>
+</tr>
+<tr>
+<td>$c^{*}A_+c\subseteq A_+$</td>
+<td>Congruence property</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>Order unit</td>
+</tr>
+<tr>
+<td>$a\leq b\iff a^{*}\leq b^{*}$</td>
+<td>The involution is an order isomorphism</td>
+</tr>
+<tr>
+<td>$\{a,b\} = \tfrac12(ab+ba)$</td>
+<td>Symmetrised product, positive</td>
+</tr>
+<tr>
+<td>$h = h_+ - h_-$</td>
+<td>Jordan decomposition</td>
+</tr>
+<tr>
+<td>$\lvert h\rvert = h_+ + h_-$</td>
+<td>Absolute value</td>
+</tr>
+<tr>
+<td>$[0,1]$</td>
+<td>Effects, the Hermitian contractions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the order and the involution of a C*-algebra and the Jordan decomposition.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the positive cone, the congruences and the functional calculus.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the ordered involutive algebras, the states and the representation theory.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the ordered involutive and ordered Jordan structures and their state spaces.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the congruences, the order ideals and the order-unit norm of an ordered algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

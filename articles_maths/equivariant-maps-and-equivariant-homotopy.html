@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivariant Maps and Equivariant Homotopy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivariant-maps-and-equivariant-homotopy"><strong>Equivariant Maps and Equivariant Homotopy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>equivariant map</strong> between spaces with an involution is a continuous map that commutes with the two involutions, and an <strong>equivariant homotopy</strong> is a homotopy that is equivariant at every stage. The two notions make the spaces with an involution and their equivariant maps into a category, the category already met in <em>Spaces with an Involution and the Orbit Space</em>, and they impose on the homotopy theory of that category the same questions that ordinary homotopy theory imposes on spaces: which maps are equivalences, what a homotopy class is, and which invariants see the difference. This article develops the answers for the involution. The central fact is that an equivariant homotopy descends to the orbit spaces and restricts to the fixed sets, so that the orbit space and the fixed set are both functors on the equivariant homotopy category; a second fact is that the equivariant homotopy classes to a space with the trivial involution are the ordinary homotopy classes from the orbit space.</p>
+<p>The article continues <em>Spaces with an Involution and the Orbit Space</em>, whose orbit functor and quotient results it uses, and it precedes <em>Two-Fold Coverings and the Borel Construction</em>. It keeps the group of order two, and it records constructions that apply to any finite group with the same proofs; the general equivariant homotopy theory, with its equivariant Whitehead theorem and its cell complexes, is used by the later articles of this Part and is cited from the standard references rather than developed.</p>
+<p>Nothing analytic and nothing geometric is used. The interval $I = [0,1]$ is the unit interval of the homotopy, read only for its topology; no metric is chosen on any space and no length or angle is read from the constructions.</p>
+<h2 id="equivariant-maps">Equivariant Maps</h2>
+<h3 id="the-morphisms-revisited">The Morphisms Revisited</h3>
+<p><strong>Definition.</strong> Let $(X,\sigma)$ and $(Y,\tau)$ be spaces with involutions. An <strong>equivariant map</strong>, or <strong>$\mathbb{Z}/2$-map</strong>, is a continuous map $f : X \to Y$ with</p>
+<p>$$
+f \circ \sigma = \tau \circ f .
+$$</p>
+<p>The equivariant maps are the morphisms of $\mathbf{Top}^{\mathbb{Z}/2}$, and the identity and the composites of equivariant maps are equivariant.</p>
+<p><strong>Proposition.</strong> An equivariant map carries the orbit of $x$ into the orbit of $f(x)$, and it restricts to a map $X^{\sigma} \to Y^{\tau}$ of the fixed sets. If $f$ is a homeomorphism and $f^{-1}$ is equivariant, then $f$ is an isomorphism of spaces with involution.</p>
+<p><strong>Proof.</strong> The first statement is $f(\{x,\sigma x\}) \subseteq \{f(x), \tau f(x)\}$, which is the defining identity read on the orbit; the second is that a fixed point satisfies $f(x) = f(\sigma x) = \tau f(x)$; the third is the definition of an isomorphism in $\mathbf{Top}^{\mathbb{Z}/2}$.</p>
+<h3 id="the-induced-maps-on-the-orbit-space-and-the-fixed-set">The Induced Maps on the Orbit Space and the Fixed Set</h3>
+<p><strong>Theorem.</strong> An equivariant map $f : (X,\sigma) \to (Y,\tau)$ induces a unique continuous map</p>
+<p>$$
+\bar f : X/\sigma \longrightarrow Y/\tau, \qquad \bar f(\{x,\sigma x\}) = \{f(x), \tau f(x)\},
+$$</p>
+<p>and a map $f^{fix} : X^{\sigma} \to Y^{\tau}$ by restriction; the two assignments are functorial, and the square</p>
+<p>$$
+\begin{array}{ccc}
+X & \xrightarrow{\ f\ } & Y \\
+\downarrow \pi_{X} & & \downarrow \pi_{Y} \\
+X/\sigma & \xrightarrow{\ \bar f\ } & Y/\tau
+\end{array}
+$$</p>
+<p>commutes.</p>
+<p><strong>Proof.</strong> The induced map is that of <em>Spaces with an Involution and the Orbit Space</em>; the restriction to the fixed sets is $X^{\sigma} \to Y^{\tau}$ by the proposition; functoriality is that the construction preserves identities and composites; the square commutes by the definition of $\bar f$.</p>
+<h2 id="equivariant-homotopy">Equivariant Homotopy</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $f, g : X \to Y$ be equivariant maps, and let $I = [0,1]$ carry the trivial involution. An <strong>equivariant homotopy</strong> from $f$ to $g$ is a continuous map</p>
+<p>$$
+H : X \times I \longrightarrow Y
+$$</p>
+<p>equivariant with respect to the involution $\sigma \times \mathrm{id}_{I}$ on $X\times I$ and $\tau$ on $Y$, with $H(x,0) = f(x)$ and $H(x,1) = g(x)$ for all $x$. One writes $f \simeq_{\mathbb{Z}/2} g$, or $f \simeq_{G} g$ when the group is named.</p>
+<p>Equivalently, a homotopy is a path $t \mapsto H(\cdot, t)$ in the set of equivariant maps from $X$ to $Y$, with the compact-open topology on that set; the map $H$ is equivariant exactly when each $H(\cdot,t)$ is equivariant.</p>
+<p><strong>Proposition.</strong> Equivariant homotopy is an equivalence relation on the equivariant maps from $X$ to $Y$, compatible with composition: if $f \simeq_{G} f'$ and $g \simeq_{G} g'$ then $g \circ f \simeq_{G} g' \circ f'$. Consequently there is a category whose objects are the spaces with involution and whose morphisms are the equivariant homotopy classes of equivariant maps.</p>
+<p><strong>Proof.</strong> Reflexivity is the constant homotopy; symmetry is the reparametrisation $t \mapsto 1-t$; transitivity is the concatenation of homotopies, reparametrised to the two halves of $I$; both reparametrisations are continuous and equivariant because they do not involve $X$. For composition, $g \circ f$ is homotopic to $g' \circ f$ by composing $g'$ with the homotopy from $f$ to $f'$, and $g' \circ f$ is homotopic to $g' \circ f'$ by composing the homotopy from $g$ to $g'$ with $f'$; both composites are equivariant.</p>
+<p><strong>Definition.</strong> The <strong>equivariant homotopy category</strong> of spaces with involution has the spaces with involution as objects and the equivariant homotopy classes as morphisms.</p>
+<h3 id="equivariant-homotopy-equivalence">Equivariant Homotopy Equivalence</h3>
+<p><strong>Definition.</strong> An equivariant map $f : X \to Y$ is an <strong>equivariant homotopy equivalence</strong>, or a <strong>$G$-homotopy equivalence</strong>, when there is an equivariant map $g : Y \to X$ with</p>
+<p>$$
+g \circ f \simeq_{G} \mathrm{id}_{X}, \qquad f \circ g \simeq_{G} \mathrm{id}_{Y} .
+$$</p>
+<p>The map $g$ is an equivariant homotopy inverse of $f$, and the spaces are equivariantly homotopy equivalent.</p>
+<p><strong>Proposition.</strong> If $f$ is an equivariant homotopy equivalence, then $f$ is an ordinary homotopy equivalence; the forgetful functor to spaces sends $G$-homotopy equivalences to homotopy equivalences.</p>
+<p><strong>Proof.</strong> An equivariant homotopy is a homotopy when the involutions are forgotten, so the same $g$ is an ordinary homotopy inverse.</p>
+<p>The converse fails: an ordinary homotopy equivalence need not be equivariant, and even an equivariant map that is an ordinary homotopy equivalence need not be an equivariant one, since the homotopies can move the fixed sets. The invariants of the next section measure the difference.</p>
+<h2 id="invariants-of-equivariant-homotopy">Invariants of Equivariant Homotopy</h2>
+<h3 id="fixed-sets-and-the-fixed-set-functor">Fixed Sets and the Fixed-Set Functor</h3>
+<p><strong>Theorem.</strong> Let $f : X \to Y$ be an equivariant map and $H$ an equivariant homotopy from $f$ to $g$. Then $H$ restricts to a homotopy $X^{\sigma} \times I \to Y^{\tau}$ from $f^{fix}$ to $g^{fix}$. Consequently an equivariant homotopy equivalence induces a homotopy equivalence of the fixed sets.</p>
+<p><strong>Proof.</strong> If $x \in X^{\sigma}$ then $\sigma x = x$, so $H(x,t) = H(\sigma x, t) = \tau H(x,t)$, and $H(x,t) \in Y^{\tau}$ for every $t$; the restriction is continuous and has the required endpoint values. For the second statement, apply the restriction to the two homotopies that exhibit the equivalence, and to the two equivariant homotopy inverses.</p>
+<p><strong>Corollary.</strong> An equivariant homotopy equivalence $f$ induces homotopy equivalences $f^{fix} : X^{\sigma} \to Y^{\tau}$ and, for any subgroup of $\mathbb{Z}/2$, on the fixed sets of the subgroup. In particular the fixed set is a homotopy invariant of the equivariant homotopy type, not only of the underlying space.</p>
+<p><strong>Proof.</strong> The group $\mathbb{Z}/2$ has two subgroups: the trivial one, whose fixed set is the whole space, and the whole group, whose fixed set is $X^{\sigma}$. The restriction to the two is the statement.</p>
+<h3 id="orbit-spaces-and-descent">Orbit Spaces and Descent</h3>
+<p><strong>Theorem.</strong> Let $H$ be an equivariant homotopy from $f$ to $g$. Then $H$ descends to a homotopy</p>
+<p>$$
+\bar H : (X/\sigma)\times I \longrightarrow Y/\tau, \qquad \bar H(\{x,\sigma x\}, t) = \bar H(x,t),
+$$</p>
+<p>from $\bar f$ to $\bar g$. Consequently an equivariant homotopy equivalence induces a homotopy equivalence of the orbit spaces.</p>
+<p><strong>Proof.</strong> The map $X \times I \to Y$ is equivariant for $\sigma \times \mathrm{id}$ and $\tau$. The quotient $(X \times I)/(\sigma \times \mathrm{id})$ is $(X/\sigma) \times I$, because the involution is trivial on the factor $I$, and the product comparison map is an isomorphism when one factor carries the trivial action; this is a case of the product formula that holds for a trivial factor. Hence $H$ descends through the quotient to the stated map, which is continuous by the universal property and is a homotopy between the two induced maps.</p>
+<p><strong>Corollary.</strong> The orbit-space functor sends equivariant homotopy equivalences to homotopy equivalences, and it respects homotopy classes: if $f \simeq_{G} g$ then $\bar f \simeq \bar g$.</p>
+<p><strong>Proof.</strong> The descent theorem applied to the homotopy and to the two homotopies of an equivalence.</p>
+<h3 id="homotopy-classes-to-a-trivial-object">Homotopy Classes to a Trivial Object</h3>
+<p><strong>Theorem.</strong> Let $Y$ carry the trivial involution. Then the correspondence $f \mapsto \bar f$ is a bijection</p>
+<p>$$
+[X/\sigma, Y] \ \cong \ [X, Y_{tr}]^{G}
+$$</p>
+<p>between the ordinary homotopy classes of maps $X/\sigma \to Y$ and the equivariant homotopy classes of equivariant maps $X \to Y_{tr}$.</p>
+<p><strong>Proof.</strong> The correspondence is a bijection at the level of maps by the universal property, and it passes to homotopy classes because the cylinder $(X\times I)/\sigma$ is $(X/\sigma)\times I$ by the descent theorem; a homotopy on either side corresponds to a homotopy on the other.</p>
+<p><strong>Corollary.</strong> For a target with the trivial involution the equivariant homotopy class of an equivariant map is determined by the homotopy class of the induced map on the orbit space, and conversely; equivalently, the fixed-set and orbit-space invariants of the source determine the equivariant homotopy class of every map into a trivial object.</p>
+<p><strong>Proof.</strong> The assertion is the bijection of the theorem, read as the statement that no information beyond the induced map on the orbit space is carried by an equivariant map into a trivial object.</p>
+<h2 id="the-homotopy-extension-property">The Homotopy Extension Property</h2>
+<p>The equivariant theory needs one technical tool to be usable: the equivariant homotopy extension property, which demands the extension of an equivariant homotopy from an invariant subspace.</p>
+<p><strong>Definition.</strong> A pair $(X,A)$ of spaces with involution, with $A$ invariant, has the <strong>equivariant homotopy extension property</strong> when for every space with involution $Y$ and every pair of maps $X \times \{0\} \to Y$ and $A \times I \to Y$ that agree on $A \times \{0\}$, there is an equivariant extension $X \times I \to Y$.</p>
+<p><strong>Theorem (sketch).</strong> If $(X,A)$ is a pair of spaces with involution and $A$ is a retract by deformation of an invariant open neighbourhood, then $(X,A)$ has the equivariant homotopy extension property; and the corresponding statement holds for the cell complexes of the later articles, where the cells are attached equivariantly.</p>
+<p><strong>Proof sketch.</strong> Take a continuous function $\varphi : X \to I$ with $\varphi = 0$ on $A$ and $\varphi = 1$ off the neighbourhood, chosen invariant by averaging over the group; the ordinary homotopy extension, carried out with the retraction of the neighbourhood onto $A$ and the bump function $\varphi$, is then equivariant because every ingredient is. The construction is the standard one for a $G$-space and is given in the references.</p>
+<p><strong>Remark.</strong> The property is the technical hypothesis that makes the equivariant homotopy category behave like the ordinary one: the equivariant Whitehead theorem, which says that an equivariant map between appropriate cell complexes that is an equivariant homotopy equivalence on all fixed sets is an equivariant homotopy equivalence, requires it. The theorem is cited from the references and is not proved here.</p>
+<h2 id="summary">Summary</h2>
+<p>An equivariant map between spaces with an involution commutes with the involutions; it induces a map on the orbit spaces and restricts to the fixed sets, and both assignments are functorial. An equivariant homotopy is a homotopy that is equivariant at every stage, and it is an equivalence relation compatible with composition, so the spaces with involution and the equivariant homotopy classes form a homotopy category. An equivariant homotopy equivalence is an equivariant map with an equivariant homotopy inverse; it is an ordinary homotopy equivalence, and it induces homotopy equivalences on the fixed sets and on the orbit spaces, the first by restricting the homotopy and the second by descending it through the quotient, which is legitimate because the cylinder of $X$ has orbit space $(X/\sigma)\times I$. For a target with the trivial involution the induced-map correspondence is a bijection on homotopy classes, $[X/\sigma, Y] \cong [X, Y_{tr}]^{G}$, and the equivariant homotopy type of the fixed set and of the orbit space are invariants of the equivariant homotopy type. The equivariant homotopy extension property and the equivariant Whitehead theorem are the technical tools of the subject; they are stated and cited, and the former is sketched.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(X,\sigma)$, $(Y,\tau)$</td>
+<td>Spaces with involutions, with the involutions written $\sigma$, $\tau$</td>
+</tr>
+<tr>
+<td>equivariant map</td>
+<td>Continuous $f$ with $f\sigma = \tau f$</td>
+</tr>
+<tr>
+<td>$\bar f$</td>
+<td>The induced map $X/\sigma \to Y/\tau$</td>
+</tr>
+<tr>
+<td>$f^{fix}$</td>
+<td>The restriction $X^{\sigma} \to Y^{\tau}$</td>
+</tr>
+<tr>
+<td>$I = [0,1]$</td>
+<td>The unit interval with the trivial involution</td>
+</tr>
+<tr>
+<td>$H : X\times I \to Y$</td>
+<td>An equivariant homotopy</td>
+</tr>
+<tr>
+<td>$f \simeq_{G} g$</td>
+<td>Equivariantly homotopic equivariant maps</td>
+</tr>
+<tr>
+<td>$G$-homotopy equivalence</td>
+<td>Equivariant $f$ with an equivariant homotopy inverse</td>
+</tr>
+<tr>
+<td>$[X,Y]^{G}$</td>
+<td>Equivariant homotopy classes of equivariant maps</td>
+</tr>
+<tr>
+<td>$[X/\sigma, Y] \cong [X, Y_{tr}]^{G}$</td>
+<td>The homotopy-class adjunction for trivial target</td>
+</tr>
+<tr>
+<td>equivariant HEP</td>
+<td>Equivariant homotopy extension property for an invariant pair</td>
+</tr>
+<tr>
+<td>equivariant Whitehead theorem</td>
+<td>Cited: equivariant homotopy equivalence detected on fixed sets</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (de Gruyter, 1987), for equivariant homotopy, equivariant homotopy equivalences and the equivariant Whitehead theorem.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for equivariant maps, equivariant homotopy and the homotopy extension property for $G$-spaces.</li>
+<li>Glen E. Bredon, <em>Equivariant Cohomology Theories</em> (Springer Lecture Notes, 1967), for the equivariant homotopy category and its invariants.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the ordinary homotopy extension property and the Whitehead theorem that the equivariant version generalises.</li>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em>, 2nd ed. (Springer, 1998), for the homotopy category as a quotient category and for naturality of the induced maps.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, revised ed. 1989), for the compact-open topology on the set of maps and the adjunction that makes a homotopy a path of maps.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

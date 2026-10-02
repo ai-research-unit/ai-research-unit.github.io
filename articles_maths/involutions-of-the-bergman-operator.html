@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Bergman Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-bergman-operator"><strong>Involutions of the Bergman Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\Omega \subseteq \mathbb{C}^n$ be a bounded domain, $A^2(\Omega)$ the <strong>Bergman space</strong> of the holomorphic functions that are square-integrable, and
+$$
+B : L^2(\Omega) \longrightarrow A^2(\Omega), \qquad Bg(z) = \int_{\Omega} K(z,w)\,g(w)\,dV(w),
+$$
+the <strong>Bergman operator</strong>, the orthogonal projection onto the Bergman space; its kernel $K(z,w)$ is the <strong>Bergman kernel</strong>. The operator carries an involution of its own, the <strong>conjugate symmetry</strong> of the kernel,
+$$
+K(z, w) = \overline{K(w, z)},
+$$
+which is the exchange of the two variables followed by conjugation; the symmetry is exactly the statement that $B$ is self-adjoint, and together with $B^2 = B$ it says that $B$ is an orthogonal projection, the model of the Hermitian projections of <em>The Adjoint of a Hermitian Operator</em>. On a domain stable under the conjugation of the coordinates, $z\mapsto\bar z$, there is a second involution, the conjugate-linear map
+$$
+\sigma f(z) = \overline{f(\bar z)},
+$$
+an antiunitary involution of the Bergman space that commutes with $B$ and whose fixed space is the <strong>real Bergman space</strong> of the functions with real Taylor coefficients; it is the Bergman-space form of the real structure of <em>The Involution on a Complex Vector Space</em>, and the two involutions — the conjugate symmetry of the kernel and the conjugation of the space — are the operator and the pointwise faces of the same Hermitian geometry.</p>
+<p>The article has three sections: the Bergman operator, its idempotence and its self-adjointness; the conjugate symmetry of the kernel; and the conjugate-linear involution of the Bergman space. The Bergman kernel, the projection and the transformation law are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>, earlier in this Part; the adjoint, the Hermitian operators and the positivity are <em>The Adjoint of a Hermitian Operator</em>, the preceding article of this group; the Hermitian forms and the unitary group are <em>Hermitian Geometry and the Unitary Group</em>; the real structure and the conjugation are <em>The Involution on a Complex Vector Space</em> and <em>Real Structures on a Complex Manifold</em>; the bounded symmetric domain and its Bergman metric are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>. None of that is re-derived.</p>
+<p>Throughout, $\Omega$ is a bounded domain in $\mathbb{C}^n$, $A^2(\Omega)$ is its Bergman space with the $L^2$ inner product $\langle f,g\rangle = \int_\Omega f\bar g\,dV$, $K(z,w)$ is the Bergman kernel, $B$ is the Bergman projection, and $z\mapsto\bar z$ is the coordinate conjugation whenever $\Omega$ is stable under it.</p>
+<h2 id="the-bergman-operator-its-idempotence-and-its-self-adjointness">The Bergman Operator, Its Idempotence and Its Self-Adjointness</h2>
+<p><strong>Proposition (the Bergman operator is an orthogonal projection).</strong> The Bergman operator $B$ is idempotent and self-adjoint for the $L^2$ inner product,
+$$
+B^2 = B, \qquad B^{*} = B,
+$$
+so it is the orthogonal projection of $L^2(\Omega)$ onto $A^2(\Omega)$; equivalently $\operatorname{im}B = A^2(\Omega)$ and $\ker B$ is the orthogonal complement of the Bergman space.</p>
+<p><strong>Proof.</strong> The reproducing property $f(z) = \langle f, K(z,\cdot)\rangle$ for $f \in A^2$ gives $\operatorname{im}B = A^2$ and $Bf = f$ on $A^2$, hence $B^2 = B$; the self-adjointness is the equivalence of the conjugate symmetry of the kernel with $B^{*} = B$, proved in the next proposition. An idempotent self-adjoint operator is the orthogonal projection onto its range, by the spectral theorem. The reproducing property and the projection are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>.</p>
+<p><strong>Proposition (conjugate symmetry is self-adjointness).</strong> The kernel satisfies $K(z,w) = \overline{K(w,z)}$, and this identity is equivalent to the self-adjointness of $B$: for $f, g \in L^2$,
+$$
+\langle Bf, g\rangle = \int\!\!\int K(z,w)f(w)\overline{g(z)}\,dV(w)\,dV(z) = \overline{\langle Bg, f\rangle} = \langle f, Bg\rangle .
+$$</p>
+<p><strong>Proof.</strong> Substituting the definition of $B$, exchanging the order of integration by Fubini, and using the conjugate symmetry $K(z,w) = \overline{K(w,z)}$ gives $\langle Bf,g\rangle = \int\!\!\int \overline{K(w,z)}f(w)\overline{g(z)} = \overline{\int\!\!\int K(w,z)g(z)\overline{f(w)}} = \overline{\langle Bg,f\rangle} = \langle f,Bg\rangle$; conversely, if $B$ is self-adjoint the two iterated integrals differ by conjugation for all $f,g$ and the kernel is conjugate-symmetric. The kernel and the Fubini exchange are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>.</p>
+<p><strong>Corollary (the growth of the kernel and the diagonal).</strong> The diagonal $K(z,z) > 0$ and is the square of the norm of the evaluation functional at $z$; on the diagonal the conjugate symmetry is the reality $K(z,z) = \overline{K(z,z)}$, and the Bergman metric $g^{\mathrm B}_{i\bar j} = \partial_i\bar\partial_j\log K(z,z)$ is built from the diagonal, <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
+<p><strong>Proof.</strong> For $f\in A^2$ with $f(z)\neq0$ one has $|f(z)|^2 = |\langle f,K(z,\cdot)\rangle|^2 \le \|f\|^2K(z,z)$ by Cauchy–Schwarz, and choosing $f = K(z,\cdot)$ gives equality; hence $K(z,z) = \|K(z,\cdot)\|^2>0$ except at a point supporting no holomorphic function. The diagonal value of a conjugate-symmetric kernel is real. The Bergman metric is the $\partial\bar\partial\log$ of the diagonal, <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
+<h2 id="the-conjugate-linear-involution-of-the-bergman-space">The Conjugate-Linear Involution of the Bergman Space</h2>
+<p><strong>Definition.</strong> Suppose $\Omega$ is stable under the conjugation $z\mapsto\bar z$. The <strong>conjugation</strong> of the Bergman space is the map
+$$
+\sigma f(z) = \overline{f(\bar z)} .
+$$</p>
+<p><strong>Proposition (the conjugation is an antiunitary involution).</strong> $\sigma$ is a conjugate-linear involution of $A^2(\Omega)$ and an isometry,
+$$
+\sigma^2 = \mathrm{id}, \qquad \sigma(\lambda f) = \bar\lambda\,\sigma f, \qquad \langle \sigma f, \sigma g\rangle = \langle g, f\rangle ,
+$$
+and it commutes with the Bergman operator, $\sigma B = B\sigma$; its fixed space is the <strong>real Bergman space</strong> of the functions with real Taylor coefficients at the origin.</p>
+<p><strong>Proof.</strong> The map is conjugate-linear by the conjugation of the scalar; $\sigma^2 f(z) = \overline{\overline{f(\bar{\bar z})}} = f(z)$; the isometry is the change of variables $z\mapsto\bar z$, which preserves $dV$; and $\sigma(f\bar g) = (\sigma f)\overline{(\sigma g)}$, so the inner product is conjugated. The commutation with $B$ follows from $K(\bar z,\bar w) = \overline{K(z,w)}$ for a domain stable under conjugation, which is the conjugate symmetry read under the involution of the variables. A function with real Taylor coefficients satisfies $\overline{f(\bar z)} = f(z)$, and conversely. This is <em>Real Structures on a Complex Manifold</em> and <em>The Involution on a Complex Vector Space</em>.</p>
+<p><strong>Proposition (the two involutions are one).</strong> The conjugate symmetry of the kernel, the self-adjointness of $B$, and the commutation of the Bergman projection with the conjugation $\sigma$ are the three expressions of the same Hermitian geometry of the domain; on the disc and the bounded symmetric domains they are the reflection of the domain in its real locus, and the real Bergman space is the descending of the Bergman theory to the real form.</p>
+<p><strong>Proof.</strong> The self-adjointness is the conjugate symmetry; the commutation of $B$ with $\sigma$ is the invariance $K(\bar z,\bar w) = \overline{K(z,w)}$ of the kernel under conjugation, which follows from the characterisation of the kernel as the extremal function of the evaluation; the real Bergman space is the fixed space, and on the disc $\sigma$ is $f(z)\mapsto\overline{f(\bar z)}$, whose fixed functions are exactly the real-analytic ones. This is the descent of <em>Real Structures on a Complex Manifold</em>.</p>
+<p><strong>Example (the disc and the polydisc).</strong> On the unit disc the Bergman kernel is $K(z,w) = \pi^{-1}(1-z\bar w)^{-2}$ (with the normalisation fixed by <em>The Bergman Operator</em>), which is conjugate-symmetric, $K(z,w) = \overline{K(w,z)}$; the conjugation $\sigma f(z) = \overline{f(\bar z)}$ has the real Bergman space of the functions with real Taylor coefficients, and the Bergman projection is self-adjoint and commutes with $\sigma$. On the polydisc the kernel is the product of the one-variable kernels and every statement is componentwise; on a bounded symmetric domain the conjugation is the geodesic symmetry in the origin. This is <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For a bounded domain $\Omega$ the Bergman operator $B$, the orthogonal projection of $L^2$ onto the Bergman space with the reproducing kernel $K(z,w)$, is idempotent and self-adjoint, $B^2 = B = B^{*}$, and its self-adjointness is exactly the conjugate symmetry $K(z,w) = \overline{K(w,z)}$ of the kernel; on the diagonal $K(z,z) = \|K(z,\cdot)\|^2 > 0$ is real and generates the Bergman metric. When the domain is stable under the coordinate conjugation there is the conjugate-linear involution $\sigma f(z) = \overline{f(\bar z)}$, an antiunitary involution commuting with $B$, whose fixed space is the real Bergman space; the conjugate symmetry of the kernel, the self-adjointness of the projection and the commutation with $\sigma$ are the three faces of the same Hermitian geometry, and on the disc and the bounded symmetric domains the conjugation is the real structure of the domain. The kernel and the projection are <em>The Bergman Operator</em> and <em>Reproducing Kernel Hilbert Spaces</em>; the adjoint and the positivity are <em>The Adjoint of a Hermitian Operator</em>; the real structure is <em>Real Structures on a Complex Manifold</em>; the symmetric domain is <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^2(\Omega)$</td>
+<td>the Bergman space</td>
+</tr>
+<tr>
+<td>$K(z,w)$</td>
+<td>the Bergman kernel, conjugate-symmetric</td>
+</tr>
+<tr>
+<td>$B$, $B^2=B=B^{*}$</td>
+<td>the Bergman projection</td>
+</tr>
+<tr>
+<td>$K(z,w)=\overline{K(w,z)}$</td>
+<td>conjugate symmetry, equivalent to $B^{*}=B$</td>
+</tr>
+<tr>
+<td>$\sigma f(z)=\overline{f(\bar z)}$</td>
+<td>the conjugation of the Bergman space</td>
+</tr>
+<tr>
+<td>$A^2(\Omega)^{\sigma}$</td>
+<td>the real Bergman space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Steven R. Bell, <em>The Cauchy Transform, Potential Theory and Conformal Mapping</em> (CRC Press, second edition, 2016), for the Bergman projection, its self-adjointness and its kernel.</li>
+<li>Steven G. Krantz, <em>Function Theory of Several Complex Variables</em> (American Mathematical Society, second edition, 2001), for the Bergman kernel, the conjugate symmetry and the real Bergman space.</li>
+<li>Robert C. Gunning and Hugo Rossi, <em>Analytic Functions of Several Complex Variables</em> (Prentice-Hall, 1965), for the Bergman projection and its behaviour under conjugation.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Fourier Analysis</em> (Princeton University Press, 2003), for the orthogonal projections, the self-adjointness and the change of variables.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

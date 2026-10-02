@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Metrics and the Levi-Civita Connection — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-metrics-and-the-levi-civita-connection"><strong>Hermitian Metrics and the Levi-Civita Connection</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Riemannian metric makes a smooth manifold into a space on which lengths and angles are defined, and its fundamental theorem produces from it a single connection, the <strong>Levi-Civita connection</strong>, that is compatible with the metric and has no torsion. When the manifold also carries an <strong>involution</strong> of its tangent spaces — an almost complex structure $J$ with $J^2=-\mathrm{id}$ — a metric is <strong>Hermitian</strong> for it when $J$ is an isometry, and the two data interact: the Levi-Civita connection need not preserve $J$, and it does exactly when the metric form is closed, the <strong>Kähler</strong> case.</p>
+<p>The article develops the metric and the connection as the involution layer of the group. It recalls the Riemannian metric and the fundamental theorem in the form fixed by the operator group, then develops the Hermitian condition $g(JX,JY)=g(X,Y)$, its equivalent skew-adjointness of $J$, and the <strong>fundamental form</strong> $\omega(X,Y)=g(JX,Y)$. It proves that a metric-compatible connection preserves $J$ exactly when it preserves the fundamental form, characterises the Kähler condition by four equivalent statements — the closedness of $\omega$, the parallelism of $J$ under the Levi-Civita connection, the torsion-freeness of the Chern connection, and the coincidence of the two connections — and identifies the difference between the Levi-Civita and the Chern connections as the tensor $\nabla^{LC}J$.</p>
+<p>The article assumes the Riemannian metrics, the musical isomorphisms, the volume form and the Hodge star of the operator group and of Part IV; the metric-compatible connections, the torsion, the Koszul formula and the fundamental theorem of <em>The Covariant Derivative</em> in this category, where the theorem is proved; the almost complex structure, the type decomposition, the Nijenhuis tensor and the Hermitian metrics as geometric objects of <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV; and the Chern connection of a holomorphic Hermitian bundle of <em>Hermitian Vector Bundles and the Chern Connection</em>, the previous entry of this group. The Kähler manifold — the metric, the symplectic form, the curvature and the Hodge theory of the Kähler case — is <em>Kähler Geometry</em> and <em>Symplectic Geometry</em> in Part IV; the metric geometry of geodesics and curvature is <em>Riemannian Geometry</em> there. No physics is invoked.</p>
+<h2 id="riemannian-metrics">Riemannian Metrics</h2>
+<p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth family of inner products, that is, a smooth section $g$ of $S^2T^*M$ that is positive definite on each fibre: $g(X,Y)=g(Y,X)$ and $g(X,X)>0$ for $X\neq0$.</p>
+<p>The metric provides the musical isomorphisms $\flat : TM \to T^*M$, $X \mapsto g(X,\cdot)$ and its inverse $\sharp$, the metric volume form $\mathrm{vol}_g$ in the chosen orientation, the Hodge star $\star$, the codifferential and the Laplace–Beltrami operator of the operator group, and the length of a curve. All of these are the metric <strong>used as a tool</strong>; the metric as an object — its curvature, its geodesics, its isometries — is <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> in Part IV, and is not developed here.</p>
+<p><strong>Example.</strong> On $\mathbb{R}^n$ the <strong>Euclidean metric</strong> has $g = \sum_i dx^i\otimes dx^i$ in the standard coordinates; on a submanifold of $\mathbb{R}^n$ the <strong>induced metric</strong> is the restriction of the Euclidean metric to the tangent spaces; on a Lie group the <strong>bi-invariant metrics</strong> come from an invariant inner product on the Lie algebra, as in <em>Lie Groups</em> in this Part. The flat torus and the round sphere are the two basic closed examples.</p>
+<h2 id="the-fundamental-theorem">The Fundamental Theorem</h2>
+<p><strong>Theorem (fundamental theorem of Riemannian geometry).</strong> On a Riemannian manifold $(M,g)$ there is exactly one connection $\nabla$ on the tangent bundle that is metric-compatible and torsion-free, the <strong>Levi-Civita connection</strong>. It is determined by the Koszul formula</p>
+<p>$$
+2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y]),
+$$</p>
+<p>and in a coordinate chart its components are the Christoffel symbols</p>
+<p>$$
+\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial_j g_{kl} + \partial_k g_{jl} - \partial_l g_{jk}\bigr).
+$$</p>
+<p><em>Proof.</em> This is the theorem of <em>The Covariant Derivative</em> in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.</p>
+<p><strong>Proposition (properties of the Levi-Civita connection).</strong> Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{\dot\gamma}\dot\gamma=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.</p>
+<h2 id="hermitian-metrics-and-the-involution">Hermitian Metrics and the Involution</h2>
+<h3 id="the-hermitian-condition">The Hermitian Condition</h3>
+<p><strong>Definition.</strong> An <strong>almost complex structure</strong> on $M$ is a bundle endomorphism $J : TM \to TM$ with $J^2 = -\mathrm{id}_{TM}$; it is an involution of the tangent spaces whose square is minus the identity, and the pair $(M,J)$ is an almost complex manifold. A Riemannian metric $g$ is <strong>Hermitian</strong> for $J$ if $J$ is an isometry of each tangent space:</p>
+<p>$$
+g(JX, JY) = g(X, Y) \qquad \text{for all } X, Y \in \mathrm{X}(M).
+$$</p>
+<p>The triple $(M, J, g)$ is a <strong>Hermitian manifold</strong>; the almost complex structures, their integrability by the Newlander–Nijenhuis theorem and the Nijenhuis tensor are <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV, where the geometry of the pair is developed.</p>
+<p><strong>Proposition.</strong> The Hermitian condition is equivalent to the skew-adjointness of $J$ with respect to $g$:</p>
+<p>$$
+g(JX, Y) = -g(X, JY), \qquad \text{that is,} \qquad J^* = -J \ \text{for } g .
+$$</p>
+<p>In particular $g(JX,X) = 0$ for every $X$, so no tangent vector is $g$-orthogonal to nothing; $J$ is a $g$-antisymmetric endomorphism, and $g$ makes the complexified tangent bundle $T_{\mathbb{C}}M$ a Hermitian space with respect to the $\mathbb{C}$-bilinear extension of $g$ and the conjugation.</p>
+<p><em>Proof.</em> If $g(JX,JY)=g(X,Y)$, then $g(JX,Y) = g(JX,-J(JY)) = -g(JX,J(JY)) = -g(X,JY)$, using the invariance with the two arguments $X$ and $JY$. Conversely, $g(JX,Y)=-g(X,JY)$ gives $g(JX,JY) = -g(X,J(JY)) = g(X,Y)$ by $J^2=-1$. Setting $Y=X$ in the first form gives $g(JX,X)=-g(X,JX)=-g(JX,X)$, hence $g(JX,X)=0$.</p>
+<h3 id="the-fundamental-form">The Fundamental Form</h3>
+<p><strong>Definition.</strong> The <strong>fundamental form</strong> (or Kähler form) of a Hermitian manifold is the $2$-form</p>
+<p>$$
+\omega(X, Y) = g(JX, Y), \qquad X, Y \in \mathrm{X}(M).
+$$</p>
+<p><strong>Proposition.</strong> The fundamental form is a real $2$-form; it is antisymmetric because $g$ is symmetric and $J$ is $g$-skew: $\omega(Y,X)=g(JY,X)=-g(X,JY)=-g(JX,Y)=-\omega(X,Y)$; it is nondegenerate, because $\omega(X,Y)=0$ for all $Y$ forces $JX=0$ and hence $X=0$; and it is of type $(1,1)$ for the complexified metric, $\omega(JX,JY)=\omega(X,Y)$.</p>
+<p><em>Proof.</em> The antisymmetry and the nondegeneracy are immediate from the definitions and the invertibility of $J$; the type statement is the invariance of $g$ and $J$. A nondegenerate $2$-form is a <strong>symplectic form</strong> when it is closed, and the closedness of $\omega$ is the Kähler condition of the next section; the symplectic form as an object is <em>Symplectic Geometry</em> in Part IV.</p>
+<h2 id="the-levi-civita-connection-of-a-hermitian-metric">The Levi-Civita Connection of a Hermitian Metric</h2>
+<h3 id="metric-compatibility-and-the-involution">Metric Compatibility and the Involution</h3>
+<p><strong>Proposition.</strong> Let $\nabla$ be a metric-compatible connection on the tangent bundle, $\nabla g = 0$. Then $\nabla$ preserves the fundamental form, $\nabla\omega=0$, if and only if it preserves the involution, $\nabla J = 0$; and a metric-compatible connection with $\nabla J = 0$ has $\nabla\omega = 0$ automatically, so the two conditions are the same condition on the connection.</p>
+<p><em>Proof.</em> Since $\omega(X,Y)=g(JX,Y)$ and $\nabla g=0$, differentiating gives $(\nabla_Z\omega)(X,Y) = g((\nabla_ZJ)X,Y)$, so $\nabla\omega=0$ is equivalent to $\nabla J=0$. Reading the two tensor fields as sections of the appropriate bundles, the Leibniz rule and the metric compatibility convert one into the other.</p>
+<p><strong>Corollary.</strong> A metric-compatible connection preserves the type decomposition of the complexified tangent bundle, $T_{\mathbb{C}}M = T^{1,0}M\oplus T^{0,1}M$ into the eigenbundles of $J$, if and only if $\nabla J = 0$; it then preserves the Dolbeault decomposition of the forms. The connection is therefore compatible with the almost complex structure exactly when the structure is parallel for it, and this is a strictly stronger condition than metric compatibility.</p>
+<h3 id="the-kahler-condition-and-the-comparison-of-the-connections">The Kähler Condition and the Comparison of the Connections</h3>
+<p>The Levi-Civita connection is torsion-free but need not preserve $J$; the Chern connection of <em>Hermitian Vector Bundles and the Chern Connection</em> is metric-compatible and compatible with the holomorphic structure, but it has torsion in general and it need not preserve $J$. The precise relation between the two conditions is the subject of the following theorem, which is the bridge between this article and the Kähler geometry of Part IV.</p>
+<p><strong>Theorem (the Kähler conditions).</strong> Let $(M,J,g)$ be a Hermitian manifold, with $J$ integrable, and let $\nabla^{LC}$ be the Levi-Civita connection and $\nabla^{Ch}$ the Chern connection. The following are equivalent:</p>
+<p><strong>(a)</strong> the fundamental form is closed, $d\omega = 0$;</p>
+<p><strong>(b)</strong> $J$ is parallel for the Levi-Civita connection, $\nabla^{LC}J = 0$;</p>
+<p><strong>(c)</strong> the fundamental form is parallel, $\nabla^{LC}\omega = 0$;</p>
+<p><strong>(d)</strong> the Chern connection is torsion-free;</p>
+<p><strong>(e)</strong> the Chern connection equals the Levi-Civita connection, $\nabla^{Ch} = \nabla^{LC}$;</p>
+<p>and when any of them holds, the manifold is a <strong>Kähler manifold</strong>.</p>
+<p><em>Proof.</em> The equivalence of (b) and (c) is the previous proposition applied to $\nabla^{LC}$, which is metric-compatible. The equivalence of (a) and (b) is the classical computation: for a torsion-free metric connection, $d\omega$ is the antisymmetrisation of $\nabla^{LC}\omega$, so $d\omega=0$ if and only if $\nabla^{LC}\omega=0$, and by the proposition this is $\nabla^{LC}J=0$. The Chern connection is metric-compatible by definition, so by the fundamental theorem it is torsion-free exactly when it equals the Levi-Civita connection; this is (d) $\Leftrightarrow$ (e). Finally, if $\nabla^{LC}J=0$ then $\nabla^{LC}$ is metric-compatible and has $(0,1)$-part $\bar\partial$, so it satisfies the two defining properties of the Chern connection and the two coincide by uniqueness; conversely, if $\nabla^{Ch}=\nabla^{LC}$ then the Levi-Civita connection preserves the holomorphic structure, hence $\nabla^{LC}J=0$, and the claim follows; the detailed computation of the torsion of the Chern connection is that of <em>Kähler Geometry</em> in Part IV. Each of the five statements therefore implies the others, and the Kähler condition is their common content.</p>
+<p><strong>Corollary.</strong> In the non-Kähler case the Levi-Civita and the Chern connections differ by a tensor field built from $\nabla^{LC}J$, and this tensor vanishes exactly in the Kähler case; the Levi-Civita connection is the torsion-free one and does not preserve the involution, the Chern connection preserves the metric and the holomorphic structure and does not have zero torsion, and neither condition implies the other outside the Kähler case.</p>
+<p><em>Proof.</em> The two connections are both metric-compatible, so their difference is an $\mathfrak{so}(TM,g)$-valued $1$-form; it vanishes exactly when the Levi-Civita connection has $\nabla^{LC}J=0$, by the theorem, and the difference is built from the covariant derivative of $J$ by the failure of $J$ to be parallel. The two normalisations are the standard ones.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the flat case).</strong> On $\mathbb{C}^n$ with the standard complex structure $J$ and the Euclidean metric, $J$ is parallel for the flat Levi-Civita connection, so the manifold is Kähler; the fundamental form is $\omega = \sum_j dx_j\wedge dy_j$, closed, and the Chern connection of the tangent bundle is the flat connection.</p>
+<p><strong>Example (the round sphere).</strong> On $S^2$ with its standard complex structure and the round metric, the fundamental form is the area form, which is closed because it is a top form; hence the round sphere is Kähler, and the Levi-Civita connection preserves the complex structure.</p>
+<p><strong>Example (a non-Kähler Hermitian manifold).</strong> On the product of the three-sphere with the circle, and on the Hopf surface, there are Hermitian metrics whose fundamental form is not closed; there the Levi-Civita connection does not preserve $J$, the Chern connection has torsion, and the two connections differ. The construction of such metrics and the Kähler/non-Kähler dichotomy are the subject of <em>Hermitian Geometry and Almost Complex Structures</em> and <em>Kähler Geometry</em> in Part IV.</p>
+<p><strong>Example (the induced metric on a complex submanifold).</strong> A complex submanifold of a Kähler manifold, with the induced metric, is Kähler; the fundamental form is the restriction of the ambient one; this is the Kähler-case instance of the induced-metric construction of the first section.</p>
+<h2 id="summary">Summary</h2>
+<p>A Riemannian metric is a smooth family of inner products; it supplies the musical isomorphisms, the volume form, the Hodge star and the codifferential, and the fundamental theorem produces the unique metric-compatible torsion-free connection, the Levi-Civita connection, determined by the Koszul formula and locally by the Christoffel symbols. A metric is Hermitian for an almost complex structure $J$ when $J$ is an isometry, equivalently when $J$ is $g$-skew-adjoint, and then the fundamental form $\omega(X,Y)=g(JX,Y)$ is a nondegenerate real $2$-form of type $(1,1)$.</p>
+<p>For a metric-compatible connection, preserving the fundamental form, preserving the involution $J$ and preserving the type decomposition are one and the same condition, $\nabla J=0$. The Levi-Civita connection satisfies it exactly when the Hermitian manifold is Kähler, and the Kähler condition has the five equivalent forms: $d\omega=0$; $\nabla^{LC}J=0$; $\nabla^{LC}\omega=0$; the Chern connection is torsion-free; the two connections coincide. Outside the Kähler case the Levi-Civita connection is torsion-free but does not preserve $J$, the Chern connection preserves the metric and the holomorphic structure but has torsion, and they differ by a tensor built from $\nabla^{LC}J$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g$, $g(X,X)>0$</td>
+<td>Riemannian metric, a smooth family of inner products</td>
+</tr>
+<tr>
+<td>$\flat, \sharp$</td>
+<td>Musical isomorphisms $TM \leftrightarrow T^*M$</td>
+</tr>
+<tr>
+<td>$\mathrm{vol}_g$, $\star$, $\delta$</td>
+<td>Metric volume form, Hodge star, codifferential</td>
+</tr>
+<tr>
+<td>Fundamental theorem, Koszul formula</td>
+<td>The unique metric-compatible torsion-free connection</td>
+</tr>
+<tr>
+<td>$\Gamma^i_{jk} = \tfrac12g^{il}(\partial_jg_{kl}+\partial_kg_{jl}-\partial_lg_{jk})$</td>
+<td>Christoffel symbols</td>
+</tr>
+<tr>
+<td>$J$, $J^2=-\mathrm{id}$</td>
+<td>Almost complex structure; the involution of the tangent spaces</td>
+</tr>
+<tr>
+<td>$g(JX,JY)=g(X,Y)$</td>
+<td>Hermitian condition; equivalently $g(JX,Y)=-g(X,JY)$, $J^*=-J$</td>
+</tr>
+<tr>
+<td>$(M,J,g)$</td>
+<td>Hermitian manifold</td>
+</tr>
+<tr>
+<td>$\omega(X,Y)=g(JX,Y)$</td>
+<td>Fundamental form; nondegenerate, of type $(1,1)$</td>
+</tr>
+<tr>
+<td>$\nabla^{LC}$, $\nabla^{Ch}$</td>
+<td>Levi-Civita and Chern connections</td>
+</tr>
+<tr>
+<td>$\nabla J = 0 \Leftrightarrow \nabla\omega = 0$</td>
+<td>Metric-compatible connection preserves the involution</td>
+</tr>
+<tr>
+<td>$d\omega=0$, $\nabla^{LC}J=0$, $\nabla^{LC}\omega=0$</td>
+<td>Equivalent forms of the Kähler condition</td>
+</tr>
+<tr>
+<td>$\nabla^{Ch}$ torsion-free, $\nabla^{Ch}=\nabla^{LC}$</td>
+<td>The remaining equivalent forms; Kähler</td>
+</tr>
+<tr>
+<td>Non-Kähler</td>
+<td>$\nabla^{LC}J \neq 0$; the two connections differ</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, vol. II (Interscience, 1969), for Hermitian metrics, the fundamental form, the Kähler condition and the comparison of the Hermitian and Levi-Civita connections.</li>
+<li>Werner Ballmann, <em>Lectures on Kähler Manifolds</em> (European Mathematical Society, 2006), for the equivalence of the Kähler conditions and the Chern connection.</li>
+<li>John M. Lee, <em>Introduction to Riemannian Manifolds</em>, 2nd ed. (Springer, 2018), for the Riemannian metric, the fundamental theorem and the Koszul formula.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Hermitian metrics, the Kähler form and the complex geometry of the non-Kähler case.</li>
+<li>Sigmundur Gudmundsson, <em>An Introduction to Riemannian Geometry</em> (Lund, 2020), for the metric compatibility, the torsion and the Levi-Civita connection with the sign conventions used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

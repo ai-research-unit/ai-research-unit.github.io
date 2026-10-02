@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions and the Cobordism of Group Actions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-and-the-cobordism-of-group-actions"><strong>Involutions and the Cobordism of Group Actions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a manifold has a <strong>cobordism theory</strong>: two involutions of closed manifolds are equivariantly cobordant when they bound an involution of a manifold with boundary, and the cobordism classes form a graded ring — the <strong>equivariant bordism ring</strong> — in which the fixed set, the quotient and the equivariant characteristic numbers are the invariants. This article is the cobordism theory of the group actions, in the case of the group $\mathbb{Z}/2$ and its generalisations: the equivariant bordism rings, the Conner–Floyd theorem that the unoriented ring is a polynomial algebra detected by the equivariant Stiefel–Whitney numbers, the oriented theory with its equivariant Pontryagin and signature invariants, and the relation to the equivariant surgery of the earlier articles.</p>
+<p>The cobordism of involutions sits between the classification and the invariants: it is coarser than the classification of <em>Involutions on Manifolds and Equivariant Surgery</em> (cobordism forgets the homotopy type and keeps the characteristic numbers) and finer than the homological invariants of the group (it keeps the equivariant characteristic numbers). The two extremes of the theory are the <strong>free</strong> involutions, whose cobordism reduces to the ordinary cobordism of the quotient, and the <strong>fixed</strong> involutions of a reflection, whose cobordism is the cobordism of the fixed set with its normal data.</p>
+<p><strong>The article assumes</strong> the differential topology of the bordism theory, the Stiefel–Whitney and Pontryagin classes, the equivariant surgery of <em>Involutions on Manifolds and Equivariant Surgery</em>, the Smith theory of <em>Periodic Maps and the Smith Theory</em>, and the ordinary cobordism rings of <em>Cobordism and Surgery Theory</em>.</p>
+<p><strong>The boundaries of the article.</strong> The ordinary cobordism rings and the Thom spectra are <em>Cobordism and Surgery Theory</em>; the equivariant surgery obstruction is <em>Involutions on Manifolds and Equivariant Surgery</em>; the equivariant signature and the $G$-signature theorem are <em>Hermitian Pairings and the Equivariant Signature</em>; the equivariant stable homotopy, the equivariant Thom spectra and the completions are <em>Stable Homotopy Theory</em>. The differentiable structures and the transversality are Part III. No analysis is used, and the smooth constructions are treated through their bordism-theoretic consequences.</p>
+<h2 id="equivariant-bordism">Equivariant Bordism</h2>
+<p><strong>Definition.</strong> Let $G$ be a finite group. A <strong>$G$-manifold</strong> is a closed manifold with a smooth action of $G$, and two $G$-manifolds $M_0,M_1$ are <strong>$G$-cobordant</strong> if there is a compact $G$-manifold $W$ with $\partial W = M_0\sqcup M_1$ and the induced actions; the classes form the <strong>unoriented $G$-bordism group</strong> $\mathcal{N}_*^{G}$ and, for oriented $G$-manifolds and oriented cobordisms, the <strong>oriented $G$-bordism ring</strong> $\Omega_*^{G}$. For $G = \mathbb{Z}/2$ the elements are the involutions of closed manifolds up to equivariant cobordism.</p>
+<p><strong>Proposition (elementary properties).</strong> The equivariant bordism groups are modules over the ordinary bordism ring $\mathcal{N}_*$ (respectively $\Omega_*$) through the products with trivial actions, and the graded direct sums are graded rings under the product of $G$-manifolds with the diagonal action. The <strong>fixed set</strong> is a bordism invariant: if $M_0$ and $M_1$ are $G$-cobordant, then their fixed sets are cobordant as manifolds with the induced normal data; the <strong>quotient</strong> is a bordism invariant in the free case, where $M/G$ is a closed manifold of the same dimension.</p>
+<p><strong>Proof.</strong> The statements are formal: the product of a $G$-manifold with a manifold with trivial action is a $G$-manifold, giving the module and ring structure; a $G$-cobordism restricts to a cobordism of the fixed sets because the fixed set of the boundary is the boundary of the fixed set of the cobordism; in the free case the quotient of the cobordism is a cobordism of the quotients.</p>
+<p><strong>Proposition (the free case reduces to the quotient).</strong> If $G = \mathbb{Z}/2$ and the actions are free, then the association $M\mapsto M/\mathbb{Z}/2$ is a bijection from free equivariant bordism classes to ordinary bordism classes of closed manifolds of the same dimension; the inverse is the orientation double cover or the connected double cover according to the orientation behaviour.</p>
+<p><strong>Proof.</strong> The quotient of a free action is a manifold and the passage is compatible with the cobordisms; conversely every closed manifold has a free involution on its connected double cover, and the two constructions are inverse on the bordism classes. The statement is the free case of the equivariant theory and it shows that the free part of the equivariant bordism is the ordinary bordism of the quotients.</p>
+<h2 id="the-connerfloyd-theorem">The Conner–Floyd Theorem</h2>
+<p><strong>Theorem (Conner–Floyd).</strong> For a finite group $G$ the unoriented equivariant bordism ring $\mathcal{N}_*^{G}$ is a polynomial algebra over $\mathbb{F}_2$, and two $G$-manifolds are $G$-cobordant if and only if they have the same equivariant Stiefel–Whitney numbers, that is, the same values of the Stiefel–Whitney classes of the normal representations evaluated on the fixed sets and of the ordinary Stiefel–Whitney classes of the quotient. For $G = \mathbb{Z}/2$ the generators can be taken to be the classes of the standard involutions: the free classes of the projective spaces and the classes of the reflections of the discs and spheres.</p>
+<p><strong>Proof sketch.</strong> The theorem is proved by the equivariant Pontryagin–Thom construction: the $G$-bordism is the homotopy of the equivariant Thom spectrum, and the equivariant Stiefel–Whitney numbers detect the homotopy classes by the structure of the equivariant cohomology of the classifying spaces; the polynomial algebra statement follows from the splitting of the spectrum into the pieces indexed by the orbit types and the ordinary Thom theorem on each piece. The proof and the explicit generators are those of Conner–Floyd; the present article records the statement and its consequence for the involutions.</p>
+<p><strong>Corollary (the invariants of an involution up to cobordism).</strong> The cobordism class of an involution of a closed manifold is determined by the equivariant Stiefel–Whitney numbers, which are computed from the fixed set (with its normal representations), the quotient and the action on the normal bundles; in particular the cobordism class is determined by data supported on the fixed set and on the quotient separately, which is the equivariant version of the splitting of the homology by the orbit types.</p>
+<p><strong>Proof sketch.</strong> The Stiefel–Whitney numbers are the evaluation of the characteristic classes on the fundamental classes of the fixed sets and of the quotients; the theorem says that these numbers are complete. The computation of the numbers from the fixed data is the content of the "double of the quotient" description in the smooth setting; the derivation is Part III's.</p>
+<p><strong>Remark (the Smith homomorphism).</strong> The passage to the fixed set gives a homomorphism from the equivariant bordism to the ordinary bordism of the fixed sets, shifted in degree by the codimension; it is a module homomorphism for the ordinary bordism, and it is the cobordism-level shadow of the Smith theory of <em>Periodic Maps and the Smith Theory</em>. Its image and kernel are computed by Conner–Floyd and are the algebraic skeleton of the equivariant bordism.</p>
+<h2 id="the-oriented-theory-and-the-signature">The Oriented Theory and the Signature</h2>
+<p><strong>Definition.</strong> The <strong>oriented equivariant bordism ring</strong> $\Omega_*^{G}$ is the bordism of closed oriented $G$-manifolds with orientation-preserving actions, modulo oriented equivariant cobordisms.</p>
+<p><strong>Theorem (the oriented invariants, statement).</strong> For a finite group $G$ the oriented equivariant bordism is detected by the equivariant Pontryagin numbers and the equivariant characteristic classes of the fixed sets, together with the <strong>equivariant signature</strong> in dimensions divisible by four: the multisignature of the fixed sets with their normal representations. In particular an orientation-preserving involution of a closed oriented $4k$-manifold that is equivariantly null-cobordant has vanishing ordinary signature and vanishing equivariant signatures $\sigma(g, M)$ at every element $g$ of the group.</p>
+<p><strong>Proof sketch.</strong> The oriented bordism is the homotopy of the oriented equivariant Thom spectrum; the characteristic numbers detect the homotopy classes rationally and the torsion is detected by the $\mathbb{Z}/2$-valued invariants, and the signature components are the $L$-theoretic part of the rational detection. The details for $\mathbb{Z}/2$ and the relation to the $G$-signature theorem are in the literature; the analytic computation of the $\sigma(g,M)$ is <em>Hermitian Pairings and the Equivariant Signature</em>, and the torsion statements are <em>Stable Homotopy Theory</em>.</p>
+<p><strong>Corollary (cobordism invariance of the equivariant signature).</strong> The multisignature $\sigma(g,M)$ is an invariant of the oriented equivariant bordism class of $(M,g)$; this is the cobordism-theoretic form of the $G$-signature theorem, and it is the reason the equivariant signature is the natural invariant of an equivariantly null-cobordant manifold.</p>
+<p><strong>Proof.</strong> The signature is a bordism invariant of an oriented manifold, and the equivariant signatures are the signatures of the twisted forms of <em>The Involution on the Homology</em>; the equivariant cobordism restricts to the twisted forms on the boundary, so that the twisted signatures add over a cobordism and vanish on a null-cobordism.</p>
+<p><strong>Remark (the tom Dieck splitting).</strong> The equivariant bordism of a finite group splits, after the appropriate completion, as a sum of the bordism of the centralisers or normalisers of the subgroups: the "orbit-type" splitting of the equivariant Thom spectrum. The statement organises the computations of the equivariant bordism rings, and its systematic development belongs to the equivariant stable homotopy of <em>Stable Homotopy Theory</em>. The present article uses the splitting only as the reason the free and the fixed parts can be treated separately.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the free involutions).</strong> The antipodal map of $S^{2n+1}$ is a free orientation-preserving involution with quotient $\mathbb{RP}^{2n+1}$; its equivariant bordism class is the class of the quotient, and the free classes are the images of the ordinary bordism under the double cover. The example shows the reduction of the free part to the ordinary bordism.</p>
+<p><strong>Example (the reflections).</strong> The reflection of $S^n$ in an equator has fixed set $S^{n-1}$ and quotient the disc; its equivariant bordism class is a standard "fixed" generator, and its equivariant Stiefel–Whitney numbers are those of the fixed sphere with the trivial normal line. The classes of the reflections and the free projective classes generate the unoriented equivariant bordism of $\mathbb{Z}/2$ by Conner–Floyd.</p>
+<p><strong>Example (the null-cobordant involutions).</strong> An orientation-preserving involution of an even-dimensional closed oriented manifold bounds an equivariant null-cobordism exactly when its ordinary and equivariant signatures vanish and its equivariant characteristic numbers vanish; the statement is the dimension-by-dimension form of the oriented detection theorem, and the dimension four is the first in which the signature components are nontrivial.</p>
+<p><strong>Example (the involution on the double of a manifold with boundary).</strong> Let $\Sigma$ be a compact manifold with boundary and let $M$ be its double; the reflection swapping the two copies is an involution with fixed set the boundary. The class of the involution is the "boundary" class, and it is a boundary of the equivariant cobordism — the trace being $\Sigma\times[0,1]$ with the reflection — so the construction exhibits the fixed-set classes of the reflections as the boundaries. The example is the cobordism-level statement of the double construction used in the surface classification.</p>
+<h2 id="the-module-structure-and-the-comparison">The Module Structure and the Comparison</h2>
+<p><strong>Proposition (the equivariant bordism as a module over the ordinary bordism).</strong> The product of a $G$-manifold with a manifold of trivial action makes $\mathcal{N}_*^{G}$ a graded module over the ordinary bordism ring $\mathcal{N}_*$ and makes $\mathcal{N}_*^{G}$ a graded algebra over $\mathcal{N}_*$; the forgetful map $\mathcal{N}_*^{G}\to\mathcal{N}_*$, which forgets the action, is a homomorphism of $\mathcal{N}_*$-modules and of rings, and it is surjective because the trivial action on a manifold provides a section.</p>
+<p><strong>Proof.</strong> The product with the trivial action is a $G$-manifold with the action on the first factor only; the associativity and the distributivity give the module and the algebra structure; the forgetful map is compatible with the products because forgetting the action of a product is forgetting the action on the factor. The trivial action gives the section $M\mapsto M$ with the trivial $G$-action, so the forgetful map is surjective.</p>
+<p><strong>Remark (the kernel and the equivariant refinement).</strong> The kernel of the forgetful map consists of the $G$-manifolds equivariantly cobordant to a manifold with the trivial action; it is the "purely equivariant" part of the bordism, detected by the equivariant Stiefel–Whitney numbers of the nontrivial representations. For $\mathbb{Z}/2$ the kernel is spanned by the free classes and by the classes of the reflections, which is the content of the splitting of the equivariant bordism into the free and the fixed parts.</p>
+<h2 id="the-fixed-set-data-in-cobordism">The Fixed-Set Data in Cobordism</h2>
+<p><strong>Proposition (the fixed set of an involution, structurally).</strong> Let a smooth involution act on a closed $n$-manifold $M$. Then the fixed set $F$ is a disjoint union of closed submanifolds, and the normal bundle of each component splits as a sum of line bundles on which the involution acts by $-1$; the codimension of a component can be any integer between $0$ and $n$, and the whole normal representation is a sum of copies of the sign representation. The fixed set is a bordism invariant: a $G$-cobordism restricts to a cobordism of the fixed sets with their normal data.</p>
+<p><strong>Proof.</strong> At a fixed point the differential of the involution is an involution of the tangent space, hence diagonalisable with eigenvalues $\pm1$; the $+1$ eigenspace is the tangent space of the fixed set and the $-1$ eigenspace the normal direction, so the normal bundle splits into the eigen-line-bundles and the representation is a sum of signs. The bordism invariance is the restriction of a $G$-cobordism to the fixed sets, as in the elementary properties above.</p>
+<p><strong>Theorem (the equivariant numbers of the fixed set).</strong> The equivariant Stiefel–Whitney numbers of an involution are the ordinary Stiefel–Whitney numbers of the fixed components evaluated against the characteristic classes of their normal bundles, together with the ordinary numbers of the quotient; hence the cobordism class of the involution is determined by the fixed-set data and the quotient data separately, and the fixed-set part of the determination is an invariant of the Smith theory of <em>Periodic Maps and the Smith Theory</em>.</p>
+<p><strong>Proof sketch.</strong> The total Stiefel–Whitney class of $M$ restricts to the fixed set as the product of the class of the fixed component and the class of the normal bundle with the signs of the summands; the evaluation on the fundamental class of the fixed component gives the stated numbers, and the completeness is Conner–Floyd's theorem. The quotient numbers are computed from the same data by the Smith sequences.</p>
+<p><strong>Example (the fixed spheres and the codimension).</strong> The reflection of $S^n$ has the fixed equator $S^{n-1}$ of codimension one, and the free antipodal involution has empty fixed set; the two extremes realise the two ends of the fixed-set dichotomy, and the intermediate cases are the fixed submanifolds of intermediate codimension with the normal sums of sign representations. The example shows the freedom of the codimension in the fixed-set data of the cobordism.</p>
+<h2 id="summary">Summary</h2>
+<p>Two involutions of closed manifolds are equivariantly cobordant when they bound an involution of a manifold with boundary; the classes form the equivariant bordism rings, modules and algebras over the ordinary bordism, with the fixed set and the quotient as bordism invariants. In the free case the equivariant bordism is the ordinary bordism of the quotients, through the double cover. The Conner–Floyd theorem states that the unoriented equivariant bordism of a finite group is a polynomial algebra over $\mathbb{F}_2$ and that its invariants are the equivariant Stiefel–Whitney numbers, computable from the fixed data and the quotient; the passage to the fixed set is the Smith homomorphism. The oriented equivariant bordism is detected by the equivariant Pontryagin numbers together with the equivariant signatures in dimensions divisible by four, and the equivariant signature is a bordism invariant, which is the cobordism-theoretic form of the $G$-signature theorem. The free involutions, the reflections, the null-cobordant involutions and the involutions on the double of a manifold with boundary are the standard examples, and the splitting by the orbit types organises the computation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$-manifold, $G$-cobordism</td>
+<td>a closed manifold with a $G$-action; a $G$-manifold with boundary realising the cobordism</td>
+</tr>
+<tr>
+<td>$\mathcal{N}_*^{G}$</td>
+<td>the unoriented equivariant bordism ring</td>
+</tr>
+<tr>
+<td>$\Omega_*^{G}$</td>
+<td>the oriented equivariant bordism ring</td>
+</tr>
+<tr>
+<td>$M/G$, $F = M^{G}$</td>
+<td>the quotient and the fixed set; bordism invariants</td>
+</tr>
+<tr>
+<td>free case $M\mapsto M/\mathbb{Z}/2$</td>
+<td>the free equivariant bordism is the ordinary bordism of the quotients</td>
+</tr>
+<tr>
+<td>equivariant Stiefel–Whitney numbers</td>
+<td>the Conner–Floyd invariants detecting the unoriented equivariant bordism</td>
+</tr>
+<tr>
+<td>Smith homomorphism</td>
+<td>the passage from the equivariant bordism to the ordinary bordism of the fixed sets</td>
+</tr>
+<tr>
+<td>$\sigma(g,M)$</td>
+<td>the equivariant signature, an oriented equivariant bordism invariant in dimensions $4k$</td>
+</tr>
+<tr>
+<td>equivariant Pontryagin numbers</td>
+<td>the rational invariants of the oriented equivariant bordism</td>
+</tr>
+<tr>
+<td>orbit-type splitting</td>
+<td>the tom Dieck decomposition organising the equivariant bordism</td>
+</tr>
+<tr>
+<td>forgetful map $\mathcal{N}_*^{G}\to\mathcal{N}_*$</td>
+<td>forgetting the action; surjective, with the trivial action as a section</td>
+</tr>
+<tr>
+<td>normal bundle of a fixed component</td>
+<td>a sum of line bundles with the $-1$ action of the involution</td>
+</tr>
+<tr>
+<td>$F$ and $M\setminus F$</td>
+<td>the fixed set and the free part; the two orbit types of the action</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pierre E. Conner and Edwin E. Floyd, <em>Differentiable Periodic Maps</em> (Springer, 1964), for the equivariant bordism rings, the Conner–Floyd classes and the structure theorems for $\mathbb{Z}/p$ actions.</li>
+<li>Pierre E. Conner, <em>Differentiable Periodic Maps</em>, second edition (Springer Lecture Notes 738, 1979), for the systematic theory and the Smith homomorphisms.</li>
+<li>Tammo tom Dieck, "Bordism of $G$-Manifolds and Integrality Theorems", <em>Topology</em> 9 (1970), 345–358, for the splitting of the equivariant bordism and the integrality.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups and Representation Theory</em> (Springer Lecture Notes 766, 1979), for the equivariant homotopy, the Thom spectra and the bordism.</li>
+<li>R. E. Stong, <em>Notes on Cobordism Theory</em> (Princeton University Press, 1968), for the ordinary cobordism rings and the characteristic numbers used as the comparison.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The Index of Elliptic Operators: III", <em>Annals of Mathematics</em> 87 (1968), 546–604, for the $G$-signature theorem, whose equivariant signature is the oriented invariant here.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the Smith theory and the fixed-set techniques underlying the equivariant cobordism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

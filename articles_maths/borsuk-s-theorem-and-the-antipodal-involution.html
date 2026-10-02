@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borsuk's Theorem and the Antipodal Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="borsuks-theorem-and-the-antipodal-involution"><strong>Borsuk's Theorem and the Antipodal Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antipodal involution $x \mapsto -x$ of the sphere $S^{n}$ is the standard free involution, and its equivariant maps have a rigidity that no other involution of the sphere shares: a continuous map of the sphere to a lower-dimensional sphere that commutes with the antipodal involutions cannot exist, and a continuous map of the sphere to Euclidean space that is <strong>odd</strong> must vanish somewhere. These are the statements of <strong>Borsuk's theorem</strong>, and they are the first place in the corpus where the equivariant structure of the antipodal involution forces a topological conclusion. The article states the theorem in its several equivalent forms, proves the case of the circle $S^{1}$ completely, and shows how the general case is a computation of the equivariant topology of the quotient: an odd map $S^{n} \to S^{n-1}$ would descend to a map $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$ whose effect on the mod-$2$ cohomology is impossible.</p>
+<p>The article is the last of the group <code>- * Theory</code> and it uses the free involution and the orbit space of <em>The Orbit Space of a Free Involution</em>, the equivariant maps of <em>Equivariant Maps and Equivariant Homotopy</em>, and the quotient description of <em>Spaces with an Involution and the Orbit Space</em>. The computation of the mod-$2$ cohomology of real projective space and the degree of a map of spheres belong to the algebraic topology of this Part, and the general proof of Borsuk's theorem is cited there; the equivariant reduction that this article gives is complete, and only the cohomological input is deferred.</p>
+<p>Only the topology and the real numbers are used, together with the intermediate value theorem of the analysis of Part I. No metric is chosen beyond the standard one on the sphere, and the theorem is used later for its equivariant content rather than for any measure or length.</p>
+<h2 id="the-antipodal-involution-and-odd-maps">The Antipodal Involution and Odd Maps</h2>
+<h3 id="odd-maps-as-equivariant-maps">Odd Maps as Equivariant Maps</h3>
+<p><strong>Definition.</strong> The <strong>antipodal involution</strong> of the sphere $S^{n} = \{x \in \mathbb{R}^{n+1} : |x| = 1\}$ is the map $\alpha(x) = -x$. A map $f : S^{n} \to \mathbb{R}^{k}$ is <strong>odd</strong>, or <strong>antipodal</strong>, when</p>
+<p>$$
+f(-x) = -f(x) \qquad (x \in S^{n}) .
+$$</p>
+<p><strong>Proposition.</strong> The antipodal involution is a free continuous involution of $S^{n}$, and the odd maps $S^{n} \to \mathbb{R}^{k}$ are exactly the equivariant maps for the antipodal involution of $S^{n}$ and the antipodal involution of $\mathbb{R}^{k}$. The odd maps $S^{n} \to S^{k}$ are the equivariant maps of the spheres.</p>
+<p><strong>Proof.</strong> Freeness is $x \neq -x$ on the sphere; continuity is that of the restriction of the linear map $x \mapsto -x$. An equivariant map to $\mathbb{R}^{k}$ with the antipodal involution is a continuous $f$ with $f(-x) = -f(x)$, which is the definition of oddness; the restriction to spheres is equivariant when the target is a sphere.</p>
+<h3 id="the-sphere-and-its-quotient">The Sphere and Its Quotient</h3>
+<p><strong>Theorem.</strong> The orbit space of the antipodal involution of $S^{n}$ is real projective space $\mathbb{RP}^{n}$, the orbit map $S^{n} \to \mathbb{RP}^{n}$ is a two-fold covering, and it is the universal two-fold covering of $\mathbb{RP}^{n}$ in the sense that every two-fold covering of $\mathbb{RP}^{n}$ is a pullback of it.</p>
+<p><strong>Proof.</strong> The orbit space is projective space by definition; the covering statement is that of <em>The Orbit Space of a Free Involution</em> for the free involution of a Hausdorff space; the universal property is that of the classifying space $\mathbb{RP}^{\infty}$ of <em>Two-Fold Coverings and the Borel Construction</em>, restricted to the finite projective space, where every two-fold covering is pulled back from the finite universal covering $S^{n} \to \mathbb{RP}^{n}$.</p>
+<p><strong>Corollary.</strong> An odd map $S^{n} \to S^{n-1}$ descends to a continuous map $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$ of the quotients, and conversely a continuous map $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$ lifts to an odd map $S^{n} \to S^{n-1}$.</p>
+<p><strong>Proof.</strong> The descent is the functoriality of the orbit space for equivariant maps, and the lift is the universal property of the covering $S^{n-1} \to \mathbb{RP}^{n-1}$ applied to the composite $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$, using that the two-fold covering of $\mathbb{RP}^{n}$ is the pullback.</p>
+<h2 id="borsuks-theorem">Borsuk's Theorem</h2>
+<h3 id="the-statements">The Statements</h3>
+<p><strong>Theorem (Borsuk).</strong> The following are equivalent.</p>
+<ol>
+<li>There is no continuous odd map $S^{n} \to S^{n-1}$.</li>
+<li>For every continuous $f : S^{n} \to \mathbb{R}^{n}$ there is $x \in S^{n}$ with $f(x) = f(-x)$.</li>
+<li>Every continuous odd map $f : S^{n} \to \mathbb{R}^{n}$ has a zero.</li>
+<li>There is no continuous map $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$ that induces an isomorphism on the first cohomology with $\mathbb{Z}/2$ coefficients.</li>
+</ol>
+<p>The statement (2) is the <strong>Borsuk–Ulam theorem</strong>, and (1) is its equivariant form.</p>
+<h3 id="the-equivalences">The Equivalences</h3>
+<p><strong>Theorem.</strong> The statements (1), (2) and (3) are equivalent, and (4) is the quotient form of (1).</p>
+<p><strong>Proof.</strong> (3) $\Rightarrow$ (2): given $f : S^{n} \to \mathbb{R}^{n}$, the map $g(x) = f(x) - f(-x)$ is continuous and odd, and $g(x) = 0$ is $f(x) = f(-x)$. (2) $\Rightarrow$ (3): an odd $g$ with $g(x) = g(-x)$ satisfies $g(x) = -g(x)$, so $g(x) = 0$. (1) $\Leftrightarrow$ (3): if an odd $g : S^{n} \to \mathbb{R}^{n}$ has no zero, then $x \mapsto g(x)/|g(x)|$ is a continuous odd map $S^{n} \to S^{n-1}$, contradicting (1); conversely an odd map $S^{n} \to S^{n-1}$ has no coincidence with itself under the antipodal involution, since $h(x) = h(-x) = -h(x)$ would give $h(x) = 0$, impossible for a map into the sphere, so it witnesses the failure of (2) and (3). Finally (4) is (1) read through the quotient, by the descent and lifting of odd maps to maps of projective spaces.</p>
+<h3 id="the-case-of-the-circle">The Case of the Circle</h3>
+<p><strong>Theorem.</strong> Borsuk's theorem holds for $n = 1$: there is no continuous odd map $S^{1} \to S^{0}$, and every continuous odd $f : S^{1} \to \mathbb{R}$ has a zero.</p>
+<p><strong>Proof.</strong> For the second statement, let $f : S^{1} \to \mathbb{R}$ be continuous and odd. Choose $x_{0} \in S^{1}$; if $f(x_{0}) = 0$ there is nothing to prove, so suppose $f(x_{0}) \neq 0$. Let $\gamma : [0,1] \to S^{1}$ be a continuous path from $\gamma(0) = x_{0}$ to $\gamma(1) = -x_{0}$, for instance the parametrisation of a semicircle. Then $f \circ \gamma$ is continuous, $(f\circ\gamma)(0) = f(x_{0})$ and $(f\circ\gamma)(1) = f(-x_{0}) = -f(x_{0})$; the two values are nonzero with opposite signs, so the intermediate value theorem gives $t$ with $(f\circ\gamma)(t) = 0$, and $f$ has a zero. For the first statement, a continuous map $h : S^{1} \to S^{0} = \{-1,1\}$ has image in a discrete space adjoined to the connected space $S^{1}$, hence is constant, and an odd constant is impossible, since $c = h(x) = -h(-x) = -c$ forces $c = 0$, which is not in $S^{0}$.</p>
+<p><strong>Remark.</strong> The case $n = 1$ is the whole of the theorem that can be proved with the intermediate value theorem; the cases $n \geq 2$ require the degree of a self-map of the sphere or, equivalently, the cohomology of the projective spaces, and they are proved in the algebraic topology of this Part.</p>
+<h2 id="borsuks-antipodal-theorem">Borsuk's Antipodal Theorem</h2>
+<h3 id="the-covering-statement">The Covering Statement</h3>
+<p><strong>Theorem (Borsuk's antipodal theorem).</strong> Let $F_{1}, \ldots, F_{n+1}$ be closed subsets of $S^{n}$ with $S^{n} = F_{1} \cup \cdots \cup F_{n+1}$. Then one of the sets contains an antipodal pair $\{x, -x\}$.</p>
+<p><strong>Proof sketch.</strong> Suppose none of the sets contains an antipodal pair, so that $F_{i} \cap (-F_{i}) = \emptyset$ for every $i$, and define</p>
+<p>$$
+g_{i}(x) = d(x, F_{i}) - d(-x, F_{i}) \qquad (i = 1, \ldots, n), \qquad g(x) = (g_{1}(x), \ldots, g_{n}(x)) \in \mathbb{R}^{n},
+$$</p>
+<p>with $d$ the distance on the sphere. Each $g_{i}$ is continuous and odd, hence so is $g$, and Borsuk–Ulam in the form (3) gives $x$ with $g(x) = 0$, that is, $d(x, F_{i}) = d(-x, F_{i})$ for every $i \leq n$. Since the sets cover, $x \in F_{j}$ for some $j$ and $-x \in F_{k}$ for some $k$. If $j \leq n$ then $d(x, F_{j}) = 0$, hence $d(-x, F_{j}) = 0$ and $-x \in F_{j}$ because $F_{j}$ is closed, giving an antipodal pair in $F_{j}$. If $k \leq n$ the same argument with $x$ and $-x$ interchanged gives an antipodal pair in $F_{k}$. The only remaining case is $j = k = n+1$, and then both $x$ and $-x$ lie in $F_{n+1}$, again an antipodal pair. Every case contradicts the supposition, so some set contains an antipodal pair.</p>
+<h3 id="the-lusternikschnirelmann-form">The Lusternik–Schnirelmann Form</h3>
+<p><strong>Theorem.</strong> Borsuk's antipodal theorem is equivalent to Borsuk–Ulam: each implies the other. Equivalently, the covering statement for $n+1$ closed sets is the same assertion as the non-existence of an odd map $S^{n} \to S^{n-1}$.</p>
+<p><strong>Proof.</strong> The proof of the antipodal theorem from Borsuk–Ulam is the argument above; the reverse implication is the standard reduction: an odd map $h : S^{n} \to S^{n-1}$ composed with the coordinate functions produces $n$ continuous functions on $S^{n}$ that, together with the set where they all vanish, give a cover by $n+1$ sets without an antipodal pair, contradicting the antipodal theorem. The details are the standard ones and are given in the references.</p>
+<p><strong>Remark.</strong> The number $n+1$ is sharp: the sphere $S^{n}$ can be covered by $n+2$ closed sets none of which contains an antipodal pair, and the equivariant computation that proves this is the statement that the Lusternik–Schnirelmann category of $\mathbb{RP}^{n}$ is $n+1$. The category is a homotopy invariant of the quotient, and its computation belongs to the algebraic topology of this Part.</p>
+<h2 id="the-proof-by-equivariant-topology">The Proof by Equivariant Topology</h2>
+<p>The general form of Borsuk's theorem is proved by passing to the quotient and computing a cohomological invariant, and the article records the shape of that proof so that the reader can see exactly where the deferred input enters.</p>
+<p><strong>Theorem (shape of the proof; the computation deferred).</strong> There is no continuous odd map $S^{n} \to S^{n-1}$ for $n \geq 1$. Suppose there were one; it would descend to a continuous map $\varphi : \mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$. The pullback of the two-fold covering $S^{n-1} \to \mathbb{RP}^{n-1}$ along $\varphi$ is the nontrivial covering $S^{n} \to \mathbb{RP}^{n}$, because the descent comes from the odd map and the odd map lifts it; hence the induced map on the first cohomology with $\mathbb{Z}/2$ coefficients is nonzero, and since both groups have two elements it sends the generator to the generator. The cohomology with $\mathbb{Z}/2$ coefficients of $\mathbb{RP}^{m}$ is a polynomial algebra on one class $\omega$ of degree one, truncated at $\omega^{m+1} = 0$. Naturality of the cup product gives $\varphi^{*}(\omega_{n-1}^{n}) = (\varphi^{*}\omega_{n-1})^{n} = \omega_{n}^{n}$, but $\omega_{n-1}^{n} = 0$ in $H^{n}(\mathbb{RP}^{n-1};\mathbb{Z}/2)$ because the ring is truncated below degree $n$, while $\omega_{n}^{n} \neq 0$ in $H^{n}(\mathbb{RP}^{n};\mathbb{Z}/2)$; the contradiction proves the theorem.</p>
+<p><strong>Proof of the equivariant reduction.</strong> The reduction is the corollary of the descent and lifting of odd maps; the cohomological computation of the projective spaces and the naturality of the cup product are the deferred input, and with them the contradiction is immediate. An alternative proof uses the degree of a self-map of the sphere: an odd map $S^{n} \to S^{n}$ has odd degree, and an odd map $S^{n} \to S^{n-1}$ extended to the ball gives a null-homotopy that the degree forbids; this is the classical route and it uses the same deferred theory.</p>
+<p><strong>Remark.</strong> The theorem is the first genuinely equivariant computation of the corpus, and its content is that the antipodal involution is not a symmetry the sphere can shed: the quotient $\mathbb{RP}^{n}$ remembers the involution through its cohomology, and the remembering forbids the odd maps to lower spheres. The applications of the theorem in this Part and in the applications articles rest on this rigidity.</p>
+<h2 id="summary">Summary</h2>
+<p>The antipodal involution of the sphere is free, and its orbit space is real projective space; the odd maps, which are the equivariant maps for the antipodal involutions, descend to maps of the projective spaces and lift from them. Borsuk's theorem has four equivalent forms: the non-existence of a continuous odd map $S^{n} \to S^{n-1}$; the Borsuk–Ulam coincidence statement that every continuous $f : S^{n} \to \mathbb{R}^{n}$ has $f(x) = f(-x)$; the vanishing of every continuous odd map into $\mathbb{R}^{n}$; and the non-existence of a map $\mathbb{RP}^{n} \to \mathbb{RP}^{n-1}$ that is an isomorphism on the first $\mathbb{Z}/2$ cohomology. The equivalences are proved, the case $n = 1$ is proved with the intermediate value theorem, and the general case is reduced to the computation of the $\mathbb{Z}/2$ cohomology of the projective spaces, which belongs to the algebraic topology of this Part. Borsuk's antipodal theorem, that $n+1$ closed sets covering $S^{n}$ contain an antipodal pair, is equivalent to Borsuk–Ulam, and the number $n+1$ is the Lusternik–Schnirelmann category of $\mathbb{RP}^{n}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^{n}$</td>
+<td>The unit sphere in $\mathbb{R}^{n+1}$; $S^{0} = \{-1,1\}$</td>
+</tr>
+<tr>
+<td>$\alpha(x) = -x$</td>
+<td>The antipodal involution</td>
+</tr>
+<tr>
+<td>odd map</td>
+<td>$f(-x) = -f(x)$; an equivariant map for the antipodal involutions</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^{n}$</td>
+<td>$S^{n}/\alpha$; the orbit space of the antipodal involution</td>
+</tr>
+<tr>
+<td>$S^{n} \to \mathbb{RP}^{n}$</td>
+<td>The universal two-fold covering of the projective space</td>
+</tr>
+<tr>
+<td>Borsuk–Ulam</td>
+<td>$\forall f : S^{n} \to \mathbb{R}^{n}$ continuous, $\exists x : f(x) = f(-x)$</td>
+</tr>
+<tr>
+<td>odd vanishing</td>
+<td>Every continuous odd $g : S^{n} \to \mathbb{R}^{n}$ has a zero</td>
+</tr>
+<tr>
+<td>no odd map</td>
+<td>No continuous odd $S^{n} \to S^{n-1}$</td>
+</tr>
+<tr>
+<td>antipodal theorem</td>
+<td>$n+1$ closed sets covering $S^{n}$ contain an antipodal pair</td>
+</tr>
+<tr>
+<td>LS category</td>
+<td>$\mathrm{cat}(\mathbb{RP}^{n}) = n+1$; the sharpness of $n+1$</td>
+</tr>
+<tr>
+<td>$H^{*}(\mathbb{RP}^{m};\mathbb{Z}/2)$</td>
+<td>Truncated polynomial ring $\mathbb{Z}/2[\omega]/(\omega^{m+1})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Karol Borsuk, "Drei Sätze über die $n$-dimensionale euklidische Sphäre", <em>Fundamenta Mathematicae</em> 20 (1933), 177–190, for the original statements.</li>
+<li>L. Lusternik and L. Schnirelmann, <em>Méthodes topologiques dans les problèmes variationnels</em> (Hermann, 1934), for the category and the covering form of the antipodal theorem.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the cohomology of projective space, the degree of a map of spheres, and the proof of Borsuk–Ulam.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the mod-$2$ cohomology of $\mathbb{RP}^{n}$ and the cup-product proof of Borsuk–Ulam.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for Borsuk–Ulam, the equivariant formulation and the Lusternik–Schnirelmann category.</li>
+<li>Jiří Matoušek, <em>Using the Borsuk–Ulam Theorem</em> (Springer, 2nd ed. 2008), for the applications and for several proofs of the theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

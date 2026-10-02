@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-topological-group"><strong>The Signed Adjoint Sandwich on a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich is the two-sided operator $u\mapsto a\,\alpha(u)\,b$ built from the multiplication and the grade involution, and its adjoint is taken with respect to the signed form of the category, the natural form twisted by the grade involution. The adjoint turns out to be the signed sandwich with both parameters inverted, and the comparison of the adjoint with the inverse produces the unitarity condition: a signed sandwich is unitary exactly when a certain product is central, and the sandwiches whose parameters lie in the fixed subgroup of the grade involution are always unitary and form a subgroup. This is the operator-theoretic counterpart of the reflection theory, since the signed conjugations are the signed sandwiches with the second parameter the inverse of the first.</p>
+<p>The article assumes the natural and signed forms, the adjoints of the left and right multiplications and of the linear extension $A$ of the grade involution from <em>The Adjoint of the Left Multiplication on a Topological Group</em>; the signed sandwich, its factorisation, its composition laws, its inverse and the signed conjugation from <em>The Signed Sandwich on a Topological Group</em>; and the continuous involution, the associated involutive automorphism and the fixed subgroup from <em>Involutive Topological Groups</em>. The reflection read as an operator and its own adjoint occupy <em>The Signed Adjoint of the Reflection on a Topological Group</em>; the Haar pairing and the adjoint of a convolution operator under it are Part III.</p>
+<p>Throughout, $G$ is a Hausdorff topological group, $k$ is a field, $k[G]$ is the group algebra with basis $G$, $\sigma$ is a continuous involution, $\alpha = \sigma\iota$ is the associated continuous involutive automorphism, $A u = \sum_g u_g\,\alpha(g)$ is its linear extension, and the <strong>signed sandwich</strong> is the operator</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} : k[G] \longrightarrow k[G] , \qquad \Sigma^{\alpha}_{a,b}(u) = a\,\alpha(u)\,b = (L_aR_bA)(u) .
+$$</p>
+<h2 id="the-adjoints-of-the-elementary-operators">The Adjoints of the Elementary Operators</h2>
+<p><strong>Theorem (recalled).</strong> With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$ the translations and the linear extension of the involution satisfy</p>
+<p>$$
+(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} , \qquad A^\dagger = A , \qquad (ST)^\dagger = T^\dagger S^\dagger .
+$$</p>
+<p><strong>Proof.</strong> These are the adjoint computations of <em>The Adjoint of the Left Multiplication on a Topological Group</em>, and the anti-automorphism property of the adjoint with respect to a bilinear form.</p>
+<p><strong>Corollary (the inversion in the parameter).</strong> $\sigma(a) = \alpha(a)^{-1} = \alpha(a^{-1})$ for every $a$, so the signed adjoint of a translation is the translation by the image of the element under the involution, and the operator $A$ implementing the grade involution is self-adjoint.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the signed form,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1},\,b^{-1}} .
+$$</p>
+<p>Equivalently, the adjoint of $u\mapsto a\alpha(u)b$ is $u\mapsto a^{-1}\alpha(u)b^{-1}$, and the adjoint operation is an involution on the set of signed sandwiches: $((\Sigma^{\alpha}_{a,b})^\dagger)^\dagger = \Sigma^{\alpha}_{a,b}$.</p>
+<p><strong>Proof.</strong> By the composition and the anti-automorphism property, $(\Sigma^\alpha_{a,b})^\dagger = (L_aR_bA)^\dagger = A^\dagger R_b^\dagger L_a^\dagger = A\,R_{\sigma(b)}\,L_{\sigma(a)}$. Applying this to $u$ gives $A(\sigma(a)\,u\,\sigma(b)) = \alpha(\sigma(a))\,\alpha(u)\,\alpha(\sigma(b))$. Since $\alpha$ and $\iota$ commute, $\alpha\sigma = \alpha\iota\alpha = \iota\alpha^2 = \iota$, so $\alpha\sigma(a) = a^{-1}$ and $\alpha\sigma(b) = b^{-1}$; hence the adjoint is $u\mapsto a^{-1}\alpha(u)b^{-1}$, which is $\Sigma^\alpha_{a^{-1},b^{-1}}$. The double adjoint is immediate from $\sigma^2 = \mathrm{id}$.</p>
+<p><strong>Corollary (the adjoint respects the coset structure).</strong> The adjoint carries the unsigned sandwiches to the unsigned sandwiches and the signed ones to the signed ones, and it is compatible with the composition law of <em>The Signed Sandwich on a Topological Group</em>:</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{c,d}\circ\Sigma^{\alpha}_{a,b}\bigr)^\dagger = \bigl(\Sigma^{\alpha}_{a,b}\bigr)^\dagger\circ\bigl(\Sigma^{\alpha}_{c,d}\bigr)^\dagger = \Sigma^{\alpha}_{a^{-1}\alpha(d^{-1}),\,\alpha(c^{-1})b^{-1}} .
+$$</p>
+<p><strong>Proof.</strong> Apply the composition law $\Sigma^\alpha_{c,d}\Sigma^\alpha_{a,b} = \Sigma_{c\alpha(a),\alpha(b)d}$ and then the adjoint formula; alternatively use the anti-automorphism property directly.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Definition.</strong> A signed sandwich is <strong>unitary</strong> when its adjoint is its inverse, $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \mathrm{id}$ and $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a,b}{}^\dagger = \mathrm{id}$; equivalently when it preserves the signed form, $B_\alpha(\Sigma^\alpha_{a,b}u,\Sigma^\alpha_{a,b}v) = B_\alpha(u,v)$ for all $u,v$.</p>
+<p><strong>Theorem (the inverse and the criterion).</strong> The inverse of the signed sandwich is $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1} = \Sigma^{\alpha}_{\sigma(a),\,\sigma(b)}$, and the identity criterion for signed sandwiches is</p>
+<p>$$
+\Sigma^{\alpha}_{c,d} = \Sigma^{\alpha}_{c',d'} \iff c'^{-1}c \in Z(G) \ \text{and}\ c'^{-1}c = d'd^{-1} .
+$$</p>
+<p>Consequently $\Sigma^{\alpha}_{a,b}$ is unitary if and only if</p>
+<p>$$
+a^{-1}\alpha(a) \in Z(G) \qquad\text{and}\qquad \alpha(b)\,b^{-1} = \alpha(a)^{-1}a .
+$$</p>
+<p><strong>Proof.</strong> Inverse: $\Sigma^\alpha_{a,b} = L_aR_bA$ has inverse $A^{-1}R_{b^{-1}}L_{a^{-1}} = A R_{b^{-1}}L_{a^{-1}}$, and applying it to $u$ gives $\alpha(a^{-1}ub^{-1}) = \alpha(a)^{-1}\alpha(u)\alpha(b)^{-1} = \sigma(a)\alpha(u)\sigma(b) = \Sigma^\alpha_{\sigma(a),\sigma(b)}(u)$. Identity criterion: $\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'}$ exactly when $c'^{-1}c\,\alpha(u) = \alpha(u)\,d'd^{-1}$ for all $u$, and since $\alpha$ is onto this says $c'^{-1}c$ is central and equal to $d'd^{-1}$. Unitarity: $\Sigma^\alpha_{a,b}{}^\dagger\Sigma^\alpha_{a,b} = \Sigma^\alpha_{a^{-1},b^{-1}}\Sigma^\alpha_{a,b} = \Sigma_{a^{-1}\alpha(a),\,\alpha(b)b^{-1}}$ by the composition law, and this is the identity exactly when $c = a^{-1}\alpha(a)$ is central and $c = d^{-1}$ with $d = \alpha(b)b^{-1}$, which is the stated condition; the second half of the unitarity is the mirror computation $\Sigma^\alpha_{a,b}\Sigma^\alpha_{a^{-1},b^{-1}} = \Sigma_{a\alpha(a)^{-1},\,\alpha(b)^{-1}b}$.</p>
+<p><strong>Corollary (the fixed subgroup gives unitary sandwiches).</strong> If $a, b \in G^\alpha$, the fixed subgroup of the grade involution, then $\Sigma^{\alpha}_{a,b}$ is unitary; the unitary signed sandwiches with both parameters in $G^\alpha$ form a subgroup of the group of form-preserving operators, and it is the image of $G^\alpha\times G^\alpha$ under the sandwich map.</p>
+<p><strong>Proof.</strong> For $a \in G^\alpha$ one has $\alpha(a) = a$, so $a^{-1}\alpha(a) = e$ is central, and for $b \in G^\alpha$ one has $\alpha(b)b^{-1} = e$, so the criterion is satisfied. The set $G^\alpha\times G^\alpha$ is a group and the sandwich map is a homomorphism there because $\alpha$ is the identity on it, so the image is a subgroup of the unitary group.</p>
+<p><strong>Corollary (the trivial grade involution).</strong> If $\alpha = \mathrm{id}$ then every signed sandwich is an unsigned sandwich and every one of them is unitary with respect to the natural form, its adjoint being its inverse $\Sigma_{a^{-1},b^{-1}}$.</p>
+<p><strong>Proof.</strong> For $\alpha = \mathrm{id}$ the criterion reads $a^{-1}a = e$ central and $b b^{-1} = e$, both automatic; the adjoint formula and the inverse formula coincide.</p>
+<h2 id="the-reflection-read-as-a-signed-sandwich">The Reflection Read as a Signed Sandwich</h2>
+<p><strong>Definition.</strong> The <strong>signed conjugation</strong> by $a$ is the signed sandwich $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$.</p>
+<p><strong>Theorem.</strong> With respect to the signed form,</p>
+<p>$$
+\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+$$</p>
+<p>the signed conjugation is self-adjoint if and only if $a^2 \in Z(G)$, and it is unitary if and only if $a^{-1}\alpha(a) \in Z(G)$. When $\rho_a$ is a reflection — that is, when $a\alpha(a) \in Z(G)$ — the two conditions are equivalent, and the reflection is then an orthogonal involution of the group algebra.</p>
+<p><strong>Proof.</strong> The adjoint formula with $b = a^{-1}$ gives $\Sigma^\alpha_{a^{-1},(a^{-1})^{-1}} = \Sigma^\alpha_{a^{-1},a} = \rho_{a^{-1}}$. Self-adjointness: $\rho_a = \rho_{a^{-1}}$ exactly when $a^{-1}\in aZ(G)$, that is $a^2 \in Z(G)$, by the coset criterion for reflections. Unitarity: in the general criterion with $b = a^{-1}$ one has $d = \alpha(b)b^{-1} = \alpha(a)^{-1}a = c^{-1}$ for $c = a^{-1}\alpha(a)$, so the second condition is automatic and the first, $c$ central, is the stated one. If $a\alpha(a)$ is central, then $\alpha(a) \in a^{-1}Z(G)$, and $a^{-1}\alpha(a) \in a^{-2}Z(G)$ is central exactly when $a^2$ is central, so the two conditions coincide; an involution that is unitary is self-adjoint and conversely, because $\rho_a^2 = \mathrm{id}$ gives $\rho_a^\dagger = \rho_a^{-1} = \rho_a$.</p>
+<p><strong>Corollary (the degenerate case).</strong> If $a\alpha(a)$ is not central then $\rho_a$ is not an involution, the two conditions separate, and the signed conjugation is self-adjoint without being unitary or unitary without being self-adjoint; the reflection correspondence collapses exactly as <em>Reflections as Signed Two-Sided Operators on a Topological Group</em> records.</p>
+<p><strong>Proof.</strong> The square of $\rho_a$ is the inner conjugation $c_{a\alpha(a)}$, which is not the identity when $a\alpha(a)$ is not central, so $\rho_a^{-1}$ is not $\rho_a$; the two conditions $a^2\in Z(G)$ and $a^{-1}\alpha(a)\in Z(G)$ are independent when $a\alpha(a)$ is not central, and examples of each kind occur already in the finite groups computed for that article.</p>
+<h2 id="summary">Summary</h2>
+<p>With respect to the signed form of the category, the signed sandwich $\Sigma^{\alpha}_{a,b}(u) = a\alpha(u)b$ has adjoint $\Sigma^{\alpha}_{a^{-1},b^{-1}}$, the signed sandwich with both parameters inverted, and the adjoint operation is an involution on the sandwich family compatible with its coset structure and its composition law. The inverse is $\Sigma^{\alpha}_{\sigma(a),\sigma(b)}$, and comparing the two gives the unitarity condition: $\Sigma^{\alpha}_{a,b}$ is unitary exactly when $a^{-1}\alpha(a)$ is central and $\alpha(b)b^{-1} = \alpha(a)^{-1}a$. The sandwiches with both parameters in the fixed subgroup $G^\alpha$ are unitary and form a subgroup, and when the grade involution is the identity every signed sandwich is unsigned and unitary. The signed conjugation $\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$ has adjoint $\rho_{a^{-1}}$, is self-adjoint exactly when $a^2$ is central, and is unitary exactly when $a^{-1}\alpha(a)$ is central; for a genuine reflection the two conditions coincide, and otherwise they separate, which is the operator form of the degeneracy of the reflection correspondence.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$</td>
+<td>the signed form</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(u) = a\alpha(u)b = L_aR_bAu$</td>
+<td>the signed sandwich on the group algebra</td>
+</tr>
+<tr>
+<td>$(\Sigma^{\alpha}_{a,b})^\dagger = \Sigma^{\alpha}_{a^{-1},b^{-1}}$</td>
+<td>the explicit form of the adjoint</td>
+</tr>
+<tr>
+<td>$(\Sigma^{\alpha}_{a,b})^{-1} = \Sigma^{\alpha}_{\sigma(a),\sigma(b)}$</td>
+<td>the inverse</td>
+</tr>
+<tr>
+<td>$\Sigma^\alpha_{c,d} = \Sigma^\alpha_{c',d'} \iff c'^{-1}c\in Z(G),\ c'^{-1}c = d'd^{-1}$</td>
+<td>the identity criterion</td>
+</tr>
+<tr>
+<td>$a^{-1}\alpha(a)\in Z(G)$, $\alpha(b)b^{-1} = \alpha(a)^{-1}a$</td>
+<td>the unitarity condition</td>
+</tr>
+<tr>
+<td>$a, b \in G^\alpha \implies$ unitary</td>
+<td>the fixed subgroup gives unitary sandwiches</td>
+</tr>
+<tr>
+<td>$\rho_a = \Sigma^{\alpha}_{a,a^{-1}}$</td>
+<td>the signed conjugation</td>
+</tr>
+<tr>
+<td>$\rho_a^\dagger = \rho_{a^{-1}}$</td>
+<td>its adjoint</td>
+</tr>
+<tr>
+<td>$a^2\in Z(G)$</td>
+<td>self-adjointness of $\rho_a$</td>
+</tr>
+<tr>
+<td>$a^{-1}\alpha(a)\in Z(G)$</td>
+<td>unitarity of $\rho_a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions, forms, hermitian forms and the unitary group they define.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for bilinear forms, their twists, adjoints and isometries.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the sandwich action, its adjoint and the orthogonal and unitary groups it generates.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the sandwich operator and the reflection it produces.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the adjoint of a convolution operator, which is Part III and is not used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

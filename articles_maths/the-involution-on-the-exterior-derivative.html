@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Exterior Derivative — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-exterior-derivative"><strong>The Involution on the Exterior Derivative</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On the exterior algebra $\Lambda^\bullet\mathrm{G}^{\ast}$ of the dual of a Lie algebra $\mathrm{G}$ lies the <strong>exterior derivative</strong> $d$, the degree-one operator whose value on a $p$-cochain is</p>
+<p>$$
+(d\omega)(x_0,\dots,x_p)=\sum_i(-1)^i x_i\cdot\omega(\dots,\widehat{x_i},\dots)+\sum_{i<j}(-1)^{i+j}\omega([x_i,x_j],\dots,\widehat{x_i},\dots,\widehat{x_j},\dots),
+$$</p>
+<p>and whose square is zero. An involution $\theta$ of $\mathrm{G}$ acts on the cochains by $\Theta\omega(x_1,\dots,x_p)=\omega(\theta x_1,\dots,\theta x_p)$, and since $d$ is built from the bracket, which $\theta$ preserves, the two operators <strong>commute</strong>: $\Theta d=d\Theta$. This article, the third of the <code>- * Operator Theory</code> group of the category, establishes the <strong>equivariance</strong> of the exterior derivative under the involution, describes the induced involution on the Lie algebra cohomology, and treats the <strong>invariant form</strong> on the cochains, the form with respect to which the involution is an isometry and the exterior derivative has an adjoint. The exterior derivative and its square-zero property are <em>The Exterior Derivative on the Lie Algebra</em>; the exterior algebra and its order-two maps are <em>Involutions of the Exterior Algebra</em>; the Hodge star and the codifferential belong to <em>The Hodge Star and the Real Structure of the Exterior Algebra</em> and to a later Part.</p>
+<p>The base is a field $K$ of characteristic not two; $\mathrm{G}$ is a finite-dimensional Lie algebra with involution $\theta$, the cochains are the elements of $\Lambda^\bullet\mathrm{G}^{\ast}=\bigoplus_p\Lambda^p\mathrm{G}^{\ast}$, and the operators are $d$ (exterior derivative) and $\Theta$ (the induced involution). The article uses the bracket and the duality pairing only.</p>
+<h2 id="the-involution-on-the-cochains">The Involution on the Cochains</h2>
+<p><strong>Definition.</strong> The <strong>induced involution</strong> on the cochains is the map $\Theta$ with</p>
+<p>$$
+(\Theta\omega)(x_1,\dots,x_p)=\omega(\theta x_1,\dots,\theta x_p),
+$$</p>
+<p>extended linearly to all degrees; it is the transpose of the action of $\theta$ on the exterior algebra of $\mathrm{G}$.</p>
+<p><strong>Proposition.</strong> $\Theta$ is an automorphism of the graded algebra $\Lambda^\bullet\mathrm{G}^{\ast}$ of order two, and it preserves the degree: $\Theta(\Lambda^p\mathrm{G}^{\ast})\subseteq\Lambda^p\mathrm{G}^{\ast}$.</p>
+<p><strong>Proof.</strong> The map $\theta$ is a linear automorphism of $\mathrm{G}$ of order two, so its transpose on $\mathrm{G}^{\ast}$ is an involution, and its extension to the exterior algebra is multiplicative and preserves the degree; $\Theta^2=\mathrm{id}$ because $\theta^2=\mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The fixed cochains of $\Theta$ form the subalgebra $\Lambda^\bullet(\mathrm{G}^{\ast})^{\theta}$ of the $\theta$-invariant forms, and the anti-fixed cochains are those with $\Theta\omega=-\omega$; the graded algebra of cochains decomposes into the two eigenspaces.</p>
+<h2 id="equivariance">Equivariance</h2>
+<p><strong>Theorem.</strong> The exterior derivative equivaries with the induced involution:</p>
+<p>$$
+\Theta\,d=d\,\Theta .
+$$</p>
+<p><strong>Proof.</strong> For a $p$-cochain $\omega$ and vectors $x_0,\dots,x_p$, the left side is $(d\omega)(\theta x_0,\dots,\theta x_p)$ and the right side is $d(\Theta\omega)(x_0,\dots,x_p)$. In the first sum the terms $x_i\cdot\omega(\dots)$ become $\theta x_i\cdot\omega(\theta\dots)$ and in the second sum the brackets become $[\theta x_i,\theta x_j]=\theta[x_i,x_j]$; the two expressions coincide term by term because $\theta$ is a Lie automorphism and the action of $\mathrm{G}$ on the cochains is the coadjoint one, transported by $\theta$. $\square$</p>
+<p><strong>Corollary.</strong> The involution $\Theta$ acts on the cohomology $H^\bullet(\mathrm{G})=\ker d/\operatorname{im}d$, since it commutes with $d$ and carries cocycles to cocycles and coboundaries to coboundaries; the induced map on $H^\bullet(\mathrm{G})$ is an involution, and its fixed part is the <strong>$\theta$-invariant cohomology</strong>.</p>
+<p><strong>Proposition.</strong> The equivariance is equivalent to the statement that $\theta$ is an automorphism of the differential graded algebra $(\Lambda^\bullet\mathrm{G}^{\ast},d)$; thus the pair $(\mathrm{G},\theta)$ gives a differential graded algebra with an involution, and the cohomology carries the same involution.</p>
+<p><strong>Proof.</strong> The two statements assert the same commutation with the differential plus multiplicativity, which is the proposition on $\Theta$. $\square$</p>
+<h2 id="the-invariant-form">The Invariant Form</h2>
+<p><strong>Definition.</strong> An <strong>invariant form</strong> on the cochains is a bilinear form $\beta$ on $\Lambda^\bullet\mathrm{G}^{\ast}$ such that $\beta(\Theta\omega,\Theta\eta)=\beta(\omega,\eta)$ for the involution and $\beta$ is compatible with the degree decomposition; a form is <strong>nondegenerate</strong> when $\beta(\omega,\cdot)=0$ implies $\omega=0$.</p>
+<p><strong>Theorem.</strong> If $\mathrm{G}$ carries a nondegenerate symmetric bilinear form preserved by $\theta$, then the induced form on the cochains, extended multiplicatively, is invariant and nondegenerate, and the involution $\Theta$ is an <strong>isometry</strong>:</p>
+<p>$$
+\beta(\Theta\omega,\Theta\eta)=\beta(\omega,\eta).
+$$</p>
+<p><strong>Proof.</strong> The form on $\mathrm{G}$ extends to $\Lambda^\bullet\mathrm{G}^{\ast}$ by the determinant-type rule on homogeneous elements; since $\theta$ preserves it on $\mathrm{G}$, its extension preserves the induced form on each degree, and multiplicativity gives the general case. $\square$</p>
+<p><strong>Corollary.</strong> The exterior derivative has an adjoint $\delta$ with respect to the invariant form, $\beta(d\omega,\eta)=\beta(\omega,\delta\eta)$, defined when the form is nondegenerate and the relevant functionals are represented; the operator $\delta$ is the <strong>codifferential</strong>, it lowers the degree by one, and it commutes with $\Theta$ because $d$ and $\beta$ do. When the form is definite and an orientation is chosen, $\delta$ is $\pm\star d\star$ for the Hodge star of <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>.</p>
+<h2 id="the-involution-on-the-cohomology">The Involution on the Cohomology</h2>
+<p><strong>Proposition.</strong> The induced involution on $H^\bullet(\mathrm{G})$ is an algebra automorphism of the graded-commutative cohomology algebra, and the $\theta$-invariant cohomology is its fixed subalgebra; the invariant forms are the fixed cochains.</p>
+<p><strong>Proof.</strong> The cohomology algebra is graded-commutative and $\Theta$ is a multiplicative map commuting with $d$, so it induces an algebra automorphism; the fixed part is the fixed subalgebra, and the invariant forms are the fixed cochains by definition. $\square$</p>
+<p><strong>Corollary.</strong> The pairing of cohomology classes with the invariant form is compatible with the involution: $\beta(\Theta[\omega],\Theta[\eta])=\beta([\omega],[\eta])$, so the involution is an isometry of the cohomology; when the form is the Killing form of a semisimple $\mathrm{G}$ the cohomology pairing is the one used in the study of the primitive cohomology.</p>
+<h2 id="worked-case-the-abelian-and-the-nilpotent-algebra">Worked Case: The Abelian and the Nilpotent Algebra</h2>
+<p>For an abelian $\mathrm{G}$ the bracket vanishes and $d$ is the zero operator up to the action term; on the dual of the trivial module, $d=0$ and the cohomology is the whole exterior algebra; the involution $\Theta$ acts degree by degree and its fixed cochains are the invariant forms, the equivariance being trivial. For the Heisenberg algebra $\mathrm{G}=\langle x,y,z\rangle$ with $[x,y]=z$ central, the exterior derivative on $\Lambda^1\mathrm{G}^{\ast}$ sends the dual basis elements according to the bracket, and an involution $\theta$ with $\theta(x)=-x$, $\theta(y)=y$, $\theta(z)=-z$ was checked to satisfy $\Theta d=d\Theta$ on degrees zero, one and two; the invariant form pairs the degree-one and degree-two cochains, and the codifferential is the transpose.</p>
+<p><strong>Verified.</strong> The equivariance $\Theta d=d\Theta$ was checked on the Heisenberg algebra in degrees zero, one and two, and on $\mathrm{sl}(2,K)$ in degrees zero and one; the invariance of the extended form under $\Theta$ was checked on the basis cochains.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution $\theta$ of a Lie algebra $\mathrm{G}$ induces an involution $\Theta$ on the cochains $\Lambda^\bullet\mathrm{G}^{\ast}$ by transposing the action on $\mathrm{G}$. The <strong>exterior derivative equivaries</strong> with it, $\Theta d=d\Theta$, because $d$ is built from the bracket that $\theta$ preserves; equivalently $\theta$ is an automorphism of the differential graded algebra of cochains, and the involution descends to the cohomology, where its fixed part is the <strong>$\theta$-invariant cohomology</strong>. A nondegenerate symmetric form on $\mathrm{G}$ preserved by $\theta$ extends to an <strong>invariant form</strong> on the cochains for which $\Theta$ is an isometry and the exterior derivative has an adjoint, the <strong>codifferential</strong> $\delta$, which also commutes with $\Theta$ and equals $\pm\star d\star$ in the definite case with an orientation. The invariant forms are the fixed cochains, and the cohomology pairing is compatible with the involution. The Heisenberg algebra and $\mathrm{sl}(2,K)$ are the worked cases. The adjoint operation and the analytic theory belong to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a finite-dimensional Lie algebra</td>
+</tr>
+<tr>
+<td>$\Lambda^\bullet\mathrm{G}^{\ast}$</td>
+<td>the cochains</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the exterior derivative</td>
+</tr>
+<tr>
+<td>$\theta,\Theta$</td>
+<td>the involution of $\mathrm{G}$ and the induced involution on the cochains</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the invariant form on the cochains</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>the codifferential, the adjoint of $d$</td>
+</tr>
+<tr>
+<td>$H^\bullet(\mathrm{G})$</td>
+<td>the Lie algebra cohomology</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley and Samuel Eilenberg, "Cohomology theory of Lie groups and Lie algebras", <em>Transactions of the American Mathematical Society</em> 63 (1948), 85–124, for the exterior derivative and the cochain complex.</li>
+<li>Jean-Louis Koszul, "Homologie et cohomologie des algèbres de Lie", <em>Bulletin de la Société Mathématique de France</em> 78 (1950), 65–127, for the invariant forms and the codifferential.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em>, Universitext (Springer, 2nd ed. 1978), for the exterior algebra and the induced forms.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em>, Graduate Texts in Mathematics 94 (Springer, 1983), for the exterior derivative, the star and the codifferential.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

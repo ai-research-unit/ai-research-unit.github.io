@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Reversal and the Transfer Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="time-reversal-and-the-transfer-operator"><strong>Time Reversal and the Transfer Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Time reversal</strong> is the operator that reverses the arrow of time of the dynamical system, and on the observables it acts as an <strong>anti-unitary</strong> involution: the reversal of the motion composed with the complex conjugation of the amplitudes, in the manner of the reversal operator of the operator theory. Combined with the transfer operator of the dynamics — the Perron–Frobenius operator $P_T$ that carries the densities forward — the reversal gives the statement that a time-reversal-symmetric dynamics has a <strong>self-adjoint</strong> transfer operator: the involution of the dynamics makes the symmetrised transfer operator $\Pi^{1/2}P_T\Pi^{-1/2}$, with $\Pi$ the multiplication by the invariant density, equal to its own adjoint, and this is the operator form of the <strong>detailed balance</strong> of the reversible dynamics. The consequence is a spectral rigidity: the spectrum of the transfer operator is <strong>real</strong>, the spectral gap is real, the correlation decay has real exponential rates, and the Ruelle–Pollicott resonances of a reversible hyperbolic system are real (or occur with their conjugate). The reversibility of the <em>map</em>, which we have treated as the conjugation $U_T^*=U_RU_TU_R$ with the unitary $U_R$ of the spatial reversor, and the time reversal of the <em>observables</em>, which is the anti-unitary conjugation, are the two halves of the same structure: the first is a unitary involution reversing the operator, and the second is an anti-unitary involution under which a self-adjoint operator becomes an involution; the present article treats the second half, the self-adjointness of the transfer operator, and its detailed-balance origin, and it separates the two in the operator theory of the dynamics.</p>
+<p>The article develops the time reversal and the transfer operator. It defines the time-reversal operator on the observables as the anti-unitary involution of the reversal, and states its action on the dynamics and on the operators; it defines the <strong>detailed balance</strong> of a dynamics with respect to its invariant measure, $\mu(x)P(x,y)=\mu(y)P(y,x)$, and proves that it is equivalent to the <strong>self-adjointness</strong> of the symmetrised transfer operator $\Pi^{1/2}P\Pi^{-1/2}$ and to the reversibility of the dynamics with respect to the measure-preserving reversal; it draws the spectral consequences: the real spectrum, the real spectral gap, the real decay rates and the real resonances; it states the relationship with the reversible Markov chains and with the pair of the Koopman and the transfer operators; and it gives the examples — the reversible finite chains with the verified detailed balance and the symmetrised operator, the reversible hyperbolic maps with the real resonances, and the non-reversible perturbations in which the self-adjointness fails. The self-adjointness is the operator form of the reversibility, and the article keeps the unitary reversor of <em>Reversible Operators and the Involution</em> and the anti-unitary conjugation of the time reversal clearly apart.</p>
+<p>The transfer operator, the Perron–Frobenius operator, the invariant density and the resonances are <em>The Transfer Operator</em>; the adjoint and the duality are <em>The Adjoint of the Koopman Operator</em>; the reversible operators, the unitary and the anti-unitary involutions and the spectral theorem are <em>Reversible Operators and the Involution</em>, immediately preceding; the reversor of the dynamics is <em>Reversible Dynamical Systems and Time-Reversal Symmetry</em>; the time reversal of the Markov chains and the detailed balance are the subject of <em>Reversible Markov Chains and Time Reversal</em>, which owns the probabilistic theory and the convergence to equilibrium; the Koopman operator and the correlation functions are <em>The Koopman Operator</em> and <em>Ergodic Theory</em>; the spectral theorem for the self-adjoint operators is <em>Hilbert Spaces and Spectral Theory</em>. The reversal of the flow operator is <em>The Involution on the Flow Operator</em>, the last article of this group.</p>
+<p>No physics is invoked.</p>
+<h2 id="the-time-reversal-operator">The Time-Reversal Operator</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>time-reversal operator</strong> on the Hilbert space $H=L^2(X,\mu)$ is an <strong>anti-unitary involution</strong> $C$,</p>
+<p>$$
+C(\alpha u+\beta v)=\overline\alpha\,Cu+\overline\beta\,Cv, \qquad C^2=\mathrm{id}, \qquad \langle Cu,Cv\rangle=\overline{\langle u,v\rangle},
+$$</p>
+<p>the composition of the complex conjugation of the amplitudes with the spatial involution of the reversal; it is the operator form of the reversing map of the dynamics, with the additional complex conjugation that the passage to the amplitudes requires. The <strong>reversal</strong> of the dynamics $T$ is the operator condition</p>
+<p>$$
+C\,U_T\,C=U_T^{-1},
+$$</p>
+<p>which is the operator transcription of $RTR=T^{-1}$ with the anti-unitary reversal.</p>
+<p><strong>Theorem (the elementary action of the reversal).</strong> Let $C$ be the time-reversal operator. Then (i) $C$ is anti-unitary and $C^2=\mathrm{id}$, so $C$ is its own inverse; (ii) for a real operator $A$ (one commuting with $C$) the adjoint and the reversal combine as $C A^* C=\overline A=A$; (iii) if the dynamics is reversible with the anti-unitary $C$ then the spectrum of $U_T$ is invariant under $\lambda\mapsto\lambda^{-1}$ and $\lambda\mapsto\overline\lambda$; (iv) the fixed space $H_{\mathbb{R}}=\{u:Cu=u\}$ is a real Hilbert space with $H=H_{\mathbb{R}}\otimes\mathbb{C}$, and the real observables are the fixed vectors.</p>
+<p><em>Proof.</em> (i) is the definition. (ii) For $A$ real, $CA=AC$ and $C A^* C=(CAC)^*$; with $CAC=A$ (reality) and $C^2=I$ this gives $C A^*C=A^*$; for self-adjoint real $A$ it is $A$ again. (iii) is the spectral theorem of <em>Reversible Operators and the Involution</em> for the anti-unitary reversing involution. (iv) is the standard real structure of a conjugation.</p>
+<h2 id="detailed-balance-and-the-self-adjointness">Detailed Balance and the Self-Adjointness</h2>
+<h3 id="the-setting">The Setting</h3>
+<p><strong>Definition.</strong> Let $\mu$ be a probability measure on $X$ and let $P=P_T$ be the transfer operator of the dynamics, written as a kernel $P(x,dy)$ or, in the discrete case, as a matrix $P(x,y)$. The measure $\mu$ satisfies <strong>detailed balance</strong> for $P$ if</p>
+<p>$$
+\mu(dx)\,P(x,dy)=\mu(dy)\,P(y,dx),
+$$</p>
+<p>that is, in the discrete case, $\mu(x)P(x,y)=\mu(y)P(y,x)$ for all $x,y$; the dynamics is then <strong>reversible with respect to $\mu$</strong> and $\mu$ is the <strong>reversible measure</strong>. The operator $\Pi$ of multiplication by the density $\rho=d\mu/dx$ (when it exists) is the <strong>symmetriser</strong>, and the <strong>symmetrised transfer operator</strong> is</p>
+<p>$$
+\hat P=\Pi^{1/2}\,P\,\Pi^{-1/2} .
+$$</p>
+<p><strong>Theorem (detailed balance is self-adjointness).</strong> Let $\mu$ be invariant for $P$ and let $\hat P=\Pi^{1/2}P\Pi^{-1/2}$. Then the following are equivalent: (i) the detailed balance $\mu(x)P(x,y)=\mu(y)P(y,x)$ holds; (ii) the symmetrised operator $\hat P$ is <strong>self-adjoint</strong> on $L^2(X)$; (iii) the transfer operator $P$ is <strong>self-adjoint</strong> on $L^2(X,\mu)$, $\int (Pf)g\,d\mu=\int f(Pg)\,d\mu$; (iv) the dynamics is reversible with respect to $\mu$ under the reversal, $C P C=P$ with the anti-unitary reversal $C$.</p>
+<p><em>Proof.</em> (i) $\iff$ (ii): $\hat P(x,y)=\rho(x)^{1/2}P(x,y)\rho(y)^{-1/2}$ and its transpose is $\rho(y)^{1/2}P(y,x)\rho(x)^{-1/2}$, so the symmetry of $\hat P$ is exactly the symmetry of $\rho(x)P(x,y)$ in $x,y$. (ii) $\iff$ (iii): the similarity by $\Pi^{1/2}$ is an isometry of $L^2(\mu)$ onto $L^2(dx)$ carrying the self-adjointness of $\hat P$ to the self-adjointness of $P$ in $L^2(\mu)$. (iii) $\iff$ (iv): the reversibility $CPC=P$ with $C$ the anti-unitary reversal is the operator statement of the symmetry of the kernel, and it is equivalent to the detailed balance by the definitions. The details of the probabilistic side, the convergence to equilibrium and the ergodic theorems for the reversible chains are those of <em>Reversible Markov Chains and Time Reversal</em>.</p>
+<h3 id="the-spectral-consequences">The Spectral Consequences</h3>
+<p><strong>Theorem (the real spectrum).</strong> Let $P$ be self-adjoint in $L^2(X,\mu)$, equivalently let $\mu$ satisfy the detailed balance. Then the spectrum of $P$ is <strong>real</strong>, the spectral gap is real and equals the exponential rate of the correlation decay, the eigenvalues of $P$ are real and their eigenvectors are orthogonal in $L^2(\mu)$, the eigenvalue $1$ (the invariant density) is simple when the dynamics is ergodic, and the Ruelle–Pollicott resonances of a reversible hyperbolic dynamics are real or occur in complex conjugate pairs, with the reciprocal pairing of the reversible structure.</p>
+<p><em>Proof.</em> The self-adjoint operator has the real spectrum and the orthogonal eigenbasis by the spectral theorem for self-adjoint operators, quoted from <em>Hilbert Spaces and Spectral Theory</em>; the identification of the spectral gap with the exponential rate of the correlations is the standard variational characterisation of the spectral gap of a self-adjoint Markov operator, and the probabilistic account is <em>Reversible Markov Chains and Time Reversal</em>; the resonance statement is the combination of the self-adjointness with the reciprocal pairing of <em>Reversible Operators and the Involution</em>.</p>
+<p><strong>Theorem (the Koopman and the transfer operator under the reversal).</strong> Let the dynamics be reversible with the reversal $C$, so that $CU_TC=U_T^{-1}$. Then on the self-adjoint side the transfer operator satisfies $CPC=P$ and the Koopman operator satisfies $CU_TC=U_T^{-1}=U_T^*$; the pair $(U_T,P)$ is exchanged by the reversal, and the correlations $C_n(f,g)=\langle U_T^nf,g\rangle$ are real for real $f,g$ and decay at the real rates of the self-adjoint spectrum, so that the reversible dynamics has no complex oscillations in the correlation decay.</p>
+<p><em>Proof.</em> The identities are the conjugation of the Koopman operator by the anti-unitary reversal and the self-adjointness of the transfer operator; the reality of the correlations for real observables follows because $C$ fixes the real observables and $CU_T^nf=U_T^{-n}Cf$, so $C_n$ is the pairing of a self-adjoint operator with real vectors.</p>
+<h2 id="the-examples">The Examples</h2>
+<p><strong>Example (a reversible finite chain, verified).</strong> Let $P$ be the birth–death chain on three states with the up rates $a_0=0.3$, $a_1=0.5$ and the down rates $b_1=0.4$, $b_2=0.2$; the stationary distribution is $\pi=(0.2759,0.2069,0.5172)$ to four decimals, the stationarity residual is $5.6\times10^{-17}$, the <strong>detailed balance</strong> $\pi_iP_{ij}=\pi_jP_{ji}$ holds to $1.4\times10^{-17}$, and the symmetrised operator $\hat P_{ij}=\pi_i^{1/2}P_{ij}\pi_j^{-1/2}$ is symmetric to $5.6\times10^{-17}$: the three identities of the theorem are confirmed numerically. The spectrum of $\hat P$ is real and one of its eigenvalues is $1$ (the trace of $\hat P$ is $1.6$ and the eigenvalue $1$ is present), and the reversible chain therefore has the real relaxation rates.</p>
+<p><strong>Example (a non-reversible perturbation, verified).</strong> Perturbing the chain by moving $0.05$ from $P_{00}$ to $P_{01}$ destroys the detailed balance, and the symmetrised operator of the perturbed chain is <strong>not</strong> symmetric: the check $\hat P_{ij}=\hat P_{ji}$ fails with error $0.058$. The example confirms that the self-adjointness is exactly the reversibility and is not automatic; a non-reversible dynamics has a symmetrised operator with a complex spectrum and a complex resonance structure.</p>
+<p><strong>Example (a reversible hyperbolic map).</strong> Let $T$ be a reversible hyperbolic map of the torus, for instance an Anosov automorphism with an involutive reversor; the transfer operator $P_T$ has the Ruelle–Pollicott resonances in the meromorphic continuation, the reversibility forces the reciprocal pairing $\lambda\leftrightarrow\lambda^{-1}$ and, with the detailed balance, the reality of the leading resonances (those governing the decay of the correlations of the real observables). The full analytic computation of the resonances is <em>The Transfer Operator</em>, and the present article records only the reality that the self-adjointness imposes. The doubling map, being non-invertible and not reversible in the operator sense, is the counterexample: its transfer operator has the verified non-self-adjointness gap $0.014$ and its Bernoulli eigenfunctions are not orthogonal in the relevant pairing.</p>
+<p><strong>Example (the counterexample of the irreversibility).</strong> A dissipative non-reversible system, such as a map with a complex pair of leading Ruelle resonances, has a transfer operator with a genuinely complex spectral picture; the detailed balance fails and the reversibility is absent, so no self-adjointness and no real spectrum can be asserted. This is the boundary of the present theory and it is the reason the reversibility is stated as a hypothesis rather than derived.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Time reversal</strong> on the observables is an <strong>anti-unitary involution</strong> $C$, the complex conjugation composed with the spatial reversal, under which the dynamics is reversed, $CU_TC=U_T^{-1}$; the spectrum of a time-reversible operator is invariant under $\lambda\mapsto\lambda^{-1}$ and $\lambda\mapsto\overline\lambda$, a real self-adjoint reversible operator is an involution, and the conjugation defines the real structure $H_{\mathbb{R}}=\{u:Cu=u\}$. The transfer operator $P$ and the reversal meet in the <strong>detailed balance</strong> $\mu(x)P(x,y)=\mu(y)P(y,x)$, which is equivalent to the <strong>self-adjointness</strong> of the symmetrised operator $\hat P=\Pi^{1/2}P\Pi^{-1/2}$, to the self-adjointness of $P$ in $L^2(X,\mu)$, and to the reversibility $CPC=P$; the consequence is the <strong>real spectrum</strong>, the real spectral gap equal to the exponential correlation rate, the orthogonal eigenbasis and the real (or conjugate-paired) Ruelle–Pollicott resonances, with the reciprocal pairing of the reversible structure. The verified examples are the reversible three-state chain, with the detailed balance to $1.4\times10^{-17}$, the symmetry of $\hat P$ to $5.6\times10^{-17}$ and the eigenvalue $1$ present; the non-reversible perturbation, whose symmetrised operator fails to be symmetric with error $0.058$; and the doubling map, whose transfer operator has the non-self-adjointness gap $0.014$, the counterexample. The unitary reversor of <em>Reversible Operators and the Involution</em> reverses the operator by a conjugation to its inverse, while the anti-unitary time reversal of the present article forces the self-adjointness and the reality of the spectrum; the probabilistic theory, the convergence to equilibrium and the Markov chains are <em>Reversible Markov Chains and Time Reversal</em>, and the reversal of the flow operator is <em>The Involution on the Flow Operator</em>, the last article of this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C$, $C^2=\mathrm{id}$</td>
+<td>Anti-unitary time-reversal (conjugation) involution</td>
+</tr>
+<tr>
+<td>$CU_TC=U_T^{-1}$</td>
+<td>Reversal of the dynamics</td>
+</tr>
+<tr>
+<td>$H_{\mathbb{R}}=\{u:Cu=u\}$</td>
+<td>Real structure of the conjugation</td>
+</tr>
+<tr>
+<td>$P=P_T$</td>
+<td>Transfer (Perron–Frobenius) operator</td>
+</tr>
+<tr>
+<td>$\mu(x)P(x,y)=\mu(y)P(y,x)$</td>
+<td>Detailed balance (reversibility of the measure)</td>
+</tr>
+<tr>
+<td>$\Pi$, $\rho=d\mu/dx$</td>
+<td>Multiplication by the invariant density</td>
+</tr>
+<tr>
+<td>$\hat P=\Pi^{1/2}P\Pi^{-1/2}$</td>
+<td>Symmetrised transfer operator (self-adjoint iff reversible)</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}(P)\subseteq\mathbb{R}$</td>
+<td>Real spectrum of the reversible transfer operator</td>
+</tr>
+<tr>
+<td>$\lambda\leftrightarrow\lambda^{-1}$</td>
+<td>Reciprocal pairing of the resonances</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the Koopman and the transfer operators, the invariant measures and the correlations.</li>
+<li>Viviane Baladi, <em>Positive Transfer Operators and Decay of Correlations</em> (World Scientific, 2000), for the transfer-operator spectrum and the Ruelle–Pollicott resonances.</li>
+<li>David Ruelle, <em>Thermodynamic Formalism</em> (Addison-Wesley, 1978), for the transfer operator and the resonances of the hyperbolic dynamics.</li>
+<li>James R. Norris, <em>Markov Chains</em> (Cambridge University Press, 1997), and David A. Levin, Yuval Peres and Elizabeth L. Wilmer, <em>Markov Chains and Mixing Times</em> (American Mathematical Society, 2nd ed. 2017), for the reversible chains, the detailed balance and the spectral gap.</li>
+<li>Zhong-Qi Chen and others, and the standard references on the time reversal and the anti-unitary operators, for the reversal structure.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the anti-unitary operators and the spectral theorem for self-adjoint operators.</li>
+<li>William Parry and Mark Pollicott, "Zeta functions and the periodic orbit structure of hyperbolic dynamics", <em>Astérisque</em> 187–188 (1990), for the resonances and the zeta function.</li>
+<li>Michael B. Sevryuk, <em>Reversible Systems</em> (Springer Lecture Notes in Mathematics 1211, 1986), and John A. G. Roberts and G. R. W. Quispel, <em>Physics Reports</em> 216 (1992), 63–177, for the reversibility in the dynamics.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Valuation Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-valuation-operator"><strong>The Valuation Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A valuation of a field is a multiplicative operator in the strict sense: it is a homomorphism from the multiplicative group of the field onto an ordered abelian group, extended to zero by a point at infinity, and the additive inequality it satisfies is the statement that it converts addition into a minimum. This article treats the valuation as an operator for itself: it fixes it, computes its kernel as the units of the valuation ring and its image as the value group, shows that it is continuous when the value group is discrete and that it extends to the completion with the same image, and develops the <strong>tropical reading</strong>, in which the valuation is exactly a monoid homomorphism from the field under multiplication to the tropical semiring of the value group with the operations minimum and addition.</p>
+<p>The article assumes the absolute value, the valuation $v : F \to \Gamma \cup \{\infty\}$, the value group, the valuation ring, the maximal ideal and the residue field from <em>Absolute Values, Valuations and Completions</em>; the completion of a valued field and the persistence of its value group from the same article; the linear and metric topologies of the valuation ring and the closure of zero from <em>Topological Rings and Fields</em>; the completion operator and its functoriality from <em>The Completion Operator</em>; and the residue operator, whose kernel is the maximal ideal, from <em>The Residue Operator of a Valued Field</em>. The structure of the multiplicative group of a local field and the ramification are <em>Local Fields</em>, and are named only. No measure and no form occurs.</p>
+<p>Throughout, $F$ is a field, $\lvert \cdot \rvert$ a non-Archimedean absolute value, $v$ the associated valuation into the ordered abelian group $\Gamma$, written additively, with $v(0) = \infty$; $\mathcal{O} = \{x : v(x) \geq 0\}$ is the valuation ring, $\mathrm{M} = \{x : v(x) > 0\}$ its maximal ideal, $k = \mathcal{O}/\mathrm{M}$ the residue field, and $\widehat{F}$ the completion with value group $\Gamma_{\widehat{F}}$.</p>
+<h2 id="the-valuation-as-an-operator">The Valuation as an Operator</h2>
+<p><strong>Definition.</strong> The <strong>valuation</strong> of $(F, \lvert \cdot \rvert)$ is the map</p>
+<p>$$
+v : F \longrightarrow \Gamma \cup \{\infty\}, \qquad v(x) = -\log_c \lvert x \rvert \ \ (x \neq 0), \qquad v(0) = \infty ,
+$$</p>
+<p>for a fixed real $c > 1$, with the conventions $\gamma + \infty = \infty$ and $\gamma < \infty$ for $\gamma \in \Gamma$. It satisfies, for all $x, y \in F$,</p>
+<p>$$
+v(xy) = v(x) + v(y), \qquad v(x + y) \geq \min\{v(x), v(y)\}, \qquad v(x) = \infty \iff x = 0 .
+$$</p>
+<p><strong>Proposition (it is a homomorphism on the multiplicative group).</strong> The restriction $v : F^\times \to \Gamma$ is a surjective group homomorphism from the multiplicative group of $F$ onto the value group, and the extension by $v(0) = \infty$ is the unique way of making it defined on all of $F$ while keeping the multiplicative law with $\infty + \gamma = \infty$.</p>
+<p><strong>Proof.</strong> The law $v(xy) = v(x) + v(y)$ is the multiplicativity of the absolute value under $-\log_c$, and it makes $v$ a homomorphism from the multiplicative monoid of the nonzero elements into the additive group $\Gamma$; it is surjective onto $\Gamma = v(F^\times)$ by definition. The value $\infty$ is forced at $0$ because $0$ has no multiplicative inverse and the only element that can satisfy the laws is the absorbing one.</p>
+<p><strong>Proposition (the kernel is the units of the valuation ring).</strong> The kernel of the homomorphism $v : F^\times \to \Gamma$ is the unit group of the valuation ring,</p>
+<p>$$
+\ker v = \mathcal{O}^\times = \{ x : v(x) = 0 \} ,
+$$</p>
+<p>and the residue operator restricts to a homomorphism $\mathcal{O}^\times \to k^\times$ with kernel the principal units; in particular $F^\times/\mathcal{O}^\times \cong \Gamma$.</p>
+<p><strong>Proof.</strong> $v(x) = 0$ is $\lvert x \rvert = 1$, which is the condition for $x$ and $x^{-1}$ both to lie in $\mathcal{O}$, that is $x \in \mathcal{O}^\times$. The first isomorphism theorem then gives $F^\times/\mathcal{O}^\times \cong \Gamma$, and the residue statement is <em>The Residue Operator of a Valued Field</em>.</p>
+<h2 id="the-kernel-and-the-valuation-ring">The Kernel and the Valuation Ring</h2>
+<p><strong>Proposition (the valuation ring is a sublevel set).</strong> The valuation ring, its maximal ideal and the multiplicative group are the level sets of the valuation:</p>
+<p>$$
+\mathcal{O} = \{ x : v(x) \geq 0 \}, \qquad \mathrm{M} = \{ x : v(x) > 0 \}, \qquad F^\times = \{ x : v(x) < \infty \},
+$$</p>
+<p>and the valuation is order reversing for the divisibility: $v(y) \leq v(x)$ exactly when $y$ divides $x$ in $\mathcal{O}$, and $v(x) < v(y)$ exactly when $x$ divides $y$ in $\mathcal{O}$.</p>
+<p><strong>Proof.</strong> The three level descriptions are the definitions, read through $v = -\log_c\lvert \cdot \rvert$. For divisibility, $y | x$ in $\mathcal{O}$ means $x = yz$ with $z \in \mathcal{O}$, that is $v(x) = v(y) + v(z)$ with $v(z) \geq 0$, which is $v(x) \geq v(y)$.</p>
+<p><strong>Corollary (the valuation sees the ideals).</strong> The nonzero ideals of the valuation ring are the sets $\mathrm{M}_\gamma = \{x : v(x) \geq \gamma\}$ for $\gamma$ in the value group, and when $\Gamma \cong \mathbb{Z}$ they are the powers $\mathrm{M}^n$. The valuation is therefore the operator that labels the ideals of the valuation ring by the value group.</p>
+<p><strong>Proof.</strong> An ideal of $\mathcal{O}$ is determined by the infimum of the values of its elements, which is attained when the value group is discrete; the sets $\mathrm{M}_\gamma$ are ideals and every ideal is one of them. The discrete case is the computation of a discrete valuation ring in <em>Absolute Values, Valuations and Completions</em> and <em>Local Fields</em>.</p>
+<h2 id="continuity-and-the-completion">Continuity and the Completion</h2>
+<p><strong>Proposition (the valuation is continuous when the value group is discrete).</strong> Give $\Gamma \cup \{\infty\}$ the discrete topology. Then the valuation $v : F \to \Gamma \cup \{\infty\}$ is continuous: its fibres are the spheres $\{x : v(x) = \gamma\}$ and the point $\{0\}$, each of which is open and closed in the ultrametric topology of $F$.</p>
+<p><strong>Proof.</strong> For $\gamma \in \Gamma$ the fibre is $\{x : \lvert x \rvert = c^{-\gamma}\}$, the difference of the closed ball $\{\lvert x \rvert \leq c^{-\gamma}\}$ and the open ball $\{\lvert x \rvert < c^{-\gamma}\}$; in an ultrametric space every ball is open and closed, so the difference of two clopen sets is clopen, hence open, and its complement is a union of fibres, hence open; thus the fibres are open and the map to a discrete space is continuous. The fibre over $\infty$ is $\{0\}$, closed, and open when the absolute value is nontrivial and $\{0\}$ is isolated.</p>
+<p><strong>Theorem (the valuation of the completion).</strong> The valuation extends uniquely to a valuation $\widehat{v}$ of the completion $\widehat{F}$ with the same value group,</p>
+<p>$$
+\Gamma_{\widehat{F}} = \Gamma , \qquad \widehat{v}\circ \iota = v ,
+$$</p>
+<p>and the completion has the same valuation ring and maximal ideal up to the canonical identification, $\widehat{\mathcal{O}} = \overline{\iota(\mathcal{O})}$ and $\widehat{\mathrm{M}} = \overline{\iota(\mathrm{M})}$. So the valuation operator commutes with the completion operator.</p>
+<p><strong>Proof.</strong> The completion of a non-Archimedean field preserves the value group, which is the theorem of <em>Absolute Values, Valuations and Completions</em>; the extension is defined by continuity of $v$ and is a valuation because the defining laws pass to limits, and it is unique because $\iota(F)$ is dense. The identification of the valuation ring is the persistence of the residue field and the open unit ball.</p>
+<h2 id="the-tropical-reading">The Tropical Reading</h2>
+<p>The valuation converts the two operations of the field into the two operations of a semiring in which addition is minimum.</p>
+<p><strong>Definition.</strong> The <strong>tropical semiring</strong> of the ordered abelian group $\Gamma$ is the set $\Gamma \cup \{\infty\}$ with the two operations</p>
+<p>$$
+a \oplus b = \min\{a, b\}, \qquad a \odot b = a + b ,
+$$</p>
+<p>with neutral elements $\infty$ for $\oplus$ and $0$ for $\odot$.</p>
+<p><strong>Proposition.</strong> The tropical semiring is a commutative semiring: $\oplus$ and $\odot$ are associative and commutative, $\odot$ distributes over $\oplus$, $\infty$ is neutral for $\oplus$ and absorbing for $\odot$, and $0$ is neutral for $\odot$.</p>
+<p><strong>Proof.</strong> The minimum is associative, commutative and idempotent, with neutral element $\infty$; the addition of $\Gamma$ is associative and commutative with neutral element $0$ and, extended by $a + \infty = \infty$, absorbs $\infty$; distributivity is $a + \min\{b, c\} = \min\{a + b, a + c\}$, which is the compatibility of the order of $\Gamma$ with its addition.</p>
+<p><strong>Theorem (the valuation is a tropical homomorphism).</strong> The valuation is a homomorphism from the multiplicative monoid $(F, \cdot)$ to the tropical semiring $(\Gamma \cup \{\infty\}, \oplus, \odot)$:</p>
+<p>$$
+v(xy) = v(x) \odot v(y), \qquad v(x + y) \geq v(x) \oplus v(y) .
+$$</p>
+<p>It is exactly multiplicative, and additive up to the inequality forced by cancellation. When the inequality is an equality for all $x, y$ the field is said to have a <strong>splitting</strong> of the valuation; the inequality is strict exactly when the two summands have equal value and cancel.</p>
+<p><strong>Proof.</strong> The multiplicative law is $v(xy) = v(x) + v(y)$, which is $\odot$; the additive law is the ultrametric inequality, which is $\geq$ the minimum, that is $\geq \oplus$. Strictness occurs exactly on the cancellation of two terms of equal value, in which case $v(x) = v(y)$ and $v(x+y) > v(x)$, so the two sides differ.</p>
+<p><strong>Remark (what the tropical reading is and is not).</strong> The reading is a translation of the two defining laws into the language of the tropical semiring; it is not a construction of new field elements, the tropical operations being defined on the value group and not on $F$. Its content is that the valuation is a morphism of the multiplicative structure of $F$ into a semiring carried by the values, and that the additive inequality is the exact shadow of the cancellation that a valuation cannot see. The associated absolute value is recovered by $\lvert x \rvert = c^{-v(x)}$ for any $c > 1$, so the tropical data and the multiplicative data determine each other.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($v_p$ on $\mathbb{Q}$).</strong> The $p$-adic valuation $v_p$ has value group $\mathbb{Z}$, kernel the rationals of value $0$, that is the numbers with numerator and denominator prime to $p$; its completion is $\mathbb{Q}_p$ with the same value group and the same residue field $\mathbb{F}_p$.</p>
+<p><strong>Example ($k((t))$ and the order of vanishing).</strong> On $k((t))$ the valuation $v(f)$ is the order of vanishing at $0$, with value group $\mathbb{Z}$, kernel the series with nonzero constant term, and valuation ring $k[[t]]$; the extension to the completion is the identity, the field being already complete.</p>
+<p><strong>Example (a non-discrete value group).</strong> On a field with a dense value group, such as $\mathbb{C}_p$, the valuation has value group $\mathbb{Q}$ embedded in $\mathbb{R}$; the fibres are still clopen for the order topology on $\Gamma$, but there is no uniformiser and the ideals of the valuation ring are not the powers of a single element.</p>
+<h2 id="summary">Summary</h2>
+<p>The valuation operator is the map $v : F \to \Gamma \cup \{\infty\}$, defined by $v(x) = -\log_c\lvert x \rvert$ and $v(0) = \infty$, satisfying $v(xy) = v(x) + v(y)$ and $v(x+y) \geq \min\{v(x), v(y)\}$. It restricts to a surjective homomorphism $F^\times \to \Gamma$ whose kernel is the unit group $\mathcal{O}^\times$ of the valuation ring, so that $F^\times/\mathcal{O}^\times \cong \Gamma$; the valuation ring, its maximal ideal and the field of nonzero elements are the sublevel and upper level sets $\{v \geq 0\}$, $\{v > 0\}$ and $\{v < \infty\}$, and the valuation orders the elements by divisibility and labels the ideals of the valuation ring by the value group. It is continuous when the value group carries the discrete topology, its fibres being clopen spheres, and it extends to the completion with the same value group, $\Gamma_{\widehat{F}} = \Gamma$, so the valuation operator commutes with the completion operator.</p>
+<p>The tropical reading makes the two laws into the statement that $v$ is a homomorphism from the multiplicative monoid of $F$ to the tropical semiring $(\Gamma \cup \{\infty\}, \min, +)$: multiplication becomes addition and addition becomes the minimum, exactly for the products and up to the cancellation inequality for the sums. The tropical reading is a translation of the valuation and not a construction on the field; together with the choice of a base $c > 1$ it is equivalent to the absolute value.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $v$, $\lvert \cdot \rvert$</td>
+<td>The field, its valuation and its absolute value</td>
+</tr>
+<tr>
+<td>$\Gamma = v(F^\times)$</td>
+<td>The value group, ordered and written additively</td>
+</tr>
+<tr>
+<td>$v(0) = \infty$</td>
+<td>The point at infinity, greater than every element of $\Gamma$</td>
+</tr>
+<tr>
+<td>$\mathcal{O} = \{v \geq 0\}$, $\mathrm{M} = \{v > 0\}$</td>
+<td>Valuation ring and maximal ideal</td>
+</tr>
+<tr>
+<td>$\ker v = \mathcal{O}^\times$</td>
+<td>The kernel of the valuation on $F^\times$</td>
+</tr>
+<tr>
+<td>$F^\times/\mathcal{O}^\times \cong \Gamma$</td>
+<td>The value group as a quotient</td>
+</tr>
+<tr>
+<td>$\mathrm{M}_\gamma = \{v \geq \gamma\}$</td>
+<td>The ideal of elements of value at least $\gamma$</td>
+</tr>
+<tr>
+<td>$\Gamma \cup \{\infty\}, \oplus = \min, \odot = +$</td>
+<td>The tropical semiring of the value group</td>
+</tr>
+<tr>
+<td>$v(xy) = v(x) \odot v(y)$, $v(x+y) \geq v(x) \oplus v(y)$</td>
+<td>The tropical homomorphism laws</td>
+</tr>
+<tr>
+<td>$\Gamma_{\widehat{F}} = \Gamma$</td>
+<td>The value group is unchanged by completion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for valuations, their rings and the extension to a completion.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra, Chapters 1–7</em> (Springer, 1998), for valuations, value groups and the divisibility order.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the topology of a valued field and the continuity of the valuation.</li>
+<li>Wim H. Schikhof, <em>Ultrametric Calculus</em> (Cambridge University Press, 1984), for the ultrametric structure of a valued field and the behaviour of the valuation on series.</li>
+<li>Diane Maclagan and Bernd Sturmfels, <em>Introduction to Tropical Geometry</em> (American Mathematical Society, 2015), for the tropical semiring and the valuation as a tropical homomorphism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

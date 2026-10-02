@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-an-algebra"><strong>The Graded Action on a Module over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An algebra acts on its modules by linear operators, and when both the algebra and the module carry a $\mathbb{Z}/2$-grading the action has to respect it. The compatibility is a degree rule — multiplying by an element of degree $i$ shifts the degree of a homogeneous element by $i$ — and it forces a sign rule on the operators that represent the action: the even elements act by degree-preserving operators, the odd ones by degree-reversing operators, and the representation is a morphism of graded algebras whose brackets carry a sign.</p>
+<p>The present article studies the action as an operator and reads off the degree and the sign. The module theory itself is <em>Modules over an Algebra</em>, the grading of the algebra comes from the involutive automorphism $\alpha$ of <em>The Signed Sandwich on an Algebra</em>, and the general theory of graded algebras and graded modules, of the Koszul sign rule and of the symmetric monoidal structure is <em>Superalgebras and Graded Structures</em>, which is named as the owner and not used.</p>
+<p>Throughout, $k$ is a field, $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, and $A = A^+ \oplus A^-$ is the induced $\mathbb{Z}/2$-grading of <em>The Signed Sandwich on an Algebra</em>. Elements of $A^\pm$ are <strong>homogeneous</strong> of degree $0$ (even) or $1$ (odd), written $|a| \in \{0,1\}$; a product of homogeneous elements is homogeneous of degree $|a| + |b|$ taken modulo two. The module theory, the bimodule structures and the tensor products are those of <em>Modules over an Algebra</em> and <em>The Balanced Product over an Algebra</em>.</p>
+<h2 id="the-graded-module">The Graded Module</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $M$ be an $A$-module. A <strong>$\mathbb{Z}/2$-grading</strong> of $M$ compatible with the grading of $A$ is a direct sum decomposition</p>
+<p>$$
+M = M^+ \oplus M^- = M^0 \oplus M^1
+$$</p>
+<p>such that</p>
+<p>$$
+A^i \cdot M^j \subseteq M^{i+j}, \qquad i, j \in \{0,1\},
+$$</p>
+<p>with the degrees added modulo two. A module with such a grading is a <strong>graded module</strong> over the graded algebra $A$, and its elements in $M^0$ and $M^1$ are the even and the odd elements of $M$.</p>
+<p>The condition is the module analogue of the multiplication table of the grading of $A$, and it is exactly the statement that the action sees the grading: an even element of the algebra sends an even module element to an even one and an odd one to an odd one; an odd element of the algebra reverses the parity. When $A^- = 0$ the condition is vacuous and every module carries the trivial grading $M^0 = M$, $M^1 = 0$.</p>
+<h3 id="the-operators-of-the-action">The Operators of the Action</h3>
+<p><strong>Definition.</strong> Let $M$ be a graded $A$-module. For $a \in A$ let</p>
+<p>$$
+\rho(a) : M \to M, \qquad \rho(a)(m) = a \cdot m
+$$</p>
+<p>be the operator by which $a$ acts on $M$. The assignment $\rho : A \to \operatorname{End}_k(M)$ is the <strong>action map</strong>, or representation, of the module.</p>
+<p><strong>Proposition.</strong> The action map is a homomorphism of unital $k$-algebras, $\rho(ab) = \rho(a)\rho(b)$ and $\rho(1) = \mathrm{id}_M$. If $a$ is homogeneous then $\rho(a)$ has a definite degree, and</p>
+<p>$$
+\rho(a)\bigl(M^j\bigr) \subseteq M^{\,j + |a|} \qquad \text{for homogeneous } a \text{ and } j \in \{0,1\}.
+$$</p>
+<p><em>Proof.</em> The homomorphism property is the associativity and the unit of the module action, from <em>Modules over an Algebra</em>. The degree statement is the compatibility $A^i M^j \subseteq M^{i+j}$ with $i = |a|$, read through $\rho(a)m = am$.</p>
+<p><strong>Corollary.</strong> The even elements of $A$ act by parity-preserving operators, $\rho(a)(M^j) \subseteq M^j$ for $a \in A^+$, and the odd elements act by parity-reversing operators, $\rho(a)(M^j) \subseteq M^{1-j}$ for $a \in A^-$. In particular an even element preserves each graded piece and an odd element exchanges the two.</p>
+<p>The corollary is the operator form of the degree rule: the grading of the algebra becomes a grading of the operators, and the action is a graded action. The refined theory of the space $\operatorname{End}_k(M)$ as a graded algebra, with the sign attached to the transposition of two odd operators, belongs to <em>Superalgebras and Graded Structures</em>; the present article records the degrees and the brackets of the elements actually met.</p>
+<h2 id="the-degree-and-the-sign-rule">The Degree and the Sign Rule</h2>
+<h3 id="the-degree-of-the-action">The Degree of the Action</h3>
+<p><strong>Proposition.</strong> For homogeneous $a \in A$ and homogeneous $m \in M$, the product $a \cdot m$ is homogeneous of degree</p>
+<p>$$
+|a \cdot m| = |a| + |m| \pmod 2 .
+$$</p>
+<p>Equivalently, the action is a bilinear map of graded sets</p>
+<p>$$
+A^i \times M^j \to M^{\,i+j},
+$$</p>
+<p>and it is the unique extension of its values on homogeneous elements to all of $A \times M$ by linearity.</p>
+<p><em>Proof.</em> The degree formula is the containment $A^i M^j \subseteq M^{i+j}$ written for a single homogeneous pair; bilinearity is the definition of a module action, and the extension by linearity is the definition of the sum decomposition.</p>
+<h3 id="the-sign-rule-of-the-graded-commutator">The Sign Rule of the Graded Commutator</h3>
+<p><strong>Definition.</strong> For two homogeneous operators $S, T$ on a graded module their <strong>graded commutator</strong> is</p>
+<p>$$
+[S, T]_{\mathrm{gr}} = S T - (-1)^{|S||T|} T S,
+$$</p>
+<p>where $|S|$ is the degree of the operator; for operators of even degree this is the ordinary commutator and for two odd operators it is the ordinary anticommutator.</p>
+<p><strong>Theorem.</strong> Let $M$ be a graded $A$-module and let $\rho$ be its action map. For homogeneous $a, b \in A$,</p>
+<p>$$
+\bigl[\rho(a),\, \rho(b)\bigr]_{\mathrm{gr}} = \rho\bigl([a,b]_{\mathrm{gr}}\bigr), \qquad \text{where} \qquad [a,b]_{\mathrm{gr}} = ab - (-1)^{|a||b|} b a .
+$$</p>
+<p>Hence the action map is a morphism of graded algebras: it carries the graded commutator of the algebra to the graded commutator of the operators, and it preserves the degrees.</p>
+<p><em>Proof.</em> By the homomorphism property $\rho(a)\rho(b) = \rho(ab)$ and $\rho(b)\rho(a) = \rho(ba)$. The operator $\rho(a)$ has degree $|a|$ by the degree proposition, so $|\rho(a)| = |a|$, and the sign in the graded commutator of the operators is $(-1)^{|a||b|}$, the same as in the algebra. Subtracting gives $\rho(ab) - (-1)^{|a||b|}\rho(ba) = \rho(ab - (-1)^{|a||b|}ba)$.</p>
+<p><strong>Corollary.</strong> If $a$ and $b$ are both even, then $[\rho(a),\rho(b)] = \rho([a,b])$; if $a$ is even, then $\rho(a)$ commutes with every operator $\rho(b)$ in the graded sense; and if $a$ and $b$ are both odd, then</p>
+<p>$$
+\{\rho(a),\rho(b)\} = \rho(\{a,b\}), \qquad \{a,b\} = ab + ba .
+$$</p>
+<p><em>Proof.</em> The sign $(-1)^{|a||b|}$ is $+1$ when at least one of the degrees is even and $-1$ when both are odd.</p>
+<p>The corollary is the sign rule that the graded action imposes: even elements act by operators that commute with the whole representation, and the odd elements produce anticommutators. It is the module-level statement of the same rule that appears on the algebra alone in <em>The Signed Left Multiplication on an Algebra</em>, where the commutator of an odd left multiplication with a signed one is the anticommutator.</p>
+<h3 id="the-twisted-action">The Twisted Action</h3>
+<p><strong>Definition.</strong> Let $M$ be a graded $A$-module. The <strong>twisted action</strong> is the action of the same algebra with the twist inserted,</p>
+<p>$$
+a \star m = \alpha(a) \cdot m = \rho(\alpha(a))(m) .
+$$</p>
+<p>An element $a \in A$ is <strong>graded central</strong> on $M$ if it commutes with the action up to the sign of the degrees,</p>
+<p>$$
+a \cdot (b \cdot m) = (-1)^{|a||b|}\, b \cdot (a \cdot m) \quad \text{for homogeneous } a, b, m .
+$$</p>
+<p><strong>Proposition.</strong> The twisted action is an action of $A$ on $M$, its operators are $\rho(\alpha(a))$, and the degree of the operator $\rho(\alpha(a))$ equals $|a|$ because $\alpha$ preserves the grading. An element $a$ is graded central on $M$ exactly when $\rho(a)$ commutes with every operator $\rho(b)$ in the graded sense, that is when $\rho(a)$ lies in the graded centre of the image of $\rho$.</p>
+<p><em>Proof.</em> The composite $\rho \circ \alpha$ is a homomorphism because $\alpha$ is an algebra automorphism of $A$, and a homomorphism $A \to \operatorname{End}_k(M)$ is an action. The degree is preserved because $\alpha(A^\pm) = A^\pm$. The graded centrality of $a$ is the equation $\rho(a)\rho(b) = (-1)^{|a||b|}\rho(b)\rho(a)$ for all homogeneous $b$, which is the definition of the graded centraliser of the image.</p>
+<p><strong>Remark.</strong> There is no general commutator relation between the twisted action and the original one, and none is claimed: the two actions agree on $A^+$ and satisfy $\rho(\alpha(a)) = \rho(a)$ for even $a$, while for odd $a$ the twisted operator is $-\rho(a)$. The sign rule of the article is the graded bracket of the single action, not a bracket between the two actions. The module-level form of the signed sandwich is the operator $L(a)\alpha$ of <em>The Signed Left Multiplication on an Algebra</em>, which is the regular action with the involution inserted in the middle of the operator.</p>
+<h2 id="the-regular-and-the-trivial-gradings">The Regular and the Trivial Gradings</h2>
+<h3 id="the-regular-module">The Regular Module</h3>
+<p><strong>Proposition.</strong> The algebra $A$ is a graded module over itself with the left action of <em>Modules over an Algebra</em>, and its action map is the left regular representation $L$ of <em>Left and Right Multiplication</em>. The inner action sends homogeneous $a$ to an operator of degree $|a|$, so $L$ is a morphism of graded algebras</p>
+<p>$$
+L : A \to \operatorname{End}_k(A), \qquad [L(a), L(b)]_{\mathrm{gr}} = L\bigl([a,b]_{\mathrm{gr}}\bigr).
+$$</p>
+<p><em>Proof.</em> The module axioms are those of the regular module, and the degree statement is the degree proposition for $M = A$; the bracket identity is the theorem applied to the left action.</p>
+<p><strong>Corollary.</strong> The signed left multiplication $\Lambda(a) = L(a)\alpha$ of <em>The Signed Left Multiplication on an Algebra</em> is the left regular action composed with the involution on the module, and its degree is $|a|$; it satisfies the same graded bracket rule. On the even part $\Lambda(a) = L(a)$, and on the odd part $\Lambda(a) = -L(a)$.</p>
+<p><em>Proof.</em> This is the identity $\Lambda(a) = L(a)\alpha$ of <em>The Signed Left Multiplication on an Algebra</em>, with $\alpha$ read as the involution acting on the module $A$; since $\alpha$ is the identity on $A^+$ and minus the identity on $A^-$, the two statements on the parities follow. The bracket rule holds because the left action is a graded homomorphism and $\alpha$ preserves the grading.</p>
+<h3 id="the-trivial-grading">The Trivial Grading</h3>
+<p><strong>Proposition.</strong> If $A^- = 0$, equivalently $\alpha = \mathrm{id}$ by <em>The Signed Sandwich on an Algebra</em>, then every module carries the trivial grading $M^0 = M$, $M^1 = 0$, every operator is even, the graded commutator is the ordinary commutator, and the sign rule is empty. Every statement of the article reduces to the corresponding statement of <em>Modules over an Algebra</em>.</p>
+<p><em>Proof.</em> With $A^- = 0$ the compatibility $A^i M^j \subseteq M^{i+j}$ is vacuous, the degrees are all zero, and $(-1)^{|a||m|} = 1$; the graded commutator of two even operators is the ordinary one.</p>
+<h3 id="the-free-module">The Free Module</h3>
+<p><strong>Proposition.</strong> The free module $A^n$ of <em>Modules over an Algebra</em>, with the grading that puts a copy of $A$ in each summand, is a graded module, and its action is by the matrix of left multiplications of <em>Left and Right Multiplication</em>. In particular the action of $A$ on $A^n$ is the operator of the matrix multiplication by $a$, of degree $|a|$, and the graded bracket of two such operators is the operator of the graded bracket of the two matrices.</p>
+<p><em>Proof.</em> The action of $A$ on $A^n$ is componentwise left multiplication, so it is the direct sum of $n$ copies of the regular action and inherits its degree and its brackets.</p>
+<h2 id="the-morphisms">The Morphisms</h2>
+<h3 id="the-graded-module-homomorphisms">The Graded Module Homomorphisms</h3>
+<p><strong>Definition.</strong> Let $M$ and $N$ be graded $A$-modules. An $A$-module homomorphism $f : M \to N$ is <strong>graded</strong> if it is homogeneous of some degree $j$, $f(M^i) \subseteq N^{\,i+j}$, and the module of graded homomorphisms of degree $j$ is written $\operatorname{Hom}_A(M,N)^j$, so that</p>
+<p>$$
+\operatorname{Hom}_A(M, N) = \operatorname{Hom}_A(M,N)^0 \oplus \operatorname{Hom}_A(M,N)^1 .
+$$</p>
+<p><strong>Proposition.</strong> The composition of a graded homomorphism of degree $j$ with one of degree $j'$ has degree $j + j'$, so $\operatorname{Hom}_A(M,M)$ is a graded algebra under composition; and each $\operatorname{Hom}_A(M,N)^j$ is a $k$-subspace of $\operatorname{Hom}_k(M,N)$.</p>
+<p><em>Proof.</em> Degrees add under composition of graded maps, and $A$-linearity is preserved by composition; the subspace statement is the definition.</p>
+<p><strong>Corollary.</strong> The action map $\rho : A \to \operatorname{End}_k(M)$ is a graded homomorphism of degree zero from the graded algebra $A$ to the graded algebra $\operatorname{End}_k(M)$, and the graded commutator rule of the theorem is the statement that it is a morphism of graded algebras.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="the-exterior-algebra-as-a-graded-module">The Exterior Algebra as a Graded Module</h3>
+<p>Let $A = \Lambda(V)$ with the degree grading and let $M = A$ with the regular action. The even part is spanned by the products of an even number of vectors, the odd part by the products of an odd number, and an even element of $A$ acts by a parity-preserving operator while an odd element acts by a parity-reversing one; the action is the exterior multiplication, of degree equal to the degree of the multiplying element. The operator $\Lambda(v)$ for an odd $v$ is a square-zero operator of degree one, by <em>The Signed Left Multiplication on an Algebra</em>, and its square acts by the element $v\alpha(v) = -v^2 = 0$.</p>
+<h3 id="a-group-algebra-with-a-parity">A Group Algebra with a Parity</h3>
+<p>Let $A = k[G]$ with a parity homomorphism $\chi$ as in <em>The Signed Sandwich on an Algebra</em>, and let $M = k[G]$ with the regular action. A group element $g$ acts with degree $|g| = 0$ when $\chi(g) = 1$ and degree $1$ when $\chi(g) = -1$; the even group elements act by parity-preserving operators, the odd ones by parity-reversing operators, and two odd group elements have the anticommutator relation $\{\rho(g),\rho(h)\} = \rho(gh) + \rho(hg)$.</p>
+<h3 id="a-module-concentrated-in-one-degree">A Module Concentrated in One Degree</h3>
+<p>Let $M = M^0$ be an even module over $A$, so that $A^- \cdot M = 0$; the action of the odd part of the algebra is zero, and the graded module is the ordinary module of <em>Modules over an Algebra</em> with the trivial grading. This is the degenerate case, and it is the one in which the whole graded theory collapses.</p>
+<h2 id="summary">Summary</h2>
+<p>Let $A$ be graded by the involutive automorphism $\alpha$, $A = A^+ \oplus A^-$. A <strong>graded module</strong> is an $A$-module $M$ with a decomposition $M = M^0 \oplus M^1$ compatible with the grading, $A^i M^j \subseteq M^{i+j}$. Its action map $\rho(a)m = am$ is a unital algebra homomorphism with $\rho(a)(M^j) \subseteq M^{j + |a|}$ for homogeneous $a$, so the even elements act by parity-preserving operators and the odd elements by parity-reversing ones, and the degree of a product is additive, $|a \cdot m| = |a| + |m|$ modulo two. The sign rule is the graded bracket: with $[S,T]_{\mathrm{gr}} = ST - (-1)^{|S||T|}TS$ one has</p>
+<p>$$
+[\rho(a),\rho(b)]_{\mathrm{gr}} = \rho\bigl([a,b]_{\mathrm{gr}}\bigr), \qquad [a,b]_{\mathrm{gr}} = ab - (-1)^{|a||b|}ba,
+$$</p>
+<p>so that even elements commute with the whole action in the graded sense and two odd elements have the anticommutator rule $\{\rho(a),\rho(b)\} = \rho(ab + ba)$. The twisted action $a \star m = \alpha(a)m$ is the module-level form of the signed sandwich; the regular module realizes the action as the left multiplications $L$, which is a morphism of graded algebras, and $\Lambda(a) = L(a)\alpha$ is the same action with the involution inserted; the free module realizes it as matrix multiplication, and the graded homomorphisms form a graded algebra under composition. When $A^- = 0$ the grading is trivial and the theory reduces to <em>Modules over an Algebra</em>; the general theory of graded algebras, of the symmetric monoidal structure and of the Koszul sign rule is <em>Superalgebras and Graded Structures</em>, and the module and tensor theory used here is <em>Modules over an Algebra</em> and <em>The Balanced Product over an Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars</td>
+</tr>
+<tr>
+<td>$A = A^+ \oplus A^-$</td>
+<td>the graded algebra, from the involutive automorphism $\alpha$</td>
+</tr>
+<tr>
+<td>$M = M^0 \oplus M^1$</td>
+<td>the graded module</td>
+</tr>
+<tr>
+<td>$A^i M^j \subseteq M^{i+j}$</td>
+<td>the compatibility of the action with the grading</td>
+</tr>
+<tr>
+<td>$\rho(a)(m) = a \cdot m$</td>
+<td>the action map of the module</td>
+</tr>
+<tr>
+<td>$|a|, |m| \in \{0,1\}$</td>
+<td>the degrees of homogeneous elements</td>
+</tr>
+<tr>
+<td>$\rho(a)(M^j) \subseteq M^{j + |a|}$</td>
+<td>the degree of the operator $\rho(a)$</td>
+</tr>
+<tr>
+<td>$[S,T]_{\mathrm{gr}} = ST - (-1)^{|S||T|}TS$</td>
+<td>the graded commutator of operators</td>
+</tr>
+<tr>
+<td>$\{a,b\} = ab + ba$</td>
+<td>the anticommutator of two odd elements</td>
+</tr>
+<tr>
+<td>$a \star m = \alpha(a)m$</td>
+<td>the twisted action</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_A(M,N)^j$</td>
+<td>the graded homomorphisms of degree $j$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, second edition, 1992), for the module theory and the representation map.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the action of a graded algebra and the graded modules.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the regular module and the inner action.</li>
+<li>Yuri I. Manin, <em>Gauge Field Theory and Complex Geometry</em> (Springer, second edition, 1997), for the sign rule of the graded and super setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

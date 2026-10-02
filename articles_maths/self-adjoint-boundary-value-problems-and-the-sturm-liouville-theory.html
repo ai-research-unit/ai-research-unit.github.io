@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-boundary-value-problems-and-the-sturmliouville-theory"><strong>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A boundary-value problem is self-adjoint when its boundary terms cancel, and the cancellation is not a technical convenience: it is the condition under which the eigenvalues of the problem are real, the eigenfunctions belonging to distinct eigenvalues are orthogonal, and the problem carries a complete eigenfunction expansion. The structure that decides all of this is a single object attached to the boundary, the <strong>boundary form</strong> obtained when the formal adjoint is moved across the equation: the difference</p>
+<p>$$
+\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx
+$$</p>
+<p>does not vanish for admissible pairs $u,v$, but it is a sesquilinear function of the boundary data alone. Self-adjointness is the vanishing of that form on the admissible subspace, and the reality, the orthogonality and the completeness are its consequences.</p>
+<p>This article reads the boundary-value problem with the conjugation of the unknown functions, which is the reading of the star group. It fixes the Green formula of the problem, defines the boundary form and the admissible subspace, proves that the boundary form is skew-Hermitian, and shows that self-adjointness is exactly its vanishing; then it proves the reality of the eigenvalues and the orthogonality of the eigenfunctions; and it derives the completeness of the eigenfunction expansion from the compactness and self-adjointness of the inverse. It closes with the one-dimensional Sturm–Liouville theory, where the boundary form is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$ and the self-adjoint boundary conditions are the separated and the periodic ones.</p>
+<p>The differential operator, its formal adjoint $L^{\dagger}$ and the boundary operator are those of <em>Differential Operators</em>; the Green operator, the characterisation of the Green function and the compactness of the inverse are those of <em>The Green Operator</em>; the Sturm–Liouville operator, the weighted space and the eigenfunction expansion are those of <em>The Sturm–Liouville Operator</em>; the spectral theorem for a compact self-adjoint operator and the reality of the spectrum of a self-adjoint operator are those of <em>Banach and Hilbert Spaces</em>; and the classical Sturm–Liouville theory of the interval — the eigenvalues, the Rayleigh quotient and the asymptotic law — is that of <em>Ordinary Differential Equations</em>, cited and not repeated. The general Lagrange identity and the bilinear concomitant are <em>The Lagrange Identity and the Self-Adjoint System</em>, the pairing of the boundary data that selects the self-adjoint conditions is <em>The Adjoint Boundary Condition</em>, and the construction of the self-adjoint operator from the form is <em>Self-Adjoint Sturm–Liouville Operators</em>, all below.</p>
+<h2 id="the-green-formula-and-the-boundary-form">The Green Formula and the Boundary Form</h2>
+<p><strong>Definition.</strong> Let $L$ be a differential operator of order $m$ with smooth coefficients on a domain $\Omega\subseteq\mathbb{R}^n$ with smooth boundary, and let $L^{\dagger}$ be its formal adjoint. The <strong>Green formula</strong> for $L$ is the identity</p>
+<p>$$
+\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega} P(u,v)\,dS ,
+$$</p>
+<p>valid for functions of class $C^m$ on $\overline\Omega$, where $P(u,v)$ is a differential expression in $u$ and $v$ of order at most $m-1$ in each, linear in $u$ and conjugate-linear in $v$, the <strong>bilinear concomitant</strong>; it is the sum of the products of the boundary data of $u$ and $v$ up to order $m-1$.</p>
+<p><strong>Definition.</strong> The <strong>boundary form</strong> of $L$ on $\Omega$ is the sesquilinear form</p>
+<p>$$
+\langle u,v\rangle_\partial = \int_{\partial\Omega} P(u,v)\,dS ,
+$$</p>
+<p>defined on the functions of class $C^m$ on $\overline\Omega$; it depends on $u$ and $v$ only through their <strong>boundary data</strong>, the traces $\gamma u = (\gamma_0u,\dots,\gamma_{m-1}u)$ of the derivatives of order at most $m-1$ normal to the boundary. The <strong>admissible subspace</strong> of a boundary condition $B$ is</p>
+<p>$$
+\mathcal{A} = \{u : Bu=0 \text{ on } \partial\Omega, \ Lu\in L^2(\Omega)\} ,
+$$</p>
+<p>the domain of the realisation of $L$ under $B$ in the notation of <em>Differential Operators</em>.</p>
+<p><strong>Theorem (the boundary form is skew-Hermitian).</strong> For a formally self-adjoint operator $L=L^{\dagger}$ the boundary form is sesquilinear, linear in the first argument and conjugate-linear in the second, and</p>
+<p>$$
+\langle u,v\rangle_\partial = -\,\overline{\langle v,u\rangle_\partial} ,
+$$</p>
+<p>so that $\langle u,u\rangle_\partial$ is purely imaginary and the form is the imaginary part of a Hermitian pairing of the boundary data; it is a function of the traces $\gamma u,\gamma v$ alone.</p>
+<p><em>Proof.</em> The concomitant is linear in $u$ and conjugate-linear in $v$, so the form is sesquilinear. Exchanging the roles of $u$ and $v$ in the Green formula and conjugating give $\overline{\langle v,u\rangle_\partial} = -\langle u,v\rangle_\partial$ for $L=L^{\dagger}$, which is the skew-Hermitian identity; taking $v=u$ gives $\langle u,u\rangle_\partial=-\overline{\langle u,u\rangle_\partial}$, so the value is purely imaginary. That the form depends only on the traces follows from the concomitant involving the derivatives of order at most $m-1$: the expression inside the boundary integral is computed from the values of those derivatives at $\partial\Omega$.</p>
+<p><strong>Definition.</strong> The boundary-value problem $(L,B)$ is <strong>self-adjoint</strong> if</p>
+<p>$$
+\langle u,v\rangle_\partial = 0 \qquad \text{for every } u,v\in\mathcal{A} ,
+$$</p>
+<p>that is, if the boundary form vanishes identically on the admissible subspace, equivalently if the admissible subspace is <strong>Lagrangian</strong> for the skew-Hermitian form on the boundary data. The pairing of the boundary data that produces the self-adjoint conditions is <em>The Adjoint Boundary Condition</em>, below.</p>
+<p><strong>Theorem (self-adjointness as the vanishing of the boundary term).</strong> Let $L$ be formally self-adjoint and let $B$ be a boundary condition. Then the realisation of $L$ under $B$ is symmetric,</p>
+<p>$$
+\langle Lu,v\rangle = \langle u,Lv\rangle \qquad \text{for every } u,v\in\mathcal{A} ,
+$$</p>
+<p>if and only if the problem is self-adjoint in the sense above; the difference of the two sides is exactly $-\langle u,v\rangle_\partial$.</p>
+<p><em>Proof.</em> By the Green formula, $\langle Lu,v\rangle-\langle u,Lv\rangle=\int_\Omega(Lu)\bar v-\int_\Omega u\overline{L^{\dagger}v} = \langle u,v\rangle_\partial$, since $L=L^{\dagger}$; the identity vanishes for all admissible pairs exactly when the boundary form does.</p>
+<p><strong>Example (the boundary space).</strong> For a second-order operator on a domain the boundary data are the functions and their normal derivatives, the four numbers $(u,u_\nu)$ at each boundary point, and the boundary form is their skew-Hermitian pairing. A self-adjoint condition is a <strong>Lagrangian subspace</strong> of this pairing: a subspace on which the form vanishes identically. Conditions of the form $\alpha u+\beta u_\nu=0$ with real $\alpha,\beta$ are Lagrangian for the pairing $\overline{u}v_\nu-u\bar v_\nu$, and so is the periodic condition, while a condition that prescribes $u$ on part of the boundary and $u_\nu$ on the rest is Lagrangian as well; the classification of all of them, and the proof that a Lagrangian condition can always be written with half the data, is <em>The Adjoint Boundary Condition</em>, below.</p>
+<h2 id="reality-and-orthogonality">Reality and Orthogonality</h2>
+<p><strong>Theorem (reality of the eigenvalues).</strong> Let the problem $(L,B)$ be self-adjoint and let $u$ be an eigenfunction, $Lu=\lambda u$ with $u\in\mathcal{A}$ and $u\neq0$. Then $\lambda$ is real.</p>
+<p><em>Proof.</em> From the eigenvector equation and the symmetry,</p>
+<p>$$
+\lambda\langle u,u\rangle = \langle Lu,u\rangle = \langle u,Lu\rangle = \bar\lambda\langle u,u\rangle ,
+$$</p>
+<p>so $(\lambda-\bar\lambda)\|u\|^2=0$; since $\|u\|\neq0$, $\lambda=\bar\lambda$.</p>
+<p><strong>Theorem (orthogonality).</strong> Let $u$ and $v$ be eigenfunctions of a self-adjoint problem for the eigenvalues $\lambda$ and $\mu$. If $\lambda\neq\mu$ then $\langle u,v\rangle=0$.</p>
+<p><em>Proof.</em> The symmetry gives $\lambda\langle u,v\rangle=\langle Lu,v\rangle=\langle u,Lv\rangle=\bar\mu\langle u,v\rangle$; since $\lambda=\bar\lambda\neq\bar\mu$, the difference $(\lambda-\bar\mu)\langle u,v\rangle$ vanishes only if the pairing does.</p>
+<p><strong>Corollary (the eigenspaces and the spectral resolution).</strong> In a self-adjoint problem the eigenspaces belonging to distinct eigenvalues are mutually orthogonal, the eigenfunctions of an eigenvalue may be orthogonalised within the eigenspace, and the eigenvalue equation $Lu=\lambda u$ may be read as the hermitian problem for the form</p>
+<p>$$
+a(u,v) = \langle Lu,v\rangle ,
+$$</p>
+<p>which is a Hermitian sesquilinear form on the admissible subspace $\mathcal{A}$, with $a(u,u)=\lambda\|u\|^2$ at an eigenfunction; the form $a$ is the <strong>Hermitian form</strong> of the problem, and its study is the subject of the variational articles below.</p>
+<p><em>Proof.</em> The orthogonality is the preceding theorem; within an eigenspace the Hermitian form $a$ is a nonzero scalar times the $L^2$ pairing, so the Gram–Schmidt process with respect to it produces an orthonormal basis. That $a$ is Hermitian on admissible pairs is the symmetry: $a(u,v)=\langle Lu,v\rangle=\langle u,Lv\rangle=\overline{a(v,u)}$. The value at an eigenfunction is $\langle\lambda u,u\rangle=\lambda\|u\|^2$.</p>
+<h2 id="completeness">Completeness</h2>
+<p><strong>Theorem (completeness of the eigenfunction expansion).</strong> Let the problem $(L,B)$ be self-adjoint and suppose that the Green operator $G$ of <em>The Green Operator</em> exists, is compact and is self-adjoint on $L^2(\Omega)$. Then the eigenvalues of the problem form a real sequence $\lambda_1,\lambda_2,\dots$ tending to infinity in absolute value, each of finite multiplicity, the eigenfunctions $\varphi_n$ may be chosen orthonormal in $L^2(\Omega)$, and they are complete:</p>
+<p>$$
+f = \sum_{n\ge1}\langle f,\varphi_n\rangle\,\varphi_n , \qquad \|f\|^2 = \sum_{n\ge1}\bigl|\langle f,\varphi_n\rangle\bigr|^2 ,
+$$</p>
+<p>the first series converging in $L^2(\Omega)$ for every $f$.</p>
+<p><em>Proof.</em> The Green operator $G$ is the inverse of $L$ on the admissible subspace, and the eigenvector equation $G\varphi=\mu\varphi$ with $\mu\neq0$ is equivalent to $L\varphi=\mu^{-1}\varphi$ with $\varphi\in\mathcal{A}$; hence the eigenvalues of $G$ are the reciprocals of the eigenvalues of $L$, and the eigenfunctions are the same. The spectral theorem for a compact self-adjoint operator on a Hilbert space, that of <em>Banach and Hilbert Spaces</em>, gives an orthonormal basis of eigenvectors of $G$ with real eigenvalues tending to $0$; reading the reciprocals gives the completeness, the reality and the finiteness of the multiplicity for $L$. The expansion is the expansion in that basis.</p>
+<p><strong>Remark (self-adjointness of the inverse).</strong> The hypothesis that $G$ is self-adjoint is the analytic form of the self-adjointness of the problem: the Green operator of a self-adjoint problem is self-adjoint, and the kernel identity $G(x,y)=\overline{G(y,x)}$ of <em>The Green Operator</em> is its integral form. The proof of the implication, with the boundary conditions of the adjoint problem entered, is the content of <em>The Adjoint Problem and the Green Function</em>, below; here it is used in the direction required, namely that the self-adjointness of the problem produces the complete expansion.</p>
+<h2 id="the-sturmliouville-instance">The Sturm–Liouville Instance</h2>
+<p><strong>Theorem (the one-dimensional boundary form).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with $p>0$ and $q$ real, and let $L$ be the realisation of the Sturm–Liouville operator of <em>The Sturm–Liouville Operator</em>, formally self-adjoint for the weighted pairing. Then the boundary form is</p>
+<p>$$
+\langle u,v\rangle_\partial = \Bigl[p\,(u\bar v'-u'\bar v)\Bigr]_a^b ,
+$$</p>
+<p>a skew-Hermitian form in the four boundary values $u(a),u'(a),u(b),u'(b)$ and their conjugates, and the problem is self-adjoint exactly when this form vanishes for all admissible pairs.</p>
+<p><em>Proof.</em> The Green formula of the interval is the integration by parts, which produces the bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$; the form is the difference of the two boundary contributions, and the skew-Hermitian property follows from exchanging $u$ and $v$ and conjugating. Vanishing on the admissible pairs is the definition of self-adjointness.</p>
+<p><strong>Theorem (the classical self-adjoint conditions).</strong> For a regular Sturm–Liouville problem the separated conditions and the periodic conditions are self-adjoint, and the eigenfunction expansion they give is the classical Sturm–Liouville theory: the eigenvalues are real, simple and increasing to infinity, and the eigenfunctions are complete in $L^2((a,b),w\,dx)$.</p>
+<p><em>Proof.</em> For a separated condition, at each endpoint the pair $(u,(pu'))$ is a multiple of a fixed vector $(\alpha_2,-\alpha_1)$, so the bracket vanishes at each endpoint and the form is zero; for the periodic condition the two endpoints contribute opposite values which cancel. The reality, the simplicity and the completeness are then the theorems above applied to the Sturm–Liouville operator, whose Green operator is compact by <em>The Green Operator</em>; the classical statements in their differential-equation form are those of <em>Ordinary Differential Equations</em>.</p>
+<p><strong>Example (the two model problems).</strong> For $-y''=\lambda y$ on $(0,\pi)$ with $y(0)=y(\pi)=0$ the boundary form is $[\,y\bar z'-y'\bar z\,]_0^\pi$; the separated conditions make each endpoint term vanish, the eigenvalues are $n^2$, real and simple, and the eigenfunctions $\sin(nx)$ are complete, the expansion being the Fourier sine series. For the periodic problem on $(0,2\pi)$ with $y(0)=y(2\pi)$, $y'(0)=y'(2\pi)$ the endpoint terms cancel in pairs, the eigenvalues are $n^2$ for $n\ge0$ with the eigenfunctions $1$, $\cos(nx)$, $\sin(nx)$, and the expansion is the full Fourier series; the eigenvalue $0$ has multiplicity $1$ and each $n\ge1$ has multiplicity $2$, so the simplicity statement is particular to the separated case and the completeness is general.</p>
+<h2 id="summary">Summary</h2>
+<p>The boundary-value problem for a differential operator carries a boundary form, obtained from the Green formula as the difference $\int(Lu)\bar v-\int u\overline{L^{\dagger}v}$ expressed in the boundary data; for a formally self-adjoint $L$ the form is sesquilinear, skew-Hermitian, $\langle u,v\rangle_\partial=-\overline{\langle v,u\rangle_\partial}$, and determined by the traces of $u$ and $v$ up to order $m-1$. The problem is self-adjoint when the form vanishes on the admissible subspace, equivalently when the admissible subspace is Lagrangian for it, and that vanishing is exactly the symmetry of the realisation, $\langle Lu,v\rangle-\langle u,Lv\rangle=\langle u,v\rangle_\partial$. Self-adjointness makes the eigenvalues real, by $(\lambda-\bar\lambda)\|u\|^2=0$, and makes the eigenfunctions belonging to distinct eigenvalues orthogonal; the eigenspaces are mutually orthogonal and the eigenvalue equation is the hermitian problem for the form $a(u,v)=\langle Lu,v\rangle$.</p>
+<p>If in addition the Green operator is compact and self-adjoint, the spectral theorem for a compact self-adjoint operator gives a complete orthonormal system of eigenfunctions, the eigenvalues being the reciprocals of its eigenvalues, real, of finite multiplicity and tending to infinity; this is the completeness of the eigenfunction expansion, $f=\sum\langle f,\varphi_n\rangle\varphi_n$. On an interval the boundary form is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$, the separated and periodic conditions are self-adjoint, and the resulting theory is the classical Sturm–Liouville theory: real, simple, increasing eigenvalues and a complete expansion in the weighted space, the periodic case differing only in the multiplicity of the eigenvalues.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L$, $L^{\dagger}$</td>
+<td>Differential operator and its formal adjoint</td>
+</tr>
+<tr>
+<td>$P(u,v)$</td>
+<td>Bilinear concomitant, the boundary integrand of the Green formula</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle_\partial = \int_{\partial\Omega}P(u,v)\,dS$</td>
+<td>Boundary form</td>
+</tr>
+<tr>
+<td>$\gamma u = (\gamma_0u,\dots,\gamma_{m-1}u)$</td>
+<td>Boundary data (traces of the normal derivatives)</td>
+</tr>
+<tr>
+<td>$\mathcal{A}$</td>
+<td>Admissible subspace of the boundary condition</td>
+</tr>
+<tr>
+<td>$a(u,v)=\langle Lu,v\rangle$</td>
+<td>Hermitian form of the problem</td>
+</tr>
+<tr>
+<td>$\lambda_n$, $\varphi_n$</td>
+<td>Eigenvalues and orthonormal eigenfunctions</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>Compact self-adjoint Green operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Earl A. Coddington and Norman Levinson, <em>Theory of Ordinary Differential Equations</em> (McGraw–Hill, 1955), for the self-adjoint Sturm–Liouville problem and the completeness of the expansion.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 2nd ed. 1982), for the boundary conditions that make a Sturm–Liouville problem self-adjoint.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the reality and the completeness of the spectrum of a self-adjoint operator.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness</em> (Academic Press, 1975), for the boundary form, the self-adjoint extensions and the spectral theorem.</li>
+<li>Michael E. Taylor, <em>Partial Differential Equations I</em> (Springer, 2nd ed. 2011), for the Green formula, the boundary form and the elliptic self-adjoint boundary-value problems.</li>
+<li>Gerald B. Folland, <em>Introduction to Partial Differential Equations</em> (Princeton University Press, 2nd ed. 1995), for the boundary terms of an elliptic operator and the self-adjoint conditions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

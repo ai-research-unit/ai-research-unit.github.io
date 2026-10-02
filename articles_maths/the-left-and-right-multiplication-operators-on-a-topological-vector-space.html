@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators on a Topological Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-on-a-topological-vector-space"><strong>The Left and Right Multiplication Operators on a Topological Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A topological vector space that carries a continuous multiplication turns every element into two operators on itself, the <strong>left multiplication</strong> $L_{a}(x) = ax$ and the <strong>right multiplication</strong> $R_{a}(x) = xa$. These operators are linear, they are continuous because the multiplication is, and they compose by the rules $L_{a}L_{b} = L_{ab}$, $R_{a}R_{b} = R_{ba}$ and $L_{a}R_{b} = R_{b}L_{a}$, so the left multiplications form a representation of the algebra and the right multiplications an anti-representation, and each acts on the other by commuting. The space is then a module over the algebra of left multiplications, and the whole two-sided operator family of this group — the sandwiches, the signed operators and their adjoints — is built from these two families.</p>
+<p>This article fixes the one-sided operators on a topological vector space that carries a continuous multiplication, their continuity, their composition, the representations they define, and the module structure they induce. The topological vector spaces, the neighbourhoods and the bounded sets are <em>Topological Modules and Vector Spaces</em>; the topology of bounded convergence and the operator space are <em>Operators on a Locally Convex Space</em>; the operator norm and the operator algebra are <em>Bounded Operators and the Operator Norm</em>; the abstract theory of topological algebras, where the multiplication carries its own topology, is <em>Topological Algebras</em> in the next category of this Part. The signed one-sided operator is <em>The Signed Left Multiplication on a Topological Vector Space</em>, and the two-sided sandwich is <em>The Signed Sandwich on a Topological Vector Space</em>. No form, no involution and no grading is used here; the element involution starts with the group <code>- * Theory</code>.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E$ is a Hausdorff topological vector space over $\mathbb{K}$ carrying a multiplication</p>
+<p>$$
+E \times E \longrightarrow E, \qquad (a, b) \longmapsto ab ,
+$$</p>
+<p>which is bilinear and separately continuous, so that $E$ is a topological algebra; the identity, when it exists, is written $1$. The multiplication need not be associative or commutative, but associativity is assumed from the point where the composition laws are read. For $a \in E$ the <strong>left and right multiplications</strong> are</p>
+<p>$$
+L_{a}(x) = ax, \qquad R_{a}(x) = xa \qquad (x \in E),
+$$</p>
+<p>and $\mathcal{L}(E)$ is the algebra of continuous operators on $E$.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<p><strong>Proposition (linearity and continuity).</strong> For every $a \in E$ the maps $L_{a}$ and $R_{a}$ are linear and continuous, so $L_{a}, R_{a} \in \mathcal{L}(E)$; the assignments $a \mapsto L_{a}$ and $a \mapsto R_{a}$ are linear, and the multiplication is recovered as $ab = L_{a}(b) = R_{b}(a)$.</p>
+<p><strong>Proof.</strong> Linearity is the bilinearity of the multiplication: $L_{a}(x + \lambda y) = a(x + \lambda y) = ax + \lambda ay$, and the same for $R_{a}$. Continuity is the separate continuity of the multiplication: $L_{a}$ is continuous at $0$ because $a \cdot 0 = 0$ and the multiplication is continuous in its second variable, and likewise $R_{a}$ in its first variable. Linearity of $a \mapsto L_{a}$ and $a \mapsto R_{a}$ is the bilinearity again, and the recovery formula is the definition.</p>
+<p><strong>Proposition (composition laws).</strong> Assume the multiplication associative. Then for all $a, b \in E$,</p>
+<p>$$
+L_{a}L_{b} = L_{ab}, \qquad R_{a}R_{b} = R_{ba}, \qquad L_{a}R_{b} = R_{b}L_{a} .
+$$</p>
+<p>Thus $a \mapsto L_{a}$ is a homomorphism and $a \mapsto R_{a}$ an anti-homomorphism of $E$ into $\mathcal{L}(E)$, and the two images commute with one another.</p>
+<p><strong>Proof.</strong> $L_{a}L_{b}(x) = a(bx) = (ab)x = L_{ab}(x)$ by associativity; $R_{a}R_{b}(x) = (xb)a = x(ba) = R_{ba}(x)$; $L_{a}R_{b}(x) = a(xb) = (ax)b = R_{b}L_{a}(x)$. Commutation of the images is the third identity.</p>
+<p><strong>Proposition (identity and faithfulness).</strong> If the multiplication is associative and unital with unit $1$, then $L_{1} = R_{1} = \mathrm{id}$, the algebras $\{L_{a}\}$ and $\{R_{a}\}$ are the images of the regular representations, and the kernels are the annihilators,</p>
+<p>$$
+\ker(L_{\bullet}) = \{a : aE = 0\}, \qquad \ker(R_{\bullet}) = \{a : Ea = 0\} .
+$$</p>
+<p>If the multiplication is associative with unit and the representation is faithful on one side, then $E$ acts faithfully as operators on itself on that side.</p>
+<p><strong>Proof.</strong> $L_{1}(x) = 1x = x$ and $R_{1}(x) = x1 = x$; the kernel computation is the definition, $L_{a} = 0$ exactly when $ax = 0$ for all $x$; the faithfulness statement is that a coalgebra of the representations vanishes identically.</p>
+<h2 id="the-module-structure">The Module Structure</h2>
+<p><strong>Definition.</strong> The <strong>left regular module</strong> of $E$ is the space $E$ with the action $a \cdot x = L_{a}(x) = ax$, and the <strong>right regular module</strong> is $E$ with the action $x \cdot a = R_{a}(x) = xa$; both actions are continuous, because the multiplications are. The <strong>two-sided</strong> action is the pair $(L_{a}, R_{b})$, and the operators that commute with every $L_{a}$ form the <strong>commutant</strong>, likewise on the right.</p>
+<p><strong>Proposition (the module axioms and the commutant).</strong> With the left regular action $E$ is a left module over itself, with the right regular action a right module, and the two actions commute, so $E$ is a bimodule over itself. If $E$ is associative with unit, the commutant of the family $\{L_{a}\}$ in $\mathcal{L}(E)$ is exactly the family $\{R_{b}\}$ of right multiplications, and the commutant of $\{R_{b}\}$ is exactly $\{L_{a}\}$.</p>
+<p><strong>Proof.</strong> The module axioms are the associativity and the unit laws; the commutation of the two actions is $L_{a}R_{b} = R_{b}L_{a}$, which also exhibits $\{R_{b}\}$ inside the commutant of $\{L_{a}\}$. Conversely, if $S$ commutes with every $L_{a}$, then for every $a$ one has $S(a) = S(a \cdot 1) = aS(1) = R_{S(1)}(a)$, so $S = R_{S(1)}$; the symmetric argument identifies the other commutant. This is the double centraliser computation for the regular representation of a unital associative algebra.</p>
+<p><strong>Proposition (the bimodule of operators).</strong> Let $F$ be a topological vector space and let $E = \mathcal{L}(F)$ be its algebra of continuous operators. Then the left and right multiplications on $E$ are the operators</p>
+<p>$$
+L_{A}(T) = AT, \qquad R_{B}(T) = TB \qquad (A, B, T \in E),
+$$</p>
+<p>they are continuous for the topology of bounded convergence, and the two-sided operator $T \mapsto ATB = L_{A}R_{B}(T)$ is the general product operator. This is the primary instance of the construction, and the two-sided family of this group is formed on it.</p>
+<p><strong>Proof.</strong> Composition of operators is associative and bilinear, and it is separately continuous for the topology of bounded convergence by <em>Operators on a Locally Convex Space</em>; hence $L_{A}$ and $R_{B}$ are continuous, and the composition law $L_{A}R_{B}(T) = ATB$ is the associativity of composition.</p>
+<h2 id="continuity-and-the-operator-norm">Continuity and the Operator Norm</h2>
+<p><strong>Proposition (continuity of the representations).</strong> If the multiplication of $E$ is jointly continuous, then $a \mapsto L_{a}$ and $a \mapsto R_{a}$ are continuous maps $E \to \mathcal{L}(E)$ when the target carries the topology of bounded convergence; if $E$ is a normed algebra with submultiplicative norm, then $\lVert L_{a}\rVert \leq \lVert a\rVert$ and $\lVert R_{a}\rVert \leq \lVert a\rVert$, with equality when $\lVert 1\rVert = 1$.</p>
+<p><strong>Proof.</strong> For the continuity, a basic neighbourhood of $0$ in $\mathcal{L}_{b}(E)$ is $N(B, V)$ with $B$ bounded and $V$ a neighbourhood of $0$; $L_{a} \in N(B, V)$ means $aB \subseteq V$, which holds when $a$ is small and $B$ is bounded, by joint continuity and boundedness. For the norm, $\lVert L_{a}x\rVert = \lVert ax\rVert \leq \lVert a\rVert\lVert x\rVert$ gives $\lVert L_{a}\rVert \leq \lVert a\rVert$, and $\lVert L_{a}1\rVert = \lVert a\rVert$ gives equality when $\lVert 1\rVert = 1$; the right multiplication is the same computation.</p>
+<p><strong>Proposition (the images are closed under products and contain the identity).</strong> The set $\{L_{a}\}$ is a subalgebra of $\mathcal{L}(E)$ with the same multiplication table as $E$, and it contains $\mathrm{id}$ exactly when $E$ is unital; the centre of $E$ acts by both multiplications, $L_{z} = R_{z}$ for $z$ central.</p>
+<p><strong>Proof.</strong> Closure under products is $L_{a}L_{b} = L_{ab}$, and the identity statement is $L_{1} = \mathrm{id}$; centrality gives $L_{z}(x) = zx = xz = R_{z}(x)$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the endomorphism algebra).</strong> For $E = M_{n}(\mathbb{K})$ with the matrix product the left multiplication $L_{A}$ is the operator $X \mapsto AX$ on the matrix space, with matrix $A \otimes I$ in the natural basis, and the right multiplication $R_{B}$ is $X \mapsto XB$, with matrix $I \otimes B^{\mathsf{T}}$; they commute, and the map $(A, B) \mapsto L_{A}R_{B}$ is injective on pairs modulo the scalars.</p>
+<p><strong>Example (the operator algebra).</strong> For $E = \mathcal{L}(F)$ with composition, the left multiplication by $A$ is the operator $T \mapsto AT$ and the right multiplication by $B$ is $T \mapsto TB$; on a Hilbert space these are the operators whose matrix in an orthonormal basis is the Kronecker product, and the two-sided operator $T \mapsto ATB$ is the sandwich of the next article.</p>
+<p><strong>Example (commutative and noncommutative cases).</strong> On $E = C(K)$ with the pointwise product the multiplication is commutative, so $L_{f} = R_{f}$ is the multiplication operator $M_{f}$ of <em>Bounded Operators and the Operator Norm</em>, and the algebra generated is isometric to $C(K)$; on a noncommutative $E$, such as $M_{n}(\mathbb{K})$ with $n \geq 2$, the two families differ and the composition laws $L_{a}L_{b} = L_{ab}$, $R_{a}R_{b} = R_{ba}$ exhibit the opposite multiplication.</p>
+<h2 id="summary">Summary</h2>
+<p>On a topological vector space carrying a separately continuous bilinear multiplication, the left and right multiplications $L_{a}(x) = ax$ and $R_{a}(x) = xa$ are continuous linear operators, the assignments $a \mapsto L_{a}$ and $a \mapsto R_{a}$ are linear, and under associativity they obey $L_{a}L_{b} = L_{ab}$, $R_{a}R_{b} = R_{ba}$ and $L_{a}R_{b} = R_{b}L_{a}$, so the left multiplications form a representation and the right multiplications an anti-representation of the algebra on itself and the two images commute. With these actions the space is a bimodule over itself, and the operators commuting with all left multiplications are the right multiplications by central elements when the algebra is unital and associative. The continuity of the two families is automatic from the separate continuity of the multiplication; for the topology of bounded convergence it follows from joint continuity, and on a normed algebra the operator norms satisfy $\lVert L_{a}\rVert \leq \lVert a\rVert$ and $\lVert R_{a}\rVert \leq \lVert a\rVert$, with equality when the unit has norm one. The primary instance is the operator algebra $E = \mathcal{L}(F)$, where $L_{A}(T) = AT$, $R_{B}(T) = TB$ and the two-sided product $T \mapsto ATB$ is the operator on which the sandwich of the next article is built; the matrix algebra and the commutative algebra $C(K)$ are the standard examples.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$</td>
+<td>Topological vector space with a continuous multiplication</td>
+</tr>
+<tr>
+<td>$L_{a}(x) = ax$, $R_{a}(x) = xa$</td>
+<td>Left and right multiplications</td>
+</tr>
+<tr>
+<td>$L_{a}L_{b} = L_{ab}$, $R_{a}R_{b} = R_{ba}$</td>
+<td>Composition laws</td>
+</tr>
+<tr>
+<td>$L_{a}R_{b} = R_{b}L_{a}$</td>
+<td>Commutation of the two families</td>
+</tr>
+<tr>
+<td>$a \mapsto L_{a}$, $a \mapsto R_{a}$</td>
+<td>Regular representation and anti-representation</td>
+</tr>
+<tr>
+<td>left, right regular module</td>
+<td>$E$ as a bimodule over itself</td>
+</tr>
+<tr>
+<td>$L_{A}(T) = AT$, $R_{B}(T) = TB$</td>
+<td>The instance $E = \mathcal{L}(F)$</td>
+</tr>
+<tr>
+<td>commutant</td>
+<td>Operators commuting with all $L_{a}$</td>
+</tr>
+<tr>
+<td>$\lVert L_{a}\rVert \leq \lVert a\rVert$</td>
+<td>Operator norm bound in the normed case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for topological algebras, the regular representations and the continuity of the multiplications.</li>
+<li>Gottfried Köthe, <em>Topological Vector Spaces I</em> and <em>II</em> (Springer, 1969 and 1979), for the operator spaces and the multiplication operators.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition, 1999), for the topological algebra structure, the regular representations and the module structure.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the left and right multiplications on an operator algebra and the double centraliser.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the multiplication operators and the regular representations of the algebra of operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

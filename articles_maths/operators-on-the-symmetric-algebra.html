@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on the Symmetric Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-the-symmetric-algebra"><strong>Operators on the Symmetric Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric algebra $\operatorname{Sym}(V) = \bigoplus_{n \geq 0}\operatorname{Sym}^n V$ carries its multiplication, and consequently the family of operators given by multiplication by an element. Because the algebra is graded and generated in degree one, that family is only part of the operator structure: the grading itself defines an operator, and the way the symmetric algebra is built from the tensor powers makes the symmetric group act on each graded piece. This article assembles these operators and records the identities between them.</p>
+<p>The multiplication operators are the regular representation of $\operatorname{Sym}(V)$, already familiar from the commutative case. The <strong>degree operator</strong> $D$ multiplies the degree-$n$ part by $n$; it is not a multiplication, but it is a derivation of $\operatorname{Sym}(V)$, and it measures how far each operator moves the degree through the identity $[D, L_f] = (\deg f) L_f$ on homogeneous $f$. The passage from tensor powers to symmetric powers is equivariant for the action of the symmetric group $S_n$ on $V^{\otimes n}$, which permutes the factors; the symmetric power is the quotient by the span of the differences $v - \sigma v$, so $S_n$ acts trivially there, and the content of the group action is the description of $\operatorname{Sym}^n V$ as the coinvariants of $V^{\otimes n}$, identified with the invariants when $n!$ is invertible.</p>
+<p>The article assumes <em>Symmetric Powers</em> for $\operatorname{Sym}^n V$, its universal property and its behaviour under direct sums, and <em>The Symmetric Algebra</em> for the graded algebra, its product, its grading and its identification with the polynomial algebra. The derivations that lower the degree — the contraction operators — are <em>The Derivations of a Commutative Algebra</em>, the next entry of this group, and are named here only where the degree operator is compared with them; the algebra of differential operators of <em>The Adjoint in the Symmetric Algebra</em> belongs to the <code>* Operator Theory</code> group, and the pairing and the adjoint are deferred to it. Throughout, $R$ is a commutative ring with identity $1 \neq 0$, $V$ is a free $R$-module of finite rank $d$, and $\operatorname{Sym}(V)$ is as in <em>The Symmetric Algebra</em>; no norm, no distance and no topology occurs.</p>
+<h2 id="the-multiplication-operators">The Multiplication Operators</h2>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>Let $f \in \operatorname{Sym}(V)$ and let $L_f$ be multiplication by $f$,</p>
+<p>$$
+L_f : \operatorname{Sym}(V) \longrightarrow \operatorname{Sym}(V), \qquad L_f(u) = fu .
+$$</p>
+<p>By <em>Multiplication Operators on a Commutative Algebra</em>, the assignment $f \mapsto L_f$ is an injective $R$-algebra homomorphism with image the commutative subalgebra $L(\operatorname{Sym}(V)) \cong \operatorname{Sym}(V)$, and it is its own centralizer in $\operatorname{End}_R(\operatorname{Sym}(V))$. The grading adds a refinement.</p>
+<p><strong>Proposition (degree shift).</strong> Let $f$ be homogeneous of degree $k$. Then $L_f$ maps $\operatorname{Sym}^n V$ into $\operatorname{Sym}^{n+k} V$ for every $n \geq 0$; in particular $L_f$ maps the degree-zero part into $\operatorname{Sym}^k V$ and is determined by $L_f(1) = f$. The operators that respect the grading are exactly the $L_f$ with $f$ homogeneous, and a general $L_f$ is a sum of degree shifts.</p>
+<p><em>Proof.</em> The first claim is the multiplicativity of the grading, $\operatorname{Sym}^k V \cdot \operatorname{Sym}^n V \subseteq \operatorname{Sym}^{k+n} V$. An operator $T$ that maps each $\operatorname{Sym}^n V$ into $\operatorname{Sym}^{n+k} V$ for one fixed $k$ is the sum over $n$ of its restrictions, and $T = L_f$ with $f = T(1)$; the general case decomposes $f$ into homogeneous components. $\square$</p>
+<p><strong>Example.</strong> For $V = R^d$ and $\operatorname{Sym}(V) = R[x_1, \dots, x_d]$, the operators $L_{x_i}$ are the multiplications by the variables; they commute pairwise, and the algebra they generate is the polynomial algebra itself in its regular representation. The operator $L_{x_i}$ raises total degree by one, and $L_f$ raises it by $\deg f$.</p>
+<h3 id="the-commutant-of-the-multiplications">The Commutant of the Multiplications</h3>
+<p><strong>Proposition.</strong> The centralizer of $L(\operatorname{Sym}(V))$ in $\operatorname{End}_R(\operatorname{Sym}(V))$ is $L(\operatorname{Sym}(V))$ itself; an operator commuting with every $L_f$ is multiplication by an element of $\operatorname{Sym}(V)$.</p>
+<p><em>Proof.</em> This is the centralizer theorem of <em>Multiplication Operators on a Commutative Algebra</em> applied to the commutative algebra $\operatorname{Sym}(V)$: an operator commuting with every $L_f$ is $\operatorname{Sym}(V)$-linear, hence determined by its value at $1$. $\square$</p>
+<p>The degree operator below does <strong>not</strong> commute with the multiplications, and this is exactly why it is not visible in the commutant: it is the first operator of the larger algebra generated by the multiplications and the grading.</p>
+<h2 id="the-degree-operator">The Degree Operator</h2>
+<h3 id="definition">Definition</h3>
+<p>The grading gives a decomposition of the identity by degree. Define the <strong>degree operator</strong></p>
+<p>$$
+D : \operatorname{Sym}(V) \longrightarrow \operatorname{Sym}(V), \qquad D(u) = n\,u \ \text{ for } u \in \operatorname{Sym}^n V ,
+$$</p>
+<p>extended additively to all of $\operatorname{Sym}(V)$. It is $R$-linear, it fixes $\operatorname{Sym}^0 V \oplus \operatorname{Sym}^1 V = R \oplus V$ pointwise, and its eigenspaces are the graded pieces; when $\operatorname{Sym}(V)$ is free of finite rank over a field in which $0, 1, 2, \dots$ are distinct, $D$ is diagonalisable with distinct eigenvalues on the finitely many nonzero graded pieces up to a given degree. It is not a multiplication operator, because a multiplication operator maps $\operatorname{Sym}^0 V = R$ into a single graded piece and $D$ does not.</p>
+<p><strong>Proposition.</strong> For every homogeneous $f \in \operatorname{Sym}(V)$,</p>
+<p>$$
+[D, L_f] = (\deg f)\, L_f .
+$$</p>
+<p>On additive generators, the degree operator is that of the grading: $D$ counts the degree.</p>
+<p><em>Proof.</em> Let $f$ be homogeneous of degree $k$ and $u$ homogeneous of degree $n$. Then $fu$ is homogeneous of degree $n+k$, so $D(L_fu) = (n+k)fu$ and $L_f(Du) = L_f(nu) = n\,fu$, whence $[D,L_f]u = k\,fu = (\deg f)L_fu$. Both sides are linear in $u$, so the identity holds on all of $\operatorname{Sym}(V)$. $\square$</p>
+<p><strong>Proposition (the degree operator is the degree derivation).</strong> The operator $D$ is a derivation of $\operatorname{Sym}(V)$:</p>
+<p>$$
+D(fg) = D(f)\,g + f\,D(g) \qquad \text{for all } f, g \in \operatorname{Sym}(V) ,
+$$</p>
+<p>and it is the unique derivation with $D|_V = \mathrm{id}_V$, so that $D(v) = v$ for $v \in V$ and $D(1) = 0$. On a monomial it acts by $D(x^a) = |a|\,x^a$, and in the polynomial case it is $D = \sum_i x_i\partial_i$.</p>
+<p><em>Proof.</em> Both sides of the derivation identity are linear in each variable, so it suffices to check it on homogeneous $f, g$ of degrees $k, l$: $D(fg) = (k+l)fg = (kf)g + f(lg) = D(f)g + fD(g)$. A derivation is determined by its values on a generating set, and $V$ generates $\operatorname{Sym}(V)$ as an algebra, so the derivation with $D|_V = \mathrm{id}_V$ is unique; it agrees with the degree operator on the generators and hence everywhere. The monomial and polynomial formulas follow. $\square$</p>
+<p><strong>Remark.</strong> A derivation of $\operatorname{Sym}(V)$ that is a single degree shift of degree $k$ is called homogeneous of degree $k$; the degree operator $D$ is homogeneous of degree $0$ and is the Euler derivation of the symmetric algebra. The derivation identity $D = \sum_i x_i\partial_i$ exhibited above uses the contractions $\partial_i$, whose construction and whose place among the derivations of $\operatorname{Sym}(V)$ are the subject of <em>The Derivations of a Commutative Algebra</em>.</p>
+<h2 id="the-symmetric-group-action">The Symmetric Group Action</h2>
+<h3 id="the-action-on-the-tensor-powers">The Action on the Tensor Powers</h3>
+<p>The tensor power $V^{\otimes n}$ carries the action of the symmetric group</p>
+<p>$$
+S_n \times V^{\otimes n} \longrightarrow V^{\otimes n}, \qquad \sigma\cdot(v_1 \otimes \cdots \otimes v_n) = v_{\sigma^{-1}(1)} \otimes \cdots \otimes v_{\sigma^{-1}(n)} ,
+$$</p>
+<p>extended linearly; this is the permutation action of <em>Tensor Powers and the Free Algebra</em>. The symmetrising projection onto the fixed tensors is the operator</p>
+<p>$$
+e_n = \frac{1}{n!}\sum_{\sigma \in S_n} \sigma \in R[S_n] ,
+$$</p>
+<p>which is defined when $n!$ is invertible in $R$; it satisfies $e_n^2 = e_n$ and $\sigma e_n = e_n = e_n \sigma$, so it is, in that case, the projection onto the invariants $(V^{\otimes n})^{S_n}$.</p>
+<h3 id="the-symmetric-power-as-a-quotient">The Symmetric Power as a Quotient</h3>
+<p>By <em>Symmetric Powers</em>, the symmetric power is the quotient of the tensor power by the submodule $J_n$ spanned by the elements $v - \sigma\cdot v$ for $v \in V^{\otimes n}$ and $\sigma \in S_n$, and the natural map</p>
+<p>$$
+\pi_n : V^{\otimes n} \longrightarrow \operatorname{Sym}^n V
+$$</p>
+<p>is $S_n$-equivariant: $\pi_n(\sigma\cdot v) = \pi_n(v)$. The symmetric power is therefore the <strong>module of coinvariants</strong> $(V^{\otimes n})_{S_n} = V^{\otimes n}/J_n$, the largest $S_n$-equivariant quotient on which $S_n$ acts trivially.</p>
+<p><strong>Theorem.</strong> The map $\pi_n$ is $S_n$-equivariant and identifies $\operatorname{Sym}^n V$ with $(V^{\otimes n})_{S_n}$. When $n!$ is invertible in $R$, the composite</p>
+<p>$$
+e_n(V^{\otimes n}) \hookrightarrow V^{\otimes n} \xrightarrow{\ \pi_n\ } \operatorname{Sym}^n V
+$$</p>
+<p>is an isomorphism, so that $\operatorname{Sym}^n V$ is also the module of invariants $(V^{\otimes n})^{S_n}$ and the symmetriser $e_n$ is the inverse of $\pi_n$ on the symmetric tensors.</p>
+<p><em>Proof.</em> Equivariance is the definition of the quotient by the span of $v - \sigma v$. The composite of $e_n$ with $\pi_n$: since $\pi_n$ kills $v - \sigma v$, one has $\pi_n\sigma = \pi_n$ for every $\sigma$, hence $\pi_n e_n = \pi_n$. On the other hand $e_n$ maps into the invariants and is the identity on them, so the composite is an isomorphism of the invariants with the coinvariants exactly when the invariants and the coinvariants have the same rank, which happens when $n!$ is invertible (the averaging argument: $v = e_n v + (v - e_n v)$ exhibits $V^{\otimes n} = (V^{\otimes n})^{S_n} \oplus \ker\pi_n$ in that case). $\square$</p>
+<p><strong>Corollary.</strong> For $n = 0, 1$ the symmetric group acts trivially or not at all: $\operatorname{Sym}^0 V = R$ and $\operatorname{Sym}^1 V = V$ with the trivial action. For $n = 2$ the action of the transposition on $\operatorname{Sym}^2 V$ is trivial, and $\operatorname{Sym}^2 V$ is the quotient of $V^{\otimes 2}$ by the relation $x \otimes y = y \otimes x$, which is the commutativity of the symmetric algebra read in degree two.</p>
+<p><strong>Remark.</strong> The symmetric group acts on $V^{\otimes n}$ and trivially on its coinvariant quotient; what the action detects is the passage between them, namely the submodule $J_n$ and, when the averaging is available, the invariant tensors. The operators $e_n$ and the operators $\sigma \in S_n$ generate the group algebra $R[S_n]$ acting on $V^{\otimes n}$, and after the identification of <em>The Symmetric Algebra</em> this is the action of $R[S_n]$ on the $n$-th tensor power whose coinvariants are the symmetric power. The systematic representation theory of $S_n$ and of its reflection representations belongs to <em>Representation Theory of Symmetric Groups</em>; here only the action on the tensor powers and its relation to the symmetric power are used.</p>
+<p><strong>Example (the transposition in degree two).</strong> Let $V$ be free with basis $x_1, \dots, x_d$ and let $\tau$ be the transposition of the two factors. On $V^{\otimes 2}$ one has $\tau(x_i\otimes x_j) = x_j\otimes x_i$, the coinvariant quotient $\operatorname{Sym}^2 V$ has basis the classes of $x_i\otimes x_j + x_j\otimes x_i$ for $i \leq j$, and the transposition fixes each class. The invariant tensors are exactly the symmetric tensors, and over a ring in which $2$ is invertible the symmetriser $e_2$ is the projection $v \mapsto \tfrac12(v+\tau v)$ with $\pi_2e_2 = \pi_2$. Over a ring in which $2$ is not invertible the average is unavailable and the invariants strictly contain the image of $2e_2$; the symmetric power remains correct as the coinvariant quotient, which is the form in which <em>Symmetric Powers</em> defines it.</p>
+<h2 id="operators-of-the-symmetric-algebra">Operators of the Symmetric Algebra</h2>
+<h3 id="the-generated-algebra">The Generated Algebra</h3>
+<p>The operators defined above — the multiplications $L_f$, the degree operator $D$, the permutations $\sigma \in S_n$ on the tensor powers, and, in the polynomial case, the contractions — generate subalgebras of $\operatorname{End}_R(\operatorname{Sym}(V))$ of different sizes. The multiplications alone generate $L(\operatorname{Sym}(V)) \cong \operatorname{Sym}(V)$, a commutative algebra of infinite rank. Adjoining the degree operator to the multiplications generates the algebra spanned by the $L_f D^m$; the identity $[D,L_f] = (\deg f)L_f$ shows that the span is the image of $\operatorname{Sym}(V)\otimes R[D]$, and it is non-commutative as soon as $V \neq 0$.</p>
+<p><strong>Proposition.</strong> The operators $L_f$ and $D$ generate the algebra</p>
+<p>$$
+\langle L_f,\ D : f \in \operatorname{Sym}(V)\rangle = \Bigl\{\sum_{m \geq 0} L_{f_m} D^m : f_m \in \operatorname{Sym}(V),\ \text{almost all zero}\Bigr\},
+$$</p>
+<p>and the relations are generated by $[D, L_f] = (\deg f)L_f$ together with $L_fL_g = L_{fg}$.</p>
+<p><em>Proof.</em> The commutation identity moves every $D$ to the right of every $L_f$, at the cost of replacing $f$ by $(\deg f)$-multiples, so every word in the generators is a sum of the displayed normal forms. The relations are the two stated ones. $\square$</p>
+<p>When the contractions are adjoined, the generated algebra contains the degree operator $D = \sum_i x_i\partial_i$ and is the algebra of algebraic differential operators on the polynomial algebra, the subject of <em>The Adjoint in the Symmetric Algebra</em> and of the Weyl algebra; the generators there satisfy $[\partial_i, L_{x_j}] = \delta_{ij}$, and the resulting algebra is filtered by the order in the $\partial$'s. That article also fixes the pairing with respect to which the multiplications and the contractions are adjoint to one another.</p>
+<h3 id="operators-induced-by-endomorphisms-of-the-space">Operators Induced by Endomorphisms of the Space</h3>
+<p>An endomorphism $g \in \operatorname{End}_R(V)$ acts on each tensor power by $g^{\otimes n}$, the action commutes with the permutations, and it therefore descends to the symmetric power and gives an operator</p>
+<p>$$
+\operatorname{Sym}^n(g) : \operatorname{Sym}^n V \longrightarrow \operatorname{Sym}^n V, \qquad \operatorname{Sym}^n(g)(v_1\cdots v_n) = g(v_1)\cdots g(v_n),
+$$</p>
+<p>and a single operator $\operatorname{Sym}(g) = \bigoplus_n\operatorname{Sym}^n(g)$ on $\operatorname{Sym}(V)$. The assignment $g \mapsto \operatorname{Sym}(g)$ is a representation of the associative algebra $\operatorname{End}_R(V)$ by algebra endomorphisms of $\operatorname{Sym}(V)$; it is the polynomial functor $V \mapsto \operatorname{Sym}^n V$ read on the operators. The operator $\operatorname{Sym}(g)$ preserves the degree and commutes with $D$, and it intertwines the multiplications, $\operatorname{Sym}(g)L_f = L_{\operatorname{Sym}(g)(f)}\operatorname{Sym}(g)$.</p>
+<p><strong>Example.</strong> For $V = R^2$ with basis $x, y$ and $g$ the diagonal endomorphism $g(x) = \lambda x$, $g(y) = \mu y$, the induced operator on $\operatorname{Sym}^n V$ is diagonal in the monomial basis, with $\operatorname{Sym}^n(g)(x^ay^{n-a}) = \lambda^a\mu^{n-a}x^ay^{n-a}$. The symmetric power therefore decomposes into the eigenspaces of $\operatorname{Sym}^n(g)$, one for each exponent $a$, and the trace of $\operatorname{Sym}^n(g)$ is the complete homogeneous symmetric polynomial $h_n(\lambda,\mu)$; the elementary symmetric functions appear instead in the exterior powers, which belong to the anti-symmetric category.</p>
+<h3 id="functoriality-of-the-operators">Functoriality of the Operators</h3>
+<p>The operators are natural in $V$. An $R$-linear map $g : V \to W$ induces an algebra homomorphism $\operatorname{Sym}(g) : \operatorname{Sym}(V)\to\operatorname{Sym}(W)$, and the multiplications intertwine:</p>
+<p>$$
+\operatorname{Sym}(g)\circ L_f = L_{\operatorname{Sym}(g)(f)}\circ \operatorname{Sym}(g) .
+$$</p>
+<p>The degree operator is natural with respect to any $g$, $\operatorname{Sym}(g)D = D\operatorname{Sym}(g)$, because $\operatorname{Sym}(g)$ preserves the degree; and the symmetric group action is natural too, since $g^{\otimes n}$ intertwines the permutations. The functoriality is the same as that of <em>The Symmetric Algebra</em>, read on the operator level.</p>
+<p><strong>Example (the rank-one case).</strong> For $V = R$ the symmetric algebra is $R[x]$, with $\operatorname{Sym}^n V = Rx^n$. The multiplications $L_{x^k}$ are the shifts $x^m\mapsto x^{m+k}$, the degree operator is $D(x^m) = mx^m$, and $[D, L_{x^k}] = kL_{x^k}$; the Lie algebra that $L_x$ and $D$ generate under the commutator is the two-dimensional solvable Lie algebra spanned by $L_x$ and $D$ with $[D, L_x] = L_x$, while the associative algebra they generate consists of the operators $\sum_m L_{x^{k_m}}D^m$. This is the smallest nontrivial instance of the degree-operator relations, and it exhibits the contrast between the two-dimensional Lie algebra and the infinite-dimensional associative algebra it generates.</p>
+<h2 id="summary">Summary</h2>
+<p>For a free module $V$ of finite rank the symmetric algebra $\operatorname{Sym}(V)$ carries the <strong>multiplication operators</strong> $L_f$, which form a copy of $\operatorname{Sym}(V)$ and are exactly their own centralizer in $\operatorname{End}_R(\operatorname{Sym}(V))$. The grading defines the <strong>degree operator</strong> $D$, acting on $\operatorname{Sym}^n V$ as multiplication by $n$; it is not a multiplication but it is the degree derivation, and it is characterised by $[D, L_f] = (\deg f) L_f$ on homogeneous $f$, so that $D$ moves each graded piece by its degree. The <strong>symmetric group</strong> $S_n$ acts on $V^{\otimes n}$ by permuting the factors, the natural map $V^{\otimes n} \to \operatorname{Sym}^n V$ is $S_n$-equivariant, and the symmetric power is the module of coinvariants $(V^{\otimes n})_{S_n}$; when $n!$ is invertible the symmetriser $e_n$ identifies it also with the invariants. The multiplications and the degree operator generate the normal forms $\sum_m L_{f_m}D^m$ with relations $[D,L_f] = (\deg f)L_f$ and $L_fL_g = L_{fg}$; adjoining the contractions gives the algebra of differential operators of <em>The Adjoint in the Symmetric Algebra</em>. No pairing, adjoint or norm occurs in this article; the pairing is deferred to the <code>* Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>Free $R$-module of finite rank $d$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(V) = \bigoplus_n \operatorname{Sym}^n V$</td>
+<td>Symmetric algebra of $V$</td>
+</tr>
+<tr>
+<td>$L_f$, $L_f(u) = fu$</td>
+<td>Multiplication operator by $f$</td>
+</tr>
+<tr>
+<td>$L(\operatorname{Sym}(V))$</td>
+<td>Image of $L$, the regular representation</td>
+</tr>
+<tr>
+<td>$D$, $D u = nu$ for $u \in \operatorname{Sym}^n V$</td>
+<td>Degree operator</td>
+</tr>
+<tr>
+<td>$[D, L_f] = (\deg f)L_f$</td>
+<td>Degree-operator relation</td>
+</tr>
+<tr>
+<td>$S_n$, $\sigma$</td>
+<td>Symmetric group and its elements</td>
+</tr>
+<tr>
+<td>$J_n = \langle v - \sigma v\rangle$</td>
+<td>Submodule defining $\operatorname{Sym}^n V$ as a quotient</td>
+</tr>
+<tr>
+<td>$\pi_n : V^{\otimes n} \to \operatorname{Sym}^n V$</td>
+<td>Equivariant quotient map</td>
+</tr>
+<tr>
+<td>$e_n = \frac{1}{n!}\sum_{\sigma}\sigma$</td>
+<td>Symmetriser, when $n!$ is invertible</td>
+</tr>
+<tr>
+<td>$(V^{\otimes n})_{S_n}$, $(V^{\otimes n})^{S_n}$</td>
+<td>Coinvariants and invariants</td>
+</tr>
+<tr>
+<td>$\partial_i$, $x_i\partial_i = D$</td>
+<td>Contractions and the Euler form, in the polynomial case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1989), for symmetric powers, the symmetric algebra and the symmetric group action on tensor powers.</li>
+<li>Serge Lang, <em>Algebra</em>, 3rd ed. (Springer, 2002), for the symmetriser, the coinvariants and the polynomial algebra as the free commutative algebra.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em>, 2nd ed. (Springer, 1978), for the symmetric and alternating tensor modules and the permutation action.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the symmetric powers as representations of the general linear group and the symmetric group.</li>
+<li>Israel M. Gelfand and Alexandre V. Zelevinsky, "Polynomial representations of $\mathrm{GL}_n$", <em>Annales scientifiques de l'École Normale Supérieure</em> 17 (1984), 291–309, for the polynomial functors of which $\operatorname{Sym}^n$ is the basic example.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

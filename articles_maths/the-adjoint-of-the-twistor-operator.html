@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Twistor Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-twistor-operator"><strong>The Adjoint of the Twistor Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The twistor operator $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ is not an operator on one bundle: it maps the spinor sections to the one-form valued spinors, $\Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$, and it is the projection of the covariant derivative onto the kernel of the Clifford contraction. Its adjoint for the $L^2$ form is therefore an operator in the reverse direction, and the shape of the answer is simple: the adjoint of the projection is the projection, and the adjoint of the covariant derivative is the covariant divergence, so</p>
+<p>$$
+\mathcal{T}^{*} = \nabla^{*}\circ\pi ,
+$$</p>
+<p>with $\nabla^*$ the adjoint connection of <em>The Codifferential on a Spinor Bundle</em>. The article computes the adjoint, derives the orthogonal decomposition of the connection Laplacian that it produces,</p>
+<p>$$
+\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
+$$</p>
+<p>with $D$ the self-adjoint Cauchy–Riemann operator, and reads from it the consequences for the twistor equation $\mathcal{T}\sigma=0$: the equivalent form $\nabla_X\sigma=-\frac1nc(X)D\sigma$ of the equation and the scalar identity satisfied by the twistor spinors.</p>
+<p><strong>The boundaries.</strong> The operator, its projection $\pi$ and the contraction $c$ are <em>The Twistor Operator</em>; the Cauchy–Riemann operator, its self-adjointness $D^*=D$ and the Lichnerowicz formula are <em>The Spinor Operator</em>; the adjoint connection and its calculus are <em>The Codifferential on a Spinor Bundle</em>; the Clifford multiplication and its adjoint are <em>The Clifford Multiplication Operator</em> and <em>The Adjoint of the Clifford Multiplication</em>. The involutions, the conjugate symmetry and the Hermitian pairing of the kernel are <em>Involutions of the Twistor Operator</em>, the preceding entry of the group. The spectral theory of $\mathcal{T}^*\mathcal{T}$ is Part III's. The body is a Riemannian spin manifold with the fibre form $h$, $c(v)^*=-c(v)$ and the twistor operator of <em>The Twistor Operator</em>.</p>
+<h2 id="the-formal-adjoint">The Formal Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>formal adjoint</strong> $\mathcal{T}^*$ of the twistor operator is the differential operator $\Gamma(T^*M\otimes\mathcal{S})\to\Gamma(\mathcal{S})$ with</p>
+<p>$$
+\int_M h(\mathcal{T}\sigma,\psi)\,\mu_g = \int_M h(\sigma,\mathcal{T}^{*}\psi)\,\mu_g
+$$</p>
+<p>for all compactly supported smooth sections, $h$ extended to the twisted bundle by the metric on the cotangent factor.</p>
+<p><strong>Theorem.</strong> $\mathcal{T}^{*}=\nabla^{*}\circ\pi$, where $\pi=\mathrm{id}-\frac1nc^*c$ is the $h$-orthogonal projection onto $\ker c$ and $\nabla^*$ is the adjoint of the covariant derivative; the principal symbol of $\mathcal{T}^*$ is the adjoint Clifford contraction, and $\mathcal{T}$ and $\mathcal{T}^*$ are elliptic of order one.</p>
+<p><strong>Proof.</strong> The adjoint of a composite is the composite of the adjoints in the reverse order, so $\mathcal{T}^*=(\pi\nabla)^*=\nabla^*\pi^*$, and $\pi$ is an orthogonal projection for the pointwise form, hence $\pi^*=\pi$. The symbol statements are the symbol of the contraction and of its adjoint, and the ellipticity is the invertibility of the symbol of $\mathcal{T}$ on the trace-free part, which is the content of the symbol computation of <em>The Twistor Operator</em>.</p>
+<p><strong>Proposition (the components).</strong> Writing a twisted section as $\psi=\sum_i\theta^i\otimes\psi_i$ with $\psi_i\in\Gamma(\mathcal{S})$, the projection acts by</p>
+<p>$$
+\pi\psi = \sum_i\theta^i\otimes\Bigl(\psi_i+\tfrac1n c(e_i)(c\psi)\Bigr) , \qquad c\psi=\sum_j c(e_j)\psi_j ,
+$$</p>
+<p>and the adjoint is $\mathcal{T}^{*}\psi=-\sum_i\nabla_i\bigl(\psi_i+\tfrac1nc(e_i)(c\psi)\bigr)$ up to the lower-order terms of $\nabla^*$; in particular $\mathcal{T}^*\psi$ depends on $\psi$ through its trace-free part and the divergence of its components.</p>
+<p><strong>Proof.</strong> The formula for $\pi$ is the definition $\pi\psi=\psi-\frac1nc^*c\psi$ with the adjoint contraction $c^*\sigma=-\sum_i\theta^i\otimes c(e_i)\sigma$ of <em>The Adjoint of the Clifford Multiplication</em>; the divergence is the leading part of $\nabla^*$, which is $-\sum_i\nabla_i$ on the components plus the curvature terms recorded in <em>The Codifferential on a Spinor Bundle</em>.</p>
+<p><strong>Remark (the pairing as the twistor form).</strong> The $L^2$ pairing of the definition is the integrated form of the pointwise Hermitian form of <em>Hermitian Clifford Structures</em>; the anti-linearity in the second argument and the reality of $\nabla$ make the pairing conjugate-symmetric, which is the <strong>conjugate symmetry</strong> of <em>Involutions of the Twistor Operator</em> read at the level of the adjoint.</p>
+<h2 id="the-decomposition-of-the-connection-laplacian">The Decomposition of the Connection Laplacian</h2>
+<p><strong>Theorem (the orthogonal decomposition).</strong> The connection Laplacian decomposes as</p>
+<p>$$
+\nabla^{*}\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
+$$</p>
+<p>where $D$ is the Cauchy–Riemann operator of <em>The Spinor Operator</em>; both summands are non-negative operators on the compactly supported sections, and the decomposition is orthogonal for the $L^2$ form.</p>
+<p><strong>Proof.</strong> Let $\pi=\mathrm{id}-\frac1nc^*c$ be the projection onto $\ker c$ and write the identity $\mathrm{id}=\pi+\frac1nc^*c$. Then</p>
+<p>$$
+\nabla^{*}\nabla=\nabla^{*}\bigl(\pi+\tfrac1nc^{*}c\bigr)\nabla = (\nabla^{*}\pi)\nabla+\tfrac1n\nabla^{*}c^{*}c\nabla = \mathcal{T}^{*}\mathcal{T}+\tfrac1n\nabla^{*}c^{*}c\nabla .
+$$</p>
+<p>Now $\nabla^*c^*=(c\nabla)^*$, because the adjoint of a composite is the composite of the adjoints and $(\nabla^*)^*=\nabla$; and $(c\nabla)^*=D^*=D$ by the formal self-adjointness of the Cauchy–Riemann operator of <em>The Spinor Operator</em>. Hence $\nabla^*c^*c\nabla=D\circ D=D^2$, which gives the identity. The non-negativity is $\langle\nabla^{*}\nabla\sigma,\sigma\rangle=\lVert\nabla\sigma\rVert^2\ge0$ and the corresponding statements for the two summands, since each is a composite of an operator with its adjoint: $\mathcal{T}^*\mathcal{T}=(\mathcal{T})^*(\mathcal{T})$ and $D^2=D^*D$.</p>
+<p><strong>Corollary.</strong> The kernel of $\mathcal{T}$ is the kernel of $\mathcal{T}^*\mathcal{T}$, and it is a subspace of the kernel of $\nabla^*\nabla$; the twistor spinors are the parallel spinors of the decomposition's first summand, and the identity shows how the twistor equation sits inside the equation $\nabla^*\nabla\sigma=\frac1nD^2\sigma$.</p>
+<p><strong>Proof.</strong> For a compactly supported section, $\langle\mathcal{T}^*\mathcal{T}\sigma,\sigma\rangle=\lVert\mathcal{T}\sigma\rVert^2$, so $\mathcal{T}\sigma=0$ exactly when $\mathcal{T}^*\mathcal{T}\sigma=0$; the identity gives the second statement.</p>
+<h2 id="the-twistor-equation">The Twistor Equation</h2>
+<p><strong>Theorem.</strong> For a spinor $\sigma$ the twistor equation $\mathcal{T}\sigma=0$ is equivalent to</p>
+<p>$$
+\nabla_X\sigma = -\tfrac1n c(X)D\sigma \qquad\text{for all vector fields } X ,
+$$</p>
+<p>and then $\sigma$ satisfies the scalar identity</p>
+<p>$$
+\nabla^{*}\nabla\sigma = \frac{\operatorname{scal}}{4(n-1)}\,\sigma , \qquad D^{2}\sigma = \frac{n}{4(n-1)}\,\operatorname{scal}\,\sigma ,
+$$</p>
+<p>where $\operatorname{scal}$ is the scalar curvature.</p>
+<p><strong>Proof.</strong> $\mathcal{T}\sigma=0$ means that $\nabla\sigma$, a one-form valued spinor, lies in the kernel of the contraction $c$, that is in the image of $c^*$, and the component form of that membership is $\nabla_X\sigma=-\frac1nc(X)D\sigma$: indeed $c(\nabla\sigma)=0$ means $\sum_ic(e_i)\nabla_i\sigma=0$, and the trace-free condition identifies $\nabla_X\sigma+\frac1nc(X)D\sigma$ as the orthogonal projection onto the trace-free part. For the scalar identity, substitute into the decomposition of the connection Laplacian: $\nabla^*\nabla\sigma=\frac1nD^2\sigma$ because the first summand vanishes, and the Lichnerowicz formula $D^2=\nabla^*\nabla+\frac14\operatorname{scal}$ of <em>The Spinor Operator</em> gives $\nabla^*\nabla\sigma=\frac1n\nabla^*\nabla\sigma+\frac{\operatorname{scal}}{4n}\sigma$, which is the display.</p>
+<p><strong>Corollary (the domain of the solutions).</strong> A twistor spinor is determined by $\sigma(x)$ and $\nabla\sigma(x)$ at one point, so the space of twistor spinors has dimension at most $2^{\lfloor n/2\rfloor+1}$; the bound is attained on the conformally flat manifolds by <em>The Penrose Operator</em>, where the space is a representation of the conformal algebra.</p>
+<p><strong>Proof.</strong> The equation $\nabla_X\sigma=-\frac1nc(X)D\sigma$ is a first-order system whose initial data are the values of $\sigma$ and of $\nabla\sigma$ modulo the relation; the dimension of the spinor fibre gives $2^{\lfloor n/2\rfloor}$, and the one-form constrained to be the image of $c^*$ contributes one further spinor, whence $2^{\lfloor n/2\rfloor+1}$; the attainment is the quoted statement of <em>The Penrose Operator</em>.</p>
+<p><strong>Remark.</strong> The scalar identity is the reason a twistor spinor with a parallel $D\sigma$ off a zero of the scalar curvature is forced to vanish or to be special: integrating the identity against the volume form gives $\int\lvert\nabla\sigma\rvert^2=\frac1{4(n-1)}\int\operatorname{scal}\,\lvert\sigma\rvert^2$, and a definite sign of the scalar curvature then excludes or forces the solutions; the argument is the analytic counterpart of the Bochner method and its rigour is Part III's.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-flat-space">The Flat Space</h3>
+<p>For $\mathbb{R}^n$ with the standard spin structure, $\mathcal{T}\sigma=0$ has the solutions $\sigma=\sigma_0+\sum_ix^ic(e_i)\sigma_0$ with $\sigma_0$ parallel, the dimension is $2^{\lfloor n/2\rfloor+1}$, and $\mathcal{T}^*\mathcal{T}$ is $-\Delta$ on the trace-free part; the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ is the flat decomposition of the connection Laplacian, and the scalar identity is vacuous because $\operatorname{scal}=0$.</p>
+<h3 id="the-round-sphere">The Round Sphere</h3>
+<p>For $S^n$ with the round metric, $\operatorname{scal}=n(n-1)$, the twistor spinors are the sums of the two Killing families, the dimension attains the bound $2^{\lfloor n/2\rfloor+1}$, and the scalar identity reads $\nabla^*\nabla\sigma=\frac n4\sigma$; the first eigenvalue of the connection Laplacian on the twistor spinors is $\frac n4$.</p>
+<h3 id="a-compact-einstein-manifold">A Compact Einstein Manifold</h3>
+<p>For a compact Einstein manifold of positive scalar curvature the twistor operator has finite-dimensional kernel by ellipticity, the identity gives the bound on the dimension in terms of the eigenvalue of the twistor Laplacian, and the rigidity statements — that a compact manifold with the maximal number of twistor spinors is conformally flat — are quoted from the literature.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>formal adjoint</strong> of the twistor operator is $\mathcal{T}^{*}=\nabla^{*}\circ\pi$, the composition of the covariant divergence with the orthogonal projection onto $\ker c$; with the corpus's signs $c(v)^*=-c(v)$ and $D^*=D$, it yields the <strong>orthogonal decomposition of the connection Laplacian</strong></p>
+<p>$$
+\nabla^{*}\nabla=\mathcal{T}^{*}\mathcal{T}+\tfrac1n D^{2} ,
+$$</p>
+<p>proved from $\mathrm{id}=\pi+\frac1nc^*c$ and $\nabla^*c^*=D$. There follows the equivalent form of the <strong>twistor equation</strong>, $\nabla_X\sigma=-\frac1nc(X)D\sigma$, the scalar identity $\nabla^*\nabla\sigma=\frac{\operatorname{scal}}{4(n-1)}\sigma$ with $D^2\sigma=\frac{n}{4(n-1)}\operatorname{scal}\sigma$, and the bound $2^{\lfloor n/2\rfloor+1}$ on the dimension of the space of twistor spinors, attained on the conformally flat manifolds. The operator is <em>The Twistor Operator</em>, its involutions and the conjugate symmetry of the pairing are <em>Involutions of the Twistor Operator</em>, the Cauchy–Riemann operator and the Lichnerowicz formula are <em>The Spinor Operator</em>, the adjoint connection is <em>The Codifferential on a Spinor Bundle</em>, and the spectral theory of $\mathcal{T}^*\mathcal{T}$ is Part III's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{T}=\pi\circ\nabla$, $\pi=\mathrm{id}-\frac1nc^*c$</td>
+<td>Twistor operator</td>
+</tr>
+<tr>
+<td>$\mathcal{T}^{*}=\nabla^{*}\pi$</td>
+<td>Formal adjoint</td>
+</tr>
+<tr>
+<td>$D=c\circ\nabla$, $D^*=D$</td>
+<td>Self-adjoint Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>$\nabla^{*}\nabla=\mathcal{T}^{*}\mathcal{T}+\frac1nD^2$</td>
+<td>Orthogonal decomposition of the connection Laplacian</td>
+</tr>
+<tr>
+<td>$\nabla_X\sigma=-\frac1nc(X)D\sigma$</td>
+<td>Equivalent form of the twistor equation</td>
+</tr>
+<tr>
+<td>$\nabla^{*}\nabla\sigma=\frac{\operatorname{scal}}{4(n-1)}\sigma$</td>
+<td>Scalar identity for twistor spinors</td>
+</tr>
+<tr>
+<td>$2^{\lfloor n/2\rfloor+1}$</td>
+<td>Bound on the dimension of the space of twistor spinors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Helga Baum, Thomas Friedrich, Ralf Grunewald and Ines Kath, <em>Twistors and Killing Spinors on Riemannian Manifolds</em> (Teubner, 1991), for the twistor operator, its adjoint and the scalar identity for twistor spinors.</li>
+<li>Thomas Friedrich, <em>Dirac Operators in Riemannian Geometry</em> (American Mathematical Society, 2000), for the decomposition of the connection Laplacian, the Lichnerowicz formula and the Weitzenböck method.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the adjoint connections, the projection onto $\ker c$ and the elliptic complexes of the spinor bundle.</li>
+<li>Nicole Berline, Ezra Getzler and Michèle Vergne, <em>Heat Kernels and Dirac Operators</em> (Springer, 1992), for the symbol calculus of the twisted operators and the elliptic decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourier Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourier-operator"><strong>The Fourier Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Fourier transform is not only a formula for a function but an operator, and as an operator it is
+unitary. Written
+$$
+(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)e^{-2\pi ix\cdot\xi}\,dx ,
+$$
+it extends from the Schwartz class to an isometry of $L^2(\mathbb R^n)$ onto itself, so that it preserves
+the inner product and the norm; its inverse is the transform with the conjugate character. The operator
+has a second structural feature, its order: applied twice it reflects the argument,
+$\mathcal F^2f(x)=f(-x)$, and applied four times it returns $f$, so that $\mathcal F^4=\mathrm{id}$ and its
+only possible eigenvalues are the fourth roots of unity. In the Schwartz class that possibility is
+realised: the Hermite functions are eigenvectors with eigenvalues $(-i)^k$, and they form an orthonormal
+basis of $L^2$ in which $\mathcal F$ is diagonal. This article develops the transform in that
+operator-theoretic form: the unitary operator, its order-four structure, the eigenbasis that diagonalises
+it, and the unitary equivalence by which it turns differentiation into multiplication and every
+translation-invariant operator into a multiplier.</p>
+<p>The prerequisites are <em>Fourier Analysis on Euclidean Spaces</em> for the transform on $L^1$ and
+$\mathcal S(\mathbb R^n)$, the multiplication formula, the inversion theorem, the convolution theorem, the
+Plancherel theorem and the Hermite functions, <em>Measure Theory and Integration</em> for the $L^2$ space and its
+inner product, and <em>Convolution Operators</em>, the previous article of this group, for the multiplier
+operators. The spectral vocabulary — unitary, self-adjoint, eigenbasis, unitary equivalence, the spectral
+theorem — is quoted as it is used from <em>Banach and Hilbert Spaces</em>, later in this Part, where it is
+developed; the concrete diagonalisation of $\mathcal F$ by the Hermite functions is proved here, and
+nothing in the article depends on the general spectral theorem. The adjoint of the Fourier operator is the
+subject of <em>The Adjoint of the Fourier Operator</em>, in the <code>* Operator</code> group of this category, and the
+present Article stops at the unitarity from which that adjoint is read. No geometry is invoked; the
+transform acts on functions and the operator is studied through the integral and the inner product alone.</p>
+<h2 id="the-transform-as-an-operator">The Transform as an Operator</h2>
+<h3 id="definition-on-the-schwartz-class">Definition on the Schwartz Class</h3>
+<p><strong>Definition.</strong> The <strong>Fourier operator</strong> on $\mathbb R^n$ is the map
+$$
+(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)e^{-2\pi ix\cdot\xi}\,dx ,
+$$
+under the normalisation of <em>Fourier Analysis on Euclidean Spaces</em>; the conjugate transform is
+$(\overline{\mathcal F}f)(\xi)=\int f(x)e^{2\pi ix\cdot\xi}dx$, and the inverse transform is
+$\check g(x)=\int g(\xi)e^{2\pi ix\cdot\xi}d\xi$.</p>
+<p>On the Schwartz class $\mathcal S(\mathbb R^n)$ the transform is a linear homeomorphism onto itself, of
+order four; this is the content of the invariance of $\mathcal S$ and of the inversion theorem of the
+Fourier article. The two identities this article uses throughout are those of that article as well:
+$\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial_j\mathcal Ff$,
+the second from differentiating under the integral.</p>
+<h3 id="extension-to-math20-and-unitarity">Extension to $L^2$ and Unitarity</h3>
+<p><strong>Theorem (Plancherel).</strong> The transform extends from $\mathcal S(\mathbb R^n)\cap L^2$ to a unique
+bounded linear operator $\mathcal F:L^2(\mathbb R^n)\to L^2(\mathbb R^n)$, which is an isometry:
+$$
+\lVert\mathcal Ff\rVert_2=\lVert f\rVert_2,\qquad
+\langle\mathcal Ff,\mathcal Fg\rangle=\langle f,g\rangle ,
+$$
+the inner product being $\langle f,g\rangle=\int f\bar g$. It is onto, hence unitary, and its inverse is
+the conjugate transform, $\mathcal F^{-1}=\overline{\mathcal F}$.</p>
+<p><strong>Proof.</strong> The isometry on $\mathcal S$ is Plancherel's theorem of <em>Fourier Analysis on Euclidean
+Spaces</em>; $\mathcal S$ is dense in $L^2$, so the isometry extends uniquely to a bounded isometry of $L^2$,
+and the extension is given by the $L^2$ limit of the transforms of an approximating sequence. The inner
+product identity is the polarisation of the norm identity over $\mathbb C$ (the article works over
+$\mathbb K=\mathbb R$ or $\mathbb C$; over $\mathbb R$ the norm identity is equivalent to the inner product
+identity by the polarisation formula). The inverse is the conjugate transform, since the inversion theorem
+gives $\check{\hat f}=f$ on $\mathcal S$ and hence, by density and continuity, on $L^2$; surjectivity
+follows. $\blacksquare$</p>
+<p>The word <strong>unitary</strong> for $\mathcal F$ is used in the sense of <em>Banach and Hilbert Spaces</em>, later in this
+Part: a bounded operator with $\mathcal F^\dagger\mathcal F=\mathcal F\mathcal F^\dagger=\mathrm{id}$. The
+dagger is the adjoint, in the sense of <em>Conventions in Mathematics</em>; the star, by contrast, names the
+involution of the elements, $\bar f$. The unitarity of $\mathcal F$ is the statement that
+$\overline{\mathcal F}=\mathcal F^{-1}$.</p>
+<h2 id="the-order-four-structure">The Order-Four Structure</h2>
+<h3 id="the-square-of-the-transform-is-parity">The Square of the Transform Is Parity</h3>
+<p><strong>Definition.</strong> The <strong>parity operator</strong> $P$ is the reflection $(Pf)(x)=f(-x)$. It is unitary and
+self-adjoint, and $P^2=\mathrm{id}$; hence $P$ has the two eigenvalues $+1$ and $-1$, with the even
+functions as the $+1$ eigenspace and the odd functions as the $-1$ eigenspace.</p>
+<p><strong>Theorem.</strong> On $L^2(\mathbb R^n)$ one has $\mathcal F^2=P$ and consequently
+$\mathcal F^4=\mathrm{id}$, $\mathcal F^{-1}=\mathcal F^3$, and $\mathcal F^3=\mathcal FP=P\mathcal F$.</p>
+<p><strong>Proof.</strong> On $\mathcal S$, inserting the definition and exchanging the order of integration, which the
+rapid decrease justifies,
+$$
+\mathcal F^2f(x)=\int \mathcal Ff(\xi)e^{-2\pi ix\cdot\xi}\,d\xi
+=\iint f(y)e^{-2\pi iy\cdot\xi}e^{-2\pi ix\cdot\xi}\,dy\,d\xi
+=\int f(y)\Bigl(\int e^{-2\pi i(x+y)\cdot\xi}d\xi\Bigr)dy ,
+$$
+and the inner integral is the delta distribution at $x+y$, so it selects $y=-x$ and $\mathcal F^2f=f(-x)$.
+Both sides extend to $L^2$ by continuity and density. Then $\mathcal F^4=(\mathcal F^2)^2=P^2=\mathrm{id}$,
+and $\mathcal F^{-1}=\mathcal F^3$ follows by multiplying by $\mathcal F$; the last identity is
+$\mathcal F\mathcal F^2=\mathcal F^2\mathcal F$, that is, parity commutes with $\mathcal F$, which holds
+because $\mathcal F^2$ is a function of $\mathcal F$. $\blacksquare$</p>
+<p><strong>Corollary (the eigenvalues).</strong> A unitary operator satisfying $\mathcal F^4=\mathrm{id}$ has spectrum
+contained in the fourth roots of unity $\{1,i,-1,-i\}$. In finite dimension it would be diagonalisable
+with these eigenvalues; on the infinite-dimensional $L^2$ the same eigenvalues occur, but the operator has
+no eigenvectors in $L^2$ beyond the eigenbasis below, and no other spectral values.</p>
+<p><strong>Proof.</strong> If $\mathcal F^4=\mathrm{id}$ and $\lambda$ is an eigenvalue, then $\lambda^4=1$. The spectrum
+statement is the spectral mapping theorem for the polynomial $z^4-1$, applied in <em>Banach and Hilbert
+Spaces</em>, later in this Part. $\blacksquare$</p>
+<h2 id="the-hermite-eigenbasis">The Hermite Eigenbasis</h2>
+<h3 id="the-hermite-functions">The Hermite Functions</h3>
+<p><strong>Definition.</strong> On $\mathbb R$ the <strong>Hermite functions</strong> are obtained from the Gaussian by the operators of
+multiplication by $x$ and of differentiation,
+$$
+h_k(x)=\frac{(-1)^k}{(2^kk!\sqrt\pi)^{1/2}}e^{\pi x^2}\frac{d^k}{dx^k}\bigl(e^{-2\pi x^2}\bigr),
+\qquad k=0,1,2,\dots,
+$$
+and on $\mathbb R^n$ the product functions $h_\alpha(x)=h_{\alpha_1}(x_1)\cdots h_{\alpha_n}(x_n)$, for
+multi-indices $\alpha$, are the Hermite functions of several variables. They lie in the Schwartz class and
+form an orthonormal basis of $L^2(\mathbb R^n)$.</p>
+<p><strong>Proof.</strong> The orthonormality and completeness are those of the Hermite basis of <em>Fourier Analysis on
+Euclidean Spaces</em>; the normalising constant is chosen so that $\lVert h_k\rVert_2=1$, and the products are
+orthonormal in $L^2(\mathbb R^n)$ by Fubini. $\blacksquare$</p>
+<h3 id="the-eigenvalues">The Eigenvalues</h3>
+<p><strong>Theorem.</strong> The Fourier operator is diagonal in the Hermite basis:
+$$
+\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha ,
+\qquad\text{so}\qquad
+\mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha .
+$$</p>
+<p><strong>Proof.</strong> On $\mathbb R$ the two identities $\mathcal F(\partial_xf)=2\pi i\xi\mathcal Ff$ and
+$\mathcal F(xf)=-\frac1{2\pi i}\partial_x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
+annihilation operators $x\pm\frac1{2\pi}\frac{d}{dx}$ which raise and lower $k$, hence that $\mathcal F$
+carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by the Gaussian computation
+$\mathcal F(e^{-\pi x^2})=e^{-\pi x^2}$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
+commutation with the raising operator multiplies the eigenvalue by $-i$ at each step, giving
+$\mathcal Fh_k=(-i)^kh_k$. In $n$ variables the eigenvalue of $h_\alpha$ is the product of the one-variable
+eigenvalues along the coordinates, $(-i)^{\lvert\alpha\rvert}$. $\blacksquare$</p>
+<p><strong>Corollary (the four eigenspaces).</strong> The eigenvalues $1,i,-1,-i$ correspond to the values
+$\lvert\alpha\rvert\equiv0,1,2,3\pmod 4$, so $L^2(\mathbb R^n)$ is the orthogonal direct sum of four
+closed subspaces on which $\mathcal F$ acts as the scalars $1,i,-1,-i$; each is infinite-dimensional for
+$n\geq1$. This is the diagonalisation of a unitary operator of order four, and the spectral theorem for a
+unitary operator is the general statement behind it.</p>
+<h2 id="the-fourier-operator-as-a-unitary-equivalence">The Fourier Operator as a Unitary Equivalence</h2>
+<h3 id="differentiation-becomes-multiplication">Differentiation Becomes Multiplication</h3>
+<p><strong>Theorem.</strong> With $D_j=\frac1{2\pi i}\partial_j$ acting on the Schwartz class, one has
+$$
+\mathcal FD_j\mathcal F^{-1}=M_{x_j},\qquad \mathcal FM_{x_j}\mathcal F^{-1}=-D_j ,
+$$
+where $M_{x_j}$ is multiplication by the coordinate $x_j$; equivalently $\mathcal F$ is a unitary
+equivalence carrying the differentiation $\frac1{2\pi i}\partial_j$ into multiplication by the coordinate.</p>
+<p><strong>Proof.</strong> The first identity is the rearrangement of $\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$, the
+second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial_j\mathcal Ff$; both are the differentiation identities
+of <em>Fourier Analysis on Euclidean Spaces</em>. On $\mathcal S$ they are identities of operators, and they
+extend to the closures. $\blacksquare$</p>
+<p>The theorem is the reason the transform solves constant-coefficient equations: a polynomial in the
+derivatives becomes multiplication by the same polynomial in the coordinates, so a differential equation
+becomes an algebraic one.</p>
+<h3 id="translation-and-convolution-become-multiplication">Translation and Convolution Become Multiplication</h3>
+<p><strong>Theorem.</strong> For the translation $\tau_y$ and the character $e_y(\xi)=e^{-2\pi iy\cdot\xi}$ one has
+$$
+\mathcal F\tau_y\mathcal F^{-1}=M_{e_y} ,
+$$
+and for $k\in L^1(\mathbb R^n)$, with $T_k$ the convolution operator of the previous article,
+$$
+\mathcal FT_k\mathcal F^{-1}=M_{\hat k},\qquad \mathcal F^{-1}T_m\mathcal F=M_m
+$$
+for the multiplier operator $T_m$.</p>
+<p><strong>Proof.</strong> $\mathcal F(\tau_yf)=\widehat{f(\cdot-y)}=e_y\mathcal Ff$ is the translation identity of the
+Fourier article and gives the first formula; the convolution theorem $\widehat{k*f}=\hat k\hat f$ gives
+$T_k=\mathcal F^{-1}M_{\hat k}\mathcal F$, and the multiplier operator is defined by
+$T_m=\mathcal F^{-1}M_m\mathcal F$. $\blacksquare$</p>
+<p><strong>Corollary.</strong> Conjugation by $\mathcal F$ is a unitary isomorphism of the algebra of translation-invariant
+bounded operators onto the algebra of multiplication operators $M_m$ with $m\in L^\infty$; it carries
+composition to pointwise multiplication, adjunction to complex conjugation of the symbol, and compactness
+to the vanishing of the symbol. This is the operator form of the Fourier multiplier correspondence of
+<em>Convolution Operators</em>.</p>
+<h2 id="the-discrete-and-finite-models">The Discrete and Finite Models</h2>
+<h3 id="the-finite-abelian-group">The Finite Abelian Group</h3>
+<p><strong>Example (the discrete Fourier transform).</strong> Let $G$ be a finite abelian group of order $N$, with the
+counting measure normalised to total mass one, and let $\widehat G$ be its character group. The <strong>discrete
+Fourier transform</strong> is
+$$
+(\mathcal Ff)(\chi)=\frac1{\sqrt N}\sum_{g\in G}f(g)\overline{\chi(g)} ,
+\qquad f\in\ell^2(G),
+$$
+and the characters form an orthonormal basis of $\ell^2(G)$, so $\mathcal F$ is a unitary operator. For
+$G=\mathbb Z/N\mathbb Z$ it is the matrix with entries $N^{-1/2}\omega^{jk}$, $\omega=e^{-2\pi i/N}$, which
+is symmetric, and its square is the reversal of the coordinates, so $\mathcal F^2=P$ and
+$\mathcal F^4=\mathrm{id}$ exactly as on $\mathbb R^n$. This is the finite model of the theory: the four
+eigenvalues, the order-four structure and the diagonalisation by characters are all visible in an
+$N$-dimensional unitary matrix.</p>
+<p>The finite abelian group transform and the general character theory are the subject of <em>Character Theory</em>
+and, in its analytic form, of <em>Harmonic Analysis on Groups</em>; the matrix above is recorded here because it
+is the exact analogue of the integral operator of the present Article and because its four-eigenvalue
+structure is the one the integral transform shares.</p>
+<h3 id="the-group-math154-and-the-circle">The Group $\mathbb Z$ and the Circle</h3>
+<p><strong>Example ($\mathbb Z$ and $\mathbb T$).</strong> On $\ell^2(\mathbb Z)$ the transform to $L^2(\mathbb T)$ is
+$(\mathcal Fa)(\theta)=\sum_{n\in\mathbb Z}a_ne^{-2\pi in\theta}$, a unitary isomorphism by Parseval for
+Fourier series; its inverse is the coefficient map. The shift of <em>Convolution Operators</em> becomes
+multiplication by $e^{-2\pi i\theta}$, and a convolution operator becomes multiplication by a function on
+the circle. The same dictionary of this article — order four, diagonalisation, equivalence of translation
+and multiplication — holds verbatim, with the Hermite basis replaced by the characters.</p>
+<h2 id="summary">Summary</h2>
+<p>The Fourier operator $\mathcal Ff(\xi)=\int f(x)e^{-2\pi ix\cdot\xi}dx$ extends from the Schwartz class to
+a unitary operator of $L^2(\mathbb R^n)$, isometric for the inner product, with inverse the conjugate
+transform. It has order four: $\mathcal F^2=P$ is parity and $\mathcal F^4=\mathrm{id}$, so its spectrum
+lies in the fourth roots of unity, and it is diagonalised in the Hermite basis by
+$\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$, which splits $L^2$ into four eigenspaces. As a
+unitary equivalence it carries differentiation into multiplication by the coordinate and, by the
+convolution theorem, carries every translation-invariant operator into its multiplier, so that the
+translation-invariance, the multiplier and the four-eigenvalue structure of the transform are three faces
+of the same diagonalisation. The finite abelian group $\mathbb Z/N\mathbb Z$ and the pair
+$\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place of Hermite functions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal F$, $\overline{\mathcal F}$</td>
+<td>Fourier operator and its conjugate</td>
+</tr>
+<tr>
+<td>$\check g$</td>
+<td>Inverse transform, $\check g(x)=\int g(\xi)e^{2\pi ix\cdot\xi}d\xi$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>Parity, $(Pf)(x)=f(-x)$; $\mathcal F^2=P$</td>
+</tr>
+<tr>
+<td>$h_\alpha$</td>
+<td>Hermite functions, orthonormal basis with $\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$</td>
+</tr>
+<tr>
+<td>$D_j$</td>
+<td>$\frac1{2\pi i}\partial_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$</td>
+</tr>
+<tr>
+<td>$M_{x_j}$, $M_m$</td>
+<td>Multiplication operators</td>
+</tr>
+<tr>
+<td>$\tau_y$, $e_y$</td>
+<td>Translation and character, $\mathcal F\tau_y\mathcal F^{-1}=M_{e_y}$</td>
+</tr>
+<tr>
+<td>$T_k$, $T_m$</td>
+<td>Convolution operator and multiplier operator</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>$e^{-2\pi i/N}$, the primitive $N$-th root of the finite transform</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton
+  University Press, 1971), for Plancherel's theorem, the order-four structure and the Hermite functions.</li>
+<li>Gerald B. Folland, <em>Harmonic Analysis in Phase Space</em> (Princeton University Press, 1989), for the Fourier
+  operator as a metaplectic operator and the Hermite eigenbasis.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic
+  Press, 1980), for the transform as a unitary operator and the spectral theorem behind its
+  diagonalisation.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the finite and infinite abelian
+  transforms and the character theory.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Fourier Analysis: An Introduction</em> (Princeton University Press,
+  2003), for the transform and the eigenfunction structure at the level used here.</li>
+<li>John J. Benedetto and Michael W. Frazier, <em>Wavelets: Mathematics and Applications</em> (CRC Press, 1994),
+  for the transform as an operator and its unitary discretisations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

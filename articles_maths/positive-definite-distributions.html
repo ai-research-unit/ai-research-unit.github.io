@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Distributions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-distributions"><strong>Positive Definite Distributions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Positive definiteness is a condition on a function that can be tested against the smooth compactly supported
+functions, and this makes it a condition on a distribution. A distribution $T$ on $\mathbb R^n$ is <strong>positive
+definite</strong> if
+$$
+\langle T,\varphi*\varphi^{*}\rangle\geq0\qquad\text{for all }\varphi\in C_c^\infty(\mathbb R^n),
+$$
+where $\varphi^{*}(x)=\overline{\varphi(-x)}$ is the convolution involution of the group algebra; the
+Gaussian smoothings of $T$ are then positive definite functions in the sense of the earlier article, and the
+theorem of <strong>Bochner–Schwartz</strong> states that a distribution is positive definite exactly when it is the
+Fourier transform of a positive measure of at most polynomial growth — a positive <strong>tempered</strong> measure. The
+present article is the distributional form of Bochner's theorem, and it is the natural meeting point of the
+two threads of this category: the Fourier analysis of the earlier categories and the operator theory of
+*-involutions developed in the present one.</p>
+<p>This article is the fifth of the <code>*</code> group of <em>Foundations of Analysis</em>. Its prerequisites are
+<em>Distributions and Fundamental Solutions</em>, later in this Part, for the test functions, the distributions,
+the convolution of distributions and the Fourier transform of a tempered distribution, and <em>Positive
+Definite Functions and Hermitian Kernels</em> and <em>Hermitian Measures and Complex Measures</em>, the earlier
+articles of this group, for Bochner's theorem, the positive definite functions and the involution on the
+measures. The Fourier transform of a tempered distribution and the Paley–Wiener and Schwartz theorems are
+<em>Distributions and Fundamental Solutions</em>; the Riesz representation and the convergence of measures are
+<em>Measure Theory and Integration</em>; the Hilbert-space construction of the positive functional is the
+Kolmogorov decomposition of the first article of this group. The smooth <strong>Bochner theorem</strong> for functions is
+<em>Harmonic Analysis on Groups</em>, in the neighbouring category <em>Analysis on Groups</em> of this Part; the
+Lévy–Khinchine formula and the infinitely divisible laws, which are the probabilistic reading of the
+theorem, belong to <em>Measure-Theoretic Probability</em>, in a later Part, and are named only. The Hermitian
+kernels of the last article of the group carry the same involution in the operator form. No geometry is
+invoked.</p>
+<h2 id="the-involutions-on-distributions">The Involutions on Distributions</h2>
+<h3 id="the-convolution-involution">The Convolution Involution</h3>
+<p><strong>Definition.</strong> On $C_c^\infty(\mathbb R^n)$ the <strong>convolution involution</strong> is
+$\varphi^{*}(x)=\overline{\varphi(-x)}$; it is conjugate-linear, involutive, and multiplicative for the
+convolution, $(\varphi*\psi)^{*}=\psi^{*}*\varphi^{*}$. On the distributions it induces
+$$
+T^{*}(\varphi)=\overline{T(\varphi^{*})} ,
+$$
+the <strong>adjoint involution</strong>; a distribution is <strong>Hermitian</strong> if $T^{*}=T$ and <strong>real</strong> if $T(\varphi)\in\mathbb R$
+for every real $\varphi$.</p>
+<p><strong>Remark (the two involutions).</strong> As in <em>Hermitian Measures and Complex Measures</em>, the involution $T^{*}$
+must be distinguished from the <strong>value-conjugation</strong> $\bar T(\varphi)=\overline{T(\bar\varphi)}$, which is
+induced by conjugation of the test function alone. Positive definiteness uses $T^{*}$, the involution of the
+convolution algebra, and not $\bar T$; the two agree on the tempered distributions whose reflection is
+itself, and the distinction is recorded so that the star is read as the algebra involution. The mark is
+consistent with <em>Conventions in Mathematics</em>: dagger for the adjoint of an operator, star for the involution
+of an algebra element, and the adjoint involution here is the algebra star.</p>
+<h3 id="positive-definiteness">Positive Definiteness</h3>
+<p><strong>Definition.</strong> A distribution $T\in\mathcal D'(\mathbb R^n)$ is <strong>positive definite</strong> if
+$$
+\langle T,\varphi*\varphi^{*}\rangle\geq0\qquad\text{for every }\varphi\in C_c^\infty(\mathbb R^n) .
+$$</p>
+<p><strong>Theorem (the equivalent forms).</strong> For $T\in\mathcal D'(\mathbb R^n)$ the following are equivalent: $T$ is
+positive definite; the Hermitian form $K(\varphi,\psi)=\langle T,\varphi*\psi^{*}\rangle$ on
+$C_c^\infty(\mathbb R^n)$ is positive semidefinite; for every finite set of points and coefficients the
+smoothed kernel is positive semidefinite. A positive definite distribution is Hermitian, and the map
+$(\varphi,\psi)\mapsto\langle T,\varphi*\psi^{*}\rangle$ is a positive semidefinite Hermitian form.</p>
+<p><strong>Proof.</strong> The equivalence is the computation
+$K(\varphi,\psi)=\langle T,\varphi*\psi^{*}\rangle$ and the polarisation of the quadratic form
+$\varphi\mapsto K(\varphi,\varphi)=\langle T,\varphi*\varphi^{*}\rangle$; the Hermitian property is obtained
+by applying the inequality to $\varphi+\lambda\psi$ and varying $\lambda$, as for kernels and for measures.
+$\blacksquare$</p>
+<p><strong>Theorem (functions give distributions).</strong> A locally integrable function $f$ on $\mathbb R^n$ of at most
+polynomial growth, regarded as a distribution, is positive definite exactly when the function $f$ is
+positive definite in the sense of <em>Positive Definite Functions and Hermitian Kernels</em>, almost everywhere.</p>
+<p><strong>Proof.</strong> If $f$ is a positive definite function then
+$\langle f,\varphi*\varphi^{*}\rangle=\iint f(x-y)\varphi(y)\overline{\varphi(x)}\,dydx\geq0$ by the
+definition; conversely the inequality for a smooth nonnegative approximate identity concentrated at the
+points recovers the positive definiteness of the function. $\blacksquare$</p>
+<p>Thus the positive definite distributions contain the positive definite functions of polynomial growth, and
+the theorem below shows that they contain nothing wilder than a positive measure.</p>
+<h3 id="the-bochnerschwartz-theorem">The Bochner–Schwartz Theorem</h3>
+<p><strong>Definition.</strong> A positive measure $\mu$ on $\mathbb R^n$ is <strong>tempered</strong> if
+$\int_{\mathbb R^n}(1+\lvert\xi\rvert)^{-N}d\mu(\xi)<\infty$ for some $N$; equivalently, if it is the
+Fourier transform of a tempered distribution, i.e. if the function
+$\hat\mu(x)=\int e^{-2\pi ix\cdot\xi}d\mu(\xi)$ is a tempered distribution.</p>
+<p><strong>Theorem (Bochner–Schwartz).</strong> A distribution $T\in\mathcal D'(\mathbb R^n)$ is positive definite if and
+only if there is a unique positive tempered measure $\mu$ with $T=\hat\mu$; that is,
+$$
+\langle T,\varphi\rangle=\int_{\mathbb R^n}\hat\varphi(\xi)\,d\mu(\xi)
+=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)e^{-2\pi ix\cdot\xi}dx\Bigr)d\mu(\xi) .
+$$
+Equivalently, the Fourier transform is a bijection between the positive definite distributions and the
+positive tempered measures, and it carries the positive definite distributions onto a cone which is the
+image of the positive cone of the measures.</p>
+<h3 id="proof-sketch">Proof Sketch</h3>
+<p><strong>Proof sketch.</strong> Suppose first that $T=\hat\mu$ with $\mu\geq0$ tempered. Then for
+$\varphi\in C_c^\infty$,
+$$
+\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\hat\varphi(\xi)\rvert^2\,d\mu(\xi)\geq0 ,
+$$
+because $\widehat{\varphi*\varphi^{*}}=\lvert\hat\varphi\rvert^2$ by the convolution and involution
+identities of the Fourier article; so $T$ is positive definite. Conversely let $T$ be positive definite, and
+let $\rho_\epsilon(x)=\epsilon^{-n}\rho(x/\epsilon)$ be a nonnegative even approximate identity with
+$\rho\in C_c^\infty$ real and even, so that $\rho_\epsilon^{*}=\rho_\epsilon$ and
+$\rho_\epsilon\to\delta_0$. The convolutions $T_\epsilon=T*\rho_\epsilon$ are functions, and they are
+positive definite: for finite data,
+$$
+\sum_{i,j}\overline{c_i}c_jT_\epsilon(x_i-x_j)
+=\Bigl\langle T,\Bigl(\sum_ic_i\rho_\epsilon(\cdot-x_i)\Bigr)*\Bigl(\sum_ic_i\rho_\epsilon(\cdot-x_i)\Bigr)^{*}\Bigr\rangle\geq0 ,
+$$
+since $\rho_\epsilon^{*}=\rho_\epsilon$. By Bochner's theorem for continuous positive definite functions,
+$T_\epsilon=\hat\mu_\epsilon$ with $\mu_\epsilon\geq0$ a finite measure. As $\epsilon\to0$,
+$T_\epsilon\to T$ in $\mathcal D'$; the measures $\mu_\epsilon$ converge weakly, after passing to a
+subsequence, to a positive measure $\mu$, and the temperedness of $T$ — the fact that $T$ is a distribution
+of finite order — bounds the growth of the masses $\mu_\epsilon$ on the balls and forces
+$\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for $N$ large enough, so that $\mu$ is tempered and
+$T=\hat\mu$. Uniqueness is the injectivity of the Fourier transform on tempered distributions. The
+details of the growth control and the weak convergence belong to <em>Measure Theory and Integration</em> and
+<em>Distributions and Fundamental Solutions</em>. $\blacksquare$</p>
+<p>The proof is the smoothing argument: the distribution is regularised into positive definite functions, each
+of which is the transform of a positive measure by Bochner's theorem, and the measures are shown to
+converge; the positive definite distributions are therefore exactly the distributional transforms of the
+positive tempered measures, and the theorem is the distributional Bochner theorem.</p>
+<h2 id="consequences-and-examples">Consequences and Examples</h2>
+<h3 id="the-cone-of-positive-definite-distributions">The Cone of Positive Definite Distributions</h3>
+<p><strong>Theorem.</strong> The positive definite distributions form a closed convex cone in $\mathcal D'$: sums with
+nonnegative coefficients of positive definite distributions are positive definite, the limit in $\mathcal D'$
+of positive definite distributions is positive definite, and a positive definite distribution is Hermitian.
+Under the Fourier transform the cone becomes the cone of positive tempered measures.</p>
+<p><strong>Proof.</strong> The defining inequality is preserved by nonnegative linear combinations and by distributional
+limits; the Hermitian property comes from polarisation; the cone statement on the transform side is
+Bochner–Schwartz, and the positivity and temperedness of the measures are preserved by limits. $\blacksquare$</p>
+<p><strong>Theorem (order and the measure).</strong> A positive definite distribution has a well-defined <strong>order</strong>, and the
+growth of its spectral measure is tied to it: if $T$ is of order at most $N$, then
+$\int(1+\lvert\xi\rvert)^{-2N-n-1}d\mu<\infty$. In particular, the positive definite distributions of finite
+order are exactly the transforms of the positive measures with the corresponding polynomial growth, and a
+bounded continuous positive definite function is exactly a positive definite distribution whose measure is
+finite (Bochner's theorem in the function case).</p>
+<p><strong>Proof.</strong> The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq
+C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
+$\int\hat\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
+the finite-measure case is Bochner's theorem for bounded continuous functions. $\blacksquare$</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (the Dirac mass and Lebesgue measure).</strong> The Dirac mass $T=\delta_0$ is positive definite, because
+$$
+\langle\delta_0,\varphi*\varphi^{*}\rangle=(\varphi*\varphi^{*})(0)=\int_{\mathbb R^n}\lvert\varphi(x)\rvert^2dx\geq0 ,
+$$
+and its spectral measure is the Lebesgue measure $d\mu=d\xi$; conversely the constant function $T=1$ is
+positive definite with spectral measure $\delta_0$, since $\langle1,\varphi*\varphi^{*}\rangle=\lvert\int\varphi\rvert^2\geq0$.
+The pair is the extreme case of Bochner–Schwartz: the distribution transform of the Lebesgue measure is the
+Dirac mass and conversely.</p>
+<p><strong>Example (positive definite functions).</strong> A positive measure $\mu$ with a density gives the positive
+definite function $\hat\mu$; for the Gaussian density $\sqrt t\,e^{-\pi t\lvert\xi\rvert^2}$ this is the
+positive definite function $e^{-\pi\lvert x\rvert^2/t}$, and for the measure $\frac12(\delta_\xi+\delta_{-\xi})$
+it is the cosine $\cos(2\pi x\cdot\xi)$. Every character $e^{2\pi ix\cdot\xi}$ is positive definite with
+spectral measure $\delta_\xi$, and every finite positive combination of characters with coefficients is
+positive definite, with the corresponding discrete measure.</p>
+<p><strong>Example (a Hermitian distribution that is not positive definite).</strong> The tempered distribution
+$T=1+\lvert x\rvert^2$ is Hermitian but is not positive definite: its Fourier transform is the distribution
+$\delta_0-\frac1{4\pi^2}\Delta\delta_0$, which is not a positive measure, as the sign of its action on a
+nonconstant positive test function shows. The example exhibits the gap between the Hermitian distributions
+and the positive definite ones, exactly as a real symmetric matrix with a negative eigenvalue is Hermitian
+and not positive.</p>
+<h2 id="summary">Summary</h2>
+<p>A distribution is positive definite when $\langle T,\varphi*\varphi^{*}\rangle\geq0$ for all test functions,
+where $\varphi^{*}(x)=\overline{\varphi(-x)}$ is the convolution involution; the condition is equivalent to
+the positive semidefiniteness of the Hermitian form $\langle T,\varphi*\psi^{*}\rangle$, and it forces $T$ to
+be Hermitian for the adjoint involution $T^{*}(\varphi)=\overline{T(\varphi^{*})}$, which is distinct from
+the value-conjugation $\bar T$ and is the algebra involution. The theorem of Bochner–Schwartz states that a
+distribution is positive definite exactly when it is the transform $\hat\mu$ of a unique positive tempered
+measure $\mu$, so that the Fourier transform is a bijection between the positive definite distributions and
+the positive tempered measures; the proof is the smoothing argument, in which the positive definite
+distributions are approximated by positive definite functions, Bochner's theorem supplies a positive measure
+for each, and the measures converge. Positive definite distributions form a closed convex cone, containing
+the positive definite functions of polynomial growth as the locally integrable members, and the order of the
+distribution is the polynomial growth rate of its spectral measure; a bounded continuous positive definite
+function is exactly the case of a finite measure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi^{*}(x)=\overline{\varphi(-x)}$</td>
+<td>Convolution involution on test functions</td>
+</tr>
+<tr>
+<td>$T^{*}(\varphi)=\overline{T(\varphi^{*})}$</td>
+<td>Adjoint involution on distributions</td>
+</tr>
+<tr>
+<td>$\bar T$, value-conjugation</td>
+<td>$\bar T(\varphi)=\overline{T(\bar\varphi)}$, distinct from $T^{*}$</td>
+</tr>
+<tr>
+<td>$\langle T,\varphi*\varphi^{*}\rangle\geq0$</td>
+<td>Positive definiteness of a distribution</td>
+</tr>
+<tr>
+<td>$\hat\mu(x)=\int e^{-2\pi ix\cdot\xi}d\mu(\xi)$</td>
+<td>Transform of a measure</td>
+</tr>
+<tr>
+<td>$\mu$ tempered</td>
+<td>$\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for some $N$</td>
+</tr>
+<tr>
+<td>$T=\hat\mu$</td>
+<td>Bochner–Schwartz representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Laurent Schwartz, <em>Théorie des distributions</em> (Hermann, 1966), for the original form of the
+  Bochner–Schwartz theorem.</li>
+<li>Israel M. Gelfand and Naum Ya. Vilenkin, <em>Generalized Functions, Vol. 4: Applications of Harmonic
+  Analysis</em> (Academic Press, 1964), for positive definite distributions and their structure.</li>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators I</em> (2nd ed., Springer, 1990), for
+  the distribution theory and the Fourier transform of tempered distributions.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the group form of Bochner's theorem
+  and the positive definite functions.</li>
+<li>Ken-iti Sato, <em>Lévy Processes and Infinitely Divisible Distributions</em> (Cambridge University Press, 1999),
+  for the probabilistic reading of the positive definite distributions and the Lévy–Khinchine formula.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton
+  University Press, 1971), for the Fourier transform on the Schwartz class and the tempered distributions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

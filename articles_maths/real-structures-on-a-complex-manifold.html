@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Structures on a Complex Manifold — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-structures-on-a-complex-manifold"><strong>Real Structures on a Complex Manifold</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>real structure</strong> on a complex manifold $M$ is an antiholomorphic involution
+$$
+c : M \longrightarrow M, \qquad c^2 = \mathrm{id}, \qquad dc\circ J = -J\circ dc ,
+$$
+the manifold form of complex conjugation. Its fixed set
+$$
+M^{c} = \{ p \in M : c(p) = p \}
+$$
+is the set of <strong>real points</strong>, and it is the real locus of the geometry that $c$ selects: the complex conjugation on $\mathbb{C}^n$ has $M^c = \mathbb{R}^n$, the conjugation on the projective space has $M^c = \mathbb{RP}^n$, and on a general complex manifold the real points are, when nonempty, a smooth real-analytic submanifold of real dimension $n$ — a real form or a union of real forms — and can be empty. A real structure makes the manifold the complexification of its real points in the good case: the holomorphic tangent vector at a real point, an element of a complex vector space of dimension $n$, is the complexification of the real tangent space of the fixed submanifold, and the fields defined over the reals are the fields fixed by the transport along $c$. The article studies the involution and the real points; the quotient by the involution and the classification of the real structures up to isomorphism, the <strong>real forms</strong>, are the companion article <em>Complex Manifolds with an Antiholomorphic Involution</em>.</p>
+<p>The article has three sections: the antiholomorphic involution and the conjugation; the real points; and the real structure as a descent datum. The real structure on a smooth manifold and the real stack of a real manifold are <em>Real Structures on a Smooth Manifold</em>; the complex structure, the almost complex operator and the type are <em>Hermitian Geometry and Almost Complex Structures</em> and <em>The Almost Complex Operator</em>; the linear model on a complex vector space is <em>The Involution on a Complex Vector Space</em>, later in this category; the real structures on an algebraic variety and the Galois descent are <em>Real Structures on Varieties and Galois Descent</em>. None of that is re-derived. The Riemannian case, in which the real structure is required to preserve the metric, is <em>Real Structures on a Riemannian Manifold</em>, earlier in this Part.</p>
+<p>Throughout, $M$ is a connected complex manifold of complex dimension $n$, $J$ is its complex structure, $c : M \to M$ is a real structure, $M^{c}$ is the set of real points, $T^{1,0}M$ and $T^{0,1}M$ are the holomorphic and antiholomorphic tangent bundles, and $\mathbb{C}^n$ and $\mathbb{CP}^n$ carry their standard real structures.</p>
+<h2 id="the-antiholomorphic-involution-and-the-conjugation">The Antiholomorphic Involution and the Conjugation</h2>
+<p><strong>Definition.</strong> A <strong>real structure</strong> on the complex manifold $M$ is an involutive diffeomorphism $c$ with
+$$
+c^2 = \mathrm{id}, \qquad dc_p \circ J_p = -J_{c(p)} \circ dc_p \quad (p \in M),
+$$
+that is an antiholomorphic involution; the pair $(M, c)$ is a <strong>complex manifold with a real structure</strong>. A map $F : (M, c) \to (N, d)$ of two such manifolds is <strong>real</strong> when $F \circ c = d \circ F$ and <strong>holomorphic</strong> when it is complex-linear for the two complex structures.</p>
+<p><strong>Proposition (the conjugation reverses the type).</strong> The differential of a real structure exchanges the two eigenbundles of $J$,
+$$
+dc\bigl(T^{1,0}M\bigr) = T^{0,1}M, \qquad dc\bigl(T^{0,1}M\bigr) = T^{1,0}M ,
+$$
+and pulls a $(p,q)$-form back to a $(q,p)$-form, $c^{*}\Omega^{p,q}(M) \subseteq \Omega^{q,p}(M)$; on the level of the operators it conjugates the complex structure, $dc\circ J = -J\circ dc$, and it maps the Cauchy–Riemann operator $\bar\partial$ to $\partial$, $c^{*}\circ\bar\partial = \partial\circ c^{*}$.</p>
+<p><strong>Proof.</strong> From $dc\circ J = -J\circ dc$ the differential carries the $+i$ eigenspace of $J$ to the $+i$-eigenspace of $-J = \bar J$..., which is the $-i$ eigenspace of $J$, that is $T^{0,1}M$; the type of a form is the number of holomorphic and antiholomorphic legs, and exchanging the two bundles exchanges $p$ and $q$. The Cauchy–Riemann statement is the reality of the decomposition $d = \partial + \bar\partial$: conjugating a $\bar\partial$-closed form gives a $\partial$-closed form. The type decomposition is <em>Operators on a Complex Manifold</em>.</p>
+<p><strong>Proposition (the linear model).</strong> On $\mathbb{C}^n$ the <strong>standard real structure</strong> is the componentwise complex conjugation
+$$
+c(z) = \bar z, \qquad c(z_1,\dots,z_n) = (\bar z_1,\dots,\bar z_n),
+$$
+and on $\mathbb{CP}^n$ the standard real structure is $c([z_0:\dots:z_n]) = [\bar z_0:\dots:\bar z_n]$; both are antiholomorphic involutions, and their real points are $\mathbb{R}^n$ and $\mathbb{RP}^n$.</p>
+<p><strong>Proof.</strong> Complex conjugation is $\mathbb{R}$-linear, involutive, and satisfies $\bar\imath = -i$; hence it is antiholomorphic; it descends to the projective space because it commutes with the scalar action of $\mathbb{C}$, and its fixed points in $\mathbb{C}^n$ are the real points $\mathbb{R}^n$, while in $\mathbb{CP}^n$ the fixed points are the classes that can be represented by real vectors, that is $\mathbb{RP}^n$. The linear model is <em>The Involution on a Complex Vector Space</em> and <em>Complex Subspaces</em>.</p>
+<p><strong>Remark (the two faces of $c$).</strong> The real structure is a real geometric object and acts on every structure the manifold carries: on the tangent bundle it is the transport that pairs a holomorphic direction with an antiholomorphic one, on the forms it is the conjugation, and on the functions it is the operation $f \mapsto \bar f\circ c$ that conjugates values. A holomorphic function on $(M,c)$ is real when $\bar f\circ c = f$; a holomorphic form is real when its class is fixed by $c^{*}$, and this is the real form of a complex object, which the companion article develops.</p>
+<h2 id="the-real-points">The Real Points</h2>
+<p><strong>Proposition (the real points of a real structure).</strong> The real points $M^{c} = \operatorname{Fix}(c)$ form a closed real submanifold or a disjoint union of submanifolds of $M$; at a real point $p$ the tangent space splits as
+$$
+T_pM = T_pM^{c} \oplus J_p\,T_pM^{c}
+$$
+where $T_pM^{c}$ is the $+1$-eigenspace of $dc_p$ and $J_pT_pM^{c}$ is the $-1$-eigenspace, so that $T_pM$ is the complexification of the real tangent space of the real locus and $T_pM^{c}$ is totally real, $T_pM^{c}\cap J_pT_pM^{c} = 0$.</p>
+<p><strong>Proof.</strong> At a fixed point $p$ the differential $dc_p$ is an $\mathbb{R}$-linear involution with $dc_pJ = -Jdc_p$; its $+1$-eigenspace is the tangent space of the fixed submanifold in the sense of the standard fixed-submanifold theorem, and its $-1$-eigenspace is $J$ applied to it, since $dc_p(Jv) = -Jdc_p(v)$; hence $T_pM = T_pM^c\oplus J T_pM^c$. The closedness of the fixed set is the continuity of $c$, and the smoothness of the component through a point with $dc_p$ having no eigenvalue other than $\pm1$ is the regular-value theorem.</p>
+<p><strong>Proposition (the real locus has dimension $n$ or is empty).</strong> If $M^{c}$ is nonempty then at every real point $p$ the $+1$-eigenspace $T_pM^{c}$ of $dc_p$ has real dimension exactly $n$ and is totally real, so $M^{c}$ is a real-analytic submanifold of real dimension $n$, possibly with several components; the real locus can also be empty.</p>
+<p><strong>Proof.</strong> The differential $dc_p$ is an $\mathbb{R}$-linear involution of the real $2n$-dimensional space $T_pM$ with $dc_pJ = -Jdc_p$; if $v$ is fixed then $Jv$ is negated, and conversely, so $J$ maps the $+1$-eigenspace isomorphically onto the $-1$-eigenspace and the two have equal dimension $n$, with zero intersection. The fixed set is then a real-analytic submanifold of dimension $n$ at each of its points, by the standard fixed-submanifold theorem, and its components may be several. Examples at the two extremes: the conjugation $z\mapsto\bar z$ on $\mathbb{C}^n$ has the real locus $\mathbb{R}^n$ of dimension $n$, and the real structure $c(z) = -1/\bar z$ on $\mathbb{CP}^1$ has fixed equation $z\bar z = -1$, so its real locus is empty.</p>
+<p><strong>Corollary (the real form).</strong> When the real locus $M^{c}$ is nonempty, the condition $T_pM = T_pM^{c}\otimes_{\mathbb R}\mathbb C$ for every $p$ is automatic, so $M^c$ is a <strong>real form</strong> of $M$; the manifold $M$ is the <strong>complexification</strong> of the real manifold $M^c$ when moreover a neighbourhood of $M^c$ exhausts $M$, and then a real structure whose fixed set is $M^c$ is exactly the datum of the real form.</p>
+<p><strong>Proof.</strong> The identification $T_pM = T_pM^c\otimes_{\mathbb R}\mathbb C$ is the split of the previous proposition; it is an isomorphism of complex vector spaces because $J$ acts on $J T_pM^c$ by $-\mathrm{id}$ when $T_pM^c$ is identified with its complexification through $J$. The complexification of a real manifold $N$ is a complex manifold of complex dimension $n$ with the real structure $c$ whose fixed set is $N$, and the descent is the assignment of the real objects. This is <em>Real Structures on a Smooth Manifold</em> and <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<h2 id="the-real-structure-as-a-descent-datum">The Real Structure as a Descent Datum</h2>
+<p><strong>Definition.</strong> Let $(M, c)$ be a complex manifold with a real structure. A <strong>real structure on a structure</strong> of $M$ (a metric, a form, a bundle, an operator) is a data on $M$ fixed by the transport along $c$; when the real locus is a real form $N = M^{c}$, the objects fixed by $c$ are the <strong>descended</strong> objects of $N$, and the assignment is <strong>descent</strong> along the real structure.</p>
+<p><strong>Proposition (the descent).</strong> The holomorphic objects fixed by the real structure are the complexifications of the real objects of the real form $N$; the assignment is an equivalence of categories between the real objects of $N$ and the $c$-fixed holomorphic objects of $M$, and it sends the real forms of a complex object to the original objects of $N$.</p>
+<p><strong>Proof.</strong> On the complexification $M = N_{\mathbb C}$ the transport $\bar{}$ on the coefficients is the conjugation, and a holomorphic function $f$ satisfies $\bar f \circ c = f$ exactly when its Taylor coefficients are real, that is when it is the complexification of a real-analytic function on $N$; the same argument for the sections of a bundle with a real structure. This is the descent of <em>Real Structures on Varieties and Galois Descent</em>, in the real-analytic and differentiable setting.</p>
+<p><strong>Example (the projective conjugation and the real structure of a lattice).</strong> On $\mathbb{CP}^{n}$ the standard conjugation has real points $\mathbb{RP}^n$ and descends the real objects of the real projective space: the real linear forms on $\mathbb C^{n+1}$ fixed by the conjugate of the standard real structure give the real forms of the projective space, and the real structure on the tautological bundle descends to the tautological bundle of $\mathbb{RP}^n$. This is the model in which the real structure of the complex manifold and the real structure of its linear data are the two ends of the same descent, and it is <em>Real Structures on a Projective Space</em>.</p>
+<p><strong>Remark (the two readings of a real structure).</strong> Read forward, the real structure is an involution of $M$ with real points; read backward, it is the datum that makes $M$ the complexification of a real manifold and a real structure the descent of a real geometry. The two readings agree when $M$ is the complexification of its real locus and separate otherwise: a real structure with empty real points, such as a fixed-point-free conjugation, is a genuine involution of $M$ but descends no real manifold in the naive sense. The quotient of $M$ by such an involution, and the classification of the real structures up to isomorphism, are the subject of <em>Complex Manifolds with an Antiholomorphic Involution</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A real structure on a complex manifold $M$ is an antiholomorphic involution $c$, $dc\circ J = -J\circ dc$, the manifold form of complex conjugation; it exchanges the holomorphic and antiholomorphic tangent bundles, sends $\Omega^{p,q}$ to $\Omega^{q,p}$, and conjugates $\bar\partial$ to $\partial$. Its real points $M^{c}$ are, when nonempty, a real-analytic submanifold of real dimension $n$ — a union of real forms — and at each real point $T_pM = T_pM^{c}\oplus J T_pM^{c}$ with $T_pM^c$ the $+1$-eigenspace of $dc_p$, of dimension $n$ and totally real, so that at a real point the tangent space is the complexification of the real tangent space; the real locus can also be empty. When $M$ is the complexification of its real locus, the holomorphic objects fixed by $c$ are the complexifications of the real objects, which is the descent datum. The standard models are the conjugation $z\mapsto\bar z$ on $\mathbb{C}^n$ with real points $\mathbb{R}^n$ and the classwise conjugation on $\mathbb{CP}^n$ with real points $\mathbb{RP}^n$. The real structure on a smooth manifold is <em>Real Structures on a Smooth Manifold</em>, the linear model is <em>The Involution on a Complex Vector Space</em>, the descent is <em>Real Structures on Varieties and Galois Descent</em>, and the quotient and the real forms are <em>Complex Manifolds with an Antiholomorphic Involution</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>the real structure, $c^2=\mathrm{id}$, antiholomorphic</td>
+</tr>
+<tr>
+<td>$dc\circ J=-J\circ dc$</td>
+<td>the conjugate-linearity of the differential</td>
+</tr>
+<tr>
+<td>$M^{c}=\operatorname{Fix}(c)$</td>
+<td>the real points</td>
+</tr>
+<tr>
+<td>$T_pM = T_pM^{c}\oplus J T_pM^{c}$</td>
+<td>the split of the tangent space at a real point</td>
+</tr>
+<tr>
+<td>$N = M^{c}$</td>
+<td>the real form (dimension $n$ when nonempty)</td>
+</tr>
+<tr>
+<td>$c^{*}$</td>
+<td>the conjugation of forms, exchanging $(p,q)$ and $(q,p)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robert Silhol, <em>Real Algebraic Surfaces</em> (Lecture Notes in Mathematics 1399, Springer, 1989), for real structures, their real loci and the real forms of a complex surface.</li>
+<li>Klaus Fritzsche and Hans Grauert, <em>From Holomorphic Functions to Complex Manifolds</em> (Springer, 2002), for complex conjugation, real points and antiholomorphic involutions on complex manifolds.</li>
+<li>Robert C. Gunning and Hugo Rossi, <em>Analytic Functions of Several Complex Variables</em> (Prentice-Hall, 1965), for conjugation, real forms and the fixed-point sets of antiholomorphic involutions.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for involutions, fixed-point sets and the quotient by an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

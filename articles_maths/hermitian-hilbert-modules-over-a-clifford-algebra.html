@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Hilbert Modules over a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-hilbert-modules-over-a-clifford-algebra"><strong>Hermitian Hilbert Modules over a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of Clifford analysis act on spaces of functions whose values lie in a Clifford module,
+and the analytic theory needs those spaces to be Hilbert spaces and the module structure to be
+compatible with the inner product. This article develops the resulting structure: a Clifford module
+that is at the same time a Hilbert space, with a Hermitian form for which the Clifford action is
+adjoint to the action of the conjugate element, so that the conjugation that defines the theory
+becomes an adjoint operation on the module.</p>
+<p>The setting is the one of <em>The Dirac Operator</em> and <em>Operators on a Clifford Module</em>: the Clifford
+algebra $A=\mathrm{Cl}_{0,m}$, a left Clifford module $\mathcal{S}$ of values, the Clifford
+multiplication $c:A\to\mathrm{End}_\mathbb{R}(\mathcal{S})$, and the involution $*$ — the Clifford
+conjugation on the algebra, combined with the conjugation of the coefficient field when the values
+are quaternionic or complex. A <strong>Hermitian form</strong> on $\mathcal{S}$ is a positive-definite
+sesquilinear form for which the action obeys the self-adjointness axiom
+$(x\cdot s,t)=(s,x^{*}\cdot t)$. The finite-dimensional algebraic theory of such forms — the
+modules, the forms, the adjoints, the positivity and the cone — is Part II's, in <em>Hermitian Modules
+over a Hilbert Algebra with Hermitian Adjoint</em>, <em>The Adjoint of the One-Sided Action with Hermitian
+Adjoint</em>, <em>Positivity and the Hermitian Cone of a Hilbert Algebra with Hermitian Adjoint</em> and <em>The
+Hilbert Adjoint on a Hilbert Module</em>; those articles are the algebraic reference and their results
+are used here. What this article adds is the analytic layer: the Hilbert completion of the module of
+sections, the boundedness of the action, the adjoint of the action with respect to the $L^2$ form,
+the self-adjointness of the operator $D$ after the boundary terms are accounted for, and the
+monogenic Hilbert spaces as closed subspaces. The Hermitian refinement of these objects with the
+split of the operator is <em>Adjoints on a Clifford Module</em>, <em>The Hermitian Dirac Operator</em> and <em>The
+Hermitian Cauchy Kernel as an Adjoint</em>; the reproducing kernels are <em>Positive Definite Kernels in
+Clifford Analysis</em>; the operator theory on the module is <em>Operators on a Clifford Module</em>.</p>
+<h2 id="hermitian-forms-on-a-clifford-module">Hermitian Forms on a Clifford Module</h2>
+<h3 id="the-form-and-the-self-adjointness-axiom">The Form and the Self-Adjointness Axiom</h3>
+<p><strong>Definition.</strong> Let $\mathcal{S}$ be a left $A$-module, $A$ a real or complex $\ast$-algebra with
+involution $x\mapsto x^{*}$. A <strong>Hermitian form</strong> on $\mathcal{S}$ is a map
+$(\cdot,\cdot):\mathcal{S}\times\mathcal{S}\to\mathbb{K}$ ($\mathbb{K}=\mathbb{R},\mathbb{C}$ or
+$\mathbb{H}$) that is sesquilinear over the coefficient field, $\mathbb{H}$-Hermitian in the
+quaternionic case, and positive definite, $(s,s)>0$ for $s\neq0$.</p>
+<p><strong>Definition.</strong> The form is <strong>compatible with the module structure</strong> when the Clifford action is
+adjoint to the action of the conjugate element:</p>
+<p>$$
+(x\cdot s,\,t) = (s,\,x^{*}\cdot t) \qquad x\in A,\ s,t\in\mathcal{S} ,
+$$</p>
+<p>equivalently $\rho(x)^{\dagger}=\rho(x^{*})$ for the representation $\rho=c$ of the action.</p>
+<p><strong>Proposition (the axioms are consistent and determine the module type).</strong> A Clifford module carries
+a compatible Hermitian form exactly when it is of the definite type; the form is unique up to a
+positive scalar on each irreducible summand, and the involution $*$ under which the axiom holds is
+the Clifford conjugation, possibly composed with the conjugation of the coefficient field. Under it
+a generator $e_i$ is <strong>skew</strong>, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
+by a vector is skew-adjoint, and the scalar unit $e_0=1$ is Hermitian.</p>
+<p><em>Proof.</em> The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
+reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence
+and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
+<em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em>, and the involution is the one
+fixed there. $\square$</p>
+<p><strong>Remark (definite and indefinite).</strong> The definite case is the one in which the form is positive and
+the axiom holds as stated; in the indefinite case, where the form has a signature, the conjugation
+is replaced by the Krein adjoint and the theory becomes the Krein-space theory of Part II, in *
+$J$-Self-Adjoint and $J$-Unitary Operators<em> and </em>Spectral Theory on Krein Spaces<em>. This article is
+the definite case, and the word </em>Hermitian* throughout refers to the positive form and the Clifford
+conjugation.</p>
+<h2 id="the-hilbert-module-of-sections">The Hilbert Module of Sections</h2>
+<h3 id="the-math34-completion">The $L^2$ Completion</h3>
+<p><strong>Definition.</strong> Let $\Omega\subseteq\mathbb{R}^{m+1}$ be open and let $\mathcal{S}$ be a definite
+Clifford module with a compatible Hermitian form. The <strong>Hilbert module of sections</strong> is the
+completion</p>
+<p>$$
+L^2(\Omega;\mathcal{S}) = \overline{C_c^\infty(\Omega;\mathcal{S})}^{\ \|\cdot\|} , \qquad
+\|f\|^2 = \int_\Omega (f(x),f(x))\,dx ,
+$$</p>
+<p>of the compactly supported smooth sections in the norm of the inner product</p>
+<p>$$
+\langle f,g\rangle = \int_\Omega (f(x),g(x))\,dx .
+$$</p>
+<p><strong>Proposition (the module structure survives the completion).</strong> For $a$ in the algebra of bounded
+functions on $\Omega$ with values in $A$, the pointwise action $f\mapsto a\cdot f$ is a bounded
+operator on $L^2(\Omega;\mathcal{S})$, with $\|a\|\le\sup_x\|a(x)\|$; the involution acts by
+$a\mapsto a^{*}$ and the action satisfies $\rho(a)^{\dagger}=\rho(a^{*})$ with respect to the $L^2$
+form. Hence $L^2(\Omega;\mathcal{S})$ is a Hilbert module over the algebra of bounded functions.</p>
+<p><em>Proof.</em> The bound is the pointwise estimate $\|a\cdot f\|\le\sup\|a\|\,\|f\|$; the adjoint identity
+is the pointwise axiom integrated over $\Omega$, the measure being real. $\square$</p>
+<h3 id="the-action-of-the-algebra">The Action of the Algebra</h3>
+<p><strong>Remark (the Hilbert-algebra structure).</strong> The algebra of bounded functions with the involution $*$
+and the inner product $\langle f,g\rangle=\int(f,g)$ is a Hilbert algebra in the sense of Part II,
+and $L^2(\Omega;\mathcal{S})$ is a Hermitian module over it; the general theory of the one-sided
+action, the commutant and the standard form is Part II's, in <em>Hermitian Modules over a Hilbert
+Algebra with Hermitian Adjoint</em> and <em>The Hilbert Adjoint on a Hilbert Module</em>. The realisation here
+is the concrete one of Clifford analysis, in which the algebra is generated by the Clifford
+generators and the bounded functions and the module is the space of sections.</p>
+<h2 id="the-adjoint-of-the-clifford-action">The Adjoint of the Clifford Action</h2>
+<h3 id="the-adjoint-of-the-multiplication">The Adjoint of the Multiplication</h3>
+<p><strong>Theorem (the adjoint of the multiplication).</strong> On $L^2(\Omega;\mathcal{S})$ the pointwise Clifford
+multiplication $c(x)$ has adjoint $c(x^{*})$:</p>
+<p>$$
+c(x)^{\dagger} = c(x^{*}) , \qquad x\in A .
+$$</p>
+<p>In particular the multiplication by a generator is skew-adjoint and the multiplication by a unit
+scalar is unitary.</p>
+<p><em>Proof.</em> The pointwise axiom $(x\cdot s,t)=(s,x^{*}\cdot t)$ integrates to
+$\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$. $\square$</p>
+<h3 id="the-adjoint-of-the-operator-math62">The Adjoint of the Operator $D$</h3>
+<p><strong>Theorem (formal adjointness and the boundary term).</strong> On $L^2(\Omega;\mathcal{S})$ the operator
+$D=\sum_\mu c(e_\mu)\partial_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
+sections, and for sections on a bounded domain with smooth boundary,</p>
+<p>$$
+\langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}\bigl(c(\nu_B)f,g\bigr)\,dS ,
+$$</p>
+<p>the boundary term being the conormal pairing of <em>The Cauchy Integral Operator</em>.</p>
+<p><em>Proof.</em> The derivatives integrate by parts with a sign, the multiplications are skew or Hermitian
+as in the preceding theorem, and the boundary term is the flux of the vector field $c(e_\mu)f$
+against $g$; the computation is the one of <em>The Dirac Operator</em> for the formal adjoint
+$D^{\dagger}=-\bar D$. $\square$</p>
+<p><strong>Corollary (self-adjointness on a closed domain, and on the Hardy space).</strong> If the boundary term
+vanishes — for example on the boundary values of monogenic functions, or on a domain without
+boundary — then $D$ is skew-adjoint up to the conjugation, and the operator
+$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial_i$ is self-adjoint on the appropriate domain, with
+$D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum. The spectral theory of that operator is <em>Dirac
+Differential Operators</em>', and the passage from the formal adjoint to the unbounded self-adjoint
+operator is the one of <em>Unbounded Operators and Spectral Measures</em> in <em>Analysis on Linear Spaces</em>.</p>
+<h2 id="the-monogenic-hilbert-spaces">The Monogenic Hilbert Spaces</h2>
+<p><strong>Definition.</strong> The <strong>monogenic Bergman space</strong> is the closed subspace</p>
+<p>$$
+\mathcal{A}^2(\Omega;\mathcal{S}) = \{f\in L^2(\Omega;\mathcal{S}) : Df=0 \text{ in the distributional sense}\}
+= \ker D\cap L^2(\Omega;\mathcal{S}) ,
+$$</p>
+<p>and the <strong>monogenic Hardy space</strong> $H^2(\Omega;\mathcal{S})$ is the closure of the boundary values of
+the monogenic $L^2$ functions, as in <em>The Cauchy Integral Operator</em>.</p>
+<p><strong>Theorem (the monogenic spaces are Hilbert modules).</strong> $\mathcal{A}^2(\Omega;\mathcal{S})$ is a
+closed subspace of $L^2(\Omega;\mathcal{S})$, hence a Hilbert space and a Hermitian module over the
+algebra of bounded functions; the same holds for $H^2(\Omega;\mathcal{S})$. The orthogonal
+projection onto $\mathcal{A}^2$ is the <strong>Bergman projection</strong>, and onto $H^2$ the <strong>Szegő
+projection</strong> $P^+=\tfrac12(I+\mathcal{S})$ of <em>The Cauchy Integral Operator</em>; both are self-adjoint
+idempotents with respect to the module form.</p>
+<p><em>Proof.</em> $\ker D$ is closed in the distributional sense because $D$ is elliptic, hence
+$\mathcal{A}^2$ is a closed subspace; the module action preserves $\ker D$ because the coefficients
+are constant, so the subspace is a submodule; the projections are the orthogonal projections onto
+closed subspaces and are self-adjoint idempotents. The Szegő description is the boundary form of the
+same statement. $\square$</p>
+<p><strong>Remark (reproducing kernels).</strong> A monogenic Hilbert space with continuous point evaluations has a
+reproducing kernel, which for $\mathcal{A}^2$ and $H^2$ is a positive definite kernel in the sense
+of <em>Positive Definite Kernels in Clifford Analysis</em>; the Bergman kernel and the Szegő kernel are the
+two classical instances, and their relation to the Cauchy kernel is the integral theory of <em>The
+Cauchy Integral Operator</em>. The kernel is Hermitian in the sense of the module form, and this is the
+point at which the module structure and the Hilbert structure meet.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian Hilbert module over a Clifford algebra is a definite Clifford module $\mathcal{S}$ with
+a positive Hermitian form for which the action obeys the self-adjointness axiom
+$(x\cdot s,t)=(s,x^{*}\cdot t)$, completed to a Hilbert space of sections
+$L^2(\Omega;\mathcal{S})=\overline{C_c^\infty(\Omega;\mathcal{S})}$. The algebra acts by bounded
+operators with $c(x)^{\dagger}=c(x^{*})$; a generator is skew-adjoint and the scalar unit is
+unitary. The operator $D$ has formal adjoint $D^{\dagger}=-\bar D$, the failure on a bounded domain
+being the conormal boundary term $\int_{\partial\Omega}(c(\nu_B)f,g)dS$; when that term vanishes,
+$D$ is skew and the vector operator $D_{\mathrm{sa}}$ is self-adjoint with
+$D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum, whose spectral theory is <em>Dirac Differential
+Operators</em>'. The spaces of monogenic $L^2$ functions — the Bergman space
+$\mathcal{A}^2=\ker D\cap L^2$ and the Hardy space $H^2$ — are closed subspaces, hence Hilbert
+modules, and their orthogonal projections are the Bergman and Szegő projections, the second being
+the boundary projection of <em>The Cauchy Integral Operator</em>. The algebraic theory of the forms, the
+adjoints, the positivity and the cone is Part II's; the Hermitian refinement of the operator is
+<em>Adjoints on a Clifford Module</em>, <em>The Hermitian Dirac Operator</em> and <em>The Hermitian Cauchy Kernel as
+an Adjoint</em>; the reproducing kernels are <em>Positive Definite Kernels in Clifford Analysis</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=\mathrm{Cl}_{0,m}$, $*$</td>
+<td>Clifford algebra and its conjugation</td>
+</tr>
+<tr>
+<td>$\mathcal{S}$</td>
+<td>Definite Clifford module of values</td>
+</tr>
+<tr>
+<td>$(\cdot,\cdot)$, $(x\cdot s,t)=(s,x^{*}\cdot t)$</td>
+<td>Hermitian form and the self-adjointness axiom</td>
+</tr>
+<tr>
+<td>$c(x)^{\dagger}=c(x^{*})$</td>
+<td>Adjoint of the multiplication</td>
+</tr>
+<tr>
+<td>$L^2(\Omega;\mathcal{S})$</td>
+<td>Hilbert module of sections; $\langle f,g\rangle=\int(f,g)$</td>
+</tr>
+<tr>
+<td>$D$, $D^{\dagger}=-\bar D$</td>
+<td>Operator and its formal adjoint; conormal boundary term</td>
+</tr>
+<tr>
+<td>$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i)\partial_i$</td>
+<td>Self-adjoint vector operator; $D_{\mathrm{sa}}^2=-\Delta$</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^2(\Omega;\mathcal{S})=\ker D\cap L^2$</td>
+<td>Monogenic Bergman space; Bergman projection</td>
+</tr>
+<tr>
+<td>$H^2(\Omega;\mathcal{S})$, $P^+=\tfrac12(I+\mathcal{S})$</td>
+<td>Monogenic Hardy space; Szegő projection</td>
+</tr>
+<tr>
+<td>$c(\nu_B)$</td>
+<td>Conormal multiplication in the boundary term</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the $L^2$ theory of monogenic functions and the boundary spaces.</li>
+<li>R. Delanghe, F. Sommen and V. Souček, <em>Clifford Algebra and Spinor-Valued Functions</em> (Kluwer, 1992), for monogenic Hilbert spaces and their reproducing kernels.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hermitian structures on Clifford modules and the self-adjointness of Dirac-type operators.</li>
+<li>John E. Gilbert and Margaret A. M. Murray, <em>Clifford Algebras and Dirac Operators in Harmonic Analysis</em> (Cambridge University Press, 1991), for the operator theory on the $L^2$ spaces of the Clifford theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

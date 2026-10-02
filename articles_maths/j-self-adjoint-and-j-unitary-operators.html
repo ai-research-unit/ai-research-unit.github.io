@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J-Self-Adjoint and J-Unitary Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="j-self-adjoint-and-j-unitary-operators"><strong>J-Self-Adjoint and J-Unitary Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a Krein space $K$ with fundamental symmetry $J$, form $[x,y] = \langle Jx,y\rangle$ and Hilbert adjoint $*$, the adjoint for the indefinite form — written $\dagger$ and called the <strong>$J$-adjoint</strong> — is $T^{\dagger} = JT^{*}J$. It is the unique operator satisfying $[Tx,y] = [x,T^{\dagger}y]$ for all vectors, it is involutive, and it reverses products, $ (ST)^{\dagger} = T^{\dagger}S^{\dagger}$. An operator is <strong>$J$-self-adjoint</strong> when $T^{\dagger} = T$, <strong>$J$-unitary</strong> when $T^{\dagger}T = TT^{\dagger} = 1$, and <strong>$J$-normal</strong> when $T^{\dagger}T = TT^{\dagger}$; these are the indefinite counterparts of self-adjointness, unitarity and normality, and the whole theory of the group rests on the translation between them and their Hilbert analogues.</p>
+<p>The translation is simple and useful: $T$ is $J$-self-adjoint exactly when $JT$ is Hilbert-self-adjoint; $T$ is $J$-isometric exactly when it preserves the indefinite form, $[Tx,Ty] = [x,y]$; and $T$ is a $J$-projection exactly when it is a Hilbert projection commuting with $J$. What is not simple is the spectral consequence: a $J$-self-adjoint operator need not have real spectrum, and the failure is the entrance to the spectral theory of <em>Spectral Theory on Krein Spaces</em>. The $J$-positive cone, $\{T = T^{\dagger} : [Tx,x]\geq0\}$, is strictly larger than the Hilbert positive cone and contains $J$ itself, so positivity in the indefinite sense is a genuinely weaker notion.</p>
+<p>This article fixes the $J$-adjoint, $J$-self-adjointness, $J$-isometry and $J$-unitarity, $J$-projections and $J$-normality, the $J$-positive cone, and the failure of the real spectrum in general.</p>
+<p>The Krein space, the fundamental symmetry and the form are <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>; the $J$-positive cone and the order are <em>Krein Algebras</em> and <em>The J-Positive Cone and the J-Order</em>; the spectral theory is <em>Spectral Theory on Krein Spaces</em>; the boundedness of $J$ and the topology of $K$ are <em>Indefinite Inner Product Spaces</em>. Those are cited. The space is $K$ with form $[\cdot,\cdot]$, fundamental symmetry $J$, Hilbert adjoint $*$ and indefinite adjoint $\dagger$.</p>
+<h2 id="the-indefinite-adjoint">The Indefinite Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>$J$-adjoint</strong> of a bounded operator $T$ is $T^{\dagger} = JT^{*}J$.</p>
+<p><strong>Proposition (characterisation and calculus).</strong> $T^{\dagger}$ is the unique bounded operator with</p>
+<p>$$
+[Tx,y] = [x,T^{\dagger}y] \qquad \text{for all } x, y\in K ;
+$$</p>
+<p>it satisfies $(T^{\dagger})^{\dagger} = T$, $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(\alpha T + \beta S)^{\dagger} = \bar\alpha T^{\dagger} + \bar\beta S^{\dagger}$, and $\|T^{\dagger}\| = \|T\|$ for the Hilbert norm.</p>
+<p><strong>Proof.</strong> $[Tx,y] = \langle JTx,y\rangle = \langle x,T^{*}Jy\rangle = \langle x,J(JT^{*}J)y\rangle = [x,T^{\dagger}y]$; uniqueness follows because the form is nondegenerate; the calculus is the corresponding calculus of the Hilbert adjoint conjugated by $J$.</p>
+<p><strong>Proposition (the $J$-adjoint is a Hilbert adjoint in disguise).</strong> $T$ is $J$-self-adjoint if and only if $JT$ is Hilbert-self-adjoint; $T$ is $J$-isometric if and only if $T$ preserves the form, $T^{*}JT = J$, and for a bounded $T$ on a Krein space this is already equivalent to $T$ being $J$-unitary.</p>
+<p><strong>Proof.</strong> $T^{\dagger} = JT^{*}J$, so $T$ is $J$-self-adjoint, $T = JT^{*}J$, exactly when $JT = J^{2}T^{*}J = T^{*}J$; and $(JT)^{*} = T^{*}J^{*} = T^{*}J$, so the condition is $JT = (JT)^{*}$, that is, $JT$ Hilbert-self-adjoint. For the second statement, the form is preserved, $[Tx,Ty] = [x,y]$ for all $x,y$, exactly when $T^{\dagger}T = 1$, by nondegeneracy; and $T^{\dagger}T = JT^{*}JT = 1$ is equivalent, after multiplication on the left by $J$, to $T^{*}JT = J$. A bounded operator on a Banach space that has a one-sided inverse is invertible, so $T^{\dagger}T = 1$ also gives $TT^{\dagger} = 1$, and a $J$-isometry is $J$-unitary.</p>
+<p><strong>Remark (the adjoint depends on $J$).</strong> The indefinite adjoint is not intrinsic to the topology of the Krein space: changing the fundamental symmetry changes the form and with it the adjoint. This is the first place where the choice of $J$ is visible at the level of operators, and it is the reason the whole theory of the group is a theory of the pair (Krein space, fundamental symmetry).</p>
+<h2 id="j-self-adjointness">J-Self-Adjointness</h2>
+<p><strong>Definition.</strong> $T$ is <strong>$J$-self-adjoint</strong> when $T^{\dagger} = T$; it is <strong>$J$-skew-adjoint</strong> when $T^{\dagger} = -T$; and every $T$ decomposes as $T = \frac{1}{2}(T + T^{\dagger}) + \frac{1}{2}(T - T^{\dagger})$ into a $J$-self-adjoint and a $J$-skew-adjoint part.</p>
+<p><strong>Proposition (the real space of $J$-self-adjoint operators).</strong> The $J$-self-adjoint operators form a real vector space, closed under the $J$-adjoint; they are exactly the operators $T$ with $JT$ Hilbert-self-adjoint; and $T^{\dagger}T$ is $J$-self-adjoint for every $T$.</p>
+<p><strong>Proof.</strong> $T^{\dagger} = T$ is a real-linear condition; the identification with $JT = (JT)^{*}$ is the previous proposition; and $(T^{\dagger}T)^{\dagger} = T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T$.</p>
+<p><strong>Proposition (the quadratic form is real but not sign definite).</strong> If $T$ is $J$-self-adjoint then $[Tx,x]$ is real for every $x$, and the numerical range of $T$ is symmetric with respect to the real axis; but $[Tx,x]$ need not have a constant sign, and the range can contain both signs.</p>
+<p><strong>Proof.</strong> $[Tx,x] = \overline{[x,Tx]} = \overline{[T^{\dagger}x,x]} = \overline{[Tx,x]}$ by $J$-self-adjointness; the indefiniteness is that of the form itself, since $T = J$ is $J$-self-adjoint with $[Jx,x] = \langle x,x\rangle>0$ for $x\neq0$ while $T = -J$ is also $J$-self-adjoint with $[-Jx,x]<0$.</p>
+<h2 id="j-isometry-j-unitarity-j-projection-j-normality">J-Isometry, J-Unitarity, J-Projection, J-Normality</h2>
+<p><strong>Definition.</strong> $T$ is <strong>$J$-isometric</strong> when $T^{\dagger}T = 1$, <strong>$J$-unitary</strong> when $T^{\dagger}T = TT^{\dagger} = 1$, <strong>$J$-normal</strong> when $T^{\dagger}T = TT^{\dagger}$, and a <strong>$J$-projection</strong> when $P^{2} = P = P^{\dagger}$.</p>
+<p><strong>Theorem (isometry is form preservation).</strong> $T$ is $J$-isometric if and only if $[Tx,Ty] = [x,y]$ for all $x, y$; $T$ is $J$-unitary if and only if it is $J$-isometric and surjective. The $J$-unitary operators form a group, the <strong>$J$-unitary group</strong> $\mathcal{U}_{J}(K)$, and the $J$-isometric operators are the isometries of the form.</p>
+<p><strong>Proof.</strong> $[Tx,Ty] = [x,T^{\dagger}Ty]$, so preservation of the form is $T^{\dagger}T = 1$; surjectivity of a $J$-isometry gives an inverse which is $J$-isometric by the same identity applied to the inverse, and the group axioms follow from the composition rules.</p>
+<p><strong>Theorem ($J$-projections are the projections commuting with $J$).</strong> An operator $P$ is a $J$-projection if and only if $P$ is an orthogonal projection with $PJ = JP$.</p>
+<p><strong>Proof.</strong> If $P = P^{2} = P^{\dagger}$ then $JP^{*}J = P$ and $P$ is an idempotent; from $JP^{*}J = P$ one gets $JP^{*} = PJ$ and $P^{*}J = JP$, whence $P^{*} = P$ and then $PJ = JP$; conversely an orthogonal projection commuting with $J$ satisfies $P^{\dagger} = JP^{*}J = JPJ = P$.</p>
+<p><strong>Proposition (normality).</strong> $T$ is $J$-normal when $T^{\dagger}T = TT^{\dagger}$, that is when $JT^{*}JT = TJT^{*}J$. The $J$-self-adjoint and the $J$-unitary operators are $J$-normal; the class is closed under the $J$-adjoint; and an invertible $J$-normal operator has $T^{\dagger}T^{-1}$ $J$-unitary.</p>
+<p><strong>Proof.</strong> The inclusions are the definitions; for the invertible case, $(T^{\dagger}T^{-1})^{\dagger}(T^{\dagger}T^{-1}) = (T^{\dagger})^{-1}T^{\dagger\dagger}T^{\dagger}T^{-1} = (T^{\dagger})^{-1}TT^{\dagger}T^{-1} = (T^{\dagger})^{-1}T^{\dagger}TT^{-1} = 1$ using $TT^{\dagger} = T^{\dagger}T$, and the reverse product is analogous, so the operator is $J$-unitary.</p>
+<p><strong>Remark (what normality is not).</strong> $J$-normality is not the same as the Hilbert normality of $JT$: the two conditions are $JT^{*}JT = TJT^{*}J$ and $T^{*}T = JTT^{*}J$, and neither implies the other. This is a first sign that the indefinite theory keeps the formal shape of the Hilbert theory without transporting all of its consequences.</p>
+<h2 id="the-j-positive-cone">The J-Positive Cone</h2>
+<p><strong>Definition.</strong> The <strong>$J$-positive cone</strong> is</p>
+<p>$$
+\{T : T = T^{\dagger},\ [Tx,x]\geq0 \text{ for every } x\in K\} .
+$$</p>
+<p><strong>Proposition (translation to Hilbert positivity).</strong> $T$ is $J$-positive if and only if $T = T^{\dagger}$ and $JT\geq0$ (Hilbert-positive). So the $J$-positive cone is the image under the map $T\mapsto JT$ of the Hilbert positive cone intersected with the $J$-self-adjoint condition.</p>
+<p><strong>Proof.</strong> $[Tx,x] = \langle JTx,x\rangle$, and $JT$ is self-adjoint exactly when $T$ is $J$-self-adjoint, so the condition is the Hilbert-positivity of $JT$.</p>
+<p><strong>Proposition (the cone is larger and contains $J$).</strong> The $J$-positive cone contains the Hilbert positive cone; it strictly contains it when $\kappa>0$; and $J$ itself is $J$-positive, since $[Jx,x] = \langle x,x\rangle\geq0$, while $J$ is not Hilbert-positive when $\kappa>0$.</p>
+<p><strong>Proof.</strong> If $T\geq0$ in the Hilbert sense and $T = T^{\dagger}$ then $JT$ need not be positive; but for $T$ proportional to a $J$-projection commuting with $J$ the two notions agree; the element $J$ has $J^{\dagger} = J$ and $J\cdot J = 1\geq0$, so $J$ is $J$-positive, and its Hilbert spectrum contains $-1$.</p>
+<p><strong>Remark (positivity is J-relative).</strong> The $J$-positive cone depends on the fundamental symmetry and is not comparable with the Hilbert positive cone beyond the containment just computed; in particular the $J$-positive elements do not form a cone that doubles as an operator-theoretic positivity in the Hilbert sense. This is the reason the spectral theory of $J$-self-adjoint operators has no analogue of the spectral theorem's ordering, and it is taken up in <em>Spectral Theory on Krein Spaces</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>.</p>
+<h2 id="the-failure-of-the-real-spectrum">The Failure of the Real Spectrum</h2>
+<p><strong>Proposition (a $J$-self-adjoint operator need not have real spectrum).</strong> In the Krein space $\mathbb{C}^{1,1}$ with $J = \mathrm{diag}(1,-1)$ the operator</p>
+<p>$$
+T = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}
+$$</p>
+<p>is $J$-self-adjoint, since $JT = \begin{pmatrix}0 & 1\\ 1 & 0\end{pmatrix}$ is symmetric, and its spectrum is $\{i, -i\}$: non-real.</p>
+<p><strong>Proof.</strong> Direct computation of $JT$ and of the characteristic polynomial $\lambda^{2} + 1$.</p>
+<p><strong>Proposition (conjugate symmetry).</strong> The spectrum of a $J$-self-adjoint operator is symmetric with respect to the real axis: $\lambda\in\sigma(T)$ implies $\bar\lambda\in\sigma(T)$, with the same multiplicity; and the resolvent is $J$-self-adjoint at points where it is defined.</p>
+<p><strong>Proof.</strong> The conjugate of $T$ is similar to $T$: $\bar T = JTJ^{-1}$ for real $J$, so $\sigma(\bar T) = \sigma(T)$; the resolvent statement is $(\lambda - T)^{\dagger} = \bar\lambda - T$.</p>
+<p><strong>Remark (what replaces the spectral theorem).</strong> For a Hilbert-self-adjoint operator the spectrum is real and the spectral theorem produces a functional calculus. For a $J$-self-adjoint operator the spectrum is only conjugate-symmetric, the real points need not be semi-bounded, and complex points occur in conjugate pairs; the spectral theory is therefore a theory of invariant subspaces and root subspaces rather than of projections, and it is the subject of the next articles, <em>Spectral Theory on Krein Spaces</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-fundamental-symmetry">The Fundamental Symmetry</h3>
+<p>$J$ is $J$-self-adjoint and $J$-unitary, since $J^{\dagger} = JJ^{*}J = J$ and $J^{2} = 1$; its Hilbert spectrum contains $-\lambda$ for each $\lambda$ in the negative part of the fundamental decomposition, which shows how far the indefinite spectral data is from the Hilbert one.</p>
+<h3 id="the-rotated-multiplications">The Rotated Multiplications</h3>
+<p>For $A = M_n(\mathbb{C})$ with the indefinite form defined by $J$, the $J$-self-adjoint elements are the solutions of $JT^{*}J = T$, the $J$-unitary ones solve $T^{*}JT = J$, and the trace of a $J$-positive element is real but need not be positive for the Hilbert form; these are the $J$-analogues of the Hermitian matrices and the unitary group, and they generate the $J$-version of the matrix algebra.</p>
+<h3 id="the-one-dimensional-case">The One-Dimensional Case</h3>
+<p>For $K$ of dimension one with the definite form the $J$-adjoint is the Hilbert adjoint and the theory reduces to the Hilbert one; the failure of the real spectrum and the enlargement of the cone both require $\kappa>0$, so the indefinite theory is invisible in a definite space.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>$J$-adjoint</strong> on a Krein space with fundamental symmetry $J$ is $T^{\dagger} = JT^{*}J$, characterised by $[Tx,y] = [x,T^{\dagger}y]$ and reversing products; an operator is <strong>$J$-self-adjoint</strong> when $T^{\dagger} = T$, equivalently when $JT$ is Hilbert-self-adjoint, <strong>$J$-isometric</strong> when $T^{\dagger}T = 1$, equivalently when it preserves the form, <strong>$J$-unitary</strong> when $T^{\dagger}T = TT^{\dagger} = 1$, equivalently when it is a surjective form-isometry, <strong>$J$-normal</strong> when $T^{\dagger}T = TT^{\dagger}$, and a <strong>$J$-projection</strong> when $P^{2} = P = P^{\dagger}$, equivalently when $P$ is an orthogonal projection commuting with $J$. The <strong>$J$-positive cone</strong> is $\{T = T^{\dagger} : JT\geq0\}$; it contains the Hilbert positive cone, it strictly contains it when $\kappa>0$, and it contains $J$ itself, so indefinite positivity is genuinely weaker than Hilbert positivity. Unlike a self-adjoint operator, a <strong>$J$-self-adjoint operator need not have real spectrum</strong> — the operator $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ in $\mathbb{C}^{1,1}$ has spectrum $\{i,-i\}$ — the spectrum is only conjugate-symmetric, and the resulting theory of invariant and root subspaces is <em>Spectral Theory on Krein Spaces</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>. The space and the symmetry are <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>, the positivity is <em>Krein Algebras</em> and <em>The J-Positive Cone and the J-Order</em>, and the adjoint for the form is <em>Indefinite Inner Product Spaces</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{\dagger} = JT^{*}J$</td>
+<td>The $J$-adjoint</td>
+</tr>
+<tr>
+<td>$[Tx,y] = [x,T^{\dagger}y]$</td>
+<td>Characterisation of the $J$-adjoint</td>
+</tr>
+<tr>
+<td>$T^{\dagger} = T \iff JT = (JT)^{*}$</td>
+<td>$J$-self-adjointness</td>
+</tr>
+<tr>
+<td>$T^{\dagger}T = 1 \iff [Tx,Ty] = [x,y]$</td>
+<td>$J$-isometry</td>
+</tr>
+<tr>
+<td>$\mathcal{U}_{J}(K)$</td>
+<td>The $J$-unitary group</td>
+</tr>
+<tr>
+<td>$P^{2} = P = P^{\dagger} \iff PJ = JP$</td>
+<td>$J$-projection</td>
+</tr>
+<tr>
+<td>$T$ $J$-positive $\iff JT\geq0$</td>
+<td>The $J$-positive cone</td>
+</tr>
+<tr>
+<td>$\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$</td>
+<td>$J$-self-adjoint with spectrum $\{i,-i\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the $J$-adjoint, $J$-unitary operators and the $J$-positive cone.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the linear algebra of $J$-self-adjoint and $J$-unitary operators.</li>
+<li>Peter Jonas, "On the spectral theory of operators on Krein spaces", in <em>Operator Theory: Advances and Applications</em> (Birkhäuser), for the spectral consequences.</li>
+<li>Tomas Ya. Azizov and I. S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the systematic theory.</li>
+<li>Mark G. Kreĭn and Heinz Langer, "On the spectral function of a self-adjoint operator in a space with indefinite metric" (1973), for the spectral function of a $J$-self-adjoint operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

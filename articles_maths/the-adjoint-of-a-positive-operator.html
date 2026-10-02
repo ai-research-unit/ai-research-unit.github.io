@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of a Positive Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-a-positive-operator"><strong>The Adjoint of a Positive Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On an ordered space with a <strong>positive definite form</strong> — the trace form $\langle x,y\rangle$ of an ordered involutive algebra, or the inner product of an ordered Hilbert space — every linear operator $T$ has an <strong>adjoint</strong> $T^{*}$ with $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$, and the adjoint interacts with the order in a way that mirrors the positivity: the adjoint of a <strong>positive operator</strong> is positive,</p>
+<p>$$
+T\geq0 \implies T^{*}\geq0 ,
+$$</p>
+<p>where $T\geq0$ means $\langle Tx,x\rangle\geq0$ for every $x$, equivalently $T$ order preserving on the positive cone when the cone is self-dual. The adjoint is an <strong>order isomorphism</strong> of the operator space for the order of the forms, the map $T\mapsto T^{*}$ is an involution that reverses the products, $(ST)^{*} = T^{*}S^{*}$, and the self-adjoint operators $T = T^{*}$ form the ordered real subspace on which the order of the operators is the concrete order of the article. The purpose of the article is to state the adjoint and the order together: the adjoint is the algebraic expression of the self-duality of the form, and the positivity is preserved by it.</p>
+<p>The article is the first of the <strong>adjoint</strong> family of the <code>- * Operator Theory</code> group: the adjoint of a single operator is followed by the adjoint of the left multiplication, of the signed sandwich, of the reflection and of the graded action, each of which is a concrete computation of the general adjoint displayed here. The order enters twice: through the <strong>positivity of the adjoint</strong> and through the <strong>order of the self-adjoint operators</strong>, in which the operators are compared by their quadratic forms. The commutative and the matrix cases exhibit the two behaviours: the pointwise adjoint is the ordinary adjoint of a function, and the matrix adjoint is the conjugate transpose, both manifestly preserving the positivity.</p>
+<p>The ordered space and the order are <em>Ordered Vector Spaces and the Order Unit</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; the forms and the self-duality are <em>Positive Definite Forms on an Ordered Space</em> and <em>Positive Definite Forms and the Order</em>; the Hilbert cone and the self-duality are <em>The Hilbert Cone of an Involutive Algebra</em>; the self-adjoint elements are <em>Self-Adjoint Elements and the Order</em>; the involution on the order automorphisms is <em>The Involution on the Order Automorphisms</em>; the adjoint of the left multiplication is <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; and the signed adjoints are <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>. The operator-algebraic models are <em>Operator Algebras</em> and <em>The Hilbert Space Adjoint</em> of Part II.</p>
+<h2 id="the-adjoint-and-the-form">The Adjoint and the Form</h2>
+<p><strong>Definition.</strong> Let $E$ be a real or complex vector space with a positive definite form $\langle\cdot,\cdot\rangle$ (the trace form in the involutive-algebra case), and let $T : E\to E$ be linear. The <strong>adjoint</strong> is the linear map $T^{*}$ with</p>
+<p>$$
+\langle Tx,y\rangle = \langle x,T^{*}y\rangle \quad \text{for every } x,y\in E .
+$$</p>
+<p><strong>Proposition (the adjoint is an involution reversing the products).</strong> When the adjoints exist, the map $T\mapsto T^{*}$ is conjugate-linear, is an involution $(T^{*})^{*} = T$, reverses the products, $(ST)^{*} = T^{*}S^{*}$, and fixes the identity, $I^{*} = I$; the <strong>self-adjoint</strong> elements are the fixed points $T = T^{*}$, they form a real vector space, and every operator decomposes as $T = \operatorname{Re}T + i\operatorname{Im}T$ with $\operatorname{Re}T = \frac12(T + T^{*})$ and $\operatorname{Im}T = \frac1{2i}(T - T^{*})$ self-adjoint.</p>
+<p><em>Proof.</em> The conjugate-linearity and the order-two property are immediate from the definition; the reversal of the products follows from $\langle STx,y\rangle = \langle Tx,S^{*}y\rangle = \langle x,T^{*}S^{*}y\rangle$; the identity is self-adjoint, and the decomposition is the same computation as for the Hermitian elements of an involutive algebra.</p>
+<p><strong>Example.</strong> For the matrix algebra with the trace form the adjoint is the conjugate transpose, $T^{*} = \bar T^{\mathsf{T}}$; for the function algebra with the $L^{2}$ form it is the complex conjugate; for the Hilbert space it is the operator adjoint. In all three the involution is the one of the involutive-algebra structure, and the adjoint of the multiplication $L_a$ is $L_{a^{*}}$.</p>
+<h2 id="the-positivity-of-the-adjoint">The Positivity of the Adjoint</h2>
+<p><strong>Definition.</strong> An operator $T$ is <strong>positive</strong>, $T\geq0$, when $\langle Tx,x\rangle\geq0$ for every $x$; it is <strong>order preserving</strong> when it maps the positive cone into itself, $T(E_+)\subseteq E_+$.</p>
+<p><strong>Theorem (the adjoint preserves the positivity and the order).</strong> The adjoint of a positive operator is positive,</p>
+<p>$$
+T\geq0 \implies T^{*}\geq0 ,
+$$</p>
+<p>so the adjoint is an <strong>order isomorphism</strong> of the operator space for the order $\leq$ defined by the quadratic forms; when the cone is self-dual for the form the quadratic positivity coincides with the order preservation, and then the adjoint of an order-preserving operator is order preserving. The adjoint of an order <strong>isomorphism</strong> is an order isomorphism, and the positivity is therefore an invariant of the adjoint.</p>
+<p><em>Proof.</em> If $T\geq0$ then $\langle Tx,x\rangle$ is real and nonnegative for every $x$; the Hermitian symmetry of the form gives $\langle T^{*}x,x\rangle = \overline{\langle x,T^{*}x\rangle} = \overline{\langle Tx,x\rangle} = \langle Tx,x\rangle\geq0$, so the quadratic forms of $T$ and $T^{*}$ agree and both operators are positive. The order-preservation statement is the definition of the self-duality, under which $\langle Tx,x\rangle\geq0$ for all $x$ is equivalent to $T(E_+)\subseteq E_+$; the order-isomorphism statement is the two-sided preservation.</p>
+<p><strong>Corollary (the quadratic order and the operator order).</strong> The operators are ordered by their quadratic forms,</p>
+<p>$$
+S\leq T \iff \langle Sx,x\rangle\leq\langle Tx,x\rangle \ \text{ for every } x ,
+$$</p>
+<p>and the adjoint is an order isomorphism of this order; the self-adjoint operators of the form $T = T^{*}$ form an ordered real vector space with the order interval $[0,I]$ the set of the positive contractions, which is the order of the <strong>effects</strong> when the space is a Hilbert space.</p>
+<p><em>Proof.</em> The order is defined by the quadratic forms and is a cone order because the set of the positive quadratic forms is a cone; the adjoint preserves it by the theorem; the self-adjoint part with this order is the ordered space whose interval at $I$ is the set of the contractions, by the standard argument of <em>Positive Operators on an Ordered Space</em>.</p>
+<h2 id="the-order-automorphisms-and-the-adjoint">The Order Automorphisms and the Adjoint</h2>
+<p><strong>Proposition (the adjoint of an order automorphism).</strong> If $T$ is an order automorphism of the ordered space with the form and $T^{-1} = T^{*}$ (an orthogonal automorphism), then $T$ preserves the quadratic positivity; the adjoint of an order automorphism is an order automorphism, and the group of the order automorphisms that are isometric for the form is closed under the adjoint.</p>
+<p><em>Proof.</em> The invariance of the form under an orthogonal $T$ gives $\langle Tx,Ty\rangle = \langle x,y\rangle$, so the quadratic order is preserved; the adjoint of a bijective order-preserving map is order preserving by the two-sided statement of the theorem; the group is closed under the adjoint because the inverse and the adjoint coincide on the orthogonal automorphisms.</p>
+<p><strong>Proposition (the involution and the positivity of the automorphisms).</strong> The <strong>involution</strong> of the ordered involutive algebra acts on the order automorphisms by the conjugation</p>
+<p>$$
+T\mapsto \alpha\,T\,\alpha^{-1} = \alpha T\alpha ,
+$$</p>
+<p>and the positive automorphisms are carried to positive automorphisms; the fixed points are the automorphisms commuting with the involution, which are the <strong>*-automorphisms</strong> of the ordered involutive structure. This is the conjugation action of <em>The Involution on the Order Automorphisms</em>, of which the present article displays the adjoint form.</p>
+<p><em>Proof.</em> The conjugation by an order automorphism $\alpha$ carries the cone to itself, so it carries an order automorphism to an order automorphism; it preserves the positivity because $\alpha$ and $\alpha^{-1}$ preserve the cone; the fixed points are the automorphisms with $\alpha T = T\alpha$, the *-automorphisms.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $E = M_n(\mathbb{C})$ with the trace form $\langle T,S\rangle = \operatorname{tr}(S^{*}T)$. The adjoint is the conjugate transpose, a positive matrix has a positive conjugate transpose, and the order of the self-adjoint matrices is the Loewner order; the order automorphisms are the unitary conjugations, all of which are orthogonal for the trace form, and the involution on them is the conjugation by $\operatorname{diag}(1,-1)$ in the graded cases of the earlier articles. This is the model instance.</p>
+<h3 id="the-hilbert-space">The Hilbert Space</h3>
+<p>Let $E = H$ a Hilbert space with its inner product. The operators are the bounded operators on $H$, the adjoint is the Hilbert-space adjoint, the positive operators are the positive semidefinite ones, and the order is the Loewner order; the order automorphisms are the unitary and the antiunitary bijections, and the positivity of the adjoint is the standard fact $\langle T^{*}x,x\rangle = \langle Tx,x\rangle$ for the real part. The effects $[0,I]$ are the quantum-mechanical yes–no measurements.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $E = L^{2}(X,\mu)$ with the pointwise order and the $L^{2}$ form. The multiplication by a nonnegative function is a positive operator, its adjoint is the multiplication by the same function and is positive, and the order is the pointwise order of the functions; the order automorphisms are the multiplications by the functions of modulus one, which are unitary for the form, and the adjoint of the multiplication operator is the multiplication by the conjugate function. The commutative case is the simplest instance in which the adjoint and the order are both pointwise.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>adjoint</strong> of an operator on a space with a positive definite form is defined by $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$; it is conjugate-linear, is an involution, reverses the products, and fixes the identity, and the <strong>self-adjoint</strong> operators are its fixed points, forming an ordered real vector space under the <strong>quadratic order</strong> $S\leq T\iff\langle Sx,x\rangle\leq\langle Tx,x\rangle$. The adjoint <strong>preserves the positivity</strong>, $T\geq0\implies T^{*}\geq0$, because the quadratic forms of $T$ and $T^{*}$ agree; consequently it is an <strong>order isomorphism</strong> of the operator space, the adjoint of an order automorphism is an order automorphism, and the orthogonal automorphisms are closed under the adjoint. The involution of the ordered involutive algebra acts on the order automorphisms by the conjugation $T\mapsto\alpha T\alpha$, whose fixed points are the <strong>*-automorphisms</strong>; the models are the conjugate transpose on the matrix algebra, the Hilbert-space adjoint, and the pointwise conjugation on $L^{2}$. The order is <em>Ordered Vector Spaces and the Order Unit</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; the forms are <em>Positive Definite Forms on an Ordered Space</em> and <em>Positive Definite Forms and the Order</em>; the self-duality is <em>The Hilbert Cone of an Involutive Algebra</em>; the self-adjoint elements are <em>Self-Adjoint Elements and the Order</em>; the involution on the automorphisms is <em>The Involution on the Order Automorphisms</em>; and the concrete adjoints are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>, <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle Tx,y\rangle = \langle x,T^{*}y\rangle$</td>
+<td>Adjoint</td>
+</tr>
+<tr>
+<td>$(ST)^{*} = T^{*}S^{*}$</td>
+<td>The adjoint reverses the products</td>
+</tr>
+<tr>
+<td>$T^{*} = T$</td>
+<td>Self-adjoint operator</td>
+</tr>
+<tr>
+<td>$T\geq0$</td>
+<td>Positive operator, $\langle Tx,x\rangle\geq0$</td>
+</tr>
+<tr>
+<td>$T\geq0\implies T^{*}\geq0$</td>
+<td>The adjoint preserves the positivity</td>
+</tr>
+<tr>
+<td>$S\leq T\iff\langle Sx,x\rangle\leq\langle Tx,x\rangle$</td>
+<td>Quadratic order</td>
+</tr>
+<tr>
+<td>$T\mapsto\alpha T\alpha$</td>
+<td>Involution on the order automorphisms</td>
+</tr>
+<tr>
+<td>$[0,I]$</td>
+<td>Effects</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the Hilbert-space adjoint, the positive operators and the order.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the positive operators and the order isomorphism of an operator space.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the *-automorphisms and the conjugation by the involutions.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the order automorphisms, the effects and the state spaces.</li>
+<li>Béla Sz.-Nagy, <em>Spektraldarstellung linearer Transformationen des Hilbertschen Raumes</em> (Springer, 1942), for the adjoint, the self-adjoint operators and the quadratic order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

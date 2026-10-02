@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Closure Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-closure-operators"><strong>The Involution on the Closure Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A closure operator on a poset is a monotone, extensive, idempotent map; an interior operator is
+monotone, deflative and idempotent, and the two are dual to each other in the order. When the poset
+carries an order-reversing involution ${}^{\perp}$, the operator-layer involution of <em>Involutions of the
+Operator Layer</em> sends a closure operator to the map $c^{\perp} = {}^{\perp} \circ c \circ {}^{\perp}$,
+and this article shows that $c^{\perp}$ is an <strong>interior operator</strong>, that the assignment exchanges the
+two kinds of operator, and that it is the involution that reverses the Galois connection from which the
+closure operator comes: if $c = g \circ f$ for a Galois connection $f \dashv g$, then $c^{\perp}$ is the
+interior operator of the <strong>reversed</strong> connection $g^{\perp} \dashv f^{\perp}$. The fixed closure
+operators are those commuting with the involution, and on a nondegenerate lattice the only fixed closure
+operator is the identity. This closes the <code>- * Operator Theory</code> group and returns, with the involution
+acting on the operators, to the closure operators of <em>Closure Operators and the Consequence Operator</em>.</p>
+<p>The article presupposes <em>Closure Operators and the Consequence Operator</em>, for the closure and the
+Galois connection, <em>Operators on a Poset</em>, for the residuation, <em>Orthocomplemented Lattices and the
+Involution</em>, for the order-reversing involution, and <em>Involutions of the Operator Layer</em>, for the
+conjugation. The topological closure and the interior of a topological space are Part II and are named
+only; nothing topological is used.</p>
+<h2 id="the-conjugate-of-a-closure-operator">The Conjugate of a Closure Operator</h2>
+<p><strong>Definition.</strong> Let $L$ be a poset with an order-reversing involution ${}^{\perp}$. For a closure
+operator $c$ on $L$, its <strong>conjugate</strong> is $c^{\perp} = {}^{\perp} \circ c \circ {}^{\perp}$.</p>
+<p><strong>Theorem.</strong> If $c$ is a closure operator, then $c^{\perp}$ is an interior operator; if $i$ is an
+interior operator, then $i^{\perp}$ is a closure operator. The assignment $c \mapsto c^{\perp}$ is an
+involution that exchanges the closure operators and the interior operators of $L$.</p>
+<p><strong>Proof.</strong> Let $c$ be monotone, extensive ($c(x) \geq x$) and idempotent. The map $c^{\perp}$ is
+monotone by <em>Involutions of the Operator Layer</em> (a conjugation by an order-reversing involution
+preserves monotonicity). It is idempotent, $(c^{\perp})^2 = {}^{\perp} c^2 {}^{\perp} = {}^{\perp} c
+{}^{\perp} = c^{\perp}$. For the deflation, $c(x^{\perp}) \geq x^{\perp}$, and applying the
+order-reversing ${}^{\perp}$ gives $c^{\perp}(x) = (c(x^{\perp}))^{\perp} \leq (x^{\perp})^{\perp} =
+x$. By duality, if $c$ is a closure operator with $c \geq \mathrm{id}$ and $c^2 = c$, then $c^{\perp}$
+is monotone, idempotent and $\leq \mathrm{id}$, hence an interior operator. The same computation with
+$c$ replaced by an interior operator $i$ shows that $i^{\perp}$ is a closure operator; and the
+assignment is an involution because ${}^{\perp}$ is.</p>
+<p><strong>Corollary (the open and closed sets).</strong> The open sets of $c^{\perp}$, the fixed points of the interior
+operator, are exactly the complements of the closed sets of $c$: $c^{\perp}(y) = y$ if and only if $y =
+x^{\perp}$ for a fixed point $x$ of $c$. The fixed points of $c$ and of $c^{\perp}$ correspond under
+${}^{\perp}$.</p>
+<p><strong>Proof.</strong> $c^{\perp}(y) = y$ means $(c(y^{\perp}))^{\perp} = y$, that is, $c(y^{\perp}) = y^{\perp}$;
+writing $x = y^{\perp}$, the fixed points $y$ of $c^{\perp}$ are exactly the $x^{\perp}$ with $x$ fixed
+by $c$.</p>
+<h2 id="the-reversed-galois-connection">The Reversed Galois Connection</h2>
+<p><strong>Theorem.</strong> Let $f \dashv g$ be a Galois connection between posets with order-reversing involutions,
+and let $c = g \circ f$ be its closure operator. Then the conjugate $c^{\perp}$ is the interior operator
+of the reversed connection $g^{\perp} \dashv f^{\perp}$:</p>
+<p>$$
+c^{\perp} = f^{\perp} \circ g^{\perp}, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp} .
+$$</p>
+<p><strong>Proof.</strong> The conjugation is an anti-automorphism of composition, $(g \circ f)^{\perp} = f^{\perp}
+\circ g^{\perp}$, and by <em>Involutions of the Operator Layer</em> the conjugation reverses the adjunction,
+sending $f \dashv g$ to $g^{\perp} \dashv f^{\perp}$. So $c^{\perp} = f^{\perp} \circ g^{\perp}$ is the
+composite of a left adjoint followed by a right adjoint — the right adjoint of the reversed connection
+after its left adjoint — which is the interior operator $f^{\perp} \circ g^{\perp}$ of the reversed
+connection.</p>
+<p><strong>Corollary.</strong> The involution reverses the Galois connection of $c$: the left adjoint of the reversed
+connection is $g^{\perp}$, the conjugate of the right adjoint of the original, and the right adjoint of
+the reversed connection is $f^{\perp}$, the conjugate of the original left adjoint. Hence the involution
+on the closure operators is induced by the involution on the Galois connections, and the passage from
+the closure to the interior is the passage from a connection to the reversed connection.</p>
+<p><strong>Proof.</strong> The theorem gives the adjunction $g^{\perp} \dashv f^{\perp}$; reading its two members
+identifies the left and right adjoints as displayed.</p>
+<h2 id="the-fixed-closure-operators">The Fixed Closure Operators</h2>
+<p><strong>Theorem.</strong> A closure operator $c$ is fixed by the involution, $c^{\perp} = c$, if and only if $c$
+commutes with ${}^{\perp}$. On a nondegenerate lattice with an orthocomplement the only fixed closure
+operator is the identity, and the only fixed interior operator is the identity.</p>
+<p><strong>Proof.</strong> $c^{\perp} = {}^{\perp} c {}^{\perp} = c$ is exactly $c \circ {}^{\perp} = {}^{\perp} \circ
+c$, by composing with ${}^{\perp}$ and using that it is an involution. If $c = c^{\perp}$, then $c$ is
+at the same time extensive (as a closure operator) and deflative (as its own conjugate, an interior
+operator), so $c = \mathrm{id}$; the same argument applies to an interior operator.</p>
+<p><strong>Corollary.</strong> The involution of the closure operators has a trivial fixed part on a nondegenerate
+lattice, and its orbits are the pairs $\{c, c^{\perp}\}$ of a closure operator and the dual interior
+operator, together with the identity, which is fixed.</p>
+<p><strong>Proof.</strong> The fixed part is the identity by the theorem; every other orbit is the pair of an operator
+and its conjugate, which are distinct because a map that is both extensive and deflative is the
+identity.</p>
+<p><strong>Example (a poset).</strong> Let $L$ be the power set of a poset $P$ ordered by inclusion, with the complement
+of <em>Involutive Set Theory and the Symmetric Difference</em>, and let $c$ be the <strong>down-closure</strong>, assigning
+to $A$ the set of elements below a member of $A$. Then $c$ is a closure operator and $c^{\perp}$ is the
+map assigning to $A$ the complement of the down-closure of the complement, which is the <strong>up-closure</strong>,
+an interior operator; the closed sets of $c$ are the down-sets and the open sets of $c^{\perp}$ are the
+up-sets. The two families correspond under the complement.</p>
+<h2 id="summary">Summary</h2>
+<p>On a poset with an order-reversing involution the conjugation $c \mapsto c^{\perp} = {}^{\perp} \circ c
+\circ {}^{\perp}$ sends a closure operator to an interior operator and back, and it is an involution
+exchanging the two families. The open sets of $c^{\perp}$ are the complements of the closed sets of $c$,
+and if $c = g \circ f$ comes from a Galois connection $f \dashv g$, then $c^{\perp} = f^{\perp} \circ
+g^{\perp}$ is the interior operator of the **reversed** connection $g^{\perp} \dashv f^{\perp}$; so the
+involution reverses the Galois connection and exchanges the left and right adjoints. A closure operator
+is fixed exactly when it commutes with the involution, and on a nondegenerate lattice the only fixed
+closure operator is the identity, so the involution pairs each closure operator with its dual interior
+operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>A closure operator: monotone, extensive, idempotent</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>An interior operator: monotone, deflative, idempotent</td>
+</tr>
+<tr>
+<td>$c^{\perp} = {}^{\perp} \circ c \circ {}^{\perp}$</td>
+<td>The conjugate of $c$, an interior operator</td>
+</tr>
+<tr>
+<td>$f \dashv g$</td>
+<td>A Galois connection with closure operator $c = g \circ f$</td>
+</tr>
+<tr>
+<td>$g^{\perp} \dashv f^{\perp}$</td>
+<td>The reversed connection, with interior operator $c^{\perp}$</td>
+</tr>
+<tr>
+<td>fixed part of the involution</td>
+<td>Closure operators commuting with ${}^{\perp}$; only the identity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Garrett Birkhoff, <em>Lattice Theory</em>, 3rd ed. (American Mathematical Society, 1967), for closure operators, interior operators and Galois connections.</li>
+<li>Marcel Erné, "Adjunctions and Galois connections: origins, history and development", in <em>Galois Connections and Applications</em> (Kluwer, 2004), for the duality of closures and interiors.</li>
+<li>Brian A. Davey and Hilary A. Priestley, <em>Introduction to Lattices and Order</em>, 2nd ed. (Cambridge University Press, 2002), for closure operators, their fixed points and the Galois connection of a closure.</li>
+<li>Chris Brink, Wolfram Kahl and Gunther Schmidt, <em>Relational Methods in Computer Science</em> (Springer, 1997), for the conjugation of closure operators by an involution.</li>
+<li>Rudolf Wille, "Restructuring lattice theory: an approach based on hierarchies of concepts", in <em>Ordered Sets</em> (Reidel, 1982), 445–470, for closure operators and their duals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivariant Operators under a Continuous Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivariant-operators-under-a-continuous-involution"><strong>Equivariant Operators under a Continuous Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $X$ be a topological space with a continuous involution $\sigma$, and let $V$ be a structure attached functorially to $X$, with the involution of $V$ that $\sigma$ induces and that the previous articles compute on the power set, on the frame of open sets and on the algebras of the free Boolean case. An <strong>operator</strong> on $V$ is an endomorphism in the appropriate sense, and the involution of $X$ acts on the operators themselves by conjugation, $T \mapsto \sigma T \sigma^{-1}$. This is the operator layer of the group <code>- * Operator Theory</code> of this category: the operators built from the involution, and the article isolates the two structures that the layer carries and that must not be confused. The first is the <strong>conjugation involution</strong> of the algebra of operators, an algebra automorphism of order two whose fixed points are the <strong>equivariant operators</strong>, the operators commuting with $\sigma$. The second is the <strong>adjoint</strong> $T \mapsto T^{*}$ with respect to a form on $V$, an anti-automorphism of the algebra of operators; the two structures are different, and the article proves that they commute when the form is preserved by the involution, so that the adjoint of an equivariant operator is equivariant.</p>
+<p>The article states the general properties of the two involutions on the operator algebra, the decomposition of an operator into its equivariant and anti-equivariant parts, the behaviour of the fixed elements of the involution under an equivariant operator, and the compatibility of the conjugation with the adjoint. It continues <em>Equivariant Maps and Equivariant Homotopy</em>, whose equivariant maps are the operators of the topological category that commute with the involution, and <em>The Induced Involution on the Closed Sets and the Open Sets</em>, and it prepares <em>The Involution on the Cohomology Operators</em>, <em>The Antipodal Map and the Adjoint</em> and <em>Hermitian Pairings on a Topological Space</em>, where the operators are the linear operators on the cohomology and the form is the intersection pairing. The operators on a vector space and their adjoints with respect to a form are the algebra of Part I, in <em>The Adjoint of an Endomorphism</em> and <em>Bilinear Forms</em>, and they are used here without repetition; the fixed elements of the involution are the fixed submodule of the elements group, treated in the algebra of Part I.</p>
+<p>Nothing analytic and nothing geometric is used. The structures are modules, algebras and bilinear forms; no norm, no completion and no measure is taken, and no distance, angle or curvature is read from the space. The topology enters only through the continuity of the involution, which makes the induced operator well defined on the structures that are functorial for continuous maps.</p>
+<h2 id="operators-and-the-conjugation-involution">Operators and the Conjugation Involution</h2>
+<h3 id="operators-commuting-with-the-involution">Operators Commuting with the Involution</h3>
+<p>Throughout, $k$ is a commutative ring with identity, $V$ is a $k$-module written additively, and $\sigma : V \to V$ is an involution of $V$, $\sigma^{2} = \mathrm{id}$. When $V$ is attached to a space with a continuous involution, $\sigma$ is the induced involution of that structure; the abstract statements below need only that $\sigma$ is an involution.</p>
+<p><strong>Definition.</strong> An <strong>operator</strong> on $V$ is a $k$-linear endomorphism $T : V \to V$, and the algebra of operators is $\operatorname{End}_{k}(V)$. An operator is <strong>equivariant</strong> with respect to $\sigma$, or <strong>$\sigma$-equivariant</strong>, when</p>
+<p>$$
+T \circ \sigma = \sigma \circ T .
+$$</p>
+<p><strong>Proposition.</strong> The equivariant operators form a subalgebra of $\operatorname{End}_{k}(V)$ containing the identity and closed under addition, composition and the multiplication by scalars, and the involution $\sigma$ is itself an equivariant operator of order two. The equivariant operators are exactly the operators fixed by the conjugation below.</p>
+<p><strong>Proof.</strong> If $S$ and $T$ commute with $\sigma$ then $S + T$, $ST$ and $kT$ commute with $\sigma$, and the identity does; the involution commutes with itself, $\sigma\sigma = \sigma\sigma$. The identification with the fixed points is the definition of the conjugation.</p>
+<h3 id="the-conjugation-action">The Conjugation Action</h3>
+<p><strong>Definition.</strong> The <strong>conjugation</strong> by $\sigma$, or the <strong>adjoint action</strong> of the involution, is the map</p>
+<p>$$
+\operatorname{Ad}_{\sigma} : \operatorname{End}_{k}(V) \longrightarrow \operatorname{End}_{k}(V), \qquad \operatorname{Ad}_{\sigma}(T) = \sigma T \sigma^{-1} = \sigma T \sigma .
+$$</p>
+<p><strong>Theorem.</strong> The conjugation is an algebra automorphism of $\operatorname{End}_{k}(V)$ of order two:</p>
+<p>$$
+\operatorname{Ad}_{\sigma}^{2} = \mathrm{id}, \qquad \operatorname{Ad}_{\sigma}(S + T) = \operatorname{Ad}_{\sigma}(S) + \operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(ST) = \operatorname{Ad}_{\sigma}(S)\operatorname{Ad}_{\sigma}(T), \qquad \operatorname{Ad}_{\sigma}(\mathrm{id}) = \mathrm{id}.
+$$</p>
+<p>Its fixed points are the operators commuting with $\sigma$: $\operatorname{Ad}_{\sigma}(T) = T$ if and only if $\sigma T = T\sigma$. It is an <strong>inner</strong> automorphism, represented by the unit $\sigma$ of the algebra of operators, and it is not the identity unless $\sigma$ is central in $\operatorname{End}_{k}(V)$, which happens exactly when $\sigma$ is a scalar endomorphism.</p>
+<p><strong>Proof.</strong> $\operatorname{Ad}_{\sigma}^{2}(T) = \sigma^{2}T\sigma^{-2} = T$ because $\sigma^{2} = \mathrm{id}$; the additivity, the multiplicativity and the unit are the identity $(\sigma S\sigma)(\sigma T\sigma) = \sigma ST\sigma$ and the relations $\sigma(\mathrm{id})\sigma = \mathrm{id}$; the fixed points are the solutions of $\sigma T\sigma = T$, which is $\sigma T = T\sigma$ after multiplying by $\sigma$ on the right. The centrality statement is that $\sigma T = T\sigma$ for every $T$ if and only if $\sigma$ commutes with every endomorphism, which for a free module of finite rank means that $\sigma$ is a scalar.</p>
+<p><strong>Corollary (the decomposition).</strong> If $2$ is invertible in $k$, every operator splits uniquely as</p>
+<p>$$
+T = \frac{T + \operatorname{Ad}_{\sigma}(T)}{2} + \frac{T - \operatorname{Ad}_{\sigma}(T)}{2},
+$$</p>
+<p>the first summand equivariant and the second anti-equivariant, meaning fixed by $\operatorname{Ad}_{\sigma}$ up to the sign $-1$. The two summands are the projections onto the fixed and the anti-fixed subalgebras along the two eigenspaces of the involution $\operatorname{Ad}_{\sigma}$ of the operator algebra.</p>
+<p><strong>Proof.</strong> The two summands are the images under the projection operators $(1 \pm \operatorname{Ad}_{\sigma})/2$ of the linear involution $\operatorname{Ad}_{\sigma}$; they lie in the $+1$ and $-1$ eigenspaces, and their sum is $T$. Uniqueness is the uniqueness of the eigenspace decomposition of a linear involution over a ring in which two is invertible.</p>
+<p><strong>Remark.</strong> The conjugation $\operatorname{Ad}_{\sigma}$ is an algebra <strong>automorphism</strong>, while the adjoint of the next section is an algebra <strong>anti-automorphism</strong>; the two are the two structures of the operator layer and they are not the same. The group <code>- * Operator Theory</code> of a category forbids the identification of the involution on the operators with the adjoint unless it is proved; this article proves the compatibility and the algebra of Part I contains the adjoint in its own right.</p>
+<h2 id="the-fixed-elements-of-the-involution">The Fixed Elements of the Involution</h2>
+<h3 id="the-eigenspaces">The Eigenspaces</h3>
+<p><strong>Definition.</strong> The <strong>fixed submodule</strong> of the involution is $V^{\sigma} = \{v \in V : \sigma v = v\}$, and the <strong>anti-fixed</strong> submodule is $V^{-\sigma} = \{v \in V : \sigma v = -v\}$. A vector in $V^{\sigma}$ is an <strong>invariant</strong>, or <strong>symmetric</strong>, vector, and a vector in $V^{-\sigma}$ is an <strong>anti-invariant</strong>, or <strong>antisymmetric</strong>, vector.</p>
+<p><strong>Theorem.</strong> If $2$ is invertible in $k$ then $V = V^{\sigma} \oplus V^{-\sigma}$, and the two summands are the images of the projections $(1 \pm \sigma)/2$. In every case $V^{\sigma}$ and $V^{-\sigma}$ are submodules, $\sigma$ acts as the identity on $V^{\sigma}$ and as the negation on $V^{-\sigma}$, and every element of $V^{-\sigma}$ has order dividing two when the ring has characteristic not two. If $2$ is not invertible the two submodules need not span $V$, and $V^{-\sigma}$ is then the fixed submodule of the involution $-\sigma$, which is also an involution in characteristic two.</p>
+<p><strong>Proof.</strong> The projections $(1\pm\sigma)/2$ are defined when two is invertible, they are idempotent and orthogonal, their sum is the identity, and their images are exactly $V^{\sigma}$ and $V^{-\sigma}$; the direct sum decomposition follows. The submodule statements hold in every characteristic because $\sigma$ is linear. In characteristic two the involution $-\sigma$ is $\sigma$, so the anti-fixed submodule is the fixed submodule.</p>
+<h3 id="operators-and-the-eigenspaces">Operators and the Eigenspaces</h3>
+<p><strong>Theorem.</strong> An equivariant operator preserves the fixed and the anti-fixed submodules: if $T\sigma = \sigma T$ then $T(V^{\sigma}) \subseteq V^{\sigma}$ and $T(V^{-\sigma}) \subseteq V^{-\sigma}$. Conversely, if $2$ is invertible and a linear operator preserves the two eigenspaces of $\sigma$, then it is equivariant. When $2$ is invertible, the algebra $\operatorname{End}_{k}(V)^{\sigma}$ of equivariant operators is the direct sum of the two endomorphism algebras of the eigenspaces,</p>
+<p>$$
+\operatorname{End}_{k}(V)^{\sigma} \;\cong\; \operatorname{End}_{k}(V^{\sigma}) \oplus \operatorname{End}_{k}(V^{-\sigma}),
+$$</p>
+<p>as algebras, and the fixed elements of the involution $\sigma$ are the elements of $V^{\sigma}$.</p>
+<p><strong>Proof.</strong> If $v \in V^{\sigma}$ then $\sigma(Tv) = T(\sigma v) = Tv$, so $Tv$ is fixed; the anti-fixed case is the same with the sign. Conversely an operator preserving the eigenspaces satisfies $T\sigma = \sigma T$ on each summand, hence on $V$. The algebra isomorphism sends an equivariant $T$ to the pair of its restrictions, which is injective and surjective by the eigenspace decomposition and the first statement; the last clause is the definition of the fixed submodule.</p>
+<p><strong>Corollary.</strong> For an equivariant operator $T$ the fixed elements of $T$ that are fixed by the involution are the solutions of $Tv = v$ within $V^{\sigma}$, and the fixed submodule $V^{\sigma}$ is preserved by $T$; the restriction of $T$ to the fixed submodule and to the anti-fixed submodule are the two components of the algebra isomorphism, and the trace of $T$ is the sum of the traces of the two components.</p>
+<p><strong>Proof.</strong> The restriction statements are the theorem; the trace statement is the additivity of the trace over a direct sum; the fixed elements of $T$ in $V^{\sigma}$ are the solutions of the equation $Tv = v$ there, which is the definition of a fixed element of $T$.</p>
+<h2 id="adjoints-and-equivariance">Adjoints and Equivariance</h2>
+<h3 id="the-adjoint-of-an-operator">The Adjoint of an Operator</h3>
+<p><strong>Definition.</strong> Let $b : V \times V \to k$ be a $k$-bilinear form, nondegenerate, and let $T \in \operatorname{End}_{k}(V)$. The <strong>adjoint</strong> of $T$ with respect to $b$ is the operator $T^{*}$ with</p>
+<p>$$
+b(Tv, w) = b(v, T^{*}w) \qquad (v, w \in V),
+$$</p>
+<p>which exists and is unique because $b$ is nondegenerate. The operator $T$ is <strong>self-adjoint</strong> when $T^{*} = T$, and <strong>skew-adjoint</strong> when $T^{*} = -T$; the involution $T \mapsto T^{*}$ is the <strong>adjoint operation</strong> of the form.</p>
+<p><strong>Theorem.</strong> The adjoint operation is additive and reverses the product,</p>
+<p>$$
+(S + T)^{*} = S^{*} + T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad \mathrm{id}^{*} = \mathrm{id},
+$$</p>
+<p>so it is an anti-automorphism of the algebra of operators. For a form that is $\varepsilon$-symmetric, $b(w,v) = \varepsilon\, b(v,w)$ with $\varepsilon = \pm 1$, the adjoint operation is an involution, $(T^{*})^{*} = T$. The self-adjoint and the skew-adjoint operators are the fixed and the anti-fixed parts of the adjoint operation when two is invertible.</p>
+<p><strong>Proof.</strong> The additivity is linearity of $b$ in the first variable; the reversal of the product is $b(STv,w) = b(Tv, S^{*}w) = b(v, T^{*}S^{*}w)$; the unit is the definition. For the double adjoint, the $\varepsilon$-symmetry gives $b(w,v) = \varepsilon\, b(v,w)$, so $b(T^{*}v,w) = \varepsilon\, b(w,T^{*}v) = \varepsilon\, b(Tw,v) = \varepsilon^{2}\, b(v,Tw) = b(v,Tw)$, using the defining relation $b(Tw,v) = b(w,T^{*}v)$ and the symmetry again; hence $(T^{*})^{*} = T$. The last clause is the eigenspace decomposition of an involution.</p>
+<h3 id="the-involution-and-the-adjoint">The Involution and the Adjoint</h3>
+<p><strong>Theorem.</strong> Let the form $b$ be preserved by the involution, $b(\sigma v, \sigma w) = b(v, w)$ for all $v, w$. Then the conjugation by $\sigma$ commutes with the adjoint operation:</p>
+<p>$$
+(\sigma T \sigma)^{*} = \sigma T^{*}\sigma \qquad (T \in \operatorname{End}_{k}(V)).
+$$</p>
+<p>Consequently an equivariant operator has an equivariant adjoint; the commutant of $\sigma$ is closed under the adjoint operation; and the self-adjoint and the skew-adjoint equivariant operators form the fixed and the anti-fixed parts of the adjoint operation on the commutant.</p>
+<p><strong>Proof.</strong> Using $b(\sigma u, \sigma w) = b(u,w)$, that is $b(\sigma u, w) = b(u, \sigma w)$ because $\sigma^{2} = \mathrm{id}$, compute</p>
+<p>$$
+b(\sigma T \sigma v, w) = b(T\sigma v, \sigma w) = b(\sigma v, T^{*}\sigma w) = b(v, \sigma T^{*}\sigma w),
+$$</p>
+<p>so that $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$. If $T$ is equivariant, $\sigma T\sigma = T$, and the identity gives $T^{*} = \sigma T^{*}\sigma$, that is, $T^{*}$ is equivariant. The last clause is the restriction of the adjoint operation to the commutant, which is well defined by the previous sentence.</p>
+<p><strong>Corollary.</strong> The two involutions of the operator algebra, the conjugation by $\sigma$ and the adjoint operation of an invariant form, commute; the group they generate is the four-element group of the Klein type when both are not the identity, and the operators that are both equivariant and self-adjoint are the common fixed points. An invertible equivariant operator has an equivariant inverse, because $\sigma T = T\sigma$ implies $\sigma T^{-1} = T^{-1}\sigma$; and an equivariant unitary operator satisfies $T^{*}T = TT^{*} = \mathrm{id}$, so on it the two structures agree.</p>
+<p><strong>Proof.</strong> The commutation is the displayed identity; the four-element group is generated by two commuting involutions, each of order two, acting on the operator algebra; the common fixed points are the equivariant self-adjoint operators. The statements about the inverse are the standard ones for a multiplicative anti-automorphism: if $T$ is invertible and equivariant then $T^{-1}$ commutes with $\sigma$ because $\sigma T^{-1} = T^{-1}\sigma$ follows from $\sigma T = T\sigma$ by inversion.</p>
+<p><strong>Example (the operators on the cohomology).</strong> Let $X$ be a space with a continuous involution $\sigma$, let $V = H^{*}(X;k)$ with the induced involution of <em>The Involution on the Cohomology Operators</em>, and let $b$ be the cup-product pairing of <em>Hermitian Pairings on a Topological Space</em>. Then the conjugation is the action $T \mapsto \sigma^{*}T\sigma^{*}$ on the cohomology operators, the equivariant operators are those commuting with $\sigma^{*}$, and the adjoint is taken with respect to the pairing; the theorem says that the commutant of $\sigma^{*}$ is closed under the adjoint of the pairing, which is the algebraic content of the equivariant pairing theory of the later articles.</p>
+<p><strong>Remark.</strong> The construction of this article is the operator layer of the involution alone; the fixed elements of the involution and the equivariant operators are the two halves of the layer, the first on the module and the second on its endomorphisms, and the adjoint is the second structure that the group asks for. The next articles specialise the module to the cohomology, where the equivariant operators are the operators of the cohomology theory and the adjoint is the pairing of Poincaré duality.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a module acts on its endomorphisms by conjugation, an algebra automorphism of order two whose fixed points are the equivariant operators, the operators commuting with the involution; the equivariant operators form a subalgebra, and over a ring in which two is invertible every operator has a unique decomposition into an equivariant and an anti-equivariant part. The fixed and the anti-fixed submodules of the involution decompose the module when two is invertible, an equivariant operator preserves both, and the algebra of equivariant operators is the direct sum of the endomorphism algebras of the two eigenspaces. The adjoint operation of a nondegenerate bilinear form is an anti-automorphism of the operator algebra, an involution for a symmetric or skew-symmetric form, whose fixed and anti-fixed parts are the self-adjoint and the skew-adjoint operators. For a form preserved by the involution the conjugation and the adjoint commute, $(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$, so the commutant of the involution is closed under the adjoint operation, an equivariant operator has an equivariant adjoint, and the two involutions generate a group of the Klein type acting on the operator algebra. The two structures of the layer — the involution on the operators and the adjoint of the form — are different, their compatibility is the theorem, and the module of the cohomology with the cup-product pairing is the example that the later articles develop.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V$, $\sigma$</td>
+<td>A $k$-module and an involution of it, $\sigma^{2} = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{k}(V)$</td>
+<td>The algebra of $k$-linear operators on $V$</td>
+</tr>
+<tr>
+<td>equivariant operator</td>
+<td>$T\sigma = \sigma T$; an operator commuting with the involution</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_{\sigma}(T) = \sigma T\sigma$</td>
+<td>The conjugation; an algebra automorphism of order two</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{k}(V)^{\sigma}$</td>
+<td>The commutant of $\sigma$; the equivariant operators</td>
+</tr>
+<tr>
+<td>$(T \pm \operatorname{Ad}_{\sigma}T)/2$</td>
+<td>The equivariant and anti-equivariant parts, two invertible</td>
+</tr>
+<tr>
+<td>$V^{\sigma}$, $V^{-\sigma}$</td>
+<td>Fixed and anti-fixed submodules; the eigenspaces of $\sigma$</td>
+</tr>
+<tr>
+<td>$V = V^{\sigma}\oplus V^{-\sigma}$</td>
+<td>The eigenspace decomposition, two invertible</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{k}(V)^{\sigma} \cong \operatorname{End}_{k}(V^{\sigma})\oplus\operatorname{End}_{k}(V^{-\sigma})$</td>
+<td>The commutant as a sum of endomorphism algebras</td>
+</tr>
+<tr>
+<td>$b$, $T^{*}$</td>
+<td>A nondegenerate bilinear form and the adjoint of $T$</td>
+</tr>
+<tr>
+<td>self-adjoint, skew-adjoint</td>
+<td>$T^{*} = T$, respectively $T^{*} = -T$</td>
+</tr>
+<tr>
+<td>$(\sigma T\sigma)^{*} = \sigma T^{*}\sigma$</td>
+<td>Compatibility of the conjugation with the adjoint</td>
+</tr>
+<tr>
+<td>unitary, $T^{*}T = TT^{*} = 1$</td>
+<td>An operator on which the two structures coincide</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for the algebra of endomorphisms, the conjugation by a unit and the eigenspace decomposition of an involution.</li>
+<li>Saunders Mac Lane and Garrett Birkhoff, <em>Algebra</em> (Macmillan, 1967; 3rd ed. Chelsea, 1988), for the structure of the commutant and the decomposition of an operator under an inner automorphism of order two.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1998), for bilinear forms, the adjoint anti-automorphism and the self-adjoint and skew-adjoint operators.</li>
+<li>Paul M. Cohn, <em>Algebra</em>, Vol. 2, 2nd ed. (Wiley, 1989), for the adjoint with respect to a form, the sesquilinear case and the unitary operators.</li>
+<li>Nathan Jacobson, <em>Lectures in Abstract Algebra</em>, Vol. II (Van Nostrand, 1953), for the endomorphism algebra of a module, the commutant and the double commutant.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the operators commuting with a group action and their role in equivariant topology.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

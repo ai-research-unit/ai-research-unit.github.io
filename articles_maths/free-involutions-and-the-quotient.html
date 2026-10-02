@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Involutions and the Quotient — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="free-involutions-and-the-quotient"><strong>Free Involutions and the Quotient</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a group always fixes the identity, and it is <strong>free</strong> when it fixes nothing else. A free involution generates an action of the two-element group on the underlying set whose orbits are all of size two, so the orbit space is a quotient over which the involution is invisible, and the projection is a two-to-one map. This article fixes the notion, constructs the quotient and the double cover, and treats the two standard instances: the inversion on a group with no element of order two, whose extension is dihedral, and the negation on the additive group of a field of characteristic not two. It is the third of the involutive <code>*</code>-articles; the involution, its fixed set, the associated involutive automorphism and the split extension are owned by <em>Involutive Groups</em>, and the action of a group on an involutive group by <em>Involutive Group Actions</em>.</p>
+<p>Throughout, $(G,\sigma)$ is an involutive group with $\sigma$ an anti-automorphism of order two, $\alpha=\sigma\iota$ is the associated involutive automorphism, $G^{\sigma}=\{g:\sigma(g)=g\}$ and $I(\sigma)=\{g:\sigma(g)=g^{-1}\}$ are the fixed and inverted sets, and $\iota$ is the inversion.</p>
+<h2 id="free-involutions-and-their-dual">Free Involutions and Their Dual</h2>
+<p><strong>Definition.</strong> The involution $\sigma$ is <strong>free</strong>, or <strong>fixed-point-free</strong>, if $G^{\sigma}=\{e\}$. The involutive automorphism $\alpha$ is <strong>free</strong> if $G^{\alpha}=\{e\}$.</p>
+<p><strong>Proposition (the two fixed sets in dual form).</strong> $G^{\sigma}=I(\alpha)$ and $G^{\alpha}=I(\sigma)$. Hence $\sigma$ is free if and only if $I(\alpha)=\{e\}$, and $\alpha$ is free if and only if $I(\sigma)=\{e\}$.</p>
+<p><strong>Proof.</strong> $g\in G^{\sigma}$ means $\sigma(g)=g$; applying $\iota$ and using $\alpha=\sigma\iota$ gives $\alpha(g)=g^{-1}$, that is $g\in I(\alpha)$. The second statement is the same with the roles of $\sigma$ and $\alpha$ exchanged, and the versions for freeness follow. Both identities are recorded in <em>Involutive Groups</em>, §4.</p>
+<p><strong>Remark (the two notions are dual and not equivalent).</strong> Freeness of $\sigma$ and freeness of $\alpha$ are different conditions, and neither implies the other. On the cyclic group $C_3=\langle r\rangle$ the inversion $\sigma=\iota$, which is an automorphism because $C_3$ is abelian, is free: $\sigma(r)=r^{-1}\neq r$ and $\sigma(r^{2})=r\neq r^{2}$. Its associated automorphism is $\alpha=\sigma\iota=\mathrm{id}$, which fixes every element and is as far from free as possible. So a free involution may have an associated automorphism that is not free. The asymmetry is exactly the asymmetry between the fixed and the inverted sets.</p>
+<p><strong>Proposition (the canonical free involution).</strong> The inversion $\iota$ is free if and only if $G$ has no element of order two; for a finite group this is the condition that $\lvert G\rvert$ is odd.</p>
+<p><strong>Proof.</strong> $\iota(g)=g$ is $g^{-1}=g$, that is $g^{2}=e$; so the fixed set of the inversion is the $2$-torsion of $G$, which is $\{e\}$ exactly when no element of order two exists. A finite group has an element of order two exactly when its order is even (Cauchy's theorem).</p>
+<p><strong>Proposition (the injectivity of the conjugate product).</strong> If $\sigma$ is free, the map</p>
+<p>$$
+\varphi : G\longrightarrow G, \qquad \varphi(g)=g^{-1}\sigma(g),
+$$</p>
+<p>is injective. If $G$ is finite it is therefore a bijection, and every element of $G$ is the conjugate product of a unique pair $(g^{-1},\sigma(g))$.</p>
+<p><strong>Proof.</strong> If $\varphi(g)=\varphi(h)$ then $g^{-1}\sigma(g)=h^{-1}\sigma(h)$, so $hg^{-1}=\sigma(h)\sigma(g)^{-1}=\sigma(hg^{-1})$, and $hg^{-1}\in G^{\sigma}$; freeness gives $hg^{-1}=e$ and $g=h$. Finiteness makes injective bijective.</p>
+<h2 id="the-quotient-and-the-double-cover">The Quotient and the Double Cover</h2>
+<p><strong>Definition.</strong> The <strong>orbit quotient</strong> of a free involution $\sigma$ is the set of orbits</p>
+<p>$$
+G/\langle\sigma\rangle = \{\,\{g,\sigma(g)\} : g\in G\,\} ,
+\qquad \pi : G\longrightarrow G/\langle\sigma\rangle, \quad \pi(g)=\{g,\sigma(g)\}.
+$$</p>
+<p><strong>Proposition (the projection is a double cover).</strong> The projection $\pi$ is surjective, every fibre has exactly two elements, and $\sigma$ is its nontrivial deck transformation: $\pi\sigma=\pi$ and $\sigma(g)\neq g$ for $g\neq e$. For finite $G$, $\lvert G/\langle\sigma\rangle\rvert=\lvert G\rvert/2$.</p>
+<p><strong>Proof.</strong> The fibre over $\{g,\sigma(g)\}$ is that orbit, of size two because $\sigma(g)=g$ forces $g=e$ and an orbit of a non-identity element has two members. And $\pi(\sigma(g))=\{\sigma(g),\sigma^{2}(g)\}=\{g,\sigma(g)\}=\pi(g)$. The count is the orbit-counting of a free action of a two-element group (<em>Transformation Groups</em>).</p>
+<p><strong>Proposition (the quotient is not a group in the natural way).</strong> For $G\neq\{e\}$ the quotient $G/\langle\sigma\rangle$ carries no group structure for which $\pi$ is a homomorphism.</p>
+<p><strong>Proof.</strong> A homomorphism with trivial kernel is injective: if $\pi(g)=\pi(h)$ then $\pi(gh^{-1})=\pi(g)\pi(h)^{-1}=e$, so $gh^{-1}\in\ker\pi=\{e\}$ and $g=h$. But $\pi$ is two-to-one on the non-identity elements, so it is not injective; no such group structure exists.</p>
+<p><strong>Definition.</strong> The quotient is the <strong>base</strong> and $\pi$ the <strong>double cover</strong>. The <strong>group-theoretic double cover</strong> attached to the involutive automorphism $\alpha$ is the split extension</p>
+<p>$$
+1\longrightarrow G\longrightarrow G\rtimes\langle t\rangle\longrightarrow \langle t\rangle\longrightarrow 1,
+\qquad t^{2}=e,
+$$</p>
+<p>of <em>Involutive Groups</em>, §9, a group of order $2\lvert G\rvert$ in which $G$ is normal of index two and conjugation by $t$ realises $\alpha$.</p>
+<p><strong>Remark (which involution is free).</strong> The set-theoretic quotient and double cover are built from the involution $\sigma$ and only need it to be an involution. The group-theoretic extension is built from the involutive automorphism $\alpha$, which is the datum that acts on $G$ by automorphisms; the two agree when $\sigma$ is itself an automorphism, that is when $G$ is abelian.</p>
+<h2 id="the-finite-case">The Finite Case</h2>
+<p><strong>Theorem.</strong> A finite abelian group admitting a free involutive automorphism is of odd order, and the automorphism is the inversion. Hence its group-theoretic double cover is the dihedral group of the group.</p>
+<p><strong>Proof.</strong> Let $G$ be finite abelian and $\alpha$ a free involutive automorphism. The map $\psi(g)=\alpha(g)g^{-1}$ is an endomorphism of $G$, and its kernel is $G^{\alpha}=\{e\}$; being injective on a finite group, it is bijective. Now</p>
+<p>$$
+\psi(\alpha(g))=\alpha^{2}(g)\alpha(g)^{-1}=g\,\alpha(g)^{-1}=\bigl(\alpha(g)g^{-1}\bigr)^{-1}=\psi(g)^{-1}=\psi(g^{-1}),
+$$</p>
+<p>so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}$ for every $g$. Finally $\alpha(g)=g^{-1}$ has fixed set the $2$-torsion, which is $\{e\}$ exactly when the order is odd.</p>
+<p><strong>Corollary (the general finite statement).</strong> A finite group admitting a free involutive automorphism is abelian of odd order with the inversion as the automorphism. The abelian case is proved above; the general case is a theorem of the finite-group literature and is stated here without proof.</p>
+<h2 id="the-standard-examples">The Standard Examples</h2>
+<p><strong>Example (the dihedral example).</strong> Let $G=C_n=\langle r\rangle$ with $n$ odd and let $\sigma=\iota$ be the inversion, which is an automorphism because $C_n$ is abelian and is free because $n$ is odd. The orbits are the pairs $\{r^{k},r^{-k}\}$, the quotient has $(n+1)/2$ elements, and the group-theoretic double cover is the dihedral group $D_n=C_n\rtimes C_2$ of <em>Involutive Groups</em>, §9, in which the complement acts by the inversion $r\mapsto r^{-1}$. In $D_n$ the rotations are the paired elements and the reflections are the added coset; the double cover $C_n\to C_n/\langle\iota\rangle$ is the shadow of the split extension on the underlying sets.</p>
+<p><strong>Example (the antipodal example).</strong> Let $F$ be a field of characteristic different from two and let $G=(F,+)$ be its additive group with $\sigma(x)=-x$. The involution is free, since $-x=x$ is $2x=0$ and $2$ is invertible in $F$; the orbits are the antipodal pairs $\{x,-x\}$, and the quotient has one point for each pair. The group-theoretic double cover is the semidirect product $F\rtimes C_2$ in which the complement acts by negation. Over a field of characteristic two the negation is the identity, which is not free, so freeness is a property of the pair (group, field) and not of the additive group alone.</p>
+<p><strong>Example (the infinite case).</strong> Let $G=(\mathbb{Z},+)$ with $\sigma(n)=-n$. The involution is free, the quotient has countably many pairs, and the extension is the infinite dihedral group $\mathbb{Z}\rtimes C_2$. The conjugate-product map of the first section is $\varphi(n)=-2n$ in additive notation, a bijection of $\mathbb{Z}$; the finite theorem does not apply, but the quotient and the double cover are constructed in the same way.</p>
+<p><strong>Remark (the two examples in one).</strong> The dihedral and antipodal examples are the same construction read on two free involutions: the inversion of a cyclic group of odd order, and the negation of the additive group of a field of characteristic different from two. Both are free, both give a two-to-one quotient, and both extend to a semidirect product by the two-element group; they differ in the size and in the nature of the group, one finite and cyclic, the other the additive group of a field.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution $\sigma$ of $G$ is <strong>free</strong> when $G^{\sigma}=\{e\}$, and the associated automorphism $\alpha=\sigma\iota$ is free when $G^{\alpha}=\{e\}$; by the dual identities $G^{\sigma}=I(\alpha)$ and $G^{\alpha}=I(\sigma)$ the two notions are the vanishing of the two inverted sets, and neither implies the other, as $C_3$ with its free inversion and its identity automorphism shows. The canonical free involution is the inversion on a group with no element of order two; on a finite group this is odd order.</p>
+<p>A free involution generates a free action of the two-element group on the underlying set, so every orbit has two elements and the <strong>orbit quotient</strong> $G/\langle\sigma\rangle$ is a set with a <strong>two-to-one projection</strong> $\pi$, the <strong>double cover</strong>, whose nontrivial deck transformation is $\sigma$ and whose cardinality is $\lvert G\rvert/2$ for finite $G$. The projection carries no group structure, because a homomorphism with trivial kernel is injective and $\pi$ is two-to-one. The group-theoretic double cover uses the involutive automorphism $\alpha$ and is the split extension $G\rtimes C_2$ of <em>Involutive Groups</em>, §9.</p>
+<p>A finite abelian group with a free involutive automorphism has odd order and the automorphism is the inversion, the abelian case being proved by the bijectivity of $g\mapsto\alpha(g)g^{-1}$; the general finite case, without the abelian hypothesis, is a theorem of the literature. The standard free involutions are the inversion of a cyclic group of odd order, whose extension is the dihedral group, and the negation of the additive group of a field of characteristic different from two, the antipodal involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>free, $G^{\sigma}=\{e\}$</td>
+<td>the involution fixes only the identity</td>
+</tr>
+<tr>
+<td>$G^{\sigma}=I(\alpha)$</td>
+<td>dual identity for the fixed and inverted sets</td>
+</tr>
+<tr>
+<td>$\varphi(g)=g^{-1}\sigma(g)$</td>
+<td>injective map of a free involution</td>
+</tr>
+<tr>
+<td>$G/\langle\sigma\rangle$</td>
+<td>orbit quotient, the base of the double cover</td>
+</tr>
+<tr>
+<td>$\pi(g)=\{g,\sigma(g)\}$</td>
+<td>two-to-one projection, the double cover</td>
+</tr>
+<tr>
+<td>$\lvert G/\langle\sigma\rangle\rvert=\lvert G\rvert/2$</td>
+<td>orbit count for a finite free involution</td>
+</tr>
+<tr>
+<td>$G\rtimes C_2$</td>
+<td>group-theoretic double cover, the split extension</td>
+</tr>
+<tr>
+<td>$\psi(g)=\alpha(g)g^{-1}$</td>
+<td>bijective endomorphism proving $\alpha=\iota$ in the abelian case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for free actions, orbit counting and the dihedral and infinite dihedral groups.</li>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for fixed-point-free automorphisms and the structure they force.</li>
+<li>Daniel Gorenstein, <em>Finite Groups</em> (Harper and Row, 1968), for the theorem that a finite group with a fixed-point-free automorphism of order two is abelian.</li>
+<li>John D. Dixon and Brian Mortimer, <em>Permutation Groups</em> (Springer, Graduate Texts in Mathematics 163, 1996), for free permutation actions and their quotients.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions and their quotients.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

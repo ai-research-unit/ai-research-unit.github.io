@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Hecke Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-hecke-operator"><strong>The Adjoint of the Hecke Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hecke operator $T_n$ acts on the space of cusp forms of weight $k$ and level $N$, and the space carries the Petersson inner product, which is the Hermitian form of this article. The operator is normal, and the whole spectral theory of the Hecke eigenforms rests on that fact; the adjoint $T_n^*$ is again a Hecke operator when $\gcd(n,N)=1$, and it is exactly of the ramified type when $\gcd(n,N)>1$. This article defines the operators, computes the adjoint with respect to the Petersson form, states the self-adjointness criterion, and records the failure of the criterion for the ramified operators $U_p$. The coefficient form on the $q$-expansion is the form of the category, and the comparison between the two forms is <em>Multiplication Operators on an L-Function</em>; the conjugate symmetry is <em>The Conjugate Symmetry of the Hecke Operator</em>. Nothing here reads a distance as an object.</p>
+<h2 id="the-petersson-form-and-the-hecke-operators">The Petersson Form and the Hecke Operators</h2>
+<h3 id="the-form">The form</h3>
+<p><strong>Definition.</strong> The <strong>Petersson inner product</strong> on the space $\mathcal{S}_k(\Gamma_0(N))$ of cusp forms is
+$$
+\langle f,g\rangle=\int_{\Gamma_0(N)\backslash\mathfrak{H}}f(z)\overline{g(z)}\,y^{k}\,\frac{dx\,dy}{y^2},\qquad z=x+iy ,
+$$
+and the <strong>Petersson norm</strong> is $\|f\|^2=\langle f,f\rangle$.</p>
+<p><strong>Theorem.</strong> The Petersson form is a positive definite Hermitian form on $\mathcal{S}_k(\Gamma_0(N))$; it is invariant under the action of $\mathrm{SL}_2(\mathbb{Z})$ by the slash operator, and the space is a finite-dimensional Hilbert space with this form.</p>
+<p><strong>Proof.</strong> The integrand is invariant under $\Gamma_0(N)$ because the factor $y^k$ compensates the automorphy factors of weight $k$; the integral converges absolutely because $f$ and $g$ are cuspidal, and it is positive definite because the integrand is $|f|^2y^k>0$ off the zeros. This is the standard Petersson theory of <em>Modular Forms</em>.</p>
+<h3 id="the-operators">The operators</h3>
+<p><strong>Definition.</strong> For $n\ge1$ the <strong>Hecke operator</strong> is
+$$
+(T_nf)(z)=n^{k-1}\sum_{d\mid n}d^{-k}\sum_{b\bmod d}f\!\Bigl(\frac{nz+b}{d}\Bigr),
+$$
+and on the $q$-expansion $f=\sum_{m\ge1}a_mq^m$ it acts by
+$$
+T_nf=\sum_{m\ge1}\Bigl(\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}\Bigr)q^m .
+$$
+For $p\mid N$ the operator is written $U_p$ and for $p\nmid N$ the operator $T_p$ is the <strong>good Hecke operator</strong>.</p>
+<p><strong>Theorem.</strong> The operators $T_n$ preserve $\mathcal{S}_k(\Gamma_0(N))$, they commute pairwise, and they are multiplicative in $n$: $T_{mn}=T_mT_n$ for $\gcd(m,n)=1$. They preserve the space of newforms and the space of oldforms separately when $\gcd(n,N)=1$.</p>
+<p><strong>Proof.</strong> The action on the $q$-expansion is the classical formula, in <em>Modular Forms</em>; the commutativity and the multiplicativity follow from the double-coset computation and the moduli interpretation of the Hecke correspondence, and the newform statement is the Atkin–Lehner theory.</p>
+<h2 id="the-adjoint">The Adjoint</h2>
+<h3 id="the-formula">The formula</h3>
+<p><strong>Theorem (the adjoint).</strong> Let $\gcd(n,N)=1$. With respect to the Petersson form and the Fricke involution $w_N$,
+$$
+T_n^*=w_N^{-1}T_nw_N=w_NT_nw_N ,
+$$
+and $T_n$ is normal, $T_nT_n^*=T_n^*T_n$. In particular $T_n^*=T_n$ for $\gcd(n,N)=1$ on the whole space when the Fricke involution acts trivially on the space, and always on the subspace of the forms fixed by $w_N$.</p>
+<p><strong>Proof.</strong> The adjoint is computed from the definition by the change of variable $z\mapsto-1/(Nz)$ implementing the Fricke involution; the conjugation by $w_N$ inverts the double coset, and the double coset of $T_n$ is its own inverse under the transpose when $\gcd(n,N)=1$, so the conjugation is the identity on the operator. This is the standard computation of <em>Modular Forms</em> and <em>Hecke Algebras</em>.</p>
+<p><strong>Corollary (self-adjointness and normality).</strong> For $\gcd(n,N)=1$ the operator $T_n$ is self-adjoint on the space of cusp forms when $N=1$ or when $T_n$ is restricted to the $w_N$-fixed part; in general $T_n$ is normal, hence diagonalisable with an orthonormal basis of eigenforms, and its eigenvalues are real on the self-adjoint subspace.</p>
+<p><strong>Proof.</strong> The normality is from the theorem; a normal operator on a finite-dimensional Hilbert space is unitarily diagonalisable, and a self-adjoint operator has real eigenvalues, by <em>Spectral Theory</em>.</p>
+<h3 id="the-ramified-case">The ramified case</h3>
+<p><strong>Theorem.</strong> For $p\mid N$ the operator $U_p$ is not self-adjoint and not normal in general; its adjoint is
+$$
+U_p^*=w_N^{-1}\widetilde{U}_p\,w_N ,
+$$
+where $\widetilde U_p$ is the Hecke operator of the dual double coset, and the deviation from self-adjointness is measured by the Atkin–Lehner theory. On the newforms of level $N$ the operator $U_p$ has the eigenvalue $a_p$ with $|a_p|\le2p^{(k-1)/2}$ in the analytic normalisation.</p>
+<p><strong>Proof.</strong> The double coset of $U_p$ is not symmetric because $p\mid N$; the conjugation by the Fricke involution replaces the coset by its adjoint, which is a different operator. The eigenvalue bound is the Deligne bound, in <em>Modular Forms</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($N=1$, $k=12$).</strong> The space $\mathcal{S}_{12}(\mathrm{SL}_2(\mathbb{Z}))$ is one-dimensional, spanned by $\Delta$, and $T_n\Delta=\tau(n)\Delta$ with the Ramanujan function; the operator is self-adjoint and the eigenvalues $\tau(n)$ are real.</p>
+<p><strong>Example ($N=p$, $k=2$).</strong> The Atkin–Lehner involution $w_p$ acts on $\mathcal{S}_2(\Gamma_0(p))$ with the $+1$ and $-1$ eigenspaces; the operator $U_p$ is self-adjoint on neither, and its adjoint is $w_p^{-1}U_pw_p$, which is a different operator; the newforms of level $p$ are the eigenvectors of the good $T_n$.</p>
+<p><strong>Example (the Eisenstein series).</strong> On the noncuspidal Eisenstein series the Petersson integral diverges, so the form of the article is not defined and the adjoint computation is replaced by the constant-term pairing; the operator on the Eisenstein part is not the topic of this article.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The adjoint theory of the Hecke operators fails in four degenerate configurations. First, for $p\mid N$ the operator $U_p$ is not normal, so it need not be diagonalisable, and the spectral theorem does not apply; its eigenvalue spectrum is the spectrum of a nonnormal operator, and the eigenforms need not be orthogonal. Second, the Petersson form is not invariant under $\mathrm{SL}_2(\mathbb{Z})$ when the weight is odd, and the space of cusp forms of odd weight and level $N$ has a different structure; the adjoint must be computed with the modified form. Third, the new/old decomposition is preserved by the good Hecke operators but not by the ramified ones, so the adjoint of $U_p$ mixes the new and the old parts; the operator is not block diagonal. Fourth, on the larger space of all modular forms, including the Eisenstein series, the Petersson form diverges and the adjoint is not defined; the theory of the article is the cuspidal theory. These are the boundary cases of the adjoint of the Hecke operator.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hecke operator $T_n$ acting on the cusp forms of weight $k$ and level $N$ is normal for $\gcd(n,N)=1$, with adjoint $T_n^*=w_N^{-1}T_nw_N$ computed from the Petersson inner product; it is self-adjoint on the $w_N$-fixed part and on the level-one space, so the eigenvalues of the eigenforms are real and the eigenforms form an orthonormal basis. For $p\mid N$ the operator $U_p$ is neither self-adjoint nor normal, its adjoint is the conjugate by the Fricke involution of the dual Hecke operator, and the new/old decomposition is mixed. The degenerate cases are the ramified operators, the odd weight, the noncuspidal Eisenstein series and the mixing of the new and the old parts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{S}_k(\Gamma_0(N))$</td>
+<td>Space of cusp forms</td>
+</tr>
+<tr>
+<td>$\langle f,g\rangle$</td>
+<td>Petersson inner product</td>
+</tr>
+<tr>
+<td>$T_n$</td>
+<td>Hecke operator, $\gcd(n,N)=1$</td>
+</tr>
+<tr>
+<td>$U_p$</td>
+<td>Ramified operator, $p\mid N$</td>
+</tr>
+<tr>
+<td>$w_N$</td>
+<td>Fricke involution</td>
+</tr>
+<tr>
+<td>$T_n^*=w_N^{-1}T_nw_N$</td>
+<td>The adjoint</td>
+</tr>
+<tr>
+<td>$T_nT_n^*=T_n^*T_n$</td>
+<td>Normality</td>
+</tr>
+<tr>
+<td>$T_n^*=T_n$</td>
+<td>Self-adjointness</td>
+</tr>
+<tr>
+<td>$a_p$</td>
+<td>Hecke eigenvalue</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Martin Eichler, <em>Introduction to the Theory of Algebraic Numbers and Functions</em> (Academic Press, 1966), for the Hecke operators and their matrices.</li>
+<li>Goro Shimura, <em>Introduction to the Arithmetic Theory of Automorphic Functions</em> (Princeton University Press, 1971), for the Petersson form and the adjoint.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the Hecke operators in the $q$-expansion.</li>
+<li>Wilfred Kohnen and Don Zagier, <em>Modular Forms with Rational Periods</em> (Academic Press, 1981), for the newforms and the adjoint operators.</li>
+<li>Fred Diamond and Jerry Shurman, <em>A First Course in Modular Forms</em> (Springer, 2005), for a modern treatment of the Hecke operators and the Petersson form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Symmetry Group of a Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-symmetry-group-of-a-space"><strong>The Involution on the Symmetry Group of a Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involution</strong> of a symmetry group is an automorphism of order two, $\sigma : G \to G$ with $\sigma^2 = \mathrm{id}$, and it is the structure of the group <code>- * Theory</code> of this category: the group is read together with an involution on its <strong>elements</strong>. When the group acts on a space, the involution induces a map of the space — the action of $\sigma$ transported through the action — and that induced map is again an involution, an isometry when $\sigma$ preserves the chosen form, whose fixed points are the geometric trace of the group involution. The base point of a symmetric space is the fixed point of the geodesic symmetry, the real points of a complex space are the fixed points of the conjugation, and in each case the fixed set is a totally geodesic subspace of the space the group acts on. The article reads the involution at the group level and follows it to the space.</p>
+<p>The article treats the involution on the symmetry group, the induced action on the space, the fixed points of the induced map and the fixed subgroup with its action on the fixed set. The group-level involution, the fixed-point subgroup and the involutive action are <em>Involutions and the Fixed-Point Subgroup</em>, <em>Involutive Groups</em>, <em>The Fixed-Point Subgroup of a Continuous Involution</em> and <em>Involutive Group Actions on a Space</em>, in Parts I and II, and are cited, not restated; the homogeneous space and the isotropy representation are <em>Transformation Groups</em>; the symmetric space, the symmetric pair, the Cartan involution and the geodesic symmetry are <em>Riemannian Symmetric Spaces and the Involution</em>; the fixed-point set of an isometric involution on a Riemannian manifold, its totally geodesic components and the real structures are <em>Isometric Involutions and the Fixed-Point Set</em>, <em>Isometric Involutions and the Two-Fold Quotient of a Riemannian Manifold</em> and <em>Real Structures on a Riemannian Manifold</em>, in <em>Foundations of Geometry</em>, and <em>Hermitian Manifolds and the Geodesic Involution</em>; the unitary and orthogonal involutions are the previous articles of this group. The <strong>adjoint</strong> of an operator, which the involution defines, is the group <code>- * Operator Theory</code> and is not taken here.</p>
+<p>The article has five sections: the involution on the symmetry group; the induced action on the space; the fixed points; the fixed subgroup and the coset space; and the worked cases. Throughout, $G$ is a symmetry group of a space $X$ with a chosen distance or form, $\sigma$ an involutive automorphism of $G$ preserving the chosen structure, and $G^{\sigma} = \{g : \sigma(g) = g\}$ the fixed-point subgroup.</p>
+<h2 id="the-involution-on-a-symmetry-group">The Involution on a Symmetry Group</h2>
+<h3 id="the-involutive-automorphism">The Involutive Automorphism</h3>
+<p><strong>Definition.</strong> An <strong>involution</strong> of the group $G$ is an automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$; its <strong>fixed-point subgroup</strong> is $G^{\sigma} = \{g \in G : \sigma(g) = g\}$, and the pair $(G, \sigma)$ is an <strong>involutive group</strong>. The involution is <strong>inner</strong> when $\sigma = \operatorname{Ad}(h)$ for some $h \in G$, and <strong>central</strong> when $h$ lies in the centre.</p>
+<p><strong>Proposition.</strong> The fixed-point subgroup $G^{\sigma}$ is a subgroup of $G$, closed when $\sigma$ is continuous; the map $g \mapsto g\,\sigma(g)^{-1}$ is a crossed homomorphism whose image is the set of elements reversed by $\sigma$, and the set of elements with $\sigma(g) = g^{-1}$ is the <strong>symmetric set</strong> $\{g : g\sigma(g) = e\}$. The involution is determined by its fixed subgroup together with its action on a complement, and every involution of $G$ gives an involutive action of $G$ on itself, <em>Involutions and the Fixed-Point Subgroup</em> and <em>Involutive Groups</em>.</p>
+<p><strong>Proof.</strong> The fixed set of an automorphism is a subgroup; the crossed-homomorphism property is $g\sigma(g)^{-1}\cdot \sigma(g)\sigma^2(g)^{-1}$ computed with $\sigma^2 = \mathrm{id}$; the remaining statements are the elementary theory of the Part I articles, cited.</p>
+<h3 id="examples-of-involutions">Examples of Involutions</h3>
+<p><strong>Example (the Cartan involution).</strong> For the unitary group $U(p,q)$ the involution $\theta(g) = JgJ^{-1}$ has fixed subgroup $K = U(p)\times U(q)$ and is central when $J$ is central for the pair; it is the Cartan involution, <em>Unitary Groups and Their Involution</em>, and its analogue for the orthogonal group is <em>The Orthogonal Group and the Involutive Automorphism</em>, the previous article.</p>
+<p><strong>Example (the conjugation of a real structure).</strong> For the complex general linear group with the conjugating involution $\sigma(g) = \overline{g}$ of the matrix entries, the fixed subgroup is $GL_n(\mathbb{R})$, the <strong>real points</strong>; the general theory of the fixed subgroup here is Part I, and the geometric reading is the real forms of <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>.</p>
+<p><strong>Example (the grading involution).</strong> For a graded group the grade involution $\alpha(g) = \varepsilon(g)g$ is an involutive automorphism with fixed subgroup the even part $G_0$, <em>The Signed Sandwich on a Symmetry Group</em>; it is distinct from the Cartan involution, and the two together generate the Hermitian conjugation of the Clifford algebra there.</p>
+<p><strong>Remark.</strong> An involution is a property of the <strong>elements</strong> of $G$, not of the operators on $G$. The distinction is the whole sense of the group <code>- * Theory</code>: the same underlying group carries many involutions, and the involution chosen — the form, the real structure, the grading — is what determines the geometry.</p>
+<h2 id="the-induced-action-on-the-space">The Induced Action on the Space</h2>
+<h3 id="the-involution-on-a-homogeneous-space">The Involution on a Homogeneous Space</h3>
+<p><strong>Definition.</strong> Let $X = G/K$ be a homogeneous space for the symmetry group $G$, and let $\sigma$ be an involution of $G$ with $\sigma(K) = K$. The <strong>induced involution</strong> on $X$ is</p>
+<p>$$
+\sigma_X : X \longrightarrow X, \qquad \sigma_X(gK) = \sigma(g)K .
+$$</p>
+<p><strong>Proposition.</strong> The induced map $\sigma_X$ is well defined, it is a bijection of $X$ with $\sigma_X^2 = \mathrm{id}$, and it fixes the base point $o = eK$; it is the unique map of $X$ making the projection $G \to G/K$ equivariant for $\sigma$ on the group and $\sigma_X$ on the space. When $X$ carries the chosen form and $\sigma$ preserves it, $\sigma_X$ is an isometry of $X$.</p>
+<p><strong>Proof.</strong> If $gK = g'K$ then $g' = gk$ with $k \in K$, so $\sigma(g') = \sigma(g)\sigma(k) \in \sigma(g)K$ by $\sigma(K) = K$, and the value is well defined; $\sigma_X^2(gK) = \sigma^2(g)K = gK$; the base point is fixed because $\sigma(e) = e$. The equivariance is the definition, and the isometry statement is that $\sigma$ preserves the form, hence carries the isometry group into itself and the orbit metric into itself.</p>
+<h3 id="the-differential-at-the-base-point">The Differential at the Base Point</h3>
+<p><strong>Proposition.</strong> When $\sigma(K) = K$, the differential of $\sigma_X$ at $o$ is the restriction to $\mathfrak{p} = T_oX$ of $d\sigma$, the differential of the involution at the identity, and $d\sigma$ acts by $+1$ on $\mathfrak{k} = \mathrm{Lie}\,K$ and $-\mathrm{id}$ on $\mathfrak{p}$ when $\sigma$ is a Cartan involution; in general the differential is the linear map induced by $d\sigma$ on the quotient $\mathfrak{g}/\mathfrak{k}$, which is an involution of $\mathfrak{p}$.</p>
+<p><strong>Proof.</strong> The differential of $\sigma_X$ at $o$ is the map induced by $d\sigma$ on $\mathfrak{g}/\mathfrak{k}$; for a Cartan involution the Lie algebra splits into the $\pm1$-eigenspaces $\mathfrak{k}$ and $\mathfrak{p}$, so the induced map is $-\mathrm{id}$ on $\mathfrak{p}$, <em>Riemannian Symmetric Spaces and the Involution</em>. This is the sense in which the involution $\sigma$ is the "reflection" of the space at the base point.</p>
+<h2 id="the-fixed-points-of-the-induced-involution">The Fixed Points of the Induced Involution</h2>
+<h3 id="the-fixed-set">The Fixed Set</h3>
+<p><strong>Definition.</strong> The <strong>fixed-point set</strong> of the induced involution is</p>
+<p>$$
+X^{\sigma} = \{x \in X : \sigma_X(x) = x\} = \{gK : g^{-1}\sigma(g) \in K\},
+$$</p>
+<p>the set of points fixed by $\sigma_X$.</p>
+<p><strong>Theorem (the fixed set is totally geodesic).</strong> Let $X$ be a Riemannian manifold and $\sigma_X$ an involutive isometry. Then each connected component of the fixed-point set $X^{\sigma}$ is a <strong>totally geodesic submanifold</strong> of $X$: a geodesic tangent to $X^{\sigma}$ at a point lies entirely in $X^{\sigma}$, and the component through a fixed point is the geodesic saturation of its tangent space. The map $\sigma_X$ is determined in a neighbourhood of each component by its action on the normal bundle, and the component is the fixed set of the linear involution $d\sigma_X$ on the tangent space at a fixed point.</p>
+<p><strong>Proof.</strong> Let $x \in X^{\sigma}$ and let $\gamma$ be the geodesic with $\gamma(0) = x$ and $\dot\gamma(0) \in T_xX^{\sigma}$. The isometry $\sigma_X$ fixes $x$ and its differential fixes $\dot\gamma(0)$, so $\sigma_X\circ\gamma$ is the geodesic with the same initial point and velocity, hence equals $\gamma$; therefore $\gamma$ lies in $X^{\sigma}$ and $X^{\sigma}$ is totally geodesic. The rest is the exponential map and the linearisation. This is <em>Isometric Involutions and the Fixed-Point Set</em>, in <em>Foundations of Geometry</em>.</p>
+<p><strong>Corollary.</strong> The fixed set $X^{\sigma}$ is a disjoint union of totally geodesic submanifolds, one through each of its points; at a fixed point $x$ the tangent space $T_xX^{\sigma}$ is the $+1$-eigenspace of $d\sigma_X$ acting on $T_xX$, and the normal space is the $(-1)$-eigenspace.</p>
+<p><strong>Proof.</strong> The tangent space of the fixed set is the fixed space of the differential, a linear involution; the connected component is the image under the exponential map of the fixed subspace, by the theorem, and distinct components correspond to the distinct fixed points modulo the geodesic saturation.</p>
+<h3 id="the-real-points">The Real Points</h3>
+<p><strong>Proposition.</strong> Let $X = G/K$ be the complex Grassmannian with the conjugation of a real structure, that is, the involution of $G$ induced by the complex conjugation of the matrix entries. Then the fixed set $X^{\sigma}$ is the <strong>real Grassmannian</strong>, the manifold of real $q$-planes of $\mathbb{R}^{p+q}$, identified with $O(p+q)/(O(p)\times O(q))$, and the inclusion is totally geodesic; the complexification of the fixed set is $X$ itself.</p>
+<p><strong>Proof.</strong> A complex $q$-plane is fixed by the conjugation exactly when it has a basis of real vectors, so the fixed set is the set of real $q$-planes; the real Grassmannian is the compact dual of <em>The Orthogonal Group and the Involutive Automorphism</em>, and its inclusion is totally geodesic by the general theorem. This is the geometric content of the real form: the real points of the complex space.</p>
+<p><strong>Remark.</strong> The fixed set is the geometric realisation of the <strong>fixed subgroup</strong>: for the conjugation the fixed subgroup is the real form of the group, and the fixed set of the induced involution is the corresponding real form of the space. The two are the group-level and the space-level readings of the same involution.</p>
+<h2 id="the-fixed-subgroup-and-the-coset-space">The Fixed Subgroup and the Coset Space</h2>
+<p><strong>Proposition.</strong> The fixed subgroup $G^{\sigma}$ acts on the fixed set $X^{\sigma}$, and the action makes each connected component of $X^{\sigma}$ a homogeneous space for the identity component of $G^{\sigma}$. When $X = G/K$ is a symmetric space and $\sigma$ is its Cartan involution, $G^{\sigma} = K$ and the induced map is the <strong>geodesic symmetry</strong> at the base point, $s_o(gK) = \theta(g)K$; conversely every symmetric space arises this way from its Cartan involution, so the symmetric spaces of a symmetry group are exactly the coset spaces of its involutions.</p>
+<p><strong>Proof.</strong> The fixed subgroup preserves the fixed set because $\sigma_X(g\cdot x) = \sigma(g)\cdot\sigma_X(x) = g\cdot x$ for $g \in G^{\sigma}$ and $x \in X^{\sigma}$; for the Cartan involution the fixed subgroup is $K$ by definition and the induced map is $gK \mapsto \theta(g)K = s_o(gK)$; the converse is the general construction of a symmetric space from a symmetric pair, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<p><strong>Proposition (the base point and the isolated case).</strong> The base point $o$ is fixed by $\sigma_X$; when $X$ is a symmetric space of noncompact type and $\sigma_X$ is the geodesic symmetry at $o$, the fixed set is the single point $\{o\}$, the exponential map being a diffeomorphism and the geodesic symmetry reversing every geodesic through $o$; for a symmetric space of compact type the fixed set may be larger, and for the round sphere it is the equator.</p>
+<p><strong>Proof.</strong> For a fixed point $y \neq o$ of a geodesic symmetry at $o$, the geodesic $\gamma$ through $o$ and $y$ is reversed by $\sigma_X$, so $\gamma(d)$ maps to $\gamma(-d)$ with $o = \gamma(0)$; a fixed point $y = \gamma(d)$ would need $\gamma(-d) = \gamma(d)$, which forces $d = 0$ in a noncompact symmetric space, where the geodesic is injective. On the round sphere $S^n$ the geodesic symmetry at the pole is the reflection in the equator, whose fixed set is the equator $S^{n-1}$, a totally geodesic hypersurface.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the sphere).</strong> Let $S^n = SO(n+1)/SO(n)$ with the involution $\theta(g) = I_{1,n}gI_{1,n}^{-1}$, $I_{1,n} = \operatorname{diag}(-1,I_n)$; the fixed subgroup is $SO(n)$, the induced map is the reflection in the equator, $\sigma_X(x) = -I_{1,n}x$, and its fixed set is the equator $S^{n-1}$, a totally geodesic submanifold. The equator is the symmetric subspace $SO(n)/SO(n-1)$, and the example shows that the fixed set of an isometric involution can be a whole submanifold.</p>
+<p><strong>Example (the Cartan involution).</strong> Let $X = U(p,q)/(U(p)\times U(q))$ with the Cartan involution $\theta(g) = JgJ^{-1}$; the induced map is the geodesic symmetry $s_o$, the fixed set is the single point $\{o\}$, and the fixed subgroup is $K = U(p)\times U(q)$. The example is the noncompact case, where the geodesic symmetry has the isolated fixed point the symmetric space is built on.</p>
+<p><strong>Example (the complex conjugation).</strong> Let $X = SU(p,q)/S(U(p)\times U(q))$ with the conjugation of a real structure; the fixed set is the real Grassmannian of negative $q$-planes, a totally geodesic submanifold of the complex symmetric space, and the fixed subgroup is the real form $SO(p,q)$ of $SU(p,q)$. The induced involution is the <strong>real structure</strong> of the space, and its fixed set is the real locus.</p>
+<p><strong>Example (an inner involution).</strong> Let $z$ be an element of the centre of the isotropy of a symmetric pair, so that the Cartan involution is $\theta = \operatorname{Ad}(z)$; this is the Hermitian case of <em>Hermitian Symmetric Spaces and the Group Involution</em>. The induced involution on $X = G/K$ is then the action of the element $z$ itself, and it is the rotation by $\pi$ in the invariant complex structure: the geodesic symmetry of a Hermitian symmetric space is the action of the central element, so the involution on the elements is realised by a single element of the group, and its fixed set is the base point.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a symmetry group is an automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$ and fixed-point subgroup $G^{\sigma}$; it is the structure of the group <code>- * Theory</code>, an involution on the elements of the group. When $G$ acts on a homogeneous space $X = G/K$ and $\sigma(K) = K$, the involution induces a map $\sigma_X(gK) = \sigma(g)K$, which is an involution of $X$, fixes the base point, and is an isometry when $\sigma$ preserves the chosen form; its differential at the base point is the map induced by $d\sigma$ on $\mathfrak{p} = T_oX$, equal to $-\mathrm{id}$ for a Cartan involution. The fixed-point set $X^{\sigma}$ is a union of totally geodesic submanifolds, the $+1$-eigenspace of $d\sigma_X$ giving the tangent space at each fixed point; for the conjugation of a real structure the fixed set is the real Grassmannian, for the Cartan involution of a noncompact symmetric space it is the single base point, and for the round sphere it is the equator. The fixed subgroup $G^{\sigma}$ acts on $X^{\sigma}$, and the symmetric spaces of the group are exactly the coset spaces of its involutions, the geodesic symmetry being $s_o(gK) = \sigma(g)K$; the fixed set of the induced involution is the geometric trace of the involution on the elements. The manifold-level theory of the fixed set is <em>Isometric Involutions and the Fixed-Point Set</em>, in <em>Foundations of Geometry</em>; no adjoint is taken.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>an involution of the symmetry group, $\sigma^2 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$G^{\sigma}$</td>
+<td>the fixed-point subgroup of the involution</td>
+</tr>
+<tr>
+<td>$X = G/K$</td>
+<td>the homogeneous space the group acts on</td>
+</tr>
+<tr>
+<td>$\sigma_X(gK) = \sigma(g)K$</td>
+<td>the induced involution on the space</td>
+</tr>
+<tr>
+<td>$o = eK$</td>
+<td>the base point, fixed by $\sigma_X$</td>
+</tr>
+<tr>
+<td>$X^{\sigma}$</td>
+<td>the fixed-point set; a union of totally geodesic submanifolds</td>
+</tr>
+<tr>
+<td>$d\sigma_X$</td>
+<td>the differential; $-\mathrm{id}$ on $\mathfrak{p}$ for a Cartan involution</td>
+</tr>
+<tr>
+<td>$s_o$</td>
+<td>the geodesic symmetry, $s_o(gK) = \theta(g)K$</td>
+</tr>
+<tr>
+<td>$\theta(g) = JgJ^{-1}$</td>
+<td>the Cartan involution of a classical group</td>
+</tr>
+<tr>
+<td>$\overline{g}$</td>
+<td>the conjugation of a real structure; fixed subgroup the real form</td>
+</tr>
+<tr>
+<td>$\alpha(g) = \varepsilon(g)g$</td>
+<td>the grade involution of a graded group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the involution of a symmetric pair, the geodesic symmetry and the fixed sets.</li>
+<li>Shoshichi Kobayashi, <em>Transformation Groups in Differential Geometry</em> (Springer, 1972), for the fixed-point set of an isometric involution and the totally geodesic components.</li>
+<li>Armand Borel, <em>Semisimple Groups and Riemannian Symmetric Spaces</em> (Hindustan Book Agency, 1998), for the correspondence between the involutions of a group and the symmetric spaces.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (American Mathematical Society, sixth edition, 2011), for the symmetric spaces, their symmetric subspaces and the fixed sets of the geodesic symmetries.</li>
+<li>Marcel Berger, <em>A Panoramic View of Riemannian Geometry</em> (Springer, 2003), for the fixed-point sets of involutions and their role in the geometry of the symmetric spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

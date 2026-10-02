@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Local Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-local-fields"><strong>Involutive Local Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A local field is a field that is locally compact and non-discrete for a topology making it a topological field — the archimedean fields $\mathbb{R}$ and $\mathbb{C}$ and the non-archimedean fields that are finite extensions of $\mathbb{Q}_p$ or of the Laurent series field $\mathbb{F}_q((t))$. An involutive local field is a local field with an involution, and on a local field the isometry hypothesis is automatic: the topology is the unique non-discrete locally compact field topology, so every automorphism is continuous, hence isometric, and the involution always preserves the valuation ring, induces a residue involution, and has a fixed field that is again a local field of index at most two. This article treats involutive local fields: it records the classification of local fields, proves that every involution is isometric, classifies the isometric involutions into the identity, the unramified quadratic one with the Frobenius as residue involution, and the ramified quadratic one with trivial residue involution, computes the fixed field, the norm group and the compact group of norm-one elements, and identifies the archimedean case $\mathbb{C}/\mathbb{R}$ as the model.</p>
+<p>The article assumes the local field, its valuation ring, maximal ideal, uniformiser, residue field, ramification index and residue degree, and the standard classification of local fields from <em>Local Fields</em>; the valuation, its uniqueness and the topology from <em>Absolute Values, Valuations and Completions</em>; the residue operator from <em>The Residue Operator of a Valued Field</em>; the isometric involution, its residue involution, the fixed field of index two, the norm form and the ramification dichotomy $ef = 2$ from <em>Involutive Valued Fields</em>; the involution and its fixed subring from <em>Involutive Rings</em>; and the reflexivity and completeness of the local fields from <em>Reflexive Topological Rings and Fields</em> and <em>The Completion Operator</em>. The central simple algebras over a local field with an involution, their classification by the Brauer group and the involutions, and the Hermitian and skew-Hermitian forms are the subject of <em>The Book of Involutions</em> and of <em>Local Class Field Theory</em>, and are named at the boundary and not developed.</p>
+<p>Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}$, maximal ideal $\mathrm{M}$, uniformiser $\pi$, residue field $k = \mathbb{F}_q$, value group $\Gamma\cong\mathbb{Z}$ (in the non-archimedean case) and finite residue cardinality $q = p^f$; $\sigma$ is an involution of $F$; the fixed field is $F^\sigma$, the norm form is $N(x) = x\sigma(x)$, the norm-one group is $U(F,\sigma) = \{x\in F^\times : N(x) = 1\}$, and $\bar\sigma$ is the residue involution.</p>
+<h2 id="local-fields-and-their-involutions">Local Fields and Their Involutions</h2>
+<p><strong>Proposition (the classification of local fields, recalled).</strong> A local field is one of: $\mathbb{R}$ and $\mathbb{C}$ in the archimedean case; a finite extension of $\mathbb{Q}_p$ in characteristic zero; and the field $\mathbb{F}_q((t))$ of formal Laurent series in characteristic $p$. Each carries a unique non-discrete locally compact field topology, the topology of the valuation in the non-archimedean case and the usual one in the archimedean case, and each is complete for it.</p>
+<p><strong>Proof.</strong> Recalled from <em>Local Fields</em>: the locally compact non-discrete fields are classified as the finite extensions of $\mathbb{Q}_p$, of $\mathbb{R}$, and of $\mathbb{F}_p((t))$, and the topology of a locally compact field is unique.</p>
+<p><strong>Theorem (every involution of a local field is isometric).</strong> Let $\sigma$ be an involution of the local field $F$. Then $\sigma$ is continuous for the topology of $F$, hence isometric, hence preserves $\mathcal{O}$, $\mathrm{M}$, every power $\mathrm{M}^n$ and the value group, and induces a residue involution $\bar\sigma$ of $k$.</p>
+<p><strong>Proof.</strong> An automorphism of a locally compact field is continuous: the image of the topology under $\sigma$ is another locally compact field topology on $F$, and the topology of a locally compact field is unique, so $\sigma$ is a homeomorphism. Continuity of $\sigma$ gives continuity of $x\mapsto \lvert\sigma(x)\rvert$; the two absolute values $\lvert \cdot \rvert$ and $\lvert \cdot \rvert_\sigma = \lvert\sigma(\cdot)\rvert$ induce the same topology and are therefore equivalent, and for a local field equivalent absolute values coincide up to a power; since $\sigma$ has finite order the power is $\pm1$ and the positive power is $1$, so $\sigma$ is isometric. The preservation of the filtration and the residue involution are then <em>Involutive Valued Fields</em>.</p>
+<p><strong>Corollary (the involution of the ring of integers).</strong> The involution restricts to an involution of the compact ring $\mathcal{O}$ and of each ideal $\mathrm{M}^n$, and it acts on the finite residue field $k$ by $\bar\sigma$; the fixed ring $\mathcal{O}^\sigma$ is the ring of integers of $F^\sigma$ when the extension is unramified and is a proper subring with the same residue field when the extension is ramified.</p>
+<p><strong>Proof.</strong> Preservation of the filtration is the theorem; $\mathcal{O}$ is compact because $F$ is locally compact and $\mathcal{O}$ is closed and bounded, and an involution preserves it. The statements about the fixed ring follow from the ramification dichotomy of <em>Involutive Valued Fields</em>.</p>
+<h2 id="the-isometric-involutions">The Isometric Involutions</h2>
+<p><strong>Theorem (classification of the isometric involutions).</strong> Let $F$ be a local field with an involution $\sigma$. Then exactly one of the following holds:</p>
+<ol>
+<li>$\sigma = \mathrm{id}$ and $F^\sigma = F$;</li>
+<li>$\sigma \neq \mathrm{id}$, the fixed field $F^\sigma$ is a local field of index two, the extension $F/F^\sigma$ is <strong>unramified</strong>, $e = 1$, $f = 2$, and the residue involution $\bar\sigma$ is the nontrivial involution of $\mathbb{F}_{q}$, which requires $f$ even and is $x\mapsto x^{p^{f/2}}$;</li>
+<li>$\sigma \neq \mathrm{id}$, the extension $F/F^\sigma$ is <strong>ramified</strong>, $e = 2$, $f = 1$, and the residue involution is the identity of $\mathbb{F}_p$.</li>
+</ol>
+<p><strong>Proof.</strong> The fixed field has index at most two by <em>Involutive Valued Fields</em>, and the ramification dichotomy $ef = 2$ gives cases (2) and (3) according to whether $f = 2$ or $e = 2$. In case (2) the residue involution is a nontrivial automorphism of $\mathbb{F}_q$ of order two, and the automorphisms of $\mathbb{F}_q$ are the powers of the Frobenius $x\mapsto x^p$, so the order-two one exists exactly when $f$ is even and equals $x\mapsto x^{p^{f/2}}$. In case (3) the residue degree is one, so the residue involution is the identity of $\mathbb{F}_p$.</p>
+<p><strong>Corollary (the archimedean case).</strong> For $F = \mathbb{C}$ the only nontrivial involution is the complex conjugation, with fixed field $\mathbb{R}$, residue field trivial, and norm form $N(z) = z\bar z = \lvert z\rvert^2$; for $F = \mathbb{R}$ the only involution is the identity. The conjugation is the archimedean model of case (2) with an infinite residue field.</p>
+<p><strong>Proof.</strong> The automorphisms of $\mathbb{C}$ that are continuous are the identity and the conjugation, and every automorphism of $\mathbb{C}$ as a local field is continuous, so these are the only involutions; the fixed field and norm form are standard.</p>
+<h2 id="the-residue-involution">The Residue Involution</h2>
+<p><strong>Proposition (the residue involution on a local field).</strong> The residue involution $\bar\sigma$ is an involution of the finite field $\mathbb{F}_q$; it is the identity when $f$ is odd or when the extension is ramified, and it is $x\mapsto x^{p^{f/2}}$ when the extension is unramified with $f$ even. Its fixed field $\mathbb{F}_q^{\bar\sigma}$ is $\mathbb{F}_{p^{f/2}}$ in the unramified case and $\mathbb{F}_q$ in the ramified and identity cases, and it is the residue field of the fixed field.</p>
+<p><strong>Proof.</strong> The fixed field of an order-two automorphism of $\mathbb{F}_q$ is the subfield of index two $\mathbb{F}_{p^{f/2}}$ when the automorphism is nontrivial and the whole field when it is trivial; the identification with the residue field of $F^\sigma$ is <em>Involutive Valued Fields</em>.</p>
+<p><strong>Corollary (the Teichmüller lift and the residue involution).</strong> When the local field is of characteristic zero and the extension is unramified, the Teichmüller section identifies the residue field with the group of roots of unity of order prime to $p$ in $F$, and the residue involution $\bar\sigma$ corresponds under this identification to the restriction of $\sigma$ to those roots of unity; the involution is therefore determined on the inertial part of $F$ by $\bar\sigma$.</p>
+<p><strong>Proof.</strong> The Teichmüller lift is multiplicative and equivariant for automorphisms by uniqueness, so it intertwines $\bar\sigma$ with $\sigma$ restricted to the prime-to-$p$ roots of unity.</p>
+<h2 id="the-fixed-field-and-the-norm-group">The Fixed Field and the Norm Group</h2>
+<p><strong>Theorem (the norm group and the norm-one group).</strong> Let $\sigma \neq \mathrm{id}$ with fixed field $F^\sigma$. Then the norm form is a continuous multiplicative map $N : F^\times\to (F^\sigma)^\times$ with image of index at most two, the norm-one group $U(F,\sigma) = \ker N$ is a compact group, and it is the set of elements of the form $x/\sigma(x)$ by Hilbert's theorem 90; the norm group is all of $(F^\sigma)^\times$ when the extension is ramified and has index two in the unramified case.</p>
+<p><strong>Proof.</strong> The norm is continuous and multiplicative; its image has index at most two because the norm of the quadratic extension has cokernel of order at most two by Hilbert's theorem 90 and the structure of the local norm group. The norm-one group is closed and bounded, hence compact because $F$ is locally compact; the parametrisation $x/\sigma(x)$ is Hilbert's theorem 90 for the cyclic extension of degree two.</p>
+<p><strong>Corollary (the involution on the uniformiser).</strong> In the ramified case the involution sends the uniformiser to $\sigma(\pi) = \epsilon\pi$ with $\epsilon$ a unit satisfying $N(\epsilon) = \epsilon\sigma(\epsilon) = 1$, and the norm of the uniformiser is $N(\pi) = \epsilon\pi^2$, a uniformiser of $F^\sigma$; in the unramified case one may choose the uniformiser in $F^\sigma$, and then $N(\pi) = \pi^2$ is a unit of $F^\sigma$.</p>
+<p><strong>Proof.</strong> If $\sigma(\pi) = \epsilon\pi$ then applying $\sigma$ gives $\pi = \sigma(\epsilon)\sigma(\pi) = \sigma(\epsilon)\epsilon\pi$, so $\epsilon\sigma(\epsilon) = 1$ and $\epsilon$ is a norm-one unit. Hence $N(\pi) = \pi\sigma(\pi) = \epsilon\pi^2$, and $v(N(\pi)) = 2$ with $\pi^2$ a uniformiser of $F^\sigma$ in the ramified case, so $N(\pi)$ is a uniformiser. In the unramified case the uniformiser of $F^\sigma$ is also a uniformiser of $F$ because $e = 1$, and choosing it in $F^\sigma$ gives $\sigma(\pi) = \pi$ and $N(\pi) = \pi^2$, a unit of $F^\sigma$.</p>
+<p><strong>Remark (reflexivity).</strong> A local field is complete, hence reflexive as a one-dimensional space over itself by <em>Reflexive Topological Rings and Fields</em>; the involution transfers to the dual and the canonical map is equivariant, so an involutive local field is a reflexive involutive topological field, and the duality theory of the locally compact field applies, including the Haar measure and the Fourier transform, which are named at this boundary and not used.</p>
+<h2 id="classification">Classification</h2>
+<p><strong>Theorem (the involutive local fields).</strong> Up to isomorphism, the involutive local fields $(\sigma \neq \mathrm{id})$ are:</p>
+<ol>
+<li>$(\mathbb{C}, \text{conjugation})$, with fixed field $\mathbb{R}$;</li>
+<li>$(F, \sigma)$ where $F/F_0$ is an unramified quadratic extension of local fields of characteristic zero, $\sigma$ the nontrivial automorphism, fixed field $F_0$, residue involution the Frobenius $x\mapsto x^{p^{f/2}}$; the family is parametrised by the quadratic unramified extensions of the local fields;</li>
+<li>$(F, \sigma)$ where $F/F_0$ is a ramified quadratic extension of local fields, fixed field $F_0$, residue involution the identity; in characteristic zero these are the extensions $F_0(\sqrt{\pi_0 u})$ with $\pi_0$ a uniformiser and $u$ a unit;</li>
+</ol>
+<p>together with the identity involution on every local field. The quadratic unramified extensions of a given local field are classified by the square classes of the residue field, and the ramified ones by the square classes of $F_0$ modulo the units.</p>
+<p><strong>Proof.</strong> The case analysis is the classification theorem for the isometric involutions; the parametrisation of the quadratic extensions of a local field by square classes is local class field theory, quoted from <em>Local Fields</em>, which also gives the existence of the extensions in each class. The archimedean case is the corollary above.</p>
+<p><strong>Corollary (functions of the classification).</strong> The involutive local fields of case (2) have an unramified fixed field and a nontrivial residue involution; those of case (3) have a ramified fixed field and a trivial residue involution; the norm form is anisotropic over $\mathbb{R}$ in case (1), and in cases (2) and (3) it is the norm of the quadratic extension, which is the standard Hermitian form over the local field.</p>
+<p><strong>Proof.</strong> Read off the ramification dichotomy and the norm form computed above; the Hermitian interpretation is the norm form of the quadratic extension regarded as a form over the fixed field.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($(\mathbb{C}, \text{conjugation})$).</strong> The archimedean involutive local field; fixed field $\mathbb{R}$, norm form $z\bar z$, norm-one group the circle $U(1)$, which is compact; the model of case (2) with an infinite residue field.</p>
+<p><strong>Example ($\mathbb{Q}_p(\sqrt{u})$ unramified).</strong> For $p$ odd and $u$ a nonsquare unit, $F = \mathbb{Q}_p(\sqrt u)$ is unramified of degree two, the involution is $\sqrt u\mapsto -\sqrt u$, the fixed field is $\mathbb{Q}_p$, and the residue involution is the Frobenius $x\mapsto x^p$ on $\mathbb{F}_{p^2}$; the norm group is the subgroup of $p$-adic squares times the norm-one group, and the norm-one group is compact.</p>
+<p><strong>Example ($\mathbb{Q}_2(\sqrt{5})$).</strong> For $p = 2$ the extension $\mathbb{Q}_2(\sqrt 5)$ is unramified of degree two, the residue involution is the Frobenius $x\mapsto x^2$ on $\mathbb{F}_4$, and the fixed field is $\mathbb{Q}_2$; this is case (2) in characteristic zero with $p = 2$ and $f = 2$.</p>
+<p><strong>Example ($\mathbb{Q}_p(\sqrt{p})$ ramified).</strong> The extension is ramified of degree two, the involution is $\sqrt p\mapsto -\sqrt p$, the residue involution is the identity on $\mathbb{F}_p$, and the norm of the uniformiser $\sqrt p$ is $-p$, a uniformiser of $\mathbb{Q}_p$; this is case (3).</p>
+<p><strong>Example ($\mathbb{F}_q((t))$ and its quadratic involutions).</strong> The characteristic-$p$ local field with the identity involution; its nontrivial involutions arise from the quadratic extensions of $\mathbb{F}_q((t))$, which is unramified with residue involution $x\mapsto x^{p^{f/2}}$ when the residue degree is two (so $q = p^f$ with $f$ even), and ramified with trivial residue involution otherwise, giving the characteristic-$p$ instances of cases (2) and (3).</p>
+<h2 id="summary">Summary</h2>
+<p>A local field carries a unique non-discrete locally compact field topology, so every involution of a local field is continuous, hence isometric: it preserves the valuation ring, the maximal ideal and the whole filtration, and it induces an involution $\bar\sigma$ of the finite residue field. The classification of the involutions is by the ramification of the quadratic extension $F/F^\sigma$: the identity, the unramified case $e = 1$, $f = 2$ with residue involution the Frobenius $x\mapsto x^{p^{f/2}}$ on $\mathbb{F}_q$ (which requires $f$ even), and the ramified case $e = 2$, $f = 1$ with trivial residue involution; the archimedean model is $\mathbb{C}$ with the complex conjugation. The fixed field is a local field of index at most two, the norm form $N(x) = x\sigma(x)$ is multiplicative and continuous with image of index at most two in $(F^\sigma)^\times$, the norm-one group is compact and consists of the elements $x/\sigma(x)$ by Hilbert's theorem 90, and the norm of a uniformiser is a uniformiser in the ramified case and a unit in the unramified case.</p>
+<p>An involutive local field is complete, hence reflexive, and the involution transfers to the dual with an equivariant canonical map, so the duality theory of the locally compact field applies; the quadratic extensions that realise the classification are parametrised by square classes, by local class field theory, and the central simple algebras over a local field with an involution, together with the Hermitian and skew-Hermitian forms, are the neighbouring subject.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $v$, $\mathcal{O}$, $\mathrm{M}$, $\pi$, $k = \mathbb{F}_q$</td>
+<td>Local field and its valuation data</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>An involution, automatically isometric</td>
+</tr>
+<tr>
+<td>$F^\sigma$</td>
+<td>Fixed field, a local field, $[F:F^\sigma]\leq 2$</td>
+</tr>
+<tr>
+<td>$N(x) = x\sigma(x)$, $v(N(x)) = 2v(x)$</td>
+<td>The norm form</td>
+</tr>
+<tr>
+<td>$U(F,\sigma) = \ker N$</td>
+<td>Compact norm-one group</td>
+</tr>
+<tr>
+<td>$\bar\sigma$</td>
+<td>Residue involution of $\mathbb{F}_q$</td>
+</tr>
+<tr>
+<td>$x\mapsto x^{p^{f/2}}$</td>
+<td>The nontrivial residue involution, unramified case</td>
+</tr>
+<tr>
+<td>$ef = 2$</td>
+<td>Unramified $(1,2)$ or ramified $(2,1)$</td>
+</tr>
+<tr>
+<td>$(\mathbb{C}, \text{conjugation})$</td>
+<td>The archimedean involutive local field</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}_p(\sqrt u)$</td>
+<td>The unramified quadratic extension</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the structure of local fields, quadratic extensions, square classes and Hilbert's theorem 90.</li>
+<li>Jürgen Neukirch, <em>Algebraic Number Theory</em> (Springer, 1999), for valuations, ramification, the norm group and local class field theory.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions over local fields, the central simple algebras with involution and the Hermitian forms.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for locally compact fields, the uniqueness of the topology and isometric involutions.</li>
+<li>André Weil, <em>Basic Number Theory</em> (Springer, 3rd ed. 1995), for Haar measure, the Fourier transform and the duality of locally compact fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

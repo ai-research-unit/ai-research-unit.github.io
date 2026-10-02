@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Operators and the Square Root — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-operators-and-the-square-root"><strong>Positive Operators and the Square Root</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A positive operator is a self-adjoint operator $T$ whose quadratic form is nonnegative, $\langle Tx,x\rangle\ge0$. The class is closed under sums, nonnegative scalar multiples, and adjoints, and it carries the order of the self-adjoint family; its two structural theorems are the existence of a unique positive <strong>square root</strong> and the <strong>polar decomposition</strong>, in which an arbitrary operator factors as a partial isometry times its own modulus. The square root is the analytic device that turns the order into a metric, since $\|x\|_T=\|T^{1/2}x\|$ makes the form domain of a positive operator a Hilbert space; the polar decomposition is the operator form of the polar form of a complex number, and it is the reason the self-adjoint theory controls the whole of $B(H)$ by the identity $T=U|T|$ with $|T|=(T^*T)^{1/2}$. The order is not total, and the behaviour of the square root on it is subtle: the square root is operator monotone by the Löwner theorem, but not every increasing function is, and the difference is the subject of the theory of operator means.</p>
+<p>This article fixes the positive operators with their characterisations, the existence and uniqueness of the square root and its properties, the polar decomposition, the monotonicity of the square root with the Löwner theorem, and the order of the self-adjoint family. The spectral theory used is <em>Self-Adjoint Operators and the Spectral Theorem</em>; the numerical range and the reality criterion are <em>Hermitian Operators and the Numerical Range</em>; the order and the algebraic study of the self-adjoint family are <em>Self-Adjoint Operators</em>; the form domain of a positive operator is <em>Sesquilinear Forms and the Lax–Milgram Theorem</em> and <em>The Friedrichs Extension of a Hermitian Form</em>.</p>
+<p>Throughout, $H$ is a complex Hilbert space with inner product linear in the first argument, $B(H)$ is the algebra of bounded operators, and $T\in B(H)$. The <strong>order</strong> on the self-adjoint operators is $S\le T$ iff $T-S$ is positive, and the modulus of $T$ is $|T|=(T^*T)^{1/2}$.</p>
+<h2 id="positive-operators">Positive Operators</h2>
+<p><strong>Theorem (characterisations).</strong> For a self-adjoint operator $T$ the following are equivalent:</p>
+<p>(i) $\langle Tx,x\rangle\ge0$ for every $x\in H$;</p>
+<p>(ii) $\sigma(T)\subseteq[0,\infty)$;</p>
+<p>(iii) $T=A^*A$ for some $A\in B(H)$;</p>
+<p>(iv) $T=S^2$ for a self-adjoint $S$;</p>
+<p>(v) $T=f(T)$ for a positive Borel function $f$ in the functional calculus of $T$.</p>
+<p><em>Proof.</em> (i) $\Rightarrow$ (ii): the spectrum lies in the closure of the numerical range, which is contained in $[0,\infty)$. (ii) $\Rightarrow$ (iv): take $S$ to be the operator $\sqrt{\lambda}$ in the functional calculus. (iv) $\Rightarrow$ (iii): $S^2=S^*S$. (iii) $\Rightarrow$ (i): $\langle A^*Ax,x\rangle=\|Ax\|^2\ge0$. (ii) $\Leftrightarrow$ (v): the functional calculus is positivity preserving exactly when the spectrum is contained in the set where $f\ge0$.</p>
+<p><strong>Proposition (closure properties).</strong> The positive operators form a convex cone closed in the weak operator topology; the sum of positives is positive, the product of commuting positives is positive, $T^*T\ge0$ for every $T$, $0\le T\le\|T\|I$, and $\|T^*T\|=\|T\|^2$.</p>
+<p><em>Proof.</em> The quadratic-form inequalities add; the product of commuting positives is positive because they are simultaneously diagonalisable by the spectral theorem; $\|Tx\|^2=\langle T^*Tx,x\rangle$ gives the last positivity, and the norm identity is the $C^*$-identity.</p>
+<p><strong>Proposition (Cauchy–Schwarz for positive operators).</strong> For $T\ge0$,</p>
+<p>$$
+|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle ,
+$$</p>
+<p>and $T$ is positive and invertible exactly when $T\ge cI$ for some $c>0$; in that case the sesquilinear form $\langle\cdot,\cdot\rangle_T=\langle T\cdot,\cdot\rangle$ is an inner product equivalent to the given one.</p>
+<p><em>Proof.</em> The inequality is Cauchy–Schwarz in the semidefinite inner product $\langle x,y\rangle_T=\langle Tx,y\rangle$; the inversion criterion is the spectral theorem, and the last statement is the equivalence of the two norms.</p>
+<h2 id="the-square-root">The Square Root</h2>
+<p><strong>Theorem (existence and uniqueness).</strong> For every positive $T\in B(H)$ there is a unique positive $S\in B(H)$ with $S^2=T$, written $S=T^{1/2}$; it is in the von Neumann algebra generated by $T$, it commutes with every operator commuting with $T$, and for $T$ invertible it is the limit of the Newton iterates $S_{n+1}=\frac12(S_n+S_n^{-1}T)$.</p>
+<p><em>Proof.</em> Existence is the functional calculus $\sqrt{\lambda}$; for uniqueness, if $S$ is positive with $S^2=T$ then $S$ commutes with $T$, hence with every spectral projection of $T$, and on each spectral subspace the equation $S^2=\lambda$ forces $S=\sqrt\lambda$; the commutant statement is the fact that the calculus produces elements of the von Neumann algebra generated by $T$, and the convergence of the Newton iteration is the standard argument for the square root of a positive invertible operator.</p>
+<p><strong>Proposition (properties of the square root).</strong> The map $T\mapsto T^{1/2}$ is continuous for the norm topology, it is homogeneous in the sense $(\lambda T)^{1/2}=\sqrt\lambda\,T^{1/2}$ for $\lambda\ge0$, it satisfies $(T^{1/2})^2=T$, it is a bijection of the positive operators onto themselves, and</p>
+<p>$$
+T^{1/2}=\sum_{n\ge0}\binom{1/2}{n}(-1)^n(I-T)^n
+$$</p>
+<p>for $0\le T\le I$, the binomial series converging in the norm.</p>
+<p><em>Proof.</em> The functional calculus gives the algebraic properties and the series expansion of $\sqrt{1-u}$ at $u=0$ converges for $\|u\|\le1$; continuity of the calculus for the norm topology gives the continuity of the map.</p>
+<p><strong>Theorem (Löwner).</strong> The square root is <strong>operator monotone</strong>: if $0\le S\le T$ then $S^{1/2}\le T^{1/2}$. More generally, a function $f:[0,\infty)\to\mathbb{R}$ is operator monotone, meaning $S\le T$ implies $f(S)\le f(T)$ for all positive $S,T$, exactly when $f$ has an analytic continuation to the upper half plane mapping it into itself; the square root and the logarithm are operator monotone, while $f(\lambda)=\lambda^2$ is not.</p>
+<p><em>Proof.</em> This is Löwner's theorem; the forward implication uses the analytic continuation of the function calculated on the two-dimensional compression and the backward implication reconstructs $f$ from its action on the positive operators. The non-monotonicity of the square is seen in two dimensions: $\begin{pmatrix}1&0\\0&0\end{pmatrix}\le\begin{pmatrix}2&1\\1&1\end{pmatrix}$ while the squares violate the inequality.</p>
+<p><strong>Proposition (inversion reverses the order).</strong> For invertible positive $S,T$,</p>
+<p>$$
+S\le T\quad\Longleftrightarrow\quad T^{-1}\le S^{-1},
+$$</p>
+<p>the order is antisymmetric, and it is not total: two rank-one projections onto non-orthogonal lines are incomparable.</p>
+<p><em>Proof.</em> The inequality $S\le T$ is equivalent to $T^{-1/2}ST^{-1/2}\le I$, and conjugating this by $T^{1/2}$ and inverting the resulting inequality gives $T^{-1}\le S^{-1}$; the converse is the same computation with the roles exchanged. Antisymmetry is the positivity of both $T-S$ and $S-T$, forcing $T=S$; for the projections $P,Q$ onto distinct non-orthogonal lines neither $P-Q$ nor $Q-P$ is positive, as testing on appropriate unit vectors shows.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Theorem (polar decomposition).</strong> Every $T\in B(H)$ factors as</p>
+<p>$$
+T=U|T|,\qquad |T|=(T^*T)^{1/2},
+$$</p>
+<p>where $|T|$ is positive, $U$ is a partial isometry from the closure of $\operatorname{ran}|T|$ onto the closure of $\operatorname{ran}T$, and $U$ is uniquely determined by the requirements that $\ker U=\ker|T|$ and $U|T|=T$; when $T$ is invertible, $U$ is unitary. The decomposition is the operator form of $z=|z|e^{i\theta}$.</p>
+<p><em>Proof.</em> On $\operatorname{ran}|T|$ define $U(|T|x)=Tx$; the identity $\||T|x\|=\|Tx\|$ makes $U$ well defined and isometric, and it extends by continuity to an isometry from the closure of the range of $|T|$ onto the closure of the range of $T$; extending by zero on the orthogonal complement of the range of $|T|$ gives the partial isometry, and the kernel condition fixes the extension. Uniqueness is the density of the range of $|T|$; invertibility of $T$ makes $|T|$ invertible and both ranges all of $H$, so $U$ is unitary.</p>
+<p><strong>Corollary (the modulus and the adjoint).</strong> $|T^*|=U|T|U^*$ on the appropriate domains, $T^*=U^*|T^*|$, and $T$ is normal exactly when the partial isometry of the polar decomposition commutes with $|T|$; $T$ is positive exactly when $T=|T|$, equivalently when $U$ acts as the identity on the range of $|T|$.</p>
+<p><em>Proof.</em> The first two identities are the polar decomposition applied to $T^*$; normality makes $|T|$ and $U$ commute by uniqueness of the decomposition, and the positivity statement is the comparison of $T=U|T|$ with the positive representative.</p>
+<p><strong>Example (the absolute value of a bounded operator).</strong> For $T$ an operator with the polar decomposition $T=U|T|$ the modulus $|T|$ is the positive square root of $T^*T$, so $\||T|\|=\|T\|$, and $\ker|T|=\ker T$; the polar decomposition is the reason every operator is a partial isometry followed by a positive operator, and it is used in <em>The Friedrichs Extension of a Hermitian Form</em> to write the form domain of a semi-bounded operator.</p>
+<h2 id="summary">Summary</h2>
+<p>A positive operator is a self-adjoint operator with $\langle Tx,x\rangle\ge0$; equivalently its spectrum lies in $[0,\infty)$, equivalently it is $A^*A$ for some $A$, equivalently it is the square of a self-adjoint operator. The positives form a weakly closed convex cone, they satisfy the Cauchy–Schwarz inequality $|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle$, and $T\ge cI$ is the invertibility criterion. Every positive operator has a unique positive square root $T^{1/2}$, obtained by the functional calculus, lying in the von Neumann algebra generated by $T$ and commuting with its commutant; the map $T\mapsto T^{1/2}$ is norm-continuous and, by the Löwner theorem, operator monotone, meaning that $S\le T$ implies $S^{1/2}\le T^{1/2}$ and that the operator monotone functions are exactly the analytic self-maps of the upper half plane. The order of the self-adjoint operators is antisymmetric but not total, and it is reversed by inversion on invertible positives. Every operator has a polar decomposition $T=U|T|$ with $|T|=(T^*T)^{1/2}$ and $U$ a partial isometry from the closure of the range of $|T|$ onto the closure of the range of $T$, which is unitary exactly when $T$ is invertible and reduces to the identity on the range of $|T|$ exactly when $T$ is positive.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T\ge0$</td>
+<td>positivity, $\langle Tx,x\rangle\ge0$</td>
+</tr>
+<tr>
+<td>$\sigma(T)\subseteq[0,\infty)$</td>
+<td>spectral characterisation of positivity</td>
+</tr>
+<tr>
+<td>$S\le T$</td>
+<td>order on self-adjoint operators</td>
+</tr>
+<tr>
+<td>$|\langle Tx,y\rangle|^2\le\langle Tx,x\rangle\langle Ty,y\rangle$</td>
+<td>Cauchy–Schwarz for positive operators</td>
+</tr>
+<tr>
+<td>$T^{1/2}$</td>
+<td>unique positive square root</td>
+</tr>
+<tr>
+<td>$S\le T\Rightarrow S^{1/2}\le T^{1/2}$</td>
+<td>operator monotonicity of the square root</td>
+</tr>
+<tr>
+<td>$|T|=(T^*T)^{1/2}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$T=U|T|$</td>
+<td>polar decomposition</td>
+</tr>
+<tr>
+<td>$U$ partial isometry</td>
+<td>$\ker U=\ker|T|$, $\operatorname{ran}U=\overline{\operatorname{ran}T}$</td>
+</tr>
+<tr>
+<td>$T$ unitary iff</td>
+<td>$T$ invertible and $U$ unitary in $U|T|$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the positive operators, the square root and the polar decomposition.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the order, the square root and its continuity.</li>
+<li>Karl Löwner, "Über monotone Matrixfunktionen", <em>Mathematische Zeitschrift</em> <strong>38</strong> (1934), 177–216, for the operator monotone functions.</li>
+<li>Fumio Hiai and Dénes Petz, <em>Introduction to Matrix Analysis and Applications</em> (Springer, 2014), for the operator monotone functions, the means and the matrix order.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the square root, the polar decomposition and the modulus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

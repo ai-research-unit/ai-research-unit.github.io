@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Graded Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-graded-algebra"><strong>The Signed Left Multiplication on a Graded Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the <strong>signed left multiplication</strong> by an element $a$ is the one-sided operator</p>
+<p>$$
+\ell_a:A\longrightarrow A,\qquad \ell_a(x)=a\,\alpha(x),
+$$</p>
+<p>the left multiplication with the argument twisted by $\alpha$. It is the signed sandwich of <em>The Signed Sandwich on a Graded Algebra</em> with the right factor equal to the unit, $\ell_a=\Sigma^{\alpha}_{a,1}=L_a\circ\alpha$, and it is the one-sided operator that the reflections of <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em> use as their building block. This article treats the one-sided signed action: its definition and its relation to the unsigned left multiplication $L_a$, the composition law that makes a product of two signed left multiplications an <strong>unsigned</strong> left multiplication, the coset structure of the family $\{\ell_a\}$ in the algebra of operators, the parity of the operators, and the elements they fix. The graded algebra and the grade involution are <em>Superalgebras and Graded Structures</em>; the module-theoretic version of an action is <em>The Graded Action on a Module over a Graded Algebra</em>, and the adjoint of $\ell_a$ is <em>The Signed Adjoint of the Left Multiplication on a Graded Algebra</em> in the <code>- * Operator Theory</code> group, deferred here.</p>
+<p>The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/2$-graded associative algebra with grade involution $\alpha$, and the operators are written $L_a$ (unsigned left multiplication), $R_b$ (unsigned right multiplication) and $\ell_a$ (signed left multiplication). The article reasons with the ring structure and the grading only.</p>
+<h2 id="definition-and-relation-to-the-unsigned-action">Definition and Relation to the Unsigned Action</h2>
+<p><strong>Definition.</strong> The <strong>signed left multiplication</strong> by $a\in A$ is</p>
+<p>$$
+\ell_a:A\longrightarrow A,\qquad \ell_a(x)=a\,\alpha(x)=\Sigma^{\alpha}_{a,1}(x).
+$$</p>
+<p><strong>Proposition.</strong> The signed left multiplication factors through the grade involution and the unsigned left multiplication,</p>
+<p>$$
+\ell_a=L_a\circ\alpha,
+$$</p>
+<p>and the signed sandwich is recovered from it, $\Sigma^{\alpha}_{a,b}=\ell_a\circ R_{\alpha(b)}$.</p>
+<p><strong>Proof.</strong> Both sides of the first display send $x$ to $a\alpha(x)$; for the second, $\ell_a(R_{\alpha(b)}(x))=\ell_a(x\alpha(b))=a\alpha(x)\alpha(\alpha(b))=a\alpha(x)b=\Sigma^{\alpha}_{a,b}(x)$. $\square$</p>
+<p><strong>Proposition.</strong> The assignment $a\mapsto\ell_a$ is $R$-linear and injective; the signed left multiplication is the unsigned left multiplication exactly when $\alpha$ fixes the elements in question, in particular $\ell_a=L_a$ for every $a$ if and only if $\alpha=\mathrm{id}$, that is if and only if $A^1=0$.</p>
+<p><strong>Proof.</strong> Linearity is immediate from the definition, and if $\ell_a=0$ then $a\alpha(x)=0$ for every $x$, hence $a=0$ because $\alpha$ is onto; the comparison $\ell_a=L_a$ means $a\alpha(x)=ax$ for all $x$, which forces $\alpha(x)=x$ on the range of a nonzero $a$, and taking $a=1$ gives $\alpha=\mathrm{id}$. $\square$</p>
+<h2 id="the-composition-law-and-the-coset-structure">The Composition Law and the Coset Structure</h2>
+<p><strong>Theorem.</strong> The composition of two signed left multiplications is an unsigned left multiplication:</p>
+<p>$$
+\ell_a\circ\ell_b=L_{a\,\alpha(b)},\qquad\text{so}\qquad \ell_a\circ\ell_b(x)=a\,\alpha(b)\,x .
+$$</p>
+<p><strong>Proof.</strong> $\ell_a(\ell_b(x))=\ell_a(b\alpha(x))=a\,\alpha(b\alpha(x))=a\,\alpha(b)\,\alpha(\alpha(x))=a\alpha(b)x$, using the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The set of signed left multiplications is not a subalgebra of $\operatorname{End}_R(A)$; it is the coset $L(A)\circ\alpha$ of the algebra $L(A)$ of unsigned left multiplications in the larger set generated by the two, and the products $\ell_a\ell_b$ and $L_a$ together generate the subalgebra $L(A)\oplus L(A)\alpha$ of $\operatorname{End}_R(A)$.</p>
+<p><strong>Proposition.</strong> When $\alpha\neq\mathrm{id}$ and $A$ is a nonzero algebra with unit, the two families $L(A)$ and $L(A)\alpha$ are $R$-independent and the subalgebra generated by the signed and unsigned left multiplications has rank $2\dim_RA$; it is the algebra with basis the operators $L_a$ and $\ell_b$, with the products $L_aL_b=L_{ab}$, $L_a\ell_b=\ell_{ab}$, $\ell_aL_b=\ell_{a\alpha(b)}$ and $\ell_a\ell_b=L_{a\alpha(b)}$.</p>
+<p><strong>Proof.</strong> If $\sum_a r_aL_a+\sum_b s_b\ell_b=0$ as operators, evaluating on $1$ gives $\sum_a r_aa+\sum_b s_b\alpha(b)=0$ and evaluating on an odd element $u$ gives $\sum_a r_aau+\sum_bs_b\alpha(b)\alpha(u)=0$; the two equations separate the even and the odd part of the coefficients, giving the independence. The products are the displayed computations. $\square$</p>
+<p><strong>Corollary.</strong> The subalgebra generated by $L(A)$ and $\ell(A)$ is the <strong>signed left-multiplication algebra</strong> of $A$; it contains the grade involution $\alpha=\ell_1$ and is closed under composition. Its elements are the operators $x\mapsto ax+b\alpha(x)$ with $a,b\in A$.</p>
+<h2 id="parity-and-the-fixed-elements">Parity and the Fixed Elements</h2>
+<p><strong>Proposition.</strong> If $a$ is homogeneous of degree $|a|$, then $\ell_a$ maps $A^k$ into $A^{k+|a|}$ and acts there as $(-1)^k$ times the unsigned left multiplication; thus $\ell_a$ is homogeneous of degree $|a|$ as a map of graded $R$-modules, and $\ell_a$ is even exactly when $a$ is even.</p>
+<p><strong>Proof.</strong> The left multiplication by $a$ raises the degree by $|a|$, and the twist multiplies the component in $A^k$ by $(-1)^k$. $\square$</p>
+<p><strong>Definition.</strong> An element $x$ is <strong>fixed</strong> by $\ell_a$ when $\ell_a(x)=x$; the fixed set is $\mathrm{Fix}(\ell_a)=\{x:a\alpha(x)=x\}$, the fixed subspace of the operator.</p>
+<p><strong>Theorem.</strong> The fixed set of $\ell_a$ is a coset of the fixed set of the linear map $x\mapsto a\alpha(x)-x$ only when nonempty; it is nonempty exactly when the equation $a\alpha(x)=x$ has a solution, and it is the whole algebra exactly when $a=1$ and $\alpha=\mathrm{id}$. For $a=1$ the fixed set is the even part $A^0$.</p>
+<p><strong>Proof.</strong> The fixed set is the solution set of a linear equation, hence a coset of its kernel when nonempty and empty otherwise; for $a=1$ the equation is $\alpha(x)=x$, whose solutions are the even part; the whole-algebra case forces $\alpha(x)=ax$ for all $x$, hence $a=1$ and $\alpha=\mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The signed left multiplication fixes the unit exactly when $\ell_a(1)=a$ equals $1$, and it fixes the even part when $a\alpha(x)=x$ for even $x$, in particular when $a=1$.</p>
+<h2 id="worked-case-the-exterior-algebra">Worked Case: The Exterior Algebra</h2>
+<p>Let $A=\Lambda^\bullet V$ with the grading modulo two and the grade involution $\alpha(\omega)=(-1)^k\omega$ on $\Lambda^kV$. The signed left multiplication is $\ell_a(\omega)=a\wedge\alpha(\omega)$, the wedge with the signed form of the argument. For $a=1$ it is the grade involution $\ell_1=\alpha$, of parity even, fixing $\Lambda^{\mathrm{even}}V$ and negating $\Lambda^{\mathrm{odd}}V$; for $a$ a vector $v$ the operator $\ell_v$ is zero on the even part and sends an odd $\omega$ to $-v\wedge\omega$, so it maps $\Lambda^1$ to $\Lambda^0$ and $\Lambda^{\mathrm{odd}}$ to the ideal generated by $v$. The composition $\ell_v\circ\ell_w$ is the unsigned left multiplication $L_{v\wedge\alpha(w)}=-L_{v\wedge w}$, which is zero because $v\wedge w\wedge(\cdot)$ involves the square of a two-vector when $w=v$; in the exterior algebra the signed left multiplications of odd elements are nilpotent of order two.</p>
+<p><strong>Verified.</strong> On the exterior algebra of a two-dimensional space, the composition law $\ell_a\ell_b=L_{a\alpha(b)}$, the parity of $\ell_a$ and the action of $\ell_v$ on the four basis elements were recomputed by explicit multiplication.</p>
+<h2 id="summary">Summary</h2>
+<p>On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the <strong>signed left multiplication</strong> is $\ell_a(x)=a\alpha(x)=\Sigma^{\alpha}_{a,1}=L_a\alpha$. The assignment $a\mapsto\ell_a$ is injective and linear, and $\ell_a=L_a$ for all $a$ exactly when $\alpha=\mathrm{id}$. Two signed left multiplications compose to an <strong>unsigned</strong> one, $\ell_a\ell_b=L_{a\alpha(b)}$, so the signed left multiplications form the coset $L(A)\alpha$ of the unsigned ones and are not a subalgebra; with $L(A)$ they generate the signed left-multiplication algebra, whose elements are the operators $x\mapsto ax+b\alpha(x)$ and which has rank $2\dim A$ when $\alpha\neq\mathrm{id}$. A homogeneous $a$ gives a homogeneous operator of the same degree, acting by $(-1)^k$ on $A^k$. The fixed set of $\ell_a$ is the solution set of $a\alpha(x)=x$, hence empty or a coset, and for $a=1$ it is the even part. In the exterior algebra $\ell_1$ is the grade involution, and an odd $\ell_v$ is nilpotent of order two. The adjoint of $\ell_a$ is deferred to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>the commutative base ring</td>
+</tr>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>a $\mathbb{Z}/2$-graded associative algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>unsigned left and right multiplication</td>
+</tr>
+<tr>
+<td>$\ell_a(x)=a\alpha(x)$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}$</td>
+<td>the signed sandwich, $\ell_a R_{\alpha(b)}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Fix}(\ell_a)$</td>
+<td>the set of $x$ with $a\alpha(x)=x$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for graded algebras and one-sided operators.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for signed one-sided actions.</li>
+<li>Larry C. Grove, <em>Classical Groups and Geometric Algebra</em>, Graduate Studies in Mathematics 39 (American Mathematical Society, 2002), for the signed action in the geometric model.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

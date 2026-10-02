@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Commutator Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-commutator-operator"><strong>The Commutator Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The product of an algebra is not commutative in general, and the amount by which it fails to be is measured by the <strong>commutator</strong></p>
+<p>$$
+[a, b] = a b - b a .
+$$</p>
+<p>Fix the first argument and let the second vary: the commutator becomes an operator on the algebra, the <strong>adjoint action</strong></p>
+<p>$$
+\mathrm{ad}_a : A \longrightarrow A, \qquad \mathrm{ad}_a(x) = [a, x].
+$$</p>
+<p>This operator is the subject of the present article. It is the antisymmetrisation of the left and the right multiplication, $\mathrm{ad}_a = L(a) - R(a)$; it is a derivation of the algebra; and the assignment $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras whose kernel is the centre. Each of these three statements is a reading of the same element in the operator space of $A$, and the article develops the three together.</p>
+<p>Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra, with $n = \dim_k A$ when $A$ is finite-dimensional. The operators live in $\operatorname{End}_k(A)$; the left and the right multiplications $L(a)$, $R(a)$ are those of <em>The Operators on an Algebra</em> and are treated in detail in <em>Left and Right Multiplication</em>, and the derivations are the derivations of <em>Automorphisms and Derivations of Algebras</em>. The first section collects the identities of the bracket, the second introduces the operator, the third computes its commutators with the multiplication operators, the fourth gathers the derivation theory of the operator under one heading, and the last two treat the antisymmetrisation and the examples.</p>
+<h2 id="the-commutator-bracket">The Commutator Bracket</h2>
+<h3 id="definition-and-identities">Definition and Identities</h3>
+<p><strong>Definition.</strong> For $a, b \in A$ the <strong>commutator</strong>, or <strong>bracket</strong>, of $a$ and $b$ is</p>
+<p>$$
+[a, b] = a b - b a .
+$$</p>
+<p>The bracket is $k$-bilinear in its two arguments, and it is <strong>antisymmetric</strong>,</p>
+<p>$$
+[a, b] = -[b, a], \qquad [a, a] = 0 ,
+$$</p>
+<p>the second identity following from the first when $2$ is invertible and holding in every case as written. It satisfies the <strong>Jacobi identity</strong></p>
+<p>$$
+[a, [b, c]] + [b, [c, a]] + [c, [a, b]] = 0 .
+$$</p>
+<p><em>Proof of the Jacobi identity.</em> Expand each term and collect. The first commutator is $a(bc) - a(cb) - (bc)a + (cb)a$, and the sum of the three cyclic terms is the sum of twelve monomials; each of the twelve occurs twice with opposite signs — the monomial $abc$ occurs as $a(bc)$ in the first term and as $-(ab)c + ...$: the systematic statement is that each ordered product of the three letters $a, b, c$ appears once from each of the two bracketings of the triple, with the two signs opposite. Since the product is associative and the twelve ordered products are in bijection with the six permutations of the three letters taken together with the three choices of which letter is bracketed first, the total is zero.</p>
+<p>The two identities say that $A$, equipped with the bracket in place of the product, is a <strong>Lie algebra</strong>. It is written $A^{(-)}$ when the product and the bracket are both in play, and it is called the <strong>commutator algebra</strong> of $A$; this is the construction that passes from the associative theory to the Lie theory of <em>Lie Algebras</em>, and it is the source of the examples of that article.</p>
+<p><strong>Proposition.</strong> For every $a \in A$ the map $x \mapsto [a, x]$ is $k$-linear and satisfies the <strong>Leibniz rule</strong></p>
+<p>$$
+[a, xy] = [a, x]\, y + x\, [a, y] .
+$$</p>
+<p><em>Proof.</em> Linear in $x$ because the product is; and $a(xy) - (xy)a = (ax - xa)y + x(ay - ya)$ by associativity, the cross terms $axy$ cancelling after the expansion.</p>
+<p>The Leibniz rule says that the map is a <strong>derivation</strong> of $A$. The derivations of an algebra form a Lie algebra under the commutator of operators, and the map $a \mapsto [a, \cdot]$ is the source of the <strong>inner</strong> ones; the general theory of this passage is in <em>Automorphisms and Derivations of Algebras</em>, and the present article uses it in the fourth section.</p>
+<h3 id="the-antisymmetrisation">The Antisymmetrisation</h3>
+<p>The commutator is the antisymmetrised product, and it is also the antisymmetrisation of the two one-sided multiplications.</p>
+<p><strong>Proposition.</strong> For all $a, x \in A$,</p>
+<p>$$
+[a, x] = L(a)(x) - R(a)(x) = (L(a) - R(a))(x),
+$$</p>
+<p>so that as operators $\mathrm{ad}_a = L(a) - R(a)$; and the antisymmetrisation of the sandwich is the bracket,</p>
+<p>$$
+[T_{a,b} - T_{b,a}](1) = ab - ba = [a, b].
+$$</p>
+<p><em>Proof.</em> The first identity is the definition of the two multiplications. For the second, $T_{a,b}(1) = ab$ by the elementary proposition of <em>The Sandwich Operator on an Algebra</em>, and similarly $T_{b,a}(1) = ba$.</p>
+<p>The operator identity $\mathrm{ad}_a = L(a) - R(a)$ is the reason the commutator belongs to the operator layer: the bracket is not a new operation on the algebra but the difference of the two operators that the product already provides. Its vanishing is the commutativity of $a$ with everything, and its size measures the difference between the two sides.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<h3 id="the-operator">The Operator</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>adjoint action</strong>, or <strong>inner multiplication operator</strong>, determined by $a$ is the operator</p>
+<p>$$
+\mathrm{ad}_a \in \operatorname{End}_k(A), \qquad \mathrm{ad}_a(x) = [a, x] = ax - xa .
+$$</p>
+<p><strong>Proposition.</strong> The assignment</p>
+<p>$$
+\mathrm{ad} : A \longrightarrow \operatorname{End}_k(A), \qquad a \longmapsto \mathrm{ad}_a
+$$</p>
+<p>is $k$-linear, and it satisfies</p>
+<p>$$
+[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]},
+$$</p>
+<p>where the bracket on the left is the commutator of operators in $\operatorname{End}_k(A)$ and that on the right is the bracket of $A$; hence $\mathrm{ad}$ is a homomorphism of Lie algebras from the commutator algebra $A^{(-)}$ into $\operatorname{End}_k(A)$.</p>
+<p><em>Proof.</em> Linearity in $a$ is the bilinearity of the bracket. For the bracket identity, compute on a general $x$:</p>
+<p>$$
+\mathrm{ad}_a\mathrm{ad}_b(x) = [a, [b, x]], \qquad \mathrm{ad}_b\mathrm{ad}_a(x) = [b, [a, x]],
+$$</p>
+<p>so the difference is $[a,[b,x]] - [b,[a,x]]$, which the Jacobi identity rewrites as $[[a,b],x] = \mathrm{ad}_{[a,b]}(x)$.</p>
+<h3 id="the-kernel-and-the-centraliser">The Kernel and the Centraliser</h3>
+<p><strong>Proposition.</strong> The kernel of $\mathrm{ad}$ is the <strong>centre</strong> $Z(A) = \{a : ax = xa \text{ for all } x\}$, and for a single element $a$ the kernel of $\mathrm{ad}_a$ is the <strong>centraliser</strong></p>
+<p>$$
+C_A(a) = \{x \in A : ax = xa\}.
+$$</p>
+<p>Hence $\mathrm{ad}$ is injective exactly when $A$ is commutative, and in every case it induces an isomorphism of Lie algebras</p>
+<p>$$
+A^{(-)}/Z(A) \;\cong\; \operatorname{InnDer}_k(A)
+$$</p>
+<p>onto the space of inner derivations of <em>Automorphisms and Derivations of Algebras</em>.</p>
+<p><em>Proof.</em> The kernel of $\mathrm{ad}_a$ consists of the $x$ with $ax = xa$, which is the centraliser; the kernel of $\mathrm{ad}$ is the intersection of the centralisers over all $a$, which is the set of elements commuting with everything, the centre. The first isomorphism theorem for Lie algebras then gives the last display, the inner derivations being by definition the image of $\mathrm{ad}$.</p>
+<p>The centre is thus exactly the part of the algebra that the operator $\mathrm{ad}$ cannot see, and this is the operator form of the fact — stated for rings in <em>Centre, Units, Zero Divisors and Division Algebras</em> — that the centre is the intersection of the centralisers. When $A$ is a field, $A^{(-)}$ is the zero Lie algebra and $\mathrm{ad} = 0$; when $A = M_n(k)$ the centre is the scalars, so $\operatorname{InnDer}_k(M_n(k))$ has dimension $n^2 - 1$.</p>
+<h3 id="the-centraliser-as-an-operator-kernel">The Centraliser as an Operator Kernel</h3>
+<p><strong>Proposition.</strong> For $a \in A$ the centraliser $C_A(a)$ is the kernel of $\mathrm{ad}_a$, hence a subalgebra of $A$ containing $a$ and the centre; and it is the whole of $A$ exactly when $a$ is central.</p>
+<p><em>Proof.</em> $C_A(a) = \ker \mathrm{ad}_a$ is a kernel of a linear map, so a subspace, and it is closed under the product because the Leibniz rule gives $[a, xy] = [a,x]y + x[a,y] = 0$ when both brackets vanish. It contains $a$ because $[a,a] = 0$, and it contains the centre because a central element commutes with everything. It is $A$ exactly when $\mathrm{ad}_a = 0$, that is when $a$ is central.</p>
+<h2 id="the-commutators-of-the-multiplication-operators">The Commutators of the Multiplication Operators</h2>
+<p>The commutator of two multiplication operators is again a multiplication operator, and the two-sided case produces the associator. The following statements are the operator content of associativity, and they are the reason the present article sits beside <em>The Sandwich Operator on an Algebra</em>.</p>
+<p><strong>Theorem.</strong> For all $a, b \in A$,</p>
+<p>$$
+[L(a), L(b)] = L([a, b]), \qquad [R(a), R(b)] = R([b, a]) = -R([a, b]), \qquad [L(a), R(b)] = -A_{a,b},
+$$</p>
+<p>where $A_{a,b}(x) = (a, x, b)$ is the associator operator of <em>The Sandwich Operator on an Algebra</em>.</p>
+<p><em>Proof.</em> For the first, $L(a)L(b)(x) = a(bx) = (ab)x = L(ab)(x)$ and $L(b)L(a)(x) = L(ba)(x)$, so the difference is $L(ab - ba) = L([a,b])$. For the second, $R(a)R(b)(x) = (xb)a = x(ba) = R(ba)(x)$ and $R(b)R(a)(x) = R(ab)(x)$, so $[R(a),R(b)] = R(ba - ab) = R(-[a,b])$. The third is the theorem of the associator in <em>The Sandwich Operator on an Algebra</em>.</p>
+<p><strong>Corollary.</strong> The map $L$ is an injective homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$, so $L(A)$ is a Lie subalgebra isomorphic to $A^{(-)}$; the map $-R$ is an injective homomorphism of Lie algebras, so $R(A)$ is a Lie subalgebra isomorphic to the opposite algebra $A^{(-)\mathrm{op}}$; and the two images commute exactly when every associator vanishes, that is for an associative algebra for all pairs.</p>
+<p><em>Proof.</em> The theorem shows that $L([a,b]) = [L(a),L(b)]$ and that $R([b,a]) = [R(a),R(b)]$, the second being the statement that $-R$ is a homomorphism; injectivity of $L$ and of $R$ is the statement, from <em>The Operators on an Algebra</em>, that $L(a) = 0$ or $R(a) = 0$ forces $a = 0$ in a unital algebra. Commutativity of the two images is the vanishing of $[L(a),R(b)] = -A_{a,b}$ for all $a$ and $b$, which by <em>The Sandwich Operator on an Algebra</em> is associativity.</p>
+<p>The theorem is a compact restatement of the algebra: the left multiplications carry the product, the right multiplications carry the opposite product, and the failure of the two to commute is exactly the failure of associativity. In the associative case the two-sided picture is the one of <em>Left and Right Multiplication</em>, and the commutator of an $L$ with an $R$ vanishes, so the whole Lie algebra $L(A) + R(A)$ is the direct sum of two commuting copies.</p>
+<h2 id="the-derivation-reading">The Derivation Reading</h2>
+<p><strong>Proposition.</strong> For every $a \in A$ the operator $\mathrm{ad}_a$ is a <strong>derivation</strong> of $A$, the map
+$\mathrm{ad}: A^{(-)} \to \operatorname{Der}_k(A)$ is a homomorphism of Lie algebras with kernel $Z(A)$ and image the inner derivations, and the inner derivations form a Lie ideal of the Lie algebra of all derivations.</p>
+<p><em>Proof.</em> The Leibniz rule is the proposition of the first section, and the bracket identity is the proposition of the second; the kernel and the image are computed above. That the inner derivations form a Lie ideal follows from $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$ for a derivation $\delta$, which is the statement that the adjoint action is the infinitesimal automorphism: $\delta[a,x] = [\delta a, x] + [a, \delta x]$, so $[\delta, \mathrm{ad}_a](x) = \delta[a,x] - [a, \delta x] = [\delta a, x] = \mathrm{ad}_{\delta(a)}(x)$.</p>
+<p><strong>Remark.</strong> The identity $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$ says that the assignment $a \mapsto \mathrm{ad}_a$ is equivariant for the action of the derivation algebra, and it is the operator form of the fact that the inner derivations are the image of the algebra under a map that the outer derivations permute. When every derivation is inner — in particular for a central simple algebra, by <em>Central Simple Algebras and the Brauer Group</em> — the map $\mathrm{ad}$ is surjective and $\operatorname{Der}_k(A) \cong A^{(-)}/Z(A)$. This is the reading of the derivations of <em>Automorphisms and Derivations of Algebras</em> as operators on $A$, and its exponential $\exp(\mathrm{ad}_a)(x) = e^a x e^{-a}$ is the inner automorphism $\iota_{e^a}$ of that article.</p>
+<h2 id="the-antisymmetric-sandwich">The Antisymmetric Sandwich</h2>
+<p>The commutator is the antisymmetrisation of the sandwich, and the antisymmetrisation is a systematic operation on the operator space.</p>
+<p><strong>Proposition.</strong> For all $a, b, c, d \in A$,</p>
+<p>$$
+T_{a,b}T_{c,d} - T_{c,d}T_{a,b} = T_{ac,\,db} - T_{ca,\,bd},
+$$</p>
+<p>and the right-hand side is a single sandwich exactly when the two index pairs agree, that is when $ac = ca$ and $db = bd$. In particular the antisymmetrisation vanishes for every pair on a commutative algebra.</p>
+<p><em>Proof.</em> The composition rule $T_{a,b}T_{c,d} = T_{ac,db}$ is the theorem of <em>The Sandwich Operator on an Algebra</em>, and subtracting the transposed product gives the display. The two terms on the right coincide exactly when the pairs $(ac, db)$ and $(ca, bd)$ are equal.</p>
+<p><strong>Remark.</strong> The commutator of two multiplications and the antisymmetrisation of the sandwich are the same operation seen twice, and the order that emerges from the two readings is the standard one of the theory of the enveloping algebra of the commutator algebra. The reading is not developed here; the tensor construction of the enveloping algebra belongs to <em>Tensor Products of Algebras</em>, and the Lie theory of the bracket to <em>Lie Algebras</em>.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(k)$ and let $E_{ij}$ be the matrix units. Then</p>
+<p>$$
+[E_{ij}, E_{kl}] = \delta_{jk} E_{il} - \delta_{li} E_{kj},
+$$</p>
+<p>so that the bracket of two matrix units is a difference of two matrix units or vanishes, and the operator $\mathrm{ad}_{E_{ij}}$ sends $E_{kl}$ to $\delta_{jk}E_{il} - \delta_{li}E_{kj}$. The centre is $k \cdot I$, so $\operatorname{InnDer}_k(M_n(k))$ has dimension $n^2 - 1$; the elements $\mathrm{ad}_{E_{ij}}$ with $(i,j) \neq (n,n)$ span it, and $\mathrm{ad}$ is surjective because every derivation of $M_n(k)$ is inner.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>Let $A = \mathbb{H}$ over $\mathbb{R}$. The centre is $\mathbb{R}$, and on the pure imaginary part the bracket of two elements is twice their cross product,</p>
+<p>$$
+[e_1, e_2] = 2e_3, \qquad [e_2, e_3] = 2e_1, \qquad [e_3, e_1] = 2e_2,
+$$</p>
+<p>with the labelling of the generators of <em>The Operators on an Algebra</em>. The operator $\mathrm{ad}_p$ for a pure imaginary $p$ is the derivation of $\mathbb{H}$ determined by $p$, and the correspondence $p \mapsto \mathrm{ad}_p$ is an isomorphism of Lie algebras $\mathbb{H}^{(-)}/\mathbb{R} \cong \mathbb{R}^3$ with the bracket twice the cross product; this is the reason the derivations of the quaternions form a three-dimensional Lie algebra.</p>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p>Let $A$ be commutative. Then $[a, b] = 0$ for all $a$ and $b$, the commutator algebra is the zero Lie algebra, the operator $\mathrm{ad}_a$ is the zero operator for every $a$, and the centre is all of $A$. The commutator operator is the measure of the failure of commutativity, and it is identically zero exactly on the commutative algebras; the algebras for which it is <em>not</em> identically zero are the noncommutative ones, and the size of its image is the size of the inner derivation algebra, $n - \dim_k Z(A)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The commutator $[a,b] = ab - ba$ is a $k$-bilinear antisymmetric operation satisfying the Jacobi identity, so that $A^{(-)} = (A, [\cdot,\cdot])$ is a Lie algebra. Fixing the first argument gives the <strong>adjoint action</strong> $\mathrm{ad}_a(x) = [a,x]$, an operator equal to $L(a) - R(a)$ and equal, on the unit, to the antisymmetrised sandwich, $[a,b] = T_{a,b}(1) - T_{b,a}(1)$. The map $a \mapsto \mathrm{ad}_a$ is a homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$ with $[\mathrm{ad}_a, \mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$, whose kernel is the centre $Z(A)$ and whose image is the space of inner derivations; the kernel of a single $\mathrm{ad}_a$ is the centraliser $C_A(a)$, a subalgebra containing $a$ and the centre.</p>
+<p>Each $\mathrm{ad}_a$ is a derivation, by the Leibniz rule $[a,xy] = [a,x]y + x[a,y]$, and the inner derivations form a Lie ideal of $\operatorname{Der}_k(A)$ on which the outer derivations act by $[\delta, \mathrm{ad}_a] = \mathrm{ad}_{\delta(a)}$. The commutators of the multiplication operators are $[L(a),L(b)] = L([a,b])$, $[R(a),R(b)] = -R([a,b])$ and $[L(a),R(b)] = -A_{a,b}$, the last being the associator; the left and the right multiplication spaces therefore commute exactly when the product is associative, and the two-sided operator is the sandwich of <em>The Sandwich Operator on an Algebra</em>. For $M_n(k)$ the bracket of two matrix units is a difference of two matrix units and the inner derivations have dimension $n^2 - 1$; for $\mathbb{H}$ the bracket on the pure imaginary part is twice the cross product and the derivations form a three-dimensional Lie algebra; and on a commutative algebra the operator is identically zero.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$n = \dim_k A$</td>
+<td>the dimension, when finite</td>
+</tr>
+<tr>
+<td>$[a,b] = ab - ba$</td>
+<td>the commutator</td>
+</tr>
+<tr>
+<td>$A^{(-)}$</td>
+<td>the commutator algebra, $A$ with the bracket</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_a(x) = [a,x]$</td>
+<td>the adjoint action, or inner multiplication operator</td>
+</tr>
+<tr>
+<td>$\mathrm{ad} : A \to \operatorname{End}_k(A)$</td>
+<td>the adjoint representation, $a \mapsto \mathrm{ad}_a$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>the centre, the kernel of $\mathrm{ad}$</td>
+</tr>
+<tr>
+<td>$C_A(a)$</td>
+<td>the centraliser of $a$, the kernel of $\mathrm{ad}_a$</td>
+</tr>
+<tr>
+<td>$\operatorname{InnDer}_k(A)$</td>
+<td>the inner derivations, the image of $\mathrm{ad}$</td>
+</tr>
+<tr>
+<td>$[L(a),L(b)] = L([a,b])$</td>
+<td>the bracket of two left multiplications</td>
+</tr>
+<tr>
+<td>$[L(a),R(b)] = -A_{a,b}$</td>
+<td>the bracket of a left and a right multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the commutator algebra of an associative algebra and its relation to the Lie theory.</li>
+<li>I. N. Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs 15, Mathematical Association of America, 1968), for the centraliser, the centre and inner derivations.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the multiplication algebra and the structure of the operator space.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the adjoint representation and the structure of the inner derivation algebra.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, second edition, 1992), for the endomorphism ring and the centraliser of the regular module.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

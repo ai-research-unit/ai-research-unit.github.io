@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Enveloping Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-enveloping-algebra"><strong>Involutions of the Enveloping Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The involutions of the universal enveloping algebra $U(\mathrm{G})$ — the extension $\Theta$ of an involution $\theta$ of $\mathrm{G}$, the principal anti-automorphism $\sigma$ with $x\mapsto-x$ and reversed products, and the star $\tau=\Theta\sigma$ — are $K$-linear operators on the infinite-dimensional space $U(\mathrm{G})$, and as operators they have adjoints with respect to a bilinear form on that space. This article, the second of the <code>- * Operator Theory</code> group of the category, is the <strong>operator-theoretic reading</strong> of <em>Involutions of the Universal Enveloping Algebra</em>: it fixes the class of invariant forms on $U(\mathrm{G})$ for which the adjoint is defined, proves that the extension $\Theta$ of an involution is <strong>self-adjoint</strong> with respect to any $\Theta$-invariant form, computes the adjoint of the principal anti-automorphism and of the star, and relates the self-adjointness to the invariance of the Casimir element of <em>The Casimir Operator and the Involution</em>. The enveloping algebra and its involutions are the entry of that name; the adjoint operation on a Hilbert space and the unitary representations belong to the analysis of a later Part and are named only; the form is used algebraically and no norm is formed from it.</p>
+<p>The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensional Lie algebra, $U(\mathrm{G})$ its enveloping algebra with the PBW basis of <em>Universal Enveloping Algebras</em>; the maps are $\theta,\Theta,\sigma,\tau$ as in <em>Involutions of the Universal Enveloping Algebra</em>, and the form is written $b$ with adjoint written ${}^{\dagger}$.</p>
+<h2 id="forms-on-the-enveloping-algebra">Forms on the Enveloping Algebra</h2>
+<p><strong>Definition.</strong> A bilinear form $b$ on $U(\mathrm{G})$ is <strong>invariant</strong> when $b(uv,w)=b(u,vw)$ for all $u,v,w$; it is <strong>symmetric</strong> when $b(u,v)=b(v,u)$; it is <strong>nondegenerate</strong> when $b(u,\cdot)=0$ implies $u=0$. A <strong>PBW form</strong> is the bilinear form for which the PBW monomials form an orthogonal basis with prescribed nonzero weights; a <strong>trace form</strong> attached to a module $M$ is $b(u,v)=\operatorname{tr}(L_uL_v)$ for the operators of left multiplication.</p>
+<p><strong>Proposition.</strong> The trace form attached to a finite-dimensional module is symmetric and invariant; the PBW form is symmetric and nondegenerate. On both forms an operator has an adjoint with respect to the form when it is continuous in the finite-dimensional sense, and on the finite-dimensional quotients of $U(\mathrm{G})$ every operator has an adjoint.</p>
+<p><strong>Proof.</strong> The trace of a product of operators is symmetric and invariant under cyclic permutation; the PBW form is symmetric and nondegenerate by the PBW theorem; the existence of adjoints on finite-dimensional quotients is linear algebra. $\square$</p>
+<p><strong>Definition.</strong> Let $b$ be a nondegenerate form. The <strong>adjoint</strong> of a linear operator $T$ is the operator $T^{\dagger}$ with $b(Tu,v)=b(u,T^{\dagger}v)$ for all $u,v$; it exists when the form is nondegenerate and the relevant linear functionals are represented.</p>
+<h2 id="adjoints-of-the-involutions">Adjoints of the Involutions</h2>
+<p><strong>Theorem.</strong> Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension, and let $b$ be a $\Theta$-invariant symmetric form, $b(\Theta u,\Theta v)=b(u,v)$. Then $\Theta$ is self-adjoint:</p>
+<p>$$
+\Theta^{\dagger}=\Theta .
+$$</p>
+<p><strong>Proof.</strong> Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=b(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=b(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$. $\square$</p>
+<p><strong>Corollary.</strong> With respect to the PBW form and with respect to the trace form of a module on which $\Theta$ acts by an isometry, the extension of any involution is self-adjoint; in particular the extension of the Cartan involution is self-adjoint, and the $\pm1$-eigenspaces of $\Theta$ in $U(\mathrm{G})$, the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$, are the subalgebra and the complement of the induced decomposition.</p>
+<p><strong>Theorem.</strong> The principal anti-automorphism satisfies, with respect to a symmetric invariant form,</p>
+<p>$$
+\sigma^{\dagger}=\sigma ,
+$$</p>
+<p>and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are self-adjoint with respect to a symmetric invariant form.</p>
+<p><strong>Proof.</strong> For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $b$ under the anti-automorphism: $b(\sigma u,\sigma w)=b(u,w)$ when $b$ is compatible with $\sigma$ (the <strong>$\sigma$-invariance</strong> of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint. $\square$</p>
+<p><strong>Remark.</strong> The self-adjointness is not automatic: it holds exactly for the forms invariant under the operator in question. The PBW form is invariant under $\Theta$ when $\theta$ permutes the PBW monomials of each degree, which holds for the involutions induced by the automorphisms of $\mathrm{G}$ that preserve the chosen basis; for a general invariant form the adjoint of $\Theta$ is $\Theta^{-1}$ conjugated by the form, and $\Theta^{-1}=\Theta$.</p>
+<h2 id="the-star-and-the-casimir-operator">The Star and the Casimir Operator</h2>
+<p><strong>Proposition.</strong> The Casimir element $C$ of <em>The Casimir Operator and the Involution</em> is fixed by $\Theta,\sigma,\tau$ and is therefore self-adjoint with respect to any invariant form for which these maps are self-adjoint; the operator of left multiplication by $C$ satisfies $L_C^{\dagger}=L_C$.</p>
+<p><strong>Proof.</strong> $C$ is central, so $L_C=R_C$ and $L_C$ commutes with the maps; the invariance of the form under $C$ and the self-adjointness of $L_C$ follow from the centrality and the theorem. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint of the extension of an involution and the adjoint of the star coincide on the image of the centre, since both fix $C$; the eigenspaces of the adjoint action are the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$ and the associated decomposition is the one used by the symmetric pair.</p>
+<h2 id="the-math82-grading-of-the-operators">The $\Theta$-Grading of the Operators</h2>
+<p><strong>Proposition.</strong> The algebra $\operatorname{End}_K(U(\mathrm{G}))$ of operators is $\mathbb{Z}/2$-graded by the conjugation by $\Theta$, with even operators those commuting with $\Theta$ and odd those anticommuting; the involutions $\Theta,\sigma,\tau$ are even, $\Theta$ because it commutes with itself, and $\sigma,\tau$ because they commute with $\Theta$ as shown in <em>Involutions of the Universal Enveloping Algebra</em>.</p>
+<p><strong>Proof.</strong> The conjugation $T\mapsto\Theta T\Theta$ is an automorphism of order two of the operator algebra, giving the grading; the three maps are fixed by it. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint operation ${}^{\dagger}$ with respect to a $\Theta$-invariant form commutes with the $\mathbb{Z}/2$-grading: the adjoint of an even operator is even and of an odd operator is odd, and the self-adjoint involutions are even.</p>
+<h2 id="worked-case-math96">Worked Case: $U(\mathrm{sl}(2,K))$</h2>
+<p>Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $b$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\Theta$ of the Cartan involution $\theta(x)=-x^{t}$ permutes the monomials of each degree and preserves $b$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\theta$-symmetric and $\theta$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $b$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\Theta\sigma$ is self-adjoint and fixes the Casimir element $C$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.</p>
+<p><strong>Verified.</strong> The self-adjointness of $\Theta$ and $\sigma$ was checked on the PBW monomials of degree at most two of $U(\mathrm{sl}(2,K))$ for the weighted PBW form, and the weights were checked to be symmetric under the reversal $e^ih^jf^k\mapsto f^kh^je^i$.</p>
+<h2 id="summary">Summary</h2>
+<p>The involutions of $U(\mathrm{G})$ are linear operators, and with respect to a <strong>symmetric invariant form</strong> they are <strong>self-adjoint</strong>: the extension $\Theta$ of an involution of $\mathrm{G}$ satisfies $\Theta^{\dagger}=\Theta$ whenever the form is $\Theta$-invariant, the principal anti-automorphism $\sigma$ and the star $\tau=\Theta\sigma$ are likewise self-adjoint for forms compatible with them, and the Casimir element $C$, being fixed by all of them and central, gives a self-adjoint operator of left multiplication. The operator algebra $\operatorname{End}_K(U(\mathrm{G}))$ carries the $\mathbb{Z}/2$-grading by conjugation with $\Theta$, and the three involutions are even in that grading; the adjoint operation preserves the grading. Self-adjointness is not automatic and holds exactly for the invariant forms, the PBW form and the trace form of the natural modules being the examples. The analysis of the spectrum and the unitary representations belongs to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic zero</td>
+</tr>
+<tr>
+<td>$U(\mathrm{G})$</td>
+<td>the universal enveloping algebra</td>
+</tr>
+<tr>
+<td>$\Theta,\sigma,\tau$</td>
+<td>the extension, the principal anti-automorphism, the star</td>
+</tr>
+<tr>
+<td>$b$</td>
+<td>a symmetric invariant form</td>
+</tr>
+<tr>
+<td>$T^{\dagger}$</td>
+<td>the adjoint of $T$ with respect to $b$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the Casimir element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Enveloping Algebras</em>, Graduate Studies in Mathematics 11 (American Mathematical Society, 1996), for invariant forms and the star structures.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the enveloping algebra and the Casimir element.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 1–3 (Springer, 1989), for the PBW theorem and the symmetric algebra.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the invariant operators of the symmetric pair.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

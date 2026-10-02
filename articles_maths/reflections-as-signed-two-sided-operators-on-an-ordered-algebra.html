@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on an Ordered Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-an-ordered-algebra"><strong>Reflections as Signed Two-Sided Operators on an Ordered Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>reflection</strong> of an algebra is an automorphism of order two, and a <strong>reflection element</strong> is an element $a$ that the grade involution inverts, $\alpha(a) = a^{-1}$. The previous article showed that every reflection element produces a reflection of the algebra, the <strong>signed conjugation</strong></p>
+<p>$$
+\tau_a : x\mapsto a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,\alpha(a)^{-1}}(x),
+$$</p>
+<p>which is a signed two-sided operator. This article reads the correspondence in both directions: the reflection elements form a group under the twisted product $(a,b)\mapsto a\alpha(b)$, the map $a\mapsto\tau_a$ is a <strong>homomorphism</strong> from that group onto the reflections of the algebra that the signed sandwich realises, and the homomorphism has a kernel — the <strong>central reflection elements</strong>, which act trivially — so that the correspondence is neither injective nor surjective. The <strong>grade involution</strong> itself is the reflection $\tau_1$ realised by the identity, which is the reason the graded structure sits inside the reflections; and the failure of the correspondence in the degenerate cases — central elements, an inner grade involution, and characteristic two — is stated exactly.</p>
+<p>The article also gives the order-theoretic reading, which is what an ordered algebra adds: a reflection is <strong>positive</strong> when it preserves the cone of the algebra, and the signed two-sided operators that are positive are the ones whose grade involution and whose parameters preserve the cone. The reflections of the ordered algebra are therefore an invariant of the order as much as of the algebra, and the ones that come from the sandwich split into the order-preserving and the order-reversing ones according to the signs of the parameters.</p>
+<p>The signed sandwich, its composition law and its reflection elements are <em>The Signed Sandwich on an Ordered Algebra</em>; the one-sided multiplications and the ordered algebra are <em>The Left and Right Multiplication Operators on an Ordered Algebra</em>; the grading and the grade involution are <em>Superalgebras and Graded Structures</em> of Part I; the order and the operator order are <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; the outer automorphisms and the conjugation classes are <em>The Operators on an Algebra</em> of Part I. The signed left multiplication, which is the one-sided companion of this article, is <em>The Signed Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Action on a Module over an Ordered Algebra</em>; and the adjoint of the signed sandwich is <em>The Signed Adjoint Sandwich on an Ordered Algebra</em> at the end of this category. The <strong>unsigned</strong> reflections of the associative algebra, the inner automorphisms and the involution of the algebra, are <em>The Operators on an Algebra</em> and <em>Ordered Involutive Algebras</em>, and they are cited.</p>
+<h2 id="reflections-and-reflection-elements">Reflections and Reflection Elements</h2>
+<p><strong>Definition.</strong> A <strong>reflection</strong> of an algebra $A$ is an algebra automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$. It is <strong>positive</strong> when it preserves the cone, $\sigma(A_+)\subseteq A_+$, and <strong>order reversing</strong> when $\sigma(A_+)\subseteq -A_+$. A <strong>reflection element</strong> is an element $a\in A$ with $\alpha(a) = a^{-1}$; the associated <strong>signed two-sided operator</strong> is the signed conjugation $\tau_a$.</p>
+<p><strong>Proposition (well definedness and the fibre of the correspondence).</strong> For every reflection element $a$ the operator $\tau_a$ is a reflection. Two reflection elements give the same reflection,</p>
+<p>$$
+\tau_a = \tau_{a'} ,
+$$</p>
+<p>if and only if the ratio $a^{-1}a'$ is central; consequently the map $a\mapsto\tau_a$ is injective modulo the central reflection elements, and no more.</p>
+<p><em>Proof.</em> The reflection property is the reflection theorem of <em>The Signed Sandwich on an Ordered Algebra</em>. If $a^{-1}a' = z$ is central then $a' = az$ and $\tau_{a'}(x) = az\alpha(x)(az)^{-1} = a\alpha(x)a^{-1} = \tau_a(x)$ because a central element commutes with everything; conversely $\tau_a = \tau_{a'}$ gives $a^{-1}a'\,\alpha(x) = \alpha(x)\,a^{-1}a'$ for every $x$, so $a^{-1}a'$ commutes with $\alpha(A) = A$.</p>
+<p><strong>Proposition (the product of two realised reflections).</strong> For reflection elements $a,b$,</p>
+<p>$$
+\tau_a\,\tau_b = \tau_{a\alpha(b)} ,
+$$</p>
+<p>the sandwich with the <strong>product parameter</strong> $c = a\alpha(b)$; this product is again a <strong>realised reflection</strong> if and only if $c$ is again a reflection element, which happens exactly when $a$ and $b$ commute. Hence a set of pairwise commuting reflection elements is a group under the twisted product $a\cdot b = a\alpha(b)$, with inverse $a\mapsto\alpha(a) = a^{-1}$ and identity $1$, and the correspondence is a group homomorphism on it.</p>
+<p><em>Proof.</em> By the composition law of the signed sandwich, $\tau_a\tau_b = \Theta^{\alpha}_{a\alpha(b),\,b^{-1}\alpha(a)^{-1}}$; the reflection-element identities $b^{-1} = \alpha(b)$ and $\alpha(a)^{-1} = a$ give $\Theta^{\alpha}_{a\alpha(b),\,b^{-1}a}$, which is $\tau_{a\alpha(b)}$ because $\alpha(a\alpha(b))^{-1} = (a^{-1}b)^{-1} = b^{-1}a$. The product parameter $c = a\alpha(b)$ is a reflection element exactly when $\alpha(c) = c^{-1}$, that is, $a^{-1}b = b\,a^{-1}$, which is the commutation of $a$ and $b$. When the elements commute pairwise, the closure, the associativity, the identity and the inverse make the set a group and the product formula makes $\tau$ a homomorphism.</p>
+<h2 id="the-correspondence">The Correspondence</h2>
+<p><strong>Theorem (the reflections realised by the signed sandwich).</strong> The map</p>
+<p>$$
+\tau : R(A,\alpha)\to \operatorname{Aut}(A), \qquad a\mapsto\tau_a,
+$$</p>
+<p>from the set $R(A,\alpha)$ of reflection elements into the group of automorphisms of $A$ takes its values in the reflections, and two reflection elements give the same reflection exactly when their ratio is central. The image is</p>
+<p>$$
+\operatorname{im}\tau = \{\operatorname{Inn}_a\circ\alpha : a\in R(A,\alpha)\} ,
+$$</p>
+<p>the <strong>realised reflections</strong>, and the grade involution is the reflection $\tau_1$; every realised reflection is the composite of the grade involution with an inner automorphism, $\tau_a = \operatorname{Inn}_a\circ\alpha = \alpha\circ\operatorname{Inn}_{\alpha(a)^{-1}}$. When the grade involution is inner the realised reflections are exactly the inner reflections of $A$.</p>
+<p><em>Proof.</em> That $\tau_a$ is an involution is the reflection theorem of the previous article, and the fibre is the fibre proposition above. If $a$ is a reflection element then $\tau_a = \operatorname{Inn}_a\circ\alpha$ by definition and $\alpha\circ\operatorname{Inn}_{\alpha(a)^{-1}}(x) = \alpha(\alpha(a)^{-1}x\alpha(a)) = a\alpha(x)a^{-1}$, so the two composites agree. The inner case is the inner shift of the signed sandwich, under which the realised reflections are the inner automorphisms of $A$ of order two.</p>
+<p><strong>Corollary (the reflections of the algebra that are realised).</strong> A reflection $\sigma$ of $A$ is a signed two-sided operator if and only if $\alpha^{-1}\sigma$ is an inner automorphism; the parameters realising it are the reflection elements $a$ with $\operatorname{Inn}_a = \alpha^{-1}\sigma$, and they form a coset of the central reflection elements.</p>
+<p><em>Proof.</em> If $\sigma = \tau_a$ then $\alpha^{-1}\sigma = \operatorname{Inn}_a$ is inner by the composite formula. Conversely if $\alpha^{-1}\sigma = \operatorname{Inn}_a$ then $\sigma = \tau_a$; and $a$ is a reflection element because $\tau_a$ is a reflection, by the reflection theorem read backwards. The ambiguity is the fibre of $\operatorname{Inn}$, which is the centre.</p>
+<h3 id="positivity-of-the-reflections">Positivity of the Reflections</h3>
+<p><strong>Proposition.</strong> A realised reflection $\tau_a$ is positive if and only if the signed sandwich $\Theta^{\alpha}_{a,\alpha(a)^{-1}}$ is positive; in particular, if the grade involution is positive and both $a$ and $\alpha(a)^{-1}$ are positive, then $\tau_a$ is positive, and if the grade involution is positive and $a$ is positive while $\alpha(a)^{-1} = \alpha(a^{-1})$ is negative, then $\tau_a$ is order reversing. In the graded case with parity $\varepsilon$ the reflection acts as</p>
+<p>$$
+\tau_a(x) = \varepsilon_x\,\operatorname{Inn}_a(x) \qquad (x \ \text{homogeneous}) ,
+$$</p>
+<p>so it agrees with the ordinary inner conjugation on the even part and is its negative on the odd part.</p>
+<p><em>Proof.</em> The first statement is the definition of the positivity of an operator; the positivity criteria are those of the positivity proposition of <em>The Signed Sandwich on an Ordered Algebra</em>; the parity formula is the parity formula of the same proposition applied to the sandwich $\Theta^\alpha_{a,\alpha(a)^{-1}}$.</p>
+<h2 id="the-failure-in-the-degenerate-cases">The Failure in the Degenerate Cases</h2>
+<p><strong>Theorem (the correspondence is not injective).</strong> The central reflection elements act trivially. If the centre of $A$ is nontrivial and the grade involution is the identity, every central involution is a reflection element with $\tau_a = \mathrm{id}$, so the map $a\mapsto\tau_a$ is not injective, and the reflections must be read <strong>up to the centre</strong>. In $A = \mathbb{R}$ the element $-1$ is a central reflection element with $\tau_{-1} = \mathrm{id}$; since $\mathbb{R}$ has no non-trivial algebra automorphism, the correspondence realises only the identity, and the example shows the smallest possible degeneracy.</p>
+<p><em>Proof.</em> This is the identification of the fibre in the well-definedness proposition; in a commutative algebra every element is central, so $\tau_a$ depends on $a$ only through the coset $aZ$.</p>
+<p><strong>Theorem (the correspondence is not surjective).</strong> An outer automorphism of order two that does not differ from the grade involution by an inner automorphism is a reflection of $A$ that is <strong>not</strong> a signed two-sided operator. In particular, if $\alpha$ is inner, no outer reflection is realised, and the image of $\tau$ consists of the inner reflections.</p>
+<p><em>Proof.</em> By the corollary, a realised reflection is $\alpha$ composed with an inner automorphism, so its class in the outer automorphism group is the class of $\alpha$; a reflection with a different outer class is not realised. When $\alpha$ is inner, the class of $\alpha$ is trivial, so the image is inner.</p>
+<p><strong>Proposition (the collapse in the degenerate cases).</strong> The correspondence degenerates in three ways: when the grade involution is <strong>inner</strong>, every signed sandwich is an unsigned sandwich with shifted parameters, so the realised reflections are the ordinary inner reflections; when the algebra is <strong>commutative</strong>, every element is central and the fibre is everything, so no non-trivial reflection is realised by the sandwich unless the grade involution differs from the identity; and in <strong>characteristic two</strong> the equation $\alpha^2 = \mathrm{id}$ with $\alpha$ an algebra automorphism forces every element to be even, the grading collapses, and the sign rule is trivial.</p>
+<p><em>Proof.</em> The inner case is the inner shift of the previous article; the commutative case is the non-injectivity theorem; in characteristic two, $-1 = 1$ so the two eigenspaces of $\alpha$ coincide and the decomposition into even and odd parts is the trivial one.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{R})$ with the identity grade involution. The reflection elements are the involutions $a^2 = 1$, and the reflected operator is the ordinary conjugation $\tau_a(x) = axa^{-1}$. The realised reflections are the inner involutions and the fibre over the trivial reflection is the set of central involutions $\{\pm I\}$, so $I$ and $-I$ realise the same reflection; the map $a\mapsto\tau_a$ is therefore not injective, and the reflections are read <strong>up to the centre</strong>. This is the simplest non-injective case.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>Let $A = \mathbb{B} = M_2(\mathbb{C})$ with $\alpha$ the conjugation by $\operatorname{diag}(1,-1)$. The off-diagonal element with $a^2 = -1$ is an odd reflection element, and $\tau_a$ is the signed conjugation: the ordinary conjugation by $a$ on the even part and its negative on the odd part. Since $\alpha$ is inner in $M_2(\mathbb{C})$, the signed conjugation is an unsigned sandwich after the shift of parameters, and the reflection $\tau_a$ is inner; the signed structure is thus invisible in the operator but visible in the <strong>parity</strong> of the element that realises it. This is the exact sense in which "the signed Hermitian member is not a second structure": the reflection is the ordinary one and the sign is the parity.</p>
+<h3 id="the-clifford-algebra">The Clifford Algebra</h3>
+<p>Let $A$ be the Clifford algebra of a <strong>nondegenerate</strong> quadratic form on a vector space $V$, with the grade involution the parity. A vector $e$ with $e^2 = -1$ is odd and satisfies $\alpha(e) = -e = e^{-1}$, so it is a reflection element, and $\tau_e$ is an involution of $A$; restricted to $V$ it is a reflection of the vector space, up to the sign conventions of the form. The vectors $e$ and $-e$ give the same reflection, so the fibre is again $\{\pm1\}$ and the correspondence between the reflections of $V$ and the reflection elements is bijective modulo the sign. When the form is <strong>degenerate</strong> there are nonzero isotropic vectors $e$ with $e^2 = 0$; such an $e$ has no inverse, the reflection-element condition cannot be met, and the correspondence fails. This is the geometric content of the phrase "the failure in the degenerate cases", and the Clifford algebra instance that motivates the whole construction.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>reflection</strong> of an algebra is an automorphism of order two, <strong>positive</strong> when it preserves the cone; a <strong>reflection element</strong> is an $a$ with $\alpha(a) = a^{-1}$. The reflected operator is the signed two-sided operator $\tau_a(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,\alpha(a)^{-1}}(x)$; the map $\tau : a\mapsto\tau_a$ takes the reflection elements into the reflections, two reflection elements give the same reflection exactly when their ratio is central — this is the <strong>non-injectivity</strong> — and $\tau$ is a group homomorphism for the <strong>twisted product</strong> $a\cdot b = a\alpha(b)$ exactly on a set of pairwise commuting reflection elements. The realised reflections are exactly the composites of the grade involution with the inner automorphisms, $\tau_a = \operatorname{Inn}_a\circ\alpha$; the reflections with a different outer class are <strong>not</strong> realised — this is the <strong>non-surjectivity</strong>. The <strong>grade involution is the reflection $\tau_1$</strong>. In the graded case $\tau_a(x) = \varepsilon_x\operatorname{Inn}_a(x)$, the ordinary conjugation on the even part and its negative on the odd part, and the correspondence <strong>collapses</strong> when the grade involution is inner, when the algebra is commutative, and in characteristic two. The signed sandwich and its composition law are <em>The Signed Sandwich on an Ordered Algebra</em>; the one-sided multiplications are <em>The Left and Right Multiplication Operators on an Ordered Algebra</em>; the grading is <em>Superalgebras and Graded Structures</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; and the adjoint of the signed sandwich is <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma^2 = \mathrm{id}$</td>
+<td>Reflection, an automorphism of order two</td>
+</tr>
+<tr>
+<td>$\alpha(a) = a^{-1}$</td>
+<td>Reflection element</td>
+</tr>
+<tr>
+<td>$\tau_a(x) = a\alpha(x)a^{-1}$</td>
+<td>Reflected signed two-sided operator</td>
+</tr>
+<tr>
+<td>$a\cdot b = a\alpha(b)$</td>
+<td>Twisted product of the reflection elements</td>
+</tr>
+<tr>
+<td>$R(A,\alpha)$</td>
+<td>Set of reflection elements</td>
+</tr>
+<tr>
+<td>$\tau_{a\alpha(b)} = \tau_a\tau_b$</td>
+<td>Product of two realised reflections</td>
+</tr>
+<tr>
+<td>$a^{-1}a'$ central</td>
+<td>The fibre: $\tau_a = \tau_{a'}$, the non-injectivity</td>
+</tr>
+<tr>
+<td>$\tau_a = \operatorname{Inn}_a\circ\alpha$</td>
+<td>Outer class obstruction, the non-surjectivity</td>
+</tr>
+<tr>
+<td>$\tau_1 = \alpha$</td>
+<td>The grade involution as a reflection</td>
+</tr>
+<tr>
+<td>$\tau_a(x) = \varepsilon_x\operatorname{Inn}_a(x)$</td>
+<td>Parity formula in the graded case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the reflections realised by the conjugation by a unit vector and the parity grading.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the graded structure and the reflection formula of a Clifford algebra.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1956), for the automorphisms, the inner automorphisms and the centre of an associative algebra.</li>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the reflections and the sandwich operators of the Jordan structures.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the automorphisms of an operator algebra and the inner-outer dichotomy.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

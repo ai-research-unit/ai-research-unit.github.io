@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-lie-algebra"><strong>The Graded Action on a Module over a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>graded module</strong> over a graded Lie algebra is a module with a decomposition compatible with the grading of the algebra, so that an element of parity $\epsilon$ carries the piece of parity $\delta$ to the piece of parity $\epsilon+\delta$; the compatibility of the action with the bracket then carries the <strong>sign rule</strong>, and it is the sign rule and not the grading alone that distinguishes the graded action from the action of a Lie algebra on a module. The graded module is the same object as a module over the enveloping algebra of the graded Lie algebra, and its sign rule is the one of the graded and the super structures.</p>
+<p>This article treats the graded action on a module over a Lie algebra: the compatibility of the action with the grading and the sign rule it imposes. It is the eighth and last article of the <code>- Operator Theory</code> group of the category; the graded Lie algebra and its enveloping algebra are <em>Graded Lie Algebras and Lie Superalgebras</em> and <em>Superalgebras and Graded Structures</em>, the module structure is <em>Representations of Lie Algebras</em>, the graded action of a group on a module is <em>The Graded Action on a Module over a Group</em>, and the adjoint of the action is <em>The Graded Adjoint Action on a Module over a Lie Algebra</em> of the <code>- * Operator Theory</code> group, below in the category.</p>
+<p>The article assumes the graded Lie algebra, the grade involution and the Koszul sign rule from <em>Graded Lie Algebras and Lie Superalgebras</em> and <em>Superalgebras and Graded Structures</em>, the module over a Lie algebra and the enveloping algebra from <em>Representations of Lie Algebras</em> and <em>Universal Enveloping Algebras</em>, the exterior and the symmetric algebras with their signs from <em>The Exterior Algebra</em> and <em>Superalgebras and Graded Structures</em>, and the graded action on a module over a group from <em>The Graded Action on a Module over a Group</em>, cited as the model. The Hermitian forms and the adjoints of the operators are deferred to the <code>- * Operator Theory</code> articles below; the present article fixes the action and its signs only.</p>
+<h2 id="graded-modules">Graded Modules</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G} = \mathrm{G}^{+}\oplus\mathrm{G}^{-}$ be a graded Lie algebra over a field $k$ of characteristic different from $2$, with the grade involution $\alpha$ and the parity $\lvert x\rvert\in\{0,1\}$ of a homogeneous element. A <strong>graded module</strong> over $\mathrm{G}$ is a vector space with a decomposition</p>
+<p>$$
+M = M^{+}\oplus M^{-}
+$$</p>
+<p>and a bilinear action $\mathrm{G}\times M\to M$, $(x,m)\mapsto x\cdot m$, such that</p>
+<p>$$
+\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta} \qquad (\epsilon,\delta\in\{0,1\}),
+$$</p>
+<p>and such that the action is compatible with the bracket in the graded sense,</p>
+<p>$$
+[x,y]\cdot m = x\cdot(y\cdot m) - (-1)^{\lvert x\rvert\lvert y\rvert}\,y\cdot(x\cdot m)
+$$</p>
+<p>for homogeneous $x,y$ and every $m\in M$.</p>
+<p><strong>Definition.</strong> The <strong>parity operator</strong> of $M$ is the involution $\beta$ equal to $+\mathrm{id}$ on $M^{+}$ and $-\mathrm{id}$ on $M^{-}$; it is the analogue on $M$ of the grade involution $\alpha$ on $\mathrm{G}$, and the grading of $M$ is the eigenspace decomposition of $\beta$.</p>
+<p><strong>Proposition.</strong> The compatibility condition is equivalent to the two statements</p>
+<p>$$
+x\cdot(\beta m) = (-1)^{\lvert x\rvert}\,\beta(x\cdot m), \qquad x\cdot M^{\delta}\subseteq M^{\delta+\lvert x\rvert} ,
+$$</p>
+<p>the first of which says that the action graded-commutes with the parity operator, $x\beta = (-1)^{\lvert x\rvert}\beta x$ as operators when $x$ is homogeneous; the odd elements of $\mathrm{G}$ reverse the grading of $M$ and the even elements preserve it.</p>
+<p><em>Proof.</em> For $m\in M^{\delta}$ one has $\beta m = (-1)^{\delta}m$ and $x\cdot m\in M^{\delta+\lvert x\rvert}$, so $\beta(x\cdot m) = (-1)^{\delta+\lvert x\rvert}x\cdot m = (-1)^{\lvert x\rvert}x\cdot(\beta m)$; the converse is the same computation read backwards. The last statement is the case distinction on $\lvert x\rvert$.</p>
+<h3 id="the-sign-rule">The Sign Rule</h3>
+<p><strong>Theorem (the sign rule is forced).</strong> Let $M$ be a graded module and let $x,y$ be homogeneous elements of odd parity. Then the two orders of application of $x$ and $y$ are related by</p>
+<p>$$
+x\cdot(y\cdot m) + y\cdot(x\cdot m) = [x,y]\cdot m ,
+$$</p>
+<p>and the anticommutator replaces the commutator; for two even elements the ordinary commutator appears, and for an even and an odd element the sign is $+1$. Hence the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ of the definition is the only sign for which the odd-odd case is consistent with the Jacobi identity of the bracket.</p>
+<p><em>Proof.</em> The displayed identity is the definition with both parities odd, where $(-1)^{\lvert x\rvert\lvert y\rvert} = -1$; the compatibility of the three parities with the graded Jacobi identity of $\mathrm{G}$ forces the sign, because the action is a representation and the graded Jacobi identity is the associativity of the action.</p>
+<p><strong>Corollary.</strong> The action extends to the enveloping algebra $U(\mathrm{G})$ with the graded product: $M$ is a module over the associative algebra $U(\mathrm{G})$, the multiplication of two odd elements acquiring the sign $-1$, and the parity operator $\beta$ is an automorphism of $M$ as a graded module in the sense of the graded-commutation above.</p>
+<p><em>Proof.</em> The universal property of $U(\mathrm{G})$ as the quotient of the tensor algebra by the relations $xy - (-1)^{\lvert x\rvert\lvert y\rvert}yx = [x,y]$ gives the extension; the compatibility of $\beta$ is the proposition.</p>
+<h2 id="the-structure-of-the-graded-action">The Structure of the Graded Action</h2>
+<h3 id="the-even-and-the-odd-parts">The Even and the Odd Parts</h3>
+<p><strong>Proposition.</strong> The even part $\mathrm{G}^{+}$ acts on $M$ by operators preserving the decomposition, and the odd part $\mathrm{G}^{-}$ acts by operators exchanging the two pieces; the action of $\mathrm{G}^{+}$ on $M^{+}$ and on $M^{-}$ are two modules over the even subalgebra, and the action of $\mathrm{G}^{-}$ is an intertwining between them.</p>
+<p><em>Proof.</em> The inclusion $\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$ is the statement for the parities; the two modules over $\mathrm{G}^{+}$ are the restrictions of the action, and the odd action maps each into the other, intertwining the two $\mathrm{G}^{+}$-modules by the graded compatibility.</p>
+<h3 id="the-submodules-and-the-quotients">The Submodules and the Quotients</h3>
+<p><strong>Definition.</strong> A <strong>graded submodule</strong> is a subspace $N\subseteq M$ with $N = (N\cap M^{+})\oplus(N\cap M^{-})$ and $\mathrm{G}\cdot N\subseteq N$; the <strong>quotient</strong> $M/N$ is graded with the induced decomposition, and the <strong>homomorphisms</strong> of graded modules are the linear maps respecting the action and the grading, $f(M^{\delta})\subseteq N^{\delta}$.</p>
+<p><strong>Theorem.</strong> The graded modules over $\mathrm{G}$ form an abelian category with the exact sequences respecting the grading, every homomorphism has a kernel and a cokernel graded, and the category is equivalent to the category of the graded modules over the enveloping algebra $U(\mathrm{G})$.</p>
+<p><em>Proof.</em> The axioms are verified as for the modules over a ring, with the gradings carried along; the equivalence is the extension of the action to $U(\mathrm{G})$ of the corollary above, which is an equivalence on the objects and on the morphisms.</p>
+<h3 id="the-free-module-and-the-basis">The Free Module and the Basis</h3>
+<p><strong>Theorem.</strong> The graded module $U(\mathrm{G})$ with the multiplication as the action is the free graded module of rank one; a graded module is free exactly when it has a homogeneous basis, and over a field every graded module has a homogeneous basis obtained by extending a basis of $M^{+}$ and one of $M^{-}$.</p>
+<p><em>Proof.</em> The action of $U(\mathrm{G})$ on itself by multiplication satisfies the compatibility by the associativity; the existence of the homogeneous basis is the extension of bases in a graded vector space, and the freeness is the universality of $U(\mathrm{G})$.</p>
+<h2 id="the-enveloping-algebra-and-the-induced-structures">The Enveloping Algebra and the Induced Structures</h2>
+<h3 id="the-graded-tensor-product">The Graded Tensor Product</h3>
+<p><strong>Definition.</strong> Let $M$ and $N$ be graded modules over the graded algebra $\mathrm{G}$. Their <strong>graded tensor product</strong> is the vector space $M\otimes N$ with the grading</p>
+<p>$$
+(M\otimes N)^{\epsilon} = \bigoplus_{\delta+\delta'=\epsilon} M^{\delta}\otimes N^{\delta'} ,
+$$</p>
+<p>the action</p>
+<p>$$
+x\cdot(m\otimes n) = (x\cdot m)\otimes n + (-1)^{\lvert x\rvert\lvert m\rvert}\,m\otimes(x\cdot n) ,
+$$</p>
+<p>and the <strong>Koszul flip</strong> $\tau(m\otimes n) = (-1)^{\lvert m\rvert\lvert n\rvert}n\otimes m$, which is an isomorphism of graded modules.</p>
+<p><strong>Theorem.</strong> The graded tensor product of two graded modules is a graded module, the action satisfies the graded Leibniz rule, and $\tau$ is an involution on the tensor square up to the identity; the parity of a product is the sum of the parities and the sign rule is preserved under the flip.</p>
+<p><em>Proof.</em> The compatibility $x\cdot(M\otimes N)^{\epsilon}\subseteq(M\otimes N)^{\epsilon+\lvert x\rvert}$ is the case distinction on the parities; the graded Leibniz rule and the sign of the flip are the associativity of the action with the sign of the definition, checked on homogeneous elements; $\tau^2 = \mathrm{id}$ because the sign $(-1)^{\lvert m\rvert\lvert n\rvert}$ is its own inverse.</p>
+<h3 id="the-free-module">The Free Module</h3>
+<p><strong>Theorem.</strong> For a graded vector space $V$ the module $U(\mathrm{G})\otimes V$ with the action by the left multiplication of the first factor is the <strong>free graded module</strong> on the generators $V$, and every graded module is a quotient of a free one; a graded module is free exactly when it has a homogeneous basis, and the rank is the graded dimension of $V$.</p>
+<p><em>Proof.</em> The action of $U(\mathrm{G})$ on the tensor product by the left multiplication is well defined and satisfies the compatibility; the universal property of the tensor product over the field gives the freeness, and the homogeneous basis is the one of $V$; the quotient statement is the standard presentation of a module by its relations, with the gradings carried along.</p>
+<h3 id="the-graded-dual">The Graded Dual</h3>
+<p><strong>Definition.</strong> The <strong>graded dual</strong> of a graded module $M$ is the graded module $M^{*}$ with the pieces $(M^{*})^{\epsilon} = (M^{\epsilon})^{*}$, the linear functionals of parity $\epsilon$, and the action</p>
+<p>$$
+(x\cdot f)(m) = -(-1)^{\lvert x\rvert\lvert f\rvert}\,f(x\cdot m) .
+$$</p>
+<p><strong>Theorem.</strong> The graded dual is a graded module, the <strong>transpose</strong> of a homomorphism $u : M\to N$ is the homomorphism $u^{*} : N^{*}\to M^{*}$ with $u^{*}f = f\circ u$, and the canonical map $M\to M^{**}$ is injective, respects the grading and the action, and is an isomorphism in finite dimension.</p>
+<p><em>Proof.</em> The sign in the action is chosen so that the compatibility with the bracket holds: the two orders of $x$ and $y$ on $f$ produce the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ exactly as in the definition, which is the check of the graded Leibniz rule on the dual. The functoriality of the transpose and the injectivity of the double dual are the same as for the ungraded modules, with the gradings respected by construction.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-adjoint-module">The Adjoint Module</h3>
+<p>The algebra $\mathrm{G}$ itself is a graded module over $\mathrm{G}$ under the adjoint action $x\cdot m = [x,m]$; the compatibility is the graded Jacobi identity, $[x,[y,m]] - (-1)^{\lvert x\rvert\lvert y\rvert}[y,[x,m]] = [[x,y],m]$, and the parity operator is the grade involution $\alpha$. This is the module of the operator layer of the algebra, and its graded submodules are the graded ideals.</p>
+<h3 id="the-exterior-algebra">The Exterior Algebra</h3>
+<p>Let $V$ be a vector space placed in odd parity and let $\mathrm{G}$ act on $V$; then the exterior algebra $\Lambda(V)$ is a graded module over $\mathrm{G}$ with the action extended as a graded derivation, and the sign rule of the action is the one of the Koszul sign of <em>Superalgebras and Graded Structures</em>; the odd elements of $\mathrm{G}$ act by the multiplication by their images, and the even elements act by derivations.</p>
+<h3 id="the-clifford-module">The Clifford Module</h3>
+<p>Let $V$ carry a quadratic form and let $\mathrm{G}$ be the orthogonal Lie algebra of <em>The Orthogonal Lie Algebra</em>, graded by the involution that reverses the vector part; then the Clifford module of <em>Spin Representations and Clifford Modules with Inner Conjugation</em> is a graded module over $\mathrm{G}$, the even part preserving the chirality and the odd part exchanging the two chiralities, and the sign rule is the one of the Clifford relations.</p>
+<h3 id="the-trivial-grading">The Trivial Grading</h3>
+<p>If $\mathrm{G}$ is entirely even, the grade involution is the identity, the sign rule becomes the ordinary one, and the graded modules are the ordinary modules; the graded theory contains the ungraded one as the case of the trivial grading, and the general case is the one in which the odd part is nonzero and the signs of the odd-odd pairs are $-1$.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>graded module</strong> over a graded Lie algebra is a module $M = M^{+}\oplus M^{-}$ with $\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$ and the graded compatibility $[x,y]\cdot m = x\cdot(y\cdot m) - (-1)^{\lvert x\rvert\lvert y\rvert}y\cdot(x\cdot m)$; it carries the parity operator $\beta$ equal to $\pm\mathrm{id}$ on the two pieces, and the action graded-commutes with it, $x\beta = (-1)^{\lvert x\rvert}\beta x$, so the even elements preserve the grading and the odd elements reverse it. The sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ is forced by the graded Jacobi identity: for two odd elements the anticommutator replaces the commutator, and there is no other consistent sign. The action extends to the enveloping algebra $U(\mathrm{G})$ with the graded product, so the graded modules are the graded modules over $U(\mathrm{G})$, and they form an abelian category with the graded submodules, the quotients and the homogeneous bases; the algebra itself is the adjoint module, the exterior algebra on an odd space is the module of the derivations, and the Clifford module of the orthogonal algebra is the module of the two chiralities. The trivial grading recovers the ungraded theory, and the interesting case is the one with a nonzero odd part, in which the sign rule is visible.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{G} = \mathrm{G}^{+}\oplus\mathrm{G}^{-}$</td>
+<td>the graded Lie algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$\lvert x\rvert\in\{0,1\}$</td>
+<td>the parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$M = M^{+}\oplus M^{-}$</td>
+<td>the graded module</td>
+</tr>
+<tr>
+<td>$x\cdot m$</td>
+<td>the bilinear action</td>
+</tr>
+<tr>
+<td>$\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$</td>
+<td>the compatibility with the grading</td>
+</tr>
+<tr>
+<td>$[x,y]\cdot m = x(y m) - (-1)^{\lvert x\rvert\lvert y\rvert}y(x m)$</td>
+<td>the sign rule</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the parity operator, $x\beta = (-1)^{\lvert x\rvert}\beta x$</td>
+</tr>
+<tr>
+<td>$U(\mathrm{G})$</td>
+<td>the enveloping algebra, with the graded product</td>
+</tr>
+<tr>
+<td>graded submodule, homogeneous basis</td>
+<td>the submodules and the free modules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Victor G. Kac, <em>Infinite Dimensional Lie Algebras</em> (Cambridge University Press, third edition, 1990), for the graded Lie algebras, the gradings and the modules with the sign rule.</li>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em> (Springer Lecture Notes in Mathematics 716, 1979), for the graded modules, the sign rule and the enveloping algebra.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the modules over a Lie algebra, the enveloping algebra and the ideals.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 1--3 (Springer, 1989), for the universal enveloping algebra, the modules and the compatibility with the bracket.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the modules over a Lie algebra and the graded structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

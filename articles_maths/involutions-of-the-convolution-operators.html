@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Convolution Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-convolution-operators"><strong>Involutions of the Convolution Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A convolution operator is built from a profile and the group structure, $T_kf=k*f$, and the involution of the
+group turns the profile into a new profile that produces the adjoint operator. On $\mathbb R^n$ with the
+Hilbert pairing of $L^2$,
+$$
+k^*(x)=\overline{k(-x)},\qquad T_k^\dagger=T_{k^*} ,
+$$
+and the passage $k\mapsto k^*$ is the involution on the profiles, conjugate-linear, involutive, an isometric
+anti-automorphism of the convolution algebra; the correspondence $k\mapsto T_k$ carries it to the adjoint of
+the operator. This is the fourth article of the <code>* Operator</code> material of this category, and it is the group
+analogue of the adjoint of an integral operator: the kernel of a convolution operator is $k(x-y)$, and the
+conjugate transpose kernel is exactly $k^*(x-y)$. On the Fourier side, where the operator is multiplication
+by the multiplier $\hat k$, the adjoint is multiplication by the conjugate multiplier $\overline{\hat k}$, and
+the operator is unitary exactly when the multiplier has modulus one — the <strong>unitary multipliers</strong>, which are
+the unitary convolution operators and the group they form.</p>
+<p>The article is the third of the <code>* Operator Theory</code> group of <em>Foundations of Analysis</em>. Its prerequisites
+are <em>Convolution Operators</em>, the second article of the first group of this category, for the convolution
+operator, its multiplier and its boundedness; <em>The Integral Operator</em> for the kernel form; <em>The Fourier
+Operator</em> for the unitary transform and the Plancherel theorem; <em>The Fourier Transform and Conjugate
+Symmetry</em> for the involution on functions and the identity $\widehat{f^*}=\overline{\hat f}$; <em>Hermitian
+Measures and Complex Measures</em> for the Hermitian and positive measures; <em>The Adjoint of an Integral Operator</em>,
+the previous article of this group, for the adjoint and the marks; and <em>Banach and Hilbert Spaces</em>, later in
+this Part, for the adjoint of a bounded operator and the unitary operators, quoted as established. The
+convolution algebra of a general locally compact group, the modular function in the involution, the two
+conventions for a non-unimodular group, and the regular representation built from the group algebra are
+<em>The Convolution Algebra $L^1(G)$</em>, <em>The Group Algebra as an Algebra of Operators</em> and <em>Convolution on a
+Group</em>, in the neighbouring category <em>Analysis on Groups</em> of this Part, and are named here as forward
+references only; the present article stays on $\mathbb R^n$ and on the discrete and periodic instances where
+the group is abelian and the modular function is trivial. No geometry is invoked.</p>
+<h2 id="convolution-operators-and-the-group-pairing">Convolution Operators and the Group Pairing</h2>
+<h3 id="the-convolution-operator">The Convolution Operator</h3>
+<p><strong>Definition.</strong> Let $k\in L^1(\mathbb R^n)$. The <strong>convolution operator</strong> of the profile $k$ is
+$$
+(T_kf)(x)=(k*f)(x)=\int_{\mathbb R^n}k(x-y)f(y)\,dy ,
+$$
+a bounded operator on $L^2(\mathbb R^n)$ with $\lVert T_k\rVert\leq\lVert k\rVert_1$, commuting with every
+translation: $T_kL_a=L_aT_k$ for the shift $L_af(x)=f(x-a)$.</p>
+<h3 id="the-group-pairing">The Group Pairing</h3>
+<p><strong>Definition.</strong> The <strong>group pairing</strong> on $L^2(\mathbb R^n)$ is the Hilbert pairing
+$$
+\langle f,g\rangle=\int_{\mathbb R^n}f\bar g .
+$$
+It is invariant under translation and inversion,
+$$
+\langle L_af,L_ag\rangle=\langle f,g\rangle,\qquad \langle \check f,\check g\rangle=\langle f,g\rangle ,
+$$
+with $\check f(x)=f(-x)$, and this invariance is what makes the adjoint of a convolution operator again a
+convolution operator. The pairing is the one carried by the convolution algebra; the bilinear pairing
+$\{f,g\}=\int fg$, which produces the transpose, is its companion in the same way as for an integral
+operator.</p>
+<h3 id="the-involution-on-the-profiles">The Involution on the Profiles</h3>
+<p><strong>Definition.</strong> The <strong>involution</strong> of a profile $k$ is the profile
+$$
+k^*(x)=\overline{k(-x)} ,
+$$
+the conjugate of the reflection. It is conjugate-linear and involutive, $(\lambda k+\mu l)^*=\bar\lambda k^*+\bar\mu l^*$,
+$(k^*)^*=k$, it is an anti-automorphism of the convolution,
+$$
+(k*l)^*=l^**k^* ,
+$$
+and it is isometric, $\lVert k^*\rVert_1=\lVert k\rVert_1$, by the translation invariance of the Lebesgue
+measure.</p>
+<p><strong>Proof.</strong> The conjugate-linearity and the involution are immediate from the definition. For the
+anti-automorphism, write $Rk(x)=k(-x)$ for the reflection; the reflection commutes with the convolution,
+$R(k*l)=(Rk)*(Rl)$, because on the abelian group the convolution is commutative and the substitution
+$y\mapsto-y$ shows both sides equal $\int k(-x-y)l(y)dy$. Hence
+$$
+(k*l)^*=\overline{R(k*l)}=\overline{(Rk)*(Rl)}
+=\overline{Rk}*\overline{Rl}=k^**l^*=l^**k^* ,
+$$
+the last equality by the commutativity of the convolution, and the products exchange as the anti-automorphism
+requires. The norm identity is the substitution $x\mapsto-x$. $\blacksquare$</p>
+<h2 id="the-adjoint-of-a-convolution-operator">The Adjoint of a Convolution Operator</h2>
+<h3 id="the-adjoint-kernel">The Adjoint Kernel</h3>
+<p><strong>Theorem.</strong> For $k\in L^1(\mathbb R^n)$ the adjoint of the convolution operator is the convolution operator
+of the involution,
+$$
+T_k^\dagger=T_{k^*},\qquad (T_k^\dagger f)(x)=\int_{\mathbb R^n}\overline{k(y-x)}f(y)\,dy ,
+$$
+and the kernel of $T_k$ is $K(x,y)=k(x-y)$, whose conjugate transpose is
+$K^*(x,y)=\overline{k(y-x)}=k^*(x-y)$, the kernel of $T_{k^*}$.</p>
+<p><strong>Proof.</strong> By the change of variable $y\mapsto x-y$ in the pairing,
+$$
+\langle T_kf,g\rangle=\iint k(x-y)f(y)\overline{g(x)}\,dydx
+=\iint f(y)\overline{\Bigl(\int\overline{k(x-y)}g(x)\,dx\Bigr)}\,dy
+=\iint f(y)\overline{\Bigl(\int\overline{k(z)}g(y+z)\,dz\Bigr)}\,dy ,
+$$
+and substituting $w=y+z$ in the inner integral gives
+$\int\overline{k(w-y)}g(w)\,dw=(T_{k^*}g)(y)$, so $\langle T_kf,g\rangle=\langle f,T_{k^*}g\rangle$ and
+$T_k^\dagger=T_{k^*}$ by the uniqueness of the adjoint; the kernel statement is the substitution
+$K(x,y)=k(x-y)$. $\blacksquare$</p>
+<h3 id="the-involution-on-the-operators">The Involution on the Operators</h3>
+<p><strong>Theorem.</strong> The map $T_k\mapsto T_k^\dagger$ on the convolution operators is the transport of the profile
+involution under $k\mapsto T_k$:
+$$
+T_k^\dagger=T_{k^*},\qquad
+(T_kT_l)^\dagger=T_l^\dagger T_k^\dagger,\qquad
+(T_k^\dagger)^\dagger=T_k ,
+$$
+and $k\mapsto T_k$ is a $\ast$-homomorphism of the convolution algebra into the bounded operators,
+$T_{k*l}=T_kT_l$ and $T_{k^*}=T_k^\dagger$; the element involution of the <code>* Theory</code> layer and the adjoint
+of the <code>* Operator</code> layer therefore agree, and this agreement is the statement that the left regular
+representation is a $\ast$-representation.</p>
+<p><strong>Proof.</strong> The adjoint identity is the theorem above; the multiplicative identity is the associativity of
+the convolution, $k*(l*f)=(k*l)*f$; the anti-multiplicativity follows from the anti-automorphism
+$(k*l)^*=l^**k^*$ and the multiplicative identity. The agreement of the two layers is the identity
+$T_{k^*}=T_k^\dagger$ itself. $\blacksquare$</p>
+<p><strong>Example (the Dirac profiles).</strong> The profile $\delta_a$ gives the shift $T_{\delta_a}=L_a$, and
+$\delta_a^*=\delta_{-a}$, so $L_a^\dagger=L_{-a}$, as the translation invariance of the pairing requires.
+The profile $k(x)=\mathbf 1_{[0,\infty)}(x)e^{-x}$ on $\mathbb R$ has the involution
+$k^*(x)=\mathbf 1_{(-\infty,0]}(x)e^{x}$, and $T_k$ is the operator that integrates the exponential weight
+forward, with $T_{k^*}$ integrating it backward.</p>
+<h2 id="the-fourier-multiplier-form">The Fourier Multiplier Form</h2>
+<h3 id="the-adjoint-multiplier">The Adjoint Multiplier</h3>
+<p><strong>Theorem.</strong> On the Fourier side the convolution operator is the multiplication operator
+$$
+T_k=\mathcal F^{-1}M_{\hat k}\mathcal F,\qquad (M_{\hat k}h)(\xi)=\hat k(\xi)h(\xi) ,
+$$
+and the adjoint is the multiplication by the conjugate multiplier,
+$$
+T_k^\dagger=\mathcal F^{-1}M_{\overline{\hat k}}\mathcal F,\qquad \widehat{k^*}=\overline{\hat k} ,
+$$
+so that the operator is self-adjoint exactly when $\hat k$ is real, skew-adjoint exactly when $\hat k$ is
+purely imaginary, and normal for every $k$.</p>
+<p><strong>Proof.</strong> The convolution theorem gives $\widehat{k*f}=\hat k\hat f$, so $\mathcal F$ intertwines $T_k$
+with the multiplication by $\hat k$; the Fourier transform is unitary by Plancherel, so the adjoint of
+$\mathcal F^{-1}M_{\hat k}\mathcal F$ is $\mathcal F^{-1}M_{\hat k}^\dagger\mathcal F$, and the adjoint of a
+multiplication operator is the multiplication by the conjugate function. The identity
+$\widehat{k^*}=\overline{\hat k}$ is the conjugate-symmetry theorem of <em>The Fourier Transform and Conjugate
+Symmetry</em>; the self-adjoint and skew-adjoint cases are the reality and the pure-imaginariness of $\hat k$, and
+normality is automatic for a multiplication operator. $\blacksquare$</p>
+<p><strong>Example (the Hilbert and Riesz transforms).</strong> The Hilbert transform of <em>The Fourier Transform and
+Conjugate Symmetry</em> is convolution with the kernel $1/(\pi x)$ on $\mathbb R$ and has the multiplier
+$-i\operatorname{sgn}\xi$, purely imaginary, so it is skew-adjoint, $H^\dagger=-H$, as recorded there; the
+Riesz transforms $R_j$ on $\mathbb R^n$ have the multipliers $-i\xi_j/\lvert\xi\rvert$, also purely
+imaginary, so each is skew-adjoint, $R_j^\dagger=-R_j$, and their symbols are unimodular, so each $R_j$ is
+unitary after the sign. The examples show both extremities of the multiplier dictionary.</p>
+<h3 id="the-unitary-multipliers">The Unitary Multipliers</h3>
+<p><strong>Theorem.</strong> Let $k\in L^1(\mathbb R^n)$ with $\hat k\in L^\infty$. Then the convolution operator $T_k$ is
+unitary on $L^2$ if and only if the multiplier is unimodular,
+$$
+T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert\hat k(\xi)\rvert=1\ \text{for almost every }\xi ,
+$$
+and the unitary convolution operators form a group under composition, the <strong>group of unitary multipliers</strong>;
+under the Fourier transform it is the group of unimodular functions that arise as transforms of profiles.</p>
+<p><strong>Proof.</strong> A multiplication operator $M_m$ is unitary exactly when $\lvert m\rvert=1$ almost everywhere, so
+the statement is the unitarity of $M_{\hat k}$ transported by the unitary $\mathcal F$; the group property is
+composition and the invariance of unimodularity, and the conjugation identifies it with the group of
+unimodular multipliers. For the finite and discrete instances the same proof applies with the discrete
+Fourier transform, and the group is the unitary group of the finite convolution algebra. $\blacksquare$</p>
+<p><strong>Example (the discrete and periodic cases).</strong> On $\mathbb Z$ the involution is $k^*(n)=\overline{k(-n)}$
+and the multiplier is the function on the circle $\hat k(\theta)=\sum_nk(n)e^{-in\theta}$; the shift
+$k=\delta_m$ has $\hat k(\theta)=e^{-im\theta}$, of modulus one, and $T_{\delta_m}$ is unitary. On a finite
+abelian group the same dictionary holds with the discrete Fourier transform, and the unitary multipliers are
+the profiles whose transform has modulus one.</p>
+<p><strong>Example (Hermitian measures).</strong> The measure-profiles of <em>Hermitian Measures and Complex Measures</em> obey the
+same involution, and the convolution operator of a measure $\mu$ is self-adjoint exactly when the measure is
+Hermitian, that is when $\hat\mu=\overline{\hat\mu}$ is real; the unitary case is the unimodular $\hat\mu$,
+and the classification of the idempotent and the unimodular measures belongs to <em>Harmonic Analysis on
+Groups</em>, in the neighbouring category <em>Analysis on Groups</em>, later in this Part.</p>
+<p><strong>Remark (the general group).</strong> On a general locally compact group the involution carries the modular
+function, $f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$, and on a non-unimodular group the two convolutions
+differ; the factor $\Delta$ is exactly what restores the isometry $\lVert f^*\rVert_1=\lVert f\rVert_1$, and
+the resulting algebra is a Banach $\ast$-algebra. This is <em>The Convolution Algebra $L^1(G)$</em> and
+<em>Convolution on a Group</em>, in the neighbouring category <em>Analysis on Groups</em>, later in this Part, and on the
+abelian, compact and discrete groups treated here $\Delta\equiv1$ and the involution reduces to
+$f^*(x)=\overline{f(x^{-1})}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The convolution operator $T_kf=k*f$ has, under the group pairing $\langle f,g\rangle=\int f\bar g$, the
+adjoint $T_k^\dagger=T_{k^*}$ with the involution $k^*(x)=\overline{k(-x)}$, which is the conjugate
+transpose of the kernel $K(x,y)=k(x-y)$; the involution on the profiles is conjugate-linear, involutive, an
+isometric anti-automorphism of the convolution, $(k*l)^*=l^**k^*$, and the correspondence $k\mapsto T_k$
+carries it to the adjoint, being a $\ast$-homomorphism of the convolution algebra into the bounded operators.
+On the Fourier side the operator is multiplication by $\hat k$, the adjoint is multiplication by
+$\overline{\hat k}$ since $\widehat{k^*}=\overline{\hat k}$, and the operator is self-adjoint exactly for
+real $\hat k$, skew-adjoint exactly for purely imaginary $\hat k$ and unitary exactly for unimodular
+$\hat k$; the unitary convolution operators are the <strong>unitary multipliers</strong>, and they form a group under
+composition, identified by the Fourier transform with the group of unimodular multipliers. The Hilbert
+transform and the Riesz transforms are the skew-adjoint unimodular examples, and the Hermitian measures are
+the self-adjoint measure-profiles. On a non-unimodular group the involution carries the modular function and
+the two convolutions differ, which is the concern of the convolution-algebra articles of <em>Analysis on
+Groups</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_kf=k*f$</td>
+<td>Convolution operator of the profile $k$</td>
+</tr>
+<tr>
+<td>$\langle f,g\rangle=\int f\bar g$</td>
+<td>Group pairing of $L^2$</td>
+</tr>
+<tr>
+<td>$k^*(x)=\overline{k(-x)}$</td>
+<td>Involution of a profile</td>
+</tr>
+<tr>
+<td>$K(x,y)=k(x-y)$</td>
+<td>Kernel of the convolution operator</td>
+</tr>
+<tr>
+<td>$T_k^\dagger=T_{k^*}$</td>
+<td>Adjoint of the convolution operator</td>
+</tr>
+<tr>
+<td>$\widehat{k^*}=\overline{\hat k}$</td>
+<td>Involution on the Fourier side</td>
+</tr>
+<tr>
+<td>$\hat k$ real / purely imaginary / unimodular</td>
+<td>self-adjoint / skew-adjoint / unitary $T_k$</td>
+</tr>
+<tr>
+<td>unitary multipliers</td>
+<td>The unitary convolution operators under composition</td>
+</tr>
+<tr>
+<td>$f^*(x)=\overline{f(x^{-1})}\Delta(x)^{-1}$</td>
+<td>The general-group involution (forward reference)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frigyes Riesz and Béla Szőkefalvi-Nagy, <em>Functional Analysis</em> (Ungar, 1955; reprinted Dover, 1990), for the
+  convolution operators, the adjoint and the multipliers.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton
+  University Press, 1971), for the convolution algebra, the multipliers and the Riesz transforms.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the convolution algebra of a locally
+  compact abelian group, the involution and the multipliers.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953), for the Banach
+  $\ast$-algebra of a group, the involution and the modular function.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic
+  Press, 1980), for the unitary operators and the multipliers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

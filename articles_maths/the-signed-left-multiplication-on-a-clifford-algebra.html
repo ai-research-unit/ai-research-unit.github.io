@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-clifford-algebra"><strong>The Signed Left Multiplication on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left multiplication $L_a$ of a Clifford algebra acts by $y\mapsto ay$, and it is multiplicative in the written order. Composing it with the grade involution gives the <strong>signed left multiplication</strong></p>
+<p>$$
+\mathrm{L}^{\alpha}_a = L_a\circ\alpha , \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) ,
+$$</p>
+<p>the ordinary left multiplication applied to the twisted argument. It agrees with $L_a$ on the even part of the algebra and is $-L_a$ there where the argument is odd; it composes according to $L_{a\alpha(c)}$, so two signed left multiplications multiply to an ordinary one; and it is one half of the signed sandwich of <em>The Signed Sandwich on a Clifford Algebra</em>, the other half being an ordinary right multiplication. The article treats this operator, its fixed elements, and the precise sense in which a one-sided operator is half a motion of the quadratic space.</p>
+<p>A word of disambiguation begins the account, because the corpus writes two different operators with the adjective signed in front of "left multiplication". In this article the twist is on the <strong>argument</strong>, $\mathrm{L}^{\alpha}_a=L_a\alpha$; in <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> and <em>The Graded Multiplication Operators</em> the twist is on the <strong>parameter</strong>, $\Lambda^{\alpha}_x(y)=\alpha(x)y$. The two agree only on the even part, and their purposes differ: the parameter twist belongs to the inner conjugation and the versor theory, the argument twist to the signed product and the reflections. Only the argument twist is treated here.</p>
+<p><strong>The boundaries.</strong> The one-sided calculus, the commutant and the composition of the ordinary families are <em>One-Sided Operators on a Clifford Algebra</em>; the signed product, its composition law and its fixed elements are <em>One-Sided Operators with the Signed Product</em>, and the two-sided version is <em>Two-Sided Operators with the Signed Product</em>; the parameter-twisted family is <em>The Graded Multiplication Operators</em>. The signed sandwich formed from the two factors is <em>The Signed Sandwich on a Clifford Algebra</em>, and the reflections are <em>Reflections as Signed Two-Sided Operators on a Clifford Algebra</em>. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
+<h2 id="the-operator">The Operator</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,q)$ the <strong>signed left multiplication</strong> is the $F$-linear operator</p>
+<p>$$
+\mathrm{L}^{\alpha}_a = L_a\circ\alpha : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \qquad \mathrm{L}^{\alpha}_a(y) = a\,\alpha(y) .
+$$</p>
+<p><strong>Proposition.</strong> The following hold.</p>
+<p><strong>(a)</strong> $\mathrm{L}^{\alpha}_a = L_a\alpha = \alpha L_{\alpha(a)}$.</p>
+<p><strong>(b)</strong> For a homogeneous element $a$ of degree $k$ one has $\mathrm{L}^{\alpha}_a = (-1)^{k}L_a$ on the odd part of the algebra and $\mathrm{L}^{\alpha}_a = L_a$ on the even part.</p>
+<p><strong>(c)</strong> $\mathrm{L}^{\alpha}_1 = \alpha$, and $\mathrm{L}^{\alpha}_a$ is invertible exactly when $a$ is a unit.</p>
+<p><strong>(d)</strong> $\mathrm{L}^{\alpha}_a$ is a homogeneous operator of parity $|a|$.</p>
+<p><strong>Proof.</strong> (a) is $\alpha L_{\alpha(a)}(y)=\alpha(\alpha(a)y)=a\alpha(y)$. (b) For $y$ homogeneous of degree $j$, $\alpha(y)=(-1)^jy$; on the even part $j=0$ and on the odd part $j=1$, so the operator differs from $L_a$ by $-1$ on the odd part. (c) is the value at $1$ and the invertibility of $L_a$. (d) The shift of the grading is that of $L_a$, because $\alpha$ preserves the grading.</p>
+<p><strong>Remark.</strong> The operator $\mathrm{L}^{\alpha}_a$ is the composition of a multiplication operator with the parity operator $\Gamma(y)=\alpha(y)$; it is therefore the conjugate $L_a\alpha=\Gamma L_{\alpha(a)}\Gamma$, and the twisting enters through $\Gamma$, as <em>The Graded Multiplication Operators</em> records for the parameter-twisted family. Since $\Gamma$ is an involution that is the identity on the even part, every statement about $\mathrm{L}^{\alpha}_a$ is a statement about $L_a$ read separately on the two parity components.</p>
+<h3 id="composition-and-fixed-elements">Composition and Fixed Elements</h3>
+<p><strong>Proposition (composition).</strong> For all $a,c$,</p>
+<p>$$
+\mathrm{L}^{\alpha}_a\circ\mathrm{L}^{\alpha}_c = L_{a\alpha(c)} ,
+\qquad
+\mathrm{L}^{\alpha}_a\circ L_c = \mathrm{L}^{\alpha}_{ac} ,
+\qquad
+L_a\circ\mathrm{L}^{\alpha}_c = \mathrm{L}^{\alpha}_{a\alpha(c)} .
+$$</p>
+<p>Two signed left multiplications compose to an <strong>ordinary</strong> left multiplication, the two grade involutions cancelling; a signed and an ordinary one compose to a signed one. The signed left family is therefore a coset $L(\Gamma)\alpha$ of the group of invertible left multiplications and not a group, exactly as for the two-sided family.</p>
+<p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_a\alpha L_c\alpha=L_aL_{\alpha(c)}\alpha^2=L_{a\alpha(c)}$; the other two are the same computation with one factor untwisted.</p>
+<p><strong>Proposition (the fixed elements).</strong> The fixed space of $\mathrm{L}^{\alpha}_a$ is $\{y : a\alpha(y)=y\}$. For the scalar $a=\lambda$ it is the even part for $\lambda=1$, the odd part for $\lambda=-1$, and $\{0\}$ for every other $\lambda$. For a general $a$ it is the translate of a subspace by the equation $a\alpha(y)=y$, and it is not a graded subspace unless $a$ is scalar or the equation degenerates.</p>
+<p><strong>Proof.</strong> The defining equation is linear in $y$; for $a=\lambda$ it reads $\lambda\alpha(y)=y$, which on the even component is $(\lambda-1)y=0$ and on the odd component is $(-\lambda-1)y=0$, giving the three cases. The general case is the same equation with a non-scalar coefficient, and its solution space is not stable under the grading because $a$ need not be even.</p>
+<h2 id="the-operator-as-half-a-motion">The Operator as Half a Motion</h2>
+<p><strong>Proposition (the pairing with the right factor).</strong> For a unit $x$ the composition of the signed left multiplication with the ordinary right multiplication by the inverse of the twisted parameter is the signed sandwich,</p>
+<p>$$
+\mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}} ,
+$$</p>
+<p>and for a vector $u$ with $q(u)\ne0$ this is the reflection $\rho_u$; the signed left multiplication alone is not a motion of $V$.</p>
+<p><strong>Proof.</strong> $(\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}})(y)=x\alpha(y)\alpha(x)^{-1}$, which is the signed sandwich of <em>The Signed Sandwich on a Clifford Algebra</em> with parameters $(x,\alpha(x)^{-1})$; for $x=u$ a vector, $\alpha(u)^{-1}=u^{-1}$, and the reflection formula gives $\rho_u$. The last claim is the next proposition.</p>
+<p><strong>Proposition (no one-sided operator preserves the space).</strong> Let $u\in V$ with $q(u)\ne0$. Then $\mathrm{L}^{\alpha}_u$ does not map $V$ into itself: it sends the unit $1$ to $u$ and the vector $u$ to $u\alpha(u)=-q(u)$, a scalar, so the image of the even part of the algebra meets the odd part and vice versa. Consequently no signed left multiplication by a non-scalar element preserves the quadratic space.</p>
+<p><strong>Proof.</strong> $\mathrm{L}^{\alpha}_u(1)=u$ and $\mathrm{L}^{\alpha}_u(u)=u\,(-u)=-q(u)\in F$; the two values lie in different parity components, so $\mathrm{L}^{\alpha}_u$ does not preserve the subspace $V$ of the algebra. A one-sided multiplication by $a$ preserves the parity grading only when $a$ is even, and then it does not preserve $V$ either unless $a$ is a scalar.</p>
+<p><strong>Remark (the geometry of the pairing).</strong> The signed left multiplication is the left half of the signed sandwich, and only the pairing with a right multiplication restores the grading and produces an operator of $V$. This is the one-sided form of the statement that the reflections are two-sided operators, and it is why the geometry of the category is carried by the two-sided family. The parameter-twisted signed left multiplication of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em> has the same one-sided deficiency, and the pairing there is with the inverse right multiplication.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="a-vector-in-the-negative-definite-three-space">A Vector in the Negative-Definite Three-Space</h3>
+<p>For $V$ of dimension three with $e_j^2=-1$ and $u=e_1$, the operator $\mathrm{L}^{\alpha}_{e_1}$ sends $1\mapsto e_1$, $e_1\mapsto -e_1^2=1$, $e_2\mapsto e_1(-e_2)=-e_1e_2$; the even and odd parts are exchanged, and the image is not contained in $V$. The pairing with $R_{e_1^{-1}}=R_{-e_1}$ returns the reflection $\rho_{e_1}$ of the previous article.</p>
+<h3 id="the-scalar-math103">The Scalar $-1$</h3>
+<p>For $a=-1$ the operator is $\mathrm{L}^{\alpha}_{-1}(y)=-\alpha(y)$, which is the identity on the odd part and minus the identity on the even part: the fixed space is the odd part, an example of the fixed-element proposition, and the operator is an involution.</p>
+<h3 id="an-even-element">An Even Element</h3>
+<p>For $a=x=e_1e_2$, even, $\mathrm{L}^{\alpha}_x=L_x$ because $\alpha$ is the identity on the even part; the signed and the ordinary left multiplications coincide, and the pairing with $R_{x^{-1}}$ is the inner conjugation $\mathrm{Ad}_x$, a rotation of the plane. The signed family differs from the ordinary one only through the odd parameters, which is where the reflections live.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed left multiplication</strong> $\mathrm{L}^{\alpha}_a=L_a\circ\alpha$, $\mathrm{L}^{\alpha}_a(y)=a\alpha(y)$, is the ordinary left multiplication of the twisted argument; it satisfies $\mathrm{L}^{\alpha}_a=\alpha L_{\alpha(a)}$, it coincides with $L_a$ on the even part of the algebra and is $-L_a$ on the odd part, it is invertible exactly for units, and it has the parity of $a$. Its products satisfy $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$, so the signed left family is a <strong>coset</strong> of the group of invertible left multiplications; its fixed space is $\{y : a\alpha(y)=y\}$, which for a scalar is the even part, the odd part or nothing according as the scalar is $1$, $-1$ or neither. The operator is one half of the signed sandwich, $\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}}=T^{\alpha}_{x,\alpha(x)^{-1}}$, which for a vector is the reflection $\rho_u$; the signed left multiplication alone never preserves the quadratic space, because it exchanges the two parity components, and only the pairing with a right multiplication restores the grading. The parameter-twisted family $\alpha(x)y$ is a different operator, by <em>The Graded Multiplication Operators</em>; the one-sided calculus is <em>One-Sided Operators on a Clifford Algebra</em>, and the signed product is <em>One-Sided Operators with the Signed Product</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a=L_a\circ\alpha$</td>
+<td>Signed left multiplication, $y\mapsto a\alpha(y)$</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_x(y)=\alpha(x)y$</td>
+<td>The different parameter-twisted family, not treated here</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a=\alpha L_{\alpha(a)}$</td>
+<td>Relation to the ordinary left multiplication</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a=L_a$ on the even part, $-L_a$ on the odd part</td>
+<td>The parity split</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$</td>
+<td>Composition law; coset of the left-multiplication group</td>
+</tr>
+<tr>
+<td>$\{y : a\alpha(y)=y\}$</td>
+<td>Fixed space; even part, odd part or nothing for a scalar</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}}=T^{\alpha}_{x,\alpha(x)^{-1}}$</td>
+<td>Pairing to the signed sandwich</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_u(1)=u$, $\mathrm{L}^{\alpha}_u(u)=-q(u)$</td>
+<td>Failure to preserve $V$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the one-sided operators, the grade involution and their pairings.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the signed one-sided actions and the composition laws in the low-dimensional algebras.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the left and right multiplications twisted by the grading.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the one-sided action and the reason only two-sided operators preserve the vectors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

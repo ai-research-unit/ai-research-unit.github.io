@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-lie-algebra"><strong>The Graded Adjoint Action on a Module over a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded module over a graded Lie algebra carries a <strong>graded action</strong>, the action composed with the parity operator, $m\mapsto x\cdot(\beta m)$, and the <strong>adjoint</strong> of this action — its adjoint operator with respect to an invariant Hermitian form on the module — obeys a sign rule fixed by the parity of the acting element: the graded action is <strong>skew-adjoint</strong> for an even element and <strong>self-adjoint</strong> for an odd element. The sign rule is the module form of the parity dichotomy of the one-sided operators, and it is forced by the two compatibility requirements of the graded theory, the invariance of the form under the action and the isometry of the parity operator. The article defines the adjoint action, computes its adjoint, records the compatibility with the grading and derives the sign rule.</p>
+<p>This article treats the adjoint action of a graded module over a Lie algebra, its compatibility with the grading and the sign rule. It is the sixth and last article of the <code>- * Operator Theory</code> group of the category; the graded module and its parity operator are <em>The Graded Action on a Module over a Lie Algebra</em>, above in the category, the adjoints of the one-sided operators are <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em> and <em>The Signed Adjoint of the Reflection on a Lie Algebra</em>, above, the invariant forms and the unitary representations are <em>Hermitian Forms on a Lie Algebra</em> and <em>Unitary Representations and the Adjoint Operator</em>, above, and the module operations are <em>Representations of Lie Algebras</em>.</p>
+<p>The article assumes the graded module, the parity operator, the sign rule and the enveloping algebra from <em>The Graded Action on a Module over a Lie Algebra</em>, the adjoint operation, the skew-adjointness of the generators and the unitarity condition from <em>Unitary Representations and the Adjoint Operator</em>, the invariant Hermitian form and its positive definite case from <em>Hermitian Forms on a Lie Algebra</em>, the grading and the grade involution from <em>Graded Lie Algebras with an Involution</em>, and the exterior algebra and the Clifford module from <em>The Exterior Algebra</em> and <em>Spin Representations and Clifford Modules with Inner Conjugation</em>. The form and the adjoint are instruments of the article; the geometry of the module is Part IV, and the representations as analytic objects belong to <em>Unitary Representations of a Lie Group</em>.</p>
+<h2 id="the-action-and-its-adjoint">The Action and Its Adjoint</h2>
+<h3 id="the-setting">The Setting</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a graded Lie algebra with the grade involution $\alpha$ and let $M = M^{+}\oplus M^{-}$ be a graded module over $\mathrm{G}$ with the parity operator $\beta$ equal to $\pm\mathrm{id}$ on the two pieces. Let $(\cdot,\cdot)$ be a Hermitian form on $M$ that is <strong>graded</strong>, $(M^{\epsilon},M^{\delta}) = 0$ for $\epsilon\neq\delta$, and <strong>invariant</strong> under the action, $(x\cdot m,n) + (m,x\cdot n) = 0$ for all homogeneous $x$ and all $m,n$.</p>
+<p><strong>Definition.</strong> The <strong>action operators</strong> are the endomorphisms $\rho(x)$ with $\rho(x)m = x\cdot m$, and the <strong>graded action operators</strong> are the composites</p>
+<p>$$
+\rho^{\alpha}(x) = \rho(x)\circ\beta , \qquad \rho^{\alpha}(x)m = x\cdot(\beta m) ;
+$$</p>
+<p>the operator $\rho^{\alpha}(x)$ is the signed one-sided action of the module.</p>
+<p><strong>Proposition.</strong> The parity operator is a self-adjoint unitary involution of the form, $\beta^{*} = \beta = \beta^{-1}$, because it is an isometry exchanging the two orthogonal pieces; the adjoint of the action operator is the negative of the action operator,</p>
+<p>$$
+\rho(x)^{*} = -\rho(x) ,
+$$</p>
+<p>which is the infinitesimal unitarity condition of the module.</p>
+<p><em>Proof.</em> The graded form makes the two pieces orthogonal and $\beta$ acts by $\pm1$ on them, so $\beta$ is a self-adjoint isometry and an involution; the invariance of the form is the identity $(\rho(x)m,n) = -(m,\rho(x)n)$, which is the skew-adjointness of the action operator.</p>
+<h3 id="the-adjoint-of-the-graded-action">The Adjoint of the Graded Action</h3>
+<p><strong>Theorem (the sign rule).</strong> The adjoint of the graded action is a signed multiple of the graded action,</p>
+<p>$$
+\bigl(\rho^{\alpha}(x)\bigr)^{*} = \beta^{*}\rho(x)^{*} = -\beta\rho(x) = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x),
+$$</p>
+<p>so that</p>
+<p>$$
+\bigl(\rho^{\alpha}(x)\bigr)^{*} = -\rho^{\alpha}(x) \quad (x\ \text{even}), \qquad \bigl(\rho^{\alpha}(x)\bigr)^{*} = \rho^{\alpha}(x) \quad (x\ \text{odd}) :
+$$</p>
+<p>the <strong>graded action is skew-adjoint for the even elements and self-adjoint for the odd elements</strong>.</p>
+<p><em>Proof.</em> The adjoint of a composite is the composite of the adjoints in the reverse order, so $(\rho^{\alpha}(x))^{*} = \beta^{*}\rho(x)^{*} = \beta(-\rho(x)) = -\beta\rho(x)$; the graded commutation $x\beta = (-1)^{\lvert x\rvert}\beta x$ of the action with the parity operator gives $\beta\rho(x) = (-1)^{\lvert x\rvert}\rho(x)\beta$, hence $-\beta\rho(x) = -(-1)^{\lvert x\rvert}\rho(x)\beta = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x)$; the parity cases are immediate.</p>
+<h3 id="unitarity">Unitarity</h3>
+<p><strong>Theorem.</strong> The graded action operator is unitary exactly when it is an involution up to the sign of the adjoint; for an even element the operator is norm-preserving exactly when $\rho^{\alpha}(x)^2 = -\mathrm{id}$, and for an odd element exactly when $\rho^{\alpha}(x)^2 = \mathrm{id}$; the graded action by an odd element is therefore a symmetry of the form, and the graded action by an even element is a complex structure of the form.</p>
+<p><em>Proof.</em> For a self-adjoint or a skew-adjoint operator the operator is unitary exactly when its square is $\mp\mathrm{id}$, with the sign determined by the adjoint; the parity cases give the two statements.</p>
+<h2 id="the-compatibility-with-the-grading">The Compatibility with the Grading</h2>
+<h3 id="the-graded-commutation">The Graded Commutation</h3>
+<p><strong>Theorem.</strong> The graded action graded-commutes with the parity operator,</p>
+<p>$$
+\rho^{\alpha}(x)\,\beta = (-1)^{\lvert x\rvert}\,\beta\,\rho^{\alpha}(x) ,
+$$</p>
+<p>so the graded action by an even element commutes with the grading operator and the graded action by an odd element anticommutes with it; the sign rule for the adjoint is the same sign as the graded commutation.</p>
+<p><em>Proof.</em> Compute $\rho^{\alpha}(x)\beta = \rho(x)\beta^2 = \rho(x)$ and $\beta\rho^{\alpha}(x) = \beta\rho(x)\beta = (-1)^{\lvert x\rvert}\rho(x)$; the two differ by the sign $(-1)^{\lvert x\rvert}$.</p>
+<h3 id="the-decomposition">The Decomposition</h3>
+<p><strong>Theorem.</strong> The graded action preserves the decomposition of the module in the graded sense: for an even element it preserves each piece, and for an odd element it exchanges them;</p>
+<p>$$
+\rho^{\alpha}(x)M^{+}\subseteq M^{\lvert x\rvert}, \qquad \rho^{\alpha}(x)M^{-}\subseteq M^{1+\lvert x\rvert} .
+$$</p>
+<p>The operator $\rho^{\alpha}(x)$ is self-adjoint exactly on the odd elements and skew-adjoint exactly on the even ones, and the adjoint of the graded action is the graded action with the sign of the parity.</p>
+<p><em>Proof.</em> The inclusion is the commutation with $\beta$ written as the grading; the adjoint statement is the sign rule, and the last phrase is a restatement of the sign rule.</p>
+<h3 id="the-action-of-the-enveloping-algebra">The Action of the Enveloping Algebra</h3>
+<p><strong>Proposition.</strong> The graded action extends to the enveloping algebra and the adjoint rule is multiplicative up to the parity,</p>
+<p>$$
+\bigl(\rho^{\alpha}(u)\bigr)^{*} = (-1)^{\lvert u\rvert}\,\rho^{\alpha}(u^{\star})
+$$</p>
+<p>on homogeneous $u\in U(\mathrm{G})$, where $u^{\star}$ is the star of the principal anti-automorphism; hence the graded action is a star-operation with the sign of the parity.</p>
+<p><em>Proof.</em> The action extends to $U(\mathrm{G})$ with the graded product; the adjoint of a product is the product of the adjoints in the reverse order with the sign rule of the parity, and the star of <em>The Involution on the Enveloping Algebra of a Lie Group</em> is the adjoint operation of the generators.</p>
+<h2 id="the-sign-rule-and-the-structure">The Sign Rule and the Structure</h2>
+<h3 id="the-invariant-form">The Invariant Form</h3>
+<p><strong>Theorem.</strong> The graded action preserves the graded form up to the parity of the acting element,</p>
+<p>$$
+\bigl(\rho^{\alpha}(x)m,n\bigr) = (-1)^{\lvert x\rvert}\bigl(m,\rho^{\alpha}(x)n\bigr) ,
+$$</p>
+<p>and the form is invariant under the action exactly when the sign rule holds; the module is <strong>unitary</strong> when the form is positive definite, and the graded action is then a representation by unitary and self-adjoint operators on the odd part and by unitary and skew-adjoint operators on the even part.</p>
+<p><em>Proof.</em> From the adjoint identity $(\rho^{\alpha}(x)m,n) = (m,(\rho^{\alpha}(x))^{*}n)$ and the sign rule; the unitarity of the module is the positive definiteness of the form, and the self-adjointness or the skew-adjointness of the operators is the parity case of the sign rule.</p>
+<h3 id="the-kernel-and-the-fixed-points">The Kernel and the Fixed Points</h3>
+<p><strong>Proposition.</strong> The kernel of the graded action is the set of the $m$ with $x\cdot(\beta m) = 0$, that is the image under $\beta$ of the annihilator of $x$ in $M$; the fixed points of the graded action by an odd element are the elements of $M^{+}$ whose image under the action lies in $M^{-}$, and the fixed points of the graded action by an even element are the elements annihilated after the grading.</p>
+<p><em>Proof.</em> Compute the kernel and the fixed equation $\rho^{\alpha}(x)m = m$ from the definitions and the commutation with $\beta$.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-adjoint-module">The Adjoint Module</h3>
+<p>Let $M = \mathrm{G}$ be the adjoint module with the graded form and the parity operator $\beta = \alpha$; then the action operator is $\rho(x) = \operatorname{ad}_x = L_x$ and the graded action is $\rho^{\alpha}(x) = L_x\alpha = \ell^{\alpha}_x$, the signed left multiplication. The sign rule of the present article is then the parity dichotomy of <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em>: skew-adjoint for the even elements and self-adjoint for the odd ones. The example shows that the module theory generalises the one-sided theory of the algebra.</p>
+<h3 id="the-exterior-algebra">The Exterior Algebra</h3>
+<p>Let $V$ be odd and let $M = \Lambda(V)$ be the exterior algebra with its natural graded form; the action extends as a graded derivation, the graded action is the composition with the parity operator of the form, and the sign rule says that the odd elements act by self-adjoint operators while the even ones act by skew-adjoint operators. The form is the one of the exterior algebra of <em>The Exterior Algebra</em>, and the graded action is the one of <em>The Graded Action on a Module over a Lie Algebra</em>.</p>
+<h3 id="the-clifford-module">The Clifford Module</h3>
+<p>Let $M$ be a Clifford module with the two chiralities $M^{\pm}$; the parity operator is the chirality operator, the action of the orthogonal Lie algebra is graded, and the graded action is a self-adjoint operator on the odd generators and a skew-adjoint operator on the even ones; the sign rule is the one of the Clifford relations of <em>Spin Representations and Clifford Modules with Inner Conjugation</em>.</p>
+<h3 id="the-trivial-grading">The Trivial Grading</h3>
+<p>If $\mathrm{G}$ is entirely even then the parity operator is the identity, the graded action is the action itself, and the sign rule gives the skew-adjointness of every generator; there is no self-adjoint case, and the graded theory reduces to the ungraded theory of <em>Unitary Representations and the Adjoint Operator</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded module $M = M^{+}\oplus M^{-}$ over a graded Lie algebra with an invariant graded Hermitian form, the action operators are skew-adjoint, $\rho(x)^{*} = -\rho(x)$, and the parity operator is a self-adjoint unitary involution. The <strong>graded action</strong> $\rho^{\alpha}(x) = \rho(x)\beta$, acting by $m\mapsto x\cdot(\beta m)$, has the adjoint</p>
+<p>$$
+\bigl(\rho^{\alpha}(x)\bigr)^{*} = -\beta\rho(x) = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x) ,
+$$</p>
+<p>so it is <strong>skew-adjoint for the even elements and self-adjoint for the odd elements</strong>; this is the sign rule, and it is the same sign as the graded commutation $\rho^{\alpha}(x)\beta = (-1)^{\lvert x\rvert}\beta\rho^{\alpha}(x)$ with the parity operator. The graded action preserves the decomposition of the module in the graded sense, extending to the enveloping algebra with the adjoint rule $(\rho^{\alpha}(u))^{*} = (-1)^{\lvert u\rvert}\rho^{\alpha}(u^{\star})$, and the form is invariant exactly under the sign rule; the module is unitary when the form is positive definite, and the graded action is a representation by unitary operators, self-adjoint on the odd part and skew-adjoint on the even part. The adjoint module recovers the one-sided theory of the algebra, the exterior algebra and the Clifford module are the geometric examples, and the trivial grading reduces the theory to the ungraded case, where every generator is skew-adjoint.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M = M^{+}\oplus M^{-}$</td>
+<td>the graded module</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>the parity operator, a self-adjoint unitary involution</td>
+</tr>
+<tr>
+<td>$(\cdot,\cdot)$</td>
+<td>the invariant graded Hermitian form</td>
+</tr>
+<tr>
+<td>$\rho(x)m = x\cdot m$</td>
+<td>the action operator</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(x) = \rho(x)\beta$</td>
+<td>the graded action, $m\mapsto x\cdot(\beta m)$</td>
+</tr>
+<tr>
+<td>$\rho(x)^{*} = -\rho(x)$</td>
+<td>skew-adjointness of the action operators</td>
+</tr>
+<tr>
+<td>$(\rho^{\alpha}(x))^{*} = (-1)^{\lvert x\rvert+1}\rho^{\alpha}(x)$</td>
+<td>the sign rule</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}(x)\beta = (-1)^{\lvert x\rvert}\beta\rho^{\alpha}(x)$</td>
+<td>the graded commutation</td>
+</tr>
+<tr>
+<td>$(\rho^{\alpha}(u))^{*} = (-1)^{\lvert u\rvert}\rho^{\alpha}(u^{\star})$</td>
+<td>the adjoint rule on the enveloping algebra</td>
+</tr>
+<tr>
+<td>$(\rho^{\alpha}(x)m,n) = (-1)^{\lvert x\rvert}(m,\rho^{\alpha}(x)n)$</td>
+<td>the invariance of the form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Victor G. Kac, <em>Infinite Dimensional Lie Algebras</em> (Cambridge University Press, third edition, 1990), for the graded modules, the parity operator and the sign rule.</li>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em> (Springer Lecture Notes in Mathematics 716, 1979), for the graded modules, the adjoints and the enveloping algebra.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the adjoints of the action operators, the unitary conditions and the star-representations.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the graded involutions, the signed adjoints and the sign rules.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the modules over a Lie algebra, the adjoints and the graded structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

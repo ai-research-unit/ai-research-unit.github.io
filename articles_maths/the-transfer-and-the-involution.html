@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transfer and the Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transfer-and-the-involution"><strong>The Transfer and the Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The transfer of a covering moves a chain of the base up to the cover, summing it over the sheets, and for a double cover the sheets are exchanged by the <strong>involution</strong> that generates the deck group. This article reads the transfer in the presence of that involution: the transfer is the map $\tau$ from the chains of the orbit space to the chains of the space, the composite with the projection is the norm operator $N = 1 + \sigma_\#$, the composite in the other order is the scalar $2$, and the involution interacts with all of it. The transfer lands in the invariant chains, it is compatible with the involution on both sides, and when the involution is not free the transfer acquires a second face: the restriction to the fixed set has an adjoint, also called a transfer, and the composite of the restriction and that adjoint is the multiplication by the equivariant Euler class of the fixed set. The transfer is thus the operator that carries the involution through the homology: on the free part it splits the invariants into the homology of the quotient, and on the fixed set it produces the Euler-class operator that the Gysin sequence of the next article unfolds.</p>
+<p>The article develops the transfer under an involution. It constructs the transfer of a free involution, records the composition identities $p_\#\tau=2$ and $\tau p_\# = 1+\sigma_\#$ and the resulting splitting of the invariants, proves the compatibility of the transfer with the involution and the descent to the invariants, treats the fixed set through the restriction and its adjoint, states the Euler-class identity that the Gysin sequence uses, and closes with the computations for the sphere, the projective space and the torus. The general transfer of a covering and its operator properties are those of <em>The Transfer Map</em>, of which this article is the case of the group of order two and of its involution; the Borel construction and the homotopy quotient are those of <em>Two-Fold Coverings and the Borel Construction</em> and <em>Equivariant Cohomology</em>; the fixed set and the Smith theory are those of <em>The Mod 2 Cohomology of an Involution</em> and <em>Smith Theory and the Fixed Sets of Periodic Maps</em>; and the exact sequence built from the Euler class is the subject of <em>The Gysin Sequence of a Two-Fold Covering</em>, next in this category.</p>
+<p>Nothing analytic and nothing geometric is used. The article is the algebra of a chain complex with an involution and the transfer of the double cover it generates; the fixed set enters by the functoriality of the chains, and no distance, no norm, no measure and no smooth structure is chosen. Throughout, $(X,\sigma)$ is a space with an involution, $T = \sigma_\#$ is the induced chain operator, $F = X^{\sigma}$ is the fixed set, and the coefficient ring is $R$, commutative with identity, with the case $R = \mathbb{F}_2$ singled out because the scalar $2$ vanishes there. When the action is free the orbit space is written $B = X/\sigma$ and the projection $p : X \to B$ is a double cover with deck group $\mathbb{Z}/2$ generated by $\sigma$. The transfer is written $\tau$, the norm operator $N = 1 + T$, and the equivariant Euler class of the fixed set is written $e$. The transfer of a general covering, the evaluation pairing and the exact sequences are those of <em>The Transfer Map</em>, <em>Cohomology and the Universal Coefficient Theorem</em> and <em>Exact Sequences</em>.</p>
+<h2 id="the-transfer-of-a-free-involution">The Transfer of a Free Involution</h2>
+<h3 id="the-double-cover-and-its-transfer">The Double Cover and Its Transfer</h3>
+<p><strong>Definition.</strong> Let $\sigma$ act freely on $X$, let $B = X/\sigma$ be the orbit space and let $p : X \to B$ be the quotient, a double cover with deck transformation $\sigma$. The <strong>transfer</strong> is the chain map</p>
+<p>$$
+\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}\tilde\eta^{\pm},
+$$</p>
+<p>where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices $\tilde\eta^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.</p>
+<p><strong>Theorem.</strong> The transfer is a well-defined chain map and it satisfies</p>
+<p>$$
+p_\# \tau = 2\,\mathrm{id}, \qquad\qquad \tau p_\# = 1 + T = N,
+$$</p>
+<p>as operators on $C_*(B;R)$ and $C_*(X;R)$ respectively; the second identity is the statement that the sum over the two sheets of the preimage of a simplex is the simplex together with its image under the involution.</p>
+<p><em>Proof.</em> The transfer is the sum of two lifts, each a chain map because $p$ is a covering and the lifts of the faces are the faces of the lifts; composing with $p_\#$ sends each lift back to its projection, giving the two copies in the first identity, while $\tau p_\#$ receives a simplex $\eta$ and sends it to the sum of its two lifts, whose projections are $\eta$ and $\sigma(\eta)$. $\square$</p>
+<h3 id="the-invariants-and-the-splitting">The Invariants and the Splitting</h3>
+<p><strong>Theorem.</strong> The image of the transfer lies in the invariant chains, $T\tau = \tau$, and the operators satisfy the relations of an idempotent, up to the scalar $2$:</p>
+<p>$$
+N^2 = 2N, \qquad N\tau = 2\tau, \qquad p_\# N = 2 p_\# .
+$$</p>
+<p>When $2$ is invertible in $R$ the operator $\tfrac12 N$ is an idempotent projecting $C_*(X;R)$ onto the invariant subcomplex, and the transfer composed with the projection onto the coinvariants is an isomorphism</p>
+<p>$$
+C_*(B;R) \cong C_*(X;R)^{\mathbb{Z}/2}, \qquad H_n(B;R) \cong H_n(X;R)^{\mathbb{Z}/2},
+$$</p>
+<p>so that the homology of the quotient is the invariant homology of the cover.</p>
+<p><em>Proof.</em> The relation $T\tau=\tau$ is that the two lifts of a simplex form a $\sigma$-orbit, hence are permuted by $\sigma$ and the sum is invariant; $N = 1+T$ satisfies $N^2 = 1 + 2T + T^2 = 2 + 2T = 2N$ because $T^2=1$; the other two relations are compositions with the first identity of the previous theorem. When $2$ is invertible the idempotent $\tfrac12N$ has image the invariants and kernel the coinvariants, and on the invariants $\tau$ is inverse to $p_\#$ up to the scalar, giving the isomorphism. $\square$</p>
+<p><strong>Theorem (mod 2).</strong> Over $R = \mathbb{F}_2$ the relations read $N^2 = 0$ and the transfer satisfies $p_\#\tau = 0$ and $\tau p_\# = N$; the transfer is the map that detects which classes of the base survive in the invariants, and its image is the subcomplex of chains whose lift is invariant. Consequently the mod 2 homology is split by the operators into the part on which the transfer is an isomorphism and the part annihilated by $p_\#$.</p>
+<p><em>Proof.</em> In $\mathbb{F}_2$ the scalar $2$ vanishes, so the two identities become $p_\#\tau = 0$ and $\tau p_\#=N$, and $N^2 = 2N = 0$; the statements about the image and the kernel are the module theory of the two operators. $\square$</p>
+<h2 id="the-involution-compatibility">The Involution Compatibility</h2>
+<h3 id="the-deck-transformation">The Deck Transformation</h3>
+<p><strong>Theorem.</strong> The transfer is compatible with the involution on both sides: the deck transformation $\sigma$ acts on $X$ and trivially on $B$, so the diagram</p>
+<p>$$
+C_*(B;R) \xrightarrow{\ \tau\ } C_*(X;R) \xrightarrow{\ T\ } C_*(X;R) \xrightarrow{\ p_\#\ } C_*(B;R)
+$$</p>
+<p>satisfies $T\tau = \tau$ and $p_\# T = p_\#$; the transfer identifies the chains of the base with the invariants of $T$, and the induced map on homology $H_n(\tau) : H_n(B;R)\to H_n(X;R)$ carries the homology of the orbit space onto the invariant classes. For a $G$-equivariant map of two free involutions the transfers are natural, and they give the map induced by the map of orbit spaces.</p>
+<p><em>Proof.</em> The identities are the definitions of the deck transformation and the previous theorem; the naturality is that the lifts of a simplex are carried to the lifts of its image by an equivariant map. $\square$</p>
+<h3 id="the-transfer-as-a-section-of-the-norm">The Transfer as a Section of the Norm</h3>
+<p><strong>Corollary.</strong> In the ring of operators on the chains with the involution, the transfer and the projection form the adjoint pair $p_\# \dashv \tau$: the transfer is a section of the quotient up to the scalar $2$, and $\tau$ is the right inverse of $p_\#$ over the ring in which $2$ is inverted. The operators form the algebra generated by $T$ with $T^2=1$, $N=1+T$, and $\tau$, subject to the relations above; the operator algebra of the involution is the quotient of this algebra by its ideals.</p>
+<p><em>Proof.</em> The relations $\tau p_\# = N$ and $p_\#\tau=2$ are the stated section and retraction; the operator algebra is generated by $T$ and $N$ with the polynomial relation, and $\tau$ adjoins the transfer relation. $\square$</p>
+<p>So the transfer is the section that splits the involution: it chooses one of the two sheets in an invariant way, and the only obstruction to an honest splitting is the scalar $2$ that the involution contributes.</p>
+<h2 id="the-fixed-set">The Fixed Set</h2>
+<h3 id="the-restriction-and-its-adjoint">The Restriction and Its Adjoint</h3>
+<p><strong>Definition.</strong> For a space with an involution let $F = X^{\sigma}$ be the fixed set and let $i : F\hookrightarrow X$ be the inclusion. The <strong>restriction to the fixed set</strong> is the map on Borel cohomology</p>
+<p>$$
+r = i^* : H_{\mathbb{Z}/2}^*(X;R) \longrightarrow H_{\mathbb{Z}/2}^*(F;R) = H^*(F;R)\otimes_R H^*(B\mathbb{Z}/2;R),
+$$</p>
+<p>and the <strong>transfer to the fixed set</strong> is its adjoint under the evaluation pairing, the equivariant <strong>Gysin</strong> (or Thom) map</p>
+<p>$$
+\tau = i_! : H_{\mathbb{Z}/2}^{*-d}(F;R) \longrightarrow H_{\mathbb{Z}/2}^{*}(X;R),
+$$</p>
+<p>which raises the degree by the codimension $d$ of the fixed set and is the pushforward to the fixed set along the normal directions.</p>
+<p><strong>Theorem (the Euler class identity).</strong> The restriction and the transfer to the fixed set satisfy</p>
+<p>$$
+r \circ \tau = e \smile (-),
+$$</p>
+<p>where $e \in H_{\mathbb{Z}/2}^{d}(F;R) = H^*(F;R)\otimes H^*(B\mathbb{Z}/2;R)$ is the <strong>equivariant Euler class</strong> of the normal directions to $F$, the class of the normal $G$-bundle in equivariant cohomology. In the free case the fixed set is empty, the two maps are absent, and the same identity with $e$ the Euler class of the double cover is the collaring of the next section.</p>
+<p><em>Proof.</em> The composite of a restriction and a pushforward along the fibre of a vector bundle is the multiplication by the Euler class of the bundle, by the projection formula of <em>Cup and Cap Products</em> applied to the unit sphere bundle and the Thom isomorphism of the normal bundle; the equivariance of the normal bundle makes the class the equivariant Euler class. The statement is the standard identity for the Thom map of an equivariant vector bundle. $\square$</p>
+<h3 id="the-induced-map-on-the-fixed-set">The Induced Map on the Fixed Set</h3>
+<p><strong>Theorem.</strong> An equivariant map $f : (X,\sigma)\to(Y,\tau)$ carries the fixed set into the fixed set, $f(F_X)\subseteq F_Y$, and induces a map on the fixed sets whose pullback in equivariant cohomology intertwines the restrictions and the transfers:</p>
+<p>$$
+f^* \circ r_Y = r_X \circ f^*, \qquad f_! \circ f^* = f^*\circ f_! ,
+$$</p>
+<p>in the sense of the naturality of the Gysin map for an equivariant map of the normal bundles; the equivariant Euler class is natural, $f^*e_Y = e_X$, and the composite $r\tau$ is transported by $f$. In particular the induced map on the fixed set is the restriction of the equivariant map, and the whole structure of the restriction, the transfer and the Euler class is natural for equivariant maps.</p>
+<p><em>Proof.</em> The equivariance gives $f\sigma = \tau f$, so the fixed set is carried to the fixed set; the naturality of the restriction is the functoriality of the pullback, and the naturality of the transfer is that of the Thom isomorphism of the normal bundle, from which $f^*e_Y = e_X$ follows by applying the functor to the Euler-class identity. $\square$</p>
+<h2 id="the-transfer-and-the-borel-construction">The Transfer and the Borel Construction</h2>
+<h3 id="the-transfer-in-the-homotopy-quotient">The Transfer in the Homotopy Quotient</h3>
+<p><strong>Theorem.</strong> The transfer of the free involution of $S^{\infty}$ induces the transfer of the Borel fibration: for a space with an involution $(X,\sigma)$, the map</p>
+<p>$$
+\bar\tau : C_*(X/\sigma;R) \longrightarrow C_*(X_{\mathbb{Z}/2};R)
+$$</p>
+<p>induced by the transfer of the product, together with the natural maps $X_{\mathbb{Z}/2}\to X/\sigma$ when the orbit space is formed, satisfies the same two composition identities, and it exhibits the transfer as the operator that splits the comparison map of <em>Equivariant Cohomology</em>. In the free case the homotopy quotient and the orbit space are homotopy equivalent and the transfer is the one of the first section.</p>
+<p><em>Proof.</em> The Borel construction is the quotient of the free involution on $X\times S^{\infty}$, whose transfer satisfies the identities of the first section; the naturality of the transfer under the projection to $X/\sigma$ gives the statement, and the free case is the identification of the homotopy quotient with the orbit space. $\square$</p>
+<h3 id="the-euler-class-and-the-gysin-sequence">The Euler Class and the Gysin Sequence</h3>
+<p><strong>Theorem (the transfer identities of the Gysin sequence).</strong> Let $p : X\to B$ be a two-fold covering whose deck transformation preserves the orientation of the fibre, so that the statements below hold with the twisted local system or, in particular, with $R = \mathbb{F}_2$ coefficients, let</p>
+<p>$$
+\tau : H^n(X;R) \longrightarrow H^n(B;R)
+$$</p>
+<p>be the cohomological transfer, of degree zero, and let $e \in H^1(B;R)$ be the <strong>Euler class</strong> of the cover, characterised by $p^*e = 0$ and by generating the kernel of the pullback. Then</p>
+<p>$$
+\tau \circ p^* = 0, \qquad \tau(p^*\beta \smile \alpha) = \beta \smile \tau(\alpha), \qquad e \smile \tau = 0,
+$$</p>
+<p>the first identity being the exactness at the middle, the second the projection formula of the transfer, and the third the exactness at the other occurrence of the base; the vanishing $\tau p^* = 0$ holds because $\tau p^*$ is the multiplication by the degree $2$ of the covering, which is zero in $\mathbb{F}_2$ and in the twisted theory, and it makes the images of $p^*$ and $\tau$ the successive kernels. With integer coefficients and a double cover whose deck transformation reverses the orientation the statements hold with the twisted coefficients $\tilde H^*(S^0)$ in place of $R$.</p>
+<p><em>Proof.</em> The projection formula is the naturality of the transfer under the cup product, $\tau(\alpha\smile p^*\beta)=\tau(\alpha)\smile\beta$, read with the graded commutativity; the vanishing $\tau p^*=0$ is the degree computation just stated; and the vanishing $e\smile\tau=0$ with $p^*e=0$ is the exactness that defines the Euler class as the class annihilating the image of the transfer while being annihilated by the pullback. The exactness of the resulting sequence is the subject of <em>The Gysin Sequence of a Two-Fold Covering</em>, next in this category. $\square$</p>
+<h2 id="the-naturality-and-the-products">The Naturality and the Products</h2>
+<h3 id="the-naturality">The Naturality</h3>
+<p><strong>Theorem.</strong> The transfer is natural for equivariant maps: for a $G$-map $f : X\to Y$ between free $G$-spaces the diagram of the transfers and the projections commutes, $f_\#\tau_X = \tau_Y f_\#$, and for the fixed set the restriction $i^* : H_{\mathbb{Z}/2}^*(X)\to H_{\mathbb{Z}/2}^*(F)$ is the localisation map, with kernel the $x$-torsion and with $H_{\mathbb{Z}/2}^*(F)\cong H^*(F)\otimes\mathbb{F}_2[x]$ because the action on $F$ is trivial; the transfer inverts the localisation on the free part and is the operator that recovers the cohomology of the cover from that of the quotient.</p>
+<p><em>Proof.</em> The naturality is the naturality of the sum over the two lifts; the localisation statement is the theorem of <em>The Mod 2 Cohomology of an Involution</em> applied to the fixed set, on which the action is trivial, and the inverse on the free part is the section property $\tau p^*=2$ with two invertible. $\square$</p>
+<h3 id="the-products">The Products</h3>
+<p><strong>Theorem.</strong> For two involutions $(X,\sigma)$ and $(Y,\tau)$ the transfer of the product is the tensor product of the transfers,</p>
+<p>$$
+\tau_{X\times Y} = \tau_X\otimes\tau_Y , \qquad N_{X\times Y} = N_X\otimes N_Y , \qquad e_{X\times Y} = e_X\otimes1+1\otimes e_Y
+$$</p>
+<p>up to the signs of the graded commutativity; under the Künneth hypothesis the identities of the article hold for the product, and the Euler class is additive.</p>
+<p><em>Proof.</em> The lifts of a product are the products of the lifts, so the transfer sums independently over the two factors; the norm is the sum over the group acting diagonally, which is the tensor product of the norms; and the Euler class of a product of line bundles is the sum of the pullbacks, which is the stated additivity. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the sphere and the projective space).</strong> For the antipodal involution of $S^n$, the orbit space is $\mathbb{RP}^n$, the transfer $\tau : C_*(\mathbb{RP}^n)\to C_*(S^n)$ sums the two antipodal lifts, and $p_\#\tau = 2$, $\tau p_\# = 1+\sigma_\#$; the invariants of the homology of $S^n$ under the antipodal map are the classes of even dimension, and over a ring in which $2$ is invertible they are the homology of the projective space. For $n$ even the antipodal map reverses the top class and for $n$ odd it preserves it, which is the difference between the invariants and the coinvariants that the transfer detects.</p>
+<p><strong>Example (the torus and the reflection).</strong> For the involution of the torus $T^n$ inverting one circle, the action is not free, the fixed set is the complementary $(n-1)$-torus, and the transfer to the fixed set is the sum over the two points of the normal sphere; the Euler class is the class of the fixed circle and $r\tau$ is its multiplication. On the free part the transfer is the transfer of the covering of the complement, and the two faces of the transfer are the cohomological content of the fixed set.</p>
+<p><strong>Example (the circle and the reflection).</strong> For the reflection of $S^1$, the fixed set is two points and the orbit space is an interval; the transfer to the fixed set is the map $H_0(\mathrm{pt}^\sqcup\mathrm{pt})\to H_0(S^1)$ and $r\tau$ is the multiplication by the Euler class of the normal bundle, which is the class of the fixed points; the example exhibits the Euler class identity of the article in the smallest case.</p>
+<h2 id="summary">Summary</h2>
+<p>Under an involution $\sigma$ the transfer of the double cover $X\to B=X/\sigma$ is the map $\tau : C_*(B;R)\to C_*(X;R)$ summing the two lifts of a simplex; it satisfies $p_\#\tau = 2$ and $\tau p_\# = 1+\sigma_\# = N$, it lands in the invariant chains, and over a ring in which $2$ is invertible it identifies the homology of the orbit space with the invariant homology of the cover. Over $\mathbb{F}_2$ the scalar $2$ vanishes, the identities become $p_\#\tau=0$ and $\tau p_\# = N$ with $N^2=0$, and the transfer splits the mod 2 homology into the part it carries isomorphically and the part the projection annihilates. The transfer is compatible with the involution on both sides, it is a section of the projection up to the scalar $2$, and under an equivariant map it is natural; for a non-free involution the restriction to the fixed set has an adjoint, the transfer to the fixed set, with $r\tau = e\smile(-)$ the multiplication by the equivariant Euler class of the normal directions, and the induced map on the fixed set commutes with all of it. The transfer passes to the Borel construction of <em>Equivariant Cohomology</em>, where it splits the comparison map, and its cohomological form is the triple of identities $\tau p^*=0$, $\tau(p^*\beta\smile\alpha)=\beta\smile\tau(\alpha)$ and $e\smile\tau=0$ that makes the Gysin sequence of <em>The Gysin Sequence of a Two-Fold Covering</em> exact, with $e$ the Euler class characterised by $p^*e=0$. The general transfer is that of <em>The Transfer Map</em>, the fixed set and the Smith theory are those of <em>The Mod 2 Cohomology of an Involution</em> and <em>Smith Theory and the Fixed Sets of Periodic Maps</em>, and nothing analytic and nothing geometric was used.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(X,\sigma)$, $T = \sigma_\#$</td>
+<td>Involution and the induced chain operator</td>
+</tr>
+<tr>
+<td>$B = X/\sigma$, $p : X\to B$</td>
+<td>Orbit space and the double cover</td>
+</tr>
+<tr>
+<td>$F = X^{\sigma}$</td>
+<td>Fixed set of the involution</td>
+</tr>
+<tr>
+<td>$\tau : C_*(B)\to C_*(X)$</td>
+<td>Transfer, summing the two lifts</td>
+</tr>
+<tr>
+<td>$p_\#\tau = 2$, $\tau p_\# = 1+T = N$</td>
+<td>Composition identities of the transfer</td>
+</tr>
+<tr>
+<td>$N = 1+T$, $N^2 = 2N$</td>
+<td>Norm operator and its idempotent relation</td>
+</tr>
+<tr>
+<td>$T\tau = \tau$, $p_\# T = p_\#$</td>
+<td>Compatibility with the involution</td>
+</tr>
+<tr>
+<td>$H_n(B;R)\cong H_n(X;R)^{\mathbb{Z}/2}$</td>
+<td>Invariants isomorphic to the quotient homology when $2$ is invertible</td>
+</tr>
+<tr>
+<td>$r : C_*(X)\to C_*(F)$</td>
+<td>Restriction to the fixed set; adjoint is the transfer to $F$</td>
+</tr>
+<tr>
+<td>$r\tau = e\smile(-)$</td>
+<td>Euler-class identity for the fixed set; $\tau=i_!$ the Gysin map</td>
+</tr>
+<tr>
+<td>$\tau p^* = 0$, $e\smile\tau = 0$</td>
+<td>Transfer and Euler-class identities of the Gysin sequence</td>
+</tr>
+<tr>
+<td>$e \in H^1(B;R)$, $p^*e = 0$</td>
+<td>Euler class of the two-fold covering</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the transfer of a covering, the invariants and the double-cover computations.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the transfer to the fixed set, the Euler class and the equivariant transfer.</li>
+<li>Armand Borel, <em>Seminar on Transformation Groups</em> (Annals of Mathematics Studies 46, 1960), for the transfer in the Borel construction and the localization.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for the transfer homomorphism, the Gysin sequence and the Euler class of a sphere bundle.</li>
+<li>Michael F. Atiyah, <em>K-Theory</em> (Benjamin, 1967), for the transfer and the Euler class in the divided-difference and Thom-isomorphism form.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the norm operator, the coinvariants and the invariant homology of a finite-group action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

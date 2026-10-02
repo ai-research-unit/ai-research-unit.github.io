@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Representations of a Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-representations-of-a-lie-group"><strong>Unitary Representations of a Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>unitary representation</strong> of a Lie group is a strongly continuous action on a Hilbert space by unitary operators, and it is the object whose decomposition is the harmonic analysis of the group; the left regular representation is the model, its decomposition is the Plancherel theorem, and the irreducible summands are the points of the unitary dual. The infinitesimal form is a representation of the Lie algebra by skew-adjoint operators, so that the generators are self-adjoint after multiplication by $i$; the Casimir element becomes a self-adjoint operator whose sign and spectrum are the first invariants of the representation.</p>
+<p>This article treats unitary representations of a Lie group, the irreducible decomposition and the Plancherel measure. It is the second article of the <code>- * Theory</code> group of the category; the regular representation and its derived form are from <em>The Regular Representation of a Lie Group</em>, the Casimir operator is <em>The Casimir Operator of a Lie Group</em>, the invariant forms are <em>Hermitian Forms on a Lie Algebra</em> and <em>Unitary Representations and the Adjoint Operator</em> of the <code>- * Operator Theory</code> group, and the detailed analysis is <em>Harmonic Analysis on Groups</em>, written and cited.</p>
+<p>The article assumes the Hilbert space, the bounded operators and the spectral theorem from <em>Hilbert Spaces</em> and <em>Bounded Operators on a Hilbert Space</em>, the strongly continuous one-parameter groups and Stone's theorem from <em>Unitary Operators and the Spectral Measure</em>, the Haar integral and the convolution from <em>Locally Compact Groups and Haar Measure</em> and <em>The Convolution Algebra $L^1(G)$</em>, and the representation theory of Lie algebras from <em>Representations of Lie Algebras</em>. The Plancherel theory for the general semisimple case uses the invariant integral and the discrete series; its detailed computation belongs to <em>Harmonic Analysis on Groups</em>, and the orbit-theoretic description to <em>Unitary Representations and the Orbit Method</em> below in the category. No physics vocabulary occurs, and no interpretation of the representations is made.</p>
+<h2 id="unitary-representations">Unitary Representations</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> A <strong>unitary representation</strong> of $G$ on a complex Hilbert space $\mathcal{H}$ is a homomorphism $\pi : G \to U(\mathcal{H})$ into the unitary group such that for every $v \in \mathcal{H}$ the map $g \mapsto \pi(g)v$ is continuous. Two unitary representations are <strong>unitarily equivalent</strong> when there is a unitary $U$ with $U\pi_1(g) = \pi_2(g)U$ for all $g$.</p>
+<p><strong>Definition.</strong> A unitary representation is <strong>irreducible</strong> when it has no non-trivial closed invariant subspace, and <strong>topologically irreducible</strong> when the only closed invariant subspaces are $0$ and $\mathcal{H}$; for unitary representations the two notions coincide, and the representation is a <strong>direct sum</strong> of representations when $\mathcal{H}$ is the orthogonal direct sum of invariant subspaces.</p>
+<p><strong>Definition.</strong> The <strong>unitary dual</strong> $\widehat{G}$ is the set of equivalence classes of irreducible unitary representations of $G$, with the topology of the Fell topology; for a compact group it is discrete, for a vector group it is the dual vector space, and in general it is a measure-theoretic object rather than a manifold.</p>
+<p><strong>Proposition (Schur's lemma).</strong> An irreducible unitary representation has commutant the scalars: every bounded operator intertwining $\pi$ with itself is a scalar, and for a complex Hilbert space every such operator is automatically scalar, the field being algebraically closed.</p>
+<p><em>Proof.</em> The commutant of an irreducible representation is a von Neumann algebra; a self-adjoint operator in it has a spectral projection which is an invariant projection, hence $0$ or $\mathrm{id}$, so the operator is a scalar; applying this to the real and imaginary parts gives the general bounded case, and the conclusion is Schur's lemma for unitary representations.</p>
+<h3 id="the-derived-representation">The Derived Representation</h3>
+<p><strong>Theorem (Stone).</strong> Let $g : \mathbb{R} \to U(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = e^{itA}$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.</p>
+<p><em>Proof.</em> Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is skew-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.</p>
+<p><strong>Definition.</strong> For a unitary representation $\pi$ the <strong>derived representation</strong> on the space of smooth vectors $\mathcal{H}^\infty$ is</p>
+<p>$$
+\pi_* : \mathrm{G} \to \operatorname{End}(\mathcal{H}^\infty), \qquad \pi_*(X)v = \frac{d}{dt}\Big|_{t=0}\pi(\exp tX)v .
+$$</p>
+<p><strong>Theorem.</strong> The derived representation is a representation of the Lie algebra by skew-adjoint operators, $\pi_*(X)^* = -\pi_*(X)$ on $\mathcal{H}^\infty$, so that $i\pi_*(X)$ is self-adjoint and $\pi_*$ extends to a representation of the universal enveloping algebra; the space $\mathcal{H}^\infty$ is dense, invariant and carries a Fréchet structure on which every $\pi_*(u)$ is continuous.</p>
+<p><em>Proof.</em> The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $U(\mathrm{G})$ is the universal property.</p>
+<p><strong>Corollary.</strong> The Casimir element of <em>The Casimir Operator of a Lie Group</em> acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.</p>
+<p><em>Proof.</em> The operator is the sum of products of skew-adjoint operators, hence self-adjoint on the common analytic domain when the sum converges; the formula for the eigenvalue on a highest weight vector is that of <em>The Casimir Operator of a Lie Group</em>, and the self-adjointness is the standard ellipticity of the Casimir on the smooth vectors.</p>
+<h2 id="the-irreducible-decomposition">The Irreducible Decomposition</h2>
+<h3 id="direct-integrals">Direct Integrals</h3>
+<p><strong>Definition.</strong> A <strong>direct integral</strong> of Hilbert spaces over a measure space $(S,\mu)$, written $\int_S^\oplus \mathcal{H}_s\,d\mu(s)$, is the space of measurable sections $s\mapsto v_s$ with $\int\|v_s\|^2\,d\mu(s) < \infty$, modulo sections vanishing almost everywhere; a representation is a <strong>direct integral</strong> of representations $\pi_s$ when it is the direct integral of the spaces and the action is the measurable field $s\mapsto\pi_s$.</p>
+<p><strong>Theorem (decomposition).</strong> A unitary representation of a separable locally compact group on a separable Hilbert space is a direct integral of irreducible unitary representations,</p>
+<p>$$
+\pi \cong \int_{\widehat{G}}^\oplus m(\lambda)\,\pi_\lambda\,d\mu(\lambda),
+$$</p>
+<p>where $\mu$ is a Borel measure on the unitary dual and $m$ is the multiplicity function; the statement is the spectral theorem for the von Neumann algebra generated by the representation, and the decomposition is unique up to the measure class.</p>
+<p><em>Proof.</em> The von Neumann algebra generated by the representation is abelian when the representation is multiplicity free, and the general decomposition is the reduction theory of a von Neumann algebra; the Hilbert space is decomposed along the centre of the algebra, whose spectral projections give the decomposition, and the fibres are the irreducible components. The reduction theory is stated and proved in the operator-algebra theory of <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>, and the present article uses its conclusion.</p>
+<h3 id="the-compact-case">The Compact Case</h3>
+<p><strong>Theorem (Peter--Weyl).</strong> Let $G$ be compact. Then the non-trivial part of the previous decomposition is discrete: every irreducible unitary representation is finite dimensional, the unitary dual is countable, and</p>
+<p>$$
+L^2(G) \cong \bigoplus_{\pi\in\widehat{G}} V_\pi\otimes V_\pi^{*},
+$$</p>
+<p>each irreducible representation occurring with multiplicity its dimension $\dim V_\pi$. The matrix coefficients span a dense subspace of $C(G)$, the characters form an orthogonal family, and the orthogonality relations hold with respect to the normalised Haar measure.</p>
+<p><em>Proof.</em> The convolution operators by continuous functions are compact and normal on $L^2(G)$, the spectral theorem decomposes the space, and the compactness of the group makes each irreducible representation finite dimensional and gives the discrete sum; the multiplicities and the orthogonality relations are the standard computations, developed in <em>Harmonic Analysis on Groups</em>.</p>
+<h3 id="the-plancherel-measure">The Plancherel Measure</h3>
+<p><strong>Theorem (Plancherel).</strong> For a unimodular locally compact group of type I, the regular representation decomposes as the direct integral of the irreducible unitary representations with respect to a unique measure $\mu_{\mathrm{Pl}}$, the <strong>Plancherel measure</strong>, and for $f \in L^1(G)\cap L^2(G)$,</p>
+<p>$$
+\int_G|f(g)|^2\,dg = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda),
+$$</p>
+<p>where $\pi_\lambda(f) = \int_G f(g)\pi_\lambda(g)\,dg$ is the integrated representation and the norm is the Hilbert--Schmidt norm.</p>
+<p><em>Proof.</em> The integrated representation $\pi(f)$ is a bounded operator on each irreducible summand, and the Plancherel formula is the computation of the trace of the spectral measure of the convolution algebra; for unimodular groups the algebra is symmetric, the Plancherel measure is the spectral measure of the commutative subalgebra, and the Hilbert--Schmidt norm is the density of the measure. The general theory is <em>Harmonic Analysis on Groups</em> and <em>The Convolution Algebra $L^1(G)$</em>.</p>
+<p><strong>Corollary (the discrete series and the continuous spectrum).</strong> The Plancherel measure may have atoms, the <strong>discrete series</strong> of the group, and a continuous part; for a semisimple group with a compact Cartan subgroup the discrete series is non-empty, and its formal degrees and characters are computed by the Harish-Chandra theory. The subset of the unitary dual that appears in the support of the Plancherel measure is the <strong>tempered dual</strong>, and the representations outside it are the complementary series and the Langlands quotients.</p>
+<p><em>Proof.</em> The atoms of the spectral measure are the irreducible subrepresentations of the regular representation, which are exactly the square-integrable ones, the discrete series; the continuous part is the remainder of the measure, and the dichotomy is the definition of the tempered dual. The detailed classification of the discrete series and the Plancherel density is the analysis of <em>Harmonic Analysis on Groups</em>.</p>
+<h2 id="the-direct-integral-and-the-matrix-coefficients">The Direct Integral and the Matrix Coefficients</h2>
+<h3 id="the-direct-integral-decomposition">The Direct Integral Decomposition</h3>
+<p><strong>Definition.</strong> Let $(Z,\mu)$ be a measure space and let $\lambda\mapsto\pi_\lambda$ be a measurable family of unitary representations on the Hilbert spaces $\mathcal{H}_\lambda$. The <strong>direct integral</strong> is the representation on</p>
+<p>$$
+\mathcal{H} = \int^{\oplus}_{Z}\mathcal{H}_\lambda\,d\mu(\lambda) , \qquad \pi(g) = \int^{\oplus}_{Z}\pi_\lambda(g)\,d\mu(\lambda) ,
+$$</p>
+<p>the space of the measurable sections $v$ with $\int_Z\lVert v(\lambda)\rVert^2\,d\mu(\lambda)<\infty$ and the action defined pointwise almost everywhere.</p>
+<p><strong>Theorem.</strong> Every unitary representation of a separable locally compact group on a separable Hilbert space is a direct integral of irreducible unitary representations over the unitary dual with a measure class canonically attached to the representation; the decomposition is unique up to the measure-theoretic identifications, the projections onto the invariant subspaces are the spectral projections of the centre of the von Neumann algebra generated by the representation, and the support of the measure is the <strong>spectrum</strong> of the representation.</p>
+<p><em>Proof.</em> The von Neumann algebra generated by the representation is the commutant of the representation's commutant, and its centre is abelian; the spectral theorem for the centre decomposes the Hilbert space over its spectrum, the fibres are invariant under the algebra because the centre is central, and the fibres are irreducible by the maximality of the centre. The uniqueness is the uniqueness of the central decomposition, which is the operator-algebra reduction theory of <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>.</p>
+<h3 id="the-matrix-coefficients">The Matrix Coefficients</h3>
+<p><strong>Definition.</strong> The <strong>matrix coefficient</strong> of a unitary representation $\pi$ at the vectors $v,w$ is the function</p>
+<p>$$
+\pi_{v,w}(g) = \langle\pi(g)v,w\rangle ,
+$$</p>
+<p>which is bounded, continuous and uniformly continuous in each variable; it is <strong>square-integrable</strong> when it lies in $L^2(G)$ and then its $L^2$-norm is $\lVert v\rVert\lVert w\rVert/d_\pi$ for the formal degree $d_\pi$.</p>
+<p><strong>Theorem.</strong> The square-integrable matrix coefficients are exactly those of the discrete series, and the discrete series is the set of the atoms of the Plancherel measure; the representations with all matrix coefficients in $L^{2+\epsilon}(G)$ for every $\epsilon>0$ form the <strong>tempered dual</strong>, on which the Plancherel measure is continuous, and the tempered dual is the support of the continuous part of the measure.</p>
+<p><em>Proof.</em> The Schur orthogonality of the matrix coefficients gives the square-integrability exactly for the representations contributing an atom to the Plancherel formula; the characterisation of the tempered dual by the growth of the matrix coefficients is the standard criterion, and the identification of the two parts of the measure is the Plancherel theorem. The details are in the references.</p>
+<p><strong>Corollary.</strong> The regular representation of $G$ is the direct integral of the irreducible unitary representations with respect to the Plancherel measure, $\pi_{\mathrm{reg}}\cong\int^{\oplus}_{\widehat{G}}\pi_\lambda\,d\mu_{\mathrm{Pl}}(\lambda)$, and its spectrum is the support of the measure; the discrete series contributes the atoms and the tempered dual the continuous part.</p>
+<p><em>Proof.</em> The decomposition is the theorem applied to the regular representation, whose von Neumann algebra is the group von Neumann algebra; the Plancherel theorem identifies the measure of the decomposition with the Plancherel measure and therefore the spectrum with its support.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-vector-group">The Vector Group</h3>
+<p>For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\xi(x) = e^{2\pi i\,\xi\cdot x}$ with $\xi \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\xi\cdot X)v$, skew-adjoint because the scalar is imaginary.</p>
+<h3 id="a-compact-group">A Compact Group</h3>
+<p>For $G = SU(2)$ the irreducible unitary representations are the symmetric powers of the defining representation on $\mathbb{C}^2$, indexed by the non-negative half-integers; the Plancherel measure is discrete with weights $(\dim V_\pi)^2$ on the representation $\pi$ up to the normalisation of the Haar measure, and the Casimir acts by the quadratic invariant $\langle\lambda,\lambda+2\varrho\rangle$; the decomposition is the classical spherical harmonic expansion.</p>
+<h3 id="a-semisimple-group-of-real-rank-one">A Semisimple Group of Real Rank One</h3>
+<p>For $G = SL_2(\mathbb{R})$ the unitary dual consists of the principal series, the discrete series and the complementary series; the Plancherel measure is supported on the principal series with an explicit density, the discrete series contributes atoms, and the representations are realised on spaces of functions on the boundary of the hyperbolic plane, whose geometry belongs to Part IV and whose analysis is developed in <em>Harmonic Analysis on Groups</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined <strong>Plancherel measure</strong> and the formula $\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi : G \to U(\mathcal{H})$</td>
+<td>a unitary representation</td>
+</tr>
+<tr>
+<td>$\widehat{G}$</td>
+<td>the unitary dual</td>
+</tr>
+<tr>
+<td>$\pi_*$</td>
+<td>the derived representation on the smooth vectors</td>
+</tr>
+<tr>
+<td>$\pi_*(X)^* = -\pi_*(X)$</td>
+<td>skew-adjointness of the generators</td>
+</tr>
+<tr>
+<td>$i\pi_*(X)$</td>
+<td>the self-adjoint generator, by Stone's theorem</td>
+</tr>
+<tr>
+<td>$\int_S^\oplus\mathcal{H}_s\,d\mu(s)$</td>
+<td>a direct integral of Hilbert spaces</td>
+</tr>
+<tr>
+<td>$L^2(G) \cong \bigoplus_\pi V_\pi\otimes V_\pi^*$</td>
+<td>the Peter--Weyl decomposition for compact $G$</td>
+</tr>
+<tr>
+<td>$d\mu_{\mathrm{Pl}}$</td>
+<td>the Plancherel measure</td>
+</tr>
+<tr>
+<td>$\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}$</td>
+<td>the Plancherel formula</td>
+</tr>
+<tr>
+<td>discrete series, tempered dual</td>
+<td>the atomic and the continuous part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the unitary representations, the Peter--Weyl decomposition and the Plancherel theory.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for the discrete series, the tempered dual and the Plancherel density.</li>
+<li>Serge Lang, <em>$SL_2(\mathbb{R})$</em> (Springer, 1985), for the explicit unitary dual of the rank-one case.</li>
+<li>Jacques Dixmier, <em>von Neumann Algebras</em> (North-Holland, 1981), for the decomposition theory and the reduction of a representation.</li>
+<li>V. S. Varadarajan, <em>Geometry of Quantum Theory</em> (Springer, second edition, 1985), for the derived representation, the smooth vectors and Stone's theorem in the representation-theoretic setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

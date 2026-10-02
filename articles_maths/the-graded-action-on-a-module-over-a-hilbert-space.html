@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-hilbert-space"><strong>The Graded Action on a Module over a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A module over a Hilbert space is a module over the graded algebra $B(H)$ of the bounded operators of that Hilbert space, and a <strong>graded action</strong> is an action that respects the grading: a homogeneous operator of degree $i$ sends the degree-$j$ part of the module to the degree-$(i+j)$ part. The graded action is therefore a representation of a graded algebra in which the degree is additive rather than merely preserved, and the sign that appears in the graded commutator is exactly the sign that makes the representation a homomorphism of graded algebras. The analytic content of the Hilbert-space case is that the module is a graded Hilbert space, the action is by bounded operators, and a graded action of a $C^*$-algebra is automatically contractive and intertwines the two parity operators.</p>
+<p>This article fixes the graded module over the graded algebra $B(H)$, the graded action and its sign rule, the parity operator of the module and its intertwining with the action, the boundedness and the block form of the action, and the relation to the graded actions of the abstract theory. The graded algebra $B(H)$ and the grade involution are <em>The Signed Sandwich on a Hilbert Space</em> and <em>Reflections as Signed Two-Sided Operators on a Hilbert Space</em>; the abstract graded module and its sign rule are <em>The Graded Action on a Module over a Graded Algebra</em> (Part II), of which the present article is the Hilbert-space reading; the module theory over a ring is <em>Modules over a Ring</em> (Part I), and the adjoint of the graded action is <em>The Graded Adjoint Action on a Module over a Hilbert Space</em> below.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$, and $B(H)=B(H)^0\oplus B(H)^1$ is the graded algebra of bounded operators, where $B(H)^i=\{T:\alpha(T)=(-1)^iT\}$. A <strong>graded module</strong> is a graded Hilbert space $M=M^0\oplus M^1$ with parity operator $\Gamma_M$ together with a bounded action $\rho:B(H)\to B(M)$. Degrees are read in $\mathbb{Z}/2$.</p>
+<h2 id="graded-modules-over-the-graded-algebra">Graded Modules over the Graded Algebra</h2>
+<p><strong>Definition.</strong> A <strong>graded module over a Hilbert space</strong> is a graded Hilbert space $M=M^0\oplus M^1$ with a bounded linear map $\rho:B(H)\to B(M)$ such that</p>
+<p>$$
+\rho\bigl(B(H)^i\bigr)M^j\subseteq M^{i+j}
+$$</p>
+<p>for $i,j\in\mathbb{Z}/2$; the action is written $T\cdot m=\rho(T)m$.</p>
+<p><strong>Proposition (the module axioms).</strong> A graded action is a module action, $\rho(ST)=\rho(S)\rho(T)$ and $\rho(I)=\mathrm{id}_M$, and the grading is compatible with the action in the strong sense that the even operators of $B(H)$ act as even operators of $M$ and the odd operators act as odd operators:</p>
+<p>$$
+\rho(T)M^j\subseteq M^j\ (T\ \text{even}),\qquad \rho(T)M^j\subseteq M^{1+j}\ (T\ \text{odd}).
+$$</p>
+<p>The module is a module in the ordinary sense when the grading is forgotten.</p>
+<p><em>Proof.</em> The action is a homomorphism by definition, and the grading condition is the additivity of the degree; the last statement is the definition read without the grading.</p>
+<p><strong>Proposition (intertwining of the parity operators).</strong> A bounded action $\rho$ is graded if and only if it intertwines the two parity operators,</p>
+<p>$$
+\rho(T)\,\Gamma_M=(-1)^{|T|}\,\Gamma_M\,\rho(T)\quad\text{on homogeneous }T,
+$$</p>
+<p>equivalently $\rho(\Gamma_H)=\Gamma_M$ when $\rho$ is a $*$-homomorphism, and the even part of the action is the subalgebra $\rho(B(H)^0)$, which preserves each graded piece.</p>
+<p><em>Proof.</em> A homogeneous $T$ of degree $i$ has $\Gamma_H T\Gamma_H=(-1)^iT$; applying $\rho$ gives $\rho(\Gamma_H)\rho(T)\rho(\Gamma_H)=(-1)^i\rho(T)$ and, if the action is a $*$-homomorphism, $\rho(\Gamma_H)=\Gamma_M$ by the intertwining; the grading condition and the intertwining are then the same statement.</p>
+<p><strong>Proposition (the graded dual and the degree).</strong> The <strong>graded dual</strong> $M^\vee$ is the graded Hilbert space with $(M^\vee)^i=(M^i)^*$, its elements are the bounded functionals, and the evaluation pairing $\langle f,m\rangle=f(m)$ has degree zero, vanishing unless $|f|=|m|$; the shift $M[1]$ has $(M[1])^i=M^{i+1}$ and satisfies $(M[1])^\vee=M^\vee[1]$.</p>
+<p><em>Proof.</em> A bounded functional on $M$ restricts to each graded piece, and the dual of a direct sum is the direct sum of the duals; the pairing of $(M^i)^*$ with $M^j$ vanishes for $i\neq j$ and has degree zero as an element of $\mathbb{Z}/2$; the shift statement is the reindexing of the summands.</p>
+<h2 id="the-graded-action-and-the-sign-rule">The Graded Action and the Sign Rule</h2>
+<p><strong>Definition.</strong> For homogeneous elements $S,T$ of $B(H)$ the <strong>graded commutator</strong> is</p>
+<p>$$
+[S,T]_{\mathrm{gr}}=ST-(-1)^{|S||T|}TS,
+$$</p>
+<p>and the action is a <strong>graded action</strong> when the module carries the grading and the representation respects it, $\rho(B(H)^i)M^j\subseteq M^{i+j}$.</p>
+<p><strong>Theorem (the sign rule is forced by multiplicativity).</strong> Let $\rho$ be a graded action of $B(H)$ on $M$. Then for homogeneous $S,T$ the graded commutator is preserved:</p>
+<p>$$
+\rho\bigl([S,T]_{\mathrm{gr}}\bigr)=[\rho(S),\rho(T)]_{\mathrm{gr}} .
+$$</p>
+<p>The sign $(-1)^{|S||T|}$ is the unique sign for which multiplicativity and the grading are compatible; with the ordinary commutator $ST-TS$ in its place the identity fails for two odd elements.</p>
+<p><em>Proof.</em> Expanding $\rho(ST)$ and $\rho(TS)$ by multiplicativity and applying the graded sign gives the identity. Two odd elements have $(-1)^{|S||T|}=-1$, so the graded commutator of the images is $\rho(S)\rho(T)+\rho(T)\rho(S)$ while the ordinary commutator is $\rho(S)\rho(T)-\rho(T)\rho(S)$, and the two differ by the anticommutator, which need not vanish.</p>
+<p><strong>Proposition (the sign rule on homogeneous vectors).</strong> For homogeneous $T,S\in B(H)$ and $m\in M$,</p>
+<p>$$
+T\cdot m\in M^{|T|+|m|},\qquad S\cdot(T\cdot m)=(-1)^{|S||T|}\,T\cdot(S\cdot m)+[S,T]_{\mathrm{gr}}\cdot m ,
+$$</p>
+<p>so the action of an odd operator changes the degree of the vector, and the two orders of two homogeneous actions differ by the Koszul sign and the graded commutator.</p>
+<p><em>Proof.</em> The additivity of the degree is the defining condition; the identity is the graded commutator $ST=(-1)^{|S||T|}TS+[S,T]_{\mathrm{gr}}$ acting on $m$ and read through multiplicativity of $\rho$.</p>
+<p><strong>Remark.</strong> The sign rule is the difference between a graded action and a representation that merely preserves degrees: an action that is only degree-preserving need not be a homomorphism, and its failure is precisely a discrepancy in the graded commutator. The Hilbert-space theory keeps the sign because the grading is given by conjugation by $\Gamma$, and multiplicativity of $\rho$ on the two homogeneous parts is multiplicativity of the representation.</p>
+<h2 id="boundedness-and-the-parity-operator">Boundedness and the Parity Operator</h2>
+<p><strong>Theorem (a graded action of a $C^*$-algebra is contractive).</strong> Every action $\rho$ of $B(H)$ by bounded operators on the Hilbert space $M$ satisfies</p>
+<p>$$
+\|\rho(T)\|\le\|T\| ,
+$$</p>
+<p>with equality exactly when $\rho$ is injective; in particular a graded action of $B(H)$ is a contraction, and it is an isometry exactly when it is faithful.</p>
+<p><em>Proof.</em> The action is a $*$-homomorphism of a $C^*$-algebra into $B(M)$, and a $*$-homomorphism of $C^*$-algebras is contractive; injectivity makes it isometric by the $C^*$-identity. The graded case is a special case, the grading being given by the conjugation by $\Gamma_H$ and transported to $M$.</p>
+<p><strong>Proposition (the even part and the commutant).</strong> The even part $\rho(B(H)^0)$ preserves each graded piece, and its restriction to $M^j$ is a representation of the even subalgebra; the parity operator $\Gamma_M$ commutes with the even part and anticommutes with the odd part, so the commutant of $\rho(B(H))$ is the set of operators commuting with both $\rho(B(H)^0)$ and $\rho(\Gamma_H)$.</p>
+<p><em>Proof.</em> The preservation of the pieces is the grading condition with $i=0$; the commutation relations are the intertwining of the previous section, and the statement about the commutant is the definition of the commutant read on the two pieces.</p>
+<p><strong>Remark (the $*$-structure).</strong> When the module is a <strong>Hilbert module</strong>, meaning that $M$ carries an inner product for which each $\rho(T)$ has an adjoint and $\rho(T^*)=\rho(T)^*$, the graded action is a graded $*$-representation, the odd operators are skew-adjoint with respect to the grading, and the sign rule is compatible with the involution, $\rho((ST)^*)=\rho(T^*)\rho(S^*)$. The general theory of Hilbert modules is <em>Hilbert Algebras</em> and <em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em> (Part II).</p>
+<h2 id="the-block-form-and-the-even-part">The Block Form and the Even Part</h2>
+<p><strong>Definition.</strong> In the decomposition $M=M^0\oplus M^1$ a bounded operator is written in block form $T=\begin{pmatrix}P&Q\\R&S\end{pmatrix}$ with $P:M^0\to M^0$, $Q:M^1\to M^0$, $R:M^0\to M^1$, $S:M^1\to M^1$; the operator is even exactly when $Q=R=0$ and odd exactly when $P=S=0$.</p>
+<p><strong>Proposition (the graded action in blocks).</strong> For a graded action $\rho$ and homogeneous $T\in B(H)$ of degree $i$, the block form of $\rho(T)$ has nonzero blocks only between pieces whose degrees differ by $i$:</p>
+<p>$$
+\rho(T)=\begin{pmatrix}P&0\\0&S\end{pmatrix}\ (i=0),\qquad
+\rho(T)=\begin{pmatrix}0&Q\\R&0\end{pmatrix}\ (i=1),
+$$</p>
+<p>and the parity operator of the module is $\Gamma_M=\operatorname{diag}(P^0,-P^1)$ with $P^j$ the projection onto $M^j$.</p>
+<p><em>Proof.</em> The grading condition $\rho(B(H)^i)M^j\subseteq M^{i+j}$ says that the component of $\rho(T)$ sending $M^j$ to $M^{j+i}$ is the only one that can be nonzero; for $i=0$ this permits the diagonal blocks, and for $i=1$ only the off-diagonal blocks, which is the block form displayed.</p>
+<p><strong>Example (the regular module).</strong> The algebra $B(H)$ is a graded module over itself with $\rho(T)=L_T$ the left multiplication; the graded pieces are the even and odd operators, the action of an odd element sends the even part to the odd part, and the parity operator is the grade involution $\alpha$, which commutes with the even left multiplications and anticommutes with the odd ones.</p>
+<p><strong>Example (a module of finite rank over the matrix algebra).</strong> For $H=\mathbb{K}^{p+q}$ and $M=\mathbb{K}^{r+s}$, a graded action of $M_{p+q}(\mathbb{K})$ on $M$ is given by a block matrix representation in which the even generators act diagonally and the odd generators act off-diagonally; the commutant is the algebra of operators commuting with the parity and with the even part, realising the double commutant statement of the graded theory in finite dimension.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded module over a Hilbert space is a graded Hilbert space $M=M^0\oplus M^1$ carrying a bounded action of the graded algebra $B(H)$ such that $\rho(B(H)^i)M^j\subseteq M^{i+j}$; the action is an ordinary module action together with the additivity of the degree, equivalently the intertwining $\rho(\Gamma_H)=\Gamma_M$ of the two parity operators, and in block form the even operators act diagonally and the odd operators off-diagonally. The graded commutator $[S,T]_{\mathrm{gr}}=ST-(-1)^{|S||T|}TS$ carries the Koszul sign, and that sign is the unique one making the action a representation of the graded algebra; without it the action is only degree-preserving and need not be multiplicative. A graded action of the $C^*$-algebra $B(H)$ is automatically contractive, $\|\rho(T)\|\le\|T\|$, and isometric exactly when faithful; with an inner product for which each action is a $*$-homomorphism the module is a Hilbert module and the action is a graded $*$-representation. The regular module with $\rho=L$ and the finite-rank matrix modules are the standard examples, and the adjoint version of the action, in which the sign appears in the transpose, is <em>The Graded Adjoint Action on a Module over a Hilbert Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(H)=B(H)^0\oplus B(H)^1$</td>
+<td>the graded algebra of bounded operators</td>
+</tr>
+<tr>
+<td>$\alpha(T)=\Gamma T\Gamma$</td>
+<td>the grade involution, $\alpha(T)=(-1)^iT$ on $B(H)^i$</td>
+</tr>
+<tr>
+<td>$M=M^0\oplus M^1$</td>
+<td>the graded Hilbert module</td>
+</tr>
+<tr>
+<td>$\rho(B(H)^i)M^j\subseteq M^{i+j}$</td>
+<td>the graded action condition</td>
+</tr>
+<tr>
+<td>$\rho(\Gamma_H)=\Gamma_M$</td>
+<td>intertwining of the parity operators</td>
+</tr>
+<tr>
+<td>$[S,T]_{\mathrm{gr}}=ST-(-1)^{|S||T|}TS$</td>
+<td>the graded commutator</td>
+</tr>
+<tr>
+<td>$\|\rho(T)\|\le\|T\|$</td>
+<td>contractivity of the $C^*$-action</td>
+</tr>
+<tr>
+<td>$\rho(T)=\begin{pmatrix}P&0\\0&S\end{pmatrix}$ or $\begin{pmatrix}0&Q\\R&0\end{pmatrix}$</td>
+<td>block form of even and odd actions</td>
+</tr>
+<tr>
+<td>$M^\vee$, $M[1]$</td>
+<td>graded dual and shift</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for representations of $B(H)$ and the contractivity of $C^*$-homomorphisms.</li>
+<li>Marc A. Rieffel, "Induced Representations of $C^*$-algebras", <em>Advances in Mathematics</em> <strong>13</strong> (1974), 176–257, for the module-theoretic reading of representations of operator algebras.</li>
+<li>Pierre Deligne and John W. Morgan, "Notes on Supersymmetry", in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, vol. 1 (American Mathematical Society, 1999), for the Koszul sign rule and graded modules.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the graded module theory and the sign rule in the graded category.</li>
+<li>E. Christopher Lance, <em>Hilbert $C^*$-Modules</em> (Cambridge University Press, 1995), for Hilbert modules over operator algebras and their graded actions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

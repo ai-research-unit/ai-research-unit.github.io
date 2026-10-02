@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Derivations of a Commutative Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-derivations-of-a-commutative-algebra"><strong>The Derivations of a Commutative Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A derivation of a commutative algebra $A$ over a commutative ring $R$ is an $R$-linear map $\delta : A \to A$ satisfying the Leibniz rule $\delta(ab) = \delta(a)b + a\delta(b)$. The derivations were introduced for a general ring in <em>Derivations of a Ring</em>, where it was shown that they form a Lie ring under the commutator and that the inner derivations are the image of the adjoint map. When $A$ is commutative two new features appear. The inner derivations vanish, because $\operatorname{ad}_a(x) = ax - xa = 0$; and the derivation space becomes a module over $A$ itself, since $a\delta$ is again a derivation. The derivation space is therefore at once an $A$-module and a Lie $R$-algebra, with the two structures linked by $[\delta, a\delta'] = \delta(a)\delta' + a[\delta,\delta']$.</p>
+<p>The purpose of the article is to describe this module, and the description is the theory of <strong>Kähler differentials</strong>. The module of derivations of $A$ over $R$ is representable: there is an $A$-module $\Omega_{A/R}$, the module of Kähler differentials, carrying a universal derivation $d : A \to \Omega_{A/R}$ such that</p>
+<p>$$
+\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M) \qquad \text{for every } A\text{-module } M ,
+$$</p>
+<p>naturally in $M$; with $M = A$ this gives $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A)$. The module $\Omega_{A/R}$ is constructed as the conormal module $I/I^2$ of the diagonal ideal $I = \ker(A\otimes_R A \to A)$, and this construction is what makes the derivations computable: for the polynomial algebra it gives the free module on the differentials $dx_i$, and for a quotient it gives the conormal sequence.</p>
+<p>The article assumes <em>Derivations of a Ring</em> for the definition, the Leibniz rule and the Lie ring structure; <em>Automorphisms and Derivations of Algebras</em> for the algebra form; <em>Commutative Algebras</em> and <em>Rings and Fields</em> for the objects; and <em>Tensor Products of Algebras</em> for $A \otimes_R A$ and the diagonal. The differentials of a ring, their base change and their relation to separability are <em>Change of Rings</em> in the category <em>Linear Spaces over Linear Algebras</em>, whose general treatment the commutative case here anticipates; the article records the commutative-algebra statement and leaves the general theory to that entry. Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is a commutative unital $R$-algebra. The boundary of Part I is respected: a derivation is an algebraic operator, no derivative in the sense of analysis occurs, and no norm, distance or topology is used.</p>
+<h2 id="the-derivation-space-as-a-module-and-a-lie-algebra">The Derivation Space as a Module and a Lie Algebra</h2>
+<h3 id="the-math30-module-structure">The $A$-Module Structure</h3>
+<p><strong>Definition.</strong> For an $A$-module $M$ an <strong>$R$-derivation</strong> with values in $M$ is an $R$-linear map $\delta : A \to M$ with</p>
+<p>$$
+\delta(ab) = \delta(a)\,b + a\,\delta(b) \qquad \text{for all } a, b \in A .
+$$</p>
+<p>The set of such maps is written $\operatorname{Der}_R(A, M)$, and $\operatorname{Der}_R(A) = \operatorname{Der}_R(A, A)$.</p>
+<p><strong>Proposition.</strong> For every $A$-module $M$ the set $\operatorname{Der}_R(A,M)$ is an $A$-module under $(a\delta)(x) = a\,\delta(x)$, and an $R$-submodule of $\operatorname{Hom}_R(A, M)$. For $M = A$ the commutator $[\delta, \delta'] = \delta\delta' - \delta'\delta$ is again a derivation, so $\operatorname{Der}_R(A)$ is a Lie $R$-algebra; the two structures satisfy</p>
+<p>$$
+[\delta, a\delta'] = \delta(a)\,\delta' + a\,[\delta, \delta'] , \qquad [a\delta, \delta'] = a\,[\delta,\delta'] - \delta'(a)\,\delta .
+$$</p>
+<p><em>Proof.</em> Linearity in $\delta$ is clear, and $(a\delta)(xy) = a(\delta(x)y + x\delta(y)) = (a\delta(x))y + x(a\delta(y))$ uses the commutativity of $A$ to move $a$ past $y$. The commutator of two derivations is a derivation by <em>Derivations of a Ring</em>. For the first displayed identity, $(\delta a\delta' - a\delta'\delta)(x) = \delta(a\delta'(x)) - a\delta'(\delta(x)) = \delta(a)\delta'(x) + a\delta(\delta'(x)) - a\delta'(\delta(x))$, and rearranging gives the claim; the second is the same with the roles interchanged, or follows from the antisymmetry. $\square$</p>
+<p><strong>Corollary.</strong> When $A$ is commutative, every inner derivation vanishes: $\operatorname{ad}_a(x) = ax - xa = 0$. Hence $\operatorname{Der}_R(A)$ is generated by the outer derivations alone, and the inner derivation ideal of the general theory is zero. The Lie algebra $\operatorname{Der}_R(A)$ can therefore be nonabelian only through its structure as a module: the commutator $[\delta, \delta']$ is a derivation that need not be an $A$-multiple of either factor.</p>
+<p><strong>Example.</strong> For $A = R[x_1, \dots, x_d]$ the derivations are the $R[x]$-linear combinations $\sum_i f_i\,\partial_i$ with $\partial_i(x_j) = \delta_{ij}$; they form a free $A$-module of rank $d$, and $[\partial_i, \partial_j] = 0$. The derivation $\sum_i x_i\partial_i$ is the degree operator of <em>Operators on the Symmetric Algebra</em>, the unique derivation with $\partial_i$-value $x_i$ on the generators.</p>
+<h3 id="the-lie-algebra-of-the-polynomial-algebra">The Lie Algebra of the Polynomial Algebra</h3>
+<p><strong>Proposition.</strong> $\operatorname{Der}_R(R[x_1,\dots,x_d])$ is the free $R[x]$-module on $\partial_1, \dots, \partial_d$, and the $R$-Lie algebra it forms is the abelian one of dimension $d$ over $R[x]$; the $A$-module structure and the $R$-Lie structure of a derivation space of larger rank are linked by the identity $[\delta, a\delta'] = \delta(a)\delta' + a[\delta,\delta']$.</p>
+<p><em>Proof.</em> A derivation is determined by its values on the generators $x_i$, which are arbitrary; hence the $A$-module $\operatorname{Der}_R(A)$ is free with the basis $\partial_i$. For the bracket, $\partial_i\partial_j = \partial_j\partial_i$ on the polynomial algebra, since both sides take the same value on every monomial. $\square$</p>
+<p><strong>Remark.</strong> For a general commutative $A$ the bracket need not vanish, and the pair $(\operatorname{Der}_R(A), A)$ with the action $\delta(a)$ and the module structure is the algebraic object that records how the infinitesimal transformations of $A$ combine; its automorphism-theoretic reading is in <em>Automorphisms and Derivations of Algebras</em>.</p>
+<h2 id="kahler-differentials">Kähler Differentials</h2>
+<h3 id="definition-and-the-universal-derivation">Definition and the Universal Derivation</h3>
+<p><strong>Definition.</strong> The <strong>module of Kähler differentials</strong> of $A$ over $R$ is the $A$-module $\Omega_{A/R}$ generated by symbols $da$, $a \in A$, subject to the relations</p>
+<p>$$
+d(a+b) = da + db, \qquad d(ab) = a\,db + b\,da, \qquad dr = 0 \ (r \in R) .
+$$</p>
+<p>The map $d : A \to \Omega_{A/R}$, $a \mapsto da$, is the <strong>universal derivation</strong>.</p>
+<p><strong>Theorem (universal property).</strong> For every $A$-module $M$ and every derivation $\delta : A \to M$ there is a unique $A$-linear map $\varphi : \Omega_{A/R} \to M$ with $\delta = \varphi \circ d$. Hence</p>
+<p>$$
+\operatorname{Der}_R(A, M) \cong \operatorname{Hom}_A(\Omega_{A/R}, M)
+$$</p>
+<p>naturally in $M$, and in particular $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A)$.</p>
+<p><em>Proof.</em> Uniqueness: $\Omega_{A/R}$ is generated as an $A$-module by the $da$, so $\varphi$ is determined by its values $\varphi(da) = \delta(a)$. Existence: the assignment $da \mapsto \delta(a)$ respects the three relations, because $\delta$ is additive, satisfies the Leibniz rule and vanishes on $R$ by $R$-linearity and $\delta(1) = \delta(1\cdot1) = 2\delta(1)$. Hence it extends to an $A$-linear map, which by construction satisfies $\varphi\circ d = \delta$. Naturality in $M$ is the compatibility of the correspondence with $A$-linear maps $M \to M'$. $\square$</p>
+<p>The theorem is the exact sense in which the derivations of $A$ form the dual of a module: <strong>every derivation factors uniquely through the universal one</strong>, and the derivation space is the dual of $\Omega_{A/R}$.</p>
+<h3 id="construction-as-the-conormal-module">Construction as the Conormal Module</h3>
+<p>The relations of the definition are abstract; the module they present is realised concretely by the diagonal.</p>
+<p><strong>Theorem.</strong> Let $I = \ker(\mu : A\otimes_R A \to A)$, $\mu(a\otimes b) = ab$, the <strong>diagonal ideal</strong>. Then $I/I^2$ is naturally isomorphic to $\Omega_{A/R}$, the class of $1\otimes a - a\otimes 1$ corresponding to $da$.</p>
+<p><em>Proof.</em> The ideal $I$ is generated by the elements $1\otimes a - a\otimes 1$, because $\sum a_i\otimes b_i \in I$ means $\sum a_ib_i = 0$, and then $\sum a_i\otimes b_i = \sum a_i(1\otimes b_i - b_i\otimes1)$. Define $\Phi : \Omega_{A/R} \to I/I^2$ on generators by $a\,db \mapsto a(1\otimes b - b\otimes1) \bmod I^2$; the relations are respected because</p>
+<p>$$
+a\,d(bc) - ab\,dc - ac\,db \ \longmapsto \ (a\otimes 1 - 1\otimes a)(1\otimes b - b\otimes1)(1\otimes c - c\otimes1) \in I^3 \subseteq I^2 ,
+$$</p>
+<p>using the factorisation $a\otimes b + b\otimes a - ab\otimes1 - 1\otimes ab = (a\otimes1 - 1\otimes a)(1\otimes b - b\otimes1)$ of the Leibniz discrepancy. Conversely, define $\Psi : I/I^2 \to \Omega_{A/R}$ by $\sum a_i\otimes b_i \mapsto \sum a_i\,db_i$, which is well defined on $I$ because $\sum a_ib_i = 0$ and hence $\sum a_i\,db_i = \sum d(a_ib_i) - \sum b_i\,da_i = d(0) - \sum b_i\,da_i$, an element determined by the class in $I/I^2$; the two maps are inverse on the generators $da$. $\square$</p>
+<p><strong>Corollary.</strong> $\Omega_{A/R}$ is generated as an $A$-module by the $da$, and it is the quotient of the free $A$-module on the $da$ by the submodule generated by $d(a+b)-da-db$, $d(ab)-a\,db-b\,da$ and the $dr$; the construction exhibits it as $I/I^2$, and both descriptions agree.</p>
+<h3 id="functoriality-and-base-change">Functoriality and Base Change</h3>
+<p><strong>Proposition (functoriality).</strong> An $R$-algebra homomorphism $u : A \to B$ induces a $B$-linear map</p>
+<p>$$
+\Omega_{A/R} \otimes_A B \longrightarrow \Omega_{B/R}, \qquad da \otimes b \longmapsto b\,du(a) ,
+$$</p>
+<p>and the assignment is compatible with composition. If $A \to A'$ is a ring homomorphism, the base change $\Omega_{A/R}\otimes_A A' \to \Omega_{A'/R}$ is an isomorphism when $A' = A\otimes_R S$ for a commutative $R$-algebra $S$, so that Kähler differentials commute with extension of scalars.</p>
+<p><em>Proof.</em> The map $da\mapsto du(a)$ is a derivation $A \to \Omega_{B/R}$, since $du$ is; by the universal property it extends to an $A$-linear map $\Omega_{A/R}\to\Omega_{B/R}$, and the $B$-linearity of the displayed map follows. The compatibility with composition is the chain rule $d(v\circ u) = v_*\,du$, and the base-change case is the identification of the diagonal ideals of $A\otimes_R S$ over $S$ with $I\otimes_R S$. $\square$</p>
+<h3 id="the-conormal-sequence">The Conormal Sequence</h3>
+<p><strong>Theorem.</strong> Let $A \to B$ be a surjective $R$-algebra homomorphism with kernel $J$. Then there is an exact sequence of $B$-modules</p>
+<p>$$
+J/J^2 \longrightarrow \Omega_{A/R}\otimes_A B \longrightarrow \Omega_{B/R} \longrightarrow 0 ,
+$$</p>
+<p>in which the first map sends the class of $j$ to $dj\otimes1$.</p>
+<p><em>Proof.</em> The second map is the functoriality of the previous proposition; it is onto because the $db$ generate $\Omega_{B/R}$ and are the images of the $da\otimes1$. The composite is zero because $dj\otimes1\mapsto db = 0$ for $j\in J$, since $j$ maps to $0$ in $B$. Exactness in the middle is checked on the level of the presentations: an element of $\Omega_{A/R}\otimes_A B$ dies in $\Omega_{B/R}$ exactly when its symbol relations are those forced by $J$, that is, exactly when it is the image of $J/J^2$; the verification is the case $A = R[x_1,\dots,x_n]$, where $J$ is given by equations and the presentation of $\Omega_{B/R}$ is the quotient of the free module on $dx_i$ by $dg$ for $g$ in a generating set of $J$, which is the statement of exactness for that case. $\square$</p>
+<p><strong>Corollary.</strong> If $B = A/J$ and $J$ is generated by a regular sequence, the sequence continues to the left with $\Omega_{J/R}$ and the conormal module $J/J^2$ is free; the exactness at $J/J^2$ is the content of the <strong>conormal sequence</strong> and it belongs to the commutative algebra of <em>Change of Rings</em>, where the higher terms are treated.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-polynomial-algebra">The Polynomial Algebra</h3>
+<p>For $A = R[x_1, \dots, x_d]$ the universal derivation is $df = \sum_i \partial_i f\,dx_i$ and $\Omega_{A/R}$ is the free $A$-module with basis $dx_1, \dots, dx_d$, of rank $d$. The dual basis statement is $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A) = \bigoplus_i A\partial_i$. The degree operator $D = \sum_i x_i\partial_i$ is the derivation dual to the class $\sum_i x_i\,dx_i$, which is the <strong>Euler form</strong>.</p>
+<h3 id="a-truncated-polynomial-algebra">A Truncated Polynomial Algebra</h3>
+<p>Let $A = R[x]/(x^2)$, the dual numbers over $R$. Then $\Omega_{A/R}$ is the quotient of $A\,dx$ by $d(x^2) = 2x\,dx$, so</p>
+<p>$$
+\Omega_{A/R} \cong A\,dx \big/ 2x\,dx ,
+$$</p>
+<p>which has $R$-basis $dx, x\,dx$ with the relation $2x\,dx = 0$; when $2$ is invertible in $R$ the relation forces $x\,dx = 0$ and $\Omega_{A/R}$ has rank one, while over a ring in which $2 = 0$ it is $R\,dx\oplus Rx\,dx$ of rank two. Correspondingly $\operatorname{Der}_R(A)$ is the annihilator of $2x$ in $A$: a derivation is $g(x)\partial_x$ and it descends to $A$ exactly when $g(x)\cdot2x = 0$ in $A$. When $2$ is invertible this annihilator is the ideal $(x) = R\,x$ generated by $x$, so $\operatorname{Der}_R(A)$ is the one-dimensional $R$-space spanned by $x\partial_x$ (the class of $\partial_x$ itself does not descend, because $\partial_x(x^2) = 2x \neq 0$); when $2 = 0$ in $R$ the annihilator is all of $A$ and $\operatorname{Der}_R(A)$ has rank two. The example is the smallest in which the rank of the derivation module depends on the arithmetic of the ground ring, and it is the reason the Kähler module, not the derivation space, is the invariant object.</p>
+<h3 id="a-quotient-by-a-polynomial">A Quotient by a Polynomial</h3>
+<p>Let $A = R[x]/(f)$ with $f$ monic. The conormal sequence for $R[x] \to A$ reads</p>
+<p>$$
+(f)/(f)^2 \longrightarrow A\,dx \longrightarrow \Omega_{A/R} \longrightarrow 0 ,
+$$</p>
+<p>and the first map sends the class of $f$ to $\partial_x f\,dx = f'\,dx$. Hence $\Omega_{A/R} \cong A\,dx/(f'\,dx)$ and</p>
+<p>$$
+\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R}, A) \cong \{g \in A : f'g = 0\} = \operatorname{Ann}_A(f') ,
+$$</p>
+<p>the annihilator of the class $f' = \partial_x f$. When $A$ is a field this is $0$, since then $f'\neq0$; when $f$ has multiple roots the derivation space is nonzero. For $f = x^2$ this recovers the previous example.</p>
+<h2 id="summary">Summary</h2>
+<p>For a commutative unital $R$-algebra $A$ the derivations $\operatorname{Der}_R(A,M)$ form an $A$-module under $(a\delta)(x) = a\delta(x)$, and $\operatorname{Der}_R(A)$ is a Lie $R$-algebra under the commutator, with the two structures linked by $[\delta,a\delta'] = \delta(a)\delta' + a[\delta,\delta']$. Every inner derivation vanishes because $A$ is commutative. The derivation space is representable: there is an $A$-module $\Omega_{A/R}$ of <strong>Kähler differentials</strong> with a universal derivation $d$ such that $\operatorname{Der}_R(A,M) \cong \operatorname{Hom}_A(\Omega_{A/R},M)$ for every $M$, and this gives $\operatorname{Der}_R(A) \cong \operatorname{Hom}_A(\Omega_{A/R},A)$. The module $\Omega_{A/R}$ is generated by the $da$ subject to $d(a+b) = da+db$, $d(ab) = a\,db+b\,da$ and $dr = 0$, and it is realised as the conormal module $I/I^2$ of the diagonal ideal $I = \ker(A\otimes_R A\to A)$. It is functorial, it commutes with base change, and for a quotient $A \to B$ with kernel $J$ it fits in the conormal exact sequence $J/J^2 \to \Omega_{A/R}\otimes_A B \to \Omega_{B/R}\to0$. For the polynomial algebra it is free on the $dx_i$; for $R[x]/(f)$ it is $A\,dx/(f'\,dx)$ and the derivation space is the annihilator of $f'$. The general theory of differentials of a ring, their base change and their relation to separability is <em>Change of Rings</em>; the derivations of an algebra and their exponential are <em>Automorphisms and Derivations of Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>Commutative unital $R$-algebra</td>
+</tr>
+<tr>
+<td>$\delta, \delta'$</td>
+<td>Derivations, $\delta(ab) = \delta(a)b + a\delta(b)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_R(A,M)$</td>
+<td>$R$-derivations of $A$ with values in $M$, an $A$-module</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_R(A)$</td>
+<td>$\operatorname{Der}_R(A,A)$, a Lie $R$-algebra</td>
+</tr>
+<tr>
+<td>$[\delta, a\delta'] = \delta(a)\delta' + a[\delta,\delta']$</td>
+<td>Compatibility of the two structures</td>
+</tr>
+<tr>
+<td>$\partial_i$</td>
+<td>The derivation of $R[x]$ with $\partial_i(x_j) = \delta_{ij}$</td>
+</tr>
+<tr>
+<td>$D = \sum_i x_i\partial_i$</td>
+<td>Degree derivation (Euler form), cf. <em>Operators on the Symmetric Algebra</em></td>
+</tr>
+<tr>
+<td>$\Omega_{A/R}$</td>
+<td>Module of Kähler differentials</td>
+</tr>
+<tr>
+<td>$d : A \to \Omega_{A/R}$</td>
+<td>Universal derivation, $a\mapsto da$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_R(A,M) \cong \operatorname{Hom}_A(\Omega_{A/R},M)$</td>
+<td>Universal property</td>
+</tr>
+<tr>
+<td>$I = \ker(A\otimes_R A \to A)$</td>
+<td>Diagonal ideal; $\Omega_{A/R} \cong I/I^2$</td>
+</tr>
+<tr>
+<td>$J/J^2 \to \Omega_{A/R}\otimes_A B \to \Omega_{B/R}\to0$</td>
+<td>Conormal sequence for $B = A/J$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_A(f')$</td>
+<td>Derivation space of $A = R[x]/(f)$, $f' = \partial_x f$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for derivations, the module of derivations and the Kähler differentials.</li>
+<li>Alexandre Grothendieck and Jean Dieudonné, <em>Éléments de géométrie algébrique IV</em>, Publications mathématiques de l'IHÉS 20 (1964), for the module of differentials, the conormal sequence and the diagonal construction.</li>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the sheaf of differentials, the conormal sequence and the smoothness criterion it supplies.</li>
+<li>Hideyuki Matsumura, <em>Commutative Algebra</em>, 2nd ed. (Benjamin/Cummings, 1980), for Kähler differentials over a commutative ring, the diagonal ideal and the conormal sequence.</li>
+<li>Ernst Kunz, <em>Kähler Differentials</em> (Vieweg, 1986), for the differential module, its functoriality and its relation to the derivation module.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for derivations commuting with an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

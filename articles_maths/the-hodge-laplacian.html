@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hodge Laplacian — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hodge-laplacian"><strong>The Hodge Laplacian</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Riemannian metric turns the exterior algebra of a manifold into an inner product space, and the inner product singles out a Laplace operator: the <strong>Hodge Laplacian</strong> $\Delta=dd^{*}+d^{*}d$, the sum of the exterior derivative and its formal adjoint. Its kernel is the space of <strong>harmonic forms</strong>, and the theorem of Hodge identifies the harmonic $k$-forms with the de Rham cohomology in degree $k$; the identification decomposes every form into a harmonic part and two exact pieces, and it exhibits the cohomology as the kernel of an elliptic operator that the metric constructs. The Laplacian is the geometric form of the cohomology: it depends on the chosen metric, while the dimension of its kernel is the Betti number, which the metric does not change.</p>
+<p>This article defines the codifferential, the Laplacian and the harmonic forms, states the <strong>Hodge decomposition</strong> and the <strong>Hodge theorem</strong>, records the compatibility of the Laplacian with the Hodge star and the resulting form of Poincaré duality, and develops the <strong>Weitzenböck formula</strong>, which expresses the Laplacian through the covariant derivative and the curvature and gives the Bochner vanishing theorems. The metric is used throughout; a change of metric changes the operator, its harmonic forms and the splitting, and the invariance of the dimension of the kernel is the theorem that separates the topology from the metric.</p>
+<p>The prerequisites are <em>Differential Forms and Stokes' Theorem</em> for the exterior algebra, the exterior derivative and Stokes' theorem; <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> for the metric, its connection, its curvature and the Laplace–Beltrami operator on functions; <em>The Volume Element, Duality and the Hodge Star</em> for the star and its square; and <em>The Codifferential</em>, a Part III article of the same shape as this one but with the analytic emphasis, for the construction of the codifferential as the formal adjoint of $d$. The Laplacian is the square of the <strong>signature operator</strong> of <em>The Signature Operator</em>, and it is the operator whose index the Atiyah–Singer theorem computes in <em>The Atiyah–Singer Index Theorem and K-Theory</em>. The Hodge theory of an arbitrary elliptic complex and the heat-kernel proof of the index theorem belong to Part III and are cited; the Hermitian refinement of the theory belongs to <em>Hermitian Metrics and the Hodge Theory</em>, written beside this article. No physics is invoked.</p>
+<h2 id="the-codifferential">The Codifferential</h2>
+<p>Let $(M,g)$ be a closed oriented Riemannian manifold of dimension $n$, with volume form $\mathrm{vol}_g$, with $\Omega^{k}(M)$ the smooth complexified $k$-forms, and with the $L^{2}$ inner product</p>
+<p>$$
+(\alpha,\beta)=\int_M\alpha\wedge\star\bar\beta ,
+$$</p>
+<p>for the Hodge star $\star$ of <em>The Volume Element, Duality and the Hodge Star</em>. The exterior derivative $d:\Omega^{k}\to\Omega^{k+1}$ has a formal adjoint, the <strong>codifferential</strong></p>
+<p>$$
+d^{*}:\Omega^{k+1}(M)\longrightarrow\Omega^{k}(M),\qquad
+(d\alpha,\beta)=(\alpha,d^{*}\beta),
+$$</p>
+<p>given on forms by $d^{*}=(-1)^{k}\star^{-1}d\star$ up to a sign that depends on the degree and the dimension, or equivalently $d^{*}=-\tau d\tau^{-1}$ for the chirality $\tau$ of <em>The Signature Operator</em>. The codifferential is also defined by the local formula</p>
+<p>$$
+d^{*}\Bigl(\sum_{I}\omega_I\,dx^{I}\Bigr)=-\sum_{i,I}\nabla_{i}\omega_{iI}\,dx^{I},
+$$</p>
+<p>the negative of the divergence of the form read as an alternating tensor; its construction as the formal adjoint of $d$, the sign conventions and the equivalent local formula are the subject of <em>The Codifferential</em>. Here the two properties that matter are recorded.</p>
+<p><strong>Theorem.</strong> The codifferential is $\mathbb{C}$-linear, it lowers the degree by one, and it is <strong>nilpotent</strong>, $(d^{*})^2=0$; it is the formal adjoint of $d$, so $(d\alpha,\beta)=(\alpha,d^{*}\beta)$ for compactly supported forms, and the pair $(d,d^{*})$ forms a two-term complex in each direction that vanishes on composition.</p>
+<p><strong>Proof.</strong> The nilpotency is the adjoint of $d^2=0$; the adjointness is the definition, and the sign in $d^{*}=(-1)^{k}\star^{-1}d\star$ is that of the identity $\star\,d\,\star^{-1}=\pm d^{*}$ of the Hodge star. $\square$</p>
+<h2 id="the-laplacian-and-the-harmonic-forms">The Laplacian and the Harmonic Forms</h2>
+<p><strong>Definition.</strong> The <strong>Hodge Laplacian</strong> (or Laplace–de Rham operator) is the operator on forms</p>
+<p>$$
+\Delta=dd^{*}+d^{*}d:\Omega^{\bullet}(M)\longrightarrow\Omega^{\bullet}(M) .
+$$</p>
+<p>It preserves the degree, $\Delta:\Omega^{k}\to\Omega^{k}$. A form $\omega$ is <strong>harmonic</strong> if $\Delta\omega=0$, and the space of harmonic $k$-forms is written $\mathcal{H}^{k}(M)=\ker(\Delta|_{\Omega^{k}})$.</p>
+<p><strong>Theorem.</strong> The Laplacian is formally self-adjoint, $\Delta^{*}=\Delta$, and nonnegative, $(\Delta\omega,\omega)=\|d\omega\|^{2}+\|d^{*}\omega\|^{2}\geq0$; a form is harmonic if and only if it is closed and coclosed,</p>
+<p>$$
+\Delta\omega=0\iff d\omega=0\ \text{and}\ d^{*}\omega=0 .
+$$</p>
+<p><strong>Proof.</strong> The self-adjointness is the adjointness of $d$ and $d^{*}$ together with the self-adjointness of each term $dd^{*}$ and $d^{*}d$; the quadratic form is the expanded product, and it is a sum of two norms, vanishing exactly when both vanish. $\square$</p>
+<p><strong>Theorem (ellipticity and discreteness).</strong> The Laplacian is elliptic, of order two, with principal symbol $\sigma_\Delta(\xi)=|\xi|^2\mathrm{id}$; on a closed manifold its spectrum is discrete, real and nonnegative, it accumulates only at infinity, and the heat semigroup $e^{-t\Delta}$ is a smoothing operator for $t>0$. Consequently $\mathcal{H}^{k}(M)$ is finite-dimensional and $\Omega^{k}(M)=\mathcal{H}^{k}\oplus\Delta\Omega^{k}$.</p>
+<p><strong>Proof.</strong> The symbol is the squared length of the covector, hence invertible for $\xi\neq0$; the spectral theory of a self-adjoint elliptic operator on a closed manifold gives the rest, and the smoothness of the heat kernel is the standard parabolic regularity. $\square$</p>
+<h2 id="the-hodge-decomposition-and-the-hodge-theorem">The Hodge Decomposition and the Hodge Theorem</h2>
+<p><strong>Theorem (Hodge decomposition).</strong> On a closed oriented Riemannian manifold the space of $k$-forms splits as an orthogonal direct sum</p>
+<p>$$
+\Omega^{k}(M)=\mathcal{H}^{k}(M)\oplus d\,\Omega^{k-1}(M)\oplus d^{*}\,\Omega^{k+1}(M),
+$$</p>
+<p>the <strong>harmonic</strong>, <strong>exact</strong> and <strong>coexact</strong> parts, and the decomposition is unique. Equivalently the closed forms split as $\ker(d|_{\Omega^{k}})=\mathcal{H}^{k}\oplus d\Omega^{k-1}$.</p>
+<p><strong>Proof.</strong> The three summands are mutually orthogonal: $(\Delta\omega,\eta)=0$ for a harmonic $\omega$ and $\eta$ exact or coexact because the Laplacian is self-adjoint and exact/coexact forms are orthogonal to the kernel of a self-adjoint operator; and $\Omega^{k}=\ker\Delta\oplus\mathrm{im}\,\Delta$ by the spectral theorem for the self-adjoint elliptic operator. Since $\mathrm{im}\,\Delta=\mathrm{im}\,dd^{*}+\mathrm{im}\,d^{*}d=d\Omega^{k-1}+d^{*}\Omega^{k+1}$, the decomposition follows; uniqueness is the orthogonality. $\square$</p>
+<p><strong>Theorem (Hodge).</strong> The map that assigns to a harmonic form its de Rham class is an isomorphism</p>
+<p>$$
+\mathcal{H}^{k}(M)\;\xrightarrow{\ \cong\ }\;H^{k}_{dR}(M;\mathbb{C}),\qquad
+\dim\mathcal{H}^{k}(M)=b_{k}(M),
+$$</p>
+<p>so every de Rham class has a unique harmonic representative, and the Betti numbers are the dimensions of the kernels of the Laplacian.</p>
+<p><strong>Proof.</strong> A harmonic form is closed, so the map is defined; it is injective, since an exact harmonic form is orthogonal to the harmonic forms and hence zero; it is surjective, since a closed form differs from its harmonic part by an exact form, by the decomposition of $\ker d$. The dimension statement is the finite-dimensionality of the kernel. $\square$</p>
+<p><strong>Remark.</strong> The decomposition and the isomorphism depend on the metric through the Laplacian, but the dimension $b_{k}$ does not: the same cohomology is presented by the kernels of different operators. This is the content of the Hodge theorem read geometrically — the metric supplies a canonical representative of every class, and the choice of representative changes with the metric while the class and the dimension do not.</p>
+<h2 id="the-star-duality-and-the-middle-form">The Star, Duality and the Middle Form</h2>
+<p><strong>Theorem.</strong> The Hodge star commutes with the Laplacian up to the degree sign, $\Delta\star=\star\Delta$; it therefore maps harmonic forms to harmonic forms and gives an isomorphism</p>
+<p>$$
+\star:\mathcal{H}^{k}(M)\xrightarrow{\ \cong\ }\mathcal{H}^{n-k}(M),
+$$</p>
+<p>which is, under the Hodge isomorphism, the Poincaré duality pairing $H^{k}\times H^{n-k}\to\mathbb{C}$, $\langle u\cup v,[M]\rangle$, up to the metric normalization. In particular $b_{k}=b_{n-k}$, and for a closed oriented manifold the pairing is nondegenerate.</p>
+<p><strong>Proof.</strong> The star intertwines $d$ and $d^{*}$ up to sign, so it conjugates $\Delta=dd^{*}+d^{*}d$ to itself; the induced map on cohomology is the composition of the Hodge isomorphism with the Poincaré pairing, and the nondegeneracy of the latter is Poincaré duality. $\square$</p>
+<p><strong>Corollary (the middle form and the signature).</strong> For a closed oriented manifold of dimension $4k$ the star acts on the middle harmonic forms as the chirality, and the pairing</p>
+<p>$$
+\beta(u,v)=\int_Mu\wedge v\qquad(u,v\in\mathcal{H}^{2k}(M))
+$$</p>
+<p>is a nondegenerate symmetric bilinear form whose positive and negative parts are the self-dual and anti-self-dual harmonic forms; its signature is $b_{+}-b_{-}=\sigma(M)$, the index of the positive half of the signature operator. The relation of the Laplacian to the intersection form is thus the reason the signature is the index of an operator built from the metric.</p>
+<h2 id="the-weitzenbock-formula">The Weitzenböck Formula</h2>
+<p>The Laplacian can be written through the Levi-Civita connection $\nabla$ and the curvature, and the resulting identity is the source of the vanishing theorems.</p>
+<p><strong>Theorem (Weitzenböck formula).</strong> For a $k$-form $\omega$ on a Riemannian manifold,</p>
+<p>$$
+\Delta\omega=\nabla^{*}\nabla\omega+\mathcal{R}_k\,\omega ,
+$$</p>
+<p>where $\nabla^{*}\nabla=-\operatorname{tr}_g\nabla^2$ is the <strong>rough Laplacian</strong> and $\mathcal{R}_k$ is the endomorphism of $\Lambda^{k}T^{*}M$ built from the curvature tensor by contraction,</p>
+<p>$$
+\langle\mathcal{R}_k\omega,\omega\rangle
+=\sum_{i<j}\bigl\langle \omega,\ R(e_i,e_j)\cdot\omega\bigr\rangle
+$$</p>
+<p>in a $g$-orthonormal frame $(e_i)$, the natural action of the curvature on forms; for $k=1$ the endomorphism is the Ricci tensor, $\mathcal{R}_1=\operatorname{Ric}$, and for $k=0$ it vanishes, so on functions $\Delta f=-\operatorname{tr}_g\nabla^2f=\nabla^{*}\nabla f$.</p>
+<p><strong>Proof sketch.</strong> The identity is the Weitzenböck decomposition of the second-order operator $\Delta$: the two operators have the same principal symbol, and their difference is the zeroth-order curvature term computed from the commutator $[\nabla_i,\nabla_j]$ on forms, which is the curvature; the case $k=1$ traces the curvature to the Ricci tensor. The argument is the standard one of the Bochner technique. $\square$</p>
+<p><strong>Theorem (Bochner vanishing).</strong> Let $(M,g)$ be closed and oriented, and let $\operatorname{Ric}\geq0$ on $M$. Then every harmonic $1$-form is parallel, $\nabla\omega=0$; if $\operatorname{Ric}>0$ at some point, there is no nonzero harmonic $1$-form and $b_{1}(M)=0$. More generally, if the curvature endomorphism $\mathcal{R}_k$ is nonnegative on $\Lambda^{k}T^{*}M$, every harmonic $k$-form is parallel and $b_{k}\leq\binom{n}{k}$ with equality forcing $\mathcal{R}_k=0$.</p>
+<p><strong>Proof.</strong> For a harmonic $\omega$ the Weitzenböck formula gives $0=(\Delta\omega,\omega)=\|\nabla\omega\|^2+(\mathcal{R}_k\omega,\omega)$; under the curvature assumption both terms are nonnegative, so both vanish; a parallel form is determined by its value at one point, which gives the rank bound, and the strict positivity forces $\omega=0$. $\square$</p>
+<p><strong>Corollary.</strong> A closed Riemannian manifold of positive Ricci curvature has $b_1=0$; the round sphere $S^n$ of dimension $n\geq2$ has $b_1=0$, and the flat torus has $\operatorname{Ric}=0$ and harmonic $1$-forms $dx^i$ that are parallel.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the flat torus).</strong> On $T^{n}=\mathbb{R}^{n}/\mathbb{Z}^{n}$ with the flat metric the harmonic forms are the constant-coefficient forms, $\mathcal{H}^{k}$ has basis $dx^{I}$ for $|I|=k$, and $b_k=\binom{n}{k}$; the Weitzenböck term vanishes, every harmonic form is parallel, and the Laplacian is the ordinary Euclidean one acting coefficient by coefficient.</p>
+<p><strong>Example (the spheres).</strong> On $S^{n}$ with the round metric the Laplacian on functions has eigenvalues $k(k+n-1)$ with the spherical harmonics as eigenfunctions, and the harmonic forms are the constant functions in degree $0$ and the volume form in degree $n$, so $b_0=b_n=1$ and the remaining Betti numbers vanish; the positive curvature gives the vanishing of the intermediate harmonic forms, in agreement with the Bochner theorem and with the computation of the cohomology. The spectrum of the Laplacian is the geometric invariant that carries more information than the Betti numbers: it detects the radius, which the cohomology does not.</p>
+<p><strong>Example (hyperbolic space forms).</strong> On a closed hyperbolic manifold the Ricci curvature is negative and the Bochner argument gives no vanishing; the Hodge theorem still presents the cohomology by harmonic forms, and the Hodge numbers of a hyperbolic manifold are not determined by the curvature sign. The example shows that the Bochner vanishing is a one-way criterion: it excludes harmonic forms under positive curvature and says nothing under negative curvature.</p>
+<p><strong>Example (the signature operator).</strong> On a closed manifold the Hodge Laplacian is the square of the signature operator, $\Delta=(d+d^{*})^2$, and the harmonic forms are the kernel of $d+d^{*}$; the index of the positive half is the signature, by <em>The Signature Operator</em>, and the Euler characteristic is the index of the version graded by the total degree. The two indices are the two characteristic numbers that the de Rham complex computes, and both are computed by the Laplacian and its heat kernel.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>codifferential</strong> $d^{*}$ is the formal adjoint of the exterior derivative with respect to the metric inner product $(\alpha,\beta)=\int_M\alpha\wedge\star\bar\beta$, and the <strong>Hodge Laplacian</strong> $\Delta=dd^{*}+d^{*}d$ is self-adjoint, nonnegative and elliptic; a form is harmonic exactly when it is closed and coclosed. On a closed oriented manifold the <strong>Hodge decomposition</strong> writes the $k$-forms as the orthogonal sum of the harmonic, exact and coexact parts, and the <strong>Hodge theorem</strong> identifies the harmonic forms with the de Rham cohomology, so that $\dim\mathcal{H}^{k}=b_{k}$; the metric supplies a canonical representative of every class, and the dimension is the topological invariant. The star commutes with the Laplacian and gives the Poincaré duality isomorphism $\mathcal{H}^{k}\cong\mathcal{H}^{n-k}$ and, in the middle degree of a $4k$-manifold, the intersection form whose signature is the index of the signature operator. The <strong>Weitzenböck formula</strong> $\Delta=\nabla^{*}\nabla+\mathcal{R}_k$ expresses the Laplacian through the connection and the curvature, and under a nonnegative curvature endomorphism the harmonic forms are parallel, which gives the <strong>Bochner vanishing theorem</strong>, $b_1=0$ for positive Ricci curvature. The flat torus, the round sphere and the closed hyperbolic manifolds illustrate the three regimes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(M,g)$, $n$, $\mathrm{vol}_g$</td>
+<td>Closed oriented Riemannian manifold, dimension, volume form</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>Hodge star; $(\alpha,\beta)=\int_M\alpha\wedge\star\bar\beta$</td>
+</tr>
+<tr>
+<td>$d,d^{*}$</td>
+<td>Exterior derivative and codifferential (formal adjoints)</td>
+</tr>
+<tr>
+<td>$\Delta=dd^{*}+d^{*}d$</td>
+<td>Hodge Laplacian, preserving the degree</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^{k}(M)=\ker\Delta|_{\Omega^{k}}$</td>
+<td>Harmonic $k$-forms</td>
+</tr>
+<tr>
+<td>$\Omega^{k}=\mathcal{H}^{k}\oplus d\Omega^{k-1}\oplus d^{*}\Omega^{k+1}$</td>
+<td>Hodge decomposition</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^{k}\cong H^{k}_{dR}(M)$, $\dim=b_k$</td>
+<td>Hodge theorem</td>
+</tr>
+<tr>
+<td>$\star:\mathcal{H}^{k}\cong\mathcal{H}^{n-k}$</td>
+<td>Poincaré duality from the star</td>
+</tr>
+<tr>
+<td>$\beta(u,v)=\int_Mu\wedge v$</td>
+<td>Intersection form on $\mathcal{H}^{n/2}$; $\sigma=b_+-b_-$</td>
+</tr>
+<tr>
+<td>$\nabla^{*}\nabla$, $\mathcal{R}_k$</td>
+<td>Rough Laplacian and the curvature endomorphism</td>
+</tr>
+<tr>
+<td>$\Delta=\nabla^{*}\nabla+\mathcal{R}_k$</td>
+<td>Weitzenböck formula; $\mathcal{R}_1=\operatorname{Ric}$</td>
+</tr>
+<tr>
+<td>Bochner vanishing</td>
+<td>$\operatorname{Ric}\geq0$ ⇒ harmonic $1$-forms parallel; $\operatorname{Ric}>0$ ⇒ $b_1=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>W. V. D. Hodge, <em>The Theory and Applications of Harmonic Integrals</em> (Cambridge University Press, 1941), for the original Hodge theory and the harmonic integrals.</li>
+<li>Georges de Rham, <em>Differentiable Manifolds: Forms, Currents, Harmonic Forms</em> (Springer, 1984), for the de Rham theorem and the harmonic representatives.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em>, Graduate Texts in Mathematics 94 (Springer, 1983), for the Hodge theorem, the Hodge decomposition and the Weitzenböck formula.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the Hodge Laplacian, the Bochner technique and the Lichnerowicz formula.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, Vol. I (Wiley, 1963), for the Laplacian on forms, the Weitzenböck identity and the Bochner vanishing theorems.</li>
+<li>Phillip A. Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Hodge decomposition on complex manifolds and the Hodge–Riemann relations, developed further in <em>Hermitian Metrics and the Hodge Theory</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

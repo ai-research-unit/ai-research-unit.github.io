@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conformal Geometry and the Twistor Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conformal-geometry-and-the-twistor-operator"><strong>Conformal Geometry and the Twistor Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Conformal geometry is the geometry of a metric up to the rescaling of the metric by a positive function, and its natural operators are the conformally <strong>covariant</strong> differential operators: they act on fields of definite <strong>weight</strong> and transform by a power of the conformal factor. The prototype is the Yamabe operator $L=\Delta+\frac{n-2}{4(n-1)}S$ on functions, and the spinor prototype is the <strong>twistor operator</strong> of <em>The Twistor Operator</em>, whose kernel is conformally invariant. This article sets the twistor operator in the conformal landscape: the weights, the comparison with the scalar operators of the same weight, and the model of conformal geometry in which the invariance is realised by the action of the conformal group.</p>
+<p>The organising statement is that the twistor operator and the Yamabe operator are the first two members of the same family: both are first-order (for the twistor operator) or second-order (for the Yamabe operator) operators built from a connection with a weight correction, both have zero sets that are conformal invariants, and both arise from the same geometric datum, a conformal class. The modern formulation of the family is the tractor calculus and the ambient metric of Fefferman–Graham, where the operators are the restrictions of trivial operators on a bundle over a larger space; this article names the framework and locates the twistor operator in it.</p>
+<p><strong>The boundaries.</strong> The operator, its symbol and its conformal covariance are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the Clifford multiplication and the spin connection are <em>The Clifford Multiplication Operator</em> and <em>The Spinor Operator</em>; the conformal group, the conformal model of Euclidean space and the conformal compactification are <em>Conformal Geometry</em> and <em>The Conformal Model of Euclidean Space</em>; the twistor space and the Penrose transform are the sibling <code>- * Theory</code> articles. The base is a Riemannian spin manifold $(M,g)$ of dimension $n\ge3$.</p>
+<h2 id="conformal-weights">Conformal Weights</h2>
+<p><strong>Definition.</strong> A field $\varphi$ of <strong>weight</strong> $w$ with respect to the conformal class $[g]$ is a field that transforms under a conformal change $\hat g=\Omega^2g$ by $\hat\varphi=\Omega^{-w}\varphi$ under the standard identification of the bundles; a conformally covariant operator of weight $w$ and order $k$ is a differential operator $P$ with</p>
+<p>$$
+P^{\hat g}(\Omega^{-w}\varphi) = \Omega^{-w-k}P^{g}(\varphi) ,
+$$</p>
+<p>where the powers are those fixed by the normalisations of the bundles.</p>
+<p><strong>Proposition (the weights of the category).</strong> With the normalisation in which a spinor is identified under the conformal change by $\hat\sigma=\Omega^{-1/2}\sigma$:</p>
+<p><strong>(a)</strong> a <strong>function</strong> has weight $0$ and the conformal Laplacian has weight $(n-2)/2$;</p>
+<p><strong>(b)</strong> a <strong>spinor</strong> has weight $1/2$ and the twistor equation is the equation $\mathcal{T}\sigma=0$, which is conformally invariant as a zero set;</p>
+<p><strong>(c)</strong> a <strong>vector field</strong> has weight $0$ and the conformal Killing equation is the corresponding conformally invariant condition on the conformal current.</p>
+<p><strong>Proof.</strong> The first and the third are the standard conformal weights of scalar and vector fields and of the Yamabe equation; the second is the covariance statement of <em>The Twistor Operator</em>, quoted with the weight normalisation of this article. The consistency of the three is the table of the next section.</p>
+<h2 id="the-conformally-invariant-operators">The Conformally Invariant Operators</h2>
+<p><strong>Proposition (the table).</strong> The operators of the category fit into the following table of orders, weights and conformal status:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Acts on</th>
+<th>Order</th>
+<th>Weight</th>
+<th>Conformal status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exterior derivative $d$</td>
+<td>forms</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>invariant on closed forms</td>
+</tr>
+<tr>
+<td>Codifferential $d^*$</td>
+<td>forms</td>
+<td>$1$</td>
+<td>$n$</td>
+<td>covariant</td>
+</tr>
+<tr>
+<td>Yamabe operator $L$</td>
+<td>functions</td>
+<td>$2$</td>
+<td>$(n-2)/2$</td>
+<td>covariant</td>
+</tr>
+<tr>
+<td>Cauchy–Riemann $D$</td>
+<td>spinors</td>
+<td>$1$</td>
+<td>$n/2$</td>
+<td>not covariant; acquires a zeroth-order term</td>
+</tr>
+<tr>
+<td>Twistor operator $\mathcal{T}$</td>
+<td>spinors</td>
+<td>$1$</td>
+<td>$1/2$</td>
+<td>covariant; zero set invariant</td>
+</tr>
+<tr>
+<td>Conformal Killing equation</td>
+<td>vector fields</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>invariant</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry for the Cauchy–Riemann operator is the reason the twistor operator exists: the conformally natural first-order spinor operator is not $D$ but the projection of the covariant derivative onto $\ker c$, which is $\mathcal{T}$.</p>
+<p><strong>Proof sketch.</strong> The orders and weights are read from the definitions and from the conformal covariance computations of the references; the non-covariance of $D$ is the computation recorded in <em>The Spinor Operator</em>, where a zeroth-order term $c(\operatorname{grad}\log\Omega)$ appears, and the covariance of $\mathcal{T}$ is the cancellation of that term with the trace correction. The table is the operator-theoretic content of the article.</p>
+<p><strong>Remark (the scalar analogue of the twistor equation).</strong> The conformal Killing equation on vector fields is the scalar analogue of the twistor equation on spinors: both express that a distinguished field is in the kernel of a conformally invariant first-order operator, and the current $X_\sigma=\sum_i(\sigma,e_i\cdot\sigma)e_i$ of <em>The Penrose Operator</em> sends twistor spinors to conformal Killing fields. The correspondence is the real-geometric face of the conformal invariance.</p>
+<h2 id="the-model-and-the-group">The Model and the Group</h2>
+<p><strong>Proposition.</strong> In the conformally flat model the twistor operators of the metrics in the class have kernels that are exchanged by the conformal group and that span a $2\dim\Delta_n$-dimensional representation of the conformal Lie algebra; the conformal group of the model is $\mathrm{Spin}(n+1,1)$ (the orientation-preserving part of $O(n+1,1)$), and the twistor spinors are its spinor-valued distribution.</p>
+<p><strong>Proof sketch.</strong> The conformal invariance of the equation and the transitivity of the conformal group make the solution space a representation; the dimension count is <em>The Penrose Operator</em>; the identification of the group and its spinor representation is the standard conformal representation theory quoted from <em>The Conformal Model of Euclidean Space</em>.</p>
+<p><strong>Remark (the tractor framework).</strong> The modern formulation of the whole table is the <strong>tractor calculus</strong>: on a conformal manifold there is a vector bundle (the tractor bundle) with a connection, and the conformally invariant operators are the operators induced by trivial operators on the tractor bundle; the twistor operator is the spinor member of the family. The framework is named here and developed in the referenced literature; it is the natural home of the table above.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-round-sphere">The Round Sphere</h3>
+<p>On $S^n$ the conformal group is the orthogonal group of the ambient space, the twistor spinors are the sums of the two Killing families, and the Yamabe operator has the constant eigenfunctions of the round Laplacian; the two operators share the quadratic form of the conformal representation theory but are not the same operator.</p>
+<h3 id="the-flat-model">The Flat Model</h3>
+<p>On $\mathbb{R}^n$ the twistor operator has the constants and the linear spinor fields in its kernel, and the conformal Killing fields are generated by the translations, the rotations, the dilation and the special conformal transformations; the table is verified in this model, where the conformal factor of a special conformal transformation is smooth away from the pole.</p>
+<h3 id="a-conformal-compactification">A Conformal Compactification</h3>
+<p>The compactification of flat space is the sphere, and the extension of the flat twistor spinors across the conformal boundary is the conformal invariance of the table made concrete: the equation extends because the operator is covariant, and not because the fields are bounded.</p>
+<h2 id="summary">Summary</h2>
+<p>Conformal geometry studies the metric up to rescaling, and its natural operators are <strong>conformally covariant</strong>: they act on fields of a definite <strong>weight</strong> and transform by a power of the conformal factor. The <strong>Yamabe operator</strong> $L=\Delta+\frac{n-2}{4(n-1)}S$ on functions of weight $(n-2)/2$ and the <strong>twistor operator</strong> $\mathcal{T}$ on spinors of weight $1/2$ are the two prototypes, with the conformal Killing equation on vector fields completing the family; the <strong>Cauchy–Riemann operator</strong> is not conformally covariant, acquiring a zeroth-order term, and this failure is the reason the twistor operator exists. The table of orders, weights and conformal status is the article's content, and the modern formulation is the <strong>tractor calculus</strong>, the reference framework for the conformally invariant operators. In the conformally flat model the twistor spinors form a $2\dim\Delta_n$-dimensional representation of $\mathrm{Spin}(n+1,1)$, and the conformal current carries twistor spinors to conformal Killing fields. The operator and its symbol are <em>The Twistor Operator</em>; the equation and the current are <em>The Penrose Operator</em>; the model is <em>The Conformal Model of Euclidean Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat g=\Omega^2g$</td>
+<td>Conformal change</td>
+</tr>
+<tr>
+<td>$\hat\varphi=\Omega^{-w}\varphi$</td>
+<td>Field of conformal weight $w$</td>
+</tr>
+<tr>
+<td>$P^{\hat g}(\Omega^{-w}\varphi)=\Omega^{-w-k}P^g\varphi$</td>
+<td>Conformal covariance of order $k$, weight $w$</td>
+</tr>
+<tr>
+<td>$L=\Delta+\frac{n-2}{4(n-1)}S$</td>
+<td>Yamabe operator, weight $(n-2)/2$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>Cauchy–Riemann operator; <strong>not</strong> conformally covariant</td>
+</tr>
+<tr>
+<td>$\mathcal{T}$</td>
+<td>Twistor operator; conformally covariant, weight $1/2$</td>
+</tr>
+<tr>
+<td>$X_\sigma$</td>
+<td>Conformal current; twistor spinors to conformal Killing fields</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(n+1,1)$</td>
+<td>Conformal group of the model</td>
+</tr>
+<tr>
+<td>Tractor calculus</td>
+<td>Framework for the conformally invariant operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Helga Baum, Thomas Friedrich, Ralf Grunewald and Ines Kath, <em>Twistors and Killing Spinors on Riemannian Manifolds</em> (Teubner, 1991), for the twistor operator and its conformal weight.</li>
+<li>Andreas Čap and A. Rod Gover, "Tractor Calculi for Parabolic Geometries", <em>Transactions of the American Mathematical Society</em> 354 (2002), 1511–1548, for the tractor framework of the conformally invariant operators.</li>
+<li>Charles Fefferman and C. Robin Graham, <em>The Ambient Metric</em> (Princeton University Press, 2012), for the ambient construction and the conformal invariants.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time, Volume 2</em> (Cambridge University Press, 1986), for the conformal compactification, the conformal group and the conformal Killing spinors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

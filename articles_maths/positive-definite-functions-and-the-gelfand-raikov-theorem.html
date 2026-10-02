@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Functions and the Gelfand–Raikov Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-functions-and-the-gelfandraikov-theorem"><strong>Positive Definite Functions and the Gelfand–Raikov Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The involution on the group algebra turns a scalar function on the group into a functional on the algebra, and the positivity of the functional is exactly the classical positive definiteness of the function. Every positive definite function is therefore the matrix coefficient of a unitary representation, and the collection of them is rich enough to separate the points of the group: the Gelfand–Raikov theorem says that a locally compact group has no nonzero unitary representation which is trivial on a given nontrivial element, so that the group embeds in the unitary group of its group algebra. This article fixes positive definiteness, builds the representation by the GNS construction, proves the separation theorem, and reads the embedding of the group in the unitaries as the operator form of the statement.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its involution, its positive cone and its positive functionals from <em>The Convolution Algebra $L^1(G)$</em> and <em>The Group Algebra as an Involutive Algebra</em>; the correspondence between nondegenerate <code>*</code>-representations of $L^1(G)$ and continuous unitary representations of $G$ from <em>The Convolution Algebra $L^1(G)$</em>; the characters, Pontryagin duality and the abelian transform from <em>Harmonic Analysis on Groups</em>; the unitary representations, irreducibility, the unitary dual and the direct integral from <em>Noncommutative Harmonic Analysis</em>; the abstract GNS construction from <em>The GNS Construction</em> (Topology on Linear Algebras); and the Hilbert spaces, the bounded operators, the <code>*</code>-representations and the $\mathrm{C}^*$-algebras from <em>Operator Algebras</em>. The Plancherel measure is <em>Unitary Representations and the Plancherel Theorem</em>, below; the adjoint of a representation operator is <em>Unitary Representations and the Adjoint</em>, in the <code>- * Operator Theory</code> group; the extension of the theory to a Gelfand pair is <em>Spherical Functions and the Zonal Spherical Function</em>, next.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$, and $\Delta$ is its modular function; $\phi : G\to\mathbb{C}$ is <strong>continuous</strong> and <strong>positive definite</strong>, written $\phi\gg0$, when</p>
+<p>$$
+\sum_{i,j=1}^n c_i\,\overline{c_j}\,\phi(x_i^{-1}x_j) \geq 0
+$$</p>
+<p>for every finite family $x_1,\dots,x_n\in G$ and scalars $c_1,\dots,c_n\in\mathbb{C}$. A unitary representation is a continuous homomorphism $\pi : G\to\mathcal{U}(\mathcal{H})$ into the unitary operators of a Hilbert space $\mathcal{H}$; its <strong>matrix coefficients</strong> are the functions $x\mapsto\langle\pi(x)\xi,\eta\rangle$.</p>
+<h2 id="the-positive-definite-functions">The Positive Definite Functions</h2>
+<p><strong>Theorem (elementary properties).</strong> A continuous $\phi$ is positive definite if and only if the function $\tilde\phi(x) = \overline{\phi(x^{-1})}$ is, and then</p>
+<p>$$
+\phi(x^{-1}) = \overline{\phi(x)}, \qquad |\phi(x)| \leq \phi(e), \qquad \phi(e)\geq0 ;
+$$</p>
+<p>if $\phi(e) = 0$ then $\phi\equiv0$, and every positive definite function is bounded with $\|\phi\|_\infty = \phi(e)$.</p>
+<p><strong>Proof.</strong> The $2\times2$ case of the defining inequality with $(x_1,x_2) = (e,x)$ gives the Hermitian symmetry $\phi(x^{-1}) = \overline{\phi(x)}$ and $\phi(e)\geq0$; the $n$-tuple $(e,x_1,\dots,x_n)$ with the phase of $c_0$ adjusted gives $|\phi(x)|\leq\phi(e)$; the norm statement follows. The $\tilde\phi$ statement is the defining sum rewritten with the $x_i$ replaced by their inverses. $\square$</p>
+<p><strong>Proposition (the functional on the algebra).</strong> A bounded continuous $\phi$ is positive definite if and only if the functional</p>
+<p>$$
+\omega_\phi(f) = \int_G f(x)\,\phi(x)\,dx
+$$</p>
+<p>is positive on $L^1(G)$, that is $\omega_\phi(f^*\!*f)\geq0$ for all $f$, and if and only if the sesquilinear form</p>
+<p>$$
+\langle Sf, Sg\rangle_\phi = \int_G\int_G \phi(y^{-1}x)\,f(x)\,\overline{g(y)}\,dx\,dy
+$$</p>
+<p>is positive semidefinite on $C_c(G)$.</p>
+<p><strong>Proof.</strong> The sesquilinear form on step functions $f = \sum c_i\delta_{x_i}$ reduces to the defining double sum, so positive definiteness is precisely its positive semidefiniteness on $C_c(G)$; the equivalence with the positivity of $\omega_\phi$ is the standard computation relating the two expressions by Fubini and the definition of $f^*\!*f$, and is in the references. $\square$</p>
+<p><strong>Corollary (the cone and its closure).</strong> The positive definite functions form a convex cone, closed under the involution $\phi\mapsto\tilde\phi$, and closed under pointwise limits of locally bounded families and under the product of two bounded positive definite functions; the normalised ones, with $\phi(e) = 1$, are the <strong>states</strong> of the group.</p>
+<p><strong>Proof.</strong> Convexity is the linearity of the defining sum in $\phi$; closure under pointwise limits is the closedness of the non-negative reals. Closure under products follows from the representation-theoretic description below via the tensor product, and the normalisation is the statement $\|\phi\|_\infty = \phi(e)$. $\square$</p>
+<h2 id="the-gns-construction-for-a-positive-definite-function">The GNS Construction for a Positive Definite Function</h2>
+<p><strong>Theorem (every positive definite function is a matrix coefficient).</strong> Let $\phi\gg0$ and let $N = \{f\in C_c(G) : \langle Sf,Sf\rangle_\phi = 0\}$. Then the quotient $\mathcal{H}_\phi = C_c(G)/N$ completes to a Hilbert space on which there is a unique unitary representation $\pi_\phi$ with</p>
+<p>$$
+\pi_\phi(x)(Sf) = S(L_xf), \qquad (L_xf)(y) = f(x^{-1}y),
+$$</p>
+<p>and a cyclic vector $\xi_\phi = S(\text{normalised approximate identity})$ with</p>
+<p>$$
+\phi(x) = \langle\pi_\phi(x)\xi_\phi, \xi_\phi\rangle , \qquad \|\xi_\phi\|^2 = \phi(e) .
+$$</p>
+<p><strong>Proof.</strong> The quotient by the null space of the positive semidefinite form is a pre-Hilbert space, and its completion is $\mathcal{H}_\phi$. The left translation $L_x$ is isometric for the form, $\langle SL_xf, SL_xg\rangle_\phi = \langle Sf,Sg\rangle_\phi$, because $\phi$ is invariant under this substitution in its argument; hence $L_x$ descends to a unitary operator $\pi_\phi(x)$ on $\mathcal{H}_\phi$, and $\pi_\phi(xy) = \pi_\phi(x)\pi_\phi(y)$ because $L_{xy} = L_xL_y$. Continuity of $x\mapsto\pi_\phi(x)$ follows from the continuity of translation in $C_c(G)$ and the bound $\|S(L_xf) - Sf\|^2 = 2\|Sf\|^2 - 2\,\mathrm{Re}\langle S(L_xf),Sf\rangle_\phi$, whose last term is continuous in $x$. The vector $\xi_\phi = S(u)$ for a normalised approximate identity $u$ of $L^1(G)$ is cyclic because $S(C_c(G))$ is dense, and $\langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle_\phi = \langle S(L_xu), S(u)\rangle_\phi\to\phi(x)$. $\square$</p>
+<p><strong>Corollary (the correspondence).</strong> The assignment $\phi\mapsto(\pi_\phi,\xi_\phi)$ is a bijection, up to unitary equivalence fixing the vector, between the continuous positive definite functions and the pairs $(\pi,\xi)$ consisting of a continuous unitary representation with a cyclic vector; irreducibility of $\pi_\phi$ corresponds to $\phi$ being an extreme point of the normalised cone.</p>
+<p><strong>Proof.</strong> Given a cyclic pair $(\pi,\xi)$, the function $\langle\pi(x)\xi,\xi\rangle$ is positive definite by the defining sum, and the GNS construction recovers $(\pi,\xi)$ from it; the two constructions are inverse. The irreducibility statement is the standard description of the extreme points of the state space as the pure states, whose GNS representations are irreducible. $\square$</p>
+<h2 id="the-gelfandraikov-theorem">The Gelfand–Raikov Theorem</h2>
+<p><strong>Theorem (the representations separate the points).</strong> For every $x\neq e$ in $G$ there is a continuous unitary representation $\pi$ with $\pi(x)\neq 1$. Equivalently, the map</p>
+<p>$$
+j : G\longrightarrow \prod_{\pi}\mathcal{U}(\mathcal{H}_\pi), \qquad j(x) = (\pi(x))_\pi ,
+$$</p>
+<p>the product over the continuous unitary representations, is injective, and the Gelfand–Raikov topology on $G$ is the original one.</p>
+<p><strong>Proof.</strong> Choose a symmetric open neighbourhood $V$ of $e$ with $x\notin V^2$, and $f\in C_c(G)$ supported in $V$ with $f\geq0$ and $f(e)>0$; set $\phi = f^*\!*f$, which is positive definite by the proposition. Then $\phi(y) = \int_G \overline{f(z^{-1})}\,\Delta(z)^{-1}\,f(z^{-1}y)\,dz$, whose integrand is supported where $z\in V$ and $z^{-1}y\in V$, hence where $y = z\,(z^{-1}y)\in V^2$; so $\phi$ vanishes off $V^2$ and $\phi(x) = 0$, while $\phi(e) = \int_G |f|^2 > 0$. For the GNS pair $(\pi_\phi,\xi_\phi)$ the matrix coefficient at $x$ is $\phi(x) = 0$, so $\langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle = 0\neq\|\xi_\phi\|^2 = \phi(e)$ and $\pi_\phi(x)\neq1$. The product map is then injective because every nontrivial element is separated from the identity by some factor; continuity of $j$ is the continuity of each $\pi$, and the topology it induces on $G$ is the quotient topology of the same family, which is the original group topology. $\square$</p>
+<p><strong>Corollary (the embedding in the unitaries of the group algebra).</strong> The left regular representation already separates the points: the map</p>
+<p>$$
+j_G : G\longrightarrow \mathcal{U}\bigl(L^2(G)\bigr), \qquad j_G(x) = \lambda(x), \qquad (\lambda(x)\xi)(y) = \xi(x^{-1}y),
+$$</p>
+<p>is a topological isomorphism of $G$ onto its image, and the image lies in the unitary group of the multiplier algebra of the reduced group algebra, $j_G(G)\subseteq\mathcal{U}(M(C^*_r(G)))$.</p>
+<p><strong>Proof.</strong> Injectivity is faithfulness of the regular representation on $L^2(G)$: $\lambda(x) = 1$ gives $\xi(x^{-1}y) = \xi(y)$ for all $\xi$, hence $x = e$. The map is multiplicative and each $\lambda(x)$ is unitary by left invariance of $dx$; it is a homeomorphism onto its image in the strong operator topology because $\|\lambda(x)\xi - \xi\|\to0$ as $x\to e$ for every $\xi$ (continuity of translation), and conversely convergence of $\lambda(x_\alpha)$ to $\lambda(x)$ in the strong topology forces $x_\alpha\to x$ by testing on a bump supported in a small neighbourhood. The left translation is a <code>*</code>-automorphism of the group algebra, so $\lambda(x)$ is a unitary multiplier of $C^*_r(G)$. $\square$</p>
+<p><strong>Remark (the abelian case and Bochner's theorem).</strong> If $G$ is abelian then $\Delta\equiv1$ and the positive definite functions are exactly the Fourier transforms $\hat\mu$ of the positive bounded Radon measures $\mu$ on the dual $G^\vee$: the GNS representation of $\hat\mu$ is the direct integral of the characters of $G^\vee$ over $\mu$, and Gelfand–Raikov reduces to the trivial statement that the characters separate the points. This is Bochner's theorem of <em>Harmonic Analysis on Groups</em>, §Positive Definite Functions, and the concrete case of the correspondence above.</p>
+<p><strong>Remark (what the article does not do).</strong> The article has used the correspondence between <code>*</code>-representations of $L^1(G)$ and unitary representations of $G$ as established in <em>The Convolution Algebra $L^1(G)$</em>; it has taken no adjoint, and the equality $\pi(f^*) = \pi(f)^*$ for a unitary representation belongs to <em>Unitary Representations and the Adjoint</em>, in the <code>- * Operator Theory</code> group. The Plancherel measure, which is the measure on the dual selected by the regular representation, is <em>Unitary Representations and the Plancherel Theorem</em>, below; the theory of the spherical functions of a Gelfand pair is the next article; the completeness of the family of irreducible representations is <em>Noncommutative Harmonic Analysis</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A continuous function $\phi$ on $G$ is positive definite when the defining finite sums are non-negative; then $\phi(x^{-1}) = \overline{\phi(x)}$, $|\phi(x)|\leq\phi(e) = \|\phi\|_\infty$, the positive definite functions form a convex cone closed under the involution $x\mapsto x^{-1}$, and $\phi$ is positive definite exactly when the functional $\omega_\phi(f) = \int f\phi$ is positive on $L^1(G)$, equivalently when the sesquilinear form $\langle Sf,Sg\rangle_\phi$ is positive semidefinite. The GNS construction gives, for each positive definite $\phi$, a unitary representation $\pi_\phi$ with cyclic vector $\xi_\phi$ and matrix coefficient $\phi(x) = \langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle$, and the assignment is a bijection with the cyclic unitary representations up to equivalence; the extreme points of the normalised cone are the irreducible representations. The Gelfand–Raikov theorem, proved by convolving a bump supported in a small symmetric neighbourhood with its involution to obtain a positive definite function vanishing at a prescribed nontrivial point, shows that the continuous unitary representations separate the points of $G$, equivalently that $G$ embeds topologically into the product of the unitary groups of its representation spaces, and in operator form that $x\mapsto\lambda(x)$ is a topological isomorphism of $G$ onto a closed subgroup of the unitary group of the multiplier algebra of $C^*(G)$. In the abelian case the positive definite functions are the transforms of positive measures on the dual (Bochner). The adjoint, the Plancherel measure, the Gelfand pairs and the completeness of the dual are the neighbouring articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\phi\gg0$</td>
+<td>$\phi$ is continuous positive definite</td>
+</tr>
+<tr>
+<td>$\sum_{i,j}c_i\overline{c_j}\phi(x_i^{-1}x_j)\geq0$</td>
+<td>The defining inequality</td>
+</tr>
+<tr>
+<td>$\tilde\phi(x) = \overline{\phi(x^{-1})}$</td>
+<td>The involuted function, positive definite with $\phi$</td>
+</tr>
+<tr>
+<td>$\phi(x^{-1}) = \overline{\phi(x)}$, $\|\phi\|_\infty = \phi(e)$</td>
+<td>The elementary properties</td>
+</tr>
+<tr>
+<td>$\omega_\phi(f) = \int_G f\phi\,dx$</td>
+<td>The functional, positive iff $\phi\gg0$</td>
+</tr>
+<tr>
+<td>$\langle Sf,Sg\rangle_\phi$</td>
+<td>The positive semidefinite sesquilinear form</td>
+</tr>
+<tr>
+<td>$\pi_\phi$, $\xi_\phi$</td>
+<td>The GNS representation and cyclic vector</td>
+</tr>
+<tr>
+<td>$\phi(x) = \langle\pi_\phi(x)\xi_\phi,\xi_\phi\rangle$</td>
+<td>Every positive definite function is a matrix coefficient</td>
+</tr>
+<tr>
+<td>$j(x) = (\pi(x))_\pi$</td>
+<td>The separating product map of Gelfand–Raikov</td>
+</tr>
+<tr>
+<td>$j_G(x) = \lambda(x)\in\mathcal{U}(M(C^*(G)))$</td>
+<td>The embedding in the unitaries of the group algebra</td>
+</tr>
+<tr>
+<td>$\hat\mu\gg0\iff\mu\geq0$</td>
+<td>Bochner's theorem, abelian case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis II</em> (Springer, 1970), for positive definite functions, the GNS construction on a group and the Gelfand–Raikov theorem.</li>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the GNS construction of a positive functional and the correspondence of pure states with irreducible representations.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the Gelfand–Raikov theorem and the embedding of the group in its group algebra.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Wiley, 1962), for positive definite functions on an abelian group and Bochner's theorem.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the GNS representation and the extreme points of the state space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

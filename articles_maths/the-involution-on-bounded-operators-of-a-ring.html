@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on Bounded Operators of a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-bounded-operators-of-a-ring"><strong>The Involution on Bounded Operators of a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The bounded operators of a topological ring form a topological ring, and a form on the ring turns it into an involutive one: the adjoint $T^\dagger$ defined by $\{Tx,y\} = \{x,T^\dagger y\}$ is additive, reverses the composition and has order two, so that the bounded operators carry an involution of their own, sitting on the operators and distinct from the involution of the elements. This article builds that involution: it fixes the algebra of bounded operators, defines the adjoint with respect to the form of the category, proves that the adjoint map is an order-two anti-automorphism of the operator algebra, identifies the self-adjoint and the skew operators and proves that the self-adjoint operators are closed, and studies the representation $a\mapsto L_a$ of the ring in its operators, proving that it is a <code>*</code>-representation — the adjoint of the left multiplication is the left multiplication by the image of the element under the involution — so that the involution of the elements and the involution of the operators agree on the image, the agreement being proved and not assumed.</p>
+<p>The article assumes the topological ring, the linear topologies, the topology of bounded convergence and the bounded and continuous operators from <em>Topological Rings and Fields</em> and <em>Operators on a Topological Ring</em>; the left and right multiplications and the operator layer from <em>The Left and Right Multiplication Operators on a Topological Ring</em>; the continuous involution, the fixed and skew sets, the averaging map and the closedness of the fixed set from <em>Involutive Topological Rings and Fields</em>; and the trace and the twisted pairing of an involutive ring from <em>Involutive Rings</em> and the <code>- * Theory</code> articles of this category. The specific pairings — the residue pairing and the Hermitian valuation — are the subjects of <em>Adjoints under the Residue Pairing</em> and <em>The Adjoint under a Hermitian Valuation</em>; the adjoint of a single elementary operator is <em>The Adjoint of the Left Multiplication on a Topological Ring</em>; and the Haar pairing of a locally compact group is Part III, named only.</p>
+<p>Throughout, $R$ is a Hausdorff topological ring with a continuous involution $\sigma$, $\tau$ is a continuous $\sigma$-invariant trace, the <strong>form of the category</strong> is the twisted pairing</p>
+<p>$$
+\{x,y\} = \tau\bigl(x\,\sigma(y)\bigr) ,
+$$</p>
+<p>$B(R)$ is the algebra of bounded endomorphisms of the additive group of $R$ with the topology of bounded convergence, and the <strong>adjoint</strong> of $T\in B(R)$ is the operator $T^\dagger$ defined by $\{Tx,y\} = \{x,T^\dagger y\}$ for all $x,y$, when it exists and is bounded.</p>
+<h2 id="the-adjoint-and-the-operator-involution">The Adjoint and the Operator Involution</h2>
+<p><strong>Definition.</strong> An operator $T\in B(R)$ is <strong>adjointable</strong> if there is a bounded operator $T^\dagger$ with $\{Tx,y\} = \{x,T^\dagger y\}$ for all $x,y$; the adjointable operators form the subalgebra $B(R,\sigma)$ of $B(R)$.</p>
+<p><strong>Theorem (the adjoint is a continuous operator-algebra involution).</strong> On the adjointable operators the adjoint map $T\mapsto T^\dagger$ is additive, is involutive, $T^{\dagger\dagger} = T$, and reverses the composition,</p>
+<p>$$
+(ST)^\dagger = T^\dagger S^\dagger ,
+$$</p>
+<p>so it is an <strong>anti-automorphism of order two</strong> of $B(R,\sigma)$; when the form is continuous in each variable the adjoint map is continuous for the topology of bounded convergence.</p>
+<p><strong>Proof.</strong> Additivity is the bilinearity of the form. Involutivity: $\{Tx,y\} = \{x,T^\dagger y\}$ and, exchanging the roles, $\{T^\dagger x,y\} = \{x,T^\dagger{}^\dagger y\}$; the uniqueness of the adjoint under the nondegeneracy of the form gives $T^{\dagger\dagger} = T$. Anti-multiplicativity: $\{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$, so $(ST)^\dagger = T^\dagger S^\dagger$ by uniqueness. Continuity: the adjoint is the operator whose matrix entries are $\{Te_i\text{-coefficients}\}$ read through the form, and continuity of the form makes the assignment $T\mapsto T^\dagger$ continuous in the bounded-convergence topology.</p>
+<p><strong>Proposition (self-adjoint and skew operators).</strong> An operator is <strong>self-adjoint</strong> if $T^\dagger = T$ and <strong>skew</strong> if $T^\dagger = -T$; the self-adjoint operators form a closed additive subspace of $B(R,\sigma)$ and the skew operators a closed additive subspace, and when $2$ is invertible in $B(R,\sigma)$ every operator is the sum of a self-adjoint and a skew one through the continuous averages $\tfrac12(T\pm T^\dagger)$.</p>
+<p><strong>Proof.</strong> The self-adjoint operators are the fixed set of the continuous involution $T\mapsto T^\dagger$ of the operator algebra, hence closed, and additive; the same for the skew set. The decomposition is the averaging of <em>Involutive Topological Rings and Fields</em> applied to the operator algebra, which is legitimate because the adjoint map is a continuous involution there by the theorem.</p>
+<h2 id="the-left-regular-representation">The Left Regular Representation</h2>
+<p><strong>Theorem (the left multiplication is adjointable).</strong> For every $a\in R$ the left multiplication $L_a$ is adjointable with respect to the form of the category, and</p>
+<p>$$
+(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} .
+$$</p>
+<p>Hence $a\mapsto L_a$ is a homomorphism of rings into $B(R,\sigma)$ and the adjoint of $L_a$ is the left multiplication by the image of $a$ under the element involution.</p>
+<p><strong>Proof.</strong> $\{L_a x,y\} = \tau(ax\,\sigma(y)) = \tau(x\,\sigma(y)\,a) = \tau(x\,\sigma(\sigma(a)y)) = \{x, L_{\sigma(a)}y\}$, using the cyclic invariance $\tau(uv) = \tau(vu)$ and $\sigma^2 = \mathrm{id}$. The right-handed computation is the mirror image, and the homomorphism property is $L_{ab} = L_aL_b$.</p>
+<p><strong>Corollary (<code>*</code>-representation).</strong> The map $a\mapsto L_a$ satisfies $(L_a)^\dagger = L_{a^{\sigma}}$, where $a^{\sigma} = \sigma(a)$; therefore the left regular representation is a <code>*</code>-representation of the involutive ring $(R,\sigma)$ in the involutive operator algebra $(B(R,\sigma),\dagger)$, and the involution of the elements and the involution of the operators agree on the image. The agreement is a theorem, not an assumption: the two structures are the element involution and the operator adjoint, and their coincidence here is what a <code>*</code>-representation means.</p>
+<p><strong>Proof.</strong> The formula is the theorem read with $a^\sigma = \sigma(a)$; anticomposition and involutivity are inherited, so the representation preserves both the multiplication and the involution.</p>
+<p><strong>Proposition (fixed and inverted left multiplications).</strong> The left multiplication is self-adjoint exactly when $a$ is self-adjoint, $L_a^\dagger = L_a \iff \sigma(a) = a$; it is unitary exactly when $a$ is unitary and the norm form is central, $L_a^\dagger L_a = \mathrm{id} \iff \sigma(a)a = 1$ with $\sigma(a)a$ central; and it is an involution exactly when $a^2 = 1$.</p>
+<p><strong>Proof.</strong> Self-adjointness: $L_{\sigma(a)} = L_a$ iff $\sigma(a) = a$ by the injectivity of $a\mapsto L_a$ on a ring with a unit. Unitarity: $L_a^\dagger L_a = L_{\sigma(a)a}$, the identity iff $\sigma(a)a = 1$ and the product is central. Involution: $L_a^2 = L_{a^2}$.</p>
+<h2 id="topological-compatibility">Topological Compatibility</h2>
+<p><strong>Theorem (continuity and closedness).</strong> If the multiplication of $R$ is continuous then every left and right multiplication is bounded and continuous; the self-adjoint operators are closed in $B(R,\sigma)$; and the set of adjointable operators is closed in $B(R)$ under the topology of bounded convergence when the form is continuous, so that $B(R,\sigma)$ is a complete involutive topological ring whenever $B(R)$ is complete.</p>
+<p><strong>Proof.</strong> Continuity of $L_a$ and $R_b$ is the continuity of the product; boundedness is that a left multiplication carries a bounded set to a bounded set, by the continuity of the product on a bounded set with a fixed factor. The closedness of the self-adjoint set and the adjointable set is the closed equalizer argument of <em>Involutive Topological Rings and Fields</em>, applied to the continuous involution of the operator algebra; completeness passes to the closed subalgebra $B(R,\sigma)$.</p>
+<p><strong>Corollary (the adjoint and the completion).</strong> If $R$ is complete then the operator involution is the restriction of the operator involution of the completion and the self-adjoint bounded operators are the closure of the self-adjoint bounded operators of the original, by <em>The Involution and the Completion of a Ring</em> applied to $B(R,\sigma)$.</p>
+<p><strong>Proof.</strong> The completion of $B(R,\sigma)$ is the completion of an involutive topological ring with a continuous involution, and its involution restricts to the given one; the fixed set of the completion is the closure of the fixed set when $2$ is invertible, by the quoted article.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the matrix algebra).</strong> $R = M_n(A)$ over a commutative involutive base, $\sigma$ the transpose, $\tau$ the trace; the form is $\{X,Y\} = \mathrm{tr}(X\,Y^{\mathrm t})$ and the adjoint of $L_X$ is $L_{X^{\mathrm t}}$; the self-adjoint operators are the left multiplications by the symmetric matrices, and $X\mapsto L_X$ is a <code>*</code>-representation with the transpose on the elements.</p>
+<p><strong>Example (the group algebra of a finite group).</strong> With the form $B(u,v) = \sum_g u_gv_{\sigma(g)}$ of <em>The Signed Adjoint of the Left Multiplication on a Topological Group</em>, the adjoint of $L_a$ is $L_{\sigma(a)}$ and the same <code>*</code>-representation holds; the two computations agree because the group algebra is a ring with the involution extended linearly.</p>
+<p><strong>Example (a valued field).</strong> For $R = \mathcal{O}$ with the residue pairing of <em>Adjoints under the Residue Pairing</em> the adjoint of $L_a$ is the right multiplication $R_{\sigma(a)}$, showing that a change of form changes the adjoint and that the operator involution is form-dependent, while the element involution is not.</p>
+<p><strong>Example (the degenerate form).</strong> If the form is degenerate, the adjoint need not exist or need not be unique, and the operator involution degenerates into a relation; the article works with the nondegenerate form of the category and notes the degenerate case at the boundary.</p>
+<h2 id="summary">Summary</h2>
+<p>On the bounded operators of a topological ring with a continuous involution $\sigma$ and a continuous $\sigma$-invariant trace, the form of the category $\{x,y\} = \tau(x\sigma(y))$ defines the adjoint $T^\dagger$ by $\{Tx,y\} = \{x,T^\dagger y\}$; on the adjointable operators the adjoint map is additive, involutive and anti-multiplicative, an order-two anti-automorphism of the operator algebra and continuous for the topology of bounded convergence, so the self-adjoint and the skew operators are closed additive subspaces and, when $2$ is invertible, every operator is the continuous average of a self-adjoint and a skew one. The left and right multiplications are adjointable, with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, so the left regular representation $a\mapsto L_a$ is a <code>*</code>-representation: the involution of the elements and the adjoint of the operators agree on the image, an agreement that is proved and not assumed. The left multiplication is self-adjoint exactly for the self-adjoint elements, unitary exactly for the unitary elements with central norm, and an involution exactly for the involutive elements. The adjointable operators form a closed subalgebra, complete when $B(R)$ is, and the involution passes to the completion. The specialisations to the residue pairing, to the Hermitian valuation and to the signed and reflection operators are the articles that follow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\sigma$, $\tau$</td>
+<td>Topological ring, continuous involution, $\sigma$-invariant trace</td>
+</tr>
+<tr>
+<td>$\{x,y\} = \tau(x\sigma(y))$</td>
+<td>The form of the category, the twisted pairing</td>
+</tr>
+<tr>
+<td>$B(R)$, $B(R,\sigma)$</td>
+<td>Bounded operators; the adjointable ones</td>
+</tr>
+<tr>
+<td>$T^\dagger$, $\{Tx,y\} = \{x,T^\dagger y\}$</td>
+<td>The adjoint</td>
+</tr>
+<tr>
+<td>$(ST)^\dagger = T^\dagger S^\dagger$, $T^{\dagger\dagger} = T$</td>
+<td>Anti-automorphism of order two</td>
+</tr>
+<tr>
+<td>$T^\dagger = T$, $T^\dagger = -T$</td>
+<td>Self-adjoint and skew operators</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = L_{\sigma(a)}$, $(R_b)^\dagger = R_{\sigma(b)}$</td>
+<td>Adjoints of the multiplications</td>
+</tr>
+<tr>
+<td>$a\mapsto L_a$, $(L_a)^\dagger = L_{a^\sigma}$</td>
+<td>The <code>*</code>-representation</td>
+</tr>
+<tr>
+<td>$a^\sigma = \sigma(a)$</td>
+<td>The element involution carried to the operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the adjoint operation on an algebra of operators and the <code>*</code>-representation.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the involution of an operator algebra, the self-adjoint and skew operators and the strong and weak topologies.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for the adjoint under a sesquilinear form and the <code>*</code>-representation of a ring with involution.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the regular representation of a ring with involution and its symmetric elements.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the topology of bounded convergence and the continuous operators of a topological ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Transition Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-transition-operator"><strong>The Adjoint of the Transition Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The transition operator $P_t$ of a stationary process is the operator of the conditional expectation of the state time $t$ ahead,
+$$
+P_tf(x)=\mathbb E\bigl[f(X_t)\,\big|\,X_0=x\bigr]=\int_E p_t(x,dy)f(y),
+$$
+and the family $\{P_t\}_{t\ge0}$ is a semigroup, $P_{s+t}=P_sP_t$, with $P_0=I$. This article computes its <strong>adjoint</strong> with respect to the form of the category and the stationary measure $\pi$,
+$$
+\langle f,g\rangle_\pi=\int f\bar g\,d\pi,\qquad P_t^*g(y)=\frac{1}{\pi(y)}\int\pi(dx)\,p_t(x,dy)\,g(x)=\int\hat p_t(y,dx)g(x),
+$$
+and shows that the adjoint semigroup $\hat P_t=P_t^*$ is the transition semigroup of the <strong>reversed process</strong>, with the kernels $\hat p_t(x,dy)=\pi(dy)p_t(y,dx)/\pi(dx)$. The process is reversible exactly when $P_t^*=P_t$ for all $t$, which is the detailed balance of the two-sided version; the infinitesimal generator of the adjoint semigroup is the adjoint of the generator, $L^*=\hat L$, so the generator is self-adjoint precisely in the reversible case. The article derives the formula, identifies the adjoint semigroup with the reversed process, records the semigroup and spectral properties, relates the self-adjointness to the symmetry of the Dirichlet form, and illustrates the theory on the reversible and the non-reversible examples.</p>
+<p>The conventions are those of the category. The transition operator, its semigroup and its generator are <em>The Transition Operator</em>, earlier in this category; the Markov operator is its time-one member and is <em>The Markov Operator</em>, earlier in this category; the reversed chain, the detailed balance and the self-adjointness are <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category; the adjoint of the time-one operator is <em>The Adjoint of the Markov Operator</em>, the preceding article of this category, and the refinement of the spectrum by the reversing symmetry is <em>Reversible Operators and Self-Adjointness</em>, later in this category. The processes, their paths and their finite-dimensional laws are <em>Markov Chains and Processes</em>, written; the operator algebra and its involution are <em>Operator Algebras</em>, written, and <em>The Involution on the Operator Algebra of a Process</em>, the preceding article of this category; the adjoints and the spectral theory on a Hilbert space are <em>Banach and Hilbert Spaces</em>, written. No physics is invoked; the word time names the index of the process and nothing else.</p>
+<p>Throughout, $\{X_t\}_{t\ge0}$ is a Markov process with transition kernels $p_t(x,dy)$ and stationary measure $\pi$, the transition operator is $P_tf(x)=\int p_t(x,dy)f(y)$ acting on $L^2(\pi)$ with $\langle f,g\rangle_\pi=\int f\bar g\,d\pi$, and the reversed kernels are $\hat p_t(x,dy)=\pi(dy)p_t(y,dx)/\pi(dx)$ with $\hat P_t$ the reversed transition operator. The generator is $L=\lim_{t\downarrow0}(P_t-I)/t$ on its domain, with the adjoint generator $L^*$, and the Dirichlet form is $\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi$ where the generator exists.</p>
+<h2 id="the-adjoint-of-the-transition-operator_1">The Adjoint of the Transition Operator</h2>
+<h3 id="the-formula">The formula</h3>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> $P_t^*$ is the bounded operator on $L^2(\pi)$ with
+$$
+\langle P_tf,g\rangle_\pi=\langle f,P_t^*g\rangle_\pi\qquad\text{for all }f,g\in L^2(\pi).
+$$</p>
+<p><strong>Theorem (the adjoint formula).</strong> With $\pi$ stationary,
+$$
+P_t^*g(y)=\frac{1}{\pi(y)}\int_E\pi(dx)\,p_t(x,dy)\,g(x)=\int_E\hat p_t(y,dx)\,g(x)\qquad\pi\text{-a.e.},
+$$
+where $\hat p_t(y,dx)=\pi(dx)p_t(x,dy)/\pi(y)$. Equivalently $P_t^*=\hat P_t$, the transition operator of the reversed process.</p>
+<p><em>Proof.</em> The computation is the one of <em>The Adjoint of the Markov Operator</em>, the preceding article, applied to the kernel $p_t$:
+$$
+\langle P_tf,g\rangle_\pi=\int_E f(y)\Bigl(\int_E\pi(dx)p_t(x,dy)\overline{g(x)}\Bigr),
+$$
+and the inner bracket is absolutely continuous with respect to $\pi$ with density $\int_E\pi(dx)p_t(x,dy)/\pi(y)$, which is the value $\int\hat p_t(y,dx)g(x)$ of the reversed kernel; comparing with $\langle f,P_t^*g\rangle_\pi$ gives the formula.</p>
+<h3 id="the-reversed-semigroup">The reversed semigroup</h3>
+<p><strong>Theorem (the reversed process).</strong> The family $\{\hat P_t\}_{t\ge0}$ is a transition semigroup,
+$$
+\hat P_{s+t}=\hat P_s\hat P_t,\qquad \hat P_0=I,\qquad \hat P_t\ge0,\qquad \hat P_t1=1 ,
+$$
+with $\pi$ as a stationary measure, and it is the semigroup of the reversed process $\{X_{-t}\}$ of a two-sided stationary version. Its members commute, $\hat P_s\hat P_t=\hat P_t\hat P_s$.</p>
+<p><em>Proof.</em> Taking adjoints in $P_{s+t}=P_sP_t$ gives $\hat P_{s+t}=P_{s+t}^*=P_t^*P_s^*=\hat P_t\hat P_s$, and the reverse order gives $\hat P_{s+t}=\hat P_s\hat P_t$ by the commutativity of the addition; hence the two orders agree and the family is a commutative semigroup. The reversed kernels satisfy $\int\hat p_t(x,dy)=\pi P_t(dx)/\pi(x)=1$, so each $\hat P_t$ preserves the constants, and the stationarity is the construction; the interpretation as the reversed process is the finite-dimensional statement that the reversed kernels describe the law of $\{X_{-t}\}$.</p>
+<p><strong>Corollary (the reversal of the semigroup).</strong> The adjoint operation inverts the order of the semigroup and produces the reversed semigroup, so that the backwards run of the process is the forward run of the adjoint; the reversal one-sided in time is implemented on the operators by the adjoint, and the reversal two-sided by the unitary $U_r$ of <em>The Involution on the Operator Algebra of a Process</em>, the preceding article.</p>
+<p><em>Proof.</em> The order inversion is $(P_sP_t)^*=P_t^*P_s^*$, and the identification of the reversed semigroup as the semigroup of the backwards process is the theorem; the two-sided statement is the conjugation by $U_r$.</p>
+<h2 id="reversibility-and-the-detailed-balance">Reversibility and the Detailed Balance</h2>
+<h3 id="the-criterion">The criterion</h3>
+<p><strong>Theorem (reversibility as self-adjointness).</strong> The process is reversible, that is its two-sided stationary version is invariant under the time reversal, if and only if
+$$
+P_t^*=P_t\qquad\text{for all }t\ge0,
+$$
+equivalently if and only if the kernels satisfy the detailed balance $\pi(dx)p_t(x,dy)=\pi(dy)p_t(y,dx)$ for all $t$. A reversible process has a self-adjoint transition semigroup.</p>
+<p><em>Proof.</em> The adjoint is the reversed semigroup, so $P_t^*=P_t$ for all $t$ is the equality of the kernels of the process and of its reverse, which is the detailed balance; the equivalence with the invariance of the law under the time reversal is the finite-dimensional statement of <em>The Reversibility of a Stationary Process</em>, earlier in this category. The time-one case is <em>The Adjoint of the Markov Operator</em>, the preceding article.</p>
+<h3 id="the-generator-of-the-reversed-semigroup">The generator of the reversed semigroup</h3>
+<p><strong>Theorem (the generator).</strong> Let $L$ be the generator of $P_t$ on its domain. Then the generator of the adjoint semigroup $\hat P_t=P_t^*$ is
+$$
+\hat L=L^* ,
+$$
+the adjoint of $L$ with respect to the form $\langle\cdot,\cdot\rangle_\pi$, with domain the adjoint domain. The process is reversible exactly when $L^*=L$, that is when $L$ is self-adjoint on $L^2(\pi)$.</p>
+<p><em>Proof.</em> Differentiating $\hat P_t=P_t^*$ at $t=0$ gives $\hat L=(\lim(P_t-I)/t)^*=L^*$, the adjoint of the limit being the limit of the adjoints on the common domain; the reversibility criterion $P_t^*=P_t$ for all $t$ is the equality of the generators $L^*=L$ and conversely, since a semigroup is determined by its generator.</p>
+<h3 id="the-dirichlet-form">The Dirichlet form</h3>
+<p><strong>Theorem (the Dirichlet form).</strong> For a reversible process the Dirichlet form
+$$
+\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi=-\langle f,Lg\rangle_\pi
+$$
+is symmetric and nonnegative on the domain of $L$; for the time-one chain it is $\mathcal{E}(f,g)=\langle(I-P_1)f,g\rangle_\pi$, the Dirichlet form of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category.</p>
+<p><em>Proof.</em> The symmetry is the self-adjointness of $L$, and the nonnegativity is the limit $-\langle Lf,f\rangle_\pi=\lim_{t\downarrow0}\frac1t\langle(I-P_t)f,f\rangle_\pi$, each term of which is nonnegative because $P_t$ is a contraction fixing the constants; the identification with the sum form in the discrete case is the computation of <em>Reversible Markov Chains and Time Reversal</em>.</p>
+<h2 id="properties-of-the-adjoint-semigroup">Properties of the Adjoint Semigroup</h2>
+<p><strong>Theorem (powers and spectrum).</strong> The adjoint satisfies $(P_t^n)^*=(P_t^*)^n$ and
+$$
+\operatorname{spec}(P_t^*)=\overline{\operatorname{spec}(P_t)},\qquad \operatorname{spec}(L^*)=\overline{\operatorname{spec}(L)},
+$$
+so the spectrum of the adjoint is the conjugate of the spectrum of the original, for the semigroup and for the generator.</p>
+<p><em>Proof.</em> The powers identity is the general adjoint identity; the spectral identities are the standard statements that the adjoint has the conjugated spectrum, applied to $P_t$ and to $L$, <em>Banach and Hilbert Spaces</em>, written.</p>
+<p><strong>Theorem (the contraction and the constants).</strong> Each $P_t$ and each $P_t^*$ is a contraction of $L^2(\pi)$, $\|P_t\|_{L^2(\pi)}\le1$, fixes the constants, and its self-adjointness holds at one time $t_0>0$ if and only if it holds at all times.</p>
+<p><em>Proof.</em> The contraction property is the Jensen inequality for the conditional expectation; the constants are fixed because the kernels are Markov; the equivalence of the self-adjointness at one time and at all times is the semigroup property, since $P_t=P_{t/n}^n$ and the adjoint of a power is the power of the adjoint.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the two-state chain).</strong> With $p_t$ the two-state semigroup, the adjoint is the reversed semigroup with $\hat p_t=p_t$ for all $t$ by the detailed balance $\pi(0)p_t(0,1)=\pi(1)p_t(1,0)$; the semigroup is self-adjoint, its generator is the self-adjoint $2\times2$ matrix with the eigenvalues $0$ and $-(a+b)$, and the Dirichlet form is symmetric.</p>
+<p><strong>Example (the directed cycle).</strong> On $\{1,2,3\}$ with the deterministic cyclic motion the transition operator is the cyclic shift, its adjoint is the backwards shift, and $\hat P_t\ne P_t$; the generator is the anti-Hermitian cyclic derivative, $L^*=-L$, with the purely imaginary spectrum, and the Dirichlet form is not symmetric.</p>
+<p><strong>Example (the Ornstein–Uhlenbeck semigroup).</strong> The generator $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ on $L^2$ of the normal law is self-adjoint, so the semigroup $P_t$ is self-adjoint and the process reversible; the adjoint semigroup is the original, the spectrum of $L$ is $\{-n\theta\}$, and the Dirichlet form is the quadratic form of the Hermite operator.</p>
+<p><strong>Example (the Brownian semigroup).</strong> The heat semigroup $P_t=e^{\frac12\Delta t}$ on $L^2(\mathbb R)$ with the Lebesgue measure is self-adjoint, being the function of a self-adjoint operator; the adjoint is the original and the process reversible. The example shows that the reversibility is the symmetry of the Dirichlet form, $-\langle Lf,g\rangle=\frac12\langle\nabla f,\nabla g\rangle$.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The adjoint of the transition operator degenerates in four configurations. First, the adjoint is taken with respect to the stationary measure, and a process with several invariant measures has several adjoints; on a non-ergodic process each ergodic component gives a reversed semigroup. Second, the formula is defined only $\pi$-almost everywhere, and on the null sets of $\pi$ the reversed kernel is arbitrary; the reversed process is determined up to the null sets alone. Third, the generator $L$ is in general an unbounded operator defined on a dense domain, and the identity $L^*=\hat L$ is a statement about the domains, not only about the formulas; the adjoint domain must be computed and can be strictly larger or smaller, as in the case of a boundary-value problem. Fourth, the reversible case is where the semigroup is self-adjoint, and outside it the reversed semigroup is a different semigroup with the conjugate spectrum; the temptation to assume $P_t^*=P_t$ is the error the group contract forbids, and the directed cycle exhibits it when the generator's spectrum is purely imaginary.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the transition operator with respect to the stationary measure $\pi$ and the form $\langle f,g\rangle_\pi$ is the transition operator of the reversed process,
+$$
+P_t^*g(y)=\frac{1}{\pi(y)}\int\pi(dx)p_t(x,dy)g(x)=\int\hat p_t(y,dx)g(x),\qquad \hat p_t(y,dx)=\frac{\pi(dx)p_t(x,dy)}{\pi(y)},
+$$
+and the family $\{\hat P_t\}=\{P_t^*\}$ is again a commutative transition semigroup, with $\pi$ stationary and the constants fixed, namely the semigroup of the process run backwards. The process is reversible exactly when $P_t^*=P_t$ for all $t$, equivalently when the kernels satisfy the detailed balance, and then the generator is self-adjoint and the Dirichlet form symmetric; in general the generator of the adjoint semigroup is the adjoint of the generator, $L^*=\hat L$, with the conjugated spectrum, $\operatorname{spec}(P_t^*)=\overline{\operatorname{spec}(P_t)}$. The time-one case is <em>The Adjoint of the Markov Operator</em>, the preceding article, the abstract operator-algebra involution is <em>The Involution on the Operator Algebra of a Process</em>, the preceding article, and the refinement of the spectrum by the reversing symmetry is <em>Reversible Operators and Self-Adjointness</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_tf(x)=\int p_t(x,dy)f(y)$</td>
+<td>the transition operator</td>
+</tr>
+<tr>
+<td>$P_{s+t}=P_sP_t$, $P_0=I$</td>
+<td>the semigroup</td>
+</tr>
+<tr>
+<td>$\langle f,g\rangle_\pi=\int f\bar g\,d\pi$</td>
+<td>the stationary form</td>
+</tr>
+<tr>
+<td>$P_t^*=\hat P_t$</td>
+<td>the adjoint, the reversed semigroup</td>
+</tr>
+<tr>
+<td>$\hat p_t(x,dy)=\pi(dy)p_t(y,dx)/\pi(dx)$</td>
+<td>the reversed kernel</td>
+</tr>
+<tr>
+<td>$P_t^*=P_t\iff$ detailed balance</td>
+<td>reversibility</td>
+</tr>
+<tr>
+<td>$L$, $\hat L=L^*$</td>
+<td>the generator and its adjoint</td>
+</tr>
+<tr>
+<td>$\mathcal{E}(f,g)=-\langle Lf,g\rangle_\pi$</td>
+<td>the Dirichlet form</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}(P_t^*)=\overline{\operatorname{spec}(P_t)}$</td>
+<td>the conjugated spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Daniel W. Stroock and S. R. Srinivasa Varadhan, <em>Multidimensional Diffusion Processes</em> (Springer, 1979), for the transition semigroups, the generators and the adjoints.</li>
+<li>Andrzej Lasota and Michael C. Mackey, <em>Chaos, Fractals, and Noise</em> (Springer, 2nd edition, 1994), for the semigroups, the generators and the reversibility.</li>
+<li>Martin L. Silverstein, <em>Symmetric Markov Processes</em> (Springer, 1974), for the symmetric semigroups and the Dirichlet forms.</li>
+<li>Joseph L. Doob, <em>Classical Potential Theory and Its Probabilistic Counterpart</em> (Springer, 1984), for the semigroups, the dual processes and the potential theory.</li>
+<li>Kiyosi Itô and Henry P. McKean, <em>Diffusion Processes and their Sample Paths</em> (Springer, 1965), for the generators and the reverse semigroups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

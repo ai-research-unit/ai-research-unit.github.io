@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Bimodule over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-bimodule-over-an-algebra"><strong>The Graded Action on a Module over a Bimodule over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A $\mathbb{Z}/2$-graded algebra carries two structures at once: a decomposition into an even and an odd part, and the automorphism that is $+1$ on the even part and $-1$ on the odd part. The action of the algebra on a graded module is required to respect the decomposition, and respecting it forces a <strong>sign rule</strong>: moving an odd scalar past an odd element costs a sign. This article states the compatibility condition, $A_iM_j \subseteq M_{i+j}$, derives the sign rule from it, and shows how the rule turns a graded left module over a graded-commutative algebra into a graded bimodule, where the two-sided operators of <em>The Signed Sandwich on a Bimodule over an Algebra</em> acquire a parity.</p>
+<p>The article is the graded member of the <code>- Operator Theory</code> group of this category. It uses the one-sided operators of <em>Left and Right Multiplication of a Module</em> and the signed operators of <em>The Signed Sandwich on a Bimodule over an Algebra</em> and <em>The Signed Left Multiplication on a Module over an Algebra</em>; the grading itself, superalgebras and their morphisms belong to <em>Superalgebras and Graded Structures</em>, named here and not developed. The adjoint action of the algebra on its endomorphisms is the subject of <em>The Graded Adjoint Action on a Module over a Bimodule over an Algebra</em>, the last article of this group. The article stays inside Part I: no distance, norm, form or limit occurs. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $A=A_{\bar0}\oplus A_{\bar1}$ is a graded unital associative $R$-algebra, $\alpha$ is its grade involution, and $M=M_{\bar0}\oplus M_{\bar1}$ is a graded left $A$-module.</p>
+<h2 id="graded-algebras-modules-and-the-grade-involution">Graded Algebras, Modules and the Grade Involution</h2>
+<h3 id="the-grading-and-its-sign-operator">The grading and its sign operator</h3>
+<p><strong>Definition.</strong> A <strong>graded $R$-algebra</strong> is an $R$-algebra $A$ with a direct sum decomposition $A=A_{\bar0}\oplus A_{\bar1}$ such that</p>
+<p>$$
+A_iA_j \subseteq A_{i+j} \qquad (i,j \in \mathbb{Z}/2).
+$$</p>
+<p>A <strong>graded left $A$-module</strong> is a left $A$-module $M$ with a decomposition $M=M_{\bar0}\oplus M_{\bar1}$ such that</p>
+<p>$$
+A_iM_j \subseteq M_{i+j} \qquad (i,j \in \mathbb{Z}/2).
+$$</p>
+<p>Elements of $A_{\bar0}$ and $M_{\bar0}$ are <strong>even</strong>, those of $A_{\bar1}$ and $M_{\bar1}$ <strong>odd</strong>, and the <strong>degree</strong> $\deg x \in \mathbb{Z}/2$ is defined for homogeneous $x$.</p>
+<p><strong>Definition.</strong> The <strong>grade involution</strong> of $A$ is the $R$-linear map</p>
+<p>$$
+\alpha : A \to A, \qquad \alpha(a)=(-1)^{i}a \quad (a \in A_i),
+$$</p>
+<p>and the grade involution of $M$ is the analogous map on $M$.</p>
+<p><strong>Proposition.</strong> The grade involution of $A$ is an $R$-algebra automorphism with $\alpha^{2}=\mathrm{id}$, and its fixed part is $A_{\bar0}$; the grade involution of $M$ is additive with $\alpha^{2}=\mathrm{id}$ and satisfies</p>
+<p>$$
+\alpha(am)=\alpha(a)\,\alpha(m) \qquad (a \in A,\ m \in M).
+$$</p>
+<p>Conversely, a map $\alpha$ with these properties determines the grading by $A_i=\{a : \alpha(a)=(-1)^{i}a\}$ and $M_j=\{m : \alpha(m)=(-1)^{j}m\}$.</p>
+<p><em>Proof.</em> $\alpha$ is linear and $\alpha(ab)=(-1)^{i+j}ab=\alpha(a)\alpha(b)$ for $a \in A_i$, $b \in A_j$, so it is an automorphism; $\alpha^{2}=\mathrm{id}$ because $(-1)^{2i}=1$. For the compatibility, $a \in A_i$ and $m \in M_j$ have $am \in M_{i+j}$, and both sides of $\alpha(am)=\alpha(a)\alpha(m)$ equal $(-1)^{i+j}am$. The converse is the eigenspace decomposition of an involution when $2$ is invertible. $\square$</p>
+<p>Thus a graded module over a graded algebra is the same thing as a module with a compatible grade involution, which is the structure used by the two signed articles cited above; the grading and the involution are two descriptions of one datum.</p>
+<h3 id="the-action-is-even">The action is even</h3>
+<p><strong>Proposition.</strong> The action homomorphism $\rho : A \to \operatorname{End}_R(M)$ carries $A_i$ into the operators of parity $i$:</p>
+<p>$$
+a \in A_i \implies L_a(M_j) \subseteq M_{i+j}.
+$$</p>
+<p><em>Proof.</em> This is the compatibility $A_iM_j \subseteq M_{i+j}$ read as a statement about the image of the left multiplication. $\square$</p>
+<p>The action of a graded algebra on a graded module is therefore <strong>even</strong>: it preserves the degree, $\deg(am)=\deg a+\deg m$ for homogeneous $a$ and $m$.</p>
+<h2 id="the-sign-rule">The Sign Rule</h2>
+<h3 id="the-koszul-sign">The Koszul sign</h3>
+<p><strong>Definition.</strong> The <strong>Koszul sign</strong> of two homogeneous elements $s$ and $t$ is $(-1)^{\deg s\,\deg t}$. It is $+1$ unless both degrees are odd, and then it is $-1$.</p>
+<p>The grading forces the sign wherever two homogeneous things are exchanged. The first place it appears is the compatibility of the one-sided operators with the grade involution.</p>
+<p><strong>Proposition (the sign rule for the operators).</strong> For homogeneous $a \in A$,</p>
+<p>$$
+\alpha\,L_a\,\alpha^{-1}=(-1)^{\deg a}\,L_a, \qquad \alpha\,L_a=L_{\alpha(a)}\,\alpha .
+$$</p>
+<p>More generally, for every homogeneous operator $T \in \operatorname{End}_R(M)$ of parity $\deg T$,</p>
+<p>$$
+\alpha\,T\,\alpha^{-1}=(-1)^{\deg T}\,T .
+$$</p>
+<p><em>Proof.</em> $\alpha L_a\alpha^{-1}(m)=\alpha(a\,\alpha^{-1}(m))=\alpha(a)m=(-1)^{\deg a}am=(-1)^{\deg a}L_a(m)$. For a homogeneous $T$ of parity $i$ and $m \in M_j$, $T(m) \in M_{i+j}$ and $\alpha T\alpha^{-1}(m)=(-1)^{j}\alpha(T(m))=(-1)^{j}(-1)^{i+j}T(m)=(-1)^{i}T(m)$. $\square$</p>
+<p>This is the exact sense in which the grade involution imposes a sign on the operators: conjugation by $\alpha$ multiplies an operator of parity $i$ by $(-1)^{i}$, so the two-sided operators of the signed sandwich are exactly the operators twisted by that sign.</p>
+<h3 id="from-a-graded-left-module-to-a-graded-bimodule">From a graded left module to a graded bimodule</h3>
+<p>A graded left module carries a canonical right action, and the sign rule is what makes it associative.</p>
+<p><strong>Theorem.</strong> Let $A$ be graded-commutative, that is</p>
+<p>$$
+bc=(-1)^{\deg b\,\deg c}\,cb \qquad (b,c \text{ homogeneous}),
+$$</p>
+<p>and define, for homogeneous $b \in A$,</p>
+<p>$$
+R_b(m)=(-1)^{\deg b\,\deg m}\,bm, \qquad m\text{ homogeneous}.
+$$</p>
+<p>Then $R$ is a right action, $R_{bc}=R_cR_b$, and the left and right actions commute:</p>
+<p>$$
+(m\cdot b)\cdot c=m\cdot(bc), \qquad a\,(m\cdot b)=(am)\cdot b .
+$$</p>
+<p>Consequently $M$ is a graded $(A,A)$-bimodule, and each $R_b$ is $R$-linear of parity $\deg b$.</p>
+<p><em>Proof.</em> For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$. $\square$</p>
+<p><strong>Corollary.</strong> $R_b=L_b\alpha^{\deg b}$, that is, $R_b=L_b$ for even $b$ and $R_b=L^{\alpha}_b=L_b\alpha$ for odd $b$.</p>
+<p><em>Proof.</em> For $b$ even, $R_b(m)=bm=L_b(m)$; for $b$ odd, $R_b(m)=(-1)^{\deg m}bm=b\,\alpha(m)=L_b(\alpha(m))$. $\square$</p>
+<p>The theorem is the precise form of the assertion that the grading imposes a sign: without the sign $(-1)^{\deg b\deg m}$ the right action would not be associative, and without graded-commutativity even the signed formula fails.</p>
+<h3 id="the-two-sided-operators-and-their-parity">The two-sided operators and their parity</h3>
+<p><strong>Proposition.</strong> Let ${}_A M_A$ be a graded bimodule with the Koszul right action, and let $S_{a,b}=L_aR_b$ be the unsigned sandwich of <em>The Signed Sandwich on a Bimodule over an Algebra</em>. Then</p>
+<p>$$
+S_{a,b}(M_j) \subseteq M_{j+\deg a+\deg b}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=(-1)^{\deg a+\deg b}\,S_{a,b},
+$$</p>
+<p>and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.</p>
+<p><em>Proof.</em> $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary. $\square$</p>
+<p>Since $\alpha$ has parity $0$ but acts on odd elements by $-1$, the signed sandwich $S^{\alpha}_{a,b}$ is the unsigned one with the middle factor sign-flipped on the odd part; this is the operator form of the Koszul sign, and it agrees with the composition rule of <em>The Signed Sandwich on a Bimodule over an Algebra</em>.</p>
+<h2 id="the-graded-endomorphism-algebra">The Graded Endomorphism Algebra</h2>
+<h3 id="the-grading-of-the-operators">The grading of the operators</h3>
+<p><strong>Definition.</strong> The <strong>graded endomorphism algebra</strong> of $M$ is the direct sum decomposition</p>
+<p>$$
+\operatorname{End}_R(M)=\operatorname{End}_R(M)_{\bar0}\oplus\operatorname{End}_R(M)_{\bar1}, \qquad \operatorname{End}_R(M)_i=\{T : T(M_j) \subseteq M_{i+j}\}.
+$$</p>
+<p><strong>Proposition.</strong> $\operatorname{End}_R(M)$ is a graded $R$-algebra: $\operatorname{End}_i\operatorname{End}_j \subseteq \operatorname{End}_{i+j}$, the identity is even, and $L_a$ has parity $\deg a$. The grade involution acts on it by conjugation, $T\mapsto\alpha T\alpha^{-1}$, and this is an algebra automorphism of order two whose eigenvalue on $\operatorname{End}_i$ is $(-1)^{i}$.</p>
+<p><em>Proof.</em> If $S$ has parity $i$ and $T$ has parity $j$, then $ST(M_k)\subseteq S(M_{j+k})\subseteq M_{i+j+k}$, so $\operatorname{End}_i\operatorname{End}_j\subseteq\operatorname{End}_{i+j}$; the identity preserves each $M_j$. The parity of $L_a$ is the proposition on the action. The conjugation is an automorphism because $\alpha$ is invertible, and its eigenvalue is the sign rule above. $\square$</p>
+<h3 id="the-graded-commutator">The graded commutator</h3>
+<p>The graded endomorphism algebra carries a signed commutator, and the sign rule is the statement that the action is a homomorphism of graded algebras for it.</p>
+<p><strong>Definition.</strong> For homogeneous operators $S,T$ the <strong>graded commutator</strong> is</p>
+<p>$$
+[S,T]=ST-(-1)^{\deg S\,\deg T}\,TS .
+$$</p>
+<p><strong>Proposition.</strong> The graded commutator is graded-alternating, $[S,T]=-(-1)^{\deg S\,\deg T}[T,S]$, it is a graded derivation in each argument,</p>
+<p>$$
+[S,TT']=[S,T]T'+(-1)^{\deg S\,\deg T}T[S,T'],
+$$</p>
+<p>and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogeneous $a$.</p>
+<p><em>Proof.</em> The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by <em>Module Endomorphisms</em>; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The exterior algebra.</strong> Let $A=\Lambda(V)$ with the usual $\mathbb{Z}/2$-grading by degree parity: it is graded-commutative, so every graded left module acquires the Koszul right action and becomes a graded bimodule. The sign $(-1)^{\deg b\deg m}$ is the sign of the exterior product, and the grade involution is the parity operator.</p>
+<p><strong>(b) A Clifford algebra.</strong> Let $A$ be the Clifford algebra of a quadratic space, graded by the parity of the number of generators. It is not graded-commutative in general, so the Koszul right action of the theorem is available only on modules where the obstruction $bc-(-1)^{\deg b\deg c}cb$ acts trivially; the sign rule for the operators still holds, because it only uses the grade involution.</p>
+<p><strong>(c) The matrix algebra with an even/odd grading.</strong> For $A=M_2(k)$, $J=\operatorname{diag}(1,-1)$, $\alpha(X)=JXJ^{-1}$: the graded-commutativity is vacuous because $A$ is not graded-commutative, and the Koszul right action exists only on modules killed by $[A,A]$-type obstructions. The sign rule $\alpha T\alpha^{-1}=(-1)^{\deg T}T$ holds for every homogeneous operator.</p>
+<p><strong>(d) The group algebra of $\mathbb{Z}/2$.</strong> For $A=k[\mathbb{Z}/2]=k\oplus k\epsilon$ with $\epsilon$ odd and $\epsilon^{2}=1$, the algebra is graded-commutative; every graded module is a graded bimodule with $m\cdot\epsilon=(-1)^{\deg m}\epsilon m$, and $R_\epsilon=L_\epsilon\alpha$. The two-sided operators $S_{1,\epsilon}=L_\epsilon\alpha=L^{\alpha}_\epsilon$ are the signed left multiplications of <em>The Signed Left Multiplication on a Module over an Algebra</em>.</p>
+<p><strong>(e) A purely even algebra.</strong> If $A=A_{\bar0}$ then every module is graded with $M=M_{\bar0}$, the grade involution is the identity, the Koszul sign is always $+1$, and all the graded statements reduce to the ungraded ones.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded algebra $A=A_{\bar0}\oplus A_{\bar1}$ acts on a graded module $M=M_{\bar0}\oplus M_{\bar1}$ with the compatibility $A_iM_j\subseteq M_{i+j}$, equivalently through a grade involution $\alpha$ with $\alpha(am)=\alpha(a)\alpha(m)$; the action is even, sending $A_i$ to the operators of parity $i$. The grading imposes the Koszul sign: for homogeneous $a$, $\alpha L_a\alpha^{-1}=(-1)^{\deg a}L_a$, and for every homogeneous operator $T$, $\alpha T\alpha^{-1}=(-1)^{\deg T}T$. When $A$ is graded-commutative, the sign $R_b(m)=(-1)^{\deg b\deg m}bm$ makes any graded left module a graded bimodule, with $R_b=L_b\alpha^{\deg b}$; without graded-commutativity this right action fails to be associative. The graded endomorphism algebra $\operatorname{End}_R(M)=\operatorname{End}_{\bar0}\oplus\operatorname{End}_{\bar1}$ is a graded algebra on which the grade involution acts by conjugation with eigenvalue $(-1)^{i}$ on $\operatorname{End}_i$, and it carries the graded commutator $[S,T]=ST-(-1)^{\deg S\deg T}TS$, for which the action is a homomorphism of graded algebras. The two-sided sandwiches $S_{a,b}$ have parity $\deg a+\deg b$ and obey the same sign rule.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=A_{\bar0}\oplus A_{\bar1}$</td>
+<td>graded $R$-algebra, $A_iA_j\subseteq A_{i+j}$</td>
+</tr>
+<tr>
+<td>$M=M_{\bar0}\oplus M_{\bar1}$</td>
+<td>graded left $A$-module, $A_iM_j\subseteq M_{i+j}$</td>
+</tr>
+<tr>
+<td>$\deg x \in \mathbb{Z}/2$</td>
+<td>degree of a homogeneous element</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>grade involution, $+1$ on the even part, $-1$ on the odd part</td>
+</tr>
+<tr>
+<td>$(-1)^{\deg s\deg t}$</td>
+<td>the Koszul sign of two homogeneous elements</td>
+</tr>
+<tr>
+<td>$L_a$, $L^{\alpha}_a$</td>
+<td>unsigned and signed left multiplications</td>
+</tr>
+<tr>
+<td>$R_b(m)=(-1)^{\deg b\deg m}bm$</td>
+<td>Koszul right multiplication on a graded bimodule</td>
+</tr>
+<tr>
+<td>$R_b=L_b\alpha^{\deg b}$</td>
+<td>right multiplication in terms of the left one</td>
+</tr>
+<tr>
+<td>$S_{a,b}=L_aR_b$</td>
+<td>two-sided operator of parity $\deg a+\deg b$</td>
+</tr>
+<tr>
+<td>$\alpha T\alpha^{-1}=(-1)^{\deg T}T$</td>
+<td>the sign rule for a homogeneous operator</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_i$</td>
+<td>operators shifting degree by $i$</td>
+</tr>
+<tr>
+<td>$[S,T]=ST-(-1)^{\deg S\deg T}TS$</td>
+<td>the graded commutator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for gradings, order-two automorphisms and the $\mathbb{Z}/2$-graded structures they define.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the grade involution and its action on operators.</li>
+<li>Pierre Deligne and John W. Morgan, <em>Notes on Supersymmetry</em>, in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, American Mathematical Society (1999), for the Koszul sign rule in graded algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, second edition, 2001), for the parity grading of a Clifford algebra and its modules.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for graded modules, the sign rule and the operators built from them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

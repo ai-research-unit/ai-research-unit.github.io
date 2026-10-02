@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groupoids with an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="groupoids-with-an-involution"><strong>Groupoids with an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>groupoid</strong> is a category in which every morphism is invertible. The assignment of the inverse,
+$f \mapsto f^{-1}$, is the <strong>canonical involution</strong> on the morphisms of a groupoid: it is of order two,
+it fixes every identity, and it reverses the composition, $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$. It
+is therefore an <strong>anti-automorphism</strong> of the partial multiplication, and in the language of the
+preceding article it makes every groupoid a dagger category with the inversion as dagger. This article
+studies that involution: its orbits, which are the pairs $\{f, f^{-1}\}$ together with the self-inverse
+morphisms, its fixed elements, which are the morphisms of order at most two, and the non-abelian case,
+in which inversion is not a homomorphism and the fixed elements are not closed under composition.</p>
+<p>The article presupposes <em>Universal Properties and Categories</em> — categories, functors, the opposite
+category, isomorphisms — and <em>Involutive Categories and the Dagger Functor</em>, which precedes it in this
+group and treats the general contravariant involution on the morphisms. The <strong>group</strong> is the one-object
+case, developed in <em>Groups</em>, later in this Part; the article uses the symmetric group $S_3$ as a
+one-object example and does not develop the general theory of groups. The relation algebra of a groupoid
+and the convolution algebra are <em>Groupoid C*-Algebras</em>, in another Part, and are named only.</p>
+<p>Three boundaries are observed. No <strong>measure</strong> and no representation of a groupoid is used. No
+<strong>topology</strong> is used; the topological and smooth groupoids belong to later Parts and are named only. No
+<strong>form</strong> is used and no C*-algebra is formed.</p>
+<h2 id="groupoids-and-inversion">Groupoids and Inversion</h2>
+<h3 id="the-groupoid">The Groupoid</h3>
+<p><strong>Definition.</strong> A <strong>groupoid</strong> is a category $\mathcal{G}$ in which every morphism is an isomorphism.
+The objects of $\mathcal{G}$ are its <strong>points</strong>, the morphisms are its <strong>arrows</strong>, and the composition
+is defined for the composable pairs; for each arrow $f : A \to B$ there is a unique arrow $f^{-1} : B
+\to A$ with $f \circ f^{-1} = \mathrm{id}_B$ and $f^{-1} \circ f = \mathrm{id}_A$. A groupoid with one
+object is a <strong>group</strong>, the arrows being its elements.</p>
+<p><strong>Theorem.</strong> In a groupoid the inversion is an involution on the arrows, fixes the identities, and
+reverses the composition:</p>
+<p>$$
+(f^{-1})^{-1} = f, \qquad \mathrm{id}_A^{-1} = \mathrm{id}_A, \qquad
+(g \circ f)^{-1} = f^{-1} \circ g^{-1},
+$$</p>
+<p>and it exchanges the hom-sets, carrying $\mathrm{Hom}(A,B)$ to $\mathrm{Hom}(B,A)$. Hence inversion is
+an anti-automorphism of the partial multiplication, and it is the dagger of <em>Involutive Categories and
+the Dagger Functor</em>; the groupoid with inversion is a dagger category in which every morphism is
+unitary.</p>
+<p><strong>Proof.</strong> The inverse is unique in a category, so $(f^{-1})^{-1} = f$ because $f$ is an inverse of
+$f^{-1}$; the identity is its own inverse; and $f^{-1} \circ g^{-1}$ is a two-sided inverse of $g \circ
+f$ because $(g \circ f) \circ (f^{-1} \circ g^{-1}) = \mathrm{id}$ and the composite in the other order
+is $\mathrm{id}$. The exchange of hom-sets is the definition of the target and source of $f^{-1}$.</p>
+<p><strong>Example.</strong> A group $G$ with one object is a groupoid, and the inversion is the group inversion, an
+anti-automorphism; the abelian groups are exactly those for which it is an automorphism, as the next
+section proves.</p>
+<h3 id="the-involution-and-the-orbit-decomposition">The Involution and the Orbit Decomposition</h3>
+<p><strong>Theorem (orbits of inversion).</strong> The orbits of the involution $f \mapsto f^{-1}$ on the arrows of a
+groupoid are of size one or two; an orbit is a singleton exactly when $f = f^{-1}$, and then $f$ is an
+endomorphism with $f \circ f = \mathrm{id}$, that is, $f$ is an <strong>involution of its object</strong>. The
+fixed elements of the inversion are exactly the self-inverse arrows, and they include all the
+identities.</p>
+<p><strong>Proof.</strong> An orbit $\{f, f^{-1}\}$ is a singleton exactly when $f = f^{-1}$; then $A = B$ because the
+sources and targets must agree, and $f \circ f = f \circ f^{-1} = \mathrm{id}_A$, so $f^2 =
+\mathrm{id}$. Conversely $f^2 = \mathrm{id}$ with $f$ an endomorphism gives $f = f^{-1}$ by uniqueness
+of inverses.</p>
+<p><strong>Corollary.</strong> For a finite group $G$, the number of orbits of the inversion is $(|G| + #{g : g^2 =
+e})/2$, where the second term is the number of elements of order at most two.</p>
+<p><strong>Proof.</strong> The orbits are the fixed elements, one each, and the remaining $|G| - \#\{g : g^2 = e\}$
+elements, paired.</p>
+<p><strong>Example ($S_3$).</strong> In the symmetric group $S_3$ the elements of order at most two are the identity and
+the three transpositions, so the inversion has $4$ fixed points and $(6 + 4)/2 = 5$ orbits; the two
+$3$-cycles form one orbit, because the inverse of a $3$-cycle is the other $3$-cycle.</p>
+<h2 id="the-non-abelian-case">The Non-Abelian Case</h2>
+<p><strong>Theorem.</strong> In a group $G$ the inversion is an automorphism if and only if $G$ is abelian; for a
+non-abelian group it is an anti-automorphism that is not a homomorphism.</p>
+<p><strong>Proof.</strong> Inversion is a homomorphism exactly when $(gh)^{-1} = g^{-1}h^{-1}$ for all $g, h$; but
+$(gh)^{-1} = h^{-1}g^{-1}$, so the two agree for all pairs exactly when the group is abelian. An
+automorphism is a homomorphism that is bijective, and the inversion is always bijective.</p>
+<p><strong>Theorem (the fixed elements are not a subgroup).</strong> In a non-abelian group the set of fixed elements
+of the inversion is not closed under multiplication, and it is not a subgroup. It contains the identity
+and, when the group is finite, the elements of order two, which in a non-abelian group need not commute.</p>
+<p><strong>Proof.</strong> In $S_3$ the transpositions $(12)$ and $(13)$ are fixed by the inversion because they are of
+order two, while their product $(12)(13) = (132)$ is a $3$-cycle and is not fixed; so the fixed set is
+not closed under multiplication.</p>
+<p><strong>Theorem (what the involution does not fix).</strong> In a groupoid the inversion fixes exactly the
+self-inverse arrows and exchanges each remaining arrow with its inverse, so it fixes no arrow of order
+greater than two, and on a non-abelian group it reverses the order of every product that is not
+commutative. The involution therefore carries information only about the self-inverse arrows and the
+pairing of the rest.</p>
+<p><strong>Proof.</strong> The fixed elements are the self-inverse arrows by the orbit theorem, and on a non-abelian
+group there are pairs $g, h$ with $gh \neq hg$, for which $(gh)^{-1} = h^{-1}g^{-1} \neq g^{-1}h^{-1}$,
+so inversion does not preserve the product.</p>
+<p><strong>Example (a group with a second involution).</strong> Let $G$ be a group and let $\sigma$ be an automorphism
+of $G$ with $\sigma^2 = \mathrm{id}$; then $\sigma$ is an involution of the group, the fixed subgroup is
+$G^{\sigma} = \{g : \sigma g = g\}$, and the orbits of $\sigma$ on $G$ are the pairs $\{g, \sigma g\}$.
+Inversion and $\sigma$ commute when $\sigma(g^{-1}) = (\sigma g)^{-1}$, which holds for every
+automorphism, so the two involutions generate a group of order at most four acting on $G$; the
+transformations of the form $g \mapsto (\sigma g)^{-1}$ are the <strong>anti-involutions</strong> of the group.</p>
+<h2 id="summary">Summary</h2>
+<p>A groupoid is a category with every morphism invertible, and its inversion is the canonical involution
+on the arrows: it is of order two, fixes the identities, exchanges the hom-sets and reverses the
+composition, so it is an anti-automorphism and the dagger of the groupoid. Its orbits are the pairs
+$\{f, f^{-1}\}$ and the self-inverse arrows, and its fixed elements are exactly the arrows of order at
+most two, which include the identities. For a finite group the number of orbits is $(|G| + #{g : g^2
+= e})/2$.</p>
+<p>In the non-abelian case the inversion is not an automorphism of the group, and the fixed elements are
+not closed under multiplication, as $S_3$ shows; the involution fixes the elements of order at most two
+and pairs the rest, so it carries no information about the order beyond that pairing. A second
+involution of the group, an automorphism of order two, commutes with the inversion and with it generates
+a group of involutions on the group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{G}$</td>
+<td>A groupoid</td>
+</tr>
+<tr>
+<td>$f^{-1}$</td>
+<td>The inverse of $f$; the canonical involution on the arrows</td>
+</tr>
+<tr>
+<td>$\mathrm{id}_A$</td>
+<td>The identity at the object $A$; fixed by the inversion</td>
+</tr>
+<tr>
+<td>self-inverse</td>
+<td>$f = f^{-1}$, equivalently $f^2 = \mathrm{id}$; the fixed elements</td>
+</tr>
+<tr>
+<td>orbit</td>
+<td>$\{f, f^{-1}\}$, of size one or two</td>
+</tr>
+<tr>
+<td>$G^{\sigma}$</td>
+<td>The fixed subgroup of an automorphism $\sigma$ of order two</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em>, 2nd ed. (Springer, 1998), for groupoids, the opposite category and isomorphisms.</li>
+<li>Nicolás Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for groups, the inversion and anti-automorphisms.</li>
+<li>Ronald Brown, <em>Topology and Groupoids</em> (BookSurge, 2006), for groupoids, their morphisms and the involution of inversion.</li>
+<li>Philip J. Higgins, <em>Notes on Categories and Groupoids</em> (Van Nostrand Reinhold, 1971), for groupoids, subgroupoids and morphisms of groupoids.</li>
+<li>Jean-Pierre Serre, <em>Trees</em> (Springer, 1980), for groups acting on groupoids and the fixed subgroup of an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

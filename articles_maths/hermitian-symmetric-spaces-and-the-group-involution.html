@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Symmetric Spaces and the Group Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-symmetric-spaces-and-the-group-involution"><strong>Hermitian Symmetric Spaces and the Group Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Of the symmetric spaces, some carry an invariant complex structure for which the geodesic symmetry is complex-antisymmetric; these are the <strong>Hermitian symmetric spaces</strong>. The condition is not metrically visible at the level of one geodesic; it is a condition on the <strong>involution</strong> of the group: the symmetric space $G/K$ is Hermitian exactly when the Cartan involution is the inner automorphism by an element of the centre of $K$, and that central element is the complex structure of the tangent space. The classification of the irreducible Hermitian symmetric spaces therefore becomes a classification of the symmetric pairs whose involution is of this inner type, and it produces four infinite families and two exceptional spaces — the classification of Cartan.</p>
+<p>The article treats the complex structure carried by the involution, the characterisation of the Hermitian case by a central element of the isotropy, the classification into the six types, and the bounded domains the noncompact types realise. The symmetric spaces, the symmetric pairs, the Cartan involution, the rank and the irreducibility are <em>Riemannian Symmetric Spaces and the Involution</em>; the homogeneous space $G/K$ and the isotropy representation are <em>Transformation Groups</em>; the unitary and orthogonal groups and their involutions are the two previous articles of this group; the Lie algebras and the real forms are <em>The Cartan Decomposition and the Cartan Involution</em>, <em>Real Forms of a Complex Lie Group and the Cartan Involution</em> and <em>The Orthogonal Lie Algebra</em>; the exceptional Lie groups are <em>Lie Groups</em>. The invariant Kähler metric, the Bergman kernel and the boundary theory of the domains are <em>Hermitian Symmetric Spaces and the Bergman Metric</em> and <em>The Bergman Operator</em>, below this Part, and the Hermitian manifolds with an isometric involution are <em>Hermitian Manifolds and the Geodesic Involution</em>, in <em>Foundations of Geometry</em>; both are named and not developed. The involution on the <strong>elements</strong> of the group is read here; the <strong>adjoint</strong> is the group <code>- * Operator Theory</code>.</p>
+<p>The article has four sections: the complex structure and the involution; the characterisation by the centre of the isotropy; the classification; and the worked cases. Throughout, $G$ is a connected semisimple real Lie group with finite centre, $\theta$ a Cartan involution, $K = G^{\theta}$ the maximal compact subgroup, $X = G/K$ the symmetric space, and $\mathfrak{g} = \mathfrak{k}\oplus\mathfrak{p}$ the Cartan decomposition.</p>
+<h2 id="the-complex-structure-and-the-involution">The Complex Structure and the Involution</h2>
+<h3 id="the-hermitian-condition">The Hermitian Condition</h3>
+<p><strong>Definition.</strong> A symmetric space $X = G/K$ is <strong>Hermitian</strong> when it carries a $G$-invariant almost complex structure $J$ such that $J$ is integrable and the geodesic symmetry $s_o$ at the base point is complex-antisymmetric, $ds_o \circ J = -J \circ ds_o$; the triple $(X, J, g)$ of the complex structure, the invariant metric and the form is a Hermitian symmetric space.</p>
+<p><strong>Proposition.</strong> The invariant almost complex structures on $X$ correspond to the complex structures $J_o$ on $\mathfrak{p}$ commuting with the isotropy representation $\operatorname{Ad}|_K$; the integrability of $J_o$ is automatic when $X$ is symmetric, and the complex-antisymmetry of the geodesic symmetry is the condition $J_o[s_o] = -[s_o]$, i.e., that $J_o$ anticommutes with $ds_o$, which is the map $-\mathrm{id}$ on $\mathfrak{p}$ composed with the involution.</p>
+<p><strong>Proof.</strong> An invariant tensor on $G/K$ is determined by its value at $o$, and its invariance is the commutation with the isotropy representation; the torsion of the almost complex structure vanishes because $\nabla J \equiv 0$ is forced by the homogeneity, so the Nijenhuis tensor vanishes, the standard integrability of the invariant structure. The antisymmetry is the evaluation of the relation $s_o^2 = \mathrm{id}$ together with the definition, <em>Riemannian Symmetric Spaces and the Involution</em> and <em>Kähler Geometry</em>, below this Part.</p>
+<h3 id="the-central-element">The Central Element</h3>
+<p><strong>Theorem (the Hermitian involution).</strong> The symmetric space $G/K$ is Hermitian exactly when there is $z \in Z(K)$, the centre of $K$, with</p>
+<p>$$
+\theta = \operatorname{Ad}(z), \qquad \operatorname{Ad}(z)|_{\mathfrak{p}} = -\mathrm{id}, \qquad \operatorname{Ad}(z)|_{\mathfrak{k}} = \mathrm{id},
+$$</p>
+<p>and then the complex structure on $\mathfrak{p}$ is $\mathrm{ad}(Z)$ for $Z = \log$-type generator of the circle $z$, with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{p}$ and $\mathrm{ad}(Z)|_{\mathfrak{k}} = 0$. Equivalently, the involution $\theta$ is <strong>inner</strong> and is the adjoint action of an element of the centre of $K$; a pair with this property is a <strong>Hermitian symmetric pair</strong> and $\theta$ a <strong>Hermitian involution</strong>.</p>
+<p><strong>Proof.</strong> If $G/K$ is Hermitian, the complex structure $J_o$ on $\mathfrak{p}$ commutes with $\operatorname{Ad}|_K$ and satisfies $J_o^2 = -\mathrm{id}$; since the isotropy representation of an irreducible symmetric space is irreducible, Schur's lemma gives a central element $Z \in \mathfrak{k}$ with $\mathrm{ad}(Z)|_{\mathfrak{p}} = J_o$ and $\mathrm{ad}(Z)|_{\mathfrak{k}} = 0$, because $Z$ central acts trivially on $\mathfrak{k}$; then $z = \exp(\pi Z)$ lies in $Z(K)$ and $\operatorname{Ad}(z)|_{\mathfrak{p}} = e^{\pi J_o} = -\mathrm{id}$, $\operatorname{Ad}(z)|_{\mathfrak{k}} = \mathrm{id}$, so $\theta = \operatorname{Ad}(z)$. Conversely, if $\theta = \operatorname{Ad}(z)$ with $z \in Z(K)$ and $\operatorname{Ad}(z)|_{\mathfrak{p}} = -\mathrm{id}$, then $Z = $ the generator of the circle through $z$ has $\mathrm{ad}(Z)|_{\mathfrak{p}}$ an invariant complex structure and $\mathrm{ad}(Z)|_{\mathfrak{k}} = 0$, which is integrable and complex-antisymmetric. The argument is Cartan's, and is given in <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<p><strong>Remark.</strong> The condition is a condition on the <strong>involution</strong>: it must be inner, and the inner element must lie in the centre of the isotropy. The complex structure is the logarithm of that central element read on the tangent space, so the geometry of the Hermitian symmetric space is carried by the involution of the group. This is the sense of the group <code>- * Theory</code> of this category: the involution on the elements is the object, and the complex structure is its geometric trace.</p>
+<h2 id="the-characterisation-by-the-centre-of-the-isotropy">The Characterisation by the Centre of the Isotropy</h2>
+<p><strong>Proposition.</strong> For an irreducible symmetric space the following are equivalent:</p>
+<ol>
+<li>$G/K$ is Hermitian;</li>
+<li>the involution $\theta$ is inner, $\theta = \operatorname{Ad}(z)$ for some $z \in Z(K)$;</li>
+<li>the centre $\mathfrak{z}(\mathfrak{k})$ is nonzero, of dimension one;</li>
+<li>the isotropy representation $\operatorname{Ad}|_K$ on $\mathfrak{p}$ admits an invariant complex structure.</li>
+</ol>
+<p>When these hold, the centre of $\mathfrak{k}$ is one-dimensional and generated by $Z$ with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{p}$.</p>
+<p><strong>Proof.</strong> The equivalence of 1 and 2 is the theorem; 2 gives 3 because a central $z$ has a logarithm in the centre of $\mathfrak{k}$, and 3 gives 4 by Schur's lemma as in the theorem; 4 gives 1 by the integrability of the invariant structure. The one-dimensionality of $\mathfrak{z}(\mathfrak{k})$ is the irreducibility of the isotropy representation: a larger centre would decompose $\mathfrak{p}$ into the eigenspaces of $\mathrm{ad}(Z)$, all invariant.</p>
+<p><strong>Corollary (the compact dual).</strong> A Hermitian symmetric space of compact type has the same complex structure and the opposite curvature; the duality $G/K \leftrightarrow G^c/K$ preserves the involution, the centre of the isotropy and the complex structure, and reverses the sign of the curvature. The compact type consists of the complex Grassmannians and their spin and symplectic analogues.</p>
+<p><strong>Proof.</strong> The compact dual is built from the same $\mathfrak{k}$ and the same complexification with $\mathfrak{p}$ replaced by $i\mathfrak{p}$; the involution and the centre of $\mathfrak{k}$ are unchanged, so the complex structure is unchanged, and the curvature changes sign, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<h2 id="the-classification">The Classification</h2>
+<h3 id="the-six-types">The Six Types</h3>
+<p><strong>Theorem (Cartan's classification).</strong> The irreducible Hermitian symmetric spaces fall into six types, four infinite families and two exceptional spaces; the noncompact types, their compact duals, their dimensions and their ranks are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Noncompact $G/K$</th>
+<th>Compact dual</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A III</td>
+<td>$SU(p,q)/S(U(p)\times U(q))$</td>
+<td>$SU(p+q)/S(U(p)\times U(q))$</td>
+<td>$2pq$</td>
+<td>$\min(p,q)$</td>
+</tr>
+<tr>
+<td>B D I</td>
+<td>$SO(2,n)/(SO(2)\times SO(n))$</td>
+<td>$SO(2+n)/(SO(2)\times SO(n))$</td>
+<td>$2n$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>C I</td>
+<td>$Sp(2n,\mathbb{R})/U(n)$</td>
+<td>$Sp(n)/U(n)$</td>
+<td>$n(n+1)$</td>
+<td>$n$</td>
+</tr>
+<tr>
+<td>D III</td>
+<td>$SO^{*}(2n)/U(n)$</td>
+<td>$SO(2n)/U(n)$</td>
+<td>$n(n-1)$</td>
+<td>$\lfloor n/2\rfloor$</td>
+</tr>
+<tr>
+<td>E III</td>
+<td>$E_{6(-14)}/(Spin(10)\times U(1))$</td>
+<td>$E_6/(Spin(10)\times U(1))$</td>
+<td>$32$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>E VII</td>
+<td>$E_{7(-25)}/(E_6\times U(1))$</td>
+<td>$E_7/(E_6\times U(1))$</td>
+<td>$54$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>the group $G$ is the identity component, the compact dual is the compact real form of the complexification with the same $K$, and the list is complete for the irreducible case; the reducible Hermitian symmetric spaces are products of the types.</p>
+<p><strong>Proof.</strong> The classification of the irreducible symmetric spaces is by the real forms of the complexified pair and the Satake diagram, <em>Real Forms of a Complex Lie Group and the Cartan Involution</em> and <em>Riemannian Symmetric Spaces and the Involution</em>; the Hermitian condition selects the pairs whose Satake diagram has a suitable symmetry, equivalently whose $\mathfrak{k}$ has a one-dimensional centre, which is a property visible on the diagram. The types A III, B D I, C I, D III are the classical families, and the exceptional pairs E III and E VII are the two exceptional Hermitian symmetric spaces, of rank two and three. The dimensions and the ranks are computed from the dimensions of the groups and their maximal compact subgroups. This is Cartan's classification, quoted.</p>
+<p><strong>Remark.</strong> The table is the classification the <strong>involution</strong> gives: the type is a property of the pair $(G,\theta)$, not of the abstract Lie algebra, and the two members of a dual pair — A III noncompact and A III compact — carry the same involution type and opposite curvature. The bounded domains that the noncompact types realise are the <strong>Hermitian symmetric domains</strong>, and they are the domains of the classification, <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part.</p>
+<h3 id="the-complex-structure-of-the-types">The Complex Structure of the Types</h3>
+<p><strong>Proposition.</strong> In each type the complex structure is the isotropy element:</p>
+<ul>
+<li><strong>A III</strong>: $\mathfrak{p}\cong\mathbb{C}^{pq}$ with the multiplication by $i$ on the entries of the matrix $Z$; the domain is the matrix unit ball of <em>The Unitary Group and the Hermitian Symmetric Space</em>.</li>
+<li><strong>B D I</strong>: $\mathfrak{p}\cong\mathbb{C}^{n}$ with the complex structure of $\mathbb{C}^n$; the domain is the tube over the Lorentz cone, $\{z : \operatorname{Im} z \in \Omega\}$ with $\Omega$ the positive cone of a form of signature $(1,n-1)$.</li>
+<li><strong>C I</strong>: $\mathfrak{p}\cong\mathbb{C}^{n(n+1)/2}$ with the complex structure of the symmetric matrices; the domain is the Siegel upper half space $\{Z = Z^{t} : \operatorname{Im} Z > 0\}$.</li>
+<li><strong>D III</strong>: $\mathfrak{p}\cong\mathbb{C}^{n(n-1)/2}$; the compact dual $SO(2n)/U(n)$ is the manifold of orthogonal complex structures on $\mathbb{R}^{2n}$, the <strong>isotropic Grassmannian</strong>, and the noncompact dual is the same manifold with the opposite complex structure.</li>
+</ul>
+<p><strong>Proof.</strong> In each case the central element $Z \in \mathfrak{z}(\mathfrak{k})$ is exhibited and the adjoint action on $\mathfrak{p}$ is computed; the identification of the domain is the Harish-Chandra embedding of <em>Riemannian Symmetric Spaces and the Involution</em> for the type. The isotropic Grassmannian is the quotient $SO(2n)/U(n)$, whose points are the complex structures on $\mathbb{R}^{2n}$ compatible with the metric; the Grassmannians and the flag manifolds as homogeneous spaces are the subject of <em>Geometry on Linear Spaces</em>, below this Part.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the disc and the ball).</strong> Type A III with $\min(p,q) = 1$ gives the complex hyperbolic spaces: $SU(1,n)/S(U(1)\times U(n))$ is the unit ball of $\mathbb{C}^n$ with the complex structure of $\mathbb{C}^n$ and rank one, the smallest-rank Hermitian symmetric space of the family. The disc $SU(1,1)/U(1)$ is the case $n = 1$, the Poincaré disc with the involution $\theta(g) = JgJ^{-1}$.</p>
+<p><strong>Example (the Siegel upper half space).</strong> Type C I, $Sp(2n,\mathbb{R})/U(n)$, realises the Siegel upper half space $\mathfrak{H}_n = \{Z \in \mathbb{C}^{n\times n} : Z = Z^{t},\ \operatorname{Im} Z > 0\}$, of dimension $n(n+1)$ and rank $n$; the involution is the conjugation by the form matrix $\Omega = \begin{pmatrix}0 & I \\ -I & 0\end{pmatrix}$ and the central element of $U(n)$ acts by the complex structure on the symmetric matrices. The domain is the source of the theory of modular forms of degree $n$, which is arithmetic and lies outside this article.</p>
+<p><strong>Example (the tube domain).</strong> Type B D I, $SO(2,n)/(SO(2)\times SO(n))$, realises the tube $\{z \in \mathbb{C}^{n} : \operatorname{Im} z \in \Omega\}$ over the Lorentz cone $\Omega = \{x : x_1^2 > x_2^2 + \cdots + x_n^2,\ x_1 > 0\}$ of a form of signature $(1,n-1)$; it has dimension $2n$ and rank two, and its complex structure is the complex structure of $\mathbb{C}^n$. For $n = 2$ the tube is the product of two discs, and for $n = 3$ it is the tube over the cone of positive-definite $2\times 2$ matrices.</p>
+<p><strong>Example (the isotropic Grassmannian).</strong> Type D III, with compact dual $SO(2n)/U(n)$, is the manifold of complex structures $J$ on $\mathbb{R}^{2n}$ with $J^2 = -\mathrm{id}$ and $J \in SO(2n)$; the involution is the conjugation by such a $J$, the isotropy $U(n)$ is the stabiliser of one complex structure, and the rank is $\lfloor n/2\rfloor$. The space is the only classical Hermitian symmetric space whose compact dual is a quotient of the rotation group by the unitary group.</p>
+<p><strong>Example (the exceptional spaces).</strong> Types E III and E VII are the two exceptional Hermitian symmetric spaces, of dimensions $32$ and $54$ and ranks $2$ and $3$, with isotropy groups $Spin(10)\times U(1)$ and $E_6\times U(1)$; they have no classical description as a Grassmannian and their domains are the exceptional bounded symmetric domains. They show that the Hermitian condition is not a property of the classical families alone.</p>
+<h2 id="summary">Summary</h2>
+<p>A symmetric space $G/K$ is Hermitian exactly when its Cartan involution is inner, $\theta = \operatorname{Ad}(z)$ for an element $z$ of the centre of the maximal compact subgroup $K$, and then the logarithm $Z \in \mathfrak{z}(\mathfrak{k})$ has $\mathrm{ad}(Z)|_{\mathfrak{p}}$ an invariant complex structure with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{p}$ and $\mathrm{ad}(Z) = 0$ on $\mathfrak{k}$; equivalently the isotropy representation admits an invariant complex structure, equivalently the centre of $\mathfrak{k}$ is one-dimensional. The compact dual shares the involution and the complex structure and reverses the curvature. Cartan's classification of the irreducible Hermitian symmetric spaces has six types — the four infinite families A III $SU(p,q)/S(U(p)\times U(q))$, B D I $SO(2,n)/(SO(2)\times SO(n))$, C I $Sp(2n,\mathbb{R})/U(n)$ and D III $SO^{*}(2n)/U(n)$, and the two exceptional spaces E III and E VII of ranks two and three — with the dimensions and ranks of the table; the reducible cases are products. The complex structure of each type is the isotropy element, and the noncompact types realise the bounded symmetric domains: the matrix unit ball, the Siegel upper half space and the tube over the Lorentz cone. The invariant Kähler metric and the Bergman kernel are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The object classified is the involution on the elements; no adjoint is taken.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X = G/K$, $\theta$</td>
+<td>a symmetric space and its Cartan involution</td>
+</tr>
+<tr>
+<td>$\mathfrak{g} = \mathfrak{k}\oplus\mathfrak{p}$</td>
+<td>the Cartan decomposition</td>
+</tr>
+<tr>
+<td>$J_o$</td>
+<td>the invariant complex structure on $\mathfrak{p}$</td>
+</tr>
+<tr>
+<td>$Z \in \mathfrak{z}(\mathfrak{k})$</td>
+<td>the central element with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{p}$</td>
+</tr>
+<tr>
+<td>$\theta = \operatorname{Ad}(z)$</td>
+<td>the Hermitian involution; $z \in Z(K)$</td>
+</tr>
+<tr>
+<td>A III, B D I, C I, D III</td>
+<td>the four infinite families of Hermitian symmetric spaces</td>
+</tr>
+<tr>
+<td>E III, E VII</td>
+<td>the two exceptional Hermitian symmetric spaces</td>
+</tr>
+<tr>
+<td>$\mathfrak{H}_n = \{Z = Z^{t} : \operatorname{Im} Z > 0\}$</td>
+<td>the Siegel upper half space; type C I</td>
+</tr>
+<tr>
+<td>$SO(2n)/U(n)$</td>
+<td>the isotropic Grassmannian; the compact dual of D III</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>the Lorentz cone of a form of signature $(1,n-1)$</td>
+</tr>
+<tr>
+<td>$\lfloor n/2\rfloor$</td>
+<td>the rank of type D III</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the Hermitian symmetric spaces, the central element of the isotropy and the classification.</li>
+<li>Elie Cartan, "Sur les domaines bornés homogènes de l'espace de $n$ variables complexes", <em>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</em> <strong>11</strong> (1935), 116–162, for the classification of the Hermitian symmetric domains.</li>
+<li>Ichiro Satake, <em>Algebraic Structures of Symmetric Domains</em> (Princeton University Press, 1980), for the classification, the Satake diagrams and the bounded domains.</li>
+<li>Ottmar Loos, <em>Bounded Symmetric Domains and Jordan Pairs</em> (University of California, Irvine, 1977), for the Jordan-theoretic classification of the domains and the tube realisations.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (American Mathematical Society, sixth edition, 2011), for the Hermitian symmetric spaces of the classical groups and their complex structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

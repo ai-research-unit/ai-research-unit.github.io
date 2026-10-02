@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-a-topological-group"><strong>The Adjoint of the Left Multiplication on a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An adjoint is taken with respect to a form, and the form of this category is the pairing between the functions on the group and its group algebra. This article computes the adjoint of the left multiplication with respect to that pairing and then with respect to its twisting by the grade involution. The first computation returns the left multiplication by the inverse, which is the operator form of the statement that inversion is the adjoint; the second returns the left multiplication by the image of the element under the involution, which is the precise sense in which the left regular representation is a <code>*</code>-representation. The agreement of the involution on the elements with the adjoint on the operators is proved and not assumed, as the contract of the group requires.</p>
+<p>The article assumes the group algebra, the natural pairing and the translation operators from <em>Operators on a Topological Group</em> and <em>Convolution on a Topological Group</em>; the continuous involution, the associated involutive automorphism $\alpha = \sigma\iota$, the fixed and inverted subgroups and the dictionary from <em>Involutive Topological Groups</em>; and the continuity of the translations from <em>Topological Groups</em>. The Haar pairing and the adjoint of a convolution operator under it are <em>The Adjoint of a Convolution Operator</em> in Part III, and are named only.</p>
+<p>Throughout, $G$ is a Hausdorff topological group with identity $e$, $k$ is a field, $k[G]$ is the group algebra with basis $G$ and finitely supported elements, $\sigma$ is a continuous involution, $\alpha = \sigma\iota$ is the associated continuous involutive automorphism, and $A$ is the linear extension of $\alpha$ to $k[G]$, $A u = \sum_g u_g\,\alpha(g)$.</p>
+<h2 id="the-natural-form-and-the-untwisted-adjoint">The Natural Form and the Untwisted Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>natural form</strong> of the category is the symmetric bilinear form</p>
+<p>$$
+B : k[G]\times k[G] \longrightarrow k, \qquad B(u,v) = \sum_{g\in G} u_g\,v_g ,
+$$</p>
+<p>the form making the group elements an orthonormal basis. It is the algebraic shadow of the pairing between the continuous functions and the group algebra, $B(u,v) = \langle f_v, u\rangle$ with $f_v(g) = v_g$ on the finite support of $v$.</p>
+<p><strong>Theorem (the adjoint is the inverse).</strong> On $k[G]$ the left and right multiplications satisfy</p>
+<p>$$
+(L_a)^\dagger = L_{a^{-1}} , \qquad (R_b)^\dagger = R_{b^{-1}} ,
+$$</p>
+<p>with respect to the natural form, where $L_a u = au$ and $R_b u = ub$.</p>
+<p><strong>Proof.</strong> $(L_au)_k = u_{a^{-1}k}$, so $B(L_au,v) = \sum_g u_{a^{-1}g}v_g = \sum_h u_h v_{ah}$ on setting $h = a^{-1}g$. If $T$ is the adjoint then $B(u,Tv) = \sum_h u_h(Tv)_h$, so $(Tv)_h = v_{ah}$, that is $(Tv)_h = (L_{a^{-1}}v)_h$. The computation for $R_b$ is the mirror image, using $(R_bu)_k = u_{kb^{-1}}$.</p>
+<p><strong>Corollary (the inversion as the adjoint).</strong> The adjoint operation is an anti-automorphism of the algebra of operators, $(ST)^\dagger = T^\dagger S^\dagger$, and the assignment $a\mapsto L_a$ converts the inversion into the adjoint: the adjoint of the left regular operator of $a$ is the left regular operator of $a^{-1}$. The map $u\mapsto\sum_g u_g\,g^{-1}$, the linear extension $I$ of the inversion, is a form-preserving self-adjoint anti-automorphism of $k[G]$, and it exchanges the two regular representations,</p>
+<p>$$
+(L_a)^\dagger = I\,R_a\,I = L_{a^{-1}} , \qquad (R_b)^\dagger = I\,L_b\,I = R_{b^{-1}} .
+$$</p>
+<p><strong>Proof.</strong> The anti-automorphism property is general for adjoints with respect to a bilinear form. The inversion operator satisfies $B(Iu,Iv) = B(u,v)$ and $B(Iu,v) = B(u,Iv)$, so it is an isometry and self-adjoint; $\alpha = \mathrm{id}$ here, so $\sigma = \iota$. Since $I$ is an anti-automorphism, $I L_a I = R_{a^{-1}}$ and $I R_b I = L_{b^{-1}}$, which together with the theorem gives the displayed identities.</p>
+<h2 id="the-signed-form">The Signed Form</h2>
+<p><strong>Definition.</strong> Let $(G,\alpha)$ be a graded topological group. The <strong>signed form</strong> is the symmetric bilinear form</p>
+<p>$$
+B_\alpha : k[G]\times k[G] \longrightarrow k, \qquad B_\alpha(u,v) = \sum_{g\in G} u_g\,v_{\alpha(g)} ,
+$$</p>
+<p>the natural form twisted by the grade involution; it reduces to $B$ when $\alpha = \mathrm{id}$.</p>
+<p><strong>Theorem (the adjoints with respect to the signed form).</strong> On $k[G]$,</p>
+<p>$$
+(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} , \qquad A^\dagger = A .
+$$</p>
+<p><strong>Proof.</strong> $(L_au)_k = u_{a^{-1}k}$, so $B_\alpha(L_au,v) = \sum_g u_{a^{-1}g}v_{\alpha(g)} = \sum_h u_h v_{\alpha(a)\alpha(h)}$ on setting $h = a^{-1}g$ and using that $\alpha$ is an automorphism. If $T$ is the adjoint then $(Tv)_{\alpha(h)} = v_{\alpha(a)\alpha(h)}$, so $(Tv)_k = v_{\alpha(a)k}$ on writing $k = \alpha(h)$; since $(L_cv)_k = v_{c^{-1}k}$ and $\alpha(a)^{-1} = \alpha(a^{-1}) = \sigma(a)$, this is $L_{\sigma(a)}$. The computation for $R_b$ gives $(R_b)^\dagger = R_{\alpha(b)^{-1}} = R_{\sigma(b)}$, and for $A$ one has $(Au)_k = u_{\alpha^{-1}(k)}$, whence $B_\alpha(Au,v) = \sum_h u_h v_h$, which identifies the adjoint with $A$.</p>
+<p><strong>Remark (the two adjoints).</strong> The untwisted adjoint of $L_a$ is $L_{a^{-1}}$ and the signed adjoint is $L_{\sigma(a)}$; the two are the same computation with the two forms, and they are reconciled by $\sigma(a) = \alpha(a)^{-1}$, so the passage from one to the other is the twisting of the form by $\alpha$.</p>
+<h2 id="compatibility-with-the-involution">Compatibility with the Involution</h2>
+<p><strong>Theorem (the left regular representation is a <code>*</code>-representation).</strong> With respect to the signed form the assignment $a\mapsto L_a$ satisfies</p>
+<p>$$
+(L_a)^\dagger = L_{\sigma(a)} , \qquad (L_aL_b)^\dagger = L_b^\dagger L_a^\dagger , \qquad (L_a^\dagger)^\dagger = L_a ,
+$$</p>
+<p>so the involution on the elements of $G$ agrees with the adjoint on the operators: the left regular representation is a <code>*</code>-representation of the involutive group algebra, and it extends to a <code>*</code>-representation of the semidirect product $G\rtimes_\alpha C_2$ on the same space.</p>
+<p><strong>Proof.</strong> The first identity is the theorem above, the second is the general anti-automorphism property of the adjoint, and the third uses $\sigma^2 = \mathrm{id}$. The agreement is exactly the statement that the representation carries the involution to the adjoint; the extension is the action of the generator of the extension by the operator $A$, which is self-adjoint and satisfies $A L_a A = L_{\alpha(a)}$, the relation required for a representation of the semidirect product.</p>
+<p><strong>Corollary (the right regular representation).</strong> $(R_b)^\dagger = R_{\sigma(b)}$ and the two representations commute with the same involution; the operator $A$ intertwines the two, $A L_a A = L_{\alpha(a)}$ and $A R_b A = R_{\alpha(b)}$, so it is a <code>*</code>-isomorphism between the left regular representation and its twist.</p>
+<p><strong>Proof.</strong> The identities are the theorem and the definition of $A$; the intertwining is the multiplicativity of $\alpha$.</p>
+<p><strong>Corollary (the degenerate cases).</strong> If $\sigma = \iota$, so that $\alpha = \mathrm{id}$, the signed form is the natural form and the adjoint of $L_a$ is $L_{a^{-1}}$; if the involution is inner, the adjoint differs from the untwisted adjoint by the inner automorphism of the conjugating element; and if $G$ is abelian then $L_a = R_a$ and the left multiplication is self-adjoint exactly when $\sigma(a) = a$, that is for $a \in G^\sigma$.</p>
+<p><strong>Proof.</strong> The first statement is the specialisation $\alpha = \mathrm{id}$. For an inner involution one has $\sigma(a) = za z^{-1}$ up to the conventions of <em>The Signed Sandwich on a Topological Group</em>, so the signed adjoint is the conjugate of the untwisted one. On an abelian group $L_a = R_a$ and $L_{\sigma(a)} = L_a$ exactly when $\sigma(a) = a$.</p>
+<h2 id="continuity">Continuity</h2>
+<p><strong>Theorem (the adjoint is continuous).</strong> Let $T : k[G]\to k[G]$ be a continuous operator with an adjoint with respect to the natural or the signed form. If $T$ is a finite linear combination of translations then $T^\dagger$ is continuous, and the assignment</p>
+<p>$$
+G \longrightarrow \operatorname{End}_k(k[G]) , \qquad a \mapsto L_a^\dagger = L_{\sigma(a)} ,
+$$</p>
+<p>is continuous for the discrete topology on $k[G]$, being the composite of the continuous parametrisation $a\mapsto L_a$ of <em>The Signed Left Multiplication on a Topological Group</em> with the involution.</p>
+<p><strong>Proof.</strong> A finite linear combination of the translations is continuous, and its adjoint is a finite linear combination of the adjoints $L_{\sigma(a)}$, again continuous. The parametrisation $a\mapsto L_{\sigma(a)}$ is the composite of $\sigma$, a homeomorphism, with the continuous $a\mapsto L_a$.</p>
+<h2 id="summary">Summary</h2>
+<p>The natural form $B(u,v) = \sum_g u_gv_g$ on the group algebra gives the untwisted adjoints $(L_a)^\dagger = L_{a^{-1}}$ and $(R_b)^\dagger = R_{b^{-1}}$, which is the operator form of the statement that the inversion is the adjoint; the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$, the natural form twisted by the grade involution, gives $(L_a)^\dagger = L_{\sigma(a)}$, $(R_b)^\dagger = R_{\sigma(b)}$ and $A^\dagger = A$ for the linear extension $A$ of $\alpha$. The two adjoints are reconciled by $\sigma(a) = \alpha(a)^{-1}$, so the passage from the untwisted to the signed adjoint is the twisting of the form by the grade involution. With respect to the signed form the left regular representation is a <code>*</code>-representation: the involution on the elements agrees with the adjoint on the operators, and the representation extends to the semidirect product $G\rtimes_\alpha C_2$ with the generator acting by the self-adjoint operator $A$. The right regular representation carries the same involution, the two representations are intertwined by $A$, and in the degenerate cases — the involution the inversion, the involution inner, the group abelian — the formula specialises as recorded. The adjoints of finite linear combinations of translations are continuous, and the map $a\mapsto L_a^\dagger$ is continuous. The Haar pairing and the adjoint of a convolution operator under it are Part III and are not used.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k[G]$</td>
+<td>the group algebra of finitely supported functions</td>
+</tr>
+<tr>
+<td>$B(u,v) = \sum_g u_gv_g$</td>
+<td>the natural form, the group elements an orthonormal basis</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = L_{a^{-1}}$</td>
+<td>the untwisted adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$(R_b)^\dagger = R_{b^{-1}}$</td>
+<td>the untwisted adjoint of the right multiplication</td>
+</tr>
+<tr>
+<td>$B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$</td>
+<td>the signed form, the natural form twisted by $\alpha$</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = L_{\sigma(a)}$</td>
+<td>the signed adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$(R_b)^\dagger = R_{\sigma(b)}$</td>
+<td>the signed adjoint of the right multiplication</td>
+</tr>
+<tr>
+<td>$A u = \sum_g u_g\alpha(g)$</td>
+<td>the linear extension of $\alpha$, self-adjoint</td>
+</tr>
+<tr>
+<td>$\sigma(a) = \alpha(a)^{-1}$</td>
+<td>the reconciliation of the two adjoints</td>
+</tr>
+<tr>
+<td><code>*</code>-representation</td>
+<td>the agreement of the involution with the adjoint, proved here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions, their adjoints and the <code>*</code>-representations they define.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for the adjoint with respect to a bilinear form and the structure of an algebra with involution.</li>
+<li>Lev S. Pontryagin, <em>Topological Groups</em> (Gordon and Breach, second edition, 1966), for the translations and their continuity.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for bilinear forms, their twists and the adjoint of a linear map.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the passage from the algebraic adjoint of the group algebra to the adjoint of a convolution operator, which is Part III.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

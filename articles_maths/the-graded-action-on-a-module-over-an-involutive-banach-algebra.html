@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over an Involutive Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-an-involutive-banach-algebra"><strong>The Graded Action on a Module over an Involutive Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An algebra with a grade involution $\alpha$ acts on itself through the signed left multiplication, and the same construction applies to a module: when a Banach module $M$ over a graded Banach algebra carries a <strong>parity operator</strong> $\pi$, an involutive additive map that reverses the sign of the odd part, the action can be twisted by the grading and one gets the <strong>graded action</strong></p>
+<p>$$
+r \star m = r \cdot \pi(m) .
+$$</p>
+<p>The twisted action is not a module action of the whole algebra, and the defect is exactly the sign rule: the product $r\star(s\star m)$ differs from $(rs)\star m$ by the factor $\alpha(s)-s$, so associativity holds exactly on the even part. The two structural facts that make the graded action work are the compatibility of the action with the grading, $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$, which is the module form of the semilinearity of the parity operator, and the self-adjointness of $\pi$ for the form of the category, which is what makes the adjoint of the graded action a graded action. This article fixes the graded action on a Banach module, proves the compatibility and the sign rule, identifies the operators the even and the odd elements produce, relates the construction to the regular module where it is the signed left multiplication, and reads the completion.</p>
+<p>The article assumes the Banach algebra and its norm from <em>Topological Algebras and Banach Algebras</em>; the graded algebra, the grade involution and the sign rule from <em>Involutive Topological Linear Algebras</em> and <em>Graded Rings</em>; the topological and Banach modules, the continuous operators and the completed tensor products from <em>Topological Modules and Vector Spaces</em> and <em>Normed and Banach Spaces</em>; the signed left multiplication from <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>; and the graded action of Part I from <em>The Graded Action on a Module over an Algebra</em>. The adjoint action is <em>The Graded Adjoint Action on a Module over an Involutive Banach Algebra</em>, later in this category; the anti-automorphism involution $\sigma$ is the <code>- * Theory</code> structure and is not used.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with continuous grade involution $\alpha$, $\alpha^2 = \mathrm{id}$; $A = A^0\oplus A^1$ is the grading, with $A^0$ the even part and $A^1$ the odd part; $M$ is a Banach $A$-module with $\lVert r\cdot m\rVert \leq \lVert r\rVert\lVert m\rVert$; $\pi : M \to M$ is a <strong>parity operator</strong>, a continuous additive involution commuting with the scalars, $\pi^2 = \mathrm{id}$, with</p>
+<p>$$
+\pi(r\cdot m) = \alpha(r)\cdot\pi(m) \qquad (r \in A,\ m \in M) ;
+$$</p>
+<p>$M = M^0\oplus M^1$ is the grading of $M$ by $\pi$, with $M^0 = \ker(\pi-\mathrm{id})$ and $M^1 = \ker(\pi+\mathrm{id})$; and the <strong>graded action</strong> is $\ell_r^\pi(m) = r\star m = r\cdot\pi(m)$.</p>
+<h2 id="the-graded-action">The Graded Action</h2>
+<p><strong>Definition.</strong> The <strong>graded action</strong> of $A$ on $M$ is the bilinear map</p>
+<p>$$
+A \times M \to M , \qquad (r,m) \mapsto r \star m = r\cdot\pi(m) ,
+$$</p>
+<p>and the <strong>graded (twisted) multiplication</strong> by $r$ is the operator $\ell_r^\pi(m) = r\cdot\pi(m)$.</p>
+<p><strong>Proposition (compatibility of the action with the grading).</strong> The parity operator satisfies</p>
+<p>$$
+\pi(r\cdot m) = \alpha(r)\cdot\pi(m) , \qquad \text{and for homogeneous } r , \quad \pi(r\cdot m) = (-1)^{\lvert r\rvert}\,r\cdot\pi(m) ,
+$$</p>
+<p>where $\lvert r\rvert$ is the parity of a homogeneous $r$. Equivalently $\pi \circ L_r = L_{\alpha(r)}\circ\pi$ and $L_r\circ\pi = \pi\circ L_{\alpha(r)}$ for the plain action $L_r(m) = r\cdot m$. Hence $\pi$ is $A^0$-linear but not $A$-linear unless $A^1 = 0$.</p>
+<p><strong>Proof.</strong> The identity is the defining property of the parity operator; for homogeneous $r$ with $\alpha(r) = (-1)^{\lvert r\rvert}r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. For even $r$ the equation reads $\pi(r\cdot m) = r\cdot\pi(m)$, which is $A^0$-linearity; for odd $r$ it reads $\pi(r\cdot m) = -r\cdot\pi(m)$, which contradicts $A$-linearity when the odd part is nonzero. $\square$</p>
+<p><strong>Proposition (the sign rule and the failure of associativity).</strong> For all $r,s \in A$ and $m \in M$,</p>
+<p>$$
+r\star(s\star m) = \bigl(r\,\alpha(s)\bigr)\cdot m , \qquad (rs)\star m = (rs)\cdot\pi(m) ,
+$$</p>
+<p>so the graded action is associative, $r\star(s\star m) = (rs)\star m$ for all $r,s,m$, exactly when every $s$ is even, that is $A = A^0$; in general the obstruction is the odd part of $s$. The operator $\ell_r^\pi$ satisfies the sign rule</p>
+<p>$$
+\ell_r^\pi\circ\pi = L_r , \qquad \pi\circ\ell_r^\pi = L_{\alpha(r)} , \qquad \text{so} \quad \pi\ell_r^\pi = (-1)^{\lvert r\rvert}\,\ell_r^\pi\pi ,
+$$</p>
+<p>and an odd element produces an operator anticommuting with $\pi$, an even element one commuting with $\pi$.</p>
+<p><strong>Proof.</strong> $r\star(s\star m) = r\star(s\cdot\pi(m)) = r\cdot\pi(s\cdot\pi(m)) = r\cdot\alpha(s)\cdot\pi^2(m) = r\alpha(s)\cdot m$; $(rs)\star m = rs\cdot\pi(m)$. The two agree for all $m$ exactly when $r\alpha(s) = rs$ as operators, that is $\alpha(s) = s$; this for every $r$ and every $s$ is $A = A^0$. For the sign rule, $\ell_r^\pi\pi(m) = r\cdot\pi^2(m) = r\cdot m$ and $\pi\ell_r^\pi(m) = \pi(r\cdot\pi(m)) = \alpha(r)\cdot\pi^2(m) = \alpha(r)\cdot m$, so $\pi\ell_r^\pi = L_{\alpha(r)} = (-1)^{\lvert r\rvert}L_r = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$ for homogeneous $r$. $\square$</p>
+<p><strong>Remark (the honest sign rule).</strong> The graded action is the correct notion of an action twisted by the grading; the price is that it is not an action of the algebra but an action of the graded algebra in the sense of superalgebras: odd elements act as odd operators, and the sign rule $\pi\ell_r^\pi\pi = (-1)^{\lvert r\rvert}\ell_r^\pi$ is the statement that the operator is even or odd according to the parity of the element. The associative rewriting is recovered on the even part, which is the honest domain of the twisted action.</p>
+<h2 id="the-operators-the-elements-produce">The Operators the Elements Produce</h2>
+<p><strong>Proposition (the regular module).</strong> For $M = A$ with the regular action $r\cdot m = rm$ and $\pi = \alpha$, the graded multiplication is the signed left multiplication,</p>
+<p>$$
+\ell_r^\pi(m) = r\,\alpha(m) = \ell_r(m) ,
+$$</p>
+<p>and the graded action of $A$ on itself is the signed left multiplication of <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>.</p>
+<p><strong>Proof.</strong> Substituting $M = A$, $r\cdot m = rm$ and $\pi = \alpha$ gives $\ell_r^\pi(m) = r\alpha(m) = \ell_r(m)$; the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the multiplicativity of $\alpha$. $\square$</p>
+<p><strong>Proposition (the even and the odd operators).</strong> For $r \in A^0$ the operator $\ell_r^\pi$ preserves each of $M^0$ and $M^1$:</p>
+<p>$$
+\ell_r^\pi = r\cdot \text{ on } M^0 , \qquad \ell_r^\pi = -r\cdot \text{ on } M^1 ;
+$$</p>
+<p>for $r \in A^1$ the operator $\ell_r^\pi$ exchanges the two parts, $\ell_r^\pi(M^0) \subseteq M^1$ and $\ell_r^\pi(M^1) \subseteq M^0$. The operators are bounded with</p>
+<p>$$
+\lVert\ell_r^\pi\rVert \leq \lVert r\rVert\,\lVert\pi\rVert .
+$$</p>
+<p><strong>Proof.</strong> On $M^0$, $\pi = \mathrm{id}$, so $\ell_r^\pi(m) = r\cdot m$; on $M^1$, $\pi = -\mathrm{id}$, so $\ell_r^\pi(m) = -r\cdot m$. For odd $r$, $\pi(\ell_r^\pi(m)) = \alpha(r)\cdot m = -r\cdot m$, so $\ell_r^\pi(m) \in M^1$ when $m \in M^0$ and in $M^0$ when $m \in M^1$. Boundedness is the composition of $L_r$ with $\pi$. $\square$</p>
+<h2 id="topology-and-completion">Topology and Completion</h2>
+<p><strong>Proposition (continuity and the completed grading).</strong> The parity operator $\pi$ is a topological automorphism of the additive group of $M$, hence a homeomorphism, with $\lVert\pi\rVert < +\infty$; the graded action is continuous as a map $A \times M \to M$; and if $M$ is graded, the completion of $M$ is the direct sum of the completions of its parts,</p>
+<p>$$
+\widehat{M} = \widehat{M^0} \oplus \widehat{M^1} ,
+$$</p>
+<p>the parity operator extending to the completion as the sign change of the two summands.</p>
+<p><strong>Proof.</strong> $\pi$ is a continuous additive involution, so it is a homeomorphism with inverse itself; the graded action is the composite of the continuous action with $\pi$, hence continuous. For a graded $M$, the projections $p_0 = \tfrac12(\mathrm{id}+\pi)$ and $p_1 = \tfrac12(\mathrm{id}-\pi)$ are continuous when $2$ is invertible, so the grading is a topological direct sum and the completion of a direct sum is the direct sum of the completions. $\square$</p>
+<p><strong>Example (a graded Banach module).</strong> Let $A = A^0\oplus A^1$ be a graded Banach algebra and let $M = A^n$ with the componentwise action and the parity operator acting by $\alpha$ on each component. Then the graded action is componentwise the signed left multiplication, and the odd elements exchange the even and the odd parts of the module.</p>
+<p><strong>Example (the sup-norm module).</strong> Let $A = C(X,\mathbb{K})$ with the grading by a clopen subset $E$, so that $\alpha(f) = (2\chi - 1)f$, and let $M = C(X,\mathbb{K})$ with the parity operator $\pi(g) = (2\chi' - 1)g$ for another clopen subset $E'$. The compatibility $\pi(fg) = \alpha(f)\pi(g)$ holds exactly when the sign functions satisfy $\chi'\chi_E = \chi_E\chi'$ on the supports, that is when the two clopen subsets are compatible, and then the graded action is $f\star g = f(2\chi' - 1)g$.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Banach module $M$ over a graded Banach algebra $A$ with grade involution $\alpha$ and parity operator $\pi$, the graded action is $r\star m = r\cdot\pi(m) = \ell_r^\pi(m)$, built on the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$, which is the module form of the semilinearity of $\pi$: for homogeneous $r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. The twisted multiplication is associative exactly on the even part, $r\star(s\star m) = r\alpha(s)\cdot m$ versus $(rs)\star m = rs\cdot\pi(m)$; the obstruction is the odd part of $s$, and the operator satisfies the sign rule $\pi\ell_r^\pi = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$, an odd element producing an operator that anticommutes with $\pi$. On the regular module $M = A$, $\pi = \alpha$, the graded action is the signed left multiplication; on a graded module the even elements act with the sign $+1$ on the even part and $-1$ on the odd part, and the odd elements exchange the two parts. The operators are bounded with $\lVert\ell_r^\pi\rVert \leq \lVert r\rVert\lVert\pi\rVert$, the parity operator is a homeomorphism, and the completion preserves the grading. The adjoint is <em>The Graded Adjoint Action on a Module over an Involutive Banach Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\alpha$, $A = A^0\oplus A^1$</td>
+<td>Graded Banach algebra, grade involution, grading</td>
+</tr>
+<tr>
+<td>$M$, $\lVert\cdot\rVert$</td>
+<td>Banach $A$-module</td>
+</tr>
+<tr>
+<td>$\pi$, $\lVert\pi\rVert$, $M = M^0\oplus M^1$</td>
+<td>Parity operator, its bound, the grading of $M$</td>
+</tr>
+<tr>
+<td>$\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$</td>
+<td>Compatibility of the action with the grading</td>
+</tr>
+<tr>
+<td>$r\star m = \ell_r^\pi(m) = r\cdot\pi(m)$</td>
+<td>The graded action</td>
+</tr>
+<tr>
+<td>$r\star(s\star m) = r\alpha(s)\cdot m$</td>
+<td>Twisted associativity; holds iff $A = A^0$</td>
+</tr>
+<tr>
+<td>$\pi\ell_r^\pi = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$</td>
+<td>The sign rule</td>
+</tr>
+<tr>
+<td>$\widehat{M} = \widehat{M^0}\oplus\widehat{M^1}$</td>
+<td>Completion preserves the grading</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the graded modules, the grade involution and the sign rule.</li>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the graded modules and the operators they carry.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the Banach modules and the bounded operators on them.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for the graded Banach algebras and their modules.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, second edition, 2009), for the sign rule of the graded structures and the Koszul sign convention.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

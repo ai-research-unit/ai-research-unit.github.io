@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Module over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-module-over-an-algebra"><strong>The Signed Left Multiplication on a Module over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich of <em>The Signed Sandwich on a Bimodule over an Algebra</em> is built from two one-sided operators; this article isolates the left one. For an algebra $A$ with a grade involution $\alpha$ acting compatibly on a module $M$, the <strong>signed left multiplication</strong> by $a$ is the operator $L^{\alpha}_a(m)=a\,\alpha(m)$. It is the unsigned left multiplication of <em>Left and Right Multiplication of a Module</em> with the grade involution inserted before the action, and it is the operator that carries the parity sign of the grading.</p>
+<p>The article defines the signed left multiplication, relates it to its unsigned sibling, computes the composition of the two families, and determines the elements fixed by a signed left multiplication. The signed sandwich itself is treated in <em>The Signed Sandwich on a Bimodule over an Algebra</em>, and the corresponding right-handed operator is obtained from the same construction on the opposite algebra. The involution of the elements $\sigma$ and the adjoint belong to the <code>* Theory</code> and <code>* Operator Theory</code> groups and do not occur here. The article stays inside Part I: no distance, norm, form or limit, and the word <em>reflection</em> names an operator of order two. Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra with grade involution $\alpha$, $M$ is a graded left $A$-module, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$.</p>
+<h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>graded left $A$-module</strong> is a left $A$-module $M$ with an additive map, written $\alpha$, such that</p>
+<p>$$
+\alpha^{2}=\mathrm{id}, \qquad \alpha(am)=\alpha(a)\,\alpha(m) \qquad (a \in A,\ m \in M).
+$$</p>
+<p>When $2$ is invertible, $M=M_{\bar0}\oplus M_{\bar1}$ with $M_{\bar0}=\{m : \alpha(m)=m\}$ and $M_{\bar1}=\{m : \alpha(m)=-m\}$.</p>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>signed left multiplication</strong> by $a$ is</p>
+<p>$$
+L^{\alpha}_a : M \to M, \qquad L^{\alpha}_a(m)=a\,\alpha(m).
+$$</p>
+<p><strong>Proposition.</strong> $L^{\alpha}_a \in \operatorname{End}_R(M)$ and $L^{\alpha}_a=L_a\circ\alpha=\alpha\circ L_{\alpha^{-1}(a)}$.</p>
+<p><em>Proof.</em> It is the composite of the two $R$-linear maps $L_a$ and $\alpha$; the second identity is $\alpha(L_{\alpha^{-1}(a)}(m))=\alpha(\alpha^{-1}(a)\,m)=a\,\alpha(m)$. $\square$</p>
+<p>The map $a \mapsto L^{\alpha}_a$ is $R$-linear and additive in $a$, but it is <strong>not</strong> multiplicative: the composition of two of them is computed below, and it returns an unsigned left multiplication.</p>
+<h3 id="relation-to-the-unsigned-left-multiplication">Relation to the unsigned left multiplication</h3>
+<p><strong>Theorem.</strong> For all $a \in A$,</p>
+<p>$$
+L^{\alpha}_a=L_a\circ\alpha, \qquad L^{\alpha}_a=\alpha\circ L_{\alpha^{-1}(a)}, \qquad L^{\alpha}_a\circ\alpha=L_a, \qquad \alpha\circ L^{\alpha}_a=L_{\alpha(a)}\circ\alpha .
+$$</p>
+<p>In particular $L^{\alpha}_a=L_a$ for all $a$ exactly when $\alpha=\mathrm{id}$ on $M$, and $L^{\alpha}_1=\alpha$.</p>
+<p><em>Proof.</em> The first two displays are the proposition. For the third, $L^{\alpha}_a(\alpha(m))=a\,\alpha(\alpha(m))=am=L_a(m)$. For the fourth, $\alpha(L^{\alpha}_a(m))=\alpha(a\alpha(m))=\alpha(a)m=L_{\alpha(a)}(m)$; composing with $\alpha$ gives the displayed identity. Setting $a=1$ gives $L^{\alpha}_1=\alpha$. $\square$</p>
+<p>Thus the signed left multiplication is the unsigned one at the grade involution of its argument, and the two families differ by the single operator $\alpha$: the signed family is $\{L_a\alpha\}$ and the unsigned family is $\{L_a\}$.</p>
+<h3 id="kernel-image-and-invertibility">Kernel, image and invertibility</h3>
+<p><strong>Proposition.</strong> For every $a \in A$,</p>
+<p>$$
+\ker L^{\alpha}_a=\alpha(\ker L_a), \qquad \operatorname{im} L^{\alpha}_a=aM, \qquad L^{\alpha}_a=0 \iff aM=0 .
+$$</p>
+<p>Consequently $L^{\alpha}_a$ is injective exactly when $L_a$ is, it is surjective exactly when $L_a$ is, and it is invertible exactly when $a$ acts invertibly on $M$.</p>
+<p><em>Proof.</em> $L^{\alpha}_a(m)=0$ says $\alpha(m) \in \ker L_a$, that is $m \in \alpha(\ker L_a)$ because $\alpha$ is an involution. The image is $a\alpha(M)=aM$. The last clauses follow because $\alpha$ is a bijection, and $L_a$ is invertible exactly when $am=0 \Rightarrow m=0$ and $aM=M$. $\square$</p>
+<p>The signed and the unsigned left multiplication of the same element have the same image but conjugate kernels.</p>
+<h2 id="the-graded-composition-rule">The Graded Composition Rule</h2>
+<h3 id="the-four-products">The four products</h3>
+<p>The composition of the signed and the unsigned left multiplications follows the parity of the twist, exactly as for the sandwiches.</p>
+<p><strong>Theorem.</strong> For all $a,b \in A$,</p>
+<p>$$
+L_a\circ L_b=L_{ab}, \qquad L^{\alpha}_a\circ L_b=L^{\alpha}_{a\alpha(b)},
+$$</p>
+<p>$$
+L_a\circ L^{\alpha}_b=L^{\alpha}_{ab}, \qquad L^{\alpha}_a\circ L^{\alpha}_b=L_{a\alpha(b)}.
+$$</p>
+<p>Thus a product of two left multiplications of the same parity is unsigned and a product of two of opposite parity is signed: the family $\{L_a\}\cup\{L^{\alpha}_a\}$ is a monoid graded by $\mathbb{Z}/2$, the unsigned operators even and the signed operators odd.</p>
+<p><em>Proof.</em> The first is the homomorphism property of $L$. For the second, $L^{\alpha}_a(L_b(m))=a\,\alpha(bm)=a\alpha(b)\alpha(m)=L^{\alpha}_{a\alpha(b)}(m)$. For the third, $L_a(L^{\alpha}_b(m))=a\,b\,\alpha(m)=L^{\alpha}_{ab}(m)$. For the fourth, $L^{\alpha}_a(L^{\alpha}_b(m))=a\,\alpha(b\alpha(m))=a\,\alpha(b)\,m=L_{a\alpha(b)}(m)$, the two grade involutions cancelling. $\square$</p>
+<p><strong>Corollary.</strong> The signed left multiplications are closed under composition with the unsigned ones to the extent the rule permits: the product of an even number of signed operators is unsigned, and the operator $\alpha=L^{\alpha}_1$ is the odd generator.</p>
+<p><em>Proof.</em> Iterate the four rules; the parity of the number of signed factors determines the parity of the product. $\square$</p>
+<h3 id="the-generated-algebra">The generated algebra</h3>
+<p>The two families generate a single algebra, and the rule above identifies it as a crossed product.</p>
+<p><strong>Proposition.</strong> Let $C$ be the $R$-subalgebra of $\operatorname{End}_R(M)$ generated by the operators $L_a$ and $L^{\alpha}_a$, $a \in A$. Then $C$ is generated by $L_A$ and $\alpha$, and the map</p>
+<p>$$
+A \rtimes \mathbb{Z}/2 \to C, \qquad a \otimes \epsilon \mapsto L_a\alpha^{\epsilon},
+$$</p>
+<p>is a surjective homomorphism of $R$-algebras, where $A\rtimes\mathbb{Z}/2$ is the crossed product with multiplication $(a,\epsilon)(b,\eta)=(a\,\alpha^{\epsilon}(b),\,\epsilon+\eta)$.</p>
+<p><em>Proof.</em> $L^{\alpha}_a=L_a\alpha$, so $L_A$ and $\alpha$ generate everything; the crossed-product multiplication is designed so that $(a,\epsilon)\mapsto L_a\alpha^{\epsilon}$ respects it: $\alpha L_b\alpha^{-1}=L_{\alpha(b)}$, which is the twist in $(a,\epsilon)(b,\eta)$. $\square$</p>
+<p>The crossed product, its multiplication and its relation to the grading are the subject of <em>Crossed Products</em>, named here and not developed.</p>
+<h3 id="reflections-among-the-signed-left-multiplications">Reflections among the signed left multiplications</h3>
+<p><strong>Proposition.</strong> For every $a \in A$,</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{2}=L_{a\alpha(a)} .
+$$</p>
+<p>Consequently $L^{\alpha}_a$ is an involution if and only if $a\alpha(a)$ acts as the identity on $M$, that is, $a\alpha(a)-1 \in \operatorname{Ann}_A(M)$; for a faithful module this says $a\alpha(a)=1$.</p>
+<p><em>Proof.</em> $L^{\alpha}_a(L^{\alpha}_a(m))=a\,\alpha(a\alpha(m))=a\,\alpha(a)\,m=L_{a\alpha(a)}(m)$. $\square$</p>
+<p>The result is the one-sided case of the reflection criterion of the sandwich articles: a signed one-sided operator is an involution exactly when the product $a\alpha(a)$ is absorbed by the annihilator.</p>
+<h2 id="the-elements-fixed-by-a-signed-left-multiplication">The Elements Fixed by a Signed Left Multiplication</h2>
+<h3 id="the-fixed-set">The fixed set</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>fixed set</strong> of $L^{\alpha}_a$ is</p>
+<p>$$
+\operatorname{Fix}(L^{\alpha}_a)=\{m \in M : a\,\alpha(m)=m\}.
+$$</p>
+<p>It is the set of elements the signed operator leaves unchanged; it is not in general a submodule, because $L^{\alpha}_a$ is not in general $A$-linear.</p>
+<p><strong>Proposition.</strong> For $a \in A$, $\operatorname{Fix}(L^{\alpha}_a)$ is the set of solutions of the $\alpha$-twisted equation $a\alpha(m)=m$. In particular</p>
+<p>$$
+\operatorname{Fix}(L^{\alpha}_1)=\operatorname{Fix}(\alpha)=M_{\bar0},
+$$</p>
+<p>the even part of the module, and if $a \in \operatorname{Ann}_A(M)$ then $\operatorname{Fix}(L^{\alpha}_a)=\{0\}$.</p>
+<p><em>Proof.</em> The first is the definition; $L^{\alpha}_1=\alpha$ gives the second; and $aM=0$ turns $a\alpha(m)=m$ into $m=0$. $\square$</p>
+<h3 id="the-even-case">The even case</h3>
+<p>When $a$ is fixed by the grade involution, the signed left multiplication commutes with it and preserves the two parts of the module, and the fixed set splits.</p>
+<p><strong>Theorem.</strong> Let $2$ be invertible and let $a \in A$ with $\alpha(a)=a$. Then $L^{\alpha}_a$ commutes with $\alpha$, hence preserves $M_{\bar0}$ and $M_{\bar1}$, and</p>
+<p>$$
+\operatorname{Fix}(L^{\alpha}_a)=\{m_0 \in M_{\bar0} : am_0=m_0\} \oplus \{m_1 \in M_{\bar1} : am_1=-m_1\}.
+$$</p>
+<p>For a unit $a$ this is the sum of the $1$-eigenspace of $L_a$ on $M_{\bar0}$ and the $(-1)$-eigenspace of $L_a$ on $M_{\bar1}$.</p>
+<p><em>Proof.</em> If $\alpha(a)=a$ then $L^{\alpha}_a\alpha=\alpha L^{\alpha}_a$ by the fourth relation, so $L^{\alpha}_a$ preserves the eigenspaces of $\alpha$. Write $m=m_0+m_1$; then $a\alpha(m)=a m_0-a m_1$, and the equation $a\alpha(m)=m$ reads $a m_0-a m_1=m_0+m_1$, which by the directness of $M_{\bar0}\oplus M_{\bar1}$ is the pair of equations $am_0=m_0$ and $am_1=-m_1$. $\square$</p>
+<h3 id="the-general-case">The general case</h3>
+<p>For a general $a$ the fixed set is a single $\alpha$-twisted condition, and the two equations mix.</p>
+<p><strong>Proposition.</strong> For arbitrary $a \in A$, a fixed element $m$ of $L^{\alpha}_a$ satisfies $\alpha(m)=a^{-1}m$ when $a$ acts invertibly; conversely an $m$ with $\alpha(m)=a^{-1}m$ is fixed. If in addition $\alpha(a)=a^{-1}$, such an $m$ has $\alpha^{2}(m)=\alpha(a^{-1})\alpha(m)=\alpha(a)^{-1}\alpha(m)=a\,\alpha(m)=m$, so the condition is consistent with $\alpha^{2}=\mathrm{id}$.</p>
+<p><em>Proof.</em> The first two clauses restate $a\alpha(m)=m$. For the last, apply $\alpha$ to $\alpha(m)=a^{-1}m$: $m=\alpha(a^{-1})\alpha(m)=\alpha(a)^{-1}\alpha(m)$, so with $\alpha(a)=a^{-1}$ one has $m=a\,\alpha(m)$, which is the fixed-point equation again. $\square$</p>
+<p>In the antisymmetric case $\alpha(a)=a^{-1}$ the fixed set of $L^{\alpha}_a$ is the set of elements whose $\alpha$-image is $a^{-1}m$; this is the one-sided counterpart of the antisymmetric units of <em>Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial grade involution.</strong> If $\alpha=\mathrm{id}$ then $L^{\alpha}_a=L_a$, the composition rule is the homomorphism property, and $\operatorname{Fix}(L^{\alpha}_a)=\{m : am=m\}$.</p>
+<p><strong>(b) The regular module.</strong> For $M={}_A A$ with the grade involution of $A$, $L^{\alpha}_a(b)=a\alpha(b)$, and $L^{\alpha}_1=\alpha$ has fixed set $A_{\bar0}$, the even part of the algebra; $(L^{\alpha}_a)^{2}=L_{a\alpha(a)}$, so the signed left multiplications of order two are those with $a\alpha(a)=1$, that is, the antisymmetric units of $A$.</p>
+<p><strong>(c) The matrix algebra with an even/odd grading.</strong> For $A=M_2(k)$, $J=\operatorname{diag}(1,-1)$, $\alpha(X)=JXJ^{-1}$, and $M=A$: the even part is the diagonal matrices and the odd part the off-diagonal ones. For the even element $a=\operatorname{diag}(\lambda,\mu)$ the fixed set of $L^{\alpha}_a$ is the sum of the diagonal matrices fixed by $\lambda,\mu$ and the off-diagonal matrices satisfying $am=-m$; for the odd element $a=E_{12}+E_{21}$ the equations mix the two parts, as the general proposition describes.</p>
+<p><strong>(d) The quaternions.</strong> For $A=\mathbb{H}$ with $\alpha$ the quaternion conjugation and $M=\mathbb{H}$, the even part is $\mathbb{R}$ and the odd part the pure imaginary quaternions; for $a=1$ the fixed set of $L^{\alpha}_1=\alpha$ is $\mathbb{R}$, and for a pure imaginary unit $a$ one has $\alpha(a)=-a=a^{-1}$, so the fixed set is $\{m : \alpha(m)=-am\}$, the elements on which the two conjugations agree.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded left $A$-module $M$ over an algebra with grade involution $\alpha$, the signed left multiplication is $L^{\alpha}_a(m)=a\alpha(m)=L_a\alpha=\alpha L_{\alpha^{-1}(a)}$, and it differs from the unsigned one by the grade involution; $L^{\alpha}_1=\alpha$. Its kernel is $\alpha(\ker L_a)$, its image is $aM$, and it is invertible exactly when $a$ acts invertibly. The compositions are graded: $L_aL_b=L_{ab}$ and $L^{\alpha}_aL^{\alpha}_b=L_{a\alpha(b)}$ are unsigned, while $L^{\alpha}_aL_b=L^{\alpha}_{a\alpha(b)}$ and $L_aL^{\alpha}_b=L^{\alpha}_{ab}$ are signed; the algebra generated by the two families is the image of the crossed product $A\rtimes\mathbb{Z}/2$. The square of a signed left multiplication is $(L^{\alpha}_a)^{2}=L_{a\alpha(a)}$, so it is an involution exactly when $a\alpha(a)$ acts as the identity. The fixed set $\operatorname{Fix}(L^{\alpha}_a)=\{m : a\alpha(m)=m\}$ is the even part for $a=1$, it splits into the $1$- and $(-1)$-eigenspaces of $L_a$ on the two parts when $a$ is even, and it is the $\alpha$-twisted eigenspace with eigenvalue $a^{-1}$ when $a$ is a unit.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>unital associative $R$-algebra with grade involution $\alpha$</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>graded left $A$-module</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>grade involution, $\alpha^{2}=\mathrm{id}$, with $\alpha(am)=\alpha(a)\alpha(m)$</td>
+</tr>
+<tr>
+<td>$M_{\bar0}, M_{\bar1}$</td>
+<td>even and odd parts of $M$</td>
+</tr>
+<tr>
+<td>$L_a(m)=am$</td>
+<td>unsigned left multiplication</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_a(m)=a\alpha(m)$</td>
+<td>signed left multiplication, $=L_a\alpha=\alpha L_{\alpha^{-1}(a)}$</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_1=\alpha$</td>
+<td>the grade involution as a signed left multiplication</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_aL^{\alpha}_b=L_{a\alpha(b)}$</td>
+<td>composition of two signed left multiplications is unsigned</td>
+</tr>
+<tr>
+<td>$(L^{\alpha}_a)^{2}=L_{a\alpha(a)}$</td>
+<td>reflection criterion for a signed left multiplication</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(L^{\alpha}_a)$</td>
+<td>$\{m : a\alpha(m)=m\}$, the fixed set</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_A(M)$</td>
+<td>the annihilator of $M$</td>
+</tr>
+<tr>
+<td>$A\rtimes\mathbb{Z}/2$</td>
+<td>the crossed product generated by $A$ and the grading</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for order-two automorphisms and the grading they define.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for order-two maps and the operators built from them.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the annihilator, kernels of multiplications and crossed products of modules.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for one-sided operators in a graded algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, second edition, 2001), for the parity action on a Clifford module.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

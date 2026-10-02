@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Classification of Involutions on Surfaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-classification-of-involutions-on-surfaces"><strong>The Classification of Involutions on Surfaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a closed orientable surface is classified by very little: whether it preserves or reverses the orientation, and then a single integer — the number of fixed points in the preserving case, the number of fixed circles in the reversing case. This article gives the classification, the Riemann–Hurwitz relation that constrains the integer in terms of the genus, the construction of the quotient orbifold, and the Nielsen theory of the fixed points.</p>
+<p>The classification is the surface case of <em>Involutions on Manifolds and Equivariant Surgery</em>, where the fixed set and the equivariant neighbourhood are developed in general, and it is the simplest case in which the equivariant classification is complete: in dimension two the surgery obstruction vanishes and the invariants are the combinatorial data of the quotient. The quotients are the <strong>$2$-orbifolds</strong>, and the Riemann–Hurwitz relation between the genus, the number of branch points and the genus of the quotient is the numerical spine of the classification.</p>
+<p><strong>The article assumes</strong> the mapping class group and the Dehn twist of <em>Mapping Class Groups</em> and <em>The Dehn Twist as an Operator</em>, the structure theory of <em>Involutions on Manifolds and Equivariant Surgery</em>, the Euler characteristic and the classification of surfaces, and the elementary Nielsen fixed-point theory of <em>Degree Theory and the Brouwer Fixed Point Theorem</em>.</p>
+<p><strong>The boundaries of the article.</strong> The general involution of a manifold of dimension at least three, its equivariant surgery and its classification are <em>Involutions on Manifolds and Equivariant Surgery</em>; the free involutions and their quotients are <em>Free Involutions and Lens Spaces</em>; the fixed sets of periodic maps of prime order are <em>Periodic Maps and the Smith Theory</em>. The hyperbolic metrics realising the involutions as isometries are <em>Hyperbolic Geometry</em> and <em>Teichmüller Theory</em>; the higher-dimensional orbifolds and their fundamental groups are modelled on the two-dimensional case treated here. The analytic Teichmüller theory is Part III, and no physics is invoked.</p>
+<h2 id="local-models-on-a-surface">Local Models on a Surface</h2>
+<p><strong>Proposition (fixed sets of involutions of surfaces).</strong> Let $T$ be a locally linear involution of a surface $S$.</p>
+<p><strong>(a)</strong> If $T$ preserves the orientation, then either $T$ is the identity or its fixed points are isolated. At an isolated fixed point there are coordinates $(u,v)$ in which $T(u,v) = (-u,-v)$.</p>
+<p><strong>(b)</strong> If $T$ reverses the orientation, then its fixed set is a disjoint union of simple closed curves, possibly empty. At a fixed point there are coordinates $(u,v)$ in which $T(u,v) = (-u,v)$ (or $(u,-v)$).</p>
+<p><strong>Proof.</strong> A locally linear involution of the plane is a linear involution, diagonalisable with eigenvalues $\pm1$. If it preserves the orientation its determinant is $+1$, so the number of $-1$ eigenvalues is even, hence $0$ or $2$: the identity, or $-I$, whose only fixed point is the origin. If it reverses the orientation the determinant is $-1$, so the number of $-1$ eigenvalues is odd, hence $1$: the model is a reflection with a fixed line. The local statements glue along the surface, and the fixed set of a reflection is one-dimensional, hence in a closed surface a union of circles.</p>
+<p><strong>Corollary (the two kinds of involution).</strong> An orientation-preserving involution of a closed surface is determined, up to conjugacy, by the finite set of its fixed points and its local model; an orientation-reversing involution is determined, up to conjugacy, by the family of circles it fixes. In particular an orientation-reversing involution has no isolated fixed point, and an orientation-preserving involution with more than one fixed point has all of them isolated.</p>
+<h2 id="orientation-preserving-involutions">Orientation-Preserving Involutions</h2>
+<p>Let $S = S_g$ be the closed orientable surface of genus $g$, and let $T$ be an orientation-preserving involution different from the identity.</p>
+<p><strong>Definition.</strong> The <strong>quotient orbifold</strong> $O = S/T$ is the orbit space, a surface with finitely many <strong>cone points</strong> of order $2$, the images of the fixed points; its underlying surface is orientable of some genus $\gamma$, and the number of cone points is the number $r$ of fixed points of $T$. The <strong>orbifold Euler characteristic</strong> is
+$$
+\chi_{\mathrm{orb}}(O) = 2 - 2\gamma - \tfrac{r}{2},
+$$
+and the quotient map is a $2$-fold cover branched at the cone points.</p>
+<p><strong>Theorem (Riemann–Hurwitz).</strong> The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi_{\mathrm{orb}}(O)$, that is,
+$$
+2 - 2g = 2\Bigl(2 - 2\gamma - \tfrac{r}{2}\Bigr) = 4 - 4\gamma - r,
+$$
+so that
+$$
+r = 2 + 2g - 4\gamma .
+$$</p>
+<p><strong>Proof.</strong> Take a triangulation of $O$ with the cone points as vertices and lift it to $S$. Every cell not supported on a cone point has two preimages, and each cone point has one preimage; the alternating count gives $\chi(S) = 2\chi(O) - r_{\mathrm{corr}}$ with the correction $r$ from the $r$ cone points, and $\chi(O) = 2-2\gamma$ for the underlying surface. The displayed formula follows.</p>
+<p><strong>Corollary (the possible numbers of fixed points).</strong> For an orientation-preserving involution of $S_g$ the number of fixed points is
+$$
+r = 2 + 2g - 4\gamma \qquad (\gamma = 0,1,\dots), \qquad r\geq0, \qquad r \equiv 2g+2 \pmod 4 .
+$$
+The involution is free exactly when $g$ is odd, the quotient then being a closed orientable surface of genus $\gamma = (g+1)/2$; and the involution is <strong>hyperelliptic</strong> exactly when $\gamma = 0$, in which case $r = 2g+2$ and the quotient is the sphere.</p>
+<p><strong>Proof.</strong> The formula is the Riemann–Hurwitz relation; the congruence is $2+2g-4\gamma\equiv2g+2\pmod4$; the vanishing of $r$ forces $2+2g = 4\gamma$, that is, $g = 2\gamma-1$ odd, and then the quotient is a closed orientable surface of genus $\gamma$; the largest $r$ occurs at $\gamma = 0$. The hyperelliptic involution is the one with the sphere quotient.</p>
+<p><strong>Theorem (classification; orientation-preserving).</strong> Two orientation-preserving involutions of $S_g$ are conjugate in the homeomorphism group if and only if they have the same number $r$ of fixed points; every value $r = 2+2g-4\gamma$ with $\gamma\geq0$ and $r\geq0$ occurs. The number of conjugacy classes is therefore the number of admissible values of $\gamma$, namely $\lfloor g/2\rfloor + 1$.</p>
+<p><strong>Proof sketch.</strong> Sufficiency is the classification of the $2$-fold branched covers of the sphere and of the surfaces with the prescribed branch data, which depends only on the genus and the number of branch points; the conjugacy is realised by a homeomorphism of the quotient extended to the cover, together with the choices of the local models, which are all equivalent. The full statements for the surfaces with boundary and punctures are in the literature; the case of $S_g$ is the one used here.</p>
+<p><strong>Example (the torus).</strong> For $g = 1$ the values are $r = 4-4\gamma$, so $r = 4$ (the quotient a sphere, the involution $-I$) or $r = 0$ (the quotient a torus, the free involution $(x,y)\mapsto(x+\tfrac12,y)$). Both occur, and the two classes are the whole list; the elliptic involution $-I$ has the four two-torsion points as fixed set.</p>
+<p><strong>Example (the genus-two surface).</strong> For $g = 2$ the values are $r = 6-4\gamma$, so $r = 6$ (the hyperelliptic involution, quotient the sphere) or $r = 2$ (quotient an elliptic curve). The hyperelliptic involution is central in $\mathrm{Mod}(S_2)$ modulo the centre, and its six fixed points are the Weierstrass points; the example is the standard one for the small genera.</p>
+<p><strong>Example (the genus-three surface).</strong> For $g = 3$ the values are $r = 8-4\gamma$, so $r = 8,4,0$: the hyperelliptic involution with eight fixed points, the involution with four, and the free involution with the quotient a surface of genus two. The three classes illustrate the congruence $r\equiv0\pmod4$ for $g$ odd.</p>
+<h2 id="orientation-reversing-involutions">Orientation-Reversing Involutions</h2>
+<p>Let $\tau$ be an orientation-reversing involution of $S_g$.</p>
+<p><strong>Theorem (classification; orientation-reversing, nonempty fixed set).</strong> Suppose $\tau$ has a fixed point. Then its fixed set is a disjoint union of $k$ simple closed curves, where
+$$
+1 \leq k \leq g+1, \qquad k \equiv g+1 \pmod 2 ,
+$$
+and $\tau$ is determined up to conjugacy by $k$. Conversely every such $k$ occurs.</p>
+<p><strong>Construction (the double of a surface with boundary).</strong> Let $\Sigma$ be a compact connected orientable surface of genus $\gamma$ with $k$ boundary components, and let $S = \Sigma \cup_{\partial\Sigma} \Sigma$ be its <strong>double</strong> along the boundary. Then $S$ is closed orientable of genus
+$$
+g = 2\gamma + k - 1,
+$$
+the reflection swapping the two copies is an orientation-reversing involution, and its fixed set is exactly the boundary, a union of $k$ circles. The resulting $k$ satisfies $k = g - 2\gamma + 1$, so $1\leq k\leq g+1$ and $k\equiv g+1\pmod2$, and every admissible pair $(g,k)$ arises this way.</p>
+<p><strong>Proof sketch of the theorem.</strong> The construction realises the admissible values. For the converse, cut $S$ along the $k$ fixed circles: the result is a compact surface with $2k$ boundary circles on which $\tau$ acts freely, swapping the two copies of each circle; the quotient is a compact surface with $k$ boundary circles, and the computation of the Euler characteristics gives the relation $k = g-2\gamma+1$ between the number of fixed circles and the genus of the quotient, with the parity following from the integrality of $\gamma$. The classification up to conjugacy is that of the quotients with their boundary data, which is determined by $k$.</p>
+<p><strong>Theorem (the free case).</strong> If $\tau$ is free, its quotient is a closed non-orientable surface, of Euler characteristic $\chi(S_g)/2 = 1-g$ and hence of non-orientable genus $g+1$; such an involution exists for every $g$, and it is determined up to conjugacy by the quotient. The free case is not covered by the parity condition of the nonempty case, which is a statement about the fixed set alone.</p>
+<p><strong>Proof sketch.</strong> A free involution has a quotient which is a closed surface with $\chi = \chi(S_g)/2 = 1-g$; since $\tau$ reverses the orientation and $S_g$ is connected, the quotient is non-orientable, so it is $N_{g+1}$, the connected sum of $g+1$ projective planes; conversely $S_g$ is the orientation double cover of $N_{g+1}$, with the deck transformation the free orientation-reversing involution. The uniqueness is the uniqueness of the orientation double cover. (The orientability of the quotient is the one place where connectivity is used: a free orientation-reversing involution on a connected orientable manifold has a non-orientable quotient.)</p>
+<p><strong>Example (the torus).</strong> For $g = 1$ the nonempty case has $k\equiv0\pmod2$ and $1\leq k\leq2$, so $k = 2$: the reflection $\tau(x,y) = (-x,y)$ with the two circles $\{x=0\}$ and $\{x=\tfrac12\}$ fixed, the example of <em>The Involution on the Homology</em>. The free case is $k=0$, the quotient the Klein bottle, with the involution $(x,y)\mapsto(x+\tfrac12,-y)$.</p>
+<p><strong>Example (the genus-two surface).</strong> For $g = 2$ the values are $k\equiv1\pmod2$, $1\leq k\leq3$, so $k = 1$ (the double of the once-punctured torus, the fixed set one separating circle) or $k = 3$ (the double of a pair of pants, the fixed set three circles); the free case is excluded by the parity of the nonempty classification but nevertheless exists, with the quotient the closed non-orientable surface of genus three.</p>
+<p><strong>Example (the sphere).</strong> For $g = 0$ the values are $k\equiv1\pmod2$ and $1\leq k\leq1$, so $k = 1$: a reflection of the sphere in a great circle, the quotient the disc, the sphere being the double of the disc. The free orientation-reversing involution is the antipodal map, with quotient $\mathbb{RP}^2$.</p>
+<h2 id="the-quotient-orbifold-and-its-fundamental-group">The Quotient Orbifold and its Fundamental Group</h2>
+<p><strong>Definition.</strong> A <strong>$2$-orbifold</strong> is a surface together with a finite set of marked points, each with a cyclic group of orders $\geq2$ ("cone points"), and a finite set of marked boundary circles, each with a cyclic group acting by reflection ("mirror circles"); the orbifold fundamental group $\pi_1^{\mathrm{orb}}(O)$ is the fundamental group of the complement of the singular locus to which the local groups are adjoined, so that a loop around a cone point of order $n$ contributes a generator of order $n$ and a loop running to a mirror circle contributes an involution.</p>
+<p><strong>Proposition (the orbifold fundamental group of the quotient).</strong> Let $T$ be an orientation-preserving involution of $S_g$ with $r$ fixed points; then there is an extension
+$$
+1\longrightarrow \pi_1(S_g)\longrightarrow \pi_1^{\mathrm{orb}}(O)\longrightarrow \mathbb{Z}/2\longrightarrow 1,
+$$
+and $\pi_1^{\mathrm{orb}}(O)$ has a presentation with the $r$ generators of order two for the cone points; the extension is the one describing the branched cover. For an orientation-reversing involution the analogous extension describes the cover branched along the mirror circles, with the mirror circles contributing involutions.</p>
+<p><strong>Proof sketch.</strong> The quotient map away from the singular locus is a covering, giving the first map; the local group at a cone point provides the element of order two over it, and the composition onto $\mathbb{Z}/2$ records the sheet. The presentations are read off a triangulation of the orbifold. The orbifold groups are developed in the hyperbolic-geometry and low-dimensional articles, and the statement here is the bookkeeping needed for the classification.</p>
+<p><strong>Remark (why the two-dimensional classification is complete).</strong> In dimension two the surgery obstruction of the equivariant theory vanishes for the relevant groups and the quotient orbifold, with its genus, its cone points and its mirror circles, is a complete invariant of the involution up to conjugacy; this is the reason the classification is a finite combinatorial list rather than a surgery-theoretic computation. In higher dimensions the normal representations of the fixed components are additional invariants, as in <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
+<h2 id="nielsen-theory">Nielsen Theory</h2>
+<p><strong>Theorem (Nielsen realisation, quoted).</strong> Let $S$ be a closed orientable surface of genus $g\geq2$. Every finite subgroup of the mapping class group $\mathrm{Mod}(S)$ is realised by a group of homeomorphisms of $S$; equivalently, every involution of $S$ is conjugate to an isometry of some hyperbolic metric on $S$. The realisation of the finite-order mapping classes as geometric automorphisms is the content of the theorem, and the metric is the corresponding point of Teichmüller space.</p>
+<p><strong>Proof sketch.</strong> The theorem is Nielsen's, with a complete proof by Kerckhoff using the Teichmüller metric; the surface is given the hyperbolic metric for which the given finite-order homeomorphism has minimal displacement, and the action of the finite group is by isometries. The Teichmüller theory is <em>Teichmüller Theory</em> and Part III, and the hyperbolic metric is <em>Hyperbolic Geometry</em>; the statement is quoted here for the classification.</p>
+<p><strong>Definition.</strong> For a self-map $f$ of a compact surface the fixed points are grouped into <strong>Nielsen classes</strong> by paths between them, and the <strong>Nielsen number</strong> $N(f)$ is the number of classes of nonzero <strong>fixed point index</strong>; it is a homotopy invariant and satisfies $N(f)\leq\#\mathrm{Fix}(g)$ for every $g$ homotopic to $f$.</p>
+<p><strong>Proposition (the Nielsen number of an involution).</strong> Let $T$ be a non-identity involution of a closed surface with isolated fixed points. Then every fixed point is its own Nielsen class, of index $+1$, and
+$$
+N(T) = \#\mathrm{Fix}(T) = r ,
+$$
+so that the number of fixed points is the minimum in the homotopy class and the classification above is the classification of the Nielsen data.</p>
+<p><strong>Proof.</strong> Two distinct isolated fixed points of a finite-order map are joined by a path whose image under $t\mapsto T(x(t))$ is not homotopic to $x(t)$ unless the points are equal, because the map has finite order and no nontrivial path can be fixed up to homotopy; hence the classes are singletons. The index of each is the degree of $I - T$ at the point, which is $+1$ for the isolated model $z\mapsto -z$. The Lefschetz number $L(T) = r$ then agrees with the count, as in <em>Degree Theory and the Brouwer Fixed Point Theorem</em>.</p>
+<p><strong>Remark (the realisation and the conjugacy classification).</strong> Two involutions of $S_g$ are conjugate in $\mathrm{Mod}(S_g)$ exactly when they are conjugate in the homeomorphism group, by the Nielsen realisation; the classification by the single integer is therefore the classification both up to isotopy and up to conjugacy. For the orientation-reversing involutions the conjugacy is in the full group $\mathrm{Mod}^{\pm}(S_g)$.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a closed orientable surface either preserves the orientation, in which case it is the identity or has isolated fixed points with the local model $z\mapsto-z$, or reverses it, in which case its fixed set is a union of simple closed curves with the local model a reflection. An orientation-preserving involution has $r = 2+2g-4\gamma$ fixed points, where $\gamma$ is the genus of the quotient orbifold, so that $r\equiv2g+2\pmod4$ and $r\geq0$; it is classified up to conjugacy by $r$, is free exactly when $g$ is odd, and is hyperelliptic exactly when the quotient is the sphere, with $2g+2$ fixed points. An orientation-reversing involution with nonempty fixed set fixes $k$ circles with $1\leq k\leq g+1$ and $k\equiv g+1\pmod2$, is classified by $k$, and is realised as the reflection of the double of a compact surface of genus $\gamma$ with $k$ boundary components, where $g = 2\gamma+k-1$; the free case has a non-orientable quotient of genus $g+1$ and exists for every $g$. The quotient is a $2$-orbifold whose fundamental group is an extension of $\pi_1(S_g)$ by the local groups, and in dimension two the quotient data are a complete invariant. Nielsen's realisation theorem identifies the conjugacy classes in the mapping class group with the geometric ones, and the Nielsen number of an involution is its number of fixed points.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_g$</td>
+<td>the closed orientable surface of genus $g$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>an involution of $S_g$; orientation-preserving or reversing</td>
+</tr>
+<tr>
+<td>isolated fixed point, $z\mapsto-z$</td>
+<td>the local model of an orientation-preserving involution</td>
+</tr>
+<tr>
+<td>fixed circle, $z\mapsto\bar z$</td>
+<td>the local model of an orientation-reversing involution</td>
+</tr>
+<tr>
+<td>$O = S/T$, $\gamma$</td>
+<td>the quotient orbifold and the genus of its underlying surface</td>
+</tr>
+<tr>
+<td>$r = 2+2g-4\gamma$</td>
+<td>the number of fixed points; $r\equiv2g+2\pmod4$</td>
+</tr>
+<tr>
+<td>hyperelliptic involution</td>
+<td>the orientation-preserving involution with $\gamma=0$, $r=2g+2$</td>
+</tr>
+<tr>
+<td>$k$</td>
+<td>the number of fixed circles of an orientation-reversing involution</td>
+</tr>
+<tr>
+<td>$k\leq g+1$, $k\equiv g+1\pmod2$</td>
+<td>the range and parity of $k$ in the nonempty case</td>
+</tr>
+<tr>
+<td>$\Sigma\cup_{\partial\Sigma}\Sigma$, $g=2\gamma+k-1$</td>
+<td>the double construction realising the reversing involutions</td>
+</tr>
+<tr>
+<td>$\chi_{\mathrm{orb}} = 2-2\gamma-r/2$</td>
+<td>the orbifold Euler characteristic; Riemann–Hurwitz $\chi(S)=2\chi_{\mathrm{orb}}$</td>
+</tr>
+<tr>
+<td>$N(T) = \#\mathrm{Fix}(T)$</td>
+<td>the Nielsen number of an involution with isolated fixed points</td>
+</tr>
+<tr>
+<td>$N_{g+1}$</td>
+<td>the non-orientable closed surface, $\chi = 1-g$, the quotient in the free case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jakob Nielsen, "Die Struktur periodischer Transformationen von Flächen", <em>Matematisk-fysiske Meddelelser</em> 15 (1937), 1–77, for the classification of periodic surface homeomorphisms.</li>
+<li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em> (Princeton University Press, 2012), for the classification of involutions, the hyperelliptic involution and the Nielsen realisation.</li>
+<li>Steven Kerckhoff, "The Nielsen Realization Problem", <em>Annals of Mathematics</em> 117 (1983), 235–265, for the realisation of finite subgroups of the mapping class group.</li>
+<li>William Thurston, "On the Geometry and Dynamics of Diffeomorphisms of Surfaces", <em>Bulletin of the American Mathematical Society</em> 19 (1988), 417–431, for the classification of surface homeomorphisms and its finite-order case.</li>
+<li>Emilio Bujalance, José Etayo, José Gamboa and Grzegorz Gromadzki, <em>Automorphisms of Compact Non-Orientable Riemann Surfaces</em> (Pitman, 1990), for the orientation-reversing involutions, the ovals and the parity conditions.</li>
+<li>Bo Ju Jiang, <em>Lectures on Nielsen Fixed Point Theory</em> (Contemporary Mathematics 14, American Mathematical Society, 1983), for the Nielsen classes, the Nielsen number and the index.</li>
+<li>John Stillwell, <em>Classical Topology and Combinatorial Group Theory</em> (Springer, 1993), for the classification of surfaces, the double constructions and the orbifold groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

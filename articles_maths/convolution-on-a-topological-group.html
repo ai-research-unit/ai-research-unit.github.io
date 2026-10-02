@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convolution on a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="convolution-on-a-topological-group"><strong>Convolution on a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Convolution turns the space of functions on a group into an algebra: the <strong>convolution</strong> of two functions $f$ and $g$ is the function whose value at $x$ collects the products $yz = x$, and the operation is bilinear, associative and compatible with the translation structure of the group. On a topological group the question is which topology on the function space makes convolution continuous, and the answer links the algebra of functions to the operator layer of the category. This article defines convolution, proves its associativity and its elementary algebra, identifies the algebra it generates, and separates the part that uses no measure from the part that uses the invariant integral.</p>
+<p>The article assumes the topological group, its translations and their continuity from <em>Topological Groups</em> and <em>Operators on a Topological Group</em>, the abstract translations and their laws from <em>Left and Right Multiplication in a Group</em>, and the group algebra of finitely supported functions from <em>Group Algebras</em>. The invariant integral used to define convolution of continuous functions on a locally compact group is the <strong>Haar integral</strong>, which is <em>Locally Compact Groups and Haar Measure</em> in Part III: it is named here, and integrated in that cited sense, but it is not constructed and nothing is proved with it. The convolution algebra $L^1(G)$, its approximate identities and its Fourier transform are Part III, <em>Analysis on Groups</em>. Nothing analytic beyond the boundary named here, and nothing geometric, is used.</p>
+<p>Throughout, $G$ is a topological group with identity $e$, $k$ is a field, functions are $k$-valued, $C(G)$ is the algebra of continuous functions with the topology of uniform convergence on compacta, and $k[G] \subseteq C(G)$ is the group algebra of finitely supported functions. The <strong>delta</strong> at $a$ is the basis element $\delta_a$, with $\delta_a(a) = 1$ and $\delta_a(x) = 0$ for $x \neq a$.</p>
+<h2 id="convolution-of-finitely-supported-functions">Convolution of Finitely Supported Functions</h2>
+<h3 id="definition-and-bilinearity">Definition and Bilinearity</h3>
+<p><strong>Definition.</strong> For functions $f, g : G \to k$ whose supports are finite, the <strong>convolution</strong> $f * g$ is</p>
+<p>$$
+(f*g)(x) = \sum_{y \in G} f(y)\,g(y^{-1}x) = \sum_{yz = x} f(y)\,g(z) .
+$$</p>
+<p>The two sums agree by the substitution $z = y^{-1}x$, and both are finite: only the finitely many $y$ in $\operatorname{supp} f$ contribute, and for each of them only the finitely many $z$ in $\operatorname{supp} g$ contribute.</p>
+<p><strong>Proposition (bilinearity).</strong> Convolution is bilinear: $(f_1+f_2)*g = f_1*g + f_2*g$, $f*(g_1+g_2) = f*g_1 + f*g_2$, and $(\lambda f)*g = f*(\lambda g) = \lambda(f*g)$ for $\lambda \in k$. Its support satisfies</p>
+<p>$$
+\operatorname{supp}(f*g) \subseteq (\operatorname{supp} f)(\operatorname{supp} g),
+$$</p>
+<p>and in particular is finite.</p>
+<p><strong>Proof.</strong> Bilinearity is the distributivity of the finite sum. If $yz = x$ with $f(y) \neq 0$ and $g(z) \neq 0$ then $x$ is a product of an element of $\operatorname{supp} f$ and one of $\operatorname{supp} g$, which is the inclusion; it is finite because a product of two finite sets is finite.</p>
+<h3 id="associativity">Associativity</h3>
+<p><strong>Theorem.</strong> Convolution is associative: $(f*g)*h = f*(g*h)$ for all finitely supported $f, g, h$.</p>
+<p><strong>Proof.</strong> For every $x$,</p>
+<p>$$
+((f*g)*h)(x) = \sum_{yz=x} (f*g)(y)\,h(z) = \sum_{yz=x}\ \sum_{uv=y} f(u)\,g(v)\,h(z),
+$$</p>
+<p>and the triples $(u,v,z)$ occurring are exactly those with $uvz = x$; the sum is over a finite set, so it may be reorganised as</p>
+<p>$$
+\sum_{uvz=x} f(u)\,g(v)\,h(z) = \sum_{ut=x}\ \sum_{vw=t} f(u)\,g(v)\,h(w) = (f*(g*h))(x).
+$$</p>
+<p>The only point to check is that the reorganisation is legitimate, and it is: the index set is finite, so the sum is a finite sum and associativity of addition applies term by term.</p>
+<p><strong>Corollary.</strong> The finitely supported functions form an associative $k$-algebra under convolution, with identity $\delta_e$. The map $a \mapsto \delta_a$ is an injective homomorphism of the group $G$ into the units of this algebra, and</p>
+<p>$$
+\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}} .
+$$</p>
+<p><strong>Proof.</strong> The identity is $\delta_e$, since $(\delta_e*g)(x) = g(e^{-1}x) = g(x)$ and $(g*\delta_e)(x) = g(xe^{-1}) = g(x)$. For the products, $\delta_a*\delta_b = \delta_{ab}$ by the definition with the unique contributing pair $y = a$, $z = b$. Injectivity is clear from $\delta_a(e) \neq \delta_b(e)$ for $a \neq b$.</p>
+<p>The corollary identifies the convolution algebra of finitely supported functions with the <strong>group algebra</strong> $k[G]$ of <em>Group Algebras</em>: the definition above is the multiplication of that algebra, written on functions instead of on formal sums. The identification is the reason convolution is the natural product on functions on a group, and it is used without further comment.</p>
+<h3 id="the-algebra-generated">The Algebra Generated</h3>
+<p><strong>Theorem.</strong> The convolution algebra $k[G]$ is generated as a $k$-algebra by the deltas $\{\delta_a : a \in G\}$, and it is commutative if and only if $G$ is abelian.</p>
+<p><strong>Proof.</strong> Every finitely supported $f$ is the finite sum $f = \sum_a f(a)\,\delta_a$, so the deltas generate. For commutativity, $\delta_a*\delta_b = \delta_{ab}$ and $\delta_b*\delta_a = \delta_{ba}$, so commutativity of the algebra forces $ab = ba$ for all $a, b$; conversely, if $G$ is abelian then $yz = zy$ and the substitution $y \leftrightarrow z$ in $(f*g)(x) = \sum_{yz=x}f(y)g(z)$ gives $(g*f)(x)$.</p>
+<p><strong>Corollary (the centre and the augmentation).</strong> The centre of $k[G]$ consists of the functions constant on the conjugacy classes of $G$, and the <strong>augmentation</strong> $\epsilon(f) = \sum_a f(a)$ is an algebra homomorphism $k[G] \to k$.</p>
+<p><strong>Proof.</strong> $f$ is central if and only if $\delta_a * f = f * \delta_a$ for every $a$, that is $f(a^{-1}x) = f(xa^{-1})$ for every $x$, which is the constancy on conjugacy classes. For the augmentation, $\epsilon(f*g) = \sum_x \sum_{yz=x}f(y)g(z) = \sum_y\sum_z f(y)g(z) = \epsilon(f)\epsilon(g)$, a reorganisation of a finite sum.</p>
+<h2 id="the-convolution-operators">The Convolution Operators</h2>
+<h3 id="convolution-with-a-delta">Convolution with a Delta</h3>
+<p><strong>Proposition.</strong> Left and right convolution by a delta are the translations:</p>
+<p>$$
+\delta_a * f = L_a f, \qquad f * \delta_b = R_{b^{-1}} f,
+$$</p>
+<p>where $(L_af)(x) = f(a^{-1}x)$ and $(R_bf)(x) = f(xb)$ are the translations of functions.</p>
+<p><strong>Proof.</strong> $(\delta_a*f)(x) = f(a^{-1}x)$ and $(f*\delta_b)(x) = f(xb^{-1})$, both by the definition and the single contributing term.</p>
+<p><strong>Corollary.</strong> The convolution operators by deltas are exactly the translation operators, and they are homeomorphisms of $C(G)$ for the topology of uniform convergence on compacta.</p>
+<p><strong>Proof.</strong> The first statement is the proposition, read for every $a$; for the second, $L_a$ carries a function to a function whose values are those of $f$ at points translated by $a$, so it preserves the supremum on each compact set and its inverse is $L_{a^{-1}}$.</p>
+<h3 id="convolution-as-an-operator">Convolution as an Operator</h3>
+<p><strong>Definition.</strong> For a finitely supported $\phi$ the <strong>convolution operator</strong> $T_\phi$ is the map $f \mapsto \phi * f$ on functions.</p>
+<p><strong>Proposition.</strong> $T_\phi$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,</p>
+<p>$$
+T_\phi = \sum_{a} \phi(a)\,L_a .
+$$</p>
+<p><strong>Proof.</strong> $\phi = \sum_a \phi(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\phi * f = \sum_a \phi(a)(\delta_a * f) = \sum_a \phi(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.</p>
+<p><strong>Corollary.</strong> The assignment $\phi \mapsto T_\phi$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\phi*\psi} = T_\phi \circ T_\psi$.</p>
+<p><strong>Proof.</strong> $T_{\phi*\psi}(f) = (\phi*\psi)*f = \phi*(\psi*f) = T_\phi(T_\psi f)$ by associativity, and injectivity follows from $T_\phi(\delta_e) = \phi$.</p>
+<h2 id="continuity">Continuity</h2>
+<h3 id="what-the-finitely-supported-case-proves">What the Finitely Supported Case Proves</h3>
+<p><strong>Theorem.</strong> The map $k[G] \times k[G] \to k[G]$, $(f,g) \mapsto f*g$, is continuous for the topology of uniform convergence on compacta restricted to the finitely supported functions, and for each fixed $f$ the operator $T_f$ is continuous on $C(G)$.</p>
+<p><strong>Proof.</strong> The second statement is the proposition above. For the first, $f*g$ is a finite bilinear combination of the products $\delta_a*\delta_b = \delta_{ab}$; a finite bilinear combination of continuous maps is continuous, and the deltas depend continuously on $a$ in the discrete image $G \subseteq C(G)$.</p>
+<p>The theorem is the topological content of the purely algebraic associativity: on the finitely supported functions, where the product is a finite sum, convolution is continuous without any hypothesis on $G$.</p>
+<h3 id="the-case-of-continuous-functions">The Case of Continuous Functions</h3>
+<p>For general continuous functions the product is no longer a finite sum, and the definition requires the invariant integral.</p>
+<p><strong>Definition (cited).</strong> Let $G$ be locally compact Hausdorff and let $dx$ be a left Haar measure, <em>Locally Compact Groups and Haar Measure</em>, Part III. For $f, g \in C_c(G)$ the <strong>convolution</strong> is</p>
+<p>$$
+(f*g)(x) = \int_G f(y)\,g(y^{-1}x)\,dy ,
+$$</p>
+<p>the integral being taken in the cited sense of Part III.</p>
+<p><strong>Theorem (cited).</strong> Convolution is a bilinear, associative product on $C_c(G)$ making it an algebra; it extends to $L^1(G)$, which is a Banach algebra under the $L^1$ norm, and $C_c(G)$ is dense in it. Convolution is commutative exactly when $G$ is abelian, and it is continuous as a map $L^1(G)\times L^1(G)\to L^1(G)$.</p>
+<p><strong>Proof.</strong> The construction of the integral, the invariance that makes the definition independent of the choice of the measure, the Fubini step in associativity, the density and the norm inequality $\lVert f*g\rVert_1 \le \lVert f\rVert_1\lVert g\rVert_1$ are all Part III, <em>Locally Compact Groups and Haar Measure</em> and <em>The Convolution Algebra $L^1(G)$</em>; the present article cites them and does not reprove them.</p>
+<p><strong>Remark.</strong> The finitely supported functions are the intersection of the two treatments: $k[G] \subseteq C_c(G)$ when $G$ is discrete, and each finitely supported function is integrable for the counting measure, so the algebra of the first sections is the subalgebra of the cited $C_c(G)$-algebra spanned by the deltas. The continuity of the finitely supported product is thus a special case of the cited continuity, recovered without the integral.</p>
+<p><strong>Remark (compact groups).</strong> On a compact group with the normalised Haar measure the integral of the constant $1$ is $1$, and the pointwise estimate $\lvert(f*g)(x)\rvert \le \sup_y \lvert f(y)\rvert \sup_z\lvert g(z)\rvert$ shows that convolution is continuous on $C(G)$ with the supremum metric; this is the finite-measure case of the cited theorem, and the measure is still Part III's.</p>
+<h2 id="summary">Summary</h2>
+<p>Convolution of finitely supported functions on a topological group is the product $(f*g)(x) = \sum_{yz=x}f(y)g(z)$; it is bilinear and associative, the deltas satisfy $\delta_a*\delta_b = \delta_{ab}$, and the algebra it generates is the group algebra $k[G]$, commutative exactly when the group is abelian, with centre the class functions and augmentation the sum of the coefficients. Left and right convolution by a delta are the translations, $\delta_a*f = L_af$ and $f*\delta_b = R_{b^{-1}}f$, so the algebra acts on the functions by finite linear combinations of translations, and the assignment $\phi\mapsto T_\phi$ is an injective homomorphism into the continuous operators on $C(G)$. On the finitely supported functions the product is continuous for the topology of uniform convergence on compacta without any hypothesis, while for general continuous functions on a locally compact group the definition uses the Haar integral and the associativity, the continuity and the algebra $L^1(G)$ are Part III's <em>The Convolution Algebra $L^1(G)$</em>, cited here and not reproved.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(f*g)(x) = \sum_{yz=x}f(y)g(z)$</td>
+<td>convolution of finitely supported functions</td>
+</tr>
+<tr>
+<td>$\delta_a$</td>
+<td>the delta at $a$, $\delta_a(a) = 1$ and $\delta_a(x) = 0$ for $x\neq a$</td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>the convolution algebra of finitely supported functions, the group algebra</td>
+</tr>
+<tr>
+<td>$\delta_a*\delta_b = \delta_{ab}$</td>
+<td>the deltas multiply as the group does</td>
+</tr>
+<tr>
+<td>$\delta_e$</td>
+<td>the identity of the convolution algebra</td>
+</tr>
+<tr>
+<td>$Z(k[G])$</td>
+<td>the class functions, constant on conjugacy classes</td>
+</tr>
+<tr>
+<td>$\epsilon(f) = \sum_a f(a)$</td>
+<td>the augmentation, an algebra homomorphism</td>
+</tr>
+<tr>
+<td>$L_af(x) = f(a^{-1}x)$, $R_bf(x) = f(xb)$</td>
+<td>the translations of functions</td>
+</tr>
+<tr>
+<td>$\delta_a*f = L_af$, $f*\delta_b = R_{b^{-1}}f$</td>
+<td>convolution by a delta is a translation</td>
+</tr>
+<tr>
+<td>$T_\phi$, $T_\phi = \sum_a\phi(a)L_a$</td>
+<td>the convolution operator by a finitely supported $\phi$</td>
+</tr>
+<tr>
+<td>$dx$</td>
+<td>the left Haar measure of Part III, cited for the continuous case</td>
+</tr>
+<tr>
+<td>$L^1(G)$</td>
+<td>the convolution algebra of Part III, cited</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the convolution algebra of a locally compact group and the algebra of measures.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953; reprinted Dover, 2011), for the group algebra, the convolution product and its continuity.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962; reprinted Wiley, 1990), for convolution on a locally compact abelian group.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the measure-theoretic construction of convolution and the approximate identities.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 3 and 4 (Springer, 1995), for the topology of uniform convergence on compacta used on the function spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on a Complex Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-a-complex-vector-space"><strong>The Involution on a Complex Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A complex vector space carries two natural involutions, and the whole of its real structure is their interplay. The first is the <strong>complex structure</strong>: an $\mathbb{R}$-linear operator
+$$
+J : V \longrightarrow V, \qquad J^2 = -\mathrm{id},
+$$
+whose square is $-1$ and which encodes the multiplication by $i$ of $V$ as a real vector space. The second is the <strong>conjugation</strong>, the real structure: an $\mathbb{R}$-linear map
+$$
+c : V \longrightarrow V, \qquad c^2 = \mathrm{id}, \qquad c(iv) = -i\,c(v),
+$$
+that is a real-linear involution which is <strong>conjugate-linear</strong>; its fixed set $V_0 = \{v : c(v) = v\}$ is a <strong>real form</strong> of $V$, of real dimension equal to the complex dimension, with $V = V_0\oplus JV_0$. The conjugation is the linear form of complex conjugation, of the real structure of a complex manifold, and of the descent: the conjugate-linear involution is the datum that makes $V$ the complexification of the real space $V_0$, and the complex structure together with the conjugation generate the relations
+$$
+J^2 = -\mathrm{id}, \qquad c^2 = \mathrm{id}, \qquad Jc = -cJ,
+$$
+which are the relations of the real Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb R)$. This linear article is the model of <em>Real Structures on a Complex Manifold</em> and <em>Complex Manifolds with an Antiholomorphic Involution</em>; the product $K = Jc$ is a second real structure, generically distinct from $c$, and the pair of real structures it produces is the linear image of the two real forms of a complex manifold.</p>
+<p>The article has three sections: the real structure and the complex structure, and their anticommutation; the conjugation and the Hermitian form; and the transport of the real structure to the endomorphism algebra. The complex structure operator, the almost complex structure and the type decomposition are <em>The Almost Complex Operator</em>, <em>Hermitian Geometry and Almost Complex Structures</em> and <em>Operators on a Complex Manifold</em>; the Hermitian forms, the unitary group and the signatures are <em>Hermitian Geometry and the Unitary Group</em>, later in this category; the real structures on the manifold and on the operator layer are <em>Real Structures on a Complex Manifold</em> and <em>Real Structures on the Operator Layer</em>; the real forms and the descent are <em>Real Structures on Varieties and Galois Descent</em>; the Clifford algebra is <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. None of that is re-derived.</p>
+<p>Throughout, $V$ is a complex vector space of dimension $m$, regarded as a real vector space of dimension $2m$ with the complex structure $J$, $c$ is a conjugation, $V_0 = \operatorname{Fix}(c)$ the real form, $h$ is a positive-definite Hermitian form on $V$, and $\operatorname{End}_{\mathbb C}(V)$ is the endomorphism algebra.</p>
+<h2 id="the-real-structure-and-the-complex-structure">The Real Structure and the Complex Structure</h2>
+<p><strong>Definition.</strong> A <strong>conjugation</strong> (or <strong>real structure</strong>) on the complex vector space $V$ is a conjugate-linear involution $c$: an $\mathbb{R}$-linear map with $c^2 = \mathrm{id}$ and $c(iv) = -ic(v)$; its fixed set $V_0 = \operatorname{Fix}(c)$ is the <strong>real form</strong> of $c$. A <strong>real basis</strong> of $V$ is a real basis of a real form.</p>
+<p><strong>Proposition (the relations).</strong> The complex structure and any conjugation anticommute,
+$$
+Jc = -cJ,
+$$
+and with $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $cJ=-Jc$ they generate the Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$; the product $K = Jc$ is a real structure with $K^2 = \mathrm{id}$ and $KJ = -JK$, distinct from $c$ unless $V_0$ is $J$-stable.</p>
+<p><strong>Proof.</strong> $c(iv) = -ic(v)$ is exactly $cJ = -Jc$. For $K = Jc$ one has $K^2 = JcJc = J(-Jc)c = -J^2c^2 = \mathrm{id}$, using $J^2 = -\mathrm{id}$ and $c^2 = \mathrm{id}$; and $KJ = JcJ = J(-Jc) = -J^2c = c$, while $JK = J(Jc) = -c$, so $K$ anticommutes with $J$. The relations $c^2 = 1$, $J^2 = -1$, $cJ = -Jc$ are exactly the relations $e_1^2 = 1$, $e_2^2 = -1$, $e_1e_2 = -e_2e_1$ of $\mathrm{Cl}_{1,1}\cong M_2(\mathbb R)$ with $e_1 = c$ and $e_2 = J$, so $V$ is a module over $\mathrm{Cl}_{1,1}$. This is <em>Clifford Algebras</em>.</p>
+<p><strong>Proposition (the real form and the tangent decomposition).</strong> The real form $V_0$ has real dimension $m$, is <strong>totally real</strong>, $V_0\cap JV_0 = 0$, and
+$$
+V = V_0\oplus JV_0
+$$
+as real vector spaces; the proof of the corresponding statement for a complex manifold is the split of <em>Real Structures on a Complex Manifold</em>.</p>
+<p><strong>Proof.</strong> If $v \in V_0$ then $c(iv) = -i v \neq iv$ for $v\neq0$, so $cv = v$ and a real form contains no $J$-line; hence $V_0\cap JV_0 = 0$. For the sum, a real basis $v_1,\dots,v_m$ of $V_0$ has $iv_1=Jv_1,\dots,iv_m=Jv_m$ independent of $v_1,\dots,v_m$ (else a nontrivial real combination of the $v_k$ is annihilated by $J$), so the $2m$ vectors $v_1,\dots,v_m,Jv_1,\dots,Jv_m$ span $V_\R$; hence $V = V_0\oplus JV_0$.</p>
+<p><strong>Remark (the two real structures).</strong> The conjugation $c$ and its companion $K = Jc$ are two real structures on the same complex space; their real forms $V_0 = \operatorname{Fix}(c)$ and $K_0 = \operatorname{Fix}(K)$ are generic real forms, and they coincide exactly when $V_0$ is $J$-stable, that is when the real structure is the "standard" one for the decomposition $V = V_0\oplus iV_0$. The linear statement that all real structures on $V$ are conjugate by $GL(V)$ is <em>Complex Manifolds with an Antiholomorphic Involution</em>; here the structure is the pair $(J, c)$.</p>
+<h2 id="the-conjugation-and-the-hermitian-form">The Conjugation and the Hermitian Form</h2>
+<p><strong>Definition.</strong> Let $h$ be a Hermitian form on $V$, conjugate-symmetric and linear in the first argument; a conjugation $c$ is <strong>compatible</strong> with $h$ when
+$$
+h(cx, cy) = \overline{h(x, y)} \qquad (x, y \in V).
+$$</p>
+<p><strong>Proposition (the real and imaginary parts).</strong> If $c$ is compatible with $h$, then on the real form $V_0$ the Hermitian form $h$ is real: $h(x,y) \in \mathbb{R}$ for $x, y \in V_0$, and the real part $g = \operatorname{Re}h$ is a positive-definite symmetric bilinear form on $V_0$ while the imaginary part $\omega = -\operatorname{Im}h$ is an alternating form with $\omega(x, Jy) = g(x,y)$; the sesquilinear decomposition $h = g - i\omega$ holds, with $g$ symmetric and $J$-invariant and $\omega$ antisymmetric and $J$-invariant.</p>
+<p><strong>Proof.</strong> For $x,y \in V_0$ one has $h(x,y) = h(cx,cy) = \overline{h(x,y)}$, so $h(x,y)$ is real; symmetry of the restriction is the conjugate-symmetry of $h$ at real values. The form $g(x,y) = \operatorname{Re}h(x,y)$ is then symmetric and positive definite on $V_0$ and extends to all of $V$ as the real inner product of the underlying real space; the alternating form is $\omega(x,y) = -\operatorname{Im}h(x,y)$, and $\omega(x,Jy) = -\operatorname{Im}h(x,Jy) = \operatorname{Re}h(x,y) = g(x,y)$ by the $\mathbb C$-linearity of $h$ in the second argument... in the first, with the sign fixed by $h = g - i\omega$. The Hermitian form and its positivity are <em>Hermitian Geometry and the Unitary Group</em>.</p>
+<p><strong>Corollary (signature of the restriction).</strong> The signature $(p,q)$ of $h$ restricted to a real form is an invariant of the pair $(h, c)$ under the unitary group; it is the classification of the compatible conjugations of <em>Complex Manifolds with an Antiholomorphic Involution</em>, and the standard conjugation $z\mapsto\bar z$ on $\mathbb C^m$ gives the definite real form of signature $(m,0)$.</p>
+<p><strong>Proof.</strong> The restriction of $h$ to $V_0$ is a real symmetric form, its signature is invariant under the unitary group by Sylvester's law, and the normal form is the standard one. This is <em>Hermitian Geometry and the Unitary Group</em>.</p>
+<p><strong>Remark (the configuration of the two involutions).</strong> A complex vector space with a conjugation and a Hermitian form carries the three operators $J$, $c$ and the adjoint $\dagger$, with the relations $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$, $Jc = -cJ$, and the compatibilities of $J$ and $c$ with $h$; the adjoint of $J$ is $J^{\dagger} = -J$ (the complex structure is skew-adjoint for $h$) and a conjugation $c$ compatible with $h$ is antiunitary, $h(cx,cy) = \overline{h(x,y)}$, self-adjoint in the antilinear sense. These are the linear relations that the operators of the category satisfy, and they are the model of the operator theory of the later group.</p>
+<h2 id="the-transport-of-the-real-structure-to-the-endomorphism-algebra">The Transport of the Real Structure to the Endomorphism Algebra</h2>
+<p><strong>Proposition (the conjugation of operators).</strong> The conjugation $c$ acts on the endomorphism algebra by
+$$
+c\cdot X = cXc \qquad (X \in \operatorname{End}_{\mathbb C}(V)),
+$$
+and this is a $\mathbb{C}$-linear algebra automorphism of order two, whose fixed subalgebra is the complexification of the endomorphisms of the real form,
+$$
+\operatorname{End}_{\mathbb C}(V)^{c} \cong \operatorname{End}_{\mathbb R}(V_0)\otimes_{\mathbb R}\mathbb{C} = \operatorname{End}_{\mathbb C}(V_0\otimes_{\mathbb R}\mathbb C).
+$$</p>
+<p><strong>Proof.</strong> The map $X\mapsto cXc$ is $\mathbb C$-linear because $c$ is antilinear and appears twice, $cXc(\lambda v) = cX(\bar\lambda cv) = c(\bar\lambda Xcv) = \lambda cXcv$; it is an algebra automorphism and an involution because $c^2 = \mathrm{id}$. An operator is fixed, $cXc = X$, exactly when $X$ commutes with $c$, that is when $X$ preserves $V_0$ and is the complexification of its real restriction; the $\mathbb{R}$-linear endomorphisms of $V_0$ complexify to the $\mathbb C$-linear endomorphisms of $V = V_0\otimes\mathbb C$ commuting with $c$.</p>
+<p><strong>Proposition (the conjugate-linear companion and the adjoint).</strong> If $h$ is compatible with $c$, the map
+$$
+X \longmapsto c\,X^{\dagger}\,c
+$$
+is a conjugate-linear algebra anti-automorphism of order two, and it is the transport of the real structure to the algebra; the two maps together make the endomorphism algebra an algebra with a real structure and an involution, whose fixed part is $\operatorname{End}_{\mathbb R}(V_0)$.</p>
+<p><strong>Proof.</strong> The adjoint $\dagger$ is conjugate-linear and an anti-automorphism, and $c$ is conjugate-linear, so the composite $X\mapsto cX^{\dagger}c$ is conjugate-linear and an anti-automorphism; its square is $c(cX^{\dagger}c)^{\dagger}c = c\,cX\,c\,c = X$. The fixed elements are the operators with $cX^{\dagger}c = X$, which for $X$ commuting with $c$ and self-adjoint is the real endomorphism. This is <em>Real Structures on the Operator Layer</em> and <em>The Adjoint of a Hermitian Operator</em>, the latter later in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>On a complex vector space $V$ of dimension $m$ the complex structure $J$ and a conjugation $c$ satisfy $J^2 = -\mathrm{id}$, $c^2 = \mathrm{id}$ and $Jc = -cJ$, generating $\mathrm{Cl}_{1,1}\cong M_2(\mathbb R)$, and the fixed set $V_0 = \operatorname{Fix}(c)$ is a totally real real form with $V = V_0\oplus JV_0$; the companion $K = Jc$ is a second conjugation, and $c$ and $K$ agree exactly for a $J$-stable real form. A Hermitian form $h$ compatible with $c$, $h(cx,cy) = \overline{h(x,y)}$, restricts to a real symmetric positive-definite form on $V_0$, and the decomposition $h = g - i\omega$ has $g$ symmetric $J$-invariant and $\omega$ alternating with $\omega(x,Jy) = g(x,y)$; the signature of the restriction is the unitary invariant of the compatible conjugation. The conjugation transports to the endomorphism algebra as the $\mathbb C$-linear involution $X\mapsto cXc$, whose fixed part is the complexification of $\operatorname{End}_{\mathbb R}(V_0)$, and as the conjugate-linear anti-automorphism $X\mapsto cX^{\dagger}c$, the adjoint companion; these are the linear relations behind the operator theory of the later group. The manifold forms are <em>Real Structures on a Complex Manifold</em> and <em>Complex Manifolds with an Antiholomorphic Involution</em>; the Hermitian forms and the unitary group are <em>Hermitian Geometry and the Unitary Group</em>; the operator layer is <em>Real Structures on the Operator Layer</em>; the Clifford algebra is <em>Clifford Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$, $J^2=-\mathrm{id}$</td>
+<td>the complex structure</td>
+</tr>
+<tr>
+<td>$c$, $c^2=\mathrm{id}$, $c(iv)=-ic(v)$</td>
+<td>the conjugation, a conjugate-linear involution</td>
+</tr>
+<tr>
+<td>$Jc=-cJ$</td>
+<td>the anticommutation, the $\mathrm{Cl}_{1,1}$ relations</td>
+</tr>
+<tr>
+<td>$V_0=\operatorname{Fix}(c)$</td>
+<td>the real form, totally real, $V=V_0\oplus JV_0$</td>
+</tr>
+<tr>
+<td>$K=Jc$</td>
+<td>the companion conjugation</td>
+</tr>
+<tr>
+<td>$h(cx,cy)=\overline{h(x,y)}$</td>
+<td>compatibility of $c$ with the Hermitian form</td>
+</tr>
+<tr>
+<td>$h=g-i\omega$</td>
+<td>real part symmetric, imaginary part alternating</td>
+</tr>
+<tr>
+<td>$X\mapsto cXc$, $X\mapsto cX^{\dagger}c$</td>
+<td>the transport to the endomorphism algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for conjugate-linear maps, real structures and descent.</li>
+<li>Paul R. Halmos, <em>Finite-Dimensional Vector Spaces</em> (Springer, 1974), for the complex structure operator, the adjoint and Hermitian forms.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, fourth edition, 1975), for the real and complex structures on a real vector space and the decompositions they induce.</li>
+<li>Robert Silhol, <em>Real Algebraic Surfaces</em> (Lecture Notes in Mathematics 1399, Springer, 1989), for real structures on complex vector spaces and the real forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

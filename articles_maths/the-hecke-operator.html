@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hecke Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hecke-operator"><strong>The Hecke Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hecke operators are the operators on spaces of modular forms that are built from the arithmetic of the level: for each positive integer $n$ and each congruence subgroup, $T_n$ averages a form over the sublattices of index $n$, and the average is again a modular form. They act on the Fourier expansion by a formula that is elementary and self-contained, they commute with one another, and their simultaneous eigenforms are exactly the forms whose coefficient functions are multiplicative. The Hecke operators are therefore the bridge between the analytic spaces of <em>Modular Forms</em> and the arithmetic of the algebra of arithmetic functions: the eigenvalue system $n\mapsto a_n$ of a normalised eigenform is a multiplicative arithmetic function, the algebra the operators generate is the Hecke algebra, and the characters of that algebra are the eigenforms.</p>
+<p>This article defines the Hecke operators and the diamond operators, derives the action on the $q$-expansion, proves the multiplicativity and the recursion at the prime powers, and states the structure of the Hecke algebra with the eigenform correspondence and the theory of newforms. It assumes <em>Modular Forms</em> for the upper half-plane, the congruence subgroups, the weight-$k$ action, the spaces $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$, their $q$-expansions and the level-one structure theorem; it assumes <em>Analytic Number Theory</em> for the arithmetic functions under Dirichlet convolution, and <em>L-Functions</em> for the Dirichlet series attached to a modular form. The Petersson inner product and the adjoint of a Hecke operator are <em>The Adjoint of the Hecke Operator</em>, later in this category; the conjugate symmetry of the eigenvalues and the Ramanujan bound are <em>The Conjugate Symmetry of the Hecke Operator</em>, also later; the adelic reading of all of this is <em>Automorphic Forms</em>, written in parallel. Nothing here reads a distance as an object; the operator is defined by its action on expansions and its algebra is finite-dimensional over $\mathbb{C}$.</p>
+<p>Throughout, $k$ and $N$ are positive integers with $k\ge2$, $\Gamma_1(N)\subseteq\Gamma_0(N)\subseteq SL_2(\mathbb{Z})$ are the congruence subgroups of <em>Modular Forms</em>, and $f$ is a form of weight $k$, holomorphic at the cusps, with $q$-expansion $f(z)=\sum_{m\ge0}a_mq^m$, $q=e^{2\pi iz}$. The level-one case is abbreviated $\Gamma(1)=SL_2(\mathbb{Z})$. A form is <strong>normalised</strong> when $a_1=1$, and a <strong>Hecke eigenform</strong> when it is an eigenvector of every $T_n$.</p>
+<h2 id="the-operators-on-a-modular-form">The Operators on a Modular Form</h2>
+<h3 id="the-hecke-operator_1">The Hecke operator</h3>
+<p><strong>Definition.</strong> For $n\ge1$ the <strong>Hecke operator</strong> $T_n$ acts on a function $f$ on the upper half-plane by
+$$
+(T_nf)(z) = n^{k-1}\sum_{\substack{a,d\ge1\\ ad=n}}\frac{1}{d^{\,k}}\sum_{b=0}^{d-1}f\!\left(\frac{az+b}{d}\right).
+$$</p>
+<p>The sum is finite, it is a sum of transforms of $f$ by the weight-$k$ action, and it commutes with $\mid_k\gamma$ for every $\gamma$ in the commensurator of $\Gamma_1(N)$, which is why it preserves the spaces of modular forms.</p>
+<p><strong>Theorem.</strong> For every $n$ the operator $T_n$ preserves $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$, and if $f=\sum_{m\ge0}a_mq^m$ then
+$$
+T_nf = \sum_{m\ge0}b_mq^m, \qquad b_m=\sum_{d\mid\gcd(m,n)}d^{\,k-1}\,a_{mn/d^2}.
+$$
+The coefficient $b_m$ is a finite sum, and it depends only on $a_{mn/d^2}$ for $d\mid\gcd(m,n)$.</p>
+<p><strong>Proof.</strong> The invariance of the spaces is the double-coset computation of <em>Modular Forms</em>: the matrices $\begin{pmatrix}a&b\\0&d\end{pmatrix}$ with $ad=n$ are a set of double-coset representatives, and the average over each right coset of $\Gamma_1(N)$ is $\Gamma_1(N)$-invariant. For the coefficient formula, insert $q=e^{2\pi iz}$ and expand each term $f((az+b)/d)=\sum_ja_j e^{2\pi i j(az+b)/d}$; the sum over $b$ is a geometric sum, equal to $d$ when $d\mid j$ and to $0$ otherwise, so only the indices $j=dm'$ survive, and the substitution $m=ad\,m'$ collects the terms as displayed. The holomorphy at the cusps is preserved because each summand is and the sum is finite.</p>
+<p><strong>Remark (the two normalisations in the literature).</strong> Some sources place the factor $n^{k-1}$ on the whole sum and some absorb $d^{-k}$ differently; the two conventions differ by the substitution $a\leftrightarrow d$, and the coefficient formula $b_m=\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}$ is the coordinate-free content common to both. This article fixes the display above and uses it consistently.</p>
+<h3 id="the-diamond-operators">The diamond operators</h3>
+<p><strong>Definition.</strong> Let $N\ge1$ and let $d$ be an integer with $(d,N)=1$. Choose $\gamma_d\in\Gamma_0(N)$ with lower-right entry $d$; the <strong>diamond operator</strong> is
+$$
+\langle d\rangle f = f\mid_k\gamma_d .
+$$
+It depends only on $d\bmod N$, so $\langle\cdot\rangle$ is a homomorphism $(\mathbb{Z}/N\mathbb{Z})^{\times}\to\operatorname{Aut}M_k(\Gamma_1(N))$.</p>
+<p><strong>Proposition.</strong> The diamond operators preserve $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$, commute with every $T_n$, and act on the $q$-expansion of a form of nebentypus $\varepsilon$ by
+$$
+\langle d\rangle f = \sum_{m\ge0}\varepsilon(d)\,a_mq^m .
+$$
+The action of $\langle d\rangle$ is diagonal on the coefficient sequence, and it is the case $n=1$ of the more general operation of the next section.</p>
+<p><strong>Proof.</strong> The first two statements are the covariance of $\mid_k$ and the computation $\gamma_d\begin{pmatrix}a&b\\0&d'\end{pmatrix}$ in the double coset; the diagonal display is the definition of the nebentypus $\varepsilon:\Gamma_0(N)\to\mathbb{C}^\times$ with $f\mid_k\gamma=\varepsilon(\gamma)f$ for $\gamma\in\Gamma_0(N)$, evaluated at $\gamma_d$.</p>
+<h2 id="the-algebra-of-the-operators">The Algebra of the Operators</h2>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Theorem.</strong> For all $m,n\ge1$,
+$$
+T_mT_n = T_{mn} \quad\text{when } (m,n)=1, \qquad T_1=\mathrm{id},
+$$
+and for every prime $p$ and every $r\ge1$,
+$$
+T_{p^{\,r+1}} = T_pT_{p^{\,r}} - p^{\,k-1}\langle p\rangle T_{p^{\,r-1}} .
+$$
+Consequently the operators $T_n$ and the diamonds $\langle d\rangle$ generate a commutative algebra.</p>
+<p><strong>Proof.</strong> The coprimality statement is a multiplicativity of double cosets: when $(m,n)=1$ the double coset of index $mn$ factors as the product of the cosets of index $m$ and $n$, by the Chinese remainder theorem on the diagonal entries. The recursion is the coprimality case applied to the three-term relation among the representatives of index $p^{r+1}$, $p^r\cdot p$ and $p^{r-1}p^2$, in which the overlap contributes the middle term $p^{k-1}\langle p\rangle$. Commutativity follows because both relations express every generator in terms of the $T_p$ and the diamonds, and the diamonds commute with the $T_n$ by the previous section.</p>
+<h3 id="eigenforms-and-the-recursion-on-coefficients">Eigenforms and the recursion on coefficients</h3>
+<p><strong>Proposition.</strong> Let $f=\sum a_mq^m$ be a normalised eigenform for all $T_n$, with $T_nf=a_nf$. Then
+$$
+a_1=1, \qquad a_{mn}=a_ma_n \ \text{ for } (m,n)=1, \qquad a_{p^{\,r+1}}=a_pa_{p^{\,r}}-\varepsilon(p)p^{\,k-1}a_{p^{\,r-1}},
+$$
+so the coefficient function $n\mapsto a_n$ is multiplicative and determined by its values at the primes, and its Dirichlet series has the Euler product
+$$
+L(f,s)=\sum_{m\ge1}a_mm^{-s}=\prod_p\Bigl(1-a_pp^{-s}+\varepsilon(p)p^{\,k-1-2s}\Bigr)^{-1}
+$$
+in the region of absolute convergence.</p>
+<p><strong>Proof.</strong> Apply $T_nf=a_nf$ to the coefficient of $q^1$ in the coefficient formula: the only term of $b_1$ is $d=1$, $b_1=a_n$, so $(T_nf)$ has constant $q$-coefficient $a_n$, and $T_nf=a_nf$ forces $a_1=1$ after the normalisation. The multiplicativity and the recursion are the action of the operator identities of the previous theorem on $f$, read coefficientwise; the Euler product is the multiplicativity plus the local recursion, in the form of <em>Analytic Number Theory</em>. One uses that $\langle p\rangle f=\varepsilon(p)f$.</p>
+<h3 id="the-hecke-algebra">The Hecke algebra</h3>
+<p><strong>Definition.</strong> The <strong>Hecke algebra</strong> is the $\mathbb{Z}$-subalgebra
+$$
+\mathbb{T}_k(N)=\mathbb{Z}\bigl[\,T_n\ (n\ge1),\ \langle d\rangle\ ((d,N)=1)\,\bigr]\subseteq\operatorname{End}_{\mathbb{C}}\bigl(S_k(\Gamma_1(N))\bigr),
+$$
+a commutative ring of finite rank, and its complexification is $\mathbb{T}_k(N)\otimes_{\mathbb{Z}}\mathbb{C}$.</p>
+<p><strong>Theorem (the correspondence).</strong> Suppose first that the nebentypus is fixed, so that the diamonds act by the character $\varepsilon$ and may be treated as scalars. Then the following three sets are in canonical bijection:</p>
+<ol>
+<li>the algebra homomorphisms $\mathbb{T}_k(N)\otimes\mathbb{C}\to\mathbb{C}$;</li>
+<li>the normalised eigenforms $f\in S_k(\Gamma_1(N))$;</li>
+<li>the systems of eigenvalues $(a_p)_p$, equivalently the multiplicative functions $n\mapsto a_n$ satisfying the local recursion above and the growth condition $a_n=O(n^{k/2+\epsilon})$.</li>
+</ol>
+<p>The bijection sends a homomorphism to the form whose eigenvalue system it produces, $T_n\mapsto a_n$, and it is the content of the statement that the Hecke algebra is generated by the operators and that its characters are the eigenforms.</p>
+<p><strong>Proof sketch.</strong> The operators $T_n$ are normalised by the recursion, so $\mathbb{T}_k(N)\otimes\mathbb{C}$ is generated by commuting operators each of which satisfies a monic polynomial over $\mathbb{Z}$; it is therefore finite-dimensional and semisimple, and it splits as a product of copies of $\mathbb{C}$ indexed by its characters. Each character $\lambda$ cuts out the generalised eigenspace on which $T_n$ acts by $\lambda(T_n)$, and the semisimplicity makes it an eigenspace; choosing a nonzero vector in it and clearing denominators produces a normalised eigenform with $a_n=\lambda(T_n)$. Conversely a normalised eigenform gives the character $T_n\mapsto a_n$. The growth condition on the coefficients is the estimate of <em>Modular Forms</em>, and it is what makes the eigenform holomorphic at the cusps.</p>
+<p><strong>Corollary (the coefficient function is an arithmetic function).</strong> The map $f\mapsto (n\mapsto a_n)$ embeds the eigenforms into the algebra of arithmetic functions of <em>Analytic Number Theory</em>, compatibly with the Hecke action: the operator $T_n$ corresponds to the arithmetic function $n\mapsto T_n$ under the pairing of a form with its coefficient sequence, and the Dirichlet convolution of the eigenvalue systems is the product of the corresponding operators.</p>
+<h2 id="newforms-and-the-old-part">Newforms and the Old Part</h2>
+<h3 id="the-old-subspace">The old subspace</h3>
+<p><strong>Definition.</strong> For $M\mid N$ and $d\mid N/M$ the form $f\mid_k\gamma_d$ for $f\in S_k(\Gamma_1(M))$ lies in $S_k(\Gamma_1(N))$; the <strong>old subspace</strong> $S_k(\Gamma_1(N))^{\mathrm{old}}$ is the span of all such forms, and the <strong>new subspace</strong> is the quotient
+$$
+S_k(\Gamma_1(N))^{\mathrm{new}} = S_k(\Gamma_1(N))^{\mathrm{old}\,\perp}
+$$
+taken with respect to the Petersson inner product of <em>The Adjoint of the Hecke Operator</em>.</p>
+<p><strong>Theorem (Atkin–Lehner, multiplicity one).</strong> The new subspace has a basis of normalised eigenforms whose eigenvalue systems are not of lower level, the old and new parts are stable under the Hecke operators for $(n,N)=1$, and on the new part a normalised eigenform is determined by its eigenvalue system; the space decomposes as
+$$
+S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}},
+$$
+an orthogonal direct sum once the Petersson product is available.</p>
+<p><strong>Proof sketch.</strong> The Atkin–Lehner operators $W_Q$ for the divisors $Q$ of $N$ permute the old/new decomposition and give a finite group of involutions acting on the space; the fixed spaces of the various products of the $W_Q$ cut the old part out, and the quotient is the new part. Multiplicity one for the new part is the statement that the Hecke algebra acts with multiplicity one on each Galois-conjugacy class of eigenvalue systems, which follows from the recursion and the excluded lower levels. The full proofs are in <em>Modular Forms</em>, to which this article defers.</p>
+<h3 id="the-correspondence-on-the-modular-curve">The correspondence on the modular curve</h3>
+<p><strong>Remark (the correspondences).</strong> Each $T_n$ is not only an operator but the trace of a <strong>Hecke correspondence</strong> on the modular curve: the arithmetic points of the modular curve parametrise pairs of lattices, and the locus of pairs of index $n$ defines a curve-with-multiplicity in $X_1(N)\times X_1(N)$ whose two projections pull back and push forward forms. The Eichler–Shimura isomorphism of <em>Modular Forms</em> identifies this correspondence with $T_n$ on $S_k$, and it is the geometric form of the same operator. The reading belongs to <em>Modular Forms</em>; this article uses only the operator action on expansions.</p>
+<h2 id="summary">Summary</h2>
+<p>For $n\ge1$ the Hecke operator $T_n$ is the average $n^{k-1}\sum_{ad=n}d^{-k}\sum_{b=0}^{d-1}f((az+b)/d)$; it preserves $M_k(\Gamma_1(N))$ and $S_k(\Gamma_1(N))$ and acts on the Fourier expansion by $b_m=\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}$. The diamond operators $\langle d\rangle$ for $(d,N)=1$ commute with the $T_n$ and act on a form of nebentypus $\varepsilon$ by $\varepsilon(d)$ on each coefficient. The operators satisfy $T_mT_n=T_{mn}$ for $(m,n)=1$ and $T_{p^{r+1}}=T_pT_{p^r}-p^{k-1}\langle p\rangle T_{p^{r-1}}$, so they generate the commutative Hecke algebra $\mathbb{T}_k(N)$, of finite rank over $\mathbb{Z}$; on a normalised eigenform $f=\sum a_mq^m$ the recursion reads $a_{p^{r+1}}=a_pa_{p^r}-\varepsilon(p)p^{k-1}a_{p^{r-1}}$, the coefficient function $n\mapsto a_n$ is multiplicative, and its Dirichlet series has the degree-two Euler product $\prod_p(1-a_pp^{-s}+\varepsilon(p)p^{k-1-2s})^{-1}$. The characters of $\mathbb{T}_k(N)\otimes\mathbb{C}$ are the normalised eigenforms, by semisimplicity and the generation of the algebra; the new subspace is the orthogonal complement of the forms raised from lower level, and it carries a basis of newforms determined by their eigenvalue systems (Atkin–Lehner, multiplicity one). The adjoint of $T_n$ for the Petersson product and the Ramanujan bound on $a_p$ are the subjects of the two following articles of the category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_n$</td>
+<td>Hecke operator of index $n$</td>
+</tr>
+<tr>
+<td>$b_m=\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}$</td>
+<td>Action on the $q$-expansion</td>
+</tr>
+<tr>
+<td>$\langle d\rangle$, $\varepsilon$</td>
+<td>Diamond operator; nebentypus</td>
+</tr>
+<tr>
+<td>$\mathbb{T}_k(N)$</td>
+<td>Hecke algebra generated by the $T_n$ and the $\langle d\rangle$</td>
+</tr>
+<tr>
+<td>$T_mT_n=T_{mn}$, $(m,n)=1$</td>
+<td>Coprime multiplicativity</td>
+</tr>
+<tr>
+<td>$T_{p^{r+1}}=T_pT_{p^r}-p^{k-1}\langle p\rangle T_{p^{r-1}}$</td>
+<td>Prime-power recursion</td>
+</tr>
+<tr>
+<td>$a_{mn}=a_ma_n$, $a_{p^{r+1}}=a_pa_{p^r}-\varepsilon(p)p^{k-1}a_{p^{r-1}}$</td>
+<td>Recursion for a normalised eigenform</td>
+</tr>
+<tr>
+<td>$L(f,s)=\prod_p(1-a_pp^{-s}+\varepsilon(p)p^{k-1-2s})^{-1}$</td>
+<td>Euler product of an eigenform</td>
+</tr>
+<tr>
+<td>$S_k^{\mathrm{old}}, S_k^{\mathrm{new}}$</td>
+<td>Old subspace; new subspace</td>
+</tr>
+<tr>
+<td>$W_Q$</td>
+<td>Atkin–Lehner operators of the divisors $Q\mid N$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Goro Shimura, <em>Introduction to the Arithmetic Theory of Automorphic Functions</em> (Princeton University Press, 1971), for the Hecke operators, the Hecke algebra and the eigenform correspondence.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the level-one Hecke operators and the arithmetic of the coefficients.</li>
+<li>Fred Diamond and Jerry Shurman, <em>A First Course in Modular Forms</em> (Springer, 2005), for the coefficient action, the new subspace and the Atkin–Lehner theory.</li>
+<li>Andrew Ogg, <em>Modular Forms and Dirichlet Series</em> (Benjamin, 1969), for the Euler product of an eigenform and the correspondence with Dirichlet series.</li>
+<li>Erich Hecke, <em>Mathematische Werke</em> (Vandenhoeck &amp; Ruprecht, 1970), for the original construction of the operators and their algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

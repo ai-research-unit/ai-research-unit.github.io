@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Vector Bundles and the Chern Connection — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-vector-bundles-and-the-chern-connection"><strong>Hermitian Vector Bundles and the Chern Connection</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Hermitian vector bundle</strong> is a complex vector bundle whose fibres carry Hermitian inner products, varying smoothly with the base point. The metric is the datum that makes the fibres into Hilbert spaces of finite dimension; it is a conjugate-linear identification of the bundle with its dual, and it reduces the structure group of the bundle from $GL(k,\mathbb{C})$ to the unitary group $U(k)$. A <strong>connection</strong> on the bundle is compatible with the metric when it differentiates the inner product by the Leibniz rule; on a <em>holomorphic</em> bundle the metric and the holomorphic structure together single out exactly one such connection, the <strong>Chern connection</strong>.</p>
+<p>The article develops the Hermitian bundles and their connections. It defines the Hermitian metric, reads it as the conjugate-linear isomorphism $\bar E \to E^*$ — the involution on the fibres that the group of this Part records — and identifies the unitary reductions of the structure group. It develops the metric-compatible connections, the affine space they form, and the naive adjointness interpretation that the operator group of this category uses. It then defines the holomorphic structure as a $\bar\partial$-operator, states the existence and uniqueness of the connection compatible with the metric and the holomorphic structure — the Chern connection — and computes its local form and its curvature.</p>
+<p>The article assumes the complex vector bundles, the frames, the connections, the connection form, the curvature and the reduction of the structure group of <em>Fibre Bundles, Connections and Curvature</em>; the metric-compatible connection, the covariant derivative and the curvature as an operator of <em>The Covariant Derivative</em>, <em>Hermitian Connections and the Adjoint</em> and the rest of the operator group in this category. The complex structure of the base manifold, the almost complex structure, the type decomposition of the forms and the Dolbeault operator are <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV, and are used here only through the $(0,1)$-part of the complexified cotangent bundle, with that forward reference named where the holomorphic structure is defined. The Chern classes of a Hermitian bundle are computed in the next article of this group, and the Chern connection of the tangent bundle of a Hermitian manifold is <em>Hermitian Manifolds and the Canonical Connection</em>, also in this Part. No physics is invoked.</p>
+<h2 id="hermitian-vector-bundles">Hermitian Vector Bundles</h2>
+<h3 id="hermitian-metrics-and-the-conjugate-bundle">Hermitian Metrics and the Conjugate Bundle</h3>
+<p>Let $E \to M$ be a complex vector bundle of rank $k$ over a smooth manifold $M$, with fibres complex vector spaces. A <strong>Hermitian metric</strong> on $E$ is a smooth family $h = (h_x)$ of Hermitian inner products,</p>
+<p>$$
+h_x : E_x \times E_x \to \mathbb{C}, \qquad h_x(\lambda s + \mu s', t) = \bar\lambda\,h_x(s,t) + \bar\mu\,h_x(s',t),
+$$</p>
+<p>conjugate-linear in the first variable and complex-linear in the second, with $h_x(t,s) = \overline{h_x(s,t)}$ and $h_x(s,s) > 0$ for $s \neq 0$. In a local frame $e_1, \ldots, e_k$ the metric is the smooth positive-definite matrix function $H = (h_{ab})$ with $h_{ab} = h(e_a, e_b)$, and for sections $s = \sum_a s^a e_a$, $t = \sum_b t^b e_b$,</p>
+<p>$$
+h(s,t) = \sum_{a,b} \bar s^a\, h_{ab}\, t^b = \bar s^{\,T} H\, t .
+$$</p>
+<p>Under a change of frame $e' = eg$ the matrix transforms by $H' = g^* H g$, the transformation rule of a Hermitian form, and the bundles with a Hermitian metric are exactly the bundles whose structure group is reducible to the unitary group $U(k)$.</p>
+<p><strong>Proposition (the metric as a conjugate-linear isomorphism).</strong> The Hermitian metric induces a conjugate-linear bundle isomorphism</p>
+<p>$$
+\flat : \bar E \longrightarrow E^*, \qquad s \longmapsto h(s, \cdot),
+$$</p>
+<p>where $\bar E$ is the <strong>conjugate bundle</strong>, the bundle with the same underlying real vector bundle and the opposite complex structure, $\lambda \cdot_{\bar E} s = \bar\lambda s$. The isomorphism is conjugate-linear, its inverse is the metric dual, and in frames the matrix of $\flat$ is $H$, read from the frame of $\bar E$ to the dual frame of $E^*$.</p>
+<p><em>Proof.</em> For a fixed $s$, $h(s,\cdot)$ is complex-linear by the second-variable linearity of the metric; the map $s \mapsto h(s,\cdot)$ is conjugate-linear by the first-variable conjugate-linearity; and it is a fibrewise isomorphism because the metric is nondegenerate. This is the content of the <strong>Riesz representation</strong> for the finite-dimensional fibres, made smooth. The transformation rule $H' = g^*Hg$ is the invariance of the form under the two frame changes.</p>
+<p><strong>Remark.</strong> The isomorphism $\flat : \bar E \to E^*$ is the <strong>involution</strong> that this group of Part III records: it is the antilinear structure on the bundle, the bundle-level analogue of the conjugation of a complex vector space, and every construction below is invariant under the induced operation on the frames. Passing to the adjoint of a linear map, $A \mapsto A^* = \flat^{-1}\circ A^*\circ\flat$, is the operation that the operator group of this Part uses, and it is the same operation as the metric adjoint of <em>Hermitian Connections and the Adjoint</em>.</p>
+<h3 id="the-unitary-frame-bundle">The Unitary Frame Bundle</h3>
+<p><strong>Proposition.</strong> The Hermitian metrics on $E$ are in bijective correspondence with the reductions of the structure group of $E$ from $GL(k,\mathbb{C})$ to $U(k)$, that is, with the subbundles of the frame bundle whose structure group is the unitary group.</p>
+<p><em>Proof.</em> A reduction to $U(k)$ is an atlas of frames whose transition functions take values in $U(k)$; in such a frame the matrix of $h$ is the identity, and two frames of the reduction are related by a unitary matrix, so the metric is well defined. Conversely, given $h$, the Gram–Schmidt process applied to any frame produces a local $h$-orthonormal frame, and the transition functions between two such frames are unitary because both are orthonormal for the same metric. The two constructions are inverse.</p>
+<h2 id="metric-compatible-connections">Metric-Compatible Connections</h2>
+<h3 id="the-condition-and-the-affine-space">The Condition and the Affine Space</h3>
+<p>Let $\nabla$ be a connection on the complex bundle $E$, with connection form $\omega$ in a frame. The connection is <strong>metric-compatible</strong> with $h$ if</p>
+<p>$$
+d\,h(s,t) = h(\nabla s, t) + h(s, \nabla t)
+$$</p>
+<p>for all sections $s,t$, equivalently $X\,h(s,t) = h(\nabla_Xs,t) + h(s,\nabla_Xt)$ for all vector fields $X$; this is the condition of <em>The Covariant Derivative</em> and <em>Hermitian Connections and the Adjoint</em>, rewritten for a Hermitian rather than a real metric.</p>
+<p><strong>Proposition.</strong> In a frame the metric-compatibility condition reads</p>
+<p>$$
+dH = \omega^{*}H + H\,\omega, \qquad \omega^* = \bar\omega^{\,T},
+$$</p>
+<p>where $\omega^*$ is the conjugate transpose of the matrix of $1$-forms. The metric-compatible connections on $E$ form an affine space modelled on the sections of $T^*M \otimes \mathfrak{u}(E,h)$, the $h$-anti-Hermitian endomorphism-valued $1$-forms:</p>
+<p>$$
+\omega' = \omega + \theta, \qquad \theta^* = -\theta .
+$$</p>
+<p><em>Proof.</em> Differentiating $h(s,t) = \bar s^T H t$ and substituting $\nabla = d+\omega$ gives $dh(s,t) = \overline{(ds+\omega s)}^T H t + \bar s^T H(dt + \omega t)$, and comparing with $h(\nabla s,t)+h(s,\nabla t)$ the terms $ds, dt$ cancel and leave $dH = \omega^*H + H\omega$. If $\omega'$ is another metric-compatible form, then $\theta = \omega'-\omega$ satisfies $\theta^*H + H\theta = 0$, that is, $H^{-1}\theta^* H = -\theta$, which is the anti-Hermitian condition for the $\theta$ read through the metric; and every such $\theta$ preserves the equation.</p>
+<h3 id="the-adjoint-interpretation">The Adjoint Interpretation</h3>
+<p><strong>Remark.</strong> Metric compatibility is the <strong>self-adjointness</strong> of the connection with respect to the fibrewise inner product: reading $h$ as the conjugate-linear isomorphism $\flat:\bar E\to E^*$, the condition $d\,h(s,t) = h(\nabla s,t)+h(s,\nabla t)$ says that the connection on $\bar E$ induced by the metric is the dual (transpose) of $\nabla$ with a sign, so $\nabla$ is its own adjoint up to the metric. The precise statement, the adjoint connection $\nabla^*$ on the dual bundle, the self-adjointness of the connection Laplacian and the computation of the adjoint of $\nabla_X$ as $-\operatorname{div}\nabla_X$ are <em>Hermitian Connections and the Adjoint</em> in this group and <em>The L2 Adjoint of a Differential Operator</em> in this Part; what the present article records is that the metric-compatibility condition is exactly the condition for the adjoint connection to be the conjugate connection.</p>
+<h2 id="the-chern-connection">The Chern Connection</h2>
+<h3 id="the-holomorphic-structure-and-the-dolbeault-operator">The Holomorphic Structure and the Dolbeault Operator</h3>
+<p>Suppose now that the base $M$ carries an almost complex structure, so that the complexified cotangent bundle splits and the forms acquire a <strong>type decomposition</strong>; the almost complex structure, its integrability and the type decomposition of the forms are <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV, and the notation of the $(p,q)$-forms is used here with that reference.</p>
+<p><strong>Definition.</strong> A <strong>holomorphic structure</strong> on a complex vector bundle $E$ over an almost complex manifold $(M,J)$ is a first-order differential operator</p>
+<p>$$
+\bar\partial_E : \Gamma(E) \longrightarrow \Omega^{0,1}(M;E)
+$$</p>
+<p>satisfying the Leibniz rule $\bar\partial_E(fs) = (\bar\partial f)\otimes s + f\,\bar\partial_E s$ over the complex-valued functions, and the integrability condition $\bar\partial_E^2 = 0$. A frame in which $\bar\partial_E$ is the componentwise $\bar\partial$ is a <strong>holomorphic frame</strong>; the transition functions of a holomorphic frame are holomorphic, and a vector bundle with a holomorphic structure is a <strong>holomorphic vector bundle</strong>.</p>
+<p>The operator $\bar\partial_E$ is the $(0,1)$-part of a connection when the base is complex; the integrability $\bar\partial_E^2 = 0$ is the Newlander–Nijenhuis condition for the bundle, and the pair $(E, \bar\partial_E)$ is the bundle version of the complex structure of the base, as in <em>Hermitian Geometry and Almost Complex Structures</em>.</p>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem (the Chern connection).</strong> Let $E$ be a holomorphic vector bundle with a Hermitian metric $h$. Then there is exactly one connection $\nabla$ on $E$ that is metric-compatible and has $(0,1)$-part equal to the holomorphic structure,</p>
+<p>$$
+\nabla^{0,1} = \bar\partial_E .
+$$</p>
+<p>It is the <strong>Chern connection</strong>, also called the metric connection of the holomorphic bundle.</p>
+<p><em>Proof.</em> The two conditions decompose by type. Metric compatibility is the equation $dH = \omega^*H+H\omega$ of the previous section, whose $(1,0)$- and $(0,1)$-parts are conjugate and equivalent, $\partial H = \omega^{1,0*}H + H\omega^{1,0}$; the condition $\nabla^{0,1}=\bar\partial_E$ fixes the $(0,1)$-part of $\omega$ to be that of the holomorphic frame, namely zero in a holomorphic frame, so in a holomorphic frame the equation reduces to</p>
+<p>$$
+\partial H = \omega^{1,0*}H + H\,\omega^{1,0},
+$$</p>
+<p>which, with the anti-Hermitian condition and the reality of the metric, has the unique solution $\omega^{1,0} = H^{-1}\partial H$. Hence the connection form is determined in every holomorphic frame, and the local determinations patch because the transition functions are holomorphic: the operators they define agree on the overlaps. Existence is the formula; uniqueness is the determination.</p>
+<h3 id="the-local-form">The Local Form</h3>
+<p><strong>Corollary.</strong> In a holomorphic frame the Chern connection has the connection form</p>
+<p>$$
+\omega = H^{-1}\partial H
+$$</p>
+<p>of type $(1,0)$, that is, $\nabla = \partial + \bar\partial + H^{-1}\partial H$ read on the components of a section in the holomorphic frame; it is the unique solution of the metric-compatibility equation with vanishing $(0,1)$-part, and it therefore satisfies $dH = \omega^*H + H\omega$ with this $\omega$.</p>
+<p><em>Proof.</em> The $(0,1)$-part of the connection vanishes in a holomorphic frame, so $\omega = \omega^{1,0}$; the metric-compatibility equation $dH = \omega^*H+H\omega$ then has the unique solution $\omega = H^{-1}\partial H$, as the existence-and-uniqueness theorem shows.</p>
+<h3 id="the-curvature">The Curvature</h3>
+<p><strong>Theorem.</strong> The curvature of the Chern connection is</p>
+<p>$$
+\Theta = d\omega + \omega\wedge\omega = \bar\partial\bigl(H^{-1}\partial H\bigr),
+$$</p>
+<p>it has no component of type $(0,2)$, and it is of type $(1,1)$ and $h$-skew-Hermitian,</p>
+<p>$$
+\Theta = \Theta^{1,1}, \qquad \Theta^* = -\Theta .
+$$</p>
+<p><em>Proof.</em> The $(0,2)$-part of $d\omega+\omega\wedge\omega$ is $\bar\partial\omega^{0,1}+\omega^{0,1}\wedge\omega^{0,1}$, and in a holomorphic frame $\omega^{0,1}=0$, so only $\bar\partial(H^{-1}\partial H)$ survives, which is of type $(1,1)$ because it is $\bar\partial$ of a $(1,0)$-form. For the skew-Hermitian property, differentiate the metric-compatibility equation $dH = \omega^*H+H\omega$ and use the definition of the curvature to obtain $\Theta^*H + H\Theta = 0$, which is the anti-Hermitian condition; the details are the standard computation of the curvature of a metric connection, as in <em>Fibre Bundles, Connections and Curvature</em>.</p>
+<p><strong>Corollary.</strong> On a holomorphic line bundle, the curvature is $\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h$ with $h$ the metric in a holomorphic frame; the form $\frac{i}{2\pi}\Theta$ is real and closed, so it defines a real cohomology class, the first Chern class of the Hermitian line bundle, and the computation of the Chern classes from this curvature is the next article of the group.</p>
+<p><strong>Example.</strong> Let $M = \mathbb{C}$ with the standard complex structure and let $E$ be the trivial line bundle with the metric $h(z) = e^{-\lvert z\rvert^2}$. In the holomorphic frame the Chern connection form is $\omega = h^{-1}\partial h = -\bar z\,dz$, the curvature is $\Theta = \bar\partial(-\bar z\,dz) = dz\wedge d\bar z$, and the first Chern form is $\frac{i}{2\pi}dz\wedge d\bar z$, the area form of the plane carried by the bundle metric; the curvature measures the failure of the metric to be the constant one, and it is the local model of the Fubini–Study connection.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian metric on a complex vector bundle is a smooth family of inner products, locally a positive-definite Hermitian matrix $H$ transforming by $H'=g^*Hg$; it is equivalent to a reduction of the structure group to $U(k)$, and it is a conjugate-linear isomorphism $\flat:\bar E\to E^*$, the involution that this group of the Part records. A connection is metric-compatible when $d\,h(s,t)=h(\nabla s,t)+h(s,\nabla t)$, equivalently $dH=\omega^*H+H\omega$; the metric-compatible connections form an affine space modelled on the $h$-anti-Hermitian endomorphism-valued $1$-forms, and the condition is the self-adjointness of the connection with respect to the fibrewise metric.</p>
+<p>A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, the integrability condition; a holomorphic frame is one in which it is the componentwise $\bar\partial$. On a holomorphic Hermitian bundle there is a unique connection compatible with both the metric and the holomorphic structure, the Chern connection; in a holomorphic frame its connection form is $\omega=H^{-1}\partial H$, of type $(1,0)$, and its curvature is $\Theta=\bar\partial(H^{-1}\partial H)$, of type $(1,1)$ and skew-Hermitian. On a line bundle $\Theta=\bar\partial\partial\log h$, the local model of the first Chern form, and the general Chern forms of the Hermitian bundle are the subject of the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E, k$</td>
+<td>Complex vector bundle over $M$ and its complex rank</td>
+</tr>
+<tr>
+<td>$h$, $h(s,t)=\bar s^{\,T}Ht$</td>
+<td>Hermitian metric, conjugate-linear in the first variable</td>
+</tr>
+<tr>
+<td>$H = (h_{ab})$, $H' = g^*Hg$</td>
+<td>Metric matrix in a frame and its change of frame</td>
+</tr>
+<tr>
+<td>$\bar E$</td>
+<td>Conjugate bundle; the opposite complex structure on the same real bundle</td>
+</tr>
+<tr>
+<td>$\flat : \bar E \to E^*$, $s\mapsto h(s,\cdot)$</td>
+<td>Conjugate-linear isomorphism given by the metric</td>
+</tr>
+<tr>
+<td>$U(k)$, unitary frame bundle</td>
+<td>Reduction of the structure group by a Hermitian metric</td>
+</tr>
+<tr>
+<td>$d\,h(s,t) = h(\nabla s,t)+h(s,\nabla t)$</td>
+<td>Metric compatibility</td>
+</tr>
+<tr>
+<td>$dH = \omega^*H + H\omega$</td>
+<td>Metric compatibility in a frame; $\omega^*=\bar\omega^{\,T}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(E,h)$, $\theta^*=-\theta$</td>
+<td>The affine space of metric connections; anti-Hermitian difference</td>
+</tr>
+<tr>
+<td>$\bar\partial_E$, $\bar\partial_E^2=0$</td>
+<td>Holomorphic structure and its integrability</td>
+</tr>
+<tr>
+<td>$(p,q)$-forms, $\Omega^{0,1}(M;E)$</td>
+<td>Type decomposition; forward reference to Part IV</td>
+</tr>
+<tr>
+<td>Chern connection</td>
+<td>The unique $\nabla$ with $\nabla^{0,1}=\bar\partial_E$ and $\nabla$ metric-compatible</td>
+</tr>
+<tr>
+<td>$\omega = H^{-1}\partial H$</td>
+<td>Chern connection form in a holomorphic frame; type $(1,0)$</td>
+</tr>
+<tr>
+<td>$\Theta = d\omega+\omega\wedge\omega = \bar\partial(H^{-1}\partial H)$</td>
+<td>Curvature of the Chern connection; type $(1,1)$, skew-Hermitian</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, vol. II (Interscience, 1969), for Hermitian metrics, holomorphic bundles and the Chern connection.</li>
+<li>Shiing-Shen Chern, <em>Complex Manifolds Without Potential Theory</em> (Springer, 2nd ed. 1979), for the connection and curvature forms of a holomorphic Hermitian bundle.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Chern connection, the curvature of a line bundle and the first Chern class.</li>
+<li>Jean-Pierre Demailly, <em>Complex Analytic and Differential Geometry</em> (OpenContent, 2012), for the Chern connection, the curvature and the positivity of Hermitian bundles.</li>
+<li>Werner Ballmann, <em>Lectures on Kähler Manifolds</em> (European Mathematical Society, 2006), for the Chern connection as the canonical connection of a Hermitian manifold, cited for the forward reference.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

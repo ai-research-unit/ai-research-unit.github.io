@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Operators and the Spectral Measure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-operators-and-the-spectral-measure"><strong>Unitary Operators and the Spectral Measure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A unitary operator is a surjective isometry, equivalently an operator with $U^*U=UU^*=I$, and its spectrum lies on the unit circle; a unitary is the operator form of a symmetry of the Hilbert space. The spectral theorem for a unitary is the spectral theorem for a normal operator read on the circle: there is a projection-valued measure $E$ on the Borel subsets of the circle with $U=\int z\,dE(z)$, and the functional calculus is the calculus of bounded Borel functions on the circle. The analytic content beyond the self-adjoint case is the link with dynamics: a strongly continuous one-parameter group of unitaries has a self-adjoint generator, and <strong>Stone's theorem</strong> identifies the group with $e^{itA}$; the Cayley transform connects the two spectral theories by a Möbius map and makes the self-adjoint spectral theorem and the unitary one two readings of a single fact.</p>
+<p>This article fixes the unitary operators and their spectra, the unitary group with its topologies, the spectral theorem for unitaries and its functional calculus, Stone's theorem with the generator, and the Cayley transform connecting the two cases. The self-adjoint case is <em>Self-Adjoint Operators and the Spectral Theorem</em>; the multiplication model of the spectral theorem is <em>The Spectral Operator</em>; the operator topologies are <em>Bounded Operators on a Hilbert Space</em>; the one-parameter semigroups and their generators are <em>Dirichlet Forms and the Hermitian Dirichlet Principle</em>, where the contraction semigroup is treated. The Hilbert-space background is <em>Hilbert Spaces</em>, and the integration is <em>Measure Theory and Integration</em>.</p>
+<p>Throughout, $H$ is a complex Hilbert space with inner product linear in the first argument, $U\in B(H)$ is bounded, $U^*$ is its adjoint, and $\mathbb{T}=\{z\in\mathbb{C}:|z|=1\}$ is the unit circle. The <strong>unitary group</strong> is $U(H)=\{U:U^*U=UU^*=I\}$, and the spectral measure of a unitary is a projection-valued measure on the Borel subsets of $\mathbb{T}$.</p>
+<h2 id="unitary-operators">Unitary Operators</h2>
+<p><strong>Definition.</strong> $U\in B(H)$ is <strong>unitary</strong> if $U^*U=UU^*=I$, equivalently if it is an isometric linear bijection, equivalently if $\langle Ux,Uy\rangle=\langle x,y\rangle$ for all $x,y$.</p>
+<p><strong>Proposition (characterisation).</strong> For $U\in B(H)$ the following are equivalent:</p>
+<p>(i) $U$ is unitary;</p>
+<p>(ii) $U$ is an isometry and surjective;</p>
+<p>(iii) $U^*$ is unitary and $U^{-1}=U^*$;</p>
+<p>(iv) $U$ is normal and $\sigma(U)\subseteq\mathbb{T}$.</p>
+<p><em>Proof.</em> An isometry is injective and its range is closed; surjectivity makes it a bijection with $U^*U=UU^*=I$, giving (i) $\iff$ (ii). The inverse of a unitary is its adjoint, whence (iii). A unitary is normal, and its spectrum lies on the unit circle because $\|U\|=1$ and $\|U^{-1}\|=1$ give $|\lambda|\le1$ and $|\lambda^{-1}|\le1$ for $\lambda\in\sigma(U)$; conversely a normal operator with spectrum on the circle has $U^*U=I$ by the functional calculus.</p>
+<p><strong>Proposition (the unitary group is a group of isometries).</strong> The unitaries form a group under composition, closed under the adjoint, $U(H)$; the map $U\mapsto U^{-1}=U^*$ is a group antiautomorphism, and every unitary is an isometry of $H$ onto itself, so $U(H)$ is a subgroup of the isometry group of $H$ consisting of the surjective isometries.</p>
+<p><em>Proof.</em> The product of two unitaries is unitary and the inverse of a unitary is unitary; the group axioms are those of composition; the isometry statement is the definition.</p>
+<p><strong>Proposition (the topologies of the unitary group).</strong> The unitary group carries the norm, strong operator and weak operator topologies, and</p>
+<p>$$
+\text{norm}\ \subsetneq\ \text{SOT}\ \subsetneq\ \text{WOT}
+$$</p>
+<p>with the SOT and WOT coinciding on the unitary group; it is SOT- and WOT-compact, so $U(H)$ is a compact Hausdorff topological group in the strong topology, and it is metrisable there when $H$ is separable.</p>
+<p><em>Proof.</em> On the unitary group strong convergence implies weak convergence and the converse holds because $\|U_\alpha x-Ux\|^2=2\|x\|^2-2\operatorname{Re}\langle U_\alpha x,Ux\rangle$; compactness is the compactness of the unit ball of $B(H)$ together with the closedness of the group, by the continuity of the multiplication and the adjoint; metrisability is the separability.</p>
+<h2 id="the-spectral-theorem-for-unitaries">The Spectral Theorem for Unitaries</h2>
+<p><strong>Theorem (spectral theorem for a unitary).</strong> For every unitary $U$ there is a spectral measure $E$ on the Borel subsets of $\mathbb{T}$ with</p>
+<p>$$
+U=\int_{\mathbb{T}}z\,dE(z),
+$$</p>
+<p>and the support of $E$ is $\sigma(U)\subseteq\mathbb{T}$; for every bounded Borel function $f$ on $\mathbb{T}$ the operator $f(U)=\int f\,dE$ is bounded with $\|f(U)\|=\sup_{z\in\mathbb{T}}|f(z)|$, the map $f\mapsto f(U)$ is an isometric $*$-homomorphism, and $U$ is unitarily equivalent to a multiplication by the independent variable on a direct sum of $L^2(\mathbb{T},\mu_j)$.</p>
+<p><em>Proof.</em> The unitary is normal with spectrum on the circle, so the normal spectral theorem of <em>Self-Adjoint Operators and the Spectral Theorem</em> applies verbatim, with the plane replaced by the circle; the multiplication model is the spectrum-as-multiplication statement of <em>The Spectral Operator</em>.</p>
+<p><strong>Proposition (the functional calculus on the circle).</strong> For $f\in L^\infty(\mathbb{T})$ the operator $f(U)$ is defined, the calculus is continuous for the weak operator topology on bounded sets, it carries the Fourier monomials $z^n$ to $U^n$ for $n\in\mathbb{Z}$, and the kernel of the calculus is the functions vanishing on $\sigma(U)$.</p>
+<p><em>Proof.</em> The calculus is the integral against $E$; the monomials are computed by the multiplicativity of the measure, $z^n\mapsto U^n$, and $z^{-n}\mapsto U^{-n}=(U^*)^n$; the kernel is the vanishing of $E$ off the support.</p>
+<p><strong>Corollary (spectral mapping and eigenvalues).</strong> $\sigma(f(U))=f(\sigma(U))$ for continuous $f$, the point spectrum of $U$ is the set of atoms of $E$, and an eigenvalue $\lambda$ has eigenspace $E(\{\lambda\})H$.</p>
+<p><em>Proof.</em> The spectral mapping theorem for the calculus and the identification of atoms with eigenvalues are the same as in the self-adjoint case, applied on the circle.</p>
+<h2 id="stones-theorem-and-one-parameter-groups">Stone's Theorem and One-Parameter Groups</h2>
+<p><strong>Definition.</strong> A <strong>strongly continuous one-parameter unitary group</strong> is a map $t\mapsto U(t)$ from $\mathbb{R}$ to $U(H)$ with $U(s+t)=U(s)U(t)$, $U(0)=I$, and $U(t)x\to x$ as $t\to0$ for every $x$.</p>
+<p><strong>Theorem (Stone).</strong> For every strongly continuous one-parameter unitary group $t\mapsto U(t)$ there is a self-adjoint operator $A$, generally unbounded, with</p>
+<p>$$
+U(t)=e^{itA}\quad(t\in\mathbb{R}),
+$$</p>
+<p>and $A$ is the generator of the group, determined by $A=\lim_{t\to0}(U(t)-I)/it$ on its domain;</p>
+<p>$$
+D(A)=\Bigl\{x:\lim_{t\to0}\frac{U(t)x-x}{it}\ \text{exists}\Bigr\}.
+$$</p>
+<p>Conversely every self-adjoint $A$ defines a strongly continuous one-parameter unitary group by the formula.</p>
+<p><em>Proof.</em> The spectral theorem for the unitary $U(t)$ furnishes the calculus, and the group law $U(s+t)=U(s)U(t)$ forces the spectrum of $U(t)$ to move additively with $t$; writing the spectral variable as $e^{it\lambda}$ assembles the measures into a single spectral measure of a self-adjoint $A$ whose calculus is the group; conversely the spectral theorem for a self-adjoint $A$ makes $e^{itA}$ a strongly continuous unitary group, and the two constructions are inverse.</p>
+<p><strong>Proposition (the generator and the functional calculus).</strong> The generator $A$ is self-adjoint and satisfies $U(t)=e^{itA}$ in the sense of the Borel calculus; it commutes with every $U(t)$, and $A$ is bounded exactly when $t\mapsto U(t)$ is norm-continuous, in which case the group is uniformly continuous and $U(t)$ is entire in $t$.</p>
+<p><em>Proof.</em> The commutativity is the statement that $A$ is the generator of the group, by the multiplicativity of the calculus; boundedness of $A$ makes $e^{itA}$ norm-continuous with $\|e^{itA}-I\|\le|t|\|A\|e^{|t|\|A\|}$, and conversely norm-continuity forces the group to be differentiable at $0$ in norm, which makes the generator bounded.</p>
+<p><strong>Example (the translation group and the rotation group).</strong> On $L^2(\mathbb{R})$ the group $U(t)f(x)=f(x-t)$ is unitary and strongly continuous with generator $A=i\,d/dx$; on $L^2(\mathbb{T})$ the group $U(t)f(\zeta)=f(e^{-it}\zeta)$ has generator the dilation by the rotation, whose spectrum is $\mathbb{Z}$ and whose spectral measure is atomic at the Fourier modes. These are the two standard pictures in which Stone's theorem is the statement that a continuous symmetry has an infinitesimal generator.</p>
+<p><strong>Example (the exponential of a self-adjoint operator).</strong> For a self-adjoint $A$ the family $U(t)=e^{-itA}$ is a strongly continuous one-parameter unitary group, and the differential equation $du/dt=-iAu$ is the differential form of Stone's theorem; the self-adjointness of the generator is exactly what makes the group unitary, and the functional calculus turns the equation into the statement that $u(t)=U(t)u(0)$ solves it for every $u(0)$ in the domain of $A$.</p>
+<h2 id="the-cayley-transform">The Cayley Transform</h2>
+<p><strong>Proposition (the transform links the two spectra).</strong> The <strong>Cayley transform</strong> $C(A)=(A-iI)(A+iI)^{-1}$ carries a bounded self-adjoint $A$ to a unitary $C(A)$ with $1\notin\sigma(C(A))$ and inverts to</p>
+<p>$$
+A=i(I+C(A))(I-C(A))^{-1},
+$$</p>
+<p>so the bounded self-adjoint operators are in bijection with the unitaries avoiding the point $1$; the map is continuous in the norm topology and its inverse is continuous.</p>
+<p><em>Proof.</em> The transform is the Möbius map $\lambda\mapsto(\lambda-i)/(\lambda+i)$ applied in the functional calculus, so it carries the real line to the circle and $1$ is the image of infinity, hence avoided; the inverse is the inverse Möbius map, and continuity is the continuity of the operations.</p>
+<p><strong>Remark (why the two spectral theorems agree).</strong> The Cayley transform sends the spectral measure of $A$ on the line to the spectral measure of $C(A)$ on the circle by the Möbius substitution, so the self-adjoint spectral theorem and the unitary spectral theorem are the same theorem read through one substitution of variable; Stone's theorem is the form this identity takes when the substitution is the exponential $\lambda\mapsto e^{it\lambda}$, and the unbounded self-adjoint operators correspond to the unitaries together with the choice of the point at infinity.</p>
+<h2 id="summary">Summary</h2>
+<p>A unitary operator is a surjective isometry, equivalently an operator with $U^*U=UU^*=I$, and it has spectrum on the unit circle; the unitaries form a compact topological group under the strong operator topology, which coincides with the weak operator topology there. The spectral theorem gives a projection-valued measure $E$ on the circle with $U=\int z\,dE(z)$, the functional calculus $f\mapsto f(U)=\int f\,dE$ is an isometric $*$-homomorphism sending $z^n$ to $U^n$, the spectrum is the support of $E$ and the point spectrum is the atomic part, and $U$ is unitarily equivalent to a multiplication by the variable on a direct sum of $L^2$ spaces on the circle. Stone's theorem identifies the strongly continuous one-parameter unitary groups with the self-adjoint operators through $U(t)=e^{itA}$, the generator being recovered as the derivative at the origin on its domain, so a continuous symmetry of a Hilbert space has an infinitesimal generator; the Cayley transform $C(A)=(A-iI)(A+iI)^{-1}$ is the Möbius substitution that carries the self-adjoint spectral measure on the line to the unitary spectral measure on the circle, and through it the two theorems are one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U^*U=UU^*=I$</td>
+<td>unitarity</td>
+</tr>
+<tr>
+<td>$U(H)$</td>
+<td>the unitary group, compact in the strong topology</td>
+</tr>
+<tr>
+<td>$\sigma(U)\subseteq\mathbb{T}$</td>
+<td>spectrum on the unit circle</td>
+</tr>
+<tr>
+<td>$U=\int_{\mathbb{T}}z\,dE(z)$</td>
+<td>spectral theorem for a unitary</td>
+</tr>
+<tr>
+<td>$f(U)=\int f\,dE$</td>
+<td>functional calculus on the circle</td>
+</tr>
+<tr>
+<td>$z^n\mapsto U^n$</td>
+<td>the calculus carries the Fourier monomials</td>
+</tr>
+<tr>
+<td>$U(t)$</td>
+<td>strongly continuous one-parameter unitary group</td>
+</tr>
+<tr>
+<td>$U(t)=e^{itA}$</td>
+<td>Stone's theorem</td>
+</tr>
+<tr>
+<td>$A=\lim_{t\to0}(U(t)-I)/it$</td>
+<td>generator of the group</td>
+</tr>
+<tr>
+<td>$C(A)=(A-iI)(A+iI)^{-1}$</td>
+<td>Cayley transform, links self-adjoint and unitary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marshall H. Stone, "On One-Parameter Unitary Groups in Hilbert Space", <em>Annals of Mathematics</em> <strong>33</strong> (1932), 643–648, for the original theorem.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for the unitary spectral theorem and the Cayley transform.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for Stone's theorem and the generator of a unitary group.</li>
+<li>Paul R. Halmos, <em>Introduction to Hilbert Space</em> (Chelsea, 2nd ed. 1957), for the spectral theory of the unitary operator.</li>
+<li>Kôsaku Yosida, <em>Functional Analysis</em> (Springer, 6th ed. 1980), for the semigroups, their generators and the Hille–Yosida theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

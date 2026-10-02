@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conformal Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-conformal-operator"><strong>The Conformal Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The conformal structure of a geometry is the metric read up to a pointwise positive scale, and the operators of that structure are the ones that preserve the scale only up to a factor: a <strong>conformal operator</strong> is a linear map that multiplies the quadratic form by a scalar, and on a manifold it is a map whose differential does the same at every point. The article reads the conformal operators of a quadratic space and of a conformal geometry in the operator layer of this Part, in the <strong>signed two-sided</strong> slot: the operators come in a two-parameter sandwich, and the scale carries a sign that the grading of the conformal densities records. The conformal group is the group of these operators, and the Weyl tensor is the invariant that survives when the scale is divided out.</p>
+<p>The article develops the linear conformal operator and the similarity group, the conformal Laplacian as the invariant differential operator of a conformal class, the conformal group of the sphere and Liouville's theorem as the rigidity statement of the operator group, and the Weyl tensor as the obstruction to conformal flatness. It treats the signed structure by the grading of the conformal weight: the operators on the densities of a fixed weight form a graded algebra, its grade involution flips the sign of the scale, and the signed sandwich is the two-sided operator twisted by that involution.</p>
+<p>The article assumes <em>Conformal Geometry</em> for the conformal class, the conformal group, Liouville's theorem, the conformal Laplacian and the Weyl tensor on a manifold; <em>Riemannian Geometry</em> for the curvature, the Riemann, Ricci and scalar curvature and the conformal change of the metric; and <em>Quadratic Forms and Polarisation</em> and <em>Clifford Algebras</em> of Part II for the quadratic form and its orthogonal and similarity groups. The article owns the operator reading of the conformal structure and the sign; the manifold theory and the twistor construction are <em>Conformal Geometry</em>. No physics is invoked, and no distance beyond the cited conformal class is introduced.</p>
+<h2 id="the-linear-conformal-operator">The Linear Conformal Operator</h2>
+<h3 id="definition-and-the-similarity-group">Definition and the Similarity Group</h3>
+<p><strong>Definition.</strong> Let $(V,q)$ be a quadratic space over a field $K$ of characteristic not two. A linear operator $T \in GL(V)$ is a <strong>conformal operator</strong> when it multiplies the form by a scalar,</p>
+<p>$$
+q(Tx) = \lambda(T)\, q(x) \quad \text{for all } x \in V ,
+$$</p>
+<p>for some $\lambda(T) \in K^\times$; the scalar is the <strong>conformal factor</strong> of the operator, and the conformal operators form the <strong>conformal group</strong> or <strong>similarity group</strong> $\operatorname{CO}(V,q)$, a subgroup of $GL(V)$ containing the orthogonal group $O(V,q)$ as the kernel of the factor.</p>
+<p><strong>Proposition.</strong> The factor is a group homomorphism $\lambda : \operatorname{CO}(V,q) \to K^\times$ and it sits in the exact sequence</p>
+<p>$$
+1 \longrightarrow O(V,q) \longrightarrow \operatorname{CO}(V,q) \xrightarrow{\ \lambda\ } K^\times \longrightarrow K^{\times 2} \longrightarrow 1 ,
+$$</p>
+<p>so the orthogonal group is the kernel of the factor and the scalars are the image up to squares; the conformal operators with a prescribed factor form a coset of the orthogonal group, and the group is generated by the orthogonal group and the scalar multiplications.</p>
+<p><strong>Proof.</strong> From $q(Tx) = \lambda(T)q(x)$ and the same for $S$, the composition has factor $\lambda(ST) = \lambda(S)\lambda(T)$, so $\lambda$ is a homomorphism; the group of factors is the image and the kernel is the orthogonal group by definition. A scalar multiplication $c \cdot \mathrm{id}$ has factor $c^2$, so the factors of the scalars are the squares, and every conformal operator is the product of an orthogonal operator and the scalar $\sqrt{\lambda(T)}$ after the square root is in the field or in a quadratic extension, which for the statement of the exact sequence is read over the algebraic closure.</p>
+<p><strong>Corollary (the matrix form and the polar decomposition).</strong> In a basis in which the form has the matrix $G$, the conformal operators are the matrices $T$ with</p>
+<p>$$
+T^{\mathsf T} G\, T = \lambda(T)\, G ,
+$$</p>
+<p>the <strong>similarity condition</strong>; the orthogonal operators are the case $\lambda = 1$, and the similarity condition is the equation that the article uses to read the conformal operators as the solutions of a quadratic matrix system.</p>
+<p><strong>Remark.</strong> The conformal group of a quadratic space is the operator group of the conformal class of the form; two forms that differ by a scalar have the same conformal group, so the group depends on the conformal class and not on the form, and this is the algebraic content of the conformal structure. In the Clifford algebra of the form the similarity condition is the statement that the operator preserves the form up to a positive or negative square, and the <strong>twisted conjugation</strong> $x \mapsto a\,x\,b$ that preserves the form is the <strong>signed</strong> two-sided operator of the conformal geometry, with $a, b$ subject to the condition $a x b$ preserving the quadratic cone.</p>
+<h3 id="the-conformal-laplacian">The Conformal Laplacian</h3>
+<p><strong>Definition.</strong> Let $(M,g)$ be a Riemannian manifold of dimension $n \geq 3$ with scalar curvature $\operatorname{scal}$ and Laplace–Beltrami operator $\Delta$. The <strong>conformal Laplacian</strong>, or <strong>Yamabe operator</strong>, is the differential operator</p>
+<p>$$
+L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g \cdot \mathrm{id} ,
+$$</p>
+<p>acting on functions.</p>
+<p><strong>Theorem (the conformal covariance of $L$).</strong> Under the conformal change $g' = \Omega^2 g$ with $\Omega$ a positive smooth function the conformal Laplacian transforms by</p>
+<p>$$
+L_{g'}(\varphi) = \Omega^{-\frac{n+2}{2}}\, L_g\!\left(\Omega^{\frac{n-2}{2}}\, \varphi\right) ,
+$$</p>
+<p>so that the operator is <strong>conformally covariant of weight</strong> $-(n+2)/2$: it intertwines the multiplication by the two powers of the conformal factor, and the equation $L_g \varphi = 0$ is conformally invariant when $\varphi$ transforms with the weight $(n-2)/2$.</p>
+<p>The theorem is the computation of the transformation of the Laplace–Beltrami operator and the scalar curvature under $g' = \Omega^2 g$ and the choice of the added multiple of the scalar curvature that makes the two failure terms cancel; it is the standard conformal covariance of the Yamabe operator, proved in <em>Conformal Geometry</em> and in <em>Riemannian Geometry</em>, and it is quoted here as the model of a conformally invariant operator.</p>
+<p><strong>Corollary (the conformal weight).</strong> A function, or a density, is said to have <strong>conformal weight</strong> $w$ when the replacement $g \mapsto \Omega^2 g$ multiplies it by $\Omega^w$; the multiplication by a function of weight $w$ is an operator on the graded space of the densities, and the conformal Laplacian is an operator of weight $-\frac{n+2}{2}$ acting on the densities of weight $\frac{n-2}{2}$. This grading by the conformal weight is the structure on which the sign of the article is built.</p>
+<h2 id="the-conformal-group-of-a-geometry">The Conformal Group of a Geometry</h2>
+<h3 id="the-group-of-conformal-diffeomorphisms">The Group of Conformal Diffeomorphisms</h3>
+<p><strong>Definition.</strong> Let $(M,\mathcal{C})$ be a conformal manifold. The <strong>conformal group</strong> $\operatorname{Conf}(M,\mathcal{C})$ is the group of the diffeomorphisms $f$ with $f^*g = \Omega_f^2 g$ for a representative $g$ and a positive function $\Omega_f$; its elements are the <strong>conformal operators</strong> of the geometry, and the assignment $f \mapsto \Omega_f$ is a cocycle-valued homomorphism whose kernel is the isometry group $\operatorname{Isom}(M,g)$.</p>
+<p><strong>Proposition.</strong> The conformal group contains the isometry group as the kernel of the conformal factor and acts on the conformal class; the quotient by the isometries is governed by the possible positive factors, and in dimension $n \geq 3$ the group is finite-dimensional, of dimension at most $(n+1)(n+2)/2$, with equality for the conformally flat manifolds. The statement and the bound are in <em>Conformal Geometry</em>, and the article records them as the group-theoretic form of the conformal operator.</p>
+<p><strong>Theorem (the conformal group of the sphere).</strong> The conformal group of the round sphere $S^n$ for $n \geq 3$ is</p>
+<p>$$
+\operatorname{Conf}(S^n) \cong O(n+1,1)/\{\pm 1\} ,
+$$</p>
+<p>the projective orthogonal group of the form of signature $(n+1,1)$; its action on the sphere is the action of the Möbius transformations, and the group is generated by the rotations, the dilations, the translations and the inversions. The isomorphism is the conformal compactification of $\mathbb{R}^n$ and the realisation of the conformal operators as the pseudo-orthogonal transformations of the space of two dimensions more.</p>
+<p>The theorem and its proof are in <em>Conformal Geometry</em>; the present article records the operator reading, that the conformal operators of the sphere are the classes of the pseudo-orthogonal operators on the ambient space, in the image of the same quotient mechanism that produces the projective orthogonal group in <em>Operators on a Projective Space</em>. The two operator groups arise from the same construction applied to two different forms.</p>
+<h3 id="liouvilles-theorem-as-the-rigidity-of-the-operator-group">Liouville's Theorem as the Rigidity of the Operator Group</h3>
+<p><strong>Theorem (Liouville).</strong> Let $n \geq 3$ and let $U \subseteq \mathbb{R}^n$ be a connected open set; every conformal map $f : U \to \mathbb{R}^n$ of class $C^3$ is the restriction of a Möbius transformation, so the conformal group of a domain is the restriction of the finite-dimensional Möbius group.</p>
+<p><strong>Proof sketch.</strong> The conformal condition expresses the first derivatives of $f$ through a scalar factor; differentiating twice more and using the symmetry of the mixed partial derivatives forces the third derivatives to be determined by the first and second, and the resulting system has only the Möbius solutions. The statement and the proof are in <em>Conformal Geometry</em>.</p>
+<p><strong>Remark.</strong> Liouville's theorem is the statement that the conformal operator group of a domain in dimension at least three is rigid: it is not larger than the Möbius group, so the only conformal operators are the ones visible from the ambient pseudo-orthogonal group. The dimension two is the exceptional case of the article, in which the conformal operators are the holomorphic maps of the complex analysis of Part III and the group is infinite-dimensional; the rigidity is a phenomenon of the dimension at least three, and it is the reason the conformal geometry of the present Part is a finite-dimensional geometry of a group.</p>
+<h2 id="the-weyl-tensor-as-the-invariant-of-the-operator-layer">The Weyl Tensor as the Invariant of the Operator Layer</h2>
+<p><strong>Definition.</strong> Let $(M,g)$ be a Riemannian manifold of dimension $n \geq 3$; the <strong>Weyl tensor</strong> $W$ is the totally trace-free part of the Riemann curvature with respect to the metric, the $(0,4)$-tensor</p>
+<p>$$
+W = R - \frac{1}{n-2}\left(\operatorname{Ric} - \frac{\operatorname{scal}}{2(n-1)}g\right) \,\wedge\, g ,
+$$</p>
+<p>where $\wedge$ is the Kulkarni–Nomizu product; its traces with respect to $g$ vanish.</p>
+<p><strong>Theorem (conformal invariance and flatness).</strong> The Weyl tensor is invariant under the conformal change $g \mapsto \Omega^2 g$, and a Riemannian manifold of dimension $n \geq 4$ is conformally flat if and only if $W \equiv 0$; in dimension $3$ the obstruction is the Cotton tensor and in dimension $2$ it is automatic.</p>
+<p>The theorem is the local conformal flatness theorem of <em>Riemannian Geometry</em> and <em>Conformal Geometry</em>; the article records the operator content: the Weyl tensor is the part of the curvature that the conformal operators cannot change, and the vanishing of the Weyl tensor is the condition that the conformal operator group acts transitively on the frames of the conformal structure in the infinitesimal sense, that is, that the conformal structure is locally the one of the Euclidean space.</p>
+<p><strong>Proposition (the operator reading of the Weyl tensor).</strong> The Weyl tensor is the obstruction to the local triviality of the conformal operator: a conformal geometry is locally the conformal geometry of the Euclidean space exactly when the curvature invariant of the conformal operators vanishes, and the Weyl tensor may be read as the failure of the conformal frame field to close under the conformal algebra of the geometry.</p>
+<p><strong>Proof.</strong> The conformal flatness condition is the existence of the local conformal coordinates; the transformation formula for the curvature under a conformal change of the metric shows that the Weyl tensor is the conformally invariant part, and its vanishing is the integrability condition for the existence of the coordinates. The computation is in <em>Riemannian Geometry</em>, and the operator interpretation is the statement of the present article.</p>
+<h2 id="the-signed-conformal-operator">The Signed Conformal Operator</h2>
+<p><strong>Definition.</strong> Let $\mathcal{D}$ be the graded vector space of the conformal densities of a conformal manifold, graded by the conformal weight, and let $\alpha$ be the <strong>grade involution</strong> that multiplies a density of weight $w$ by $(-1)^w$; the <strong>signed conformal operator</strong> is the two-sided operator</p>
+<p>$$
+\Theta^{\alpha}_{A,B}(\varphi) = A\,\alpha(\varphi)\,B ,
+$$</p>
+<p>where $A$ and $B$ are operators of the conformal weight $a$ and $b$ acting on the densities; the twist by $\alpha$ records the sign of the conformal factor, and it is the conformal instance of the signed sandwich of the corpus.</p>
+<p><strong>Proposition.</strong> The signed conformal operator is a two-parameter operator determined by the pair $(A,B)$ up to the simultaneous multiplication by a central density of even weight; the unsigned conformal operator is the case $\alpha = \mathrm{id}$, and the difference between the signed and the unsigned operators is the sign of the odd part of the grading, that is, the sign of the scale on the densities of odd weight.</p>
+<p><strong>Proof.</strong> The sandwich is the composition of three operators and depends on the pair; two pairs give the same operator exactly when their ratio acts trivially on the graded space, which is the simultaneous central multiplication; the statements about the unsigned case and the sign of the odd part are the definitions. The construction is the conformal realisation of the signed sandwich of <em>The Signed Sandwich on an Ordered Algebra</em>, with the conformal weight in place of the order grading.</p>
+<p><strong>Theorem (the covariance as the signed condition).</strong> The conformal covariance of the conformal Laplacian of the previous section is the statement that $L$ intertwines the signed conformal operators of weights $-(n+2)/2$ and $(n-2)/2$: for a positive function $\Omega$ regarded as a conformal operator of weight zero acting by multiplication on the densities of both weights, the transformed operator is the signed conjugation</p>
+<p>$$
+L_{g'} = \Omega^{-\frac{n+2}{2}}\, L_g\, \Omega^{\frac{n-2}{2}} ,
+$$</p>
+<p>the two-sided signed operator with the parameters the two powers of $\Omega$, and the conformal invariance of the equation $L\varphi = 0$ is the statement that the operator is a fixed point of this action on the densities of the appropriate weights.</p>
+<p><strong>Proof.</strong> The covariance formula of the conformal Laplacian is exactly the displayed conjugacy; the identification of the two powers as the two parameters of a signed two-sided operator is the definition, and the invariance of the kernel is the consequence that the left factor is invertible. The details of the transformation formula are in <em>Conformal Geometry</em>.</p>
+<p><strong>Remark (the sign and the orientation).</strong> In the oriented case the sign of the conformal factor is supplemented by the orientation of the frame, and the grade involution $\alpha$ above is the composition of the weight sign and the orientation sign; the <strong>signed conformal operator</strong> is then the operator that carries both, and it is the object that <em>The Signed Adjoint of the Conformal Operator</em> pairs with the adjoint of the conformal structure. This is the reason the conformal operator is placed in the signed two-sided slot of the category, and it is the sign that the adjoint article reverses.</p>
+<h2 id="summary">Summary</h2>
+<p>The conformal operator of a quadratic space is a linear map $T$ with $q(Tx) = \lambda(T)q(x)$, and the conformal operators form the similarity group $\operatorname{CO}(V,q)$, with the orthogonal group as the kernel of the factor and the scalars as the image up to squares; in a basis the condition is $T^{\mathsf T}G\,T = \lambda(T)G$, and the twisted conjugation $x \mapsto axb$ is the signed two-sided form of the same preservation. On a conformal manifold the conformal operators are the conformal diffeomorphisms, and the conformal Laplacian $L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$ is the invariant differential operator of the class, covariant of weight $-(n+2)/2$ under $g \mapsto \Omega^2 g$. The conformal group of the round sphere is $O(n+1,1)/\{\pm1\}$, realised by the Möbius transformations, and Liouville's theorem makes the conformal operator group of a domain of dimension at least three rigid, a restriction of the Möbius group. The Weyl tensor is the conformally invariant part of the curvature and the obstruction to conformal flatness, and it is the invariant of the operator layer that the conformal operators cannot change. The signed conformal operator is the two-sided operator $\Theta^{\alpha}_{A,B}(\varphi) = A\alpha(\varphi)B$ twisted by the weight grading, and the covariance of the conformal Laplacian is its statement.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(V,q)$</td>
+<td>Quadratic space over a field of characteristic not two</td>
+</tr>
+<tr>
+<td>$q(Tx) = \lambda(T)q(x)$</td>
+<td>Conformal (similarity) operator and factor</td>
+</tr>
+<tr>
+<td>$\operatorname{CO}(V,q)$</td>
+<td>Conformal group (similarity group)</td>
+</tr>
+<tr>
+<td>$O(V,q)$</td>
+<td>Orthogonal group, the kernel of the factor</td>
+</tr>
+<tr>
+<td>$T^{\mathsf T}G\,T = \lambda(T)G$</td>
+<td>Similarity condition in a basis</td>
+</tr>
+<tr>
+<td>$L_g = \Delta_g + \frac{n-2}{4(n-1)}\operatorname{scal}_g$</td>
+<td>Conformal Laplacian (Yamabe operator)</td>
+</tr>
+<tr>
+<td>conformal weight $w$</td>
+<td>Multiplicity $\Omega^w$ under $g \mapsto \Omega^2 g$</td>
+</tr>
+<tr>
+<td>$\operatorname{Conf}(M,\mathcal{C})$</td>
+<td>Conformal group of a conformal manifold</td>
+</tr>
+<tr>
+<td>$\operatorname{Conf}(S^n) \cong O(n+1,1)/\{\pm1\}$</td>
+<td>Conformal group of the round sphere</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>Weyl tensor, the trace-free part of the curvature</td>
+</tr>
+<tr>
+<td>Cotton tensor</td>
+<td>Obstruction to conformal flatness in dimension $3$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Grade involution of the conformal weight</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{A,B}(\varphi) = A\alpha(\varphi)B$</td>
+<td>Signed two-sided conformal operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Luther P. Eisenhart, <em>Riemannian Geometry</em> (Princeton University Press, 1926), for the conformal change of the metric and the Weyl tensor.</li>
+<li>Jan A. Schouten, <em>Ricci-Calculus</em>, 2nd ed. (Springer, 1954), for the Weyl and the Cotton tensors and the conformal invariants.</li>
+<li>Manfredo do Carmo, <em>Riemannian Geometry</em> (Birkhäuser, 1992), for the curvature tensors and the conformal flatness.</li>
+<li>John M. Lee, <em>Introduction to Riemannian Manifolds</em>, 2nd ed. (Springer, 2018), for the conformal Laplacian and the conformal covariance.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, vol. 2 (Cambridge University Press, 1986), for the conformal geometry, the Weyl tensor and the conformally invariant operators.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (Academic Press, 1978), for the conformal group and the rigidity theorems.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

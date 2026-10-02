@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adjoints under the Residue Pairing — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="adjoints-under-the-residue-pairing"><strong>Adjoints under the Residue Pairing</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The residue pairing of a valued field with an isometric involution is the pairing $\langle x,y\rangle = \mathrm{res}(x\,\sigma(y))$ of the valuation ring with values in the residue field, and it is the reduction of the form of the category to the residue: it is sesquilinear for the residue involution, its radical is the maximal ideal, and on the residue field it is the nondegenerate form determined by the residue involution. Its distinguishing feature is that it pairs the ring with itself through the product, so the adjoint of a left multiplication is a <em>right</em> multiplication, the two sides exchanging under the adjoint exactly as the two sides of a duality do; this is the sharpest contrast with the trace pairing, under which the adjoint of a left multiplication is a left multiplication. This article defines the residue pairing, proves its sesquilinearity and nondegeneracy, computes the adjoints of the elementary operators in explicit form, identifies the self-adjoint elements, and reads the pairing as the residue of the Hermitian form of the field.</p>
+<p>The article assumes the valuation, the valuation ring, the maximal ideal, the residue field and the completion from <em>Absolute Values, Valuations and Completions</em>; the residue operator and its kernel from <em>The Residue Operator of a Valued Field</em>; the residue involution and the isometric involution from <em>Involutive Valued Fields</em> and <em>Involutions of a Non-Archimedean Field</em>; the operator adjoint, the form of the category and the left regular representation from <em>The Involution on Bounded Operators of a Ring</em>; and the left and right multiplications from <em>The Left and Right Multiplication Operators on a Topological Ring</em>. The adjoint under a general Hermitian valuation is <em>The Adjoint under a Hermitian Valuation</em>, and the local case with its norm form is <em>Involutive Local Fields</em>.</p>
+<p>Throughout, $(F, v)$ is a valued field with valuation ring $\mathcal{O}$, maximal ideal $\mathrm{M}$, residue field $k = \mathcal{O}/\mathrm{M}$ and residue operator $\mathrm{res}$; $\sigma$ is an isometric involution with residue involution $\bar\sigma$; the <strong>residue pairing</strong> is</p>
+<p>$$
+\langle x,y\rangle = \mathrm{res}\bigl(x\,\sigma(y)\bigr)\in k , \qquad x, y\in\mathcal{O} ,
+$$</p>
+<p>and more generally $\langle x,y\rangle = \mathrm{res}(\tau(x\sigma(y)))$ for a trace $\tau$ on a ring of which $F$ is the residue; the <strong>residue norm form</strong> is $q(x) = \langle x,x\rangle = \mathrm{res}(x\sigma(x))$.</p>
+<h2 id="the-residue-pairing">The Residue Pairing</h2>
+<p><strong>Theorem (sesquilinearity and the radical).</strong> The residue pairing is additive in each variable and sesquilinear for the residue involution,</p>
+<p>$$
+\langle ax,by\rangle = \mathrm{res}(a)\,\bar\sigma\bigl(\mathrm{res}(b)\bigr)\,\langle x,y\rangle , \qquad a,b,x,y\in\mathcal{O} ,
+$$</p>
+<p>and its radical on the right, $\{x : \langle x,y\rangle = 0 \text{ for all } y\}$, is the maximal ideal $\mathrm{M}$; hence it induces a nondegenerate form on the residue field $k$.</p>
+<p><strong>Proof.</strong> Additivity is the additivity of the product, the residue operator and $\sigma$; for the sesquilinearity, $\langle ax,by\rangle = \mathrm{res}(ax\sigma(by)) = \mathrm{res}(a\,x\,\sigma(y)\,\sigma(b)) = \mathrm{res}(a)\mathrm{res}(x\sigma(y))\bar\sigma(\mathrm{res}(b))$, using that $\mathrm{res}(\sigma(b)) = \bar\sigma(\mathrm{res}(b))$ and the commutativity of $k$. For the radical, $\langle x,y\rangle = 0$ for all $y$ means $\mathrm{res}(x\sigma(y)) = 0$ for all $y$, that is $x\sigma(y)\in\mathrm{M}$ for all $y$, which for $y$ with $\sigma(y)$ a unit gives $x\in\mathrm{M}$; conversely $x\in\mathrm{M}$ gives the vanishing. Hence the radical is $\mathrm{M}$ and the induced form on $k$ is nondegenerate.</p>
+<p><strong>Corollary (the diagonal and the residue norm form).</strong> The diagonal $\langle x,x\rangle = \mathrm{res}(x\sigma(x))$ is the residue norm form $q(x)$, it satisfies $q(x)\in k^{\bar\sigma}$ when $x$ is a unit, and on the residue field it is the norm form $q(a) = a\bar\sigma(a)$ of the residue involution.</p>
+<p><strong>Proof.</strong> The diagonal is the residue of the norm form; its value is fixed by $\bar\sigma$ because $\mathrm{res}(x\sigma(x))$ is read on the class of $x\sigma(x)$, and the induced form on $k$ is $a\bar\sigma(a)$.</p>
+<h2 id="the-adjoints-of-the-elementary-operators">The Adjoints of the Elementary Operators</h2>
+<p><strong>Theorem (the adjoint exchanges the sides).</strong> For a unit $a\in\mathcal{O}^\times$ the left and right multiplications are adjointable under the residue pairing, with</p>
+<p>$$
+(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)} ,
+$$</p>
+<p>so the adjoint of a left multiplication is a <strong>right</strong> multiplication, and conversely; the adjoint operation therefore exchanges the two one-sided families.</p>
+<p><strong>Proof.</strong> The identity $\langle ax,y\rangle = \langle x,T^\dagger y\rangle$ for all $x,y$ reads $\mathrm{res}(ax\sigma(y)) = \mathrm{res}(x\sigma(T^\dagger y))$; putting $x = 1$ gives $\mathrm{res}(a\sigma(y)) = \mathrm{res}(\sigma(T^\dagger y))$ for all $y$, so $\sigma(T^\dagger y)\equiv a\sigma(y)\pmod{\mathrm{M}}$. Applying $\sigma$ gives $T^\dagger y\equiv\sigma(a\sigma(y)) = \sigma(\sigma(y))\sigma(a) = y\,\sigma(a)$, that is $T^\dagger y = R_{\sigma(a)}y$ modulo $\mathrm{M}$. Conversely, for $T^\dagger = R_{\sigma(a)}$ the two sides are $\mathrm{res}(ax\sigma(y))$ and $\mathrm{res}(xa\sigma(y))$, which agree because $k$ is commutative; the adjoint is unique because the pairing is nondegenerate on the residue.</p>
+<p><strong>Corollary (the two pairings compared).</strong> Under the trace pairing of <em>The Involution on Bounded Operators of a Ring</em> the adjoint of $L_a$ is $L_{\sigma(a)}$, a left multiplication; under the residue pairing it is $R_{\sigma(a)}$, a right multiplication. The two adjoints of the same operator differ, and the difference is exactly the pairing, which is what the corpus means by saying that the adjoint of an operator is taken <strong>with respect to a form</strong>.</p>
+<p><strong>Proof.</strong> The trace pairing is $\{x,y\} = \tau(x\sigma(y))$ with $\tau$ cyclic, giving $\{ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a) = \{x,L_{\sigma(a)}y\}$, a left multiplication; under the residue pairing the second variable enters as $\sigma(y)$ on the right of $x$, and the adjoint identity forces $T^\dagger y\equiv y\sigma(a)$, a right multiplication. The trace is cyclic and the residue pairing is not; the residue commutativity, not cyclicity, closes the residue computation.</p>
+<h2 id="the-self-adjoint-elements">The Self-Adjoint Elements</h2>
+<p><strong>Theorem (the self-adjoint elements of the residue pairing).</strong> An element $a\in\mathcal{O}^\times$ is such that $L_a$ is self-adjoint for the residue pairing exactly when</p>
+<p>$$
+a \text{ is central modulo } \mathrm{M} \text{ and } \sigma(a) \equiv a \pmod{\mathrm{M}} ,
+$$</p>
+<p>that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint element of $k$; the self-adjoint elements in this sense form the central self-adjoint part of the residue field, and they form a subring of $k$ when $k$ is commutative, namely the fixed field $k^{\bar\sigma}$.</p>
+<p><strong>Proof.</strong> $L_a^\dagger = R_{\sigma(a)}$ by the theorem, and $L_a = R_{\sigma(a)}$ as operators on the residue exactly when $ax\equiv x\sigma(a)\pmod{\mathrm{M}}$ for all $x$, that is $xa\equiv x\sigma(a)$, which for $x$ a unit is $a\equiv\sigma(a)$ together with the centrality; the last statement is that the fixed field of $\bar\sigma$ is a subfield.</p>
+<p><strong>Corollary (the involutive elements and the residue norm form).</strong> An element $a$ with $a\sigma(a) = 1$ is $\sigma$-unitary and has residue norm form $q(a) = 1$; the $\sigma$-unitary elements of $\mathcal{O}$ form a subgroup, and their residues form the norm-one subgroup of $k$ when the residue involution is nontrivial.</p>
+<p><strong>Proof.</strong> The unitarity condition is that of <em>Involutive Topological Division Rings</em>, read modulo $\mathrm{M}$; the residue norm form of a unitary element is $\mathrm{res}(1) = 1$.</p>
+<h2 id="topological-compatibility-and-examples">Topological Compatibility and Examples</h2>
+<p><strong>Theorem (continuity).</strong> The residue pairing is continuous for the valuation topology on $\mathcal{O}\times\mathcal{O}$, the map $T\mapsto T^\dagger$ is continuous for the topology of bounded convergence, and the self-adjoint elements are closed in $\mathcal{O}$; the pairing of the completion is the pairing of the residue.</p>
+<p><strong>Proof.</strong> The residue operator is continuous by <em>The Residue Operator of a Valued Field</em>, and the product and $\sigma$ are continuous, so the pairing is continuous; the adjoint map is the composition of the continuity of the pairing with the operator topology; the self-adjoint set is closed by <em>The Involution on Bounded Operators of a Ring</em>. The completion has the same residue field and residue involution, so the pairing does not change.</p>
+<p><strong>Example ($\mathbb{Z}_p[i]$ with the conjugation).</strong> The Gaussian integers of the $p$-adic field, $p$ inert, with $i\mapsto -i$: $\mathcal{O} = \mathbb{Z}_p[i]$, $\mathrm{M} = p\mathbb{Z}_p[i]$, $k = \mathbb{F}_{p^2}$, and $\bar\sigma$ is the Frobenius; the residue pairing is $\langle x,y\rangle = \mathrm{res}(x\bar y)$ with the adjoint of $L_a$ equal to $R_{\bar a}$, the self-adjoint elements being the central ones, that is the units of $\mathbb{Z}_p$.</p>
+<p><strong>Example (a ramified local field).</strong> For $\mathbb{Q}_p(\sqrt p)$ the residue field is $\mathbb{F}_p$ and the residue involution is the identity; the residue pairing is symmetric, the adjoint of $L_a$ is $R_a$, and every element is self-adjoint up to centrality, so the residue pairing sees no involution.</p>
+<p><strong>Example (the finite field).</strong> For $F = \mathbb{F}_q((t))$ with the identity involution the residue pairing is the standard nondegenerate pairing $\mathbb{F}_q\times\mathbb{F}_q\to\mathbb{F}_q$, $(x,y)\mapsto xy$, and the adjoint of $L_a$ is $R_a$, since $\sigma$ is trivial.</p>
+<h2 id="summary">Summary</h2>
+<p>The residue pairing $\langle x,y\rangle = \mathrm{res}(x\sigma(y))$ of a valued field with an isometric involution is additive, sesquilinear for the residue involution $\bar\sigma$, with radical the maximal ideal, so that it induces the nondegenerate form $q(a) = a\bar\sigma(a)$ on the residue field; its diagonal is the residue norm form. The adjoint taken with respect to it converts one-sided operators into the opposite ones, $(L_a)^\dagger = R_{\sigma(a)}$ and $(R_b)^\dagger = L_{\sigma(b)}$ for units, in contrast with the trace pairing, under which $(L_a)^\dagger = L_{\sigma(a)}$; the adjoint of an operator is therefore form-dependent, and the residue pairing is the form whose adjoint exchanges the sides. The self-adjoint elements of the residue pairing are the elements that are central and $\bar\sigma$-fixed modulo the maximal ideal, and the $\sigma$-unitary elements reduce to the norm-one subgroup of the residue field. The pairing is continuous, the adjoint map is continuous in the topology of bounded convergence, and the self-adjoint elements are closed; the completion carries the same residue pairing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{O}$, $\mathrm{M}$, $k$, $\mathrm{res}$</td>
+<td>Valuation ring, maximal ideal, residue field, residue operator</td>
+</tr>
+<tr>
+<td>$\sigma$, $\bar\sigma$</td>
+<td>Isometric involution and its residue involution</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle = \mathrm{res}(x\sigma(y))$</td>
+<td>The residue pairing</td>
+</tr>
+<tr>
+<td>$q(x) = \langle x,x\rangle$</td>
+<td>The residue norm form</td>
+</tr>
+<tr>
+<td>$\mathrm{rad}\langle,\rangle = \mathrm{M}$</td>
+<td>The radical</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = R_{\sigma(a)}$, $(R_b)^\dagger = L_{\sigma(b)}$</td>
+<td>Adjoints exchange the sides</td>
+</tr>
+<tr>
+<td>$a$ central and $\sigma(a)\equiv a$</td>
+<td>Self-adjoint elements of the residue pairing</td>
+</tr>
+<tr>
+<td>$a\sigma(a) = 1$</td>
+<td>$\sigma$-unitary elements, residue norm one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the residue field, the residue operator and the quadratic residue form.</li>
+<li>Jürgen Neukirch, <em>Algebraic Number Theory</em> (Springer, 1999), for the residue pairing, the norm and trace pairings and their nondegeneracy.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for sesquilinear forms over a ring with involution and their adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the residual forms of an involution and the norm form of the residue.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric elements and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

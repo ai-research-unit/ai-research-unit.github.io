@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convex Sets and the Convex Hull — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="convex-sets-and-the-convex-hull"><strong>Convex Sets and the Convex Hull</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A subset of a real vector space is <strong>convex</strong> when it contains the segment joining any two of its points, and the <strong>convex hull</strong> of a set is the smallest convex set containing it. Convexity is a structure of the affine geometry of a vector space, and it needs no distance: it is visible in the linear operations alone. The results of this article use a topology only where compactness is required, so the space is a real vector space, and, when a closure or a limit occurs, a locally convex space in the sense of <em>Locally Convex Spaces</em>.</p>
+<p>The finite-dimensional calculus of convex sets — Carathéodory's bound, the relative interior, the nearest-point map, the support and separation theorems, polyhedra and the Minkowski–Weyl theorem — is developed in <em>Convex Analysis</em>, in the <em>Foundations of Analysis</em> category of this Part. That article is the owner of those results and they are cited here, not restated. What this article adds is the part of the theory that is not finite-dimensional: the convex hull read as a <strong>closure operator</strong>, the <strong>faces</strong> of a convex set, and the <strong>extreme points</strong>, whose theory culminates in the <strong>Krein–Milman theorem</strong> — a compact convex set is the closed convex hull of its extreme points — together with the converse of Milman. These are the objects on which the later articles of this category build: the extremal rays of a cone, the integral representation of Choquet, and the operators that a convex set carries.</p>
+<p>The topology used is the one of <em>Topological Modules and Vector Spaces</em> and <em>Locally Convex Spaces</em>, the duality and the separation theorem are <em>Duality Theory</em>, and the order-theoretic vocabulary of a closure operator is <em>Order Theory and Lattices</em>. The article names the derivative and the measure, which are the instruments of this Part, only where a result of <em>Convex Analysis</em> uses them.</p>
+<h2 id="convex-sets-in-a-vector-space">Convex Sets in a Vector Space</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p>Let $E$ be a real vector space.</p>
+<p><strong>Definition.</strong> A subset $C\subseteq E$ is <strong>convex</strong> when</p>
+<p>$$
+(1-t)\,x + t\,y \in C \qquad \text{for all } x,y\in C \text{ and } t\in[0,1].
+$$</p>
+<p>A <strong>convex combination</strong> of a finite family $x_1,\dots,x_k$ is a sum $\sum_i t_i x_i$ with $t_i\geq0$ and $\sum_i t_i = 1$; a <strong>conical combination</strong> drops the condition on the sum, and an <strong>affine combination</strong> asks only that $\sum_i t_i = 1$. Convexity is exactly closure under convex combinations, proved by induction on the number of terms.</p>
+<p><strong>Proposition (elementary stability).</strong> The intersection of any family of convex sets is convex; the sum $C_1 + C_2$ and the image $T(C)$ under a linear map are convex; the product of convex sets is convex; and if $C$ is convex, $x\in C$ and $\lambda>0$ then $\lambda(C-x)$ is convex and contains the origin.</p>
+<p><em>Proof.</em> The intersection statement is immediate from the definition; a convex combination of points of $C_1+C_2$ splits according to the coefficient and reassembles; $T$ commutes with convex combinations; and the last statement is the invariance of convexity under an affine map.</p>
+<p>The <strong>cone</strong> generated by a set $A$ is the set of conical combinations of points of $A$, and it is convex and closed under nonnegative scaling. The <strong>affine hull</strong> $\operatorname{aff}(A)$ is the set of affine combinations, the smallest affine subspace containing $A$; the <strong>convex hull</strong> is the next definition.</p>
+<h3 id="the-convex-hull">The Convex Hull</h3>
+<p><strong>Definition.</strong> The <strong>convex hull</strong> of $A\subseteq E$ is</p>
+<p>$$
+\operatorname{conv}(A) = \Bigl\{\sum_{i=1}^{k} t_i a_i : k\geq1,\ a_i\in A,\ t_i\geq0,\ \sum_{i=1}^{k} t_i = 1\Bigr\},
+$$</p>
+<p>the set of all convex combinations of finite families of points of $A$.</p>
+<p><strong>Proposition (the hull is a convex set, and it is the least one).</strong> $\operatorname{conv}(A)$ is convex, contains $A$, and is contained in every convex set that contains $A$.</p>
+<p><em>Proof.</em> A convex combination of two convex combinations, with coefficient $t\in[0,1]$, is again a convex combination of points of $A$ after discarding the terms whose coefficient is zero, so the hull is convex; it contains $A$ through the one-term combinations; and any convex set containing $A$ contains every convex combination of its points, by induction on the number of terms, so it contains the hull.</p>
+<p><strong>Proposition (the operators).</strong> The maps $A\mapsto \operatorname{conv}(A)$, $A\mapsto \operatorname{aff}(A)$ and $A\mapsto \operatorname{cone}(A)$ are monotone and increasing. The convex hull is <strong>idempotent</strong>, $\operatorname{conv}(\operatorname{conv}(A)) = \operatorname{conv}(A)$, so it is a <strong>closure operator</strong> on the lattice of subsets of $E$ in the sense of <em>Order Theory and Lattices</em>; its fixed points are exactly the convex sets, and $\operatorname{conv}$ is the least closed set containing $A$.</p>
+<p><em>Proof.</em> Monotonicity and $A\subseteq\operatorname{conv}(A)$ are read off the definition; idempotence holds because a convex combination of convex combinations expands into a convex combination, using that a positive combination of nonnegative coefficients normalises; and a closure operator is characterised by these three properties, its fixed points being the sets equal to their hulls.</p>
+<p>The <strong>closed convex hull</strong> $\overline{\operatorname{conv}}(A)$ is the closure of $\operatorname{conv}(A)$; in a topological vector space it is the least closed convex set containing $A$, and it is again a closure operator. The two operators differ as soon as the space is infinite-dimensional and not locally compact: the closed convex hull of a compact set need not be compact, and the closed convex hull of a convex set need not be closed.</p>
+<h3 id="extreme-points-and-faces">Extreme Points and Faces</h3>
+<p><strong>Definition.</strong> Let $C\subseteq E$ be convex. A point $x\in C$ is <strong>extreme</strong> when it is not the midpoint of two distinct points of $C$: if $x = \tfrac12(y+z)$ with $y,z\in C$, then $y = z = x$. The set of extreme points is written $\operatorname{ext}(C)$.</p>
+<p>A subset $F\subseteq C$ is a <strong>face</strong> of $C$ when it is convex and satisfies the stronger condition: if $x = (1-t)y + tz \in F$ with $y,z\in C$ and $0 < t < 1$, then $y,z\in F$. A face is <strong>proper</strong> when $F\neq C$, and <strong>exposed</strong> when there is a continuous linear functional $f$ with $F = \{x\in C : f(x) = \sup_C f\}$.</p>
+<p><strong>Proposition.</strong> Every face of a convex set is convex; an intersection of faces is a face; the extreme points are exactly the singleton faces; and a face of a face is a face of the original set.</p>
+<p><em>Proof.</em> Convexity is part of the definition of a face, and the intersection of convex sets is convex; the face condition passes to the intersection. The second assertion is the unwinding of the definitions: a point is extreme exactly when the singleton consisting of it satisfies the face condition. For the third, the face condition for $F$ applied to a point of a face of $F$ is the face condition for the larger set, because the segments with endpoints in $C$ that meet $F$ at an interior point have their endpoints in $F$.</p>
+<p><strong>Proposition (a compact convex set has an extreme point).</strong> Let $K$ be a nonempty compact convex subset of a locally convex space. Then $\operatorname{ext}(K)\neq\emptyset$.</p>
+<p><em>Proof.</em> The family of nonempty compact subsets of $K$ that are faces of $K$ is nonempty (it contains $K$) and is ordered by inclusion; a chain has nonempty intersection by the finite intersection property of a compact set, and the intersection is a compact face, so the family has a maximal element $F$ by Zorn's lemma. A maximal compact face has no proper face other than the empty set. If $F$ contained two distinct points $x, y$, the separation theorem of <em>Duality Theory</em> would give a continuous functional $f$ not constant on $F$, and the set of points of $F$ where $f$ attains its maximum would be a nonempty proper face of $F$, a contradiction. Hence $F$ is a singleton, and its point is extreme in $K$.</p>
+<p>The proof is the standard one; it uses the axiom of choice through Zorn's lemma and the separation theorem for a locally convex space. The finite-dimensional case is <em>Convex Analysis</em>.</p>
+<h3 id="the-kreinmilman-theorem">The Krein–Milman Theorem</h3>
+<p><strong>Theorem (Krein–Milman).</strong> Let $K$ be a compact convex subset of a locally convex space. Then</p>
+<p>$$
+K = \overline{\operatorname{conv}}\bigl(\operatorname{ext}(K)\bigr).
+$$</p>
+<p>In particular a nonempty compact convex set has extreme points, and two compact convex sets with the same extreme points coincide.</p>
+<p><em>Proof.</em> The inclusion $\supseteq$ holds because $K$ is convex and closed and the extreme points lie in $K$. For the converse, suppose some point $a\in K$ were outside the closed convex subset $L = \overline{\operatorname{conv}}(\operatorname{ext} K)$. The separation theorem of <em>Duality Theory</em> would give a continuous linear functional $f$ with $f(a) > \sup_L f$; the set $F = \{x\in K : f(x) = \sup_K f\}$ is a nonempty compact face of $K$ and misses $L$, so it contains no extreme point of $K$. But by the previous proposition applied to $F$, which is compact convex, $F$ has an extreme point $x$; and $x$, being extreme in $F$, is extreme in $K$, a contradiction.</p>
+<p><strong>Theorem (Milman's converse).</strong> Let $K$ be a compact convex set and let $T\subseteq K$ satisfy $K = \overline{\operatorname{conv}}(T)$. Then every extreme point of $K$ lies in $\overline{T}$.</p>
+<p><em>Proof sketch.</em> Let $x\in\operatorname{ext}(K)$ and suppose $x\notin\overline{T}$. Separating $x$ from the closed convex set $\overline{\operatorname{conv}}(T) = K$ gives a continuous functional $f$ and a number $\alpha$ with $f(x) > \alpha > \sup_T f$. The set $F = \{y\in K : f(y) \geq \alpha\}$ is a nonempty compact face of $K$ disjoint from $T$, and $x\notin F$; the extreme points of $F$ are extreme in $K$ and are not in $\overline{T}$. Repeating the argument with $F$ in place of $K$, and iterating, produces a decreasing sequence of compact faces with extreme points progressively further from $\overline{T}$; the intersection of a maximal chain of such faces is a face whose extreme points are extreme in $K$ and lie in $\overline{T}$, contradicting the choice of $x$ above $\alpha$. The finite iteration carried out on the faces alone yields the claim.</p>
+<h3 id="the-finite-dimensional-case">The Finite-Dimensional Case</h3>
+<p>In $\mathbb{R}^n$ the separation theorem above is the supporting-hyperplane theorem, and compactness is local: a closed and bounded convex set is compact, its extreme points are the vertices it has, and the Krein–Milman theorem reduces to Minkowski's theorem, that a compact convex set is the convex hull of its extreme points. The bound on the number of points needed is Carathéodory's, $n+1$; both are <em>Convex Analysis</em>, together with the polyhedral case, in which the extreme points and the extreme rays are finite in number. In infinite dimension Carathéodory's bound fails, and the closure in the Krein–Milman statement cannot be removed in general.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-unit-ball-of-a-normed-space">The Unit Ball of a Normed Space</h3>
+<p>Let $E$ be a normed space and let $B = \{x : \lVert x\rVert\leq1\}$ be its closed unit ball, convex by the triangle inequality. A point $x$ is extreme in $B$ exactly when $\lVert x\rVert = 1$ and $x$ is not the midpoint of two distinct unit vectors; the set of extreme points is the <strong>unit sphere</strong> only in the finite-dimensional strictly convex case. For $E = \ell^1$, whose unit ball is the closed convex hull of the vectors $\pm e_n$, the extreme points are exactly the $\pm e_n$, and the Krein–Milman theorem reads $B = \overline{\operatorname{conv}}\{\pm e_n\}$: every summable family with $\lVert x\rVert_1\leq1$ is the closed convex hull of the basis vectors, and the closure is not removable, since a point such as $x = (\tfrac12,\tfrac12,0,\dots)$ is not a finite or countable convex combination with sum one of the $\pm e_n$.</p>
+<h3 id="a-simplex">A Simplex</h3>
+<p>Let $K$ be a compact convex set whose extreme points are a finite set $\{v_1,\dots,v_n\}$. Then every point of $K$ is a convex combination of the $v_i$, the representation is unique, and $K$ is a <strong>simplex</strong>; the functional $x\mapsto (t_1,\dots,t_n)$ is the affine isomorphism onto the standard simplex. The compact convex sets in the plane are the only case in which the extreme-point set separates the simplexes from the polygons, and they are the elementary instance of the Choquet theory of a later article in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>A subset of a real vector space is convex when it contains the segments between its points, and the convex hull $\operatorname{conv}(A)$ is the set of finite convex combinations of points of $A$, the least convex set containing $A$. The hull is a closure operator on the lattice of subsets — monotone, increasing and idempotent — whose fixed points are the convex sets, and the closed convex hull is the corresponding operator for closed convex sets. The faces of a convex set are its convex subsets with the midpoint property, the extreme points are the singleton faces, an intersection of faces is a face, and a compact convex set has an extreme point, by Zorn's lemma and the separation theorem. The <strong>Krein–Milman theorem</strong> states that a compact convex subset of a locally convex space is the closed convex hull of its extreme points, so two such sets with the same extreme points coincide; <strong>Milman's converse</strong> states that if $K = \overline{\operatorname{conv}}(T)$ then every extreme point of $K$ lies in the closure of $T$. In finite dimension the theorem is Minkowski's, the extreme points are finite in the polyhedral case, and Carathéodory's bound $n+1$ on the number of points in a convex combination is available; in infinite dimension the bound fails and the closure in the theorem cannot be removed. The finite-dimensional calculus of convex sets — relative interiors, projections, separation, polyhedra — is <em>Convex Analysis</em>; the separation theorem invoked here is <em>Duality Theory</em>; and the closure-operator language is <em>Order Theory and Lattices</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$</td>
+<td>Real vector space, locally convex when a topology is used</td>
+</tr>
+<tr>
+<td>$C$, $K$, $A$</td>
+<td>A convex set; a compact convex set; an arbitrary set</td>
+</tr>
+<tr>
+<td>$\operatorname{conv}(A)$</td>
+<td>Convex hull, the set of finite convex combinations</td>
+</tr>
+<tr>
+<td>$\operatorname{aff}(A)$, $\operatorname{cone}(A)$</td>
+<td>Affine hull, conical hull</td>
+</tr>
+<tr>
+<td>$\overline{\operatorname{conv}}(A)$</td>
+<td>Closed convex hull</td>
+</tr>
+<tr>
+<td>$\operatorname{ext}(C)$</td>
+<td>Set of extreme points</td>
+</tr>
+<tr>
+<td>Face, proper face</td>
+<td>A convex subset with the midpoint property; one that is not all of $C$</td>
+</tr>
+<tr>
+<td>Exposed face</td>
+<td>A face cut out by a continuous functional attaining its maximum</td>
+</tr>
+<tr>
+<td>$f$</td>
+<td>Continuous linear functional used to expose a face or separate a point</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Mark Krein and David Milman, "On extreme points of regular convex sets", <em>Studia Mathematica</em> <strong>9</strong> (1940), 133–138, for the original Krein–Milman theorem.</li>
+<li>David Milman, "Characteristics of extremal points of regularly convex sets", <em>Doklady Akademii Nauk SSSR</em> <strong>57</strong> (1947), 119–122, for the converse that bears his name.</li>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces</em>, Chapters 1–5 (Springer, 1987), for convexity, separation and the extreme-point theory in locally convex spaces.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part I: General Theory</em> (Interscience, 1958), for the Krein–Milman theorem and its consequences.</li>
+<li>R. Tyrrell Rockafellar, <em>Convex Analysis</em> (Princeton University Press, 1970), for the finite-dimensional theory of convex hulls, extreme points and polyhedra.</li>
+<li>Gustave Choquet, <em>Lectures on Analysis, vol. II: Representation Theory</em> (Benjamin, 1969), for extreme points, faces and the integral representation that follows.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

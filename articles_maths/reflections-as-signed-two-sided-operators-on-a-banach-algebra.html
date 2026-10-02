@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on a Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-a-banach-algebra"><strong>Reflections as Signed Two-Sided Operators on a Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An order-two symmetry of an algebra is an involutive automorphism, and the symmetries that a Banach algebra carries with respect to a grade involution $\alpha$ are the automorphisms of order two of the form</p>
+<p>$$
+\rho_u(x) = u\,\alpha(x)\,u^{-1} ,
+$$</p>
+<p>one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a <strong>signed two-sided operator</strong>, the signed sandwich $S_{u,u^{-1}}$, and it is an involutive automorphism of the algebra. This article studies the reflections of a Banach algebra: the reflector condition that makes a signed conjugation an involution, the square and the eigenvalue decomposition, the correspondence between the reflectors and the reflections with its kernel the central units, and the degenerate cases in which the family collapses. The topology contributes the norm of the reflection and the closedness of its fixed set, and it contributes nothing else, because a reflection is an automorphism and the algebraic statements already hold.</p>
+<p>The article assumes the signed sandwich, its decomposition, its multiplication table and its inverse from <em>The Signed Sandwich on a Banach Algebra</em>, the article immediately preceding; the Banach algebra, its norm, the unit group and the centre from <em>Topological Algebras and Banach Algebras</em>; the bounded operators and the operator norm from <em>Operators on a Banach Algebra</em>; the involutive automorphism, the grading and the inner automorphisms from <em>Involutive Topological Linear Algebras</em> and <em>Reflections as Signed Two-Sided Operators on an Algebra</em>; and the completeness and closed subalgebras of the operator algebra from <em>The Operator Algebra of a Banach Space</em>. The anti-automorphism involution $\sigma$ is the <code>- * Theory</code> structure and is not used; the adjoint and the self-adjointness of the reflection are <em>The Signed Adjoint of the Reflection on a Banach Algebra</em>, later still.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, centre $Z(A)$ and unit group $A^\times$; $\alpha$ is a continuous involutive automorphism; $c_t(x) = txt^{-1}$ is the inner automorphism by a unit $t$; the <strong>reflection</strong> determined by a unit $u$ is $\rho_u = c_u\alpha = S_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$; and $A^\pm_\rho$ are the $\pm1$-eigenspaces of $\rho$ when $2$ is invertible.</p>
+<h2 id="the-reflector">The Reflector</h2>
+<p><strong>Definition.</strong> A <strong>reflector</strong> of $A$ with respect to $\alpha$ is a unit $u \in A^\times$ with $u\alpha(u) \in Z(A)$. The <strong>reflection</strong> determined by a reflector $u$ is the signed conjugation $\rho_u = c_u\alpha = S_{u,u^{-1}}$. The reflectors are written $R^\times(A,\alpha)$ and the reflections $\mathrm{Ref}(A,\alpha)$.</p>
+<p><strong>Theorem (the reflection is an involutive automorphism).</strong> For every unit $u$ the signed conjugation $\rho_u$ is a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$, and</p>
+<p>$$
+\rho_u^2 = c_{u\alpha(u)} ,
+$$</p>
+<p>so that $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector. Conversely every signed conjugation that is an involution has a reflector parameter.</p>
+<p><strong>Proof.</strong> The signed conjugation is a composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism; it is bounded because $c_u$, $\alpha$ and $c_u^{-1} = c_{u^{-1}}$ are. The square is $\rho_u^2(x) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)x\alpha(u)^{-1}u^{-1} = c_{u\alpha(u)}(x)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its conjugating element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector, and the converse is the same computation read backwards. $\square$</p>
+<p><strong>Corollary (the identity and the grade involution).</strong> The unit $1$ is a reflector with $\rho_1 = \alpha$, so the grade involution is always a reflection of the family; the family is nonempty as soon as $\alpha$ is defined, and it contains $\mathrm{id}$ only when $\alpha = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> $1\cdot\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$. The reflection $\rho_u$ equals the identity exactly when $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$, which forces $\alpha = \mathrm{id}$ on a unital algebra when $u = 1$; in general $\mathrm{id}$ is a reflection only for the inner realisation of the identity. $\square$</p>
+<h2 id="the-eigenvalue-decomposition">The Eigenvalue Decomposition</h2>
+<p><strong>Proposition (fixed subalgebra and negated part).</strong> Let $u$ be a reflector and $\rho = \rho_u$. Then, when $2$ is invertible,</p>
+<p>$$
+A = A^+_\rho \oplus A^-_\rho , \qquad A^+_\rho = \{x : \rho(x) = x\} , \qquad A^-_\rho = \{x : \rho(x) = -x\} ,
+$$</p>
+<p>the fixed set $A^+_\rho$ is a closed subalgebra, the negated part $A^-_\rho$ is a closed subspace, and the multiplication table of the grading holds:</p>
+<p>$$
+A^+_\rho A^+_\rho \subseteq A^+_\rho , \quad A^+_\rho A^-_\rho \subseteq A^-_\rho , \quad A^-_\rho A^+_\rho \subseteq A^-_\rho , \quad A^-_\rho A^-_\rho \subseteq A^+_\rho .
+$$</p>
+<p><strong>Proof.</strong> The map $\rho$ is a continuous involutive automorphism, so its eigenspaces for $\pm1$ are its fixed set and its negated part, they sum directly to $A$ by the averaging $x = \tfrac12(x + \rho(x)) + \tfrac12(x - \rho(x))$, and the multiplication table is the multiplicativity of $\rho$. Closedness is the closedness of the fixed set of a continuous map and of the equalizer of $\rho$ with $-\mathrm{id}$. $\square$</p>
+<p><strong>Corollary (determination by the fixed subalgebra).</strong> A reflection is determined by its fixed subalgebra and by its negated part; two reflections with the same fixed subalgebra are equal.</p>
+<p><strong>Proof.</strong> An automorphism of order two is determined by its action on the $\pm1$-eigenspaces, and the eigenspaces determine each other by the direct sum. $\square$</p>
+<p><strong>Remark (the topology adds closedness).</strong> The algebraic content of the decomposition is that of the involutive automorphism; the topology adds that both parts are closed, because $\rho$ is continuous, and that the averaging maps are continuous. No norm, no form and no measure enters the algebra of the reflection beyond that.</p>
+<h2 id="the-correspondence">The Correspondence</h2>
+<p><strong>Theorem (the kernel of the parametrisation).</strong> The assignment $u \mapsto \rho_u$ is a surjection of the reflectors onto the reflections, and</p>
+<p>$$
+\rho_u = \rho_v \quad\Longleftrightarrow\quad v^{-1}u \in Z(A)^\times ,
+$$</p>
+<p>so the reflections are parametrised by the reflectors modulo the central units,</p>
+<p>$$
+\mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)\big/ Z(A)^\times .
+$$</p>
+<p><strong>Proof.</strong> If $\rho_u = \rho_v$ then $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$, so $(v^{-1}u)\alpha(x) = \alpha(x)(v^{-1}u)$ for all $x$; since $\alpha$ is onto, $v^{-1}u$ commutes with every element and lies in $Z(A)^\times$. Conversely a central unit is absorbed by the inner conjugation. The image of the central units is $\alpha$, since a central unit commutes with everything. $\square$</p>
+<p><strong>Corollary (the reflector as the correcting element).</strong> For a reflector $u$, $\rho_u(u) = \alpha(u)$, and the reflection is the composite $\rho_u = c_u\alpha$ of the inner automorphism by $u$ with the twist; the reflector is the element whose inner automorphism corrects $\alpha$ to the desired reflection.</p>
+<p><strong>Proof.</strong> $u\alpha(u)$ is central, so $u$ commutes with it and $\rho_u(u) = u\alpha(u)u^{-1} = \alpha(u)$; the composite form is the definition. $\square$</p>
+<p><strong>Proposition (the coset of the inner automorphisms).</strong> The reflections relative to $\alpha$ are exactly the involutive automorphisms lying in the coset $\mathrm{Inn}(A)\alpha$ of the inner automorphism group, and the map $[u] \mapsto [c_u]$ sends the reflectors to the classes of the reflections in $\mathrm{Out}(A) = \mathrm{Aut}(A)/\mathrm{Inn}(A)$. If every automorphism of $A$ is inner then every involutive automorphism is a reflection for a suitable $\alpha$.</p>
+<p><strong>Proof.</strong> The reflection is $c_u\alpha$ by the corollary, so it lies in the coset; conversely an element of the coset is $c_u\alpha$, and it is an involution exactly when $u$ is a reflector. The map $[u]\mapsto[c_u]$ is the standard isomorphism $A^\times/Z(A)^\times \to \mathrm{Inn}(A)$. $\square$</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<p><strong>Theorem (the inner grade involution).</strong> Suppose $\alpha = c_z$ for a unit $z$. Then</p>
+<p>$$
+\rho_u = c_{uz} , \qquad \mathrm{Ref}(A,\alpha) = \{\,\text{involutive inner automorphisms}\,\} ,
+$$</p>
+<p>and the reflections are exactly the inner automorphisms of $A$ of order two, with reflector condition $u\alpha(u) = uzuz^{-1} = u z u z^{-1}\in Z(A)$.</p>
+<p><strong>Proof.</strong> $\rho_u = c_u\alpha = c_uc_z = c_{uz}$, an inner automorphism; it is an involution exactly when $(uz)x(uz)^{-1} = x$ for all $x$, that is when $uz \in Z(A)$, the reflector condition read for $\alpha = c_z$. $\square$</p>
+<p><strong>Theorem (the commutative case).</strong> If $A$ is commutative then every unit is a reflector and $\rho_u = \alpha$ for every unit $u$; the reflection family collapses to the two-element group $\{\mathrm{id},\alpha\}$ and the correspondence $u \mapsto \rho_u$ is constant.</p>
+<p><strong>Proof.</strong> In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$. The reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$. $\square$</p>
+<p><strong>Remark (the failure of the correspondence).</strong> The map $u \mapsto \rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(A)\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned sandwich rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.</p>
+<h2 id="the-banach-reading-and-examples">The Banach Reading and Examples</h2>
+<p><strong>Proposition (norm and isometry).</strong> Every reflection $\rho_u$ is a bounded invertible operator with $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$ and $\lVert\rho_u^{-1}\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$; when $\alpha$ is isometric and $u$ is a unitary with $\lVert u\rVert = \lVert u^{-1}\rVert = 1$, the reflection is isometric, $\lVert\rho_u\rVert = 1$. The fixed subalgebra $A^+_\rho$ is closed, and $\rho_u$ extends to the completion of $A$.</p>
+<p><strong>Proof.</strong> The norm bound is submultiplicativity in the composite $c_u\alpha$; the isometry case is $\lVert u\alpha(x)u^{-1}\rVert \leq \lVert x\rVert$ with equality by applying $\rho_u^{-1}$. The fixed set is closed as the fixed set of a continuous map, and a bounded automorphism of a normed algebra extends uniquely to a bounded automorphism of its completion. $\square$</p>
+<p><strong>Example (the matrix algebra).</strong> Let $A = M_n(\mathbb{K})$ and $\alpha(X) = DXD^{-1}$ with $D$ an invertible diagonal matrix of order two, $D^2 = I$, so that $\alpha$ is a continuous involutive automorphism. Since $\alpha$ is inner, every reflection is an inner automorphism: $\rho_u = c_{u}\alpha = c_{uD}$, and it is an involution exactly when $uDuD^{-1}$ is central, that is a scalar matrix. For $D = I$ the grade involution is trivial and the reflections are the involutions $X \mapsto UXU^{-1}$ with $U^2$ central, the classical involutive inner automorphisms of $M_n$.</p>
+<p><strong>Example (the graded function algebra).</strong> Let $A = C(X,\mathbb{K})$ and $\alpha(f) = (2\chi - 1)f$ for a clopen subset $E \subseteq X$ with indicator $\chi$. Every unit (a nowhere-zero function) is a reflector, since $A$ is commutative, and every reflection equals $\alpha$: the reflection family is $\{\mathrm{id}, \alpha\}$, the sign functions on the two parts.</p>
+<h2 id="summary">Summary</h2>
+<p>A reflection of a Banach algebra $A$ with respect to a continuous involutive automorphism $\alpha$ is the signed conjugation $\rho_u(x) = u\alpha(x)u^{-1}$, the signed sandwich $S_{u,u^{-1}}$; it is a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and square $c_{u\alpha(u)}$, and it is an involutive automorphism exactly when $u$ is a <strong>reflector</strong>, $u\alpha(u) \in Z(A)$. An involutive reflection splits $A = A^+_\rho\oplus A^-_\rho$ into a closed fixed subalgebra and a closed negated part, with the multiplication table of a grading, and it is determined by its fixed subalgebra. The map $u \mapsto \rho_u$ is a surjection of the reflectors onto the reflections with kernel the central units, so the reflections are parametrised by $R^\times(A,\alpha)/Z(A)^\times$, and they are exactly the involutive automorphisms in the coset $\mathrm{Inn}(A)\alpha$. When $\alpha$ is inner every reflection is an inner automorphism, and when $A$ is commutative every unit is a reflector and the family collapses to $\{\mathrm{id},\alpha\}$; the correspondence is neither injective nor, in general, surjective onto all involutive automorphisms, and the reflections form a coset of the inner automorphisms rather than a subgroup. The reflection is bounded with $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$, isometric when $\alpha$ and $u$ are, and it extends to the completion. Its adjoint and self-adjointness are <em>The Signed Adjoint of the Reflection on a Banach Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\lVert\cdot\rVert$, $A^\times$, $Z(A)$</td>
+<td>Banach algebra, norm, units, centre</td>
+</tr>
+<tr>
+<td>$\alpha$, $c_t(x)=txt^{-1}$</td>
+<td>Continuous involutive automorphism; inner automorphism</td>
+</tr>
+<tr>
+<td>$\rho_u = c_u\alpha = S_{u,u^{-1}}$</td>
+<td>Reflection by the unit $u$, $\rho_u(x)=u\alpha(x)u^{-1}$</td>
+</tr>
+<tr>
+<td>$R^\times(A,\alpha)$</td>
+<td>Reflectors: units with $u\alpha(u)\in Z(A)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ref}(A,\alpha)$</td>
+<td>Reflections, $\cong R^\times(A,\alpha)/Z(A)^\times$</td>
+</tr>
+<tr>
+<td>$\rho_u^2 = c_{u\alpha(u)}$</td>
+<td>Square; involution iff $u$ is a reflector</td>
+</tr>
+<tr>
+<td>$A^+_\rho$, $A^-_\rho$</td>
+<td>Fixed subalgebra and negated part of $\rho$</td>
+</tr>
+<tr>
+<td>$\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$</td>
+<td>The two readings of the reflection</td>
+</tr>
+<tr>
+<td>$\rho_1 = \alpha$</td>
+<td>The grade involution is a reflection</td>
+</tr>
+<tr>
+<td>$\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$</td>
+<td>Norm bound; isometric when $\alpha,u$ are</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the involutive automorphisms, the signed conjugations and the correspondences with the units.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the inner automorphisms, the cosets in the automorphism group and the reflections.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the bounded automorphisms of a Banach algebra and the closed fixed subalgebras.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for the graded Banach algebras, the automorphisms of order two and the reflections.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the classical reflections and the signed conjugations that model them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

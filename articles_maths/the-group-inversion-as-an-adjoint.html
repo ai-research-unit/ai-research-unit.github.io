@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Group Inversion as an Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-group-inversion-as-an-adjoint"><strong>The Group Inversion as an Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The inversion of a group is its canonical involution, and on the group algebra it is the operator that reverses the order of a product. With respect to the natural pairing of the category it is self-adjoint, and it is exactly the operator that turns the left regular representation into the right one: the adjoint of the left multiplication by $a$ is the left multiplication by $a^{-1}$, and the parameter that appears is the inverted one. This article identifies the inversion with the adjoint operation on the indices of the translations, records the unit and the counit of the group algebra and the identities they satisfy with the inversion, and fixes the identification of the inversion with the involution of the group algebra. It is the second article of the <code>* Operator Theory</code> group; the pairing and the adjoint are from <em>Involutions on the Operator Layer</em>, the translations and the sandwich from <em>Left and Right Multiplication in a Group</em> and <em>The Signed Sandwich on a Group</em>, and the coalgebra structure named here is developed in a later category.</p>
+<p>Throughout, $k[G]$ is the group algebra with basis $G$, $\Sigma_{\iota}$ is the linear extension of the inversion, $L_a,R_b$ are the translations, and the pairing and adjoint are those fixed in <em>Involutions on the Operator Layer</em>.</p>
+<h2 id="the-inversion-and-the-translations">The Inversion and the Translations</h2>
+<p><strong>Theorem (the inversion is the adjoint index).</strong> For every $a,b\in G$,</p>
+<p>$$
+(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}, \qquad (R_b)^{*}=R_{b^{-1}}=R_{\iota(b)},
+$$</p>
+<p>and for a two-sided translation $(L_aR_b)^{*}=L_{a^{-1}}R_{b^{-1}}$.</p>
+<p><strong>Proof.</strong> The two translation formulas are proved in <em>Involutions on the Operator Layer</em>, from the orthonormality of the basis. For the two-sided operator, $(L_aR_b)^{*}=(R_b)^{*}(L_a)^{*}=R_{b^{-1}}L_{a^{-1}}=L_{a^{-1}}R_{b^{-1}}$, using that the two families commute.</p>
+<p><strong>Corollary (the adjoint operation on the index).</strong> The assignment $T\mapsto T^{*}$ on the translations is the inversion of the parameter: the adjoint of the left regular representation is the left regular representation of the inverted element, and the map $a\mapsto L_a$ intertwines the inversion with the adjoint.</p>
+<p><strong>Proof.</strong> That $(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}$ is the theorem. The intertwining is the equation $L_{\iota(a)}=L_a^{*}$, read as the commuting square of the isomorphism $a\mapsto L_a$ with the inversion on $G$ and the adjoint on $L(G)$.</p>
+<p><strong>Proposition (the sandwich and the inversion).</strong> For the unsigned sandwich $\Sigma_{a,b}(x)=axb$ one has $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$; hence the sandwich is unitary for every pair $(a,b)$ and it is self-adjoint exactly when $a^{2}=b^{2}=e$.</p>
+<p><strong>Proof.</strong> Solving $\Sigma_{a,b}(x)=y$ gives $x=a^{-1}yb^{-1}$, so the matrix of $\Sigma_{a,b}$ is carried to that of $\Sigma_{a^{-1},b^{-1}}$ by transposition. The sandwich is invertible with inverse $\Sigma_{a^{-1},b^{-1}}$, which is its adjoint, hence unitary; it is self-adjoint exactly when $a=a^{-1}$ and $b=b^{-1}$.</p>
+<p><strong>Remark (the inversion as the adjoint of the left multiplication).</strong> The phrase of the title is the theorem in its exact form: the adjoint of the left multiplication by $a$ is the left multiplication by the inverse of $a$, so that the inversion is the operation the adjoint performs on the index of the translation. When the group is abelian and the parameters are identified with their translations, the adjoint is inversion itself on the operator's index.</p>
+<h2 id="the-unit-and-the-counit">The Unit and the Counit</h2>
+<p><strong>Definition.</strong> The <strong>counit</strong> is the $k$-linear map $\varepsilon:k[G]\to k$ with $\varepsilon(g)=1$ for every $g$, the augmentation; the <strong>unit</strong> is the $k$-linear map $u:k\to k[G]$ with $u(1)=e$; the <strong>comultiplication</strong> is the $k$-linear map $\Delta:k[G]\to k[G]\otimes_k k[G]$ with $\Delta(g)=g\otimes g$; and the <strong>inversion</strong> is the linear extension $\Sigma_{\iota}$.</p>
+<p><strong>Proposition (the counit, the unit and the pairing with the identity).</strong> The counit is the augmentation, $\varepsilon(x)=\sum_g x_g$; the pairing with the basis dual $\delta_e$ is the coefficient at the identity, $\langle\delta_e,x\rangle=x_e$; the two agree on the basis, where both take the value $1$, and differ on a general $x$ exactly when $\sum_g x_g\neq x_e$. The unit places the identity, $u(1)=e$.</p>
+<p><strong>Proof.</strong> $\langle\delta_e,x\rangle=\sum_g\delta_e(g)x_g=x_e$ and $\varepsilon(x)=\sum_g x_g$ from $\varepsilon(g)=1$; on a basis element both give $1$. The unit is $u(1)=e$ by definition, and it is the $k$-linear map right inverse to $\varepsilon$ on the identity.</p>
+<p><strong>Theorem (the identities of the inversion, the unit and the counit).</strong> In $k[G]$,</p>
+<p>$$
+(\varepsilon\otimes\mathrm{id})\Delta=\mathrm{id}=(\mathrm{id}\otimes\varepsilon)\Delta,
+\qquad
+m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon=m(\Sigma_{\iota}\otimes\mathrm{id})\Delta,
+$$</p>
+<p>where $m$ is the multiplication of $k[G]$. The first two say that the counit is the identity for the comultiplication; the last two say that the inversion is the inverse for the multiplication in the sense of the comultiplication.</p>
+<p><strong>Proof.</strong> On a basis element $g$: $(\varepsilon\otimes\mathrm{id})\Delta(g)=1\otimes g=g$ and $(\mathrm{id}\otimes\varepsilon)\Delta(g)=g\otimes1=g$ after the identification of $k\otimes_k k[G]$ with $k[G]$. And $m(\mathrm{id}\otimes\Sigma_{\iota})\Delta(g)=m(g\otimes g^{-1})=gg^{-1}=e=u\varepsilon(g)$, with the other order $m(\Sigma_{\iota}\otimes\mathrm{id})\Delta(g)=g^{-1}g=e$. So the inversion is the operator that inverts each basis element in the multiplication.</p>
+<p><strong>Corollary (the inversion is characterised by the identities).</strong> The inversion $\Sigma_{\iota}$ is the unique $k$-linear automorphism of $k[G]$ with $\Sigma_{\iota}(g)=g^{-1}$ for every $g$, and it is the unique map making the identities hold.</p>
+<p><strong>Proof.</strong> Uniqueness is linearity and the values on the basis, which determine the map; and it is an anti-automorphism of order two, so it is an automorphism exactly when $G$ is abelian.</p>
+<h2 id="the-identification-with-the-involution-of-the-group-algebra">The Identification with the Involution of the Group Algebra</h2>
+<p><strong>Proposition (the extensions of the group involutions).</strong> Every involution $\sigma$ of $G$ extends to a $k$-linear anti-automorphism $\Sigma_{\sigma}$ of $k[G]$ of order two, and $\Sigma_{\sigma}$ is an involution of the group algebra in the sense of <em>Involutive Rings</em>. The inversion is the instance $\sigma=\iota$, and $\Sigma_{\iota}$ is the antipode.</p>
+<p><strong>Proof.</strong> The linear extension of an anti-automorphism is an anti-automorphism, and the extension of an involution is an involution because $\Sigma_{\sigma}^{2}=\Sigma_{\sigma^{2}}=\mathrm{id}$. The identification with <em>Involutive Rings</em> is that a $k$-algebra anti-automorphism of order two is exactly an involution of the algebra.</p>
+<p><strong>Proposition (the commutation of the two operations).</strong> The adjoint and the extension of a group involution commute: $\Sigma_{\sigma}^{*}=\Sigma_{\sigma}$ for every involution $\sigma$, and $(L_a\Sigma_{\sigma})^{*}=\Sigma_{\sigma}L_{a^{-1}}$.</p>
+<p><strong>Proof.</strong> For $\sigma=\iota$ this is self-adjointness of the inversion, from <em>Involutions on the Operator Layer</em>; for a general involution the same computation applies, since the matrix of $\Sigma_{\sigma}$ in the basis $G$ is symmetric: $\langle\Sigma_{\sigma}g,h\rangle=\delta_{\sigma(g),h}=\delta_{g,\sigma(h)}=\langle g,\Sigma_{\sigma}h\rangle$, using $\sigma^{2}=\mathrm{id}$. Then $(L_a\Sigma_{\sigma})^{*}=\Sigma_{\sigma}^{*}L_a^{*}=\Sigma_{\sigma}L_{a^{-1}}$.</p>
+<p><strong>Remark (two structures, not one).</strong> The group involution $\sigma$ on the elements and the adjoint on the operators are two structures. They are related by the proposition, which says that the extension of $\sigma$ is self-adjoint, but they are not the same structure: the adjoint is an anti-involution of the operator algebra, whereas the extension of $\sigma$ is an anti-involution of the group algebra, and the two act on different objects. The agreement for the inversion is the content of this article and is proved by the pairing, never assumed.</p>
+<h2 id="summary">Summary</h2>
+<p>The inversion of $G$ is the canonical involution, and on the operator layer it is the adjoint operation on the indices of the translations: $(L_a)^{*}=L_{a^{-1}}=L_{\iota(a)}$, $(R_b)^{*}=R_{b^{-1}}$, and the two-sided sandwich is unitary with $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$. The adjoint of the left regular representation is the left regular representation of the inverted element, so the map $a\mapsto L_a$ intertwines the inversion with the adjoint.</p>
+<p>On the group algebra the inversion is the antipode: with the unit $u(1)=e$, the counit $\varepsilon$ the augmentation and the comultiplication $\Delta(g)=g\otimes g$, the identities $(\varepsilon\otimes\mathrm{id})\Delta=\mathrm{id}=(\mathrm{id}\otimes\varepsilon)\Delta$ and $m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon=m(\Sigma_{\iota}\otimes\mathrm{id})\Delta$ hold, and $\Sigma_{\iota}$ is the unique $k$-linear map with $\Sigma_{\iota}(g)=g^{-1}$ for every $g$. The counit is the augmentation $\varepsilon(x)=\sum_g x_g$, whereas the pairing with $\delta_e$ reads the coefficient at the identity, the two agreeing on the basis and differing in general. Every group involution $\sigma$ extends to an involution $\Sigma_{\sigma}$ of the group algebra, and each such extension is self-adjoint, so the adjoint commutes with the extension; but the involution on the elements and the adjoint on the operators remain two structures, and their agreement is proved and not assumed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(L_a)^{*}=L_{a^{-1}}$, $(R_b)^{*}=R_{b^{-1}}$</td>
+<td>the adjoint inverts the parameter</td>
+</tr>
+<tr>
+<td>$\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$</td>
+<td>the sandwich is unitary</td>
+</tr>
+<tr>
+<td>$u(1)=e$</td>
+<td>the unit of the group algebra</td>
+</tr>
+<tr>
+<td>$\varepsilon(g)=1$</td>
+<td>the counit, the augmentation</td>
+</tr>
+<tr>
+<td>$\Delta(g)=g\otimes g$</td>
+<td>the comultiplication</td>
+</tr>
+<tr>
+<td>$\Sigma_{\iota}$, the antipode</td>
+<td>the linear extension of the inversion</td>
+</tr>
+<tr>
+<td>$m(\mathrm{id}\otimes\Sigma_{\iota})\Delta=u\varepsilon$</td>
+<td>the antipode identity</td>
+</tr>
+<tr>
+<td>$\Sigma_{\sigma}^{*}=\Sigma_{\sigma}$</td>
+<td>every extended involution is self-adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marshall Hall, <em>The Theory of Groups</em> (Macmillan, 1959), for the group algebra, the regular representation and the antipode.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebra, its augmentation, its comultiplication and its antipode.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the involution of an algebra and the adjoint under a form.</li>
+<li>Christian Kassel, <em>Quantum Groups</em> (Springer, Graduate Texts in Mathematics 155, 1995), for the coalgebra and Hopf structure of the group algebra, used here only as a forward reference.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

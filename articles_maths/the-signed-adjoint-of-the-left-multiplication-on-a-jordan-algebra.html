@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on a Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-a-jordan-algebra"><strong>The Signed Adjoint of the Left Multiplication on a Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>signed left multiplication</strong> of a Jordan algebra with a grade involution is the one-sided operator obtained from the left multiplication by precomposition with the involution; intrinsically it is</p>
+<p>$$
+\ell^{\alpha}_a = L_a\circ\alpha , \qquad \ell^{\alpha}_a(x) = a\circ\alpha(x) ,
+$$</p>
+<p>the Jordan form of the signed one-sided action of <em>The Signed Left Multiplication on a Jordan Algebra</em>, whose associative model is $\ell^{\alpha}_a(x) = a\,\alpha(x)$ on a special algebra $J = A^+$. The present article computes the <strong>adjoint</strong> of this operator with respect to the <strong>natural pairing</strong> of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ of <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>, and relates it to the signed sandwich of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
+<p>The trace form is associative, $T(x\circ y,z) = T(x,y\circ z)$, so the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$; the adjoint of the composite is therefore the composite of the adjoints in the reverse order, and since $\alpha$ is an automorphism with $\alpha L_a\alpha^{-1} = L_{\alpha(a)}$,</p>
+<p>$$
+\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \bigl(L_a\circ\alpha\bigr)^{\dagger} = \alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)} .
+$$</p>
+<p>The adjoint of the signed left multiplication is thus the signed left multiplication by the <strong>image of the parameter under the grade involution</strong>; it is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and it is <strong>unitary exactly when the unsigned left multiplication is an involution, $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$, and the adjoint of that product is computed from the adjoints of its factors, recovering the rule of the signed adjoint sandwich.</p>
+<p>The article assumes <em>The Signed Left Multiplication on a Jordan Algebra</em> for the signed one-sided action, its homogeneity and the fixed elements; <em>The Signed Adjoint Sandwich on a Jordan Algebra</em> for the signed sandwich and its adjoint; <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em> for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the quadratic representation and the symmetries; and <em>The Operators on an Algebra</em> for the ambient endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $L_a$ is the Jordan left multiplication, $\ell^{\alpha}_a = L_a\circ\alpha$ is the signed left multiplication, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs.</p>
+<h2 id="the-signed-left-multiplication-and-its-adjoint">The Signed Left Multiplication and Its Adjoint</h2>
+<h3 id="the-definition-and-the-unsigned-case">The Definition and the Unsigned Case</h3>
+<p><strong>Definition.</strong> The <strong>signed left multiplication</strong> by $a$ is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\circ\alpha(x)$; for $\alpha = \mathrm{id}$ it is the ordinary left multiplication $L_a$.</p>
+<p><strong>Theorem (the unsigned adjoint).</strong> The unsigned left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the adjoint of the signed left multiplication is the signed left multiplication at the image of the parameter:</p>
+<p>$$
+\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} .
+$$</p>
+<p><em>Proof.</em> The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$. $\square$</p>
+<h3 id="self-adjointness">Self-Adjointness</h3>
+<p><strong>Proposition.</strong> The signed left multiplication is self-adjoint exactly when its parameter is fixed by the grade involution:</p>
+<p>$$
+\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_a \iff \alpha(a) = a .
+$$</p>
+<p><em>Proof.</em> The adjoint is $\ell^{\alpha}_{\alpha(a)}$; the two are equal exactly when $L_{\alpha(a)} = L_a$, which for a non-degenerate trace form holds exactly when $\alpha(a) = a$. $\square$</p>
+<p><strong>Corollary.</strong> The signed left multiplication by an <strong>even</strong> element is self-adjoint and coincides with the unsigned left multiplication, $\ell^{\alpha}_a = L_a$ for $a$ even; for an odd element $\ell^{\alpha}_a = L_a\circ\alpha$ is the negative of the ordinary action conjugated by $\alpha$ on the argument, and it is not self-adjoint.</p>
+<h3 id="unitarity">Unitarity</h3>
+<p><strong>Theorem.</strong> The signed left multiplication is unitary with respect to the adjoint exactly when the unsigned left multiplication is an involution:</p>
+<p>$$
+\bigl(\ell^{\alpha}_a\bigr)^{\dagger}\ell^{\alpha}_a = \ell^{\alpha}_a\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \mathrm{id} \iff L_a^2 = \mathrm{id} ,
+$$</p>
+<p>that is, exactly when $a$ is a <strong>symmetry</strong>.</p>
+<p><em>Proof.</em> $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition. $\square$</p>
+<h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
+<p><strong>Theorem.</strong> The signed sandwich is the product of a signed and an unsigned one-sided action, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and its adjoint is</p>
+<p>$$
+\bigl(S^{\alpha}_{a,b}\bigr)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)} ,
+$$</p>
+<p>which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
+<p><em>Proof.</em> The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of <em>The Signed Adjoint of the Left Multiplication on a Ring</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed left multiplication is the unsigned one, $\ell^{\alpha}_a = L_a$, which is self-adjoint for every $a$; the unitarity condition is $L_a^2 = \mathrm{id}$, the symmetry condition, and it holds for the symmetries.</p>
+<p><strong>Example (the transpose involution).</strong> Let $J = H_n(F)$ with the transpose grade involution on the ambient matrix algebra; then $\ell^{\alpha}_a(x) = a\circ x^{\mathsf{T}}$, and its adjoint is $\ell^{\alpha}_{a^{\mathsf{T}}}$. The operator is self-adjoint exactly when $a$ is symmetric, and unitary exactly when $a$ is a symmetry of the Jordan algebra.</p>
+<p><strong>Example (the odd element).</strong> For an odd element $a$ the signed left multiplication is $\ell^{\alpha}_a = L_a\circ\alpha$, which is not self-adjoint: $\ell^{\alpha\dagger}_a = \ell^{\alpha}_{\alpha(a)} = \ell^{\alpha}_{-a} = -\ell^{\alpha}_a$, so an odd parameter gives a skew-adjoint signed left multiplication.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed left multiplication</strong> on a Jordan algebra is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\circ\alpha(x)$; with respect to the <strong>trace form</strong> its adjoint is the signed left multiplication at the image of the parameter,</p>
+<p>$$
+\bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} ,
+$$</p>
+<p>because the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$. It is <strong>self-adjoint exactly when $\alpha(a) = a$</strong>, and <strong>unitary exactly when $L_a^2 = \mathrm{id}$</strong>, that is, when $a$ is a symmetry. The signed sandwich $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$ has the adjoint computed from the adjoints of its factors, and its symmetrisation recovers $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>; the signed left multiplication is the one-sided case of that rule. The identity involution, the transpose involution and the odd element are the worked examples. No norm, form, distance or geometric reflection occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x) = a\circ x$</td>
+<td>Jordan left multiplication</td>
+</tr>
+<tr>
+<td>$\ell^{\alpha}_a = L_a\circ\alpha$</td>
+<td>Signed left multiplication</td>
+</tr>
+<tr>
+<td>$\ell^{\alpha}_a(x) = a\circ\alpha(x)$</td>
+<td>Jordan form; associative form $a\alpha(x)$</td>
+</tr>
+<tr>
+<td>$(\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha}_{\alpha(a)}$</td>
+<td>Adjoint of the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\alpha(a) = a$</td>
+<td>Self-adjointness condition</td>
+</tr>
+<tr>
+<td>$L_a^2 = \mathrm{id}$</td>
+<td>Unitarity condition (symmetry)</td>
+</tr>
+<tr>
+<td>$S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a$</td>
+<td>Signed sandwich as a product</td>
+</tr>
+<tr>
+<td>$(S^{\alpha}_{a,b})^{\dagger} = \ell^{\alpha}_{\alpha(a)}\rho_{\alpha(b)}$</td>
+<td>Adjoint of the sandwich from the factors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the left multiplications, the trace form and the symmetries.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the one-sided multiplications, the quadratic representation and the structure group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the signed one-sided actions and their adjoints.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the multiplication algebra and the operators on an algebra.</li>
+<li>Hel Braun and Max Koecher, <em>The Jordan Algebra Approach to Bounded Symmetric Domains</em> (Springer, 1966), for the left multiplications, the symmetries and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

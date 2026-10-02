@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Representation and the Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-representation-and-the-involution"><strong>The Adjoint Representation and the Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>adjoint representation</strong> of a Lie algebra $\mathrm{G}$ is the map</p>
+<p>$$
+\operatorname{ad}:\mathrm{G}\longrightarrow\mathfrak{gl}(\mathrm{G}),\qquad \operatorname{ad}_x(y)=[x,y],
+$$</p>
+<p>and an involution $\theta$ of $\mathrm{G}$ acts on both sides of it: on $\mathrm{G}$ by $\theta$ itself and on the operators by conjugation, $\Theta(T)=\theta T\theta^{-1}$. The two actions are <strong>compatible</strong>, $\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}$, so $\operatorname{ad}$ is a morphism of algebras-with-involution, and the adjoint representation carries the involution to the operator algebra. This article, the fourth of the <code>- * Operator Theory</code> group of the category, treats the adjoint representation under an involution: its equivariance, the induced decomposition of the endomorphism algebra along the eigenspaces of $\theta$, the <strong>self-duality</strong> of the adjoint representation through the Killing form, the <strong>orthogonal</strong> and <strong>symplectic</strong> types that a self-dual representation takes according to the symmetry of its invariant form, and the <strong>self-dual representations</strong> as the objects fixed by the duality. The adjoint action as an operator is <em>The Adjoint Action of a Lie Algebra</em>; the extension $\Theta$ and the module theory are <em>Representations of Lie Algebras</em>; the symmetric pair and the Cartan involution are <em>The Cartan Involution and the Cartan Decomposition</em> and <em>Symmetric Pairs of a Lie Algebra</em>; the analysis of unitarity belongs to a later Part and is named only.</p>
+<p>The base is a field $K$ of characteristic not two; $\mathrm{G}$ is a finite-dimensional Lie algebra with Killing form $B$, $\theta$ an involution, $\Theta$ the conjugation action on $\mathfrak{gl}(\mathrm{G})$, and $B_\theta(x,y)=-B(x,\theta y)$ the twisted form. The article uses the bracket, the operator algebra and the form algebraically, and forms no length from $B$.</p>
+<h2 id="the-equivariance-of-the-adjoint-representation">The Equivariance of the Adjoint Representation</h2>
+<p><strong>Theorem.</strong> Let $\theta$ be an involution of $\mathrm{G}$ and let $\Theta$ be the conjugation $T\mapsto\theta T\theta^{-1}$ on $\mathfrak{gl}(\mathrm{G})$. Then</p>
+<p>$$
+\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}
+$$</p>
+<p>for every $x\in\mathrm{G}$; equivalently $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$, so the adjoint representation intertwines the involution of $\mathrm{G}$ with the involution of the operator algebra.</p>
+<p><strong>Proof.</strong> For $y\in\mathrm{G}$, $\Theta\operatorname{ad}_x\Theta^{-1}(y)=\theta[x,\theta^{-1}y]=[\theta x,y]=\operatorname{ad}_{\theta x}(y)$, because $\theta$ is an algebra automorphism and $\theta^{-1}=\theta$. The second form is the same statement. $\square$</p>
+<p><strong>Corollary.</strong> $\Theta$ is an involution of $\mathfrak{gl}(\mathrm{G})$ (the conjugation by an involution), and $\operatorname{ad}$ carries the $\pm1$-eigenspaces of $\theta$ into the $\pm1$-eigenspaces of $\Theta$: $\operatorname{ad}(\mathrm{K})\subseteq\mathfrak{gl}(\mathrm{G})^{+}$ and $\operatorname{ad}(\mathrm{P})\subseteq\mathfrak{gl}(\mathrm{G})^{-}$, where $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ is the decomposition of $\theta$.</p>
+<p><strong>Proposition.</strong> The image $\operatorname{ad}(\mathrm{G})$ is $\Theta$-stable, and the kernel of $\operatorname{ad}$ is the centre $\mathrm{Z}(\mathrm{G})$, which is $\theta$-stable; hence the isomorphism $\mathrm{G}/\mathrm{Z}(\mathrm{G})\cong\operatorname{ad}(\mathrm{G})$ is an isomorphism of algebras with involution.</p>
+<p><strong>Proof.</strong> Stability of the image follows from the equivariance, and stability of the centre because $\theta$ is an automorphism; the isomorphism is the first isomorphism theorem, and it respects the involutions because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$. $\square$</p>
+<h2 id="the-induced-decomposition-of-the-operator-algebra">The Induced Decomposition of the Operator Algebra</h2>
+<p><strong>Theorem.</strong> The decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ induces a decomposition of the adjoint image,</p>
+<p>$$
+\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P}),
+$$</p>
+<p>with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{G})$, $\operatorname{ad}(\mathrm{P})$ a module over it, and the brackets $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{K})]\subseteq\operatorname{ad}(\mathrm{K})$, $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{P})$, $[\operatorname{ad}(\mathrm{P}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{K})$; the involution $\Theta$ acts by $+1$ on the first summand and by $-1$ on the second.</p>
+<p><strong>Proof.</strong> The image is $\operatorname{ad}(\mathrm{G})$, and $\operatorname{ad}$ is linear with $\theta$-invariant kernel, so $\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})+\operatorname{ad}(\mathrm{P})$ and the sum is direct because $\operatorname{ad}$ is injective on $\mathrm{K}\cap\mathrm{P}=0$ modulo the centre; the brackets are the images of the brackets of $\mathrm{K}$ and $\mathrm{P}$, and the eigenvalue statement is the equivariance. $\square$</p>
+<p><strong>Corollary.</strong> The pair $(\operatorname{ad}(\mathrm{G}),\operatorname{ad}(\mathrm{K}))$ is a symmetric pair, the image of $(\mathrm{G},\mathrm{K})$ under $\operatorname{ad}$, and the $\Theta$-grading of the operator algebra restricts to the grading of the adjoint image.</p>
+<p><strong>Proposition.</strong> The fixed algebra of $\Theta$ on the whole of $\mathfrak{gl}(\mathrm{G})$ is the centraliser of the decomposition, consisting of the operators preserving $\mathrm{K}$ and $\mathrm{P}$ separately, and the anti-fixed part consists of the operators exchanging them; the adjoint image lies in the even part when $\mathrm{G}$ is a symmetric pair.</p>
+<p><strong>Proof.</strong> An operator $T$ commutes with $\Theta$ exactly when it preserves the two eigenspaces, and anticommutes exactly when it exchanges them; for $T=\operatorname{ad}_x$ with $x\in\mathrm{K}$ the operator preserves $\mathrm{K}$ and $\mathrm{P}$ by the bracket relations, while for $x\in\mathrm{P}$ it exchanges them. $\square$</p>
+<h2 id="self-duality-through-the-killing-form">Self-Duality through the Killing Form</h2>
+<p><strong>Definition.</strong> A representation $V$ of $\mathrm{G}$ is <strong>self-dual</strong> when it carries a nondegenerate bilinear form $\phi$ invariant under the action, $\phi(x\cdot u,v)+\phi(u,x\cdot v)=0$; the form is then unique up to a scalar when $V$ is irreducible, and the representation is <strong>orthogonal</strong> when $\phi$ is symmetric and <strong>symplectic</strong> when $\phi$ is antisymmetric.</p>
+<p><strong>Theorem.</strong> The adjoint representation is self-dual, with the invariant form the Killing form:</p>
+<p>$$
+B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0 .
+$$</p>
+<p><strong>Proof.</strong> The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation. $\square$</p>
+<p><strong>Corollary.</strong> The Killing form is symmetric, $B(y,z)=B(z,y)$, so the adjoint representation is of <strong>orthogonal</strong> type; the isomorphism $\mathrm{G}\to\mathrm{G}^{*}$, $x\mapsto B(x,\cdot)$, intertwines the adjoint action with the negative transpose action, $\operatorname{ad}_x^{*}=-\operatorname{ad}_x$ for the contragredient action on the dual, which is the self-duality expressed on the dual.</p>
+<p><strong>Proposition.</strong> When $\theta$ is an involution, the twisted form $B_\theta(x,y)=-B(x,\theta y)$ is invariant under the $\theta$-twisted action, $B_\theta(\theta x,\theta y)=B_\theta(x,y)$; it pairs the two eigenspaces $\mathrm{K},\mathrm{P}$ with themselves and $\mathrm{K}$ with $\mathrm{P}$ according to the parity, and it is symmetric because $B$ and $\theta$ commute with the symmetry.</p>
+<p><strong>Proof.</strong> The invariance of $B_\theta$ is the invariance of $B$ composed with the automorphism $\theta$; the parity of the pairing is read off the eigenvalues of $\theta$ on the two arguments. $\square$</p>
+<h2 id="the-two-types-and-the-self-dual-representations">The Two Types and the Self-Dual Representations</h2>
+<p><strong>Theorem.</strong> Let $V$ be an irreducible self-dual representation with invariant form $\phi$. Then either $\phi$ is symmetric or $\phi$ is antisymmetric, and the two cases are exclusive; in the first case $V$ is orthogonal, in the second symplectic. The symmetric resp. antisymmetric form on $V\oplus V$ defined by $\phi$ pairs the two summands in the respective ways, and an irreducible representation that is not self-dual occurs in pairs $V,V^{*}$ with no invariant form on $V$.</p>
+<p><strong>Proof.</strong> The form $\phi$ is determined up to a scalar by irreducibility (Schur's lemma applied to the isomorphism $V\to V^{*}$); a scalar multiple of a symmetric form is symmetric and of an antisymmetric form antisymmetric, so the type is well defined; non-self-dual irreducible representations have $V\not\cong V^{*}$ and admit no invariant form. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint representation is orthogonal, since its invariant form the Killing form is symmetric; the fundamental representation of $\mathrm{sl}(2,K)$ is symplectic, its invariant form being the determinant pairing $\det(u,v)$; the two types occur among the self-dual representations of a semisimple algebra, and the type of an irreducible is its <strong>Frobenius–Schur type</strong>, named and computed by the analysis of a later Part.</p>
+<p><strong>Proposition (the involution on the self-dual representations).</strong> An involution $\theta$ of $\mathrm{G}$ acts on the set of isomorphism classes of self-dual representations by twisting the action through $\theta$, and it fixes the adjoint representation; a self-dual representation is <strong>$\theta$-self-dual</strong> when the twist is isomorphic to the original, equivalently when the invariant form can be chosen $\theta$-invariant.</p>
+<p><strong>Proof.</strong> The twist $V^\theta$ is the module with action $x\cdot_\theta v=\theta(x)\cdot v$; its isomorphism class is well defined, and the adjoint representation is fixed because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$ exhibits the isomorphism; the invariant form is $\theta$-invariant exactly when the twist is isomorphic to $V$ via that form. $\square$</p>
+<p><strong>Corollary.</strong> The self-dual representations of a symmetric pair $(\mathrm{G},\mathrm{K})$ split according to their behaviour under $\theta$; the adjoint representation splits as $\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P})$, the fixed and the twisted parts, and the two summands are the components of the adjoint representation as a $\mathrm{K}$-module.</p>
+<h2 id="worked-case-math148">Worked Case: $\mathrm{sl}(2,K)$</h2>
+<p>Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$, brackets $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$, and Killing form $B$ with $B(e,f)=B(h,h)/2=4$ up to a normalisation, $B(e,e)=B(f,f)=0$. The adjoint representation has dimension three and is irreducible; it is self-dual and orthogonal, the invariant form being $B$; in the basis $(e,h,f)$ the form has matrix proportional to $\begin{pmatrix}0&0&4\\0&8&0\\4&0&0\end{pmatrix}$, symmetric with nonzero determinant.</p>
+<p>The involution $\theta(x)=-x^{t}$ acts by $\theta(e)=-f$, $\theta(f)=-e$, $\theta(h)=-h$; the induced involution $\Theta$ on the adjoint image fixes $\operatorname{ad}_h$ up to the sign convention and exchanges $\operatorname{ad}_e$ and $\operatorname{ad}_f$ up to signs; the fixed part $\operatorname{ad}(\mathrm{K})=\langle\operatorname{ad}_{e-f}\rangle$ is one-dimensional and the anti-fixed part $\operatorname{ad}(\mathrm{P})=\langle\operatorname{ad}_h,\operatorname{ad}_{e+f}\rangle$ is two-dimensional, matching $\dim\mathrm{K}=1$, $\dim\mathrm{P}=2$. The twisted form $B_\theta$ pairs $\mathrm{K}$ with itself and $\mathrm{P}$ with itself and is nondegenerate on each, as the Cartan decomposition requires.</p>
+<p><strong>Verified.</strong> For $\mathrm{sl}(2,K)$ the equivariance $\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}$ was checked on the three generators and their brackets; the invariance of $B$ and of $B_\theta$ was checked on the basis; the dimensions of the fixed and anti-fixed parts of the adjoint image were checked to be $1$ and $2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>adjoint representation</strong> $\operatorname{ad}$ of a Lie algebra is <strong>equivariant</strong> under an involution $\theta$: with $\Theta$ the conjugation $T\mapsto\theta T\theta^{-1}$ on the operator algebra, $\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}$, so $\operatorname{ad}$ is a morphism of algebras with involution and carries the eigenspace decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ to the decomposition of the adjoint image, a symmetric pair with $\Theta$ acting by $\pm1$. The adjoint representation is <strong>self-dual</strong>, its invariant form the symmetric Killing form, and it is therefore of <strong>orthogonal</strong> type; the <strong>symplectic</strong> type is the other possibility for a self-dual irreducible representation and is exemplified by the fundamental representation of $\mathrm{sl}(2,K)$. Self-dual representations are those carrying an invariant nondegenerate form, unique up to a scalar for an irreducible, and an <strong>involution</strong> acts on them by twisting; those fixed by the twist are the $\theta$-self-dual representations, the adjoint being one of them. For $\mathrm{sl}(2,K)$ the adjoint representation is three-dimensional, orthogonal, and splits under the Cartan involution into a one-dimensional fixed part and a two-dimensional anti-fixed part, matching the Cartan decomposition. The analytic determination of the type and the unitarity belong to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a finite-dimensional Lie algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x(y)=[x,y]$</td>
+<td>the adjoint representation</td>
+</tr>
+<tr>
+<td>$\theta,\Theta$</td>
+<td>the involution of $\mathrm{G}$ and the conjugation on the operators</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$B_\theta(x,y)=-B(x,\theta y)$</td>
+<td>the twisted form</td>
+</tr>
+<tr>
+<td>$\mathrm{K},\mathrm{P}$</td>
+<td>the $\pm1$-eigenspaces of $\theta$</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>an invariant form on a self-dual representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the adjoint representation, the Killing form and self-dual representations.</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 2001), for the types of self-dual representations and the invariant forms.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em>, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the adjoint representation of a symmetric pair.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for the adjoint representation and its involutions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

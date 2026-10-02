@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dirichlet Principle and the Hermitian Functional — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dirichlet-principle-and-the-hermitian-functional"><strong>The Dirichlet Principle and the Hermitian Functional</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The weak solution of an elliptic problem is the minimiser of an energy. For the Dirichlet problem of $L$ with data $f$ the functional is</p>
+<p>$$
+E_f(u) = a(u,u) - 2\operatorname{Re}\langle f,u\rangle ,
+$$</p>
+<p>the Hermitian quadratic part of the sesquilinear form minus the pairing with the data, and the <strong>Dirichlet principle</strong> is the statement that $E_f$ attains its minimum at exactly one point of the test space and that the minimiser is the weak solution. The principle is the energy reading of the weak formulation: the variational equation $a(u,v)=\langle f,v\rangle$ is the vanishing of the first variation of $E_f$, and the coercivity of the form is what makes the stationary point a minimum and makes it unique.</p>
+<p>This article reads the elliptic problem with the conjugation of the unknown function and moves from the equation to the functional. It fixes the Hermitian functional — its quadratic part, its reality, its strict convexity and the completion of the square — and proves the Dirichlet principle in the elliptic setting: the minimiser over the Dirichlet test space exists, is unique, and is the weak solution; conversely the weak solution minimises. It then proves the regularity of the minimiser, the interior smoothness of a weak solution of an elliptic equation (Weyl's lemma) and the classical Dirichlet principle for the Laplacian, whose minimiser with given boundary values is the harmonic function.</p>
+<p>The sesquilinear form, its boundedness, coercivity and Hermitian property, the weak formulation and the solution operator are those of <em>Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</em>; the closed coercive Hermitian form, its generator and the general Dirichlet principle are those of <em>Dirichlet Forms and the Hermitian Dirichlet Principle</em>, cited for the abstract statement; the calculus of variations and the general Euler–Lagrange equation are those of <em>The Calculus of Variations</em> and <em>The Euler–Lagrange Equation</em>; the Sobolev spaces, the trace and the Poincaré inequality are those of <em>Sobolev Spaces and Weak Solutions</em>; the elliptic regularity and Weyl's lemma are those of <em>Distributions and Fundamental Solutions</em> and <em>Partial Differential Equations</em>; and the classical Dirichlet problem and the harmonic functions are <em>Harmonic Functions and the Dirichlet Problem</em>. The variational characterisation of the eigenvalues and the min–max principle are <em>Variational Methods and the Hermitian Form</em>, below.</p>
+<h2 id="the-hermitian-functional">The Hermitian Functional</h2>
+<p><strong>Definition.</strong> Let $a$ be the sesquilinear form of an elliptic operator, bounded on $H^1(\Omega)$ and coercive on $H^1_0(\Omega)$, with Hermitian part $a_{\mathrm H}(u,v)=\tfrac12\bigl(a(u,v)+\overline{a(v,u)}\bigr)$, and let $f\in L^2(\Omega)$. The <strong>Hermitian functional</strong> of the problem is</p>
+<p>$$
+E_f(u) = a_{\mathrm H}(u,u) - 2\operatorname{Re}\langle f,u\rangle ,
+$$</p>
+<p>and for the Dirichlet integral of the Laplacian $a(u,v)=\int_\Omega\nabla u\cdot\overline{\nabla v}$ it is the classical <strong>Dirichlet functional</strong></p>
+<p>$$
+D(u) = \int_\Omega|\nabla u|^2\,dx - 2\operatorname{Re}\langle f,u\rangle .
+$$</p>
+<p>When the form is Hermitian, $a_{\mathrm H}=a$ and $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$; this is the case of the formally self-adjoint problem, and it is the case in which the functional is the energy.</p>
+<p><strong>Proposition (reality, convexity and coercivity).</strong> Let $a$ be Hermitian with coercivity constant $c$, so that $a(u,u)\ge c\|u\|_{H^1}^2$. Then $E_f$ is real-valued, strictly convex on $H^1_0(\Omega)$, bounded below, and <strong>coercive</strong> on the test space:</p>
+<p>$$
+E_f(u)\ge \tfrac{c}{2}\|u\|_{H^1}^2 - \frac{2}{c}\|f\|_{L^2}^2 ,
+$$</p>
+<p>so that $E_f(u)\to+\infty$ as $\|u\|_{H^1}\to\infty$; the functional attains a minimum on the nonempty closed convex set $H^1_0(\Omega)$.</p>
+<p><em>Proof.</em> Reality is the Hermitian property, $a(u,u)=\overline{a(u,u)}$. Strict convexity is the strict positivity of the quadratic part: for $u\neq v$ and $0<t<1$, $a(tu+(1-t)v,\cdot)$ expands into $ta(u,\cdot)+(1-t)a(v,\cdot)$ and the quadratic part is strictly convex because $a$ is coercive and the form modulus is bounded. For the lower bound, $|2\operatorname{Re}\langle f,u\rangle|\le2\|f\|_{L^2}\|u\|_{L^2}\le\frac{c}{2}\|u\|_{H^1}^2+\frac{2}{c}\|f\|_{L^2}^2$ by the elementary inequality $2\|f\|\|u\|\le\frac{c}{2}\|u\|^2+\frac{2}{c}\|f\|^2$; subtracting from the coercive bound gives the display. Coercive convex continuous functionals on a closed convex set attain their minimum.</p>
+<p><strong>Proposition (completion of the square).</strong> Let $u_0$ be the minimiser of $E_f$. Then for every $u\in H^1_0(\Omega)$,</p>
+<p>$$
+E_f(u) = a(u-u_0,u-u_0) - a(u_0,u_0) ,
+$$</p>
+<p>so that the minimum value is $-a(u_0,u_0)=-\langle f,u_0\rangle$, and $E_f$ is the translate of the squared form norm.</p>
+<p><em>Proof.</em> Expanding the right side and using the Hermitian symmetry $a(u,u_0)=\overline{a(u_0,u)}$ together with the variational equation $a(u_0,u)=\langle f,u\rangle$,</p>
+<p>$$
+a(u-u_0,u-u_0)-a(u_0,u_0) = a(u,u)-2\operatorname{Re}a(u,u_0) = a(u,u)-2\operatorname{Re}\overline{\langle f,u\rangle} = E_f(u) ,
+$$</p>
+<p>which is the display; the minimum value follows on setting $u=u_0$, where the squared form norm vanishes.</p>
+<h2 id="the-dirichlet-principle">The Dirichlet Principle</h2>
+<p><strong>Theorem (the Dirichlet principle).</strong> Let the Hermitian form $a$ be bounded and coercive on $H^1_0(\Omega)$. Then $E_f$ has a unique minimiser in $H^1_0(\Omega)$, and $u$ is that minimiser if and only if $u$ is the weak solution, $a(u,v)=\langle f,v\rangle$ for every $v\in H^1_0(\Omega)$.</p>
+<p><em>Proof.</em> If $u$ minimises then for every $v$ and every real $t$ the function $t\mapsto E_f(u+tv)$ has a minimum at $t=0$; expanding,</p>
+<p>$$
+E_f(u+tv)-E_f(u) = 2t\operatorname{Re}\bigl(a(u,v)-\langle f,v\rangle\bigr) + t^2 a(v,v) ,
+$$</p>
+<p>so the derivative at $0$ vanishes, which for all $v$ is the variational equation; taking $v$ and then $iv$ separates the real and the imaginary part of $a(u,v)-\langle f,v\rangle$. Conversely, if the equation holds then the expansion reads $E_f(u+tv)-E_f(u)=t^2a(v,v)\ge0$ for every $v$, so no admissible direction lowers the value and $u$ minimises. Uniqueness is the strict convexity, or the completion of the square: two minimisers are both $u_0$ in that identity.</p>
+<p><strong>Corollary (the minimiser is the weak solution).</strong> The unique minimiser of the Dirichlet functional $D$ with datum $f$ is the weak solution of $-\Delta u=f$ with $u=0$ on $\partial\Omega$, and the minimal value is $-\langle f,u_0\rangle$ with $u_0$ the minimiser.</p>
+<p><em>Proof.</em> The Dirichlet functional is the Hermitian functional of the Laplacian form; the theorem identifies its minimiser with the weak solution, and the value is $-\langle f,u_0\rangle$ by the completion of the square.</p>
+<p><strong>Theorem (the classical Dirichlet principle).</strong> Let $U\in H^1(\Omega)$ be harmonic on $\Omega$ and let $\mathcal{E}_U=\{u\in H^1(\Omega) : u-U\in H^1_0(\Omega)\}$ be the affine set of admissible functions with the boundary data of $U$. Then $U$ minimises the Dirichlet integral $\int_\Omega|\nabla u|^2$ over $\mathcal{E}_U$, and it is the unique minimiser.</p>
+<p><em>Proof.</em> For any $u=U+\phi$ with $\phi\in H^1_0(\Omega)$,</p>
+<p>$$
+\int|\nabla u|^2 = \int|\nabla U|^2 + 2\operatorname{Re}\int\nabla U\cdot\overline{\nabla\phi} + \int|\nabla\phi|^2 ,
+$$</p>
+<p>and the middle term vanishes because $\Delta U=0$ in the weak sense and $\phi$ has trace zero; hence $\int|\nabla u|^2\ge\int|\nabla U|^2$, with equality only for $\phi=0$ by the Poincaré inequality. The classical minimiser is therefore the harmonic function with the given boundary values.</p>
+<h2 id="regularity-of-the-minimiser">Regularity of the Minimiser</h2>
+<p><strong>Theorem (Weyl's lemma for the minimiser).</strong> Let the coefficients of $L$ be smooth and the form uniformly elliptic, and let $u\in H^1_0(\Omega)$ satisfy the variational equation for every test function, with $f\in L^2(\Omega)$. Then $u\in H^1_{\mathrm{loc}}(\Omega)$ is in fact $C^\infty(\Omega)$, and $Lu=f$ in the classical sense on $\Omega$. In particular the minimiser of the Dirichlet functional is smooth in the interior whenever $f$ is smooth, and it is harmonic where $f=0$.</p>
+<p><em>Proof.</em> The elliptic regularity theorem of <em>Distributions and Fundamental Solutions</em> gives $u\in H^2_{\mathrm{loc}}(\Omega)$; a bootstrap with the same theorem gives $u\in H^k_{\mathrm{loc}}(\Omega)$ for every $k$ once the coefficients and $f$ are smooth, and the Sobolev embedding gives the classical differentiability. The reduction to test functions is the standard localisation of the variational equation with a cutoff. The consequence for the minimiser follows because the minimiser is the weak solution.</p>
+<p><strong>Remark (regularity and the classical statement).</strong> Weyl's lemma is what closes the circle between the minimiser and the classical solution: the variational functional has a minimiser with no differentiability assumed, and the elliptic equation forces the minimiser to be as smooth as the data. The classical Dirichlet principle was stated by Riemann for the harmonic function with given boundary values and criticised for assuming the existence of the minimiser; the weak formulation and the coercivity supply the existence, and Weyl's lemma supplies the smoothness. The boundary regularity of the minimiser, that it is smooth up to the boundary when the boundary and the data are smooth, is the boundary estimate of <em>Partial Differential Equations</em>, and the harmonic case with general boundary data is <em>Harmonic Functions and the Dirichlet Problem</em>.</p>
+<h2 id="the-inhomogeneous-problem-and-variational-inequalities">The Inhomogeneous Problem and Variational Inequalities</h2>
+<p><strong>Theorem (the inhomogeneous Dirichlet problem).</strong> Let $U\in H^1(\Omega)$ carry the boundary data and let $\phi\in H^1_0(\Omega)$, so that $u=U+\phi$ is the general admissible function. Then the minimiser of $\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ over the affine set $U+H^1_0(\Omega)$ is $u=U+\phi_0$, where $\phi_0$ is the weak solution of</p>
+<p>$$
+a(\phi,v) = \langle f,v\rangle - a(U,v) \qquad (v\in H^1_0(\Omega)) ,
+$$</p>
+<p>and the dependence of $\phi_0$ on $U$ is affine and bounded; the boundary data therefore enter the problem as an extra source term $-a(U,\cdot)$.</p>
+<p><em>Proof.</em> Substituting $u=U+\phi$ in the Dirichlet principle, the functional becomes $E_f(U+\phi)$, whose part depending on $\phi$ is $a(\phi,\phi)-2\operatorname{Re}\langle f,\phi\rangle+2\operatorname{Re}a(U,\phi)$ plus a constant; the minimiser satisfies the variational equation displayed, and Lax–Milgram gives existence, uniqueness and the affine bounded dependence on $U$.</p>
+<p><strong>Theorem (variational inequalities).</strong> Let $K\subseteq H^1_0(\Omega)$ be a nonempty closed convex set and let $a$ be a bounded coercive Hermitian form. Then $E_f$ has a unique minimiser $u$ over $K$, and $u$ is characterised by the variational inequality</p>
+<p>$$
+\operatorname{Re}\bigl(a(u,v-u)\bigr) \ge \operatorname{Re}\langle f,v-u\rangle \qquad \text{for every } v\in K .
+$$</p>
+<p><em>Proof.</em> Existence is the standard argument for a coercive convex continuous functional on a closed convex set: a minimising sequence is bounded, so a subsequence converges weakly, and the weak lower semicontinuity of $E_f$, which is convex continuous, gives a minimiser. Uniqueness is strict convexity, using the parallelogram identity for the quadratic part. For the characterisation, the convexity of $K$ makes $u+t(v-u)\in K$ for $0\le t\le1$; the derivative of $t\mapsto E_f(u+t(v-u))$ at $t=0$ is $2\operatorname{Re}(a(u,v-u)-\langle f,v-u\rangle)$, and it must be nonnegative.</p>
+<p><strong>Example (the obstacle problem).</strong> For $K=\{u\in H^1_0(\Omega) : u\ge\psi \text{ a.e.}\}$ with an obstacle $\psi\le0$ on the boundary and datum $f=0$, the minimiser satisfies the variational inequality and is the smallest superharmonic majorant of $\psi$: $-\Delta u\ge0$ on $\Omega$, $-\Delta u=0$ on the coincidence set $\{u>\psi\}$, and $u\ge\psi$. The inequality replaces the equation on the contact set, and it is the prototype of the variational inequalities of <em>The Calculus of Variations</em> and, in the literature, of <em>An Introduction to Variational Inequalities and Their Applications</em> by Kinderlehrer and Stampacchia.</p>
+<h2 id="summary">Summary</h2>
+<p>The elliptic weak problem has a Hermitian functional $E_f(u)=a(u,u)-2\operatorname{Re}\langle f,u\rangle$, the Dirichlet functional $D(u)=\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$ for the Laplacian; it is real, strictly convex and coercive, $E_f(u)\ge\frac{c}{2}\|u\|_{H^1}^2-\frac{2}{c}\|f\|_{L^2}^2$, and it is a translate of the squared form norm, $E_f(u)=a(u-u_0,u-u_0)-a(u_0,u_0)$, with the minimum value $-\langle f,u_0\rangle$. The Dirichlet principle identifies its unique minimiser with the weak solution: the first variation vanishes at $u$ for every direction exactly when $a(u,v)=\langle f,v\rangle$ for every $v$, and the second variation is $a(v,v)\ge0$, so the stationary point is the minimum, unique by strict convexity. For the Laplacian with given boundary values the minimiser of the Dirichlet integral is the harmonic function, the difference of the energies of two admissible functions being the Dirichlet integral of their difference. Finally, the minimiser is smooth: Weyl's lemma makes a weak solution of an elliptic equation with smooth coefficients and data of class $C^\infty$ in the interior, so the existence given by coercivity and the smoothness given by ellipticity meet in the minimiser. Over an affine admissible set the boundary data enter as the source term $-a(U,\cdot)$, and over a closed convex set the minimiser is characterised by the variational inequality $\operatorname{Re}a(u,v-u)\ge\operatorname{Re}\langle f,v-u\rangle$, of which the obstacle problem is the prototype.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a(u,v)$</td>
+<td>Sesquilinear form of the elliptic operator</td>
+</tr>
+<tr>
+<td>$a_{\mathrm H}(u,v)=\tfrac12(a(u,v)+\overline{a(v,u)})$</td>
+<td>Hermitian part of the form</td>
+</tr>
+<tr>
+<td>$E_f(u)=a_{\mathrm H}(u,u)-2\operatorname{Re}\langle f,u\rangle$</td>
+<td>Hermitian functional (energy)</td>
+</tr>
+<tr>
+<td>$D(u)=\int|\nabla u|^2-2\operatorname{Re}\langle f,u\rangle$</td>
+<td>Dirichlet functional</td>
+</tr>
+<tr>
+<td>$u_0$</td>
+<td>The minimiser, equal to the weak solution</td>
+</tr>
+<tr>
+<td>$H^1_0(\Omega)$</td>
+<td>Dirichlet test space</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_U=U+H^1_0(\Omega)$</td>
+<td>Affine admissible set with boundary data $U$</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Coercivity constant of the form</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Nonempty closed convex constraint set</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>Obstacle, the function defining $K=\{u\ge\psi\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>David Hilbert, <em>Über das Dirichletsche Prinzip</em> (Jahresbericht der Deutschen Mathematiker-Vereinigung 8, 1900), for the historical statement of the principle and its role.</li>
+<li>Hermann Weyl, <em>The method of orthogonal projection in potential theory</em> (Duke Mathematical Journal 7, 1940), for Weyl's lemma and the smoothness of weak solutions.</li>
+<li>David Gilbarg and Neil S. Trudinger, <em>Elliptic Partial Differential Equations of Second Order</em> (Springer, 2nd ed. 1983), for the energy functional, the minimisation and the regularity of the minimiser.</li>
+<li>David Kinderlehrer and Guido Stampacchia, <em>An Introduction to Variational Inequalities and Their Applications</em> (Academic Press, 1980), for the minimisation of convex functionals and the variational inequalities.</li>
+<li>Haïm Brezis, <em>Functional Analysis, Sobolev Spaces and Partial Differential Equations</em> (Springer, 2011), for the Dirichlet principle and the convexity of the energy.</li>
+<li>Lawrence C. Evans, <em>Partial Differential Equations</em> (American Mathematical Society, 2nd ed. 2010), for the energy method, the Dirichlet principle and the regularity theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

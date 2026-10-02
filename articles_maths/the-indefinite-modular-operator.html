@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Indefinite Modular Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-indefinite-modular-operator"><strong>The Indefinite Modular Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a von Neumann algebra on a Hilbert space with a cyclic and separating vector $\xi$, the Tomita operator $S$ is defined by $S(x\xi) = x^{\dagger}\xi$; it is antilinear, densely defined and closable, and its polar decomposition $S = \jmath\Delta^{1/2}$ produces the two objects of the whole theory: the <strong>modular operator</strong> $\Delta = S^{*}S$, self-adjoint and positive, and the <strong>modular conjugation</strong> $\jmath$, antilinear and involutive. The entire construction rests on the definiteness of the inner product, through the closure of $S$ and through the positivity of $\Delta$.</p>
+<p>On a Krein space the same formula defines the same antilinear operator, but its properties change. The adjoint in the polar decomposition is now the indefinite one, so what is obtained is a <strong>$J$-modular operator</strong> $\Delta$ that is positive for the definite form of the fundamental symmetry $J$ and self-adjoint for the indefinite one, and a <strong>$J$-modular conjugation</strong> $\jmath$ that is $J$-unitary and commutes with $J$. The two objects therefore carry $J$ with them: the modular data of an indefinite algebra is $J$-twisted, and the classical theory is the case $J = \mathrm{id}$.</p>
+<p>What must be added is a condition: on a Krein space the Tomita operator need not be closable, so the polar decomposition need not exist. The hypotheses that make it exist are that $\xi$ be <strong>$J$-cyclic</strong> for the algebra and <strong>$J$-separating</strong> for it, together with the availability of a self-dual cone carried by $\xi$; then $S$ has a closure and the closure factorises. This article fixes the operator $S$, the $J$-cyclic and $J$-separating hypotheses, the polar decomposition into the $J$-modular operator and the $J$-modular conjugation, and the properties that the two inherit.</p>
+<p>The Krein space, the form and the operator $J$ are <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>; the algebra is <em>Krein–von Neumann Algebras</em>; the indefinite representation that produces the algebra is <em>The Indefinite GNS Construction</em>; the theorem that uses the modular data is <em>Krein–Tomita–Takesaki Theory</em>; the definite construction is <em>The Modular Operator and Tomita-Takesaki Theory</em>. Those are cited. The Krein space is $K$ with form $[\cdot,\cdot]$ and fundamental symmetry $J$, the algebra is $\mathcal{M}$, and the vector is $\xi$.</p>
+<h2 id="the-tomita-operator-for-a-krein-space">The Tomita Operator for a Krein Space</h2>
+<p><strong>Definition.</strong> Let $\mathcal{M}$ be a Krein–von Neumann algebra on $K$ and $\xi\in K$. The <strong>Tomita operator</strong> is the antilinear operator</p>
+<p>$$
+S : \mathcal{M}\xi\to K, \qquad S(x\xi) = x^{\dagger}\xi ,
+$$</p>
+<p>with domain the linear span of the orbit $\mathcal{M}\xi$.</p>
+<p><strong>Proposition (well-definedness and involution).</strong> $S$ is well defined: if $x\xi = 0$ then $x^{\dagger}\xi = 0$ exactly when $\xi$ is separating for $\mathcal{M}$. On its domain $S$ is an involution, $S^{2} = \mathrm{id}$, and hence bijective onto its image.</p>
+<p><strong>Proof.</strong> If $S$ were ambiguous there would be $x$ with $x\xi = 0$ and $x^{\dagger}\xi\neq0$; the separating hypothesis excludes this, and then $S^{2}(x\xi) = S(x^{\dagger}\xi) = (x^{\dagger})^{\dagger}\xi = x\xi$.</p>
+<p><strong>Definition.</strong> The vector $\xi$ is <strong>$J$-cyclic</strong> for $\mathcal{M}$ when the orbit $\mathcal{M}\xi$ is dense in $K$, and <strong>$J$-separating</strong> when $x\xi = 0$ with $x\in\mathcal{M}$ forces $x = 0$. Cyclicity is density of the domain of $S$ and separatingness is well-definedness of $S$; note that separatingness cannot be read off the orbit, since $\mathcal{M}$ is closed under $\dagger$ and so $\mathcal{M}^{\dagger}\xi = \mathcal{M}\xi$.</p>
+<p><strong>Proposition (what changes in the indefinite case).</strong> For a Hilbert space the operator $S$ is closed (indeed $S^{**} = S$), and this is the Cauchy–Schwarz inequality in disguise. For a Krein space $S$ need not be closed, and it need not be the case that $S^{**} = S$; the graph of $S$ may fail to be a graph of a closed operator.</p>
+<p><strong>Proof.</strong> In the definite case $S$ is an isometry of the norm, $\|x\xi\| = \|x^{\dagger}\xi\|$, and that identity is exactly the Cauchy–Schwarz inequality applied to the positive definite form, so the closed graph argument goes through. In the indefinite case the identity becomes $[x\xi,x\xi] = [x^{\dagger}\xi,x^{\dagger}\xi]$, which holds but bounds neither side, since the form is indefinite; the closed graph argument has nothing to stand on and $S$ need not be closed.</p>
+<p><strong>Remark (the missing inequality).</strong> The whole difference is a single missing inequality: an indefinite form does not bound the norm of a vector by the norm of its image under $S$. All the extra hypotheses of the next section are devices that supply a substitute bound.</p>
+<h2 id="the-polar-decomposition-and-the-math75-modular-pair">The Polar Decomposition and the $J$-Modular Pair</h2>
+<p><strong>Definition.</strong> The vector $\xi$ is <strong>modular</strong> for the pair $(\mathcal{M},J)$ when it is $J$-cyclic and $J$-separating and the Tomita operator $S$ has a closure $\bar S$ that factorises as</p>
+<p>$$
+\bar S = \jmath\,\Delta^{1/2},
+$$</p>
+<p>with $\jmath$ an antilinear isometry of the definite form of $J$ and $\Delta$ a positive definite self-adjoint operator of that form. The operator $\Delta$ is the <strong>$J$-modular operator</strong> and $\jmath$ the <strong>$J$-modular conjugation</strong> attached to $\xi$.</p>
+<p><strong>Proposition (the $J$-modular operator).</strong> When the polar decomposition exists the $J$-modular operator is</p>
+<p>$$
+\Delta = \bar S^{\dagger}\bar S
+$$</p>
+<p>with $\dagger$ the indefinite adjoint, it is positive for the definite form $\langle\cdot,\cdot\rangle = [J\cdot,\cdot]$, self-adjoint for the indefinite form, and it commutes with $J$; its domain is the set of $u$ with $\bar Su\in\mathrm{dom}\,\bar S^{\dagger}$.</p>
+<p><strong>Proof.</strong> The polar decomposition of a closed operator gives $\bar S^{\dagger}\bar S = \Delta^{1/2}\jmath^{\dagger}\jmath\Delta^{1/2} = \Delta^{1/2}\Delta^{1/2} = \Delta$, using $\jmath^{\dagger}\jmath = \mathrm{id}$ for a $J$-unitary antilinear isometry; positivity for the definite form is the assignment of $\Delta^{1/2}$ as the positive factor; the commutation with $J$ is the commutation of the factorisation with the fundamental symmetry, which holds because $S$ is defined by the involution and the involution is $J$-compatible in a Krein algebra.</p>
+<p><strong>Proposition (the $J$-modular conjugation).</strong> With the notation of the polar decomposition, $\jmath$ is antilinear, $J$-unitary, involutive, $\jmath^{2} = \mathrm{id}$, and it commutes with the fundamental symmetry,</p>
+<p>$$
+\jmath J = J\jmath , \qquad [\jmath u,\jmath v] = \overline{[u,v]} .
+$$</p>
+<p><strong>Proof.</strong> The involution $S^{2} = \mathrm{id}$ passes to the closure as $\jmath\Delta^{1/2}\jmath\Delta^{1/2} = \mathrm{id}$, and the uniqueness of the polar decomposition, together with the positivity of $\Delta$, forces $\jmath^{2} = \mathrm{id}$; the $J$-unitarity is the isometry statement of the definition, and the commutation with $J$ is the $J$-compatibility of the involution underlying $S$.</p>
+<p><strong>Theorem (the modular flow is the flow of the pair).</strong> The one-parameter family</p>
+<p>$$
+\sigma_t(x) = \Delta^{it}\,x\,\Delta^{-it}, \qquad x\in\mathcal{M},
+$$</p>
+<p>is a one-parameter group of $J$-automorphisms of $\mathcal{M}$: each $\sigma_t$ is an algebra automorphism of $\mathcal{M}$, each $\sigma_t$ is compatible with the indefinite adjoint, $\sigma_t(x^{\dagger}) = \sigma_t(x)^{\dagger}$, and $\sigma_{s+t} = \sigma_s\sigma_t$.</p>
+<p><strong>Proof.</strong> $\Delta^{it}$ is a group of definite-unitary operators commuting with $J$, and a $J$-commuting definite-unitary $U$ induces the automorphism $x\mapsto UxU^{-1} = UxU^{\dagger}$ of $\mathcal{M}$, which is compatible with the indefinite adjoint because $U^{\dagger} = JU^{*}J = U^{-1}$; the group law is that of $t\mapsto\Delta^{it}$.</p>
+<h2 id="the-role-of-the-math135-cyclic-and-math136-separating-conditions">The Role of the $J$-Cyclic and $J$-Separating Conditions</h2>
+<p><strong>Proposition (cyclic gives density, separating gives well-definedness).</strong> $J$-cyclicity makes $\mathcal{M}\xi$ dense and hence makes $S$ densely defined; $J$-separating makes $S$ well defined and injective. Both are needed, and neither can be dropped.</p>
+<p><strong>Proof.</strong> Density of the domain is cyclicity, well-definedness is separatingness by the first proposition of the article; a cyclic but not separating vector makes $S$ ambiguous, and a separating but not cyclic one leaves $S$ defined only on a non-dense domain, so that it has no closure to speak of.</p>
+<p><strong>Proposition (the self-dual cone supplies closability).</strong> If in addition $\xi$ carries a <strong>self-dual cone</strong> $C$ — a closed convex cone with $C = C^{\natural} = \{u : [u,v]\geq0 \text{ for all } v\in C\}$ — then the Tomita operator $S$ is closable, and the polar decomposition of its closure exists.</p>
+<p><strong>Proof.</strong> The self-dual cone is exactly the structure that replaces the Cauchy–Schwarz-type inequality missing in the indefinite case; it provides a positive definite form with respect to which $S$ is represented by a bounded operator and hence closable. This is the theory of <em>Krein–Tomita–Takesaki Theory</em>.</p>
+<p><strong>Remark (three data, not two).</strong> In the definite case the modular data is attached to the pair (algebra, cyclic and separating vector). In the indefinite case it is attached to the triple (algebra, $J$-cyclic and $J$-separating vector, self-dual cone), and the fundamental symmetry $J$ is carried along by each of the two objects produced. This is the precise sense in which the modular operator is <em>indefinite</em>: not that its spectrum is complex, but that it is positive for $J$ and self-adjoint for the form whose sign $J$ reverses.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-trivial-algebra-on-math154">The Trivial Algebra on $\mathbb{C}^{1,1}$</h3>
+<p>Let $K = \mathbb{C}^{1,1}$, $\mathcal{M}$ the diagonal $2\times2$ matrices, $J = \mathrm{diag}(1,-1)$ and $\xi = e_1+e_2$. Then $\xi$ is $J$-cyclic, the orbit of $x = \mathrm{diag}(a,b)$ being the point $(a,b)$ and the orbit of $\mathcal{M}$ all of $K$, and it is $J$-separating, since $x\xi = 0$ means $a = b = 0$. Here $x^{\dagger} = \mathrm{diag}(\bar a,\bar b)$, so the Tomita operator is <strong>termwise complex conjugation</strong>,
+$$
+S(a e_1 + b e_2) = \bar a\,e_1 + \bar b\,e_2 ,
+$$
+an antilinear involution with $S^{2} = \mathrm{id}$; it satisfies $[Su,Sv] = \overline{[u,v]}$ and $\jmath J = J\jmath$ with $\jmath = S$, so it is the $J$-modular conjugation, and the polar decomposition $S = \jmath\Delta^{1/2}$ has $\Delta = \mathrm{id}$.</p>
+<h3 id="a-pontryagin-space">A Pontryagin Space</h3>
+<p>On $\ell^{2}\oplus-\mathbb{C}$ with the algebra of diagonal operators and $\xi$ with all coordinates nonzero, the vector is $J$-cyclic and $J$-separating as soon as the self-dual cone is chosen; the $J$-modular operator is then diagonal, positive definite for $\langle\cdot,\cdot\rangle$ and self-adjoint for the form, and its $t$-th power generates the modular flow by rotating the phases of the coordinates. The choice of the cone, not the choice of $\xi$, is the extra datum.</p>
+<h3 id="the-definite-case">The Definite Case</h3>
+<p>For $J = \mathrm{id}$ the theory collapses to <em>The Modular Operator and Tomita-Takesaki Theory</em>: a cyclic and separating vector suffices, the self-dual cone is automatic (the positive cone of the Hilbert space), the $J$-modular operator is the modular operator and the $J$-modular conjugation is the modular conjugation.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Tomita operator</strong> of a Krein–von Neumann algebra $\mathcal{M}$ and a vector $\xi$ is the antilinear map $S(x\xi) = x^{\dagger}\xi$; it is well defined exactly when $\xi$ is <strong>$J$-separating</strong> and densely defined exactly when $\xi$ is <strong>$J$-cyclic</strong>, and it is involutive. In the definite case $S$ is closed and its polar decomposition gives the modular operator and the modular conjugation; in the indefinite case $S$ need not be closed, and the decomposition exists only under the additional hypothesis of a <strong>self-dual cone</strong>, and then reads $\bar S = \jmath\Delta^{1/2}$. The factor $\Delta$ is the <strong>$J$-modular operator</strong>: positive definite for the form of $J$, self-adjoint for the indefinite form, commuting with $J$, equal to $\bar S^{\dagger}\bar S$. The factor $\jmath$ is the <strong>$J$-modular conjugation</strong>: antilinear, $J$-unitary, involutive, commuting with $J$. The family $\sigma_t(x) = \Delta^{it}x\Delta^{-it}$ is a one-parameter group of $J$-automorphisms of $\mathcal{M}$, and it is the modular flow whose properties — the invariance of the algebra, the identification of the commutant and the $J$-KMS condition — are the <strong>Krein–Tomita–Takesaki theory</strong>. The algebra is <em>Krein–von Neumann Algebras</em>, the form and $J$ are <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>, and the definite case is <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$, $S(x\xi) = x^{\dagger}\xi$</td>
+<td>Tomita operator, antilinear, involutive</td>
+</tr>
+<tr>
+<td>$\xi$ $J$-cyclic / $J$-separating</td>
+<td>Density of $\mathcal{M}\xi$ / well-definedness of $S$</td>
+</tr>
+<tr>
+<td>$C = C^{\natural}$</td>
+<td>Self-dual cone, the closability hypothesis</td>
+</tr>
+<tr>
+<td>$\bar S = \jmath\Delta^{1/2}$</td>
+<td>Polar decomposition</td>
+</tr>
+<tr>
+<td>$\Delta = \bar S^{\dagger}\bar S$</td>
+<td>$J$-modular operator</td>
+</tr>
+<tr>
+<td>$\jmath$</td>
+<td>$J$-modular conjugation, $\jmath^{2} = \mathrm{id}$, $\jmath J = J\jmath$</td>
+</tr>
+<tr>
+<td>$\sigma_t(x) = \Delta^{it}x\Delta^{-it}$</td>
+<td>Modular flow, a group of $J$-automorphisms</td>
+</tr>
+<tr>
+<td>$J = \mathrm{id}$</td>
+<td>The definite case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the classical Tomita operator and its polar decomposition.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular operator and the modular conjugation.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 78 (Springer, 1974), for the self-dual cones of a Krein space.</li>
+<li>Konrad Schmüdgen, <em>Unbounded Operator Algebras and Representation Theory</em> (Akademie-Verlag, 1990), for the indefinite adjoint and the closability of the Tomita operator.</li>
+<li>Tomas Ya. Azizov and Iosif S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the operators commuting with a fundamental symmetry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

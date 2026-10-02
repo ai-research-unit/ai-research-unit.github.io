@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Graded Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-graded-algebra"><strong>The Signed Adjoint Sandwich on a Graded Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An operator on an algebra becomes a <strong>unitary</strong> operator as soon as the algebra carries a form, and the adjoint of the operator is read from the form. For the signed sandwich $\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$ of <em>The Signed Sandwich on a Graded Algebra</em> — the two-sided multiplication twisted by the grade involution $\alpha$ — the adjoint has a simple shape: it reverses the two elements and inserts the grade involution,</p>
+<p>$$
+(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\,\alpha(a)},
+$$</p>
+<p>and the signed sandwich is an <strong>isometry</strong> of the form exactly when $b=a^{-1}$, so that the signed reflections $\Sigma^{\alpha}_{a,a^{-1}}$ are isometries and, when a star is present, the unitary elements $u$ with $u^{*}u=uu^{*}=1$ give the isometric sandwiches $\Sigma^{\alpha}_{u,u^{*}}$. This article, the fifth of the <code>- * Operator Theory</code> group of the category, fixes the form on a graded algebra, defines the adjoint of an operator, computes the adjoints of the left and right multiplications and of the two sandwiches, and derives the <strong>unitarity condition</strong> $u^{*}u=uu^{*}=1$. The graded algebra, the sandwiches and the reflections are <em>The Signed Sandwich on a Graded Algebra</em> and <em>Reflections as Signed Two-Sided Operators on a Graded Algebra</em>; the element star is <em>Involutions of the Universal Enveloping Algebra</em>; the analytic theory of unitary operators on a Hilbert space belongs to a later Part and is named only.</p>
+<p>The base is a field $K$ of characteristic not two, $A=A^0\oplus A^1$ is a finite-dimensional $\mathbb{Z}/2$-graded associative algebra with grade involution $\alpha$, and the form is written $\beta$ with adjoint written ${}^{\dagger}$; the element star is written ${}^{*}$ and the operator adjoint ${}^{\dagger}$, to keep the two apart. The article uses the form algebraically and forms no length from it.</p>
+<h2 id="forms-and-adjoints">Forms and Adjoints</h2>
+<p><strong>Definition.</strong> A bilinear form $\beta$ on $A$ is <strong>nondegenerate</strong> when $\beta(a,\cdot)=0$ implies $a=0$; it is <strong>balanced</strong> when</p>
+<p>$$
+\beta(ax,y)=\beta(x,ya),\qquad \beta(xb,y)=\beta(x,by)
+$$</p>
+<p>for all $a,b,x,y$. A balanced form is <strong>α-compatible</strong> when $\beta(\alpha x,\alpha y)=\beta(x,y)$.</p>
+<p><strong>Proposition (the trace form).</strong> Let $T(x,y)=\operatorname{tr}(L_xL_y)$ be the trace form of $A$, where $L_x$ is the left multiplication. Then $T$ is symmetric and balanced,</p>
+<p>$$
+T(ax,y)=T(x,ya),\qquad T(xb,y)=T(x,by),
+$$</p>
+<p>and it is nondegenerate when $A$ is semisimple; the grade involution is $T$-self-adjoint, $\alpha^{\dagger}=\alpha$, exactly when $\alpha$ is an inner automorphism, in particular for the algebra of endomorphisms of a graded vector space.</p>
+<p><strong>Proof.</strong> $T(ax,y)=\operatorname{tr}(L_aL_xL_y)=\operatorname{tr}(L_xL_yL_a)=T(x,ya)$ by the cyclicity of the trace, and $T(xb,y)=\operatorname{tr}(L_xL_bL_y)=\operatorname{tr}(L_xL_{by})=T(x,by)$; symmetry is the cyclicity. For an inner $\alpha$, $\alpha(x)=uxu^{-1}$ gives $T(\alpha x,y)=T(x,\alpha^{-1}y)=T(x,\alpha y)$ because $\alpha^2=\mathrm{id}$. $\square$</p>
+<p><strong>Definition.</strong> Let $\beta$ be a nondegenerate form. The <strong>adjoint</strong> of a linear operator $S$ is the operator $S^{\dagger}$ with</p>
+<p>$$
+\beta(Sx,y)=\beta(x,S^{\dagger}y)\qquad\text{for all }x,y .
+$$</p>
+<p><strong>Proposition.</strong> The adjoint is unique when it exists, and the assignment $S\mapsto S^{\dagger}$ is additive and reverses products; when $\beta$ is balanced, every left or right multiplication has an adjoint.</p>
+<p><strong>Proof.</strong> Uniqueness and linearity are the nondegeneracy of $\beta$; the reversal of products is $\beta(STx,y)=\beta(Tx,S^{\dagger}y)=\beta(x,T^{\dagger}S^{\dagger}y)$; the multiplications have adjoints by the balanced conditions. $\square$</p>
+<p><strong>Assumption.</strong> From here the form $\beta$ is balanced, nondegenerate and <strong>α-compatible</strong>, with $\alpha^{\dagger}=\alpha$; the trace form of a semisimple graded algebra with inner grade involution is the model.</p>
+<h2 id="adjoints-of-the-multiplications-and-the-sandwiches">Adjoints of the Multiplications and the Sandwiches</h2>
+<p><strong>Theorem.</strong> For a balanced form the left and right multiplications satisfy</p>
+<p>$$
+(L_a)^{\dagger}=R_a,\qquad (R_b)^{\dagger}=L_b .
+$$</p>
+<p><strong>Proof.</strong> $\beta(L_ax,y)=\beta(ax,y)=\beta(x,ya)=\beta(x,R_ay)$ gives the first; the second is the second balanced condition. $\square$</p>
+<p><strong>Corollary.</strong> The unsigned sandwich satisfies $(\Sigma_{a,b})^{\dagger}=\Sigma_{b,a}$, since $\Sigma_{a,b}=L_aR_b$ and $(\Sigma_{a,b})^{\dagger}=R_b^{\dagger}L_a^{\dagger}=L_bR_a=\Sigma_{b,a}$.</p>
+<p><strong>Theorem.</strong> For an α-compatible form the signed sandwich satisfies</p>
+<p>$$
+(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\,\alpha(a)} .
+$$</p>
+<p><strong>Proof.</strong> Write $\Sigma^{\alpha}_{a,b}=L_aR_b\alpha$. Then $(\Sigma^{\alpha}_{a,b})^{\dagger}=\alpha^{\dagger}R_b^{\dagger}L_a^{\dagger}=\alpha L_bR_a$, and $\alpha L_bR_a(x)=\alpha(b\,x\,a)=\alpha(b)\alpha(x)\alpha(a)=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}(x)$. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint of the signed sandwich is the signed sandwich with the two elements replaced by their images under the grade involution and their order reversed; for the unsigned sandwich, which is the case $\alpha=\mathrm{id}$, this is $\Sigma_{b,a}$, as before; and the adjoint of the signed left multiplication is read from the case $b=1$, $(\ell_a)^{\dagger}=\Sigma^{\alpha}_{\alpha(1),\alpha(a)}=\Sigma^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication.</p>
+<p><strong>Corollary (the sandwich of a reflection).</strong> If $a\alpha(a)=1$ then $\alpha(a)=a^{-1}$ and $\alpha(a^{-1})=a$, so the signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ satisfies</p>
+<p>$$
+(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}=\Sigma^{\alpha}_{a,a^{-1}} ,
+$$</p>
+<p>that is, every nondegenerate signed reflection is <strong>self-adjoint</strong>.</p>
+<h2 id="isometry-and-unitarty">Isometry and Unitarty</h2>
+<p><strong>Definition.</strong> An operator $S$ is an <strong>isometry</strong> of the form, or <strong>unitary</strong>, when $S^{\dagger}S=SS^{\dagger}=\mathrm{id}$; the isometries form a subgroup of the units of $\operatorname{End}_K(A)$.</p>
+<p><strong>Theorem.</strong> The signed sandwich $\Sigma^{\alpha}_{a,b}$ is an isometry of a balanced α-compatible form if and only if $a$ is a unit and $b=a^{-1}$; equivalently the isometric signed sandwiches are exactly the signed reflections $\Sigma^{\alpha}_{a,a^{-1}}$.</p>
+<p><strong>Proof.</strong> By the composition law and the adjoint formula,
+$$
+(\Sigma^{\alpha}_{a,b})^{\dagger}\Sigma^{\alpha}_{a,b}
+=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}\circ\Sigma^{\alpha}_{a,b}
+=\Sigma^{\alpha}_{\alpha(b)\alpha(a),\,\alpha(b)\alpha(a)}
+=\Sigma^{\alpha}_{c,c},\qquad c=\alpha(ba),
+$$
+and $\Sigma^{\alpha}_{c,c}$ is the identity exactly when $c=1$, that is $ba=1$. Similarly $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{ab,ba}$ is the identity exactly when $ab=1$. Both conditions hold exactly when $a$ and $b$ are inverse units. $\square$</p>
+<p><strong>Corollary.</strong> Every signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ is an isometry, and the isometries of the signed sandwich family are exactly these; in particular the grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is an isometry, and the reflection $\Sigma^{\alpha}_{u,u^{-1}}$ attached to a unitary element $u$ of the star below is an isometry.</p>
+<h2 id="the-element-star-and-the-unitarity-condition">The Element Star and the Unitarity Condition</h2>
+<p><strong>Definition.</strong> An <strong>element star</strong> on $A$ is an anti-involution ${}^{*}$ with $(ab)^{*}=b^{*}a^{*}$, $(a^{*})^{*}=a$, compatible with the grading in the sense $\alpha(a^{*})=\alpha(a)^{*}$. It is <strong>compatible with the form</strong> when $\beta(a^{*},b^{*})=\beta(b,a)$.</p>
+<p><strong>Proposition.</strong> If ${}^{*}$ is an element star compatible with the form $\beta$ and the form is α-compatible, then the <strong>star form</strong></p>
+<p>$$
+\beta_{*}(x,y)=\beta(x^{*},y)
+$$</p>
+<p>is a balanced α-compatible form, nondegenerate when $\beta$ is, and with respect to it the adjoints of the multiplications are</p>
+<p>$$
+(L_a)^{\dagger}=L_{a^{*}},\qquad (R_b)^{\dagger}=R_{b^{*}},\qquad (\Sigma_{a,b})^{\dagger}=\Sigma_{a^{*},b^{*}} .
+$$</p>
+<p><strong>Proof.</strong> For the left multiplication, $\beta_{*}(L_ax,y)=\beta((ax)^{*},y)=\beta(x^{*}a^{*},y)=\beta(x^{*},a^{*}y)=\beta_{*}(x,L_{a^{*}}y)$ using the balanced property; the right multiplication is the same computation; the unsigned sandwich is their composite. The form $\beta_{*}$ is balanced and α-compatible by the corresponding properties of $\beta$ and the compatibility of ${}^{*}$ with $\alpha$. $\square$</p>
+<p><strong>Definition.</strong> The <strong>unitary elements</strong> of the pair $(A,{}^{*})$ are those with</p>
+<p>$$
+u^{*}u=uu^{*}=1 ,
+$$</p>
+<p>and they form a subgroup $U(A,{}^{*})$ of the units; the condition is the <strong>unitarity condition</strong>.</p>
+<p><strong>Theorem.</strong> If $u$ is unitary then the signed sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is an isometry of the star form.</p>
+<p><strong>Proof.</strong> The form $\beta_{*}$ is balanced and α-compatible by the previous proposition, so the isometry criterion of the previous section applies: $\Sigma^{\alpha}_{a,b}$ is a $\beta_{*}$-isometry exactly when $b=a^{-1}$. For $a=u$ unitary one has $u^{-1}=u^{*}$, so $b=u^{*}=u^{-1}$ and the sandwich is an isometry. $\square$</p>
+<p><strong>Corollary.</strong> The unitary elements give the isometric signed sandwiches; the condition $u^{*}u=uu^{*}=1$ is exactly what makes $\Sigma^{\alpha}_{u,u^{*}}$ unitary, and the map $u\mapsto\Sigma^{\alpha}_{u,u^{*}}$ carries the unitary group into the isometries of $\beta_{*}$, with kernel the central unitary elements by the injectivity-up-to-the-centre of the sandwich correspondence.</p>
+<h2 id="worked-case-endomorphisms-of-a-graded-two-dimensional-space">Worked Case: Endomorphisms of a Graded Two-Dimensional Space</h2>
+<p>Let $V$ have basis $e_1,e_2$ with parity $e_1$ even and $e_2$ odd, $J=\operatorname{diag}(1,-1)$, and $A=\mathrm{End}_K(V)$ with the grading by parity of operators and the grade involution $\alpha(X)=JXJ^{-1}$. Let $\beta(X,Y)=\operatorname{tr}(XY)$, balanced, nondegenerate, α-compatible with $\alpha^{\dagger}=\alpha$.</p>
+<p>For $a=J$ one has $\alpha(a)=J$, so $a\alpha(a)=J^2=1$ and $\Sigma^{\alpha}_{J,J^{-1}}=\Sigma^{\alpha}_{J,J}$ is the map $X\mapsto J\alpha(X)J=J(JXJ)J$ up to $J^{-1}=J$, which is the identity; the adjoint formula gives $(\Sigma^{\alpha}_{J,J})^{\dagger}=\Sigma^{\alpha}_{\alpha(J),\alpha(J)}=\Sigma^{\alpha}_{J,J}$, self-adjoint, and it is trivially an isometry.</p>
+<p>For $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one computes $\alpha(a)=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$ and $a\alpha(a)=I$, so $a$ lies in $\mathrm{R}(A)$; $\Sigma^{\alpha}_{a,a^{-1}}$ is a signed reflection, self-adjoint by the corollary, and an isometry by the theorem. Taking the element star $X^{*}=X^{\dagger}_{\text{Herm}}$ the adjoint transpose, the unitary elements are the matrices with $X^{*}X=XX^{*}=I$, and for such a $u$ the sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is isometric, the explicit verification being the multiplication of the two $2\times2$ matrices.</p>
+<p><strong>Verified.</strong> The adjoint formula $(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$ was checked on the four basis elements of $M_2(K)$ for the trace form and the grade involution $\alpha(X)=JXJ^{-1}$; the self-adjointness of $\Sigma^{\alpha}_{a,a^{-1}}$ was checked for $a=J$ and for $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$; the isometry condition was checked to be $ba=1$.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded algebra with a balanced α-compatible form $\beta$, the left and right multiplications satisfy $(L_a)^{\dagger}=R_a$ and $(R_b)^{\dagger}=L_b$, so the unsigned sandwich has adjoint $(\Sigma_{a,b})^{\dagger}=\Sigma_{b,a}$ and the <strong>signed sandwich</strong> has adjoint</p>
+<p>$$
+(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)},
+$$</p>
+<p>the two elements conjugated by the grade involution and reversed. A signed sandwich is an <strong>isometry</strong> exactly when its two elements are inverse units, so the isometric signed sandwiches are the <strong>signed reflections</strong> $\Sigma^{\alpha}_{a,a^{-1}}$, and every such reflection is <strong>self-adjoint</strong>, because $a\alpha(a)=1$ forces $\alpha(a)=a^{-1}$. With an <strong>element star</strong> ${}^{*}$ compatible with the form, the star form $\beta_{*}(x,y)=\beta(x^{*},y)$ makes $L_a$ have adjoint $L_{a^{*}}$ and the signed sandwich have adjoint $\Sigma^{\alpha}_{a^{*},b^{*}}$; the <strong>unitary elements</strong> are those with $u^{*}u=uu^{*}=1$, and the <strong>unitarity condition</strong> is exactly what makes $\Sigma^{\alpha}_{u,u^{*}}$ an isometry. The endomorphisms of a graded two-dimensional space are the worked case, where $\beta$ is the trace form and the computations are explicit. The analytic theory of unitary operators belongs to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>a finite-dimensional graded algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>a balanced α-compatible form</td>
+</tr>
+<tr>
+<td>$T(x,y)=\operatorname{tr}(L_xL_y)$</td>
+<td>the trace form</td>
+</tr>
+<tr>
+<td>$S^{\dagger}$</td>
+<td>the adjoint of $S$ with respect to $\beta$</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>the element star; $u^{*}u=uu^{*}=1$ the unitarity condition</td>
+</tr>
+<tr>
+<td>$\beta_{*}(x,y)=\beta(x^{*},y)$</td>
+<td>the star form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for bilinear forms, adjoints and the trace form.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for signed conjugations and their adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for algebras with involution and the unitary group.</li>
+<li>Jacques Dixmier, <em>Enveloping Algebras</em>, Graduate Studies in Mathematics 11 (American Mathematical Society, 1996), for star structures and unitary elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

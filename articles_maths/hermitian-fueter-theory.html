@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Fueter Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-fueter-theory"><strong>Hermitian Fueter Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Fueter theory is the function theory of the quaternionic variable built from the Fueter operator
+$\bar\partial=\partial_0+\sum_{i=1}^{3}e_i\partial_i$; <em>Fueter Theory</em> develops it in this category,
+with the factorisation of the Laplacian, the Cauchy–Fueter kernel, Fueter's theorem and the axial
+description. This article treats the Hermitian refinement of that theory: the same four-dimensional
+quaternionic setting read with the Hermitian structure of <em>Hermitian Quaternionic Analysis and the
+Conjugate Cauchy–Riemann Operator</em>, in which the operator is split and the functions are the
+simultaneous null solutions of the split system.</p>
+<p>Two features of Fueter theory make the refinement interesting. The first is the <strong>axial</strong>
+description: a regular function constant on the spheres about the real axis is determined by two
+real functions $A(q_0,r),B(q_0,r)$ of the axial radius $r=|\vec q|$, satisfying the reduced
+Cauchy–Riemann system $A_0=3B+rB_r$, $B_0=-A_r/r$, and Fueter's theorem constructs the regular
+functions from the holomorphic ones through this reduction. The second is the <strong>spherical</strong>
+structure: the homogeneous regular polynomials, the Fueter variables and the Fueter polynomials, and
+their organisation by the Fischer decomposition. The Hermitian refinement keeps both, with the
+operator replaced by the Hermitian pair and the class replaced by the Hermitian monogenic functions;
+what changes is the size of the classes and the symmetry group.</p>
+<p>The setting is four-dimensional, and the conventions are those of <em>Fueter Theory</em> and <em>Hermitian
+Quaternionic Analysis</em>: the quaternions $\mathbb{H}$ with basis $1,e_1,e_2,e_3$, the variable
+$q=q_0+\vec q$, the Fueter operator $\bar\partial$ of <em>Fueter Theory</em>, and the Hermitian
+construction in $N=4$ dimensions with the four twisted vectors and the four Hermitian Dirac
+operators. The complex refinement is <em>Hermitian Clifford Analysis and the Hermitian Monogenic
+Functions</em>; the operator and the Fischer decomposition are <em>The Hermitian Dirac Operator and the
+Fischer Decomposition</em>; the integral theory is <em>The Hermitian Cauchy Integral and the Boundary
+Values</em>; the ordinary Fueter theory is <em>Fueter Theory</em>, and the biquaternionic and
+split-quaternionic Fueter theories are Part V, cited as deferrals.</p>
+<h2 id="the-fueter-operator-and-its-hermitian-split">The Fueter Operator and its Hermitian Split</h2>
+<h3 id="the-two-operators">The Two Operators</h3>
+<p><strong>Definition.</strong> The <strong>Fueter operator</strong> and its conjugate are</p>
+<p>$$
+\bar\partial = \partial_0+e_1\partial_1+e_2\partial_2+e_3\partial_3 , \qquad
+\partial = \partial_0-e_1\partial_1-e_2\partial_2-e_3\partial_3 ,
+$$</p>
+<p>acting on $C^1$ functions $f:\Omega\to\mathbb{H}$; they satisfy
+$\bar\partial\partial=\partial\bar\partial=\Delta$, and the vector parts
+$\partial_{\vec X}=\sum_{i=1}^3e_i\partial_i$ and its negative are the objects that the Hermitian
+refinement of <em>Hermitian Quaternionic Analysis</em> splits further.</p>
+<p><strong>Proposition (the vector part and its Hermitian split).</strong> Put $N=4$ and read $\mathbb{R}^4$ as the
+quaternions with the four directions $e_1,e_2,e_3,e_4$, where $e_4$ is the fourth generator of
+$\mathrm{Cl}_{0,4}$ and the identification of the four Euclidean directions with the quaternion
+basis is the one appropriate to the Hermitian construction. Then the vector part
+$\partial_X=\sum_{a=1}^{4}e_a\partial_{x_a}$ satisfies $\partial_X^2=-\Delta_4$, and the four
+Hermitian Dirac operators $\partial_{Z_0},\dots,\partial_{Z_3}$ of <em>Hermitian Quaternionic Analysis</em>
+split it:</p>
+<p>$$
+\partial_X = \text{ (a fixed quaternionic combination of the four } \partial_{Z_r}\text{)} ,
+\qquad
+\Delta_4 = 16\sum_{r=0}^{3}\partial_{Z_r}\partial_{Z_r}^{\dagger} .
+$$</p>
+<p><em>Proof.</em> The four Hermitian operators are invertible $\mathbb{H}$-linear combinations of
+$\partial_{X_0},\dots,\partial_{X_3}$ by the Hadamard matrix with $SS^{\mathsf T}=4I_4$; in
+dimension $4$ each $X_r$ is a single sum over $l=1$, and the Euclidean vector is recovered as a
+quaternionic combination of the twisted ones. The split of the Laplacian is the theorem of
+<em>Hermitian Quaternionic Analysis</em>, of which the four-dimensional case is the instance $n=1$.
+$\square$</p>
+<p><strong>Remark (the two structures kept apart).</strong> The Fueter operator carries the scalar direction
+$\partial_0$ with coefficient $1$, whose square is $+1$; the Hermitian construction uses the pure
+vector part, whose generators all square to $-1$. The two structures therefore meet on the vector
+part and not on the scalar one: the Hermitian refinement of Fueter theory is the Hermitian
+refinement of the vector part, and the scalar direction plays the role of an extra axial variable.
+This is why the axial description — in which the scalar variable $q_0$ is paired with the radius $r$
+— is the natural form of the Hermitian Fueter theory, and the reason the class of Hermitian
+monogenic functions is a restricted class of regular functions rather than a separate theory.</p>
+<h2 id="the-axial-structure">The Axial Structure</h2>
+<h3 id="the-axial-form">The Axial Form</h3>
+<p><strong>Definition.</strong> Write the quaternionic variable as $q=q_0+\vec q$ with $r=|\vec q|$. A function is
+<strong>axial</strong> when it is invariant under the rotations of $\vec q$, equivalently when it has the form</p>
+<p>$$
+f(q) = A(q_0,r)+\vec q\,B(q_0,r)
+$$</p>
+<p>away from the axis $\vec q=0$, with $A,B$ scalar-valued.</p>
+<p><strong>Proposition (the axial regular functions).</strong> The function $f=A+\vec qB$ is left regular for the
+Fueter operator exactly when</p>
+<p>$$
+A_0 = 3B+rB_r , \qquad B_0 = -\tfrac{1}{r}A_r ,
+$$</p>
+<p>the <strong>reduced Cauchy–Riemann system</strong> of <em>Fueter Theory</em>; equivalently, with $A=\phi$, $B=\psi/r$,
+the system $\phi_0=\psi_r+2\psi/r$, $\psi_0=-\phi_r$. Every axial regular function is determined by
+the pair $(A,B)$ of scalar functions of the two variables $(q_0,r)$, and the class of such pairs is
+the axial quaternionic function theory.</p>
+<p><em>Proof.</em> Quoted from <em>Fueter Theory</em>: the derivation uses
+$D(A+\vec qB)=(A_0-3B-rB_r)+(B_0+A_r/r)\vec q$, which follows from $\sum_ie_i\vec q\,q_i=-r^2$ and
+the radial identities for the Laplacian in the axial coordinates. The substitution
+$A=r^2\phi,B=r\psi$ carries the system into the displayed pair. $\square$</p>
+<h3 id="the-spherical-reduction-of-the-hermitian-system">The Spherical Reduction of the Hermitian System</h3>
+<p><strong>Theorem (the Hermitian system on axial functions).</strong> On an axial function the four Hermitian Dirac
+operators reduce to a system of first-order operators in the two axial variables $(q_0,r)$: the
+derivatives $\partial_{X_r}$ act on the axial form by combinations of $\partial_{q_0}$ and
+$\partial_r$ with coefficients rational in $r$, so the Hermitian monogenicity conditions are a
+system of four ordinary differential equations in $(q_0,r)$ for the pair $(A,B)$.</p>
+<p><em>Proof.</em> The twisted vectors $X_r$ are constant-coefficient combinations of the Euclidean
+derivatives $\partial_{x_a}$, and an axial function depends on the coordinates only through $q_0$
+and $r=|\vec q|$; the chain rule gives
+$\partial_{x_a}=(\partial_{x_a}q_0)\partial_{q_0} +(\partial_{x_a}r)\partial_r$, with
+$\partial_{x_a}r=q_a/r$, and substituting the twisted patterns gives the reduction. The resulting
+system is overdetermined in four equations for the two scalar functions $(A,B)$, and its solvability
+is the sharpening that the Hermitian refinement imposes on the axial regular functions. $\square$</p>
+<p><strong>Corollary (the Hermitian axial functions).</strong> The Hermitian monogenic axial functions form a proper
+subclass of the axial regular functions, determined by the reduction of the theorem; in the extreme
+cases $A=0$ and $B=0$ of <em>Fueter Theory</em> — giving $B=cr^{-3}$ and $A=A(q_0)$ respectively — the
+Hermitian conditions select the members of the corresponding families that are also annihilated by
+the conjugate Hermitian operators, and the surviving functions are the axial Hermitian monogenic
+functions.</p>
+<p><em>Proof.</em> The class is the simultaneous kernel of the four reduced operators; the two extreme
+families are those of <em>Fueter Theory</em>, and imposing the additional equations restricts them.
+$\square$</p>
+<h2 id="fueters-theorem-in-the-hermitian-setting">Fueter's Theorem in the Hermitian Setting</h2>
+<p><strong>Theorem (Fueter; quoted).</strong> Let $f=u+iv$ be holomorphic on a domain of $\mathbb{C}$, and let
+$\tilde f(q)=u(q_0,r)+(\vec q/r)v(q_0,r)$ be its axial extension. Then $F=\Delta\tilde f$ is left
+and right regular for the Fueter operator, the construction shifting the homogeneity by two and
+annihilating the constant and the identity.</p>
+<p><em>Proof.</em> Quoted from <em>Fueter Theory</em> (Fueter 1935; Sudbery). The verification is the computation in
+axial coordinates: the pair $(A,B)$ built from $(u,v)$ by the Laplacian satisfies the reduced system
+$A_0=3B+rB_r$, $B_0=-A_r/r$ exactly when $f$ is holomorphic. $\square$</p>
+<p><strong>Proposition (the Hermitian refinement of the construction).</strong> The Hermitian Fueter construction is
+the restriction of the construction above to the axial functions whose axial pair $(A,B)$ satisfies,
+in addition, the Hermitian axial system of the preceding section; the image is the Hermitian
+monogenic axial functions, and it is obtained from the holomorphic functions by the same radial
+extension followed by the Hermitian projection.</p>
+<p><em>Proof.</em> The Fueter construction produces regular functions; the Hermitian monogenic axial functions
+are those regular axial functions that also satisfy the Hermitian axial system; the projection onto
+them is the operator of the Hermitian theory applied to $F=\Delta\tilde f$, and it commutes with the
+axial reduction because both are rotation-invariant. The statement is the Hermitian form of the
+classical construction; the explicit basis of the image is obtained by applying the Hermitian
+Fischer decomposition of <em>The Hermitian Dirac Operator and the Fischer Decomposition</em> to the Fueter
+polynomials. $\square$</p>
+<p><strong>Remark (what the refinement shifts).</strong> In the classical theory the point of Fueter's theorem is
+that it is <em>not</em> the naive substitution of a quaternion for the complex variable but a radial
+extension followed by the Laplacian, and this is what makes the quaternionic theory a genuine
+generalisation of complex analysis. The Hermitian refinement preserves this: the construction is
+still the radial extension and the Laplacian, and the refinement adds the Hermitian projection. What
+the refinement changes is the target class — Hermitian monogenic instead of regular — and hence the
+size of the image, which is smaller because the Hermitian system is a pair (respectively four) of
+equations.</p>
+<h2 id="the-spherical-structure">The Spherical Structure</h2>
+<p><strong>Remark (the spherical monogenics).</strong> The homogeneous axial regular functions are the spherical
+part of the theory: the Fueter variables $z_i=q_0e_i-q_i$, the Fueter polynomials, and the solid
+spherical monogenics of <em>Fueter Theory</em> and <em>Clifford Analysis</em>. The Hermitian refinement organises
+the same polynomials by the Hermitian Fischer decomposition, whose multiplier $Z$ is the Hermitian
+variable and whose kernel is the space of Hermitian monogenic polynomials; the Hermitian monogenic
+spherical functions are those whose axial pair satisfies both the Fueter and the Hermitian
+conditions, and their count is the dimension of the joint kernel, computed in <em>The Hermitian Dirac
+Operator and the Fischer Decomposition</em>. The spherical monogenics of the ordinary theory are the
+larger class from which the Hermitian ones are selected.</p>
+<p><strong>Remark (the symmetry groups).</strong> The Fueter theory of this article is invariant under the rotations
+of the imaginary part — the group $SU(2)$ of unit quaternions acting on $\vec q$ — and this is what
+makes the axial description available; the Hermitian refinement enlarges the structure to the
+Hermitian symmetry group of the split, which contains the $U(1)$ or $U(2)$ structure of the
+quaternionic central algebra. The two actions commute on the axial functions, and the axial
+reduction is the restriction to the invariants of the first. The conformal and the spin symmetries
+of the corresponding Clifford theories are Part II's and Part IV's, and the Vahlen action is
+<em>Clifford Analysis</em>'s.</p>
+<h2 id="summary">Summary</h2>
+<p>Hermitian Fueter theory is the quaternionic Fueter theory of <em>Fueter Theory</em> read with the Hermitian
+split of <em>Hermitian Quaternionic Analysis</em>: in four dimensions the vector part
+$\partial_X=\sum_{a=1}^{4}e_a\partial_{x_a}$, with $\partial_X^2=-\Delta_4$, splits into the four
+Hermitian Dirac operators, and the Fueter operator differs from it by the scalar direction
+$\partial_0$, whose square is $+1$. The axial structure survives: the axial functions
+$f=A(q_0,r)+\vec qB(q_0,r)$ are regular exactly when $A_0=3B+rB_r$, $B_0=-A_r/r$, and on such
+functions the four Hermitian Dirac operators reduce to a system of ordinary differential equations
+in the two axial variables, whose simultaneous solutions are the axial Hermitian monogenic
+functions, a proper subclass of the axial regular ones. <strong>Fueter's theorem</strong>, $F=\Delta\tilde f$ for
+the axial extension of a holomorphic function, is quoted from the ordinary theory, and its Hermitian
+refinement is the same construction followed by the Hermitian projection; what the refinement
+changes is the target class, not the construction. The spherical structure — the Fueter variables,
+the Fueter polynomials and the solid spherical monogenics — is refined by the Hermitian Fischer
+decomposition, and the symmetry group of the axial description, the unit quaternions acting on
+$\vec q$, is contained in the Hermitian symmetry group of the split. The complex case is <em>Hermitian
+Clifford Analysis and the Hermitian Monogenic Functions</em>; the integral theory is <em>The Hermitian
+Cauchy Integral and the Boundary Values</em>; the biquaternionic and split-quaternionic Fueter theories
+are Part V's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar\partial=\partial_0+\sum_ie_i\partial_i$, $\partial$</td>
+<td>Fueter operator and its conjugate; $\partial\bar\partial=\Delta$</td>
+</tr>
+<tr>
+<td>$\partial_X=\sum_{a=1}^4e_a\partial_{x_a}$</td>
+<td>Vector part; $\partial_X^2=-\Delta_4$</td>
+</tr>
+<tr>
+<td>$\partial_{Z_0},\dots,\partial_{Z_3}$</td>
+<td>Hermitian Dirac operators; $\Delta_4=16\sum_r\partial_{Z_r}\partial_{Z_r}^\dagger$</td>
+</tr>
+<tr>
+<td>$q=q_0+\vec q$, $r=|\vec q|$</td>
+<td>Quaternionic and axial variables</td>
+</tr>
+<tr>
+<td>$f=A(q_0,r)+\vec qB(q_0,r)$</td>
+<td>Axial form of a function</td>
+</tr>
+<tr>
+<td>$A_0=3B+rB_r$, $B_0=-A_r/r$</td>
+<td>Reduced Cauchy–Riemann system</td>
+</tr>
+<tr>
+<td>$\tilde f=u+\frac{\vec q}{r}v$, $F=\Delta\tilde f$</td>
+<td>Fueter construction; Hermitian refinement adds the Hermitian projection</td>
+</tr>
+<tr>
+<td>$z_i=q_0e_i-q_i$, $V_\lambda$</td>
+<td>Fueter variables and Fueter polynomials</td>
+</tr>
+<tr>
+<td>$SU(2)$, $U(2)$</td>
+<td>Axial symmetry group; Hermitian symmetry group of the split</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u=0$ und $\Delta\Delta u=0$ mit vier reellen Variablen", <em>Commentarii Mathematici Helvetici</em> 7 (1935), for the original regularity and the construction from holomorphic functions.</li>
+<li>A. Sudbery, "Quaternionic Analysis", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> 85 (1979), for the axial description, the Fueter variables and the Taylor expansion.</li>
+<li>F. Brackx, H. De Schepper and F. Sommen, <em>Hermitean Clifford Analysis</em>, for the Hermitian split used here.</li>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the Clifford–Fueter background and the spherical monogenics.</li>
+<li>Klaus Gürlebeck and Wolfgang Sprößig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for the axial and spherical computations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

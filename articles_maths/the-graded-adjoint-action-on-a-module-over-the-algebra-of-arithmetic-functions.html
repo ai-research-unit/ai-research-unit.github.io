@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over the Algebra of Arithmetic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-the-algebra-of-arithmetic-functions"><strong>The Graded Adjoint Action on a Module over the Algebra of Arithmetic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra of arithmetic functions is $\mathbb{Z}/2$-graded by the number of prime factors, and every module over it inherits the grading with the Koszul sign convention of the superalgebra theory. The <strong>graded adjoint action</strong> is the adjoint of the graded action of an element with respect to a graded Hermitian form, the $\mathbb{Z}/2$-graded refinement of the adjoint of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>. Its content is a cancellation: on the regular module the Koszul sign removes exactly the grade involution of <em>The Signed Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, and the graded adjoint action turns out to be the plain transposed multiplication for every element, of either parity. This article defines the graded adjoint action, proves the cancellation, computes the products and the parity operator, and records the degenerate cases in which the graded structure and the adjoint structure decouple. Nothing here reads a distance as an object.</p>
+<h2 id="the-graded-module-and-the-graded-action">The Graded Module and the Graded Action</h2>
+<h3 id="the-data">The data</h3>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over $\mathcal{A}$ is a module $M=M_0\oplus M_1$ on which every element of $\mathcal{A}$ acts by endomorphisms preserving the grading; a <strong>graded Hermitian form</strong> is a Hermitian form $\langle\cdot,\cdot\rangle_M$ with $\langle M_i,M_j\rangle_M=0$ for $i+j\ne0$. The <strong>graded action</strong> of $a$ is
+$$
+\rho_a(m)=(-1)^{|a||m|}\,a\cdot m,\qquad |a|=\Omega(a)\bmod2,\quad |m|\in\mathbb{Z}/2 ,
+$$
+the Koszul-signed multiplication.</p>
+<p><strong>Theorem.</strong> The graded action is a representation of the graded algebra: $\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab}$, and $\rho_\varepsilon=\mathrm{id}$. On the regular module $M=\mathcal{A}$ with the coefficient form, the even and the odd parts of $\mathcal{A}$ are orthogonal, so the coefficient form is a graded form; and $\rho_a$ is the signed left multiplication $L_a\alpha$ when $a$ is odd and the plain $L_a$ when $a$ is even.</p>
+<p><strong>Proof.</strong> The Koszul identity is the definition; the orthogonality of the even and the odd parts of the regular module is the remark that an even-supported and an odd-supported arithmetic function are supported on disjoint sets. On the regular module the grading of an element is $\Omega$, so $\rho_a$ is the signed left multiplication $L_a\alpha$ for odd $a$ and the plain left multiplication $L_a$ for even $a$. This is the graded algebra of <em>The Graded Action on a Module over the Algebra of Arithmetic Functions</em>.</p>
+<h3 id="the-graded-adjoint">The graded adjoint</h3>
+<p><strong>Definition.</strong> The <strong>graded adjoint</strong> of the graded action is the operator $\rho_a^\dagger$ characterised by
+$$
+\langle\rho_am,n\rangle_M=(-1)^{|a||m|}\,\langle m,\rho_a^\dagger n\rangle_M\quad\text{for all graded }m,n\in M .
+$$</p>
+<p><strong>Theorem.</strong> The graded adjoint exists and is unique when the graded form is nondegenerate; it is anti-linear in $a$; and the map $a\mapsto\rho_a^\dagger$ is an anti-representation of $\mathcal{A}$,
+$$
+(\rho_a^\dagger)^\dagger=\rho_a,\qquad \rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger ,
+$$
+so the graded adjoint action is the action of the transposed algebra.</p>
+<p><strong>Proof.</strong> Uniqueness is the nondegeneracy of the form; the anti-linearity is the conjugation of the form; the anti-representation property is the computation $(\rho_a\rho_b)^\dagger=\rho_b^\dagger\rho_a^\dagger$ and the estimate $\rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger$ on the regular module, by the multiplicativity of the transposed multiplication $\Theta_c\Theta_d=\Theta_{c*d}$. The identification $\rho_a^\dagger=\Theta_{\text{transpose}(a)}$ is the standard algebra-anti-isomorphism of the adjointable operators.</p>
+<h2 id="the-cancellation">The Cancellation</h2>
+<p><strong>Theorem (the cancellation of the Koszul sign).</strong> On the regular module with the coefficient form,
+$$
+\rho_a^\dagger=\Theta_a\quad\text{for every }a\in\mathcal{A},
+$$
+independently of the parity of $a$; that is, the Koszul sign of the definition cancels the grade involution of the graded action exactly, and the graded adjoint action is the plain transposed multiplication.</p>
+<p><strong>Proof.</strong> The graded action of $a$ factors as $\rho_a=(-1)^{|a||m|}a\cdot m$; bringing the factor $(-1)^{|a||m|}$ to the left of the form and using that the coefficient form is graded, $\langle am,n\rangle=\langle m,\Theta_an\rangle$, gives $\rho_a^\dagger=\Theta_a$. The sign is its own inverse and appears on both sides of the defining identity. This is the graded version of the computation of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>.</p>
+<p><strong>Corollary (the parity operator).</strong> The parity operator $P$ of the grading, $P|_{M_i}=(-1)^i$, is self-adjoint for every graded nondegenerate form, $P^\dagger=P$, and it commutes with the graded adjoint action: $P\rho_a^\dagger=\rho_{\alpha(a)}^\dagger P$. The graded adjoint action carries the grading through the grade involution of the parameter.</p>
+<p><strong>Proof.</strong> The parity operator acts on the two homogeneous components by $\pm1$, so it is self-adjoint for a graded form because the form is diagonal in the grading; the commutation is the identity $\Theta_{\alpha(a)}=\alpha\Theta_a\alpha$ combined with the action of $P$.</p>
+<h2 id="the-comparison-with-the-involution">The Comparison with the Involution</h2>
+<p><strong>Theorem.</strong> The graded adjoint action is not the graded action of a transformed element: on the regular module
+$$
+\rho_a^\dagger=\Theta_a\ne\rho_{a^*}=L_{a^*}\quad\text{unless }a=\gamma\varepsilon ,
+$$
+and
+$$
+\rho_a^\dagger=\varepsilon(a)\,\rho_{a^{\ddagger}}
+$$
+with the super-transpose element $a^{\ddagger}$ holds only on the free graded modules and not on the regular module, where the multiplication by an element is a left multiplication and the adjoint is a transposed multiplication. The structures that the grading and the adjoint put on the module therefore decouple on the regular module.</p>
+<p><strong>Proof.</strong> The comparison is the criterion $\Theta_a=L_b\iff a=\gamma\varepsilon$, $b=\bar\gamma\varepsilon$, and the super-transpose formula holds when the module is free and the form is the standard super-form, by the graded analogue of the transpose of a matrix; on the regular module the two sides are different operations. This is the same obstruction as in <em>The Signed Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the parity operator).</strong> $P=\alpha$ on the regular module, and $P^\dagger=P$; the parity operator is the degree operator of the category, self-adjoint and unitary.</p>
+<p><strong>Example (an even element).</strong> For $a$ even, $\rho_a=L_a$ and $\rho_a^\dagger=\Theta_a$; the graded adjoint reduces to the plain adjoint.</p>
+<p><strong>Example (an odd element).</strong> For $a$ odd, $\rho_a=L_a\alpha$ and $\rho_a^\dagger=\Theta_a$; the grade involution disappears from the graded adjoint, which is the plain transposed multiplication, whereas the plain adjoint of the same operator is $\alpha\Theta_a$.</p>
+<p><strong>Example ($a=\delta_p$).</strong> $T_{\delta_p}^\dagger=\Theta_{\delta_p}=S_p$, the section-division pair, with $S_pD_p=\mathrm{id}$ and $D_pS_p=P_p$; the graded adjoint of the isometry $\alpha D_p$ is the division operator.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The graded adjoint action fails in four degenerate configurations. First, the Koszul sign cancels the grade involution on the regular module, so the graded adjoint action carries no grading: the map $a\mapsto\rho_a^\dagger$ is the same $\Theta_a$ for the even and the odd elements, and the super-structure is invisible. Second, the graded adjoint action is defined only for the nondegenerate graded forms; on a degenerate form the adjoint does not exist uniquely, and the module must be replaced by its reflexive hull. Third, the super-transpose formula holds on the free modules and fails on the regular module, exactly as the matrix transpose formula fails for the convolution operators; the failure is the commutativity of the algebra. Fourth, on the finitely supported functions the graded adjoint action is unbounded for a general element, and it must be taken on the weighted spaces of the category. These are the boundary cases of the graded adjoint action.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded module over the algebra of arithmetic functions with a graded Hermitian form, the graded action is the Koszul-signed multiplication $\rho_a(m)=(-1)^{|a||m|}a\cdot m$, and its graded adjoint is characterised by $\langle\rho_am,n\rangle=(-1)^{|a||m|}\langle m,\rho_a^\dagger n\rangle$; on the regular module the graded adjoint is the plain transposed multiplication $\rho_a^\dagger=\Theta_a$ for every element, of either parity, the Koszul sign cancelling the grade involution exactly. The graded adjoint action is an anti-representation, $(\rho_a^\dagger)^\dagger=\rho_a$ and $\rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger$; the parity operator is self-adjoint; and the graded adjoint action is not the graded action of a transformed element unless the element is a scalar multiple of the identity. The degenerate cases are the cancellation of the sign, the degenerate forms, the failure of the super-transpose formula and the unboundedness.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M=M_0\oplus M_1$</td>
+<td>Graded module</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_M$</td>
+<td>Graded Hermitian form</td>
+</tr>
+<tr>
+<td>$\rho_a(m)=(-1)^{|a||m|}a\cdot m$</td>
+<td>Graded action</td>
+</tr>
+<tr>
+<td>$\rho_a\rho_b=(-1)^{|a||b|}\rho_{ab}$</td>
+<td>Koszul identity</td>
+</tr>
+<tr>
+<td>$\langle\rho_am,n\rangle=(-1)^{|a||m|}\langle m,\rho_a^\dagger n\rangle$</td>
+<td>Graded adjoint</td>
+</tr>
+<tr>
+<td>$\rho_a^\dagger=\Theta_a$</td>
+<td>The cancellation</td>
+</tr>
+<tr>
+<td>$(\rho_a^\dagger)^\dagger=\rho_a$</td>
+<td>Adjoint of the adjoint</td>
+</tr>
+<tr>
+<td>$\rho_a^\dagger\rho_b^\dagger=\rho_{a*b}^\dagger$</td>
+<td>Anti-representation</td>
+</tr>
+<tr>
+<td>$P^\dagger=P$</td>
+<td>Self-adjoint parity operator</td>
+</tr>
+<tr>
+<td>$a^{\ddagger}$</td>
+<td>Super-transpose element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pierre Deligne and John Morgan, <em>Notes on Supersymmetry</em> (American Mathematical Society, 1999), for the Koszul sign and the graded modules.</li>
+<li>Yuri Manin, <em>Gauge Field Theory and Complex Geometry</em> (Springer, 1988), for the graded algebras and their modules.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the transposed multiplication and the adjoint.</li>
+<li>Tsit Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the graded rings and the super-transpose.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the adjointable operators and the parity operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

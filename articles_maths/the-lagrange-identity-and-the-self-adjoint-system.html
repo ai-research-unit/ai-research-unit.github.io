@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrange Identity and the Self-Adjoint System — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrange-identity-and-the-self-adjoint-system"><strong>The Lagrange Identity and the Self-Adjoint System</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Green formula is the integrated form of an identity between the operator and its adjoint, and that identity is the <strong>Lagrange identity</strong>: the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence,</p>
+<p>$$
+\bar v\,Lu-u\,\overline{L^{\dagger}v} = \operatorname{div}\mathbf P(u,v) ,
+$$</p>
+<p>where $\mathbf P(u,v)$ is the <strong>bilinear concomitant</strong>, a vector of boundary expressions of order one less than the operator in each variable. Integrating the identity over the domain and applying the divergence theorem produces the Green formula, the boundary integral being the flux of the concomitant through the boundary; the boundary form of <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em> is exactly that flux. When the operator is written as a first-order system, the same identity becomes the invariance of a <strong>symplectic form</strong>: the system is self-adjoint for a form $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$ for all $y,z$, and then $\omega$ is constant on pairs of solutions, its boundary values $[\omega(y,z)]_a^b$ being the boundary term.</p>
+<p>This article reads the differential equation with the conjugation that defines the adjoint. It fixes the Lagrange identity in one and several variables, with the concomitant of a second-order operator written out and the general order stated; derives the Green formula from it; and passes to the system form, where the symplectic form appears, states the self-adjointness of the system, and identifies the boundary term as the boundary value of the symplectic form. It closes with the Sturm–Liouville equation as the instance, whose system is self-adjoint and whose concomitant is the classical bracket.</p>
+<p>The formal adjoint and the boundary operator are those of <em>Differential Operators</em>; the boundary form, the Green formula and the self-adjoint condition are <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>; the Green function and the kernel symmetry are <em>The Green Operator</em> and <em>The Adjoint Problem and the Green Function</em>; the divergence theorem is <em>Vector Calculus and the Divergence Theorem</em>; the Sturm–Liouville expression and the classical bracket are <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>; and the systems of first-order equations, the fundamental matrix and the adjoint system are <em>Ordinary Differential Equations</em> and <em>Linear Systems of Differential Equations</em>. The pairing of the boundary data and the self-adjoint conditions are <em>The Adjoint Boundary Condition</em> and <em>Self-Adjoint Sturm–Liouville Operators</em>, below.</p>
+<h2 id="the-lagrange-identity">The Lagrange Identity</h2>
+<p><strong>Theorem (the Lagrange identity).</strong> Let $L=\sum_{k=0}^m p_k(x)\,\frac{d^k}{dx^k}$ be a differential operator on an interval with smooth coefficients and let $L^{\dagger}=\sum_{k=0}^m(-1)^k\frac{d^k}{dx^k}\bigl(\bar p_k\,\cdot\bigr)$ be its formal adjoint. Then there is a sesquilinear expression $P(u,v)$, the <strong>bilinear concomitant</strong>, of order at most $m-1$ in each of $u,v$, with</p>
+<p>$$
+\bar v\,Lu - u\,\overline{L^{\dagger}v} = \frac{d}{dx}P(u,v) ,
+$$</p>
+<p>the <strong>Lagrange identity</strong>; for the second-order operator $Lu=-(pu')'+qu$ with real $p>0$ and real $q$,</p>
+<p>$$
+P(u,v) = p\,(u\bar v'-u'\bar v) .
+$$</p>
+<p><em>Proof.</em> Both sides are sesquilinear in $u,v$ and of order at most $m$ in each, and it suffices to verify the identity for the monomials $p_k u^{(k)}$ and $p_k\bar v^{(k)}$ by the product rule: each $k$-th derivative term contributes a total derivative after the $k$-fold integration by parts that defines the adjoint, and the accumulating boundary expressions assemble into $P$. For the second order, $\bar v\,(-(pu')'+qu)-u\,(-\overline{(pv')'}+qv) = p(u\bar v''-u''\bar v)+p'(u\bar v'-u'\bar v) = \frac{d}{dx}\bigl[p(u\bar v'-u'\bar v)\bigr]$, since $u\bar v''-u''\bar v=\frac{d}{dx}(u\bar v'-u'\bar v)$.</p>
+<p><strong>Theorem (the divergence form).</strong> Let $L=\sum_{|\alpha|\le m}a_\alpha(x)\partial^\alpha$ be a differential operator on a domain $\Omega\subseteq\mathbb{R}^n$ with smooth coefficients and let $L^{\dagger}$ be its formal adjoint. Then there is a vector field $x\mapsto\mathbf P(u,v)(x)$, the <strong>concomitant vector</strong>, with</p>
+<p>$$
+\bar v\,Lu - u\,\overline{L^{\dagger}v} = \operatorname{div}\mathbf P(u,v) ,
+$$</p>
+<p>a sesquilinear in $u,v$, of order at most $m-1$ in each variable in each component; in one variable $\mathbf P$ is the scalar $P$ above.</p>
+<p><em>Proof.</em> Each monomial $a_\alpha\partial^\alpha$ pairs with the adjoint monomial through the integration by parts, and the boundary terms of the $n$-dimensional product rule assemble into the divergence of a vector field built from the derivatives of $u$ and $v$ of order at most $m-1$; the scalar case is the display above. The argument is that of the divergence theorem applied monomial by monomial, and the resulting vector field is unique up to a divergence-free field, which does not change the identity.</p>
+<h2 id="the-green-formula">The Green Formula</h2>
+<p><strong>Theorem (the Green formula).</strong> With the notation above and $\Omega$ a bounded domain with smooth boundary,</p>
+<p>$$
+\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\mathbf P(u,v)\cdot\nu\,dS ,
+$$</p>
+<p>where $\nu$ is the outward unit normal; the right side is the <strong>boundary form</strong></p>
+<p>$$
+\langle u,v\rangle_\partial = \int_{\partial\Omega}\mathbf P(u,v)\cdot\nu\,dS ,
+$$</p>
+<p>an expression in the boundary data of $u$ and $v$, skew-Hermitian when $L=L^{\dagger}$.</p>
+<p><em>Proof.</em> Integrate the Lagrange identity over $\Omega$ and apply the divergence theorem of <em>Vector Calculus and the Divergence Theorem</em>; the left side is the difference of the two pairings and the right side is the flux of the concomitant. The skew-Hermitian property is that of <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>, computed by exchanging $u$ and $v$ and conjugating.</p>
+<p><strong>Example (the second-order operator and the classical bracket).</strong> For $Lu=-(pu')'+qu$ the concomitant vector is $\mathbf P(u,v)=p\,(u\nabla\bar v-\bar v\nabla u)$ and the boundary form is the classical bracket</p>
+<p>$$
+\langle u,v\rangle_\partial = \Bigl[p\,(u\bar v'-u'\bar v)\Bigr]_a^b
+$$</p>
+<p>in one dimension, and $\langle u,v\rangle_\partial=\int_{\partial\Omega}p\,\bigl(u\,\partial_\nu\bar v-\bar v\,\partial_\nu u\bigr)dS$ in several; the separated and periodic conditions of the classical theory are exactly the conditions that make it vanish, by <em>The Sturm–Liouville Operator</em>.</p>
+<h2 id="the-self-adjoint-system">The Self-Adjoint System</h2>
+<p><strong>Definition.</strong> Let $y'=A(x)\,y$ be a first-order system of $n$ equations on an interval, with $A$ a smooth matrix-valued function, and let $z'=-A^{*}z$ be the <strong>adjoint system</strong>, $A^{*}=\bar A^{\mathsf T}$. A <strong>symplectic form</strong> for the system is a sesquilinear form $\omega(y,z)$ on the fibres such that $\omega(Ay,z)+\omega(y,Az)=0$ for all $y,z$; the system is then <strong>self-adjoint for $\omega$</strong>, and $\omega$ is <strong>infinitesimally preserved</strong>.</p>
+<p><strong>Theorem (invariance of the symplectic form).</strong> Let $\omega$ be a symplectic form for the system $y'=Ay$. Then for two solutions $y,z$ the function $x\mapsto\omega(y,z)$ is constant,</p>
+<p>$$
+\frac{d}{dx}\omega(y,z) = \omega(y',z)+\omega(y,z') = \omega(Ay,z)+\omega(y,Az) = 0 ,
+$$</p>
+<p>and the boundary term of the Lagrange identity is the difference of the boundary values $[\omega(y,z)]_a^b$.</p>
+<p><em>Proof.</em> The derivative of the sesquilinear form along the two solutions is $\omega(y',z)+\omega(y,z')$, the derivatives being $A y$ and $Az$; substituting the definition of the symplectic form gives zero. The boundary term of the Lagrange identity is by construction the cotangent expression in the boundary values, which for the first-order system is $\omega(y,z)$ evaluated at the endpoints.</p>
+<p><strong>Theorem (the adjoint system and the pairing).</strong> For the system $y'=Ay$ and its adjoint $z'=-A^*z$ the fibre pairing $\langle y,z\rangle$ is constant on pairs of solutions, $\frac{d}{dx}\langle y,z\rangle=0$, and the boundary form of the pair of problems is $[\langle y,z\rangle]_a^b$; the system is self-adjoint, that is, coincides with its adjoint system, exactly when $A^{*}=-A$, in which case $\omega=\langle\cdot,\cdot\rangle$ is a symplectic form in the sense above.</p>
+<p><em>Proof.</em> $\frac{d}{dx}\langle y,z\rangle=\langle y',z\rangle+\langle y,z'\rangle=\langle Ay,z\rangle+\langle y,-A^*z\rangle=\langle Ay,z\rangle-\langle Ay,z\rangle=0$. The self-adjoint case is $-A^{*}=A$; then the two derivatives of the pairing vanish and $\langle Ay,z\rangle+\langle y,Az\rangle=0$ by the skew-Hermitian property of $A$, so the pairing is a symplectic form.</p>
+<p><strong>Theorem (the Sturm–Liouville system).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, and write $y=(u,pu')$. Then $\ell u=\lambda w u$ reads as the system $y'=Ay$ with</p>
+<p>$$
+A = \begin{pmatrix}0 & 1/p\\ q-\lambda w & 0\end{pmatrix} ,
+$$</p>
+<p>and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is symplectic for $A$ when $\lambda$ is real; the system is self-adjoint, $\omega$ is invariant on pairs of solutions, and the boundary term is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. The two boundary conditions at $a$ and $b$ make the problem self-adjoint exactly when this form vanishes against the admissible pairs.</p>
+<p><em>Proof.</em> The first equation is $u'=y_2/p$ and the second is $(pu')'=(q-\lambda w)u$, which is the arrangement displayed. For real $\lambda$ and real coefficients, $\omega(Ay,z)+\omega(y,Az)=0$ by direct computation: $\omega(Ay,z)=\frac1p y_2\bar z_2-(q-\lambda w)y_1\bar z_1$ and $\omega(y,Az)=(q-\lambda w)y_1\bar z_1-\frac1p y_2\bar z_2$, which sum to zero. Invariance and the boundary form then follow from the two preceding theorems, and the self-adjointness of the scalar problem is the vanishing of the boundary term, which is <em>Self-Adjoint Sturm–Liouville Operators</em>, below.</p>
+<h2 id="summary">Summary</h2>
+<p>The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence, $\operatorname{div}\mathbf P(u,v)$, the bilinear concomitant $\mathbf P$ being sesquilinear and of order one less than $L$ in each variable; for $Lu=-(pu')'+qu$ it is the scalar $p(u\bar v'-u'\bar v)$, and the identity is verified by the product rule. Integrating the identity over a domain and applying the divergence theorem gives the Green formula, whose boundary integral is the boundary form $\langle u,v\rangle_\partial$, an expression in the boundary data and skew-Hermitian when the operator is formally self-adjoint; in one dimension it is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. Written as a first-order system $y'=Ay$, the identity becomes the invariance of a symplectic form: the system is self-adjoint for $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$, and then $\omega$ is constant on pairs of solutions and its boundary values are the boundary term. The adjoint system $z'=-A^*z$ has the pairing $\langle y,z\rangle$ constant on pairs of solutions and is self-adjoint exactly when $A^{*}=-A$. The Sturm–Liouville equation as the system $y=(u,pu')$ is the instance: its matrix $A$ is symplectic-skew for the classical form $p(u\bar v'-u'\bar v)$, the form is invariant, and the boundary term is the classical bracket whose vanishing is the self-adjointness of the problem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L$, $L^{\dagger}$</td>
+<td>Differential operator and its formal adjoint</td>
+</tr>
+<tr>
+<td>$P(u,v)$</td>
+<td>Bilinear concomitant (scalar case)</td>
+</tr>
+<tr>
+<td>$\mathbf P(u,v)$</td>
+<td>Concomitant vector (several variables)</td>
+</tr>
+<tr>
+<td>$\operatorname{div}\mathbf P=\bar vLu-u\overline{L^{\dagger}v}$</td>
+<td>Lagrange identity</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle_\partial=\int_{\partial\Omega}\mathbf P\cdot\nu\,dS$</td>
+<td>Boundary form (Green formula)</td>
+</tr>
+<tr>
+<td>$y'=Ay$</td>
+<td>First-order system</td>
+</tr>
+<tr>
+<td>$z'=-A^{*}z$</td>
+<td>Adjoint system, $A^{*}=\bar A^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\omega(y,z)$</td>
+<td>Symplectic form; $\omega(Ay,z)+\omega(y,Az)=0$</td>
+</tr>
+<tr>
+<td>$p(u\bar v'-u'\bar v)$</td>
+<td>Classical concomitant and boundary bracket</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Earl A. Coddington and Norman Levinson, <em>Theory of Ordinary Differential Equations</em> (McGraw–Hill, 1955), for the Lagrange identity, the bilinear concomitant and the adjoint system.</li>
+<li>Einar Hille, <em>Lectures on Ordinary Differential Equations</em> (Addison–Wesley, 1969), for the self-adjoint boundary-value problems and the system form.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 2nd ed. 1982), for the Lagrange identity and the self-adjoint conditions of a linear system.</li>
+<li>Vladimir I. Arnold, <em>Mathematical Methods of Classical Mechanics</em> (Springer, 2nd ed. 1989), for the symplectic form and the Hamiltonian systems, where the invariance is the conservation of the form.</li>
+<li>Michael E. Taylor, <em>Partial Differential Equations I</em> (Springer, 2nd ed. 2011), for the Lagrange identity, the concomitant and the Green formula in several variables.</li>
+<li>Gerald B. Folland, <em>Introduction to Partial Differential Equations</em> (Princeton University Press, 2nd ed. 1995), for the Green formula and the boundary terms of an elliptic operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

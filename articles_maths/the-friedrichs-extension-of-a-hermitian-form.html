@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Friedrichs Extension of a Hermitian Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-friedrichs-extension-of-a-hermitian-form"><strong>The Friedrichs Extension of a Hermitian Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A semi-bounded Hermitian form is one whose diagonal is bounded below, $\langle Tu,u\rangle\ge m\|u\|^2$, but which need not be closed and need not be coercive. The Friedrichs construction manufactures a self-adjoint operator out of it anyway. The device is to shift the form into a positive one, $a(u,u)+(1-m)\|u\|^2$, to complete the given domain in the resulting norm, and to pick out the operator whose action is given by the form on the vectors of the completion that lie in $H$. The resulting <strong>Friedrichs extension</strong> is the self-adjoint operator associated with the smallest closed extension of the form, and among all self-adjoint extensions of the given symmetric operator it is the one whose form domain is smallest; at the other extreme sits the <strong>Krein–von Neumann extension</strong>, whose form domain is largest. This is the theorem that gives the Dirichlet Laplacian its boundary conditions and the Sturm–Liouville operators their self-adjointness, and it is the reason a boundary-value problem can be posed by a form and a domain alone, with no reference to the differential expression.</p>
+<p>This article fixes the semi-bounded Hermitian forms, the form norm and its completion, the Friedrichs extension and its maximality, the operator version for a semi-bounded symmetric operator, and the examples. The closed and coercive forms and the Dirichlet principle are <em>Dirichlet Forms and the Hermitian Dirichlet Principle</em>; the representation theorem is <em>Sesquilinear Forms and the Lax–Milgram Theorem</em>; the self-adjointness and the square root are <em>Self-Adjoint Operators and the Spectral Theorem</em> and <em>Positive Operators and the Square Root</em>; the deficiency indices and the symmetric operators are <em>The Adjoint of an Unbounded Operator</em>.</p>
+<p>Throughout, $H$ is a complex Hilbert space with inner product linear in the first argument, and $t$ is a <strong>Hermitian form</strong> with dense domain $\mathcal{D}(t)\subseteq H$; the form is <strong>semi-bounded below</strong> with bound $m$ if</p>
+<p>$$
+t(u,u)\ge m\|u\|^2\qquad(u\in\mathcal{D}(t)),
+$$</p>
+<p>and the <strong>shifted form</strong> is $t_1(u,v)=t(u,v)+(1-m)\langle u,v\rangle$, which is nonnegative.</p>
+<h2 id="semi-bounded-forms">Semi-Bounded Forms</h2>
+<p><strong>Definition.</strong> A Hermitian form $t$ is <strong>bounded below</strong> by $m\in\mathbb{R}$ if $t(u,u)\ge m\|u\|^2$ for $u\in\mathcal{D}(t)$; the largest such $m$ is the <strong>lower bound</strong>, and the form is <strong>semibounded</strong> if it has one.</p>
+<p><strong>Proposition (the shifted form is an inner product).</strong> If $t$ is semibounded below by $m$ then $t_1(u,v)=t(u,v)+(1-m)\langle u,v\rangle$ satisfies $t_1(u,u)\ge\|u\|^2$; it is a positive definite Hermitian form, hence an inner product on $\mathcal{D}(t)$, and the associated norm</p>
+<p>$$
+\|u\|_1=\sqrt{t(u,u)+(1-m)\|u\|^2}
+$$</p>
+<p>dominates the original norm, $\|u\|_1\ge\|u\|$.</p>
+<p><em>Proof.</em> The shift makes the diagonal at least $\|u\|^2$; the form is sesquilinear and Hermitian, so it is an inner product, and the dominance is immediate.</p>
+<p><strong>Proposition (the form need not be closed).</strong> The form $t$ is <strong>closed</strong> if $\mathcal{D}(t)$ is complete for $\|\cdot\|_1$ and <strong>closable</strong> if it has a closed extension; a semibounded closable form has a smallest closed extension, the <strong>closure</strong> $\bar t$, obtained by completing the domain and extending the form by continuity.</p>
+<p><em>Proof.</em> The form is continuous for the form norm, so it extends uniquely to the completion of its domain; the extension is a Hermitian form with domain the completion, and it is the smallest closed extension because any closed extension must contain the closure of the domain and be continuous on it.</p>
+<h2 id="the-form-norm-and-its-completion">The Form Norm and Its Completion</h2>
+<p><strong>Definition.</strong> For a semibounded Hermitian form $t$ the <strong>form space</strong> $H_t$ is the completion of $\mathcal{D}(t)$ for the norm $\|\cdot\|_1$, and the <strong>form domain</strong> of the closure is $H_t$ with the form extended by continuity.</p>
+<p><strong>Proposition (the form space and its embedding).</strong> $H_t$ is a Hilbert space and the inclusion $\mathcal{D}(t)\hookrightarrow H$ extends to a contraction $H_t\to H$ of norm at most $1$, which need not be injective when $t$ is not closable; when $t$ is closable the map is injective and $H_t$ is canonically a dense subspace of $H$.</p>
+<p><em>Proof.</em> The completion of an inner product space is a Hilbert space, and the identity map on $\mathcal{D}(t)$ is continuous because $\|u\|\le\|u\|_1$, so it extends by continuity to a contraction; injectivity fails exactly when there is a nonzero element of $H_t$ with $\|u\|_1$-limit zero in $H$, which is the non-closability of $t$.</p>
+<p><strong>Example (the Dirichlet form).</strong> For $\Omega\subseteq\mathbb{R}^d$ open and bounded the form</p>
+<p>$$
+t(u,v)=\int_\Omega\nabla u\cdot\nabla\bar v
+$$</p>
+<p>on $\mathcal{D}(t)=C_c^\infty(\Omega)$ is Hermitian and bounded below by $0$; its form space is the Sobolev space $H^1_0(\Omega)$, obtained by completing the smooth compactly supported functions in the norm $\|u\|_1=\bigl(\int|\nabla u|^2+\int|u|^2\bigr)^{1/2}$, and the Poincaré inequality makes the gradient term alone a norm on this space.</p>
+<h2 id="the-friedrichs-extension">The Friedrichs Extension</h2>
+<p><strong>Theorem (Friedrichs).</strong> Let $t$ be a densely defined semibounded Hermitian form with lower bound $m$, and let $H_t$ be its form space. Then there is a self-adjoint operator $A_F$ with</p>
+<p>$$
+D(A_F)=\{u\in H_t: v\mapsto t(u,v)\ \text{is }H\text{-bounded on}\ \mathcal{D}(t)\},
+$$</p>
+<p>characterised by</p>
+<p>$$
+t(u,v)=\langle A_Fu,v\rangle\qquad(u\in D(A_F),\ v\in H_t),
+$$</p>
+<p>and $A_F$ is bounded below by $m$. The operator $A_F$ is the <strong>Friedrichs extension</strong> of $t$; its form domain is $H_t$, so $\mathcal{D}(A_F^{1/2})=H_t$, and</p>
+<p>$$
+t(u,v)=\langle A_F^{1/2}u,A_F^{1/2}v\rangle\qquad(u,v\in H_t).
+$$</p>
+<p><em>Proof.</em> The shifted form $t_1$ is a bounded coercive Hermitian form on the Hilbert space $H_t$, so by Lax–Milgram it is represented by a bounded operator $B$ on $H_t$; the vectors of $D(A_F)$ are those for which the functional $v\mapsto t_1(u,v)$ is bounded in the original norm, and on them $A_Fu=B u-(1-m)u$ shifted back. The operator is symmetric and, being the restriction of the representing operator of a coercive form, it is self-adjoint by the representation theorem for forms; the identification of the form domain with the domain of the square root is then the standard statement that the form is the form of its own square root.</p>
+<p><strong>Theorem (maximality).</strong> Among all self-adjoint operators $A$ that represent the form $t$, the Friedrichs extension is the largest: if $A$ represents $t$ then</p>
+<p>$$
+A\le A_F
+$$</p>
+<p>in the order of self-adjoint operators, equivalently $A_F^{-1}\le A^{-1}$ on the positive part; and the Friedrichs extension is the unique self-adjoint extension of $t$ whose operator domain is contained in $H_t$, the smallest possible form domain.</p>
+<p><em>Proof.</em> A representing operator $A$ has form domain contained in $H_t$, because the form domain contains $\mathcal{D}(t)$ and is complete for the form norm, hence lies in the completion $H_t$, and the form of $A$ agrees with $t$ there. Comparing the two forms and using the resolvent identity gives $A\le A_F$. For the uniqueness, if $D(A)\subseteq H_t$ then for $u\in D(A)$ the identity $t(u,v)=\langle Au,v\rangle$ holds on $\mathcal{D}(t)$ and extends to $H_t$ by continuity in $v$; so $v\mapsto t(u,v)$ is $H$-bounded, $u\in D(A_F)$ and $A_Fu=Au$, whence $A\subseteq A_F$; both are self-adjoint, so $A=A_F$.</p>
+<p><strong>Remark.</strong> The naming is by the form domain: the Friedrichs extension has the smallest form domain among the self-adjoint extensions, hence the largest operator, and the other extreme, with the largest form domain and hence the smallest operator, is the Krein–von Neumann extension treated below. The two coincide exactly when the form is already closed and the original operator self-adjoint.</p>
+<h2 id="the-operator-version">The Operator Version</h2>
+<p><strong>Theorem (Friedrichs extension of a symmetric operator).</strong> Let $T$ be a densely defined symmetric operator bounded below by $m$, and let $t_T(u,v)=\langle Tu,v\rangle$ on $D(T)$. Then $T$ has a self-adjoint extension bounded below by $m$, and among the self-adjoint extensions of $T$ there is exactly one whose operator domain is contained in the form domain $H_{t_T}$; it is the Friedrichs extension, and it is the largest self-adjoint extension of $T$ in the operator order.</p>
+<p><em>Proof.</em> The form $t_T$ is semibounded on the dense domain $D(T)$, so the previous theorem applies and produces $A_F$; the operator $A_F$ extends $T$ because on $D(T)$ the form $t_T$ is represented by $T$; the maximality among extensions of $T$ is the maximality among extensions of the form, since an extension of $T$ defines an extension of the form. The extension is bounded below by $m$ by the corresponding statement for the form.</p>
+<p><strong>Proposition (the extension and the deficiency indices).</strong> If $T$ is symmetric with deficiency indices $n_+=n_-=n>0$ then $T$ has a $U(n)$-family of self-adjoint extensions; the Friedrichs extension is the one whose form domain is smallest, the Krein–von Neumann extension is the one whose form domain is largest, and every other self-adjoint extension has a form domain between them.</p>
+<p><em>Proof.</em> The self-adjoint extensions are parametrised by the unitary maps between the deficiency subspaces, as in von Neumann's criterion; the order on the extensions is the inclusion of form domains, and the two extreme extensions are the Friedrichs and the Krein–von Neumann ones.</p>
+<h2 id="the-kreinvon-neumann-extension">The Krein–von Neumann Extension</h2>
+<p><strong>Definition.</strong> The <strong>Krein–von Neumann extension</strong> $A_N$ of a semibounded symmetric operator $T$ is the smallest self-adjoint extension in the operator order, equivalently the one whose form domain is the largest.</p>
+<p><strong>Proposition (characterisation).</strong> $A_N$ is the self-adjoint extension of $T$ with $\ker A_N=\ker A_F$, and it is the unique extension whose form domain contains all the other form domains; for every self-adjoint extension $A$ of $T$,</p>
+<p>$$
+A_N\le A\le A_F ,
+$$</p>
+<p>so the Krein–von Neumann extension is the smallest and the Friedrichs extension the largest in the operator order.</p>
+<p><em>Proof.</em> The Krein–von Neumann extension is defined by the boundary condition that the extension annihilates the kernel of the Friedrichs extension; the order statement is the translation of the form-domain inclusion, and the two extreme extensions sandwich all others because every form domain lies between the smallest and the largest, with the operator order reversed.</p>
+<p><strong>Example (the Laplacian on a bounded domain).</strong> For $\Omega$ a bounded smooth domain the operator $-\Delta$ on $C_c^\infty(\Omega)$ has deficiency indices $(n,n)$ with $n$ infinite; its Friedrichs extension is the Dirichlet Laplacian $-\Delta_D$ with form domain $H^1_0(\Omega)$, and its Krein–von Neumann extension is the operator whose form domain is $H^1(\Omega)$ with the boundary condition $\partial_\nu u=0$ replaced by the vanishing of $A_N$ on the harmonic functions; the Robin problems interpolate between the two extremes, and this is the standard spectral picture of the extension theory.</p>
+<p><strong>Example (Sturm–Liouville).</strong> For the Sturm–Liouville expression $-(pu')'+qu$ on a finite interval with $p>0$ and $q$ bounded below, the minimal operator on compactly supported smooth functions has deficiency indices $(2,2)$; the Friedrichs extension realises the Dirichlet boundary conditions, the other self-adjoint extensions are the separated and coupled boundary conditions, and the Friedrichs extension is the one selected by the quadratic form $\int p|u'|^2+q|u|^2$ on $H^1_0(a,b)$.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian form $t$ is semibounded below by $m$ if $t(u,u)\ge m\|u\|^2$, and the shifted form $t+ (1-m)\langle\cdot,\cdot\rangle$ is then an inner product whose completion $H_t$ is the form space; the identity of $H_t$ with a subspace of $H$ fails exactly when $t$ is not closable. The Friedrichs extension $A_F$ is the self-adjoint operator represented by the form, with domain the vectors of $H_t$ whose representing functional is bounded in $H$ and with form domain $H_t$, so $\mathcal{D}(A_F^{1/2})=H_t$ and $t(u,v)=\langle A_F^{1/2}u,A_F^{1/2}v\rangle$; it is bounded below by the same constant $m$. It is the largest self-adjoint extension of the form in the operator order, equivalently the one whose form domain is smallest and contained in every other, and for a semibounded symmetric operator it is the unique self-adjoint extension with operator domain contained in the form domain of the given form. When the deficiency indices are equal and positive the extensions form a $U(n)$-family; the Friedrichs extension is one extreme, the Krein–von Neumann extension is the other, and every self-adjoint extension lies between them, $A_N\le A\le A_F$. The Dirichlet Laplacian and the Sturm–Liouville problems with separated boundary conditions are the standard realisations, and the Robin problems interpolate between the two extremes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t(u,v)$</td>
+<td>Hermitian form on a dense domain $\mathcal{D}(t)$</td>
+</tr>
+<tr>
+<td>$t(u,u)\ge m\|u\|^2$</td>
+<td>semibounded below</td>
+</tr>
+<tr>
+<td>$t_1=t+(1-m)\langle\cdot,\cdot\rangle$</td>
+<td>the shifted positive form</td>
+</tr>
+<tr>
+<td>$\|u\|_1^2=t(u,u)+(1-m)\|u\|^2$</td>
+<td>the form norm</td>
+</tr>
+<tr>
+<td>$H_t$</td>
+<td>form space, the completion of $\mathcal{D}(t)$</td>
+</tr>
+<tr>
+<td>$t(u,v)=\langle A_Fu,v\rangle$</td>
+<td>the Friedrichs extension</td>
+</tr>
+<tr>
+<td>$\mathcal{D}(A_F^{1/2})=H_t$</td>
+<td>form domain is the domain of the square root</td>
+</tr>
+<tr>
+<td>$A_N\le A\le A_F$</td>
+<td>Friedrichs and Krein–von Neumann extensions sandwich the rest</td>
+</tr>
+<tr>
+<td>$H^1_0(\Omega)$</td>
+<td>form space of the Dirichlet form</td>
+</tr>
+<tr>
+<td>Dirichlet Laplacian</td>
+<td>Friedrichs extension of $-\Delta$ on $C_c^\infty(\Omega)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kurt Friedrichs, "Spektraltheorie halbbeschränkter Operatoren und Anwendung auf die Spektralzerlegung von Differentialoperatoren", <em>Mathematische Annalen</em> <strong>109</strong> (1934), 465–487, for the original construction.</li>
+<li>Mark G. Krein, "The Theory of Self-Adjoint Extensions of Semi-Bounded Hermitian Transformations and its Applications", <em>Matematicheskii Sbornik</em> <strong>20</strong> (1947), 431–495, for the Krein–von Neumann extension and the comparison with Friedrichs.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the form representation, the semibounded forms and the extension theory.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness</em> (Academic Press, 1975), for the Friedrichs extension, the deficiency indices and the examples.</li>
+<li>Joachim Weidmann, <em>Spectral Theory of Ordinary Differential Operators</em> (Springer, 1987), for the Sturm–Liouville realisations and the boundary conditions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Endomorphism Ring of a Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-endomorphism-ring-of-a-module"><strong>The Involution on the Endomorphism Ring of a Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-degenerate reflexive pairing on a module turns the adjoint of a homomorphism into an operation on the endomorphism ring: the map $f \mapsto f^{*}$ is additive, reverses products and has order two, so it is an <strong>involution</strong> of the ring. This article constructs that involution, identifies the endomorphisms it fixes — the <strong>self-adjoint</strong> ones — and the units it preserves — the <strong>unitary</strong> ones, which are exactly the isometries of the pairing.</p>
+<p>The article is the third of the <code>* Theory</code> group of this category. It assumes the pairing and the adjoint of <em>The Adjoint of a Module Homomorphism</em>, the endomorphism ring of <em>Module Endomorphisms</em> and <em>The Endomorphism Algebra of a Module</em>, and the involution concept of <em>Involutive Linear Algebras</em>. It is the module-level counterpart of <em>Involutions of the Endomorphism Algebra</em> in the linear-space category, with the same conventions; the operator-level counterparts, in which the adjoint of a specific operator is computed, are the <code>* Operator Theory</code> articles that follow. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $M$ is a left $A$-module with a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, and $E=\operatorname{End}_A(M)$.</p>
+<h2 id="the-involution-induced-by-a-pairing">The Involution Induced by a Pairing</h2>
+<h3 id="construction">Construction</h3>
+<p><strong>Theorem.</strong> Suppose the pairing is perfect, so that the adjoint of every endomorphism exists. Then the assignment</p>
+<p>$$
+{}^{*} : E \to E, \qquad f \longmapsto f^{*}, \qquad \langle f(m),n\rangle=\langle m,f^{*}(n)\rangle,
+$$</p>
+<p>is well defined, $R$-linear, additive, anti-multiplicative and of order two:</p>
+<p>$$
+(f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*} .
+$$</p>
+<p>Hence $(E,{}^{*})$ is an involutive $R$-algebra: ${}^{*}$ is an involution of $E$ whose fixed part is the set of self-adjoint endomorphisms.</p>
+<p><em>Proof.</em> Well-definedness, existence and $A$-linearity of $f^{*}$ are <em>The Adjoint of a Module Homomorphism</em>, and the four laws are proved there. An involution of a ring is an anti-automorphism of order two; ${}^{*}$ is additive and $R$-linear, so it is an involution of the $R$-algebra $E$, in the sense of <em>Involutive Linear Algebras</em>. $\square$</p>
+<p>The involution is not an auxiliary structure: it is the pairing, transported to the operators. Two pairings that are equivalent give the same involution, as the last section shows, and a pairing that is not reflexive fails to give an involution because $(f^{*})^{*}=f$ may fail.</p>
+<h3 id="the-adjoint-of-a-composite-and-the-elementary-elements">The adjoint of a composite and the elementary elements</h3>
+<p><strong>Proposition.</strong> For all $f_1,\dots,f_k \in E$,</p>
+<p>$$
+(f_1\cdots f_k)^{*}=f_k^{*}\cdots f_1^{*}, \qquad (\mathrm{id})^{*}=\mathrm{id}, \qquad (L_a)^{*}=L_{\sigma(a)} .
+$$</p>
+<p><em>Proof.</em> The first is induction from $(fg)^{*}=g^{*}f^{*}$, the second is immediate from the definition, and the third is the computation of the adjoint of a left multiplication in <em>The Adjoint of a Module Homomorphism</em>. $\square$</p>
+<p>The last identity is the bridge between the involution of the algebra and the involution of the endomorphism ring: the action of $a$ has adjoint the action of $\sigma(a)$.</p>
+<h2 id="self-adjoint-and-skew-adjoint-elements">Self-Adjoint and Skew-Adjoint Elements</h2>
+<h3 id="definition-and-decomposition">Definition and decomposition</h3>
+<p><strong>Definition.</strong> An endomorphism $f \in E$ is <strong>self-adjoint</strong> when $f^{*}=f$ and <strong>skew-adjoint</strong> when $f^{*}=-f$. The <strong>symmetric part</strong> and the <strong>skew part</strong> of $E$ are</p>
+<p>$$
+\operatorname{Sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
+$$</p>
+<p>Both are $R$-submodules of $E$.</p>
+<p><strong>Theorem.</strong> If $2$ is invertible in $R$, then</p>
+<p>$$
+E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*}),
+$$</p>
+<p>and the two summands have intersection $0$.</p>
+<p><em>Proof.</em> The displayed decomposition writes $f$ as the sum of a self-adjoint and a skew-adjoint element because ${}^{*}$ is $R$-linear and of order two; if $f$ is both, then $f=-f$ and $2f=0$, so $f=0$ when $2$ is invertible. $\square$</p>
+<p>The decomposition is the module-level form of the fixed-and-skew decomposition of an involutive algebra, and it reduces the study of $E$ to the self-adjoint part and the skew-adjoint part separately.</p>
+<h3 id="the-self-adjoint-part-is-a-jordan-algebra">The self-adjoint part is a Jordan algebra</h3>
+<p><strong>Theorem.</strong> The self-adjoint part is closed under the <strong>Jordan product</strong></p>
+<p>$$
+f \circ g=\tfrac12(fg+gf),
+$$</p>
+<p>and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{Sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a <strong>special</strong> Jordan algebra.</p>
+<p><em>Proof.</em> If $f^{*}=f$ and $g^{*}=g$ then $(fg+gf)^{*}=g^{*}f^{*}+f^{*}g^{*}=gf+fg=fg+gf$, so $(f\circ g)^{*}=f\circ g$; taking $g=f$ gives $f^{2}$ self-adjoint; the identity is self-adjoint. $\square$</p>
+<p>The symmetric part of an involutive algebra with this Jordan product is treated in <em>Involutive Linear Algebras</em>, which owns the general theory of the involutions and their symmetric elements.</p>
+<h3 id="the-matrix-description">The matrix description</h3>
+<p><strong>Proposition.</strong> Let $M=A^n$ with the standard sesquilinear pairing and identify $E=\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{op}})$. Then the involution is the transpose-entrywise map</p>
+<p>$$
+\Theta(X)_{ij}=\sigma(X_{ji}),
+$$</p>
+<p>of <em>Modules over an Involutive Algebra</em>, so the self-adjoint matrices are those with $\Theta(X)=X$ and the skew-adjoint matrices those with $\Theta(X)=-X$.</p>
+<p><em>Proof.</em> The adjoint with respect to the standard pairing is the transpose-entrywise map, as computed in <em>The Adjoint of a Module Homomorphism</em>. $\square$</p>
+<p>A change of basis conjugates the involution, by the basis-dependence statement of <em>Modules over an Involutive Algebra</em>, so the matrix description is canonical only for the standard basis; the involution as a map on $E$ is canonical.</p>
+<h2 id="unitary-elements">Unitary Elements</h2>
+<h3 id="definition-and-the-group">Definition and the group</h3>
+<p><strong>Definition.</strong> An endomorphism $u \in E$ is <strong>unitary</strong> when</p>
+<p>$$
+u^{*}u=uu^{*}=\mathrm{id} .
+$$</p>
+<p>The set of unitary elements is denoted</p>
+<p>$$
+U(M)=\{u \in E : u^{*}u=uu^{*}=\mathrm{id}\}.
+$$</p>
+<p><strong>Proposition.</strong> $U(M)$ is a subgroup of the group $E^{\times}=\operatorname{Aut}_A(M)$ of units, and it is contained in it: a unitary element is invertible with $u^{-1}=u^{*}$. It is the group of <strong>isometries</strong> of the pairing.</p>
+<p><em>Proof.</em> If $u\in U(M)$ then $u^{-1}=u^{*}$ explicitly, so $u\in E^{\times}$. Closure: if $u,v\in U(M)$ then $(uv)^{*}(uv)=v^{*}u^{*}uv=v^{*}v=\mathrm{id}$ and similarly on the other side, so $uv\in U(M)$; the identity is unitary; and $u^{-1}\in U(M)$ because $(u^{*})^{*}=u$ and $u^{*}u=uu^{*}=\mathrm{id}$ read as $u^{*}(u^{*})^{*}=(u^{*})^{*}u^{*}=\mathrm{id}$. $\square$</p>
+<h3 id="the-isometry-characterisation">The isometry characterisation</h3>
+<p><strong>Theorem.</strong> An endomorphism $u$ is unitary if and only if it preserves the pairing:</p>
+<p>$$
+u \in U(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M .
+$$</p>
+<p><em>Proof.</em> $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in U(M)$. $\square$</p>
+<p>Thus the unitary elements are exactly the automorphisms of $M$ that preserve the pairing, and $U(M)$ is the <strong>unitary group</strong> of the pairing; in the classical cases it is the orthogonal group, the unitary group or the symplectic group, as the examples show.</p>
+<h3 id="the-unitary-orbits-and-the-self-adjoint-elements">The unitary orbits and the self-adjoint elements</h3>
+<p><strong>Proposition.</strong> For $u \in U(M)$ and $f \in E$,</p>
+<p>$$
+(u^{*}fu)^{*}=u^{*}f^{*}u, \qquad (ufu^{-1})^{*}=u f^{*}u^{*} .
+$$</p>
+<p>Consequently $U(M)$ acts on the involutive algebra $E$ by <strong>unitary conjugation</strong>, $f \mapsto ufu^{*}=ufu^{-1}$, and this action preserves self-adjointness, skew-adjointness and the Jordan product. It is the <strong>unitary group of the involutive algebra</strong> $(E,{}^{*})$.</p>
+<p><em>Proof.</em> The two identities are anti-multiplicativity and $(u^{*})^{*}=u$; for $u\in U(M)$, $u^{*}=u^{-1}$, so $ufu^{-1}=ufu^{*}$ and conjugation by a unitary element maps $f^{*}$ to $(ufu^{*})^{*}=u f^{*}u^{*}$, preserving the fixed and skew parts; it preserves products and hence the Jordan product. $\square$</p>
+<h2 id="the-involution-and-the-centre">The Involution and the Centre</h2>
+<h3 id="the-kind-of-the-involution">The kind of the involution</h3>
+<p><strong>Definition.</strong> The involution ${}^{*}$ of $E$ is of the <strong>first kind</strong> when it fixes the centre $Z(E)$ pointwise, and of the <strong>second kind</strong> otherwise.</p>
+<p><strong>Proposition.</strong> ${}^{*}$ is of the first kind exactly when $z^{*}=z$ for every central endomorphism, that is, when the centre is contained in the self-adjoint part; and the induced map on the centre is an involution of $Z(E)$.</p>
+<p><em>Proof.</em> ${}^{*}$ restricted to the centre is an $R$-linear anti-automorphism of the commutative ring $Z(E)$, hence an automorphism, of order two; it is the identity precisely in the first-kind case. $\square$</p>
+<p>For the standard pairing on $A^n$ the centre is $Z(A)$ acting by scalars, and the induced involution is $z \mapsto \sigma(z)$ up to the identification; hence the involution is of the first kind when $\sigma$ fixes the centre, and of the second kind when it does not. Over a field with $\sigma=\mathrm{id}$ the involution is always of the first kind.</p>
+<h3 id="relation-to-the-involution-of-the-algebra">Relation to the involution of the algebra</h3>
+<p><strong>Proposition.</strong> Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of <em>The Endomorphism Algebra of a Module</em>, the involution ${}^{*}$ induced by the regular pairing is $\sigma$, so the involutive algebra $(E,{}^{*})$ of the regular module is $(A^{\mathrm{op}},\sigma)$.</p>
+<p><em>Proof.</em> The endomorphisms of the regular module are the right multiplications $R_a$, the adjoint of $R_a$ with respect to the regular pairing is $R_{\sigma(a)}$ by <em>The Adjoint of a Module Homomorphism</em>, and the identification sends $R_a$ to $a$. $\square$</p>
+<p>The involution on the endomorphism ring of a module is therefore not a new notion: for the regular module it is the involution of the algebra, and the construction of this article generalises it to every module with a pairing.</p>
+<h2 id="dependence-on-the-pairing">Dependence on the Pairing</h2>
+<h3 id="the-involution-is-canonical-for-a-fixed-pairing">The involution is canonical for a fixed pairing</h3>
+<p><strong>Proposition.</strong> For a fixed pairing the involution ${}^{*}$ is independent of the basis: in a basis with Gram matrix $\Phi$ (so $\langle m,n\rangle=[m]^{\mathsf{T}}\Phi[n]$) the involution reads</p>
+<p>$$
+[f^{*}]=\Phi^{-1}[f]^{\mathsf{T}}\Phi,
+$$</p>
+<p>and a change of basis conjugates both $[f]$ and $[f^{*}]$ by the same matrix, so the assignment $f\mapsto f^{*}$ on $E$ is unchanged.</p>
+<p><em>Proof.</em> $\langle f(m),n\rangle=[m]^{\mathsf{T}}[f]^{\mathsf{T}}\Phi[n]$ and $\langle m,f^{*}(n)\rangle=[m]^{\mathsf{T}}\Phi[f^{*}][n]$, so $\Phi[f^{*}]=[f]^{\mathsf{T}}\Phi$ and the formula follows; a change of basis replaces $[f]$ by $P^{-1}[f]P$ and $\Phi$ by $P^{\mathsf{T}}\Phi P$, and the two changes cancel in the formula. $\square$</p>
+<p>Multiplying the pairing by a unit $\lambda$ also leaves the involution unchanged, since $(\lambda\Phi)^{-1}[f]^{\mathsf{T}}(\lambda\Phi)=\Phi^{-1}[f]^{\mathsf{T}}\Phi$: only the class of the pairing up to scalars matters.</p>
+<h3 id="different-pairings-give-different-involutions">Different pairings give different involutions</h3>
+<p>The involution belongs to the pair (ring, pairing), not to the ring alone.</p>
+<p><strong>Example.</strong> On $M=k^2$ let the first pairing be the standard symmetric one, $\langle x,y\rangle=x_1y_1+x_2y_2$ with Gram matrix $I$, and the second the alternating one, $\langle x,y\rangle=x_1y_2-x_2y_1$ with Gram matrix $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$. The first involution is the transpose, whose fixed space is the three-dimensional space of symmetric matrices; the second is $T\mapsto J^{-1}T^{\mathsf{T}}J$, and a direct computation shows that its fixed space is the one-dimensional space of scalars. Two involutions of a ring with fixed parts of different dimensions are not isomorphic, so the same ring $M_2(k)$ carries two non-isomorphic involutions, induced by two pairings.</p>
+<p>The classification of the involutions a module's endomorphism ring can carry, and the question of when two pairings induce isomorphic involutions, is the subject of <em>Involutions of the Module Endomorphism Ring</em> in the <code>* Operator Theory</code> group. When the two pairings are the same up to a change of basis the involution is the same, by the proposition above; beyond that, two pairings can induce non-isomorphic involutions, as the example shows.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The orthogonal group.</strong> For $A=R$ a field, $M=R^n$ and the standard bilinear pairing $\langle x,y\rangle=\sum x_iy_i$, the involution is the transpose, the self-adjoint elements are the symmetric matrices, the skew-adjoint the alternating ones, and $U(M)=O(n)$.</p>
+<p><strong>(b) The unitary group.</strong> For $A=\mathbb{C}$, $M=\mathbb{C}^n$ and the sesquilinear pairing $\langle x,y\rangle=\sum x_i\overline{y_i}$, the involution is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and $U(M)=U(n)$.</p>
+<p><strong>(c) The symplectic group.</strong> For $M=R^{2n}$ with the alternating pairing $\langle x,y\rangle=\sum_i(x_iy_{i+n}-x_{i+n}y_i)$, the involution is $(f^{*})^{*}=f$ with $f^{*}=J^{-1}f^{\mathsf{T}}J$, and $U(M)=Sp(2n)$.</p>
+<p><strong>(d) The regular module of a division ring.</strong> For $M=A=D$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the involution on $\operatorname{End}_D(D)\cong D^{\mathrm{op}}$ is $\sigma$, the self-adjoint elements are the symmetric elements of $D$, and $U(D)=\{u : \sigma(u)u=1\}$ is the unitary group of $D$.</p>
+<p><strong>(e) A matrix algebra.</strong> For $A=M_n(\mathbb{C})$ with the conjugate transpose involution and $M=A$ as the regular module, the involution on $E\cong A^{\mathrm{op}}$ is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and the unitary group is the classical $U(n)$ acting by right multiplication.</p>
+<h2 id="summary">Summary</h2>
+<p>A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\Theta(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\circ g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $U(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $U(M)$ is $O(n)$, $U(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $A$, $\sigma$</td>
+<td>base ring, involutive $R$-algebra, involution</td>
+</tr>
+<tr>
+<td>$M$, $\langle\cdot,\cdot\rangle$</td>
+<td>module and non-degenerate reflexive σ-sesquilinear pairing</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_A(M)$</td>
+<td>the endomorphism ring</td>
+</tr>
+<tr>
+<td>$f^{*}$</td>
+<td>the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(M)$, $\operatorname{Skew}(M)$</td>
+<td>self-adjoint and skew-adjoint endomorphisms</td>
+</tr>
+<tr>
+<td>$f\circ g=\frac12(fg+gf)$</td>
+<td>the Jordan product on the self-adjoint part</td>
+</tr>
+<tr>
+<td>$U(M)=\{u : u^{*}u=uu^{*}=\mathrm{id}\}$</td>
+<td>the unitary group</td>
+</tr>
+<tr>
+<td>$\langle u(m),u(n)\rangle=\langle m,n\rangle$</td>
+<td>the isometry characterisation of unitarity</td>
+</tr>
+<tr>
+<td>$Z(E)$</td>
+<td>the centre of the endomorphism ring</td>
+</tr>
+<tr>
+<td>first kind, second kind</td>
+<td>involution fixing or moving the centre</td>
+</tr>
+<tr>
+<td>$\Theta(X)_{ij}=\sigma(X_{ji})$</td>
+<td>the matrix form on a free module</td>
+</tr>
+<tr>
+<td>$L_a^{*}=L_{\sigma(a)}$</td>
+<td>the adjoint of a left multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for involutions, sesquilinear forms and their unitary groups.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for involutions of rings and the classical groups.</li>
+<li>Israel N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for involutions, symmetric elements and their Jordan structure.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for involutions of the first and second kind and the unitary groups they define.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, second edition, 2001), for ring involutions, their fixed parts and matrix examples.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

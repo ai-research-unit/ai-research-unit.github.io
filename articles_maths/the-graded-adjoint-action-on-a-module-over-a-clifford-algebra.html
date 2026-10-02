@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-clifford-algebra"><strong>The Graded Adjoint Action on a Module over a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Clifford algebra is a $\mathbb{Z}/2$-graded algebra, $A=A^0\oplus A^1$ with the even part and the odd part, and its modules are graded: a <strong>graded Clifford module</strong> is a module $M=M^0\oplus M^1$ with $A^iM^j\subseteq M^{i+j}$, the spinor module being graded by the chirality. The <strong>adjoint action</strong> is the action carried by the <strong>graded dual</strong> $M^\vee$: for a homogeneous element $x$ of degree $\lvert x\rvert$ and a homogeneous functional $f$ of degree $\lvert f\rvert$ it is</p>
+<p>$$
+(\rho^{\vee}(x)f)(m)=-(-1)^{\lvert x\rvert\lvert f\rvert}\,f\bigl(\rho(x)m\bigr) ,
+$$</p>
+<p>the Koszul sign $(-1)^{\lvert x\rvert\lvert f\rvert}$ being forced by the module axiom. This article defines the graded dual, constructs the adjoint action, proves that the sign rule is exactly what makes it a graded action, and treats the <strong>coadjoint action</strong> — the adjoint action on the dual of the algebra itself — as the worked case, where the invariant standard form identifies the coadjoint module with the algebra and reduces the coadjoint action to the adjoint action of the conjugated parameter. The article completes the group: it is the module-level form of the adjoints of the one-sided and two-sided operators treated in the preceding entries.</p>
+<p><strong>The boundaries.</strong> The graded action, the sign rule and the graded bracket are <em>The Graded Action on a Module over a Graded Algebra</em>; the modules over the Clifford algebra and the chirality grading are <em>Modules over a Clifford Algebra</em> and <em>Clifford Modules</em>; the algebra and its grading are <em>Clifford Algebras</em>; the invariant standard form and the adjoint $L_a^*=L_{\hat a}$ are <em>The Twisted Adjoint on a Clifford Algebra</em> and <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>; the sandwich adjoint is <em>The Signed Adjoint Sandwich on a Clifford Algebra</em>. The analytic adjoint of an operator on a Hilbert space belongs to a later Part and is named only. The base is a field $F$ of characteristic not $2$, $A=\mathrm{Cl}(V,q)$ with the parity grading, and modules are finite-dimensional.</p>
+<h2 id="graded-clifford-modules-and-the-graded-dual">Graded Clifford Modules and the Graded Dual</h2>
+<p><strong>Definition.</strong> A <strong>graded Clifford module</strong> is a module $M$ over $A=\mathrm{Cl}(V,q)$ with a decomposition $M=M^0\oplus M^1$ such that $A^iM^j\subseteq M^{i+j}$; an element of $M^i$ is homogeneous of degree $i$, written $\lvert m\rvert=i$. The <strong>chirality grading</strong> of the spinor module in even dimension, $S=S^+\oplus S^-$, is the fundamental example.</p>
+<p><strong>Definition.</strong> The <strong>graded dual</strong> $M^{\vee}$ is the graded vector space with $(M^{\vee})^i=(M^i)^{*}$ for each $i$; a functional in $(M^i)^{*}$ has degree $i$.</p>
+<p><strong>Proposition.</strong> The <strong>evaluation pairing</strong> $\langle f,m\rangle=f(m)$ vanishes unless $\lvert f\rvert=\lvert m\rvert$ and is a map of degree zero; it is non-degenerate on each side for a finite-dimensional module; the parity shift $M[1]$ with $(M[1])^i=M^{i+1}$ satisfies $(M[1])^{\vee}=M^{\vee}[1]$.</p>
+<p><strong>Proof.</strong> A functional in $(M^i)^*$ vanishes on $M^j$ for $j\neq i$ and eats only $M^i$; the equality $i=j$ in $\mathbb{Z}/2$ means $i+j=0$, so the pairing has degree zero; non-degeneracy is the finite-dimensional duality; the shift statement is the reindexing of the dual.</p>
+<p><strong>Remark (the chirality example).</strong> For the spinor module $S=S^+\oplus S^-$ the graded dual is $(S^\vee)^\pm=(S^\pm)^*$, and the Clifford multiplication by a vector interchanges the two summands; the dual action therefore interchanges the dual summands as well, with the sign computed below.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<p><strong>Definition.</strong> Let $\rho$ be a graded action of $A$ on $M$. The <strong>adjoint action</strong> on $M^{\vee}$ is</p>
+<p>$$
+\bigl(\rho^{\vee}(x)f\bigr)(m) = -(-1)^{\lvert x\rvert\lvert f\rvert}\,f\bigl(\rho(x)m\bigr)
+$$</p>
+<p>for homogeneous $x,f$ and every $m$, extended bilinearly.</p>
+<p><strong>Theorem.</strong> The adjoint action is a graded action: $\rho^{\vee}$ is linear, homogeneous of degree zero, and satisfies the graded bracket identity</p>
+<p>$$
+\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)
+$$</p>
+<p>for homogeneous $x,y$; equivalently, the sign $(-1)^{\lvert x\rvert\lvert f\rvert}$ is exactly the sign that makes the transpose respect the graded bracket.</p>
+<p><strong>Proof.</strong> For homogeneous $x,y,f,m$ the module axiom of a graded action reads $x\cdot(y\cdot m)-(-1)^{\lvert x\rvert\lvert y\rvert}y\cdot(x\cdot m)=[x,y]\cdot m$, and unwinding the definition gives</p>
+<p>$$
+\bigl(\rho^{\vee}(x)\rho^{\vee}(y)f\bigr)(m)=(-1)^{\lvert x\rvert\lvert f\rvert+\lvert y\rvert\lvert f\rvert}\,f(y\cdot x\cdot m) , \qquad
+\bigl(\rho^{\vee}([x,y])f\bigr)(m)=-(-1)^{(\lvert x\rvert+\lvert y\rvert)\lvert f\rvert}f([x,y]\cdot m) ,
+$$</p>
+<p>and the two agree after inserting $(-1)^{\lvert x\rvert\lvert y\rvert}$ in front of the second term and using $(-1)^{(\lvert x\rvert+\lvert y\rvert)\lvert f\rvert}=(-1)^{\lvert x\rvert\lvert f\rvert+\lvert y\rvert\lvert f\rvert}$; the linearity and degree are immediate.</p>
+<p><strong>Remark (the Clifford generators).</strong> For the Clifford algebra the generators are odd and satisfy the graded anticommutation $uv+vu=2B(u,v)$; the adjoint action of a vector $u$ on the graded dual is</p>
+<p>$$
+\rho^{\vee}(u)f = (-1)^{\lvert f\rvert}\,\bigl(f\circ\rho(u)\bigr) ,
+$$</p>
+<p>the sign being $+$ on functionals of even degree and $-$ on functionals of odd degree; the graded dual therefore carries the same Clifford relations with the signs distributed by the parity of the functional, which is the module-level form of the relation $c(v)^*=-c(v)$ for the odd functionals.</p>
+<p><strong>Remark (the associative case and the star).</strong> The dual of a graded left module over a graded associative algebra is naturally a graded <strong>right</strong> module, $f\cdot a=\rho(a)^{t}f$; when the algebra carries an element star $x\mapsto x^{\dagger}$, $({}^{\dagger})^2=\mathrm{id}$, $(xy)^{\dagger}=y^{\dagger}x^{\dagger}$ — for the Clifford algebra the Clifford conjugation $\hat{}$ or the Hermitian conjugation of <em>Hermitian Clifford Structures</em> — the same computation with $x^{\dagger}$ in place of $[x,\cdot]$ makes the adjoint action a graded <strong>left</strong> action on $M^\vee$, the star supplying the reversal of the order, and the Koszul sign is unchanged.</p>
+<p><strong>Corollary (the sign rule).</strong> The adjoint action satisfies the sign rule: for homogeneous $x,y$,</p>
+<p>$$
+\rho^{\vee}(x)\rho^{\vee}(y)=(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)+\rho^{\vee}([x,y]) ;
+$$</p>
+<p>in particular the odd generators of the Clifford algebra graded-anticommute on the dual, as they do on the module.</p>
+<h2 id="the-coadjoint-action">The Coadjoint Action</h2>
+<p><strong>Definition.</strong> The <strong>adjoint action of the algebra on itself</strong> is $\mathrm{ad}_x(y)=xy-yx$ on the odd part and $xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ in general; the <strong>coadjoint action</strong> is the adjoint action on the graded dual $A^{\vee}$ of the algebra.</p>
+<p><strong>Proposition.</strong> The standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is invariant under the left and right multiplications of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em> in the sense that it identifies the coadjoint module with the algebra, and under that identification the coadjoint action is the adjoint action of the <strong>conjugated parameter</strong>,</p>
+<p>$$
+\rho^{\vee}(a)\ \longleftrightarrow\ \mathrm{ad}_{\alpha(\hat a)} ,
+$$</p>
+<p>the module-level form of the adjoint formula $L_a^*=L_{\hat a}$ of the operator theory.</p>
+<p><strong>Proof.</strong> The standard form is non-degenerate and satisfies $\langle ax,y\rangle=\langle x,\hat ay\rangle$; it therefore gives an isomorphism $A\to A^\vee$, $y\mapsto\langle y,\cdot\rangle$, and transports the coadjoint action to the action on $A$ computed by duality: $(\rho^\vee(a)f)(y)=-(-1)^{\lvert a\rvert\lvert f\rvert}f(ay)$. Reading $f=\langle z,\cdot\rangle$ and using the invariance gives the transported action $z\mapsto$ the element paired with $\hat a z$, which is the adjoint action of $\alpha(\hat a)$ on the opposite algebra; the explicit case is the display.</p>
+<p><strong>Corollary.</strong> The coadjoint action is an involution-free statement: its parameter involution is the same twisted conjugation $\alpha(\hat{})$ as for the signed left multiplication, and for a self-adjoint operator $L_a=L_{\hat a}$ the coadjoint action is the ordinary adjoint action. The invariant form is the reason the two stories agree, and it is the form of the category.</p>
+<p><strong>Proof.</strong> The parameter involution is read from the proof; the self-adjoint case is the identification of the conjugation, and the last statement is the definition of the invariant form.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-algebra-as-a-module-over-itself">The Algebra as a Module over Itself</h3>
+<p>For $M=A$ with the left regular action, the graded dual is $A^\vee$ and the adjoint action is the coadjoint action; with the standard form the module is identified with the algebra and the action is $\mathrm{ad}_{\alpha(\hat a)}$, as displayed. The action of a vector $u$ is the adjoint action $\mathrm{ad}_u$ up to the sign of the parity, since $\alpha(\hat u)=u$.</p>
+<h3 id="the-spinor-module">The Spinor Module</h3>
+<p>For the graded spinor module $S=S^+\oplus S^-$ of an even-dimensional Clifford algebra, the graded dual is $S^\vee=(S^+)^*\oplus(S^-)^*$ and the adjoint action interchanges the two summands; with the spinor inner product of <em>Hermitian Clifford Structures</em> the dual is identified with the conjugate module, and the adjoint action is the ordinary Clifford multiplication there, the Koszul sign reproducing the skew-adjointness $c(v)^*=-c(v)$ on the odd functionals.</p>
+<h3 id="the-exterior-algebra">The Exterior Algebra</h3>
+<p>For the exterior algebra $\Lambda W$ with the Clifford structure of the neutral form, the module is graded by the degree modulo two, the graded dual is the exterior algebra of the dual space, and the adjoint action is the contraction; the coadjoint identification by the standard form is the Poincaré duality pairing, and the adjoint action of a vector is the sum of the exterior and interior multiplications.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded Clifford module $M=M^0\oplus M^1$ the <strong>graded dual</strong> $M^{\vee}$ has $(M^{\vee})^i=(M^i)^*$ and the evaluation pairing of degree zero, and the <strong>adjoint action</strong> is</p>
+<p>$$
+(\rho^{\vee}(x)f)(m)=-(-1)^{\lvert x\rvert\lvert f\rvert}f(\rho(x)m) ,
+$$</p>
+<p>which is a graded action precisely because of the Koszul sign $(-1)^{\lvert x\rvert\lvert f\rvert}$: the graded bracket identity holds with that sign and fails without it. For the Clifford generators, which are odd, the sign depends only on the parity of the functional, reproducing $c(v)^*=-c(v)$ at the module level; with an element star the adjoint action becomes a graded <strong>left</strong> action on the dual. The <strong>coadjoint action</strong> — the adjoint action on the dual of the algebra — is identified by the invariant standard form of the category with the adjoint action of the <strong>conjugated parameter</strong>, the module-level form of $L_a^*=L_{\hat a}$. The article is the last of the category: the graded action is <em>The Graded Action on a Module over a Graded Algebra</em>, the modules are <em>Modules over a Clifford Algebra</em> and <em>Clifford Modules</em>, the invariant form is <em>The Twisted Adjoint on a Clifford Algebra</em>, and the analytic adjoint on a Hilbert space belongs to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>Clifford algebra with the parity grading</td>
+</tr>
+<tr>
+<td>$M=M^0\oplus M^1$, $A^iM^j\subseteq M^{i+j}$</td>
+<td>Graded Clifford module</td>
+</tr>
+<tr>
+<td>$M^{\vee}$, $(M^{\vee})^i=(M^i)^*$</td>
+<td>Graded dual</td>
+</tr>
+<tr>
+<td>$\langle f,m\rangle=f(m)$</td>
+<td>Evaluation pairing, of degree zero</td>
+</tr>
+<tr>
+<td>$(\rho^{\vee}(x)f)(m)=-(-1)^{\lvert x\rvert\lvert f\rvert}f(\rho(x)m)$</td>
+<td>Adjoint action; Koszul sign</td>
+</tr>
+<tr>
+<td>$\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{\lvert x\rvert\lvert y\rvert}\rho^{\vee}(y)\rho^{\vee}(x)$</td>
+<td>Graded bracket identity</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_x$, $\rho^{\vee}$ on $A^{\vee}$</td>
+<td>Adjoint and coadjoint actions</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle=\operatorname{Sc}(\hat xy)$</td>
+<td>Invariant standard form; identifies the coadjoint module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the graded structure of the Clifford algebra and the contragredient modules.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for the sign rule of the graded transpose and the graded modules.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the chirality grading of the spinor module and the dual spinor module.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the invariant forms and the identification of a module with its dual.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

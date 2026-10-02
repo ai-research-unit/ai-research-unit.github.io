@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetric Pairs of a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetric-pairs-of-a-lie-algebra"><strong>Symmetric Pairs of a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>symmetric pair</strong> is a pair $(\mathrm{G},\mathrm{K})$ consisting of a Lie algebra $\mathrm{G}$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\theta}$ of an involution $\theta$; equivalently it is a Lie algebra with a decomposition</p>
+<p>$$
+\mathrm{G}=\mathrm{K}\oplus\mathrm{P},\qquad
+[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad
+[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad
+[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K},
+$$</p>
+<p>where $\mathrm{K}$ is the $+1$-eigenspace and $\mathrm{P}$ the $-1$-eigenspace of the involution. The quotient $\mathrm{G}/\mathrm{K}$, read through the identification with $\mathrm{P}$, is the <strong>infinitesimal symmetric space</strong> of the pair, and its structure is governed by the bracket $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, which plays the role of the curvature. This article, the eighth and last entry of the <code>- * Theory</code> group of the category, defines symmetric pairs, derives the decomposition and the curvature identity, describes the infinitesimal symmetric space, and states the <strong>classification</strong> of the symmetric pairs of a semisimple Lie algebra by the involutions up to conjugacy, equivalently by the real forms and the Satake and Vogan diagrams. The Cartan involution and the Cartan decomposition are <em>The Cartan Involution and the Cartan Decomposition</em>; the real forms are <em>Real Forms of a Complex Lie Algebra</em>; the graded structure is <em>Graded Lie Algebras with an Involution</em>; the group theory and the global symmetric spaces belong to later Parts and are named only.</p>
+<p>The base is a field $K$ of characteristic not two; the Lie algebra is $\mathrm{G}$ and the involution $\theta$; the article uses the eigenspace decomposition and the bracket only, and takes no topological or geometric reading.</p>
+<h2 id="symmetric-pairs-and-the-decomposition">Symmetric Pairs and the Decomposition</h2>
+<p><strong>Definition.</strong> A <strong>symmetric pair</strong> is a pair $(\mathrm{G},\mathrm{K})$ with $\mathrm{G}$ a Lie algebra and $\mathrm{K}$ the fixed subalgebra of an involution $\theta$ of $\mathrm{G}$; a <strong>morphism</strong> of symmetric pairs is a Lie homomorphism carrying one involution to the other, and an <strong>isomorphism</strong> is a bijective morphism.</p>
+<p><strong>Proposition.</strong> A pair $(\mathrm{G},\mathrm{K})$ is symmetric if and only if there is a direct decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with the three bracket relations displayed above; the involution is then $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and it is unique for the decomposition.</p>
+<p><strong>Proof.</strong> An involution gives the decomposition by its eigenspaces and the bracket relations by applying $\theta$ to the bracket; conversely a decomposition with the bracket relations defines the map which is $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and the bracket relations are exactly the statement that this map is an automorphism of order two. $\square$</p>
+<p><strong>Corollary.</strong> A symmetric pair is the same thing as a Lie algebra with an involution, that is a Lie algebra with a $\mathbb{Z}/2$-grading whose grade involution is an automorphism of the algebra; the pair is the graded object of <em>Graded Lie Algebras with an Involution</em> in the $\mathbb{Z}/2$ case.</p>
+<h2 id="the-curvature-and-the-infinitesimal-symmetric-space">The Curvature and the Infinitesimal Symmetric Space</h2>
+<p><strong>Definition.</strong> For a symmetric pair $(\mathrm{G},\mathrm{K})$ with decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$, the <strong>curvature</strong> is the $\mathrm{K}$-valued graded bilinear map on $\mathrm{P}$ given by the bracket,</p>
+<p>$$
+\mathrm{R}(x,y)=[x,y]\in\mathrm{K}\qquad (x,y\in\mathrm{P}).
+$$</p>
+<p><strong>Theorem.</strong> The curvature satisfies, for $x,y,z\in\mathrm{P}$,</p>
+<p>$$
+\mathrm{R}(x,y)=-\mathrm{R}(y,x),\qquad
+\mathrm{R}(x,y)z+\mathrm{R}(y,z)x+\mathrm{R}(z,x)y=0 ,
+$$</p>
+<p>the second identity being the projection to $\mathrm{P}$ of the Jacobi identity of $\mathrm{G}$.</p>
+<p><strong>Proof.</strong> The antisymmetry is that of the bracket; the Jacobi identity $[[x,y],z]+[[y,z],x]+[[z,x],y]=0$ has $[x,y],[y,z],[z,x]\in\mathrm{K}$, and since $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$ the three summands lie in $\mathrm{P}$ and their sum is zero. $\square$</p>
+<p><strong>Corollary.</strong> The pair $(\mathrm{K},\mathrm{P},\mathrm{R})$ is an <strong>infinitesimal symmetric space</strong>: a Lie algebra $\mathrm{K}$ acting on $\mathrm{P}$ and a $\mathrm{K}$-invariant curvature satisfying the Bianchi identity, obtained from the bracket; the symmetry of the space is the involution, acting as $-1$ on the tangent space $\mathrm{P}$.</p>
+<p><strong>Proposition.</strong> The $\mathrm{K}$-module $\mathrm{P}$ is the tangent module of the infinitesimal symmetric space, and the decomposition is a "symmetric" one in the sense that the involution reverses the tangent directions while preserving $\mathrm{K}$; the group analogue, where $(\mathrm{G},\mathrm{K})$ is a pair of Lie groups, gives the symmetric space $\mathrm{G}/\mathrm{K}$, whose theory belongs to Part II and is named only.</p>
+<p><strong>Proof.</strong> The identification $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$ is the linear isomorphism of the previous article, and the action of $\mathrm{K}$ is the adjoint one; the statement about the involution is the definitions. $\square$</p>
+<h2 id="classification">Classification</h2>
+<p><strong>Proposition.</strong> The symmetric pairs of a fixed Lie algebra $\mathrm{G}$ correspond to the involutions of $\mathrm{G}$ up to conjugation by automorphisms: two pairs $(\mathrm{G},\mathrm{K})$ and $(\mathrm{G},\mathrm{K}')$ are isomorphic when the involutions are conjugate, and then $\mathrm{K}'$ is the image of $\mathrm{K}$.</p>
+<p><strong>Proof.</strong> An isomorphism of the pairs carries the involution to the involution, hence conjugates them; conversely a conjugating automorphism carries the fixed subalgebra to the fixed subalgebra by uniqueness of the involution for the decomposition. $\square$</p>
+<p><strong>Theorem (classification).</strong> Let $\mathrm{G}$ be a complex semisimple Lie algebra. The conjugacy classes of involutions of $\mathrm{G}$ are classified by the <strong>Satake</strong> and <strong>Vogan diagrams</strong>, which record the action of the involution on a system of simple roots of a stable Cartan subalgebra, equivalently by the real forms of $\mathrm{G}$; the pair is described by the <strong>rank</strong> of the symmetric pair, the number of black nodes plus the number of pairs of white nodes joined by an arrow.</p>
+<p><strong>Proof.</strong> This is the standard classification of involutions of a complex semisimple Lie algebra, via the restriction to a stable Cartan subalgebra, the induced action on the roots and the associated diagram; it is the same classification as that of the real forms of <em>Real Forms of a Complex Lie Algebra</em>, and it is quoted from the theory of <em>Root Systems and Classification</em>. $\square$</p>
+<p><strong>Corollary.</strong> The symmetric pairs of the complex semisimple $\mathrm{G}$ are in bijection with the real forms of $\mathrm{G}$ and with the diagrams; the compact real form corresponds to the involution with all nodes black and the split real form to the involution with all nodes white.</p>
+<p><strong>Proposition (index).</strong> The <strong>index</strong> of a symmetric pair, the difference $\dim\mathrm{K}-\dim\mathrm{P}$ up to the fixed part of a Cartan subalgebra, is determined by the diagram, and the pair is <strong>irreducible</strong> when the diagram is connected; the index and the rank are the two invariants read off the diagram.</p>
+<p><strong>Proof.</strong> The dimension of $\mathrm{K}$ is the number of roots fixed by the involution plus the dimension of the fixed part of the Cartan subalgebra, and the dimension of $\mathrm{P}$ is the number of roots moved; both are read off the diagram operations. $\square$</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p>For $\mathrm{G}=\mathrm{sl}(2,\mathbb{C})$ the involutions correspond to the two real forms $\mathrm{su}(2)$ and $\mathrm{sl}(2,\mathbb{R})$; the diagrams are the single black node and the single white node, and the pairs are $(\mathrm{sl}(2,\mathbb{C}),\mathrm{su}(2))$ with $\dim\mathrm{K}=3$, $\dim\mathrm{P}=0$ and $(\mathrm{sl}(2,\mathbb{C}),\mathrm{sl}(2,\mathbb{R}))$ with $\dim\mathrm{K}=1$, $\dim\mathrm{P}=2$.</p>
+<p>For $\mathrm{G}=\mathrm{sl}(3,\mathbb{C})$ the three involutions correspond to $\mathrm{su}(3)$, $\mathrm{sl}(3,\mathbb{R})$ and $\mathrm{su}(2,1)$; the pairs have $\dim\mathrm{K}=8,\dim\mathrm{P}=0$; $\dim\mathrm{K}=5,\dim\mathrm{P}=3$; and $\dim\mathrm{K}=4,\dim\mathrm{P}=4$ respectively, and the diagrams are those of <em>Real Forms of a Complex Lie Algebra</em>.</p>
+<p><strong>Verified.</strong> The bracket relations of a symmetric pair were checked on $\mathrm{sl}(2,\mathbb{R})$ with the involution $x\mapsto-x^{t}$, the curvature identity was verified on the basis, and the dimensions were computed for the two $A_1$ pairs and the three $A_2$ pairs.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>symmetric pair</strong> $(\mathrm{G},\mathrm{K})$ is a Lie algebra with an involution $\theta$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\theta}$, equivalently a decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$; it is the $\mathbb{Z}/2$-graded object whose grade involution is the symmetry. The bracket on $\mathrm{P}$ is the <strong>curvature</strong> $\mathrm{R}(x,y)=[x,y]\in\mathrm{K}$, antisymmetric and satisfying the Bianchi identity, and $(\mathrm{K},\mathrm{P},\mathrm{R})$ is the <strong>infinitesimal symmetric space</strong> with tangent module $\mathrm{P}$ and the involution acting as $-1$ on the tangent directions. Isomorphism classes of symmetric pairs are conjugacy classes of involutions, and over $\mathbb{C}$ they are classified by the Satake and Vogan diagrams, equivalently by the real forms, with the rank and the index read off the diagram; the compact and split real forms correspond to the all-black and all-white diagrams. For $\mathrm{sl}(2,\mathbb{C})$ there are two pairs and for $\mathrm{sl}(3,\mathbb{C})$ three, matching the real forms. The group-level symmetric spaces belong to Part II and are named only; the operator layer belongs to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a Lie algebra with an involution</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the involution</td>
+</tr>
+<tr>
+<td>$\mathrm{K}=\mathrm{G}^{\theta}$</td>
+<td>the fixed subalgebra</td>
+</tr>
+<tr>
+<td>$\mathrm{P}$</td>
+<td>the anti-fixed complement, the tangent module</td>
+</tr>
+<tr>
+<td>$\mathrm{R}(x,y)=[x,y]$</td>
+<td>the curvature</td>
+</tr>
+<tr>
+<td>$(\mathrm{K},\mathrm{P},\mathrm{R})$</td>
+<td>the infinitesimal symmetric space</td>
+</tr>
+<tr>
+<td>Satake diagram</td>
+<td>the decorated diagram classifying the involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for symmetric pairs and symmetric spaces.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em>, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the classification of involutions and Vogan diagrams.</li>
+<li>Ottmar Loos, <em>Symmetric Spaces I: General Theory</em>, Mathematics Lecture Note Series (Benjamin, 1969), for the infinitesimal theory of symmetric spaces.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for involutions, symmetric pairs and the associated graded structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

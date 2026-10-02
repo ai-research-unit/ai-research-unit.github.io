@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Structures and the Almost Complex Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-structures-and-the-almost-complex-structure"><strong>Hermitian Structures and the Almost Complex Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>almost complex structure</strong> on a smooth manifold is a bundle endomorphism $J$ of the tangent bundle with $J^2 = -\mathrm{id}$, the pointwise datum of a multiplication by $\sqrt{-1}$ on each tangent space. A <strong>Hermitian structure</strong> is the pair of that involution with a Riemannian metric for which $J$ is an isometry; it is the structure whose bundle-theoretic form the previous entries of the group developed, and whose operator form — the type decomposition of the complexified forms, the operators $\partial$ and $\bar\partial$, and the <strong>Nijenhuis tensor</strong> that decides the integrability — is the content of the present article.</p>
+<p>The article develops the almost complex structure and the Hermitian structure through their <strong>operators</strong>. It defines the involution, the $\pm i$-eigenbundles and the type decomposition of the complexified differential forms; it defines the partial derivatives $\partial$ and $\bar\partial$ as the type components of the exterior derivative, proves that $d = \partial + \bar\partial$ exactly when the almost complex structure is integrable, and proves that this is equivalent to the vanishing of the Nijenhuis tensor $N_J$ — the theorem of Newlander and Nijenhuis; it derives $\partial^2 = \bar\partial^2 = 0$ and $\partial\bar\partial + \bar\partial\partial = 0$, so that the forms become the <strong>Dolbeault double complex</strong>; and it identifies the Hermitian structure as the pair of the involution with an invariant metric, with the fundamental form as its operator shadow.</p>
+<p>The article assumes the almost complex structures, the Nijenhuis tensor, the integrability, the Hermitian metrics, the fundamental form and the Dolbeault complex as geometric objects of <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV; the metric, the fundamental form and the Kähler conditions of <em>Hermitian Metrics and the Levi-Civita Connection</em>; the Chern connection and its coefficients of <em>Hermitian Vector Bundles and the Chern Connection</em> and <em>Hermitian Manifolds and the Canonical Connection</em>; the exterior derivative, the forms and the type decomposition of <em>Differential Forms and Stokes' Theorem</em> and <em>The Exterior Derivative</em>; and the de Rham complex of the operator group. The Dolbeault cohomology as a complex and the $\bar\partial$-Poincaré lemma are stated here as operator consequences and their analytic theory is <em>Partial Differential Equations</em> and <em>The L2 Adjoint of a Differential Operator</em>. No physics is invoked.</p>
+<h2 id="the-almost-complex-structure-and-the-type-decomposition">The Almost Complex Structure and the Type Decomposition</h2>
+<h3 id="the-involution-and-its-eigenbundles">The Involution and Its Eigenbundles</h3>
+<p><strong>Definition.</strong> An <strong>almost complex structure</strong> on a smooth manifold $M$ is a bundle endomorphism $J : TM \to TM$ with $J^2 = -\mathrm{id}_{TM}$; the pair $(M,J)$ is an <strong>almost complex manifold</strong>. It exists only in even dimensions, where it reduces the structure group of the tangent bundle from $GL(2n,\mathbb{R})$ to $GL(n,\mathbb{C})$, as in <em>Hermitian Geometry and Almost Complex Structures</em>.</p>
+<p><strong>Proposition.</strong> The complexified tangent bundle $T_{\mathbb{C}}M = TM\otimes_{\mathbb{R}}\mathbb{C}$ splits into the eigenbundles of $J$ with eigenvalues $\pm i$,</p>
+<p>$$
+T_{\mathbb{C}}M = T^{1,0}M \oplus T^{0,1}M, \qquad T^{1,0}M = \{v : Jv = iv\}, \quad T^{0,1}M = \{v : Jv = -iv\},
+$$</p>
+<p>with $T^{0,1}M = \overline{T^{1,0}M}$; the projection onto $T^{1,0}M$ is $\tfrac12(\mathrm{id}-iJ)$. Dually, the complexified cotangent bundle splits as $T^*_{\mathbb{C}}M = \Lambda^{1,0}M\oplus\Lambda^{0,1}M$, and the complexified $k$-forms decompose into the <strong>forms of type $(p,q)$</strong>,</p>
+<p>$$
+\Lambda^kT^*_{\mathbb{C}}M = \bigoplus_{p+q=k}\Lambda^{p,q}M, \qquad \Omega^k(M;\mathbb{C}) = \bigoplus_{p+q=k}\Omega^{p,q}(M),
+$$</p>
+<p>where a $(p,q)$-form is a section of $\Lambda^{p,q}M = \Lambda^p\Lambda^{1,0}M\otimes\Lambda^q\Lambda^{0,1}M$.</p>
+<p><em>Proof.</em> The first two statements are the eigenbundle decomposition of the complexification of a real involution with eigenvalues $\pm i$, proved in <em>Hermitian Geometry and Almost Complex Structures</em>; the type decomposition of the exterior powers is the algebraic decomposition of the exterior algebra of a direct sum, applied fibrewise and made smooth.</p>
+<h3 id="the-nijenhuis-tensor">The Nijenhuis Tensor</h3>
+<p><strong>Definition.</strong> The <strong>Nijenhuis tensor</strong> of an almost complex structure is the assignment</p>
+<p>$$
+N_J(X,Y) = [JX,JY] - J[X,JY] - J[JX,Y] - [X,Y], \qquad X, Y \in \mathrm{X}(M).
+$$</p>
+<p><strong>Theorem.</strong> The Nijenhuis tensor is a well-defined tensor, antisymmetric and $C^\infty(M)$-bilinear, so it is a section of $\Lambda^2T^*M\otimes TM$; it satisfies $N_J(X,JX)=0$ and vanishes identically when $J$ comes from a complex atlas. The statement that $N_J$ is the only obstruction to $J$ being integrable is the theorem of Newlander and Nijenhuis, quoted from <em>Hermitian Geometry and Almost Complex Structures</em>: an almost complex structure is integrable, that is, it comes from a holomorphic atlas, if and only if $N_J = 0$.</p>
+<p><em>Proof.</em> The tensoriality is the classical computation of <em>Hermitian Geometry and Almost Complex Structures</em>: the terms with derivatives of the coefficient functions cancel because $J$ is a tensor and the bracket is tensorial in the appropriate sense; antisymmetry and the identity $N_J(X,JX)=0$ reduce to the Jacobi identity of the bracket and to $J^2=-1$. The integrability theorem is quoted.</p>
+<h2 id="the-operators-of-an-almost-complex-structure">The Operators of an Almost Complex Structure</h2>
+<h3 id="the-partial-derivatives">The Partial Derivatives</h3>
+<p><strong>Definition.</strong> The <strong>partial derivatives</strong> of the exterior derivative are the type components</p>
+<p>$$
+\partial = \pi^{p+1,q}\circ d \ : \ \Omega^{p,q}(M) \to \Omega^{p+1,q}(M), \qquad \bar\partial = \pi^{p,q+1}\circ d \ : \ \Omega^{p,q}(M) \to \Omega^{p,q+1}(M),
+$$</p>
+<p>where $\pi^{p+1,q}$ and $\pi^{p,q+1}$ are the projections onto the two types; they are the <strong>$(1,0)$-part</strong> and the <strong>$(0,1)$-part</strong> of $d$, and the remaining components of $d$ on a $(p,q)$-form are the projections onto the other bidegrees.</p>
+<p><strong>Proposition.</strong> The exterior derivative decomposes as</p>
+<p>$$
+d = \partial + \bar\partial \quad \text{on the complexified forms},
+$$</p>
+<p>that is, $d$ preserves the bidegree in the sense $d\,\Omega^{p,q}\subseteq\Omega^{p+1,q}\oplus\Omega^{p,q+1}$, if and only if the almost complex structure is integrable, $N_J = 0$.</p>
+<p><em>Proof.</em> The type of $d\omega$ is determined by the Leibniz rule and the fact that $d$ of a function is a $(1,0)$-form plus a $(0,1)$-form; the failure of $d$ to preserve the bidegree is measured by the $(0,2)$- and $(2,0)$-components of $d$ of the $(1,0)$- and $(0,1)$-forms, and these components are precisely the Nijenhuis tensor. The identification is the theorem of Newlander and Nijenhuis in its operator form, quoted from <em>Hermitian Geometry and Almost Complex Structures</em>; for an integrable structure the Dolbeault complex is the standard complex of a complex manifold.</p>
+<h3 id="the-dolbeault-double-complex">The Dolbeault Double Complex</h3>
+<p><strong>Theorem.</strong> Suppose $J$ is integrable, so $d = \partial + \bar\partial$. Then</p>
+<p>$$
+\partial^2 = 0, \qquad \bar\partial^2 = 0, \qquad \partial\bar\partial + \bar\partial\partial = 0,
+$$</p>
+<p>so the forms carry a <strong>double complex</strong>: for each $q$ the operators $\bar\partial$ make the rows $\Omega^{\bullet,q}$ into cochain complexes, for each $p$ the operators $\partial$ make the columns $\Omega^{p,\bullet}$ into cochain complexes, and the two commute with the sign, giving the anticommutation.</p>
+<p><em>Proof.</em> The identity $d^2 = 0$ and the bidegree decomposition $d = \partial+\bar\partial$ give, by separating the bidegrees of $d^2 = \partial^2 + (\partial\bar\partial+\bar\partial\partial) + \bar\partial^2$, the three displays: the $(p+2,q)$-part of $d^2$ is $\partial^2$, the $(p+1,q+1)$-part is $\partial\bar\partial+\bar\partial\partial$, and the $(p,q+2)$-part is $\bar\partial^2$. Since $d^2=0$, each homogeneous part vanishes.</p>
+<p><strong>Definition.</strong> The <strong>Dolbeault cohomology</strong> of an integrable almost complex structure is</p>
+<p>$$
+H^{p,q}_{\bar\partial}(M) = \frac{\ker(\bar\partial : \Omega^{p,q} \to \Omega^{p,q+1})}{\bar\partial\,\Omega^{p,q-1}} .
+$$</p>
+<p><strong>Theorem ($\bar\partial$-Poincaré lemma).</strong> On a polydisc in $\mathbb{C}^n$, a $\bar\partial$-closed form is locally $\bar\partial$-exact: for every $(p,q)$ with $q \geq 1$ there is an operator $K$ with $\bar\partial K + K\bar\partial = \mathrm{id}$ on the $(p,q)$-forms, obtained by integrating the contraction with the radial $(0,1)$-field along the complex lines. Consequently $H^{p,q}_{\bar\partial}(\mathbb{C}^n) = 0$ for $q \geq 1$, and the Dolbeault cohomology of a complex manifold is the local-global obstruction, exactly as the de Rham cohomology is for the exterior derivative.</p>
+<p><em>Proof.</em> The operator $K$ is the complex analogue of the homotopy operator of <em>The Exterior Derivative</em>: the radial vector field of the polydisc is replaced by its $(0,1)$-component, and the fundamental theorem of calculus along the complex lines through the origin gives the identity; the argument is the Poincaré lemma applied to the $\bar\partial$-complex. The identifications $H^{p,q}_{\bar\partial} \cong H^{p,q}_{\bar\partial}$ with the sheaf cohomology of the holomorphic forms are the Dolbeault theorem, developed in <em>Sheaves and the de Rham Complex</em>.</p>
+<h2 id="the-hermitian-structure">The Hermitian Structure</h2>
+<h3 id="the-metric-of-the-involution">The Metric of the Involution</h3>
+<p><strong>Definition.</strong> A <strong>Hermitian structure</strong> on an almost complex manifold $(M,J)$ is a Riemannian metric $g$ with $g(JX,JY)=g(X,Y)$; the triple $(M,J,g)$ is a <strong>Hermitian manifold</strong>. Equivalently, $J$ is $g$-skew, $g(JX,Y)=-g(X,JY)$, and the <strong>fundamental form</strong> is $\omega(X,Y)=g(JX,Y)$.</p>
+<p><strong>Proposition.</strong> The Hermitian structure is the pair of the involution $J$ with the invariant metric; the metric is the fixed point of the involution $g\mapsto J^*g$ acting on the Riemannian metrics, and the average $\tfrac12(g+J^*g)$ of any metric is the invariant metric in its conformal or linear class. The fundamental form is a real nondegenerate $(1,1)$-form, and it is closed exactly when the Hermitian manifold is Kähler; the type of $\omega$, the closedness condition and the comparison of the Chern and Levi-Civita connections are those of <em>Hermitian Metrics and the Levi-Civita Connection</em>.</p>
+<p><em>Proof.</em> The equation $g(JX,JY)=g(X,Y)$ is the invariance of $g$ under $J$, and the averaging of a metric is positive definite and invariant; the properties of $\omega$ and the Kähler condition are the results of the cited article.</p>
+<h3 id="the-hermitian-structure-as-an-involution-layer">The Hermitian Structure as an Involution Layer</h3>
+<p><strong>Remark.</strong> The pair $(J,g)$ is an <strong>involution on the data of the manifold</strong>: $J$ is an involution of the tangent bundle with $J^2=-1$, the metric is the fixed datum of the involution it generates on the metrics, and the constructions of the group — the conjugation on the fibres of a Hermitian bundle, the metric as the conjugate-linear isomorphism $\bar E\to E^*$, the self-adjointness of a metric connection, the codifferential with respect to a Hermitian metric — are all the same operation read at the level of the elements. The Hermitian structure is the source of the involution that the group records, and the operators $\partial$ and $\bar\partial$, the type decomposition and the Dolbeault complex are its operator form; the analytic refinement of the last of these, in which the Hermitian metric enters the adjoint of $\bar\partial$ and the Laplace operator splits, is <em>Hermitian Metrics and the Codifferential</em>, the last entry of the group, and <em>The L2 Adjoint of a Differential Operator</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>An almost complex structure is an involution $J$ of the tangent bundle with $J^2=-\mathrm{id}$; it splits the complexified tangent and cotangent bundles, and hence the complexified forms, into types $(p,q)$. The Nijenhuis tensor is its integrability obstruction; the theorem of Newlander and Nijenhuis says that $J$ is integrable exactly when $N_J=0$. The exterior derivative of an integrable structure splits into the type components $d=\partial+\bar\partial$, the failure of the split being exactly the Nijenhuis tensor; from $d^2=0$ come $\partial^2=\bar\partial^2=0$ and $\partial\bar\partial+\bar\partial\partial=0$, so the forms form the Dolbeault double complex, with its Dolbeault cohomology and its local exactness on the polydiscs.</p>
+<p>A Hermitian structure is a metric invariant under the involution, equivalently a fixed point of the induced involution on the metrics; its fundamental form is a real nondegenerate $(1,1)$-form, closed exactly in the Kähler case. The involution and its invariant metric are the source of the whole involution layer of the group: the conjugate bundle, the metric as a conjugate-linear isomorphism, the self-adjointness of a metric connection and the Hermitian codifferential are the same operation at the level of the elements, and the operators $\partial$ and $\bar\partial$ are its operator form. The heavy analysis of the Hermitian Laplacian, in which the metric enters the adjoint of $\bar\partial$, is <em>Hermitian Metrics and the Codifferential</em> and <em>The L2 Adjoint of a Differential Operator</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$, $J^2=-\mathrm{id}$</td>
+<td>Almost complex structure; the involution of the tangent bundle</td>
+</tr>
+<tr>
+<td>$T^{1,0}M$, $T^{0,1}M$</td>
+<td>The $\pm i$ eigenbundles; $T_{\mathbb{C}}M=T^{1,0}\oplus T^{0,1}$</td>
+</tr>
+<tr>
+<td>$\Omega^{p,q}(M)$, $\Lambda^{p,q}M$</td>
+<td>Forms of type $(p,q)$ and the bundle they section</td>
+</tr>
+<tr>
+<td>$N_J(X,Y)=[JX,JY]-J[X,JY]-J[JX,Y]-[X,Y]$</td>
+<td>Nijenhuis tensor; a section of $\Lambda^2T^*M\otimes TM$</td>
+</tr>
+<tr>
+<td>$N_J=0 \Leftrightarrow$ integrable</td>
+<td>Newlander–Nijenhuis theorem</td>
+</tr>
+<tr>
+<td>$\partial$, $\bar\partial$</td>
+<td>Type components of $d$; $\partial\Omega^{p,q}\subset\Omega^{p+1,q}$, $\bar\partial\Omega^{p,q}\subset\Omega^{p,q+1}$</td>
+</tr>
+<tr>
+<td>$d=\partial+\bar\partial$</td>
+<td>Equivalent to integrability</td>
+</tr>
+<tr>
+<td>$\partial^2=\bar\partial^2=0$, $\partial\bar\partial+\bar\partial\partial=0$</td>
+<td>Dolbeault double complex</td>
+</tr>
+<tr>
+<td>$H^{p,q}_{\bar\partial}(M)$</td>
+<td>Dolbeault cohomology; quotient of the $\bar\partial$-closed forms</td>
+</tr>
+<tr>
+<td>$\bar\partial K+K\bar\partial=\mathrm{id}$</td>
+<td>$\bar\partial$-Poincaré lemma; local exactness on a polydisc</td>
+</tr>
+<tr>
+<td>$g(JX,JY)=g(X,Y)$</td>
+<td>Hermitian structure; $J$ is a $g$-isometry, $J^*=-J$</td>
+</tr>
+<tr>
+<td>$\omega(X,Y)=g(JX,Y)$</td>
+<td>Fundamental form; closed iff Kähler</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, vol. II (Interscience, 1969), for the almost complex structure, the Nijenhuis tensor, the integrability and the type decomposition.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the operators $\partial,\bar\partial$, the double complex and the Dolbeault cohomology.</li>
+<li>Shiing-Shen Chern, <em>Complex Manifolds Without Potential Theory</em> (Springer, 2nd ed. 1979), for the type decomposition, the operators and the integrability.</li>
+<li>August Newlander and Louis Nijenhuis, "Complex analytic coordinates in almost complex manifolds", <em>Annals of Mathematics</em> 65 (1957), 391–404, for the integrability theorem.</li>
+<li>Werner Ballmann, <em>Lectures on Kähler Manifolds</em> (European Mathematical Society, 2006), for the Hermitian structure, the fundamental form and the Kähler condition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

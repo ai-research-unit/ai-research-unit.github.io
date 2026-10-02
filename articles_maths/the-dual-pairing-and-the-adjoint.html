@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dual Pairing and the Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dual-pairing-and-the-adjoint"><strong>The Dual Pairing and the Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A dual pairing $\langle E, F\rangle$ turns a weakly continuous operator $T$ of $E$ into a second operator $T^{*}$ of $F$, the <strong>adjoint</strong>, by moving $T$ from one side of the pairing to the other, $\langle Tx, y\rangle = \langle x, T^{*}y\rangle$, and the article is about that operator and its relation to the <strong>transpose</strong>. The two operations are different bookkeeping for one map: the transpose $T'$ always exists on the dual, being defined by composition, while the adjoint $T^{*}$ requires the pairing to identify the second space with the dual, and the identification is available precisely in the reflexive case, where the adjoint becomes the transpose brought back by the canonical embedding. For a Hilbert space the pairing is the inner product, the adjoint is the Hilbert adjoint of <em>The Adjoint of a Bounded Operator</em>, and the Riesz map is the identification that makes the two agree; for a reflexive Banach space it is the canonical identification of $E$ with $E''$.</p>
+<p>This article develops the adjoint defined by a dual pairing and its identification with the transpose. The dual pairs, the weak topologies, the polar calculus and the reflexivity are <em>Duality Theory</em>; the transpose and its weak-star continuity are <em>The Dual Operator</em> and <em>The Dual Operator and the Weak Topology</em>; the transpose of an involution is <em>The Involution and the Dual Pairing</em>; the Hilbert adjoint is <em>The Adjoint of a Bounded Operator</em>; the involutions of $B(H)$ are <em>Involutions of the Bounded Operators</em>. No form, no norm for its own sake and no spectral theory is used.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $(E, F)$ is a dual pair over $\mathbb{K}$ with pairing $\langle\cdot,\cdot\rangle$, $\mathcal{L}(E)$ is the algebra of continuous operators and $\mathcal{L}_{\sigma}(E)$ the algebra of weakly continuous ones, $\sigma(E,F)$ is the weak topology, $T' : F' \to E'$ is the transpose and $\iota_{E} : E \to E''$ the canonical embedding.</p>
+<h2 id="the-adjoint-of-a-weakly-continuous-operator">The Adjoint of a Weakly Continuous Operator</h2>
+<p><strong>Definition.</strong> For $T \in \mathcal{L}_{\sigma}(E)$ the <strong>adjoint</strong> is the operator $T^{*} \in \mathcal{L}_{\sigma}(F)$ with</p>
+<p>$$
+\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x \in E, \ y \in F).
+$$</p>
+<p><strong>Theorem (existence and uniqueness).</strong> Every weakly continuous $T$ has a unique adjoint $T^{*}$; the assignment $T \mapsto T^{*}$ is linear, reverses composition, $(ST)^{*} = T^{*}S^{*}$, fixes the identity, and is an algebra anti-isomorphism</p>
+<p>$$
+\mathcal{L}_{\sigma}(E) \longrightarrow \mathcal{L}_{\sigma}(F) .
+$$</p>
+<p><strong>Proof.</strong> For fixed $y \in F$ the functional $x \mapsto \langle Tx, y\rangle$ is continuous for $\sigma(E,F)$, because $T$ is, so it is $\langle x, y^{*}\rangle$ for a unique $y^{*} \in F$ by the non-degeneracy of the pairing; set $T^{*}y = y^{*}$. Linearity in $y$ is the bilinearity of the pairing, continuity of $T^{*}$ for $\sigma(F,E)$ is the same computation with the roles exchanged, and the composition rule is $\langle STx, y\rangle = \langle Tx, S^{*}y\rangle = \langle x, T^{*}S^{*}y\rangle$.</p>
+<p><strong>Proposition (the adjoint preserves the annihilator calculus).</strong> For $T \in \mathcal{L}_{\sigma}(E)$,</p>
+<p>$$
+\ker T^{*} = (\mathrm{im}\,T)^{\circ}, \qquad \overline{\mathrm{im}\,T^{*}} = (\ker T)^{\circ} ,
+$$</p>
+<p>the closures being in the weak topology; in particular $T$ is injective exactly when $T^{*}$ has dense image and $T^{*}$ is injective exactly when $T$ has dense image.</p>
+<p><strong>Proof.</strong> $y \in \ker T^{*}$ means $\langle Tx, y\rangle = 0$ for all $x$, which is the definition of the annihilator of the image; the second identity is the first applied to $T^{*}$ together with the bipolar theorem of <em>Duality Theory</em>, and injectivity is the vanishing of the kernel.</p>
+<h2 id="the-two-adjoints-and-the-transpose">The Two Adjoints and the Transpose</h2>
+<p><strong>Theorem (the adjoint is the transpose read through the duality).</strong> Let $E$ be reflexive and let $T \in \mathcal{L}(E)$. Then the transpose $T'' = (T')'$ acts on $E'' = E$ and equals the adjoint of $T$ with respect to the canonical pairing $\langle E, E'\rangle$:</p>
+<p>$$
+\iota_{E}\,T^{*} = T''\,\iota_{E}, \qquad T^{*} = \iota_{E}^{-1}T''\iota_{E} .
+$$</p>
+<p>Consequently the adjoint of $T$ with respect to the canonical pairing exists, is the double transpose under the identification, and is denoted by the same symbol $T^{*}$; for a general dual pair which is not the canonical one, the adjoint exists exactly when $T$ is weakly continuous.</p>
+<p><strong>Proof.</strong> For $x \in E$ and $y' \in E'$, $\langle T''\iota_{E}x, y'\rangle = \langle \iota_{E}x, T'y'\rangle = \langle x, T'y'\rangle = \langle Tx, y'\rangle = \langle \iota_{E}Tx, y'\rangle$, so $T''\iota_{E} = \iota_{E}T$; under the identification $E'' = E$ of reflexivity the left side is the transpose of $T$, and the adjoint with respect to the canonical pairing is $T^{*}$.</p>
+<p><strong>Corollary (the transpose always exists, the adjoint needs reflexivity).</strong> The transpose $T'$ is defined for every continuous $T$ and is an anti-homomorphism on the dual, while the adjoint $T^{*}$ on the space itself requires the identification of the space with its dual, which is the reflexivity; for a non-reflexive space the adjoint of a general continuous operator is defined only on the weakly continuous part and not by transposition alone.</p>
+<p><strong>Proof.</strong> The transpose is <em>The Dual Operator</em>; the adjoint is the theorem above, and the failure for a general continuous operator is the failure of the inclusion $\mathcal{L}(E) \subseteq \mathcal{L}_{\sigma}(E)$ in the non-reflexive case.</p>
+<p><strong>Theorem (the two adjoints of a Hilbert-space operator).</strong> Let $H$ be a Hilbert space and $R : H \to H'$ the Riesz map. Then the pairing adjoint with respect to the duality $\langle H, H'\rangle$ of the operator $T \in B(H)$ is the transpose, and the Hilbert adjoint of <em>The Adjoint of a Bounded Operator</em> is the pairing adjoint read on $H$,</p>
+<p>$$
+T^{*} = R^{-1}\,T'\,R ,
+$$</p>
+<p>so the Hilbert adjoint, the pairing adjoint and the double transpose are one operator under the Riesz identification; the identifications are natural and the involution is the same.</p>
+<p><strong>Proof.</strong> This is the Riesz-transpose identity of <em>The Adjoint of a Bounded Operator</em>; the pairing adjoint and the transpose coincide under the identification, and the Hilbert adjoint is the composite.</p>
+<h2 id="reflexive-cases-and-duality-of-the-algebra">Reflexive Cases and Duality of the Algebra</h2>
+<p><strong>Theorem (the double adjoint).</strong> For $T \in \mathcal{L}_{\sigma}(E)$ the double adjoint $T^{**}$ acts on $E$ and equals $T$, so that</p>
+<p>$$
+(T^{*})^{*} = T ,
+$$</p>
+<p>and the adjoint operation is an involution exchanging the two sides, $\mathcal{L}_{\sigma}(E) \to \mathcal{L}_{\sigma}(F)$.</p>
+<p><strong>Proof.</strong> Read the pairing in the other order, $\langle y, x\rangle_{F,E} = \langle x, y\rangle_{E,F}$; then $T^{*}$ is defined by $\langle T^{*}y, x\rangle = \langle y, Tx\rangle$, so the adjoint of $T^{*}$ satisfies $\langle T^{*}y, x\rangle = \langle y, T^{**}x\rangle$ and hence $\langle y, Tx\rangle = \langle y, T^{**}x\rangle$ for all $y \in F$. Non-degeneracy gives $T^{**}x = Tx$ for every $x$, and $T^{**} = T$.</p>
+<p><strong>Corollary (the commutant duality).</strong> The adjoint exchanges the commutants, $\{T\}'^{*} = \{T^{*}\}'$, and an algebra $\mathcal{A} \subseteq \mathcal{L}_{\sigma}(E)$ is closed under the adjoint exactly when its commutant is; in the Hilbert case this is the self-adjointness of the commutant of a self-adjoint algebra, which is <em>Operator Algebras</em>.</p>
+<p><strong>Proof.</strong> $S$ commutes with $T$ iff $\langle STx, y\rangle = \langle TSx, y\rangle$ for all $x, y$, which by the definition of the adjoints is $S^{*}$ commuting with $T^{*}$; the Hilbert statement is the special case.</p>
+<p><strong>Proposition (the pairing adjoint for an involution).</strong> If the dual pair carries a $\varsigma$-semilinear involution $\theta$ of $E$, then the adjoint of $\theta$ with respect to the pairing is the transposed involution $\theta^{t}$ of <em>The Involution and the Dual Pairing</em>, of the same kind, and the adjoint of a weakly continuous operator that commutes with $\theta$ commutes with $\theta^{t}$; the pairing-adjoint operation and the transposed involution are compatible.</p>
+<p><strong>Proof.</strong> The defining relations $\langle\theta x, y\rangle = \varsigma(\langle x, \theta^{t}y\rangle)$ and $\langle\theta x, y\rangle = \langle x, \theta^{*}y\rangle$ agree, so $\theta^{*} = \theta^{t}$ up to the scalar involution; compatibility with the commuting is the commutant duality.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the sequence spaces).</strong> On the dual pair $(\ell^{p}, \ell^{q})$ with $1 < p,q < \infty$ and $1/p+1/q = 1$, an operator with matrix $(a_{ij})$ that acts continuously on both spaces has the transpose with matrix $(a_{ji})$; for $p = q = 2$ the pairing is the inner product and the adjoint is the conjugate transpose, the operator and its adjoint differing by the conjugation of the matrix entries.</p>
+<p><strong>Example (the reflexive Banach space).</strong> For a reflexive Banach space $E$ and $T \in \mathcal{L}(E)$ the adjoint is the double transpose under the canonical embedding, so the algebra $\mathcal{L}(E)$ is an involutive algebra when $E$ is reflexive and the pairing is the canonical one; in the non-reflexive case $c_{0}$ with dual $\ell^{1}$ and bidual $\ell^{\infty}$ shows that a continuous operator need not be weakly continuous, and then the adjoint is defined on $\ell^{1}$ but not on $c_{0}$ by transposition alone.</p>
+<p><strong>Example (the Hilbert case).</strong> On $H = \ell^{2}$ the Riesz map is the conjugate-linear identification of a sequence with the functional it defines, and the Hilbert adjoint of the unilateral shift is the backward shift; the pairing adjoint with respect to $\langle \ell^{2}, \ell^{2}\rangle$ is the same operator, and the double transpose is the shift again because $\ell^{2}$ is reflexive.</p>
+<h2 id="summary">Summary</h2>
+<p>For a dual pair $\langle E, F\rangle$ a weakly continuous operator $T$ of $E$ has a unique adjoint $T^{*}$ of $F$, defined by $\langle Tx, y\rangle = \langle x, T^{*}y\rangle$, the assignment being a linear anti-isomorphism $\mathcal{L}_{\sigma}(E) \to \mathcal{L}_{\sigma}(F)$ with $(ST)^{*} = T^{*}S^{*}$ and $T^{**} = T$; the adjoint preserves the annihilator calculus, $\ker T^{*} = (\mathrm{im}\,T)^{\circ}$ and $\overline{\mathrm{im}\,T^{*}} = (\ker T)^{\circ}$, and exchanges the commutants. The transpose $T'$ and the adjoint $T^{*}$ are different bookkeeping for one map: the transpose always exists on the dual, while the adjoint on the space requires the identification of the space with its dual, which is the reflexivity, and for a reflexive space the adjoint is the double transpose under the canonical embedding, $T^{*} = \iota_{E}^{-1}T''\iota_{E}$. For a Hilbert space both adjoints and the transpose are one operator under the Riesz map, $T^{*} = R^{-1}T'R$, in agreement with <em>The Adjoint of a Bounded Operator</em>; a transposed involution of the pair is the adjoint of the involution. The sequence spaces, the reflexive and the non-reflexive Banach spaces and the Hilbert case are the standard examples. The involutions of the algebra of bounded operators are <em>Involutions of the Bounded Operators</em>, and the one-sided adjoints on a topological algebra are the following articles of this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle E, F\rangle$</td>
+<td>dual pair over $\mathbb{K}$</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>adjoint, $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{\sigma}(E)$</td>
+<td>weakly continuous operators</td>
+</tr>
+<tr>
+<td>$(ST)^{*} = T^{*}S^{*}$, $T^{**} = T$</td>
+<td>anti-homomorphism and involution</td>
+</tr>
+<tr>
+<td>$\ker T^{*} = (\mathrm{im}T)^{\circ}$</td>
+<td>annihilator calculus</td>
+</tr>
+<tr>
+<td>$T'$</td>
+<td>transpose on the dual, always defined</td>
+</tr>
+<tr>
+<td>$T^{*} = \iota_{E}^{-1}T''\iota_{E}$</td>
+<td>adjoint as double transpose in the reflexive case</td>
+</tr>
+<tr>
+<td>$T^{*} = R^{-1}T'R$</td>
+<td>Hilbert case, Riesz identification</td>
+</tr>
+<tr>
+<td>$\theta^{t}$</td>
+<td>transposed involution, the adjoint of an involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the dual pairs, the weak topologies and the transposed maps.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the Hilbert adjoint, the Riesz map and the reflexive Banach spaces.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw-Hill, second edition, 1991), for the dual operators, the reflexivity and the adjoint.</li>
+<li>Gottfried Köthe, <em>Topological Vector Spaces I</em> and <em>II</em> (Springer, 1969 and 1979), for the duality of a pair and the adjoint operators.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition, 1999), for the dual pairs, the adjoints and the weak topologies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

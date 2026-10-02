@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Linear Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-linear-space"><strong>The Graded Action on a Module over a Linear Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The endomorphism algebra $E = \operatorname{End}_F(V)$ is graded by the eigenspaces of the grade involution, $E = E_0\oplus E_1$, and a module over $E$ is <strong>graded</strong> when it too is graded and the action respects the two gradings, $E_iM_j \subseteq M_{i+j}$. Such an action is the module-level form of the sign carried by the signed operators: an element of $E_0$ preserves the two parts of the module and an element of $E_1$ exchanges them, and the compatibility is exactly the statement that the action commutes with the two grade involutions up to the parity sign. This article defines the graded module, states the compatibility in its equivalent forms, records the canonical example, in which the module is $V$ itself, and defers the sign rule of the graded tensor product to its owner.</p>
+<p><em>Involutions of a Graded Linear Space</em> supplies the grading of $V$ and of $E$, the grade involution and the parity of endomorphisms; <em>The Signed Sandwich on a Linear Space</em> and <em>The Signed Left Multiplication on a Linear Space</em> supply the signed operators; <em>Modules over an Involutive Ring</em> supplies the module theory over a ring with involution; and <em>Superalgebras and Graded Structures</em> owns the sign rule and the general theory of graded modules over graded algebras, which is named here and not used.</p>
+<p>Throughout, $F$ is a field with $2 \neq 0$, $V = V_0\oplus V_1$ is a graded linear space with grade involution $\alpha$, $E = \operatorname{End}_F(V) = E_0\oplus E_1$ is its graded endomorphism algebra, and $M = M_0\oplus M_1$ is a graded left $E$-module with grade involution $\beta$, $\beta = +\mathrm{id}$ on $M_0$ and $-\mathrm{id}$ on $M_1$. No form, norm or topology is used.</p>
+<h2 id="graded-modules-and-the-compatible-action">Graded Modules and the Compatible Action</h2>
+<p><strong>Definition.</strong> The action of $E$ on the graded module $M$ is <strong>compatible</strong> with the gradings when</p>
+<p>$$
+E_i\,M_j \subseteq M_{i+j} \qquad (i,j \in \{0,1\}) ,
+$$</p>
+<p>that is, when the even endomorphisms preserve the two parts of $M$ and the odd endomorphisms exchange them.</p>
+<p><strong>Proposition (the equivalent form).</strong> The action is compatible if and only if for every homogeneous $X \in E_i$ and every $m \in M$,</p>
+<p>$$
+X\,\beta(m) = (-1)^{i}\,\beta(X\,m) ,
+$$</p>
+<p>equivalently $\beta(Xm) = (-1)^i X\beta(m)$; the two grade involutions therefore satisfy $\beta\circ \rho_X = (-1)^i \rho_X\circ\beta$ on the homogeneous part $E_i$, where $\rho_X$ is the action of $X$.</p>
+<p><strong>Proof.</strong> If $m \in M_j$ and $X \in E_i$, then $Xm \in M_{i+j}$, so $\beta(Xm) = (-1)^{i+j}Xm = (-1)^i X((-1)^j m) = (-1)^iX\beta(m)$; conversely this identity for all homogeneous $m$ forces $X(M_j)\subseteq M_{i+j}$, since for $m \in M_j$ one has $\beta(Xm) = (-1)^{i+j}Xm$, which is the homogeneity statement.</p>
+<p><strong>Corollary (the module as a graded module over a graded algebra).</strong> The pair $(M,\beta)$ with the compatible action is a graded module over the graded algebra $(E,\alpha)$; the even part $E_0$ acts on each $M_j$ and the odd part $E_1$ maps $M_0$ to $M_1$ and $M_1$ to $M_0$, and the action is determined by its two restrictions $E_0\times M_j\to M_j$ and $E_1\times M_j\to M_{1-j}$.</p>
+<p><strong>Proof.</strong> The inclusions $E_iM_j\subseteq M_{i+j}$ and the associativity of the action are the axioms of a graded module; the description of the two parts is the definition of the inclusions.</p>
+<h2 id="the-canonical-example-and-the-induced-involution">The Canonical Example and the Induced Involution</h2>
+<p><strong>Proposition (the space as its own graded module).</strong> $M = V$ with the grading $V = V_0\oplus V_1$, the grade involution $\beta = \alpha$, and the evaluation action $X\cdot v = Xv$ is a graded $E$-module; the inclusions $E_iV_j\subseteq V_{i+j}$ hold because an even endomorphism preserves the two parts and an odd one exchanges them.</p>
+<p><strong>Proof.</strong> The action is associative and unital by the definition of composition, and the inclusions are the parity statement of <em>Involutions of a Graded Linear Space</em>.</p>
+<p><strong>Proposition (the induced involution on the module endomorphisms).</strong> The algebra $\operatorname{End}_E(M)$ of module endomorphisms is graded by $\operatorname{End}_E(M)_i = \{f : f(M_j)\subseteq M_{i+j}\}$, with grade involution $\gamma(f) = \beta f \beta$; the same holds for the algebra $\operatorname{End}_F(M)$ of all linear endomorphisms of $M$ when $M$ is a linear space.</p>
+<p><strong>Proof.</strong> The composition of endomorphisms adds parities, and conjugation by $\beta$ is an automorphism of order two with the two eigenspaces $f(M_j)\subseteq M_j$ and $f(M_j)\subseteq M_{1-j}$. This is the computation of <em>Involutions of a Graded Linear Space</em> for the endomorphism algebra of a graded space.</p>
+<p><strong>Remark (the deferred sign rule).</strong> The compatibility above carries no sign: the grade involutions commute or anticommute on the homogeneous parts, and no sign enters the action itself. The sign rule that makes the tensor product of two graded modules a graded module with the twisted flip belongs to <em>Superalgebras and Graded Structures</em>; it is named here because the graded actions of the later articles refer to it, and it is not defined or used.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded left module $M = M_0\oplus M_1$ over the graded endomorphism algebra $E = E_0\oplus E_1$ of a graded linear space carries a compatible action exactly when $E_iM_j\subseteq M_{i+j}$, equivalently when the two grade involutions satisfy $\beta\rho_X = (-1)^i\rho_X\beta$ on the homogeneous part $E_i$; then $E_0$ preserves the two parts of $M$ and $E_1$ exchanges them, and the action is determined by the two even restrictions and the two odd ones. The canonical example is the space itself, $M = V$ with $\beta = \alpha$; the module endomorphisms are graded by $\operatorname{End}_E(M)_i=\{f: f(M_j)\subseteq M_{i+j}\}$ with grade involution $\gamma(f)=\beta f\beta$. The sign rule of the graded tensor product and the general theory of graded modules over graded algebras are <em>Superalgebras and Graded Structures</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=V_0\oplus V_1$, $\alpha$</td>
+<td>the graded space and its grade involution</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_F(V)=E_0\oplus E_1$</td>
+<td>the graded endomorphism algebra</td>
+</tr>
+<tr>
+<td>$M=M_0\oplus M_1$, $\beta$</td>
+<td>the graded module and its grade involution</td>
+</tr>
+<tr>
+<td>$E_iM_j\subseteq M_{i+j}$</td>
+<td>the compatibility of the action</td>
+</tr>
+<tr>
+<td>$\beta\rho_X=(-1)^i\rho_X\beta$ on $E_i$</td>
+<td>the equivalent form</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_E(M)_i$</td>
+<td>the graded module endomorphisms</td>
+</tr>
+<tr>
+<td>$\gamma(f)=\beta f\beta$</td>
+<td>the grade involution on endomorphisms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for graded modules and algebras.</li>
+<li>Pierre Deligne and John W. Morgan, <em>Notes on Supersymmetry (following Joseph Bernstein)</em>, in <em>Quantum Fields and Strings</em> (American Mathematical Society, 1999), for graded modules and parity.</li>
+<li>Yuri I. Manin, <em>Gauge Field Theory and Complex Geometry</em> (Springer, 2nd ed. 1997), for the linear algebra of graded spaces and modules.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

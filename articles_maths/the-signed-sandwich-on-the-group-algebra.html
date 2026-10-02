@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on the Group Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-the-group-algebra"><strong>The Signed Sandwich on the Group Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two-sided sandwich of the group algebra multiplies a factor on each side of its argument, $x\mapsto axb$ with the product of the algebra; when the group algebra carries a <strong>grade involution</strong> $\alpha$ — an involutive automorphism — the argument can be twisted before the multiplication, and the operator $x\mapsto a\,\alpha(x)\,b$ is the <strong>signed sandwich</strong>. The twist changes the operator in one place only, and that change turns the unsigned sandwiches into a coset of an enlarged group, makes the product of two signed sandwiches unsigned, and produces the reflections of the category as the signed sandwiches whose two factors are inverse to each other. On the group algebra every object is an operator on a Banach space, so the twist is measured by a norm, the sandwich is bounded, and the whole construction lies inside the Banach algebra of bounded operators.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its product and its norm from <em>The Convolution Algebra $L^1(G)$</em>; the convolution operators $L_a, R_b$, their norms and their composition laws from <em>Convolution on a Group</em> and <em>The Group Algebra as an Algebra of Operators</em>; the general sandwich, its composition table, its inverses and the inner case from <em>The Sandwich Operator on an Algebra</em>, <em>The Signed Sandwich on an Algebra</em> and <em>The Signed Sandwich on a Banach Algebra</em> (Topology on Linear Algebras); the involutive automorphism $\alpha$ and the grading it defines from <em>Involutive Topological Linear Algebras</em> and <em>The Grading of an Algebra</em>; the signed sandwich, its reflections and their degenerate cases on a group from <em>The Signed Sandwich on a Topological Group</em> and <em>Reflections as Signed Two-Sided Operators on a Topological Group</em>; and the bounded operators, the operator norm and the unit group from <em>Operator Algebras</em> and <em>Topological Algebras and Banach Algebras</em>. The one-sided signed operators are <em>The Signed Left Multiplication on the Group Algebra</em>, and the reflections as two-sided operators are <em>Reflections as Signed Two-Sided Operators on the Group Algebra</em>, immediately following; the adjoint is the <code>- * Operator Theory</code> group of this category, and the measure algebra is <em>The Involution on the Measure Algebra</em>, later. The involution on the elements of $L^1(G)$ is the structure of the <code>- * Theory</code> group and is kept apart from the grade involution $\alpha$; no adjoint and no Fourier theory occurs.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and identity $e$, and $\mathcal{A} = L^1(G)$ is its group algebra with convolution $f*g$ and norm $\|f\|_1$; $\alpha$ is a <strong>grade involution</strong>: a continuous involutive automorphism of the Banach algebra $\mathcal{A}$, so that $\alpha(f*g) = \alpha(f)*\alpha(g)$, $\alpha^2 = \mathrm{id}$ and</p>
+<p>$$
+\|\alpha\| = \sup_{\|f\|_1\leq1}\|\alpha(f)\|_1 < +\infty ,
+$$</p>
+<p>with $\|\alpha\|\geq1$; $\mathrm{A}$ is the operator on $\mathcal{A}$ given by $\mathrm{A}f = \alpha(f)$; $L_a f = a*f$ and $R_b f = f*b$ are the one-sided convolutions; and the <strong>unsigned sandwich</strong> and the <strong>signed sandwich</strong> are</p>
+<p>$$
+T_{a,b} = L_aR_b, \quad T_{a,b}(f) = a*f*b ; \qquad S_{a,b} = \Sigma^\alpha_{a,b}, \quad S_{a,b}(f) = a*\alpha(f)*b = (L_a\mathrm{A}R_b)(f) .
+$$</p>
+<p>The grading of $\alpha$ is $\mathcal{A} = \mathcal{A}^+\oplus\mathcal{A}^-$ with $\mathcal{A}^\pm$ the $\pm1$-eigenspaces of $\alpha$.</p>
+<h2 id="the-grade-involution-of-the-group-algebra">The Grade Involution of the Group Algebra</h2>
+<p><strong>Definition.</strong> A <strong>grade involution</strong> of the group algebra is a continuous automorphism $\alpha$ of $\mathcal{A}$ with $\alpha^2 = \mathrm{id}$; its $\pm1$-eigenspaces are</p>
+<p>$$
+\mathcal{A}^+ = \{f : \alpha(f) = f\}, \qquad \mathcal{A}^- = \{f : \alpha(f) = -f\},
+$$</p>
+<p>and they grade $\mathcal{A}$.</p>
+<p><strong>Theorem (the grading and the operator form).</strong> The operator $\mathrm{A}f = \alpha(f)$ is a bounded algebra automorphism of the Banach space $\mathcal{A}$ with $\mathrm{A}^2 = \mathrm{id}$, $\|\mathrm{A}\| = \|\alpha\|$, and $\mathcal{A} = \mathcal{A}^+\oplus\mathcal{A}^-$ with $\mathcal{A}^i\mathcal{A}^j\subseteq\mathcal{A}^{\overline{i+j}}$; the operator $\mathrm{A}$ satisfies</p>
+<p>$$
+\mathrm{A}L_a = L_{\alpha(a)}\mathrm{A}, \qquad \mathrm{A}R_b = R_{\alpha(b)}\mathrm{A},
+$$</p>
+<p>that is, it conjugates the left and the right convolutions into those of the image element.</p>
+<p><strong>Proof.</strong> The eigenspace decomposition is the standard one for an involutive automorphism with $2$ invertible, $f = \tfrac12(f+\alpha(f)) + \tfrac12(f-\alpha(f))$; multiplicativity gives the multiplication table of the grading. The intertwining is $\mathrm{A}L_af = \alpha(a*f) = \alpha(a)*\alpha(f) = L_{\alpha(a)}\mathrm{A}f$, and the right-hand identity is the mirror image. $\square$</p>
+<p><strong>Example (the sign character).</strong> Let $\varepsilon : G\to\{\pm1\}$ be a continuous homomorphism and put $\alpha_\varepsilon(f)(x) = \varepsilon(x)f(x)$. Then $\alpha_\varepsilon$ is a grade involution, isometric, $\|\alpha_\varepsilon\| = 1$, with $\mathcal{A}^\pm$ the functions supported on the two parts of the splitting of $G$ by the kernel of $\varepsilon$; it is the <strong>grade involution of the grading by the sign character</strong>, and it is the canonical one when $G$ has an open subgroup of index two.</p>
+<p><strong>Example (the group automorphism).</strong> Let $\theta$ be a continuous involutive automorphism of a unimodular group $G$ and put $\alpha_\theta(f) = f\circ\theta^{-1}$. Then $\alpha_\theta(f*g) = \alpha_\theta(f)*\alpha_\theta(g)$, $\alpha_\theta^2 = \mathrm{id}$ and $\|\alpha_\theta\| = 1$; it is the <strong>grade involution induced by $\theta$</strong>, and on the point masses $\alpha_\theta(\delta_g) = \delta_{\theta(g)}$ when $G$ is discrete.</p>
+<p><strong>Remark (two sources of the twist).</strong> Both examples are isometric, so for them $\|\alpha\| = 1$ and the norm bounds below lose the factor $\|\alpha\|$; the general definition is kept because an arbitrary continuous involutive automorphism of $\mathcal{A}$ need not be isometric. The involution on the elements, $f\mapsto f^*$, is a different map — an anti-automorphism of order two, the structure of the <code>- * Theory</code> group — and is not the map $\alpha$ used here.</p>
+<h2 id="the-unsigned-and-the-signed-sandwich">The Unsigned and the Signed Sandwich</h2>
+<p><strong>Definition.</strong> For $a, b \in \mathcal{A}$ the <strong>unsigned sandwich</strong> is $T_{a,b} = L_aR_b$ and the <strong>signed sandwich</strong> is $S_{a,b} = L_a\mathrm{A}R_b$; the sets of the two families are $T(\mathcal{A},\mathcal{A})$ and $\Sigma^\alpha(\mathcal{A},\mathcal{A})$.</p>
+<p><strong>Proposition (decomposition and bound).</strong> For all $a, b \in \mathcal{A}$,</p>
+<p>$$
+S_{a,b} = T_{a,b}\,\mathrm{A} = L_a\mathrm{A}R_b = L_a R_{\alpha(b)}\mathrm{A}, \qquad \mathrm{A} = S_{1,1} \ \text{(unital case)},
+$$</p>
+<p>and $S_{a,b}$ is bounded with</p>
+<p>$$
+\|S_{a,b}\| \leq \|a\|_1\,\|b\|_1\,\|\alpha\| ,
+$$</p>
+<p>the assignment $(a,b)\mapsto S_{a,b}$ being bilinear; when $\alpha$ is isometric the bound is $\|a\|_1\|b\|_1$.</p>
+<p><strong>Proof.</strong> $L_a\mathrm{A}R_b(f) = L_a\mathrm{A}(f*b) = a*\alpha(f*b) = a*\alpha(f)*\alpha(b) = (L_aR_{\alpha(b)}\mathrm{A})(f)$, which gives both forms; the norm is submultiplicativity with $\|L_a\|\leq\|a\|_1$, $\|R_{\alpha(b)}\|\leq\|\alpha\|\|b\|_1$ and $\|\mathrm{A}\| = \|\alpha\|$; bilinearity is the distributivity of convolution. In the unital case $S_{1,1} = \mathrm{A}$. $\square$</p>
+<p><strong>Proposition (the multiplication table).</strong> For all $a,b,c,d \in \mathcal{A}$,</p>
+<p>$$
+S_{a,b}T_{c,d} = S_{a*\alpha(c),\,\alpha(d)*b}, \qquad T_{a,b}S_{c,d} = S_{a*c,\,d*b}, \qquad S_{a,b}S_{c,d} = T_{a*\alpha(c),\,\alpha(d)*b} .
+$$</p>
+<p>Hence a signed sandwich followed or preceded by an unsigned one is signed, and the product of two signed sandwiches is unsigned; the signed sandwiches are closed under composition exactly when $\alpha = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> Use $S_{a,b} = T_{a,b}\mathrm{A}$, the unsigned laws $T_{a,b}T_{c,d} = T_{a*c,d*b}$ and the intertwining $\mathrm{A}T_{c,d} = T_{\alpha(c),\alpha(d)}\mathrm{A}$: for the first, $S_{a,b}T_{c,d} = T_{a,b}\mathrm{A}T_{c,d} = T_{a,b}T_{\alpha(c),\alpha(d)}\mathrm{A} = T_{a*\alpha(c),\alpha(d)*b}\mathrm{A} = S_{a*\alpha(c),\alpha(d)*b}$; the second is $T_{a,b}T_{c,d}\mathrm{A}$; the third is $T_{a,b}\mathrm{A}T_{c,d}\mathrm{A} = T_{a*\alpha(c),\alpha(d)*b}\mathrm{A}^2 = T_{a*\alpha(c),\alpha(d)*b}$. When $\alpha = \mathrm{id}$ the two families coincide, and conversely $S_{a,b}S_{c,d}$ is signed for all $a,b,c,d$ only if $\alpha = \mathrm{id}$, since $S_{a,b}S_{c,d} = T_{a*\alpha(c),\alpha(d)*b}$ must be signed for every choice. $\square$</p>
+<p><strong>Corollary (the coset and the group).</strong> The signed sandwiches are the coset $\Sigma^\alpha(\mathcal{A},\mathcal{A}) = T(\mathcal{A},\mathcal{A})\,\mathrm{A}$ of the unsigned sandwiches by composition with $\mathrm{A}$ on the right. The invertible unsigned sandwiches form, when the algebra has units, the group $G_0 = \{T_{a,b} : a, b \in \mathcal{A}^\times\}$, and the union $G_0\cup G_0\mathrm{A}$ is a subgroup of $B(\mathcal{A})^\times$ of index at most two over $G_0$, generated by $G_0$ and $\mathrm{A}$.</p>
+<p><strong>Proof.</strong> The coset description is the decomposition; $T_{a,b}$ is invertible exactly when $a, b$ are units, and then $T_{a,b}^{-1} = T_{a^{-1},b^{-1}}$, because $T_{a,b}T_{a^{-1},b^{-1}}(f) = a*(a^{-1}*f*b^{-1})*b = f$. The multiplication table gives closure of the union and the parity, and $\mathrm{A}^{-1} = \mathrm{A}$ gives closure under inversion. $\square$</p>
+<p><strong>Proposition (the inverse).</strong> The signed sandwich $S_{a,b}$ is invertible exactly when $a, b \in \mathcal{A}^\times$, and then</p>
+<p>$$
+\bigl(S_{a,b}\bigr)^{-1} = S_{\alpha(a)^{-1},\,\alpha(b)^{-1}} ;
+$$</p>
+<p>hence the invertible signed sandwiches are stable under inversion but not under composition.</p>
+<p><strong>Proof.</strong> $S_{a,b} = T_{a,b}\mathrm{A}$ is invertible exactly when $T_{a,b}$ is, that is exactly when $a, b$ are units. For the formula, $S_{a,b}S_{\alpha(a)^{-1},\alpha(b)^{-1}} = T_{a*\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})*b} = T_{a*a^{-1},\,b^{-1}*b} = T_{1,1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$; the other order gives the same. $\square$</p>
+<p><strong>Remark (the non-unital case).</strong> For a non-discrete group the group algebra has no identity, and its unit group may be empty; the unit-group statements above are then read in the unitisation $\mathcal{A}^\sharp = \mathcal{A}\oplus\mathbb{C}$ (equivalently, in the multiplier algebra), which is the standard device of <em>Topological Algebras and Banach Algebras</em>. Every identity of this article holds in $\mathcal{A}$ for elements $a, b$ that are units of $\mathcal{A}$, and it extends to the unitisation without change; the measure algebra of the group, whose point masses are units in every case, is <em>The Involution on the Measure Algebra</em>, later in this category, and supplies a unital algebra in which the reflection theory is never vacuous.</p>
+<h2 id="the-relation-to-the-unsigned-sandwich">The Relation to the Unsigned Sandwich</h2>
+<p><strong>Proposition (the two families differ by the grade involution).</strong> The signed sandwiches are the unsigned sandwiches composed with the grade involution,</p>
+<p>$$
+S_{a,b} = T_{a,b}\circ\mathrm{A}, \qquad T_{a,b} = S_{a,b}\circ\mathrm{A},
+$$</p>
+<p>so the two families are related by composition with a fixed operator of order two; a signed sandwich equals an unsigned one exactly when the corresponding unsigned sandwiches of the twisted parameters agree.</p>
+<p><strong>Proof.</strong> The first identity is the decomposition; the second is the first composed with $\mathrm{A}$ and $\mathrm{A}^2 = \mathrm{id}$. $\square$</p>
+<p><strong>Theorem (degeneracy, the inner grade involution).</strong> Suppose $\alpha$ is inner on a unital group algebra, $\alpha = c_z$ with $c_z(f) = z*f*z^{-1}$ for a unit $z$. Then every signed sandwich is unsigned,</p>
+<p>$$
+\alpha = c_z \quad\Longrightarrow\quad S_{a,b} = T_{a*z,\,z^{-1}*b} ,
+$$</p>
+<p>and conversely if every signed sandwich is unsigned then $\alpha$ is inner. In the commutative case, that is when $G$ is abelian,</p>
+<p>$$
+S_{a,b} = T_{a,\alpha(b)} = \mathrm{A}\,T_{a,b} ,
+$$</p>
+<p>and the signed family carries no information beyond $\alpha$ and the unsigned family; when $\alpha$ is not inner, the signed and the unsigned invertible sandwiches meet only in the identity of the enlarged group.</p>
+<p><strong>Proof.</strong> For $\alpha = c_z$, $S_{a,b}(f) = a*z*f*z^{-1}*b = (a*z)*f*(z^{-1}*b) = T_{a*z,z^{-1}*b}(f)$; the converse is the standard fact that an automorphism is inner exactly when the signed family is contained in the unsigned family. In the commutative case $\alpha$ is an automorphism and $a*\alpha(f)*b = a*\alpha(b)*f = \alpha(\alpha^{-1}(a)*\alpha(b)*f)$, which is either $\mathrm{A}T_{a,b}$ or $T_{a,\alpha(b)}$ according to the side. $\square$</p>
+<p><strong>Remark (the boundary between the two order-two maps).</strong> The map $\alpha$ used here is an <strong>automorphism</strong> of order two, the grade involution of a grading; the anti-automorphism of order two, the <strong>involution</strong> $f^*$, is the structure of the <code>- * Theory</code> group and is not used in this article or in the rest of the signed block. On a commutative group algebra the two notions coincide, on a non-commutative one they do not, and no statement here is about $f^*$.</p>
+<h2 id="the-reflections-it-realises">The Reflections it Realises</h2>
+<p><strong>Definition.</strong> A <strong>reflector</strong> of the group algebra with respect to $\alpha$ is a unit $u \in \mathcal{A}^\times$ with $u*\alpha(u) \in Z(\mathcal{A})$, the centre; the <strong>reflection</strong> determined by $u$ is the signed conjugation</p>
+<p>$$
+\rho_u = S_{u,u^{-1}}, \qquad \rho_u(f) = u*\alpha(f)*u^{-1} .
+$$</p>
+<p><strong>Theorem (the square and the involution condition).</strong> For every unit $u$ the reflection is bounded, invertible and an algebra automorphism of $\mathcal{A}$, and</p>
+<p>$$
+\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)} ,
+$$</p>
+<p>with $c_t(f) = t*f*t^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; its fixed set is the closed subalgebra $\{f : u*\alpha(f) = f*u\}$, and its norm satisfies $\|\rho_u\|\leq\|u\|_1\|u^{-1}\|_1\|\alpha\|$.</p>
+<p><strong>Proof.</strong> $\rho_u(\rho_u(f)) = u*\alpha(u*\alpha(f)*u^{-1})*u^{-1} = (u*\alpha(u))*f*(u*\alpha(u))^{-1} = c_{u*\alpha(u)}(f)$; an inner automorphism is the identity exactly when its element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector. The composite description is $\rho_u = c_u\alpha$ and $\alpha c_{\alpha(u)}$ by $\alpha c_t = c_{\alpha(t)}\alpha$. The fixed set is the solution set of the continuous equation $u*\alpha(f) = f*u$, hence the kernel of a continuous map and closed; the norm is submultiplicativity. $\square$</p>
+<p><strong>Corollary (the reflection family and the grade involution).</strong> The unit $1$ is a reflector when $\mathcal{A}$ is unital, with $\rho_1 = \alpha$; the reflections are exactly the signed conjugate automorphisms $\rho_u = c_u\alpha$ with $u$ a reflector, and two reflectors give the same reflection exactly when their ratio is a central unit, so the reflections are parametrised by the reflectors modulo $Z(\mathcal{A})^\times$.</p>
+<p><strong>Proof.</strong> $\rho_1 = c_1\alpha = \alpha$; $\rho_u = \rho_v$ if and only if $v^{-1}*u$ commutes with every $\alpha(f)$, that is with all of $\mathcal{A}$, so $v^{-1}*u \in Z(\mathcal{A})^\times$. $\square$</p>
+<h2 id="the-group-instance">The Group Instance</h2>
+<p><strong>Example (the discrete group and the group automorphism).</strong> Let $G$ be discrete and $\alpha = \alpha_\theta$ induced by a continuous involutive automorphism $\theta$ of $G$; the group algebra $\ell^1(G)$ is unital and $\delta_h$ is a unit for every $h$. Then</p>
+<p>$$
+\rho_{\delta_h}(\delta_g) = \delta_h*\delta_{\theta(g)}*\delta_{h^{-1}} = \delta_{h\theta(g)h^{-1}} , \qquad \delta_h*\alpha(\delta_h) = \delta_{h\theta(h)} ,
+$$</p>
+<p>so $\rho_{\delta_h}$ is the signed conjugation of <em>Reflections as Signed Two-Sided Operators on a Topological Group</em> read on the point masses, and it is a reflection exactly when $h\theta(h) \in Z(G)$; the group-algebra theory is the linear extension of the group theory, and on the generators it reproduces it exactly.</p>
+<p><strong>Example (the sign character).</strong> Let $\alpha = \alpha_\varepsilon$ for a sign character $\varepsilon$. Then $S_{a,b}(f) = a*(\varepsilon f)*b$ and $\rho_{\delta_h}(\delta_g) = \varepsilon(g)\,\delta_{hgh^{-1}}$: the reflection is an inner conjugation composed with the sign, and $\delta_h*\alpha(\delta_h) = \varepsilon(h)\,\delta_{h^2}$, which is central exactly when $h^2 \in Z(G)$; the sign character is invisible on the elements of even $\varepsilon$ and flips those of odd $\varepsilon$.</p>
+<p><strong>Remark (the one-sided operators).</strong> The signed sandwich specialises to the signed left multiplication on putting $b$ equal to the identity, $\Lambda_a = S_{a,e}$, when $\mathcal{A}$ is unital, and more generally to $\Lambda_a = L_a\mathrm{A}$; the one-sided theory, its relation to the unsigned left multiplication and the elements it fixes, is <em>The Signed Left Multiplication on the Group Algebra</em>, immediately following. The norm bound of the present article is the two-sided form of the bound there.</p>
+<h2 id="summary">Summary</h2>
+<p>On the group algebra $\mathcal{A} = L^1(G)$ with a continuous involutive automorphism $\alpha$ and the operator $\mathrm{A}f = \alpha(f)$, the signed sandwich is $S_{a,b}(f) = a*\alpha(f)*b = L_a\mathrm{A}R_b = T_{a,b}\mathrm{A}$, the unsigned sandwich $T_{a,b}$ composed with the twist, bounded with $\|S_{a,b}\|\leq\|a\|_1\|b\|_1\|\alpha\|$ and bilinear. The multiplication table $S_{a,b}T_{c,d} = S_{a*\alpha(c),\alpha(d)*b}$, $T_{a,b}S_{c,d} = S_{a*c,d*b}$ and $S_{a,b}S_{c,d} = T_{a*\alpha(c),\alpha(d)*b}$ makes the signed sandwiches a coset $T(\mathcal{A},\mathcal{A})\mathrm{A}$, closed under inversion with $S_{a,b}^{-1} = S_{\alpha(a)^{-1},\alpha(b)^{-1}}$ and closed under composition exactly when $\alpha = \mathrm{id}$; the union of the invertible signed and unsigned sandwiches is a group of index at most two. When $\alpha$ is inner every signed sandwich is unsigned, $S_{a,b} = T_{a*z,z^{-1}*b}$ for $\alpha = c_z$, and on an abelian group $S_{a,b} = T_{a,\alpha(b)} = \mathrm{A}T_{a,b}$; the signed block is about the automorphism $\alpha$, the anti-automorphism $f^*$ being the <code>- * Theory</code> structure and kept apart. The reflections realised are the signed conjugations $\rho_u = S_{u,u^{-1}}$, $\rho_u^2 = c_{u*\alpha(u)}$, involutive exactly for the reflectors $u$ with $u*\alpha(u)$ central, parametrised by the reflectors modulo $Z(\mathcal{A})^\times$; on a discrete group the point masses reduce the theory to the signed conjugations of the group, and for the sign character it is the inner conjugation composed with the sign.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A} = L^1(G)$, $\|f\|_1$</td>
+<td>The group algebra and its norm</td>
+</tr>
+<tr>
+<td>$\alpha$, $\mathrm{A}f = \alpha(f)$</td>
+<td>Grade involution and the operator it defines</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^\pm$, $\|\alpha\|$</td>
+<td>Eigenspaces of the grading; norm of the twist</td>
+</tr>
+<tr>
+<td>$T_{a,b}(f) = a*f*b$</td>
+<td>Unsigned sandwich, $T_{a,b} = L_aR_b$</td>
+</tr>
+<tr>
+<td>$S_{a,b}(f) = a*\alpha(f)*b$</td>
+<td>Signed sandwich, $S_{a,b} = L_a\mathrm{A}R_b = T_{a,b}\mathrm{A}$</td>
+</tr>
+<tr>
+<td>$S_{a,b}T_{c,d}$, $T_{a,b}S_{c,d}$, $S_{a,b}S_{c,d}$</td>
+<td>The multiplication table</td>
+</tr>
+<tr>
+<td>$\Sigma^\alpha(\mathcal{A},\mathcal{A}) = T(\mathcal{A},\mathcal{A})\mathrm{A}$</td>
+<td>The signed sandwiches as a coset</td>
+</tr>
+<tr>
+<td>$S_{a,b}^{-1} = S_{\alpha(a)^{-1},\alpha(b)^{-1}}$</td>
+<td>The inverse</td>
+</tr>
+<tr>
+<td>$c_t(f) = t*f*t^{-1}$, $Z(\mathcal{A})$</td>
+<td>Inner automorphism; centre</td>
+</tr>
+<tr>
+<td>$\rho_u = S_{u,u^{-1}}$, $\rho_u^2 = c_{u*\alpha(u)}$</td>
+<td>Reflection; square; involution criterion</td>
+</tr>
+<tr>
+<td>$u*\alpha(u)\in Z(\mathcal{A})$</td>
+<td>Reflector condition</td>
+</tr>
+<tr>
+<td>$\alpha_\varepsilon$, $\alpha_\theta$</td>
+<td>Sign-character and group-automorphism grade involutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for involutive automorphisms, signed conjugations and their correspondence with units.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the bounded automorphisms of a Banach algebra and the closed fixed subalgebras.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for graded Banach algebras, automorphisms of order two and the sandwiches they define.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the sandwich operator, its inverse and the reflections it generates.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for convolution on a group algebra and the unit group of $L^1(G)$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

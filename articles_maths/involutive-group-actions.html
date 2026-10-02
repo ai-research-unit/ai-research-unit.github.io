@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Group Actions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-group-actions"><strong>Involutive Group Actions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>When a group acts on a group that carries an involution, the action and the involution may be compatible, and then the involution descends to the invariants of the action and to the quotients the action defines. This article fixes that compatibility, proves that the fixed sets of the two structures are stable under the other, and follows the induced involutions to the quotient. It is the second of the involutive <code>*</code>-articles. The involution, its fixed and inverted sets, the induced involution on a quotient and the action of $\operatorname{Aut}(G)$ on the set of involutions are owned by <em>Involutive Groups</em>; the actions themselves, the orbits, the kernels and the equivariant maps are <em>Transformation Groups</em>.</p>
+<p>Throughout, $(G,\sigma)$ is an involutive group, $\alpha=\sigma\iota$ is the associated involutive automorphism, and a <strong>group of operators</strong> is a group $\Gamma$ acting on $G$ by automorphisms, $\Gamma\to\operatorname{Aut}(G)$, written $\gamma\cdot g$.</p>
+<h2 id="actions-preserving-an-involution">Actions Preserving an Involution</h2>
+<p><strong>Definition.</strong> An action of $\Gamma$ on $G$ <strong>preserves the involution</strong> $\sigma$, or is <strong>$\sigma$-compatible</strong>, if</p>
+<p>$$
+\gamma\cdot\sigma(g)=\sigma(\gamma\cdot g) \qquad\text{for all } \gamma\in\Gamma,\ g\in G ,
+$$</p>
+<p>that is, if every operator commutes with $\sigma$. Equivalently, the image of $\Gamma\to\operatorname{Aut}(G)$ lies in the centraliser $C_{\operatorname{Aut}(G)}(\sigma)$.</p>
+<p><strong>Proposition (the associated automorphism).</strong> The action preserves $\sigma$ if and only if it preserves $\alpha=\sigma\iota$; and it then preserves the fixed set $G^{\sigma}$ and the inverted set $I(\sigma)$ setwise.</p>
+<p><strong>Proof.</strong> An operator $\gamma$ commutes with $\sigma$ if and only if it commutes with $\alpha=\sigma\iota$, because it commutes with the inversion automatically: $\gamma(g^{-1})=\gamma(g)^{-1}$ for an automorphism. If $\gamma$ commutes with $\sigma$ and $\sigma(g)=g$ then $\sigma(\gamma\cdot g)=\gamma\cdot\sigma(g)=\gamma\cdot g$, so $\gamma\cdot g$ is fixed; and if $\sigma(g)=g^{-1}$ then $\sigma(\gamma\cdot g)=\gamma\cdot\sigma(g)=(\gamma\cdot g)^{-1}$, so $\gamma\cdot g$ is inverted. Hence both sets are stable.</p>
+<p><strong>Definition.</strong> With the action preserving $\sigma$, the pair $(G,\sigma)$ is an <strong>involutive $\Gamma$-group</strong>, and the structures form a category whose objects are the involutive groups with a $\sigma$-compatible $\Gamma$-action; a <strong>morphism</strong> to $(H,\tau)$ is a group homomorphism $f:G\to H$ with $f\sigma=\tau f$ and $f(\gamma\cdot g)=\gamma\cdot f(g)$, a $\Gamma$-equivariant involution-preserving map.</p>
+<p><strong>Remark (actions by anti-automorphisms).</strong> An operator may also act by an anti-automorphism, and then the compatibility is read with a twist: if $\gamma$ acts by $\beta$, the requirement that $\beta\sigma$ be an involution forces the map $\gamma\mapsto\beta\sigma\beta^{-1}$ to agree with $\sigma$ up to the parity of $\gamma$. Such a twisted action is the group form of the semilinear maps of <em>Involutive Linear Spaces</em>; it is not needed here and is mentioned only to record that the untwisted case treated below is a choice.</p>
+<h2 id="the-fixed-points-of-the-two-structures">The Fixed Points of the Two Structures</h2>
+<p>The involution and the action each have their own fixed set, and each set is stable under the other structure.</p>
+<p><strong>Proposition (the constants of the action are $\sigma$-stable).</strong> The set of $\Gamma$-fixed points</p>
+<p>$$
+G^{\Gamma}=\{g\in G : \gamma\cdot g=g \ \text{for all } \gamma\in\Gamma\}
+$$</p>
+<p>is stable under $\sigma$, and $\sigma$ restricts to an involution of $G^{\Gamma}$.</p>
+<p><strong>Proof.</strong> If $g$ is fixed by every $\gamma$ then $\gamma\cdot\sigma(g)=\sigma(\gamma\cdot g)=\sigma(g)$, so $\sigma(g)$ is fixed; the restriction is an involution because $\sigma^{2}=\mathrm{id}$. The set $G^{\Gamma}$ is a subgroup because the $\gamma$ act by automorphisms, and the restriction is an involution of it.</p>
+<p><strong>Corollary (the two fixed sets).</strong> The intersection $G^{\sigma}\cap G^{\Gamma}$ is the set of points fixed by both; it is a subgroup whenever either of $G^{\sigma}$ or $G^{\Gamma}$ is one, and it is stable under both structures. If in addition the action preserves $\sigma$, then $\Gamma$ acts on $(G^{\sigma},\sigma|_{G^{\sigma}})$ and $\sigma$ acts on $(G^{\Gamma},\text{trivial})$, and the two orbits of a point $g\in G^{\sigma}\cap G^{\Gamma}$ under the two structures lie in the intersection.</p>
+<p><strong>Proof.</strong> The first statement is the previous proposition together with the $\Gamma$-stability of $G^{\sigma}$. The action on $G^{\sigma}$ is the restriction of the $\Gamma$-action, and it is $\sigma$-compatible because the ambient action is; the restriction of $\sigma$ to $G^{\Gamma}$ is the involution just constructed.</p>
+<p><strong>Remark.</strong> The two stabilities are reciprocal and both are consequences of the compatibility: $\Gamma$ preserves $G^{\sigma}$ because it preserves $\sigma$, and $\sigma$ preserves $G^{\Gamma}$ because $G^{\Gamma}$ is defined by equations the action satisfies. This reciprocality is the structural reason the invariants of an involutive group action carry an involution.</p>
+<h2 id="the-induced-involution-on-quotients">The Induced Involution on Quotients</h2>
+<p>Let $N\trianglelefteq G$ be a $\sigma$-stable normal subgroup, so that $\sigma$ induces an involution $\bar\sigma$ of $G/N$ by $\bar\sigma(gN)=\sigma(g)N$; this is the induced involution of <em>Involutive Groups</em>, §7.</p>
+<p><strong>Proposition (the action descends when the subgroup is stable).</strong> Suppose $N$ is both $\sigma$-stable and $\Gamma$-stable. Then the action of $\Gamma$ descends to $G/N$, it preserves the induced involution $\bar\sigma$, and $(G/N,\bar\sigma)$ is an involutive $\Gamma$-group.</p>
+<p><strong>Proof.</strong> The action descends because $N$ is $\Gamma$-stable, giving $\gamma\cdot(gN)=(\gamma\cdot g)N$. For the compatibility, $\gamma\cdot\bar\sigma(gN)=\gamma\cdot(\sigma(g)N)=(\gamma\cdot\sigma(g))N=\sigma(\gamma\cdot g)N=\bar\sigma(\gamma\cdot gN)$ using that the ambient action preserves $\sigma$. So the descended action commutes with $\bar\sigma$.</p>
+<p><strong>Proposition (the fixed points of the quotient).</strong> With $N$ as above, the image of $G^{\sigma}$ in $G/N$ is contained in the fixed set $(G/N)^{\bar\sigma}$, and the containment can be strict. When $\sigma$ is an automorphism of $G$ and $N$ is a central subgroup of order two on which $\sigma$ acts trivially, the quotient of the two fixed sets is $N$ itself,</p>
+<p>$$
+(G/N)^{\bar\sigma}\big/\pi(G^{\sigma})\;\cong\;N/2N=N ,
+$$</p>
+<p>so the containment is strict, the image having index two in the fixed set of the quotient.</p>
+<p><strong>Proof.</strong> An element $\sigma(g)=g$ has image $\bar\sigma(gN)=\sigma(g)N=gN$, so $\pi(G^{\sigma})\subseteq(G/N)^{\bar\sigma}$; the containment is the one of <em>Involutive Groups</em>, §7, and the strict example $\mathbb{Z}/4\mathbb{Z}$ with its subgroup of order two, recorded there, shows it can be strict. A class $gN$ fixed by $\bar\sigma$ has $\sigma(g)=g\,n$ for some $n\in N$; replacing $g$ by $g\,n'$ with $n'\in N$ changes $n$ to $n'^{2}n$, because $N$ is central and $\sigma$ acts trivially on it, so the defect $n$ is fixed exactly up to the squares $N^{2}$ of $N$. For a central $N$ with trivial action the squares are $2N$ and the cokernel is the group $N/2N$ of coinvariants of the two-element group with coefficients in $N$; for $N$ of order two this is $N$ again, so the image has index two in the fixed set of the quotient. The $\mathbb{Z}/4\mathbb{Z}$ example of <em>Involutive Groups</em>, §7 is the case $N$ of order two inside the cyclic group of order four.</p>
+<h2 id="the-equivariant-maps-and-the-quotient-category">The Equivariant Maps and the Quotient Category</h2>
+<p><strong>Proposition (the functoriality of the fixed points).</strong> The constructions $G\mapsto G^{\sigma}$ and $G\mapsto G^{\Gamma}$ are functorial on the category of involutive $\Gamma$-groups: an equivariant involution-preserving map $f:(G,\sigma)\to(H,\tau)$ carries $G^{\sigma}$ to $H^{\tau}$ and $G^{\Gamma}$ to $H^{\Gamma}$.</p>
+<p><strong>Proof.</strong> If $\sigma(g)=g$ then $\tau(f(g))=f(\sigma(g))=f(g)$, so $f(G^{\sigma})\subseteq H^{\tau}$; and if $\gamma\cdot g=g$ then $\gamma\cdot f(g)=f(\gamma\cdot g)=f(g)$, so $f(G^{\Gamma})\subseteq H^{\Gamma}$. Composition and identity maps are preserved.</p>
+<p><strong>Corollary (the quotient by a stable subgroup).</strong> If $N$ is $\sigma$-stable and $\Gamma$-stable, the projection $\pi:G\to G/N$ is a morphism of involutive $\Gamma$-groups, and it factors every morphism whose kernel contains $N$. Hence the involutive $\Gamma$-groups are the objects of a category with kernels and quotients, and the fixed-point functors are left exact.</p>
+<p><strong>Proof.</strong> The projection preserves both structures by the descent proposition and is equivariant by construction; the factorisation is the universal property of the quotient in the category of groups. The left exactness is that $G^{\sigma}$ and $G^{\Gamma}$ are computed by equations that are preserved under taking kernels, so the corresponding sequences of fixed points are exact at the terms written.</p>
+<h2 id="the-semidirect-product-and-the-extension">The Semidirect Product and the Extension</h2>
+<p><strong>Proposition (an involution on the semidirect product).</strong> Let $\Gamma$ act on $G$ preserving $\sigma$, and let $\Gamma$ carry an involution $\tau$. If the action is $\tau$-twisted, that is $\tau(\gamma)\cdot\tau(g)=\tau(\gamma\cdot g)$ for all $\gamma,g$, then</p>
+<p>$$
+\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)
+$$</p>
+<p>is an involution of the semidirect product $G\rtimes\Gamma$, and its restriction to $G$ is $\sigma$. If $\tau=\mathrm{id}$ this reduces to $\Theta(g,\gamma)=(\sigma(g),\gamma)$.</p>
+<p><strong>Proof.</strong> That $\Theta$ is a bijection with $\Theta^{2}=\mathrm{id}$ is immediate from $\sigma^{2}=\tau^{2}=\mathrm{id}$. It is anti-multiplicative on the semidirect product, using that $\Gamma$ acts by automorphisms of $G$:</p>
+<p>$$
+\Theta\bigl((g,\gamma)(g',\gamma')\bigr)=\Theta\bigl(g\,(\gamma\cdot g'),\gamma\gamma'\bigr)
+=\bigl(\sigma(g\,(\gamma\cdot g')),\ \tau(\gamma\gamma')\bigr)
+=\bigl(\sigma(\gamma\cdot g')\sigma(g),\ \tau(\gamma')\tau(\gamma)\bigr),
+$$</p>
+<p>while</p>
+<p>$$
+\Theta(g',\gamma')\Theta(g,\gamma)=\bigl(\sigma(g')\,(\tau(\gamma')\cdot\sigma(g)),\ \tau(\gamma')\tau(\gamma)\bigr).
+$$</p>
+<p>The two are equal when $\sigma(\gamma\cdot g')=\tau(\gamma')\cdot\sigma(g)$, which is the twisted compatibility applied to $\gamma\cdot g'$ and rearranged; with $\tau=\mathrm{id}$ it is the plain compatibility $\sigma(\gamma\cdot g')=\gamma'\cdot\sigma(g)$.</p>
+<p><strong>Remark (the two roles of the action).</strong> The construction reads the action twice: once to form the semidirect product, and once through the compatibility that makes the involution of the extension. When the action is trivial, $G\rtimes\Gamma=G\times\Gamma$ and the involution is the componentwise one of <em>Involutive Groups</em>, §8.</p>
+<h2 id="summary">Summary</h2>
+<p>An action of $\Gamma$ on an involutive group $(G,\sigma)$ <strong>preserves the involution</strong> when every operator commutes with $\sigma$, equivalently when the image of $\Gamma\to\operatorname{Aut}(G)$ lies in $C_{\operatorname{Aut}(G)}(\sigma)$; it then preserves $\sigma$, the associated automorphism $\alpha$, the fixed set $G^{\sigma}$ and the inverted set $I(\sigma)$. The <strong>$\Gamma$-fixed points</strong> $G^{\Gamma}$ are $\sigma$-stable, so $\sigma$ restricts to an involution of $G^{\Gamma}$, and the two fixed sets $G^{\sigma}$ and $G^{\Gamma}$ are mutually stable; their intersection carries both structures.</p>
+<p>For a normal subgroup $N$ that is both $\sigma$-stable and $\Gamma$-stable the involution and the action both descend to $G/N$, the descended action preserves the induced involution, and the projection is a morphism of involutive $\Gamma$-groups; the image of $G^{\sigma}$ lies in the fixed set of the quotient and the containment can be strict. The fixed-point constructions $G\mapsto G^{\sigma}$ and $G\mapsto G^{\Gamma}$ are functorial and left exact. Finally, an involutive group $\Gamma$ acting with a compatible involution $\tau$ makes $G\rtimes\Gamma$ an involutive group by $\Theta(g,\gamma)=(\sigma(g),\tau(\gamma))$, an extension of the involution of $G$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma\cdot\sigma(g)=\sigma(\gamma\cdot g)$</td>
+<td>compatibility of the action with the involution</td>
+</tr>
+<tr>
+<td>$C_{\operatorname{Aut}(G)}(\sigma)$</td>
+<td>operators commuting with $\sigma$</td>
+</tr>
+<tr>
+<td>$G^{\Gamma}=\{g:\gamma\cdot g=g\}$</td>
+<td>$\Gamma$-fixed points, stable under $\sigma$</td>
+</tr>
+<tr>
+<td>$G^{\sigma}\cap G^{\Gamma}$</td>
+<td>points fixed by both structures</td>
+</tr>
+<tr>
+<td>$\bar\sigma(gN)=\sigma(g)N$</td>
+<td>induced involution on $G/N$, $N$ $\sigma$-stable</td>
+</tr>
+<tr>
+<td>$f\sigma=\tau f$</td>
+<td>involution-preserving equivariant map</td>
+</tr>
+<tr>
+<td>$\Theta(g,\gamma)=(\sigma(g),\tau(\gamma))$</td>
+<td>involution of the semidirect product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for group actions and invariance under automorphisms of the acting group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions compatible with a group action and the semilinear case.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for semidirect products and actions by automorphisms.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962), for the twisted action of a group with an involution on an algebra with one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

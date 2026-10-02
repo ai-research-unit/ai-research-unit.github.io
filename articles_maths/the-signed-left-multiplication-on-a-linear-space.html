@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Linear Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-linear-space"><strong>The Signed Left Multiplication on a Linear Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The one-sided companion of the signed sandwich is the <strong>signed left multiplication</strong> $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the operator $X \mapsto a\alpha(X)$ on $E = \operatorname{End}_F(V)$, obtained from the signed sandwich by taking the right factor to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are computed from the composite; it is the case $b=1$ of the signed sandwich and the one-sided member of the signed family.</p>
+<p><em>The Signed Sandwich on a Linear Space</em> supplies the signed sandwich $\Theta^{\alpha}_{a,b}$ and its laws; <em>Left and Right Multiplication in a Group</em> and the one-sided operators supply the group-level analogue; <em>The Adjoint of the Left Multiplication on a Linear Space</em> supplies the unsigned case with the trace pairing, and <em>The Signed Adjoint of the Left Multiplication on a Linear Space</em> the signed adjoint. <em>The Graded Action on a Module over a Linear Space</em> treats the module-level variant. No form is used.</p>
+<p>Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $\alpha$ is the grade involution of $E$, $\alpha(X) = TXT$ for a linear involution $T$ of $V$, an algebra automorphism of order two.</p>
+<h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
+<p><strong>Definition.</strong> For $a \in E$ the <strong>signed left multiplication</strong> is</p>
+<p>$$
+\Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X) .
+$$</p>
+<p><strong>Proposition.</strong> $\Lambda^{\alpha}_{a}$ is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and</p>
+<p>$$
+\Lambda^{\alpha}_{a} = L_a\circ\alpha = \alpha\circ L_{\alpha(a)} ,
+$$</p>
+<p>so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.</p>
+<p><strong>Proof.</strong> The first identity is the definition of the sandwich; for the second, $\alpha L_{\alpha(a)}(X) = \alpha(\alpha(a)X) = a\alpha(X) = \Lambda^{\alpha}_{a}(X)$.</p>
+<p><strong>Proposition (composition).</strong> For all $a,b \in E$,</p>
+<p>$$
+\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+L_a\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
+\Lambda^{\alpha}_{a}L_b = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+$$</p>
+<p>In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_a : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.</p>
+<p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}(X) = a\alpha(b\alpha(X)) = a\alpha(b)\alpha(\alpha(X)) = a\alpha(b)X = L_{a\alpha(b)}(X)$; $L_a\Lambda^{\alpha}_{b}(X) = ab\alpha(X) = \Lambda^{\alpha}_{ab}(X)$; $\Lambda^{\alpha}_{a}L_b(X) = a\alpha(X)\alpha(b) = R_{\alpha(b)}(\Lambda^{\alpha}_{a}(X))$. The closure is the three identities together.</p>
+<p><strong>Corollary (invertibility and inverse).</strong> $\Lambda^{\alpha}_{a}$ is invertible if and only if $a$ is invertible, and then</p>
+<p>$$
+\bigl(\Lambda^{\alpha}_{a}\bigr)^{-1} = \Lambda^{\alpha}_{\alpha(a^{-1})} .
+$$</p>
+<p><strong>Proof.</strong> Invertibility follows from the factorisation $\Lambda^{\alpha}_{a} = L_a\alpha$ and the invertibility of $\alpha$; the inverse is checked by the composition law: $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{\alpha(a^{-1})} = L_{a\alpha(\alpha(a^{-1}))} = L_{a a^{-1}} = \mathrm{id}$, and likewise on the other side.</p>
+<p><strong>Proposition (fixed elements).</strong> The fixed space of $\Lambda^{\alpha}_{a}$ is</p>
+<p>$$
+\ker(\Lambda^{\alpha}_{a}-\mathrm{id}) = \{X \in E : a\alpha(X) = X\} ;
+$$</p>
+<p>equivalently, when $a$ is invertible, $X$ is fixed exactly when $\alpha(X) = a^{-1}X$. For $a=1$ the fixed space is the fixed part $E^{+}$ of $\alpha$, of dimension $p^2+q^2$ in the matrix-unit basis.</p>
+<p><strong>Proof.</strong> The first display is the definition of the eigenvalue-one equation. For $a=1$ it is $\alpha(X)=X$, whose space is $E^{+}$; the dimension is the computation of <em>Involutive Linear Spaces</em>.</p>
+<p><strong>Example.</strong> For $T = \operatorname{diag}(1,-1)$ on $F^2$ and $a = \operatorname{diag}(2,3)$, the signed left multiplication on $M_2(F)$ is $X \mapsto aTXT$; its fixed space is computed from the equations above, and the matrix units $E_{ij}$ are eigenvectors with eigenvalue $a_{ii}(-1)^{i+j}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication on $E=\operatorname{End}_F(V)$ is $\Lambda^{\alpha}_{a}=L_a\circ\alpha$, the signed sandwich with right factor one, equal to $\alpha\circ L_{\alpha(a)}$. Its product with another is the ordinary left multiplication $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}=L_{a\alpha(b)}$; it satisfies $L_a\Lambda^{\alpha}_{b}=\Lambda^{\alpha}_{ab}$ and $\Lambda^{\alpha}_{a}L_b=R_{\alpha(b)}\Lambda^{\alpha}_{a}$, so the signed and ordinary left multiplications together form a closed monoid; it is invertible exactly for invertible $a$, with inverse $\Lambda^{\alpha}_{\alpha(a^{-1})}$; and its fixed space is the solution set of $a\alpha(X)=X$, equal to the fixed part $E^{+}$ of $\alpha$ when $a=1$. The adjoint with respect to the trace pairing, the module-level graded variant and the group-level analogue are the companion articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $V$, $E$</td>
+<td>the field, the space, the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $\alpha(X)=TXT$</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>the left multiplication, $L_a(X)=aX$</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_{a}=L_a\circ\alpha$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_{a}=L_a\alpha=\alpha L_{\alpha(a)}$</td>
+<td>the two factorisations</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}=L_{a\alpha(b)}$</td>
+<td>the composition law</td>
+</tr>
+<tr>
+<td>$(\Lambda^{\alpha}_{a})^{-1}=\Lambda^{\alpha}_{\alpha(a^{-1})}$</td>
+<td>the inverse</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for one-sided operators on an algebra and the involution.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for signed one-sided operators.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the left and right multiplications and their products.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

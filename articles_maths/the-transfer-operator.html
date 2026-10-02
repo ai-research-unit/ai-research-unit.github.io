@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transfer Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transfer-operator"><strong>The Transfer Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A transformation of a space acts on the functions on it by composition, and it acts on the measures on it by pushforward; the <strong>transfer operator</strong> is the second action, written on densities. For a nonsingular map $T$ of a measure space $(X,\mathcal{B},m)$ the pushforward of a measure $\nu$ is $\nu\circ T^{-1}$, and when $\nu=h\,m$ has a density the pushed-forward measure has a density $\mathcal{P}_T h$ given by</p>
+<p>$$
+\int_A\mathcal{P}_T h\,dm=\int_{T^{-1}(A)}h\,dm \qquad (A\in\mathcal{B}) ;
+$$</p>
+<p>equivalently, $\mathcal{P}_T$ is characterised on the pairing by $\int \mathcal{P}_T h\cdot g\,dm=\int h\cdot(g\circ T)\,dm$. The operator is linear and positive, it carries the densities of measures to the densities of their images, and its fixed points are the <strong>invariant densities</strong>; it is the <strong>Perron–Frobenius operator</strong> of the map, and when the map is a piecewise monotone interval map with inverse branches $y_1(x),\dots,y_k(x)$ it has the explicit form $\mathcal{P}_T h(x)=\sum_i\frac{h(y_i(x))}{|T'(y_i(x))|}$. Unlike the Koopman operator it is generally not an isometry and is generally not invertible, so its spectrum is a genuine spectral problem, and the problem is the source of the whole quantitative theory of statistical behaviour: the rate of decay of correlations, the central limit theorem, the large deviations and the smoothness of the invariant measure are all read from the spectrum of $\mathcal{P}_T$ on a suitable Banach space.</p>
+<p>The article defines the transfer operator, proves its elementary properties (positivity, the pairing identity, functoriality under composition, the measure-preserving case $\mathcal{P}_{\mathrm{id}}$-type identifications), and gives the explicit inverse-branch formula for a piecewise monotone map with the doubling map, the tent map and the Gauss map as the standard instances. It then treats the spectrum: the invariant density as the fixed point, the positivity and the Perron–Frobenius theorem, the <strong>spectral gap</strong> on a space of functions of bounded variation or of Hölder regularity by the Lasota–Yorke inequality, the quasi-compactness and the <strong>essential spectral radius</strong>, and the reading of the decay of correlations from the gap. The last sections treat the <strong>weighted transfer operator</strong> $\mathcal{P}_\varphi$ with a potential, its spectral radius as the exponential of the topological pressure, the Gibbs property, and the relation to the thermodynamic formalism of <em>Hyperbolic Dynamics and Anosov Systems</em>.</p>
+<p>The measure theory, the densities and the pushforward are those of <em>Measure Theory and Integration</em>; the measure-preserving systems, the ergodicity, the mixing, the decay of correlations and the entropy are those of <em>Ergodic Theory</em>; the transfer operator of the Gauss map and its spectral gap are those of <em>Dynamics and Number Theory</em>, which computes the Gauss density and the Gauss–Kuzmin–Wirsing constant $\lambda_2=-0.303663\ldots$; the transfer operator of a hyperbolic set, the pressure and the Gibbs states are those of <em>Hyperbolic Dynamics and Anosov Systems</em>; the symbolic models and the zeta functions are those of <em>Symbolic Dynamics</em>. The Koopman operator is <em>The Koopman Operator</em>, immediately preceding; its adjoint, which is the present operator, is <em>The Adjoint of the Koopman Operator</em>, and the reversal of the transfer operator by an involution is <em>Time Reversal and the Transfer Operator</em>, both in the <code>- * Operator Theory</code> group of this category. The compositions, the compact operators, the Fredholm and the Ruelle–Perron–Frobenius theory on a Banach space are those of <em>Banach and Hilbert Spaces</em> and <em>Operator Algebras</em>.</p>
+<p>No physics is invoked.</p>
+<h2 id="definition-and-elementary-properties">Definition and Elementary Properties</h2>
+<h3 id="the-transfer-operator-of-a-nonsingular-map">The Transfer Operator of a Nonsingular Map</h3>
+<p><strong>Definition.</strong> Let $(X,\mathcal{B},m)$ be a measure space and let $T:X\to X$ be measurable and <strong>nonsingular</strong>, that is, $m(T^{-1}A)=0$ whenever $m(A)=0$. The <strong>transfer operator</strong> (or <strong>Perron–Frobenius operator</strong>) of $T$ with respect to $m$ is the operator $\mathcal{P}_T$ on $L^1(X,m)$ defined by</p>
+<p>$$
+\int_A\mathcal{P}_T h\,dm=\int_{T^{-1}(A)}h\,dm \qquad (A\in\mathcal{B},\ h\in L^1(X,m)) ;
+$$</p>
+<p>it is characterised by the <strong>pairing identity</strong></p>
+<p>$$
+\int_X\mathcal{P}_T h\cdot g\,dm=\int_X h\cdot(g\circ T)\,dm \qquad (h\in L^1,\ g\in L^\infty).
+$$</p>
+<p>The map $T$ is <strong>measure-preserving</strong> if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$, and more generally $T$ preserves $\mu=h\,m$ exactly when $\mathcal{P}_T h=h$; the fixed points of $\mathcal{P}_T$ in the positive cone of $L^1$ are the <strong>invariant densities</strong>.</p>
+<p><strong>Theorem (elementary properties).</strong> Let $T$ and $S$ be nonsingular. Then (i) $\mathcal{P}_T$ is linear, positive and $\|\mathcal{P}_T h\|_1=\|h\|_1$ for $h\ge0$, so $\mathcal{P}_T$ is a contraction of $L^1$; (ii) $\mathcal{P}_T\mathbf{1}$ is the density of the pushforward $m\circ T^{-1}$, and $T$ is measure-preserving if and only if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$; (iii) $\mathcal{P}_{T\circ S}=\mathcal{P}_S\circ\mathcal{P}_T$, the order reversing, because the pushforward of a composition is the composition of the pushforwards in the reverse order; and (iv) if $T$ is invertible and measure-preserving then $\mathcal{P}_T h=h\circ T^{-1}$, so $\mathcal{P}_T=U_{T^{-1}}$ and $\mathcal{P}_T^{-1}=\mathcal{P}_{T^{-1}}=U_T$.</p>
+<p><em>Proof.</em> The positivity is immediate from the definition as an integral over a set. The contraction: for $h\ge0$, taking $A=X$ gives $\|\mathcal{P}_Th\|_1=\int_X\mathcal{P}_Th\,dm=\int_Xh\,dm=\|h\|_1$; for a general real $h$ one splits into the positive and negative parts, and the same identity applied to $|h|$ gives the bound. For (ii), taking $h=\mathbf{1}$ gives $\int_A\mathcal{P}_T\mathbf{1}\,dm=m(T^{-1}A)$, so $\mathcal{P}_T\mathbf{1}$ is the Radon–Nikodym derivative of $m\circ T^{-1}$, and it is $1$ exactly when $T$ preserves $m$. For (iii), $(T\circ S)^{-1}(A)=S^{-1}(T^{-1}(A))$ and the definition applies in order. For (iv), the change of variables $y=Tx$ with a measure-preserving invertible $T$ gives $\int_{T^{-1}A}h\,dm=\int_Ah\circ T^{-1}\,dm$.</p>
+<h3 id="the-inverse-branch-formula">The Inverse-Branch Formula</h3>
+<p><strong>Theorem (piecewise monotone maps).</strong> Let $T$ be a piecewise $C^1$ map of an interval or a compact manifold with finitely many <strong>inverse branches</strong> $y_1,\dots,y_k$, defined on the pieces and satisfying $T(y_i(x))=x$ and $T'(y_i(x))\neq0$. Then the transfer operator with respect to the Riemannian volume $m$ is</p>
+<p>$$
+\mathcal{P}_T h(x)=\sum_{i=1}^{k}\frac{h(y_i(x))}{|T'(y_i(x))|},
+$$</p>
+<p>the sum over the preimages of $x$.</p>
+<p><em>Proof.</em> On a small neighbourhood $U$ of $x$ over which the branch $y_i$ is defined, the change of variables $u=y_i(v)$ gives $\int_{y_i(U)}h(u)\,du=\int_U h(y_i(v))|y_i'(v)|\,dv$ with $|y_i'(v)|=1/|T'(y_i(v))|$; summing over the branches, which partition $T^{-1}(U)$, gives the formula.</p>
+<p><strong>Example (the doubling map).</strong> For $T x=2x\bmod1$ on $[0,1]$ with Lebesgue measure the two branches are $y_1(x)=x/2$ and $y_2(x)=(x+1)/2$, and</p>
+<p>$$
+\mathcal{P}_T h(x)=\tfrac12 h(x/2)+\tfrac12 h((x+1)/2).
+$$</p>
+<p>The operator preserves the constants, so Lebesgue measure is invariant; it is not an isometry and not invertible. Applied to the Bernoulli polynomials $B_n$, defined by $\sum_{n\ge0}B_n(x)t^n/n!=te^{xt}/(e^t-1)$ with $B_1(x)=x-\tfrac12$, one has exactly</p>
+<p>$$
+\mathcal{P}_T B_n=2^{-n}B_n ;
+$$</p>
+<p>the identity was verified in rational arithmetic for $n=0,1,2,3,4$ from the branch formula, giving for instance $\mathcal{P}_T(x-\tfrac12)=\tfrac12(x-\tfrac12)$ and $\mathcal{P}_T(x^2-x+\tfrac16)=\tfrac14(x^2-x+\tfrac16)$. Hence the integer powers $2^{-n}$ lie in the spectrum of $\mathcal{P}_T$ on the polynomials, the eigenvalue $1$ has the constant eigenfunction and is simple, and the remaining polynomial eigenvalues are dominated by $1/2$, which is the spectral gap responsible for the exponential decay of correlations.</p>
+<p><strong>Example (the tent map).</strong> For $T(x)=1-|2x-1|$ the branches are $y_1(x)=x/2$ and $y_2(x)=1-x/2$, and $\mathcal{P}_T h(x)=\tfrac12h(x/2)+\tfrac12h(1-x/2)$. The operator preserves the constants, so the uniform measure is invariant; the map is exact and its transfer operator is quasi-compact with the same qualitative gap. The eigenvalue check $\mathcal{P}_T(x-\tfrac12)=0$ shows that the tent map's polynomial spectrum is not the doubling map's, and no numerical spectrum of the tent operator is asserted here.</p>
+<p><strong>Example (the Gauss map).</strong> For $T x=1/x-\lfloor1/x\rfloor$ the branches are $y_k(x)=1/(x+k)$, and the transfer operator is</p>
+<p>$$
+\mathcal{P}_T h(x)=\sum_{k\ge1}\frac{1}{(x+k)^2}\,h\Bigl(\frac{1}{x+k}\Bigr),
+$$</p>
+<p>the <strong>Gauss–Kuzmin–Wirsing operator</strong>. Its fixed point is the Gauss density $h(x)=1/((1+x)\log2)$, and on a suitable space it has a spectral gap with second eigenvalue $\lambda_2=-0.303663\ldots$, the Gauss–Kuzmin–Wirsing constant of <em>Dynamics and Number Theory</em>; the operator and its gap are computed there and are cited here.</p>
+<h2 id="the-spectrum-and-the-invariant-density">The Spectrum and the Invariant Density</h2>
+<h3 id="positivity-and-the-perronfrobenius-theorem">Positivity and the Perron–Frobenius Theorem</h3>
+<p><strong>Theorem (Perron–Frobenius, quoted).</strong> Let $T$ be a nonsingular map whose transfer operator $\mathcal{P}_T$ is positive and compact on a Banach lattice $E$ of functions, and suppose some power $\mathcal{P}_T^{n}$ is <strong>weakly mixing</strong> on the lattice (no cyclic permutation of parts). Then the spectral radius $\rho(\mathcal{P}_T)$ is a simple eigenvalue with a strictly positive eigenvector, the rest of the spectrum lies in a disc of radius $<\!\rho(\mathcal{P}_T)$, and no other eigenvalue has modulus $\rho(\mathcal{P}_T)$.</p>
+<p><em>Proof.</em> Quoted as standard (Krein–Rutman, Perron–Frobenius); the positivity supplies the cone, the compactness the discreteness of the spectrum outside a disc, and the mixing excludes the roots of unity of the peripheral spectrum.</p>
+<p><strong>Corollary (the invariant density).</strong> If $\mathcal{P}_T$ has a positive fixed point $h^*$ normalised to $\int h^*dm=1$, then $\mu=h^*m$ is an invariant probability and it is the only invariant density in the cone. For the doubling map $h^*=\mathbf{1}$ and for the Gauss map $h^*$ is the Gauss density.</p>
+<h3 id="quasi-compactness-and-the-spectral-gap">Quasi-Compactness and the Spectral Gap</h3>
+<p><strong>Definition.</strong> A bounded operator $\mathcal{P}$ on a Banach space $E$ is <strong>quasi-compact</strong> if $E$ decomposes as $E=F\oplus V$ with $F$ finite-dimensional, $\mathcal{P}F\subseteq F$ and $\|\mathcal{P}^n|_{V}\|\le C\theta^n$ for some $\theta<1$. Its <strong>essential spectral radius</strong> is $r_{\mathrm{ess}}(\mathcal{P})=\inf\{\rho(\mathcal{P}|_W):W \text{ closed invariant, } \mathcal{P}|_W \text{ quasi-nilpotent on } E/W\}$.</p>
+<p><strong>Theorem (Lasota–Yorke inequality).</strong> Let $T$ be a piecewise $C^2$ expanding map of the interval, with $|T'|\ge\lambda>1$ and bounded distortion. Then there are constants $C>0$ and $\theta<1$ such that, for every $h$ of bounded variation,</p>
+<p>$$
+\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}} ;
+$$</p>
+<p>consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded variation is quasi-compact, its essential spectral radius is at most $\theta$, its peripheral spectrum consists of the simple eigenvalue $1$ and finitely many roots of unity, and the Fourier coefficients of the correlations decay at rate at most $\theta$.</p>
+<p><em>Proof (sketch).</em> The variation of each branch contribution is estimated from the chain rule and the mean value theorem: the variation of $h\circ y_i/|T'\!\circ y_i|$ is at most the variation of $h$ times $\sup|y_i'|$, plus a term proportional to $\|h\circ y_i/|T'\circ y_i|\|_\infty$, and $\sup|y_i'|\le1/\lambda$; summing over the branches gives the displayed inequality with $\theta=1/\lambda$ up to the distortion constants, and the quasi-compactness is the standard Hennion/Nussbaum argument for an operator satisfying such an inequality.</p>
+<p><strong>Remark (the gap and the statistics).</strong> The spectral gap is exactly the quantitative input of the statistical theory: the eigenvalue $1$ gives the invariant density, the remainder of the spectrum inside the disc of radius $\theta$ gives the exponential decay of correlations $\langle U_T^nf,g\rangle-\mu(f)\mu(g)=O(\theta^n)$ for functions in the space, and the analyticity of the resolvent across the spectral disc yields the central limit theorem and the large deviations by the perturbation theory of the operator. The transfer operator is thus the operator whose spectrum contains the statistical behaviour of the system.</p>
+<h2 id="the-weighted-transfer-operator-and-the-pressure">The Weighted Transfer Operator and the Pressure</h2>
+<p><strong>Definition.</strong> Let $T$ be a piecewise monotone map and let $\varphi:X\to\mathbb{R}$ be a <strong>potential</strong> (a Hölder function). The <strong>weighted transfer operator</strong> (or <strong>Ruelle operator</strong>) with potential $\varphi$ is</p>
+<p>$$
+\mathcal{P}_\varphi h(x)=\sum_{i=1}^{k}e^{\varphi(y_i(x))}\,\frac{h(y_i(x))}{|T'(y_i(x))|},
+$$</p>
+<p>which reduces to $\mathcal{P}_T$ when $\varphi=-\log|T'|$ on each branch, so that $\mathcal{P}_T=\mathcal{P}_{-\log|T'|}$; the operator with $\varphi=0$ is the <strong>Perron–Frobenius operator of the map read against the measure of maximal entropy</strong>.</p>
+<p><strong>Theorem (the pressure as a spectral radius).</strong> For a topologically mixing piecewise monotone map $T$ and a Hölder potential $\varphi$ the spectral radius of $\mathcal{P}_\varphi$ on the Hölder space is $e^{P(\varphi)}$, where $P(\varphi)$ is the <strong>topological pressure</strong>, the eigenvalue $e^{P(\varphi)}$ is simple, and its eigenvector and its dual eigenfunctional give the <strong>Gibbs state</strong> of $\varphi$: the unique invariant measure $\mu_\varphi$ with</p>
+<p>$$
+\mu_\varphi(T(A))=\int_Ae^{P(\varphi)-\varphi}\,d\mu_\varphi \qquad \text{locally},
+$$</p>
+<p>and $h_{\mu_\varphi}+\int\varphi\,d\mu_\varphi=P(\varphi)$, the <strong>variational principle</strong>.</p>
+<p><em>Proof.</em> Quoted as standard from <em>Hyperbolic Dynamics and Anosov Systems</em>, where the transfer operator is written $\mathcal L$ and the thermodynamic formalism, the Gibbs property, the Bowen–Ruelle measure and the periodic orbit counting are developed; the notation $\mathcal{P}_\varphi$ is used here to keep the Lie derivative $\mathcal L_X$ of <em>The Flow Operator</em> distinct from the operator. No proof is repeated.</p>
+<p><strong>Corollary (the entropy as a special case).</strong> Taking $\varphi=-\log|T'|$ gives $P(\varphi)=\log\rho(\mathcal{P}_T)$; for the doubling map $\mathcal{P}_T$ has spectral radius $1$, so $P(-\log|T'|)=0$, and the measure of maximal entropy is Lebesgue; for an expanding map the pressure of $-\log|T'|$ is zero by the volume argument.</p>
+<p><strong>Remark (symbols).</strong> The literature writes the weighted transfer operator $\mathcal L_\varphi$ and the Perron–Frobenius operator $P$ or $\mathcal P$; this corpus reserves $\mathcal L_X$ for the Lie derivative, writes the transfer operator $\mathcal{P}_T$, the weighted one $\mathcal{P}_\varphi$, and follows <em>Dynamics and Number Theory</em>, where the operator of the Gauss map is already $\mathcal P$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>transfer operator</strong> (Perron–Frobenius operator) of a nonsingular map $T$ is the operator $\mathcal{P}_T$ on $L^1(m)$ defined by $\int_A\mathcal{P}_Th\,dm=\int_{T^{-1}A}h\,dm$, equivalently by the pairing $\int\mathcal{P}_Th\cdot g\,dm=\int h\cdot g\circ T\,dm$; it is linear, positive and a contraction, functorial with reversed composition, $\mathcal{P}_{T\circ S}=\mathcal{P}_S\mathcal{P}_T$, and it carries densities to the densities of their pushforwards, so its positive fixed points are the <strong>invariant densities</strong>. For a piecewise monotone map it is the inverse-branch sum $\mathcal{P}_Th(x)=\sum_i h(y_i(x))/|T'(y_i(x))|$; the doubling map gives $\mathcal{P}_Th(x)=\tfrac12h(x/2)+\tfrac12h((x+1)/2)$ with the eigenfunctions $B_n$ and eigenvalues $2^{-n}$ on the Bernoulli polynomials (verified in rational arithmetic for $n\le4$), the tent map gives a uniform invariant density, and the Gauss map gives the Gauss–Kuzmin–Wirsing operator with the Gauss density and the spectral gap of <em>Dynamics and Number Theory</em>. The <strong>Perron–Frobenius theorem</strong> makes the spectral radius simple with a positive eigenvector under compactness and mixing; the <strong>Lasota–Yorke inequality</strong> gives the <strong>quasi-compactness</strong> and the spectral gap on a space of functions of bounded variation, which is the exponential decay of correlations and the analytic input of the limit theorems; and the <strong>weighted transfer operator</strong> $\mathcal{P}_\varphi$ has spectral radius $e^{P(\varphi)}$ with the pressure, the Gibbs state and the variational principle, quoted from <em>Hyperbolic Dynamics and Anosov Systems</em>. The identification of $\mathcal P_T$ with the adjoint of the Koopman operator and its reversal by a time-reversing involution are in the <code>- * Operator Theory</code> group and are not used here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$, $m$</td>
+<td>Nonsingular map; reference measure</td>
+</tr>
+<tr>
+<td>$\mathcal{P}_T$</td>
+<td>Transfer (Perron–Frobenius) operator, $\int_A\mathcal{P}_Th\,dm=\int_{T^{-1}A}h\,dm$</td>
+</tr>
+<tr>
+<td>$\mathcal{P}_T h\cdot g$ pairing</td>
+<td>$\int\mathcal{P}_Th\cdot g\,dm=\int h\cdot g\circ T\,dm$</td>
+</tr>
+<tr>
+<td>$h$, $h^*$</td>
+<td>Density; invariant density</td>
+</tr>
+<tr>
+<td>$y_1,\dots,y_k$</td>
+<td>Inverse branches of a piecewise monotone map</td>
+</tr>
+<tr>
+<td>$B_n$</td>
+<td>Bernoulli polynomials, $\mathcal{P}_TB_n=2^{-n}B_n$ for the doubling map</td>
+</tr>
+<tr>
+<td>$\rho(\mathcal{P})$, $r_{\mathrm{ess}}(\mathcal{P})$</td>
+<td>Spectral and essential spectral radius</td>
+</tr>
+<tr>
+<td>$\mathrm{BV}$</td>
+<td>Space of functions of bounded variation</td>
+</tr>
+<tr>
+<td>$\varphi$, $\mathcal{P}_\varphi$</td>
+<td>Potential and weighted transfer (Ruelle) operator</td>
+</tr>
+<tr>
+<td>$P(\varphi)$</td>
+<td>Topological pressure, $\rho(\mathcal{P}_\varphi)=e^{P(\varphi)}$</td>
+</tr>
+<tr>
+<td>$\mu_\varphi$</td>
+<td>Gibbs state (equilibrium state) of $\varphi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Andrzej Lasota and Michael C. Mackey, <em>Chaos, Fractals, and Noise: Stochastic Aspects of Dynamics</em> (Springer, 2nd ed. 1994), for the Perron–Frobenius operator, the invariant density and the Lasota–Yorke inequality.</li>
+<li>David Ruelle, <em>Thermodynamic Formalism</em> (Addison-Wesley, 1978), for the weighted transfer operator, the pressure and the Gibbs states.</li>
+<li>Rufus Bowen, <em>Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms</em> (Springer, 1975), for the Gibbs property and the periodic orbit counting.</li>
+<li>Mark Pollicott and Michiko Yuri, <em>Dynamical Systems and Ergodic Theory</em> (Cambridge University Press, 1998), for the spectral gap and the correlation decay.</li>
+<li>Gerhard Keller and Carlangelo Liverani, "Stability of the Spectrum for Transfer Operators", <em>Annali della Scuola Normale Superiore di Pisa</em> 28 (1999), 141–152, for the quasi-compactness and the stability of the gap.</li>
+<li>Marius-F. Danca and others, and the survey literature, for the computational Perron–Frobenius theory.</li>
+<li>Karma Dajani and Cor Kraaikamp, <em>Ergodic Theory of Numbers</em> (American Mathematical Society, 2002), for the Gauss–Kuzmin–Wirsing operator and the continued-fraction spectral gap.</li>
+<li>Peter Collet and Jean-Pierre Eckmann, <em>Iterated Maps on the Interval as Dynamical Systems</em> (Birkhäuser, 1980), for the transfer operator of one-dimensional expanding maps.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

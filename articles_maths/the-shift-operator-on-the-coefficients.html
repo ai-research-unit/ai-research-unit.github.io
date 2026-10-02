@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shift Operator on the Coefficients — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-shift-operator-on-the-coefficients"><strong>The Shift Operator on the Coefficients</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The coefficient sequence $(a_n)$ of a Dirichlet series carries two elementary operators: the section at a fixed integer $m$, which retains only the coefficients at the multiples of $m$, and the division by $m$, which reads the coefficient at $mn$. On the side of the series the section is multiplication by $m^{-s}$ and the division is the part of the series supported on the multiples of $m$, rescaled by $m^{s}$. The two operators are adjoint to one another for the form of the category, the section is an isometry and the division a co-isometry, and their spectrum is the closed disk of the appropriate radius. They also give the mechanism by which the analytic continuation of a Dirichlet series is organised: the continuation of the whole is equivalent to the continuation of the $m$-divisible section together with the elementary factor $m^{-s}$.</p>
+<p>The conventions are those of the category: $\mathcal{A}$ is the algebra of arithmetic functions, $\delta_m$ the function with $\delta_m(m)=1$ and all other values $0$, $\mathcal{H}=\ell^2$ with the form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$, and for real $\sigma$ the Banach space $\mathcal{A}(\sigma)=\{f:\|f\|_\sigma=\sum_n|f(n)|n^{-\sigma}<\infty\}$, an algebra under convolution. The multiplication operators of the same algebra are in <em>Multiplication Operators on an L-Function</em>; the shift of the argument $s\mapsto s+1$ is <em>Shift Operator on a Dirichlet Series</em>, the next article. Nothing here reads a distance as an object.</p>
+<h2 id="the-two-shifts">The Two Shifts</h2>
+<h3 id="definitions">Definitions</h3>
+<p><strong>Definition.</strong> For $m\ge1$ the <strong>division</strong> $S_m$ and the <strong>section</strong> $D_m$ act on arithmetic functions by
+$$
+(S_mf)(n)=f(mn),\qquad (D_mf)(n)=f(n/m)\ \text{ if } m\mid n,\ \text{ and } 0 \text{ otherwise}.
+$$
+The operator $D_m$ retains the multiples of $m$; the operator $S_m$ reads the coefficient at $mn$ and kills the nonmultiples of $m$.</p>
+<h3 id="elementary-identities">Elementary identities</h3>
+<p><strong>Theorem.</strong> For all $m,k\ge1$,
+$$
+S_mS_k=S_{mk},\qquad D_mD_k=D_{mk},\qquad S_mD_m=\mathrm{id},\qquad D_mS_m=P_m,
+$$
+where $P_m$ is the orthogonal projection onto the subspace of functions supported on the multiples of $m$. In particular $D_m$ is injective with left inverse $S_m$, and $S_m$ has kernel the functions supported on the nonmultiples of $m$.</p>
+<p><strong>Proof.</strong> Compute on $\delta_n$: $S_m\delta_n=\delta_{n/m}$ if $m\mid n$ and $0$ otherwise, while $D_m\delta_n=\delta_{mn}$; hence $D_mD_k\delta_n=\delta_{mkn}=D_{mk}\delta_n$ and $S_mS_k\delta_n=S_{mk}\delta_n$. Further $S_mD_m\delta_n=S_m\delta_{mn}=\delta_n$, while $D_mS_m\delta_n=[m\mid n]\delta_n=P_m\delta_n$. The stated consequences are immediate.</p>
+<p><strong>Proposition (relation to convolution).</strong> $D_m=M_{\delta_m}$, the multiplication operator by the function $\delta_m$, and $S_m$ is its transpose in the sense that $\langle D_mf,g\rangle=\langle f,S_mg\rangle$ for all $f,g\in\mathcal{H}$. Hence $D_m^*=S_m$ and $S_m^*=D_m$, and the two shifts are mutual adjoints.</p>
+<p><strong>Proof.</strong> $(\delta_m*f)(n)=[m\mid n]f(n/m)=D_mf(n)$, so $D_m=M_{\delta_m}$; then $\langle D_mf,g\rangle=\sum_{n:m\mid n}f(n/m)\overline{g(n)}=\sum_kf(k)\overline{g(mk)}=\langle f,S_mg\rangle$, which is the adjoint statement.</p>
+<h2 id="norms-and-spectrum">Norms and Spectrum</h2>
+<h3 id="the-norms-on-the-weighted-spaces">The norms on the weighted spaces</h3>
+<p><strong>Theorem.</strong> On the Banach algebra $\mathcal{A}(\sigma)$ with the norm $\|\cdot\|_\sigma$,
+$$
+\|D_m\|_\sigma=m^{-\sigma},\qquad \|S_m\|_\sigma=m^{\sigma}.
+$$
+On the Hilbert space $\mathcal{H}=\ell^2$ the section $D_m$ has operator norm $1$ and is an isometry, and $S_m$ is a co-isometry with $S_mS_m^*=\mathrm{id}$ and $S_m^*S_m=P_m$.</p>
+<p><strong>Proof.</strong> Compute $\|D_mf\|_\sigma=\sum_{n:m\mid n}|f(n/m)|n^{-\sigma}=\sum_k|f(k)|(mk)^{-\sigma}=m^{-\sigma}\|f\|_\sigma$ and $\|S_mf\|_\sigma=\sum_n|f(mn)|n^{-\sigma}=m^{\sigma}\sum_k|f(k)|k^{-\sigma}=m^{\sigma}\|f\|_\sigma$. On $\ell^2$ the first computation with $\sigma=0$ gives $\|D_mf\|_2=\|f\|_2$, so $D_m$ is an isometry; and $\|S_mf\|_2\le\|f\|_2$, the kernel of $S_m$ being the functions supported on the nonmultiples of $m$.</p>
+<h3 id="the-spectrum">The spectrum</h3>
+<p><strong>Theorem.</strong> On $\mathcal{H}=\ell^2(\mathbb{N})$, the spectrum of $D_m$ is the closed unit disk $\{|\zeta|\le1\}$, and the spectrum of $S_m$ is the same disk. On $\mathcal{A}(\sigma)$ the spectrum of $D_m$ is the closed disk of radius $m^{-\sigma}$ and the spectrum of $S_m$ is the closed disk of radius $m^{\sigma}$.</p>
+<p><strong>Proof.</strong> Decompose $\mathbb{N}$ into the chains $k,km,km^2,\ldots$ for the integers $k$ not divisible by $m$. Each chain is a copy of the additive monoid $\mathbb{N}_0$, and on it $D_m$ is the unilateral up-shift and $S_m$ the unilateral down-shift. Hence $D_m$ is the countable direct sum of copies of the up-shift on $\ell^2(\mathbb{N}_0)$, and $S_m$ the direct sum of copies of the down-shift. The up-shift on $\ell^2(\mathbb{N}_0)$ is an isometry whose spectrum is the closed unit disk, and a countable direct sum of copies has the same spectrum because it contains one copy as a direct summand and its norm is $1$. The rescaling to $\mathcal{A}(\sigma)$ multiplies the operators by $m^{-\sigma}$ and $m^{\sigma}$ after the substitution $f\mapsto(f(n)n^{-\sigma})$, which is an isometric identification of $\mathcal{A}(\sigma)$ with $\ell^1$ and preserves the spectral radius. The spectrum of a shift on $\ell^p(\mathbb{N}_0)$, $1\le p\le\infty$, is the closed unit disk; the standard computation is in <em>Spectral Theory</em>.</p>
+<p><strong>Corollary.</strong> The spectral radius of $D_m$ on $\mathcal{H}$ is $1$ although $D_m$ is not invertible: $D_m$ is an isometry with image the functions supported on the multiples of $m$, its inverse on that image is $S_m$, and its cokernel is the space of functions supported on the nonmultiples of $m$. The value $0$ belongs to the spectrum as a limit of the finite-dimensional approximations, not as an eigenvalue.</p>
+<h2 id="the-shift-equation-and-the-analytic-continuation">The Shift Equation and the Analytic Continuation</h2>
+<h3 id="the-math111-function-identity">The $L$-function identity</h3>
+<p><strong>Theorem.</strong> For every $f$ and every $m$,
+$$
+L(D_mf,s)=m^{-s}L(f,s),\qquad L(S_mf,s)=m^{s}\sum_{\substack{n\ge1\\ m\mid n}}f(n)n^{-s}.
+$$
+The first identity is an identity of Dirichlet series in their common half-plane; the second exhibits $L(S_mf,\cdot)$ as $m^{s}$ times the $m$-divisible section of $L(f,\cdot)$.</p>
+<p><strong>Proof.</strong> For the first, $\sum_n(D_mf)(n)n^{-s}=\sum_{n:m\mid n}f(n/m)n^{-s}=\sum_kf(k)(mk)^{-s}=m^{-s}L(f,s)$. For the second, $\sum_nf(mn)n^{-s}=\sum_{n:m\mid n}f(n)(n/m)^{-s}=m^{s}\sum_{n:m\mid n}f(n)n^{-s}$.</p>
+<h3 id="continuation">Continuation</h3>
+<p><strong>Definition.</strong> The <strong>$m$-divisible section</strong> of $L(f,\cdot)$ is $L^{(m)}(f,s)=\sum_{n:m\mid n}f(n)n^{-s}$, so that $L(f,s)=L^{(m)}(f,s)+L^{(1-m)}(f,s)$ with the second term the sum over $n$ not divisible by $m$.</p>
+<p><strong>Theorem (continuation by the shift).</strong> $L^{(m)}(f,s)=m^{-s}L(S_mf,s)$ and $L(f,s)=m^{-s}L(D_mf,s)$. Consequently the meromorphic continuation of $L(f,\cdot)$ is equivalent to that of $L(D_mf,\cdot)$ for any single $m$, and the continuation of $L^{(m)}(f,\cdot)$ is equivalent to that of $L(S_mf,\cdot)$; the incompletely multiplicative factor $m^{-s}$ has no zeros or poles and neither helps nor obstructs the continuation.</p>
+<p><strong>Proof.</strong> The identities are the theorem above. The equivalence of the continuations is the invariance of meromorphic continuation under multiplication by the entire function $m^{-s}$; the statement about sections is the splitting $L=L^{(m)}+L^{(1-m)}$ together with the identity for $L^{(m)}$.</p>
+<p><strong>Remark (the Bohr spectrum).</strong> In Bohr's terminology the <strong>spectrum</strong> of the Dirichlet series $\sum_nf(n)n^{-s}$ is the set of frequencies $\{\log n:f(n)\ne0\}$, and the shift $D_m$ acts on that set by the translation $\log n\mapsto\log n+\log m$ of the frequencies under the identification $n\mapsto mn$. The down-shift is thus the operator form of the elementary translation of the frequency set by $\log m$, and it is the reason the continuation of a Dirichlet series is studied frequency by frequency; the theory is in <em>Zeta Functions</em> and <em>Harmonic Analysis</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($m=p$, $f=\mathbf{1}$).</strong> $D_p\mathbf{1}=\delta_p$-convolution: $(D_p\mathbf{1})(n)=1$ if $p\mid n$, $0$ otherwise, and $L(D_p\mathbf{1},s)=p^{-s}\zeta(s)$; this is the classical identity $\zeta(s)=p^{-s}\zeta(s)+\sum_{p\nmid n}n^{-s}$ written with the shift.</p>
+<p><strong>Example (the Möbius function).</strong> $D_2\mu$ vanishes on the odd integers and equals $\mu(n/2)$ on the even ones; $L(D_2\mu,s)=2^{-s}L(\mu,s)=2^{-s}/\zeta(s)$.</p>
+<p><strong>Example (a normalised eigenform).</strong> For $f$ with coefficients $a_n$, $(D_pf)(n)=a_{n/p}[p\mid n]$ and $L(D_pf,s)=p^{-s}L(f,s)$; the extraction $S_p$ recovers $a_{pn}$ and the local recursion of <em>The Hecke Operator</em> is the composition $S_pD_p=\mathrm{id}$ together with $D_pS_p=P_p$.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The identities of this article fail in three degenerate configurations. First, if $m=1$ then $S_1=D_1=\mathrm{id}$ and the whole content collapses; the operators are interesting only for $m>1$. Second, the isometry $D_m$ is not surjective and the co-isometry $S_m$ is not injective; the spectral statements on $\mathcal{A}(\sigma)$ use the weight $n^{-\sigma}$, and at $\sigma=0$ the Banach algebra $\mathcal{A}(0)$ contains the unbounded-support functions for which $D_m$ has norm $1$ but is not surjective, so the "inverse" $S_m$ does not invert $D_m$. Third, the continuation statement is vacuous when $L(f,\cdot)$ has no continuation at all; the shift cannot create one, and the equivalence is an equivalence between two failures. These are the degenerate cases; they are the boundary of the half-plane of absolute convergence, where the shift equation still holds as an identity of series but the two sides have different domains of validity.</p>
+<h2 id="summary">Summary</h2>
+<p>For $m\ge1$ the division $S_mf(n)=f(mn)$ and the section $D_mf(n)=f(n/m)$ for $m\mid n$, $0$ otherwise, satisfy $S_mS_k=S_{mk}$, $D_mD_k=D_{mk}$, $S_mD_m=\mathrm{id}$ and $D_mS_m=P_m$, the projection onto the multiples of $m$; $D_m$ is the multiplication operator $M_{\delta_m}$, and $D_m^*=S_m$, $S_m^*=D_m$ for the form of the category. On the weighted space $\mathcal{A}(\sigma)$ the norms are $\|D_m\|_\sigma=m^{-\sigma}$ and $\|S_m\|_\sigma=m^{\sigma}$; on $\mathcal{H}$ the section $D_m$ is an isometry of norm $1$ and the division $S_m$ is a co-isometry, the spectrum of both being the closed unit disk, and on $\mathcal{A}(\sigma)$ the disks of radius $m^{-\sigma}$ and $m^{\sigma}$. The $L$-function identities are $L(D_mf,s)=m^{-s}L(f,s)$ and $L(S_mf,s)=m^{s}L^{(m)}(f,s)$, so the continuation of $L(f,\cdot)$ is the continuation of $L(D_mf,\cdot)$ and the elementary factor $m^{-s}$, and Bohr's frequency spectrum is translated by $\log m$ under the shift.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_m$, $(S_mf)(n)=f(mn)$</td>
+<td>Division; kills the nonmultiples of $m$</td>
+</tr>
+<tr>
+<td>$D_m$, $(D_mf)(n)=f(n/m)$ for $m\mid n$</td>
+<td>Section; isometry of $\mathcal{H}$</td>
+</tr>
+<tr>
+<td>$D_m=M_{\delta_m}$</td>
+<td>Section is convolution with $\delta_m$</td>
+</tr>
+<tr>
+<td>$S_mD_m=\mathrm{id}$, $D_mS_m=P_m$</td>
+<td>The fundamental identities</td>
+</tr>
+<tr>
+<td>$D_m^*=S_m$, $S_m^*=D_m$</td>
+<td>Mutual adjointness</td>
+</tr>
+<tr>
+<td>$\|D_m\|_\sigma=m^{-\sigma}$, $\|S_m\|_\sigma=m^{\sigma}$</td>
+<td>Norms on $\mathcal{A}(\sigma)$</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}D_m=\{|\zeta|\le1\}$</td>
+<td>Spectrum on $\mathcal{H}$</td>
+</tr>
+<tr>
+<td>$L(D_mf,s)=m^{-s}L(f,s)$</td>
+<td>The shift equation</td>
+</tr>
+<tr>
+<td>$L^{(m)}(f,s)=\sum_{m\mid n}f(n)n^{-s}$</td>
+<td>The $m$-divisible section</td>
+</tr>
+<tr>
+<td>$\{\log n:f(n)\ne0\}$</td>
+<td>Bohr spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hugh Montgomery and Robert Vaughan, <em>Multiplicative Number Theory I: Classical Theory</em> (Cambridge University Press, 2007), for the arithmetic functions and the dirichlet convolution.</li>
+<li>Harald Bohr, <em>Almost Periodic Functions</em> (Chelsea, 1947), for the frequency spectrum of a Dirichlet series.</li>
+<li>Einar Hille and Ralph Phillips, <em>Functional Analysis and Semi-Groups</em> (American Mathematical Society, 1957), for the unilateral shift and its spectrum.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the shift operators and the partial isometries.</li>
+<li>Nelson Dunford and Jacob Schwartz, <em>Linear Operators, Part II: Spectral Theory</em> (Interscience, 1963), for the spectrum of the weighted shifts.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

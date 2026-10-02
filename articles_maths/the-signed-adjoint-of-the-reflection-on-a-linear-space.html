@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Linear Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-linear-space"><strong>The Signed Adjoint of the Reflection on a Linear Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of a linear space is a linear involution of type $(n-1,1)$, and read as a signed two-sided operator it carries the grade involution $\alpha_r(X) = rXr$ that it defines. Its signed inner sandwich acts trivially, $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, so the reflection is self-adjoint and unitary for its own signed sandwich; for an arbitrary grade involution the adjoint of the signed inner sandwich of $r$ is $\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, the sandwich by the inverse image of the parameter, and the sandwich is always unitary while being self-adjoint exactly when $\alpha(r)$ is an involution. This article records those facts and marks the degenerate cases in which they collapse.</p>
+<p><em>Involutive Subspaces and the Decomposition</em> supplies the form-free reflection and its fixed hyperplane; <em>Reflections as Signed Two-Sided Operators on a Linear Space</em> supplies the signed inner sandwich and the correspondence between reflections and sandwiched involutions; <em>The Signed Adjoint Sandwich on a Linear Space</em> supplies the adjoint computations. The pairing-based self-adjointness of a reflection — the orthogonal reflection — belongs to the symmetric and antisymmetric categories of this Part and to <em>Hilbert Algebras</em>, Part II.</p>
+<p>Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, $r$ is a reflection of $V$, and $\alpha$ is a grade involution of $E$ with $\alpha_r(X) = rXr$ the one defined by $r$. The trace pairing is $\langle X,Y\rangle = \operatorname{tr}(XY)$ and ${}^{\dagger}$ is its adjoint.</p>
+<h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
+<p><strong>Proposition (the reflection is self-adjoint for its own signed sandwich).</strong> With $\alpha = \alpha_r$ one has $\Theta^{\alpha}_{r,r^{-1}} = \mathrm{id}$, and therefore</p>
+<p>$$
+\bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \Theta^{\alpha_r}_{r,r^{-1}} ,
+$$</p>
+<p>so the reflection is self-adjoint and unitary for the signed sandwich it defines.</p>
+<p><strong>Proof.</strong> $\Theta^{\alpha_r}_{r,r^{-1}}(X) = r(rXr)r = X$ by $r^2=\mathrm{id}$, which is <em>Reflections as Signed Two-Sided Operators on a Linear Space</em>; the adjoint of the identity is the identity, and the identity is unitary.</p>
+<p><strong>Proposition (the adjoint for a general grade involution).</strong> For an arbitrary grade involution $\alpha$,</p>
+<p>$$
+\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)} ,
+$$</p>
+<p>and this sandwich is always unitary; it is self-adjoint if and only if $\alpha(r)$ is an involution, $\alpha(r)^2=1$.</p>
+<p><strong>Proof.</strong> The adjoint formula of <em>The Signed Adjoint Sandwich on a Linear Space</em> with $a=r$ and $b=r^{-1}$ gives $\Theta^{\alpha}_{\alpha(r^{-1}),\alpha(r)}=\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$. The unitarity parameter of the adjoint sandwich is $\alpha(r^{-1})\alpha(r)=\alpha(r)^{-1}\alpha(r)=1$, a central involution, so the sandwich is unitary by the criterion; self-adjointness requires $\alpha(r^{-1})=\alpha(r)$, that is $\alpha(r)^{-1}=\alpha(r)$, which is $\alpha(r)^2=1$.</p>
+<p><strong>Corollary.</strong> When $r$ commutes with $\alpha$, in particular when $\alpha=\alpha_r$, the signed inner sandwich of $r$ is self-adjoint; when $\alpha=\alpha_r$ it is the identity.</p>
+<p><strong>Proof.</strong> If $r$ commutes with $\alpha$ then $\alpha(r)=r$ and $\alpha(r)^2=r^2=1$, so the self-adjointness criterion holds; for $\alpha=\alpha_r$ the sandwich is $r\alpha_r(X)r^{-1}=r(rXr)r^{-1}=X$, the identity.</p>
+<h2 id="self-adjointness-of-the-reflection-as-an-element">Self-Adjointness of the Reflection as an Element</h2>
+<p><strong>Proposition.</strong> A reflection $r$ is a self-adjoint <strong>element</strong> of $E$ with respect to a pairing-based involution $A \mapsto A^{*}$ — a different question from the self-adjointness of the sandwich operator — exactly when $r^{*}=r$, that is, when the reflection preserves the pairing; with respect to the trace pairing and the grade involution, the element $r$ is self-adjoint under the induced operator involution exactly when $r$ is central and even, $r=\alpha(r)$.</p>
+<p><strong>Proof.</strong> The first statement is the definition of the element adjoint $(r^{*}=r)$; the second is the computation $L_r^{*}=R_{r^{*}}$ of <em>The Adjoint of the Left Multiplication on a Linear Space</em> together with the criterion for a one-sided operator to be self-adjoint, which requires the parameter central and even.</p>
+<p><strong>Remark (the failure in the degenerate cases).</strong> In characteristic two a reflection is unipotent, the decomposition $V = V_+\oplus V_-$ with a sign does not exist, and the grade involution collapses to the identity, so the signed adjoint of the reflection is the ordinary adjoint and the sign disappears; this is the collapse of <em>Involutive Linear Spaces</em>. When the grade involution is the identity, the signed inner sandwich is the ordinary inner automorphism, its adjoint is the inverse inner automorphism, and the distinction between the signed and unsigned statements vanishes.</p>
+<h2 id="summary">Summary</h2>
+<p>For a reflection $r$ of $V$ the signed inner sandwich $\Theta^{\alpha_r}_{r,r^{-1}}$ is the identity, so the reflection is self-adjoint and unitary for the grade involution it defines; for a general grade involution $\alpha$ the adjoint of $\Theta^{\alpha}_{r,r^{-1}}$ is the signed sandwich $\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)$ is an involution, which holds in particular when $r$ commutes with $\alpha$. As an element with respect to a pairing-based involution the reflection is self-adjoint exactly when it preserves the pairing; with respect to the trace pairing and the induced operator involution it is self-adjoint exactly when it is central and even. The statements collapse in characteristic two and when the grade involution is the identity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $V$, $E$</td>
+<td>the field, the space, the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>a reflection, $r^2=\mathrm{id}$, $\operatorname{rk}(r-\mathrm{id})=n-1$</td>
+</tr>
+<tr>
+<td>$\alpha_r(X)=rXr$</td>
+<td>the grade involution of $r$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{r,r^{-1}}(X)=r\alpha(X)r^{-1}$</td>
+<td>the signed inner sandwich of $r$</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{r,r^{-1}})^{\dagger}=\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$</td>
+<td>its adjoint</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(XY)$</td>
+<td>the trace pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for reflections, involutions and adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the self-adjointness of sandwiched involutions.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for reflections and the pairing they preserve.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

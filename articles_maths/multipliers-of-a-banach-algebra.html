@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multipliers of a Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multipliers-of-a-banach-algebra"><strong>Multipliers of a Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The multiplications of a Banach algebra $A$ act on $A$ from the left and from the right, and an operator that acts like a multiplication without coming from an element of $A$ is a <strong>multiplier</strong>. In its cleanest form a multiplier is a <strong>double centraliser</strong>: a pair $(L,R)$ of bounded operators with $L(ab) = L(a)b$, $R(ab) = aR(b)$ and $aL(b) = R(a)b$. On a unital algebra there are no others, and the multipliers are exactly the multiplications; on a non-unital algebra they are genuinely more, and they form the <strong>multiplier algebra</strong> $M(A)$, a unital Banach algebra in which $A$ sits as an essential two-sided ideal. The multiplier algebra carries a natural locally convex topology, the <strong>strict topology</strong>, in which $A$ is dense and $M(A)$ complete, so that $M(A)$ is the completion of $A$ in the strict topology and the unitisation when $A$ has a bounded approximate identity. This article develops that construction: the double centralisers and their algebra, the multiplier algebra and its completeness, the strict topology and the density of $A$, and the relation to the double centraliser theorem of the one-sided multiplications.</p>
+<p>The article assumes the Banach algebra, its norm, the unit group and the Banach-algebra structure from <em>Topological Algebras and Banach Algebras</em>; the bounded operators, the one-sided multiplications, the multiplier definitions, the separating space and the automatic continuity from <em>Operators on a Banach Algebra</em>, the first article of this group; the composition and centraliser theorem of the one-sided multiplications and the multiplication algebra from <em>Left and Right Multiplication in a Banach Algebra</em>; the closed ideals, the quotients and the unitisation from <em>Ideals and Quotients of Algebras</em>; and the bounded operators of a Banach space, the closed ideals and the compact operators from <em>The Operator Algebra of a Banach Space</em>. The involution on the elements and the multiplier algebra of a $\mathrm{C}^*$-algebra are the <code>- * Theory</code> and <code>- * Operator Theory</code> groups of this category and are not used; the strict topology of a Hilbert module and the von Neumann algebra are <em>Operator Algebras</em>. No form, no measure and no Fourier theory occurs.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, not assumed unital; $B(A)$ is the Banach algebra of bounded linear operators. A left multiplier is a bounded $L$ with $L(ab) = L(a)b$, a right multiplier a bounded $R$ with $R(ab) = aR(b)$, and a <strong>double centraliser</strong> a pair $(L,R)$ of a left and a right multiplier with $aL(b) = R(a)b$ for all $a,b$. The unitisation of $A$ is written $A^\sharp = A \oplus \mathbb{K}$.</p>
+<h2 id="double-centralisers">Double Centralisers</h2>
+<p><strong>Definition.</strong> A <strong>double centraliser</strong> on $A$ is a pair $(L,R)$ of bounded linear operators on $A$ with</p>
+<p>$$
+L(ab) = L(a)\,b , \qquad R(ab) = a\,R(b) , \qquad a\,L(b) = R(a)\,b \qquad \text{for all } a,b \in A .
+$$</p>
+<p>The set of double centralisers is written $M(A)$, the <strong>multiplier algebra</strong> of $A$.</p>
+<p><strong>Proposition (the algebra structure).</strong> With the operations</p>
+<p>$$
+(L_1,R_1) + (L_2,R_2) = (L_1 + L_2,\,R_1 + R_2) , \qquad (L_1,R_1)(L_2,R_2) = (L_1L_2,\,R_2R_1) , \qquad \lambda(L,R) = (\lambda L,\,\lambda R) ,
+$$</p>
+<p>the set $M(A)$ is a unital associative algebra with identity $(\mathrm{id},\mathrm{id})$, and the two components determine each other on an algebra with $A^2 = A$.</p>
+<p><strong>Proof.</strong> The sum of two double centralisers is a double centraliser, and the product $(L_1L_2,R_2R_1)$ is one: $L_1L_2(ab) = L_1(L_2(a)b) = L_1L_2(a)b$, $R_2R_1(ab) = aR_2R_1(b)$, and $aL_1L_2(b) = aL_1(L_2(b))$ while $R_2R_1(a)b = R_2(R_1(a))b$; the two agree by the centralising relations applied twice. Associativity is the associativity of composition, and $(\mathrm{id},\mathrm{id})$ is the identity. The components determine each other when $A^2 = A$ because $aL(b) = R(a)b$ for all $a,b$ forces $L$ to determine $R$ on the ideal $A^2$ and $R$ to determine $L$. $\square$</p>
+<p><strong>Theorem ($M(A)$ is a Banach algebra).</strong> Give $M(A)$ the norm</p>
+<p>$$
+\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\} ,
+$$</p>
+<p>where $\lVert L\rVert,\lVert R\rVert$ are the operator norms. Then $M(A)$ is a unital Banach algebra under the product above, the maps $(L,R) \mapsto L$ and $(L,R) \mapsto R$ are contractions, and $\lVert(L,R)\rVert = \lVert L\rVert = \lVert R\rVert$ on the double centralisers of a faithful algebra.</p>
+<p><strong>Proof.</strong> The norm is a norm because it is the max of two norms, and it is submultiplicative: $\lVert L_1L_2\rVert \leq \lVert L_1\rVert\lVert L_2\rVert$ and $\lVert R_2R_1\rVert \leq \lVert R_2\rVert\lVert R_1\rVert$, so $\lVert(L_1,R_1)(L_2,R_2)\rVert \leq \lVert(L_1,R_1)\rVert\lVert(L_2,R_2)\rVert$. Completeness: a Cauchy sequence of double centralisers has Cauchy components in the complete spaces $B(A)$, with limits $L,R$; the defining relations pass to the limit by continuity of the products, so the limit is a double centraliser, and the norm converges. The identity has norm one. The equality of the norms on a faithful algebra is the standard consequence of $aL(b) = R(a)b$. $\square$</p>
+<p><strong>Proposition (the canonical embedding).</strong> The map</p>
+<p>$$
+\iota : A \longrightarrow M(A) , \qquad \iota(a) = (L_a,R_a) ,
+$$</p>
+<p>is an isometric algebra homomorphism when $A$ is unital and a bounded algebra homomorphism in general, with image $\iota(A)$ a two-sided ideal of $M(A)$; it is injective on a faithful algebra and, in particular, on a unital one. The identity of $M(A)$ lies in $\iota(A)$ exactly when $A$ is unital, and then $\iota$ is onto.</p>
+<p><strong>Proof.</strong> $(L_a,R_a)$ is a double centraliser by <em>Operators on a Banach Algebra</em>, and $\iota(ab) = (L_{ab},R_{ab}) = (L_aL_b,R_bR_a) = \iota(a)\iota(b)$ by the composition laws, so $\iota$ is a homomorphism. On a unital algebra $\lVert L_a\rVert = \lVert R_a\rVert = \lVert a\rVert$, giving the isometry, and $\iota$ is onto by the unital identification of the multipliers. That $\iota(A)$ is an ideal: for a double centraliser $(L,R)$ and $a \in A$, $(L,R)(L_a,R_a) = (LL_a, R_aR)$, and $LL_a = L_{L(a)}$, $R_aR = R_{R(a)}$ by the multiplier identities, so the product lies in $\iota(A)$, and likewise on the left. $\square$</p>
+<p><strong>Corollary (the unital case).</strong> If $A$ is unital then $M(A) = \iota(A) \cong A$, the multiplier algebra is the algebra itself, and the construction adds nothing. The multipliers are genuinely new only for a non-unital algebra.</p>
+<p><strong>Proof.</strong> On a unital algebra every left multiplier is $L_{L(1)}$ and every right multiplier is $R_{R(1)}$, and the centralising relation forces $L(1) = R(1)$; hence every double centraliser is $\iota(c)$ with $c = L(1)$, and $\iota$ is a bijection. $\square$</p>
+<h2 id="the-multiplier-algebra">The Multiplier Algebra</h2>
+<p><strong>Theorem (the multiplier algebra is unital with essential ideal $A$).</strong> Let $A$ be a Banach algebra with $A^2 = A$ (in particular a non-unital algebra with a bounded approximate identity). Then $\iota(A)$ is a two-sided ideal of $M(A)$ with $\iota(A)^2 = \iota(A)$, the algebra $M(A)$ is unital, and $\iota(A)$ is <strong>essential</strong>: a double centraliser $(L,R)$ with $(L,R)\iota(A) = 0$ is zero, and the same on the other side.</p>
+<p><strong>Proof.</strong> $\iota(A)$ is an ideal by the proposition, and it is essential because $(L,R)\iota(a) = 0$ for all $a$ gives $(LL_a, R_aR) = 0$, so $LL_a = 0$ for all $a$ and $L = 0$ on $A^2 = A$, that is $L = 0$; then $R = 0$ by the centralising relation on a faithful algebra. The unit is $(\mathrm{id},\mathrm{id})$. $\square$</p>
+<p><strong>Theorem (the multiplier algebra as the double centraliser algebra).</strong> Let $A$ be a unital Banach algebra and let $\lambda(A)$ and $\rho(A)$ be the two regular representations in $B(A)$. Then the double centraliser algebra of the pair $(\lambda(A),\rho(A))$ is $\lambda(A)' = \rho(A)$ and $\rho(A)' = \lambda(A)$, and $M(A) = \iota(A)$. In the non-unital case, if the algebra is faithful and has a bounded approximate identity, then</p>
+<p>$$
+M(A) \cong \{\,T \in B(A) : T\lambda(A) \subseteq \lambda(A),\ \lambda(A)T \subseteq \lambda(A),\ T\rho(A) \subseteq \rho(A),\ \rho(A)T \subseteq \rho(A)\,\} ,
+$$</p>
+<p>the operators normalising both regular representations, and the isomorphism pairs $T$ with the double centraliser of the two inclusions.</p>
+<p><strong>Proof.</strong> The centraliser identities in the unital case are <em>Left and Right Multiplication in a Banach Algebra</em>, and the identification with $\iota(A)$ is the corollary above. In the non-unital case a double centraliser $(L,R)$ defines, through the inclusions $L\lambda(a) = \lambda(L(a))$ and $\rho(a)R = \rho(R(a))$, an operator normalising both families, and conversely such an operator gives a double centraliser by its actions; the correspondence is bijective on a faithful algebra with an approximate identity. $\square$</p>
+<p><strong>Remark (the boundary).</strong> The identification of the multiplier algebra with the operators normalising the regular representations is the operator form of the double centraliser theorem; the abstract form is in <em>Left and Right Multiplication in a Banach Algebra</em>. The multiplier algebra of a $\mathrm{C}^*$-algebra is again a $\mathrm{C}^*$-algebra, and the multiplier algebra of a Hilbert $\mathrm{C}^*$-module is the source of the strongly continuous strict topology, both owned by the involutive groups of this category and by <em>Operator Algebras</em>.</p>
+<h2 id="the-strict-topology">The Strict Topology</h2>
+<p><strong>Definition.</strong> The <strong>strict topology</strong> on $M(A)$ is the locally convex topology generated by the seminorms</p>
+<p>$$
+(L,R) \longmapsto \lVert L(a)\rVert , \qquad (L,R) \longmapsto \lVert R(a)\rVert , \qquad a \in A .
+$$</p>
+<p>The <strong>strict topology</strong> on $A$ is the topology generated by the seminorms $x \mapsto \lVert ax\rVert$ and $x \mapsto \lVert xa\rVert$ for $a \in A$, pulled back along $\iota$.</p>
+<p><strong>Proposition (the strict topology is well defined and the multiplications are strictly continuous).</strong> The family of seminorms above separates the points of $M(A)$ on a faithful algebra with $A^2 = A$, so the strict topology is Hausdorff; for each fixed $a$ the maps $(L,R) \mapsto L(a)$ and $(L,R) \mapsto R(a)$ are strictly continuous, and the product of $M(A)$ is strictly continuous in each variable separately.</p>
+<p><strong>Proof.</strong> If all seminorms vanish then $L(a) = 0$ for every $a$, so $L = 0$, and $R = 0$ by faithfulness; hence the topology is Hausdorff. Continuity of evaluation is the definition of the seminorms. For the product in the first variable: $((L_1,R_1)(L,R))(a) = L_1L(a) = L_1(L(a))$, which depends strictly continuously on $(L,R)$ through $L(a)$ and then on $L_1$ through its value at $L(a)$; the second variable is the mirror. $\square$</p>
+<p><strong>Theorem ($A$ is strictly dense in $M(A)$).</strong> Let $A$ be a Banach algebra with a bounded approximate identity $(u_\lambda)$. Then $\iota(A)$ is dense in $M(A)$ in the strict topology, and $M(A)$ is complete in the strict topology; consequently $M(A)$ is the strict completion of $A$ and the identity of $M(A)$ is the strict limit of the approximate identity.</p>
+<p><strong>Proof.</strong> For a double centraliser $(L,R)$ and $a \in A$ one has $L(u_\lambda a) = L(u_\lambda)a \to L(a)$ and $L(u_\lambda)$ is a bounded net in $A$, so $\iota(L(u_\lambda)) \to (L,R)$ in the seminorms generated by $L$, using the boundedness of $L$; the right component is handled by $R(u_\lambda)$. Hence $\iota(A)$ is strictly dense. Completeness is the standard statement that a strict Cauchy net has strictly convergent left and right components by completeness of $B(A)$ and the boundedness of the approximate identity; the limit double centraliser is $(L,R)$, and the identity is the limit of $\iota(u_\lambda)$. $\square$</p>
+<p><strong>Corollary (the strict topology and the norm topology).</strong> The strict topology is coarser than the norm topology on $M(A)$, and it agrees with the norm topology on a unital algebra; on the unit ball of $M(A)$ the strict topology is the topology of pointwise convergence on the image of $\iota$, and the closed unit ball is strictly bounded but need not be strictly compact.</p>
+<p><strong>Proof.</strong> The seminorms are dominated by the norm, since $\lVert L(a)\rVert \leq \lVert L\rVert\lVert a\rVert$, so strict is coarser; on a unital algebra $a = 1$ gives $\lVert L\rVert \leq \lVert L(1)\rVert$ and the two topologies agree. The ball statement is the definition of the seminorms. $\square$</p>
+<p><strong>Remark (bounded approximate identities).</strong> The existence of a bounded approximate identity is a hypothesis, not automatic for a Banach algebra; it holds for $c_0$, for $K(H)$, for $C_0(X)$ and for the group algebra $\ell^1(G)$ for an amenable $G$. The strict density theorem is stated under this hypothesis, and the multiplier algebra is defined in general.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($c_0$ and $\ell^\infty$).</strong> Let $A = c_0$ with the sup norm; the approximate identity is the sequence of truncations, which is bounded. Every multiplier of $c_0$ is multiplication by a bounded sequence, so $M(c_0) = \ell^\infty$, the strict topology is the topology of pointwise convergence on the coordinates, and $c_0$ is strictly dense in $\ell^\infty$. The unit of $M(c_0)$ is the constant sequence $1$.</p>
+<p><strong>Example ($K(H)$ and $B(H)$).</strong> Let $A = K(H)$ be the compact operators on an infinite-dimensional Hilbert space. Its multiplier algebra is $M(K(H)) = B(H)$, the bounded operators, with the strict topology the strong-$*$ topology of pointwise convergence; $K(H)$ is strictly dense in $B(H)$, and the unit of $B(H)$ is the strict limit of the finite-rank projections. The double centraliser of $T \in B(H)$ is the pair of left and right multiplication by $T$.</p>
+<p><strong>Example ($C_0(X)$ and $C_b(X)$).</strong> Let $A = C_0(X)$ for a locally compact Hausdorff space $X$, with the sup norm. The multipliers are the multiplication operators by bounded continuous functions, $M(C_0(X)) = C_b(X)$, and the strict topology is that of uniform convergence on compact subsets of $X$; the unitisation of $C_0(X)$ is contained in $C_b(X)$ and is strictly dense.</p>
+<p><strong>Example (the unitisation).</strong> For any Banach algebra $A$, the unitisation $A^\sharp = A \oplus \mathbb{K}$ is a unital Banach algebra containing $A$ as an ideal of codimension one, and $M(A^\sharp) = A^\sharp$; the multiplier algebra of $A$ contains the unitisation when the latter contains $A$ as an essential ideal, and for $A$ with a bounded approximate identity the relation $M(A) = M(A^\sharp)$ holds.</p>
+<h2 id="summary">Summary</h2>
+<p>A double centraliser on a Banach algebra $A$ is a pair $(L,R)$ of bounded operators with $L(ab) = L(a)b$, $R(ab) = aR(b)$ and $aL(b) = R(a)b$; the double centralisers form the multiplier algebra $M(A)$ under the product $(L_1,R_1)(L_2,R_2) = (L_1L_2,R_2R_1)$, a unital Banach algebra for the max norm, in which $A$ embeds by $a \mapsto (L_a,R_a)$ as a two-sided ideal, essential when $A^2 = A$ and faithful. On a unital algebra the embedding is an isomorphism $M(A) \cong A$, and the multipliers are exactly the multiplications; the construction is new only in the non-unital case. The multiplier algebra is the algebra of bounded operators normalising both regular representations, which is the operator form of the double centraliser theorem of <em>Left and Right Multiplication in a Banach Algebra</em>. The strict topology, generated by the seminorms $(L,R) \mapsto \lVert L(a)\rVert$ and $(L,R) \mapsto \lVert R(a)\rVert$, is Hausdorff and coarser than the norm topology and agrees with it in the unital case; when $A$ has a bounded approximate identity, $A$ is strictly dense in $M(A)$, the multiplier algebra is strictly complete, and it is the strict completion of $A$, with the unit as the strict limit of the approximate identity. The multiplier algebra of a $\mathrm{C}^*$-algebra and the strict topology of a Hilbert module are the involutive refinements, owned by the later groups of this category and by <em>Operator Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\lVert\cdot\rVert$</td>
+<td>Banach algebra, not assumed unital; its norm</td>
+</tr>
+<tr>
+<td>$L$, $R$</td>
+<td>Left multiplier $L(ab)=L(a)b$; right multiplier $R(ab)=aR(b)$</td>
+</tr>
+<tr>
+<td>$(L,R)$, $aL(b)=R(a)b$</td>
+<td>A double centraliser</td>
+</tr>
+<tr>
+<td>$M(A)$</td>
+<td>The multiplier algebra of double centralisers</td>
+</tr>
+<tr>
+<td>$(L_1,R_1)(L_2,R_2) = (L_1L_2,R_2R_1)$</td>
+<td>Product in $M(A)$</td>
+</tr>
+<tr>
+<td>$\lVert(L,R)\rVert = \max\{\lVert L\rVert,\lVert R\rVert\}$</td>
+<td>The norm, submultiplicative and complete</td>
+</tr>
+<tr>
+<td>$\iota : a \mapsto (L_a,R_a)$</td>
+<td>The embedding of $A$ as an essential ideal</td>
+</tr>
+<tr>
+<td>$(\mathrm{id},\mathrm{id})$</td>
+<td>The unit of $M(A)$</td>
+</tr>
+<tr>
+<td>$\lVert L(a)\rVert$, $\lVert R(a)\rVert$</td>
+<td>The seminorms of the strict topology</td>
+</tr>
+<tr>
+<td>$x \mapsto \lVert ax\rVert$, $\lVert xa\rVert$</td>
+<td>The strict topology on $A$</td>
+</tr>
+<tr>
+<td>$(u_\lambda)$</td>
+<td>A bounded approximate identity, strictly convergent to the unit</td>
+</tr>
+<tr>
+<td>$A^\sharp = A \oplus \mathbb{K}$</td>
+<td>The unitisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for the multiplier algebra, the double centralisers and the strict topology.</li>
+<li>Ronald Larsen, <em>An Introduction to the Theory of Multipliers</em> (Springer, 1971), for the multiplier algebra of a Banach algebra and its structure.</li>
+<li>Frank F. Bonsall and John Duncan, <em>Complete Normed Algebras</em> (Springer, 1973), for the double centralisers, the approximate identities and the strict topology.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the multiplier algebra of a $\mathrm{C}^*$-algebra and the strict topology in the operator-algebra setting.</li>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the double centraliser theorem and the algebra of the regular representation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

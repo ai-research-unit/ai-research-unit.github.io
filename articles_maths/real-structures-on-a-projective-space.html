@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Structures on a Projective Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-structures-on-a-projective-space"><strong>Real Structures on a Projective Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>real structure</strong> on a projective space over a field with an involution is an involution of the space that conjugates the scalars, and its <strong>real points</strong> are the points it fixes; the structure is the descent datum by which the projective geometry over the larger field is read as the projective geometry over the fixed field. The article develops the structure in the <strong>involution on the elements</strong> layer of this Part: the projective space over a field with an involution carries the antilinear involutions, the real structure is one of them, the real points are its fixed locus, and the fixed descent is the real form of the space. The two signs of the antilinear involution give the two kinds of structure: the involution of the first kind, whose square is the identity and whose fixed locus is a real projective space, and the involution of the second kind, whose square is $-1$ and which has no real point.</p>
+<p>The article develops the antilinear maps and the real structures on a vector space, the induced involution on the projective space and the identification of the real points with the projectivisation of the fixed real form, the two kinds of structure with the empty and the nonempty real locus, the classification of the real structures by the Galois cohomology, and the relation of the real structure to the operator group, where the fixed subgroup of the involution is a real form of the projective group and gives the real Möbius and the real orthogonal and unitary groups.</p>
+<p>The article assumes <em>Field Extensions</em> of Part I for the field with an involution and the Galois theory of the quadratic extension; <em>Real Forms and the Descent of an Algebra</em> of Part I and <em>The Involution on a Complex Vector Space</em>, later in this Part, for the descent and the antilinear involutions; <em>Projective Geometry</em> and <em>Operators on a Projective Space</em> of this Part for the projective space and the operator group; and <em>Vector Spaces</em> of Part I for the real forms of a vector space. The real structures on a complex manifold and the Galois descent of the varieties are <em>Real Structures on a Complex Manifold</em> and <em>Real Structures on Varieties and Galois Descent</em>, later in this Part and in Part II, and the article names them as forward references. No distance and no physics is invoked.</p>
+<h2 id="antilinear-maps-and-real-structures">Antilinear Maps and Real Structures</h2>
+<h3 id="the-antilinear-maps">The Antilinear Maps</h3>
+<p><strong>Definition.</strong> Let $L/K$ be a quadratic extension of fields with the nontrivial Galois element written as a bar, $x \mapsto \bar{x}$, and let $V$ be an $L$-vector space. A map $\sigma : V \to V$ is <strong>antilinear</strong> when it is additive and $\sigma(\lambda x) = \bar{\lambda}\,\sigma(x)$ for every $\lambda \in L$; an antilinear involution is an antilinear map with $\sigma^2 = \mathrm{id}$ up to a scalar, and it is of the <strong>first kind</strong> when $\sigma^2 = \mathrm{id}$ and of the <strong>second kind</strong> when $\sigma^2 = -\mathrm{id}$.</p>
+<p><strong>Definition.</strong> A <strong>real structure</strong> on $V$ is an antilinear involution of the first kind,</p>
+<p>$$
+\sigma : V \to V, \qquad \sigma(\lambda x) = \bar{\lambda}\,\sigma(x), \qquad \sigma^2 = \mathrm{id} ;
+$$</p>
+<p>the <strong>real form</strong> of $V$ is the fixed space</p>
+<p>$$
+V^{\sigma} = \{x \in V : \sigma(x) = x\} ,
+$$</p>
+<p>a vector space over the fixed field $K$, and the pair $(V,\sigma)$ is the <strong>descent datum</strong> of the $K$-vector space $V^\sigma$ over $L$.</p>
+<p><strong>Proposition.</strong> Let $\sigma$ be a real structure on $V$. Then $V^\sigma$ is a $K$-subspace of $V$ with</p>
+<p>$$
+V = V^\sigma \otimes_K L , \qquad \dim_K V^\sigma = \dim_L V ,
+$$</p>
+<p>the inclusion and the scalar extension giving the isomorphism; the assignment $W \mapsto W^\sigma$ is an equivalence between the real structures on the $L$-spaces and the $K$-spaces, the inverse sending a $K$-space $U$ to $U \otimes_K L$ with the involution $u \otimes \lambda \mapsto u \otimes \bar{\lambda}$; and every $x \in V$ is written uniquely as $x = y + i z$ with $y, z \in V^\sigma$ when $L = K(i)$ is a quadratic extension with the element $i$ of square in $K$.</p>
+<p><strong>Proof.</strong> A vector of $V$ fixed by $\sigma$ is determined by its coordinates in a basis, and the fixed space is a $K$-subspace because $\sigma$ is additive and $K$-linear on the fixed scalars; the $L$-span of $V^\sigma$ is $V$ because $x + \sigma(x)$ and $(x - \sigma(x))/i$ lie in $V^\sigma$ and reconstruct $x$, and the decomposition is unique; the equivalence with the $K$-spaces is the standard Galois descent. The statement is in <em>Real Forms and the Descent of an Algebra</em> and in the Galois theory of <em>Field Extensions</em>.</p>
+<p><strong>Remark (the second kind).</strong> When $\sigma^2 = -1$ the fixed space is zero over $K$, and the structure is not a descent to a real form but a <strong>quaternionic structure</strong>: the pair $(V,\sigma)$ is a module over the division algebra of the elements $a + b\sigma$, which is a quaternion algebra over $K$; the antilinear involution of the second kind corresponds to the quaternionic structure of the space, and it has no fixed vector in the projective space. The two kinds are separated by the sign of the square of the involution, and the article treats both.</p>
+<h2 id="the-involution-on-the-projective-space">The Involution on the Projective Space</h2>
+<h3 id="the-induced-involution">The Induced Involution</h3>
+<p><strong>Definition.</strong> Let $V$ be an $L$-vector space with a real structure $\sigma$. The <strong>induced involution</strong> on the projective space is the map</p>
+<p>$$
+[\sigma] : \mathbb{P}(V) \longrightarrow \mathbb{P}(V), \qquad [\sigma]([v]) = [\sigma(v)] ,
+$$</p>
+<p>which is well defined because $\sigma(\lambda v) = \bar{\lambda}\sigma(v)$ represents the same point as $\sigma(v)$; it is an involution of the first kind on $\mathbb{P}(V)$ when $\sigma^2 = \mathrm{id}$, and an involution of the second kind without fixed points when $\sigma^2 = -\mathrm{id}$. The induced involution is <strong>antiholomorphic</strong> in the complex case, and it is the <strong>real structure</strong> of the projective space.</p>
+<p><strong>Proposition.</strong> The induced involution is well defined, it satisfies $[\sigma]^2 = \mathrm{id}$ in the first kind, and it preserves the incidence and the projective subspaces, carrying a subspace $\mathbb{P}(W)$ to $\mathbb{P}(\sigma(W))$; the real structures on $V$ and on $\mathbb{P}(V)$ are in bijection up to the scalars, and the induced involution determines the real structure of $V$ up to a scalar.</p>
+<p><strong>Proof.</strong> The well-definedness is the computation $[\sigma(\lambda v)] = [\bar\lambda \sigma(v)] = [\sigma(v)]$; the incidence is preserved because $\sigma$ is additive and semilinear, carrying the linear subspaces to the linear subspaces; the bijection is the statement that the antilinear maps of $V$ differing by a scalar induce the same projective map, and the inverse is the choice of a lift. The statement is the projective form of the descent, in <em>Projective Geometry</em>.</p>
+<h3 id="the-real-points">The Real Points</h3>
+<p><strong>Theorem.</strong> Let $\sigma$ be a real structure on $V$ of the first kind. Then the fixed points of the induced involution are exactly the projectivisation of the real form,</p>
+<p>$$
+\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^{\sigma}) ,
+$$</p>
+<p>and the fixed locus is a projective space over the fixed field $K$ of the same dimension as $\mathbb{P}(V)$; for $L = \mathbb{C}$ and $K = \mathbb{R}$ the real points of $\mathbb{P}^n(\mathbb{C})$ with the standard structure are the real projective space $\mathbb{P}^n(\mathbb{R})$.</p>
+<p><strong>Proof.</strong> A point $[v]$ is fixed by $[\sigma]$ exactly when $\sigma(v) = \lambda v$ for a scalar; applying $\sigma$ again gives $v = \bar\lambda \lambda v$, so $|\lambda| = 1$ in the complex case, and rescaling $v$ by a square root of $\lambda$ makes $\sigma(v) = v$, so the fixed points are the points of the real form; the converse is immediate. The statement is the standard real locus of the conjugation, in <em>Projective Geometry</em> and <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<p><strong>Theorem (the second kind has no real points).</strong> Let $\sigma$ be an antilinear involution of the second kind, $\sigma^2 = -\mathrm{id}$. Then the induced involution has no fixed point in $\mathbb{P}(V)$: a point with $[\sigma]([v]) = [v]$ would give $\sigma(v) = \lambda v$ and $\sigma^2(v) = \bar\lambda \lambda v = -v$, forcing $|\lambda|^2 = -1$ and $\lambda$ in the field of the appropriate sign, with no solution over the real or the complex field. The real locus of the projective space with a quaternionic structure is empty.</p>
+<p><strong>Proof.</strong> The eigenvalue equation of the antilinear map is $\sigma(v) = \lambda v$; the square gives $\sigma^2(v) = \bar\lambda\lambda v = |\lambda|^2 v$, and the second kind demands $|\lambda|^2 = -1$, which has no solution over $\mathbb{R}$ or $\mathbb{C}$; hence no eigenvector and no fixed projective point. The statement is the standard absence of the real points for the quaternionic structure, in <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<h2 id="the-classification-of-the-real-structures">The Classification of the Real Structures</h2>
+<p><strong>Definition.</strong> Two real structures $\sigma$ and $\sigma'$ on $V$ are <strong>equivalent</strong> when there is a linear automorphism $A \in GL(V)$ with $\sigma' = A\sigma A^{-1}$, and the real structures on $\mathbb{P}(V)$ are equivalent when the corresponding involutions of the projective space are conjugate by an element of the projective group $PGL(V)$; the equivalence classes are the <strong>real forms</strong> of the projective space.</p>
+<p><strong>Theorem.</strong> Let $L/K$ be a quadratic extension and $V$ an $L$-vector space of dimension $n+1$. Then the real structures of the first kind on $\mathbb{P}(V)$ form a single equivalence class under $PGL(V)$, and the real structures of the second kind form a single class when they exist; the two classes are distinguished by the existence of the real points, and the stabiliser of a real structure is the projective group of the real form, a real form of $PGL(V)$.</p>
+<p><strong>Proof.</strong> Two real forms of $V$ of the same dimension are isomorphic as $K$-vector spaces, and an isomorphism extends to an $L$-linear automorphism carrying one real structure to the other, so the first-kind structures are conjugate; for the second kind the same argument applies to the quaternion modules. The stabiliser is the group of the $K$-linear automorphisms of the real form, which is the fixed subgroup of the involution on $PGL(V)$, and it is a real form in the sense of the Galois descent. The statement is the Galois descent of the projective group, in <em>Real Forms and the Descent of an Algebra</em>.</p>
+<p><strong>Remark (the Galois cohomology).</strong> The real forms of the projective space are the elements of the first Galois cohomology set $H^1(\operatorname{Gal}(L/K), PGL_{n+1}(L))$, and the theorem above is the statement that the two kinds of structure correspond to the two classes of the cohomology for the quadratic extension; the real forms of the classical groups are the same computation for the other groups, and they are <em>Real Forms of a Complex Lie Group and the Cartan Involution</em> of Part III and the theory of the classical groups. The article keeps the projective case and names the general theory.</p>
+<h2 id="the-fixed-subgroup-and-the-operator-group">The Fixed Subgroup and the Operator Group</h2>
+<p><strong>Definition.</strong> Let $\sigma$ be a real structure on $V$ of the first kind and let $[\sigma]$ be the induced involution on $\mathbb{P}(V)$. The <strong>fixed subgroup</strong> of the operator group is</p>
+<p>$$
+PGL(V)^{[\sigma]} = \{g \in PGL(V) : [\sigma]\,g\,[\sigma] = g\} ,
+$$</p>
+<p>the group of the projectivities commuting with the real structure; it is the projective group of the real form $V^\sigma$, and its elements are the real projectivities of the real projective space.</p>
+<p><strong>Proposition.</strong> The fixed subgroup of the involution $[\sigma]$ on $PGL(V)$ is the projective general linear group of the real form, $PGL(V^\sigma) = PGL_{n+1}(K)$, and the real structures on the operator group are the fixed subgroups of the antilinear involutions; for $L = \mathbb{C}$ and $K = \mathbb{R}$ the real Möbius group $PSL(2,\mathbb{R})$ of <em>The Involution on the Möbius Operators</em>, later in this Part, is the fixed subgroup of the complex conjugation acting on $PSL(2,\mathbb{C})$.</p>
+<p><strong>Proof.</strong> A projectivity commuting with $[\sigma]$ is induced by a linear map $A$ with $A\sigma = \sigma A$ up to a scalar, hence by a map preserving the real form and $K$-linear on it; conversely a real projectivity extends complex-linearly and commutes with the conjugation. The two-dimensional instance is the fixed subgroup of the complex conjugation on $PSL(2,\mathbb{C})$, which is $PSL(2,\mathbb{R})$. The statement is in <em>Real Forms and the Descent of an Algebra</em> and, for the two-dimensional instance, in <em>The Involution on the Möbius Operators</em>, later in this Part.</p>
+<p><strong>Remark (the real geometry).</strong> The fixed points of the real structure are the real points of the projective space, and the fixed subgroup is the operator group of the real points; the geometry of the real points is the real projective geometry, and the complex geometry is recovered by the scalar extension. This is the descent of the geometry along the involution, and it is the geometric form of the descent of the vector space; the article is the projective instance of the general descent of <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A real structure on an $L$-vector space $V$ over a quadratic extension is an antilinear involution $\sigma$, of the first kind when $\sigma^2 = \mathrm{id}$ and of the second kind when $\sigma^2 = -\mathrm{id}$; the fixed space $V^\sigma$ is a $K$-vector space with $V = V^\sigma \otimes_K L$, and the assignment is the Galois descent. The induced involution $[\sigma]([v]) = [\sigma(v)]$ is well defined on the projective space, it preserves the incidence, and its fixed locus is exactly the projectivisation of the real form, $\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^\sigma)$; for $\mathbb{C}$ and $\mathbb{R}$ the standard structure has the real projective space $\mathbb{P}^n(\mathbb{R})$ as its real points, while the involution of the second kind, the quaternionic structure, has no real point. The real structures of the first kind form a single equivalence class under the projective group, the stabiliser of one of them is a real form of the projective group, and the classes are the elements of the Galois cohomology of the projective group. The fixed subgroup of the involution on $PGL(V)$ is the projective group of the real form, of which the real Möbius group $PSL(2,\mathbb{R})$ and the real projective groups are the instances, and the descent is the projective case of the general real structure on a variety.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L/K$</td>
+<td>Quadratic extension, bar the nontrivial Galois element</td>
+</tr>
+<tr>
+<td>$\sigma(\lambda x) = \bar\lambda\sigma(x)$</td>
+<td>Antilinear map</td>
+</tr>
+<tr>
+<td>$\sigma^2 = \mathrm{id}$</td>
+<td>Real structure of the first kind</td>
+</tr>
+<tr>
+<td>$\sigma^2 = -\mathrm{id}$</td>
+<td>Involution of the second kind, quaternionic structure</td>
+</tr>
+<tr>
+<td>$V^\sigma$</td>
+<td>Real form, the fixed $K$-subspace</td>
+</tr>
+<tr>
+<td>$V = V^\sigma \otimes_K L$</td>
+<td>Descent datum</td>
+</tr>
+<tr>
+<td>$[\sigma]([v]) = [\sigma(v)]$</td>
+<td>Induced involution on $\mathbb{P}(V)$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^\sigma)$</td>
+<td>Real points</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^n(\mathbb{R})$</td>
+<td>Real points of the standard structure on $\mathbb{P}^n(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$PGL(V)^{[\sigma]} = PGL(V^\sigma)$</td>
+<td>Fixed subgroup, the real projective group</td>
+</tr>
+<tr>
+<td>$H^1(\operatorname{Gal}(L/K), PGL(V))$</td>
+<td>Galois cohomology classifying the real forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Galois Cohomology</em> (Springer, 1997), for the descent and the cohomology of the forms.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the algebras with involution and the real forms.</li>
+<li>C. T. C. Wall, "On the classification of Hermitian forms", <em>Compositio Mathematica</em> <strong>23</strong> (1971), 315–321, for the Hermitian forms and the descent.</li>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the Galois descent and the real forms of the varieties.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the real forms of the classical groups and the projective groups.</li>
+<li>Armand Borel and Jacques Tits, "Groupes réductifs", <em>Publications Mathématiques de l'IHÉS</em> <strong>27</strong> (1965), 55–151, for the forms of the algebraic groups and the descent.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

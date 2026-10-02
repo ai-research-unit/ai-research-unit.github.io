@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amphichiral Knots and the Orientation-Reversing Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="amphichiral-knots-and-the-orientation-reversing-involution"><strong>Amphichiral Knots and the Orientation-Reversing Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A knot is <strong>amphichiral</strong> (or <strong>achiral</strong>) when it is isotopic to its mirror image, and <strong>chiral</strong> otherwise. The mirror image is the image of the knot under a reflection of the three-sphere, an orientation-reversing involution with fixed set a two-sphere; so amphichirality is exactly the existence of an orientation-reversing symmetry of the pair $(S^3,K)$. This article treats the symmetry, the invariants that obstruct it, and the standard examples.</p>
+<p>The class of amphichiral knots is small and its members have rigid invariants: the signature vanishes, the Jones and HOMFLY polynomials are symmetric, and the double branched cover carries an involution. The chirality of the trefoil and of every nontrivial torus knot is the oldest application, and the figure-eight knot is the simplest amphichiral knot. The conditions are necessary and, for the classical polynomials, not sufficient; the finer detection is by the quantum and Floer invariants of <em>Floer Homology</em>, written in this Part.</p>
+<p><strong>The article assumes</strong> the knot theory of <em>Knot Theory</em> (the knot group, the Seifert surface, the Alexander and Jones polynomials, the signature and the Arf invariant), the fundamental group and covering spaces, and the structure of involutions of <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
+<p><strong>The boundaries of the article.</strong> The general theory of knots — the group, the Seifert surfaces, the genus, the classical and quantum polynomials, the concordance and the slice genus — is <em>Knot Theory</em>, and is cited; this article owns the symmetry, the mirror and the consequences. The periodic knots and the equivariant invariants are <em>Equivariant Knot Theory</em>, the next article; the link invariants of the three-manifold and the Heegaard–Floer and knot-Floer theories are <em>Floer Homology</em> and <em>Low-Dimensional Topology</em>. The hyperbolic volume, which is a strong chirality detector, is <em>Hyperbolic Geometry</em> and Part IV. No smooth topology of four-manifolds is used, and no physics.</p>
+<h2 id="the-mirror-and-the-symmetry">The Mirror and the Symmetry</h2>
+<p><strong>Definition.</strong> Fix a reflection $r$ of $S^3$ — an orientation-reversing involution whose fixed set is a two-sphere — and let $K\subseteq S^3$ be a knot. The <strong>mirror image</strong> is $K^{*} = r(K)$. The knot is <strong>amphichiral</strong> if $K^{*}$ is isotopic to $K$, and <strong>chiral</strong> otherwise. The <strong>reverse</strong> $-K$ is $K$ with the opposite orientation, and $K$ is <strong>invertible</strong> if $-K$ is isotopic to $K$.</p>
+<p><strong>Proposition (the symmetry formulation).</strong> A knot $K$ is amphichiral if and only if there is an orientation-reversing homeomorphism $h : S^3\to S^3$ with $h(K) = K$. It is invertible if and only if there is an orientation-preserving homeomorphism of the pair reversing the orientation of the knot.</p>
+<p><strong>Proof.</strong> If $h$ reverses the orientation of $S^3$ and preserves $K$, then $h^{-1}\circ r$ is orientation-preserving and carries $r(K) = K^{*}$ to $K$, so $K^{*}$ is isotopic to $K$. Conversely, if $K^{*}$ is isotopic to $K$, the composition of the isotopy with $r$ is an orientation-reversing homeomorphism preserving $K$. The statement about the reverse is the same argument with the orientation of the knot in place of that of the sphere.</p>
+<p><strong>Remark (the four symmetries).</strong> The symmetries of a knot modulo isotopy form a subgroup of the dihedral group of order at most four, generated by the involution "reverse the ambient orientation" (chirality) and the involution "reverse the knot" (invertibility); a knot is <strong>fully amphichiral</strong> when both hold. The <strong>strongly invertible</strong> knots are those admitting an involution of $S^3$ whose fixed set is a circle meeting $K$ in exactly two points, a different and more common symmetry. The symmetry group of a knot is the subgroup of this dihedral group realised by isotopy classes of homeomorphisms of the pair, and its computation is <em>Knot Theory</em> and <em>Low-Dimensional Topology</em>.</p>
+<h2 id="invariants-and-obstructions">Invariants and Obstructions</h2>
+<p><strong>Theorem (the mirror reverses the sign of the signature).</strong> For a knot $K$ with mirror $K^{*}$,
+$$
+\sigma(K^{*}) = -\sigma(K), \qquad \text{whence} \qquad \sigma(K) = 0 \ \text{for an amphichiral } K .
+$$
+More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristram–Levine signatures at a unit $\omega$.</p>
+<p><strong>Proof.</strong> The signature is the signature of the Seifert form $V + V^{t}$; the mirroring changes the sign of the linking form on a Seifert surface, hence negates the Seifert form and its symmetrisation, and the signature changes sign with it. The amphichiral case is immediate.</p>
+<p><strong>Proposition (the polynomial invariants under mirroring).</strong> For a knot $K$ and its mirror:
+$$
+\Delta_{K^{*}}(t) \doteq \Delta_K(t^{-1}), \qquad \nabla_{K^{*}}(z) = \nabla_K(-z), \qquad V_{K^{*}}(t) = V_K(t^{-1}), \qquad P_{K^{*}}(a,z) = P_K(a^{-1},z),
+$$
+where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ the Jones polynomial and $P$ the HOMFLY polynomial, and $\doteq$ denotes equality up to units. Hence an amphichiral knot satisfies $V_K(t) = V_K(t^{-1})$, $P_K(a,z) = P_K(a^{-1},z)$ and $\nabla_K(z) = \nabla_K(-z)$: the Conway polynomial is even and the Jones and HOMFLY polynomials are symmetric in their variable.</p>
+<p><strong>Proof.</strong> Each polynomial is computed from a diagram; a reflection of the diagram replaces every crossing by its mirror and every skein relation by its mirror, which is the substitution $t\mapsto t^{-1}$ (respectively $z\mapsto-z$, $a\mapsto a^{-1}$). The Alexander polynomial is symmetric for every knot by its definition, so the substitution is invisible on it and it gives no obstruction.</p>
+<p><strong>Corollary (the invariants that do not obstruct).</strong> The Alexander polynomial, the determinant, the Arf invariant, the genus, the crossing number and the unknotting number are unchanged by mirroring and therefore give no obstruction to amphichirality; the signature and the polynomials above do. In particular the trefoil is chiral, because $\sigma = \pm2$ and $V(t)\neq V(t^{-1})$.</p>
+<p><strong>Remark (necessary but not sufficient).</strong> The vanishing of the signature and the symmetry of the polynomials are necessary conditions only. There are knots with $\sigma = 0$, symmetric Jones and HOMFLY polynomials and even Conway polynomial that are nevertheless chiral; the detection of such a knot needs a finer invariant — the hyperbolic volume, the knot Floer homology, the Khovanov homology with its mirror-sensitive grading, or the Casson–Walker invariant of the branched cover — and these are <em>Hyperbolic Geometry</em>, <em>Floer Homology</em> and <em>Knot Theory</em> respectively.</p>
+<p><strong>Proposition (finite-type invariants).</strong> The Casson invariant $v_2$ and, more generally, the finite-type invariants of odd degree change sign under mirroring up to the degree parity, so an amphichiral knot has all its finite-type invariants of odd degree equal to zero; the invariants of even degree are mirror-invariant and give no obstruction. The statement is the behaviour of the Vassiliev invariants under the reflection, and it is <em>Knot Theory</em>.</p>
+<h2 id="the-double-branched-cover">The Double Branched Cover</h2>
+<p><strong>Definition.</strong> The <strong>double branched cover</strong> $\Sigma_2(S^3,K)$ is the double cover of $S^3$ branched along $K$; it is a closed oriented three-manifold, and the covering involution $\tau$ is an orientation-preserving involution whose fixed set is the preimage of $K$, a union of circles.</p>
+<p><strong>Theorem (amphichirality as an involution on the cover).</strong> The reflection $r$ of $S^3$ with $r(K) = K^{*}$ lifts, when $K$ is amphichiral, to an orientation-reversing involution of $\Sigma_2(S^3,K)$ commuting with the covering involution; so the double branched cover of an amphichiral knot carries a group of involutions larger than the covering group alone. Conversely, an orientation-reversing involution of the cover normalising the covering involution descends to a symmetry of the pair.</p>
+<p><strong>Proof sketch.</strong> The cover is the quotient of the orientation double cover of $S^3\setminus K$ by the longitude; the reflection acts on the cover by the transport of the local branches, and if it preserves $K$ and reverses the orientation it induces an orientation-reversing involution commuting with the deck transformation. The descent is the passage to the quotient by the deck transformation.</p>
+<p><strong>Corollary (the homology of the cover).</strong> The first homology of $\Sigma_2(S^3,K)$ is computed by the Goeritz matrix and has order the determinant of the knot; the involution induced on the homology by the symmetry constrains the linking form of the branched cover, and the constraint is one of the classical chirality tests for a knot with small determinant. The computation of the linking form and its refinement by the three-manifold invariants are <em>Lens Spaces</em>, <em>Low-Dimensional Topology</em> and <em>Floer Homology</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the figure-eight knot is amphichiral).</strong> The knot $4_1$ is isotopic to its mirror: the standard alternating projection is invariant under the reflection of the plane of the diagram composed with the reversal, and the resulting symmetry realises the amphichirality. Its invariants are consistent: the signature is $0$, $V_{4_1}(t) = t^{-2}-t^{-1}+1-t+t^2$ is symmetric under $t\mapsto t^{-1}$, the Conway polynomial is $1-z^2$, and the Alexander polynomial is $-t+3-t^{-1}$. The figure-eight knot is the simplest amphichiral knot and the only one with four crossings or fewer.</p>
+<p><strong>Example (the trefoil is chiral).</strong> The signature of the trefoil is $\pm2$, so it is chiral; and $V_{3_1}(t) = -t^{-4}+t^{-3}+t^{-1}$ is not symmetric under $t\mapsto t^{-1}$ (the mirror has $V_{3_1}(t^{-1})$, the different polynomial $-t^4+t^3+t$). The same computation shows that the trefoil and its mirror are the two distinct chiral forms.</p>
+<p><strong>Example (the torus knots).</strong> A torus knot $T(p,q)$ has mirror $T(p,q)^{*} = T(p,-q)$; the torus knots are classified by the unordered pair, and $T(p,-q)$ is isotopic to $T(p,q)$ (as an unoriented knot) only when $p = 2q$ and $q = 1$, namely for the unknot. Hence every nontrivial torus knot is chiral, and the clasp knots and the twist knots are chiral or amphichiral according to their symmetry. The examples show that chirality is the generic behaviour and amphichirality the exception.</p>
+<p><strong>Example (the connected sum).</strong> The connected sum of an amphichiral knot with a chiral knot is chiral; the connected sum of two amphichiral knots is amphichiral; and the concordance group of knots contains the chiral classes with the amphichiral ones forming a subgroup. The algebraic structure is <em>Knot Theory</em>, and the same additivity is used by <em>Equivariant Knot Theory</em> for the periodic knots.</p>
+<p><strong>Example (a knot and its reverse).</strong> The trefoil is invertible: it is isotopic to its reverse, while its mirror is the distinct chiral form. The property of being invertible is thus independent of being amphichiral, and the four combinations of the two symmetries all occur; the enumeration of the symmetric knots is by the tables of <em>Knot Theory</em>.</p>
+<h2 id="the-signatures-and-the-orientation-reversing-involution">The Signatures and the Orientation-Reversing Involution</h2>
+<p><strong>Theorem (the signature of an amphichiral knot).</strong> With the standard sign convention in which the mirror negates the signature, $\sigma(K^{*}) = -\sigma(K)$; hence for an amphichiral knot $\sigma(K) = -\sigma(K) = 0$, and the signature is a <strong>chirality obstruction</strong> but never an amphichirality certificate. The figure-eight knot has $\sigma = 0$ and is amphichiral, in agreement.</p>
+<p><strong>Proof.</strong> The signature is the signature of the Goeritz matrix or, equivalently, of the Seifert form symmetrised; the mirror reverses the orientation of the ambient space, and the intersection form of a closed oriented $4$-manifold changes sign under an orientation reversal, so the signature changes sign. For an amphichiral knot the knot and its mirror have the same signature and the two values are opposite, so both vanish.</p>
+<p><strong>Proposition (the Alexander polynomial does not obstruct).</strong> The Alexander polynomial of the mirror is $\Delta_{K^{*}}(t) = \Delta_{K}(t^{-1})$, and every Alexander polynomial is symmetric, $\Delta(t) = t^{-m}\Delta(t^{-1})$ up to units, so the condition $\Delta_{K} = \Delta_{K^{*}}$ is automatic and the Alexander polynomial cannot certify chirality; the same holds for the determinant and the Reidemeister torsion, which are symmetric under the mirror. The examples are the knots whose Alexander polynomials are all the symmetric ones but which are chiral, such as the trefoil and its mirror.</p>
+<p><strong>Proof.</strong> The Alexander polynomial is computed from the Seifert matrix $V$ as $\Delta(t) = \det(V-tV^{\mathsf T})$ up to normalisation; the mirror replaces $V$ by $-V^{\mathsf T}$ or $V^{\mathsf T}$ according to the convention, which inverts $t$ in the determinant, giving the stated relation; the symmetry of the Alexander polynomial is the classical result that the polynomial is palindromic. The determinant $|\Delta(-1)|$ and the torsion are unchanged by $t\mapsto t^{-1}$.</p>
+<h2 id="the-double-branched-cover-and-the-involution">The Double Branched Cover and the Involution</h2>
+<p><strong>Theorem (amphichirality through the cover).</strong> A knot $K$ is amphichiral if and only if the double branched cover $\Sigma_2(K)$ admits an orientation-reversing involution whose quotient is the double branched cover of the mirror; the covering involution is the deck transformation of the double cover, and the amphichirality is the existence of an additional orientation-reversing involution commuting with the deck transformation. In particular the invariants of the cover that are sensitive to the orientation detect the amphichirality.</p>
+<p><strong>Proof sketch.</strong> The double branched cover is the double cover of $S^3$ branched over $K$, and an orientation-reversing homeomorphism of the pair $(S^3,K)$ lifts to the cover, commuting with the deck transformation; conversely the quotient of the lifted involution by the deck transformation descends to the pair. The statement is the standard translation of the symmetry of the knot into the symmetry of the cover, and the invariants of the cover — the linking form, the Reidemeister torsion, the homology with the involution — are the equivariant invariants of the operation.</p>
+<p><strong>Corollary (the lens spaces and the torus knots).</strong> For the torus knot $T(p,q)$ the double branched cover is a lens space, and its amphichirality is read off from the arithmetic condition $q^2\equiv-1$ of <em>Free Involutions and Lens Spaces</em>; the torus knot $T(2,3)$ and its mirror are chiral, while the figure-eight knot, not a torus knot, is amphichiral with the spherical double branched cover. The example ties the knot chirality to the chirality of the lens spaces of the earlier article.</p>
+<h2 id="summary">Summary</h2>
+<p>A knot is amphichiral when it is isotopic to its mirror image, equivalently when the pair admits an orientation-reversing homeomorphism; the reverse of the knot gives the independent notion of invertibility, and the two symmetries together generate a subgroup of the dihedral group of order four. Mirroring negates the signature, so an amphichiral knot has vanishing signature, and it inverts the variable of the Jones and HOMFLY polynomials and changes the sign of the variable of the Conway polynomial, so those polynomials are symmetric; the Alexander polynomial, the determinant, the Arf invariant, the genus, the crossing number and the unknotting number are mirror-invariant and give no obstruction, and the finite-type invariants of odd degree vanish for an amphichiral knot. The conditions are necessary and not sufficient: knots with all the classical invariants symmetric can be chiral, and their chirality is detected by the hyperbolic volume (the geometry of Part IV), the knot Floer homology or the refinements of the branched cover. The figure-eight knot is the simplest amphichiral knot, the trefoil and every nontrivial torus knot are chiral, and the double branched cover of an amphichiral knot carries the extra involution induced by the reflection.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$, $K^{*}$</td>
+<td>a knot and its mirror image under the reflection $r$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the reflection of $S^3$, an orientation-reversing involution with fixed set $S^2$</td>
+</tr>
+<tr>
+<td>$-K$</td>
+<td>the reverse of $K$; $K$ invertible if $-K\simeq K$</td>
+</tr>
+<tr>
+<td>amphichiral, chiral</td>
+<td>$K^{*}\simeq K$, respectively $K^{*}\not\simeq K$</td>
+</tr>
+<tr>
+<td>strongly invertible</td>
+<td>admitting an involution with fixed circle meeting $K$ in two points</td>
+</tr>
+<tr>
+<td>$\sigma(K)$, $\sigma_{\omega}(K)$</td>
+<td>the signature and the Tristram–Levine signatures; $\sigma(K^{*}) = -\sigma(K)$</td>
+</tr>
+<tr>
+<td>$\Delta_K$, $\nabla_K$, $V_K$, $P_K$</td>
+<td>Alexander, Conway, Jones, HOMFLY polynomials</td>
+</tr>
+<tr>
+<td>$V_K(t) = V_K(t^{-1})$, $\nabla_K(z) = \nabla_K(-z)$</td>
+<td>the symmetry conditions for an amphichiral knot</td>
+</tr>
+<tr>
+<td>$\Sigma_2(S^3,K)$</td>
+<td>the double branched cover; its covering involution has fixed set over $K$</td>
+</tr>
+<tr>
+<td>$T(p,q)$</td>
+<td>the torus knot; $T(p,q)^{*} = T(p,-q)$, chiral unless the unknot</td>
+</tr>
+<tr>
+<td>$4_1$</td>
+<td>the figure-eight knot, the simplest amphichiral knot</td>
+</tr>
+<tr>
+<td>$v_2$</td>
+<td>the Casson invariant; one of the odd finite-type invariants vanishing for amphichiral knots</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Dale Rolfsen, <em>Knots and Links</em> (Publish or Perish, 1976), for the mirror images, the symmetries and the tables of knots.</li>
+<li>Gerhard Burde and Heiner Zieschang, <em>Knots</em> (de Gruyter, 2003), for the signature, the Seifert form and the behaviour under mirroring.</li>
+<li>Louis Kauffman, <em>On Knots</em> (Princeton University Press, 1987), for the polynomial invariants and their mirror behaviour.</li>
+<li>Vaughan Jones, "A Polynomial Invariant for Knots via von Neumann Algebras", <em>Bulletin of the American Mathematical Society</em> 12 (1985), 103–111, for the Jones polynomial and the mirror substitution.</li>
+<li>W. B. R. Lickorish, <em>An Introduction to Knot Theory</em> (Springer, 1997), for the Conway polynomial, the Goeritz matrix and the double branched cover.</li>
+<li>Louis Kauffman, "State Models and the Jones Polynomial", <em>Topology</em> 26 (1987), 395–407, for the Tait conjectures and the alternation invariants.</li>
+<li>Peter Ozsváth and Zoltán Szabó, "Knot Floer Homology and the Four-Ball Genus", <em>Annals of Mathematics</em> 159 (2004), 1159–1245, for the Floer-theoretic chirality detection, developed in <em>Floer Homology</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

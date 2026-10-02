@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Operators on a Commutative Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multiplication-operators-on-a-commutative-algebra"><strong>Multiplication Operators on a Commutative Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every element $a$ of an algebra $A$ carries the operator of multiplication by it, $x \mapsto ax$. When $A$ is commutative this single family of operators is closed under composition and under addition, and the assignment $a \mapsto L_a$ is an algebra homomorphism</p>
+<p>$$
+L : A \longrightarrow \operatorname{End}_R(A), \qquad L_a(x) = ax ,
+$$</p>
+<p>whose image is a copy of $A$ inside the ambient operator algebra. This image is the <strong>regular representation</strong> of $A$, and in the commutative case it is the whole story: the left multiplication and the right multiplication by $a$ coincide, the image is its own centralizer, and every derivation of $A$ is read on it as an operator.</p>
+<p>The first purpose of the article is to assemble the multiplication operators and to record their algebra. The second is to read the <strong>Gelfand transform</strong> as an operator. A character of $A$ — a unital algebra homomorphism into the ground ring — is a common eigenvector of the whole family $L(A)$: on it, $L_a$ acts by the scalar the character assigns to $a$. Collecting the scalars over all characters gives the Gelfand transform $a \mapsto (\chi \mapsto \chi(a))$, and the statement that $L_a$ is multiplication by that function is the algebraic content of the transform. The topological reading of the character set — its topology, its compactness, the fact that the transform is an isometry for a norm — belongs to <em>Topological Algebras and the Gelfand Transform</em> in Part II and <em>Banach Algebras</em> in Part III, and is named here only as a forward reference: no distance, no norm and no open set occurs in this article.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is a commutative, associative and unital $R$-algebra. The unital hypothesis is used where an operator is recovered from its value at $1$; it is stated at each such point. The non-commutative case, where $L_a$ and $R_a$ differ, is <em>Left and Right Multiplication in a Ring</em>; the general ambient space of all operators is <em>The Operators on an Algebra</em>; the derivations are <em>Derivations of a Ring</em>, and their commutative-algebra form is the article <em>The Derivations of a Commutative Algebra</em> of this category.</p>
+<h2 id="the-multiplication-operators">The Multiplication Operators</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>multiplication operator</strong> by $a$ is the $R$-linear map</p>
+<p>$$
+L_a : A \longrightarrow A, \qquad L_a(x) = ax .
+$$</p>
+<p>Because $A$ is commutative, $L_a$ is also the right multiplication $x \mapsto xa$, so there is one family and not two. The assignment is $R$-linear in the subscript, and the following identities are immediate from associativity and from the commutativity of $A$.</p>
+<p><strong>Proposition.</strong> For all $a, b \in A$ and $r \in R$,</p>
+<p>$$
+L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A .
+$$</p>
+<p><em>Proof.</em> Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$. $\square$</p>
+<p><strong>Corollary.</strong> The image $L(A) = \{L_a : a \in A\}$ is a commutative subalgebra of $\operatorname{End}_R(A)$ with identity $L_1$, and $L : A \to L(A)$ is a surjective $R$-algebra homomorphism. If $A$ is unital then $L$ is injective, because $L_a = 0$ forces $a = L_a(1) = 0$; hence</p>
+<p>$$
+A \cong L(A)
+$$</p>
+<p>as $R$-algebras, and the <strong>regular representation</strong> $L$ is a faithful representation of $A$ by multiplication operators.</p>
+<p>The injectivity is exactly the point at which the unit is used, and it is what makes the regular representation a copy of the algebra rather than a quotient of it. Without a unit the kernel is the annihilator $\{a : aA = 0\}$, which may be nonzero.</p>
+<p><strong>Example.</strong> For $A = R$ the single operator $L_a$ is multiplication by the scalar $a$ in the one-dimensional space $R$, so $L(R) = \operatorname{End}_R(R) \cong R$.</p>
+<p><strong>Example.</strong> For $A = R[x]$, the operator $L_x$ is the shift $x^k \mapsto x^{k+1}$ on the monomial basis and $L_f = f(L_x)$ for a polynomial $f$; the map $L$ is the evaluation $f \mapsto f(L_x)$. Every $L_f$ raises the degree by $\deg f$, so each $L_f$ has no nonzero eigenvalue on the polynomial algebra and has infinite order of growth on the monomials. The operator $L_x$ is the <strong>shift</strong>, and the regular representation is the classical realisation of a polynomial algebra by a shift.</p>
+<h3 id="the-centralizer-and-the-double-centralizer">The Centralizer and the Double Centralizer</h3>
+<p>The multiplication operators are exactly the operators that commute with all of them.</p>
+<p><strong>Theorem.</strong> In $\operatorname{End}_R(A)$, the centralizer of $L(A)$ is $L(A)$ itself:</p>
+<p>$$
+\{T \in \operatorname{End}_R(A) : T L_a = L_a T \ \text{for all } a \in A\} = L(A) .
+$$</p>
+<p>Equivalently, every $A$-linear endomorphism of the regular module $A$ is a multiplication operator, and $A \cong \operatorname{End}_A(A)$.</p>
+<p><em>Proof.</em> An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$. $\square$</p>
+<p><strong>Corollary.</strong> When $A$ is free of finite rank over the field $k$, the subalgebra $L(A)$ is a maximal commutative subalgebra of $\operatorname{End}_k(A)$: it equals its own centralizer and is commutative. The double centralizer theorem for the regular module therefore terminates at the first step.</p>
+<p><strong>Remark.</strong> For a non-commutative algebra the two families $L(A)$ and $R(A)$ are different, they commute with one another, and each is the other's centralizer in the appropriate sense; the coincidence above is peculiar to the commutative case, and it is why one representation suffices here.</p>
+<h2 id="the-interaction-with-derivations">The Interaction with Derivations</h2>
+<p>A derivation of $A$ is intertwined with the multiplication operators in a single identity, and the identity says that a derivation is determined by how it moves the parameters.</p>
+<p><strong>Proposition.</strong> Let $\delta \in \operatorname{Der}_R(A)$ be a derivation, $\delta(ab) = \delta(a)b + a\delta(b)$. Then for every $a \in A$,</p>
+<p>$$
+\delta \circ L_a = L_{\delta(a)} + L_a \circ \delta, \qquad \text{equivalently} \qquad [\delta, L_a] = L_{\delta(a)} .
+$$</p>
+<p><em>Proof.</em> Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$. $\square$</p>
+<p><strong>Corollary.</strong> The $R$-linear map $\operatorname{Der}_R(A) \to L(A)$, $\delta \mapsto L_{\delta(a)}$ for a fixed $a$, is the restriction of the adjoint action of $\operatorname{Der}_R(A)$ on the operator algebra; on the whole of $L(A)$ the derivation acts by $L_b \mapsto L_{\delta(b)}$, and this is the derivation of the commutative algebra $L(A) \cong A$ carried across the isomorphism. In particular the derivation space depends only on the algebra structure of $A$, as it must.</p>
+<p><strong>Example.</strong> For $A = R[x]$ the derivations form the free module $R[x]\partial_x$ of rank one, and $[\partial_x, L_f] = L_{f'}$ where $f' = \partial_x f$ is the formal derivative. The operator identity $[\partial_x, L_f] = L_{f'}$ is the operator form of the product rule.</p>
+<h2 id="characters-and-the-gelfand-transform">Characters and the Gelfand Transform</h2>
+<h3 id="characters">Characters</h3>
+<p><strong>Definition.</strong> A <strong>character</strong> of $A$ over $R$ is a unital $R$-algebra homomorphism $\chi : A \to R$, so that $\chi(1) = 1$, $\chi(a+b) = \chi(a)+\chi(b)$ and $\chi(ab) = \chi(a)\chi(b)$. The <strong>character set</strong> is</p>
+<p>$$
+\mathfrak X(A) = \operatorname{Hom}_{\mathsf{CAlg}_R}(A, R) .
+$$</p>
+<p>It is a set, and it is written here as a set: the topology it carries in the analytic theory is not used.</p>
+<p><strong>Proposition.</strong> Every character is a common eigenvector of the family $L(A)$: for every $a \in A$,</p>
+<p>$$
+\chi \circ L_a = \chi(a)\,\chi ,
+$$</p>
+<p>that is, $\chi$ is a linear functional on $A$ that is an eigenvector of the transposed operator $L_a^{\mathsf T}$ with eigenvalue $\chi(a)$. Equivalently, the ideal $\ker\chi$ is a maximal ideal of $A$ and $A/\ker\chi \cong R$.</p>
+<p><em>Proof.</em> $\chi(L_a x) = \chi(ax) = \chi(a)\chi(x) = \chi(a)\,\chi(x)$; the quotient statement is the first isomorphism theorem for algebras, and $\ker\chi$ is maximal because $A/\ker\chi$ is a subalgebra of the field $R$ (or of $R$ itself) containing $1$. $\square$</p>
+<p>The eigenvalue assigned to $a$ by the character is forced: a character is a multiplicative functional, and the eigenvalues of the family are exactly the values of the characters.</p>
+<p><strong>Proposition (simultaneous triangularisation).</strong> Suppose $A$ is a finitely generated free $R$-module and that the characters separate the elements of $A$, in the sense that $\chi(a) = 0$ for all $\chi$ forces $a = 0$. Then the family $L(A)$ is <strong>simultaneously diagonalisable</strong> in a suitable extension of scalars: there is a basis of $A \otimes_R S$ over a ring $S$ in which every $L_a$ is diagonal, with the diagonal entries the values $\chi(a)$.</p>
+<p><em>Proof.</em> The hypothesis exhibits $A$ as a subalgebra of the algebra of functions $\mathfrak X(A) \to R$ and hence of a product of copies of $R$, one for each character; in the corresponding idempotent decomposition $A \otimes_R S \cong \prod_\chi S$, the operator $L_a$ is multiplication by the scalar $\chi(a)$ in the $\chi$-th coordinate. $\square$</p>
+<p>For a finite-dimensional reduced commutative algebra over an algebraically closed field $k$, the characters are exactly the $k$-algebra homomorphisms into $k$, they separate points, and the proposition reduces to the classical diagonalisation of a commuting family of diagonalisable operators.</p>
+<h3 id="the-gelfand-transform">The Gelfand Transform</h3>
+<p><strong>Definition.</strong> The <strong>Gelfand transform</strong> of $A$ is the map</p>
+<p>$$
+\Gamma : A \longrightarrow \operatorname{Fun}(\mathfrak X(A), R), \qquad \Gamma(a)(\chi) = \chi(a),
+$$</p>
+<p>into the $R$-algebra of functions on the character set with pointwise operations.</p>
+<p><strong>Theorem.</strong> $\Gamma$ is a unital $R$-algebra homomorphism, and under it the multiplication operator $L_a$ becomes multiplication of functions by $\Gamma(a)$:</p>
+<p>$$
+\Gamma(L_a x) = \Gamma(a)\,\Gamma(x), \qquad \text{that is} \qquad \widehat{ax} = \hat a\,\hat x ,
+$$</p>
+<p>where $\hat a = \Gamma(a)$.</p>
+<p><em>Proof.</em> For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$. $\square$</p>
+<p>The kernel of $\Gamma$ is the <strong>Jacobson radical</strong> — the intersection of the maximal ideals, that is, the elements annihilated by every character — and $\Gamma$ is injective exactly when the characters separate points, which is the hypothesis of the triangularisation proposition. For a reduced algebra of finite type over a field the radical vanishes and the transform is injective.</p>
+<p><strong>Remark (what is deferred).</strong> The transform is treated here as an algebraic homomorphism into a ring of functions. Its analytic theory — that when $R = \mathbb{C}$ and $A$ carries a norm the character set becomes a compact space, the transform is an isometry, and it is an isomorphism onto the algebra of continuous functions for a suitable class of algebras — needs the distance of Part II and the limit of Part III. The reader will find it in <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>; nothing of it is used here.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-split-complex-numbers">The Split-Complex Numbers</h3>
+<p>Let $A = \mathbb D = R[x]/(x^2-1)$ over $R = \mathbb R$, with basis $1, j$ and $j^2 = 1$. In this basis</p>
+<p>$$
+L_1 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
+L_j = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
+L_{a+bj} = \begin{pmatrix} a & b \\ b & a \end{pmatrix} ,
+$$</p>
+<p>so $L(A)$ is the algebra of matrices of the form $\binom{a\ b}{b\ a}$, a two-dimensional commutative subalgebra of $M_2(\mathbb R)$. The characters are the two homomorphisms $\chi_\pm$ with $\chi_\pm(j) = \pm 1$, and the eigenvalues of $L_j$ are $1$ and $-1$, so $L_j$ is a reflection, of order two. The Gelfand transform sends $a+bj$ to the pair $(\chi_+,\chi_-) = (a+b, a-b)$, which is the isomorphism $\mathbb D \cong \mathbb R \times \mathbb R$ of the idempotent decomposition.</p>
+<h3 id="a-split-polynomial-algebra">A Split Polynomial Algebra</h3>
+<p>Let $A = k[x]/(f)$ with $f$ monic of degree $n$ splitting into $n$ distinct linear factors over $k$: $f = (x-r_1)\cdots(x-r_n)$. Then $A \cong k^n$ by the Chinese remainder theorem and the characters are the evaluations $\chi_i(x) = r_i$. The multiplication operator $L_x$ is the companion-type matrix acting on the basis $1, x, \dots, x^{n-1}$,</p>
+<p>$$
+L_x = \begin{pmatrix}
+0 & 0 & \cdots & 0 & -c_0 \\
+1 & 0 & \cdots & 0 & -c_1 \\
+0 & 1 & \cdots & 0 & -c_2 \\
+\vdots & & \ddots & & \vdots \\
+0 & 0 & \cdots & 1 & -c_{n-1}
+\end{pmatrix}, \qquad f(x) = x^n + c_{n-1}x^{n-1} + \cdots + c_0 ,
+$$</p>
+<p>and the Cayley–Hamilton theorem is the statement that its characteristic polynomial is $f$. Its eigenvalues are $r_1, \dots, r_n$, the values of the characters, and the Gelfand transform is the diagonalisation by the Vandermonde matrix, which is invertible exactly because the roots are distinct.</p>
+<h3 id="the-trace-pairing">The Trace Pairing</h3>
+<p><strong>Definition.</strong> Let $A$ be free of rank $n$ over $R$. The <strong>trace pairing</strong> is</p>
+<p>$$
+T : A \times A \longrightarrow R, \qquad T(a,b) = \operatorname{tr}(L_{ab}) = \operatorname{tr}(L_a L_b) .
+$$</p>
+<p>It is $R$-bilinear and symmetric, because $L_{ab} = L_aL_b = L_bL_a$ and the trace is symmetric. It satisfies $T(a, 1) = \operatorname{tr}(L_a)$, the <strong>regular trace</strong> of $a$, and it is <strong>associative</strong>,</p>
+<p>$$
+T(ab, c) = T(a, bc),
+$$</p>
+<p>because both sides are $\operatorname{tr}(L_{abc})$. The pairing is the coefficient of $a \mapsto \operatorname{tr}(L_a)$ read as a bilinear form.</p>
+<p><strong>Proposition.</strong> Every multiplication operator is <strong>self-adjoint</strong> for the trace pairing:</p>
+<p>$$
+T(L_a x, y) = T(x, L_a y) \qquad \text{for all } a, x, y \in A .
+$$</p>
+<p><em>Proof.</em> $T(L_a x, y) = \operatorname{tr}(L_{(ax)y}) = \operatorname{tr}(L_{a(xy)}) = T(x, ay) = T(x, L_a y)$, using associativity of $A$ in the middle. $\square$</p>
+<p><strong>Corollary.</strong> The family $L(A)$ is a commutative subalgebra of the space of operators self-adjoint for $T$. When $T$ is non-degenerate the adjoint operation makes $\operatorname{End}_R(A)$ an algebra with an involution, and $L(A)$ lies in its self-adjoint part; the involution is developed in the <code>* Operator Theory</code> group of this category, where the pairing and the adjoint are read with the involution of the elements.</p>
+<p><strong>Example.</strong> For $A = k^n$ the multiplication operator $L_a$ with $a = (a_1, \dots, a_n)$ is the diagonal matrix $\operatorname{diag}(a_1, \dots, a_n)$, and $T(a,b) = \sum_i a_i b_i$; the trace pairing is the standard bilinear form on $k^n$. For $A = \mathbb D$ above, $T(a+bj, c+dj) = 2(ac+bd)$ by the matrix form of $L$, the factor $2$ being the rank.</p>
+<h2 id="summary">Summary</h2>
+<p>For a commutative unital $R$-algebra $A$, the <strong>multiplication operators</strong> $L_a(x) = ax$ satisfy $L_{ab} = L_aL_b = L_bL_a$ and $L_{a+b} = L_a + L_b$, so $L : A \to \operatorname{End}_R(A)$ is a faithful $R$-algebra homomorphism; its image is the <strong>regular representation</strong> $L(A)$, a commutative subalgebra isomorphic to $A$. The family is its own centralizer in the operator algebra: every operator commuting with all $L_a$ is a multiplication operator, which is the statement $\operatorname{End}_A(A) \cong A$ for the regular module. A derivation interacts with the family by $[\delta, L_a] = L_{\delta(a)}$.</p>
+<p>The <strong>characters</strong> of $A$ are the unital homomorphisms $\chi : A \to R$, and each is a common eigenvector of the family, with $\chi \circ L_a = \chi(a)\chi$. Collecting the eigenvalues gives the <strong>Gelfand transform</strong> $\Gamma(a)(\chi) = \chi(a)$, a unital algebra homomorphism into the algebra of functions on the character set, under which $L_a$ is multiplication of functions by $\hat a$. The transform is injective exactly when the characters separate points, and its kernel is the Jacobson radical. The topological and analytic theory of the transform — the compact character space, the norm, the isometry — needs the distance of Part II and the limit of Part III and is deferred to <em>Topological Algebras and the Gelfand Transform</em> and <em>Banach Algebras</em>. The trace pairing $T(a,b) = \operatorname{tr}(L_a L_b)$ is symmetric and associative, and every multiplication operator is self-adjoint for it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>Commutative unital associative $R$-algebra</td>
+</tr>
+<tr>
+<td>$L_a$, $L_a(x) = ax$</td>
+<td>Multiplication operator by $a$</td>
+</tr>
+<tr>
+<td>$L : A \to \operatorname{End}_R(A)$</td>
+<td>The regular representation</td>
+</tr>
+<tr>
+<td>$L(A)$</td>
+<td>Image of $L$, a commutative subalgebra of $\operatorname{End}_R(A)$</td>
+</tr>
+<tr>
+<td>$[\delta, L_a] = L_{\delta(a)}$</td>
+<td>A derivation acts on the parameters</td>
+</tr>
+<tr>
+<td>$\mathfrak X(A) = \operatorname{Hom}_{\mathsf{CAlg}_R}(A,R)$</td>
+<td>Character set of $A$</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>A character, $\chi(ab) = \chi(a)\chi(b)$, $\chi(1) = 1$</td>
+</tr>
+<tr>
+<td>$\Gamma$, $\hat a = \Gamma(a)$</td>
+<td>Gelfand transform; the function $\chi \mapsto \chi(a)$</td>
+</tr>
+<tr>
+<td>$\ker\Gamma$</td>
+<td>Jacobson radical, the intersection of the maximal ideals</td>
+</tr>
+<tr>
+<td>$T(a,b) = \operatorname{tr}(L_aL_b)$</td>
+<td>Trace pairing; symmetric, associative</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(L_a)$</td>
+<td>Regular trace of $a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Israel M. Gelfand and Mark A. Naimark, "On the imbedding of normed rings into the ring of operators in Hilbert space", <em>Matematicheskii Sbornik</em> 12 (1943), 197–213, for the origin of the Gelfand transform and its spectral reading.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953), for the character space and the algebra of functions.</li>
+<li>Walter Rudin, <em>Functional Analysis</em>, 2nd ed. (McGraw–Hill, 1991), for the commutative Banach-algebra form of the transform, in Part II and Part III.</li>
+<li>Nathan Jacobson, <em>Lectures in Abstract Algebra</em>, Vol. II: <em>Linear Algebra</em> (Van Nostrand, 1953), for the regular representation and the trace form of a finite-dimensional algebra.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em>, 2nd ed. (Springer, 1992), for the regular module, its endomorphism ring and the double centralizer theorem.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for multiplication operators, derivations and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

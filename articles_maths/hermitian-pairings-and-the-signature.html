@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Pairings and the Signature — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-pairings-and-the-signature"><strong>Hermitian Pairings and the Signature</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Hermitian pairing</strong> is a sesquilinear form over a ring with an involution, symmetric or antisymmetric in the appropriate sense; the <strong>signature</strong> is its basic numerical invariant over the reals, and the classification of such pairings up to the addition of hyperbolic forms is the <strong>Witt group</strong>. This article develops the algebra: the $\varepsilon$-Hermitian forms, the Witt group and the signature, the Grothendieck–Witt ring, and the <strong>Wall groups</strong> that arise as the Witt groups of forms over a group ring. It is the algebraic home of the intersection form of <em>Poincaré Duality</em> and of the equivariant form of <em>The Involution on the Homology</em>, and it is the input of the surgery obstruction and of the equivariant signature.</p>
+<p>The vocabulary is needed because the intersection form of a manifold is only the first of a family: the form twisted by a group action, the form over the group ring of the fundamental group, and the $\varepsilon$-quadratic refinements all live in the same framework, and the signature is the universal numerical invariant of the family over the reals. The Wall groups then organise the vanishing of the higher-dimensional forms, and the periodicity of the groups is the algebra behind the dimension-four periodicity of the signature.</p>
+<p><strong>The article assumes</strong> the linear algebra of bilinear and sesquilinear forms over a field or a ring (<em>Bilinear Forms</em>, <em>Linear Spaces</em>), the intersection form and the signature of <em>Poincaré Duality</em>, the group ring and its involution from <em>The Involution as an Operator on the Homology</em>, and the tensor and exterior algebra.</p>
+<p><strong>The boundaries of the article.</strong> The intersection form of a manifold, its signature and the signature theorem are <em>Poincaré Duality</em> and the differential topology of Part III; the equivariant version is <em>Hermitian Pairings and the Equivariant Signature</em>, the next article; the surgery obstruction and the Wall groups as the obstructions of the surgery are <em>Cobordism and Surgery Theory</em>; the analytic index theory of the signature is Part IV. The higher algebraic K-theory and the Hermitian K-theory are named and belong to <em>Higher Algebraic K-Theory</em>, written in Part II of the algebraic topology material. No analysis is used.</p>
+<h2 id="hermitian-and-math2-hermitian-forms">Hermitian and $\varepsilon$-Hermitian Forms</h2>
+<p><strong>Definition.</strong> Let $A$ be a ring with an involution $a\mapsto\bar a$ (an additive map with $\overline{ab} = \bar b\bar a$ and $\bar{\bar a} = a$). A <strong>sesquilinear form</strong> on a left $A$-module $M$ is a biadditive map $\varphi : M\times M\to A$ with $\varphi(ax,by) = a\varphi(x,y)\bar b$; it is <strong>$\varepsilon$-Hermitian</strong> for a central unit $\varepsilon$ with $\bar\varepsilon\varepsilon = 1$ if
+$$
+\varphi(y,x) = \varepsilon\,\overline{\varphi(x,y)} ,
+$$
+and it is <strong>alternating</strong> when in addition $\varphi(x,x) = 0$ and $\varepsilon = -1$. The associated <strong>quadratic refinement</strong> is a function $q : M\to A/\{a-\bar a\}$ with $q(ax) = aq(x)\bar a$ and $q(x+y)-q(x)-q(y) = \varphi(x,y)$, and an <strong>$\varepsilon$-quadratic form</strong> is a pair $(\varphi,q)$.</p>
+<p><strong>Examples.</strong> (a) $A = \mathbb{R}$ with the trivial involution and $\varepsilon = +1$: the symmetric bilinear forms $Q(x,y) = Q(y,x)$. (b) $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$: the Hermitian forms $\varphi(y,x) = \overline{\varphi(x,y)}$. (c) $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ and $\varepsilon = \pm1$: the forms of the surgery theory. (d) The intersection form of a closed oriented $2k$-manifold is symmetric for $k$ even and alternating for $k$ odd, that is, $(-1)^k$-Hermitian over $\mathbb{Z}$ with the trivial involution.</p>
+<p><strong>Proposition (symmetry and the sign).</strong> Over a field $F$ of characteristic not two, every alternating form is skew-symmetric and conversely; a symmetric form has $\varphi(x,x)$ arbitrary and an antisymmetric one has $\varphi(x,x) = 0$. The intersection form of a closed oriented $2k$-manifold is $\varepsilon$-Hermitian with $\varepsilon = (-1)^k$, so the alternating case is the odd middle dimension.</p>
+<p><strong>Proof.</strong> The statements are the definitions and the parity computation of <em>Poincaré Duality</em>: the commutativity of the cup product up to $(-1)^k$ on the middle cohomology gives the sign.</p>
+<p><strong>Definition (nondegeneracy).</strong> A form is <strong>nondegenerate</strong> if the map $M\to M^{*} = \operatorname{Hom}_A(M,A)$, $x\mapsto\varphi(x,-)$, is an isomorphism; a <strong>Lagrangian</strong> is a submodule $L$ with $L = L^{\perp}$; a form is <strong>hyperbolic</strong> if it is nondegenerate and has a Lagrangian.</p>
+<p><strong>Proposition (the hyperbolic form).</strong> For a finitely generated projective $A$-module $P$ the <strong>hyperbolic form</strong> $H(P)$ on $P\oplus P^{*}$ with $\varphi((x,f),(y,g)) = f(y) + \varepsilon\overline{g(x)}$ is nondegenerate and has $P\oplus0$ as a Lagrangian; over a field it is the form $U^{\oplus r}$ with $U = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ for $\varepsilon = +1$ and $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ for $\varepsilon = -1$, and its signature is $0$.</p>
+<p><strong>Proof.</strong> The verification is a direct computation of the form on the summands, and the identification over a field is the change to the standard basis $e,f$; the signature vanishes because the form is hyperbolic.</p>
+<h2 id="the-witt-group-and-the-signature">The Witt Group and the Signature</h2>
+<p><strong>Definition.</strong> The <strong>Witt group</strong> $W^{\varepsilon}(A)$ is the Grothendieck group of the isomorphism classes of nondegenerate $(-1)^k$-forms under the orthogonal direct sum, modulo the subgroup generated by the hyperbolic forms; the <strong>Grothendieck–Witt group</strong> $GW^{\varepsilon}(A)$ is the corresponding group before imposing the hyperbolic relation, and the forgetful map $GW\to K_0(A)$ records the underlying projective module.</p>
+<p><strong>Theorem (the signature over the reals).</strong> Over $A = \mathbb{R}$ with the trivial involution and $\varepsilon = +1$ the signature
+$$
+\sigma(Q) = (\text{number of positive eigenvalues}) - (\text{number of negative eigenvalues})
+$$
+is the complete invariant of a nondegenerate symmetric bilinear form up to orthogonal equivalence (Sylvester's law of inertia), it is additive over orthogonal sums, it vanishes on the hyperbolic forms, and it induces an isomorphism
+$$
+\sigma : W(\mathbb{R})\xrightarrow{\ \cong\ }\mathbb{Z}.
+$$
+For $A = \mathbb{C}$ with complex conjugation and $\varepsilon = +1$ the same statement holds: the signature is the complete invariant of a nondegenerate Hermitian form and $W(\mathbb{C},-)\cong\mathbb{Z}$.</p>
+<p><strong>Proof.</strong> Sylvester's law reduces a form to the diagonal form with $p$ entries $+1$ and $q$ entries $-1$; the hyperbolic forms are those with $p = q$, so the Witt group is generated by the classes of $\langle1\rangle$ and $\langle-1\rangle = -\langle1\rangle$, and the signature is the resulting isomorphism onto $\mathbb{Z}$; the Hermitian case over $\mathbb{C}$ is the same diagonalisation with the conjugate symmetry.</p>
+<p><strong>Proposition (the signature is a ring homomorphism).</strong> The signature is multiplicative under the tensor product of forms and additive under the orthogonal direct sum, so it defines a ring homomorphism from the Witt ring of $\mathbb{R}$ to $\mathbb{Z}$; over an ordered field the same holds, and the signature of the intersection form of a manifold is the topological signature of <em>Poincaré Duality</em>.</p>
+<p><strong>Proof.</strong> The tensor product of diagonal forms is diagonal with the products of the entries, so the signatures multiply; the additivity is the direct sum. The identification with the topological signature is the comparison of the diagonalisation of the intersection form with the definition of the signature.</p>
+<p><strong>Corollary (the signature of a hyperbolic and of an alternating form).</strong> A hyperbolic form has signature zero; an alternating form over $\mathbb{R}$ has a diagonalisation with entries in pairs $\pm1$, so its signature is zero as well, and the intersection form of a closed oriented $4k+2$-manifold has signature zero. This is the first vanishing statement of the theory.</p>
+<p><strong>Proof.</strong> The hyperbolic forms have $p = q$ by the Lagrangian; an alternating form over $\mathbb{R}$ is $\varepsilon = -1$-Hermitian, and the associated symmetric form $x\cdot y\mapsto\varphi(x,Jy)$ (with $J$ the complex structure of the symplectic space) has eigenvalues in pairs $\pm$, so the signature vanishes; the topological case is the intersection form of a $(4k+2)$-manifold, which is alternating.</p>
+<h2 id="the-wall-groups">The Wall Groups</h2>
+<p><strong>Definition.</strong> For a ring with involution $A$ the <strong>Wall groups</strong> $L_n(A)$ are the Witt groups of the $\varepsilon$-quadratic forms on finitely generated free $A$-modules for $n\equiv0,1\pmod4$ (with $\varepsilon = +1$ for $n\equiv0$ and $\varepsilon = -1$ for $n\equiv2$), and the corresponding groups of formations for $n$ odd; they fit into a $4$-periodic sequence
+$$
+L_{n+4}(A)\cong L_n(A).
+$$
+For a group ring $A = \mathbb{Z}[\pi]$ with the involution $g\mapsto g^{-1}$ the groups $L_n(\mathbb{Z}[\pi])$ are the <strong>surgery obstruction groups</strong> of <em>Cobordism and Surgery Theory</em>.</p>
+<p><strong>Theorem (properties of the Wall groups).</strong> The groups $L_n(A)$ are the obstruction groups of the surgery theory: an $n$-dimensional surgery problem with fundamental group $\pi$ has an obstruction in $L_n(\mathbb{Z}[\pi])$, vanishing exactly when the problem can be surgered to a homotopy equivalence for $n\geq5$. The groups are $4$-periodic, the group $L_0(A)$ is the Witt group of the quadratic forms and the group $L_{4k}(\mathbb{Z}[\pi])$ is detected by the signatures of the forms twisted by the representations of $\pi$.</p>
+<p><strong>Proof sketch.</strong> The identification of the surgery obstruction with a Witt class is the content of the surgery classification; the periodicity is the periodicity of the classifying spaces $BSO$ and $BSTOP$ and the algebra of the forms; the detection of $L_{4k}$ by the twisted signatures is the "multisignature" of the next article and the algebraic statement that the signatures form a complete set of invariants over $\mathbb{Q}$. The details are <em>Cobordism and Surgery Theory</em>.</p>
+<p><strong>Example (the trivial group).</strong> For $\pi = 1$ the groups are $L_0(\mathbb{Z})\cong\mathbb{Z}$ (detected by the signature), $L_2(\mathbb{Z})\cong\mathbb{Z}/2$ (detected by the Arf invariant), and $L_1(\mathbb{Z}) = L_3(\mathbb{Z}) = 0$; the corresponding surgery obstructions are the signature and the Arf invariant, the classical invariants of the surgery of simply connected manifolds.</p>
+<p><strong>Remark (the Hermitian K-theory).</strong> The Witt group is the quotient of the Grothendieck–Witt group by the hyperbolic classes, and the higher analogues form the <strong>Hermitian K-theory</strong> $K_*^{h}(A)$ of Karoubi; the forgetful map to the algebraic K-theory and the Bott-type periodicity relate the two. The systematic development and the computations for the group rings are in <em>Higher Algebraic K-Theory</em> and the surgery literature, and the present article uses only the zeroth and the Wall groups.</p>
+<h2 id="the-signature-in-topology">The Signature in Topology</h2>
+<p><strong>Theorem (the signature as a cobordism invariant).</strong> The signature of a closed oriented $4k$-manifold is an invariant of its oriented cobordism class, additive under the disjoint union and multiplicative under the products; it therefore defines a ring homomorphism $\Omega_{4k}\to\mathbb{Z}$ from the oriented cobordism ring, and it factors through the rationalisation $L_{4k}(\mathbb{Z})$ of the Wall group.</p>
+<p><strong>Proof.</strong> The signature is additive over the connected sum and over the cobordism: if $W$ is an oriented $(4k+1)$-manifold with boundary $M_0\sqcup M_1$, the intersection forms of the two boundary components have the same signature because the middle-dimensional form of $W$ provides a "null-cobordism" of the two forms; the additivity and the multiplicativity are the algebra of the direct sums and the tensor products. The factorisation is the comparison of the cobordism invariant with the surgery obstruction.</p>
+<p><strong>Corollary (the Hirzebruch signature theorem, named).</strong> For a closed oriented smooth $4k$-manifold the signature is the evaluation of the $L$-genus,
+$$
+\sigma(M) = \int_M L_k(p_1,\dots,p_k),
+$$
+the Hirzebruch signature theorem; the formula is the analytic and differential-topological computation of the invariant, and it belongs to <em>Smooth Manifolds and Differential Topology</em> and Part IV. The present article uses only the topological invariance.</p>
+<p><strong>Remark (the signature defect).</strong> For a closed oriented $(4k-1)$-manifold the signature of a bounding $4k$-manifold depends on the choice of the bounding manifold through the <strong>signature defect</strong>, an invariant of the boundary which is the $\rho$-invariant of Atiyah–Singer–Patodi; it is a bordism invariant of the boundary and the first of the "secondary" invariants of the theory, and its analytic definition is Part IV, with the topological analogues in <em>Floer Homology</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the intersection form of a four-manifold).</strong> The intersection form of a closed oriented four-manifold is a nondegenerate symmetric form over $\mathbb{Z}$; over $\mathbb{R}$ it is classified by its rank and signature, and the signature is the topological invariant of the previous theorem. The K3 surface with its form $2(-E_8)\oplus3U$ has signature $-16$ and rank $22$, and the $E_8$ form is the standard definite even form whose signature is $-8$; the examples are the recurrences of <em>Poincaré Duality</em>.</p>
+<p><strong>Example (the hyperbolic form of a product).</strong> The intersection form of the product $S^{2k}\times S^{2k}$ has the hyperbolic summand $U$ spanned by the two factors, with the classes of the two spheres as the Lagrangian basis; the form is hyperbolic and the signature is zero. The example is the model of the vanishing of the signature for a product.</p>
+<p><strong>Example (the form of a fibered $4$-manifold).</strong> A closed oriented $4$-manifold fibered over the circle with fiber a $3$-manifold $\Sigma$ has the intersection form determined by the monodromy of the fibration through the "Lefschetz" pairing on $H_1(\Sigma)$; the signature is the signature defect of the fibration and the example is the meeting point with <em>Floer Homology</em> and the mapping tori of <em>Low-Dimensional Topology</em>. The computation is the "Novikov–Lefschetz" formula, and it is the topological source of the $\rho$-invariants.</p>
+<p><strong>Example (the Wall group of the trivial group).</strong> For the trivial group the surgery obstruction group is $L_0(\mathbb{Z})=\mathbb{Z}$ via the signature and $L_2(\mathbb{Z})=\mathbb{Z}/2$ via the Arf invariant; the example shows that the signature is the first and the "odd-dimensional" obstruction the second of the simply connected surgery invariants, and the periodicity $L_{n+4}=L_n$ is visible in the pair.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian pairing over a ring with an involution is a sesquilinear form symmetric up to the sign $\varepsilon$; a nondegenerate form with a Lagrangian is hyperbolic, and the Witt group is the group of isomorphism classes modulo the hyperbolic forms. Over the real and complex numbers the signature is the complete invariant of a symmetric or Hermitian form and identifies the Witt group with $\mathbb{Z}$, and it is additive under the direct sum and multiplicative under the tensor product; the alternating forms have vanishing signature, which is the vanishing of the signature in the middle dimension of a $4k+2$-manifold. The Wall groups $L_n(A)$ are the Witt groups of the quadratic forms and of the formations over $A$, they are $4$-periodic, they are detected in dimension $4k$ by the twisted signatures, and for the group rings they are the surgery obstruction groups. The signature is a cobordism invariant of a closed oriented $4k$-manifold, computed analytically by the Hirzebruch signature theorem, and the signature defect of a boundary is the $\rho$-invariant. The intersection forms of the four-manifolds, the hyperbolic form of a product and the forms of a fibered manifold are the standard examples.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $a\mapsto\bar a$</td>
+<td>a ring with an involution</td>
+</tr>
+<tr>
+<td>$\varepsilon$-Hermitian form $\varphi$</td>
+<td>sesquilinear with $\varphi(y,x) = \varepsilon\overline{\varphi(x,y)}$</td>
+</tr>
+<tr>
+<td>$(1,0)$ alternating case</td>
+<td>$\varepsilon = -1$ with $\varphi(x,x)=0$; the intersection form of a $4k+2$-manifold</td>
+</tr>
+<tr>
+<td>hyperbolic form $H(P)$, $U$</td>
+<td>a nondegenerate form with a Lagrangian $P\oplus0$; $U = \begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$W^{\varepsilon}(A)$, $GW^{\varepsilon}(A)$</td>
+<td>the Witt group and the Grothendieck–Witt group</td>
+</tr>
+<tr>
+<td>$\sigma : W(\mathbb{R})\cong\mathbb{Z}$</td>
+<td>the signature, the complete invariant over $\mathbb{R}$ (Sylvester)</td>
+</tr>
+<tr>
+<td>$L_n(A)$, $L_{n+4}\cong L_n$</td>
+<td>the Wall groups, $4$-periodic; the surgery obstruction groups for $A=\mathbb{Z}[\pi]$</td>
+</tr>
+<tr>
+<td>$L_0(\mathbb{Z})=\mathbb{Z}$, $L_2(\mathbb{Z})=\mathbb{Z}/2$</td>
+<td>the signature and the Arf invariant for the trivial group</td>
+</tr>
+<tr>
+<td>$\Omega_{4k}\to\mathbb{Z}$</td>
+<td>the signature as a cobordism invariant</td>
+</tr>
+<tr>
+<td>$\sigma(M)=\int_M L_k(p_1,\dots,p_k)$</td>
+<td>the Hirzebruch signature theorem (Part III)</td>
+</tr>
+<tr>
+<td>$\rho$-invariant</td>
+<td>the signature defect of a boundary; the secondary invariant (Part IV)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>C. T. C. Wall, "The Classification of Hermitian Forms", <em>Compositio Mathematica</em> 22 (1970), 313–319, and <em>Surgery on Compact Manifolds</em> (Academic Press, 1970), for the Wall groups and the surgery obstruction.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the Witt group, the Grothendieck–Witt group and the quadratic forms over fields.</li>
+<li>Max Karoubi, "Le théorème fondamental de la $K$-théorie hermitienne", <em>Annals of Mathematics</em> 112 (1980), 259–282, for the Hermitian K-theory and its periodicity.</li>
+<li>Friedrich Hirzebruch, <em>Topological Methods in Algebraic Geometry</em> (Springer, 1966), for the signature theorem and the $L$-genus.</li>
+<li>Michael F. Atiyah, Vijay K. Patodi and Isadore M. Singer, "Spectral Asymmetry and Riemannian Geometry II", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> 78 (1975), 405–432, for the $\rho$-invariant and the signature defect, developed in Part IV.</li>
+<li>Jean Milnor and Dale Husemoller, <em>Symmetric Bilinear Forms</em> (Springer, 1973), for the Witt groups, the hyperbolic forms and the classification over the integers and the fields.</li>
+<li>Andrew Ranicki, <em>Algebraic and Geometric Surgery</em> (Oxford University Press, 2002), for the algebraic surgery, the Wall groups and their assembly into the surgery exact sequence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coboundary Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coboundary-operator"><strong>The Coboundary Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>complex of sheaves</strong> on a space $X$ is a sequence of sheaves $\mathcal{F}^i$ and morphisms</p>
+<p>$$
+\cdots\to\mathcal{F}^{i-1}\xrightarrow{\ d^{i-1}\ }\mathcal{F}^{i}\xrightarrow{\ d^{i}\ }\mathcal{F}^{i+1}\to\cdots
+$$</p>
+<p>with $d^i\circ d^{i-1}=0$ for every $i$. The morphisms $d^i$ are the <strong>coboundary operators</strong> of the complex, and the identity $d\circ d=0$ — the <strong>square-zero property</strong> — is what makes the cohomology sheaves $\mathcal{H}^i(\mathcal{F}^\bullet)=\ker d^i/\operatorname{im}d^{i-1}$ defined. The coboundary is the single operator from which every cohomological construction of the category is built: the sheaf cohomology $H^i(X,\mathcal{F})$ is the cohomology of the complex of global sections of an acyclic resolution of $\mathcal{F}$, the Čech groups of <em>Čech Cohomology</em> are the cohomology of a complex of sheaves, and the comparison theorems of <em>Sheaf Cohomology</em> identify these complexes by showing that their coboundaries define the same cohomology.</p>
+<p>This article develops the coboundary operator in the form in which it is used on a space: complexes of sheaves, the square-zero identity and its consequences, the cohomology sheaves and their stalks, the relation to the cohomology of the complex of global sections and to the hypercohomology, and the connecting homomorphism of a short exact sequence of complexes. The general theory of complexes and their derived categories, of spectral sequences and of derived functors is Part I's, in <em>Homological Algebra</em>, <em>Derived Functors</em>, <em>Spectral Sequences</em> and <em>Derived Categories</em>, and it is cited rather than reproduced; the sheaf-theoretic instances are what is developed. The particular complexes attached to the geometry of a space — the Čech complex of a cover, the singular cochain complex, the Godement resolution — have their coboundaries computed in <em>Čech Cohomology</em>, in <em>Sheaf Cohomology</em> and in <em>Simplicial and Singular Homology</em>, and they are cited here rather than recomputed.</p>
+<p>The conventions are those of <em>Presheaves and Sheaves</em> for sheaves and stalks and of <em>Sheaf Cohomology</em> for the cohomology $H^i(X,\mathcal{F})$ and the derived functors. The de Rham complex of a manifold is a complex of sheaves whose coboundary is the exterior derivative; the exterior derivative belongs to <em>Differential Forms and Stokes' Theorem</em> in Part III, and the de Rham complex is developed in <em>Sheaves and the de Rham Complex</em>, so no exterior derivative occurs here. Nothing analytic and nothing geometric is used. Throughout, $(\mathcal{F}^\bullet,d)$ is a complex of sheaves of abelian groups on $X$, or of $\mathcal{O}_X$-modules, bounded below or unbounded as stated, and the differentials are written $d$ when the degree is clear and $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ otherwise.</p>
+<h2 id="complexes-of-sheaves">Complexes of Sheaves</h2>
+<p><strong>Definition.</strong> A <strong>cochain complex of sheaves</strong> on $X$ is a family $(\mathcal{F}^i)_{i\in\mathbb{Z}}$ of sheaves and morphisms $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ with $d^{i+1}d^i=0$ for every $i$. A <strong>morphism of complexes</strong> $\varphi:(\mathcal{F}^\bullet,d)\to(\mathcal{G}^\bullet,e)$ is a family of morphisms $\varphi^i:\mathcal{F}^i\to\mathcal{G}^i$ with $e^i\varphi^i=\varphi^{i+1}d^i$, that is, commuting with the coboundaries; a morphism is a <strong>quasi-isomorphism</strong> if it induces isomorphisms on all the cohomology sheaves defined below.</p>
+<p><strong>Definition.</strong> The <strong>shift</strong> $\mathcal{F}^\bullet[1]$ of a complex is the complex with $(\mathcal{F}^\bullet[1])^i=\mathcal{F}^{i+1}$ and differential $-d^{i+1}$; the iterated shifts $\mathcal{F}^\bullet[k]$ with differential $(-1)^kd$ are defined in the same way. The complexes of sheaves on $X$ and their morphisms form the category $\mathbf{C}(\mathrm{Sh}(X))$, which is additive, and an abelian category when the coefficient category is the category of abelian groups or of modules.</p>
+<p><strong>Definition.</strong> If $\mathcal{F}$ is a single sheaf and $T:\mathcal{F}\to\mathcal{F}$ an operator with $T^2=0$, the pair $(\mathcal{F},T)$ is the <strong>two-term complex</strong> with $\mathcal{F}^0=\mathcal{F}^1=\mathcal{F}$, $d^0=T$ and $d^i=0$ for $i\ne 0$. More generally a <strong>graded sheaf</strong> $\mathcal{F}^\bullet=\bigoplus_i\mathcal{F}^i$ carries the operator $d=\bigoplus_i d^i$ of degree one, and the square-zero property is the single identity $d^2=0$ on the graded sheaf.</p>
+<p><strong>Proposition (the complex is a dg-object).</strong> The data of a complex of sheaves is equivalent to the data of a graded sheaf $\mathcal{F}^\bullet$ with an endomorphism $d$ of degree one and square zero. The morphisms of complexes are the morphisms of graded sheaves commuting with $d$; the shift is the regrading with the signed differential. This is the sheaf-theoretic case of the graded objects of <em>Homological Algebra</em>, and it is recorded so that the operator language and the index language agree.</p>
+<p><em>Proof.</em> The equivalence is the collection of the degree-one components of $d$ into the maps $d^i$; the identity $d^2=0$ collects into $d^{i+1}d^i=0$ for all $i$; and a morphism of graded sheaves respecting $d$ is exactly a family of morphisms commuting with the differentials.</p>
+<h2 id="the-square-zero-property">The Square-Zero Property</h2>
+<p><strong>Proposition (the induced map on cohomology is zero).</strong> If $d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$ is a coboundary of a complex, then $d^i$ carries the cocycles $\ker d^i$ into the coboundaries $\operatorname{im}d^i$, and consequently the map induced by $d^i$ on the cohomology sheaves is zero:</p>
+<p>$$
+d^i(\ker d^i)\subseteq\operatorname{im}d^i,\qquad \mathcal{H}^i(\mathcal{F}^\bullet)\to\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\ \text{induced by}\ d^i\ \text{is}\ 0 .
+$$</p>
+<p><em>Proof.</em> If $s\in\ker d^i$, then $d^i(s)\in\operatorname{im}d^i$ by definition of the image, and $d^i(s)\in\ker d^{i+1}$ because $d^{i+1}d^i=0$; so $d^i(s)$ is a coboundary, and its class in $\mathcal{H}^{i+1}$ is zero.</p>
+<p><strong>Proposition (square zero is a local condition).</strong> For a complex of sheaves the identity $d^2=0$ holds if and only if it holds on every stalk; for a complex of sheaves of $\mathcal{O}_X$-modules it suffices that it hold on the sections over a basis of the topology.</p>
+<p><em>Proof.</em> A morphism of sheaves is zero if and only if its stalk maps are zero, and the composite $d^{i+1}d^i$ is a morphism of sheaves; the second statement is the sheaf condition applied to the morphism $d^{i+1}d^i$ and a basis of the topology.</p>
+<p><strong>Proposition (the concrete complexes).</strong> The coboundary of the Čech complex of a cover in the alternating convention, the singular coboundary of a locally contractible space, and the differential of the Godement resolution all satisfy $d^2=0$; the proofs are the standard cancellations recorded in <em>Čech Cohomology</em>, in <em>Simplicial and Singular Homology</em> and in <em>Sheaf Cohomology</em> respectively. The exterior derivative of the de Rham complex, which is the coboundary of the complex of sheaves of differential forms, satisfies $d^2=0$ by the equality of mixed partial derivatives, and is <em>Sheaves and the de Rham Complex</em> of Part III, cited here and not used.</p>
+<p><em>Proof.</em> The statements are the cited computations; the general mechanism in each case is that $d$ is the alternating sum of face maps, or the transpose of a boundary, and the compositions cancel in pairs. No computation is repeated here.</p>
+<h2 id="the-cohomology-sheaves">The Cohomology Sheaves</h2>
+<p><strong>Definition.</strong> The <strong>cohomology sheaves</strong> of the complex $(\mathcal{F}^\bullet,d)$ are the sheaves</p>
+<p>$$
+\mathcal{H}^i(\mathcal{F}^\bullet)=\ker d^i/\operatorname{im}d^{i-1},
+$$</p>
+<p>the quotient in the abelian category of sheaves; the kernel and the image are the sheaf-theoretic ones of <em>Presheaves and Sheaves</em>, and the quotient is well defined because $\operatorname{im}d^{i-1}\subseteq\ker d^i$ is a subsheaf, by the square-zero property. A complex is <strong>exact</strong> at $\mathcal{F}^i$ if $\mathcal{H}^i(\mathcal{F}^\bullet)=0$, and <strong>exact</strong> if it is exact at every degree; a <strong>resolution</strong> of a sheaf $\mathcal{F}$ is an exact complex with $\mathcal{F}$ in degree zero.</p>
+<p><strong>Proposition (stalks of the cohomology sheaves).</strong> For every $x\in X$ and every $i$,</p>
+<p>$$
+\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x),
+$$</p>
+<p>the cohomology of the complex of stalks; and a morphism of complexes is a quasi-isomorphism if and only if it induces an isomorphism on the complexes of stalks at every point.</p>
+<p><em>Proof.</em> The stalk functor is exact, as recorded in <em>Presheaves and Sheaves</em>, so it commutes with the formation of kernels, images and quotients; applying it to the defining quotient gives the isomorphism, and the second statement is the first applied to the induced maps.</p>
+<p><strong>Corollary (exactness is a local condition).</strong> A complex of sheaves is exact if and only if its complex of stalks at every point is exact; equivalently, if and only if every point has a neighbourhood over which the complex is exact.</p>
+<p><em>Proof.</em> By the proposition $\mathcal{H}^i(\mathcal{F}^\bullet)=0$ if and only if every stalk vanishes, and a sheaf with zero stalks is zero.</p>
+<p><strong>Corollary (the degree-zero cohomology).</strong> $\mathcal{H}^0(\mathcal{F}^\bullet)=\ker d^0$, and if the complex is a resolution of $\mathcal{F}$, then $\mathcal{H}^0(\mathcal{F}^\bullet)\cong\mathcal{F}$ and $\mathcal{H}^i(\mathcal{F}^\bullet)=0$ for $i\ne0$.</p>
+<p><em>Proof.</em> In degree zero there is no incoming differential, so the quotient defining $\mathcal{H}^0$ is $\ker d^0$; exactness in the other degrees is the definition of a resolution.</p>
+<h2 id="global-sections-and-hypercohomology">Global Sections and Hypercohomology</h2>
+<p><strong>Definition.</strong> The <strong>global sections of the complex</strong> are the complex of abelian groups</p>
+<p>$$
+\Gamma(X,\mathcal{F}^\bullet)=\Bigl(\cdots\to\Gamma(X,\mathcal{F}^{i-1})\xrightarrow{\ d^{i-1}\ }\Gamma(X,\mathcal{F}^i)\xrightarrow{\ d^i\ }\Gamma(X,\mathcal{F}^{i+1})\to\cdots\Bigr),
+$$</p>
+<p>whose coboundary is the coboundary of $\mathcal{F}^\bullet$ applied to sections, and whose cohomology is written $H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)$.</p>
+<p><strong>Theorem (the abstract de Rham theorem).</strong> If $(\mathcal{F}^\bullet,d)$ is a resolution of a sheaf $\mathcal{F}$ by acyclic sheaves, $H^j(X,\mathcal{F}^i)=0$ for $j>0$, then there is a natural isomorphism</p>
+<p>$$
+H^i\bigl(\Gamma(X,\mathcal{F}^\bullet)\bigr)\cong H^i(X,\mathcal{F})
+$$</p>
+<p>for every $i$. More generally, any resolution whose complex of sections is effaceable computes the cohomology.</p>
+<p><em>Proof.</em> This is the abstract de Rham theorem of <em>Derived Functors and Sheaf Cohomology</em>, where the effaceability argument is given; it is quoted here as the reason the coboundary of a resolution computes the cohomology of the resolved sheaf.</p>
+<p><strong>Definition.</strong> The <strong>hypercohomology</strong> of a bounded below complex $\mathcal{F}^\bullet$ is</p>
+<p>$$
+\mathbb{H}^i(X,\mathcal{F}^\bullet)=R^i\Gamma(X,\mathcal{F}^\bullet),
+$$</p>
+<p>the right derived functors of global sections applied to the complex, computed by replacing $\mathcal{F}^\bullet$ by a quasi-isomorphic complex of injective sheaves; when $\mathcal{F}^\bullet$ is a resolution of a single sheaf $\mathcal{F}$ in degree zero, $\mathbb{H}^i(X,\mathcal{F}^\bullet)\cong H^i(X,\mathcal{F})$ by the theorem.</p>
+<p><strong>Proposition (the two spectral sequences).</strong> The filtration of the total complex of a bounded below complex by the first and by the second degree gives the two spectral sequences</p>
+<p>$$
+{}^{\mathrm{I}}E_1^{p,q}=H^q\bigl(X,\mathcal{F}^p\bigr)\Longrightarrow\mathbb{H}^{p+q}(X,\mathcal{F}^\bullet),\qquad {}^{\mathrm{II}}E_2^{p,q}=H^p\bigl(X,\mathcal{H}^q(\mathcal{F}^\bullet)\bigr)\Longrightarrow\mathbb{H}^{p+q}(X,\mathcal{F}^\bullet),
+$$</p>
+<p>whose construction is <em>Spectral Sequences</em> and <em>Derived Functors and Sheaf Cohomology</em>; they are recorded here because they express the coboundary of a complex of sheaves in terms of the cohomology of its cohomology sheaves, and they are not used further in this article.</p>
+<h2 id="the-connecting-homomorphism">The Connecting Homomorphism</h2>
+<p><strong>Theorem (the long exact sequence of a short exact sequence of complexes).</strong> A short exact sequence of complexes</p>
+<p>$$
+0\to\mathcal{F}^\bullet\xrightarrow{\ \varphi\ }\mathcal{G}^\bullet\xrightarrow{\ \psi\ }\mathcal{H}^\bullet\to0
+$$</p>
+<p>gives a long exact sequence of cohomology sheaves</p>
+<p>$$
+\cdots\to\mathcal{H}^i(\mathcal{F}^\bullet)\xrightarrow{\ \varphi\ }\mathcal{H}^i(\mathcal{G}^\bullet)\xrightarrow{\ \psi\ }\mathcal{H}^i(\mathcal{H}^\bullet)\xrightarrow{\ \delta\ }\mathcal{H}^{i+1}(\mathcal{F}^\bullet)\to\cdots
+$$</p>
+<p>with connecting morphisms $\delta$ natural in the sequence; applying global sections gives the same long exact sequence for the cohomology $H^i(\Gamma(X,-))$ of the complexes.</p>
+<p><em>Proof.</em> The proof is the snake lemma applied degreewise to the diagram of the two adjacent coboundaries; the connecting map sends the class of a cocycle $h\in\ker d_{\mathcal{H}}^i$ to the class of $d_{\mathcal{G}}^i(\tilde h)$ for a lift $\tilde h$ of $h$, which is a cocycle in $\mathcal{F}^{i+1}$ because $d^2=0$, and which is well defined modulo coboundaries by exactness of the rows. This is the general homological algebra of <em>Homological Algebra</em>, applied to the complexes of sheaves; the instance for the sheaf cohomology of a short exact sequence of a single sheaf is the long exact sequence of <em>Sheaf Cohomology</em>.</p>
+<p><strong>Remark (the coboundary and the connecting map are different operators).</strong> The coboundary $d$ is the differential of the complex and raises the internal degree of the grading; the connecting map $\delta$ is defined only in the presence of a short exact sequence of complexes and shifts the cohomological degree. Both are written with symbols suggesting a boundary, and in the classical complexes of topology the connecting map of the sequence of a pair is the transpose of the coboundary of the quotient complex; the article keeps the two apart, $d$ for the differential and $\delta$ for the connecting map.</p>
+<p><strong>Proposition (functoriality of the coboundary).</strong> A morphism of complexes commutes with the coboundary and induces morphisms $\mathcal{H}^i(\varphi)$ and $H^i(\Gamma(X,\varphi))$ on the cohomology; the inverse image $f^{-1}$ of a continuous map $f$ is exact and carries a complex of sheaves on $Y$ to a complex of sheaves on $X$ with $f^{-1}\mathcal{H}^i(\mathcal{F}^\bullet)=\mathcal{H}^i(f^{-1}\mathcal{F}^\bullet)$, while the direct image $f_*$ carries a complex on $X$ to a complex on $Y$ and commutes with the coboundary degreewise.</p>
+<p><em>Proof.</em> A morphism of complexes is defined by $e\varphi=\varphi d$, which is exactly the compatibility of $\varphi$ with the coboundaries; the induced maps on cohomology exist because $\varphi$ carries cocycles to cocycles and coboundaries to coboundaries, and the functoriality of $f^{-1}$ and $f_*$ makes the coboundary commute with them.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-cech-complex">The Čech Complex</h3>
+<p>The alternating Čech complex of an open cover is a complex of sheaves with coboundary the alternating sum of the restriction maps; the square-zero identity is the cancellation recorded in <em>Čech Cohomology</em>, and the cohomology sheaves of the Čech complex of a cover by acyclic sets are the cohomology sheaves of the coefficient sheaf. The article's general statements apply verbatim to this complex, and the computations belong to <em>Čech Cohomology</em>.</p>
+<h3 id="the-singular-cochain-complex">The Singular Cochain Complex</h3>
+<p>On a locally contractible paracompact space the sheafified singular cochain complex is a complex of sheaves whose coboundary is the singular coboundary applied to the cochain coefficients; its cohomology sheaves are $\underline{A}$ in degree zero and zero above, and its global cohomology is the singular cohomology. The comparison with the constant sheaf is the comparison theorem of <em>Sheaf Cohomology</em>, and the square-zero identity is the standard cancellation of the singular theory.</p>
+<h3 id="a-square-zero-operator-on-a-single-sheaf">A Square-Zero Operator on a Single Sheaf</h3>
+<p>Let $\mathcal{F}$ be a sheaf and let $T:\mathcal{F}\to\mathcal{F}$ be an operator with $T^2=0$, with no grading. Then $T$ defines the two-term complex $0\to\mathcal{F}\xrightarrow{T}\mathcal{F}\to0$ with $\mathcal{H}^0=\ker T$ and $\mathcal{H}^1=\mathcal{F}/\operatorname{im}T$, and the exactness of the complex is the statement $\ker T=\operatorname{im}T$. The example shows that the coboundary operator of a complex with two terms is exactly the square-zero operator on a single sheaf, and that the cohomology sheaves are the kernel and the cokernel of $T$; the operators with $T^2=0$ are the simplest instances of a differential.</p>
+<h3 id="the-mapping-cone">The Mapping Cone</h3>
+<p>For a morphism of complexes $\varphi:\mathcal{F}^\bullet\to\mathcal{G}^\bullet$, the <strong>mapping cone</strong> is the complex with terms $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$ and coboundary $d(g,f)=(dg+\varphi(f),-df)$; the sign $-1$ on the second component is what makes the square of the coboundary vanish, and the resulting long exact sequence is that of the contravariant triangle of $\varphi$. The construction is the standard one of <em>Derived Categories</em> and <em>Homological Algebra</em>; it is recorded here as the basic operation of the operator $d$ on complexes and is not developed.</p>
+<h2 id="summary">Summary</h2>
+<p>A complex of sheaves is a graded sheaf with a degree-one operator $d$ of square zero, equivalently a family of coboundaries $d^i$ with $d^{i+1}d^i=0$; the square-zero property is a local condition and holds on the concrete complexes of the category — the Čech, the singular, the Godement and the de Rham complexes — by the cancellations proved in the articles that own them. The cohomology sheaves $\mathcal{H}^i(\mathcal{F}^\bullet)=\ker d^i/\operatorname{im}d^{i-1}$ are computed on the stalks, $\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x)$, so that exactness of a complex is a local condition; the degree-zero cohomology is $\ker d^0$, and a resolution of $\mathcal{F}$ is a complex whose cohomology sheaves are $\mathcal{F}$ in degree zero and zero elsewhere.</p>
+<p>Applying global sections to the complex gives the complex $\Gamma(X,\mathcal{F}^\bullet)$ with the same coboundary, and the abstract de Rham theorem identifies its cohomology with $H^i(X,\mathcal{F})$ when the complex is a resolution by acyclic sheaves; the hypercohomology $\mathbb{H}^i(X,\mathcal{F}^\bullet)$ is the derived functor of global sections on the complex, and its two spectral sequences express it in terms of the cohomology of the terms and of the cohomology sheaves. A short exact sequence of complexes gives a long exact sequence whose connecting map $\delta$ is not the coboundary $d$ but the map induced on the quotient by the pair of adjacent coboundaries; a morphism of complexes commutes with $d$ and induces maps on cohomology, and the inverse image is exact while the direct image commutes with $d$ degreewise. The mapping cone assembles a morphism of complexes into a square-zero operator on the sum.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mathcal{F}^\bullet,d)$</td>
+<td>complex of sheaves with coboundary $d$</td>
+</tr>
+<tr>
+<td>$d^i:\mathcal{F}^i\to\mathcal{F}^{i+1}$</td>
+<td>the coboundary in degree $i$; $d^{i+1}d^i=0$</td>
+</tr>
+<tr>
+<td>$\mathcal{F}^\bullet[1]$, $\mathcal{F}^\bullet[k]$</td>
+<td>shift of a complex; differential $(-1)^kd$</td>
+</tr>
+<tr>
+<td>$\mathbf{C}(\mathrm{Sh}(X))$</td>
+<td>category of complexes of sheaves and their morphisms</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^i(\mathcal{F}^\bullet)=\ker d^i/\operatorname{im}d^{i-1}$</td>
+<td>cohomology sheaves</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^i(\mathcal{F}^\bullet)_x\cong H^i(\mathcal{F}^\bullet_x)$</td>
+<td>stalks of the cohomology sheaves</td>
+</tr>
+<tr>
+<td>quasi-isomorphism</td>
+<td>morphism inducing isomorphisms on all $\mathcal{H}^i$</td>
+</tr>
+<tr>
+<td>$\Gamma(X,\mathcal{F}^\bullet)$</td>
+<td>complex of global sections; coboundary applied to sections</td>
+</tr>
+<tr>
+<td>$H^i(\Gamma(X,\mathcal{F}^\bullet))\cong H^i(X,\mathcal{F})$</td>
+<td>abstract de Rham theorem for an acyclic resolution</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^i(X,\mathcal{F}^\bullet)=R^i\Gamma(X,\mathcal{F}^\bullet)$</td>
+<td>hypercohomology</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>connecting map of a short exact sequence of complexes</td>
+</tr>
+<tr>
+<td>mapping cone</td>
+<td>complex $\mathcal{G}^i\oplus\mathcal{F}^{i+1}$, coboundary $d(g,f)=(dg+\varphi(f),-df)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for complexes, the snake lemma, the connecting map and the derived-category constructions quoted here.</li>
+<li>Alexander Grothendieck, "Sur quelques points d'algèbre homologique", <em>Tohoku Mathematical Journal</em> 9 (1957), 119–221, for the abstract de Rham theorem and the effaceable functors.</li>
+<li>Glen E. Bredon, <em>Sheaf Theory</em> (Springer, second edition, 1997), for complexes of sheaves, their cohomology sheaves and hypercohomology.</li>
+<li>Roger Godement, <em>Topologie algébrique et théorie des faisceaux</em> (Hermann, 1958), for the canonical flabby resolution and its differential.</li>
+<li>Birger Iversen, <em>Cohomology of Sheaves</em> (Springer, 1986), for the mapping cone, the shift and the triangulated operations on complexes of sheaves.</li>
+<li>Masaki Kashiwara and Pierre Schapira, <em>Sheaves on Manifolds</em> (Springer, 1990), for the differential graded language and its sheaf-theoretic form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

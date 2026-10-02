@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms and Unitary Geometry — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-and-unitary-geometry"><strong>Hermitian Forms and Unitary Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian form over a field with an involution is classified by its isometry class, and the two theorems that make the classification run are the <strong>Witt extension theorem</strong>, that every isometry between two subspaces of a nondegenerate space extends to an isometry of the whole space, and the <strong>Witt cancellation theorem</strong>, that a form may be cancelled from both sides of an isometry. From these two the classification follows in the shape the article presents: every nondegenerate form decomposes into an orthogonal sum of hyperbolic planes and an anisotropic residue, the number of the planes is the <strong>Witt index</strong>, and the residue is determined by the invariants of the field. The forms themselves form the <strong>Witt group</strong>, and the unitary group acts on the isotropic subspaces with the Witt index as the invariant of the orbit.</p>
+<p>The article develops the orthogonal sum and the isometries, the two Witt theorems and their proofs by induction, the hyperbolic planes, the Witt index and the decomposition of a form, the classification of the forms over the real, the complex, the finite and the local fields, the Witt group with its ring structure, and the unitary geometry of the isotropic flags. The article is the classification companion of <em>Unitary Geometry over a Field with Involution</em>, which owns the definitions, and it is the general companion of <em>Hermitian Spaces over a Local Field</em>, which treats the local case with its arithmetic invariants.</p>
+<p>The article assumes <em>Unitary Geometry over a Field with Involution</em> for the field with an involution, the Hermitian forms, the polarity and the unitary group; <em>Quadratic Forms and Polarisation</em> and <em>Bilinear Forms</em> of Part II for the forms, the orthogonal sums and the hyperbolic planes; and <em>Vector Spaces</em> of Part I for the subspace decompositions. The article owns the Witt theorems and the classification; the local arithmetic is <em>Hermitian Spaces over a Local Field</em> and <em>Hermitian Forms over a Local Field</em>, and the algebraic theory of the forms is Part II. No distance and no physics is invoked.</p>
+<h2 id="isometry-orthogonal-sum-and-the-witt-theorems">Isometry, Orthogonal Sum and the Witt Theorems</h2>
+<h3 id="the-definitions">The Definitions</h3>
+<p><strong>Definition.</strong> Let $(V,h)$ and $(V',h')$ be Hermitian spaces over a field $K$ with involution. An <strong>isometry</strong> is a linear isomorphism $T : V \to V'$ with $h'(Tx,Ty) = h(x,y)$ for all $x,y$; the spaces are <strong>isometric</strong> when such a $T$ exists, and the isometry class is the class of the form. The <strong>orthogonal sum</strong> of two Hermitian spaces is the direct sum $V \perp V'$ with the form $h \perp h'$ vanishing between the summands, and a subspace $W \subseteq V$ is <strong>nondegenerate</strong> when the restriction of $h$ to $W$ is nondegenerate, equivalently when $V = W \perp W^\perp$.</p>
+<p><strong>Definition.</strong> A <strong>hyperbolic plane</strong> is the two-dimensional space with the form, in a basis $(e,f)$,</p>
+<p>$$
+h(e,e) = h(f,f) = 0, \qquad h(e,f) = 1 ,
+$$</p>
+<p>written $\mathbb{H}$; a vector $x$ is <strong>isotropic</strong> when $h(x,x) = 0$ and <strong>anisotropic</strong> otherwise, and a subspace is <strong>totally isotropic</strong> when the restriction of the form to it vanishes. The <strong>Witt index</strong> of a nondegenerate form is the largest dimension of a totally isotropic subspace.</p>
+<p><strong>Proposition.</strong> A hyperbolic plane contains exactly two isotropic lines, they are the lines of $e$ and $f$, and the form pairs them; the orthogonal complement of an isotropic line in a hyperbolic plane is the other isotropic line, and a nondegenerate form is hyperbolic when it is an orthogonal sum of hyperbolic planes. Every isotropic vector of a nondegenerate space lies in a hyperbolic plane: the Witt index is the number of the planes in the decomposition of the next subsection.</p>
+<p><strong>Proof.</strong> The two isotropic lines are the solutions of $h(x,x) = 0$ in the two-dimensional space, which in the coordinates $(s,t)$ is the equation $2st = 0$ over a field of characteristic not two, giving the two coordinate lines; the form pairs them by $h(e,f) = 1$. If $x$ is isotropic then the nondegeneracy gives a vector $y$ with $h(x,y) \neq 0$, and after the scaling the span of $x$ and $y$ is a hyperbolic plane with $x$ and $y$ as the pair.</p>
+<p><strong>Theorem (Witt extension).</strong> Let $(V,h)$ be a nondegenerate Hermitian space and let $T : W \to W'$ be an isometry between two subspaces. Then $T$ extends to an isometry of $V$, that is, there is an element of the unitary group $U(V,h)$ whose restriction to $W$ is $T$; the restriction of the form to $W$ is then isometric to its restriction to $W'$, and the two subspaces are carried to each other by the unitary group.</p>
+<p><strong>Proof sketch.</strong> The theorem is proved by induction on the dimension of $W$. For a one-dimensional nondegenerate $W$ the form is determined by the value $h(x,x)$ and the extension is the Witt extension of a single vector, which the nondegeneracy provides by an orthogonal reflection; for a degenerate $W$ the induction is applied to the radical and to a complement, the isometry being split along the direct sum. The classical proof and the two lemmas are in <em>Quadratic Forms and Polarisation</em> and in the references; the statement is quoted here as the engine of the classification.</p>
+<p><strong>Theorem (Witt cancellation).</strong> Let $(V_1,h_1)$, $(V_2,h_2)$ and $(W,g)$ be nondegenerate Hermitian spaces with $V_1 \perp W$ isometric to $V_2 \perp W$; then $V_1$ is isometric to $V_2$,</p>
+<p>$$
+V_1 \perp W \ \cong\ V_2 \perp W \quad \Longrightarrow \quad V_1 \cong V_2 .
+$$</p>
+<p><strong>Proof sketch.</strong> The isometry of the sums is an isometry between two subspaces of the common space, and the Witt extension theorem applied to the subspace $W$ in the two copies gives the extension to the whole space; the orthogonal complement of $W$ in either sum is $V_1$ or $V_2$, and the extension carries one to the other. The statement is the cancellation theorem of <em>Quadratic Forms and Polarisation</em>.</p>
+<h2 id="the-classification">The Classification</h2>
+<h3 id="the-decomposition-and-the-witt-index">The Decomposition and the Witt Index</h3>
+<p><strong>Theorem (the decomposition).</strong> Let $(V,h)$ be a nondegenerate Hermitian space of dimension $n$ over a field of characteristic not two. Then $V$ decomposes as</p>
+<p>$$
+V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0 ,
+$$</p>
+<p>an orthogonal sum of $r$ hyperbolic planes and an <strong>anisotropic</strong> subspace $V_0$ (one containing no isotropic vector), of dimension $n - 2r$; the number $r$ is the Witt index, it is the same for every such decomposition by the Witt cancellation theorem, and the isometry class of the whole space is determined by the number $r$ and the isometry class of the anisotropic residue $V_0$.</p>
+<p><strong>Proof.</strong> If $V$ contains an isotropic vector then the proposition gives a hyperbolic plane $\mathbb{H} \subset V$, and $V = \mathbb{H} \perp \mathbb{H}^\perp$ because the plane is nondegenerate; the induction on the dimension applied to $\mathbb{H}^\perp$ gives the decomposition. The uniqueness of $r$ is the Witt cancellation: two decompositions give $r_1$ and $r_2$ planes and the residues, and cancelling the planes one by one forces the two residues to be isometric and the numbers to be equal. The statement is in <em>Quadratic Forms and Polarisation</em>.</p>
+<p><strong>Corollary (the unitary group and the isotropic flags).</strong> The unitary group $U(V,h)$ acts transitively on the totally isotropic subspaces of each dimension $k \leq r$, so the <strong>isotropic Grassmannian</strong> of the $k$-dimensional totally isotropic subspaces is the homogeneous space $U(V,h)/P_k$ of the unitary group modulo the stabiliser $P_k$ of one of them; the Witt index $r$ is the largest $k$ for which the Grassmannian is nonempty, and the maximal totally isotropic subspaces form the single orbit of the maximal parabolic.</p>
+<p><strong>Proof.</strong> Two totally isotropic subspaces of the same dimension are isometric by an isometry sending a basis to a basis, and the Witt extension theorem extends the isometry to the whole space, giving an element of the unitary group carrying one to the other; the stabiliser of a subspace in the unitary group is the subgroup preserving it, and the orbit-stabiliser identification is the standard one. The statement is the geometric form of the Witt theorem, and it is in <em>Quadratic Forms and Polarisation</em> and <em>Unitary Geometry over a Field with Involution</em>.</p>
+<h3 id="the-classification-over-the-standard-fields">The Classification over the Standard Fields</h3>
+<p><strong>Theorem (over $\mathbb{R}$).</strong> A nondegenerate Hermitian form over $\mathbb{R}$ with the trivial involution is a symmetric bilinear form and is classified by its <strong>signature</strong> $(p,q)$ with $p + q = n$, the numbers of the positive and the negative eigenvalues; the Witt index is $\min(p,q)$ and the anisotropic residue is the positive-definite space of dimension $|p-q|$. The Hermitian forms over $\mathbb{C}$ with the complex conjugation are classified by the signature as well, by the spectral theorem for the Hermitian matrices.</p>
+<p><strong>Proof.</strong> Sylvester's law of inertia shows that the form is diagonalisable with the eigenvalues reduced to their signs and the number of the positive ones is an invariant; over $\mathbb{C}$ with the conjugation the same argument applies to the Hermitian matrices by the spectral theorem. The statement is in <em>Quadratic Forms and Polarisation</em> and <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>
+<p><strong>Theorem (over $\mathbb{C}$ with the trivial involution and over an algebraically closed field).</strong> Every nondegenerate symmetric bilinear form over an algebraically closed field of characteristic not two is hyperbolic in an even dimension and is the orthogonal sum of a hyperbolic plane and a one-dimensional form in an odd dimension; the classification is by the rank alone, and the Witt index is $\lfloor n/2 \rfloor$.</p>
+<p><strong>Proof.</strong> The Gram–Schmidt argument diagonalises the form, and each diagonal entry is a square in an algebraically closed field, so it may be scaled to $1$; the form $\sum x_i^2$ in dimension $n$ is, after a change of basis $e_i = (u_i + u_{i+1})/2$, the sum of the hyperbolic planes in the even part and one unit vector in the odd part. The statement is in <em>Quadratic Forms and Polarisation</em>.</p>
+<p><strong>Theorem (over a finite field and a local field).</strong> Over a finite field of odd characteristic a nondegenerate form is classified by its dimension and its <strong>discriminant</strong>, the Hasse invariant being determined by the two; over a non-Archimedean local field the classification is by the rank, the discriminant and the Hasse invariant, and the invariants determine the Witt index and the anisotropic residue, whose dimension is at most two.</p>
+<p><strong>Proof.</strong> The classification over a finite field is the counting of the isometry classes by the discriminant and the parity of the dimension; the local statement is the local classification theorem with the Witt cancellation, and the anisotropic residue has dimension at most two because every form of dimension three over a local field is isotropic. The statement is in <em>Quadratic Forms and Polarisation</em> and in <em>Hermitian Spaces over a Local Field</em>.</p>
+<p><strong>Remark (the invariants are not the eigenvalues).</strong> Over a general field the invariant is not the signature, which requires an order, but the class of the form in the Witt group of the next section; the discriminant and the Hasse invariant are the arithmetic shadows of that class, and they are complete over the local and the finite fields but not over a general field. The article records the standard cases and defers the general classification to the Witt group.</p>
+<h2 id="the-witt-group">The Witt Group</h2>
+<p><strong>Definition.</strong> The <strong>Witt group</strong> $W(K,\sigma)$ of a field with an involution is the Grothendieck group of the isometry classes of the nondegenerate Hermitian forms under the orthogonal sum, modulo the subgroup generated by the hyperbolic forms: two forms are equal in $W(K,\sigma)$ when they become isometric after the addition of hyperbolic planes, and the sum is the orthogonal sum. For the trivial involution the group is written $W(K)$ and called the <strong>Witt group of the quadratic forms</strong>.</p>
+<p><strong>Theorem.</strong> The Witt group is an abelian group under the orthogonal sum, and the tensor product of the forms, $h \otimes h'$ on $V \otimes V'$ with the involution acting on the two factors, makes it a commutative ring with unit the one-dimensional form $h(x,y) = x\bar y$; the classes of the forms of dimension one generate the group over a field, and the hyperbolic forms are exactly the classes of the zero in the quotient.</p>
+<p><strong>Proof.</strong> The orthogonal sum is associative and commutative, the zero form is the unit for the sum up to the hyperbolic classes, and the inverse of a form is its negative, the form with $h$ replaced by $-h$; the tensor product is compatible with the sum and the isometry, so it descends to the quotient, and the one-dimensional form is the multiplicative unit. The statement is the classical ring structure of the Witt group, in <em>Quadratic Forms and Polarisation</em>.</p>
+<p><strong>Example (the standard Witt groups).</strong> Over $\mathbb{R}$ the Witt group $W(\mathbb{R})$ is $\mathbb{Z}$, with the class of a form the signature and the hyperbolic forms the kernel; over $\mathbb{C}$ the Witt group is $\mathbb{Z}/2$ generated by the one-dimensional form; over a finite field $\mathbb{F}_q$ of odd characteristic the Witt group is $\mathbb{Z}/2 \oplus \mathbb{Z}/2$ when $q \equiv 1 \pmod 4$ and $\mathbb{Z}/4$ when $q \equiv 3 \pmod 4$, the class being decided by the dimension and the discriminant; and over a local field the group is finite, detected by the discriminant and the Hasse invariant.</p>
+<p><strong>Proof.</strong> The signature is additive under the orthogonal sum and vanishes on the hyperbolic forms, and every form is determined by its signature, giving the isomorphism $W(\mathbb{R}) \cong \mathbb{Z}$; over $\mathbb{C}$ every form is hyperbolic in an even dimension and the one-dimensional form generates the quotient; the finite and the local statements are the classifications of the previous section read in the group. The statement is in <em>Quadratic Forms and Polarisation</em>.</p>
+<p><strong>Remark (the fundamental ideal and the higher invariants).</strong> The Witt group carries the <strong>fundamental ideal</strong> of the even-dimensional forms, and the powers of the ideal give the higher invariants, the Arf and the Hasse invariants of the successive quotients; this is the algebraic theory of the quadratic forms of Part II, and the article names it as the source of the finer invariants. The Witt group of a field is the home of the classification of the forms that the present article states geometrically.</p>
+<h2 id="the-unitary-geometry-of-the-isotropic-flags">The Unitary Geometry of the Isotropic Flags</h2>
+<p><strong>Definition.</strong> Let $(V,h)$ be a nondegenerate Hermitian space of dimension $n$ and Witt index $r$. The <strong>isotropic Grassmannian</strong> $\mathrm{IG}_k(V)$ is the set of the $k$-dimensional totally isotropic subspaces of $V$, for $0 \leq k \leq r$; the <strong>maximal isotropic</strong> subspaces are the elements of $\mathrm{IG}_r(V)$, and the <strong>isotropic flag manifold</strong> is the set of the complete flags $0 \subset W_1 \subset \cdots \subset W_r$ of totally isotropic subspaces.</p>
+<p><strong>Theorem.</strong> The unitary group acts transitively on each isotropic Grassmannian, and the stabiliser of a totally isotropic subspace is a <strong>parabolic</strong> subgroup of the unitary group; the isotropic flag manifold is the quotient of the unitary group by a <strong>Borel</strong> subgroup, and the Weyl group of the unitary group acts on the cohomology of the flag manifold with the Schubert cells indexed by the isotropic flags. The geometry of the isotropic flags is the unitary counterpart of the projective geometry of the flags of <em>Operators on a Projective Space</em>.</p>
+<p><strong>Proof.</strong> The transitivity is the corollary of the Witt theorem; the stabilisers are the parabolics by the standard correspondence between the subgroups containing a Borel and the subsets of the simple roots, which is the Lie-theoretic structure of the unitary group, and the Schubert cell decomposition is the Bruhat decomposition of the flag manifold. The statement is in <em>Linear Algebraic Groups</em>.</p>
+<p><strong>Remark (the Witt index and the geometry).</strong> The Witt index is the invariant of the unitary geometry that the group alone sees: it is the largest dimension of the totally isotropic figures, it is the number of the hyperbolic planes, and the isotropic flags of dimension up to the index are the figures on which the unitary group acts with the parabolic stabilisers. The classification of the forms and the geometry of the unitary group are two readings of the same invariant, and the article states both.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian space decomposes as an orthogonal sum of hyperbolic planes and an anisotropic residue, the number $r$ of the planes is the <strong>Witt index</strong>, and the isometry class is determined by $r$ and by the class of the residue. The <strong>Witt extension theorem</strong> extends every isometry between subspaces to an isometry of the whole space, and the <strong>Witt cancellation theorem</strong> cancels a common summand; the two give the uniqueness of the decomposition and the transitivity of the unitary group on the totally isotropic subspaces of each dimension, so the isotropic Grassmannians are the homogeneous spaces $U(V,h)/P_k$ of the unitary group modulo the parabolics. Over the standard fields the classification is by the signature over $\mathbb{R}$ and over $\mathbb{C}$ with the conjugation, by the rank over an algebraically closed field with the trivial involution, and by the dimension and the discriminant, with the Hasse invariant, over the finite and the local fields. The isometry classes form the <strong>Witt group</strong> $W(K,\sigma)$, a commutative ring under the orthogonal sum and the tensor product, with $W(\mathbb{R}) \cong \mathbb{Z}$ and $W(\mathbb{C}) \cong \mathbb{Z}/2$, and the fundamental ideal carries the higher invariants. The unitary geometry of the isotropic flags is the geometric form of the classification.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V \perp V'$</td>
+<td>Orthogonal sum of Hermitian spaces</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Hyperbolic plane, $h(e,e)=h(f,f)=0$, $h(e,f)=1$</td>
+</tr>
+<tr>
+<td>isotropic, anisotropic</td>
+<td>$h(x,x)=0$; $h(x,x)\neq0$ for every nonzero $x$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>Witt index, the largest dimension of a totally isotropic subspace</td>
+</tr>
+<tr>
+<td>$V = \mathbb{H}_1 \perp \cdots \perp \mathbb{H}_r \perp V_0$</td>
+<td>Witt decomposition</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>Signature over $\mathbb{R}$; Witt index $\min(p,q)$</td>
+</tr>
+<tr>
+<td>$W(K,\sigma)$</td>
+<td>Witt group of the Hermitian forms</td>
+</tr>
+<tr>
+<td>$W(K)$</td>
+<td>Witt group of the quadratic forms (trivial involution)</td>
+</tr>
+<tr>
+<td>$\mathrm{IG}_k(V)$</td>
+<td>Isotropic Grassmannian of the $k$-dimensional isotropic subspaces</td>
+</tr>
+<tr>
+<td>$U(V,h)/P_k$</td>
+<td>Orbit of a totally isotropic subspace, $P_k$ a parabolic</td>
+</tr>
+<tr>
+<td>isotropic flag manifold</td>
+<td>Complete flags of isotropic subspaces, $U/B$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the Witt theorems, the Witt group and the classification.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for the classification over the general fields.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the forms over the finite and the local fields and the Hasse invariant.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the unitary groups and the isotropic flags.</li>
+<li>Armand Borel, <em>Linear Algebraic Groups</em>, 2nd ed. (Springer, 1991), for the parabolic and the Borel subgroups and the flag manifolds.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the Hermitian forms over a field with involution.</li>
+<li>John Milnor and Dale Husemoller, <em>Symmetric Bilinear Forms</em> (Springer, 1973), for the Witt group, the Witt ring and the invariants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Fold Coverings and the Borel Construction — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-fold-coverings-and-the-borel-construction"><strong>Two-Fold Coverings and the Borel Construction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Borel construction replaces a group action by a fibration: from a space $X$ with an action of a group $G$ it forms the <strong>homotopy quotient</strong> $X \times_{G} EG = (X \times EG)/G$, and it maps to the <strong>classifying space</strong> $BG = EG/G$. For the group of order two the space $E\mathbb{Z}/2$ is the infinite sphere $S^{\infty}$ with the antipodal involution, contractible and free, and $B\mathbb{Z}/2$ is real projective space $\mathbb{RP}^{\infty}$. The Borel construction is the tool that turns the equivariant data of the previous articles into ordinary topological data on the quotient, and for a free involution it recovers the orbit map that <em>The Orbit Space of a Free Involution</em> studied: a free involution on $X$ has its orbit map a two-fold covering, and the classifying map of that covering into $\mathbb{RP}^{\infty}$ is the homotopy quotient map $X \times_{\mathbb{Z}/2} E\mathbb{Z}/2 \to B\mathbb{Z}/2$. The universal two-fold covering $S^{\infty} \to \mathbb{RP}^{\infty}$ is then the source of all two-fold coverings, and the classification of the two-fold coverings of a space $B$ by the cohomology group $H^{1}(B;\mathbb{Z}/2)$ is the precise form of that statement.</p>
+<p>The article begins with the Borel construction and its fibration property, computes the construction for the group of order two, states the classification of two-fold coverings by homotopy classes into $\mathbb{RP}^{\infty}$ and by $H^{1}$, and describes the nonfree case, where the homotopy quotient is still defined but is no longer the orbit space. It continues <em>The Orbit Space of a Free Involution</em>, whose covering theory it extends, and it uses the cohomology of the later articles, which supply the identification of the homotopy classes with $H^{1}(B;\mathbb{Z}/2)$; the classification theorem is stated and its proof is deferred to <em>Cohomology and the Universal Coefficient Theorem</em>.</p>
+<p>Nothing analytic and nothing geometric is used. The infinite sphere is the union of the finite spheres with the antipodal involution, and the map $S^{\infty} \to \mathbb{RP}^{\infty}$ is the orbit map; no distance and no measure is chosen, and the only homotopy theory used is that of the preceding articles.</p>
+<h2 id="the-homotopy-quotient">The Homotopy Quotient</h2>
+<h3 id="the-borel-construction">The Borel Construction</h3>
+<p><strong>Definition.</strong> Let $G$ act on a space $X$, and let $EG$ be a contractible space on which $G$ acts freely and properly. The <strong>Borel construction</strong>, or <strong>homotopy quotient</strong>, of $X$ by $G$ is</p>
+<p>$$
+X \times_{G} EG = \frac{X \times EG}{G},
+$$</p>
+<p>the quotient of the product by the diagonal action $g \cdot (x,e) = (gx, ge)$. The projection to the second factor descends to a map</p>
+<p>$$
+p : X \times_{G} EG \longrightarrow BG = EG/G ,
+$$</p>
+<p>the <strong>Borel fibration</strong> of the action.</p>
+<p><strong>Theorem.</strong> The map $p : X \times_{G} EG \to BG$ is a fibration with fibre $X$, well defined up to homotopy; the construction is functorial in the equivariant map $X \to Y$ and natural in the group; and for the trivial action it reduces to $BG$ with fibre $X$: $X \times_{G} EG \simeq X \times BG$ when $G$ acts trivially on $X$.</p>
+<p><strong>Proof.</strong> The diagonal action is free, since the action on the first factor is not needed for freeness: if $g(x,e) = (x,e)$ then $ge = e$ and $e \in EG$ has trivial stabiliser, so $g = e$. Hence the quotient is a fibre bundle with fibre $X$ over $BG$ in the sense of the covering and fibre-bundle theory of this Part, and the projection is a fibration with the homotopy lifting property. Functoriality and naturality are the universal property of the quotient; for the trivial action the product $X \times EG$ has the action only on the second factor, so the quotient is $X \times BG$.</p>
+<p><strong>Remark.</strong> The Borel construction is the replacement of the orbit space $X/G$, which for a nonfree action is not a nice object, by the homotopy quotient, which is; for a free action the two agree up to homotopy, $X \times_{G} EG \simeq X/G$, since the projection $X \times EG \to X$ is $G$-equivariant and a homotopy equivalence (as $EG$ is contractible), and it descends.</p>
+<h3 id="the-borel-construction-of-a-free-involution">The Borel Construction of a Free Involution</h3>
+<p><strong>Theorem.</strong> Let $\sigma$ be a free continuous involution of a space $X$ with orbit map $\pi : X \to X/\sigma$. Then there is a homotopy equivalence</p>
+<p>$$
+X \times_{\mathbb{Z}/2} S^{\infty} \ \simeq \ X/\sigma ,
+$$</p>
+<p>and under it the Borel fibration $X \times_{\mathbb{Z}/2} S^{\infty} \to \mathbb{RP}^{\infty}$ corresponds to a map $X/\sigma \to \mathbb{RP}^{\infty}$.</p>
+<p><strong>Proof.</strong> The projection $X \times S^{\infty} \to X$ is equivariant for $\sigma \times$ (antipodal) and $\sigma$, and it is a homotopy equivalence because $S^{\infty}$ is contractible; a homotopy equivalence that is equivariant for a free action descends, by <em>Equivariant Maps and Equivariant Homotopy</em>, to a homotopy equivalence of the quotients, which are $X \times_{\mathbb{Z}/2} S^{\infty}$ and $X/\sigma$.</p>
+<p>The statement says that the orbit map of a free involution is the Borel construction: the equivariant homotopy type of the free action is the homotopy type of the orbit space together with the map to $\mathbb{RP}^{\infty}$ that classifies the covering.</p>
+<h2 id="the-classifying-space-of-the-group-of-order-two">The Classifying Space of the Group of Order Two</h2>
+<h3 id="the-infinite-sphere-and-real-projective-space">The Infinite Sphere and Real Projective Space</h3>
+<p><strong>Definition.</strong> The <strong>infinite sphere</strong> $S^{\infty}$ is the union of the finite spheres $S^{n}$ under the inclusions $S^{n} \subset S^{n+1}$, with the weak (colimit) topology, and the antipodal involution acts on it freely. The orbit space is <strong>real projective space</strong> $\mathbb{RP}^{\infty} = S^{\infty}/\mathbb{Z}/2$, the union of the finite projective spaces $\mathbb{RP}^{n}$.</p>
+<p><strong>Theorem.</strong> The infinite sphere is contractible, the antipodal involution on it is free, and the orbit map</p>
+<p>$$
+S^{\infty} \longrightarrow \mathbb{RP}^{\infty}
+$$</p>
+<p>is a two-fold covering. Consequently $E\mathbb{Z}/2 = S^{\infty}$ and $B\mathbb{Z}/2 = \mathbb{RP}^{\infty}$, and the orbit map is the <strong>universal two-fold covering</strong>.</p>
+<p><strong>Proof.</strong> The sphere $S^{\infty}$ is the union of the spheres $S^{n}$, and a map $S^{k} \to S^{\infty}$ has image in a finite sphere $S^{n}$ by compactness; an iteration of the standard contraction of the upper hemisphere onto the lower one extends a null-homotopy from $S^{n}$ to $S^{n+1}$ and hence to the colimit, giving the contractibility of $S^{\infty}$. Freeness is that $x \neq -x$ on every sphere, and the covering statement is the theorem of <em>The Orbit Space of a Free Involution</em> for the antipodal involution of a Hausdorff space.</p>
+<p><strong>Remark.</strong> The finite sphere $S^{n}$ is not contractible, and the passage to the infinite union is what makes $E\mathbb{Z}/2$ contractible; the construction $EG$ is the standard one of taking the colimit of a free action on the spheres or the simplices. The space $\mathbb{RP}^{\infty}$ is the classifying space of the group of order two, and it is the base of the universal two-fold covering.</p>
+<h3 id="the-universal-property">The Universal Property</h3>
+<p><strong>Theorem.</strong> Let $B$ be a space and let $f : B \to \mathbb{RP}^{\infty}$ be continuous. Then the pullback</p>
+<p>$$
+f^{*}\bigl(S^{\infty} \to \mathbb{RP}^{\infty}\bigr) = \{(b, e) \in B \times S^{\infty} : f(b) = [e]\}
+$$</p>
+<p>is a two-fold covering of $B$, and it is the total space of the covering classified by $f$.</p>
+<p><strong>Proof.</strong> The pullback of a covering along a continuous map is a covering of the same degree, since the evenly covered neighbourhoods pull back; the degree is two because the fibre of $S^{\infty} \to \mathbb{RP}^{\infty}$ has two points.</p>
+<h2 id="the-classification-of-two-fold-coverings">The Classification of Two-Fold Coverings</h2>
+<h3 id="the-classification-theorem">The Classification Theorem</h3>
+<p><strong>Theorem (classification; proof deferred).</strong> Let $B$ be connected and paracompact, and let $B$ have the homotopy type of a cell complex. Then the two-fold coverings of $B$ are classified up to equivalence over $B$ by the homotopy classes of maps $B \to \mathbb{RP}^{\infty}$:</p>
+<p>$$
+\{\text{two-fold coverings of } B\} \big/{\cong} \ \longleftrightarrow \ [B, \mathbb{RP}^{\infty}] \ \cong \ H^{1}(B;\mathbb{Z}/2) .
+$$</p>
+<p>The class of a covering is its <strong>classifying map</strong>, and the trivial covering corresponds to the null-homotopic maps and to the zero class in $H^{1}$.</p>
+<p><strong>Proof sketch.</strong> The forward map sends a covering to its classifying map, which is constructed by gluing the local trivialisations of the covering over the cells of $B$; the map is well defined on equivalence classes and homotopy classes, and the pullback construction shows that the assignment has the stated image. The identification $[B,\mathbb{RP}^{\infty}] \cong H^{1}(B;\mathbb{Z}/2)$ is the universal coefficient theorem and the representability of $H^{1}$ by $\mathbb{RP}^{\infty}$, proved in <em>Cohomology and the Universal Coefficient Theorem</em>. The proof of the classification itself is the standard obstruction theory of covering spaces, given in the references.</p>
+<p><strong>Remark.</strong> The theorem refines the classification of <em>The Orbit Space of a Free Involution</em>, where the two-fold coverings of a connected base were identified with free involutions on the total space; the cohomological classification records in addition the class of the covering in the cohomology of the base.</p>
+<h3 id="the-classifying-map-of-an-involution">The Classifying Map of an Involution</h3>
+<p><strong>Theorem.</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $\pi : X \to X/\sigma$ be the two-fold covering. Then the classifying map of this covering is the composite</p>
+<p>$$
+X/\sigma \ \longrightarrow \ \mathbb{RP}^{\infty}
+$$</p>
+<p>obtained from the Borel construction of the previous section, and two free involutions on $X$ with homeomorphic orbit spaces give equivalent coverings exactly when their classifying maps are homotopic.</p>
+<p><strong>Proof.</strong> The classifying map of the covering is by definition the map whose pullback gives it; the Borel construction identifies the total space with $X/\sigma$ up to homotopy, and the pullback along the classifying map is the universal covering restricted; the uniqueness is the classification theorem.</p>
+<h2 id="the-nonfree-case">The Nonfree Case</h2>
+<h3 id="the-homotopy-quotient-of-a-nonfree-action">The Homotopy Quotient of a Nonfree Action</h3>
+<p><strong>Definition.</strong> For a space $X$ with an involution, free or not, the <strong>homotopy quotient</strong> is $X \times_{\mathbb{Z}/2} S^{\infty}$ and the <strong>Borel fibration</strong> is the map to $\mathbb{RP}^{\infty}$; the <strong>equivariant cohomology</strong> is</p>
+<p>$$
+H^{*}_{\mathbb{Z}/2}(X) = H^{*}(X \times_{\mathbb{Z}/2} S^{\infty}) ,
+$$</p>
+<p>with coefficients in a ring, the cohomology of the homotopy quotient.</p>
+<p><strong>Theorem.</strong> For a free involution the group $H^{*}_{\mathbb{Z}/2}(X)$ is the cohomology of the orbit space $H^{*}(X/\sigma)$; for the trivial involution it is the cohomology of $X \times \mathbb{RP}^{\infty}$; and in general the Borel fibration gives a spectral sequence, the <strong>Serre spectral sequence</strong>, from the cohomology of the base $\mathbb{RP}^{\infty}$ with local coefficients in the cohomology of the fibre $X$ to the equivariant cohomology of $X$.</p>
+<p><strong>Proof.</strong> The free case is the homotopy equivalence $X \times_{\mathbb{Z}/2} S^{\infty} \simeq X/\sigma$; the trivial case is the trivial-action formula of the construction; the spectral sequence is the Serre spectral sequence of the Borel fibration, whose proof belongs to <em>Spectral Sequences</em> later in this Part.</p>
+<h3 id="homotopy-fixed-points">Homotopy Fixed Points</h3>
+<p><strong>Definition.</strong> The <strong>homotopy fixed points</strong> of the involution on $X$ are the space of equivariant maps</p>
+<p>$$
+X^{h\mathbb{Z}/2} = \mathrm{Map}_{\mathbb{Z}/2}(S^{\infty}, X) ,
+$$</p>
+<p>with the compact-open topology, where $S^{\infty}$ carries the antipodal involution and the action on the mapping space is by precomposition.</p>
+<p><strong>Proposition.</strong> The homotopy fixed points contain the fixed points, $X^{\mathbb{Z}/2} \subseteq X^{h\mathbb{Z}/2}$, the inclusion being by the constant maps, and it is a homotopy invariant of the equivariant homotopy type, whereas the fixed set need not be.</p>
+<p><strong>Proof.</strong> A fixed point $x$ defines the constant equivariant map $e \mapsto x$; conversely an equivariant map need not be constant, so the inclusion is not an equality in general. Functoriality gives the homotopy invariance from <em>Equivariant Maps and Equivariant Homotopy</em>.</p>
+<p><strong>Remark.</strong> The pair of constructions, the homotopy fixed points on one side and the homotopy quotient on the other, are the two homotopy-invariant replacements of the fixed set and the orbit space; the exact relation between them, and the comparison with the honest fixed set and orbit space, is the content of the equivariant homotopy theory and of the Borel and the cohomological constructions that the later articles use.</p>
+<h2 id="summary">Summary</h2>
+<p>The Borel construction of a space $X$ with an action of the group of order two is the homotopy quotient $X \times_{\mathbb{Z}/2} S^{\infty}$, the quotient of the product by the diagonal action; it fibres over $\mathbb{RP}^{\infty}$, and for a free action it is homotopy equivalent to the orbit space, so that the orbit map of a free involution is the Borel construction. The infinite sphere is contractible and its antipodal involution is free, so $E\mathbb{Z}/2 = S^{\infty}$ and $B\mathbb{Z}/2 = \mathbb{RP}^{\infty}$; the antipodal orbit map is the universal two-fold covering, and the pullback of the universal covering along a map $B \to \mathbb{RP}^{\infty}$ is a two-fold covering of $B$. The two-fold coverings of a connected paracompact base are classified by the homotopy classes of such maps and hence by $H^{1}(B;\mathbb{Z}/2)$, with the trivial covering corresponding to the zero class; the proof of the classification uses the covering theory and the universal coefficient theorem and is deferred. For a nonfree action the homotopy quotient is still defined, the equivariant cohomology is its cohomology, and the Borel fibration gives a spectral sequence relating it to the cohomology of the fibre and the base; the homotopy fixed points are the dual invariant that replaces the fixed set.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$EG$</td>
+<td>A contractible space on which $G$ acts freely and properly</td>
+</tr>
+<tr>
+<td>$BG = EG/G$</td>
+<td>The classifying space of $G$</td>
+</tr>
+<tr>
+<td>$X \times_{G} EG$</td>
+<td>The Borel construction, or homotopy quotient</td>
+</tr>
+<tr>
+<td>$p : X\times_{G} EG \to BG$</td>
+<td>The Borel fibration, with fibre $X$</td>
+</tr>
+<tr>
+<td>$S^{\infty}$</td>
+<td>The infinite sphere, $E\mathbb{Z}/2$, with the antipodal involution</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^{\infty}$</td>
+<td>Real projective space, $B\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$S^{\infty} \to \mathbb{RP}^{\infty}$</td>
+<td>The universal two-fold covering</td>
+</tr>
+<tr>
+<td>classifying map</td>
+<td>The map $B \to \mathbb{RP}^{\infty}$ whose pullback is a given covering</td>
+</tr>
+<tr>
+<td>$H^{1}(B;\mathbb{Z}/2)$</td>
+<td>The classification set of two-fold coverings of a connected paracompact $B$</td>
+</tr>
+<tr>
+<td>$H^{*}_{\mathbb{Z}/2}(X)$</td>
+<td>Equivariant cohomology $H^{*}(X \times_{\mathbb{Z}/2} S^{\infty})$</td>
+</tr>
+<tr>
+<td>$X^{h\mathbb{Z}/2}$</td>
+<td>Homotopy fixed points $\mathrm{Map}_{\mathbb{Z}/2}(S^{\infty}, X)$</td>
+</tr>
+<tr>
+<td>Borel fibration</td>
+<td>$X \times_{\mathbb{Z}/2} S^{\infty} \to \mathbb{RP}^{\infty}$; Serre spectral sequence</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Armand Borel, <em>Seminar on Transformation Groups</em> (Annals of Mathematics Studies 46, Princeton, 1960), for the Borel construction and equivariant cohomology.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the classification of coverings, $EG$ and $BG$, and the universal two-fold covering.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the Borel construction, the classification of $G$-bundles and equivariant cohomology.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (de Gruyter, 1987), for the homotopy quotient, the classifying space of a finite group and the equivariant homology theories.</li>
+<li>Dale Husemoller, <em>Fibre Bundles</em> (Springer, 3rd ed. 1994), for principal bundles, classifying spaces and the classification of two-fold coverings.</li>
+<li>Jean-Pierre Serre, "Homologie singulière des espaces fibrés", <em>Annals of Mathematics</em> 54 (1951), 425–505, for the spectral sequence of a fibration used in the nonfree case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

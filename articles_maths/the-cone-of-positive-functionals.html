@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cone of Positive Functionals — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cone-of-positive-functionals"><strong>The Cone of Positive Functionals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>positive functionals</strong> of an ordered involutive algebra are the linear functionals that are Hermitian and nonnegative on the positive cone,</p>
+<p>$$
+\varphi(a^{*}a)\geq0 \quad \text{for every } a ,
+$$</p>
+<p>and they form the <strong>dual cone</strong> $A_+^{*}$ of $A_+$ in the space of the Hermitian functionals. Each positive functional satisfies the <strong>Cauchy–Schwarz inequality</strong> $\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\varphi(b^{*}b)$, which makes the assignment $(a,b)\mapsto\varphi(b^{*}a)$ a positive semidefinite form; consequently $\varphi$ is automatically continuous in the order-unit norm, and its norm is $\varphi(1)$ when the algebra is unital. The <strong>states</strong> are the positive functionals normalised by $\varphi(1) = 1$, and they form a <strong>base</strong> of the dual cone: the map $\varphi\mapsto\varphi/\varphi(1)$ retracts the dual cone onto the state space, which is a <strong>weak-$\ast$ compact convex subset</strong> of the dual, metrisable when the algebra is separable.</p>
+<p>The article describes the cone, its base, and its <strong>extreme points</strong>. The extreme points of the state space are the <strong>pure states</strong>, and they are the points at which the order and the representation theory meet: a state is pure exactly when its associated left ideal is maximal, and a pure state is multiplicative when the algebra is commutative, so that the pure states of a commutative involutive algebra are the characters. The <strong>Krein–Milman theorem</strong> gives the states as the closed convex hull of the pure states, and the <strong>faces</strong> of the state space are the annihilators of the closed left ideals, so that the order-theoretic structure of the cone of the functionals mirrors the ideal-theoretic structure of the algebra. This is the content of the article, and it is the reason the states are the correct notion of a geometric point of an involutive algebra.</p>
+<p>The positive cone and the Cauchy–Schwarz inequality are <em>The Positive Cone of an Involutive Algebra</em>; the Hermitian elements, the order unit and the states as a dual base are <em>Hermitian Elements and the Order Unit</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em>; the compact convex sets, the extreme points and the Krein–Milman theorem are <em>Compact Convex Sets and the Krein–Milman Theorem</em>; the faces and the facial structure are <em>Faces and Exposed Points of a Convex Set</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; the Hilbert cone and its positivity are <em>The Hilbert Cone of an Involutive Algebra</em>; the self-adjoint model is <em>The Jordan Algebra of Self-Adjoint Elements</em>; and the $C^{*}$-theory is <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em>.</p>
+<h2 id="the-dual-cone">The Dual Cone</h2>
+<p><strong>Definition.</strong> A linear functional $\varphi$ on the involutive algebra is <strong>Hermitian</strong> when $\varphi(a^{*}) = \overline{\varphi(a)}$ and <strong>positive</strong> when $\varphi(a^{*}a)\geq0$ for every $a$; the set of the positive functionals is the <strong>dual cone</strong> $A_+^{*}$. A <strong>state</strong> is a positive functional with $\varphi(1) = 1$.</p>
+<p><strong>Proposition (the dual cone is a cone).</strong> The set $A_+^{*}$ is a convex cone in the space of the Hermitian functionals, closed in the weak-$\ast$ topology; it is <strong>pointed</strong> when the cone $A_+$ generates the Hermitian part, so that a positive functional vanishing on $A_+$ vanishes on the Hermitian part; and it is <strong>generating</strong> in the dual when $A$ is reduced and $1$ is an order unit.</p>
+<p><em>Proof.</em> The sum of two positive functionals and a nonnegative multiple of one are positive, so the set is a convex cone; it is the intersection of the weak-$\ast$ closed half-spaces $\{\varphi : \varphi(a^{*}a)\geq0\}$ over the generators of the cone, hence closed; the pointedness and the generation are the order-theoretic statements of the dual of an ordered space with order unit.</p>
+<p><strong>Proposition (continuity and the norm).</strong> Every positive functional satisfies the Cauchy–Schwarz inequality</p>
+<p>$$
+\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)
+$$</p>
+<p>and hence is continuous; in a unital algebra with the order-unit norm, $\lVert\varphi\rVert = \varphi(1)$ and the positivity of $\varphi$ is equivalent to the bound $\lvert\varphi(a)\rvert\leq\varphi(1)\lVert a\rVert$. In the unital case every positive functional is <strong>self-adjoint</strong>, $\varphi(a^{*}) = \overline{\varphi(a)}$, so the Hermitian hypothesis is redundant.</p>
+<p><em>Proof.</em> The inequality is that of <em>The Positive Cone of an Involutive Algebra</em>; it gives $\lvert\varphi(a)\rvert^{2}\leq\varphi(1)\varphi(a^{*}a)\leq\varphi(1)^{2}\lVert a\rVert^{2}$ using the order-unit norm, whence the continuity and the norm bound; the reverse bound is $\lvert\varphi(1)\rvert\leq\lVert\varphi\rVert$, and the self-adjointness follows by applying the Cauchy–Schwarz inequality to $a$ and $1$ and comparing the real and imaginary parts.</p>
+<p><strong>Proposition (the states form a base).</strong> The states are the base of the dual cone at the order unit: every nonzero positive functional is a unique positive multiple of a state, the state space</p>
+<p>$$
+S(A) = \{\varphi\in A_+^{*} : \varphi(1) = 1\}
+$$</p>
+<p>is convex, and it is compact in the weak-$\ast$ topology and metrisable when $A$ is separable.</p>
+<p><em>Proof.</em> The rescaling $\varphi\mapsto\varphi/\varphi(1)$ is well defined and positive because $\varphi(1)>0$ for a nonzero positive functional with the order unit; the uniqueness is the normalisation; the convexity is immediate; the compactness is the Banach–Alaoglu theorem applied to the weak-$\ast$ closed bounded set $\{\lVert\varphi\rVert\leq1\}$, in which the states are cut out by the continuous equation $\varphi(1) = 1$.</p>
+<h2 id="the-states-and-the-order">The States and the Order</h2>
+<p><strong>Proposition (the states determine the order).</strong> For Hermitian $h,k$,</p>
+<p>$$
+h\leq k \iff \varphi(h)\leq\varphi(k) \ \text{ for every state } \varphi ,
+$$</p>
+<p>so the order of the Hermitian part is recovered from the state space, and the order isomorphism classes of unital reduced involutive algebras are determined by the order-theoretic structure of their state spaces.</p>
+<p><em>Proof.</em> One direction is the positivity of the states on the cone. Conversely, if $k - h\notin A_+$, then by the Hahn–Banach theorem there is a Hermitian functional $\psi$ with $\psi(k - h)<0$ and $\psi$ bounded by the order unit; adding a large positive multiple of the identity functional makes it positive and a state, and it still separates $h$ and $k$ by construction; this is the separation theorem in the ordered space with order unit.</p>
+<p><strong>Proposition (the states are an order ideal of the dual).</strong> The order on the functionals defined by $\varphi\leq\psi\iff\psi - \varphi\in A_+^{*}$ makes the dual cone an ordered cone, and the states are an order interval $[0,1]$ of the dual; a positive functional $\varphi$ with $\varphi\leq1$ is a state exactly when $\varphi(1) = 1$, and the interval $[0,1]$ of the dual is the set of the <strong>substates</strong>.</p>
+<p><em>Proof.</em> The order is the dual order of the cone; the identification is the definition of the states and the substates.</p>
+<h2 id="the-extreme-points">The Extreme Points</h2>
+<p><strong>Definition.</strong> A state $\varphi$ is <strong>pure</strong> when it is an extreme point of the state space $S(A)$, that is, when $\varphi = t\varphi_1 + (1 - t)\varphi_2$ with $\varphi_1,\varphi_2$ states and $0<t<1$ forces $\varphi_1 = \varphi_2 = \varphi$.</p>
+<p><strong>Theorem (Krein–Milman).</strong> The state space is the closed convex hull of its extreme points,</p>
+<p>$$
+S(A) = \overline{\mathrm{conv}}\ \mathrm{ext}\,S(A) ,
+$$</p>
+<p>so every state is a weak-$\ast$ limit of convex combinations of pure states; the extreme points are nonempty, and when $S(A)$ is metrisable they form a $G_\delta$ set.</p>
+<p><em>Proof.</em> The state space is a compact convex subset of a locally convex space, and the Krein–Milman theorem applies; the nonemptiness of the set of the extreme points is part of that theorem, the description of the set of the extreme points in the metrisable case is the Choquet theory of <em>Faces and Exposed Points of a Convex Set</em>.</p>
+<p><strong>Theorem (the pure states and the maximal left ideals).</strong> In a unital C*-algebra the pure states are exactly the states whose associated left ideals $N_\varphi = \{a : \varphi(a^{*}a) = 0\}$ are maximal; equivalently, the pure states are the states whose Gelfand–Naimark–Segal representation is irreducible, and the equivalence classes of the pure states are the unitary equivalence classes of the irreducible representations.</p>
+<p><em>Proof.</em> The Gelfand–Naimark–Segal construction associates to a state $\varphi$ a representation $\pi_\varphi$ with cyclic vector $\xi$ and $N_\varphi$ as its kernel; the representation is irreducible exactly when $N_\varphi$ is maximal, and a state is a convex combination of two states exactly when its representation is a direct sum, so the irreducibility is equivalent to the purity. This is the standard theorem of the theory, and the details belong to <em>Operator Algebras</em>.</p>
+<p><strong>Corollary (the commutative case).</strong> When $A$ is a commutative unital C*-algebra the pure states are exactly the <strong>characters</strong>, the multiplicative functionals; the state space is the set of the probability measures on the Gelfand spectrum $X$ of $A$, and the pure states are the point masses,</p>
+<p>$$
+\varphi_x(a) = a(x) ,
+$$</p>
+<p>so that the Gelfand–Naimark theorem identifies $A$ with $C(X)$ and the states with the Radon probability measures on $X$.</p>
+<p><em>Proof.</em> A pure state in the commutative case has a maximal left ideal, and the quotient is a field-like quotient which for a commutative C*-algebra is a character; conversely a character is extreme because it is multiplicative and the multiplicativity forces the purity; the identification of the states with the probability measures is the Riesz representation theorem, and the point masses are extreme among the measures.</p>
+<p><strong>Theorem (the faces are the annihilators of the left ideals).</strong> The faces of the state space are the sets</p>
+<p>$$
+F_I = \{\varphi\in S(A) : \varphi(a^{*}a) = 0 \ \text{for all } a\in I\}
+$$</p>
+<p>for the closed left ideals $I$ of $A$; the correspondence reverses inclusions, the extreme points correspond to the maximal left ideals, and the facial structure of $S(A)$ is therefore the ideal lattice of $A$ read in the dual.</p>
+<p><em>Proof.</em> A face is determined by the set of the positive elements on which all of its members vanish, which is a closed left ideal by the Cauchy–Schwarz inequality; conversely the annihilator of a left ideal is a face because the vanishing on the generators defines it as an intersection of exposed faces. This is the standard correspondence of the theory.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>For $A = C(X,\mathbb{C})$ the positive functionals are the positive Radon measures, the states are the probability measures, the pure states are the point masses, and the facial structure of the state space is the face lattice of the probability simplex, whose faces are the measures supported in the closed subsets of $X$. This is the commutative model, and it shows that the pure states are the "points" of the space.</p>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>For $A = M_n(\mathbb{C})$ the positive functionals are the positive semidefinite trace functionals, the states are the density matrices $\rho$ with $\rho\geq0$, $\operatorname{tr}\rho = 1$, the pure states are the <strong>rank-one projections</strong>, and every state is a convex combination of these with the coefficients the eigenvalues of $\rho$; the facial structure is the lattice of the subspaces of $\mathbb{C}^{n}$, a face being the set of the states supported in a subspace. This is the finite-dimensional model, and it is the origin of the quantum-mechanical reading of the states.</p>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>For $A = \mathbb{C}[G]$ with $g^{*} = g^{-1}$ the positive functionals are the positive-definite forms on the group, the states are the positive-definite functions normalised at the identity, and the pure states are the extreme points of the set of the positive-definite functions, which by the Gelfand–Raikov theory correspond to the irreducible unitary representations. The facial structure of the state space is the ideal lattice of the group algebra, and it is the origin of the theory of the unitary representations.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>positive functionals</strong> of an ordered involutive algebra form the <strong>dual cone</strong> $A_+^{*}$ of the positive cone, a weak-$\ast$ closed convex cone in the space of the Hermitian functionals, satisfying the <strong>Cauchy–Schwarz inequality</strong> and hence continuous; in the unital algebra the norm is $\varphi(1)$ and every positive functional is self-adjoint. The <strong>states</strong> are the positive functionals with $\varphi(1) = 1$; they form the <strong>base</strong> of the dual cone, a weak-$\ast$ <strong>compact convex set</strong>, and they <strong>determine the order</strong> of the Hermitian part. The <strong>extreme points</strong> of the state space are the <strong>pure states</strong>; the state space is the closed convex hull of them by <strong>Krein–Milman</strong>; in a C*-algebra the pure states are exactly the states with a <strong>maximal left ideal</strong>, equivalently the states with an <strong>irreducible</strong> GNS representation; in the commutative case they are the <strong>characters</strong> and the states are the probability measures; and the <strong>faces</strong> of the state space are the annihilators of the <strong>closed left ideals</strong>, so the facial structure is the ideal lattice of the algebra read in the dual. The positive cone is <em>The Positive Cone of an Involutive Algebra</em>; the Hermitian elements and the order unit are <em>Hermitian Elements and the Order Unit</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em>; the compact convex theory is <em>Compact Convex Sets and the Krein–Milman Theorem</em> and <em>Faces and Exposed Points of a Convex Set</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; and the C*-theory is <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_+^{*}$</td>
+<td>Dual cone of the positive functionals</td>
+</tr>
+<tr>
+<td>$\varphi(a^{*}a)\geq0$</td>
+<td>Positivity of a functional</td>
+</tr>
+<tr>
+<td>$\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\varphi(b^{*}b)$</td>
+<td>Cauchy–Schwarz inequality</td>
+</tr>
+<tr>
+<td>$\lVert\varphi\rVert = \varphi(1)$</td>
+<td>Norm of a positive functional</td>
+</tr>
+<tr>
+<td>$S(A) = \{\varphi\in A_+^{*} : \varphi(1) = 1\}$</td>
+<td>State space, the base of the dual cone</td>
+</tr>
+<tr>
+<td>$\mathrm{ext}\,S(A)$</td>
+<td>Pure states</td>
+</tr>
+<tr>
+<td>$S(A) = \overline{\mathrm{conv}}\,\mathrm{ext}\,S(A)$</td>
+<td>Krein–Milman theorem</td>
+</tr>
+<tr>
+<td>$N_\varphi = \{a : \varphi(a^{*}a) = 0\}$</td>
+<td>Left ideal of a state; maximal for a pure state</td>
+</tr>
+<tr>
+<td>$F_I$</td>
+<td>Face of the state space, the annihilator of the left ideal $I$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the states, the purity and the left ideals.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the Gelfand–Naimark–Segal construction and the irreducible representations.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the positive functionals, the states and the extreme points.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the state spaces, their faces and the Jordan-theoretic characterisation.</li>
+<li>Robert R. Phelps, <em>Lectures on Choquet's Theorem</em> (Van Nostrand, 1966), for the Krein–Milman theorem, the Choquet theory and the extreme points.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

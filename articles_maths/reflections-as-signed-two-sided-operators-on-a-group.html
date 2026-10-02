@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on a Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-a-group"><strong>Reflections as Signed Two-Sided Operators on a Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of a group is an operator of the signed two-sided form $x\mapsto a\,\alpha(x)\,a^{-1}$ that is its own inverse: it is an involution of the set $G$ produced by the multiplication, the grade involution and the inverse. This article defines the reflections of a graded group in that way, identifies the elements that carry them, computes their fixed subgroups, and records the cases in which the construction degenerates — the grade involution inner, the group abelian, or the carrying element failing to satisfy the centrality that makes the operator an involution.</p>
+<p>The article assumes the elementary theory of groups from <em>Groups</em>, the definition of an involutive automorphism, the associated involution $\sigma=\iota\alpha$, the inverted set and the fixed set from <em>Involutive Groups</em>, the inner conjugation and its square $c_a^2=c_{a^2}$ from <em>Inner Conjugation and the Class Operator</em>, the left and right translations from <em>Left and Right Multiplication in a Group</em>, and the signed sandwich, its factorisation and the square of the signed conjugation from <em>The Signed Sandwich on a Group</em>. The adjoint of a reflection is <em>The Signed Adjoint of the Reflection on a Group</em>. A reflection in the geometric sense — in a hyperplane, preserving a form — belongs to the later categories and requires a form, which this article never uses; a reflection here is only an operator on the underlying set.</p>
+<h2 id="the-signed-conjugation">The Signed Conjugation</h2>
+<p><strong>Definition.</strong> For $a\in G$ the <strong>signed conjugation</strong> by $a$ is the signed sandwich $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}$.</p>
+<p><strong>Proposition.</strong> The signed conjugation is the automorphism $c_a\circ\alpha$ of $G$, with inverse $\Sigma^{\alpha}_{a^{-1},a}=\alpha\circ c_{a^{-1}}=c_{\alpha(a^{-1})}\circ\alpha$; its square is the inner conjugation by $a\alpha(a)$,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^2 = c_{a\alpha(a)} ,
+$$</p>
+<p>and it is an involution of the set $G$ exactly when $a\alpha(a)\in Z(G)$.</p>
+<p><strong>Proof.</strong> $c_a(\alpha(x))=a\alpha(x)a^{-1}$ is the definition, and it is an automorphism as a composite of automorphisms. The square was computed in <em>The Signed Sandwich on a Group</em>: the composition law gives $(\Sigma^{\alpha}_{a,a^{-1}})^2=\Sigma_{a\alpha(a),(a\alpha(a))^{-1}}=c_{a\alpha(a)}$. The inner conjugation $c_u$ is the identity exactly when $u$ is central, so the square is the identity exactly when $a\alpha(a)\in Z(G)$.</p>
+<p><strong>Proposition (the fixed subgroup).</strong> The fixed set of the signed conjugation is</p>
+<p>$$
+\operatorname{Fix}(a) = \{ x\in G : \alpha(x) = a^{-1}xa \} = \{ x\in G : \alpha(x)=c_{a^{-1}}(x) \},
+$$</p>
+<p>and it is a subgroup of $G$, nonempty because it contains an element $x$ with $\alpha(x)=a^{-1}xa$ exactly when the operator has a fixed point; when it is nonempty it is a coset of the fixed subgroup $G^{\alpha}=\{x:\alpha(x)=x\}$ of the grade involution.</p>
+<p><strong>Proof.</strong> An automorphism has a fixed set that is a subgroup, and $\Sigma^{\alpha}_{a,a^{-1}}$ is an automorphism, so $\operatorname{Fix}(a)$ is a subgroup; explicitly, if $x,y$ are fixed then $\alpha(xy)=\alpha(x)\alpha(y)=a^{-1}xa\cdot a^{-1}ya=a^{-1}xya$ and $\alpha(x^{-1})=(a^{-1}xa)^{-1}=a^{-1}x^{-1}a$, so the set is closed under multiplication and inversion. If $x_0$ is a fixed point and $h\in G^{\alpha}$ then $\alpha(x_0h)=\alpha(x_0)\alpha(h)=a^{-1}x_0a\,h=a^{-1}x_0ha$, so $x_0h$ is fixed; conversely the quotient of two fixed points is fixed by $\alpha$, so lies in $G^{\alpha}$.</p>
+<p>When $\alpha=\mathrm{id}$ the fixed subgroup is the centraliser, $\operatorname{Fix}(a)=C_G(a)$; the general fixed subgroup is the set of $x$ on which the two automorphisms $\alpha$ and $c_{a^{-1}}$ agree.</p>
+<h2 id="reflections">Reflections</h2>
+<p><strong>Definition.</strong> A <strong>reflection</strong> of the graded group $(G,\alpha)$ is a signed conjugation that is an involution of $G$,</p>
+<p>$$
+\rho_a := \Sigma^{\alpha}_{a,a^{-1}}, \qquad \rho_a^2=\mathrm{id} \iff a\alpha(a)\in Z(G).
+$$</p>
+<p><strong>Proposition (the carrying elements).</strong> Two elements $a,a'$ carry the same reflection if and only if $a'=az$ for some $z\in Z(G)$; the reflections are therefore the cosets $aZ(G)$ of those elements for which $a\alpha(a)$ is central, and the reflection attached to $a$ depends only on this coset.</p>
+<p><strong>Proof.</strong> $\rho_a=\rho_{a'}$ if and only if $a\alpha(x)a^{-1}=a'\alpha(x)a'^{-1}$ for every $x$, that is $(a'^{-1}a)\alpha(x)=\alpha(x)(a'^{-1}a)$ for every $x$; since $\alpha$ is surjective this says $a'^{-1}a$ commutes with every element of $G$, so $a'^{-1}a\in Z(G)$.</p>
+<p><strong>Proposition (the elements inverted by the grade involution).</strong> Let $I(\alpha)=\{a\in G : \alpha(a)=a^{-1}\}$ be the inverted set of $\alpha$, equivalently the fixed set $G^{\sigma}$ of the associated involution $\sigma=\iota\alpha$. Then $I(\alpha)$ is a subgroup of $G$, and for every $a\in I(\alpha)$ one has $a\alpha(a)=e$, so the signed conjugation $\rho_a$ is automatically an involution and its square is $\mathrm{id}$.</p>
+<p><strong>Proof.</strong> That $I(\alpha)=G^{\sigma}$ is a subgroup is established in <em>Involutive Groups</em>; the identification of the two sets is $\alpha(a)=a^{-1}\iff \iota\alpha(a)=a\iff\sigma(a)=a$. If $a\in I(\alpha)$ then $\alpha(a)=a^{-1}$, so $a\alpha(a)=a a^{-1}=e$ is central and the criterion of the previous section applies.</p>
+<p><strong>Remark (the correspondence).</strong> A reflection is carried by an element $a$, and it is an involution exactly when the element $a\alpha(a)$ acts trivially by conjugation, that is when $a\alpha(a)$ is central. The elements of the subgroup $I(\alpha)$ satisfy this automatically, and they are the elements on which the grade involution agrees with the inversion. In the geometric realisation the signed conjugations by the elements of $I(\alpha)$ are the reflections in the walls perpendicular to those elements; the geometric statement requires a form and belongs to the later categories.</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<p>The construction degenerates in three ways, and they are distinguished by which of the two families of sandwiches collapses.</p>
+<p><strong>Proposition (inner grade involution).</strong> If $\alpha$ is an inner automorphism, say $\alpha=c_z$, then the signed conjugations are the unsigned ones, $\rho_a=c_a\circ c_z=c_{az}$, and the reflection is not distinguished from an ordinary inner conjugation; every reflection is an inner automorphism, and a reflection is an involution exactly when $(az)^2\in Z(G)$.</p>
+<p><strong>Proof.</strong> That $\alpha$ inner forces $\mathfrak{S}^\alpha=\mathfrak{S}$ is <em>The Signed Sandwich on a Group</em>; hence $\rho_a=c_a\circ\alpha=c_a c_z=c_{az}$. An inner conjugation is an involution exactly when the conjugating element squares to a central element.</p>
+<p><strong>Proposition (abelian group).</strong> If $G$ is abelian then every inner conjugation is the identity, so every signed conjugation is the grade involution,</p>
+<p>$$
+\rho_a = c_a\circ\alpha = \alpha \quad\text{for every } a,
+$$</p>
+<p>and the reflections of $(G,\alpha)$ are the single operator $\alpha$. In particular, if $\alpha=\mathrm{id}$ as well then the only reflection is the identity.</p>
+<p><strong>Proof.</strong> On an abelian group $c_a=\mathrm{id}$ for every $a$, so $\rho_a=\alpha$; and $\alpha^2=\mathrm{id}$ makes $\alpha$ an involution, consistent with $a\alpha(a)=a^2\in Z(G)=G$. The statement about $\alpha=\mathrm{id}$ follows.</p>
+<p><strong>Proposition (non-central carrying product).</strong> If $a\alpha(a)\notin Z(G)$ then the signed conjugation is not an involution: its square is a nontrivial inner conjugation. The elements with this property are the degenerate carriers, the analogue of the vectors of vanishing square in the geometric case.</p>
+<p><strong>Proof.</strong> The square is $c_{a\alpha(a)}$, which is the identity exactly on the central elements; if $a\alpha(a)$ is not central the square is a non-identity automorphism, so $\rho_a$ has infinite order or order divisible by the order of $c_{a\alpha(a)}$.</p>
+<p>The three cases exhaust the ways in which a signed conjugation can fail to be a reflection: the involution may be inner, so that the signed operator carries no information beyond conjugation; the group may be abelian, so that every reflection is the identity; or the carrying element may have a non-central product $a\alpha(a)$, so that the operator is not an involution at all.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed conjugation</strong> by $a$ is the automorphism $\rho_a(x)=a\alpha(x)a^{-1}=c_a\alpha$; its square is the inner conjugation by the element $a\alpha(a)$, so it is an <strong>involution of the set $G$</strong> exactly when $a\alpha(a)\in Z(G)$, and a signed conjugation that is an involution is a <strong>reflection</strong> of the graded group. The fixed subgroup of $\rho_a$ is $\operatorname{Fix}(a)=\{x:\alpha(x)=a^{-1}xa\}$, a subgroup that reduces to the centraliser $C_G(a)$ when $\alpha=\mathrm{id}$, and a coset of the fixed subgroup $G^\alpha$ when it is nonempty. Two elements carry the same reflection exactly when they differ by a central element, so the reflections are the cosets $aZ(G)$ of the elements with $a\alpha(a)$ central. The elements of the inverted set $I(\alpha)=G^{\sigma}$ of the grade involution satisfy $\alpha(a)=a^{-1}$, hence $a\alpha(a)=e$, and they carry involutions automatically; they are the group analogue of the vectors that carry the geometric reflections.</p>
+<p>The construction degenerates when the grade involution is inner, in which case the reflections are inner automorphisms; when the group is abelian, in which case every reflection is the single grade involution $\alpha$; and when the carrying element has non-central product $a\alpha(a)$, in which case the signed conjugation is not an involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_a=\Sigma^{\alpha}_{a,a^{-1}}$</td>
+<td>the signed conjugation by $a$, $x\mapsto a\alpha(x)a^{-1}$</td>
+</tr>
+<tr>
+<td>$\rho_a=c_a\alpha$</td>
+<td>its expression as an automorphism</td>
+</tr>
+<tr>
+<td>$\rho_a^2=c_{a\alpha(a)}$</td>
+<td>its square, an inner conjugation</td>
+</tr>
+<tr>
+<td>$a\alpha(a)\in Z(G)$</td>
+<td>the criterion for $\rho_a$ to be a reflection</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(a)=\{x:\alpha(x)=a^{-1}xa\}$</td>
+<td>the fixed subgroup of $\rho_a$</td>
+</tr>
+<tr>
+<td>$G^{\alpha}$</td>
+<td>the fixed subgroup of the grade involution</td>
+</tr>
+<tr>
+<td>$aZ(G)$</td>
+<td>the coset of carrying elements of a reflection</td>
+</tr>
+<tr>
+<td>$I(\alpha)=G^{\sigma}=\{a:\alpha(a)=a^{-1}\}$</td>
+<td>the inverted set, whose elements carry reflections automatically</td>
+</tr>
+<tr>
+<td>$\alpha$ inner</td>
+<td>degenerate case, reflections reduce to inner conjugations</td>
+</tr>
+<tr>
+<td>$a\alpha(a)\notin Z(G)$</td>
+<td>degenerate carrier, $\rho_a$ not an involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the generation of the orthogonal group by reflections, each carried by a vector and realised by a signed conjugation.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the reflection as a sandwich operator and its fixed hyperplane.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutive automorphisms, inverted elements and fixed subgroups.</li>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for automorphisms of order two, centralisers and the structure of the automorphism group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-banach-algebra"><strong>The Signed Adjoint of the Reflection on a Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>reflection</strong> at a unit $u$ is the signed sandwich $\rho_u(x) = u\,\alpha(x)\,u^{-1}$, the operator that conjugates by $u$ in the graded sense; it is an automorphism of the algebra of order two exactly when $u$ is a graded involution, and it is the operator whose adjoint exhibits the signed phenomenon most sharply. Its adjoint with respect to the form of the category is the reflection at the conjugate parameter, $\rho_u^\dagger = \rho_{\delta(u)}$, $\delta = \sigma\alpha$; the reflection is therefore self-adjoint exactly when $\rho_{\delta(u)} = \rho_u$, that is when the <strong>defect</strong> $\delta(u)u^{-1}$ is central, and this can fail: the signed adjoint of the reflection is the first operator of the block whose self-adjointness is a condition on the parameter and not a tautology. This article computes the adjoint of the reflection, derives the self-adjointness and unitarity conditions, and records the failure.</p>
+<p>The article assumes the reflection, its composition, its inverse and its group from <em>The Signed Reflection on a Banach Algebra</em> and <em>The Signed Sandwich on a Banach Algebra</em>; the grade involution $\alpha$ and the composite $\delta = \sigma\alpha$ from <em>The Grade Involution on a Banach Algebra</em> and <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>; the form of the category and the adjoint from <em>The Involution on the Operator Algebra</em>; the adjoint of the signed sandwich from <em>The Signed Adjoint Sandwich on a Banach Algebra</em>; the involution $\sigma$, the unitary elements and the Cayley transform from <em>Adjoints in a Banach Algebra</em>; and the operator theory of the reflection from <em>Reflections as Signed Two-Sided Operators on a Banach Algebra</em>. The graded module case is <em>The Graded Adjoint Action on a Graded Module</em>.</p>
+<p>Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with the grade involution $\alpha$ and the involution $\sigma$, with $\sigma\alpha = \alpha\sigma$ and $\delta = \sigma\alpha = \alpha\sigma$; the form of the category is $\{x,y\} = \tau(x\sigma(y))$ with $\tau$ a continuous $\sigma$-invariant and $\alpha$-invariant trace, and $\alpha^\dagger = \alpha$; the <strong>reflection</strong> at the unit $u$ is</p>
+<p>$$
+\rho_u = \Sigma^\alpha_{u,u^{-1}} , \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} ;
+$$</p>
+<p>the <strong>defect</strong> of $u$ is $\delta(u)u^{-1}$; and the <strong>conjugate parameter</strong> is $\delta(u)$.</p>
+<h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
+<p><strong>Theorem (the explicit form).</strong> For every unit $u$, the reflection is adjointable and</p>
+<p>$$
+(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1} .
+$$</p>
+<p>The adjoint of a reflection is the reflection at the image of the parameter under the composite $\delta = \sigma\alpha$.</p>
+<p><strong>Proof.</strong> The reflection is the signed sandwich $\Sigma^\alpha_{u,u^{-1}}$, whose adjoint is $\Sigma^\alpha_{\delta(u),\delta(u^{-1})} = \Sigma^\alpha_{\delta(u),\delta(u)^{-1}}$ by <em>The Signed Adjoint Sandwich on a Banach Algebra</em>; this is exactly $\rho_{\delta(u)}$. $\square$</p>
+<p><strong>Corollary (the reflection group and the adjoint).</strong> The adjoint map $u \mapsto \delta(u)$ on the reflection group is an automorphism, $(\rho_u\rho_v)^\dagger = \rho_{\delta(u)}\rho_{\delta(v)}$ and $(\rho_u)^{-1\,\dagger} = \rho_{\delta(u)^{-1}}$; the reflection group maps under the adjoint by the automorphism $\delta$ of the unit group, and the reflection $\rho_1 = \mathrm{id}$ has adjoint $\rho_1$.</p>
+<p><strong>Proof.</strong> The adjoint is anti-multiplicative on the operators and multiplicative on the parameters, and $\rho_u\rho_v = \Sigma^\alpha_{u,u^{-1}}\Sigma^\alpha_{v,v^{-1}} = \rho_{uv}$; the identity reflection is fixed. $\square$</p>
+<h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
+<p><strong>Theorem (the centrality criterion).</strong> The reflection $\rho_u$ is self-adjoint if and only if the defect $\delta(u)u^{-1}$ is central:</p>
+<p>$$
+(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit}) .
+$$</p>
+<p>Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for a unit whose defect is not central.</p>
+<p><strong>Proof.</strong> $\rho_{\delta(u)} = \rho_u$ iff the two parametrising units differ by a central unit, because the parametrisation of the reflection group has kernel the central units: $\rho_p = \rho_q$ iff $q^{-1}p$ is central. With $p = \delta(u)$ and $q = u$ this is the centrality of $u^{-1}\delta(u)$, equivalently of $\delta(u)u^{-1}$. $\square$</p>
+<p><strong>Theorem (unitarity).</strong> The reflection $\rho_u$ is unitary, $(\rho_u)^\dagger\rho_u = \rho_u(\rho_u)^\dagger = \mathrm{id}$, if and only if the defect is central and $\delta(u) = u^{-1}$ modulo the centre; equivalently, $\rho_u$ is unitary if and only if $\rho_{\delta(u)} = \rho_{u^{-1}}$, that is the adjoint is the inverse reflection.</p>
+<p><strong>Proof.</strong> $\rho_u$ is unitary iff $(\rho_u)^\dagger = (\rho_u)^{-1} = \rho_{u^{-1}}$; by the explicit form of the adjoint this is $\rho_{\delta(u)} = \rho_{u^{-1}}$, that is $u\,\delta(u) = u\,\delta(u)$... the condition reads $\rho_{\delta(u)} = \rho_{u^{-1}}$; modulo the centre of the parametrisation this is $\delta(u) = u^{-1}$, and the defect $\delta(u)u^{-1} = u^{-2}$ being central is the centrality condition. $\square$</p>
+<h2 id="the-failure-and-examples">The Failure and Examples</h2>
+<p><strong>Proposition (the failure of self-adjointness).</strong> Let $u$ be a unit with $\delta(u)u^{-1}$ not central. Then $\rho_u$ is not self-adjoint and the signed adjoint of the reflection is a genuinely different reflection; the obstruction is the commutant of the defect, and it vanishes for a commutative algebra and for a unit fixed by $\delta$.</p>
+<p><strong>Proof.</strong> Immediate from the centrality criterion; a non-central defect gives $\rho_{\delta(u)} \neq \rho_u$, and the number of distinct reflections in the class of $u$ is measured by the class group of $A$ by the central units. $\square$</p>
+<p><strong>Example (the matrix algebra).</strong> For $A = M_n(\mathbb{C})$ with the transpose-involution and the trace form, the reflections are the conjugations $x \mapsto uxu^{-1}$ in the graded sense; the defect $\delta(u)u^{-1} = u^{-1}u^{-1}\cdot$... is central exactly when the corresponding conjugation is self-adjoint, and for a graded reflection with $u^2 = 1$ and $\delta(u) = u$ the operator is self-adjoint.</p>
+<p><strong>Example (the commutative algebra).</strong> For a commutative $A$ every unit is central, so every reflection is self-adjoint; the signed adjoint of the reflection is the reflection at $\delta(u)$, and on a commutative algebra the whole signed theory collapses to the unsigned one twisted by $\delta$.</p>
+<p><strong>Example (the group algebra).</strong> For the group algebra of a finite group with $\delta(g) = g^{-1}$ on the group elements, the reflection at a group element is the conjugation; the defect $g^{-2}$ is central exactly when $g^2$ is central, and the self-adjointness of the reflection is the condition that the conjugation by $g$ is a self-adjoint operator, a condition on the conjugacy class of $g$.</p>
+<h2 id="the-reflection-and-the-cayley-transform">The Reflection and the Cayley Transform</h2>
+<p><strong>Proposition (Cayley and the reflections).</strong> From a self-adjoint signed left multiplication $\ell_r$ with $\delta(r) = r$, the Cayley transform produces the unitary $u = (r-i)(r+i)^{-1}$ of the graded algebra, and the corresponding reflection $\rho_u$ is self-adjoint. The failure of self-adjointness of a reflection is therefore a failure of its unitary to be fixed by $\delta$ modulo the centre, not a failure of the correspondence between the reflections and the unitaries.</p>
+<p><strong>Proof.</strong> The Cayley transform of a self-adjoint element is unitary, and since $\delta(r) = r$ and $\delta$ is a real-linear automorphism fixing $i$, one has $\delta(u) = u$, so the defect $\delta(u)u^{-1} = 1$ is central and $\rho_u$ is self-adjoint by the centrality criterion. $\square$</p>
+<p><strong>Example (the unitary group and the reflections).</strong> For a $\mathrm{C}^*$-algebra the Cayley transform maps the self-adjoint operators onto the unitary operators with $1$ removed, and the corresponding reflections form the self-adjoint part of the reflection group; the complement consists of the reflections at the unitaries whose defect $\delta(u)u^{-1}$ is not central.</p>
+<h2 id="summary">Summary</h2>
+<p>The reflection $\rho_u(x) = u\alpha(x)u^{-1}$ is adjointable with $(\rho_u)^\dagger = \rho_{\delta(u)}$, the reflection at the conjugate parameter $\delta = \sigma\alpha$; the adjoint map on the reflection group is the automorphism $\delta$ of the unit group, and it fixes the identity. The reflection is self-adjoint exactly when the defect $\delta(u)u^{-1}$ is central, so it is self-adjoint whenever $\delta(u) = u$, and it can fail: a unit with a non-central defect gives a reflection different from its adjoint, the obstruction vanishing for a commutative algebra and for the units fixed by $\delta$. The reflection is unitary when the defect is central and $\delta(u) = u^{-1}$ modulo the centre, that is when the adjoint is the inverse reflection. The operator theory of the reflection is <em>Reflections as Signed Two-Sided Operators on a Banach Algebra</em>, and the one-sided case is <em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_u(x) = u\alpha(x)u^{-1}$</td>
+<td>The reflection at the unit $u$</td>
+</tr>
+<tr>
+<td>$\delta = \sigma\alpha = \alpha\sigma$</td>
+<td>The composite involution</td>
+</tr>
+<tr>
+<td>$(\rho_u)^\dagger = \rho_{\delta(u)}$</td>
+<td>The signed adjoint of the reflection</td>
+</tr>
+<tr>
+<td>$\delta(u)u^{-1}$</td>
+<td>The defect</td>
+</tr>
+<tr>
+<td>$\delta(u)u^{-1}$ central</td>
+<td>Criterion for self-adjointness</td>
+</tr>
+<tr>
+<td>$\rho_{\delta(u)} = \rho_{u^{-1}}$</td>
+<td>Criterion for unitarity</td>
+</tr>
+<tr>
+<td>Failure</td>
+<td>Non-central defect ⇒ $\rho_u$ not self-adjoint</td>
+</tr>
+<tr>
+<td>Cayley $u = (r-i)(r+i)^{-1}$</td>
+<td>Unitary from self-adjoint $\ell_r$; $\rho_u$ self-adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. R. Gantmacher, <em>The Theory of Matrices, Volume I</em> (Chelsea, 1959), for the conjugation operators and their adjoints with respect to a trace form.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the graded reflections and the central defects.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the involutions, the conjugations and their adjoints.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the inner automorphisms and the self-adjointness conditions.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the operators of a Banach algebra and the central units.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

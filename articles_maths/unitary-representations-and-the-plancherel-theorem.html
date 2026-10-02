@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Representations and the Plancherel Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-representations-and-the-plancherel-theorem"><strong>Unitary Representations and the Plancherel Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unitary representations of a group organise themselves into a dual object, and the group algebra acts on each of them by an integrated representation. When the dual is smooth enough — the type I case — the two structures are tied by a single measure: the Plancherel measure, with respect to which the group $L^2$ space is unitarily equivalent to the direct integral of the Hilbert–Schmidt spaces of the dual, and with respect to which the inversion formula reconstructs a function from its operator-valued transform. This article states the theorem in its representation-theoretic form, identifies the measure and its normalisation, gives the inversion formula, and records the two extreme cases, the compact group with its counting measure and the abelian group with the dual Haar measure.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its involution and the correspondence between nondegenerate <code>*</code>-representations and continuous unitary representations from <em>The Convolution Algebra $L^1(G)$</em>; the involutive algebra, the positive cone and the completions from <em>The Group Algebra as an Involutive Algebra</em>; the positive definite functions, the GNS construction and the Gelfand–Raikov theorem from <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>; the spherical functions and the spherical spectrum from <em>Spherical Functions and the Zonal Spherical Function</em>, immediately preceding; the characters, the orthogonality relations and the discrete decomposition from <em>Analysis on Compact Groups</em> and <em>The Peter–Weyl Theorem</em>; the unitary dual, the direct integral decomposition, the type I property and the multiplicity theory from <em>Noncommutative Harmonic Analysis</em> and <em>Type I Groups</em>; the Pontryagin duality and the Fourier transform from <em>Harmonic Analysis on Groups</em>; the direct integrals, the traces, the trace class, the Hilbert–Schmidt class and the measurable fields of Hilbert spaces from <em>Operator Algebras</em>. The Plancherel theorem as a measure-theoretic statement and the existence of the measure are <em>The Plancherel Theorem</em>; the transform as a single operator and its unitary equivalence are <em>The Plancherel Operator</em>; the adjoint of a representation operator and the equality $\pi(f^*) = \pi(f)^*$ are <em>Unitary Representations and the Adjoint</em>, in the <code>- * Operator Theory</code> group; the Hermitian forms behind the unitary representations are <em>Hermitian Forms and the Group Algebra</em>, later in this group.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and modular function $\Delta$, and $\pi : G\to\mathcal{U}(\mathcal{H}_\pi)$ is a continuous <strong>unitary representation</strong>; its <strong>integrated form</strong> is</p>
+<p>$$
+\pi(f) = \int_G f(x)\,\pi(x)\,dx \in B(\mathcal{H}_\pi) \qquad (f\in L^1(G)),
+$$</p>
+<p>with $\|\pi(f)\|\leq\|f\|_1$, and $\hat G = \operatorname{Irr}(G)$ is the <strong>unitary dual</strong>, the set of unitary equivalence classes of irreducible unitary representations. The group is of <strong>type I</strong> when every unitary representation is a direct integral of irreducible ones and the dual carries a standard Borel structure; the <strong>Plancherel measure</strong> is written $\mu$ and the <strong>operator-valued transform</strong> is $\hat f(\pi) = \pi(f)$.</p>
+<h2 id="the-integrated-representation">The Integrated Representation</h2>
+<p><strong>Theorem (the integrated form is a <code>*</code>-representation).</strong> For every continuous unitary representation $\pi$ the integrated form is a nondegenerate <code>*</code>-representation of the group algebra,</p>
+<p>$$
+\pi(f*g) = \pi(f)\,\pi(g), \qquad \pi(f^*) = \pi(f)^*, \qquad \|\pi(f)\|\leq\|f\|_1 ,
+$$</p>
+<p>and the assignment $\pi\mapsto(\pi(f))_{f\in L^1(G)}$ is a bijection, up to unitary equivalence, between the continuous unitary representations of $G$ and the nondegenerate <code>*</code>-representations of $L^1(G)$.</p>
+<p><strong>Proof.</strong> The multiplicativity is the convolution theorem in integrated form, obtained by writing $\pi(f*g) = \int\!\!\int f(y)g(y^{-1}x)\pi(x)\,dy\,dx$ and substituting $x = yz$; the involution identity uses $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ together with unitarity, $\pi(x^{-1}) = \pi(x)^{-1} = \pi(x)^*$, so that the modular factor and the inverse conspire to give the adjoint. Nondegeneracy is the density of $\pi(L^1(G))\mathcal{H}_\pi$, and the converse recovery of $\pi(x)$ from the integrated form by an approximate identity is the correspondence of <em>The Convolution Algebra $L^1(G)$</em>. $\square$</p>
+<p><strong>Corollary (the transform of the group algebra).</strong> The <strong>operator-valued Fourier transform</strong> $f\mapsto\hat f$, $\hat f(\pi) = \pi(f)$, satisfies</p>
+<p>$$
+\widehat{f*g}(\pi) = \hat f(\pi)\,\hat g(\pi), \qquad \widehat{f^*}(\pi) = \hat f(\pi)^* ,
+$$</p>
+<p>so it is a <code>*</code>-homomorphism from the group algebra into the direct product of the algebras $B(\mathcal{H}_\pi)$ over the dual, with the uniform bound $\|\hat f(\pi)\|\leq\|f\|_1$.</p>
+<p><strong>Proof.</strong> Immediate from the theorem, the representation being read factorwise over $\pi\in\hat G$. $\square$</p>
+<p><strong>Remark (why the <code>*</code>-property is the hinge).</strong> The involution on the group algebra is chosen so that the integrated form is a <code>*</code>-representation: the modular factor in $f^*$ is exactly what makes $\pi(x^{-1})$ into the adjoint of $\pi(x)$ in the integrated formula. Without it the transform would be only a homomorphism, and no positivity, no Plancherel and no inversion would follow. The adjoint computations that make this precise are <em>Unitary Representations and the Adjoint</em>, in the <code>- * Operator Theory</code> group.</p>
+<h2 id="the-plancherel-theorem">The Plancherel Theorem</h2>
+<p><strong>Theorem (Plancherel, representation-theoretic form).</strong> Let $G$ be unimodular and of type I. There is a measure $\mu$ on the unitary dual $\hat G$, unique up to normalisation, called the <strong>Plancherel measure</strong>, such that for every $f\in L^1(G)\cap L^2(G)$</p>
+<p>$$
+\int_G |f(x)|^2\,dx = \int_{\hat G} \operatorname{tr}\!\bigl(\hat f(\pi)\,\hat f(\pi)^*\bigr)\,d\mu(\pi) = \int_{\hat G} \bigl\|\hat f(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi) ,
+$$</p>
+<p>and the transform $f\mapsto\hat f$ extends to a unitary equivalence</p>
+<p>$$
+L^2(G) \;\xrightarrow{\ \cong\ }\; \int_{\hat G}^{\oplus} \mathrm{HS}(\mathcal{H}_\pi)\,d\mu(\pi)
+$$</p>
+<p>between the group $L^2$ space and the direct integral of the Hilbert–Schmidt spaces of the dual, intertwining the left regular representation with the direct integral of the representations $\pi$.</p>
+<p><strong>Proof.</strong> That such a measure exists, and that the transform extends to an isometry onto the direct integral, is the Plancherel theorem of <em>The Plancherel Theorem</em>; the identification of the summand with the Hilbert–Schmidt class uses that $\hat f(\pi)$ is Hilbert–Schmidt for $f\in L^1\cap L^2$ and that the integrated form is a <code>*</code>-representation, so that $\operatorname{tr}(\hat f\hat f^*) = \|\hat f\|_{\mathrm{HS}}^2\geq0$. Uniqueness of the normalisation is the irreducibility of the action: two measures giving the same formula agree on the cylinder sets generating the Borel structure of $\hat G$. $\square$</p>
+<p><strong>Corollary (the inversion formula).</strong> For $f$ whose transform is of trace class for $\mu$-almost every $\pi$ and integrable against the measurable field of trace norms, one has, for almost every $x\in G$ and in the sense of distributions in general,</p>
+<p>$$
+f(x) = \int_{\hat G} \operatorname{tr}\!\bigl(\hat f(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1}) .
+$$</p>
+<p><strong>Proof.</strong> The identity is Plancherel polarised, $\langle f,g\rangle_{L^2} = \int_{\hat G}\operatorname{tr}(\hat f(\pi)\hat g(\pi)^*)d\mu(\pi)$, with $g$ taken as an approximate identity concentrated at $x$; continuity of the pairings gives the pointwise statement where the integrand is integrable, and the distributional statement otherwise. $\square$</p>
+<p><strong>Corollary (the parity with the abelian and compact cases).</strong> The theorem specialises as follows. If $G$ is abelian then every irreducible representation is one-dimensional, the Hilbert–Schmidt class is the complex numbers, $\hat G$ is the Pontryagin dual and $\mu$ is Haar measure on it, so the formula is the ordinary Parseval identity. If $G$ is compact then the dual is discrete, $\mu$ is the counting measure weighted by the dimensions, $\mu = \sum_{\pi\in\hat G}d_\pi\,\delta_\pi$, and the formula is the Plancherel identity of the Peter–Weyl theory,</p>
+<p>$$
+\int_G|f|^2\,dx = \sum_{\pi\in\hat G} d_\pi\,\bigl\|\hat f(\pi)\bigr\|_{\mathrm{HS}}^2 .
+$$</p>
+<p><strong>Proof.</strong> Both are specialisations of the general formula. An abelian group is unimodular and of type I, its irreducible representations have $\mathcal{H}_\pi = \mathbb{C}$, so $\mathrm{HS}(\mathbb{C}) = \mathbb{C}$ and $\operatorname{tr}$ is the identity, and the measure is the dual Haar measure of <em>Harmonic Analysis on Groups</em>; for a compact group the dual is discrete, the trace of the integrated form is $d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$ by the orthogonality relations, and the measure of the singleton $\pi$ is $d_\pi$. $\square$</p>
+<h2 id="the-measure-on-the-dual">The Measure on the Dual</h2>
+<p><strong>Theorem (the measure and the von Neumann algebra).</strong> For $f\in L^1(G)\cap L^2(G)$ the operator $\lambda(f)$ is Hilbert–Schmidt, with</p>
+<p>$$
+\bigl\|\lambda(f)\bigr\|_{\mathrm{HS}}^2 = \int_{\hat G}\bigl\|\hat f(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu(\pi) = \int_G|f(x)|^2\,dx ,
+$$</p>
+<p>and the Plancherel measure is exactly the measure for which the centre $Z(G) = L(G)\cap L(G)'$ of the group von Neumann algebra diagonalises as the direct integral of the scalar multiples of the identity,</p>
+<p>$$
+Z(G) \;\cong\; \int_{\hat G}^{\oplus} \mathbb{C}\,1_{\mathcal{H}_\pi}\; d\mu(\pi) .
+$$</p>
+<p><strong>Proof.</strong> The first identity is Plancherel read on the operator $\lambda(f) = \hat f(\lambda)$, combined with the fact that $\int_{\hat G}\|\hat f(\pi)\|_{\mathrm{HS}}^2d\mu$ is finite for $f\in L^2$. For the second, a type I von Neumann algebra decomposes over its centre, and the von Neumann algebra generated by the regular representation is a direct integral of the factors $B(\mathcal{H}_\pi)$; its centre is the algebra of scalar fields, and the measure entering the direct integral is the one that makes the trace statement of the first identity hold, that is the Plancherel measure. $\square$</p>
+<p><strong>Corollary (the spherical part).</strong> If $(G,K)$ is a Gelfand pair with $G$ of type I, then the restriction of the Plancherel measure to the spherical dual $\operatorname{Irr}(G,K)$ is the spherical Plancherel measure of <em>Spherical Functions and the Zonal Spherical Function</em>, and the multiplicity-one decomposition of the invariant $L^2$ space there is the restriction of the decomposition above to the $K$-fixed part.</p>
+<p><strong>Proof.</strong> The invariant $L^2$ space is the $K$-fixed part of the direct integral, and the spherical representations are the irreducible representations with $\mathcal{H}_\pi^K\neq0$; the measure restricted to them is the spectral measure of the commutative invariant algebra, which is the spherical Plancherel measure. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The existence of the measure and its construction are <em>The Plancherel Theorem</em>; the transform as one operator, its unitary equivalence and the intertwining with the regular representation are <em>The Plancherel Operator</em>, in the <code>- Operator Theory</code> group. The adjoint of a representation operator is <em>Unitary Representations and the Adjoint</em>, in the <code>- * Operator Theory</code> group, and the Hermitian forms on the algebra that the unitary representations define are <em>Hermitian Forms and the Group Algebra</em>, later in this group. The completeness of the dual, the type I property and the multiplicity theory are <em>Noncommutative Harmonic Analysis</em> and <em>Type I Groups</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For a continuous unitary representation $\pi$ of $G$ the integrated form $\pi(f) = \int f(x)\pi(x)dx$ is a nondegenerate <code>*</code>-representation of the group algebra, with $\pi(f*g) = \pi(f)\pi(g)$, $\pi(f^*) = \pi(f)^*$ and $\|\pi(f)\|\leq\|f\|_1$, and the correspondence with the unitary representations of $G$ is a bijection up to unitary equivalence; the modular factor in the involution is exactly what makes the integrated form a <code>*</code>-representation. When $G$ is unimodular and of type I there is a Plancherel measure $\mu$ on the unitary dual, unique up to normalisation, such that for $f\in L^1\cap L^2$ the plancherel identity $\int_G|f|^2 = \int_{\hat G}\operatorname{tr}(\hat f\hat f^*)d\mu = \int_{\hat G}\|\hat f\|_{\mathrm{HS}}^2d\mu$ holds and the transform extends to a unitary $L^2(G)\cong\int_{\hat G}^{\oplus}\mathrm{HS}(\mathcal{H}_\pi)d\mu$ intertwining the regular representation with the direct integral of the $\pi$, with the inversion formula $f(x) = \int_{\hat G}\operatorname{tr}(\hat f(\pi)\pi(x)^*)d\mu(\pi)$. The measure is the one that expresses the centre of the group von Neumann algebra as the scalar fields over the dual; in the abelian case it is the dual Haar measure and in the compact case the dimension-weighted counting measure, recovering Parseval and Peter–Weyl. On a Gelfand pair the restriction to the spherical dual is the spherical Plancherel measure. The adjoint, the Hermitian forms and the operator form of the transform are the neighbouring articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi(f) = \int_G f(x)\pi(x)\,dx$</td>
+<td>The integrated form of a unitary representation</td>
+</tr>
+<tr>
+<td>$\pi(f*g) = \pi(f)\pi(g)$, $\pi(f^*) = \pi(f)^*$</td>
+<td>The <code>*</code>-representation property</td>
+</tr>
+<tr>
+<td>$\hat G = \operatorname{Irr}(G)$</td>
+<td>The unitary dual</td>
+</tr>
+<tr>
+<td>$\hat f(\pi) = \pi(f)$</td>
+<td>The operator-valued Fourier transform</td>
+</tr>
+<tr>
+<td>Type I</td>
+<td>Every unitary representation is a direct integral of irreducible ones</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>The Plancherel measure on $\hat G$</td>
+</tr>
+<tr>
+<td>$\int_G\|f\|^2dx = \int_{\hat G}\|\hat f(\pi)\|_{\mathrm{HS}}^2d\mu$</td>
+<td>The Plancherel identity</td>
+</tr>
+<tr>
+<td>$L^2(G)\cong\int_{\hat G}^{\oplus}\mathrm{HS}(\mathcal{H}_\pi)d\mu$</td>
+<td>The unitary equivalence</td>
+</tr>
+<tr>
+<td>$f(x) = \int_{\hat G}\operatorname{tr}(\hat f(\pi)\pi(x)^*)d\mu$</td>
+<td>The inversion formula</td>
+</tr>
+<tr>
+<td>$\mu = \sum_\pi d_\pi\delta_\pi$</td>
+<td>The compact (Peter–Weyl) case</td>
+</tr>
+<tr>
+<td>Haar measure on $\hat G$</td>
+<td>The abelian (Parseval) case</td>
+</tr>
+<tr>
+<td>$Z(G)\cong\int_{\hat G}^{\oplus}\mathbb{C}\,1_{\mathcal{H}_\pi}d\mu$</td>
+<td>The centre diagonalised by the measure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the Plancherel measure, the direct integral decomposition and the trace formula.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the decomposition of a type I von Neumann algebra over its centre and the group von Neumann algebra.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the Plancherel theorem for unimodular type I groups and the inversion formula.</li>
+<li>George W. Mackey, <em>The Theory of Unitary Group Representations</em> (University of Chicago Press, 1976), for the unitary dual, the type I property and the multiplicity theory.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for direct integrals, measurable fields of Hilbert spaces and Hilbert–Schmidt operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

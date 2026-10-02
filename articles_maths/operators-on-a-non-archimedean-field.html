@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on a Non-Archimedean Field — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-a-non-archimedean-field"><strong>Operators on a Non-Archimedean Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-Archimedean field is a field with an ultrametric absolute value, and its additive operators carry a size — the operator norm — together with a finer invariant than the size: the action induced on the residue field and on the value group. This article treats the operator layer of a non-Archimedean field: the bounded additive operators and their operator norm, the contractive operators that preserve the valuation ring, the <strong>residual operator</strong> that a contractive operator induces on the residue field, the isometries and the group they form, and the property of <strong>spherical completeness</strong>, which is the completeness of the nests of balls rather than of the sequences and is exactly the hypothesis under which the extension theorems of the non-Archimedean theory hold.</p>
+<p>The article assumes the non-Archimedean field, its absolute value, its valuation ring $\mathcal{O}$, its maximal ideal $\mathrm{M}$, its residue field $k$, its value group $\Gamma$ and the ultrametric geometry of balls from <em>Absolute Values, Valuations and Completions</em>; the valuation as a multiplicative operator and its tropical reading from <em>The Valuation Operator</em>; the residue operator and its multiplicative part from <em>The Residue Operator of a Valued Field</em>; the completion operator and the persistence of the residue field and the value group from <em>The Completion Operator</em>; the bounded linear operators and the operator norm on a normed space from <em>Bounded Operators on a Topological Vector Space</em>, later in this Part; and the continuous additive operators, the homeomorphisms and the continuous automorphisms from <em>Operators on a Topological Ring</em>. The Hahn–Banach theorem over a spherically complete field is named and not proved; the analytic theory of power series over a non-Archimedean field is Part III and is not used. No measure and no form occurs.</p>
+<p>Throughout, $(F, \lvert \cdot \rvert)$ is a non-Archimedean field, $\mathcal{O}$, $\mathrm{M}$, $k$ and $\Gamma$ are its valuation ring, maximal ideal, residue field and value group, $\pi$ is a uniformiser when $\Gamma \cong \mathbb{Z}$, and $T$ ranges over the continuous additive operators $F \to F$; the completion is $\widehat{F}$ and the closed ball of radius $r$ about $a$ is $B(a,r) = \{x : \lvert x - a \rvert \leq r\}$.</p>
+<h2 id="the-bounded-operators-and-the-operator-norm">The Bounded Operators and the Operator Norm</h2>
+<p><strong>Definition.</strong> An additive operator $T : F \to F$ is <strong>bounded</strong> if the set $\{\lvert Tx \rvert : \lvert x \rvert \leq 1\}$ is bounded above in $\mathbb{R}$, and the <strong>operator norm</strong> of a bounded $T$ is</p>
+<p>$$
+\lVert T\rVert = \sup_{\lvert x \rvert \leq 1} \lvert Tx \rvert .
+$$</p>
+<p><strong>Proposition (bounded is continuous).</strong> For an additive operator $T$, the following are equivalent: $T$ is bounded; $T$ is uniformly continuous; $T$ is continuous at $0$; there is a constant $C$ with $\lvert Tx \rvert \leq C\lvert x \rvert$ for all $x$. The least such $C$ is the operator norm, and the operator norm is a norm on the space of bounded operators, submultiplicative under composition.</p>
+<p><strong>Proof.</strong> Boundedness gives the estimate on the unit ball and hence, by scaling, everywhere; an estimate gives continuity at $0$ and therefore, additivity being compatible with the uniform structure, uniform continuity; continuity at $0$ gives a ball $B(0,\rho)$ mapped into $B(0,1)$, whence the estimate with $C = \rho^{-1}$ after scaling. The norm axioms are checked termwise; submultiplicativity is $\lvert(ST)x\rvert \leq \lVert S\rVert\lvert Tx\rvert \leq \lVert S\rVert\lVert T\rVert\lvert x\rvert$ for the least constant.</p>
+<p><strong>Proposition (the norm is attained on the unit ball).</strong> For a bounded additive $T$ the supremum defining $\lVert T\rVert$ is a maximum whenever the value set $\lvert F^\times\rvert$ is discrete, and in all cases it is the least $C$ with $\lvert Tx\rvert \leq C\lvert x\rvert$; the two-sided ideal of operators of norm zero is $\{T : T(F) \subseteq \overline{\{0\}}\} = 0$ on a Hausdorff field.</p>
+<p><strong>Proof.</strong> With a discrete value group the values $\lvert Tx\rvert$ form a discrete subset of $\mathbb{R}$, and a bounded subset of a discrete set attains its supremum; in general the supremum need not be attained, as on a dense value group. The kernel of the norm is the set of operators carried into the closure of zero, which is $\{0\}$ for a Hausdorff field, so the norm is a norm in the strict sense.</p>
+<h2 id="the-contractive-operators-and-the-residual-operator">The Contractive Operators and the Residual Operator</h2>
+<p><strong>Definition.</strong> A bounded operator $T$ is <strong>contractive</strong> if $\lVert T\rVert \leq 1$, equivalently $T(\mathcal{O}) \subseteq \mathcal{O}$; it is <strong>infinitesimal</strong> if $\lVert T\rVert < 1$, equivalently $T(\mathcal{O}) \subseteq \mathrm{M}$. The contractive operators form a subring $\mathcal{B}_1$ of the ring $\mathcal{B}$ of bounded operators, with the identity as unit, and the infinitesimal operators form a two-sided ideal of $\mathcal{B}_1$.</p>
+<p><strong>Proposition (contractive operators and the filtration).</strong> For a bounded $T$,</p>
+<p>$$
+\lVert T\rVert \leq 1 \iff T(\mathcal{O}) \subseteq \mathcal{O}, \qquad \lVert T\rVert < 1 \iff T(\mathcal{O}) \subseteq \mathrm{M} .
+$$</p>
+<p>Consequently an infinitesimal operator satisfies $T(\mathrm{M}) \subseteq \mathrm{M}$ and has zero residual operator; a general contractive operator has a residual operator as soon as $T(\mathrm{M}) \subseteq \mathrm{M}$, which holds when $T$ is multiplicative, when $T$ is a scalar multiplication $x \mapsto cx$ with $c$ a unit, and more generally when $T$ carries the open unit ball into itself.</p>
+<p><strong>Proof.</strong> The equivalence of $\lVert T\rVert \leq 1$ with $T(\mathcal{O}) \subseteq \mathcal{O}$ is the definition of the operator norm as a supremum; the second equivalence is the same statement with a strict bound, since $\lVert T\rVert < 1$ means $\lvert Tx\rvert < 1$ for all $x$ of $\lvert x\rvert \leq 1$. An infinitesimal operator therefore carries $\mathcal{O}$ into $\mathrm{M}$, hence $\mathrm{M}$ into $\mathrm{M}$, and its residual operator is zero. A multiplicative operator carries $\mathrm{M}$ into $\mathrm{M}$ because the product of an element of $\mathrm{M}$ with any element of $\mathcal{O}$ lies in $\mathrm{M}$; a scalar multiplication by a unit reverses $\mathcal{O}$ and $\mathrm{M}$ onto themselves.</p>
+<p><strong>Definition.</strong> Let $T$ be a bounded operator with $T(\mathcal{O}) \subseteq \mathcal{O}$. If $T(\mathrm{M}) \subseteq \mathrm{M}$ then $T$ induces a well-defined additive map</p>
+<p>$$
+\bar T : k \longrightarrow k, \qquad \bar T(x + \mathrm{M}) = Tx + \mathrm{M} ,
+$$</p>
+<p>the <strong>residual operator</strong> of $T$. The assignment $T \mapsto \bar T$ is the <strong>reduction</strong> of the operator layer.</p>
+<p><strong>Proposition (the residual map is a ring homomorphism).</strong> On the contractive operators with $T(\mathrm{M}) \subseteq \mathrm{M}$ the assignment $T \mapsto \bar T$ is a ring homomorphism onto the additive endomorphisms of $k$ that it reaches, with $\overline{\mathrm{id}} = \mathrm{id}_k$ and $\overline{ST} = \bar S\bar T$; its kernel is the two-sided ideal of the infinitesimal operators, those with $T(\mathcal{O}) \subseteq \mathrm{M}$, equivalently $\lVert T\rVert < 1$.</p>
+<p><strong>Proof.</strong> If $x - x' \in \mathrm{M}$ then $Tx - Tx' = T(x - x') \in \mathrm{M}$, so $\bar T$ is well defined; it is additive because $T$ is. For the product, $\overline{ST}(x + \mathrm{M}) = STx + \mathrm{M}$ and $\bar S\bar T(x+\mathrm{M}) = \bar S(Tx + \mathrm{M}) = STx + \mathrm{M}$, so the maps agree, using $S(\mathrm{M})\subseteq \mathrm{M}$; the identity reduces to the identity. The kernel is the set of contractive $T$ with $T(\mathcal{O}) \subseteq \mathrm{M}$, that is the infinitesimal operators $\lVert T\rVert < 1$; this is a two-sided ideal because composition with a contractive operator preserves the condition and the sum of two infinitesimal operators is infinitesimal.</p>
+<p><strong>Corollary (the residual operator is the operator on the residue field).</strong> The residual operator is the operator-theoretic form of the residue map of <em>The Residue Operator of a Valued Field</em>: reduction of elements $x \mapsto x + \mathrm{M}$ is the case $T = \mathrm{id}$, and the residual operator of a product $ST$ is the product of the residual operators, so the reduction is a homomorphism of the operator layers that carries the contractive operators onto the operators of the residue field.</p>
+<p><strong>Proof.</strong> The case $T = \mathrm{id}$ gives $\bar T = \mathrm{id}_k$, which is the identity residue map; multiplicativity of the reduction is the proposition. The image is the set of induced maps, which is a subring of $\operatorname{End}(k)$.</p>
+<h2 id="isometries">Isometries</h2>
+<p><strong>Definition.</strong> An additive operator $T$ is an <strong>isometry</strong> if $\lvert Tx \rvert = \lvert x \rvert$ for all $x$, equivalently if $\lVert T\rVert = 1$ and $T$ is injective; the isometries of $F$ onto itself form a group $\operatorname{Isom}(F)$, the <strong>isometry group</strong>. A <strong>scaling</strong> is a map $x \mapsto c x$ for $c \in F^\times$, and a <strong>rotation</strong> is a map $x \mapsto ux$ with $u \in \mathcal{O}^\times$.</p>
+<p><strong>Proposition (the isometry group).</strong> Every isometry preserves the valuation ring and the maximal ideal, $T(\mathcal{O}) = \mathcal{O}$ and $T(\mathrm{M}) = \mathrm{M}$, so it has a residual operator $\bar T$, and $T \mapsto \bar T$ is a homomorphism from $\operatorname{Isom}(F)$ onto a subgroup of the isometry group of $k$. The rotations form a subgroup $\mathcal{O}^\times$ of $\operatorname{Isom}(F)$ with residual image $k^\times$ acting by multiplication, and the scalings form a subgroup $F^\times$ of $\operatorname{Isom}(F)$ with residual image trivial on the classes of the value group.</p>
+<p><strong>Proof.</strong> An isometry maps $\{x : \lvert x\rvert \leq 1\}$ onto itself, giving $T(\mathcal{O}) = \mathcal{O}$, and maps $\mathrm{M}$ onto $\mathrm{M}$; hence it has a residual operator. The map $T\mapsto\bar T$ is a homomorphism by the previous section, and it takes values in the additive automorphisms of $k$ preserving the multiplication by the residue of the rotation, whence the statements about the two subgroups.</p>
+<p><strong>Proposition (the isometries are a closed subgroup).</strong> In the topology of uniform convergence on the balls, the isometry group $\operatorname{Isom}(F)$ is a closed subgroup of the group of homeomorphisms of $F$, and it is contained in the group of uniformly continuous bijections.</p>
+<p><strong>Proof.</strong> An isometry is uniformly continuous and bijective onto $F$ by the inverse function theorem for isometries of a complete field (the inverse is the isometry that reverses it); the isometry condition is closed, being the intersection of the closed conditions $\lvert Tx\rvert = \lvert x\rvert$ for all $x$, so the group is closed. The uniform continuity is immediate from the definition.</p>
+<h2 id="spherical-completeness">Spherical Completeness</h2>
+<p><strong>Definition.</strong> A non-Archimedean field $F$ is <strong>spherically complete</strong> if every decreasing sequence of closed balls $B(a_0, r_0) \supseteq B(a_1, r_1) \supseteq \cdots$ has nonempty intersection. Equivalently, every <strong>nest</strong> of closed balls, any two of which are nested, has nonempty intersection.</p>
+<p><strong>Proposition (spherical completeness is stronger than completeness).</strong> A spherically complete field is complete; the converse fails, and $\mathbb{C}_p$ is complete but not spherically complete.</p>
+<p><strong>Proof.</strong> If $F$ were not complete there would be a Cauchy sequence with no limit; its tail balls form a nest with empty intersection, by the ultrametric estimate $\lvert x_m - x_n\rvert \leq \max_{n\leq k<m}\lvert x_{k+1} - x_k\rvert$, so spherical completeness implies completeness. For $\mathbb{C}_p$, the value group is $\mathbb{Q}$, which is dense; the balls of radii tending to a limit in $\mathbb{R}\setminus\lvert \mathbb{C}_p^\times\rvert$ form a nest with empty intersection, by the standard argument of non-Archimedean analysis. So the two notions differ, and spherical completeness is the strictly stronger one.</p>
+<p><strong>Theorem (characterisations).</strong> For a non-Archimedean field $F$ the following are equivalent: $F$ is spherically complete; $F$ has no nontrivial immediate extension, where an immediate extension is one with the same value group and the same residue field; every additive operator from a subspace of a normed $F$-space to $F$ that is bounded extends to the whole space with the same norm (the non-Archimedean Hahn–Banach theorem, or Ingleton's theorem).</p>
+<p><strong>Proof sketch.</strong> The equivalence of the first two is the standard theorem of Krull: a maximal immediate extension of $F$ is obtained by adjoining the limits of the nests, and it is nontrivial exactly when a nest has empty intersection, so an immediate extension can be built from a nest with no common point and conversely a missing point of a nest yields an immediate extension. The third is Ingleton's theorem: spherical completeness is exactly the hypothesis that makes the ultrametric Hahn–Banach argument close, because the argument produces a nest of balls whose common point is the value to be assigned.</p>
+<p><strong>Corollary (spherical completeness is stable under the standard operations).</strong> A discretely valued complete field is spherically complete, so $\mathbb{Q}_p$ and $k((t))$ are; the completion of a spherically complete field is spherically complete; and a finite extension of a spherically complete field is spherically complete.</p>
+<p><strong>Proof.</strong> In a discretely valued complete field a nest of balls has radii taking finitely many values or tending to a limit in the value group, so it is eventually constant or its centres form a Cauchy sequence, whose limit lies in the intersection; hence the field is spherically complete. The completion statement is the same argument applied to the denser field; the finite-extension statement follows from the equivalence with the absence of immediate extensions, because an immediate extension of a finite extension restricts to an immediate extension of the base.</p>
+<p><strong>Remark (the boundary).</strong> Spherical completeness is used in the non-Archimedean theory of normed spaces — the Hahn–Banach extension theorem, the structure of the dual and the theory of orthogonal bases — which are the modules and vector spaces of this Part, treated by <em>Topological Modules and Vector Spaces</em> and <em>Bounded Operators on a Topological Vector Space</em>. This article only fixes the property and its operator-theoretic content; the normed-space theory that uses it is deferred, and the analytic theory over a non-Archimedean field is Part III.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($\mathbb{Q}_p$).</strong> The value group is $\mathbb{Z}$, discrete, and $\mathbb{Q}_p$ is complete, so it is spherically complete; the residue field is $\mathbb{F}_p$, the contractive operators reduce to the additive operators of $\mathbb{F}_p$, and the rotations are $\mathbb{Z}_p^\times$.</p>
+<p><strong>Example ($k((t))$).</strong> Spherically complete, with the same argument; the residual operator of a contractive operator is an additive endomorphism of $k$, and the rotation by $u = 1 + t$ is a residue $1$ isometry.</p>
+<p><strong>Example ($\mathbb{C}_p$).</strong> Complete but not spherically complete; the value group is $\mathbb{Q}$ and the residue field is $\overline{\mathbb{F}_p}$, both infinite, and the nest of balls of radii tending to a limit outside the value group witnesses the failure. Consequently the non-Archimedean Hahn–Banach theorem does not apply over $\mathbb{C}_p$ in the same form.</p>
+<h2 id="summary">Summary</h2>
+<p>On a non-Archimedean field the bounded additive operators are exactly the continuous ones, they carry the operator norm $\lVert T\rVert = \sup_{\lvert x\rvert\leq1}\lvert Tx\rvert$, submultiplicative under composition and attained on the unit ball for a discrete value group, and the contractive operators $\lVert T\rVert \leq 1$, equivalently $T(\mathcal{O}) \subseteq \mathcal{O}$, form a unital subring. A contractive operator with $T(\mathrm{M}) \subseteq \mathrm{M}$ induces a <strong>residual operator</strong> $\bar T$ on the residue field $k$, and $T \mapsto \bar T$ is a ring homomorphism whose kernel is the ideal of the infinitesimal operators, so the residue operator of a valued field extends from the elements to the operators. The isometries preserve $\mathcal{O}$ and $\mathrm{M}$, they form a closed subgroup $\operatorname{Isom}(F)$ containing the rotations $\mathcal{O}^\times$ and the scalings $F^\times$, and reduction maps them onto a subgroup of the operators of the residue field.</p>
+<p>A non-Archimedean field is <strong>spherically complete</strong> when every nest of closed balls has nonempty intersection; this implies completeness, fails for $\mathbb{C}_p$, holds for the discretely valued complete fields $\mathbb{Q}_p$ and $k((t))$, and is characterised by the absence of a nontrivial immediate extension and by the validity of the non-Archimedean Hahn–Banach theorem. It is the property of the completeness of the nests, finer than the completeness of the sequences, and the normed-space theory that uses it is later in this Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(F, \lvert \cdot \rvert)$</td>
+<td>The non-Archimedean field</td>
+</tr>
+<tr>
+<td>$\mathcal{O}$, $\mathrm{M}$, $k$, $\Gamma$</td>
+<td>Valuation ring, maximal ideal, residue field, value group</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>A uniformiser when $\Gamma \cong \mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\lVert T\rVert = \sup_{\lvert x\rvert\leq1}\lvert Tx\rvert$</td>
+<td>The operator norm of a bounded additive $T$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}$, $\mathcal{B}_1$</td>
+<td>Bounded operators, and the contractive subring $\lVert T\rVert\leq1$</td>
+</tr>
+<tr>
+<td>$\bar T$</td>
+<td>The residual operator on $k$, defined when $T(\mathrm{M})\subseteq\mathrm{M}$</td>
+</tr>
+<tr>
+<td>$T\mapsto\bar T$</td>
+<td>The reduction, a ring homomorphism with kernel the infinitesimal operators</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(F)$</td>
+<td>The isometry group, closed in the homeomorphism group</td>
+</tr>
+<tr>
+<td>$B(a,r)$</td>
+<td>Closed ball of radius $r$ about $a$</td>
+</tr>
+<tr>
+<td>Spherical completeness</td>
+<td>Every nest of closed balls has nonempty intersection</td>
+</tr>
+<tr>
+<td>Immediate extension</td>
+<td>An extension with the same value group and residue field</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>A. C. M. van Rooij, <em>Non-Archimedean Functional Analysis</em> (Marcel Dekker, 1978), for spherically complete valued fields, the residual operators and the Hahn–Banach theorem.</li>
+<li>Wim H. Schikhof, <em>Ultrametric Calculus</em> (Cambridge University Press, 1984), for the ultrametric geometry of balls and the structure of a valued field.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the discretely valued complete fields $\mathbb{Q}_p$ and $k((t))$ and their residue fields.</li>
+<li>A. W. Ingleton, "The Hahn–Banach theorem for non-Archimedean valued fields", <em>Proceedings of the Cambridge Philosophical Society</em> <strong>48</strong> (1952), 41–45, for the non-Archimedean Hahn–Banach theorem and spherical completeness.</li>
+<li>Lawrence Narici and Edward Beckenstein, <em>Topological Vector Spaces</em> (CRC Press, 2nd ed. 2011), for the operator theory of non-Archimedean normed spaces and the residual structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions and the Word Problem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-and-the-word-problem"><strong>Involutions and the Word Problem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A group presentation may be written so that the involution it carries is visible in the generators and relations; the involution then acts on the words, and two problems arise: the ordinary word problem, whether a word represents the identity, and the involutive word problem, whether a word and its image under the involution represent the same element. This article fixes the notion of an involutive presentation, proves that the involution neither creates nor removes decidability of the ordinary word problem, proves the equivalence of the word problem of a group and that of its extension by the involution, and records the classical decidable and undecidable cases. It is the sixth and last of the involutive <code>*</code>-articles; presentations, free groups, free products and the word problem are owned by <em>Generators, Presentations and Free Products</em>, the involution and the extension by <em>Involutive Groups</em>, and the associativity of the constructions used here by the same article.</p>
+<h2 id="involutive-presentations">Involutive Presentations</h2>
+<p><strong>Definition.</strong> An <strong>involutive presentation</strong> is a set $S$ with an involution $\sigma_S:S\to S$ (a bijection with $\sigma_S^{2}=\mathrm{id}$), extended anti-multiplicatively to the free group $F(S)$ by $\sigma(w_1\cdots w_k)=\sigma_S(w_k)^{-1}\cdots \sigma_S(w_1)^{-1}$ on reduced words, and a set $R\subseteq F(S)$ of relators with $\sigma(R)=R$; the group it presents is $G=\langle S\mid R\rangle$, and $\sigma$ descends to an involution of $G$. The pair $(G,\sigma)$ is the <strong>presented involutive group</strong>.</p>
+<p><strong>Proposition (the descended map is an involution).</strong> With the notation above, the extension of $\sigma_S$ to $F(S)$ is an anti-automorphism of order two, it preserves the normal closure of $R$ when $\sigma(R)=R$, and it descends to an involution of $G$.</p>
+<p><strong>Proof.</strong> The formula defines a map on words that reverses the product order and whose square is the identity, so it is an anti-automorphism of $F(S)$ of order two. If $r\in R$ then $\sigma(r)\in R$ by hypothesis, so the normal closure is stable; the descended map on $G=F(S)/\langle\langle R\rangle\rangle$ is therefore well defined, and it is an involution because $\sigma_S$ is. This is the involutive presentation of <em>Involutive Groups</em>, §10, read through a presentation.</p>
+<p><strong>Proposition (every involutive group is presented).</strong> Every involutive group $(G,\sigma)$ has an involutive presentation: take $S=G$ with $\sigma_S=\sigma$ and $R$ the set of relations $g\cdot h=gh$ for all $g,h\in G$.</p>
+<p><strong>Proof.</strong> The set $S=G$ generates $G$, the map $\sigma_S=\sigma$ is an involution of the set $S$ because $\sigma$ is an involution of the group, and the relators $g\cdot h=gh$ present $G$ and are stable under $\sigma$ because $\sigma(g h)=\sigma(h)\sigma(g)$. The presentation is not finite in general, which is the point of the notion: a finite involutive presentation is a finite presentation together with an involution of its generators that preserves its relators.</p>
+<h2 id="the-ordinary-word-problem">The Ordinary Word Problem</h2>
+<p><strong>Definition.</strong> The <strong>word problem</strong> of a presentation $\langle S\mid R\rangle$ asks for an algorithm deciding, for a word $w\in F(S)$, whether $w$ represents the identity of $G$. The <strong>involutive word problem</strong> of an involutive presentation asks for an algorithm deciding whether $w$ and $\sigma(w)$ represent the same element.</p>
+<p><strong>Proposition (the involutive problem reduces to the ordinary one).</strong> If the ordinary word problem of $(G,\sigma)$ is decidable and the involution $\sigma$ is computable on the generators, then the involutive word problem is decidable.</p>
+<p><strong>Proof.</strong> Given $w$, compute the word $\sigma(w)$ by applying $\sigma_S$ to each generator and reversing; then $w$ and $\sigma(w)$ represent the same element exactly when the word $w\,\sigma(w)^{-1}$ represents the identity, which the ordinary word problem decides.</p>
+<p><strong>Remark (the two problems are not the same).</strong> The reduction is one-way in form: it uses the ordinary decision procedure and the computability of $\sigma$. An involutive presentation whose involution is not computable on the generators may have a decidable ordinary word problem and an undecidable involutive one, because the question whether $w=\sigma(w)$ then involves a word the algorithm cannot produce.</p>
+<p><strong>Theorem (Novikov–Boone).</strong> There exists a finitely presented group whose word problem is undecidable.</p>
+<p><strong>Proposition (undecidability survives the involution).</strong> There exists a finitely presented involutive group whose ordinary word problem is undecidable.</p>
+<p><strong>Proof.</strong> Let $N=\langle S\mid R\rangle$ be a finitely presented group with undecidable word problem, and let $G=N\times C_2$ with the involution $\sigma(n,z)=(n,-z)$, which is an automorphism of order two. The group $G$ is finitely presented, the involution is computable on the generators, and the word problem of $G$ is undecidable: a word in the generators of $N$ represents the identity of $N$ if and only if the corresponding word in $G$ represents the identity, so a decision procedure for $G$ would decide the problem for $N$, contradicting the choice of $N$.</p>
+<h2 id="decidable-cases">Decidable Cases</h2>
+<p><strong>Proposition (the free group with reversal).</strong> Let $F=F(S)$ be free on $S$ with the reversal $\mathrm{rev}$, extended anti-multiplicatively by fixing the letters. The ordinary word problem of $F$ is decidable by reduction of words, and the involutive word problem for $\mathrm{rev}$ is decidable too.</p>
+<p><strong>Proof.</strong> A word in $F(S)$ is trivial exactly when it reduces to the empty word by cancelling adjacent inverse pairs, which is a terminating and confluent procedure; and $\mathrm{rev}$ is computable on the generators, so the involutive problem reduces to the ordinary one by the proposition above.</p>
+<p><strong>Proposition (free products).</strong> If $G$ and $H$ have decidable word problems, then the free product $G*H$ has a decidable word problem by reduction to normal form, and the free product inherits the involutions of the factors.</p>
+<p><strong>Proof.</strong> The normal form of an element of $G*H$ is an alternating word of non-identity elements of the factors, and the reduction of an arbitrary word to normal form is computable when the word problems of the factors are; an involution of $G$ and one of $H$ combine to an involution of $G*H$ by acting on the letters of the normal form.</p>
+<p><strong>Theorem (Coxeter groups and one-relator groups).</strong> The Coxeter group $\langle s_1,\dots,s_n\mid s_i^{2}=e,\ (s_is_j)^{m_{ij}}=e\rangle$ with the involution fixing each generator has a decidable word problem (Tits), and a one-relator group with a computable involution has a decidable word problem (Magnus). The proofs are not reproduced here; the statements are recorded as the standard decidable classes.</p>
+<h2 id="the-word-problem-of-the-extension">The Word Problem of the Extension</h2>
+<p>Let $\alpha$ be an involutive automorphism of $G$, computable on a generating set, and let $G\rtimes\langle t\rangle$ be the semidirect product of <em>Involutive Groups</em>, §9, with $tgt^{-1}=\alpha(g)$.</p>
+<p><strong>Theorem.</strong> The word problem of $G$ is decidable if and only if the word problem of $G\rtimes\langle t\rangle$ is decidable.</p>
+<p><strong>Proof.</strong> Suppose first that the word problem of $G$ is decidable. Every word in the generators of $G$ together with $t$ is reduced to a normal form by repeatedly (i) replacing $t^{2}$ by $e$, (ii) pushing each $t$ to the right across a generator $s$ by $t s=\alpha(s)t$, and (iii) reducing the resulting word in the generators of $G$ by the decision procedure for $G$. The reductions are computable because $\alpha$ is computable on the generators, and every word reaches the unique normal form $g\,t^{i}$ with $g$ in normal form and $i\in\{0,1\}$, which represents the identity exactly when $i=0$ and $g=e$. Conversely, a word $w$ in the generators of $G$ represents the identity of $G$ exactly when it represents the identity of $G\rtimes\langle t\rangle$, since $G$ is a subgroup; so a decision procedure for the extension decides the problem for $G$.</p>
+<p><strong>Corollary (the involution does not change the word problem).</strong> For a finitely presented involutive group the ordinary word problem and the word problem of the extension by the involution are equivalent, and both are decidable or both undecidable.</p>
+<p><strong>Proof.</strong> The extension is the semidirect product by the associated involutive automorphism, so the theorem applies; the ordinary word problem of the involutive group is that of $G$, and by the theorem it agrees with that of the extension.</p>
+<p><strong>Remark (which direction is trivial).</strong> The direction from the extension to $G$ is immediate because $G$ sits inside as a subgroup; the content is the other direction, where the computability of $\alpha$ on the generators is what makes the collection of the $t$'s effective. Without that computability the normal form is not reachable by an algorithm and the equivalence may fail.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>involutive presentation</strong> is a set of generators with an involution, extended anti-multiplicatively to the free group, and a set of relators stable under it; it presents a group with an involution, and every involutive group has one, finite when the group is finitely presented and the involution is given on the generators. The <strong>ordinary word problem</strong> asks whether a word is trivial and the <strong>involutive word problem</strong> asks whether a word equals its image under the involution; the second reduces to the first when the involution is computable on the generators, and then is no harder.</p>
+<p>Undecidability is not removed by an involution: the product $N\times C_2$ of a finitely presented group $N$ with undecidable word problem and the two-element group carries the involution $\sigma(n,z)=(n,-z)$ and keeps the undecidable word problem. Decidability is preserved in the free group with reversal, in free products of groups with decidable word problems, in Coxeter groups, and in one-relator groups. Finally, for a computable involutive automorphism $\alpha$ the word problem of $G$ is decidable if and only if that of the semidirect product $G\rtimes\langle t\rangle$ is, so the extension by the involution changes nothing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma_S$</td>
+<td>involution on the generating set</td>
+</tr>
+<tr>
+<td>$\sigma(w_1\cdots w_k)=\sigma_S(w_k)^{-1}\cdots\sigma_S(w_1)^{-1}$</td>
+<td>extension to the free group</td>
+</tr>
+<tr>
+<td>$w\,\sigma(w)^{-1}=e$</td>
+<td>the involutive word problem, reduced to the ordinary one</td>
+</tr>
+<tr>
+<td>$N\times C_2$, $\sigma(n,z)=(n,-z)$</td>
+<td>an involutive group with undecidable word problem</td>
+</tr>
+<tr>
+<td>$g\,t^{i}$</td>
+<td>normal form in the extension, the reduction of the theorem</td>
+</tr>
+<tr>
+<td>$\langle s_i\mid s_i^{2}=e,(s_is_j)^{m_{ij}}=e\rangle$</td>
+<td>the Coxeter presentation, decidable word problem</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for presentations, free groups, free products and the word problem.</li>
+<li>Wilhelm Magnus, Abraham Karrass and Donald Solitar, <em>Combinatorial Group Theory</em> (Dover, second revised edition, 1976), for the word problem of one-relator groups and the reduction of free words.</li>
+<li>Roger C. Lyndon and Paul E. Schupp, <em>Combinatorial Group Theory</em> (Springer, Classics in Mathematics, 2001), for the Novikov–Boone theorem, decision problems and free constructions.</li>
+<li>Petr S. Novikov, <em>On the algorithmic unsolvability of the word problem in group theory</em>, Trudy Matematicheskogo Instituta imeni V. A. Steklova 44 (1955), for the unsolvability theorem.</li>
+<li>James E. Humphreys, <em>Reflection Groups and Coxeter Groups</em> (Cambridge University Press, 1990), for Coxeter groups and the solution of their word problem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

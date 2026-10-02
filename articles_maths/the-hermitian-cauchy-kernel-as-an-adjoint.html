@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Cauchy Kernel as an Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-cauchy-kernel-as-an-adjoint"><strong>The Hermitian Cauchy Kernel as an Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An integral kernel is not only a function of two variables but the matrix of an operator, and the
+kernel of the adjoint operator is the conjugate-reverse of the kernel: if $T$ has kernel $K(x,y)$,
+then $T^{\dagger}$ has kernel $K(y,x)^{*}$. The Hermitian Cauchy kernel
+$E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ is, literally, built from the <strong>adjoint</strong> variable $Z_r^{*}$ of
+the Hermitian theory, and this article reads the kernel in that way: as the kernel of the adjoint,
+as the object implementing the adjoint pairing between the Hermitian monogenic functions and the
+boundary densities, and as the entry of the matrix that is the inverse of the adjoint matrix
+operator. In this reading the integral theory of <em>The Hermitian Cauchy Integral and the Boundary
+Values</em> becomes a statement about adjoints, and the boundary projections of the monogenic Hardy
+space appear as self-adjoint idempotents.</p>
+<p>The setting is that of <em>Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator</em>:
+the algebra $\mathbb{H}_N$, the four Hermitian operators $\partial_{Z_r}$ and their conjugates
+$\partial_{Z_r}^{\dagger}$, the Hermitian variables $Z_r$ and their adjoints $Z_r^{*}$, and the
+kernels $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$. The module and form background is <em>Hermitian Hilbert
+Modules over a Clifford Algebra</em>; the operator-theoretic statements about the Hermitian Dirac
+operator are <em>The Hermitian Dirac Operator</em>; the integral formulae and the matrix device are <em>The
+Hermitian Cauchy Integral and the Boundary Values</em>; the one-operator statements — the Cauchy
+transform, the Hilbert transform, the self-adjointness of the projection — are <em>The Cauchy Integral
+Operator</em> and <em>The Hilbert Adjoint on a Hilbert Module</em> (Part II), and the general kernel theory of
+the adjoint is <em>Analysis on Linear Spaces</em>', in <em>Hermitian Kernels and the Integral Operator</em>.</p>
+<h2 id="kernels-and-their-adjoints">Kernels and their Adjoints</h2>
+<h3 id="the-general-principle">The General Principle</h3>
+<p><strong>Theorem (the adjoint kernel).</strong> Let $K$ be a distributional kernel on $X\times X$ and let $T$ be
+the operator $Tf(x)=\int_XK(x,y)f(y)\,dy$. Then the adjoint with respect to the module form has
+kernel</p>
+<p>$$
+K^{\dagger}(x,y)=K(y,x)^{*} ,
+$$</p>
+<p>the conjugate-reverse of $K$. In particular the kernel is the kernel of a <strong>self-adjoint</strong> operator
+exactly when $K(y,x)^{*}=K(x,y)$ — the Hermitian symmetry of <em>Positive Definite Kernels in Clifford
+Analysis</em> — and the kernel is that of an <strong>antiself-adjoint</strong> operator exactly when
+$K(y,x)^{*}=-K(x,y)$.</p>
+<p><em>Proof.</em> Compute $\langle Tf,g\rangle=\int\!\!\int(K(x,y)f(y),g(x))\,dy\,dx$ and move the form to
+the other factor using its sesquilinearity and the module axiom; the resulting expression is
+$\int\!\!\int(f(y),K(x,y)^{*}g(x))\,dy\,dx$, which is $\langle f,T^{\dagger}g\rangle$ with the
+kernel $K(y,x)^{*}$ after the interchange of the variables. The statement is the Clifford-module
+instance of the general kernel theorem of <em>Hermitian Kernels and the Integral Operator</em>. $\square$</p>
+<p><strong>Remark (why the conjugate-reverse is the object of this article).</strong> The Euclidean and Hermitian
+Cauchy kernels are built from the <strong>conjugate</strong> variable: $F_r(X)=-X_r/(a_{4n}|X|^{4n})$ is odd,
+$F_r(-X)=-F_r(X)$, and $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ carries the conjugated variable in the
+numerator and the conjugated value in the kernel. The recursion $K\mapsto K^{\dagger}$ is therefore
+not an afterthought: the kernels of the Hermitian theory are constructed from the adjoint, and the
+whole integral theory is a theory of adjoint pairings. This is the reason the Hermitian Cauchy
+kernel is naturally read as an adjoint, and the reason the boundary projections of the theory come
+out self-adjoint.</p>
+<h3 id="the-hermitian-cauchy-kernel">The Hermitian Cauchy Kernel</h3>
+<p><strong>Proposition (the Hermitian Cauchy kernel and the adjoint variable).</strong> The Hermitian kernel
+$E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ is odd, $E_r(-Z)=-E_r(Z)$, and is built from the adjoint Hermitian
+variable $Z_r^{*}$; under the involution $*$ the kernel is carried to the kernel of the conjugate
+operator,</p>
+<p>$$
+(E_r)^{*}(Z) \sim Z_r/(a_{4n}|Z|^{4n}) ,
+$$</p>
+<p>so the four Hermitian Cauchy kernels pair into the four conjugate Hermitian Dirac operators, and the
+matrix $E$ is correspondingly the adjoint partner of the matrix $D$ of the operators.</p>
+<p><em>Proof.</em> The oddness is immediate from $(Z_r)^{*}=-Z_r$-type skewness of the variables and the
+evenness of $|Z|$; the involution statement is the conjugation of the numerator and of the
+coefficients, with the same normalisation; the matrix statement is that $D^{\mathsf T}E=\delta I$ of
+<em>The Hermitian Cauchy Integral and the Boundary Values</em>, which exhibits $E$ as the kernel of the
+operation inverse to the adjoint matrix operator. The verification in
+$\mathbb{H}\otimes_{\mathbb{R}}\mathrm{Cl}_{0,4}$ is in <em>Clifford Analysis</em>. $\square$</p>
+<p><strong>Theorem (the matrix kernel is the adjoint partner of the matrix operator).</strong> With the circulant
+matrix $D$ of the four Hermitian Dirac operators, the circulant matrix $E$ of the four Hermitian
+kernels satisfies</p>
+<p>$$
+D^{\mathsf T}E = \delta I , \qquad E\,D^{\mathsf T} = \delta I \ \text{ on the appropriate domain} ,
+$$</p>
+<p>so the matrix kernel is the two-sided inverse of the adjoint matrix operator on the level of
+distributions, and it is the kernel of the adjoint operation that inverts $D^{\mathsf T}$.</p>
+<p><em>Proof.</em> The first identity is the fundamental-solution theorem of <em>The Hermitian Cauchy Integral
+and the Boundary Values</em>; the second follows by the Hermitian symmetry of the matrix kernel and the
+commutativity of the circulant matrices, or by the second Borel–Pompeiu formula. $\square$</p>
+<h2 id="the-adjoint-pairing-of-the-cauchy-theory">The Adjoint Pairing of the Cauchy Theory</h2>
+<p><strong>Remark (the pairing).</strong> The Hermitian Cauchy theory is a duality between two spaces: the
+$q$-Hermitian monogenic functions on a domain and the densities on the boundary, paired by the
+integral of the pointwise module form,</p>
+<p>$$
+\langle f,\mu\rangle = \int_{\partial\Omega}(f,\mu) ,
+$$</p>
+<p>and the Cauchy kernel is the object that realises the duality: the transform $\mathcal{C}$ with
+kernel $E\,N^{\mathsf T}$, and its adjoint $\mathcal{C}^{\dagger}$ with the conjugate-reverse
+kernel, are the two members of the pairing, and the Cauchy integral formula is the statement that
+the pairing of the boundary values reproduces the interior function. In the complex refinement this
+pairing is the Martinelli–Bochner pairing of forms in several complex variables, and the
+conjugate-reverse kernel is the conjugate form; the general theory of the several-variable pairing
+is <em>Several Complex Variables</em>'.</p>
+<p><strong>Theorem (the boundary projections are self-adjoint).</strong> The Cauchy transform $\mathcal{C}$ has
+adjoint $\mathcal{C}^{\dagger}=I-\mathcal{C}$ up to the parity of the kernel, so that the boundary
+operators $\mathcal{C}^{\pm}$ of the Plemelj–Sokhotski decomposition of <em>The Cauchy Integral
+Operator</em> are complementary projections and the singular operator is self-adjoint with respect to
+the module form:</p>
+<p>$$
+(\mathcal{C}^{+})^{\dagger}=\mathcal{C}^{+} , \qquad (\mathcal{C}^{-})^{\dagger}=\mathcal{C}^{-} , \qquad
+\mathcal{S}^{\dagger}=\mathcal{S} , \qquad \mathcal{S}^2=I .
+$$</p>
+<p><em>Proof.</em> The one-operator statement is that of <em>The Cauchy Integral Operator</em>; passing to the matrix
+of the Hermitian theory, the conjugate-reverse kernel of the matrix transform is the same matrix
+transform with the conormal on the other side, and the Hermitian symmetry of the kernel $E$ and the
+reality of the conormal element give the self-adjointness of the singular operator. $\square$</p>
+<p><strong>Corollary (the Szegő projection and the adjoint).</strong> The Szegő projection $P^+$ of the monogenic
+Hardy space is self-adjoint, and its kernel — the Szegő kernel of <em>Positive Definite Kernels in
+Clifford Analysis</em> — is the Cauchy kernel read on the boundary; the Bergman projection is likewise
+self-adjoint. Hence the two projections of the monogenic $L^2$ theory are orthogonal projections in
+the sense of the module form, and the structure they define is the one of <em>Hermitian Hilbert Modules
+over a Clifford Algebra</em>.</p>
+<p><em>Proof.</em> A projection is self-adjoint exactly when it is the orthogonal projection onto its range;
+the range of $P^+$ is the monogenic Hardy space, closed by <em>Hermitian Hilbert Modules over a
+Clifford Algebra</em>, and the reproducing property of its kernel makes $P^+$ the orthogonal projection.
+$\square$</p>
+<h2 id="the-jump-relations">The Jump Relations</h2>
+<p><strong>Theorem (the Plemelj formulae of the Hermitian Cauchy kernel).</strong> For a density $f$ of Hölder class
+on the boundary the one-sided extensions $\mathcal{C}^{\pm}f$ exist as continuous limits and satisfy
+the <strong>Plemelj–Sokhotski formulae</strong></p>
+<p>$$
+\mathcal{C}^{\pm}f = \pm\tfrac12 f + \mathcal{S}f , \qquad \mathcal{C}^{+}f-\mathcal{C}^{-}f = f ,
+\qquad \mathcal{C}^{+}f+\mathcal{C}^{-}f = 2\mathcal{S}f ,
+$$</p>
+<p>with $\mathcal{S}=2\mathcal{C}^{+}-I$ the singular operator of <em>The Cauchy Integral Operator</em>; the
+<strong>jump</strong> $\mathcal{C}^{+}-\mathcal{C}^{-}$ is the identity, and the <strong>sum</strong> is twice the singular
+operator.</p>
+<p><em>Proof.</em> The formulae are the decompositions of the identity with the projections
+$\mathcal{C}^{\pm}=\tfrac12(I\pm\mathcal{S})$; the existence of the limits is the Plemelj calculus
+of <em>The Cauchy Integral Operator</em> and <em>The Hermitian Cauchy Integral and the Boundary Values</em> read
+in the Hermitian refinement. $\square$</p>
+<p><strong>Theorem (the jump of the adjoint).</strong> The adjoint of the jump is the jump of the adjoint: with the
+adjoint taken with respect to the module form,</p>
+<p>$$
+(\mathcal{C}^{+}-\mathcal{C}^{-})^{\dagger} = I , \qquad (\mathcal{C}^{+}+\mathcal{C}^{-})^{\dagger} =
+2\mathcal{S} ,
+$$</p>
+<p>so the jump operator is self-adjoint and the singular operator is self-adjoint. Read through the
+conjugate-reverse rule, the statement is that the difference of the two boundary values of the
+kernel $K(y,x)^{*}$ is the kernel of the identity, which is the distributional form of the jump
+relation.</p>
+<p><em>Proof.</em> The jump is the identity by the theorem above, and the identity is self-adjoint; the sum is
+twice $\mathcal{S}$, whose self-adjointness is the preceding section. The kernel form of the jump is
+the conjugate-reverse of the Plemelj formula $K\,N^{\mathsf T}$ computed on the two sides, where the
+two sides differ by the conormal term of the Cauchy–Pompeiu formula. $\square$</p>
+<p><strong>Remark (the jump as the boundary of the adjoint pairing).</strong> The jump relation and the adjointness
+of the boundary operators are two readings of the same structure: the pairing
+$\langle f,\mu\rangle=\int_{\partial\Omega}(f,\mu)$ of the Cauchy theory is non-degenerate, the
+kernel is its reproducing object, and the difference of the two one-sided extensions of the
+transform is the identity exactly because the transform is a projection differing from its adjoint
+by the parity of the kernel. In the Hermitian refinement the jump is the identity on the boundary
+spinors, the singular operator is the reflection $\mathcal{S}=\mathcal{C}^{+}-\mathcal{C}^{-}$ of
+the splitting $\mathcal{H}=P^+L^2\oplus P^-L^2$ of the boundary space, and the two projections are
+the self-adjoint projections of the monogenic Hardy theory.</p>
+<h2 id="summary">Summary</h2>
+<p>A kernel $K(x,y)$ is the matrix of an operator, and the kernel of the adjoint is the
+conjugate-reverse $K^{\dagger}(x,y)=K(y,x)^{*}$; the kernel is self-adjoint exactly when it is
+Hermitian in the sense of <em>Positive Definite Kernels in Clifford Analysis</em>. The Hermitian Cauchy
+kernel $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ is built from the <strong>adjoint</strong> Hermitian variable, is odd,
+and is carried by the involution to the kernel of the conjugate operator; the four kernels pair with
+the four conjugate Hermitian Dirac operators, and the circulant matrix $E$ is the two-sided inverse
+of the adjoint matrix operator, $D^{\mathsf T}E=\delta I$. The Hermitian Cauchy theory is a
+<strong>duality</strong>: the kernel realises the adjoint pairing between the $q$-Hermitian monogenic functions
+and the boundary densities, whose complex refinement is the Martinelli–Bochner pairing of several
+complex variables, and the conjugate-reverse kernel is the conjugate form. The boundary operators of
+the Plemelj–Sokhotski decomposition are complementary <strong>self-adjoint</strong> projections with respect to
+the module form, $\mathcal{S}^{\dagger}=\mathcal{S}$ and $\mathcal{S}^2=I$, and the Szegő and
+Bergman projections of the monogenic spaces are likewise self-adjoint, their kernels being the
+reproducing kernels of <em>Positive Definite Kernels in Clifford Analysis</em>. The one-operator statements
+are <em>The Cauchy Integral Operator</em>'s and <em>The Hilbert Adjoint on a Hilbert Module</em>'s; the integral
+formulae and the matrix device are <em>The Hermitian Cauchy Integral and the Boundary Values</em>; the
+operator-theoretic companion is <em>The Hermitian Dirac Operator</em>; and the general kernel theory of
+adjoints is <em>Analysis on Linear Spaces</em>'.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K(x,y)$, $K^{\dagger}(x,y)=K(y,x)^{*}$</td>
+<td>Kernel and the kernel of the adjoint</td>
+</tr>
+<tr>
+<td>$K(y,x)^{*}=K(x,y)$</td>
+<td>Hermitian symmetry (self-adjoint kernel)</td>
+</tr>
+<tr>
+<td>$E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$</td>
+<td>Hermitian Cauchy kernel built from the adjoint variable</td>
+</tr>
+<tr>
+<td>$E_r(-Z)=-E_r(Z)$</td>
+<td>Oddness of the Hermitian kernel</td>
+</tr>
+<tr>
+<td>$D^{\mathsf T}E=\delta I$</td>
+<td>Matrix kernel as the inverse of the adjoint matrix operator</td>
+</tr>
+<tr>
+<td>$\langle f,\mu\rangle=\int_{\partial\Omega}(f,\mu)$</td>
+<td>Adjoint pairing of functions and densities</td>
+</tr>
+<tr>
+<td>$\mathcal{C}^{\pm}$, $\mathcal{S}=2\mathcal{C}^+-I$</td>
+<td>Plemelj projections and singular operator; $\mathcal{S}^{\dagger}=\mathcal{S}$, $\mathcal{S}^2=I$</td>
+</tr>
+<tr>
+<td>$P^+$, Szegő kernel</td>
+<td>Self-adjoint Szegő projection and its Cauchy-kernel realisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. Brackx, H. De Schepper and F. Sommen, <em>Hermitean Clifford Analysis</em>, for the Hermitian Cauchy kernels and their conjugation properties.</li>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the one-operator Cauchy transform, the Plemelj formulae and the self-adjointness of the projections.</li>
+<li>R. Rocha-Chávez, M. Shapiro and F. Sommen, <em>Integral Theorems for Functions and Differential Forms in $\mathbb{C}^m$</em> (Chapman &amp; Hall, 2002), for the Martinelli–Bochner pairing and its adjoint structure.</li>
+<li>R. Delanghe, F. Sommen and V. Souček, <em>Clifford Algebra and Spinor-Valued Functions</em> (Kluwer, 1992), for the kernel and adjoint framework of the boundary-value theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

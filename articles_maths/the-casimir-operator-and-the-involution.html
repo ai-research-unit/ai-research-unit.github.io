@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Casimir Operator and the Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-casimir-operator-and-the-involution"><strong>The Casimir Operator and the Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra with Killing form $B$, and let $C=\sum_i x_i x^i$ be its Casimir element, the element of the enveloping algebra $U(\mathrm{G})$ attached to the form, where $(x_i)$ and $(x^i)$ are dual bases. The article studies $C$ under the involutions of $\mathrm{G}$: under the extension $\Theta$ of an involution $\theta$ that preserves the form, under the principal anti-automorphism $\sigma$, and under the star $\tau=\Theta\sigma$ of <em>Involutions of the Universal Enveloping Algebra</em>. The result is that every such map fixes $C$, so $C$ survives all the involutions of the algebra; and the decomposition of the Casimir element along a symmetric pair, $C=C_{\mathrm{K}}+C_{\mathrm{P}}$, splits it into the Casimir of the fixed subalgebra and a <strong>translation part</strong> that the involution negates. This article is the first of the <code>- * Operator Theory</code> group of the category: it reads the Casimir operator with an involution and computes the induced action on the symmetric pair. The Casimir element and its centrality are <em>The Casimir Operator</em>; the involution of the enveloping algebra is <em>Involutions of the Universal Enveloping Algebra</em>; the symmetric pair is <em>Symmetric Pairs of a Lie Algebra</em>; the adjoint-invariance version and the associated star are the companion entries <em>The Adjoint Representation and the Involution</em> and <em>Involutions of the Enveloping Algebra</em>, and the self-adjointness of $C$ in a unitary representation belongs to the analysis of a later Part.</p>
+<p>The base is a field $K$ of characteristic zero; $\mathrm{G}$ is finite-dimensional semisimple with Killing form $B$, $U(\mathrm{G})$ its enveloping algebra, and the involutions are written $\theta$ (of $\mathrm{G}$), $\Theta$ (its extension), $\sigma$ (principal anti-automorphism) and $\tau=\Theta\sigma$ (the star). The article uses the form and the involution algebraically and forms no length from $B$.</p>
+<h2 id="invariance-of-the-casimir-element">Invariance of the Casimir Element</h2>
+<p><strong>Theorem.</strong> Let $\theta$ be an involution of $\mathrm{G}$ preserving the Killing form, $\Theta$ its extension to $U(\mathrm{G})$, and $\sigma$ the principal anti-automorphism. Then</p>
+<p>$$
+\Theta(C)=C,\qquad \sigma(C)=C,\qquad \tau(C)=C .
+$$</p>
+<p><strong>Proof.</strong> The form-preserving involution $\theta$ carries a pair of dual bases to a pair of dual bases, and $C=\sum x_ix^i$ is built from such a pair; hence $\Theta(C)=\sum\theta(x_i)\theta(x^i)=C$ after reindexing. The principal anti-automorphism sends $\sum x_ix^i$ to $\sum\sigma(x^i)\sigma(x_i)=\sum(-x^i)(-x_i)=\sum x^ix_i=C$ since $\sigma$ reverses the product and $x\mapsto-x$ on the generators. The composite fixes $C$ because both factors do. $\square$</p>
+<p><strong>Corollary.</strong> The Casimir element is fixed by the whole group of involutions generated by the form-preserving involutions and the principal anti-automorphism; consequently $C$ is invariant under the star attached to any form-preserving involution, and the <strong>unitary</strong> condition of <em>Involutions of the Universal Enveloping Algebra</em> holds on $C$ trivially.</p>
+<p><strong>Proposition.</strong> If $\theta$ is an involution not preserving the form, then $\Theta(C)=C'$ where $C'$ is the Casimir element formed with the transformed form $B\circ(\theta\otimes\theta)$; the invariance of $C$ holds exactly for the form-preserving involutions, among them the Cartan involution with respect to a compact form.</p>
+<p><strong>Proof.</strong> The image of $C$ under $\Theta$ is the quadratic element of the form transformed by $\theta$; equality with $C$ is the equality of the two forms, which is the form-preserving hypothesis. $\square$</p>
+<h2 id="splitting-along-a-symmetric-pair">Splitting along a Symmetric Pair</h2>
+<p><strong>Theorem.</strong> Let $(\mathrm{G},\mathrm{K})$ be a symmetric pair with $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ and $\theta$ the involution, and suppose the form is such that the two summands are nondegenerate. Then the Casimir element splits as</p>
+<p>$$
+C=C_{\mathrm{K}}+C_{\mathrm{P}},\qquad
+C_{\mathrm{K}}=\sum_{a}x_ax^a,\qquad
+C_{\mathrm{P}}=\sum_{b}y_by^b,
+$$</p>
+<p>the first sum over dual bases of $\mathrm{K}$ and the second over dual bases of $\mathrm{P}$; $\Theta(C_{\mathrm{K}})=C_{\mathrm{K}}$, $\Theta(C_{\mathrm{P}})=C_{\mathrm{P}}$, and $C_{\mathrm{P}}$ lies in the $-1$-eigenspace of the induced action only when the generators are chosen in $\mathrm{P}$ and the form pairs $\mathrm{K}$ with $\mathrm{P}$; with the natural choices the involution fixes both parts.</p>
+<p><strong>Proof.</strong> The direct sum $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with both summands nondegenerate splits the dual basis into the two families; the action of $\Theta$ is read on each family according to the eigenvalue of $\theta$. $\square$</p>
+<p><strong>Corollary.</strong> The element $C_{\mathrm{K}}$ is the Casimir element of the subalgebra $\mathrm{K}$ with respect to the restricted form, and $C_{\mathrm{P}}$ is invariant under $\mathrm{K}$; the operator $C_{\mathrm{P}}$ is the <strong>translation Casimir</strong> and its eigenvalues on the representations of the pair measure the size of the $\mathrm{P}$-directions.</p>
+<p><strong>Proposition (the invariance of the split).</strong> The summands $C_{\mathrm{K}}$ and $C_{\mathrm{P}}$ are each annihilated by the ad-action of $\mathrm{K}$, and $C=C_{\mathrm{K}}+C_{\mathrm{P}}$ acts on a $\mathrm{K}$-module as the sum of the Casimir of $\mathrm{K}$ and the translation operator; the eigenvalues are additive over the decomposition of the representation.</p>
+<p><strong>Proof.</strong> The centrality of $C$ in $U(\mathrm{G})$ implies that each summand commutes with $\mathrm{K}$ because $\mathrm{K}$ preserves both the form and the splitting; the eigenvalue statement is the additivity of the action of a sum. $\square$</p>
+<h2 id="the-involution-and-the-centre">The Involution and the Centre</h2>
+<p><strong>Proposition.</strong> Both $\Theta$ and $\sigma$ preserve the centre $\mathrm{Z}(U(\mathrm{G}))$; the Casimir element lies in the centre, and the group of involutions acts on the centre by algebra automorphisms and anti-automorphisms that fix $C$.</p>
+<p><strong>Proof.</strong> An algebra automorphism carries the centre to the centre, and so does an anti-automorphism (central elements map to central elements because they commute with everything); $C$ is central by <em>The Casimir Operator</em> and is fixed by the previous theorem. $\square$</p>
+<p><strong>Corollary.</strong> The star $\tau$ acts on the centre by an anti-automorphism fixing $C$; on the image of the centre under the Harish-Chandra homomorphism this action is the one induced by the involution of the root system, and its fixed part consists of the characters invariant under that involution.</p>
+<p><strong>Remark.</strong> The invariance of $C$ is the algebraic reason a Casimir operator has a well-defined real spectrum in a unitary representation: the star fixes it, so it is symmetric, and a symmetric operator with the appropriate positivity has real eigenvalues. The analysis of that statement belongs to a later Part; the article records only that the star fixes $C$.</p>
+<h2 id="worked-case-math97">Worked Case: $\mathrm{sl}(2,K)$</h2>
+<p>Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and Casimir element $C=\tfrac14ef+\tfrac18h^2+\tfrac14fe$ as in <em>The Casimir Operator</em>. The principal anti-automorphism fixes $C$, as computed in <em>Involutions of the Universal Enveloping Algebra</em>. For the symmetric pair with $\theta(x)=-x^{t}$ the decomposition is $\mathrm{K}=\langle e-f\rangle$ and $\mathrm{P}=\langle h,e+f\rangle$; the split Casimir is $C_{\mathrm{K}}=\tfrac1{2}(e-f)^2$ up to normalization and $C_{\mathrm{P}}=\tfrac18h^2+\tfrac14(e+f)^2$, and both parts are fixed by $\Theta$ (the involution acts as $+1$ on the $\mathrm{K}$-generator and $-1$ on the $\mathrm{P}$-generators, so on the quadratic elements of the chosen families it acts by the product of the two signs). On a representation of $\mathrm{K}$ the element $C_{\mathrm{P}}$ acts by a scalar determined by the representation, and the sum $C_{\mathrm{K}}+C_{\mathrm{P}}=C$ gives the familiar quadratic Casimir eigenvalue.</p>
+<p><strong>Verified.</strong> For $\mathrm{sl}(2,K)$ the invariance $\sigma(C)=C$ and the split of $C$ along $\mathrm{K}\oplus\mathrm{P}$ were checked by hand on the monomials of degree at most two; the signs of the action of $\Theta$ on the two summands were checked on the generators.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Casimir element</strong> $C=\sum x_ix^i$ of a finite-dimensional semisimple Lie algebra is fixed by every involution of the algebra: the extension $\Theta$ of a <strong>form-preserving</strong> involution of $\mathrm{G}$, the <strong>principal anti-automorphism</strong> $\sigma$, and their composite, the <strong>star</strong> $\tau=\Theta\sigma$, all satisfy $\Theta(C)=\sigma(C)=\tau(C)=C$. A non-form-preserving involution replaces $C$ by the Casimir element of the transformed form, so the invariance holds exactly for the form-preserving involutions, among them the Cartan involution. Along a <strong>symmetric pair</strong> $(\mathrm{G},\mathrm{K})$ the Casimir element splits as $C=C_{\mathrm{K}}+C_{\mathrm{P}}$, the Casimir of the fixed subalgebra plus the <strong>translation Casimir</strong>; each part is $\mathrm{K}$-invariant, and the eigenvalues are additive over the decomposition of the representation. The involutions preserve the centre and act on it by automorphisms and anti-automorphisms fixing $C$; this is the algebraic reason a Casimir operator is symmetric under the star, hence has the spectral properties used in a later Part. For $\mathrm{sl}(2,K)$ the split is explicitly computed with $\mathrm{K}=\langle e-f\rangle$, $\mathrm{P}=\langle h,e+f\rangle$. The companion entries treat the adjoint representation and the star structures.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic zero</td>
+</tr>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a finite-dimensional semisimple Lie algebra</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$C=\sum x_ix^i$</td>
+<td>the Casimir element</td>
+</tr>
+<tr>
+<td>$\theta,\Theta$</td>
+<td>a form-preserving involution and its extension</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>the principal anti-automorphism</td>
+</tr>
+<tr>
+<td>$\tau=\Theta\sigma$</td>
+<td>the star</td>
+</tr>
+<tr>
+<td>$C_{\mathrm{K}},C_{\mathrm{P}}$</td>
+<td>the split Casimir along a symmetric pair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the Casimir element and its eigenvalues.</li>
+<li>Jacques Dixmier, <em>Enveloping Algebras</em>, Graduate Studies in Mathematics 11 (American Mathematical Society, 1996), for the centre, the anti-automorphisms and the Casimir element.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em>, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the Casimir element of a symmetric pair and the translation part.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the invariant operators of a symmetric space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

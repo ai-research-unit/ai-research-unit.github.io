@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Pairings on a Topological Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-pairings-on-a-topological-space"><strong>Hermitian Pairings on a Topological Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A pairing on the cohomology of a space is a bilinear or sesquilinear form, the archetype being the intersection pairing $\langle u \cup v, [X]\rangle$ of a closed oriented manifold, and the pairing carries the Hermitian structure of the coefficient ring. When the space carries a continuous involution, the induced operator on the cohomology acts on the pairing: if the involution preserves the fundamental class the pairing is invariant, and if it reverses the fundamental class the pairing is anti-invariant, and the two cases have opposite consequences for the fixed part. The article develops the pairing, the two cases of the action of the involution, the <strong>orthogonal decomposition</strong> of the cohomology into the fixed and the anti-fixed parts, and the <strong>signature</strong> of the form and of its restriction to the fixed part. The invariant case splits the form orthogonally over the two eigenspaces, so that the signature is the sum of the signatures of the two parts and the contribution of the fixed part is isolated; the anti-invariant case makes the fixed part totally isotropic, so that the form pairs the fixed part with the anti-fixed part and the two have the same dimension. The equivariant refinement of the signature, which computes the contribution of the fixed part from the fixed point set of the involution, is named and deferred.</p>
+<p>The article continues <em>The Antipodal Map and the Adjoint</em>, whose pairing on the sphere is the model, and <em>The Involution on the Cohomology Operators</em>, whose fixed part it pairs. It uses the bilinear and Hermitian forms of Part I, in <em>Bilinear Forms</em> and <em>Indefinite Inner Product Spaces</em>, the signature of a symmetric form from the same place, and the cup product and Poincaré duality of <em>Cup and Cap Products</em> and <em>Poincaré Duality</em>. The equivariant signature theorem of Atiyah and Singer is named as the later refinement and is not used. Nothing analytic and nothing geometric is used: the form is an algebraic pairing on a module, the signature is the difference of two ranks, and no norm, no measure and no differentiability occurs; the manifold enters only through its fundamental class and the pairing it defines.</p>
+<h2 id="pairings-and-the-cup-product">Pairings and the Cup Product</h2>
+<h3 id="hermitian-pairings">Hermitian Pairings</h3>
+<p>Throughout, $R$ is a commutative ring with identity carrying an involution $r \mapsto \bar r$ with $\bar r\bar s = \overline{rs}$ and $\bar 1 = 1$; the involution may be trivial, as for $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{R}$, or the conjugation, as for $\mathbb{C}$. The cohomology is $H^{*}(X;R)$, and a <strong>pairing</strong> is a biadditive map $\beta : H^{p} \times H^{q} \to R$ for the relevant degrees.</p>
+<p><strong>Definition.</strong> A pairing $\beta$ is <strong>sesquilinear</strong> when it is $R$-linear in the first variable and conjugate-linear in the second,</p>
+<p>$$
+\beta(ru + sv, w) = r\beta(u,w) + s\beta(v,w), \qquad \beta(u, rv) = \bar r\,\beta(u,v),
+$$</p>
+<p>and it is <strong>Hermitian</strong> when it satisfies the Hermitian symmetry $\beta(v,u) = \overline{\beta(u,v)}$, or <strong>$\varepsilon$-Hermitian</strong> when $\beta(v,u) = \varepsilon\,\overline{\beta(u,v)}$ with $\varepsilon$ a unit of $R$ satisfying $\varepsilon\bar\varepsilon = 1$. For the trivial involution the Hermitian symmetry is the ordinary symmetry and the $\varepsilon$-Hermitian condition is the $\varepsilon$-symmetry of Part I.</p>
+<p><strong>Theorem.</strong> An $\varepsilon$-Hermitian pairing has no confusion of the two variables: the conjugate-linear and the $\varepsilon$ factors multiply as expected, the form is determined by the values $\beta(u,u)$ when two is invertible and $\varepsilon = 1$, and the adjoint operation of the form, $\beta(Tu,v) = \beta(u,T^{*}v)$, is an anti-automorphism of the algebra of operators, an involution when the form is $\varepsilon$-Hermitian. The form is <strong>nondegenerate</strong> when the adjoint map $u \mapsto \beta(u,\cdot)$ is a bijection onto the conjugate dual.</p>
+<p><strong>Proof.</strong> The verification is linearity in each variable and the Hermitian symmetry; the adjoint operation and its properties are those of <em>Equivariant Operators under a Continuous Involution</em> and of the bilinear forms of Part I, read with the conjugate structure.</p>
+<h3 id="the-intersection-pairing">The Intersection Pairing</h3>
+<p><strong>Theorem.</strong> Let $X$ be a closed $R$-oriented topological $n$-manifold with fundamental class $[X] \in H_{n}(X;R)$. Then the <strong>intersection pairing</strong></p>
+<p>$$
+\beta(u,v) = \langle u \cup v, [X]\rangle \qquad (u \in H^{p}(X;R),\ v \in H^{n-p}(X;R)),
+$$</p>
+<p>is a nondegenerate $R$-sesquilinear pairing, the content of Poincaré duality; it is $\varepsilon$-Hermitian with the graded coefficient $\varepsilon_{p} = (-1)^{p(n-p)}$ on $H^{p}$, and in particular the middle pairing on $H^{n/2}$ is symmetric when $n \equiv 0 \pmod 4$ and alternating when $n \equiv 2 \pmod 4$. For $R = \mathbb{R}$ and $n = 4k$ the middle pairing is a nondegenerate symmetric bilinear form, and its <strong>signature</strong> is the integer</p>
+<p>$$
+\operatorname{sign}(X) = b_{+} - b_{-},
+$$</p>
+<p>where $b_{+}$ and $b_{-}$ are the numbers of positive and negative eigenvalues of the form on $H^{2k}(X;\mathbb{R})$.</p>
+<p><strong>Proof.</strong> The nondegeneracy is Poincaré duality, <em>Poincaré Duality</em>; the symmetry coefficient is the graded-commutativity of the cup product, $u\cup v = (-1)^{pq}v\cup u$ for $|u| = p$ and $|v| = q$; the middle case is $p = q = n/2$, giving $(-1)^{n/2}$, which is $+1$ for $n \equiv 0 \pmod 4$ and $-1$ for $n \equiv 2 \pmod 4$. The signature is defined for a nondegenerate symmetric form over the reals by the spectral theorem for symmetric forms of Part I.</p>
+<h2 id="the-involution-on-the-pairing">The Involution on the Pairing</h2>
+<h3 id="invariance-and-anti-invariance">Invariance and Anti-Invariance</h3>
+<p><strong>Definition.</strong> Let $\sigma$ be a continuous involution of $X$ and $\sigma^{*}$ the induced operator on the cohomology. The pairing $\beta$ is <strong>$\sigma$-invariant</strong> when</p>
+<p>$$
+\beta(\sigma^{*}u, \sigma^{*}v) = \beta(u,v) \qquad (u, v),
+$$</p>
+<p>and <strong>$\sigma$-anti-invariant</strong> when $\beta(\sigma^{*}u,\sigma^{*}v) = -\beta(u,v)$; more generally it <strong>scales</strong> by a unit $c$ when $\beta(\sigma^{*}u,\sigma^{*}v) = c\,\beta(u,v)$.</p>
+<p><strong>Theorem.</strong> If the involution preserves the fundamental class, $\sigma_{*}[X] = [X]$, then the intersection pairing is $\sigma$-invariant; if it reverses the fundamental class, $\sigma_{*}[X] = -[X]$, then the pairing is $\sigma$-anti-invariant. In general the pairing scales by the degree $\deg(\sigma) = \pm 1$ of the involution, and this is the scalar by which the antipodal operator scales the cup-product pairing on the sphere in <em>The Antipodal Map and the Adjoint</em>.</p>
+<p><strong>Proof.</strong> The invariance and the scaling are the computation</p>
+<p>$$
+\beta(\sigma^{*}u,\sigma^{*}v) = \langle \sigma^{*}(u\cup v), [X]\rangle = \langle u \cup v, \sigma_{*}[X]\rangle = \deg(\sigma)\,\beta(u,v),
+$$</p>
+<p>using that $\sigma^{*}$ is a ring homomorphism and the naturality of the evaluation; the sphere is the case computed in the previous article.</p>
+<h3 id="the-orthogonal-decomposition">The Orthogonal Decomposition</h3>
+<p><strong>Theorem.</strong> Let two be invertible in $R$ and let the form scale by the unit $c$. Then the eigenspaces of $\sigma^{*}$ are <strong>orthogonal</strong> when $c = 1$:</p>
+<p>$$
+\beta(u,v) = 0 \qquad (u \in H^{*}(X)^{\sigma^{*}},\ v \in H^{*}(X)^{-\sigma^{*}}),
+$$</p>
+<p>and the form splits as the orthogonal sum of its restrictions to the two eigenspaces. When $c = -1$ each eigenspace is <strong>totally isotropic</strong>, $\beta$ vanishes on the fixed part and on the anti-fixed part separately, and the form pairs the two parts dually, so that they have the same rank and the form is a hyperbolic form on their sum.</p>
+<p><strong>Proof.</strong> For $c = 1$ and $u$ fixed, $v$ anti-fixed, the invariance gives $\beta(u,v) = \beta(\sigma^{*}u,\sigma^{*}v) = \beta(u,-v) = -\beta(u,v)$, so $2\beta(u,v) = 0$ and the invertibility of two gives $\beta(u,v) = 0$. For $c = -1$ and $u, v$ both fixed, $\beta(u,v) = \beta(\sigma^{*}u,\sigma^{*}v) = -\beta(u,v)$, so $2\beta(u,v) = 0$ and $\beta$ vanishes on the fixed part; the same for the anti-fixed part, and the nondegeneracy of $\beta$ then makes the pairing between the two parts perfect, whence equal ranks.</p>
+<h2 id="the-signature-and-the-fixed-part">The Signature and the Fixed Part</h2>
+<h3 id="the-signature-of-an-invariant-form">The Signature of an Invariant Form</h3>
+<p><strong>Theorem.</strong> Let $R = \mathbb{R}$, let the form $\beta$ be symmetric, nondegenerate and $\sigma$-invariant on a finite-dimensional space $V$, and let $V = V^{+} \oplus V^{-}$ be the eigenspace decomposition. Then the form splits orthogonally and the signature is additive:</p>
+<p>$$
+\operatorname{sign}(V,\beta) = \operatorname{sign}(V^{+},\beta^{+}) + \operatorname{sign}(V^{-},\beta^{-}),
+$$</p>
+<p>where $\beta^{\pm}$ are the restrictions. The <strong>fixed-part signature</strong> is $\operatorname{sign}(V^{+},\beta^{+})$, and the <strong>equivariant signature</strong> is the difference</p>
+<p>$$
+\operatorname{sign}^{\sigma}(V,\beta) = \operatorname{sign}(V^{+},\beta^{+}) - \operatorname{sign}(V^{-},\beta^{-}),
+$$</p>
+<p>which is the trace of the involution on the formal difference of the positive and negative cones of the form; the signature is the sum and the equivariant signature the difference, so the two determine the two summands.</p>
+<p><strong>Proof.</strong> The orthogonality of the eigenspaces is the theorem above for $c = 1$; the additivity of the signature over an orthogonal sum is the standard property of the signature of a symmetric form, from Part I; the two equations determine $\operatorname{sign}(V^{\pm},\beta^{\pm})$ from the signature and the equivariant signature.</p>
+<h3 id="the-fixed-part">The Fixed Part</h3>
+<p><strong>Theorem.</strong> The contribution of the fixed part to the cohomology of the space with involution is the space $H^{*}(X;\mathbb{R})^{\sigma^{*}}$, and its signature is the signature of the restriction of the intersection form; in the invariant case it is the $V^{+}$ summand above, and in the anti-invariant case it is a totally isotropic subspace paired with the anti-fixed part. For the antipodal involution of the sphere in <em>The Antipodal Map and the Adjoint</em> the only nonzero part of the form is the top pairing on $H^{n}(S^{n};\mathbb{R}) = \mathbb{R}$. In the odd dimensions the involution has degree $+1$, so the form is invariant and the fixed part is the whole top group, while the top form is alternating because the top degree is odd, whence its symmetric signature is zero; in the even dimensions the involution has degree $-1$, so the form is anti-invariant, the top form is symmetric, and the top class is anti-invariant, so the fixed part is zero there. For a sphere of positive dimension the middle cohomology vanishes, since the cohomology is concentrated in degrees $0$ and $n$ and $n/2$ is neither, so the symmetric middle form of a positive-dimensional sphere is the zero form and its signature is zero.</p>
+<p><strong>Proof.</strong> The description of the fixed part is the definition and the orthogonality theorem. For the sphere the cohomology is concentrated in degrees $0$ and $n$; the form is nonzero only on the top group; the scaling of the form is by the degree $(-1)^{n+1}$, so the form is invariant in the odd dimensions and anti-invariant in the even dimensions; the top form is symmetric when $n$ is even and alternating when $n$ is odd, by the graded commutativity of the cup product; the fixed part of the top group is the whole group when $n$ is odd, by the computation of the previous article, and zero when $n$ is even; and the middle cohomology $H^{n/2}(S^{n})$ vanishes for $n > 0$, so the symmetric middle form has signature zero.</p>
+<p><strong>Remark.</strong> The two cases of the scaling are the two behaviours of the involution on the pairing, and they are distinguished by the fixed part: an invariant form restricts to a nondegenerate form on the fixed part in the favourable cases, while an anti-invariant form makes the fixed part isotropic and forces it to be paired with the anti-fixed part. The equivariant refinement, the <strong>equivariant signature theorem</strong> of Atiyah and Singer, computes the equivariant signature of a closed oriented even-dimensional manifold with an involution in terms of the fixed point set of the involution; it belongs to the analysis of the index theory and is named here as the refinement of the algebraic statement and not used.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian pairing on the cohomology of a space is a sesquilinear form with the Hermitian symmetry of the coefficient ring, and the intersection pairing $\langle u\cup v,[X]\rangle$ of a closed oriented manifold is the archetype; it is nondegenerate by Poincaré duality and $\varepsilon$-Hermitian with the graded sign, symmetric on the middle cohomology of a $4k$-manifold, where its signature is defined. A continuous involution acts on the pairing by the degree of its action on the fundamental class: the pairing is invariant when the fundamental class is preserved and anti-invariant when it is reversed, and in general it scales by the degree. Over a ring in which two is invertible the eigenspaces of the induced operator on the cohomology are orthogonal for an invariant form, so the form splits as the orthogonal sum of the fixed and the anti-fixed parts and the signature is additive, while for an anti-invariant form each eigenspace is totally isotropic and the two parts are paired dually with equal rank. The signature of the restriction to the fixed part and the equivariant signature, the difference of the two summands, are the invariants of the involution on the form; the equivariant signature theorem of Atiyah and Singer computes the equivariant signature from the fixed point set and is deferred as the analytic refinement.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $r \mapsto \bar r$</td>
+<td>Coefficient ring with an involution (trivial or conjugation)</td>
+</tr>
+<tr>
+<td>sesquilinear $\beta$</td>
+<td>Linear in the first variable, conjugate-linear in the second</td>
+</tr>
+<tr>
+<td>Hermitian, $\varepsilon$-Hermitian</td>
+<td>$\beta(v,u) = \overline{\beta(u,v)}$, respectively $\varepsilon\overline{\beta(u,v)}$</td>
+</tr>
+<tr>
+<td>nondegenerate</td>
+<td>$u \mapsto \beta(u,\cdot)$ is a bijection onto the conjugate dual</td>
+</tr>
+<tr>
+<td>$[X]$, intersection pairing</td>
+<td>Fundamental class and $\beta(u,v) = \langle u\cup v,[X]\rangle$</td>
+</tr>
+<tr>
+<td>$\varepsilon_{p} = (-1)^{p(n-p)}$</td>
+<td>The symmetry coefficient of the intersection pairing</td>
+</tr>
+<tr>
+<td>$\operatorname{sign}(X) = b_{+}-b_{-}$</td>
+<td>Signature of the middle form of a $4k$-manifold</td>
+</tr>
+<tr>
+<td>$\sigma$-invariant, $\sigma$-anti-invariant</td>
+<td>$\beta(\sigma^{*}u,\sigma^{*}v) = \pm\beta(u,v)$</td>
+</tr>
+<tr>
+<td>$\deg(\sigma)$ scaling</td>
+<td>The pairing scales by the degree of the involution</td>
+</tr>
+<tr>
+<td>$V = V^{+}\oplus V^{-}$</td>
+<td>Eigenspaces of the induced operator</td>
+</tr>
+<tr>
+<td>orthogonal / isotropic</td>
+<td>The eigenspaces orthogonal ($c=1$) / totally isotropic ($c=-1$)</td>
+</tr>
+<tr>
+<td>$\operatorname{sign}(V^{+},\beta^{+})$</td>
+<td>Signature of the fixed part</td>
+</tr>
+<tr>
+<td>$\operatorname{sign}^{\sigma}$</td>
+<td>Equivariant signature, the difference of the two summands</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1998), for sesquilinear and Hermitian forms, the adjoint anti-automorphism and the nondegeneracy conditions.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for symmetric and Hermitian forms, the spectral theorem over the reals and the signature.</li>
+<li>W. Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, 1985), for $\varepsilon$-Hermitian forms, hyperbolic forms and the orthogonal decomposition of a form under an isometry of order two.</li>
+<li>William S. Massey, <em>A Basic Course in Algebraic Topology</em> (Springer, 1991), for Poincaré duality, the intersection pairing and its symmetry.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators III", <em>Annals of Mathematics</em> 87 (1968), 546–604, for the equivariant signature theorem and the computation from the fixed point set.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the action of a group on a pairing and the fixed part of an equivariant form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

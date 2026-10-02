@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of a Symmetry Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-a-symmetry-operator"><strong>The Adjoint of a Symmetry Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An operator on a space with a chosen form has an <strong>adjoint</strong>: the operator that moves the form from one side of it to the other, defined by $h(Tu, v) = h(u, T^{*}v)$. When the operator is a <strong>symmetry</strong> — an isometry of the chosen form, an element of a symmetry group acting on the space — the adjoint is its inverse, and the symmetry operators are exactly the <strong>unitary</strong> operators of the form. The passage $T \mapsto T^{*}$ is itself an involution, on the operators rather than on the elements, and it is the archetype of the group <code>- * Operator Theory</code> of this category: the operators are read together with the involution the form defines on them.</p>
+<p>The article treats the invariant form, the adjoint of an operator on it, the unitarity of the symmetry operators, and the two involutions — the involution $\sigma$ on the <strong>elements</strong> of the group and the adjoint $T \mapsto T^{*}$ on the <strong>operators</strong> — which are different structures and coincide only when the representation is a <code>*</code>-representation. The algebra of the adjoint, the involutive algebras and the unitary elements in the algebraic setting are <em>The Adjoint in an Involutive Algebra</em>, <em>Unitary Operators of an Involutive Algebra</em>, <em>Involutions of the Endomorphism Algebra</em> and <em>Involutions of the Operator Layer</em>, in Part I, and the topological case is <em>Involutions of the Bounded Operators</em>; the representation theory and the invariant form are <em>Representations of Groups</em>, <em>The Left and Right Regular Representation</em> and <em>Noncommutative Harmonic Analysis</em>; the operators of the symmetry group, the left and right multiplications and the sandwich, are <em>Operators on a Symmetry Group</em> and <em>The Symmetry Operators of a Space</em>, the first articles of this category; the involution on the elements is the group <code>- * Theory</code>, the previous group. The adjoint in the complex-vector-space setting is <em>The Adjoint of a Hermitian Operator</em> and <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, in <em>Geometry on Linear Spaces</em>, written in parallel.</p>
+<p>The article has four sections: the invariant form and the adjoint; the adjoint of a symmetry operator; the involution on the operators and the two involutions; and the worked cases. Throughout, $V$ is a finite-dimensional space over a field $F$ of characteristic not $2$ with a chosen non-degenerate form $h$ — quadratic, symmetric bilinear or Hermitian — which is <strong>invariant</strong> under a symmetry group $G$ in the sense that $h(gu, gv) = h(u, v)$ for all $g \in G$; $T \in \operatorname{End}(V)$ is a linear operator, and $T^{*}$ its adjoint with respect to $h$.</p>
+<h2 id="the-invariant-form-and-the-adjoint-of-an-operator">The Invariant Form and the Adjoint of an Operator</h2>
+<h3 id="the-invariant-form">The Invariant Form</h3>
+<p><strong>Definition.</strong> A form $h$ on $V$ is <strong>invariant</strong> under the symmetry group $G \leq GL(V)$ when $h(gu, gv) = h(u, v)$ for all $g \in G$ and all $u, v$; equivalently, when $G$ is a subgroup of the isometry group $\operatorname{Isom}(V,h)$ of the form.</p>
+<p><strong>Proposition.</strong> If $h$ and $h'$ are two invariant forms under a group $G$ acting irreducibly on $V$, then $h' = \lambda h$ for a scalar $\lambda$ when the two have the same symmetry type, by Schur's lemma; more generally the invariant forms are the fixed points of the $G$-action on the space of forms, and the space of invariant forms is determined by the irreducible constituents of $V$. For a symmetric space the invariant form is the metric, unique up to scale on each irreducible factor, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<p><strong>Proof.</strong> The invariance of $h'$ is the statement that the map $V \to \overline{V}^{*}$ it defines is an intertwiner; two intertwiners between irreducible modules differ by a scalar, the standard form of Schur's lemma, <em>Representations of Groups</em>. The general statement is the decomposition into isotypic components.</p>
+<p><strong>Remark.</strong> The choice of the form is what makes the theory geometric: the same linear group is the isometry group of many forms, and the adjoint it defines depends on the form. This is the boundary test of the part, read on the operators.</p>
+<h3 id="the-adjoint-of-an-operator">The Adjoint of an Operator</h3>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> of $T \in \operatorname{End}(V)$ with respect to $h$ is the unique operator $T^{*}$ with</p>
+<p>$$
+h(Tu, v) = h(u, T^{*}v) \qquad \text{for all } u, v \in V,
+$$</p>
+<p>which exists and is unique because $h$ is non-degenerate.</p>
+<p><strong>Proposition.</strong> The adjoint is a conjugate-linear involution of $\operatorname{End}(V)$ and an anti-automorphism,</p>
+<p>$$
+(T + S)^{*} = T^{*} + S^{*}, \qquad (\lambda T)^{*} = \overline{\lambda}\, T^{*}, \qquad (ST)^{*} = T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \operatorname{id}^{*} = \operatorname{id},
+$$</p>
+<p>so $\operatorname{End}(V)$ is an <strong>involutive algebra</strong> (a <code>*</code>-algebra) over $F$; the <strong>Hermitian</strong> operators are those with $T^{*} = T$, the <strong>unitary</strong> those with $T^{*}T = \operatorname{id}$, the <strong>normal</strong> those with $T^{*}T = TT^{*}$.</p>
+<p><strong>Proof.</strong> Uniqueness is the non-degeneracy; the identities are the defining relation applied to $uv$ and to the products of three vectors, the anti-automorphism being $(ST)^{*} = T^{*}S^{*}$ because $h(STu,v) = h(Tu, S^{*}v) = h(u, T^{*}S^{*}v)$. This is the algebraic theory of <em>The Adjoint in an Involutive Algebra</em> and <em>Involutions of the Endomorphism Algebra</em>.</p>
+<h2 id="the-adjoint-of-a-symmetry-operator_1">The Adjoint of a Symmetry Operator</h2>
+<h3 id="symmetries-are-unitary">Symmetries Are Unitary</h3>
+<p><strong>Theorem.</strong> For $g \in G$ a symmetry operator the adjoint with respect to the invariant form is the inverse,</p>
+<p>$$
+g^{*} = g^{-1}, \qquad g^{*}g = gg^{*} = \operatorname{id},
+$$</p>
+<p>so every element of the symmetry group is a unitary operator of the form; conversely a unitary operator of the form is an isometry, and the group of unitary operators is the isometry group of $h$.</p>
+<p><strong>Proof.</strong> The invariance of the form under $g$ is $h(gu, gv) = h(u,v)$, that is $h(u, g^{*}gv) = h(u,v)$ for all $u,v$, hence $g^{*}g = \operatorname{id}$ by non-degeneracy; then $g^{*} = g^{-1}$. Conversely a unitary operator satisfies $h(Tu,Tv) = h(u,T^{*}Tv) = h(u,v)$, so it is an isometry, and the set of unitary operators is exactly the isometry group, <em>Isometries and Orthogonal Transformations</em> and <em>The Unitary and Symplectic Groups</em>.</p>
+<p><strong>Corollary.</strong> For the orthogonal group of a quadratic form the adjoint is the transpose-adjoint, $T^{*} = J^{-1}T^{\mathrm{tr}}J$, and for the unitary group of a Hermitian form it is the conjugate transpose, $T^{*} = J^{-1}T^{\dagger}J$; in both cases the symmetry operators are the operators with $T^{*}T = \operatorname{id}$.</p>
+<p><strong>Proof.</strong> The matrix formula of the adjoint in a basis in which the form has the matrix $J$, read in the two cases.</p>
+<h3 id="the-invariant-form-and-the-lie-algebra">The Invariant Form and the Lie Algebra</h3>
+<p><strong>Proposition.</strong> The Lie algebra of the symmetry group is the space of operators skew-adjoint with respect to the invariant form,</p>
+<p>$$
+\mathrm{Lie}(G) = \{X \in \operatorname{End}(V) : X^{*} = -X\},
+$$</p>
+<p>so the one-parameter groups of symmetries are the exponentials of the skew-adjoint operators; the Hermitian operators are the $i$ times the skew-adjoint ones in the complex case, and the flow of a skew-adjoint operator preserves the form.</p>
+<p><strong>Proof.</strong> Differentiate $h(e^{tX}u, e^{tX}v) = h(u,v)$ at $t = 0$: $h(Xu,v) + h(u,Xv) = 0$, i.e., $X^{*} = -X$; conversely the exponential of a skew-adjoint operator is unitary, the standard Lie-correspondence, <em>Lie Groups</em>.</p>
+<p><strong>Remark.</strong> The realisation of the symmetry group inside the unitary operators of the form is a <strong>representation</strong> of $G$ by operators, and the statement $g^{*} = g^{-1}$ holds <strong>for the elements of the group</strong>, without reference to any involution on the group. The two structures are distinguished in the next section.</p>
+<h2 id="the-involution-on-the-operators-and-the-two-involutions">The Involution on the Operators and the Two Involutions</h2>
+<h3 id="the-operator-involution">The Operator Involution</h3>
+<p><strong>Definition.</strong> The <strong>operator involution</strong> on $\operatorname{End}(V)$ is the map $T \mapsto T^{*}$; the operators it fixes are the Hermitian ones, and the operators it inverts are the skew-adjoint ones, so the involution on the operators is the same structure as the involution on the elements of the group <code>- * Theory</code>, transported to the algebra of operators.</p>
+<p><strong>Proposition.</strong> The operator involution is an involutive anti-automorphism of the algebra $\operatorname{End}(V)$, it makes the algebra a <code>*</code>-algebra, and its interaction with a subalgebra is what the unitary group of the form is defined by:</p>
+<p>$$
+U(V,h) = \{T : T^{*}T = \operatorname{id}\} = \{T : T^{*} = T^{-1}\}.
+$$</p>
+<p><strong>Proof.</strong> The anti-automorphism and the involution are the proposition of the previous section; the characterisation of the unitary group is the definition.</p>
+<h3 id="the-two-involutions">The Two Involutions</h3>
+<p><strong>Theorem (the two structures do not coincide).</strong> Let $\rho$ be a representation of the symmetry group $G$ by isometries of the invariant form $h$, so that $\rho(g)^{*} = \rho(g)^{-1}$ for every $g$, and let $\sigma$ be an involution of the <strong>elements</strong> of $G$. Then the identity</p>
+<p>$$
+\rho(\sigma(g)) = \rho(g)^{*} \qquad \text{for all } g \in G
+$$</p>
+<p>holds if and only if</p>
+<p>$$
+\rho\bigl(g\,\sigma(g)\bigr) = \operatorname{id} \qquad \text{for all } g \in G,
+$$</p>
+<p>because $\rho(\sigma(g)) = \rho(g)^{-1}$ is equivalent to $\rho(g)\rho(\sigma(g)) = \operatorname{id}$; the representation is then a <strong><code>*</code>-representation</strong> for the involution $\sigma$. The condition depends on the representation and on the involution together, and it is <strong>not</strong> a consequence of the definitions: the involution on the elements and the adjoint on the operators are two structures, and the identity is an additional property that is proved for the representations that have it and is never assumed.</p>
+<p><strong>Proof.</strong> The adjoint of an isometry is its inverse, $\rho(g)^{*} = \rho(g)^{-1}$, by the unitarity theorem above, so the identity is the equation $\rho(\sigma(g)) = \rho(g)^{-1}$, which by multiplicativity is $\rho(g)\rho(\sigma(g)) = \rho(g\sigma(g)) = \operatorname{id}$. This is the general criterion. The theory of the algebras with an involution and of the <code>*</code>-representations is <em>The Adjoint in an Involutive Algebra</em>, <em>Unitary Operators of an Involutive Algebra</em> and <em>The Adjoint Representation and the Involution</em>.</p>
+<p><strong>Corollary (the abelian case and the obstruction).</strong> If the image $\rho(G)$ is abelian and the involution is the inversion on it, $\sigma(g)g \in \ker\rho$, the identity holds; conversely, when $\sigma$ is an automorphism, the identity forces $\rho(G)$ to be abelian: it gives $\rho(\sigma(gh)) = \rho(gh)^{-1} = \rho(h)^{-1}\rho(g)^{-1}$ and also $\rho(\sigma(g)\sigma(h)) = \rho(g)^{-1}\rho(h)^{-1}$, so the two orders of the inverses agree and the image is abelian. Hence for a nonabelian symmetry group the involution on the elements and the adjoint on the operators are genuinely different structures, and no faithful <code>*</code>-representation exists for an automorphic $\sigma$; the familiar coincidences occur for abelian images.</p>
+<p><strong>Proof.</strong> The first statement is the criterion with $\sigma(g) = g^{-1}$ on the image; the second is the computation displayed: $\sigma$ an automorphism gives $\rho(\sigma(gh)) = \rho(\sigma(g)\sigma(h)) = \rho(g)^{-1}\rho(h)^{-1}$ and the homomorphism property gives $\rho(\sigma(gh)) = \rho(gh)^{-1} = \rho(h)^{-1}\rho(g)^{-1}$, so $\rho(h)^{-1}\rho(g)^{-1} = \rho(g)^{-1}\rho(h)^{-1}$ for all $g, h$, which is the commutativity of $\rho(G)$.</p>
+<p><strong>Remark.</strong> This is the distinction the general brief makes: <strong>the involution on the elements and the adjoint on the operators are two structures, not one.</strong> The group <code>- * Theory</code> read the involution $\sigma$ on the elements; this group reads the adjoint on the operators; and the two agree only in a <code>*</code>-representation, which is proved case by case.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the orthogonal group).</strong> Let $h = Q$ be a quadratic form of signature $(p,q)$ and $G = O(p,q)$; the adjoint is $T^{*} = J^{-1}T^{\mathrm{tr}}J$, the symmetry operators satisfy $g^{*} = g^{-1}$, and the operator involution is the transpose-adjoint of <em>The Orthogonal Group and the Involutive Automorphism</em>. The Cartan involution $\theta(g) = JgJ^{-1}$ of the elements is <strong>not</strong> the adjoint in general: for the defining representation, $\theta(g)$ is the identity on the block-diagonal $K$ and $-1$ on $\mathfrak{p}$, while $g^{*} = g^{-1}$; the two coincide only for the elements with $JgJ^{-1} = g^{-1}$, which is a proper subset unless the group is abelian.</p>
+<p><strong>Example (the unitary group).</strong> Let $h$ be a Hermitian form of signature $(p,q)$ and $G = U(p,q)$; the adjoint is the conjugate transpose $T^{*} = J^{-1}T^{\dagger}J$, and the symmetry operators satisfy $g^{*} = g^{-1}$. The Cartan involution $\theta(g) = JgJ^{-1}$ of the elements does <strong>not</strong> satisfy $\rho(\theta(g)) = \rho(g)^{*}$ in the defining representation: the condition is $JgJ^{-1} = g^{-1}$, which holds only for the elements of order two that commute with $J$, and it fails for a rotation of the definite part through an angle other than $0$ or $\pi$. The defining representation of a nonabelian unitary group is therefore not a <code>*</code>-representation for the Cartan involution, which is the generic behaviour of the theorem.</p>
+<p><strong>Example (the symmetric group of a figure).</strong> Let $F$ be a figure in a Euclidean space and $G = \operatorname{Sym}(F)$ its symmetry group, a subgroup of $O(n)$; the invariant form is the Euclidean one, the adjoint is the transpose, and every symmetry satisfies $g^{*} = g^{-1}$. The operator involution inverts the rotations and fixes the reflections, so the reflections are Hermitian ($g^{*} = g$) as well as unitary, while a rotation through an angle other than $0$ or $\pi$ is unitary and not Hermitian; the picture is the finite case of the general theory.</p>
+<p><strong>Example (the failing case).</strong> Let $G = G_1\times G_2$ with $G_1$ and $G_2$ simple, let $\sigma(g_1,g_2) = (g_2,g_1)$ be the exchange involution of the elements, and let $\rho$ be the representation on $V_1$ where $G_2$ acts trivially; then $\rho(\sigma(g)) = \rho(g_2)$ does not depend on $g_1$, while $\rho(g)^{*}$ does, so the identity fails and the representation is not a <code>*</code>-representation for this involution. The example shows that the equality of the two structures is a genuine restriction.</p>
+<h2 id="summary">Summary</h2>
+<p>A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of an operator by $h(Tu,v) = h(u,T^{*}v)$; the adjoint is a conjugate-linear involutive anti-automorphism, so the operator algebra is a <code>*</code>-algebra, and the Hermitian, unitary and normal operators are defined by $T^{*} = T$, $T^{*}T = \operatorname{id}$ and $T^{*}T = TT^{*}$. Every symmetry operator is unitary, $g^{*} = g^{-1}$, and the unitary operators of the form are exactly the isometries, so the symmetry group is a subgroup of the unitary group $U(V,h)$ and its Lie algebra consists of the skew-adjoint operators; for the orthogonal group the adjoint is the transpose-adjoint and for the unitary group the conjugate transpose. The involution $T \mapsto T^{*}$ on the operators and the involution $\sigma$ on the elements of the group are two different structures: the identity $\rho(\sigma(g)) = \rho(g)^{*}$ holds exactly when $\rho(g\sigma(g)) = \operatorname{id}$ for all $g$, so it holds for an abelian image with the inversion and, when $\sigma$ is an automorphism, it forces the image to be abelian; it is proved for the representations that have it and never assumed. The adjoint of the standard operators of the group is the subject of the following articles of this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h$</td>
+<td>the invariant form, quadratic, bilinear or Hermitian</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the symmetry group, a subgroup of the isometry group of $h$</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$, $h(Tu,v) = h(u,T^{*}v)$</td>
+</tr>
+<tr>
+<td>$T^{*} = T$, $T^{*}T = \operatorname{id}$</td>
+<td>Hermitian and unitary operators</td>
+</tr>
+<tr>
+<td>$g^{*} = g^{-1}$</td>
+<td>every symmetry operator is unitary</td>
+</tr>
+<tr>
+<td>$\{X : X^{*} = -X\}$</td>
+<td>the Lie algebra of the symmetry group</td>
+</tr>
+<tr>
+<td>$U(V,h)$</td>
+<td>the unitary group of the form; $\{T : T^{*}T = \operatorname{id}\}$</td>
+</tr>
+<tr>
+<td>$T \mapsto T^{*}$</td>
+<td>the operator involution; a <code>*</code>-algebra structure</td>
+</tr>
+<tr>
+<td>$\sigma(g) = (g^{*})^{-1}$</td>
+<td>the Cartan involution manufactured from the form</td>
+</tr>
+<tr>
+<td>$\rho(\sigma(g)) = \rho(g)^{*}$</td>
+<td>the <code>*</code>-representation identity; proved, not assumed</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the invariant form, the adjoint of an isometry and the symmetric spaces.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for unitary representations, the adjoint with respect to an invariant form and the <code>*</code>-representations.</li>
+<li>Sterling K. Berberian, <em>Baer <code>*</code>-Rings</em> (Springer, 1972), for the algebraic theory of the adjoint and the unitary elements in an involutive ring.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the adjoint of a bounded operator, the self-adjoint and the unitary operators.</li>
+<li>Israel M. Gel'fand and Mark A. Naimark, <em>Unitäre Darstellungen der klassischen Gruppen</em> (Akademie-Verlag, 1957), for the unitary representations and the invariant forms of the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

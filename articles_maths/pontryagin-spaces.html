@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontryagin Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pontryagin-spaces"><strong>Pontryagin Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Pontryagin space</strong> is a Krein space whose negative part is finite-dimensional. The rank of negativity $\kappa = \dim K_{-}$ is then a natural number, the space is written $\Pi_{\kappa}$, and the finiteness of $\kappa$ restores much of the behaviour of a Hilbert space: every self-adjoint operator has an invariant maximal negative subspace, the non-real part of its spectrum is bounded by $\kappa$, and the finite-dimensional theory is a clean linear algebra of the spaces $\mathbb{C}^{p,q}$.</p>
+<p>The number $\kappa$ is the defect from a Hilbert space. When $\kappa = 0$ the space is a Hilbert space and the classical spectral theorem holds without exception. When $\kappa$ is positive but finite, an operator that is self-adjoint for the indefinite form may acquire non-real eigenvalues, but only at most $\kappa$ of them, counted with multiplicity, and always in conjugate pairs; a positive invariant subspace of dimension all but $\kappa$ exists; and the operator is "almost" Hilbert. This article fixes the definition, the finite-dimensional linear algebra of $\mathbb{C}^{p,q}$, the spectral theorem in the finite-dimensional and the Pontryagin form, and the role of the single number $\kappa$.</p>
+<p>The general indefinite theory is <em>Indefinite Inner Product Spaces</em>, the complete case with infinite rank of negativity is <em>Krein Spaces</em>, the operator $J$ is <em>The Fundamental Symmetry</em>, and the operator theory of the indefinite form – the $J$-self-adjoint and $J$-unitary operators, the definitizable operators and the Krein–Naĭmark theorem – is <em>J-Self-Adjoint and J-Unitary Operators</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>. Those are cited. The base is $\mathbb{R}$ or $\mathbb{C}$ with its conjugation, the form is $[\cdot,\cdot]$, and $\kappa$ is the rank of negativity.</p>
+<h2 id="pontryagin-spaces-and-the-rank-of-negativity">Pontryagin Spaces and the Rank of Negativity</h2>
+<p><strong>Definition.</strong> A <strong>Pontryagin space</strong> of rank of negativity $\kappa$ is a Krein space $K$ with $\dim K_{-} = \kappa < \aleph_{0}$; it is written $\Pi_{\kappa}$. The rank of negativity is also called the <strong>index</strong> of the space.</p>
+<p><strong>Proposition.</strong> $\Pi_{0}$ is exactly a Hilbert space. In $\Pi_{\kappa}$ the positive part $K_{+}$ may be of any dimension, finite or infinite, so the signature is $(p,\kappa)$ with $p$ arbitrary; the model spaces are $\mathbb{C}^{p}\oplus-\mathbb{C}^{\kappa}$ and $\ell^{2}\oplus-\mathbb{C}^{\kappa}$.</p>
+<p><strong>Proof.</strong> $\kappa = 0$ makes the negative part zero; the models are the Krein model of <em>Krein Spaces</em> with one of the two cardinals finite.</p>
+<p><strong>Proposition (every subspace is almost positive).</strong> Every subspace $L$ of $\Pi_{\kappa}$ satisfies $\dim(L\cap L^{\perp}) \leq \kappa$, and the restriction of the form to $L$ is degenerate only along that radical, of dimension at most $\kappa$. In particular a subspace of dimension exceeding $\kappa$ contains a positive vector.</p>
+<p><strong>Proof.</strong> A neutral vector of $L$ generates a one-dimensional neutral subspace, and a neutral subspace of $\Pi_{\kappa}$ has dimension at most $\kappa$ by counting against the negative part; the last statement follows because a subspace all of whose vectors are non-positive has dimension at most $\kappa$.</p>
+<p><strong>Remark ($\kappa$ as the defect).</strong> The single number $\kappa$ bounds simultaneously: the dimension of a neutral or a negative subspace, the dimension of the radical of a restriction, the number of non-real eigenvalues of a self-adjoint operator, and the codimension of an invariant positive subspace. This is the sense in which $\Pi_{\kappa}$ is a Hilbert space with a bounded defect, and $\Pi_{1}$ – one negative direction – is the most-used instance.</p>
+<h2 id="the-finite-dimensional-math45">The Finite-Dimensional $\mathbb{C}^{p,q}$</h2>
+<p><strong>Definition.</strong> Write $\mathbb{C}^{p,q}$ for $\mathbb{C}^{n}$, $n = p+q$, with the form</p>
+<p>$$
+[x,y] = \sum_{i=1}^{p}x_{i}\bar y_{i} - \sum_{j=p+1}^{n}x_{j}\bar y_{j} .
+$$</p>
+<p>It is a Pontryagin space $\Pi_{\kappa}$ with $\kappa = q$ and finite positive part of dimension $p$; the real analogue $\mathbb{R}^{p,q}$ is defined by the same formula.</p>
+<p><strong>Proposition (the operators of the form).</strong> A linear operator $A$ on $\mathbb{C}^{p,q}$ with matrix $A$ in the standard basis is <strong>self-adjoint</strong> for the form exactly when</p>
+<p>$$
+G A = A^{\dagger} G, \qquad G = \mathrm{diag}(1,\ldots,1,-1,\ldots,-1),
+$$</p>
+<p>and <strong>unitary</strong> for the form exactly when $A^{\dagger}GA = G$. The self-adjoint operators of the form form a real Lie algebra and the unitary ones a group, the $\dagger$ being the Hilbert adjoint in the standard inner product.</p>
+<p><strong>Proof.</strong> The two identities are the definitions $[Ax,y] = [x,Ay]$ and $[Ax,Ay] = [x,y]$ written in the standard basis, where $[x,y] = x^{\dagger}Gy$.</p>
+<p><strong>Proposition (the admissible normal form).</strong> If $A$ is self-adjoint for the form and the restriction of the form to a spectral subspace is definite, the restriction is diagonalisable with real eigenvalues; a non-real eigenvalue of such an $A$ has a conjugate partner, and the pair occupies at least one dimension of the negative part, so at most $\kappa$ conjugate pairs \u2013 equivalently at most $2\kappa$ non-real eigenvalues counted with multiplicity, or $\kappa$ in the open upper half-plane \u2013 can occur.</p>
+<p><strong>Proof.</strong> On a definite invariant subspace the form is an inner product and $A$ is an ordinary self-adjoint operator there; each non-real eigenvalue consumes at least one dimension of the negative part, and there are only $\kappa$ of them.</p>
+<p><strong>Remark (the standard inner product is the companion).</strong> The Hilbert inner product $\langle x,y\rangle = x^{\dagger}y$ and the indefinite form $[x,y] = x^{\dagger}Gy$ differ by the diagonal sign matrix $G$, which is the fundamental symmetry; the operators of the form are the Hilbert operators satisfying the twisted self-adjointness, and the whole linear algebra of $\mathbb{C}^{p,q}$ is the linear algebra of $\mathbb{C}^{n}$ conjugated by $G$.</p>
+<h2 id="self-adjoint-operators-and-the-spectral-theorem">Self-Adjoint Operators and the Spectral Theorem</h2>
+<h3 id="the-finite-dimensional-theorem">The Finite-Dimensional Theorem</h3>
+<p><strong>Theorem.</strong> Let $A$ be self-adjoint for the form on a finite-dimensional indefinite inner product space $V$. Then the eigenvalues of $A$ are either real or occur in conjugate pairs; the root subspaces of distinct eigenvalues of the same type are orthogonal when the eigenvalues are real and distinct, and a non-real eigenvalue $\lambda$ has the same algebraic and geometric multiplicity as its conjugate $\bar\lambda$, with the root subspace of $\bar\lambda$ the complex conjugate of that of $\lambda$. The non-real eigenvalues form conjugate pairs; there are at most $\kappa = \min(p,q)$ such pairs occurring in the open upper half-plane, equivalently at most $2\kappa$ non-real eigenvalues counted with multiplicity.</p>
+<p><strong>Proof.</strong> The conjugate pairing is the reality of the characteristic polynomial modulo the order reversal induced by the form; the orthogonality of the real root subspaces is the identity $[Ax,y] = [x,Ay]$ applied to eigenvectors; and each conjugate pair of non-real eigenvalues forces a two-dimensional indefinite subspace on which the form is neutral, so a $\kappa$-dimensional negative part can serve at most $\kappa$ pairs.</p>
+<p><strong>Corollary (diagonalisation on the definite part).</strong> The definite part of $V$ supports ordinary self-adjoint theory: on the positive definite subspace the restrictions of a self-adjoint $A$ are diagonalisable over $\mathbb{R}$, and the same holds on the negative definite subspace after the sign is changed.</p>
+<p><strong>Proof.</strong> Restriction of the form to a definite subspace is an inner product, and the identity $[Ax,y] = [x,Ay]$ becomes ordinary self-adjointness.</p>
+<h3 id="the-pontryagin-theorem">The Pontryagin Theorem</h3>
+<p><strong>Theorem (Pontryagin).</strong> Let $A$ be a self-adjoint operator on $\Pi_{\kappa}$ with $\kappa$ finite. Then the non-real eigenvalues of $A$ occur in conjugate pairs, there are at most $\kappa$ of them in the open upper half-plane, equivalently at most $2\kappa$ counted with multiplicity; $A$ has an invariant maximal negative subspace of dimension at most $\kappa$; and there is an invariant positive definite subspace of $\Pi_{\kappa}$ complementary to it. Consequently $A$ is the orthogonal sum of a self-adjoint operator on a Hilbert space and a finite-dimensional self-adjoint operator on the negative part.</p>
+<p><strong>Proof.</strong> The bound on the non-real eigenvalues is the finite-dimensional argument applied to a Pontryagin subspace containing the negative part of $A$, the existence of the invariant maximal negative subspace is by a fixed-point argument – the same statement for the finite-dimensional case and the extension to $\Pi_{\kappa}$ by the invariance of the negative part; the complementary positive subspace is its orthogonal complement, invariant because the two are invariant.</p>
+<p><strong>Remark (the spectral theorem is finite-dimensional here).</strong> The theorem is stated and proved with eigenvalues and root subspaces, not with a spectral resolution of the identity; the invariant subspace theorem, the bound on the non-real eigenvalues and the conjugate pairing are the content. The general spectral function of an unbounded self-adjoint operator on a Krein space, its critical points and the resolvent are <em>Spectral Theory on Krein Spaces</em> and, for the analytic machinery, <em>Analysis on Linear Spaces</em> (Part III), which owns the spectral theorem and the resolvent.</p>
+<h2 id="the-role-of-math104">The Role of $\kappa$</h2>
+<p><strong>Proposition (six faces of $\kappa$).</strong> In $\Pi_{\kappa}$ the number $\kappa$ is simultaneously: the dimension of the negative part and of every maximal negative subspace; the maximal dimension of a neutral subspace; the bound on $\dim(L\cap L^{\perp})$ for every subspace $L$; the bound $\kappa$ on the number of non-real eigenvalues in the upper half-plane, that is $2\kappa$ with multiplicity, of any self-adjoint operator; the codimension of the invariant positive definite subspace of the Pontryagin theorem; and the dimension of the null eigenspace at the boundary of definitisability.</p>
+<p><strong>Proof.</strong> Each statement is one of the preceding propositions, read in the order in which they appear.</p>
+<p><strong>Remark (why finiteness matters).</strong> Every one of the six statements fails for infinite $\kappa$: an infinite negative part can hold infinitely many neutral directions and infinitely many non-real eigenvalue pairs, and the invariant positive subspace of codimension $\kappa$ need not exist with a complement. The finiteness of $\kappa$ is exactly what makes the theory behave like a finite perturbation of the Hilbert theory.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-space-math115">The Space $\mathbb{C}^{1,1}$</h3>
+<p>The form $[x,y] = x_{1}\bar y_{1} - x_{2}\bar y_{2}$ has $\kappa = 1$. The operator $A = \mathrm{diag}(1,-1)$ is self-adjoint for the form, with eigenvalues $\pm1$ and eigenvectors $e_1,e_2$; the operator with matrix $\begin{pmatrix}0 & 1 \\ -1 & 0\end{pmatrix}$ is also self-adjoint for the form, with eigenvalues $\pm i$; that is the single non-real pair that $\kappa = 1$ allows.</p>
+<h3 id="a-pontryagin-space-of-infinite-positive-part">A Pontryagin Space of Infinite Positive Part</h3>
+<p>On $\ell^{2}\oplus-\mathbb{C}$ with $[x,y] = \sum_{n\geq1}x_{n}\bar y_{n} - x_{0}\bar y_{0}$ the index is $1$ and the positive part is infinite-dimensional. A self-adjoint operator that is a compact perturbation of a diagonal real operator has at most one conjugate pair of non-real eigenvalues, and the invariant negative subspace is at most one-dimensional, as the theorem requires.</p>
+<h3 id="the-signature-and-the-index">The Signature and the Index</h3>
+<p>In $\mathbb{R}^{2,3}$ the signature is $(2,3)$ and $\kappa = 3$: there are three negative directions, a maximal neutral subspace has dimension $2 = \min(2,3)$, and a self-adjoint operator can have at most three conjugate pairs of non-real eigenvalues, that is six with multiplicity.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Pontryagin space</strong> $\Pi_{\kappa}$ is a Krein space with <strong>finite rank of negativity</strong> $\kappa = \dim K_{-}$; the positive part may be infinite, and $\Pi_{0}$ is a Hilbert space. The index $\kappa$ is the defect from a Hilbert space, and it bounds, all at once, the negative and neutral dimensions, the radical of any restricted form, the number of conjugate pairs of non-real eigenvalues of a self-adjoint operator and the codimension of its invariant positive subspace. The finite-dimensional <strong>$\mathbb{C}^{p,q}$</strong> is a Pontryagin space of index $q$: an operator is self-adjoint for the form exactly when $GA = A^{\dagger}G$, and the whole linear algebra is that of $\mathbb{C}^{n}$ twisted by the diagonal sign matrix, the fundamental symmetry. The <strong>spectral theorem</strong> is stated with eigenvalues and root subspaces: a self-adjoint operator has real eigenvalues, and its non-real eigenvalues come in conjugate pairs with at most $\kappa$ of them in the upper half-plane and at most $2\kappa$ counted with multiplicity, and on a definite invariant subspace it is an ordinary self-adjoint operator. <strong>Pontryagin's theorem</strong> supplies an invariant maximal negative subspace and a complementary invariant positive one, so the operator is a Hilbert self-adjoint operator plus a finite-dimensional negative piece. The general indefinite theory is <em>Indefinite Inner Product Spaces</em>, the complete case <em>Krein Spaces</em>, the operator $J$ <em>The Fundamental Symmetry</em>, and the unbounded spectral theory is <em>Spectral Theory on Krein Spaces</em> with the analytic machinery deferred to <em>Analysis on Linear Spaces</em> (Part III).</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi_{\kappa}$</td>
+<td>Pontryagin space of rank of negativity $\kappa$</td>
+</tr>
+<tr>
+<td>$\kappa = \dim K_{-}$</td>
+<td>Index, or rank of negativity</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{p,q}$, $\mathbb{R}^{p,q}$</td>
+<td>Finite Pontryagin spaces, $\kappa = q$</td>
+</tr>
+<tr>
+<td>$G = \mathrm{diag}(1,\ldots,-1,\ldots)$</td>
+<td>Fundamental symmetry, Gram matrix of the standard form</td>
+</tr>
+<tr>
+<td>$GA = A^{\dagger}G$</td>
+<td>Self-adjointness for the form</td>
+</tr>
+<tr>
+<td>$A^{\dagger}GA = G$</td>
+<td>Unitarity for the form</td>
+</tr>
+<tr>
+<td>$\leq\kappa$ conjugate pairs</td>
+<td>Spectral theorem: $\leq2\kappa$ non-real eigenvalues with multiplicity</td>
+</tr>
+<tr>
+<td>$\dim(L\cap L^{\perp})\leq\kappa$</td>
+<td>The radical bound for a subspace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. S. Pontryagin, "Hermitian operators in spaces with indefinite metric", <em>Izvestiya Akad. Nauk SSSR. Ser. Mat.</em> <strong>8</strong> (1944), 243–280, for the invariant subspace theorem and the bound on the non-real eigenvalues.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 78 (Springer, 1974), for the theory of $\Pi_{\kappa}$ and its spectral theorem.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for $\mathbb{C}^{p,q}$ and the self-adjoint operators of an indefinite form.</li>
+<li>Tomas Ya. Azizov and Iosif S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the Pontryagin spaces and their invariant subspaces.</li>
+<li>Mark G. Krein and Heinz Langer, "On the spectral function of a self-adjoint operator in a space with indefinite metric", <em>Doklady Akad. Nauk SSSR</em> <strong>152</strong> (1963), 1264–1267, for the boundary of definitisability.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

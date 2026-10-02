@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounded Operators on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bounded-operators-on-a-hilbert-space"><strong>Bounded Operators on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The bounded linear operators of a Hilbert space $H$ form the object on which the whole of the present category is built. They carry three structures at once: they are a Banach algebra under composition and the operator norm, a $C^*$-algebra under the adjoint, and a topological space under three natural topologies — the norm topology, the strong operator topology and the weak operator topology. This article fixes the three structures and the passage between them. It is the operator-theoretic opening of the category: the later articles of the group treat the compact ideal, the spectral operator, the Banach-space analogue and the one-sided and two-sided multiplications, each of them an addition to the algebra defined here.</p>
+<p>The algebra $B(H)$ is introduced only as far as the later articles need it. The norm, completeness and the operator norm are recalled from <em>Banach and Hilbert Spaces</em>; the adjoint is recalled from the same article, where it is constructed through the Riesz representation theorem, and is used here for its consequences — the $C^*$-identity, the lattice of projections and the partial isometries. The spectral theorem is <em>Self-Adjoint Operators and the Spectral Theorem</em> below; the compact and Schatten ideals are <em>Compact Operators</em>; the algebra of operators with its predual and the weak topology of the predual are <em>Operator Algebras</em> (Part II); the Hilbert–Schmidt and trace-class pairings used to describe the weak operator topology are <em>Compact Operators</em>; the module-theoretic reading of the same operators is <em>Modules over a Ring</em> (Part I). Nothing below is unbounded, and no measure theory beyond the $L^2$ examples of <em>Banach and Hilbert Spaces</em> is used.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ and $H$ is a Hilbert space over $\mathbb{K}$ with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument and conjugate-linear in the second. The set of bounded linear maps $H\to H$ is $B(H)$; the operator norm is $\|T\|=\sup_{\|x\|\le1}\|Tx\|$; the adjoint is $T^*$ with $\langle Tx,y\rangle=\langle x,T^*y\rangle$; the identity is $I$, and the finite-rank operators are written $F(H)$.</p>
+<h2 id="the-algebra-of-bounded-operators">The Algebra of Bounded Operators</h2>
+<p><strong>Definition.</strong> The <strong>algebra of bounded operators</strong> on $H$ is $B(H)$, the set of bounded linear maps $H\to H$ with the pointwise vector-space operations, the composition product and the operator norm.</p>
+<p><strong>Proposition (a unital Banach algebra).</strong> $B(H)$ is a complex (or real) associative algebra with unit $I$, and it is complete for the operator norm, which is submultiplicative, $\|ST\|\le\|S\|\,\|T\|$ and $\|I\|=1$. So $B(H)$ is a unital Banach algebra.</p>
+<p><em>Proof.</em> The vector-space and algebra axioms are inherited from the pointwise operations on maps. Completeness is that of the operator norm: a Cauchy sequence in norm converges pointwise on a dense set and the limit is bounded with the limiting norm. Submultiplicativity and $\|I\|=1$ are immediate from the supremum definition.</p>
+<p><strong>Proposition (properness in infinite dimension).</strong> When $H$ is infinite-dimensional, $B(H)$ is not commutative and is not finite-dimensional; it contains operators that are injective without being surjective, and isometries that are not unitary.</p>
+<p><em>Proof.</em> The unilateral shift $S$ on $\ell^2$ with $S e_n=e_{n+1}$ is an isometry, $S^*S=I$, with $S S^*\neq I$ the projection onto the span of $e_1,e_2,\dots$; so $B(H)$ contains a proper isometry and the two-sided properties differ. A commutant example such as the diagonal operators against the shift exhibits non-commutativity.</p>
+<h2 id="the-involution-and-the-c-identity">The Involution and the C*-Identity</h2>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> of $T\in B(H)$ is the unique operator $T^*$ with</p>
+<p>$$
+\langle Tx,y\rangle=\langle x,T^*y\rangle \qquad (x,y\in H),
+$$</p>
+<p>and the map $T\mapsto T^*$ is the <strong>involution</strong> of $B(H)$.</p>
+<p><strong>Proposition (calculus of the adjoint).</strong> The involution is conjugate-linear, involutive and reversing: for $S,T\in B(H)$ and $\lambda\in\mathbb{K}$,</p>
+<p>$$
+(S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda T^*,\qquad (ST)^*=T^*S^*,\qquad T^{**}=T .
+$$</p>
+<p>It is isometric, $\|T^*\|=\|T\|$.</p>
+<p><em>Proof.</em> These are the identities of <em>Banach and Hilbert Spaces</em>, obtained by uniqueness in the defining relation and the Riesz representation theorem; isometry is $\|T^*\|=\|T\|$ there.</p>
+<p><strong>Theorem (the C*-identity).</strong> For every $T\in B(H)$,</p>
+<p>$$
+\|T^*T\|=\|T\|^2 .
+$$</p>
+<p>Hence $B(H)$ is a $C^*$-algebra: a Banach algebra with an isometric involution satisfying the $C^*$-identity.</p>
+<p><em>Proof.</em> $\|T^*T\|\le\|T^*\|\|T\|=\|T\|^2$, and for $\|x\|\le1$ one has $\|Tx\|^2=\langle Tx,Tx\rangle=\langle T^*Tx,x\rangle\le\|T^*Tx\|\le\|T^*T\|$, so $\|T\|^2\le\|T^*T\|$.</p>
+<p><strong>Definition.</strong> An operator $T$ is <strong>self-adjoint</strong> if $T^*=T$, <strong>skew-adjoint</strong> if $T^*=-T$, <strong>normal</strong> if $T^*T=TT^*$, <strong>unitary</strong> if $T^*T=TT^*=I$, <strong>positive</strong> if $T=T^*$ and $\langle Tx,x\rangle\ge0$ for all $x$, and a <strong>projection</strong> if $T^2=T=T^*$. A <strong>partial isometry</strong> is a $T$ with $T^*T$ a projection; its <strong>initial</strong> and <strong>final</strong> projections are $T^*T$ and $TT^*$.</p>
+<p><strong>Proposition (real and imaginary parts).</strong> Every $T\in B(H)$ decomposes as $T=A+iB$ with $A,B$ self-adjoint, $A=\tfrac12(T+T^*)$ and $B=\tfrac1{2i}(T-T^*)$, and this decomposition is unique; $T$ is normal exactly when $A$ and $B$ commute, and unitary exactly when $A,B$ are self-adjoint with $A^2+B^2=I$ and $AB=BA$.</p>
+<p><em>Proof.</em> The two combinations are self-adjoint by the calculus, and their sum is $T$; uniqueness is the reality of the self-adjoint part. Normality is $[A,B]=0$, and unitarity adds $A^2+B^2=I$ since $T^*T=A^2+B^2+i[A,B]$.</p>
+<h2 id="the-three-topologies">The Three Topologies</h2>
+<h3 id="the-norm-topology">The Norm Topology</h3>
+<p><strong>Definition.</strong> The <strong>norm topology</strong> on $B(H)$ is the metric topology of $\|S-T\|$. A net $T_\alpha\to T$ in norm means $\|T_\alpha-T\|\to0$.</p>
+<p>The norm topology is the topology of the Banach algebra structure and the one in which the involution and the product are continuous. It is in general strictly finer than the two topologies below.</p>
+<h3 id="the-strong-operator-topology">The Strong Operator Topology</h3>
+<p><strong>Definition.</strong> The <strong>strong operator topology</strong> (SOT) is the topology of pointwise convergence on $H$: a net $T_\alpha\to T$ strongly means $\|T_\alpha x-Tx\|\to0$ for every $x\in H$.</p>
+<p><strong>Proposition.</strong> Addition and the involution are SOT-continuous, and multiplication is SOT-continuous in each variable separately; multiplication is not jointly SOT-continuous. The SOT is generated by the seminorms $T\mapsto\|Tx\|$, $x\in H$, and a strong limit of bounded operators is bounded.</p>
+<p><em>Proof.</em> Pointwise convergence preserves the vector operations and the adjoint, and $S_\alpha T_\alpha x-S Tx=(S_\alpha-S)T_\alpha x+S(T_\alpha-T)x$ requires a uniform bound on $\|T_\alpha x\|$, which a net need not have, giving the failure of joint continuity; the seminorms give the stated topology by definition.</p>
+<h3 id="the-weak-operator-topology">The Weak Operator Topology</h3>
+<p><strong>Definition.</strong> The <strong>weak operator topology</strong> (WOT) is the topology of the matrix coefficients: a net $T_\alpha\to T$ weakly means $\langle T_\alpha x,y\rangle\to\langle Tx,y\rangle$ for all $x,y\in H$.</p>
+<p><strong>Proposition (matrix coefficients and the predual).</strong> The WOT is the coarsest topology making every linear functional $T\mapsto\langle Tx,y\rangle$ continuous; it is generated by the seminorms $T\mapsto|\langle Tx,y\rangle|$. On a separable $H$ the WOT is metrisable on norm-bounded subsets.</p>
+<p><em>Proof.</em> The seminorms define the topology by definition; the metrisability is the countability of the dense set over which the coefficients are tested together with the bound on $\|T\|$.</p>
+<p><strong>Proposition (comparison of the topologies).</strong> Every norm-convergent net converges strongly, and every strongly convergent net converges weakly:</p>
+<p>$$
+\text{norm}\ \Longrightarrow\ \text{SOT}\ \Longrightarrow\ \text{WOT},
+$$</p>
+<p>and both implications are strict in infinite dimension; on the unit ball of $B(H)$ the WOT and the SOT have the same closed convex sets, so a WOT-closed convex set is SOT-closed and conversely.</p>
+<p><em>Proof.</em> Norm convergence gives $\|T_\alpha x-Tx\|\le\|T_\alpha-T\|\|x\|$, whence SOT; SOT gives $|\langle(T_\alpha-T)x,y\rangle|\le\|(T_\alpha-T)x\|\|y\|$, whence WOT. The strictness is the shift: $S^{*n}\to0$ weakly but not strongly, while no nonzero SOT-null net converges in norm. The equality of the closed convex sets is Mazur's standard separation argument.</p>
+<h2 id="the-unit-ball">The Unit Ball</h2>
+<p><strong>Theorem (compactness).</strong> The unit ball $\{T:\|T\|\le1\}$ of $B(H)$ is compact in the WOT and in the SOT; on a separable $H$ both topologies on the ball are metrisable, hence sequentially compact.</p>
+<p><em>Proof.</em> The ball is a pointwise-bounded family of operators, so by the Tychonoff theorem the product of the closed discs $\{Tx:\|x\|\le1\}$ over a dense set is compact; the closed conditions $\langle Tx,y\rangle$ cut out a closed subset, giving WOT compactness; SOT compactness follows from the equality of the closed convex sets and the closedness of the ball. Metrisability is the countable dense test set.</p>
+<p><strong>Remark.</strong> The compactness of the ball in the WOT is the operator form of the Banach–Alaoglu theorem, and the equality of the WOT- and SOT-closed convex sets is the operator form of Mazur's theorem; both are used by the spectral theory of this Part. The predual description, in which $\langle Tx,y\rangle$ is the pairing of $T$ with the rank-one operator $x\otimes y$ of trace class, belongs to <em>Compact Operators</em>, where the trace-class space and its pairing with $B(H)$ are introduced.</p>
+<h2 id="concrete-classes-and-the-order">Concrete Classes and the Order</h2>
+<h3 id="projections">Projections</h3>
+<p><strong>Proposition (the lattice of projections).</strong> The projections of $B(H)$ are the orthogonal projections of <em>Banach and Hilbert Spaces</em>; they stand in a natural order $P\le Q$ iff $P H\subseteq Q H$, equivalently $QP=P$, and under this order the projections form a complete lattice with $P\wedge Q$ the projection onto $PH\cap QH$ and $P\vee Q$ the projection onto the closed span of $PH\cup QH$.</p>
+<p><em>Proof.</em> A projection is the orthogonal projection onto its range, and the range correspondence converts the inclusion of subspaces into the order; the lattice operations are the projection onto the intersection and onto the closed sum, whose existence is the projection theorem.</p>
+<h3 id="partial-isometries">Partial Isometries</h3>
+<p><strong>Proposition.</strong> $T$ is a partial isometry exactly when $T=TT^*T$, and then $TT^*$ and $T^*T$ are projections and $T$ maps $\operatorname{ran}T^*T$ isometrically onto $\operatorname{ran}TT^*$. Every operator has a polar decomposition $T=U|T|$ with $|T|=(T^*T)^{1/2}$ positive and $U$ a partial isometry with $\ker U=\ker T$; the decomposition is unique, and $T$ is unitary exactly when $|T|=I$.</p>
+<p><em>Proof.</em> $T^*T$ is positive, so $|T|$ exists; the polar decomposition is the standard one and is developed in <em>Positive Operators and the Square Root</em> below, where the uniqueness is proved.</p>
+<p><strong>Example (finite dimension).</strong> For $H=\mathbb{K}^n$ the algebra $B(H)$ is $M_n(\mathbb{K})$ with the operator norm; the adjoint is the conjugate transpose, the $C^*$-identity is the familiar inequality for matrix norms, the WOT on the finite-dimensional ball is the usual topology, and every operator is compact, so the distinctions of the next article vanish in finite dimension.</p>
+<p><strong>Example (diagonal and multiplication operators).</strong> On $\ell^2$ the diagonal operators $D_a e_n=a_n e_n$ with $a\in\ell^\infty$ form a commutative $C^*$-subalgebra; on $L^2(X,\mu)$ the multiplication operators $M_f g=fg$ with $f\in L^\infty$ form a commutative $C^*$-subalgebra whose projections are the multiplications by indicator functions. In both cases the WOT is the topology of pointwise convergence of the coefficients and the norm topology is that of uniform convergence.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Hilbert space $H$ the bounded operators form a unital Banach algebra $B(H)$ that is a $C^*$-algebra: the involution $T\mapsto T^*$ is conjugate-linear, isometric, order-reversing on products, and satisfies the $C^*$-identity $\|T^*T\|=\|T\|^2$. On a finite-dimensional $H$ this is the matrix algebra $M_n(\mathbb{K})$ with the conjugate transpose; in infinite dimension $B(H)$ is non-commutative and contains proper isometries. The algebra carries three topologies — the norm topology, the strong operator topology of pointwise convergence, and the weak operator topology of convergence of the matrix coefficients — with the strict chain norm $\Rightarrow$ SOT $\Rightarrow$ WOT; multiplication is only separately continuous in the SOT and WOT. The unit ball is WOT- and SOT-compact, and on a separable space both are metrisable on the ball, the two topologies having the same closed convex sets. The self-adjoint, skew-adjoint, normal, unitary, positive, projection and partial-isometry elements are characterised by the calculus of the involution, the projections form a complete lattice, and the polar decomposition reduces an arbitrary operator to a partial isometry and a positive operator, developed in <em>Positive Operators and the Square Root</em>. The compact ideal and the trace-class pairing that describes the predual of the WOT are <em>Compact Operators</em>; the spectral theorem is <em>Self-Adjoint Operators and the Spectral Theorem</em>; the Banach-space analogue is <em>Operators on a Banach Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$, $\langle\cdot,\cdot\rangle$</td>
+<td>Hilbert space and inner product, linear in the first argument</td>
+</tr>
+<tr>
+<td>$B(H)$</td>
+<td>the unital $C^*$-algebra of bounded operators</td>
+</tr>
+<tr>
+<td>$F(H)$</td>
+<td>the finite-rank operators</td>
+</tr>
+<tr>
+<td>$\|T\|$</td>
+<td>the operator norm, submultiplicative</td>
+</tr>
+<tr>
+<td>$T^*$</td>
+<td>the adjoint, $\langle Tx,y\rangle=\langle x,T^*y\rangle$</td>
+</tr>
+<tr>
+<td>$\|T^*T\|=\|T\|^2$</td>
+<td>the $C^*$-identity</td>
+</tr>
+<tr>
+<td>SOT, WOT</td>
+<td>strong and weak operator topologies</td>
+</tr>
+<tr>
+<td>$P\le Q$</td>
+<td>the order on projections, $QP=P$</td>
+</tr>
+<tr>
+<td>$T=U|T|$</td>
+<td>the polar decomposition</td>
+</tr>
+<tr>
+<td>$T^*T$, $TT^*$</td>
+<td>initial and final projections of a partial isometry</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the topologies of $B(H)$ and the geometry of its operators.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the $C^*$-algebra structure, the weak operator topology and the compactness of the unit ball.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the predual of $B(H)$ and the weak topology of the predual.</li>
+<li>Gert K. Pedersen, <em>Analysis Now</em> (Springer, 1989), for a compact development of the bounded operator theory on Hilbert space.</li>
+<li>John von Neumann, "Zur Algebra der Funktionaloperationen und Theorie der normalen Operatoren", <em>Mathematische Annalen</em> <strong>102</strong> (1930), 370–427, for the original weak and strong operator topologies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

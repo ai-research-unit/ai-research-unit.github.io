@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-ring"><strong>The Graded Action on a Module over a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A module over a graded ring may be acted on in a way that respects the grading, and the compatibility condition is the module-theoretic form of the sign rule of a graded algebra. A homogeneous element of degree $\bar i$ sends the degree-$\bar j$ part of the module into the degree-$\overline{i+j}$ part, so it acts by an operator of the same parity, and a scalar twist of the action inserts the Koszul sign $(-1)^{\bar i\bar j}$ whenever a homogeneous element passes another. This article fixes the notion of a graded module over a graded ring, states the compatibility of the action with the grading, derives the sign rule it imposes, and identifies the graded action with the module-level shadow of the signed left multiplication of the category.</p>
+<p>The article assumes the theory of modules from <em>Modules</em> and <em>Modules over an Algebra</em>, the graded vocabulary of <em>Superalgebras and Graded Structures</em>, and the signed left multiplication of <em>The Signed Left Multiplication on a Ring</em>. It uses no distance, no norm and no form: a grading is a direct sum decomposition, not a metric, and the sign rule is an algebraic sign attached to parity. The companion in the group category is <em>The Graded Action on a Module over a Group</em>.</p>
+<p>Throughout, $k$ is a commutative ring and $A$ is a $k$-algebra with $1 \neq 0$ carrying a <strong>grade involution</strong> $\alpha$, $\alpha^2 = \mathrm{id}$, so that $A = A_{\bar 0}\oplus A_{\bar 1}$ is a $\mathbb{Z}/2$-graded ring when $2$ is invertible, with $A_{\bar i}A_{\bar j}\subseteq A_{\overline{i+j}}$. The module $M$ is a graded $k$-module, $M = M^{\bar 0}\oplus M^{\bar 1}$. Homogeneous elements have a <strong>degree</strong> or <strong>parity</strong> in $\mathbb{Z}/2$; an operator is <strong>even</strong> if it preserves the two parts and <strong>odd</strong> if it interchanges them.</p>
+<h2 id="graded-modules-and-the-parity-of-an-operator">Graded Modules and the Parity of an Operator</h2>
+<p><strong>Definition.</strong> A <strong>graded $k$-module</strong> is a $k$-module $M$ with a direct sum decomposition</p>
+<p>$$
+M = M^{\bar 0}\oplus M^{\bar 1}.
+$$</p>
+<p>The elements of $M^{\bar 0}\cup M^{\bar 1}$ are <strong>homogeneous</strong>, of degree $\bar 0$ or $\bar 1$; the <strong>grading involution</strong> of $M$ is the $k$-linear operator $\pi_M$ equal to $+\mathrm{id}$ on $M^{\bar 0}$ and $-\mathrm{id}$ on $M^{\bar 1}$. A $k$-linear operator $T$ on $M$ is <strong>even</strong> if $T\pi_M = \pi_M T$, <strong>odd</strong> if $T\pi_M = -\pi_M T$; the parity is written $|T| \in \mathbb{Z}/2$.</p>
+<p><strong>Proposition (parity as a degree shift).</strong> A $k$-linear operator $T$ on $M$ has parity $\bar i$ exactly when $T(M^{\bar j})\subseteq M^{\overline{i+j}}$ for $j = \bar 0, \bar 1$; and then $T m$ is homogeneous of degree $|T| + |m|$ for every homogeneous $m$.</p>
+<p><strong>Proof.</strong> For homogeneous $m$ of degree $\bar j$ one has $\pi_M m = (-1)^{\bar j}m$ and $\pi_M(Tm) = (-1)^{|T|+\bar j}Tm$, so $T(\pi_M m) = (-1)^{\bar j}Tm$ while $\pi_M(Tm) = (-1)^{|T|+\bar j}Tm$. The two agree for all homogeneous $m$ exactly when $(-1)^{|T|} = 1$, that is, when $T$ is even in the sense of commuting with $\pi_M$; the general statement follows by applying both displays with the sign $(-1)^{|T|}$, and the degree formula is the same computation read on the components.</p>
+<p><strong>Definition.</strong> A <strong>graded ring</strong> is a ring $A$ with a decomposition $A = A_{\bar 0}\oplus A_{\bar 1}$ such that $A_{\bar i}A_{\bar j}\subseteq A_{\overline{i+j}}$; equivalently, $A$ carries a grade involution $\alpha$ when $2$ is invertible, with $A_{\bar 0} = \{a : \alpha(a) = a\}$ and $A_{\bar 1} = \{a : \alpha(a) = -a\}$. An element of $A_{\bar 0}$ is <strong>even</strong>, of $A_{\bar 1}$ <strong>odd</strong>.</p>
+<h2 id="the-graded-action">The Graded Action</h2>
+<p><strong>Definition.</strong> A <strong>graded module over the graded ring</strong> $A$ is a graded $k$-module $M$ together with a $k$-linear action of $A$ such that</p>
+<p>$$
+A_{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}} \qquad \text{for } i, j \in \mathbb{Z}/2 .
+$$</p>
+<p>The action is <strong>graded</strong> or <strong>parity-respecting</strong>.</p>
+<p><strong>Proposition (equivalence with the parity of the action operators).</strong> For a homogeneous $a \in A_{\bar i}$ let $L_a$ denote the operator $m\mapsto a\cdot m$ on $M$. The action is graded if and only if every homogeneous $a$ acts by an operator of parity $|a|$,</p>
+<p>$$
+L_a\,\pi_M = (-1)^{|a|}\,\pi_M\,L_a,
+$$</p>
+<p>and then the <strong>sign rule</strong> holds on homogeneous elements,</p>
+<p>$$
+|a\cdot m| = |a| + |m| .
+$$</p>
+<p><strong>Proof.</strong> The inclusion $A_{\bar i}M^{\bar j}\subseteq M^{\overline{i+j}}$ says exactly that $L_a$ sends $M^{\bar j}$ into $M^{\overline{i+j}}$, which by the previous proposition is the statement that $L_a$ has parity $|a|$; the sign rule is the degree formula of that proposition.</p>
+<p><strong>Example.</strong> Let $M = A$ with $M^{\bar j} = A_{\bar j}$ and let $A$ act by left multiplication. Then $A_{\bar i}\cdot A_{\bar j} = A_{\bar i}A_{\bar j}\subseteq A_{\overline{i+j}}$, so the regular module is graded, and $L_a$ is the left multiplication of <em>Left and Right Multiplication in a Ring</em>; the parity statement is that an even element preserves the two parts of the ring and an odd element swaps them, which is the conclusion of <em>The Signed Sandwich on a Ring</em>.</p>
+<h2 id="the-sign-rule-and-the-signed-action">The Sign Rule and the Signed Action</h2>
+<p>The graded action can be twisted by the grading involution of the module at the cost of a sign on each homogeneous element, and the cost is the Koszul cocycle.</p>
+<p><strong>Definition.</strong> Let $M$ be a graded module over the graded ring $A$. The <strong>signed action</strong> of $A$ on $M$ is</p>
+<p>$$
+a\triangleright m = (-1)^{|a|\,|m|}\,a\cdot m
+$$</p>
+<p>on homogeneous $a$ and $m$, extended linearly; equivalently $a\triangleright m = a\cdot\pi_M^{|a|}(m)$.</p>
+<p><strong>Proposition (it is a projective action with the Koszul cocycle).</strong> For homogeneous $a, b$ and homogeneous $m$,</p>
+<p>$$
+a\triangleright(b\triangleright m) = (-1)^{|a||b|}\,(ab)\triangleright m .
+$$</p>
+<p>Hence the signed action is a <strong>projective action</strong> with cocycle the <strong>Koszul sign</strong> $c(a,b) = (-1)^{|a||b|}$; it is an honest action exactly when the grading is trivial, that is, when $A = A_{\bar 0}$.</p>
+<p><strong>Proof.</strong> The operator of the signed action is $T_a = L_a\pi_M^{|a|}$. The parity of a composite is the sum of the parities, $\pi_M$ has parity $\bar 0$, and $L_a$ has parity $|a|$ by the previous section, so $T_a$ has parity $|a|$. Computing on a homogeneous $m$ of degree $j$,</p>
+<p>$$
+a\triangleright(b\triangleright m) = (-1)^{|a|(|b|+j)}(-1)^{|b|j}\,ab\cdot m = (-1)^{|a||b|}(-1)^{(|a|+|b|)j}ab\cdot m = (-1)^{|a||b|}(ab)\triangleright m,
+$$</p>
+<p>because $ab$ is homogeneous of degree $|a|+|b|$. The cocycle is $c(a,b) = (-1)^{|a||b|}$ by reading off the middle expression, and it is $1$ for all $a, b$ exactly when every element is even.</p>
+<p><strong>Corollary (the two actions agree on the even part).</strong> If $a$ is even then $a\triangleright m = a\cdot m$ for all $m$ and the operator $L_a$ is even; if $a$ is odd then $a\triangleright m = a\cdot\pi_M(m)$, which agrees with $a\cdot m$ on $M^{\bar 0}$ and equals $-a\cdot m$ on $M^{\bar 1}$, and the operator has parity $\bar 1$. The signed action is an honest action of the even part $A_{\bar 0}$ and is only projective on all of $A$.</p>
+<p><strong>Remark.</strong> The signed action is the module-level form of the passage from the plain left multiplication $L_a$ to the signed left multiplication $T_a = L_a\circ\alpha$ of <em>The Signed Left Multiplication on a Ring</em>: on the odd elements it inserts the module-graded twist $\pi_M$ in place of the ring-graded twist $\alpha$, and on the even elements it uses the plain operator. The signed action is <strong>not</strong> an action, and its failure to be one is measured by a $\mathbb{Z}/2$-cocycle, the Koszul cocycle.</p>
+<h2 id="the-action-as-a-superalgebra-representation">The Action as a Superalgebra Representation</h2>
+<p><strong>Definition.</strong> For homogeneous operators $S, T$ on $M$ the <strong>graded commutator</strong> is</p>
+<p>$$
+[S, T]_{\mathrm g} = ST - (-1)^{|S||T|}\,TS .
+$$</p>
+<p><strong>Proposition.</strong> The graded action of $A$ on $M$ is a homomorphism of graded rings $A \to \operatorname{End}_k(M)$ with the graded commutator as bracket; for homogeneous $a, b \in A$,</p>
+<p>$$
+[L_a, L_b]_{\mathrm g} = L_{ab - (-1)^{|a||b|}ba} .
+$$</p>
+<p>In particular the action is a <strong>Lie superalgebra representation</strong> exactly when $A$ is graded-commutative, $ab = (-1)^{|a||b|}ba$ for homogeneous $a, b$; and a graded-commutative ring acts on every graded module by a representation of its Lie superalgebra.</p>
+<p><strong>Proof.</strong> $L_{ab} = L_aL_b$ by associativity, so $[L_a,L_b]_{\mathrm g} = L_aL_b - (-1)^{|a||b|}L_bL_a = L_{ab} - (-1)^{|a||b|}L_{ba} = L_{ab-(-1)^{|a||b|}ba}$, since $L$ is additive in the parameter. The bracket vanishes for all homogeneous $a, b$ exactly under the graded-commutativity condition.</p>
+<p><strong>Example (the exterior algebra is the extreme case).</strong> Let $A = \Lambda(V)$ be the exterior algebra with its odd generators, a graded-commutative ring; the identification of the <strong>commutation factors</strong> $\varepsilon(I,J) = (-1)^{\#\{(i,j) : i>j\}}$ of <em>Superalgebras and Graded Structures</em> makes every squarefree monomial act on $\Lambda(V)$ by a graded operator, and the graded action is the restriction of the regular representation to a graded module. The Clifford algebra is graded but not graded-commutative in general, and its graded action is the one of Part VI.</p>
+<h2 id="relation-to-the-signed-operators">Relation to the Signed Operators</h2>
+<p><strong>Proposition (the module-level shadow).</strong> Let $M$ be a graded module over the graded ring $A$, and let $T_a^M$ denote the operator of the signed action, $T_a^M = L_a\pi_M^{|a|}$. Then, for homogeneous $a$,</p>
+<p>$$
+T_a^M = L_a \ (a \text{ even}), \qquad T_a^M = L_a\circ\pi_M \ (a \text{ odd}),
+$$</p>
+<p>so the signed action uses the plain left multiplication on the even elements and inserts the grading involution of the module on the odd ones. When $M = A$ with $\pi_A = \alpha$, the odd case is the signed left multiplication $T_a = L_a\alpha$ of <em>The Signed Left Multiplication on a Ring</em>, while the even case is the plain left multiplication $L_a$; the two operators of that article are the two parities of the graded action.</p>
+<p><strong>Proof.</strong> The two cases are the definition of $\pi_M^{|a|}$, with $\pi_M^{\bar 0} = \mathrm{id}$ and $\pi_M^{\bar 1} = \pi_M$; for $M = A$ and $\pi_A = \alpha$ the odd case is $L_a\alpha = T_a$ and the even case is $L_a$.</p>
+<p><strong>Remark (the group case).</strong> The companion article <em>The Graded Action on a Module over a Group</em> treats the same construction with a degree homomorphism $\varepsilon : G \to \{\pm 1\}$ in place of the grade involution $\alpha$; the two structures have the same effect on a graded module, the insertion of the Koszul sign, but they are not the same data, since a degree is a homomorphism and a grade involution is an automorphism of order two.</p>
+<p><strong>Remark (the adjoint action).</strong> The adjoint action of a graded module over a ring with an involution, its compatibility with the grading and the sign rule it imposes are <em>The Graded Adjoint Action on a Module over a Ring</em>, in the involutive part of the category; it is the case in which the twisted operator is the adjoint of the one considered here.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>graded $k$-module</strong> is a $k$-module $M = M^{\bar 0}\oplus M^{\bar 1}$ with a grading involution $\pi_M$, and an operator has parity $\bar i$ exactly when it sends $M^{\bar j}$ into $M^{\overline{i+j}}$; a <strong>graded ring</strong> is a ring $A = A_{\bar 0}\oplus A_{\bar 1}$ with $A_{\bar i}A_{\bar j}\subseteq A_{\overline{i+j}}$, equivalently a ring with a grade involution. A <strong>graded module</strong> over $A$ is a graded $k$-module with a $k$-linear action such that $A_{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}}$; equivalently, each homogeneous $a$ acts by an operator of parity $|a|$, $L_a\pi_M = (-1)^{|a|}\pi_ML_a$, and the <strong>sign rule</strong> $|a\cdot m| = |a|+|m|$ holds. The regular module $M = A$ is graded, and the regular action is the left regular representation with the parity splitting of <em>The Signed Sandwich on a Ring</em>.</p>
+<p>The <strong>signed action</strong> $a\triangleright m = (-1)^{|a||m|}a\cdot m = a\cdot\pi_M^{|a|}(m)$ satisfies $a\triangleright(b\triangleright m) = (-1)^{|a||b|}(ab)\triangleright m$, so it is a <strong>projective action</strong> with the <strong>Koszul cocycle</strong> $c(a,b) = (-1)^{|a||b|}$; it is an honest action exactly when the grading is trivial, and it agrees with the given action on the even elements while differing by the grading involution on the odd ones. The graded action is a graded-ring homomorphism $A\to\operatorname{End}_k(M)$ with the graded commutator $[S,T]_{\mathrm g} = ST-(-1)^{|S||T|}TS$, and $[L_a,L_b]_{\mathrm g} = L_{ab-(-1)^{|a||b|}ba}$, so a graded-commutative ring acts by a Lie superalgebra representation. The signed action is the module-level shadow of the signed left multiplication: it uses the plain left multiplication on the even elements and inserts the grading involution $\pi_M$ on the odd ones, so on the regular module it realises the plain and signed left multiplications as the two parities of the graded action.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M = M^{\bar 0}\oplus M^{\bar 1}$</td>
+<td>Graded $k$-module</td>
+</tr>
+<tr>
+<td>$\pi_M$</td>
+<td>Grading involution, $+\mathrm{id}$ on $M^{\bar 0}$, $-\mathrm{id}$ on $M^{\bar 1}$</td>
+</tr>
+<tr>
+<td>$A = A_{\bar 0}\oplus A_{\bar 1}$</td>
+<td>Graded ring, equivalently a ring with a grade involution $\alpha$</td>
+</tr>
+<tr>
+<td>$|a|$, $|m|$, $|T|$</td>
+<td>Parity of a homogeneous element or operator</td>
+</tr>
+<tr>
+<td>$A_{\bar i}\cdot M^{\bar j}\subseteq M^{\overline{i+j}}$</td>
+<td>Compatibility of the graded action</td>
+</tr>
+<tr>
+<td>$L_a\pi_M = (-1)^{|a|}\pi_ML_a$</td>
+<td>Homogeneous $a$ acts with parity $|a|$</td>
+</tr>
+<tr>
+<td>$|a\cdot m| = |a|+|m|$</td>
+<td>the sign rule</td>
+</tr>
+<tr>
+<td>$a\triangleright m = (-1)^{|a||m|}a\cdot m$</td>
+<td>signed action, a projective action</td>
+</tr>
+<tr>
+<td>$c(a,b) = (-1)^{|a||b|}$</td>
+<td>Koszul cocycle of the signed action</td>
+</tr>
+<tr>
+<td>$[S,T]_{\mathrm g} = ST-(-1)^{|S||T|}TS$</td>
+<td>Graded commutator of homogeneous operators</td>
+</tr>
+<tr>
+<td>$[L_a,L_b]_{\mathrm g} = L_{ab-(-1)^{|a||b|}ba}$</td>
+<td>the graded bracket on the action operators</td>
+</tr>
+<tr>
+<td>$T_a^M = L_a\pi_M^{|a|}$</td>
+<td>Module-level signed left multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for graded rings, graded modules and the compatibility of an action with a grading.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for the representations of a graded algebra and the sign rule of a graded module.</li>
+<li>Pierre Deligne, "Catégories tensorielles", <em>Moscow Mathematical Journal</em> <strong>2</strong> (2002), 227–248, for the Koszul sign as a coherence of the graded symmetric structure.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for grade involutions, the graded modules they determine and the operators of the associated graded action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

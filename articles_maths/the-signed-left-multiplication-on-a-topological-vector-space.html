@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Topological Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-topological-vector-space"><strong>The Signed Left Multiplication on a Topological Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The one-sided companion of the signed sandwich is the <strong>signed left multiplication</strong> $\Lambda^{\alpha}_{a} = L_{a} \circ \alpha$, the operator $x \mapsto a\alpha(x)$ on the algebra, obtained from the signed sandwich by taking the right factor to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so the product of two signed left multiplications is an ordinary left multiplication, the set of signed and ordinary left multiplications is closed under composition, the inverse of an invertible signed left multiplication is again of the same kind with the parameter imaged by the grade involution, and the elements it fixes are computed from the equation $a\alpha(x) = x$. This article develops the signed left multiplication, its continuity, its composition laws, its relation to the unsigned one, and the fixed set.</p>
+<p>The unsigned left and right multiplications and their laws are <em>The Left and Right Multiplication Operators on a Topological Vector Space</em>; the signed sandwich, of which this operator is the case $b = 1$, is <em>The Signed Sandwich on a Topological Vector Space</em>; the reflections it produces for involutive parameters are <em>Reflections as Signed Two-Sided Operators on a Topological Vector Space</em>; the pairing-based adjoint is <em>The Signed Adjoint of the Left Multiplication on a Topological Vector Space</em>; the module-level variant is <em>The Graded Action on a Module over a Topological Vector Space</em>. The linear-space sibling in Part I is <em>The Signed Left Multiplication on a Linear Space</em>. No form and no involution on the elements is used here.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E$ is an associative unital topological algebra over $\mathbb{K}$ with a jointly continuous multiplication, $\mathcal{L}(E)$ is its operator algebra, $\alpha$ is a continuous grade involution with $\alpha^{2} = \mathrm{id}$, and $L_{a}(x) = ax$, $R_{a}(x) = xa$ are the one-sided multiplications. The <strong>signed left multiplication</strong> is</p>
+<p>$$
+\Lambda^{\alpha}_{a} = L_{a} \circ \alpha, \qquad \Lambda^{\alpha}_{a}(x) = a\,\alpha(x) .
+$$</p>
+<h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
+<p><strong>Proposition (definition and continuity).</strong> For every $a \in E$ the map $\Lambda^{\alpha}_{a}$ is a continuous linear operator on $E$; it is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and</p>
+<p>$$
+\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)} ,
+$$</p>
+<p>so the signed left multiplication is the ordinary left multiplication by $\alpha(a)$ conjugated by $\alpha$.</p>
+<p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}$ is a composite of continuous linear maps, hence continuous linear. The first identity is the definition of the sandwich with $b = 1$; for the second, $(\alpha \circ L_{\alpha(a)})(x) = \alpha(\alpha(a)x) = a\alpha(x) = \Lambda^{\alpha}_{a}(x)$.</p>
+<p><strong>Proposition (composition).</strong> For all $a, b \in E$,</p>
+<p>$$
+\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}, \qquad
+L_{a}\Lambda^{\alpha}_{b} = \Lambda^{\alpha}_{ab}, \qquad
+\Lambda^{\alpha}_{a}L_{b} = R_{\alpha(b)}\Lambda^{\alpha}_{a} .
+$$</p>
+<p>In particular the composite of two signed left multiplications is an ordinary left multiplication, and the set $\{L_{a} : a \in E\} \cup \{\Lambda^{\alpha}_{a} : a \in E\}$ is closed under composition.</p>
+<p><strong>Proof.</strong> $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b}(x) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha(\alpha(x)) = a\alpha(b)x = L_{a\alpha(b)}(x)$; $L_{a}\Lambda^{\alpha}_{b}(x) = ab\alpha(x) = \Lambda^{\alpha}_{ab}(x)$; $\Lambda^{\alpha}_{a}L_{b}(x) = a\alpha(x)\alpha(b) = R_{\alpha(b)}(\Lambda^{\alpha}_{a}(x))$. Closure is the three identities together.</p>
+<p><strong>Proposition (invertibility).</strong> The signed left multiplication $\Lambda^{\alpha}_{a}$ is invertible in $\mathcal{L}(E)$ if and only if $a$ is invertible in $E$, and then</p>
+<p>$$
+(\Lambda^{\alpha}_{a})^{-1} = \Lambda^{\alpha}_{\alpha(a)^{-1}} = \Lambda^{\alpha}_{\alpha(a^{-1})} .
+$$</p>
+<p>The set of invertible signed left multiplications is a group under composition isomorphic to $E^{\times}$.</p>
+<p><strong>Proof.</strong> If $a$ is invertible then $\Lambda^{\alpha}_{\alpha(a)^{-1}}\Lambda^{\alpha}_{a} = L_{\alpha(a)^{-1}\alpha(a)} = L_{1} = \mathrm{id}$ and likewise on the other side, using the composition law. Conversely, if $\Lambda^{\alpha}_{a}$ is invertible then $L_{a} = \Lambda^{\alpha}_{a}\alpha^{-1}$ is invertible as a composite of invertible maps, and a left multiplication $L_{a}$ is invertible exactly when $a$ is a unit, by the one-sided invertibility argument of the sandwich article; hence $a$ is invertible. The group statement is that $a \mapsto \Lambda^{\alpha}_{a}$ is a bijection onto the set of signed left multiplications with $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$, which is the twisted multiplication.</p>
+<h2 id="the-fixed-elements">The Fixed Elements</h2>
+<p><strong>Definition.</strong> The <strong>fixed set</strong> of the signed left multiplication is</p>
+<p>$$
+\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x \in E : a\alpha(x) = x\} .
+$$</p>
+<p><strong>Proposition (the fixed set is a closed affine set).</strong> $\mathrm{Fix}(\Lambda^{\alpha}_{a})$ is closed; it is the preimage of $0$ under the continuous map $x \mapsto a\alpha(x) - x$, and it is a subspace exactly when $0$ is fixed, that is when $a\alpha(0) = 0$, which always holds; consequently the fixed set is a closed subspace of $E$.</p>
+<p><strong>Proof.</strong> The fixed set is the kernel of the continuous linear map $\mathrm{id} - \Lambda^{\alpha}_{a}$, hence a closed subspace; the apparent linearity is correct because $\Lambda^{\alpha}_{a}$ is linear and fixes $0$.</p>
+<p><strong>Proposition (the fixed set in the invertible case).</strong> If $a$ is invertible then $\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x : \alpha(x) = a^{-1}x\}$, the graph of the action of $a^{-1}$ under the involution, and its dimension equals the dimension of the fixed points of the automorphism $a^{-1}\alpha$ of $E$, namely</p>
+<p>$$
+\dim \mathrm{Fix}(\Lambda^{\alpha}_{a}) = \dim\ker(\mathrm{id} - a^{-1}\alpha) .
+$$</p>
+<p>For $a = 1$ the fixed set of $\Lambda^{\alpha}_{1} = \alpha$ is the fixed part $E^{+}$ of the grading, and $\Lambda^{\alpha}_{1}$ is an involution with $E = E^{+} \oplus E^{-}$.</p>
+<p><strong>Proof.</strong> $a\alpha(x) = x$ is $\alpha(x) = a^{-1}x$ when $a$ is invertible, and the fixed points of the automorphism $a^{-1}\alpha$ are the kernel of $\mathrm{id} - a^{-1}\alpha$; the finite-dimensional dimension statement follows. For $a = 1$ the equation is $\alpha(x) = x$, i.e. $x \in E^{+}$, and $\Lambda^{\alpha}_{1} = \alpha$ with the splitting of the reflection article.</p>
+<p><strong>Corollary (the fixed set of the sandwich).</strong> The signed sandwich $\Theta^{\alpha}_{a,b}$ fixes $x$ exactly when $a\alpha(x)b = x$; for invertible $a, b$ this is $\alpha(x) = a^{-1}xb^{-1}$, and the fixed set is the set of points of $E$ mapped to themselves by the automorphism $x \mapsto a^{-1}xb^{-1}$ composed with $\alpha$.</p>
+<p><strong>Proof.</strong> Immediate from the definition and the invertibility of the factors.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the matrix algebra).</strong> On $E = M_{n}(\mathbb{K})$ with $\alpha(X) = TXT$ for $T = \mathrm{diag}(1, -1, \dots, -1)$ the signed left multiplication $\Lambda^{\alpha}_{A}(X) = ATXT$ acts by $X \mapsto A(TXT)$; its fixed set is the set of $X$ with $ATXT = X$, which for invertible $A$ is the fixed space of the linear map $X \mapsto T A^{-1} X T$; when $A = 1$ the fixed set is the space of matrices commuting with $T$ in the graded sense.</p>
+<p><strong>Example (the operator algebra).</strong> On $E = \mathcal{L}(F)$ with $\alpha(A) = TAT$ the signed left multiplication by $A$ is $\Lambda^{\alpha}_{A}(X) = ATXT$; on the fixed part of the grading it is $AX$, on the negated part $-AX$, so it is the left multiplication with a sign depending on the parity of the argument. This is the one-sided instance of the signed sandwich on the operator algebra.</p>
+<p><strong>Example (the commutative case).</strong> On $E = C(K)$ with $\alpha(f) = f \circ \sigma$ and $a = g$ the signed left multiplication is $\Lambda^{\alpha}_{g}(f) = g\,(f \circ \sigma)$, the multiplication operator by $g$ composed with the reflection of the commutative algebra; its fixed set is $\{f : g (f \circ \sigma) = f\}$.</p>
+<h2 id="summary">Summary</h2>
+<p>On a unital topological algebra $E$ with a continuous grade involution $\alpha$ the signed left multiplication $\Lambda^{\alpha}_{a} = L_{a}\alpha$, $\Lambda^{\alpha}_{a}(x) = a\alpha(x)$, is a continuous operator, it is the signed sandwich with right factor one, and it equals $\alpha L_{\alpha(a)}$; two of them compose by $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$ into an ordinary left multiplication, mixed products give $\Lambda^{\alpha}_{ab}$ and $R_{\alpha(b)}\Lambda^{\alpha}_{a}$, and the set of signed and ordinary left multiplications is closed under composition. It is invertible exactly when $a$ is, with inverse $\Lambda^{\alpha}_{\alpha(a)^{-1}}$, and the invertible ones form a group isomorphic to $E^{\times}$ with the twisted multiplication. Its fixed set is the closed subspace $\{x : a\alpha(x) = x\}$, which for invertible $a$ is the fixed space of the automorphism $a^{-1}\alpha$, and for $a = 1$ is the fixed part $E^{+}$ of the grading; the fixed set of the general signed sandwich is the analogous set of solutions of $a\alpha(x)b = x$. The signed adjoint and the self-adjointness criterion of these one-sided operators are <em>The Signed Adjoint of the Left Multiplication on a Topological Vector Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda^{\alpha}_{a} = L_{a}\alpha$</td>
+<td>Signed left multiplication, $x \mapsto a\alpha(x)$</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1} = \alpha L_{\alpha(a)}$</td>
+<td>Sandwich and conjugate forms</td>
+</tr>
+<tr>
+<td>$\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$</td>
+<td>Composition law</td>
+</tr>
+<tr>
+<td>$(\Lambda^{\alpha}_{a})^{-1} = \Lambda^{\alpha}_{\alpha(a)^{-1}}$</td>
+<td>Inverse</td>
+</tr>
+<tr>
+<td>$\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x : a\alpha(x) = x\}$</td>
+<td>Fixed subspace, closed</td>
+</tr>
+<tr>
+<td>$a^{-1}\alpha$</td>
+<td>Automorphism whose fixed space is the fixed set, for invertible $a$</td>
+</tr>
+<tr>
+<td>$E^{+}$</td>
+<td>Fixed part of $\alpha$, the case $a = 1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the left and right multiplications and the involutive automorphisms of a topological algebra.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition, 1999), for the one-sided operators and the fixed-point subspaces.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the one-sided multiplications and their groups.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the one-sided operators on an operator algebra.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the multiplication operators and their fixed points.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

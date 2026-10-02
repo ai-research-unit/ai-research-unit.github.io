@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Group Algebra as an Involutive Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-group-algebra-as-an-involutive-algebra"><strong>The Group Algebra as an Involutive Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The group algebra carries a second operation beside its product: the involution $f\mapsto f^*$, the reflection of a function in the inverse of the group with the modular correction that keeps the norm. With the involution the algebra is read differently: its elements split into Hermitian and skew parts, invertible elements with $f^* = f^{-1}$ are unitary, elements of the form $g^*\!*g$ are positive, and the whole of operator theory on the algebra becomes the theory of a <code>*</code>-algebra rather than of a plain Banach algebra. This article fixes the involution and its axioms, describes the classes of elements it distinguishes, and exhibits the $\mathrm{C}^*$-completion in which the involution acquires the $\mathrm{C}^*$-identity — an identity that fails on $L^1(G)$ itself.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its product, its norm and its involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ with the laws $(f*g)^* = g^*\!*f^*$, $(f^*)^* = f$ and $\|f^*\|_1 = \|f\|_1$ from <em>The Convolution Algebra $L^1(G)$</em>, which owns the involution and the algebra; the completions $C^*_r(G)$, $C^*(G)$ and $L(G)$ from that article and from <em>The Group Algebra as an Algebra of Operators</em>; the characters and the abelian transform from <em>Harmonic Analysis on Groups</em>; and the involutive Banach algebras, the <code>*</code>-representations, the $\mathrm{C}^*$-algebras, the Gelfand–Naimark theorem and the positive cone from <em>Operator Algebras</em> and <em>Involutive Topological Linear Algebras</em>. The grade involution $\alpha$ of the signed block is a structure of the <code>- Operator Theory</code> group and is different from the involution $f^*$; the adjoint of an operator, of which the equality $\lambda(f^*) = \lambda(f)^*$ is the archetype, belongs to the <code>- * Operator Theory</code> group, below; the measure algebra has its own involution in <em>The Involution on the Measure Algebra</em>, later.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and modular function $\Delta$, and $\mathcal{A} = L^1(G)$ is the group algebra with convolution $(f*g)(x) = \int_G f(y)g(y^{-1}x)\,dy$, $\|fg\|_1\leq\|f\|_1\|g\|_1$, and involution</p>
+<p>$$
+f^*(x) = \overline{f(x^{-1})}\,\Delta(x)^{-1} .
+$$</p>
+<p>On a unimodular group $\Delta\equiv1$ and $f^*(x) = \overline{f(x^{-1})}$. The $\mathrm{C}^*$-norm and the completions are</p>
+<p>$$
+\|f\|_{C^*} = \sup_\pi\|\pi(f)\|_{B(\mathcal{H}_\pi)}, \qquad C^*(G) = \overline{\mathcal{A}}^{\ \|\cdot\|_{C^*}}, \qquad C^*_r(G) = \overline{\lambda(\mathcal{A})}^{\ \|\cdot\|},
+$$</p>
+<p>the supremum over the continuous unitary representations $\pi$ of $G$.</p>
+<h2 id="the-involution">The Involution</h2>
+<p><strong>Theorem (the involution recalled).</strong> The map $f\mapsto f^*$ is an involutive, isometric, conjugate-linear anti-automorphism of $\mathcal{A}$:</p>
+<p>$$
+(f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1 .
+$$</p>
+<p><strong>Proof.</strong> These are the four axiom verifications of <em>The Convolution Algebra $L^1(G)$</em>, §The Involution; the modular factor is exactly what makes the norm isometric under the inversion $x\mapsto x^{-1}$, and it is absent only when $\Delta\equiv1$. $\square$</p>
+<p><strong>Corollary ($L^1(G)$ is an involutive Banach algebra).</strong> With this operation $\mathcal{A}$ is a Banach <code>*</code>-algebra; it is commutative exactly when $G$ is abelian and unital exactly when $G$ is discrete, and its involution is the one the harmonic analysis of the category uses throughout.</p>
+<p><strong>Proof.</strong> The algebra laws are those of <em>The Convolution Algebra $L^1(G)$</em>; the two structural statements are the commutative and unital criteria there. $\square$</p>
+<p><strong>Remark (two involutions, not one).</strong> The map $f^*$ is an <strong>anti</strong>-automorphism of order two, the structure of the <code>- * Theory</code> group. The grade involution $\alpha$ of <em>The Signed Sandwich on the Group Algebra</em>, an <strong>auto</strong>morphism of order two, is a different operation on the same algebra; the two coincide on a commutative group algebra and on the sign character they need not. No statement about $f^*$ is a statement about $\alpha$, and the article keeps them apart.</p>
+<h2 id="the-classes-of-elements">The Classes of Elements</h2>
+<p><strong>Definition.</strong> An element $f \in \mathcal{A}$ is <strong>Hermitian</strong> (or self-adjoint) when $f^* = f$, <strong>skew-Hermitian</strong> when $f^* = -f$, <strong>normal</strong> when $f^*\!*f = f*\!f^*$, <strong>unitary</strong> when $f^*\!*f = f*\!f^* = 1_{\mathcal{A}}$, and <strong>positive</strong>, written $f\geq0$, when $f = g^*\!*g$ for some $g \in \mathcal{A}$; the involution $f\mapsto f^*$ is the <strong>conjugation</strong>, and $\mathrm{Re}\,f = \tfrac12(f + f^*)$, $\mathrm{Im}\,f = \tfrac1{2i}(f - f^*)$ are its real and imaginary parts.</p>
+<p><strong>Theorem (the Hermitian decomposition).</strong> Every $f\in\mathcal{A}$ is uniquely $f = u + iv$ with $u, v$ Hermitian, and the map $f\mapsto (u,v)$ is an $\mathbb{R}$-linear isomorphism $\mathcal{A}\cong \mathcal{A}_h\oplus i\mathcal{A}_h$ of real Banach spaces; the Hermitian elements form a closed real subspace, and</p>
+<p>$$
+(f*g)^*\!*\!(f*g) = g^*\!*f^*\!*f*\!g .
+$$</p>
+<p><strong>Proof.</strong> The decomposition is $u = \mathrm{Re}\,f$, $v = \mathrm{Im}\,f$, and it is unique because $\mathcal{A}_h\cap i\mathcal{A}_h = \{0\}$; the subspace is closed as the kernel of the continuous map $f\mapsto f^*-f$. The displayed identity is the anti-automorphism law applied to the product $f*g$. $\square$</p>
+<p><strong>Proposition (unitaries exist only in the measure algebra).</strong> The unitary group $\mathcal{U} = \{f : f^*\!*f = f*\!f^* = 1\}$ is nonempty if and only if $\mathcal{A}$ has an identity, that is if and only if $G$ is discrete; then the point masses are unitary, $\delta_x^* = \delta_{x^{-1}}$ and $\delta_x^*\!*\delta_x = \delta_e$, and every unitary $f$ satisfies $\|f\|_1\geq1$.</p>
+<p><strong>Proof.</strong> A unitary element is invertible, so its existence forces a unit; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$. $\square$</p>
+<p><strong>Theorem (the positive cone).</strong> The set</p>
+<p>$$
+\mathcal{A}^+ = \Bigl\{\sum_{i=1}^n g_i^*\!*g_i : n\geq0,\ g_i\in\mathcal{A}\Bigr\}
+$$</p>
+<p>of finite sums of squares is a convex cone under the real scalars, stable under $f\mapsto h^*\!*f*\!h$, and proper, $\mathcal{A}^+\cap(-\mathcal{A}^+)=\{0\}$; the positive functionals on $\mathcal{A}$, those $\omega$ with $\omega(f^*\!*f)\geq0$ for all $f$, are exactly the real-linear functionals that are $\geq0$ on $\mathcal{A}^+$.</p>
+<p><strong>Proof.</strong> The cone is convex by construction and stable under inner multiplication because $h^*\!*(g^*\!*g)*\!h = (g*h)^*\!*(g*h)$; for properness, fix a faithful <code>*</code>-representation, for instance the direct sum of the unitary representations: an element of $\mathcal{A}^+\cap(-\mathcal{A}^+)$ has $\pi(f)$ both positive and negative in $B(\mathcal{H}_\pi)$, hence $\pi(f) = 0$, and faithfulness gives $f = 0$. The identification of the positive functionals is the definition read on the generators of the cone and extended by linearity. $\square$</p>
+<h2 id="the-math102-completion">The $\mathrm{C}^*$-Completion</h2>
+<p><strong>Definition.</strong> The <strong>enveloping $\mathrm{C}^*$-norm</strong> of $\mathcal{A}$ is $\|f\|_{C^*} = \sup_\pi\|\pi(f)\|$, the supremum over all continuous unitary representations $\pi$ of $G$ acting through $\pi(f) = \int_G f(x)\pi(x)\,dx$; the <strong>full group $\mathrm{C}^*$-algebra</strong> is the completion $C^*(G) = \overline{\mathcal{A}}^{\|\cdot\|_{C^*}}$.</p>
+<p><strong>Theorem (the identity appears in the completion).</strong> The norm $\|f\|_{C^*}$ is finite for every $f$, with</p>
+<p>$$
+\|f\|_{C^*} \leq \|f\|_1 ,
+$$</p>
+<p>and on the completion the involution is isometric and satisfies the $\mathrm{C}^*$-identity</p>
+<p>$$
+\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2 \qquad (f\in C^*(G)) ;
+$$</p>
+<p>the algebra $\mathcal{A}$ is dense in $C^*(G)$ and the inclusion $\mathcal{A}\hookrightarrow C^*(G)$ is injective.</p>
+<p><strong>Proof.</strong> The bound is $\|\pi(f)\|\leq\|f\|_1$ for every representation, so the supremum is finite; the $\mathrm{C}^*$-identity holds in every $B(\mathcal{H}_\pi)$ and passes to the supremum because $f\mapsto\|f\|_{C^*}$ makes the completion a $\mathrm{C}^*$-algebra by construction, and the $\mathrm{C}^*$-algebra axioms include the identity; density is by definition, and injectivity because the regular representation is faithful: $\lambda(f) = 0$ gives $\|f\|_{C^*} = 0$ and then $f = 0$. $\square$</p>
+<p><strong>Corollary (the reduced completion and the quotient).</strong> The <strong>reduced</strong> completion $C^*_r(G) = \overline{\lambda(\mathcal{A})}^{\|\cdot\|}$ is the closure in one representation, the map $C^*(G)\to C^*_r(G)$ extending $\mathrm{id}_{\mathcal{A}}$ is a surjective $\mathrm{C}^*$-homomorphism, and it is injective exactly when $G$ is amenable; the identity $\|f^*\!*f\|_{C^*_r} = \|f\|_{C^*_r}^2$ holds there as well.</p>
+<p><strong>Proof.</strong> The reduced norm is $\sup$ over the single representation $\lambda$, hence dominated by the full norm, giving the quotient; amenability is the standard criterion for the two norms to agree; the identity is inherited from the $\mathrm{C}^*$-algebra $B(L^2(G))$ in which $C^*_r(G)$ is closed. $\square$</p>
+<h2 id="the-failure-of-the-math141-identity-on-math142">The Failure of the $\mathrm{C}^*$-Identity on $L^1(G)$</h2>
+<p><strong>Theorem (the identity holds only for special elements).</strong> On $\mathcal{A}$ itself the $\mathrm{C}^*$-identity can fail: for $G = \mathbb{Z}$ and $f = \delta_0 + i\delta_1 + \delta_2$ one has $\|f\|_1 = 3$, $\|f\|_1^2 = 9$, while</p>
+<p>$$
+f^*\!*f = 3\delta_0 + \delta_2 + \delta_{-2}, \qquad \|f^*\!*f\|_1 = 5 < 9 .
+$$</p>
+<p>Hence $\mathcal{A}$ is a Banach <code>*</code>-algebra that is not a $\mathrm{C}^*$-algebra, and the $\mathrm{C}^*$-identity is acquired only in the completion $C^*(G)$.</p>
+<p><strong>Proof.</strong> On $\mathbb{Z}$ the involution is $\delta_k^* = \delta_{-k}$ and convolution is the multiplication of the group algebra, so $f^* = \delta_0 - i\delta_{-1} + \delta_{-2}$ and the product is computed coefficient by coefficient: the coefficient of $\delta_n$ in $f^*\!*f$ is $\sum_{k}\overline{a_k}\,a_{k+n}$ for $a = (1, i, 1)$, giving $3$ at $n = 0$, $0$ at $n = \pm1$ and $1$ at $n = \pm2$. The $\ell^1$ norm is therefore $3+0+0+1+1 = 5$, while $\|f\|_1^2 = (1+1+1)^2 = 9$, and the strict inequality is the failure. $\square$</p>
+<p><strong>Remark (what the failure measures).</strong> The quantity $\|f^*\!*f\|_1/\|f\|_1^2$ can be read through the transform: on $\mathbb{Z}$ the Fourier transform of $f^*\!*f$ is $|\hat f|^2$, where $\hat f$ has a zero, and the ratio is the $\ell^1$-to-$\ell^\infty$ inflation of $|\hat f|^2$. The completion replaces the $\ell^1$ norm by the spectral radius $\|\hat f\|_\infty$, which is exactly the norm in which the identity holds. The example shows that the involution alone does not make the group algebra a $\mathrm{C}^*$-algebra; the completion is a genuine construction and not a formality.</p>
+<h2 id="the-abelian-case">The Abelian Case</h2>
+<p><strong>Theorem (the Gelfand transform is a <code>*</code>-homomorphism).</strong> Let $G$ be locally compact abelian, so that $\Delta\equiv1$ and $f^*(x) = \overline{f(-x)}$. For every character $\chi\in G^\vee$ the Gelfand transform satisfies</p>
+<p>$$
+\widehat{f^*}(\chi) = \overline{\hat f(\chi)} , \qquad \widehat{f*g}(\chi) = \hat f(\chi)\,\hat g(\chi),
+$$</p>
+<p>so the Gelfand transform is a <code>*</code>-homomorphism of $L^1(G)$ onto a dense <code>*</code>-subalgebra of $C_0(G^\vee)$, and it extends to a <code>*</code>-isomorphism $C^*(G)\cong C_0(G^\vee)$.</p>
+<p><strong>Proof.</strong> The convolution theorem is the homomorphism property; the involution identity is the substitution $x\mapsto-x$ in $\hat{f^*}(\chi) = \int\overline{f(-x)}\chi(x)\,dx = \overline{\int f(y)\chi(y)\,dy}$ using $\chi(-y) = \chi(y)^{-1}$ and $|\chi| = 1$. The completion is the $\mathrm{C}^*$-completion of a commutative <code>*</code>-algebra, isomorphic to the algebra of continuous functions vanishing at infinity on its spectrum, which is $G^\vee$. $\square$</p>
+<p><strong>Corollary (the Hermitian elements are the real-valued spectrum).</strong> In the abelian case $f$ is Hermitian exactly when $\hat f$ is real-valued, and $f\geq0$ implies $\hat f\geq0$ on $G^\vee$; the converse holds in the completion, where $C^*(G)\cong C_0(G^\vee)$ is a commutative $\mathrm{C}^*$-algebra and $\hat f\geq0$ has a non-negative square root. The positive cone of $\mathcal{A}$ is thus the intersection of the cone of non-negative transforms with the image of the Gelfand transform, and $\mathcal{A}^+\cap(-\mathcal{A}^+) = \{0\}$.</p>
+<p><strong>Proof.</strong> $\widehat{f^*} = \overline{\hat f}$, so $f^* = f$ iff $\hat f$ is real; $f = \sum g_i^*\!*g_i$ gives $\hat f = \sum|\hat g_i|^2\geq0$. In the completion the Gelfand transform is onto $C_0(G^\vee)$ and positive functions have square roots, giving the converse there; for $\mathcal{A}$ itself the square root of $\hat f$ need not be the transform of an integrable function, so the converse can fail and the cone is described as the stated intersection. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The adjoint of an operator on $\mathcal{A}$, the equality $\lambda(f^*) = \lambda(f)^*$ and the unitary representations read through the adjoint are the <code>- * Operator Theory</code> group of this category; the measure-algebra involution and the adjoint of convolution by a measure are <em>The Involution on the Measure Algebra</em>, later; the spectral theory of a single Hermitian element belongs to <em>Operator Algebras</em>. The positive definite functions and the GNS construction built from a positive functional are <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>, next.</p>
+<h2 id="summary">Summary</h2>
+<p>The group algebra $\mathcal{A} = L^1(G)$ is a Banach <code>*</code>-algebra for the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, an isometric conjugate-linear anti-automorphism of order two; the grade involution $\alpha$ of the signed block is a distinct order-two structure, an automorphism on the same algebra. The elements split as $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$ into Hermitian and skew parts; the Hermitian elements form a closed real subspace, the positive cone $\mathcal{A}^+$ of finite sums of squares is convex and proper and produces the positive functionals, and the unitary elements exist only when $G$ is discrete, where the point masses $\delta_x$ are unitary and every unitary has $\|f\|_1\geq1$. The enveloping $\mathrm{C}^*$-norm $\|f\|_{C^*} = \sup_\pi\|\pi(f)\|$ is bounded by $\|f\|_1$ and satisfies the $\mathrm{C}^*$-identity $\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2$ after completion to $C^*(G)$, with the reduced completion $C^*_r(G)$ as the quotient met when $G$ is amenable; on $\mathcal{A}$ the identity already fails, as the example $G = \mathbb{Z}$, $f = \delta_0 + i\delta_1 + \delta_2$ with $\|f^*\!*f\|_1 = 5 < 9 = \|f\|_1^2$ shows. In the abelian case the Gelfand transform is a <code>*</code>-homomorphism with $\widehat{f^*} = \overline{\hat f}$ and extends to $C^*(G)\cong C_0(G^\vee)$, and Hermitian elements are those with real transform and positive elements those with non-negative transform. The adjoints, the measure algebra and the positive definite functions are the neighbouring articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A} = L^1(G)$, $\|f\|_1$</td>
+<td>The group algebra and its norm</td>
+</tr>
+<tr>
+<td>$f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$</td>
+<td>The involution; $f^*(x)=\overline{f(x^{-1})}$ when $\Delta\equiv1$</td>
+</tr>
+<tr>
+<td>$(f*g)^* = g^*\!*f^*$, $(f^*)^* = f$, $\|f^*\|_1 = \|f\|_1$</td>
+<td>The involution axioms</td>
+</tr>
+<tr>
+<td>$\mathcal{A}_h$, $\mathrm{Re}\,f$, $\mathrm{Im}\,f$</td>
+<td>Hermitian elements and the real decomposition $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$</td>
+</tr>
+<tr>
+<td>$\mathcal{U}$</td>
+<td>The unitary group, nonempty iff $G$ is discrete</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^+$</td>
+<td>The positive cone, the finite sums $\sum_i g_i^*\!*g_i$</td>
+</tr>
+<tr>
+<td>$\|f\|_{C^*} = \sup_\pi\|\pi(f)\|$</td>
+<td>The enveloping $\mathrm{C}^*$-norm</td>
+</tr>
+<tr>
+<td>$C^*(G)$, $C^*_r(G)$</td>
+<td>Full and reduced group $\mathrm{C}^*$-algebras</td>
+</tr>
+<tr>
+<td>$\|f^*\!*f\|_{C^*} = \|f\|_{C^*}^2$</td>
+<td>The $\mathrm{C}^*$-identity, in the completion</td>
+</tr>
+<tr>
+<td>$f = \delta_0 + i\delta_1 + \delta_2$, $\|f^*\!*f\|_1 = 5$</td>
+<td>The failure of the identity on $L^1(\mathbb{Z})$</td>
+</tr>
+<tr>
+<td>$\widehat{f^*}(\chi) = \overline{\hat f(\chi)}$, $C^*(G)\cong C_0(G^\vee)$</td>
+<td>The abelian <code>*</code>-homomorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for Banach <code>*</code>-algebras, the involution axioms and the Hermitian and positive elements.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the enveloping $\mathrm{C}^*$-algebra, the $\mathrm{C}^*$-identity and the positive cone.</li>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the group $\mathrm{C}^*$-algebras and the full-to-reduced quotient map.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis II</em> (Springer, 1970), for the involution on $L^1(G)$ with the modular factor and its properties.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Wiley, 1962), for the abelian case and the Gelfand transform as a <code>*</code>-isomorphism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

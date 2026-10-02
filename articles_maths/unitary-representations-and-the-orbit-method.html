@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Representations and the Orbit Method — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-representations-and-the-orbit-method"><strong>Unitary Representations and the Orbit Method</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>orbit method</strong> assigns to each coadjoint orbit of a Lie group a unitary representation, and for the nilpotent and the exponential solvable groups it does so bijectively; the unitary dual is then the space of orbits, and the Fourier transform is an integral over that space. The assignment is built from the symplectic structure that every coadjoint orbit carries, from a polarisation of that structure, and from the induction of a character of a subgroup; the character of the resulting representation is computed by a formula of Kirillov from the orbit. The method is the meeting point of the representation theory, the harmonic analysis and the differential geometry of the group, and it is the most complete known description of a non-compact unitary dual.</p>
+<p>This article treats unitary representations and the orbit method: the coadjoint orbits and the Kirillov correspondence. It is the sixth and last article of the <code>- * Theory</code> group of the category; the unitary representations and their decomposition are <em>Unitary Representations of a Lie Group</em>, the invariant forms that identify the algebra with its dual are <em>Hermitian Forms on a Lie Algebra</em>, the adjoint action is <em>The Regular Representation of a Lie Group</em>, and the analytic content is <em>Harmonic Analysis on Groups</em>.</p>
+<p>The article assumes the Lie group, its Lie algebra and the adjoint representation from <em>Lie Groups</em> and <em>The Lie Correspondence and the Adjoint Representation</em>, the unitary representations and their decomposition from <em>Unitary Representations of a Lie Group</em>, the invariant bilinear form and its identifications from <em>Structure of Lie Algebras</em> and <em>Hermitian Forms on a Lie Algebra</em>, the elementary structure of a symplectic vector space, which belongs to the geometry of Part IV, is named here and not used, and the induced representations from <em>Induced Representations</em>. The symplectic manifold and its quantisation as objects of geometry belong to Part IV, and the orbit method is used here through the orbits and their polarisations only; no physical interpretation of the orbits or of the representations is made.</p>
+<h2 id="the-coadjoint-action">The Coadjoint Action</h2>
+<h3 id="the-coadjoint-representation">The Coadjoint Representation</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be the Lie algebra of $G$ and $\mathrm{G}^{*}$ its dual. The <strong>coadjoint representation</strong> is the action</p>
+<p>$$
+\operatorname{Ad}^{*} : G \longrightarrow \mathrm{GL}(\mathrm{G}^{*}), \qquad \langle \operatorname{Ad}^{*}_g\xi, X\rangle = \langle \xi, \operatorname{Ad}_{g^{-1}}X\rangle ,
+$$</p>
+<p>and its orbits are the <strong>coadjoint orbits</strong> $\mathcal{O}_\xi = \{\operatorname{Ad}^{*}_g\xi : g\in G\}$; the orbit is the <strong>coadjoint orbit through</strong> $\xi$.</p>
+<p><strong>Proposition.</strong> The coadjoint orbits are the orbits of a smooth action on the vector space $\mathrm{G}^{*}$, each is a homogeneous space $G/G_\xi$ with $G_\xi$ the stabiliser, and the dimension of $\mathcal{O}_\xi$ is $\dim\mathrm{G} - \dim\mathrm{G}_\xi$. The differential of the coadjoint action is the coadjoint representation of the Lie algebra, $\operatorname{ad}^{*}_X\xi = -\xi\circ\operatorname{ad}_X$.</p>
+<p><em>Proof.</em> The coadjoint action is the dual of the adjoint action, so its orbits are the orbits of a smooth action; the orbit is the quotient by the stabiliser and its dimension is the codimension of the stabiliser; the differential is the dual of $\operatorname{ad}_X$, with the sign from the inverse in the definition.</p>
+<h3 id="the-symplectic-structure">The Symplectic Structure</h3>
+<p><strong>Theorem (Kirillov--Kostant--Souriau).</strong> Every coadjoint orbit $\mathcal{O}\subset\mathrm{G}^{*}$ carries a canonical $G$-invariant symplectic form $\omega$, the <strong>KKS form</strong>, defined at $\xi\in\mathcal{O}$ by</p>
+<p>$$
+\omega_\xi(\operatorname{ad}^{*}_X\xi, \operatorname{ad}^{*}_Y\xi) = \langle \xi, [X,Y]\rangle ,
+$$</p>
+<p>and the form is non-degenerate because its kernel is the annihilator of the stabiliser, which is the tangent space of the orbit.</p>
+<p><em>Proof.</em> The formula is well defined because the right side depends only on the images of $X$ and $Y$ in $\mathrm{G}/\mathfrak{g}_\xi$, and it is alternating and bilinear; the closedness is the Jacobi identity, and the non-degeneracy is the vanishing of the annihilator of the stabiliser. The manifold theory of the symplectic form is Part IV, and the present article uses the form only through the associated moment map and the polarisations.</p>
+<p><strong>Corollary (the moment map).</strong> The inclusion $\mathcal{O}\hookrightarrow\mathrm{G}^{*}$ is a moment map for the coadjoint action, the orbit is the set of the coadjoint translates of a point, and the Casimir elements of the enveloping algebra are constant on each orbit; hence the invariants of the orbit are the invariants of the representation attached to it.</p>
+<p><em>Proof.</em> The moment map property is the defining identity $\langle \mu(\xi),X\rangle = \langle\xi,X\rangle$ with the coadjoint action, which the inclusion satisfies; the constancy of an invariant polynomial on an orbit is the invariance of the polynomial under the coadjoint action.</p>
+<h2 id="the-kirillov-correspondence">The Kirillov Correspondence</h2>
+<h3 id="the-polarisation">The Polarisation</h3>
+<p><strong>Definition.</strong> Let $\xi\in\mathrm{G}^{*}$ and let $\mathfrak{g}_\xi$ be its stabiliser. A <strong>polarisation</strong> of $\xi$ is a subalgebra $\mathfrak{p}\subseteq\mathrm{G}$ that is maximal among the isotropic subalgebras for the alternating form $B_\xi(X,Y) = \langle\xi,[X,Y]\rangle$ and contains $\mathfrak{g}_\xi$; it is <strong>real</strong> when it is a real subalgebra, and there always exists a complex polarisation for the complexification.</p>
+<p><strong>Proposition.</strong> A polarisation $\mathfrak{p}$ of $\xi$ is a subalgebra with $\langle\xi,[\mathfrak{p},\mathfrak{p}]\rangle = 0$, so the linear functional $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ is a character of the group $P$ with algebra $\mathfrak{p}$; the dimension of $\mathfrak{p}$ satisfies $\dim\mathfrak{p} = \frac12(\dim\mathrm{G}+\dim\mathfrak{g}_\xi)$.</p>
+<p><em>Proof.</em> The isotropy is the vanishing of the form on $\mathfrak{p}$; hence $\chi_\xi$ is multiplicative on $P$ because the commutator of two elements of $\mathfrak{p}$ lies in the kernel of $\xi$; the dimension formula is the maximality of the isotropic subspace and the inclusion of the stabiliser.</p>
+<h3 id="the-corresponding-representation">The Corresponding Representation</h3>
+<p><strong>Theorem (Kirillov).</strong> Let $G$ be a connected simply connected nilpotent Lie group, let $\xi\in\mathrm{G}^{*}$, and let $\mathfrak{p}$ be a real polarisation of $\xi$. Then the induced representation</p>
+<p>$$
+\pi_\xi = \operatorname{Ind}_P^G\chi_\xi
+$$</p>
+<p>is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\xi$ and not on the polarisation, and the assignment $\mathcal{O}\mapsto\pi_\xi$ is a bijection from the coadjoint orbits onto the unitary dual $\widehat{G}$.</p>
+<p><em>Proof (sketch).</em> The irreducibility is proved by computing the commutant with the theory of the induced representations and the nilpotency, which makes the orbit method exact; the independence of the polarisation is the theorem that two polarisations of the same functional give equivalent representations; the surjectivity and the injectivity of the assignment are the Kirillov orbit bijection. The complete proof is in the references.</p>
+<p><strong>Theorem (the character formula).</strong> For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $\hat f(\xi) = \int_{\mathrm{G}}f(X)e^{-2\pi i\langle\xi,X\rangle}\,dX$ on the algebra,</p>
+<p>$$
+\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
+$$</p>
+<p>where $\beta$ is the Liouville measure of the symplectic form on the orbit and $2n$ is its dimension; equivalently the character of $\pi_\xi$ is the Fourier transform of the invariant measure on the orbit.</p>
+<p><em>Proof (sketch).</em> Both sides are invariant distributions, they agree on the Zariski-dense set of the functionals with a polarisation of a fixed type, and the agreement extends by continuity; the proof is the computation of the character on the orbit through the Fourier transform, and it is in the references.</p>
+<h2 id="the-scope-of-the-method">The Scope of the Method</h2>
+<h3 id="the-exponential-solvable-case">The Exponential Solvable Case</h3>
+<p><strong>Theorem.</strong> Let $G$ be a connected simply connected exponential solvable Lie group. Then the orbit method is an exact bijection between the coadjoint orbits and the unitary dual, the induced representations $\operatorname{Ind}_P^G\chi_\xi$ are irreducible, and the Kirillov character formula holds; the Pukanszky condition, that the orbit of $\xi$ under the adjoint action of $P$ is closed, is necessary and sufficient for the irreducibility in the solvable case.</p>
+<p><em>Proof (sketch).</em> The exponential solvable groups are the class for which the orbit method survives the passage from nilpotent to solvable; the Pukanszky condition is the criterion for the irreducibility of the induced representation, and the character formula is proved as in the nilpotent case. The details are in the references.</p>
+<h3 id="the-compact-case">The Compact Case</h3>
+<p><strong>Theorem (Borel--Weil).</strong> For a compact connected Lie group $G$ the irreducible representations are in bijection with the integral coadjoint orbits of maximal dimension, by the assignment of the highest weight $\lambda$ to the orbit $\mathcal{O}_\lambda$ through $\lambda$; the representation is realised on the space of holomorphic sections of a line bundle over the orbit, the <strong>Borel--Weil realisation</strong>, and the character is given by the Weyl character formula as the integral over the orbit.</p>
+<p><em>Proof (statement).</em> The integral orbits are the orbits of the coadjoint action passing through an integral element of $\mathrm{G}^{*}$, and they are the maximal-dimensional orbits; the Borel--Weil realisation is the induction in the holomorphic category from a Borel subgroup, and its identification with the highest weight representation is the Borel--Weil theorem. The detailed proof is in the references, and the compact representation theory is also in <em>Unitary Representations of a Lie Group</em>.</p>
+<h3 id="the-general-case-and-the-obstructions">The General Case and the Obstructions</h3>
+<p><strong>Proposition.</strong> For an arbitrary connected Lie group the orbit method is not exact: there are coadjoint orbits carrying no unitary representation, orbits carrying several, and unitary representations belonging to no orbit, and the method requires the additional condition of the integrality of the orbit and the existence of a real polarisation. The method nevertheless gives a complete answer for the type I exponential groups, a parametrisation of the tempered dual by the orbits of maximal dimension, and the guiding picture for the general case.</p>
+<p><em>Proof.</em> The counterexamples are the standard ones of the theory, in which the orbit method fails for a non-exponential group; the tempered statement is the characterisation of the tempered representations by the growth of the matrix coefficients, which corresponds to the maximal dimension of the orbit. The account is in the references.</p>
+<h2 id="the-moment-map-and-the-convexity">The Moment Map and the Convexity</h2>
+<h3 id="the-moment-map">The Moment Map</h3>
+<p><strong>Theorem.</strong> Let $\mathcal{O}_\xi\subseteq\mathrm{G}^{*}$ be a coadjoint orbit with the KKS form $\omega_\xi$. The inclusion $\mathcal{O}_\xi\hookrightarrow\mathrm{G}^{*}$ is equivariant for the coadjoint action and is a <strong>moment map</strong>: for every $X\in\mathrm{G}$ the function $\mu_X(\eta) = \langle\eta,X\rangle$ on the orbit has Hamiltonian vector field the fundamental vector field of $X$, that is</p>
+<p>$$
+d\mu_X = \omega_\xi(X_{\mathcal{O}},\cdot) , \qquad X_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{X}\eta ,
+$$</p>
+<p>so the orbit is a homogeneous Hamiltonian $\mathrm{G}$-space, and the moment map is unique up to the addition of a constant on the central directions.</p>
+<p><em>Proof.</em> The derivative of $\mu_X$ at $\eta$ in the direction $Y_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{Y}\eta$ is $\langle-\operatorname{ad}^{*}_{Y}\eta,X\rangle = \langle\eta,[Y,X]\rangle$, which is $\omega_\xi(Y_{\mathcal{O}},X_{\mathcal{O}})$ by the definition of the KKS form; the identification of the Hamiltonian field follows, and the equivariance is the invariance of the form.</p>
+<h3 id="the-convexity-theorem">The Convexity Theorem</h3>
+<p><strong>Theorem (Kostant).</strong> Let $G$ be compact and connected, let $\mathrm{T}\subseteq\mathrm{G}$ be a Cartan subalgebra and let $W$ be the Weyl group. For a coadjoint orbit $\mathcal{O}_\lambda$ the projection onto the dual of the Cartan subalgebra is the convex hull of the Weyl-group orbit of $\lambda$,</p>
+<p>$$
+\operatorname{pr}_{\mathrm{T}^{*}}(\mathcal{O}_\lambda) = \operatorname{conv}\bigl(W\cdot\lambda\bigr) ,
+$$</p>
+<p>a convex polytope whose vertices are the weights $w\lambda$; the orbit is the orbit of an integral weight exactly when it is the orbit of an irreducible representation, and the weight polytope is the moment polytope of that representation.</p>
+<p><em>Proof.</em> The projection is invariant and its extreme points are the images of the fixed points of the maximal torus, which are the weights $w\lambda$; the Atiyah--Guillemin--Sternberg convexity theorem for the torus action gives the convexity, and the reduction to the torus is the restriction of the moment map; the integrality is the Borel--Weil condition, which characterises the orbits of the representations.</p>
+<p><strong>Corollary.</strong> For a compact group the orbit method is the Borel--Weil realisation: the irreducible unitary representations correspond to the integral coadjoint orbits, the orbit is the flag manifold $G/B$ of the Borel subgroup, and the Weyl character formula is the Fourier transform of the invariant measure on the orbit; the dimension of the representation is the symplectic volume of the orbit divided by the volume of the maximal torus.</p>
+<p><em>Proof.</em> The correspondence is the Borel--Weil theorem, the identification of the orbit with $G/B$ is the transitivity of the coadjoint action on the integral orbits, and the character formula is the Kirillov formula evaluated on the class functions; the volume statement is the integrality of the form on the lattice and the Weyl dimension formula.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-heisenberg-group">The Heisenberg Group</h3>
+<p>For the three-dimensional Heisenberg group the coadjoint orbits are the points of the centre-annihilator plane and the planes $\langle\xi,Z\rangle = c\neq0$; the orbit with $c$ the nonzero central value is a plane of dimension two, its polarisation is the span of $X$ and $Z$, and the induced representation is the infinite-dimensional Schrödinger representation acting on $L^2(\mathbb{R})$; the point orbits give the characters of the abelian quotient, so the unitary dual is the line of the infinite-dimensional representations together with the plane of the characters.</p>
+<h3 id="the-affine-group">The Affine Group</h3>
+<p>For the affine group of the line with the algebra $[A,B] = B$, the coadjoint orbits are the two open half-lines and the family of points on the fixed line; the orbit method gives the two infinite-dimensional representations of the principal series from the half-lines and the characters from the points, which is the exact unitary dual of the group.</p>
+<h3 id="the-rotation-group">The Rotation Group</h3>
+<p>For $G = SU(2)$ the integral coadjoint orbits are the spheres about the origin in the dual of the algebra, each with the symplectic form proportional to the area form; the Borel--Weil realisation on the holomorphic sections gives the irreducible representation of highest weight the radius of the sphere, and the Weyl character formula is the integral over the sphere; the example is the compact instance of the correspondence and the one in which it is a theorem of algebraic geometry.</p>
+<h3 id="the-failure">The Failure</h3>
+<p>For a semisimple group with a non-compact Cartan subgroup the orbit method is not exact: the coadjoint orbits are the unions of the sheets of the real forms, the integral orbits give the discrete series, but the representations of the complementary series belong to no single orbit; the exact description is the Harish-Chandra theory and the Langlands classification of <em>Unitary Representations of a Lie Group</em>, and the orbit picture remains as the organisation of the tempered dual.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>coadjoint action</strong> of a Lie group on the dual of its Lie algebra has orbits that carry a canonical invariant symplectic form, the <strong>KKS form</strong>, defined by $\omega_\xi(\operatorname{ad}^{*}_X\xi,\operatorname{ad}^{*}_Y\xi) = \langle\xi,[X,Y]\rangle$; the inclusion of the orbit in the dual is a moment map, and the invariants of the enveloping algebra are constant on each orbit. A <strong>polarisation</strong> of $\xi$ is a maximal isotropic subalgebra containing the stabiliser, and the functional $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ is then a character of the corresponding subgroup, so the induced representation $\operatorname{Ind}_P^G\chi_\xi$ is defined; the <strong>orbit method</strong> of Kirillov states that for a connected simply connected nilpotent group this representation is irreducible, independent of the polarisation, and that the assignment of the orbit to the representation is a bijection onto the unitary dual, with the <strong>character formula</strong> expressing the character as the Fourier transform of the Liouville measure of the orbit. The method is exact for the exponential solvable groups, where the Pukanszky condition decides the irreducibility, and for compact groups it becomes the Borel--Weil realisation of the irreducible representations on the integral orbits with the Weyl character formula; for a general group the method is not exact, and the failures are the orbits with no representation, the representations on several orbits and the representations on no orbit, the tempered dual being the part described by the orbits of maximal dimension. The symplectic and the quantisation geometry of the orbits as objects of study belong to Part IV.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Ad}^{*}_g\xi$</td>
+<td>the coadjoint action on $\mathrm{G}^{*}$</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_\xi$</td>
+<td>the coadjoint orbit through $\xi$</td>
+</tr>
+<tr>
+<td>$G_\xi$, $\mathfrak{g}_\xi$</td>
+<td>the stabiliser of $\xi$ in the group and in the algebra</td>
+</tr>
+<tr>
+<td>$\omega_\xi$</td>
+<td>the KKS symplectic form on the orbit</td>
+</tr>
+<tr>
+<td>$B_\xi(X,Y) = \langle\xi,[X,Y]\rangle$</td>
+<td>the alternating form of the polarisation</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}$</td>
+<td>a polarisation, maximal isotropic containing $\mathfrak{g}_\xi$</td>
+</tr>
+<tr>
+<td>$\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$</td>
+<td>the character of the polarisation subgroup</td>
+</tr>
+<tr>
+<td>$\pi_\xi = \operatorname{Ind}_P^G\chi_\xi$</td>
+<td>the representation of the orbit</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\hat f\,d\beta/(2\pi)^n$</td>
+<td>the Kirillov character formula</td>
+</tr>
+<tr>
+<td>Pukanszky condition</td>
+<td>the closedness of the orbit of $P$, the irreducibility criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandre A. Kirillov, <em>Lectures on the Orbit Method</em> (American Mathematical Society, 2004), for the orbit method, the polarisations and the character formula.</li>
+<li>Alexandre A. Kirillov, <em>Elements of the Theory of Representations</em> (Springer, 1976), for the nilpotent case and the orbit bijection.</li>
+<li>Michel Duflo, "Théorie de Mackey et méthode des orbites", in <em>Analyse Harmonique sur les Groupes de Lie</em> (Springer Lecture Notes in Mathematics 880, 1981), for the extension of the method to the general case.</li>
+<li>Jean-Marie Souriau, <em>Structure of Dynamical Systems</em> (Birkhäuser, 1997), for the moment map and the symplectic structure of the orbits.</li>
+<li>David A. Vogan, <em>Unitary Representations of Reductive Lie Groups</em> (Princeton University Press, 1987), for the orbit picture of the unitary dual and the tempered representations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

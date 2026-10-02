@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left and Right Multiplication — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="left-and-right-multiplication"><strong>Left and Right Multiplication</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The product of an algebra is a bilinear map of two arguments, and fixing one argument turns it into a linear operator of the other. Fixing the first gives the <strong>left multiplication</strong> $L(a)$, fixing the second the <strong>right multiplication</strong> $R(a)$; together the two families are the two regular representations of the algebra acting on itself. They carry the whole structure of the algebra — its product, its unit, its centre and its opposite — and the whole of the present article is the reading of the algebra off these two families of operators.</p>
+<p>The two families are not symmetric. The left multiplications compose in the order of the product, $L(a)L(b) = L(ab)$, so $L$ is a homomorphism; the right multiplications compose against it, $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and its image is a copy of the opposite algebra. The two images therefore commute exactly when the product is associative, and their failure to do so is the associator. These three statements are the skeleton of the article.</p>
+<p>Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra, with $n = \dim_k A$ when $A$ is finite-dimensional. The operators live in $\operatorname{End}_k(A)$; the definitions and the first properties of $L$ and $R$ are in <em>The Operators on an Algebra</em>, the ambient theory of the operator space is that article and <em>Operator Algebras</em>, and the two-sided product of an $L$ with an $R$ is the sandwich of <em>The Sandwich Operator on an Algebra</em>.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>left multiplication</strong> by $a$ is the operator</p>
+<p>$$
+L(a) : A \to A, \qquad L(a)(x) = a x,
+$$</p>
+<p>and the <strong>right multiplication</strong> by $a$ is the operator</p>
+<p>$$
+R(a) : A \to A, \qquad R(a)(x) = x a .
+$$</p>
+<p>Both are $k$-linear, since the product is bilinear in each argument; both are $k$-linear in $a$, since the product is bilinear in the other argument as well. The assignments $L, R : A \to \operatorname{End}_k(A)$ are therefore $k$-linear maps from the algebra into its operator space.</p>
+<h3 id="injectivity">Injectivity</h3>
+<p><strong>Proposition.</strong> If $A$ is unital, then $L$ and $R$ are injective, and more precisely</p>
+<p>$$
+\ker L = \ker R = 0, \qquad L(a)(1) = a, \qquad R(a)(1) = a .
+$$</p>
+<p><em>Proof.</em> From $L(a) = 0$ one gets $a = a \cdot 1 = L(a)(1) = 0$, and from $R(a) = 0$ one gets $a = 1 \cdot a = R(a)(1) = 0$. The evaluations at the unit give the two displayed identities, which show that $a$ is recovered from either operator.</p>
+<p><strong>Corollary.</strong> The spaces of left and of right multiplications,</p>
+<p>$$
+L(A) = \{L(a) : a \in A\}, \qquad R(A) = \{R(a) : a \in A\},
+$$</p>
+<p>are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each, and $L : A \to L(A)$ and $R : A \to R(A)$ are isomorphisms of $k$-modules.</p>
+<p>The two spaces are the first two rungs of the operator ladder of <em>The Operators on an Algebra</em>, and their internal structure is settled by the multiplicative rules below.</p>
+<h3 id="the-two-sided-product">The Two-Sided Product</h3>
+<p>The product of a left and a right multiplication is the sandwich, and its two bracketings agree exactly when the product is associative.</p>
+<p><strong>Proposition.</strong> For all $a, b \in A$ the composites $L(a)R(b)$ and $R(b)L(a)$ are the operators</p>
+<p>$$
+L(a)R(b)(x) = a x b, \qquad R(b)L(a)(x) = a x b
+$$</p>
+<p>with the same value on $x$, so that $L(a)R(b) = R(b)L(a) = T_{a,b}$, the sandwich of <em>The Sandwich Operator on an Algebra</em>.</p>
+<p><em>Proof.</em> $R(b)L(a)(x) = R(b)(ax) = (ax)b$ and $L(a)R(b)(x) = L(a)(xb) = a(xb)$; associativity makes the two equal.</p>
+<p>This is the sense in which the left and the right multiplications commute in an associative algebra: the identity $L(a)R(b) = R(b)L(a)$ is exactly the associativity of the product read on the two operators, and it holds for every pair precisely when the algebra is associative.</p>
+<h2 id="the-left-multiplications">The Left Multiplications</h2>
+<h3 id="the-homomorphism">The Homomorphism</h3>
+<p><strong>Theorem.</strong> For all $a, b \in A$,</p>
+<p>$$
+L(a)L(b) = L(ab), \qquad L(1) = \mathrm{id}_A .
+$$</p>
+<p>Hence $L : A \to \operatorname{End}_k(A)$ is a homomorphism of unital $k$-algebras, its image $L(A)$ is a subalgebra of $\operatorname{End}_k(A)$, and $L$ is an isomorphism of algebras $A \to L(A)$.</p>
+<p><em>Proof.</em> $L(a)L(b)(x) = L(a)(bx) = a(bx) = (ab)x = L(ab)(x)$, the middle equality being associativity; $L(1)(x) = x$. A unital algebra homomorphism is injective exactly when its kernel, an ideal, is zero, and the kernel is zero by the injectivity proposition; hence $A \cong L(A)$.</p>
+<p>The image $L(A)$ is called the <strong>left regular representation</strong> of $A$; it is a copy of $A$ inside $\operatorname{End}_k(A)$, and the isomorphism $L$ carries the product of $A$ to the composition of operators. The algebra and its left regular representation are therefore the same algebra up to the naming of the elements, and every statement about $A$ has a left-regular reading.</p>
+<h3 id="the-linear-operators">The Linear Operators</h3>
+<p>The left multiplications are not the whole of the operators that respect the module structure, and the difference is the point of the noncommutative case.</p>
+<p><strong>Proposition.</strong> An operator $M \in \operatorname{End}_k(A)$ commutes with every left multiplication, $M L(a) = L(a) M$ for all $a$, if and only if $M$ is a right multiplication, and the correspondence is a $k$-linear isomorphism</p>
+<p>$$
+\{M : ML(a) = L(a)M \text{ for all } a\} = R(A) \cong A^{\mathrm{op}} .
+$$</p>
+<p><em>Proof.</em> This is the theorem of <em>The Operators on an Algebra</em> that the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$, together with the identification of $R(A)$ with the opposite algebra given below.</p>
+<p>The proposition is the operator form of the statement that the $A$-module endomorphisms of the regular module are the right multiplications: an operator that is $A$-linear for the left action on an arbitrary module need not be a right multiplication, but on the regular module the two conditions coincide. The asymmetry between the two sides of the algebra is thus visible as the asymmetry between the centraliser and the algebra itself.</p>
+<h2 id="the-right-multiplications">The Right Multiplications</h2>
+<h3 id="the-anti-homomorphism">The Anti-Homomorphism</h3>
+<p><strong>Theorem.</strong> For all $a, b \in A$,</p>
+<p>$$
+R(a)R(b) = R(ba), \qquad R(1) = \mathrm{id}_A .
+$$</p>
+<p>Hence $R$ is an anti-homomorphism of unital algebras, and it is an isomorphism of algebras</p>
+<p>$$
+R : A^{\mathrm{op}} \longrightarrow R(A), \qquad a \longmapsto R(a),
+$$</p>
+<p>from the opposite algebra of $A$ onto the subalgebra $R(A)$ of $\operatorname{End}_k(A)$.</p>
+<p><em>Proof.</em> $R(a)R(b)(x) = R(a)(xb) = (xb)a = x(ba) = R(ba)(x)$, the middle equality being associativity. The order of the factors is reversed, which is exactly the definition of a homomorphism on the opposite algebra; the map is bijective onto its image and preserves products in the reversed order, hence is an isomorphism $A^{\mathrm{op}} \to R(A)$.</p>
+<p>The contrast with the left case is the whole content of the right regular representation: $L$ is a copy of $A$ and $R$ is a copy of $A^{\mathrm{op}}$. The two copies are isomorphic as algebras exactly when $A$ is commutative, and in general they are the two opposite algebras, which is the reason the right module theory of $A$ is the left module theory of $A^{\mathrm{op}}$.</p>
+<h3 id="the-two-regular-representations">The Two Regular Representations</h3>
+<p><strong>Corollary.</strong> The pair $(L, R)$ gives a homomorphism of algebras</p>
+<p>$$
+A \otimes_k A^{\mathrm{op}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = T_{a,b},
+$$</p>
+<p>whose image is the sandwich space $\mathcal{S}(A)$ of <em>The Sandwich Operator on an Algebra</em>; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$.</p>
+<p><em>Proof.</em> The left multiplications and the right multiplications commute by the two-sided product proposition, so the assignments $a \mapsto L(a)$ and $b \mapsto R(b)$ combine into a homomorphism on the tensor product, with the second factor read in the opposite order; the image is spanned by the products $L(a)R(b) = T_{a,b}$. The bimodule statement is the definition of a bimodule over $A$, and a left $A$-action commuting with a right $A$-action is a left $A^{\mathrm{e}}$-action by $(a \otimes b) \cdot x = a x b$.</p>
+<h2 id="the-intersection-and-the-sum">The Intersection and the Sum</h2>
+<h3 id="the-intersection">The Intersection</h3>
+<p><strong>Proposition.</strong> The two spaces of one-sided multiplications meet in the multiplications by the central elements:</p>
+<p>$$
+L(A) \cap R(A) = L(Z(A)) = R(Z(A)),
+$$</p>
+<p>where $Z(A)$ is the centre of $A$. In particular the intersection contains $k \cdot 1$ and is never zero for a unital algebra, it has dimension $\dim_k Z(A)$, and it has dimension one exactly when the algebra is central, $Z(A) = k \cdot 1$.</p>
+<p><em>Proof.</em> Suppose $L(a) = R(b)$. Evaluating at $1$ gives $a = L(a)(1) = R(b)(1) = b$, and then $L(a) = R(a)$ says $ax = xa$ for all $x$, that is $a \in Z(A)$. Conversely a central $a$ satisfies $L(a) = R(a)$ and the element lies in both spaces. The dimension is that of $Z(A)$, because $L$ restricts to an isomorphism $Z(A) \to L(Z(A))$.</p>
+<h3 id="the-sum">The Sum</h3>
+<p><strong>Proposition.</strong> The sum $L(A) + R(A)$ is a subalgebra of $\operatorname{End}_k(A)$, it is spanned by the left and the right multiplications, and</p>
+<p>$$
+\dim_k (L(A) + R(A)) = 2n - \dim_k Z(A) .
+$$</p>
+<p><em>Proof.</em> Both $L(A)$ and $R(A)$ are subalgebras, and they commute by the two-sided product proposition, so their sum is closed under composition; the dimension formula is the standard one for the sum of two subspaces, $\dim(L+R) = \dim L + \dim R - \dim(L \cap R)$, with the intersection computed above.</p>
+<p><strong>Remark.</strong> The sum $L(A) + R(A)$ is a proper subspace of the sandwich space $\mathcal{S}(A) = L(A)R(A)$ in general, and of the whole operator space $\operatorname{End}_k(A)$ except in the smallest cases. For the complex numbers read as a real algebra, $\dim_k A = 2$ and $Z(A) = A$ is two-dimensional, so $L(A) = R(A)$ is two-dimensional and the sum is that space, of dimension $2 = 2\cdot 2 - 2$. For $M_n(k)$ over a field the algebra has dimension $N = n^2$ and a one-dimensional centre, so the sum has dimension $2N - 1 = 2n^2 - 1$ inside the space of dimension $N^2 = n^4$, and it is far from the whole.</p>
+<h2 id="the-associator-as-the-obstruction">The Associator as the Obstruction</h2>
+<h3 id="the-identity">The Identity</h3>
+<p><strong>Theorem.</strong> For all $a, b \in A$,</p>
+<p>$$
+L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad \text{where} \qquad A_{a,b}(x) = (a, x, b) = (ax)b - a(xb).
+$$</p>
+<p>Hence the left and the right multiplications commute for every pair if and only if the algebra is associative; the associator is exactly the obstruction to their commutation.</p>
+<p><em>Proof.</em> Evaluate on $x$: $L(a)R(b)(x) - R(b)L(a)(x) = a(xb) - (ax)b = -((ax)b - a(xb)) = -A_{a,b}(x)$. The operator vanishes for all $a$, $b$ and $x$ exactly when every associator vanishes, which is associativity.</p>
+<h3 id="the-consequences">The Consequences</h3>
+<p>The identity has three consequences, and they are the reason the associator is stated both in the algebra and in the operator space.</p>
+<p><strong>Corollary.</strong> In an associative algebra the two subalgebras $L(A)$ and $R(A)$ of $\operatorname{End}_k(A)$ commute elementwise; equivalently, their sum $L(A) + R(A)$ is a commutative subalgebra of $\operatorname{End}_k(A)$, with product $L(a)R(b) = R(b)L(a) = T_{a,b}$.</p>
+<p><strong>Corollary.</strong> The associators span the commutator space $[L(A), R(A)]$, which is the image of the operator $A_{(\cdot,\cdot)}$ and is a subspace of $\operatorname{End}_k(A)$ vanishing exactly when $A$ is associative; hence the deviation of $A$ from associativity is measured by the failure of the two one-sided multiplication algebras to commute.</p>
+<p><strong>Corollary.</strong> The map $A \otimes_k A^{\mathrm{op}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the sandwich space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by <em>Central Simple Algebras and the Brauer Group</em>.</p>
+<p>The three corollaries are the operator form of the statement that associativity is not a property of the product alone but of the way the two sides of the product commute. The left and the right multiplications each know only one side; the associator is what happens when the two sides are brought together.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(k)$, of dimension $n^2$; the operators form $M_{n^2}(k)$, of dimension $n^4$. The left and the right multiplications are the operators $X \mapsto AX$ and $X \mapsto XB$ on the space of matrices, of dimension $n^2$ each; the centre is $k \cdot I$ of dimension one, so the intersection $L(A) \cap R(A)$ is one-dimensional, spanned by the identity operator, and the sum $L(A) + R(A)$ has dimension $2n^2 - 1$. For $n = 2$ this is $7$ inside a space of dimension $16$; the left multiplications and the right multiplications overlap exactly in the scalars, and together they generate a seven-dimensional subalgebra of the operator algebra. The sandwich space is larger, and it is the whole of $\operatorname{End}_k(M_n(k))$ by <em>The Sandwich Operator on an Algebra</em>, so the operator algebra is generated by the two one-sided families and their products.</p>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p>Let $A$ be commutative. Then $L(a) = R(a)$ for every $a$, the two spaces coincide, $L(A) = R(A)$ has dimension $n$, and the sum is one copy of the multiplication algebra. The left and the right multiplication are the same operator, and the associator vanishes automatically; the whole of the two-sided theory collapses to the one-sided theory of the multiplication operators, which is developed for the commutative case in <em>Multiplication Operators on a Commutative Algebra</em> of the symmetric category.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>Let $A = \mathbb{H}$ over $\mathbb{R}$, of dimension $4$; the centre is $\mathbb{R}$, so the intersection $L(A) \cap R(A)$ is one-dimensional and the sum has dimension $7$ inside the space of dimension $16$. The four left multiplications and the four right multiplications are the two copies of the algebra and its opposite inside the operator space, and their products give the sandwich space, which is all of $\operatorname{End}_{\mathbb{R}}(\mathbb{H})$ because $\mathbb{H}$ is central simple over $\mathbb{R}$. The two three-dimensional pieces of the operator ladder of <em>The Operators on an Algebra</em> — the pure left multiplications and the derivations — are the further refinement of this picture.</p>
+<h2 id="summary">Summary</h2>
+<p>The left multiplication $L(a)$ and the right multiplication $R(a)$ are the two $k$-linear operators $x \mapsto ax$ and $x \mapsto xa$ on $A$; they are injective when $A$ is unital, and their images $L(A)$ and $R(A)$ are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each. The left multiplications compose as $L(a)L(b) = L(ab)$, so $L : A \to \operatorname{End}_k(A)$ is an algebra isomorphism onto $L(A)$; the right multiplications compose as $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and $R : A^{\mathrm{op}} \to R(A)$ is an algebra isomorphism from the opposite algebra. The two families commute, $L(a)R(b) = R(b)L(a) = T_{a,b}$, exactly when the product is associative, and the obstruction is the associator,</p>
+<p>$$
+L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad A_{a,b}(x) = (ax)b - a(xb);
+$$</p>
+<p>equivalently $A$ is associative exactly when every left multiplication commutes with every right multiplication. The pair $(L,R)$ is a homomorphism $A \otimes_k A^{\mathrm{op}} \to \operatorname{End}_k(A)$ with image the sandwich space, and the regular module is the bimodule it makes of $A$. The two spaces meet in the multiplications by the centre, $L(A) \cap R(A) = L(Z(A))$, so their sum has dimension $2n - \dim_k Z(A)$; and the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$. For $M_n(k)$ the left and the right multiplications meet in the scalars and their sum has dimension $2n^2 - 1$; for a commutative algebra the two sides coincide; and the two-sided product with the associator is the subject of <em>The Sandwich Operator on an Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$n = \dim_k A$</td>
+<td>the dimension, when finite</td>
+</tr>
+<tr>
+<td>$L(a)$, $L(a)(x) = ax$</td>
+<td>the left multiplication by $a$</td>
+</tr>
+<tr>
+<td>$R(a)$, $R(a)(x) = xa$</td>
+<td>the right multiplication by $a$</td>
+</tr>
+<tr>
+<td>$L(A)$, $R(A)$</td>
+<td>the spaces of left and right multiplications</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{op}}$</td>
+<td>the opposite algebra, isomorphic to $R(A)$</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$</td>
+<td>the enveloping algebra</td>
+</tr>
+<tr>
+<td>$T_{a,b} = L(a)R(b) = R(b)L(a)$</td>
+<td>the sandwich, the product of the two sides</td>
+</tr>
+<tr>
+<td>$(a,x,b) = (ax)b - a(xb)$</td>
+<td>the associator</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>the centre, with $L(A) \cap R(A) = L(Z(A))$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the regular representations and the multiplication algebra.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the left and the right multiplications and the double centraliser theorem.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, second edition, 1992), for the regular module, its endomorphism ring and the identification of the centraliser.</li>
+<li>Carl Faith, <em>Algebra: Rings, Modules and Categories I</em> (Springer, 1973), for the structure of the multiplication algebra of an associative algebra.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the associator and the identities that replace associativity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

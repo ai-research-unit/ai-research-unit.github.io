@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Order Automorphisms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-order-automorphisms"><strong>The Involution on the Order Automorphisms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>order automorphism</strong> of an ordered involutive algebra is an automorphism of the algebra that preserves the involution and the positive cone,</p>
+<p>$$
+T(ab) = T(a)T(b) , \qquad T(a^{*}) = T(a)^{*} , \qquad T(A_+) = A_+ ;
+$$</p>
+<p>these form a group $\operatorname{Aut}_o(A)$ under the composition. The <strong>involution</strong> of the algebra enters the group in two ways. First, the involution $\alpha$ is itself an order automorphism of order two, and it acts on the group by the <strong>conjugation</strong></p>
+<p>$$
+\operatorname{conj}_\alpha : T\mapsto \alpha\,T\,\alpha^{-1} = \alpha T\alpha ,
+$$</p>
+<p>which is an automorphism of $\operatorname{Aut}_o(A)$ of order two; its fixed points are the automorphisms commuting with $\alpha$, the <strong>*-automorphisms</strong> of the graded structure. Second, every order automorphism has an <strong>adjoint</strong> for the trace form, the map $T\mapsto T^{*}$, which is an <strong>anti-automorphism</strong> of the group (it reverses the composition) and preserves the order automorphisms; the composition of the two is the <strong>involution on the order automorphisms</strong>. The article states this double action, proves that it preserves the <strong>positivity</strong> — a positive (cone-preserving) automorphism is carried to a positive automorphism, and the adjoint of an order-preserving map is order preserving — and describes the order of the automorphism group itself.</p>
+<p>The reason to isolate the involution on the automorphisms is that it is the structure behind the <strong>graded</strong> automorphisms and the <strong>inner</strong> automorphisms: the conjugations $L_aR_{a^{-1}}$ are order automorphisms, their involution is the conjugation by the corresponding element, and the graded automorphisms are the fixed points of the involution of the algebra. The article is therefore the group-theoretic companion of <em>Self-Adjoint Elements and the Order</em> and <em>The Adjoint of a Positive Operator</em>, and it prepares the adjoint computations of the signed operators that follow.</p>
+<p>The adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the self-adjoint elements and the order isomorphisms are <em>Self-Adjoint Elements and the Order</em>; the positive functionals are <em>Positive Functionals and Self-Adjointness</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the adjoint of the left multiplication is <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; and the signed adjoints are <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>. The operator-algebraic automorphism theory is <em>Operator Algebras</em> of Part II.</p>
+<h2 id="the-order-automorphisms">The Order Automorphisms</h2>
+<p><strong>Definition.</strong> The <strong>order automorphisms</strong> are the bijective linear maps $T$ of $A$ with</p>
+<p>$$
+T(ab) = T(a)T(b), \qquad T(a^{*}) = T(a)^{*}, \qquad T(A_+) = A_+ ,
+$$</p>
+<p>the group operation being the composition; the <strong>positivity</strong> of $T$ is the cone preservation $T(A_+)\subseteq A_+$, which for a bijection with the same property for $T^{-1}$ is the equality $T(A_+) = A_+$.</p>
+<p><strong>Proposition (the group is carried to its opposite by the adjoint).</strong> The adjoint map $T\mapsto T^{*}$ carries order automorphisms to order automorphisms and is an <strong>anti-automorphism</strong> of the group,</p>
+<p>$$
+(ST)^{*} = T^{*}S^{*}, \qquad (T^{-1})^{*} = (T^{*})^{-1} ,
+$$</p>
+<p>and it is an involution of order two; the group $\operatorname{Aut}_o(A)$ is therefore closed under the adjoint, and the <strong>self-adjoint</strong> order automorphisms $T = T^{*}$ form a distinguished subset.</p>
+<p><em>Proof.</em> The adjoint reverses the composition by <em>The Adjoint of a Positive Operator</em>; the adjoint of an order automorphism is an order automorphism because the adjoint preserves the positivity and the invertibility (the adjoint of the inverse is the inverse of the adjoint, by the order-two property); the order-two property is the involution of the adjoint.</p>
+<p><strong>Proposition (the inner automorphisms).</strong> For every <strong>unitary</strong> $a$ (that is, $a^{*}a = aa^{*} = 1$), the conjugation</p>
+<p>$$
+\Phi_a : x\mapsto a\,x\,a^{-1}
+$$</p>
+<p>is an order automorphism; it is a *-automorphism exactly when it commutes with the involution, $a x a^{-1} = (a x^{*} a^{-1})^{*}$ for every $x$, that is, when $a$ is <strong>central</strong> or the involution is <strong>inner</strong> in the appropriate sense; the map $a\mapsto\Phi_a$ is a homomorphism of the unitary group onto the inner automorphism group, with the central unitaries as kernel.</p>
+<p><em>Proof.</em> The conjugation by an invertible element is an algebra automorphism; it preserves the cone because $a$ and $a^{-1}$ preserve the cone as unitaries of the ordered involutive algebra; the *-preservation is the displayed condition, which holds when the involution intertwines as indicated; the kernel is the set of the $a$ with $ax = xa$ for all $x$, the central unitaries.</p>
+<h2 id="the-involution-on-the-automorphisms">The Involution on the Automorphisms</h2>
+<p><strong>Theorem (the conjugation by the involution).</strong> The map</p>
+<p>$$
+\operatorname{conj}_\alpha : \operatorname{Aut}_o(A)\to\operatorname{Aut}_o(A), \qquad \operatorname{conj}_\alpha(T) = \alpha\,T\,\alpha^{-1} ,
+$$</p>
+<p>is an <strong>automorphism of the group of order two</strong>, an <strong>order automorphism</strong> of the group in the sense that it preserves the positivity,</p>
+<p>$$
+T(A_+)\subseteq A_+ \implies \operatorname{conj}_\alpha(T)(A_+)\subseteq A_+ ,
+$$</p>
+<p>and its fixed points are the automorphisms commuting with the involution of the algebra,</p>
+<p>$$
+\operatorname{conj}_\alpha(T) = T \iff \alpha T = T\alpha ,
+$$</p>
+<p>the <strong>*-automorphisms</strong> of the ordered involutive structure.</p>
+<p><em>Proof.</em> The conjugation by a fixed automorphism is a group automorphism; it is of order two because $\alpha$ is of order two. It preserves the positivity because $\alpha$ and $\alpha^{-1}$ preserve the cone, so their composition with a cone-preserving $T$ is cone preserving. The fixed-point statement is the rearrangement $\alpha T\alpha^{-1} = T\iff\alpha T = T\alpha$.</p>
+<p><strong>Proposition (the involution on the automorphisms is the adjoint-composition).</strong> The two actions on $\operatorname{Aut}_o(A)$ — the conjugation by the involution and the adjoint map — combine into the <strong>involution on the order automorphisms</strong></p>
+<p>$$
+T\mapsto (\operatorname{conj}_\alpha\circ *)(T) = \alpha T^{*}\alpha^{-1} = \alpha T^{*}\alpha ,
+$$</p>
+<p>which is an <strong>anti-automorphism</strong> of order two of the group, preserves the order automorphisms, and is the identity exactly on the order automorphisms that are <strong>self-adjoint and *-commuting</strong>, $T^{*} = \alpha T\alpha$.</p>
+<p><em>Proof.</em> The composition of a group automorphism of order two with a group anti-automorphism of order two is an anti-automorphism of order two; the preservation of the order automorphisms is the two statements above; the fixed-point computation is the rearrangement $\alpha T^{*}\alpha = T$.</p>
+<p><strong>Corollary (the order and the involution).</strong> The order automorphisms that commute with the involution form a subgroup of $\operatorname{Aut}_o(A)$, and the order automorphisms whose adjoint is their inverse form the subgroup of the <strong>orthogonal</strong> order automorphisms; the involution on the automorphisms restricts to an automorphism of the first and to the identity on the second, so the order-automorphism group splits into the *-commuting automorphisms and the orthogonal ones.</p>
+<p><em>Proof.</em> The subgroups are defined by the algebraic conditions and are closed under the composition; the action of the involution coincides with the adjoint on the *-commuting automorphisms and with the inverse on the orthogonal ones, giving the stated restrictions.</p>
+<h2 id="the-positivity-and-the-order-of-the-group">The Positivity and the Order of the Group</h2>
+<p><strong>Definition.</strong> The <strong>order</strong> of the automorphism group is</p>
+<p>$$
+S\preceq T \iff S^{-1}T(A_+)\subseteq A_+ ,
+$$</p>
+<p>the <strong>positive order</strong> of $\operatorname{Aut}_o(A)$ by the positivity of the "quotient" $S^{-1}T$.</p>
+<p><strong>Proposition (the positivity of the automorphisms).</strong> The relation $\preceq$ is a partial order on $\operatorname{Aut}_o(A)$ compatible with the group structure, it is preserved by the involution on the automorphisms, and the positive automorphisms are exactly the cone-preserving ones, $T(A_+)\subseteq A_+$, which are the same as the automorphisms with $1\preceq T$ in the positive order.</p>
+<p><em>Proof.</em> The relation is reflexive ($S^{-1}S = 1$ preserves the cone), transitive (the composition of the cone-preserving maps preserves the cone) and antisymmetric on the automorphisms (a bijection preserving the cone with the same property for the inverse is an order automorphism, and the only order automorphism $\preceq$-below and above the identity is the identity); the compatibility with the group structure is the multiplicativity of the conjugation; the preservation by the involution is the preservation of the positivity by the conjugation; the identification of the positive elements is the definition.</p>
+<p><strong>Proposition (the positivity of the conjugation).</strong> The conjugation by the involution carries a positive automorphism to a positive automorphism, $T\succeq1\implies\operatorname{conj}_\alpha(T)\succeq1$; the adjoint of a positive order automorphism is positive; and the involution on the automorphisms preserves the positive order. Consequently the positivity of the automorphisms is an invariant of the involution.</p>
+<p><em>Proof.</em> The first two statements are the positivity preservation of the conjugation and of the adjoint; the third is their composition; the invariance statement is the conclusion.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the trace form and the Loewner order. The order automorphisms are the conjugations $\Phi_U : X\mapsto UXU^{*}$ by the unitaries, all of which are inner; the involution conjugation by $\alpha = $ the identity in the ungraded case, or by a self-adjoint unitary in a graded case, has the *-commuting automorphisms as fixed points, and the adjoint of $\Phi_U$ is the conjugation by $U^{*}$. The positivity of the conjugations is the unitary invariance of the Loewner order. This is the finite-dimensional model.</p>
+<h3 id="the-self-adjoint-operators">The Self-Adjoint Operators</h3>
+<p>Let $A$ be a von Neumann algebra with the Loewner order and the trace form. The order automorphisms are the *-automorphisms preserving the cone, the inner ones being the conjugations by the unitaries of the algebra, and the involution $\alpha$ acts by conjugation; the fixed points are the *-automorphisms commuting with $\alpha$, and the adjoint of an inner automorphism is the inner automorphism of the adjoint unitary. The positivity is the cone preservation of the *-automorphisms.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $A = C(X,\mathbb{C})$ with the pointwise order. The order automorphisms are the homeomorphisms of $X$ acting on the functions by composition, together with the conjugation; the involution acts by conjugation on them, its fixed points are the automorphisms commuting with the conjugation (the "real" homeomorphisms), and the adjoint map is the identity on them because the functions are complex valued and the trace form is symmetric. The commutative case shows that the involution on the automorphisms is the grading of the automorphism group by the reality of the homeomorphisms.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>order automorphisms</strong> of an ordered involutive algebra are the automorphisms preserving the involution and the cone; they form a group, and the <strong>adjoint</strong> map $T\mapsto T^{*}$ is an anti-automorphism of the group of order two which preserves the order automorphisms. The <strong>involution</strong> $\alpha$ acts on the group by the <strong>conjugation</strong> $T\mapsto\alpha T\alpha^{-1}$, an automorphism of order two which <strong>preserves the positivity</strong> and whose fixed points are the <strong>*-automorphisms</strong> (the automorphisms commuting with $\alpha$); the composition of the two actions is the <strong>involution on the order automorphisms</strong> $T\mapsto\alpha T^{*}\alpha$, an anti-automorphism of order two. The automorphism group carries the <strong>positive order</strong> $S\preceq T\iff S^{-1}T$ is cone preserving, compatible with the group structure and preserved by the involution; the inner automorphisms are the conjugations by the unitaries, and the <strong>positivity</strong> of the automorphisms is the cone preservation, which is invariant under the involution. The adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the self-adjoint order isomorphisms are <em>Self-Adjoint Elements and the Order</em>; the positive functionals are <em>Positive Functionals and Self-Adjointness</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; and the concrete adjoints are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>, <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Aut}_o(A)$</td>
+<td>Group of the order automorphisms</td>
+</tr>
+<tr>
+<td>$T(A_+) = A_+$</td>
+<td>Order automorphism</td>
+</tr>
+<tr>
+<td>$T\mapsto T^{*}$</td>
+<td>Adjoint, an anti-automorphism of order two</td>
+</tr>
+<tr>
+<td>$T\mapsto\alpha T\alpha^{-1}$</td>
+<td>Conjugation by the involution</td>
+</tr>
+<tr>
+<td>$\alpha T = T\alpha$</td>
+<td>Fixed points: the *-automorphisms</td>
+</tr>
+<tr>
+<td>$T\mapsto\alpha T^{*}\alpha$</td>
+<td>Involution on the order automorphisms</td>
+</tr>
+<tr>
+<td>$S\preceq T\iff S^{-1}T(A_+)\subseteq A_+$</td>
+<td>Positive order of the automorphism group</td>
+</tr>
+<tr>
+<td>$\Phi_a : x\mapsto axa^{-1}$</td>
+<td>Inner automorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the *-automorphisms, the inner automorphisms and the order.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the automorphism groups, the grading involutions and the positivity.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the *-automorphisms of the operator algebras and the order.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the order automorphisms of the state spaces and the positivity.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the cone-preserving maps and the positive order of the automorphism groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

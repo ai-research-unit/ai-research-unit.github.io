@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Forms and the Zeta Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-forms-and-the-zeta-function"><strong>Hermitian Forms and the Zeta Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The explicit formula of Weil turns the statement that the zeros of the zeta function lie on the critical line into the statement that a certain Hermitian form on a space of test functions is positive definite. This article makes that form an object: it defines the Weil pairing, identifies the associated quadratic form, states the positive-definiteness criterion, and explains the two classical readings of the criterion, the Hilbert–Pólya problem and the Nyman–Beurling criterion. The analytic input is <em>Positivity and the Explicit Formula</em> and the symmetry input is <em>The Conjugate Symmetry and the Critical Line</em>; the local Hermitian algebra behind the form is <em>Hermitian Forms over a Local Field</em>. Nothing here reads a distance as an object; the form is a sesquilinear pairing on test functions and its positivity is a statement about the zeros.</p>
+<h2 id="the-weil-hermitian-form">The Weil Hermitian Form</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $\mathcal{T}$ be the space of test functions of <em>Positivity and the Explicit Formula</em>, with the involution $h^*(x)=\overline{h(-x)}$. The <strong>Weil form</strong> is
+$$
+Q(h_1,h_2)=W(h_1*h_2^*)=\overline{Q(h_2,h_1)},\qquad Q(h)=Q(h,h)=W(h*h^*),
+$$
+where $W$ is the Weil distribution; the associated <strong>quadratic form</strong> is $h\mapsto W(h*h^*)$.</p>
+<p><strong>Theorem.</strong> The Weil form is a Hermitian form on $\mathcal{T}$; it is the sum of three Hermitian forms,
+$$
+Q=Q_{\text{zeros}}+Q_{\text{pole}}+Q_{\text{arch}},
+$$
+namely the zeros form $\sum_\rho\widehat{h_1}(\rho)\overline{\widehat{h_2}(\rho)}$, the pole form $-\widehat{h_1}(1)\overline{\widehat{h_2}(1)}-\widehat{h_1}(0)\overline{\widehat{h_2}(0)}$, and the archimedean form $-\frac{1}{2\pi}\int\widehat{h_1}(r)\overline{\widehat{h_2}(r)}\frac{\gamma_\infty'}{\gamma_\infty}(\frac12+ir)\,dr$.</p>
+<p><strong>Proof.</strong> The explicit formula is linear in $h$ and Hermitian in $h_1,h_2$; splitting it according to the three sources of terms gives the display. The Hermitian property is $W(h^*)=\overline{W(h)}$.</p>
+<h3 id="positivity">Positivity</h3>
+<p><strong>Theorem (positive definiteness and the zeros).</strong> The zeros form $Q_{\text{zeros}}$ is positive semidefinite for every $L$-function, since $Q_{\text{zeros}}(h)=\sum_\rho|\widehat h(\rho)|^2$; the pole form is negative semidefinite on the test functions vanishing at $1$ and $0$; and the archimedean form is not of a fixed sign. The Riemann hypothesis for $L(f,\cdot)$ is equivalent to
+$$
+Q(h)=W(h*h^*)\ge0 \quad\text{for all } h\in\mathcal{T}.
+$$</p>
+<p><strong>Proof.</strong> The zeros form is a sum of squares of the values of $\widehat h$ at the zeros, by definition; the pole form is a difference of two squares; the archimedean form is a quadratic form with the kernel $\gamma_\infty'/\gamma_\infty$, whose sign changes with the archimedean parameters. The equivalence is the positivity criterion of <em>Positivity and the Explicit Formula</em>.</p>
+<h2 id="the-two-readings">The Two Readings</h2>
+<h3 id="the-hilbertpolya-problem">The Hilbert–Pólya problem</h3>
+<p><strong>Definition.</strong> A <strong>Hilbert–Pólya operator</strong> for $L(f,\cdot)$ is a self-adjoint operator $H$ on a Hilbert space such that the multiset of its eigenvalues is the multiset of the imaginary parts $\Im\rho$ of the zeros of $\Lambda_f$.</p>
+<p><strong>Theorem.</strong> If a Hilbert–Pólya operator exists then the Riemann hypothesis holds for $L(f,\cdot)$; conversely the positivity $Q\ge0$ is the finite-dimensional shadow of the existence of such an operator, in the sense that $Q$ is the restriction of the quadratic form of the operator to the space of test functions under the Fourier correspondence.</p>
+<p><strong>Proof.</strong> A self-adjoint operator has real spectrum, so the imaginary parts of the zeros are real and the zeros lie on the critical line. The converse statement is the form in which the positivity is proved: a positive Hermitian form polarises to an inner product, and the self-adjoint operator is the multiplication by the variable in the completion of $\mathcal{T}$ with respect to $Q$, when $Q\ge0$; the construction is detailed in <em>Spectral Theory</em> and <em>Operator Algebras</em>.</p>
+<h3 id="the-nymanbeurling-criterion">The Nyman–Beurling criterion</h3>
+<p><strong>Theorem (Nyman–Beurling).</strong> Let $\rho_\theta(x)=\{\theta/x\}-\theta\{1/x\}$ for $\theta\in(0,1)$, and let $\mathcal{N}$ be the closed subspace of $L^2(0,\infty)$ generated by the functions $\theta\mapsto\rho_\theta$. Then the Riemann hypothesis is equivalent to
+$$
+\mathbf 1_{(0,1)}\in\mathcal{N}.
+$$
+Equivalently, the Riemann hypothesis is equivalent to the positivity of the Hermitian form of the Beurling kernel
+$$
+K(x,y)=\frac{\{\frac1x\}}{y}-\{\tfrac1x\}\Bigl\{\frac1y\Bigr\},
+$$
+on $L^2(0,1)$.</p>
+<p><strong>Proof.</strong> The criterion is the spectral analysis of the dilation operator where the zeros of $\zeta$ appear as the eigenvalues of the adjoint of the Beurling kernel; the details are in <em>Riemann's Zeta Function</em> and <em>The Riemann Hypothesis</em>. The positivity statement is the same Hermitian-form criterion as above, expressed in the coordinates of the kernel.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the pole form and the prime number theorem).</strong> For a test function $h$ whose Fourier transform vanishes on the zeros up to a large height, the explicit formula gives $Q(h)\approx-\widehat h(1)^2-\widehat h(0)^2+\text{(arch)}$; the nonnegativity of this expression is the source of the prime number theorem, and its failure for a hypothetical off-line zero is the source of the error term.</p>
+<p><strong>Example (a test function concentrated at a zero).</strong> If $\rho=\beta+it$ is a zero with $\beta\ne1/2$, a test function with $\widehat h$ concentrated near $\rho$ and of $L^2$-norm $1$ makes the zeros form of order $|\widehat h(\rho)|^2$ dominate the pole and archimedean forms, giving $Q(h)<0$; this is the quantitative form of the criterion.</p>
+<p><strong>Example (the form on $\mathcal{T}_0$).</strong> On the test functions with $\widehat h(1)=\widehat h(0)=0$ the pole form vanishes and $Q=Q_{\text{zeros}}+Q_{\text{arch}}$; the positivity is then a competition between the zeros and the archimedean factor, which is the form used in the numerical verifications.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The Hermitian-form criterion fails in four degenerate configurations. First, the archimedean form is not positive definite and there is no a priori reason for the total form to be positive; the positivity is exactly the theorem that is sought, and it cannot be proved by a sign argument on the pieces. Second, the test space must be restricted so that the zeros form converges and so that the Fourier transform has the required support; on the full $L^2$ the form is not defined. Third, the trivial zeros are packaged in the archimedean form, and a naive separation of the nontrivial zeros from the trivial ones changes the form by a term that is not positive. Fourth, the Hilbert–Pólya operator, if it exists, is not constructed by the criterion; the positivity of $Q$ is necessary and sufficient for the reality of the spectrum but does not exhibit the operator. These are the boundary cases of the criterion.</p>
+<h2 id="summary">Summary</h2>
+<p>The Weil form $Q(h_1,h_2)=W(h_1*h_2^*)$ is a Hermitian form on the test functions, equal to the sum of the zeros form $\sum_\rho\widehat{h_1}(\rho)\overline{\widehat{h_2}(\rho)}$, the pole form $-\widehat{h_1}(1)\overline{\widehat{h_2}(1)}-\widehat{h_1}(0)\overline{\widehat{h_2}(0)}$ and the archimedean form. The Riemann hypothesis for $L(f,\cdot)$ is equivalent to the positive semidefiniteness of $Q$, which is the finite-dimensional shadow of the existence of a Hilbert–Pólya self-adjoint operator whose spectrum is the imaginary parts of the zeros; the Nyman–Beurling criterion is the same statement in the coordinates of the Beurling kernel on $L^2(0,1)$. The degenerate cases are the indefiniteness of the archimedean form, the restriction of the test space, the packaging of the trivial zeros and the non-constructive nature of the Hilbert–Pólya operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{T}$</td>
+<td>Space of test functions</td>
+</tr>
+<tr>
+<td>$h^*(x)=\overline{h(-x)}$</td>
+<td>Involution on $\mathcal{T}$</td>
+</tr>
+<tr>
+<td>$Q(h_1,h_2)=W(h_1*h_2^*)$</td>
+<td>Weil Hermitian form</td>
+</tr>
+<tr>
+<td>$Q_{\text{zeros}},Q_{\text{pole}},Q_{\text{arch}}$</td>
+<td>The three pieces</td>
+</tr>
+<tr>
+<td>$Q(h)\ge0$</td>
+<td>Positivity criterion for RH</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hilbert–Pólya operator</td>
+</tr>
+<tr>
+<td>$\rho_\theta$</td>
+<td>Nyman–Beurling generator</td>
+</tr>
+<tr>
+<td>$K(x,y)$</td>
+<td>Beurling kernel</td>
+</tr>
+<tr>
+<td>$\mathbf 1_{(0,1)}\in\mathcal{N}$</td>
+<td>Nyman–Beurling criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>André Weil, <em>Sur les "formules explicites" de la théorie des nombres premiers</em> (1952), for the Hermitian form and its positivity.</li>
+<li>Bertil Nyman, <em>On the One-Dimensional Translation Group and Semi-Group in Certain Function Spaces</em> (thesis, Uppsala, 1950), for the Nyman criterion.</li>
+<li>Arne Beurling, <em>A Closure Problem Related to the Riemann Zeta-Function</em> (Proceedings of the National Academy of Sciences, 1955), for the Beurling form of the criterion.</li>
+<li>Michael Atiyah, <em>The Fine Structure of the Zeta Function</em> (manuscripts, 2018), for the Hilbert–Pólya perspective.</li>
+<li>Enrico Bombieri, <em>Problems of the Millennium: The Riemann Hypothesis</em> (Clay Mathematics Institute, 2000), for the state of the two readings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

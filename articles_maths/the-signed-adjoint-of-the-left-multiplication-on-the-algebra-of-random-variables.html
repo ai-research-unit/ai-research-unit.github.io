@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-the-algebra-of-random-variables"><strong>The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication is the product of the left multiplication by the grade involution,
+$$
+T^\alpha_a=L_a\alpha,\qquad T^\alpha_a(x)=a\,\alpha(x),
+$$
+and this article computes its <strong>adjoint</strong> with respect to the form of the category,
+$$
+\langle x,y\rangle=\varphi(xy^*)=\mathbb E\bigl[x\bar y\bigr].
+$$
+The adjoint is again a signed left multiplication,
+$$
+\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\,L_{a^*},\qquad \delta=\sigma\alpha=\alpha\sigma ,
+$$
+the signed left multiplication by the <strong>twisted image</strong> $\delta(a)$ of the parameter, where $\delta$ is the composite of the conjugation and the grade involution. The formula is the same as in the noncommutative signed theory of <em>The Signed Left Multiplication on a Ring</em>, in Part I, but the derivation differs: there the twisted involution performs the reversal of the product, while here the product is commutative, the adjoint of the ordinary left multiplication is the left multiplication by the conjugate, and the twist $\delta$ on the parameter completes the computation. The article gives the closed form, the behaviour under products and squares, the conditions for self-adjointness, isometry and unitarity, and the comparison of the adjoint with the involution on the elements, which agree exactly up to the twisted involution $\delta$.</p>
+<p>The conventions are those fixed in <em>The Signed Sandwich on the Algebra of Random Variables</em>, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\varphi(a)=\mathbb E[a]$, the form of the category $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$, the grading and the twisted involution $\delta=\sigma\alpha=\alpha\sigma$. The signed left multiplication and its products are <em>The Signed Left Multiplication on the Algebra of Random Variables</em>, earlier in this category; the signed sandwich, of which it is the case $b=1$, and its adjoint are <em>The Signed Sandwich on the Algebra of Random Variables</em>, earlier in this category, and <em>The Signed Adjoint Sandwich on the Algebra of Random Variables</em>, the preceding article of this category; the reflections and their adjoints are <em>Reflections as Signed Two-Sided Operators on the Algebra of Random Variables</em>, earlier in this category, and <em>The Signed Adjoint of the Reflection on the Algebra of Random Variables</em>, the preceding article of this category; the adjoint of the unsigned left multiplication is <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category; the operator-algebra involution is <em>The Involution on the Operator Algebra of a Process</em>, earlier in this category; and the graded adjoint action is <em>The Graded Adjoint Action on a Module over the Algebra of Random Variables</em>, the next article of this category. No physics is invoked.</p>
+<p>Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle x,y\rangle=\varphi(xy^*)$ is the Hilbert space of the category, $T^\alpha_a=L_a\alpha$ is the signed left multiplication, and $\delta=\sigma\alpha$; the twisted involution satisfies $\delta^2=\mathrm{id}$, $\delta\alpha=\alpha\delta=\sigma$ and $\delta\sigma=\sigma\delta=\alpha$.</p>
+<h2 id="the-signed-adjoint">The Signed Adjoint</h2>
+<h3 id="definition-and-closed-form">Definition and closed form</h3>
+<p><strong>Definition.</strong> The <strong>signed adjoint</strong> of the signed left multiplication is the operator $(T^\alpha_a)^*$ with
+$$
+\langle T^\alpha_a x,y\rangle=\langle x,(T^\alpha_a)^*y\rangle\qquad\text{for all }x,y\in\mathcal{H}.
+$$</p>
+<p><strong>Theorem (the closed form).</strong> For every $a\in\mathcal{A}$,
+$$
+\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha\,L_{a^*},\qquad \delta=\sigma\alpha ,
+$$
+so the adjoint of a signed left multiplication is a signed left multiplication, of the twisted parameter.</p>
+<p><em>Proof.</em> The operator is $L_a\alpha$, and the adjoint of a product is the product of the adjoints in reverse order, $(L_a\alpha)^*=\alpha^*L_a^*$. By <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category, $L_a^*=L_{a^*}$, and $\alpha^*=\alpha$ because the grade involution is self-adjoint; hence $(T^\alpha_a)^*=L_{a^*}\alpha$. Using $L_{a^*}\alpha=L_{\alpha(a^*)}\alpha^2=\alpha L_{a^*}$ and $\alpha(a^*)=\delta(a)$, this is $T^\alpha_{\delta(a)}$.</p>
+<p><strong>Corollary (the adjoint is a signed left multiplication).</strong> The adjoint operation preserves the class of the signed left multiplications and acts on the parameter by the twisted involution,
+$$
+T^\alpha_a\mapsto T^\alpha_{\delta(a)},\qquad \delta^2=\mathrm{id},
+$$
+so the signed adjoint is an involution on the class of the operators.</p>
+<p><em>Proof.</em> The formula exhibits the adjoint as a signed left multiplication; applying it twice gives the identity because $\delta^2=\mathrm{id}$, and the adjoint of the adjoint is the original by the general theory.</p>
+<h3 id="products-and-the-square">Products and the square</h3>
+<p><strong>Theorem (products).</strong> The signed left multiplications multiply by
+$$
+T^\alpha_a\,T^\alpha_b=L_{a\alpha(b)},
+$$
+an <strong>unsigned</strong> left multiplication, and the adjoint reverses the product, $(T^\alpha_aT^\alpha_b)^*=T^\alpha_{\delta(b)}T^\alpha_{\delta(a)}$; the square is
+$$
+\bigl(T^\alpha_a\bigr)^2=L_{a\,\alpha(a)} ,
+$$
+which is the identity exactly when $a\,\alpha(a)=1$.</p>
+<p><em>Proof.</em> The product is $L_a\alpha L_b\alpha=L_aL_{\alpha(b)}\alpha^2=L_{a\alpha(b)}$; the anti-multiplicativity of the adjoint and the closed form give the reversal; the square is the product with $b=a$.</p>
+<h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
+<p><strong>Corollary (self-adjointness, isometry and unitarity).</strong> For $a\in\mathcal{A}$,
+$$
+T^\alpha_a\ \text{is self-adjoint}\iff a=\delta(a)\iff\alpha(a)=a^* ,
+$$
+and
+$$
+T^\alpha_a\ \text{is an isometry}\iff|a|=1 ,
+$$
+in which case it is unitary with the inverse $T^\alpha_{\alpha(a)^{-1}}$; the self-adjoint unitary signed left multiplications are the unimodular $\alpha$-Hermitian elements, $\alpha(a)=a^*$ and $|a|=1$.</p>
+<p><em>Proof.</em> Self-adjointness is $T^\alpha_a=T^\alpha_{\delta(a)}$; the map $a\mapsto T^\alpha_a$ is injective, so the two are equal exactly when $a=\delta(a)$, that is $a=\alpha(a)^*$, equivalently $\alpha(a)=a^*$. For the isometry, $(T^\alpha_a)^*T^\alpha_a=T^\alpha_{\delta(a)}T^\alpha_a=L_{\delta(a)\alpha(a)}=L_{\alpha(a^*)\alpha(a)}=L_{\alpha(a^*a)}=L_{|a|^2}$, the identity exactly when $|a|=1$; the unitary statement is the same computation in the other order, and the inverse of $T^\alpha_a$ for a unit $a$ is $T^\alpha_{\alpha(a)^{-1}}$.</p>
+<p><strong>Theorem (the unitary group).</strong> The unitary signed left multiplications form the group
+$$
+\{T^\alpha_a:|a|=1\}\cong L^\infty(\Omega,\mathbb T),
+$$
+Abelian, and the self-adjoint unitary members are the unimodular $\alpha$-Hermitian elements; the map $a\mapsto T^\alpha_a$ is injective, so the group is isomorphic to the group of the unimodular random variables.</p>
+<p><em>Proof.</em> The product of two unitary signed left multiplications is unitary, being a product of unitaries; the inverse of $T^\alpha_a$ is $(T^\alpha_a)^*=T^\alpha_{\delta(a)}$ when $|a|=1$; the group is Abelian by the commutativity of the algebra; and the map is injective because $T^\alpha_a=0$ implies $a=0$.</p>
+<h2 id="the-comparison-with-the-involution">The Comparison with the Involution</h2>
+<h3 id="the-twisted-involution">The twisted involution</h3>
+<p><strong>Theorem (the involution and the adjoint).</strong> The adjoint of the signed left multiplication agrees with the multiplication of the <strong>twisted image</strong> of the parameter: on the elements, the map $a\mapsto\delta(a)=\alpha(a^*)$ is the composite of the involution $\sigma$ and the grade involution $\alpha$; the adjoint realises it, $T^\alpha_a\mapsto T^\alpha_{\delta(a)}$. The ordinary involution is realised by the adjoint <strong>only when</strong> $\alpha=\mathrm{id}$, in which case $\delta=\sigma$ and the adjoint of $L_a$ is $L_{a^*}$.</p>
+<p><em>Proof.</em> The closed form is the realisation of $\delta$ on the parameters; the case $\alpha=\mathrm{id}$ reduces $\delta$ to the conjugation, and the adjoint of $L_a$ is $L_{a^*}$, which is <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category. The two structures, the involution on the elements and the adjoint on the operators, coincide up to the twist, and the twist is the grade involution.</p>
+<h3 id="the-arithmetic-contrast">The arithmetic contrast</h3>
+<p><strong>Theorem (the comparison with the arithmetic case).</strong> Over the algebra of arithmetic functions under the coefficient form the adjoint of $L_a\alpha$ is the transposed multiplication $\Theta_a$ composed with $\alpha$, and it is a signed left multiplication only when $\alpha(a)$ is a unit; here the adjoint is a signed left multiplication for every $a$. The discrepancy is the invariance of the expectation form, which returns $L_{a^*}$ for the adjoint of $L_a$ instead of the transpose.</p>
+<p><em>Proof.</em> The arithmetic statement is that of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, written, and <em>The Signed Left Multiplication on the Algebra of Arithmetic Functions</em>, written; the difference is the invariance of the form, which is the traciality of the state in the commutative algebra.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the two-atom swap).</strong> For $\Omega=\{\omega_-,\omega_+\}$ with the uniform probability and $\alpha(x_-,x_+)=(x_+,x_-)$, the signed left multiplication by $a=(a_-,a_+)$ is $T^\alpha_a(x_-,x_+)=(a_-x_+,a_+x_-)$; its adjoint has the parameter $\delta(a)=(\bar a_+,\bar a_-)$ and acts by $(x_-,x_+)\mapsto(\bar a_+x_+,\bar a_-x_-)$, which is the direct adjoint of the coordinate action; the operator is self-adjoint exactly when $a_-=a_+$, that is when $a$ is even.</p>
+<p><strong>Example (the circle phase).</strong> On $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\alpha(x)(\theta)=x(-\theta)$, the parameter $a(\theta)=e^{2\pi i\theta}$ satisfies $\alpha(a)(\theta)=e^{-2\pi i\theta}=a(\theta)^*$, so $a$ is $\alpha$-Hermitian, $\delta(a)=a$, and $T^\alpha_a$ is self-adjoint and unitary; it is the operator $x(\theta)\mapsto e^{2\pi i\theta}x(-\theta)$, an involution of the circle.</p>
+<p><strong>Example (the trivial grading).</strong> For $\alpha=\mathrm{id}$ the signed left multiplication is the ordinary one, the closed form is $L_a^*=L_{a^*}$, self-adjointness is $a$ real and unitarity is $|a|=1$; this is the boundary at which the signed adjoint is the ordinary adjoint of <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category.</p>
+<p><strong>Example (the non-self-adjoint phase).</strong> For the parameter $a(\theta)=e^{2\pi i\theta}$ with the <strong>trivial</strong> grading the operator $L_a$ is unitary but not self-adjoint; with the reflection grading it is self-adjoint. The example shows that the same operator can be self-adjoint or not according as the grading is present, the adjoint being computed with respect to the same form.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The signed adjoint of the left multiplication degenerates in four configurations. First, the closed form is a consequence of the invariance of the expectation form; for a non-tracial state or a non-commutative algebra the adjoint is a right multiplication up to the modular correction, and the twist $\delta$ alone does not describe it. Second, the self-adjointness condition $a=\delta(a)$ is the $\alpha$-Hermiticity, not the reality $a=a^*$; the graded elements can be self-adjoint without being real, and the constant phases of the circle example are the simplest case. Third, the isometry condition $|a|=1$ is separate from the self-adjointness; the unitary and the self-adjoint members of the signed left multiplications intersect in the unimodular $\alpha$-Hermitian elements, and the general unitary is not self-adjoint. Fourth, the products of two signed left multiplications are <strong>unsigned</strong>; the class of the signed operators is not closed under multiplication, only under the adjoint, and confusing the two closure properties is the standard error of the graded theory.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the signed left multiplication $T^\alpha_a=L_a\alpha$ of the algebra of random variables with respect to the form $\langle x,y\rangle=\varphi(xy^*)$ is the signed left multiplication of the twisted parameter,
+$$
+\bigl(T^\alpha_a\bigr)^*=T^\alpha_{\delta(a)}=\alpha L_{a^*},\qquad \delta=\sigma\alpha=\alpha\sigma ,
+$$
+so the adjoint operation preserves the class of the signed left multiplications and acts on the parameter by the twisted involution, the same formula as in the noncommutative ring but derived here from the invariance of the form. The products are the unsigned left multiplications, $T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$, the square is $(T^\alpha_a)^2=L_{a\alpha(a)}$, the operator is self-adjoint exactly when $a$ is $\alpha$-Hermitian, $\alpha(a)=a^*$, and it is an isometry or unitary exactly when $|a|=1$, the unitary group being the unimodular random variables. The adjoint agrees with the involution on the elements <strong>up to the twisted involution</strong> $\delta$, and coincides with it only when the grading is trivial. The unsigned adjoint is <em>The Adjoint of the Left Multiplication on the Algebra of Random Variables</em>, earlier in this category; the sandwich case is <em>The Signed Adjoint Sandwich on the Algebra of Random Variables</em>, the preceding article of this category; and the module case is <em>The Graded Adjoint Action on a Module over the Algebra of Random Variables</em>, the next article of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^\alpha_a=L_a\alpha$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle=\varphi(xy^*)$</td>
+<td>the form of the category</td>
+</tr>
+<tr>
+<td>$\delta=\sigma\alpha=\alpha\sigma$</td>
+<td>the twisted involution</td>
+</tr>
+<tr>
+<td>$(T^\alpha_a)^*=T^\alpha_{\delta(a)}=\alpha L_{a^*}$</td>
+<td>the signed adjoint</td>
+</tr>
+<tr>
+<td>$T^\alpha_aT^\alpha_b=L_{a\alpha(b)}$</td>
+<td>the products, unsigned</td>
+</tr>
+<tr>
+<td>$(T^\alpha_a)^2=L_{a\alpha(a)}$</td>
+<td>the square</td>
+</tr>
+<tr>
+<td>$\alpha(a)=a^*$</td>
+<td>self-adjointness</td>
+</tr>
+<tr>
+<td>$|a|=1$</td>
+<td>isometry and unitarity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>C</em>-Algebras* (North-Holland, 1977), for the involutions, the twisted involutions and the representations.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, Vol. I (Academic Press, 1983), for the adjoints, the unitaries and the $*$-representations.</li>
+<li>Sterling K. Berberian, <em>Baer </em>-Rings* (Springer, 1972), for the involutions, the graded rings and the adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the twisted involutions and the graded structures.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the graded operators and their adjoints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

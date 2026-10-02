@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Bimodule over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-bimodule-over-an-algebra"><strong>The Signed Adjoint of the Reflection on a Bimodule over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of a graded bimodule is the signed sandwich $r_u(x)=u\,\alpha(x)\,u^{-1}$ by a unit $u$, an operator of order two when $u\alpha(u)$ is central. This article computes the adjoint of a reflection with respect to an $\alpha$-invariant pairing and asks when a reflection is self-adjoint. The adjoint of $r_u$ is the reflection $r_{\beta(u)}$ by the parameter transformed by the composite $\beta=\alpha\sigma$, so the reflections are permuted by the adjoint; a reflection is self-adjoint exactly when its parameter is fixed by $\beta$, and this criterion fails in the degenerate case where distinct parameters give the same reflection.</p>
+<p>The article is the fifth of the <code>* Operator Theory</code> group of this category. It assumes the reflections of <em>Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra</em>, the signed sandwich and its adjoint from <em>The Signed Sandwich on a Bimodule over an Algebra</em> and <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>, and the self-adjoint and unitary elements of <em>Module Operators with an Involution</em>. It is the operator-level counterpart, for the graded bimodule, of <em>The Adjoint of the Sandwich on a Bimodule over an Algebra</em>, and the one-sided partner is <em>The Signed Adjoint of the Left Multiplication on a Module over an Algebra</em>. The article stays inside Part I: no distance, norm, angle, form with a norm, topology or limit; a reflection means an operator of order two, with no geometric reading. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded $(A,A)$-bimodule with $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and for a unit $u \in A^{\times}$ the reflection is $r_u=S^{\alpha}_{u,u^{-1}}$, $r_u(x)=u\,\alpha(x)\,u^{-1}$.</p>
+<h2 id="the-reflection-and-its-adjoint">The Reflection and Its Adjoint</h2>
+<h3 id="the-reflection-recalled">The reflection recalled</h3>
+<p><strong>Definition.</strong> For a unit $u \in A^{\times}$ the <strong>reflection</strong> with parameter $u$ is the signed sandwich</p>
+<p>$$
+r_u=S^{\alpha}_{u,u^{-1}}, \qquad r_u(x)=u\,\alpha(x)\,u^{-1} .
+$$</p>
+<p><strong>Proposition.</strong> The square of a reflection is the inner conjugation by $u\alpha(u)$,</p>
+<p>$$
+r_u^{2}=S_{u\alpha(u),\,(u\alpha(u))^{-1}}=\operatorname{conj}_{u\alpha(u)},
+$$</p>
+<p>so $r_u$ is an operator of order two, a genuine reflection, exactly when $u\alpha(u)$ is central in $A$.</p>
+<p><em>Proof.</em> This is <em>Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra</em>. $\square$</p>
+<p>The two conditions in play are therefore distinct from the outset: $r_u^{2}=\mathrm{id}$ asks $u\alpha(u)$ central, while self-adjointness below asks $\beta(u)=u$ up to centrality. Neither implies the other.</p>
+<h3 id="the-adjoint-of-a-reflection">The adjoint of a reflection</h3>
+<p><strong>Theorem.</strong> The adjoint of a reflection is the reflection by the parameter transformed by $\beta=\alpha\sigma$:</p>
+<p>$$
+(r_u)^{*}=r_{\beta(u)}, \qquad \beta(u)=\alpha(\sigma(u)) .
+$$</p>
+<p><em>Proof.</em> The adjoint of a signed sandwich is $\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}$ by <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>; for $(a,b)=(u,u^{-1})$ this is $S^{\alpha}_{\beta(u),\beta(u^{-1})}$, and $\beta(u^{-1})=\beta(u)^{-1}$, so the adjoint is $r_{\beta(u)}$. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint permutes the set of reflections: $\{r_u\}^{*}=\{r_u\}$, and the permutation is the map $u \mapsto \beta(u)$ on the parameters. Since $\beta$ is an involution, the adjoint acts on the reflections as an involution on the parameters, and $(r_u)^{**}=r_{\beta^{2}(u)}=r_u$.</p>
+<p><em>Proof.</em> The adjoint of $r_u$ is $r_{\beta(u)}$, and $\beta^{2}=\mathrm{id}$ because $\alpha$ and $\sigma$ commute, so the two applications return $r_u$; the bijection $u\mapsto\beta(u)$ of $A^{\times}$ has inverse itself. $\square$</p>
+<p>The reflection adjoint formula is the module-level form of the statement that conjugating by $u$ and taking adjoints uses the involution on the parameter; it is the same identity as $(L_a)^{*}=L_{\sigma(a)}$ for the one-sided case, with the grading inserted.</p>
+<h2 id="self-adjointness-of-a-reflection">Self-Adjointness of a Reflection</h2>
+<h3 id="the-criterion">The criterion</h3>
+<p><strong>Definition.</strong> A reflection $r_u$ is <strong>self-adjoint</strong> when $(r_u)^{*}=r_u$. Its parameter $u$ is <strong>$\beta$-symmetric</strong> when $\beta(u)=u$; more generally $u$ is $\beta$-symmetric modulo the centre when $\beta(u)u^{-1} \in Z(A)$.</p>
+<p><strong>Theorem.</strong> If the map $u \mapsto r_u$ is injective on $A^{\times}$, then a reflection is self-adjoint exactly when its parameter is $\beta$-symmetric:</p>
+<p>$$
+(r_u)^{*}=r_u \iff \beta(u)=u \iff \alpha\sigma(u)=u .
+$$</p>
+<p><em>Proof.</em> By the adjoint formula, $(r_u)^{*}=r_u$ is $r_{\beta(u)}=r_u$, which by injectivity is $\beta(u)=u$. $\square$</p>
+<p><strong>Corollary.</strong> The $\beta$-symmetric units form a subgroup $A^{\times}_{\beta}=\{u \in A^{\times} : \beta(u)=u\}$ of the unit group, because $\beta$ is an involution of the algebra, and the reflection map restricts to a map $A^{\times}_{\beta}\to\{r_u : (r_u)^{*}=r_u\}$ onto the self-adjoint reflections when the parameter map is injective. The restriction is multiplicative only when $u\alpha(v)$ is central for all $u,v \in A^{\times}_{\beta}$, as it is in a commutative algebra; in general the product of two reflections is a conjugation and not a reflection.</p>
+<p><em>Proof.</em> $A^{\times}_{\beta}$ is a subgroup because $\beta$ is an algebra automorphism with $\beta^{2}=\mathrm{id}$; the image lies in the self-adjoint reflections by the theorem; the product $r_ur_v=S_{u\alpha(v),\,\alpha(v)^{-1}u^{-1}}$ is a reflection exactly when $u\alpha(v)$ is central, by the criterion for a diagonal sandwich to be a reflection. $\square$</p>
+<p>The corollary stops short of a group isomorphism, because $r_ur_v$ is a reflection only under the centrality condition; the self-adjoint reflections therefore do not automatically form a group.</p>
+<h3 id="self-adjointness-and-the-order-of-the-reflection">Self-adjointness and the order of the reflection</h3>
+<p><strong>Proposition.</strong> The two conditions</p>
+<p>$$
+\text{order two: } r_u^{2}=\mathrm{id} \iff u\alpha(u) \in Z(A), \qquad \text{self-adjoint: } (r_u)^{*}=r_u \iff \beta(u)=u,
+$$</p>
+<p>are independent: either can hold without the other.</p>
+<p><em>Proof.</em> Order two is $u\alpha(u)\in Z(A)$ and self-adjointness is $\alpha\sigma(u)=u$; these involve $u\alpha(u)$ and $\alpha\sigma(u)$ respectively, and neither condition forces the other, as the examples below show. $\square$</p>
+<p><strong>Example.</strong> For $\sigma=\mathrm{id}$ and $\alpha\neq\mathrm{id}$, self-adjointness is $\alpha(u)=u$ while order two is $u\alpha(u)\in Z(A)$; an element of even degree that is central is self-adjoint of order larger than two under $r$, and an odd element of order two in the grading satisfies order two without being self-adjoint.</p>
+<p>In particular a self-adjoint reflection need not be a genuine reflection, and a genuine reflection need not be self-adjoint; the two properties are the "graded" analogue of the fact that a symmetric operator need not be an involution.</p>
+<h2 id="failure-in-the-degenerate-case">Failure in the Degenerate Case</h2>
+<h3 id="non-injective-parameters">Non-injective parameters</h3>
+<p><strong>Proposition.</strong> For the regular bimodule $M={}_A A_A$ the parameters of a reflection are determined modulo the centre:</p>
+<p>$$
+r_u=r_v \iff v^{-1}u \in Z(A) .
+$$</p>
+<p><em>Proof.</em> $r_u=r_v$ is $u\alpha(x)u^{-1}=v\alpha(x)v^{-1}$ for all $x$, that is $w\alpha(x)=\alpha(x)w$ for all $x$ with $w=v^{-1}u$. Since $\alpha$ is onto, this is $wx=xw$ for all $x$, that is $w\in Z(A)$. $\square$</p>
+<p><strong>Theorem (the criterion in general).</strong> Without injectivity of $u \mapsto r_u$ the self-adjointness criterion is the congruence</p>
+<p>$$
+(r_u)^{*}=r_u \iff \beta(u)u^{-1} \in Z(A),
+$$</p>
+<p>where $Z(A)$ is replaced by the centraliser of $M$ in $A$ when $M$ is not faithful.</p>
+<p><em>Proof.</em> $(r_u)^{*}=r_{\beta(u)}$ and $r_{\beta(u)}=r_u$ is $\beta(u)u^{-1}$ in the centraliser, by the same computation as in the proposition with $v=u$, $w=u^{-1}\beta(u)$. $\square$</p>
+<p>So a reflection can be self-adjoint although its parameter is not $\beta$-symmetric, when the two parameters differ by a central element; the criterion $\beta(u)=u$ is the special case of an injective parameter map.</p>
+<h3 id="the-commutative-case">The commutative case</h3>
+<p><strong>Proposition.</strong> If $A$ is commutative then every reflection equals the grade involution,</p>
+<p>$$
+r_u=\alpha \quad (u \in A^{\times}),
+$$</p>
+<p>the parameter map $u \mapsto r_u$ is constant, and every reflection is self-adjoint, $(r_u)^{*}=\alpha^{*}=\alpha=r_u$.</p>
+<p><em>Proof.</em> In a commutative algebra $u$ commutes with $\alpha(x)$, so $u\alpha(x)u^{-1}=\alpha(x)$; the adjoint of $\alpha$ is $\alpha$ by the $\alpha$-invariance of the pairing. $\square$</p>
+<p>The commutative case is the extreme degeneracy: the reflections collapse to a single self-adjoint operator, and the criterion $\beta(u)=u$ is vacuous. This is why the self-adjointness statement must be formulated modulo the centraliser and not as a condition on the parameter alone.</p>
+<h3 id="the-degenerate-pairing">The degenerate pairing</h3>
+<p><strong>Proposition.</strong> If the pairing is not $\alpha$-invariant then $\alpha^{*}\neq\alpha$ and $(r_u)^{*}=\alpha^{*}S_{\sigma(u),\sigma(u)^{-1}}$, which need not be a reflection; in this case the adjoint of a reflection need not be a reflection at all.</p>
+<p><em>Proof.</em> The adjoint of a signed sandwich is $\alpha^{*}S_{\sigma(a),\sigma(b)}$ without invariance; for a reflection this is $\alpha^{*}r'$ with $r'$ the reflection by $\sigma(u)$ in the unsigned sense, and $\alpha^{*}r'$ is a reflection only when $\alpha^{*}$ is a signed sandwich, which fails when $\alpha$ is not self-adjoint. $\square$</p>
+<h2 id="unitarity-and-the-self-adjoint-reflections">Unitarity and the Self-Adjoint Reflections</h2>
+<h3 id="unitary-reflections">Unitary reflections</h3>
+<p><strong>Proposition.</strong> A reflection is unitary exactly when its parameter is a unitary element of $A$:</p>
+<p>$$
+r_u^{*}r_u=r_ur_u^{*}=\mathrm{id} \iff \sigma(u)u=u\sigma(u)=1 .
+$$</p>
+<p><em>Proof.</em> This is the unitarity criterion of <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em> with $(a,b)=(u,u^{-1})$. $\square$</p>
+<h3 id="self-adjoint-unitary-reflections">Self-adjoint unitary reflections</h3>
+<p><strong>Proposition.</strong> A reflection is simultaneously self-adjoint and unitary exactly when its parameter is unitary and $\beta$-symmetric:</p>
+<p>$$
+(r_u)^{*}=r_u \text{ and } r_u^{*}r_u=r_ur_u^{*}=\mathrm{id} \iff \sigma(u)u=u\sigma(u)=1 \text{ and } \beta(u)=u .
+$$</p>
+<p>A simultaneously self-adjoint and unitary reflection is automatically of order two, and its parameter is a $\beta$-symmetric unitary element; the unitaries of $A$ that are $\beta$-symmetric form a subgroup of the unitary group of $A$ on which the reflection map is defined, and the unitary group generated by the simultaneously self-adjoint and unitary reflections consists of their products, an even number at a time.</p>
+<p><em>Proof.</em> Combine the unitarity criterion with the self-adjointness criterion. If $r_u^{*}=r_u$ and $r_u^{*}r_u=\mathrm{id}$ then $r_u^{2}=\mathrm{id}$, so the operator is of order two. The $\beta$-symmetric unitaries are closed under multiplication because $\beta$ is an algebra automorphism and the unitary elements of $A$ form a group. $\square$</p>
+<p>The self-adjoint unitary reflections are the "graded orthogonal" operators of the bimodule: they preserve the pairing and are fixed by the involution, and their parameters are the unitary elements fixed by $\beta$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial grading.</strong> For $\alpha=\mathrm{id}$ the reflection is the inner conjugation $r_u(x)=uxu^{-1}$, $\beta=\sigma$, $(r_u)^{*}=r_{\sigma(u)}$, and $r_u$ is self-adjoint exactly when $\sigma(u)=u$: the conjugation by a symmetric unit.</p>
+<p><strong>(b) The trivial involution.</strong> For $\sigma=\mathrm{id}$ and a nontrivial grading, $(r_u)^{*}=r_{\alpha(u)}$, so a reflection is self-adjoint exactly when its parameter is even, $\alpha(u)=u$, and the self-adjoint reflections are the conjugations by even units.</p>
+<p><strong>(c) The commutative algebra.</strong> For $A$ commutative every reflection is $\alpha$; the parameter map is constant and the self-adjointness is automatic.</p>
+<p><strong>(d) The Clifford algebra.</strong> For a Clifford algebra with its canonical involution $\sigma$ and grade involution $\alpha$, the reflection $r_v$ by a unit versor $v$ has adjoint $r_{\alpha\sigma(v)}$, and it is self-adjoint exactly when $\alpha\sigma(v)=v$; the standard examples of self-adjoint reflections are the conjugations by vectors, which have $v\alpha(v)=\pm1$ central and are of order two.</p>
+<p><strong>(e) A matrix algebra.</strong> For $A=M_n(k)$ with the transpose involution $\sigma$ and a diagonal grading $\alpha$, $(r_u)^{*}=r_{\beta(u)}$ with $\beta(X)=\alpha(X^{\mathsf{T}})$; the self-adjoint reflections are those with $\alpha(u)=u^{\mathsf{T}}$, the graded-symmetric units.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded bimodule with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the reflection $r_u(x)=u\alpha(x)u^{-1}$ is the reflection $r_{\beta(u)}$ by the composite $\beta=\alpha\sigma$, so the adjoint permutes the reflections and acts on the parameters as the involution $\beta$. When the parameter map $u \mapsto r_u$ is injective, a reflection is self-adjoint exactly when $\beta(u)=u$; in general the criterion is $\beta(u)u^{-1}\in Z(A)$ — that is, $\beta(u)$ and $u$ differ by a central element — and in the commutative case all reflections collapse to the grade involution and all are self-adjoint. Self-adjointness and being an operator of order two are independent conditions, the first involving $\beta(u)=u$ and the second $u\alpha(u)$ central. A reflection is unitary exactly when its parameter is unitary, and it is simultaneously self-adjoint and unitary exactly when the parameter is unitary and $\beta$-symmetric; these are the graded isometries among the reflections. If the pairing is not $\alpha$-invariant the adjoint of a reflection need not be a reflection, the failure being governed by the adjoint of the grade involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $(A,\sigma)$</td>
+<td>base ring, involutive $R$-algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>grade involution, commuting with $\sigma$</td>
+</tr>
+<tr>
+<td>$\beta=\alpha\sigma$</td>
+<td>the composite involution</td>
+</tr>
+<tr>
+<td>$r_u=S^{\alpha}_{u,u^{-1}}$</td>
+<td>the reflection, $r_u(x)=u\alpha(x)u^{-1}$</td>
+</tr>
+<tr>
+<td>$r_u^{2}=S_{u\alpha(u),(u\alpha(u))^{-1}}$</td>
+<td>the square is a conjugation</td>
+</tr>
+<tr>
+<td>$(r_u)^{*}=r_{\beta(u)}$</td>
+<td>the adjoint of the reflection</td>
+</tr>
+<tr>
+<td>$\beta(u)=u$</td>
+<td>the $\beta$-symmetry of the parameter</td>
+</tr>
+<tr>
+<td>$\beta(u)u^{-1}\in Z(A)$</td>
+<td>the self-adjointness criterion in general</td>
+</tr>
+<tr>
+<td>$\sigma(u)u=u\sigma(u)=1$</td>
+<td>unitarity of the parameter</td>
+</tr>
+<tr>
+<td>$A^{\times}_{\beta}$</td>
+<td>the $\beta$-symmetric units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for graded algebras, involutions and reflections.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for graded involutions and their symmetric elements.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the reflections and the versor conjugation of a Clifford algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for conjugations, centralisers and the degenerate behaviour of reflection parameters.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, second edition, 2001), for the unitarity conditions and the centraliser computations over rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

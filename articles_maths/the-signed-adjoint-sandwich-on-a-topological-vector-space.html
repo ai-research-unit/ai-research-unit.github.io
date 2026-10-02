@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Topological Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-topological-vector-space"><strong>The Signed Adjoint Sandwich on a Topological Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The trace form of the category is invariant under the grade involution, $\langle\alpha(x), z\rangle = \langle x, \alpha(z)\rangle$, and that invariance computes the adjoint of every signed sandwich on a topological algebra: the adjoint of $\Theta^{\alpha}_{a,b}$ is the signed sandwich $\Theta^{\alpha}_{\alpha(b),\alpha(a)}$, obtained by applying the grade involution to both parameters and exchanging them. The adjoint of the signed left multiplication, which is the case $b = 1$, is therefore the signed right multiplication $\Theta^{\alpha}_{1,\alpha(a)}$, the unsigned case being the familiar adjointness of the left and right multiplications. The list includes a <strong>unitarity criterion:</strong> the two products of a signed sandwich with its adjoint are the unsigned inner sandwiches $\Phi_{u,u}$ and $\Phi_{w,w}$ of the parameters $u = \alpha(b)\alpha(a)$ and $w = ab$, so the sandwich is unitary exactly when those parameters are central involutions, which is the signed form of the element condition $u^{*}u = uu^{*} = 1$.</p>
+<p>This article develops the adjoint of the signed sandwich for the trace form. The signed sandwich and its composition law are <em>The Signed Sandwich on a Topological Vector Space</em>; the trace form and the adjoint of the unsigned sandwich are <em>The Adjoint of the Left Multiplication on a Topological Vector Space</em>; the module-level variant is <em>The Graded Adjoint Action on a Module over a Topological Vector Space</em>; the reflection case is <em>The Signed Adjoint of the Reflection on a Topological Vector Space</em>. The forms are Part III.</p>
+<p>Throughout, $E$ is a Hausdorff locally convex algebra over $\mathbb{K}$ with a unit and jointly continuous multiplication, $\tau$ is a continuous trace and $\langle x, y\rangle = \tau(xy)$ the trace form of the category, assumed non-degenerate, $\alpha$ is a continuous involutive algebra automorphism preserving the trace, $\Phi_{a,b}(x) = axb$ is the unsigned sandwich, $\Theta^{\alpha}_{a,b}(x) = a\alpha(x)b$ is the signed sandwich, and ${}^{\dagger}$ is the trace-adjoint. The grade invariance used throughout is</p>
+<p>$$
+\langle \alpha(x), z\rangle = \langle x, \alpha(z)\rangle ,
+$$</p>
+<p>which holds by <em>The Adjoint of the Left Multiplication on a Topological Vector Space</em> because $\alpha$ is a trace-preserving involution.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Theorem (the adjoint computation).</strong> For all $a, b \in E$ the signed sandwich has the trace-adjoint</p>
+<p>$$
+(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)} ,
+$$</p>
+<p>obtained from $\Theta^{\alpha}_{a,b}$ by applying the grade involution to both parameters and exchanging them; in particular the adjoint of a signed sandwich is again a signed sandwich, and the assignment is an involution of the signed family.</p>
+<p><strong>Proof.</strong> For $x, y \in E$, $\langle \Theta^{\alpha}_{a,b}x, y\rangle = \langle a\alpha(x)b, y\rangle = \tau(a\alpha(x)by) = \tau(\alpha(x)\,bya)$ by the cyclicity of the trace; by the grade invariance this is $\tau(x\,\alpha(bya)) = \tau(x\,\alpha(b)\alpha(y)\alpha(a)) = \langle x, \Theta^{\alpha}_{\alpha(b),\alpha(a)}y\rangle$. Uniqueness of the adjoint in the non-degenerate trace form gives the identity, and applying it twice returns $\Theta^{\alpha}_{a,b}$ because $\alpha^{2} = \mathrm{id}$.</p>
+<p><strong>Corollary (the adjoint of the signed left multiplication).</strong> The signed left multiplication $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$ has the adjoint</p>
+<p>$$
+(\Lambda^{\alpha}_{a})^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\alpha ,
+$$</p>
+<p>the signed right multiplication by $\alpha(a)$, mapping $x$ to $\alpha(x)\alpha(a)$; the adjoint of the one-sided signed operator is one-sided, with the parameter imaged by the grade involution and the side exchanged.</p>
+<p><strong>Proof.</strong> This is the theorem with $b = 1$, using $\alpha(1) = 1$ and the identification $\Theta^{\alpha}_{1,\alpha(a)}(x) = \alpha(x)\alpha(a)$.</p>
+<p><strong>Corollary (the unsigned case).</strong> When $\alpha = \mathrm{id}$ the signed sandwich is the unsigned sandwich and the adjoint computation reduces to</p>
+<p>$$
+(\Phi_{a,b})^{\dagger} = \Phi_{b,a} ,
+$$</p>
+<p>in agreement with <em>The Adjoint of the Left Multiplication on a Topological Vector Space</em>; the signed case therefore specialises to the unsigned one, and the sign enters only through the two applications of $\alpha$ to the parameters.</p>
+<p><strong>Proof.</strong> Set $\alpha = \mathrm{id}$ in the theorem.</p>
+<h2 id="the-unitarity-criterion">The Unitarity Criterion</h2>
+<p><strong>Theorem (the products with the adjoint).</strong> For all $a, b \in E$ the two products of the signed sandwich with its adjoint are the unsigned inner sandwiches</p>
+<p>$$
+(\Theta^{\alpha}_{a,b})^{\dagger}\,\Theta^{\alpha}_{a,b} = \Phi_{u,u}, \qquad
+\Theta^{\alpha}_{a,b}\,(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w} ,
+$$</p>
+<p>with the parameters</p>
+<p>$$
+u = \alpha(b)\alpha(a) , \qquad w = ab .
+$$</p>
+<p><strong>Proof.</strong> For the first, $(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b}(x) = \Theta^{\alpha}_{\alpha(b),\alpha(a)}(a\alpha(x)b) = \alpha(b)\,\alpha(a\alpha(x)b)\,\alpha(a) = \alpha(b)\alpha(a)\,x\,\alpha(b)\alpha(a) = uxu$, using $\alpha^{2} = \mathrm{id}$. The second is the same computation with the order of the two factors exchanged, or the first applied to the pair $(b,a)$ read in the reversed algebra; it gives $wxw = abxb a$ with $w = ab$.</p>
+<p><strong>Corollary (the unitarity criterion).</strong> The signed sandwich $\Theta^{\alpha}_{a,b}$ is unitary for the trace form,</p>
+<p>$$
+(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \mathrm{id} ,
+$$</p>
+<p>exactly when the parameters $u = \alpha(b)\alpha(a)$ and $w = ab$ are central involutions of $E$; equivalently, when $\Phi_{u,u} = \Phi_{w,w} = \mathrm{id}$, that is when $u, w \in Z(E)$ and $u^{2} = w^{2} = 1$. In particular a signed sandwich with $u$ a central involution and $a, b$ commuting is unitary.</p>
+<p><strong>Proof.</strong> $\Phi_{c,c} = \mathrm{id}$ means $cxc = x$ for all $x$, that is $c \in Z(E)$ and $c^{2} = 1$; applying this to the two products of the theorem gives the criterion, and the sufficient condition follows because $ab = ba$ makes $\alpha(b)\alpha(a) = \alpha(ab)$ central together with $ab$ when the latter is.</p>
+<p><strong>Corollary (the unitarity of the signed left multiplication).</strong> The signed left multiplication $\Lambda^{\alpha}_{a}$ is unitary exactly when $a$ is such that $\alpha(a)$ and $a$ are central involutions; in the unsigned case $\Lambda^{\mathrm{id}}_{a} = L_{a}$ is unitary exactly when $a$ is a central involution, the operator-theoretic form of the element condition $a^{2} = 1$, $a \in Z(E)$.</p>
+<p><strong>Proof.</strong> Apply the criterion with $b = 1$: $u = \alpha(a)$ and $w = a$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the inner sandwich of an involution).</strong> If $r$ is an involution, $\alpha = \alpha_{r}$ the inner grade involution and $\Theta^{\alpha_{r}}_{r,r^{-1}} = \mathrm{id}$ is the inner sandwich of $r$, then its adjoint is $\Theta^{\alpha_{r}}_{\alpha_{r}(r^{-1}),\alpha_{r}(r)} = \Theta^{\alpha_{r}}_{r^{-1},r}$, which is again the identity sandwich, so the inner sandwich is self-adjoint and unitary; its parameters satisfy $u = \alpha_{r}(r^{-1})\alpha_{r}(r) = r^{-1}r = 1$, a central involution, in agreement with the criterion.</p>
+<p><strong>Example (the signed sandwich of a homogeneous pair).</strong> In a graded algebra with the grade involution and $a, b$ homogeneous and invertible, the parameters are $u = \alpha(b)\alpha(a) = (-1)^{p+q}ba$ and $w = ab$; the sandwich is unitary exactly when both are central involutions, which for central $a, b$ reduces to the single sign condition $(-1)^{p+q}(ab)^{2} = 1$.</p>
+<p><strong>Example (the finite-dimensional instance).</strong> For $E = \mathrm{End}_F(V)$ with $\operatorname{tr}$ the criterion becomes that the signed sandwich is unitary exactly when $\alpha(b)\alpha(a)$ and $ab$ are central involutions of the matrix algebra, that is scalar signs; the unitary group it defines is the group of signed sandwiches with central-involution parameters.</p>
+<h2 id="summary">Summary</h2>
+<p>For the trace form of the category the grade invariance $\langle\alpha(x),z\rangle = \langle x,\alpha(z)\rangle$ computes the adjoint of the signed sandwich, $(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}$, so the adjoint of a signed sandwich is the signed sandwich with the parameters imaged by the grade involution and exchanged; the unsigned case is $(\Phi_{a,b})^{\dagger} = \Phi_{b,a}$ and the signed left multiplication has adjoint $\Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\alpha$. The products of a signed sandwich with its adjoint are the unsigned inner sandwiches $\Phi_{u,u}$ and $\Phi_{w,w}$ of $u = \alpha(b)\alpha(a)$ and $w = ab$, so the sandwich is unitary exactly when those parameters are central involutions, the signed form of $u^{*}u = uu^{*} = 1$; in particular the signed left multiplication is unitary exactly when $\alpha(a)$ and $a$ are central involutions. The inner sandwich of an involution is the basic self-adjoint unitary example. The reflection case is <em>The Signed Adjoint of the Reflection on a Topological Vector Space</em>, and the module-level variant is <em>The Graded Adjoint Action on a Module over a Topological Vector Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$, $\tau$, $\langle x,y\rangle = \tau(xy)$</td>
+<td>the algebra, the trace and the trace form</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>trace-preserving grade involution</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}(x) = a\alpha(x)b$</td>
+<td>signed sandwich</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{a,b})^{\dagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}$</td>
+<td>the adjoint</td>
+</tr>
+<tr>
+<td>$(\Lambda^{\alpha}_{a})^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\alpha$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{a,b})^{\dagger}\Theta^{\alpha}_{a,b} = \Phi_{u,u}$</td>
+<td>$u = \alpha(b)\alpha(a)$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}(\Theta^{\alpha}_{a,b})^{\dagger} = \Phi_{w,w}$</td>
+<td>$w = ab$</td>
+</tr>
+<tr>
+<td>$u, w$ central involutions</td>
+<td>the unitarity criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the involutions, the traces and the adjointable operators.</li>
+<li>Jacques Dixmier, <em>von Neumann Algebras</em> (North-Holland, 1981), for the trace forms and the unitary elements of an operator algebra.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, third edition, 2002), for the graded algebras, the grade involution and the sandwiches.</li>
+<li>Gottfried Köthe, <em>Topological Vector Spaces II</em> (Springer, 1979), for the topological algebras and their pairings.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition, 1999), for the topological algebras and the bilinear forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

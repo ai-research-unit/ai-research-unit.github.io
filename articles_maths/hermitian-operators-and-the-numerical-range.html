@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Operators and the Numerical Range — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-operators-and-the-numerical-range"><strong>Hermitian Operators and the Numerical Range</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>numerical range</strong> of a bounded operator is the set of scalars $\langle Tx,x\rangle$ taken on the unit sphere, and the <strong>numerical radius</strong> is its largest modulus. The numerical range is the smallest convex set that contains the spectrum, and it detects self-adjointness outright: $T$ is Hermitian exactly when every $\langle Tx,x\rangle$ is real. This gives a second route to the self-adjoint spectral theory, one that begins with a scalar-valued set rather than with an operator identity, and it is the route that generalises to operators that are not self-adjoint, where the numerical range remains convex but the spectrum need not be real. The two facts that organise the theory are the <strong>Toeplitz–Hausdorff theorem</strong>, which says that the numerical range is convex, and the equivalence of the numerical radius with the operator norm up to the factor $2$, which is sharp and which is the reason the numerical range controls the norm.</p>
+<p>This article fixes the numerical range, the Toeplitz–Hausdorff theorem, the numerical radius and its relation to the norm, the Hermitian operators as the operators with real numerical range, and the normal operators as those whose numerical range is the convex hull of the spectrum. The self-adjoint spectral theory is <em>Self-Adjoint Operators and the Spectral Theorem</em>; the positivity and the square root are <em>Positive Operators and the Square Root</em>; the convexity and the spectral containment use the Hilbert-space structure of <em>Hilbert Spaces</em>; the sesquilinear forms underlying the numerical range are <em>Sesquilinear Forms and the Lax–Milgram Theorem</em>.</p>
+<p>Throughout, $H$ is a complex Hilbert space with inner product linear in the first argument, $T\in B(H)$ is bounded, and the <strong>numerical range</strong> and <strong>numerical radius</strong> are</p>
+<p>$$
+W(T)=\{\langle Tx,x\rangle:\|x\|=1\},\qquad w(T)=\sup_{z\in W(T)}|z| .
+$$</p>
+<p>The closure of $W(T)$ is $\overline{W(T)}$, and the spectrum is $\sigma(T)$.</p>
+<h2 id="the-numerical-range">The Numerical Range</h2>
+<p><strong>Definition.</strong> The <strong>numerical range</strong> of $T$ is $W(T)=\{\langle Tx,x\rangle:\|x\|=1\}$ and the <strong>numerical radius</strong> is $w(T)=\sup_{z\in W(T)}|z|$.</p>
+<p><strong>Proposition (elementary properties).</strong> For $T,S\in B(H)$ and $\lambda\in\mathbb{C}$,</p>
+<p>$$
+W(T+S)\subseteq W(T)+W(S),\qquad W(\lambda T)=\lambda W(T),\qquad W(T^*)=\overline{W(T)} ,
+$$</p>
+<p>and $W(T)$ is a bounded subset of the disc of radius $\|T\|$; the numerical radius satisfies</p>
+<p>$$
+w(T)\le\|T\| .
+$$</p>
+<p><em>Proof.</em> The set statements are immediate from the linearity of the form, and $\langle T^*x,x\rangle=\overline{\langle Tx,x\rangle}$ gives the third; the bound is Cauchy–Schwarz, $|\langle Tx,x\rangle|\le\|T\|\|x\|^2=\|T\|$.</p>
+<p><strong>Proposition (the diagonal determines the form).</strong> The numerical range determines the operator through the polarisation identity: for every $x$,</p>
+<p>$$
+\langle Tx,y\rangle=\tfrac14\bigl(\langle T(x+y),x+y\rangle-\langle T(x-y),x-y\rangle+i\langle T(x+iy),x+iy\rangle-i\langle T(x-iy),x-iy\rangle\bigr),
+$$</p>
+<p>so two operators with the same sesquilinear form have the same numerical range, and conversely an operator is determined by its numerical range as a function on pairs, not merely by the set $W(T)$.</p>
+<p><em>Proof.</em> The four terms are the expansion of the sesquilinear form of $T$ at the four points, and the identity is the standard polarisation; the remaining statement is the uniqueness of the form for an operator.</p>
+<h2 id="the-toeplitzhausdorff-theorem">The Toeplitz–Hausdorff Theorem</h2>
+<p><strong>Theorem (convexity).</strong> For every $T\in B(H)$ the numerical range $W(T)$ is convex, and its closure is convex and compact.</p>
+<p><em>Proof.</em> Convexity is inherited by compression: if $P$ is the orthogonal projection onto a subspace $M$, then for $x\in M$ of norm one one has $\langle PTPx,x\rangle=\langle TPx,Px\rangle=\langle Tx,x\rangle$, so $W(PTP)\subseteq W(T)$. Given two unit vectors $x,y$, let $M$ be the span of $x$ and $y$, of dimension at most two, and let $T_2=PTP$ be the compression. The numerical range of a $2\times2$ matrix is an ellipse with foci at its eigenvalues, by the elliptical range theorem, hence convex; it contains $\langle Tx,x\rangle$ and $\langle Ty,y\rangle$, and it lies in $W(T)$ by the compression inclusion. Therefore $W(T)$ contains the segment joining any two of its points, and since the points were arbitrary it is convex.</p>
+<p><strong>Theorem (the spectrum lies in the closure).</strong> For every $T\in B(H)$,</p>
+<p>$$
+\sigma(T)\subseteq\overline{W(T)} ,
+$$</p>
+<p>and the boundary of the spectrum is contained in the boundary of the closure of the numerical range, $\partial\sigma(T)\subseteq\partial\overline{W(T)}$.</p>
+<p><em>Proof.</em> If $\lambda\notin\overline{W(T)}$ then the distance $d=\operatorname{dist}(\lambda,\overline{W(T)})$ is positive, and for $\|x\|=1$ one has $\|(\lambda I-T)x\|\ge|\langle(\lambda I-T)x,x\rangle|\ge d$, so $\lambda I-T$ is injective with closed range; the same estimate for $T^*$ shows the range is dense, so $\lambda\notin\sigma(T)$. The boundary statement is the standard improvement using the resolvent's analyticity.</p>
+<h2 id="the-numerical-radius-and-the-norm">The Numerical Radius and the Norm</h2>
+<p><strong>Theorem (equivalence of the norms).</strong> For every $T\in B(H)$,</p>
+<p>$$
+\tfrac12\|T\|\le w(T)\le\|T\| ,
+$$</p>
+<p>and the constant $\tfrac12$ is sharp: on the two-dimensional Hilbert space the shift matrix $T=\begin{pmatrix}0&2\\0&0\end{pmatrix}$ has $\|T\|=2$ and $w(T)=1$.</p>
+<p><em>Proof.</em> The upper bound is Cauchy–Schwarz. For the lower bound, the norm is recovered from the diagonal by polarisation and the identity $|\langle Tx,y\rangle|\le\frac12 w(T)(\|x\|^2+\|y\|^2)$, obtained from the two-point computation with the phase chosen so that $\langle Tx,y\rangle$ is real; optimising over $x,y$ of norm one gives $\|T\|\le2w(T)$. The claimed example has $W(T)$ the disc of radius $1$ and operator norm $2$, so the bound is attained.</p>
+<p><strong>Proposition (power inequalities).</strong> $w(T)^n\le\|T^n\|$ and $w(T^n)\le w(T)^n$, so the spectral radius is bounded by the numerical radius,</p>
+<p>$$
+r(T)\le w(T)\le\|T\| ,
+$$</p>
+<p>and the numerical radius does not exceed the norm; the lower bound on the norm is the only inequality that cannot be improved to an equality.</p>
+<p><em>Proof.</em> $\|T^n\|\ge|\langle T^nx,x\rangle|$ gives the first inequality; the second is the Cauchy–Schwarz estimate on the powers; the spectral radius bound is $\sigma(T^n)\subseteq\overline{W(T^n)}$ together with the limit formula $r(T)=\lim\|T^n\|^{1/n}$.</p>
+<h2 id="hermitian-operators">Hermitian Operators</h2>
+<p><strong>Theorem (real numerical range characterises self-adjointness).</strong> For $T\in B(H)$ the following are equivalent:</p>
+<p>(i) $T$ is Hermitian, $T^*=T$;</p>
+<p>(ii) $W(T)\subseteq\mathbb{R}$;</p>
+<p>(iii) $\langle Tx,x\rangle\in\mathbb{R}$ for every $x$.</p>
+<p><em>Proof.</em> If $T=T^*$ then $\langle Tx,x\rangle=\overline{\langle Tx,x\rangle}$ is real, giving (i) $\Rightarrow$ (iii); (iii) $\Rightarrow$ (ii) is trivial; for (ii) $\Rightarrow$ (i), the polarisation identity shows that the sesquilinear form of $T$ equals that of $T^*$, and an operator is determined by its form, so $T=T^*$.</p>
+<p><strong>Corollary.</strong> For Hermitian $T$,</p>
+<p>$$
+\|T\|=w(T)=\sup_{x\in W(T)}|x| ,
+$$</p>
+<p>and the numerical range is the interval $[m,M]$ with $m=\inf W(T)$ and $M=\sup W(T)$ equal to the infimum and supremum of the spectrum; in particular $T$ is positive exactly when $W(T)\subseteq[0,\infty)$ and $T$ is positive and invertible exactly when $W(T)\subseteq[c,\infty)$ for some $c>0$.</p>
+<p><em>Proof.</em> The equality of the norm and the numerical radius is the norm formula of the self-adjoint theory; the endpoints of the interval are the infimum and supremum of the spectrum because $\sigma(T)\subseteq\overline{W(T)}$ and the extreme spectral values are extreme values of the quadratic form; the positivity statements translate the interval.</p>
+<p><strong>Example (the sharpness of the spectral containment).</strong> For the shift matrix $\begin{pmatrix}0&2\\0&0\end{pmatrix}$ the spectrum is $\{0\}$ but the numerical range is the closed disc of radius $1$; so the spectrum may be strictly inside the numerical range, and the containment $\sigma(T)\subseteq\overline{W(T)}$ cannot be reversed. For a normal operator the two coincide, as the next section records.</p>
+<h2 id="normal-operators">Normal Operators</h2>
+<p><strong>Theorem (the numerical range of a normal operator).</strong> If $T$ is normal then</p>
+<p>$$
+W(T)=\operatorname{conv}\sigma(T) ,
+$$</p>
+<p>the closed convex hull of the spectrum; conversely, an operator whose numerical range equals the convex hull of its spectrum on every invariant subspace is normal, and in finite dimension normality is equivalent to $W(T)=\operatorname{conv}\sigma(T)$.</p>
+<p><em>Proof.</em> For normal $T$ the spectral theorem writes $T=\int\lambda\,dE(\lambda)$, whence $\langle Tx,x\rangle=\int\lambda\,d\mu_x(\lambda)$ for the measure $\mu_x=\langle E(\cdot)x,x\rangle$ of total mass $\|x\|^2=1$; the integral of the identity over a probability measure lies in the closed convex hull of the support, which is contained in the convex hull of the spectrum, giving one inclusion, and the reverse inclusion follows by concentrating $\mu_x$ near each spectral value with an appropriate choice of $x$. The converse is the standard characterisation and is quoted.</p>
+<p><strong>Corollary.</strong> Hermitian operators are normal and their numerical range is the interval of the spectrum; unitary operators are normal with spectrum on the circle, so their numerical range is the closed convex hull of the spectrum, and for a unitary with spectrum the whole circle the numerical range is the closed unit disc.</p>
+<p><em>Proof.</em> Self-adjoint and unitary operators are normal, and the convex-hull formula applies; the examples are the corresponding spectral pictures.</p>
+<p><strong>Example (matrices).</strong> For a $2\times2$ matrix the numerical range is the ellipse with foci at the eigenvalues and minor axis determined by the off-diagonal entry; for a Hermitian matrix it degenerates to the interval between the extreme eigenvalues, for a normal matrix to the segment or polygon joining the eigenvalues, and for a non-normal matrix to a region strictly containing the convex hull of the spectrum. This is the finite-dimensional picture of the sharpness of the spectral containment.</p>
+<h2 id="summary">Summary</h2>
+<p>The numerical range $W(T)=\{\langle Tx,x\rangle:\|x\|=1\}$ of a bounded operator is a bounded subset of the disc of radius $\|T\|$, its adjoint conjugates it, and it is convex: the Toeplitz–Hausdorff theorem. The spectrum is contained in its closure, and its boundary is contained in the boundary of that closure, but the containment can be strict, as the shift matrix shows. The numerical radius satisfies $\tfrac12\|T\|\le w(T)\le\|T\|$ with the constant $\tfrac12$ sharp, so the numerical range controls the norm; the spectral radius satisfies $r(T)\le w(T)$. A bounded operator is Hermitian exactly when its numerical range is real, and then its norm equals its numerical radius and its numerical range is the interval between the extreme spectral values, so positivity is the statement that the interval lies in $[0,\infty)$. A normal operator has $W(T)=\operatorname{conv}\sigma(T)$, and for Hermitian and unitary operators this is the interval of the spectrum and the convex hull of the spectral points on the circle; for a general non-normal operator the numerical range is strictly larger than the convex hull of the spectrum.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W(T)=\{\langle Tx,x\rangle:\|x\|=1\}$</td>
+<td>the numerical range</td>
+</tr>
+<tr>
+<td>$w(T)=\sup|W(T)|$</td>
+<td>the numerical radius</td>
+</tr>
+<tr>
+<td>$W(T)$ convex</td>
+<td>Toeplitz–Hausdorff theorem</td>
+</tr>
+<tr>
+<td>$\sigma(T)\subseteq\overline{W(T)}$</td>
+<td>spectral containment</td>
+</tr>
+<tr>
+<td>$\tfrac12\|T\|\le w(T)\le\|T\|$</td>
+<td>norm equivalence, $\tfrac12$ sharp</td>
+</tr>
+<tr>
+<td>$r(T)\le w(T)$</td>
+<td>spectral radius bound</td>
+</tr>
+<tr>
+<td>$W(T)\subseteq\mathbb{R}$</td>
+<td>characterises Hermitian operators</td>
+</tr>
+<tr>
+<td>$\|T\|=w(T)$</td>
+<td>self-adjoint norm formula</td>
+</tr>
+<tr>
+<td>$W(T)=[m,M]$</td>
+<td>numerical range of a Hermitian operator</td>
+</tr>
+<tr>
+<td>$W(T)=\operatorname{conv}\sigma(T)$</td>
+<td>normal operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Otto Toeplitz, "Das algebraische Analogon zu einem Satze von Fejér", <em>Mathematische Zeitschrift</em> <strong>2</strong> (1918), 187–197, for the convexity of the numerical range.</li>
+<li>Felix Hausdorff, "Der Wertvorrat einer Bilinearform", <em>Mathematische Zeitschrift</em> <strong>3</strong> (1919), 314–316, for the convexity theorem in its general form.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the numerical range, its convexity and its elementary examples.</li>
+<li>Karl E. Gustafson and Duggirala K. M. Rao, <em>Numerical Range: The Field of Values of Linear Operators and Matrices</em> (Springer, 1997), for the systematic theory and the sharp constant of the norm equivalence.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the numerical range of matrices and the elliptical range theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

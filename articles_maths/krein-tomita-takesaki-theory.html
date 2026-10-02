@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krein–Tomita–Takesaki Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="kreintomitatakesaki-theory"><strong>Krein–Tomita–Takesaki Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Tomita–Takesaki theorem has three statements. The <strong>modular group</strong>: the family $\sigma_t = \mathrm{Ad}\,\Delta^{it}$ is a one-parameter group of automorphisms of the von Neumann algebra, and it is the only group satisfying the KMS condition for the state defined by the vector. The <strong>modular conjugation</strong>: the map $x\mapsto \jmath x^{*}\jmath$ carries the algebra to its commutant, $\jmath\mathcal{M}\jmath = \mathcal{M}'$, and it reverses the modular operator, $\jmath\Delta\jmath = \Delta^{-1}$. The <strong>flow</strong>: the two together give the "standard form" in which the algebra, its commutant and the vector interact, and the KMS condition picks out the modular group among all groups of automorphisms. The theory is the deepest structural result about von Neumann algebras, and it is the source of the modular theory of states.</p>
+<p><strong>Krein–Tomita–Takesaki theory</strong> is the same three statements for a <strong>Krein–von Neumann algebra</strong> with a modular vector and a self-dual cone. The statements survive; what changes is that the objects carry the fundamental symmetry. The modular group is a group of $J$-automorphisms, the modular conjugation is $J$-unitary, the states whose modular group it is are <strong>$J$-positive</strong> rather than positive, and the KMS condition is taken only on the part of the algebra on which the $J$-positivity is defined. This article states the theorem, the modular group and the modular flow, the $J$-modular automorphism group and the $J$-KMS condition.</p>
+<p>The modular data itself — the Tomita operator, the $J$-modular operator and the $J$-modular conjugation — is <em>The Indefinite Modular Operator</em>; the algebra and its operator theory are <em>Krein–von Neumann Algebras</em> and <em>J-Self-Adjoint and J-Unitary Operators</em>; the indefinite representation theory is <em>The Indefinite GNS Construction</em> and <em>Krein Algebras</em>; the definite case is <em>The Modular Operator and Tomita-Takesaki Theory</em> and <em>The Modular Group and the KMS Condition</em>. Those are cited. The Krein space is $K$, the algebra $\mathcal{M}$, the fundamental symmetry $J$, the $J$-modular operator $\Delta$ and the $J$-modular conjugation $\jmath$.</p>
+<h2 id="the-modular-group-of-a-kreinvon-neumann-algebra">The Modular Group of a Krein–von Neumann Algebra</h2>
+<p><strong>Definition.</strong> Let $\mathcal{M}$ be a Krein–von Neumann algebra on $K$ with a modular vector $\xi$, $J$-modular operator $\Delta$ and $J$-modular conjugation $\jmath$, in the sense of <em>The Indefinite Modular Operator</em>. The <strong>$J$-modular automorphism group</strong> is</p>
+<p>$$
+\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it} .
+$$</p>
+<p><strong>Theorem ($J$-modular group).</strong> $\sigma$ is a one-parameter group of $J$-automorphisms of $\mathcal{M}$: each $\sigma_t$ is an algebra automorphism of $\mathcal{M}$, is compatible with the indefinite adjoint, $\sigma_t(x^{\dagger}) = \sigma_t(x)^{\dagger}$, and fixes the fundamental symmetry, $\sigma_t(J) = J$; the family is strongly continuous in the definite topology of $J$.</p>
+<p><strong>Proof.</strong> $\Delta^{it}$ is a strongly continuous group of definite-unitary operators commuting with $J$; a $J$-commuting definite-unitary $U$ gives the automorphism $x\mapsto UxU^{-1} = UxU^{\dagger}$ because $U^{\dagger} = U^{-1}$, hence compatible with the indefinite adjoint; the fixedness of $J$ is the commutation.</p>
+<p><strong>Proposition (the group leaves the algebra and its commutant invariant).</strong> $\sigma_t(\mathcal{M}) = \mathcal{M}$ for every $t$, and the same holds for $\mathcal{M}^{c}$.</p>
+<p><strong>Proof.</strong> The first statement is the theorem; the commutant is carried to itself because a unitary implementing an automorphism of $\mathcal{M}$ commutes with $\mathcal{M}^{c}$.</p>
+<p><strong>Proposition (the modular flow).</strong> The map $t\mapsto\sigma_t$ is the <strong>modular flow</strong>: it is the modular group of <em>The Indefinite Modular Operator</em>, it preserves the form-based structure of $\mathcal{M}$ through its compatibility with $\dagger$, and its generator, when it exists, is the derivation $x\mapsto i[\log\Delta, x]$.</p>
+<p><strong>Proof.</strong> The content is the theorem; the generator is the derivative at the origin of a strongly continuous one-parameter group of the definite form.</p>
+<h2 id="the-modular-conjugation-and-the-commutant">The Modular Conjugation and the Commutant</h2>
+<p><strong>Theorem (conjugation maps the algebra to its commutant).</strong> With the notation above,</p>
+<p>$$
+\jmath\,\mathcal{M}\,\jmath = \mathcal{M}^{c}, \qquad \jmath\,\Delta\,\jmath = \Delta^{-1}, \qquad \jmath\,J\,\jmath = J .
+$$</p>
+<p>So the $J$-modular conjugation is an anti-isomorphism of the algebra onto its commutant, it inverts the $J$-modular operator, and it commutes with the fundamental symmetry.</p>
+<p><strong>Proof.</strong> The first identity is the classical conjugation theorem transported by $J$: since the polar decomposition of $\bar S$ is $\jmath\Delta^{1/2}$ and $S$ is defined by the involution, the map $x\mapsto\jmath x\jmath$ reverses products and carries $\mathcal{M}$ to the operators commuting with $\mathcal{M}$; the second identity follows from $S^{2} = \mathrm{id}$ on the dense domain and the uniqueness of the polar decomposition; the third is the $J$-commutation of $\jmath$ established in <em>The Indefinite Modular Operator</em>.</p>
+<p><strong>Corollary (the standard form).</strong> In the triple $(\mathcal{M}, K, \xi)$ the algebra acts on $K$, the commutant is its $J$-modular image, and the vector is $J$-cyclic for both; this is the indefinite <strong>standard form</strong> of the algebra.</p>
+<p><strong>Proof.</strong> Cyclicity for $\mathcal{M}$ and for $\mathcal{M}^{c}$ is the modular hypothesis, and the image statement is the theorem.</p>
+<p><strong>Remark (the asymmetry introduced by $J$).</strong> In the definite case the modular conjugation is determined by the algebra and the vector. In the indefinite case the conjugation is $J$-unitary and commutes with $J$, so it is an anti-isomorphism of the pair $(\mathcal{M},J)$ onto the pair $(\mathcal{M}^{c},J)$: the modular theory of a Krein–von Neumann algebra is the modular theory of the pair, not of the algebra alone, and two algebras differing only in the choice of $J$ have different modular data.</p>
+<h2 id="the-math78-kms-condition">The $J$-KMS Condition</h2>
+<p><strong>Definition.</strong> Let $\omega$ be a $J$-positive linear functional on $\mathcal{M}$ and $\sigma$ a strongly continuous group of $J$-automorphisms. The functional is <strong>$J$-KMS at $\beta\in\mathbb{R}$</strong> with respect to $\sigma$ when for every $x, y\in\mathcal{M}$ there is a function $F$ bounded and continuous on the closed strip $\{z : 0\leq\mathrm{Im}\,z\leq\beta\}$ and holomorphic in its interior with</p>
+<p>$$
+F(t) = \omega\big(x\,\sigma_t(y)\big), \qquad F(t+i\beta) = \omega\big(\sigma_t(y)\,x\big)
+$$</p>
+<p>for all real $t$.</p>
+<p><strong>Theorem ($J$-KMS characterisation).</strong> For a $J$-positive faithful weight $\omega$ with $J$-modular group $\sigma$, the functional $\omega$ is $J$-KMS at $\beta$ with respect to $\sigma$; conversely, a strongly continuous group of $J$-automorphisms of $\mathcal{M}$ satisfying the $J$-KMS condition for $\omega$ coincides with the $J$-modular group of $\omega$.</p>
+<p><strong>Proof.</strong> The direct statement is the classical KMS computation for $\omega(x) = [\pi(x)\xi,\xi]$, read with the indefinite adjoint: the analytic continuation of $t\mapsto[\pi(x\sigma_t(y))\xi,\xi]$ to the strip is the content of the modular relation, and $J$-positivity replaces positivity so that the boundary values used are the $J$-positive ones. The converse is the uniqueness of the modular group, which is the second half of the classical theorem and is transported by $J$ as in the proof of the $J$-modular group.</p>
+<p><strong>Proposition (the definite case).</strong> For $J = \mathrm{id}$ the $J$-KMS condition is the KMS condition of <em>The Modular Group and the KMS Condition</em>, the theorem is the Tomita–Takesaki theorem of <em>The Modular Operator and Tomita-Takesaki Theory</em>, and the modular conjugation is the classical conjugation with $\jmath\mathcal{M}\jmath = \mathcal{M}'$.</p>
+<p><strong>Proof.</strong> Every statement reduces to its classical form at $J = \mathrm{id}$.</p>
+<p><strong>Remark (the role of $J$-positivity).</strong> The KMS condition uses the functional and its positivity to obtain the analytic continuation. In the indefinite case the functional is only $J$-positive, so the condition is imposed on the $J$-positive part of the algebra and the fundamental symmetry is the parameter that decides which part that is. The $J$-KMS condition is therefore not a weakening of the KMS condition but a version of it indexed by $J$: the flow and the states that describe it are the modular data of the pair $(\mathcal{M},J)$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-abelian-algebra">The Abelian Algebra</h3>
+<p>Let $K = L^{2}$-type Hilbert space of <em>The Modular Operator and Tomita-Takesaki Theory</em> with $\mathcal{M}$ its algebra of multiplications and $J = \mathrm{id}$: the modular group is the one of the classical theory and the $J$-KMS condition is the KMS condition.</p>
+<h3 id="a-pontryagin-algebra">A Pontryagin Algebra</h3>
+<p>Let $K = \mathbb{C}^{1,1}$ with $\mathcal{M}$ the diagonal matrices, $J = \mathrm{diag}(1,-1)$ and $\xi = e_1+e_2$. The $J$-modular operator is the identity, the $J$-modular group is trivial, and the $J$-modular conjugation is the antilinear coordinate exchange, which carries $\mathcal{M}$ to $\mathcal{M}^{c} = \mathcal{M}$ and commutes with $J$; the $J$-KMS condition is satisfied by every $J$-positive functional at every $\beta$, since the flow is trivial.</p>
+<h3 id="the-definite-case">The Definite Case</h3>
+<p>At $J = \mathrm{id}$ every statement above is the corresponding statement of <em>The Modular Operator and Tomita-Takesaki Theory</em> and <em>The Modular Group and the KMS Condition</em>, so the theory is a strict extension of the classical one.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Krein–Tomita–Takesaki theory</strong> is the Tomita–Takesaki theorem for a <strong>Krein–von Neumann algebra</strong> with a modular vector and a self-dual cone. The <strong>$J$-modular automorphism group</strong> $\sigma_t = \mathrm{Ad}\,\Delta^{it}$ is a strongly continuous one-parameter group of $J$-automorphisms of the algebra: each $\sigma_t$ is an algebra automorphism compatible with the indefinite adjoint and fixing $J$, and it is the <strong>modular flow</strong>. The <strong>$J$-modular conjugation</strong> satisfies $\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$, $\jmath\Delta\jmath = \Delta^{-1}$ and $\jmath J\jmath = J$, so it is an anti-isomorphism of the pair $(\mathcal{M},J)$ onto $(\mathcal{M}^{c},J)$ and the standard form is a form of the pair and not of the algebra alone. The <strong>$J$-KMS condition</strong> is the analytic continuation condition $\omega(x\sigma_t(y))\rightsquigarrow\omega(\sigma_t(y)x)$ across the strip, imposed on the $J$-positive functionals and characterising the modular group among the groups of $J$-automorphisms, and it reduces to the classical KMS condition at $J = \mathrm{id}$. The modular data is built in <em>The Indefinite Modular Operator</em>, the algebra is <em>Krein–von Neumann Algebras</em>, and the definite case is <em>The Modular Operator and Tomita-Takesaki Theory</em> with <em>The Modular Group and the KMS Condition</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta$, $\jmath$</td>
+<td>$J$-modular operator and $J$-modular conjugation</td>
+</tr>
+<tr>
+<td>$\sigma_t = \mathrm{Ad}\,\Delta^{it}$</td>
+<td>$J$-modular automorphism group, the modular flow</td>
+</tr>
+<tr>
+<td>$\sigma_t(x^{\dagger}) = \sigma_t(x)^{\dagger}$, $\sigma_t(J) = J$</td>
+<td>$J$-automorphism property</td>
+</tr>
+<tr>
+<td>$\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$, $\jmath\Delta\jmath = \Delta^{-1}$</td>
+<td>Conjugation to the commutant</td>
+</tr>
+<tr>
+<td>$\jmath J\jmath = J$</td>
+<td>The conjugation is $J$-unitary</td>
+</tr>
+<tr>
+<td>$\omega$ $J$-positive</td>
+<td>The functionals on which the flow is defined</td>
+</tr>
+<tr>
+<td>$J$-KMS at $\beta$</td>
+<td>Analytic continuation across the strip</td>
+</tr>
+<tr>
+<td>$J = \mathrm{id}$</td>
+<td>The classical Tomita–Takesaki theory</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular theory in its original form.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the KMS condition and the modular group.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular conjugation and the standard form.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 78 (Springer, 1974), for the self-dual cones on which the indefinite theory rests.</li>
+<li>Konrad Schmüdgen, <em>Unbounded Operator Algebras and Representation Theory</em> (Akademie-Verlag, 1990), for the indefinite adjoint and the modular objects attached to it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

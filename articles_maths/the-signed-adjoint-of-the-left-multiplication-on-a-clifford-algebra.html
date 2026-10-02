@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-a-clifford-algebra"><strong>The Signed Adjoint of the Left Multiplication on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication of <em>The Signed Left Multiplication on a Clifford Algebra</em> is the operator</p>
+<p>$$
+\mathrm{L}^{\alpha}_a = L_a\circ\alpha , \qquad \mathrm{L}^{\alpha}_a(y)=a\,\alpha(y) ,
+$$</p>
+<p>the twist being on the argument; it agrees with $L_a$ on the even part of the algebra and equals $-L_a$ there where the argument is odd, and it satisfies the composition law $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$, whose composite is an ordinary left multiplication. The article computes the adjoint of $\mathrm{L}^{\alpha}_a$ for the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$. The answer is that the adjoint <strong>stays inside the signed family</strong>,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} ,
+$$</p>
+<p>the parameter replaced by its grade-twisted Clifford conjugate; the involution of parameters is therefore $a\mapsto\alpha(\hat a)$, the self-adjoint members are those with $\alpha(\hat a)=a$, and the isometric members satisfy the same condition $\hat aa=1$ as for the ordinary left multiplication — the signed and the ordinary left multiplication are isometric simultaneously. For the <strong>twisted form</strong> the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by the Clifford conjugation alone.</p>
+<p><strong>The boundaries.</strong> The signed left multiplication, its composition law and the disambiguation of the two twists are <em>The Signed Left Multiplication on a Clifford Algebra</em>; the ordinary adjoints $L_a^*=L_{\hat a}$ and the Clifford conjugation $\hat x=\alpha(\tilde x)$ are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em> and <em>The Twisted Adjoint on a Clifford Algebra</em>; the twisted form and the identity $(A^{*\alpha})=\alpha A^*\alpha$ are the latter; the signed sandwich, of which $\mathrm{L}^{\alpha}_a$ is the left factor, is <em>The Signed Sandwich on a Clifford Algebra</em> and <em>The Signed Adjoint Sandwich on a Clifford Algebra</em>. The parameter-twisted family $\Lambda^{\alpha}_x(y)=\alpha(x)y$ of <em>The Graded Multiplication Operators</em> is a different operator and is not treated. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form with $q(u)=B(u,u)$ and $uv+vu=2B(u,v)$.</p>
+<h2 id="the-adjoint-and-its-involution">The Adjoint and Its Involution</h2>
+<p><strong>Theorem.</strong> For the standard form the adjoint of the signed left multiplication is the signed left multiplication by the twisted conjugate,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\alpha\,L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} .
+$$</p>
+<p>The map $a\mapsto\alpha(\hat a)$ is an anti-automorphism and an involution of the algebra, it is the composite $\alpha\circ\hat{}$ of the grade involution with the Clifford conjugation, on a vector it acts by $\alpha(\hat u)=\alpha(-u)=u$, and the adjoint correspondence is an involution of the signed family.</p>
+<p><strong>Proof.</strong> By definition $\mathrm{L}^{\alpha}_a=L_a\alpha$, so $(\mathrm{L}^{\alpha}_a)^*=\alpha^*L_a^*=\alpha L_{\hat a}$, using the adjoints $L_a^*=L_{\hat a}$ and $\alpha^*=\alpha$ of <em>The Twisted Adjoint on a Clifford Algebra</em>. Now $\alpha L_{\hat a}(y)=\alpha(\hat ay)=\alpha(\hat a)\alpha(y)$, so $\alpha L_{\hat a}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$. The statements about $a\mapsto\alpha(\hat a)$ are those of the two anti-involutions: $\widehat{\alpha(ab)}=\widehat{\alpha(a)\alpha(b)}=\alpha(b)\alpha(a)=\alpha(\hat b)\alpha(\hat a)$, and $\alpha(\hat{\alpha(\hat a)})=\alpha(\alpha(\hat a))=\hat a$. On a vector, $\hat u=-u$ and $\alpha(-u)=u$.</p>
+<p><strong>Corollary.</strong> The adjoint of the ordinary left multiplication is ordinary, $L_a^*=L_{\hat a}$, while the adjoint of the signed left multiplication is signed; the two families are each stable under the adjoint correspondence, and the involutions of the parameters are $\hat{}$ and $\alpha(\hat{})$ respectively.</p>
+<h2 id="self-adjoint-operators-and-isometries">Self-Adjoint Operators and Isometries</h2>
+<p><strong>Proposition (self-adjointness).</strong> The signed left multiplication $\mathrm{L}^{\alpha}_a$ is self-adjoint exactly when $\alpha(\hat a)=a$. The elements with $\alpha(\hat a)=a$ form a subspace of the algebra, they include the scalars and the unit, and a vector $u$ satisfies the condition because $\alpha(\hat u)=u$: <strong>the signed left multiplication by a vector is always self-adjoint</strong>, in contrast with the skew-adjointness $L_u^*=-L_u$ of the ordinary left multiplication.</p>
+<p><strong>Proof.</strong> $\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$, and the signed left multiplications are faithful, so self-adjointness is $\alpha(\hat a)=a$; the fixed set of an involution is a subspace; the vector case is the computation $\alpha(\hat u)=\alpha(-u)=u$ above.</p>
+<p><strong>Proposition (isometry).</strong> The signed left multiplication is an isometry of the standard form,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}\mathrm{L}^{\alpha}_a=\operatorname{id} ,
+$$</p>
+<p>if and only if $\hat aa=1$; the condition is the same as the orthogonality condition of the ordinary left multiplication $L_a$, so the signed and the ordinary multiplication by $a$ are isometric simultaneously, and the isometric elements form a subgroup of the units containing $\pm1$ and closed under $a\mapsto\hat a$.</p>
+<p><strong>Proof.</strong> Using the adjoint and the composition law of the signed family,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}\mathrm{L}^{\alpha}_a
+=\mathrm{L}^{\alpha}_{\alpha(\hat a)}\mathrm{L}^{\alpha}_a
+=L_{\alpha(\hat a)\alpha(a)}=L_{\alpha(\hat a\,a)} ,
+$$</p>
+<p>which equals the identity exactly when $\alpha(\hat aa)=1$, that is $\hat aa=1$; the group statements are those of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>.</p>
+<p><strong>Remark (the two conditions are different).</strong> Self-adjointness is $\alpha(\hat a)=a$ and isometry is $\hat aa=1$; neither implies the other, and they coincide only for the elements with $a^{2}=1$ and $\hat a=a$. The parity of $a$ does not decide either condition; the involution $\alpha(\hat{})$ decides self-adjointness and the conjugation $\hat{}$ decides isometry.</p>
+<h2 id="the-twisted-form-and-the-second-adjoint">The Twisted Form and the Second Adjoint</h2>
+<p><strong>Definition.</strong> The <strong>twisted form</strong> is $\langle x,y\rangle_\alpha=\langle\alpha(x),y\rangle$, and the <strong>twisted adjoint</strong> $A^{*\alpha}$ is the adjoint for it; the identity $A^{*\alpha}=\alpha A^*\alpha$ holds by <em>The Twisted Adjoint on a Clifford Algebra</em>.</p>
+<p><strong>Proposition.</strong> For the twisted form the adjoint of the signed left multiplication is the signed left multiplication by the Clifford conjugate,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*\alpha}=\alpha\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}\alpha
+=\alpha\bigl(\alpha L_{\hat a}\bigr)\alpha=L_{\hat a}\alpha=\mathrm{L}^{\alpha}_{\hat a} ,
+$$</p>
+<p>so for the twisted form the parameter involution is the Clifford conjugation $\hat{}$ alone, and the twisted adjoint of the signed family is the signed family with the parameter conjugated. In particular the twisted self-adjointness of $\mathrm{L}^{\alpha}_a$ is $\hat a=a$, and its twisted isometry is again $\hat aa=1$.</p>
+<p><strong>Proof.</strong> Substitute the standard adjoint and cancel the two grade involutions, $\alpha\gamma=\gamma\alpha$ for $\gamma=\alpha$; the composition $L_{\hat a}\alpha=\mathrm{L}^{\alpha}_{\hat a}$ is the definition of the signed family; the conditions are read off as before.</p>
+<p><strong>Remark (the meaning of the two displays).</strong> The standard form pairs the signed family with the twisted conjugate and the twisted form with the conjugate; the difference is exactly the twist which defines the form, and it is the operator-level form of the statement that the grading is the twist of the category. In the notation of the graded-algebra article of the category, the same computation reads $(\Sigma^{\alpha}_{a,b})^{*}=\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ with the right factor absent.</p>
+<h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
+<p><strong>Proposition.</strong> The signed sandwich factors as $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_a\,R_b$, and the adjoint of the factor is a factor of the adjoint,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}R_b^{*} = \mathrm{L}^{\alpha}_{\alpha(\hat a)}R_{\hat b} ,
+$$</p>
+<p>which is the decomposition of the signed-sandwich adjoint $\Sigma^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ into its two factors; in particular the self-adjointness of the left factor is the special case $\alpha(\hat a)=a$ of the left parameter of a self-adjoint sandwich.</p>
+<p><strong>Proof.</strong> The sandwich is the composite of the signed left multiplication with the ordinary right multiplication, and the adjoint of a composite is the composite of the adjoints in the reverse order; the right multiplications commute with the left ones, so the product of the two adjoints is the signed sandwich with the two parameters as displayed, matching <em>The Signed Adjoint Sandwich on a Clifford Algebra</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="a-vector">A Vector</h3>
+<p>For a vector $u$ the twisted conjugate is $\alpha(\hat u)=u$, so $(\mathrm{L}^{\alpha}_u)^{*}=\mathrm{L}^{\alpha}_u$: the signed left multiplication by a vector is <strong>self-adjoint</strong>. It is an isometry exactly when $\hat uu=-u^2=-q(u)=1$, that is $q(u)=-1$; in the negative-definite normalisation every unit vector gives a self-adjoint isometry.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $\mathrm{Cl}\cong\mathbb{H}$ with $e_1^2=e_2^2=-1$ and the quaternionic conjugation $\hat x=\bar x$, the twisted conjugate of a pure quaternion $a$ is $\alpha(\hat a)=\alpha(\bar a)=-\bar a=-a^{-1}$, so $(\mathrm{L}^{\alpha}_a)^{*}=\mathrm{L}^{\alpha}_{-a^{-1}}$; a pure unit quaternion has $a^{-1}=-a$, hence $\alpha(\hat a)=a$ and $\mathrm{L}^{\alpha}_a$ is self-adjoint.</p>
+<h3 id="an-even-element">An Even Element</h3>
+<p>For an even element $a$ one has $\alpha(a)=a$ and $\alpha(\hat a)=\hat a$, so the standard adjoint of $\mathrm{L}^{\alpha}_a$ is $\mathrm{L}^{\alpha}_{\hat a}$ and self-adjointness is $\hat a=a$; for $a=e_1e_2$ in the negative-definite plane, $\hat a=-e_1e_2=-a$ and the signed left multiplication is not self-adjoint, while it is an isometry exactly when $\hat aa=-a^2=1$.</p>
+<h2 id="summary">Summary</h2>
+<p>For the standard form the <strong>adjoint of the signed left multiplication</strong> is the signed left multiplication by the twisted conjugate,</p>
+<p>$$
+\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)} , \qquad \hat a=\alpha(\tilde a) ,
+$$</p>
+<p>so the adjoint stays inside the signed family and its parameter involution is $a\mapsto\alpha(\hat a)$. The operator is <strong>self-adjoint</strong> exactly when $\alpha(\hat a)=a$ — a condition met by every vector — and it is an <strong>isometry</strong> exactly when $\hat aa=1$, the same condition as for the ordinary left multiplication $L_a$, so signedness does not change the orthogonal elements. For the <strong>twisted form</strong> the adjoint is $\mathrm{L}^{\alpha}_{\hat a}$, the parameter conjugated by $\hat{}$, the two twists of the form and of the operator cancelling; and the factorisation $\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$ makes the adjoint of the signed sandwich the product of the adjoints of its factors, matching <em>The Signed Adjoint Sandwich on a Clifford Algebra</em>. The ordinary adjoint is <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>, the disambiguation of the twists is <em>The Signed Left Multiplication on a Clifford Algebra</em>, and the module-level story is <em>The Graded Adjoint Action on a Module over a Clifford Algebra</em>, the last entry of the group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a=L_a\alpha$, $\mathrm{L}^{\alpha}_a(y)=a\alpha(y)$</td>
+<td>Signed left multiplication; argument twist</td>
+</tr>
+<tr>
+<td>$\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$</td>
+<td>Composition law</td>
+</tr>
+<tr>
+<td>$\hat a=\alpha(\tilde a)$</td>
+<td>Clifford conjugation</td>
+</tr>
+<tr>
+<td>$a\mapsto\alpha(\hat a)$</td>
+<td>Twisted conjugate; parameter involution of the adjoint</td>
+</tr>
+<tr>
+<td>$\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*}=\mathrm{L}^{\alpha}_{\alpha(\hat a)}$</td>
+<td>Standard adjoint</td>
+</tr>
+<tr>
+<td>$\alpha(\hat a)=a$</td>
+<td>Self-adjointness; automatic for a vector</td>
+</tr>
+<tr>
+<td>$\hat aa=1$</td>
+<td>Isometry; shared with the ordinary left multiplication</td>
+</tr>
+<tr>
+<td>$\bigl(\mathrm{L}^{\alpha}_a\bigr)^{*\alpha}=\mathrm{L}^{\alpha}_{\hat a}$</td>
+<td>Twisted-form adjoint</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}=\mathrm{L}^{\alpha}_aR_b$</td>
+<td>Signed sandwich; factorisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the signed multiplications, the conjugations and their adjoints in the low-dimensional cases.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the twisted conjugation and the groups defined by the isometry conditions.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the signed Clifford multiplication and its self-adjointness up to sign.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the graded structure of the Clifford algebra and the two conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

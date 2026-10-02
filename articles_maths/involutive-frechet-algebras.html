@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Fréchet Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-frechet-algebras"><strong>Involutive Fréchet Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>Fréchet algebra</strong> is a complete metrisable locally convex topological algebra, and an <strong>involutive Fréchet algebra</strong> is one with a continuous involution. It is the natural home of the algebras of smooth and holomorphic functions, which are not Banach algebras in any natural norm but are complete for a countable sequence of seminorms, and it is the projective limit of the Banach $*$-algebras its seminorm quotients. The involution of a Fréchet algebra is required to be continuous for the Fréchet topology, and the spectral theory extends from the Banach case with one change of language: the spectrum of an element is defined by invertibility as before, and the involution moves it by conjugation, but the norm no longer bounds the spectrum, and the place of the norm is taken by the family of seminorms. This article develops the involutive Fréchet algebras, the continuity of the involution, the projective limit description and the spectral theory.</p>
+<p>The article assumes the Fréchet algebra, the sequence of seminorms, the projective limit and the spectrum from <em>Locally Convex and Fréchet Algebras</em>, which owns the topological algebra and the spectral theory of a Fréchet algebra; the topological algebra, the submultiplicative norm and the Banach algebras from <em>Topological Algebras and Banach Algebras</em>; the involutive Banach algebra, the $\mathrm{C}^*$-identity and the Hermitian elements from <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em> and <em>Hermitian and Self-Adjoint Elements of a Banach Algebra</em>; the continuous involution and the fixed and skew parts from <em>Involutive Topological Linear Algebras</em>; and the abstract involution from <em>Involutive Linear Algebras</em>. The grade involution $\alpha$ of the signed block is not used.</p>
+<p>Throughout, $A$ is a unital commutative-compatible associative Fréchet algebra over $\mathbb{C}$ with a countable increasing family of submultiplicative seminorms $(p_n)_{n\geq0}$ defining the topology, $p_0 \leq p_1 \leq \cdots$, and with a <strong>continuous involution</strong> $a \mapsto a^*$; $A_n = A/\ker p_n$ is the Banach algebra completion of the quotient and $A \cong \varprojlim_n A_n$; $\sigma(a)$ is the spectrum, the complement of the set of $\lambda$ for which $a - \lambda$ is invertible; $A^+ = \{a : a^* = a\}$ is the Hermitian part; and an <strong>A*-algebra</strong> is an involutive Fréchet algebra in which the Hermitian elements are real and span the algebra.</p>
+<h2 id="the-involution-and-the-seminorms">The Involution and the Seminorms</h2>
+<p><strong>Definition.</strong> An <strong>involutive Fréchet algebra</strong> is a Fréchet algebra $A$ with an involution $a \mapsto a^*$, $(ab)^* = b^*a^*$, $(\lambda a)^* = \bar\lambda a^*$, $a^{**} = a$, that is <strong>continuous</strong> for the Fréchet topology. A morphism is a continuous unital $*$-homomorphism.</p>
+<p><strong>Proposition (continuity of the involution and the seminorms).</strong> The involution of an involutive Fréchet algebra is continuous if and only if for every $n$</p>
+<p>$$
+p_n(a^*) \leq C_n\,p_m(a) \qquad (a \in A)
+$$</p>
+<p>for some $m = m(n)$ and some constant $C_n$. In that case the involution is a homeomorphism, it is an isomorphism of the topological algebra onto its topological opposite, and it descends to each quotient $A_n$ and to the limit.</p>
+<p><strong>Proof.</strong> The continuity of a linear map of a Fréchet space is the existence, for every continuous seminorm $p_n$, of a continuous seminorm $p_m$ and a constant $C_n$ with $p_n(\sigma(a)) \leq C_n p_m(a)$; the seminorms $p_m$ generate the topology, giving the criterion. An involutive homeomorphism is its own inverse, and the conjugate-linear anti-automorphism descends to the quotient because the kernel of $p_n$ is stable under $\sigma$ when $p_n$ is $\sigma$-subordinate to a $p_m$ for the reverse inequality also holds by symmetry. $\square$</p>
+<p><strong>Example (a discontinuous involution).</strong> Let $A = C^\infty(\mathbb{R})$ and let $\varphi : C^\infty(\mathbb{R}) \to C^\infty(\mathbb{R})$ be a discontinuous derivation composed with the identity; the map $f \mapsto \overline{f} + \varphi(f)$ is a linear involution that is not continuous for the Fréchet topology. The example shows that continuity is a genuine hypothesis and not a consequence of the algebra structure.</p>
+<h2 id="the-frechet-algebras-as-projective-limits">The Fréchet *-Algebras as Projective Limits</h2>
+<p><strong>Theorem (the projective limit description).</strong> Let $A$ be an involutive Fréchet algebra. Then each quotient $A_n = A/\ker p_n$ is a normed (and, completed, Banach) $*$-algebra, and</p>
+<p>$$
+A \;\cong\; \varprojlim_n A_n
+$$</p>
+<p>is the projective limit of the Banach $*$-algebras $A_n$ along the continuous unital $*$-homomorphisms $A_{n} \to A_{m}$ for $m \leq n$. Conversely the projective limit of a countable system of Banach $*$-algebras with continuous connecting $*$-homomorphisms is an involutive Fréchet algebra.</p>
+<p><strong>Proof.</strong> The kernel $\ker p_n$ is a closed two-sided ideal stable under the involution, so the quotient is a normed $*$-algebra and its completion a Banach $*$-algebra; the quotients are linked by the natural maps and the algebra is their projective limit by the standard description of a Fréchet space as the limit of its seminorm quotients. The converse is the standard construction of a Fréchet topology from a countable projective system of Banach spaces, with the involution defined componentwise. $\square$</p>
+<p><strong>Theorem (the m-convex case and the spectrum).</strong> If the seminorms $p_n$ are submultiplicative and the algebra is <strong>m-convex</strong>, then $A$ is a projective limit of Banach algebras and the spectrum of an element is the set of $\lambda$ with $a - \lambda$ non-invertible; for each $n$ the spectrum of the image $\pi_n(a)$ in $A_n$ contains $\sigma(a)$, and</p>
+<p>$$
+\sigma(a) = \bigcup_n \sigma_{A_n}\bigl(\pi_n(a)\bigr) ,
+$$</p>
+<p>a compact subset of $\mathbb{C}$. The involution moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$, and the Hermitian elements are those with real spectrum in the $A_n$.</p>
+<p><strong>Proof.</strong> The spectrum of $a$ is the complement of the invertible set, mapped onto the sets of inverses of the $\sigma_{A_n}(\pi_n(a))$; the union description and compactness are standard for a Fréchet algebra, and the conjugation of the spectrum is the involution order two argument as in the Banach case. A Hermitian element has Hermitian image in each $A_n$, hence real spectrum in each, hence in $A$. $\square$</p>
+<h2 id="the-spectral-geometry">The Spectral Geometry</h2>
+<p><strong>Definition.</strong> Let $A$ be an involutive Fréchet algebra. The <strong>Hermitian part</strong> is $A^+ = \{a : a^* = a\}$, and the <strong>skew part</strong> $A^-$; the <strong>spectrum</strong> $\Sigma(A)$ is the space of continuous characters, and an involution is <strong>Hermitian</strong> when every Hermitian element has real image in each $\sigma_{A_n}$, and <strong>A</strong>* when, in addition, $A^+$ spans $A$ over $\mathbb{C}$.</p>
+<p><strong>Proposition (Hermitian involutions and real spectra).</strong> An involution is Hermitian if and only if every self-adjoint element has real spectrum; it is then continuous when the topology is m-convex. For an A*-algebra the self-adjoint part $A^+$ is a real Fréchet space with $A = A^+ \oplus iA^+$, and the algebra is the complexification of its Hermitian part.</p>
+<p><strong>Proof.</strong> Hermitian means real images in every quotient; real images for all self-adjoint elements is real spectrum for every quotient; conversely real spectrum forces the Hermitian part real. The continuity under m-convexity is the standard automatic-continuity statement for a Hermitian involution on an m-convex Fréchet algebra. The decomposition is the real-form statement extended to the Fréchet case. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the smooth functions).</strong> Let $A = C^\infty(X)$ for a smooth compact manifold $X$, with the family of seminorms $p_\alpha(f) = \sup_X\lvert\partial^\alpha f\rvert$; the involution $f \mapsto \bar f$ is continuous, the algebra is the projective limit of the Banach algebras $C^k(X)$, and the Hermitian elements are the real-valued smooth functions.</p>
+<p><strong>Example (the holomorphic functions).</strong> Let $A = \mathcal{O}(\Omega)$ be the algebra of holomorphic functions on an open $\Omega \subseteq \mathbb{C}$ with the topology of compact convergence, and the involution $f \mapsto f^*$ with $f^*(z) = \overline{f(\bar z)}$. It is an involutive Fréchet algebra; the projective limit is over the Banach algebras of functions continuous on $\bar K$ and holomorphic on $K$ for the compact $K \subseteq \Omega$.</p>
+<p><strong>Example (a nuclear Fréchet *-algebra).</strong> The algebra $\mathcal{S}(\mathbb{R})$ of rapidly decreasing functions with convolution and the involution $f^*(t) = \overline{f(-t)}$ is an involutive Fréchet algebra. It is not a Banach algebra, it is nuclear and m-convex, and its spectrum is the real line; the Fourier transform exchanges the convolution with the multiplication and turns the involution into conjugation, and the algebra is the base of the nuclear spectral theory.</p>
+<h2 id="automatic-continuity-and-the-hermitian-involution">Automatic Continuity and the Hermitian Involution</h2>
+<p><strong>Theorem (automatic continuity, cited).</strong> Let $A$ be an m-convex Fréchet <code>*</code>-algebra whose involution is <strong>Hermitian</strong>, that is every self-adjoint element has real image in each Banach quotient $A_n$. Then the involution is automatically continuous; the result is standard for m-convex Fréchet <code>*</code>-algebras (Bhatt–Karia) and rests on the real spectra rather than on the continuity hypothesis.</p>
+<p><strong>Theorem (characters and the Gelfand transform).</strong> For a commutative Hermitian involutive Fréchet algebra every character $\chi$ is a <code>*</code>-homomorphism, $\chi(a^*) = \overline{\chi(a)}$, because the self-adjoint elements have real images and every element is $h + ik$ with $h,k$ self-adjoint; hence the Gelfand transform is a <code>*</code>-homomorphism onto a subalgebra of $C(\Sigma(A))$, where $\Sigma(A)$ is the spectrum of continuous characters, and it is injective when the quotients $A_n$ are semisimple. The Fréchet topology and the Gelfand theory are <em>Locally Convex and Fréchet Algebras</em>.</p>
+<p><strong>Proposition (comparison with the Banach case).</strong> A Banach <code>*</code>-algebra is the special case of an involutive Fréchet algebra whose topology is defined by a single norm, $A_n = A$ for all $n$; the union-of-spectra formula then reproduces the Banach spectrum of <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>, and the Hermitian involutions include the $\mathrm{C}^*$-involutions.</p>
+<h2 id="summary">Summary</h2>
+<p>An involutive Fréchet algebra is a complete metrisable locally convex algebra with a continuous involution, the continuity of the involution being the condition $p_n(a^*) \leq C_n p_m(a)$ for a suitable $m$; it is the projective limit of the Banach $*$-algebras $A_n = A/\ker p_n$, and conversely a countable projective limit of Banach $*$-algebras is an involutive Fréchet algebra. The spectrum of an element is the union of its spectra in the quotients, so it is a compact subset of $\mathbb{C}$, and the involution moves it by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$; a Hermitian involution is one for which every self-adjoint element has real spectrum in each quotient, and an A<em>-algebra is one whose Hermitian part spans the algebra and is its real form. The Fréchet topology and the spectral theory of the algebra without the involution are </em>Locally Convex and Fréchet Algebras*; the Banach case is the earlier theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $(p_n)$, $A_n = A/\ker p_n$</td>
+<td>Fréchet algebra, seminorms, quotient Banach algebras</td>
+</tr>
+<tr>
+<td>$a \mapsto a^*$</td>
+<td>Continuous involution</td>
+</tr>
+<tr>
+<td>$p_n(a^*) \leq C_n p_m(a)$</td>
+<td>Criterion for the continuity of the involution</td>
+</tr>
+<tr>
+<td>$A \cong \varprojlim_n A_n$</td>
+<td>Projective limit description</td>
+</tr>
+<tr>
+<td>$\sigma(a)$, $\sigma_{A_n}(\pi_n(a))$</td>
+<td>Spectra in the algebra and the quotients</td>
+</tr>
+<tr>
+<td>$\sigma(a) = \bigcup_n\sigma_{A_n}(\pi_n(a))$</td>
+<td>The spectrum as a union</td>
+</tr>
+<tr>
+<td>$A^+$, $A^-$</td>
+<td>Hermitian and skew parts</td>
+</tr>
+<tr>
+<td>Hermitian / A* involution</td>
+<td>Real spectra; Hermitian part spans</td>
+</tr>
+<tr>
+<td>$\chi(a^*) = \overline{\chi(a)}$</td>
+<td>Characters are <code>*</code>-homomorphisms (Hermitian case)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexandre Grothendieck, <em>Topological Vector Spaces</em> (Gordon and Breach, 1973), for the Fréchet spaces and the projective limits.</li>
+<li>Lucien Waelbroeck, <em>Topological Vector Spaces and Algebras</em>, Lecture Notes in Mathematics 230 (Springer, 1971), for the Fréchet algebras and their spectral theory.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the involutive topological algebras and the continuous involutions.</li>
+<li>S. J. Bhatt and D. J. Karia, "Uniqueness of the topology on a topological algebra", <em>Proceedings of the American Mathematical Society</em> 143 (2015), for the continuity hypotheses on the involutions of Fréchet algebras.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the comparison with the Banach and $\mathrm{C}^*$ cases.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

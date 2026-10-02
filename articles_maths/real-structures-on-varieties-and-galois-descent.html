@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Structures on Varieties and Galois Descent — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-structures-on-varieties-and-galois-descent"><strong>Real Structures on Varieties and Galois Descent</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A variety defined over a field $k$ may be presented over a larger field $L$, and the problem of recovering the $k$-structure from the presentation is <strong>descent</strong>. For a Galois extension $L/k$ the extra datum that makes the recovery possible is an action of the Galois group on the $L$-variety whose action on functions is not $L$-linear but only $\sigma$-semilinear, the semilinearity of <em>The Galois Action as an Operator</em>; the datum is a <strong>real structure</strong> when the group has two elements, and the descended variety is recovered as the quotient by the action, with the <strong>fixed locus</strong> as the set of points already defined over the base field. This article fixes the involution of a variety, the fixed subscheme and the real points, the quotient by the involution, and the descent theorem that the two produce, and it is the first article of the <code>- * Theory</code> group.</p>
+<p>The article is the involution-on-the-elements member of the group. Its neighbours are <em>The Weil Restriction and the Trace Form</em>, which reads the descent through the restriction of scalars and the trace, <em>Real Algebraic Varieties</em>, which studies the real points and the real spectrum, <em>The Galois Action on the Cohomology</em>, which reads the involution on the cohomology, and <em>Involutions on a Scheme and the Quotient</em>, below in this group, which develops the general involution and the categorical quotient of a scheme; the descent of a single algebra, with its conjugations and real forms, is the written <em>Real Forms and the Descent of an Algebra</em> of Part I, and the general descent formalism is Part I's <em>Descent Theory</em>. The Galois action itself is <em>The Galois Action as an Operator</em>, written above in this category, and its semilinearity is used here without repetition.</p>
+<p>Throughout $k$ is a field, $L/k$ is a Galois extension with group $G$, and $X$ is a variety over $k$ or over $L$ as stated. The involution is written $\sigma$ and its linear or semilinear action on the structure sheaf is written $\theta$ when the distinction from the geometric map is needed; the fixed locus is $X^\sigma$. The case $L = \mathbb{C}$, $k = \mathbb{R}$, $G = \{\mathrm{id},\sigma\}$ with $\sigma$ the conjugation of <em>Galois Theory of ℂ/ℝ</em> is the model case and is kept in view.</p>
+<h2 id="real-structures-on-a-variety">Real Structures on a Variety</h2>
+<h3 id="the-involution-of-a-variety">The Involution of a Variety</h3>
+<p><strong>Definition.</strong> A <strong>real structure</strong> on a variety $X$ over a field $k$ is an involution of $X$ over $k$,
+$$
+\sigma : X\longrightarrow X, \qquad \sigma^2 = \mathrm{id}_X, \qquad \sigma \text{ over } k ,
+$$
+that is, a $k$-linear action of the group $\mathbb{Z}/2$ on $X$; the pair $(X,\sigma)$ is a <strong>variety with a real structure</strong>. The involution is nontrivial when $\sigma\neq\mathrm{id}_X$, and the structure is <strong>split</strong> when $\sigma$ is the identity.</p>
+<p><strong>Proposition (an involution of the sheaf).</strong> The pullback of $\sigma$ is a $k$-algebra involution of the structure sheaf,
+$$
+\theta = \sigma^\sharp : \mathcal{O}_X\longrightarrow\sigma_*\mathcal{O}_X, \qquad \theta^2 = \mathrm{id},
+$$
+and the two determine each other: $\sigma$ is the map whose pullback is $\theta$, by the anti-equivalence of <em>Schemes</em>. On an affine chart $X = \operatorname{Spec}A$ the involution is a $k$-algebra involution $\theta : A\to A$ of order two, and the correspondence is bijective.</p>
+<p><em>Proof.</em> The pullback of a morphism is a ring map and the pullback of the identity is the identity, so $\theta^2 = (\sigma^2)^\sharp = \mathrm{id}$; the bijection is the contravariance of $\operatorname{Spec}$, since a morphism $X\to X$ over $k$ corresponds to a $k$-algebra map $A\to A$ in the opposite direction.</p>
+<h3 id="the-semilinear-involution-over-an-extension">The Semilinear Involution over an Extension</h3>
+<p><strong>Definition.</strong> Let $L/k$ be Galois and let $X$ be a variety over $L$. A <strong>real structure</strong> on $X$ over $L/k$ is an involution $\sigma$ of the underlying scheme over $k$ whose action on the structure sheaf is semilinear over $L$: for the nontrivial $\sigma\in G$ of order two, the pullback $\theta = \sigma^\sharp$ satisfies
+$$
+\theta(f+g) = \theta(f)+\theta(g), \qquad \theta(fg) = \theta(f)\theta(g), \qquad \theta(\ell f) = \sigma(\ell)\,\theta(f)
+$$
+for functions $f,g$ and constants $\ell\in L$. Such a $\theta$ is a <strong>conjugation</strong> of $X$, in the sense of Part I's <em>Real Forms and the Descent of an Algebra</em>, and the pair $(X,\theta)$ is a variety with <strong>antilinear involution</strong> when the distinction from the linear case is needed.</p>
+<p><strong>Proposition (the linear case is the case of a trivial twist).</strong> When $L = k$ the semilinearity is the $k$-linearity and the two definitions of an involution agree; when $L\neq k$ the semilinear involution is not a morphism over $L$ and not an $L$-linear involution of the sheaf.</p>
+<p><em>Proof.</em> For $L=k$ one has $\sigma=\mathrm{id}$ on the constants and the third identity is the second. For $L\neq k$ the nontrivial $\sigma$ moves the constants, so $\theta$ does not commute with the $L$-scalars and is not an $\mathcal{O}_X$-algebra map over $L$.</p>
+<p><strong>Example (the conjugation of $\mathbb{C}$ over $\mathbb{R}$).</strong> For $L = \mathbb{C}$, $k = \mathbb{R}$ and $\sigma$ the conjugation of <em>Galois Theory of ℂ/ℝ</em>, a real structure on a complex variety is an involution with $\theta(\ell f) = \bar{\ell}\,\theta(f)$. On $X = \mathbb{A}^1_{\mathbb{C}} = \operatorname{Spec}\mathbb{C}[x]$ the conjugation fixes $x$ and conjugates the coefficients, $\theta(x) = x$ and $\theta(\ell) = \bar\ell$, so $\theta(\ell x^n) = \bar\ell x^n$; the same formula $\theta([x_0:x_1]) = [\bar x_0:\bar x_1]$ defines the conjugation of $\mathbb{P}^1_{\mathbb{C}}$. The real structures of the two examples are the model of the article.</p>
+<h2 id="the-fixed-locus-and-the-real-points">The Fixed Locus and the Real Points</h2>
+<h3 id="the-fixed-subscheme">The Fixed Subscheme</h3>
+<p><strong>Definition.</strong> The <strong>fixed locus</strong> of an involution $\sigma$ of $X$ is the equaliser of $\sigma$ and the identity, that is, the fibre product of the graph $(\mathrm{id},\sigma) : X\to X\times_kX$ with the diagonal $\Delta : X\to X\times_kX$; it is a closed subscheme $X^\sigma\subseteq X$, and it is characterised as the largest closed subscheme on which $\sigma$ acts as the identity.</p>
+<p><strong>Theorem (the fixed locus on an affine chart).</strong> Let $X = \operatorname{Spec}A$ and let $\theta$ be the involution of $A$ that defines $\sigma$. Then
+$$
+X^\sigma = \operatorname{Spec}\bigl(A\big/\mathrm{I}_\theta\bigr), \qquad \mathrm{I}_\theta = \bigl(\,\theta(a)-a\ :\ a\in A\,\bigr),
+$$
+the ideal generated by the elements moved by $\theta$. In particular the fixed locus is cut out by the vanishing of the differences $\theta(a)-a$, and it is a closed subvariety of $X$.</p>
+<p><em>Proof.</em> The equaliser of two morphisms of affine schemes is computed by the coequaliser of the two corresponding algebra maps. The graph of $(\mathrm{id},\sigma)$ corresponds to $A\otimes_kA\to A$, $a\otimes b\mapsto a\,\theta(b)$, and the diagonal to the product $a\otimes b\mapsto ab$; their coequaliser is $A$ modulo the ideal generated by the differences $m(x)-c(x)$ as $x$ ranges over $A\otimes_kA$. On the generators $x = 1\otimes b$ these differences are $b - \theta(b)$, and on $x = a\otimes1$ they are $a - a = 0$, so the ideal is $\mathrm{I}_\theta$ as displayed.</p>
+<p><strong>Remark (the fixed locus is not the quotient).</strong> The fixed locus $X^\sigma$ is not the quotient $X/\sigma$ of the subalgebra of invariants, and the elementary example shows why. For $A = k[x]$ with $\theta(x) = -x$ in characteristic not two the fixed locus is $\operatorname{Spec}k[x]/(2x) = \operatorname{Spec}k$, a single point, while the invariants $A^\theta = k[x^2]$ give the quotient $\operatorname{Spec}k[x^2]$, a line. The two differ, and the involution is fixed-point-free away from the origin; keeping them apart is the convention of this group.</p>
+<h3 id="the-real-points">The Real Points</h3>
+<p><strong>Definition.</strong> For $X$ over $L$ with a real structure and for a field $R$ between $k$ and $L$, the <strong>$R$-points of the fixed locus</strong> are
+$$
+X^\sigma(R) = \operatorname{Hom}_k(\operatorname{Spec}R, X^\sigma),
+$$
+the points of $X$ with values in $R$ fixed by the involution. When $R = k$ they are the <strong>real points</strong> of $X$. For $L = \mathbb{C}$ and $k = \mathbb{R}$ they are the <strong>real points of the complex variety</strong>, $X^\sigma(\mathbb{R}) = X(\mathbb{C})^\sigma$, the points of $X$ with complex coordinates on which the conjugation acts trivially.</p>
+<p><strong>Theorem (the fixed points of the geometric action).</strong> Let $X$ be a variety over $L$ with a real structure, and let $G = \{\mathrm{id},\sigma\}$. Then the real points are the fixed points of the action on the $L$-points,
+$$
+X^\sigma(k) = X(L)^{G},
+$$
+and they are the $k$-points of the descended variety of the next section.</p>
+<p><em>Proof.</em> A point $P : \operatorname{Spec}L\to X$ lies in the fixed locus precisely when $\sigma\circ P = P$, which is the defining condition of $X(L)^G$; the identification with the $k$-points is the fixed-point theorem of <em>The Galois Action as an Operator</em>, and the descent is the quotient construction below.</p>
+<h3 id="the-fixed-locus-of-the-conjugation">The Fixed Locus of the Conjugation</h3>
+<p><strong>Theorem (the real form of the affine space).</strong> For $L = \mathbb{C}$, $k = \mathbb{R}$ and the conjugation of the coefficients on $A = \mathbb{C}[x_1,\ldots,x_n] = \mathbb{R}[x_1,\ldots,x_n]\otimes_{\mathbb{R}}\mathbb{C}$, the fixed locus is
+$$
+(\mathbb{A}^n_{\mathbb{C}})^\sigma = \operatorname{Spec}\bigl(\mathbb{C}[x_1,\ldots,x_n]^\theta\bigr) = \operatorname{Spec}\mathbb{R}[x_1,\ldots,x_n] = \mathbb{A}^n_{\mathbb{R}} .
+$$</p>
+<p><em>Proof.</em> The ideal $\mathrm{I}_\theta$ is generated by $\theta(\ell)-\ell = \bar\ell-\ell$ for $\ell\in\mathbb{C}$, which contains $i-(-i) = 2i$ and therefore the whole of the imaginary axis; killing it leaves $\mathbb{R}[x_1,\ldots,x_n]$. Equivalently, a polynomial of $\mathbb{C}[x_1,\ldots,x_n]$ is fixed by the coefficient conjugation exactly when its coefficients are real.</p>
+<p><strong>Corollary (projectivisation commutes with the fixed locus).</strong> For the conjugation of $\mathbb{P}^n_{\mathbb{C}}$ the fixed locus is $\mathbb{P}^n_{\mathbb{R}}$, and more generally the fixed locus of a graded involution of a graded ring is the projective spectrum of the invariant part.</p>
+<p><em>Proof.</em> A homogeneous polynomial has real coefficients after the conjugation exactly when all its coefficients are real, and the Proj construction of <em>Schemes</em> takes the invariant subring of the graded ring to the fixed locus in the same way as $\operatorname{Spec}$ takes invariants; the two computations agree on the standard affine charts $x_i\neq0$.</p>
+<h2 id="the-quotient-by-the-involution">The Quotient by the Involution</h2>
+<p><strong>Definition.</strong> Let $X$ be a variety with a real structure and let $G = \{\mathrm{id},\sigma\}$. A <strong>quotient</strong> of $X$ by $\sigma$ is a variety $X/\sigma$ over $k$ with a morphism $\pi : X\to X/\sigma$ over $k$ such that $\pi\circ\sigma = \pi$ and such that every morphism $\psi : X\to Y$ over $k$ with $\psi\circ\sigma = \psi$ factors uniquely as $\psi = \phi\circ\pi$. When such a quotient exists it is unique, and it is the <strong>categorical quotient</strong>.</p>
+<p><strong>Theorem (the quotient of an affine variety).</strong> Let $X = \operatorname{Spec}A$ and let $\theta$ be the involution of $A$. Then the <strong>invariant ring</strong> $A^\theta = \{a\in A : \theta(a) = a\}$ is a finitely generated $k$-algebra when $A$ is finitely generated over $k$, the morphism
+$$
+\pi : X\longrightarrow\operatorname{Spec}A^\theta
+$$
+induced by the inclusion $A^\theta\hookrightarrow A$ is a quotient by $\sigma$, and $\pi_*\mathcal{O}_X^\sigma = \mathcal{O}_{\operatorname{Spec}A^\theta}$.</p>
+<p><em>Proof.</em> The invariants of a finitely generated algebra under a finite group action form a finitely generated algebra, by Noether's theorem as in Part I's <em>Invariant Theory</em>; the map $\pi$ is invariant because $\theta|_{A^\theta} = \mathrm{id}$, and the universal property is the universal property of the invariants: a $\theta$-invariant map $\psi^\flat : A\to B$ lands in $B^\sigma$ only if its image is fixed, and it factors uniquely through $A^\theta$ by the universal property of the subalgebra. The identification of the pushforward is the definition of the structure sheaf of $\operatorname{Spec}A^\theta$.</p>
+<p><strong>Theorem (the general quotient, stated).</strong> Let a finite group $G$ act on a variety $X$ over $k$ by $k$-automorphisms. Then the quotient $X/G$ exists as a variety when $X$ is quasi-projective, the morphism $\pi : X\to X/G$ is finite and surjective, and the structure sheaf of the quotient is the sheaf of invariants $\mathcal{O}_{X/G} = (\pi_*\mathcal{O}_X)^G$. The quotient by an involution is the case $G = \mathbb{Z}/2$.</p>
+<p><em>Proof.</em> The construction on an affine chart is the theorem above, the finite generation of the invariants making $\operatorname{Spec}A^G$ a variety; the local constructions glue because a quotient is unique and the invariant sheaf is defined globally. The theorem for a general finite group on an arbitrary scheme, with the categorical quotient and the fixed subscheme, is developed below in this group in <em>Involutions on a Scheme and the Quotient</em>; the case of the involution is what this article uses.</p>
+<p><strong>Theorem (the fixed locus inside the quotient).</strong> The canonical map $X^\sigma\to X\to X/\sigma$ identifies $X^\sigma$ with a closed subscheme of $X/\sigma$, and it is an isomorphism precisely when the fixed locus is all of $X$, that is, when $\sigma = \mathrm{id}$.</p>
+<p><em>Proof.</em> The map $X^\sigma\to X/\sigma$ is the restriction of the quotient map to the fixed locus, and it is a closed immersion because $X^\sigma\subseteq X$ is closed and the quotient map is finite; it cannot be onto unless every point is fixed, in which case $\sigma = \mathrm{id}$ by the anti-equivalence above.</p>
+<h2 id="galois-descent">Galois Descent</h2>
+<h3 id="descent-data">Descent Data</h3>
+<p><strong>Definition.</strong> Let $L/k$ be a Galois extension with group $G$ and let $X$ be a variety over $L$. A <strong>descent datum</strong> on $X$ is an action of $G$ on $X$ over $k$ whose action $\theta_\sigma = \sigma^\sharp$ on the structure sheaf is semilinear over $L$ for each $\sigma\in G$:
+$$
+\theta_\sigma(\ell f) = \sigma(\ell)\,\theta_\sigma(f), \qquad \theta_{\sigma\tau} = \theta_\sigma\circ\theta_\tau .
+$$
+The datum is <strong>effective</strong> if there is a variety $X_0$ over $k$ with an isomorphism $X\cong X_0\times_kL$ over $L$ under which the action becomes the action on the second factor of <em>The Galois Action as an Operator</em>.</p>
+<p><strong>Proposition (the datum of the previous sections).</strong> A real structure over $L/k$ is a descent datum for the group $G = \mathbb{Z}/2$: it is the datum of the single involution $\theta$ with the semilinearity displayed above.</p>
+<p><em>Proof.</em> The two-element group has one nontrivial element, and the multiplicativity $\theta_{\sigma\tau} = \theta_\sigma\theta_\tau$ is $\theta^2 = \mathrm{id}$ together with $\theta_{\mathrm{id}} = \mathrm{id}$; the semilinearity is the definition of the real structure.</p>
+<h3 id="the-descent-theorem">The Descent Theorem</h3>
+<p><strong>Theorem (Galois descent for affine varieties).</strong> Let $L/k$ be a finite Galois extension with group $G$. Then the functor
+$$
+X_0\longmapsto X_0\times_kL
+$$
+from affine $k$-varieties to affine $L$-varieties with a descent datum is an equivalence of categories, with quasi-inverse
+$$
+X\longmapsto X^G = \operatorname{Spec}\bigl(\Gamma(X,\mathcal{O}_X)^G\bigr),
+$$
+the spectrum of the invariant ring of the action on the global functions.</p>
+<p><em>Proof.</em> On coordinate rings the statement is the descent of a module with a semilinear action, Part I's <em>Descent Theory</em> and the algebra case of <em>Real Forms and the Descent of an Algebra</em>: for an $L$-algebra $A$ with a semilinear $G$-action the invariants $A^G$ are a $k$-algebra with $A^G\otimes_kL\cong A$, and the two functors are inverse. The sheaf-theoretic form for a general variety, with the invariant sheaf in place of the invariant ring, is the descent of the projected <em>Equivariant Sheaves and Descent</em>, in the category <em>Sheaves and Cohomology</em>; the quasi-projective case follows by glueing the affine statement over a $G$-stable affine cover, which exists because $G$ is finite.</p>
+<p><strong>Corollary (the quotient is the descended variety).</strong> For a variety $X$ over $L$ with a real structure over $L/k$, the quotient $X/G$ of the previous section is the descended variety $X_0$: its base change is $X$,
+$$
+(X/G)\times_kL\ \cong\ X ,
+$$
+and the real points of $X/G$ are the fixed points of the involution, $(X/G)(k) = X(L)^G = X^\sigma(k)$.</p>
+<p><em>Proof.</em> The invariants of the semilinear action are a $k$-algebra whose base change is $A$ by the descent theorem; the quotient is the spectrum of the invariants by the definition of the categorical quotient, and the identification of the points is the fixed-point theorem already used.</p>
+<h3 id="fixed-locus-quotient-and-descent">Fixed Locus, Quotient and Descent</h3>
+<p><strong>Remark (three objects of the involution).</strong> The involution of a variety produces three objects that must not be conflated. The <strong>fixed locus</strong> $X^\sigma$ is the closed subscheme of points already defined over $k$; the <strong>quotient</strong> $X/\sigma$ is the descended variety, whose base change is $X$; and the <strong>invariants</strong> $\Gamma(X,\mathcal{O}_X)^\sigma$ are the global functions on the quotient. The fixed locus maps to the quotient as a closed subscheme, and the two agree exactly when the involution is trivial; in the semilinear case over $\mathbb{C}/\mathbb{R}$ the quotient is the real form and the fixed locus is the set of its real points.</p>
+<p><strong>Remark (the split and the twisted structures).</strong> A real structure is <strong>split</strong> when $X\cong X_0\times_kL$ with the trivial action up to isomorphism, and <strong>twisted</strong> otherwise; the descent theorem says that the twisted structures are classified by the descent data, which for an affine algebra is the set of conjugations, the same classification as Part I's <em>Real Forms and the Descent of an Algebra</em>. The real points of a twisted structure may be empty even when the complex variety is nonempty, and the conics below show it.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="affine-and-projective-space">Affine and Projective Space</h3>
+<p><strong>Example ($\mathbb{A}^n$ and $\mathbb{P}^n$).</strong> For the conjugation of $\mathbb{C}[x_1,\ldots,x_n]$ and of its graded form, the descended varieties are $\mathbb{A}^n_{\mathbb{R}}$ and $\mathbb{P}^n_{\mathbb{R}}$, with real points $\mathbb{R}^n$ and $\mathbb{P}^n(\mathbb{R})$; the quotient of the affine space is the affine space, and the fixed locus is the whole real form.</p>
+<p><strong>Example (the roots of unity and the finite subgroups).</strong> The conjugation of $\mathbb{C}$ acts on the group $\mu_n$ of $n$-th roots of unity by $\zeta\mapsto\zeta^{-1}$; the fixed points are the roots with $\zeta = \pm1$, the descended group is $\mu_2$ over $\mathbb{R}$, and the quotient $\mu_n/\sigma$ is a variety with two real points. This is the finite-group model of the fixed locus of a real structure.</p>
+<h3 id="conics">Conics</h3>
+<p><strong>Example (a conic with a real point).</strong> The affine conic $C : y^2 = x^2-1$ over $\mathbb{R}$, or its projective closure, has two real points at infinity and the real points of the affine piece consist of the two branches $y = \pm\sqrt{x^2-1}$; the complex conic is isomorphic to $\mathbb{P}^1_{\mathbb{C}}$ and its real structure is the one descended from the conjugation, the split case. The two points at infinity are exchanged by nothing and fixed individually, being the real solutions of $x^2=y^2$ at $z=0$.</p>
+<p><strong>Example (the anisotropic conic).</strong> The projective conic $C : x^2+y^2+z^2 = 0$ over $\mathbb{R}$ has no real point: for real $x,y,z$ the form is a sum of squares and vanishes only at $x=y=z=0$, which is not a point of the projective plane. Its complex conic is again $\mathbb{P}^1_{\mathbb{C}}$, so the real structure is a twisted form of the projective line with empty real locus, the anisotropic form. The two examples have the same complexification and different real points, which is the content of the classification of the real forms of a conic; the classification by the genus of the real locus is the subject of <em>Real Structures on a Curve</em>, below in this group.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>real structure</strong> on a variety is an involution: $k$-linear on a $k$-variety, or semilinear with respect to a nontrivial element of a Galois group on an $L$-variety. The <strong>fixed locus</strong> $X^\sigma$ is the equaliser of the involution and the identity, a closed subscheme; on an affine chart $X=\operatorname{Spec}A$ it is $\operatorname{Spec}(A/(\theta(a)-a))$, and it is not the quotient by the invariants. Its points with values in a field $R$ are the points fixed by the involution, and for $L=\mathbb{C}$, $k=\mathbb{R}$ its $\mathbb{R}$-points $X^\sigma(\mathbb{R}) = X(\mathbb{C})^\sigma$ are the real points of the complex variety. The <strong>quotient</strong> $X/\sigma$ is the categorical quotient, realised on an affine chart as $\operatorname{Spec}A^\theta$ with $A^\theta$ the invariant ring, finitely generated by the theorem of <em>Invariant Theory</em>, and it is a finite surjective quotient in the quasi-projective case.</p>
+<p><strong>Galois descent</strong> is the corresponding statement for a finite Galois extension $L/k$ with group $G$: the functor $X_0\mapsto X_0\times_kL$ is an equivalence from $k$-varieties to $L$-varieties with an effective descent datum — an action of $G$ that is semilinear on the structure sheaf — with quasi-inverse the spectrum of the invariants, $X\mapsto X^G$. The real structure over $L/k$ is the case $G=\mathbb{Z}/2$, and the quotient is the descended variety, with real points the fixed points of the involution. Three objects are kept apart throughout: the fixed locus, the quotient, and the invariants. They agree exactly when the involution is trivial, and the example $x\mapsto-x$ on the affine line shows the general difference.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $\sigma^2=\mathrm{id}_X$</td>
+<td>a real structure: an involution of $X$ over $k$</td>
+</tr>
+<tr>
+<td>$\theta=\sigma^\sharp$, $\theta(\ell f)=\sigma(\ell)\theta(f)$</td>
+<td>the (semi)linear involution on the structure sheaf</td>
+</tr>
+<tr>
+<td>$X^\sigma$</td>
+<td>the fixed locus: the equaliser of $\sigma$ and the identity</td>
+</tr>
+<tr>
+<td>$\operatorname{I}_\theta=(\theta(a)-a)$</td>
+<td>the ideal cutting out the fixed locus on an affine chart</td>
+</tr>
+<tr>
+<td>$X^\sigma(R)$</td>
+<td>the $R$-points fixed by the involution; real points for $R=k$</td>
+</tr>
+<tr>
+<td>$X^\sigma(k)=X(L)^G$</td>
+<td>the real points are the fixed points of the Galois action</td>
+</tr>
+<tr>
+<td>$A^\theta=\{a:\theta(a)=a\}$</td>
+<td>the invariant ring; coordinate ring of the quotient</td>
+</tr>
+<tr>
+<td>$X/\sigma=\operatorname{Spec}A^\theta$ (affine)</td>
+<td>the quotient; the descended variety</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_{X/G}=(\pi_*\mathcal{O}_X)^G$</td>
+<td>the invariant sheaf; structure sheaf of the quotient</td>
+</tr>
+<tr>
+<td>$\theta_\sigma$, $\theta_{\sigma\tau}=\theta_\sigma\theta_\tau$</td>
+<td>a descent datum for the Galois group $G$</td>
+</tr>
+<tr>
+<td>$X_0\mapsto X_0\times_kL$, $X\mapsto X^G$</td>
+<td>the equivalence of Galois descent</td>
+</tr>
+<tr>
+<td>$(X/G)\times_kL\cong X$</td>
+<td>the quotient is the descended variety</td>
+</tr>
+<tr>
+<td>split, twisted, anisotropic</td>
+<td>the real structure is trivial, or not; no real points</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean-Pierre Serre, <em>Galois Cohomology</em> (Springer, 1997), for descent along a Galois extension and the classification of forms.</li>
+<li>Alexander Grothendieck, <em>Technique de descente et théorèmes d'existence en géométrie algébrique</em> (Séminaire Bourbaki, 1959–1962), for effective descent of varieties and schemes.</li>
+<li>Michael Artin, <em>Algebra</em> (Pearson, second edition, 2011), for the fixed field of an involution and the elementary descent of a structure.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1</em> (Springer, third edition, 2013), for real structures on a variety, the real points and the descent of the base field.</li>
+<li>Jean-Pierre Serre, <em>Cohomological invariants in Galois cohomology</em> (University Lecture Series 28, American Mathematical Society, 2003), for the classification of the twisted forms by cohomology.</li>
+<li>Claude Chevalley, <em>Introduction to the Theory of Algebraic Functions of One Variable</em> (American Mathematical Society, 1951), for the descent of a function field and the real points of a curve.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

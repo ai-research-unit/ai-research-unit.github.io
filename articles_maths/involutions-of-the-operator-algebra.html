@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Operator Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-operator-algebra"><strong>Involutions of the Operator Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An algebra carries two layers: the elements, which the product multiplies, and the operators, which the product moves. The involution of the <code>- * Theory</code> group sits on the elements; the present article puts an involution on the operators. The passage is a <strong>pairing</strong> on the algebra: with respect to a nondegenerate pairing $\langle\cdot,\cdot\rangle$ every operator $T$ has an <strong>adjoint</strong> $T^{*}$ determined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$, and the assignment $T\mapsto T^{*}$ is an involution of the operator algebra $E=\operatorname{End}_k(A)$ — a $k$-linear anti-automorphism of order two. Its fixed elements are the <strong>self-adjoint operators</strong>, its negated elements the <strong>skew-adjoint</strong> ones, and the operator algebra with this involution is an involutive algebra, so that its self-adjoint part is a Jordan algebra, its skew part a Lie algebra, and its units carry the unitary operators of <em>Unitary Operators of an Involutive Algebra</em>.</p>
+<p>This article develops the pairing of the category, the adjoint of an operator and the involution it defines on $E$, the fixed part and the structures it carries, and the relation between the involution of the elements and the involution of the operators — two structures that one pairing marries but that are not one and the same. The operator space and its ladder of subspaces are <em>The Operators on an Algebra</em>; the one-sided multiplications are <em>Left and Right Multiplication</em>; the trace, the pairing $\langle x,y\rangle=\tau(xy)$ and its nondegeneracy are <em>Frobenius Algebras</em>; the involutions of an algebra, its self-adjoint part and its unitary elements are <em>Involutive Linear Algebras</em>, <em>The Self-Adjoint Part of an Algebra</em> and <em>Unitary Elements of an Involutive Algebra</em>; the opposite algebra and the anti-isomorphisms are <em>Opposite Algebras and Anti-Isomorphisms</em>. The adjoint attached to the twisted pairing is <em>The Adjoint in an Involutive Algebra</em>; the adjoints of the one-sided, the signed and the graded operators are <em>The Adjoint of the Left Multiplication on an Algebra</em>, <em>The Signed Adjoint Sandwich on an Algebra</em> and <em>The Graded Adjoint Action on a Module over an Algebra</em>, the following articles of this group. The Hilbert-space adjoint, the norm, the positivity and the topology of the operator algebra are Part II and <em>Operator Algebras</em>, and are named as the owner and not used.</p>
+<p>Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, and $\tau : A \to k$ is a trace whose pairing $\langle x,y\rangle=\tau(xy)$ is nondegenerate; a functional whose product pairing is nondegenerate is a Frobenius functional, and a trace with a nondegenerate one makes $A$ a symmetric Frobenius algebra. The operator space is $E=\operatorname{End}_k(A)$, of dimension $(\dim_k A)^2$ over $k$, the left and right multiplications by $a$ are $L_a$ and $R_a$, and the adjoint of $T \in E$ for the pairing $\langle\cdot,\cdot\rangle$ is written $T^{*}$. An involution of the elements is written $\sigma$ and its image $\sigma(x)$; the adjoint for the twisted pairing is written $T^{*_\sigma}$.</p>
+<h2 id="the-pairing-of-the-category">The Pairing of the Category</h2>
+<p><strong>Definition.</strong> The <strong>pairing of the category</strong> on $A$ is</p>
+<p>$$
+\langle x,y\rangle = \tau(xy),
+$$</p>
+<p>where $\tau : A \to k$ is a linear functional. It is <strong>symmetric</strong> when $\tau(xy)=\tau(yx)$ for all $x,y$, that is when $\tau$ is a trace, and <strong>nondegenerate</strong> when $\langle x,z\rangle=0$ for all $z$ forces $x=0$ and $\langle z,y\rangle=0$ for all $z$ forces $y=0$. A trace with a nondegenerate product pairing is a <strong>Frobenius trace</strong>, and $(A,\tau)$ is then a <strong>symmetric Frobenius algebra</strong>.</p>
+<p><strong>Proposition.</strong> The pairing is symmetric for a trace, reflexive, and associative in the sense</p>
+<p>$$
+\langle xy,z\rangle=\langle x,yz\rangle ;
+$$</p>
+<p>it is compatible with the two multiplications,</p>
+<p>$$
+\langle ax,y\rangle=\langle x,ya\rangle, \qquad \langle xa,y\rangle=\langle x,ay\rangle \qquad (a,x,y \in A).
+$$</p>
+<p><em>Proof.</em> Symmetry is the trace property $\tau(xy)=\tau(yx)$, and a symmetric pairing is reflexive because $\langle x,y\rangle=0$ and $\langle y,x\rangle=0$ are then the same equation. Associativity is the identity $\tau(xyz)=\tau(xyz)$ read with the product grouped on the two sides. The first compatibility is $\langle ax,y\rangle=\tau(axy)=\tau(xya)=\langle x,ya\rangle$ by the cyclicity $\tau(uv)=\tau(vu)$ of the trace, and the second is $\langle xa,y\rangle=\tau(xay)=\langle x,ay\rangle$ by the definition of the pairing.</p>
+<p>The compatibility is what makes the pairing the one of the category: the product acts on the pairing by moving an element from one argument to the other, and this move is the reason the one-sided multiplications have adjoints at all. The functional $\tau$ is the abstract trace, and $\langle x,y\rangle=\tau(xy)$ is its associated pairing in the sense of <em>Frobenius Algebras</em>; the nondegeneracy is the Frobenius condition, a condition on $\tau$ and not on $A$.</p>
+<p><strong>Example (the matrix algebra).</strong> For $A=M_n(k)$ and $\tau=\operatorname{Tr}$ the matrix trace, $\langle X,Y\rangle=\operatorname{Tr}(XY)$ is symmetric and nondegenerate; the pairing of the category is the trace pairing of the matrix algebra.</p>
+<p><strong>Example (the group algebra).</strong> For $A=k[G]$ with $G$ finite and $\tau$ the coefficient of the identity element, $\langle x,y\rangle$ is the coefficient of $1$ in $xy$; it is symmetric, and it is nondegenerate because the coefficient of $1$ in $gh$ is nonzero exactly for $h=g^{-1}$. The Frobenius trace is the coefficient functional of the group algebra.</p>
+<p><strong>Example (the exterior algebra).</strong> For $A=\Lambda(V)$ with $V$ of finite dimension and $\tau$ the coefficient of the top power, the pairing is the Frobenius pairing of the exterior algebra; it is supersymmetric rather than symmetric, and its graded reading is <em>The Graded Adjoint Action on a Module over an Algebra</em> below.</p>
+<h2 id="the-adjoint-of-an-operator">The Adjoint of an Operator</h2>
+<p><strong>Definition.</strong> Let $T \in E$. An operator $T^{*} \in E$ is an <strong>adjoint</strong> of $T$ for the pairing when</p>
+<p>$$
+\langle Tx,y\rangle=\langle x,T^{*}y\rangle \qquad \text{for all } x,y \in A .
+$$</p>
+<p><strong>Theorem.</strong> For a nondegenerate pairing every $T \in E$ has exactly one adjoint $T^{*}$.</p>
+<p><em>Proof.</em> Fix $y \in A$. The map $x \mapsto \langle Tx,y\rangle$ is a $k$-linear functional on $A$, because $T$ and the pairing are linear. A nondegenerate pairing on a finite-dimensional space represents every functional uniquely: the map $z \mapsto \langle\cdot,z\rangle$ is an isomorphism $A \to A^{\vee}$ in finite dimension, so there is exactly one $z$ with $\langle x,z\rangle=\langle Tx,y\rangle$ for all $x$. That $z$ depends on $y$, and the dependence is $k$-linear because $y \mapsto \langle Tx,y\rangle$ is; write $T^{*}y=z$. Uniqueness of the represented element gives uniqueness of the adjoint: if $S$ also represents, then $\langle x,(S-T^{*})y\rangle=0$ for all $x$ and $y$, so $S=T^{*}$.</p>
+<p>The adjoint is therefore not an extra datum but a function of the pairing, and a different nondegenerate pairing gives a different adjoint of the same operator. The transpose and the Hermitian conjugate of a matrix are both adjoints of it, taken with respect to the trace pairing and to the positive definite pairing; the former is the pairing of this category, and the latter is Part II.</p>
+<p><strong>Proposition (the adjoint of a composite).</strong> For $S,T \in E$,</p>
+<p>$$
+\langle STx,y\rangle=\langle x,T^{*}S^{*}y\rangle ,
+$$</p>
+<p>so the adjoint of a composite is the composite of the adjoints in the reverse order.</p>
+<p><em>Proof.</em> Apply the definition twice, the second time with the input $Tx$: $\langle STx,y\rangle=\langle Tx,S^{*}y\rangle=\langle x,T^{*}S^{*}y\rangle$.</p>
+<h2 id="the-involution-of-the-operator-algebra">The Involution of the Operator Algebra</h2>
+<p><strong>Theorem.</strong> The assignment $T \mapsto T^{*}$ is an involution of the $k$-algebra $E$:</p>
+<p>$$
+(T+S)^{*}=T^{*}+S^{*}, \qquad (\lambda T)^{*}=\lambda T^{*}, \qquad (TS)^{*}=S^{*}T^{*}, \qquad (T^{*})^{*}=T, \qquad \mathrm{id}^{*}=\mathrm{id} .
+$$</p>
+<p>It is a $k$-linear anti-automorphism of $E$ of order two, and $(E,*)$ is an involutive algebra in the sense of <em>Involutive Linear Algebras</em>.</p>
+<p><em>Proof.</em> Additivity and homogeneity follow from the linearity of the representing element in the preceding theorem, and anti-multiplicativity is the proposition above. For order two, use the symmetry of the pairing: $\langle T^{*}x,y\rangle=\langle y,T^{*}x\rangle=\langle Ty,x\rangle=\langle x,Ty\rangle$, the middle equality being the definition of $T^{*}$ read with its two arguments exchanged. Comparing $\langle T^{*}x,y\rangle=\langle x,T^{**}y\rangle$ with $\langle T^{*}x,y\rangle=\langle x,Ty\rangle$ and using nondegeneracy in $x$ gives $T^{**}y=Ty$ for every $y$. The identity is self-adjoint because $\langle \mathrm{id}\,x,y\rangle=\langle x,y\rangle=\langle x,\mathrm{id}\,y\rangle$.</p>
+<p><strong>Corollary (invertibility).</strong> If $T$ is invertible then $T^{*}$ is invertible, with</p>
+<p>$$
+(T^{-1})^{*}=(T^{*})^{-1} .
+$$</p>
+<p><em>Proof.</em> Apply $*$ to $TT^{-1}=\mathrm{id}$ and to $T^{-1}T=\mathrm{id}$, using anti-multiplicativity and $\mathrm{id}^{*}=\mathrm{id}$: $(T^{-1})^{*}T^{*}=\mathrm{id}=T^{*}(T^{-1})^{*}$, so $(T^{-1})^{*}$ is the two-sided inverse of $T^{*}$.</p>
+<p><strong>Corollary (the involution and the unit group).</strong> The involution $*$ restricts to an anti-automorphism of order two of the unit group $E^{\times}$, and the composite</p>
+<p>$$
+\theta : E^{\times} \to E^{\times}, \qquad \theta(T)=(T^{*})^{-1},
+$$</p>
+<p>is an automorphism of $E^{\times}$ of order two. Its fixed subgroup is the group of unitary operators of <em>Unitary Operators of an Involutive Algebra</em>.</p>
+<p><em>Proof.</em> The involution maps units to units and reverses products, and inversion reverses products, so $\theta$ preserves them; $\theta^{2}(T)=\theta\bigl((T^{*})^{-1}\bigr)=\bigl(((T^{*})^{-1})^{*}\bigr)^{-1}=\bigl((T^{-1})\bigr)^{-1}=T$, where the invertibility corollary is applied to $T^{*}$ in the middle step. The structure of the fixed subgroup is the general theory of <em>Unitary Elements of an Involutive Algebra</em>, applied to the involutive algebra $(E,*)$.</p>
+<h2 id="the-fixed-elements">The Fixed Elements</h2>
+<p><strong>Definition.</strong> The <strong>self-adjoint operators</strong> and the <strong>skew-adjoint operators</strong> of $(E,*)$ are</p>
+<p>$$
+E^{+}=\{T \in E : T^{*}=T\}, \qquad E^{-}=\{T \in E : T^{*}=-T\}.
+$$</p>
+<p><strong>Theorem.</strong> $E^{+}$ and $E^{-}$ are $k$-linear subspaces of $E$ with</p>
+<p>$$
+E=E^{+}\oplus E^{-}, \qquad T=\tfrac12\bigl(T+T^{*}\bigr)+\tfrac12\bigl(T-T^{*}\bigr),
+$$</p>
+<p>and the involution acts as the identity on $E^{+}$ and as minus the identity on $E^{-}$. With the symmetrised product $S\circ T=\tfrac12(ST+TS)$ the space $E^{+}$ is a Jordan algebra, with the commutator $[S,T]=ST-TS$ the space $E^{-}$ is a Lie algebra, and the two are tied by the inclusions $E^{+}\circ E^{-}\subseteq E^{-}$ and $[E^{+},E^{-}]\subseteq E^{+}$, so that $(E^{+},E^{-})$ is the Jordan–Lie pair of the involution.</p>
+<p><em>Proof.</em> The spaces are the eigenspaces of the order-two linear map $*$ for the eigenvalues $1$ and $-1$, so they are subspaces intersecting in $0$ and summing to $E$ in characteristic not two, by the displayed averaging. The algebraic statements are those of <em>Involutive Linear Algebras</em> and <em>The Self-Adjoint Part of an Algebra</em>, applied to the involutive algebra $(E,*)$. The inclusions are read off from anti-multiplicativity: for $S,T \in E^{+}$ one has $(ST)^{*}=T^{*}S^{*}=TS$, so $S\circ T$ is self-adjoint and $[S,T]$ is skew-adjoint; for $S \in E^{+}$ and $T \in E^{-}$ one has $(ST)^{*}=T^{*}S^{*}=(-T)S=-TS$ and $(TS)^{*}=S^{*}T^{*}=S(-T)=-ST$, so $S\circ T=\tfrac12(ST+TS)$ is skew-adjoint.</p>
+<p><strong>Corollary.</strong> The identity operator is self-adjoint, and a scalar operator $\lambda\,\mathrm{id}$ is self-adjoint for every $\lambda \in k$; the scalars lie in the centre of $E$ and in $E^{+}$.</p>
+<p><em>Proof.</em> $\mathrm{id}^{*}=\mathrm{id}$ and the involution is $k$-linear, so $(\lambda\,\mathrm{id})^{*}=\lambda\,\mathrm{id}$; a scalar operator is central because it commutes with every operator.</p>
+<p><strong>Example (the one-sided multiplications).</strong> The multiplications of $A$ satisfy $L_a^{*}=R_a$ and $R_b^{*}=L_b$, computed in <em>The Adjoint of the Left Multiplication on an Algebra</em> from the compatibility of the pairing. Hence $L_a$ is self-adjoint exactly when $a$ is central, and the operator involution exchanges the two sides of the regular representation. It acts on the parameters by the element involution only after the twisted pairing is used, which is the content of the next section.</p>
+<p><strong>Example (a matrix algebra).</strong> For $A=M_n(k)$ with the trace pairing, the adjoint of $T \in \operatorname{End}_k(M_n(k))$ is the adjoint of $T$ with respect to the trace pairing, and the self-adjoint operators are those with $\langle TX,Y\rangle=\langle X,TY\rangle$ for all $X,Y$; the left multiplication by a matrix is self-adjoint exactly when that matrix is scalar.</p>
+<h2 id="the-element-involution-and-the-operator-involution">The Element Involution and the Operator Involution</h2>
+<p><strong>Definition.</strong> Let $\sigma$ be an involution of $A$ with $\tau(\sigma(x))=\tau(x)$ for all $x$. The <strong>$\sigma$-twisted pairing</strong> is</p>
+<p>$$
+\{x,y\}=\tau\bigl(x\,\sigma(y)\bigr).
+$$</p>
+<p><strong>Theorem (the twisted pairing).</strong> The twisted pairing is symmetric and nondegenerate, and the map</p>
+<p>$$
+c_{\sigma} : E \to E, \qquad c_{\sigma}(T)=\sigma\,T\,\sigma,
+$$</p>
+<p>is an involutive algebra automorphism of $E$ of order two.</p>
+<p><em>Proof.</em> For symmetry, $\{y,x\}=\tau(y\sigma(x))=\tau(\sigma(y\sigma(x)))=\tau(x\sigma(y))=\{x,y\}$, using the $\sigma$-invariance of $\tau$ and the anti-multiplicativity $\sigma(y\sigma(x))=\sigma(\sigma(x))\sigma(y)=x\sigma(y)$. For nondegeneracy, $\{x,y\}=0$ for all $y$ means $\tau(xz)=0$ for all $z$ after $y$ is replaced by $\sigma(y)$, which ranges over $A$ because $\sigma$ is bijective; the nondegeneracy of $\langle\cdot,\cdot\rangle$ then gives $x=0$. The map $c_{\sigma}$ is a composite of the anti-automorphism $\sigma$ with itself, hence is multiplicative: $c_{\sigma}(ST)=\sigma ST\sigma=(\sigma T\sigma)(\sigma S\sigma)=c_{\sigma}(T)c_{\sigma}(S)$; it is $k$-linear, unital, and $c_{\sigma}^{2}(T)=\sigma^{2}T\sigma^{2}=T$.</p>
+<p><strong>Proposition (the two involutions differ by the element involution).</strong> Let $T^{*_\sigma}$ be the adjoint of $T$ for the twisted pairing. Then</p>
+<p>$$
+T^{*_\sigma}=\sigma\,T^{*}\,\sigma=c_{\sigma}(T^{*}),
+$$</p>
+<p>the twisted adjoint is the conjugate of the plain adjoint by the element involution, and the two involutions of $E$ agree on $T$ exactly when $T^{*}$ commutes with $\sigma$.</p>
+<p><em>Proof.</em> The identity is proved in <em>The Adjoint in an Involutive Algebra</em> by a comparison of the two pairings; the agreement statement is the case $\sigma T^{*}\sigma=T^{*}$, which is the commutation of $T^{*}$ with $\sigma$.</p>
+<p>The proposition is the reason the element involution and the operator involution are two structures and not one: a single pairing produces the operator involution, and the element involution acts on it by conjugation, so that a second pairing must be chosen before the two agree. When the left regular representation satisfies $L_{\sigma(a)}=L_a^{*_\sigma}$ the representation is a <code>*</code>-representation, and that agreement is proved, not assumed, in <em>The Adjoint of the Left Multiplication on an Algebra</em>.</p>
+<p><strong>Example (the matrix algebra with the transpose).</strong> Let $A=M_n(k)$, $\sigma$ the transpose and $\tau=\operatorname{Tr}$. The plain pairing is $\langle X,Y\rangle=\operatorname{Tr}(XY)$ and the twisted pairing is $\{X,Y\}=\operatorname{Tr}(XY^{\mathsf{T}})=\sum_{i,j}X_{ij}Y_{ij}$, the positive definite trace pairing of the matrix algebra; the conjugation $c_{\sigma}(T)$ is the transpose-conjugate of an operator on matrices, and the two operator involutions differ by it.</p>
+<h2 id="summary">Summary</h2>
+<p>A nondegenerate symmetric pairing $\langle x,y\rangle=\tau(xy)$ on a finite-dimensional algebra $A$ gives every operator $T \in E=\operatorname{End}_k(A)$ an adjoint $T^{*}$ by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$, and the assignment $T\mapsto T^{*}$ is a $k$-linear anti-automorphism of $E$ of order two: the <strong>involution of the operator algebra</strong>, which makes $(E,*)$ an involutive algebra. Its fixed part $E^{+}$ is the self-adjoint operators, a Jordan algebra under the symmetrised product, its negated part $E^{-}$ is the skew-adjoint operators, a Lie algebra under the commutator, the two forming the Jordan–Lie pair, and the involution restricts to an anti-automorphism of the unit group with the automorphism $\theta(T)=(T^{*})^{-1}$. An involution $\sigma$ of the elements with $\tau\sigma=\tau$ produces the twisted pairing $\{x,y\}=\tau(x\sigma(y))$, a second nondegenerate pairing, and the two operator involutions differ by the conjugation $c_{\sigma}(T)=\sigma T\sigma$: $T^{*_\sigma}=\sigma T^{*}\sigma$. The involution of the elements and the adjoint of the operators are therefore two structures married by the pairing but not equal, and the agreement on a representation is proved rather than assumed. The adjoints of the one-sided, signed and graded operators are the following articles of the group, and the norm, the positivity and the Hilbert-space adjoint are Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$, $A$</td>
+<td>the field, and a finite-dimensional unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$\tau$, $\langle x,y\rangle=\tau(xy)$</td>
+<td>the Frobenius trace and the pairing of the category</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_k(A)$</td>
+<td>the algebra of operators of $A$</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>the adjoint of $T$, defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$</td>
+</tr>
+<tr>
+<td>$(TS)^{*}=S^{*}T^{*}$, $(T^{*})^{*}=T$</td>
+<td>the involution of the operator algebra</td>
+</tr>
+<tr>
+<td>$\theta(T)=(T^{*})^{-1}$</td>
+<td>the order-two automorphism of the unit group $E^{\times}$</td>
+</tr>
+<tr>
+<td>$E^{+}$, $E^{-}$</td>
+<td>the self-adjoint and the skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$\sigma$, $\sigma(x)$</td>
+<td>an involution of the elements and its image</td>
+</tr>
+<tr>
+<td>$\{x,y\}=\tau(x\sigma(y))$</td>
+<td>the $\sigma$-twisted pairing</td>
+</tr>
+<tr>
+<td>$T^{*_\sigma}$</td>
+<td>the adjoint for the twisted pairing</td>
+</tr>
+<tr>
+<td>$c_{\sigma}(T)=\sigma T\sigma$</td>
+<td>the conjugation by the element involution</td>
+</tr>
+<tr>
+<td>$T^{*_\sigma}=c_{\sigma}(T^{*})$</td>
+<td>the relation between the two operator involutions</td>
+</tr>
+<tr>
+<td>$L_a$, $R_a$, $L_a^{*}=R_a$</td>
+<td>the one-sided multiplications and their adjoints</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the multiplication algebra, the trace form and the operators of the regular representation.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the adjoint involution on an algebra of operators and its fixed elements.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the operator algebra of a finite-dimensional algebra and the trace pairing.</li>
+<li>Matej Brešar, <em>Introduction to Noncommutative Algebra</em> (Springer, 2014), for the endomorphism algebra of a module, the adjoint under a nondegenerate pairing and the centraliser of an involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

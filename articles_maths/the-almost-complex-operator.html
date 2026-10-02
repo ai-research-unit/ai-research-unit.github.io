@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Almost Complex Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-almost-complex-operator"><strong>The Almost Complex Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>almost complex operator</strong> on a smooth manifold $M$ is a field $J$ of endomorphisms of the tangent bundle with $J^2 = -\mathrm{id}$ — the field form of the complex structure of a complex vector space, and an operator on the tangent spaces in its own right. It equips every tangent space with the structure of a complex vector space, and it splits the complexified tangent bundle into the $\pm i$ eigenbundles; the two projections onto those eigenbundles are the operators
+$$
+\pi^{1,0} = \tfrac12(\mathrm{id} - iJ), \qquad \pi^{0,1} = \tfrac12(\mathrm{id} + iJ),
+$$
+which are idempotent and conjugate. The operator $J$ alone is not enough to make $M$ a complex manifold: the projections need not be compatible with the Lie bracket, and the obstruction is a tensor, the <strong>Nijenhuis operator</strong> $N_J$, built from $J$ and the bracket. The integrability theorem of Newlander–Nijenhuis states that $N_J$ vanishes exactly when the almost complex structure comes from a holomorphic atlas. When a Hermitian metric $g$ is chosen with $g(JX,JY) = g(X,Y)$, the operator $J$ becomes an isometry of each tangent space, and the pair $(J,g)$ is an almost Hermitian structure whose fundamental form is $\Omega(X,Y) = g(JX,Y)$.</p>
+<p>The article has four sections: the almost complex operator and the eigenprojections; the linear model, in which $J$ is always integrable; the Nijenhuis operator and the integrability criterion; and the compatibility with the chosen Hermitian metric. The almost complex structure, its type decomposition, the Nijenhuis tensor with the corpus normalisation, the integrability theorem and the examples are <em>Hermitian Geometry and Almost Complex Structures</em>; the article here reads the same structure as an operator, names its eigenprojections and gives the operator form of the integrability criterion. The exterior algebra and the Lie bracket are <em>Differential Forms</em> and <em>The Lie Derivative</em>; the Hermitian metric, the fundamental form and the Kähler condition are <em>Kähler Geometry</em> and <em>Kähler Manifolds and the Hermitian Form</em>. The complex structure of a linear space and its linearity are <em>The Involution on a Complex Vector Space</em>, later in this category.</p>
+<p>Throughout, $M$ is a smooth manifold of even dimension $2n$, $J \in \Gamma(\operatorname{End}(TM))$ is an almost complex structure, $T_{\mathbb C}M = T^{1,0}M\oplus T^{0,1}M$ is the decomposition into the $+i$ and $-i$ eigenbundles of $J$, $\pi^{1,0}$ and $\pi^{0,1}$ are the eigenprojections, $[\,\cdot\,,\,\cdot\,]$ is the Lie bracket of vector fields, and $N_J$ is the Nijenhuis tensor.</p>
+<h2 id="the-almost-complex-operator-and-the-eigenprojections">The Almost Complex Operator and the Eigenprojections</h2>
+<p><strong>Definition.</strong> An <strong>almost complex structure</strong> on $M$ is a smooth field $J$ of endomorphisms of $TM$ with
+$$
+J^2 = -\mathrm{id} ;
+$$
+such a field is also called an <strong>almost complex operator</strong>. A pair $(M,J)$ is an <strong>almost complex manifold</strong>. A map $F : (M,J)\to(N,J')$ is <strong>almost complex</strong> when $dF\circ J = J'\circ dF$.</p>
+<p><strong>Proposition (the eigenprojections).</strong> On the complexified tangent bundle the operator $J$ has the eigenvalues $\pm i$, and the projections onto the eigenbundles are
+$$
+\pi^{1,0} = \tfrac12(\mathrm{id} - iJ), \qquad \pi^{0,1} = \tfrac12(\mathrm{id} + iJ),
+$$
+which satisfy
+$$
+(\pi^{1,0})^2 = \pi^{1,0}, \qquad (\pi^{0,1})^2 = \pi^{0,1}, \qquad \pi^{1,0}\pi^{0,1} = \pi^{0,1}\pi^{1,0} = 0, \qquad \pi^{1,0} + \pi^{0,1} = \mathrm{id} .
+$$
+They are conjugate, $\overline{\pi^{1,0}} = \pi^{0,1}$, and the complexified tangent space is their direct sum.</p>
+<p><strong>Proof.</strong> From $J^2 = -\mathrm{id}$ the polynomial $x^2+1 = (x-i)(x+i)$ annihilates $J$, and the two factors are coprime over $\mathbb{C}$, so $T_{\mathbb C}M$ is the direct sum of the kernels. The identities are the same computation as for a linear operator with minimal polynomial $x^2+1$: $\pi^{1,0}\pi^{0,1} = \tfrac14(\mathrm{id}-iJ)(\mathrm{id}+iJ) = \tfrac14(\mathrm{id}+J^2) = 0$, and $\pi^{1,0}+\pi^{0,1} = \mathrm{id}$; conjugation reverses the sign of $J$ in the definition.</p>
+<p><strong>Remark (the operator and the reduction).</strong> An almost complex operator is the same datum as a reduction of the structure group of $TM$ from $GL(2n,\mathbb R)$ to $GL(n,\mathbb C)$, and the eigenprojections are the operators by which that reduction is expressed: a complex-linear frame is one whose complexification lies in $T^{1,0}M$. The choice of an almost complex structure is a choice of a field of operators, and it is one of the two structures the geometry of the category reads on the tangent spaces.</p>
+<h2 id="the-linear-model">The Linear Model</h2>
+<p><strong>Definition.</strong> On a complex vector space $V$ the structure of multiplication by $i$ is a real endomorphism $J$ with $J^2 = -\mathrm{id}$; the same construction with $V$ the tangent space at a point of $M$ gives the linear model of an almost complex structure, and on $M = \mathbb C^n$ with its standard coordinates the field $J$ is the constant operator of multiplication by $i$ on each tangent space.</p>
+<p><strong>Proposition (the linear model is integrable).</strong> On a complex vector space $V$, and on $\mathbb C^n$ with the standard structure, the almost complex operator $J$ satisfies $N_J = 0$ for the Nijenhuis operator of the next section, and $T^{1,0}V$ is the complex vector space $V$ itself, on which multiplication by $i$ acts as $J$ and the projections $\pi^{1,0},\pi^{0,1}$ are the two standard projections of the complexification $V\otimes\mathbb C = V \oplus \bar V$.</p>
+<p><strong>Proof.</strong> The Lie bracket on a vector space, read in constant coordinates, is zero; hence every term of $N_J$ vanishes. The identification $V\otimes_{\mathbb R}\mathbb C \cong V\oplus\bar V$ with the two projections is the standard form of the complexification, and multiplication by $i$ acts on $V$ by $J$ and on $\bar V$ by $-J$.</p>
+<p><strong>Remark.</strong> The linear model is the reason an almost complex structure is a "complex structure" at each point: the tangent space at every point is a complex vector space. Integrability is the separate question of whether these pointwise complex structures vary so as to come from a single holomorphic atlas; the local model $\mathbb C^n$ answers it affirmatively, and the obstruction for a general $J$ is the operator of the next section.</p>
+<h2 id="the-nijenhuis-operator-and-the-integrability-criterion">The Nijenhuis Operator and the Integrability Criterion</h2>
+<p><strong>Definition.</strong> The <strong>Nijenhuis operator</strong> of an almost complex structure $J$ is the tensor
+$$
+N_J(X, Y) = [JX, JY] - J[X, JY] - J[JX, Y] - [X, Y] \qquad (X, Y \in \mathfrak{X}(M)),
+$$
+with no scalar factor.</p>
+<p><strong>Proposition (tensoriality and elementary symmetries).</strong> $N_J$ is a tensor of type $(1,2)$, that is it is $C^\infty(M)$-bilinear, it is antisymmetric, $N_J(Y,X) = -N_J(X,Y)$, and it satisfies
+$$
+N_J(X, JX) = 0, \qquad N_J(JX, JY) = N_J(X, Y) .
+$$
+When $J$ is integrable the tensor vanishes.</p>
+<p><strong>Proof.</strong> The $C^\infty$-bilinearity is the verification that all the second derivatives cancel, exactly as for the analogous computation in <em>Hermitian Geometry and Almost Complex Structures</em>, and it uses $J^2 = -\mathrm{id}$ and the Jacobi identity; antisymmetry is read from the definition, and $N_J(X,JX) = [JX,J(JX)] - J[X,J(JX)] - J[JX,JX] - [X,JX] = [JX,-X]-J[X,-X]-0-[X,JX] = 0$, since the first two terms cancel the last. The transformation $X\to JX$, $Y\to JY$ leaves $N_J$ unchanged by substitution and $J^2=-\mathrm{id}$.</p>
+<p><strong>Theorem (the integrability criterion).</strong> For an almost complex structure $J$ on $M$ the following are equivalent: (i) $N_J = 0$; (ii) the eigenbundle $T^{1,0}M$ is closed under the Lie bracket; (iii) $M$ carries a holomorphic atlas whose induced almost complex structure is $J$. The equivalence of (i) and (iii) is the theorem of Newlander–Nijenhuis, quoted; an almost complex structure with $N_J = 0$ is <strong>integrable</strong> and $(M,J)$ is a complex manifold.</p>
+<p><strong>Proof.</strong> The equivalence of (i) and (ii) is the computation that the bracket of two sections of $T^{1,0}M$ has a $(0,1)$-component equal to the corresponding value of $N_J$, so that $T^{1,0}M$ is bracket-closed exactly when $N_J$ vanishes; this is the operator form of the Newlander–Nijenhuis vanishing. The theorem that bracket-closedness is equivalent to the existence of a holomorphic atlas is quoted from <em>Hermitian Geometry and Almost Complex Structures</em>, where the Nijenhuis tensor is introduced and the filtration of the proof is deferred.</p>
+<p><strong>Example (an integrable and a non-integrable structure on $\mathbb R^4$).</strong> On $\mathbb R^4$ with coordinates $(x,y,z,t)$ the standard complex structure $J\partial_x = \partial_y$, $J\partial_y = -\partial_x$, $J\partial_z = \partial_t$, $J\partial_t = -\partial_z$ has $J^2 = -\mathrm{id}$ and $N_J = 0$, being the linear model. The structure
+$$
+J\partial_x = \partial_y + z\,\partial_z, \quad J\partial_y = -\partial_x - z\,\partial_t, \quad J\partial_z = \partial_t, \quad J\partial_t = -\partial_z
+$$
+also has $J^2 = -\mathrm{id}$, and a direct computation gives
+$$
+N_J(\partial_x, \partial_z) = \partial_t \neq 0 ,
+$$
+so this almost complex structure is not integrable and $\mathbb R^4$ with it carries no holomorphic atlas compatible with $J$.</p>
+<h2 id="the-compatibility-with-the-chosen-hermitian-metric">The Compatibility with the Chosen Hermitian Metric</h2>
+<p><strong>Definition.</strong> A Hermitian metric $g$ on an almost complex manifold $(M,J)$ is a Riemannian metric with
+$$
+g(JX, JY) = g(X, Y) \qquad (X, Y \in \mathfrak{X}(M));
+$$
+the pair $(J,g)$ is an <strong>almost Hermitian structure</strong>, and its <strong>fundamental form</strong> is $\Omega(X,Y) = g(JX,Y)$. The structure is <strong>almost Kähler</strong> when $\Omega$ is closed, <strong>Kähler</strong> when moreover $\nabla J = 0$ for the Levi-Civita connection.</p>
+<p><strong>Proposition (the operator is an isometry of each tangent space).</strong> When $g$ is Hermitian for $J$, the operator $J$ is orthogonal at every point, $J^{\mathsf T}J = \mathrm{id}$; the fundamental form is a real $(1,1)$-form, alternating, $\Omega(Y,X) = -\Omega(X,Y)$; and the complexified tangent bundle carries the positive-definite Hermitian form $g_{\mathbb C}(v,w) = g(v,\bar w)$ whose holomorphic part is the restriction to $T^{1,0}M$.</p>
+<p><strong>Proof.</strong> $g(JX,JY)=g(X,Y)$ is the orthogonality, and the transpose form $g(JX,Y)=g(JX,J(JY))... $ shows $\Omega$ is skew: $\Omega(Y,X)=g(JY,X)=g(JY,J(JX))=-g(Y,JX)=-\Omega(X,Y)$ using $g(J\cdot,J\cdot)=g$ and $g(JY,J(JX))=g(JY,-X)=-g(JY,X)$. The form $g_{\mathbb C}$ is Hermitian because $J$ is orthogonal, and its positivity is that of $g$; restricting to $T^{1,0}M$ gives the Hermitian form of the holomorphic tangent space. This is <em>Hermitian Geometry and Almost Complex Structures</em> and <em>Kähler Geometry</em>.</p>
+<p><strong>Remark (what is chosen).</strong> The almost complex operator $J$ is a choice and the Hermitian metric $g$ is a second, independent choice; the type, the eigenprojections and the Nijenhuis tensor depend on $J$ alone, while the isometry of $J$, the fundamental form and the comparison of $J$ with the Levi-Civita connection depend on the pair $(J,g)$. The existence of a $g$-compatible $J$ on a symplectic manifold, and the contractibility of the compatible almost complex structures, are <em>Symplectic Geometry</em>, earlier in this Part; the equality $N_J = 0$ is untouched by the metric, which is the sense in which integrability is a property of the operator $J$ alone.</p>
+<h2 id="summary">Summary</h2>
+<p>An almost complex operator is a field $J$ of endomorphisms of $TM$ with $J^2 = -\mathrm{id}$; it makes each tangent space a complex vector space, splits the complexified tangent bundle into the eigenbundles $T^{1,0}M$, $T^{0,1}M$ of $\pm i$, and gives the idempotent conjugate eigenprojections $\pi^{1,0} = \tfrac12(\mathrm{id}-iJ)$ and $\pi^{0,1} = \tfrac12(\mathrm{id}+iJ)$. On a complex vector space, and on $\mathbb C^n$ with the standard structure, $N_J = 0$ and the structure is the linear model; in general the obstruction to integrability is the Nijenhuis operator $N_J(X,Y) = [JX,JY] - J[X,JY] - J[JX,Y] - [X,Y]$, a $(1,2)$-tensor, antisymmetric, vanishing on $(X,JX)$ and invariant under $(X,Y)\mapsto(JX,JY)$, and $N_J = 0$ is equivalent to the bracket-closedness of $T^{1,0}M$ and, by Newlander–Nijenhuis, to the existence of a holomorphic atlas. The non-integrable example $J\partial_x = \partial_y + z\partial_z$, $J\partial_y = -\partial_x - z\partial_t$, $J\partial_z = \partial_t$, $J\partial_t = -\partial_z$ on $\mathbb R^4$ has $J^2 = -\mathrm{id}$ and $N_J(\partial_x,\partial_z) = \partial_t\neq0$. A chosen Hermitian metric $g$ with $g(JX,JY)=g(X,Y)$ makes $J$ an isometry and defines the fundamental form $\Omega(X,Y)=g(JX,Y)$; the pair $(J,g)$ is almost Hermitian, almost Kähler when $d\Omega = 0$ and Kähler when $\nabla J = 0$. The type decomposition, the Nijenhuis tensor and the integrability theory are <em>Hermitian Geometry and Almost Complex Structures</em>; the metric and the Kähler condition are <em>Kähler Geometry</em> and <em>Kähler Manifolds and the Hermitian Form</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$, $J^2 = -\mathrm{id}$</td>
+<td>the almost complex operator</td>
+</tr>
+<tr>
+<td>$T^{1,0}M$, $T^{0,1}M$</td>
+<td>the $\pm i$ eigenbundles of $J$</td>
+</tr>
+<tr>
+<td>$\pi^{1,0}$, $\pi^{0,1}$</td>
+<td>eigenprojections, $\tfrac12(\mathrm{id}\mp iJ)$, idempotent and conjugate</td>
+</tr>
+<tr>
+<td>$N_J(X,Y)$</td>
+<td>the Nijenhuis operator, $[JX,JY]-J[X,JY]-J[JX,Y]-[X,Y]$</td>
+</tr>
+<tr>
+<td>$g(JX,JY)=g(X,Y)$</td>
+<td>the Hermitian compatibility of the metric</td>
+</tr>
+<tr>
+<td>$\Omega(X,Y)=g(JX,Y)$</td>
+<td>the fundamental form</td>
+</tr>
+<tr>
+<td>$\nabla J = 0$</td>
+<td>the Kähler condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry II</em> (Interscience, 1969), for the almost complex structure, the integrability and the Hermitian metrics.</li>
+<li>Newlander and Nirenberg, "Complex analytic coordinates in almost complex manifolds", <em>Annals of Mathematics</em> <strong>65</strong> (1957), 391–404, for the integrability theorem.</li>
+<li>Paul Gauduchon, "Hermitian connections and Dirac operators", <em>Bollettino dell'Unione Matematica Italiana</em> <strong>11</strong> (1997), 257–288, for the almost Hermitian structures and the fundamental form.</li>
+<li>Alfred Frölicher and Albert Nijenhuis, "Theory of vector-valued differential forms", <em>Koninklijke Nederlandse Akademie van Wetenschappen</em> <strong>59</strong> (1956), 338–359, for the Nijenhuis tensor and the Frölicher–Nijenhuis bracket.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

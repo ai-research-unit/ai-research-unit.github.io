@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Endomorphism Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-endomorphism-algebra"><strong>Involutions of the Endomorphism Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of the endomorphism algebra $E = \operatorname{End}_F(V)$ is an additive map $E \to E$ of order two that reverses products, and the standard one is the <strong>adjoint</strong> with respect to a non-degenerate pairing on $V$: the endomorphism $A^{*}$ determined by $B(Ax,y) = B(x,A^{*}y)$. This article develops the involutions of $E$ from that example, the laws that make the adjoint an anti-automorphism of order two, the decomposition of $E$ into its self-adjoint and skew-adjoint parts, the matrix description of the involution, and the unitary elements it singles out — the endomorphisms that preserve the pairing.</p>
+<p>The pairing-based adjoint of a single endomorphism, its existence and uniqueness, its kernel and image and its relation to the transpose, is <em>The Adjoint of an Endomorphism</em>, in the <code>*</code>-operator group, and the group that the unitary elements form, with its Lie algebra, is <em>Unitary Endomorphisms</em>; this article is the <code>*</code>-theory counterpart, and it treats the involution as a structure on the algebra rather than the adjoint as an operator. The transposed involution on the dual, and the comparison of the duality of the dual with the duality of the pairing, are <em>Involutions of the Dual Space</em> and <em>The Involution on the Dual Operator</em>. The automorphism $X \mapsto T X T^{-1}$ induced by a linear involution, which is an <strong>algebra automorphism</strong> of order two and not an anti-automorphism, belongs to <em>Involutive Linear Algebras</em>; the two are different kinds of involution of the same algebra and are not conflated here. The forms themselves, their norms and the way they measure, are <em>Hilbert Algebras</em>, in Part II, and only the pairing is used here, evaluated to a scalar and never measured.</p>
+<p>Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $B : V \times V \to F$ is a non-degenerate reflexive pairing: either bilinear with $B(y,x) = \varepsilon B(x,y)$ for a sign $\varepsilon = \pm 1$, or sesquilinear with respect to an involution $\varsigma$ of $F$ with $B(y,x) = \overline{B(x,y)}$ where the bar is $\varsigma$. The case $\varsigma = \mathrm{id}$ is the bilinear case, and a sign $\varsigma(\lambda) = \lambda$ is understood when $\varsigma$ is not mentioned.</p>
+<h2 id="the-adjoint-involution">The Adjoint Involution</h2>
+<h3 id="definition-and-existence">Definition and Existence</h3>
+<p><strong>Definition.</strong> For $A \in E$ the <strong>adjoint</strong> of $A$ with respect to $B$ is the map $A^{*} : V \to V$ with</p>
+<p>$$
+B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V .
+$$</p>
+<p><strong>Proposition.</strong> The adjoint $A^{*}$ exists, is unique and is linear; the assignment $A \mapsto A^{*}$ is $\varsigma$-semilinear, and it is an involution of the algebra $E$:</p>
+<p>$$
+(A^{*})^{*} = A, \qquad (A+B)^{*} = A^{*}+B^{*}, \qquad (\lambda A)^{*} = \varsigma(\lambda)A^{*}, \qquad (AB)^{*} = B^{*}A^{*} .
+$$</p>
+<p><strong>Proof.</strong> Fix $y$. The map $x \mapsto B(Ax,y)$ is linear, and since $x \mapsto B(x,z)$ is a bijection $V \to V^{*}$ by the non-degeneracy of $B$, there is a unique $A^{*}y$ with $B(x,A^{*}y) = B(Ax,y)$; the uniqueness for each $y$ makes $A^{*}$ a well-defined map. For linearity, $B(x,A^{*}(y+\lambda z)) = B(Ax,y+\lambda z) = B(Ax,y)+\overline{\lambda}B(Ax,z) = B(x,A^{*}y) + \overline{\lambda}B(x,A^{*}z) = B(x, A^{*}y+\overline{\lambda}A^{*}z)$, so $A^{*}(y+\lambda z) = A^{*}y+\overline{\lambda}A^{*}z$ and $A^{*}$ is linear in the bilinear case and satisfies $A^{*}(\lambda y) = \overline{\lambda}A^{*}y$ otherwise. The four laws follow by uniqueness: $B(x,(A^{*})^{*}y) = B(A^{*}x,y) = \overline{B(y,A^{*}x)} = \overline{B(Ay,x)} = B(x,Ay)$; additivity and semilinearity are the definitions; and $B(x,(AB)^{*}y) = B(ABx,y) = B(Bx,A^{*}y) = B(x,B^{*}A^{*}y)$.</p>
+<p><strong>Remark (the kinds).</strong> If $\varsigma = \mathrm{id}$ the involution is <strong>of the first kind</strong>, and it is $F$-linear; if $\varsigma \neq \mathrm{id}$ it is <strong>of the second kind</strong>, and it is conjugate-linear. The reflexive hypothesis is what makes the involution have order two; a general bilinear pairing gives an adjoint with $(A^{*})^{*} = A$ only after the pairing is replaced by its reflexivisation.</p>
+<h3 id="the-fixed-and-skew-parts">The Fixed and Skew Parts</h3>
+<p><strong>Definition.</strong> An endomorphism is <strong>self-adjoint</strong> when $A^{*} = A$, <strong>skew-adjoint</strong> when $A^{*} = -A$, and <strong>normal</strong> when $AA^{*} = A^{*}A$.</p>
+<p><strong>Proposition.</strong> If $\varsigma = \mathrm{id}$ and $2 \neq 0$ in $F$, then $E$ is the direct sum of its self-adjoint and skew-adjoint parts,</p>
+<p>$$
+E = E^{+} \oplus E^{-}, \qquad E^{\pm} = \{A : A^{*} = \pm A\} ,
+$$</p>
+<p>and the dimensions are $\dim_F E^{+} = n(n+1)/2$ and $\dim_F E^{-} = n(n-1)/2$ for a symmetric pairing, and the two dimensions exchanged for an antisymmetric one. In the sesquilinear case the self-adjoint elements form an $F^{\varsigma}$-linear space only, and the decomposition is not an $F$-linear decomposition.</p>
+<p><strong>Proof.</strong> For $A \in E$ write $A = \tfrac12(A+A^{*}) + \tfrac12(A-A^{*})$, a sum of a self-adjoint and a skew-adjoint element; the sum is direct because an element that is both satisfies $A = -A$, hence $A = 0$ when $2 \neq 0$. The dimensions are those of the two eigenspaces of the involution $A \mapsto A^{*}$ and are computed in the matrix form below; an antisymmetric pairing exchanges them because the adjoint of $A$ with respect to $-B$ is the negative of its adjoint with respect to $B$.</p>
+<h3 id="the-matrix-form">The Matrix Form</h3>
+<p><strong>Proposition.</strong> Let $\Phi$ be the Gram matrix of $B$, $\Phi_{ij} = B(v_i,v_j)$, in a basis $v_1,\dots,v_n$. Then $\Phi$ is invertible and</p>
+<p>$$
+[A^{*}] = \Phi^{-1}\,\overline{[A]}^{\mathsf{T}}\,\Phi ,
+$$</p>
+<p>where the bar applies $\varsigma$ to each entry and the transpose is the matrix transpose. Consequently $\operatorname{tr}A^{*} = \varsigma(\operatorname{tr}A)$ and, in the bilinear case, $\det A^{*} = \det A$.</p>
+<p><strong>Proof.</strong> Writing $B(x,y) = x^{\mathsf{T}}\Phi\overline{y}$ in coordinates and substituting the defining identity gives $A^{\mathsf{T}}\Phi\overline{y} = \Phi\overline{A^{*}y}$ for all $y$, hence $A^{*}= \Phi^{-1}A^{\mathsf{T}}\Phi$ up to the bar; the trace of $\Phi^{-1}A^{\mathsf{T}}\Phi$ is that of $A^{\mathsf{T}}$, and the determinant is the same because the conjugating factors cancel.</p>
+<p><strong>Corollary (the involution is determined by $\Phi$).</strong> Two non-degenerate reflexive pairings give conjugate involutions exactly when their Gram matrices are congruent, $\Phi' = C^{\mathsf{T}}\Phi\overline{C}$ for an invertible $C$; the involution is therefore a function of the congruence class of the pairing.</p>
+<p><strong>Remark (the classification).</strong> Over a field, the involutions of the first kind of the matrix algebra $M_n(F)$ are exactly the maps $A \mapsto \Phi^{-1}A^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix of a non-degenerate symmetric or antisymmetric pairing, in the two families <strong>orthogonal</strong> and <strong>symplectic</strong>; the involutions of the second kind arise from sesquilinear pairings and are classified over a field with an involution by the hermitian and the skew-hermitian families. The classification is standard and is <em>Involutive Rings</em> and <em>Central Simple Algebras and the Brauer Group</em>.</p>
+<h2 id="the-unitary-elements">The Unitary Elements</h2>
+<p><strong>Definition.</strong> An endomorphism $A \in E$ is <strong>unitary</strong> for $B$ when $A^{*}A = AA^{*} = \mathrm{id}_V$; equivalently, when $A$ is invertible and $A^{*} = A^{-1}$.</p>
+<p><strong>Proposition.</strong> The unitary elements are exactly the endomorphisms preserving the pairing,</p>
+<p>$$
+A^{*}A = \mathrm{id} \iff B(Ax,Ay) = B(x,y) \text{ for all } x,y ,
+$$</p>
+<p>and they form a subgroup $U(V,B)$ of $E^{\times}$; in the bilinear symmetric case it contains $-1$ and the scalars $\lambda$ with $\lambda^{2} = 1$, in the antisymmetric case it contains $1$ and the scalars are $1$ only, and in the sesquilinear case it contains the scalars $\lambda$ with $\lambda\varsigma(\lambda) = 1$.</p>
+<p><strong>Proof.</strong> If $A^{*} = A^{-1}$ then $B(Ax,Ay) = B(x,A^{*}Ay) = B(x,y)$; conversely $B(Ax,Ay)=B(x,y)$ for all $x,y$ gives $B(x,A^{*}Ay) = B(x,y)$, hence $A^{*}A = \mathrm{id}$ by non-degeneracy, and $AA^{*} = \mathrm{id}$ follows because $A$ is invertible, with inverse $A^{*}$. The product of two unitaries is unitary because $(AB)^{*}AB = B^{*}A^{*}AB = B^{*}B = \mathrm{id}$; the identity and inverses are unitary because $(A^{-1})^{*} = (A^{*})^{-1}$. The scalar computation is $(\lambda\mathrm{id})^{*}(\lambda\mathrm{id}) = \varsigma(\lambda)\lambda\,\mathrm{id}$.</p>
+<p><strong>Proposition (the determinant).</strong> In the bilinear case $\det A \det A^{*} = \det(AA^{*}) = 1$ and $\det A^{*} = \det A$, so $\det(A)^{2} = 1$ for a symmetric pairing; for an antisymmetric pairing $\det(A^{*}) = \det(A)$ and one has $\det A = 1$, because the adjoint of a symplectic transformation has determinant $1$ in even dimension.</p>
+<p><strong>Proof.</strong> The first part is multiplicativity of the determinant and $\det A^{*}=\det A$; the antisymmetric case is the standard determinant identity for the symplectic group, quoted from the theory of the classical groups and belonging to <em>Symmetric Linear Algebras</em> and <em>Anti-symmetric Linear Algebras</em>.</p>
+<p><strong>Remark (the unitary elements as a set, not yet a group of operators).</strong> This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $U(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are <em>Unitary Endomorphisms</em>, which follows.</p>
+<h2 id="summary">Summary</h2>
+<p>A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines an involution $A \mapsto A^{*}$ of the endomorphism algebra $E = \operatorname{End}_F(V)$ by $B(Ax,y) = B(x,A^{*}y)$; the adjoint exists and is unique, and the assignment is an additive, anti-multiplicative, order-two map, $F$-linear for a bilinear pairing and $\varsigma$-semilinear for a sesquilinear one. Over a field with $2 \neq 0$ and a bilinear pairing the algebra is the direct sum of the self-adjoint and the skew-adjoint parts, of dimensions $n(n+1)/2$ and $n(n-1)/2$ for a symmetric pairing and exchanged for an antisymmetric one; in the sesquilinear case the fixed part is only $F^{\varsigma}$-linear. In a basis the involution is $A \mapsto \Phi^{-1}\overline{A}^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix, so it depends on the congruence class of the pairing; the trace and, in the bilinear case, the determinant are preserved. The unitary elements, $A^{*}A = AA^{*} = \mathrm{id}$, are exactly the endomorphisms preserving $B$ and form a subgroup containing the appropriate scalars, with determinant satisfying $\det(A)^{2}=1$ in the symmetric bilinear case and $\det A = 1$ in the antisymmetric case. The classification of the involutions of the matrix algebra, the group structure of the unitary elements and the analytic theory of the forms belong to <em>Involutive Rings</em>, <em>Unitary Endomorphisms</em> and <em>Hilbert Algebras</em> respectively.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $\varsigma$</td>
+<td>the field of scalars and the involution of $F$ of the sesquilinear case</td>
+</tr>
+<tr>
+<td>$V$, $n$</td>
+<td>the space and its dimension</td>
+</tr>
+<tr>
+<td>$E = \operatorname{End}_F(V)$</td>
+<td>the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>a non-degenerate reflexive pairing on $V$</td>
+</tr>
+<tr>
+<td>$A^{*}$</td>
+<td>the adjoint of $A$: $B(Ax,y)=B(x,A^{*}y)$</td>
+</tr>
+<tr>
+<td>$(A^{*})^{*}=A$, $(AB)^{*}=B^{*}A^{*}$</td>
+<td>the involution laws</td>
+</tr>
+<tr>
+<td>$E^{+}$, $E^{-}$</td>
+<td>self-adjoint and skew-adjoint parts, $A^{*}=\pm A$</td>
+</tr>
+<tr>
+<td>$\Phi_{ij}=B(v_i,v_j)$</td>
+<td>the Gram matrix</td>
+</tr>
+<tr>
+<td>$[A^{*}]=\Phi^{-1}\overline{[A]}^{\mathsf{T}}\Phi$</td>
+<td>the matrix form of the involution</td>
+</tr>
+<tr>
+<td>$U(V,B)$</td>
+<td>the unitary elements, $A^{*}A=AA^{*}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>the sign of the reflexive bilinear pairing, $B(y,x)=\varepsilon B(x,y)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for sesquilinear pairings, adjoints and the unitary group.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for involutions of matrix algebras and the classical groups.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the classification of the involutions of a central simple algebra.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for the adjoint with respect to a form and the structure of the classical groups.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the orthogonal and symplectic involutions and their determinant behaviour.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

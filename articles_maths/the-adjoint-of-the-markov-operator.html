@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Markov Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-markov-operator"><strong>The Adjoint of the Markov Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Markov operator of a chain is a contraction of $L^2(\pi)$ when the stationary measure $\pi$ is fixed, and this article computes its <strong>adjoint</strong>. The result is the cleanest statement of the time reversal at the level of operators: the adjoint is the Markov operator of the <strong>reversed chain</strong>,
+$$
+P^*f(y)=\frac{1}{\pi(y)}\sum_x\pi(x)\,p(x,y)\,f(x)=\sum_x\hat p(y,x)f(x),\qquad \hat p(y,x)=\frac{\pi(x)p(x,y)}{\pi(y)},
+$$
+so the adjoint operation reverses the direction of the transitions and keeps the stationary measure. It follows that the chain is reversible exactly when $P$ is self-adjoint, $P^*=P$, which is the detailed balance of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category, and that the adjoint operation is the operator counterpart of the reversal $r$ of the path space. The article derives the formula, identifies the adjoint with the reversed chain, records the properties of the adjoint — the constants and the stationary measure, the powers and the spectrum, the self-adjointness and the unitarity — and states the comparison between the involution on the elements and the adjoint on the operators, the two structures that the group of this entry builds.</p>
+<p>The conventions are those of the category. The chain, its transition kernel, its paths and its stationarity are <em>Markov Chains and Processes</em>, written; the Markov operator, its invariant measures and its ergodicity are <em>The Markov Operator</em>, earlier in this category; the transition operator and its semigroup are <em>The Transition Operator</em>, earlier in this category; the reversed chain, the detailed balance and the self-adjointness are <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category; the adjoint of an operator on a Hilbert space, the self-adjointness and the spectral theorem are <em>Banach and Hilbert Spaces</em>, written, and the operator-algebraic adjoint is <em>Operator Algebras</em>, written. The involution on the operator algebra of a process, which is the element-level structure underlying this adjoint, is <em>The Involution on the Operator Algebra of a Process</em>, the next article of this category, and the adjoint of the transition operator is <em>The Adjoint of the Transition Operator</em>, later in this category. No physics is invoked; the word time names the index of the chain and nothing else.</p>
+<p>Throughout, $E$ is a countable set or a standard Borel space, $p(x,dy)$ is the transition kernel, $\pi$ is a stationary probability measure, and the chain is $\{X_n\}$. The Markov operator is $Pf(x)=\int p(x,dy)f(y)$, acting on $L^2(\pi)$ with the inner product
+$$
+\langle f,g\rangle_\pi=\int_E f\bar g\,d\pi ,
+$$
+and it satisfies $\|P\|_{L^2(\pi)}\le1$ and $P1=1$ when $\pi$ is stationary. The reversed chain is $\hat p$ with $\hat p(x,dy)=\pi(dy)p(y,dx)/\pi(dx)$, and $\hat P$ is its Markov operator.</p>
+<h2 id="the-adjoint-on-math19">The Adjoint on $L^2(\pi)$</h2>
+<h3 id="definition-and-the-formula">Definition and the formula</h3>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> $P^*$ is the bounded operator on $L^2(\pi)$ characterised by
+$$
+\langle Pf,g\rangle_\pi=\langle f,P^*g\rangle_\pi\qquad\text{for all }f,g\in L^2(\pi).
+$$</p>
+<p><strong>Theorem (the adjoint formula).</strong> Let $\pi$ be stationary for $p$. Then
+$$
+P^*g(y)=\frac{1}{\pi(y)}\int_E \pi(dx)\,p(x,dy)\,g(x)=\int_E\hat p(y,dx)\,g(x)
+$$
+$\pi$-almost everywhere, where $\hat p(y,dx)=\pi(dx)p(x,dy)/\pi(y)$ is the reversed kernel. Equivalently $P^*=\hat P$, the Markov operator of the reversed chain.</p>
+<p><em>Proof.</em> Compute
+$$
+\langle Pf,g\rangle_\pi=\int_E\pi(dx)\Bigl(\int_Ep(x,dy)f(y)\Bigr)\overline{g(x)}=\int_E f(y)\Bigl(\int_E\pi(dx)p(x,dy)\overline{g(x)}\Bigr),
+$$
+the interchange being guaranteed by the finiteness of the mass and the boundedness of the two factors. The inner integral is absolutely continuous with respect to $\pi$ with density $\int_E\pi(dx)p(x,dy)/\pi(y)$, by the definition of the reversed kernel, so the right side is $\int_E f(y)\,\pi(dy)\,\overline{\int_E\hat p(y,dx)g(x)}$; comparing with $\langle f,P^*g\rangle_\pi$ gives the formula.</p>
+<p><strong>Theorem (the adjoint is a Markov operator).</strong> The reversed kernel $\hat p$ is a transition kernel with $\pi$ stationary, $P^*1=1$, $P^*\ge0$ and $\|P^*\|_{L^2(\pi)}\le1$; the adjoint is again a Markov operator, and the construction is involutive, $(P^*)^*=P$.</p>
+<p><em>Proof.</em> The reversed kernel is a kernel because $\int\hat p(x,dy)=\int\pi(dy)p(y,dx)/\pi(x)=(\pi P)(dx)/\pi(x)=1$ by the stationarity of $\pi$; the constant function is preserved, $P^*1=1$, and the positivity and the contraction bound are those of a Markov operator. The involution is the symmetry of the definition of $\hat p$ in the pair $(p,\pi)$, which is the same as the relation between the two chains.</p>
+<h2 id="properties-of-the-adjoint">Properties of the Adjoint</h2>
+<h3 id="stationary-measures-and-the-constants">Stationary measures and the constants</h3>
+<p><strong>Theorem (the stationary measure and the constants).</strong> The adjoint $P^*$ has $\pi$ as a stationary measure, $\pi P^*=\pi$, and it fixes the constants, $P^*1=1$; the adjoint of a Markov operator is therefore a Markov operator with the same stationary measure. The harmonic functions of $P^*$, the solutions of $P^*f=f$, are those of the reversed chain; they coincide with the harmonic functions of $P$ exactly when the chain is reversible.</p>
+<p><em>Proof.</em> Integrating the adjoint formula against $\pi$ gives $\int\pi(dy)P^*g(y)=\int\pi(dx)(Pg)(x)$, so $\pi P^*=\pi P=\pi$; the constant is fixed because $\int\hat p(y,dx)=1$. A function is harmonic for $P^*$ exactly when it is harmonic for the reversed chain $\hat p$, and the two chains have the same harmonic functions exactly when they coincide, that is when the chain is reversible.</p>
+<h3 id="products-powers-and-the-spectrum">Products, powers and the spectrum</h3>
+<p><strong>Theorem.</strong> The adjoint satisfies
+$$
+(PQ)^*=Q^*P^*,\qquad (P^n)^*=(P^*)^n,\qquad (\lambda P+\mu Q)^*=\bar\lambda P^*+\bar\mu Q^*,
+$$
+and its spectrum is the complex conjugate of that of $P$,
+$$
+\operatorname{spec}(P^*)=\overline{\operatorname{spec}(P)}=\{\bar\lambda:\lambda\in\operatorname{spec}(P)\}.
+$$</p>
+<p><em>Proof.</em> The first three identities are the general properties of the adjoint on a Hilbert space; the spectrum identity is the standard fact that the adjoint has the conjugated spectrum, since $P^*-\bar\lambda I=(P-\lambda I)^*$ is invertible if and only if $P-\lambda I$ is.</p>
+<p><strong>Corollary (the real spectrum in the reversible case).</strong> If the chain is reversible, $P^*=P$, the Markov operator is self-adjoint, its spectrum is real and contained in $[-1,1]$, and the eigenfunctions of distinct eigenvalues are orthogonal; these are the spectral consequences of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category, now read as a statement about the adjoint.</p>
+<p><em>Proof.</em> Self-adjointness is $P^*=P$, and the spectral theorem for a self-adjoint contraction gives the reality and the bound; the orthogonality is the general theorem for a self-adjoint operator.</p>
+<h3 id="self-adjointness-and-the-detailed-balance">Self-adjointness and the detailed balance</h3>
+<p><strong>Theorem (reversibility as self-adjointness).</strong> The chain is reversible with respect to $\pi$ exactly when $P^*=P$; equivalently, the adjoint is the identity of the reversal, and the reversed chain is the original.</p>
+<p><em>Proof.</em> By the formula, $P^*=P$ is the identity $\pi(x)p(x,y)=\pi(y)p(y,x)$ for the discrete case, which is the detailed balance; the general case is the same identity between the kernels. The statement is the operator form of the reversibility of <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category.</p>
+<h2 id="unitarity-and-measure-preservation">Unitarity and Measure Preservation</h2>
+<p><strong>Theorem (unitarity).</strong> The Markov operator is unitary on $L^2(\pi)$, $P^*P=PP^*=I$, if and only if it is invertible with $\pi$ also stationary for the inverse; then $\hat p$ is the inverse kernel $p^{-1}$ in the sense that $\sum_z\hat p(x,z)p(z,y)=\delta_{xy}$, the chain is a bijection of the classes of positive $\pi$-measure, and the reversed chain is the inverse of the original.</p>
+<p><em>Proof.</em> A contraction with $P1=1$ is unitary exactly when it is invertible; the inverse of a Markov operator with $\pi$ stationary is again a Markov operator exactly when the transition is a bijection of the state space, and the reversed kernel is then the inverse, $\hat p=p^{-1}$, which is the statement $P^*=P^{-1}$.</p>
+<p><strong>Theorem (measure preservation and the adjoint of the Koopman case).</strong> If the chain is deterministic and $\pi$ is preserved by the map $T$, so that $p(x,\cdot)=\delta_{T(x)}$, then the Markov operator is the Koopman operator $U_Tf=f\circ T$ and its adjoint is $U_T^*=U_{T^{-1}}$ when $T$ is invertible, the operator of the reversed dynamics; for a non-invertible $T$ the adjoint is the transfer operator of $T$ with respect to $\pi$, which averages over the preimages.</p>
+<p><em>Proof.</em> The Koopman operator of $T$ is the composition; its adjoint for the $\pi$-invariant form is the composition with $T^{-1}$ when $T$ is invertible, and the general adjoint computes $\int f\circ T\,\bar g\,d\pi=\int f\,\overline{(U_T^*g)}\,d\pi$, which for the non-invertible $T$ is the conditional expectation over the preimage $\sigma$-algebra, the transfer operator. The Koopman operator is <em>The Koopman Operator</em>, written, and the transfer operator is <em>The Transfer Operator</em>, written.</p>
+<h2 id="comparison-with-the-involution">Comparison with the Involution</h2>
+<h3 id="the-two-structures">The two structures</h3>
+<p><strong>Theorem (the involution on the elements and the adjoint on the operators).</strong> The involution on the <strong>elements</strong> — the complex conjugation of the functions of <em>The Involution on the Algebra of Random Variables</em>, earlier in this category — and the adjoint on the <strong>operators</strong> are two structures on two levels; the adjoint $P\mapsto P^*$ is the involution of the operator algebra, whose systematic treatment is <em>The Involution on the Operator Algebra of a Process</em>, the next article of this category. They are linked by the defining relation $\langle Pf,g\rangle_\pi=\langle f,P^*g\rangle_\pi$ and are not the same operation: $P^*$ is neither $P$ nor the multiplication by the conjugate in general, and $P$ is self-adjoint exactly when the chain is reversible, a coincidence that is <strong>proved</strong> from the detailed balance and never assumed.</p>
+<p><em>Proof.</em> The conjugation is an anti-linear map on the functions, while the adjoint is an anti-linear anti-automorphism $P\mapsto P^*$ of the operator algebra for the form $\langle\cdot,\cdot\rangle_\pi$; the self-adjointness $P^*=P$ is the reversibility by the theorem above, and the reverse chain $\hat p$ exhibits the difference in the non-reversible case.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the two-state chain).</strong> With $p(0,1)=a$, $p(1,0)=b$ and $\pi=(b,a)/(a+b)$, the adjoint has the reversed kernel $\hat p(0,1)=\pi(1)p(1,0)/\pi(0)=a$ and $\hat p(1,0)=b$, so $\hat p=p$ and the chain is self-adjoint for all $a,b$; the adjoint is the original.</p>
+<p><strong>Example (the directed cycle).</strong> On $\{1,2,3\}$ with $p(i,i+1)=1$ cyclically and uniform stationary measure, the reversed kernel is $p(i,i-1)=1$, the adjoint is the backwards cycle, and $P^*\ne P$; the adjoint is the complex conjugate in the eigenbasis of the cyclic shift, where the eigenvalues $1,e^{\pm2\pi i/3}$ become their conjugates.</p>
+<p><strong>Example (the birth–death chain).</strong> The birth–death chain is reversible by <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category, so $P^*=P$; the self-adjointness is the detailed balance $\pi(n)b_n=\pi(n+1)a_{n+1}$ of the stationary measure.</p>
+<p><strong>Example (the Koopman adjoint).</strong> For the doubling map $T(x)=2x\bmod1$ on the circle with the Lebesgue measure, the Koopman operator $U_Tf=f\circ T$ has the adjoint $U_T^*g(x)=\frac12(g(x/2)+g((x+1)/2))$, the transfer operator, which averages over the two preimages; the adjoint is not the Koopman operator of any map, since $T$ is not invertible.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The adjoint degenerates in four configurations. First, the adjoint is taken with respect to a <strong>chosen</strong> stationary measure, and the formula is meaningless without the choice; on a chain with several stationary measures each gives its own adjoint and its own reversal. Second, on the $\pi$-null parts of the state space the density $\pi(x)p(x,y)/\pi(y)$ is not defined, and the adjoint is determined only up to the null sets; the ambiguity is the same as in the definition of the reversed chain. Third, the reversible case is where the two structures coincide, and the temptation to assume the coincidence in general is the error the group contract forbids: the adjoint is not the involution, and the difference is the reversed chain. Fourth, the unitarity is a genuine restriction: the Markov operators that are not invertible, among them the transfer operators of the non-invertible maps, have a nontrivial adjoint and no inverse, and the spectrum is the conjugate rather than the reciprocal.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the Markov operator with respect to the stationary measure $\pi$ and the form $\langle f,g\rangle_\pi$ is the Markov operator of the reversed chain,
+$$
+P^*g(y)=\frac{1}{\pi(y)}\int\pi(dx)p(x,dy)g(x)=\int\hat p(y,dx)g(x),\qquad \hat p(y,dx)=\frac{\pi(dx)p(x,dy)}{\pi(y)},
+$$
+so the adjoint reverses the transition, keeps the stationary measure and the constants, is again a Markov operator, and is involutive. It satisfies $(PQ)^*=Q^*P^*$, $(P^n)^*=(P^*)^n$ and $\operatorname{spec}(P^*)=\overline{\operatorname{spec}(P)}$; it is self-adjoint exactly when the chain satisfies the detailed balance and is reversible, in which case the spectrum is real and lies in $[-1,1]$; and it is unitary exactly when the chain is invertible, in which case the reversed chain is the inverse. The adjoint is the operator form of the reversal $r$ of the path space, and it is distinct from the involution on the operator algebra of a process, <em>The Involution on the Operator Algebra of a Process</em>, the next article of this category, with which it coincides precisely on the reversible operators. The adjoint of the transition operator is <em>The Adjoint of the Transition Operator</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$, $Pf(x)=\int p(x,dy)f(y)$</td>
+<td>the Markov operator</td>
+</tr>
+<tr>
+<td>$\langle f,g\rangle_\pi=\int f\bar g\,d\pi$</td>
+<td>the stationary form</td>
+</tr>
+<tr>
+<td>$P^*$, $\langle Pf,g\rangle_\pi=\langle f,P^*g\rangle_\pi$</td>
+<td>the adjoint</td>
+</tr>
+<tr>
+<td>$\hat p(x,dy)=\pi(dy)p(y,dx)/\pi(dx)$</td>
+<td>the reversed kernel</td>
+</tr>
+<tr>
+<td>$P^*=\hat P$</td>
+<td>the adjoint is the reversed chain</td>
+</tr>
+<tr>
+<td>$P^*=P\iff$ detailed balance</td>
+<td>reversibility as self-adjointness</td>
+</tr>
+<tr>
+<td>$(P^n)^*=(P^*)^n$, $\operatorname{spec}(P^*)=\overline{\operatorname{spec}(P)}$</td>
+<td>powers and spectrum</td>
+</tr>
+<tr>
+<td>$P^*=P^{-1}$</td>
+<td>unitarity and invertibility</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>David A. Levin, Yuval Peres and Elizabeth L. Wilmer, <em>Markov Chains and Mixing Times</em> (American Mathematical Society, 2nd edition, 2017), for the reversibility, the adjoint and the reversed chain.</li>
+<li>J. R. Norris, <em>Markov Chains</em> (Cambridge University Press, 1997), for the transitions, the stationarity and the reversal.</li>
+<li>Martin L. Silverstein, <em>Symmetric Markov Processes</em> (Springer, 1974), for the symmetric semigroups and their adjoints.</li>
+<li>Andrzej Lasota and Michael C. Mackey, <em>Chaos, Fractals, and Noise</em> (Springer, 2nd edition, 1994), for the transfer operators and the adjoints of the non-invertible maps.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the adjoints, the self-adjointness and the spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

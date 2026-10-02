@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Endomorphism Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-endomorphism-ring"><strong>Involutions of the Endomorphism Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An endomorphism ring carries an intrinsic involution as soon as the object it acts on carries a nondegenerate pairing: the <strong>adjoint</strong> of an endomorphism is the unique map that transfers the pairing from one side to the other, and the assignment $T \mapsto T^{*}$ is additive, anti-multiplicative and of order two, that is, an involution of the ring. The unitary elements, those with $T^{*}T = TT^{*} = \mathrm{id}$, are exactly the endomorphisms that preserve the pairing, so the involution of the endomorphism ring is the algebraic form of the preservation of a form; this article fixes the involution and the unitary group at the ring level, and the linear-space version of the same construction is <em>Involutions of the Endomorphism Algebra</em>.</p>
+<p>This article defines the nondegenerate reflexive pairing on an additive group, constructs the adjoint involution of the endomorphism ring, proves the four laws (additivity, anti-multiplicativity, order two, compatibility with the scalars), identifies the unitary elements and records the two kinds that the symmetry of the pairing produces. It assumes <em>Groups</em> for the additive group, <em>Rings</em> for the endomorphism ring and <em>Involutive Rings</em> for the involution and the unitary elements; the vector-space and module refinements are forward references. Throughout, $(V,+)$ is an additive group, $R$ is a commutative ring with $1 \neq 0$, $B : V\times V \to R$ is a biadditive <strong>perfect</strong> pairing, $E = \operatorname{End}(V)$ is the endomorphism ring, and $\sigma$ is an involution of $R$ when the coefficients are twisted.</p>
+<h2 id="the-pairing-and-the-adjoint">The Pairing and the Adjoint</h2>
+<p><strong>Definition.</strong> A biadditive pairing $B : V\times V \to R$ is</p>
+<p><strong>(a) nondegenerate</strong> if $B(x,y) = 0$ for all $y$ implies $x = 0$ and $B(x,y) = 0$ for all $x$ implies $y = 0$;</p>
+<p><strong>(b) reflexive</strong> if $B(x,y) = 0$ exactly when $B(y,x) = 0$;</p>
+<p><strong>(c) perfect</strong> if the map $V \to \operatorname{Hom}(V,R)$, $x \mapsto B(x,-)$, is a bijection.</p>
+<p>A perfect pairing is nondegenerate and reflexive, and for each $y$ the functional $x \mapsto B(Tx,y)$ is additive.</p>
+<p><strong>Theorem (the adjoint exists).</strong> For every $T \in E$ and every $y \in V$ there is a unique $T^{*}y \in V$ with</p>
+<p>$$
+B(Tx,y) = B(x,T^{*}y) \quad \text{for all } x \in V .
+$$</p>
+<p>The assignment $T \mapsto T^{*}$ is well defined, and it is an <strong>involution of the ring $E$</strong>: it is additive, $(ST)^{*} = T^{*}S^{*}$, $\mathrm{id}^{*} = \mathrm{id}$, and $(T^{*})^{*} = T$.</p>
+<p><strong>Proof.</strong> For fixed $y$ the map $x \mapsto B(Tx,y)$ is additive $V \to R$, hence an element of $\operatorname{Hom}(V,R)$; since $B$ is perfect there is a unique $T^{*}y$ with $B(x,T^{*}y) = B(Tx,y)$ for all $x$, which proves existence and uniqueness. Uniqueness in $y$ makes $T^{*}$ a well-defined map $V \to V$; it is additive because $B(x,T^{*}(y+y')) = B(Tx,y+y') = B(Tx,y)+B(Tx,y') = B(x,T^{*}y+T^{*}y')$ for all $x$, and the pairing is nondegenerate, so $T^{*}(y+y') = T^{*}y+T^{*}y'$. For the anti-multiplicativity, $B(x,(ST)^{*}y) = B(STx,y) = B(S(Tx),y) = B(Tx,S^{*}y) = B(x,T^{*}S^{*}y)$ for all $x$, so $(ST)^{*}y = T^{*}S^{*}y$. The unit is fixed because $B(x,y) = B(x,\mathrm{id}^{*}y)$ for all $x$ gives $\mathrm{id}^{*} = \mathrm{id}$. Finally $B(x,(T^{*})^{*}y) = B(T^{*}x,y)$ for all $x$; by reflexivity this vanishes exactly when $B(y,T^{*}x)$ vanishes, which by the defining identity equals $B(Ty,x)$, and by reflexivity again this vanishes exactly when $B(x,Ty)$ vanishes; since the pairing is nondegenerate, $(T^{*})^{*}y = Ty$ for all $y$, that is $(T^{*})^{*} = T$.</p>
+<p><strong>Remark (compatibility with the coefficients).</strong> If $R$ carries an involution $\sigma$ and the pairing satisfies $B(\lambda x,y) = \lambda B(x,y)$, $B(x,\lambda y) = \sigma(\lambda)B(x,y)$, then the adjoint is $\sigma$-semilinear in the coefficient of a scalar endomorphism: for the endomorphism $\lambda\,\mathrm{id}$ one has $(\lambda\,\mathrm{id})^{*} = \sigma(\lambda)\,\mathrm{id}$. The coefficient involution enters only through the sesquilinearity of the pairing, and the whole construction is that of <em>Rings with a Semilinear Involution</em> when $\sigma \neq \mathrm{id}$.</p>
+<h2 id="the-unitary-elements">The Unitary Elements</h2>
+<p><strong>Definition.</strong> The <strong>unitary elements</strong> of $(E,B)$ are</p>
+<p>$$
+U(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}.
+$$</p>
+<p><strong>Proposition.</strong> $U(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,</p>
+<p>$$
+T \in U(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V .
+$$</p>
+<p><strong>Proof.</strong> If $T$ is unitary then $B(Tx,Ty) = B(T^{*}Tx,y) = B(x,y)$, using the defining identity for $T^{*}$ with the pair $(Tx,y)$ replaced by $(x,Ty)$; conversely, if $T$ preserves $B$ then $B(x,T^{*}Ty) = B(Tx,Ty) = B(x,y)$ for all $x$, so $T^{*}T = \mathrm{id}$ by nondegeneracy, and the same argument on the other side gives $TT^{*} = \mathrm{id}$. The product of two unitary elements is unitary because the adjoint is anti-multiplicative, $(ST)^{*}(ST) = T^{*}S^{*}ST = T^{*}T = \mathrm{id}$, and the inverse of a unitary element is unitary because $T^{*} = T^{-1}$.</p>
+<p><strong>Corollary (the two kinds).</strong> If the pairing is symmetric, $B(y,x) = B(x,y)$, then the involution of $E$ is the <strong>orthogonal</strong> one; if it is antisymmetric, $B(y,x) = -B(x,y)$, then it is the <strong>symplectic</strong> one. With $2$ invertible the endomorphism ring is the sum of the self-adjoint and the skew-adjoint endomorphisms, of dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ for a symmetric pairing on an object of finite rank $n$ in the matrix case, and exchanged for an antisymmetric one, as in <em>Matrix Rings with an Involution</em>.</p>
+<p><strong>Proof.</strong> The transpose type is computed in the matrix case in <em>Matrix Rings with an Involution</em>; the endomorphism ring of a finite-rank free object is the matrix ring, and the adjoint of a matrix is its transpose or its symplectic adjoint according to the symmetry, which is the statement.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The standard pairing.</strong> $V = R^n$ with $B(x,y) = \sum_i x_iy_i$ and $R$ a commutative ring; the adjoint of a matrix is its transpose, $X^{*} = X^{\mathrm t}$, so the involution of the matrix ring is the transpose and $U(V,B)$ is the orthogonal group.</p>
+<p><strong>(b) The symplectic pairing.</strong> $V = R^{2n}$ with the pairing $B(x,y) = \sum_i(x_iy_{i+n}-x_{i+n}y_i)$; the adjoint of $X$ is $-JX^{\mathrm t}J$ with $J$ the standard symplectic matrix, the involution is the symplectic one of <em>Matrix Rings with an Involution</em>, and $U(V,B)$ is the symplectic group.</p>
+<p><strong>(c) The Hermitian pairing.</strong> $R = \mathbb{C}$ with the conjugation, $B(x,y) = \sum_i \overline{x_i}y_i$; the adjoint is the conjugate transpose and $U(V,B)$ the unitary group. The construction is the second-kind case of the remark.</p>
+<p><strong>(d) The regular pairing of a ring.</strong> On $V = A$ the pairing $B(x,y) = \tau(xy)$, with $\tau$ the regular trace, is symmetric and nondegenerate under the hypothesis of <em>The Adjoint of the Left Multiplication on a Ring</em>; the adjoint of the left multiplication $L_a$ is the right multiplication $R_a$, and the unitary elements are the units $u$ with $u^{*} = u^{-1}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A perfect pairing $B$ on an additive group $V$ defines an <strong>adjoint involution</strong> $T \mapsto T^{*}$ of the endomorphism ring $E = \operatorname{End}(V)$ by $B(Tx,y) = B(x,T^{*}y)$; the adjoint exists and is unique for each $T$, the assignment is additive, anti-multiplicative and of order two, and it is $\sigma$-semilinear in the coefficients when the pairing is sesquilinear with an involution $\sigma$. The unitary elements $U(V,B) = \{T : T^{*}T = TT^{*} = \mathrm{id}\}$ form a subgroup of $E^\times$ and are exactly the endomorphisms preserving the pairing; a symmetric pairing gives the <strong>orthogonal</strong> involution and an antisymmetric one the <strong>symplectic</strong> involution, with the matrix calculations and the unitary groups of <em>Matrix Rings with an Involution</em> and <em>Matrix Rings and the Adjoint</em>. The specialisation to the regular pairing $B(x,y) = \tau(xy)$ of a ring with involution gives the adjoint of the left multiplication, treated in <em>The Adjoint of the Left Multiplication on a Ring</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V$, $R$</td>
+<td>Additive group and commutative coefficient ring</td>
+</tr>
+<tr>
+<td>$B : V\times V \to R$</td>
+<td>Perfect (nondegenerate, reflexive) biadditive pairing</td>
+</tr>
+<tr>
+<td>$E = \operatorname{End}(V)$</td>
+<td>Endomorphism ring</td>
+</tr>
+<tr>
+<td>$B(Tx,y) = B(x,T^{*}y)$</td>
+<td>Defining identity of the adjoint</td>
+</tr>
+<tr>
+<td>$T \mapsto T^{*}$</td>
+<td>Adjoint involution of $E$</td>
+</tr>
+<tr>
+<td>$U(V,B)$</td>
+<td>Unitary group: $T^{*}T = TT^{*} = \mathrm{id}$, equivalently $B(Tx,Ty) = B(x,y)$</td>
+</tr>
+<tr>
+<td>symmetric $B$ / antisymmetric $B$</td>
+<td>Orthogonal / symplectic involution</td>
+</tr>
+<tr>
+<td>$B = \tau(xy)$ on $A$</td>
+<td>Regular pairing of a ring; $L_a^{*} = R_a$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Coefficient involution; adjoint is $\sigma$-semilinear when $B$ is sesquilinear</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the adjoint involution of an endomorphism ring and the unitary elements.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the orthogonal and symplectic involutions and their relation to the forms they preserve.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the involution of a ring, the unitary elements and the sesquilinear case.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for bilinear and sesquilinear forms, nondegeneracy and the reflexive pairings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules over an Involutive Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modules-over-an-involutive-algebra"><strong>Modules over an Involutive Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of an algebra is an anti-automorphism of order two, and it acts on the module category by twisting: a left module $M$ becomes another left module $M^{\sigma}$ whose action is the original one composed with $\sigma$. This article defines the twisted module, shows that the twisting is an involution of the category, and identifies the involution it induces on the endomorphisms of a module — the first place where the involution of the algebra reaches the operators.</p>
+<p>The article opens the <code>* Theory</code> group of this category. It assumes the involutive algebra of <em>Involutive Linear Algebras</em> (in Part I), the module theory of <em>Modules over an Algebra</em>, and the operator layer of <em>Left and Right Multiplication of a Module</em>, <em>Module Endomorphisms</em> and <em>The Endomorphism Algebra of a Module</em>. The pairing, the adjoint and the involution on the full endomorphism ring of a module are the subjects of the two articles that follow, <em>The Adjoint of a Module Homomorphism</em> and <em>The Involution on the Endomorphism Ring of a Module</em>; here the involution is induced by $\sigma$ alone, on a free module, and the general case is named as needing a pairing. The article stays inside Part I: no distance, norm, form or limit occurs. Throughout, $R$ is a commutative ring with $1 \neq 0$, $A$ is a unital associative $R$-algebra with an involution $\sigma$, $M$ and $N$ are left $A$-modules, and $L_a$ is the left multiplication of <em>Left and Right Multiplication of a Module</em>.</p>
+<h2 id="involutions-and-twisted-modules">Involutions and Twisted Modules</h2>
+<h3 id="the-involution-of-the-algebra">The involution of the algebra</h3>
+<p><strong>Definition.</strong> An <strong>involution</strong> of $A$ is an $R$-linear map $\sigma : A \to A$ with</p>
+<p>$$
+\sigma^{2}=\mathrm{id}, \qquad \sigma(ab)=\sigma(b)\,\sigma(a) \qquad (a,b \in A);
+$$</p>
+<p>the pair $(A,\sigma)$ is an <strong>involutive algebra</strong>.</p>
+<p>The definition, the elementary properties and the examples are those of <em>Involutive Linear Algebras</em>; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{op}}$ as well, since for the opposite product $a \cdot_{\mathrm{op}} b=ba$ one has $\sigma(a \cdot_{\mathrm{op}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{op}} \sigma(a)$.</p>
+<h3 id="the-twisted-module">The twisted module</h3>
+<p><strong>Definition.</strong> Let $M$ be a left $A$-module. The <strong>twisted module</strong> $M^{\sigma}$ is the same additive group $M$ with the action</p>
+<p>$$
+a \cdot_{\sigma} m = \sigma(a)\,m \qquad (a \in A,\ m \in M).
+$$</p>
+<p><strong>Proposition.</strong> $M^{\sigma}$ is a left $A$-module.</p>
+<p><em>Proof.</em> Distributivity and the unit are inherited from $M$. For associativity, $(ab) \cdot_{\sigma} m=\sigma(ab)m=\sigma(b)\sigma(a)m$, while $a \cdot_{\sigma}(b \cdot_{\sigma} m)=a \cdot_{\sigma}(\sigma(b)m)=\sigma(a)\sigma(b)m$; the two agree because $\sigma$ is an anti-automorphism. $\square$</p>
+<p>The underlying $R$-module of $M^{\sigma}$ is that of $M$; only the action is changed, and it is changed by $\sigma$.</p>
+<h3 id="twisting-is-an-involution-of-the-category">Twisting is an involution of the category</h3>
+<p><strong>Proposition.</strong> The assignment $M \mapsto M^{\sigma}$, with a homomorphism $f : M \to N$ sent to the same map $f : M^{\sigma} \to N^{\sigma}$, is an endofunctor of the category of left $A$-modules, and</p>
+<p>$$
+(M^{\sigma})^{\sigma}=M \qquad (M \text{ a left } A\text{-module}),
+$$</p>
+<p>so the functor is an equivalence of categories and an involution up to the identity.</p>
+<p><em>Proof.</em> A map $f : M \to N$ that is $A$-linear is $A$-linear for the twisted actions: $f(a \cdot_{\sigma} m)=f(\sigma(a)m)=\sigma(a)f(m)=a \cdot_{\sigma} f(m)$. Identities and composites are unchanged, so the assignment is a functor; and the action of $M^{\sigma}$ twisted again is $a \cdot_{\sigma\cdot_{\sigma}} m=\sigma(\sigma(a))m=am$, so twisting twice returns the original action. $\square$</p>
+<p><strong>Corollary.</strong> Twisting preserves and reflects the elementary properties of a module: it preserves submodules, quotients, direct sums, free modules and finitely generated modules, and it carries a simple module to a simple module.</p>
+<p><em>Proof.</em> The two categories are equal as categories through an invertible functor that is the identity on the underlying additive groups; all these properties are preserved under such an equivalence. $\square$</p>
+<p>Twisting is the categorical meaning of the involution: it is a symmetry of the module category of order two.</p>
+<h2 id="the-induced-involution-on-the-endomorphisms">The Induced Involution on the Endomorphisms</h2>
+<h3 id="the-twisted-endomorphism-ring">The twisted endomorphism ring</h3>
+<p><strong>Proposition.</strong> For every left $A$-module $M$ the identity on maps is an isomorphism of $R$-algebras</p>
+<p>$$
+\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}), \qquad f \longmapsto f .
+$$</p>
+<p><em>Proof.</em> The map is additive and preserves composition and the identity; it is bijective because $M$ and $M^{\sigma}$ have the same underlying set and the same notion of $A$-linear map, as the preceding proposition shows. $\square$</p>
+<p>So the endomorphism ring cannot distinguish a module from its twist; the twist is invisible to the operators, and this is why an involution on the endomorphisms needs an extra structure, which is a pairing, supplied in the articles that follow.</p>
+<h3 id="the-regular-module">The regular module</h3>
+<p>For the regular module the induced involution is $\sigma$ itself.</p>
+<p><strong>Proposition.</strong> Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of <em>Automorphisms of Modules over an Algebra</em>, the involution $\sigma$ of $A$ is an involution of $A^{\mathrm{op}}$, and the corresponding map on $\operatorname{End}_A({}_A A)$ carries the right multiplication $R_a$ to $R_{\sigma(a)}$.</p>
+<p><em>Proof.</em> $\sigma$ is an involution of $A^{\mathrm{op}}$ by the observations above, and the isomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$ sends $a$ to $R_a$, so it carries $\sigma$ to $R_a \mapsto R_{\sigma(a)}$. $\square$</p>
+<p>This is the base case: the involution of the algebra is the involution induced on the endomorphism ring of the regular module.</p>
+<h3 id="the-free-module">The free module</h3>
+<p>For a free module the induced involution is $\sigma$ applied entrywise and combined with transposition.</p>
+<p><strong>Theorem.</strong> Let $n \geq 1$ and identify $\operatorname{End}_A({}_A A^n)\cong M_n(A^{\mathrm{op}})$ by the right multiplication $f(v)=vX$ of <em>The Endomorphism Algebra of a Module</em>. Then the map</p>
+<p>$$
+\Theta : M_n(A^{\mathrm{op}}) \to M_n(A^{\mathrm{op}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji}),
+$$</p>
+<p>is an involution of the $R$-algebra $M_n(A^{\mathrm{op}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.</p>
+<p><em>Proof.</em> Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{op}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has</p>
+<p>$$
+\Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{op}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
+$$</p>
+<p>so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula. $\square$</p>
+<p><strong>Corollary.</strong> The involution of the algebra $A$ induces an involution of the endomorphism ring of every free module, and on the regular module this is $\sigma$ itself, recovering the proposition above at $n=1$.</p>
+<p><em>Proof.</em> $n=1$ gives $\Theta(X)_{11}=\sigma(X_{11})$ on $M_1(A^{\mathrm{op}})=A^{\mathrm{op}}$, which is $\sigma$. $\square$</p>
+<h3 id="dependence-on-the-basis">Dependence on the basis</h3>
+<p><strong>Proposition.</strong> The involution $\Theta$ of a free module depends on the chosen basis: if $P \in M_n(A^{\mathrm{op}})$ is the change-of-basis matrix from the standard basis to another basis, the induced involution for the second basis is $X \mapsto P\,\Theta(P^{-1}XP)\,P^{-1}$, an involution conjugate to $\Theta$ by the inner automorphism of $P$.</p>
+<p><em>Proof.</em> Change of basis is an isomorphism of $\operatorname{End}_A(A^n)$ sending an endomorphism of matrix $X$ to $P^{-1}XP$ for a suitable $P$, and conjugation transports a map on the matrix ring; carrying $\Theta$ through gives the displayed formula, which is an involution because conjugation by $P$ is an algebra automorphism. $\square$</p>
+<p>Thus for a free module the involution induced by $\sigma$ is determined up to conjugation by a change of basis; the canonical choice is the one that applies $\sigma$ entrywise and transposes.</p>
+<h2 id="self-conjugate-modules">Self-Conjugate Modules</h2>
+<h3 id="conjugacy-and-its-operators">Conjugacy and its operators</h3>
+<p><strong>Definition.</strong> A module $M$ is <strong>self-conjugate</strong> when $M \cong M^{\sigma}$.</p>
+<p><strong>Proposition.</strong> If $u : M \to M^{\sigma}$ is an isomorphism, then the composite</p>
+<p>$$
+\operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}) \xrightarrow{\ f \mapsto u^{-1}fu\ } \operatorname{End}_A(M)
+$$</p>
+<p>is a unital $R$-algebra automorphism of $\operatorname{End}_A(M)$, namely the inner automorphism by $u$; it is an involution exactly when $u^{2}$ is central in $\operatorname{End}_A(M)$, and it need not be an involution in general.</p>
+<p><em>Proof.</em> A self-conjugacy $u$ is in particular an element of the ring $\operatorname{End}_R(M)$, and conjugation by it is an algebra automorphism; its square is conjugation by $u^{2}$, which is the identity when $u^{2}$ is central, and not otherwise. $\square$</p>
+<p>This shows why the general module does not by itself carry an induced involution: the only involution produced by a self-conjugacy is inner, and inner automorphisms do not see the involution of the algebra. A pairing is the missing datum, and it is introduced in the next articles.</p>
+<h3 id="what-a-pairing-will-supply">What a pairing will supply</h3>
+<p>The next article defines the <strong>adjoint</strong> of a homomorphism with respect to a pairing and uses it to build the involution on the endomorphism ring of a module; the one after that studies that involution, its self-adjoint part and its unitary group. The free-module involution $\Theta$ of this article is the model these constructions generalise, and the basis-independent description of $\Theta$ is exactly the adjoint with respect to the standard pairing on $A^n$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The transpose involution.</strong> Let $A=M_n(R)$ with $\sigma(X)=X^{\mathrm{T}}$. For the regular module, $\operatorname{End}_A(A)\cong A^{\mathrm{op}}$, and $\sigma$ is the transpose on $A^{\mathrm{op}}$; for the free module $A^m$ the induced involution $\Theta$ is the usual transpose combined with $\sigma$ entrywise.</p>
+<p><strong>(b) The trivial involution.</strong> If $A$ is commutative and $\sigma=\mathrm{id}$, then $M^{\sigma}=M$ for every module and $\Theta$ is the transpose of matrices over $A$. The twisting functor is the identity.</p>
+<p><strong>(c) The quaternions.</strong> For $A=\mathbb{H}$ and $\sigma$ the quaternion conjugation, the regular module has $\operatorname{End}_A(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ with involution $\sigma$, and the free module $\mathbb{H}^m$ has the conjugate-transpose involution on matrices over $\mathbb{H}^{\mathrm{op}}$.</p>
+<p><strong>(d) Matrix algebras with the conjugate transpose.</strong> Let $A=M_n(\mathbb{C})$ with $\sigma(X)=\overline{X}^{\mathrm{T}}$. Then $\sigma$ is an involution of $A$ and of $A^{\mathrm{op}}$; the induced involution on the endomorphism ring of the regular module is the conjugate transpose, and the unitary group of the algebra, defined in the involutive-algebra theory, is the classical unitary group $U(n)$.</p>
+<p><strong>(e) The biquaternions.</strong> For $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the involution $\sigma$ obtained from conjugation on $\mathbb{C}$ and on $\mathbb{H}$, the induced involution on $\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ is $\sigma$, and the unitary elements of $\mathbb{B}$ are the units fixed by the corresponding adjoint of the regular module.</p>
+<h2 id="summary">Summary</h2>
+<p>An algebra with an involution $\sigma$ acts on the module category by twisting, $a \cdot_{\sigma} m=\sigma(a)m$; the twisted module $M^{\sigma}$ is a left $A$-module, twisting is an endofunctor that is an involution up to the identity, and it preserves and reflects submodules, quotients, direct sums, freeness, finite generation and simplicity. The endomorphism ring of $M$ is canonically isomorphic to that of $M^{\sigma}$ by the identity on maps, so the twisting alone does not produce an involution on the operators. The involution of the algebra is induced on the endomorphism ring of the regular module as $\sigma$ itself, under $\operatorname{End}_A(A)\cong A^{\mathrm{op}}$, and on the free module $A^n$ as the transpose-entrywise involution $\Theta(X)_{ij}=\sigma(X_{ji})$ on $M_n(A^{\mathrm{op}})$; this $\Theta$ is determined up to conjugation by a change of basis, and it is the model for the general construction. A general module carries an induced involution only when a pairing is present, and the self-conjugacy of a module produces merely an inner automorphism, which does not see the algebra involution; the pairing, the adjoint and the involution it induces on the endomorphism ring are the subjects of the two articles that follow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity, the base ring</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>unital associative $R$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>involution of $A$: $\sigma^{2}=\mathrm{id}$, $\sigma(ab)=\sigma(b)\sigma(a)$</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{op}}$</td>
+<td>opposite algebra, product $a \cdot_{\mathrm{op}} b=ba$</td>
+</tr>
+<tr>
+<td>$M$, $N$</td>
+<td>left $A$-modules</td>
+</tr>
+<tr>
+<td>$M^{\sigma}$</td>
+<td>twisted module, action $a \cdot_{\sigma} m=\sigma(a)m$</td>
+</tr>
+<tr>
+<td>$f : M \to N$</td>
+<td>a homomorphism, also a homomorphism $M^{\sigma} \to N^{\sigma}$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(M) \cong \operatorname{End}_A(M^{\sigma})$</td>
+<td>identity on maps, an isomorphism of $R$-algebras</td>
+</tr>
+<tr>
+<td>$\Theta(X)_{ij}=\sigma(X_{ji})$</td>
+<td>induced involution on $M_n(A^{\mathrm{op}})$</td>
+</tr>
+<tr>
+<td>$R_a$</td>
+<td>right multiplication, an endomorphism of ${}_A A$</td>
+</tr>
+<tr>
+<td>$u : M \to M^{\sigma}$</td>
+<td>a self-conjugacy, giving an inner automorphism</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_R(M)$</td>
+<td>all $R$-linear endomorphisms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for involutions, opposite algebras and matrix algebras.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the transpose and the opposite matrix ring.</li>
+<li>Israel N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for involutions of rings and their induced maps on matrix rings.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, second edition, 2001), for the opposite algebra and involutions on matrix rings.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for involutions of the first and second kind and their behaviour under matrix extensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

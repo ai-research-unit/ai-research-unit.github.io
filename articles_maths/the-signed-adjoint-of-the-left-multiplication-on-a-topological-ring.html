@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on a Topological Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-a-topological-ring"><strong>The Signed Adjoint of the Left Multiplication on a Topological Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication is the one-sided operator $\ell_a(x) = a\,\alpha(x)$, the signed sandwich with the right parameter equal to $1$, and its adjoint with respect to the form of the category is again a signed left multiplication, now with the parameter replaced by its image under the twist $\delta = \sigma\alpha$: $\ell_a^\dagger = \ell_{\delta(a)}$. The class of signed one-sided operators is therefore closed under the adjoint, exactly as the class of reflections is, and the self-adjointness, the unitarity and the involutivity of the operator read off three conditions on the parameter, modulo the kernel of the parametrisation, which consists of the units inducing the grade involution. This article computes the adjoint, separates the three conditions, assembles the two-sided signed sandwich from the one-sided operator and its adjoint, and reads the whole thing through the topology.</p>
+<p>The article assumes the topological ring and the bounded operators from <em>Topological Rings and Fields</em> and <em>Operators on a Topological Ring</em>; the signed left and right multiplications, their composition laws, their group and their fixed sets from <em>The Signed Left Multiplication on a Topological Ring</em>; the signed sandwich, its adjoint and its composition from <em>The Signed Adjoint Sandwich on a Topological Ring</em>; the reflection and its adjoint from <em>The Signed Adjoint of the Reflection on a Topological Ring</em>; the involution, the grade involution and the closedness of the fixed set from <em>Involutive Topological Rings and Fields</em>; and the operator adjoint and the form of the category from <em>The Involution on Bounded Operators of a Ring</em>.</p>
+<p>Throughout, $R$ is a Hausdorff topological ring with a continuous involution $\sigma$, a continuous grade involution $\alpha$ commuting with $\sigma$, a continuous trace $\tau$ with $\tau\circ\alpha = \tau$ and the <strong>form of the category</strong> $\{x,y\} = \tau(x\sigma(y))$; $\delta = \sigma\alpha$; the <strong>signed left multiplication</strong> is</p>
+<p>$$
+\ell_a(x) = a\,\alpha(x) = L_a\alpha = \Sigma^\alpha_{a,1} ,
+$$</p>
+<p>the <strong>signed right multiplication</strong> is $\varrho_b(x) = \alpha(x)\,b = \alpha R_b = \Sigma^\alpha_{1,b}$, and the kernel of the parametrisation is $K = \{u\in R^\times : c_u = \alpha\}$, the units inducing the grade involution.</p>
+<h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
+<p><strong>Theorem (the explicit form).</strong> With respect to the form of the category,</p>
+<p>$$
+\ell_a^\dagger = \ell_{\delta(a)} , \qquad \varrho_b^\dagger = \varrho_{\delta(b)} , \qquad \delta = \sigma\alpha ,
+$$</p>
+<p>so the adjoint of a signed left multiplication is the signed left multiplication by the $\delta$-image of the parameter, and the adjoint operation is an involution on each of the two signed one-sided families.</p>
+<p><strong>Proof.</strong> $\ell_a = L_a\alpha$, so $\ell_a^\dagger = \alpha^\dagger L_a^\dagger = \alpha L_{\sigma(a)}$ by $(L_a)^\dagger = L_{\sigma(a)}$ and $\alpha^\dagger = \alpha$ from $\tau\circ\alpha = \tau$. Applying this to $x$ gives $\alpha(\sigma(a)x) = \alpha(\sigma(a))\,\alpha(x) = \sigma(\alpha(a))\,\alpha(x) = \delta(a)\,\alpha(x) = \ell_{\delta(a)}(x)$. The computation for the signed right multiplication is the mirror image, and the double adjoint is immediate from $\delta^2 = \mathrm{id}$.</p>
+<p><strong>Corollary (the untwisted case).</strong> When $\alpha = \mathrm{id}$ the signed left multiplication is the left multiplication and $\delta = \sigma$; the adjoint is the left multiplication by the image of the parameter under the involution, which is <em>The Adjoint of the Left Multiplication on a Topological Ring</em>.</p>
+<p><strong>Proof.</strong> The formula specialises, since $\alpha = \mathrm{id}$ makes $\ell_a = L_a$ and $\delta = \sigma$.</p>
+<p><strong>Corollary (the adjoint of the composition).</strong> With the composition law $\ell_a\ell_b = \ell_{a\alpha(b)}$ of <em>The Signed Left Multiplication on a Topological Ring</em>, the adjoint of a product is the product of the adjoints in the reverse order,</p>
+<p>$$
+(\ell_a\ell_b)^\dagger = \ell_b^\dagger\ell_a^\dagger = \ell_{\delta(b)}\ell_{\delta(a)} = \ell_{\delta(b)\alpha(\delta(a))} ,
+$$</p>
+<p>and $\alpha(\delta(a)) = \sigma(a)$, so $(\ell_a\ell_b)^\dagger = \ell_{\delta(b)\sigma(a)}$; in the commutative case this is $\ell_{\delta(b\alpha(a))}$, and in general the order in the product is the reverse one.</p>
+<p><strong>Proof.</strong> The anti-multiplicativity of the adjoint gives $(\ell_a\ell_b)^\dagger = \ell_b^\dagger\ell_a^\dagger$, and $\ell_b^\dagger\ell_a^\dagger = \ell_{\delta(b)}\ell_{\delta(a)} = \ell_{\delta(b)\alpha(\delta(a))}$ by the composition law; $\alpha\delta = \delta\alpha$ gives $\alpha(\delta(a)) = \alpha\sigma(\alpha(a)) = \sigma(a)$. The commutative specialisation is $\delta(b)\sigma(a) = \sigma(a)\delta(b) = \delta(b\alpha(a))$.</p>
+<h2 id="self-adjointness-unitarity-and-involutivity">Self-Adjointness, Unitarity and Involutivity</h2>
+<p><strong>Theorem (the three conditions).</strong> The signed left multiplication satisfies</p>
+<p>$$
+\ell_a^\dagger = \ell_a \iff \delta(a) = a , \qquad \ell_a^\dagger\ell_a = \mathrm{id} \iff \delta(a)\alpha(a)\in K , \qquad \ell_a^2 = \mathrm{id} \iff a\alpha(a)\in K ,
+$$</p>
+<p>and when the grade involution is not inner, $K = \{1\}$, so unitarity is $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$.</p>
+<p><strong>Proof.</strong> The parametrisation $u\mapsto\ell_u$ is injective: $\ell_u = \ell_v$ means $u\alpha(x) = v\alpha(x)$ for all $x$, and $\alpha$ is surjective, so $u = v$. Hence $\ell_a^\dagger = \ell_{\delta(a)}$ equals $\ell_a$ exactly when $\delta(a) = a$. For unitarity, $\ell_a^\dagger\ell_a = \ell_{\delta(a)}\ell_a = \ell_{\delta(a)\alpha(a)}$, which is the identity exactly when $\delta(a)\alpha(a)\in K$, where $K$ is the set of units $u$ with $\ell_u = \mathrm{id}$; for involutivity, $\ell_a^2 = \ell_{a\alpha(a)}$, which is the identity exactly when $a\alpha(a)\in K$.</p>
+<p><strong>Corollary (the skew case).</strong> The signed left multiplication is skew, $\ell_a^\dagger = -\ell_a$, exactly when $\delta(a) = -a$; a skew signed left multiplication is never unitary.</p>
+<p><strong>Proof.</strong> The first statement is the injectivity of the parametrisation applied to the skew equation; a skew operator $T$ with $-T = T^\dagger$ has $T^\dagger T = -T^2$, which is the identity only under $T^2 = -\mathrm{id}$, incompatible with $T^2 = \mathrm{id}$ except in the degenerate case.</p>
+<p><strong>Remark (the two faces of the involution).</strong> The self-adjoint signed left multiplications are the parameters with $\delta(a) = a$, the Hermitian parameters; the unitary ones are the parameters with $\delta(a)\alpha(a)\in K$; the involutive ones are the parameters with $a\alpha(a)\in K$. The three sets are the one-sided analogues of the three sets of the reflection, and for $K = \{1\}$ they meet in the self-adjoint elements of order two.</p>
+<h2 id="the-fixed-sets-and-the-generated-group">The Fixed Sets and the Generated Group</h2>
+<p><strong>Proposition (the fixed set of a signed left multiplication).</strong> The fixed set of $\ell_a$ is the closed set</p>
+<p>$$
+R^{\ell_a} = \{ x : a\,\alpha(x) = x \} ,
+$$</p>
+<p>which contains $0$ and is the fixed set of the composite automorphism $\alpha$ when $a = 1$; the self-adjointness of $\ell_a$ makes the fixed set the fixed set of a set of constraints involving $\delta$, and the fixed element $x$ is one with $\alpha(x) = a^{-1}x$.</p>
+<p><strong>Proof.</strong> The equation $a\alpha(x) = x$ defines the fixed set, closed as an equalizer; for $a=1$ it is $R^\alpha$; for a unit $a$ it is $\alpha(x) = a^{-1}x$, from <em>The Signed Left Multiplication on a Topological Ring</em>.</p>
+<p><strong>Theorem (the subgroup generated and the adjoint).</strong> The signed left multiplications with unit parameter and the grade involution generate a subgroup of the group of additive automorphisms, in which $\alpha$ acts on the parameters by $\ell_u\mapsto\ell_{\alpha(u)}$ and in which the adjoint acts as an anti-automorphism,</p>
+<p>$$
+\ell_u^\dagger\ell_v^\dagger = \ell_{\delta(u)}\ell_{\delta(v)} = (\ell_v\ell_u)^\dagger = \ell_{\delta(u)\alpha(\delta(v))} = \ell_{\delta(u)\sigma(v)} ,
+$$</p>
+<p>so the group is closed under the involution $T\mapsto T^\dagger$ given by the form of the category, and the unitary elements of the group are the signed left multiplications with $\delta(u)\alpha(u)$ in the kernel.</p>
+<p><strong>Proof.</strong> The generators and their relations are from <em>The Signed Left Multiplication on a Topological Ring</em>; the anti-automorphism is the anti-multiplicativity of the adjoint together with $\ell^\dagger = \ell\delta$, and the two forms of the product agree because $\alpha(\delta(v)) = \alpha\sigma(\alpha(v)) = \sigma(v)$; the unitary statement is the three-conditions theorem.</p>
+<h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
+<p><strong>Theorem (the assembly of the sandwich).</strong> The signed sandwich is the composite of a signed left multiplication, a signed right multiplication and the grade involution,</p>
+<p>$$
+\Sigma^\alpha_{a,b} = \ell_a\circ\varrho_{\alpha(b)}\circ\alpha , \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b ,
+$$</p>
+<p>and its adjoint is assembled from the one-sided adjoints and the self-adjointness of the grade involution,</p>
+<p>$$
+\bigl(\Sigma^\alpha_{a,b}\bigr)^\dagger = \alpha^\dagger\,\varrho_{\alpha(b)}^\dagger\,\ell_a^\dagger = \alpha\,\varrho_{\delta(\alpha(b))}\,\ell_{\delta(a)} ,
+$$</p>
+<p>which evaluates to $\Sigma^\alpha_{\delta(a),\delta(b)}$, recovering the adjoint of <em>The Signed Adjoint Sandwich on a Topological Ring</em> from the one-sided case.</p>
+<p><strong>Proof.</strong> $\ell_a(\varrho_{\alpha(b)}(\alpha(x))) = a\,\alpha(\alpha(\alpha(x))\alpha(b)) = a\,\alpha(x)\,b$ by $\alpha^2 = \mathrm{id}$, giving the assembly. The adjoint is the anti-multiplicative composite with $\alpha^\dagger = \alpha$, $(L_a)^\dagger = L_{\sigma(a)}$ and the mirror for the right; evaluating gives $\delta(a)\alpha(x)\delta(b)$, which is the signed sandwich of the two $\delta$-images.</p>
+<p><strong>Corollary (the one-sided operators are the degenerate sandwiches).</strong> The signed left and right multiplications are the signed sandwiches with one parameter equal to $1$, and the adjoint of a one-sided operator is a one-sided operator, so the one-sided families are closed under the adjoint while the two-sided family is closed up to the twist.</p>
+<p><strong>Proof.</strong> $\ell_a = \Sigma^\alpha_{a,1}$ and $\varrho_b = \Sigma^\alpha_{1,b}$ by the definitions; the adjoint of $\Sigma^\alpha_{a,1}$ is $\Sigma^\alpha_{\delta(a),\delta(1)} = \Sigma^\alpha_{\delta(a),1} = \ell_{\delta(a)}$.</p>
+<h2 id="topological-compatibility-and-examples">Topological Compatibility and Examples</h2>
+<p><strong>Theorem (continuity and closedness).</strong> The signed left multiplication is bounded and continuous, the adjoint map is continuous in the topology of bounded convergence, and the sets of self-adjoint, unitary and involutive signed left multiplications are closed in the topology of the parameter when $R^\times$ is open.</p>
+<p><strong>Proof.</strong> $\ell_a$ is the composite of the continuous $L_a$ and $\alpha$, hence bounded and continuous; the adjoint map is continuous by <em>The Involution on Bounded Operators of a Ring</em>; the three conditions are closed because $\delta$, the middle factor and the composition are continuous and $K$ is closed.</p>
+<p><strong>Example (the matrix ring).</strong> $R = M_n(k)$ with the grade involution $\alpha(A) = A^{\top}$ and the involution the transpose; $\delta = \sigma\alpha = \mathrm{id}$, so $\ell_A^\dagger = \ell_A$ and every signed left multiplication is self-adjoint; the unitary ones satisfy $\alpha(A)A = I$, that is $A^{\top}A = I$, the orthogonal matrices.</p>
+<p><strong>Example (the polynomial ring).</strong> $R = k[x]$ with $f(x)\mapsto f(-x)$ and the identity involution; $\delta = \alpha$ and $\ell_f^\dagger = \ell_{\alpha(f)}$; a signed left multiplication is self-adjoint exactly when $f$ is even, and unitary exactly when $f(-x)f(x) = 1$, that is $f = \pm1$.</p>
+<p><strong>Example (a field with the conjugation).</strong> $R = \mathbb{C}$ with $\sigma$ the conjugation, $\alpha = \mathrm{id}$ and the trace $\tau(Z) = Z + \bar Z$; the form is the real inner product, $\delta = \sigma$, and $\ell_Z^\dagger = \ell_{\bar Z}$; the unitary signed left multiplications are those with $|Z| = 1$, the circle.</p>
+<p><strong>Example (the group algebra).</strong> For $k[G]$ with the form $B(u,v) = \sum_g u_gv_{\sigma(g)}$, the signed left multiplication with parameter $a$ and the adjoint $\ell_{\sigma(a)}$ recover <em>The Signed Adjoint of the Left Multiplication on a Topological Group</em> when the group is discrete.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication $\ell_a(x) = a\alpha(x) = \Sigma^\alpha_{a,1}$ has adjoint $\ell_a^\dagger = \ell_{\delta(a)}$ with respect to the form of the category, where $\delta = \sigma\alpha$, and the signed right multiplication has adjoint $\varrho_b^\dagger = \varrho_{\delta(b)}$; the one-sided signed families are therefore closed under the adjoint, and the adjoint is an anti-automorphism of the generated one-sided family. The parametrisation $u\mapsto\ell_u$ is injective, and the operator is self-adjoint exactly when $\delta(a) = a$; it is unitary exactly when $\delta(a)\alpha(a)\in K$ and an involution exactly when $a\alpha(a)\in K$, where $K$ is the set of units inducing the grade involution, trivial when the grade involution is not inner, so that unitarity is then $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$. The two-sided signed sandwich is assembled as $\Sigma^\alpha_{a,b} = \ell_a\varrho_{\alpha(b)}\alpha$, and its adjoint is recovered from the one-sided adjoints and the self-adjointness of the grade involution as $\Sigma^\alpha_{\delta(a),\delta(b)}$. Topologically the operators are bounded and continuous, the adjoint map is continuous, and the three sets are closed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell_a(x) = a\alpha(x) = L_a\alpha = \Sigma^\alpha_{a,1}$</td>
+<td>The signed left multiplication</td>
+</tr>
+<tr>
+<td>$\varrho_b(x) = \alpha(x)b = \alpha R_b = \Sigma^\alpha_{1,b}$</td>
+<td>The signed right multiplication</td>
+</tr>
+<tr>
+<td>$\delta = \sigma\alpha$</td>
+<td>The twist</td>
+</tr>
+<tr>
+<td>$\ell_a^\dagger = \ell_{\delta(a)}$, $\varrho_b^\dagger = \varrho_{\delta(b)}$</td>
+<td>The adjoints</td>
+</tr>
+<tr>
+<td>$\ell_a\ell_b = \ell_{a\alpha(b)}$</td>
+<td>The composition law</td>
+</tr>
+<tr>
+<td>$K = \{u : c_u = \alpha\}$</td>
+<td>Kernel of the parametrisation</td>
+</tr>
+<tr>
+<td>$\delta(a) = a$</td>
+<td>Self-adjointness</td>
+</tr>
+<tr>
+<td>$\delta(a)\alpha(a)\in K$</td>
+<td>Unitarity</td>
+</tr>
+<tr>
+<td>$a\alpha(a)\in K$</td>
+<td>Involutivity</td>
+</tr>
+<tr>
+<td>$\Sigma^\alpha_{a,b} = \ell_a\varrho_{\alpha(b)}\alpha$</td>
+<td>Assembly of the sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the one-sided operators of a ring with involution and the symmetric and unitary elements.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the regular representation and its one-sided operators.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the unitary group and the one-sided operators of an involutive algebra.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for adjoints under a sesquilinear form and the composition of adjoints.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the continuous one-sided operators and the closed sets of a topological ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

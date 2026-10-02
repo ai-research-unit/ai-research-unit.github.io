@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pullback Operator of a Morphism — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pullback-operator-of-a-morphism"><strong>The Pullback Operator of a Morphism</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A morphism of varieties $f : X\to Y$ does not map the functions of $Y$ to the functions of $X$ — a function on $Y$ composed with $f$ is a function on $X$ — so the natural operator attached to a morphism runs backwards. It is the <strong>pullback</strong>, and it is the fourth operator of the category: on the structure sheaf it is the ring map $f^\sharp : \mathcal{O}_Y\to f_*\mathcal{O}_X$, on modules it is the inverse image $f^*$, and on the whole category of sheaves it is the left member of an adjoint pair $(f^*,f_*)$ whose right member is the pushforward. This article fixes the pullback on the structure sheaf and on a module, proves its functoriality, establishes the adjunction that is its universal property, and records the pullback on cohomology, on the function field and on the Picard group.</p>
+<p>The article is the fourth of the <code>- Operator Theory</code> group. Its operator is the general form of the pullback $\varphi^*$ already met in <em>Operators on a Variety</em> for an automorphism and in <em>The Galois Action as an Operator</em> for the action of the base field; the two earlier articles computed the special cases, and here the general operator and its adjoint are the subject. The sheaf theory it uses is <em>Coherent Sheaves</em> and <em>Presheaves and Sheaves</em>, and the categorical adjunction is the universal property of Part I's <em>Universal Properties and Categories</em>; the descent of a structure along a morphism is the subject of the <code>- * Theory</code> and <code>- * Operator Theory</code> articles of this batch.</p>
+<p>Throughout $f : X\to Y$ is a morphism of varieties over a field $k$ (or more generally of schemes, where the statement is sheaf-theoretic and is said so), $\mathcal{O}_X$ and $\mathcal{O}_Y$ are the structure sheaves, and all sheaves are $\mathcal{O}$-modules.</p>
+<h2 id="the-pullback-on-the-structure-sheaf">The Pullback on the Structure Sheaf</h2>
+<p><strong>Definition.</strong> The <strong>pullback of functions</strong> along $f$ is the sheaf morphism
+$$
+f^\sharp : \mathcal{O}_Y\longrightarrow f_*\mathcal{O}_X
+$$
+which on an open $V\subseteq Y$ is the $k$-algebra homomorphism $f^\sharp_V : \mathcal{O}_Y(V)\to\mathcal{O}_X(f^{-1}V)$, $s\mapsto s\circ f$. The morphism $f$ is recovered from the pair of its underlying topological map and $f^\sharp$, and this pair is the data of a morphism of ringed spaces. On an affine chart $f : \operatorname{Spec}B\to\operatorname{Spec}A$ the pullback is a $k$-algebra homomorphism $\varphi : A\to B$ with $f = {}^{a}\varphi$.</p>
+<p><strong>Theorem (on the coordinate rings, the pullback is a homomorphism of $k$-algebras).</strong> For $X = \operatorname{Spec}B$ and $Y = \operatorname{Spec}A$ affine, the pullback is an anti-equivalence
+$$
+f\longmapsto f^\sharp : A\longrightarrow B
+$$
+between the morphisms $X\to Y$ and the $k$-algebra homomorphisms $A\to B$. It carries the identity to the identity and a composite to the composite in the reverse order, $(g\circ f)^{\sharp} = f^{\sharp}\circ g^{\sharp}$.</p>
+<p><em>Proof.</em> This is the contravariant equivalence of <em>Schemes</em>: a morphism of affine schemes is by definition a $k$-algebra homomorphism of coordinate rings in the opposite direction, and composition reverses because the correspondence is a functor on the opposite category.</p>
+<p><strong>Example (the inclusion of a closed subvariety).</strong> For the inclusion $i : Z\hookrightarrow X$ of a closed subvariety, the pullback is the quotient
+$$
+i^\sharp : \mathcal{O}_X\longrightarrow i_*\mathcal{O}_Z, \qquad \mathcal{O}_X(U)\longrightarrow\mathcal{O}_X(U)/\mathcal{I}(U),
+$$
+where $\mathcal{I}$ is the ideal sheaf of $Z$; on global sections it is the surjection $k[X]\to k[X]/\mathrm{A}$ with $\mathrm{A}$ the vanishing ideal of $Z$. In particular a function on $X$ restricts to a function on $Z$, which is the geometric reading of the ring surjection.</p>
+<p><strong>Example (the inclusion of points and $\operatorname{Spec}$ of a field).</strong> If $Y = \operatorname{Spec}k$ and $X$ is a $k$-variety, the structure morphism $\pi : X\to\operatorname{Spec}k$ has pullback the identity $k\to\Gamma(X,\mathcal{O}_X)$; the pullback of a $k$-point $P : \operatorname{Spec}k\to X$ sends a function to its value at $P$. The two together say that the functions on $X$ are the compatible families of values on the points, which is the content of the definition of the structure sheaf.</p>
+<h2 id="the-inverse-image-of-a-module">The Inverse Image of a Module</h2>
+<p><strong>Definition.</strong> Let $\mathcal{G}$ be an $\mathcal{O}_Y$-module. The <strong>inverse image</strong> (or <strong>pullback</strong>) of $\mathcal{G}$ along $f$ is the $\mathcal{O}_X$-module
+$$
+f^*\mathcal{G} = f^{-1}\mathcal{G}\ \otimes_{f^{-1}\mathcal{O}_Y}\ \mathcal{O}_X ,
+$$
+where $f^{-1}$ is the sheaf-theoretic inverse image of <em>Presheaves and Sheaves</em> and the tensor product is taken over the sheaf of rings $f^{-1}\mathcal{O}_Y$, which maps to $\mathcal{O}_X$ through $f^\sharp$. On an open $U\subseteq X$ it is generated by the sections of $\mathcal{G}$ over neighbourhoods of $f(U)$.</p>
+<p><strong>Theorem (right exactness and the local description).</strong> The inverse image $f^*$ is a right exact functor from $\mathcal{O}_Y$-modules to $\mathcal{O}_X$-modules. On an affine chart $f : \operatorname{Spec}B\to\operatorname{Spec}A$ corresponding to $\varphi : A\to B$ it is
+$$
+f^*\widetilde M = \widetilde{\,M\otimes_AB\,},
+$$
+the base change of the module $M$ along $\varphi$. It preserves direct sums, cokernels and tensor products, and it does not preserve kernels in general.</p>
+<p><em>Proof.</em> The functor $f^{-1}$ is left exact and $-\otimes_{f^{-1}\mathcal{O}_Y}\mathcal{O}_X$ is right exact, and the two compose to a right exact functor; on an affine chart the inverse image of the sheaf associated with $M$ is the sheaf associated with $M\otimes_AB$ by the affine description of <em>Coherent Sheaves</em>. The failure of left exactness is exhibited by the multiplication $A\xrightarrow{\ \cdot a\ }A$ when it is injective with non-injective base change, which is the classical example of a non-flat morphism.</p>
+<p><strong>Example (the pullback of a locally free sheaf).</strong> If $\mathcal{G}$ is locally free of rank $r$ on $Y$, then $f^*\mathcal{G}$ is locally free of rank $r$ on $X$: on an open $U$ with $\mathcal{G}|_V\cong\mathcal{O}_Y^r$ and $f(U)\subseteq V$ one has $f^*\mathcal{G}|_U\cong\mathcal{O}_X^r$. In the language of <em>Fibre Bundles, Connections and Curvature</em>, $f^*$ is the pullback of a bundle, and its transition functions are the compositions of the transition functions of $\mathcal{G}$ with $f$; the statement is recorded here because the two languages agree, as noted in <em>Coherent Sheaves</em>.</p>
+<p><strong>Example (the pullback of the cotangent sheaf).</strong> The cotangent sheaf of <em>Schemes</em> is contravariant, and for a morphism $f : X\to Y$ there is the natural map $f^*\Omega^1_{Y/k}\to\Omega^1_{X/k}$ induced by the pullback of differentials, $d(f^\sharp s)\leftrightarrow f^\sharp(ds)$. It is an isomorphism when $f$ is étale and a surjection when $f$ is a closed immersion, which are the two extreme cases of the comparison of the cotangent sheaves.</p>
+<h2 id="the-adjunction-with-the-pushforward">The Adjunction with the Pushforward</h2>
+<p><strong>Definition.</strong> For an $\mathcal{O}_X$-module $\mathcal{F}$, the <strong>direct image</strong> (or <strong>pushforward</strong>) $f_*\mathcal{F}$ is the sheaf $U\mapsto\mathcal{F}(f^{-1}U)$ on $Y$, with the $\mathcal{O}_Y$-module structure induced by $f^\sharp$: a section $s\in\mathcal{O}_Y(U)$ acts on $t\in\mathcal{F}(f^{-1}U)$ by $f^\sharp(s)\cdot t$.</p>
+<p><strong>Theorem (the adjunction).</strong> For every $\mathcal{O}_Y$-module $\mathcal{G}$ and every $\mathcal{O}_X$-module $\mathcal{F}$ there is a bijection
+$$
+\operatorname{Hom}_{\mathcal{O}_X}\bigl(f^*\mathcal{G},\mathcal{F}\bigr)\ \cong\ \operatorname{Hom}_{\mathcal{O}_Y}\bigl(\mathcal{G},f_*\mathcal{F}\bigr),
+$$
+natural in $\mathcal{G}$ and $\mathcal{F}$. Equivalently, $f^*$ is left adjoint to $f_*$,
+$$
+f^*\ \dashv\ f_* .
+$$</p>
+<p><em>Proof.</em> A morphism $\alpha : f^*\mathcal{G}\to\mathcal{F}$ is a family of $f^{-1}\mathcal{O}_Y$-linear maps $f^{-1}\mathcal{G}\to\mathcal{F}$, equivalently, by the defining adjunction of $f^{-1}\dashv f_*$ of <em>Presheaves and Sheaves</em>, a family of $f^{-1}\mathcal{O}_Y$-linear maps $\mathcal{G}\to f_*\mathcal{F}$; the extra $\mathcal{O}_X$-linearity of $\alpha$ is exactly the extra $\mathcal{O}_Y$-linearity of the transpose, because the $\mathcal{O}_X$-module structure on $f^*\mathcal{G}$ is generated by the image of $\mathcal{O}_X$ and the $\mathcal{O}_Y$-module structure on $f_*\mathcal{F}$ is the one induced by $f^\sharp$. The naturality is the naturality of the two adjunctions being composed.</p>
+<p><strong>Corollary (unit and counit).</strong> The adjunction has a unit $\eta : \mathrm{id}\to f_*f^*$, the natural map $\mathcal{G}\to f_*f^*\mathcal{G}$, and a counit $\varepsilon : f^*f_*\to\mathrm{id}$, the natural map $f^*f_*\mathcal{F}\to\mathcal{F}$; they satisfy the triangle identities of Part I's <em>Universal Properties and Categories</em>. The counit is an isomorphism when $f$ is a closed immersion and is not in general.</p>
+<p><em>Proof.</em> The unit and counit of an adjoint pair and the triangle identities are the general categorical facts; for a closed immersion $i$ the statements $i^*i_*\mathcal{F}\cong\mathcal{F}$ hold because the sections of $\mathcal{F}$ over $Z$ generate the pullback over $Z$ and the ideal kills nothing in $\mathcal{F}$. The general failure is the example of a non-flat base change above.</p>
+<p><strong>Remark (the adjunction is the universal property of the pullback).</strong> Every property of $f^*$ that the article uses is a consequence of the adjunction and of the right exactness: $f^*$ preserves colimits because it is a left adjoint, the pushforward $f_*$ is left exact, and the two compose to the functors $f^*f_*$ and $f_*f^*$ that the unit and the counit compare with the identity. This is the operator-theoretic content of the article: the pullback is defined up to unique natural isomorphism by the left-adjoint property, and the functoriality below is the coherence of the adjoints.</p>
+<h2 id="functoriality-and-the-projection-formula">Functoriality and the Projection Formula</h2>
+<p><strong>Theorem (functoriality).</strong> For morphisms $f : X\to Y$ and $g : Y\to Z$ there are natural isomorphisms
+$$
+(g\circ f)^*\cong f^*\circ g^*, \qquad (g\circ f)_*\cong g_*\circ f_* ,
+$$
+and for the identity morphism $\mathrm{id}^*\cong\mathrm{id}$ and $\mathrm{id}_*\cong\mathrm{id}$. Consequently the pullback is a contravariant functor on the category of varieties and the pushforward is a covariant one, and the adjunction is compatible with composition.</p>
+<p><em>Proof.</em> The pushforward statement is immediate from the definition, $(g\circ f)_*\mathcal{F}(U) = \mathcal{F}((g\circ f)^{-1}U) = \mathcal{F}(f^{-1}(g^{-1}U)) = g_*f_*\mathcal{F}(U)$. The pullback statement follows by the uniqueness of a left adjoint: both sides are left adjoint to $g_*f_* = (g\circ f)_*$, so they are naturally isomorphic, by Part I's <em>Universal Properties and Categories</em>.</p>
+<p><strong>Theorem (the projection formula).</strong> For an $\mathcal{O}_X$-module $\mathcal{F}$ and an $\mathcal{O}_Y$-module $\mathcal{G}$ there is a natural isomorphism
+$$
+f_*\bigl(\mathcal{F}\otimes_{\mathcal{O}_X}f^*\mathcal{G}\bigr)\ \cong\ f_*\mathcal{F}\otimes_{\mathcal{O}_Y}\mathcal{G}.
+$$</p>
+<p><em>Proof.</em> On an affine chart it is the identity $(M\otimes_AB)\otimes_BN\cong M\otimes_A(N\otimes_AB)$ for modules over $A\to B$, the module identity of Part I's <em>Extension of Scalars</em>; the two sides are sheaves, so the affine identification glues. The formula is the compatibility of the adjunction with the tensor product, and it is used in the article's last section and in <em>Coherent Sheaves</em>.</p>
+<h2 id="the-pullback-on-cohomology-and-on-the-picard-group">The Pullback on Cohomology and on the Picard Group</h2>
+<p><strong>Proposition (the pullback on cohomology).</strong> Let $\mathcal{G}$ be a quasi-coherent sheaf on $Y$. There are natural maps
+$$
+f^* : H^i(Y,\mathcal{G})\longrightarrow H^i(X,f^*\mathcal{G})
+$$
+for all $i\geq0$, compatible with the long exact sequences and with composition, and they are computed as the composites
+$$
+H^i(Y,\mathcal{G})\longrightarrow H^i(Y,f_*f^*\mathcal{G})\cong H^i(X,f^*\mathcal{G})
+$$
+of the map induced by the unit with the identification of the cohomology of a pushforward. The maps exist because $H^i(X,f^*(-))$ is a cohomological functor receiving the global sections of $Y$ through the unit.</p>
+<p><em>Proof.</em> The unit $\eta : \mathcal{G}\to f_*f^*\mathcal{G}$ induces a map on cohomology, and the isomorphism $H^i(Y,f_*\mathcal{F})\cong H^i(X,\mathcal{F})$ is the functoriality of the cohomology of <em>Coherent Sheaves</em> applied to the definition of $f_*$, with $H^0(Y,f_*\mathcal{F}) = \mathcal{F}(X)$ and the higher derived functors identified because $f_*$ is exact in the relevant sense on the category of sheaves. Composition and exactness are the naturality of $\eta$.</p>
+<p><strong>Example (the pullback on cohomology is not an isomorphism).</strong> For the structure morphism $\pi : \mathbb{P}^1_k\to\operatorname{Spec}k$ the pullback $H^0(\operatorname{Spec}k,k) = k\to H^0(\mathbb{P}^1,\mathcal{O}) = k$ is an isomorphism, while $H^1(\operatorname{Spec}k,k) = 0$ maps to $H^1(\mathbb{P}^1,\mathcal{O}) = 0$; the interesting failure is for a non-flat morphism, and for a base change $X\times_kL\to X$ the pullback on cohomology is an isomorphism after extending scalars, which is the statement used in <em>The Galois Action on the Cohomology</em>.</p>
+<p><strong>Proposition (the pullback on the Picard group).</strong> The inverse image of an invertible sheaf is invertible, and there is a natural homomorphism of abelian groups
+$$
+f^* : \operatorname{Pic}(Y)\longrightarrow\operatorname{Pic}(X), \qquad [\mathcal{L}]\longmapsto[f^*\mathcal{L}].
+$$
+The homomorphism is contravariant, $(g\circ f)^* = f^*\circ g^*$, and it is injective when $f$ has a section and is an isomorphism when $f$ is an isomorphism. The Picard group and the divisor classes are the subject of <em>The Divisor Operator</em>, next in this group.</p>
+<p><em>Proof.</em> The pullback of a locally free sheaf is locally free of the same rank by the example above, so $f^*$ lands in $\operatorname{Pic}$; preservation of the tensor product, $f^*(\mathcal{L}\otimes\mathcal{M})\cong f^*\mathcal{L}\otimes f^*\mathcal{M}$, is the right exactness and the projection formula, so the map is multiplicative. Contravariance is the functoriality for a composite, and the injectivity for a morphism with a section $s$ follows from $s^*f^* = \mathrm{id}$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a morphism $f : X\to Y$ the pullback is the operator that runs opposite to the arrow: on the structure sheaf it is the ring map $f^\sharp : \mathcal{O}_Y\to f_*\mathcal{O}_X$, $s\mapsto s\circ f$, which on affine coordinate rings is a $k$-algebra homomorphism $A\to B$ and constitutes the contravariant equivalence between affine varieties and reduced $k$-algebras; on modules it is the inverse image $f^*\mathcal{G} = f^{-1}\mathcal{G}\otimes_{f^{-1}\mathcal{O}_Y}\mathcal{O}_X$, a right exact functor that on an affine chart is the base change $M\mapsto M\otimes_AB$ and that preserves local freeness and tensor products. The defining property of the pullback is the adjunction $f^*\dashv f_*$ with the pushforward $f_*\mathcal{F}(U) = \mathcal{F}(f^{-1}U)$, natural in both variables and expressed by the unit and the counit; the functoriality $(gf)^* = f^*g^*$ and $(gf)_* = g_*f_*$, the projection formula $f_*(\mathcal{F}\otimes f^*\mathcal{G})\cong f_*\mathcal{F}\otimes\mathcal{G}$, the maps $f^* : H^i(Y,\mathcal{G})\to H^i(X,f^*\mathcal{G})$ on cohomology and the homomorphism $f^* : \operatorname{Pic}(Y)\to\operatorname{Pic}(X)$ on the Picard group all follow from the adjunction and the right exactness. The pullback is the general form of the operators already met for an automorphism and for the Galois action, and the adjunction with the pushforward is its universal property.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f : X\to Y$</td>
+<td>morphism of varieties (or schemes)</td>
+</tr>
+<tr>
+<td>$f^\sharp : \mathcal{O}_Y\to f_*\mathcal{O}_X$</td>
+<td>pullback of functions, $s\mapsto s\circ f$</td>
+</tr>
+<tr>
+<td>$f^{-1}\mathcal{G}$</td>
+<td>sheaf-theoretic inverse image</td>
+</tr>
+<tr>
+<td>$f^*\mathcal{G}=f^{-1}\mathcal{G}\otimes_{f^{-1}\mathcal{O}_Y}\mathcal{O}_X$</td>
+<td>inverse image (pullback) of a module</td>
+</tr>
+<tr>
+<td>$f_*\mathcal{F}$, $f_*\mathcal{F}(U)=\mathcal{F}(f^{-1}U)$</td>
+<td>direct image (pushforward)</td>
+</tr>
+<tr>
+<td>$f^*\dashv f_*$</td>
+<td>the adjunction: $\operatorname{Hom}(f^*\mathcal{G},\mathcal{F})\cong\operatorname{Hom}(\mathcal{G},f_*\mathcal{F})$</td>
+</tr>
+<tr>
+<td>$\eta : \mathrm{id}\to f_*f^*$, $\varepsilon : f^*f_*\to\mathrm{id}$</td>
+<td>unit and counit of the adjunction</td>
+</tr>
+<tr>
+<td>$(gf)^*=f^*g^*$, $(gf)_*=g_*f_*$</td>
+<td>functoriality</td>
+</tr>
+<tr>
+<td>$f_*(\mathcal{F}\otimes f^*\mathcal{G})\cong f_*\mathcal{F}\otimes\mathcal{G}$</td>
+<td>projection formula</td>
+</tr>
+<tr>
+<td>$f^* : H^i(Y,\mathcal{G})\to H^i(X,f^*\mathcal{G})$</td>
+<td>pullback on cohomology</td>
+</tr>
+<tr>
+<td>$f^* : \operatorname{Pic}(Y)\to\operatorname{Pic}(X)$</td>
+<td>pullback on the Picard group</td>
+</tr>
+<tr>
+<td>$f^*\Omega^1_{Y/k}\to\Omega^1_{X/k}$</td>
+<td>pullback of cotangent sheaves</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexander Grothendieck and Jean Dieudonné, <em>Éléments de géométrie algébrique I</em> (Publications Mathématiques de l'IHÉS, 1960), for the inverse and direct images of sheaves and their adjunction.</li>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the pullback of a sheaf, the adjunction with the pushforward and the projection formula.</li>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em> (Springer, second edition, 1998), for adjoint functors, the unit and counit and the uniqueness of a left adjoint.</li>
+<li>Masaki Kashiwara and Pierre Schapira, <em>Categories and Sheaves</em> (Springer, 2006), for the functorial formalism of sheaves on a site.</li>
+<li>David Mumford, <em>The Red Book of Varieties and Schemes</em> (Springer, second edition, 1999), for the pullback of functions and the affine anti-equivalence.</li>
+<li>Jean-Pierre Serre, <em>Faisceaux algébriques cohérents</em> (Annals of Mathematics 61, 1955), for the inverse image of coherent sheaves and the functoriality of their cohomology.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

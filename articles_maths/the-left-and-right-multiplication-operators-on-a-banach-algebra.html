@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators on a Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-on-a-banach-algebra"><strong>The Left and Right Multiplication Operators on a Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The one-sided multiplications of a Banach algebra $A$ are not only operators; they make $A$ a module over itself in two ways, and the operators they generate form a normed algebra inside $B(A)$. This article reads them in that double light. On the operator side it computes the norms of the multiplication operators and of their products, describes the multiplication algebra they generate and its norm closure, and identifies the uniform closed algebra they generate with the image of $A \otimes A$ under the multiplication map. On the module side it records that $A$ is a Banach $A$-bimodule and an essential Banach $M(A)$-bimodule, that the bounded module endomorphisms of $A$ as a left $A$-module are the right multiplications and, in the general form, the multiplier algebra, and that the strict topology is exactly the topology in which the multiplier module action becomes continuous. The two sides meet in the isomorphism $M(A) \cong \operatorname{End}_A(A)$, the module form of the double centraliser theorem.</p>
+<p>The article assumes the one-sided multiplications, their composition, their commutator, the regular representations and the centraliser theorem from <em>Left and Right Multiplication in a Banach Algebra</em>, the second article of this group; the bounded operators, the operator norm and the multiplication algebra from <em>Operators on a Banach Algebra</em>; the multiplier algebra, the double centralisers and the strict topology from <em>Multipliers of a Banach Algebra</em>; the Banach algebra, its norm and its approximate identities from <em>Topological Algebras and Banach Algebras</em>; the Banach space, the tensor product and the module structure from <em>Normed and Banach Spaces</em> and <em>Modules over a Ring</em>; and the closed subalgebras and the completeness of the operator algebra from <em>The Operator Algebra of a Banach Space</em>. The involution, the adjoint, the form and the signed operators are the later groups of this category and are not used. No measure and no Fourier theory occurs.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, unital where a statement names $1$; $B(A)$ is the unital Banach algebra of bounded operators with the operator norm, $L_a(x) = ax$ and $R_a(x) = xa$ the one-sided multiplications, $\mathcal{M}(A) = \{\sum_i L_{a_i}R_{b_i}\}$ the <strong>multiplication algebra</strong>, and $M(A)$ the multiplier algebra of <em>Multipliers of a Banach Algebra</em>. The norm on the algebraic tensor product $A \otimes A$ is not fixed here; when a norm is needed it is the projective norm $\lVert\cdot\rVert_\pi$.</p>
+<h2 id="the-multiplication-operators-and-their-norms">The Multiplication Operators and their Norms</h2>
+<p><strong>Definition.</strong> For $a \in A$ the multiplication operators are $L_a,R_a \in B(A)$; for a finite family $(a_i,b_i)$ the corresponding <strong>elementary operator</strong> is $\sum_i L_{a_i}R_{b_i} \in B(A)$.</p>
+<p><strong>Proposition (norms of the multiplications and of their products).</strong> For all $a,b \in A$,</p>
+<p>$$
+\lVert L_a\rVert \leq \lVert a\rVert , \qquad \lVert R_b\rVert \leq \lVert b\rVert , \qquad \lVert L_aR_b\rVert \leq \lVert a\rVert\,\lVert b\rVert ,
+$$</p>
+<p>with equality in the first two when $A$ is unital and equality in the third when $A$ is unital and $\lVert a\rVert = \lVert b\rVert$ for suitable pairs; more precisely $\lVert L_aR_b\rVert = \lVert a\rVert\lVert b\rVert$ when $A$ is unital and both $a$ and $b$ are such that $\lVert axb\rVert = \lVert a\rVert\lVert x\rVert\lVert b\rVert$ for some unit vector $x$.</p>
+<p><strong>Proof.</strong> $\lVert L_ax\rVert \leq \lVert a\rVert\lVert x\rVert$ and $L_a(1) = a$ give the first statement, $R_b$ likewise, and $\lVert L_aR_bx\rVert = \lVert axb\rVert \leq \lVert a\rVert\lVert x\rVert\lVert b\rVert$ gives the third, with the stated equality case. $\square$</p>
+<p><strong>Proposition (elementary operators and the bilinear map).</strong> For all $a_i,b_i,c,d \in A$,</p>
+<p>$$
+L_aR_b\,L_cR_d = L_{ac}R_{bd} , \qquad (L_aR_b)(x) = axb ,
+$$</p>
+<p>and the bilinear map $A \times A \to B(A)$, $(a,b) \mapsto L_aR_b$, factors through the tensor product as a linear map $\mu : A \otimes A \to B(A)$, $a \otimes b \mapsto L_aR_b$, with $\lVert\mu\rVert \leq 1$ for the projective norm and image exactly $\mathcal{M}(A)$.</p>
+<p><strong>Proof.</strong> $L_aR_bL_cR_d = L_aL_cR_dR_b = L_{ac}R_{bd}$ by the composition and commutation laws. The universal property of the tensor product gives $\mu$, and $\lVert\mu(\sum a_i \otimes b_i)\rVert \leq \sum\lVert a_i\rVert\lVert b_i\rVert$ for the projective norm. The image is $\mathcal{M}(A)$ by construction. $\square$</p>
+<p><strong>Proposition (the multiplication algebra is an algebra).</strong> $\mathcal{M}(A)$ is a subalgebra of $B(A)$ containing $\lambda(A)$ and $\rho(A)$, and it is the algebra generated by $\lambda(A) \cup \rho(A)$; its unit is $\mathrm{id}$ when $A$ is unital, and $\mathcal{M}(A)$ is commutative exactly when $A$ is commutative.</p>
+<p><strong>Proof.</strong> Closure under sums and products is the proposition above; $\lambda(A) = \{L_a\}$ and $\rho(A) = \{R_a\}$ are contained by taking one factor $1$ when $A$ is unital, or by adjoining a unit in general. The product formula $L_aR_bL_cR_d = L_{ac}R_{bd}$ makes $\mathcal{M}(A)$ the linear span of products of one $L$ and one $R$, which is the algebra generated by the two families. It is commutative exactly when every pair $L_aR_b$ and $L_cR_d$ commute, which reads $acbd = cadb$ for all, that is $[a,c] = 0$ on a unital algebra. $\square$</p>
+<p><strong>Remark (the closure).</strong> The multiplication algebra $\mathcal{M}(A)$ need not be closed in $B(A)$; its norm closure $\overline{\mathcal{M}(A)}$ is the closed subalgebra generated by the two regular representations, a Banach algebra when $A$ has a unit, and the natural home of the elementary operators. The closure is computed through the tensor-product map in the involutive setting, where the relevant C<em>-tensor norms make $\overline{\mathcal{M}(A)}$ a C</em>-algebra; that belongs to <em>Elementary Operators and the Two-Sided Sandwich</em> and to <em>Operator Algebras</em>.</p>
+<h2 id="the-bimodule-structure-of-math84">The Bimodule Structure of $A$</h2>
+<p><strong>Definition.</strong> On the underlying vector space of $A$ define the left and right actions of $A$ by $a \cdot x = ax$ and $x \cdot a = xa$. With these actions $A$ is an $A$-bimodule, the <strong>regular bimodule</strong>.</p>
+<p><strong>Proposition (the regular bimodule is a Banach bimodule).</strong> For all $a,x \in A$,</p>
+<p>$$
+\lVert a \cdot x\rVert \leq \lVert a\rVert\,\lVert x\rVert , \qquad \lVert x \cdot a\rVert \leq \lVert a\rVert\,\lVert x\rVert ,
+$$</p>
+<p>and the actions are separately continuous; the bimodule is <strong>essential</strong>, $A \cdot A = A$ and $A \cdot A = A$, exactly when $A = A^2$.</p>
+<p><strong>Proof.</strong> The norm inequalities are submultiplicativity, and separate continuity is the continuity of the product. Essentiality is the statement $AA = A$. $\square$</p>
+<p><strong>Proposition (module endomorphisms of the regular bimodule).</strong> A bounded linear map $T : A \to A$ is a <strong>left $A$-module endomorphism</strong>, $T(ax) = aT(x)$ for all $a,x$, exactly when $T$ is a right multiplier; it is a <strong>right $A$-module endomorphism</strong>, $T(xa) = T(x)a$, exactly when $T$ is a left multiplier. Consequently</p>
+<p>$$
+\operatorname{End}_A(A) = \{R_b : b \in A\} , \qquad \operatorname{End}(A_A) = \{L_b : b \in A\}
+$$</p>
+<p>on a unital algebra, and the two-sided $A$-module endomorphisms are the multiplications by the centre, $\operatorname{End}_{A\text{-}A}(A) = \{L_c : c \in Z(A)\}$.</p>
+<p><strong>Proof.</strong> $T(ax) = aT(x)$ with $a$ acting on the left is the defining identity of a right multiplier; on a unital algebra a right multiplier is $R_{T(1)}$. The two-sided statement combines both identities, $T(ax) = aT(x)$ and $T(xa) = T(x)a$, giving $aT(x) = T(ax) = T(xa) = T(x)a$, so $T(x)$ is central for every $x$ and hence $T = R_{T(1)}$ with $T(1)$ central. $\square$</p>
+<p><strong>Corollary (the bimodule is balanced).</strong> On a unital algebra the common module endomorphism algebra is the centre acting by multiplication, and the map $c \mapsto L_c$ is an algebra isomorphism of $Z(A)$ onto $\operatorname{End}_{A\text{-}A}(A)$.</p>
+<p><strong>Proof.</strong> The correspondence $c \leftrightarrow L_c$ is a homomorphism with kernel zero, since $L_c(1) = c$. $\square$</p>
+<h2 id="the-multiplier-module-action">The Multiplier Module Action</h2>
+<p><strong>Definition.</strong> The multiplier algebra $M(A)$ acts on $A$ on the left and on the right by</p>
+<p>$$
+(L,R) \cdot x = L(x) , \qquad x \cdot (L,R) = R(x) , \qquad (L,R) \in M(A),\ x \in A .
+$$</p>
+<p><strong>Theorem ($A$ is an essential $M(A)$-bimodule and the actions extend $A$).</strong> The actions above make $A$ a Banach $M(A)$-bimodule,</p>
+<p>$$
+\lVert m \cdot x\rVert \leq \lVert m\rVert\lVert x\rVert , \qquad \lVert x \cdot m\rVert \leq \lVert m\rVert\lVert x\rVert , \qquad m \in M(A),\ x \in A ,
+$$</p>
+<p>they extend the actions of $\iota(A)$ on $A$, and $A$ is essential as an $M(A)$-bimodule when $A^2 = A$; the assignment $m \mapsto (m \cdot \cdot, \cdot \cdot m)$ is the action and the two-sided action of $M(A)$ is faithful on a faithful $A$.</p>
+<p><strong>Proof.</strong> For $m = (L,R)$ the left action $x \mapsto L(x)$ is bounded with $\lVert L\rVert \leq \lVert m\rVert$, giving the first norm inequality, and similarly the right. On $\iota(a) = (L_a,R_a)$ the action is $x \mapsto L_ax = ax$ and $x \mapsto R_ax = xa$, so it extends the regular actions. Essentiality is $M(A) \cdot A = A$, which holds because $\iota(A) \cdot A = A^2 = A$ and $A$ is strictly dense in $M(A)$. A multiplier acting trivially on both sides is zero by the definition of $M(A)$ as double centralisers. $\square$</p>
+<p><strong>Theorem (the multiplier algebra is the module endomorphism algebra).</strong> Let $A$ be a faithful Banach algebra with $A^2 = A$. Then the map</p>
+<p>$$
+M(A) \longrightarrow \{\,T \in B(A) : T(ax) = aT(x),\ T(xa) = T(x)a \ \forall a,x\,\} , \qquad (L,R) \longmapsto L = R ,
+$$</p>
+<p>is an isometric algebra isomorphism onto the bounded two-sided $A$-module endomorphisms of $A$; equivalently $M(A) \cong \operatorname{End}_{A\text{-}A}(A)$ up to the canonical identification of the two components.</p>
+<p><strong>Proof.</strong> A double centraliser acts on both sides and its two components agree as maps when $A$ is faithful and $A^2 = A$, by $aL(b) = R(a)b$; conversely a bounded two-sided module endomorphism $T$ with $T(ax) = aT(x)$ and $T(xa) = T(x)a$ gives the double centraliser $(T,T)$ on such an algebra, and the correspondences are inverse. The norm is preserved because the max norm equals $\lVert L\rVert = \lVert R\rVert$ on a faithful algebra. $\square$</p>
+<p><strong>Corollary (the strict topology is the module topology).</strong> The strict topology is the weakest locally convex topology on $M(A)$ making the module actions $m \mapsto m \cdot x$ and $m \mapsto x \cdot m$ continuous for every $x \in A$; it is exactly the topology of the seminorms in <em>Multipliers of a Banach Algebra</em>, and the multiplier algebra is complete and $A$ dense in it.</p>
+<p><strong>Proof.</strong> Continuity of $m \mapsto m \cdot x = L(x)$ for all $x$ is the definition of the seminorms $\lVert L(x)\rVert$, and continuity of $m \mapsto x \cdot m = R(x)$ gives the seminorms $\lVert R(x)\rVert$; the two families generate the strict topology. Completeness and density are the strict-completion theorem of <em>Multipliers of a Banach Algebra</em>. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($C(K)$ and its module structure).</strong> For $A = C(K)$ with $K$ compact Hausdorff, $\mathcal{M}(A) = \{f \mapsto \phi f : \phi \in C(K)\} = \lambda(A)$, the multiplication algebra is the algebra of multiplication operators, isomorphic to $C(K)$; the module endomorphism algebra is $C(K)$ again, and the strict topology on $C(K)$ is the sup norm topology because the algebra is unital. The elementary operators $L_fR_g$ are multiplication by $fg$, and $\mu(f \otimes g) = fg$ has rank-one image in the tensor product.</p>
+<p><strong>Example ($M_n(\mathbb{K})$ and the elementary operators).</strong> For $A = M_n(\mathbb{K})$, the elementary operator $\sum_i L_{A_i}R_{B_i}$ is $X \mapsto \sum_i A_iXB_i$, and the map $\mu : M_n \otimes M_n \to B(M_n)$ allows expressions of rank-one operators; $\mathcal{M}(A)$ is all of $B(M_n)$ when $n \geq 2$ and the elementary operators span, so the multiplication algebra is the full operator algebra and its closure adds nothing.</p>
+<p><strong>Example ($K(H)$ and $B(H)$ as module endomorphisms).</strong> For $A = K(H)$ the compact operators, the multiplier algebra is $B(H)$, and the identity $M(K(H)) = \operatorname{End}_{K(H)}(K(H))$ recovers every bounded operator as a module endomorphism of the compact operators; the strict topology making the module action continuous is the strong-$*$ topology, and the elementary operators $T \mapsto ATB$ with $A,B \in K(H)$ span the compact operators as a module.</p>
+<p><strong>Example (a non-closed multiplication algebra).</strong> If $A$ is a Banach algebra in which the norm closure of $\mathcal{M}(A)$ is strictly larger than $\mathcal{M}(A)$, then the multiplication algebra is not closed, and $\overline{\mathcal{M}(A)}$ is the closed subalgebra of $B(A)$ generated by the regular representations; this happens for the compact operators, where the finite-rank elementary operators have closure the compact operators, and for the uniform algebras, where $\mu$ is not surjective onto $\overline{\mathcal{M}(A)}$.</p>
+<h2 id="summary">Summary</h2>
+<p>For $a$ in a Banach algebra $A$ the multiplication operators $L_a,R_a$ are bounded, with $\lVert L_a\rVert \leq \lVert a\rVert$ and $\lVert R_a\rVert \leq \lVert a\rVert$, equal to the norm on a unital algebra, and the elementary operators $\sum L_{a_i}R_{b_i}$ have $\lVert L_aR_b\rVert \leq \lVert a\rVert\lVert b\rVert$; they span the multiplication algebra $\mathcal{M}(A)$, an algebra with product $L_aR_bL_cR_d = L_{ac}R_{bd}$ that is the linear span of the products of the two regular representations and is commutative exactly when $A$ is. The algebra $A$ is a Banach $A$-bimodule in two ways, essential exactly when $A = A^2$, and its bounded left module endomorphisms are the right multipliers, its bounded right module endomorphisms the left multipliers, and its bounded two-sided endomorphisms the multiplications by the centre on a unital algebra. The multiplier algebra $M(A)$ acts on $A$ on both sides, making $A$ an essential Banach $M(A)$-bimodule that extends the regular actions, and $M(A)$ is exactly the bounded two-sided $A$-module endomorphism algebra of a faithful $A$ with $A^2 = A$; the strict topology is the weakest locally convex topology on $M(A)$ making this module action continuous, and $A$ is dense and $M(A)$ complete in it. The closure of $\mathcal{M}(A)$ is the closed subalgebra generated by the regular representations, and its C<em>-structure is </em>Elementary Operators and the Two-Sided Sandwich<em> and </em>Operator Algebras*.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$, $R_a$</td>
+<td>The one-sided multiplication operators, $\lVert L_a\rVert\le\lVert a\rVert$ (equality if unital)</td>
+</tr>
+<tr>
+<td>$\sum_i L_{a_i}R_{b_i}$</td>
+<td>Elementary operator, $x \mapsto \sum_i a_ixb_i$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(A)$</td>
+<td>The multiplication algebra, product $L_aR_bL_cR_d = L_{ac}R_{bd}$</td>
+</tr>
+<tr>
+<td>$\overline{\mathcal{M}(A)}$</td>
+<td>Its norm closure, the closed subalgebra generated by $\lambda(A)\cup\rho(A)$</td>
+</tr>
+<tr>
+<td>$\mu : A\otimes A \to B(A)$</td>
+<td>The tensor-product realisation, $a\otimes b \mapsto L_aR_b$, $\lVert\mu\rVert\le1$</td>
+</tr>
+<tr>
+<td>$a\cdot x = ax$, $x\cdot a = xa$</td>
+<td>The regular $A$-bimodule, essential iff $A=A^2$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_A(A) = \{R_b\}$, $\operatorname{End}(A_A) = \{L_b\}$</td>
+<td>Left and right module endomorphisms are the opposite one-sided multiplications</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{A\text{-}A}(A) = \{L_c : c \in Z(A)\}$</td>
+<td>Two-sided endomorphisms are the central multiplications</td>
+</tr>
+<tr>
+<td>$M(A) \cong \operatorname{End}_{A\text{-}A}(A)$</td>
+<td>Multiplier algebra as module endomorphisms</td>
+</tr>
+<tr>
+<td>$(L,R)\cdot x = L(x)$, $x\cdot(L,R) = R(x)$</td>
+<td>The multiplier module actions</td>
+</tr>
+<tr>
+<td>Strict topology</td>
+<td>The module topology of the actions of $A$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I</em> (Cambridge University Press, 1994), for the multiplication algebra, the module structure and the multipliers.</li>
+<li>Ronald Larsen, <em>An Introduction to the Theory of Multipliers</em> (Springer, 1971), for the multiplier algebra as module endomorphisms and the strict topology.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the multiplication algebra and the tensor product realisation of the elementary operators.</li>
+<li>Frank F. Bonsall and John Duncan, <em>Complete Normed Algebras</em> (Springer, 1973), for the multiplication operators, the module structure and the closed subalgebras generated by the regular representations.</li>
+<li>Albrecht Pietsch, <em>Operator Ideals</em> (North-Holland, 1980), for the elementary operators, their norms and the tensor-product norms in the operator setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

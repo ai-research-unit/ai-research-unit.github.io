@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Covariant Derivative — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-covariant-derivative"><strong>The Covariant Derivative</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>covariant derivative</strong> on a vector bundle is the operator that differentiates its sections by comparing the fibres over neighbouring points through a <strong>connection</strong>; the connection is the horizontal distribution, the covariant derivative is its action on sections, and the two are the same datum read in two ways. The definition, the local connection form and the transformation rule are those of <em>Fibre Bundles, Connections and Curvature</em>; this article reads that datum as an <strong>operator</strong> and develops the operator calculus it generates, which is what the rest of the Part and the geometry above it use.</p>
+<p>The article develops the covariant derivative from the definition, not repeating the definition itself. It fixes the operator $\nabla_X$ along a vector field, its $C^\infty(M)$-linearity in $X$ and its Leibniz rule in the section, and its extension $d^\nabla$ to the forms with values in the bundle, the operator of degree one whose square is the multiplication by the curvature. It proves that the curvature is the failure of the covariant derivatives to commute, that it is tensorial, and that the Bianchi identity is the operator statement $d^\nabla R = 0$. It then develops <strong>parallel transport</strong>, the flow of the equation $\nabla_{\dot\gamma}V = 0$ along a curve, which turns the curvature into the infinitesimal non-commutativity of translation around a small loop and recovers the holonomy group. It treats the metric-compatible and torsion-free case, the Levi–Civita connection of a metric, and the autoparallel curves it defines.</p>
+<p>The article assumes the vector bundles, their sections and frames, the connection, the connection form, the curvature, the structure equation, the Bianchi identity and the holonomy group of <em>Fibre Bundles, Connections and Curvature</em>; the vector fields, the Lie bracket and the tangent bundle of <em>Smooth Manifolds and Differential Geometry</em>; and the differential forms and the exterior derivative of <em>Differential Forms and Stokes' Theorem</em>. The existence and uniqueness of the solution of the parallel-transport equation is the theorem of <em>Ordinary Differential Equations</em>, later in this Part, and is quoted where it is used. The geodesics, the exponential map of a metric and the curvature as a geometric object are Part IV's, and are named here only as forward references. No physics is invoked.</p>
+<h2 id="the-covariant-derivative-as-an-operator">The Covariant Derivative as an Operator</h2>
+<h3 id="the-operator-along-a-vector-field">The Operator Along a Vector Field</h3>
+<p>Let $E \to M$ be a vector bundle over a smooth manifold $M$ and let $\nabla$ be a connection on $E$, so that $\nabla : \Gamma(E) \to \Gamma(T^*M \otimes E)$ is $\mathbb{R}$-linear and satisfies $\nabla(fs) = df \otimes s + f\,\nabla s$ for $f \in C^\infty(M)$ and $s \in \Gamma(E)$, as in <em>Fibre Bundles, Connections and Curvature</em>. For a vector field $X \in \mathrm{X}(M)$ the <strong>covariant derivative along $X$</strong> is the operator</p>
+<p>$$
+\nabla_X : \Gamma(E) \longrightarrow \Gamma(E), \qquad \nabla_X s = \langle \nabla s, X\rangle .
+$$</p>
+<p><strong>Proposition.</strong> The assignment $X \mapsto \nabla_X$ is $C^\infty(M)$-linear, $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$, and for each $X$ the operator $\nabla_X$ is a first-order differential operator on the sections of $E$ in the sense of <em>Differential Operators on a Manifold</em>, with the Leibniz rule</p>
+<p>$$
+\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E).
+$$</p>
+<p>Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.</p>
+<p><em>Proof.</em> The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)^a = X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s^a)$ on each component; the symbol follows.</p>
+<h3 id="local-expression-and-the-affine-space-of-connections">Local Expression and the Affine Space of Connections</h3>
+<p>In a local frame $e = (e_1, \ldots, e_r)$ over an open set $U$, the connection form $\omega = (\omega^a_{\ b})$ is the matrix of $1$-forms defined by $\nabla e_b = \sum_a \omega^a_{\ b}\otimes e_a$, and a section $s = \sum_b s^b e_b$ has</p>
+<p>$$
+\nabla_X s = \sum_a \Bigl(X(s^a) + \sum_b \omega^a_{\ b}(X)\,s^b\Bigr) e_a, \qquad \text{equivalently} \quad \nabla = d + \omega
+$$</p>
+<p>on the components, where $d$ is the exterior derivative of the coefficient functions. Under a change of frame $e' = eg$ the form transforms as $\omega' = g^{-1}\omega g + g^{-1}dg$.</p>
+<p><strong>Proposition.</strong> The operators $\nabla_X$ arising from the connections on $E$ form an affine space: if $\nabla$ and $\nabla'$ are connections, then $\nabla' - \nabla$ is a $C^\infty(M)$-linear map $\Gamma(E) \to \Gamma(T^*M \otimes E)$, that is, a section of $T^*M \otimes \operatorname{End}(E)$, and every such section arises.</p>
+<p><em>Proof.</em> Both operators satisfy the Leibniz rule with the same $df \otimes s$ term, so the difference annihilates the multiplication by a function; a map that is linear over $C^\infty(M)$ is a bundle map, here a section of $T^*M \otimes \operatorname{End}E$. Conversely, adding such a section to a connection preserves the Leibniz rule. In a frame the statement is that $\omega' - \omega$ is a matrix of $1$-forms, which is the affine statement of the transformation rule.</p>
+<h3 id="the-extension-to-bundle-valued-forms">The Extension to Bundle-Valued Forms</h3>
+<p><strong>Definition.</strong> The <strong>exterior covariant derivative</strong> is the unique $\mathbb{R}$-linear operator</p>
+<p>$$
+d^\nabla : \Omega^p(M; E) \longrightarrow \Omega^{p+1}(M; E)
+$$</p>
+<p>that agrees with $\nabla$ on $\Omega^0(M;E) = \Gamma(E)$ and satisfies the graded Leibniz rule</p>
+<p>$$
+d^\nabla(\alpha \wedge s) = d\alpha \wedge s + (-1)^p\, \alpha \wedge \nabla s
+$$</p>
+<p>for $\alpha \in \Omega^p(M)$ and $s \in \Gamma(E)$; on $\alpha \otimes s$ the two rules combine to $d^\nabla(\alpha \otimes s) = d\alpha \otimes s + (-1)^p\alpha \wedge \nabla s$. When $E = \operatorname{End}(F)$ and $\nabla$ is the connection induced on the endomorphisms, the same operator acts on an $\operatorname{End}(F)$-valued form $\beta$ by</p>
+<p>$$
+d^\nabla\beta = d\beta + [\omega, \beta],
+$$</p>
+<p>the bracket being the graded commutator of the matrix of forms with the matrix of $\beta$.</p>
+<p><strong>Proposition.</strong> The operator $d^\nabla$ is well defined by these requirements and is the operator of degree one, locally $d + \omega \wedge \cdot$, on the graded module $\Omega^\bullet(M;E)$ of $E$-valued forms. It is not a derivation of a graded-commutative algebra unless $E$ is the trivial line bundle, because the product of two $E$-valued forms is not defined; it is a degree-one operator on a graded module over the graded-commutative algebra of scalar forms, and it satisfies the graded Leibniz rule over that module structure.</p>
+<p><em>Proof.</em> The requirements determine the operator on the generators $\alpha\otimes s$ and hence, by additivity, everywhere; the local expression $d + \omega\wedge\cdot$ is obtained by writing $s$ in a frame, and it is the unique operator with the two stated properties.</p>
+<h2 id="the-curvature-as-the-square-of-the-covariant-derivative">The Curvature as the Square of the Covariant Derivative</h2>
+<h3 id="the-operator-identity">The Operator Identity</h3>
+<p><strong>Theorem.</strong> For every connection $\nabla$ on $E$ there is a unique section $R$ of $\Lambda^2T^*M \otimes \operatorname{End}(E)$, the <strong>curvature</strong>, such that for every pair of vector fields $X, Y$ and every section $s$,</p>
+<p>$$
+R(X, Y)s = \nabla_X\nabla_Y s - \nabla_Y\nabla_X s - \nabla_{[X,Y]}s .
+$$</p>
+<p>Equivalently, $R \wedge \cdot = (d^\nabla)^2$ on the $E$-valued forms, and in a frame $R = d\omega + \omega \wedge \omega$. The contraction $R(X,Y)$ is $C^\infty(M)$-linear in $X$ and $Y$ and in $s$, so it is a tensor; and it is the obstruction to the operators $\nabla_X$ forming a representation of the Lie algebra of vector fields, the failure being measured by the bracket $[X,Y]$.</p>
+<p><em>Proof.</em> The difference of the three terms is $C^\infty(M)$-linear in $s$: the terms involving derivatives of $f$ in $\nabla_X\nabla_Y(fs) - \nabla_Y\nabla_X(fs)$ cancel against those of $\nabla_{[X,Y]}(fs)$, by the Leibniz rule and the identity $XYf - YXf = [X,Y]f$. It is also $C^\infty(M)$-linear in $X$ and $Y$, because $\nabla_X$ depends on $X$ through its value pointwise and the bracket is skew. Hence the expression defines a bundle map $\Lambda^2T^*M \to \operatorname{End}(E)$, which is the section $R$. The identification with $(d^\nabla)^2$ and with $d\omega + \omega\wedge\omega$ is the computation of <em>Fibre Bundles, Connections and Curvature</em>, where the structure equation is proved.</p>
+<p><strong>Corollary.</strong> $\nabla_X\nabla_Y - \nabla_Y\nabla_X = \nabla_{[X,Y]} + R(X,Y)$, so the curvature is exactly the failure of the operators $\nabla_X$ to commute with the Lie bracket of the fields; the connection is <strong>flat</strong>, $R = 0$, if and only if $X \mapsto \nabla_X$ is a representation of the Lie algebra $\mathrm{X}(M)$.</p>
+<p><strong>Corollary (the Bianchi identity).</strong> $d^\nabla R = 0$; in a frame, $dR + [\omega, R] = 0$. Consequently $R$ is a closed form for the operator $d^\nabla$, and its class is the first obstruction to the flatness of the connection beyond the vanishing of $R$ itself.</p>
+<h3 id="flatness-and-the-local-frame">Flatness and the Local Frame</h3>
+<p><strong>Theorem.</strong> A connection is flat if and only if it is locally trivial: about every point there is a frame in which $\omega = 0$, equivalently a family of local sections with $\nabla s = 0$ that spans the bundle. For a principal bundle the corresponding statement is that $\omega = g^{-1}dg$ locally, and the horizontal distribution is integrable.</p>
+<p><em>Proof.</em> That a flat frame gives $R = d\omega + \omega\wedge\omega = 0$ is immediate. Conversely, if $R = 0$ the equation $\nabla s = 0$ is a system of linear first-order partial differential equations whose integrability condition is the vanishing of the curvature, so it is locally solvable by the Frobenius theorem with a solution space of the rank of $E$; this produces the flat frame. The principal statement is the same argument read in the connection form, and the integrability of the horizontal distribution is the Frobenius theorem applied to $\ker\omega$.</p>
+<p>The local frame in which the connection is trivial is the flat case of the parallel transport of the next section: a global flat frame exists exactly when the holonomy of the connection is trivial, and it exists locally always.</p>
+<h2 id="parallel-transport">Parallel Transport</h2>
+<h3 id="the-parallel-transport-equation">The Parallel Transport Equation</h3>
+<p>Let $\gamma : [a,b] \to M$ be a smooth curve and let $V$ be a section of $E$ along $\gamma$, that is, a smooth family $V(t) \in E_{\gamma(t)}$. The section is <strong>parallel along $\gamma$</strong> if</p>
+<p>$$
+\nabla_{\dot\gamma}V = 0,
+$$</p>
+<p>an equation whose local form in a frame pulled back to $[a,b]$ is the linear system of ordinary differential equations</p>
+<p>$$
+\dot V^a(t) + \sum_b \omega^a_{\ b}(\dot\gamma(t))\, V^b(t) = 0, \qquad a = 1, \ldots, r .
+$$</p>
+<p><strong>Theorem (existence and uniqueness).</strong> For every curve $\gamma$ and every initial value $v \in E_{\gamma(a)}$ there is a unique parallel section $V$ along $\gamma$ with $V(a) = v$.</p>
+<p><em>Proof.</em> Locally the equation is a linear system of ordinary differential equations with continuous coefficients, so the theorem of <em>Ordinary Differential Equations</em>, later in this Part, gives a unique local solution for each initial value; the solutions on the overlaps of a cover of the compact interval agree by uniqueness, and a finite cover glued by the composition of the flows gives the global solution on $[a,b]$. The solution depends smoothly on the initial value because the flow of a linear system is linear in the initial condition.</p>
+<h3 id="the-parallel-transport-map-and-holonomy">The Parallel Transport Map and Holonomy</h3>
+<p><strong>Definition.</strong> The <strong>parallel transport</strong> along $\gamma$ is the map</p>
+<p>$$
+P_\gamma : E_{\gamma(a)} \longrightarrow E_{\gamma(b)}, \qquad P_\gamma(v) = V(b),
+$$</p>
+<p>where $V$ is the parallel section with $V(a) = v$.</p>
+<p><strong>Theorem.</strong> The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma^{-1}} = P_\gamma^{-1}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the <strong>holonomy group</strong>, and its identity component is the holonomy group of the connection.</p>
+<p><em>Proof.</em> Linearity and invertibility are the linearity of the equation and the reversibility of the curve. Reparametrisation invariance is the chain rule, which replaces $\dot\gamma$ by a positive multiple and leaves the equation's solution set unchanged. The concatenation and inverse laws are the uniqueness of the solution of the initial-value problem applied to the two subintervals and to the reversed curve. The group laws follow, and the closed curves at a fixed base give a subgroup of the linear group of the fibre, which is a Lie subgroup because the transport depends smoothly on the curve.</p>
+<p><strong>Theorem (curvature as the infinitesimal holonomy).</strong> Let $X, Y$ be vector fields on a neighbourhood of $x$, let $\square_\epsilon$ be the coordinate rectangle spanned by $\epsilon X$ and $\epsilon Y$ and traversed in the order $X, Y, -X, -Y$, and let $P_\epsilon$ be the parallel transport around it. Then</p>
+<p>$$
+P_\epsilon = \mathrm{id} - \epsilon^2\, R(X, Y)(x) + O(\epsilon^3)
+$$</p>
+<p>as $\epsilon \to 0$. Consequently the curvature endomorphisms $R(X,Y)(x)$ span the Lie algebra of the holonomy group, and the connection is flat if and only if the parallel transport around every contractible loop is the identity.</p>
+<p><em>Proof sketch.</em> Write the parallel transport as the flow of the linear system $\dot V = -\omega(\dot\gamma)V$ and expand the ordered product of the four flows in powers of $\epsilon$ by the Lie–Trotter product formula; the first-order terms cancel by the opposite traversals, and the second-order term is the commutator $d\omega + \omega\wedge\omega$ evaluated on $X\wedge Y$, which is $R(X,Y)$. The span statement is the theorem of Ambrose and Singer, quoted from <em>Fibre Bundles, Connections and Curvature</em>; the flatness criterion follows because a flat connection has a flat local frame, in which $P_\epsilon = \mathrm{id}$.</p>
+<h3 id="the-autoparallel-curves">The Autoparallel Curves</h3>
+<p><strong>Definition.</strong> A smooth curve $\gamma$ in $M$ is <strong>autoparallel</strong> for a connection $\nabla$ on $TM$ if $\nabla_{\dot\gamma}\dot\gamma = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $\ddot\gamma^i + \sum_{j,k}\Gamma^i_{jk}\dot\gamma^j\dot\gamma^k = 0$.</p>
+<p>The autoparallel curves are the straight lines of the connection: they are the curves whose velocity is parallel along themselves, and in a flat frame they are the linear curves. For the Levi–Civita connection of a Riemannian metric they are the geodesics, and the metric geometry of those curves — the exponential map, the length-minimising property, the completeness — is <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> in Part IV; what belongs to the present article is the differential equation, its existence and uniqueness by <em>Ordinary Differential Equations</em>, and the fact that the equation is the same for every connection on the tangent bundle.</p>
+<h2 id="the-metric-compatible-and-torsion-free-case">The Metric-Compatible and Torsion-Free Case</h2>
+<p><strong>Definition.</strong> Let $E$ carry a metric $h$, a smooth family of inner products on the fibres. A connection $\nabla$ on $E$ is <strong>metric-compatible</strong> (or <strong>metric</strong>) if</p>
+<p>$$
+X\,h(s, t) = h(\nabla_X s, t) + h(s, \nabla_X t) \qquad \text{for all } X \in \mathrm{X}(M),\ s, t \in \Gamma(E).
+$$</p>
+<p>The <strong>torsion</strong> of a connection $\nabla$ on the tangent bundle $TM$ is the tensor $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$, a section of $\Lambda^2T^*M \otimes TM$; the connection is <strong>torsion-free</strong> if $T = 0$.</p>
+<p><strong>Theorem (fundamental theorem of Riemannian geometry).</strong> On a Riemannian manifold $(M,g)$ there is exactly one connection on $TM$ that is metric-compatible and torsion-free, the <strong>Levi–Civita connection</strong>. It is determined by the Koszul formula</p>
+<p>$$
+2g(\nabla_XY, Z) = X\,g(Y,Z) + Y\,g(X,Z) - Z\,g(X,Y) - g(X,[Y,Z]) - g(Y,[X,Z]) + g(Z,[X,Y]),
+$$</p>
+<p>which expresses its covariant derivative in terms of the metric and the Lie bracket alone.</p>
+<p><em>Proof.</em> The right-hand side is $C^\infty(M)$-linear in $X$, $Y$ and $Z$, so it defines the three contractions with the Levi–Civita symbol, hence a connection; substituting the formula into the metric and the torsion conditions verifies them. Uniqueness follows because the difference of two metric and torsion-free connections is a tensor $S(X,Y)$ that is skew in $X,Y$ and satisfies $g(S(X,Y),Z) + g(S(X,Z),Y) = 0$, a tensor that polarises to zero; the Koszul formula computes the covariant derivative from the data, so there is nothing left free.</p>
+<p><strong>Proposition.</strong> For a metric-compatible connection the parallel transport preserves the metric, $h(P_\gamma u, P_\gamma v) = h(u,v)$ for every curve $\gamma$; conversely, if the parallel transport preserves the metric for every curve, the connection is metric-compatible.</p>
+<p><em>Proof.</em> If $u, v$ are parallel along $\gamma$, then $\frac{d}{dt}h(u,v) = \dot\gamma\,h(u,v) = h(\nabla_{\dot\gamma}u, v) + h(u,\nabla_{\dot\gamma}v) = 0$; the converse differentiates the constancy of $h$ along the parallel sections with the given initial values.</p>
+<p>The two conditions of the theorem are the ones that single out the Levi–Civita connection from the affine space of the connections, and the metric refinement of it — the metric as an object, its curvature and its geodesics — is the subject of <em>Riemannian Geometry</em> in Part IV; the metric-compatibility condition on an arbitrary bundle, its reading as adjointness, and its interaction with an involution are the subject of <em>Hermitian Connections and the Adjoint</em> and <em>Hermitian Vector Bundles and the Chern Connection</em> in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>A covariant derivative is a connection read as an operator: $\nabla_X$ is first-order, $C^\infty(M)$-linear in $X$ and a derivation in the section; in a frame it is $d + \omega$ on the components, and the connections on a bundle form an affine space modelled on the $1$-forms with values in the endomorphisms. Extending to the bundle-valued forms gives the operator $d^\nabla$ of degree one, locally $d + \omega\wedge\cdot$, whose square is the multiplication by the curvature. The curvature $R(X,Y) = \nabla_X\nabla_Y - \nabla_Y\nabla_X - \nabla_{[X,Y]}$ is a tensorial $2$-form with values in the endomorphisms; it is the failure of the covariant derivatives to represent the Lie algebra of vector fields, it satisfies the Bianchi identity $d^\nabla R = 0$, and it vanishes exactly when the connection is locally trivial.</p>
+<p>Parallel transport solves the equation $\nabla_{\dot\gamma}V = 0$ along a curve; the solution exists and is unique, and it defines a linear isomorphism $P_\gamma$ between the fibres that is functorial under concatenation and inversion. The maps around the closed curves form the holonomy group; the parallel transport around a small rectangle is $\mathrm{id} - \epsilon^2R(X,Y) + O(\epsilon^3)$, so the curvature spans the Lie algebra of the holonomy, and flatness is the triviality of the transport around the contractible loops. The autoparallel curves are the curves with $\nabla_{\dot\gamma}\dot\gamma = 0$, the straight lines of the connection. The metric-compatible and torsion-free condition singles out the Levi–Civita connection of a metric, expressed by the Koszul formula, and for it the parallel transport is an isometry; the metric geometry of geodesics and curvature is Part IV's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nabla$, $\nabla_X s = \langle\nabla s, X\rangle$</td>
+<td>Connection and covariant derivative along a vector field</td>
+</tr>
+<tr>
+<td>$\nabla_X(fs) = (Xf)s + f\nabla_Xs$</td>
+<td>Leibniz rule; $\nabla_{fX+gY} = f\nabla_X + g\nabla_Y$</td>
+</tr>
+<tr>
+<td>$\omega = (\omega^a_{\ b})$, $\nabla = d + \omega$</td>
+<td>Connection form in a frame; local components</td>
+</tr>
+<tr>
+<td>$\omega' = g^{-1}\omega g + g^{-1}dg$</td>
+<td>Change of frame</td>
+</tr>
+<tr>
+<td>$\Omega^p(M;E)$, $d^\nabla$</td>
+<td>$E$-valued forms and the exterior covariant derivative $d + \omega\wedge\cdot$</td>
+</tr>
+<tr>
+<td>$d^\nabla\beta = d\beta + [\omega,\beta]$</td>
+<td>Action on $\operatorname{End}(E)$-valued forms</td>
+</tr>
+<tr>
+<td>$R(X,Y) = \nabla_X\nabla_Y - \nabla_Y\nabla_X - \nabla_{[X,Y]}$</td>
+<td>Curvature; $(d^\nabla)^2 = R\wedge\cdot$</td>
+</tr>
+<tr>
+<td>$R = d\omega + \omega\wedge\omega$</td>
+<td>Local curvature; the structure equation</td>
+</tr>
+<tr>
+<td>$d^\nabla R = 0$, $dR + [\omega,R] = 0$</td>
+<td>Bianchi identity</td>
+</tr>
+<tr>
+<td>Flat</td>
+<td>$R = 0$; locally $\omega = 0$ and the horizontal distribution is integrable</td>
+</tr>
+<tr>
+<td>$\nabla_{\dot\gamma}V = 0$</td>
+<td>Parallel transport equation along a curve</td>
+</tr>
+<tr>
+<td>$P_\gamma : E_{\gamma(a)} \to E_{\gamma(b)}$</td>
+<td>Parallel transport, a linear isomorphism</td>
+</tr>
+<tr>
+<td>Holonomy group</td>
+<td>$\{P_\gamma\}$ over the closed curves based at $x$; a subgroup of $GL(E_x)$</td>
+</tr>
+<tr>
+<td>$R(X,Y)(x)$</td>
+<td>Spans the Lie algebra of the holonomy (Ambrose–Singer)</td>
+</tr>
+<tr>
+<td>$\nabla_{\dot\gamma}\dot\gamma = 0$</td>
+<td>Autoparallel curves; the geodesics for the Levi–Civita connection</td>
+</tr>
+<tr>
+<td>$T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$</td>
+<td>Torsion of a connection on $TM$</td>
+</tr>
+<tr>
+<td>Metric-compatible, $Xh(s,t) = h(\nabla_Xs,t) + h(s,\nabla_Xt)$</td>
+<td>The connection preserves the metric</td>
+</tr>
+<tr>
+<td>Koszul formula, Levi–Civita</td>
+<td>The unique metric and torsion-free connection of a metric</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry</em>, vol. I (Interscience, 1963), for connections, the covariant derivative, the structure equation and the holonomy.</li>
+<li>John M. Lee, <em>Introduction to Riemannian Manifolds</em>, 2nd ed. (Springer, 2018), for the covariant derivative, the Koszul formula, the Levi–Civita connection and parallel transport.</li>
+<li>Michael Spivak, <em>A Comprehensive Introduction to Differential Geometry</em>, vol. II (Publish or Perish, 3rd ed. 1999), for the operator viewpoint on connections and curvature.</li>
+<li>Werner Ballmann, <em>Lectures on Kähler Manifolds</em> (European Mathematical Society, 2006), for the exterior covariant derivative and the curvature identities in the holomorphic case, cited for the forward reference.</li>
+<li>Michael E. Taylor, <em>Partial Differential Equations</em>, vol. I (Springer, 2nd ed. 2011), for the parallel-transport equation as a linear system and the regularity of its flow.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

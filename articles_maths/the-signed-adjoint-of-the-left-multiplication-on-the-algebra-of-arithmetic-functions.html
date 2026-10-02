@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-the-algebra-of-arithmetic-functions"><strong>The Signed Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication is the operator $T_a=L_a\alpha$, the composition of the left multiplication by $a$ with the grade involution; it is the basic odd operator of the algebra of arithmetic functions. Its adjoint for the coefficient form, the <strong>signed adjoint of the left multiplication</strong>, is
+$$
+T_a^{\alpha\dagger}=T_a^*=\alpha\,\Theta_a=\Theta_{\alpha(a)}\,\alpha ,
+$$
+the composition of the transposed multiplication by $\alpha(a)$ with the grade involution. This article computes the signed adjoint, its products and its square, the self-adjointness and unitarity criteria, and the comparison with the left multiplication by $\delta(a)$, which fails exactly as in the non-graded case. The signed left multiplication itself is <em>The Signed Left Multiplication on the Algebra of Arithmetic Functions</em>; the adjoint of the plain left multiplication is <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, and the two-sided version is <em>The Signed Adjoint Sandwich on the Algebra of Arithmetic Functions</em>. Nothing here reads a distance as an object.</p>
+<h2 id="the-signed-adjoint">The Signed Adjoint</h2>
+<h3 id="definition-and-closed-form">Definition and closed form</h3>
+<p><strong>Definition.</strong> For $a\in\mathcal{A}$ the <strong>signed left multiplication</strong> is $T_a=L_a\alpha$, and its <strong>signed adjoint</strong> is
+$$
+T_a^{\alpha\dagger}=T_a^*,\qquad T_a^{\alpha\dagger}=\alpha\,\Theta_a=\Theta_{\alpha(a)}\,\alpha .
+$$</p>
+<p><strong>Theorem.</strong> With respect to the coefficient form,
+$$
+\langle T_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)\lambda(k)f(k)\Bigr)\overline{g(n)}=\langle f,\alpha\Theta_ag\rangle ,
+$$
+so that $T_a^{\alpha\dagger}=\alpha\Theta_a=\Theta_{\alpha(a)}\alpha$, with the explicit form
+$$
+\bigl(T_a^{\alpha\dagger}g\bigr)(k)=\lambda(k)\sum_{m\ge1}\overline{a(m)}\,g(mk)=\sum_{m\ge1}\lambda(m)\overline{a(m)}\,\lambda(k)\,g(mk).
+$$
+The signed adjoint is anti-linear in $a$; it is the adjoint of the adjoint, $(T_a^{\alpha\dagger})^*=T_a$; and it is never of the form $T_b$ for a nondegenerate $a$.</p>
+<p><strong>Proof.</strong> Insert $T_a=L_a\alpha$, use $\alpha^*=\alpha$ and $L_a^*=\Theta_a$ from <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, and the identity $\alpha\Theta_a=\Theta_{\alpha(a)}\alpha$ of the transposed multiplication. The anti-linearity is the conjugation in $\Theta_a$.</p>
+<h3 id="products-and-square">Products and square</h3>
+<p><strong>Theorem.</strong> The signed adjoints satisfy
+$$
+T_a^{\alpha\dagger}T_b^{\alpha\dagger}=\Theta_{\alpha(a)}\Theta_{\alpha(b)}=\Theta_{\alpha(a)*\alpha(b)}=\Theta_{\alpha(a*b)},\qquad \bigl(T_a^{\alpha\dagger}\bigr)^2=\Theta_{\alpha(a)*\alpha(a)},
+$$
+and the products with the signed left multiplication are
+$$
+T_a^{\alpha\dagger}T_b=\alpha\Theta_aL_b\alpha=\Theta_{\alpha(a)}L_b,\qquad T_aT_b^{\alpha\dagger}=L_a\Theta_{\alpha(b)} ,
+$$
+so the signed adjoints close under composition, forming the transposed algebra with the elements $\alpha(a)$.</p>
+<p><strong>Proof.</strong> The products are computed by inserting the definitions and cancelling $\alpha^2=\mathrm{id}$; the multiplicativity $\Theta_c\Theta_d=\Theta_{c*d}$ of the transposed multiplication gives the first display. This is the transposed-algebra computation of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em> with the twist $\alpha$.</p>
+<p><strong>Corollary (self-adjointness and unitarity).</strong> The signed left multiplication is self-adjoint exactly for the real scalar multiples of the identity,
+$$
+T_a=T_a^{\alpha\dagger}\iff L_{\alpha(a)}=\Theta_a\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{R},
+$$
+and it is unitary exactly for the unitary scalar multiples of the identity,
+$$
+T_a\ \text{unitary}\iff \alpha\Theta_aL_a\alpha=L_a\Theta_a=\mathrm{id}\iff a=\gamma\varepsilon,\ |\gamma|=1 .
+$$
+It is an isometry exactly when $\Theta_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$, $|\gamma|=1$.</p>
+<p><strong>Proof.</strong> Test the self-adjointness on $\delta_1$: $T_a\delta_1=\alpha(a)$ and $T_a^{\alpha\dagger}\delta_1=\alpha\Theta_a\delta_1=\lambda(1)\overline{a(1)}\delta_1=\overline{a(1)}\delta_1$, so equality forces $a=\gamma\varepsilon$, and then $T_a=\gamma\alpha$, $T_a^{\alpha\dagger}=\overline\gamma\alpha$, equal exactly for $\gamma$ real; the unitarity is the product identity, as in <em>The Signed Left Multiplication on the Algebra of Arithmetic Functions</em>.</p>
+<h2 id="the-comparison-with-the-involution">The Comparison with the Involution</h2>
+<p><strong>Theorem (comparison).</strong> The expected formula in which the signed adjoint is the signed left multiplication of the transformed element,
+$$
+T_a^{\alpha\dagger}=T_{\delta(a)}\quad\text{with}\quad\delta=\sigma\alpha,
+$$
+does not hold over the algebra of arithmetic functions; the right side is $T_{\delta(a)}=L_{\delta(a)}\alpha=\alpha L_{\alpha(\delta(a))}\alpha$ and the left side is $\alpha\Theta_a$, and the two differ whenever $a$ is not a scalar multiple of the identity. The signed adjoint is a transposed operation on the elements, not a multiplication by a transformed element.</p>
+<p><strong>Proof.</strong> The right side is $T_{\delta(a)}=L_{\delta(a)}\alpha=\alpha L_{\alpha(\delta(a))}$, a left multiplication conjugated by $\alpha$, while the left side is $\alpha\Theta_a$; the two coincide exactly when $\Theta_a=L_{\alpha(\delta(a))}$, which by the criterion of the corollary forces $a=\gamma\varepsilon$. This is the graded analogue of the obstruction of <em>The Sandwich on the Algebra of Arithmetic Functions</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($a=\varepsilon$).</strong> $T_\varepsilon=\alpha$ and $T_\varepsilon^{\alpha\dagger}=\alpha$; the grade involution, self-adjoint and unitary.</p>
+<p><strong>Example ($a=\delta_p$).</strong> $T_{\delta_p}^{\alpha\dagger}=\alpha\Theta_{\delta_p}=\alpha S_p$, the signed adjoint of the isometry $\alpha D_p$; the product $T^{\alpha\dagger}T=\alpha S_pD_p\alpha=P_p$ is the projection onto the multiples of $p$.</p>
+<p><strong>Example ($a=\mathbf 1$).</strong> $T_{\mathbf 1}^{\alpha\dagger}=\alpha\Theta_{\mathbf 1}$; the operator is unbounded on the finitely supported functions, and its square is $\Theta_{\alpha(\mathbf 1)*\alpha(\mathbf 1)}=\Theta_{\lambda*\lambda}$.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The signed adjoint of the left multiplication fails in four degenerate configurations. First, it is not a signed left multiplication, so the class of the signed left multiplications is not closed under adjunction; the adjoints form the transposed class. Second, the self-adjointness and the unitarity hold only at the scalar elements, so the graded operators that are self-adjoint are the degenerate ones. Third, the transposed multiplication is unbounded for a general element and the adjoint requires a weighted space for its domain. Fourth, the involution formula $T_a^{\alpha\dagger}=T_{\delta(a)}$ fails in the same way as the formula $L_a^*=L_{a^*}$ fails for the plain left multiplication; the only form restoring it is the rank-one augmentation form, on which the whole operator theory collapses. These are the boundary cases of the signed adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication $T_a=L_a\alpha$ has the signed adjoint $T_a^{\alpha\dagger}=\alpha\Theta_a=\Theta_{\alpha(a)}\alpha$ for the coefficient form, anti-linear in $a$, with $(T_a^{\alpha\dagger})^*=T_a$, products $T_a^{\alpha\dagger}T_b^{\alpha\dagger}=\Theta_{\alpha(a*b)}$ and square $\Theta_{\alpha(a)*\alpha(a)}$. It is self-adjoint exactly for $a=\gamma\varepsilon$ with $\gamma$ real, unitary exactly for $|\gamma|=1$, and an isometry exactly when $\Theta_aL_a=\mathrm{id}$; the involution formula $T_a^{\alpha\dagger}=T_{\delta(a)}$ fails outside the scalars, because the adjoint is a transposed operation and not a multiplication. The degenerate cases are the non-closure of the class, the scalar self-adjointness, the unboundedness and the rank-one augmentation form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_a=L_a\alpha$</td>
+<td>Signed left multiplication</td>
+</tr>
+<tr>
+<td>$T_a^{\alpha\dagger}=\alpha\Theta_a=\Theta_{\alpha(a)}\alpha$</td>
+<td>Signed adjoint</td>
+</tr>
+<tr>
+<td>$(T_a^{\alpha\dagger}g)(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$</td>
+<td>Explicit form</td>
+</tr>
+<tr>
+<td>$(T_a^{\alpha\dagger})^*=T_a$</td>
+<td>Adjoint of the adjoint</td>
+</tr>
+<tr>
+<td>$T_a^{\alpha\dagger}T_b^{\alpha\dagger}=\Theta_{\alpha(a*b)}$</td>
+<td>Product</td>
+</tr>
+<tr>
+<td>$(T_a^{\alpha\dagger})^2=\Theta_{\alpha(a)*\alpha(a)}$</td>
+<td>The square</td>
+</tr>
+<tr>
+<td>$a=\gamma\varepsilon$, $\gamma\in\mathbb{R}$</td>
+<td>Self-adjointness</td>
+</tr>
+<tr>
+<td>$a=\gamma\varepsilon$, $|\gamma|=1$</td>
+<td>Unitarity</td>
+</tr>
+<tr>
+<td>$\delta=\sigma\alpha$</td>
+<td>The composite involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sterling Berberian, <em>Introduction to Hilbert Space</em> (Oxford University Press, 1961), for the adjoints of the products of operators.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the self-adjoint and unitary operators.</li>
+<li>Israel Gohberg and Mark Krein, <em>Theory of Volterra Operators in Hilbert Space</em> (American Mathematical Society, 1970), for the transposed convolution operators.</li>
+<li>Tsit Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the involution and the transformed elements.</li>
+<li>Hugh Montgomery and Robert Vaughan, <em>Multiplicative Number Theory I: Classical Theory</em> (Cambridge University Press, 2007), for the arithmetic convolution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

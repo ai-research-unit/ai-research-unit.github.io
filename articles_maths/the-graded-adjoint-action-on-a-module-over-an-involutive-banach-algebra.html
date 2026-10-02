@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Graded Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-graded-module"><strong>The Graded Adjoint Action on a Graded Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication of the algebra on itself is the regular case of the <strong>graded adjoint action</strong> on a graded module: a graded left module $M$ over the signed Banach algebra $A$, with a form and a grading operator $\gamma$, carries the action $\ell_r^\pi(m) = \pi(r)\gamma(m)$, where $\pi$ is a representation of $A$ and $\gamma$ implements the grade involution of the module, and the adjoint of the action is the action by the conjugate element, $(\ell_r^\pi)^\dagger = \ell_{\delta(r)}^\pi$, provided the representation is a <code>*</code>-representation and the grading operator is self-adjoint. This is the module-level form of the whole <code>- * Operator Theory</code> block: the regular module $M = A$ recovers the signed left multiplication of the preceding article, the module structure carries the graded commutant, and the adjoint action is the operator that makes the module a <code>*</code>-module over the signed algebra. This article develops the graded module, the adjoint action, and the reduction to the regular case.</p>
+<p>The article assumes the graded module, the representation and the grading operator from <em>The Graded Action on a Module over an Involutive Banach Algebra</em>, which owns the module; the signed left multiplication and the composite $\delta = \sigma\alpha$ from <em>The Signed Left Multiplication on an Involutive Banach Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>; the form of the category and the adjoint from <em>The Involution on the Operator Algebra</em>; the <code>*</code>-representation of the algebra and the self-adjoint operators from <em>Adjoints in a Banach Algebra</em> and <em>Self-Adjoint Operators of a Banach Algebra</em>; and the module theory of the operator algebra from <em>Modules over the Operator Algebra</em> and <em>Bimodules over the Operator Algebra</em>.</p>
+<p>Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with the grade involution $\alpha$ and the involution $\sigma$, with $\sigma\alpha = \alpha\sigma$ and $\delta = \sigma\alpha = \alpha\sigma$; the form of the category is $\{x,y\} = \tau(x\sigma(y))$ with $\tau$ a continuous $\sigma$-invariant and $\alpha$-invariant trace, and $\alpha^\dagger = \alpha$; $M$ is a graded left $A$-module with a form $\{\cdot,\cdot\}_M$ and a <strong>grading operator</strong> $\gamma \in \mathrm{End}(M)$, self-adjoint, $\gamma^2 = 1$, $\gamma^\dagger = \gamma$; $\pi : A \to \mathrm{End}(M)$ is a representation, assumed to be a <code>*</code>-representation $\pi(\sigma(r)) = \pi(r)^\dagger$ and <strong>semilinear</strong> for the grading, $\pi(\alpha(r))\gamma = \gamma\pi(r)$; and the <strong>graded adjoint action</strong> is</p>
+<p>$$
+\ell_r^\pi = \pi(r)\gamma , \qquad \ell_r^\pi(m) = \pi(r)\gamma(m) .
+$$</p>
+<h2 id="the-graded-module-and-the-adjoint-action">The Graded Module and the Adjoint Action</h2>
+<p><strong>Definition.</strong> A <strong>graded left $A$-module</strong> is a module $M$ with a grading operator $\gamma$ of order two and a representation $\pi$ of $A$ that is semilinear for $\gamma$, $\pi(\alpha(r))\gamma = \gamma\pi(r)$; it is a <strong><code>*</code>-module</strong> when $\pi$ is a <code>*</code>-representation for a form on $M$.</p>
+<p><strong>Proposition (the module structure).</strong> The graded adjoint action satisfies $\ell_{rs}^\pi = \ell_r^\pi\ell_{\delta^{-1}(s)}^\pi$ and $\ell_{r+t}^\pi = \ell_r^\pi + \ell_t^\pi$; with the grading operator $\gamma = \alpha$ on the regular module $M = A$ and $\pi$ the left regular representation, the action $\ell_r^\pi$ is the signed left multiplication $\ell_r$, so the regular case is recovered.</p>
+<p><strong>Proof.</strong> $\ell_r^\pi\ell_t^\pi = \pi(r)\gamma\pi(t)\gamma = \pi(r)\pi(\alpha(t))\gamma^2 = \pi(r\alpha(t))$, which is $\ell_{r\alpha(t)}^\pi$, giving the composition law after $\alpha(t) = \delta^{-1}(s)$; additivity is the linearity of $\pi$; and on the regular module $\pi(r) = L_r$, $\gamma = \alpha$, so $\ell_r^\pi = L_r\alpha = \ell_r$. $\square$</p>
+<p><strong>Theorem (the adjoint of the graded action).</strong> For every $r$, the graded adjoint action is adjointable and</p>
+<p>$$
+\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi , \qquad \bigl(\ell_r^\pi\bigr)^\dagger(m) = \pi(\delta(r))\gamma(m) ,
+$$</p>
+<p>the graded adjoint action by the conjugate element $\delta(r)$; the adjoint is the action conjugated by the composite involution.</p>
+<p><strong>Proof.</strong> The adjoint is anti-multiplicative, $\gamma^\dagger = \gamma$ and $\pi(\sigma(r)) = \pi(r)^\dagger$, so $\bigl(\pi(r)\gamma\bigr)^\dagger = \gamma^\dagger\pi(r)^\dagger = \gamma\pi(\sigma(r))$; by semilinearity $\gamma\pi(\sigma(r)) = \pi(\alpha(\sigma(r)))\gamma = \pi(\delta(r))\gamma$ (using $\alpha\sigma = \sigma\alpha$), which is $\ell_{\delta(r)}^\pi$. Uniqueness is the nondegeneracy of the module form. $\square$</p>
+<h2 id="the-graded-commutant-and-the-structure">The Graded Commutant and the <code>*</code>-Structure</h2>
+<p><strong>Definition.</strong> The <strong>graded commutant</strong> of the representation $\pi$ is</p>
+<p>$$
+\pi(A)^{\mathrm{g}} = \{T \in \mathrm{End}(M) : T\pi(r) = \pi(\delta(r))T \ \text{for all } r\} ,
+$$</p>
+<p>the operators that intertwine the representation with its conjugate; the <strong><code>*</code>-module structure</strong> is the datum of $\pi$, $\gamma$ and the forms for which $\pi$ is a <code>*</code>-representation.</p>
+<p><strong>Proposition (the commutant and the adjoint).</strong> For a <code>*</code>-representation $\pi$ the graded commutant is closed under the adjoint when the module form is invariant, the adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$, and $\ell_r^\pi$ is self-adjoint exactly when $\delta(r) = r$; it is unitary in the graded sense exactly when the defect $\delta(r)\alpha(r)$ is the unit of the module, i.e. $\pi(\delta(r)\alpha(r)) = \mathrm{id}_M$.</p>
+<p><strong>Proof.</strong> The adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$; self-adjointness is $\pi(\delta(r)) = \pi(r)$, i.e. $\delta(r) = r$ on the image of $\pi$; unitarity is $\bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \pi(\delta(r)\alpha(r)) = \mathrm{id}_M$ by the composition law. The closure of the commutant under the adjoint is the standard compatibility of an intertwining relation with the adjoint for a <code>*</code>-representation. $\square$</p>
+<p><strong>Remark (the reduction to the regular module).</strong> On the regular module $M = A$ with $\pi$ the left regular representation and $\gamma = \alpha$, the graded commutant is the set of $T$ with $T L_r = L_{\delta(r)}T$, the <em>-module structure is the form of the category, and the whole theory of </em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra<em> is the special case of the present article; the two-sided operators are the composites of the graded adjoint action with the right multiplications, </em>The Signed Adjoint Sandwich on a Banach Algebra*.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the regular module).</strong> $M = A$, $\pi$ the left regular representation, $\gamma = \alpha$: the graded adjoint action is the signed left multiplication, its adjoint is the action by $\delta(r)$, and the graded commutant is generated by the right multiplications (up to the kernel), giving the commutant description of the two-sided operators.</p>
+<p><strong>Example (the matrix module).</strong> $M = \mathbb{C}^n$ as a graded module over $A = M_n(\mathbb{C})$ with the grading $\gamma$ a self-adjoint involution, $\pi$ the defining representation: the graded adjoint action is the standard graded matrix action, its adjoint is the action of the transposed matrix, and the self-adjointness condition is the symmetry of the matrix in the graded sense.</p>
+<p><strong>Example (the Hilbert module).</strong> Let $M$ be a Hilbert space and $\pi$ a <code>*</code>-representation of a $\mathrm{C}^*$-algebra with $\gamma$ a self-adjoint unitary; the graded adjoint action is a bounded operator, its adjoint is the action by $\delta(r)$, and the graded commutant is a von Neumann algebra when $\pi(A)$ is closed, the graded commutant of <em>Involutive Operator Algebras and the Commutant</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded left module over the signed Banach algebra $A$ carries the grading operator $\gamma$, self-adjoint of order two, and the semilinear <code>*</code>-representation $\pi$; the graded adjoint action $\ell_r^\pi = \pi(r)\gamma$ is adjointable with $(\ell_r^\pi)^\dagger = \ell_{\delta(r)}^\pi$, the action by the conjugate element $\delta = \sigma\alpha$, under the hypotheses that $\pi$ is a <code>*</code>-representation and $\gamma$ is self-adjoint. The composition is $\ell_r^\pi\ell_t^\pi = \ell_{r\alpha(t)}^\pi$, and on the regular module $M = A$ with $\pi$ the left regular representation and $\gamma = \alpha$ the action reduces to the signed left multiplication of <em>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>, with the two-sided operators recovered as the composites with the right multiplications. The graded commutant consists of the operators intertwining $\pi$ with its conjugate, and for a <code>*</code>-representation it is closed under the adjoint; the action is self-adjoint exactly when $\delta(r) = r$ and unitary exactly when the defect $\delta(r)\alpha(r)$ acts as the identity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M$, $\gamma$, $\pi$</td>
+<td>Graded module, grading operator, representation</td>
+</tr>
+<tr>
+<td>$\pi(\alpha(r))\gamma = \gamma\pi(r)$</td>
+<td>Semilinearity for the grading</td>
+</tr>
+<tr>
+<td>$\ell_r^\pi = \pi(r)\gamma$</td>
+<td>The graded adjoint action</td>
+</tr>
+<tr>
+<td>$\bigl(\ell_r^\pi\bigr)^\dagger = \ell_{\delta(r)}^\pi$</td>
+<td>The adjoint of the graded action</td>
+</tr>
+<tr>
+<td>$\ell_r^\pi\ell_t^\pi = \ell_{r\alpha(t)}^\pi$</td>
+<td>Composition</td>
+</tr>
+<tr>
+<td>$\pi(A)^{\mathrm{g}}$</td>
+<td>The graded commutant</td>
+</tr>
+<tr>
+<td>$M = A$, $\pi = L$, $\gamma = \alpha$</td>
+<td>The regular module, reducing to 26</td>
+</tr>
+<tr>
+<td>$\delta(r) = r$; $\pi(\delta(r)\alpha(r)) = \mathrm{id}$</td>
+<td>Self-adjointness; unitarity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the graded modules and the graded commutants.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the <code>*</code>-representations and the modules over involutive Banach algebras.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the <code>*</code>-representations on Hilbert space and the commutants.</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices, Volume I</em> (Chelsea, 1959), for the graded matrix actions and their adjoints.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the representations, the modules and the adjoints with respect to a form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

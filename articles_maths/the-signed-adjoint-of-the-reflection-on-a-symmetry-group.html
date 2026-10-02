@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-symmetry-group"><strong>The Signed Adjoint of the Reflection on a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection is an involutive isometry, and an operator that is both an isometry and an involution is its own adjoint: $\rho_u^{*} = \rho_u^{-1} = \rho_u$. The adjoint of the reflection is therefore the reflection itself, and the reflections are exactly the elements of the orthogonal group that the adjoint does not move — the self-adjoint unitaries of the group, among the involutions it contains. The property is what distinguishes a reflection from a rotation: a rotation is unitary but not self-adjoint, its adjoint being its inverse, and the two together generate the adjoint action on the whole orthogonal group. The property <strong>fails</strong> in the degenerate case: for an isotropic vector $u$, with $q(u) = 0$, the reflection formula has no meaning, the signed inner conjugation that realises it is not defined, and the substitute operator — the transvection — is not self-adjoint.</p>
+<p>The article treats the reflection as an operator, its adjoint and self-adjointness, the failure of the property in the degenerate case, and the generation of the orthogonal group with its adjoint. The reflection and the Cartan–Dieudonné generation theorem are <em>Isometries and Orthogonal Transformations</em>, <em>The Rotation Group and Orientation</em> and <em>Reflections as Signed Two-Sided Operators on a Symmetry Group</em>; the adjoint of a symmetry operator, the unitarity theorem and the operator involution are <em>The Adjoint of a Symmetry Operator</em>, the first article of this group; the adjoint of the general signed sandwich is <em>The Signed Adjoint Sandwich on a Symmetry Group</em>, the previous article, of which this is the single-reflection case; the Clifford realisation of the reflection is <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>. The two-structures question, whether an involution of the elements agrees with the adjoint of the operators, is <em>The Adjoint of a Symmetry Operator</em> and is not reopened.</p>
+<p>The article has four sections: the reflection as an operator; its adjoint and self-adjointness; the degenerate case and the failure; and the worked cases. Throughout, $V$ is a finite-dimensional space over a field $F$ of characteristic not $2$ with a non-degenerate quadratic form $q$ and polar form $B$, $G = \operatorname{O}(V,q)$ the orthogonal group, $u \in V$ a vector with $q(u) \neq 0$ except in the degenerate section, and $\rho_u$ the reflection in $u^{\perp}$; the adjoint is taken with respect to $q$ as in <em>The Adjoint of a Symmetry Operator</em>.</p>
+<h2 id="the-reflection-as-an-operator">The Reflection as an Operator</h2>
+<h3 id="the-formula">The Formula</h3>
+<p><strong>Definition.</strong> For $q(u) \neq 0$ the <strong>reflection</strong> in the hyperplane $u^{\perp}$ is the linear operator</p>
+<p>$$
+\rho_u : V \longrightarrow V, \qquad \rho_u(v) = v - 2\,\frac{B(v,u)}{q(u)}\,u .
+$$</p>
+<p><strong>Proposition.</strong> The reflection is linear, fixes $u^{\perp}$ pointwise, sends $u$ to $-u$, is an involution $\rho_u^2 = \mathrm{id}$, is an isometry $q(\rho_u v) = q(v)$, is an element of $G$ of determinant $-1$, and is the negative of the <strong>transvection</strong> $v \mapsto v - \frac{B(v,u)}{q(u)}u$ composed appropriately; it is the operator whose signed two-sided form is the signed inner conjugation $\mathrm{Ad}^{\alpha}_u = \rho_u$ of <em>Reflections as Signed Two-Sided Operators on a Symmetry Group</em>.</p>
+<p><strong>Proof.</strong> These are the elementary properties of the reflection, <em>Reflections as Signed Two-Sided Operators on a Symmetry Group</em>, quoted.</p>
+<h3 id="the-reflection-in-the-clifford-algebra">The Reflection in the Clifford Algebra</h3>
+<p><strong>Proposition.</strong> In the Clifford algebra $\mathrm{Cl}(V,q)$ the reflection is the restriction to the vectors of the signed inner conjugation by $u$,</p>
+<p>$$
+\rho_u(v) = u\,\alpha(v)\,u^{-1}, \qquad v \in V,
+$$</p>
+<p>while the unsigned inner conjugation is its negative, $uvu^{-1} = -\rho_u(v)$; the vector $u$ satisfies $u^2 = q(u)$ and $u^{-1} = q(u)^{-1}u$, and the conjugation by $u$ is the reflection up to the sign of the grade involution.</p>
+<p><strong>Proof.</strong> The identity is the Clifford reflection formula, <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; it is quoted, not re-derived.</p>
+<p><strong>Remark.</strong> The reflection is at once an operator of the geometry, an element of the orthogonal group, and an inner conjugation of the Clifford algebra; the three descriptions coincide and the adjoint is the same in each.</p>
+<h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
+<h3 id="self-adjointness">Self-Adjointness</h3>
+<p><strong>Theorem (the reflection is self-adjoint).</strong> The adjoint of the reflection with respect to the form is the reflection itself,</p>
+<p>$$
+\rho_u^{*} = \rho_u^{-1} = \rho_u, \qquad \langle \rho_u v, w\rangle = \langle v, \rho_u w\rangle \ \text{for all } v, w,
+$$</p>
+<p>so the reflection is both unitary and <strong>Hermitian</strong> (self-adjoint); in the notation of the operator involution it is a unitary element fixed by the adjoint.</p>
+<p><strong>Proof.</strong> An isometry of the form has adjoint its inverse, $g^{*} = g^{-1}$, by the unitarity theorem of <em>The Adjoint of a Symmetry Operator</em>; an involution has $g^{-1} = g$; combining, $\rho_u^{*} = \rho_u^{-1} = \rho_u$. Directly, $B(\rho_u v, w) = B(v,w) - 2q(u)^{-1}B(v,u)B(u,w)$ and $B(v, \rho_u w) = B(v,w) - 2q(u)^{-1}B(v,u)B(u,w)$ are equal by the symmetry of $B$.</p>
+<h3 id="the-involutions-and-the-reflections">The Involutions and the Reflections</h3>
+<p><strong>Proposition.</strong> The self-adjoint unitary elements of $G$ are exactly the <strong>involutions</strong> of $G$,</p>
+<p>$$
+\{g \in G : g^{*} = g^{-1} = g\} = \{g \in G : g^2 = \mathrm{id}\},
+$$</p>
+<p>and a reflection is the involutive isometry whose fixed space is a hyperplane; an involution that fixes a subspace of codimension greater than one is a product of commuting reflections and is self-adjoint without being a single reflection.</p>
+<p><strong>Proof.</strong> $g^{*} = g$ and $g^{*} = g^{-1}$ together give $g^{-1} = g$, i.e., $g^2 = \mathrm{id}$; conversely an involutive isometry satisfies $g^{*} = g^{-1} = g$. The fixed-space statement is the classification of the involutions of an orthogonal group, <em>Isometries and Orthogonal Transformations</em>: a self-adjoint involution is orthogonally diagonalisable with eigenvalues $\pm1$, hence a product of reflections in the $(-1)$-eigenspaces.</p>
+<h3 id="the-rotations">The Rotations</h3>
+<p><strong>Proposition.</strong> A rotation, an element of $\operatorname{O}^{+}(V,q)$ that is not an involution, is unitary but not self-adjoint: its adjoint is its inverse, $g^{*} = g^{-1} \neq g$. The adjoint therefore separates the reflections from the rotations inside the orthogonal group, and the Cartan–Dieudonné theorem reads $\rho_{u_1}\cdots\rho_{u_{2k}}$ for a rotation, whose adjoint is $\rho_{u_{2k}}\cdots\rho_{u_1} = g^{-1}$.</p>
+<p><strong>Proof.</strong> The adjoint of an isometry is its inverse; a rotation is not an involution, so it is not self-adjoint. The adjoint of a product reverses the order, $(g_1g_2)^{*} = g_2^{*}g_1^{*}$, and the reflections are self-adjoint, so the adjoint of a product of reflections is the product in reverse order, which for a rotation is its inverse. The generation theorem is <em>Isometries and Orthogonal Transformations</em>.</p>
+<h2 id="the-degenerate-case-and-the-failure">The Degenerate Case and the Failure</h2>
+<h3 id="the-isotropic-vector">The Isotropic Vector</h3>
+<p><strong>Proposition (the isotropic case).</strong> For $u$ with $q(u) = 0$ the reflection formula is undefined — the normalisation by $q(u)$ is lost — no operator of the reflection's shape exists in the orthogonal group, and the signed inner conjugation $\mathrm{Ad}^{\alpha}_u(x) = u\alpha(x)u^{-1}$ is likewise undefined, because an isotropic vector is a zero divisor in $\mathrm{Cl}(V,q)$ and does not lie in the Clifford group.</p>
+<p><strong>Proof.</strong> The reflection sends $u$ to $-u$ and fixes $u^{\perp}$; an isotropic $u$ lies in $u^{\perp}$, so the two requirements are contradictory and no such involution exists. For the Clifford statement, $u^2 = q(u) = 0$ makes $u$ a zero divisor with no inverse, <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
+<h3 id="the-failure-of-self-adjointness">The Failure of Self-Adjointness</h3>
+<p><strong>Proposition.</strong> The operator that generalises the reflection to an isotropic vector is a <strong>transvection</strong>, a unipotent operator of the shape $\tau(v) = v + B(v,u)w$ with $w$ chosen so that $B(u,w) = 1$, or more generally $\mathrm{id} + N$ with $N$ of square zero; it fixes the isotropic line $Fu$, it is not an involution, $\tau^2 \neq \mathrm{id}$, and it is not self-adjoint, a unitary self-adjoint operator being an involution.</p>
+<p><strong>Proof.</strong> $\tau^2(v) = v + 2B(v,u)w \neq v$ for any $v$ with $B(v,u) \neq 0$, so $\tau$ is not an involution; a unitary self-adjoint operator satisfies $g^2 = \mathrm{id}$, so a non-involutive operator is not self-adjoint. In the degenerate case $\tau$ is not even an isometry, $q(\tau v) = q(v) + 2B(v,u)B(v,w) + B(v,u)^2q(w) \neq q(v)$ in general, so the self-adjointness fails on both counts. The degenerate-form theory is <em>Quadratic Forms and Polarisation</em> and <em>Bilinear Forms</em>.</p>
+<p><strong>Remark.</strong> The failure is the boundary of the theorem: the self-adjointness of the reflection is proved from two properties — isometry and involution — and the degenerate substitute has neither. The <strong>signed</strong> reflection $\mathrm{Ad}^{\alpha}_u$ is self-adjoint in the Clifford setting exactly when the vector satisfies $u^{*} = u$, by <em>The Signed Adjoint Sandwich on a Symmetry Group</em>; the two conditions, the non-degeneracy of the form and the reality of the vector, are the standing hypotheses of the self-adjointness.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the Euclidean reflection).</strong> Let $q$ be positive definite and $u \neq 0$; the reflection $\rho_u$ is an involution and an isometry, hence self-adjoint, $\rho_u^{*} = \rho_u$. In an orthonormal basis $\rho_u$ is a symmetric orthogonal matrix, and self-adjointness is the symmetry of the matrix; the example is the original case.</p>
+<p><strong>Example (the hyperbolic reflection).</strong> Let $q$ be of signature $(p,q)$ and $u$ a vector with $q(u) \neq 0$; the reflection is again self-adjoint, and it is an element of $O(p,q)$ with determinant $-1$. In the rank-one case $O(p,1)$ the reflection in $u^{\perp}$ is the geodesic symmetry of hyperbolic space when $u$ is the base vector, <em>The Orthogonal Group and the Involutive Automorphism</em>.</p>
+<p><strong>Example (the rotations are not self-adjoint).</strong> On the Euclidean plane with the rotation $r_{\theta}$ through an angle $\theta$ not $0$ or $\pi$, the adjoint is $r_{\theta}^{*} = r_{-\theta} \neq r_{\theta}$, so the rotation is unitary and not self-adjoint; on $\theta = \pi$ the rotation is an involution and is self-adjoint, which is the case where it is a product of two reflections in perpendicular lines. The example shows the separation of the reflections from the rotations by the adjoint.</p>
+<p><strong>Example (the transvection).</strong> Let $q$ be of signature $(1,1)$ with isotropic vectors $u = e_1+e_2$ in a basis with $q(e_1) = 1$, $q(e_2) = -1$; the transvection $\tau(v) = v + B(v,u)w$ with $B(u,w) = 1$ is unipotent, it fixes the isotropic line $Fu$, it is not an involution and it is not self-adjoint, and it generates the parabolic one-parameter subgroup of $O(1,1)$. The example is the degenerate substitute in the smallest indefinite case, and it is the boundary the self-adjointness theorem does not reach.</p>
+<h2 id="summary">Summary</h2>
+<p>A reflection $\rho_u$ with $q(u) \neq 0$ is an involutive isometry, and its adjoint with respect to the form is itself: $\rho_u^{*} = \rho_u^{-1} = \rho_u$, so the reflection is both unitary and self-adjoint; the self-adjoint unitary elements of the orthogonal group are exactly its involutions, and a reflection is the involutive isometry with a hyperplane of fixed vectors, while a general involution is a product of commuting reflections. A rotation is unitary and not self-adjoint, its adjoint being its inverse, so the adjoint separates the reflections from the rotations and the Cartan–Dieudonné theorem gives the adjoint of a product of reflections as the reverse product. The property fails in the degenerate case: for an isotropic vector the reflection is undefined, the signed inner conjugation does not exist, and the substitute transvection is neither an isometry nor self-adjoint, so the self-adjointness is a theorem about the non-degenerate reflection alone. In the Clifford setting the signed reflection $\mathrm{Ad}^{\alpha}_u$ is self-adjoint exactly when $u^{*} = u$, by <em>The Signed Adjoint Sandwich on a Symmetry Group</em>. The adjoint of the one-sided signed operator is the subject of the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_u$</td>
+<td>the reflection in $u^{\perp}$, $q(u) \neq 0$</td>
+</tr>
+<tr>
+<td>$\rho_u(v) = v - 2q(u)^{-1}B(v,u)u$</td>
+<td>the reflection formula</td>
+</tr>
+<tr>
+<td>$\rho_u^{*} = \rho_u^{-1} = \rho_u$</td>
+<td>the reflection is self-adjoint</td>
+</tr>
+<tr>
+<td>$\{g : g^{*} = g^{-1} = g\}$</td>
+<td>the self-adjoint unitaries; the involutions</td>
+</tr>
+<tr>
+<td>$g^{*} = g^{-1}$</td>
+<td>a rotation is unitary, not self-adjoint</td>
+</tr>
+<tr>
+<td>$\rho_{u_1}\cdots\rho_{u_{2k}}$</td>
+<td>a rotation as a product of reflections (Cartan–Dieudonné)</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$</td>
+<td>the reflection as a signed inner conjugation</td>
+</tr>
+<tr>
+<td>$\tau_u = \mathrm{id} - B(\cdot,u)w$</td>
+<td>the transvection; the degenerate substitute</td>
+</tr>
+<tr>
+<td>$u^{*} = u$</td>
+<td>the reality condition for the signed self-adjointness</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the reflections, the transvections and the generation of the orthogonal group.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the reflection as a signed inner conjugation and its self-adjointness.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the reflection, the isotropic case and the failure of the conjugation.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the reflection as the geodesic symmetry in the rank-one symmetric spaces.</li>
+<li>O. Timothy O'Meara, <em>Introduction to Quadratic Forms</em> (Springer, 1973), for the degenerate case, the transvections and the isotropic vectors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

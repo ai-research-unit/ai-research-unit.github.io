@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-jordan-algebra"><strong>The Signed Left Multiplication on a Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The one-sided multiplication of a Jordan algebra is the operator $L_a(x) = a \circ x$ of <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>; on a special Jordan algebra $J = A^+$ it is the symmetrisation $\tfrac12(\ell_a+\rho_a)$ of the two associative one-sided multiplications $\ell_a(x) = ax$ and $\rho_a(x) = xa$ of the ambient algebra $A$. When $A$ carries a grade involution $\alpha$, each of the associative one-sided multiplications admits a <strong>signed</strong> version, in which the argument is replaced by $\alpha(x)$: the <strong>signed left multiplication</strong> is</p>
+<p>$$
+\ell^{\alpha}_a : J \to J, \qquad \ell^{\alpha}_a(x) = a\,\alpha(x) ,
+$$</p>
+<p>and the signed right multiplication is $\rho^{\alpha}_a(x) = \alpha(x)\,a$. The signed one-sided actions combine with the unsigned ones to give the signed sandwich of <em>The Signed Sandwich on a Jordan Algebra</em>, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, a product of one unsigned and one signed one-sided action.</p>
+<p>The article defines the signed one-sided actions on the underlying module of a special graded Jordan algebra, relates them to the unsigned ones by $\ell^{\alpha}_a = \ell_a\circ\alpha$ and $\rho^{\alpha}_a = \rho_a\circ\alpha$, and records that the signed sandwich is their product with an <strong>unsigned</strong> partner, $S^{\alpha}_{a,b} = \rho_b\ell^{\alpha}_a = \ell_a\rho^{\alpha}_b$, and determines their <strong>homogeneity</strong>: the signed left multiplication by $a$ shifts the parity by the parity of $a$, so it is a graded operator of degree $|a|$ and not a degree-preserving one; this is the sign rule the grading imposes on the one-sided layer, and it is the precise difference from the unsigned left multiplication, which preserves the degree. The article then computes the <strong>elements fixed</strong> by the signed left multiplication: on even elements the equation is $ax = x$, on odd elements it is $ax = -x$, so the fixed space is the even part of the eigenvalue-one space of $\ell_a$ together with the odd part of its eigenvalue-minus-one space; in particular the signed left multiplication by the unit $1$ fixes exactly the even part $A_{\bar 0}$. The symmetrisation of the two signed one-sided actions is the quadratic representation twisted by $\alpha$, $\tfrac12(\ell^{\alpha}_a\rho^{\alpha}_a + \rho^{\alpha}_a\ell^{\alpha}_a) = U_a\circ\alpha$, which is where the signed left multiplication meets the structure group.</p>
+<p>The article assumes <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for $L_a$, $U_a$ and the quadratic representation, <em>Left and Right Multiplication in a Ring</em> for $\ell_a$ and $\rho_a$, <em>The Signed Sandwich on a Jordan Algebra</em> for the signed sandwich and the grade involution, and <em>Jordan Algebras</em> for the special algebra $A^+$. The adjoint of the signed left multiplication with respect to the pairing of the category is <em>The Signed Adjoint of the Left Multiplication on a Jordan Algebra</em>, in the <code>* Operator Theory</code> group; the <code>*</code> involution of the elements is not used here. Throughout, $A$ is an associative unital $R$-algebra, $J = A^+$ is the special Jordan algebra with the halved product, and $\alpha$ is a grade involution of $A$. No form, norm, distance or geometric reflection occurs.</p>
+<h2 id="the-unsigned-one-sided-actions">The Unsigned One-Sided Actions</h2>
+<h3 id="the-associative-multiplications">The Associative Multiplications</h3>
+<p>For $a \in A$ the <strong>associative left multiplication</strong> and <strong>right multiplication</strong> are the $R$-linear maps</p>
+<p>$$
+\ell_a : A \to A, \quad \ell_a(x) = ax , \qquad \rho_a : A \to A, \quad \rho_a(x) = xa ,
+$$</p>
+<p>the one-sided multiplications of <em>Left and Right Multiplication in a Ring</em>. They are the operators whose products are the sandwiches, $S_{a,b} = \ell_a\rho_b$, with the composition laws $\ell_a\ell_b = \ell_{ab}$ and $\rho_a\rho_b = \rho_{ba}$ of that article.</p>
+<h3 id="the-jordan-left-multiplication-as-a-symmetrisation">The Jordan Left Multiplication as a Symmetrisation</h3>
+<p>The Jordan left multiplication of $J = A^+$ is</p>
+<p>$$
+L_a = \tfrac12\bigl(\ell_a + \rho_a\bigr), \qquad L_a(x) = a \circ x = \tfrac12(ax + xa) ,
+$$</p>
+<p>as in <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>. The two associative one-sided actions therefore do not separately descend to the Jordan structure; only their symmetrisation does, and this is the same phenomenon as the collapse $L_a = R_a$ of the two Jordan one-sided multiplications: the Jordan structure retains the symmetric part and discards the difference $\tfrac12(\ell_a-\rho_a) = \tfrac12\operatorname{ad}_a$.</p>
+<p><strong>Proposition.</strong> The correspondence $a \mapsto L_a = \tfrac12(\ell_a+\rho_a)$ is injective when $A$ has no nonzero element annihilating $A$ on both sides, and it is additive; the map is an $R$-linear isomorphism onto its image, and it is not multiplicative in $a$ unless $A$ is commutative.</p>
+<p><em>Proof.</em> Additivity is clear. If $\tfrac12(\ell_a+\rho_a) = 0$ then $ax+xa = 0$ for all $x$; multiplying by $x$ on the appropriate side or specialising to $x = 1$ gives $a = 0$ when $A$ is unital with $2$ invertible or when the two-sided annihilator is zero. The failure of multiplicativity is the failure of the associativity of $\circ$: $L_aL_b \ne L_{a\circ b}$ unless $A$ is commutative, as in <em>The Left and Right Multiplication Operators on a Jordan Algebra</em>. $\square$</p>
+<h2 id="the-signed-one-sided-actions">The Signed One-Sided Actions</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $a \in J$ the <strong>signed left multiplication</strong> and the <strong>signed right multiplication</strong> are the $R$-linear maps on the module $J$</p>
+<p>$$
+\ell^{\alpha}_a : J \to J, \quad \ell^{\alpha}_a(x) = a\,\alpha(x) , \qquad
+\rho^{\alpha}_a : J \to J, \quad \rho^{\alpha}_a(x) = \alpha(x)\,a .
+$$</p>
+<p>They are linear in the parameter $a$ and additive in $x$, and they are the operators composing to the signed sandwich: $S^{\alpha}_{a,b} = \ell^{\alpha}_a\rho^{\alpha}_b$, since $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\,\alpha(\alpha(x)b) = a\,x\,\alpha(b)$, which is $S_{a,\alpha(b)}$ and agrees with the definition $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ exactly when the middle factor is read correctly, namely $S^{\alpha}_{a,b} = \ell^{\alpha}_a\circ\rho^{\alpha}_{\alpha(b)}$. This identication is recorded as a proposition below.</p>
+<h3 id="relation-to-the-unsigned-action">Relation to the Unsigned Action</h3>
+<p><strong>Theorem.</strong> For every $a \in J$,</p>
+<p>$$
+\ell^{\alpha}_a = \ell_a\circ\alpha , \qquad \rho^{\alpha}_a = \rho_a\circ\alpha ,
+$$</p>
+<p>and the signed actions are obtained from the unsigned ones by precomposition with the grade involution.</p>
+<p><em>Proof.</em> $\ell_a(\alpha(x)) = a\alpha(x) = \ell^{\alpha}_a(x)$; the right case is identical. $\square$</p>
+<p><strong>Corollary.</strong> The signed left multiplication is the unsigned left multiplication read at the twisted argument, and the two coincide exactly when $\alpha = \mathrm{id}$; in particular $\ell^{\alpha}_1 = \alpha$ is the grade involution itself, while $\ell_1 = \mathrm{id}$.</p>
+<p><strong>Proposition (composition with the signed sandwich).</strong> For all $a, b \in J$,</p>
+<p>$$
+S^{\alpha}_{a,b} = \rho_b\circ\ell^{\alpha}_a = \ell_a\circ\rho^{\alpha}_b ,
+$$</p>
+<p>so the signed sandwich is the product of one <strong>unsigned</strong> and one <strong>signed</strong> one-sided action, in either order; the product of two signed actions is instead $\ell^{\alpha}_a\rho^{\alpha}_b(x) = a\,x\,\alpha(b) = S_{a,\alpha(b)}(x)$, an unsigned sandwich at the twisted right parameter.</p>
+<p><em>Proof.</em> $\rho_b(\ell^{\alpha}_a(x)) = \rho_b(a\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$; the second expression is identical. For the last identity, $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\alpha(\alpha(x)b) = ax\alpha(b) = S_{a,\alpha(b)}(x)$. $\square$</p>
+<h3 id="homogeneity-and-the-sign-rule">Homogeneity and the Sign Rule</h3>
+<p><strong>Theorem (the sign rule).</strong> Let $A = A_{\bar 0}\oplus A_{\bar 1}$ be the grading by $\alpha$ and let $a$ be homogeneous of parity $|a| \in \{0,1\}$. Then</p>
+<p>$$
+\ell^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}} , \qquad \rho^{\alpha}_a(A_{\bar i}) \subseteq A_{\overline{i+|a|}} ,
+$$</p>
+<p>so that the signed one-sided actions are <strong>graded operators of degree $|a|$</strong>: they preserve the degree when $a$ is even and exchange the even and odd parts when $a$ is odd.</p>
+<p><em>Proof.</em> For $x \in A_{\bar i}$ one has $\alpha(x) = (-1)^i x$, so $\ell^{\alpha}_a(x) = (-1)^i ax$, and the parity of $ax$ is $|a|+i$ because $A$ is graded. The right case is identical. $\square$</p>
+<p><strong>Corollary.</strong> The unsigned left multiplication preserves the degree, because it is the symmetrisation of the two degree-preserving actions $\ell_a$ and $\rho_a$; the signed left multiplication shifts the degree by the parity of $a$. The sign rule is the parity factor $(-1)^i$ that the twist inserts, and it is the reason the signed one-sided action cannot be an operator of the Jordan structure when $a$ is odd: a Jordan operator must preserve the degree, while $\ell^{\alpha}_a$ with $a$ odd exchanges the two parts.</p>
+<h2 id="the-elements-fixed">The Elements Fixed</h2>
+<h3 id="the-fixed-space">The Fixed Space</h3>
+<p><strong>Theorem.</strong> The elements fixed by the signed left multiplication are</p>
+<p>$$
+\{x \in J : \ell^{\alpha}_a(x) = x\} = \{x \in A_{\bar 0} : ax = x\} \oplus \{x \in A_{\bar 1} : ax = -x\} ;
+$$</p>
+<p>that is, the intersection of the even part with the eigenvalue-one space of the left multiplication $\ell_a$, together with the intersection of the odd part with its eigenvalue-minus-one space.</p>
+<p><em>Proof.</em> Write $x = x_0 + x_1$ with $x_i \in A_{\bar i}$. Then $\ell^{\alpha}_a(x) = a\alpha(x_0) + a\alpha(x_1) = ax_0 - ax_1$, and the equation $ax_0 - ax_1 = x_0 + x_1$ decouples by parity into $ax_0 = x_0$ and $-ax_1 = x_1$. $\square$</p>
+<p><strong>Corollary (the case $a = 1$).</strong> The signed left multiplication by the unit is the grade involution itself, $\ell^{\alpha}_1 = \alpha$, and its fixed space is exactly the even part $A_{\bar 0}$, which is the subalgebra of $J$; the odd part $A_{\bar 1}$ is the eigenvalue-minus-one space.</p>
+<p><strong>Corollary (the case of a central unit).</strong> If $a$ is a unit with $a^2 = 1$ or, more generally, if the equation $a\alpha(x) = x$ decouples as $ax = x$ on the even part and $ax = -x$ on the odd part, the fixed space is the kernel of $\ell_a - \mathrm{id}$ on $A_{\bar 0}$ together with the kernel of $\ell_a + \mathrm{id}$ on $A_{\bar 1}$. The case $a = 1$ gives the even part.</p>
+<p><strong>Example.</strong> Let $A = k[x]/(x^2)$, $\alpha = \mathrm{id}$ and $a = x$, so that $\ell^{\alpha}_x = \ell_x$ and the fixed elements satisfy $xy = y$, that is $(x-1)y = 0$; since $x-1$ is a unit of $A$, the fixed space is $0$. For the coordinatewise algebra $A = k^n$ with the involution negating the last coordinate and $a = 1$, the fixed space is the span of the first $n-1$ standard idempotents, the even part.</p>
+<h3 id="the-symmetrisation-and-the-structure-group">The Symmetrisation and the Structure Group</h3>
+<p><strong>Proposition.</strong> For $a \in J$,</p>
+<p>$$
+\ell_a\circ\rho^{\alpha}_a = \rho_a\circ\ell^{\alpha}_a = U_a\circ\alpha ,
+$$</p>
+<p>where $U_a$ is the quadratic representation of <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> and $U_a\circ\alpha$ is the symmetrised signed sandwich of <em>The Signed Sandwich on a Jordan Algebra</em> with equal parameters; the product is that of one <strong>unsigned</strong> and one <strong>signed</strong> one-sided action.</p>
+<p><em>Proof.</em> $\ell_a(\rho^{\alpha}_a(x)) = \ell_a(\alpha(x)a) = a\alpha(x)a = U_a(\alpha(x))$, and $\rho_a(\ell^{\alpha}_a(x)) = \rho_a(a\alpha(x)) = a\alpha(x)a$, the same operator. Reading $U_a(\alpha(x))$ as $(U_a\circ\alpha)(x)$ gives the statement. $\square$</p>
+<p><strong>Corollary.</strong> The product of an unsigned and a signed one-sided action is the twist of the quadratic representation, which lies in the multiplication algebra; the signed one-sided actions themselves do not. The signed left multiplication is therefore the one-parameter operator from which the tied two-parameter operators of the group $\operatorname{Mult}(J)$ are rebuilt, and its adjoint — the object of <em>The Signed Adjoint of the Left Multiplication on a Jordan Algebra</em> — is the operator that carries the pairing through the action.</p>
+<h2 id="summary">Summary</h2>
+<p>On a special graded Jordan algebra $J = A^+$ the <strong>signed left multiplication</strong> is $\ell^{\alpha}_a(x) = a\alpha(x)$ and the signed right multiplication is $\rho^{\alpha}_a(x) = \alpha(x)a$; they are the unsigned associative multiplications precomposed with the grade involution, $\ell^{\alpha}_a = \ell_a\circ\alpha$, $\rho^{\alpha}_a = \rho_a\circ\alpha$, and they compose to the signed sandwich. Their <strong>sign rule</strong> is the parity shift: $\ell^{\alpha}_a$ maps the graded part $i$ to the part $\overline{i+|a|}$, so it preserves the degree for even $a$ and exchanges the parts for odd $a$, whereas the unsigned Jordan left multiplication $L_a = \tfrac12(\ell_a+\rho_a)$ always preserves the degree. The <strong>fixed elements</strong> of $\ell^{\alpha}_a$ are the even solutions of $ax=x$ together with the odd solutions of $ax=-x$; for $a=1$ the signed left multiplication is the grade involution and the fixed space is the even part $A_{\bar 0}$. The product of an unsigned and a signed one-sided action is $U_a\circ\alpha$, the twisted quadratic representation. No form, norm or geometric reflection occurs; the adjoint is deferred to the <code>* Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J = A^+$</td>
+<td>Special Jordan algebra with halved product</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Grade involution, $\alpha^2=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$A_{\bar 0}, A_{\bar 1}$</td>
+<td>Even and odd parts</td>
+</tr>
+<tr>
+<td>$\ell_a(x) = ax$, $\rho_a(x) = xa$</td>
+<td>Associative one-sided multiplications</td>
+</tr>
+<tr>
+<td>$L_a = \tfrac12(\ell_a+\rho_a)$</td>
+<td>Jordan left multiplication</td>
+</tr>
+<tr>
+<td>$\ell^{\alpha}_a(x) = a\alpha(x)$</td>
+<td>Signed left multiplication</td>
+</tr>
+<tr>
+<td>$\rho^{\alpha}_a(x) = \alpha(x)a$</td>
+<td>Signed right multiplication</td>
+</tr>
+<tr>
+<td>$\ell^{\alpha}_a = \ell_a\circ\alpha$</td>
+<td>Relation to the unsigned action</td>
+</tr>
+<tr>
+<td>$\ell^{\alpha}_a(A_{\bar i})\subseteq A_{\overline{i+|a|}}$</td>
+<td>The sign rule (degree shift)</td>
+</tr>
+<tr>
+<td>$\{x : \ell^{\alpha}_a x = x\}$</td>
+<td>Fixed space, decoupled by parity</td>
+</tr>
+<tr>
+<td>$U_a\circ\alpha = \tfrac12(\ell^{\alpha}_a\rho^{\alpha}_a+\rho^{\alpha}_a\ell^{\alpha}_a)$</td>
+<td>Symmetrisation</td>
+</tr>
+<tr>
+<td>$S^{\alpha}_{a,b}$</td>
+<td>Signed sandwich (Article 7)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the one-sided multiplications, the quadratic representation and the structure group of a Jordan algebra.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the special Jordan algebra, its one-sided actions and the structure group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the grade involution and the graded operators built from it.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for one-sided multiplications and their symmetrisations.</li>
+<li>Ottmar Loos, <em>Symmetric Spaces I: General Theory</em> (Benjamin, 1969), for the graded one-sided actions and the structure group in the algebraic setting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

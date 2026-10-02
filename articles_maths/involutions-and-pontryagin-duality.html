@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions and Pontryagin Duality — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-and-pontryagin-duality"><strong>Involutions and Pontryagin Duality</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a locally compact abelian group the involutions and the duality fit together exactly: an involution of the group is a continuous automorphism of order two, its contragredient is a continuous automorphism of order two of the dual group, and the passage from an involution to its contragredient is an involution of the set of involutions which the double dual undoes. The duality therefore carries the whole involution theory of an abelian group to the involution theory of its character group, exchanging the fixed characters for the annihilator of the twisted products, compactness for discreteness, and subgroups for quotients. This article defines the dual involution, proves the compatibility with the evaluation pairing and with Pontryagin duality, computes the fixed points on both sides, and records the consequences for the standard examples.</p>
+<p>The article assumes the character group, the compact-open topology, the duality theorems and the dictionary of annihilators from <em>Abelian Topological Groups</em> and <em>Pontryagin Duality</em>; the continuous involution, the fixed and inverted sets and the dictionary from <em>Involutive Topological Groups</em>; and the criterion for the fixed-point set to be a subgroup from <em>The Fixed-Point Subgroup of a Continuous Involution</em>. The Fourier transform, the convolution theorem and the Plancherel theorem are Part III and are named only.</p>
+<p>Throughout, $G$ is a locally compact abelian group written additively, $\iota$ is the inversion (which is the identity map additively), $\sigma$ is a continuous involution, and since $G$ is abelian every anti-automorphism is an automorphism, so $\sigma$ is a continuous automorphism of order two; the associated involutive automorphism $\alpha = \sigma\iota$ is $\sigma$ itself, and the fixed set and the inverted set coincide, $G^\sigma = I(\sigma) = G^\alpha$. The dual group is $G^\vee$ with the compact-open topology, and $\langle x, \chi\rangle = \chi(x)$ is the evaluation pairing.</p>
+<h2 id="the-dual-involution">The Dual Involution</h2>
+<p><strong>Definition.</strong> The <strong>dual involution</strong> of a continuous involution $\sigma$ of $G$ is the map</p>
+<p>$$
+\sigma^\vee : G^\vee \longrightarrow G^\vee , \qquad \sigma^\vee(\chi) = \chi \circ \sigma .
+$$</p>
+<p><strong>Theorem.</strong> $\sigma^\vee$ is a continuous involution of the dual group $G^\vee$, the assignment $\sigma \mapsto \sigma^\vee$ is a bijection from the continuous involutions of $G$ onto those of $G^\vee$, and its inverse is the same construction applied to $G^\vee$: under the evaluation isomorphism $G \cong G^{\vee\vee}$ one has $(\sigma^\vee)^\vee = \sigma$.</p>
+<p><strong>Proof.</strong> The composite of a continuous homomorphism $\chi$ with the continuous homomorphism $\sigma$ is a continuous homomorphism into $S^1$; the map is additive because the group of characters is written additively (pointwise multiplication), and $(\sigma^\vee)^2 = (\sigma^2)^\vee = \mathrm{id}$, so it is an involution. It is continuous because composition with $\sigma$ is continuous for the compact-open topology: a compact subset of $G$ is carried by $\sigma$ to a compact subset, and the subbasic sets $W(K, U)$ of <em>Pontryagin Duality</em> pull back to subbasic sets. For the double dual, $(\sigma^\vee)^\vee(\chi)(x) = \chi(\sigma(x)) = \sigma^\vee(\chi)(x)$, so the construction is involutive on the level of the double dual, and the evaluation identification gives $(\sigma^\vee)^\vee = \sigma$.</p>
+<p><strong>Theorem (compatibility with the pairing).</strong> For all $x \in G$ and $\chi \in G^\vee$,</p>
+<p>$$
+\langle \sigma(x), \chi\rangle = \langle x, \sigma^\vee(\chi)\rangle .
+$$</p>
+<p>Consequently $\sigma^\vee$ is the unique continuous involution of $G^\vee$ making the evaluation pairing equivariant, and the duality is an equivalence between the category of locally compact abelian groups with involutions and its own opposite: a morphism $f : G \to H$ of involutive groups, $f\sigma_G = \sigma_H f$, dualises to a morphism $f^\vee : H^\vee \to G^\vee$ with $f^\vee\sigma_H^\vee = \sigma_G^\vee f^\vee$.</p>
+<p><strong>Proof.</strong> The identity is the definition, $\langle\sigma(x),\chi\rangle = \chi(\sigma(x)) = (\chi\circ\sigma)(x) = \langle x,\sigma^\vee(\chi)\rangle$. For a morphism $f$ commuting with the involutions, $f^\vee\sigma_H^\vee(\psi) = \psi\circ\sigma_H\circ f = \psi\circ f\circ\sigma_G = \sigma_G^\vee(f^\vee(\psi))$, so the dual also commutes with them; the two constructions are inverse up to the natural evaluation isomorphisms, which is the equivalence of the category with its opposite.</p>
+<h2 id="the-fixed-points-on-both-sides">The Fixed Points on Both Sides</h2>
+<p><strong>Definition.</strong> Let $K \subseteq G$ be the closed subgroup generated by the <strong>twisted differences</strong> $x - \sigma(x)$, that is</p>
+<p>$$
+K = \overline{\langle\, x - \sigma(x) : x \in G \,\rangle} ,
+$$</p>
+<p>the closure of the subgroup generated by the image of the map $x\mapsto x-\sigma(x)$; write $K^\perp = \{\chi \in G^\vee : \chi(K) = 1\}$ for its annihilator.</p>
+<p><strong>Theorem (the fixed characters).</strong> The fixed-point set of the dual involution is the annihilator of $K$,</p>
+<p>$$
+(G^\vee)^{\sigma^\vee} = K^\perp = \{\chi : \chi(x) = \chi(\sigma(x)) \text{ for all } x\} ,
+$$</p>
+<p>and it is a closed subgroup of $G^\vee$; it is abstractly the dual of the quotient $G/K$, so the fixed characters of $G^\vee$ are exactly the characters of the quotient of $G$ by the twisted differences.</p>
+<p><strong>Proof.</strong> A character $\chi$ satisfies $\sigma^\vee(\chi) = \chi$ exactly when $\chi(\sigma(x)) = \chi(x)$ for all $x$, that is $\chi(x - \sigma(x)) = 1$ for all $x$, which is the vanishing on the generating set of $K$ and hence on $K$ by continuity and additivity. The annihilator of a closed subgroup is closed in the dual, and the natural map $(G/K)^\vee \to K^\perp$, given by inflation of characters, is an isomorphism of topological groups by the duality dictionary.</p>
+<p><strong>Theorem (the fixed subgroup and its annihilator).</strong> The annihilator of the fixed subgroup $G^\sigma$ is the closed subgroup of $G^\vee$ generated by the characters of the form $\sigma^\vee(\chi) - \chi$,</p>
+<p>$$
+(G^\sigma)^\perp = \overline{\langle\, \sigma^\vee(\chi) - \chi : \chi \in G^\vee \,\rangle} ,
+$$</p>
+<p>so the duality exchanges the fixed points with the deviations of the dual involution, and the two constructions are inverse in the sense that the annihilator of either side is generated by the deviations on the other.</p>
+<p><strong>Proof.</strong> By the same computation as above with the roles of $G$ and $G^\vee$ exchanged, using the double-dual identity $(\sigma^\vee)^\vee = \sigma$ and the fact that the pairing is symmetric in the two variables.</p>
+<p><strong>Corollary (compact and discrete).</strong> If $G$ is compact then $G^\vee$ is discrete and every subgroup of $G^\vee$ is closed, so the fixed characters are the single trivial character on the compact components of the twisted differences; if $G$ is discrete then $G^\vee$ is compact and the fixed characters form a closed, hence compact, subgroup of $G^\vee$. In particular the fixed-point set of a dual involution is discrete when the group is compact and compact when the group is discrete.</p>
+<p><strong>Proof.</strong> The exchange of compactness and discreteness under Pontryagin duality is <em>Pontryagin Duality</em>; a subgroup of a discrete group is closed, and a closed subgroup of a compact group is compact.</p>
+<p><strong>Theorem (the fixed set is a subgroup).</strong> On an abelian group the fixed-point set is always a subgroup, so on both sides the fixed sets $(G^\sigma, (G^\vee)^{\sigma^\vee})$ are closed subgroups, and the involution acts by the inversion on each; the fixed-point set of $\sigma$ and the fixed-point set of $\sigma^\vee$ correspond to each other under the duality dictionary of subgroups and quotients.</p>
+<p><strong>Proof.</strong> On an abelian group the fixed set of an endomorphism is its kernel, hence a subgroup; here the fixed set of the order-two automorphism $\sigma$ is $\ker(\sigma - \mathrm{id})$, and the corresponding statement holds on the dual. The dictionary of subgroups and quotients is that of <em>Pontryagin Duality</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the circle and the integers).</strong> On $S^1 = \mathbb{R}/\mathbb{Z}$ the involutions are the identity and the inversion $x\mapsto -x$, since the continuous automorphisms of the circle are $\pm1$. The dual of $\mathbb{Z}$ is $S^1$; the inversion of $S^1$ has dual involution the inversion of $\mathbb{Z}$, and the fixed characters are the trivial character, consistently with $K = S^1$ having trivial annihilator. The fixed subgroup of the inversion on $S^1$ is $\{0, \tfrac12\}$, of order two, and its annihilator in $\mathbb{Z}$ is $2\mathbb{Z}$, which is the subgroup generated by the deviations $-\chi - \chi = -2\chi$.</p>
+<p><strong>Example (the line).</strong> The continuous involutions of $(\mathbb{R}, +)$ are $x \mapsto \pm x$, since every continuous automorphism is multiplication by a nonzero real number and the square-one condition gives $\pm1$. The dual of $\mathbb{R}$ is $\mathbb{R}$ with $\chi_\xi(x) = e^{2\pi i\xi x}$, the dual involution is $\xi\mapsto -\xi$ for the inversion of $x$, and $\xi\mapsto\xi$ for the identity; the fixed-point subgroup of the inversion is $\{0\}$, and $K = \mathbb{R}$, whose annihilator is again $\{0\}$.</p>
+<p><strong>Example (finite abelian groups).</strong> For a finite abelian group the duality is the duality of finite groups, the dual involution is the transpose of $\sigma$ under the identification $G^\vee \cong G$, and the fixed characters are the annihilator of the subgroup generated by the differences $x - \sigma(x)$; for $G = \mathbb{Z}/4\mathbb{Z}$ with $\sigma(x) = -x$ one has $K = 2\mathbb{Z}/4\mathbb{Z}$ and $K^\perp = \{\chi : \chi(2) = 1\} \cong \mathbb{Z}/2\mathbb{Z}$, while $G^\sigma = \{0, 2\}$, matching the finite computation.</p>
+<p><strong>Example (the $p$-adics and the solenoid).</strong> On $\mathbb{Z}_p$ the inversion $x\mapsto -x$ has dual involution the inversion of the Prüfer group $\mu_{p^\infty} = \mathbb{Z}[1/p]/\mathbb{Z}$; the fixed subgroup $\{0\}$ of $\mathbb{Z}_p$ and the subgroup of order two of $\mu_{p^\infty}$ are mutual annihilators, since the subgroup generated by the deviations is all of $\mathbb{Z}_p$ for odd $p$. This is the finite-quotient computation of <em>Involutive Profinite Groups</em> read through the duality.</p>
+<p><strong>Example (the Bohr compactification).</strong> Let $D$ be a discrete abelian group with an involution $\sigma$ and let $bD = D^{\vee\vee}$ be its Bohr compactification. The involution $\sigma$ dualises to an involution $\sigma^\vee$ of $D^\vee$ and then to an involution $\sigma^{\vee\vee} = \sigma$ of $bD$; the fixed characters of $bD$ are the characters of $bD/K$ with $K$ the closed subgroup generated by the differences, and the fixed-point subgroup of $bD$ contains the image of $D^\sigma$ and equals its closure. The two involutions of $bD$ and of $\mathbb{Q}/\mathbb{Z}$ (the dual of $\widehat{\mathbb{Z}}$) are the standard finite-quotient pair.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a locally compact abelian group is a continuous automorphism of order two, and its dual involution is the contragredient $\sigma^\vee(\chi) = \chi\circ\sigma$; the assignment is a bijection on the set of involutions, it is undone by the double dual, and it makes the evaluation pairing equivariant, $\langle\sigma(x),\chi\rangle = \langle x,\sigma^\vee(\chi)\rangle$, so the duality is an equivalence between the involutive locally compact abelian groups and their opposite. The fixed characters of the dual are the annihilator of the closed subgroup $K$ generated by the twisted differences $x - \sigma(x)$, hence the dual of the quotient $G/K$; the annihilator of the fixed subgroup $G^\sigma$ is generated by the deviations $\sigma^\vee(\chi) - \chi$; and each construction is recovered from the other by the double dual. On an abelian group the fixed-point sets on both sides are closed subgroups, compact when the group is discrete and discrete when it is compact, and the dictionary of subgroups and quotients matches them. The examples of the circle, the line, the finite abelian groups, the $p$-adics with the Prüfer group and the Bohr compactification all follow from the two formulas for the fixed points. The Fourier transform, the convolution theorem and the Plancherel theorem are Part III and are named only.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G^\vee$, $\langle x,\chi\rangle = \chi(x)$</td>
+<td>the dual group and the evaluation pairing</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>a continuous automorphism of order two; on an abelian group the only kind of involution</td>
+</tr>
+<tr>
+<td>$\sigma^\vee(\chi) = \chi\circ\sigma$</td>
+<td>the dual involution</td>
+</tr>
+<tr>
+<td>$(\sigma^\vee)^\vee = \sigma$</td>
+<td>the double dual returns the involution</td>
+</tr>
+<tr>
+<td>$\langle\sigma(x),\chi\rangle = \langle x,\sigma^\vee(\chi)\rangle$</td>
+<td>equivariance of the pairing</td>
+</tr>
+<tr>
+<td>$K = \overline{\langle x-\sigma(x)\rangle}$</td>
+<td>the closed subgroup of twisted differences</td>
+</tr>
+<tr>
+<td>$K^\perp$</td>
+<td>its annihilator, equal to $(G^\vee)^{\sigma^\vee}$</td>
+</tr>
+<tr>
+<td>$(G^\vee)^{\sigma^\vee} \cong (G/K)^\vee$</td>
+<td>the fixed characters as characters of a quotient</td>
+</tr>
+<tr>
+<td>$(G^\sigma)^\perp = \overline{\langle \sigma^\vee(\chi)-\chi\rangle}$</td>
+<td>the annihilator of the fixed subgroup</td>
+</tr>
+<tr>
+<td>$G^\sigma = I(\sigma) = G^\alpha$</td>
+<td>on an abelian group the fixed and inverted sets coincide</td>
+</tr>
+<tr>
+<td>$bD = D^{\vee\vee}$</td>
+<td>the Bohr compactification, carrying the double-dual involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lev S. Pontryagin, <em>Topological Groups</em> (Gordon and Breach, second edition, 1966), for the character group, the duality theorem and the annihilator dictionary.</li>
+<li>Sidney A. Morris, <em>Pontryagin Duality and the Structure of Locally Compact Abelian Groups</em> (Cambridge University Press, 1977), for the duality of locally compact abelian groups and the exchange of compactness and discreteness.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962; reprinted Wiley, 1990), for the character group, the annihilators and the duality of subgroups and quotients.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the duality dictionary and the Bohr compactification.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the contragredient of an automorphism and its compatibility with the duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

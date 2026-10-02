@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-a-hilbert-space"><strong>The Adjoint of the Left Multiplication on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left multiplication of a Hilbert space is the operator $L_U(T)=UT$ on the Hilbert–Schmidt space, and the form of the category with respect to which its adjoint is taken is the Hilbert–Schmidt inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$. The adjoint of the left multiplication is again a left multiplication,</p>
+<p>$$
+(L_U)^*=L_{U^*},
+$$</p>
+<p>so the adjoint stays on the side it started from, and the map $U\mapsto L_U$ is a $*$-representation of the algebra on its own Hilbert–Schmidt space: it is multiplicative, isometric and compatible with the involution. This is the property that the present article computes and explores; it is the operator-theoretic counterpart of the identity $L_x^*=L_{x^{\dagger}}$ of the Hilbert algebra, and it is the reason the left multiplications form a self-adjoint family. The computation is carried by the rank-one operators, on which the left multiplication simply shifts the left vector, and the same computation gives the adjoint of the right multiplication, $R_V^*=R_{V^*}$, and the adjoints of the two-sided sandwich in the signed case, which is flagged below.</p>
+<p>This article fixes the Hilbert–Schmidt form, the adjoint of the left multiplication and its explicit value on the rank-one operators, the self-adjointness, normality, unitarity and positivity criteria that the identity produces, the $*$-representation structure and the commutant, and the passage to the signed left multiplication. The two-sided multiplication algebra is <em>The Left and Right Multiplication Operators on a Hilbert Space</em>, where the rank-one decomposition and the Hilbert–Schmidt form are established; the bounded operators and their adjoints are <em>Bounded Operators on a Hilbert Space</em>; the Hilbert-Schmidt class is <em>Compact Operators</em>; the signed left multiplication is <em>The Signed Left Multiplication on a Hilbert Space</em>, and its adjoint is <em>The Signed Adjoint of the Left Multiplication on a Hilbert Space</em> below; the two-sided signed adjoint is <em>The Signed Adjoint Sandwich on a Hilbert Space</em>; the Hilbert-algebra form of the same identity, with the Tomita operator, is <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em> (Part II).</p>
+<p>Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, $B(H)$ acts on $S_2(H)$ by $L_U(T)=UT$ and $R_V(T)=TV$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written with a star. The rank-one operator is $\xi\otimes\bar\eta:\zeta\mapsto\langle\zeta,\eta\rangle\xi$, and the <strong>involution</strong> on the elements is $U\mapsto U^*$.</p>
+<h2 id="the-hilbertschmidt-form-and-the-adjoint">The Hilbert–Schmidt Form and the Adjoint</h2>
+<p><strong>Definition.</strong> On the Hilbert–Schmidt class $S_2(H)$ the <strong>Hilbert–Schmidt form</strong> is</p>
+<p>$$
+\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*),
+$$</p>
+<p>linear in the first argument and conjugate-linear in the second; it is an inner product, and $S_2(H)$ is a Hilbert space in it. The <strong>adjoint</strong> of a bounded operator is taken with respect to this form.</p>
+<p><strong>Theorem (the adjoint of the left multiplication).</strong> For every $U\in B(H)$ the left multiplication $L_U$ is bounded on $S_2(H)$ and</p>
+<p>$$
+(L_U)^*=L_{U^*},
+$$</p>
+<p>so the adjoint of a left multiplication is the left multiplication by the adjoint; the same computation gives $R_V^*=R_{V^*}$ for the right multiplication, and each one-sided family is closed under the adjunction.</p>
+<p><em>Proof.</em> The adjoint identity follows from the trace identity: $\langle L_UT,S\rangle_{\mathrm{HS}}=\operatorname{tr}(UTS^*)=\operatorname{tr}(T(U^*S)^*)=\langle T,U^*S\rangle_{\mathrm{HS}}=\langle T,L_{U^*}S\rangle_{\mathrm{HS}}$; the right case is $\operatorname{tr}(TVS^*)=\operatorname{tr}(T(SV^*)^*)$; uniqueness of the Hilbert adjoint and the density of $S_2(H)$ in the operators of the form give the identities for all elements.</p>
+<p><strong>Proposition (boundedness and the rank-one expression).</strong> For all $U$ and $\xi,\eta\in H$,</p>
+<p>$$
+L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta,\qquad R_V(\xi\otimes\bar\eta)=\xi\otimes\bar{V^*\eta},
+$$</p>
+<p>and the adjoint is computed on rank-one operators by transposing the vector:</p>
+<p>$$
+\langle L_U(\xi\otimes\bar\eta),\zeta\otimes\bar\kappa\rangle_{\mathrm{HS}}
+=\langle U\xi,\zeta\rangle\langle\kappa,\eta\rangle
+=\langle \xi\otimes\bar\eta,L_{U^*}(\zeta\otimes\bar\kappa)\rangle_{\mathrm{HS}} .
+$$</p>
+<p><em>Proof.</em> The rank-one action is the computation $UT=U(\xi\otimes\bar\eta)$, and for the right multiplication $(\xi\otimes\bar\eta)V=\xi\otimes\bar\eta\circ V$ gives the transpose formula; the adjoint pairing is the trace of the product of two rank-one operators, $\operatorname{tr}((\xi\otimes\bar\eta)(\zeta\otimes\bar\kappa)^*)=\langle\xi,\zeta\rangle\langle\kappa,\eta\rangle$.</p>
+<p><strong>Corollary (the multiplications are isometric and multiplicative).</strong> The maps $U\mapsto L_U$ and $V\mapsto R_V$ are linear, multiplicative and isometric: $\|L_U\|=\|U\|$, $\|R_V\|=\|V\|$, and the two families commute, $L_UR_V=R_VL_U$.</p>
+<p><em>Proof.</em> The norm identity is $\|UT\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality at a rank-one operator for which the vector is aligned with $U$; multiplicativity is associativity, and the commutativity is $U(TV)=(UT)V$.</p>
+<h2 id="self-adjointness-normality-and-the-order">Self-Adjointness, Normality and the Order</h2>
+<p><strong>Theorem (criteria for a left multiplication).</strong> For $U\in B(H)$:</p>
+<p>(i) $L_U$ is self-adjoint exactly when $U$ is self-adjoint;</p>
+<p>(ii) $L_U$ is normal exactly when $U$ is normal;</p>
+<p>(iii) $L_U$ is unitary exactly when $U$ is unitary;</p>
+<p>(iv) $L_U$ is positive exactly when $U$ is positive;</p>
+<p>(v) $L_U$ is an orthogonal projection exactly when $U$ is an orthogonal projection.</p>
+<p><em>Proof.</em> (i) $L_U^*=L_{U^*}$ equals $L_U$ iff $U^*=U$, the map being injective. (ii) $L_UL_U^*=L_{UU^*}$ and $L_U^*L_U=L_{U^*U}$ coincide iff $UU^*=U^*U$. (iii) $(L_U)^*L_U=L_{U^*U}$ is the identity iff $U^*U=I$, and $L_UL_U^*=I$ iff $UU^*=I$; the identity of $S_2(H)$ is $L_I$. (iv) $L_U$ is positive iff it is self-adjoint, so $U$ is, and $\langle L_UT,T\rangle_{\mathrm{HS}}=\operatorname{tr}(UTT^*)=\operatorname{tr}(T^*UT)$ is nonnegative for all $T$ iff $U\ge0$. (v) An orthogonal projection is a positive idempotent; $L_U^2=L_{U^2}$ is $L_U$ iff $U^2=U$, and the positivity is (iv).</p>
+<p><strong>Proposition (the adjoint and the involution).</strong> The involution $U\mapsto U^*$ on the elements and the adjunction on the operators agree under the representation:</p>
+<p>$$
+(L_U)^*=L_{U^*},\qquad (R_V)^*=R_{V^*},
+$$</p>
+<p>so the two representations are $*$-representations of $B(H)$ (and of its opposite) on $S_2(H)$, and the compatibility of the involution with the multiplications, $(UV)^*=V^*U^*$, is the compatibility of the adjunction with the composition, $(L_UL_V)^*=(L_V)^*(L_U)^*$.</p>
+<p><em>Proof.</em> The two identities are the theorem; passing to adjoints reverses the order of a product, $(L_UL_V)^*=L_V^*L_U^*$, which is the operator form of the anti-multiplicativity of the involution.</p>
+<p><strong>Corollary (the commutation theorem for one side).</strong> The commutant of $\{L_U:U\in B(H)\}$ in $B(S_2(H))$ contains the right multiplications $R_V$, and in finite dimension it is exactly the algebra generated by them; consequently $\{L_U:U\in B(H)\}'=\{R_V\}$, and the double commutant is $\{L_U\}$.</p>
+<p><em>Proof.</em> The first containment is the commutativity of the two families; in finite dimension the multiplication algebra generated by the two families is the whole of $B(M_n(\mathbb{K}))$ via the identification $M_n\cong\mathbb{K}^n\otimes\mathbb{K}^n$, and the commutant of the left family is the right family by the standard double-commutant computation, which gives the second identity and, applying it twice, the third.</p>
+<h2 id="the-signed-case">The Signed Case</h2>
+<p><strong>Proposition (the signed left multiplication to be adjointed).</strong> With the same form, the signed left multiplication of the graded Hilbert space, $\ell_U=L_U\circ\alpha$, has adjoint</p>
+<p>$$
+(\ell_U)^*=\alpha\,L_{U^*}=\ell_{\alpha(U^*)},
+$$</p>
+<p>because the grade involution is a $*$-automorphism and is self-adjoint for the Hilbert–Schmidt form, $\alpha^*=\alpha$; so the adjoint of a signed left multiplication is again a signed left multiplication, and the explicit computation is <em>The Signed Adjoint of the Left Multiplication on a Hilbert Space</em> below.</p>
+<p><em>Proof.</em> $(L_U\alpha)^*=\alpha^*L_U^*=\alpha L_{U^*}$, and $\alpha L_{U^*}=\alpha L_{U^*}$ acts by $X\mapsto\alpha(U^*X)=\alpha(U^*)\alpha(X)$, which is $\ell_{\alpha(U^*)}$; the self-adjointness of $\alpha$ is $\langle\alpha X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(\Gamma X\Gamma Y^*)=\operatorname{tr}(X\Gamma Y^*\Gamma)=\langle X,\alpha Y\rangle_{\mathrm{HS}}$.</p>
+<p><strong>Forward reference.</strong> The two-sided adjoint, the sandwich $S_{A,B}=L_A\varrho_B=\ell_AR_{\alpha(B)}$ and its adjoint $S_{\alpha(A^*),\alpha(B^*)}$, the unitarity condition they define, and the reflection case are <em>The Signed Adjoint Sandwich on a Hilbert Space</em> and <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>, written in parallel; the graded-module adjoint action is <em>The Graded Adjoint Action on a Module over a Hilbert Space</em>. Nothing of those is used here.</p>
+<p><strong>Example (the finite-dimensional picture).</strong> For $H=\mathbb{K}^n$ identify $S_2(H)$ with $M_n(\mathbb{K})$ and the Hilbert–Schmidt form with $\langle S,T\rangle=\operatorname{tr}(ST^*)$; then $L_U$ is the operator $T\mapsto UT$, the adjoint is $T\mapsto U^*T$, and the matrix of $L_U$ in the standard basis is $U\otimes I$. The self-adjointness of $L_U$ is the self-adjointness of $U$, and the eigenvalues of $L_U$ are the eigenvalues of $U$ each repeated $n$ times, so the spectral picture of the multiplication is read from the element.</p>
+<p><strong>Example (rank-one vectors and the shift).</strong> On a rank-one operator, $L_U$ shifts only the left vector and keeps the right one, $L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta$; the adjoint shifts the same vector back by $U^*$, and iterating gives $L_U^n(\xi\otimes\bar\eta)=(U^n\xi)\otimes\bar\eta$. The rank-one decomposition thus carries the adjoint, the powers and the whole functional calculus of $L_U$ back to the element $U$.</p>
+<h2 id="summary">Summary</h2>
+<p>With respect to the Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, the left multiplication $L_U(T)=UT$ has adjoint $(L_U)^*=L_{U^*}$ and the right multiplication $R_V(T)=TV$ has adjoint $R_V^*=R_{V^*}$, so both one-sided families are closed under adjunction and stay on their side. The representation $U\mapsto L_U$ is linear, multiplicative and isometric, it is a $*$-representation in the sense that it carries the involution of the elements, $U\mapsto U^*$, to the adjunction of the operators, and the two families $L(B(H))$ and $R(B(H))$ commute; the commutant of each is the other, and the double commutant is the family itself. Consequently self-adjointness, normality, unitarity, positivity and projectionness of $L_U$ are exactly the corresponding properties of $U$, and the rank-one operators carry the adjoint and the powers to the element by shifting one vector. The signed left multiplication $\ell_U=L_U\alpha$ has adjoint $(\ell_U)^*=\ell_{\alpha(U^*)}$, again on the left, which is the first step of the signed adjoint theory developed in <em>The Signed Adjoint of the Left Multiplication on a Hilbert Space</em> and its companions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_2(H)$</td>
+<td>the Hilbert–Schmidt class</td>
+</tr>
+<tr>
+<td>$\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$L_U(T)=UT$, $R_V(T)=TV$</td>
+<td>the left and right multiplications</td>
+</tr>
+<tr>
+<td>$(L_U)^*=L_{U^*}$</td>
+<td>adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$R_V^*=R_{V^*}$</td>
+<td>adjoint of the right multiplication</td>
+</tr>
+<tr>
+<td>$\alpha(T)=\Gamma T\Gamma$, $\alpha^*=\alpha$</td>
+<td>the grade involution, self-adjoint for the form</td>
+</tr>
+<tr>
+<td>$(\ell_U)^*=\ell_{\alpha(U^*)}$</td>
+<td>adjoint of the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\xi\otimes\bar\eta$</td>
+<td>the rank-one operator</td>
+</tr>
+<tr>
+<td>$L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta$</td>
+<td>the rank-one action</td>
+</tr>
+<tr>
+<td>$\{L_U\}'=\{R_V\}$</td>
+<td>the commutation theorem</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the multiplication operators on $B(H)$ and their adjoints.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the Hilbert–Schmidt space and the elementary operators.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em>, Mathematical Surveys and Monographs 120 (American Mathematical Society, 2nd ed. 2005), for the trace form and the rank-one decomposition.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the adjoint of a multiplication and the commutant computations.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the $*$-representations and the commutation theorem of the multiplications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

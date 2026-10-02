@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of a Convolution Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-a-convolution-operator"><strong>The Adjoint of a Convolution Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A convolution operator on the group is the operator that sends a function to its convolution with a fixed kernel, and its adjoint with respect to the Haar pairing is convolution with the involuted kernel: the same operator with the kernel carried through the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$. The identity is the analytic heart of the <code>- * Operator Theory</code> of the group algebra, and everything else in this group is a specialisation of it: the adjoint of the left and right multiplications, of the sandwich, of the reflection and of the signed left multiplication are the same computation with the parameters carried through the involution and, where a grade involution intervenes, through the composite $\sigma = \alpha\circ\,^*$. Reading the identity as a statement about the family of convolution operators, it says that the map $f\mapsto C_f$ is an injective <code>*</code>-homomorphism of the group algebra into the bounded operators, whose closure is the reduced group $\mathrm{C}^*$-algebra and whose von Neumann closure is the group von Neumann algebra — the involutive algebra structure the convolution operators carry. This article states the adjoint, computes it, and describes the involutive algebra it generates; non-unimodular groups are treated only in the left-handed case, where no modular correction is needed.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the group algebra $L^1(G)$, its involution and its completions from <em>The Convolution Algebra $L^1(G)$</em> and <em>The Group Algebra as an Involutive Algebra</em>; the convolution operators and their composition laws from <em>Convolution on a Group</em> and <em>The Group Algebra as an Algebra of Operators</em>; the regular representations, their commutation and the von Neumann algebra they generate from <em>The Left and Right Regular Representation</em>; the involutive structure of the convolution algebra from <em>The Involution on the Measure Algebra</em>; the elementary adjoints and the integrated-form identity from <em>Hermitian Operators on a Group Algebra</em> and <em>Unitary Representations and the Adjoint</em>; the signed adjoints from <em>The Signed Adjoint Sandwich on the Group Algebra</em>, <em>The Signed Adjoint of the Reflection on the Group Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on the Group Algebra</em>; the graded adjoint action from <em>The Graded Adjoint Action on a Module over the Group Algebra</em>, immediately preceding; and the bounded operators, the <code>*</code>-algebras, the strong and weak topologies, the group von Neumann algebra and the reduced group $\mathrm{C}^*$-algebra from <em>Operator Algebras</em>. The measure case and the algebra of measures are <em>The Involution on the Measure Algebra</em>; the Plancherel transform is <em>The Plancherel Operator</em>.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and modular function $\Delta$; for a kernel $f\in L^1(G)$ the <strong>convolution operator</strong> is</p>
+<p>$$
+C_f = L_f, \qquad C_f g = f*g, \qquad (f*g)(x) = \int_G f(y)g(y^{-1}x)\,dy ,
+$$</p>
+<p>on $L^p(G)$, $1\leq p\leq\infty$, and in particular on $L^2(G)$; the <strong>Haar pairing</strong> is $\langle g,h\rangle = \int_G g\overline{h}\,dx$, and the <strong>adjoint</strong> is with respect to it. The involution is $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, and the right convolution is $R_fg = g*f$. The <strong>reduced group $\mathrm{C}^*$-algebra</strong> is $C^*_r(G) = \overline{\lambda(L^1(G))}^{\|\cdot\|}$ and the <strong>group von Neumann algebra</strong> is $L(G) = \lambda(L^1(G))''$, with $\lambda(f) = C_f$.</p>
+<h2 id="the-adjoint-of-a-convolution-operator_1">The Adjoint of a Convolution Operator</h2>
+<p><strong>Theorem (the adjoint is convolution by the involution).</strong> For every $f\in L^1(G)$ the convolution operator on $L^2(G)$ has adjoint</p>
+<p>$$
+\bigl(C_f\bigr)^* = C_{f^*}, \qquad f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1} ,
+$$</p>
+<p>with respect to the Haar pairing, for every locally compact $G$; in the unimodular case the right convolution has the mirror adjoint $(R_f)^* = R_{f^*}$.</p>
+<p><strong>Proof.</strong> The left regular representation is unitary, so its integrated form satisfies $\lambda(f)^* = \lambda(f^*)$: expanding the integrated form, $\lambda(f)^* = \int\overline{f(x)}\lambda(x)^{-1}dx$, and the substitution $x\to x^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ at $x = y^{-1}$ gives $\int\overline{f(y^{-1})}\Delta(y)^{-1}\lambda(y)dy = \lambda(f^*) = C_{f^*}$. The right-handed identity is the same computation for the right regular representation, which is unitary exactly in the unimodular case. $\square$</p>
+<p><strong>Corollary (the elementary cases recover the earlier adjoints).</strong> With $f = a$ a general element, the adjoint of the left multiplication is $C_{a^*}$; the sandwich, the reflection and the signed left multiplication have the adjoints $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)}$, $\rho_u^* = \rho_{\alpha(u^*)}$ and $\Lambda_a^* = \Lambda_{\alpha(a^*)}$, each obtained from the present identity by composing with the twist and using $\mathrm{A}^* = \mathrm{A}$.</p>
+<p><strong>Proof.</strong> $C_a = L_a$ and $L_a^* = L_{a^*}$ is the theorem; the signed formulas are the computations of the three preceding articles, which used exactly this identity for the convolution factor and the self-adjointness of $\mathrm{A}$. $\square$</p>
+<h2 id="the-involutive-algebra-of-convolution-operators">The Involutive Algebra of Convolution Operators</h2>
+<p><strong>Theorem (the map is an injective <code>*</code>-homomorphism).</strong> The assignment $f\mapsto C_f$ is an injective <code>*</code>-homomorphism of the Banach <code>*</code>-algebra $L^1(G)$ into the <code>*</code>-algebra of bounded operators on $L^2(G)$,</p>
+<p>$$
+C_{f*g} = C_fC_g, \qquad (C_f)^* = C_{f^*}, \qquad \|C_f\|\leq\|f\|_1 ,
+$$</p>
+<p>whose image is a <code>*</code>-subalgebra; the map $f\mapsto C_f$ is the left regular representation $\lambda$, and its injectivity is the faithfulness of $\lambda$.</p>
+<p><strong>Proof.</strong> $C_{f*g}g' = (f*g)*g' = f*(g*g') = C_fC_gg'$ by associativity of convolution, so the map is multiplicative; the adjoint identity is the theorem; the norm bound is Young's inequality, $\|f*g\|_p\leq\|f\|_1\|g\|_p$; injectivity of $\lambda$ is <em>The Group Algebra as an Involutive Algebra</em>. $\square$</p>
+<p><strong>Corollary (the two completions).</strong> The closure of the image in the operator norm is the reduced group $\mathrm{C}^*$-algebra $C^*_r(G)$, a <code>*</code>-subalgebra of $B(L^2(G))$ closed under the adjoint; the closure in the weak operator topology is the group von Neumann algebra $L(G)$, a von Neumann algebra closed under the adjoint; and the two are the operator completions of the same involutive algebra.</p>
+<p><strong>Proof.</strong> The norm closure of a <code>*</code>-subalgebra of $B(L^2(G))$ is a <code>*</code>-subalgebra, closed in norm; the weak closure is a von Neumann algebra; the identifications are the definitions of $C^*_r(G)$ and $L(G)$. $\square$</p>
+<p><strong>Theorem (the involution is not the inverse).</strong> The adjoint $C_f^* = C_{f^*}$ is convolution by the involution, not by the inverse; the two agree, $C_f^* = C_{f}^{-1}$, exactly when $f$ is a unitary element of $L^1(G)$, and in the group algebra of a non-discrete group there are no unitary elements, so the identity is the only self-adjoint element with unitary convolution operator.</p>
+<p><strong>Proof.</strong> $C_f^* = C_{f^*}$ and $C_f^{-1} = C_{f^{-1}}$ for a unit $f$; they agree exactly when $f^* = f^{-1}$, which is the definition of a unitary element. The absence of unitary elements on a non-discrete $L^1(G)$ is <em>The Group Algebra as an Involutive Algebra</em>. $\square$</p>
+<h2 id="the-measure-case-and-the-math73-picture">The Measure Case and the $L^p$ Picture</h2>
+<p><strong>Theorem (the measure case).</strong> For a bounded Radon measure $\mu\in M(G)$ the operator $\lambda(\mu)$ of left convolution on $L^2(G)$ has adjoint $\lambda(\mu)^* = \lambda(\mu^*)$ with the measure involution $\mu^*(E) = \overline{\mu(E^{-1})}$; since $L^1(G)$ is weak-<code>*</code> dense in $M(G)$ and both convolution and the involution are weak-<code>*</code> continuous, the identity extends the group-algebra statement to the whole measure algebra.</p>
+<p><strong>Proof.</strong> This is <em>The Involution on the Measure Algebra</em>, where the adjoint is computed for measures; the extension from $L^1(G)$ to $M(G)$ uses the density of the absolutely continuous measures. $\square$</p>
+<p><strong>Proposition (the $L^p$ adjoint, qualitatively).</strong> For $1<p<\infty$ and its conjugate exponent $p'$, the adjoint of $C_f$ with respect to the duality pairing between $L^p(G)$ and $L^{p'}(G)$ is the convolution operator with the reflected-conjugate kernel, and on $L^2(G)$ it is $C_{f^*}$; the conjugation of the pairing is what distinguishes the two, exactly as the passage from the bilinear form of the discrete theory to the Haar pairing distinguishes the adjoints $(L_a)^\dagger = L_{a^{-1}}$ and $(L_a)^* = L_{a^*}$.</p>
+<p><strong>Proof.</strong> The duality $(L^p)' = L^{p'}$ is realised by the bilinear integral, while the Haar pairing is conjugate-linear in the second variable; the two pairings differ by the involution $g\mapsto\overline{g}$, which conjugates the kernel and turns the reflected kernel into $f^*$. The case $p = 2$ is the theorem, and the discrete comparison is <em>The Signed Adjoint of the Left Multiplication on a Topological Group</em>. $\square$</p>
+<p><strong>Corollary (the $\mathrm{C}^*$-identity).</strong> The convolution operators satisfy $C_{f^*\!*f} = C_f^*C_f$, hence $\|C_{f^*\!*f}\|_{B(L^2)} = \|C_f\|_{B(L^2)}^2$; the norm closure $C^*_r(G)$ therefore carries the $\mathrm{C}^*$-norm, and the involution is isometric on it.</p>
+<p><strong>Proof.</strong> $C_{f^*\!*f} = C_{f^*}C_f = C_f^*C_f$ by multiplicativity and the adjoint identity, and the operator norm obeys the $\mathrm{C}^*$-identity $\|T^*T\| = \|T\|^2$; a norm-closed <code>*</code>-subalgebra of $B(L^2(G))$ satisfying it is a $\mathrm{C}^*$-algebra, and the involution is isometric there because $\|C_f\|^2 = \|C_f^*C_f\|\leq\|C_f^*\|\|C_f\|$ gives $\|C_f\|\leq\|C_f^*\|$ and, symmetrically, equality. $\square$</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<p><strong>Theorem (abelian and discrete groups).</strong> If $G$ is abelian then convolution is commutative, $C_fC_g = C_gC_f$, the <code>*</code>-algebra of convolution operators is commutative, and its completion is the algebra of multiplication by the Fourier transform; if $G$ is discrete then $L^1(G) = \ell^1(G)$ has unitary elements, the point masses, $\delta_g^* = \delta_{g^{-1}}$, and $C_{\delta_g}$ is the unitary operator $\lambda(g)$.</p>
+<p><strong>Proof.</strong> For abelian $G$ the commutativity is that of convolution and the completion statement is the Fourier transform of <em>Harmonic Analysis on Groups</em>; for discrete $G$ the point masses are unitary and $C_{\delta_g} = \lambda(g)$ by $\lambda(\delta_g) = \lambda(g)$. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The measure algebra and its involution are <em>The Involution on the Measure Algebra</em>; the Plancherel transform as an operator and the unitary equivalence with the direct integral over the dual are <em>The Plancherel Operator</em>; the group von Neumann algebra and the regular representation are <em>The Left and Right Regular Representation</em> and <em>The Group Algebra as an Algebra of Operators</em>. The exact form of the $L^p$ adjoint is stated only qualitatively above; the conjugation of the pairing and the reflected kernel are its content, and the computation for each $p$ is left to the duality theory of <em>Harmonic Analysis on Groups</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The convolution operator $C_fg = f*g$ on $L^2(G)$ has adjoint $C_f^* = C_{f^*}$ with respect to the Haar pairing, convolution by the involuted kernel $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact group; the right convolution has the mirror adjoint in the unimodular case. The identity recovers the adjoints of the left multiplication, of the sandwich, of the reflection and of the signed left multiplication as its specialisations, with the parameters carried through the involution and, where a grade involution intervenes, through the composite $\sigma = \alpha\circ\,^*$. The assignment $f\mapsto C_f$ is an injective <code>*</code>-homomorphism of $L^1(G)$ into the bounded operators, $C_{f*g} = C_fC_g$, $(C_f)^* = C_{f^*}$, $\|C_f\|\leq\|f\|_1$, whose norm closure is the reduced group $\mathrm{C}^*$-algebra and whose weak closure is the group von Neumann algebra — the operator completions of the same involutive algebra. The adjoint is the involution and not the inverse, the two coinciding exactly for a unitary element, which exists only in the discrete or measure-algebra reading; the measure case extends the identity to $M(G)$, and the $L^p$ adjoint is realised by the duality pairing with the reflected-conjugate kernel, agreeing with $C_{f^*}$ on $L^2$. On an abelian group the algebra is commutative and its completion is multiplication by the Fourier transform; on a discrete group the point masses are the unitary operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_fg = f*g$</td>
+<td>The convolution operator, the left regular representation</td>
+</tr>
+<tr>
+<td>$(f*g)(x) = \int_G f(y)g(y^{-1}x)\,dy$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$</td>
+<td>The involution</td>
+</tr>
+<tr>
+<td>$\langle g,h\rangle = \int_Gg\overline{h}\,dx$</td>
+<td>The Haar pairing</td>
+</tr>
+<tr>
+<td>$(C_f)^* = C_{f^*}$</td>
+<td>The adjoint of a convolution operator</td>
+</tr>
+<tr>
+<td>$C_{f*g} = C_fC_g$</td>
+<td>Multiplicativity of $f\mapsto C_f$</td>
+</tr>
+<tr>
+<td>$\lambda(\mu)^* = \lambda(\mu^*)$</td>
+<td>The measure case</td>
+</tr>
+<tr>
+<td>$C^*_r(G) = \overline{\lambda(L^1(G))}$</td>
+<td>The reduced group $\mathrm{C}^*$-algebra</td>
+</tr>
+<tr>
+<td>$L(G) = \lambda(L^1(G))''$</td>
+<td>The group von Neumann algebra</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = L_{a^{-1}}$ vs $(L_a)^* = L_{a^*}$</td>
+<td>The bilinear form vs the Haar pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the reduced group $\mathrm{C}^*$-algebra, the <code>*</code>-representations and the <code>*</code>-homomorphism property.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the group von Neumann algebra, its weak closure and the regular representation.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the convolution algebra $L^1(G)$, Young's inequality and the involution.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the adjoint of a convolution operator, the regular representations and the unimodular case.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the <code>*</code>-algebra of operators, the $\mathrm{C}^*$-identity and the topologies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

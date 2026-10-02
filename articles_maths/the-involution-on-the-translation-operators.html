@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Translation Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-translation-operators"><strong>The Involution on the Translation Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The translation operators $T_a f(x) = f(a^{-1}x)$ are the action of the group on its own functions, and an <strong>involution</strong> $\sigma$ of the group acts on them by $T_a \mapsto T_{\sigma(a)}$. For the involution $\sigma(a) = a^{-1}$ the operator it produces is exactly the <strong>adjoint</strong>: $T_a^{*} = T_{a^{-1}}$, by the invariance of the Haar measure. The passage to the adjoint is therefore the operator form of the inversion of a group element, and the operator that implements the inversion geometrically — the <strong>reversing symmetry</strong> — is the one induced by the inversion map $x \mapsto x^{-1}$, which is an anti-automorphism of the group and swaps the left and the right translations. On an abelian group the inversion is an automorphism, the involution on the elements and the adjoint on the operators coincide, and the identity of the two-structures theorem of <em>The Adjoint of a Symmetry Operator</em> holds; on a nonabelian group the inversion is an anti-automorphism, and the identity is the statement that the adjoint realises the inversion on the operators, not the agreement of an automorphism with the adjoint.</p>
+<p>The article treats the translation operators and their adjoint, the involution they carry, the reversing symmetry, and the worked cases. The translation operators, their invariance and their convolution algebra are <em>The Translation Operator on a Symmetry Group</em>, the operator whose adjoint is computed; the adjoint of a single operator and the two-structures theorem are <em>The Adjoint of a Symmetry Operator</em>; the unitary operators and the regular representation are <em>Unitary Operators of a Symmetry Group</em>, the second article of this group; the Haar measure and its invariance are <em>Locally Compact Groups and Haar Measure</em>; the Fourier analysis of the abelian case is <em>The Fourier Transform and Conjugate Symmetry</em> and <em>Convolution Operators</em>; and the characters and the nonabelian case are <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>, all in Part III or Part II and cited. The adjoint of the general signed operator is <em>The Signed Adjoint Sandwich on a Symmetry Group</em>, the next article; the involution on the elements of the group was the previous group <code>- * Theory</code>.</p>
+<p>The article has four sections: the translation operators and their adjoint; the involution on the translations; the reversing symmetry; and the worked cases. Throughout, $G$ is a locally compact group, $dx$ a left Haar measure, $L^2(G)$ the space of square-integrable functions, $T_a f(x) = f(a^{-1}x)$ the left translation and $S_a f(x) = f(xa)$ the right translation, and $\sigma$ an involution of $G$.</p>
+<h2 id="the-translation-operators-and-their-adjoint">The Translation Operators and Their Adjoint</h2>
+<h3 id="the-operators">The Operators</h3>
+<p><strong>Definition.</strong> The <strong>translation operator</strong> by $a$ is the operator on the functions of the group</p>
+<p>$$
+T_a : L^2(G) \longrightarrow L^2(G), \qquad (T_a f)(x) = f(a^{-1}x),
+$$</p>
+<p>and the right translation is $S_a f(x) = f(xa)$; the assignment $a \mapsto T_a$ is the left regular representation and $a \mapsto S_a$ the right one, of <em>The Translation Operator on a Symmetry Group</em>.</p>
+<p><strong>Proposition.</strong> The translations satisfy $T_a T_b = T_{ab}$, $S_a S_b = S_{ab}$, they commute, $T_a S_b = S_b T_a$, and the inverses are $T_a^{-1} = T_{a^{-1}}$, $S_a^{-1} = S_{a^{-1}}$; each is unitary for the invariant measure when $G$ is unimodular.</p>
+<p><strong>Proof.</strong> The composition and inverse rules are associativity in $G$; the commutation is $T_a S_b f(x) = f(a^{-1}xb) = S_b T_a f(x)$; unitarity is the invariance of the Haar measure, <em>The Translation Operator on a Symmetry Group</em>.</p>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p><strong>Theorem.</strong> The adjoint of the left translation is the left translation by the inverse,</p>
+<p>$$
+T_a^{*} = T_{a^{-1}} = T_a^{-1}, \qquad\text{and}\qquad S_a^{*} = S_{a^{-1}},
+$$</p>
+<p>with respect to the invariant inner product of $L^2(G)$.</p>
+<p><strong>Proof.</strong> $\langle T_a f, h\rangle = \int f(a^{-1}x)\overline{h(x)}\,dx$; the change of variable $y = a^{-1}x$ gives $dx = dy$ by left invariance, so $= \int f(y)\overline{h(ay)}\,dy = \langle f, T_{a^{-1}}h\rangle$, hence $T_a^{*} = T_{a^{-1}}$; the right case is the same computation. This is a special case of <em>The Adjoint of a Symmetry Operator</em> for the isometry $T_a$.</p>
+<h2 id="the-involution-on-the-translations">The Involution on the Translations</h2>
+<h3 id="the-induced-involution">The Induced Involution</h3>
+<p><strong>Definition.</strong> An involution $\sigma$ of $G$ induces the operator on the translations</p>
+<p>$$
+\tau_{\sigma} : T_a \longmapsto T_{\sigma(a)},
+$$</p>
+<p>and it extends to the algebra they generate by linearity; when $\sigma$ is inner, $\sigma = \operatorname{Ad}_h$, the induced map is the conjugation by $T_h$.</p>
+<p><strong>Proposition.</strong> The map $\tau_{\sigma}$ is well defined on the translation operators, it is the identity exactly when $\sigma = \mathrm{id}$, and it is an involution of the family $\{T_a\}$ exactly when $\sigma$ is an involution of $G$; it preserves the group law of the translations precisely when $\sigma$ is an automorphism, $\tau_{\sigma}(T_aT_b) = T_{\sigma(a)\sigma(b)} = T_{\sigma(ab)} = \tau_{\sigma}(T_{ab})$.</p>
+<p><strong>Proof.</strong> The well-definedness is that $a = b$ implies $\sigma(a) = \sigma(b)$; the involution property is $\tau_{\sigma}^2 = \mathrm{id}$ from $\sigma^2 = \mathrm{id}$; the preservation of the law is the multiplicativity of an automorphism. For an anti-automorphism $\sigma$ the composition reverses, $\tau_{\sigma}(T_aT_b) = T_{\sigma(b)\sigma(a)}$.</p>
+<h3 id="the-inversion">The Inversion</h3>
+<p><strong>Proposition.</strong> The <strong>inversion</strong> $\iota(a) = a^{-1}$ induces the map $T_a \mapsto T_{a^{-1}} = T_a^{-1}$ on the translations, which is the <strong>operator inversion</strong>; it is an involution of the family, it reverses the composition law,
+$$
+\tau_{\iota}(T_aT_b) = T_{(ab)^{-1}} = T_{b^{-1}a^{-1}} = T_{b^{-1}}T_{a^{-1}} = \tau_{\iota}(T_b)\,\tau_{\iota}(T_a),
+$$
+and it is an automorphism of the family exactly when $G$ is abelian.</p>
+<p><strong>Proof.</strong> The inversion is an anti-automorphism of $G$, $(ab)^{-1} = b^{-1}a^{-1}$, so the induced map reverses the composition; it is an automorphism exactly when $G$ is abelian, since an anti-automorphism is an automorphism exactly then. This is the elementary group theory of the inversion of a group.</p>
+<p><strong>Remark.</strong> The inversion is the only involution of the group that is natural for the translation operators, and it is the operator instance of the general fact that the adjoint of an isometry is its inverse: the involution $\iota$ on the elements corresponds to the inversion of the operator on the operators, and the two agree through the adjoint below.</p>
+<h2 id="the-adjoint-and-the-reversing-symmetry">The Adjoint and the Reversing Symmetry</h2>
+<h3 id="the-adjoint-realises-the-inversion">The Adjoint Realises the Inversion</h3>
+<p><strong>Theorem (the two structures for translations).</strong> The adjoint of the left translation is the image of the inversion involution on the operator,</p>
+<p>$$
+T_a^{*} = T_{a^{-1}} = \tau_{\iota}(T_a),
+$$</p>
+<p>so the involution of the elements and the adjoint on the operators <strong>coincide</strong> for the translation operators with the inversion: the identity $\rho(\sigma(a)) = \rho(a)^{*}$ of <em>The Adjoint of a Symmetry Operator</em> holds with $\rho = T$ and $\sigma = \iota$. When $G$ is abelian the inversion is an automorphism and the identity is the abelian case of the two-structures theorem; when $G$ is nonabelian the inversion is an anti-automorphism and the identity holds as an equation of operators, realising the inversion on the operators rather than matching an automorphism with the adjoint.</p>
+<p><strong>Proof.</strong> The operator identity is the adjoint theorem above; the comparison with the two-structures criterion $\rho(g\sigma(g)) = \operatorname{id}$ is $T_aT_{a^{-1}} = T_e = \operatorname{id}$, which holds always, and the abelian obstruction of the theorem — that an automorphic $\sigma$ forces an abelian image — is consistent because for nonabelian $G$ the map $\iota$ is not an automorphism.</p>
+<h3 id="the-reversing-symmetry">The Reversing Symmetry</h3>
+<p><strong>Definition.</strong> The <strong>reversing symmetry</strong> is the operator on the functions induced by the inversion of the group,
+$$
+C : L^2(G) \longrightarrow L^2(G), \qquad (Cf)(x) = f(x^{-1}),
+$$
+which is an involution, $C^2 = \mathrm{id}$.</p>
+<p><strong>Proposition.</strong> The reversing symmetry swaps the left and the right translations,
+$$
+C\,T_a\,C = S_a, \qquad C\,S_a\,C = T_a,
+$$
+because the inversion is an anti-automorphism; it is unitary when the bi-invariant measure exists ($G$ unimodular) and has $\lVert C\rVert = 1$ in general; and it intertwines the inversion on the translations, $C\,T_a = S_a\,C$.</p>
+<p><strong>Proof.</strong> $(C T_a C f)(x) = (T_a C f)(x^{-1}) = (Cf)(a^{-1}x^{-1}) = f((a^{-1}x^{-1})^{-1}) = f(xa) = (S_a f)(x)$; the other identity is the same with $a$ replaced by $a^{-1}$. The unitarity is the invariance of the measure under the inversion, which holds exactly for a unimodular group, <em>Locally Compact Groups and Haar Measure</em>.</p>
+<p><strong>Remark.</strong> The reversing symmetry is the geometric reason the adjoint of a translation is the translation by the inverse: the inversion of the group contragredient to the left multiplication is the right multiplication, and its composition with the left translation realises the inverse. On the function space, the inversion is the "reversal" of the argument, and it is the simplest <strong>reversing symmetry</strong> — a symmetry that reverses the sense of a one-parameter flow, the operator form of the time reversal of <em>Time Reversal and the Transfer Operator</em>.</p>
+<h3 id="the-abelian-case">The Abelian Case</h3>
+<p><strong>Proposition.</strong> On an abelian group the translations $T_a = S_a$ coincide with the right translations, the reversing symmetry satisfies $C T_a C = T_a$, and the Fourier transform diagonalises the translations: on the character $\chi$ the operator $T_a$ acts by the scalar $\chi(a)^{-1}$, and its adjoint by the conjugate scalar $\chi(a)$,
+$$
+\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f(\chi), \qquad \widehat{T_a^{*} f}(\chi) = \chi(a)\hat f(\chi) = \overline{\chi(a)^{-1}}\,\hat f(\chi),
+$$
+so the inversion involution corresponds to the complex conjugation of the Fourier multiplier.</p>
+<p><strong>Proof.</strong> On an abelian group the left and right translations coincide by commutativity; the Fourier transform diagonalises the translations by the characters of the dual group, and the adjoint multiplies by the complex conjugate scalar, <em>The Fourier Transform and Conjugate Symmetry</em> and <em>Convolution Operators</em>. The inversion of the group sends the character $\chi$ to its conjugate $\bar\chi$, which is the conjugation of the multiplier.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the line and the plane).</strong> Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $e^{-i a\cdot\xi}$, so the adjoint multiplies by $e^{+ia\cdot\xi}$, the complex conjugate. The example is the original and simplest case.</p>
+<p><strong>Example (the circle).</strong> Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $e^{2\pi i n x}$ the operator $T_\theta$ acts by $e^{-2\pi in\theta}$, the adjoint by $e^{+2\pi in\theta}$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.</p>
+<p><strong>Example (the finite cyclic group).</strong> Let $G = \mathbb{Z}/n$; the translation $T_a$ is the cyclic shift, its adjoint is the shift by $-a$, and the discrete Fourier transform diagonalises the family; the inversion is the reflection of the group, and the adjoint is the conjugate transpose of the circulant matrix of the shift. The example is the finite abelian case, the discrete form of the line.</p>
+<p><strong>Example (a nonabelian group).</strong> Let $G$ be nonabelian and $\rho = T$ the left regular representation; the adjoint of $T_a$ is $T_{a^{-1}}$ still, but the inversion $\iota(a) = a^{-1}$ is <strong>not</strong> an automorphism, so the involution of the elements it defines is an anti-automorphism and the two-structures identity is the operator identity $T_a^{*} = \tau_{\iota}(T_a)$ rather than the matching of an automorphism with the adjoint. The reversing symmetry swaps the left and right regular representations, and the nonabelian Fourier analysis is <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>. The example is the boundary the abelian two-structures case does not cross.</p>
+<h2 id="summary">Summary</h2>
+<p>The left translation $T_a f(x) = f(a^{-1}x)$ has adjoint $T_a^{*} = T_{a^{-1}}$, by the invariance of the Haar measure, and the right translation the same; an involution $\sigma$ of the group induces the map $\tau_{\sigma}(T_a) = T_{\sigma(a)}$ on the translations, which is an involution of the family exactly when $\sigma$ is an involution of the group and preserves the composition law exactly when $\sigma$ is an automorphism. The natural involution is the <strong>inversion</strong> $\iota(a) = a^{-1}$, an anti-automorphism, and the adjoint realises it, $T_a^{*} = \tau_{\iota}(T_a)$, so the involution of the elements and the adjoint on the operators <strong>coincide</strong> for the translation operators; on an abelian group the inversion is an automorphism and this is the abelian case of the two-structures theorem of <em>The Adjoint of a Symmetry Operator</em>, while on a nonabelian group the identity holds as the operator form of the inversion. The <strong>reversing symmetry</strong> $Cf(x) = f(x^{-1})$ implements the inversion, is unitary for a unimodular group, and swaps the left and right translations, $C T_a C = S_a$; on an abelian group the Fourier transform diagonalises the translations and the adjoint is the conjugate multiplier. The adjoint of the general signed operator is the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_a f(x) = f(a^{-1}x)$</td>
+<td>the left translation operator</td>
+</tr>
+<tr>
+<td>$S_a f(x) = f(xa)$</td>
+<td>the right translation operator</td>
+</tr>
+<tr>
+<td>$T_a T_b = T_{ab}$, $T_a^{-1} = T_{a^{-1}}$</td>
+<td>the group law and the inverse</td>
+</tr>
+<tr>
+<td>$T_a^{*} = T_{a^{-1}}$</td>
+<td>the adjoint of a translation</td>
+</tr>
+<tr>
+<td>$\sigma$, $\tau_{\sigma}(T_a) = T_{\sigma(a)}$</td>
+<td>an involution and the induced operator on the translations</td>
+</tr>
+<tr>
+<td>$\iota(a) = a^{-1}$</td>
+<td>the inversion; an anti-automorphism</td>
+</tr>
+<tr>
+<td>$T_a^{*} = \tau_{\iota}(T_a)$</td>
+<td>the adjoint realises the inversion</td>
+</tr>
+<tr>
+<td>$Cf(x) = f(x^{-1})$</td>
+<td>the reversing symmetry</td>
+</tr>
+<tr>
+<td>$C T_a C = S_a$</td>
+<td>the reversing symmetry swaps left and right translations</td>
+</tr>
+<tr>
+<td>$\widehat{T_a f}(\chi) = \chi(a)^{-1}\hat f$</td>
+<td>the abelian Fourier diagonalisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953), for the translation operators, the Haar measure and the adjoint of a translation.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the abelian Fourier transform, the characters and the adjoint as the conjugate multiplier.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, 1963), for the left and right translations, the modular function and the inversion.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (Academic Press, 1984), for the translation operators, the convolution algebra and the invariant differential operators.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for the left and right regular representations and their intertwiners.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

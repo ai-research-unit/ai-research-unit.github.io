@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Representations and the Adjoint Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-representations-and-the-adjoint-operator"><strong>Unitary Representations and the Adjoint Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A unitary representation is a representation by operators whose adjoint is their inverse, and the whole infinitesimal theory is the statement of that identity in differentiated form: the derived operators $\pi(X)$ are <strong>skew-adjoint</strong>, and after multiplication by $i$ they become the <strong>self-adjoint generators</strong> of the one-parameter groups of the representation. The unitarity condition is therefore a condition on the adjoint operator, and it can be read either on the group, as $\pi(g)^{*} = \pi(g)^{-1}$, or on the algebra, as the skew-adjointness of the generators, or on the enveloping algebra, as the star identity. The self-adjoint generators carry the spectral theory of the representation, and the Casimir element becomes a positive self-adjoint operator.</p>
+<p>This article treats unitary representations and the adjoint operator, the unitarity of the representation and the self-adjoint generators. It is the second article of the <code>- * Operator Theory</code> group of the category; the invariant forms are <em>Hermitian Forms on a Lie Algebra</em>, the star structure of the enveloping algebra is <em>The Involution on the Enveloping Algebra of a Lie Group</em>, the representations and their decomposition are <em>Unitary Representations of a Lie Group</em>, and the operators built from the adjoint are <em>The Signed Adjoint Sandwich on a Lie Algebra</em>, <em>The Signed Adjoint of the Reflection on a Lie Algebra</em>, <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em> and <em>The Graded Adjoint Action on a Module over a Lie Algebra</em>, below in this group.</p>
+<p>The article assumes the Hilbert space, the bounded operator and its adjoint from <em>Hilbert Spaces</em> and <em>Bounded Operators on a Hilbert Space</em>, the self-adjoint operator, its spectrum and the spectral theorem from <em>Self-Adjoint Operators and the Spectral Theorem</em>, the one-parameter unitary groups and Stone's theorem from <em>Unitary Operators and the Spectral Measure</em>, the derived representation of a unitary representation from <em>Unitary Representations of a Lie Group</em>, and the invariant Hermitian form and its adjoint from <em>Hermitian Forms on a Lie Algebra</em>. The analytic details of the domains and the spectral decomposition are cited from those articles and not repeated; no physics vocabulary occurs and no interpretation of the generators is made.</p>
+<h2 id="the-adjoint-operator">The Adjoint Operator</h2>
+<h3 id="the-unitarity-of-the-representation">The Unitarity of the Representation</h3>
+<p><strong>Definition.</strong> Let $\mathcal{H}$ be a complex Hilbert space with inner product $\langle\cdot,\cdot\rangle$, linear in the first argument. The <strong>adjoint</strong> of a bounded operator $A$ is the bounded operator $A^{*}$ with</p>
+<p>$$
+\langle Av, w\rangle = \langle v, A^{*}w\rangle \qquad (v,w\in\mathcal{H}) ,
+$$</p>
+<p>and $A$ is <strong>unitary</strong> when $A^{*} = A^{-1}$, equivalently when $A$ is surjective and preserves the inner product; $A$ is <strong>self-adjoint</strong> when $A^{*} = A$ and <strong>skew-adjoint</strong> when $A^{*} = -A$.</p>
+<p><strong>Proposition.</strong> A unitary representation is a homomorphism $\pi : G\to U(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)v,\pi(g)w\rangle = \langle v,w\rangle$ for all $g$ and all $v,w$.</p>
+<p><em>Proof.</em> The equivalences are immediate from the definition of the adjoint and the invertibility of the operators; the preservation of the inner product is the defining property of the unitary group.</p>
+<h3 id="the-adjoint-of-the-whole-representation">The Adjoint of the Whole Representation</h3>
+<p><strong>Theorem.</strong> Let $\pi$ be a strongly continuous unitary representation. Then</p>
+<p>$$
+\pi(g)^{*} = \pi(g)^{-1} = \pi(g^{-1}) \qquad (g\in G),
+$$</p>
+<p>and the map $g\mapsto \pi(g)^{*}$ is again a strongly continuous unitary representation, the <strong>contragredient</strong>; it is equivalent to $\pi$ through the conjugate-linear identification of $\mathcal{H}$ with its dual. The commutant of an irreducible $\pi$ is the scalars, by Schur's lemma.</p>
+<p><em>Proof.</em> The first identity is the unitarity; the second representation is the composition of $\pi$ with the inversion, which is continuous and a homomorphism; the equivalence with the contragredient is the standard conjugate-linear isomorphism; Schur's lemma is that of <em>Unitary Representations of a Lie Group</em>.</p>
+<h2 id="the-self-adjoint-generators">The Self-Adjoint Generators</h2>
+<h3 id="the-derived-representation">The Derived Representation</h3>
+<p><strong>Theorem.</strong> Let $\pi$ be a strongly continuous unitary representation and let $\pi_*$ be its derived representation on the smooth vectors. Then for every $X\in\mathrm{G}$ the operator $\pi_*(X)$ is skew-adjoint on the dense invariant domain $\mathcal{H}^\infty$,</p>
+<p>$$
+\pi_*(X)^{*} = -\pi_*(X) ,
+$$</p>
+<p>and the operator $A_X = i\,\pi_*(X)$ is self-adjoint; the map $X\mapsto A_X$ is real-linear and satisfies the commutation relation</p>
+<p>$$
+[A_X, A_Y] = -i\,A_{[X,Y]} \qquad (X,Y\in\mathrm{G}) .
+$$</p>
+<p><em>Proof.</em> The skew-adjointness is the derivative at $t = 0$ of the unitarity identity $\pi(\exp tX)^{*}\pi(\exp tX) = \mathrm{id}$, which gives $\pi_*(X)^{*} + \pi_*(X) = 0$; the self-adjointness of $A_X$ follows from that of $i$ times a skew-adjoint operator, and the commutation relation from $[\pi_*(X),\pi_*(Y)] = \pi_*([X,Y])$ multiplied by $i^2 = -1$.</p>
+<h3 id="the-one-parameter-groups">The One-Parameter Groups</h3>
+<p><strong>Theorem (Stone).</strong> For every $X\in\mathrm{G}$ the operators $A_X = i\pi_*(X)$ are the self-adjoint generators of the strongly continuous one-parameter unitary groups</p>
+<p>$$
+t\longmapsto\pi(\exp tX) = e^{-itA_X} ,
+$$</p>
+<p>the domain of $A_X$ is the set of $v\in\mathcal{H}$ for which the derivative of the group at $t = 0$ exists, and the spectral theorem for $A_X$ decomposes the representation of the one-parameter subgroup. The common domain of the operators $A_X$ is the intersection of their domains, on which the commutation relations above hold in the sense of the commutator of unbounded operators.</p>
+<p><em>Proof.</em> The group $t\mapsto\pi(\exp tX)$ is strongly continuous and unitary, so Stone's theorem of <em>Unitary Operators and the Spectral Measure</em> gives a self-adjoint generator $B_X$ with $\pi(\exp tX) = e^{itB_X}$; the derivative at the origin is $\pi_*(X)$, so $B_X = -i\pi_*(X) = A_X$. The domain and the commutation statements are the standard ones for the generators of a representation.</p>
+<h3 id="the-analytic-vectors">The Analytic Vectors</h3>
+<p><strong>Theorem (Nelson).</strong> The set of analytic vectors of $\pi$ — the vectors $v$ for which the map $g\mapsto\pi(g)v$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)v$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in U(\mathrm{G})$.</p>
+<p><em>Proof.</em> The analytic vectors are dense by the analytic-vector theorem of Nelson, which uses the elliptic regularity of the Casimir operator; the essential self-adjointness on them is the commutation theorem for the analytic vectors, and the Gårding domain is dense by the approximate identity of the convolution algebra of <em>Operators on a Lie Group</em>. The proofs are in the references.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<h3 id="the-infinitesimal-form">The Infinitesimal Form</h3>
+<p><strong>Theorem.</strong> A representation $\pi$ of $G$ by operators on a dense invariant domain is unitary if and only if the infinitesimal condition</p>
+<p>$$
+\langle \pi(X)v, w\rangle + \langle v, \pi(X)w\rangle = 0 \qquad (X\in\mathrm{G},\ v,w\in\mathcal{H}^\infty)
+$$</p>
+<p>holds on the smooth vectors, equivalently if and only if the derived representation is a star-representation of the enveloping algebra, $\pi(u^{\star}) = \pi(u)^{*}$, for the principal anti-automorphism $\sigma(u) = u^{\star}$.</p>
+<p><em>Proof.</em> The infinitesimal condition is the differentiated form of the preservation of the inner product and it holds for all smooth vectors exactly when the group action is unitary, by the connectedness of the exponential image and the continuity; the equivalence with the star identity is that both are generated on the first order by $\pi(X)^{*} = -\pi(X)$, and the star of <em>The Involution on the Enveloping Algebra of a Lie Group</em> is the adjoint operation.</p>
+<h3 id="the-form-and-the-representation">The Form and the Representation</h3>
+<p><strong>Theorem.</strong> Let $H$ be an invariant Hermitian form on $\mathrm{G}$ with $H([X,Y],Z) + H(Y,[X,Z]) = 0$, and let $\pi$ be a star-representation by skew-adjoint operators. Then the sesquilinear form</p>
+<p>$$
+\langle v,w\rangle_\pi = \langle v,w\rangle
+$$</p>
+<p>is invariant under $\pi$, the operators $\pi_*(X)$ are skew-adjoint for it, and the derived representation is a representation by the skew-Hermitian operators attached to $H$; the representation is unitarisable exactly when the form it defines on the module is positive definite.</p>
+<p><em>Proof.</em> The invariance of $H$ gives the skew-Hermitian character of the operators $\operatorname{ad}_X$ of the algebra, and the star-representation transports it to the representation on the Hilbert space; the positivity of the invariant form is the passage from the algebraic to the Hilbert structure, and when it fails the representation is only pre-unitary. This is <em>Hermitian Forms on a Lie Algebra</em> read on the representation.</p>
+<h2 id="the-casimir-operator">The Casimir Operator</h2>
+<p><strong>Theorem.</strong> Let $\Omega = \sum_i X_iX^i$ be the Casimir element of a semisimple algebra, formed with a basis and the dual basis of the Killing form. In a unitary representation the operator</p>
+<p>$$
+\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)
+$$</p>
+<p>is self-adjoint on the smooth vectors and commutes with the representation; for a compact real form the operator $-\pi_*(\Omega) = \sum_i A_{X_i}A_{X^i}$ is positive, and on an irreducible summand the Casimir acts by the scalar $\langle\lambda,\lambda+2\varrho\rangle$.</p>
+<p><em>Proof.</em> The Casimir is a central Hermitian element, so its image is self-adjoint and commutes with the derived representation; the positivity is the sum of the squares of the self-adjoint generators $A_{X_i}$, and the scalar value is the eigenvalue formula of <em>The Casimir Operator of a Lie Group</em>.</p>
+<p><strong>Corollary.</strong> The self-adjoint operator $-\pi_*(\Omega)$ is the Laplace operator of the representation; it is essentially self-adjoint, its domain contains the Gårding domain, and its spectrum is bounded below when the representation is irreducible and has a lowest weight. The analytic vectors of the theorem of Nelson are exactly the vectors in the domain of all the powers of this operator.</p>
+<p><em>Proof.</em> The elliptic regularity of the Laplacian and the spectral theorem give the essential self-adjointness and the lower bound; the identification of the analytic vectors with the domain of the powers is the definition of the analytic vectors for the elliptic operator.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-vector-group">The Vector Group</h3>
+<p>For $G = \mathbb{R}$ with the representation $\pi(x) = e^{ixt}$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial_t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t v,w\rangle + \langle v, itw\rangle = 0$.</p>
+<h3 id="the-rotation-group">The Rotation Group</h3>
+<p>For $G = SU(2)$ with the spin $j$ representation, the derived operators of the basis $E,F,H$ are skew-adjoint, the self-adjoint generators satisfy $[A_E,A_F] = -iA_H$, and the Casimir $-\pi_*(\Omega)$ has the single eigenvalue $j(j+1)$ on the irreducible representation; the spectral decomposition is the standard one, and the analytic vectors are the whole space because the representation is finite dimensional.</p>
+<h3 id="the-real-rank-one-case">The Real Rank-One Case</h3>
+<p>For $G = SL_2(\mathbb{R})$ the discrete series representations have a lowest weight vector on which the Casimir acts by the quadratic invariant, and the self-adjoint generators of the compact subgroup have a discrete spectrum; the quadratic form $\langle v,w\rangle_\pi$ is definite for the square-integrable representations and indefinite for the complementary series, which is the criterion of unitarisability of <em>Unitary Representations of a Lie Group</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A unitary representation of $G$ is a representation by operators with $\pi(g)^{*} = \pi(g)^{-1}$, equivalently one preserving the inner product; its contragredient is the representation composed with the inversion, and Schur's lemma is the commutant statement. The derived representation on the smooth vectors is by <strong>skew-adjoint</strong> operators, $\pi_*(X)^{*} = -\pi_*(X)$, and the operators $A_X = i\pi_*(X)$ are the <strong>self-adjoint generators</strong>, the generators of the one-parameter unitary groups $\pi(\exp tX) = e^{-itA_X}$ by Stone's theorem, satisfying $[A_X,A_Y] = -iA_{[X,Y]}$. The unitarity is read infinitesimally as $\langle\pi(X)v,w\rangle + \langle v,\pi(X)w\rangle = 0$ on the smooth vectors, equivalently as the star identity $\pi(u^{\star}) = \pi(u)^{*}$ in the enveloping algebra, and an invariant Hermitian form on the Lie algebra is the algebraic datum that makes the operators skew-Hermitian, the unitarisability being the positive definiteness of the induced form on the module. The Casimir element has a self-adjoint image commuting with the representation, its negative $-\pi_*(\Omega)$ is the positive Laplace operator of the representation, and its eigenvalue on an irreducible summand is the quadratic invariant. The analytic vectors of Nelson are dense and the Gårding domain is dense and stable, so the algebraic relations of the generators determine the representation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^{*}$</td>
+<td>the adjoint of a bounded operator</td>
+</tr>
+<tr>
+<td>$\pi(g)^{*} = \pi(g)^{-1}$</td>
+<td>the unitarity of the representation</td>
+</tr>
+<tr>
+<td>$\pi_*(X)$</td>
+<td>the derived operator of $X$ on the smooth vectors</td>
+</tr>
+<tr>
+<td>$\pi_*(X)^{*} = -\pi_*(X)$</td>
+<td>skew-adjointness</td>
+</tr>
+<tr>
+<td>$A_X = i\pi_*(X)$</td>
+<td>the self-adjoint generator</td>
+</tr>
+<tr>
+<td>$[A_X,A_Y] = -iA_{[X,Y]}$</td>
+<td>the commutation relation of the generators</td>
+</tr>
+<tr>
+<td>$\pi(\exp tX) = e^{-itA_X}$</td>
+<td>Stone's theorem for the one-parameter group</td>
+</tr>
+<tr>
+<td>$\langle\pi(X)v,w\rangle + \langle v,\pi(X)w\rangle = 0$</td>
+<td>the infinitesimal unitarity condition</td>
+</tr>
+<tr>
+<td>$\pi(u^{\star}) = \pi(u)^{*}$</td>
+<td>the star-representation</td>
+</tr>
+<tr>
+<td>$-\pi_*(\Omega)$</td>
+<td>the positive Laplace operator of the representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the derived representation, the skew-adjoint generators and the Gårding domain.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for Stone's theorem, the self-adjoint generators and the analytic vectors of Nelson.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for the Casimir operator, its positivity and the lowest weight representations.</li>
+<li>Jacques Dixmier and Paul Malliavin, "Factorisations et vecteurs analytiques dans les représentations des groupes de Lie", <em>Bulletin de la Société Mathématique de France</em> <strong>106</strong> (1978), for the analytic vectors and the essential self-adjointness.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the infinitesimal unitarity condition and the invariant forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

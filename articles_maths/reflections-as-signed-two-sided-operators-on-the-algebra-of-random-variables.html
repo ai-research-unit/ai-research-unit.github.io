@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on the Algebra of Random Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-the-algebra-of-random-variables"><strong>Reflections as Signed Two-Sided Operators on the Algebra of Random Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of the algebra of random variables is the inner conjugation by a unit with the grade involution inserted in the middle, $r_u(x)=u\,\alpha(x)\,u^{-1}$, the two-sided operator obtained by conjugating the grade involution by $u$. Over a noncommutative algebra the reflections form a group that carries the conjugacy of the units, and the correspondence between a unit and the reflection it defines is the interesting part of the theory. Over the algebra of random variables the product is commutative, so $u\,\alpha(x)\,u^{-1}=\alpha(x)$ for every unit, and the whole family collapses onto the single map $\alpha$; the correspondence between a unit and an involution becomes the constant map with the unit group as its domain, and its failure is total rather than partial. This article states the collapse, records the properties of the surviving operator $\alpha$ — it is the involutive, unitary, self-adjoint automorphism that defines the grading — and identifies the involutive signed two-sided operators that remain.</p>
+<p>The operator conventions are those fixed in <em>The Signed Sandwich on the Algebra of Random Variables</em>, the preceding article: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(x)=\bar x$, the state $\varphi(x)=\mathbb E[x]$, the form of the category $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$, and the twisted involution $\delta=\sigma\alpha$. The noncommutative theory of the reflections, where the correspondence is injective up to the central units, is <em>Reflections as Signed Two-Sided Operators on a Ring</em>, in Part I; the arithmetic counterpart, in which the convolution leaves the collapse as total as here, is <em>Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions</em>, written. The involution on the elements is <em>The Involution on the Algebra of Random Variables</em>, later in this category, and the signed left multiplication whose involutions are computed here is <em>The Signed Left Multiplication on the Algebra of Random Variables</em>, later in this category. No physics is invoked.</p>
+<p>Throughout, $\mathcal{A}$ is the algebra of random variables as fixed in the preceding article, $\mathcal{A}^\times$ is its group of units, the units being the bounded random variables bounded away from zero, and $\alpha$ is the grade involution. The grading is $\mathcal{A}=\mathcal{A}_{\bar0}\oplus\mathcal{A}_{\bar1}$, the inner conjugation by $u$ is $\operatorname{conj}_u(x)=uxu^{-1}$, and the signed left multiplication is $S^\alpha_c=L_c\alpha$.</p>
+<h2 id="the-reflection-of-a-unit">The Reflection of a Unit</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $u\in\mathcal{A}^\times$ the <strong>reflection</strong> is the signed two-sided operator
+$$
+r_u:\mathcal{A}\to\mathcal{A},\qquad r_u(x)=u\,\alpha(x)\,u^{-1},
+$$
+where $u^{-1}$ is the pointwise reciprocal of the unit.</p>
+<h3 id="the-collapse">The collapse</h3>
+<p><strong>Theorem.</strong> For every unit $u$,
+$$
+r_u=\alpha .
+$$
+Consequently the reflection is independent of the unit, the map $u\mapsto r_u$ is constant on $\mathcal{A}^\times$, and the inner conjugation
+$$
+\operatorname{conj}_u(x)=u\,x\,u^{-1}=x
+$$
+is the identity for every unit: the group of inner automorphisms of the graded algebra is trivial. The two operators commute, $\operatorname{conj}_u\circ\alpha=\alpha\circ\operatorname{conj}_u=\alpha$.</p>
+<p><em>Proof.</em> The product is commutative, so $u\,\alpha(x)\,u^{-1}=\alpha(x)\,u\,u^{-1}=\alpha(x)$; the inner conjugation collapses for the same reason, $uxu^{-1}=xuu^{-1}=x$. The commutation with $\alpha$ is immediate from $\operatorname{conj}_u=\mathrm{id}$.</p>
+<h3 id="properties-of-the-reflection">Properties of the reflection</h3>
+<p><strong>Theorem.</strong> The operator $\alpha$ is an involutive, unitary, self-adjoint algebra automorphism of $\mathcal{A}$:
+$$
+\alpha^2=\mathrm{id},\qquad \alpha(xy)=\alpha(x)\alpha(y),\qquad \alpha(1)=1,\qquad \alpha^*=\alpha,\qquad \alpha^*\alpha=\alpha\alpha^*=\mathrm{id},
+$$
+it commutes with the conjugation, $\alpha\sigma=\sigma\alpha$, it reverses the grading, $\alpha(\mathcal{A}_{\bar i})=\mathcal{A}_{\bar{1-i}}$, and it is self-adjoint for the form of the category. Its fixed algebra is the even part, $\mathcal{A}^\alpha=\mathcal{A}_{\bar0}$, and its $(-1)$-eigenspace is the odd part, $\mathcal{A}_{\bar1}$.</p>
+<p><em>Proof.</em> The involution, the multiplicativity and the unitality are the definition of a grade involution; the unitarity is $\alpha^*\alpha=\alpha^2=\mathrm{id}$; the self-adjointness is the change of variables $\langle\alpha x,y\rangle=\mathbb E[(x\circ\varphi_0)\bar y]=\mathbb E[x(\bar y\circ\varphi_0)]=\langle x,\alpha y\rangle$ under the measure-preserving $\varphi_0$; the eigenspace description is the definition of the grading, and the fixed algebra is an algebra because an automorphism preserves the product.</p>
+<h2 id="the-correspondence-with-the-involutions">The Correspondence with the Involutions</h2>
+<h3 id="the-involutive-signed-sandwiches">The involutive signed sandwiches</h3>
+<p><strong>Theorem.</strong> Write $S^\alpha_c=L_c\alpha$, the signed left multiplication by $c$, so that $L_c\alpha=\alpha L_{\alpha(c)}$. Then $S^\alpha_c$ is an involution if and only if
+$$
+c\,\alpha(c)=1 ,
+$$
+and the involutive signed sandwiches are exactly the maps $S^\alpha_c$ with $c$ a unit of $\mathcal{A}$ satisfying this equation. Each such $S^\alpha_c$ is unitary exactly when also $|c|=1$.</p>
+<p><em>Proof.</em> $\bigl(S^\alpha_c\bigr)^2=L_c\alpha L_c\alpha=L_cL_{\alpha(c)}=L_{c\alpha(c)}$, which is the identity exactly when $c\alpha(c)=1$; the unitarity is the condition $|c|=1$ of the preceding article.</p>
+<p><strong>Corollary (the correspondence).</strong> The <strong>reflection</strong> $r_u$ corresponds to the unit $u$ through the composite of the inner conjugation and the grade involution, $\alpha\circ\operatorname{conj}_u$, but the correspondence is not injective: the fibre of the map $u\mapsto r_u$ is the whole unit group $\mathcal{A}^\times$ and its image is the single element $\alpha$. Equivalently the reflections are the operators $r_u=u\alpha(\cdot)u^{-1}$ with $u$ a unit, and all of them are $\alpha$.</p>
+<p><em>Proof.</em> The first statement is the definition of the reflection, $r_u=\alpha\operatorname{conj}_u$; the collapse makes the composite $\alpha$ for every $u$, giving the fibre and the image.</p>
+<h3 id="the-comparison-with-the-noncommutative-theory">The comparison with the noncommutative theory</h3>
+<p><strong>Remark.</strong> In the noncommutative ring of <em>Reflections as Signed Two-Sided Operators on a Ring</em>, in Part I, the map $u\mapsto r_u$ has the whole unit group as its domain and its fibres are the cosets of the central units, the reflection group is a genuine quotient, and the correspondence with the involutions carries information. The commutativity of $\mathcal{A}$ destroys this information completely: the unit group is as large as possible, the inner automorphism group is trivial, and the image is a single point.</p>
+<h2 id="the-degenerate-failure">The Degenerate Failure</h2>
+<p><strong>Theorem (failure in the commutative case).</strong> Over the commutative algebra $\mathcal{A}$ the following hold. The signed inner automorphism group is trivial, since $\operatorname{conj}_u=\mathrm{id}$ for every unit. The reflection group is generated by $\alpha$ and is $\mathbb{Z}/2\mathbb{Z}$. The correspondence between the elements acting by an involution and the involutions is many-to-one without exception, and it carries the whole unit group to one map. No two-sided operator of the form $x\mapsto u\,\alpha(x)\,u^{-1}$ distinguishes the units. The involutive signed sandwiches, by contrast, are the $S^\alpha_c$ with $c\,\alpha(c)=1$, a family large enough to be parametrised by the $\alpha$-cocycles of $\mathcal{A}^\times$, and this family, not the reflections, is where the involutions of the signed theory live.</p>
+<p><em>Proof.</em> Every assertion about the reflections is the computation $u\alpha(x)u^{-1}=\alpha(x)$; the inner automorphism group is trivial because $uxu^{-1}=x$. The description of the involutions is the theorem above: $(S^\alpha_c)^2=L_{c\alpha(c)}$, and the equation $c\alpha(c)=1$ defines the $\alpha$-cocycles, the units $c$ whose $\alpha$-norm is the identity. The contrast is the reason the two notions, reflection and involutive signed two-sided operator, must be kept apart in the commutative case.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the swap on two atoms).</strong> Let $\Omega=\{\omega_-,\omega_+\}$ with $\mathbb P(\omega_\pm)=\frac12$ and let $\varphi_0$ interchange the points, so that $\alpha(x_-,x_+)=(x_+,x_-)$ and the unit group is $\{(u_-,u_+):u_\pm\ne0\}$. The reflection of the unit $u$ is $(x_-,x_+)\mapsto(u_+x_+u_+^{-1},u_-x_-u_-^{-1})=(x_+,x_-)=\alpha(x)$, for every unit. The involutive signed sandwiches are the $S^\alpha_c$ with $c_+c_-=1$, that is $c=(c_-,1/c_-)$, a two-parameter family of order-two maps.</p>
+<p><strong>Example (the reflection of the circle).</strong> Let $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\varphi_0(\theta)=-\theta$; the group of units contains every nonvanishing continuous function, and each one defines the same reflection $\alpha$. The operator $\alpha$ fixes the cosines and negates the sines, and its fixed algebra is the algebra of the even functions.</p>
+<p><strong>Example (the trivial grading).</strong> For $\alpha=\mathrm{id}$ the reflection is the identity, the unit group acts trivially and the signed theory reduces to the theory of the invertible elements; this is the boundary of the family at which every reflection is the identity.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The reflection degenerates in four configurations. First, the reflection is independent of the unit, so the notion of a reflection carries no information about the element that defines it; the striking contrast is with the noncommutative case, where the reflection group is the quotient of the unit group by the central units. Second, the fixed algebra of the reflection is the even part of the grading and can be as large as the whole algebra when $\alpha=\mathrm{id}$, in which case the reflection is the identity and the grading is trivial. Third, the involutive signed sandwiches need not be reflections: the equation $c\alpha(c)=1$ has the large solution set of the $\alpha$-cocycles, and the only one of these that is a reflection is $c=1$ giving $\alpha$ itself; the two notions separate. Fourth, when the algebra is reduced to a single point, $\mathcal{A}=\mathbb{C}$, the grade involution is the identity, the unit group is $\mathbb{C}^\times$, and every construction collapses to the scalars; the degenerate case is total and is the reason the noncommutative theory is the informative one.</p>
+<h2 id="summary">Summary</h2>
+<p>The reflection of a unit $u$ of the algebra of random variables is the signed two-sided operator $r_u(x)=u\,\alpha(x)\,u^{-1}$, and over the commutative algebra it collapses to the grade involution, $r_u=\alpha$ for every unit; the inner conjugation is the identity and the group of inner automorphisms is trivial. The surviving operator $\alpha$ is the involutive, unitary, self-adjoint automorphism that defines the grading, with fixed algebra the even part and $(-1)$-eigenspace the odd part, and it commutes with the conjugation. The correspondence between a unit and the reflection it defines is the constant map on the unit group, its failure total; the involutions of the signed theory are not the reflections but the signed left multiplications $S^\alpha_c$ with $c\,\alpha(c)=1$, the $\alpha$-cocycles, among which the reflections supply only $\alpha$. The conventions are those of <em>The Signed Sandwich on the Algebra of Random Variables</em>, the preceding article; the noncommutative theory is <em>Reflections as Signed Two-Sided Operators on a Ring</em>, in Part I; and the signed left multiplication is the next article of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A}^\times$</td>
+<td>the units, the bounded random variables bounded away from zero</td>
+</tr>
+<tr>
+<td>$r_u(x)=u\,\alpha(x)\,u^{-1}$</td>
+<td>the reflection of the unit $u$</td>
+</tr>
+<tr>
+<td>$r_u=\alpha$</td>
+<td>the collapse in the commutative algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{conj}_u=\mathrm{id}$</td>
+<td>the triviality of the inner automorphisms</td>
+</tr>
+<tr>
+<td>$\alpha^2=\mathrm{id}$, $\alpha^*=\alpha$</td>
+<td>the properties of the grade involution</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^\alpha=\mathcal{A}_{\bar0}$</td>
+<td>fixed algebra of the reflection, the even part</td>
+</tr>
+<tr>
+<td>$S^\alpha_c=L_c\alpha$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$c\,\alpha(c)=1$</td>
+<td>the involutive signed sandwiches, the $\alpha$-cocycles</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, Vol. I (Academic Press, 1983), for the automorphism groups of a commutative involutive algebra.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the inner automorphisms, the conjugacy and the modular automorphism group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the involutions of an algebra with involution and their conjugacy classes.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the conjugation by units, the central units and the reflection groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

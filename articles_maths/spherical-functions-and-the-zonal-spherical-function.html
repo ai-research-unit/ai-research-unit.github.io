@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spherical Functions and the Zonal Spherical Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spherical-functions-and-the-zonal-spherical-function"><strong>Spherical Functions and the Zonal Spherical Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>When a compact group acts on a group and the algebra of the invariant functions happens to be commutative, the harmonic analysis of the pair collapses to a theory of functions of one variable: the characters of that commutative algebra are the spherical functions, and the one attached to an irreducible representation with an invariant vector is the zonal spherical function, the matrix coefficient of that vector. The decomposition of the invariant $L^2$ space becomes a decomposition in a single spectral parameter, and the transform is an ordinary Gelfand transform of a commutative Banach algebra. This article fixes the Gelfand pair, defines the spherical and the zonal spherical functions, proves the correspondence between them, and states the decomposition and the spherical transform with its involution.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its involution and its convolution from <em>The Convolution Algebra $L^1(G)$</em>; the involution, the positive cone and the positive functionals from <em>The Group Algebra as an Involutive Algebra</em>; the positive definite functions and the GNS construction from <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>, immediately preceding; the Haar measure on a compact group, the characters, the orthogonality relations and the duality from <em>Analysis on Compact Groups</em> and <em>The Peter–Weyl Theorem</em>; the irreducible unitary representations, the unitary dual and the multiplicity theory from <em>Noncommutative Harmonic Analysis</em>; the commutative Banach algebras, their characters and the Gelfand transform from <em>Operator Algebras</em>, and the abstract Gelfand theory from <em>Commutative Banach Algebras</em>; and the bounded operators and the <code>*</code>-representations from <em>Operator Algebras</em>. The Plancherel measure on the spherical dual is <em>Unitary Representations and the Plancherel Theorem</em>, below; the induced representations and the Mackey theory are <em>Induced Representations of Locally Compact Groups</em> and <em>Mackey Theory</em>, which are not used; the Hermitian forms attached to the unitary representations are <em>Hermitian Forms and the Group Algebra</em>, later in this group.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and modular function $\Delta$, and $K\leq G$ is a compact subgroup with normalised Haar measure $dk$, $\int_K dk = 1$. A function on $G$ is <strong>bi-$K$-invariant</strong> when $f(k_1xk_2) = f(x)$ for all $k_1,k_2\in K$; the space of bi-$K$-invariant elements of $L^1(G)$ is written $L^1(K\backslash G/K)$, and it is a closed subalgebra of $L^1(G)$ for convolution. The pair $(G,K)$ is a <strong>Gelfand pair</strong> when this subalgebra is commutative. A <strong>spherical function</strong> is a continuous bi-$K$-invariant function $\omega\ne0$ with</p>
+<p>$$
+\int_K \omega(xky)\,dk = \omega(x)\,\omega(y) \qquad (x,y\in G) ;
+$$</p>
+<p>the <strong>spherical dual</strong> $\operatorname{Irr}(G,K)$ is the set of irreducible unitary representations $\pi$ of $G$ with $\mathcal{H}_\pi^K\ne0$.</p>
+<h2 id="the-invariant-algebra">The Invariant Algebra</h2>
+<p><strong>Proposition (the subalgebra).</strong> The space $L^1(K\backslash G/K)$ of bi-$K$-invariant elements of $L^1(G)$ is a closed subalgebra of $L^1(G)$ under convolution, and it contains a normalised approximate identity consisting of bi-$K$-invariant functions.</p>
+<p><strong>Proof.</strong> Bi-invariance is preserved by convolution because $K$ is a subgroup and $dk$ is invariant: if $f,h$ are bi-$K$-invariant then $(f*h)(k_1xk_2) = (f*h)(x)$, which is checked by translating the integration variable. Closedness is the closedness of the fixed-point subspace of the compact group $K\times K$ acting continuously by isometries on $L^1(G)$; the approximate identity is found by averaging any approximate identity over $K\times K$, the average again being normalised. $\square$</p>
+<p><strong>Theorem (the Gelfand-pair criterion).</strong> The following are equivalent: (i) $L^1(K\backslash G/K)$ is commutative; (ii) $C_c(K\backslash G/K)$ is commutative; (iii) the algebra $L^1(K\backslash G/K)$ is a commutative Banach <code>*</code>-algebra, so that its Gelfand transform is a <code>*</code>-homomorphism with dense image in $C_0$ of its spectrum. The condition is the definition of a Gelfand pair, and when it holds the Gelfand theory of a commutative Banach <code>*</code>-algebra applies to the invariant algebra.</p>
+<p><strong>Proof.</strong> The equivalence of (i) and (ii) is the density of $C_c$ in $L^1$ together with the continuity of the product; that (i) implies (iii) is the general theorem that a commutative Banach <code>*</code>-algebra with isometric involution is symmetric and has a <code>*</code>-preserving Gelfand transform, so that every character is Hermitian. The details are in the references. $\square$</p>
+<p><strong>Remark (why commutativity is the whole content).</strong> Once the invariant algebra is commutative, its Gelfand theory applies: the characters are multiplicative functionals, the Gelfand transform is a <code>*</code>-homomorphism, and the spectral decomposition is a measure on the spectrum. The Gelfand pair condition is exactly what makes the invariant algebra commutative, and it is the hypothesis of everything below.</p>
+<h2 id="spherical-functions">Spherical Functions</h2>
+<p><strong>Theorem (the spherical-function identities).</strong> Let $\omega$ be a spherical function. Then</p>
+<p>$$
+\omega(e) = 1, \qquad \omega(x^{-1}) = \overline{\omega(x)}, \qquad |\omega(x)|\leq1,
+$$</p>
+<p>and $\omega$ is positive definite; conversely a normalised positive definite bi-$K$-invariant function satisfying the integral equation is spherical.</p>
+<p><strong>Proof.</strong> Setting $x = y = e$ in the integral equation and using $\omega\ne0$ gives $\omega(e) = \omega(e)^2$, so $\omega(e) = 1$ or $\omega(e) = 0$; the second forces $\omega\equiv0$ by the equation, so $\omega(e) = 1$. Positivity is Godement's theorem that a spherical function is a matrix coefficient of a spherical representation, quoted from the references; the Hermitian property $\omega(x^{-1}) = \overline{\omega(x)}$ and the bound $|\omega(x)|\leq1$ are then the elementary properties of a positive definite function, established in <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>. $\square$</p>
+<p><strong>Theorem (spherical functions are the characters of the invariant algebra).</strong> The assignment</p>
+<p>$$
+\omega \longmapsto \chi_\omega, \qquad \chi_\omega(f) = \int_G f(x)\,\omega(x)\,dx ,
+$$</p>
+<p>is a bijection between the bounded spherical functions and the characters of the commutative Banach algebra $L^1(K\backslash G/K)$; the bounded spherical functions are exactly the positive definite ones, and they form a locally compact space, the <strong>spherical spectrum</strong> $\Sigma(G,K)$, in the weak-<code>*</code> topology.</p>
+<p><strong>Proof.</strong> A character $\chi$ of the invariant algebra satisfies the functional equation $\chi(f*g) = \chi(f)\chi(g)$; representing it by a bounded measurable $\omega$ through the Riesz theorem and using the invariance, one recovers the integral equation, so $\chi$ is the functional of a bounded spherical function. Conversely the integral equation makes $\chi_\omega$ multiplicative. Positivity and boundedness are equivalent for a spherical function by the theorem above, and the topology is the weak-<code>*</code> topology of the unit ball of $L^\infty(G)$, compact by Banach–Alaoglu and locally compact after the removal of the zero functional. $\square$</p>
+<h2 id="the-zonal-spherical-function">The Zonal Spherical Function</h2>
+<p><strong>Definition.</strong> Let $\pi\in\operatorname{Irr}(G,K)$ and let $\xi\in\mathcal{H}_\pi^K$ be a unit $K$-fixed vector. The <strong>zonal spherical function</strong> of $\pi$ is</p>
+<p>$$
+\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle .
+$$</p>
+<p>It is bi-$K$-invariant, because both the vector and the inner product are $K$-invariant, and it is normalised, $\omega_\pi(e) = 1$.</p>
+<p><strong>Theorem (the zonal spherical function is spherical).</strong> For $\pi\in\operatorname{Irr}(G,K)$ and a $K$-fixed unit vector $\xi$, the zonal spherical function satisfies the integral equation</p>
+<p>$$
+\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y),
+$$</p>
+<p>and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\xi)$ is determined by $\omega_\pi$ up to unitary equivalence.</p>
+<p><strong>Proof.</strong> The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\xi$ onto $\mathbb{C}\xi$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\xi$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\xi,\xi\rangle dk = \langle\pi(x)P_\xi\pi(y)\xi,\xi\rangle$, and $\pi(y)\xi = \omega_\pi(y)\xi + $ (a vector orthogonal to $\xi$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>, and the recovery is the GNS correspondence there. $\square$</p>
+<p><strong>Corollary (the correspondence).</strong> The map $\pi\mapsto\omega_\pi$ is a bijection from the spherical dual onto the positive definite spherical functions; through the identification with the characters it is the identification of the spherical dual with the spherical spectrum, $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$.</p>
+<p><strong>Proof.</strong> Injectivity: $\omega_\pi$ determines $\pi$ by the theorem. Surjectivity: given a positive definite spherical $\omega$, its GNS representation has a $K$-fixed cyclic vector, the integral equation forces the representation to be irreducible and spherical, and the cyclic vector is $K$-fixed; the recovery of $\omega$ is the matrix coefficient. The identification with the spectrum is the previous theorem. $\square$</p>
+<h2 id="the-decomposition-and-the-spherical-transform">The Decomposition and the Spherical Transform</h2>
+<p><strong>Definition.</strong> The <strong>spherical transform</strong> of $f\in L^1(K\backslash G/K)$ is the function on the spherical spectrum</p>
+<p>$$
+\hat f(\omega) = \int_G f(x)\,\omega(x)\,dx = \chi_\omega(f),
+$$</p>
+<p>which is the Gelfand transform of the commutative Banach algebra $L^1(K\backslash G/K)$.</p>
+<p><strong>Theorem (the transform is a <code>*</code>-homomorphism).</strong> The spherical transform satisfies</p>
+<p>$$
+\widehat{f*h}(\omega) = \hat f(\omega)\,\hat h(\omega), \qquad \widehat{f^*}(\omega) = \overline{\hat f(\omega)} ,
+$$</p>
+<p>and it is injective with dense image in $C_0(\Sigma(G,K))$; the spherical functions are the evaluations at the points of the spectrum.</p>
+<p><strong>Proof.</strong> The multiplicativity is the multiplicativity of the Gelfand transform; the involution identity uses that every character of a commutative Banach <code>*</code>-algebra with isometric involution is Hermitian, which is condition (ii) of the Gelfand-pair criterion. Injectivity is semisimplicity and density is the Gelfand–Naimark theorem for commutative Banach <code>*</code>-algebras. $\square$</p>
+<p><strong>Theorem (decomposition of the invariant $L^2$ space).</strong> On the invariant Hilbert space $L^2(K\backslash G/K)$ the representation of $G$ by left translation decomposes as a direct integral of the spherical representations over the spherical spectrum,</p>
+<p>$$
+L^2(K\backslash G/K) \;\cong\; \int_{\Sigma(G,K)}^{\oplus} \mathcal{H}_{\pi_\omega}\,\mu(\omega) ,
+$$</p>
+<p>with multiplicity one at each point, where $\mu$ is the <strong>spherical Plancherel measure</strong>; the subspace of $K$-fixed vectors is $L^2(\Sigma(G,K),\mu)$ and the spherical transform is the unitary equivalence onto it, with</p>
+<p>$$
+\int_G |f(x)|^2\,dx = \int_{\Sigma(G,K)} |\hat f(\omega)|^2\,d\mu(\omega) .
+$$</p>
+<p><strong>Proof.</strong> For a Gelfand pair with $G$ of type I the left regular representation restricted to the invariant vectors is multiplicity-free, and the decomposition is the spectral decomposition of the commutative algebra acting on the invariant space; the plancherel identity is the statement that the Gelfand transform extends to a unitary from the invariant $L^2$ to the $L^2$ of the spectral measure, which is the general Plancherel theorem of <em>The Plancherel Theorem</em> specialised to the multiplicity-free part. $\square$</p>
+<p><strong>Example (the symmetric pairs and the Gegenbauer case).</strong> Let $K$ be the fixed subgroup of an involutive automorphism of $G$, so that $(G,K)$ is a symmetric pair and a Gelfand pair; then the spherical dual is the set of irreducible representations with a $K$-fixed vector, the zonal spherical functions are the matrix coefficients of those vectors, $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and the spherical Plancherel measure is a measure on the spherical dual. For $G = SO(n+1)$ and $K = SO(n)$ the spherical functions are the Gegenbauer functions, but their explicit form is not needed here; the structure above is the content, and the explicit computation is the subject of the literature.</p>
+<p><strong>Remark (what the article does not do).</strong> The article has used the Gelfand theory of a commutative Banach algebra, cited from <em>Commutative Banach Algebras</em> and <em>Operator Algebras</em>, and the Plancherel theorem, cited from <em>The Plancherel Theorem</em>; the spherical Plancherel measure is computed in <em>Unitary Representations and the Plancherel Theorem</em>, below. The induced representations that produce the spherical representations are <em>Induced Representations of Locally Compact Groups</em>, not used here; the Hermitian forms and the positive functionals behind the correspondence are <em>Hermitian Forms and the Group Algebra</em>, later in this group; no adjoint is taken.</p>
+<h2 id="summary">Summary</h2>
+<p>For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions form a closed subalgebra $L^1(K\backslash G/K)$ of the group algebra, and $(G,K)$ is a <strong>Gelfand pair</strong> exactly when it is commutative; a spherical function is a continuous bi-$K$-invariant $\omega\ne0$ with $\int_K\omega(xky)dk = \omega(x)\omega(y)$, and then $\omega(e)=1$, $\omega(x^{-1})=\overline{\omega(x)}$, $|\omega|\leq1$, and $\omega$ is positive definite. The bounded spherical functions are exactly the characters of the invariant algebra, $\chi_\omega(f) = \int f\omega$, and they form the spherical spectrum $\Sigma(G,K)$; the zonal spherical function $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ of a spherical representation $\pi\in\operatorname{Irr}(G,K)$ with unit $K$-fixed vector $\xi$ is spherical, the map $\pi\mapsto\omega_\pi$ is a bijection $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and $\pi$ is recovered from $\omega_\pi$ by the GNS construction. The spherical transform $f\mapsto\hat f(\omega) = \int f\omega$ is the Gelfand transform of the invariant algebra, multiplicative with $\widehat{f^*} = \overline{\hat f}$, and the invariant $L^2$ space decomposes with multiplicity one as a direct integral of the spherical representations against the spherical Plancherel measure, with the plancherel identity $\int|f|^2 = \int|\hat f|^2d\mu$. The adjoint, the measure on the spherical dual and the Hermitian forms are the neighbouring articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$, $dk$</td>
+<td>Compact subgroup and its normalised Haar measure, $\int_Kdk=1$</td>
+</tr>
+<tr>
+<td>$L^1(K\backslash G/K)$</td>
+<td>Closed subalgebra of bi-$K$-invariant integrable functions</td>
+</tr>
+<tr>
+<td>Gelfand pair</td>
+<td>The commutativity of $L^1(K\backslash G/K)$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Spherical function, $\int_K\omega(xky)dk = \omega(x)\omega(y)$</td>
+</tr>
+<tr>
+<td>$\Sigma(G,K)$</td>
+<td>Spherical spectrum, the characters of the invariant algebra</td>
+</tr>
+<tr>
+<td>$\chi_\omega(f) = \int_G f\omega\,dx$</td>
+<td>The character attached to a bounded spherical function</td>
+</tr>
+<tr>
+<td>$\operatorname{Irr}(G,K)$</td>
+<td>The spherical dual, irreducible $\pi$ with $\mathcal{H}_\pi^K\ne0$</td>
+</tr>
+<tr>
+<td>$\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$</td>
+<td>The zonal spherical function</td>
+</tr>
+<tr>
+<td>$\operatorname{Irr}(G,K)\cong\Sigma(G,K)$</td>
+<td>The correspondence $\pi\mapsto\omega_\pi$</td>
+</tr>
+<tr>
+<td>$\hat f(\omega) = \int_G f\omega\,dx$</td>
+<td>The spherical transform (a Gelfand transform)</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Spherical Plancherel measure on $\Sigma(G,K)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (American Mathematical Society, 2000), for spherical functions, the spherical transform and the zonal spherical functions of a symmetric pair.</li>
+<li>Garth Warner, <em>Harmonic Analysis on Semi-Simple Lie Groups I</em> (Springer, 1972), for the spherical functions, the spherical spectrum and multiplicity-one decompositions.</li>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the Gelfand theory of a commutative Banach <code>*</code>-algebra and the characters.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis II</em> (Springer, 1970), for the Gelfand pairs of a locally compact group and the commutativity of the invariant algebra.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (American Mathematical Society, sixth edition, 2011), for the classification of the symmetric pairs and the spherical functions of the rank-one quotients, which are computed there and not here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

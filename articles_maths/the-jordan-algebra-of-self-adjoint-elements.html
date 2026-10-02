@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Jordan Algebra of Self-Adjoint Elements — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-jordan-algebra-of-self-adjoint-elements"><strong>The Jordan Algebra of Self-Adjoint Elements</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>self-adjoint</strong> (Hermitian) elements of an ordered involutive algebra form a real vector space $H(A)$ on which the associative product is not commutative and not closed, but the <strong>symmetrised product</strong></p>
+<p>$$
+\{h,k\} = \tfrac12(hk + kh)
+$$</p>
+<p>is commutative and does close; with this product $H(A)$ is a <strong>Jordan algebra</strong>, the Jordan algebra of the self-adjoint elements of $A$. Its <strong>positive cone</strong> is $H(A)\cap A_+$, the set of the self-adjoint elements that are sums of squares, and its <strong>order</strong>, the <strong>Jordan order</strong>, is $h\leq k\iff\{k - h,\ \cdot\ \}\geq0$ for the multiplication operators; the purpose of the article is to show that this order is the order of the involutive algebra and that the symmetrised product is the unique product on the Hermitian part compatible with both the order and the associative product.</p>
+<p>The Jordan algebra of the self-adjoint elements is the model of the <strong>JB-algebras</strong>: it satisfies the axioms $\lVert h^{2}\rVert = \lVert h\rVert^{2}$ and the formal reality, its order unit is the identity, its multiplication operators $L_h : k\mapsto\{h,k\}$ are self-adjoint for the trace form, and the Gelfand–Naimark theorem represents it as a Jordan algebra of operators. It is also the structure in which the <strong>spectral theorem</strong> is best stated: the <strong>spectral resolution</strong> of a self-adjoint element is the simultaneous diagonalisation of the commuting Jordan algebra it generates, and the order interval $[0,1]$ is the set of the <strong>effects</strong> of the quantum-mechanical reading.</p>
+<p>The Jordan structure with its cone is <em>Jordan Algebras and the Positive Cone</em>; the JB-algebras and the Gelfand–Naimark theorem are <em>JB*-Algebras and the Gelfand–Naimark Theorem</em>; the Hermitian elements, the order unit and the Jordan decomposition are <em>Hermitian Elements and the Order Unit</em>; the symmetrised product and the Jordan order of the involutive algebra are <em>The Positive Cone of an Involutive Algebra</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; and the positive definite forms are <em>Positive Definite Forms and the Order</em>.</p>
+<h2 id="the-self-adjoint-part-is-a-jordan-algebra">The Self-Adjoint Part is a Jordan Algebra</h2>
+<p><strong>Definition.</strong> The <strong>self-adjoint part</strong> of the involutive algebra is $H(A) = \{a : a^{*} = a\}$ with the <strong>symmetrised product</strong> $\{h,k\} = \frac12(hk + kh)$ and the square $h^{2} = \{h,h\}$.</p>
+<p><strong>Theorem (the Jordan axioms).</strong> $H(A)$ is a real Jordan algebra: the symmetrised product is commutative and bilinear, and it satisfies the <strong>Jordan identity</strong></p>
+<p>$$
+\{\{h^{2},k\},h\} = \{h^{2},\{k,h\}\} ;
+$$</p>
+<p>moreover $\{h,k\}$ is self-adjoint for self-adjoint $h,k$, and the unit $1$ is the identity of the Jordan algebra.</p>
+<p><em>Proof.</em> The commutativity and the bilinearity are immediate. The Jordan identity is the associativity of the associative product after symmetrisation: expanding both sides in terms of the associated products gives $hh\,kh + kh\,hh$ on each side, using the commutativity of the symmetrisation. The self-adjointness is $(hk + kh)^{*} = k^{*}h^{*} + h^{*}k^{*} = kh + hk$ by the anti-multiplicativity.</p>
+<p><strong>Proposition (the cone and the squares).</strong> The positive cone of the Jordan algebra is</p>
+<p>$$
+J_+ = H(A)\cap A_+ = \Bigl\{\sum_{i} h_i^{2} : h_i\in H(A)\Bigr\} ,
+$$</p>
+<p>the set of the sums of squares of the self-adjoint elements; it contains $1 = 1^{2}$, it is closed under addition and nonnegative scaling, and it is pointed when $A$ is reduced.</p>
+<p><em>Proof.</em> An element of $H(A)\cap A_+$ is a sum $\sum_i a_i^{*}a_i$ of generators. Each generator $a_i^{*}a_i$ is self-adjoint and positive, and by the spectral resolution it is a sum of squares of self-adjoint elements: if $a_i^{*}a_i = \sum_j\lambda_j p_j$ with $\lambda_j\geq0$, then $a_i^{*}a_i = \sum_j(\sqrt{\lambda_j}\,p_j)^{2}$. Hence every element of $H(A)\cap A_+$ is a sum of squares of self-adjoint elements. Conversely a square $h^{2} = h^{*}h$ lies in $A_+$ and is self-adjoint, so the reverse inclusion holds and the two cones agree. The pointedness is the reducedness of $A$.</p>
+<p><strong>Definition.</strong> The <strong>Jordan order</strong> of $H(A)$ is</p>
+<p>$$
+h\leq k \iff k - h = \sum_{i} h_i^{2} \ \text{ for some } h_i\in H(A) ,
+$$</p>
+<p>equivalently $h\leq k\iff k - h\in A_+$.</p>
+<h2 id="the-symmetrised-product-and-the-order">The Symmetrised Product and the Order</h2>
+<p><strong>Proposition (the order-preserving product).</strong> The symmetrised product is <strong>positive</strong>: if $h\geq0$ and $k\geq0$ then $\{h,k\}\geq0$; and it is compatible with the order in the sense that $\{h,\cdot\}$ is an order-preserving operator for $h\geq0$,</p>
+<p>$$
+k\geq0 \implies \{h,k\}\geq0 .
+$$</p>
+<p><em>Proof.</em> The positivity of the symmetrised product is the theorem of <em>The Positive Cone of an Involutive Algebra</em>; the operator formulation is the same statement read for the multiplication operator.</p>
+<p><strong>Definition.</strong> The <strong>multiplication operator</strong> of the Jordan algebra is</p>
+<p>$$
+L_h : H(A)\to H(A), \qquad L_h k = \{h,k\} .
+$$</p>
+<p><strong>Proposition (the multiplication operators).</strong> The assignment $h\mapsto L_h$ is linear, and the <strong>Jordan identity is equivalent</strong> to the commuting relation</p>
+<p>$$
+[L_{h^{2}},L_h] = 0 \quad \text{for every } h ,
+$$</p>
+<p>that is, the multiplication operator of $h^{2}$ commutes with that of $h$; the operator $L_h$ is self-adjoint for the trace form $\langle h,k\rangle = \operatorname{tr}(hk)$ when $A$ carries a faithful trace; and $L_h\geq0$ if and only if $h\geq0$.</p>
+<p><em>Proof.</em> The linearity is immediate. The equivalence of the Jordan identity with $[L_{h^2},L_h]=0$ is the standard operator form of the identity: $(h^{2}k)h = h^{2}(kh)$ in the symmetrised product is exactly $L_{h^{2}}L_h = L_hL_{h^{2}}$. The self-adjointness is the symmetry of the trace, $\operatorname{tr}(h\{k,l\}) = \operatorname{tr}(\{h,k\}l)$, which is the invariance of the trace form; the positivity criterion is the positivity of the symmetrised product.</p>
+<p><strong>Proposition (uniqueness of the product).</strong> The symmetrised product is the unique bilinear product on $H(A)$ that is commutative, has $\{h,h\} = h^{2}$ for every $h$, and is compatible with the associative product in the sense that the operators $L_h$ are the restrictions of the associative multiplications; hence the Jordan structure of the Hermitian part is canonical and is determined by the cone and the order.</p>
+<p><em>Proof.</em> The product is determined on the squares by $\{h,h\} = h^{2}$ and in general by the commutativity and the bilinearity through the polarisation $2\{h,k\} = \{h+k,h+k\} - \{h,h\} - \{k,k\} = (h+k)^{2} - h^{2} - k^{2} = hk + kh$, which is the symmetrisation.</p>
+<h2 id="the-jordan-order">The Jordan Order</h2>
+<p><strong>Proposition (the order unit and the Archimedean property).</strong> The identity is the order unit of the Jordan algebra, and the Jordan order is Archimedean in a $\ast$-normed algebra: $0\leq h\leq\lambda1$ for every $\lambda>0$ forces $h = 0$. The norm is the order-unit norm, $\lVert h\rVert = \inf\{\lambda : -\lambda1\leq h\leq\lambda1\}$.</p>
+<p><em>Proof.</em> The order unit statement is that of <em>Hermitian Elements and the Order Unit</em>; the Archimedean property and the order-unit-norm identity are the corresponding statements of <em>The Positive Cone of an Involutive Algebra</em> and <em>Hermitian Elements and the Order Unit</em>, read in the Jordan algebra.</p>
+<p><strong>Theorem (the spectral resolution).</strong> Every self-adjoint element $h$ has a <strong>spectral resolution</strong></p>
+<p>$$
+h = \sum_{i} \lambda_i\, p_i
+$$</p>
+<p>with the $\lambda_i$ the real spectral values and the $p_i$ a <strong>Jordan partition of the unit</strong>, the $p_i$ self-adjoint, $\{p_i,p_j\} = 0$ for $i\neq j$, $p_i^{2} = p_i$, and $\sum_i p_i = 1$; the resolution is the diagonalisation of the commutative Jordan algebra generated by $h$, and it gives the functional calculus $f(h) = \sum_i f(\lambda_i)p_i$ for every real function $f$ on the spectrum.</p>
+<p><em>Proof.</em> The algebra generated by $h$ is commutative and associative; its Gelfand representation is a space of continuous functions on the spectrum, and the indicator functions of the spectral points pull back to the idempotents $p_i$, which satisfy the displayed relations by the multiplicativity of the representation; the functional calculus is the pullback of $f$.</p>
+<p><strong>Corollary (the order and the spectral resolution).</strong> $h\geq0$ if and only if all the spectral values of $h$ are nonnegative; the positive part and the negative part of the Jordan decomposition are the sums of the spectral pieces with $\lambda_i>0$ and with $\lambda_i<0$; and the order-ideal generated by a positive $h$ is the union $\bigcup_{\lambda>0}[0,\lambda h]$ of the intervals at the positive multiples of $h$.</p>
+<p><em>Proof.</em> The spectral resolution exhibits $h$ as a sum of the positive multiples of the idempotents; the positivity of $h$ is therefore equivalent to the positivity of the spectral values; the parts are the indicated sums, and the ideal statement is the definition of the order ideal in a Jordan algebra.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-self-adjoint-operators">The Self-Adjoint Operators</h3>
+<p>Let $A = B(H)$. The self-adjoint part with the symmetrised product is a JC-algebra, hence a JB-algebra; the order is the Loewner order, the spectral resolution is the spectral theorem for the self-adjoint operators, and the <strong>effects</strong> are the elements of the order interval $[0,1]$, that is, the self-adjoint contractions. The multiplication operators $L_h$ are the maps $k\mapsto\frac12(hk+kh)$, which are self-adjoint for the Hilbert–Schmidt form; the order ideal generated by the identity is the whole algebra.</p>
+<h3 id="the-hermitian-matrices">The Hermitian Matrices</h3>
+<p>Let $A = M_n(\mathbb{C})$. The self-adjoint part $H_n(\mathbb{C})$ with the symmetrised product is the Jordan algebra of the Hermitian matrices; the cone is the positive semidefinite cone, the order is the Loewner order, the spectral resolution is the <strong>spectral decomposition</strong> of a Hermitian matrix, and the Jordan partitions of the unit are the families of the mutually orthogonal projections summing to the identity. This is the finite-dimensional model of the article.</p>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>Let $A = \mathbb{C}[G]$ with $g^{*} = g^{-1}$. The self-adjoint part with the symmetrised product is the Jordan algebra of the self-adjoint elements of the group algebra; the order is the order of the Hilbert cone of <em>The Hilbert Cone of an Involutive Algebra</em>, and the spectral resolution of a self-adjoint element is the diagonalisation of its <strong>convolution operator</strong> on the group, which is the classical correspondence between the self-adjoint elements and the real-valued functions of the unitary dual in the finite and the compact cases.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>self-adjoint part</strong> $H(A)$ of an involutive algebra, with the <strong>symmetrised product</strong> $\{h,k\} = \frac12(hk+kh)$, is a real <strong>Jordan algebra</strong>; the product is commutative, satisfies the <strong>Jordan identity</strong>, and is the unique product on $H(A)$ compatible with the associative product and with $\{h,h\} = h^{2}$. The <strong>positive cone</strong> is the set of the sums of squares, the <strong>order</strong> is the Jordan order $h\leq k\iff k - h\in A_+$, and the <strong>multiplication operators</strong> $L_h : k\mapsto\{h,k\}$ are self-adjoint for the trace form with $L_h\geq0\iff h\geq0$. The identity is the <strong>order unit</strong>, the order is Archimedean, the norm is the <strong>order-unit norm</strong>, and every self-adjoint element has a <strong>spectral resolution</strong> $h = \sum\lambda_ip_i$ into a <strong>Jordan partition of the unit</strong>, which gives the functional calculus, the criterion $h\geq0\iff\lambda_i\geq0$, and the <strong>Jordan decomposition</strong> into the positive and the negative spectral parts. The model is the self-adjoint part of $B(H)$ with the Loewner order and the effects on the interval $[0,1]$; the finite-dimensional model is the Hermitian matrices. The Jordan structure is <em>Jordan Algebras and the Positive Cone</em>; the JB-theory is <em>JB*-Algebras and the Gelfand–Naimark Theorem</em>; the Hermitian elements are <em>Hermitian Elements and the Order Unit</em>; the symmetrised product is <em>The Positive Cone of an Involutive Algebra</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; and the forms are <em>Positive Definite Forms and the Order</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{h,k\} = \tfrac12(hk+kh)$</td>
+<td>Symmetrised product</td>
+</tr>
+<tr>
+<td>$h^{2} = \{h,h\}$</td>
+<td>Square of the Jordan algebra</td>
+</tr>
+<tr>
+<td>$\{\{h^{2},k\},h\} = \{h^{2},\{k,h\}\}$</td>
+<td>Jordan identity</td>
+</tr>
+<tr>
+<td>$L_h k = \{h,k\}$</td>
+<td>Multiplication operator</td>
+</tr>
+<tr>
+<td>$h\leq k\iff k - h\in A_+$</td>
+<td>Jordan order</td>
+</tr>
+<tr>
+<td>$h = \sum_i\lambda_i p_i$</td>
+<td>Spectral resolution</td>
+</tr>
+<tr>
+<td>$\{p_i,p_j\} = 0$, $p_i^{2} = p_i$, $\sum p_i = 1$</td>
+<td>Jordan partition of the unit</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the Jordan algebra of the self-adjoint elements, the cone and the order.</li>
+<li>Harald Hanche-Olsen and Erling Størmer, <em>Jordan Operator Algebras</em> (Pitman, 1984), for the JB-algebras, the symmetrised product and the spectral theory.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the Jordan order, the effects and the order structure.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, "On an algebraic generalization of the quantum mechanical formalism", <em>Annals of Mathematics</em> <strong>35</strong> (1934), 29–64, for the symmetrised product and the order of the observables.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the spectral theorem and the functional calculus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convolution on a Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="convolution-on-a-group"><strong>Convolution on a Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Convolution is the multiplication of the group transferred to functions by integration, and read between function spaces rather than inside one it is the family of operators by which the group and its algebra act. This article develops convolution from the operator side: the left and the right convolution operators, their boundedness and their exact norms on $L^1(G)$, the approximate identities read as nets of operators converging strongly to the identity, and the Fourier transform read as an algebra homomorphism — scalar in the abelian case, operator-valued in the general one.</p>
+<p>The article assumes the locally compact group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the convolution product, the involution and the structure of the Banach $*$-algebra $L^1(G)$ from <em>The Convolution Algebra $L^1(G)$</em>; the characters, Pontryagin duality and the abelian transform from <em>Harmonic Analysis on Groups</em>; the unitary dual, the operator-valued transform and the decomposition theory from <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>; and the bounded operators, the operator norm and the strong topology from <em>Operator Algebras</em>. The left and the right regular representations are <em>The Left and Right Regular Representation</em>, and the reading of $L^1(G)$ as an algebra of operators is <em>The Group Algebra as an Algebra of Operators</em>, both immediately following; the adjoint of a convolution operator belongs to the <code>- * Operator Theory</code> group of this category, and convolution by a bounded measure, with the algebra of measures, is <em>The Involution on the Measure Algebra</em>, later in this category. The Fourier transform as an operator on $L^2(G)$ is <em>The Fourier Operator</em>, written in parallel in this Part. No adjoint is used.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$, $\Delta$ is the modular function and $G$ is <strong>unimodular</strong> when $\Delta \equiv 1$; $L^1(G)$ carries the convolution</p>
+<p>$$
+(f*g)(x) = \int_G f(y)\,g(y^{-1}x)\,dy ,
+$$</p>
+<p>the $L^1$ norm $\|f\|_1 = \int_G |f(x)|\,dx$, and the involution $f^*(x) = \overline{f(x^{-1})}\,\Delta(x)^{-1}$; $\operatorname{Irr}(G)$ is the unitary dual and $\mu_P$ the Plancherel measure. The letter $k$ is a base field real or complex when only its linear structure is used.</p>
+<h2 id="convolution-as-a-product-and-as-a-bilinear-map">Convolution as a Product and as a Bilinear Map</h2>
+<p><strong>Definition.</strong> For $f, g \in L^1(G)$ the <strong>convolution</strong> $f*g \in L^1(G)$ is defined by the integral above; the operation is the product of the group algebra $\mathcal{A} = L^1(G)$.</p>
+<p><strong>Proposition (the algebra laws).</strong> Convolution is bilinear, associative and submultiplicative,</p>
+<p>$$
+(f*g)*h = f*(g*h), \qquad \|f*g\|_1 \leq \|f\|_1\,\|g\|_1 ,
+$$</p>
+<p>and it is commutative exactly when $G$ is abelian. The algebra $\mathcal{A}$ is unital exactly when $G$ is discrete, the unit being the point mass $\delta_e$; in general $\mathcal{A}$ has no identity.</p>
+<p><strong>Proof.</strong> Associativity is Fubini together with the associativity of the group product and the left invariance of $dx$; submultiplicativity is Fubini and $\|f\|_1\|g\|_1$; commutativity is the identity $f*g = g*f$ read through the substitution $x \mapsto x^{-1}$ and fails as soon as two elements do not commute; a unit $u$ would satisfy $u*f = f$ for all $f \in L^1(G)$, forcing $u$ to be the point mass at $e$, which is integrable exactly when $G$ is discrete. The full development is <em>The Convolution Algebra $L^1(G)$</em>; the article reads the same product as an operation between functions.</p>
+<p><strong>Remark (the operator reading).</strong> The associativity displayed above is what makes the left and the right multiplications by a fixed element into operators, and the submultiplicativity is what makes them bounded; the two readings are taken in the next section.</p>
+<h2 id="the-convolution-operators">The Convolution Operators</h2>
+<p><strong>Definition.</strong> For $f \in L^1(G)$ the <strong>left</strong> and the <strong>right convolution operators</strong> on $L^1(G)$ are</p>
+<p>$$
+L_f : L^1(G) \to L^1(G), \quad L_f(h) = f*h ; \qquad R_f : L^1(G) \to L^1(G), \quad R_f(h) = h*f .
+$$</p>
+<p>Equivalently $L_f = \lambda(f)$ and $R_f = \rho(f)$ are the integrated left and right regular representations, obtained from the translations $\lambda(x)h = \delta_x*h$ and $\rho(x)h = h*\delta_x$ when the group elements are integrable.</p>
+<p><strong>Theorem (boundedness and the composition laws).</strong> For all $f, g \in L^1(G)$ the operators $L_f, R_f$ are bounded with</p>
+<p>$$
+\|L_f\| \leq \|f\|_1 , \qquad \|R_f\| \leq \|f\|_1 ,
+$$</p>
+<p>and they satisfy</p>
+<p>$$
+L_f L_g = L_{f*g}, \qquad R_f R_g = R_{g*f}, \qquad L_f R_g = R_g L_f .
+$$</p>
+<p>Thus $f \mapsto L_f$ is an algebra homomorphism, $f \mapsto R_f$ an algebra anti-homomorphism, and every left convolution commutes with every right convolution.</p>
+<p><strong>Proof.</strong> The bound is submultiplicativity, $\|L_f h\|_1 = \|f*h\|_1 \leq \|f\|_1\|h\|_1$. The first two composition laws are associativity read on the two sides; the third is the associativity $(f*h)*g = f*(h*g)$, which says $L_fR_g = R_gL_f$. An anti-homomorphism reverses the order of the product, which is exactly $R_fR_g = R_{g*f}$. $\square$</p>
+<p><strong>Theorem (the norm is attained).</strong> The left regular representation is isometric,</p>
+<p>$$
+\|L_f\| = \|f\|_1 , \qquad \|R_f\| = \|f\|_1 ,
+$$</p>
+<p>so $\mathcal{C}_L = \{L_f : f \in L^1(G)\}$ and $\mathcal{C}_R = \{R_f : f \in L^1(G)\}$ are closed subalgebras of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$ and to its opposite algebra.</p>
+<p><strong>Proof.</strong> The upper bound is the theorem above. For the lower bound let $\{u_i\}$ be a contractive approximate identity as in the next section, so that $\|u_i\|_1 = 1$ and $f*u_i \to f$ in $L^1(G)$. Then $\|f\|_1 = \lim_i \|f*u_i\|_1 = \lim_i\|L_fu_i\|_1 \leq \|L_f\|$. The same argument with $u_i*f$ gives the statement for $R_f$. The map $f\mapsto L_f$ is an injective homomorphism (for $L_f = 0$ gives $f*u_i\to0$ and $f = 0$) that is isometric, hence isometric onto its image, which is complete hence closed. $\square$</p>
+<p><strong>Proposition (commutation with the translations).</strong> For all $f \in L^1(G)$ and all $x \in G$,</p>
+<p>$$
+L_f\,\rho(x) = \rho(x)\,L_f , \qquad R_f\,\lambda(x) = \lambda(x)\,R_f ,
+$$</p>
+<p>where $\lambda(x)h = \delta_x*h$ and $\rho(x)h = h*\delta_x$; that is, a left convolution commutes with the right translations and a right convolution commutes with the left translations.</p>
+<p><strong>Proof.</strong> $L_f\rho(x)h = f*(h*\delta_x) = (f*h)*\delta_x = \rho(x)L_fh$, and the second identity is the mirror image. $\square$</p>
+<p><strong>Remark (the two families and the commutant).</strong> The two families commute with each other by the composition law, and each commutes with the translations on the opposite side; the identification of the full commutant of the translations as the convolution operators of bounded measures is <em>The Involution on the Measure Algebra</em>, later in this category, where the measure algebra is available. On $L^1(G)$ the operators $L_f$ and $R_f$ alone do not exhaust the commutant in general.</p>
+<h2 id="approximate-identities">Approximate Identities</h2>
+<p><strong>Definition.</strong> A <strong>bounded approximate identity</strong> of $L^1(G)$ is a net $\{u_i\}$ in $L^1(G)$ with $\sup_i\|u_i\|_1 < \infty$ and</p>
+<p>$$
+u_i*f \to f, \qquad f*u_i \to f \qquad (f \in L^1(G)),
+$$</p>
+<p>the convergence being in the norm of $L^1(G)$. It is <strong>contractive</strong> when $\|u_i\|_1 = 1$ for all $i$.</p>
+<p><strong>Theorem (existence and operator form).</strong> Every locally compact group carries a contractive approximate identity. One is obtained by fixing nonnegative $u_i \in L^1(G)$ with $\int_G u_i(x)\,dx = 1$ and supports shrinking to $\{e\}$; for it</p>
+<p>$$
+\|L_{u_i} - \mathrm{id}\| \to 0 \ \text{strongly}, \qquad \|R_{u_i} - \mathrm{id}\| \to 0 \ \text{strongly},
+$$</p>
+<p>that is $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong operator topology of $B(L^1(G))$, while $\|L_{u_i}\| = \|R_{u_i}\| = 1$ for every $i$. Hence the strong limit of the operators $L_{u_i}$ is the identity although $\mathcal{A}$ has no identity element unless $G$ is discrete.</p>
+<p><strong>Proof.</strong> For $f \in C_c(G)$ the continuity of translation gives $\|u_i*f - f\|_1 \to 0$ and $\|f*u_i - f\|_1 \to 0$, and $C_c(G)$ is dense in $L^1(G)$; the isometry $\|L_{u_i}\| = \|u_i\|_1 = 1$ is the theorem of the previous section. The strong convergence is the definition of the approximate identity, and the last sentence records that a strong limit of isometries need not be attained. $\square$</p>
+<p><strong>Corollary (the identity in the discrete case).</strong> If $G$ is discrete the net may be taken constant, $u_i = \delta_e$, and $L_{\delta_e} = R_{\delta_e} = \mathrm{id}$; the strong convergence is attained and $\mathcal{A} = \ell^1(G)$ is unital.</p>
+<p><strong>Proof.</strong> $\delta_e$ is the unit of $\ell^1(G)$ by the proposition on the algebra laws, and $L_{\delta_e} = \mathrm{id}$ by definition. $\square$</p>
+<h2 id="the-fourier-transform">The Fourier Transform</h2>
+<p><strong>Definition.</strong> For a character $\chi$ of a locally compact abelian group $G$ the <strong>Gelfand transform</strong> is</p>
+<p>$$
+\hat f(\chi) = \int_G f(x)\,\chi(x)\,dx \qquad (f \in L^1(G)),
+$$</p>
+<p>and for a general locally compact group the <strong>operator-valued transform</strong> is</p>
+<p>$$
+\hat f(\pi) = \int_G f(x)\,\pi(x)\,dx \in B(\mathcal{H}_\pi) \qquad (\pi \in \operatorname{Irr}(G)).
+$$</p>
+<p><strong>Theorem (the convolution theorem).</strong> The two transforms are algebra homomorphisms: for $f, g \in L^1(G)$,</p>
+<p>$$
+\widehat{f*g}(\chi) = \hat f(\chi)\,\hat g(\chi), \qquad \widehat{f*g}(\pi) = \hat f(\pi)\,\hat g(\pi),
+$$</p>
+<p>the first for abelian $G$, the second in general; both are continuous, with $|\hat f(\chi)| \leq \|f\|_1$ in the abelian case and $\|\hat f(\pi)\| \leq \|f\|_1$ in general.</p>
+<p><strong>Proof.</strong> The abelian identity is Fubini and the multiplicativity of $\chi$: $\widehat{f*g}(\chi) = \iint f(y)g(y^{-1}x)\chi(x)\,dy\,dx = \int f(y)\chi(y)\,dy\int g(z)\chi(z)\,dz$. The general identity is the same computation with the operator product in place of the scalar product, the integrals converging in the operator norm. Continuity is the triangle inequality for the vector-valued integral. $\square$</p>
+<p><strong>Proposition (the transform diagonalises convolution).</strong> On a unimodular group of type I the Plancherel transform $\mathcal{F} : L^2(G) \to \int^\oplus (\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)\,d\mu_P(\pi)$ intertwines left convolution with the field of its transforms,</p>
+<p>$$
+\mathcal{F}\,L_f\,\mathcal{F}^{-1} = \int^\oplus \hat f(\pi)\,d\mu_P(\pi) ,
+$$</p>
+<p>the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$; in the abelian case this is the statement that $L_f$ on $L^2(G)$ is unitarily equivalent to multiplication by the bounded continuous function $\hat f$ on $G^\vee$.</p>
+<p><strong>Proof.</strong> The convolution theorem gives $\widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi)$, and the Plancherel transform carries $h$ to the field $\hat h(\pi)$; hence it carries $L_fh$ to $\hat f(\pi)\hat h(\pi)$. The abelian case is the specialisation $\mathcal{H}_\pi = \mathbb{C}$ and $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, where the field is multiplication by $\hat f(\chi)$. $\square$</p>
+<p><strong>Remark (norm realised on the spectrum).</strong> The transform of the previous proposition realises the operator norm of $L_f$ on $L^2(G)$ as an essential supremum in the abelian case, $\|L_f\|_{B(L^2)} = \|\hat f\|_\infty$, and in general as the essential supremum of $\pi \mapsto \|\hat f(\pi)\|$ against $\mu_P$; the $L^1$ norm of the theorem on $L_f$ is the norm of the same operator on $L^1(G)$, and the two need not agree. The $L^2$ norms belong to <em>The Plancherel Operator</em> and <em>Noncommutative Harmonic Analysis</em>.</p>
+<h2 id="the-algebra-of-convolution-operators">The Algebra of Convolution Operators</h2>
+<p><strong>Theorem (the convolution operators form the group algebra).</strong> The assignment $f \mapsto L_f$ is an isometric algebra isomorphism of $L^1(G)$ onto the closed subalgebra $\mathcal{C}_L \subseteq B(L^1(G))$; the algebra $\mathcal{C}_L$ is commutative exactly when $G$ is abelian, unital exactly when $G$ is discrete, and its strong closure contains the identity of $B(L^1(G))$ while containing no identity of itself when $G$ is non-discrete.</p>
+<p><strong>Proof.</strong> The map is an isometric homomorphism by the theorems above; the algebra properties are transferred from $\mathcal{A}$ along it; the strong closure contains the strong limit of the approximate identity, which is the identity operator, and the last statement is that of the section on approximate identities. $\square$</p>
+<p><strong>Proposition (the action on $L^p$).</strong> For $1 \leq p \leq \infty$ and $f \in L^1(G)$ the formula $L_fh = f*h$ defines a bounded operator on $L^p(G)$ with</p>
+<p>$$
+\|L_f\|_{B(L^p)} \leq \|f\|_1 ,
+$$</p>
+<p>and on $L^\infty(G)$ the operator is weak-$*$ continuous; the left convolution operators on the several $L^p$ are the several integrated regular representations of the same element.</p>
+<p><strong>Proof.</strong> Young's inequality $\|f*h\|_p \leq \|f\|_1\|h\|_p$ is Minkowski's integral inequality, and the weak-$*$ continuity is duality with the $L^q$ action for $q$ conjugate to $p$, $1 < p < \infty$; the endpoint cases are the usual ones. The identification with the integrated regular representation is the definition. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The article has used no involution and no adjoint: the anti-linear structure of $L^1(G)$ and the adjoint of $L_f$ on $L^2(G)$ are the <code>- * Theory</code> and <code>- * Operator Theory</code> groups of this category, and the group $C^*$-algebras $C^*(G)$ and $C^*_r(G)$, together with the von Neumann algebra $L(G)$, are treated where their operator-algebraic foundations are available. The measure algebra and convolution by a bounded measure, which complete the commutant of the translations, are <em>The Involution on the Measure Algebra</em>, later in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>Convolution turns a locally compact group into the Banach algebra $L^1(G)$, the product $(f*g)(x) = \int_G f(y)g(y^{-1}x)dy$ being associative, submultiplicative and commutative exactly for abelian $G$, unital exactly for discrete $G$. Read as operators, the left and right multiplications $L_f h = f*h$ and $R_f h = h*f$ are the integrated regular representations, bounded on $L^1(G)$ with $\|L_f\| = \|R_f\| = \|f\|_1$, satisfying $L_fL_g = L_{f*g}$, $R_fR_g = R_{g*f}$ and $L_fR_g = R_gL_f$, and each commuting with the translations on the opposite side. A contractive approximate identity $\{u_i\}$ inside $L^1(G)$ is exactly a net with $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong operator topology, its strong limit being the identity although the algebra has no identity unless $G$ is discrete. The Gelfand transform $\hat f(\chi) = \int f\chi$ and the operator-valued transform $\hat f(\pi) = \int f\pi$ are algebra homomorphisms, continuous with bound $\|f\|_1$, and they diagonalise convolution: $\mathcal{F}L_f\mathcal{F}^{-1}$ is the field of operators $\hat f(\pi)$ on the Plancherel direct integral, multiplication by $\hat f$ in the abelian case. The left convolution operators form a closed subalgebra of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$, and the same formula gives bounded convolution operators on every $L^p(G)$ with $\|L_f\|_{B(L^p)} \leq \|f\|_1$. No involution, adjoint, group $C^*$-algebra or measure algebra is used; these belong to the <code>- *</code> groups of the category and to <em>The Involution on the Measure Algebra</em>, later.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$, $e$, $dx$, $\Delta$</td>
+<td>Locally compact group, identity, left Haar measure, modular function</td>
+</tr>
+<tr>
+<td>$\mathcal{A} = L^1(G)$</td>
+<td>The group algebra, $f*g$ the convolution</td>
+</tr>
+<tr>
+<td>$\|f\|_1 = \int_G\lvert f(x)\rvert\,dx$</td>
+<td>The $L^1$ norm of the algebra</td>
+</tr>
+<tr>
+<td>$f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$</td>
+<td>The involution, cited from the algebra article</td>
+</tr>
+<tr>
+<td>$L_f$, $R_f$</td>
+<td>Left and right convolution operators, $L_fh = f*h$, $R_fh = h*f$</td>
+</tr>
+<tr>
+<td>$\|L_f\| = \|R_f\| = \|f\|_1$</td>
+<td>Exact operator norms on $L^1(G)$</td>
+</tr>
+<tr>
+<td>$L_fL_g = L_{f*g}$, $R_fR_g = R_{g*f}$, $L_fR_g = R_gL_f$</td>
+<td>Composition laws</td>
+</tr>
+<tr>
+<td>$\lambda(x)$, $\rho(x)$</td>
+<td>Left and right translations, $h\mapsto\delta_x*h$, $h\mapsto h*\delta_x$</td>
+</tr>
+<tr>
+<td>$\{u_i\}$</td>
+<td>Contractive approximate identity, $\|u_i\|_1 = 1$</td>
+</tr>
+<tr>
+<td>$\hat f(\chi)$, $\hat f(\pi)$</td>
+<td>Gelfand transform; operator-valued transform</td>
+</tr>
+<tr>
+<td>$\widehat{f*g} = \hat f\hat g$</td>
+<td>Convolution theorem</td>
+</tr>
+<tr>
+<td>$\mathcal{C}_L$, $\mathcal{C}_R$</td>
+<td>Closed subalgebras of $B(L^1(G))$ isomorphic to $L^1(G)$ and its opposite</td>
+</tr>
+<tr>
+<td>$\operatorname{Irr}(G)$, $\mu_P$, $\mathcal{H}_\pi$</td>
+<td>Unitary dual, Plancherel measure, representation space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the convolution algebra $L^1(G)$, its approximate identities and the algebra of measures.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953), for the convolution operators and the classical convolution theorem.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Wiley, 1962), for the Gelfand transform of $L^1(G)$ on an abelian group and the norm realised on the dual.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the operator-valued transform, the convolution theorem and the Plancherel transform.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the strong operator topology, isometric representations and the bounded operators on $L^p$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

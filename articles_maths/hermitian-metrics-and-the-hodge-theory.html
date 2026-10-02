@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Metrics and the Hodge Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-metrics-and-the-hodge-theory"><strong>Hermitian Metrics and the Hodge Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A complex manifold carries local coordinates $z^{j}$ and a decomposition of the complexified forms by the number of holomorphic and antiholomorphic differentials, and a <strong>Hermitian metric</strong> — a smoothly varying Hermitian inner product on each holomorphic tangent space — supplies the operator $\bar\partial$ with a formal adjoint and hence a <strong>Dolbeault Laplacian</strong> whose kernel represents the Dolbeault cohomology $H^{p,q}$. The Hermitian metric is a chosen form, and the whole of the complex Hodge theory is the geometry of that choice; when the metric satisfies the additional <strong>Kähler condition</strong> that its associated two-form is closed, the three Laplacians of $d$, $\partial$ and $\bar\partial$ become proportional, the de Rham cohomology acquires the <strong>Hodge decomposition</strong> into the pieces $H^{p,q}$, and the Lefschetz operator of the Kähler class makes the cohomology a representation of the Lie algebra $\mathfrak{sl}_2$ with the primitive decomposition and the Hodge–Riemann positivity.</p>
+<p>The article develops the Hermitian metric and its associated form, the operators $\partial$ and $\bar\partial$, the Dolbeault complex and the Dolbeault theorem, the Kähler identities and the Hodge decomposition of the cohomology of a Kähler manifold, and the Lefschetz decomposition and Hodge–Riemann relations on the primitive cohomology. The de Rham side of the theory is <em>The Hodge Laplacian</em>; the polarisation and the Hodge–Riemann bilinear relations for an abstract Hodge structure are <em>Polarised Hodge Structures and the Hodge–Riemann Relations</em>; the Chern connection and the Chern classes are <em>Hermitian Vector Bundles and the Chern Connection</em> and <em>Chern Classes of a Hermitian Bundle</em>; and the Dolbeault index theorem is <em>The Hermitian Index Theorem and the Signature Operator</em>.</p>
+<p>The prerequisites are <em>Smooth Manifolds and Differential Geometry</em> and <em>Differential Forms and Stokes' Theorem</em> for the manifolds, the forms and the exterior derivative; <em>Fibre Bundles, Connections and Curvature</em> and <em>Hermitian Metrics and the Levi-Civita Connection</em>, <em>Hermitian Manifolds and the Canonical Connection</em> for the Hermitian metrics and the connections; <em>Hermitian Structures and the Almost Complex Structure</em> for the almost complex structure and its integrability; <em>The Hodge Laplacian</em> for the de Rham Laplacian, the harmonic forms and the Hodge theorem; and <em>Transformation Groups and the Erlangen Program</em> and the Lie algebra articles for the $\mathfrak{sl}_2$-action of the Lefschetz decomposition. The Hodge conjecture and the algebraicity of the Hodge classes are named and deferred. No physics is invoked.</p>
+<h2 id="hermitian-metrics-and-the-operators">Hermitian Metrics and the Operators</h2>
+<p><strong>Definition.</strong> Let $X$ be a complex manifold of complex dimension $n$, with almost complex structure $J$ and holomorphic tangent bundle $T^{1,0}X$. A <strong>Hermitian metric</strong> on $X$ is a smooth family of positive definite Hermitian inner products $h_p$ on $T^{1,0}_pX$; it is equivalently a Riemannian metric $g$ with $g(Jv,Jw)=g(v,w)$ for all tangent vectors, through $g(v,w)=\operatorname{Re}h(v-iJv,w)$.</p>
+<p><strong>Definition.</strong> The <strong>associated form</strong> (or fundamental form) of a Hermitian metric is the real $(1,1)$-form</p>
+<p>$$
+\omega(v,w)=g(Jv,w),
+$$</p>
+<p>a positive form of bidegree $(1,1)$; the metric is <strong>Kähler</strong> when $\omega$ is closed, $d\omega=0$. The form $\omega$ is the datum that the Hermitian structure adds to the Riemannian one, and the Kähler condition is the integrability of that datum in the strongest sense.</p>
+<p><strong>Definition.</strong> On a complex manifold the complexified exterior algebra splits by bidegree,</p>
+<p>$$
+\Lambda^{k}T^{*}_{\mathbb{C}}X=\bigoplus_{p+q=k}\Lambda^{p,q}T^{*}X,
+$$</p>
+<p>and the exterior derivative splits accordingly as $d=\partial+\bar\partial$ with</p>
+<p>$$
+\partial:\Omega^{p,q}\to\Omega^{p+1,q},\qquad \bar\partial:\Omega^{p,q}\to\Omega^{p,q+1},\qquad \partial^{2}=\bar\partial^{2}=\partial\bar\partial+\bar\partial\partial=0 .
+$$</p>
+<p>A form of bidegree $(p,q)$ is <strong>holomorphic</strong> of type $p$ when $q=0$; the <strong>Dolbeault complex</strong> in a fixed $p$ is the complex $\Omega^{p,\bullet}(X)$ with the differential $\bar\partial$.</p>
+<p><strong>Theorem.</strong> A Hermitian metric determines formal adjoints $\partial^{*}$ and $\bar\partial^{*}$ of $\partial$ and $\bar\partial$ with respect to the $L^{2}$ inner product, and the <strong>Dolbeault Laplacian</strong></p>
+<p>$$
+\Delta_{\bar\partial}=\bar\partial\bar\partial^{*}+\bar\partial^{*}\bar\partial
+$$</p>
+<p>is self-adjoint, nonnegative and elliptic; the same construction with $\partial$ gives $\Delta_\partial$, and the de Rham Laplacian is $\Delta_{d}=dd^{*}+d^{*}d$.</p>
+<p><strong>Proof.</strong> The adjoints are those of the operators of bidegree $(0,1)$ and $(1,0)$ with respect to the Hermitian metric on forms; the ellipticity and the self-adjointness are those of a Laplace operator of a first-order elliptic complex, as in <em>The Hodge Laplacian</em>, and the split of $d$ into $\partial+\bar\partial$ is the bidegree decomposition of the exterior derivative on a complex manifold. $\square$</p>
+<h2 id="the-dolbeault-complex-and-its-cohomology">The Dolbeault Complex and Its Cohomology</h2>
+<p><strong>Definition.</strong> The <strong>Dolbeault cohomology</strong> of $X$ is the cohomology of the Dolbeault complex,</p>
+<p>$$
+H^{p,q}_{\bar\partial}(X)=\frac{\ker\bigl(\bar\partial:\Omega^{p,q}\to\Omega^{p,q+1}\bigr)}{\operatorname{im}\bigl(\bar\partial:\Omega^{p,q-1}\to\Omega^{p,q}\bigr)} .
+$$</p>
+<p><strong>Theorem (Dolbeault).</strong> For a complex manifold $X$ the Dolbeault cohomology of the sheaf $\Omega^{p}$ of holomorphic $p$-forms is the sheaf cohomology,</p>
+<p>$$
+H^{p,q}_{\bar\partial}(X)\cong H^{q}(X,\Omega^{p}),
+$$</p>
+<p>and the two may be identified; the identification is the complex analogue of the de Rham theorem, with $\bar\partial$ in place of $d$ and the holomorphic structure in place of the smooth one.</p>
+<p><strong>Proof sketch.</strong> The Dolbeault complex is a resolution of the sheaf $\Omega^{p}$ — locally, a $\bar\partial$-closed $(p,q)$-form is $\bar\partial$-exact for $q>0$ by the Dolbeault–Grothendieck lemma, the complex analogue of the Poincaré lemma — and the hypercohomology of the resolution computes the sheaf cohomology. The argument is that of <em>Sheaves and the de Rham Complex</em> carried over to the $\bar\partial$-operator, and the Dolbeault–Grothendieck lemma is the local statement. $\square$</p>
+<p><strong>Theorem (Hodge representation for $\bar\partial$).</strong> On a compact complex manifold with a Hermitian metric the kernel of the Dolbeault Laplacian,</p>
+<p>$$
+\mathcal{H}^{p,q}(X)=\ker\Delta_{\bar\partial}\cap\Omega^{p,q}(X),
+$$</p>
+<p>consists of the <strong>harmonic $(p,q)$-forms</strong>, and the <strong>Hodge isomorphism</strong> $\mathcal{H}^{p,q}(X)\cong H^{p,q}_{\bar\partial}(X)$ holds; in particular the Dolbeault cohomology is finite-dimensional and $h^{p,q}=\dim H^{p,q}_{\bar\partial}(X)<\infty$. The Hodge decomposition of the Dolbeault complex is</p>
+<p>$$
+\Omega^{p,q}(X)=\mathcal{H}^{p,q}\oplus\bar\partial\Omega^{p,q-1}\oplus\bar\partial^{*}\Omega^{p,q+1},
+$$</p>
+<p>the orthogonal direct sum of the harmonic, the $\bar\partial$-exact and the $\bar\partial^{*}$-exact parts.</p>
+<p><strong>Proof.</strong> The argument is the Hodge theorem of <em>The Hodge Laplacian</em> applied to the elliptic self-adjoint operator $\Delta_{\bar\partial}$; the decomposition is the spectral decomposition of the self-adjoint operator, and the harmonic forms are closed and coclosed for $\bar\partial$, hence represent the cohomology. $\square$</p>
+<p><strong>Remark.</strong> The Hermitian metric is used here in an essential way: the adjoint $\bar\partial^{*}$, the Laplacian $\Delta_{\bar\partial}$ and the harmonic representatives all depend on it, while the Dolbeault cohomology $H^{p,q}_{\bar\partial}$ and its dimension do not. The decomposition of each Dolbeault group by the metric is the complex analogue of the Hodge theorem, and it holds for every Hermitian metric and not only for the Kähler ones.</p>
+<h2 id="the-kahler-condition-and-the-kahler-identities">The Kähler Condition and the Kähler Identities</h2>
+<p><strong>Definition.</strong> A Hermitian metric is <strong>Kähler</strong> when its associated form is closed, $d\omega=0$; equivalently when the parallel transport of the Levi-Civita connection preserves the complex structure, so that the holonomy is contained in the unitary group, equivalently when $\nabla J=0$ for the Levi-Civita connection. A <strong>Kähler manifold</strong> is a complex manifold with a Kähler metric; the class $[\omega]\in H^{2}(X;\mathbb{R})$ is the <strong>Kähler class</strong>, and a manifold is Kähler when it admits a Kähler metric.</p>
+<p><strong>Theorem (Kähler identities).</strong> On a Kähler manifold the operators of bidegree $\pm1$ satisfy</p>
+<p>$$
+[\Lambda,\partial]=i\,\bar\partial^{*},\qquad
+[\Lambda,\bar\partial]=-i\,\partial^{*},\qquad
+[\Lambda,L]=\text{the degree operator},
+$$</p>
+<p>where $L\omega=\omega\wedge\cdot$ is the Lefschetz operator of the associated form, $\Lambda=L^{*}$ is its adjoint and the last identity holds on every complex manifold. Consequently the three Laplacians are proportional,</p>
+<p>$$
+\Delta_{d}=2\Delta_{\partial}=2\Delta_{\bar\partial},
+$$</p>
+<p>and each is <strong>bigraded</strong>, $\Delta_{d}(\Omega^{p,q})\subseteq\Omega^{p,q}$.</p>
+<p><strong>Proof sketch.</strong> The first identity is the computation of the Kähler form with the Hodge star and the operator $\Lambda$; the proportionality of the Laplacians follows from it and from $d=\partial+\bar\partial$, $d^{2}=0$; the identity $[\Lambda,L]=$ degree is the standard $\mathfrak{sl}_2$-relation, proved from the exterior algebra and the positivity of $\omega$. The identities are those of the Kähler geometry of <em>Hermitian Manifolds and the Canonical Connection</em>. $\square$</p>
+<p><strong>Corollary.</strong> On a compact Kähler manifold the de Rham Laplacian preserves the bidegree, so a harmonic form decomposes into harmonic pieces of pure bidegree, and the kernel of $\Delta_d$ in the total degree $k$ is the direct sum of the kernels of $\Delta_{\bar\partial}$ in the bidegrees $(p,q)$ with $p+q=k$.</p>
+<h2 id="the-hodge-decomposition-of-a-kahler-manifold">The Hodge Decomposition of a Kähler Manifold</h2>
+<p><strong>Theorem (Hodge decomposition).</strong> Let $X$ be a compact Kähler manifold. Then</p>
+<p>$$
+H^{k}(X;\mathbb{C})=\bigoplus_{p+q=k}H^{p,q}(X),\qquad
+H^{p,q}(X)=\ker\Delta_{\bar\partial}\cap\Omega^{p,q}(X),
+$$</p>
+<p>the <strong>Hodge decomposition</strong> of the de Rham cohomology, with $\overline{H^{p,q}}=H^{q,p}$; the complex conjugation is the conjugation of the coefficients. The pieces depend on the Kähler metric through their representatives but not through their dimensions, and the <strong>Hodge numbers</strong> satisfy</p>
+<p>$$
+h^{p,q}=h^{q,p}=h^{n-p,n-q},\qquad
+b_{k}=\sum_{p+q=k}h^{p,q},
+$$</p>
+<p>where the third symmetry is <strong>Serre duality</strong>, $h^{n-p,n-q}=h^{p,q}$, or equivalently the nondegenerate pairing $H^{p,q}(X)\times H^{n-p,n-q}(X)\to\mathbb{C}$ given by the wedge product and the trace.</p>
+<p><strong>Proof.</strong> The bidegree is preserved by the Kähler Laplacian by the Kähler identities, so a harmonic representative of a class of degree $k$ splits into harmonic pieces of bidegree $(p,k-p)$, and the conjugation of the coefficients exchanges $(p,q)$ with $(q,p)$; Serre duality is the nondegeneracy of the pairing $H^{p,q}\times H^{n-p,n-q}\to\mathbb{C}$ given by the wedge product and the trace, which is the complex form of Poincaré duality. $\square$</p>
+<p><strong>Remark.</strong> The Hodge decomposition is what distinguishes a Kähler manifold from an arbitrary complex manifold: the Dolbeault cohomology $H^{p,q}$ exists for every complex manifold, but the sum $\bigoplus_{p+q=k}H^{p,q}$ equals the de Rham group $H^{k}$ only when the metric can be chosen Kähler, or equivalently when the manifold satisfies the $\partial\bar\partial$-lemma. The complex structure and the metric are compatible in the strongest sense in the Kähler case, and the compatibility is exactly what the bigrading of the Laplacian detects.</p>
+<h2 id="the-lefschetz-decomposition-and-the-hodgeriemann-relations">The Lefschetz Decomposition and the Hodge–Riemann Relations</h2>
+<p><strong>Theorem ($\mathfrak{sl}_2$-action).</strong> On a compact Kähler manifold of complex dimension $n$ the operators $L=\omega\wedge\cdot$, $\Lambda=L^{*}$ and $H=[L,\Lambda]$ acting on the cohomology satisfy the relations</p>
+<p>$$
+[H,L]=2L,\qquad [H,\Lambda]=-2\Lambda,\qquad [L,\Lambda]=H ,
+$$</p>
+<p>the commutation relations of $\mathfrak{sl}_2(\mathbb{C})$; the operator $H$ acts on $H^{k}(X)$ by $k-n$, and the <strong>hard Lefschetz theorem</strong> states that</p>
+<p>$$
+L^{\,n-k}:H^{k}(X;\mathbb{R})\xrightarrow{\ \cong\ }H^{2n-k}(X;\mathbb{R})
+$$</p>
+<p>is an isomorphism for every $k\leq n$.</p>
+<p><strong>Proof sketch.</strong> The commutation relations are those of the exterior algebra of the Kähler form; the hard Lefschetz theorem follows from the representation theory of $\mathfrak{sl}_2$ together with the positivity of the operator $[\Lambda,L]$ on the primitive part, and the argument is the one used for the nilpotent orbit of a semisimple Lie algebra. The Lefschetz package is developed with the Kähler identities of <em>Hermitian Manifolds and the Canonical Connection</em>. $\square$</p>
+<p><strong>Definition.</strong> A class in $H^{k}(X)$ is <strong>primitive</strong> when $\Lambda\alpha=0$; the primitive part $P^{k}(X)$ is the kernel of $\Lambda$ on $H^{k}(X)$, and the <strong>Lefschetz decomposition</strong> writes</p>
+<p>$$
+H^{k}(X)=\bigoplus_{r\geq0}L^{\,r}P^{k-2r}(X),
+$$</p>
+<p>the irreducible $\mathfrak{sl}_2$-pieces.</p>
+<p><strong>Theorem (Hodge–Riemann relations).</strong> On the primitive cohomology of a compact Kähler manifold the pairing</p>
+<p>$$
+Q(\alpha,\beta)=\int_{X}L^{\,n-k}\alpha\wedge\beta\qquad\bigl(\alpha,\beta\in P^{k}(X)\bigr)
+$$</p>
+<p>is a polarisation: it is $(-1)^{k}$-symmetric and satisfies the Hodge–Riemann relations</p>
+<p>$$
+i^{\,p-q}\,Q(\alpha,\bar\alpha)>0\qquad\text{for }\alpha\in P^{p,q}(X)\setminus\{0\} ,
+$$</p>
+<p>so that $Q(C\alpha,\bar\alpha)>0$ for the Weil operator $C=i^{p-q}$; the form is a polarisation of the Hodge structure of the primitive cohomology in the sense of <em>Polarised Hodge Structures and the Hodge–Riemann Relations</em>.</p>
+<p><strong>Proof sketch.</strong> The symmetry is the graded commutativity of the wedge product; the positivity is the Hodge–Riemann bilinear relation, proved by the Lefschetz decomposition and the $\mathfrak{sl}_2$-structure together with the positivity of the metric on the primitive forms. The relation is the precise positivity behind the Hodge index theorem and the signature of the middle intersection form of <em>The Signature Operator</em>. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the projective space).</strong> For $\mathbb{CP}^{n}$ with the Fubini–Study metric the cohomology is one-dimensional in each even degree, $h^{p,p}=1$ and $h^{p,q}=0$ for $p\neq q$; the Kähler class is the generator of $H^{2}$, the Lefschetz operator is multiplication by its powers, and the cohomology is a single irreducible $\mathfrak{sl}_2$-module, the primitive part being one-dimensional in the middle degree only.</p>
+<p><strong>Example (a compact Riemann surface).</strong> A Riemann surface is Kähler for every metric in its conformal class, of complex dimension one; the Hodge decomposition is $H^{1}=H^{1,0}\oplus H^{0,1}$ with $h^{1,0}=h^{0,1}=g$, so $b_{1}=2g$, and the Kähler class gives the hard Lefschetz isomorphism $L^{0}=\mathrm{id}$ on $H^{0}$ and $H^{2}$.</p>
+<p><strong>Example (a $K3$ surface).</strong> For a $K3$ surface $h^{0,0}=h^{2,2}=1$, $h^{2,0}=h^{0,2}=1$, $h^{1,1}=20$ and $b_{2}=22$; the primitive middle cohomology has dimension $21$, the Kähler class is one of the $(1,1)$-classes, and the Hodge–Riemann relations give the signature $\sigma=2-20+2=-16$ and the negative definite part of the intersection form on the primitive $(1,1)$-classes. The Kähler structure and the Hodge numbers of the $K3$ surface are the standard checks of the theory.</p>
+<p><strong>Example (the Hopf surface).</strong> The Hopf surface, a compact complex surface homeomorphic to $S^{1}\times S^{3}$ with $b_{1}=1$, is <strong>not</strong> Kähler: a Kähler manifold has even $b_{1}$, since $b_{1}=h^{1,0}+h^{0,1}=2h^{1,0}$, whereas the Hopf surface has $b_{1}=1$. The Dolbeault cohomology $H^{p,q}$ still exists, but the sum $\bigoplus_{p+q=k}H^{p,q}$ does not compute the de Rham group $H^{k}$, and the Hodge decomposition fails. The example shows that the Dolbeault decomposition is available on every complex manifold and the Hodge decomposition only on the Kähler ones.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Hermitian metric</strong> on a complex manifold is a smoothly varying Hermitian inner product on the holomorphic tangent spaces, equivalently a Riemannian metric compatible with the almost complex structure, and it has an <strong>associated form</strong> $\omega$ of bidegree $(1,1)$; it determines the formal adjoints of $\partial$ and $\bar\partial$ and the Laplacians $\Delta_\partial$, $\Delta_{\bar\partial}$ and $\Delta_d$. The <strong>Dolbeault complex</strong> of $\bar\partial$ has the <strong>Dolbeault cohomology</strong> $H^{p,q}_{\bar\partial}(X)\cong H^{q}(X,\Omega^{p})$, and on a compact manifold the <strong>Hodge representation</strong> identifies it with the kernel of $\Delta_{\bar\partial}$. When $\omega$ is closed the metric is <strong>Kähler</strong>, the <strong>Kähler identities</strong> give $\Delta_d=2\Delta_\partial=2\Delta_{\bar\partial}$ and the bigrading of the Laplacian, and the de Rham cohomology acquires the <strong>Hodge decomposition</strong> $H^{k}=\bigoplus_{p+q=k}H^{p,q}$ with the symmetries $h^{p,q}=h^{q,p}=h^{n-p,n-q}$ and $b_{k}=\sum h^{p,q}$. The Kähler class makes the cohomology a representation of $\mathfrak{sl}_2$ through $L$, $\Lambda$ and $H$, the <strong>hard Lefschetz theorem</strong> making $L^{n-k}:H^{k}\cong H^{2n-k}$ an isomorphism, and the <strong>Hodge–Riemann relations</strong> make the form $Q(\alpha,\beta)=\int L^{n-k}\alpha\wedge\beta$ a polarisation of the primitive cohomology. The Hermitian metric is a chosen form, and the Hodge theory is the geometry of that choice; the Hopf surface shows how much is lost outside the Kähler class.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$, $n$, $J$, $T^{1,0}X$</td>
+<td>Complex manifold, complex dimension, almost complex structure, holomorphic tangent bundle</td>
+</tr>
+<tr>
+<td>$h$, $g$, $\omega(v,w)=g(Jv,w)$</td>
+<td>Hermitian metric, Riemannian metric, associated $(1,1)$-form</td>
+</tr>
+<tr>
+<td>$d=\partial+\bar\partial$</td>
+<td>Splitting of the exterior derivative by bidegree</td>
+</tr>
+<tr>
+<td>$\Omega^{p,q}$, $L$, $\Lambda$</td>
+<td>Forms of bidegree $(p,q)$; Lefschetz operator $\omega\wedge\cdot$ and its adjoint</td>
+</tr>
+<tr>
+<td>$H^{p,q}_{\bar\partial}\cong H^{q}(X,\Omega^{p})$</td>
+<td>Dolbeault cohomology</td>
+</tr>
+<tr>
+<td>$\Delta_{\bar\partial}=\bar\partial\bar\partial^{*}+\bar\partial^{*}\bar\partial$</td>
+<td>Dolbeault Laplacian</td>
+</tr>
+<tr>
+<td>Kähler, $d\omega=0$</td>
+<td>The Kähler condition</td>
+</tr>
+<tr>
+<td>$\Delta_d=2\Delta_\partial=2\Delta_{\bar\partial}$</td>
+<td>Kähler identities</td>
+</tr>
+<tr>
+<td>$H^{k}=\bigoplus_{p+q=k}H^{p,q}$</td>
+<td>Hodge decomposition; $h^{p,q}=h^{q,p}=h^{n-p,n-q}$</td>
+</tr>
+<tr>
+<td>$L^{n-k}:H^{k}\cong H^{2n-k}$</td>
+<td>Hard Lefschetz; primitive part $P^{k}=\ker\Lambda$</td>
+</tr>
+<tr>
+<td>$Q(\alpha,\beta)=\int L^{n-k}\alpha\wedge\beta$</td>
+<td>Polarisation of the primitive cohomology; Hodge–Riemann relations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Phillip A. Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for Hermitian and Kähler metrics, the Hodge decomposition and the Hodge–Riemann relations.</li>
+<li>Kunihiko Kodaira, <em>Complex Manifolds and Deformation of Complex Structures</em> (Springer, 1986), for the Dolbeault theorem and the Hodge theory of complex manifolds.</li>
+<li>Shiing-Shen Chern, <em>Complex Manifolds without Potential Theory</em> (Springer, 2nd ed. 1979), for the Hermitian metric, the associated form and the Kähler condition.</li>
+<li>W. V. D. Hodge, <em>The Theory and Applications of Harmonic Integrals</em> (Cambridge University Press, 1941), for the Hodge decomposition and the harmonic integrals.</li>
+<li>Raymond O. Wells, <em>Differential Analysis on Complex Manifolds</em>, Graduate Texts in Mathematics 65 (Springer, 3rd ed. 2008), for the Dolbeault complex, the Hodge theory and the Kähler identities.</li>
+<li>Claire Voisin, <em>Hodge Theory and Complex Algebraic Geometry I, II</em> (Cambridge University Press, 2002–2003), for the Hodge decomposition, the Lefschetz decomposition and the Hodge–Riemann relations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

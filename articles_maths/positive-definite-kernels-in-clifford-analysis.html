@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Kernels in Clifford Analysis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-kernels-in-clifford-analysis"><strong>Positive Definite Kernels in Clifford Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reproducing kernel Hilbert space is a Hilbert space of functions on which the point evaluations
+are continuous; equivalently, it is the space $H_K$ attached by the Aronszajn construction to a
+<strong>positive definite kernel</strong> $K$ on the product $X\times X$. The general theory — the positivity
+condition, the Aronszajn theorem, the Hermitian kernels and their integral operators — belongs to
+<em>Analysis on Linear Spaces</em>, in <em>Reproducing Kernel Hilbert Spaces</em>, <em>Positive Definite Functions</em>,
+<em>Hermitian Kernels and the Integral Operator</em> and <em>Hermitian Integral Kernels</em>; this article
+develops the instances that occur in Clifford analysis, in which the kernel takes values in the
+Clifford algebra or in its modules and the functions take values in a Clifford module, and in which
+the two classical instances are the <strong>Bergman kernel</strong> of the monogenic $L^2$ space and the <strong>Szegő
+kernel</strong> of the monogenic Hardy space.</p>
+<p>The setting is that of <em>Hermitian Hilbert Modules over a Clifford Algebra</em>: the Clifford algebra
+$A=\mathrm{Cl}_{0,m}$ with conjugation $*$, a definite Clifford module $\mathcal{S}$ of values with
+a compatible Hermitian form, and the Hilbert modules of sections $L^2(\Omega;\mathcal{S})$ and their
+closed monogenic subspaces $\mathcal{A}^2=\ker D\cap L^2$ and $H^2$. The positivity is the
+positivity of the module form, the Hermitian symmetry is the symmetry of that form combined with the
+involution $*$, and the reproducing property is the continuity of the point evaluation, which the
+elliptic theory supplies. The operator-theoretic background is <em>Hermitian Hilbert Modules over a
+Clifford Algebra</em>; the Cauchy kernel and the boundary projections are <em>The Cauchy Integral
+Operator</em>; the Hermitian refinement of the kernels is <em>The Hermitian Cauchy Integral and the
+Boundary Values</em> and <em>The Hermitian Cauchy Kernel as an Adjoint</em>. Nothing of the general theory is
+repeated: what is specific here is the Clifford-valued kernel, its Hermitian symmetry under $*$, and
+the two kernels of the monogenic spaces.</p>
+<h2 id="positive-definite-kernels-with-clifford-values">Positive Definite Kernels with Clifford Values</h2>
+<h3 id="definition-and-positivity">Definition and Positivity</h3>
+<p><strong>Definition.</strong> Let $X$ be a set and let $\mathcal{S}$ be a definite Clifford module with a
+compatible Hermitian form $(\cdot,\cdot)$. A <strong>kernel</strong> is a map
+$K:X\times X\to\mathrm{End}_\mathbb{R}(\mathcal{S})$ (or, in the scalar case, $K:X\times X\to A$);
+it is <strong>positive definite</strong> when</p>
+<p>$$
+\sum_{i,j=1}^{n}\bigl(K(x_i,x_j)\,s_j,\,s_i\bigr)\ \ge\ 0
+$$</p>
+<p>for every finite family $x_1,\dots,x_n\in X$ and every $s_1,\dots,s_n\in\mathcal{S}$.</p>
+<p><strong>Definition.</strong> The kernel is <strong>Hermitian</strong> when</p>
+<p>$$
+K(x,y) = K(y,x)^{*} ,
+$$</p>
+<p>the adjoint being taken with respect to the module form; for a scalar kernel with values in $A$ this
+reads $K(x,y)=K(y,x)^{*}$, the Clifford conjugation of the value.</p>
+<p><strong>Theorem (Aronszajn; quoted from the general theory).</strong> A Hermitian positive definite kernel $K$ on
+$X\times X$ determines a Hilbert space $H_K$ of $\mathcal{S}$-valued functions on $X$ on which the
+point evaluations are continuous, with the reproducing property</p>
+<p>$$
+(K(x,\cdot)s,\,f)_{H_K} = (s,\,f(x)) \qquad x\in X,\ s\in\mathcal{S},\ f\in H_K ,
+$$</p>
+<p>and every such space arises from exactly one kernel. The theorem is the general Aronszajn theorem of
+<em>Reproducing Kernel Hilbert Spaces</em>; the Clifford-valued case is its instance over the module
+$\mathcal{S}$.</p>
+<p><em>Proof.</em> Quoted. The proof is the general one: the span of the functions $K(x,\cdot)s$ with the
+inner product induced by positivity is a pre-Hilbert space, its completion is $H_K$, and the
+reproducing property makes the evaluation continuous and recovers the kernel from the space.
+$\square$</p>
+<p><strong>Remark (what the Clifford structure adds).</strong> Three features distinguish the case at hand from the
+scalar theory. The kernel takes values in a non-commutative algebra, so the order of the factors in
+the reproducing property matters and the Hermitian symmetry carries the conjugation $*$; the module
+form is the one of <em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em>, so the
+positivity of the kernel is the positivity of a family of module forms; and the functions of the
+classical spaces are <strong>monogenic</strong>, so the kernel inherits monogenicity in each variable — it is
+monogenic in the first and anti-monogenic in the second — and the kernel is determined by its
+diagonal. These are the properties the next two sections use.</p>
+<h2 id="the-bergman-kernel-of-the-monogenic-space">The Bergman Kernel of the Monogenic Space</h2>
+<p><strong>Definition.</strong> For a bounded domain $\Omega$ the <strong>monogenic Bergman space</strong> is
+$\mathcal{A}^2(\Omega;\mathcal{S})=\ker D\cap L^2(\Omega;\mathcal{S})$ and the <strong>Bergman kernel</strong> is
+the reproducing kernel $B:\Omega\times\Omega\to\mathrm{End}(\mathcal{S})$ of the space, so that</p>
+<p>$$
+f(w) = \int_\Omega B(w,z)\,f(z)\,dz , \qquad f\in\mathcal{A}^2(\Omega;\mathcal{S}) .
+$$</p>
+<p><strong>Theorem (properties of the Bergman kernel).</strong> The Bergman kernel of the monogenic space exists and
+is unique; it is Hermitian, $B(w,z)=B(z,w)^{*}$; it is monogenic in the variable $w$ for the
+operator $D$ and anti-monogenic in $z$; it is determined by the diagonal through the identity
+$\sum_i B(w,z_i)B(z_i,z)\to B(w,z)$; and it is the kernel of the orthogonal projection of
+$L^2(\Omega;\mathcal{S})$ onto $\mathcal{A}^2(\Omega;\mathcal{S})$.</p>
+<p><em>Proof.</em> The point evaluation is continuous on $\mathcal{A}^2$ because $D$ is elliptic and the
+domain is bounded, so the Aronszajn construction applies; the monogenicity in each variable follows
+by applying $D$ in $w$ and $\bar D$ in $z$ to the reproducing identity, and the projection statement
+is the reproducing property read as an integral operator. $\square$</p>
+<p><strong>Remark (the relation to the Cauchy kernel).</strong> The Bergman kernel of the monogenic space is not the
+Cauchy kernel: the Cauchy kernel is the reproducing kernel of the space of boundary values, i.e. the
+Szegő kernel of the following section, while the Bergman kernel reproduces the space of $L^2$
+monogenic functions on the whole domain. The two agree only on the boundary in the limiting sense.
+For the half-space and the ball the Bergman kernel of the monogenic space has the same shape as the
+Bergman kernel of the holomorphic space, with the Clifford kernel in place of the complex one; the
+explicit formula is the Clifford refinement of the classical Bergman kernel, cited to the
+literature. The general Bergman operator of a domain is <em>The Bergman Operator</em> in a later category,
+and the metric it defines is <em>Hermitian Symmetric Spaces and the Bergman Metric</em>.</p>
+<h2 id="the-szego-kernel-and-the-boundary">The Szegő Kernel and the Boundary</h2>
+<p><strong>Definition.</strong> For a domain $\Omega$ with smooth boundary the <strong>monogenic Szegő kernel</strong> is the
+reproducing kernel $S$ of the monogenic Hardy space $H^2(\Omega;\mathcal{S})$ of <em>The Cauchy
+Integral Operator</em>, so that</p>
+<p>$$
+f(w) = \int_{\partial\Omega} S(w,z)\,f(z)\,dS(z) , \qquad f\in H^2(\Omega;\mathcal{S}) .
+$$</p>
+<p><strong>Theorem (the Szegő kernel is the Cauchy kernel read on the boundary).</strong> The Szegő kernel is
+determined by the Cauchy kernel and the conormal element:</p>
+<p>$$
+S(w,z) = E(w-z)\,\nu_B(z)
+$$</p>
+<p>up to the normalisation of the Cauchy–Pompeiu formula of <em>Clifford Analysis</em>, and it is Hermitian in
+the sense of the module form, monogenic in $w$ and anti-monogenic in $z$; the projection it defines
+is the Szegő projection $P^+=\tfrac12(I+\mathcal{S})$ of <em>The Cauchy Integral Operator</em>.</p>
+<p><em>Proof.</em> The boundary values of a monogenic function are reproduced by the Cauchy integral formula
+against the Cauchy kernel and the conormal element, which is exactly the reproducing property for
+the kernel $E(w-z)\nu_B(z)$; the Hermitian symmetry follows from the Hermitian symmetry of the
+kernel $E$ and the reality of the conormal element, and the projection statement is the Cauchy
+integral formula as the orthogonal projection onto the space of boundary values. $\square$</p>
+<p><strong>Remark (why the boundary kernel is the Cauchy one).</strong> In the monogenic theory the Hardy space is
+the range of the boundary Cauchy transform, so its reproducing kernel is the Cauchy kernel itself;
+this is the sense in which the Cauchy integral formula <em>is</em> the reproducing property of the
+monogenic Hardy space, a statement that the general theory of <em>The Cauchy Integral Operator</em> records
+as the identification of the Szegő projection with the Cauchy transform. The Bergman and the Szegő
+kernels are therefore the two ends of the same structure: the second is the Cauchy kernel, and the
+first is its interior analogue.</p>
+<h2 id="the-kernel-as-an-operator">The Kernel as an Operator</h2>
+<p><strong>Theorem (the integral operator of a Hermitian kernel).</strong> To a Hermitian kernel $K$ on
+$\Omega\times\Omega$ associate the integral operator</p>
+<p>$$
+(T_Kf)(x) = \int_\Omega K(x,y)\,f(y)\,dy .
+$$</p>
+<p>The kernel is Hermitian exactly when the operator is self-adjoint on $L^2(\Omega;\mathcal{S})$, and
+positive definite exactly when the operator is positive, $\langle T_Kf,f\rangle\ge0$; the two
+properties are the operator form of the two conditions defining the reproducing kernel.</p>
+<p><em>Proof.</em> The kernel of the adjoint of $T_K$ is the conjugate-reverse $K(y,x)^{*}$ by the general
+theorem of <em>Hermitian Kernels and the Integral Operator</em>, so $T_K$ is self-adjoint exactly when
+$K(x,y)=K(y,x)^{*}$; the positivity of the quadratic form is the definition of positive definiteness
+read as the integral $\int\!\!\int(K(x,y)f(y),f(x))\,dy\,dx\ge0$. The statement is the
+Clifford-module instance of the general theory of <em>Banach and Hilbert Spaces</em>. $\square$</p>
+<p><strong>Remark (the spectral consequences).</strong> A compact self-adjoint integral operator with a positive
+definite kernel therefore has a nonnegative spectrum, an orthonormal basis of eigenspinors and a
+Mercer-type expansion of the kernel in that basis; the reproducing kernel Hilbert space of the
+kernel is the range of the square root of the operator, and the Cauchy and Bergman kernels of the
+preceding sections are the entries of the projection operators onto the corresponding monogenic
+spaces. The spectral theory of the integral operator, and the compactness on which the expansion
+rests, are the subjects of <em>Hermitian Integral Kernels</em>, <em>Compact Operators</em> and <em>Self-Adjoint
+Operators and the Spectral Theorem</em>; the Clifford case differs only in that the kernel and the
+eigenspinors take values in the algebra and the module.</p>
+<h2 id="summary">Summary</h2>
+<p>A Clifford-valued kernel $K:X\times X\to\mathrm{End}(\mathcal{S})$ is <strong>positive definite</strong> when
+$\sum_{i,j}(K(x_i,x_j)s_j,s_i)\ge0$ and <strong>Hermitian</strong> when $K(x,y)=K(y,x)^{*}$, the adjoint being
+taken in the compatible module form; by the Aronszajn theorem of <em>Reproducing Kernel Hilbert Spaces</em>
+it defines a Hilbert space $H_K$ with the reproducing property $(K(x,\cdot)s,f)_{H_K}=(s,f(x))$. The
+Clifford case adds the non-commutativity of the algebra, the module form of Part II and the
+monogenicity of the functions, so that the kernel is monogenic in the first and anti-monogenic in
+the second variable. The <strong>Bergman kernel</strong> $B$ of the monogenic $L^2$ space
+$\mathcal{A}^2=\ker D\cap L^2$ is Hermitian, monogenic in each variable and the kernel of the
+orthogonal projection onto $\mathcal{A}^2$; the <strong>Szegő kernel</strong> $S$ of the monogenic Hardy space is
+the Cauchy kernel read on the boundary, $S(w,z)=E(w-z)\nu_B(z)$, and its projection is the boundary
+Cauchy transform $P^+=\tfrac12(I+\mathcal{S})$ of <em>The Cauchy Integral Operator</em>. The two kernels
+are the interior and the boundary instances of the same structure, whose general theory is <em>Analysis
+on Linear Spaces</em>' and whose module background is <em>Hermitian Hilbert Modules over a Clifford
+Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K(x,y)$, $K(x,y)=K(y,x)^{*}$</td>
+<td>Clifford-valued kernel and its Hermitian symmetry</td>
+</tr>
+<tr>
+<td>$\sum_{i,j}(K(x_i,x_j)s_j,s_i)\ge0$</td>
+<td>Positive definiteness</td>
+</tr>
+<tr>
+<td>$H_K$, $(K(x,\cdot)s,f)=(s,f(x))$</td>
+<td>The kernel's Hilbert space and the reproducing property</td>
+</tr>
+<tr>
+<td>$B(w,z)$</td>
+<td>Bergman kernel of $\mathcal{A}^2(\Omega;\mathcal{S})$</td>
+</tr>
+<tr>
+<td>$S(w,z)=E(w-z)\nu_B(z)$</td>
+<td>Szegő kernel of $H^2(\Omega;\mathcal{S})$; the Cauchy kernel on the boundary</td>
+</tr>
+<tr>
+<td>$\mathcal{A}^2=\ker D\cap L^2(\Omega;\mathcal{S})$</td>
+<td>Monogenic Bergman space</td>
+</tr>
+<tr>
+<td>$H^2(\Omega;\mathcal{S})$, $P^+$</td>
+<td>Monogenic Hardy space and Szegő projection</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Delanghe, F. Sommen and V. Souček, <em>Clifford Algebra and Spinor-Valued Functions</em> (Kluwer, 1992), for monogenic Hilbert spaces and their reproducing kernels.</li>
+<li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the Cauchy kernel and the boundary spaces of monogenic functions.</li>
+<li>Saburou Saitoh, <em>Integral Transforms, Reproducing Kernels and their Applications</em> (Longman, 1997), for the Aronszajn theory and the Bergman and Szegő kernels in the classical setting.</li>
+<li>John E. Gilbert and Margaret A. M. Murray, <em>Clifford Algebras and Dirac Operators in Harmonic Analysis</em> (Cambridge University Press, 1991), for the Clifford-valued kernels of the harmonic analysis of the theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

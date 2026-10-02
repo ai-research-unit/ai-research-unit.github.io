@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-an-algebra"><strong>Reflections as Signed Two-Sided Operators on an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection is an order-two symmetry, and on an algebra the symmetries are the automorphisms. The reflections that an algebra carries with respect to an involutive automorphism $\alpha$ are the automorphisms of order two of the form</p>
+<p>$$
+\rho_u(x) = u\,\alpha(x)\,u^{-1},
+$$</p>
+<p>one for each unit $u$ whose product $u\,\alpha(u)$ with its twist is central. Each such $\rho_u$ is a <strong>signed two-sided operator</strong>, the signed sandwich $S_{u,u^{-1}}$ of <em>The Signed Sandwich on an Algebra</em>, and it is an automorphism of the algebra of order two. The present article studies the correspondence between these reflections and the units that produce them, computes the fixed subalgebra and the negated part, and records the cases in which the correspondence fails.</p>
+<p>Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with an involutive automorphism $\alpha$, $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance and the grading theory belongs to <em>Superalgebras and Graded Structures</em>. The signed sandwich and the signed conjugation are those of <em>The Signed Sandwich on an Algebra</em>, the automorphisms and the inner automorphisms are those of <em>Automorphisms and Derivations of Algebras</em>, and the operator-theoretic conventions are those of the group <code>- Operator Theory</code> of this category.</p>
+<h2 id="the-reflector">The Reflector</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>reflector</strong> of $A$ with respect to $\alpha$ is a unit $u \in A^\times$ with</p>
+<p>$$
+u\,\alpha(u) \in Z(A),
+$$</p>
+<p>that is, a unit whose product with its twist is central. The <strong>reflection</strong> determined by a reflector $u$ is the signed conjugation</p>
+<p>$$
+\rho_u : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} = S_{u,\,u^{-1}}(x).
+$$</p>
+<p>The set of reflectors is written $R^\times(A,\alpha)$ and the set of reflections is written $\mathrm{Ref}(A,\alpha)$.</p>
+<p>The word is chosen to match the classical case: on a Clifford algebra the signed conjugations by the odd elements of square one are the reflections in the vectors, and the product $u\alpha(u) = -u^2$ is then a scalar and hence central. The algebra carries the reflector, and the reflection is the operator it produces.</p>
+<h3 id="the-reflection-is-an-involutive-automorphism">The Reflection Is an Involutive Automorphism</h3>
+<p><strong>Theorem.</strong> For every reflector $u$ the signed conjugation $\rho_u$ is an automorphism of the $k$-algebra $A$ with</p>
+<p>$$
+\rho_u^2 = \mathrm{id},
+$$</p>
+<p>so that $\rho_u$ is an involutive automorphism of $A$. Conversely, if a signed conjugation $\rho_u$ is an involutive automorphism, then $u$ is a reflector.</p>
+<p><em>Proof.</em> The signed conjugation is the composite of the automorphisms $\alpha$ and $\iota_u$, hence an automorphism. Its square was computed in <em>The Signed Sandwich on an Algebra</em> as $\rho_u^2 = \iota_{u\alpha(u)}$, the inner automorphism by $u\alpha(u)$; the inner automorphism by an element is the identity exactly when the element is central, so $\rho_u^2 = \mathrm{id}$ exactly when $u\alpha(u)$ is central, which is the definition of a reflector. The converse is the same computation read backwards.</p>
+<p><strong>Corollary.</strong> The reflections are exactly the involutive automorphisms of $A$ that are <strong>signed inner</strong>, that is, of the form $\alpha$ composed with an inner automorphism; the word "signed" records the insertion of $\alpha$, and a reflection is neither an inner automorphism in general nor a signed sandwich with arbitrary two factors.</p>
+<p><strong>Corollary.</strong> The unit $1$ is a reflector — its product $1\cdot\alpha(1) = 1$ with its twist is central — and the reflection it determines is $\rho_1 = \alpha$, the involutive automorphism itself; the family is therefore never empty, and the identity automorphism lies in it exactly when the twist is trivial, $\alpha = \mathrm{id}$.</p>
+<h3 id="the-eigenvalue-decomposition">The Eigenvalue Decomposition</h3>
+<p><strong>Proposition.</strong> Let $u$ be a reflector and let $\rho = \rho_u$ be its reflection. Then $A$ decomposes as</p>
+<p>$$
+A = A^+_\rho \oplus A^-_\rho, \qquad A^+_\rho = \{x : \rho(x) = x\}, \qquad A^-_\rho = \{x : \rho(x) = -x\},
+$$</p>
+<p>the summands are the fixed subalgebra and the negated part, and</p>
+<p>$$
+A^+_\rho A^+_\rho \subseteq A^+_\rho, \qquad A^+_\rho A^-_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^+_\rho \subseteq A^-_\rho, \qquad A^-_\rho A^-_\rho \subseteq A^+_\rho .
+$$</p>
+<p><em>Proof.</em> The map $\rho$ is an involutive automorphism, so its eigenvalues are $\pm 1$ and the decomposition and the multiplication table are those of the eigenspaces of an involutive automorphism, as in <em>The Signed Sandwich on an Algebra</em>. When $2 = 0$ the negated part is zero and the decomposition collapses, since an order-two automorphism is the identity.</p>
+<p><strong>Corollary.</strong> A reflection is determined by its fixed subalgebra, equivalently by its negated part: if $\rho$ and $\rho'$ are involutive automorphisms with the same fixed subalgebra, then $\rho = \rho'$.</p>
+<p><em>Proof.</em> An automorphism of order two is determined by its action on the eigenspaces, and the $\pm1$ eigenspaces determine each other by $A = A^+ \oplus A^-$.</p>
+<p>The corollary is the algebraic replacement for the geometric statement that a reflection is determined by its mirror: the mirror is the fixed subalgebra, and the negated part is the perpendicular direction, which is a Part II object and is not named here.</p>
+<h2 id="the-correspondence">The Correspondence</h2>
+<h3 id="the-map-from-the-reflectors">The Map from the Reflectors</h3>
+<p><strong>Theorem.</strong> The assignment $u \mapsto \rho_u$ is a map from the reflectors of $A$ onto the reflections of $A$, and it is constant exactly on the cosets of the centre: for units $u$ and $v$,</p>
+<p>$$
+\rho_u = \rho_v \qquad \Longleftrightarrow \qquad v^{-1} u \in Z(A)^\times .
+$$</p>
+<p>Hence the reflections are parametrised by the reflectors modulo the units of the centre,</p>
+<p>$$
+\mathrm{Ref}(A,\alpha) \;\cong\; R^\times(A,\alpha) / Z(A)^\times ,
+$$</p>
+<p>and the reflection $\rho_1 = \alpha$ is the class of the central units.</p>
+<p><em>Proof.</em> Suppose $\rho_u = \rho_v$, that is $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for every $x$. Multiplying by $v^{-1}$ on the left and by $u$ on the right gives $(v^{-1}u)\alpha(x) = \alpha(x)(v^{-1}u)$ for every $x$; since $\alpha$ is surjective, this says that $v^{-1}u$ commutes with every element, that is $v^{-1}u \in Z(A)$. Both are units, so the element lies in $Z(A)^\times$. Conversely a central unit is absorbed by the conjugation. Finally the image of $Z(A)^\times$ is $\alpha$, since a central unit commutes with everything and $\rho_u = \alpha$ when $u$ is central.</p>
+<h3 id="the-element-acting-by-an-involution">The Element Acting by an Involution</h3>
+<p><strong>Proposition.</strong> Let $u$ be a reflector and let $\rho = \rho_u$. Then</p>
+<p>$$
+\rho(u) = \alpha(u),
+$$</p>
+<p>and $\rho$ is the composite $\rho = \iota_u \circ \alpha$ of the inner automorphism by $u$ and the twist. Equivalently, $u$ acts on $A$ through the inner automorphism that corrects $\alpha$ to $\rho$.</p>
+<p><em>Proof.</em> Since $u\alpha(u)$ is central, $u$ commutes with it, so $\rho(u) = u\alpha(u)u^{-1} = \alpha(u)$. The composite form is the definition: $\iota_u(\alpha(x)) = u\alpha(x)u^{-1} = \rho(x)$.</p>
+<p><strong>Corollary.</strong> Every reflection is the composite of the fixed involutive automorphism $\alpha$ with an inner automorphism, $\rho_u = \iota_u \alpha$, and the reflector $u$ is the element whose inner automorphism corrects the twist to the desired reflection. The correspondence of the theorem is therefore the statement that the reflections form the coset $\iota_{A^\times}\alpha$ of the inner automorphism group inside the automorphism group, restricted to the elements of order two.</p>
+<p><em>Proof.</em> The identity $\rho_u = \iota_u\alpha$ is the definition read as a composite. Two coset representatives give the same reflection exactly when their ratio is central, by the theorem; the inner automorphism $\iota_u$ depends on $u$ only through its class modulo the centre, so the restriction to reflectors cuts out the reflections among the elements of order two.</p>
+<h3 id="the-correspondence-in-the-automorphism-group">The Correspondence in the Automorphism Group</h3>
+<p><strong>Proposition.</strong> The reflections of $A$ relative to $\alpha$ are the involutive automorphisms lying in the coset $\iota_{A^\times} \alpha$ of the inner automorphism group, and the map</p>
+<p>$$
+A^\times / Z(A)^\times \longrightarrow \mathrm{Out}(A) = \operatorname{Aut}_k(A)/\operatorname{Inn}_k(A), \qquad [u] \mapsto [\iota_u]
+$$</p>
+<p>sends the reflectors to the classes of the reflections. In particular, if every automorphism of $A$ is inner — for example if $A$ is a central simple algebra, by <em>Central Simple Algebras and the Brauer Group</em> — then every involutive automorphism is a reflection up to a choice of $\alpha$.</p>
+<p><em>Proof.</em> The first statement is the corollary above. The map $[u] \mapsto [\iota_u]$ is the standard identification of the inner automorphism group with $A^\times/Z(A)^\times$. For a central simple algebra the outer automorphism group is trivial, so every automorphism lies in the inner coset, and an involutive automorphism lies in the inner coset of the appropriate $\alpha$.</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<h3 id="the-failure-of-order-two">The Failure of Order Two</h3>
+<p><strong>Proposition.</strong> For a unit $u$ that is not a reflector, the signed conjugation $\rho_u$ is an automorphism and its square is the inner automorphism $\iota_{u\alpha(u)} \neq \mathrm{id}$; hence $\rho_u$ has infinite order whenever $u\alpha(u)$ has infinite order as an inner automorphism. Such an operator is a signed two-sided operator but not a reflection.</p>
+<p><em>Proof.</em> The square is $\iota_{u\alpha(u)}$ by the computation of <em>The Signed Sandwich on an Algebra</em>. If $u\alpha(u)$ is not central, its inner automorphism is not the identity, and the powers of $\rho_u$ are governed by the powers of $u\alpha(u)$; the inner automorphism $\iota_w$ has finite order exactly when some power of $w$ is central, so $\rho_u$ has infinite order when no power of $u\alpha(u)$ is central.</p>
+<p><strong>Example.</strong> Let $A = M_n(k)$ with $\alpha = \mathrm{id}$ and let $u$ be a noncentral invertible matrix. Then $\rho_u = \iota_u$ is an inner automorphism whose order is the order of the class of $u$ in $A^\times/Z(A)^\times$; for a generic $u$ this order is infinite. The signed conjugation is thus not a reflection, and the reflector condition $u\alpha(u) = u^2 \in Z(A)$, which for $\alpha = \mathrm{id}$ reduces to $u^2$ scalar, is the obstruction.</p>
+<h3 id="the-central-case">The Central Case</h3>
+<p><strong>Proposition.</strong> If $u$ is central, then $\rho_u = \alpha$, whatever $u$ is. Hence the central units contribute only the reflection $\alpha$, and the correspondence is not injective at the centre. This is exactly the kernel computed in the theorem.</p>
+<p><em>Proof.</em> A central unit commutes with everything, so $\rho_u(x) = u\alpha(x)u^{-1} = \alpha(x)$.</p>
+<h3 id="the-characteristic-two-case-and-the-trivial-twist">The Characteristic-Two Case and the Trivial Twist</h3>
+<p><strong>Proposition.</strong> When $2 = 0$ in $k$, or more generally when $\alpha = \mathrm{id}$, the signed conjugation is the ordinary inner automorphism $\iota_u$, the condition for a reflector is $u^2 \in Z(A)$, and the reflections are the inner involutions. In particular the family may be trivial.</p>
+<p><em>Proof.</em> With $\alpha = \mathrm{id}$ one has $\rho_u = \iota_u$ and $u\alpha(u) = u^2$; the criterion of the theorem gives the reflector condition, and the reflections are the inner automorphisms of order two. When $2 = 0$ every involutive automorphism is the identity in the sense that its negated part is zero, so the only reflections of order two that remain are the inner involutions whose square is the identity, and the decomposition of a reflection into fixed and negated parts collapses.</p>
+<h3 id="the-non-inner-involutions">The Non-Inner Involutions</h3>
+<p><strong>Proposition.</strong> An involutive automorphism of $A$ that is not signed inner is not a reflection of the family. In particular, if the outer automorphism group of $A$ is nontrivial, there are involutive automorphisms outside the coset $\iota_{A^\times}\alpha$.</p>
+<p><em>Proof.</em> The reflections lie in the coset $\iota_{A^\times}\alpha$ by the correspondence theorem, and an automorphism outside that coset represents a nontrivial class in $\mathrm{Out}(A)$, so it cannot be a reflection.</p>
+<p>The four cases are the failure of the correspondence in the two directions: a signed conjugation need not be a reflection when the reflector condition fails, and an involutive automorphism need not be a signed conjugation when it is outer. The correspondence is exact only under the two hypotheses — the reflector condition for the operator and the innerness of the automorphism.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="a-matrix-algebra-with-a-diagonal-twist">A Matrix Algebra with a Diagonal Twist</h3>
+<p>Let $A = M_n(k)$ and let $D$ be an invertible diagonal matrix with $D^2 = I$; the map $\alpha(X) = DXD^{-1}$ is an involutive automorphism, the conjugation by a sign matrix, and it is the grade involution of the grading that puts the entries in the $+1$ blocks in even degree and the entries in the $-1$ blocks in odd degree. A unit $U$ is a reflector exactly when $U\alpha(U) = U D U D^{-1}$ is a scalar, and the reflection is $\rho_U(X) = U D X D^{-1} U^{-1} = (UD)\,X\,(UD)^{-1}$: the reflection is the inner automorphism by the product $UD$, and the reflectors are the units $U$ for which $UDU D^{-1}$ is scalar. For $D = I$ this reduces to the case in which the reflections are the involutive inner automorphisms by matrices whose square is scalar.</p>
+<h3 id="a-group-algebra-with-a-parity">A Group Algebra with a Parity</h3>
+<p>Let $A = k[G]$ and let $\chi : G \to \{\pm 1\}$ be a homomorphism, extending to the involutive automorphism $\alpha$ of <em>The Signed Sandwich on an Algebra</em>, so that $\alpha(x_h) = \chi(h)x_h$ on a group element. A group element $g$ is a reflector exactly when $\chi(g)\,g^2$ is central, and the reflection acts on a group element by
+$$
+\rho_g(x_h) = g\,\alpha(x_h)\,g^{-1} = \chi(h)\,x_{ghg^{-1}} = \alpha\bigl(x_{ghg^{-1}}\bigr),
+$$
+so the sign is the parity of the element acted on and not of the conjugating element. Every central element is a reflector, and so is every element of order two, since $\chi(g)$ is a scalar; the reflections are therefore the conjugations by those group elements modulo the centre.</p>
+<h3 id="the-exterior-algebra">The Exterior Algebra</h3>
+<p>Let $A = \Lambda(V)$ with the degree grading. For a unit $u$ the signed conjugation is $\rho_u(x) = u\alpha(x)u^{-1}$, and the reflector condition is $u\alpha(u) \in Z(A)$. For an even unit $u$ this is $u^2$ central, and for an odd unit it is $-u^2$ central. The exterior algebra is not a Clifford algebra, so an odd vector $v$ has $v^2 = 0$ and is not a unit; the reflections by vectors therefore require the Clifford quotient, where $v^2$ is a scalar by construction, and that construction belongs to <em>Quadratic Forms and Clifford Algebras</em> of Part II.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>reflector</strong> is a unit $u$ with $u\alpha(u)$ central, and the <strong>reflection</strong> it determines is the signed two-sided operator $\rho_u(x) = u\alpha(x)u^{-1} = S_{u,u^{-1}}(x)$. Each reflection is an automorphism of $A$ of order two, being the composite $\iota_u\alpha$ of the inner automorphism by $u$ and the fixed involutive automorphism $\alpha$; the square is $\rho_u^2 = \iota_{u\alpha(u)}$, so the reflector condition is exactly the condition that the reflection be of order two. A reflection is determined by its fixed subalgebra $A^+_\rho$, the decomposition $A = A^+_\rho \oplus A^-_\rho$ has the multiplication table of a $\mathbb{Z}/2$-grading, and the negated part is a Part II object when it is read geometrically.</p>
+<p>The correspondence between reflections and reflectors is $\mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)/Z(A)^\times$, with $\rho_u = \rho_v$ exactly when $v^{-1}u$ is central; the class of the central units is the reflection $\rho_1 = \alpha$. The reflections are the involutive automorphisms in the coset $\iota_{A^\times}\alpha$ of the inner automorphism group. The correspondence fails in the degenerate cases: a signed conjugation with $u\alpha(u)$ noncentral is an automorphism of infinite order and not a reflection; the central units all give $\alpha$; when $\alpha = \mathrm{id}$ the reflections are the inner involutions $u^2 \in Z(A)$; and an involutive automorphism that is outer is not a signed conjugation at all. On $M_n(k)$ with a diagonal twist the reflections are the inner automorphisms by the products $UD$, and on a group algebra with a parity they are the conjugations dressed by the parity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the fixed involutive automorphism, $\alpha^2 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$R^\times(A,\alpha)$</td>
+<td>the reflectors, the units $u$ with $u\alpha(u)$ central</td>
+</tr>
+<tr>
+<td>$\rho_u(x) = u\alpha(x)u^{-1}$</td>
+<td>the reflection by the reflector $u$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ref}(A,\alpha)$</td>
+<td>the reflections, $\cong R^\times(A,\alpha)/Z(A)^\times$</td>
+</tr>
+<tr>
+<td>$A = A^+_\rho \oplus A^-_\rho$</td>
+<td>the fixed and negated parts of a reflection</td>
+</tr>
+<tr>
+<td>$\rho_u = \iota_u \alpha$</td>
+<td>the reflection as a composite</td>
+</tr>
+<tr>
+<td>$\rho_u^2 = \iota_{u\alpha(u)}$</td>
+<td>the square, the identity exactly for a reflector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the inner automorphisms and the coset structure of the automorphism group.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the involutive automorphisms and the gradings they define.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em> (Springer, 1997), for the reflections realised by the signed conjugations.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions and the automorphisms of the classical algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

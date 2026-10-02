@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-hilbert-space"><strong>The Signed Adjoint Sandwich on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich of a graded Hilbert space is the two-sided operator $S_{A,B}(T)=A\,\alpha(T)\,B$, with $\alpha(T)=\Gamma T\Gamma$ the grade involution, and its adjoint with respect to the Hilbert–Schmidt form has a closed expression,</p>
+<p>$$
+(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)},\qquad \alpha(A^*)=\alpha(A)^* ,
+$$</p>
+<p>so the adjoint of a signed sandwich is again a signed sandwich, obtained by adjoining the two parameters and applying the grade involution to each. The same computation for the unsigned sandwich gives $(T_{A,B})^*=T_{A^*,B^*}$, and the two formulas together show that the adjunction of the two-sided operators is an involution of the algebra they generate. From the adjoint come the criteria that this article computes: self-adjointness of the signed sandwich, its isometry, and the <strong>unitarity condition</strong>, which turns out to be the condition that the parameters be unitary up to central scalars rather than unitary outright. The adjoint is the object from which the signed adjoint of the reflection and the signed adjoint of the one-sided multiplications are read, and those are the subjects of the two companion articles.</p>
+<p>This article fixes the Hilbert–Schmidt form, the adjoint of the unsigned and signed sandwiches, the adjoint of the product and its compatibility with the composition table, the self-adjointness, isometry and unitarity criteria, and the relation of the sandwich adjoint to the one-sided adjoints. The signed sandwich, its composition table and its invertibility are <em>The Signed Sandwich on a Hilbert Space</em>; the one-sided multiplications and their adjoints are <em>The Left and Right Multiplication Operators on a Hilbert Space</em> and <em>The Adjoint of the Left Multiplication on a Hilbert Space</em>; the reflections are <em>Reflections as Signed Two-Sided Operators on a Hilbert Space</em>, and their adjoints are <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>; the graded-module version is <em>The Graded Adjoint Action on a Module over a Hilbert Space</em>.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a $\mathbb{Z}/2$-graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$ and grade involution $\alpha(T)=\Gamma T\Gamma$; the Hilbert–Schmidt form on $S_2(H)$ is $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, and the adjoint is taken with respect to it. The two-sided operators are $T_{A,B}(T)=ATB$ (unsigned) and $S_{A,B}(T)=A\,\alpha(T)\,B$ (signed), and $A^*$ is the Hilbert adjoint.</p>
+<h2 id="the-adjoint-of-the-unsigned-sandwich">The Adjoint of the Unsigned Sandwich</h2>
+<p><strong>Theorem (the unsigned case).</strong> For all $A,B\in B(H)$,</p>
+<p>$$
+(T_{A,B})^*=T_{A^*,B^*},
+$$</p>
+<p>so the adjoint of an unsigned sandwich is the unsigned sandwich of the adjoints, and the map $A\mapsto L_A$ together with $B\mapsto R_B$ gives a $*$-representation of $B(H)\times B(H)^{\mathrm{op}}$.</p>
+<p><em>Proof.</em> $\langle T_{A,B}X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(AXBY^*)=\operatorname{tr}(XA^*YB^*)=\langle X,A^*YB^*\rangle_{\mathrm{HS}}=\langle X,T_{A^*,B^*}Y\rangle_{\mathrm{HS}}$, using the ciclicity of the trace; uniqueness of the adjoint gives the identity.</p>
+<p><strong>Corollary (self-adjointness of the unsigned sandwich).</strong> If $A$ and $B$ are self-adjoint then $T_{A,B}$ is self-adjoint; conversely, if $A$ and $B$ are invertible, $T_{A,B}$ is self-adjoint exactly when $A^*=kA$ and $B^*=k^{-1}B$ for a nonzero scalar $k$, the scalar expressing the ambiguity $T_{kA,k^{-1}B}=T_{A,B}$. In particular $T_{A,B}$ is positive if $A$ and $B$ are positive, and $T_{A,B}$ is an orthogonal projection exactly when $A$ and $B$ are orthogonal projections with $AB=I$.</p>
+<p><em>Proof.</em> The adjoint formula and the two-sided identity $T_{C,D}=I\iff C,D$ reciprocal central show that $T_{A^*,B^*}=T_{A,B}$ is equivalent, for invertible parameters, to $A^*=kA$, $B^*=k^{-1}B$; positivity for self-adjoint positive $A,B$ is $\langle T_{A,B}X,X\rangle_{\mathrm{HS}}=\operatorname{tr}(AXBX^*)\ge0$, and the projection statement is the idempotence $T_{A,B}^2=T_{A^2,B^2}$ together with positivity.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Theorem (the signed case).</strong> For all $A,B\in B(H)$,</p>
+<p>$$
+(S_{A,B})^*=S_{\alpha(A^*),\,\alpha(B^*)},
+$$</p>
+<p>and since $\alpha$ is a $*$-automorphism, $\alpha(A^*)=\alpha(A)^*$; the adjoint of the signed sandwich is the signed sandwich of the $\alpha$-adjoined parameters, so the signed sandwiches form a family closed under the adjunction.</p>
+<p><em>Proof.</em> $\langle S_{A,B}X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(A\alpha(X)BY^*)=\operatorname{tr}(\alpha(X)BY^*A)=\operatorname{tr}(X\,\alpha(BY^*A))=\operatorname{tr}(X\,\alpha(B)\alpha(Y^*)\alpha(A))=\operatorname{tr}(X\,\alpha(A^*)\alpha(Y)\alpha(B^*))=\langle X,S_{\alpha(A^*),\alpha(B^*)}Y\rangle_{\mathrm{HS}}$, using $\alpha(Y^*)=\alpha(Y)^*$, the ciclicity of the trace and the self-adjointness of the substitution $\alpha$ for the form.</p>
+<p><strong>Corollary (compatibility with the composition table).</strong> The adjunction is compatible with the products of the signed sandwich:</p>
+<p>$$
+(T_{A,B}T_{C,D})^*=(T_{AC,DB})^*=T_{C^*A^*,\,B^*D^*},
+\qquad
+(S_{A,B}S_{C,D})^*=(T_{A\alpha(C),\alpha(D)B})^*=T_{\alpha(C^*)\alpha(A^*),\,\alpha(B^*)\alpha(D^*)},
+$$</p>
+<p>both sides being the reversal of the order together with the adjunction of the parameters; the adjunction is therefore an anti-automorphism of the algebra generated by the two-sided operators, of order two.</p>
+<p><em>Proof.</em> Each identity is the product rule $(PQ)^*=Q^*P^*$ applied to the composition table of <em>The Signed Sandwich on a Hilbert Space</em>, with the adjoint formulas of the two theorems.</p>
+<p><strong>Proposition (the sandwich adjoint and the one-sided adjoints).</strong> Since $S_{A,B}=L_A\varrho_B=\ell_AR_{\alpha(B)}$ and the one-sided adjoints are $L_A^*=L_{A^*}$, $R_B^*=R_{B^*}$, $\ell_A^*=\ell_{\alpha(A^*)}$ and $\varrho_B^*=\varrho_{\alpha(B^*)}$, the adjoint of the signed sandwich is also the composite</p>
+<p>$$
+(S_{A,B})^*=(\ell_AR_{\alpha(B)})^*=R_{\alpha(B)}^*\ell_A^*=R_{\alpha(B^*)}\ell_{\alpha(A^*)},
+$$</p>
+<p>and $R_{\alpha(B^*)}\ell_{\alpha(A^*)}(X)=\alpha(A^*)\alpha(X)\alpha(B^*)$, which is the closed form; the two computations are the same identity read through the two decompositions of the sandwich.</p>
+<p><em>Proof.</em> The composite reverses the order of $S_{A,B}=\ell_AR_{\alpha(B)}$; the one-sided adjoints are <em>The Adjoint of the Left Multiplication on a Hilbert Space</em> and its signed companion, $\alpha^*=\alpha$, and the evaluation is associativity together with the multiplicativity of $\alpha$.</p>
+<h2 id="self-adjointness-isometry-and-the-unitarity-condition">Self-Adjointness, Isometry and the Unitarity Condition</h2>
+<p><strong>Theorem (self-adjointness).</strong> If $\alpha(A^*)=A$ and $\alpha(B^*)=B$ then the signed sandwich is self-adjoint, $(S_{A,B})^*=S_{A,B}$; conversely, if $A$ and $B$ are invertible, self-adjointness forces $\alpha(A^*)=kA$ and $\alpha(B^*)=k^{-1}B$ for a nonzero scalar $k$, the scalar expressing the ambiguity $S_{kA,k^{-1}B}=S_{A,B}$. In particular, if $A$ and $B$ are self-adjoint and even then $S_{A,B}$ is self-adjoint.</p>
+<p><em>Proof.</em> The closed form $(S_{A,B})^*=S_{\alpha(A^*),\alpha(B^*)}$ gives the sufficiency; for the converse, equality of two signed sandwiches with invertible parameters forces the parameters to be reciprocal scalar multiples of one another, as in the unsigned case, and substituting the adjoint parameters gives the display; the last statement is $\alpha(A^*)=\alpha(A)^*=A^*=A$ for self-adjoint even $A$.</p>
+<p><strong>Theorem (isometry).</strong> The signed sandwich is an isometry of $S_2(H)$ if and only if</p>
+<p>$$
+\alpha(A^*A)=\lambda I,\qquad \alpha(BB^*)=\lambda^{-1}I
+$$</p>
+<p>for a nonzero scalar $\lambda$; when $A$ and $B$ are unitary the condition holds with $\lambda=1$, and the adjoint is an isometry with the reciprocal data.</p>
+<p><em>Proof.</em> By the composition table, $S_{A,B}^*S_{A,B}=S_{\alpha(A^*),\alpha(B^*)}S_{A,B}=T_{\alpha(A^*)\alpha(A),\,\alpha(B)\alpha(B^*)}=T_{\alpha(A^*A),\,\alpha(BB^*)}$; a two-sided operator $T_{C,D}$ is the identity exactly when $C$ and $D$ are reciprocal central elements, since $CXD=X$ for all $X$ forces, at $X=I$, $CD=I$ and then $CX=XC$; substituting $C=\alpha(A^*A)$, $D=\alpha(BB^*)$ gives the condition. The next computation $S_{A,B}S_{A,B}^*=T_{AA^*,\,B^*B}$ gives the co-isometry with the roles of the parameters exchanged, and unitarity is the two together.</p>
+<p><strong>Theorem (the unitarity condition).</strong> The signed sandwich $S_{A,B}$ is unitary on $S_2(H)$ if and only if there are nonzero scalars $\lambda,\mu$ with</p>
+<p>$$
+\alpha(A^*A)=\lambda I,\quad \alpha(BB^*)=\lambda^{-1}I,\quad AA^*=\mu I,\quad B^*B=\mu^{-1}I ;
+$$</p>
+<p>in particular, if $A$ and $B$ are unitary then $\lambda=\mu=1$ and $S_{A,B}$ is unitary, and conversely $S_{A,B}$ unitary with $A$ and $B$ invertible makes the four products central scalars, so each parameter is unitary up to a central scalar.</p>
+<p><em>Proof.</em> Unitarity is the isometry together with the co-isometry; the isometry gives $\alpha(A^*A)$ and $\alpha(BB^*)$ reciprocal central scalars, the co-isometry gives $AA^*$ and $B^*B$ reciprocal central scalars, and the two pairs give the display. Sufficiency for unitary $A,B$ is immediate since $A^*A=AA^*=I$ and the same for $B$; the converse reads the centrality off the two-sided identities.</p>
+<p><strong>Corollary (the reflection case, flagged).</strong> For $B=A^{-1}$ the sandwich is the reflection $\rho_A=S_{A,A^{-1}}$, and the unitarity condition becomes the condition on $A$ alone; the adjoint $(\rho_A)^*=S_{\alpha(A^*),\,\alpha((A^*)^{-1})}=\rho_{\alpha(A^*)}$ and the self-adjointness of the reflection are <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>. The reflections themselves are <em>Reflections as Signed Two-Sided Operators on a Hilbert Space</em>.</p>
+<h2 id="examples-and-computations">Examples and Computations</h2>
+<p><strong>Example (the finite-dimensional blocks).</strong> For $H=\mathbb{K}^{p+q}$ with $\Gamma=\operatorname{diag}(I_p,-I_q)$ and matrices $A=\begin{pmatrix}A_0&A_1\\A_1'&A_0'\end{pmatrix}$, $B=\begin{pmatrix}B_0&B_1\\B_1'&B_0'\end{pmatrix}$ in even-odd block form, the sign enters only on the odd part of the argument, and the adjoint formula is the conjugate transposition of the blocks combined with the sign reversal of the odd blocks; the self-adjointness condition is that the even blocks be self-adjoint and the odd blocks be skew in the $\alpha$-signed sense.</p>
+<p><strong>Proposition (the adjoint of the signed sandwich on rank-one operators).</strong> On a rank-one operator the signed sandwich acts by $S_{A,B}(\xi\otimes\bar\eta)=A\,\alpha(\xi\otimes\bar\eta)\,B$, with $\alpha(\xi\otimes\bar\eta)=\Gamma\xi\otimes\overline{\Gamma\eta}$, so the parity operator acts on both vectors; the pairing identity $\langle S_{A,B}T,T'\rangle_{\mathrm{HS}}=\langle T,S_{\alpha(A^*),\alpha(B^*)}T'\rangle_{\mathrm{HS}}$ is the rank-one form of the theorem, and it exhibits the two occurrences of the parity operator.</p>
+<p><em>Proof.</em> The action of the sandwich on a rank-one operator is associativity, $\alpha(\xi\otimes\bar\eta)=\Gamma(\xi\otimes\bar\eta)\Gamma$ is the conjugated rank-one operator with both vectors twisted by $\Gamma$, and the adjoint pairing is the trace of the product of two rank-one operators, as in <em>The Left and Right Multiplication Operators on a Hilbert Space</em>.</p>
+<p><strong>Example (the sign is invisible at $\alpha=\mathrm{id}$).</strong> When $H^1=0$ the grade involution is the identity, the signed and unsigned sandwiches agree, and the adjoint formula reduces to $(T_{A,B})^*=T_{A^*,B^*}$; the signed theory is the unsigned theory, and the unitarity condition is the plain unitarity of the two parameters.</p>
+<h2 id="summary">Summary</h2>
+<p>With respect to the Hilbert–Schmidt form, the unsigned sandwich $T_{A,B}(T)=ATB$ has adjoint $T_{A^*,B^*}$ and the signed sandwich $S_{A,B}(T)=A\alpha(T)B$ has adjoint $S_{\alpha(A^*),\alpha(B^*)}$, so both families are closed under adjunction and the adjunction is an anti-automorphism of the algebra they generate; when the grading is trivial the second formula reduces to the first. The adjoint of $S_{A,B}$ is also the composite of the one-sided adjoints, $\alpha$ being self-adjoint for the form, and the two computations agree. The signed sandwich is self-adjoint exactly when $\alpha(A^*)=A$ and $\alpha(B^*)=B$; it is an isometry exactly when $\alpha(A^*A)$ and $\alpha(BB^*)$ are reciprocal central scalars; and it is unitary exactly when the additional conditions $AA^*=\lambda I$, $B^*B=\lambda^{-1}I$ hold, so that the unitarity of the sandwich is the unitarity of the parameters up to central scalars, and unitary parameters give a unitary sandwich. The reflection is the case $B=A^{-1}$, whose adjoint is $\rho_{\alpha(A^*)}$, and its self-adjointness is <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$</td>
+<td>the Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>$T_{A,B}(T)=ATB$</td>
+<td>the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$S_{A,B}(T)=A\alpha(T)B$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$(T_{A,B})^*=T_{A^*,B^*}$</td>
+<td>adjoint of the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$(S_{A,B})^*=S_{\alpha(A^*),\alpha(B^*)}$</td>
+<td>adjoint of the signed sandwich</td>
+</tr>
+<tr>
+<td>$\alpha(A^*)=\alpha(A)^*$</td>
+<td>the involution commutes with the grade involution</td>
+</tr>
+<tr>
+<td>$S_{A,B}^*S_{A,B}=T_{\alpha(A^*A),\alpha(BB^*)}$</td>
+<td>isometry condition</td>
+</tr>
+<tr>
+<td>$\alpha(A^*A)=\lambda I$, $\alpha(BB^*)=\lambda^{-1}I$</td>
+<td>the isometry data</td>
+</tr>
+<tr>
+<td>$(\rho_A)^*=\rho_{\alpha(A^*)}$</td>
+<td>the reflection case</td>
+</tr>
+<tr>
+<td>$\alpha=\mathrm{id}\Leftrightarrow H^1=0$</td>
+<td>degenerate case, signed equals unsigned</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the two-sided operators and their adjoints.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the elementary operators and the trace identities.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em>, Mathematical Surveys and Monographs 120 (American Mathematical Society, 2nd ed. 2005), for the Hilbert–Schmidt form and the rank-one computations.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the adjoints of elementary operators and the self-adjointness criteria.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the $*$-automorphisms and the anti-automorphisms of the adjunction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

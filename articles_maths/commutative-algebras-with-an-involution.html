@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commutative Algebras with an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="commutative-algebras-with-an-involution"><strong>Commutative Algebras with an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a commutative algebra every anti-automorphism is an automorphism, so an <strong>involution of a commutative algebra</strong> is simply an algebra automorphism of order two; and every such automorphism makes the algebra a module over its <strong>fixed subalgebra</strong> $A^\sigma$ with a descent datum. The two subjects of this article are the <strong>fixed subalgebra</strong> and the <strong>descent to the self-adjoint part</strong>: the fixed subalgebra is the ring of invariants, the skew part is a module over it whose products fall back into it, and a module over the involutive algebra with a compatible semilinear involution descends to a module over the fixed subalgebra. This is the commutative case of the picture of <em>Involutive Linear Algebras</em>, specialised and read with the descent, and it is the case that the symmetric algebra of <em>The Symmetric Algebra with an Involution</em> and the polynomial ring exhibit.</p>
+<p>The article shows that the fixed subalgebra of an involution of a commutative algebra is a subalgebra, that the algebra decomposes as $A = A^\sigma\oplus A^-$ when $2$ is invertible, and that $A^-$ is an $A^\sigma$-module with $A^-\cdot A^-\subseteq A^\sigma$, so that $A$ is generated over $A^\sigma$ by $A^-$ as a square-zero-compatible extension. When $A^-$ is a free $A^\sigma$-module of rank one, $A = A^\sigma\oplus A^\sigma t$ with $\sigma(t) = -t$ and $t^2 \in A^\sigma$, and $A$ is a quadratic algebra over $A^\sigma$; this is the model for the descent. The article then states the <strong>descent</strong>: the category of $A$-modules with a $\sigma$-semilinear involution $\tau$ is equivalent to the category of $A^\sigma$-modules, by the functors $M\mapsto H(M) = \{m : \tau(m) = m\}$ and $N\mapsto N\otimes_{A^\sigma}A$, the equivalence holding under the flatness that the quadratic model provides. The worked examples are the polynomial ring with $\sigma(x) = -x$, whose fixed subalgebra is the ring of even polynomials, and the quadratic field extension, which is the classical Galois descent of a vector space with a semilinear involution.</p>
+<p>The article assumes <em>Involutive Linear Algebras</em> for the involution of an associative algebra and the symmetric and skew elements, <em>Algebras</em> and <em>Commutative Algebras</em> for the objects, <em>Modules over a Ring</em> and <em>Extension of Scalars</em> for the module theory, <em>Tensor Products of Modules</em> for the tensor product, and <em>Galois Theory</em> for the quadratic extension. The Jordan case is <em>Jordan Algebras with an Involution</em>, the symmetric algebra is <em>The Symmetric Algebra with an Involution</em>, and the real forms are <em>Real Forms and the Descent of an Algebra</em>, in this group. Throughout, $R$ is a commutative ring with identity, $A$ is a commutative unital $R$-algebra, $\sigma$ is an $R$-algebra involution (an automorphism of order two) of $A$, $A^\sigma = A^+$ is the fixed subalgebra, and $A^-$ is the skew part; no form, norm or distance occurs.</p>
+<h2 id="involution-of-a-commutative-algebra">Involution of a Commutative Algebra</h2>
+<h3 id="the-two-notions-coincide">The Two Notions Coincide</h3>
+<p><strong>Proposition.</strong> Let $A$ be a commutative unital $R$-algebra. A map $\sigma : A\to A$ is an anti-automorphism of order two if and only if it is an automorphism of order two. Hence the involutions of a commutative algebra are exactly its involutive automorphisms, and the distinction of <em>Involutive Linear Algebras</em> between the involution and the involutive automorphism is void.</p>
+<p><em>Proof.</em> In a commutative algebra $ba = ab$, so multiplicativity and anti-multiplicativity are the same condition. $\square$</p>
+<p><strong>Definition.</strong> An <strong>involutive commutative algebra</strong> is a commutative unital $R$-algebra $A$ with an $R$-algebra automorphism $\sigma$ of order two; its <strong>fixed subalgebra</strong> is $A^\sigma = \{a : \sigma(a) = a\}$, its <strong>skew part</strong> is $A^- = \{a : \sigma(a) = -a\}$, and an element of $A^\sigma$ is <strong>symmetric</strong>.</p>
+<h3 id="the-decomposition">The Decomposition</h3>
+<p><strong>Theorem.</strong> If $2$ is invertible in $R$, then</p>
+<p>$$
+A = A^\sigma \oplus A^- , \qquad \sigma(a^\sigma + a^-) = a^\sigma - a^- ,
+$$</p>
+<p>and both summands are $A^\sigma$-submodules of $A$.</p>
+<p><em>Proof.</em> The projections $a\mapsto\tfrac12(a+\sigma(a))$ and $a\mapsto\tfrac12(a-\sigma(a))$ are $A^\sigma$-linear and split the identity; their images are $A^\sigma$ and $A^-$. $\square$</p>
+<p><strong>Proposition.</strong> The fixed subalgebra is a subalgebra of $A$, and it is generated as an $R$-algebra by the images $\tfrac12(a+\sigma(a))$ of the generators of $A$; the skew part is an $A^\sigma$-module and it is closed under the commutator trivially, while</p>
+<p>$$
+A^-\cdot A^- \subseteq A^\sigma , \qquad A^\sigma\cdot A^- \subseteq A^- .
+$$</p>
+<p><em>Proof.</em> Products of fixed elements are fixed and the skew part is carried by the sign rule: $(-1)(-1) = +1$, $(+1)(-1) = -1$; these are the inclusions. $\square$</p>
+<p><strong>Corollary (the square of a skew element).</strong> For $t \in A^-$ one has $t^2 \in A^\sigma$; the skew part obeys the parity rule $A^-\cdot A^-\subseteq A^\sigma$, and $A$ is generated over $A^\sigma$ by $A^-$ together with $A^\sigma$ itself.</p>
+<h3 id="the-quadratic-model">The Quadratic Model</h3>
+<p><strong>Theorem.</strong> Suppose $A = A^\sigma\oplus A^-$ and $A^- = A^\sigma t$ is a free $A^\sigma$-module of rank one with $\sigma(t) = -t$. Then $t^2 \in A^\sigma$, every element of $A$ is uniquely $a^\sigma + b^\sigma t$ with $a^\sigma, b^\sigma \in A^\sigma$, and</p>
+<p>$$
+(a^\sigma + b^\sigma t)(c^\sigma + d^\sigma t) = (a^\sigma c^\sigma + b^\sigma d^\sigma t^2) + (a^\sigma d^\sigma + b^\sigma c^\sigma)t .
+$$</p>
+<p>Thus $A$ is a <strong>quadratic algebra</strong> over $A^\sigma$ in the sense of the extension of scalars, and $\sigma$ is the nontrivial automorphism of the quadratic pair; when $A$ is a field, $A/A^\sigma$ is a quadratic extension.</p>
+<p><em>Proof.</em> $t^2$ is fixed by the sign rule $A^-\cdot A^-\subseteq A^\sigma$; the multiplication formula is bilinearity and $t^2 \in A^\sigma$; uniqueness of the coordinates is the directness of the sum. $\square$</p>
+<h2 id="the-descent-to-the-self-adjoint-part">The Descent to the Self-Adjoint Part</h2>
+<h3 id="semilinear-modules-and-the-self-adjoint-part">Semilinear Modules and the Self-Adjoint Part</h3>
+<p><strong>Definition.</strong> Let $(A,\sigma)$ be an involutive commutative algebra. A <strong>$\sigma$-semilinear involution</strong> of an $A$-module $M$ is an additive map $\tau : M \to M$ with</p>
+<p>$$
+\tau(am) = \sigma(a)\,\tau(m), \qquad \tau^2 = \mathrm{id} .
+$$</p>
+<p>The <strong>self-adjoint part</strong> of $(M,\tau)$ is $H(M) = \{m \in M : \tau(m) = m\}$.</p>
+<p><strong>Proposition.</strong> $H(M)$ is an $A^\sigma$-submodule of $M$, and the map $h\mapsto h$ identifies it with a subset of $M$ on which $A^\sigma$ acts; if $2$ is invertible then $M = H(M)\oplus S(M)$ with $S(M) = \{m : \tau(m) = -m\}$, as $A^\sigma$-modules, and $\tau$ is the multiplication by $-1$ on the skew part.</p>
+<p><em>Proof.</em> If $a \in A^\sigma$ and $h \in H(M)$ then $\tau(ah) = \sigma(a)\tau(h) = ah$, so $H(M)$ is an $A^\sigma$-submodule; the projections $\tfrac12(m\pm\tau(m))$ give the decomposition as in the algebra case. $\square$</p>
+<h3 id="the-descent">The Descent</h3>
+<p><strong>Theorem (descent).</strong> Let $(A,\sigma)$ be an involutive commutative algebra with $A = A^\sigma\oplus A^-$ and $A^-$ generated by a single element $t$ with $\sigma(t) = -t$ and $t^2 \in A^\sigma$ invertible or, more generally, with $A$ faithfully flat over $A^\sigma$. Then the functors</p>
+<p>$$
+\Phi : M \longmapsto H(M) = \{m : \tau(m) = m\}, \qquad
+\Psi : N \longmapsto N\otimes_{A^\sigma}A \ \text{ with } \ \tau(n\otimes a) = n\otimes\sigma(a) ,
+$$</p>
+<p>are inverse equivalences between the category of $A$-modules with $\sigma$-semilinear involution and the category of $A^\sigma$-modules.</p>
+<p><em>Proof.</em> $\Phi\Psi(N) = H(N\otimes_{A^\sigma}A)$ is $N$ when $A$ is faithfully flat over $A^\sigma$ with the separating element $t$: a self-adjoint element $n\otimes1 + n'\otimes t$ of $N\otimes A$ is fixed precisely when $n'\otimes t = 0$ and equals a pure tensor $n\otimes1$, using $t^2\in A^\sigma$ and flatness. Conversely $\Psi\Phi(M) = H(M)\otimes_{A^\sigma}A\to M$ is the multiplication map, which is an isomorphism because $M = H(M)\oplus S(M)$ and $S(M) = t\,H(M)$ for the quadratic model. The two composites are the identities on objects, and they are natural in the morphisms, which are the $A$-linear maps commuting with $\tau$ and the $A^\sigma$-linear maps respectively. $\square$</p>
+<p><strong>Corollary (the classical case).</strong> If $A = K$ is a field, a quadratic extension of $F = A^\sigma$ with nontrivial automorphism $\sigma$, then the descent is the classical Galois descent: a $K$-linear space with a $\sigma$-semilinear involution is the scalar extension of its self-adjoint $F$-subspace, and $\dim_F H(M) = \dim_K M$. This is the <strong>descent to the self-adjoint part</strong>.</p>
+<p><strong>Corollary (the fixed subalgebra of a tensor product).</strong> For an $A^\sigma$-algebra $B$, the $A$-algebra $B\otimes_{A^\sigma}A$ carries the involution $\sigma_B = \mathrm{id}\otimes\sigma$, and its fixed subalgebra is $B\otimes_{A^\sigma}A^\sigma = B$; the descent recovers $B$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the polynomial ring).</strong> Let $A = R[x]$ with $\sigma(x) = -x$. Then $A^\sigma$ is the subring $R[x^2]$ of the even polynomials, $A^- = xR[x^2]$, and $A = R[x^2]\oplus xR[x^2]$ with $t = x$ and $t^2 = x^2 \in R[x^2]$. The descent says that a module over $R[x]$ with a semilinear involution is the scalar extension of a module over $R[x^2]$; the involution is the substitution $x\mapsto -x$ and the self-adjoint part is the set of the even power series in the completion. This is the commutative model of <em>Involutions of a Polynomial Ring and the Symmetric Part</em>.</p>
+<p><strong>Example (the quadratic field).</strong> Let $A = F(\sqrt d)$ with $\sigma(\sqrt d) = -\sqrt d$ and $d \in F$ not a square when $F$ is a field of characteristic not two. Then $A^\sigma = F$, $A^- = F\sqrt d$, $t = \sqrt d$, $t^2 = d$, and the descent is the classical identification of the $F$-spaces with the $A$-spaces with a semilinear involution. The self-adjoint part is the real form of the complex-like structure.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a commutative algebra $A$ is the same thing as an involutive automorphism, and its <strong>fixed subalgebra</strong> $A^\sigma$ is a subalgebra; the algebra splits as $A = A^\sigma\oplus A^-$ with $A^-$ an $A^\sigma$-module satisfying $A^-\cdot A^-\subseteq A^\sigma$, and when $A^- = A^\sigma t$ is free of rank one the algebra is the quadratic algebra $A^\sigma\oplus A^\sigma t$ with $t^2 \in A^\sigma$. A module $M$ over the involutive algebra with a $\sigma$-semilinear involution $\tau$ has a <strong>self-adjoint part</strong> $H(M)$, an $A^\sigma$-module, and the <strong>descent</strong> identifies the category of such modules with the category of $A^\sigma$-modules by $M\mapsto H(M)$ and $N\mapsto N\otimes_{A^\sigma}A$; in the quadratic-extension case this is Galois descent, and the dimension is preserved. The polynomial ring with $x\mapsto -x$ and the quadratic field extension are the worked models. No form, norm or order occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>Commutative unital $R$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Involutive automorphism of $A$</td>
+</tr>
+<tr>
+<td>$A^\sigma = A^+$</td>
+<td>Fixed subalgebra</td>
+</tr>
+<tr>
+<td>$A^-$</td>
+<td>Skew part, $\sigma(a) = -a$</td>
+</tr>
+<tr>
+<td>$A = A^\sigma\oplus A^-$</td>
+<td>Decomposition when $2$ invertible</td>
+</tr>
+<tr>
+<td>$A^-\cdot A^-\subseteq A^\sigma$</td>
+<td>Skew elements square into the fixed subalgebra</td>
+</tr>
+<tr>
+<td>$A = A^\sigma\oplus A^\sigma t$, $t^2\in A^\sigma$</td>
+<td>Quadratic model</td>
+</tr>
+<tr>
+<td>$\tau(am) = \sigma(a)\tau(m)$, $\tau^2=\mathrm{id}$</td>
+<td>Semilinear involution of a module</td>
+</tr>
+<tr>
+<td>$H(M)$</td>
+<td>Self-adjoint part, an $A^\sigma$-module</td>
+</tr>
+<tr>
+<td>$M\mapsto H(M)$, $N\mapsto N\otimes_{A^\sigma}A$</td>
+<td>The descent equivalence</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra II</em> (Springer, 2003), for commutative algebras, the fixed subalgebra and Galois descent.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for involutions of commutative algebras and the descent.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for Galois descent and the quadratic extension.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised third edition, 2002), for the commutative algebra, the quadratic extensions and the module theory.</li>
+<li>Igor Shafarevich and Alexander Kostrikin, <em>Linear Algebra and Geometry</em> (Gordon and Breach, 1989), for the polynomial-ring involutions and the descent in a concrete case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

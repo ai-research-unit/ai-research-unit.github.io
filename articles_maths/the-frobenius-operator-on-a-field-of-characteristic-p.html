@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frobenius Operator on a Field of Characteristic p — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frobenius-operator-on-a-field-of-characteristic-p"><strong>The Frobenius Operator on a Field of Characteristic p</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>In a field $F$ of prime characteristic $p$ the map $\varphi(x) = x^p$ is not merely a power map but a ring endomorphism. The reason is the binomial theorem: the intermediate binomial coefficients $\binom{p}{1}, \dots, \binom{p}{p-1}$ are all divisible by $p$, and in a ring of characteristic $p$ the corresponding terms vanish, leaving the <strong>freshman's dream</strong>
+$$(x+y)^p = x^p + y^p.$$
+With multiplicativity, $(xy)^p = x^py^p$, this makes $\varphi$ additive and multiplicative at once, hence an injective ring endomorphism of $F$, the <strong>Frobenius endomorphism</strong>. In characteristic $0$ the same computation gives no collapse — $\binom{2}{1} = 2 \neq 0$ — and $x \mapsto x^p$ is neither additive nor an endomorphism.</p>
+<p>This article treats $\varphi$ as an operator on the field, in the sense of the operator layer of this category: it is a distinguished element of $\operatorname{End}(F)$, it generates the automorphism group of a finite field, its fixed field is the prime field, and its image $F^p$ measures whether $F$ is perfect. The Frobenius operator is the arithmetic operator par excellence: it exists on every field of characteristic $p$, it is canonically determined by the field, and its failure to be onto is exactly the failure of the field to be perfect. The vocabulary is that of <em>Fields</em> for the object and its prime field, <em>Finite Fields</em> for the finite case in which $\varphi$ is an automorphism generating the Galois group, and <em>Ring and Field Automorphisms</em> for the automorphism group of a field and the fact that the Frobenius is an automorphism exactly over a perfect field. Throughout, $F$ is a field of characteristic $p > 0$ unless another characteristic is signalled, $F^p = \{x^p : x \in F\}$, and $\mathbb{F}_p$ is the prime field.</p>
+<h2 id="the-p-th-power-map">The p-th Power Map</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $F$ be a field of characteristic $p$. The <strong>Frobenius operator</strong> is</p>
+<p>$$
+\varphi : F \to F, \qquad \varphi(x) = x^p .
+$$</p>
+<p>The <strong>$n$-th Frobenius power</strong> is its $n$-fold iterate $\varphi^n(x) = x^{p^n}$.</p>
+<p><strong>Proposition.</strong> $\varphi(xy) = \varphi(x)\varphi(y)$ for all $x, y$, and $\varphi(1) = 1$, $\varphi(0) = 0$. In particular $\varphi$ is multiplicative on the whole of $F$, and $\varphi^n(xy) = \varphi^n(x)\varphi^n(y)$.</p>
+<p><strong>Proof.</strong> $(xy)^p = x^p y^p$ is commutativity and the power law in a commutative ring; multiplicativity iterates. $\varphi(1) = 1^p = 1$ and $\varphi(0) = 0$.</p>
+<h3 id="additivity-and-the-freshmans-dream">Additivity and the freshman's dream</h3>
+<p><strong>Theorem (freshman's dream).</strong> In a commutative ring of characteristic $p$, $(x+y)^p = x^p + y^p$; consequently the Frobenius operator of a field of characteristic $p$ is additive, and is a unital ring endomorphism of $F$.</p>
+<p><strong>Proof.</strong> The binomial theorem in a commutative ring gives $(x+y)^p = \sum_{k=0}^{p} \binom{p}{k} x^k y^{p-k}$. For $1 \leq k \leq p-1$ the binomial coefficient $\binom{p}{k} = \frac{p!}{k!(p-k)!}$ is divisible by $p$: the factor $p$ in the numerator is not cancelled by the factorials $k!$ and $(p-k)!$, both of which involve only integers less than $p$ and hence are coprime to $p$. In characteristic $p$ the products $\binom{p}{k} x^ky^{p-k} = 0$ for those $k$, and the two end terms remain: $(x+y)^p = x^p + y^p$. With the multiplicativity above, $\varphi$ is a unital endomorphism.</p>
+<p><strong>Corollary (the naive expansion fails in characteristic $0$).</strong> In a field of characteristic $0$ the coefficients $\binom{p}{k}$ do not vanish, and the expansion does not collapse. For example over $\mathbb{Q}$,
+$$
+(1+1)^2 = 4 \neq 2 = 1^2 + 1^2,
+$$
+so the map $x \mapsto x^2$ on $\mathbb{Q}$ is not additive and therefore not an endomorphism; the same computation shows that over any field of characteristic $0$ the power map $x \mapsto x^p$ adds a stack of intervening terms and is not a ring homomorphism. The Frobenius operator owes its existence entirely to the vanishing of the binomial coefficients modulo $p$.</p>
+<p><strong>Remark (a noncommutative warning).</strong> In a noncommutative ring of characteristic $p$ the freshman's dream fails: $(xy)^p = xyxy\cdots xy \neq x^py^p$ in general, and the expansion of $(x+y)^p$ is a sum over all words of length $p$ rather than a sum of the two end terms. The Frobenius is therefore a homomorphism of a <strong>commutative</strong> ring of characteristic $p$, and on a noncommutative ring it is additive and multiplicative only on commuting elements. The finite-field and field cases of this article are automatically commutative.</p>
+<h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
+<h3 id="injectivity">Injectivity</h3>
+<p><strong>Proposition.</strong> The Frobenius endomorphism of a field is injective, hence $\ker \varphi = 0$ and the image $F^p$ is a subfield isomorphic to $F$.</p>
+<p><strong>Proof.</strong> $\varphi(x) = 0 \iff x^p = 0 \iff x = 0$ in a field. A unital ring homomorphism out of a field whose kernel is a proper ideal must be injective, since a field has no proper nonzero two-sided ideals; the image of a homomorphism is a subring, and it is a subfield because $\varphi$ is multiplicative and $\varphi(x)^{-1} = \varphi(x^{-1})$ for $x \neq 0$.</p>
+<p><strong>Corollary.</strong> $\varphi$ restricts to an automorphism of the prime field $\mathbb{F}_p$: for $a \in \mathbb{F}_p$ one has $\varphi(a) = a^p = a$, since every element of $\mathbb{F}_p$ satisfies $a^p = a$.</p>
+<h3 id="surjectivity-and-perfect-fields">Surjectivity and perfect fields</h3>
+<p><strong>Definition.</strong> A field $F$ of characteristic $p$ is <strong>perfect</strong> when every element is a $p$-th power, that is, $F = F^p$.</p>
+<p><strong>Theorem.</strong> The Frobenius operator is an automorphism if and only if $F$ is perfect. For an imperfect field, $\varphi$ is injective and not surjective, and it is a bijection of $F$ onto the proper subfield $F^p$; the extension $F/F^p$ is purely inseparable and, when finite, has degree $p^e$.</p>
+<p><strong>Proof.</strong> Surjectivity is exactly $F = F^p$, which is perfectness; an injective surjective endomorphism of $F$ is an automorphism. For the last statements, every element $x$ satisfies $x^p \in F^p$, so $F$ is generated over $F^p$ by $p$-th roots, and the minimal polynomial of $x$ over $F^p$ divides $X^p - x^p = (X-x)^p$, hence has a single root: the extension is purely inseparable. A finite purely inseparable extension has degree a power of $p$.</p>
+<p><strong>Examples.</strong> The finite fields $\mathbb{F}_{p^n}$ are perfect, since they are finite and $\varphi$ is injective on a finite set; so $\varphi$ is an automorphism there. The rational function field $\mathbb{F}_p(t)$ is imperfect: $F^p = \mathbb{F}_p(t^p)$, and $t \notin F^p$, so $\varphi$ is not onto and $[\mathbb{F}_p(t) : \mathbb{F}_p(t^p)] = p$. A separably closed or algebraically closed field is perfect.</p>
+<h2 id="the-fixed-field-and-the-galois-action">The Fixed Field and the Galois Action</h2>
+<h3 id="the-fixed-field-is-the-prime-field">The fixed field is the prime field</h3>
+<p><strong>Theorem.</strong> The fixed field of the Frobenius operator is the prime field:
+$$
+F^{\varphi} = \{x \in F : x^p = x\} = \mathbb{F}_p .
+$$</p>
+<p><strong>Proof.</strong> The elements fixed by $\varphi$ are the roots in $F$ of the polynomial $X^p - X$, which has at most $p$ roots in the field $F$. The $p$ elements of $\mathbb{F}_p$ all satisfy $a^p = a$ (the multiplicative group $\mathbb{F}_p^\times$ has order $p-1$, so $a^{p-1}=1$ for $a\neq0$, and $0^p=0$), so they are exactly the $p$ roots and there are no others.</p>
+<p><strong>Corollary.</strong> The Frobenius operator fixes no element outside the prime field; the fixed field of $\varphi^n$ is the field of elements with $x^{p^n} = x$, which for the finite field $\mathbb{F}_{p^m}$ equals $\mathbb{F}_{p^{\gcd(m,n)}}$.</p>
+<h3 id="the-finite-case-and-the-galois-group">The finite case and the Galois group</h3>
+<p><strong>Theorem (the Frobenius generates $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$).</strong> For the finite field $\mathbb{F}_{p^n}$, the Frobenius operator $\varphi$ is an automorphism of order $n$, and
+$$
+\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n .
+$$
+Its fixed field is $\mathbb{F}_p$, and $\varphi^n = \mathrm{id}$ on $\mathbb{F}_{p^n}$.</p>
+<p><strong>Proof.</strong> The multiplicative group $\mathbb{F}_{p^n}^\times$ is cyclic of order $p^n - 1$, so every nonzero element satisfies $x^{p^n - 1} = 1$ and hence $x^{p^n} = x$; together with $0$, every element of $\mathbb{F}_{p^n}$ is fixed by $\varphi^n$, so $\varphi^n = \mathrm{id}$. If $\varphi^d = \mathrm{id}$ for some $d < n$, then every element of $\mathbb{F}_{p^n}$ would satisfy $x^{p^d} = x$, giving at most $p^d < p^n$ elements, a contradiction; so the order of $\varphi$ is $n$. The field $\mathbb{F}_{p^n}$ is a splitting field of $X^{p^n}-X$ over $\mathbb{F}_p$, hence Galois, and its Galois group has order $n = [\mathbb{F}_{p^n} : \mathbb{F}_p]$; the subgroup generated by $\varphi$ has order $n$ and is therefore the whole group.</p>
+<p><strong>Remark.</strong> For a finite field the Frobenius is the canonical generator of the Galois group, and the subfields of $\mathbb{F}_{p^n}$ correspond to the divisors of $n$ through the subgroups of $\langle \varphi \rangle$. Over an infinite field the Frobenius need not be an automorphism and need not generate the automorphism group; the finite case is the one in which it is both onto and generating.</p>
+<h2 id="the-frobenius-and-the-derivations">The Frobenius and the Derivations</h2>
+<h3 id="the-frobenius-kills-the-derivations">The Frobenius kills the derivations</h3>
+<p><strong>Proposition.</strong> In a field $F$ of characteristic $p$, every derivation $D$ of $F$ annihilates the image of the Frobenius:
+$$
+D\bigl(x^p\bigr) = p\,x^{p-1}D(x) = 0 \quad \text{for all } x \in F, \qquad D\big|_{F^p} = 0 .
+$$
+Hence $F^p \subseteq F^{D}$ for every derivation $D$, and if $F$ is perfect every derivation is zero.</p>
+<p><strong>Proof.</strong> The power rule for a derivation in a commutative ring gives $D(x^p) = p\,x^{p-1}D(x)$, and $p = 0$ in $F$. For a perfect field $F = F^p$, so $D = 0$ on all of $F$.</p>
+<p><strong>Example.</strong> On $\mathbb{F}_p(t)$ the derivation $\partial/\partial t$ is nonzero and kills $\mathbb{F}_p(t^p) = F^p$. The pair $(\varphi, \partial_t)$ exhibits the two operators in characteristic $p$: the Frobenius is the endomorphism with image the constants of the derivation, and the derivation is the one that the Frobenius's image annihilates. This is the algebraic skeleton of the theory of derivations of an imperfect field, and it is used in <em>Derivations of a Ring</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>In a field $F$ of characteristic $p$ the Frobenius operator $\varphi(x) = x^p$ is multiplicative and, because the binomial coefficients $\binom{p}{k}$ vanish modulo $p$, additive; it is therefore a unital ring endomorphism of $F$, the freshman's dream $(x+y)^p = x^p+y^p$ being the additivity. In characteristic $0$ the coefficients do not vanish, the expansion does not collapse, and the power map is not additive: this is the failure that distinguishes the two characteristics. In a noncommutative ring of characteristic $p$ the map is a homomorphism only on commuting elements, and the fields of the article are commutative.</p>
+<p>The Frobenius is injective with image the subfield $F^p$; it is an automorphism exactly when $F$ is perfect, and otherwise it is a bijection onto the proper subfield $F^p$ with $F/F^p$ purely inseparable. Its fixed field is the prime field $\mathbb{F}_p$, the roots of $X^p - X$. On the finite field $\mathbb{F}_{p^n}$ it is an automorphism of order $n$ generating $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n$. Every derivation of $F$ annihilates $F^p$, so on a perfect field there are no nonzero derivations; the Frobenius and the derivations are the two characteristic-$p$ operators, and the image of the one is the zero set of the other.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p$</td>
+<td>A prime; the characteristic of $F$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_p$</td>
+<td>Prime field, the fixed field of the Frobenius</td>
+</tr>
+<tr>
+<td>$\varphi(x) = x^p$</td>
+<td>Frobenius operator</td>
+</tr>
+<tr>
+<td>$\varphi^n(x) = x^{p^n}$</td>
+<td>Iterated Frobenius</td>
+</tr>
+<tr>
+<td>$(x+y)^p = x^p+y^p$</td>
+<td>Freshman's dream; additivity of $\varphi$</td>
+</tr>
+<tr>
+<td>$F^p = \{x^p\}$</td>
+<td>Image of $\varphi$, a subfield</td>
+</tr>
+<tr>
+<td>$F = F^p$</td>
+<td>Perfect field; $\varphi$ is an automorphism</td>
+</tr>
+<tr>
+<td>$[\mathbb{F}_p(t) : \mathbb{F}_p(t^p)] = p$</td>
+<td>The standard imperfect example</td>
+</tr>
+<tr>
+<td>$F^\varphi = \mathbb{F}_p$</td>
+<td>Fixed field of $\varphi$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle\varphi\rangle \cong \mathbb{Z}/n$</td>
+<td>Finite-field Galois group</td>
+</tr>
+<tr>
+<td>$D(x^p) = 0$, $F^p \subseteq F^D$</td>
+<td>Derivations kill the Frobenius image</td>
+</tr>
+<tr>
+<td>$\partial/\partial t$ on $\mathbb{F}_p(t)$</td>
+<td>Nonzero derivation, zero on $F^p$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Serge Lang, <em>Algebra</em>, 3rd ed. (Springer, 2002), for the Frobenius endomorphism, perfect and imperfect fields and purely inseparable extensions.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em>, 2nd ed. (Dover, 2009), for the Frobenius map, the freshman's dream and the structure of finite fields.</li>
+<li>Rudolf Lidl and Harald Niederreiter, <em>Finite Fields</em>, Encyclopedia of Mathematics and its Applications 20 (Cambridge University Press, 2nd ed. 1997), for the Frobenius as the generator of the Galois group of a finite field and the subfield lattice.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for characteristic $p$ phenomena, derivations and their vanishing on $p$-th powers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

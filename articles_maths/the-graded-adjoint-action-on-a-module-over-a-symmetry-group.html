@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-symmetry-group"><strong>The Graded Adjoint Action on a Module over a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded module over a graded symmetry group is a vector space split into even and odd parts on which the group acts by an action compatible with the two gradings; the <strong>adjoint action</strong> on its endomorphisms is the conjugation $T \mapsto \rho(g)T\rho(g)^{-1}$, and the <strong>adjoint</strong> of a graded operator is defined with a sign: on a graded algebra the operator involution satisfies</p>
+<p>$$
+(S T)^{*} = (-1)^{\lvert S\rvert\,\lvert T\rvert}\, T^{*}S^{*},
+$$</p>
+<p>the <strong>sign rule</strong> of the graded adjoint. The sign is the Koszul sign that appears wherever two odd objects are exchanged, and it is the whole difference between the adjoint action on a graded module and its ungraded shadow. The parity of the adjoint is tied to the parity of the operator — the adjoint of an even operator is even, of an odd operator is odd — and the adjoint action of the group is compatible with the grading precisely when the invariant form on the module is graded and the group acts by graded isometries.</p>
+<p>The article treats the graded module and the graded action, the graded invariant form and the adjoint of an operator on it, the adjoint action with the sign rule, and the worked cases. The graded module, the graded action and the Koszul sign are <em>The Graded Action on a Module over a Symmetry Group</em>, the operator whose adjoint is computed; the adjoint of a single operator and the operator involution are <em>The Adjoint of a Symmetry Operator</em> and <em>Unitary Operators of a Symmetry Group</em>, the first articles of this group; the graded algebras, the sign rule and the supertrace are <em>Superalgebras and Graded Structures</em>, <em>Involutive Graded Algebras</em> and <em>Superalgebras and Graded Structures</em>; the exterior algebra and the Clifford module are <em>The Exterior Algebra</em> and <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>; the modules over a group are <em>Modules over an Algebra</em> and <em>Representations of Groups</em>. The closing article of the parallel category, on the adjoint action in the complex-vector-space setting, is treated in <em>Geometry on Linear Spaces</em>, written in parallel. The grade involution $\alpha$ is the parity of the grading and not the involution of the group <code>- * Theory</code>; the two-structures theorem, whether an involution on the elements agrees with the adjoint on the operators, is <em>The Adjoint of a Symmetry Operator</em> and is cited only.</p>
+<p>The article has four sections: the graded module and the graded action; the graded form and the adjoint; the adjoint action and the sign rule; and the worked cases. Throughout, $G$ is a graded group with central sign element $z$ and grade involution $\alpha$, $M = M_0\oplus M_1$ a graded module over $G$ with a <strong>graded form</strong> — a bilinear form $B$ with $B(M_i, M_j) = 0$ for $i \neq j$, non-degenerate on each part, and symmetric or antisymmetric on each part in the graded sense $B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$ — and $\operatorname{End}(M) = \operatorname{End}(M)_0\oplus\operatorname{End}(M)_1$ the graded endomorphism algebra.</p>
+<h2 id="the-graded-module-and-the-graded-action">The Graded Module and the Graded Action</h2>
+<h3 id="the-graded-module">The Graded Module</h3>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over the graded group $G$ is a graded vector space $M = M_0\oplus M_1$ with an action $\rho : G \to GL(M)$ such that a homogeneous $g$ of parity $\lvert g\rvert$ carries $M_i$ to $M_{i+\lvert g\rvert}$,
+$$
+\rho(g)(M_i) \subseteq M_{i+\lvert g\rvert},
+$$
+so that even elements act by parity-preserving operators and odd elements by parity-reversing isomorphisms; the action is the <strong>graded action</strong> of <em>The Graded Action on a Module over a Symmetry Group</em>.</p>
+<p><strong>Proposition.</strong> A graded action decomposes as $\rho = \rho_0\oplus\rho_1$ with $\rho_0 : G_0 \to GL(M_0)\times GL(M_1)$ and $\rho_1 : G_1 \to \mathrm{Iso}(M_0,M_1)$; the endomorphism algebra is graded, $\operatorname{End}(M)_i = \{T : T(M_j)\subseteq M_{j+i}\}$, and the graded commutator
+$$
+[T, S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST
+$$
+makes $\operatorname{End}(M)$ a graded Lie algebra, the <strong>sign</strong> $(-1)^{\lvert T\rvert\lvert S\rvert}$ being the Koszul sign.</p>
+<p><strong>Proof.</strong> The decomposition is the definition of a graded action on each homogeneous point; the parity of a composition is the sum of the parities, $\lvert TS\rvert = \lvert T\rvert+\lvert S\rvert$, so $\operatorname{End}(M)$ is graded, and the graded commutator is graded-antisymmetric and satisfies the graded Jacobi identity, <em>Superalgebras and Graded Structures</em>.</p>
+<h3 id="the-geometric-modules">The Geometric Modules</h3>
+<p><strong>Example (the exterior algebra).</strong> Let $V$ be a quadratic space and $M = \Lambda V = \bigoplus_k\Lambda^k V$ with the grading by parity of degree; the orthogonal group acts by $g\cdot(v_1\wedge\cdots\wedge v_k) = (gv_1)\wedge\cdots\wedge(gv_k)$, a graded action with $G_0 = SO(V,q)$ acting on each part and $G_1$ (an odd isometry, an element of $O(V,q)$ of determinant $-1$) exchanging them. The module is the basic geometric graded module.</p>
+<p><strong>Example (the Clifford module).</strong> Let $S$ be a Clifford module of a quadratic space; the pin group acts by Clifford multiplication, and an odd element of the group acts by a parity-reversing operator, so $S$ is a graded module over $\mathrm{Pin}(V,q)$; this is <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>.</p>
+<h2 id="the-graded-form-and-the-adjoint">The Graded Form and the Adjoint</h2>
+<h3 id="the-graded-form">The Graded Form</h3>
+<p><strong>Definition.</strong> A <strong>graded form</strong> on $M$ is a bilinear form $B$ with $B(M_i,M_j) = 0$ for $i \neq j$, non-degenerate on each part, and of graded symmetry $B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$; it is <strong>invariant</strong> under the graded action when $B(\rho(g)x,\rho(g)y) = B(x,y)$ for all $g$.</p>
+<p><strong>Proposition.</strong> The <strong>graded adjoint</strong> of $T \in \operatorname{End}(M)$ with respect to a graded form is the unique operator $T^{*}$ with $B(Tx, y) = (-1)^{\lvert T\rvert\lvert x\rvert}B(x, T^{*}y)$ for homogeneous $x$, and it satisfies
+$$
+(T^{*})^{*} = T, \qquad (T + S)^{*} = T^{*} + S^{*}, \qquad (ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*},
+$$
+the <strong>sign rule</strong> of the graded adjoint; the parity of the adjoint is the parity of the operator, $\lvert T^{*}\rvert = \lvert T\rvert$.</p>
+<p><strong>Proof.</strong> The defining relation and non-degeneracy give existence and uniqueness; the involution and additivity are the same as in the ungraded case; the product rule acquires the Koszul sign because in the pairing $B(STx, y)$ the operator $S$ of parity $\lvert S\rvert$ must be moved past $T^{*}$ of parity $\lvert T\rvert$, each crossing contributing $(-1)^{\lvert S\rvert\lvert T\rvert}$. The parity statement is that $T^{*}$ carries $M_j$ to $M_{j+\lvert T\rvert}$ if and only if $T$ does. This is the graded <code>*</code>-algebra theory of <em>Involutive Graded Algebras</em>.</p>
+<h3 id="invariance-and-the-unitary-operators">Invariance and the Unitary Operators</h3>
+<p><strong>Proposition.</strong> If the graded form is invariant under the graded action, then every $\rho(g)$ is a graded isometry and its graded adjoint is its inverse, $\rho(g)^{*} = \rho(g)^{-1}$, with the parity of the inverse equal to the parity of $g$; the graded adjoint of an even element is even, and of an odd element is odd. The graded isometries form the <strong>graded unitary group</strong> of the module, $U(M,B) = \{T : T^{*}T = \operatorname{id}\}$ in the graded sense.</p>
+<p><strong>Proof.</strong> The invariance $B(\rho(g)x,\rho(g)y) = B(x,y)$ gives $\rho(g)^{*}\rho(g) = \operatorname{id}$ with the sign convention of the graded adjoint, hence $\rho(g)^{*} = \rho(g)^{-1}$; the parity statement is that the inverse of a homogeneous element has the same parity, and the defining relation of the graded form forces the adjoint to have the parity of the operator.</p>
+<h2 id="the-adjoint-action-and-the-sign-rule">The Adjoint Action and the Sign Rule</h2>
+<h3 id="the-adjoint-action">The Adjoint Action</h3>
+<p><strong>Definition.</strong> The <strong>adjoint action</strong> of $G$ on the graded endomorphism algebra is the conjugation</p>
+<p>$$
+\operatorname{Ad}_g : \operatorname{End}(M) \longrightarrow \operatorname{End}(M), \qquad \operatorname{Ad}_g(T) = \rho(g)\,T\,\rho(g)^{-1},
+$$</p>
+<p>restricted to the graded endomorphisms; it is a graded representation of $G$ on $\operatorname{End}(M)$, the parity of $\operatorname{Ad}_g(T)$ being the parity of $T$.</p>
+<p><strong>Proposition.</strong> The adjoint action preserves the grading, $\operatorname{Ad}_g(\operatorname{End}(M)_i)\subseteq\operatorname{End}(M)_i$; it preserves the graded commutator, $\operatorname{Ad}_g[T,S\} = [\operatorname{Ad}_gT, \operatorname{Ad}_gS\}$; and it preserves the <strong>supertrace</strong> $\operatorname{str}(T) = \operatorname{tr}(T|_{M_0}) - \operatorname{tr}(T|_{M_1})$, so that the module carries the invariant graded trace form $\langle S, T\rangle = \operatorname{str}(S^{*}T)$.</p>
+<p><strong>Proof.</strong> The parity of $\rho(g)T\rho(g)^{-1}$ is $\lvert g\rvert + \lvert T\rvert + \lvert g\rvert = \lvert T\rvert$ since the parities are in $\mathbb{Z}/2$; the commutator is preserved because conjugation is an algebra automorphism and the Koszul sign is a function of the parities, which are preserved; the supertrace is invariant under the adjoint action because $\operatorname{str}(TS) = (-1)^{\lvert T\rvert\lvert S\rvert}\operatorname{str}(ST)$, the graded trace property, which gives $\operatorname{str}(\rho(g)T\rho(g)^{-1}) = \operatorname{str}(T)$ by the cyclicity with the sign. This is <em>Superalgebras and Graded Structures</em>.</p>
+<h3 id="the-sign-rule-in-the-adjoint-action">The Sign Rule in the Adjoint Action</h3>
+<p><strong>Theorem (the sign rule and the adjoint action).</strong> For an even element $g$ the adjoint action is a graded algebra automorphism of $\operatorname{End}(M)$ preserving the involution $^{*}$ and the supertrace; hence it is a graded isometry of the invariant graded trace form and its graded adjoint is the adjoint action of the inverse,</p>
+<p>$$
+\bigl(\operatorname{Ad}_g\bigr)^{*} = \operatorname{Ad}_{g^{-1}} \qquad (g \text{ even}),
+$$</p>
+<p>with respect to $\langle S, T\rangle = \operatorname{str}(S^{*}T)$. For an odd element $g$ the adjoint action still preserves the grading and the graded commutator but carries the extra Koszul sign $(-1)^{\lvert S\rvert\lvert g\rvert} = (-1)^{\lvert S\rvert}$ on a homogeneous $S$; the sign is the graded correction that the exchange of two odd objects requires, and it is the same Koszul sign as in the product rule $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$.</p>
+<p><strong>Proof.</strong> For even $g$ the sign $(-1)^{\lvert S\rvert\lvert g\rvert}$ is $1$, so $\operatorname{Ad}_g(S^{*}) = (\operatorname{Ad}_g S)^{*}$; the supertrace is invariant under the adjoint action by the graded trace property, so $\operatorname{Ad}_g$ is an isometry of $\langle\cdot,\cdot\rangle$ and its graded adjoint is its inverse $\operatorname{Ad}_{g^{-1}}$. For odd $g$ the sign $(-1)^{\lvert S\rvert\lvert g\rvert} = (-1)^{\lvert S\rvert}$ is $1$ on the even endomorphisms and $-1$ on the odd ones, which is the displayed correction; the product rule is the proposition on the graded adjoint.</p>
+<p><strong>Remark.</strong> The sign rule is not an accident of the convention: it is the Koszul sign that makes the graded adjoint an involution, $(T^{*})^{*} = T$, and it is the same sign that appears in the graded commutator and in the supertrace. The graded adjoint action is compatible with the grading because it preserves it, and it is compatible with the involution because the sign rule is exactly the correction that the exchange of two odd operators requires.</p>
+<h3 id="the-two-structures-boundary">The Two-Structures Boundary</h3>
+<p><strong>Proposition.</strong> As in the ungraded case, the adjoint on the operators and an involution $\sigma$ on the elements of $\rho(G)$ are two structures; the identity $\rho(\sigma(g)) = \rho(g)^{*}$ (with the graded adjoint) is the equation $\rho(g\sigma(g)) = \operatorname{id}$ of <em>The Adjoint of a Symmetry Operator</em> and is not assumed. The <strong>grade involution</strong> $\alpha$ of the group is a parity and not such a $\sigma$; the sign rule of the graded adjoint is a statement about the operators alone.</p>
+<p><strong>Proof.</strong> The criterion and the abelian obstruction are proved for the ungraded case and apply verbatim to the graded case with the graded adjoint, since the criterion compares $\rho(\sigma(g))$ with $\rho(g)^{-1}$, and the graded adjoint of a graded isometry is also its inverse. The grade involution is a parity by the definition of the grading.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the exterior algebra of a quadratic space).</strong> Let $M = \Lambda V$ with the grading by degree parity and the graded form induced by the quadratic form on $V$ and the determinant pairing on the top degree; the orthogonal group acts by graded isometries, the adjoint action on $\operatorname{End}(\Lambda V)$ is the conjugation with the Koszul sign, and the adjoint of the exterior multiplication by a vector is the interior multiplication, with the sign rule $(\epsilon_v)^{*} = \iota_v$ up to sign. The example is the standard graded module of the geometry.</p>
+<p><strong>Example (the Clifford module).</strong> Let $M = S$ be a Clifford module and $G = \mathrm{Pin}(V,q)$; an even element acts by a parity-preserving operator and an odd element by a parity-reversing one, the graded form is the Clifford inner product, and the adjoint of the Clifford multiplication by a vector $u$ is the multiplication by $u^{*}$, with the sign rule carrying the reality condition of <em>The Signed Adjoint of the Left Multiplication on a Symmetry Group</em>.</p>
+<p><strong>Example (the supersymmetric module).</strong> Let $M = M_0\oplus M_1$ with $\dim M_0 = \dim M_1$ and the graded form the pairing of the two parts; the adjoint action of the group is the graded conjugation, its adjoint is the conjugation by the inverse, and the supertrace vanishes on the odd part, $\operatorname{str}(T) = 0$ for $T$ odd. The example shows the supertrace and the sign rule in the simplest supersymmetric case.</p>
+<p><strong>Example (the trivial grading).</strong> Let $M_1 = 0$; then the graded action is an ordinary action, the graded form is an ordinary invariant form, and the sign rule is vacuous, $(-1)^{\lvert S\rvert\lvert T\rvert} = 1$; the adjoint action is the ordinary conjugation and the article reduces to the ungraded theory. The example is the check that the sign is the only new ingredient.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded module $M = M_0\oplus M_1$ over a graded group carries a graded action, even elements acting by parity-preserving and odd elements by parity-reversing operators; the graded form is invariant under a graded isometry, and the <strong>graded adjoint</strong> of an operator satisfies $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ with the Koszul sign, has the parity of the operator, and inverts a graded isometry. The adjoint action $\operatorname{Ad}_g(T) = \rho(g)T\rho(g)^{-1}$ preserves the grading, the graded commutator $[T,S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ and the supertrace, so the module carries the invariant graded trace form $\langle S,T\rangle = \operatorname{str}(S^{*}T)$; its own adjoint is the adjoint action of the inverse for an even element, with the sign rule carried into the operator involution. The grade involution is a parity and not the involution of the group <code>- * Theory</code>, and the agreement of an involution on the elements with the adjoint on the operators is the two-structures criterion of <em>The Adjoint of a Symmetry Operator</em>, never assumed. The exterior algebra of a quadratic space, the Clifford module of the pin group and the supersymmetric module are the geometric instances, and the trivial grading recovers the ungraded theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M = M_0\oplus M_1$</td>
+<td>the graded module; even and odd parts</td>
+</tr>
+<tr>
+<td>$\rho(g)(M_i)\subseteq M_{i+\lvert g\rvert}$</td>
+<td>the graded action</td>
+</tr>
+<tr>
+<td>$\lvert T\rvert$</td>
+<td>the parity of a graded endomorphism</td>
+</tr>
+<tr>
+<td>$[T,S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$</td>
+<td>the graded commutator; the Koszul sign</td>
+</tr>
+<tr>
+<td>$B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$</td>
+<td>the graded symmetry of the form</td>
+</tr>
+<tr>
+<td>$T^{*}$ with $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$</td>
+<td>the graded adjoint; the sign rule</td>
+</tr>
+<tr>
+<td>$U(M,B)$</td>
+<td>the graded unitary group of the module</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_g(T) = \rho(g)T\rho(g)^{-1}$</td>
+<td>the adjoint action on the endomorphisms</td>
+</tr>
+<tr>
+<td>$(\operatorname{Ad}_g)^{*} = \operatorname{Ad}_{g^{-1}}$</td>
+<td>the adjoint of the adjoint action (for $g$ even)</td>
+</tr>
+<tr>
+<td>$\operatorname{str}(T) = \operatorname{tr}(T|_{M_0}) - \operatorname{tr}(T|_{M_1})$</td>
+<td>the supertrace; the graded trace form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pierre Deligne and John W. Morgan, <em>Notes on Supersymmetry (following Joseph Bernstein)</em>, in <em>Quantum Fields and Strings: A Course for Mathematicians</em> (American Mathematical Society, 1999), for the sign rule, the graded adjoint and the supertrace.</li>
+<li>Yuri I. Manin, <em>Gauge Field Theory and Complex Geometry</em> (Springer, second edition, 1997), for the graded modules, the Koszul sign and the graded Lie algebras.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the graded modules of the Clifford algebra and the pin action.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the graded Lie algebras and the graded commutator.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the adjoint of a bounded operator, in the ungraded comparison.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

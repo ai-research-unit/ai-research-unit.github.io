@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflexive Topological Rings and Fields — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflexive-topological-rings-and-fields"><strong>Reflexive Topological Rings and Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A topological module is <strong>reflexive</strong> when the canonical map into its double dual is a topological isomorphism: the module is recovered from the continuous linear forms on it, and the recovery is topological, not merely algebraic. This is the finiteness condition of duality theory, and it fails for the standard analytic spaces — the space $\ell^1$, the algebra $C(K)$ of continuous functions, the non-complete spaces — and holds for the finite-dimensional spaces, for the complete valued fields in dimension one, and for the Hilbert spaces. This article treats reflexivity for topological rings and fields: it fixes the dual of a topological module over a base topological field as the module of continuous linear forms with the topology of uniform convergence, defines the canonical map and reflexivity, proves that reflexivity forces completeness and that the finite-dimensional Hausdorff spaces over a complete base are reflexive, states the criterion of the strong dual and the Mackey–Arens theorem for the strong topology, reads reflexivity for the valued fields and their completions, and shows how an isometric involution of the base transfers to the dual and makes the canonical map equivariant.</p>
+<p>The article assumes the topological ring, the topological module and the continuity of the operations from <em>Topological Rings and Fields</em> and <em>Topological Modules and Vector Spaces</em>; the continuous additive operators, the natural pairing and the topology of pointwise convergence from <em>Operators on a Topological Ring</em>; the completion, its universal property and the fact that a complete submodule is closed from <em>The Completion Operator</em>; the absolute value, the valuation and the completion of a valued field from <em>Absolute Values, Valuations and Completions</em>; the residue operator from <em>The Residue Operator of a Valued Field</em>; the involution and its extension to the completion from <em>The Involution and the Completion of a Ring</em> and <em>Involutive Valued Fields</em>. The theory of locally convex spaces, the Hahn–Banach theorem and the Mackey–Arens theorem are quoted where used; the normed duality of operators is <em>The Involution on Bounded Operators of a Ring</em> and the Banach–Alaoglu theorem is quoted as the source of the compactness criterion. No measure beyond the Haar measure of a locally compact field and no form beyond the pairing occurs.</p>
+<p>Throughout, $K$ is a topological field, complete, non-discrete and with a nontrivial topology; $M$ is a topological $K$-module (a topological vector space over $K$), Hausdorff; the <strong>dual</strong> is</p>
+<p>$$
+M^* = \operatorname{Hom}_K^c(M, K) ,
+$$</p>
+<p>the $K$-module of continuous $K$-linear maps, with the <strong>weak-$\ast$ topology</strong> of pointwise convergence and the <strong>strong topology</strong> of uniform convergence on the bounded subsets of $M$; the <strong>bidual</strong> is $M^{**} = (M^*)^*$; and the <strong>canonical map</strong> is</p>
+<p>$$
+c_M : M\longrightarrow M^{**}, \qquad c_M(m)(f) = f(m) .
+$$</p>
+<h2 id="duals-and-the-natural-pairing">Duals and the Natural Pairing</h2>
+<p><strong>Definition.</strong> The <strong>natural pairing</strong> is the bilinear map $\langle \,\cdot\,,\,\cdot\,\rangle : M^*\times M\to K$, $\langle f, m\rangle = f(m)$. The weak-$\ast$ topology on $M^*$ is the initial topology of the maps $f\mapsto f(m)$ for $m\in M$; the strong topology is that of uniform convergence on the bounded subsets of $M$; the <strong>dual topology</strong> is the strong one unless stated otherwise.</p>
+<p><strong>Proposition (the pairing is separating in both variables).</strong> If $M$ is Hausdorff and $K$ is complete, non-discrete and nontrivial, then for every nonzero $m\in M$ there is $f\in M^*$ with $f(m)\neq 0$, and for every nonzero $f\in M^*$ there is $m\in M$ with $f(m)\neq 0$; the pairing is therefore separating in both variables when $M$ is locally convex.</p>
+<p><strong>Proof.</strong> The first statement is the Hahn–Banach theorem applied to the one-dimensional subspace spanned by $m$: a nonzero continuous linear form on $Km$ extends to $M$ when $M$ is locally convex and $K$ complete and nontrivial, so the dual separates points; the second is the definition of a nonzero linear form. Without local convexity the first statement may fail, and the article states the result under that hypothesis.</p>
+<p><strong>Proposition (the canonical map is $K$-linear and continuous).</strong> For a topological module $M$ the canonical map $c_M$ is $K$-linear, and it is continuous when $M^{**}$ carries the weak-$\ast$ topology.</p>
+<p><strong>Proof.</strong> For $f\in M^*$ the assignment $m\mapsto f(m)$ is $K$-linear and continuous by the definition of the dual; hence $c_M$ is $K$-linear, and it is continuous for the weak-$\ast$ topology because each composite $f\circ c_M$ is the continuous map $f$.</p>
+<h2 id="the-canonical-map-and-reflexivity">The Canonical Map and Reflexivity</h2>
+<p><strong>Definition.</strong> The module $M$ is <strong>semi-reflexive</strong> if $c_M$ is bijective, and <strong>reflexive</strong> if $c_M$ is a topological isomorphism onto $M^{**}$ with the strong topology. A topological ring $R$ is <strong>reflexive</strong> if it is reflexive as a module over itself or, more precisely, if the canonical map of the underlying topological additive group into its double dual is a topological isomorphism; a topological field $F$ is reflexive if it is reflexive as a one-dimensional topological vector space over itself.</p>
+<p><strong>Proposition (injectivity of the canonical map).</strong> The canonical map $c_M$ is injective exactly when the dual separates the points of $M$, that is when $M$ is <strong>torsionless</strong>; the kernel of $c_M$ is the intersection of the kernels of the elements of $M^*$, which is closed and is the closure of zero in the weak topology.</p>
+<p><strong>Proof.</strong> $c_M(m) = 0$ means $f(m) = 0$ for all $f\in M^*$, so the kernel is the intersection of the kernels of the continuous linear forms, an intersection of closed sets, hence closed. It is zero exactly when the dual separates points.</p>
+<p><strong>Theorem (reflexivity forces completeness).</strong> If $M$ is reflexive then $M$ is complete for its topology; more generally, a semi-reflexive locally convex space is weakly complete, and a reflexive space is complete for the original topology.</p>
+<p><strong>Proof.</strong> The bidual $M^{**}$ with the weak-$\ast$ topology is a closed subspace of a product of copies of $K$, hence complete; if $c_M$ is a topological isomorphism, the completeness of the bidual transfers to $M$, so $M$ is complete. The semi-reflexive case is the same argument for the weak topology, since a closed subspace of a product is weakly complete.</p>
+<p><strong>Theorem (the finite-dimensional case).</strong> Let $M$ be a finite-dimensional Hausdorff topological vector space over the complete non-discrete field $K$. Then $M$ is reflexive, and the canonical map is a homeomorphism onto the strong bidual.</p>
+<p><strong>Proof.</strong> For $M = K^n$ the dual is $K^n$ and the bidual is $K^n$, and the canonical map is the identity matrix, hence bijective; every Hausdorff vector space topology on a finite-dimensional space over a complete non-discrete field is the product topology, so the canonical map is a homeomorphism. The general finite-dimensional case follows by choosing a basis and transporting the topology, which is uniquely determined by the finite dimension.</p>
+<p><strong>Corollary (complete valued fields are reflexive).</strong> A complete valued field $F$, regarded as a one-dimensional topological vector space over itself, is reflexive; a general valued field is reflexive exactly when it is complete, so a non-complete valued field is not reflexive.</p>
+<p><strong>Proof.</strong> Dimension one over the complete base $F$ is the finite-dimensional case; a non-complete valued field fails to be complete, hence fails to be reflexive by the completeness theorem.</p>
+<h2 id="topologies-on-the-dual">Topologies on the Dual</h2>
+<p><strong>Theorem (the strong dual and the Mackey–Arens theorem, quoted).</strong> On the dual $M^*$ of a locally convex space the strong topology is the topology of uniform convergence on the bounded subsets of $M$, and the Mackey–Arens theorem states that the topologies on $M$ for which the dual is $M^*$ are exactly those of uniform convergence on the weakly bounded sets, the finest being the <strong>Mackey topology</strong>. The strong dual $M^*$ is complete when $M$ is complete and metrisable.</p>
+<p><strong>Proof.</strong> Quoted; the strong topology is by definition the topology of uniform convergence on bounded sets, and the Mackey–Arens theorem characterises the admissible topologies. The completeness of the strong dual for a complete metrisable $M$ is the Banach–Steinhaus theorem.</p>
+<p><strong>Corollary (reflexivity in terms of the strong dual).</strong> A locally convex space $M$ is reflexive exactly when it is semi-reflexive and its strong dual is barrelled; when $M$ is reflexive, the strong dual of $M^*$ is $M$ under the canonical identification, and the strong topology of the bidual is the topology of uniform convergence on the bounded subsets of $M^*$.</p>
+<p><strong>Proof.</strong> Quoted from the standard theory of locally convex spaces: semi-reflexivity plus the barrelled property of the strong dual is the standard criterion, and the identification of the bidual with $M$ follows.</p>
+<h2 id="the-involutive-duality">The Involutive Duality</h2>
+<p><strong>Theorem (an isometric involution transfers to the dual and makes the canonical map equivariant).</strong> Let $R$ be a topological ring with a continuous involution $\sigma$, let $M$ be a topological $R$-module, and give the dual $M^* = \operatorname{Hom}_K^c(M,K)$ the module structure twisted by $\sigma$,</p>
+<p>$$
+(r\cdot f)(m) = f(\sigma(r)\,m) ,
+$$</p>
+<p>when $\sigma$ is an anti-automorphism of $R$ acting on $M$ by a compatible anti-action, or $(r\cdot f)(m) = f(r\,m)$ in the automorphism case. Then $\sigma$ induces a continuous involution $\sigma^*$ of $M^*$ with $\sigma^*\sigma^* = \mathrm{id}$, the bidual carries the corresponding involution $\sigma^{**}$, and the canonical map is equivariant, $c_M\circ\sigma = \sigma^{**}\circ c_M$ when $\sigma$ acts on $M$, so reflexivity is compatible with the involutive structure.</p>
+<p><strong>Proof.</strong> The twisted module structure is well defined because $\sigma$ is an automorphism or anti-automorphism and preserves the continuity of the forms; $\sigma^*f = f\circ\sigma$ is continuous, additive and involutive, and it is continuous for the weak-$\ast$ and strong topologies because $\sigma$ is a homeomorphism of $M$. The equivariance of $c_M$ is $\langle\sigma^*f, \sigma m\rangle = \langle f, m\rangle$, checked directly from the definition.</p>
+<p><strong>Corollary (reflexive involutive topological rings).</strong> A reflexive topological ring with a continuous involution has a continuous involution on its bidual, and when the ring is reflexive the involution of the ring identifies with the involution of the bidual under the canonical isomorphism; in particular the fixed and skew parts of the involution are preserved by reflexivity, and the completion of an involutive topological ring of <em>The Involution and the Completion of a Ring</em> is reflexive exactly when the ring is complete.</p>
+<p><strong>Proof.</strong> Combine the equivariance with the identification of $R$ and $R^{**}$ under reflexivity; the fixed and skew parts are the eigenspaces of the involution, preserved under a topological isomorphism, and the completion statement is the completeness theorem applied to the involutive ring.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the complete valued fields).</strong> A complete valued field $F$ is reflexive as a one-dimensional space over itself; a non-complete valued field, such as $\mathbb{Q}$ with the $p$-adic absolute value or $\mathbb{R}$ with the usual topology embedded in $k(x)$, is not reflexive. The completion of a valued field is its reflexive hull in dimension one.</p>
+<p><strong>Example (the finite-dimensional spaces over a complete field).</strong> Every finite-dimensional Hausdorff space over $\mathbb{C}$ or $\mathbb{Q}_p$ is reflexive; the double dual is the original space and the canonical map is the identity in a basis.</p>
+<p><strong>Example (the Hilbert spaces).</strong> A Hilbert space $H$ is reflexive; the Riesz representation theorem identifies $H^*$ with $H$ and the canonical map with the identity under the conjugate-linear identification, and the involution of the scalar field transfers to the antilinear structure. The spaces $\ell^1$ and $c_0$ are mutually dual and neither is reflexive, which is the standard failure of reflexivity in the normed setting.</p>
+<p><strong>Example (the field of formal Laurent series).</strong> The field $k((t))$ with the $t$-adic topology is complete, hence reflexive as a one-dimensional space over itself; the involution $t\mapsto t^{-1}$ of <em>Involutive Valued Fields</em> is not continuous, so it does not transfer to the dual, which shows that the isometry hypothesis in the involutive duality theorem is genuine.</p>
+<h2 id="summary">Summary</h2>
+<p>For a topological module $M$ over a complete non-discrete topological field $K$, the dual $M^*$ is the module of continuous linear forms with the weak-$\ast$ and strong topologies, and the canonical map $c_M : M\to M^{**}$, $c_M(m)(f) = f(m)$, is $K$-linear and continuous; $M$ is semi-reflexive when $c_M$ is bijective and reflexive when it is a topological isomorphism. The map is injective exactly when the dual separates points; its kernel is a closed subspace; reflexivity forces completeness; and every finite-dimensional Hausdorff space over a complete non-discrete field is reflexive, so the complete valued fields are reflexive in dimension one and the non-complete ones are not. The strong topology is the topology of uniform convergence on bounded sets, and the Mackey–Arens theorem describes the admissible topologies; a reflexive space is identified with the strong dual of its strong dual.</p>
+<p>An isometric involution of the acting ring transfers to the dual and to the bidual, and the canonical map is equivariant, so reflexivity is compatible with an involutive structure; the reflexive hull of an involutive valued field is its completion, and the involution extends to it. The standard failures — $\ell^1$, $c_0$, the non-complete valued fields, the non-continuous involution $t\mapsto t^{-1}$ — mark the boundary of the theory, and the normed duality of operators is the neighbouring subject.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>Complete non-discrete topological field</td>
+</tr>
+<tr>
+<td>$M$, $M^*$, $M^{**}$</td>
+<td>Module, dual, bidual</td>
+</tr>
+<tr>
+<td>$\langle f, m\rangle = f(m)$</td>
+<td>The natural pairing</td>
+</tr>
+<tr>
+<td>Weak-$\ast$ topology</td>
+<td>Pointwise convergence on $M$</td>
+</tr>
+<tr>
+<td>Strong topology</td>
+<td>Uniform convergence on bounded subsets</td>
+</tr>
+<tr>
+<td>$c_M(m)(f) = f(m)$</td>
+<td>The canonical map</td>
+</tr>
+<tr>
+<td>Semi-reflexive</td>
+<td>$c_M$ bijective</td>
+</tr>
+<tr>
+<td>Reflexive</td>
+<td>$c_M$ a topological isomorphism</td>
+</tr>
+<tr>
+<td>Bounded subsets</td>
+<td>The sets defining the strong topology</td>
+</tr>
+<tr>
+<td>$\sigma, \sigma^*, \sigma^{**}$</td>
+<td>The involution and its transfers to the duals</td>
+</tr>
+<tr>
+<td>$\ell^1$, $c_0$</td>
+<td>The standard non-reflexive pair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for duality, the strong topology, the Mackey–Arens theorem and reflexivity.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em>, Graduate Texts in Mathematics 96 (Springer, 2nd ed. 1990), for reflexivity of Banach and Hilbert spaces and the examples $\ell^1$ and $c_0$.</li>
+<li>Helmut H. Schaefer, <em>Topological Vector Spaces</em>, Graduate Texts in Mathematics 3 (Springer, 2nd ed. 1999), for the strong dual, barrel spaces and the reflexivity criterion.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the topology of a valued field and its completion.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the locally compact fields and their duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

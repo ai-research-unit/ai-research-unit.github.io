@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivariant Knot Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivariant-knot-theory"><strong>Equivariant Knot Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A knot is <strong>periodic</strong> when it admits a periodic symmetry: an action of the cyclic group $\mathbb{Z}/n$ on the three-sphere preserving the knot, with an axis disjoint from the knot. The symmetry gives the knot a second, equivariant layer of invariants — the equivariant Seifert surface, the equivariant Seifert form, the equivariant signature, the equivariant Alexander module — and it produces a <strong>quotient knot</strong> whose invariants constrain those of the periodic knot. This article is the equivariant knot theory: the periodic knots, their quotients, and the invariants that live on the equivariant layer.</p>
+<p>The subject is the meeting point of two theories already in the corpus: the knot theory of <em>Knot Theory</em>, which supplies the Seifert surfaces, the Alexander polynomial, the signatures and the branched covers, and the structure theory of <em>Involutions on Manifolds and Equivariant Surgery</em>, which supplies the fixed set, the equivariant neighbourhoods and the equivariant surgery. The outcome of the equivalence is the <strong>equivariant Seifert form</strong>, whose Wall class is the complete equivariant invariant of the knot's periodicity up to the usual surgery considerations.</p>
+<p><strong>The article assumes</strong> the Seifert surfaces, the Seifert form, the Alexander polynomial and the signature of <em>Knot Theory</em>, the double branched cover and the Goeritz matrix, the integral group ring and its involutions, and the equivariant surgery obstruction of <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
+<p><strong>The boundaries of the article.</strong> The knot theory without symmetries is <em>Knot Theory</em>; the chirality and the mirror are <em>Amphichiral Knots and the Orientation-Reversing Involution</em>, the previous article; the periodic maps of a general manifold are <em>Periodic Maps and the Smith Theory</em>, and the free involutions and the lens spaces are <em>Free Involutions and Lens Spaces</em>. The equivariant signature in its analytic form is <em>Hermitian Pairings and the Equivariant Signature</em>; the knot Floer and the $\rho$-invariants are <em>Floer Homology</em>. The equivariant homotopy theory of knots and the mapping class group of a knot complement are <em>Knot Theory</em> and <em>Low-Dimensional Topology</em>.</p>
+<h2 id="periodic-knots-and-their-quotients">Periodic Knots and their Quotients</h2>
+<p><strong>Definition.</strong> A knot $K\subseteq S^3$ is <strong>$n$-periodic</strong> if there is an action of $\mathbb{Z}/n$ on $S^3$ by homeomorphisms preserving $K$ whose fixed set contains a circle <strong>axis</strong> $A$ disjoint from $K$, and such that the action on $S^3\setminus A$ has no other fixed points. The quotient of $S^3\setminus A$ by the action is again a three-sphere (the quotient of the solid torus is a solid torus), and the image of $K$ in the quotient is the <strong>quotient knot</strong> $\bar K$, which is a knot in $S^3$; the pair $(K,\bar K)$ with the integer $n$ is the <strong>periodic knot datum</strong>.</p>
+<p><strong>Proposition (Smith theory constraints).</strong> The fixed set of a nontrivial action of $\mathbb{Z}/p$ with $p$ prime on $S^3$ is a mod $p$ homology sphere of dimension at most three; for $p$ odd the fixed set is a circle, for $p = 2$ it is a circle, a two-sphere or two points. Consequently the periodic knot datum with axis a circle exists for every $n$, and the fixed set of the action generating the period is exactly the axis when the period is odd.</p>
+<p><strong>Proof.</strong> The statement is the Smith theory of <em>Periodic Maps and the Smith Theory</em>: the fixed set of a $\mathbb{Z}/p$ action on a mod $p$ homology sphere is a mod $p$ homology sphere, and on $S^3$ the possibilities for $p$ odd reduce to a circle because a two-dimensional mod $p$ homology sphere fixed set would separate and force a contradiction with the complementary free action; the case $p=2$ adds the two-sphere of a reflection and the two-point fixed set. The construction of the periodic data for the axis case is the periodic map fixing the axis.</p>
+<p><strong>Remark (the cases and the terminology).</strong> The case in which the fixed set is a circle disjoint from $K$ is the <strong>cyclic</strong> or <strong>classical periodic</strong> case treated here. The case in which the fixed set meets $K$, or is a two-sphere, gives the <strong>strongly invertible</strong> and the <strong>amphichiral</strong> symmetries of <em>Amphichiral Knots and the Orientation-Reversing Involution</em> and <em>Knot Theory</em>; the general treatment of the symmetries of a knot, including the periodic ones with the axis meeting the knot, is <em>Knot Theory</em> and <em>Low-Dimensional Topology</em>.</p>
+<p><strong>Proposition (the branched cover and the quotient).</strong> The $n$-fold cyclic branched cover $\Sigma_n(S^3,K)$ carries an action of $\mathbb{Z}/n$ with quotient $S^3$ branched over $\bar K$, and the deck transformation of the cover commutes with the action; the double branched cover $\Sigma_2(S^3,K)$ of the periodic knot is an $n$-fold cover of the double branched cover of the quotient knot, with deck group $\mathbb{Z}/n$.</p>
+<p><strong>Proof.</strong> The branched cover is constructed from the action on $S^3\setminus K$ by the representation of $\pi_1$ onto $\mathbb{Z}/n$; the symmetry of the pair descends to an action on the cover, and the compositions of the covering projections give the stated quotient maps and deck groups.</p>
+<h2 id="the-equivariant-seifert-form">The Equivariant Seifert Form</h2>
+<p><strong>Definition.</strong> An <strong>equivariant Seifert surface</strong> for the periodic knot $(K,n)$ is a Seifert surface $\Sigma$ for $K$ invariant under the action, chosen so that the action restricts to $\Sigma$ with the same period; its invariant part $\Sigma_0 = \Sigma^{\mathbb{Z}/n}$ is a Seifert surface for the quotient knot $\bar K$ (with possibly several components before the quotient), and $\Sigma$ is a cyclic cover of $\Sigma_0$ branched at the fixed points of the action on $\Sigma$.</p>
+<p><strong>Proposition (the equivariant Seifert form).</strong> The Seifert form of an equivariant Seifert surface,
+$$
+V : H_1(\Sigma;\mathbb{Z})\times H_1(\Sigma;\mathbb{Z})\longrightarrow \mathbb{Z}, \qquad V(x,y) = \mathrm{lk}(x,y^+) ,
+$$
+is equivariant for the action of $\mathbb{Z}/n$ in the sense that $V(gx,gy) = V(x,y)$, and it extends to a sesquilinear form over the group ring
+$$
+V^{\mathbb{Z}/n} : H_1(\Sigma;\mathbb{Z})\times H_1(\Sigma;\mathbb{Z})\longrightarrow \mathbb{Z}[\mathbb{Z}/n], \qquad V^{\mathbb{Z}/n}(x,y) = \sum_{g\in\mathbb{Z}/n} V(x,gy)\,g ,
+$$
+whose class in the Witt group of $\mathbb{Z}[\mathbb{Z}/n]$ with the involution $g\mapsto g^{-1}$ is an invariant of the periodic knot datum. The invariant part $\Sigma_0$ gives the ordinary Seifert form of the quotient knot as the "trivial character" component of $V^{\mathbb{Z}/n}$.</p>
+<p><strong>Proof.</strong> The linking form is invariant under the action because the action preserves the orientations and the linking numbers, and the sum over the group is the standard passage from an equivariant form to a form over the group ring. The decomposition of $\mathbb{Z}[\mathbb{Z}/n]\otimes\mathbb{C}$ into characters of $\mathbb{Z}/n$ decomposes the form into the twisted forms $V_{\zeta}$ of the next section, of which the component at the trivial character is the Seifert form of the quotient.</p>
+<p><strong>Remark (the equivariant Witt class and the surgery obstruction).</strong> The class of the equivariant Seifert form in the Witt group of $\mathbb{Z}[\mathbb{Z}/n]$ is the algebraic home of the periodicity invariants: it is the analogue, for the periodic knot, of the Seifert form as a concordance invariant, and it is the algebraic input to the equivariant surgery of the knot complement. The Wall group $L_{2k+1}(\mathbb{Z}[\mathbb{Z}/n])$ and the equivariant surgery obstruction of <em>Involutions on Manifolds and Equivariant Surgery</em> are the framework; the algebraic computations are in the literature cited below.</p>
+<h2 id="the-equivariant-alexander-module-and-signature">The Equivariant Alexander Module and Signature</h2>
+<p><strong>Definition.</strong> Let $\zeta$ be a complex $n$-th root of unity and let $\mathbb{C}_\zeta$ be the complex numbers with the action of $\mathbb{Z}/n$ by $\zeta$. The <strong>twisted homology</strong> of the knot complement is
+$$
+H_*^{\zeta}(S^3\setminus K;\mathbb{C}) = H_*\bigl((S^3\setminus K)\times_{\mathbb{Z}/n}\mathbb{C}_\zeta\bigr) = H_*(S^3\setminus K;\mathbb{C}_\zeta) ,
+$$
+the homology with coefficients in the "twisted" module $\mathbb{C}_\zeta$, a module over $\mathbb{Z}[t^{\pm1}]$ through the action of the meridian.</p>
+<p><strong>Proposition (decomposition of the equivariant Alexander module).</strong> The equivariant Alexander module $H_1(S^3\setminus K;\mathbb{Z}[\mathbb{Z}/n][t^{\pm1}])$ decomposes, after tensoring with $\mathbb{C}$, into the sum of the twisted modules
+$$
+H_1(S^3\setminus K;\mathbb{C})_{\mathbb{Z}/n}\otimes\mathbb{C} = \bigoplus_{\zeta^n=1} H_1^{\zeta}(S^3\setminus K;\mathbb{C}),
+$$
+the component at the trivial character being the ordinary Alexander module of $K$ and the component at $\zeta\neq1$ being the twisted module. The twisted <strong>equivariant Alexander polynomial</strong> $\Delta_K(t,\zeta)$ generates the order ideal of the twisted module, and it satisfies the symmetry and the congruence of the periodic knot theory; at $\zeta = 1$ it is the Alexander polynomial of $K$, and the module of the quotient knot appears in the trivial-character and in the linking-form components.</p>
+<p><strong>Proof sketch.</strong> The group ring $\mathbb{Z}[\mathbb{Z}/n]$ becomes a sum of copies of $\mathbb{C}$ indexed by the characters after tensoring with $\mathbb{C}$; the module structure of the Alexander module over $\mathbb{Z}[\mathbb{Z}/n][t^{\pm1}]$ therefore decomposes into the twisted pieces, and the order ideals give the twisted polynomials. The detailed relation between $\Delta_K(t,\zeta)$ and the Alexander polynomial of the quotient knot $\bar K$ is the content of Murasugi's congruence; the statement and its applications are in the sources, and the present article records the module structure.</p>
+<p><strong>Definition (the equivariant signature).</strong> For each $n$-th root of unity $\zeta$ the <strong>equivariant signature</strong> $\sigma(K,\zeta)$ is the signature of the Hermitian form obtained from the equivariant Seifert form by the character $\zeta$,
+$$
+\sigma(K,\zeta) = \operatorname{sign}\bigl((1-\zeta)^{-1}V_{\zeta} + ((1-\zeta)^{-1}V_{\zeta})^{*}\bigr),
+$$
+the twisted analogue of the Tristram–Levine signature; for $\zeta = -1$ it is the ordinary signature.</p>
+<p><strong>Theorem (the equivariant signature is an invariant of the periodic datum).</strong> The numbers $\sigma(K,\zeta)$ depend only on the periodic knot datum $(K,n)$ and the character, are constant on the components of the complement of the unit circle of the $\zeta$-variable, and satisfy the equivariant sum formulas
+$$
+\sum_{\zeta^n = 1}\sigma(K,\zeta) = \sigma(K,\bar{\ }) + \text{(contributions of the axis)},
+$$
+so that the periodicity imposes congruences on the signatures of $K$ and of the quotient $\bar K$; these are the classical "periodic" signature conditions.</p>
+<p><strong>Proof sketch.</strong> The Hermitian form is the twisted symmetrisation of the Seifert form; its signature is constant as long as $\zeta$ stays in a component of $\mathbb{C}\setminus(\text{roots of the Alexander polynomial})$, by the continuity of the eigenvalues, and the sum formula is the decomposition of the equivariant form into characters. The precise formulas for the axis contributions and the resulting congruences are in the literature.</p>
+<h2 id="classical-periodic-invariants">Classical Periodic Invariants</h2>
+<p><strong>Theorem (Murasugi's congruence, statement).</strong> Let $K$ be $n$-periodic with quotient knot $\bar K$ and axis $A$. Then the Alexander polynomials satisfy a congruence relating $\Delta_K$ to the twisted polynomials of the characters and to the Alexander polynomials of $\bar K$ and of the axis; in particular the quotient knot's Alexander polynomial is recovered from the characters, and the congruence is the classical necessary condition for an $n$-periodic knot with a given quotient.</p>
+<p><strong>Proof sketch.</strong> The congruence is read off the decomposition of the equivariant Alexander module and the identification of the trivial character component with the module of the quotient; the axis contributes the linking form, and its Alexander polynomial is the "twisted" factor. The full statement, with the conventions for the variable and the root of unity, is Murasugi's theorem.</p>
+<p><strong>Theorem (the equivariant genus inequality, statement).</strong> Let $K$ be $n$-periodic with quotient knot $\bar K$. Then
+$$
+g(K)\;\geq\; n\,g(\bar K),
+$$
+where $g$ is the Seifert genus, and more generally the equivariant minimal genus satisfies the corresponding inequality with the axis contribution; the inequality is sharp for the torus knots.</p>
+<p><strong>Proof sketch.</strong> An equivariant minimal Seifert surface covers the quotient surface with degree $n$ and with the fixed points of the action as the branch points; counting the Euler characteristics gives the inequality. The equivalence of the minimal equivariant genus and the ordinary minimal genus, and the resulting inequality, are the equivariant genus theorem; the sharpness for the torus knots is the example below.</p>
+<p><strong>Remark (detection and non-detection).</strong> The classical polynomial and signature invariants detect periodicity only partially: there are knots with all the classical periodic congruences satisfied that are not periodic, and there are periodic knots not detected by the Alexander polynomial alone; the finer detection is by the equivariant Seifert form, by the twisted Alexander modules and, in the modern theory, by the knot Floer homology with its equivariant structure. The latter is <em>Floer Homology</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the torus knots are periodic).</strong> The torus knot $T(p,q)$ is invariant under the periodic map of $S^3$ about the core of the torus with period $p$ (and with period $q$), with the axis disjoint from the knot near the core; the quotient knot is the torus knot $T(1,q)$, that is, the unknot, and more generally the quotient of the $p$-periodic structure is the unknot with the axis winding $q$ times. The genus of $T(p,q)$ is $(p-1)(q-1)/2$, and the equivariant genus inequality is an equality for these knots; the example is the standard one for the periodicity of a knot.</p>
+<p><strong>Example (the trefoil is $3$-periodic).</strong> The trefoil $T(2,3)$ is $3$-periodic with the quotient knot the unknot; its Alexander polynomial $\Delta(t) = t-1+t^{-1}$ satisfies the Murasugi congruence for $n=3$, and the periodic structure is visible in the standard diagram with three-fold symmetry. The trefoil is also $2$-periodic in the strongly invertible sense, with the axis meeting the knot; the two structures are different and illustrate the dependence of the periodicity on the fixed set.</p>
+<p><strong>Example (the connected sum and the divisor).</strong> If $K_1$ is $n$-periodic and $K_2$ is arbitrary, the connected sum $K_1\#K_2$ is not periodic in general, because the symmetry of the first summand does not extend across the summing sphere; and the connected sum of two $n$-periodic knots with compatible axes is $n$-periodic. The additivity and the obstruction to it are <em>Knot Theory</em> and the equivariant theory here.</p>
+<p><strong>Example (the double of a knot).</strong> The $n$-fold cyclic branched cover of $S^3$ branched over a knot, with its deck transformation, is the standard source of periodic knots: a knot in the quotient covered by a knot in the cover is periodic with the deck group as its period. The construction is the double branched cover of <em>Amphichiral Knots and the Orientation-Reversing Involution</em>, read with $\mathbb{Z}/n$ in place of $\mathbb{Z}/2$, and the free case is <em>Free Involutions and Lens Spaces</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A knot is $n$-periodic when a cyclic group of order $n$ acts on the three-sphere preserving it with an axis disjoint from the knot; the quotient is a knot $\bar K$ in the quotient sphere, and the threefold of the knot, its quotient and the axis is the periodic datum. Smith theory forces the fixed set of a prime-order action on $S^3$ to be a circle for odd periods, so the periodic datum exists for every period, and the branched covers of $K$ are cyclic covers of those of $\bar K$. The equivariant invariants are assembled from an equivariant Seifert surface: the equivariant Seifert form takes values in the group ring $\mathbb{Z}[\mathbb{Z}/n]$ and its Witt class is the algebraic invariant of the periodic datum, its character decomposition gives the twisted Alexander modules with their twisted polynomials and the twisted signatures $\sigma(K,\zeta)$, and the trivial character recovers the quotient knot. The classical consequences are Murasugi's congruence for the Alexander polynomial, the equivariant signature congruences with their axis contributions, and the equivariant genus inequality $g(K)\geq n\,g(\bar K)$, sharp for the torus knots; the conditions are necessary and the finer detection is by the equivariant Seifert form and the Floer-theoretic refinements. The torus knots and the trefoil are the standard examples.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$, $\mathbb{Z}/n$</td>
+<td>the period and the cyclic group acting on $S^3$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>the axis, the fixed circle of the action, disjoint from $K$</td>
+</tr>
+<tr>
+<td>$K$, $\bar K$</td>
+<td>the periodic knot and its quotient knot</td>
+</tr>
+<tr>
+<td>$\Sigma$, $\Sigma_0 = \Sigma^{\mathbb{Z}/n}$</td>
+<td>an equivariant Seifert surface and its invariant part</td>
+</tr>
+<tr>
+<td>$V^{\mathbb{Z}/n}(x,y) = \sum_g V(x,gy)g \in \mathbb{Z}[\mathbb{Z}/n]$</td>
+<td>the equivariant Seifert form</td>
+</tr>
+<tr>
+<td>$\zeta$, $\Delta_K(t,\zeta)$</td>
+<td>an $n$-th root of unity and the twisted Alexander polynomial</td>
+</tr>
+<tr>
+<td>$H_1^{\zeta}(S^3\setminus K;\mathbb{C})$</td>
+<td>the twisted homology, a summand of the equivariant Alexander module</td>
+</tr>
+<tr>
+<td>$\sigma(K,\zeta)$</td>
+<td>the equivariant signature; $\sigma(K,-1)$ is the ordinary signature</td>
+</tr>
+<tr>
+<td>$g(K)\geq n\,g(\bar K)$</td>
+<td>the equivariant genus inequality</td>
+</tr>
+<tr>
+<td>$\Sigma_2(S^3,K)$, $\Sigma_n(S^3,K)$</td>
+<td>the double and the $n$-fold cyclic branched covers</td>
+</tr>
+<tr>
+<td>$T(p,q)$</td>
+<td>the torus knot, $p$- and $q$-periodic with unknot quotient</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Kunio Murasugi, "On Periodic Knots", <em>Commentarii Mathematici Helvetici</em> 46 (1971), 162–174, for the congruence of the Alexander polynomials of a periodic knot and its quotient.</li>
+<li>Kunio Murasugi, "On Periodic Knots II", <em>Journal of the Mathematical Society of Japan</em> 25 (1973), 405–416, for the signatures and the periodicity conditions.</li>
+<li>Richard Hartley, "The Conway Potential Function for Links", <em>Commentarii Mathematici Helvetici</em> 58 (1983), 365–378, for the equivariant and twisted invariants of periodic knots.</li>
+<li>Charles Livingston and Paul Kirk, "Twisted Alexander Invariants, Reidemeister Torsion, and Casson–Gordon Invariants", <em>Topology</em> 38 (1999), 635–661, for the twisted Alexander polynomials and their use.</li>
+<li>Allan Edmonds, "Least Area Seifert Surfaces and Periodic Maps", <em>Topology</em> 18 (1979), 17–25, for the equivariant genus inequality and the symmetric minimal surfaces.</li>
+<li>Akio Kawauchi, <em>A Survey of Knot Theory</em> (Birkhäuser, 1996), for the symmetries, the periodic knots and their classical invariants.</li>
+<li>Peter Ozsváth and Zoltán Szabó, "Knot Floer Homology and the Four-Ball Genus", <em>Annals of Mathematics</em> 159 (2004), 1159–1245, for the Floer-theoretic equivariant refinements, developed in <em>Floer Homology</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

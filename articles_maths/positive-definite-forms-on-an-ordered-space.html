@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Forms on an Ordered Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-forms-on-an-ordered-space"><strong>Positive Definite Forms on an Ordered Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>positive definite form</strong> on an ordered space is a Hermitian form that is positive semidefinite and is <strong>compatible with the order</strong>: it takes nonnegative real values on the pairs of positive elements,</p>
+<p>$$
+B(x,y)\geq0 \quad \text{for every } x,y\in E_+ .
+$$</p>
+<p>Such a form produces an inner product, hence a Hilbert space and a <strong>representation</strong> of the ordered space by operators on it; conversely every representation of the ordered space by operators on a Hilbert space, through a vector, produces a positive definite form, the <strong>vector state</strong> $B(x,y) = \langle\pi(x)\xi,\pi(y)\xi\rangle$. The article states this duality: the positive definite forms are exactly the vector states of the order-preserving representations, the <strong>Kolmogorov decomposition</strong> of a form being the construction of the representation, and the order of the space being recovered from the forms by $x\geq0\iff B(x,y)\geq0$ for every $y\geq0$ (the <strong>self-duality</strong> of the cone for the form). In the presence of an <strong>order unit</strong> the forms normalised by $B(u,u) = 1$ play the role of the <strong>states</strong>, and the order interval $[-u,u]$ is the set of the elements bounded in the associated seminorm, so that the order and the forms determine each other.</p>
+<p>The article is the general-ordered-space companion of the preceding <code>- *</code> articles: <em>Positive Definite Forms and the Order</em> treats the forms on an involutive algebra, where the forms are the positive functionals $\varphi(b^{*}a)$ and the representation is the GNS construction; <em>The Hilbert Cone of an Involutive Algebra</em> treats the self-dual case, where the cone equals its dual in the inner product. Here the space is only ordered, the forms are abstract, and the statements are the order-theoretic ones: the Riesz and Kolmogorov decompositions, the order-preserving representations, and the recovery of the order from the forms and the order unit.</p>
+<p>The order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; the positive definite forms on an involutive algebra and the GNS construction are <em>Positive Definite Forms and the Order</em>; the Hilbert cone and the self-duality are <em>The Hilbert Cone of an Involutive Algebra</em>; the Hermitian elements and the order unit are <em>Hermitian Elements and the Order Unit</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the forms and the reproducing kernels are <em>Positive Definite Kernels and Reproducing Kernel Hilbert Spaces</em>; and the operator-algebraic representations are <em>Operator Algebras</em> and <em>Hilbert Algebras</em> of Part II.</p>
+<h2 id="positive-definite-forms-and-order-compatibility">Positive Definite Forms and Order Compatibility</h2>
+<p><strong>Definition.</strong> Let $E$ be an ordered vector space over $\mathbb{R}$ with cone $E_+$. A <strong>positive definite form</strong> on $E$ is a symmetric bilinear form $B$ with</p>
+<p>$$
+B(x,x)\geq0 \ \text{ for every } x , \qquad B(E_+,E_+)\subseteq\mathbb{R}_+ ;
+$$</p>
+<p>it is <strong>definite</strong> when $B(x,x) = 0$ implies $x = 0$, its <strong>radical</strong> is $N = \{x : B(x,x) = 0\}$, and it is <strong>order compatible</strong> when $B(E_+,E_+)\subseteq\mathbb{R}_+$, which is the second condition above and is <strong>automatic</strong> for the positive semidefinite forms of an algebra in which the cone is generated by the squares.</p>
+<p><strong>Proposition (the order compatibility of the form).</strong> A positive semidefinite form is order compatible if and only if it is positive on the generators of the cone; the order-compatible forms are the <strong>positive functionals</strong> of the ordered space when the space is one-dimensional with a generating cone, and they form a convex cone, the <strong>dual cone of the cone of the forms</strong>. The <strong>cone of the forms</strong> is the set of the positive definite forms, and it is the dual of the cone of the space in the sense of the mixed positivity</p>
+<p>$$
+B(x,y)\geq0 \ \text{ for every } x\in E_+, y\in E_+ .
+$$</p>
+<p><em>Proof.</em> The positivity on the generators of the cone implies the positivity on all of $E_+$ by the bilinearity and the closure of the cone under the addition and the scaling; the convex-cone statement is immediate; the mixed-positivity description is the definition.</p>
+<p><strong>Definition.</strong> The cone $E_+$ is <strong>self-dual</strong> for the form $B$ when</p>
+<p>$$
+E_+ = \{x : B(x,y)\geq0 \ \text{ for every } y\in E_+\} ;
+$$</p>
+<p>it is <strong>autopolar</strong> when it is self-dual for some positive definite form, and the form is then a <strong>self-dual form</strong> of the ordered space.</p>
+<p><strong>Proposition (the order from the self-dual form).</strong> If the cone is self-dual for the form $B$ then the order of $E$ is the order of the evaluation functionals,</p>
+<p>$$
+x\geq0 \iff B(x,y)\geq0 \ \text{ for every } y\geq0 ,
+$$</p>
+<p>and the form is a <strong>positive definite form representing the order</strong>; conversely an order-compatible form whose polarity equals the cone is self-dual, and the self-dual forms of an order-unit space are the order-isomorphism invariants of the pair (space, cone).</p>
+<p><em>Proof.</em> The equivalence is the definition of the self-duality, read in both directions; the converse is the same definition; the invariance statement is that an order isomorphism carries the self-dual forms to the self-dual forms by the transport of the inner product.</p>
+<h2 id="the-inner-product-the-seminorm-and-the-completion">The Inner Product, the Seminorm and the Completion</h2>
+<p><strong>Proposition (the seminorm and the radical).</strong> The assignment $p(x) = B(x,x)^{1/2}$ is a seminorm on $E$, and it is a norm exactly when $B$ is definite; the Cauchy–Schwarz inequality $B(x,y)^{2}\leq B(x,x)B(y,y)$ holds, the radical $N = \{x : p(x) = 0\}$ is a subspace, and the quotient $E/N$ is a pre-Hilbert space whose completion $\mathcal{H}_B$ is a Hilbert space.</p>
+<p><em>Proof.</em> The seminorm property and the Cauchy–Schwarz inequality are the standard ones of a positive semidefinite form; the radical is a subspace by the equality case of the inequality, and the quotient form is definite, so the completion is a Hilbert space.</p>
+<p><strong>Theorem (the Kolmogorov decomposition).</strong> Every positive definite form $B$ on the ordered space is of the form</p>
+<p>$$
+B(x,y) = \langle\pi(x)\xi,\ \pi(y)\xi\rangle
+$$</p>
+<p>for a Hilbert space $\mathcal{H}$, a representation $\pi : E\to L(\mathcal{H})$ by the operators preserving the order, and a vector $\xi\in\mathcal{H}$: the <strong>Kolmogorov</strong> (or <strong>Gelfand–Naimark–Segal</strong>) decomposition. The representation is uniquely determined up to unitary equivalence, is <strong>order preserving</strong>,</p>
+<p>$$
+x\geq0 \implies \pi(x)\geq0 \ \text{ as an operator} ,
+$$</p>
+<p>and its <strong>cyclic</strong> vector $\xi$ generates $\mathcal{H}$; the radical $N$ is the kernel of $\pi$, and the quotient form is the inner product of the representation.</p>
+<p><em>Proof.</em> Build the pre-Hilbert space $E/N$ with the inner product induced by $B$; the completion is $\mathcal{H}$. The action $\pi(x)$ is defined by the multiplication in the algebra when $E$ is an algebra and by the invariance of the form in general, and the compatibility of the form with the order gives the order preservation on the generators, hence by linearity on the cone. The cyclic vector is the image of a positive generator witnessing the order unit; the uniqueness is the standard one of the GNS construction.</p>
+<p><strong>Corollary (the order unit and the states).</strong> When $E$ has an order unit $u$, the positive definite forms with $B(u,u) = 1$ are the <strong>states of the form</strong>, the order-unit seminorm is</p>
+<p>$$
+\lVert x\rVert_B = \sup\{B(x,y) : B(y,y)\leq1\} ,
+$$</p>
+<p>and $x\geq0$ if and only if $\pi(x)\geq0$ in the decomposition of every state form; the set of the state forms is a convex set, and it determines the order by the theorem above.</p>
+<p><em>Proof.</em> The normalisation and the seminorm formula are the definition of an order unit and the duality of a positive definite form; the order criterion is the Kolmogorov decomposition applied form by form; the convexity is immediate.</p>
+<h2 id="the-representation">The Representation</h2>
+<p><strong>Definition.</strong> A <strong>representation</strong> of the ordered space on a Hilbert space is a linear map $\pi : E\to L(\mathcal{H})$ that is <strong>positive</strong>, $\pi(E_+)\subseteq L(\mathcal{H})_+$, and <strong>unital</strong> when $E$ has an order unit, $\pi(u) = I$.</p>
+<p><strong>Proposition (the vector states of a representation).</strong> For a positive representation $\pi$ and a vector $\xi$, the form $B_\xi(x,y) = \langle\pi(x)\xi,\pi(y)\xi\rangle$ is a positive definite form on $E$; the map $(\pi,\xi)\mapsto B_\xi$ is inverse to the Kolmogorov decomposition, and the <strong>cyclic</strong> representations correspond to the <strong>definite</strong> forms.</p>
+<p><em>Proof.</em> The positivity is the inequality $\langle(\pi(x)+\lambda\pi(y))\xi,\ldots\rangle\geq0$, or directly $\langle\pi(x)\xi,\pi(x)\xi\rangle\geq0$ and the mixed positivity from the order preservation and the positivity of the vector $\xi$; the inverse correspondence is the Kolmogorov construction, and the cyclicity corresponds to the definiteness of the form.</p>
+<p><strong>Theorem (the representation theorem for the ordered space).</strong> Every ordered space with an order unit and a self-dual cone is order isomorphic to a space of operators on a Hilbert space, in which the cone is the cone of the positive operators restricted to the space; the representation is the direct sum of the Kolmogorov representations of the state forms, and it is the <strong>universal representation</strong> of the ordered space.</p>
+<p><em>Proof.</em> Apply the Kolmogorov decomposition to each state form and take the direct sum over the state forms; the direct sum is faithful because the state forms separate the order (two elements differing by a nonzero element separated from the cone are distinguished by a state form); the positivity of the image is the order preservation; the conic statement is the transport of the cone. This is the ordered-space form of the Gelfand–Naimark theorem.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-self-adjoint-part-of-an-involutive-algebra">The Self-Adjoint Part of an Involutive Algebra</h3>
+<p>Let $E = H(A)$ with the order of the positive cone and the forms $B(x,y) = \varphi(yx)$ for the positive functionals $\varphi$. The positive definite forms are the restrictions of the positive functionals of <em>Positive Definite Forms and the Order</em>, the order compatibility is the congruence property, the Kolmogorov decomposition is the GNS construction of the algebra, and the order is the operator order of the universal representation. This is the model.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $E = C(X,\mathbb{R})$ with the pointwise order, the order unit $1$, and the form $B(x,y) = \int xy\,\mathrm{d}\mu$ for a positive measure $\mu$. The form is order compatible, the representation is the multiplication by $x$ on $L^{2}(\mu)$, and the order is the pointwise one; the state forms are the probability measures, and the order interval $[-1,1]$ is the set of the functions bounded by $1$ pointwise. The commutative case shows that the forms and the order carry the same information as the measure-theoretic positivity.</p>
+<h3 id="the-order-unit-space-with-a-self-dual-cone">The Order-Unit Space with a Self-Dual Cone</h3>
+<p>Let $E$ be a finite-dimensional ordered space with a self-dual cone, for instance $\mathbb{R}^{n}$ with the cone of the coordinates nonnegative. The form $B(x,y) = \langle x,y\rangle$ is self-dual, the order is the coordinatewise order, and the Kolmogorov decomposition is the identity representation; the state forms are the points of the dual cone at the order unit, and the order interval is the cube $[-1,1]^{n}$. The finite-dimensional case is the smallest illustration of the autopolarity.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>positive definite form</strong> on an ordered space is a positive semidefinite Hermitian form that is <strong>order compatible</strong>, $B(E_+,E_+)\subseteq\mathbb{R}_+$; the forms form a convex cone, and the cone of the space is <strong>self-dual</strong> for a form when $E_+ = \{x : B(x,y)\geq0\ \forall y\in E_+\}$, in which case the order is the order of the evaluations $x\mapsto B(x,y)$. The <strong>seminorm</strong> $p(x) = B(x,x)^{1/2}$ is a norm exactly when the form is definite; the <strong>radical</strong> is a subspace, and the completion of the quotient is the Hilbert space $\mathcal{H}_B$. The <strong>Kolmogorov decomposition</strong> writes every form as a vector state $B(x,y) = \langle\pi(x)\xi,\pi(y)\xi\rangle$ of an <strong>order-preserving representation</strong>, uniquely up to unitary equivalence, with the cyclic vector generating the space; the <strong>vector states</strong> of a positive representation are exactly the positive definite forms, and the <strong>direct sum</strong> over the state forms is the <strong>universal representation</strong>, in which the ordered space is a space of operators with the cone of the positive ones. In the presence of an <strong>order unit</strong> the forms with $B(u,u) = 1$ are the <strong>states</strong>, the order-unit seminorm is recovered from them, and the order is recovered by the representation theorem. The order is <em>Ordered Vector Spaces and the Order Unit</em>; the forms on an involutive algebra are <em>Positive Definite Forms and the Order</em>; the self-dual cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the Hermitian elements are <em>Hermitian Elements and the Order Unit</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the reproducing kernels are <em>Positive Definite Kernels and Reproducing Kernel Hilbert Spaces</em>; and the operator representations are <em>Operator Algebras</em> and <em>Hilbert Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(x,x)\geq0$</td>
+<td>Positive definite form</td>
+</tr>
+<tr>
+<td>$B(E_+,E_+)\subseteq\mathbb{R}_+$</td>
+<td>Order compatibility</td>
+</tr>
+<tr>
+<td>$E_+ = \{x : B(x,y)\geq0\ \forall y\in E_+\}$</td>
+<td>Self-duality of the cone for the form</td>
+</tr>
+<tr>
+<td>$p(x) = B(x,x)^{1/2}$</td>
+<td>Seminorm; a norm iff the form is definite</td>
+</tr>
+<tr>
+<td>$N = \{x : p(x) = 0\}$</td>
+<td>Radical</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_B$</td>
+<td>Completion of the quotient, a Hilbert space</td>
+</tr>
+<tr>
+<td>$B(x,y) = \langle\pi(x)\xi,\pi(y)\xi\rangle$</td>
+<td>Kolmogorov decomposition</td>
+</tr>
+<tr>
+<td>$B(u,u) = 1$</td>
+<td>State form at the order unit</td>
+</tr>
+<tr>
+<td>$\lVert x\rVert_B = \sup\{B(x,y) : B(y,y)\leq1\}$</td>
+<td>Order-unit seminorm of the form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the positive forms, the vector states and the representation of an ordered space.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the GNS construction and the universal representation.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the ordered vector spaces, the positive forms and the order-unit seminorms.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the order-unit spaces, the state spaces and the representation theorems.</li>
+<li>Nachman Aronszajn, "Theory of reproducing kernels", <em>Transactions of the American Mathematical Society</em> <strong>68</strong> (1950), 337–404, for the positive definite forms, the Kolmogorov decomposition and the reproducing kernels.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

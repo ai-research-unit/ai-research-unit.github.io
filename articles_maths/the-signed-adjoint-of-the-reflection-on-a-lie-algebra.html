@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-lie-algebra"><strong>The Signed Adjoint of the Reflection on a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>reflection</strong> of a graded Lie algebra is the signed conjugation $\rho_a = e^{\operatorname{ad}_a}\alpha$, and its adjoint with respect to an invariant Hermitian form that the grade involution preserves is its inverse: $\rho_a^{*} = \alpha e^{-\operatorname{ad}_a} = \rho_a^{-1}$. The reflection is therefore always a <strong>unitary</strong> operator of the form, and it is <strong>self-adjoint</strong> exactly when it is an involution, that is when $a + \alpha(a)$ is central; the reflection by an odd element satisfies this automatically, while the reflection by an even element need not. The article computes the adjoint, identifies the self-adjoint reflections with the involutive ones, and examines the three ways in which the self-adjointness fails.</p>
+<p>This article treats the adjoint of a reflection read as a signed operator on a Lie algebra, the self-adjointness of the reflections and its failure in the degenerate case. It is the fourth article of the <code>- * Operator Theory</code> group of the category; the reflection and its involution condition are <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>, the signed sandwich which realises it is <em>The Signed Sandwich on a Lie Algebra</em>, both above in the category, the adjoint of the sandwich is <em>The Signed Adjoint Sandwich on a Lie Algebra</em>, above, the invariant form is <em>Hermitian Forms on a Lie Algebra</em>, and the remaining adjoints are <em>The Signed Adjoint of the Left Multiplication on a Lie Algebra</em> and <em>The Graded Adjoint Action on a Module over a Lie Algebra</em>, below in this group.</p>
+<p>The article assumes the reflection, the signed conjugation and the carrying elements from <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>, the adjoint operation and the adjoints of the one-sided multiplications from <em>The Signed Adjoint Sandwich on a Lie Algebra</em>, the invariant Hermitian form and its positive definite case from <em>Hermitian Forms on a Lie Algebra</em>, the inner automorphisms and the exponential from <em>The Lie Correspondence and the Adjoint Representation</em>, and the grading and the grade involution from <em>Graded Lie Algebras with an Involution</em>. The form is used as an instrument; the geometric reflection in a hyperplane, which needs a metric, is Part IV.</p>
+<h2 id="the-adjoint-of-a-reflection">The Adjoint of a Reflection</h2>
+<h3 id="the-computation">The Computation</h3>
+<p><strong>Definition.</strong> Let $H$ be a non-degenerate invariant Hermitian form on the Lie algebra $\mathrm{G}$, preserved by the grade involution, and let $\rho_a = e^{\operatorname{ad}_a}\alpha$ be the signed conjugation. The <strong>adjoint</strong> is the operator $\rho_a^{*}$ with $H(\rho_ax,y) = H(x,\rho_a^{*}y)$.</p>
+<p><strong>Theorem (the reflection is unitary).</strong> The adjoint of the signed conjugation is its inverse,</p>
+<p>$$
+\rho_a^{*} = \alpha e^{-\operatorname{ad}_a} = \rho_a^{-1} ,
+$$</p>
+<p>so that $\rho_a^{*}\rho_a = \rho_a\rho_a^{*} = \mathrm{id}$: every reflection preserves the form $H$.</p>
+<p><em>Proof.</em> The adjoint of the composite is the composite of the adjoints in the reverse order, $\rho_a^{*} = \alpha^{*}\bigl(e^{\operatorname{ad}_a}\bigr)^{*}$; the isometry $\alpha$ has $\alpha^{*} = \alpha$, and the exponential of the skew-adjoint $\operatorname{ad}_a$ has adjoint the exponential of $-\operatorname{ad}_a$, $\bigl(e^{\operatorname{ad}_a}\bigr)^{*} = e^{-\operatorname{ad}_a}$; hence $\rho_a^{*} = \alpha e^{-\operatorname{ad}_a}$, which is the inverse of $e^{\operatorname{ad}_a}\alpha$ computed in <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>.</p>
+<p><strong>Corollary.</strong> The reflection is a unitary operator of the form and its adjoint is another reflection, the signed conjugation by $-\alpha(a)$,</p>
+<p>$$
+\rho_a^{*} = \rho_{-\alpha(a)} ,
+$$</p>
+<p>since $\alpha e^{-\operatorname{ad}_a} = e^{-\operatorname{ad}_{\alpha(a)}}\alpha = e^{\operatorname{ad}_{-\alpha(a)}}\alpha$.</p>
+<p><em>Proof.</em> Move $\alpha$ past the exponential with $\alpha e^{-\operatorname{ad}_a} = e^{-\operatorname{ad}_{\alpha(a)}}\alpha$.</p>
+<h3 id="self-adjointness">Self-Adjointness</h3>
+<p><strong>Theorem (the self-adjoint reflections).</strong> The reflection is self-adjoint if and only if it is an involution,</p>
+<p>$$
+\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id} \iff a + \alpha(a)\in Z(\mathrm{G}) ,
+$$</p>
+<p>and the self-adjoint reflections are exactly the involutive reflections; in particular the reflection by an <strong>odd</strong> element is self-adjoint.</p>
+<p><em>Proof.</em> The reflection is unitary, so $\rho_a^{*} = \rho_a^{-1}$; the identity $\rho_a^{-1} = \rho_a$ is the involution, whose criterion is the centrality of $a+\alpha(a)$ from <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>. For an odd element $a + \alpha(a) = 0$, which is central.</p>
+<p><strong>Corollary.</strong> The reflection by an even element is self-adjoint exactly when $2a$ is central; the reflection by a mixed pair reduces to the even and the odd cases componentwise, and the reflection by the zero element is the grade involution $\alpha$, which is self-adjoint and an involution.</p>
+<p><em>Proof.</em> For an even element $\alpha(a) = a$ and the criterion is $2a$ central; the componentwise statement is the linearity of the map $a\mapsto a+\alpha(a)$; the zero case is immediate.</p>
+<h3 id="the-fixed-subalgebra-and-the-form">The Fixed Subalgebra and the Form</h3>
+<p><strong>Theorem.</strong> The fixed subalgebra of a self-adjoint reflection is the orthogonal complement of the image of the operator $\mathrm{id} - \rho_a$,</p>
+<p>$$
+\operatorname{Fix}(\rho_a) = \bigl(\operatorname{im}(\mathrm{id}-\rho_a)\bigr)^{\perp} ,
+$$</p>
+<p>and for an involutive reflection the algebra decomposes into the fixed subalgebra and its complement on which the reflection acts by $-\mathrm{id}$.</p>
+<p><em>Proof.</em> A self-adjoint operator has its fixed set equal to the orthogonal complement of the image of $\mathrm{id}-\rho_a$, because $H((\mathrm{id}-\rho_a)x, y) = H(x,(\mathrm{id}-\rho_a)y)$; for an involution the operator $\mathrm{id}-\rho_a$ is twice the projection onto the anti-fixed part.</p>
+<h2 id="the-failure-of-self-adjointness">The Failure of Self-Adjointness</h2>
+<h3 id="the-even-carrying-element">The Even Carrying Element</h3>
+<p><strong>Proposition.</strong> For an even carrying element $a$ with $2a$ not central the reflection is unitary but not self-adjoint; the defect</p>
+<p>$$
+\rho_a - \rho_a^{*} = \rho_a - \rho_a^{-1}
+$$</p>
+<p>does not vanish, and the reflection is a unitary operator whose inverse is a different reflection, $\rho_a^{*} = \rho_{-\alpha(a)} = \rho_{-a}$.</p>
+<p><em>Proof.</em> The self-adjointness criterion is not satisfied, and the adjoint is the reflection by the negative of the parameter; the two reflections differ exactly when the involution condition fails.</p>
+<h3 id="the-inner-involution">The Inner Involution</h3>
+<p><strong>Proposition.</strong> If the grade involution is inner, $\alpha = e^{\operatorname{ad}_w}$, then the reflection is the inner automorphism $e^{\operatorname{ad}_{a+w}}$, which is unitary; it is self-adjoint exactly when it is an involution, that is when $2(a+w)$ is central, and in the generic case it is unitary but not self-adjoint.</p>
+<p><em>Proof.</em> Substitute $\alpha = e^{\operatorname{ad}_w}$; the reflection is the inner automorphism of the sum, and the criterion is the centrality of the doubled generator.</p>
+<h3 id="the-degenerate-form">The Degenerate Form</h3>
+<p><strong>Proposition.</strong> If the form $H$ is degenerate, the adjoint of a reflection need not exist, and if the grade involution is not an isometry of $H$ the adjoint of the reflection is not its inverse: in the first case the operator has no adjoint on the radical, and in the second the reflection fails to preserve the form, so it is not unitary; the reflection is unitary and self-adjoint exactly in the non-degenerate isometric case and under the involution condition.</p>
+<p><em>Proof.</em> The adjoint exists for every operator exactly when $H$ is non-degenerate; the unitarity of $\rho_a$ uses $\alpha^{*} = \alpha$, which is the isometry of the involution. The Heisenberg algebra with its degenerate form is the standard example, as in <em>The Signed Adjoint Sandwich on a Lie Algebra</em>.</p>
+<h3 id="the-non-unitary-reflection">The Non-Unitary Reflection</h3>
+<p><strong>Proposition.</strong> If the involution is not an isometry, the adjoint of the reflection is $\rho_a^{*} = \alpha^{*}e^{-\operatorname{ad}_a}$, which differs from $\rho_a^{-1}$ by the defect $\alpha^{*}\alpha^{-1}$, and the reflection is then only a similarity of the form with the defect of the involution; the reflection is unitary exactly when the involution is.</p>
+<p><em>Proof.</em> Compute the product $\rho_a^{*}\rho_a = \alpha^{*}e^{-\operatorname{ad}_a}e^{\operatorname{ad}_a}\alpha = \alpha^{*}\alpha$, which is the identity exactly when $\alpha$ is an isometry.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-cartan-involution">The Cartan Involution</h3>
+<p>For $a = 0$ the reflection is the grade involution $\rho_0 = \alpha$, which is an involution and an isometry, hence self-adjoint and unitary; this is the Cartan involution of <em>The Cartan Decomposition and the Cartan Involution</em> read as the simplest reflection, and its fixed subalgebra is the maximal compact subalgebra.</p>
+<h3 id="the-odd-reflections">The Odd Reflections</h3>
+<p>Let $\mathrm{G} = \mathrm{sl}_2(\mathbb{R})$ with the Cartan involution $\alpha$ as the grading and the invariant form of signature $(2,1)$; for an odd element $a$, that is a symmetric traceless matrix, the reflection $\rho_a = e^{\operatorname{ad}_a}\alpha$ is a self-adjoint unitary involution, its fixed subalgebra is one-dimensional, and the reflection is a hyperbolic involution of the algebra whose geometric reading is Part IV.</p>
+<h3 id="the-even-reflection">The Even Reflection</h3>
+<p>Let $\mathrm{G} = \mathrm{gl}(n)$ with $\alpha = \mathrm{id}$ and $H(X,Y) = \operatorname{tr}(X\overline{Y})$; the reflection is the inner automorphism $e^{\operatorname{ad}_a}$, which is unitary for the form; it is self-adjoint exactly when $2a$ is central, so a reflection by a traceless diagonal element with distinct eigenvalues is unitary but not self-adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>With respect to a non-degenerate invariant Hermitian form preserved by the grade involution, the reflection $\rho_a = e^{\operatorname{ad}_a}\alpha$ has the adjoint $\rho_a^{*} = \alpha e^{-\operatorname{ad}_a} = \rho_a^{-1}$, so <strong>every reflection is unitary</strong> and its adjoint is the reflection by $-\alpha(a)$; the reflection is <strong>self-adjoint exactly when it is an involution</strong>, which is the centrality of $a+\alpha(a)$, and this holds automatically for every odd element, while for an even element it requires $2a$ central. The self-adjoint reflection has its fixed subalgebra equal to the orthogonal complement of the image of $\mathrm{id}-\rho_a$, and the algebra then splits into the fixed part and the anti-fixed part. The self-adjointness fails in the degenerate forms of the construction: for an even carrying element with $2a$ not central the reflection is unitary but not self-adjoint — the reflection by a generic inner automorphism — and for a degenerate form the adjoint need not exist, while for a non-isometric involution the reflection is not unitary at all, its defect being that of the involution. The Cartan involution is the reflection by the zero element, self-adjoint and unitary, and the reflections by the odd elements are the self-adjoint unitary involutions of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>the invariant Hermitian form, preserved by the involution</td>
+</tr>
+<tr>
+<td>$\rho_a = e^{\operatorname{ad}_a}\alpha$</td>
+<td>the reflection, the signed conjugation</td>
+</tr>
+<tr>
+<td>$\rho_a^{*} = \alpha e^{-\operatorname{ad}_a} = \rho_a^{-1}$</td>
+<td>the adjoint, the inverse</td>
+</tr>
+<tr>
+<td>$\rho_a^{*} = \rho_{-\alpha(a)}$</td>
+<td>the adjoint as a reflection</td>
+</tr>
+<tr>
+<td>$\rho_a^{*} = \rho_a \iff \rho_a^{2} = \mathrm{id}$</td>
+<td>the self-adjointness criterion</td>
+</tr>
+<tr>
+<td>$a+\alpha(a)\in Z(\mathrm{G})$</td>
+<td>the involution condition</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(\rho_a) = (\operatorname{im}(\mathrm{id}-\rho_a))^{\perp}$</td>
+<td>the fixed subalgebra</td>
+</tr>
+<tr>
+<td>$\rho_a^{*}\rho_a = \alpha^{*}\alpha$</td>
+<td>the defect of the non-isometric involution</td>
+</tr>
+<tr>
+<td>degenerate $H$</td>
+<td>the failure of the existence of the adjoint</td>
+</tr>
+<tr>
+<td>$\rho_0 = \alpha$</td>
+<td>the Cartan involution as a reflection</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the Cartan involution, the invariant forms and their isometries.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the Cartan involutions, the symmetric pairs and the unitary operators of the form.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions, their isometries and the adjoint of a signed operator.</li>
+<li>Ottmar Loos, <em>Symmetric Spaces</em>, Volume I (Benjamin, 1969), for the involutions of a Lie algebra, their fixed subalgebras and the symmetric decompositions.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the inner automorphisms, the invariant forms and the adjoints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

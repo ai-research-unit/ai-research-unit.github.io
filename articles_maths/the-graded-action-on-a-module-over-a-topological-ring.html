@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over a Topological Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-a-topological-ring"><strong>The Graded Action on a Module over a Topological Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded ring acts on a graded module by operators that respect the grading, and the operator by which it acts is the <strong>signed action</strong>, the module-level form of the signed left multiplication: an element of the ring sends a homogeneous element of the module of degree $j$ to one of degree $i + j$, and the parity operator of the module intertwines with the grade involution of the ring. This article treats the graded action on a topological module over a topological ring: it fixes the graded action, proves the compatibility of the action with the two grade involutions as the relation $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$, shows that the twisted (signed) action is a genuine action exactly on the even part of the ring and that the odd part obstructs it unless the sign rule is imposed, and reads the grading topologically, where the parity operator is continuous exactly when the decomposition into the even and odd parts is a topological direct sum, and where the completion preserves the grading.</p>
+<p>The article assumes the graded ring, the grading decomposition, the grade involution and the sign rule from <em>Graded Rings</em> and <em>The Grade Involution</em>; the module over a ring, the module endomorphisms and the regular module from <em>Modules</em>; the topological module, its topology and the continuity of the action from <em>Topological Modules and Vector Spaces</em>; the signed left multiplication on the ring itself from <em>The Signed Left Multiplication on a Topological Ring</em>; the signed sandwich and its composition from <em>The Signed Sandwich on a Topological Ring</em>; and the completion operator and its functoriality from <em>The Completion Operator</em>. The cohomology of graded modules, the Koszul complex and the superalgebra of the endomorphisms are named at the boundary and not used; the adjoint action is <em>The Graded Adjoint Action on a Module over a Topological Ring</em>, later in this category. No measure, no norm and no form occurs.</p>
+<p>Throughout, $R = R^0\oplus R^1$ is a graded ring, unital, with grade involution $\alpha$, the automorphism equal to $+1$ on $R^0$ and $-1$ on $R^1$, assumed continuous; $M = M^0\oplus M^1$ is a graded left $R$-module with <strong>parity operator</strong> $\pi : M\to M$, the additive operator equal to $+1$ on $M^0$ and $-1$ on $M^1$; the <strong>degree</strong> $|x|$ of a homogeneous element is $0$ or $1$; and the action is written $r\cdot m$.</p>
+<h2 id="graded-rings-and-graded-modules">Graded Rings and Graded Modules</h2>
+<p><strong>Definition.</strong> A <strong>graded ring</strong> is a ring $R = R^0\oplus R^1$ with $R^iR^j\subseteq R^{i+j}$ (indices modulo $2$); a <strong>graded left module</strong> over $R$ is a module $M = M^0\oplus M^1$ with $R^iM^j\subseteq M^{i+j}$. An element is <strong>homogeneous</strong> if it lies in $R^0\cup R^1$ or $M^0\cup M^1$, and its <strong>degree</strong> is $0$ or $1$ accordingly.</p>
+<p><strong>Proposition (the grade involution and the parity operator).</strong> The grade involution $\alpha(r) = (-1)^i r$ for $r \in R^i$ is an involutive ring automorphism, with fixed subring $R^0$ and skew part $R^1$; the parity operator $\pi(m) = (-1)^j m$ for $m \in M^j$ is an involutive additive operator, with fixed part $M^0$ and skew part $M^1$, and the decompositions $R = R^0\oplus R^1$ and $M = M^0\oplus M^1$ are the eigenspace decompositions of $\alpha$ and $\pi$.</p>
+<p><strong>Proof.</strong> For $\alpha$: on homogeneous elements $\alpha(rs) = (-1)^{i+j}rs = \alpha(r)\alpha(s)$ and $\alpha(r+s) = \alpha(r)+\alpha(s)$, so $\alpha$ is a ring automorphism, and $\alpha^2$ is the identity because $(-1)^{2i}=1$; the eigenspaces of an involution are the fixed and skew parts, which are exactly $R^0$ and $R^1$. The same for $\pi$ with additivity, which is the only structure the module has in this respect.</p>
+<h2 id="the-parity-operator">The Parity Operator</h2>
+<p><strong>Proposition (the parity operator intertwines the two grade involutions).</strong> For $r \in R$ and $m \in M$, the compatibility of the action with the gradings is the relation</p>
+<p>$$
+\pi(r\cdot m) = \alpha(r)\cdot\pi(m) ,
+$$</p>
+<p>and for homogeneous $r$ of degree $i$ this reads $\pi(r\cdot m) = (-1)^i\,r\cdot\pi(m)$. Equivalently, the action $R\times M\to M$ is a morphism of graded modules, and the parity operator is <strong>$\alpha$-semilinear</strong>: it is additive, involutive, and $\pi(r\cdot m) = \alpha(r)\pi(m)$.</p>
+<p><strong>Proof.</strong> For homogeneous $r\in R^i$ and $m\in M^j$ the product lies in $M^{i+j}$, so $\pi(r\cdot m) = (-1)^{i+j}r\cdot m$; on the other side $\alpha(r)\cdot\pi(m) = (-1)^i r\cdot(-1)^j m = (-1)^{i+j}r\cdot m$. Both sides are additive, so the relation holds for all $r, m$.</p>
+<p><strong>Corollary (the parity operator is not $R$-linear).</strong> For $r$ odd, $\pi(r\cdot m) = -r\cdot\pi(m)$, so $\pi$ anticommutes with the odd action: the parity operator is $R^0$-linear but $\alpha$-semilinear, and it is $R$-linear only when the ring is evenly graded, $R = R^0$.</p>
+<p><strong>Proof.</strong> Set $i = 1$ in the relation; the failure of $R$-linearity is exact. When $R^1 = 0$ the grade involution is the identity and $\pi$ commutes with the action.</p>
+<h2 id="the-graded-action-and-the-sign-rule">The Graded Action and the Sign Rule</h2>
+<p><strong>Definition.</strong> The <strong>graded action</strong> of $R$ on $M$ is the action $r\cdot m$ with $R^iM^j\subseteq M^{i+j}$; the <strong>twisted action</strong> is</p>
+<p>$$
+r\star m = r\cdot\pi(m) ,
+$$</p>
+<p>the module-level signed left multiplication. The <strong>sign rule</strong> is the requirement that for homogeneous $r$ the twisted action of $r$ carry the parity operator to multiplication by $(-1)^{|r|}$, that is $\pi(r\star m) = (-1)^{|r|}\,r\star m$.</p>
+<p><strong>Proposition (the twisted action on the even part).</strong> The twisted action is compatible with the grading, $\pi(r\star m) = \alpha(r)\star\pi(m)$, and it is associative exactly on the even part: for even $r$ and $s$, $(rs)\star m = r\star(s\star m)$; for odd $s$ this fails in general.</p>
+<p><strong>Proof.</strong> $\pi(r\star m) = \pi(r\pi(m)) = \alpha(r)\pi(\pi(m)) = \alpha(r)\pi(m) = \alpha(r)\star m$, using $\pi^2 = \mathrm{id}$ and the semilinearity. For associativity, $r\star(s\star m) = r\pi(s\pi(m)) = r\pi(s)m$ and $(rs)\star m = rs\,\pi(m)$; these agree for all $m$ exactly when $r\pi(s) = rs$, that is when $\pi(s) = s$ on the relevant part, that is when $s$ is even (for a faithful action).</p>
+<p><strong>Theorem (the obstruction and the sign rule).</strong> The twisted action is a module action of $R$ on $M$ if and only if the ring is evenly graded, $R = R^0$; on a genuinely graded ring the odd elements obstruct associativity, and the obstruction disappears exactly when the sign rule is imposed, that is when the odd elements of $R$ act as odd operators, anticommuting with the parity operator. The ordinary (untwisted) action is always a module action, and the twisted and untwisted actions differ by the parity operator.</p>
+<p><strong>Proof.</strong> The associativity computation of the previous proposition shows that the twisted action is associative for all $r,s$ exactly when every homogeneous $s$ is even, that is $R^1 = 0$. When $R^1 \neq 0$ the odd elements fail associativity by exactly the sign $(-1)^{|r||s|}$ carried by the parity operator, which is the sign rule; requiring the odd elements to act as odd operators restores associativity on the graded level. The untwisted action $r\cdot m$ is a module action by the definition of a module, and the twist inserts $\pi$.</p>
+<p><strong>Corollary (the twisted action recovers the signed left multiplication on the regular module).</strong> For $M = R$ with the regular action and $\pi = \alpha$, the twisted action is $r\star x = r\alpha(x)$, which is the signed left multiplication $\ell_r$ of <em>The Signed Left Multiplication on a Topological Ring</em>; hence the graded action on the regular module is exactly the signed one-sided action, and the sign rule is the obstruction computation above.</p>
+<p><strong>Proof.</strong> Substitute $M = R$, $\pi = \alpha$ and $r\cdot x = rx$ in the definition of the twisted action; the result is $\ell_r$. The sign rule is then the associativity computation of the theorem.</p>
+<h2 id="the-topological-reading">The Topological Reading</h2>
+<p><strong>Proposition (continuity of the action and of the parity operator).</strong> Let $M$ be a topological $R$-module, that is a topological abelian group with a continuous action $R\times M\to M$. Then the action is continuous, the parity operator $\pi$ is continuous exactly when the decomposition $M = M^0\oplus M^1$ is a <strong>topological direct sum</strong>, that is when the projection onto $M^0$ along $M^1$ is continuous, and when $\pi$ is continuous the twisted action is continuous.</p>
+<p><strong>Proof.</strong> The continuity of the action is the definition of a topological module. A linear involution of a topological abelian group is continuous exactly when its eigenspace decomposition is topological, because the projection onto an eigenspace is $\tfrac12(\mathrm{id}+\pi)$ and its continuity is that of $\pi$; conversely a continuous projection makes $\pi = 2p - \mathrm{id}$ continuous. When $\pi$ is continuous the twisted action is the composite of the continuous action and $\mathrm{id}\times\pi$, hence continuous.</p>
+<p><strong>Proposition (the completion preserves the grading).</strong> Let $R$ and $M$ be complete Hausdorff, with continuous parity operators. Then the completion of $M$ for the linear topology of the module inherits the grading, $\widehat{M} = \widehat{M^0}\oplus\widehat{M^1}$, the parity operator extends, $\widehat{\pi}\circ\iota = \iota\circ\pi$, and the completed action is the action of the completed ring; so the graded action commutes with the completion operator of <em>The Completion Operator</em>.</p>
+<p><strong>Proof.</strong> The completion of a topological module for a linear topology is the inverse limit of the quotients by the open submodules; the submodules $M^0\cap N$ and $M^1\cap N$ for $N$ ranging over a fundamental system exhibit the completion as the direct sum of the completions of the two parts, and the parity operator, being continuous and additive, extends uniquely to the completion with the same intertwining. The action extends by the continuity of the multiplication and the functoriality of the completion.</p>
+<p><strong>Remark (the boundary).</strong> The graded action is the operator form of the grading, and its adjoint with respect to the form of the category is <em>The Graded Adjoint Action on a Module over a Topological Ring</em>, later in this category. The cohomology of a graded module, the Koszul complex and the superalgebra $\operatorname{End}(M)$ with its $\mathbb{Z}/2$-grading are named at this boundary and are not used; no measure, norm or form occurs.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the symmetric algebra and its sign change).</strong> For $R = k[x_1,\ldots,x_n]$ with the grading by degree modulo $2$ and $M = R$ with the regular action, the parity operator is $f(x)\mapsto f(-x)$ and the twisted action is $\ell_f(g) = f(-x)g$; the ring is commutative, so the twisted action is associative on the even part and the odd part obeys the sign rule.</p>
+<p><strong>Example (the exterior algebra).</strong> For the exterior algebra $\Lambda(V)$ with the usual grading, the grade involution is the sign change on the odd part, and the regular module is graded; the twisted action is the signed left multiplication, which for an odd element $v$ satisfies $\pi(v\star m) = -v\star m$ because $v$ is odd, the sign rule in its simplest form.</p>
+<p><strong>Example (a graded module of rank one).</strong> Let $M = R e$ with $e$ odd and $r\cdot e = \alpha(r)e$; then $M^0 = R^1e$ and $M^1 = R^0e$, the parity operator is $\pi(re) = (-1)^{|r|+1}re$, equal to $-e$ on the generator, and the twisted action obeys the sign rule because the generator is odd: $\pi(r\star e) = -r\star e$ for every homogeneous $r$.</p>
+<p><strong>Example (the Clifford module).</strong> The spin representation of a Clifford algebra is a graded module on which the odd elements act as odd operators, and the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the assertion that the Clifford action is a morphism of graded modules; this is the model for which the graded action is named.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded ring $R = R^0\oplus R^1$ with grade involution $\alpha$ acts on a graded module $M = M^0\oplus M^1$ with parity operator $\pi$ by a graded action, $R^iM^j\subseteq M^{i+j}$, and the compatibility of the action with the two involutions is the semilinearity relation $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$, equivalently $\pi(r\cdot m) = (-1)^{|r|}r\cdot\pi(m)$ for homogeneous $r$. The parity operator is $R^0$-linear but $\alpha$-semilinear and is $R$-linear only when the ring is evenly graded. The twisted action $r\star m = r\cdot\pi(m)$ is the module-level signed left multiplication; it is compatible with the grading, and it is associative exactly on the even part of the ring, so on a genuinely graded ring the odd elements obstruct associativity, and the obstruction is removed exactly by the sign rule, which states that the odd elements act as odd operators anticommuting with the parity operator. On the regular module the twisted action is the signed left multiplication $\ell_r$ of the ring.</p>
+<p>Topologically, the action of a topological module is continuous by definition, the parity operator is continuous exactly when the decomposition into the even and odd parts is a topological direct sum, and the completion preserves the grading and the action, so the graded action commutes with the completion operator; the adjoint of the graded action and the cohomological constructions of graded modules are the neighbouring subjects.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R = R^0\oplus R^1$</td>
+<td>The graded ring, $R^iR^j\subseteq R^{i+j}$</td>
+</tr>
+<tr>
+<td>$M = M^0\oplus M^1$</td>
+<td>The graded left module, $R^iM^j\subseteq M^{i+j}$</td>
+</tr>
+<tr>
+<td>$\alpha(r) = (-1)^i r$</td>
+<td>The grade involution of $R$</td>
+</tr>
+<tr>
+<td>$\pi(m) = (-1)^j m$</td>
+<td>The parity operator of $M$</td>
+</tr>
+<tr>
+<td>$r\cdot m$</td>
+<td>The graded action</td>
+</tr>
+<tr>
+<td>$\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$</td>
+<td>The semilinearity of the parity operator</td>
+</tr>
+<tr>
+<td>$r\star m = r\cdot\pi(m)$</td>
+<td>The twisted (signed) action</td>
+</tr>
+<tr>
+<td>$\pi(r\star m) = (-1)^{|r|}r\star m$</td>
+<td>The sign rule</td>
+</tr>
+<tr>
+<td>$R^1 = 0$</td>
+<td>The condition for the twisted action to be associative</td>
+</tr>
+<tr>
+<td>$\widehat{M} = \widehat{M^0}\oplus\widehat{M^1}$</td>
+<td>The completion preserves the grading</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for graded rings, graded modules and the regular module.</li>
+<li>C. T. C. Wall, "Graded algebras, anti-involutions, simple groups and symmetric spaces", <em>Bulletin of the American Mathematical Society</em> <strong>74</strong> (1968), 143–148, for graded algebras, their involutions and the sign rule.</li>
+<li>Pierre Deligne and John Morgan, <em>Notes on Supersymmetry (following Joseph Bernstein)</em>, in <em>Quantum Fields and Strings: A Course for Mathematicians</em> (American Mathematical Society, 1999), for the sign rule in graded (super) algebra.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em> (Springer, 1997; collected works), for graded modules over a Clifford algebra and the parity operator.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for complexes, the Koszul sign rule and the grading of the endomorphism algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

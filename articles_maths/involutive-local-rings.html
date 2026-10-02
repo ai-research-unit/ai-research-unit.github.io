@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Local Rings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-local-rings"><strong>Involutive Local Rings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A local ring has one maximal ideal, and an involution of it is therefore severely constrained: an involution is an isomorphism with the opposite ring, and such an isomorphism carries maximal ideals to maximal ideals, so the unique maximal ideal is carried to itself and the involution descends to the residue field. An <strong>involutive local ring</strong> is a local ring with an involution, and the structure it presents is a pair of involutions, the given one on the ring and its <strong>residue involution</strong> on the field, tied by the requirement that the maximal ideal be stable; the questions are what the involution does to the maximal ideal and its powers, what the fixed subring is, and when an involution of the residue field can be lifted back to the ring.</p>
+<p>This article treats those three questions in the elementary range: the stability of the maximal ideal, the induced involution on the residue field, the fixed subring and its residue field, and the lifting problem with the completeness hypothesis under which it is soluble. It assumes <em>Rings</em> for the local ring, its maximal ideal and its units, <em>Involutive Rings</em> for the involution and the fixed set, and <em>Field and Ring Automorphisms</em> for the automorphism group; the involution of a valued field and the residue of a valuation are treated with the valued fields of a later category, and the completion is used only as a hypothesis and is named as the boundary. Throughout, $(A, \mathfrak m)$ is a local ring with $1 \neq 0$, $k = A/\mathfrak m$ is its residue field, $\sigma$ is an involution of $A$, and $\sigma_k$ is the induced involution of $k$ when it exists; $A^\sigma$ is the fixed subring.</p>
+<h2 id="the-maximal-ideal-and-the-residue-involution">The Maximal Ideal and the Residue Involution</h2>
+<p><strong>Theorem.</strong> An involution $\sigma$ of a local ring $(A, \mathfrak m)$ carries the maximal ideal to itself, $\sigma(\mathfrak m) = \mathfrak m$, and every power of the maximal ideal likewise, $\sigma(\mathfrak m^n) = \mathfrak m^n$. Consequently $\sigma$ descends to the residue field: the map</p>
+<p>$$
+\sigma_k(a + \mathfrak m) = \sigma(a) + \mathfrak m
+$$</p>
+<p>is a well-defined involution of $k$.</p>
+<p><strong>Proof.</strong> $\sigma$ is a ring isomorphism $A \to A^{\mathrm{op}}$, and an isomorphism carries ideals to ideals and maximal ideals to maximal ideals; the opposite ring has the same ideals, so $\sigma(\mathfrak m)$ is a maximal ideal of $A$, and $\mathfrak m$ is the unique one, so $\sigma(\mathfrak m) = \mathfrak m$. For the powers, $\sigma(\mathfrak m^n) = \sigma(\mathfrak m)^n = \mathfrak m^n$. The descent is well defined because $\sigma(\mathfrak m)\subseteq \mathfrak m$: if $a - b \in \mathfrak m$ then $\sigma(a) - \sigma(b) = \sigma(a-b) \in \mathfrak m$. Additivity and the unit are inherited from $\sigma$, the anti-multiplicativity descends because the quotient of an anti-automorphism by a stable ideal is an anti-automorphism, $k$ is a field and therefore commutative, and $\sigma_k^2 = \mathrm{id}$ because $\sigma^2 = \mathrm{id}$.</p>
+<p><strong>Corollary.</strong> The involution permutes the prime ideals of $A$ that contain a given power of $\mathfrak m$, and it fixes $\mathfrak m$ and the powers $\mathfrak m^n$ as sets; the induced map on the associated graded ring $\bigoplus_n \mathfrak m^n/\mathfrak m^{n+1}$ is an involution that is the identity on the scalars of $k$ in the sense of the residue involution.</p>
+<p><strong>Proof.</strong> The powers are stable by the theorem, and the induced map on each quotient is well defined because $\sigma(\mathfrak m^n) = \mathfrak m^n$ and $\sigma(\mathfrak m^{n+1}) = \mathfrak m^{n+1}$; additivity, anti-multiplicativity and order two pass to the graded pieces.</p>
+<p><strong>Remark.</strong> The stability of $\mathfrak m$ is the whole content: a general ideal need not be stable, and the involution of a ring with several maximal ideals permutes them. The local hypothesis buys exactly the stability, and with it the residue involution, which is the coarsest invariant of $\sigma$.</p>
+<h2 id="the-fixed-subring">The Fixed Subring</h2>
+<p><strong>Proposition.</strong> The fixed subring $A^\sigma$ is a local ring with maximal ideal</p>
+<p>$$
+\mathfrak m^\sigma = A^\sigma \cap \mathfrak m = \{a \in \mathfrak m : \sigma(a) = a\},
+$$</p>
+<p>and its residue field is the fixed field of the residue involution,</p>
+<p>$$
+A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k},
+$$</p>
+<p>when $2$ is invertible in $A$. Without the hypothesis on $2$ the natural map $A^\sigma/\mathfrak m^\sigma \to k^{\sigma_k}$ is still injective, and it is surjective exactly when every element of $k^{\sigma_k}$ has a $\sigma$-fixed lift.</p>
+<p><strong>Proof.</strong> An element $a \in A^\sigma$ is a unit of $A$ exactly when it is a unit of $A^\sigma$, because $\sigma(a^{-1}) = \sigma(a)^{-1} = a^{-1}$ for a fixed unit $a$; hence the non-units of $A^\sigma$ are $A^\sigma\cap\mathfrak m$, which is therefore the unique maximal ideal and $A^\sigma$ is local. The map $A^\sigma \to k^\sigma$ induced by $A\to k$ has kernel $\mathfrak m^\sigma$, so it is injective onto its image; for surjectivity, given $x \in k^{\sigma_k}$ with a lift $a \in A$, the element $\tfrac12(a+\sigma(a))$ is fixed and has the same image as $a$ because $\sigma(a)\equiv \sigma_k(x) = x\equiv a \pmod{\mathfrak m}$; the computation fails without $\tfrac12$.</p>
+<p><strong>Remark.</strong> The fixed subring of an involution of a local ring is again local: this is one of the few properties that pass from a ring to its fixed ring without an extra hypothesis, and it is what makes the residue field of $A^\sigma$ computable. The image of $\sigma$ on the residue field is the full $k^{\sigma_k}$ when $\sigma$ is nontrivial on $k$, and the two extreme cases are $k^{\sigma_k} = k$ for a trivial residue involution and $k^{\sigma_k}$ of index two in $k$ for a nontrivial one, by the quadratic-extension theorem of <em>Involutive Rings</em>.</p>
+<h2 id="lifting-the-residue-involution">Lifting the Residue Involution</h2>
+<p><strong>Question.</strong> Given an involution $\tau$ of the residue field $k$, when is it induced by an involution of $A$, that is, when does there exist an involution $\sigma$ of $A$ with $\sigma_k = \tau$?</p>
+<p><strong>Proposition (the obstruction is not in the residue field).</strong> Not every involution of $k$ lifts: if $A = k[[t]]$ with the coefficientwise identity and the residue field $k$ of characteristic $\neq 2$, the involution $\tau$ of $k$ lifts to an involution of $k[[t]]$ if and only if $\tau$ extends to a $k$-linear map of $k[[t]]$ of order two, and the assignment $t \mapsto -t$ lifts the identity; a nontrivial involution of the coefficients extends coefficientwise, so in this example every involution of $k$ lifts.</p>
+<p><strong>Proof.</strong> The coefficientwise extension $\sum c_n t^n \mapsto \sum \tau(c_n)t^n$ is additive, multiplicative and of order two, and induces $\tau$ on $k = k[[t]]/(t)$; the map $t \mapsto -t$ is the case $\tau = \mathrm{id}$. The two constructions show that $k[[t]]$ has an involution inducing each involution of $k$, so for this ring there is no obstruction.</p>
+<p><strong>Theorem (lifting under completeness).</strong> Let $(A, \mathfrak m)$ be a complete Noetherian local ring with residue field $k$ and $2$ invertible in $A$, and let $\tau$ be an involution of $k$. Then $\tau$ is induced by an involution of $A$ when $k$ is perfect and $A$ is the completion of a finitely generated algebra over a coefficient ring on which $\tau$ acts; in particular, over a complete discrete valuation ring with perfect residue field every involution of the residue field lifts.</p>
+<p><strong>Proof (sketch).</strong> One lifts $\tau$ step by step through the powers: an involution of $A/\mathfrak m^{n+1}$ inducing $\tau$ is an involution of a nilpotent extension of $A/\mathfrak m^n$ by the module $\mathfrak m^n/\mathfrak m^{n+1}$, and the obstruction to lifting it lies in the second cohomology of the group $\mathbb{Z}/2$ acting through $\tau$ on that module; the obstruction vanishes when $2$ is invertible and the module is a direct summand with an invertible action, and completeness passes the compatible system of involutions to an involution of $A$. The hypothesis on $k$ supplies the first step, and the hypothesis on $2$ kills the obstruction at each step.</p>
+<p><strong>Remark.</strong> The lifting problem is the local form of the descent along an involutive Galois extension of the residue field, and the obstruction is the same as the one for the descent of a form along a quadratic extension; the forms themselves, their classification and the Brauer classes they define are <em>Hilbert Algebras</em> in Part II, and the descent theory is a later category. The elementary content used here is only that an involution of the residue field need not come from an involution of the ring and that completeness removes the obstruction.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) A discrete valuation ring with the identity residue involution.</strong> For $A = \mathbb{Z}_{(p)}$ or $\mathbb{Z}_p$ with $\sigma = \mathrm{id}$, the maximal ideal $(p)$ is fixed, the residue involution is the identity of $\mathbb{F}_p$, and $A^\sigma = A$ with residue field $\mathbb{F}_p$.</p>
+<p><strong>(b) A local ring with a nontrivial residue involution.</strong> For $p \equiv 3 \pmod 4$ the ring $A = \mathbb{Z}_p[i] = \mathbb{Z}_p[x]/(x^2+1)$ is the unramified quadratic extension of $\mathbb{Z}_p$: it is a discrete valuation ring whose maximal ideal is $(p)$ and whose residue field is $\mathbb{F}_{p^2}$. The conjugation $i \mapsto -i$ is an involution of $A$ fixing $(p)$, the residue involution is the Frobenius $x \mapsto x^p$ of $\mathbb{F}_{p^2}$ over $\mathbb{F}_p$, and the fixed subring is $\mathbb{Z}_p$; the two maximal ideals $\mathfrak m^\sigma = (p)$ and $\mathfrak m = (p)$ coincide, and the fixed and ambient residue fields are $\mathbb{F}_p$ and $\mathbb{F}_{p^2}$.</p>
+<p><strong>(c) The power-series ring.</strong> For $A = k[[t]]$ with $k$ a field of characteristic $\neq 2$, the involution $t \mapsto -t$ has fixed subring $k[[t^2]]$, with maximal ideal $(t^2)$, and residue field $k$; the involution $t \mapsto -t$ induces the identity on $k$. The coefficientwise conjugation over $k = \mathbb{C}$ has fixed subring $\mathbb{R}[[t]]$.</p>
+<p><strong>(d) The dual numbers.</strong> For $A = k[x]/(x^2)$ with $x \mapsto -x$ and $2$ invertible, the maximal ideal $(x)$ is fixed with $\mathfrak m^2 = 0$, the residue field is $k$ with the identity involution, and the fixed subring is $k[x^2] = k$, since $x^2 = 0$; so the fixed ring has the same residue field as $A$ and its maximal ideal is $0$.</p>
+<p><strong>(e) A general local ring and the fixed maximal ideal.</strong> In every case the fixed subring is local by the proposition, and the two invariants of the involution at the residue are whether $\sigma_k$ is trivial or a quadratic involution; the lifting question is settled by completeness and the invertibility of $2$, and no other elementary invariant of the local pair is used here.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a local ring $(A,\mathfrak m)$ fixes the maximal ideal, $\sigma(\mathfrak m) = \mathfrak m$, and each of its powers, and it descends to an involution $\sigma_k$ of the residue field $k = A/\mathfrak m$; the induced map on the associated graded ring is likewise an involution. The fixed subring $A^\sigma$ is local with maximal ideal $\mathfrak m^\sigma = A^\sigma\cap\mathfrak m$, and for $2$ invertible its residue field is the fixed field $k^{\sigma_k}$ of the residue involution; the natural map is injective in general and surjective exactly when every fixed residue has a fixed lift.</p>
+<p>Not every involution of the residue field need lift, and the lifting of a given $\tau$ is a step-by-step problem whose obstruction lies in the cohomology of the order-two action on the successive quotients of the maximal ideal; over a complete Noetherian local ring with $2$ invertible and perfect residue field the obstruction vanishes. The examples are the discrete valuation rings with the identity residue involution, the ring $\mathbb{Z}_p[i]$ whose residue involution is the Frobenius of $\mathbb{F}_{p^2}$, the power series rings whose fixed subring is $k[[t^2]]$, and the dual numbers, where the fixed ring is the field $k$ itself.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(A,\mathfrak m)$</td>
+<td>Local ring with unique maximal ideal</td>
+</tr>
+<tr>
+<td>$k = A/\mathfrak m$</td>
+<td>Residue field</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Involution of $A$; fixes $\mathfrak m$ and its powers</td>
+</tr>
+<tr>
+<td>$\sigma_k$</td>
+<td>Residue involution of $k$</td>
+</tr>
+<tr>
+<td>$\mathfrak m^\sigma = A^\sigma\cap\mathfrak m$</td>
+<td>Maximal ideal of the fixed subring</td>
+</tr>
+<tr>
+<td>$A^\sigma/\mathfrak m^\sigma \cong k^{\sigma_k}$</td>
+<td>Residue field of the fixed subring, $2$ invertible</td>
+</tr>
+<tr>
+<td>$k[[t]]$, $t \mapsto -t$</td>
+<td>Example; fixed subring $k[[t^2]]$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_p[i]$, $p\equiv 3 \pmod 4$</td>
+<td>Local ring whose residue involution is the Frobenius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Atiyah and Ian Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for local rings, the maximal ideal, the residue field and the powers of the maximal ideal.</li>
+<li>Nicolas Bourbaki, <em>Commutative Algebra</em> (Springer, 1989), for the maximal ideal, completions and the lifting of structure through nilpotent extensions.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the fixed subring and the passage of the involution to a quotient.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em>, Graduate Texts in Mathematics 67 (Springer, 1979), for the discrete valuation rings, their residue fields and the Frobenius of a finite residue field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

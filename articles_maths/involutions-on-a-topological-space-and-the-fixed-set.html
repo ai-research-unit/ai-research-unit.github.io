@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions on a Topological Space and the Fixed Set — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-on-a-topological-space-and-the-fixed-set"><strong>Involutions on a Topological Space and the Fixed Set</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involution</strong> of a set is a map that is its own inverse, and a continuous involution of a space is an involution that is continuous; it is then automatically a homeomorphism. The simplest nontrivial group, the group of order two, acts through such a map, and the theory of a space with an involution is the theory of that action. This article introduces the continuous involution, proves the elementary properties that make it an operator of order two on the space and on its power set, studies the <strong>fixed set</strong> $X^{\sigma}$ of the points the involution does not move, and identifies the <strong>orbit space</strong> $X/\sigma$ of the involution with the quotient of the space by the group it generates. The fixed set is the part of the space on which the involution is the identity, and it carries the simplest information of the involution; it is closed when the space is Hausdorff, and it is the exact obstruction to the involution being free, which is the subject of the following articles.</p>
+<p>The article is the opening of the group <code>- * Theory</code>, in which a structure is read with an involution on its elements; for a topological space the elements are its points, so the involution here is an involution of the space itself. The general theory of a group action, the orbit map as an operator, the induced map on a quotient and the closedness of a fixed set of a family of homeomorphisms are those of <em>The Orbit Map</em> and <em>Continuous Maps and the Orbit Map</em>, and they are cited where the involution only specialises them.</p>
+<p>Nothing analytic and nothing geometric is used. The sphere with the antipodal involution occurs as a standard example of a free involution and is named for that purpose; the uniform and proximity structures of the later articles of this group are not used, and no distance is chosen.</p>
+<h2 id="continuous-involutions">Continuous Involutions</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> An <strong>involution</strong> of a set $X$ is a map $\sigma : X \to X$ with</p>
+<p>$$
+\sigma \circ \sigma = \mathrm{id}_{X} .
+$$</p>
+<p>When $X$ is a topological space the involution is <strong>continuous</strong> when the map $\sigma$ is continuous, and a <strong>topological involution</strong> is a continuous involution.</p>
+<p><strong>Proposition.</strong> An involution is a bijection with inverse itself, and a continuous involution is a homeomorphism; conversely a homeomorphism of order two is a continuous involution. The identity map is an involution, and the composite of two commuting involutions is again an involution.</p>
+<p><strong>Proof.</strong> $\sigma$ is injective, since $\sigma(x) = \sigma(y)$ gives $x = \sigma(\sigma(x)) = \sigma(\sigma(y)) = y$, and surjective, since $\sigma(\sigma(x)) = x$; the inverse is $\sigma$. A continuous bijection with continuous inverse is a homeomorphism, and the inverse here is $\sigma$ itself. The converse is the definition read for a homeomorphism with $\sigma^{2} = \mathrm{id}$. For the composite of commuting involutions, $(\sigma\tau)^{2} = \sigma\tau\sigma\tau = \sigma\sigma\tau\tau = \mathrm{id}$.</p>
+<p><strong>Proposition.</strong> Let $\sigma$ be an involution. Then every point $x$ satisfies exactly one of: $\sigma(x) = x$, or $\sigma(x) \neq x$ and $\sigma(\sigma(x)) = x$ with $\sigma(x) \neq x$. Consequently the orbits of the group generated by $\sigma$ have one or two points.</p>
+<p><strong>Proof.</strong> The two cases are exhaustive and exclusive: if $\sigma(x) \neq x$ then $\sigma^{2}(x) = x$ returns to $x$, and $\sigma(x) \neq x$ by assumption, so the orbit $\{x, \sigma(x)\}$ has two points.</p>
+<h3 id="the-action-of-the-group-of-order-two">The Action of the Group of Order Two</h3>
+<p><strong>Definition.</strong> The group $\mathbb{Z}/2 = \{1, \sigma\}$ acts on $X$ by $\sigma \cdot x = \sigma(x)$ and $1 \cdot x = x$. The action is continuous exactly when the involution is.</p>
+<p>The identification of an involution with an action of $\mathbb{Z}/2$ is exact: an action of the two-element group is given by the single homeomorphism $\sigma = \ell_{\sigma}$ of order two, and conversely an involution defines the action. The <strong>fixed set</strong> is the fixed set $X^{\mathbb{Z}/2}$ of this action in the sense of <em>Continuous Maps and the Orbit Map</em>, and the <strong>orbit space</strong> is the quotient $X/(\mathbb{Z}/2)$.</p>
+<p><strong>Remark.</strong> An involution with a topology on $\mathbb{Z}/2$ is a continuous action of the discrete group; the reader who wants the topological-group version, in which $\mathbb{Z}/2$ is read with its discrete topology and the action is jointly continuous, may consult <em>Topological Groups</em>, where the discrete group is the first example. The continuous action of a finite group on a Hausdorff space is automatically a covering over its quotient when it is free, which is the subject of <em>The Orbit Space of a Free Involution</em>.</p>
+<h2 id="the-fixed-set">The Fixed Set</h2>
+<h3 id="definition-and-the-orbit-description">Definition and the Orbit Description</h3>
+<p><strong>Definition.</strong> The <strong>fixed set</strong> of a continuous involution $\sigma$ of $X$ is</p>
+<p>$$
+X^{\sigma} = \mathrm{Fix}(\sigma) = \{\, x \in X : \sigma(x) = x \,\} .
+$$</p>
+<p>A point of $X^{\sigma}$ is a <strong>fixed point</strong>; a point outside it is <strong>moved</strong> by $\sigma$. The involution is <strong>free</strong> when $X^{\sigma} = \emptyset$.</p>
+<p><strong>Proposition.</strong> A point is fixed if and only if its orbit is the singleton $\{x\}$; the fixed set is a union of orbits; and the involution restricts to the identity on the fixed set.</p>
+<p><strong>Proof.</strong> $x$ is fixed iff $\{x, \sigma(x)\} = \{x\}$ iff the orbit has one point. The fixed set is the union of its singleton orbits, and $\sigma$ restricted to it is the identity by definition.</p>
+<p><strong>Proposition.</strong> The complement $X \setminus X^{\sigma}$ is invariant under $\sigma$, and $\sigma$ acts on it without fixed points: the involution restricts to a free involution of the complement, and the orbit of a moved point has exactly two points.</p>
+<p><strong>Proof.</strong> If $\sigma(x) \neq x$ then $\sigma(\sigma(x)) = x \neq \sigma(x)$, so $\sigma(x)$ is moved as well; the complement is invariant. A moved point has a two-point orbit by the proposition above, and a point of the complement is fixed by the restriction only if it is fixed by $\sigma$.</p>
+<h3 id="closedness-of-the-fixed-set">Closedness of the Fixed Set</h3>
+<p><strong>Theorem.</strong> The fixed set of a continuous involution of a Hausdorff space is closed.</p>
+<p><strong>Proof.</strong> The map $x \mapsto (x, \sigma(x))$ from $X$ to $X \times X$ is continuous, and $X^{\sigma}$ is the preimage of the diagonal $\Delta_{X}$ under it. In a Hausdorff space the diagonal is closed, so the preimage is closed. This is the case $G = \mathbb{Z}/2$ of the general theorem of <em>Continuous Maps and the Orbit Map</em>, and the proof is the same proof.</p>
+<p><strong>Corollary.</strong> The moved set $X \setminus X^{\sigma}$ is open in a Hausdorff space; the orbit map is injective on the fixed set; and a point of the closure of the moved set is either moved or fixed, so closure does not create new fixed points.</p>
+<p><strong>Proof.</strong> The complement of a closed set is open; the orbit of a fixed point is a singleton, so the orbit map is injective there; the last statement is the definition of closure of an open set.</p>
+<p><strong>Remark.</strong> The closedness fails for spaces that are not Hausdorff, and the failure is the one exhibited in <em>Continuous Maps and the Orbit Map</em>: on the line with two origins the involution that interchanges the two origins and fixes the rest has as fixed set a punctured line, which is not closed, since each origin is a limit point of it.</p>
+<h3 id="fixed-points-of-an-involution-of-order-two">Fixed Points of an Involution of Order Two</h3>
+<p><strong>Proposition.</strong> If $\sigma$ is a continuous involution and $x$ is moved, then the two points of the orbit have homeomorphic neighbourhoods: the involution is a homeomorphism carrying every neighbourhood of $x$ to a neighbourhood of $\sigma(x)$. In particular the orbit map is a local homeomorphism at a moved point exactly when there is a neighbourhood $U$ of $x$ with $U \cap \sigma(U) = \emptyset$.</p>
+<p><strong>Proof.</strong> $\sigma$ is a homeomorphism, so it carries the neighbourhood filter of $x$ bijectively onto that of $\sigma(x)$. The local homeomorphism statement is the definition of a covering at the orbit: the image of $U$ is open, and its preimage is $U \cup \sigma(U)$, which is two disjoint copies exactly when $U \cap \sigma(U) = \emptyset$.</p>
+<h2 id="the-orbit-space-as-the-quotient">The Orbit Space as the Quotient</h2>
+<h3 id="the-orbits">The Orbits</h3>
+<p><strong>Definition.</strong> The <strong>orbit</strong> of $x$ under $\sigma$ is $\{x, \sigma(x)\}$, and the <strong>orbit space</strong> is the set of orbits,</p>
+<p>$$
+X/\sigma = X/(\mathbb{Z}/2) = \{\, \{x, \sigma(x)\} : x \in X \,\} .
+$$</p>
+<p>The <strong>orbit map</strong> is</p>
+<p>$$
+\pi : X \longrightarrow X/\sigma, \qquad \pi(x) = \{x, \sigma(x)\} .
+$$</p>
+<p><strong>Theorem.</strong> With the quotient (identification) topology the orbit map is continuous, surjective and open; its fibres are the orbits; the open sets of $X/\sigma$ are exactly the images of the invariant open sets of $X$; and a map out of $X/\sigma$ is continuous exactly when its composite with $\pi$ is.</p>
+<p><strong>Proof.</strong> All the clauses are the corresponding clauses of <em>The Orbit Map</em> for the group $\mathbb{Z}/2$; openness uses that $\sigma$ is a homeomorphism, and the fibre over the orbit of $x$ is $\{x, \sigma(x)\}$.</p>
+<h3 id="the-universal-property">The Universal Property</h3>
+<p><strong>Theorem.</strong> Let $f : X \to Y$ be a continuous map with $f \circ \sigma = f$. Then there is exactly one continuous map $\bar f : X/\sigma \to Y$ with $f = \bar f \circ \pi$, and the correspondence $f \leftrightarrow \bar f$ is a bijection.</p>
+<p><strong>Proof.</strong> The condition $f \circ \sigma = f$ says that $f$ is constant on the orbits, and the universal property of the quotient map is that of <em>The Orbit Map</em>.</p>
+<p>The orbit space is therefore the quotient of $X$ that identifies each pair $\{x, \sigma(x)\}$ to a point, and the maps out of it are the continuous maps out of $X$ that the involution does not see. The <strong>invariant</strong> subsets of $X$, those with $\sigma(A) = A$, are the preimages of the subsets of $X/\sigma$, and the preimage operator is an isomorphism of the Boolean algebra of the quotient onto the algebra of invariant sets, as in <em>The Orbit Map</em>.</p>
+<h2 id="invariant-sets-and-the-action-on-the-power-set">Invariant Sets and the Action on the Power Set</h2>
+<p>An involution on $X$ acts on $\mathcal{P}(X)$ by $\sigma(A) = \{\sigma(x) : x \in A\}$, and this action is itself an involution of the power set; the fixed points of this induced involution are the invariant subsets, and they form a Boolean subalgebra $\mathcal{P}(X)^{\sigma}$.</p>
+<p><strong>Theorem.</strong> The map $A \mapsto \sigma(A)$ is an involution of the Boolean algebra $\mathcal{P}(X)$ preserving all unions and intersections, and its fixed subalgebra $\mathcal{P}(X)^{\sigma}$ consists of the unions of orbits. The orbit map is a bijection of $\mathcal{P}(X/\sigma)$ onto $\mathcal{P}(X)^{\sigma}$, and the saturation $A \mapsto A \cup \sigma(A)$ is the closure operator of the partition into orbits.</p>
+<p><strong>Proof.</strong> $\sigma$ is a bijection, so $A \mapsto \sigma(A)$ preserves the Boolean operations and has order two; a set is fixed exactly when it is a union of orbits. The remaining clauses are those of <em>The Orbit Map</em> for the group $\mathbb{Z}/2$.</p>
+<p><strong>Remark.</strong> The induced involution on the power set is the simplest instance of the observation that an involution on a structure induces one on the structures built from it. On the lattice of open sets it is the map $U \mapsto \sigma(U)$, which is an automorphism of the lattice and restricts to an automorphism of the clopen algebra; on the cohomology the induced involution is the subject of the group <code>- * Operator Theory</code> of this category.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the antipodal involution).</strong> On the sphere $S^{n}$ the map $\sigma(x) = -x$ is a continuous involution with no fixed points; it is free, the orbit space is real projective space $\mathbb{RP}^{n}$, and the orbit map is a two-fold covering. The antipodal involution is the standard example of every notion defined in this group.</p>
+<p><strong>Example (the identity involution).</strong> On any space the identity is an involution; it is continuous, its fixed set is the whole space, its orbits are singletons, and its orbit space is the space itself.</p>
+<p><strong>Example (the standard involution of the line).</strong> On $\mathbb{R}$ the map $\sigma(x) = -x$ is a continuous involution with fixed set $\{0\}$; the orbit space is a half-line, and the moved set is the union of the pairs $\{x, -x\}$ with $x \neq 0$.</p>
+<p><strong>Example (an involution of a product).</strong> On $X \times \{0,1\}$ the map that exchanges the two copies, $\sigma(x, i) = (x, 1-i)$, is a continuous free involution; its orbit space is $X$, and the orbit map is the projection $X \times \{0,1\} \to X$.</p>
+<p><strong>Example (the two-origin involution).</strong> On the line with two origins the map that interchanges the two origins and fixes every other point is a continuous involution; it is not free, its fixed set is the complement of the two origins, and the space is not Hausdorff, so the fixed set is not closed.</p>
+<p><strong>Example (a compact space with a nonfree involution).</strong> On the closed interval $[0,1]$ the involution $\sigma(x) = 1 - x$ has fixed set $\{\tfrac12\}$; it is not free, the orbit space is again an interval, and the orbit map is injective on the fixed set and two-to-one elsewhere.</p>
+<h2 id="summary">Summary</h2>
+<p>A continuous involution of a space $X$ is a continuous map $\sigma$ with $\sigma^{2} = \mathrm{id}$, equivalently a homeomorphism of order two, equivalently a continuous action of the group of order two. Every orbit has one or two points: the fixed points, which form the <strong>fixed set</strong> $X^{\sigma}$, and the pairs $\{x, \sigma(x)\}$ of moved points. The fixed set is closed when $X$ is Hausdorff, being the preimage of the diagonal under $x \mapsto (x, \sigma(x))$, and it fails to be closed in non-Hausdorff examples; the involution restricts to a free involution of its complement. The <strong>orbit space</strong> $X/\sigma$ is the quotient of $X$ that identifies each orbit to a point, with the quotient topology; the orbit map is continuous, surjective and open, its fibres are the orbits, and its universal property identifies the continuous maps on the quotient with the continuous maps on $X$ that the involution does not see. The involution also acts on the power set, where its fixed points are the invariant subsets, and the preimage operator of the orbit map is an isomorphism of the Boolean algebra of the quotient onto the algebra of invariant sets.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $\tau$</td>
+<td>Continuous involutions; $\sigma^{2} = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$X^{\sigma}$, $\mathrm{Fix}(\sigma)$</td>
+<td>The fixed set $\{x : \sigma(x) = x\}$</td>
+</tr>
+<tr>
+<td>free involution</td>
+<td>$X^{\sigma} = \emptyset$</td>
+</tr>
+<tr>
+<td>moved point</td>
+<td>A point with $\sigma(x) \neq x$; the complement of the fixed set</td>
+</tr>
+<tr>
+<td>$\{x, \sigma(x)\}$</td>
+<td>The orbit of $x$; one or two points</td>
+</tr>
+<tr>
+<td>$X/\sigma$, $\pi$</td>
+<td>The orbit space, and the orbit map $\pi(x) = \{x, \sigma(x)\}$</td>
+</tr>
+<tr>
+<td>$\mathcal{P}(X)^{\sigma}$</td>
+<td>The invariant subsets, a Boolean subalgebra</td>
+</tr>
+<tr>
+<td>$A \mapsto \sigma(A)$</td>
+<td>The induced involution of the power set</td>
+</tr>
+<tr>
+<td>$A \mapsto A \cup \sigma(A)$</td>
+<td>The saturation, a closure operator on the power set</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/2$</td>
+<td>The group $\{1,\sigma\}$ acting through the involution</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^{n}$</td>
+<td>$S^{n}/\sigma$ for the antipodal involution</td>
+</tr>
+<tr>
+<td>$\Delta_{X}$</td>
+<td>The diagonal in $X \times X$; closed exactly when $X$ is Hausdorff</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for involutions, fixed-point sets and the orbit space of a finite group action.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (de Gruyter, 1987), for the category of spaces with an involution and the fixed-point functors.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for the fixed set of a family of continuous maps and the diagonal of a Hausdorff space.</li>
+<li>John L. Kelley, <em>General Topology</em> (Van Nostrand, 1955; reprinted Springer, 1975), for quotients by a finite group action and the quotient topology.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, revised ed. 1989), for the Hausdorff condition, the diagonal and the equaliser of two continuous maps.</li>
+<li>Paul S. Alexandroff and Heinz Hopf, <em>Topologie I</em> (Springer, 1935), for the classical treatment of involutions and free actions on spheres and projective spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

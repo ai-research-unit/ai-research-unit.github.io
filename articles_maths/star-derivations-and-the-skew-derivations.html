@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star-Derivations and the Skew Derivations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="star-derivations-and-the-skew-derivations"><strong>Star-Derivations and the Skew Derivations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A derivation of a ring is an additive map satisfying the Leibniz rule, and on a ring with an involution it is natural to ask how the derivation interacts with the involution. Two classes arise: the <strong>star-derivations</strong>, also called <strong>$\sigma$-derivations</strong> or <em>-derivations, which commute with the involution, and the </em><em>skew derivations</em>*, which anticommute with it. Every derivation splits into a star part and a skew part when $2$ is invertible, the star-derivations preserve the symmetric and the skew elements while the skew derivations exchange them, and the inner derivations $D_a(x) = ax-xa$ realise the Lie structure: $D_a$ is a star-derivation exactly when $a+\sigma(a)$ is central and a skew derivation exactly when $a-\sigma(a)$ is central, so the inner derivations see the symmetric and skew elements through the commutator.</p>
+<p>This article defines the two classes, proves the decomposition, computes the action on the symmetric and the skew elements, and derives the Lie structure of the inner derivations and its restriction to the skew elements. It assumes <em>Derivations of a Ring</em> for the Leibniz rule and the inner derivations, <em>Involutive Rings</em> for the involution and <em>The Skew Field of a Ring with Involution</em> for the symmetric and skew elements; the Lie algebra of the derivations is named from the later category and used only through the identity $[D_a,D_b] = D_{[a,b]}$. Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, $2$ is invertible when the decompositions are used, $\operatorname{Der}(A)$ is the Lie algebra of the derivations with $[D,E] = DE-ED$, and $\mathrm{Sym}$, $\mathrm{Skew}$ are the symmetric and skew elements.</p>
+<h2 id="the-two-classes">The Two Classes</h2>
+<p><strong>Definition.</strong> A <strong>$\sigma$-derivation</strong> is an additive map $\delta : A\to A$ with</p>
+<p>$$
+\delta(ab) = \delta(a)\,b + \sigma(a)\,\delta(b) \qquad \text{for all } a, b \in A ;
+$$</p>
+<p>when $\sigma = \mathrm{id}$ this is a derivation. A derivation $D$ is a <strong>star-derivation</strong> when</p>
+<p>$$
+D(\sigma(a)) = \sigma(D(a)) \quad \text{for all } a, \qquad \text{that is } D\sigma = \sigma D,
+$$</p>
+<p>and a <strong>skew derivation</strong> when</p>
+<p>$$
+D(\sigma(a)) = -\sigma(D(a)) \quad \text{for all } a, \qquad \text{that is } D\sigma = -\sigma D .
+$$</p>
+<p><strong>Proposition (the decomposition).</strong> A derivation $D$ is a star-derivation exactly when $\sigma D\sigma = D$, and a skew derivation exactly when $\sigma D\sigma = -D$, where $\sigma D\sigma$ is the conjugate derivation $a \mapsto \sigma(D(\sigma(a)))$. Every derivation decomposes uniquely as</p>
+<p>$$
+D = D_+ + D_-, \qquad D_+ = \tfrac12(D+\sigma D\sigma), \quad D_- = \tfrac12(D-\sigma D\sigma),
+$$</p>
+<p>with $D_+$ a star-derivation and $D_-$ a skew derivation.</p>
+<p><strong>Proof.</strong> $\sigma D\sigma$ is additive and satisfies the Leibniz rule because $\sigma$ is an anti-automorphism: $\sigma D\sigma(ab) = \sigma D(\sigma(b)\sigma(a)) = \sigma(D\sigma(b)\sigma(a)+\sigma(b)D\sigma(a)) = \sigma(D\sigma(b))\,\sigma(\sigma(a))+\sigma(\sigma(b))\,\sigma(D\sigma(a)) = \sigma D\sigma(b)\,a + b\,\sigma D\sigma(a)$. A derivation $D$ commutes with $\sigma$ exactly when $\sigma D\sigma = D$ and anticommutes exactly when $\sigma D\sigma = -D$; the two projections are computations with $\sigma D\sigma$ and $\sigma^2 = \mathrm{id}$, and uniqueness is the invertibility of $2$.</p>
+<p><strong>Proposition (action on the eigenspaces).</strong> A star-derivation preserves $\mathrm{Sym}$ and $\mathrm{Skew}$; a skew derivation exchanges them, $D(\mathrm{Sym})\subseteq\mathrm{Skew}$ and $D(\mathrm{Skew})\subseteq\mathrm{Sym}$.</p>
+<p><strong>Proof.</strong> For a star-derivation and $a \in \mathrm{Sym}$, $\sigma(D(a)) = D(\sigma(a)) = D(a)$; for $a\in\mathrm{Skew}$, $\sigma(D(a)) = D(-a) = -D(a)$. For a skew derivation and $a\in\mathrm{Sym}$, $\sigma(D(a)) = -D(\sigma(a)) = -D(a)$; and for $a\in\mathrm{Skew}$, $\sigma(D(a)) = -D(-a) = D(a)$.</p>
+<h2 id="the-inner-derivations">The Inner Derivations</h2>
+<p><strong>Theorem.</strong> For $a \in A$ let $D_a$ be the inner derivation $D_a(x) = ax-xa$. Then $D_a$ is a star-derivation exactly when $a+\sigma(a)$ is central, and a skew derivation exactly when $a-\sigma(a)$ is central:</p>
+<p>$$
+D_a\sigma = \sigma D_a \iff a+\sigma(a)\in Z(A), \qquad D_a\sigma = -\sigma D_a \iff a-\sigma(a)\in Z(A).
+$$</p>
+<p>In particular a central element gives the zero derivation, a <strong>symmetric</strong> element gives a <strong>skew</strong> derivation, and a <strong>skew</strong> element gives a <strong>star</strong>-derivation; for a central element both conditions hold and $D_a = 0$.</p>
+<p><strong>Proof.</strong> $\sigma(D_a x) = \sigma(ax-xa) = \sigma(x)\sigma(a)-\sigma(a)\sigma(x)$ and $D_a(\sigma(x)) = a\sigma(x)-\sigma(x)a$. The two agree for all $x$ exactly when $\sigma(x)\sigma(a)+a \sigma(x) = \sigma(a)\sigma(x)+\sigma(x)a$ for all $x$ — the transposition of the equality $\sigma(x)(\sigma(a)+a) = (a+\sigma(a))\sigma(x)$ for all $x$ — which is the centrality of $a+\sigma(a)$. The skew case is the same computation with the sign.</p>
+<p><strong>Theorem (the Lie structure).</strong> The inner derivations form a Lie subalgebra of $\operatorname{Der}(A)$ with $[D_a,D_b] = D_{ab-ba}$, and the assignment $a \mapsto D_a$ is a Lie algebra homomorphism $A \to \operatorname{Der}(A)$ with kernel the centre $Z(A)$, where $A$ is read with the commutator bracket. Under it the symmetric elements map to the skew derivations and the skew elements to the star-derivations, so $\mathrm{Sym}(A,\sigma)/(\mathrm{Sym}\cap Z)$ embeds as a Lie subalgebra of the skew derivations and $\mathrm{Skew}(A,\sigma)/(\mathrm{Skew}\cap Z)$ as a Lie subalgebra of the star-derivations.</p>
+<p><strong>Proof.</strong> $[D_a,D_b](x) = D_a(D_bx)-D_b(D_ax) = D_{ab-ba}(x)$ by the direct computation $a(bx-xb)-(bx-xb)a-b(ax-xa)+(ax-xa)b = (ab-ba)x-x(ab-ba)$. The kernel of $a\mapsto D_a$ is the centre, because $D_a = 0$ means $a$ commutes with every element. The image classes are those of the previous theorem: a symmetric element $a$ has $a-\sigma(a) = 0$ and so gives a skew derivation, a skew element gives a star-derivation, and in the quotients by the central elements the conditions are the stated ones; the homomorphism property carries the commutator to the commutator, so the images of the two Lie subalgebras are Lie subalgebras of the corresponding classes.</p>
+<p><strong>Corollary (the graded Lie structure).</strong> Under the parity star $= $ even, skew $=$ odd, the commutator satisfies $[\mathrm{star},\mathrm{star}]\subseteq\mathrm{star}$, $[\mathrm{star},\mathrm{skew}]\subseteq\mathrm{skew}$ and $[\mathrm{skew},\mathrm{skew}]\subseteq\mathrm{star}$; the star-derivations form a Lie subalgebra of $\operatorname{Der}(A)$, the skew derivations a module over it, and the commutator of two skew derivations is a star-derivation.</p>
+<p><strong>Proof.</strong> For star $D, E$ one has $[\sigma D\sigma,\sigma E\sigma] = [D,E]$; for star $D$ and skew $E$, $[\sigma D\sigma,\sigma E\sigma] = [D,-E] = -[D,E]$; for skew $D,E$, $[\sigma D\sigma,\sigma E\sigma] = [-D,-E] = [D,E]$. These are the three cases, and the closure of the star-derivations is the first.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The matrix transpose.</strong> $A = M_n(R)$ with the transpose; the inner derivation $D_X$ is a star-derivation exactly when $X+X^{\mathrm t}$ is a scalar matrix and a skew derivation exactly when $X-X^{\mathrm t}$ is scalar. The symmetric matrices therefore give skew derivations and the skew-symmetric matrices give star-derivations, and the derivations of the matrix ring are all inner by the matrix case of <em>Derivations of a Ring</em>.</p>
+<p><strong>(b) The quaternion conjugation.</strong> For the quaternion algebra with $D_x(y)=xy-yx$, a pure quaternion is a skew element and so gives a star-derivation, while a real scalar is symmetric and gives the zero or a skew derivation according as it is central; the embedding of the pure quaternions in the star-derivations is the three-dimensional Lie algebra of <em>The Skew Field of a Ring with Involution</em> read through the adjoint representation $a\mapsto D_a$.</p>
+<p><strong>(c) The differential operator.</strong> On $A = k[x]$ with the involution $\sigma(x) = -x$ and $\sigma|_k = \mathrm{id}$, the derivation $d/dx$ satisfies $D\sigma = -D$, that is it anticommutes with the involution, so it is a skew derivation; it exchanges the even and the odd polynomials, $\mathrm{Sym} = k[x^2]$ and $\mathrm{Skew} = xk[x^2]$, exactly as in the proposition.</p>
+<p><strong>(d) The zero case.</strong> Every central element gives the zero inner derivation; the star-derivations and the skew derivations therefore contain the zero derivation, and the decomposition $D = D_++D_-$ is the one of a derivation into its $\sigma$-commuting and $\sigma$-anticommuting parts, the analogue for derivations of the eigenspace decomposition of an element.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>$\sigma$-derivation</strong> satisfies $\delta(ab) = \delta(a)b+\sigma(a)\delta(b)$ and is a derivation when $\sigma = \mathrm{id}$; a derivation is a <strong>star-derivation</strong> when $D\sigma = \sigma D$ and a <strong>skew derivation</strong> when $D\sigma = -\sigma D$, and every derivation decomposes as $D = D_++D_-$ with $D_\pm = \tfrac12(D\pm\sigma D\sigma)$ when $2$ is invertible. Star-derivations preserve the symmetric and the skew elements, skew derivations exchange them, and for the inner derivation $D_a$, $D_a$ is a star-derivation exactly when $a+\sigma(a)$ is central and a skew derivation exactly when $a-\sigma(a)$ is central. The inner derivations obey $[D_a,D_b] = D_{ab-ba}$, so $a\mapsto D_a$ is a Lie homomorphism with kernel the centre, the skew elements embedding as a Lie subalgebra of the skew derivations and the symmetric elements as one of the star-derivations; the star-derivations are closed under the commutator, the skew derivations are a module over them, and the commutator of two skew derivations is a star-derivation, the graded Lie structure of the two classes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta(ab)=\delta(a)b+\sigma(a)\delta(b)$</td>
+<td>$\sigma$-derivation; derivation when $\sigma=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$D\sigma=\sigma D$</td>
+<td>Star-derivation</td>
+</tr>
+<tr>
+<td>$D\sigma=-\sigma D$</td>
+<td>Skew derivation</td>
+</tr>
+<tr>
+<td>$D_\pm=\tfrac12(D\pm\sigma D\sigma)$</td>
+<td>Star and skew parts, $2$ invertible</td>
+</tr>
+<tr>
+<td>$D(\mathrm{Sym})\subseteq\mathrm{Sym}$, $D(\mathrm{Skew})\subseteq\mathrm{Skew}$</td>
+<td>Star-derivation preserves the eigenspaces</td>
+</tr>
+<tr>
+<td>$D(\mathrm{Sym})\subseteq\mathrm{Skew}$, $D(\mathrm{Skew})\subseteq\mathrm{Sym}$</td>
+<td>Skew derivation exchanges them</td>
+</tr>
+<tr>
+<td>$D_a(x)=ax-xa$</td>
+<td>Inner derivation</td>
+</tr>
+<tr>
+<td>$a+\sigma(a)\in Z$ / $a-\sigma(a)\in Z$</td>
+<td>$D_a$ star / skew</td>
+</tr>
+<tr>
+<td>$[D_a,D_b]=D_{ab-ba}$</td>
+<td>Lie homomorphism $a\mapsto D_a$, kernel $Z(A)$</td>
+</tr>
+<tr>
+<td>$[\mathrm{star},\mathrm{skew}]\subseteq\mathrm{skew}$</td>
+<td>Graded Lie structure of the two classes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the star-derivations, the skew derivations and the inner derivations of a ring with involution.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the derivation algebra, the inner derivations and the Lie structure of a simple ring.</li>
+<li>Matej Brešar, <em>Introduction to Noncommutative Algebra</em> (Springer, 2014), for the $\sigma$-derivations, the Lie structure of the derivations and the functional identities they satisfy.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the relation between the derivations and the involutions of a central simple algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

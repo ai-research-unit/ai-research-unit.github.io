@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cones, Extremal Rays and the Choquet Theory — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="cones-extremal-rays-and-the-choquet-theory"><strong>Cones, Extremal Rays and the Choquet Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>cone</strong> is a convex set closed under nonnegative scaling, and its one-dimensional convex subsets are its <strong>rays</strong>. A ray that cannot be the sum of two vectors outside it is an <strong>extremal ray</strong>, and the extremal rays are the primitive directions of a cone in exactly the sense in which the extreme points are the primitive points of a convex set: a <strong>base</strong> cuts the cone by a hyperplane, the extreme rays of the cone become the extreme points of the base, and the theory of one is the theory of the other. This is the structure that an <strong>ordered vector space</strong> carries its order in: the positive cone, its rays, and the order that the rays generate.</p>
+<p>The second half of the article is the <strong>Choquet theory</strong>, the integral representation of the points of a compact convex set by measures carried by its extreme points. A compact convex set is the closed convex hull of its extreme points by Krein–Milman, but that is a statement about the closure; Choquet's theorem states that every point is the <strong>barycentre</strong> of a <em>measure</em> concentrated on the extreme set, and it is therefore a much finer statement, because the measure remembers the proportions in which the extreme points are mixed. The extreme points are the <strong>Choquet boundary</strong> for a metrizable compact convex set, by the Choquet–Bishop–de Leeuw theorem, and the representing measure is unique exactly when the set is a <strong>simplex</strong>, by the Choquet–Meyer theorem. These are the results that make a compact convex set an integral-representation device, and they are used by the order theory of the states and the weights later in this category.</p>
+<p>The setting is the one of <em>Convex Sets and the Convex Hull</em>: a real locally convex space, with compactness used where Krein–Milman is used. The cones and the ordered vector spaces are those of <em>Ordered Vector Spaces and the Order Unit</em>, whose state space is the principal example; the duality of a cone with its polar, and the bipolar theorem, are <em>Duality Theory</em>; the measure and the integral are <em>Measure Theory and Integration</em>, in the <em>Foundations of Analysis</em> category of this Part. The finite-dimensional theory of cones, polyhedral cones and their extreme rays is <em>Convex Analysis</em> and is cited.</p>
+<h2 id="convex-cones-and-their-rays">Convex Cones and their Rays</h2>
+<h3 id="cones-the-order-and-the-dual">Cones, the Order and the Dual</h3>
+<p><strong>Definition.</strong> A subset $C$ of a real vector space $E$ is a <strong>convex cone</strong> when it is convex and closed under nonnegative scaling,</p>
+<p>$$
+C + C \subseteq C, \qquad \lambda C \subseteq C \ \text{for } \lambda\geq0 .
+$$</p>
+<p>It is <strong>pointed</strong> when $C\cap(-C) = \{0\}$, <strong>generating</strong> when $C - C = E$, and <strong>proper</strong> when it is pointed. A pointed convex cone makes $E$ an ordered vector space by $x\leq y \iff y - x\in C$, and conversely the positive cone of an ordered vector space is a pointed convex cone.</p>
+<p><strong>Definition.</strong> A <strong>ray</strong> of $C$ is the set $\mathbb{R}_{\geq0}\,x = \{tx : t\geq0\}$ of nonnegative multiples of a nonzero $x\in C$. A ray $R$ is <strong>extremal</strong> when</p>
+<p>$$
+x, y\in C,\ x + y\in R \implies x, y\in R .
+$$</p>
+<p>A vector $x\in C$ is an <strong>extremal generator</strong> when its ray is extremal, and the set of extremal rays is written $\operatorname{ray}(C)$.</p>
+<p><strong>Proposition.</strong> For a convex cone $C$ the extremal rays are exactly the one-dimensional faces of $C$; the cone is the conical hull of its extremal rays when it is closed, polyhedral and pointed; and the sum of two vectors on distinct extremal rays lies on no extremal ray.</p>
+<p><em>Proof.</em> If $R$ is a face and one-dimensional then $x+y\in R$ with $x,y\in C$ puts $x$ and $y$ in the face $R$ by the face condition, so $R$ is extremal; conversely an extremal ray is a face because a segment with endpoints in $C$ meeting the ray has its endpoints in the ray. The generation by extremal rays is the finite-dimensional Minkowski statement of <em>Convex Analysis</em>; the last claim is the contrapositive of the defining property.</p>
+<h3 id="bases">Bases</h3>
+<p><strong>Definition.</strong> A <strong>base</strong> of a convex cone $C$ is a convex subset $B\subseteq C$ such that every nonzero $x\in C$ is a unique positive multiple of a point of $B$; equivalently $B = C\cap f^{-1}(1)$ for a linear functional $f$ with $f>0$ on $C\setminus\{0\}$.</p>
+<p><strong>Proposition (extreme points of a base are extremal rays).</strong> Let $B$ be a base of a convex cone $C$. The map $x\mapsto\mathbb{R}_{\geq0}\,x$ sends the extreme points of $B$ onto the extremal rays of $C$, and it is a bijection between them.</p>
+<p><em>Proof.</em> If $b\in B$ is extreme and $x+y\in\mathbb{R}_{\geq0}b$ with $x,y\in C$, divide by $f(x+y)=1$ and write $x = f(x)\,b_1$, $y = f(y)\,b_2$ with $b_1,b_2\in B$ and $f(x),f(y)\geq0$; then $b$ is the convex combination $f(x)b_1 + f(y)b_2$, and extremality forces $x,y$ onto the ray of $b$. Conversely if the ray of $b$ is extremal and $b = tx_1+(1-t)x_2$ with $x_i\in B$, then $b$ is the sum of $tx_1$ and $(1-t)x_2$ in the cone, so both are on the ray of $b$, and being in $B$ and on that ray they equal $b$.</p>
+<p><strong>Proposition (the dual cone and the base of the dual).</strong> The <strong>dual cone</strong> of $C$ is</p>
+<p>$$
+C^* = \{f\in E' : f(x)\geq0 \ \text{for every } x\in C\},
+$$</p>
+<p>a closed convex cone in the dual for the weak-<em> topology; when $C$ is closed, proper and generating with a base, the states $S = \{f\in C^* : f(u) = 1\}$ of </em>Ordered Vector Spaces and the Order Unit<em> are a base of $C^*$, weak-</em> compact when the base of $C$ is compact.</p>
+<p><em>Proof.</em> $C^*$ is the intersection of the closed half-spaces $\{f : f(x)\geq0\}$, hence a closed convex cone. Every nonzero $f\in C^*$ has $f(u)>0$ when $u$ is an order unit in the interior of $C$, so $f/f(u)$ lies in $S$ and the representation is unique; the compactness is that of the polar of the order interval, which is the base.</p>
+<h2 id="the-choquet-theory">The Choquet Theory</h2>
+<h3 id="measures-and-barycentres">Measures and Barycentres</h3>
+<p><strong>Definition.</strong> Let $K$ be a compact convex subset of a real locally convex space $E$. A probability measure $\mu$ on $K$ has a <strong>barycentre</strong> $r(\mu)\in K$, the unique point satisfying</p>
+<p>$$
+f\bigl(r(\mu)\bigr) = \int_K f\,d\mu \qquad \text{for every } f\in E' .
+$$</p>
+<p>The measure <strong>represents</strong> $x$ when $r(\mu) = x$, and the set of representing measures is a convex weak-* compact subset of the probability measures on $K$.</p>
+<p><strong>Proposition.</strong> The barycentre exists and lies in $K$; the assignment $\mu\mapsto r(\mu)$ is affine and weak-* to weak continuous; and the point mass $\delta_x$ represents $x$.</p>
+<p><em>Proof.</em> The functional $f\mapsto\int f\,d\mu$ is linear and continuous on $E'$ with respect to the topology of uniform convergence on $K$; it is a positive functional of norm one; the point it defines lies in $K$ because $K$ is the intersection of the half-spaces containing it and a point outside would be separated from $K$ by a functional whose integral would then violate $\lvert f\rvert\leq\sup_K\lvert f\rvert$. Affineness in $\mu$ is linearity of the integral; and $\delta_x$ gives $f(x)$.</p>
+<p><strong>Definition.</strong> The <strong>order</strong> on the representing measures is</p>
+<p>$$
+\mu\preceq\nu \iff \mu(f)\leq\nu(f) \ \text{for every continuous convex } f:K\to\mathbb{R},
+$$</p>
+<p>and a measure is <strong>maximal</strong> when it is maximal for $\preceq$. The <strong>Choquet boundary</strong> $\partial K$ is the set of points $x$ whose point mass $\delta_x$ is maximal, equivalently the points at which every upper semicontinuous convex function that is $\leq0$ on $\operatorname{ext} K$ is $\leq0$ at $x$.</p>
+<h3 id="choquets-theorem">Choquet's Theorem</h3>
+<p><strong>Theorem (Choquet).</strong> Let $K$ be a compact convex subset of a locally convex space. Every $x\in K$ is the barycentre of a maximal probability measure: there is $\mu$ on $K$ with $r(\mu) = x$ and $\mu\preceq\nu$ for every representing measure $\nu$ of $x$.</p>
+<p><em>Proof.</em> The set $M_x$ of representing measures of $x$ is nonempty (it contains $\delta_x$) and weak-<em> compact, and the order $\preceq$ is inductive on it, an upper bound of a chain being any weak-</em> cluster point; Zorn's lemma gives a maximal element. The delicate point is that the supremum of a chain of measures exists as a measure, which is the Riesz representation theorem of <em>Measure Theory and Integration</em> applied to the limit of the integrals of convex functions, and it is the step where compactness of $K$ is consumed.</p>
+<p><strong>Theorem (Choquet–Bishop–de Leeuw).</strong> Every maximal measure $\mu$ on $K$ is carried by the Choquet boundary, $\mu(K\setminus\partial K) = 0$. Consequently, for a metrizable $K$, where $\partial K = \operatorname{ext} K$, every $x\in K$ is the barycentre of a measure carried by the extreme points,</p>
+<p>$$
+x = \int_{\operatorname{ext} K} e\,d\mu(e) .
+$$</p>
+<p><em>Proof.</em> If $x\notin\partial K$ there is an upper semicontinuous convex $f$ with $f(x)>0$ and $f\leq0$ on $\partial K$; the set where $f$ attains its positive maximum is a compact convex subset of $K$ disjoint from the boundary, and a maximal measure gives it no mass, by the maximality; iterating over the boundary and using the metrizability to run a countable exhaustion yields the result. The identification $\partial K = \operatorname{ext} K$ in the metrizable case is the Choquet–Bishop–de Leeuw theorem.</p>
+<h3 id="the-bauer-maximum-principle-and-the-simplices">The Bauer Maximum Principle and the Simplices</h3>
+<p><strong>Theorem (Bauer).</strong> Let $K$ be compact convex and let $f : K\to\mathbb{R}$ be upper semicontinuous and convex. Then $f$ attains its maximum at an extreme point of $K$.</p>
+<p><em>Proof.</em> The set $F$ of maximisers is a nonempty compact face of $K$, and a compact convex set has an extreme point $x$; an extreme point of the face $F$ is extreme in $K$, and it maximises $f$.</p>
+<p><strong>Definition.</strong> A compact convex set $K$ is a <strong>simplex</strong> when every $x\in K$ has a unique maximal representing measure, equivalently when the cone of affine continuous functions together with the constants is generated by its positive part in the order of <em>Ordered Vector Spaces and the Order Unit</em>.</p>
+<p><strong>Theorem (Choquet–Meyer).</strong> For a compact convex set $K$ the following are equivalent: $K$ is a simplex; every $x\in K$ is represented by a unique maximal measure; the barycentric map from the probability measures on $\operatorname{ext} K$ to $K$ is a bijection. A simplex is affinely isomorphic to the set of probability measures on a compact Hausdorff space only in the finite-dimensional case, where it is the convex hull of affinely independent points.</p>
+<p><em>Proof.</em> Uniqueness of the maximal measure at every point is equivalent to the cone of affine functions being <strong>lattice generated</strong>, which is the statement that the dual order is a Riesz order in the sense of <em>The Order Projection</em>; the equivalence of the lattice condition with the uniqueness is the theorem of Choquet and Meyer. The affine isomorphism for a finite simplex is the one of <em>Convex Sets and the Convex Hull</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-cone-of-positive-semidefinite-matrices">The Cone of Positive Semidefinite Matrices</h3>
+<p>Let $C = H_n(\mathbb{R})_+$ be the cone of positive semidefinite matrices, a pointed generating cone in the real symmetric matrices. Its extremal rays are the rays $\mathbb{R}_{\geq0}\,vv^{\mathsf{T}}$ of the rank-one positive matrices, indexed by the lines of $\mathbb{R}^n$ up to sign; the base cut out by the trace is the set of density matrices, whose extreme points are the rank-one projections, and the identification is the bijection of the base proposition. Every positive semidefinite matrix is the sum of at most $n$ rank-one positive matrices with positive coefficients, by the spectral theorem, which is the finite-dimensional instance of the conical hull of the extremal rays.</p>
+<h3 id="the-state-space-of-the-continuous-functions">The State Space of the Continuous Functions</h3>
+<p>Let $K = \{\mu : \mu\geq0,\ \mu(X) = 1\}$ be the probability measures on a compact Hausdorff space $X$, viewed as a weak-* compact convex subset of the dual of $C(X)$; it is a simplex, and the extreme points are the point masses $\delta_x$ by the Bauer maximum principle applied to the evaluation $f\mapsto f(x)$. The barycentric map from the probability measures on the extreme points to $K$ is the identity, and the uniqueness of the representing maximal measure is the statement that a probability measure on $X$ is determined by its integrals against the continuous functions.</p>
+<h3 id="the-interval">The Interval</h3>
+<p>Take $K = [0,1]$, a compact convex subset of $\mathbb{R}$, whose extreme points are $0$ and $1$. Every $x\in K$ is the barycentre of the unique measure $(1-x)\delta_0 + x\delta_1$, so $K$ is a simplex with one-dimensional maximal measures; this is the smallest instance of the theory and the model for the integral representation of a state of the order-unit space of <em>Ordered Vector Spaces and the Order Unit</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>convex cone</strong> is a convex set closed under nonnegative scaling; it is pointed, generating and proper in the usual senses, and it is exactly what an ordered vector space orders by. Its <strong>rays</strong> are its one-dimensional subsets, and the <strong>extremal rays</strong> are its one-dimensional faces, exactly those rays $R$ with $x+y\in R$, $x,y\in C$, forcing $x,y\in R$. A <strong>base</strong> cuts the cone by a hyperplane, the extreme points of the base correspond bijectively to the extremal rays of the cone, and the dual cone carries the weak-<em> compact </em><em>state space</em><em> as a base. On a compact convex set $K$ every probability measure has a </em><em>barycentre</em><em> $r(\mu)$ with $f(r(\mu)) = \int f\,d\mu$, and </em><em>Choquet's theorem</em><em> states that every point is the barycentre of a </em><em>maximal</em><em> measure; </em><em>Choquet–Bishop–de Leeuw</em><em> states that a maximal measure is carried by the </em><em>Choquet boundary</em><em>, which is the set of extreme points when $K$ is metrizable; and the </em><em>Choquet–Meyer theorem</em><em> states that the representing maximal measure is unique at every point exactly when $K$ is a </em><em>simplex</em><em>. </em><em>Bauer's maximum principle</em><em> states that an upper semicontinuous convex function attains its maximum at an extreme point. The cones and the order are </em>Ordered Vector Spaces and the Order Unit<em>, the extreme points and Krein–Milman are </em>Convex Sets and the Convex Hull<em>, the duality of cones is </em>Duality Theory<em>, the integral and the Riesz representation theorem are </em>Measure Theory and Integration<em>, and the polyhedral cones are </em>Convex Analysis*.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C$, $E_+$</td>
+<td>Convex cone; positive cone of an ordered vector space</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\geq0}\,x$</td>
+<td>The ray through $x$</td>
+</tr>
+<tr>
+<td>Extremal ray</td>
+<td>A one-dimensional face of the cone</td>
+</tr>
+<tr>
+<td>$B = C\cap f^{-1}(1)$</td>
+<td>A base of the cone, $f>0$ on $C\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$C^* = \{f : f\geq0 \text{ on } C\}$</td>
+<td>Dual cone</td>
+</tr>
+<tr>
+<td>$r(\mu)$</td>
+<td>Barycentre of the probability measure $\mu$</td>
+</tr>
+<tr>
+<td>$\mu\preceq\nu$</td>
+<td>Order of measures, $\mu(f)\leq\nu(f)$ for convex continuous $f$</td>
+</tr>
+<tr>
+<td>$\partial K$</td>
+<td>Choquet boundary</td>
+</tr>
+<tr>
+<td>Simplex</td>
+<td>A compact convex set with a unique maximal representing measure at each point</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Gustave Choquet, "Remarques à propos de la démonstration d'unicité de P.-A. Meyer", <em>Séminaire Brelot–Choquet–Deny</em> <strong>6</strong> (1962), for the uniqueness theory of the simplices.</li>
+<li>Gustave Choquet and Paul-André Meyer, "Existence et unicité des représentations intégrales dans les convexes compacts quelconques", <em>Annales de l'Institut Fourier</em> <strong>13</strong> (1963), 139–154, for the Choquet–Meyer theorem.</li>
+<li>Errett Bishop and Karl de Leeuw, "The representations of linear functionals by measures on sets of extreme points", <em>Annales de l'Institut Fourier</em> <strong>9</strong> (1959), 305–331, for the Choquet–Bishop–de Leeuw theorem.</li>
+<li>Heinz Bauer, "Minimalstellen von Funktionen und Extremalpunkte", <em>Archiv der Mathematik</em> <strong>9</strong> (1958), 389–393, for the maximum principle.</li>
+<li>Erik M. Alfsen, <em>Compact Convex Sets and Boundary Integrals</em> (Springer, 1971), for the integral representation in full.</li>
+<li>Robert R. Phelps, <em>Lectures on Choquet's Theorem</em> (Van Nostrand, 2nd ed. 2001), for a concise modern treatment.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-a-ring"><strong>The Signed Adjoint of the Left Multiplication on a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>signed left multiplication</strong> on a ring with a grade involution is the one-sided operator</p>
+<p>$$
+T_a(x) = a\,\alpha(x) = S_{a,1}(x),
+$$</p>
+<p>the left multiplication composed with the sign rule; it is the one-sided companion of the signed sandwich and the elementary case of the reflection. Its <strong>signed adjoint</strong> with respect to the twisted pairing is again a signed left multiplication, $T_a^{*_\sigma} = T_{\delta(a)}$ with $\delta = \sigma\alpha$, so the signed adjoint does not switch the side, in contrast with the unsigned adjoint of <em>The Adjoint of the Left Multiplication on a Ring</em>, which sends $L_a$ to $R_a$. The operator is unitary, $T_a^{*_\sigma}T_a = \mathrm{id}$, exactly when $\delta(a)\alpha(a) = 1$, and it is an involution exactly when $a\alpha(a) = 1$; the relation with the signed sandwich is $S_{a,b} = T_aR_{\alpha(b)} = L_aT_{\alpha(b)}$, so the one-sided operators generate the two-sided ones.</p>
+<p>This article computes the signed adjoint of the signed left multiplication, its inverse, its unitarity and involution conditions, and its relation to the signed sandwich and the reflection. It assumes <em>The Signed Left Multiplication on a Ring</em> for the operator, <em>The Signed Adjoint Sandwich on a Ring</em> for the general adjoint, and <em>Involutions of the Endomorphism Ring</em> for the twisted pairing. Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, $\tau$ is a $\sigma$-invariant trace, $\alpha$ is a grade involution commuting with $\sigma$, $\delta = \sigma\alpha$, the twisted pairing is $\{x,y\} = \tau(x\sigma(y))$, and $T_a(x) = a\alpha(x)$.</p>
+<h2 id="the-signed-adjoint">The Signed Adjoint</h2>
+<p><strong>Theorem.</strong> The signed left multiplication is the sandwich $S_{a,1}$, and its signed adjoint is</p>
+<p>$$
+T_a^{*_\sigma} = S_{\delta(a),\delta(1)} = T_{\delta(a)} ;
+$$</p>
+<p>the signed adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)$, and it stays on the same side.</p>
+<p><strong>Proof.</strong> $T_a = S_{a,1}$ by definition, and $S_{a,b}^{*_\sigma} = S_{\delta(a),\delta(b)}$ from <em>The Signed Adjoint Sandwich on a Ring</em>; with $b = 1$ and $\delta(1) = 1$ this is $S_{\delta(a),1} = T_{\delta(a)}$.</p>
+<p><strong>Proposition (inverse and composition).</strong> The operator $T_a$ is invertible exactly when $a$ is a unit, with</p>
+<p>$$
+T_a^{-1} = T_{\alpha(a)^{-1}} ,
+$$</p>
+<p>and $T_aT_b = L_{a\alpha(b)}\alpha$; the signed left multiplications form a semigroup under composition, closed under inverses on the units, and the two-sided sandwich is generated by them, $S_{a,b} = T_aR_{\alpha(b)} = L_aT_{\alpha(b)}$.</p>
+<p><strong>Proof.</strong> $T_{\alpha(a)^{-1}}(T_a(x)) = \alpha(a)^{-1}\alpha(a\alpha(x)) = \alpha(a)^{-1}\alpha(a)\,x = x$ for $a$ a unit; the composition is the direct computation $T_a(T_b(x)) = a\alpha(b\alpha(x)) = a\alpha(b)x = (L_{a\alpha(b)}\alpha)(x)$; and $T_aR_{\alpha(b)}(x) = T_a(x\alpha(b)) = a\alpha(x\alpha(b)) = a\alpha(x)b$.</p>
+<h2 id="unitarity-and-involution">Unitarity and Involution</h2>
+<p><strong>Theorem.</strong> The signed left multiplication $T_a$ is <strong>unitary</strong>, $T_a^{*_\sigma}T_a = T_aT_a^{*_\sigma} = \mathrm{id}$, exactly when</p>
+<p>$$
+\delta(a)\alpha(a) = 1 ,
+$$</p>
+<p>and it is an <strong>involution</strong>, $T_a^2 = \mathrm{id}$, exactly when</p>
+<p>$$
+a\alpha(a) = 1 .
+$$</p>
+<p>For a unitary $a$ the operator $T_a$ is an isometry of the twisted pairing, and for an involutive $a$ it is a signed involution of the ring.</p>
+<p><strong>Proof.</strong> $T_a^{*_\sigma}T_a(x) = T_{\delta(a)}(a\alpha(x)) = \delta(a)\alpha(a\alpha(x)) = \delta(a)\alpha(a)\,x$, so the product is the identity exactly when $\delta(a)\alpha(a) = 1$; the same formula with $\delta(a)$ in place of $a$ gives $T_aT_a^{*_\sigma}$. The square is $T_a(T_a(x)) = a\alpha(a\alpha(x)) = a\alpha(a)x$, which is $x$ for all $x$ exactly when $a\alpha(a) = 1$.</p>
+<p><strong>Corollary (the specialisations).</strong> For $\alpha = \mathrm{id}$ the conditions are $\sigma(a)a = 1$ for unitarity and $a^2 = 1$ for the involution: the unitary signed left multiplications are the $\sigma$-unitary elements $a^{*_\sigma}a = 1$, and the involutive ones are the involutions of the ring. The reflection $r_u = S_{u,u^{-1}}$ is the composite $T_uR_{\alpha(u)^{-1}}$, and its signed adjoint is $T_{\delta(u)}R_{\alpha(\delta(u))^{-1}}$; the self-adjointness condition of <em>The Signed Adjoint of the Reflection on a Ring</em> is the comparison of these two one-sided operators.</p>
+<p><strong>Proof.</strong> Put $\alpha = \mathrm{id}$ in the theorem: $\delta(a)\alpha(a) = \sigma(a)a$ and $a\alpha(a) = a^2$. The reflection formula is $S_{a,b} = T_aR_{\alpha(b)}$ with $b = u^{-1}$, and the adjoint is read off from $S_{\delta(u),\delta(u)^{-1}}$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The matrix case.</strong> $A = M_n$ with the transpose $\sigma$, the grade involution $\alpha$ of a $\mathbb{Z}/2$-grading and $T_X(Y) = X\alpha(Y)$: $T_X^{*_\sigma} = T_{\sigma\alpha(X)}$, unitary when $\sigma\alpha(X)\alpha(X) = I$, an involution when $X\alpha(X) = I$. For $\alpha = \mathrm{id}$, $T_X = L_X$ and the signed adjoint is $L_{\sigma(X)} = L_{X^{\mathrm t}}$.</p>
+<p><strong>(b) The group ring.</strong> $A = K[G]$ with the standard involution and the trivial grading: $T_g = L_g$, $T_g^{*_\sigma} = L_{g^{-1}}$, unitary always, and $T_g^2 = L_{g^2}$, an involution only for $g^2 = 1$. The signed adjoint of the signed left multiplication by a group element is the left multiplication by the inverse, the one-sided companion of the group inversion of <em>The Group Inversion as an Adjoint</em>.</p>
+<p><strong>(c) The graded algebra.</strong> For a superalgebra with $\alpha$ the grade involution and a homogeneous unit $u$ of odd degree, $T_u$ is not $\alpha$-linear but graded-linear, $T_u(uv) = \alpha(u)T_u(v)$ up to the sign; the unitarity condition $\delta(u)\alpha(u) = 1$ carries the sign of the degree, the sign rule of the graded case.</p>
+<p><strong>(d) The relation with the sandwich.</strong> Every signed sandwich is a product of a signed left multiplication and a right multiplication twisted by $\alpha$, $S_{a,b} = T_aR_{\alpha(b)}$; the signed left multiplications therefore generate the two-sided operators, and the signed adjoint of the sandwich is the composite of the signed adjoints by the anti-multiplicativity of the adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication $T_a(x) = a\alpha(x) = S_{a,1}$ has signed adjoint $T_a^{*_\sigma} = T_{\delta(a)}$ with respect to the twisted pairing, where $\delta = \sigma\alpha$: the signed adjoint stays on the same side. Its inverse is $T_{\alpha(a)^{-1}}$ for a unit $a$, its composition is $T_aT_b = L_{a\alpha(b)}\alpha$, and every signed sandwich is generated by it, $S_{a,b} = T_aR_{\alpha(b)} = L_aT_{\alpha(b)}$. It is unitary exactly when $\delta(a)\alpha(a) = 1$ and an involution exactly when $a\alpha(a) = 1$; for $\alpha = \mathrm{id}$ these are the $\sigma$-unitarity $\sigma(a)a = 1$ and the involution $a^2 = 1$. The reflection is the composite $T_uR_{\alpha(u)^{-1}}$, so the self-adjointness of the reflections is the comparison of the signed adjoints of two one-sided operators.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_a(x) = a\alpha(x)$</td>
+<td>Signed left multiplication; $T_a = S_{a,1}$</td>
+</tr>
+<tr>
+<td>$\delta = \sigma\alpha$</td>
+<td>Twist of the grade involution</td>
+</tr>
+<tr>
+<td>$T_a^{*_\sigma} = T_{\delta(a)}$</td>
+<td>Signed adjoint; same side</td>
+</tr>
+<tr>
+<td>$T_a^{-1} = T_{\alpha(a)^{-1}}$</td>
+<td>Inverse</td>
+</tr>
+<tr>
+<td>$T_aT_b = L_{a\alpha(b)}\alpha$</td>
+<td>Composition</td>
+</tr>
+<tr>
+<td>$S_{a,b} = T_aR_{\alpha(b)} = L_aT_{\alpha(b)}$</td>
+<td>Sandwich generated by one-sided operators</td>
+</tr>
+<tr>
+<td>$\delta(a)\alpha(a) = 1$</td>
+<td>Unitarity</td>
+</tr>
+<tr>
+<td>$a\alpha(a) = 1$</td>
+<td>Involution ($T_a^2 = \mathrm{id}$)</td>
+</tr>
+<tr>
+<td>$\alpha = \mathrm{id}$: $\sigma(a)a = 1$, $a^2 = 1$</td>
+<td>Unitary and involutive left multiplications</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the one-sided operators of the regular representation, their composition and their adjoints.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the adjoint of the left multiplication and the unitary elements it defines.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for the adjoint of a one-sided operator under a sesquilinear form and the isometry condition.</li>
+<li>Matej Brešar, <em>Introduction to Noncommutative Algebra</em> (Springer, 2014), for the signed operators of a ring with involution and their unitarity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Proximity Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-proximity-spaces"><strong>Involutive Proximity Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A proximity space is a set with a relation that records which pairs of subsets are <strong>close</strong> to one another, and it sits between the topology and the uniformity: every uniform space determines a proximity, every proximity determines a topology, and the proximity is the part of the uniform structure that survives the passage to the compactification. An <strong>involutive proximity space</strong> is a proximity space with an involution that preserves the closeness relation, and the pattern of the group <code>- * Theory</code> applies to it: the involution acts on the elements, and the orbit space, the fixed set and the completion all inherit a compatible structure. The proximity is the coarsest of the three structures, and the involution behaves best there, because a proximity is determined by a compactification and the involution extends to the compactification by the universal property of the completion. This is the structural reason that the orbit space of a compact Hausdorff space under a continuous involution is again compact Hausdorff, and it is the sense in which the involutive proximity space is the natural setting for the quotients of the later articles.</p>
+<p>The article defines the proximity structure and the proximity involution, proves that the quotient carries a proximity making the orbit map a proximity map and that it is the finest such, proves that the fixed set is closed for a separated proximity, and connects the construction to the uniformity and to the completion. It continues <em>Involutive Uniform Spaces</em>, whose uniformity determines a proximity, and it uses the proximity spaces and their compactifications of this Part. Nothing analytic and nothing geometric is used: the proximity relation is an abstract relation on subsets, no metric is assumed, and no length or angle is read from the spaces.</p>
+<h2 id="proximity-spaces-and-their-involutions">Proximity Spaces and Their Involutions</h2>
+<h3 id="proximity-structures">Proximity Structures</h3>
+<p><strong>Definition.</strong> A <strong>proximity</strong> on a set $X$ is a relation $\delta$ on the subsets of $X$, read "$A$ is close to $B$", such that for all $A, B, C \subseteq X$:</p>
+<p><strong>(P1)</strong> $A \delta B \Rightarrow B \delta A$;</p>
+<p><strong>(P2)</strong> $(A \cup B) \delta C \iff A \delta C \text{ or } B \delta C$;</p>
+<p><strong>(P3)</strong> $A \delta B \Rightarrow A \neq \emptyset$ and $B \neq \emptyset$;</p>
+<p><strong>(P4)</strong> $A \mathrel{\not\delta} B \Rightarrow$ there is $E \subseteq X$ with $A \mathrel{\not\delta} E$ and $E^{c} \mathrel{\not\delta} B$.</p>
+<p>A <strong>proximity space</strong> is a set with a proximity. It is <strong>separated</strong> when $x \delta y$ only for $x = y$, where $x \delta y$ abbreviates $\{x\} \delta \{y\}$.</p>
+<p><strong>Definition.</strong> The <strong>proximity topology</strong> on a proximity space has for its closure operator</p>
+<p>$$
+x \in \overline{A} \iff \{x\} \delta A ,
+$$</p>
+<p>and the <strong>proximity map</strong> between proximity spaces is a map $f$ with</p>
+<p>$$
+A \delta B \Rightarrow f(A) \mathrel{\delta'} f(B) .
+$$</p>
+<p>Every proximity map is continuous for the proximity topologies, and the proximity topology is determined by the proximity, which is in turn determined by the topology together with the compactification in the compact case.</p>
+<h3 id="proximity-involutions">Proximity Involutions</h3>
+<p><strong>Definition.</strong> An <strong>involutive proximity space</strong> is a proximity space $X$ with an involution $\sigma$ that preserves the proximity,</p>
+<p>$$
+A \delta B \iff \sigma(A) \mathrel{\delta} \sigma(B) \qquad (A, B \subseteq X).
+$$</p>
+<p>The involution is then a <strong>proximity involution</strong>.</p>
+<p><strong>Proposition.</strong> A proximity involution is a proximity isomorphism and a homeomorphism of the proximity topology; the fixed set $X^{\sigma}$ with the subspace proximity is an involutive proximity space; and the invariant subsets form a Boolean subalgebra on which $\sigma$ acts as a proximity automorphism.</p>
+<p><strong>Proof.</strong> The inverse $\sigma^{-1} = \sigma$ preserves the proximity by the definition read backwards, so $\sigma$ is a proximity isomorphism; a proximity isomorphism is a homeomorphism of the proximity topologies. The fixed set carries the subspace proximity and the involution restricts to the identity. The invariant subsets are those with $\sigma(A) = A$, and the preservation of $\delta$ passes to them.</p>
+<h2 id="the-orbit-proximity">The Orbit Proximity</h2>
+<h3 id="the-quotient-proximity">The Quotient Proximity</h3>
+<p><strong>Definition.</strong> Let $X$ be an involutive proximity space and $\pi : X \to X/\sigma$ the orbit map. The <strong>orbit proximity</strong> on $X/\sigma$ is defined for $U, V \subseteq X/\sigma$ by</p>
+<p>$$
+U \mathrel{\tilde\delta} V \iff \pi^{-1}(U) \mathrel{\delta} \pi^{-1}(V) .
+$$</p>
+<p><strong>Theorem.</strong> The relation $\tilde\delta$ is a proximity on $X/\sigma$; the orbit map is a proximity map for it; and the orbit proximity is the finest proximity on $X/\sigma$ making the orbit map a proximity map.</p>
+<p><strong>Proof.</strong> (P1) is the symmetry of $\delta$. (P2) is that $\pi^{-1}(U \cup W) = \pi^{-1}(U) \cup \pi^{-1}(W)$ together with (P2) for $\delta$. (P3) is that $U \neq \emptyset$ if and only if $\pi^{-1}(U) \neq \emptyset$. For (P4), let $U \mathrel{\not\tilde\delta} V$, so that $\pi^{-1}(U) \mathrel{\not\delta} \pi^{-1}(V)$; by (P4) in $X$ there is $E$ with $\pi^{-1}(U) \mathrel{\not\delta} E$ and $E^{c} \mathrel{\not\delta} \pi^{-1}(V)$. Put $F = E \cap \sigma(E)$, which is invariant and satisfies $F \subseteq E$ and $F^{c} = E^{c} \cup \sigma(E)^{c}$. The set $\pi^{-1}(U)$ is invariant, so $\pi^{-1}(U) \mathrel{\not\delta} \sigma(E)$, and (P2) gives $\pi^{-1}(U) \mathrel{\not\delta} E \cup \sigma(E)$, hence $\pi^{-1}(U) \mathrel{\not\delta} F$ because $F \subseteq E \cup \sigma(E)$. For the second half, (P4) applied in $X$ gives $E^{c} \mathrel{\not\delta} \pi^{-1}(V)$; applying the involution and using its preservation of $\delta$ gives $\sigma(E)^{c} \mathrel{\not\delta} \pi^{-1}(V)$; the contrapositive of (P2) then gives $F^{c} = E^{c} \cup \sigma(E)^{c} \mathrel{\not\delta} \pi^{-1}(V)$. Taking $W = \pi(F)$, which has $\pi^{-1}(W) = F$ because $F$ is invariant, gives $U \mathrel{\not\tilde\delta} W$ and $W^{c} \mathrel{\not\tilde\delta} V$, which is (P4). The orbit map is a proximity map by the definition of $\tilde\delta$. If $\delta'$ is any proximity making $\pi$ a proximity map, then $U \mathrel{\delta'} V$ gives $\pi^{-1}(U) \mathrel{\delta} \pi^{-1}(V)$, hence $U \mathrel{\tilde\delta} V$; so $\delta' \subseteq \tilde\delta$ and $\tilde\delta$ is the finest.</p>
+<h3 id="properties-of-the-orbit-map">Properties of the Orbit Map</h3>
+<p><strong>Theorem.</strong> The orbit map is a surjective proximity map, it is continuous and open for the proximity topologies, and the orbit proximity is separated when the proximity of $X$ is separated.</p>
+<p><strong>Proof.</strong> Surjectivity and the proximity-map property are the construction; the topological clauses are those of the involution of a topological space, since the proximity topology of the orbit proximity is the quotient topology. For separatedness, suppose the singleton classes of $x$ and of $y$ are close for $\tilde\delta$. Then the orbits $\{x,\sigma x\}$ and $\{y,\sigma y\}$ are close for $\delta$; by (P2), applied to finite unions in both variables, some point of the first orbit is close to some point of the second, and separatedness gives equality of those two points, so the two orbits meet and the two classes coincide.</p>
+<p><strong>Remark.</strong> The orbit proximity is the finest making the orbit map a proximity map, in contrast with the orbit uniformity, which is the finest making it uniformly continuous; the two constructions agree when the uniformity is the one determined by the proximity, which happens exactly when the proximity is totally bounded. This is why the proximity quotient is the more robust of the two for the compact case.</p>
+<h2 id="the-fixed-set">The Fixed Set</h2>
+<p><strong>Theorem.</strong> The fixed set of a proximity involution of a separated proximity space is closed in the proximity topology, and it is a proximity subspace on which the involution is the identity.</p>
+<p><strong>Proof.</strong> A separated proximity induces a Hausdorff proximity topology, because the topology is completely regular and $T_{1}$; this is the standard theorem relating proximities to topologies. The map $x \mapsto (x, \sigma x)$ is continuous, and $X^{\sigma}$ is its preimage of the diagonal $\Delta_{X} \subseteq X \times X$. The diagonal of a Hausdorff space is closed, so the preimage is closed. The rest is the definition.</p>
+<p><strong>Example.</strong> On the real line with the proximity determined by its usual uniformity, the involution $x \mapsto -x$ has the fixed set $\{0\}$, closed; the orbit proximity on the half-line is the proximity induced by the usual uniformity of the half-line.</p>
+<p><strong>Example (a free proximity involution).</strong> The exchange of the two copies of $\mathbb{R} \sqcup \mathbb{R}$ is a free proximity involution, and the orbit proximity is the usual proximity of $\mathbb{R}$.</p>
+<h2 id="proximity-uniformity-and-completion">Proximity, Uniformity and Completion</h2>
+<h3 id="the-proximity-of-a-uniformity">The Proximity of a Uniformity</h3>
+<p><strong>Definition.</strong> A uniform space $X$ with uniform structure $\mathcal{U}$ determines a proximity $\delta_{\mathcal{U}}$ by</p>
+<p>$$
+A \mathrel{\delta_{\mathcal{U}}} B \iff E[A] \cap B \neq \emptyset \text{ for every entourage } E ,
+$$</p>
+<p>where $E[A] = \{y : (x,y) \in E \text{ for some } x \in A\}$; equivalently, $A$ and $B$ are <strong>not</strong> close when some entourage separates them.</p>
+<p><strong>Theorem.</strong> The relation $\delta_{\mathcal{U}}$ is a proximity; it induces the uniform topology; a uniformly continuous map is a proximity map for the determined proximities; and an involution of $X$ is a proximity involution for $\delta_{\mathcal{U}}$ exactly when it preserves the closeness relation, which holds in particular when it is uniformly continuous.</p>
+<p><strong>Proof.</strong> The axioms (P1)–(P4) are the standard verification for the proximity of a uniformity, with (P4) using the two-step entourage; the induced topology is the uniform topology because $x \in \overline{A}$ iff every entourage neighbourhood of $x$ meets $A$. A uniformly continuous map carries close sets to close sets, since the preimage of an entourage is an entourage. For the involution, a uniformly continuous $\sigma$ preserves $\delta_{\mathcal{U}}$; the converse can hold without uniform continuity, since the proximity forgets the higher uniformity.</p>
+<h3 id="completion-and-the-involution">Completion and the Involution</h3>
+<p><strong>Theorem.</strong> Let $X$ be an involutive proximity space with completion $\hat X$: the complete separated proximity space containing $X$ as a dense subspace, which is the Smirnov compactification when the proximity is totally bounded. Then the involution $\sigma$ extends to exactly one proximity involution $\hat\sigma$ of $\hat X$, and the completion of the orbit space is the orbit space of the completion:</p>
+<p>$$
+\widehat{X/\sigma} \ \cong \ \hat X / \hat\sigma .
+$$</p>
+<p><strong>Proof.</strong> The inclusion $X \to \hat X$ is a proximity map and $\hat X$ is complete and separated, so $\sigma : X \to X \subseteq \hat X$ extends uniquely to a proximity map $\hat\sigma : \hat X \to \hat X$, by the universal property of the completion for proximity maps into complete separated spaces; the composite $\hat\sigma\circ\hat\sigma$ extends the identity on the dense subspace, hence is the identity, so $\hat\sigma$ is an involution. The orbit map $\pi : X \to X/\sigma$ is a proximity map into a complete separated space, so it extends to $\hat X \to \widehat{X/\sigma}$ and descends to $\hat X/\hat\sigma \to \widehat{X/\sigma}$; conversely the composite $X \to \hat X \to \hat X/\hat\sigma$ extends from the dense subspace to $\widehat{X/\sigma} \to \hat X/\hat\sigma$. The two composites agree on the dense images and are therefore identities, so the maps are inverse proximity isomorphisms.</p>
+<p><strong>Corollary.</strong> For a totally bounded proximity the completion is compact Hausdorff, so the orbit space of a compact Hausdorff space with a continuous proximity involution is compact Hausdorff, obtained as the completion of the orbit proximity; and the orbit proximity is totally bounded when the proximity is.</p>
+<p><strong>Proof.</strong> The completion of a totally bounded proximity is compact Hausdorff by the Smirnov theorem; the orbit proximity is the quotient, and the completion of the orbit space is the orbit space of the completion by the theorem; a quotient of a totally bounded proximity by a proximity involution is totally bounded because closeness in the quotient lifts to closeness in the space.</p>
+<h2 id="summary">Summary</h2>
+<p>A proximity on a set is a symmetric, additive, nondegenerate and separating relation of closeness on its subsets; it induces a topology by $x \in \overline{A} \iff \{x\} \delta A$, and a proximity map is a map carrying close sets to close sets. An involutive proximity space has an involution preserving the closeness relation, so it is a proximity isomorphism and a homeomorphism, and its fixed set is a closed proximity subspace for a separated proximity. The orbit space carries the orbit proximity, defined by pulling back closeness along the orbit map; it is a proximity, it makes the orbit map a proximity map, it is the finest such, and it is separated when the proximity of the space is. Every uniformity determines a proximity preserving the topology, uniformly continuous maps are proximity maps, and a uniformly continuous involution is a proximity involution. The completion of an involutive proximity space carries a unique extended proximity involution, and the completion of the orbit space is the orbit space of the completion, $\widehat{X/\sigma} \cong \hat X/\hat\sigma$; for a totally bounded proximity the completion is compact Hausdorff, which is how the compact quotients of this category are produced.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta$</td>
+<td>The proximity relation; $A \delta B$ means $A$ is close to $B$</td>
+</tr>
+<tr>
+<td>(P1)–(P4)</td>
+<td>Symmetry, additivity, nondegeneracy, separation of a proximity</td>
+</tr>
+<tr>
+<td>proximity topology</td>
+<td>$x \in \overline{A} \iff \{x\} \delta A$</td>
+</tr>
+<tr>
+<td>proximity map</td>
+<td>$A \delta B \Rightarrow f(A) \delta' f(B)$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>A proximity involution; $A \delta B \iff \sigma A \delta\sigma B$</td>
+</tr>
+<tr>
+<td>$X^{\sigma}$</td>
+<td>The fixed set; closed for a separated proximity</td>
+</tr>
+<tr>
+<td>$\tilde\delta$</td>
+<td>The orbit proximity; $U \tilde\delta V \iff \pi^{-1}U \delta \pi^{-1}V$</td>
+</tr>
+<tr>
+<td>finest proximity</td>
+<td>The orbit proximity is the finest making $\pi$ a proximity map</td>
+</tr>
+<tr>
+<td>$\delta_{\mathcal{U}}$</td>
+<td>The proximity determined by a uniformity $\mathcal{U}$</td>
+</tr>
+<tr>
+<td>$\hat X$, $\hat\sigma$</td>
+<td>The completion, and the extended proximity involution</td>
+</tr>
+<tr>
+<td>$\widehat{X/\sigma} \cong \hat X/\hat\sigma$</td>
+<td>Completion commutes with the orbit functor</td>
+</tr>
+<tr>
+<td>Smirnov compactification</td>
+<td>The completion of a totally bounded proximity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Somashekhar A. Naimpally and Brian D. Warrack, <em>Proximity Spaces</em> (Cambridge University Press, 1970), for the axioms of a proximity, proximity maps and the orbit construction.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, revised ed. 1989), for proximity spaces, the proximity of a uniformity and the Smirnov compactification.</li>
+<li>Wolfgang J. Thron, <em>Topological Structures</em> (Holt, Rinehart and Winston, 1966), for the relation between proximity, uniformity and topology.</li>
+<li>Eduard Čech, <em>Topological Spaces</em> (Academia, 1966; revised English edition, Wiley, 1966), for proximity spaces, uniform spaces and the completion that the compactification defines.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for uniform spaces and the proximity they determine.</li>
+<li>John L. Kelley, <em>General Topology</em> (Van Nostrand, 1955; reprinted Springer, 1975), for uniform spaces, their proximities and their completions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

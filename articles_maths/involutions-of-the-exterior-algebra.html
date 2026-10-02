@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Exterior Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-exterior-algebra"><strong>Involutions of the Exterior Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The exterior algebra $\Lambda^\bullet V$ of a finite-dimensional vector space carries three canonical order-two maps that need no extra structure: the <strong>grade involution</strong> $\alpha$, an algebra automorphism acting by $(-1)^k$ on $\Lambda^kV$; the <strong>reversion</strong> $r$, an algebra anti-automorphism reversing the order of the factors; and their composite $\alpha r=\alpha\circ r$, the <strong>reversal</strong>, again an anti-automorphism. A fourth order-two map, the <strong>Hodge star</strong>, needs a symmetric bilinear form and an orientation and reverses the degree; it is named here and its theory is <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>. This article, the fourth of the <code>- * Theory</code> group, defines the involutions and anti-involutions of the exterior algebra, classifies the degree-preserving ones that act by a scalar on each homogeneous component, identifies them as the grade involution, the reversion and the reversal, and exhibits their action on the wedge product and on the basis. The exterior algebra and the wedge product are <em>The Exterior Algebra</em>; the graded sign rule is <em>Superalgebras and Graded Structures</em>.</p>
+<p>The base is a field $K$ of characteristic not two and $V$ has dimension $m$; the algebra is $A=\Lambda^\bullet V$ with homogeneous parts $A^k=\Lambda^kV$, the order-two maps are written $\alpha,r,\alpha r$, and the Hodge star is written $\star$. The article reasons with the grading and the product only.</p>
+<h2 id="involutions-and-anti-involutions">Involutions and Anti-Involutions</h2>
+<p><strong>Definition.</strong> An <strong>involution</strong> of $A$ is a $K$-linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(x)\varphi(y)$; an <strong>anti-involution</strong> is a linear map $\varphi$ with $\varphi^2=\mathrm{id}$ and $\varphi(xy)=\varphi(y)\varphi(x)$. An involution or anti-involution is <strong>graded</strong> when it preserves the homogeneous degree and <strong>reversing</strong> when it sends $A^k$ to $A^{m-k}$.</p>
+<p><strong>Definition.</strong> A linear map $\varphi$ is a <strong>signed identity</strong> when it acts on each homogeneous component by a scalar, $\varphi(x)=\epsilon_kx$ for $x\in A^k$.</p>
+<p><strong>Proposition.</strong> A signed identity is an involution exactly when every $\epsilon_k=\pm1$; it is an algebra automorphism exactly when $\epsilon_k=\epsilon_1^{k}$ for all $k$, and then it is the identity if $\epsilon_1=1$ and the grade involution if $\epsilon_1=-1$.</p>
+<p><strong>Proof.</strong> An involution requires $\epsilon_k^2=1$; multiplicativity requires $\epsilon_{j+k}=\epsilon_j\epsilon_k$, which for a multiplicative family forces $\epsilon_k=\epsilon_1^k$; and then $\epsilon_1^2=1$ gives $\epsilon_1=\pm1$. $\square$</p>
+<p><strong>Corollary.</strong> The only degree-preserving algebra involutions of the exterior algebra that act by a scalar on each component are the identity and the grade involution; every other order-two automorphism of the exterior algebra arises from an order-two automorphism of $V$ and is not a signed identity unless it is one of these two.</p>
+<h2 id="the-grade-involution">The Grade Involution</h2>
+<p><strong>Definition.</strong> The <strong>grade involution</strong> is</p>
+<p>$$
+\alpha(x)=(-1)^k x\qquad (x\in A^k).
+$$</p>
+<p><strong>Proposition.</strong> $\alpha$ is an algebra automorphism, $\alpha^2=\mathrm{id}$, and it is the unique automorphism of $A$ that extends the map $v\mapsto-v$ on $V$.</p>
+<p><strong>Proof.</strong> Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$. $\square$</p>
+<p><strong>Corollary.</strong> The fixed algebra of $\alpha$ is the even part $A^{\mathrm{even}}$ and its anti-fixed part is the odd part $A^{\mathrm{odd}}$; $\alpha$ is the grade involution of the $\mathbb{Z}/2$-grading of $A$, in the sense of <em>Superalgebras and Graded Structures</em>.</p>
+<h2 id="reversion-and-the-reversal">Reversion and the Reversal</h2>
+<p><strong>Definition.</strong> The <strong>reversion</strong> $r$ is the linear map determined on products by</p>
+<p>$$
+r(v_1\wedge\cdots\wedge v_k)=v_k\wedge\cdots\wedge v_1,
+$$</p>
+<p>and the <strong>reversal</strong> is the composite $\alpha r$. On a homogeneous element of degree $k$,</p>
+<p>$$
+r(x)=(-1)^{k(k-1)/2}x,\qquad \alpha r(x)=(-1)^{k(k+1)/2}x .
+$$</p>
+<p><strong>Proof.</strong> Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$. $\square$</p>
+<p><strong>Theorem.</strong> The reversion is an anti-involution, $r(xy)=r(y)r(x)$ and $r^2=\mathrm{id}$; so is the reversal; and $\alpha$ commutes with $r$. The three maps $\mathrm{id},\alpha,r,\alpha r$ form a group isomorphic to $(\mathbb{Z}/2)^2$ under composition.</p>
+<p><strong>Proof.</strong> Reversion reverses the order of each wedge of factors, so it converts a product into the product in the reverse order; applying it twice restores the order; the reversal is the composite of two commuting order-two maps; the group table is immediate. $\square$</p>
+<p><strong>Corollary.</strong> The signs $(-1)^k$, $(-1)^{k(k-1)/2}$ and $(-1)^{k(k+1)/2}$ distinguish the three non-identity members on the homogeneous components, and they agree on the even part; on the odd part the grade involution is $-1$, while reversion is $-1$ for $k\equiv2,3\pmod 4$.</p>
+<h2 id="the-hodge-star-named">The Hodge Star, Named</h2>
+<p><strong>Remark (forward reference).</strong> When $V$ carries a nondegenerate symmetric bilinear form and an orientation, the Hodge star $\star$ is a linear map reversing the degree, $\star:A^k\to A^{m-k}$, determined by $\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\theta$ for the volume element $\theta$; it is an involution up to the sign $(-1)^{k(m-k)}$ and it is not an algebra homomorphism or anti-homomorphism. Its theory, its square, the real and the complex structures it defines on the exterior algebra and the relative positions of $\star$ with $\alpha,r,\alpha r$ are the subject of <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>; the form and the orientation are not used here.</p>
+<h2 id="worked-case-the-exterior-algebra-of-a-two-dimensional-space">Worked Case: The Exterior Algebra of a Two-Dimensional Space</h2>
+<p>Let $V$ have basis $e_1,e_2$, so $A$ has basis $1,e_1,e_2,e_1e_2$. The three involutions act as</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$1$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_1e_2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>$1$</td>
+<td>$-e_1$</td>
+<td>$-e_2$</td>
+<td>$e_1e_2$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>$1$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$-e_1e_2$</td>
+</tr>
+<tr>
+<td>$\alpha r$</td>
+<td>$1$</td>
+<td>$-e_1$</td>
+<td>$-e_2$</td>
+<td>$-e_1e_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so $\alpha$ negates the vectors and fixes the top element, $r$ fixes the vectors and negates the top element, and $\alpha r$ negates both. The anti-involution property of $r$ is visible on $e_1e_2$: $r(e_1e_2)=e_2\wedge e_1=-e_1e_2=r(e_2)r(e_1)$.</p>
+<p><strong>Verified.</strong> The table was recomputed from the signs $(-1)^k$, $(-1)^{k(k-1)/2}$, $(-1)^{k(k+1)/2}$ and checked against the products of the basis elements; the anti-involution property was checked on all products of basis elements.</p>
+<h2 id="summary">Summary</h2>
+<p>The exterior algebra $A=\Lambda^\bullet V$ carries the order-two maps $\alpha,r,\alpha r$: the <strong>grade involution</strong> $\alpha$, the unique algebra automorphism extending $v\mapsto-v$, acting by $(-1)^k$ on $A^k$; the <strong>reversion</strong> $r$, the anti-automorphism reversing the order of the factors, acting by $(-1)^{k(k-1)/2}$; and the <strong>reversal</strong> $\alpha r$, acting by $(-1)^{k(k+1)/2}$. They form a group $(\mathbb{Z}/2)^2$ and agree on the even part. Among the degree-preserving algebra involutions acting by a scalar on each component, only the identity and $\alpha$ occur; the reversion and the reversal are anti-involutions. The <strong>Hodge star</strong> is the degree-reversing order-two-up-to-sign map that needs a symmetric bilinear form and an orientation, and it is named here and treated in <em>The Hodge Star and the Real Structure of the Exterior Algebra</em>. For the exterior algebra of a two-dimensional space the three maps are displayed by their action on the basis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>a finite-dimensional $K$-vector space of dimension $m$</td>
+</tr>
+<tr>
+<td>$A=\Lambda^\bullet V$</td>
+<td>the exterior algebra, with parts $A^k=\Lambda^kV$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $(-1)^k$ on $A^k$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the reversion, $(-1)^{k(k-1)/2}$ on $A^k$</td>
+</tr>
+<tr>
+<td>$\alpha r$</td>
+<td>the reversal, $(-1)^{k(k+1)/2}$ on $A^k$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Hodge star, named, deferred</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1989), for the exterior algebra, its grading and its anti-automorphisms.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em>, Universitext (Springer, 2nd ed. 1978), for the involutions of the exterior and Clifford algebras.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for reversion, the grade involution and the Hodge star.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works, Volume 2 (Springer, 1997), for the order-two maps of the exterior algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

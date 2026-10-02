@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of a Bounded Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-a-bounded-operator"><strong>The Adjoint of a Bounded Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint of a bounded operator on a Hilbert space is defined by the identity $\langle Tx, y\rangle = \langle x, T^{*}y\rangle$, and the assignment $T \mapsto T^{*}$ is an <strong>isometric involutive anti-automorphism</strong> of the algebra $B(H)$ of bounded operators: it is conjugate-linear, reverses the order of a product, is its own inverse, and preserves the norm, so $B(H)$ is an involutive Banach algebra and the identity $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$ holds. Topologically, the adjoint is continuous for the norm, the weak, the strong and the weak-star topologies, and it is the transpose of $T$ read through the Riesz identification of $H$ with its dual, $T^{*} = R^{-1}T'R$; the spectrum transforms by $\sigma(T^{*}) = \overline{\sigma(T)}$, and on a finite-dimensional space the adjoint is the conjugate transpose of the matrix.</p>
+<p>The existence of the adjoint and its basic identities are <em>Banach and Hilbert Spaces</em>, which supply the inner product, the Riesz representation theorem, the projection theorem and the bounded operators; the present article develops the operator $T^{*}$ as an element of the involutive algebra $B(H)$, its topological continuity and its identification with the transpose. The transposition of a continuous operator is <em>The Dual Operator</em>; the adjoint defined by an abstract pairing is <em>The Dual Pairing and the Adjoint</em>; the involutions of $B(H)$ and the classical groups they define are <em>Involutions of the Bounded Operators</em>; the abstract involutive Banach algebras are <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>. The forms and the indefinite adjoints are Part III, and no analysis is used beyond the inner product.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ and $H$ is a Hilbert space over $\mathbb{K}$ with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, norm $\lVert\cdot\rVert$ and dual $H'$; the <strong>Riesz map</strong> is $R : H \to H'$, $(Ry)(x) = \langle x, y\rangle$, a conjugate-linear isometric isomorphism; $B(H)$ is the algebra of bounded operators with the operator norm; and $T' : H' \to H'$ is the transpose of $T$.</p>
+<h2 id="the-adjoint-as-an-involution-of-the-operator-algebra">The Adjoint as an Involution of the Operator Algebra</h2>
+<p><strong>Theorem (existence and the defining properties).</strong> For every $T \in B(H)$ there is a unique $T^{*} \in B(H)$ with</p>
+<p>$$
+\langle Tx, y\rangle = \langle x, T^{*}y\rangle \qquad (x, y \in H),
+$$</p>
+<p>and $\lVert T^{*}\rVert = \lVert T\rVert$, $(S+T)^{*} = S^{*}+T^{*}$, $(\lambda T)^{*} = \overline{\lambda}T^{*}$, $(\mathrm{id})^{*} = \mathrm{id}$ and $T^{**} = T$.</p>
+<p><strong>Proof.</strong> The existence, the uniqueness, the norm equality and the algebraic identities are established in <em>Banach and Hilbert Spaces</em> from the Riesz representation theorem; they are quoted here and not reproved.</p>
+<p><strong>Theorem (the anti-automorphism).</strong> For all $S, T \in B(H)$,</p>
+<p>$$
+(ST)^{*} = T^{*}S^{*} ,
+$$</p>
+<p>so $T \mapsto T^{*}$ is an involutive anti-automorphism of $B(H)$: it reverses products, is conjugate-linear, is its own inverse, and fixes the identity. Consequently $B(H)$ is an involutive Banach algebra, and the adjoint is isometric.</p>
+<p><strong>Proof.</strong> For $x, y \in H$, $\langle STx, y\rangle = \langle Tx, S^{*}y\rangle = \langle x, T^{*}S^{*}y\rangle$, and the uniqueness of the adjoint gives $(ST)^{*} = T^{*}S^{*}$; the remaining statements are the theorem above.</p>
+<p><strong>Proposition (the $C^{*}$-identity).</strong> For every $T \in B(H)$,</p>
+<p>$$
+\lVert T^{*}T\rVert = \lVert T\rVert^{2} ,
+$$</p>
+<p>and this identity exhibits $B(H)$ as a $C^{*}$-algebra for the adjoint involution.</p>
+<p><strong>Proof.</strong> For $\lVert x\rVert \leq 1$, $\lVert Tx\rVert^{2} = \langle Tx,Tx\rangle = \langle T^{*}Tx,x\rangle \leq \lVert T^{*}T\rVert\lVert x\rVert^{2}$, so $\lVert T\rVert^{2} \leq \lVert T^{*}T\rVert$; the reverse inequality is the submultiplicativity $\lVert T^{*}T\rVert \leq \lVert T^{*}\rVert\lVert T\rVert = \lVert T\rVert^{2}$. The abstract theory of the $C^{*}$-algebras that the identity defines is <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em> and <em>Operator Algebras</em>, named here and not developed.</p>
+<p><strong>Theorem (the adjoint is the transpose through Riesz).</strong> With $R$ the Riesz map,</p>
+<p>$$
+T^{*} = R^{-1}\,T'\,R ,
+$$</p>
+<p>so the Hilbert adjoint is the transpose of <em>The Dual Operator</em> conjugated by the Riesz identification; consequently $T \mapsto T^{*}$ is the transpose read on $H$ and inherits the reversal of composition and, in the reflexive case, the symmetry $T^{**} = T$.</p>
+<p><strong>Proof.</strong> For $y \in H$ and $x \in H$, $(R^{-1}T'R\,y)(x) = R^{-1}(T'Ry)(x) = (T'Ry)(x) = (Ry)(Tx) = \langle Tx, y\rangle = \langle x, T^{*}y\rangle = (R T^{*} y)(x)$, so $R^{-1}T'Ry = T^{*}y$. The reversal and the symmetry are the corresponding properties of the transpose.</p>
+<h2 id="topological-continuity-of-the-adjoint">Topological Continuity of the Adjoint</h2>
+<p><strong>Theorem (continuity for the operator topologies).</strong> The involution $T \mapsto T^{*}$ of $B(H)$ is continuous, and in fact a homeomorphism, for the norm topology, the weak operator topology, the strong operator topology and the weak-star (ultraweak) topology; it is isometric for the norm.</p>
+<p><strong>Proof.</strong> Norm continuity and isometry are the theorem above. For the weak operator topology, the seminorms are $T \mapsto \lvert\langle Tx,y\rangle\rvert$, and $\lvert\langle T^{*}x,y\rangle\rvert = \lvert\langle x,Ty\rangle\rvert$ shows that the seminorms of $T^{*}$ are those of $T$ with the arguments exchanged; hence the involution is a homeomorphism. The strong operator topology is handled by $\lVert T^{*}x\rVert = \sup_{\lVert y\rVert\leq1}\lvert\langle T^{*}x,y\rangle\rvert = \sup_{\lVert y\rVert\leq1}\lvert\langle x,Ty\rangle\rvert$; the ultraweak topology is the weak-star topology on $B(H)$ as the dual of the trace-class operators, and the involution on the predual is the transpose of <em>The Dual Operator and the Weak Topology</em>, so it is continuous.</p>
+<p><strong>Corollary (commutants and bicommutants).</strong> The adjoint preserves the commutant, $T \in \{S\}' \Rightarrow T^{*} \in \{S\}'$ when $S$ is self-adjoint, and in general $\{S\}^{*} = \{S^{*}\}'$; hence a self-adjoint set of operators has a self-adjoint commutant, and the von Neumann bicommutant theorem applies to the self-adjoint algebras, which are owned by <em>Operator Algebras</em>.</p>
+<p><strong>Proof.</strong> If $TS = ST$ then $S^{*}T^{*} = (TS)^{*} = (ST)^{*} = T^{*}S^{*}$, so $T^{*}$ commutes with $S^{*}$; for self-adjoint $S$ this gives $T^{*} \in \{S\}'$, and the general identity follows by applying it to $S^{*}$.</p>
+<h2 id="spectral-and-finite-dimensional-properties">Spectral and Finite-Dimensional Properties</h2>
+<p><strong>Proposition (the spectrum transforms by conjugation).</strong> For $T \in B(H)$,</p>
+<p>$$
+\sigma(T^{*}) = \overline{\sigma(T)} ,
+$$</p>
+<p>and $T$ is invertible exactly when $T^{*}$ is, with $(T^{-1})^{*} = (T^{*})^{-1}$; the involution therefore preserves invertibility and the unitary group.</p>
+<p><strong>Proof.</strong> $T - \lambda \mathrm{id}$ is invertible with bounded inverse exactly when its adjoint $T^{*} - \overline{\lambda}\,\mathrm{id}$ is, because the adjoint of an invertible operator is invertible with adjoint inverse; hence $\lambda \in \rho(T)$ iff $\overline{\lambda} \in \rho(T^{*})$. The inverse formula follows by taking adjoints in $T T^{-1} = \mathrm{id}$.</p>
+<p><strong>Proposition (self-adjoint, skew, normal, unitary).</strong> The involution splits $B(H)$ into the <strong>self-adjoint</strong> operators $T = T^{*}$ and the <strong>skew-adjoint</strong> operators $T = -T^{*}$, with</p>
+<p>$$
+B(H) = B(H)^{\mathrm{sa}} \oplus B(H)^{\mathrm{skew}} , \qquad T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*}) ,
+$$</p>
+<p>when $2$ is invertible; $T$ is <strong>normal</strong> when $TT^{*} = T^{*}T$ and <strong>unitary</strong> when $T^{*}T = TT^{*} = \mathrm{id}$. The self-adjoint and skew-adjoint parts are real vector subspaces, and the unitary operators form a group.</p>
+<p><strong>Proof.</strong> The averaging maps $\tfrac12(\mathrm{id}\pm\ast)$ are real-linear idempotents with the stated images, and the direct sum is the abstract decomposition of an involutive algebra; the unitary operators are closed under multiplication and inversion by the anti-automorphism property.</p>
+<p><strong>Example (the finite-dimensional case).</strong> For $H = \mathbb{K}^{n}$ with the standard inner product and $A$ the matrix of $T$ in the standard basis, the matrix of $T^{*}$ is the conjugate transpose $A^{*} = \overline{A}^{\mathsf{T}}$, the self-adjoint operators are the Hermitian matrices (symmetric in the real case), the unitary operators are the unitary matrices (orthogonal in the real case), and the $C^{*}$-identity is $\lVert A^{*}A\rVert = \lVert A\rVert^{2}$ for the spectral norm. The transpose through Riesz is the identity of the finite-dimensional duality $(\mathbb{K}^{n})' = \mathbb{K}^{n}$ up to the conjugate structure.</p>
+<p><strong>Example (the sequence space).</strong> On $H = \ell^{2}$ the adjoint of a bounded operator with matrix $(a_{ij})$ has matrix $(a_{ji}^{*})$; the unilateral shift has the backward shift as its adjoint, the shift being an isometry with $S^{*}S = \mathrm{id}$ and $SS^{*}$ the projection onto the closed span of the coordinate vectors $e_{2}, e_{3}, \dots$, a proper projection, so the shift is not unitary.</p>
+<p><strong>Example (the multiplication operators).</strong> On $H = L^{2}(\mu)$ the multiplication $M_{f}$ by an essentially bounded function $f$ has adjoint $M_{\bar f}$, the involution acting by conjugation of the symbol; $M_{f}$ is self-adjoint exactly when $f$ is real almost everywhere, unitary exactly when $\lvert f\rvert = 1$ almost everywhere, and normal always, the multiplication operators being the model commutative self-adjoint algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>For a bounded operator $T$ on a Hilbert space there is a unique $T^{*}$ with $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$, of the same norm, and the assignment $T \mapsto T^{*}$ is an isometric involutive anti-automorphism of $B(H)$, satisfying $(ST)^{*} = T^{*}S^{*}$, $T^{**} = T$ and the $C^{*}$-identity $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$; it is the transpose of $T$ conjugated by the Riesz map, $T^{*} = R^{-1}T'R$. The involution is a homeomorphism for the norm, weak, strong and weak-star topologies of $B(H)$, it preserves commutants of self-adjoint sets, it sends the spectrum to the conjugate spectrum, $\sigma(T^{*}) = \overline{\sigma(T)}$, and it implements the splitting of $B(H)$ into the self-adjoint and the skew-adjoint operators, with the normal and the unitary operators defined by the involutive identities. In finite dimension the involution is the conjugate transpose of the matrix. The abstract involutions of $B(H)$ and the classical groups they define are <em>Involutions of the Bounded Operators</em>, and the adjoint defined by an abstract pairing is <em>The Dual Pairing and the Adjoint</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$, $\langle\cdot,\cdot\rangle$</td>
+<td>Hilbert space and its inner product</td>
+</tr>
+<tr>
+<td>$B(H)$</td>
+<td>bounded operators, an involutive Banach algebra</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>adjoint, $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$</td>
+</tr>
+<tr>
+<td>$(ST)^{*} = T^{*}S^{*}$</td>
+<td>reversing of products</td>
+</tr>
+<tr>
+<td>$\lVert T^{*}T\rVert = \lVert T\rVert^{2}$</td>
+<td>the $C^{*}$-identity</td>
+</tr>
+<tr>
+<td>$R : H \to H'$</td>
+<td>Riesz map, $T^{*} = R^{-1}T'R$</td>
+</tr>
+<tr>
+<td>$\sigma(T^{*}) = \overline{\sigma(T)}$</td>
+<td>conjugation of the spectrum</td>
+</tr>
+<tr>
+<td>$B(H)^{\mathrm{sa}}$, $B(H)^{\mathrm{skew}}$</td>
+<td>self-adjoint and skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$T^{*}T = TT^{*} = \mathrm{id}$</td>
+<td>unitary operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, second edition, 1982), for the adjoint, the operator topologies and the unilateral shift.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the Hilbert-space adjoint, the weak and strong operator topologies and the spectral theory.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the involutive algebra $B(H)$, its topologies and the commutant.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw-Hill, second edition, 1991), for the Riesz representation theorem, the adjoint and the weak-star topology.</li>
+<li>Gert K. Pedersen, <em>Analysis Now</em> (Springer, 1989), for the $C^{*}$-identity, the involutive Banach algebras and the adjoint.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

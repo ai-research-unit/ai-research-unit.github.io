@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint in the Symmetric Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-in-the-symmetric-algebra"><strong>The Adjoint in the Symmetric Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric algebra $A = \operatorname{Sym}(M)$ of a free module of finite rank carries the <strong>trace form</strong>, the coefficient pairing $\langle u,v\rangle$ that reads off the diagonal term of the product; in a basis $x_1,\dots,x_n$ with the dual differential operators $\partial_1,\dots,\partial_n$ it is the <strong>apolar pairing</strong> $\langle u,v\rangle = v(\partial)u|_{0}$. With respect to it every operator has an adjoint, and the article computes the adjoints of the <strong>multiplication operators</strong> of the symmetric algebra. The result is that the adjoint of the multiplication by $x_i$ is the derivative $\partial_i$,</p>
+<p>$$
+\langle x_i u, v\rangle = \langle u, \partial_i v\rangle ,
+$$</p>
+<p>so the adjoint of a multiplication is a <strong>differential operator with constant coefficients</strong>, the polarisation operator $P_u = u(\partial)$ of <em>The Polarisation Operator</em>, and not another multiplication; consequently the only self-adjoint multiplications are the <strong>scalar</strong> ones. This is the specific behaviour of the trace form, and it is the reason the polarisation operator enters the operator theory of the symmetric algebra: the multiplications and the polarisation operators are mutual adjoints, and the involution they define on the endomorphism algebra is the transpose.</p>
+<p>The article defines the trace form, proves that it is symmetric, non-degenerate and graded, computes the adjoint of a multiplication as the polarisation operator, identifies the self-adjoint multiplications as the scalar ones, and describes the induced transpose involution on the endomorphisms of the symmetric algebra with its self-adjoint part and its unitary group. It compares the result with the multiplication operators of <em>Involutions of the Multiplication Operators</em>, <em>Adjoints in a Commutative Involutive Algebra</em> and <em>The Involution on the Multiplication Operators</em>, where the pairing is $\sigma$-sesquilinear and the adjoint of $L_a$ is again a multiplication; the difference is exactly the difference between the trace form and a sesquilinear form, and the article marks it. The article assumes <em>The Symmetric Algebra with an Involution</em> and <em>The Symmetric and Exterior Powers</em> for the algebra and its grading, <em>The Polarisation Operator</em> for $P_u$ and its properties, <em>The Adjoint of an Endomorphism</em> for the adjoint with respect to a pairing, and <em>Involutive Linear Algebras</em> for the involution of the endomorphism algebra. The signed variants are <em>The Signed Adjoint Sandwich</em>, <em>The Signed Adjoint of the Reflection</em> and <em>The Signed Adjoint of the Left Multiplication</em>, later in this group. Throughout, $R$ is a commutative ring with identity in which all the factorials are invertible (for instance a field of characteristic zero), $M$ is a free $R$-module of rank $n$ with basis $x_1,\dots,x_n$, $A = \operatorname{Sym}(M)$ is its symmetric algebra, $\partial_i$ is the derivative dual to $x_i$, and $\langle\cdot,\cdot\rangle$ is the trace form; no norm, distance, positivity or operator spectrum occurs.</p>
+<h2 id="the-symmetric-algebra-and-the-trace-form">The Symmetric Algebra and the Trace Form</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p><strong>Definition.</strong> The <strong>trace form</strong> on $A = \operatorname{Sym}(M)$ is the $R$-bilinear map</p>
+<p>$$
+\langle\cdot,\cdot\rangle : A\times A\to R, \qquad \langle u,v\rangle = \bigl(v(\partial)\,u\bigr)\big|_{x=0},
+$$</p>
+<p>where $v(\partial)$ is the differential operator with constant coefficients obtained by replacing $x_i$ by $\partial_i$ in $v$, and the index $0$ means the constant term. On the monomials it is the apolar pairing</p>
+<p>$$
+\langle x^{a}, x^{b}\rangle = a!\,\delta_{a,b}, \qquad a! = a_1!\cdots a_n! .
+$$</p>
+<p><strong>Theorem.</strong> The trace form is $R$-bilinear, symmetric, non-degenerate and graded: $\langle \operatorname{Sym}^k(M), \operatorname{Sym}^j(M)\rangle = 0$ for $k\ne j$, and on $\operatorname{Sym}^k(M)$ it is a non-degenerate pairing.</p>
+<p><em>Proof.</em> Bilinearity is the bilinearity of the coefficient extraction; symmetry is the commutativity of the differential operators with constant coefficients, $\partial^a\partial^b = \partial^{a+b} = \partial^b\partial^a$; the monomial formula is immediate; the pairing is diagonal in the monomial bases with the invertible coefficients $a!$, hence non-degenerate on each finite free homogeneous piece and graded. $\square$</p>
+<p><strong>Proposition (invariance under the induced involution).</strong> Let $\sigma_M$ be an $R$-linear involution of $M$ preserving the trace form, $\langle \sigma_M(x),\sigma_M(y)\rangle = \langle x,y\rangle$, and let $\sigma$ be the induced involution of $A$. Then $\sigma$ preserves the trace form, $\langle \sigma(u),\sigma(v)\rangle = \langle u,v\rangle$, and the trace form is compatible with the multiplication of <em>The Symmetric Algebra with an Involution</em>.</p>
+<p><em>Proof.</em> The induced involution is multiplicative and acts by $\sigma_M$ on the generators; applied to the monomials, the invariance follows from the invariance of the pairing on $M$ extended multiplicatively. $\square$</p>
+<h2 id="the-adjoint-of-a-multiplication">The Adjoint of a Multiplication</h2>
+<h3 id="the-multiplication-by-a-generator">The Multiplication by a Generator</h3>
+<p><strong>Theorem.</strong> For every generator $x_i$ the adjoint of the multiplication $L_{x_i}$ with respect to the trace form is the derivative $\partial_i$:</p>
+<p>$$
+L_{x_i}^{\dagger} = \partial_i , \qquad \text{that is} \qquad \langle x_i u, v\rangle = \langle u, \partial_i v\rangle .
+$$</p>
+<p><em>Proof.</em> On the monomials, $\langle x_i x^a, x^b\rangle = \langle x^{a+e_i}, x^b\rangle = (a+e_i)!\,\delta_{a+e_i,b}$ and $\langle x^a, \partial_i x^b\rangle = b_i\langle x^a,x^{b-e_i}\rangle = b_i\,a!\,\delta_{a,b-e_i}$; the two agree because $a+e_i = b$ gives $b_i = a_i+1$ and $(a+e_i)! = (a_i+1)a!$. Hence the two operators are adjoint. $\square$</p>
+<h3 id="the-multiplication-by-a-general-element">The Multiplication by a General Element</h3>
+<p><strong>Theorem.</strong> For every $u \in A$ the adjoint of the multiplication $L_u$ with respect to the trace form is the <strong>polarisation operator</strong> $P_u = u(\partial)$ of <em>The Polarisation Operator</em>:</p>
+<p>$$
+L_u^{\dagger} = u(\partial) = P_u , \qquad \text{that is} \qquad \langle u w, v\rangle = \langle w, u(\partial)v\rangle .
+$$</p>
+<p><em>Proof.</em> Both sides are additive in $u$, and for a monomial $u = x^a$ the operator $u(\partial) = \partial^a$ is the composite $\partial^{a} = \partial_1^{a_1}\cdots\partial_n^{a_n}$; the relation $\langle x_iw,\cdot\rangle = \langle w,\partial_i\cdot\rangle$ composes to $\langle u w,v\rangle = \langle w, u(\partial)v\rangle$. $\square$</p>
+<p><strong>Corollary (the self-adjoint multiplications).</strong> A multiplication $L_u$ is self-adjoint with respect to the trace form exactly when $u$ is a scalar: $L_u^{\dagger} = L_u$ iff $u \in R$ (the constants of the symmetric algebra).</p>
+<p><em>Proof.</em> $L_u^{\dagger} = u(\partial)$ and $L_u$ is a multiplication of degree $\deg u$, while $u(\partial)$ lowers the degree by $\deg u$; the two operators are equal only when $\deg u = 0$, and then $u(\partial) = u$ is the scalar multiplication. $\square$</p>
+<p><strong>Corollary (the mutual adjointness).</strong> The multiplication $L_u$ and the polarisation operator $P_u$ are mutual adjoints, $L_u^{\dagger} = P_u$ and $P_u^{\dagger} = L_u$; the map $u\mapsto (L_u, P_u)$ is an isomorphism of $A$ onto a pair of adjoint families of operators.</p>
+<p><em>Proof.</em> $(L_u^{\dagger})^{\dagger} = L_u$ by the involutivity of the adjoint, and $L_u^{\dagger} = P_u$, so $P_u^{\dagger} = L_u$. $\square$</p>
+<h2 id="the-self-adjoint-operators-and-the-induced-involution">The Self-Adjoint Operators and the Induced Involution</h2>
+<p><strong>Theorem.</strong> The assignment $F\mapsto F^{\dagger}$ is an involution of the endomorphism algebra $\operatorname{End}_R(A)$, the <strong>transpose involution</strong> with respect to the trace form; the self-adjoint operators form a Jordan algebra under the symmetrised product and the skew-adjoint operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the unitary operators, those with $F^{\dagger}F = FF^{\dagger} = 1$, form a group.</p>
+<p><em>Proof.</em> This is <em>The Adjoint of an Endomorphism</em> together with <em>Involutive Linear Algebras</em>, read on the trace form. $\square$</p>
+<p><strong>Proposition.</strong> The polarisation operators form the image of the symmetric algebra under the adjoint of the multiplication map, $A\to\operatorname{End}_R(A)$, $u\mapsto P_u = L_u^{\dagger}$; they commute, $P_uP_v = P_{uv}$, because the differential operators with constant coefficients commute, and they are the operators of <em>The Polarisation Operator</em> written as the adjoints of the multiplications.</p>
+<p><em>Proof.</em> $P_uP_v = u(\partial)v(\partial) = (uv)(\partial) = P_{uv}$, as differential operators with constant coefficients commute. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (one variable).</strong> For $M = Rx$, $A = R[x]$, the trace form is $\langle x^a, x^b\rangle = a!\,\delta_{a,b}$; the adjoint of $L_x$ is $\partial_x$, so $L_x^{\dagger} = \partial_x$ and $L_x$ is not self-adjoint; $L_x + \partial_x$ is not a multiplication, and its square is not either, since $L_x\partial_x = \partial_x L_x+\mathrm{id}$ by $[\partial_x,x] = 1$. The only self-adjoint multiplications are the constants $L_\lambda$.</p>
+<p><strong>Example (two variables).</strong> For $M = Rx_1\oplus Rx_2$, $A = R[x_1,x_2]$, the trace form is $\langle x_1^{a_1}x_2^{a_2}, x_1^{b_1}x_2^{b_2}\rangle = a_1!a_2!\,\delta_{a,b}$; the adjoint of $L_{x_1}$ is $\partial_1$, the adjoint of $L_{x_1x_2}$ is $\partial_1\partial_2$, and the adjoint of $L_{x_1^2+x_2^2}$ is $\partial_1^2+\partial_2^2$, the polarisation operator of the invariant $x_1^2+x_2^2$. The scalar multiplications are the only self-adjoint multiplications.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>trace form</strong> on the symmetric algebra $A = \operatorname{Sym}(M)$ of a free module of finite rank is the apolar pairing $\langle u,v\rangle = v(\partial)u|_{0}$, symmetric, non-degenerate and graded. With respect to it the adjoint of the multiplication by a generator is the derivative, $L_{x_i}^{\dagger} = \partial_i$, and the adjoint of a general multiplication is the <strong>polarisation operator</strong>, $L_u^{\dagger} = u(\partial) = P_u$; the multiplication and the polarisation operator are mutual adjoints, and the polarisation operators commute as the differential operators with constant coefficients do. The only <strong>self-adjoint</strong> multiplications are the <strong>scalar</strong> ones, because the multiplication raises the degree and the polarisation operator lowers it. The assignment $F\mapsto F^{\dagger}$ is the <strong>transpose involution</strong> of the endomorphism algebra, whose self-adjoint operators form a Jordan algebra, whose skew-adjoint operators form a Lie algebra and whose unitary operators form a group. The trace form thus differs from the $\sigma$-sesquilinear pairings of the preceding articles, where the adjoint of $L_a$ is the multiplication $L_{\sigma(a)}$. No norm, distance, positivity or operator spectrum occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A = \operatorname{Sym}(M)$, $M$ free of rank $n$</td>
+<td>Symmetric algebra</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle = v(\partial)u|_{0}$</td>
+<td>Trace form (apolar pairing)</td>
+</tr>
+<tr>
+<td>$\langle x^a,x^b\rangle = a!\,\delta_{a,b}$</td>
+<td>Value on the monomials</td>
+</tr>
+<tr>
+<td>$L_{x_i}^{\dagger} = \partial_i$</td>
+<td>Adjoint of a generator multiplication</td>
+</tr>
+<tr>
+<td>$L_u^{\dagger} = u(\partial) = P_u$</td>
+<td>Adjoint of a multiplication $=$ polarisation operator</td>
+</tr>
+<tr>
+<td>$L_u^{\dagger} = L_u \iff u\in R$</td>
+<td>Self-adjoint multiplications are the scalars</td>
+</tr>
+<tr>
+<td>$F\mapsto F^{\dagger}$</td>
+<td>Transpose involution of $\operatorname{End}_R(A)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Werner Greub, <em>Multilinear Algebra</em> (Springer, second edition, 1978), for the apolar pairing, the symmetric algebra and the duality.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for the symmetric algebra, the polynomial algebra and the divided powers.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the adjoint involution and the pairings.</li>
+<li>Igor Shafarevich and Alexander Kostrikin, <em>Linear Algebra and Geometry</em> (Gordon and Breach, 1989), for the polarisation, the apolar form and the symmetric powers.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the adjoints and the endomorphism algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

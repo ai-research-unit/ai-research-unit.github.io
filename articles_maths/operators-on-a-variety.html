@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on a Variety — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-a-variety"><strong>Operators on a Variety</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A variety is a set with a sheaf of functions, and the operators on it are the maps of that sheaf that respect the structure it carries. Three classes are visible at once, and they are the subject of this article: the <strong>multiplications</strong> by the global functions, which are all the endomorphisms of the structure sheaf that are linear over it; the <strong>derivations</strong> of the structure sheaf, which are the vector fields; and the <strong>automorphisms</strong> of the variety, which are the invertible ring endomorphisms of the structure sheaf and which act on the other two classes by conjugation. The article fixes the operator layer of the category, the sheaf $\mathcal{E}nd_{\mathcal{O}_X}(\mathcal{O}_X) = \mathcal{O}_X$ and the tangent sheaf $\mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X)$, and it records the action of the automorphism group on both. It is the first article of the <code>- Operator Theory</code> group, and it fixes the marks and the layer conventions that the five articles after it use: <em>The Galois Action as an Operator</em>, <em>The Frobenius Operator</em>, <em>The Pullback Operator of a Morphism</em>, <em>The Divisor Operator</em> and <em>The Sheaf of Differential Operators</em>.</p>
+<p>Nothing here is analytic. A derivation is defined by the Leibniz rule, as in Part I's <em>Derivations of a Ring</em>, and it is not a limit of difference quotients; the tangent sheaf is the dual of the algebraic cotangent sheaf $\Omega^1_{X/k}$ of <em>Schemes</em>, and the tangent space at a point is the algebraic $\mathrm{M}_P/\mathrm{M}_P^2$ of <em>Algebraic Geometry</em>. The differential calculus on a smooth manifold, in which a vector field is a section of the tangent bundle defined by an atlas, is Part III's, and the article names that structure only to defer to it.</p>
+<p>The variety $X$ is reduced and of finite type over a field $k$ throughout, so that it carries the coordinate ring of <em>Algebraic Geometry</em> on each affine chart and the structure sheaf of <em>Schemes</em> on the whole; a general scheme is admitted only where the statement is purely sheaf-theoretic and is said so.</p>
+<h2 id="the-operator-layer-of-a-variety">The Operator Layer of a Variety</h2>
+<p><strong>Definition.</strong> Let $(X,\mathcal{O}_X)$ be a variety over $k$. The <strong>operator layer</strong> of $X$ is the sheaf of $k$-algebras</p>
+<p>$$
+\mathcal{E}nd(\mathcal{O}_X) = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X),
+$$</p>
+<p>whose sections over an open $U$ are the $\mathcal{O}_X(U)$-linear endomorphisms of $\mathcal{O}_X(U)$, with composition as product. Its global sections form the $k$-algebra $\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)$.</p>
+<p><strong>Theorem (the operator layer is the structure sheaf).</strong> The map
+$$
+s \longmapsto m_s, \qquad m_s(t) = st,
+$$
+is an isomorphism of sheaves of $\mathcal{O}_X$-algebras $\mathcal{O}_X\xrightarrow{\ \sim\ }\mathcal{E}nd(\mathcal{O}_X)$. Consequently every endomorphism of $\mathcal{O}_X$ linear over itself is the multiplication by a unique function, and the algebra of global operators is
+$$
+\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)\cong\Gamma(X,\mathcal{O}_X),
+$$
+a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.</p>
+<p><em>Proof.</em> The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $U$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $U$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.</p>
+<p><strong>Remark (the two readings of "endomorphism").</strong> The theorem is about the operators <strong>linear over the structure sheaf</strong>, and those are the multiplications. The ring endomorphisms of $\mathcal{O}_X$ as a sheaf of rings, which need not be $\mathcal{O}_X$-linear, are a different and larger object, and they are treated in <em>Endomorphisms and Automorphisms of the Structure Sheaf</em> below. The two must be kept apart: a multiplication $m_s$ is never an automorphism of the pair $(X,\mathcal{O}_X)$ unless $s$ is a unit, while an automorphism of the variety is a ring automorphism that is almost never $\mathcal{O}_X$-linear.</p>
+<p><strong>Example ($\mathbb{A}^1$ and a global function).</strong> On $X = \mathbb{A}^1_k$ the global operators are the polynomials, $\Gamma(X,\mathcal{O}_X) = k[t]$, and $m_t$ is the operator that multiplies a function by the coordinate; it is injective and not surjective, since $1$ is not in its image. On $X = \mathbb{A}^1_k\setminus\{0\}$ the global functions are $k[t,t^{-1}]$ and the unit group is $k^\times t^m$, $m\in\mathbb{Z}$, so the unitaries of the operator layer are the multiplications by the monomials.</p>
+<h2 id="vector-fields">Vector Fields</h2>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathcal{O}_X$ over $k$ is a $k$-linear map $D : \mathcal{O}_X(U)\to\mathcal{O}_X(U)$ on each open $U$, compatible with restriction, satisfying the Leibniz rule
+$$
+D(fg) = f\,D(g) + D(f)\,g .
+$$
+The derivations form a sheaf $\mathcal{D}er_k(\mathcal{O}_X)$ of $k$-vector spaces; a global section is a <strong>vector field</strong> on $X$. The <strong>tangent sheaf</strong> is
+$$
+\mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X).
+$$</p>
+<p><strong>Theorem (the operator structure of the vector fields).</strong> On each open $U$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(U))$ form a Lie algebra under the commutator
+$$
+[D_1,D_2] = D_1D_2 - D_2D_1,
+$$
+and a module over the ring $\mathcal{O}_X(U)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
+$$
+[fD_1,\,gD_2] = fg\,[D_1,D_2] + f\,D_1(g)\,D_2 - g\,D_2(f)\,D_1 ,
+$$
+so that $\mathcal{D}er_k(\mathcal{O}_X)$ is a sheaf of Lie algebras over $k$ and a sheaf of modules over $\mathcal{O}_X$ at once.</p>
+<p><em>Proof.</em> The bracket of two derivations is a derivation: the Leibniz rule applied twice gives $[D_1,D_2](fg) = f[D_1,D_2](g) + [D_1,D_2](f)g$, since the four cross-terms cancel in pairs. The bracket is $k$-bilinear, alternating and satisfies the Jacobi identity because the commutator of operators always does, by Part I's <em>Algebras of Endomorphisms</em>. The module axioms and the displayed Leibniz rule are checked by expanding both sides and cancelling the two terms in which $D_1(g)$ or $D_2(f)$ is differentiated.</p>
+<p><strong>Proposition (the tangent sheaf is the dual of the cotangent sheaf).</strong> There is a natural isomorphism of $\mathcal{O}_X$-modules
+$$
+\mathcal{T}_X \cong \mathcal{H}om_{\mathcal{O}_X}(\Omega^1_{X/k},\mathcal{O}_X),
+$$
+where $\Omega^1_{X/k}$ is the cotangent sheaf of <em>Schemes</em>. On an affine chart $X = \operatorname{Spec} A$ it is the identification $\operatorname{Der}_k(A)\cong\operatorname{Hom}_A(\Omega^1_{A/k},A)$.</p>
+<p><em>Proof.</em> The universal derivation $d : A\to\Omega^1_{A/k}$ of the module of Kähler differentials has the universal property that every $k$-derivation $\delta : A\to M$ factors uniquely through $\operatorname{Hom}_A(\Omega^1_{A/k},M)$; taking $M = A$ gives the duality on the chart, and the two sides are sheaves, so the identification glues.</p>
+<p><strong>Example ($\mathbb{A}^n$ and the Euler field).</strong> On $\mathbb{A}^n_k$ the derivations form the free $\mathcal{O}$-module of rank $n$,
+$$
+\operatorname{Der}_k(k[x_1,\ldots,x_n]) = \bigoplus_{i=1}^n k[x_1,\ldots,x_n]\,\partial_i, \qquad \partial_i = \frac{\partial}{\partial x_i},
+$$
+so $\mathcal{T}_{\mathbb{A}^n}$ is free of rank $n$. The <strong>Euler derivation</strong> $E = \sum_i x_i\partial_i$ satisfies $E(f) = \deg(f)\,f$ on homogeneous polynomials, and it is the generator of the grading of the polynomial ring. On $\mathbb{A}^1$ the derivations are $k[t]\partial_t$, and the space is one-dimensional over the ring; the only derivation with $D(t) = 1$ is $\partial_t$.</p>
+<p><strong>Example (global vector fields on projective space).</strong> On $\mathbb{P}^n_k$ the global vector fields form the space
+$$
+H^0(\mathbb{P}^n,\mathcal{T}_{\mathbb{P}^n}) \cong \mathrm{sl}_{n+1}(k),
+$$
+of dimension $(n+1)^2-1$, spanned by the derivations $x_i\partial_j$ of the polynomial ring with the radial field $\sum_i x_i\partial_i$ removed. The identification of this space with the Lie algebra of the automorphism group $\mathrm{PGL}_{n+1}$ is the operator-level form of the statement that the automorphisms of $\mathbb{P}^n$ are the projective linear transformations; the Lie algebra of a group is a Part III notion, and the space itself is an algebraic one.</p>
+<h2 id="endomorphisms-and-automorphisms-of-the-structure-sheaf">Endomorphisms and Automorphisms of the Structure Sheaf</h2>
+<p><strong>Definition.</strong> An <strong>endomorphism of the variety</strong> $X$ is a morphism $\varphi : X\to X$ of ringed spaces; it is an <strong>automorphism</strong> when it is invertible. It induces a $k$-algebra homomorphism $\varphi^* : \Gamma(X,\mathcal{O}_X)\to\Gamma(X,\mathcal{O}_X)$ on the global functions, the <strong>pullback</strong>. The automorphisms form the group $\operatorname{Aut}(X)$ under composition.</p>
+<p><strong>Theorem (affine correspondence).</strong> Let $X = \operatorname{Spec} A$ be an affine variety, so that $A = k[X]$ is a finitely generated reduced $k$-algebra. Then formation of the pullback is a bijection
+$$
+\operatorname{Hom}_{\mathbf{Sch}}(X,X)\ \cong\ \operatorname{Hom}_{k\text{-}\mathbf{alg}}(A,A), \qquad \varphi\longmapsto\varphi^*,
+$$
+and it restricts to an isomorphism $\operatorname{Aut}(X)\cong\operatorname{Aut}_{k\text{-}\mathbf{alg}}(A)$.</p>
+<p><em>Proof.</em> This is the contravariant equivalence of <em>Schemes</em>: a morphism of affine schemes is a $k$-algebra homomorphism in the opposite direction, and an invertible morphism corresponds to an invertible homomorphism. Reducedness and finite type are not used for the bijection and are used only to recognise $X$ as a variety.</p>
+<p><strong>Theorem (the automorphisms act on the operator layer).</strong> Let $\varphi\in\operatorname{Aut}(X)$. Then conjugation by $\varphi^*$,
+$$
+\mathrm{Ad}_\varphi(T) = (\varphi^*)^{-1}\,T\,\varphi^*,
+$$
+is an automorphism of the $k$-algebra $\Gamma(X,\mathcal{O}_X)$ of multiplication operators, and the pushforward of derivations
+$$
+(\varphi_*D)(f) = (\varphi^*)^{-1}\bigl(D(\varphi^*f)\bigr)
+$$
+is an isomorphism of Lie algebras $\operatorname{Der}_k(\mathcal{O}_X)\to\operatorname{Der}_k(\mathcal{O}_X)$. Hence $\operatorname{Aut}(X)$ acts on the operator layer by algebra automorphisms, and the multiplication operators are fixed by the action precisely when $\varphi$ acts trivially on the global functions.</p>
+<p><em>Proof.</em> Conjugation by an invertible element of a ring is a ring automorphism, and $\varphi^*$ is invertible with inverse $(\varphi^{-1})^*$. For the derivations, $\varphi_*D$ is the transport of the derivation $D$ along the $k$-algebra isomorphism $\varphi^*$, so it is a derivation and the assignment is a Lie-algebra isomorphism because conjugation of operators preserves commutators. The fixed-multiplication statement is $\mathrm{Ad}_\varphi(m_s) = m_{\varphi^*(s)} = m_s$ for all $s$, that is $\varphi^* = \mathrm{id}$.</p>
+<p><strong>Example (the affine line and its inversions).</strong> On $\mathbb{A}^1_k$ the automorphisms are the affine maps $t\mapsto at+b$ with $a\in k^\times$, $b\in k$, since these are exactly the invertible $k$-algebra endomorphisms of $k[t]$. The group is the affine group of the line, of dimension two, and its conjugation action sends the vector field $f(t)\partial_t$ to $f(at+b)\partial_t$ with the chain-rule factor $a^{-1}$ absorbed: precisely, $(\varphi_*D)(t) = a^{-1}D(at+b)$. On the projective line $\mathbb{P}^1_k$ the automorphism group is $\mathrm{PGL}_2(k)$, of dimension three, and the global vector fields form its three-dimensional Lie algebra $\mathrm{sl}_2(k)$.</p>
+<h2 id="the-action-on-the-function-field-and-on-cohomology">The Action on the Function Field and on Cohomology</h2>
+<p><strong>Proposition (the action on the function field).</strong> A dominant endomorphism $\varphi : X\to X$ of an irreducible variety pulls back rational functions, $k(X)\to k(X)$, $f\mapsto \varphi^*f = f\circ\varphi$, a $k$-algebra homomorphism; if $\varphi$ is an automorphism the pullback is a $k$-automorphism of $k(X)$.</p>
+<p><em>Proof.</em> The pullback of a rational function along a dominant morphism is the composition with $\varphi$ on a dense open set on which both are defined, and the composition is independent of the open set chosen; invertibility of $\varphi$ makes the pullback invertible with inverse $(\varphi^{-1})^*$.</p>
+<p><strong>Proposition (the action on cohomology).</strong> Let $\varphi : X\to X$ be an endomorphism and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then $\varphi$ induces a $k$-linear map
+$$
+\varphi^* : H^i(X,\mathcal{F})\longrightarrow H^i(X,\varphi^*\mathcal{F})
+$$
+natural in $\mathcal{F}$, and for $\mathcal{F} = \mathcal{O}_X$ with $\varphi$ an automorphism this is an automorphism of the graded $k$-vector space $H^\bullet(X,\mathcal{O}_X)$. If $\varphi$ is the identity on a closed subscheme $Z\subseteq X$, the map factors through the cohomology of $Z$ in the sense of the long exact sequence of the pair $(X,Z)$ whenever $\mathcal{F}$ is supported there.</p>
+<p><em>Proof.</em> A morphism of schemes induces a morphism of the associated ringed spaces, hence a map of cohomology with coefficients pulled back; the functoriality $\varphi^*\circ\psi^* = (\psi\varphi)^*$ is the functoriality of $f^*$ of <em>Coherent Sheaves</em>, and invertibility carries over. The factorisation statement is the exactness of the cohomology sequence of a short exact sequence of sheaves, applied to the ideal sheaf of $Z$.</p>
+<p>The <strong>Lefschetz number</strong> of an endomorphism is the alternating sum $\sum_i(-1)^i\operatorname{tr}\bigl(\varphi^*|H^i(X,\mathcal{O}_X)\bigr)$; the fixed-point theorem that computes it as an intersection number is stated in the arithmetic setting in <em>The Frobenius Operator</em>, below in this group, and its topological form belongs to <em>Algebraic Topology</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The operator layer of a variety $X$ is the sheaf $\mathcal{E}nd(\mathcal{O}_X) = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ of endomorphisms of the structure sheaf, and it is isomorphic to $\mathcal{O}_X$ itself: every operator linear over the functions is a multiplication $m_s$, and the algebra of global operators is the commutative ring $\Gamma(X,\mathcal{O}_X)$ with unit group $\Gamma(X,\mathcal{O}_X^\times)$. The second class is the derivations of $\mathcal{O}_X$, the vector fields, forming the tangent sheaf $\mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X)$, a sheaf of Lie algebras and of modules over $\mathcal{O}_X$, and the $\mathcal{O}_X$-dual of the cotangent sheaf $\Omega^1_{X/k}$. On affine space the vector fields are the free module on the partial derivations, the Euler field generates the grading, and on projective space the global vector fields are $\mathrm{sl}_{n+1}(k)$.</p>
+<p>The third class is the automorphisms of the variety, the invertible ring endomorphisms of the structure sheaf; on an affine variety they are the $k$-algebra automorphisms of the coordinate ring, and they act on the operator layer by conjugation, fixing the multiplication operators exactly when they act trivially on the global functions. An endomorphism pulls back rational functions on the function field and acts on the cohomology of a quasi-coherent sheaf by $\varphi^*$, and the alternating trace of that action on $H^\bullet(X,\mathcal{O}_X)$ is the Lefschetz number. The four articles that follow read the same layer through one operator each: the Galois action of the base field, the Frobenius of characteristic $p$, the pullback of a general morphism, and the divisor map; the last reads the layer through the differential operators generated by the vector fields.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{O}_X$, $\Gamma(X,\mathcal{O}_X)$</td>
+<td>structure sheaf; ring of global functions</td>
+</tr>
+<tr>
+<td>$\mathcal{E}nd(\mathcal{O}_X)=\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$</td>
+<td>operator layer of endomorphisms of the structure sheaf</td>
+</tr>
+<tr>
+<td>$m_s$, $m_s(t)=st$</td>
+<td>multiplication operator by a function $s$</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_X^\times$, $\Gamma(X,\mathcal{O}_X^\times)$</td>
+<td>sheaf of units; group of invertible global functions</td>
+</tr>
+<tr>
+<td>$\mathcal{D}er_k(\mathcal{O}_X)$</td>
+<td>sheaf of $k$-derivations of the structure sheaf</td>
+</tr>
+<tr>
+<td>$\mathcal{T}_X=\mathcal{D}er_k(\mathcal{O}_X)$</td>
+<td>tangent sheaf; the vector fields</td>
+</tr>
+<tr>
+<td>$[D_1,D_2]=D_1D_2-D_2D_1$</td>
+<td>Lie bracket of derivations</td>
+</tr>
+<tr>
+<td>$(fD)(g)=fD(g)$</td>
+<td>$\mathcal{O}_X$-module structure on the vector fields</td>
+</tr>
+<tr>
+<td>$\Omega^1_{X/k}$</td>
+<td>cotangent sheaf; $\mathcal{T}_X$ is its $\mathcal{O}_X$-dual</td>
+</tr>
+<tr>
+<td>$E=\sum_ix_i\partial_i$</td>
+<td>Euler derivation of the polynomial ring</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(X)$, $\varphi^*$</td>
+<td>automorphism group; pullback of functions</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_\varphi(T)=(\varphi^*)^{-1}T\varphi^*$</td>
+<td>conjugation action of an automorphism on the operator layer</td>
+</tr>
+<tr>
+<td>$k(X)$</td>
+<td>function field; rational functions pulled back by a dominant map</td>
+</tr>
+<tr>
+<td>$\varphi^*$ on $H^i$</td>
+<td>action of an endomorphism on cohomology</td>
+</tr>
+<tr>
+<td>$\sum_i(-1)^i\operatorname{tr}(\varphi^*\vert H^i(X,\mathcal{O}_X))$</td>
+<td>Lefschetz number of an endomorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robin Hartshorne, <em>Algebraic Geometry</em> (Springer, 1977), for the tangent sheaf, its duality with the cotangent sheaf and the vector fields on projective space.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1</em> (Springer, third edition, 2013), for derivations of a coordinate ring and the automorphism groups of the affine and projective spaces.</li>
+<li>David Eisenbud, <em>Commutative Algebra with a View Toward Algebraic Geometry</em> (Springer, 1995), for the module of Kähler differentials and the universal property of the derivation.</li>
+<li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the identification of the derivations with the Lie algebra of the automorphism group.</li>
+<li>Michel Demazure and Pierre Gabriel, <em>Introduction to Algebraic Geometry and Algebraic Groups</em> (North-Holland, 1980), for the functor-of-points reading of the automorphism group.</li>
+<li>Alexander Grothendieck and Jean Dieudonné, <em>Éléments de géométrie algébrique IV</em> (Publications Mathématiques de l'IHÉS, 1964–1967), for the relative tangent and cotangent sheaves.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

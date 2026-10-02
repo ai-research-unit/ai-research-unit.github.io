@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Orbit Map — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-orbit-map"><strong>The Orbit Map</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A group $G$ acting on a set $X$ partitions it into orbits, and the orbit map sends a point to the orbit that contains it. When $X$ is a space and the action is by homeomorphisms, the orbit map becomes a continuous operator whose target carries the quotient topology, and the whole of the theory of quotients by an action is the theory of this one map. This article develops that operator: the preimage of a set of orbits is the union of the orbits it contains, so the orbit map reads the subsets of the quotient as exactly the $G$-invariant subsets of $X$; the direct image is the saturation operator, and it is the lower adjoint of the preimage in the order of the power sets. The quotient topology is then identified once: it is the finest topology on the set of orbits making the orbit map continuous, and it is the topology whose open sets are the invariant open sets of $X$.</p>
+<p>The article treats an abstract group acting by homeomorphisms. When the group carries a topology and the action is required to be continuous in both variables, the orbit map is the quotient of a topological group by a subgroup, and the extra hypotheses and consequences — the openness of the orbit map as a map of groups, the Hausdorffness of the quotient, the existence of slices — belong to <em>Topological Groups</em>, later in this Part, and are named here only where the two subjects meet. The general quotient construction is that of <em>Topological Spaces</em>, whose identification topology is used with its meaning.</p>
+<p>The operator language is the one fixed in <em>Continuous Maps as Operators</em>: a map carries the preimage operator, which is a Boolean and lattice homomorphism and defines continuity, and the direct image operator, which is its lower adjoint on the power sets. The orbit map is the first instance in which the preimage is not only a homomorphism but a <strong>bijection onto a subalgebra</strong>, the algebra of invariant sets, and the article is largely the statement and the exploitation of that fact. Nothing analytic and nothing geometric is used: no distance is chosen, and no length, angle or curve occurs.</p>
+<h2 id="the-orbit-map-of-an-action">The Orbit Map of an Action</h2>
+<h3 id="actions-and-orbits">Actions and Orbits</h3>
+<p><strong>Definition.</strong> An <strong>action</strong> of a group $G$ on a set $X$ is a map $G \times X \to X$, written $(g,x) \mapsto gx$, with $ex = x$ and $(gh)x = g(hx)$ for all $g, h \in G$ and $x \in X$. The <strong>orbit</strong> of $x$ is the set $Gx = \{gx : g \in G\}$; the <strong>stabiliser</strong> of $x$ is the subgroup $G_x = \{g : gx = x\}$; the point $x$ is <strong>fixed</strong> by $G$ when $Gx = \{x\}$, equivalently $G_x = G$. The <strong>orbit space</strong> $X/G$ is the set of orbits, and the <strong>orbit map</strong> is</p>
+<p>$$
+\pi : X \longrightarrow X/G, \qquad \pi(x) = Gx .
+$$</p>
+<p>Two points lie in the same orbit exactly when one is carried to the other by an element of $G$, and this is an equivalence relation: reflexivity is $ex = x$, symmetry is $x = g^{-1}(gx)$, transitivity is $(gh)x = g(hx)$. The orbits are the equivalence classes, so they partition $X$, and the orbit map is the quotient map of that partition.</p>
+<p><strong>Proposition.</strong> The stabilisers of two points in the same orbit are conjugate: for $y = gx$,</p>
+<p>$$
+G_{gx} = g\,G_x\,g^{-1}.
+$$</p>
+<p>Consequently the orbit is $\{gx : g \in G\}$, and the assignment $gG_x \mapsto gx$ is a bijection of the set of left cosets of the stabiliser onto the orbit.</p>
+<p><strong>Proof.</strong> $h \in G_{gx}$ iff $hgx = gx$ iff $g^{-1}hg \in G_x$ iff $h \in gG_xg^{-1}$. The second statement is the same computation read on the left cosets: $gG_x = g'G_x$ iff $g^{-1}g' \in G_x$ iff $gx = g'x$.</p>
+<p>The proposition is the set-theoretic skeleton of every orbit-space computation, and it is recorded here because the fibres of the orbit map are its orbits: $\pi^{-1}(\pi(x)) = Gx$, of cardinality $|G|/|G_x|$ when $G$ is finite.</p>
+<h3 id="the-quotient-topology">The Quotient Topology</h3>
+<p>From this point $X$ is a topological space and the action is <strong>by homeomorphisms</strong>: for every $g \in G$ the map $x \mapsto gx$ is a homeomorphism of $X$. No topology is placed on $G$.</p>
+<p><strong>Definition.</strong> The <strong>orbit topology</strong> on $X/G$ is the quotient (identification) topology of <em>Topological Spaces</em> for the surjection $\pi$: a set $U \subseteq X/G$ is open when $\pi^{-1}(U)$ is open in $X$. With this topology the orbit space is the <strong>quotient of $X$ by $G$</strong>, and the orbit map $\pi$ is the <strong>quotient map</strong>.</p>
+<p>The definition is not a choice: the quotient topology is the finest topology on $X/G$ making $\pi$ continuous, and it is the only topology with the universal property proved below.</p>
+<p><strong>Theorem.</strong> The orbit map $\pi$ is continuous and surjective, and</p>
+<p>$$
+\pi^{-1}(U) = \bigcup_{O \in U} O \quad \text{for } U \subseteq X/G,
+$$</p>
+<p>so the preimage of a set of orbits is a union of orbits. A subset $U \subseteq X/G$ is open if and only if its preimage is open in $X$, if and only if its preimage is a $G$-invariant open set of $X$.</p>
+<p><strong>Proof.</strong> Continuity is the definition of the quotient topology. For the formula, $x \in \pi^{-1}(U)$ iff $\pi(x) \in U$ iff the orbit of $x$ is a member of $U$. The set $\pi^{-1}(U)$ is a union of orbits, hence invariant: $g\pi^{-1}(U) = \pi^{-1}(U)$ for every $g$, since $g$ permutes each orbit. Conversely an invariant set $W$ satisfies $W = \pi^{-1}(\pi(W))$, so it is the preimage of a set of orbits.</p>
+<h2 id="the-orbit-map-as-an-operator">The Orbit Map as an Operator</h2>
+<h3 id="the-preimage-and-the-invariant-subsets">The Preimage and the Invariant Subsets</h3>
+<p>A subset $A \subseteq X$ is <strong>invariant</strong> under $G$, or <strong>saturated</strong>, when $gA = A$ for every $g \in G$, equivalently when $A = \pi^{-1}(\pi(A))$, equivalently when $A$ is a union of orbits. The invariant subsets form a subalgebra of the Boolean algebra $\mathcal{P}(X)$: they are closed under complement, finite and arbitrary unions and intersections, and they contain $\emptyset$ and $X$. The algebra is written $\mathcal{P}(X)^{G}$.</p>
+<p><strong>Theorem.</strong> The preimage operator of the orbit map,</p>
+<p>$$
+\pi^{-1} : \mathcal{P}(X/G) \longrightarrow \mathcal{P}(X)^{G},
+$$</p>
+<p>is a bijection onto the invariant subalgebra, and it is an isomorphism of Boolean algebras and of complete lattices: it preserves $\emptyset$, $X/G$, arbitrary unions, arbitrary intersections and complements.</p>
+<p><strong>Proof.</strong> The map is well defined by the theorem above, and it lands in the invariant sets. It is injective because $\pi$ is surjective: $\pi^{-1}(U) = \pi^{-1}(V)$ implies $U = \pi(\pi^{-1}(U)) = \pi(\pi^{-1}(V)) = V$. It is surjective onto the invariant sets because an invariant $W$ equals $\pi^{-1}(\pi(W))$. It preserves the Boolean operations because the preimage does, by <em>Continuous Maps as Operators</em>.</p>
+<p>The theorem is the precise sense in which the subsets of the orbit space are the invariant subsets of $X$: the preimage identifies the two algebras, and the orbit map gives an isomorphism of the algebra of the quotient onto the algebra of invariants, read backwards. The inverse is the direct image.</p>
+<h3 id="saturation-and-the-direct-image">Saturation and the Direct Image</h3>
+<p><strong>Definition.</strong> The <strong>saturation</strong> of a subset $A \subseteq X$ is</p>
+<p>$$
+\operatorname{sat}(A) = \pi^{-1}(\pi(A)) = \bigcup_{x \in A} Gx = \bigcup_{g \in G} gA ,
+$$</p>
+<p>the smallest invariant set containing $A$. The <strong>direct image</strong> of the orbit map is the map $\pi_{*} : \mathcal{P}(X) \to \mathcal{P}(X/G)$ sending $A$ to the set of orbits that meet $A$.</p>
+<p><strong>Proposition.</strong> The saturation is a closure operator on the power set: it is extensive, monotone and idempotent, and it preserves arbitrary unions. It is the composite $\pi^{-1}\pi_{*}$, and its image is the invariant subalgebra.</p>
+<p><strong>Proof.</strong> $A \subseteq \operatorname{sat}(A)$ because $x \in Gx$; monotonicity and union preservation are the corresponding properties of the preimage and the direct image; idempotence is $\pi^{-1}\pi_{*}\pi^{-1}\pi_{*} = \pi^{-1}\pi_{*} $, which uses $\pi_{*}\pi^{-1} = \mathrm{id}$ on the quotient and $\pi^{-1}\pi_{*} = \mathrm{id}$ on the invariants. The image is the invariant subalgebra by the previous theorem.</p>
+<p>The saturation is the operator that sends a set to the union of the orbits it meets. It is not the closure of a topology; it is the closure operator of the partition into orbits, and the two are compared in <em>Continuous Maps and the Orbit Map</em>, where a group action and a topology on the same space are read together.</p>
+<h3 id="the-adjoint-pair">The Adjoint Pair</h3>
+<p><strong>Theorem.</strong> The direct image and the preimage of the orbit map are adjoint,</p>
+<p>$$
+\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq U \iff A \subseteq \pi^{-1}(U),
+$$</p>
+<p>and the preimage is a bijection onto the invariants, so the unit and the counit of the adjunction are the saturation and the identity:</p>
+<p>$$
+\pi^{-1}\pi_{*}(A) = \operatorname{sat}(A), \qquad \pi_{*}\pi^{-1}(U) = U .
+$$</p>
+<p><strong>Proof.</strong> The adjunction is the Galois connection of <em>Continuous Maps as Operators</em> for the particular map $\pi$. The two composites are the definitions: $\pi^{-1}\pi_{*}(A)$ is the union of the orbits meeting $A$, and $\pi_{*}\pi^{-1}(U)$ is the set of orbits contained in the union of the orbits of $U$, which is $U$.</p>
+<p>The adjunction is a <strong>reflection</strong>: the preimage is fully faithful, the counit is an isomorphism, and the invariant subalgebra is a reflective subcategory of the power set, with the saturation the reflection. This is the operator content of the orbit map, and it is what makes the quotient computable: a statement about subsets of $X/G$ is a statement about invariant subsets of $X$.</p>
+<h2 id="the-universal-property">The Universal Property</h2>
+<h3 id="invariant-maps">Invariant Maps</h3>
+<p><strong>Definition.</strong> A map $f : X \to Y$ is <strong>$G$-invariant</strong> when $f(gx) = f(x)$ for all $g \in G$ and $x \in X$, equivalently when $f$ is constant on each orbit, equivalently when $f$ factors through $\pi$ as a map of sets.</p>
+<p><strong>Theorem (universal property of the orbit map).</strong> Let $f : X \to Y$ be a continuous $G$-invariant map. Then there is exactly one map $\bar f : X/G \to Y$ with $f = \bar f \circ \pi$, and $\bar f$ is continuous when $X/G$ carries the orbit topology.</p>
+<p><strong>Proof.</strong> For existence, $\bar f(Gx) = f(x)$ is well defined because $f$ is constant on the orbit. For uniqueness, $\pi$ is surjective. For continuity, compute the preimage: $\pi^{-1}(\bar f^{-1}(V)) = f^{-1}(V)$ is open for open $V$, and a set of orbits is open exactly when its preimage is open.</p>
+<p>The theorem characterises the orbit topology: any topology on $X/G$ for which every continuous invariant map out of $X$ factors continuously through $\pi$ must contain the orbit topology, and the orbit topology is the finest such. The orbit map is therefore the <strong>coequaliser</strong> of the maps $(g, \cdot)$ and the projection, in the category of topological spaces, and it is initial among the quotients of $X$ that identify each orbit to a point.</p>
+<p><strong>Corollary.</strong> The continuous functions on the orbit space are exactly the continuous invariant functions on $X$, and the correspondence $f \leftrightarrow \bar f$ is a bijection.</p>
+<p><strong>Proof.</strong> Every continuous $\bar f$ gives a continuous invariant $f = \bar f\pi$; every continuous invariant $f$ gives a unique continuous $\bar f$ by the theorem; the two assignments are inverse because $\pi$ is surjective.</p>
+<h3 id="the-identification-of-the-quotient-topology">The Identification of the Quotient Topology</h3>
+<p><strong>Proposition.</strong> The orbit topology is the unique topology on $X/G$ with the universal property of the theorem. It is also the <strong>final</strong> topology for the single map $\pi$: the finest topology making $\pi$ continuous.</p>
+<p><strong>Proof.</strong> Let $\sigma$ be a topology on $X/G$ with the universal property. The identity map from $(X/G,\sigma)$ to $(X/G,\text{orbit})$ is continuous: its composite with $\pi$ is $\pi$, which is continuous for $\sigma$ by definition, so the universal property applies to $\sigma$ with the target the orbit space. Symmetrically the identity in the other direction is continuous, so the two topologies agree. The final topology is the orbit topology by the previous subsection.</p>
+<p>The identification is worth stating because it is what a reader uses: the orbit topology is not an extra datum, it is forced by the requirement that the orbit map be continuous and that no unnecessary open sets be added.</p>
+<h2 id="properties-of-the-orbit-map">Properties of the Orbit Map</h2>
+<h3 id="openness-closedness-and-the-fibres">Openness, Closedness and the Fibres</h3>
+<p><strong>Theorem.</strong> If the action is by homeomorphisms, the orbit map is <strong>open</strong>: for open $A \subseteq X$, the set $\pi(A)$ is open, since</p>
+<p>$$
+\pi^{-1}(\pi(A)) = \bigcup_{g \in G} gA
+$$</p>
+<p>is a union of open sets. The orbit map is <strong>closed</strong> when the action is by homeomorphisms and $G$ is finite, since then $\pi^{-1}(\pi(F)) = \bigcup_{g \in G} gF$ is a finite union of closed sets; for an infinite $G$ it need not be closed.</p>
+<p><strong>Proof.</strong> The invariance formula is the definition of the saturation, and $gA$ is open for each $g$ because $g$ is a homeomorphism. The closed statement is the same with $F$ closed and the union finite.</p>
+<p>The fibres of the orbit map are the orbits, and the map is injective on the fixed set: if $x$ is fixed then $\pi^{-1}(\pi(x)) = \{x\}$. In general the restriction</p>
+<p>$$
+\pi|_{X^{G}} : X^{G} \longrightarrow \pi(X^{G})
+$$</p>
+<p>is a homeomorphism onto its image, where $X^{G} = \{x : Gx = \{x\}\}$ is the fixed set.</p>
+<p><strong>Proposition.</strong> The orbit map is a homeomorphism exactly when the action is trivial; it is injective exactly when every orbit is a singleton, that is, exactly when $X = X^{G}$.</p>
+<p><strong>Proof.</strong> The orbit map is injective precisely when distinct points lie in distinct orbits, which is the same as every orbit being a singleton. A continuous open bijection is a homeomorphism.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (a translation action).</strong> Let $G = \mathbb{Z}$ act on $\mathbb{R}$ by $n \cdot x = x + n$. The orbits are the cosets of $\mathbb{Z}$, the orbit space is the circle, and the orbit map is the standard quotient $\mathbb{R} \to \mathbb{R}/\mathbb{Z}$. The invariant open sets of $\mathbb{R}$ are the unions of cosets, and they are exactly the preimages of the open sets of the circle; the saturation of an open interval is the union of the cosets it meets.</p>
+<p><strong>Example (the antipodal action).</strong> Let $G = \mathbb{Z}/2$ act on the sphere $S^{n}$ by $x \mapsto -x$. The action is free, every orbit has two points, and the orbit space is real projective space $\mathbb{RP}^{n}$. The orbit map is open and closed, since $G$ is finite, and the invariant subsets of $S^{n}$ are those closed under the antipodal pairing.</p>
+<p><strong>Example (a trivial action on a nontrivial space).</strong> Let $G$ act on a space $X$ by $gx = x$. Every orbit is a singleton, $\pi$ is a homeomorphism, and the invariant subsets are all subsets; the universal property degenerates to the statement that every continuous map is invariant.</p>
+<p><strong>Example (a free action of a finite group).</strong> Let $G = \mathbb{Z}/3$ act on the circle $S^{1}$ by a homeomorphism of order three with no fixed points, for instance by the map that carries $z$ to $\omega z$ with $\omega = e^{2\pi i/3}$ on the unit circle. The orbit map is a three-sheeted covering and the quotient is again a circle. The action is free, so the fibres have three points, and $\pi$ is open and closed.</p>
+<p><strong>Remark.</strong> The orbit space of an action of a topological group on a Hausdorff space is not automatically Hausdorff, and the failure for the group $\mathbb{Z}/2$ is the subject of <em>Spaces with an Involution and the Orbit Space</em>, where the exact condition is identified. For an abstract group acting by homeomorphisms the general criterion is the closedness of the orbit equivalence relation in $X \times X$, used there in the special case of an involution.</p>
+<h2 id="summary">Summary</h2>
+<p>Let a group $G$ act on a topological space $X$ by homeomorphisms. The orbits partition $X$, the orbit map $\pi$ sends a point to its orbit, and the orbit space $X/G$ carries the quotient topology: a set of orbits is open exactly when its preimage, a union of orbits, is open in $X$. The orbit map is continuous, surjective and open; its fibres are the orbits; it is closed when $G$ is finite and need not be when $G$ is infinite; and it is a homeomorphism exactly when the action is trivial. As an operator the orbit map has a preimage that is a bijection onto the Boolean algebra of invariant subsets of $X$ and preserves all the Boolean and lattice operations, and a direct image that is the saturation operator and the lower adjoint of the preimage in a Galois connection whose unit is the saturation and whose counit is the identity. The universal property identifies the quotient topology uniquely: every continuous map out of $X$ that is constant on the orbits factors uniquely through a continuous map on $X/G$. The continuous functions on the quotient are exactly the continuous invariant functions on $X$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G$</td>
+<td>A group, acting on a set or space</td>
+</tr>
+<tr>
+<td>$X$, $Y$</td>
+<td>Topological spaces; $X$ carries the action</td>
+</tr>
+<tr>
+<td>$Gx$, $G_x$</td>
+<td>The orbit of $x$, and its stabiliser</td>
+</tr>
+<tr>
+<td>$X/G$, $\pi$</td>
+<td>Orbit space, and the orbit map $\pi(x) = Gx$</td>
+</tr>
+<tr>
+<td>orbit topology</td>
+<td>$U \subseteq X/G$ open iff $\pi^{-1}(U)$ open; the quotient topology</td>
+</tr>
+<tr>
+<td>$X^{G}$</td>
+<td>The fixed set $\{x : Gx = \{x\}\}$</td>
+</tr>
+<tr>
+<td>invariant, saturated set</td>
+<td>A union of orbits; $gA = A$; $A = \pi^{-1}(\pi(A))$</td>
+</tr>
+<tr>
+<td>$\mathcal{P}(X)^{G}$</td>
+<td>The Boolean subalgebra of invariant subsets</td>
+</tr>
+<tr>
+<td>$\pi^{-1}$</td>
+<td>Preimage operator: a Boolean and lattice isomorphism onto $\mathcal{P}(X)^{G}$</td>
+</tr>
+<tr>
+<td>$\pi_{*}$</td>
+<td>Direct image operator: $A \mapsto$ the set of orbits meeting $A$</td>
+</tr>
+<tr>
+<td>$\operatorname{sat}(A)$</td>
+<td>Saturation $\pi^{-1}\pi_{*}(A) = \bigcup_{g} gA$, a closure operator</td>
+</tr>
+<tr>
+<td>$\pi_{*} \dashv \pi^{-1}$</td>
+<td>The adjunction; $\pi^{-1}\pi_{*} = \operatorname{sat}$, $\pi_{*}\pi^{-1} = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$G$-invariant map</td>
+<td>A map constant on orbits; $f = \bar f \circ \pi$</td>
+</tr>
+<tr>
+<td>$\bar f$</td>
+<td>The induced map on the orbit space, unique and continuous</td>
+</tr>
+<tr>
+<td>$\mathbb{R}/\mathbb{Z}$, $S^{1}$, $\mathbb{RP}^{n}$</td>
+<td>The standard orbit spaces of the examples</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James R. Munkres, <em>Topology</em> (Prentice Hall, 2nd ed. 2000), for quotient maps, the identification topology and the universal property.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for the identification topology and the quotient by a group action.</li>
+<li>John L. Kelley, <em>General Topology</em> (Van Nostrand, 1955; reprinted Springer, 1975), for the quotient map as a coequaliser and the invariance of the saturation.</li>
+<li>Saunders Mac Lane, <em>Categories for the Working Mathematician</em>, 2nd ed. (Springer, 1998), for reflective subcategories, the unit and the counit of an adjunction.</li>
+<li>Ryszard Engelking, <em>General Topology</em> (Heldermann, revised ed. 1989), for the quotient topology and its preservation properties.</li>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the orbit space of a group action and the slice theorems that a topological group supplies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

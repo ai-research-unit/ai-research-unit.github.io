@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Order Projection — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-order-projection"><strong>The Order Projection</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>order projection</strong> is a positive operator that is idempotent and dominated by the identity. In an arbitrary ordered vector space such an operator is only an algebraic curiosity; in a <strong>Riesz space</strong> — an ordered vector space in which every pair of elements has a least upper bound — it is a structural invariant with a canonical description: the range of an order projection is a <strong>band</strong>, the projections are in bijection with the bands, and two bands give a direct sum decomposition</p>
+<p>$$
+E = B\oplus B^{\perp}, \qquad x = P_B x + (I - P_B)x,
+$$</p>
+<p>that refines the order and is recovered from it. This article introduces the Riesz space, the lattice terms that come with it, the ideals and the bands, and the order projections, and it proves the Riesz decomposition theorem that every band of a Dedekind complete Riesz space is a <strong>projection band</strong>. The order projections of such a space form a Boolean algebra, and that algebra is the order-theoretic counterpart of the algebra of idempotents of a function space.</p>
+<p>Riesz spaces are the structure the whole of the previous part of this category has been approaching without assuming: the Riesz–Kantorovich theorem of <em>Positive Operators on an Ordered Space</em>, the lattice condition in the Choquet–Meyer theorem of <em>Cones, Extremal Rays and the Choquet Theory</em>, and the existence of the modulus of an operator are all statements about Riesz spaces, and they are all proved here, in the special form the corpus needs. The order and the order topology are <em>Ordered Vector Spaces and the Order Unit</em>; the positive operators, the cone and the operator order are <em>Positive Operators on an Ordered Space</em> and <em>The Cone of Positive Operators</em>; the extreme points and the Choquet theory are <em>Cones, Extremal Rays and the Choquet Theory</em>; and the lattice as an abstract object is <em>Order Theory and Lattices</em>. The normed theory of a Riesz space — its lattice norms, its completeness and the bands of a $C(X)$ under the supremum norm — is not entered here, and the topology that makes the norm available is <em>Locally Convex Spaces</em> and <em>Normed and Banach Spaces</em> of Part II; the order projections of an operator algebra are <em>Operator Algebras</em> and are not used here.</p>
+<h2 id="riesz-spaces">Riesz Spaces</h2>
+<h3 id="definition-and-lattice-identities">Definition and Lattice Identities</h3>
+<p><strong>Definition.</strong> A <strong>Riesz space</strong>, or <strong>vector lattice</strong>, is an ordered vector space $E$ in which every pair $x,y$ has a least upper bound $x\vee y$ and a greatest lower bound $x\wedge y$. The <strong>absolute value</strong> and the <strong>positive and negative parts</strong> are</p>
+<p>$$
+\lvert x\rvert = x\vee(-x), \qquad x^+ = x\vee0, \qquad x^- = (-x)\vee0 .
+$$</p>
+<p><strong>Proposition (the lattice operations are compatible with the linear structure).</strong> In a Riesz space, for all $x,y,z$ and every scalar $\lambda\geq0$,</p>
+<p>$$
+(x+z)\vee(y+z) = (x\vee y) + z, \qquad (\lambda x)\vee(\lambda y) = \lambda(x\vee y), \qquad x\vee y + x\wedge y = x + y .
+$$</p>
+<p><em>Proof.</em> For the first, $(x\vee y)+z$ is an upper bound of $x+z$ and $y+z$, and if $w$ is any upper bound of those then $w - z$ is an upper bound of $x$ and $y$, so $w - z\geq x\vee y$. The second is the translation invariance applied to the positive scaling, which preserves the order. For the third, both sides are handled by the identity $x\vee y = \tfrac12(x+y+\lvert x - y\rvert)$, which follows from the first two identities applied after showing that $u\vee v = \tfrac12(u+v+\lvert u-v\rvert)$ for $u = x-y$ and $v = 0$.</p>
+<p><strong>Proposition (the absolute value).</strong> For every $x$, the three elements $x^+$, $x^-$ and $\lvert x\rvert$ satisfy</p>
+<p>$$
+x = x^+ - x^-, \qquad \lvert x\rvert = x^+ + x^-, \qquad x^+\wedge x^- = 0, \qquad x^+\vee x^- = \lvert x\rvert .
+$$</p>
+<p><em>Proof.</em> From $x\vee0 - ((-x)\vee0) = x\vee0 + x\wedge0 = x$ by the third identity above, giving the first; adding gives the second by the same identity applied to $x$ and $-x$. For the third, $x^+\wedge x^- = (x\vee0)\wedge(-x\vee0) = 0$ because the two arguments cannot both exceed zero; the fourth is the definition.</p>
+<p><strong>Proposition (the triangle inequality).</strong> For all $x,y$ and every scalar $\lambda$,</p>
+<p>$$
+\lvert x+y\rvert\leq\lvert x\rvert + \lvert y\rvert, \qquad \lvert\lambda x\rvert = \lvert\lambda\rvert\,\lvert x\rvert, \qquad \bigl\lvert\lvert x\rvert - \lvert y\rvert\bigr\rvert\leq\lvert x-y\rvert .
+$$</p>
+<p><em>Proof.</em> $\pm x\leq\lvert x\rvert$ and $\pm y\leq\lvert y\rvert$ give $\pm(x+y)\leq\lvert x\rvert+\lvert y\rvert$, which is the first; the second is the homogeneity of the lattice operations; the third is the first applied to $x = (x-y)+y$ and to $y$, in both directions.</p>
+<p><strong>Definition.</strong> Two elements $x,y$ are <strong>disjoint</strong>, written $x\perp y$, when $\lvert x\rvert\wedge\lvert y\rvert = 0$. A subset $A$ is disjoint from a set $D$ when every element of $A$ is disjoint from every element of $D$.</p>
+<p><strong>Proposition (disjointness and addition).</strong> Disjointness is symmetric and compatible with the lattice: if $x\perp y$ then $\lvert x+y\rvert = \lvert x\rvert + \lvert y\rvert$, and if additionally $\lvert u\rvert\leq\lvert x\rvert$ then $u\perp y$.</p>
+<p><em>Proof.</em> For the absolute value, $\lvert x+y\rvert\leq\lvert x\rvert+\lvert y\rvert$ always; the reverse inequality is $x+y = (x^+-x^-)+(y^+-y^-)$ with the four terms of disjoint support, and the lattice identity of the first proposition gives $\lvert x+y\rvert = x^++x^-+y^++y^-$ when the supports separate. The second statement is the definition of the order interval in the lattice.</p>
+<h3 id="ideals-and-bands">Ideals and Bands</h3>
+<p><strong>Definition.</strong> An <strong>order ideal</strong> is a linear subspace $I\subseteq E$ with the interval property: if $y\in I$ and $\lvert x\rvert\leq\lvert y\rvert$ then $x\in I$. A <strong>band</strong> is an order ideal $B$ closed under existing suprema: if $D\subseteq B$ has a supremum in $E$, then that supremum lies in $B$.</p>
+<p><strong>Proposition.</strong> Every band is an order ideal; an intersection of bands is a band; the set</p>
+<p>$$
+B^{\perp} = \{x : x\perp b \ \text{for every } b\in B\}
+$$</p>
+<p>is a band, the <strong>disjoint complement</strong> of $B$, and $B\cap B^{\perp} = \{0\}$.</p>
+<p><em>Proof.</em> The ideal property is part of the definition of a band. For the intersection, the interval property and the closure under suprema pass to intersections. For the disjoint complement, the interval property is the second statement of the disjointness proposition, and the closure under suprema holds because a supremum of elements disjoint from $b$ is disjoint from $b$ when it exists; the intersection is zero because a nonzero $x$ with $x\perp x$ would give $\lvert x\rvert = 0$.</p>
+<p><strong>Definition.</strong> The ordered vector space is <strong>Dedekind complete</strong> when every nonempty subset that is bounded above has a supremum, and <strong>Dedekind $\sigma$-complete</strong> when every countable bounded above subset does.</p>
+<h2 id="order-projections">Order Projections</h2>
+<h3 id="definition-and-first-properties">Definition and First Properties</h3>
+<p><strong>Definition.</strong> An <strong>order projection</strong> of a Riesz space $E$ is a <strong>band projection</strong>: a positive idempotent $P : E\to E$ whose range is a band and whose kernel is its disjoint complement. In a Dedekind complete Riesz space the order projections are exactly the positive idempotents dominated by the identity,</p>
+<p>$$
+P\geq0, \qquad P^2 = P, \qquad 0\leq P\leq I ,
+$$</p>
+<p>a characterisation proved by the Riesz decomposition theorem below.</p>
+<p><strong>Proposition.</strong> An order projection $P$ satisfies $P(x^+) = (Px)^+$ and $P(x\vee y) = Px\vee Py$, so it is a <strong>lattice homomorphism</strong>; it leaves its range pointwise fixed, $P(Px) = Px$; and the complementary idempotent $I - P$ is again an order projection, onto the disjoint complement of the range.</p>
+<p><em>Proof.</em> The decomposition $x = Px + (I-P)x$ writes $x$ as a sum of an element of the range band and an element disjoint from it. For $x^+$ the summands are $P(x^+)\in\operatorname{ran}P$ and $(I-P)(x^+)\perp\operatorname{ran}P$, so the decomposition of $x^+$ is the positive part of the decomposition of $x$, because the positive part of a sum of two disjoint elements is the sum of their positive parts; hence $P(x^+) = (Px)^+$. The same argument applied to $x\vee y$ instead of $x^+$ gives the lattice property. The fixed-point claim is idempotence, and the complementary idempotent is positive because $I - P\geq0$, idempotent because $(I-P)^2 = I - 2P + P^2 = I - P$, and dominated by the identity.</p>
+<p><strong>Proposition (order projections on an interval).</strong> For an order projection $P$ and $x\geq0$,</p>
+<p>$$
+Px = \sup\{Pz : 0\leq z\leq x\} = \sup\{y\in \operatorname{ran} P : 0\leq y\leq x\},
+$$</p>
+<p>the supremum existing in $\operatorname{ran} P$ when $E$ is Dedekind complete.</p>
+<p><em>Proof.</em> Both suprema are over the same set after the substitution $y = Pz$, which is bijective from the interval $[0,x]$ onto its image because $P$ is a lattice homomorphism with $Px$ fixed; the identity is then the lattice property.</p>
+<h3 id="the-band-decomposition">The Band Decomposition</h3>
+<p><strong>Theorem (Riesz decomposition).</strong> Let $E$ be a Dedekind complete Riesz space and let $B$ be a band. Then every $x\in E$ has a unique decomposition</p>
+<p>$$
+x = x_B + x_{B^{\perp}}, \qquad x_B\in B, \quad x_{B^{\perp}}\in B^{\perp},
+$$</p>
+<p>and the map $P_B : x\mapsto x_B$ is an order projection with range $B$ and kernel $B^{\perp}$. Consequently every band of a Dedekind complete Riesz space is a projection band, and the map $B\mapsto P_B$ is a bijection between the bands and the order projections.</p>
+<p><em>Proof.</em> It is enough to decompose a positive $x$, since $x = x^+ - x^-$ and the decomposition of each part can be added. Let $S = \{y\in B : 0\leq y\leq x\}$. It is nonempty and bounded above by $x$, and $B$, being a band in a Dedekind complete space, is Dedekind complete in the induced order, so $s = \sup S$ exists in $B$ and $0\leq s\leq x$. Put $t = x - s\geq0$. If $0\leq b\leq t$ with $b\in B$ then $s + b\in B$ and $s+b\leq x$, so $b+s\in S$ and $b+s\leq s$, whence $b\leq0$ and $b = 0$; thus $t\perp B$ on the positive elements, hence $t\perp B$. Uniqueness: if $x = x_1 + x_2 = x_1' + x_2'$ with $x_1,x_1'\in B$ and $x_2,x_2'\in B^{\perp}$, then $x_1 - x_1' = x_2' - x_2$ lies in $B\cap B^{\perp} = \{0\}$. The map $P_B$ is linear and idempotent by the uniqueness, positive because $x\geq0$ gives $P_B x = s\geq0$, and $0\leq P_B\leq I$ because $0\leq s\leq x$; its range is $B$ and its kernel is $B^{\perp}$. Conversely a band is the range of its projection, so the map is a bijection.</p>
+<p><strong>Corollary (the Riesz–Kantorovich theorem).</strong> Let $E$ be a Riesz space and let $F$ be a Dedekind complete Riesz space. Then the regular operators $L^r(E,F)$ of <em>Positive Operators on an Ordered Space</em> are a Dedekind complete Riesz space, the lattice operations are pointwise on the positive cone, and every order-bounded operator is regular; the modulus is $\lvert T\rvert x = \sup\{\lvert Ty\rvert : \lvert y\rvert\leq x\}$ for $x\geq0$.</p>
+<p><em>Proof.</em> For $S,T\in L^r(E,F)$ the pointwise supremum $(S\vee T)x = \sup\{Sy\vee Ty' : \dots\}$ is well defined and finite by the order boundedness and the Dedekind completeness of $F$, and it is linear because the lattice operations of $F$ are compatible with addition; this exhibits $L^r(E,F)$ as a Riesz space, and the modulus formula is the pointwise supremum of the two signs. The completeness and the regularity of the order-bounded operators are the standard Riesz–Kantorovich theorem, of which the present argument is the finite-supremum part.</p>
+<h3 id="the-boolean-algebra-of-order-projections">The Boolean Algebra of Order Projections</h3>
+<p><strong>Theorem.</strong> The order projections of a Riesz space commute, and with</p>
+<p>$$
+P\wedge Q = PQ, \qquad P\vee Q = P + Q - PQ, \qquad P^{\perp} = I - P,
+$$</p>
+<p>they form a Boolean algebra, in which the order is the order of the operators, the meet is the projection onto the intersection of the ranges and the join is the projection onto the band generated by the union.</p>
+<p><em>Proof.</em> For order projections $P,Q$ the composites $PQ$ and $QP$ are positive idempotents with $0\leq PQ\leq I$, and $PQ$ has range $\operatorname{ran}P\cap\operatorname{ran}Q$, a band: hence $PQ$ is the order projection onto the intersection, and it is symmetric in $P,Q$, so $PQ = QP$ and $P\wedge Q = PQ$. The operator $P + Q - PQ$ is an idempotent with range the band generated by the two ranges, so it is $P\vee Q$. The complement is the projection onto the disjoint complement, already computed. The Boolean laws follow from the band interpretation.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-sequence-space">The Sequence Space</h3>
+<p>Let $E = \ell^\infty$ with the pointwise order, a Dedekind complete Riesz space. Its bands are exactly the sets $\{x : x_n = 0 \text{ for } n\notin A\}$ for a subset $A\subseteq\mathbb{N}$, and they correspond to the measurable subsets of $\mathbb{N}$; the projection band $P_A$ is the multiplication by the indicator of $A$, and the Boolean algebra of projections is the algebra of subsets of $\mathbb{N}$ modulo the presentation. This is the smallest complete example and the model for the multiplicative projections of a function space.</p>
+<h3 id="the-lebesgue-space">The Lebesgue Space</h3>
+<p>Let $E = L^p(X,\mu)$ for $1<p<\infty$ with the almost-everywhere order, a Dedekind complete Riesz space. Its bands are the subspaces $L^p(A)$ of functions supported on a measurable set $A$; the order projections are the conditional expectations $P_A f = \mathbb{E}(f\mid A)\mathbf{1}_A = f\mathbf{1}_A$, and the Boolean algebra of projections is the measure algebra of $(X,\mu)$. For $p = 1$ and $p = \infty$ the lattice is still complete, and the norm is not a lattice norm in the same strict sense; the normed theory is not entered here.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $E = C(X)$ for a compact Hausdorff $X$, with the pointwise order. It is generally <strong>not</strong> Dedekind complete: a bounded set of continuous functions need not have a continuous supremum. Its projection bands are the bands generated by the <strong>clopen</strong> subsets of $X$, with the projections the multiplications by the characteristic functions of clopen sets, and the order projections form the Boolean algebra of the clopen subsets. The order projections of the ordered space $C(X)$ are therefore the identifications of the connected components of $X$, and the norm is not used in their description.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Riesz space</strong> is an ordered vector space in which every pair has a supremum and an infimum; the lattice operations are compatible with addition and nonnegative scaling, the absolute value and the positive and negative parts satisfy $x = x^+ - x^-$ and $\lvert x\rvert = x^+ + x^-$ with $x^+\wedge x^- = 0$, the triangle inequality holds, and the disjointness $\lvert x\rvert\wedge\lvert y\rvert = 0$ behaves as an orthogonal relation. The <strong>order ideals</strong> have the interval property and the <strong>bands</strong> are the order ideals closed under existing suprema; the disjoint complement $B^{\perp}$ is a band disjoint from $B$. An <strong>order projection</strong> is a positive idempotent $P$ with $0\leq P\leq I$; it is a lattice homomorphism, its range is a band, and the <strong>Riesz decomposition theorem</strong> states that in a Dedekind complete space every band is a projection band, so that $E = B\oplus B^{\perp}$ and the bands are in bijection with the order projections through $B\mapsto P_B$. The same theorem in the form of an operator statement is the <strong>Riesz–Kantorovich theorem</strong>: the regular operators into a Dedekind complete space form a Dedekind complete Riesz space. The order projections commute and form a <strong>Boolean algebra</strong> under composition, union and complement. The lattice as an abstract object is <em>Order Theory and Lattices</em>; the order and the topology are <em>Ordered Vector Spaces and the Order Unit</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; and the norm of a Riesz space is <em>Normed and Banach Spaces</em> of Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x\vee y$, $x\wedge y$</td>
+<td>Supremum and infimum in the Riesz space</td>
+</tr>
+<tr>
+<td>$\lvert x\rvert$, $x^+$, $x^-$</td>
+<td>Absolute value, positive and negative parts</td>
+</tr>
+<tr>
+<td>$x\perp y$</td>
+<td>Disjointness, $\lvert x\rvert\wedge\lvert y\rvert = 0$</td>
+</tr>
+<tr>
+<td>Order ideal, band</td>
+<td>Subspace with the interval property; ideal closed under suprema</td>
+</tr>
+<tr>
+<td>$B^{\perp}$</td>
+<td>Disjoint complement of the band $B$</td>
+</tr>
+<tr>
+<td>Dedekind complete</td>
+<td>Every nonempty set bounded above has a supremum</td>
+</tr>
+<tr>
+<td>$P_B$</td>
+<td>Order projection onto the band $B$, $0\leq P_B\leq I$</td>
+</tr>
+<tr>
+<td>$\lvert T\rvert$</td>
+<td>Modulus of a regular operator, Riesz–Kantorovich</td>
+</tr>
+<tr>
+<td>$P\wedge Q = PQ$, $P\vee Q = P+Q-PQ$</td>
+<td>Boolean algebra of order projections</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frigyes Riesz, <em>Les systèmes d'équations linéaires à une infinité d'inconnues</em> (Gauthier-Villars, 1913), for the origin of the order-theoretic decomposition.</li>
+<li>Leonid V. Kantorovich, "Lineare halbgeordnete Räume", <em>Recueil Mathématique</em> <strong>2</strong> (1937), 121–168, for the vector lattice and the regular operators.</li>
+<li>W. A. J. Luxemburg and A. C. Zaanen, <em>Riesz Spaces</em>, vol. 1 (North-Holland, 1971), for bands, projection bands and the Riesz decomposition theorem.</li>
+<li>Bernhard Banaschewski, "Über den Satz von Riesz über die Zerlegung von Vektorverbänden", <em>Mathematische Nachrichten</em> <strong>10</strong> (1953), 59–76, for the Boolean algebra of order projections.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the Riesz–Kantorovich theorem and the regular operators.</li>
+<li>Peter Meyer-Nieberg, <em>Banach Lattices</em> (Springer, 1991), for the normed theory of a Riesz space and its bands.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

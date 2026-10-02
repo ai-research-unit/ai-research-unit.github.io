@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Translation Operator on a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-translation-operator-on-a-symmetry-group"><strong>The Translation Operator on a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A symmetry group acts on its space and on itself, and the <strong>translation operator</strong> by $a$ is the operator of the action of $a$ on the group: on a function on the group it is</p>
+<p>$$
+(T_a f)(x) = f(a^{-1}x),
+$$</p>
+<p>so that $T_a T_b = T_{ab}$ and the translations are a representation of $G$, the left regular representation restricted to the acting side. The translation operators are the elementary operators from which the left multiplications of <em>Operators on a Symmetry Group</em> are made, and their two properties are what the present article isolates: <strong>invariance</strong> — the translations commute with the right translations, so the algebra they generate is the natural invariant operator algebra of the group — and <strong>ergodicity</strong>, which is a property of the translation flow only after a quotient by a lattice has been taken, and which is then a genuine geometric property of the lattice.</p>
+<p>The lattice enters because a symmetry group of a space carries discrete subgroups, and the quotient of the group by a lattice is a finite-volume locally symmetric space whose geometry is the orbit structure of the translations. The translation flow on the quotient is the geodesic or the horocycle flow of that space, and its ergodicity — the absence of invariant sets of intermediate measure — is a theorem of Part III, cited and not proved here: the ergodic theory of group actions is <em>Ergodic Theory of Group Actions</em> and <em>Homogeneous Dynamics</em>, the equidistribution and the classification of the orbit closures of the unipotent flows are <em>Equidistribution</em> and <em>Ratner's Theorems</em>, and the measure is the Haar measure of <em>Locally Compact Groups and Haar Measure</em>. The left and right regular representation is <em>The Left and Right Regular Representation</em>, Part III; the lattices and the finite-volume quotients are <em>Transformation Groups</em> and <em>Riemannian Symmetric Spaces and the Involution</em>; and the locally symmetric space the lattice defines is <em>Riemannian Symmetric Spaces and the Involution</em>, "Locally Symmetric Spaces and Holonomy". None of it is re-derived.</p>
+<p>The article has five sections: the translation operators and their invariance; the lattice and the quotient; the ergodicity of the translation flow; the examples; and the boundary with the analysis of Part III. Throughout, $G$ is a locally compact group, $dg$ a left Haar measure, $\Gamma \leq G$ a lattice, and $T_a$ the translation operator by $a$.</p>
+<h2 id="the-translation-operators-and-their-invariance">The Translation Operators and Their Invariance</h2>
+<h3 id="the-operators">The Operators</h3>
+<p><strong>Definition.</strong> The <strong>translation operator</strong> by $a \in G$ acts on the functions on $G$ by</p>
+<p>$$
+(T_a f)(x) = f(a^{-1}x),
+$$</p>
+<p>and on the functions on a quotient $G/\Gamma$ by $(T_a f)(x\Gamma) = f(a^{-1}x\Gamma)$; it is the operator of left translation, and $a \mapsto T_a$ is the left regular representation of $G$ on the function space. The <strong>right translation</strong> $S_b f(x) = f(xb)$ is the corresponding operator of the right action.</p>
+<p><strong>Proposition.</strong> The translation operators form a representation, $T_a T_b = T_{ab}$, and the right translations form another, $S_a S_b = S_{ab}$; the two commute, $T_a S_b = S_b T_a$, and the inverse relations $T_a^{-1} = T_{a^{-1}}$, $S_b^{-1} = S_{b^{-1}}$ hold. On $L^2(G)$ the operators $T_a$, $S_b$ are isometries for the left and right Haar measures, and they are unitary for a bi-invariant measure when $G$ is unimodular.</p>
+<p><strong>Proof.</strong> The composition and inverse rules are immediate; the commutation is associativity, $T_a S_b f(x) = f(a^{-1}xb) = S_b T_a f(x)$; the isometry statements are the invariance of the Haar measure under left and right translation, and the unitary case is the definition of unimodularity.</p>
+<h3 id="invariance-and-the-commutant">Invariance and the Commutant</h3>
+<p><strong>Definition.</strong> An operator on the functions on $G$ is <strong>translation-invariant</strong> (or <strong>right-invariant</strong> in the usual convention) when it commutes with every left translation, $A T_a = T_a A$ for all $a$; such operators are the operators that the group's own translations cannot tell apart.</p>
+<p><strong>Proposition.</strong> The operators commuting with all left translations are exactly the <strong>right convolutions</strong>: the operator $A$ is translation-invariant if and only if there is a distribution or measure $\mu$ with</p>
+<p>$$
+A f(x) = \int_G f(xy)\,d\mu(y) = (f * \mu)(x),
+$$</p>
+<p>so that the algebra of translation-invariant operators is the convolution algebra of measures on $G$, <em>The Involution on the Measure Algebra</em> and <em>Convolution on a Group</em>. In particular every translation-invariant operator commutes with every right translation and the algebra is commutative exactly when $G$ is abelian.</p>
+<p><strong>Proof.</strong> If $A$ is translation-invariant then for each $x$ the functional $f \mapsto (Af)(x)$ is a distribution $\mu_x$ supported at $x$ — the invariance forces $\mu_x = \delta_x * \mu$ to be a translate of a single distribution $\mu$, so $Af = f * \mu$; conversely a right convolution commutes with the left translations by associativity and invariance of the measure. The commutativity in the abelian case is the commutativity of convolution there.</p>
+<p><strong>Remark (the abelian picture).</strong> When $G$ is abelian, the translation operators are simultaneously diagonalised by the characters: on the group algebra, $\hat T_a(\chi) = \chi(a)^{-1}$, and $T_a$ is multiplication by this character in the Fourier basis; the algebra of translation-invariant operators is the algebra of Fourier multipliers, diagonal in the character basis, and its elements are the operators of <em>Convolution Operators</em> and <em>Involutions of the Convolution Operators</em>. The non-abelian case replaces the characters by the irreducible representations, and the algebra of translation-invariant operators by the Fourier algebra; the representation theory is <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>.</p>
+<h2 id="the-lattice-and-the-quotient">The Lattice and the Quotient</h2>
+<h3 id="lattices">Lattices</h3>
+<p><strong>Definition.</strong> A <strong>lattice</strong> in a locally compact group $G$ is a discrete subgroup $\Gamma \leq G$ of finite covolume, meaning that the quotient $G/\Gamma$ carries a $G$-invariant measure of finite total mass; the lattice is <strong>cocompact</strong> (or uniform) when $G/\Gamma$ is compact, and nonuniform otherwise. The invariant measure on $G/\Gamma$ is the Haar measure normalised so that the total volume is one, and it is the <strong>normalised invariant measure</strong>.</p>
+<p><strong>Proposition.</strong> The quotient $G/\Gamma$ is a $G$-space for the left translations, the projection $G \to G/\Gamma$ is a covering map when $\Gamma$ is discrete and torsion-free, and the invariant measure of $G/\Gamma$ is the pushforward of the Haar measure under the projection. If $G$ is a Lie group and $\Gamma$ cocompact, $G/\Gamma$ is a compact manifold; if $G$ is semisimple and $\Gamma$ torsion-free, $G/\Gamma$ is the frame bundle of the locally symmetric space $\Gamma\backslash G/K$.</p>
+<p><strong>Proof.</strong> The quotient by a discrete subgroup is a covering of a neighbourhood of the identity coset; the pushforward measure descends because the Haar measure is invariant under right translation by $\Gamma$, and the total mass is finite by the definition of a lattice; the identification of the locally symmetric space is the general quotient theory of <em>Transformation Groups</em>.</p>
+<h3 id="the-quotient-as-a-geometric-space">The Quotient as a Geometric Space</h3>
+<p><strong>Definition.</strong> When $G$ is a semisimple Lie group and $X = G/K$ a symmetric space, the lattice $\Gamma$ acts on $X$ by isometries and the quotient $\Gamma\backslash X = \Gamma\backslash G/K$ is the <strong>locally symmetric space</strong> of <em>Riemannian Symmetric Spaces and the Involution</em>: it is complete, of finite volume when $\Gamma$ is a lattice, and its universal cover is the symmetric space $X$.</p>
+<p><strong>Remark.</strong> The geometry is the point of the lattice. The translation operator on $G$ descends to the quotient $G/\Gamma$, and on the bundle $G/\Gamma \to \Gamma\backslash X$ it is a flow over the locally symmetric space: the flow of the one-parameter group $\{a_t\}$ is the geodesic flow when $\{a_t\}$ is the full Cartan subgroup and the horocycle flow when $\{a_t\}$ is unipotent. The locally symmetric space and its finite volume are the geometric data; the translation flow is the operator.</p>
+<h2 id="the-ergodicity-of-the-translation-flow">The Ergodicity of the Translation Flow</h2>
+<h3 id="ergodicity">Ergodicity</h3>
+<p><strong>Definition.</strong> A measurable action of $G$ on a probability space $(Y, \mu)$ preserving $\mu$ is <strong>ergodic</strong> when every measurable invariant subset has measure $0$ or $1$; equivalently, when the only invariant measurable functions are the constants. It is <strong>mixing</strong> when $\mu(A \cap T_a^{-1}B) \to \mu(A)\mu(B)$ as $a \to \infty$ along a suitable exhaustion, and mixing implies ergodic.</p>
+<p><strong>Proposition.</strong> For the translation action of $G$ on $G/\Gamma$ with the normalised invariant measure, ergodicity is equivalent to the absence of nonzero invariant vectors in the representation of $G$ on the space $L^2_0(G/\Gamma)$ of functions of mean zero; equivalently, every nonzero $f \in L^2(G/\Gamma)$ satisfying $T_a f = f$ for all $a$ is constant.</p>
+<p><strong>Proof.</strong> An invariant measurable set has an indicator, a bounded invariant function; conversely an invariant function has level sets that are invariant, so the two formulations agree, and orthogonality of the invariant functions to the constants is the restriction to mean zero. This is the bilinear form of the mean ergodic theorem, <em>Ergodic Theory of Group Actions</em>.</p>
+<h3 id="the-ergodicity-criterion-for-a-lattice">The Ergodicity Criterion for a Lattice</h3>
+<p><strong>Theorem (ergodicity for a lattice).</strong> Let $G$ be a connected semisimple Lie group with finite centre and no compact factors, and let $\Gamma \leq G$ be a lattice. Then the translation action of $G$ on $G/\Gamma$ is ergodic and, when $\Gamma$ is irreducible, mixing. Consequently the translation operators $T_a$ descend to the quotient and their only common invariant functions are the constants.</p>
+<p><strong>Proof sketch.</strong> The proof is the Moore–Mautner phenomenon: a closed subgroup $H \leq G$ that is not contained in a compact subgroup acts ergodically on $G/\Gamma$, and the argument propagates the vanishing of an invariant vector from the subgroup generated by the unipotent radicals of the parabolic subgroups to all of $G$; the mixing is the decay of the matrix coefficients of $G$, the Howe–Moore theorem. Both are Part III, <em>Ergodic Theory of Group Actions</em> and <em>Homogeneous Dynamics</em>, and are quoted, not proved.</p>
+<p><strong>Corollary (one-parameter flows).</strong> Let $\{a_t\} \subseteq G$ be a one-parameter subgroup. If $\{a_t\}$ is not contained in a compact subgroup of $G$ — in particular if $a_t$ is unipotent, or if $a_t$ is a regular semisimple element generating the Cartan subgroup — then the flow $T_{a_t}$ on $G/\Gamma$ is ergodic; the horocycle flow, the case of a unipotent $\{a_t\}$, is ergodic and uniquely ergodic on a compact quotient.</p>
+<p><strong>Proof.</strong> The criterion is the Moore–Mautner phenomenon applied to the closed subgroup $\{a_t\}$; that a unipotent subgroup is not compact and that the theorem applies is the content of the quoted result, and the unique ergodicity of the horocycle flow is the Hedlund–Furstenberg theorem, in Part III.</p>
+<p><strong>Remark.</strong> Ergodicity is a property of the <strong>lattice</strong>, and the geometry is visible in it. A nonuniform lattice gives a cusp and a continuous spectrum; a uniform lattice gives a compact quotient and a discrete part at the bottom of the spectrum; an arithmetic lattice has the Hecke operators as extra symmetries, and the arithmeticity and the classification of the lattices are <em>Homogeneous Dynamics</em> and <em>Automorphic Forms</em>. The ergodicity of the flow is the operator expression of the fact that a lattice cannot be decomposed into smaller invariant pieces.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the circle).</strong> Let $G = \mathbb{R}$, $\Gamma = \mathbb{Z}$, and $T_\alpha$ the translation by $\alpha$ on $\mathbb{R}/\mathbb{Z} = S^1$. The translation operators are multiplication by the characters $e^{2\pi i n x}$, and $T_\alpha$ is ergodic exactly when $\alpha$ is irrational: for rational $\alpha$ the first return map has finite orbits and there are invariant sets of intermediate measure, while for irrational $\alpha$ the orbit is dense and the only invariant functions are the constants. This is the classical irrational rotation, and the translation operator is the unitary $T_\alpha f(x) = f(x-\alpha)$.</p>
+<p><strong>Example (the torus).</strong> Let $G = \mathbb{R}^n$, $\Gamma = \mathbb{Z}^n$, and $T_a$ the translation by $a$ on the torus $\mathbb{T}^n$. The flow is ergodic exactly when the entries of $a$ are linearly independent over $\mathbb{Q}$, and the translation operator is diagonal in the character basis with eigenvalues the exponentials of $a$; the finite-order translations have finite orbits and are not ergodic. This is the abelian case of the general criterion, and the operators are the <em>Convolution Operators</em> on $\mathbb{T}^n$.</p>
+<p><strong>Example (the hyperbolic surface).</strong> Let $G = PSL(2, \mathbb{R})$, $K = SO(2)$, $\Gamma$ a torsion-free lattice, and $Y = \Gamma\backslash \mathbb{H}^2$ the hyperbolic surface. The translation flow on the unit tangent bundle $G/\Gamma$ is the geodesic flow, and it is ergodic with respect to the invariant measure by the Hopf argument; the horocycle flow is the unipotent flow and is uniquely ergodic on a compact quotient. This is the geometric case that the abstract criterion generalises, and the ergodicity of the geodesic flow is the statement that the lattice is irreducible.</p>
+<p><strong>Example (a compact factor).</strong> Let $G = G_1 \times G_2$ with $G_1$ compact and $G_2$ simple, and let $\Gamma = G_1 \times \Gamma_2$. Then the translation action of $G$ on $G/\Gamma = G_1 \times G_2/\Gamma_2$ has the compact factor as an invariant set of intermediate measure, so the action is not ergodic: the presence of a compact factor is exactly what the criterion excludes. The example shows that ergodicity is sensitive to the chosen lattice and the chosen subgroup, and is not a property of $G$ alone.</p>
+<h2 id="summary">Summary</h2>
+<p>The translation operator by $a$ on a symmetry group is $T_a f(x) = f(a^{-1}x)$, a representation of $G$ commuting with the right translations $S_b f(x) = f(xb)$; the operators commuting with the left translations are exactly the right convolutions $f \mapsto f * \mu$, so the algebra of translation-invariant operators is the measure algebra, commutative exactly for abelian $G$, and on an abelian group the translations are multiplication by the characters. A lattice is a discrete subgroup of finite covolume; its quotient $G/\Gamma$ carries the normalised invariant measure and is the frame bundle of the finite-volume locally symmetric space $\Gamma\backslash X$, and the translation operators descend to flows there, the geodesic flow and the horocycle flow among them. Ergodicity is the absence of invariant sets of intermediate measure, equivalently the absence of nonzero invariant functions on $G/\Gamma$; for a connected semisimple $G$ with no compact factors the translation action is ergodic and mixing by the Moore–Mautner phenomenon and the Howe–Moore theorem, and a one-parameter subgroup generates an ergodic flow exactly when it is not contained in a compact subgroup. The irrational rotation on the circle, the translations on the torus, and the geodesic and horocycle flows on a hyperbolic surface are the classical instances; the presence of a compact factor destroys ergodicity.</p>
+<p>The ergodic theorems, the mixing rates and the classification of the orbit closures of the unipotent flows are Part III and are cited; the article's content is the translation operator, its invariance, and the geometric meaning of the ergodicity of its flow on a lattice quotient. The involution on the elements of the symmetry group and the adjoint of an operator are the later groups of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_a$</td>
+<td>translation operator, $T_a f(x) = f(a^{-1}x)$; left regular representation</td>
+</tr>
+<tr>
+<td>$S_b$</td>
+<td>right translation operator, $S_b f(x) = f(xb)$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>a measure or distribution; the right convolution $f * \mu$</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>a lattice: discrete subgroup of finite covolume</td>
+</tr>
+<tr>
+<td>$G/\Gamma$</td>
+<td>the quotient $G$-space with the normalised invariant measure</td>
+</tr>
+<tr>
+<td>$\Gamma\backslash X$</td>
+<td>the locally symmetric space of the lattice</td>
+</tr>
+<tr>
+<td>$L^2_0(G/\Gamma)$</td>
+<td>the mean-zero functions; no nonzero invariant vector iff ergodic</td>
+</tr>
+<tr>
+<td>$T_{a_t}$</td>
+<td>the translation flow of the one-parameter group $\{a_t\}$</td>
+</tr>
+<tr>
+<td>ergodic, mixing</td>
+<td>no invariant set of intermediate measure; decay of correlations</td>
+</tr>
+<tr>
+<td>$\hat T_a(\chi) = \chi(a)^{-1}$</td>
+<td>the diagonalisation of the abelian translations</td>
+</tr>
+<tr>
+<td>horocycle, geodesic flow</td>
+<td>the unipotent and Cartan flows on $G/\Gamma$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Robert J. Zimmer, <em>Ergodic Theory and Semisimple Groups</em> (Birkhäuser, 1984), for the Moore–Mautner phenomenon, the ergodicity of the translation action and the mixing of the lattice quotients.</li>
+<li>Grigoriy A. Margulis, <em>Discrete Subgroups of Semisimple Lie Groups</em> (Springer, 1991), for lattices, arithmeticity, the finite volume quotients and the ergodic theorems.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the locally symmetric space $\Gamma\backslash G/K$ and the identification of the flows.</li>
+<li>Hopf, "Statistik der geodätischen Linien in Mannigfaltigkeiten negativer Krümmung", <em>Berichte über die Verhandlungen der Sächsischen Akademie der Wissenschaften zu Leipzig</em> <strong>91</strong> (1939), 261–304, for the ergodicity of the geodesic flow.</li>
+<li>Marina Ratner, "On Raghunathan's measure conjecture", <em>Annals of Mathematics</em> <strong>134</strong> (1991), 545–607, for the classification of the invariant measures of the unipotent flows, cited as Part III.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

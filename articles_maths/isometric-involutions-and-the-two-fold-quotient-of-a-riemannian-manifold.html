@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isometric Involutions and the Two-Fold Quotient of a Riemannian Manifold — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="isometric-involutions-and-the-two-fold-quotient-of-a-riemannian-manifold"><strong>Isometric Involutions and the Two-Fold Quotient of a Riemannian Manifold</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The simplest symmetry of a Riemannian manifold is an <strong>isometric involution</strong>: a map $\sigma$ with $\sigma^2 = \mathrm{id}$ and $\sigma^*g = g$. Its orbits are the two-point sets $\{x, \sigma(x)\}$ at the free points and the single points at the fixed set, and dividing the manifold by the relation $x \sim \sigma(x)$ produces the <strong>two-fold quotient</strong> $M/\sigma$. When the involution has no fixed point the quotient is a Riemannian manifold and the projection is a two-fold Riemannian covering; when it has fixed points the quotient keeps a singular locus and is a Riemannian orbifold; and in both cases the quotient is the space in which the involution has been divided out, the object on which the geometry of the involution lives.</p>
+<p>The article develops the quotient. It reads the differential of an involution at a fixed point as an orthogonal involution and splits the tangent space into its two eigenspaces, the fixed and the moving directions; it proves that the fixed set is a totally geodesic submanifold and gives its dimension as the multiplicity of the eigenvalue $+1$; it constructs the quotient in the free case as a two-fold Riemannian covering, proves that the quotient metric is the unique one making the projection a local isometry, and shows that a two-fold Riemannian covering always arises this way from its deck transformation; it describes the quotient in the general case as a Riemannian orbifold with the totally geodesic singular locus; and it computes the curvature, the geodesics and the isometries of the quotient from those of $M$.</p>
+<p>The article assumes the isometry, the fixed set of an isometry and the Killing fields of <em>Isometries as Operators</em>, the geodesic symmetry and the locally symmetric spaces of <em>The Geodesic Symmetry and Locally Symmetric Spaces</em>, and the metric, the curvature and the geodesics of <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em>. The covering-space theory is Part II's, the orbifold and the quotient manifold are Part III's, and the homogeneous quotients are the symmetric spaces of <em>Riemannian Symmetric Spaces and the Involution</em>, the preceding article of this category; the fixed set is developed in <em>Isometric Involutions and the Fixed-Point Set</em>, the following one. The real structures on the complex manifolds are <em>Real Structures on a Riemannian Manifold</em>, later in this category, and are named only as a forward reference. No physics is invoked.</p>
+<h2 id="isometric-involutions">Isometric Involutions</h2>
+<h3 id="definition-and-the-fixed-set">Definition and the Fixed Set</h3>
+<p><strong>Definition.</strong> An <strong>isometric involution</strong> of a Riemannian manifold $(M, g)$ is a map $\sigma : M \to M$ with</p>
+<p>$$
+\sigma^2 = \mathrm{id}, \qquad \sigma^*g = g,
+$$</p>
+<p>that is an isometry whose square is the identity. Its <strong>fixed set</strong> is $\Sigma = \operatorname{Fix}(\sigma) = \{x \in M : \sigma(x) = x\}$, and the action is <strong>free</strong> when $\Sigma$ is empty. The group generated by $\sigma$ is $\langle\sigma\rangle \cong \mathbb{Z}/2\mathbb{Z}$, and the <strong>two-fold quotient</strong> is the orbit space</p>
+<p>$$
+M/\sigma = M/\langle\sigma\rangle = M/\sim, \qquad x \sim \sigma(x),
+$$</p>
+<p>with the projection $\pi : M \to M/\sigma$ sending a point to its orbit.</p>
+<p><strong>Theorem.</strong> Each connected component of the fixed set $\Sigma$ is a totally geodesic submanifold of $M$; at a fixed point $p$ the component is $\exp_p(V_+)\cap U_p$ where $V_+$ is the fixed subspace of $d\sigma_p$ and $U_p$ is a normal neighbourhood. The involution is free exactly when $d\sigma_p \neq \mathrm{id}$ at every point, equivalently when $\sigma$ has no fixed point.</p>
+<p><strong>Proof.</strong> This is the fixed-set theorem of <em>Isometries as Operators</em> applied to the isometry $\sigma$: since $\sigma$ commutes with the exponential, a point is fixed near $p$ exactly when its velocity lies in the fixed subspace of $d\sigma_p$, so the component is the exponential image of that subspace, a submanifold, and it is totally geodesic. The involution is free exactly when no $d\sigma_p$ has the eigenvalue $+1$ at a fixed point, and by the same theorem a fixed point exists exactly when some $d\sigma_p$ has $+1$ as an eigenvalue.</p>
+<h3 id="the-differential-at-a-fixed-point">The Differential at a Fixed Point</h3>
+<p><strong>Theorem.</strong> At a point $p$ of the fixed set the differential $d\sigma_p$ is an orthogonal involution of $T_pM$, so it is diagonalisable with the eigenvalues $\pm1$ and the tangent space splits orthogonally:</p>
+<p>$$
+T_pM = V_+ \oplus V_-, \qquad d\sigma_p = +\mathrm{id}\ \text{on}\ V_+, \qquad d\sigma_p = -\mathrm{id}\ \text{on}\ V_-,
+$$</p>
+<p>with $V_+ = T_p\Sigma$ the tangent space of the fixed component and $V_-$ the <strong>normal direction</strong>. The dimension of the fixed component at $p$ is the multiplicity of the eigenvalue $+1$, and the fixed component is a hypersurface exactly when the eigenvalue $-1$ has multiplicity one.</p>
+<p><strong>Proof.</strong> The differential of an involution is an involution, and the differential of an isometry is orthogonal, so $d\sigma_p$ is an orthogonal involution; an involution is diagonalisable with the eigenvalues $\pm1$ on the eigenspaces, which are orthogonal because the map is orthogonal. The identification $V_+ = T_p\Sigma$ is the fixed-set theorem, and the statement about the dimension reads the multiplicity. The hypersurface case is the case $\dim M - \dim\Sigma = 1$, which is the classical reflection.</p>
+<p><strong>Corollary.</strong> An isometric involution is determined by its fixed set and its normal derivative: two isometric involutions with the same fixed set and the same $(-\mathrm{id})$ action on the normal bundle coincide. The involution is the identity exactly when its fixed set is all of $M$, and an involution without fixed points has no point at which it acts trivially.</p>
+<h2 id="the-two-fold-quotient">The Two-Fold Quotient</h2>
+<h3 id="the-free-case-the-riemannian-covering">The Free Case: the Riemannian Covering</h3>
+<p><strong>Theorem.</strong> Let $\sigma$ be a fixed-point-free isometric involution of $(M, g)$. Then the orbit space $M/\sigma$ carries a unique smooth structure and a unique Riemannian metric $g_\sigma$ for which the projection $\pi$ is a local isometry and a <strong>two-fold Riemannian covering</strong>,</p>
+<p>$$
+\pi^*g_\sigma = g, \qquad \pi(\sigma(x)) = \pi(x),
+$$</p>
+<p>so that $M \to M/\sigma$ is a covering of degree two whose deck transformation group is $\langle\sigma\rangle \cong \mathbb{Z}/2\mathbb{Z}$. Conversely, a connected two-fold Riemannian covering $\pi : M \to N$ has a deck transformation $\sigma$, and $\sigma$ is an isometric involution of $M$ with $N = M/\sigma$.</p>
+<p><strong>Proof.</strong> The group $\langle\sigma\rangle$ is finite and acts freely by isometries, so it acts properly discontinuously; the quotient of a smooth manifold by a free proper discontinuous action is a smooth manifold, and the projection is a covering of degree equal to the order of the group, which is two. The metric $g_\sigma$ exists and is unique because the differential of $\pi$ is an isomorphism on each tangent space and the two preimages of a tangent vector have images related by $d\sigma$, which is an isometry, so the value $g_\sigma(v,w) := g_p(\tilde v, \tilde w)$ for any lift is independent of the lift; the projection is then a local isometry by construction. Conversely a two-fold covering is regular and its deck group has order two, generated by an isometry $\sigma$ for the pulled-back metric, and $N = M/\sigma$ by the definition of the deck group.</p>
+<p><strong>Corollary (the fundamental group).</strong> In the free case the covering $M \to M/\sigma$ is regular with deck group $\mathbb{Z}/2\mathbb{Z}$, so the image of $\pi_1(M)$ in $\pi_1(M/\sigma)$ has index two and there is an exact sequence</p>
+<p>$$
+1 \longrightarrow \pi_1(M) \longrightarrow \pi_1(M/\sigma) \longrightarrow \mathbb{Z}/2\mathbb{Z} \longrightarrow 1 .
+$$</p>
+<p>A loop in $M/\sigma$ lifts to a loop in $M$ exactly when its class lies in the image of $\pi_1(M)$, and the involution acts on the universal cover accordingly.</p>
+<h3 id="the-general-case-the-orbifold">The General Case: the Orbifold</h3>
+<p><strong>Definition.</strong> When $\sigma$ has fixed points the quotient $M/\sigma$ is not a manifold at the images of the fixed points, and it is given the structure of a <strong>Riemannian orbifold</strong>: a Hausdorff space with a metric that is locally the quotient of a Riemannian manifold by a finite group of isometries, the local models being $V_+ \times (V_-/\{\pm1\})$ at the images of the fixed points. The projection is then a Riemannian orbifold covering of degree two, and the singular locus is the image $\pi(\Sigma)$ of the fixed set.</p>
+<p><strong>Proposition.</strong> The singular locus is totally geodesic and of codimension at least one; away from it the quotient is a Riemannian manifold and the projection a two-fold covering; the completion of the metric of the regular part gives the quotient the structure of a complete length space whose geodesics are the projections of the geodesics of $M$ that are orthogonal to the fixed set when they meet it, and which reflect off the singular locus.</p>
+<p><strong>Proof.</strong> The local model at a fixed point $p$ is the quotient of a neighbourhood by the linear involution $d\sigma_p$, whose fixed subspace is $V_+$ and whose quotient is $V_+$ times the quotient of $V_-$ by $\pm1$; the quotient of $V_-$ by $\pm1$ is a cone over the sphere, with the origin the singular point, so the singular locus is locally $V_+$, hence totally geodesic and of codimension $\dim V_- \geq 1$. A geodesic of the quotient is the projection of a geodesic of $M$; if it meets the singular locus, its lift meets the fixed set, and the geodesic through a point of the fixed set is either tangent to the fixed set or reflected by the involution, which gives the reflection law. The details of the orbifold structure are in Part III.</p>
+<h3 id="the-tangent-space-quotient">The Tangent-Space Quotient</h3>
+<p><strong>Theorem.</strong> At a fixed point $p$ the quotient of the tangent space by the linear involution $d\sigma_p$ is</p>
+<p>$$
+T_pM\big/\{\pm d\sigma_p\} \cong V_+ \oplus \bigl(V_-\big/\{\pm\mathrm{id}\}\bigr),
+$$</p>
+<p>the product of the tangent space of the fixed component with the cone over the sphere of the normal directions; it is the tangent cone of the quotient at $\pi(p)$. In the free case the quotient of the tangent bundle $TM/\sigma$ is the tangent bundle $T(M/\sigma)$ of the quotient, and $d\sigma$ becomes the identity on it.</p>
+<p><strong>Proof.</strong> The quotient of a Euclidean space by a linear involution is the product of the fixed subspace with the quotient of the moving subspace by $\pm\mathrm{id}$, which is the cone over the unit sphere; the identification with the tangent cone of the quotient follows because the exponential maps identify a neighbourhood of $p$ in $M$ with a neighbourhood of $0$ in $T_pM$ and the involution with its linear part. In the free case the differential of the projection is an isomorphism on each tangent space and the two lifts of a vector are interchanged by $d\sigma$, so the quotient of the tangent bundle is the tangent bundle of the quotient.</p>
+<h2 id="the-geometry-of-the-quotient">The Geometry of the Quotient</h2>
+<h3 id="curvature-and-geodesics">Curvature and Geodesics</h3>
+<p><strong>Theorem.</strong> The covering $\pi$ is a local isometry, so it preserves the curvature:</p>
+<p>$$
+R^{g_\sigma}\bigl(d\pi(X), d\pi(Y)\bigr)d\pi(Z) = d\pi\bigl(R(X, Y)Z\bigr),
+$$</p>
+<p>and it carries the geodesics of $M$ to the geodesics of $M/\sigma$, the sectional curvature, the Ricci curvature, the scalar curvature and the parallel transport being those of $M$ at corresponding points. In the free case the quotient is locally isometric to $M$, so every local invariant of the metric of $M$ is a local invariant of the quotient, and the curvature of the quotient at $\pi(p)$ equals the curvature of $M$ at $p$.</p>
+<p><strong>Proof.</strong> The projection is a local isometry by the construction of $g_\sigma$, and a local isometry preserves the connection and the curvature by <em>Isometries as Operators</em>; the geodesics are preserved because the geodesic equation is local and the projection is a local isometry. The local invariants are local expressions in the metric, and in the free case the projection is a local isometry at every point.</p>
+<h3 id="isometries-and-the-quotient">Isometries and the Quotient</h3>
+<p><strong>Proposition.</strong> The isometries of $M$ commuting with $\sigma$ descend to isometries of the quotient,</p>
+<p>$$
+\operatorname{Isom}(M)^\sigma \longrightarrow \operatorname{Isom}(M/\sigma), \qquad F \longmapsto \bar F, \qquad \bar F(\pi(x)) = \pi(F(x)),
+$$</p>
+<p>with kernel $\langle\sigma\rangle$; an isometry of the quotient lifts to $M$ locally, and the lift commutes with $\sigma$ or anticommutes with it according to whether it is defined globally. The projection commutes with the involution, $\pi\circ\sigma = \pi$, and the Killing fields of the quotient are the $\sigma$-invariant Killing fields of $M$.</p>
+<p><strong>Proof.</strong> An isometry $F$ with $F\sigma = \sigma F$ carries orbits to orbits and defines a map $\bar F$ on the quotient; it is an isometry because $\pi$ is a local isometry and $F$ is. The kernel consists of the elements acting trivially on the orbits, that is $\langle\sigma\rangle$; the lifting statement is the standard lifting of a map through a covering, and the commutation with the deck transformation is the ambiguity of the lift, which is exactly a power of $\sigma$. The Killing-field statement is the infinitesimal form of the same computation.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the two-fold quotient of the sphere).</strong> The antipodal map $\sigma(x) = -x$ is a fixed-point-free isometric involution of the round sphere $S^n$, and the quotient is the real projective space $\mathbb{RP}^n$ with the constant curvature metric, the projection being the two-fold covering; the fundamental group is $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 2$, and the quotient of the free involution is the standard example of a two-fold Riemannian covering. The great circles project to the closed geodesics of half the length.</p>
+<p><strong>Example (the reflection quotient).</strong> The reflection of $\mathbb{R}^n$ in a hyperplane is an isometric involution whose fixed set is the hyperplane, and the quotient is the half-space with the Euclidean metric; the singular locus is the boundary, and the quotient is a Riemannian manifold with boundary rather than a manifold. The same construction on the sphere gives the hemisphere, and on a general manifold with a totally geodesic hypersurface gives the manifold cut along it. The inverse operation, the doubling of a manifold with a totally geodesic boundary, is the passage back to $M$.</p>
+<p><strong>Example (the involution of a product).</strong> On a product $M_1 \times M_2$ the exchange $\sigma(x_1, x_2) = (x_2, x_1)$ is an isometric involution when the two factors are isometric; its fixed set is the diagonal, and the quotient is the symmetric square $(M_1\times M_1)/\sigma$, a Riemannian orbifold with the diagonal as singular locus. The quotient of a product by a reflection in a factor is a product of a half-space with the other factor.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>isometric involution</strong> is a map $\sigma$ with $\sigma^2=\mathrm{id}$ and $\sigma^*g=g$; its fixed set $\Sigma$ is a disjoint union of totally geodesic submanifolds, and at a fixed point the differential is an orthogonal involution splitting the tangent space as $V_+\oplus V_-$ into the fixed directions, which are the tangent space of $\Sigma$, and the normal directions. An involution is free exactly when it has no fixed point, and the two-fold quotient $M/\sigma$ of the orbits is then a Riemannian manifold with a metric $g_\sigma$, unique with $\pi^*g_\sigma=g$, for which the projection is a two-fold Riemannian covering with deck group $\mathbb{Z}/2\mathbb{Z}$; conversely every connected two-fold Riemannian covering arises from an isometric involution, its deck transformation, and its fundamental group is an index-two extension of $\pi_1(M)$ by $\mathbb{Z}/2\mathbb{Z}$.</p>
+<p>When the involution has fixed points the quotient is a Riemannian orbifold whose singular locus is the image of the fixed set, a totally geodesic submanifold, with the local model $V_+\times(V_-/\{\pm1\})$ and the tangent cone $V_+\oplus(V_-/\{\pm\mathrm{id}\})$ at a fixed point; away from the singular locus the projection is a two-fold covering, and the geodesics that meet the singular locus reflect. The projection is a local isometry and preserves the curvature, the geodesics, the sectional curvature and the parallel transport, so the quotient is locally isometric to $M$ in the free case; the isometries of $M$ commuting with $\sigma$ descend to the quotient with kernel $\langle\sigma\rangle$, and the Killing fields of the quotient are the $\sigma$-invariant Killing fields of $M$. The antipodal quotient of the sphere is $\mathbb{RP}^n$; the reflection quotient of Euclidean space is a half-space; and the symmetric square of a manifold is the quotient by the exchange.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $\sigma^2=\mathrm{id}$, $\sigma^*g=g$</td>
+<td>Isometric involution</td>
+</tr>
+<tr>
+<td>$\Sigma=\operatorname{Fix}(\sigma)$</td>
+<td>Fixed set; union of totally geodesic submanifolds</td>
+</tr>
+<tr>
+<td>$T_pM = V_+\oplus V_-$</td>
+<td>Fixed and normal directions at a fixed point</td>
+</tr>
+<tr>
+<td>$V_+ = T_p\Sigma$</td>
+<td>Tangent space of the fixed component</td>
+</tr>
+<tr>
+<td>$\langle\sigma\rangle\cong\mathbb{Z}/2\mathbb{Z}$</td>
+<td>Group generated by the involution</td>
+</tr>
+<tr>
+<td>$M/\sigma$, $\pi$</td>
+<td>Two-fold quotient and the projection</td>
+</tr>
+<tr>
+<td>Free action</td>
+<td>No fixed point; quotient a manifold</td>
+</tr>
+<tr>
+<td>$g_\sigma$, $\pi^*g_\sigma=g$</td>
+<td>Quotient metric; the projection a two-fold Riemannian covering</td>
+</tr>
+<tr>
+<td>Riemannian orbifold, singular locus</td>
+<td>The quotient and $\pi(\Sigma)$ in the nonfree case</td>
+</tr>
+<tr>
+<td>$T_pM/\{\pm d\sigma_p\}\cong V_+\oplus(V_-/\{\pm\mathrm{id}\})$</td>
+<td>Tangent-space quotient; tangent cone</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(M)^\sigma$</td>
+<td>Isometries commuting with the involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry, Volume I</em> (Interscience, 1963), for the covering manifolds, the deck transformations and the quotients by groups of isometries.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the quotients by involutions and the symmetric spaces as quotients.</li>
+<li>William P. Thurston, <em>Three-Dimensional Geometry and Topology, Volume 1</em> (Princeton University Press, 1997), for the orbifolds, the reflection quotients and the two-fold coverings in low dimensions.</li>
+<li>John M. Lee, <em>Introduction to Riemannian Manifolds</em>, 2nd ed. (Springer, 2018), for the Riemannian coverings and the quotient metrics.</li>
+<li>Michael W. Davis, <em>The Geometry and Topology of Coxeter Groups</em> (Princeton University Press, 2008), for the quotients by reflection groups and the reflection orbifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Handle Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-handle-operator"><strong>The Handle Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>handle</strong> is a product of two discs glued to the boundary of a manifold along half of its own boundary. Attaching a $k$-handle is the elementary operation that changes the manifold — and its boundary — by one cell, and it is the operator that generates every compact manifold and every bordism. This article treats the handle attachment as an operator: its effect on the homology, its chain-level form, the cancellation of two handles, and the reading of a handle decomposition as a sequence of critical points.</p>
+<p>The handle is the local companion of <em>The Surgery Operator</em>: a surgery is what a handle attachment does to the boundary, and every cobordism is a sequence of handle attachments. The proof that a compact manifold with boundary has a handle decomposition — and the inequalities that count the handles — is the Morse theory of a smooth function, and needs the smooth structure of Part III; this article establishes the topological operation and its homological effect, and names the differential-topological reading.</p>
+<p><strong>The article assumes</strong> the homology of a manifold and of a pair, the boundary operator, the fundamental group and cell attachments, and the intersection form, that is, <em>Simplicial and Singular Homology</em>, <em>CW Complexes and Cellular Approximation</em>, <em>The Fundamental Group and Covering Spaces</em> and <em>Poincaré Duality</em> of this Part, together with <em>The Surgery Operator</em>.</p>
+<p><strong>The boundaries of the article.</strong> The surgery classification, the $h$- and $s$-cobordism theorems and the group of homotopy spheres are <em>Cobordism and Surgery Theory</em>. The Morse-theoretic reading — the correspondence between handles and the critical points of a smooth function, the Morse inequalities and the cancellation theorems — is the differential topology of <em>Smooth Manifolds and Differential Topology</em> in Part III, and is stated here as a forward reference; the topological handle decomposition is what the article proves. The equivariant handle attachments are <em>Involutions on Manifolds and Equivariant Surgery</em>. No smooth function, no derivative and no analysis is used.</p>
+<h2 id="the-handle-operator_1">The Handle Operator</h2>
+<p><strong>Definition.</strong> Let $W$ be a compact $n$-manifold with boundary and let $0 \leq k \leq n$. A <strong>$k$-handle attachment</strong> to $W$ is the operation of forming
+$$
+W' = W \cup_{\varphi} \bigl(D^k\times D^{n-k}\bigr), \qquad \varphi : S^{k-1}\times D^{n-k}\longrightarrow \partial W,
+$$
+where $\varphi$ is an embedding of the <strong>attaching region</strong> into the boundary; the disc $D^k\times D^{n-k}$ is the <strong>handle</strong> $h^k$, its core is $D^k\times\{0\}$, its <strong>attaching sphere</strong> is $\varphi(S^{k-1}\times\{0\})$, and its <strong>belt sphere</strong> is $\{0\}\times S^{n-k-1}\subseteq \partial W'$. The <strong>handle operator</strong> is the assignment $H^k_\varphi : [W]\mapsto[W']$.</p>
+<p><strong>Proposition (the result is a manifold and the boundary is surgered).</strong> The space $W'$ is a compact $n$-manifold with boundary, and its boundary is obtained from $\partial W$ by the surgery that removes the attaching region $S^{k-1}\times D^{n-k}$ and glues in $D^k\times S^{n-k-1}$:
+$$
+\partial W' = \bigl(\partial W \setminus \varphi(S^{k-1}\times\operatorname{int}D^{n-k})\bigr)\cup_{\varphi} \bigl(D^k\times S^{n-k-1}\bigr).
+$$
+Consequently the handle operator on a bordism induces the surgery operator on its boundary, and conversely every surgery of a boundary is realised by a handle attachment.</p>
+<p><strong>Proof.</strong> The handle $D^k\times D^{n-k}$ has boundary $S^{k-1}\times D^{n-k}\cup D^k\times S^{n-k-1}$; the first piece is glued to the boundary of $W$ by the embedding $\varphi$, and the gluing theorem for manifolds with boundary applies because $\varphi$ is an embedding of a codimension-zero submanifold of the boundary. The boundary computation is then the definition of the surgered boundary, which is exactly the operation of <em>The Surgery Operator</em>.</p>
+<p><strong>Corollary (the Euler characteristic).</strong> The Euler characteristic changes by the sign of the index,
+$$
+\chi(W') = \chi(W) + (-1)^k ,
+$$
+because the handle is attached along a cell of dimension $k$.</p>
+<h2 id="the-effect-on-the-homology">The Effect on the Homology</h2>
+<p><strong>Proposition (the relative homology of a handle).</strong> For the pair $(W',W)$ one has
+$$
+H_i(W',W;\mathbb{Z}) \;\cong\; \begin{cases}\mathbb{Z}, & i = k,\\ 0, & i\neq k,\end{cases}
+$$
+with generator the core of the handle, whose boundary is the attaching sphere.</p>
+<p><strong>Proof.</strong> The pair $(W',W)$ is homotopy equivalent to the pair obtained from $W$ by attaching a single $k$-cell along the attaching sphere, by the cellular approximation of the handle; the homology of a pair with one cell is the stated group.</p>
+<p><strong>Theorem (the change of the homology).</strong> In the long exact sequence of the pair,
+$$
+\cdots \longrightarrow H_k(W) \longrightarrow H_k(W') \longrightarrow \mathbb{Z} \xrightarrow{\ \partial\ } H_{k-1}(W) \longrightarrow H_{k-1}(W') \longrightarrow 0 ,
+$$
+the connecting map sends the generator to the class $A = [\varphi(S^{k-1})]\in H_{k-1}(W)$ of the attaching sphere. Hence
+$$
+H_i(W')\cong H_i(W)\quad (i \leq k-2,\ i\geq k+1), \qquad H_{k-1}(W')\cong H_{k-1}(W)\big/\langle A\rangle ,
+$$
+and $H_k(W')\cong H_k(W)\oplus\mathbb{Z}$ when $A = 0$, while $H_k(W')\cong H_k(W)$ when $A\neq0$.</p>
+<p><strong>Proof.</strong> The exact sequence comes from the pair $(W',W)$ and the identification of the relative group; the connecting homomorphism is the boundary of the core cell, which is the attaching sphere. Reading the sequence: the terms outside degrees $k-1$ and $k$ are unchanged, the cokernel of the map $\mathbb{Z}\to H_{k-1}(W)$ is $H_{k-1}(W)/\langle A\rangle$, and the kernel of that map is $\mathbb{Z}$ or $0$ according as $A = 0$ or not, which is the statement about $H_k(W')$.</p>
+<p><strong>Corollary (the handle operator on the chain complex).</strong> The chain complex of $W'$ is the <strong>elementary expansion</strong> of the chain complex of $W$ by generators $e_k,e_{k-1}$ with $\partial e_k = e_{k-1} + c_A$, where $c_A$ is a chain representing the attaching class; the inverse operation is the <strong>elementary collapse</strong>. Two manifolds are related by handle attachments and cancellations exactly when their chain complexes are related by elementary expansions and collapses.</p>
+<p><strong>Proof.</strong> The cellular chain complex of the handle relative to $W$ is $\mathbb{Z}\langle e_k\rangle$ with $\partial e_k = c_A$, and the statement is the algebraic shadow of the geometric operation; it is the same algebra as the elementary expansion of <em>The Surgery Operator</em>, shifted by one degree.</p>
+<p><strong>Example (attaching a $0$-handle).</strong> A $0$-handle is a disc $D^n$ attached along the empty set; attaching it to $W$ enlarges $W$ by a disc and changes $H_0$ by $\mathbb{Z}$, the statement that a $0$-handle creates a component. The boundary gains the belt sphere $\{0\}\times S^{n-1} = S^{n-1}$, so a $0$-handle adds a spherical boundary component.</p>
+<p><strong>Example (attaching a $1$-handle and a $2$-handle).</strong> A $1$-handle $D^1\times D^{n-1}$ is attached along two discs $S^0\times D^{n-1}$, and on the boundary it removes the two discs and glues in the band $D^1\times S^{n-2} = [-1,1]\times S^{n-2}$, joining the two boundary spheres and reducing the number of boundary components by one. A $2$-handle $D^2\times D^{n-2}$ attached along a framed circle is the elementary operation of the Kirby calculus: on the boundary it is the surgery on a circle, and it changes $H_1$ of the boundary by killing the class of the attaching curve and creating the dual class. The handle decomposition of a closed surface by one $0$-handle, $2g$ $1$-handles and one $2$-handle is the standard example.</p>
+<h2 id="cancellation-and-decomposition">Cancellation and Decomposition</h2>
+<p><strong>Definition.</strong> A handle decomposition of a compact manifold $W$ is a filtration
+$$
+\emptyset = W_{-1}\subseteq W_0\subseteq W_1\subseteq\cdots\subseteq W_n = W
+$$
+in which $W_k$ is obtained from $W_{k-1}$ by attaching $k$-handles. The <strong>number of handles of index $k$</strong> is written $c_k$.</p>
+<p><strong>Theorem (existence of a handle decomposition).</strong> Every compact piecewise-linear or smooth manifold with boundary, and every cobordism between closed manifolds, admits a handle decomposition; the decomposition can be chosen in increasing order of the indices, and each handle of index $k$ is attached to the boundary of the union of the handles of index at most $k-1$.</p>
+<p><strong>Proof sketch.</strong> The topological input is the existence of a triangulation or a "handlebody structure" for a compact manifold with boundary; the standard proof constructs the handles by thickening a cell decomposition of the manifold, dual to a triangulation. The statement in the smooth category is equivalent to the existence of a Morse function, and its proof is Part III; the topological existence is the one used here.</p>
+<p><strong>Theorem (cancellation of handles).</strong> Let $h^k$ and $h^{k+1}$ be handles of consecutive indices, with $h^{k+1}$ attached after $h^k$. Then $h^k$ and $h^{k+1}$ cancel — the union can be replaced, up to homeomorphism fixing the rest, by a smaller union with neither handle — if the attaching sphere of $h^{k+1}$ meets the belt sphere of $h^k$ transversely in exactly one point.</p>
+<p><strong>Proof sketch.</strong> If the two spheres meet once, one can slide the attaching sphere of the higher handle over the lower one until it becomes a standard sphere in the boundary sphere of $h^k$ and cancel; the slide is realised by an isotopy of the attaching map. The condition is also necessary for the cancellation of a pair in the simplest form. The full treatment is in <em>Cobordism and Surgery Theory</em>.</p>
+<p><strong>Corollary (the number of handles).</strong> A compact manifold with a handle decomposition with $c_k$ handles of index $k$ satisfies
+$$
+c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm c_0 = \chi(W)
+$$
+for every $k$, since the handle decomposition is a CW structure and its chain complex computes the homology; the inequalities are the <strong>Morse inequalities</strong> of the topological decomposition.</p>
+<h2 id="the-morse-theoretic-reading-forward-reference">The Morse-Theoretic Reading (Forward Reference)</h2>
+<p>The correspondence between the handle operator and the critical points of a function is what makes the handle decomposition computable, and it belongs to the differential topology of Part III.</p>
+<p><strong>Statement (Part III).</strong> Let $f : W\to\mathbb{R}$ be a smooth function on a compact manifold with boundary whose critical points are nondegenerate and whose boundary values are regular. Then $f$ determines a handle decomposition of $W$ in which each critical point of index $k$ corresponds to one $k$-handle, and conversely. In particular the number of handles of index $k$ is the number of critical points of index $k$, the Morse inequalities of <em>Smooth Manifolds and Differential Topology</em> bound those numbers by the Betti numbers, and the cancellation of a handle pair corresponds to the elimination of a critical pair. The existence of the handle decomposition and the inequalities stated above are the topological shadow.</p>
+<p><strong>Remark (why the reading is deferred).</strong> The statement uses a smooth function, its derivative and its Hessian, none of which is available in this Part; what is available is the topological handlebody, and the two agree because a handle decomposition can be "smoothed" once a smooth structure exists. The present article therefore states the handle operator and its homological effect without the calculus, and names the reading as the source of the Morse inequalities in Part III.</p>
+<h2 id="examples-and-applications">Examples and Applications</h2>
+<p><strong>Example (the sphere and the ball).</strong> The sphere $S^n$ has the handle decomposition with one $0$-handle and one $n$-handle, obtained by attaching $D^n$ to a point; the belt sphere of the $n$-handle is a point and the attaching sphere of the $0$-handle is empty. The ball $D^n$ is a single $0$-handle, and its boundary is the empty result of a $0$-handle, consistent with the boundary formula.</p>
+<p><strong>Example (the genus-$g$ surface).</strong> The genus-$g$ surface has a handle decomposition with one $0$-handle, $2g$ $1$-handles and one $2$-handle; the $1$-handles give the $2g$ generators of $H_1$ and the $2$-handle kills their sum, so $H_1\cong\mathbb{Z}^{2g}$, $H_0\cong H_2\cong\mathbb{Z}$, and $\chi = 1-2g+1 = 2-2g$, the correct Euler characteristic. The example shows the handle count and the homology together.</p>
+<p><strong>Example (a $3$-dimensional surgery and the Kirby calculus).</strong> In the Kirby calculus a closed $3$-manifold is described by a framed link in $S^3$, and the calculus is generated by two moves: the handle slide and the blow-up; both are handle-operations on a $4$-dimensional handlebody whose boundary is the $3$-manifold. The moves are the handle operator in the ambient four-manifold, and their effect on the boundary homology is the surgery formula; the application to lens spaces and to the classification is <em>Low-Dimensional Topology</em> and <em>Lens Spaces</em>.</p>
+<p><strong>Example (the $h$-cobordism theorem, named).</strong> A cobordism between closed manifolds of dimension at least five which is an $h$-cobordism — both inclusions are homotopy equivalences — admits a handle decomposition with only handles that can be cancelled, and the cancellation uses the Whitney trick in the middle dimension; the conclusion that the cobordism is a product is the $s$-cobordism theorem, and it is <em>Cobordism and Surgery Theory</em>. The handle operator is the elementary input, and the Whitney trick is the differential-topological input of Part III.</p>
+<h2 id="summary">Summary</h2>
+<p>A $k$-handle is the disc $D^k\times D^{n-k}$ attached to the boundary of a compact manifold along the attaching region $S^{k-1}\times D^{n-k}$; the handle operator carries a manifold to the manifold with the handle attached, changes the boundary by the surgery on the attaching sphere, and increases the Euler characteristic by $(-1)^k$. Its relative homology is $\mathbb{Z}$ in degree $k$ and zero elsewhere, so the long exact sequence of the pair shows that the homology is unchanged except in degrees $k-1$ and $k$, where the attaching class $A$ is killed or a free $\mathbb{Z}$ is created; on the chain complex the operator is an elementary expansion with a collapse as its inverse. Every compact manifold and every cobordism has a handle decomposition, two consecutive handles cancel when the attaching sphere of the higher meets the belt sphere of the lower once, and the handle counts satisfy the Morse inequalities and compute the Euler characteristic. The correspondence between handles and the critical points of a smooth function, and the analytic content of the cancellation, is the differential topology of Part III and is named as the Morse-theoretic reading.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W$, $W' = W\cup_\varphi(D^k\times D^{n-k})$</td>
+<td>a compact manifold with boundary and its handle attachment</td>
+</tr>
+<tr>
+<td>$h^k = D^k\times D^{n-k}$</td>
+<td>the $k$-handle, an index-$k$ handle</td>
+</tr>
+<tr>
+<td>$\varphi : S^{k-1}\times D^{n-k}\to\partial W$</td>
+<td>the attaching map onto the attaching region</td>
+</tr>
+<tr>
+<td>attaching sphere, belt sphere</td>
+<td>$\varphi(S^{k-1}\times\{0\})\subseteq\partial W$ and $\{0\}\times S^{n-k-1}\subseteq\partial W'$</td>
+</tr>
+<tr>
+<td>$H^k_\varphi$</td>
+<td>the handle operator, $[W]\mapsto[W']$</td>
+</tr>
+<tr>
+<td>$\partial W'$</td>
+<td>the boundary of $W'$, the surgery of $\partial W$ along the attaching sphere</td>
+</tr>
+<tr>
+<td>$H_i(W',W)\cong\mathbb{Z}$ at $i=k$</td>
+<td>the relative homology of the handle</td>
+</tr>
+<tr>
+<td>$A = [\varphi(S^{k-1})]\in H_{k-1}(W)$</td>
+<td>the class killed in degree $k-1$; the free $\mathbb{Z}$ in degree $k$ if $A=0$</td>
+</tr>
+<tr>
+<td>$\chi(W') = \chi(W)+(-1)^k$</td>
+<td>the change of the Euler characteristic</td>
+</tr>
+<tr>
+<td>elementary expansion / collapse</td>
+<td>the chain-level form of the handle operator</td>
+</tr>
+<tr>
+<td>$c_k$, Morse inequalities</td>
+<td>the number of $k$-handles and the bounds $c_k\geq b_k$, $\sum(-1)^kc_k = \chi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John Milnor, <em>Lectures on the $h$-Cobordism Theorem</em> (Princeton University Press, 1965), for the handle decomposition, the cancellation and the Whitney trick.</li>
+<li>Stephen Smale, "On the Structure of Manifolds", <em>American Journal of Mathematics</em> 84 (1962), 387–399, for the handlebody theory and the $h$-cobordism theorem.</li>
+<li>Morris Hirsch, <em>Differential Topology</em> (Springer, 1976), for the Morse-theoretic reading and the equivalence with handle decompositions.</li>
+<li>John Milnor, <em>Morse Theory</em> (Princeton University Press, 1963), for the critical points, the index and the Morse inequalities of Part III's reading.</li>
+<li>Robion Kirby, "A Calculus for Framed Links in $S^3$", <em>Inventiones Mathematicae</em> 45 (1978), 35–56, for the handle moves of the Kirby calculus.</li>
+<li>Andrew Ranicki, <em>Algebraic and Geometric Surgery</em> (Oxford University Press, 2002), for the elementary expansion and collapse and the algebraic handle theory.</li>
+<li>C. T. C. Wall, <em>Surgery on Compact Manifolds</em> (Academic Press, 1970), for the handle operators in the surgery classification and the middle-dimensional cancellations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

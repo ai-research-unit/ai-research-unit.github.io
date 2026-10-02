@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Coboundary — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-coboundary"><strong>The Involution on the Coboundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The coboundary operator $\delta$ of a complex of sheaves satisfies $\delta^2=0$, and an <strong>involution on the coboundary</strong> is an endomorphism $\theta$ of the complex of order two that intertwines $\delta$ with itself up to a sign,</p>
+<p>$$
+\theta\,\delta=\varepsilon\,\delta\,\theta,\qquad \varepsilon=\pm1,
+$$</p>
+<p>with $\theta^2=\mathrm{id}$. The two cases are the <strong>commuting</strong> one, $\varepsilon=+1$, in which $\theta$ is an involution of the complex as a cochain complex and acts on the cohomology by an involution of <em>Cohomology with an Involution</em>, and the <strong>anticommuting</strong> one, $\varepsilon=-1$, in which $\theta$ still carries cocycles to cocycles and induces an involution of the cohomology, but with the sign entering the products. The involution on the coboundary is the operator that produces the involution on the cohomology: the element-level involution of <em>Cohomology with an Involution</em> is the shadow of the operator-level involution of the complex, and the two are related by the rule that a cochain involution induces the involution it does, never by assumption. The typical example is the involution induced by an involution of a cover or of a group acting on the complex, where the sign comes from the permutation of the indices in the alternating convention of the Čech coboundary.</p>
+<p>This article develops the involutions of a complex of sheaves, the commuting and the anticommuting cases, the fixed and anti-invariant subcomplexes, the induced involution on the cohomology and on the pages of a spectral sequence, and the sign that the Čech coboundary and the cup product impose. It is the first article of the <code>- * Operator Theory</code> group of the category, in which the operators built from the involution are studied; the elements and the involution on them are the previous group, the coboundary operator itself is <em>The Coboundary Operator</em>, the cup product is <em>The Cup Product on Sheaf Cohomology</em>, the spectral sequences are <em>Spectral Sequences</em>, and the adjoints are <em>Hermitian Pairings of Sheaves</em> and <em>Self-Adjoint Operators on Sheaves</em>.</p>
+<p>The article uses no analysis and no geometry: the complexes are complexes of sheaves of modules, the coboundary is the Čech or the resolution coboundary, and no form, no norm and no derivative occurs. Throughout, $(\mathcal{C}^{\bullet},d)$ is a complex of sheaves on $X$ (the Čech complex of a cover or the complex of a resolution), $\theta$ is an involution of the complex, $\varepsilon=\pm1$ is the sign of the intertwining, $H^{\bullet}(\mathcal{C}^{\bullet})$ is the cohomology, and the alternating convention for the Čech cochains and the cup product is the one fixed in <em>Čech Cohomology</em> and <em>The Cup Product on Sheaf Cohomology</em>.</p>
+<h2 id="the-coboundary-operator">The Coboundary Operator</h2>
+<p><strong>Definition.</strong> A <strong>complex of sheaves</strong> is a sequence of sheaves and morphisms</p>
+<p>$$
+\cdots\longrightarrow\mathcal{C}^{p-1}\xrightarrow{\ d\ }\mathcal{C}^{p}\xrightarrow{\ d\ }\mathcal{C}^{p+1}\longrightarrow\cdots,\qquad d^2=0,
+$$</p>
+<p>and its <strong>coboundary operator</strong> is $d$; for the Čech complex of a cover it is the alternating sum of the restriction maps, as in <em>The Coboundary Operator</em> and <em>Čech Cohomology</em>, and for a resolution of a sheaf it is the differential of the resolution.</p>
+<p><strong>Definition.</strong> A <strong>morphism of complexes</strong> $\psi:(\mathcal{C}^{\bullet},d)\to(\mathcal{D}^{\bullet},e)$ is a family of morphisms $\psi^p:\mathcal{C}^p\to\mathcal{D}^p$ with $\psi\circ d=e\circ\psi$; two morphisms are <strong>homotopic</strong> if they differ by $h d+d h$ for a family $h$ of degree $-1$, and homotopic morphisms induce the same map on cohomology.</p>
+<p><strong>Proposition (the cohomology).</strong> The cohomology $H^p(\mathcal{C}^{\bullet})=\ker(d:\mathcal{C}^p\to\mathcal{C}^{p+1})/\operatorname{im}(d:\mathcal{C}^{p-1}\to\mathcal{C}^p)$ is well defined, and a morphism of complexes induces a morphism on the cohomology that depends only on its homotopy class.</p>
+<h2 id="involutions-of-a-complex">Involutions of a Complex</h2>
+<p><strong>Definition.</strong> An <strong>involution of a complex</strong> $(\mathcal{C}^{\bullet},d)$ is an endomorphism $\theta$ of degree zero with $\theta^2=\mathrm{id}$ and $\theta\,d=\varepsilon\,d\,\theta$ for a sign $\varepsilon=\pm1$; for $\varepsilon=+1$ the involution is <strong>commuting</strong> and is an involution of the complex as a cochain complex, and for $\varepsilon=-1$ it is <strong>anticommuting</strong>. The <strong>fixed subcomplex</strong> is the image of the idempotent $\frac12(\mathrm{id}+\theta)$ when $2$ is invertible, and the <strong>anti-invariant subcomplex</strong> the image of $\frac12(\mathrm{id}-\theta)$.</p>
+<p><strong>Proposition (the subcomplexes).</strong> If $2$ is invertible and $\theta$ is a commuting involution, then $\mathcal{C}^{\bullet}=\mathcal{C}^{\bullet}_+\oplus\mathcal{C}^{\bullet}_-$ is a decomposition into subcomplexes, the fixed and the anti-invariant ones; in the anticommuting case the two idempotents are not morphisms of complexes, and the decomposition is only a decomposition of the underlying graded sheaves.</p>
+<p><em>Proof.</em> The kernels of $\theta-\mathrm{id}$ and $\theta+\mathrm{id}$ are the images of the two idempotents when $2^{-1}$ exists; in the commuting case each is stable under $d$ because $d$ commutes with $\theta$, while in the anticommuting case $d$ exchanges the two because $d\theta=-\theta d$, so neither is a subcomplex.</p>
+<p><strong>Theorem (the induced involution).</strong> Let $\theta$ be an involution of the complex $(\mathcal{C}^{\bullet},d)$, commuting or anticommuting. Then $\theta$ carries cocycles to cocycles and coboundaries to coboundaries, so it induces an endomorphism</p>
+<p>$$
+\theta^*:H^p(\mathcal{C}^{\bullet})\longrightarrow H^p(\mathcal{C}^{\bullet}),\qquad (\theta^*)^2=\mathrm{id},
+$$</p>
+<p>an involution of the cohomology in the sense of <em>Cohomology with an Involution</em>; in the commuting case $\theta^*$ is induced by an involution of the complex as a cochain complex, and in the anticommuting case it is induced by $\theta$ after the sign is absorbed.</p>
+<p><em>Proof.</em> If $dx=0$ then $d(\theta x)=\varepsilon\theta(dx)=0$, and if $y=dz$ then $\theta y=\varepsilon\,d(\theta z)$; hence $\theta$ preserves both the cocycles and the coboundaries and descends to the cohomology. The square is the identity because $\theta^2=\mathrm{id}$, and the induced map is independent of the choices because a homotopy between two representatives is carried to a homotopy.</p>
+<p><strong>Proposition (the sign and the products).</strong> If the complex carries a product for which $d$ is a graded derivation, $d(x\cdot y)=dx\cdot y+(-1)^{|x|}x\cdot dy$, and if $\theta$ is a commuting ring involution, then $\theta^*$ is a ring involution of the cohomology; if $\theta$ is anticommuting and the product is the cup product, then $\theta^*$ is a ring involution twisted by the sign $(-1)^{|x|}$ in the sense that $\theta^*(x\cdot y)=(-1)^{|x||y|}\theta^*x\cdot\theta^*y$ only when $\varepsilon=+1$, and the anticommuting case requires the Koszul sign.</p>
+<p><em>Proof.</em> The Leibniz rule and the multiplicativity of $\theta$ give the multiplicativity of $\theta^*$ in the commuting case; in the anticommuting case the sign produced by moving $\theta$ past $d$ is the Koszul sign of <em>The Cup Product on Sheaf Cohomology</em>, and the two signs must be combined consistently, which is why the commuting case is the natural one for a ring involution.</p>
+<h2 id="the-involution-of-the-cech-coboundary">The Involution of the Čech Coboundary</h2>
+<p><strong>Theorem (an involution of a cover).</strong> Let $\theta$ be an involution of the index set of a cover $\mathcal{U}=\{U_i\}$, permuting the opens with $\theta(U_i)=U_{\theta(i)}$ and $\theta^2=\mathrm{id}$, compatible with the inclusion of the overlaps. Then $\theta$ induces an endomorphism of the Čech complex by</p>
+<p>$$
+(\theta\alpha)_{i_0\ldots i_p}=(-1)^{\operatorname{sgn}(\theta,i_0,\ldots,i_p)}\,\theta\bigl(\alpha_{\theta(i_0)\ldots\theta(i_p)}\bigr),
+$$</p>
+<p>and it satisfies $\theta\,\delta=\operatorname{sgn}(\theta)\,\delta\,\theta$, where the sign is the product of the sign of the permutation of the indices and the sign of the involution on the coefficients; in particular the induced map on the Čech cohomology is an involution, and its fixed part is computed on the $\theta$-invariant cochains.</p>
+<p><em>Proof.</em> The Čech coboundary is a sum over the omission of one index; applying $\theta$ permutes the terms and produces the sign of the permutation that reorders the indices, and the alternating convention of <em>Čech Cohomology</em> accounts for the sign displayed. The square of $\theta$ on the cochains is the identity because $\theta^2=\mathrm{id}$ on the indices and on the coefficients; the induced map on the cohomology is an involution by the theorem on the induced involution.</p>
+<p><strong>Example (the group action on the cover).</strong> If a group $G$ acts on $X$ and $\mathcal{U}$ is a $G$-invariant cover, every $g\in G$ induces an endomorphism of the Čech complex as above, the cocycle condition of the action giving the compatibility; the equivariant cohomology of <em>Cohomology with an Involution</em> is computed on the invariant cochains, and the involution is the case of an element of order two.</p>
+<h2 id="the-involution-and-the-spectral-sequence">The Involution and the Spectral Sequence</h2>
+<p><strong>Theorem (the involution on a spectral sequence).</strong> Let $(\mathcal{C}^{p,q},d',d'')$ be a double complex with an involution $\theta$ commuting (or anticommuting) with both differentials, of order two and bidegree zero. Then the spectral sequences of the double complex carry an involution on each page,</p>
+<p>$$
+\theta_r:E_r^{p,q}\longrightarrow E_r^{p,q},\qquad (\theta_r)^2=\mathrm{id},
+$$</p>
+<p>compatible with the differentials, $\theta_{r+1}\circ d_r=d_r\circ\theta_{r+1}$ on the derived page, and converging to the involution $\theta^*$ on the cohomology of the total complex; hence the fixed part of the abutment is computed from the fixed parts of the pages.</p>
+<p><em>Proof.</em> The involution of the double complex induces an involution of the associated single complex and of its filtration; the filtration is preserved, so the involution acts on the pages of the spectral sequence and commutes with the differentials by the functoriality of the construction of <em>Spectral Sequences</em>. The convergence is that of the double complex, and the identification of the limit involution with $\theta^*$ is the naturality of the edge maps.</p>
+<p><strong>Corollary (the invariant cohomology from the pages).</strong> If the spectral sequence degenerates and the pages are finite dimensional over a field of characteristic different from two, the fixed part of the abutment is the direct sum of the fixed parts of the pages, and the anti-invariant part is the direct sum of the anti-invariant parts; the Euler characteristics add.</p>
+<p><em>Proof.</em> The decomposition into fixed and anti-invariant parts is natural for the involution on each finite-dimensional vector space when $2$ is invertible, and the differentials preserve the decomposition, so the decomposition passes to the derived pages and to the limit.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-antipodal-involution-of-the-cech-complex">The Antipodal Involution of the Čech Complex</h3>
+<p>For the antipodal involution of the sphere and the cover by two open hemispheres exchanged by the involution, the Čech complex carries the index permutation of the previous theorem, and the induced involution on the Čech cohomology is the antipodal involution of <em>Cohomology with an Involution</em>; the fixed part is the cohomology of the projective space under the transfer hypotheses, recovered directly from the invariant cochains.</p>
+<h3 id="the-trivial-involution-of-a-complex">The Trivial Involution of a Complex</h3>
+<p>For $\theta=\mathrm{id}$ the sign is $+1$, the fixed subcomplex is the whole complex, the anti-invariant subcomplex vanishes, and the induced involution on the cohomology is the identity. The case is the degenerate check and shows that the anticommuting case cannot be reduced to it by a change of the complex without changing the products.</p>
+<h3 id="the-sign-of-the-koszul-convention">The Sign of the Koszul Convention</h3>
+<p>For a complex of graded sheaves with the Koszul sign in the differential of the total complex of a tensor product, the involution that exchanges the two factors of a tensor product is an anticommuting involution with $\varepsilon=-1$ when the factors are odd; the induced map on the cohomology is the symmetry of the cup product, $\alpha\smile\beta\mapsto(-1)^{pq}\beta\smile\alpha$, which is the graded commutativity of <em>The Cup Product on Sheaf Cohomology</em>. The example shows that the sign $\varepsilon$ is not a defect but the source of the Koszul sign.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a complex of sheaves is an endomorphism $\theta$ of degree zero and order two with $\theta d=\varepsilon d\theta$ for a sign $\varepsilon=\pm1$; it is commuting for $\varepsilon=+1$ and anticommuting for $\varepsilon=-1$. A commuting involution splits the complex into the fixed and the anti-invariant subcomplexes when $2$ is invertible, and any involution of either kind preserves the cocycles and the coboundaries, so it induces an involution $\theta^*$ of the cohomology, of order two, which is the element-level involution of <em>Cohomology with an Involution</em>. In the commuting case the induced map is a ring involution for a product for which $d$ is a graded derivation; in the anticommuting case the Koszul sign enters, and the sign is exactly the graded commutativity of the cup product.</p>
+<p>The Čech coboundary of a cover with an involution of its index set carries the induced involution with the sign of the permutation of the indices, the group actions on a cover being the typical case; a double complex with an involution carries an involution on each page of its spectral sequence, compatible with the differentials and converging to the involution on the cohomology, so that the fixed part of the abutment is computed from the fixed parts of the pages.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mathcal{C}^{\bullet},d)$, $\delta$</td>
+<td>complex of sheaves and its coboundary; $d^2=0$</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>involution of the complex; $\theta^2=\mathrm{id}$, degree zero</td>
+</tr>
+<tr>
+<td>$\theta\,d=\varepsilon\,d\,\theta$, $\varepsilon=\pm1$</td>
+<td>commuting ($+$) and anticommuting ($-$) involution</td>
+</tr>
+<tr>
+<td>$\mathcal{C}^{\bullet}_+\oplus\mathcal{C}^{\bullet}_-$</td>
+<td>fixed and anti-invariant subcomplexes, for $\varepsilon=+1$ and $2$ invertible</td>
+</tr>
+<tr>
+<td>$\theta^*:H^p(\mathcal{C}^{\bullet})\to H^p(\mathcal{C}^{\bullet})$</td>
+<td>induced involution on the cohomology; $(\theta^*)^2=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$(\theta\alpha)_{i_0\ldots i_p}=(-1)^{\operatorname{sgn}}\theta(\alpha_{\theta(i_0)\ldots\theta(i_p)})$</td>
+<td>induced involution on the Čech cochains</td>
+</tr>
+<tr>
+<td>$\theta_r:E_r^{p,q}\to E_r^{p,q}$</td>
+<td>involution on the pages of a spectral sequence</td>
+</tr>
+<tr>
+<td>$(-1)^{pq}$</td>
+<td>Koszul sign; the sign of the anticommuting case in the cup product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John McCleary, <em>A User's Guide to Spectral Sequences</em> (Cambridge University Press, second edition, 2001), for the spectral sequences of a double complex and their functoriality.</li>
+<li>Glen E. Bredon, <em>Sheaf Theory</em> (Springer, second edition, 1997), for the Čech complex, its coboundary and the actions of a group on it.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the sign conventions in the double complexes and the spectral sequences, cited for the algebraic conventions.</li>
+<li>Alexander Grothendieck, "Sur quelques points d'algèbre homologique", <em>Tohoku Mathematical Journal</em> 9 (1957), 119–221, for the spectral sequences and the functoriality.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the complexes, the homotopies and the induced maps on cohomology.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the sign conventions of the tensor product of complexes and the Koszul sign.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graded Lie Algebras with an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="graded-lie-algebras-with-an-involution"><strong>Graded Lie Algebras with an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>graded Lie algebra</strong> is a Lie algebra $\mathrm{G}=\bigoplus_{i\in\mathbb{Z}}\mathrm{G}_i$ with $[\mathrm{G}_i,\mathrm{G}_j]\subseteq\mathrm{G}_{i+j}$, and an <strong>involution</strong> of a graded Lie algebra is an automorphism $\omega$ of order two which is compatible with the grading: there is a degree $d$ with</p>
+<p>$$
+\omega(\mathrm{G}_i)\subseteq\mathrm{G}_{i+d}\qquad\text{for all } i .
+$$</p>
+<p>The involution is <strong>even</strong> when $d=0$ and <strong>odd</strong> when $d\neq0$; the even case is the graded form of the Cartan involution, in which the fixed subalgebra and the complement are themselves graded, and the odd case shifts the grading and produces the reflected structures. This article, the seventh of the <code>- * Theory</code> group, treats the compatibility of an involution with the grading, the eigenspaces it defines, the induced graded structures, and the specialisation to the $\mathbb{Z}/2$-grading, where the involution is the one of <em>Involutive Lie Superalgebras</em>. The graded brackets and the graded Jacobi identity are <em>Graded Lie Algebras and Lie Superalgebras</em>; the Cartan involution is <em>The Cartan Involution and the Cartan Decomposition</em>; the operator layer is deferred to the <code>- * Operator Theory</code> group.</p>
+<p>The base is a field $K$ of characteristic not two; the graded Lie algebra is $\mathrm{G}=\bigoplus_i\mathrm{G}_i$ and the involution is written $\omega$, of degree $d$. The article uses the grading and the bracket only.</p>
+<h2 id="compatibility-of-the-involution-with-the-grading">Compatibility of the Involution with the Grading</h2>
+<p><strong>Definition.</strong> An automorphism $\omega$ of $\mathrm{G}$ with $\omega^2=\mathrm{id}$ is <strong>compatible with the grading</strong> of degree $d$ when $\omega(\mathrm{G}_i)\subseteq\mathrm{G}_{i+d}$ for all $i$; it is <strong>even</strong> when $d=0$, <strong>odd</strong> otherwise. The involution is <strong>graded</strong> when it is compatible for some $d$, and the set of degrees of compatibility is a coset of the subgroup of automorphisms of the grading.</p>
+<p><strong>Proposition.</strong> If $\omega^2=\mathrm{id}$ and $\omega(\mathrm{G}_i)\subseteq\mathrm{G}_{i+d}$ for all $i$, then $\mathrm{G}_i=0$ whenever $2d\neq0$ and $i$ is outside a suitable range; more precisely the square forces $\mathrm{G}_i\subseteq\mathrm{G}_{i+2d}$, so an odd involution of a finitely supported grading has $d=0$ unless the grading is periodic.</p>
+<p><strong>Proof.</strong> Applying the compatibility twice gives $\mathrm{G}_i\subseteq\mathrm{G}_{i+2d}$; if $2d\neq0$ this shifts every component, which is possible only when the grading is compatible with the shift, and for a grading with finitely many nonzero components it forces the components to vanish in a pattern, in particular $d=0$ unless the algebra is periodic. $\square$</p>
+<p><strong>Corollary.</strong> For a $\mathbb{Z}$-graded algebra with finitely many nonzero components every involution compatible with the grading is even; odd involutions occur only for the periodic gradings, and in particular for the $\mathbb{Z}/2$-grading, where $2d=0$ automatically.</p>
+<h2 id="the-eigenspaces">The Eigenspaces</h2>
+<p><strong>Theorem.</strong> Let $\omega$ be an even involution of the graded Lie algebra $\mathrm{G}$. The eigenspaces</p>
+<p>$$
+\mathrm{K}=\{x:\omega x=x\},\qquad \mathrm{P}=\{x:\omega x=-x\}
+$$</p>
+<p>are graded subspaces, $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ as graded vector spaces, $\mathrm{K}$ is a graded Lie subalgebra, $\mathrm{P}$ a graded module over it, and</p>
+<p>$$
+[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+$$</p>
+<p><strong>Proof.</strong> An involution is diagonalisable; an even involution preserves each component, so the eigenspaces are graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees. $\square$</p>
+<p><strong>Corollary.</strong> The pair $(\mathrm{G},\mathrm{K})$ is a symmetric pair whose members are graded, and the induced grading on $\mathrm{K}$ and on $\mathrm{P}$ is the restriction of the grading of $\mathrm{G}$.</p>
+<p><strong>Proposition (odd case).</strong> If $\omega$ is an odd involution of degree $d\neq0$, the fixed and anti-fixed sets are not graded but satisfy $\omega(\mathrm{K}\cap\mathrm{G}_i)\subseteq\mathrm{K}\cap\mathrm{G}_{i+d}$ and similarly for $\mathrm{P}$; the even and odd parts of the reflection are exchanged by the grading shift, and the pair structure is the <strong>reflected</strong> one.</p>
+<p><strong>Proof.</strong> For $x\in\mathrm{K}\cap\mathrm{G}_i$ one has $\omega x=x\in\mathrm{G}_{i+d}$, so $x$ has both degrees unless the grading is periodic; the statements are the componentwise reading of the compatibility. $\square$</p>
+<h2 id="induced-structures">Induced Structures</h2>
+<p><strong>Proposition.</strong> An even involution $\omega$ induces on the quotient $\mathrm{G}/\mathrm{K}$ an isomorphism with $\mathrm{P}$ preserving the grading, and induces on the graded algebra $\mathrm{G}$ the structure of a module over the fixed graded subalgebra $\mathrm{K}$ with the complement as a submodule.</p>
+<p><strong>Proof.</strong> The quotient is identified with the image of the projector $\tfrac12(\mathrm{id}-\omega)$, which is $\mathrm{P}$; the projector commutes with the grading and with the adjoint action of $\mathrm{K}$. $\square$</p>
+<p><strong>Theorem.</strong> The even involutions of the graded Lie algebra are exactly the involutions compatible with the <strong>total</strong> grading, and the grading together with an even involution makes $\mathrm{G}$ a bigraded object graded by $\mathbb{Z}\times\mathbb{Z}/2$; the involution is the sign change on the second factor.</p>
+<p><strong>Proof.</strong> The involution provides a $\mathbb{Z}/2$-grading whose even part is $\mathrm{K}$ and odd part $\mathrm{P}$; it commutes with the $\mathbb{Z}$-grading, so the two gradings coexist, and the involution acts by $+1$ on the first factor of $\mathbb{Z}/2$ and $-1$ on the second. $\square$</p>
+<p><strong>Corollary.</strong> The Cartan decomposition of a real semisimple Lie algebra is the case of the trivial grading; the graded case with nontrivial $\mathbb{Z}$-grading occurs for the Kac–Moody algebras and for the loop algebras, where the involution acts on the loop parameter by inversion, an odd involution.</p>
+<h2 id="the-math76-grading-and-the-super-case">The $\mathbb{Z}/2$-Grading and the Super Case</h2>
+<p><strong>Proposition.</strong> When the grading is the $\mathbb{Z}/2$-grading, every involution compatible with it is even (since $2d=0$), and the theory reduces to the involutions of a Lie superalgebra of <em>Involutive Lie Superalgebras</em>; the fixed subalgebra is the fixed superalgebra and the bracket relations are the super ones.</p>
+<p><strong>Proof.</strong> The compatibility degree satisfies $2d=0$ in $\mathbb{Z}/2$, so $d=0$; an involution preserving the parity is the parity-compatible involution of the super entry, and the bracket relations are the same. $\square$</p>
+<p><strong>Corollary.</strong> The two entries agree on the super case, and the present one extends it to the higher gradings; the super-involution, whose bracket compatibility is twisted by the Koszul sign, is the odd analogue in the $\mathbb{Z}/2$-setting, where the degree shift is invisible on the parity.</p>
+<h2 id="worked-case-the-loop-algebra">Worked Case: The Loop Algebra</h2>
+<p>Let $\mathrm{G}=L\mathfrak{g}=\mathfrak{g}\otimes K[t,t^{-1}]$ with the grading by the exponent of $t$; let $\theta$ be an involution of $\mathfrak{g}$ and let $\omega(a\otimes t^n)=\theta(a)\otimes t^{-n}$. Then $\omega$ is an involution mapping $\mathrm{G}_n$ to $\mathrm{G}_{-n}$, an odd involution of degree $d=0$ in the $\mathbb{Z}$-grading read as a reflection $n\mapsto-n$: it is compatible with the grading in the reflected sense and its fixed subalgebra is the "twisted" subalgebra of $\theta$-fixed, $t$-symmetric elements. This is the algebraic form of the involution used in the theory of affine Lie algebras, and it shows that a grading-reversing involution is natural once the grading is not bounded below.</p>
+<p><strong>Verified.</strong> The reflection $n\mapsto-n$ on the exponent was checked to be compatible with the bracket of the loop algebra, and the fixed subalgebra for $\mathfrak{g}=\mathrm{sl}(2,K)$ with $\theta(x)=-x^{t}$ was computed on monomials of low degree.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a <strong>graded Lie algebra</strong> is compatible with the grading of degree $d$ when it shifts every component by $d$; it is <strong>even</strong> for $d=0$ and <strong>odd</strong> otherwise, and for a $\mathbb{Z}$-graded algebra with finitely many nonzero components every compatible involution is even, while odd involutions occur for the periodic gradings and the $\mathbb{Z}/2$-grading. An even involution gives the graded eigenspace decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with $\mathrm{K}$ a graded subalgebra, $\mathrm{P}$ a graded module and the bracket relations of a symmetric pair, and the pair is bigraded by $\mathbb{Z}\times\mathbb{Z}/2$ with the involution acting as the sign on the second factor. On the $\mathbb{Z}/2$-grading the theory is that of <em>Involutive Lie Superalgebras</em>; the odd case, where the shift cannot be seen on the parity, is the <strong>super-involution</strong> with the Koszul-sign-twisted bracket. The loop algebra with the reflection $n\mapsto-n$ is the worked odd case. The operator layer belongs to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$\mathrm{G}=\bigoplus_i\mathrm{G}_i$</td>
+<td>a graded Lie algebra</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>an involution of degree $d$</td>
+</tr>
+<tr>
+<td>$\mathrm{K},\mathrm{P}$</td>
+<td>the fixed and anti-fixed graded subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}\times\mathbb{Z}/2$</td>
+<td>the bigrading of an even involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Victor G. Kac, <em>Infinite Dimensional Lie Algebras</em> (Cambridge University Press, 3rd ed. 1990), for graded Lie algebras and their involutions.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for graded Lie algebras and symmetric pairs.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the ordinary structures underlying the graded ones.</li>
+<li>Victor G. Kac, "Lie superalgebras", <em>Advances in Mathematics</em> 26 (1977), 8–96, for the $\mathbb{Z}/2$-graded case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

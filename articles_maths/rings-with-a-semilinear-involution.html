@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rings with a Semilinear Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rings-with-a-semilinear-involution"><strong>Rings with a Semilinear Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a ring is <strong>linear</strong> over the ring, and its twisting of the elements is only the reversal of products. When the ring carries an automorphism $\varsigma$, one may ask for a map that reverses products <em>and</em> intertwines $\varsigma$ with its inverse, a <strong>$\varsigma$-semilinear involution</strong>; the linear case is the case $\varsigma = \mathrm{id}$. The name is borrowed from the semilinear maps of a module, where a coefficient $\lambda$ is carried to $\varsigma(\lambda)$, and the point of the notion is that the naive identities then fail: the composite $\sigma\varsigma$ is an ordinary involution rather than the product of two, the map $\sigma$ commutes with $\varsigma$ only when $\varsigma^2 = \mathrm{id}$, and the fixed set of $\sigma$ need not be stable under $\varsigma$.</p>
+<p>This article defines the semilinear involution of a ring, derives the identities that do hold, and records the failure of the ones a reader would expect; the map $\sigma\varsigma$ it produces is the ordinary involution to which the whole corpus applies. It assumes <em>Involutive Rings</em> for the involution, the fixed set and the symmetric and skew elements, and <em>Ring and Field Automorphisms</em> for the automorphism group; the semilinear involutions of a linear space and of an algebra over a field are treated with the linear structures of a later category and are named here only at the boundary. Throughout, $A$ is a ring with $1 \neq 0$, $\varsigma$ is an automorphism of $A$, and $\sigma$ is a $\varsigma$-semilinear involution; the ordinary involution attached to the pair is $\tau = \sigma\varsigma$. Nothing is measured, and no form or scalar product occurs.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>Definition.</strong> Let $\varsigma$ be an automorphism of the ring $A$. A <strong>$\varsigma$-semilinear involution</strong> of $A$ is a map $\sigma : A \to A$ such that for all $a, b \in A$</p>
+<p>$$
+\sigma(a+b) = \sigma(a)+\sigma(b), \quad \sigma(ab) = \sigma(b)\sigma(a), \quad \sigma(1) = 1, \quad \sigma^2 = \mathrm{id}, \quad \sigma\varsigma = \varsigma^{-1}\sigma .
+$$</p>
+<p>The last condition is the <strong>semilinearity</strong>: $\sigma$ carries the automorphism $\varsigma$ to its inverse. When $\varsigma = \mathrm{id}$ the definition reduces to that of an ordinary involution, so the linear case is the case of a trivial twisting automorphism.</p>
+<p><strong>Proposition (elementary).</strong> Let $\sigma$ be $\varsigma$-semilinear. Then $\sigma$ is a bijection with $\sigma^{-1} = \sigma$, it is $\mathbb{Z}$-linear, it satisfies $\sigma(a^n) = \sigma(a)^n$, and it carries units to units. Moreover</p>
+<p>$$
+\sigma\varsigma = \varsigma^{-1}\sigma, \qquad \varsigma\sigma = \sigma\varsigma^{-1}, \qquad \sigma\varsigma^2 = \varsigma^{-2}\sigma, \qquad \sigma\varsigma^{k} = \varsigma^{-k}\sigma
+$$</p>
+<p>for every integer $k$.</p>
+<p><strong>Proof.</strong> Bijectivity and the power law are as for an involution. The second display follows from the first by composing with $\varsigma$ on the left and using $\varsigma^{-1}\varsigma = \mathrm{id}$: $\varsigma\sigma\varsigma = \sigma$, so $\varsigma\sigma = \sigma\varsigma^{-1}$. The third and fourth are obtained by iterating the second, $\sigma\varsigma^k = \varsigma^{-k}\sigma$ for all $k$.</p>
+<h2 id="the-attached-ordinary-involution">The Attached Ordinary Involution</h2>
+<p><strong>Theorem.</strong> Let $\sigma$ be a $\varsigma$-semilinear involution and put $\tau = \sigma\varsigma$. Then $\tau$ is an <strong>ordinary involution</strong> of $A$, $\sigma = \tau\varsigma^{-1}$, and the automorphisms $\varsigma$ and $\sigma$ generate the dihedral group</p>
+<p>$$
+\langle \varsigma, \sigma \rangle = \{\varsigma^k, \sigma\varsigma^k : k \in \mathbb{Z}\}, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma\varsigma\sigma^{-1} = \varsigma^{-1}.
+$$</p>
+<p><strong>Proof.</strong> $\tau$ is additive and carries $1$ to $1$; it is anti-multiplicative, $\tau(ab) = \sigma(\varsigma(ab)) = \sigma(\varsigma(a)\varsigma(b)) = \sigma(\varsigma(b))\sigma(\varsigma(a)) = \tau(b)\tau(a)$; and $\tau^2 = \sigma\varsigma\sigma\varsigma = \sigma(\varsigma\sigma)\varsigma = \sigma(\sigma\varsigma^{-1})\varsigma = \varsigma^{-1}\varsigma = \mathrm{id}$, using the second identity of the previous proposition. The formula $\sigma = \tau\varsigma^{-1}$ is then immediate. The relation $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$ is the semilinearity with $\sigma^{-1} = \sigma$, and together with $\sigma^2 = \mathrm{id}$ it presents $\langle \varsigma, \sigma \rangle$ as the semidirect product $\langle \varsigma \rangle \rtimes \langle \sigma \rangle$, the dihedral group of order $2m$ when $\varsigma$ has finite order $m$ and an infinite dihedral group otherwise.</p>
+<p><strong>Corollary (the ordinary case recovered).</strong> The map $\sigma$ satisfies $\sigma\varsigma = \varsigma\sigma$ exactly when $\varsigma^2 = \mathrm{id}$, and then $\tau = \sigma\varsigma$ is the composite of the two commuting involutions $\sigma$ and $\varsigma$ of $A$. The $\varsigma$-semilinear involutions of $A$ are exactly the maps $\tau\varsigma^{-1}$ with $\tau$ an ordinary involution of $A$ satisfying $\tau\varsigma = \varsigma^{-1}\tau$.</p>
+<p><strong>Proof.</strong> $\sigma\varsigma = \varsigma\sigma$ is exactly $\varsigma^{-1} = \varsigma$, that is $\varsigma^2 = \mathrm{id}$; then $\tau = \sigma\varsigma$ is the composite of the two commuting order-two maps $\sigma$ and $\varsigma$. For the parametrisation, an ordinary involution $\tau$ gives $\sigma = \tau\varsigma^{-1}$, and $\sigma^2 = \tau\varsigma^{-1}\tau\varsigma^{-1}$ is $\mathrm{id}$ exactly when $\tau\varsigma^{-1}\tau = \varsigma$, that is, composing on the left by $\tau$, when $\varsigma^{-1}\tau = \tau\varsigma$; the remaining axioms are immediate.</p>
+<h2 id="the-failure-of-the-naive-identities">The Failure of the Naive Identities</h2>
+<p>The semilinear case is not the linear one with a decoration: four identities that hold when $\varsigma = \mathrm{id}$ fail as soon as the twisting is nontrivial.</p>
+<p><strong>Proposition.</strong> Let $\sigma$ be $\varsigma$-semilinear.</p>
+<p><strong>(a)</strong> $\sigma$ is $\varsigma$-<strong>linear</strong> ($\sigma\varsigma = \varsigma\sigma$) exactly when $\varsigma^2 = \mathrm{id}$; otherwise $\sigma$ intertwines $\varsigma$ with $\varsigma^{-1}$ and is not a semilinear map for $\varsigma$ in the usual sense of a module.</p>
+<p><strong>(b)</strong> The naive composite rule fails: whereas $\sigma^2\varsigma^2 = \varsigma^2$, the true composite is $(\sigma\varsigma)^2 = \mathrm{id}$ for every $\varsigma$.</p>
+<p><strong>(c)</strong> $\sigma$ commutes with $\varsigma^2$ exactly when $\varsigma^4 = \mathrm{id}$, because $\sigma\varsigma^2 = \varsigma^{-2}\sigma$.</p>
+<p><strong>(d)</strong> The fixed set $A^\sigma = \{a : \sigma(a) = a\}$ is an additive subgroup containing $1$, but it is stable under $\varsigma$ exactly when $\varsigma^2 = \mathrm{id}$ on $A^\sigma$; for $a \in A^\sigma$ one has $\sigma(\varsigma(a)) = \varsigma^{-1}(a)$, so $\varsigma(a)$ is again fixed exactly when $\varsigma^2(a) = a$.</p>
+<p><strong>Proof.</strong> (a) is the first identity of the previous proposition. (b) is the computation of the theorem. (c) is $\sigma\varsigma^2 = \varsigma^{-2}\sigma$, which is $\varsigma^2\sigma$ exactly when $\varsigma^{-2} = \varsigma^2$. (d) $A^\sigma$ is additive because $\sigma$ is, and contains $1$; for the stability, compute $\sigma(\varsigma(a)) = \varsigma^{-1}\sigma(a) = \varsigma^{-1}(a)$, which is $\varsigma(a)$ exactly when $\varsigma^2(a) = a$.</p>
+<p><strong>Proposition (the fixed set is not a subring in general).</strong> For $a, b \in A^\sigma$ one has $\sigma(ab) = \sigma(b)\sigma(a) = ba$, so $ab$ is fixed exactly when $a$ and $b$ commute. This is the same failure as for an ordinary involution of a noncommutative ring, and it is inherited from $\tau = \sigma\varsigma$: $A^\sigma$ is the fixed set of the ordinary involution $\tau$ composed with $\varsigma$.</p>
+<p><strong>Proof.</strong> The computation is the anti-multiplicativity of $\sigma$ on fixed elements; the fixed set of $\sigma$ is the image of the fixed set of $\tau$, $A^\sigma = \varsigma(A^\tau)$, because $\sigma(a) = a$ is equivalent to $\tau(\varsigma^{-1}(a)) = a$, that is to $\varsigma^{-1}(a) \in A^\tau$.</p>
+<p><strong>Remark.</strong> If $A$ is an $S$-algebra and the automorphism $\varsigma$ extends an automorphism $\varsigma_0$ of $S$ acting on the scalars, and if in addition $\sigma$ is $S$-semilinear in the module sense, $\sigma(sa) = \varsigma_0(s)\sigma(a)$, then $\sigma$ restricts to $\varsigma_0$ on the scalars and its fixed set is only an $S^{\varsigma_0}$-module; this is the semilinear involution of the linear structures of a later category, whose treatment is not repeated here.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial twist.</strong> $\varsigma = \mathrm{id}$ gives the ordinary involutions of <em>Involutive Rings</em>: the transpose, the conjugate transpose, the group-ring inversion. Every statement above specialises to the known one.</p>
+<p><strong>(b) The transpose twisted by a symmetric unit.</strong> On $A = M_n(R)$ let $\varsigma(X) = GXG^{-1}$ be the inner automorphism of a unit $G$ with $G^{\mathrm t} = G$. The transpose $T(X) = X^{\mathrm t}$ satisfies</p>
+<p>$$
+T\varsigma(X) = G^{-\mathrm t}X^{\mathrm t}G^{\mathrm t} = G^{-1}X^{\mathrm t}G = \varsigma^{-1}T(X),
+$$</p>
+<p>since $G^{\mathrm t} = G$; so $T$ is a $\varsigma$-semilinear involution and $\tau = T\varsigma$ is the ordinary involution $X \mapsto G^{-1}X^{\mathrm t}G$. For $G$ with $G^{\mathrm t} = -G$, $G^2 = -1$ this $\tau$ is the symplectic involution of <em>Matrix Rings with an Involution</em>.</p>
+<p><strong>(c) A group ring.</strong> Let $A = K[G]$ and let $\varsigma$ be induced by an automorphism $\phi$ of $G$; the inversion map $\sigma(g) = g^{-1}$ extended linearly satisfies $\sigma\varsigma\sigma^{-1}(g) = \sigma\varsigma(g^{-1}) = \sigma(\phi(g)^{-1}) = \phi(g)$, so $\sigma\varsigma\sigma^{-1} = \varsigma$ and not $\varsigma^{-1}$ unless $\phi$ is the identity; thus inversion is $\varsigma$-semilinear only for the trivial twist, and the semilinear involutions of a group ring come from $\tau\varsigma^{-1}$ with $\tau$ the inverse composed with an anti-automorphism of $G$, as in <em>Involutions of a Group Ring</em>.</p>
+<p><strong>(d) A quadratic twist.</strong> On $A = K \times K$ with $\varsigma(a,b) = (b,a)$ of order two, set $\sigma(a,b) = (b,a)$; then $\sigma\varsigma = \mathrm{id}$-componentwise, $\sigma^2 = \mathrm{id}$ and $\sigma\varsigma = \varsigma\sigma = \varsigma$, so $\sigma$ is a $\varsigma$-semilinear involution with $\tau = \sigma\varsigma = \mathrm{id}$, the trivial ordinary involution.</p>
+<p><strong>Example (the dihedral reading).</strong> The relations $\sigma^2 = \mathrm{id}$, $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$ are the presentation of the dihedral group, so a ring with a $\varsigma$-semilinear involution is a ring with an action of a dihedral group, and the semilinear involution is the reflection of that action. This is the same reflection that <em>Reflections as Signed Two-Sided Operators on a Ring</em> reads as an operator, and the two are the element-level and the operator-level faces of one structure.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>$\varsigma$-semilinear involution</strong> of a ring $A$ is an additive anti-multiplicative map $\sigma$ with $\sigma(1) = 1$, $\sigma^2 = \mathrm{id}$ and $\sigma\varsigma = \varsigma^{-1}\sigma$, where $\varsigma$ is an automorphism; the ordinary involution is the case $\varsigma = \mathrm{id}$. The composite $\tau = \sigma\varsigma$ is an <strong>ordinary involution</strong>, $\sigma = \tau\varsigma^{-1}$, and $\varsigma, \sigma$ generate the dihedral group $\langle \varsigma, \sigma\rangle$ with $\sigma^2 = \mathrm{id}$ and $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$; the semilinear involutions are parametrised by the ordinary involutions $\tau$ with $\tau\varsigma\tau = \varsigma^{-1}$, a condition that is automatic when $\varsigma^2 = \mathrm{id}$.</p>
+<p>The naive identities fail for a nontrivial twist: $\sigma$ commutes with $\varsigma$ exactly when $\varsigma^2 = \mathrm{id}$, the composite $\sigma\varsigma$ has order two although $\sigma^2\varsigma^2 = \varsigma^2$, the map $\sigma$ commutes with $\varsigma^2$ exactly when $\varsigma^4 = \mathrm{id}$, and the fixed set $A^\sigma$ is an additive subgroup containing $1$ that fails to be a subring as for any involution and fails to be $\varsigma$-stable unless $\varsigma^2 = \mathrm{id}$ on it. Over a coefficient ring the semilinearity is genuine: $\sigma$ restricts to $\varsigma$ on the scalars and its fixed set is only linear over the fixed ring of $\varsigma$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>Ring with $1 \neq 0$, not assumed commutative</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>Automorphism of $A$; the twisting automorphism</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>$\varsigma$-semilinear involution</td>
+</tr>
+<tr>
+<td>$\sigma\varsigma = \varsigma^{-1}\sigma$</td>
+<td>Semilinearity</td>
+</tr>
+<tr>
+<td>$\tau = \sigma\varsigma$</td>
+<td>Attached ordinary involution; $\sigma = \tau\varsigma^{-1}$</td>
+</tr>
+<tr>
+<td>$\sigma^2 = \mathrm{id}$, $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$</td>
+<td>Dihedral relations; $\langle\varsigma,\sigma\rangle$ dihedral</td>
+</tr>
+<tr>
+<td>$A^\sigma$</td>
+<td>Fixed set of $\sigma$; additive subgroup, not stable under $\varsigma$ in general</td>
+</tr>
+<tr>
+<td>$\sigma\varsigma^2 = \varsigma^{-2}\sigma$</td>
+<td>$\sigma$ centralises $\varsigma^2$ iff $\varsigma^4 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$G^{\mathrm t} = G$</td>
+<td>Condition on a unit making the transpose semilinear for the inner twist</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for involutions of rings and the generalities that the semilinear case specialises.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for automorphisms and anti-automorphisms of a ring and their commutation relations.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for semilinear maps, twisted forms and the descent along an automorphism.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for order-two automorphisms, their fixed rings and the dihedral actions they generate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

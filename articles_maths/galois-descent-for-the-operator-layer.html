@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galois Descent for the Operator Layer — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="galois-descent-for-the-operator-layer"><strong>Galois Descent for the Operator Layer</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>descent datum</strong> on the operator layer is the semilinear action of the Galois group by algebra automorphisms of <em>Real Structures on the Operator Layer</em>, and a <strong>descent datum on a module</strong> over the layer is a module with an action of the group compatible with the operators. The <strong>effective descent</strong> is the theorem that the modules over the descended operator layer are exactly the modules over the layer with an effective datum, the functor being the base change and the quasi-inverse the invariants; it is the descent of Part I's <em>Descent Theory</em> read on the operator layer, and it is the tool with which the $\mathcal{D}$-modules of an operator layer over $L$ are recovered from the data over $L$. This article fixes the descent data on the algebra and on the modules, the equivalence of the effective descent, the descent of the $\mathcal{D}$-module structure, and the obstruction detected by the group cohomology, and it is the second and last article of the <code>- * Operator Theory</code> group.</p>
+<p>The article uses the conjugation and the fixed operators of <em>Real Structures on the Operator Layer</em>, the operator layer of <em>The Sheaf of Differential Operators</em>, the descent of the sheaves of the projected <em>Equivariant Sheaves and Descent</em> and <em>Galois Descent for Sheaves</em> of the category <em>Sheaves and Cohomology</em>, the involution on the cohomology of <em>The Galois Action on the Cohomology</em>, Part I's <em>Descent Theory</em>, <em>Group Cohomology</em> and <em>Galois Cohomology</em>, and the descent of an algebra with its forms of <em>Real Forms and the Descent of an Algebra</em>. The de Rham complex and the $\mathcal{D}$-module structure are those of <em>The Sheaf of Differential Operators</em> and <em>Sheaves in Algebraic Geometry</em>.</p>
+<p>Throughout $L/k$ is a finite Galois extension with group $G$, $X$ is a variety over $k$, $\mathcal{D} = \mathcal{D}_{X_L}$ is the operator layer with the conjugation $\mathrm{ad}_\sigma$ of <em>Real Structures on the Operator Layer</em>, and the fixed algebra is $\mathcal{D}^G = \mathcal{D}_X$.</p>
+<h2 id="descent-data-for-the-operator-layer">Descent Data for the Operator Layer</h2>
+<h3 id="the-descent-datum-on-the-algebra">The Descent Datum on the Algebra</h3>
+<p><strong>Definition.</strong> A <strong>descent datum</strong> on the operator layer $\mathcal{D}$ is a semilinear action of $G$ by algebra automorphisms,
+$$
+\mathrm{ad}_\sigma : \mathcal{D}\to\mathcal{D}, \qquad
+\mathrm{ad}_\sigma(ST) = \mathrm{ad}_\sigma(S)\mathrm{ad}_\sigma(T), \qquad
+\mathrm{ad}_\sigma(fT) = \sigma(f)\,\mathrm{ad}_\sigma(T),
+$$
+with $\mathrm{ad}_{\sigma\tau} = \mathrm{ad}_\sigma\circ\mathrm{ad}_\tau$, as in <em>Real Structures on the Operator Layer</em>. The datum is <strong>effective</strong> when there is an algebra $\mathcal{D}_0$ over $k$ with an isomorphism of algebras with the action
+$$
+\mathcal{D}\cong\mathcal{D}_0\otimes_kL
+$$
+under which $\mathrm{ad}_\sigma$ is the action on the second factor, $\mathrm{ad}_\sigma(d\otimes\ell) = d\otimes\sigma(\ell)$.</p>
+<p><strong>Theorem (the descent of the algebra).</strong> The descent data on the operator layer $\mathcal{D}$ correspond to the $k$-algebras $\mathcal{D}_0$ with $\mathcal{D}_0\otimes_kL\cong\mathcal{D}$, the correspondence sending $\mathcal{D}_0$ to the action on the second factor, and the fixed algebra is the descender:
+$$
+\mathcal{D}^{G} = \mathcal{D}_0 .
+$$
+Every descent datum on the operator layer of a variety is effective, and the descended algebra is the operator layer $\mathcal{D}_X$ of the descended variety.</p>
+<p><em>Proof.</em> The fixed algebra of the semilinear action on $\mathcal{D}_0\otimes_kL$ is $\mathcal{D}_0$, by the fixed-point theorem of <em>The Galois Action as an Operator</em> applied to the coefficients; conversely a descent datum gives an algebra structure on the invariants whose base change is $\mathcal{D}$ by the descent of the modules of Part I's <em>Descent Theory</em>. The effectivity is the descent theorem for algebras with a semilinear action, <em>Real Forms and the Descent of an Algebra</em>, the action here being by algebra automorphisms; the descended algebra is the operator layer of the descended variety by the invariant theorem of <em>Real Structures on the Operator Layer</em>.</p>
+<h3 id="the-descent-datum-on-a-module">The Descent Datum on a Module</h3>
+<p><strong>Definition.</strong> A <strong>descent datum</strong> on a $\mathcal{D}$-module $M$ is an action of $G$ on $M$ by additive maps such that
+$$
+g(\ell m) = \sigma_g(\ell)\,g(m), \qquad g(Tm) = \mathrm{ad}_g(T)\,g(m)
+$$
+for $g\in G$, $\ell\in L$, $T\in\mathcal{D}$ and $m\in M$; the first identity is the semilinearity and the second is the compatibility with the operators. A $\mathcal{D}$-module with such a datum is a $(\mathcal{D},G)$-<strong>module</strong>, or an <strong>equivariant</strong> $\mathcal{D}$-module. The datum is <strong>effective</strong> when there is a $\mathcal{D}_X$-module $M_0$ with an isomorphism of $(\mathcal{D},G)$-modules
+$$
+M\cong M_0\otimes_kL .
+$$</p>
+<p><strong>Proposition (the datum on the structure sheaf).</strong> The structure sheaf $\mathcal{O}_{X_L}$, with the $\mathcal{D}$-module structure of <em>The Sheaf of Differential Operators</em>, carries the descent datum of the semilinear action on the functions, and it is effective, with descended module $\mathcal{O}_X$:
+$$
+\mathcal{O}_{X_L}\cong\mathcal{O}_X\otimes_kL .
+$$</p>
+<p><em>Proof.</em> The functions form the natural $\mathcal{D}$-module, the action on them is the semilinear action of <em>The Galois Action as an Operator</em> and is compatible with the operators by the definition of $\mathrm{ad}_g$ as the conjugation; the descended module is the invariant functions $\mathcal{O}_X$, by the fixed-point theorem.</p>
+<p><strong>Example (the Weyl algebra and its modules).</strong> For the affine line and the Weyl algebra $A_1$ of <em>Real Structures on the Operator Layer</em>, a module over $A_1(L)$ with a semilinear $G$-action compatible with the operators is the base change of a module over $A_1(k)$ exactly when the action is effective; the module $A_1(L)$ itself and the structure sheaf $L[x]$ are effective, while a module with the twist $i\partial$ acting with a sign is the base change of a module over $A_1(k)$ only after the coefficient field is enlarged. The descent computes the $A_1(k)$-modules from the $A_1(L)$-modules and their data.</p>
+<h2 id="the-effective-descent">The Effective Descent</h2>
+<h3 id="the-equivalence-of-categories">The Equivalence of Categories</h3>
+<p><strong>Theorem (the effective descent of the operator modules).</strong> Let $L/k$ be a finite Galois extension with group $G$ and let $\mathcal{D}=\mathcal{D}_{X_L}$ be the operator layer with the conjugation. Then the base-change functor
+$$
+M_0\longmapsto M_0\otimes_kL, \qquad T(m\otimes\ell) = (Tm)\otimes\ell,
+$$
+is an equivalence of categories from the quasi-coherent $\mathcal{D}_X$-modules to the quasi-coherent $\mathcal{D}$-modules with an effective descent datum, with quasi-inverse the invariants
+$$
+M\longmapsto M^{G} = \{m\in M : g(m) = m \text{ for all } g\in G\} .
+$$</p>
+<p><em>Proof.</em> On an affine chart the statement is the descent of the modules of Part I's <em>Descent Theory</em> with the additional compatibility with the operators, which is preserved by the invariants because the action on the operators is by algebra automorphisms; the two functors are inverse on the objects with a datum by the unit and the counit of the adjunction, and the compatibility of the operators is checked on the generators. The global statement follows by glueing over a $G$-stable affine cover, which exists because $G$ is finite.</p>
+<p><strong>Corollary (the category of the $\mathcal{D}$-modules as the invariants).</strong> The category of the $\mathcal{D}_X$-modules is equivalent to the category of the $\mathcal{D}$-modules with an effective descent datum, and it is the category of the $G$-invariants of the operator modules,
+$$
+\mathcal{D}_X\text{-mod}\ \simeq\ \bigl(\mathcal{D}\text{-mod}\bigr)^{G} ,
+$$
+the equivalence sending $M_0$ to the module with the action on the second factor and its quasi-inverse sending $M$ to the invariants $M^G$.</p>
+<p><em>Proof.</em> The equivalence is the theorem, and the second description is the reading of the same equivalence as the fixed category under the action: a module with an effective datum is a module with a $G$-action, and the invariants are the descended module.</p>
+<h3 id="the-descent-of-the-math82-module-structure">The Descent of the $\mathcal{D}$-Module Structure</h3>
+<p><strong>Theorem (the descended structure).</strong> Let $M$ be a $\mathcal{D}$-module with an effective descent datum and let $M_0 = M^G$ be the descended module. Then $M_0$ is a $\mathcal{D}_X$-module for the fixed algebra $\mathcal{D}_X = \mathcal{D}^G$, the action
+$$
+\mathcal{D}_X\times M_0\longrightarrow M_0, \qquad T\cdot m = Tm ,
+$$
+is well defined, and the base change recovers the action of $\mathcal{D}$; the de Rham complex of $M_0$ is the invariants of the de Rham complex of $M$,
+$$
+\Omega^\bullet_{X}(M_0) = \bigl(\Omega^\bullet_{X_L}(M)\bigr)^{G} .
+$$</p>
+<p><em>Proof.</em> For $T\in\mathcal{D}^G$ and $m\in M^G$ the product $Tm$ is fixed because $g(Tm) = \mathrm{ad}_g(T)g(m) = Tm$, so the action of the fixed algebra preserves the invariants; the base change recovers the action of $\mathcal{D}$ by the effective descent. The de Rham complex is built from the module and the derivations, and both are descended, so its invariants are the de Rham complex of the descended module, by the compatibility of the invariants with the tensor product and the differential.</p>
+<p><strong>Corollary (the descent of the solutions and of the cohomology).</strong> The solutions of a descended system, that is $\operatorname{Hom}_{\mathcal{D}_X}(\mathcal{M},\mathcal{O}_X)$, are the invariants of the solutions over $L$,
+$$
+\operatorname{Hom}_{\mathcal{D}_X}(\mathcal{M}_0,\mathcal{O}_X) = \operatorname{Hom}_{\mathcal{D}}(\mathcal{M},\mathcal{O}_{X_L})^{G},
+$$
+and the de Rham cohomology of the descended module is the invariant cohomology, by <em>The Galois Action on the Cohomology</em>.</p>
+<p><em>Proof.</em> The Hom functor is computed on the invariants because both the module and the structure sheaf are descended; the invariant identification is the invariant-cohomology theorem of <em>The Galois Action on the Cohomology</em> applied to the de Rham complex.</p>
+<h2 id="the-invariants-and-the-cohomology">The Invariants and the Cohomology</h2>
+<h3 id="the-invariant-modules-and-the-obstruction">The Invariant Modules and the Obstruction</h3>
+<p><strong>Theorem (the obstruction to the descent).</strong> Let $M$ be a $\mathcal{D}$-module with a descent datum. The datum is effective if and only if the natural map
+$$
+M^{G}\otimes_kL\longrightarrow M
+$$
+is an isomorphism, and the obstruction to the effectivity is a class in the first group cohomology
+$$
+\operatorname{ob}(M)\in H^1\bigl(G,\ \underline{\operatorname{Aut}}_{\mathcal{D}}(M)\bigr),
+$$
+which vanishes for $M$ with the automorphism sheaf a linear group, by Hilbert's theorem 90 for $GL_n$.</p>
+<p><em>Proof.</em> The unit of the adjunction $M^G\otimes_kL\to M$ is an isomorphism exactly when the datum is effective; the failure is detected by the $1$-cocycles of the action, a cocycle presentation giving a class in the first cohomology of $G$ with coefficients in the automorphisms of $M$, in the sense of Part I's <em>Group Cohomology</em> and <em>Galois Cohomology</em>. For a linear group the first cohomology vanishes by Hilbert's theorem 90 in its functorial form (Speiser's lemma), so the datum is effective, which is the statement of the effective descent.</p>
+<p><strong>Theorem (the Hochschild–Serre sequence of the descent).</strong> For a $\mathcal{D}$-module with a descent datum there is a spectral sequence
+$$
+E_2^{pq} = H^p\bigl(G,\ H^q(\mathcal{M})\bigr)\ \Longrightarrow\ H^{p+q}(\mathcal{M}^{G}),
+$$
+the group cohomology of the cohomology of the module converging to the cohomology of the descended module, and its five-term sequence detects the failure of the invariants to compute the cohomology.</p>
+<p><em>Proof.</em> The same Grothendieck spectral sequence of the invariants and the global sections as in <em>The Galois Action on the Cohomology</em>, applied to the complex that computes the cohomology of the $\mathcal{D}$-module; the edge maps give the five-term sequence. The convergence is the convergence of Part I's <em>Spectral Sequences</em> for the composite of the two functors.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (the descent of the structure sheaf and of the de Rham complex).</strong> For the structure sheaf the descent is effective and the descended module is $\mathcal{O}_X$; the de Rham complex of <em>Sheaves in Algebraic Geometry</em> on $\mathcal{O}_{X_L}$ has the invariants the de Rham complex of $\mathcal{O}_X$, so the algebraic de Rham cohomology of the descended variety is the invariant part of the de Rham cohomology over $L$, in agreement with <em>The Galois Action on the Cohomology</em>.</p>
+<p><strong>Example (a twisted module over the affine line).</strong> Let $M = L[x]$ with the action of the conjugation on the coefficients twisted by the sign, $g(f) = \sigma(f)$ and $g(T) = \mathrm{ad}_g(T)$ with the automorphism $T\mapsto (i\partial)T(i\partial)^{-1}$ of the Weyl algebra; the module is a $\mathcal{D}$-module with a descent datum whose invariant part is $k[x]$ only when the twist is trivial, and the twisted module is an isotropic instance of the obstruction of the first cohomology. The effective descent recovers the $k[x]$-modules from the $L[x]$-modules and their data.</p>
+<p><strong>Example (the descent of a locally free $\mathcal{D}$-module).</strong> A locally free $\mathcal{D}$-module over $X_L$ corresponds to a connection on a vector bundle in the language of the written <em>Fibre Bundles, Connections and Curvature</em> of Part III, named but not constructed here; a descent datum on it is a $\mathcal{D}$-module structure preserved by the conjugation, and the effective descent gives the descended locally free $\mathcal{D}$-module over $X$. The descent of the extra structure that the connection names is the descent of the $\mathcal{D}$-module structure, so the effectivity for the locally free modules is the same as for the structure sheaf.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>descent datum</strong> on the operator layer $\mathcal{D}=\mathcal{D}_{X_L}$ is the semilinear action of the Galois group by algebra automorphisms; it is <strong>effective</strong> when $\mathcal{D}\cong\mathcal{D}_0\otimes_kL$ with the action on the second factor, and the descender is the fixed algebra $\mathcal{D}^{G}=\mathcal{D}_0=\mathcal{D}_X$. A <strong>descent datum on a module</strong> is an action of the group that is semilinear on the scalar and compatible with the operators, $g(Tm)=\mathrm{ad}_g(T)g(m)$, so that the module is a $(\mathcal{D},G)$-module; it is effective when $M\cong M_0\otimes_kL$ for a $\mathcal{D}_X$-module $M_0$. The <strong>effective descent</strong> is the equivalence
+$$
+\mathcal{D}_X\text{-mod}\ \simeq\ \bigl(\mathcal{D}\text{-mod}\bigr)^{G},
+$$
+with the base change as one functor and the invariants $M\mapsto M^{G}$ as the quasi-inverse; equivalently, the $\mathcal{D}_X$-modules are the $\mathcal{D}$-modules with an effective datum. The descended $\mathcal{D}_X$-module structure is $T\cdot m = Tm$ for $T\in\mathcal{D}_X$ and $m\in M_0$, the de Rham complex and the solution sheaf descend to the invariants, and the obstruction to the effectivity of a datum is a class in $H^1(G,\underline{\operatorname{Aut}}_{\mathcal{D}}(M))$, which vanishes for the linear groups by Hilbert's theorem 90. The descent of the cohomology is the Hochschild–Serre spectral sequence of <em>The Galois Action on the Cohomology</em>, so the operator layer descends exactly as the varieties, the sheaves and the cohomology do.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{ad}_\sigma$, $\mathrm{ad}_\sigma(ST)=\mathrm{ad}_\sigma(S)\mathrm{ad}_\sigma(T)$</td>
+<td>the descent datum on the operator layer</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_\sigma(fT)=\sigma(f)\mathrm{ad}_\sigma(T)$</td>
+<td>semilinearity over the structure sheaf</td>
+</tr>
+<tr>
+<td>$\mathcal{D}\cong\mathcal{D}_0\otimes_kL$</td>
+<td>the effectivity of the datum; the descended algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{D}^{G}=\mathcal{D}_0=\mathcal{D}_X$</td>
+<td>the fixed algebra is the operator layer of $X$</td>
+</tr>
+<tr>
+<td>$g(\ell m)=\sigma_g(\ell)g(m)$, $g(Tm)=\mathrm{ad}_g(T)g(m)$</td>
+<td>the datum on a module; a $(\mathcal{D},G)$-module</td>
+</tr>
+<tr>
+<td>$M\cong M_0\otimes_kL$</td>
+<td>the effective datum on a module</td>
+</tr>
+<tr>
+<td>$\mathcal{D}_X\text{-mod}\simeq(\mathcal{D}\text{-mod})^{G}$</td>
+<td>the effective descent; the invariants</td>
+</tr>
+<tr>
+<td>$M^{G}=\{m:g(m)=m\}$</td>
+<td>the descended module</td>
+</tr>
+<tr>
+<td>$T\cdot m=Tm$, $T\in\mathcal{D}_X$, $m\in M^{G}$</td>
+<td>the descended $\mathcal{D}_X$-module structure</td>
+</tr>
+<tr>
+<td>$\Omega^\bullet_X(M_0)=(\Omega^\bullet_{X_L}(M))^{G}$</td>
+<td>the de Rham complex descends</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathcal{D}_X}(\mathcal{M}_0,\mathcal{O}_X)=\operatorname{Hom}_{\mathcal{D}}(\mathcal{M},\mathcal{O}_{X_L})^{G}$</td>
+<td>the solutions descend</td>
+</tr>
+<tr>
+<td>$\operatorname{ob}(M)\in H^1(G,\underline{\operatorname{Aut}}_{\mathcal{D}}(M))$</td>
+<td>the obstruction to the effectivity</td>
+</tr>
+<tr>
+<td>$H^p(G,H^q(\mathcal{M}))\Rightarrow H^{p+q}(\mathcal{M}^{G})$</td>
+<td>the Hochschild–Serre sequence of the descent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alexander Grothendieck, <em>Technique de descente et théorèmes d'existence en géométrie algébrique</em> (Séminaire Bourbaki, 1959–1962), for the effective descent of the algebras and the modules and the descent of the morphisms.</li>
+<li>Jean-Pierre Serre, <em>Galois Cohomology</em> (Springer, 1997), for the descent of the algebras with a semilinear action and Hilbert's theorem 90 in its functorial form.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the descent of an algebra with an involution and the forms it classifies.</li>
+<li>Armand Borel, Pierre-Paul Grivel, Bernhard Kaup and others, <em>Algebraic D-Modules</em> (Perspectives in Mathematics 2, Academic Press, 1987), for the $\mathcal{D}$-modules, their base change and their descent.</li>
+<li>Alexander Grothendieck, <em>Sur quelques points d'algèbre homologique</em> (Tohoku Mathematical Journal 9, 1957), for the spectral sequence of the composite of the invariants and the global sections.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, Ergebnisse der Mathematik 5, third edition, 1971), for the descent of the operators and the two operations of the operator layer.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on a Module over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-a-module-over-an-algebra"><strong>The Signed Adjoint of the Left Multiplication on a Module over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication is the one-sided operator $L^{\alpha}_a(m)=a\,\alpha(m)$ that carries the parity sign of the grading. This article computes its adjoint with respect to an $\alpha$-invariant pairing; the answer is the signed left multiplication by the parameter transformed by the composite $\beta=\alpha\sigma$, $(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$. It is the one-sided specialisation of the signed adjoint sandwich and the companion of the unsigned rule $(L_a)^{*}=L_{\sigma(a)}$.</p>
+<p>The article is the sixth of the <code>* Operator Theory</code> group of this category. It assumes the signed left multiplication and its elementary properties from <em>The Signed Left Multiplication on a Module over an Algebra</em>, the signed adjoint sandwich from <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>, and the pairing and adjoint of <em>The Adjoint of a Module Homomorphism</em>; the unsigned one-sided adjoint is <em>The Adjoint of a Module Homomorphism</em>, and the reflection case is <em>The Signed Adjoint of the Reflection on a Bimodule over an Algebra</em>. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, $\alpha$ is a grade involution of $A$ commuting with $\sigma$, $\beta=\alpha\sigma$, $M$ is a graded left $A$-module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, $L_a(m)=am$ is the unsigned left multiplication, and $L^{\alpha}_a=L_a\circ\alpha$, $L^{\alpha}_a(m)=a\,\alpha(m)$.</p>
+<h2 id="the-signed-left-multiplication-and-its-adjoint">The Signed Left Multiplication and Its Adjoint</h2>
+<h3 id="the-one-sided-adjoint">The one-sided adjoint</h3>
+<p><strong>Theorem.</strong> For every $a \in A$ the adjoint of the signed left multiplication is the signed left multiplication by the transformed parameter:</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma .
+$$</p>
+<p><em>Proof.</em> The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$. $\square$</p>
+<p><strong>Proof (direct).</strong> Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and <em>The Adjoint of a Sandwich on a Bimodule over an Algebra</em> gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of <em>The Signed Left Multiplication on a Module over an Algebra</em>. $\square$</p>
+<p>The parameter transforms by the composite $\beta=\alpha\sigma$, exactly as for the general signed sandwich: the grading and the involution both act, and only their product is visible.</p>
+<h3 id="relation-to-the-unsigned-adjoint-and-to-the-grading">Relation to the unsigned adjoint and to the grading</h3>
+<p><strong>Proposition.</strong> The adjoint of the signed left multiplication and the adjoint of the unsigned left multiplication are related by the grade involution:</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*}=\alpha\,(L_{\sigma(a)})^{*}=\alpha\,L_{\sigma(a)}, \qquad \bigl(L_a\bigr)^{*}=L_{\sigma(a)} .
+$$</p>
+<p><em>Proof.</em> The first is the direct computation in the proof of the theorem; the second is the unsigned rule. $\square$</p>
+<p><strong>Corollary (parity).</strong> The signed left multiplications are odd for the $\mathbb{Z}/2$-grading of the sandwich monoid, and the adjoint sends an odd operator to an odd operator: $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$. The adjoint commutes with the grading, as it does for the two-sided operators.</p>
+<p><em>Proof.</em> Immediate from the theorem and the parity statement of <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>. $\square$</p>
+<h2 id="relation-to-the-signed-sandwich">Relation to the Signed Sandwich</h2>
+<h3 id="the-one-sided-operators-inside-the-sandwich">The one-sided operators inside the sandwich</h3>
+<p><strong>Proposition.</strong> For all $a,b \in A$ the signed sandwich factors through the signed left multiplication,</p>
+<p>$$
+S^{\alpha}_{a,b}=L^{\alpha}_a\circ R_{\alpha(b)}, \qquad L^{\alpha}_a=S^{\alpha}_{a,1}, \qquad R^{\alpha}_b:=S^{\alpha}_{1,b} .
+$$</p>
+<p><em>Proof.</em> $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=S^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint of the signed sandwich is the composite of the adjoints of its factors in the reverse order, and the one-sided adjoints assemble it:</p>
+<p>$$
+\bigl(S^{\alpha}_{a,b}\bigr)^{*}=\bigl(R_{\alpha(b)}\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*}=R_{\sigma(\alpha(b))}L^{\alpha}_{\beta(a)}=R_{\beta(b)}L^{\alpha}_{\beta(a)}=S^{\alpha}_{\beta(a),\beta(b)} .
+$$</p>
+<p><em>Proof.</em> Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in <em>The Adjoint of the Sandwich on a Bimodule over an Algebra</em>. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=S^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$. $\square$</p>
+<p>The one-sided case is therefore not an analogy but a factorisation: the sandwich is a signed left multiplication composed with a right multiplication, and its adjoint is the composite of the one-sided adjoints.</p>
+<h2 id="self-adjointness-and-unitarity">Self-Adjointness and Unitarity</h2>
+<h3 id="self-adjoint-and-skew-adjoint-signed-left-multiplications">Self-adjoint and skew-adjoint signed left multiplications</h3>
+<p><strong>Proposition.</strong> The kernel of the parameter map $a \mapsto L^{\alpha}_a$ is the annihilator $\operatorname{Ann}_A(M)=\{a : aM=0\}$. Consequently</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_a \iff \beta(a)-a \in \operatorname{Ann}_A(M), \qquad \bigl(L^{\alpha}_a\bigr)^{*}=-L^{\alpha}_a \iff \beta(a)+a \in \operatorname{Ann}_A(M).
+$$</p>
+<p>For a faithful module these read $\beta(a)=a$ and $\beta(a)=-a$.</p>
+<p><em>Proof.</em> $L^{\alpha}_a=L^{\alpha}_{a'}$ is $L^{\alpha}_{a-a'}=0$, that is $(a-a')M=0$, by the kernel statement of <em>The Signed Left Multiplication on a Module over an Algebra</em>; applying this to the theorem gives the criteria. $\square$</p>
+<p>So the self-adjoint signed left multiplications are those with $\beta$-symmetric parameter (modulo the annihilator), the analogue of the symmetric operators among the unsigned left multiplications.</p>
+<h3 id="unitary-signed-left-multiplications">Unitary signed left multiplications</h3>
+<p><strong>Proposition.</strong> A signed left multiplication is unitary exactly when its parameter is a unitary element of $A$:</p>
+<p>$$
+\bigl(L^{\alpha}_a\bigr)^{*}L^{\alpha}_a=L^{\alpha}_a\bigl(L^{\alpha}_a\bigr)^{*}=\mathrm{id} \iff \sigma(a)a=a\sigma(a)=1 .
+$$</p>
+<p><em>Proof.</em> This is the unitarity criterion of <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em> with $(a,b)=(a,1)$. $\square$</p>
+<p><strong>Corollary.</strong> The unitary signed left multiplications form a group isomorphic to the unitary group of $A$ modulo the annihilator: the map $a \mapsto L^{\alpha}_a$ restricted to the unitary elements of $A$ is multiplicative on unitary parameters and has kernel the unitary elements of $\operatorname{Ann}_A(M)$.</p>
+<p><em>Proof.</em> For unitary $a,b$ the composition rule gives $L^{\alpha}_aL^{\alpha}_b=L_{a\alpha(b)}$, and $a\alpha(b)$ is unitary when $a$ and $b$ are; the kernel is computed as above. $\square$</p>
+<h2 id="kernel-image-and-the-paired-complement">Kernel, Image and the Paired Complement</h2>
+<h3 id="the-complement-identities">The complement identities</h3>
+<p><strong>Proposition.</strong> For every $a$,</p>
+<p>$$
+\ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr) .
+$$</p>
+<p><em>Proof.</em> These are the general identities of <em>The Adjoint of a Module Homomorphism</em> for the operator $L^{\alpha}_a$. $\square$</p>
+<h3 id="the-explicit-complements">The explicit complements</h3>
+<p><strong>Proposition.</strong> With $\operatorname{im}L^{\alpha}_a=aM$ and $\ker L^{\alpha}_a=\alpha(\ker L_a)$,</p>
+<p>$$
+\ker\bigl(L^{\alpha}_a\bigr)^{*}=\ker L_{\sigma(a)}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}=\beta(a)M .
+$$</p>
+<p><em>Proof.</em> The first is $(aM)^{\mathrm{c}}=\{n : \langle am,n\rangle=0\ \forall m\}=\{n : \langle m,\sigma(a)n\rangle=0\ \forall m\}=\ker L_{\sigma(a)}$ by non-degeneracy. The second is the image of $L^{\alpha}_{\beta(a)}$, namely $\beta(a)M$. $\square$</p>
+<p><strong>Corollary.</strong> The two descriptions agree: $\alpha(\ker L_{\beta(a)})=\ker L_{\sigma(a)}$, which is the identity $\alpha(\ker L_c)=\ker L_{\alpha(c)}$ for $c=\beta(a)$.</p>
+<p><em>Proof.</em> $\alpha(\ker L_{\beta(a)})=\{m : \beta(a)\,\alpha(m)=0\}=\{m : \alpha(\sigma(a)m)=0\}=\ker L_{\sigma(a)}$ using $\alpha(\beta(a))=\sigma(a)$. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial grading.</strong> For $\alpha=\mathrm{id}$ the theorem reduces to $(L_a)^{*}=L_{\sigma(a)}$, the unsigned rule.</p>
+<p><strong>(b) The trivial involution.</strong> For $\sigma=\mathrm{id}$ the adjoint is $(L^{\alpha}_a)^{*}=L^{\alpha}_{\alpha(a)}$, so a signed left multiplication is self-adjoint exactly when its parameter is even.</p>
+<p><strong>(c) The regular module.</strong> For $M={}_A A$ with the regular pairing, $\operatorname{Ann}_A(M)=0$, so the criteria are the exact equalities $\beta(a)=a$ and $\beta(a)=-a$, and the unitary signed left multiplications are the unitary elements of $A$.</p>
+<p><strong>(d) A module with annihilator.</strong> For $A=k[x]/(x^{2})$ acting on $M=k[x]/(x)$ with $x\cdot m=0$, the annihilator is the maximal ideal $(x)$ and every parameter with the same image in $k$ gives the same signed left multiplication: the self-adjointness criterion degenerates to congruence modulo $(x)$, and $\ker L^{\alpha}_a$ is all of $M$ for $a \in (x)$.</p>
+<p><strong>(e) The Clifford algebra.</strong> For $A$ a Clifford algebra with canonical involution $\sigma$ and grade involution $\alpha$, the signed left multiplication $L^{\alpha}_v$ by a vector $v$ has adjoint $L^{\alpha}_{\beta(v)}$ with $\beta=\alpha\sigma$; it is self-adjoint exactly for $\beta(v)=v$, which for a vector holds exactly when the vector's parity is even, and it is unitary exactly for a unit vector $\sigma(v)v=1$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded module with an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, the adjoint of the signed left multiplication is the signed left multiplication by the composite $\beta=\alpha\sigma$, $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$; this is the one-sided case of the signed adjoint sandwich, obtained directly from $\alpha^{*}=\alpha$, $(L_a)^{*}=L_{\sigma(a)}$ and the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$. The adjoint preserves the grading parity. Because the signed left multiplication is the signed sandwich with right parameter $1$, the sandwich adjoint factors through the one-sided adjoints. Self-adjointness holds exactly when $\beta(a)-a$ annihilates the module, skew-adjointness when $\beta(a)+a$ does, and unitarity exactly when the parameter is unitary in $A$; for a faithful module the criteria are the equalities $\beta(a)=a$, $\beta(a)=-a$ and $\sigma(a)a=a\sigma(a)=1$. The kernel and the image of the adjoint are described by the paired complements: $\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$ and $\operatorname{im}(L^{\alpha}_a)^{*}=\beta(a)M$, in agreement with the general theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $(A,\sigma)$</td>
+<td>base ring, involutive $R$-algebra</td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta=\alpha\sigma$</td>
+<td>grade involution, and the composite involution</td>
+</tr>
+<tr>
+<td>$M$, $\langle\cdot,\cdot\rangle$</td>
+<td>graded left module with α-invariant balanced σ-sesquilinear pairing</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>unsigned left multiplication, $L_a(m)=am$</td>
+</tr>
+<tr>
+<td>$L^{\alpha}_a=L_a\alpha$</td>
+<td>signed left multiplication, $L^{\alpha}_a(m)=a\alpha(m)$</td>
+</tr>
+<tr>
+<td>$(L^{\alpha}_a)^{*}=L^{\alpha}_{\beta(a)}$</td>
+<td>the adjoint of the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\alpha L_b=L^{\alpha}_{\alpha(b)}$</td>
+<td>the conjugation identity used in the proof</td>
+</tr>
+<tr>
+<td>$S^{\alpha}_{a,b}=L^{\alpha}_a R_{\alpha(b)}$</td>
+<td>the signed sandwich through the one-sided operators</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_A(M)$</td>
+<td>the annihilator, source of the degenerate criteria</td>
+</tr>
+<tr>
+<td>$\ker(L^{\alpha}_a)^{*}=\ker L_{\sigma(a)}$</td>
+<td>the kernel of the adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for graded modules, involutions and sesquilinear forms.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the interaction of the involution and the grading in one-sided operators.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for annihilators, faithful modules and the kernels of one-sided multiplications.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the grade involution and the one-sided actions of a Clifford algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for one-sided multiplication operators and their adjoints over rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-group"><strong>The Graded Adjoint Action on a Module over a Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded module over a graded group carries two actions built from those of the group: the <strong>adjoint action</strong> on the endomorphism space, $T\mapsto \rho(g)T\rho(g)^{-1}$, and the <strong>coadjoint action</strong> on the dual module, $\varphi\mapsto\varphi\circ\rho(g)^{-1}$. The first preserves parity and is an honest action; the second carries a parity shift and a projective failure with the Koszul cocycle, exactly as the graded action of the module itself does. This article fixes both, proves their compatibility with the grading and the sign rules they impose, and relates them to the operator adjoint of the <code>* Operator Theory</code> group. It is the seventh and last article of the group; the graded module and the graded action are from <em>The Graded Action on a Module over a Group</em>, the pairing and adjoint from <em>Involutions on the Operator Layer</em>, and the Koszul cocycle from <em>The Graded Action on a Module over a Group</em>.</p>
+<p>Throughout, $(G,\varepsilon)$ is a group with a degree character $\varepsilon:G\to\{\pm1\}$, $M=M^{\bar0}\oplus M^{\bar1}$ is a graded $k$-module with grading involution $\pi_M$, the action is written $g\cdot m$ or $\rho(g)m$ with sign rule $\lvert g\cdot m\rvert=\varepsilon(g)+\lvert m\rvert$, and $\operatorname{End}_k(M)$ is the graded $k$-algebra of endomorphisms with the parity of an operator defined by its behaviour on homogeneous elements.</p>
+<h2 id="the-adjoint-action-on-the-endomorphism-space">The Adjoint Action on the Endomorphism Space</h2>
+<p><strong>Theorem (the adjoint action is an action).</strong> The assignment</p>
+<p>$$
+g\triangleright T=\rho(g)\,T\,\rho(g)^{-1}
+$$</p>
+<p>is a $k$-linear action of $G$ on $\operatorname{End}_k(M)$: $e\triangleright T=T$ and $g\triangleright(h\triangleright T)=(gh)\triangleright T$.</p>
+<p><strong>Proof.</strong> Conjugation by any invertible operator is an algebra automorphism, so the assignment is defined, linear, and multiplicative; $\rho(e)=\mathrm{id}$ gives the unit, and the multiplicativity is $(gh)\triangleright T=\rho(gh)T\rho(gh)^{-1}=\rho(g)\rho(h)T\rho(h)^{-1}\rho(g)^{-1}=g\triangleright(h\triangleright T)$.</p>
+<p><strong>Theorem (the adjoint action preserves parity).</strong> For homogeneous $g\in G$ and homogeneous $T\in\operatorname{End}_k(M)$,</p>
+<p>$$
+\lvert g\triangleright T\rvert=\lvert T\rvert .
+$$</p>
+<p>Hence the adjoint action is an action by even operators, it preserves each of the two graded parts $\operatorname{End}^{\bar0}_k(M)$ and $\operatorname{End}^{\bar1}_k(M)$, and the sign rule it imposes is the trivial one.</p>
+<p><strong>Proof.</strong> The operators $\rho(g)$ and $\rho(g)^{-1}=\rho(g^{-1})$ have parity $\varepsilon(g)$ and $\varepsilon(g^{-1})=\varepsilon(g)$. The parity of a product is the sum of the parities modulo two, so $\lvert\rho(g)T\rho(g)^{-1}\rvert=\varepsilon(g)+\lvert T\rvert+\varepsilon(g)=\lvert T\rvert$, since $\varepsilon(g)+\varepsilon(g)=0$ in $\mathbb{Z}/2\mathbb{Z}$.</p>
+<p><strong>Corollary (the adjoint action and the grading involution).</strong> The adjoint action commutes with the conjugation by the grading involution: $g\triangleright(\pi_MT\pi_M)=\pi_M(g\triangleright T)\pi_M$.</p>
+<p><strong>Proof.</strong> Both $\pi_M\rho(g)\pi_M$ and $\rho(g)$ have parity $\varepsilon(g)$ and the same action on $g$-invariant data; computing directly, $\pi_M(g\triangleright T)\pi_M=\pi_M\rho(g)T\rho(g)^{-1}\pi_M=(\pi_M\rho(g)\pi_M)T(\pi_M\rho(g)^{-1}\pi_M)$ when $T$ is balanced against the grading, and the identity follows because $\pi_M^{2}=\mathrm{id}$ and the action on the two graded parts differs only by the parity of $T$.</p>
+<h2 id="the-twisted-adjoint-action">The Twisted Adjoint Action</h2>
+<p><strong>Definition.</strong> The <strong>twisted adjoint action</strong> is</p>
+<p>$$
+g\triangleright' T=\varepsilon(g)^{\lvert T\rvert}\,\rho(g)\,T\,\rho(g)^{-1},
+\qquad \varepsilon(g)^{\lvert T\rvert}=(-1)^{\varepsilon(g)\lvert T\rvert}.
+$$</p>
+<p><strong>Theorem (the twisted action is graded, and projective).</strong> For homogeneous $g,T$,</p>
+<p>$$
+\lvert g\triangleright' T\rvert=\varepsilon(g)+\lvert T\rvert ,
+$$</p>
+<p>so the twisted adjoint action is a <strong>graded action</strong> on $\operatorname{End}_k(M)$ with the degree $\varepsilon$: it preserves the parity of the adjoint action twisted by $\varepsilon(g)$. It is not an honest action; it satisfies</p>
+<p>$$
+g\triangleright'(h\triangleright' T)=(-1)^{\varepsilon(g)\varepsilon(h)}\,(gh)\triangleright' T ,
+$$</p>
+<p>a <strong>projective action</strong> with the Koszul cocycle $c(g,h)=(-1)^{\varepsilon(g)\varepsilon(h)}$, exactly as the signed action of <em>The Graded Action on a Module over a Group</em>.</p>
+<p><strong>Proof.</strong> The factor $\varepsilon(g)^{|T|}$ contributes $\varepsilon(g)\lvert T\rvert$ to the parity, so the total is $\varepsilon(g)+\lvert T\rvert+\varepsilon(g)=\varepsilon(g)+\lvert T\rvert$. For the cocycle, compute successively: $h\triangleright'T=\varepsilon(h)^{|T|}\rho(h)T\rho(h)^{-1}$, then $g\triangleright'(h\triangleright'T)=\varepsilon(g)^{|h\triangleright'T|}\varepsilon(h)^{|T|}\rho(g)\rho(h)T\rho(h)^{-1}\rho(g)^{-1}$, and $|h\triangleright'T|=\varepsilon(h)+\lvert T\rvert$; the two scalar factors multiply to $\varepsilon(g)^{\varepsilon(h)+\lvert T\rvert}\varepsilon(h)^{\lvert T\rvert}=(-1)^{\varepsilon(g)\varepsilon(h)}\varepsilon(gh)^{\lvert T\rvert}$, and the operator part is $\rho(gh)T\rho(gh)^{-1}$. Comparing with $(gh)\triangleright'T$ gives the cocycle.</p>
+<p><strong>Corollary (the honest part).</strong> On the even part $\operatorname{End}^{\bar0}_k(M)$ the twisted adjoint action agrees with the adjoint action on the even elements of $G$ and differs by the sign $\varepsilon(g)$ on the odd elements; it is an honest action exactly when the degree $\varepsilon$ is trivial.</p>
+<p><strong>Proof.</strong> For even $T$, $\lvert T\rvert=0$ and the twisting factor is $1$, so $g\triangleright'T=g\triangleright T$; the difference appears only on odd $T$ and odd $g$. The projective failure is the Koszul cocycle, which is trivial exactly when $\varepsilon$ is trivial.</p>
+<h2 id="the-coadjoint-action-on-the-dual">The Coadjoint Action on the Dual</h2>
+<p><strong>Definition.</strong> The <strong>dual module</strong> $M^{*}=\operatorname{Hom}_k(M,k)$ carries the grading $(M^{*})^{\bar i}=\{\varphi:\varphi(M^{\bar j})=0\ \text{unless}\ i=j\}$, and the <strong>coadjoint action</strong> is</p>
+<p>$$
+(g\cdot\varphi)(m)=\varphi\bigl(g^{-1}\cdot m\bigr).
+$$</p>
+<p><strong>Theorem (the coadjoint action is a graded action).</strong> The coadjoint action is an action of $G$ on $M^{*}$ with the sign rule</p>
+<p>$$
+\lvert g\cdot\varphi\rvert=\varepsilon(g)+\lvert\varphi\rvert ,
+$$</p>
+<p>so it is a graded action on the dual with the degree $\varepsilon$; it is an honest action, $(gh)\cdot\varphi=g\cdot(h\cdot\varphi)$, and it is contragredient to the action on $M$ in the sense of the pairing $\langle\varphi,m\rangle=\varphi(m)$.</p>
+<p><strong>Proof.</strong> The action is defined by the inverse transpose and is therefore an honest action: $(gh)\cdot\varphi$ and $g\cdot(h\cdot\varphi)$ both equal $\varphi\circ\rho(h)^{-1}\rho(g)^{-1}$. For the parity, if $\varphi$ is homogeneous of parity $j$ and $m$ is homogeneous of parity $i$, then $\varphi(g^{-1}\cdot m)\neq0$ only for $i+\varepsilon(g^{-1})=j$, that is $i=j+\varepsilon(g)$; so $g\cdot\varphi$ is supported on the $i$ with $i=\lvert\varphi\rvert+\varepsilon(g)$, giving the sign rule. The pairing identity is the definition.</p>
+<p><strong>Corollary (the two sign rules differ).</strong> The adjoint action on $\operatorname{End}_k(M)$ has sign rule $\lvert T\rvert$ and the coadjoint action on $M^{*}$ has sign rule $\varepsilon(g)+\lvert\varphi\rvert$; the twisted adjoint action has the sign rule $\varepsilon(g)+\lvert T\rvert$ and matches the coadjoint action. So the two-sided object with the degree $\varepsilon$ is the endomorphism space with the twisted action, and the dual with the coadjoint action, and these two carry the same parity shift.</p>
+<p><strong>Proof.</strong> Collecting the three sign rules from the theorems gives the comparison; the coincidence of the twisted adjoint and the coadjoint rules is the equality $\varepsilon(g)+\lvert T\rvert=\varepsilon(g)+\lvert\varphi\rvert$ after identifying the parities.</p>
+<h2 id="the-relation-to-the-operator-adjoint">The Relation to the Operator Adjoint</h2>
+<p><strong>Proposition (the pairing is the module form of the natural pairing).</strong> The evaluation pairing $\langle\varphi,m\rangle=\varphi(m)$ is bilinear, nondegenerate and graded, and with respect to it the action on $M$ and the coadjoint action on $M^{*}$ are adjoint in the sense that</p>
+<p>$$
+\langle g\cdot\varphi,\,m\rangle=\langle\varphi,\,g^{-1}\cdot m\rangle .
+$$</p>
+<p><strong>Proof.</strong> The two sides are both $\varphi(g^{-1}\cdot m)$; nondegeneracy of the evaluation pairing for a finite-dimensional $M$ is the standard duality of a finite-dimensional module and its dual, and the graded statement is that the pairing vanishes on $(M^{*})^{\bar i}\times M^{\bar j}$ unless $i=j$.</p>
+<p><strong>Remark (the operator adjoint is a different structure from the module adjoint).</strong> The adjoint here is the duality pairing between a module and its dual, whereas the adjoint of <em>Involutions on the Operator Layer</em> is the transpose with respect to the natural pairing on the group algebra; they agree in form and are not the same structure. The module-theoretic adjoint action is the shadow of the operator adjoint, and the comparison is the same one as between the involution on the elements and the adjoint on the operators: the two are proved to be compatible when they are, and never assumed.</p>
+<p><strong>Proposition (the action on the endomorphism space of the graded module).</strong> The action of $G$ on $M$ extends to an action of the involutive group $(G,\varepsilon)$ on $\operatorname{End}_k(M)$ compatible with the grading in the sense that the twisted adjoint action makes $\operatorname{End}_k(M)$ a graded module over $(G,\varepsilon)$, with the Koszul cocycle corrected by the passage to the semidirect product $G\rtimes C_2$ of <em>The Graded Action on a Module over a Group</em>.</p>
+<p><strong>Proof.</strong> The compatibility is the sign rule $\lvert g\triangleright'T\rvert=\varepsilon(g)+\lvert T\rvert$ of the twisted action, which is the defining condition of a graded module over $(G,\varepsilon)$; the projective failure is the Koszul cocycle, and it is removed exactly by replacing $G$ by the split extension $G\rtimes C_2$ in which the odd elements become even, as in the graded action of the module itself.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded module over the graded group $(G,\varepsilon)$ carries two adjoint constructions. The <strong>adjoint action</strong> $g\triangleright T=\rho(g)T\rho(g)^{-1}$ on $\operatorname{End}_k(M)$ is an honest action that preserves parity, $\lvert g\triangleright T\rvert=\lvert T\rvert$, so it is an action by even operators and leaves each graded part of the endomorphism space stable. The <strong>twisted adjoint action</strong> $g\triangleright'T=\varepsilon(g)^{\lvert T\rvert}\rho(g)T\rho(g)^{-1}$ is graded with sign rule $\lvert g\triangleright'T\rvert=\varepsilon(g)+\lvert T\rvert$ and is projective with the Koszul cocycle $(-1)^{\varepsilon(g)\varepsilon(h)}$, coinciding with the honest adjoint action on the even elements of $G$ and on the even endomorphisms and failing to be an honest action exactly when the degree is nontrivial.</p>
+<p>The <strong>coadjoint action</strong> on the dual module, $(g\cdot\varphi)(m)=\varphi(g^{-1}m)$, is an honest graded action with sign rule $\lvert g\cdot\varphi\rvert=\varepsilon(g)+\lvert\varphi\rvert$, contragredient to the action on $M$ with respect to the evaluation pairing, and it agrees in its parity shift with the twisted adjoint action. The duality pairing is the module form of the natural pairing of the operator layer, but the module adjoint and the operator adjoint are two structures; their agreement is proved where it holds and never assumed. Finally the twisted adjoint action makes $\operatorname{End}_k(M)$ a graded module over $(G,\varepsilon)$, with the Koszul cocycle removed by the passage to the split extension $G\rtimes C_2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g\triangleright T=\rho(g)T\rho(g)^{-1}$</td>
+<td>the adjoint action, parity-preserving</td>
+</tr>
+<tr>
+<td>$\lvert g\triangleright T\rvert=\lvert T\rvert$</td>
+<td>trivial sign rule of the adjoint action</td>
+</tr>
+<tr>
+<td>$g\triangleright'T=\varepsilon(g)^{\lvert T\rvert}\rho(g)T\rho(g)^{-1}$</td>
+<td>the twisted adjoint action</td>
+</tr>
+<tr>
+<td>$\lvert g\triangleright'T\rvert=\varepsilon(g)+\lvert T\rvert$</td>
+<td>sign rule of the twisted action</td>
+</tr>
+<tr>
+<td>$c(g,h)=(-1)^{\varepsilon(g)\varepsilon(h)}$</td>
+<td>the Koszul cocycle of the twisted action</td>
+</tr>
+<tr>
+<td>$(g\cdot\varphi)(m)=\varphi(g^{-1}m)$</td>
+<td>the coadjoint action on $M^{*}$</td>
+</tr>
+<tr>
+<td>$\langle\varphi,m\rangle=\varphi(m)$</td>
+<td>the evaluation pairing, module form of the natural pairing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Interscience, 1962), for graded modules, the sign rule and the graded endomorphism algebra.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for graded modules, duality and the Koszul sign rule.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the adjoint action of a group with involution on the endomorphism algebra.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebra, the dual module and the contragredient action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

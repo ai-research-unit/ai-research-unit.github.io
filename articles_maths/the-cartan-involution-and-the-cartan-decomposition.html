@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Involution and the Cartan Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-involution-and-the-cartan-decomposition"><strong>The Cartan Involution and the Cartan Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathrm{G}_0$ be a real semisimple Lie algebra with Killing form $\kappa$. A <strong>Cartan involution</strong> is an involution $\theta$ of $\mathrm{G}_0$ such that the form</p>
+<p>$$
+\kappa_\theta(x,y)=-\kappa(x,\theta y)
+$$</p>
+<p>is positive definite. The involution splits the algebra into its eigenspaces,</p>
+<p>$$
+\mathrm{G}_0=\mathrm{K}\oplus\mathrm{P},\qquad \mathrm{K}=\{x:\theta x=x\},\qquad \mathrm{P}=\{x:\theta x=-x\},
+$$</p>
+<p>the <strong>Cartan decomposition</strong>; $\mathrm{K}$ is a subalgebra, $\mathrm{P}$ a module over it, and the pair $(\mathrm{G}_0,\mathrm{K})$ is the algebraic model of a symmetric pair. This article is the <code>- * Theory</code> entry of the category: it reads the Lie algebra with an involution on its elements, defines the Cartan involution and the Cartan decomposition, establishes the bracket relations, identifies $\mathrm{K}$ as the fixed subalgebra and records its role as the Lie algebra of a maximal compact subgroup, a compactness statement that belongs to a later Part and is named only. The involution as an operator on the algebra, the adjoint of the action and the self-adjointness of the Casimir operator belong to the <code>- * Operator Theory</code> group and are deferred; the Killing form is <em>The Killing Form Operator</em> and its structure theory is <em>Structure of Lie Algebras</em>.</p>
+<p>The base is $\mathbb{R}$; the algebra $\mathrm{G}_0$ is finite-dimensional real semisimple, $\kappa$ is its Killing form, and $\theta$ is an involution. The article uses the eigenspace decomposition of $\theta$ and the bracket only; the definiteness of $\kappa_\theta$ is stated as the defining condition, and no length, distance or geometric reading is taken from it.</p>
+<h2 id="the-cartan-involution">The Cartan Involution</h2>
+<p><strong>Definition.</strong> An <strong>involution</strong> of a Lie algebra $\mathrm{G}_0$ is an automorphism $\theta$ with $\theta^2=\mathrm{id}$. A <strong>Cartan involution</strong> is an involution $\theta$ of the real semisimple algebra $\mathrm{G}_0$ such that $\kappa_\theta(x,y)=-\kappa(x,\theta y)$ is positive definite.</p>
+<p><strong>Proposition.</strong> $\kappa_\theta$ is a symmetric bilinear form, and it is invariant under $\theta$:</p>
+<p>$$
+\kappa_\theta(\theta x,\theta y)=\kappa_\theta(x,y),\qquad \kappa_\theta(\theta x,y)=\kappa_\theta(x,\theta y).
+$$</p>
+<p><strong>Proof.</strong> Symmetry follows from the symmetry of $\kappa$ and $\theta^2=\mathrm{id}$; the invariance under $\theta$ is the same computation. $\square$</p>
+<p><strong>Proposition.</strong> If $\theta$ is a Cartan involution then so is every conjugate $g\theta g^{-1}$ by an automorphism $g$ that preserves the form up to the appropriate condition, and the Cartan involution is unique up to conjugacy when $\mathrm{G}_0$ is semisimple: any two differ by an inner automorphism.</p>
+<p><strong>Proof.</strong> The definiteness of $\kappa_\theta$ is preserved by the conjugation when $g$ preserves $\kappa$; the uniqueness up to conjugacy is the standard theorem of the theory of real semisimple Lie algebras, recorded in <em>Real Forms of a Complex Lie Algebra</em>, and is quoted. $\square$</p>
+<h2 id="the-cartan-decomposition">The Cartan Decomposition</h2>
+<p><strong>Theorem.</strong> A Cartan involution $\theta$ decomposes the algebra as the direct sum of its two eigenspaces,</p>
+<p>$$
+\mathrm{G}_0=\mathrm{K}\oplus\mathrm{P},\qquad \theta=\mathrm{id}\text{ on }\mathrm{K},\qquad \theta=-\mathrm{id}\text{ on }\mathrm{P},
+$$</p>
+<p>and the eigenspaces satisfy</p>
+<p>$$
+[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+$$</p>
+<p><strong>Proof.</strong> An involution of a vector space whose square is the identity is diagonalisable with eigenvalues $\pm1$ in characteristic not two, giving the direct sum; the bracket relations follow from applying $\theta$ to $[x,y]$, which is an automorphism, and reading the sign according to the degrees of $x$ and $y$. $\square$</p>
+<p><strong>Corollary.</strong> $\mathrm{K}$ is a subalgebra of $\mathrm{G}_0$, $\mathrm{P}$ is a $\mathrm{K}$-module under the adjoint action, and the quotient $\mathrm{G}_0/\mathrm{K}$ is identified with $\mathrm{P}$ as a $\mathrm{K}$-module; the pair $(\mathrm{G}_0,\mathrm{K})$ is a <strong>symmetric pair</strong>, and the involution is the one of <em>Symmetric Pairs of a Lie Algebra</em>.</p>
+<p><strong>Proposition.</strong> The two summands are the kernels of the projectors $\tfrac12(\mathrm{id}\pm\theta)$, which are operators of the algebra commuting with the adjoint action; the map $x\mapsto\theta x$ is the operator that multiplies $\mathrm{K}$ by $+1$ and $\mathrm{P}$ by $-1$.</p>
+<p><strong>Proof.</strong> The projectors are the standard spectral projectors of a diagonalisable involution, and they commute with every automorphism commuting with $\theta$, in particular with the $\operatorname{ad}_x$ for $x$ in $\mathrm{K}$. $\square$</p>
+<h3 id="the-brackets-and-the-symmetric-structure">The Brackets and the Symmetric Structure</h3>
+<p><strong>Theorem.</strong> The bracket relations of the Cartan decomposition make $\mathrm{G}_0$ a $\mathbb{Z}/2$-graded Lie algebra with the even part $\mathrm{K}$ and the odd part $\mathrm{P}$, and the involution $\theta$ is the grade involution of that grading.</p>
+<p><strong>Proof.</strong> The relations $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$ are exactly the axioms of a $\mathbb{Z}/2$-graded Lie algebra with even part $\mathrm{K}$, and $\theta$ acts by $+1$ on the even part and $-1$ on the odd part, which is the grade involution. $\square$</p>
+<p><strong>Corollary.</strong> The symmetric pair $(\mathrm{G}_0,\mathrm{K})$ is the graded Lie algebra of <em>Graded Lie Algebras with an Involution</em>, and the structure of the pair is the structure of the grading.</p>
+<h2 id="the-fixed-subalgebra-and-maximal-compactness">The Fixed Subalgebra and Maximal Compactness</h2>
+<p><strong>Definition.</strong> The <strong>fixed subalgebra</strong> of the Cartan involution is $\mathrm{K}=\ker(\theta-\mathrm{id})$, called the <strong>maximal compact subalgebra</strong> of $\mathrm{G}_0$.</p>
+<p><strong>Proposition.</strong> $\mathrm{K}$ is the largest subalgebra of $\mathrm{G}_0$ on which $\theta$ acts as the identity, and it is a reductive subalgebra: its Killing form is the restriction of $\kappa$ up to the factor and its centre is contained in the centre of $\mathrm{K}$.</p>
+<p><strong>Proof.</strong> The fixed set of an automorphism is a subalgebra, and it is the largest on which the automorphism is the identity; the reductive statement is the standard property of the fixed algebra of a Cartan involution, recorded in <em>Real Forms of a Complex Lie Algebra</em>. $\square$</p>
+<p><strong>Remark (forward reference).</strong> The name <em>compact</em> records that $\mathrm{K}$ is the Lie algebra of a maximal compact subgroup of the adjoint group of $\mathrm{G}_0$; compactness is a topological condition, belongs to Part II, and is named here only. The Cartan decomposition is the algebraic shadow of the decomposition of a semisimple Lie group into a compact subgroup and a subspace, and the group statement is deferred.</p>
+<h2 id="worked-case-math90">Worked Case: $\mathrm{sl}(2,\mathbb{R})$</h2>
+<p>Let $\mathrm{G}_0=\mathrm{sl}(2,\mathbb{R})$ with basis $e,h,f$ and $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$. The Cartan involution is $\theta(x)=-x^{t}$, the negative transpose, which fixes</p>
+<p>$$
+\mathrm{K}=\left\{\begin{pmatrix}0&b\\-b&0\end{pmatrix}\right\}=\langle e-f\rangle,
+$$</p>
+<p>a one-dimensional algebra, and negates the complementary space $\mathrm{P}=\langle h,\ e+f\rangle$ of dimension two; the pair $(\mathrm{G}_0,\mathrm{K})$ is the symmetric pair of the upper half-plane, whose group theory belongs to a later Part. The form $\kappa_\theta(x,y)=-\kappa(x,\theta y)$ is positive definite on $\mathrm{G}_0$, as the theory requires; the decomposition is an eigenspace decomposition of the involution and no metric reading is taken.</p>
+<p><strong>Verified.</strong> The involution $\theta(x)=-x^{t}$ was checked to be an algebra automorphism of $\mathrm{sl}(2,\mathbb{R})$ on the three brackets, and the eigenspace dimensions were checked to be $1$ and $2$; the bracket relations of the decomposition were verified on the basis.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Cartan involution</strong> of a real semisimple Lie algebra $\mathrm{G}_0$ is an involution $\theta$ with $\kappa_\theta(x,y)=-\kappa(x,\theta y)$ positive definite; it is unique up to inner automorphisms. Its <strong>Cartan decomposition</strong> $\mathrm{G}_0=\mathrm{K}\oplus\mathrm{P}$ is the eigenspace decomposition for the eigenvalues $+1$ and $-1$, with $\mathrm{K}$ a subalgebra, $\mathrm{P}$ a module over it, and the brackets $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$ making $\mathrm{G}_0$ a $\mathbb{Z}/2$-graded Lie algebra whose grade involution is $\theta$. The fixed subalgebra $\mathrm{K}$ is the <strong>maximal compact subalgebra</strong>, the Lie algebra of a maximal compact subgroup of the adjoint group, a compactness statement named and deferred to Part II. The pair $(\mathrm{G}_0,\mathrm{K})$ is a symmetric pair, treated in <em>Symmetric Pairs of a Lie Algebra</em> and <em>Graded Lie Algebras with an Involution</em>. For $\mathrm{sl}(2,\mathbb{R})$ the involution is the negative transpose, $\mathrm{K}$ is one-dimensional and $\mathrm{P}$ two-dimensional. The operator layer of the involution, its adjoints and the Casimir operator under the involution belong to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{G}_0$</td>
+<td>a real semisimple Lie algebra</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>a Cartan involution</td>
+</tr>
+<tr>
+<td>$\kappa_\theta(x,y)=-\kappa(x,\theta y)$</td>
+<td>the associated positive definite form</td>
+</tr>
+<tr>
+<td>$\mathrm{K}=\ker(\theta-\mathrm{id})$</td>
+<td>the fixed subalgebra, the maximal compact subalgebra</td>
+</tr>
+<tr>
+<td>$\mathrm{P}=\ker(\theta+\mathrm{id})$</td>
+<td>the complement</td>
+</tr>
+<tr>
+<td>$(\mathrm{G}_0,\mathrm{K})$</td>
+<td>the symmetric pair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for the Cartan involution and the Cartan decomposition.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em>, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the Cartan decomposition and the maximal compact subalgebra.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for involutions and symmetric pairs.</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 2001), for the real forms and their involutions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

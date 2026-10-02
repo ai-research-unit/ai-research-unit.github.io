@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Manifolds and the Geodesic Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-manifolds-and-the-geodesic-involution"><strong>Hermitian Manifolds and the Geodesic Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>geodesic involution</strong> is the map of the tangent bundle that reverses every tangent vector, $\iota(v) = -v$, together with its conjugate on the manifold, the geodesic symmetry $\sigma_p$ of a normal neighbourhood of $p$. It is the same map in two coordinates: the exponential map at $p$ intertwines $\iota$ with $\sigma_p$, so $\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1}$, and the symmetry is the geometric face of the linear involution of the tangent space. When the manifold carries a complex structure $J$ compatible with the metric, the geodesic involution is automatically compatible with it at the centre, because $-\mathrm{id}$ commutes with every operator; the question is whether the compatibility persists in a neighbourhood, and the answer is that it does exactly when the complex structure is parallel, which is the condition that makes the symmetric space a <strong>Hermitian symmetric space</strong>.</p>
+<p>The article develops the geodesic involution and its compatibility with the complex structure. It defines the involution of the tangent bundle and the geodesic symmetry of a normal neighbourhood and shows that the exponential map conjugates them; it proves that the differential of the symmetry commutes with the complex structure at the centre, so the symmetry is complex-linear there; it proves that the symmetry is holomorphic on a neighbourhood exactly when the complex structure is parallel there, equivalently when the metric is Kähler and the space is locally symmetric; it reads the tangent-space splitting under the involution and the complex structure, and it states the condition on the Cartan decomposition that makes the symmetric space Hermitian; and it gives the examples of the flat, the projective and the hyperbolic Hermitian symmetric spaces.</p>
+<p>The article assumes the geodesic symmetry and the locally symmetric spaces of <em>The Geodesic Symmetry and Locally Symmetric Spaces</em>, the symmetric spaces and the Cartan decomposition of <em>Riemannian Symmetric Spaces and the Involution</em> and the isometric involution of the two following articles of this category; the exponential map and the geodesics of <em>Riemannian Geometry</em>. The complex structure, the Hermitian metric, the fundamental form and the Kähler condition are <em>Hermitian Geometry and Almost Complex Structures</em> in a later category of this Part; the Hermitian symmetric spaces, the group involution and the Bergman metric are <em>Hermitian Symmetric Spaces and the Group Involution</em> and <em>Hermitian Symmetric Spaces and the Bergman Metric</em> in later categories; all are named below as forward references, and the article states the compatibility of the involution with the complex structure without developing the holomorphic geometry. No physics is invoked.</p>
+<h2 id="the-geodesic-involution">The Geodesic Involution</h2>
+<h3 id="on-the-tangent-space-and-on-the-manifold">On the Tangent Space and on the Manifold</h3>
+<p><strong>Definition.</strong> The <strong>geodesic involution</strong> of a Riemannian manifold $(M, g)$ is the fibre-preserving involution of the tangent bundle</p>
+<p>$$
+\iota : TM \longrightarrow TM, \qquad \iota(v) = -v,
+$$</p>
+<p>that reverses every tangent vector. It is smooth, it commutes with the bundle projection, and it restricts on each fibre $T_pM$ to the central symmetry $-\mathrm{id}$. Its orbits are the pairs $\{v, -v\}$ at the nonzero vectors and the single zero vector; the orbit space $TM/\iota$ is the <strong>unoriented tangent bundle</strong>, in which a direction is a line through the origin rather than an oriented vector.</p>
+<p><strong>Definition.</strong> The <strong>geodesic symmetry</strong> at $p$ is the conjugate of $\iota$ by the exponential map,</p>
+<p>$$
+\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1} : U \longrightarrow U, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
+$$</p>
+<p>on a normal neighbourhood $U$ of $p$; the previous articles of this category use it as the defining involution of a locally symmetric space.</p>
+<p><strong>Theorem.</strong> The geodesic symmetry is an involution of the normal neighbourhood, fixing $p$ alone and reversing every geodesic through $p$, and its differential at $p$ is the geodesic involution of the tangent space:</p>
+<p>$$
+\sigma_p^2 = \mathrm{id}, \qquad d(\sigma_p)_p = -\mathrm{id} = \iota|_{T_pM} .
+$$</p>
+<p>Along the geodesic $\gamma$ with $\gamma(0)=p$ the symmetry acts by $\gamma(t)\mapsto\gamma(-t)$, and on the tangent bundle along $\gamma$ its differential acts by the transport followed by the reversal, $d(\sigma_p)_{\gamma(t)} = -\iota\circ P_{t\to -t}$, where $P$ is the parallel transport along the geodesic.</p>
+<p><strong>Proof.</strong> The first statements are the definition of the geodesic symmetry of <em>The Geodesic Symmetry and Locally Symmetric Spaces</em>, read through the conjugation by the exponential map; the differential at the centre is $d(\exp_p)_0\circ(-\mathrm{id})\circ(d\exp_p)_0^{-1} = -\mathrm{id}$, since $d(\exp_p)_0=\mathrm{id}$. Along the geodesic the symmetry reverses the parameter, and its differential at $\gamma(t)$ carries the tangent vector at $\gamma(t)$ to the corresponding vector at $\gamma(-t)$, which is the transport followed by the reversal of the direction; the reversal is the involution $\iota$.</p>
+<h3 id="the-involution-as-the-centrepiece">The Involution as the Centrepiece</h3>
+<p><strong>Proposition.</strong> Every isometric involution of a Riemannian manifold with a fixed point $p$ at which the differential is $-\mathrm{id}$ is the geodesic symmetry at $p$; every reflection in a totally geodesic submanifold is a composition of the geodesic symmetries of the points of the submanifold with a reflection of the normal bundle, and the geodesic involution of the tangent space is the linear model of all of them. The geodesic involution is the unique isometric involution of the tangent space with the zero section as fixed set and the differential $-\mathrm{id}$ there.</p>
+<p><strong>Proof.</strong> The uniqueness of the isometric involution with $d=-id$ at a fixed point is the uniqueness of the geodesic symmetry of <em>The Geodesic Symmetry and Locally Symmetric Spaces</em>. On the tangent space, an isometry of the Euclidean space fixing the origin is linear, and the linear isometry with differential $-\mathrm{id}$ at the origin is $-\mathrm{id}$ itself; the zero section is its fixed set. The reflection statement is the tube theorem of <em>Isometric Involutions and the Fixed-Point Set</em>, the reflection being the reversal in the normal direction.</p>
+<h2 id="the-compatibility-with-the-complex-structure">The Compatibility with the Complex Structure</h2>
+<h3 id="the-involution-commutes-with-the-complex-structure">The Involution Commutes with the Complex Structure</h3>
+<p>Suppose now that $(M, g, J)$ is a <strong>Hermitian manifold</strong>: $J$ is an almost complex structure, $J^2 = -\mathrm{id}$, and the metric is Hermitian, $g(JX, JY) = g(X, Y)$. The complex structure, the Hermitian metric and the fundamental form are the subject of <em>Hermitian Geometry and Almost Complex Structures</em> in a later category of this Part, and are used here only through the compatibility of $J$ with the involution.</p>
+<p><strong>Theorem.</strong> The geodesic involution commutes with every complex structure on the tangent space:</p>
+<p>$$
+\iota\circ J = J\circ\iota, \qquad \iota(Jv) = -Jv = J(-v) = J\iota(v).
+$$</p>
+<p>Consequently the differential of the geodesic symmetry at its centre is complex-linear, $d(\sigma_p)_p\circ J_p = J_p\circ d(\sigma_p)_p$, and the symmetry is a <strong>holomorphic</strong> map at $p$: it agrees with a holomorphic map to the first order. The symmetry reverses the <strong>holomorphic</strong> and the <strong>anti-holomorphic</strong> directions without exchanging them, in contrast with the anti-holomorphic real structures of <em>Real Structures on a Riemannian Manifold</em>, which exchange the two types.</p>
+<p><strong>Proof.</strong> The identity is the fact that $-\mathrm{id}$ is a scalar and commutes with every operator; the complex-linearity of $d(\sigma_p)_p=-\mathrm{id}$ is the same statement. The holomorphy at the point is the complex-linearity of the differential, and the comparison with the anti-holomorphic case is the commutation rule $d\sigma\circ J = -J\circ d\sigma$ of the real structure.</p>
+<h3 id="the-parallel-complex-structure">The Parallel Complex Structure</h3>
+<p><strong>Theorem (the compatibility condition, quoted from the Hermitian geometry).</strong> The geodesic symmetry is holomorphic on a whole neighbourhood of $p$ exactly when the complex structure is <strong>parallel</strong> at $p$ in the sense of the Levi-Civita connection,</p>
+<p>$$
+(\nabla J)_p = 0 \quad \text{equivalently} \quad \nabla J = 0 \text{ on the neighbourhood},
+$$</p>
+<p>and when this holds at every point the metric is <strong>Kähler</strong> and the manifold is <strong>locally Hermitian symmetric</strong>; conversely a Kähler manifold that is locally symmetric is Hermitian symmetric, its geodesic symmetry being holomorphic.</p>
+<p><strong>Proof sketch.</strong> The differential of the symmetry commutes with $J$ at the centre, and one differentiates this commutation along the normal neighbourhood; the derivative of the relation is the vanishing of $\nabla J$ transported by the symmetry, so the holomorphy of the symmetry on the neighbourhood is equivalent to the parallelism of $J$ there. The Kähler condition enters because $\nabla J=0$ with the Levi-Civita connection is equivalent to the closedness of the fundamental form together with the integrability of $J$, and this is developed in <em>Hermitian Geometry and Almost Complex Structures</em>. The local symmetry is <em>The Geodesic Symmetry and Locally Symmetric Spaces</em>, and the combination of $\nabla J=0$ and $\nabla R=0$ is the locally Hermitian symmetric condition.</p>
+<p><strong>Corollary.</strong> On a Hermitian manifold the geodesic symmetry at a point is holomorphic at the point always, and holomorphic on a neighbourhood exactly when the complex structure is parallel there; on a Hermitian symmetric space, where the symmetry is defined globally, it is a global holomorphic isometry.</p>
+<h2 id="hermitian-symmetric-spaces">Hermitian Symmetric Spaces</h2>
+<p><strong>Definition.</strong> A <strong>Hermitian symmetric space</strong> is a symmetric space that is Hermitian, equivalently a connected Kähler manifold with, at every point, a holomorphic involutive isometry fixing the point with differential $-\mathrm{id}$. The geodesic symmetry of a Hermitian symmetric space is a global holomorphic isometry, and the space is homogeneous under its group of holomorphic isometries.</p>
+<p><strong>Theorem.</strong> A Hermitian symmetric space is a symmetric space whose complex structure is parallel; the geodesic symmetry at every point is then holomorphic, its differential $-\mathrm{id}$ being complex-linear, and the parallel complex structure is the one for which the symmetric structure is complex. In the Cartan decomposition the complex structure is an endomorphism of $\mathfrak{p}$ with $J^2 = -\mathrm{id}$, and the complexified tangent space $\mathfrak{p}\otimes\mathbb{C}$ splits into the $(+i)$- and $(-i)$-eigenspaces $\mathfrak{p}_+\oplus\mathfrak{p}_-$; the symmetric space is Hermitian exactly when</p>
+<p>$$
+[\mathfrak{p}_+,\mathfrak{p}_+] = 0,
+$$</p>
+<p>equivalently when the centre of $\mathfrak{k}$ is one-dimensional in the compact type and the complexified isotropy has a one-dimensional centre.</p>
+<p><strong>Proof sketch.</strong> The holomorphy of the geodesic symmetry is the compatibility theorem above, and the parallelism of $J$ is its metric content. The decomposition $\mathfrak{p}\otimes\mathbb{C}=\mathfrak{p}_+\oplus\mathfrak{p}_-$ is the eigenspace decomposition of the complex structure acting on the tangent space, whose eigenvalues are $\pm i$; the vanishing $[\mathfrak{p}_+,\mathfrak{p}_+]=0$ is the integrability of the almost complex structure, the Nijenhuis tensor being expressed by the bracket of the two eigenspaces, and it also forces the isotropy to have the one-dimensional centre from which $J$ is built. The details are the theory of the Hermitian symmetric spaces, in the later categories of this Part.</p>
+<p><strong>Corollary.</strong> A Hermitian symmetric space is Kähler, its complex structure is parallel, and its curvature tensor is invariant under $J$: $R(JX, JY) = R(X, Y)$. The Ricci form is invariant, and the space is <strong>Einstein</strong> when it is irreducible; the Bergman metric, the bounded symmetric domains and the classification are the subjects of the later Hermitian symmetric articles.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the flat space).</strong> On $\mathbb{C}^n$ with the Euclidean Hermitian metric the complex structure is parallel, the geodesic symmetry at a point is $v\mapsto 2p-v$, holomorphic, and the space is a flat Hermitian symmetric space; the geodesic involution of the tangent space is the central symmetry, commuting with $J$.</p>
+<p><strong>Example (the complex projective space).</strong> The complex projective space $\mathbb{CP}^n$ with the Fubini–Study metric is a Hermitian symmetric space of compact type: the geodesic symmetry at a point is the holomorphic map induced by the reflection in the corresponding complex line, the complex structure is parallel and the space is Kähler, of positive holomorphic sectional curvature. The complex Grassmannians are Hermitian symmetric in the same way, the symmetry at a subspace being induced by the reflection fixing the subspace and reversing its orthogonal complement, which is complex-linear.</p>
+<p><strong>Example (the complex hyperbolic space and the ball).</strong> The complex hyperbolic space $\mathbb{CH}^n$ and the unit ball with the Bergman metric are Hermitian symmetric spaces of noncompact type: the complex structure is parallel, the geodesic symmetry at a point is holomorphic, and the space is the bounded symmetric domain of the rank-one case. The correspondence between the bounded symmetric domains and the Hermitian symmetric spaces of noncompact type is the Harish-Chandra realization, and it is the subject of <em>Hermitian Symmetric Spaces and the Bergman Metric</em> in a later category of this Part.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>geodesic involution</strong> is the map $\iota(v) = -v$ of the tangent bundle, and the <strong>geodesic symmetry</strong> $\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1}$ on a normal neighbourhood is its conjugate by the exponential map; the symmetry is the unique isometric involution fixing $p$ alone with differential $-\mathrm{id}$ at $p$, and the involution of the tangent space is the linear model of every reflection. On a Hermitian manifold the involution commutes with the complex structure, $\iota J = J\iota$, because $-\mathrm{id}$ is a scalar, so the differential of the symmetry at its centre is complex-linear and the symmetry is holomorphic at $p$; it reverses the holomorphic and the anti-holomorphic directions without exchanging them, in contrast with the anti-holomorphic real structures. The symmetry is holomorphic on a neighbourhood exactly when the complex structure is parallel, $\nabla J = 0$ there, and then the metric is Kähler and the manifold locally Hermitian symmetric; a Kähler locally symmetric manifold is Hermitian symmetric.</p>
+<p>A <strong>Hermitian symmetric space</strong> is a symmetric space that is Hermitian, equivalently a Kähler manifold with, at each point, a holomorphic involutive isometry of differential $-\mathrm{id}$. Its tangent-space splitting $V_+\oplus V_-$ is complex because $J$ commutes with the involution, and in the Cartan decomposition the complex structure is an endomorphism of $\mathfrak{p}$ with $\mathfrak{p}\otimes\mathbb{C} = \mathfrak{p}_+\oplus\mathfrak{p}_-$ and $[\mathfrak{p}_+,\mathfrak{p}_+]=0$. Such a space is Kähler with parallel complex structure and $J$-invariant curvature, and it is Einstein when irreducible; the flat space, the complex projective space, the complex Grassmannians and the complex hyperbolic space with the Bergman metric are the standard examples, the last corresponding to the bounded symmetric domains in the Harish-Chandra realization. The holomorphic geometry, the group involution and the Bergman metric are the later Hermitian symmetric articles of this Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\iota(v) = -v$</td>
+<td>Geodesic involution of the tangent bundle</td>
+</tr>
+<tr>
+<td>$\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1}$</td>
+<td>Geodesic symmetry; conjugate of the involution</td>
+</tr>
+<tr>
+<td>$d(\sigma_p)_p = -\mathrm{id}$</td>
+<td>Differential at the centre; the linear involution</td>
+</tr>
+<tr>
+<td>$TM/\iota$</td>
+<td>Unoriented tangent bundle; quotient by the involution</td>
+</tr>
+<tr>
+<td>$J$, $J^2=-\mathrm{id}$, $g(JX,JY)=g(X,Y)$</td>
+<td>Complex structure and Hermitian metric</td>
+</tr>
+<tr>
+<td>$\iota J = J\iota$</td>
+<td>Compatibility: the involution is complex-linear</td>
+</tr>
+<tr>
+<td>$(\nabla J)_p = 0$, $\nabla J=0$</td>
+<td>Parallel complex structure; Kähler; the symmetry holomorphic</td>
+</tr>
+<tr>
+<td>Hermitian symmetric space</td>
+<td>Kähler symmetric space with holomorphic geodesic symmetry</td>
+</tr>
+<tr>
+<td>$V_+\oplus V_-$, complex splitting</td>
+<td>Eigenspaces of the involution, both $J$-invariant</td>
+</tr>
+<tr>
+<td>$\mathfrak{p}_+\oplus\mathfrak{p}_-$, $[\mathfrak{p}_+,\mathfrak{p}_+]=0$</td>
+<td>Hermitian condition in the Cartan decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the Hermitian symmetric spaces, the holomorphic geodesic symmetry and the Cartan decomposition.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry, Volume II</em> (Interscience, 1969), for the Hermitian and Kähler manifolds and the parallel complex structure.</li>
+<li>Arthur L. Besse, <em>Einstein Manifolds</em> (Springer, 1987), for the Hermitian symmetric spaces, their curvature, the Ricci form and the Einstein condition.</li>
+<li>Ottmar Loos, <em>Bounded Symmetric Domains and Jordan Pairs</em> (University of California, Irvine, 1977), for the bounded symmetric domains and the Hermitian symmetric spaces of noncompact type.</li>
+<li>Andrei Moroianu, <em>Lectures on Kähler Geometry</em> (Cambridge University Press, 2007), for the Kähler condition, the Hermitian metrics and the parallel complex structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

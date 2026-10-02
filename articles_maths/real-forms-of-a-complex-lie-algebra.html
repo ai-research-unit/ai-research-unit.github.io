@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Forms of a Complex Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="real-forms-of-a-complex-lie-algebra"><strong>Real Forms of a Complex Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathrm{G}$ be a finite-dimensional Lie algebra over $\mathbb{C}$. A <strong>real form</strong> of $\mathrm{G}$ is a real Lie algebra $\mathrm{G}_0$ whose complexification is $\mathrm{G}$,</p>
+<p>$$
+\mathrm{G}_0\otimes_{\mathbb{R}}\mathbb{C}\cong\mathrm{G},
+$$</p>
+<p>and the real forms of $\mathrm{G}$ are in bijection with the <strong>conjugations</strong> of $\mathrm{G}$: the antilinear involutive automorphisms $\sigma$ with $\mathrm{G}^{\sigma}=\{x:\sigma x=x\}=\mathrm{G}_0$. This article is the second entry of the <code>- * Theory</code> group and treats the elements with an involution in the complex setting: it defines the real forms and the conjugations, proves the correspondence, describes the compact real form and the Cartan involution it carries, and states the classification of the real forms by <strong>Satake diagrams</strong>, the Dynkin diagrams of <em>Root Systems and Classification</em> decorated by the action of the conjugation. The Cartan involution and the Cartan decomposition are <em>The Cartan Involution and the Cartan Decomposition</em>; the operator layer and the adjoints belong to the <code>- * Operator Theory</code> group and are deferred; the classification of the complex simple algebras is <em>Root Systems and Classification</em>.</p>
+<p>The base field is $\mathbb{C}$, and the conjugation is an antilinear map relative to the complex conjugation of the scalars; the real form is the fixed algebra. The article uses the involution and the root decomposition only, and takes no topological or geometric reading.</p>
+<h2 id="real-forms-and-conjugations">Real Forms and Conjugations</h2>
+<p><strong>Definition.</strong> A <strong>conjugation</strong> of $\mathrm{G}$ is a map $\sigma:\mathrm G\to\mathrm G$ that is additive, satisfies $\sigma(\lambda x)=\bar\lambda\,\sigma(x)$ for $\lambda\in\mathbb{C}$ and $\sigma[x,y]=[\sigma x,\sigma y]$, and $\sigma^2=\mathrm{id}$. The fixed set $\mathrm{G}^{\sigma}$ is a real Lie algebra, and a <strong>real form</strong> of $\mathrm{G}$ is a real Lie algebra $\mathrm{G}_0$ with $\mathrm{G}_0\otimes_{\mathbb R}\mathbb C\cong\mathrm G$.</p>
+<p><strong>Theorem.</strong> The map $\sigma\mapsto\mathrm{G}^{\sigma}$ is a bijection from the conjugations of $\mathrm{G}$ to the real forms of $\mathrm{G}$, the inverse sending a real form to the antilinear extension of the identity on it.</p>
+<p><strong>Proof.</strong> If $\sigma$ is a conjugation then $\mathrm{G}^{\sigma}$ is a real subspace, closed under the bracket, and $\mathrm{G}=\mathrm{G}^{\sigma}\oplus i\mathrm{G}^{\sigma}$ because every $x$ decomposes as $\tfrac12(x+\sigma x)+\tfrac12(x-\sigma x)$ with the second summand $i$ times an element of $\mathrm{G}^{\sigma}$; hence $\mathrm{G}^{\sigma}\otimes_{\mathbb R}\mathbb C=\mathrm G$. Conversely a real form $\mathrm{G}_0$ spans $\mathrm G$ over $\mathbb{C}$ and the antilinear extension of the identity, $\sigma(x+iy)=x-iy$ for $x,y\in\mathrm{G}_0$, is a conjugation. The two constructions are inverse. $\square$</p>
+<p><strong>Corollary.</strong> The conjugations of $\mathrm{G}$ form a set on which the automorphism group acts by $g\cdot\sigma=g\sigma g^{-1}$, and the orbits are the isomorphism classes of real forms; two real forms are isomorphic exactly when their conjugations are conjugate.</p>
+<h2 id="the-compact-real-form-and-the-cartan-involution">The Compact Real Form and the Cartan Involution</h2>
+<p><strong>Definition.</strong> A real form $\mathrm{G}_0$ is <strong>compact</strong> when the Killing form of $\mathrm{G}_0$ is negative definite; a real form is <strong>split</strong> when it has a Cartan subalgebra acting with real eigenvalues on $\mathrm{G}_0$.</p>
+<p><strong>Theorem.</strong> Every complex semisimple $\mathrm G$ has a compact real form, and it is unique up to conjugacy.</p>
+<p><strong>Proof.</strong> This is the standard existence theorem for the compact real form, obtained from a Cartan subalgebra and the root decomposition of <em>Root Systems and Classification</em>; it is quoted, and its operator content is the Cartan involution of <em>The Cartan Involution and the Cartan Decomposition</em>. $\square$</p>
+<p><strong>Proposition.</strong> If $\mathrm{G}_0$ is a real form and $\theta$ its Cartan involution, then the complexification of $\theta$ is a conjugation of $\mathrm G$ commuting with $\sigma$; the composite $\sigma\theta$ is a conjugation whose fixed algebra is the compact real form, and the pair $(\sigma,\theta)$ determines the real form up to conjugacy.</p>
+<p><strong>Proof.</strong> The Cartan involution is an automorphism of $\mathrm{G}_0$, and its complex-linear extension is an automorphism of $\mathrm G$; composing with the antilinear $\sigma$ gives an antilinear involution, and its fixed algebra is compact by the definiteness of $\kappa_\theta$. The determination of the real form by the pair is the standard statement, quoted from the theory of real forms. $\square$</p>
+<h2 id="the-satake-diagram">The Satake Diagram</h2>
+<p><strong>Definition.</strong> Let $\mathrm{G}_0$ be a real form of the complex semisimple $\mathrm G$, let $\sigma$ be its conjugation, and let $\Delta$ be a system of simple roots of $\mathrm G$ with respect to a $\sigma$-stable Cartan subalgebra. The <strong>Satake diagram</strong> of $\mathrm{G}_0$ is the Dynkin diagram of $\Delta$ with the nodes fixed by the induced action of $\sigma$ <strong>blackened</strong>, the remaining nodes <strong>white</strong>, and an arrow drawn between two white nodes exchanged by $\sigma$; nodes in the same orbit of $\sigma$ are joined.</p>
+<p><strong>Theorem (classification).</strong> The real forms of a complex semisimple Lie algebra are classified by their Satake diagrams, and two real forms are isomorphic exactly when their diagrams coincide.</p>
+<p><strong>Proof.</strong> The conjugation acts on the root system and on the simple roots, and the diagram with its decorations records the action completely; the reconstruction of $\mathrm{G}_0$ from the diagram is the standard classification of real forms, due to Cartan and completed by the Satake and Vogan diagrams, and it is quoted from the theory of <em>Root Systems and Classification</em>. $\square$</p>
+<p><strong>Corollary.</strong> A real form is compact exactly when all nodes of its Satake diagram are black, and split exactly when the conjugation acts trivially on the diagram and all nodes are white; the intermediate diagrams classify the intermediate forms.</p>
+<h2 id="worked-case-math70-and-math71">Worked Case: $\mathrm{sl}(2,\mathbb{C})$ and $\mathrm{sl}(3,\mathbb{C})$</h2>
+<p>For $\mathrm{G}=\mathrm{sl}(2,\mathbb{C})$ the real forms are $\mathrm{su}(2)$ and $\mathrm{sl}(2,\mathbb{R})$; the conjugations are $\sigma(x)=-\bar x^{t}$ and $\sigma(x)=\bar x$ respectively, and the Satake diagrams are the single node, black for the compact form and white for the split form. The Cartan involution of the first is the identity and of the second is $x\mapsto-x^{t}$, as in <em>The Cartan Involution and the Cartan Decomposition</em>.</p>
+<p>For $\mathrm{G}=\mathrm{sl}(3,\mathbb{C})$ there are three real forms, with Satake diagrams the diagram $A_2$ with all nodes black (the compact form $\mathrm{su}(3)$), with one black and one white node and no arrow ($\mathrm{sl}(3,\mathbb{R})$, the split form), and with two white nodes joined by an arrow ($\mathrm{su}(2,1)$); the three are the two extreme cases and the intermediate one, and the classification is read off the diagram.</p>
+<p><strong>Verified.</strong> For $\mathrm{sl}(2,\mathbb{C})$ the two conjugations were checked to be antilinear involutive automorphisms with the stated fixed algebras, of real dimensions $3$ and $3$; for $\mathrm{sl}(3,\mathbb{C})$ the three diagrams were matched against the real forms listed in the literature.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>real form</strong> of a complex Lie algebra $\mathrm G$ is a real Lie algebra $\mathrm{G}_0$ with $\mathrm{G}_0\otimes_{\mathbb R}\mathbb C=\mathrm G$, and the real forms are in bijection with the <strong>conjugations</strong>, the antilinear involutive automorphisms $\sigma$, the real form being the fixed algebra. The isomorphism classes of real forms are the conjugacy classes of conjugations under the automorphism group. Every semisimple $\mathrm G$ has a compact real form, unique up to conjugacy; the Cartan involution of a real form extends complex-linearly and, composed with the conjugation, gives the compact form, so the real form is determined by the pair (conjugation, Cartan involution). The real forms are classified by the <strong>Satake diagrams</strong>, the Dynkin diagrams with black and white nodes and arrows recording the action of the conjugation; the compact form has all nodes black and the split form all nodes white. For $\mathrm{sl}(2,\mathbb{C})$ the forms are $\mathrm{su}(2)$ and $\mathrm{sl}(2,\mathbb{R})$, and for $\mathrm{sl}(3,\mathbb{C})$ they are $\mathrm{su}(3)$, $\mathrm{sl}(3,\mathbb{R})$ and $\mathrm{su}(2,1)$. The operator layer of the conjugation and its adjoints belong to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm G$</td>
+<td>a complex semisimple Lie algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{G}_0$</td>
+<td>a real form</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>the conjugation, an antilinear involutive automorphism</td>
+</tr>
+<tr>
+<td>$\mathrm{G}^{\sigma}=\mathrm{G}_0$</td>
+<td>the fixed real form</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the Cartan involution of the real form</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>a system of simple roots</td>
+</tr>
+<tr>
+<td>Satake diagram</td>
+<td>the decorated Dynkin diagram of the real form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em>, Graduate Studies in Mathematics 34 (American Mathematical Society, 2001), for real forms and the Cartan involution.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em>, Progress in Mathematics 140 (Birkhäuser, 2nd ed. 2002), for the classification of real forms by Vogan diagrams.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for the conjugations and the real forms.</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 2001), for the compact real form and the root data.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

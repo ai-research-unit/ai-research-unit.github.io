@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Modular Group and the KMS Condition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-modular-group-and-the-kms-condition"><strong>The Modular Group and the KMS Condition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>KMS condition</strong> is an analytic condition on a state and a one-parameter group of automorphisms: the function $t\mapsto\omega(x\sigma_t(y))$ must extend holomorphically to a strip and its boundary values must be $\omega(\sigma_t(y)x)$ at the other edge. It is a condition of commutativity up to an analytic continuation, and it is the exact condition that identifies the modular group: for a state $\omega$ with a cyclic and separating vector, the modular group of <em>The Modular Operator and Tomita-Takesaki Theory</em> is the unique group of automorphisms satisfying the condition.</p>
+<p>The <strong>modular automorphism group</strong> is therefore not an extra structure but the canonical flow attached to a state: change the state and the flow changes, and the cocycle relating two flows is the derivative of a unitary. The theory of KMS states is the theory of the states whose modular group is a prescribed flow, and the passage between two states is the passage between two flows related by a cocycle.</p>
+<p>This article fixes the KMS condition, the theorem that the modular group satisfies it and is characterised by it, the modular automorphism attached to a state, and the relation between the flows of different states.</p>
+<p>The modular operator and the Tomita–Takesaki theorem are <em>The Modular Operator and Tomita-Takesaki Theory</em>; the states and their representations are <em>The GNS Construction</em>; the positive elements are <em>Self-Adjoint Elements and the Positive Cone</em>; the indefinite version is <em>Krein–Tomita–Takesaki Theory</em>. Those are cited. The algebra is $\mathcal{M}$ with a state $\omega$, the flow is $\sigma$, and $\beta>0$ is the parameter.</p>
+<h2 id="the-kms-condition">The KMS Condition</h2>
+<p><strong>Definition.</strong> Let $\omega$ be a state on a von Neumann algebra $\mathcal{M}$ and $\sigma$ a strongly continuous group of automorphisms of $\mathcal{M}$. Then $\omega$ is <strong>KMS at $\beta>0$ with respect to $\sigma$</strong> when for every $x, y\in\mathcal{M}$ there is a function $F_{x,y}$ bounded and continuous on the closed strip $\{z : 0\leq\mathrm{Im}\,z\leq\beta\}$ and holomorphic in the open strip, with</p>
+<p>$$
+F_{x,y}(t) = \omega\big(x\,\sigma_t(y)\big), \qquad F_{x,y}(t+i\beta) = \omega\big(\sigma_t(y)\,x\big)
+$$</p>
+<p>for all real $t$. The state is <strong>KMS with respect to $\sigma$</strong> when it is KMS at some $\beta$; the normalisation $\beta = 1$ is a rescaling of the group.</p>
+<p><strong>Proposition (the boundary values are a commutativity relation).</strong> The KMS condition can be read as the statement that the two sesquilinear forms</p>
+<p>$$
+(x,y)\mapsto\omega(x\sigma_t(y)), \qquad (x,y)\mapsto\omega(\sigma_t(y)x)
+$$</p>
+<p>are the two boundary values of one analytic family, so the KMS condition is a "commutativity up to analytic continuation" of the state with the flow.</p>
+<p><strong>Proof.</strong> The definition is exactly the displayed property; the reading is the standard reformulation used below.</p>
+<p><strong>Proposition (the trace is KMS for the trivial flow).</strong> If $\omega$ is a trace then $\omega$ is KMS at every $\beta$ with respect to the trivial flow $\sigma_t = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> $\omega(xy) = \omega(yx)$ makes $F_{x,y}$ constant and equal on both edges.</p>
+<p><strong>Remark (the role of the holomorphy).</strong> The condition is an analytic one and cannot be seen from the algebraic relations of $\mathcal{M}$ alone: it is the statement that a certain function of $t$ has an analytic continuation across a strip of width $\beta$, and the width is an invariant of the pair $(\omega,\sigma)$.</p>
+<h2 id="the-modular-automorphism-group">The Modular Automorphism Group</h2>
+<p><strong>Theorem (the modular group is KMS).</strong> Let $\mathcal{M}$ have a cyclic and separating vector $\xi$ with vector state $\omega$, and let $\sigma_t = \mathrm{Ad}\,\Delta^{it}$ be the modular group of the pair. Then $\omega$ is KMS at $\beta = 1$ with respect to $\sigma$.</p>
+<p><strong>Proof.</strong> The KMS statement is the analytic continuation of the identity $\Delta = S^{*}S$: with $S(x\xi) = x^{*}\xi$ one has, for $t$ real, $\omega(x\sigma_t(y)) = \langle \Delta^{it}y\xi, x^{*}\xi\rangle$-type and the function of $t$ continues to the strip with the second boundary value $\omega(\sigma_t(y)x) = \langle x\xi,\Delta^{it}y\xi\rangle$; the two expressions are the two boundary values of the same analytic function because $\Delta^{it}$ extends to the strip and the vector $\xi$ lies in the domains of $\Delta^{z}$ there.</p>
+<p><strong>Theorem (characterisation of the modular group).</strong> If $\omega$ is a faithful normal state and $\sigma$ a strongly continuous group of automorphisms of $\mathcal{M}$ such that $\omega$ is KMS at $\beta = 1$ with respect to $\sigma$, then there is a cyclic and separating vector $\xi$ for $\mathcal{M}$ with vector state $\omega$, and $\sigma$ is the modular group of the pair $(\mathcal{M},\xi)$. So the modular group is the unique group of automorphisms for which the state is KMS.</p>
+<p><strong>Proof.</strong> By the GNS construction <em>The GNS Construction</em>, fidelity and normality give a faithful normal representation with a cyclic and separating vector $\xi$ for the vector state $\omega$; the KMS condition with respect to $\sigma$ is then checked to agree with the modular condition of the Tomita–Takesaki theorem, and the uniqueness follows because the polar decomposition of the Tomita operator is unique and determines $\Delta$ and hence the group.</p>
+<p><strong>Corollary (the modular automorphism of a state).</strong> Every faithful normal state on a von Neumann algebra has a canonical one-parameter group of automorphisms, its <strong>modular automorphism group</strong>, and two states have the same modular group exactly when one is a positive multiple of the other; in general the modular groups of two states are related by the cocycle of the Radon–Nikodym derivatives.</p>
+<p><strong>Proof.</strong> Existence and uniqueness are the two theorems; the comparison of two states is the standard cocycle computation for the two vector states and their modular operators.</p>
+<h2 id="the-kms-states">The KMS States</h2>
+<p><strong>Definition.</strong> A state $\omega$ is a <strong>KMS state</strong> with respect to a given flow $\sigma$ when it satisfies the KMS condition of the first section with respect to $\sigma$.</p>
+<p><strong>Proposition (the set of KMS states is convex).</strong> For a fixed flow $\sigma$ the KMS states at a fixed $\beta$ form a convex set, and its extreme points are the states whose GNS representations are factors.</p>
+<p><strong>Proof.</strong> The KMS condition is linear in $\omega$, giving convexity; purity and extremality are the irreducibility criterion of <em>The GNS Construction</em>, and a state is extreme exactly when its representation is a factor representation.</p>
+<p><strong>Proposition (the modular group of a KMS state is the flow).</strong> If $\omega$ is a KMS state with respect to a flow $\sigma$ and $\omega$ is faithful and normal, then the modular group of $\omega$ is exactly $\sigma$.</p>
+<p><strong>Proof.</strong> The characterisation theorem.</p>
+<p><strong>Remark (the KMS condition is a characterisation, not a definition).</strong> The modular group of a state can be defined entirely algebraically from the Tomita operator; the KMS condition gives it an external characterisation as the unique flow making the state analytic, and it is through this characterisation that the modular group is recognised when it appears in a computation.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-trace">The Trace</h3>
+<p>For a trace the modular group is trivial and the state is KMS at every $\beta$; the modular operator is the identity, and the condition degenerates to the commutativity of the state with everything.</p>
+<h3 id="the-temperature-parameter">The Temperature Parameter</h3>
+<p>On a type $\mathrm{I}$ factor with the state $\omega(x) = \mathrm{tr}(\rho_{\beta}x)$, $\rho_{\beta} = e^{-\beta h}/Z$, the modular group is $\sigma_t(x) = e^{ith}xe^{-ith}$ and the state is KMS at the given $\beta$ with respect to it: this is the model computation that shows the KMS condition at a general $\beta$ and the modular group of an exponential density matrix.</p>
+<h3 id="a-general-modular-group">A General Modular Group</h3>
+<p>For an arbitrary faithful normal state, the modular automorphism group exists by the corollary and its generator, when finite, is a derivation of the algebra; the one-parameter family of states obtained by pushing $\omega$ along the modular group has constant modular group, which is why the flow is called the flow of the state.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>KMS condition</strong> for a state $\omega$ and a strongly continuous group $\sigma$ of automorphisms asks that $t\mapsto\omega(x\sigma_t(y))$ extend holomorphically across the strip of width $\beta$ and that the second boundary value be $\omega(\sigma_t(y)x)$; it is a commutativity condition of the state with the flow, up to analytic continuation, and a trace is KMS for the trivial flow at every $\beta$. The <strong>modular automorphism group</strong> $\sigma_t = \mathrm{Ad}\,\Delta^{it}$ of a cyclic and separating vector is KMS at $\beta = 1$, and conversely the KMS condition with respect to a strongly continuous group characterises the modular group, so every faithful normal state has a canonical flow, its <strong>modular automorphism group</strong>, and the flow determines the state up to a positive multiple. The <strong>KMS states</strong> for a fixed flow form a convex set whose extreme points are the states with factor representations, and the modular group of a faithful normal KMS state is the flow itself. The modular data is <em>The Modular Operator and Tomita-Takesaki Theory</em>, the states are <em>The GNS Construction</em>, the positive cone is <em>Self-Adjoint Elements and the Positive Cone</em>, and the indefinite version is <em>Krein–Tomita–Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{x,y}(t) = \omega(x\sigma_t(y))$</td>
+<td>The KMS function</td>
+</tr>
+<tr>
+<td>$F_{x,y}(t+i\beta) = \omega(\sigma_t(y)x)$</td>
+<td>The second boundary value</td>
+</tr>
+<tr>
+<td>KMS at $\beta$</td>
+<td>Holomorphy in the strip $0<\mathrm{Im}\,z<\beta$</td>
+</tr>
+<tr>
+<td>$\sigma_t = \mathrm{Ad}\,\Delta^{it}$</td>
+<td>The modular automorphism group</td>
+</tr>
+<tr>
+<td>$\omega$ KMS $\Rightarrow$ $\sigma$ modular</td>
+<td>The characterisation theorem</td>
+</tr>
+<tr>
+<td>Cocycle of two states</td>
+<td>The relation between their modular groups</td>
+</tr>
+<tr>
+<td>Convex set of KMS states</td>
+<td>Extreme points are factor states</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rudolf Haag, N. M. Hugenholtz and Marinus Winnink, "On the equilibrium states in quantum statistical mechanics", <em>Communications in Mathematical Physics</em> <strong>5</strong> (1967), 215–236, for the KMS condition and its characterisation of the modular group.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular automorphism group.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the KMS condition and the modular theory of states.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular group and the standard form.</li>
+<li>Alain Connes, "Une classification des facteurs de type III", <em>Annales Scientifiques de l'École Normale Supérieure</em> <strong>6</strong> (1973), 133–252, for the cocycle relating the modular groups of two states.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

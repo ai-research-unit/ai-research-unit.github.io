@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Action of a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-action-of-a-lie-algebra"><strong>The Adjoint Action of a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every element $x$ of a Lie algebra $\mathrm{G}$ defines the operator $\operatorname{ad}_x$ on $\mathrm{G}$ by $\operatorname{ad}_x(y)=[x,y]$, and the assignment $x\mapsto\operatorname{ad}_x$ is the <strong>adjoint action</strong> of $\mathrm{G}$ on itself. The operators $\operatorname{ad}_x$ are the inner operators of the algebra, and their theory is the operator layer of the structure of $\mathrm{G}$: the Jacobi identity is exactly the statement that each $\operatorname{ad}_x$ is a derivation and that the map $x\mapsto\operatorname{ad}_x$ is a homomorphism of Lie algebras, the centre of $\mathrm{G}$ is exactly its kernel, the ideals of $\mathrm{G}$ are exactly the subspaces stable under all the $\operatorname{ad}_x$, and the inner derivations are exactly the image. The structure theory that uses these facts — the radical, the Killing form, Cartan's criteria, the Levi decomposition — is <em>Structure of Lie Algebras</em>; the derivations as a Lie algebra are <em>Derivations of a Lie Algebra</em>; the module structure it defines is <em>Representations of Lie Algebras</em>.</p>
+<p>The base is a field $K$ and $\mathrm{G}$ is finite-dimensional over $K$. The adjoint map is written $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$, its value at $x$ by $\operatorname{ad}_x$, the centre by $\mathrm{Z}(\mathrm{G})$, the derivations by $\operatorname{Der}(\mathrm{G})$ and the inner derivations by $\operatorname{Inn}(\mathrm{G})$. The article reasons with the bracket and linear algebra over $K$ only.</p>
+<h2 id="the-adjoint-map">The Adjoint Map</h2>
+<p><strong>Definition.</strong> The <strong>adjoint action</strong> of $\mathrm{G}$ on itself is the map</p>
+<p>$$
+\operatorname{ad}:\mathrm{G}\longrightarrow\operatorname{End}_K(\mathrm{G}),\qquad \operatorname{ad}(x)=\operatorname{ad}_x,\qquad \operatorname{ad}_x(y)=[x,y].
+$$</p>
+<p><strong>Proposition.</strong> For each $x$ the operator $\operatorname{ad}_x$ is linear, and the map $\operatorname{ad}$ is linear.</p>
+<p><strong>Proof.</strong> The bracket is bilinear, so $\operatorname{ad}_x$ is linear in $y$; and for scalars $\lambda,\mu$ and elements $x,x'$, $\operatorname{ad}_{\lambda x+\mu x'}(y)=[\lambda x+\mu x',y]=\lambda[x,y]+\mu[x',y]$, so $\operatorname{ad}$ is linear in $x$. $\square$</p>
+<h2 id="the-jacobi-identity-as-the-derivation-property">The Jacobi Identity as the Derivation Property</h2>
+<p><strong>Theorem.</strong> The Jacobi identity is equivalent to the statement that every $\operatorname{ad}_x$ is a derivation of the bracket:</p>
+<p>$$
+\operatorname{ad}_x([y,z])=[\operatorname{ad}_x y,z]+[y,\operatorname{ad}_x z]\qquad\text{for all }x,y,z .
+$$</p>
+<p><strong>Proof.</strong> The displayed identity reads $[x,[y,z]]=[[x,y],z]+[y,[x,z]]$, which is the Jacobi identity rearranged. $\square$</p>
+<p><strong>Theorem.</strong> The Jacobi identity is equivalently the statement that the adjoint map is a homomorphism of Lie algebras:</p>
+<p>$$
+\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]\qquad\text{for all }x,y .
+$$</p>
+<p><strong>Proof.</strong> Both sides are operators on $\mathrm{G}$; evaluated on $z$, the left is $[[x,y],z]$ and the right is $[x,[y,z]]-[y,[x,z]]$, whose equality is again the Jacobi identity. $\square$</p>
+<p><strong>Corollary.</strong> The image $\operatorname{Inn}(\mathrm{G})=\operatorname{ad}(\mathrm{G})$ is a Lie subalgebra of $\operatorname{End}_K(\mathrm{G})$ with the commutator bracket, and $\operatorname{ad}$ is a homomorphism of Lie algebras onto it, so $\operatorname{ad}$ is a representation of $\mathrm{G}$ on $\mathrm{G}$, the adjoint representation of <em>Representations of Lie Algebras</em>. The derivations $\operatorname{Der}(\mathrm{G})$ of <em>Derivations of a Lie Algebra</em> contain $\operatorname{Inn}(\mathrm{G})$ as an ideal.</p>
+<h2 id="the-kernel-and-the-centre">The Kernel and the Centre</h2>
+<p><strong>Theorem.</strong> The kernel of the adjoint map is the centre:</p>
+<p>$$
+\ker\operatorname{ad}=\{x:\operatorname{ad}_x=0\}=\{x:[x,y]=0\text{ for all }y\}=\mathrm{Z}(\mathrm{G}).
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_x=0$ means $[x,y]=0$ for every $y$, which is the definition of the centre. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint representation is faithful exactly when $\mathrm{G}$ has trivial centre; and $\operatorname{ad}(\mathrm{G})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})$ as Lie algebras.</p>
+<p><strong>Proposition.</strong> The centre is an ideal and is the smallest ideal $\mathrm{I}$ with $\operatorname{ad}(\mathrm{G})\subseteq\operatorname{Der}(\mathrm{G})$ having $\mathrm{I}$ in its kernel; equivalently, a subspace $\mathrm{I}$ lies in the kernel of every $\operatorname{ad}_x$ exactly when $[\mathrm{G},\mathrm{I}]=0$, which for an ideal $\mathrm{I}$ means $\mathrm{I}\subseteq\mathrm{Z}(\mathrm{G})$ when $\mathrm{G}$ is spanned by $[\mathrm{G},\mathrm{G}]$.</p>
+<p><strong>Proof.</strong> The centre is an ideal because $[[x,y],z]=[x,[y,z]]-[y,[x,z]]\in\mathrm{Z}$ for $z$ central; the span statement is the definition of the bracket. $\square$</p>
+<h2 id="ideals-as-invariant-subspaces">Ideals as Invariant Subspaces</h2>
+<p><strong>Theorem.</strong> A subspace $\mathrm{I}\subseteq\mathrm{G}$ is an ideal if and only if it is stable under every operator $\operatorname{ad}_x$, $x\in\mathrm{G}$; it is characteristic if and only if it is stable under every derivation.</p>
+<p><strong>Proof.</strong> Stability under $\operatorname{ad}_x$ means $[x,\mathrm{I}]\subseteq\mathrm{I}$ for every $x$, which is the definition of an ideal; the characteristic statement is the analogous reading with derivations in place of the $\operatorname{ad}_x$. $\square$</p>
+<p><strong>Corollary.</strong> The sum and the intersection of ideals are ideals, the quotient $\mathrm{G}/\mathrm{I}$ is a Lie algebra with the induced bracket, and the induced map on the quotient is the adjoint action of the quotient; the correspondence between ideals and invariant subspaces is the linear-algebraic form of the isomorphism theorems.</p>
+<h2 id="the-operators-and-the-bracket">The Operators and the Bracket</h2>
+<p><strong>Proposition.</strong> The operators $\operatorname{ad}_x$ satisfy</p>
+<p>$$
+[\operatorname{ad}_x,\operatorname{ad}_y]=\operatorname{ad}_{[x,y]},
+$$</p>
+<p>so $\operatorname{ad}$ is a representation; the operators $\operatorname{ad}_x$ are the inner elements of the normaliser of $\operatorname{ad}(\mathrm{G})$ in $\operatorname{End}_K(\mathrm{G})$, and they act on $\operatorname{End}_K(\mathrm{G})$ by the commutator.</p>
+<p><strong>Proof.</strong> The first is the homomorphism property; the second is the Jacobi identity in the associative algebra $\operatorname{End}_K(\mathrm{G})$. $\square$</p>
+<p><strong>Proposition (the transpose action).</strong> The transpose operators $\operatorname{ad}_x^{*}$ on $\mathrm{G}^*$ define the <strong>coadjoint action</strong>, and it is again a representation, $\operatorname{ad}_{[x,y]}^{*}=[\operatorname{ad}_x^{*},\operatorname{ad}_y^{*}]$; with respect to the pairing $\mathrm{G}^*\times\mathrm{G}\to K$ the coadjoint and adjoint actions are transposed, $\langle\operatorname{ad}_x^{*}\xi,y\rangle=-\langle\xi,\operatorname{ad}_x y\rangle$ in the convention in which the pairing is $\xi(y)$.</p>
+<p><strong>Proof.</strong> Transposition reverses the commutator, so the homomorphism property is preserved; the sign in the pairing is the definition of the transpose. $\square$</p>
+<h2 id="worked-case-math100">Worked Case: $\mathrm{sl}(2,K)$</h2>
+<p>Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$. The adjoint operators are</p>
+<p>$$
+\operatorname{ad}_h=\begin{pmatrix}2&0&0\\0&0&0\\0&0&-2\end{pmatrix},\qquad
+\operatorname{ad}_e=\begin{pmatrix}0&-2&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+\operatorname{ad}_f=\begin{pmatrix}0&0&0\\-1&0&0\\0&2&0\end{pmatrix},
+$$</p>
+<p>the centre is zero, so the adjoint representation is faithful and $\operatorname{ad}(\mathrm{G})\cong\mathrm{sl}(2,K)$; the image is the three-dimensional Lie algebra spanned by the displayed matrices, with $[\operatorname{ad}_h,\operatorname{ad}_e]=2\operatorname{ad}_e$ and $[\operatorname{ad}_e,\operatorname{ad}_f]=\operatorname{ad}_h$, the same brackets as $\mathrm{G}$. The operators have trace zero, as they must, and each is a derivation of the bracket by the Jacobi identity.</p>
+<p><strong>Verified.</strong> The three matrices were recomputed from the brackets, the brackets of the matrices were checked to reproduce $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$, and $\ker\operatorname{ad}=0$ was confirmed by the rank $3$ of the adjoint map.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>adjoint action</strong> is the map $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$, $x\mapsto\operatorname{ad}_x$ with $\operatorname{ad}_x(y)=[x,y]$. The Jacobi identity is exactly the statement that each $\operatorname{ad}_x$ is a derivation of the bracket, equivalently that $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$, so $\operatorname{ad}$ is a homomorphism of Lie algebras onto the inner derivations, an ideal of the derivations. The kernel of $\operatorname{ad}$ is the centre $\mathrm{Z}(\mathrm{G})$, so the adjoint representation is faithful exactly when the centre is zero and $\operatorname{ad}(\mathrm{G})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})$. A subspace is an ideal exactly when it is stable under every $\operatorname{ad}_x$, and characteristic exactly when stable under every derivation. The transpose operators on the dual define the coadjoint action, another representation, transposed to the adjoint action with the sign of the pairing. For $\mathrm{sl}(2,K)$ the adjoint operators are the displayed matrices, the representation is faithful, and the image is a copy of $\mathrm{sl}(2,K)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field</td>
+</tr>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a finite-dimensional Lie algebra over $K$</td>
+</tr>
+<tr>
+<td>$[x,y]$</td>
+<td>the bracket</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x(y)=[x,y]$</td>
+<td>the adjoint operator of $x$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$</td>
+<td>the adjoint map, the adjoint representation</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x^{*}$</td>
+<td>the transpose, giving the coadjoint action on $\mathrm{G}^*$</td>
+</tr>
+<tr>
+<td>$\mathrm{Z}(\mathrm{G})=\ker\operatorname{ad}$</td>
+<td>the centre</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathrm{G})$, $\operatorname{Inn}(\mathrm{G})$</td>
+<td>the derivations and the inner derivations</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>the pairing of $\mathrm{G}^*$ with $\mathrm{G}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the adjoint representation and the identification of ideals with invariant subspaces.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Graduate Texts in Mathematics 9 (Springer, 1972), for the adjoint and coadjoint actions and the centre.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 1–3 (Springer, 1989), for the adjoint action and the ideal correspondence.</li>
+<li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em>, Lecture Notes in Mathematics 1500 (Springer, 1992), for the adjoint representation and its properties.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

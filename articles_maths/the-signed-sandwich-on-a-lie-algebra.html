@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-lie-algebra"><strong>The Signed Sandwich on a Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>sandwich</strong> of an associative algebra is the operator $x\mapsto axb$, and the <strong>signed sandwich</strong> is the same operator with the grade involution inserted, $x\mapsto a\,\alpha(x)\,b$. A Lie algebra has no associative product, so the sandwich is read through its only product, the bracket: the left multiplication by $a$ is the operator $\operatorname{ad}_a$, the right multiplication by $b$ is the operator $x\mapsto[x,b]$, and the sandwich is their composite $x\mapsto[a,[x,b]]$. Inserting the grade involution gives the signed sandwich of the Lie algebra, and the pair of parameters then behaves under the involution and under composition as the associative case does, with the reflections of the group becoming visible as the signed conjugations.</p>
+<p>This article treats the signed sandwich on a Lie algebra: the operator $x\mapsto a\,\alpha(x)\,b$ read with the bracket, the reflections it realises, and its relation to the unsigned sandwich. It is the fifth article of the <code>- Operator Theory</code> group of the category; the unsigned left and right multiplications are from <em>Operators on a Lie Group</em> and <em>The Adjoint Action of a Lie Algebra</em>, the grade involution and the grading are <em>Graded Lie Algebras and Lie Superalgebras</em> and <em>Graded Lie Algebras with an Involution</em>, the reflections are <em>Reflections as Signed Two-Sided Operators on a Lie Algebra</em>, below, and the adjoint of the operator is <em>The Signed Adjoint Sandwich on a Lie Algebra</em> of the <code>- * Operator Theory</code> group, below in the category.</p>
+<p>The article assumes the Lie algebra and its bracket from <em>Lie Groups</em> and <em>The Lie Algebra and the Exponential Map</em>, the adjoint representation and the derivation $\operatorname{ad}_X$ from <em>The Lie Correspondence and the Adjoint Representation</em>, the universal enveloping algebra and its PBW theorem from <em>Universal Enveloping Algebras</em>, the grading and the grade involution from <em>Graded Lie Algebras with an Involution</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>, and the associative sandwich and its laws from <em>The Signed Sandwich on an Algebra</em> and <em>The Signed Sandwich on a Graded Algebra</em>. The Lie algebra is used with its adjoint action throughout; the associative sandwich is cited as the model that the Lie-algebraic case imitates through the bracket, and no new structure is imported from it.</p>
+<h2 id="the-conventions">The Conventions</h2>
+<h3 id="the-two-products-of-the-lie-algebra">The Two Products of the Lie Algebra</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a Lie algebra over a field $k$ of characteristic different from $2$, and let $\alpha$ be its <strong>grade involution</strong>, the involutive automorphism of the grading $\mathrm{G} = \mathrm{G}^{+}\oplus\mathrm{G}^{-}$ that is $+\mathrm{id}$ on the even part and $-\mathrm{id}$ on the odd part.</p>
+<p><strong>Definition.</strong> The <strong>left multiplication</strong> by $a\in\mathrm{G}$ and the <strong>right multiplication</strong> by $b\in\mathrm{G}$ are the endomorphisms</p>
+<p>$$
+L_a(x) = [a,x], \qquad R_b(x) = [x,b] = -\operatorname{ad}_b(x) ,
+$$</p>
+<p>so that $L_a = \operatorname{ad}_a$, $R_b = -\operatorname{ad}_b$ and $L_a - R_a = \operatorname{ad}_a$; the two families coincide up to the sign, which is the antisymmetry $[a,x] = -[x,a]$ of the bracket.</p>
+<p><strong>Proposition.</strong> The left and right multiplications are derivations of the Lie algebra,</p>
+<p>$$
+L_a[x,y] = [L_ax,y] + [x,L_ay], \qquad R_b[x,y] = [R_bx,y] + [x,R_by] ,
+$$</p>
+<p>and they are related by $[L_a, R_b] = R_{[a,b]}$ and $[L_a,L_b] = L_{[a,b]}$, $[R_a,R_b] = -R_{[a,b]}$; the sum over both families is the adjoint action of the algebra on itself.</p>
+<p><em>Proof.</em> The derivation property is the Jacobi identity; the commutation relations are the same identity read on the operators, and the signs record the antisymmetry of the bracket.</p>
+<h3 id="the-sandwich">The Sandwich</h3>
+<p><strong>Definition.</strong> The <strong>unsigned sandwich</strong> by the pair $(a,b)$ is the composite</p>
+<p>$$
+\Sigma_{a,b} = L_aR_b, \qquad \Sigma_{a,b}(x) = [a,[x,b]] ,
+$$</p>
+<p>and the <strong>signed sandwich</strong> is</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} = L_aR_b\alpha = \Sigma_{a,b}\alpha, \qquad \Sigma^{\alpha}_{a,b}(x) = [a,[\alpha(x),b]] .
+$$</p>
+<p>The pair $(a,b)$ is the <strong>carrying pair</strong>, and the operator depends on it and not only on the product $[a,b]$, since the left and the right multiplications do not commute.</p>
+<p><strong>Remark.</strong> The sandwich is the Lie-algebraic reading of the associative operator $x\mapsto axb$: the identity that separates them is the antisymmetry of the bracket, under which $R_b = -\operatorname{ad}_b$ and the sandwich becomes a double bracket, $\Sigma_{a,b}(x) = \operatorname{ad}_a\operatorname{ad}_b(-\mathrm{id})(x)$; the signed sandwich is the same with the insertion of $\alpha$. Every statement of the present article reduces to a statement about the adjoint action, and the reader may keep the associative picture as a guide.</p>
+<h2 id="the-elementary-laws">The Elementary Laws</h2>
+<h3 id="the-factorisations">The Factorisations</h3>
+<p><strong>Proposition (the two factorisations of the signed sandwich).</strong> The signed sandwich factors through the grade involution in two ways,</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} = \Sigma_{a,b}\,\alpha = \alpha\,\Sigma_{\alpha(a),\alpha(b)} ,
+$$</p>
+<p>and the second identity uses that $\alpha$ is an automorphism of the bracket, $\alpha([u,v]) = [\alpha(u),\alpha(v)]$.</p>
+<p><em>Proof.</em> The first identity is the definition; the second is the computation</p>
+<p>$$
+\alpha\Sigma_{\alpha(a),\alpha(b)}(x) = \alpha[\alpha(a),[\alpha(x),\alpha(b)]] = [a,[x,b]]\alpha(x) ,
+$$</p>
+<p>which is $\Sigma_{a,b}(\alpha(x))$; hence the two operators agree on every $x$.</p>
+<p><strong>Corollary.</strong> The signed sandwich is the unsigned sandwich of the pair $(\alpha(a),\alpha(b))$ conjugated by $\alpha$, and when $\alpha$ is the identity it is the unsigned sandwich itself; the involution therefore acts on the parameter pair by the grading and not on the operator.</p>
+<p><em>Proof.</em> The corollary is the second factorisation read as an identity of operators, with the case $\alpha = \mathrm{id}$ immediate.</p>
+<h3 id="the-composition-and-the-square">The Composition and the Square</h3>
+<p><strong>Proposition.</strong> The composite of two signed sandwiches is</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}\,\Sigma^{\alpha}_{c,d} = \Sigma_{a,b}\,\alpha\,\Sigma_{c,d}\,\alpha = \Sigma_{a,b}\,\Sigma_{\alpha(c),\alpha(d)}\,\alpha^{2} ,
+$$</p>
+<p>and since $\alpha^{2} = \mathrm{id}$ it is the composite of two unsigned sandwiches; the composite of two unsigned sandwiches is generally not a sandwich, and the family of the sandwiches is closed under composition only in the associative model.</p>
+<p><em>Proof.</em> The computation uses the factorisation $\Sigma^{\alpha}_{c,d} = \alpha\Sigma_{\alpha(c),\alpha(d)}$ and $\alpha^2 = \mathrm{id}$, together with the fact that $\alpha$ commutes with the left and right multiplications up to the change of parameters: $\alpha L_c = L_{\alpha(c)}\alpha$, $\alpha R_d = R_{\alpha(d)}\alpha$. The last assertion is the statement that the product of two double brackets has four brackets and is not a double bracket.</p>
+<p><strong>Definition.</strong> The <strong>square</strong> of a signed sandwich is $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{a,b}$, and the sandwich is an <strong>involution</strong> when this square is the identity.</p>
+<p><strong>Theorem (the square).</strong> The square of the signed sandwich is</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{2} = \Sigma_{a,b}\,\Sigma_{\alpha(a),\alpha(b)} ,
+$$</p>
+<p>and it is the unsigned sandwich of the pair $(a,b)$ composed with that of the pair $(\alpha(a),\alpha(b))$; in the associative model the corresponding square is the sandwich by the product of the two carrying elements, and the Lie-algebraic computation does not in general collapse to a single sandwich.</p>
+<p><em>Proof.</em> The computation is the previous composition law with $(c,d) = (a,b)$; the absence of a collapse is the absence of associativity in the Lie algebra, and the reduction to a single sandwich is available only in the enveloping algebra, where the carrying elements multiply.</p>
+<h2 id="the-reflections-realised">The Reflections Realised</h2>
+<h3 id="the-signed-conjugation">The Signed Conjugation</h3>
+<p><strong>Definition.</strong> The <strong>signed conjugation</strong> by $a$ is the signed two-sided operator</p>
+<p>$$
+\rho_a = \operatorname{Ad}_{\exp a}\circ\alpha , \qquad \rho_a(x) = \operatorname{Ad}_{\exp a}\bigl(\alpha(x)\bigr) ,
+$$</p>
+<p>where $\operatorname{Ad}_{\exp a} = e^{\operatorname{ad}_a}$ is the inner automorphism of the algebra determined by the group element $\exp a$; it is the Lie-algebraic form of the associative conjugation $x\mapsto a\alpha(x)a^{-1}$.</p>
+<p><strong>Theorem.</strong> The square of the signed conjugation is the inner automorphism of the element $a + \alpha(a)$,</p>
+<p>$$
+\rho_a^{2} = \operatorname{Ad}_{\exp(a+\alpha(a))} = e^{\operatorname{ad}_{a+\alpha(a)}} ,
+$$</p>
+<p>and it is an involution of the algebra exactly when $a+\alpha(a)$ is central.</p>
+<p><em>Proof.</em> The square is $\operatorname{Ad}_{\exp a}\alpha\operatorname{Ad}_{\exp a}\alpha = \operatorname{Ad}_{\exp a}\operatorname{Ad}_{\exp\alpha(a)} = \operatorname{Ad}_{\exp(a+\alpha(a))}$, because $\alpha$ commutes with the adjoint action up to the action on the parameter; the inner automorphism of an element is the identity exactly when the element is central in the connected group, which is the condition $[a+\alpha(a),\mathrm{G}] = 0$.</p>
+<h3 id="the-relation-to-the-sandwich">The Relation to the Sandwich</h3>
+<p><strong>Theorem.</strong> In the enveloping algebra $U(\mathrm{G})$ the signed sandwich by the pair of a unit $u$ and its inverse $u^{-1}$ is the signed conjugation,</p>
+<p>$$
+\Sigma^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1} = \rho_u(x) ,
+$$</p>
+<p>and on the Lie algebra the restriction of this operator to $\mathrm{G}$ is the signed conjugation by $\exp a$ when $u = \exp a$. Hence the pair of a unit and its inverse is the carrying pair of a reflection, and the reflections of the next article are the signed sandwiches whose carrying pair is inverse.</p>
+<p><em>Proof.</em> In the enveloping algebra the signed sandwich is $\Sigma^{\alpha}_{u,v}(x) = u\alpha(x)v$, and with $v = u^{-1}$ it is $u\alpha(x)u^{-1} = \rho_u$; the group element $\exp a$ acts on $\mathrm{G}$ through the adjoint representation $\operatorname{Ad}_{\exp a} = e^{\operatorname{ad}_a}$, so the restriction to the algebra is the signed conjugation. The infinitesimal form of the family at $u = e$ is the signed left multiplication, computed in the next article.</p>
+<p><strong>Corollary.</strong> The signed sandwich realises the reflections when the carrying pair is a pair of inverses in the enveloping algebra, and the signed conjugation by $\exp a$ is the case $u = \exp a$; this is why the reflections of the next article are the signed two-sided operators attached to the elements and not to arbitrary pairs.</p>
+<p><em>Proof.</em> The corollary restates the theorem; the identification of the reflections of the next article with the signed conjugations is made there.</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<h3 id="the-inner-grade-involution">The Inner Grade Involution</h3>
+<p><strong>Proposition.</strong> If the grade involution is inner, $\alpha = \operatorname{Ad}_w$ for some $w$ in the connected group, then the signed sandwich is an unsigned sandwich conjugated by the inner automorphism,</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} = \operatorname{Ad}_w\,\Sigma_{\operatorname{Ad}_{w^{-1}}a,\operatorname{Ad}_{w^{-1}}b} ,
+$$</p>
+<p>and it is the composite of two unsigned sandwiches; the sign therefore produces no new operator, and the reflections of the next article collapse to the inner automorphisms.</p>
+<p><em>Proof.</em> Substitute $\alpha = \operatorname{Ad}_w$ in the factorisation and move $\operatorname{Ad}_w$ past the two multiplications using $\operatorname{Ad}_w\operatorname{ad}_x = \operatorname{ad}_{\operatorname{Ad}_w x}\operatorname{Ad}_w$; the resulting operator is the unsigned sandwich with the parameters transformed by $\operatorname{Ad}_{w^{-1}}$, conjugated by $w$. The collapse of the reflections is immediate from $\alpha = \operatorname{Ad}_w$.</p>
+<h3 id="the-abelian-lie-algebra">The Abelian Lie Algebra</h3>
+<p><strong>Proposition.</strong> If $\mathrm{G}$ is abelian then every sandwich is zero, $\Sigma_{a,b} = 0$, since the bracket vanishes; the signed sandwich is zero as well and the construction degenerates entirely. The sandwich measures the non-commutativity of the algebra, and on a central element either of the two products is the zero operator.</p>
+<p><em>Proof.</em> Immediate from the definition; the bracket of an abelian algebra is zero, and the composite of zero multiplications is zero.</p>
+<h3 id="the-central-pair">The Central Pair</h3>
+<p><strong>Proposition.</strong> If $b$ is central, then $R_b = 0$ and the unsigned sandwich is zero, while the signed sandwich is $L_a\alpha$ followed by $R_b$ and is zero; if $a$ is central, $L_a = 0$ and again the signed sandwich is zero. The sandwich therefore depends on both parameters being non-central, and the carrying elements of the next article are constrained accordingly.</p>
+<p><em>Proof.</em> The centrality of $b$ makes $[x,b] = 0$ for every $x$, and the centrality of $a$ makes $[a,y] = 0$; the two claims follow.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-orthogonal-algebra">The Orthogonal Algebra</h3>
+<p>Let $\mathrm{G} = \mathrm{so}(3)$ with the basis $E_1,E_2,E_3$ and $[E_i,E_j] = \varepsilon_{ijk}E_k$. The sandwich by the pair $(E_1,E_2)$ is $\Sigma_{E_1,E_2}(x) = [E_1,[x,E_2]]$, which on the basis is computed from the structure constants; the operator is a rank-two endomorphism, and it is the Lie-algebraic form of the corresponding matrix sandwich. The grade involution is the identity here, and the signed sandwich coincides with the unsigned one.</p>
+<h3 id="the-even-odd-algebra">The Even-Odd Algebra</h3>
+<p>Let $\mathrm{G} = \mathrm{G}^{+}\oplus\mathrm{G}^{-}$ with $\mathrm{G}^{+}$ spanned by $H$ and $\mathrm{G}^{-}$ by $E,F$ and the brackets $[H,E] = 2E$, $[H,F] = -2F$, $[E,F] = H$; the grade involution is $\alpha(H) = H$, $\alpha(E) = -E$, $\alpha(F) = -F$. Then the signed sandwich by the pair $(H,E)$ is $\Sigma^{\alpha}_{H,E}(x) = [H,[\alpha(x),E]]$, and the sign changes the operator on the odd part, which is the phenomenon of the grading.</p>
+<h3 id="the-heisenberg-algebra">The Heisenberg Algebra</h3>
+<p>For the Heisenberg algebra with $[X,Y] = Z$ central and the grading with $Z$ even and $X,Y$ odd, the signed sandwich by the pair $(X,Y)$ is $\Sigma^{\alpha}_{X,Y}(x) = [X,[\alpha(x),Y]]$, which on $Z$ is nonzero and on $X,Y$ computes the central values; the example shows the signed sandwich acting on the odd part with the sign of the involution.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Lie algebra the two products are the left multiplication $L_a = \operatorname{ad}_a$ and the right multiplication $R_b$ with $R_b(x) = [x,b] = -\operatorname{ad}_b$, and the unsigned sandwich is their composite $\Sigma_{a,b}(x) = [a,[x,b]]$; the <strong>signed sandwich</strong> is $\Sigma^{\alpha}_{a,b} = \Sigma_{a,b}\alpha$, with $\Sigma^{\alpha}_{a,b}(x) = [a,[\alpha(x),b]]$. It factors as $\Sigma_{a,b}\alpha = \alpha\Sigma_{\alpha(a),\alpha(b)}$, so the grade involution acts on the carrying pair and not on the operator, and its square is $\Sigma_{a,b}\Sigma_{\alpha(a),\alpha(b)}$, which does not collapse to a single sandwich because the algebra is not associative. The <strong>signed conjugation</strong> $\rho_a = \operatorname{Ad}_{\exp a}\alpha$ is the Lie-algebraic form of the conjugation $x\mapsto a\alpha(x)a^{-1}$; its square is the inner automorphism of $a+\alpha(a)$ and it is an involution exactly when that element is central, so the signed sandwich realises the reflections when the carrying pair is a pair of inverses. The construction degenerates when the grade involution is inner, when the algebra is abelian, and when either carrying element is central, in which cases the sandwich vanishes or collapses to an inner automorphism.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution, $\alpha^2 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$L_a = \operatorname{ad}_a$</td>
+<td>the left multiplication, $x\mapsto[a,x]$</td>
+</tr>
+<tr>
+<td>$R_b$, $R_b(x) = [x,b]$</td>
+<td>the right multiplication, $R_b = -\operatorname{ad}_b$</td>
+</tr>
+<tr>
+<td>$L_a - R_a = \operatorname{ad}_a$</td>
+<td>the relation of the two products</td>
+</tr>
+<tr>
+<td>$\Sigma_{a,b} = L_aR_b$</td>
+<td>the unsigned sandwich, $x\mapsto[a,[x,b]]$</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b} = \Sigma_{a,b}\alpha$</td>
+<td>the signed sandwich, $x\mapsto[a,[\alpha(x),b]]$</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b} = \alpha\Sigma_{\alpha(a),\alpha(b)}$</td>
+<td>the factorisation through the involution</td>
+</tr>
+<tr>
+<td>$(\Sigma^{\alpha}_{a,b})^2 = \Sigma_{a,b}\Sigma_{\alpha(a),\alpha(b)}$</td>
+<td>the square</td>
+</tr>
+<tr>
+<td>$\rho_a = \operatorname{Ad}_{\exp a}\alpha$</td>
+<td>the signed conjugation</td>
+</tr>
+<tr>
+<td>$\rho_a^2 = \operatorname{Ad}_{\exp(a+\alpha(a))}$</td>
+<td>the square, an involution iff $a+\alpha(a)$ is central</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the adjoint action, the derivations and the structure of a Lie algebra.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 1--3 (Springer, 1989), for the universal enveloping algebra, the adjoint action and the inner automorphisms.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the adjoint representation, the exponential and the inner automorphisms.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the grade involution, the graded structures and the signed operators.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984), for the adjoint action, the derivations and the enveloping algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

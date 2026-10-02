@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions on the Operator Layer — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-on-the-operator-layer"><strong>Involutions on the Operator Layer</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operator layer of a group carries two operations that arise from the inversion: the <strong>adjoint</strong> with respect to the natural pairing, which reverses the order in a product and fixes the operators that preserve the pairing, and the <strong>conjugation</strong> by the inversion, which is an automorphism of the operator algebra and exchanges the left and right translations. This article fixes the natural pairing of the category, defines both operations, proves their elementary properties, and records how they differ. It is the first article of the <code>* Operator Theory</code> group of the category and fixes the marks and adjoint conventions that the six articles after it use: <em>The Group Inversion as an Adjoint</em>, <em>The Adjoint of the Left Multiplication on a Group</em>, <em>The Signed Adjoint Sandwich on a Group</em>, <em>The Signed Adjoint of the Reflection on a Group</em>, <em>The Signed Adjoint of the Left Multiplication on a Group</em> and <em>The Graded Adjoint Action on a Module over a Group</em>. The group algebra, the translations and the sandwich are used from <em>Group Algebras</em> and from the operator articles <em>Left and Right Multiplication in a Group</em> and <em>The Signed Sandwich on a Group</em>.</p>
+<h2 id="the-operator-layer-and-the-natural-pairing">The Operator Layer and the Natural Pairing</h2>
+<p><strong>Convention (the operator layer).</strong> Let $k$ be a field and let $k[G]$ be the group algebra with basis $G$ and finitely supported elements. Write $\operatorname{End}_k(k[G])$ for the $k$-algebra of $k$-linear operators on it, with composition and unit $\mathrm{id}$, and write $L_a,R_b$ for the left and right translations $x\mapsto ax$, $x\mapsto xb$ extended linearly from $G$.</p>
+<p><strong>Definition (the natural pairing).</strong> The <strong>natural pairing</strong> of the category is the bilinear form</p>
+<p>$$
+\langle\,\cdot\,,\,\cdot\,\rangle : k[G]\times k[G]\longrightarrow k,
+\qquad
+\Bigl\langle \sum_g x_g\,g,\ \sum_h y_h\,h\Bigr\rangle=\sum_g x_g\,y_g,
+$$</p>
+<p>so that $\langle g,h\rangle=\delta_{g,h}$ and the basis $G$ is orthonormal.</p>
+<p><strong>Proposition (the pairing is symmetric, nondegenerate and inversion-invariant).</strong> The natural pairing is symmetric and nondegenerate, and $\langle x,y\rangle$ is the coefficient of $e$ in $x\,\iota(y)$ and the coefficient of $e$ in $\iota(x)\,y$; in particular it is invariant under the inversion, $\langle\iota(x),\iota(y)\rangle=\langle x,y\rangle$.</p>
+<p><strong>Proof.</strong> Symmetry and nondegeneracy are immediate from the orthonormality of the basis: a nonzero $x$ has a nonzero coefficient $x_g$ and pairs nontrivially with $g$. For the coefficient form, $x\,\iota(y)=\sum_{g,h}x_g y_h\, gh^{-1}$, whose coefficient at $e$ is $\sum_g x_g y_g$. The inversion statement is $\sum_g x_g y_g$ computed after reindexing both sums by the inversion.</p>
+<p><strong>Definition (adjoint).</strong> For $T\in\operatorname{End}_k(k[G])$ the <strong>adjoint</strong> $T^{*}$ is the operator with</p>
+<p>$$
+\langle Tx,\,y\rangle=\langle x,\,T^{*}y\rangle\qquad\text{for all } x,y\in k[G].
+$$</p>
+<p>Existence and uniqueness are the nondegeneracy of the pairing: in the basis $G$ the matrix of $T^{*}$ is the transpose of the matrix of $T$. For a group involution $\sigma$ with linear extension $\Sigma_{\sigma}\in\operatorname{End}_k(k[G])$, the <strong>conjugation by the involution</strong> is</p>
+<p>$$
+\mathrm{ad}_{\sigma}(T)=\Sigma_{\sigma}\,T\,\Sigma_{\sigma}^{-1}.
+$$</p>
+<h2 id="the-adjoint-operation">The Adjoint Operation</h2>
+<p><strong>Proposition (the adjoint is an involution of the operator algebra).</strong> For all $S,T\in\operatorname{End}_k(k[G])$ and $\lambda\in k$: $\mathrm{id}^{*}=\mathrm{id}$; $(T^{*})^{*}=T$; $(T+\lambda S)^{*}=T^{*}+\lambda S^{*}$; $(\lambda T)^{*}=\lambda T^{*}$; and</p>
+<p>$$
+(ST)^{*}=T^{*}S^{*}.
+$$</p>
+<p>Consequently the adjoint is an <strong>anti-involution</strong> of $\operatorname{End}_k(k[G])$ of order two: it reverses the order of composition.</p>
+<p><strong>Proof.</strong> The first four are the transpose in a basis. For the product, $\langle STx,y\rangle=\langle Tx,S^{*}y\rangle=\langle x,T^{*}S^{*}y\rangle$ for all $x,y$, so $(ST)^{*}=T^{*}S^{*}$ by uniqueness of the adjoint. Applying the operation twice returns the transpose of the transpose, which is the original.</p>
+<p><strong>Proposition (the adjoint of an inverse is the inverse of the adjoint).</strong> If $T$ is invertible then $T^{*}$ is invertible and $(T^{-1})^{*}=(T^{*})^{-1}$.</p>
+<p><strong>Proof.</strong> From $(TT^{-1})^{*}=(T^{-1})^{*}T^{*}=\mathrm{id}$ and $(T^{-1}T)^{*}=T^{*}(T^{-1})^{*}=\mathrm{id}$, the operator $T^{*}$ has two-sided inverse $(T^{-1})^{*}$.</p>
+<p><strong>Definition (self-adjoint, skew-adjoint, unitary).</strong> An operator $T$ is <strong>self-adjoint</strong> if $T^{*}=T$, <strong>skew-adjoint</strong> if $T^{*}=-T$, and <strong>unitary</strong> if $T^{*}T=TT^{*}=\mathrm{id}$.</p>
+<p><strong>Proposition (the elementary criteria).</strong> $T$ is unitary if and only if $T$ is invertible with $T^{*}=T^{-1}$; $T$ is self-adjoint if and only if its matrix is symmetric in the basis $G$; $T$ is skew-adjoint if and only if its matrix is skew-symmetric. The identity is self-adjoint and unitary, and the self-adjoint operators and the skew-adjoint operators are the $+1$ and $-1$ eigenspaces of the adjoint.</p>
+<p><strong>Proof.</strong> The unitary criterion is the uniqueness of the inverse. In the orthonormal basis the adjoint is the transpose, so $T^{*}=T$ is symmetry of the matrix and $T^{*}=-T$ is skew-symmetry. The last statement is that the adjoint is an involution, so its fixed elements are the self-adjoint ones and its $(-1)$-eigenspace is the skew-adjoint ones.</p>
+<h2 id="the-inversion-on-the-operator-layer">The Inversion on the Operator Layer</h2>
+<p><strong>Proposition (the adjoints of the translations).</strong> $(L_a)^{*}=L_{a^{-1}}$ and $(R_b)^{*}=R_{b^{-1}}$. Hence $L_a$ is self-adjoint exactly when $a^{2}=e$, and $R_b$ is self-adjoint exactly when $b^{2}=e$; the left and right translations are unitary for every parameter.</p>
+<p><strong>Proof.</strong> In the basis $G$, $(L_a g)_h=\delta_{h,ag}$; the transpose has $(L_a^{*}h)_g=\delta_{h,ag}=\delta_{g,a^{-1}h}$, giving $L_a^{*}(h)=a^{-1}h$, that is $L_{a^{-1}}$. The same computation with $R_b$ gives $R_{b^{-1}}$. Self-adjointness is then $L_a=L_{a^{-1}}$, which is injectivity of $a\mapsto L_a$ and so $a=a^{-1}$, that is $a^{2}=e$; the same for $R_b$. Unitarity is $L_{a^{-1}}L_a=\mathrm{id}$, which is the composition law of the translations.</p>
+<p><strong>Proposition (the inversion is self-adjoint).</strong> The linear extension $\Sigma_{\iota}$ of the inversion is self-adjoint: $\Sigma_{\iota}^{*}=\Sigma_{\iota}$.</p>
+<p><strong>Proof.</strong> $\langle\Sigma_{\iota}x,y\rangle=\sum_g(\Sigma_{\iota}x)_g\,y_g=\sum_g x_{g^{-1}}y_g$, and $\langle x,\Sigma_{\iota}y\rangle=\sum_g x_g y_{g^{-1}}$; reindexing the first sum by $g\mapsto g^{-1}$ gives the second. So the two agree for all $x,y$. This is the operator-level form of the statement that the inversion is the antipode; the article <em>The Group Inversion as an Adjoint</em> develops the pairing between the inversion, the left multiplication and the coalgebra structure of $k[G]$.</p>
+<p><strong>Proposition (the conjugation by the inversion).</strong> $\mathrm{ad}_{\iota}$ is an automorphism of $\operatorname{End}_k(k[G])$ of order two; it respects the adjoint, $\mathrm{ad}_{\iota}(T^{*})=\mathrm{ad}_{\iota}(T)^{*}$; and it exchanges the translations,</p>
+<p>$$
+\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}, \qquad \mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}.
+$$</p>
+<p><strong>Proof.</strong> Conjugation by an invertible operator is an automorphism of the operator algebra, and $\Sigma_{\iota}^{2}=\mathrm{id}$ gives order two. Since $\Sigma_{\iota}$ is self-adjoint, $\mathrm{ad}_{\iota}(T)^{*}=(\Sigma_{\iota}T\Sigma_{\iota})^{*}=\Sigma_{\iota}^{*}T^{*}\Sigma_{\iota}^{*}=\Sigma_{\iota}T^{*}\Sigma_{\iota}=\mathrm{ad}_{\iota}(T^{*})$. For the translations, $\mathrm{ad}_{\iota}(L_a)(x)=\iota(a\,\iota(x))=x\,a^{-1}=R_{a^{-1}}(x)$.</p>
+<p><strong>Remark (the two operations differ).</strong> The adjoint and the conjugation by the inversion are different operators on the operator layer, and the translations show it: $(L_a)^{*}=L_{a^{-1}}$ while $\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}$. The two agree on $L_a$ exactly when $a$ is central. This is the operator-level instance of the rule of the general brief that the involution on the elements and the adjoint on the operators are two structures and not one; the agreement, when it holds, is proved and never assumed.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>operator layer</strong> of the group is the algebra $\operatorname{End}_k(k[G])$ of linear operators on the group algebra. The <strong>natural pairing</strong> is $\langle x,y\rangle=\sum_g x_g y_g$, orthonormal on the basis $G$, symmetric and nondegenerate, and invariant under the inversion. The <strong>adjoint</strong> $T^{*}$ is defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$; it is an anti-involution of the operator algebra, $(ST)^{*}=T^{*}S^{*}$ and $(T^{*})^{*}=T$, an invertible operator has invertible adjoint with $(T^{-1})^{*}=(T^{*})^{-1}$, and the self-adjoint, skew-adjoint and unitary operators are the familiar classes.</p>
+<p>The inversion contributes two operations: the adjoint of the translations, $(L_a)^{*}=L_{a^{-1}}$ and $(R_b)^{*}=R_{b^{-1}}$, and the conjugation by the linear extension of the inversion, $\mathrm{ad}_{\iota}(T)=\Sigma_{\iota}T\Sigma_{\iota}$, which is an automorphism of order two of the operator algebra, respects the adjoint, and exchanges the translations, $\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}$ and $\mathrm{ad}_{\iota}(R_b)=L_{b^{-1}}$. The two operations differ, and they agree on a left translation exactly when its parameter is central. The conventions fixed here are used by the six articles of the <code>* Operator Theory</code> group that follow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle x,y\rangle=\sum_g x_g y_g$</td>
+<td>the natural pairing, orthonormal on $G$</td>
+</tr>
+<tr>
+<td>$\langle g,h\rangle=\delta_{g,h}$</td>
+<td>orthonormality of the basis</td>
+</tr>
+<tr>
+<td>$T^{*}$, $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$</td>
+<td>the adjoint of an operator</td>
+</tr>
+<tr>
+<td>$(ST)^{*}=T^{*}S^{*}$</td>
+<td>the adjoint reverses composition</td>
+</tr>
+<tr>
+<td>$\Sigma_{\sigma}$</td>
+<td>linear extension of the group involution $\sigma$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\sigma}(T)=\Sigma_{\sigma}T\Sigma_{\sigma}^{-1}$</td>
+<td>conjugation by the involution</td>
+</tr>
+<tr>
+<td>$(L_a)^{*}=L_{a^{-1}}$, $\mathrm{ad}_{\iota}(L_a)=R_{a^{-1}}$</td>
+<td>the two operations differ</td>
+</tr>
+<tr>
+<td>$T^{*}T=TT^{*}=\mathrm{id}$</td>
+<td>the unitary condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Marshall Hall, <em>The Theory of Groups</em> (Macmillan, 1959), for the group algebra, the regular representation and the inversion.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebra, its antipode and its coalgebra structure.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for the adjoint operation, the unitary group and the distinction between an involution and an adjoint.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, Graduate Texts in Mathematics 211, third edition, 2002), for bilinear forms, their adjoints and the unitary group of a form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

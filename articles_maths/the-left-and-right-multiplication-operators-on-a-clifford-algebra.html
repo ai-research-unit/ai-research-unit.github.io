@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-on-a-clifford-algebra"><strong>The Left and Right Multiplication Operators on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Clifford algebra is a ring as well as a vector space, and the two ways in which it can act on itself — from the left and from the right — give two families of operators with opposite multiplicativity. For $a$ in the algebra the <strong>left multiplication</strong> is $L_a : x\mapsto ax$ and the <strong>right multiplication</strong> is $R_a : x\mapsto xa$; the left family is an isomorphism of the algebra onto its image, the right family is an anti-isomorphism, and together the two families generate the algebra of all endomorphisms of the underlying vector space. The pair is the algebraic frame of every Clifford module: the spin representation is the left action on a minimal left ideal, the opposite algebra is carried by the right action, and the commutant of the left family is the right family in the cases where the algebra is central simple.</p>
+<p>The article treats the pair as the geometric-algebraic object of the category. The quadratic form enters through the relations $uv+vu=2B(u,v)$ and $u^2=q(u)$, so the two families are the operators that the chosen form defines on the algebra; the grading enters through the multiplicativity of the parity, $|L_a|=|R_a|=|a|$; and the module structure enters through the bimodule $\mathrm{Cl}(V,q)$ with the left action on one side and the right action on the other. The one-sided calculus — the kernels, the images, the commutant and the enveloping algebra — is the subject of <em>One-Sided Operators on a Clifford Algebra</em>, and its properties are quoted rather than repeated; what this article adds is the reading of the two families as the bimodule structure of the algebra, together with the double-commutant theorem that identifies the two families as mutual commutants.</p>
+<p><strong>The boundaries.</strong> The algebra, its grading, its centre and its Wedderburn form are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the module theory of the regular module and the minimal left ideals is <em>Left Multiplication and the Clifford Module Structure</em>; the operator calculus of the two families is <em>One-Sided Operators on a Clifford Algebra</em>; its signed and twisting variants are <em>The Graded Multiplication Operators</em> and <em>The Signed Left Multiplication on a Clifford Algebra</em> of this category. The adjoints of the two families for the form of the category are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>, written in the next group. The base is a field $F$ of characteristic not $2$, $q$ a non-degenerate quadratic form on a finite-dimensional space $V$ with polar form $B$, and $q(u)=B(u,u)$, $uv+vu=2B(u,v)$.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<h3 id="definition-and-multiplicativity">Definition and Multiplicativity</h3>
+<p><strong>Definition.</strong> For $a\in\mathrm{Cl}(V,q)$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> are the $F$-linear operators</p>
+<p>$$
+L_a : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \quad L_a(x) = a\,x ,
+\qquad
+R_a : \mathrm{Cl}(V,q)\longrightarrow\mathrm{Cl}(V,q), \quad R_a(x) = x\,a .
+$$</p>
+<p>The regular module is the vector space $\mathrm{Cl}(V,q)$ with the left action $L$, and the left regular representation is the map $\rho(a)=L_a$.</p>
+<p><strong>Proposition (the two multiplicativities).</strong> For all $a,c$, $L_aL_c=L_{ac}$ and $R_aR_c=R_{ca}$; the left family is multiplicative in the written order and the right family is anti-multiplicative. Both families are faithful, $L_a=0$ or $R_a=0$ only for $a=0$, and the two familes commute elementwise,</p>
+<p>$$
+L_aR_b = R_bL_a = L_{ab} .
+$$</p>
+<p><strong>Proof.</strong> $L_aL_c(x)=acx$ and $R_aR_c(x)=xca$; faithfulness is evaluation at the unit, $L_a(1)=a$, $R_a(1)=a$; commutation is the associativity of the product, $a(xb)=(ax)b$. The multiplicativity and faithfulness statements are those of <em>One-Sided Operators on a Clifford Algebra</em>, quoted here because they identify the two representations.</p>
+<p><strong>Proposition (parity).</strong> For a homogeneous $a$ both $L_a$ and $R_a$ are homogeneous operators of the same parity, $|L_a|=|R_a|=|a|$: the left multiplication by an even element preserves the grading and by an odd element exchanges its two parts, and the same holds on the right.</p>
+<p><strong>Proof.</strong> For $x$ homogeneous, $ax$ lies in $\mathrm{Cl}^{|a|+|x|}$ and $xa$ likewise, by the multiplicativity of the grading; the parity of the operator is the shift it induces.</p>
+<h3 id="the-two-families-together">The Two Families Together</h3>
+<p><strong>Definition.</strong> The <strong>regular bimodule</strong> is the vector space $\mathrm{Cl}(V,q)$ with the left action of $L$ and the right action of $R$; it is a bimodule over the algebra, and the two actions commute.</p>
+<p><strong>Proposition (generation).</strong> The algebra generated by the left and the right multiplications is the whole algebra of $F$-linear endomorphisms of $\mathrm{Cl}(V,q)$,</p>
+<p>$$
+\langle L_a, R_b : a,b\in\mathrm{Cl}(V,q)\rangle = \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr) ,
+$$</p>
+<p>a subalgebra of dimension $(\dim\mathrm{Cl})^2$; equivalently, the map</p>
+<p>$$
+\mathrm{Cl}(V,q)\otimes_F \mathrm{Cl}(V,q)^{\mathrm{op}} \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\longmapsto L_aR_b ,
+$$</p>
+<p>is an isomorphism of $F$-algebras.</p>
+<p><strong>Proof.</strong> The map is an algebra homomorphism: $(a\otimes b)(c\otimes d)=ac\otimes db$ in the tensor product with the opposite algebra on the second factor, and $L_{ac}R_{db}=L_aL_cR_dR_b=L_aR_bL_cR_d$ since the two families commute. It is injective because $L_aR_b(1) = ab$ and $L_aR_b(ac)=ab... $ more precisely, the image of $L_aR_b$ at $x$ is $axb$, so $L_aR_b=L_{a'}R_{b'}$ gives $ab=a'b'$ and $axb=a'xb'$ for all $x$, hence $a\otimes b=a'\otimes b'$; both sides have dimension $(\dim\mathrm{Cl})^2$ and the injective homomorphism is therefore an isomorphism. This is the double-commutant statement in its tensor-product form.</p>
+<p><strong>Remark (the meaning of the isomorphism).</strong> The isomorphism says that the left multiplications alone generate a copy of the algebra and the right multiplications alone another copy, and that the two copies are the two factors of the endomorphism algebra of the space. The pair is therefore not a redundancy: a left multiplication and a right multiplication have different images, and only their products $L_aR_b$, the <strong>two-sided operators</strong>, realise the general element. The two-sided family is <em>The Sandwich on a Clifford Algebra</em>, quoted.</p>
+<h2 id="the-two-families-as-a-commutant-pair">The Two Families as a Commutant Pair</h2>
+<h3 id="the-commutant-of-one-family">The Commutant of One Family</h3>
+<p><strong>Given.</strong> The left family generates a subalgebra isomorphic to $\mathrm{Cl}(V,q)$; its commutant in $\mathrm{End}_F(\mathrm{Cl})$ is the set of operators commuting with every $L_a$, and similarly on the right.</p>
+<p><strong>Proposition.</strong> The commutant of the left family contains the right family, $R_bL_a=L_aR_b$, and</p>
+<p>$$
+\{L_a : a\in\mathrm{Cl}(V,q)\}' \supseteq \{R_b : b\in\mathrm{Cl}(V,q)\} .
+$$</p>
+<p>When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusion is proper for $\dim V$ odd over a base where the centre splits.</p>
+<p><strong>Proof.</strong> Containment is the commutation. Equality in even dimension is the form of the double centraliser theorem: for a finite-dimensional algebra $A$ acting faithfully on a module, the commutant of the image is the image of the opposite algebra when $A$ is central simple, and in even dimension the Clifford algebra is central simple by <em>Clifford Algebras in Finite Dimensions</em>; the right family is a faithful image of $A^{\mathrm{op}}$ and equals the commutant by the dimension count read from the tensor-product isomorphism above. In odd dimension the centre is $F\oplus F\omega$, the algebra is not simple, and the commutant contains the extra operators induced by the two central idempotents, so the inclusion is proper.</p>
+<p><strong>Remark.</strong> The properness in odd dimension is the operator form of the splitting of the algebra into two simple factors: the central idempotents of the centre act by projections commuting with both families, and they are the operators that project onto the two simple summands. This is the same fact as the two simple modules of the odd case in <em>Left Multiplication and the Clifford Module Structure</em>.</p>
+<h3 id="the-bimodule-and-the-module-structure">The Bimodule and the Module Structure</h3>
+<p><strong>Proposition.</strong> A subspace of the regular bimodule is a submodule for the left action exactly when it is a left ideal, and a submodule for the right action exactly when it is a right ideal; a bimodule subspace is a two-sided ideal. A minimal left ideal $I$ is a simple left module, and the right action carries $I$ to itself because $I$ is generated by an idempotent, so $I$ is a bimodule and even a module over the algebra $I$ with the idempotent as unit.</p>
+<p><strong>Proof.</strong> The submodule conditions are the ideal conditions; the statement about a minimal left ideal $I=\mathrm{Cl}\pi$ with $\pi$ a primitive idempotent is that $I\pi=I$ and $I$ is closed under right multiplication by $\pi$, so it is a bimodule over the subalgebra $\pi\mathrm{Cl}\pi=F\pi$, which is the unitised field. The construction and the module theory are <em>Left Multiplication and the Clifford Module Structure</em>.</p>
+<p><strong>Remark (the spin representation).</strong> The irreducible spinor module of even dimension is the left action of the algebra on a minimal left ideal, and the right action of the commutant $A^{\mathrm{op}}$ on the same ideal is the opposite representation. The pair $(L,R)$ therefore provides the module and its commutant in one construction, and the geometry of the spinor bundle of <em>Spin Geometry</em> is the bundle of these ideals, with the left action the Clifford multiplication and the right action the reduction to the structure group.</p>
+<h2 id="the-form-and-the-operators">The Form and the Operators</h2>
+<p><strong>Remark (where the form enters).</strong> The two families are defined for any associative algebra, but their relation to the quadratic form is in the Clifford relations: the operators $L_u$ and $R_u$ for a vector $u$ satisfy $L_uL_v+L_vL_u=2B(u,v)\operatorname{id}$ and $R_uR_v+R_vR_u=2B(u,v)\operatorname{id}$, so each family is a representation of the Clifford algebra of $(V,q)$ on the algebra itself. The form is therefore what makes the two families Clifford representations rather than arbitrary ring actions, and the reflection and rotation structure of the category is carried by the products $L_aR_b$, not by either family alone.</p>
+<p><strong>Remark (the pairing with the adjoint).</strong> The two families are adjoint to one another for the trace form of the algebra: for the bilinear form $\langle x,y\rangle=\operatorname{Sc}(xy)$ or the form $\operatorname{Tr}(L_aR_b)$ induced by the regular representation, the adjoint of $L_a$ is $R_{a^*}$ and the adjoint of $R_b$ is $L_{b^*}$ in the conventions of <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em>, written in the next group; the derivation of the adjoint pairs is not repeated here.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $V$ of dimension two with $q$ negative definite, $\mathrm{Cl}(V,q)\cong\mathbb{H}$ with basis $1,e_1,e_2,e_1e_2$; the left multiplications by $e_1,e_2,e_1e_2$ are the three complex structures of the quaternionic left action, and the right multiplications are the three corresponding structures of the opposite action. The two families commute up to the sign of the quaternionic conjugation, and together they generate the whole $16$-dimensional endomorphism algebra of $\mathbb{H}$ as a real space, which is the isomorphism above for $k=1$, $D=\mathbb{H}$.</p>
+<h3 id="the-split-plane">The Split Plane</h3>
+<p>For $V$ of dimension two with the split form $e_1^2=1$, $e_2^2=-1$, $\mathrm{Cl}(V,q)\cong M_2(\mathbb{R})$; the regular module is $\mathbb{R}^2\oplus\mathbb{R}^2$, the left multiplications are the matrix multiplications and the right multiplications by the transposed matrices, and the commutant of the left family is the right family because the algebra is central simple. This is the smallest case in which the double-commutant theorem is visible in matrices.</p>
+<h3 id="an-odd-case">An Odd Case</h3>
+<p>For $V$ of dimension three with $q$ negative definite, $\mathrm{Cl}(V,q)\cong\mathbb{H}\oplus\mathbb{H}$ and the centre is $\mathbb{R}\oplus\mathbb{R}\omega$ with $\omega=e_1e_2e_3$; the central idempotents $\frac12(1\pm\omega)$ commute with both families, so the commutant of the left family is strictly larger than the right family, and the two families do not exhaust the endomorphism algebra. The excess is exactly the two projections onto the two simple summands of the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>left multiplication</strong> $L_a(x)=ax$ and the <strong>right multiplication</strong> $R_a(x)=xa$ are the two ways the Clifford algebra acts on itself; $L_aL_c=L_{ac}$ and $R_aR_c=R_{ca}$, both families are faithful and of parity $|a|$, and they commute, $L_aR_b=R_bL_a$. Together they generate the whole endomorphism algebra of the underlying space, and the map $a\otimes b\mapsto L_aR_b$ is an isomorphism $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\to\mathrm{End}_F(\mathrm{Cl})$: the two families are the two factors of the algebra of operators on the regular bimodule. The commutant of the left family contains the right family, and <strong>equals</strong> it when the algebra is central simple, that is for $\dim V$ even; in odd dimension the central idempotents of the centre lie in the commutant and the inclusion is proper. The regular bimodule's submodules are the left and right ideals, a minimal left ideal is the irreducible spinor module carrying the left action and the opposite action of the commutant, and the quadratic form enters through the Clifford relations satisfied by each family. The one-sided calculus is <em>One-Sided Operators on a Clifford Algebra</em>, the module theory is <em>Left Multiplication and the Clifford Module Structure</em>, and the signs and twists are <em>The Graded Multiplication Operators</em> and <em>The Signed Left Multiplication on a Clifford Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x)=a\,x$, $R_a(x)=x\,a$</td>
+<td>Left and right multiplication</td>
+</tr>
+<tr>
+<td>$L_aL_c=L_{ac}$, $R_aR_c=R_{ca}$</td>
+<td>Multiplicativity and anti-multiplicativity</td>
+</tr>
+<tr>
+<td>$L_aR_b=R_bL_a=L_{ab}$</td>
+<td>The two families commute</td>
+</tr>
+<tr>
+<td>$\lvert L_a\rvert=\lvert R_a\rvert=\lvert a\rvert$</td>
+<td>Parity of the two operators</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\cong\mathrm{End}_F(\mathrm{Cl})$</td>
+<td>Generation of the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$\{L_a\}'$</td>
+<td>Commutant of the left family; contains $R$</td>
+</tr>
+<tr>
+<td>central simple (even $\dim V$)</td>
+<td>Case in which $\{L_a\}'=\{R_b\}$</td>
+</tr>
+<tr>
+<td>$\omega$, $\frac12(1\pm\omega)$</td>
+<td>Volume element and central idempotents of the odd case</td>
+</tr>
+<tr>
+<td>$I=\mathrm{Cl}\pi$</td>
+<td>Minimal left ideal, the spinor module as a bimodule</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the left and right multiplications and the double-commutant structure.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the regular bimodule.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the left action on the minimal left ideal and the spin representation.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the two-sided operators and the commutant in the Clifford setting.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the matrix models of the low-dimensional algebras and the two families in them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

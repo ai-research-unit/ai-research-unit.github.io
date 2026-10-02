@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cayley Action — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cayley-action"><strong>The Cayley Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The action of a group on itself by left translation is the action that realises the group: read as a permutation action it is faithful, so it embeds the group into the symmetric group of its own underlying set, and read through the group algebra it linearises to the regular representation. This article treats that single action as the canonical realisation, isolating the two consequences — the canonical embedding $G\hookrightarrow\operatorname{Sym}(G)$, which is Cayley's theorem, and the linearisation of the action that is the regular representation. The action of the product group on $G$, its kernel and its restrictions are <em>The Action of a Group on Itself</em>; the translation operators for themselves are <em>Left and Right Multiplication in a Group</em>; the algebra of the linearised action is <em>Group Algebras</em>; and the general theory of actions, the coset actions, the kernels and the orbit decomposition are <em>Transformation Groups</em>.</p>
+<p>The article assumes the elementary theory of groups from <em>Groups</em>, the definition of an action, the permutation representation, faithfulness, the orbit–stabiliser theorem and Cayley's theorem from <em>Transformation Groups</em>, and the group algebra with its left regular representation from <em>Group Algebras</em>. It uses no distance, no norm and no form.</p>
+<h2 id="the-action">The Action</h2>
+<p><strong>Definition.</strong> The <strong>Cayley action</strong> of $G$ is the left translation action of $G$ on its own underlying set,</p>
+<p>$$
+G\times G \longrightarrow G, \qquad (a,x) \longmapsto a\cdot x = ax .
+$$</p>
+<p><strong>Proposition.</strong> The Cayley action is an action, and it is <strong>free</strong>: for $a\neq e$ and every $x$ one has $a\cdot x\neq x$. It is <strong>transitive</strong>: every $x$ is $x\cdot e$, so there is a single orbit. An action that is free and transitive is <strong>sharply transitive</strong>, and then the stabiliser of every point is trivial.</p>
+<p><strong>Proof.</strong> The action axioms are associativity and the identity law. If $a\cdot x=x$ then $a=e$ by cancellation, so no non-identity element fixes a point, which is freeness; and $a\cdot e=a$ gives transitivity. A free transitive action has trivial stabilisers, and the orbit–stabiliser theorem of <em>Transformation Groups</em> then gives a single orbit of size $|G|$.</p>
+<p><strong>Proposition (the permutation representation).</strong> The permutation representation of the Cayley action is</p>
+<p>$$
+\rho_L : G \longrightarrow \operatorname{Sym}(G), \qquad \rho_L(a)(x) = ax ,
+$$</p>
+<p>a homomorphism; and it is injective.</p>
+<p><strong>Proof.</strong> An action is a homomorphism into the symmetric group by <em>Transformation Groups</em>; here $\rho_L(a)=L_a$, and $L_aL_b=L_{ab}$ is the composition law of <em>Left and Right Multiplication in a Group</em>. Injectivity: if $\rho_L(a)=\mathrm{id}$ then $a=a\cdot e=e$.</p>
+<p>The injectivity is the triviality of the kernel of the action: the kernel is the set of $a$ fixing every point, and it is $\{e\}$. A free action has trivial kernel by definition, and so is faithful.</p>
+<h2 id="the-canonical-embedding">The Canonical Embedding</h2>
+<p><strong>Theorem (Cayley).</strong> The Cayley action embeds $G$ as a subgroup of $\operatorname{Sym}(G)$; explicitly $\rho_L$ is an isomorphism of $G$ onto the subgroup $L(G)=\{L_a:a\in G\}$. If $G$ is finite of order $n$, composing with a labelling of $G$ by $\{1,\dots,n\}$ gives an embedding $G\hookrightarrow S_n$.</p>
+<p><strong>Proof.</strong> The map $\rho_L$ is an injective homomorphism by the propositions above, so it is an isomorphism onto its image, and the image is $L(G)$. A labelling of $G$ is a bijection $G\to\{1,\dots,n\}$, which induces an isomorphism $\operatorname{Sym}(G)\to S_n$ by <em>Transformation Groups</em>.</p>
+<p>The embedding is canonical in the sense that it uses no labelling of the elements: it is defined by the group law alone. A labelling is needed only to compare the image with the standard symmetric group $S_n$. This is the precise sense in which an abstract group is a transformation group of its own underlying set, and it is the reason a statement about groups that can be phrased in terms of permutations may be proved by passing to the symmetric group.</p>
+<p><strong>Remark (the left regular subgroup).</strong> The image $L(G)$ is the <strong>left regular subgroup</strong> of $\operatorname{Sym}(G)$. The right translations form a second copy $R(G)$, commuting with $L(G)$, and the two meet in the central translations; the details are <em>Left and Right Multiplication in a Group</em>. The Cayley action is the one-sided member of the family of actions of $G$ on itself, and the two-sided member, with its kernel the diagonal centre, is <em>The Action of a Group on Itself</em>.</p>
+<h2 id="the-linearisation">The Linearisation</h2>
+<p>The Cayley action linearises, and the linearisation is the regular representation.</p>
+<p><strong>Definition.</strong> The <strong>left regular representation</strong> of $G$ is the algebra map</p>
+<p>$$
+\lambda : k[G] \longrightarrow \operatorname{End}_k(k[G]), \qquad \lambda(x)(y) = xy ,
+$$</p>
+<p>the $k$-linear extension of the left translations $L_a$ to the group algebra.</p>
+<p><strong>Proposition.</strong> The map $\lambda$ is an injective algebra homomorphism; its restriction to $G$ is the linear extension of the permutation representation $\rho_L$, so the Cayley action is the set-level shadow of the left regular representation.</p>
+<p><strong>Proof.</strong> That $\lambda$ is an injective algebra homomorphism and that its image is described by the commutant of the right translations are the content of <em>Group Algebras</em>, where the left regular representation is introduced. Its restriction to $G\subseteq k[G]$ sends $a$ to the linear operator $L_a$, extended by linearity, which is the linearisation of the permutation $\rho_L(a)$.</p>
+<p><strong>Remark.</strong> The linearisation is the passage from the symmetric group to the general linear group: the permutation $\rho_L(a)$ becomes the linear operator $\lambda(a)$ on the algebra, and the two carry the same information about $G$ because both are injective. The module-theoretic use of the action — that $k[G]$-modules are the representations of $G$ — belongs to <em>Group Algebras</em> and to the representation theory of the later parts.</p>
+<p><strong>Remark (the coset actions).</strong> The Cayley action is the extreme case of the family of actions of $G$ on the coset spaces $G/H$, obtained by taking $H=\{e\}$; the action of $G$ on $G/H$ has kernel the <strong>core</strong> $\bigcap_{a\in G}aHa^{-1}$, the largest normal subgroup of $G$ contained in $H$, so the action is faithful exactly when the core is trivial. The family and its kernels are <em>Transformation Groups</em>.</p>
+<p><strong>Remark (the two cautions).</strong> The degree of the action is $|G|$, which is large, and a smaller faithful action often exists; the least degree of a faithful permutation representation is an invariant of $G$. And because the action is free, it uses no structure of $G$: it forgets the internal structure entirely, which is why it proves general facts but computes nothing. Both cautions are recorded in <em>Transformation Groups</em> and are the reason the action is used as a universal embedding rather than as a computational tool.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Cayley action</strong> is the left translation action of $G$ on its own underlying set. It is free and transitive, hence sharply transitive, and its permutation representation $\rho_L:a\mapsto L_a$ is injective, so its kernel is trivial. Cayley's theorem is the resulting isomorphism of $G$ onto the left regular subgroup $L(G)\leq\operatorname{Sym}(G)$, and, after a labelling of the $n$ elements, an embedding $G\hookrightarrow S_n$ for finite $G$. The embedding is canonical: it uses the group law and no labelling.</p>
+<p>The linearisation of the Cayley action is the <strong>left regular representation</strong> $\lambda(x)(y)=xy$, an injective algebra homomorphism of $k[G]$ into its endomorphism algebra; its restriction to $G$ is the linear extension of $\rho_L$. The Cayley action is the member $H=\{e\}$ of the family of coset actions $G/H$, whose kernel is the core of $H$, and its two cautions are its large degree and its freedom, which forgets the structure of the group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a\cdot x=ax$</td>
+<td>the Cayley action, left translation of $G$ on itself</td>
+</tr>
+<tr>
+<td>free</td>
+<td>no non-identity element fixes a point</td>
+</tr>
+<tr>
+<td>sharply transitive</td>
+<td>free and transitive, so all point stabilisers trivial</td>
+</tr>
+<tr>
+<td>$\rho_L(a)=L_a$</td>
+<td>permutation representation of the Cayley action, injective</td>
+</tr>
+<tr>
+<td>$L(G)=\{L_a:a\in G\}$</td>
+<td>the left regular subgroup of $\operatorname{Sym}(G)$, isomorphic to $G$</td>
+</tr>
+<tr>
+<td>$G\hookrightarrow S_n$</td>
+<td>Cayley's embedding for a finite group of order $n$</td>
+</tr>
+<tr>
+<td>$\lambda(x)(y)=xy$</td>
+<td>the left regular representation, the linearisation of the action</td>
+</tr>
+<tr>
+<td>core of $H$</td>
+<td>$\bigcap_{a\in G}aHa^{-1}$, the kernel of the action on $G/H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for Cayley's theorem and the regular representation.</li>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for the canonical embedding and the cohomological interpretation of group extensions.</li>
+<li>John D. Dixon and Brian Mortimer, <em>Permutation Groups</em> (Springer, Graduate Texts in Mathematics 163, 1996), for faithful actions of least degree and the regular permutation groups.</li>
+<li>Marshall Hall, <em>The Theory of Groups</em> (Macmillan, 1959), for the classical proof of Cayley's theorem and the coset actions.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for the regular representation as the linearisation of the regular action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

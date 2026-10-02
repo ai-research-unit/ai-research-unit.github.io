@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules over an Involutive Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modules-over-an-involutive-ring"><strong>Modules over an Involutive Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A left module over a ring with an involution has a right module hidden in it — the same additive group with the action read through the involution — and the passage between the two is an equivalence of categories. The involution also reaches the dual of a module and the endomorphism ring of a free module, where it produces the transpose-with-the-involution, the self-adjoint matrices and the unitary matrices. This article develops the twist by an involution, the dual of a module over an involutive ring, and the induced involution on the endomorphisms, which is the ring-level form of the adjoint involution that the pairing-based articles define over a field.</p>
+<p><em>Involutive Rings</em> supplies the definition of an involution, the fixed and skew elements, the anti-automorphism of order two and the opposite ring; <em>Modules</em>, <em>Direct Sums, Free Modules and Rank</em> and <em>The Balanced Product</em> supply the module theory, the free modules, the rank and the tensor product. <em>Endomorphisms of a Linear Space</em> treats the algebra of endomorphisms of a linear space, and <em>Involutions of the Endomorphism Algebra</em> treats the adjoint involution from a non-degenerate pairing; the present article is the ring-level companion, and the pairing is deferred to Part II. The forms themselves, the sesquilinear pairings on a module and the Hilbert structure, are <em>Hilbert Algebras</em>.</p>
+<p>Throughout, $A$ is a ring with $1 \neq 0$ with an involution $\sigma$, $M$ is a left $A$-module, and $R$ is a commutative ring with an involution $\sigma$ when commutativity is needed. The fixed set $A^{\sigma}$ and the two conjugates $a$ and $\sigma(a)$ are those of <em>Involutive Rings</em>. No form, no norm and no topology is used.</p>
+<h2 id="the-twist-by-an-involution">The Twist by an Involution</h2>
+<p><strong>Definition.</strong> For a left $A$-module $M$ let $M^{\sigma}$ be the same additive group with the right action</p>
+<p>$$
+x \cdot a = \sigma(a)\,x \qquad (x \in M^{\sigma},\ a \in A) .
+$$</p>
+<p><strong>Proposition.</strong> $M^{\sigma}$ is a right $A$-module; the assignment $M \mapsto M^{\sigma}$ is an additive, exact, contravariant equivalence between the categories of left and of right $A$-modules, with inverse the same construction applied to the involution $\sigma$ of $A^{\mathrm{op}}$.</p>
+<p><strong>Proof.</strong> For the right-module axioms, $(x\cdot a)\cdot b = \sigma(b)(\sigma(a)x) = (\sigma(b)\sigma(a))x = \sigma(ab)x = x\cdot(ab)$, using $\sigma(ab)=\sigma(b)\sigma(a)$; and $x\cdot 1 = \sigma(1)x = x$. Additivity in $x$ and exactness are inherited from $M$, because the underlying additive group and the underlying maps are unchanged. Applying the construction twice returns the original left action, $x\cdot a\cdot b = \sigma(b)\sigma(a)x$, which is the associativity of $M$. The construction is the identity on morphisms, so it is an equivalence.</p>
+<p><strong>Corollary (over a commutative ring the twist is a left module).</strong> If $A = R$ is commutative then $M^{\sigma}$, with $a\cdot x = \sigma(a)x$, is again a left $R$-module, and the two readings agree, because $\sigma$ is multiplicative when the ring is commutative.</p>
+<p><strong>Proof.</strong> $(ab)\cdot x = \sigma(ab)x = \sigma(a)\sigma(b)x = a\cdot(b\cdot x)$; the two actions coincide because reading the right action $x\cdot a = \sigma(a)x$ as a left action gives the same formula in the commutative case.</p>
+<h2 id="the-dual-module">The Dual Module</h2>
+<p><strong>Definition.</strong> For a left $A$-module $M$ the <strong>dual module</strong> is $M^{*} = \operatorname{Hom}_A(M,A)$, with the left action</p>
+<p>$$
+(a \cdot \varphi)(x) = \varphi(x)\,\sigma(a) .
+$$</p>
+<p><strong>Proposition.</strong> $M^{*}$ is a left $A$-module under the action above, and the <strong>evaluation pairing</strong></p>
+<p>$$
+\langle \cdot,\cdot\rangle : M^{*} \times M \longrightarrow A, \qquad \langle \varphi,x\rangle = \varphi(x) ,
+$$</p>
+<p>satisfies $\langle a\cdot\varphi,x\rangle = \langle\varphi,x\rangle\sigma(a)$ and $\langle\varphi,a\cdot x\rangle = a\langle\varphi,x\rangle$; it is $\sigma$-sesquilinear in this sense, and it is non-degenerate when $M$ is free of finite rank.</p>
+<p><strong>Proof.</strong> For the module axioms, $a\cdot(b\cdot\varphi)(x) = (b\cdot\varphi)(x)\sigma(a) = \varphi(x)\sigma(b)\sigma(a) = \varphi(x)\sigma(ab) = (ab)\cdot\varphi(x)$, and $1\cdot\varphi = \varphi$. For the sesquilinearity, the two displayed identities are the definitions of the two actions; non-degeneracy for a free module of finite rank is the statement that a functional is determined by its values on a basis and that every assignment on a basis extends, so a functional vanishing on all of $M$ is $0$ and a vector killed by all functionals is $0$.</p>
+<p><strong>Proposition (the dual functor).</strong> For a homomorphism $f : M \to N$ of left $A$-modules the <strong>transpose</strong> $f^{*} : N^{*} \to M^{*}$, $f^{*}\psi = \psi \circ f$, is a homomorphism of left $A$-modules, $(g f)^{*} = f^{*}g^{*}$ and $\mathrm{id}^{*} = \mathrm{id}$; the dual is therefore a contravariant functor from left $A$-modules to left $A$-modules, and it is the ring-level form of the transposition of <em>The Transpose of a Linear Map</em>.</p>
+<p><strong>Proof.</strong> Additivity and $\sigma$-compatibility of $f^{*}\psi$ are the definitions; the composition law and the identity law are the same computation as for vector spaces, $(g f)^{*}\psi = \psi g f = f^{*}(g^{*}\psi)$.</p>
+<h2 id="the-induced-involution-on-the-endomorphisms">The Induced Involution on the Endomorphisms</h2>
+<p><strong>Definition.</strong> For the free left $A$-module $M = A^{n}$ with its standard basis, the endomorphism ring $\operatorname{End}_A(A^{n})$ is identified with the matrix ring $M_n(A)$, and the <strong>induced map</strong> is</p>
+<p>$$
+A^{*} = \sigma(A)^{\mathsf{T}}, \qquad (A^{*})_{ij} = \sigma(A_{ji}) .
+$$</p>
+<p><strong>Proposition.</strong> The assignment $A \mapsto A^{*}$ is additive and of order two. It is an involution of the ring $M_n(A)$ in the sense of <em>Involutive Rings</em> — an anti-automorphism of order two — exactly when $A$ is commutative, and in that case the fixed matrices are the <strong>$\sigma$-self-adjoint</strong> ones and the <strong>unitary</strong> matrices are those with $A^{*}A = AA^{*} = I$.</p>
+<p><strong>Proof.</strong> Additivity and order two are immediate from the entries. For multiplicativity, $(AB)^{*} = \sigma(AB)^{\mathsf{T}} = (\sigma(B)\sigma(A))^{\mathsf{T}} = \sigma(A)^{\mathsf{T}}\sigma(B)^{\mathsf{T}} = A^{*}B^{*}$ in general, the two anti-maps cancelling; when $A$ is commutative $\sigma$ is multiplicative and the computation gives $(AB)^{*} = B^{*}A^{*}$, which is the anti-automorphism law. The fixed and unitary descriptions are the definitions.</p>
+<p><strong>Remark (the general ring: an automorphism, not an involution).</strong> Over a non-commutative ring the map $A \mapsto \sigma(A)^{\mathsf{T}}$ is the composite of the anti-automorphism $\sigma$ and the anti-isomorphism transpose, hence an <strong>automorphism</strong> of order two, not an involution in the corpus sense; the anti-automorphism of order two on the endomorphism ring of a free module over a general involutive ring is the transpose alone, $A \mapsto A^{\mathsf{T}}$, which needs no involution. The involution of the endomorphism ring that the pairings produce, and its classification, are <em>Involutions of the Endomorphism Algebra</em>, and the sesquilinear pairing that identifies $M$ with $M^{*}$ and turns the transpose into an adjoint is <em>Hilbert Algebras</em>.</p>
+<p><strong>Remark (the diagram of the two dualities).</strong> The dual functor and the twist fit together: the double dual of a module over an involutive ring recovers the module only through an identification $M \cong M^{**}$ given by the evaluation $\varphi \mapsto \varphi(x)$, which is $\sigma$-semilinear on the module variable; the comparison of the dual duality with the pairing duality is the content of <em>The Involution on the Dual Operator</em> for the linear case.</p>
+<h2 id="summary">Summary</h2>
+<p>A ring $A$ with involution $\sigma$ turns every left $A$-module $M$ into a right $A$-module $M^{\sigma}$ by $x\cdot a = \sigma(a)x$, and the construction is an exact contravariant equivalence between left and right modules; over a commutative ring the twisted action is again a left action. The dual $M^{*} = \operatorname{Hom}_A(M,A)$ is a left $A$-module under $(a\cdot\varphi)(x) = \varphi(x)\sigma(a)$, and the evaluation pairing is $\sigma$-sesquilinear, non-degenerate for a free module of finite rank; the transpose $f \mapsto f^{*}$ is a contravariant functor. On the endomorphism ring of the free module $A^{n}$, identified with $M_n(A)$, the map $A \mapsto \sigma(A)^{\mathsf{T}}$ is additive of order two; it is an involution of the matrix ring over a commutative ring, with the $\sigma$-self-adjoint and the unitary matrices as its fixed and its unitary elements, and over a general ring it is an automorphism of order two, the anti-involution being the transpose alone. The pairing-based involution of the endomorphism algebra and the forms themselves are objects of the <code>*</code>-operator group and of Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\sigma$</td>
+<td>a ring with $1\neq0$ and an involution</td>
+</tr>
+<tr>
+<td>$A^{\sigma}$</td>
+<td>the fixed set of $\sigma$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>a commutative ring with involution $\sigma$</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>a left $A$-module</td>
+</tr>
+<tr>
+<td>$M^{\sigma}$</td>
+<td>the twisted right module, $x\cdot a=\sigma(a)x$</td>
+</tr>
+<tr>
+<td>$M^{*}=\operatorname{Hom}_A(M,A)$</td>
+<td>the dual module</td>
+</tr>
+<tr>
+<td>$(a\cdot\varphi)(x)=\varphi(x)\sigma(a)$</td>
+<td>the left action on the dual</td>
+</tr>
+<tr>
+<td>$\langle\varphi,x\rangle=\varphi(x)$</td>
+<td>the evaluation pairing, $\sigma$-sesquilinear</td>
+</tr>
+<tr>
+<td>$f^{*}=\psi\mapsto\psi f$</td>
+<td>the transpose, a contravariant functor</td>
+</tr>
+<tr>
+<td>$A^{*}=\sigma(A)^{\mathsf{T}}$</td>
+<td>the induced map on $M_n(A)$</td>
+</tr>
+<tr>
+<td>$A^{*}A=AA^{*}=I$</td>
+<td>the unitary matrices of the commutative case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the duality of modules and the transpose.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for involutive rings, dual modules and sesquilinear pairings.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions of rings and of endomorphism rings.</li>
+<li>Tsit-Yuen Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the module theory of rings with involution and the dual functor.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for the exactness of the dual and the tensor–hom adjunction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shift Operator of a Process — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-shift-operator-of-a-process"><strong>The Shift Operator of a Process</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A stochastic process indexed by the integers is a function of the index, and the operation that advances the index by one is the shift of the process. On the path space the shift is a measurable map, and a process is stationary exactly when its law is invariant under it; on the square-integrable functions of the path space the shift induces the <strong>shift operator</strong> $Sf=f\circ\sigma$, which is the Koopman operator of the dynamical system $(\Omega,\sigma,\mu)$ and is the unit of the operator description of the process. This article studies the shift as an operator: the invariance of the law as the unitarity or the isometry of $S$, the ergodicity of the process as the one-dimensionality of its fixed space, the mixing of the process as the decay of the correlations $\langle S^nf,g\rangle$, the Bernoulli case of an independent process in which the shift is the model of the mixing behaviour, and the adjoint in the one-sided case, where the shift is an isometry and the adjoint is the conditional expectation onto the future.</p>
+<p>The probabilistic content is fixed elsewhere. The canonical model of a process by the Kolmogorov extension theorem, the independence and the zero–one laws are <em>Independence and Conditional Expectation</em>, written; the stationary processes, the ergodicity, the mixing, the Bernoulli shifts and the entropy are <em>Ergodic Theory</em>, written; the Markov chains and their invariant measures are <em>Markov Chains and Processes</em>, written; and the Koopman operator, the mean ergodic theorem, the ergodic projection and the maximal inequality are <em>The Ergodic Operator</em>, earlier in this category. The shift operator here is that Koopman operator for the special transformation that is the shift, and the article records what the shift adds: the two-sided and the one-sided forms, the adjoint of the one-sided shift, the symbolic description of a stationary process, and the Bernoulli case. The random walks on groups, where the shift of a walk is the convolution action, are <em>Random Walks on Groups</em>, written. No physics is invoked.</p>
+<p>Throughout, $E$ is a measurable space, $\Omega=E^{\mathbb Z}$ or $\Omega=E^{\mathbb N}$ is the path space with the product $\sigma$-algebra and the coordinate maps $X_n(\omega)=\omega_n$, and $\sigma$ is the <strong>shift</strong>, $(\sigma\omega)_n=\omega_{n+1}$. A probability measure $\mu$ on $\Omega$ is <strong>shift-invariant</strong> if $\mu\circ\sigma^{-1}=\mu$ on the two-sided space, and the process is <strong>stationary</strong> if the finite-dimensional distributions are invariant under the index translation. The shift operator is $Sf=f\circ\sigma$ on $L^2(\mu)$, the invariant $\sigma$-algebra is $\mathcal I=\{A:\mu(\sigma^{-1}A\triangle A)=0\}$, and the correlation of $f,g$ at lag $n$ is $\langle S^nf,g\rangle$ with $\langle f,g\rangle=\int f\bar g\,d\mu$.</p>
+<h2 id="the-path-space-and-the-shift">The Path Space and the Shift</h2>
+<h3 id="the-canonical-model">The canonical model</h3>
+<p><strong>Theorem (canonical model).</strong> Let $\{Y_n\}_{n\ge0}$ be a process on a probability space with values in $E$. Then there is a probability measure $\mu$ on the one-sided path space $E^{\mathbb N}$ under which the coordinate process $\{X_n\}$ has the same finite-dimensional distributions as $\{Y_n\}$; the measure $\mu$ is unique with this property, and the correspondence is the Kolmogorov extension theorem of <em>Independence and Conditional Expectation</em>.</p>
+<p><em>Proof.</em> The finite-dimensional distributions of $\{Y_n\}$ form a consistent family, and the extension theorem produces the measure $\mu$ on the product with the prescribed marginals; the coordinates reproduce the finite-dimensional distributions by construction.</p>
+<p><strong>Theorem (stationarity as invariance).</strong> A process is stationary if and only if its canonical measure is shift-invariant, $\mu\circ\sigma^{-1}=\mu$. The map $\sigma$ is then measure-preserving, and the pair $(\Omega,\sigma,\mu)$ is a measure-preserving system in the sense of <em>Ergodic Theory</em>.</p>
+<p><em>Proof.</em> The stationarity is the equality of the finite-dimensional distributions of $(Y_{n_1+k},\dots,Y_{n_m+k})$ and $(Y_{n_1},\dots,Y_{n_m})$, which is the invariance of the cylinder probabilities under the shift; the cylinder sets generate the $\sigma$-algebra, so the invariance of the cylinders is the invariance of $\mu$.</p>
+<h3 id="the-ergodic-theoretic-dictionary">The ergodic-theoretic dictionary</h3>
+<p><strong>Theorem (dictionary).</strong> For a stationary process with canonical measure $\mu$:</p>
+<ol>
+<li>the process is <strong>ergodic</strong> if and only if the invariant $\sigma$-algebra $\mathcal I$ is $\mu$-trivial;</li>
+<li>the process is <strong>mixing</strong> if and only if $\mu(\sigma^{-n}A\cap B)\to\mu(A)\mu(B)$ for all sets;</li>
+<li>the <strong>tail $\sigma$-algebra</strong> $\mathcal T=\bigcap_n\sigma(X_n,X_{n+1},\dots)$ is contained in $\mathcal I$, and for an independent process it is trivial by Kolmogorov's zero–one law.</li>
+</ol>
+<p><em>Proof.</em> The invariant $\sigma$-algebra is generated by the events $A$ with $\mu(\sigma^{-1}A\triangle A)=0$, which are the events determined by the process in a shift-invariant way; the triviality is ergodicity by the definition of <em>Ergodic Theory</em>; the mixing and the tail statements are the same definitions, and the zero–one law is <em>Independence and Conditional Expectation</em>.</p>
+<h2 id="the-shift-operator">The Shift Operator</h2>
+<h3 id="definition-and-the-two-cases">Definition and the two cases</h3>
+<p><strong>Definition.</strong> The <strong>shift operator</strong> of a stationary process is
+$$
+S:L^2(\mu)\to L^2(\mu),\qquad Sf=f\circ\sigma .
+$$</p>
+<p><strong>Theorem (unitarity and isometry).</strong> If the process is indexed by $\mathbb Z$ and is invertible, $S$ is unitary with $S^{-1}f=f\circ\sigma^{-1}$. If the process is one-sided, $S$ is a linear isometry of $L^2(\mu)$ onto its range, and it is unitary exactly when the shift is invertible; in particular the one-sided shift is not onto.</p>
+<p><em>Proof.</em> The invariance of $\mu$ gives $\langle Sf,Sg\rangle=\int f(\sigma\omega)\bar g(\sigma\omega)\,d\mu(\omega)=\int f\bar g\,d\mu$, so $S$ is an isometry; on the two-sided space $\sigma$ is invertible with measure-preserving inverse by stationarity, giving the unitary inverse; on the one-sided space the image consists of the functions measurable in the coordinates from $1$ onward, which is a proper closed subspace whenever $X_0$ carries information.</p>
+<h3 id="the-adjoint-of-the-one-sided-shift">The adjoint of the one-sided shift</h3>
+<p><strong>Theorem (the adjoint).</strong> Let $S$ be the one-sided shift, and let $\mathcal F_n=\sigma(X_0,\dots,X_n)$ for $n\ge0$. Then the adjoint of $S$ is the conditional expectation
+$$
+S^*=\mathbb E[\cdot\mid\mathcal F_0]\circ \text{(the $\sigma^{-1}$ on the image)},
+$$
+more precisely $S^*$ maps $f$ to the function $\omega\mapsto\mathbb E[f\mid X_0](\omega)$ after the identification, and $\ker S^*$ is the orthogonal complement of the image of $S$.</p>
+<p><em>Proof.</em> The image of $S$ is the subspace of the functions of $(X_1,X_2,\dots)$, and the orthogonal projection onto that subspace is the conditional expectation onto $\sigma(X_1,X_2,\dots)$; transporting it back by the inverse of $S$ on its range gives $S^*f=\mathbb E[f\mid\sigma(X_1,X_2,\dots)]\circ\sigma$ in the two-sided notation. The kernel statement is the general fact for a non-unitary isometry.</p>
+<p><strong>Theorem (Wold decomposition).</strong> Every isometry $V$ of a Hilbert space decomposes its space as the orthogonal sum of the invariant subspace on which $V$ is unitary and a subspace on which $V$ is a unilateral shift; for the one-sided shift of a process the shift part is generated by the innovation space $\ker S^*$.</p>
+<p><em>Proof.</em> The decomposition is $\mathcal H=\bigcap_nV^n\mathcal H\oplus\bigoplus_{n\ge0}V^n\ker V^*$, the general Wold decomposition of an isometry, which is the operator form of the decomposition of a stationary process into its deterministic and its innovation parts; the general statement is <em>Operator Algebras</em>.</p>
+<h2 id="ergodicity-and-mixing">Ergodicity and Mixing</h2>
+<h3 id="the-ergodicity-criterion">The ergodicity criterion</h3>
+<p><strong>Theorem.</strong> For a stationary process the following are equivalent:</p>
+<ol>
+<li>the process is ergodic;</li>
+<li>the fixed space of the shift operator is one-dimensional, $\ker(S-I)=\mathbb C\mathbf 1$;</li>
+<li>every shift-invariant $L^2$ function is constant;</li>
+<li>the time averages converge, $\frac1n\sum_{k<n}f\circ\sigma^k\to\int f\,d\mu$ a.e. and in $L^2$ for every $f$.</li>
+</ol>
+<p><em>Proof.</em> The equivalence of 1, 2, 3 is the ergodicity criterion of <em>Ergodic Theory</em> read through the shift; the convergence 4 is the mean ergodic theorem of <em>The Ergodic Operator</em>, earlier in this category, whose limit is the ergodic projection onto the fixed space, which is the one-dimensional span of $\mathbf 1$ under ergodicity.</p>
+<h3 id="mixing-and-the-correlations">Mixing and the correlations</h3>
+<p><strong>Theorem (mixing).</strong> The process is mixing if and only if
+$$
+\langle S^nf,g\rangle\longrightarrow\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle\qquad (n\to\infty)
+$$
+for all $f,g\in L^2(\mu)$, that is, the correlations decay to the product of the means.</p>
+<p><em>Proof.</em> The identity is the definition of mixing written for the indicators of cylinder sets and extended by density; this is the spectral classification of <em>Ergodic Theory</em>, and it is stated here as the operator property of the shift.</p>
+<p><strong>Theorem (weak mixing and the spectrum).</strong> The process is weakly mixing if and only if the shift operator has no eigenvalue other than $1$; consequently mixing implies weak mixing, which implies ergodicity, and the spectrum of $S$ on the orthogonal complement of the constants is the invariant that separates the levels of the hierarchy.</p>
+<p><em>Proof.</em> The eigenvalue statement is the spectral classification of <em>Ergodic Theory</em>: a nonconstant eigenfunction produces a correlation whose Cesàro absolute means do not vanish, and conversely the weak mixing makes every nonzero frequency vanish in the mean.</p>
+<h3 id="the-bernoulli-case">The Bernoulli case</h3>
+<p><strong>Definition.</strong> The <strong>Bernoulli shift</strong> is the shift of an independent identically distributed process: with $\mu=\prod_{\mathbb Z}\sum_ip_i\delta_i$ on $\{1,\dots,k\}^{\mathbb Z}$, the process of independent coordinates with law $(p_1,\dots,p_k)$.</p>
+<p><strong>Theorem.</strong> The Bernoulli shift is invertible, ergodic and mixing; its entropy is $H(p)=\sum_ip_i\log(1/p_i)$, and by Ornstein's theorem two Bernoulli shifts are isomorphic exactly when their entropies are equal.</p>
+<p><em>Proof.</em> The independence makes the correlations of cylinder sets factorise, $\mu(\sigma^{-n}A\cap B)=\mu(A)\mu(B)$ for $n$ large, hence the mixing and the ergodicity; the entropy is computed from the digit partition, and the classification is Ornstein's theorem. The Bernoulli shift is <em>Ergodic Theory</em>.</p>
+<p><strong>Theorem (the Bernoulli case of the shift operator).</strong> For the Bernoulli shift the invariant $\sigma$-algebra and the tail $\sigma$-algebra are trivial, the fixed space of $S$ is the constants, and the correlations of finitely determined functions decay exponentially. The shift operator is the unitary operator model of the mixing process: it is a unitary with no eigenvalues on the orthogonal complement of the constants and with the mixing property of the correlations.</p>
+<p><em>Proof.</em> The triviality of the tail is Kolmogorov's zero–one law; the fixed space is the constants by the triviality of the invariant $\sigma$-algebra; the exponential decay holds for the functions depending on finitely many coordinates, by the factorisation of the correlations, and extends to a dense class.</p>
+<h2 id="the-shift-of-a-markov-chain">The Shift of a Markov Chain</h2>
+<p><strong>Theorem (the Markov shift).</strong> Let $\{X_n\}$ be a Markov chain with transition kernel $p$ and invariant measure $\pi$, and let $\mu=\mathbb P_\pi$ be its law as a stationary process. Then the shift $\sigma$ preserves $\mu$, the Koopman operator of the shift is the shift operator of the process, and the Markov operator is the conditional expectation of the next coordinate,
+$$
+P f(x)=\mathbb E[f(X_1)\mid X_0=x]=\mathbb E_\mu[f\circ\sigma\mid X_0=x].
+$$</p>
+<p><em>Proof.</em> The stationarity of $\mathbb P_\pi$ is the invariance of $\pi$; the identity is the definition of the transition kernel and the Markov property. The Markov operator is <em>The Markov Operator</em>, earlier in this category.</p>
+<p><strong>Corollary (ergodicity of the chain).</strong> The chain is ergodic with respect to $\pi$ exactly when its shift is ergodic, and the mean ergodic theorem for the Markov operator is the mean ergodic theorem for the shift; this is the operator content of the equality of the two ergodic statements.</p>
+<p><em>Proof.</em> The invariant $\sigma$-algebra of the shift is the invariant $\sigma$-algebra of the chain, and the ergodicity criteria coincide; the mean theorem for $P$ of <em>The Markov Operator</em> and the mean theorem for $S$ of <em>The Ergodic Operator</em> have the same limit, the projection onto the constants.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the Bernoulli shift).</strong> With $E=\{0,1\}$ and $p=\frac12,\frac12$ the shift is the symbolic form of the doubling map; it is ergodic and mixing and its entropy is $\log2$, the digit partition being a generator. The mixing excludes every eigenvalue of $S$ other than $1$, so the orthogonal complement of the constants carries no point spectrum, in contrast with the rotation.</p>
+<p><strong>Example (the rotation).</strong> Let $E=\mathbb R/\mathbb Z$, let $\mu$ be the Lebesgue measure and let the process be $X_n=x_0+n\alpha$ modulo one with $\alpha$ irrational, so that the shift acts as the rotation by $\alpha$. The shift operator has the eigenvalues $e^{2\pi im\alpha}$, $m\in\mathbb Z$, on the characters, hence the full circle of eigenvalues; the process is ergodic and not weakly mixing, and it is rigid. This is the boundary of the hierarchy at which the shift fails to be mixing.</p>
+<p><strong>Example (the one-sided shift).</strong> For the one-sided Bernoulli shift on a $k$-letter alphabet the operator $S$ is a nonunitary isometry, and $\ker S^*$ is the space of the mean-zero functions of $X_0$, of dimension $k-1$; the Wold decomposition has no unitary part, and the whole space is the direct sum $\bigoplus_{n\ge0}S^n\ker S^*$, the Beurling form of the shift. For the binary alphabet the innovation space is one-dimensional.</p>
+<p><strong>Example (a deterministic process).</strong> Let the process be constant, $X_n=x_0$ for all $n$. Then $\mu=\delta_{x_0}$, $S=\mathrm{id}$, every set is invariant and the process is not ergodic; the fixed space is all of $L^2$. This is the degenerate case in which the shift carries no information.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The shift operator degenerates in four configurations. First, the one-sided shift is not unitary, so the spectral theory of the unitary case does not apply and the adjoint is the conditional expectation of the next layer; the Wold decomposition is the substitute for the diagonalisation. Second, the process need not be invertible even in two-sided index: if the $\sigma$-algebra is not generated by the coordinates, the shift is only an isometry, and the inverse image algebra may be strictly smaller. Third, the tail $\sigma$-algebra need not be trivial, and for a general stationary process it is a proper subalgebra of the invariant one; the zero–one law is special to the independent case. Fourth, the canonical measure of a stationary process need not be the only invariant measure for the shift, and the ergodicity is a property of the pair $(\mu,\sigma)$ and not of $\sigma$; the same shift may be ergodic for one invariant measure and not for another, and the ergodic decomposition is the catalogue of the possibilities.</p>
+<h2 id="summary">Summary</h2>
+<p>The canonical model of a process is a measure on a path space, and the process is stationary exactly when the shift $\sigma$ preserves the measure; the shift operator $Sf=f\circ\sigma$ on $L^2(\mu)$ is the Koopman operator of the shift, unitary in the two-sided invertible case and a non-unitary isometry in the one-sided case, whose adjoint is the conditional expectation of the future and which decomposes by the Wold theorem. Ergodicity of the process is the one-dimensionality of the fixed space of $S$ and the convergence of the time averages, mixing is the decay of the correlations $\langle S^nf,g\rangle\to\langle f,\mathbf 1\rangle\langle\mathbf 1,g\rangle$, weak mixing is the absence of eigenvalues other than one, and the hierarchy is the spectral hierarchy of $S$. The Bernoulli shift is the unitary model of the mixing case, with trivial invariant and tail algebras, entropy $H(p)$ and Ornstein classification. The shift of a Markov chain is the process whose Markov operator is the conditional expectation of the next coordinate, and the ergodicity and the mean ergodic theorem of the chain are those of the shift. The Koopman operator and the ergodic projection are <em>The Ergodic Operator</em>, earlier in this category; the adjoint of the shift is computed here for the one-sided case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Omega=E^{\mathbb Z}$ or $E^{\mathbb N}$, $X_n$</td>
+<td>path space and coordinate process</td>
+</tr>
+<tr>
+<td>$\sigma$, $(\sigma\omega)_n=\omega_{n+1}$</td>
+<td>shift</td>
+</tr>
+<tr>
+<td>$\mu$, shift-invariance</td>
+<td>canonical measure; $\mu\circ\sigma^{-1}=\mu$</td>
+</tr>
+<tr>
+<td>$Sf=f\circ\sigma$</td>
+<td>shift operator on $L^2(\mu)$</td>
+</tr>
+<tr>
+<td>$\mathcal I$, $\mathcal T$</td>
+<td>invariant and tail $\sigma$-algebras</td>
+</tr>
+<tr>
+<td>$S^*$</td>
+<td>adjoint of the one-sided shift, a conditional expectation</td>
+</tr>
+<tr>
+<td>Wold decomposition</td>
+<td>unitary part $\oplus$ unilateral shifts</td>
+</tr>
+<tr>
+<td>$\langle S^nf,g\rangle$</td>
+<td>correlation at lag $n$</td>
+</tr>
+<tr>
+<td>Bernoulli shift, $H(p)$</td>
+<td>independent process, its entropy</td>
+</tr>
+<tr>
+<td>$Pf(x)=\mathbb E[f(X_1)\mid X_0=x]$</td>
+<td>Markov operator as a conditional expectation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the shift, the symbolic representation and the mixing hierarchy.</li>
+<li>Karl Petersen, <em>Ergodic Theory</em> (Cambridge University Press, 1983), for the spectral classification of the shift.</li>
+<li>Donald S. Ornstein, <em>Ergodic Theory, Randomness, and Dynamical Systems</em> (Yale University Press, 1974), for the Bernoulli shifts and their classification.</li>
+<li>Paul R. Halmos, <em>Lectures on Ergodic Theory</em> (Mathematical Society of Japan, 1956), for the shift operator and the symbolic dynamics.</li>
+<li>Béla Sz.-Nagy and Ciprian Foiaş, <em>Harmonic Analysis of Operators on Hilbert Space</em> (North-Holland, 1970), for the Wold decomposition and the isometries.</li>
+<li>Israel Gohberg and Mark Krein, <em>Theory of Volterra Operators in Hilbert Space</em> (American Mathematical Society, 1970), for the unilateral shifts and their invariant subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

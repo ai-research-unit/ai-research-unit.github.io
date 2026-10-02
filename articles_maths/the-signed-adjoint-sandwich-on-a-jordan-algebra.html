@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-jordan-algebra"><strong>The Signed Adjoint Sandwich on a Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two-sided operators of a special Jordan algebra $J = A^+$ are the sandwich $S_{a,b}(x) = axb$ of the ambient associative algebra and its symmetrisation, the <strong>quadratic representation</strong> $U_{a,b} = \tfrac12(U_{a+b}-U_a-U_b)$; when the ambient algebra carries a <strong>grade involution</strong> $\alpha$, the sandwich admits the <strong>signed</strong> version $S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$, whose symmetrisation is</p>
+<p>$$
+\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha ,
+$$</p>
+<p>the signed sandwich of <em>The Signed Sandwich on a Jordan Algebra</em>. The <strong>natural pairing</strong> of the category is the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ of <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>, and the present article computes the adjoint of the signed sandwich with respect to it. Because the trace form is <strong>associative</strong>, $T(x\circ y,z) = T(x,y\circ z)$, every left multiplication is self-adjoint, $L_a^{\dagger} = L_a$; because the grade involution is an <strong>isometry</strong>, $T(\alpha x,\alpha y) = T(x,y)$, the involution itself is self-adjoint, $\alpha^{\dagger} = \alpha$; and because the quadratic representation is a polynomial in the self-adjoint left multiplications, it is self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$. Together these give the explicit expression</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} ,
+$$</p>
+<p>the adjoint of the signed sandwich is the signed sandwich at the images of its parameters. The signed sandwich is <strong>unitary</strong> when $U_{a,b}$ is an involution, $U_{a,b}^2 = \mathrm{id}$, the Jordan form of the condition $u^{*}u = uu^{*} = 1$.</p>
+<p>After the definitions the article proves the $\alpha$-invariance of the trace form, computes the adjoint of the quadratic representation and then of the signed sandwich, specialises to the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ and to the symmetrisation at a symmetry, and states the <strong>unitarity condition</strong> $U_{a,b}^2 = \mathrm{id}$. The article assumes <em>The Signed Sandwich on a Jordan Algebra</em> for the signed sandwich, its symmetrisation and the diagonal case; <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em> for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the quadratic representation and the fundamental formula; <em>The Adjoint of an Endomorphism</em> for the adjoint with respect to a pairing; and <em>Involutive Linear Algebras</em> for the involution of the endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$ (an automorphism of order two, hence an automorphism of $J$), $T$ is the trace form, and ${}^{\dagger}$ is its adjoint; no norm, form, distance or geometric reflection occurs. The reflection case is <em>The Signed Adjoint of the Reflection on a Jordan Algebra</em>, and the one-sided case is <em>The Signed Adjoint of the Left Multiplication on a Jordan Algebra</em>.</p>
+<h2 id="the-natural-pairing-and-its-compatibility">The Natural Pairing and Its Compatibility</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p><strong>Definition.</strong> The <strong>natural pairing</strong> of the category on a finite-dimensional Jordan algebra $J$ is the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$, the trace of the left multiplication by the Jordan product; the <strong>adjoint</strong> of an operator $F$ on $J$ is the unique $F^{\dagger}$ with $T(Fx,y) = T(x,F^{\dagger}y)$.</p>
+<p><strong>Theorem (associativity).</strong> The trace form is symmetric and associative, $T(x\circ y,z) = T(x,y\circ z)$; it is non-degenerate when $J$ is semisimple, and it is invariant under the left multiplications, $T(L_ax,y) = T(x,L_ay)$, so that</p>
+<p>$$
+L_a^{\dagger} = L_a .
+$$</p>
+<p><em>Proof.</em> This is <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>; the associativity is the statement $T(L_ax,z) = T(x,L_az)$, which is exactly the self-adjointness of $L_a$ by the uniqueness of the adjoint. $\square$</p>
+<h3 id="the-grade-involution-is-an-isometry">The Grade Involution Is an Isometry</h3>
+<p><strong>Theorem.</strong> The grade involution $\alpha$ preserves the trace form,</p>
+<p>$$
+T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha .
+$$</p>
+<p><em>Proof.</em> For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\circ y)}) = \operatorname{tr}(\alpha L_{x\circ y}\alpha^{-1}) = \operatorname{tr}(L_{x\circ y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$. $\square$</p>
+<p><strong>Corollary (the quadratic representation).</strong> The quadratic representations are self-adjoint, $U_a^{\dagger} = U_a$ and $U_{a,b}^{\dagger} = U_{a,b}$, because they are polynomials in the self-adjoint left multiplications and the symmetrisation preserves self-adjointness.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<h3 id="the-main-computation">The Main Computation</h3>
+<p><strong>Theorem.</strong> The adjoint of the symmetrised signed sandwich is the symmetrised signed sandwich at the images of the parameters:</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \bigl(U_{a,b}\circ\alpha\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
+$$</p>
+<p><em>Proof.</em> The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{\dagger} = \Psi^{\dagger}\circ\Phi^{\dagger}$, so $(U_{a,b}\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ U_{a,b}^{\dagger} = \alpha\circ U_{a,b}$. Since $\alpha$ is an automorphism, $\alpha\,U_{a,b}\,\alpha^{-1} = U_{\alpha(a),\alpha(b)}$, that is $\alpha\,U_{a,b} = U_{\alpha(a),\alpha(b)}\,\alpha$; substituting gives the displayed sandwich. The symmetry $U_{a,b} = U_{b,a}$ of the quadratic representation leaves the parameter order, so only the images under $\alpha$ intervene. $\square$</p>
+<p><strong>Corollary (the special-algebra form).</strong> On a special Jordan algebra the unsigned sandwich $S_{a,b}(x) = axb$ has the unsigned adjoint $S^{\dagger}_{a,b}$ given by the same rule at the images of the parameters when the ambient algebra is commutative, and its symmetrisation $\Sigma^{\alpha}_{a,b}$ has the adjoint $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ by the theorem; the adjoint of the signed sandwich is again a signed sandwich.</p>
+<h3 id="the-diagonal-signed-sandwich">The Diagonal Signed Sandwich</h3>
+<p><strong>Theorem.</strong> The diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1}$ has as symmetrisation the twisted quadratic representation $U_u\circ\alpha$, whose adjoint is</p>
+<p>$$
+\bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
+$$</p>
+<p><em>Proof.</em> Apply the theorem with $a = b = u$ and $U_{u,u} = U_u$. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint of the signed conjugation $x\mapsto u\alpha(x)u^{-1}$ is the signed conjugation by $\alpha(u)$; in particular the reflection at a symmetry is self-adjoint exactly when $\alpha(u) = u$, which is the content of <em>The Signed Adjoint of the Reflection on a Jordan Algebra</em>.</p>
+<h2 id="unitarity">Unitarity</h2>
+<p><strong>Theorem (the unitarity condition).</strong> The signed sandwich is unitary with respect to the adjoint, $(\Sigma^{\alpha}_{a,b})^{\dagger}\Sigma^{\alpha}_{a,b} = \Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger} = \mathrm{id}$, exactly when the quadratic representation is an involution:</p>
+<p>$$
+U_{a,b}^2 = \mathrm{id} .
+$$</p>
+<p><em>Proof.</em> $\Sigma^{\alpha}_{a,b}{}^{\dagger}\Sigma^{\alpha}_{a,b} = U_{\alpha(a),\alpha(b)}\alpha\,U_{a,b}\alpha = U_{\alpha(a),\alpha(b)}U_{\alpha(a),\alpha(b)}\alpha^2 = U_{\alpha(a),\alpha(b)}^2$, and similarly $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{a,b}{}^{\dagger} = U_{a,b}^2$; the two are the identity together exactly when $U_{a,b}^2 = \mathrm{id}$, equivalently $U_{\alpha(a),\alpha(b)}^2 = \mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The unitarity condition $U_{a,b}^2 = \mathrm{id}$ is the Jordan form of the element condition $u^{*}u = uu^{*} = 1$; for the diagonal sandwich it reads $U_u^2 = \mathrm{id}$, the statement that the twisted quadratic representation is an involution, and it holds for the symmetries.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed sandwich is the unsigned one $\Sigma^{\alpha}_{a,b} = U_{a,b}$ and the adjoint is $U_{a,b}^{\dagger} = U_{a,b}$, so every unsigned sandwich is self-adjoint; the unitary ones are those with $U_{a,b}^2 = \mathrm{id}$.</p>
+<p><strong>Example (the symmetric matrices).</strong> Let $J = H_n(F)$ with $x\circ y = \tfrac12(xy+yx)$ and the transpose grade involution on the ambient matrix algebra; then $U_a(x) = axa$ and $U_{a,b}(x) = \tfrac12(axb+bxa)$; the signed sandwich $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ has the adjoint $U_{a^{\mathsf{T}},b^{\mathsf{T}}}\circ\alpha$, and it is unitary when $U_{a,b}$ is an involution.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>natural pairing</strong> on a Jordan algebra is the <strong>trace form</strong> $T(x,y) = \operatorname{tr}(L_{x\circ y})$, symmetric, associative and non-degenerate in the semisimple case; its associativity makes every left multiplication self-adjoint, $L_a^{\dagger} = L_a$, and the <strong>grade involution</strong> is an isometry, $T(\alpha x,\alpha y) = T(x,y)$, hence self-adjoint, $\alpha^{\dagger} = \alpha$. The quadratic representations are self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$, and the adjoint of the <strong>signed sandwich</strong> $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ is the signed sandwich at the images of the parameters,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
+$$</p>
+<p>The signed sandwich is <strong>unitary</strong> exactly when $U_{a,b}^2 = \mathrm{id}$, the Jordan form of the condition $u^{*}u = uu^{*} = 1$. The diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ has the adjoint $U_{\alpha(u)}\circ\alpha$. The identity and the symmetric matrices are the worked examples. No norm, form, distance or geometric reflection occurs.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J = A^+$</td>
+<td>Special unital Jordan algebra</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Grade involution (automorphism of order two)</td>
+</tr>
+<tr>
+<td>$T(x,y) = \operatorname{tr}(L_{x\circ y})$</td>
+<td>Natural pairing, the trace form</td>
+</tr>
+<tr>
+<td>$T(x\circ y,z) = T(x,y\circ z)$</td>
+<td>Associativity of the trace form</td>
+</tr>
+<tr>
+<td>$L_a^{\dagger} = L_a$, $\alpha^{\dagger} = \alpha$</td>
+<td>Self-adjointness of the multiplications and the involution</td>
+</tr>
+<tr>
+<td>$U_{a,b} = \tfrac12(U_{a+b}-U_a-U_b)$</td>
+<td>Polarised quadratic representation, self-adjoint</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$</td>
+<td>Signed sandwich</td>
+</tr>
+<tr>
+<td>$(\Sigma^{\alpha}_{a,b})^{\dagger} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)}$</td>
+<td>Adjoint of the signed sandwich</td>
+</tr>
+<tr>
+<td>$U_{a,b}^2 = \mathrm{id}$</td>
+<td>Unitarity condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the quadratic representation, the trace form and the symmetries.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the quadratic maps, the sandwiches and their adjoints.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the signed sandwiches, the involutions and the unitarity conditions.</li>
+<li>Hel Braun and Max Koecher, <em>The Jordan Algebra Approach to Bounded Symmetric Domains</em> (Springer, 1966), for the trace form, the quadratic representation and the structure group.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the multiplication algebra, the sandwiches and the pairings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

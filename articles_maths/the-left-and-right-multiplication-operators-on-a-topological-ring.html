@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Left and Right Multiplication Operators on a Topological Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-left-and-right-multiplication-operators-on-a-topological-ring"><strong>The Left and Right Multiplication Operators on a Topological Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The simplest operators of a ring are the multiplications by a fixed element, and they carry the whole ring-theoretic structure of the object: the left multiplications realise the ring acting on itself on the left, the right multiplications on the right, and the two families centralise each other, so that the ring is described as the double centraliser of either family. This article treats the two families as operators on a topological ring: it recalls their continuity and their composition laws, isolates the <strong>failure of commutation</strong> within each family as exactly the failure of commutativity of the ring, identifies the centraliser of one family as the other and the intersection of the two as the multiplications by the centre, and reads the results topologically, where the injectivity of the two representations and the closure of their images are the statements that make the ring its own operator object.</p>
+<p>The article assumes the abstract left and right multiplications, their composition laws, the regular representation and the double centraliser theorem from <em>Left and Right Multiplication in a Ring</em>; the topological ring, its additive topology and the continuity of its product from <em>Topological Rings and Fields</em>; the operator layer, the continuous additive endomorphisms, the one-sided multiplications as homeomorphisms on the units and the natural pairing from <em>Operators on a Topological Ring</em>; and the corresponding group operators and their commutation from <em>Left and Right Multiplication in a Topological Group</em>. The signed sandwich $\Sigma^\alpha_{a,b}$ and the signed one-sided operators are <em>The Signed Sandwich on a Topological Ring</em> and <em>The Signed Left Multiplication on a Topological Ring</em>, later in this group; no involution and no adjoint occurs here. No measure, no norm and no form is used.</p>
+<p>Throughout, $R$ is a topological ring, unital unless stated otherwise, with centre $Z(R)$ and commutator $[a, b] = ab - ba$; the one-sided multiplications are $L_a(x) = ax$ and $R_a(x) = xa$, the representations are $\lambda : R \to \operatorname{End}_c(R)$, $\lambda(a) = L_a$ and $\rho : R \to \operatorname{End}_c(R)$, $\rho(a) = R_a$, and $\operatorname{End}_c(R)$ is the monoid of continuous additive endomorphisms of <em>Operators on a Topological Ring</em>.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<p><strong>Proposition (continuity and composition laws).</strong> For all $a, b \in R$ the operators $L_a, R_a$ lie in $\operatorname{End}_c(R)$, and</p>
+<p>$$
+L_a \circ L_b = L_{ab}, \qquad R_a \circ R_b = R_{ba}, \qquad L_a \circ R_b = R_b \circ L_a .
+$$</p>
+<p>So $\lambda$ is a ring homomorphism, $\rho$ is a ring anti-homomorphism, and every left multiplication commutes with every right multiplication.</p>
+<p><strong>Proof.</strong> Continuity and additivity are <em>Operators on a Topological Ring</em>. For the first law, $(L_a \circ L_b)(x) = a(bx) = (ab)x$ by associativity; for the second, $(R_a \circ R_b)(x) = (xb)a = x(ba)$; for the third, $(L_a \circ R_b)(x) = a(xb) = (ax)b = (R_b \circ L_a)(x)$. The homomorphism statements are the first two laws together with additivity, and antisymmetry of $\rho$ is the order reversal $ba$ in the second law.</p>
+<p><strong>Proposition (the representations are faithful on a unital ring).</strong> If $R$ is unital then $\lambda$ is injective and $\rho$ is injective; their images are the subrings of $\operatorname{End}_c(R)$ generated by the left and the right multiplications, and $\lambda(R)$ is isomorphic to $R$, $\rho(R)$ to the opposite ring $R^{\mathrm{op}}$.</p>
+<p><strong>Proof.</strong> If $L_a = 0$ then $a = L_a(1) = 0$, and if $R_a = 0$ then $a = R_a(1) = 0$; the rest is the composition laws. The opposite ring appears because the composition of right multiplications reverses the order.</p>
+<h2 id="their-algebra">Their Algebra</h2>
+<p><strong>Proposition (the two families are each other's centraliser).</strong> Let $T \in \operatorname{End}_c(R)$ be additive. Then $T$ commutes with every $L_a$ if and only if $T = R_{c}$ for $c = T(1)$, and $T$ commutes with every $R_a$ if and only if $T = L_{c}$ for $c = T(1)$. Hence</p>
+<p>$$
+\{ T : T L_a = L_a T \ \forall a \} = \rho(R), \qquad \{ T : T R_a = R_a T \ \forall a \} = \lambda(R) .
+$$</p>
+<p><strong>Proof.</strong> If $TL_a = L_aT$ then $T(a) = T(L_a 1) = L_a T(1) = a\,T(1) = R_{T(1)}(a)$, so $T = R_{T(1)}$; conversely every $R_c$ commutes with every $L_a$ by the third composition law. The second statement is the mirror image, using $R_a1 = a$ and $T R_a = L_a T$.</p>
+<p><strong>Corollary (the operators commuting with both families are the central multiplications).</strong> The common centraliser $\lambda(R) \cap \rho(R)$ is the set of multiplications by the centre,</p>
+<p>$$
+\lambda(Z(R)) = \rho(Z(R)) = \{ L_c : c \in Z(R) \} = \{ R_c : c \in Z(R) \} ,
+$$</p>
+<p>and for a commutative ring the two families coincide, $\lambda = \rho$.</p>
+<p><strong>Proof.</strong> An operator in $\lambda(R)\cap\rho(R)$ is both $L_c$ and $R_{c'}$; evaluating at $1$ gives $c = c'$, and $L_c = R_c$ is the statement that $c$ is central. For a commutative ring every element is central and the two representations agree.</p>
+<h2 id="the-failure-of-commutation">The Failure of Commutation</h2>
+<p><strong>Theorem (the commutator is the multiplication by the ring commutator).</strong> For all $a, b \in R$,</p>
+<p>$$
+L_a L_b - L_b L_a = L_{[a, b]}, \qquad R_b R_a - R_a R_b = R_{[a, b]} .
+$$</p>
+<p>Hence the left multiplications commute with one another exactly when the ring is commutative, and the group they generate is abelian if and only if $R$ is commutative; the left and the right multiplications always commute, so the failure of commutation lies entirely within each family.</p>
+<p><strong>Proof.</strong> By the composition law $L_aL_b = L_{ab}$ and $L_bL_a = L_{ba}$, their difference is $L_{ab-ba} = L_{[a,b]}$. The account is linear, so the family $\{L_a : a \in R\}$ is abelian exactly when $L_{[a,b]} = 0$ for all $a,b$, that is, by faithfulness, exactly when $[a,b] = 0$ for all $a,b$. The same computation with the anti-homomorphism $\rho$ gives the right family.</p>
+<p><strong>Corollary (the derived subgroup of the sandwich group).</strong> The group generated by the units under the maps $a \mapsto L_a$ has derived subgroup generated by the images of the commutators $L_{[a,b]}$; the abelianisation is $\lambda$ applied to the abelianisation of the group, and for a commutative ring it is the whole group.</p>
+<p><strong>Proof.</strong> The commutator of $L_a$ and $L_b$ in the group generated by the units is $L_aL_bL_a^{-1}L_b^{-1} = L_{ab a^{-1}b^{-1}} = L_{[a,b]}$, using the multiplicativity of $L$ and the fact that $L_a^{-1} = L_{a^{-1}}$ for units by <em>Operators on a Topological Ring</em>; the derived subgroup is therefore generated by the $L_{[a,b]}$.</p>
+<p><strong>Remark (the two-sided operator).</strong> The product $L_aR_b$ is the two-sided <strong>sandwich</strong> $x \mapsto axb$, the subject of <em>The Signed Sandwich on a Topological Ring</em> and <em>Reflections as Signed Two-Sided Operators on a Topological Ring</em>. Because $L_a$ and $R_b$ commute, the sandwich factors as a left followed by a right multiplication in either order; the signed versions twist the sandwich by the grade involution and are the content of those articles.</p>
+<h2 id="the-double-centraliser">The Double Centraliser</h2>
+<p><strong>Theorem (the double centraliser).</strong> Let $R$ be a unital topological ring with representations $\lambda$ and $\rho$. The subalgebra of $\operatorname{End}_c(R)$ generated by $\lambda(R)$ and $\rho(R)$ is the two-sided multiplication algebra</p>
+<p>$$
+\mathcal{M}(R) = \Bigl\{ \sum_i L_{a_i} R_{b_i} \;:\; a_i, b_i \in R \Bigr\} ,
+$$</p>
+<p>the centraliser of $\lambda(R)$ among the continuous additive operators is $\rho(R)$, and the centraliser of $\rho(R)$ is $\lambda(R)$. Hence the ring is recovered from either family as its centraliser in its own additive operators, which is the algebraic double centraliser theorem applied to the regular representation.</p>
+<p><strong>Proof.</strong> The algebra generated has the displayed form because $L$ and $R$ are additive, $L_aL_b = L_{ab}$, $R_aR_b = R_{ba}$ and $L_aR_b = R_bL_a$, so every word in the generators can be sorted into products $L_aR_b$ and summed. The centraliser identities are the previous proposition. The double centraliser theorem of <em>Left and Right Multiplication in a Ring</em> states the algebraic version for the regular module, which is the same computation read as operators on the additive group.</p>
+<p><strong>Theorem (the topological double centraliser).</strong> Let $R$ be a unital topological ring, complete and Hausdorff, and give $\operatorname{End}_c(R)$ the topology of pointwise convergence. Then $\lambda(R)$ and $\rho(R)$ are closed in $\operatorname{End}_c(R)$, and the centraliser of $\lambda(R)$ in $\operatorname{End}_c(R)$ is exactly $\rho(R)$; the closure of the multiplication algebra $\mathcal{M}(R)$ is the set of continuous additive operators commuting with the centre.</p>
+<p><strong>Proof.</strong> For closedness, let $L_{a_i} \to T$ pointwise; then $T$ is continuous and additive as a pointwise limit of continuous additive operators, and $T(1) = \lim a_i$ exists by completeness, so $T = L_{\lim a_i}$ by the computation of the centraliser, whence $\lambda(R)$ is closed; the same for $\rho$. An operator commuting with all $L_a$ is some $R_c$ by the proposition, which lies in $\rho(R)$ and a fortiori is continuous; the description of the closure is the continuity of the operators and the same computation applied to the centre.</p>
+<p><strong>Corollary (the centre acts by the common centraliser).</strong> The operators of the two-sided multiplication algebra that commute with all of $\mathcal{M}(R)$ are the multiplications by the centre, so the centre of $R$ is the double centraliser of its own additive operator layer.</p>
+<p><strong>Proof.</strong> Combine the two previous statements: an operator commuting with both families is a central multiplication, and central multiplications commute with the whole algebra.</p>
+<h2 id="the-topological-reading">The Topological Reading</h2>
+<p><strong>Proposition (the representation is continuous for the pointwise topology).</strong> Give $\operatorname{End}_c(R)$ the topology of pointwise convergence. Then $\lambda : R \to \operatorname{End}_c(R)$ and $\rho : R \to \operatorname{End}_c(R)$ are continuous; on a unital ring they are homeomorphisms onto their images, and on a topological ring whose topology is determined by its neighbourhoods of zero they are continuous embeddings.</p>
+<p><strong>Proof.</strong> The evaluation map $a \mapsto L_a(x) = ax$ is continuous in $a$ for each fixed $x$ by the continuity of the product; this is exactly the pointwise continuity of $\lambda$. On a unital ring the inverse $L_a \mapsto a = L_a(1)$ is continuous for the pointwise topology, so $\lambda$ is a homeomorphism onto its image; the same for $\rho$.</p>
+<p><strong>Proposition (closure of the images).</strong> On a Hausdorff ring the image $\lambda(R)$ is closed in $\operatorname{End}_c(R)$ for the topology of pointwise convergence when $R$ is complete, and in general the closure of $\lambda(R)$ consists of the continuous additive operators $T$ with $T(a) = a\,T(1)$ for which $T(1)$ is a limit of elements of $R$; the same holds for $\rho$.</p>
+<p><strong>Proof.</strong> For a complete $R$, a pointwise limit of the $L_{a_i}$ is a continuous additive operator $T$, and $T(1) = \lim a_i$ exists, so $T = L_{\lim a_i}$ by the computation of the centraliser; hence the image is closed. In general the limit of the $a_i$ need not exist, and the closure is described by the existence of a limit for $T(1)$ and the multiplicativity condition.</p>
+<p><strong>Remark (the natural pairing and the adjoints).</strong> With respect to the natural pairing of <em>Operators on a Topological Ring</em>, the one-sided multiplications are adjoint to their inverses, $\langle L_af, u\rangle = \langle f, L_{a^{-1}}u\rangle$; the adjoint of a general one-sided multiplication with respect to the bilinear form of the category is <em>The Adjoint of the Left Multiplication on a Topological Ring</em>, later in this category, and the signed versions are the signed adjoint articles. This article fixes the operators and their algebra; the adjoints use them.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (a commutative ring).</strong> On a commutative ring $L_a = R_a$ for every $a$, the two families coincide, and the whole family is abelian; the double centraliser is the ring itself, and the failure of commutation of the previous section is vacuous.</p>
+<p><strong>Example (the matrix ring $M_n(k)$).</strong> The left multiplications are the operators $X \mapsto AX$, the right ones $X \mapsto XB$, and $L_A R_B = R_B L_A$ is the associativity of the matrix product; two left multiplications commute exactly when $A$ and $A'$ commute, so the failure of commutation is the failure of commutation in $M_n(k)$, and the centre is the scalar matrices.</p>
+<p><strong>Example ($\mathbb{Z}_p$).</strong> Commutative, so the two families coincide; the operators are the continuous multiplications, the representation is a homeomorphism onto its image, and the operator algebra is the ring itself by the double centraliser theorem.</p>
+<p><strong>Example (a ring of continuous functions).</strong> On $C(X)$ with the topology of uniform convergence, $L_f$ is the pointwise multiplication by $f$; the two families coincide because the ring is commutative, and the natural pairing of the operator layer realises the operators as multiplication by the continuous functions.</p>
+<h2 id="summary">Summary</h2>
+<p>The left and the right multiplications of a topological ring are continuous additive operators with the composition laws $L_aL_b = L_{ab}$, $R_aR_b = R_{ba}$ and $L_aR_b = R_bL_a$; the representation $\lambda$ is a ring homomorphism, $\rho$ a ring anti-homomorphism, and on a unital ring both are faithful, so the ring and its opposite embed in its additive operators. Each family is the centraliser of the other, and their intersection is the multiplications by the centre, so a unital ring is the double centraliser of either family and recovers itself from its operator layer. The failure of commutation is confined to each family alone: $L_aL_b - L_bL_a = L_{[a,b]}$ and $R_bR_a - R_aR_b = R_{[a,b]}$, so the left multiplications commute with one another exactly when the ring is commutative, and the derived subgroup of the group they generate is generated by the images of the ring commutators.</p>
+<p>Topologically, the representations are continuous for the topology of pointwise convergence and are homeomorphisms onto their images on a unital ring, and on a complete Hausdorff ring the images are closed; the natural pairing of the operator layer makes the one-sided multiplications adjoint to their inverses, and the two-sided sandwich $L_aR_b$ and its signed versions are the subjects of the later articles of this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x) = ax$, $R_a(x) = xa$</td>
+<td>The one-sided multiplications, continuous additive operators</td>
+</tr>
+<tr>
+<td>$L_aL_b = L_{ab}$</td>
+<td>The left family is a homomorphic image of $R$</td>
+</tr>
+<tr>
+<td>$R_aR_b = R_{ba}$</td>
+<td>The right family is an anti-homomorphic image</td>
+</tr>
+<tr>
+<td>$L_aR_b = R_bL_a$</td>
+<td>Left and right multiplications commute</td>
+</tr>
+<tr>
+<td>$[a,b] = ab - ba$</td>
+<td>The ring commutator</td>
+</tr>
+<tr>
+<td>$L_aL_b - L_bL_a = L_{[a,b]}$</td>
+<td>The failure of commutation of the left family</td>
+</tr>
+<tr>
+<td>$\lambda$, $\rho$</td>
+<td>The two representations $a \mapsto L_a$, $a \mapsto R_a$</td>
+</tr>
+<tr>
+<td>Centraliser of $\lambda(R)$</td>
+<td>$\rho(R)$, the right multiplications</td>
+</tr>
+<tr>
+<td>$\lambda(R)\cap\rho(R)$</td>
+<td>The multiplications by the centre</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(R) = \{\sum_i L_{a_i}R_{b_i}\}$</td>
+<td>The two-sided multiplication algebra</td>
+</tr>
+<tr>
+<td>$L_aR_b$</td>
+<td>The two-sided sandwich $x \mapsto axb$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for the two-sided regular representation and the double centraliser theorem.</li>
+<li>Tsi-Yuen Lam, <em>A First Course in Noncommutative Rings</em>, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001), for left and right multiplications, the centraliser and the centre.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation, the multiplication algebra and the double centraliser.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for the one-sided multiplications on a topological ring and the topology of pointwise convergence on the operator space.</li>
+<li>Alexander Arhangel'skii and Mikhail Tkachenko, <em>Topological Groups and Related Structures</em> (Atlantis Press, 2008), for the translation operators of the underlying additive group and their commutation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

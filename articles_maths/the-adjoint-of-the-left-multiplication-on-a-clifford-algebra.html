@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on a Clifford Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-a-clifford-algebra"><strong>The Adjoint of the Left Multiplication on a Clifford Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left multiplication $L_a$ acts on the Clifford algebra by $x\mapsto ax$, and its adjoint for the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is the left multiplication by the Clifford conjugate,</p>
+<p>$$
+L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(\tilde a) ,
+$$</p>
+<p>an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the <strong>self-adjoint</strong> left multiplications are those with $\hat a=a$, the <strong>orthogonal</strong> ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is skew-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of <em>The Twisted Adjoint on a Clifford Algebra</em>, on which the article depends for the form and the involution.</p>
+<p><strong>The boundaries.</strong> The operator and its calculus are <em>The Left and Right Multiplication Operators on a Clifford Algebra</em>; the form, the Clifford conjugation and the twisted form are <em>The Twisted Adjoint on a Clifford Algebra</em>; the right-hand mirror of the article is <em>The Adjoint of the Right Multiplication</em>; the two-sided operators are <em>The Adjoint of the Sandwich</em> and <em>The Adjoint of the Two-Sided Multiplication Operator</em>. The unitary and versor conditions in the geometry of the orthogonal group are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$ with a non-degenerate $q$, $q(u)=B(u,u)$, $uv+vu=2B(u,v)$.</p>
+<h2 id="the-adjoint-and-its-involution">The Adjoint and Its Involution</h2>
+<p><strong>Theorem.</strong> For every $a\in\mathrm{Cl}(V,q)$ the adjoint of the left multiplication for the standard form is $L_a^*=L_{\hat a}$; the map $a\mapsto\hat a$ is an anti-automorphism and an involution of the algebra, $\widehat{a+b}=\hat a+\hat b$, $\widehat{ab}=\hat b\hat a$, $\hat{\hat a}=a$, and $\hat u=-u$ for a vector $u$.</p>
+<p><strong>Proof.</strong> $\langle ax,y\rangle=\operatorname{Sc}(\widehat{ax}y)=\operatorname{Sc}(\hat x\hat ay)=\langle x,\hat ay\rangle$, using the anti-automorphism property of the conjugation and the cyclic invariance of the scalar part; the involution and anti-automorphism statements are those of the conjugation, and the vector value is $\hat u=\alpha(\tilde u)=-u$. The computation is the one-factor case of <em>The Twisted Adjoint on a Clifford Algebra</em>.</p>
+<p><strong>Proposition (self-adjointness).</strong> $L_a$ is self-adjoint, $L_a^*=L_a$, if and only if $\hat a=a$; the elements with $\hat a=a$ form a subspace of the algebra and include the scalars, the unit, and every product of an even number of anticommuting vectors in the definite case.</p>
+<p><strong>Proof.</strong> $L_a^*=L_{\hat a}$ and the left multiplications are faithful, so $L_a^*=L_a$ is equivalent to $\hat a=a$ by <em>The Left and Right Multiplication Operators on a Clifford Algebra</em>; the fixed subspace of an involution is a subspace, and the examples are immediate from $\hat u=-u$ and multiplicativity.</p>
+<p><strong>Proposition (orthogonality).</strong> $L_a$ is orthogonal for the standard form, $L_a^*L_a=\operatorname{id}$, if and only if $\hat aa=1$; such $a$ are units. The orthogonal left multiplications form a subgroup of the group of units, containing $\pm1$ and closed under $a\mapsto\hat a$.</p>
+<p><strong>Proof.</strong> $L_a^*L_a=L_{\hat a}L_a=L_{\hat aa}$, and $L_c=\operatorname{id}$ only for $c=1$, so orthogonality is $\hat aa=1$; the condition makes $a$ invertible with $a^{-1}=\hat a$, the set is closed under inversion because $\hat{\hat a}a=1$, and closed under products because $\widehat{ab}ab=\hat b\hat aab$, which is $1$ when $\hat aa=\hat bb=1$ and $\hat b$ commutes with $a$ in the scalar case $1$.</p>
+<p><strong>Remark (the norm).</strong> The quantity $\langle ax,ax\rangle$ is the quadratic form of the algebra transported by left multiplication; the orthogonality condition $\hat aa=1$ is the statement that the conjugation is the inverse, and for a unit vector $u$ with $u^2=q(u)$ it reads $(-u)u=-q(u)=1$, which holds for the negative-definite normalisation $q(u)=-1$. The passage between the two normalisations changes which vectors are orthogonal but not the structure of the statements.</p>
+<h2 id="the-twisted-adjoint">The Twisted Adjoint</h2>
+<p><strong>Proposition.</strong> For the twisted form the adjoint of $L_a$ is the <strong>signed</strong> left multiplication</p>
+<p>$$
+(L_a)^{*\alpha} = L_{\hat a}\,\alpha ,
+$$</p>
+<p>as <em>The Twisted Adjoint on a Clifford Algebra</em> records; the operator is one-sided signed and differs from the standard adjoint by the grade involution. Consequently a left multiplication is self-adjoint for the twisted form exactly when $L_{\hat a}\alpha=L_a$, that is when $a\alpha(x)=\alpha(x)a$ for all $x$, which holds only for the central scalars in the central-simple case.</p>
+<p><strong>Proof.</strong> The formula is the corollary of the twisted-adjoint identity $A^{*\alpha}=\alpha A^*\alpha$ and the commutation $L_u\alpha=\alpha L_{\alpha(u)}$; the self-adjointness computation reduces to $\hat a=a$ together with $\alpha$ centralising $L_a$, and in a central-simple algebra only central elements $\alpha$-commute with every left multiplication.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $\mathrm{Cl}\cong\mathbb H$ with $e_1^2=e_2^2=-1$, the conjugation is the quaternionic conjugate, and $L_{e_1}^*=L_{-e_1}=-L_{e_1}$: the left multiplication by a pure quaternion unit is skew-adjoint. The orthogonal left multiplications are $L_a$ with $\hat aa=|a|^2=1$, the unit sphere, the group of unit quaternions.</p>
+<h3 id="a-unit-vector">A Unit Vector</h3>
+<p>For any vector $u$ with $q(u)\ne0$, $L_u^*=L_{-u}=-L_u$, so the multiplication by a vector is always skew-adjoint, independent of the signature; the same computation is the manifold relation $c(v)^*=-c(v)$ of <em>The Adjoint of the Clifford Multiplication</em>.</p>
+<h3 id="an-even-element">An Even Element</h3>
+<p>For $a=e_1e_2$ in the negative-definite plane, $\hat a=(-e_2)(-e_1)=e_2e_1=-e_1e_2=-a$, and $L_a^*=L_{-a}=-L_a$: an even element can be skew-adjoint too. The parity of $a$ does not decide self-adjointness; the involution $\hat{}$ does.</p>
+<h2 id="summary">Summary</h2>
+<p>For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoint of the left multiplication is the left multiplication by the <strong>Clifford conjugate</strong>, $L_a^*=L_{\hat a}$ with $\hat a=\alpha(\tilde a)$ an anti-automorphism and an involution acting on a vector by $\hat u=-u$. Hence $L_a$ is <strong>self-adjoint</strong> exactly when $\hat a=a$ and <strong>orthogonal</strong> exactly when $\hat aa=1$, the latter defining the group of orthogonal left multiplications inside the units; the multiplication by a vector is always <strong>skew-adjoint</strong>, $L_u^*=-L_u$. For the twisted form the adjoint is the <strong>signed</strong> left multiplication $(L_a)^{*\alpha}=L_{\hat a}\alpha$, and a left multiplication is self-adjoint for the twisted form only for central scalars in the central-simple case. The operator is <em>The Left and Right Multiplication Operators on a Clifford Algebra</em>, the form is <em>The Twisted Adjoint on a Clifford Algebra</em>, the mirror article is <em>The Adjoint of the Right Multiplication</em>, and the manifold case is <em>The Adjoint of the Clifford Multiplication</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x)=ax$</td>
+<td>Left multiplication</td>
+</tr>
+<tr>
+<td>$\hat a=\alpha(\tilde a)$</td>
+<td>Clifford conjugation; anti-automorphism, involution</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle=\operatorname{Sc}(\hat xy)$</td>
+<td>Standard form</td>
+</tr>
+<tr>
+<td>$L_a^*=L_{\hat a}$</td>
+<td>Adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$\hat u=-u$</td>
+<td>Conjugation on a vector; $L_u^*=-L_u$</td>
+</tr>
+<tr>
+<td>$\hat a=a$</td>
+<td>Self-adjointness condition</td>
+</tr>
+<tr>
+<td>$\hat aa=1$</td>
+<td>Orthogonality condition; group of orthogonal left multiplications</td>
+</tr>
+<tr>
+<td>$(L_a)^{*\alpha}=L_{\hat a}\alpha$</td>
+<td>Twisted adjoint; signed left multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the
+  conjugation, the standard form and the adjoints of the left multiplications.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced
+  Mathematics 50 (Cambridge University Press, 1995), for the unitary group of an algebra with involution
+  and the orthogonal left multiplications.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for
+  the skew-adjointness of the Clifford multiplication, the manifold form of $L_u^*=-L_u$.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2
+  (Springer, 1997), for the conjugation, the norm and the group of units preserving it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

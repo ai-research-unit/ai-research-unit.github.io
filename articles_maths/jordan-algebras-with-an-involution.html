@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordan Algebras with an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="jordan-algebras-with-an-involution"><strong>Jordan Algebras with an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of an algebra is an anti-automorphism of order two; on the commutative symmetrised product of an associative algebra the distinction between an automorphism and an anti-automorphism disappears, and a <strong>Jordan algebra with an involution</strong> carries a semilinear map $\sigma$ of order two that <strong>preserves</strong> the Jordan product,</p>
+<p>$$
+\sigma(a\circ b) = \sigma(a)\circ\sigma(b) , \qquad \sigma^2 = \mathrm{id} , \qquad \sigma(\lambda a + \mu b) = \varsigma(\lambda)\sigma(a)+\varsigma(\mu)\sigma(b) ,
+$$</p>
+<p>with $\varsigma$ an involution of the field of scalars. The map $\sigma$ is a <strong>conjugate-linear involution of the Jordan algebra</strong>; because the Jordan product is commutative, it is at the same time an anti-automorphism and an automorphism of the product, so the algebra-theoretic distinction of <em>Involutive Linear Algebras</em>, where an involution reverses the product and an involutive automorphism preserves it, is void here: the two classes of order-two maps on a Jordan algebra coincide. What matters instead is whether the map is <strong>linear</strong> ($\varsigma = \mathrm{id}$) or <strong>conjugate-linear</strong> ($\varsigma \ne \mathrm{id}$), and this is the invariant the article develops.</p>
+<p>The article defines the conjugate-linear involution of a Jordan algebra, introduces its <strong>self-adjoint part</strong> $H(J)$ and its skew part, and proves the decomposition $J = H(J)\oplus i\,H(J)$ in the conjugate-linear case over a field extension of degree two. It shows that the self-adjoint part is a Jordan subalgebra and that it is the fixed set of an involutive automorphism exactly in the linear case, so the conjugate-linear involution is the structure that genuinely adds a new object, the real Jordan algebra of self-adjoint elements. It states the <strong>formal reality</strong> of the involution as the condition that no nontrivial sum of squares of self-adjoint elements vanishes, and defers the theory of that condition to <em>Formally Real Algebras and the Sum of Squares</em>, later in this group. Finally it gives the <strong>realisation</strong>: for an associative algebra $A$ with involution $\ast$, the special Jordan algebra $J = A^+$ carries the involution $\sigma(a) = a^*$, under which $H(J)$ is the set $H(A)$ of the $\ast$-self-adjoint elements of $A$, themselves closed under the symmetrised product; so every special Jordan algebra with involution is the symmetrisation of an associative $\ast$-algebra, and the classification of the involutions of $J$ reduces to that of the involutions of $A$.</p>
+<p>The article assumes <em>Involutive Linear Algebras</em> for the involution of an associative algebra, the symmetric and skew elements and the symmetrised product (cited, not reproved), <em>Jordan Algebras</em> for the Jordan object and its powers, <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the quadratic representation and the structure group, <em>Algebras</em> and <em>Unital Algebras</em> for the objects, and <em>Tensor Products of Algebras</em> for the scalar extension $B\otimes_F K$. The real form of a complex Jordan algebra and the descent are <em>Real Forms and the Descent of an Algebra</em>; the symmetric powers, the symmetric algebra and the Jordan triples with an involution are the other entries of this group. Throughout, $F$ is a field, $K/F$ is a quadratic extension with nontrivial automorphism $\varsigma$ when a conjugate-linear involution is at hand, $J$ is a unital Jordan $F$-algebra, and $\sigma$ is a $\varsigma$-semilinear involution of $J$ preserving the product. No form, norm, distance or order occurs; the sum of squares is treated as an algebraic condition and its order-theoretic reading is Part III.</p>
+<h2 id="jordan-algebras-with-a-conjugate-linear-involution">Jordan Algebras with a Conjugate-Linear Involution</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $F$ be a field and let $\varsigma$ be an involution of $F$. A <strong>$\varsigma$-semilinear involution</strong> of a Jordan $F$-algebra $J$ is a map $\sigma : J \to J$ with</p>
+<p>$$
+\sigma(a+b) = \sigma(a)+\sigma(b), \quad \sigma(\lambda a) = \varsigma(\lambda)\,\sigma(a), \quad \sigma(a\circ b) = \sigma(a)\circ\sigma(b), \quad \sigma^2 = \mathrm{id}.
+$$</p>
+<p>It is <strong>linear</strong> when $\varsigma = \mathrm{id}$ and <strong>conjugate-linear</strong> when $\varsigma \ne \mathrm{id}$; a <strong>Jordan algebra with involution</strong> is a pair $(J,\sigma)$.</p>
+<p><strong>Remark.</strong> The Jordan product is commutative, so the equation $\sigma(a\circ b) = \sigma(a)\circ\sigma(b)$ is the same as $\sigma(a\circ b) = \sigma(b)\circ\sigma(a)$; a map of order two on a Jordan algebra that reverses the product therefore preserves it, and the two notions of <em>Involutive Linear Algebras</em> — the involution and the involutive automorphism — coincide as far as the product is concerned. The linear case is exactly an involutive automorphism of $J$; the conjugate-linear case is a new object.</p>
+<p><strong>Proposition.</strong> The map $\sigma$ is bijective, its restriction to the copy $F\cdot 1$ of the scalars is $\varsigma$, it preserves the powers, $\sigma(a^n) = \sigma(a)^n$ for every $n \ge 0$, and it commutes with the quadratic representation, $\sigma\circ U_{a,b} = U_{\sigma(a),\sigma(b)}\circ\sigma$, so that $\sigma\,U_a\,\sigma^{-1} = U_{\sigma(a)}$.</p>
+<p><em>Proof.</em> Bijectivity is $\sigma^2 = \mathrm{id}$. The restriction is $\sigma(\lambda\cdot1) = \varsigma(\lambda)\cdot1$. Powers are preserved by multiplicativity and additivity. For the quadratic representation, $\sigma(a\circ(b\circ x)) = \sigma(a)\circ(\sigma(b)\circ\sigma(x))$ and the defining formula $U_{a,b} = L_aL_b+L_bL_a-L_{a\circ b}$ is carried to its analogue at $\sigma(a),\sigma(b)$. $\square$</p>
+<p><strong>Corollary.</strong> The map $\sigma$ is an automorphism of the Jordan algebra $J$ in the $\varsigma$-semilinear sense; in the linear case it is an involutive automorphism and the fixed set is a Jordan subalgebra, by <em>Involutive Linear Algebras</em>; in the conjugate-linear case the fixed set is only a linear space over the fixed field and needs the decomposition below.</p>
+<h2 id="the-self-adjoint-part">The Self-Adjoint Part</h2>
+<h3 id="the-fixed-and-the-skew-elements">The Fixed and the Skew Elements</h3>
+<p><strong>Definition.</strong> The <strong>self-adjoint part</strong> of $(J,\sigma)$ is the fixed set</p>
+<p>$$
+H(J) = \{x \in J : \sigma(x) = x\},
+$$</p>
+<p>its elements are the <strong>self-adjoint</strong> (or <strong>Hermitian</strong>) elements, and an element with $\sigma(x) = -x$ is <strong>skew</strong>. The skew elements are written $S(J)$.</p>
+<p><strong>Proposition.</strong> If $\sigma$ is linear, $H(J)$ and $S(J)$ are $F$-subspaces of $J$ and $J = H(J)\oplus S(J)$ when $2 \neq 0$. If $\sigma$ is $\varsigma$-semilinear and nontrivial, $H(J)$ and $S(J)$ are linear spaces over the fixed field $F^\varsigma$, and $J = H(J)\oplus S(J)$ as $F^\varsigma$-linear spaces still; $H(J)$ is not an $F$-subspace, and $\lambda H(J)\subseteq H(J)$ only for $\lambda \in F^\varsigma$.</p>
+<p><em>Proof.</em> The additive decomposition $x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x))$ is additive and $F^\varsigma$-linear; it is $F$-linear when $\varsigma = \mathrm{id}$. The scalar behaviour follows from $\sigma(\lambda x) = \varsigma(\lambda)\sigma(x)$. $\square$</p>
+<h3 id="the-decomposition-by-a-quadratic-extension">The Decomposition by a Quadratic Extension</h3>
+<p><strong>Theorem.</strong> Let $K/F$ be a quadratic extension with nontrivial automorphism $\varsigma$, and let $(J,\sigma)$ be a $K$-Jordan algebra with a $\varsigma$-semilinear involution. Then</p>
+<p>$$
+J = H(J) \oplus i\,H(J) ,
+$$</p>
+<p>where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is direct and is a decomposition of $J$ into two copies of the $F$-Jordan algebra $H(J)$.</p>
+<p><em>Proof.</em> For $x \in J$ put $h_1 = \tfrac12(x+\sigma(x))$ and $h_2 = \tfrac{1}{2i}(x-\sigma(x))$. Then $\sigma(h_1) = \tfrac12(\sigma(x)+x) = h_1$ and $\sigma(h_2) = \tfrac{1}{2\varsigma(i)}(\sigma(x)-x) = \tfrac{-1}{-2i}(\sigma(x)-x) = \tfrac{1}{2i}(x-\sigma(x)) = h_2$, so both lie in $H(J)$, and $x = h_1+ih_2$. If $h_1 + ih_2 = 0$ with $h_i \in H(J)$, applying $\sigma$ gives $h_1 - ih_2 = 0$, whence $2h_1 = 0$ and $2ih_2 = 0$, so $h_1 = h_2 = 0$ when $2 \neq 0$. $\square$</p>
+<p><strong>Corollary.</strong> In the conjugate-linear case the fixed set is a <strong>real form</strong> of $J$ in the sense of the extension of scalars: $J \cong H(J)\otimes_F K$, and $\sigma$ is the map $\mathrm{id}\otimes\varsigma$. The passage from a complex Jordan algebra with conjugate-linear involution to its self-adjoint part is the <strong>descent</strong>, and it is the subject of <em>Real Forms and the Descent of an Algebra</em>.</p>
+<h3 id="the-self-adjoint-part-is-a-jordan-subalgebra">The Self-Adjoint Part is a Jordan Subalgebra</h3>
+<p><strong>Theorem.</strong> $H(J)$ is closed under the Jordan product, so it is a Jordan subalgebra of $J$ over the fixed field.</p>
+<p><em>Proof.</em> If $\sigma(x) = x$ and $\sigma(y) = y$ then $\sigma(x\circ y) = \sigma(x)\circ\sigma(y) = x\circ y$. $\square$</p>
+<p><strong>Corollary.</strong> The self-adjoint part is the Jordan algebra of the fixed points, and in the linear case it is exactly the fixed subalgebra of the involutive automorphism $\sigma$. The quadratic representation of $H(J)$ is the restriction of that of $J$, because $U_{x,y}$ for self-adjoint $x,y$ is self-adjoint as an operator: $U_{x,y}$ commutes with $\sigma$ by the proposition above.</p>
+<h2 id="formal-reality-of-the-involution">Formal Reality of the Involution</h2>
+<p><strong>Definition.</strong> The involution $\sigma$ is <strong>formally real</strong> when a finite sum of squares of self-adjoint elements vanishes only trivially:</p>
+<p>$$
+\sum_{i=1}^n h_i\circ h_i = 0, \qquad h_i \in H(J) \ \Longrightarrow \ h_1 = \cdots = h_n = 0 .
+$$</p>
+<p><strong>Theorem.</strong> A linear involution $\sigma$ of a formally real Jordan algebra $J$ is formally real, and the condition is equivalent to the statement that $-1$ is not a sum of squares in $H(J)$.</p>
+<p><em>Proof.</em> If $J$ is formally real as a Jordan algebra, a sum of squares $\sum h_i^2 = 0$ with $h_i \in J$ forces each $h_i = 0$, hence in particular for $h_i \in H(J)$; conversely the displayed condition applied with $h_i$ self-adjoint and $-1 = \sum h_i^2$ gives the second form, since then $\sum h_i^2 + 1 = 0$ is a nontrivial sum of squares. $\square$</p>
+<p><strong>Remark.</strong> Formal reality is a condition on the Jordan algebra of self-adjoint elements, and the order it carries, the existence of the square roots and the Sylvester law are the subject of <em>Formally Real Algebras and the Sum of Squares</em>, later in this group; the article records only the condition and its equivalence with the non-vanishing of the sum of squares.</p>
+<h2 id="the-realisation-as-a-symmetrisation">The Realisation as a Symmetrisation</h2>
+<h3 id="an-associative-algebra-with-involution">An Associative Algebra with Involution</h3>
+<p>Let $A$ be an associative unital $F$-algebra with an involution $\ast$ in the sense of <em>Involutive Linear Algebras</em>, with self-adjoint part $H(A,\ast) = \{a : a^* = a\}$. The special Jordan algebra $J = A^+$ has the halved product $x\circ y = \tfrac12(xy+yx)$ of <em>Jordan Algebras</em>.</p>
+<p><strong>Theorem.</strong> The map $\sigma = \ast$ restricted to $J = A^+$ is a linear involution of the Jordan algebra $J$, and</p>
+<p>$$
+H(J) = H(A,\ast) ,
+$$</p>
+<p>the self-adjoint part of $J$ being exactly the set of the $\ast$-self-adjoint elements of $A$; the self-adjoint part is a Jordan subalgebra of $A^+$.</p>
+<p><em>Proof.</em> $\ast$ is an anti-automorphism of $A$ with $\ast^2 = \mathrm{id}$, so $\sigma(x\circ y) = \tfrac12((xy+yx))^* = \tfrac12(y^*x^*+x^*y^*) = \tfrac12(x^*y^*+y^*x^*) = \sigma(x)\circ\sigma(y)$ by the commutativity of the symmetrised product; and $\sigma^2 = \mathrm{id}$. The fixed set is the $\ast$-self-adjoint part by definition, and it is closed under $\circ$ by the theorem of the previous section. $\square$</p>
+<p><strong>Theorem (realisation).</strong> Every special Jordan algebra with involution $J\subseteq A^+$ for an associative algebra $A$ arises from an involution of $A$ when $A$ is generated by $J$ and $J$ is the self-adjoint part of a $\ast$-algebra: the involution $\ast$ of $A$ restricting to $\sigma$ on $J$ is an <strong>associative envelope</strong> of the involution, and it is unique when $A$ is the universal envelope of $J$.</p>
+<p><em>Proof.</em> The involution $\sigma$ of $J$ extends to the associative algebra generated by $J$ by the universal property of the free algebra and the anti-multiplicativity of $\ast$ on the generators; the extension is an involution because it preserves the relations $\sigma^2 = \mathrm{id}$ and the multiplication on the generators. $\square$</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (the matrix algebra).</strong> For $A = M_n(\mathbb{C})$ with the conjugate transpose $\ast$, the special Jordan algebra $J = A^+$ is the Jordan algebra of the complex matrices under $x\circ y = \tfrac12(xy+yx)$, and $H(J) = H_n(\mathbb{C})$ is the real Jordan algebra of the Hermitian matrices, closed under the symmetrised product. The conjugate-linear involution is the conjugate transpose, whose fixed set is the Hermitian part, and the decomposition $M_n(\mathbb{C}) = H_n(\mathbb{C})\oplus iH_n(\mathbb{C})$ is the decomposition of a matrix into its Hermitian and skew-Hermitian parts.</p>
+<p><strong>Example (the spin factor).</strong> Let $J = F\oplus V$ be the spin factor of <em>Jordan Algebras</em> with the product $(\alpha,v)\circ(\beta,w) = (\alpha\beta+B(v,w),\alpha w+\beta v)$, and let $\varsigma$ be an involution of $F$ with a compatible $\varsigma$-semilinear map on $V$ preserving $B$ in the sense $B(\sigma v,\sigma w) = \varsigma(B(v,w))$. Then $(\alpha,v)\mapsto(\varsigma(\alpha),\sigma(v))$ is a $\varsigma$-semilinear involution of $J$, and its self-adjoint part is the spin factor of the fixed field with the fixed part of $V$.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>Jordan algebra with an involution</strong> is a Jordan $F$-algebra $J$ with a $\varsigma$-semilinear map $\sigma$ of order two preserving the Jordan product; since the product is commutative, the involution and the involutive automorphism coincide as product-relevant maps, and the only distinction is linear versus conjugate-linear. The <strong>self-adjoint part</strong> $H(J)$ is a Jordan subalgebra over the fixed field, the skew elements are $S(J)$, and $J = H(J)\oplus S(J)$ always, with $J = H(J)\oplus iH(J)$ over a quadratic extension $K/F$. The involution is <strong>formally real</strong> when no nontrivial sum of squares of self-adjoint elements vanishes, equivalently when $-1$ is not a sum of squares in $H(J)$; the order theory of this condition is <em>Formally Real Algebras and the Sum of Squares</em>. Every <strong>associative $\ast$-algebra</strong> $A$ gives a special Jordan algebra with involution, $J = A^+$ with $\sigma = \ast$, and $H(J) = H(A,\ast)$; conversely a special Jordan algebra with involution is realised by an associative envelope, which is unique for the universal envelope. The matrix algebra with the conjugate transpose and the Hermitian matrices are the standard example, and the complex case is the decomposition into Hermitian and skew-Hermitian parts. No form, norm, distance or order occurs in this article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>Field of scalars</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>Involution of $F$; $\varsigma=\mathrm{id}$ in the linear case</td>
+</tr>
+<tr>
+<td>$K/F$</td>
+<td>Quadratic extension, $K = F\oplus Fi$, $\varsigma(i) = -i$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>Unital Jordan $F$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>$\varsigma$-semilinear involution preserving $\circ$</td>
+</tr>
+<tr>
+<td>$H(J)$</td>
+<td>Self-adjoint (Hermitian) part, the fixed set</td>
+</tr>
+<tr>
+<td>$S(J)$</td>
+<td>Skew elements, $\sigma(x) = -x$</td>
+</tr>
+<tr>
+<td>$J = H(J)\oplus S(J)$</td>
+<td>Additive decomposition</td>
+</tr>
+<tr>
+<td>$J = H(J)\oplus iH(J)$</td>
+<td>Decomposition over a quadratic extension</td>
+</tr>
+<tr>
+<td>$\sigma(a\circ b) = \sigma(a)\circ\sigma(b)$</td>
+<td>Preservation of the Jordan product</td>
+</tr>
+<tr>
+<td>$F^\varsigma$</td>
+<td>Fixed field of the involution of the scalars</td>
+</tr>
+<tr>
+<td>$\sum h_i^2 = 0 \Rightarrow h_i = 0$</td>
+<td>Formal reality of the involution</td>
+</tr>
+<tr>
+<td>$A, \ast$</td>
+<td>Associative algebra with involution</td>
+</tr>
+<tr>
+<td>$J = A^+$, $\sigma = \ast$, $H(J) = H(A,\ast)$</td>
+<td>Realisation as a symmetrisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for Jordan algebras with involution, the self-adjoint part and formal reality.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the symmetrisation of an associative $\ast$-algebra and the Hermitian part.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for involutions of an algebra, the two kinds and the descent by a quadratic extension.</li>
+<li>Ottmar Loos, <em>Symmetric Spaces I: General Theory</em> (Benjamin, 1969), for the self-adjoint part, the quadratic representation and the structure group of a Jordan algebra with involution.</li>
+<li>Hel Braun and Max Koecher, <em>The Jordan Algebra Approach to Bounded Symmetric Domains</em> (Springer, 1966), for the formally real Jordan algebras, the self-adjoint part and the order it carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transfer Map — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transfer-map"><strong>The Transfer Map</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A covering $p : E \to B$ is a map in the direction $E \to B$, and the functoriality of homology of <em>Simplicial and Singular Homology</em> carries it to a homomorphism $p_* : H_n(E;R) \to H_n(B;R)$ in the same direction. The <strong>transfer</strong> is a homomorphism in the opposite direction,</p>
+<p>$$
+\tau_* : H_n(B;R) \longrightarrow H_n(E;R),
+$$</p>
+<p>built by summing a singular simplex of the base over all its lifts. It is the archetype of an operator that is <em>not</em> induced by a continuous map of spaces — there is generally no continuous section $B \to E$ — and this is what makes it useful: it records the multiplicity of the covering at the level of chains, it turns the homology of a free quotient into the fixed part of the homology of the cover, and it is the map through which the Euler class and the Gysin sequence of a two-fold covering are later written.</p>
+<p>The article does two things, matching the two clauses of its scope. It constructs the transfer on chains and on homology, and it studies its two composition laws: with the boundary operator, which commutes with it and gives a map of the long exact sequences of a pair, and with the projection, where the composites are $p_* \tau_* = d$ and $\tau_* p_* = \sum_{g} g_*$. The first law says the transfer is a chain map; the second says it is a retraction of the projection up to the degree $d$ and identifies the homology of the base with the fixed part of the homology of the cover whenever $d$ is invertible in the coefficient ring.</p>
+<p>The covering theory used here — evenly covered sets, path and homotopy lifting, deck transformations, the correspondence between connected coverings and subgroups of the fundamental group — is that of <em>The Fundamental Group and Covering Spaces</em>, and the singular theory, its boundary operator and its functoriality are those of <em>Simplicial and Singular Homology</em>; neither is re-derived. The long exact sequence of a pair and the snake lemma are those of <em>Exact Sequences</em>; the general algebra of chain complexes over a ring, of which the singular complex is an instance, is the planned <em>Homological Algebra</em> of Part I, written in parallel, and is cited only for what it supplies.</p>
+<p>Throughout, $p : E \to B$ is a covering, $B$ is path-connected, locally path-connected and semilocally simply connected, $E$ is path-connected, and the covering is <strong>regular</strong>: its deck group $G = \operatorname{Deck}(E/B)$ acts transitively on each fibre, so that $B = E/G$ and the fibre over each point is a free $G$-orbit. The group $G$ is finite of order $d$, the covering has $d$ sheets, and $R$ is a commutative ring with identity $1 \neq 0$ in which the degree makes sense; the interesting case is $d$ invertible in $R$, in particular $R$ a field of characteristic not dividing $d$. Coefficients are written after a semicolon and are suppressed when no confusion arises. The article treats the regular finite case; the general finite covering is recorded as a remark in the section on the projection.</p>
+<h2 id="the-transfer-on-chains">The Transfer on Chains</h2>
+<h3 id="the-setting">The Setting</h3>
+<p><strong>Definition.</strong> A <strong>covering of pairs</strong> $p : (E, E_A) \to (B, A)$ consists of a covering $p : E \to B$ and a subspace $A \subseteq B$ with $E_A = p^{-1}(A)$; the deck group $G$ acts on $E$ preserving $E_A$, so that $A = E_A/G$ and the restriction $p : E_A \to A$ is a covering with the same deck group.</p>
+<p>The singular chain complex $C_*(E;R)$ is a complex of $R[G]$-modules: a deck transformation $g$ induces the chain map $g_\# : C_n(E;R) \to C_n(E;R)$ by $g_\#(\eta) = g \circ \eta$, and $p_\# g_\# = p_\#$. The deck action commutes with the boundary, $g_\# \partial = \partial g_\#$, because $g$ is a homeomorphism.</p>
+<p><strong>Definition.</strong> Let $F$ be the fixed part of a complex of $R[G]$-modules $M$,</p>
+<p>$$
+M^{G} = \{m \in M : g\,m = m \text{ for all } g \in G\},
+$$</p>
+<p>the <strong>invariant subcomplex</strong>; the <strong>coinvariant complex</strong> is the quotient $M_G = M / \langle gm - m\rangle_{g \in G, m \in M}$.</p>
+<p>The singular complex of the base is the coinvariant complex of the cover. The reason is that a singular simplex of $B$ need not lift to a $G$-invariant simplex — it lifts to $d$ of them, one in each sheet — but the average does, and the assignment that sends a simplex to the sum of its lifts passes to the quotient.</p>
+<h3 id="the-transfer-of-a-simplex">The Transfer of a Simplex</h3>
+<p><strong>Definition.</strong> Let $\sigma : \Delta_n \to B$ be a singular $n$-simplex and let $\tilde\sigma : \Delta_n \to E$ be a lift of $\sigma$. The <strong>transfer</strong> of $\sigma$ is the chain</p>
+<p>$$
+\tau_n(\sigma) = \sum_{g \in G} g_\#(\tilde\sigma) = \sum_{g \in G} g \circ \tilde\sigma \;\in\; C_n(E;R),
+$$</p>
+<p>and $\tau_n : C_n(B;R) \to C_n(E;R)$ is its $R$-linear extension.</p>
+<p>A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\tilde\sigma$ and, by the homotopy lifting property of <em>The Fundamental Group and Covering Spaces</em>, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.</p>
+<p><strong>Lemma.</strong> $\tau_n$ is well defined: it does not depend on the choice of the lift $\tilde\sigma$.</p>
+<p><em>Proof.</em> Let $\tilde\sigma'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with $\tilde\sigma' = h \circ \tilde\sigma$. Then</p>
+<p>$$
+\sum_{g \in G} g \circ \tilde\sigma' = \sum_{g \in G} g \circ h \circ \tilde\sigma = \sum_{g \in G} g \circ \tilde\sigma,
+$$</p>
+<p>the last equality because $g \mapsto gh$ is a bijection of $G$. $\square$</p>
+<p>Note that no global section of $p$ and no choice of a basepoint of $E$ is involved: each simplex is handled separately, and the ambiguity is absorbed by the summation over the finite group.</p>
+<p><strong>Proposition.</strong> The transfer is natural for maps of the cover: a deck transformation $h \in G$ satisfies $h_\# \tau_n = \tau_n$, and the projection satisfies</p>
+<p>$$
+p_\#\, \tau_n = d \cdot \mathrm{id}_{C_n(B;R)}, \qquad\qquad
+\tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R).
+$$</p>
+<p><em>Proof.</em> For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \tilde\sigma = \sum_g (hg)_\# \tilde\sigma = \sum_g g_\# \tilde\sigma$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \tilde\sigma = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \tilde\sigma = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity. $\square$</p>
+<p>The second identity is the <strong>multiplicity</strong> of the covering: the composite $p_\# \tau_n$ is multiplication by the number of sheets. The third is the <strong>norm</strong> operator $N = \sum_{g} g_\#$, whose image lies in the invariant subcomplex and whose square is $dN$.</p>
+<h3 id="the-transfer-is-a-chain-map">The Transfer is a Chain Map</h3>
+<p><strong>Theorem.</strong> The transfer commutes with the boundary,</p>
+<p>$$
+\partial_n \tau_n = \tau_{n-1} \partial_n,
+$$</p>
+<p>so that $\tau_* = (\tau_n)$ is a chain map $C_*(B;R) \to C_*(E;R)$, and it induces the <strong>homology transfer</strong></p>
+<p>$$
+\tau_* : H_n(B;R) \longrightarrow H_n(E;R).
+$$</p>
+<p><em>Proof.</em> Let $\sigma : \Delta_n \to B$ and let $\tilde\sigma$ be a lift. The faces of $\tilde\sigma$ are the lifts of the corresponding faces of $\sigma$, and the deck action commutes with taking faces because $g \circ \sigma \circ \delta^i = (g \circ \sigma) \circ \delta^i$ with $\delta^i$ the face maps of <em>Simplicial and Singular Homology</em>. Hence</p>
+<p>$$
+\partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\tilde\sigma) = \sum_g g_\# \partial_n(\tilde\sigma) = \sum_g g_\#\Bigl(\sum_i (-1)^i \tilde\sigma \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
+$$</p>
+<p>so the two sides agree on the generators and therefore on all chains. A chain map carries cycles to cycles and boundaries to boundaries, whence the induced map on homology. $\square$</p>
+<p>The proof uses only that the deck action is by homeomorphisms and that lifts of faces are faces of lifts; no smoothness and no analytic structure is involved.</p>
+<p><strong>Corollary (reduced homology).</strong> The transfer descends to reduced homology, $\tau_* : \tilde H_n(B;R) \to \tilde H_n(E;R)$, and the identities of the previous proposition hold with $\tilde H$ in place of $H$.</p>
+<p><em>Proof.</em> The augmentation $\varepsilon : C_0 \to R$ of <em>Simplicial and Singular Homology</em> satisfies $\varepsilon p_\# = \varepsilon$ on $C_0(E;R)$, so $\tau$ carries the augmented complex of the base to the augmented complex of the cover; the induced map is the reduced transfer. $\square$</p>
+<h2 id="the-transfer-on-homology">The Transfer on Homology</h2>
+<h3 id="the-fixed-part-and-the-multiplicity">The Fixed Part and the Multiplicity</h3>
+<p><strong>Theorem.</strong> On homology the two composites are</p>
+<p>$$
+p_*\, \tau_* = d \cdot \mathrm{id}, \qquad\qquad \tau_*\, p_* = N_* := \sum_{g \in G} g_* .
+$$</p>
+<p>Consequently the image of $\tau_*$ is contained in the fixed part $H_n(E;R)^G = \{x : g_* x = x \ \forall g\}$.</p>
+<p><em>Proof.</em> The first two identities are the homology of the chain-level identities of the previous section, a chain map inducing the induced map. For the third, if $x = \tau_* y$ then $g_* x = g_* \tau_* y = \tau_* y = x$ by $g_\# \tau = \tau$; hence the image is fixed. $\square$</p>
+<p>The composite $\tau_* p_*$ need not be the identity; it is the norm $N_*$, which is multiplication by $d$ on the fixed part and zero on the part where $G$ acts through a non-trivial module in characteristic not dividing $d$.</p>
+<h3 id="the-isomorphism-with-the-fixed-part">The Isomorphism with the Fixed Part</h3>
+<p><strong>Theorem.</strong> Suppose $d = |G|$ is invertible in $R$. Then the restriction</p>
+<p>$$
+p_* : H_n(E;R)^G \longrightarrow H_n(B;R)
+$$</p>
+<p>is an isomorphism, with inverse $d^{-1}\tau_*$. In particular the transfer is injective and</p>
+<p>$$
+H_n(B;R) \;\cong\; H_n(E;R)^G, \qquad\qquad H_n(E;R) \;\cong\; H_n(B;R) \oplus \ker p_* .
+$$</p>
+<p><em>Proof.</em> Both maps $p_*$ and $d^{-1}\tau_*$ carry the fixed part to the fixed part: $p_*$ commutes with the deck action because $p \circ g = p$, and $\tau_*$ lands in the fixed part by the theorem. On the fixed part, $p_* d^{-1}\tau_* = d^{-1} (d\,\mathrm{id}) = \mathrm{id}$ and $d^{-1}\tau_* p_* = d^{-1} N_* = d^{-1}(d\,\mathrm{id}) = \mathrm{id}$, the last because every element of the fixed part is fixed by each $g_*$, so $N_* = d\cdot\mathrm{id}$ there. Hence the two maps are inverse isomorphisms. The splitting is the standard splitting of a linear map with a section up to the invertible scalar $d$; on the fixed part the sequence $0 \to H_n(E;R)^G \to H_n(E;R) \to \ker p_* \to 0$ is split by $d^{-1}\tau_* p_*$. $\square$</p>
+<p>The theorem is the precise sense in which a finite covering does not lose the homology of the cover: rationally, the homology of the base is the invariant part, and the complementary part is the kernel of the projection. It also shows that the transfer contains all the information of the covering at the level of homology when the degree is invertible.</p>
+<p><strong>Remark (coefficients where $d$ is not invertible).</strong> Nothing in the construction requires $d$ invertible, and the identities $p_*\tau_* = d$ and $\tau_* p_* = N_*$ hold over every $R$. What fails is only the isomorphism: over $R$ where $d$ is zero or a zero divisor, the transfer need not be injective and $\ker p_*$ may meet the fixed part; the torsion this produces is what the transfer for integral coefficients sees, and it is the mechanism behind the Smith theory of the <code>*</code> articles of this category.</p>
+<h2 id="the-relation-to-the-boundary">The Relation to the Boundary</h2>
+<h3 id="naturality-with-respect-to-pairs">Naturality with Respect to Pairs</h3>
+<p><strong>Theorem.</strong> Let $p : (E, E_A) \to (B, A)$ be a covering of pairs. The transfer maps the relative chains to the relative chains, $\tau_n : C_n(B,A;R) \to C_n(E,E_A;R)$, commutes with the quotient boundary, and induces</p>
+<p>$$
+\tau_* : H_n(B,A;R) \longrightarrow H_n(E,E_A;R),
+$$</p>
+<p>with $p_* \tau_* = d$ and $\tau_* p_* = \sum_g g_*$ on relative homology.</p>
+<p><em>Proof.</em> A singular simplex of $A$ lifts to a simplex of $E_A$, so $\tau_n$ carries $C_n(A;R)$ into $C_n(E_A;R)$ and descends to the quotient of the relative complexes; the boundary of the quotient is induced by the boundary of the complexes, and $\partial \tau = \tau \partial$ descends. The two composites are computed as before. $\square$</p>
+<h3 id="the-map-of-long-exact-sequences">The Map of Long Exact Sequences</h3>
+<p><strong>Theorem.</strong> The transfer is compatible with the connecting homomorphism. Write the long exact sequences of <em>Simplicial and Singular Homology</em> for the pair $(B,A)$ and for the pair $(E,E_A)$ in the same degrees; the transfer acts on the four absolute and relative homology groups in each degree, and every square of the resulting ladder commutes. In particular the connecting homomorphisms satisfy</p>
+<p>$$
+\partial \,\tau_*^{\mathrm{rel}} = \tau_*^{A}\,\partial ,
+$$</p>
+<p>where $\tau_*^{A}$ is the transfer of the restricted covering on $A$ and $\tau_*^{\mathrm{rel}}$ is the relative transfer. The absolute and relative transfers are the one chain map $\tau$ restricted to the appropriate complex.</p>
+<p><em>Proof.</em> The chain-level squares commute because $\tau$ is a chain map of the complexes of the pairs and the inclusions of the two pairs are natural; the snake lemma of <em>Exact Sequences</em> is natural in a map of short exact sequences of complexes, so the induced connecting maps commute with the induced maps on homology. Concretely, a relative cycle in $H_n(B,A;R)$ is represented by a chain whose boundary lies in $A$; its transfer has boundary the transfer of that boundary, which lies in $E_A$, so the transfer of a relative cycle is a relative cycle, and the two ways of taking the connecting class agree. $\square$</p>
+<p><strong>Remark.</strong> This is the sense in which the transfer is compatible with the boundary: it commutes with the boundary operator $\partial$, so it is a chain map, and it therefore commutes with every map built formally from $\partial$, of which the connecting homomorphism of a pair is the first. The same statement for the connecting map of a short exact sequence of coefficient systems, and for the differential of the Leray–Serre spectral sequence of the covering as a fibration, follows by naturality. The transfer for the two-fold covering, where $d = 2$ and the connecting homomorphism is cup product with the Euler class, is the subject of the sibling article <em>The Gysin Sequence of a Two-Fold Covering</em>, written below in this Part.</p>
+<h2 id="the-composition-with-the-projection">The Composition with the Projection</h2>
+<h3 id="the-two-composites">The Two Composites</h3>
+<p>The two composite identities are the whole of the interaction of the transfer with the projection, and they are worth reading as an adjointness pair. On the one hand $p_* \tau_* = d \cdot \mathrm{id}$, so $\tau_*$ is a section of $p_*$ up to the scalar $d$; on the other hand $\tau_* p_* = N_*$, the norm, whose image is the fixed part. When $d$ is invertible the scalar is harmless and the two identities say</p>
+<p>$$
+p_* \circ (d^{-1}\tau_*) = \mathrm{id}, \qquad (d^{-1}\tau_*) \circ p_*|_{H_*(E)^G} = \mathrm{id},
+$$</p>
+<p>that is, $p_*$ restricted to the fixed part is an isomorphism with inverse the averaged transfer $d^{-1}\tau_*$.</p>
+<p><strong>Theorem (adjointness).</strong> Let $\langle-,-\rangle$ be the evaluation pairing between cohomology and homology of <em>Cohomology and the Universal Coefficient Theorem</em>, and let $\tau^* : H^n(E;R) \to H^n(B;R)$ be the dual of the transfer, the <strong>cohomology transfer</strong>. Then for $\varphi \in H^n(E;R)$ and $c \in H_n(B;R)$,</p>
+<p>$$
+\langle \tau^*\varphi,\, c\rangle_{B} = \langle \varphi,\, \tau_* c\rangle_{E},
+$$</p>
+<p>so that $\tau^*$ is the adjoint of $\tau_*$ with respect to the evaluation pairings. Consequently $p^* \tau^* = d$ and $\tau^* p^* = \sum_g g^*$, and when $d$ is invertible $H^n(B;R) \cong H^n(E;R)^G$.</p>
+<p><em>Proof.</em> The first identity is the definition of the dual map; the composite identities are the duals of those for $\tau_*$, since $(p_* \tau_*)^* = \tau^* p^*$ and $(\tau_* p_*)^* = p^* \tau^*$. The fixed-part isomorphism is the dual of the homology statement. $\square$</p>
+<p><strong>Remark (the general finite covering).</strong> For a covering that is not regular the deck group need not act transitively on the fibres, and the transfer cannot be written as a sum over a group; it is then defined by summing a simplex over the $d$ points of its fibre with local choices of lift, the sum being independent of the choices, and it satisfies $p_*\tau_* = d$ with $\tau_*$ landing in the part of $H_*(E;R)$ fixed by the finite-index subgroup $p_*\pi_1(E)$ of $\pi_1(B)$. The regular case above is the one used later in the corpus, and the general case is quoted.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the $n$-sheeted covering of the circle).</strong> Let $p : S^1 \to S^1$, $p(z) = z^n$, with deck group $\mathbb{Z}/n$ acting by the standard generator. Then $H_1(S^1;\mathbb{Z}) \cong \mathbb{Z}$, $p_*$ is multiplication by $n$, and the transfer $\tau_*$ is the identity, consistently with $p_*\tau_* = n$ and $\tau_* p_* = N_* = n$ (the norm of the group ring acts on $\mathbb{Z}$ by $n$). Rationally, $H_1(S^1;\mathbb{Q})^{\mathbb{Z}/n} \cong \mathbb{Q}$ and $p_*$ is an isomorphism, as the theorem requires.</p>
+<p><strong>Example (the double cover of the projective space).</strong> Let $p : S^n \to \mathbb{RP}^n$ for $n \geq 1$, the two-sheeted covering with deck group $\mathbb{Z}/2$ generated by the antipodal map $T$. Over $\mathbb{Z}$, the top homology is $H_n(\mathbb{RP}^n;\mathbb{Z}) \cong \mathbb{Z}$ for $n$ odd and $0$ for $n$ even, while $H_n(S^n;\mathbb{Z}) \cong \mathbb{Z}$; for $n$ odd, $p_*$ is multiplication by $2$ and $\tau_*$ is an isomorphism onto $H_n(S^n;\mathbb{Z})^{T}$, on which $T_* = \mathrm{id}$ because $T$ is the antipodal map of odd sphere degree $(-1)^{n+1} = 1$. For $n$ even the antipodal map has degree $-1$, the fixed part of $H_n(S^n;\mathbb{Z})$ is zero, and $p_* = 0$, in agreement with $H_n(\mathbb{RP}^n;\mathbb{Z}) = 0$. Over $\mathbb{F}_2$ the identities read $p_*\tau_* = 2 = 0$ and $\tau_* p_* = 1 + T_* = 0$, both sides being zero, so the transfer carries no information over $\mathbb{F}_2$; this vanishing is exactly the mechanism of the mod-2 Smith theory.</p>
+<p><strong>Example (the universal cover of a finite complex).</strong> Let $X$ be a finite connected CW complex with finite fundamental group $\Gamma$ and universal cover $\tilde X$, so that $p : \tilde X \to X$ is a regular covering with deck group $\Gamma$ and $d = |\Gamma|$. If $\Gamma$ is finite and the coefficient ring is $\mathbb{Q}$, then $H_n(X;\mathbb{Q}) \cong H_n(\tilde X;\mathbb{Q})^\Gamma$ and the rational homology of $X$ is the invariant part of that of its universal cover. For the lens space $L(n;1) = S^3/(\mathbb{Z}/n)$ this reads $H_*(L(n;1);\mathbb{Q}) = H_*(S^3;\mathbb{Q})^{\mathbb{Z}/n}$, which is $\mathbb{Q}$ in degrees $0$ and $3$ and zero between, the rational homology of the sphere, as the integral computation of <em>Cohomology and the Universal Coefficient Theorem</em> confirms up to the torsion that the rational passage erases.</p>
+<h2 id="summary">Summary</h2>
+<p>The transfer of a regular finite covering $p : E \to B$ with deck group $G$ of order $d$ is the chain map $\tau : C_*(B;R) \to C_*(E;R)$ sending a singular simplex to the sum of its $d$ lifts, the sum over the deck group making the choice of lift irrelevant. It commutes with the boundary, so it is a chain map and induces $\tau_* : H_n(B;R) \to H_n(E;R)$; it satisfies the two composite laws $p_*\tau_* = d$ and $\tau_* p_* = \sum_g g_*$, so its image lies in the fixed part $H_n(E;R)^G$ and, when $d$ is invertible in $R$, the projection restricts to an isomorphism $H_n(E;R)^G \cong H_n(B;R)$ with inverse the averaged transfer $d^{-1}\tau_*$. On a pair it is a map of the long exact sequences, commuting with the connecting homomorphism; in cohomology the dual $\tau^*$ is the adjoint of $\tau_*$ under the evaluation pairing and satisfies the same composite laws. The construction uses only the covering theory and the singular complex; it uses no distance, no norm and no analysis, and its failure to be induced by a continuous map is what makes it the model of an operator on a chain complex that is not a map of spaces.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p : E \to B$</td>
+<td>Regular covering, $B$ path-connected, locally path-connected, semilocally simply connected; $E$ path-connected</td>
+</tr>
+<tr>
+<td>$G = \operatorname{Deck}(E/B)$</td>
+<td>Deck group, acting freely with $E/G = B$</td>
+</tr>
+<tr>
+<td>$d = |G|$</td>
+<td>Number of sheets; the degree of the covering</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Commutative ring with identity $1 \neq 0$; coefficient ring</td>
+</tr>
+<tr>
+<td>$A, E_A$</td>
+<td>Subspace of $B$ and its preimage $p^{-1}(A)$; a covering of pairs</td>
+</tr>
+<tr>
+<td>$C_n(X;R)$, $\partial_n$</td>
+<td>Singular chains and boundary, as in <em>Simplicial and Singular Homology</em></td>
+</tr>
+<tr>
+<td>$g_\#$, $g_*$</td>
+<td>Chain map and homology map induced by a deck transformation $g$</td>
+</tr>
+<tr>
+<td>$\tau_n$, $\tau_*$</td>
+<td>Transfer on chains and on homology: $\tau_n(\sigma) = \sum_{g \in G} g_\# \tilde\sigma$</td>
+</tr>
+<tr>
+<td>$N = \sum_{g \in G} g_\#$</td>
+<td>Norm (symmetrisation) operator; $N^2 = dN$</td>
+</tr>
+<tr>
+<td>$M^G$, $M_G$</td>
+<td>Invariant and coinvariant parts of a complex of $R[G]$-modules</td>
+</tr>
+<tr>
+<td>$\tau^*$</td>
+<td>Cohomology transfer, the dual of $\tau_*$; adjoint under the evaluation pairing</td>
+</tr>
+<tr>
+<td>$p_*$, $p^*$</td>
+<td>Projection on homology; pullback on cohomology</td>
+</tr>
+<tr>
+<td>$\tilde H_n$</td>
+<td>Reduced homology; the transfer preserves the augmentation</td>
+</tr>
+<tr>
+<td>$p_*\tau_* = d$, $\tau_* p_* = \sum_g g_*$</td>
+<td>The two composite laws; the composition with the projection</td>
+</tr>
+<tr>
+<td>$\partial$</td>
+<td>Boundary operator and connecting homomorphism of a pair; $\partial\tau = \tau\partial$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the transfer of a covering and the fixed-point formula $H_*(B) \cong H_*(E)^G$ over a field of characteristic zero.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the transfer, the Euler class and the relation to Smith theory.</li>
+<li>Edwin H. Spanier, <em>Algebraic Topology</em> (McGraw–Hill, 1966), for the transfer in singular theory with arbitrary coefficients and its naturality.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the transfer as a chain map and its behaviour on the exact sequences of a pair.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for the invariant and coinvariant complexes, the norm operator and the averaging argument over a ring in which the group order is invertible.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

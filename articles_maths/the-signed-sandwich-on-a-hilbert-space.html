@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-hilbert-space"><strong>The Signed Sandwich on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A two-sided operator on a Hilbert space multiplies its argument on the left and on the right; the <strong>signed sandwich</strong> inserts, between the two multiplications, the grade involution of a $\mathbb{Z}/2$-grading. Concretely, the Hilbert space is split as $H=H^0\oplus H^1$, the parity operator $\Gamma$ is $+\mathrm{id}$ on $H^0$ and $-\mathrm{id}$ on $H^1$, the grade involution of $B(H)$ is $\alpha(T)=\Gamma T\Gamma$, and the signed sandwich by $A$ and $B$ is</p>
+<p>$$
+S_{A,B}(T)=A\,\alpha(T)\,B .
+$$</p>
+<p>Because $\Gamma$ is a self-adjoint unitary, $\alpha$ is an isometric $*$-automorphism of $B(H)$, and the signed sandwich has the same norm as its unsigned counterpart, $S_{A,B}$ is invertible exactly when both $A$ and $B$ are, and the composite of two signed sandwiches is unsigned. This article fixes these facts, the composition table, the exact sequence relating the signed and unsigned families, the singular elements, and the reflections that the signed sandwiches with $B=A^{-1}$ realise.</p>
+<p>The algebra $B(H)$ and its involution are <em>Bounded Operators on a Hilbert Space</em>; the unsigned sandwich and the multiplication operators are <em>The Left and Right Multiplication Operators on a Hilbert Space</em>; the algebraic signed sandwich and its coset structure are <em>The Signed Sandwich on a Banach Algebra</em> (Part II), of which this article is the Hilbert-space reading, and the signed left and right multiplications are <em>The Signed Left Multiplication on a Hilbert Space</em> below. The graded modules over the graded algebra $B(H)$ are <em>The Graded Action on a Module over a Hilbert Space</em>; the adjoints of the operators defined here are <em>The Signed Adjoint Sandwich on a Hilbert Space</em>.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a $\mathbb{Z}/2$-graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, the summands are orthogonal, $\Gamma=P^0-P^1$ is the parity operator, and $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)=\mathrm{End}(H)$; an element $T$ is <strong>even</strong> when $\alpha(T)=T$ and <strong>odd</strong> when $\alpha(T)=-T$, and every element is the sum of its even and odd parts. The unsigned sandwich is $T_{A,B}(T)=ATB$, the signed sandwich is $S_{A,B}(T)=A\,\alpha(T)\,B$, and composition is read from right to left.</p>
+<h2 id="the-signed-sandwich-and-its-norm">The Signed Sandwich and Its Norm</h2>
+<p><strong>Definition.</strong> The <strong>signed sandwich</strong> by $A,B\in B(H)$ is</p>
+<p>$$
+S_{A,B}:B(H)\longrightarrow B(H),\qquad S_{A,B}(T)=A\,\alpha(T)\,B,
+$$</p>
+<p>and the <strong>unsigned sandwich</strong> is $T_{A,B}(T)=ATB$.</p>
+<p><strong>Proposition (the grade involution).</strong> The map $\alpha(T)=\Gamma T\Gamma$ is an involutive $*$-automorphism of $B(H)$: it is linear, multiplicative, $\alpha^2=\mathrm{id}$, and $\alpha(T^*)=\alpha(T)^*$. It is an isometry, $\|\alpha(T)\|=\|T\|$, and it preserves the Hilbert–Schmidt norm and the identity, $\alpha(I)=I$.</p>
+<p><em>Proof.</em> Conjugation by an invertible element is an automorphism, and $\Gamma^2=I$ makes it involutive; $\Gamma=\Gamma^*$ gives $\alpha(T^*)=\Gamma T^*\Gamma=(\Gamma T\Gamma)^*=(\alpha(T))^*$; the isometry and the Hilbert–Schmidt statement are the invariance of the norms under the unitary $\Gamma$, and $\alpha(I)=\Gamma\Gamma=I$.</p>
+<p><strong>Proposition (boundedness and norm).</strong> $S_{A,B}$ is a bounded operator on $B(H)$ with</p>
+<p>$$
+\|S_{A,B}\|=\|A\|\,\|B\| ,
+$$</p>
+<p>the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\|S_{A,B}\|_{HS}=\|A\|\,\|B\|$.</p>
+<p><em>Proof.</em> $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\xi\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\|\cdot\|_{\mathrm{HS}}$ in place of $\|\cdot\|$.</p>
+<p><strong>Proposition (relation to the unsigned sandwich and the coset).</strong> Every signed sandwich is the unsigned sandwich composed with the involution,</p>
+<p>$$
+S_{A,B}=T_{A,B}\circ\alpha ,
+$$</p>
+<p>so the signed sandwiches form the coset $T(B(H),B(H))\,\alpha$ of the unsigned ones inside $B(B(H))$, and the signed sandwich is the unsigned sandwich with the argument twisted. In particular $S_{A,B}=T_{A,B}$ for all $A,B$ exactly when $\alpha=\mathrm{id}$, that is when $H^1=0$.</p>
+<p><em>Proof.</em> $T_{A,B}(\alpha(T))=A\alpha(T)B=S_{A,B}(T)$ is the definition; the identity of the two families on all arguments forces $\alpha=\mathrm{id}$, and $\alpha=\mathrm{id}$ means $\Gamma=I$ and $H^1=0$.</p>
+<h2 id="the-composition-table">The Composition Table</h2>
+<p><strong>Theorem (products of two-sided operators).</strong> For $A,B,C,D\in B(H)$,</p>
+<p>$$
+T_{A,B}\,T_{C,D}=T_{AC,\,DB},\qquad
+T_{A,B}\,S_{C,D}=S_{AC,\,DB},\qquad
+S_{A,B}\,T_{C,D}=S_{A\alpha(C),\,\alpha(D)B},\qquad
+S_{A,B}\,S_{C,D}=T_{A\alpha(C),\,\alpha(D)B}.
+$$</p>
+<p>So the product of an even number of signed sandwiches is unsigned, the product of an odd number is signed, and the sign rule is the involution acting on the inner factors.</p>
+<p><em>Proof.</em> Each identity is associativity and $\alpha^2=\mathrm{id}$: for the last, $S_{A,B}(S_{C,D}(X))=A\alpha(C\alpha(X)D)B=A\alpha(C)\alpha^2(X)\alpha(D)B=A\alpha(C)X\alpha(D)B$, and the three others are the same computation with the involution applied to any subset of the inner factors.</p>
+<p><strong>Corollary (the algebra generated by the two-sided operators).</strong> The set of all two-sided operators $\{T_{A,B}\}\cup\{S_{A,B}\}$ is the algebra generated by the unsigned and signed sandwiches; it contains the unsigned sandwiches as the subalgebra of index two formed by the elements of even signed length, and the quotient is $\mathbb{Z}/2$.</p>
+<p><em>Proof.</em> The product rules express every product as a two-sided operator, so the set is closed under multiplication and is an algebra; the parity of the number of signed factors is additive, by the same rules, and gives the stated quotient.</p>
+<p><strong>Proposition (the multiplication algebra comparison).</strong> When $\alpha=\mathrm{id}$ the table reduces to the multiplication algebra of <em>The Left and Right Multiplication Operators on a Hilbert Space</em>, and when $\alpha$ is nontrivial the signed sandwiches are the extra operators obtained by first twisting the argument.</p>
+<p><em>Proof.</em> At $\alpha=\mathrm{id}$ one has $S_{A,B}=T_{A,B}$ and the first line is the composition of the multiplication algebra; the second statement is the definition of $S_{A,B}$.</p>
+<h2 id="invertibility-and-the-singular-elements">Invertibility and the Singular Elements</h2>
+<p><strong>Theorem (invertibility).</strong> For $A,B\in B(H)$ the following are equivalent:</p>
+<p>(i) $S_{A,B}$ is invertible in $B(B(H))$;</p>
+<p>(ii) $T_{A,B}$ is invertible;</p>
+<p>(iii) $A$ and $B$ are invertible in $B(H)$.</p>
+<p>When these hold, $(S_{A,B})^{-1}=S_{A^{-1},B^{-1}}$ and $S_{A,B}S_{A^{-1},B^{-1}}=S_{A^{-1},B^{-1}}S_{A,B}=\mathrm{id}$.</p>
+<p><em>Proof.</em> Composition with the invertible $\alpha$ does not change invertibility, giving (i) $\iff$ (ii); for the sandwich of a Banach algebra, $T_{A,B}=L_AR_B$ is invertible exactly when $A$ and $B$ are, because $L_A$ is invertible exactly when $A$ is and $R_B$ exactly when $B$ is, and the two commute; the inverse formula is $S_{A,B}S_{A^{-1},B^{-1}}(T)=A\alpha(A^{-1})\alpha^2(T)\alpha(B^{-1})B=T$, using $\alpha^2=\mathrm{id}$.</p>
+<p><strong>Definition.</strong> The <strong>singular set</strong> of the signed sandwich is the set of pairs $(A,B)$ with $A$ or $B$ non-invertible; the <strong>critical elements</strong> are the $T$ for which $S_{A,B}$ or its adjoint annihilates $T$.</p>
+<p><strong>Proposition (the singular set is a union of two hypersurfaces).</strong> $S_{A,B}$ is non-invertible exactly when $A$ or $B$ lies in the complement of the invertible group, that is, exactly when $0\in\sigma(A)\cup\sigma(B)$; the non-invertible signed sandwiches are the union of the left-singular and right-singular families, and their intersection consists of the sandwiches with both factors singular.</p>
+<p><em>Proof.</em> The spectrum is the complement of the invertible set, and the theorem identifies the singular pairs with the complements of the two groups; the rest is set algebra.</p>
+<h2 id="the-reflections">The Reflections</h2>
+<p><strong>Definition.</strong> A <strong>signed sandwich with inverse right factor</strong> is $S_{U,U^{-1}}(T)=U\alpha(T)U^{-1}$; it is an automorphism of $B(H)$ whose square is the inner automorphism by $U\alpha(U)$, and it is a <strong>reflection</strong> exactly when $U\alpha(U)$ is central.</p>
+<p><strong>Proposition (the reflection criterion).</strong> $S_{U,U^{-1}}$ is an involutive automorphism of $B(H)$ if and only if $U\alpha(U)=\lambda I$ for a scalar $\lambda$; since $U\alpha(U)$ is unitary, $|\lambda|=1$, and the involutivity requires $\lambda=1$ unless $U\alpha(U)=-I$, in which case the square is the identity as well. Hence $S_{U,U^{-1}}$ is a reflection exactly when $U\alpha(U)=\pm I$.</p>
+<p><em>Proof.</em> The square is the conjugation $T\mapsto U\alpha(U)\,T\,(U\alpha(U))^{-1}$, which is the identity exactly when $U\alpha(U)$ is central; the centre of $B(H)$ is the scalars, and $\|U\alpha(U)\|=1$ so the scalar is unimodular; the square of the conjugation by $\lambda I$ is the identity for every scalar $\lambda$, and the signed sandwich has order two up to the sign carried by the involution, which is the statement $S_{U,U^{-1}}^2=\iota_{U\alpha(U)}$.</p>
+<p><strong>Remark.</strong> The reflections of the Hilbert space are studied in <em>Reflections as Signed Two-Sided Operators on a Hilbert Space</em> below, where the unitary slice and the failure of the reflection property in the degenerate case $\alpha=\mathrm{id}$ are treated; the adjoint theory of the reflection is <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>For $H=\mathbb{K}^{p+q}$ with $H^0=\mathbb{K}^p$, $H^1=\mathbb{K}^q$ and $\Gamma=\operatorname{diag}(I_p,-I_q)$, the algebra $B(H)$ is $M_{p+q}(\mathbb{K})$ and the grade involution acts on a block matrix by</p>
+<p>$$
+\alpha\begin{pmatrix}A&B\\C&D\end{pmatrix}=\begin{pmatrix}A&-B\\-C&D\end{pmatrix},
+$$</p>
+<p>so the signed sandwich by $U$ and $V$ keeps the diagonal blocks and reverses the sign of the off-diagonal blocks. This is the block action of the graded matrix algebra, and it is the finite-dimensional model of the general signed sandwich.</p>
+<h3 id="the-parity-operator">The Parity Operator</h3>
+<p>The parity operator $\Gamma$ is even, $\alpha(\Gamma)=\Gamma$, and the signed sandwich $S_{I,I}$ is the grade involution $\alpha$ itself. The even part $S_{I,I}=\alpha$ has eigenvalue $+1$ on the even operators and $-1$ on the odd operators, so the eigenvalues of the signed sandwich by the identity are the two signs of the grading, with eigenspaces the even and odd subspaces of $B(H)$.</p>
+<h3 id="a-non-invertible-signed-sandwich">A Non-Invertible Signed Sandwich</h3>
+<p>For $A$ the projection onto $H^0$ and $B=I$, the sandwich $S_{A,I}(T)=A\alpha(T)$ has nontrivial kernel: it annihilates every operator whose image lies in $H^1$. So the singular set of the previous section is not merely a set of measure zero among the sandwiches; it is realisable by an explicit projection.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded Hilbert space $H=H^0\oplus H^1$ with parity operator $\Gamma$ and grade involution $\alpha(T)=\Gamma T\Gamma$, the signed sandwich $S_{A,B}(T)=A\alpha(T)B$ is a bounded operator on $B(H)$ of norm $\|A\|\|B\|$, equal to the unsigned sandwich composed with the involution, $S_{A,B}=T_{A,B}\circ\alpha$. The products of two signs obey $T_{A,B}S_{C,D}=S_{AC,DB}$ and $S_{A,B}S_{C,D}=T_{A\alpha(C),\alpha(D)B}$, so the parity of the signed length is additive and the two-sided operators form an algebra with a $\mathbb{Z}/2$-quotient; the signed sandwich is invertible exactly when both factors are, with $S_{A,B}^{-1}=S_{A^{-1},B^{-1}}$, and the non-invertible sandwiches form the union of the left-singular and right-singular families. The signed sandwich $S_{U,U^{-1}}$ is a reflection exactly when $U\alpha(U)=\pm I$, and its adjoint theory, the module structure and the reflections are the subjects of the companion articles of the group; in finite dimension the block-matrix model exhibits the sign reversal of the off-diagonal blocks directly.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H=H^0\oplus H^1$</td>
+<td>the graded Hilbert space, orthogonal summands</td>
+</tr>
+<tr>
+<td>$\Gamma=P^0-P^1$</td>
+<td>the parity operator, self-adjoint unitary</td>
+</tr>
+<tr>
+<td>$\alpha(T)=\Gamma T\Gamma$</td>
+<td>the grade involution of $B(H)$</td>
+</tr>
+<tr>
+<td>$T_{A,B}(T)=ATB$</td>
+<td>the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$S_{A,B}(T)=A\alpha(T)B$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$\|S_{A,B}\|=\|A\|\|B\|$</td>
+<td>the norm of a signed sandwich</td>
+</tr>
+<tr>
+<td>$S_{A,B}=T_{A,B}\circ\alpha$</td>
+<td>signed as unsigned composed with the involution</td>
+</tr>
+<tr>
+<td>$S_{A,B}S_{C,D}=T_{A\alpha(C),\alpha(D)B}$</td>
+<td>product of two signed sandwiches</td>
+</tr>
+<tr>
+<td>$S_{U,U^{-1}}$</td>
+<td>reflection candidate, involutive iff $U\alpha(U)$ central</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vols. 1–2 (Academic Press, 1983–1986), for the two-sided multiplications and the graded structure of $B(H)$.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the elementary operators of Hilbert space and their products.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the sandwich operators $T\mapsto ATB$ and their spectra.</li>
+<li>Pierre Deligne and John W. Morgan, "Notes on Supersymmetry", in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, vol. 1 (American Mathematical Society, 1999), for the sign rule of the graded category.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

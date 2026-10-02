@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Orthogonal Group and the Involutive Automorphism — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-orthogonal-group-and-the-involutive-automorphism"><strong>The Orthogonal Group and the Involutive Automorphism</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The isometry group of a real quadratic form of signature $(p,q)$ is the orthogonal group $O(p,q)$, and, like the unitary group, it carries a canonical <strong>involutive automorphism</strong>: the conjugation by the diagonal matrix of the form, $\theta(g) = JgJ^{-1}$. Its fixed subgroup is the product $O(p)\times O(q)$ of the two compact orthogonal groups of the definite parts, it is a Cartan involution, and the quotient is the symmetric space of the form — the manifold of negative $q$-planes, which for $p = 1$ is the hyperbolic space of the quadratic form. The construction is the real form of the unitary one: replacing the Hermitian form by a quadratic form replaces the unitary group by the orthogonal group, and the complex structure of the Hermitian case disappears, leaving a symmetric space of dimension $pq$ and rank $\min(p,q)$ with no intrinsic complex structure except in the two cases the next article classifies.</p>
+<p>The article treats the orthogonal group of a quadratic form, the involutive automorphism with its fixed subgroup, the symmetric space it defines, and the comparison with the unitary case. The quadratic forms, their diagonalisation and their isometry classification are <em>Quadratic Forms and Polarisation</em> and <em>Bilinear Forms</em>; the orthogonal group, the reflections, the determinant and the Cartan–Dieudonné theorem are <em>Isometries and Orthogonal Transformations</em> and <em>The Rotation Group and Orientation</em>; the symmetric space, the symmetric pair, the Cartan involution and the rank are <em>Riemannian Symmetric Spaces and the Involution</em>; the homogeneous space $G/K$ is <em>Transformation Groups</em>; the Lie algebra is <em>The Orthogonal Lie Algebra</em>. The Riemannian geometry, the curvature and the geodesics of the quotient are <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em>; the Hermitian instances are <em>Hermitian Symmetric Spaces and the Group Involution</em>, later in this group. The involution on the <strong>elements</strong> of the group is read here; the <strong>adjoint</strong> of an operator is the group <code>- * Operator Theory</code>.</p>
+<p>The article has four sections: the quadratic form and the orthogonal group; the involutive automorphism and its fixed subgroup; the symmetric space; and the worked cases. Throughout, $V = \mathbb{R}^{n}$ with a non-degenerate quadratic form $Q$ of signature $(p,q)$, $p+q = n$, $p \geq q \geq 1$ except where the compact case $q = 0$ is named, and $J = \operatorname{diag}(I_p,-I_q)$ is the matrix of the form in a diagonalising basis; $O(p,q) = \{g \in GL_n(\mathbb{R}) : g^{t}Jg = J\}$ and $SO(p,q)$ is its determinant-one subgroup.</p>
+<h2 id="the-quadratic-form-and-the-orthogonal-group">The Quadratic Form and the Orthogonal Group</h2>
+<h3 id="the-form-and-its-transpose-adjoint">The Form and Its Transpose-Adjoint</h3>
+<p><strong>Definition.</strong> The <strong>quadratic form</strong> of signature $(p,q)$ on $V$ is $Q(x) = \sum_{i \leq p}x_i^2 - \sum_{i>p}x_i^2$ in a suitable basis, with polar form $B(u,v) = \frac12(Q(u+v) - Q(u) - Q(v))$ of matrix $J$; a <strong>definite decomposition</strong> is an orthogonal decomposition $V = V_+\oplus V_-$ with $Q$ positive definite on $V_+$ and negative definite on $V_-$, of dimensions $p$ and $q$.</p>
+<p><strong>Definition.</strong> The <strong>transpose-adjoint</strong> of $T \in \operatorname{End}(V)$ with respect to $Q$ is the map $T^{t}$ with $B(Tu,v) = B(u,T^{t}v)$; it satisfies $(ST)^{t} = T^{t}S^{t}$, $(T^{t})^{t} = T$, and for the diagonal form it is the ordinary transpose with respect to the indefinite pairing, $T^{t} = J^{-1}T^{\mathrm{tr}}J$.</p>
+<p><strong>Proposition.</strong> The isometry group of $Q$ is</p>
+<p>$$
+O(V,Q) = \{T \in GL(V) : Q(Tv) = Q(v)\} = \{T : T^{t}T = \operatorname{id}\} = \{g : g^{t}Jg = J\},
+$$</p>
+<p>a real Lie group of dimension $\frac{n(n-1)}{2}$, of which the identity component is $SO_0(p,q)$; for $q = 0$ it is the compact orthogonal group $O(n)$, and for $q \geq 1$ it is noncompact.</p>
+<p><strong>Proof.</strong> The equivalence of the three definitions is the polarisation identity and the definition of the adjoint; the group is closed in $GL_n(\mathbb{R})$ and cut out by the algebraic equation $g^{t}Jg = J$, of dimension $\binom{n}{2}$ because the equation is symmetric in the pairs of indices; compactness for $q=0$ is boundedness, and noncompactness for $q\ge1$ is exhibited below by an unbounded one-parameter subgroup. The determinant is $\pm1$ on the group, by the same computation as in the definite case.</p>
+<h3 id="the-two-families">The Two Families</h3>
+<p><strong>Proposition.</strong> The pair $(O(V,Q), Q)$ depends only on the signature: two forms of the same signature are isometric, and their isometry groups are conjugate in $GL(V)$. The cases $q = 0$ and $p = q = 1$, and the general indefinite case $p \geq q \geq 1$, are distinguished by the topology: $O(n)$ is compact, $O(1,1)$ has two noncompact one-parameter subgroups, and $O(p,q)$ with $p > 1$ has a nonabelian simple identity component.</p>
+<p><strong>Proof.</strong> The first statement is Sylvester's law of inertia, <em>Quadratic Forms and Polarisation</em>; the compactness dichotomy is as above; the simplicity of the identity component of $SO(p,q)$ for $p+q \geq 3$ is the standard classification of the simple real Lie algebras of type $B$ and $D$, <em>The Orthogonal Lie Algebra</em>. The split case $p=q=1$ is the hyperbolic rotation group, <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>.</p>
+<h2 id="the-involutive-automorphism-and-its-fixed-subgroup">The Involutive Automorphism and Its Fixed Subgroup</h2>
+<h3 id="the-involutive-automorphism">The Involutive Automorphism</h3>
+<p><strong>Theorem (the involutive automorphism).</strong> The map</p>
+<p>$$
+\theta : O(V,Q) \longrightarrow O(V,Q), \qquad \theta(g) = J\,g\,J^{-1},
+$$</p>
+<p>is an involutive automorphism of $O(V,Q)$ — the <strong>involutive automorphism</strong> of the pair — and it is a Cartan involution: its fixed subgroup is</p>
+<p>$$
+O(V,Q)^{\theta} = \{g : gJ = Jg\} = O(V_+)\times O(V_-) = O(p)\times O(q),
+$$</p>
+<p>the metrically diagonal matrices, it is the stabiliser of the definite decomposition, and it is a maximal compact subgroup; the differential $d\theta$ is $+1$ on $\mathfrak{k} = \mathfrak{o}(p)\oplus\mathfrak{o}(q)$ and $-1$ on $\mathfrak{p}$, and $\theta$ is unique up to conjugacy.</p>
+<p><strong>Proof.</strong> Conjugation by $J$ is an automorphism of the group of matrices preserving $J$, of order two because $J^2 = I$; a matrix is fixed exactly when it commutes with $J$, and the matrices commuting with $J$ are the block-diagonal ones; such a matrix preserves the form of signature $(p,q)$ exactly when its blocks preserve the definite forms, so the fixed subgroup is $O(p)\times O(q)$, which is compact. Maximality is the fixed-vector argument: a compact subgroup has an invariant positive vector, and iterating, an invariant definite decomposition, so it lies in a conjugate of $K$. The eigen-decomposition of $d\theta$ is the block decomposition of the Lie algebra, as in the unitary case.</p>
+<p><strong>Remark.</strong> The involution is on the <strong>elements</strong> of $G$, an automorphism of order two with the compact fixed subgroup; it is the differential of the geodesic symmetry of the symmetric space, <em>Riemannian Symmetric Spaces and the Involution</em>. The <strong>transpose-adjoint</strong> $T \mapsto T^{t}$ of the previous section is a different involution, on the operators, and the <strong>adjoint</strong> of the group <code>- * Operator Theory</code> is different again; neither is taken here.</p>
+<h3 id="the-fixed-subgroup-and-the-cartan-decomposition">The Fixed Subgroup and the Cartan Decomposition</h3>
+<p><strong>Proposition.</strong> The fixed subgroup $K = O(p)\times O(q)$ is a maximal compact subgroup of $O(V,Q)$, and the quotient $O(V,Q)/K$ is connected when the identity components are used; the Cartan decomposition is</p>
+<p>$$
+\mathfrak{o}(p,q) = \mathfrak{k}\oplus\mathfrak{p}, \qquad \mathfrak{p} = \left\{\begin{pmatrix} 0 & X \\ X^{t} & 0\end{pmatrix} : X \in \mathbb{R}^{p\times q}\right\} \cong \mathbb{R}^{pq},
+$$</p>
+<p>with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$, so $\dim_{\mathbb{R}} O(p,q)/K = pq$.</p>
+<p><strong>Proof.</strong> The bracket relations are that $d\theta$ is a Lie algebra automorphism with eigenspaces $\mathfrak{k}$ and $\mathfrak{p}$; the identification of $\mathfrak{p}$ is the block computation, and its dimension is $pq$. Compactness of $K$ is the product of the compact orthogonal groups.</p>
+<p><strong>Remark.</strong> The dimension $pq$ is half the unitary dimension $2pq$ and half the complex dimension $pq$; the real form removes one of the two copies of $\mathbb{C}^{pq}$ that the Hermitian case carries. The rank $\min(p,q)$ is the same as in the unitary case.</p>
+<h2 id="the-symmetric-space">The Symmetric Space</h2>
+<h3 id="the-quotient">The Quotient</h3>
+<p><strong>Definition.</strong> The <strong>symmetric space</strong> of the quadratic form is</p>
+<p>$$
+X = O(p,q)/(O(p)\times O(q)), \qquad \text{or} \qquad X_0 = SO_0(p,q)/(SO(p)\times SO(q)),
+$$</p>
+<p>with base point $o = eK$ and tangent space $T_oX = \mathfrak{p} \cong \mathbb{R}^{pq}$; the <strong>geodesic symmetry</strong> at $o$ is $s_o(gK) = \theta(g)K$.</p>
+<p><strong>Proposition.</strong> The space $X$ is the manifold of $Q$-negative subspaces of dimension $q$,</p>
+<p>$$
+X \cong \{W \leq V : \dim W = q,\ Q|_W < 0\},
+$$</p>
+<p>by $gK \mapsto gV_-$; it is a symmetric space of noncompact type, of dimension $pq$ and rank $\min(p,q)$, and the stabiliser of a negative subspace is a conjugate of $K$.</p>
+<p><strong>Proof.</strong> The stabiliser of $V_-$ is $K$, so the orbit is the quotient; the map is bijective by Witt's extension theorem for quadratic forms, <em>Bilinear Forms</em>; the rank is the maximal dimension of an abelian subspace of $\mathfrak{p}$, which is $\min(p,q)$ for the diagonal block; the symmetric space axioms are the existence of the involutive geodesic symmetry at each point, which is $s_o$ conjugated, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<h3 id="the-compact-dual">The Compact Dual</h3>
+<p><strong>Proposition.</strong> The <strong>compact dual</strong> of $X$ is the Grassmannian</p>
+<p>$$
+X^c = O(p+q)/(O(p)\times O(q)),
+$$</p>
+<p>the manifold of all $q$-planes of $V$; it is the compact symmetric space with the same isotropy and the opposite curvature, and $X$ and $X^c$ are related by the Cartan duality of <em>Riemannian Symmetric Spaces and the Involution</em>. The negative subspaces form an open subset of $X^c$, and the inclusion is the dual embedding.</p>
+<p><strong>Proof.</strong> The Grassmannian is the orbit of any $q$-plane under $O(p+q)$, with stabiliser $O(p)\times O(q)$, hence the compact homogeneous space; the curvature of $X^c$ is nonnegative and that of $X$ nonpositive, the two being the two real forms of the same complexification, <em>Riemannian Symmetric Spaces and the Involution</em>. The identification of the negative subspaces with an open subset is the definiteness condition on a $q$-plane.</p>
+<h3 id="the-rank-one-case">The Rank-One Case</h3>
+<p><strong>Proposition.</strong> For $q = 1$, the space $X = O(p,1)/(O(p)\times O(1))$ is the <strong>hyperbolic space</strong> $H^p$ of constant negative curvature, realised as the hyperboloid $\{x : Q(x) = -1\}$ in $V$ with the induced metric; the involution $\theta$ is the conjugation by $J$ and the geodesic symmetry at the base point is $\theta$ itself. For $p = 1$, $q$ arbitrary, $X = H^q$ again, and the group $SO_0(1,q)$ is the Möbius group of $H^q$.</p>
+<p><strong>Proof.</strong> The hyperboloid is the orbit of a negative unit vector, and the stabiliser of the vector is $O(p)$; the induced metric on the hyperboloid has constant curvature $-1$, <em>Curvature and Geodesics</em>, and the geodesic symmetry is the restriction of the linear map $\theta$, which is the reflection in the tangent space at the base point. The two cases $p=1$ and $q=1$ are swapped by the exchange $Q \leftrightarrow -Q$.</p>
+<p><strong>Remark.</strong> The rank-one case is the hyperbolic geometry of <em>Curvature and Geodesics</em>, and it shows the geometric content of the signature: the form of signature $(p,1)$ is exactly the hyperbolic space, and the form of higher index gives the higher-rank symmetric space whose geodesics lie in flat totally geodesic submanifolds of the rank.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the compact orthogonal group).</strong> Let $q = 0$. Then $O(V,Q) = O(n)$, $K = O(n)$ and $X$ is a point; the involutive automorphism is the identity up to conjugacy, and the compact dual is the group itself. The compact case is the degenerate end of the family.</p>
+<p><strong>Example (the hyperbolic plane).</strong> Let $p = q = 1$. Then $O(1,1)$ is the hyperbolic rotation group, $K = O(1)\times O(1)$ is finite, and $X = O(1,1)/(O(1)\times O(1))$ is the hyperbolic line $\mathbb{R}$, the geodesic through the origin; the involution $\theta(g) = JgJ^{-1}$ fixes the two one-parameter subgroups of diagonal matrices up to inverse, and the geodesic symmetry is $t \mapsto -t$ at the origin. The example is the smallest noncompact symmetric space of the orthogonal family.</p>
+<p><strong>Example (the hyperbolic space).</strong> Let $q = 1$, $p = n-1$. Then $X = O(p,1)/(O(p)\times O(1))$ is hyperbolic $p$-space $H^p$, of rank one and dimension $p$; the involutive automorphism fixes $O(p)\times O(1)$, the isotropy of a point of the hyperboloid, and the geodesic symmetry is the conjugation by $J$. The isometry group $SO_0(p,1)$ acts transitively on $H^p$, and the stabiliser of a point is $SO(p)$; this is the model space of <em>Curvature and Geodesics</em>.</p>
+<p><strong>Example (the higher-rank case).</strong> Let $p = q = n$. Then $X = O(n,n)/(O(n)\times O(n))$ is the Grassmannian of Lagrangian $n$-planes of the split form, of dimension $n^2$ and rank $n$; the involution $\theta(g) = JgJ^{-1}$ with $J = \operatorname{diag}(I_n,-I_n)$ is the conjugation by $J$, the fixed subgroup is $O(n)\times O(n)$, and a maximal abelian subspace of $\mathfrak{p}$ is the diagonal, of dimension $n$. The example is the orthogonal analogue of the Siegel disc and has no complex structure for $n > 2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The orthogonal group $O(V,Q)$ of a quadratic form of signature $(p,q)$ is the isometry group $\{T : T^{t}T = \operatorname{id}\}$ of the transpose-adjoint, a real Lie group of dimension $\binom{n}{2}$ conjugate to the model $O(p,q) = \{g : g^{t}Jg = J\}$ with $J = \operatorname{diag}(I_p,-I_q)$; the map $\theta(g) = JgJ^{-1}$ is an involutive automorphism, unique up to conjugacy, with fixed subgroup the maximal compact $O(p)\times O(q)$ and differential $+1$ on $\mathfrak{k} = \mathfrak{o}(p)\oplus\mathfrak{o}(q)$ and $-1$ on $\mathfrak{p}\cong\mathbb{R}^{pq}$. The quotient $O(p,q)/(O(p)\times O(q))$ is the symmetric space of the negative $q$-planes, of dimension $pq$ and rank $\min(p,q)$, with compact dual the real Grassmannian $O(p+q)/(O(p)\times O(q))$; for $q = 1$ it is hyperbolic $p$-space, and for $p = q = 1$ the hyperbolic line. The construction is the real form of the unitary one: the dimension is halved, the complex structure is absent in general, and only the Hermitian orthogonal cases carry one, <em>Hermitian Symmetric Spaces and the Group Involution</em>, the next article. The involution here is on the elements of the group; no adjoint is taken.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$, $B$, $(p,q)$</td>
+<td>quadratic form, its polar form and its signature</td>
+</tr>
+<tr>
+<td>$J = \operatorname{diag}(I_p,-I_q)$</td>
+<td>the matrix of the diagonalised form</td>
+</tr>
+<tr>
+<td>$T^{t}$</td>
+<td>the transpose-adjoint, $B(Tu,v) = B(u,T^{t}v)$</td>
+</tr>
+<tr>
+<td>$O(V,Q)$, $SO(V,Q)$</td>
+<td>orthogonal and rotation groups of $Q$</td>
+</tr>
+<tr>
+<td>$O(p,q)$, $SO_0(p,q)$</td>
+<td>the model group and its identity component</td>
+</tr>
+<tr>
+<td>$V = V_+\oplus V_-$</td>
+<td>a definite decomposition</td>
+</tr>
+<tr>
+<td>$\theta(g) = JgJ^{-1}$</td>
+<td>the involutive automorphism (Cartan involution)</td>
+</tr>
+<tr>
+<td>$K = O(p)\times O(q)$</td>
+<td>the fixed subgroup; a maximal compact subgroup</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}\oplus\mathfrak{p}$</td>
+<td>the Cartan decomposition; $\mathfrak{p}\cong\mathbb{R}^{pq}$</td>
+</tr>
+<tr>
+<td>$X = O(p,q)/(O(p)\times O(q))$</td>
+<td>the symmetric space of negative $q$-planes</td>
+</tr>
+<tr>
+<td>$X^c = O(p+q)/(O(p)\times O(q))$</td>
+<td>the compact dual, the real Grassmannian</td>
+</tr>
+<tr>
+<td>$H^p = O(p,1)/(O(p)\times O(1))$</td>
+<td>hyperbolic space, the rank-one case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the orthogonal groups, the Cartan involution and the symmetric spaces of the quadratic forms.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (American Mathematical Society, sixth edition, 2011), for the rank-one orthogonal symmetric spaces and the hyperbolic model.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the Cartan decomposition of the orthogonal Lie algebras and the classification of the symmetric spaces by the signature.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the orthogonal groups, the Witt theorem and the geometry of the Grassmannians.</li>
+<li>O. Timothy O'Meara, <em>Introduction to Quadratic Forms</em> (Springer, 1973), for the isometry classification of quadratic forms and the signature invariants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

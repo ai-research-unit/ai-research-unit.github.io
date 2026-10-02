@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-the-algebra-of-arithmetic-functions"><strong>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left multiplication $L_a(f)=a*f$ is the regular representation of the algebra of arithmetic functions under Dirichlet convolution, and the adjoint of $L_a$ with respect to the coefficient form is not the left multiplication by $a^*$. It is the <strong>transposed multiplication</strong>
+$$
+(\Theta_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk),
+$$
+an operator that sums the coefficients of $g$ along the multiples of $k$; it is a right multiplication in the transposed algebra and it generates the two-structure problem of this corpus, the fact that the involution on the elements and the adjoint on the operators are different structures. This article computes the adjoint, states when it is a multiplication, and identifies the degenerate cases in which the coincidence fails or the form collapses. It is the arithmetic prototype of <em>The Adjoint of the Left Multiplication on a Ring</em> and the reference for the signed adjoints of this category. Nothing here reads a distance as an object.</p>
+<h2 id="the-adjoint">The Adjoint</h2>
+<h3 id="definition-and-formula">Definition and formula</h3>
+<p><strong>Definition.</strong> The <strong>left multiplication</strong> by $a\in\mathcal{A}$ is $L_a(f)=a*f$, and the <strong>transposed multiplication</strong> is
+$$
+\Theta_a=L_a^*,\qquad (\Theta_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk).
+$$</p>
+<p><strong>Theorem.</strong> With respect to the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$ on $\mathcal{H}=\ell^2$, the adjoint of $L_a$ is $\Theta_a$:
+$$
+\langle L_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)f(k)\Bigr)\overline{g(n)}=\sum_{m,k}a(m)f(k)\overline{g(mk)}=\langle f,\Theta_ag\rangle .
+$$
+The map $\Theta_a$ is anti-linear in $a$ and linear in $g$; it is a right multiplication in the transposed algebra, $\Theta_a\Theta_b=\Theta_b\Theta_a$, and $\Theta_\varepsilon=\mathrm{id}$.</p>
+<p><strong>Proof.</strong> The computation is the change of variables $n=mk$; the anti-linearity is the conjugation in the definition, and the composition law is the change of variables in the double sum. The transposed algebra is the algebra with the reversed product.</p>
+<h3 id="the-comparison-with-the-involution">The comparison with the involution</h3>
+<p><strong>Theorem.</strong> In general $L_a^*\ne L_{a^*}$, and the equality holds exactly for the scalar multiples of the identity:
+$$
+L_a^*=L_{a^*}\iff \Theta_a=L_{a^*}\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{C}.
+$$
+The operator $L_a$ is self-adjoint exactly when $a$ is a real scalar multiple of the identity,
+$$
+L_a^*=L_a\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{R},
+$$
+and it is unitary exactly when $a$ is a unit scalar multiple of the identity,
+$$
+L_a^*L_a=L_aL_a^*=\mathrm{id}\iff a=\gamma\varepsilon,\ |\gamma|=1.
+$$
+The operator is an isometry exactly when $\Theta_aL_a=\mathrm{id}$, which holds in particular for $a=\gamma\delta_p$ with $|\gamma|=1$.</p>
+<p><strong>Proof.</strong> Test the identity on $\delta_1$: $\Theta_a\delta_1=\overline{a(1)}\delta_1$ while $L_{a^*}\delta_1=a^*=\overline a$, so equality forces $a=\gamma\delta_1$, and then both sides are $\overline\gamma\,\mathrm{id}$; the self-adjointness and unitarity computations are the same test applied to $\Theta_a=L_a$ and to the two products. This is the standard computation of the adjoint of a convolution operator, in <em>Convolution Operators</em>.</p>
+<p><strong>Corollary (the Dirichlet inverse).</strong> $L_a$ is invertible exactly when $a$ is a unit of $\mathcal{A}$, and then $L_a^{-1}=L_{a^{-1}}$; the adjoint of the inverse is $\Theta_{a^{-1}}$, and the operator is normal, $L_aL_a^*=L_a^*L_a$, exactly when $\Theta_a$ commutes with $L_a$, which happens for all $a$ in the degenerate rank-one case.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($a=\delta_m$).</strong> $L_{\delta_m}=D_m$ is the section of <em>The Shift Operator on the Coefficients</em> and $\Theta_{\delta_m}=S_m$ is the division; the adjoint pair is the pair of the fundamental identities $S_mD_m=\mathrm{id}$, $D_mS_m=P_m$, and $L_{\delta_m}^*=S_m\ne L_{\delta_m}$.</p>
+<p><strong>Example ($a=\mathbf 1$).</strong> $L_{\mathbf 1}f=d*f$ with $d$ the divisor function; the adjoint is $(\Theta_{\mathbf 1}g)(k)=\sum_mg(mk)$, the operator of the summatory function along the multiples of $k$. It is not a multiplication and not an involution.</p>
+<p><strong>Example ($a=\lambda$).</strong> $L_\lambda$ is the grade involution as a convolution operator, and $\Theta_\lambda=\alpha\Theta_{\mathbf 1}\alpha$; it is not $L_\lambda$.</p>
+<p><strong>Example ($a=\mu$).</strong> $L_\mu$ is the inverse of $L_{\mathbf 1}$; its adjoint is $\Theta_\mu$, and $L_\mu\Theta_\mu=\mathrm{id}$ on the squarefree functions, so $L_\mu$ is an isometry on that subspace.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The adjoint fails to be a multiplication in four degenerate configurations. First, $\Theta_a$ is a multiplication only when $a$ is a scalar multiple of the identity; for every other $a$ the operator $L_a$ is not normal, and the operator algebra generated by $L_a$ is the Toeplitz-like algebra of the monoid order. Second, the identity $L_a^*=L_{a^*}$ and the involution on the algebra are two structures that cannot be reconciled on any nondegenerate form: the only form for which the convolution-invariance $L_a^*=L_{a^*}$ holds is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one. Third, the operator $L_a$ is unbounded on the finitely supported functions when $a$ has infinite nonvanishing support in a suitable sense, and the adjoint is defined only on the domain of $\Theta_a$; the article works on $\mathcal{H}$ and on the weighted spaces $\mathcal{A}(\sigma)$. Fourth, on the weighted space $\mathcal{A}(\sigma)$ the adjoint is the transposed multiplication for the weighted form, and the weight changes which operators are bounded but not the identity $L_a^*=\Theta_a$. These are the boundary cases of the adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a*f$ has adjoint the transposed multiplication $\Theta_a=L_a^*$ with $(\Theta_ag)(k)=\sum_m\overline{a(m)}g(mk)$; it is a multiplication only for $a=\gamma\varepsilon$, and $L_a^*=L_{a^*}$ exactly for the scalar multiples of the identity, so the involution on the elements and the adjoint on the operators are different structures. The operator is self-adjoint exactly for the real scalars, unitary exactly for the unitary scalars, and an isometry exactly when $\Theta_aL_a=\mathrm{id}$; it is invertible exactly for the units with $L_a^{-1}=L_{a^{-1}}$. The degenerate cases are the non-normality of the general $L_a$, the rank-one augmentation form, the unboundedness of $L_a$ without a weight and the weighted adjoint.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(f)=a*f$</td>
+<td>Left multiplication</td>
+</tr>
+<tr>
+<td>$\Theta_a=L_a^*$</td>
+<td>Transposed multiplication</td>
+</tr>
+<tr>
+<td>$(\Theta_ag)(k)=\sum_m\overline{a(m)}g(mk)$</td>
+<td>Explicit adjoint</td>
+</tr>
+<tr>
+<td>$L_a^*\ne L_{a^*}$</td>
+<td>The two-structure failure</td>
+</tr>
+<tr>
+<td>$L_a^*=L_a\iff a=\gamma\varepsilon$, $\gamma\in\mathbb{R}$</td>
+<td>Self-adjointness</td>
+</tr>
+<tr>
+<td>$L_a^*L_a=\mathrm{id}\iff a=\gamma\varepsilon$, $|\gamma|=1$</td>
+<td>Unitarity</td>
+</tr>
+<tr>
+<td>$\Theta_aL_a=\mathrm{id}$</td>
+<td>Isometry condition</td>
+</tr>
+<tr>
+<td>$L_a^{-1}=L_{a^{-1}}$</td>
+<td>Inverse for a unit</td>
+</tr>
+<tr>
+<td>$\mathcal{A}(\sigma)$</td>
+<td>Weighted space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Einar Hille and Ralph Phillips, <em>Functional Analysis and Semi-Groups</em> (American Mathematical Society, 1957), for the convolution operators and their adjoints.</li>
+<li>Israel Gohberg and Mark Krein, <em>Theory of Volterra Operators in Hilbert Space</em> (American Mathematical Society, 1970), for the transposed multiplication and the Toeplitz structure.</li>
+<li>Sterling Berberian, <em>Introduction to Hilbert Space</em> (Oxford University Press, 1961), for the multiplication operators and the adjoint.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the normal and nonnormal operators.</li>
+<li>Hugh Montgomery and Robert Vaughan, <em>Multiplicative Number Theory I: Classical Theory</em> (Cambridge University Press, 2007), for the arithmetical convolution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Plancherel Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-plancherel-operator"><strong>The Plancherel Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Plancherel theorem is an identity of integrals; its operator form is the statement that the transform which produces the integrals is a single unitary operator between two Hilbert spaces. This article develops that operator: the <strong>Plancherel operator</strong> $\mathcal{F}$, defined on $L^2(G)$ and taking values in the direct integral of Hilbert–Schmidt fibres over the unitary dual, its unitarity and its inverse, the way it intertwines the left and the right regular representations with the field of representations, and its decomposable, measurable-field structure. The theorem and the measure are assumed; the object constructed here is the operator.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$, its involution and its completion from <em>The Convolution Algebra $L^1(G)$</em>; the characters, Pontryagin duality and the abelian transform from <em>Harmonic Analysis on Groups</em>; the unitary dual, the operator-valued transform, the direct integral, the Plancherel measure and the group von Neumann algebra from <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>, the latter owning the theorem, the measure and its construction; the regular representations and the completions from <em>Convolution on a Group</em> and <em>The Group Algebra as an Algebra of Operators</em>; and the Hilbert spaces, direct integrals and measurable fields from <em>Operator Algebras</em>. The abelian specialisation is the Fourier operator of <em>The Fourier Operator</em>, written in parallel in this Part; the adjoint of a Plancherel-side operator belongs to the <code>- * Operator Theory</code> group of this category; the convolution operators are <em>Convolution on a Group</em>.</p>
+<p>Throughout, $G$ is a second countable unimodular group of type I with left Haar measure $dx$, unitary dual $\operatorname{Irr}(G)$, representation spaces $\mathcal{H}_\pi$ and Plancherel measure $\mu_P$; the fibres are the Hilbert–Schmidt spaces $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ with inner product $\langle A,B\rangle = \operatorname{Tr}(AB^*)$; the transform on $L^1(G)\cap L^2(G)$ is $\hat f(\pi) = \int_G f(x)\pi(x)\,dx$; and the <strong>direct integral</strong> is</p>
+<p>$$
+\mathcal{H}_P = \int_{\operatorname{Irr}(G)}^{\oplus}\bigl(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*\bigr)\,d\mu_P(\pi) .
+$$</p>
+<p>The Plancherel measure, its uniqueness and the isomorphism $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P$ are those of <em>The Plancherel Theorem</em> and <em>Noncommutative Harmonic Analysis</em>.</p>
+<h2 id="the-plancherel-operator_1">The Plancherel Operator</h2>
+<p><strong>Definition.</strong> On the dense subspace $L^1(G)\cap L^2(G)$ the <strong>Plancherel operator</strong> is</p>
+<p>$$
+\mathcal{F} : L^2(G) \longrightarrow \mathcal{H}_P, \qquad (\mathcal{F}f)(\pi) = \hat f(\pi) = \int_G f(x)\,\pi(x)\,dx ,
+$$</p>
+<p>the field of Hilbert–Schmidt operators on the fibres; it is extended to $L^2(G)$ by continuity.</p>
+<p><strong>Theorem (unitarity).</strong> The transform $\mathcal{F}$ is isometric on $L^1(G)\cap L^2(G)$,</p>
+<p>$$
+\int_{\operatorname{Irr}(G)}\bigl\|\hat f(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx ,
+$$</p>
+<p>and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} : L^2(G)\to\mathcal{H}_P$; consequently $\|\mathcal{F}\| = \|\mathcal{F}^{-1}\| = 1$ and $\mathcal{F}$ is invertible.</p>
+<p><strong>Proof.</strong> The isometry is the Plancherel theorem of <em>The Plancherel Theorem</em>; an isometry from a dense subspace of a Hilbert space extends to the whole space with the same norm, and the image is dense because it contains the finite-rank fields supported on compact subsets of the dual, which are total in $\mathcal{H}_P$; a surjective isometry of Hilbert spaces is unitary and has an isometric inverse. $\square$</p>
+<p><strong>Proposition (the fibre is Hilbert–Schmidt).</strong> For $\mu_P$-almost every $\pi$ the operator $\hat f(\pi)$ is Hilbert–Schmidt, the field $\pi\mapsto\hat f(\pi)$ is measurable, and the squared norm of the field is the integral of the squared Hilbert–Schmidt norms; the transform is thus an operator whose values are the trace-class-friendly operators on the representation spaces.</p>
+<p><strong>Proof.</strong> The Hilbert–Schmidt property $\mu_P$-almost everywhere and the measurability are part of the Plancherel theorem's construction of the measure on the coefficient algebra; the norm statement is the isometry above. $\square$</p>
+<p><strong>Remark (the abelian reading).</strong> If $G$ is abelian then every $\mathcal{H}_\pi = \mathbb{C}$, the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, the direct integral is $L^2(G^\vee,\mu_P)$, and $\mathcal{F}$ is the classical Fourier–Plancherel operator $L^2(G)\to L^2(G^\vee)$; this is the operator studied in <em>The Fourier Operator</em>, written in parallel in this Part.</p>
+<h2 id="intertwining">Intertwining</h2>
+<p><strong>Theorem (convolution becomes multiplication).</strong> For every $f \in L^1(G)$ the Plancherel operator intertwines left convolution with the field of its transforms,</p>
+<p>$$
+\mathcal{F}\,\lambda(f)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} \hat f(\pi)\,d\mu_P(\pi) ,
+$$</p>
+<p>the field acting on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ by left multiplication, $A\mapsto\hat f(\pi)A$; the operator $\lambda(f)$ is thereby unitarily equivalent to a decomposable operator with the fibres $\hat f(\pi)$.</p>
+<p><strong>Proof.</strong> The convolution theorem gives $(\mathcal{F}\lambda(f)h)(\pi) = \widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi) = \hat f(\pi)(\mathcal{F}h)(\pi)$, which is the displayed identity on the dense subspace and hence everywhere. $\square$</p>
+<p><strong>Theorem (the regular representations become the fields).</strong> Under $\mathcal{F}$,</p>
+<p>$$
+\mathcal{F}\,\lambda(x)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} \pi(x)\otimes 1\,d\mu_P(\pi), \qquad
+\mathcal{F}\,\rho(x)\,\mathcal{F}^{-1} = \int_{\operatorname{Irr}(G)}^{\oplus} 1\otimes\pi^*(x)\,d\mu_P(\pi),
+$$</p>
+<p>where the first factor acts on $\mathcal{H}_\pi$ and the second on $\mathcal{H}_\pi^*$; the two fields generate the decomposable algebra $\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P(\pi)$.</p>
+<p><strong>Proof.</strong> The left regular representation corresponds to the field $\pi\otimes\pi^*$, and left convolution is the first leg, so $\lambda(x)$ acts on the first factor of the fibre while $\rho(x)$, commuting with it, acts on the second through the contragredient; the generation statement is the multiplicity-one decomposition of the regular representation, from <em>Noncommutative Harmonic Analysis</em>. $\square$</p>
+<p><strong>Corollary (the group von Neumann algebra as a decomposable algebra).</strong> The Plancherel operator carries $L(G) = \lambda(G)''$ onto the algebra of decomposable fields $\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P(\pi)$, and the centre onto the diagonalisable fields $L^\infty(\operatorname{Irr}(G),\mu_P)$; the Plancherel measure is the spectral measure of the trace.</p>
+<p><strong>Proof.</strong> A von Neumann algebra is carried to its commutant-equivalent by a unitary equivalence; the identification $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P$ and the description of the centre are those of <em>The Plancherel Theorem</em>, §Construction and Normalisation. $\square$</p>
+<h2 id="the-inverse-and-the-inversion-formula">The Inverse and the Inversion Formula</h2>
+<p><strong>Definition.</strong> The <strong>inverse Plancherel operator</strong> is $\mathcal{F}^{-1}$, which on the field $\hat h$ is given by</p>
+<p>$$
+(\mathcal{F}^{-1}\hat h)(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl(\hat h(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi) ,
+$$</p>
+<p>the integral converging in $L^2(G)$ and defining the inverse transform.</p>
+<p><strong>Theorem (inversion).</strong> For $f \in L^1(G)\cap L^2(G)$ with $\pi\mapsto\operatorname{Tr}(\hat f(\pi)\pi(x)^{-1})$ integrable against $\mu_P$ for almost every $x$,</p>
+<p>$$
+f(x) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl(\hat f(\pi)\,\pi(x)^{-1}\bigr)\,d\mu_P(\pi)
+$$</p>
+<p>for almost every $x$; equivalently $\mathcal{F}^{-1}\mathcal{F} = \mathrm{id}$ and $\mathcal{F}\mathcal{F}^{-1} = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> The formula is the inversion theorem of <em>The Plancherel Theorem</em>; it identifies the right-hand side with $f$ and hence with $\mathcal{F}^{-1}(\mathcal{F}f)$, which gives the two identities by the unitarity of $\mathcal{F}$. $\square$</p>
+<p><strong>Proposition (the definite form as a fibre trace).</strong> The operator trace of the transform recovers the value at the identity,</p>
+<p>$$
+f(e) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}\bigl(\hat f(\pi)\bigr)\,d\mu_P(\pi) ,
+$$</p>
+<p>for $f$ in the coefficient algebra for which the integral converges absolutely, the trace being the ordinary trace on the finite-rank operators; in operator language the Plancherel isomorphism sends the evaluation functional at $e$ to the fibre-wise operator trace.</p>
+<p><strong>Proof.</strong> This is the definite form of the Plancherel theorem; the operator reading is the statement that $\operatorname{Tr}$ is the trace of the $B(\mathcal{H}_\pi)$ fibre, so that the identity is the disintegration of the trace $\tau$ of $L(G)$ along $\mu_P$. $\square$</p>
+<h2 id="decomposability-and-the-measurable-field">Decomposability and the Measurable Field</h2>
+<p><strong>Theorem (the operator is decomposable).</strong> The Plancherel operator is a <strong>decomposable</strong> operator of the direct integral: it is measurable in the field sense, its inverse is decomposable, and for every $f \in L^1(G)$ the operator $\mathcal{F}\lambda(f)\mathcal{F}^{-1}$ has constant fibre $\hat f(\pi)$ on the diagonal of the field algebra. The fibres are the multiplication operators $\hat f(\pi)$, and their essential supremum against $\mu_P$ is the norm of the operator in the algebra.</p>
+<p><strong>Proof.</strong> A unitary equivalence onto a direct integral carries the measurable-field structure of the algebra to that of the fibres; the fibre of $\mathcal{F}\lambda(f)\mathcal{F}^{-1}$ is $\hat f(\pi)$ by the intertwining theorem, and the norm of a decomposable operator's image in the algebra of the field is the essential supremum of the fibre norms. $\square$</p>
+<p><strong>Corollary (the type I condition in operator form).</strong> The existence of the operator $\mathcal{F}$ with all fibres $B(\mathcal{H}_\pi)$ and diagonal action is exactly the type I property of $G$; for a group that is not of type I the operator exists only as a direct integral over a non-atomic space of factors and is not indexed by the unitary dual. The operator realisation of the dichotomy is that of <em>The Plancherel Theorem</em>, §Non-Unimodular and Non-Type-I Cases.</p>
+<p><strong>Proof.</strong> The equivalence of the type I property, the direct-integral decomposition of the regular representation and the existence of $\mu_P$ is the dichotomy of <em>The Plancherel Theorem</em>; the operator statement is its restatement in terms of the field algebra. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The article has taken no adjoint: unitarity is stated as isometry and surjectivity, and the inverse is $\mathcal{F}^{-1}$, not $\mathcal{F}^*$; the equality $\mathcal{F}^* = \mathcal{F}^{-1}$ and the adjoints of the operators on the Plancherel side belong to the <code>- * Operator Theory</code> group of this category. The construction of the measure, the definite and inversion forms are <em>The Plancherel Theorem</em>, cited; the abelian operator is <em>The Fourier Operator</em>, written in parallel.</p>
+<h2 id="summary">Summary</h2>
+<p>The Plancherel operator is the transform $\mathcal{F}f(\pi) = \int_G f(x)\pi(x)dx$, taking $L^2(G)$ to the direct integral $\mathcal{H}_P = \int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P(\pi)$ of Hilbert–Schmidt fibres; it is a unitary operator, isometric on $L^1(G)\cap L^2(G)$ by the Plancherel identity $\int\|\hat f(\pi)\|_{\mathrm{HS}}^2d\mu_P = \int|f|^2dx$ and surjective because the finite-rank fields are total. Conjugation by $\mathcal{F}$ turns left convolution into the field of pointwise multiplications $\hat f(\pi)$, and turns the left and right regular representations into the two legs $\pi\otimes1$ and $1\otimes\pi^*$ of the field algebra, so that $L(G)$ becomes the decomposable algebra $\int^\oplus B(\mathcal{H}_\pi)d\mu_P$ with centre $L^\infty(\operatorname{Irr}(G),\mu_P)$. The inverse is the inversion formula $\mathcal{F}^{-1}\hat h(x) = \int\operatorname{Tr}(\hat h(\pi)\pi(x)^{-1})d\mu_P$, and the definite form $f(e) = \int\operatorname{Tr}\hat f(\pi)d\mu_P$ is the fibre-wise trace. The operator is decomposable, its fibres are the multiplication operators, and the type I property of $G$ is exactly the condition that the field algebra be indexed by $\operatorname{Irr}(G)$ with the constant multiplicity $d_\pi$. No adjoint is taken, and the measure, the theorem and the abelian specialisation are cited from <em>The Plancherel Theorem</em> and <em>The Fourier Operator</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The Plancherel operator, $(\mathcal{F}f)(\pi) = \hat f(\pi)$</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_P = \int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P$</td>
+<td>The direct-integral Hilbert space of fibres</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle = \operatorname{Tr}(AB^*)$</td>
+<td>Hilbert–Schmidt inner product on a fibre</td>
+</tr>
+<tr>
+<td>$\hat f(\pi) = \int_G f(x)\pi(x)\,dx$</td>
+<td>The operator-valued transform</td>
+</tr>
+<tr>
+<td>$\int\|\hat f(\pi)\|_{\mathrm{HS}}^2\,d\mu_P = \int\lvert f\rvert^2\,dx$</td>
+<td>Plancherel isometry</td>
+</tr>
+<tr>
+<td>$\mathcal{F}\lambda(f)\mathcal{F}^{-1} = \int^\oplus\hat f(\pi)$</td>
+<td>Convolution becomes multiplication</td>
+</tr>
+<tr>
+<td>$\pi\otimes 1$, $1\otimes\pi^*$</td>
+<td>Fibres of the left and right regular representations</td>
+</tr>
+<tr>
+<td>$\mathcal{F}^{-1}\hat h(x) = \int\operatorname{Tr}(\hat h(\pi)\pi(x)^{-1})\,d\mu_P$</td>
+<td>Inverse (inversion formula)</td>
+</tr>
+<tr>
+<td>$f(e) = \int\operatorname{Tr}(\hat f(\pi))\,d\mu_P$</td>
+<td>Definite form as a fibre trace</td>
+</tr>
+<tr>
+<td>$L(G)\cong\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P$</td>
+<td>The group von Neumann algebra as a decomposable algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the abstract Plancherel theorem, the direct-integral decomposition and measurable fields of operators.</li>
+<li>Jacques Dixmier, <em>von Neumann Algebras</em> (North-Holland, 1981), for decomposable operators, the algebra of a direct integral and the centre of $L(G)$.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the unitary Plancherel transform and the inversion formula.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the standard form of a von Neumann algebra and the disintegration of the trace.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Wiley, 1962), for the abelian case of the Plancherel operator and its inverse.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

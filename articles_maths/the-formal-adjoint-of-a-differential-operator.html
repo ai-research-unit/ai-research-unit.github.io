@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Formal Adjoint of a Differential Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-formal-adjoint-of-a-differential-operator"><strong>The Formal Adjoint of a Differential Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>formal adjoint</strong> of a differential operator $P$ is the operator $P^*$ obtained by <strong>integrating by parts</strong>: it is the operator for which the identity $\int\langle Pu, v\rangle = \int\langle u, P^*v\rangle$ holds for all compactly supported sections. The construction is local — it uses only the metrics on the bundles and the density on the manifold — so it produces a differential operator of the same order, not a boundary condition and not a global operator. It is the algebraic skeleton of the adjoint, and it is what the global $L^2$ adjoint of the next entry is the closure of.</p>
+<p>The article develops the formal adjoint. It fixes the pairing of the sections by a density and metrics, defines $P^*$ by integration by parts, and proves that the formal adjoint of an operator of order at most $k$ is an operator of order at most $k$ and is unique; it proves the <strong>Lagrange identity</strong>, that the difference $v\,Pu - u\,P^*v$ is a divergence, hence integrable to the boundary term of <strong>Green's formula</strong>; it computes the symbol of $P^*$ as $(-1)^k$ times the adjoint of the symbol of $P$; and it treats the formally self-adjoint operators, the Sturm–Liouville operator, the divergence and the exterior derivative as the examples.</p>
+<p>The article assumes the differential operators, their order, their principal symbol and the jet-bundle theorem of <em>Differential Operators on a Manifold</em>; the covariant derivative and the curvature of <em>The Covariant Derivative</em>; the exterior derivative, the Hodge star and the codifferential of <em>The Exterior Derivative</em> and <em>The Codifferential</em>, all in this category; the Riemannian metrics, the volume form and the metrics on vector bundles of <em>Hermitian Metrics and the Levi-Civita Connection</em> and <em>Hermitian Vector Bundles and the Chern Connection</em>; the integration and Stokes' theorem of <em>Differential Forms and Stokes' Theorem</em>; and the Hermitian metrics on the fibres of <em>Hermitian Structures and the Almost Complex Structure</em>. The global adjoint — the domain, the boundary conditions, the weak formulation and the closedness — is <em>The L2 Adjoint of a Differential Operator</em>, the next entry of this group; the formulas are stated here in the form that the global theory then closes. No physics is invoked.</p>
+<h2 id="the-pairing-and-the-definition">The Pairing and the Definition</h2>
+<h3 id="the-data">The Data</h3>
+<p>Let $M$ be a smooth manifold of dimension $n$, oriented and with a fixed smooth positive <strong>density</strong> $d\mu$ — a volume form when $M$ is oriented; let $E \to M$ and $F \to M$ be vector bundles with smooth fibrewise inner products $\langle\cdot,\cdot\rangle_E$ and $\langle\cdot,\cdot\rangle_F$, real or Hermitian; and let $P : \Gamma(E)\to\Gamma(F)$ be a differential operator of order at most $k$ in the sense of <em>Differential Operators on a Manifold</em>. The <strong>pairing</strong> of two compactly supported sections is</p>
+<p>$$
+\langle u, v\rangle_{L^2} = \int_M \langle u, v\rangle\, d\mu,
+$$</p>
+<p>where the integrand is the fibrewise inner product at each point; the density is the integration measure, and no orientation is needed for it, only a top-degree positive form or a Radon measure with a smooth positive density.</p>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>formal adjoint</strong> of $P$ with respect to the densities and the metrics is a differential operator $P^* : \Gamma(F)\to\Gamma(E)$ such that</p>
+<p>$$
+\langle Pu, v\rangle_{L^2} = \langle u, P^*v\rangle_{L^2}
+$$</p>
+<p>for all $u \in \Gamma_c(E)$ and $v \in \Gamma_c(F)$ of compact support. This is the <strong>integration-by-parts</strong> identity, and it is required to hold for all pairs of compactly supported sections.</p>
+<p><strong>Theorem (existence and uniqueness).</strong> For every differential operator $P$ of order at most $k$ there is exactly one formal adjoint $P^*$, and it is a differential operator of order at most $k$. In a chart with coordinates and frames, if</p>
+<p>$$
+Pu = \sum_{|\alpha|\le k} A_\alpha(x)\,\partial_\alpha u, \qquad d\mu = \rho(x)\,dx,
+$$</p>
+<p>then</p>
+<p>$$
+P^*v = \sum_{|\alpha|\le k} (-1)^{|\alpha|}\,\partial_\alpha^{\dagger}\bigl(A_\alpha(x)^* v\bigr),
+$$</p>
+<p>where $A_\alpha^*$ is the pointwise adjoint of the coefficient matrix with respect to the two fibrewise metrics, and $\partial_\alpha^{\dagger}$ is the formal adjoint of the monomial $\partial_\alpha$ with respect to the density $\rho\,dx$;</p>
+<p>$$
+\partial_i^{\dagger} = -\partial_i - \partial_i\log\rho,
+$$</p>
+<p>so that each $\partial_\alpha^{\dagger}$ is a differential operator of order $|\alpha|$, and $P^*$ is of order at most $k$.</p>
+<p><em>Proof.</em> It is enough to treat the operator $u\mapsto A(x)\,u$ of order zero and the operator $\partial_i$, because integration by parts composes. For the order-zero operator, $\int\langle Au,v\rangle\rho\,dx = \int\langle u, A^*v\rangle\rho\,dx$ with $A^*$ the pointwise adjoint, so $(A)^* = A^*$. For the derivative,</p>
+<p>$$
+\int\langle\partial_iu,v\rangle\rho\,dx = -\int\langle u,\partial_iv\rangle\rho\,dx - \int\langle u,v\rangle\,\partial_i\rho\,dx = \int\langle u,(-\partial_i-\partial_i\log\rho)v\rangle\rho\,dx,
+$$</p>
+<p>by the Leibniz rule $\partial_i(\rho\langle u,v\rangle) = \rho\langle\partial_iu,v\rangle + \rho\langle u,\partial_iv\rangle + \partial_i\rho\,\langle u,v\rangle$ and the fundamental theorem of calculus, the boundary term vanishing for compact support. Hence $\partial_i^{\dagger} = -\partial_i-\partial_i\log\rho$. Composing the transposes in reverse order gives the displayed formula, and each term is a differential operator of the stated order. Uniqueness: if $Q$ and $Q'$ are two formal adjoints, then $\langle u,(Q-Q')v\rangle_{L^2}=0$ for all compactly supported $u$ and $v$, which forces $Q=Q'$ by the fundamental lemma of the calculus of variations, the localisation of the pairing.</p>
+<h3 id="the-boundary-term">The Boundary Term</h3>
+<p><strong>Theorem (Lagrange identity).</strong> For $P$ of order at most $k$ and sections $u,v$,</p>
+<p>$$
+\langle v, Pu\rangle - \langle u, P^*v\rangle = \operatorname{div} W(u,v)
+$$</p>
+<p>for a vector field $W(u,v)$ depending smoothly and bilinearly on $u$, $v$ and their derivatives up to order $k-1$, the divergence being taken with respect to the density $d\mu$. Integrating over a compact region $\Omega$ with smooth boundary and applying the divergence theorem,</p>
+<p>$$
+\int_\Omega \langle v, Pu\rangle\,d\mu - \int_\Omega \langle u, P^*v\rangle\,d\mu = \int_{\partial\Omega}\langle W(u,v), \nu\rangle\,dS,
+$$</p>
+<p>the <strong>Green formula</strong>, whose right-hand side is the boundary term. The formal adjoint is therefore the adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.</p>
+<p><em>Proof.</em> The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is, by the computation of the previous theorem, a sum of terms each of which is a total divergence: the integration by parts was performed by writing each term $\langle A_\alpha\partial_\alpha u,v\rangle\rho$ as $\partial(\cdots) + \langle u,(\cdots)\rangle\rho$, and the total derivatives collect into the divergence of a single vector field $W$. The Green formula is the divergence theorem of <em>Differential Forms and Stokes' Theorem</em>, with the boundary measure $dS$ and the outer normal $\nu$.</p>
+<h2 id="the-symbol-of-the-adjoint">The Symbol of the Adjoint</h2>
+<p><strong>Proposition.</strong> The formal adjoint has the same order as $P$ and its principal symbol is the adjoint of the symbol of $P$ with the sign $(-1)^k$:</p>
+<p>$$
+\sigma_k(P^*)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^* \ : \ F_x \longrightarrow E_x,
+$$</p>
+<p>the adjoint being taken with respect to the fibrewise metrics; consequently $P$ and $P^*$ have the same characteristic variety and $P$ is elliptic exactly when $P^*$ is.</p>
+<p><em>Proof.</em> The transposition of the local expression $\sum_{|\alpha|\le k}A_\alpha\partial_\alpha$ reverses the order of the factors and sends each top-order derivative $\partial_\alpha$ to $(-1)^{|\alpha|}\partial_\alpha$ up to lower-order terms, which are produced by the derivatives of the density and of the coefficients; the contributions to order $k$ come only from $|\alpha|=k$, and the density contributes a zeroth-order term. Hence the symbol of the adjoint is the adjoint matrix with the sign $(-1)^k$; the lower-order terms do not affect it. The characteristic variety is the zero set of the determinant of the symbol, which is transported to its adjoint with the same dimension and the same invertibility.</p>
+<h2 id="formally-self-adjoint-operators">Formally Self-Adjoint Operators</h2>
+<p><strong>Definition.</strong> The operator $P$ is <strong>formally self-adjoint</strong> if $P^* = P$; it is <strong>formally skew-adjoint</strong> if $P^* = -P$, and <strong>formally normal</strong> if $P^*P = PP^*$. Its formal self-adjointness is a condition on the coefficients read through the metrics and the density.</p>
+<p><strong>Proposition.</strong> A formally self-adjoint operator of order $k$ has</p>
+<p>$$
+\sigma_k(P)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^*,
+$$</p>
+<p>so its principal symbol is Hermitian for $k$ even and skew-Hermitian for $k$ odd; in particular an elliptic formally self-adjoint operator of even order has a definite symbol.</p>
+<p><em>Proof.</em> Setting $P=P^*$ in the symbol formula of the previous proposition gives the display; a matrix equal to $(-1)^k$ times its adjoint is Hermitian or skew-Hermitian according to the parity of $k$. For the ellipticity statement, the symbol of a second-order formally self-adjoint operator is a Hermitian matrix, whose determinant vanishes exactly where an eigenvalue vanishes, so the definiteness off the zero section is a nondegeneracy condition.</p>
+<p><strong>Examples.</strong> The <strong>Sturm–Liouville operator</strong> on an interval with the density $dx$ is</p>
+<p>$$
+Lu = -(p\,u')' + qu, \qquad p, q \ \text{real},
+$$</p>
+<p>and it is formally self-adjoint: $L^* = L$, because the two integrations by parts over the second-order term return the operator and the first-order terms cancel against the derivative of $p$. The <strong>Laplace–Beltrami operator</strong> $\Delta = -\operatorname{div}\nabla$ (equivalently $d\delta+\delta d$ on functions and the Laplace–de Rham operator on forms) is formally self-adjoint for the metric density, and it is the elliptic second-order self-adjoint operator of the corpus. The <strong>divergence</strong> $\operatorname{div}$, read as a map from the fields to the functions, has formal adjoint $-\nabla$, the negative gradient, read as the map from the functions to the fields; the pairing of the two is the Green formula of the vector calculus. The <strong>exterior derivative</strong> $d$ on forms has formal adjoint $\delta$, the codifferential of <em>The Codifferential</em>.</p>
+<p><strong>Example (a nonsymmetric operator).</strong> Let $X$ be a vector field and let $Pu = Xu = du(X)$ be the directional derivative, acting on functions with the metric density. Its formal adjoint is</p>
+<p>$$
+P^*v = -Xv - (\operatorname{div}X)\,v,
+$$</p>
+<p>because the integration by parts against the density produces the divergence term; hence $P$ is skew-adjoint exactly when $X$ is divergence-free, and it is not symmetric in general. The density correction is visible in the formula, and it shows that the formal adjoint depends on the density and not only on the operator's principal part.</p>
+<h2 id="the-dirichlet-form-and-the-variational-reading">The Dirichlet Form and the Variational Reading</h2>
+<p><strong>Definition.</strong> For a formally self-adjoint operator $P$ the <strong>quadratic form</strong> (or <strong>Dirichlet form</strong>) is</p>
+<p>$$
+Q(u) = \langle Pu, u\rangle_{L^2} = \int_M \langle Pu, u\rangle\, d\mu,
+$$</p>
+<p>defined on the compactly supported sections; it is real when the fibrewise metrics and the operator are real, and it is the object from which the variational characterisation of the eigenvalues and the weak solutions proceeds.</p>
+<p><strong>Proposition.</strong> For a formally self-adjoint second-order operator $P = -\nabla^*\nabla + V$ with $V$ self-adjoint, the quadratic form is</p>
+<p>$$
+Q(u) = \lVert\nabla u\rVert_{L^2}^2 + \langle Vu, u\rangle_{L^2} = \int_M\bigl(\lvert\nabla u\rvert^2 + \langle Vu,u\rangle\bigr)\,d\mu,
+$$</p>
+<p>which is the energy form of the operator; the operator is nonnegative, $P \geq 0$, when $V \geq 0$, and the association of the operator with the form is the content of the <strong>Dirichlet principle</strong>.</p>
+<p><em>Proof.</em> Integrate $\langle\nabla^*\nabla u,u\rangle = \langle\nabla u,\nabla u\rangle$ by parts, which is the adjointness of $\nabla$ and $-\nabla^*$; the identity is the metric-compatibility of the connection and the definition of $\nabla^*$ as the formal adjoint of $\nabla$. The positivity and the variational reading are then immediate from the display.</p>
+<p><strong>Remark (formal versus global).</strong> The formal adjoint is defined by the pairing of the compactly supported sections and is a differential operator; the <strong>$L^2$ adjoint</strong> is the adjoint of the closed unbounded operator on the Hilbert space $L^2$, whose domain carries the boundary conditions and whose existence requires the completeness of the space. The two agree on the overlap of their domains, and the difference is exactly the boundary term of the Lagrange identity; the passage from the one to the other, the domains, the closedness and the self-adjointness of the Laplace-type operators are <em>The L2 Adjoint of a Differential Operator</em>, the next entry of this group.</p>
+<h2 id="summary">Summary</h2>
+<p>The formal adjoint of a differential operator is defined by the integration-by-parts identity $\int\langle Pu,v\rangle d\mu=\int\langle u,P^*v\rangle d\mu$ for compactly supported sections; it exists, is unique, has the same order as the operator, and its local form is the transposed expression $\sum(-1)^{|\alpha|}\partial_\alpha^{\dagger}(A_\alpha^*v)$ with the density correction $\partial_i^{\dagger}=-\partial_i-\partial_i\log\rho$ in each derivative. The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is the divergence of a vector field, the Lagrange identity, which integrates to the boundary term of Green's formula; the formal adjoint is the true adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.</p>
+<p>The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and a skew-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d\mu = \rho\,dx$</td>
+<td>Density; the integration measure of the pairing</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_E$, $\langle\cdot,\cdot\rangle_F$</td>
+<td>Fibrewise inner products on the bundles</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle_{L^2} = \int_M\langle u,v\rangle\,d\mu$</td>
+<td>Pairing of compactly supported sections</td>
+</tr>
+<tr>
+<td>$P^*$</td>
+<td>Formal adjoint; $\langle Pu,v\rangle_{L^2}=\langle u,P^*v\rangle_{L^2}$</td>
+</tr>
+<tr>
+<td>$A_\alpha^*$, pointwise adjoint</td>
+<td>Adjoint of the coefficient matrix for the fibrewise metrics</td>
+</tr>
+<tr>
+<td>$\partial_i^{\dagger}=-\partial_i-\partial_i\log\rho$</td>
+<td>Formal adjoint of a derivative with respect to the density</td>
+</tr>
+<tr>
+<td>$P^*v=\sum(-1)^{\lvert\alpha\rvert}\partial_\alpha^{\dagger}(A_\alpha^*v)$</td>
+<td>Local formula for the formal adjoint</td>
+</tr>
+<tr>
+<td>$\langle v,Pu\rangle-\langle u,P^*v\rangle=\operatorname{div}W$</td>
+<td>Lagrange identity</td>
+</tr>
+<tr>
+<td>$\int_\Omega(\langle v,Pu\rangle-\langle u,P^*v\rangle)=\int_{\partial\Omega}\langle W,\nu\rangle\,dS$</td>
+<td>Green formula; the boundary term</td>
+</tr>
+<tr>
+<td>$\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$</td>
+<td>Symbol of the adjoint; ellipticity preserved</td>
+</tr>
+<tr>
+<td>Formally self-adjoint, skew-adjoint, normal</td>
+<td>$P^*=P$; $P^*=-P$; $P^*P=PP^*$</td>
+</tr>
+<tr>
+<td>$Q(u)=\langle Pu,u\rangle_{L^2}$</td>
+<td>Dirichlet form; energy of a self-adjoint operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael E. Taylor, <em>Partial Differential Equations</em>, vol. I (Springer, 2nd ed. 2011), for the formal adjoint, the integration by parts and the boundary terms.</li>
+<li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators</em>, vol. III (Springer, 1985), for the algebra of the differential operators, the transposition and the symbol of the adjoint.</li>
+<li>Gerald B. Folland, <em>Introduction to Partial Differential Equations</em>, 2nd ed. (Princeton University Press, 1995), for the formal adjoint, the Lagrange identity and the Green formula.</li>
+<li>Richard Courant and David Hilbert, <em>Methods of Mathematical Physics</em>, vol. I (Interscience, 1953), for the Dirichlet form, the variational reading and the boundary conditions.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Real Analysis</em> (Princeton University Press, 2005), for the integration by parts on smooth domains and the divergence theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

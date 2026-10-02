@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relation Algebras and the Converse — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relation-algebras-and-the-converse"><strong>Relation Algebras and the Converse</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The binary relations on a set carry three operations: the Boolean operations of union, intersection and
+complement, the <strong>composition</strong> $R ; S$ of two relations, and the <strong>converse</strong> $R^{-1}$ that reverses
+each ordered pair. Composition is associative, has the <strong>diagonal</strong> $\Delta = 1'$ as identity, and
+distributes over unions; the converse is an <strong>involution on the elements</strong>, reversing the order of the
+factors of a composite and commuting with the Boolean operations. A <strong>relation algebra</strong> is the
+abstract structure with those operations and the axioms they satisfy, of which the relations on a set
+form the standard example. This article states the axioms, proves that the relations on a set satisfy
+them, isolates the converse as the involution and examines its fixed part, the <strong>symmetric</strong> relations,
+and it treats the <strong>residuals</strong> of composition and the <strong>Peircean law</strong> that links the converse to
+composition through the complement.</p>
+<p>The article presupposes <em>Sets, Functions and Relations</em> — relations, their composition and their
+converse — <em>The Converse Relation as an Operator</em>, in this category, where the passage $R \mapsto
+R^{-1}$ is studied as an operator, and <em>Order Theory and Lattices</em> and <em>Boolean Algebras with an
+Involution</em>, in this group, for the Boolean operations and the complement. The article uses the
+notation of <em>The Converse Relation as an Operator</em> for the converse and writes it $R^{-1}$; the
+literature mark $\breve{R}$ is not used.</p>
+<p>Three boundaries are observed. No <strong>topology</strong> is used. The algebra of <strong>matrices over a field</strong> and
+the <strong>transpose</strong>, which is the other standard instance of a converse, are <em>Linear Spaces</em> and <em>Linear
+Algebras</em>, later in this Part, and are named only; the article works with relations on a set. The
+<strong>adjoint</strong> in the involutive sense, and the reading of the converse as an adjoint, belong to the
+<code>* Operator Theory</code> group of this category and are named only. Nothing linear and no <strong>form</strong> is used.</p>
+<h2 id="the-algebra-of-binary-relations">The Algebra of Binary Relations</h2>
+<h3 id="composition-converse-and-the-diagonal">Composition, Converse and the Diagonal</h3>
+<p>Let $X$ be a set and let $\mathcal{P}(X \times X)$ be the set of binary relations on $X$. For $R, S
+\subseteq X \times X$ put</p>
+<p>$$
+R ; S = \{(x,z) : \text{there is } y \in X \text{ with } (x,y) \in R \text{ and } (y,z) \in S\},
+\qquad R^{-1} = \{(y,x) : (x,y) \in R\},
+$$</p>
+<p>and let $\Delta = \{(x,x) : x \in X\}$ be the <strong>diagonal</strong>, written $1'$.</p>
+<p><strong>Proposition.</strong> Composition is associative, $\Delta$ is a two-sided identity for it, and composition
+distributes over unions on both sides:</p>
+<p>$$
+(R ; S) ; T = R ; (S ; T), \qquad R ; \Delta = R = \Delta ; R, \qquad
+R ; (S \cup T) = (R ; S) \cup (R ; T), \qquad (S \cup T) ; R = (S ; R) \cup (T ; R) .
+$$</p>
+<p><strong>Proof.</strong> For the associativity, $(x,w) \in (R;S);T$ if and only if there are $y,z$ with $(x,y) \in
+R$, $(y,z) \in S$, $(z,w) \in T$, which is symmetric in the two groupings. The identity and the
+distributivity are immediate from the definition, the latter because a witness $y$ for the union is a
+witness for one of the two relations.</p>
+<p><strong>Proposition.</strong> The converse reverses composition and commutes with the Boolean operations:</p>
+<p>$$
+(R^{-1})^{-1} = R, \qquad (R ; S)^{-1} = S^{-1} ; R^{-1}, \qquad
+(R \cup S)^{-1} = R^{-1} \cup S^{-1}, \qquad (\overline{R})^{-1} = \overline{R^{-1}},
+$$</p>
+<p>where $\overline{R} = (X \times X) \setminus R$. Hence $R \mapsto R^{-1}$ is an order isomorphism of
+$\mathcal{P}(X \times X)$ with its opposite, of order two, and it is the involution of the relation
+algebra.</p>
+<p><strong>Proof.</strong> The first identity is the definition read twice. For the second, $(z,x) \in (R;S)^{-1}$
+means $(x,z) \in R;S$, so there is $y$ with $(x,y) \in R$, $(y,z) \in S$; then $(z,y) \in S^{-1}$ and
+$(y,x) \in R^{-1}$, so $(z,x) \in S^{-1};R^{-1}$. The congruence for the union is the same reading, and
+the one for the complement follows because the converse is a bijection of $X \times X$.</p>
+<h3 id="the-relation-algebra-axioms">The Relation Algebra Axioms</h3>
+<p><strong>Definition.</strong> A <strong>relation algebra</strong> is a set $A$ with two binary operations $\vee$ and $;$ and a
+unary operation ${}^{-1}$ and two constants $0$ and $1'$, such that</p>
+<ol>
+<li>$(A, \vee)$ is a join-semilattice with least element $0$, and the associated order has meets and a
+   greatest element $1$, making $A$ a Boolean algebra;</li>
+<li>$;$ is associative, has identity $1'$, and distributes over $\vee$ on both sides;</li>
+<li>${}^{-1}$ is an involution with $(x \vee y)^{-1} = x^{-1} \vee y^{-1}$ and $(x ; y)^{-1} = y^{-1} ;
+   x^{-1}$;</li>
+<li>the <strong>Peircean law</strong> holds: $(x ; y) \wedge \overline{z} = 0$ implies $(x^{-1} ; z) \wedge
+   \overline{y} = 0$ and $(z ; y^{-1}) \wedge \overline{x} = 0$.</li>
+</ol>
+<p><strong>Theorem.</strong> The relations on a set $X$ form a relation algebra under union, composition, the converse
+and the constants $\emptyset$ and $\Delta$; the greatest element is $X \times X$, and the complement is
+the set complement.</p>
+<p><strong>Proof.</strong> The Boolean part is <em>Sets, Functions and Relations</em> and the power-set lattice is treated in
+<em>Order Theory and Lattices</em>; the first three axioms are the two propositions above, with the converse
+of a union and of a composite already computed. The Peircean law is proved in the next section.</p>
+<p>The axioms are those of Tarski. The relation algebra $\mathcal{P}(X \times X)$ is the standard
+<strong>proper</strong> relation algebra; an abstract relation algebra need not be of this form, and the
+representation theorem saying which are is a deeper result and is not used here.</p>
+<h3 id="the-converse-as-the-involution-and-the-symmetric-part">The Converse as the Involution and the Symmetric Part</h3>
+<p>The map $R \mapsto R^{-1}$ is the <strong>involution on the elements</strong> of the relation algebra; its fixed
+elements are the <strong>symmetric</strong> relations. The symmetry of a relation is a property of the relation,
+not of the algebra, and the fixed elements do not form a subalgebra of the relation algebra: they are
+closed under union, intersection and complement, but not under composition.</p>
+<p><strong>Proposition.</strong> The fixed elements of the involution are closed under the Boolean operations and
+contain $\emptyset$, $X \times X$ and $\Delta$, but they are not closed under composition whenever $X$
+has at least three elements.</p>
+<p><strong>Proof.</strong> If $R = R^{-1}$ and $S = S^{-1}$ then $(R \cup S)^{-1} = R^{-1} \cup S^{-1} = R \cup S$ and
+likewise for the intersection and the complement, so the fixed set is a Boolean subalgebra. For the
+composition, let $X = \{0,1,2\}$, let $R$ be the relation $\{(0,1),(1,0)\}$ and $S$ the relation
+$\{(1,2),(2,1)\}$, both symmetric; then $R ; S$ contains $(0,2)$ but not $(2,0)$, so it is not
+symmetric.</p>
+<p><strong>Proposition.</strong> Every relation $R$ decomposes as $R = R_{\mathrm{s}} \cup R_{\mathrm{a}}$ with
+$R_{\mathrm{s}} = R \cap R^{-1}$ symmetric and $R_{\mathrm{a}} = R \setminus R^{-1}$ satisfying $R_{
+\mathrm{a}} \cap R_{\mathrm{a}}^{-1} = \emptyset$.</p>
+<p><strong>Proof.</strong> The two parts are disjoint and their union is $R$; the first is fixed by the involution
+because the involution is order-reversing and of order two, and the second is disjoint from its
+converse by construction.</p>
+<h2 id="the-residuals-and-the-peircean-law">The Residuals and the Peircean Law</h2>
+<h3 id="the-residuals-of-composition">The Residuals of Composition</h3>
+<p>Composition of relations is a residuated map in each variable, in the sense of <em>Operators on a Poset</em>,
+and the residuals are computed by a universal condition.</p>
+<p><strong>Definition.</strong> For relations $R, T \subseteq X \times X$ put</p>
+<p>$$
+R \backslash T = \{(y,z) : (x,y) \in R \Rightarrow (x,z) \in T \text{ for all } x \in X\}, \qquad
+T / R = \{(x,y) : (y,z) \in R \Rightarrow (x,z) \in T \text{ for all } z \in X\} .
+$$</p>
+<p><strong>Theorem.</strong> For all relations $R, S, T$,</p>
+<p>$$
+R ; S \subseteq T \quad\Longleftrightarrow\quad S \subseteq R \backslash T \quad\Longleftrightarrow\quad
+R \subseteq T / S .
+$$</p>
+<p><strong>Proof.</strong> $R;S \subseteq T$ says that every $(x,z)$ with a witness $y$, $(x,y) \in R$, $(y,z) \in S$,
+lies in $T$. This holds if and only if for every $(y,z) \in S$ and every $x$ with $(x,y) \in R$ one has
+$(x,z) \in T$, which is $S \subseteq R \backslash T$. The second equivalence is the same statement with
+the roles of $R$ and $S$ exchanged.</p>
+<p><strong>Corollary.</strong> The maps $S \mapsto R;S$ and $R \mapsto R;S$ are residuated; the residual $R \backslash
+T$ is the greatest $S$ with $R;S \subseteq T$, and $T/R$ the greatest $R$ with $R;S \subseteq T$. The
+two residuals are related to the converse by $(R \backslash T)^{-1} = T^{-1} / R^{-1}$.</p>
+<p><strong>Proof.</strong> The residuals are the greatest solutions by the theorem and the definition of the order; the
+last identity is the definition read through the converse.</p>
+<h3 id="the-peircean-law">The Peircean Law</h3>
+<p><strong>Theorem (Peircean law).</strong> For relations $R, S, T$ on $X$ the following are equivalent:</p>
+<p>$$
+(R ; S) \cap T = \emptyset, \qquad (R^{-1} ; T) \cap S = \emptyset, \qquad
+(T ; S^{-1}) \cap R = \emptyset .
+$$</p>
+<p><strong>Proof.</strong> (1) $\Rightarrow$ (2): suppose $(R;S) \cap T = \emptyset$ and suppose some $(a,b)$ lies in
+both $R^{-1};T$ and $S$. From $(a,b) \in R^{-1};T$ there is $y$ with $(a,y) \in R^{-1}$ and $(y,b) \in
+T$, that is, $(y,a) \in R$ and $(y,b) \in T$; with $(a,b) \in S$ this gives $(y,b) \in R;S$ and $(y,b)
+\in T$, contradicting $(R;S) \cap T = \emptyset$. (1) $\Rightarrow$ (3): suppose $(a,b) \in T;S^{-1}$
+and $(a,b) \in R$; from $(a,b) \in T;S^{-1}$ there is $y$ with $(a,y) \in T$ and $(y,b) \in S^{-1}$,
+that is, $(b,y) \in S$, so $(a,y) \in R;S$ and $(a,y) \in T$, again a contradiction. The implications
+(2) $\Rightarrow$ (1) and (3) $\Rightarrow$ (1) are the same arguments read backwards, so the three
+statements are equivalent.</p>
+<p><strong>Corollary.</strong> The residual identity $R;S \subseteq T \Leftrightarrow S \subseteq R \backslash T$ and
+the Peircean law are equivalent in a relation algebra, in the presence of the other axioms; the
+Peircean law is the form in which the converse enters the residual calculus.</p>
+<p><strong>Proof.</strong> The law is the instance $T = \overline{U}$ of the residual identity, and conversely the
+residual identity follows from the law by complementing and using the Boolean axioms; the two are two
+readings of the same triangle condition.</p>
+<h2 id="summary">Summary</h2>
+<p>The relations on a set form a relation algebra: a Boolean algebra with an associative composition that
+distributes over the joins and has the diagonal as identity, and with the converse $R \mapsto R^{-1}$
+as an <strong>involution on the elements</strong> that reverses composites and commutes with the Boolean operations.
+The fixed elements of the involution are the symmetric relations, a Boolean subalgebra that is not
+closed under composition; every relation is the disjoint union of its symmetric part $R \cap R^{-1}$
+and its asymmetric part $R \setminus R^{-1}$.</p>
+<p>Composition is residuated in each variable: $R;S \subseteq T$ if and only if $S \subseteq R \backslash
+T$ if and only if $R \subseteq T/S$, with the residuals computed by a universal condition and the
+residuals exchanged by the converse. The <strong>Peircean law</strong> is the form of that residual calculus that
+uses the complement, $(R;S) \cap T = \emptyset$ implying $(R^{-1};T) \cap S = \emptyset$; it is one of
+the axioms of the abstract relation algebra, and the relations on a set satisfy it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R ; S$</td>
+<td>Composition of relations: $(x,z)$ with a witness $y$</td>
+</tr>
+<tr>
+<td>$R^{-1}$</td>
+<td>Converse of $R$; the involution on the elements</td>
+</tr>
+<tr>
+<td>$\Delta = 1'$</td>
+<td>The diagonal, the identity of composition</td>
+</tr>
+<tr>
+<td>$\overline{R}$</td>
+<td>Complement of $R$ in $X \times X$</td>
+</tr>
+<tr>
+<td>$R \backslash T$, $T / R$</td>
+<td>Right and left residuals of composition</td>
+</tr>
+<tr>
+<td>symmetric</td>
+<td>$R^{-1} = R$; the fixed elements of the involution</td>
+</tr>
+<tr>
+<td>$R_{\mathrm{s}}, R_{\mathrm{a}}$</td>
+<td>Symmetric and asymmetric parts $R \cap R^{-1}$ and $R \setminus R^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alfred Tarski, "On the calculus of relations", <em>Journal of Symbolic Logic</em> <strong>6</strong> (1941), 73–89, for the axioms of a relation algebra and the calculus of relations.</li>
+<li>Roger D. Maddux, <em>Relation Algebras</em>, Studies in Logic 150 (Elsevier, 2006), for the Peircean law, the residuals and the representation theory.</li>
+<li>Bjarni Jónsson, "Varieties of relation algebras", <em>Algebra Universalis</em> <strong>15</strong> (1982), 273–298, for the equational theory and the relation-algebra identities.</li>
+<li>Chris Brink, Wolfram Kahl and Gunther Schmidt, <em>Relational Methods in Computer Science</em> (Springer, 1997), for composition, the residuals and the residuated structure of relations.</li>
+<li>Gunther Schmidt and Thomas Ströhlein, <em>Relations and Graphs</em> (Springer, 1993), for the calculus of relations, the Peircean law and the residual operations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

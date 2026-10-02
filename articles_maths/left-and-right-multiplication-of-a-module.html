@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left and Right Multiplication of a Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="left-and-right-multiplication-of-a-module"><strong>Left and Right Multiplication of a Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An action of an algebra on a module is a rule, and a rule is an operator: the element $a$ acts on the module as the map $m \mapsto am$. This article isolates that operator — the <strong>left multiplication</strong> by an element — together with its mirror, the <strong>right multiplication</strong> by an element acting on the other side. It computes how the two compose, when they commute, and the representation of the algebra that the left multiplications together define.</p>
+<p>The object and its elementary theory are those of <em>Modules over an Algebra</em>, which owns the definition of a module, of the regular module and of the action homomorphism; the ambient ring of operators is that of <em>The Operators on an Algebra</em>. This article is the first entry of the <code>- Operator Theory</code> group of this category, so the marks fixed here — $L_a$ and $R_b$ for the one-sided multiplications, $\rho$ for the structure homomorphism, $L_A$ and $R_B$ for their images — are held by the rest of the group. Only what the one-sided operators need is proved here: the endomorphism ring that is their centralizer is the subject of <em>Module Endomorphisms</em>, its algebra structure that of <em>The Endomorphism Algebra of a Module</em>, and its units that of <em>Automorphisms of Modules over an Algebra</em>.</p>
+<p>The article stays inside Part I: no distance, norm, form, topology or limit occurs. The commutation of the two sides is pure associativity, and the representation is a ring homomorphism. Throughout, $R$ is a commutative ring with $1 \neq 0$; $A$ and $B$ are unital associative $R$-algebras, generally noncommutative; $M$ is a left $A$-module unless the side is named; and ${}_A M_B$ is an $(A,B)$-bimodule.</p>
+<h2 id="the-one-sided-multiplications">The One-Sided Multiplications</h2>
+<h3 id="left-multiplication">Left multiplication</h3>
+<p>The action of an element on a module is an additive map of the module to itself. It is in fact more, because the action is $R$-bilinear.</p>
+<p><strong>Definition.</strong> Let $M$ be a left $A$-module. For $a \in A$ the <strong>left multiplication</strong> by $a$ is the map</p>
+<p>$$
+L_a : M \to M, \qquad L_a(m) = am .
+$$</p>
+<p><strong>Proposition.</strong> For all $a, a' \in A$ and $r \in R$, the map $L_a$ lies in $\operatorname{End}_R(M)$ and</p>
+<p>$$
+L_{a+a'} = L_a + L_{a'}, \qquad L_{aa'} = L_a \circ L_{a'}, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_M .
+$$</p>
+<p>Consequently</p>
+<p>$$
+L : A \to \operatorname{End}_R(M), \qquad a \mapsto L_a,
+$$</p>
+<p>is a unital homomorphism of $R$-algebras.</p>
+<p><em>Proof.</em> Additivity of $L_a$ is the axiom $a(m+n)=am+an$, and $L_a(rm)=a(rm)=r(am)=rL_a(m)$ is the $R$-bilinearity of the action, so $L_a \in \operatorname{End}_R(M)$. The four identities are the module axioms $(a+a')m=am+a'm$, $(aa')m=a(a'm)$, $(ra)m=r(am)$ and $1m=m$, read pointwise; the last two of them say that $L$ preserves the $R$-linear structure and the unit. $\square$</p>
+<p>The image of $L$ is the set of operators by which the algebra acts,</p>
+<p>$$
+L_A = \{L_a : a \in A\} = \rho(A),
+$$</p>
+<p>and the composition law says it is a subalgebra of $\operatorname{End}_R(M)$, closed under composition and containing the identity. The notation $\rho$ for the structure homomorphism is that of <em>Modules over an Algebra</em>.</p>
+<h3 id="right-multiplication">Right multiplication</h3>
+<p>When the module is written with its scalars on the right, the element acts on the right, and the composition reverses.</p>
+<p><strong>Definition.</strong> Let $N$ be a right $B$-module. For $b \in B$ the <strong>right multiplication</strong> by $b$ is the map</p>
+<p>$$
+R_b : N \to N, \qquad R_b(n) = nb .
+$$</p>
+<p><strong>Proposition.</strong> For all $b, b' \in B$ and $r \in R$, the map $R_b$ lies in $\operatorname{End}_R(N)$ and</p>
+<p>$$
+R_{b+b'} = R_b + R_{b'}, \qquad R_{bb'} = R_{b'} \circ R_b, \qquad R_{rb} = rR_b, \qquad R_1 = \mathrm{id}_N .
+$$</p>
+<p>Hence $R : B \to \operatorname{End}_R(N)$ is a unital anti-homomorphism of $R$-algebras, equivalently the unital homomorphism</p>
+<p>$$
+R : B^{\mathrm{op}} \to \operatorname{End}_R(N), \qquad b \mapsto R_b,
+$$</p>
+<p>where $B^{\mathrm{op}}$ is the opposite algebra.</p>
+<p><em>Proof.</em> The additive and scalar identities are the right-module axioms as before. For the product, $R_{bb'}(n)=n(bb')=(nb)b'=R_{b'}(nb)=R_{b'}(R_b(n))$, so $R_{bb'}=R_{b'}R_b$, which is the reversed composition; reversing the product of $B$ turns an anti-homomorphism into a homomorphism. $\square$</p>
+<p>Thus the two sides are not symmetric in the algebra: the left action is a homomorphism, the right action is a homomorphism of the opposite algebra. This is the module-level form of the asymmetry recorded in <em>Modules over an Algebra</em> for the regular module.</p>
+<h3 id="the-two-sides-on-one-object">The two sides on one object</h3>
+<p>An $(A,B)$-bimodule carries both actions, and the two are required to commute.</p>
+<p><strong>Definition.</strong> Let $M$ be an $(A,B)$-bimodule. Its <strong>two-sided operators</strong> are the composites $L_aR_b$ and $R_bL_a$, with $a \in A$, $b \in B$.</p>
+<p><strong>Proposition.</strong> On a bimodule the two sides commute,</p>
+<p>$$
+L_a R_b = R_b L_a \qquad (a \in A,\ b \in B),
+$$</p>
+<p>and this identity is exactly the bimodule axiom $a(mb)=(am)b$.</p>
+<p><em>Proof.</em> Evaluating both sides at $m$ gives $a(mb)$ and $(am)b$, which the bimodule axiom declares equal. $\square$</p>
+<p>The proposition is the reason the two-sided operators of the following articles — the sandwich and its signed twist — are well defined as single maps.</p>
+<h2 id="commutation-of-the-one-sided-actions">Commutation of the One-Sided Actions</h2>
+<h3 id="the-converse-reading">The converse reading</h3>
+<p>The commutation above was derived from the bimodule axiom; it also generates it.</p>
+<p><strong>Theorem.</strong> Let an abelian group $M$ carry a left $A$-action and a right $B$-action. Then $M$ is an $(A,B)$-bimodule exactly when the two actions commute.</p>
+<p><em>Proof.</em> If $M$ is a bimodule the axiom gives the commutation. Conversely, if $am$ and $mb$ are defined for all $a,m,b$, each turning $M$ into a module on its side, and if $L_aR_b=R_bL_a$ for all $a,b$, then $a(mb)=(am)b$, which is the only clause joining the two actions. $\square$</p>
+<h3 id="the-general-failure">The general failure</h3>
+<p>For a left module alone the map $R_b$ is not defined, so there is nothing to commute. The failure is visible already on the algebra: $L_a(b)=ab$ and $L_b(a)=ba$ need not agree, and $L_a$ is not an endomorphism of the left regular module when $a$ is not central.</p>
+<p><strong>Proposition.</strong> On ${}_A A$ the left multiplication $L_a$ is $A$-linear exactly when $a \in Z(A)$; the right multiplication $R_a$ is $A$-linear for every $a$.</p>
+<p><em>Proof.</em> $L_a(bc)=abc$ while $bL_a(c)=bac$, and these agree for all $b,c$ exactly when $a$ is central. For the right multiplication, $R_a(bc)=(bc)a=b(ca)=bR_a(c)$. $\square$</p>
+<p>This is the asymmetry of <em>Automorphisms of Modules over an Algebra</em> seen from the operator side: the endomorphisms of the regular module are the right multiplications, not the left ones.</p>
+<h3 id="the-centralizer-of-one-side">The centralizer of one side</h3>
+<p>The two one-sided images are mutual centralizers on the regular module.</p>
+<p><strong>Proposition.</strong> In $\operatorname{End}_R(A)$ the centralizer of $L_A$ is $R_A$ and the centralizer of $R_A$ is $L_A$:</p>
+<p>$$
+L_A' = R_A, \qquad R_A' = L_A .
+$$</p>
+<p><em>Proof.</em> A map $f$ commutes with every $L_a$ exactly when $f(ab)=a f(b)$ for all $a,b$, that is, when $f$ is $A$-linear; by <em>Automorphisms of Modules over an Algebra</em> the $A$-linear endomorphisms of ${}_A A$ are the right multiplications, so $L_A'=R_A$. The second identity is the same statement read in $A^{\mathrm{op}}$, or directly: $f(bc)=f(b)c$ for all $b,c$ says $f=R_{f(1)}$. $\square$</p>
+<h2 id="the-representation-they-define">The Representation They Define</h2>
+<h3 id="the-structure-homomorphism">The structure homomorphism</h3>
+<p>The map $L$ is not an auxiliary device; it is the module.</p>
+<p><strong>Proposition.</strong> Giving $M$ the structure of a left $A$-module is the same as giving a unital $R$-algebra homomorphism $\rho : A \to \operatorname{End}_R(M)$; the operator $L_a$ is the image of $a$.</p>
+<p><em>Proof.</em> The axioms of a left module are the axioms of a unital ring homomorphism, as <em>Modules over an Algebra</em> records. $\square$</p>
+<p>The kernel of $\rho$ is the <strong>annihilator</strong> of the module,</p>
+<p>$$
+\operatorname{Ann}_A(M) = \{a \in A : am = 0 \text{ for all } m \in M\},
+$$</p>
+<p>a two-sided ideal, and $M$ is <strong>faithful</strong> when $\rho$ is injective, equivalently when $\operatorname{Ann}_A(M)=0$. The first isomorphism theorem for rings gives</p>
+<p>$$
+L_A = \rho(A) \cong A / \operatorname{Ann}_A(M)
+$$</p>
+<p>as $R$-algebras, so the image of the action is the quotient of the algebra by the ideal that acts trivially. Enlarging $A$ by an ideal inside the annihilator changes nothing: the operators, and therefore the module, are the same.</p>
+<h3 id="faithfulness">Faithfulness</h3>
+<p>Faithfulness is a property of the action, not of the module.</p>
+<p><strong>Proposition.</strong> Let $M$ be a left $A$-module and let $a \in A$ with $L_a = 0$. Then $a \in \operatorname{Ann}_A(M)$. The algebra generated by the one-sided multiplications is $\rho(A)$, and it is a faithful $A/\operatorname{Ann}_A(M)$-module.</p>
+<p><em>Proof.</em> $L_a=0$ says $am=0$ for all $m$, which is the definition of the annihilator; the rest is the isomorphism above. $\square$</p>
+<h3 id="where-the-two-sided-operators-act">Where the two-sided operators act</h3>
+<p>For a bimodule the two images commute, so the algebra generated by all the one-sided operators is the image of the tensor product.</p>
+<p><strong>Proposition.</strong> Let ${}_A M_B$ be a bimodule and let $C$ be the $R$-subalgebra of $\operatorname{End}_R(M)$ generated by $L_A \cup R_B$. Then $C$ is the $R$-span of the products $L_aR_b$, and</p>
+<p>$$
+C \cong (A \otimes_R B^{\mathrm{op}}) / \operatorname{Ann},
+$$</p>
+<p>for the kernel $\operatorname{Ann}$ of the map $A \otimes_R B^{\mathrm{op}} \to \operatorname{End}_R(M)$ that sends $a \otimes b$ to $L_aR_b$.</p>
+<p><em>Proof.</em> The commuting of the two sides lets every word in the generators be written as a sum of products $L_{a_1}\cdots L_{a_k}R_{b_1}\cdots R_{b_l}=L_{a_1\cdots a_k}R_{b_1\cdots b_l}=L_{a}R_{b}$ with $a=\prod a_i$, $b=\prod b_j$, so the span of these products is closed under composition and contains the identity: it is $C$. The assignment $a \otimes b \mapsto L_aR_b$ is $R$-bilinear, hence a homomorphism $A \otimes_R B^{\mathrm{op}} \to \operatorname{End}_R(M)$ by the universal property of the tensor product, and its image is the span of the $L_aR_b$. The first isomorphism theorem gives the displayed quotient. $\square$</p>
+<p>The construction is the algebra-level form of the commuting actions, and it is the reason a bimodule over $A$ is the same thing as a module over $A \otimes_R A^{\mathrm{op}}$; the tensor product of algebras is the subject of <em>Tensor Products of Algebras</em>.</p>
+<h3 id="the-double-centralizer-named">The double centralizer, named</h3>
+<p>The commutant of one side is computable from the other, and the two fit into a longer chain that is not developed here.</p>
+<p><strong>Proposition.</strong> Let $M$ be a bimodule as above and let $C = L_A R_B$. Then the centralizer of $C$ in $\operatorname{End}_R(M)$ is the set of maps commuting with both sides. In particular, if $B = A$ and the right action is the opposite of the left, the centralizer of $L_A$ is $\operatorname{End}_A(M)$.</p>
+<p><em>Proof.</em> $f$ commutes with all products $L_aR_b$ exactly when it commutes with each of $L_a$ and $R_b$, since these are among the products. $\square$</p>
+<p>The inclusion $L_A R_B \subseteq \operatorname{End}_{C'}(M)$ is the <strong>double centralizer</strong> or bicommutant relation; the theorem that it is an equality when $M$ is a faithful finite-dimensional module over a simple algebra is stated in the literature and is not used here. The endomorphism ring on the other side of the relation is the subject of the next article.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) A field.</strong> If $A=F$ is a field, then $L_\lambda = \lambda\,\mathrm{id}_M$ and $L_F = F\cdot\mathrm{id}_M$, a one-dimensional algebra of operators; every $F$-linear map is $A$-linear, and $L_F' = \operatorname{End}_F(M)$.</p>
+<p><strong>(b) The regular module.</strong> For $M={}_A A$, the left multiplications are $L_a(b)=ab$ with $L_A \cong A$, and the right multiplications are $R_a(b)=ba$ with $R_A \cong A^{\mathrm{op}}$; the two commute by associativity, so ${}_A A_A$ is a bimodule, and the products $L_aR_b$ are the two-sided operators of that bimodule.</p>
+<p><strong>(c) The free module.</strong> For $M={}_A A^n$, the action is componentwise and $L_A \cong A$ when $A$ is nonzero, because $L_a=0$ forces $a=0$ by acting on the first basis vector; the one-sided multiplications are the scalar multiplications on the free module, and the matrices appear only among the endomorphisms of $M$, not among its multiplications.</p>
+<p><strong>(d) The defining module of a matrix algebra.</strong> For $A=M_n(F)$ and $M=F^n$, the map $L : M_n(F) \to \operatorname{End}_F(F^n)$ is an isomorphism: the left multiplications are exactly the matrices. Consequently $L_A = \operatorname{End}_F(M)$, and its centralizer is $F\cdot\mathrm{id}_M$, the scalars; the general module theory of this case is that of <em>Automorphisms of Modules over an Algebra</em>.</p>
+<p><strong>(e) The quaternions.</strong> For $A=\mathbb{H}$ and $M=\mathbb{H}$ the left multiplications are the left quaternion multiplications and $L_{\mathbb{H}} \cong \mathbb{H}$; the right multiplications are the right quaternion multiplications, $R_{\mathbb{H}} \cong \mathbb{H}^{\mathrm{op}} \cong \mathbb{H}$, and $L_{\mathbb{H}}' = R_{\mathbb{H}}$. Right multiplication by a non-real quaternion is not a left multiplication, so the two four-dimensional images are distinct inside $\operatorname{End}_{\mathbb{R}}(\mathbb{H}) \cong M_4(\mathbb{R})$.</p>
+<p><strong>(f) The biquaternions.</strong> For $A=\mathbb{B} \cong M_2(\mathbb{C})$ over $\mathbb{C}$ and $M=\mathbb{C}^2$, the left multiplications reproduce the matrices, $L_{\mathbb{B}} \cong \mathbb{B}$, and the right multiplications give $\mathbb{B}^{\mathrm{op}} \cong \mathbb{B}$; the two images are distinct.</p>
+<p><strong>(g) A commutative algebra.</strong> If $A$ is commutative then $L_a = R_a$ as operators on ${}_A A$, and the distinction between the two sides disappears, exactly as it does for the module structure itself.</p>
+<h2 id="summary">Summary</h2>
+<p>A left $A$-module $M$ carries, for each $a \in A$, the $R$-linear operator $L_a(m)=am$, and the assignment $a \mapsto L_a$ is a unital $R$-algebra homomorphism $L : A \to \operatorname{End}_R(M)$ whose image $L_A$ is the algebra of operators by which $A$ acts; giving the module structure is the same as giving this homomorphism, and $L_A \cong A/\operatorname{Ann}_A(M)$. A right $B$-module carries the operators $R_b(n)=nb$, and $R : B \to \operatorname{End}_R(N)$ is a unital anti-homomorphism, equivalently a homomorphism of $B^{\mathrm{op}}$. On an $(A,B)$-bimodule both sides are defined and commute, $L_aR_b=R_bL_a$, and the commutation is the bimodule axiom; conversely two commuting actions make the object a bimodule. The left multiplications alone do not commute with each other, and on the regular module $L_a$ is $A$-linear only when $a$ is central, while $R_a$ always is: the two images are mutual centralizers, $L_A'=R_A$ and $R_A'=L_A$. The algebra generated by the two sides of a bimodule is the image of $A \otimes_R B^{\mathrm{op}}$ under $a \otimes b \mapsto L_aR_b$, which is the algebra-level form of the commuting actions. The commutant $L_A'$ on a module is the endomorphism ring, which is the subject of the next article; the double centralizer statement that would close the chain is named and not used.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$</td>
+<td>commutative ring with identity $1 \neq 0$</td>
+</tr>
+<tr>
+<td>$A$, $B$</td>
+<td>unital associative $R$-algebras, generally noncommutative</td>
+</tr>
+<tr>
+<td>$M$, $N$</td>
+<td>modules; $M$ a left $A$-module unless the side is named</td>
+</tr>
+<tr>
+<td>${}_A M_B$</td>
+<td>$(A,B)$-bimodule, with commuting left $A$- and right $B$-actions</td>
+</tr>
+<tr>
+<td>$L_a(m)=am$</td>
+<td>left multiplication by $a$, an operator in $\operatorname{End}_R(M)$</td>
+</tr>
+<tr>
+<td>$R_b(n)=nb$</td>
+<td>right multiplication by $b$, an operator in $\operatorname{End}_R(N)$</td>
+</tr>
+<tr>
+<td>$L : A \to \operatorname{End}_R(M)$</td>
+<td>the structure homomorphism, $a \mapsto L_a$</td>
+</tr>
+<tr>
+<td>$R : B^{\mathrm{op}} \to \operatorname{End}_R(N)$</td>
+<td>the right action read as a homomorphism</td>
+</tr>
+<tr>
+<td>$L_A$, $R_B$</td>
+<td>the images of the two actions</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the structure homomorphism, $=\rho(a)(m)=am$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ann}_A(M)$</td>
+<td>annihilator of $M$, the kernel of $\rho$</td>
+</tr>
+<tr>
+<td>${}_A A$, $A_A$</td>
+<td>left and right regular modules</td>
+</tr>
+<tr>
+<td>$A^{\mathrm{op}}$</td>
+<td>opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>center of $A$</td>
+</tr>
+<tr>
+<td>$L_A'$</td>
+<td>centralizer of $L_A$ in $\operatorname{End}_R(M)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, second edition, 1992), for the action homomorphism, the annihilator and the regular module.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em> (Springer, 1989), for the correspondence between modules and algebra homomorphisms and for the bimodule axioms.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for the one-sided multiplications and the opposite algebra.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the centralizer description of the endomorphism ring and the double centralizer theorem.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, second edition, 2009), for bimodules and the tensor product of algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

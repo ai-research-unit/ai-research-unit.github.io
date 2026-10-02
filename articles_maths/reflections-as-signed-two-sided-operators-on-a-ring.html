@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-a-ring"><strong>Reflections as Signed Two-Sided Operators on a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Among the signed two-sided operators of a graded ring, the ones of order two have a special place: they are the <strong>reflections</strong>. If $A$ carries a grade involution $\alpha$ and $u$ is a unit, the signed inner conjugation
+$$r_u(x) = u\,\alpha(x)\,u^{-1}$$
+is an automorphism of $A$ for every unit $u$, and it is an involution precisely when $u\alpha(u)$ is central. This article studies the reflections as a class: the correspondence between a reflection and the unit that defines it, the subgroup and coset structure they carry inside $\operatorname{Aut}(A)$, the criterion that singles out the involutive ones, and the degenerate cases in which the correspondence fails.</p>
+<p>A reflection is not a new kind of operator — it is the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}} = \operatorname{conj}_u\circ\alpha$ of <em>The Signed Sandwich on a Ring</em> — but it is the one class of two-sided operators that acts on the elements as an automorphism of order two, and it is the algebraic skeleton of the geometric reflection of a quadratic space. That geometric reading requires forms and belongs to Part II and Part VI; nothing here measures an angle, a length or a distance, and "reflection" is a purely operator-theoretic name for an order-two automorphism of this shape.</p>
+<p>Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a grade involution, $\alpha^2 = \mathrm{id}$; $A^\times$ and $Z(A)$ are the unit group and the centre; $\operatorname{conj}_u(x) = uxu^{-1}$ is the inner automorphism; and $r_u = \operatorname{conj}_u\circ\alpha$ is the reflection by the unit $u$. The set-theoretic and coset facts about $\operatorname{Inn}(A)$ are from <em>Inner Automorphisms of a Ring</em>.</p>
+<h2 id="reflections-as-operators">Reflections as Operators</h2>
+<h3 id="the-reflection-by-a-unit">The reflection by a unit</h3>
+<p><strong>Definition.</strong> Let $u \in A^\times$. The <strong>reflection</strong> by $u$ is the operator</p>
+<p>$$
+r_u : A \to A, \qquad r_u(x) = u\,\alpha(x)\,u^{-1} .
+$$</p>
+<p>It is the signed inner conjugation of <em>The Signed Sandwich on a Ring</em>, the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$.</p>
+<p><strong>Proposition.</strong> For every unit $u$, $r_u$ is a unital ring automorphism of $A$, equal to the composite</p>
+<p>$$
+r_u = \operatorname{conj}_u \circ \alpha = \alpha \circ \operatorname{conj}_{\alpha(u)},
+$$</p>
+<p>with inverse $r_u^{-1} = r_{\alpha(u)^{-1}}$; and for all units $u, v$,</p>
+<p>$$
+r_u \circ r_v = \operatorname{conj}_{u\,\alpha(v)}, \qquad r_u = r_v \iff uv^{-1} \in Z(A).
+$$</p>
+<p><strong>Proof.</strong> $r_u = \operatorname{conj}_u\alpha$ is a composite of automorphisms, hence an automorphism. The identity $\operatorname{conj}_u\alpha = \alpha\operatorname{conj}_{\alpha(u)}$ is $\alpha\operatorname{conj}_{\alpha(u)}(x) = \alpha(\alpha(u)x\alpha(u)^{-1}) = u\alpha(x)u^{-1}$. The inverse: $\alpha\operatorname{conj}_{\alpha(u)}$ composed with $\alpha\operatorname{conj}_{\alpha(u)^{-1}}$... equivalently $r_u r_{\alpha(u)^{-1}}(x) = u\alpha(\alpha(u)^{-1}\alpha(x)\alpha(u))u^{-1} = u\alpha(\alpha(u)^{-1})x\alpha(\alpha(u))u^{-1} = u\alpha(u)^{-1}x\alpha(u)u^{-1} = x$. For the product, $r_ur_v = \operatorname{conj}_u\alpha\operatorname{conj}_v\alpha = \operatorname{conj}_u\operatorname{conj}_{\alpha(v)}\alpha^2 = \operatorname{conj}_{u\alpha(v)}$. Finally $r_u=r_v \iff \operatorname{conj}_u = \operatorname{conj}_v$, and that holds exactly when $uv^{-1}\in Z(A)$.</p>
+<p><strong>Corollary.</strong> The assignment $u \mapsto r_u$ is a well-defined injective map $A^\times/Z(A)^\times \to \operatorname{Aut}(A)$ whose image is the coset $\operatorname{Inn}(A)\,\alpha$ of the subgroup $\operatorname{Inn}(A)$ generated with $\alpha$: the reflections are the elements of $\operatorname{Aut}(A)$ of the form (an inner automorphism)$\circ\alpha$. In particular, the number of distinct reflections equals the order of the inner automorphism group at the units, $|A^\times / Z(A)^\times|$.</p>
+<p><strong>Remark.</strong> The reflections do not form a subgroup of $\operatorname{Aut}(A)$: the product of two of them is the <strong>inner automorphism</strong> $\operatorname{conj}_{u\alpha(v)}$, not a reflection, by the proposition. They form a coset of $\operatorname{Inn}(A)$ in the subgroup generated by $\operatorname{Inn}(A)$ and $\alpha$, so a reflection composed with a reflection is never a reflection (unless $\operatorname{Inn}(A)$ is trivial).</p>
+<h2 id="when-a-reflection-is-an-involution">When a Reflection is an Involution</h2>
+<h3 id="the-criterion">The criterion</h3>
+<p><strong>Theorem (the order-two criterion).</strong> Let $u \in A^\times$. The reflection $r_u$ is an involution, $r_u^2 = \mathrm{id}$, if and only if</p>
+<p>$$
+u\,\alpha(u) \in Z(A).
+$$</p>
+<p>When this holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two.</p>
+<p><strong>Proof.</strong> From the product formula, $r_u^2 = r_u r_u = \operatorname{conj}_{u\alpha(u)}$, and an inner automorphism is the identity exactly when its conjugating element is central, by <em>Inner Automorphisms of a Ring</em>. Hence $r_u^2 = \mathrm{id} \iff u\alpha(u) \in Z(A)$.</p>
+<p><strong>Corollary.</strong> If $u$ is fixed by $\alpha$ then $u\alpha(u) = u^2$ and $r_u$ is an involution exactly when $u^2$ is central; if $u$ is negated by $\alpha$ and $2$ is invertible then $u\alpha(u) = -u^2$, again central exactly when $u^2$ is central. In both parities the criterion reduces to $u^2 \in Z(A)$.</p>
+<h3 id="the-correspondence-with-the-elements">The correspondence with the elements</h3>
+<p>The criterion organises the units into those that act by an involution and those that act by an automorphism of larger order.</p>
+<p><strong>Definition.</strong> A unit $u$ is a <strong>reflecting element</strong> of $(A,\alpha)$ when $u\alpha(u) \in Z(A)$; equivalently, when the reflection $r_u$ is an involution.</p>
+<p><strong>Proposition.</strong> The reflecting elements form a subgroup $A^\times_{\mathrm{refl}}$ of $A^\times$ containing $Z(A)^\times$, and the map $u \mapsto r_u$ induces a bijection</p>
+<p>$$
+A^\times_{\mathrm{refl}} / Z(A)^\times \;\longrightarrow\; \{\text{involutive reflections}\},
+$$</p>
+<p>so the involutive reflections are in bijection with the reflecting units modulo the centre. The larger set of all reflections is in bijection with $A^\times/Z(A)^\times$.</p>
+<p><strong>Proof.</strong> If $u\alpha(u)$ and $v\alpha(v)$ are central, then $(uv)\alpha(uv) = u v \alpha(u)\alpha(v) = u\alpha(u)\,v\alpha(v)$ is central, since $\alpha$ is a homomorphism and central elements commute; and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ is central. So the reflecting elements form a subgroup, and the bijection is the restriction of the map of the proposition above, whose kernel is $Z(A)^\times$.</p>
+<p><strong>Example.</strong> In $A = M_2(k)$ with $J = \operatorname{diag}(1,-1)$ and $\alpha = \operatorname{conj}_J$, the unit $u = E_{12} + E_{21}$ has $\alpha(u) = -u$ and $u\alpha(u) = -u^2 = -I$, which is central; so $u$ is a reflecting element and $r_u$ is an involution. The unit $I + E_{12}$ acts by $\alpha = \mathrm{id}$, and $(I+E_{12})^2 = I + 2E_{12}$ is not central, so it is not a reflecting element and $r_{I+E_{12}} = \operatorname{conj}_{I+E_{12}}$ has infinite order in characteristic $0$.</p>
+<h2 id="degenerate-cases">Degenerate Cases</h2>
+<h3 id="non-units">Non-units</h3>
+<p>The construction uses $u^{-1}$, and the criterion uses $u\alpha(u)$. If $u$ is a zero divisor the operator $x \mapsto u\alpha(x)u^{-1}$ is not defined, and the multiplication $x \mapsto u\alpha(x)$ alone is the signed <strong>left</strong> multiplication of <em>The Signed Left Multiplication on a Ring</em>, not a reflection. The correspondence between reflections and elements therefore has domain the units, and it does not extend to the zero divisors.</p>
+<h3 id="non-central-math106">Non-central $u\alpha(u)$</h3>
+<p>If $u$ is a unit but $u\alpha(u) \notin Z(A)$, then $r_u$ is an automorphism and not an involution: its square is the nontrivial inner automorphism $\operatorname{conj}_{u\alpha(u)}$, and $r_u$ has infinite order in characteristic $0$ as soon as some power of $u\alpha(u)$ is non-central. The reflection exists — it is a signed two-sided operator, and $r_u = \operatorname{conj}_u\alpha$ — but it is not of order two, and the name "reflection" must then be carried only by the criterion and not by the operator.</p>
+<h3 id="the-trivial-grading">The trivial grading</h3>
+<p>If $\alpha = \mathrm{id}$, every reflection is the inner conjugation $r_u = \operatorname{conj}_u$, and the criterion reads $u^2 \in Z(A)$; the involutive reflections are the self-inverse inner automorphisms. For a commutative ring $\operatorname{Inn}(A) = 1$, all reflections are the identity, and the class is degenerate. In characteristic $2$ the decomposition into even and odd parts fails, since $-1 = 1$ and the equation $\alpha(x) = -x$ is $\alpha(x) = x$; the only grade involution that is not the identity on the $p$-th-power structure is the Frobenius-related one of <em>The Frobenius Operator on a Field of Characteristic p</em>, and a reflection with $\alpha = \mathrm{id}$ is again an inner conjugation.</p>
+<h3 id="the-fixed-subring">The fixed subring</h3>
+<p><strong>Proposition.</strong> For a unit $u$, the fixed set of the reflection $r_u$ is the subring</p>
+<p>$$
+A^{r_u} = \{x \in A : \alpha(x) = \operatorname{conj}_{u^{-1}}(x)\},
+$$</p>
+<p>which contains the central even elements $Z(A) \cap A_{\bar 0}$.</p>
+<p><strong>Proof.</strong> The fixed set of an automorphism is a subring: if $r_u(x) = x$ and $r_u(y) = y$ then $r_u(x \pm y) = x \pm y$ and $r_u(xy) = xy$, and $r_u(1) = 1$. Rewriting $r_u(x) = x$ as $u\alpha(x)u^{-1} = x$ and multiplying by $u^{-1}$ on the left and $u$ on the right gives the displayed description. A central element $z$ with $\alpha(z) = z$ satisfies $\operatorname{conj}_{u^{-1}}(z) = z = \alpha(z)$, so it lies in $A^{r_u}$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a ring $A$ with grade involution $\alpha$ and a unit $u$, the <strong>reflection</strong> $r_u(x) = u\alpha(x)u^{-1}$ is the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ and the composite $\operatorname{conj}_u\circ\alpha$; it is an automorphism with inverse $r_{\alpha(u)^{-1}}$, two reflections agree exactly when their units differ by a central unit, and the product of two reflections is the inner automorphism $\operatorname{conj}_{u\alpha(v)}$. The reflections are therefore the coset $\operatorname{Inn}(A)\alpha$ inside the subgroup generated by the inner automorphisms and $\alpha$, indexed by $A^\times/Z(A)^\times$, and they do not form a subgroup.</p>
+<p>The reflection $r_u$ is an involution exactly when $u\alpha(u)$ is central; the units satisfying this are the <strong>reflecting elements</strong>, they form a subgroup containing the centre, and the involutive reflections are in bijection with the reflecting elements modulo the centre. The correspondence fails at three points: non-units are excluded because the construction needs $u^{-1}$; a unit with non-central $u\alpha(u)$ gives a reflection that is not of order two; and when $\alpha = \mathrm{id}$ (as in a commutative ring, or in characteristic $2$ with the trivial grading) the reflections collapse to the inner conjugations. The fixed set of a reflection is the subring where $\alpha$ and $\operatorname{conj}_{u^{-1}}$ agree. No form, length or angle is used; the geometric reflection of a quadratic space is a Part II and Part VI reading of the same operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\alpha$</td>
+<td>Ring with $1 \neq 0$ and its grade involution, $\alpha^2 = \mathrm{id}$</td>
+</tr>
+<tr>
+<td>$r_u(x) = u\alpha(x)u^{-1}$</td>
+<td>Reflection by a unit $u$; the signed inner conjugation</td>
+</tr>
+<tr>
+<td>$r_u = \operatorname{conj}_u\circ\alpha = S^{\alpha}_{u,u^{-1}}$</td>
+<td>The reflection as an inner automorphism composed with $\alpha$</td>
+</tr>
+<tr>
+<td>$r_ur_v = \operatorname{conj}_{u\alpha(v)}$</td>
+<td>Product of two reflections is inner</td>
+</tr>
+<tr>
+<td>$r_u = r_v \iff uv^{-1} \in Z(A)$</td>
+<td>Reflections indexed by $A^\times/Z(A)^\times$</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}(A)\alpha$</td>
+<td>The reflections as a coset of the inner automorphism group</td>
+</tr>
+<tr>
+<td>$r_u^2 = \operatorname{conj}_{u\alpha(u)}$</td>
+<td>Square of a reflection</td>
+</tr>
+<tr>
+<td>$u\alpha(u) \in Z(A)$</td>
+<td>Criterion for $r_u$ to be an involution</td>
+</tr>
+<tr>
+<td>$A^\times_{\mathrm{refl}}$</td>
+<td>Reflecting elements: units with $u\alpha(u)$ central</td>
+</tr>
+<tr>
+<td>$\{x : \alpha(x) = \operatorname{conj}_{u^{-1}}(x)\}$</td>
+<td>Fixed set of the reflection $r_u$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the reflection of a vector space as a signed inner conjugation and its relation to the unit group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for reflections, their inverses and the parity sign.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the involutions of a ring and the automorphisms of order two they define.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for inner automorphisms of order two and the centrality of the conjugating element.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

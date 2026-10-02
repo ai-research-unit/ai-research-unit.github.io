@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Operators of a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-operators-of-a-symmetry-group"><strong>Unitary Operators of a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators that preserve the invariant form are the <strong>unitary operators</strong>, and they form a group: the <strong>unitary group</strong> $U(V,h)$ of the form. A symmetry group is by definition a subgroup of it, so every symmetry group sits inside a maximal symmetry group of the chosen form, and the difference between the two is the geometry the form carries that the group does not use. The same construction on the space of functions of the group gives the operators of the regular representation, and the homomorphisms of a group into a unitary group are the <strong>unitary representations</strong>, the objects the analysis of Part III is built on.</p>
+<p>The article treats the unitary group of the invariant form, the unitary operators of a symmetry group and the group they form, the unitary representations and the unitarisation, and the unitary operators on the function space of the group. The adjoint and the unitarity of a single operator are <em>The Adjoint of a Symmetry Operator</em>, the previous article; the operators of the symmetry group are <em>Operators on a Symmetry Group</em> and <em>The Symmetry Operators of a Space</em>; the classical groups as the unitary groups of the forms are <em>Isometries and Orthogonal Transformations</em>, <em>The Unitary and Symplectic Groups</em> and <em>The Adjoint of a Symmetry Operator</em>; the representations, the complete reducibility, the unitarisation of a representation of a compact group and the regular representation are <em>Representations of Groups</em>, <em>The Left and Right Regular Representation</em>, <em>The Peter–Weyl Theorem</em> and <em>Noncommutative Harmonic Analysis</em>, in Part III, and are cited, not restated. The unitary operators in the complex-vector-space setting are <em>Unitary Operators of an Involutive Algebra</em>, Part I, and are treated further in <em>Geometry on Linear Spaces</em>, written in parallel. The <strong>adjoint</strong> is the subject of this group; the involution on the <strong>elements</strong> was the previous group.</p>
+<p>The article has four sections: the unitary group of the form; the unitary operators of a symmetry group; the unitary representations; and the worked cases. Throughout, $h$ is a non-degenerate form on $V$ — quadratic, bilinear or Hermitian — invariant under a symmetry group $G$, and $U(V,h)$ is the group of operators preserving it.</p>
+<h2 id="the-unitary-group-of-the-form">The Unitary Group of the Form</h2>
+<h3 id="the-group">The Group</h3>
+<p><strong>Definition.</strong> The <strong>unitary group</strong> of the form is</p>
+<p>$$
+U(V,h) = \{T \in GL(V) : h(Tu,Tv) = h(u,v)\} = \{T : T^{*} = T^{-1}\} = \{T : T^{*}T = \operatorname{id}\},
+$$</p>
+<p>the group of all operators of a space with the form that preserve it; the three descriptions agree by the unitarity theorem of <em>The Adjoint of a Symmetry Operator</em>.</p>
+<p><strong>Proposition.</strong> The unitary group is a subgroup of $GL(V)$, closed under the adjoint and in the Zariski topology, and equal to the isometry group of $h$; it is the <strong>maximal</strong> symmetry group of the form, in the sense that every symmetry group of the form is a subgroup of it. In the definite case it is compact; the classical instances are the orthogonal group $O(V,Q)$ of a symmetric form, the unitary group $U(V,h)$ of a Hermitian form and the symplectic group $Sp(V,\omega)$ of an alternating form, each the unitary group of its form, <em>The Unitary and Symplectic Groups</em>.</p>
+<p><strong>Proof.</strong> The group properties are the multiplicativity of the form and the closure of the conditions; maximality is the definition, an isometry of $h$ being exactly an element of $U(V,h)$; compactness in the definite case is that the group is closed and bounded in $GL(V)$, and the identifications of the classical cases are the definitions.</p>
+<p><strong>Remark.</strong> The unitary group depends on the form, not on the vector space alone: $O(p,q)$ and $O(n)$ are the unitary groups of different forms on the same space, and they are not isomorphic. The maximal symmetry group is the geometric datum.</p>
+<h3 id="the-lie-algebra">The Lie Algebra</h3>
+<p><strong>Proposition.</strong> The Lie algebra of the unitary group is the space of skew-adjoint operators, $\mathfrak{u}(V,h) = \{X : X^{*} = -X\}$, and the exponential map carries it onto the identity component of $U(V,h)$ when the form is definite; the dimension of the group is the dimension of this space, $\frac{n(n-1)}{2}$ for a symmetric form, $n^2$ for a Hermitian form and $n(2n+1)$ for an alternating form.</p>
+<p><strong>Proof.</strong> The Lie algebra is computed in <em>The Adjoint of a Symmetry Operator</em>; the dimensions are the counts of the symmetric, Hermitian and alternating matrices, <em>The Unitary and Symplectic Groups</em>.</p>
+<h2 id="the-unitary-operators-of-a-symmetry-group">The Unitary Operators of a Symmetry Group</h2>
+<h3 id="the-group-generated">The Group Generated</h3>
+<p><strong>Definition.</strong> The <strong>unitary operators of the symmetry group</strong> $G$ are the elements of $U(V,h)$; the group they form is $U(V,h)$ itself, and the <strong>unitary operators commuting with the action</strong> of $G$ are the elements of the centraliser</p>
+<p>$$
+U(V,h)^{G} = \{T \in U(V,h) : T\rho(g) = \rho(g)T\ \text{for all } g \in G\},
+$$</p>
+<p>the unitary part of the commutant of the representation on $V$.</p>
+<p><strong>Proposition.</strong> The group $G$ generated by the symmetry operators is a subgroup of $U(V,h)$, it is contained in its own normaliser, and the unitary operators commuting with the action are the unitary operators of the <strong>commutant algebra</strong> $\operatorname{End}_G(V)$; when $V$ is irreducible the commutant is a division algebra and its unitary group is the group of its units, by Schur's lemma.</p>
+<p><strong>Proof.</strong> The containment is the definition of a symmetry group; the commutation with the action is the commutation with each $\rho(g)$; the commutant statement is the definition, and Schur's lemma gives the division algebra in the irreducible case, <em>Representations of Groups</em>.</p>
+<h3 id="the-intertwiners">The Intertwiners</h3>
+<p><strong>Proposition.</strong> The unitary intertwiners between two representations $V$ and $W$ of $G$ are the operators $T : V \to W$ with $T\rho_V(g) = \rho_W(g)T$ and $T^{*}T = \operatorname{id}$; they form a principal homogeneous space for the unitary group of the commutant when the representations are equivalent, and the unitary equivalence of two representations is the existence of a unitary intertwiner.</p>
+<p><strong>Proof.</strong> The unitarity is the preservation of the two forms, and the composition of intertwiners is the composition of operators; the space of intertwiners is a module over the commutants on the two sides, and Schur's lemma identifies it with the division algebra in the irreducible equivalent case.</p>
+<p><strong>Remark.</strong> The unitary operators of a symmetry group are therefore of two kinds: the operators <strong>of</strong> the group, which act on the space, and the operators <strong>commuting</strong> with it, which are the symmetries the action does not see. The first kind is the content of <em>Operators on a Symmetry Group</em>, the second of the commutant theory of Part III.</p>
+<h2 id="the-unitary-representations">The Unitary Representations</h2>
+<h3 id="the-definition-and-the-invariant-form">The Definition and the Invariant Form</h3>
+<p><strong>Definition.</strong> A <strong>unitary representation</strong> of $G$ on a space $V$ with a form $h$ is a homomorphism $\rho : G \to U(V,h)$; equivalently a representation for which the form is invariant, $\rho(g) \in U(V,h)$ for every $g$. A representation of an abstract group is <strong>unitarisable</strong> when there is an invariant form of the appropriate symmetry type.</p>
+<p><strong>Proposition.</strong> A finite-dimensional representation of a finite group is unitarisable: averaging any positive definite form over the group gives an invariant one. A continuous representation of a compact group is unitarisable, by averaging with the Haar measure, and a representation of a semisimple group with a maximal compact subgroup is unitarisable in the appropriate sense; a unitary representation decomposes into irreducibles when the group is compact, by the complete reducibility of <em>Representations of Groups</em>, and the irreducible unitary representations form the <strong>unitary dual</strong> $\widehat{G}$.</p>
+<p><strong>Proof.</strong> The averaged form $\bar h(u,v) = \int_G h(\rho(g)u,\rho(g)v)\,dg$ is positive definite and invariant when the group is compact and the measure is the normalised Haar measure, <em>Locally Compact Groups and Haar Measure</em>; the complete reducibility and the unitary dual are Part III, <em>The Peter–Weyl Theorem</em> and <em>Noncommutative Harmonic Analysis</em>.</p>
+<h3 id="the-characters-and-the-orthogonality">The Characters and the Orthogonality</h3>
+<p><strong>Proposition.</strong> For a compact group the irreducible unitary representations are finite-dimensional, their characters form an orthonormal basis of the class functions in $L^2(G)$, and the matrix coefficients satisfy the orthogonality relations; the regular representation decomposes as the direct sum of the irreducibles with multiplicity their dimension.</p>
+<p><strong>Proof.</strong> The statements are the Peter–Weyl theorem and the Schur orthogonality relations, <em>The Peter–Weyl Theorem</em> and <em>Analysis on Compact Groups</em>, quoted.</p>
+<p><strong>Remark.</strong> The unitary representation is where the <strong>invariant form</strong> enters the analysis: the form makes the operators of the group unitary, and the unitarity is what makes the averaging arguments and the orthogonality relations work. The relation of the operator adjoint to an involution on the elements is the two-structures theorem of the previous article, and it is a separate question.</p>
+<h2 id="the-unitary-operators-on-the-function-space">The Unitary Operators on the Function Space</h2>
+<p><strong>Definition.</strong> On the space $L^2(G)$ of square-integrable functions with respect to the Haar measure, the <strong>left regular representation</strong> is $(\lambda(g)f)(x) = f(g^{-1}x)$, the right regular representation is $(\rho(g)f)(x) = f(xg)$, and both are unitary for the inner product $\langle f, f'\rangle = \int_G f(x)\overline{f'(x)}\,dx$.</p>
+<p><strong>Proposition.</strong> The left and right regular representations are unitary, they commute, and their adjoints reverse the group element,</p>
+<p>$$
+\lambda(g)^{*} = \lambda(g)^{-1} = \lambda(g^{-1}), \qquad \rho(g)^{*} = \rho(g)^{-1} = \rho(g^{-1}),
+$$</p>
+<p>by the invariance of the Haar measure; the operators of the symmetry group on the functions of the space are the unitary operators of the representation.</p>
+<p><strong>Proof.</strong> The unitarity is the invariance of the measure: $\langle\lambda(g)f,\lambda(g)f'\rangle = \int f(g^{-1}x)\overline{f'(g^{-1}x)}\,dx = \int f(y)\overline{f'(y)}\,dy$ after the change of variable $y = g^{-1}x$. A unitary operator satisfies $T^{*} = T^{-1}$, hence $\lambda(g)^{*} = \lambda(g^{-1})$; the same computation gives $\rho(g)^{*} = \rho(g^{-1})$. The two representations commute because $\lambda(g)\rho(h)f(x) = f(g^{-1}xh) = \rho(h)\lambda(g)f(x)$. The general theory is <em>The Left and Right Regular Representation</em> and <em>Locally Compact Groups and Haar Measure</em>.</p>
+<p><strong>Remark.</strong> On the function space the adjoint of a translation is the translation by the inverse, so the operator involution implements the <strong>inversion</strong> of a group element, $g \mapsto g^{-1}$. The inversion is an automorphism exactly when the group is abelian, and there the identity of the two-structures theorem of <em>The Adjoint of a Symmetry Operator</em> holds; for a nonabelian group the inversion is an anti-automorphism and the identity is not available, which is the operator form of the obstruction recorded there. The adjoint of the translation operators is the subject of <em>The Involution on the Translation Operators</em>, the next article.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the finite case).</strong> Let $G$ be a finite group acting by permutations on a finite set $X$, and let $V$ be the permutation module with the invariant inner product that makes the standard basis orthonormal. The unitary operators of the form are the permutation matrices of $S_X$, the symmetry group embeds in them, and the commutant is the centraliser algebra of the permutation representation, <em>Representations of Groups</em>. The unitary operators commuting with the action are exactly the block-scalar matrices of the decomposition into orbits.</p>
+<p><strong>Example (the Euclidean case).</strong> Let $V = \mathbb{R}^n$ with the Euclidean form; the unitary group is $O(n)$, the maximal symmetry group of the form, and a figure $F$ has the symmetry group $\operatorname{Sym}(F) \leq O(n)$. The unitary operators of the group are the finite or discrete subgroups of $O(n)$ that fix $F$, and the unitary operators commuting with $\operatorname{Sym}(F)$ are the rotations about the axes the figure does not distinguish, <em>Symmetry, Point and Crystallographic Groups</em>.</p>
+<p><strong>Example (the regular representation of a compact group).</strong> Let $G$ be compact and $V = L^2(G)$; the regular representation is unitary, and its decomposition into irreducibles is the Peter–Weyl theorem. The unitary operators of the group are the translations and their limits, and the unitary operators commuting with the whole regular representation are the operators of convolution by the central functions, <em>Analysis on Compact Groups</em>.</p>
+<p><strong>Example (the indefinite case).</strong> Let $h$ be a Hermitian form of signature $(p,q)$ and $G = U(p,q)$; the unitary group is $U(p,q)$ itself, the maximal symmetry group of the indefinite form, and it is noncompact, so the averaging that unitarises a compact representation is unavailable; the unitary representations of $U(p,q)$ are the object of the harmonic analysis of <em>Noncommutative Harmonic Analysis</em> and are not the defining representation alone.</p>
+<h2 id="summary">Summary</h2>
+<p>The unitary group $U(V,h) = \{T : T^{*} = T^{-1}\}$ of a form is the maximal symmetry group of the form, equal to the isometry group, with Lie algebra the skew-adjoint operators, and its classical instances are the orthogonal, the unitary and the symplectic groups; a symmetry group $G$ is a subgroup of it, and the unitary operators commuting with the action form the unitary group of the commutant algebra $\operatorname{End}_G(V)$, a division algebra in the irreducible case by Schur's lemma. A unitary representation is a homomorphism into $U(V,h)$; a representation of a compact group is unitarisable by averaging the form over the Haar measure, and its irreducible unitary representations are finite-dimensional with the orthogonality relations of the Peter–Weyl theorem. On the function space $L^2(G)$ the left and right regular representations are unitary and commutative, with adjoints $\lambda(g)^{*} = \lambda(g^{-1})$ and $\rho(g)^{*} = \rho(g^{-1})$, the invariance of the Haar measure being the reason: the adjoint of a translation is the translation by the inverse, so the operator involution implements the inversion of a group element, an automorphism exactly for an abelian group. The adjoint of the translation operators is the next article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U(V,h)$</td>
+<td>the unitary group of the form; the maximal symmetry group</td>
+</tr>
+<tr>
+<td>$U(V,h)^{G}$</td>
+<td>the unitary operators commuting with the action of $G$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_G(V)$</td>
+<td>the commutant algebra of the representation</td>
+</tr>
+<tr>
+<td>$T^{*}T = \operatorname{id}$</td>
+<td>the unitarity condition; $T^{*} = T^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(V,h) = \{X : X^{*} = -X\}$</td>
+<td>the Lie algebra of the unitary group</td>
+</tr>
+<tr>
+<td>$\rho : G \to U(V,h)$</td>
+<td>a unitary representation</td>
+</tr>
+<tr>
+<td>$\widehat{G}$</td>
+<td>the unitary dual; the irreducible unitary representations</td>
+</tr>
+<tr>
+<td>$\lambda$, $\rho$</td>
+<td>the left and right regular representations on $L^2(G)$</td>
+</tr>
+<tr>
+<td>$\lambda(g)^{*} = \lambda(g^{-1})$</td>
+<td>the adjoint of a translation is the inverse translation</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(F)$</td>
+<td>the symmetry group of a figure, a subgroup of $O(n)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for unitary representations, the invariant forms and the unitary dual.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (Academic Press, 1984), for the unitary group of a form and the invariant differential operators.</li>
+<li>Jean-Pierre Serre, <em>Linear Representations of Finite Groups</em> (Springer, 1977), for the unitarisability of a representation of a finite group and the orthogonality relations.</li>
+<li>Lynn H. Loomis, <em>An Introduction to Abstract Harmonic Analysis</em> (Van Nostrand, 1953), for the regular representation, the Haar measure and the unitary operators on the function space.</li>
+<li>Israel M. Gel'fand and Mark A. Naimark, <em>Unitäre Darstellungen der klassischen Gruppen</em> (Akademie-Verlag, 1957), for the unitary representations of the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

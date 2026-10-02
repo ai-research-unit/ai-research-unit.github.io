@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signature Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signature-operator"><strong>The Signature Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signature of a closed oriented manifold of dimension $4k$ is the signature of the intersection form on its middle cohomology: the integer $b_{+}-b_{-}$ formed from the numbers of positive and negative eigenvalues of the pairing $\langle u\cup v,[M]\rangle$. The signature is a topological invariant, and the <strong>signature operator</strong> exhibits it as the index of a differential operator built from a chosen metric — the operator $D=d+d^{*}$ on the differential forms, read with the grading that the metric supplies. The operator is the geometric form of the intersection form: the intersection pairing of the middle cohomology is its restriction to the harmonic forms, and the signature is the index of its positive half.</p>
+<p>This article defines the operator, identifies its square with the Hodge Laplacian, and states the signature theorem, that the index of the operator equals $\int_M L(M)$ for the Hirzebruch $L$-genus. The operator itself is an object of the geometry: it is assembled from the exterior derivative $d$, the codifferential $d^{*}$ and the Hodge star, all of which depend on the chosen Riemannian metric, and a change of metric changes the operator. That its index does not change is the content of the theorem, and it is the theorem that makes the operator a topological instrument.</p>
+<p>The prerequisites are <em>Differential Forms and Stokes' Theorem</em> for the exterior algebra of forms, the exterior derivative and Stokes' theorem; <em>Riemannian Geometry</em> and <em>Curvature and Geodesics</em> for the metric, its volume form and its Laplace–Beltrami operator; <em>The Volume Element, Duality and the Hodge Star</em> and the Part I article <em>The Hodge Star and the Real Structure of the Exterior Algebra</em> for the star and its square; <em>Characteristic Classes</em> for the Pontryagin classes and the $L$-class; and <em>The Atiyah–Singer Index Theorem and K-Theory</em> for the general theorem of which the signature theorem is a case. The Hodge Laplacian and the harmonic forms are the subject of <em>The Hodge Laplacian</em>, written beside this article, and are cited rather than developed; the heat-kernel proof of the index theorem is cited there and in <em>The Atiyah–Singer Index Theorem and K-Theory</em>. Nothing physical is invoked, and no structure belonging to a later category is used.</p>
+<h2 id="the-hodge-star-and-the-inner-product">The Hodge Star and the Inner Product</h2>
+<h3 id="the-star-on-a-riemannian-manifold">The Star on a Riemannian Manifold</h3>
+<p>Let $(M,g)$ be a closed oriented Riemannian manifold of dimension $n$, with volume form $\mathrm{vol}_g$ and with $\Omega^{k}(M)$ the smooth complexified $k$-forms. The metric extends to the exterior algebra and, with the orientation, defines the <strong>Hodge star</strong></p>
+<p>$$
+\star:\Omega^{k}(M)\longrightarrow\Omega^{n-k}(M),\qquad
+\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\,\mathrm{vol}_g ,
+$$</p>
+<p>where $\langle\cdot,\cdot\rangle$ is the metric on forms; the star is $\mathbb{C}$-linear, and it satisfies</p>
+<p>$$
+\star^2=(-1)^{k(n-k)}\,\mathrm{id}\quad\text{on }\Omega^{k}(M),
+$$</p>
+<p>the square computed in <em>The Hodge Star and the Real Structure of the Exterior Algebra</em> and <em>The Volume Element, Duality and the Hodge Star</em>. The <strong>$L^{2}$ inner product</strong> on forms is</p>
+<p>$$
+(\alpha,\beta)=\int_M\alpha\wedge\star\bar\beta ,
+$$</p>
+<p>a positive definite Hermitian form on $\Omega^{k}(M)$; the completion in it is the Hilbert space $L^{2}\Omega^{k}(M)$, and the star is a unitary map up to sign. The metric is a <strong>chosen</strong> object, and the star, the inner product and every operator below change with it.</p>
+<h3 id="the-chirality-of-an-even-dimensional-manifold">The Chirality of an Even-Dimensional Manifold</h3>
+<p><strong>Definition.</strong> Let $n=2m$ be even and let $\tau$ be the operator that acts on $\Omega^{k}(M)$ by</p>
+<p>$$
+\tau\,\omega=i^{\,k(k-1)+m}\,\star\omega .
+$$</p>
+<p>It is the normalized volume element of the Clifford algebra of the exterior bundle; it is parallel and unitary, and one computes</p>
+<p>$$
+\tau^2=\mathrm{id},\qquad
+\tau\,d\,\tau^{-1}=-d^{*},\qquad
+\tau(d+d^{*})\tau^{-1}=-(d+d^{*}) .
+$$</p>
+<p><strong>Proof sketch.</strong> The square uses $\star^2=(-1)^{k(n-k)}$ and the identity $i^{k(k-1)+m}i^{(n-k)(n-k-1)+m}(-1)^{k(n-k)}=1$. The conjugation of $d$ is the standard Hodge identity $\star d\star^{-1}=\pm d^{*}$, and the phase $i^{k(k-1)+m}$ is chosen so that the sign is $-1$; the third identity is the sum of the first two with the adjoint identity that follows from it. $\square$</p>
+<p>The operator $\tau$ is the <strong>chirality</strong> or <strong>grading</strong>, and it splits the complexified forms into the two eigenspaces</p>
+<p>$$
+\Omega^{+}(M)=\{\omega:\tau\omega=\omega\},\qquad
+\Omega^{-}(M)=\{\omega:\tau\omega=-\omega\} .
+$$</p>
+<p>Since $\tau$ maps $\Omega^{k}$ to $\Omega^{n-k}$, the splitting is not by degree. On the <strong>middle forms</strong> of a manifold of dimension $4k$ the phase is $i^{(2k)(2k-1)+2k}=i^{4k^2}=1$, so there $\tau=\star$, which is an involution there because $\star^2=(-1)^{2k\cdot2k}=1$; the eigenspaces are the <strong>self-dual</strong> and <strong>anti-self-dual</strong> middle forms of dimension $\tfrac12\dim\Omega^{2k}$, which are real and orthogonal.</p>
+<h2 id="the-signature-operator_1">The Signature Operator</h2>
+<p><strong>Definition.</strong> The <strong>de Rham operator</strong> of $(M,g)$ is</p>
+<p>$$
+D=d+d^{*}:\Omega^{\bullet}(M)\longrightarrow\Omega^{\bullet}(M),
+$$</p>
+<p>the sum of the exterior derivative and its formal adjoint; if the metric is understood, $D$ is the <strong>signature operator</strong> of the orientation.</p>
+<p><strong>Theorem.</strong> The operator $D$ is formally self-adjoint, $D^{*}=D$, elliptic, and it is <strong>odd</strong> for the chirality, $D\Omega^{+}\subseteq\Omega^{-}$ and $D\Omega^{-}\subseteq\Omega^{+}$; on a closed manifold it therefore splits into a pair of mutually adjoint operators</p>
+<p>$$
+D^{+}:\Omega^{+}(M)\longrightarrow\Omega^{-}(M),\qquad
+(D^{+})^{*}=D^{-} .
+$$</p>
+<p><strong>Proof.</strong> The adjointness of $d$ and $d^{*}$ gives $D^{*}=d^{*}+d=D$. The symbol of $D$ at a covector $\xi$ is $\sigma(\xi)=i(\varepsilon(\xi)+\iota(\xi))$, the Clifford multiplication by $\xi$, which is invertible for $\xi\neq0$ because its square is $|\xi|^2$; hence $D$ is elliptic. The oddness is the identity $\tau D\tau^{-1}=-D$ of the preceding section, which says $D\Omega^{\pm}\subseteq\Omega^{\mp}$. $\square$</p>
+<p><strong>Remark.</strong> The operator $D$ is assembled from the three metric objects of the article: the exterior derivative, the codifferential and the chirality, the codifferential being $d^{*}=-\tau d\tau^{-1}$ and the chirality being the star times a phase. A change of metric changes $d^{*}$, hence $D$, and the operator is a genuine geometric object and not a topological one. Its kernel and cokernel, however, are governed by the Hodge theorem and are finite-dimensional.</p>
+<h2 id="the-square-is-the-hodge-laplacian">The Square is the Hodge Laplacian</h2>
+<p><strong>Theorem.</strong> The square of the signature operator is the <strong>Hodge Laplacian</strong></p>
+<p>$$
+D^{2}=dd^{*}+d^{*}d=\Delta ,
+$$</p>
+<p>the operator whose kernel is the space $\mathcal{H}^{k}(M)$ of <strong>harmonic $k$-forms</strong>.</p>
+<p><strong>Proof.</strong> Expand $(d+d^{*})^2=dd^{*}+d^{*}d+ d^2+(d^{*})^2$; the last two vanish, $d^2=0$ being the defining property of the exterior derivative and $(d^{*})^2=0$ its adjoint. $\square$</p>
+<p><strong>Corollary (the harmonic representatives).</strong> On a closed manifold $\Delta$ is self-adjoint and elliptic with a discrete spectrum of nonnegative eigenvalues, and the <strong>Hodge theorem</strong> identifies its kernel with the de Rham cohomology,</p>
+<p>$$
+\mathcal{H}^{k}(M)\cong H^{k}_{dR}(M;\mathbb{C}),\qquad \dim\mathcal{H}^{k}(M)=b_{k}(M),
+$$</p>
+<p>so the kernel of $D$ on $k$-forms is the space of harmonic representatives of the cohomology. The Hodge decomposition, the identification of the harmonic forms and the spectral properties of $\Delta$ are the content of <em>The Hodge Laplacian</em>.</p>
+<p><strong>Corollary (the middle splitting).</strong> For a manifold of dimension $4k$ the chirality acts on the harmonic middle forms by the Hodge star, so the space $\mathcal{H}^{2k}(M)$ splits as</p>
+<p>$$
+\mathcal{H}^{2k}(M)=\mathcal{H}^{2k}_{+}(M)\oplus\mathcal{H}^{2k}_{-}(M),
+$$</p>
+<p>the self-dual and anti-self-dual harmonic forms, of dimensions $b_{+}$ and $b_{-}$, the numbers of positive and negative eigenvalues of the intersection form on $H^{2k}(M;\mathbb{R})$; the intersection form is the restriction of the pairing $\langle u\cup v,[M]\rangle$, and on the harmonic forms it is represented by the integral $\int_M u\wedge v$.</p>
+<h2 id="the-signature-theorem">The Signature Theorem</h2>
+<p><strong>Theorem (Hirzebruch's signature theorem).</strong> Let $M$ be a closed oriented manifold of dimension $4k$ and let $D^{+}:\Omega^{+}\to\Omega^{-}$ be the positive half of its signature operator. Then the analytic index of $D^{+}$ is the signature of $M$:</p>
+<p>$$
+\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\operatorname{coker}D^{+}=b_{+}-b_{-}=\sigma(M) .
+$$</p>
+<p>Combined with the Atiyah–Singer index theorem, the index is the characteristic number</p>
+<p>$$
+\sigma(M)=\int_M L(TM),
+$$</p>
+<p>where $L(TM)$ is the <strong>Hirzebruch $L$-genus</strong> of the tangent bundle, the genus with the first terms</p>
+<p>$$
+L=1+\frac{p_1}{3}+\frac{7p_2-p_1^2}{45}+\cdots
+$$</p>
+<p>in the Pontryagin classes $p_i$ of $TM$.</p>
+<p><strong>Proof sketch.</strong> A harmonic form is closed and coclosed and represents its cohomology class, and the index of $D^{+}$ is the trace of the chirality on the kernel, $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)$, because $\ker D^{\pm}$ are the $\pm1$ eigenspaces of $\tau$ on $\ker D=\mathcal{H}^{\bullet}(M)$. On the middle degree the chirality is the Hodge star, so its trace on $\mathcal{H}^{2k}(M)$ is the signature $b_{+}-b_{-}$ of the intersection form; on a pair $\mathcal{H}^{j}(M)\oplus\mathcal{H}^{n-j}(M)$ with $j\neq n-j$ the chirality maps $\Omega^{j}$ to $\Omega^{n-j}$ and exchanges the two summands, so its trace there is $0$ and the non-middle harmonic forms cancel in the index. Hence $\operatorname{ind}D^{+}=b_{+}-b_{-}$. The identification of the index with $\int_ML(TM)$ is the Atiyah–Singer theorem in the case of the symbol of $d+d^{*}$, the symbol class being the Thom class whose Chern character is the $L$-class; the theorem and its heat-kernel proof are stated in <em>The Atiyah–Singer Index Theorem and K-Theory</em>. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the sharp form of the observation that the operator depends on the metric but its index does not: the signature is read off the chosen metric through the operator, and the answer is a topological invariant of the manifold. The same operator on the even and odd forms, graded by the total degree instead of the chirality, has index the Euler characteristic, $\operatorname{ind}(d+d^{*})=b_{0}-b_{1}+b_{2}-\cdots=\chi(M)$; the signature and the Euler characteristic are the two characteristic numbers that the de Rham complex yields, computed by the $L$-class and the Euler class respectively.</p>
+<h2 id="the-operator-in-low-dimensions">The Operator in Low Dimensions</h2>
+<h3 id="dimension-four">Dimension Four</h3>
+<p><strong>Example (the four-sphere).</strong> For $S^4$ the middle cohomology $H^{2}(S^4;\mathbb{R})$ vanishes and the signature is $0$; consistently, $p_1(TS^4)=0$, so $\int_{S^4}L=0$. The signature operator has no harmonic middle forms and its index vanishes.</p>
+<p><strong>Example (the complex projective plane).</strong> For $\mathbb{CP}^2$ the cohomology is $\mathbb{R}$ in degrees $0,2,4$, so $b_2=1$ and the intersection form on $H^{2}$ is the $1\times1$ matrix $(1)$, of signature $1$. The first Pontryagin class evaluates as $p_1[\mathbb{CP}^2]=3$, so $L_1=p_1/3$ gives $\sigma(\mathbb{CP}^2)=1$, in agreement.</p>
+<p><strong>Example (the product of two spheres).</strong> For $S^{2}\times S^{2}$ the middle cohomology has rank two, spanned by the two sphere classes with intersection matrix
+$$
+\begin{pmatrix}0&1\\1&0\end{pmatrix},
+$$
+whose eigenvalues are $1$ and $-1$ and whose signature is $0$; the first Pontryagin class is a torsion-free class with $p_1[S^2\times S^2]=0$, and $\int L=0$ again.</p>
+<p><strong>Example (a $K3$ surface).</strong> For a $K3$ surface the middle cohomology has rank $22$, with $b_{+}=3$ and $b_{-}=19$, so the signature is
+$$
+\sigma(K3)=3-19=-16 ;
+$$
+the first Pontryagin number is $p_1[K3]=-48$, and $L_1=p_1/3$ gives $\int L=-16$, in agreement. The signature of a $K3$ surface is the standard negative value against which the signature theorem is checked, and the intersection form is the even unimodular form of rank $22$ and signature $-16$.</p>
+<h3 id="spheres-and-complex-projective-spaces">Spheres and Complex Projective Spaces</h3>
+<p><strong>Example.</strong> For the sphere $S^{4k}$ the middle cohomology vanishes and the signature is $0$ for $k\geq1$; the signature operator's index is therefore $0$, and the $L$-genus of the sphere is $0$. For the complex projective space $\mathbb{CP}^{2k}$ the middle cohomology is one-dimensional and the signature is $1$; the total $L$-genus evaluates to $1$, which is the Todd genus of $\mathbb{CP}^{2k}$, in agreement with the fact that the signature and the holomorphic Euler characteristic coincide there.</p>
+<p><strong>Example (dimension congruent to two).</strong> For a closed oriented manifold of dimension $n\equiv2\pmod4$ the middle intersection form is alternating, its signature is $0$, and the $L$-genus has no term in the top degree; the signature operator still exists and is elliptic, and its index vanishes. The signature is a nontrivial invariant only in dimensions divisible by four, which is why the signature theorem is stated there.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signature operator</strong> of a closed oriented Riemannian manifold of even dimension $n=2m$ is $D=d+d^{*}$, the sum of the exterior derivative and its formal adjoint, read with the chirality $\tau=i^{k(k-1)+m}\star$, which is an involution with $\tau^2=\mathrm{id}$ and $\tau D\tau^{-1}=-D$. The operator is self-adjoint and elliptic, it is odd for the chirality, and its square is the <strong>Hodge Laplacian</strong>, $D^2=dd^{*}+d^{*}d=\Delta$, whose kernel is the space of harmonic forms and is isomorphic to the de Rham cohomology. On the middle forms of a $4k$-manifold the chirality is the Hodge star, and the harmonic middle forms split into the self-dual and anti-self-dual parts of dimensions $b_{+}$ and $b_{-}$.</p>
+<p>The positive half $D^{+}:\Omega^{+}\to\Omega^{-}$ has index $b_{+}-b_{-}=\sigma(M)$, and the Atiyah–Singer theorem identifies this <strong>signature</strong> with the characteristic number $\int_M L(TM)$ of the Hirzebruch $L$-genus, whose first terms are $1+p_1/3+(7p_2-p_1^2)/45+\cdots$. The operator is assembled from the chosen metric — the star, the codifferential and the volume form all depend on it — while its index is a topological invariant, and the signature theorem is the statement of that independence. The graded operator on the even and odd forms instead has index the Euler characteristic. The examples are $S^4$, $\mathbb{CP}^2$ and $S^{2}\times S^{2}$ in dimension four and the $K3$ surface, whose signature is $-16$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(M,g)$, $n$, $\mathrm{vol}_g$</td>
+<td>Closed oriented Riemannian manifold, dimension, volume form</td>
+</tr>
+<tr>
+<td>$\Omega^{k}(M)$, $\Omega^{\pm}(M)$</td>
+<td>Complexified $k$-forms, the two chirality eigenspaces</td>
+</tr>
+<tr>
+<td>$\langle\alpha,\beta\rangle$</td>
+<td>Metric on forms; $(\alpha,\beta)=\int_M\alpha\wedge\star\bar\beta$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>Hodge star, $\star^2=(-1)^{k(n-k)}$ on $\Omega^{k}$</td>
+</tr>
+<tr>
+<td>$\tau=i^{k(k-1)+m}\star$</td>
+<td>Chirality, $\tau^2=\mathrm{id}$, $\tau D\tau^{-1}=-D$, $n=2m$</td>
+</tr>
+<tr>
+<td>$d$, $d^{*}=-\tau d\tau^{-1}$</td>
+<td>Exterior derivative, codifferential (formal adjoint)</td>
+</tr>
+<tr>
+<td>$D=d+d^{*}$</td>
+<td>Signature operator; $D^{+}:\Omega^{+}\to\Omega^{-}$</td>
+</tr>
+<tr>
+<td>$\Delta=dd^{*}+d^{*}d=D^2$</td>
+<td>Hodge Laplacian</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^{k}(M)\cong H^{k}_{dR}(M)$</td>
+<td>Harmonic forms, de Rham cohomology, $b_k$</td>
+</tr>
+<tr>
+<td>$b_{\pm}$, $\sigma(M)=b_{+}-b_{-}$</td>
+<td>Dimensions of the self-dual and anti-self-dual harmonic middle forms, signature</td>
+</tr>
+<tr>
+<td>$L(TM)=1+p_1/3+\cdots$</td>
+<td>Hirzebruch $L$-genus; $\sigma(M)=\int_ML(TM)$</td>
+</tr>
+<tr>
+<td>$\chi(M)=\operatorname{ind}(d+d^{*})$</td>
+<td>Euler characteristic as the index of the total-degree grading</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Friedrich Hirzebruch, <em>Topological Methods in Algebraic Geometry</em>, Classics in Mathematics (Springer, 1995), for the signature theorem, the $L$-genus and the multiplicative sequences.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I, III," <em>Annals of Mathematics</em> <strong>87</strong> (1968), 484–530 and 546–604, for the index of the signature operator and its characteristic-number form.</li>
+<li>Michael F. Atiyah and Raoul Bott, "A Lefschetz fixed point formula for elliptic complexes II: applications," <em>Annals of Mathematics</em> <strong>88</strong> (1968), 451–491, for the equivariant signature and the $G$-signature theorem.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the chirality, the Hodge star and the de Rham and signature complexes.</li>
+<li>Phillip A. Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the intersection form, the Hodge–Riemann relations and the signature of a projective manifold.</li>
+<li>Peter B. Gilkey, <em>Invariance Theory, the Heat Equation and the Atiyah–Singer Index Theorem</em> (CRC Press, 2nd ed. 1995), for the local index density of the signature operator and the $L$-class.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

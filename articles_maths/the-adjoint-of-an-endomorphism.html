@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of an Endomorphism — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-an-endomorphism"><strong>The Adjoint of an Endomorphism</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-degenerate pairing on a linear space turns the endomorphism $A$ into a second endomorphism $A^{*}$, the adjoint, by moving $A$ from one side of the pairing to the other, and the article is about that operator: its existence and uniqueness, the description of its kernel and image as the paired complements of the image and kernel of $A$, the preservation of rank, invertibility and spectrum, the rule for the adjoint of a composite, and the identification of the adjoint with the transpose once a basis is fixed. The involution that the assignment $A \mapsto A^{*}$ defines on the endomorphism algebra is <em>Involutions of the Endomorphism Algebra</em>; the article here is its operator-level counterpart in the <code>*</code>-operator group, and it treats the adjoint as an operator rather than the involution as a structure.</p>
+<p>The pairing, its non-degeneracy and the notion of a reflexive pairing are as in <em>Involutions of the Endomorphism Algebra</em>; the transpose of a linear map, its contravariance and the annihilator description of its kernel and image are <em>The Transpose of a Linear Map</em>; the dual involution is <em>Involutions of the Dual Space</em>. The passage from the pairing duality to the dual-space duality is <em>The Involution on the Dual Operator</em>; the group of endomorphisms with $A^{*}=A^{-1}$ is <em>Unitary Endomorphisms</em>; the forms themselves, their norms and the analysis they support are <em>Hilbert Algebras</em>, in Part II.</p>
+<p>Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $B$ is a non-degenerate reflexive pairing on $V$: bilinear with $B(y,x) = \varepsilon B(x,y)$ for a sign $\varepsilon$, or sesquilinear with respect to an involution $\varsigma$ of $F$. The adjoint of $A$ is $A^{*}$, defined by $B(Ax,y) = B(x,A^{*}y)$. No norm and no topology is used.</p>
+<h2 id="the-adjoint-operator">The Adjoint Operator</h2>
+<p><strong>Theorem (existence, uniqueness, linearity).</strong> For every $A \in E$ there is a unique endomorphism $A^{*} \in E$ with</p>
+<p>$$
+B(Ax,y) = B(x,A^{*}y) \qquad \text{for all } x,y \in V ,
+$$</p>
+<p>and the assignment $A \mapsto A^{*}$ is additive, of order two and anti-multiplicative: $(A^{*})^{*} = A$, $(A+B)^{*} = A^{*}+B^{*}$, $(AB)^{*} = B^{*}A^{*}$, and $(\lambda A)^{*} = \varsigma(\lambda)A^{*}$.</p>
+<p><strong>Proof.</strong> For fixed $y$ the map $x \mapsto B(Ax,y)$ is linear; since $z \mapsto B(\cdot,z)$ is a bijection $V \to V^{*}$ by non-degeneracy, there is a unique $A^{*}y$ representing it, and uniqueness in $y$ makes $A^{*}$ a map. Linearity of $A^{*}$ and the four laws follow by uniqueness exactly as in <em>Involutions of the Endomorphism Algebra</em>, which owns them.</p>
+<p><strong>Definition.</strong> An endomorphism is <strong>self-adjoint</strong> when $A^{*}=A$, <strong>skew-adjoint</strong> when $A^{*}=-A$, and <strong>unitary</strong> when $A^{*}A = AA^{*} = \mathrm{id}$.</p>
+<h2 id="kernel-image-and-the-paired-complement">Kernel, Image and the Paired Complement</h2>
+<p><strong>Definition.</strong> For a subspace $U \subseteq V$ the <strong>paired complement</strong> is</p>
+<p>$$
+U^{\mathrm{c}} = \{y \in V : B(x,y) = 0 \text{ for all } x \in U\} .
+$$</p>
+<p><strong>Proposition.</strong> $U^{\mathrm{c}}$ is a subspace and $\dim_F U^{\mathrm{c}} = \dim_F V - \dim_F U$; moreover $(U^{\mathrm{c}})^{\mathrm{c}} = U$ when $B$ is reflexive, so the assignment $U \mapsto U^{\mathrm{c}}$ is an order-reversing bijection of the lattice of subspaces onto itself.</p>
+<p><strong>Proof.</strong> $U^{\mathrm{c}}$ is the kernel of the linear map $V \to U^{*}$, $y \mapsto B(\cdot,y)$, which is surjective because $B$ is non-degenerate; hence the dimension formula. Reflexivity gives $(U^{\mathrm{c}})^{\mathrm{c}} = U$, and both statements are the standard pairings of a form.</p>
+<p><strong>Theorem (kernel and image of the adjoint).</strong> For every $A \in E$,</p>
+<p>$$
+\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}, \qquad \operatorname{im}A^{*} = (\ker A)^{\mathrm{c}} , \qquad
+\operatorname{rk}A^{*} = \operatorname{rk}A .
+$$</p>
+<p><strong>Proof.</strong> $A^{*}y = 0$ means $B(x,A^{*}y) = 0$ for all $x$, that is $B(Ax,y) = 0$ for all $x$, which says $y \in (\operatorname{im}A)^{\mathrm{c}}$; this is the first identity. For the second, $A^{*}y$ ranges over the paired complement of $\ker A$: indeed $B(x,A^{*}y) = B(Ax,y)$ vanishes for all $y$ exactly when $x \in \ker A$, so $(\operatorname{im}A^{*})^{\mathrm{c}} = \ker A$, and taking paired complements gives the identity. The rank is unchanged because $\dim\ker A^{*} = \dim(\operatorname{im}A)^{\mathrm{c}} = \dim\ker A$.</p>
+<p><strong>Corollary (invertibility and inverse).</strong> $A$ is invertible if and only if $A^{*}$ is, and then $(A^{-1})^{*} = (A^{*})^{-1}$; the adjoint of the identity is the identity, and the adjoint of a scalar $\lambda$ is $\varsigma(\lambda)$.</p>
+<p><strong>Proof.</strong> $\operatorname{rk}A^{*} = \operatorname{rk}A$ makes invertibility correspond; from $AA^{-1}=\mathrm{id}$ and anti-multiplicativity, $(A^{-1})^{*}A^{*} = \mathrm{id}$, which is the inverse statement.</p>
+<h2 id="spectrum-and-the-matrix-form">Spectrum and the Matrix Form</h2>
+<p><strong>Proposition (spectrum).</strong> $A^{*}$ has the same trace, the same determinant and the same characteristic polynomial as $A$; consequently the spectrum of $A^{*}$, with multiplicities, is the spectrum of $A$. In the bilinear case, if $\Phi$ is the Gram matrix of $B$ in a basis, then $[A^{*}] = \Phi^{-1}[A]^{\mathsf{T}}\Phi$, so $A^{*}$ is similar to the transpose of $A$.</p>
+<p><strong>Proof.</strong> $[A^{*}] = \Phi^{-1}[A]^{\mathsf{T}}\Phi$ is the matrix form of <em>Involutions of the Endomorphism Algebra</em>; a matrix and its transpose are similar over the semigroup generated by transposition, and they have the same characteristic polynomial, $\det(xI-A) = \det((xI-A)^{\mathsf{T}})$; conjugation by $\Phi$ preserves the characteristic polynomial. The trace and determinant are the coefficients of the characteristic polynomial in degrees $n-1$ and $0$.</p>
+<p><strong>Example.</strong> With the standard pairing $B(x,y) = \sum x_iy_i$ on $F^n$ the Gram matrix is the identity and $A^{*} = A^{\mathsf{T}}$; with $B(x,y) = x_1y_1 - x_2y_2$ on $F^2$ one has $A^{*} = \operatorname{diag}(1,-1)A^{\mathsf{T}}\operatorname{diag}(1,-1)$, which for $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ is $\begin{pmatrix} a & -c \\ -b & d \end{pmatrix}$: the diagonal entries are unchanged and the two off-diagonal entries change sign.</p>
+<h2 id="the-adjoints-of-a-composite-and-the-involution">The Adjoints of a Composite and the Involution</h2>
+<p><strong>Proposition (the adjoint of a composite).</strong> For $A_1,\dots,A_k \in E$,</p>
+<p>$$
+(A_1A_2\cdots A_k)^{*} = A_k^{*}\cdots A_2^{*}A_1^{*} , \qquad
+\Bigl(\sum_i A_i\Bigr)^{*} = \sum_i A_i^{*} .
+$$</p>
+<p><strong>Proof.</strong> Induction on $k$ from $(AB)^{*}=B^{*}A^{*}$ and additivity.</p>
+<p><strong>Remark (the involution on the endomorphism algebra).</strong> The assignment $A \mapsto A^{*}$ is an involution of the algebra $E$ in the sense of <em>Involutive Rings</em>, of the first kind for a bilinear pairing and of the second kind for a sesquilinear one; its fixed and skew parts, its matrix description, the classification of the involutions it produces and the unitary elements are the subject of <em>Involutions of the Endomorphism Algebra</em>, and only the operator facts about a single adjoint are established here. The two articles divide the subject: that one treats the involution as a structure on the algebra, this one the adjoint as an operator on $V$.</p>
+<p><strong>Remark (the involution and the operator adjoint).</strong> There are two maps that the word "adjoint" names, and the article's symbol $\ast$ is the element involution on $E$ while the operator adjoint of a map on $E$ — the adjoint of $L_A$ for the natural pairing of the endomorphism algebra — is written ${}^{\dagger}$ and is <em>The Adjoint of the Left Multiplication on a Linear Space</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ attaches to each endomorphism $A$ its adjoint $A^{*}$, uniquely determined by $B(Ax,y) = B(x,A^{*}y)$; the assignment is additive, of order two, anti-multiplicative and $\varsigma$-semilinear, so it is an involution of the endomorphism algebra, treated as a structure in <em>Involutions of the Endomorphism Algebra</em>. As an operator the adjoint is described by the paired complement: $\ker A^{*} = (\operatorname{im}A)^{\mathrm{c}}$, $\operatorname{im}A^{*} = (\ker A)^{\mathrm{c}}$, the paired complement being the order-reversing bijection $U \mapsto U^{\mathrm{c}}$ of the subspace lattice with $\dim U^{\mathrm{c}} = n - \dim U$. Consequently the rank is preserved, invertibility corresponds, and the inverse passes to the adjoint, $(A^{-1})^{*} = (A^{*})^{-1}$; the trace, determinant and characteristic polynomial are preserved, so the spectrum of $A^{*}$ is that of $A$, and in a basis $A^{*}$ is $\Phi^{-1}A^{\mathsf{T}}\Phi$. The adjoint of a product is the product of the adjoints in the reverse order. The dual-space duality and its compatibility with the pairing duality are <em>The Involution on the Dual Operator</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$, $\varsigma$</td>
+<td>the field and the involution of the sesquilinear case</td>
+</tr>
+<tr>
+<td>$V$, $n$</td>
+<td>the space and its dimension</td>
+</tr>
+<tr>
+<td>$E=\operatorname{End}_F(V)$</td>
+<td>the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>a non-degenerate reflexive pairing</td>
+</tr>
+<tr>
+<td>$A^{*}$</td>
+<td>the adjoint, $B(Ax,y)=B(x,A^{*}y)$</td>
+</tr>
+<tr>
+<td>$U^{\mathrm{c}}$</td>
+<td>the paired complement, $\{y : B(x,y)=0 \ \forall x\in U\}$</td>
+</tr>
+<tr>
+<td>$\ker A^{*}=(\operatorname{im}A)^{\mathrm{c}}$</td>
+<td>the kernel of the adjoint</td>
+</tr>
+<tr>
+<td>$\operatorname{im}A^{*}=(\ker A)^{\mathrm{c}}$</td>
+<td>the image of the adjoint</td>
+</tr>
+<tr>
+<td>$\Phi$</td>
+<td>the Gram matrix; $[A^{*}]=\Phi^{-1}[A]^{\mathsf{T}}\Phi$</td>
+</tr>
+<tr>
+<td>$A^{*}=\pm A$</td>
+<td>self-adjoint and skew-adjoint</td>
+</tr>
+<tr>
+<td>$A^{*}A=AA^{*}=\mathrm{id}$</td>
+<td>unitary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for sesquilinear pairings and adjoints.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, 4th ed. 1975), for the adjoint of an endomorphism with respect to a bilinear pairing.</li>
+<li>Kenneth Hoffman and Ray Kunze, <em>Linear Algebra</em> (Prentice Hall, 2nd ed. 1971), for the adjoint, orthogonal complements and the spectrum.</li>
+<li>Serge Lang, <em>Linear Algebra</em> (Springer, 3rd ed. 1987), for duality, adjoints and the classical groups.</li>
+<li>Steven Roman, <em>Advanced Linear Algebra</em> (Springer, 3rd ed. 2008), for bilinear pairings, adjoints and their matrix descriptions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

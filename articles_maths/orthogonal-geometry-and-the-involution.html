@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthogonal Geometry and the Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="orthogonal-geometry-and-the-involution"><strong>Orthogonal Geometry and the Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Orthogonal geometry</strong> is the geometry of a vector space over a field together with a nondegenerate symmetric bilinear form, and its central figures are the <strong>quadric</strong> of the isotropic vectors and the <strong>polarity</strong>, the correlation of the projective space that sends a point to the hyperplane of the vectors it is orthogonal to. The polarity is an involution of the projective geometry: it is inclusion-reversing, it is an order-two map on the lattice of the subspaces, and the points it sends to the hyperplanes containing them are exactly the points of the quadric. The article reads the structure in the <strong>involution on the elements</strong> layer of this Part: the form is the datum, the polarity is the involution on the figures, and the orthogonal group is the operator group that preserves both.</p>
+<p>The article develops the symmetric and the quadratic forms and the orthogonal group, the polarity with its order-two property, the quadric as the locus of the absolute points and as the set of the points lying in their polar hyperplanes, the action of the orthogonal group on the quadric and on the isotropic subspaces, and the standard examples of the conic, the quadric surfaces and the Klein quadric. The Witt index of the previous articles is the invariant that organises the quadric, and the classification of the forms is the classification of the quadrics.</p>
+<p>The article assumes <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em> of Part II for the symmetric bilinear and the quadratic forms, their polar forms, their isometry and the Witt theory; <em>Projective Geometry</em> and <em>Operators on a Projective Space</em> of this Part for the projective space, the correlations and the operator group; and <em>Unitary Geometry over a Field with Involution</em> for the Hermitian case of which the orthogonal case is the trivial involution. The article owns the polarity and the quadric. The article works over a field of characteristic not two. No distance and no physics is invoked.</p>
+<h2 id="symmetric-and-quadratic-forms">Symmetric and Quadratic Forms</h2>
+<h3 id="definition-and-the-orthogonal-group">Definition and the Orthogonal Group</h3>
+<p><strong>Definition.</strong> Let $V$ be a vector space over a field $K$ of characteristic not two. A <strong>symmetric bilinear form</strong> is a map $B : V \times V \to K$, bilinear and symmetric, $B(x,y) = B(y,x)$; the associated <strong>quadratic form</strong> is $q(x) = B(x,x)$, and the bilinear form is its <strong>polar form</strong>, recovered from $q$ by the polarisation</p>
+<p>$$
+B(x,y) = \tfrac12\bigl(q(x+y) - q(x) - q(y)\bigr) .
+$$</p>
+<p>The form is <strong>nondegenerate</strong> when the map $V \to V^{*}$, $x \mapsto B(x,\cdot)$, is an isomorphism; the <strong>orthogonal group</strong> is</p>
+<p>$$
+O(V,q) = \{T \in GL(V) : q(Tx) = q(x) \ \text{for all } x\} ,
+$$</p>
+<p>equivalently the group of the linear maps with $B(Tx,Ty) = B(x,y)$ throughout.</p>
+<p><strong>Proposition.</strong> The orthogonal group is the group of the isometries of the form, it contains the <strong>orthogonal transvections</strong> and is generated by the <strong>reflections</strong></p>
+<p>$$
+\rho_a(x) = x - 2\,\frac{B(x,a)}{B(a,a)}\,a
+$$</p>
+<p>in the non-isotropic vectors $a$, by the Cartan–Dieudonné theorem; the determinant is a homomorphism $O(V,q) \to \{\pm 1\}$ whose kernel is the special orthogonal group $SO(V,q)$, and the reflections are the elements of determinant $-1$.</p>
+<p><strong>Proof.</strong> The isometry condition $q(Tx) = q(x)$ is equivalent to the preservation of the polar form $B$ by the polarisation; a reflection preserves the form by the computation $q(\rho_a(x)) = q(x)$, and it has determinant $-1$; the generation by the reflections is the Cartan–Dieudonné theorem of <em>Clifford Algebras</em>, and the determinant statement follows from the parity of the number of the reflections. The statement is in <em>Quadratic Forms and Polarisation</em>.</p>
+<p><strong>Definition.</strong> The <strong>Witt index</strong> of a nondegenerate form is the largest dimension of a totally isotropic subspace, a subspace on which the restriction of the form vanishes; the form is <strong>split</strong> or <strong>hyperbolic</strong> when the index is $\lfloor n/2 \rfloor$, <strong>anisotropic</strong> when the index is zero, and every form has the Witt decomposition of <em>Hermitian Forms and Unitary Geometry</em> with the trivial involution.</p>
+<h3 id="the-isotropic-cone">The Isotropic Cone</h3>
+<p><strong>Definition.</strong> The <strong>isotropic cone</strong> of the form is the set</p>
+<p>$$
+C = \{x \in V : q(x) = 0\} ,
+$$</p>
+<p>a cone with vertex the origin; the <strong>quadric</strong> of the form is its projectivisation</p>
+<p>$$
+Q = \{[x] \in \mathbb{P}(V) : q(x) = 0\} ,
+$$</p>
+<p>and the non-isotropic vectors are the complement of the cone.</p>
+<p><strong>Proposition.</strong> The isotropic cone is a cone, invariant under the scalar multiplications, and it is the common zero set of the quadratic form and its polar; the quadric is nonempty exactly when the form is isotropic, and the form is anisotropic exactly when $Q$ is empty; for a nondegenerate form the quadric is a <strong>hypersurface of degree two</strong> in $\mathbb{P}(V)$, and it is smooth exactly when the form is nondegenerate.</p>
+<p><strong>Proof.</strong> The cone is invariant under the scalars because $q$ is homogeneous of degree two; the quadric is its projectivisation and it is nonempty exactly when the form represents zero; the smoothness of the quadric is the nondegeneracy of the form, since the gradient of $q$ vanishes only at the origin for a nondegenerate form. The statement is the classical one, in <em>Quadratic Forms and Polarisation</em> and <em>Projective Geometry</em>.</p>
+<h2 id="the-polarity">The Polarity</h2>
+<h3 id="definition-and-the-order-two-property">Definition and the Order-Two Property</h3>
+<p><strong>Definition.</strong> Let $B$ be a nondegenerate symmetric bilinear form on $V$. The <strong>polarity</strong> is the correlation of the projective space</p>
+<p>$$
+\pi : \mathbb{P}(V) \longrightarrow \mathbb{P}(V^{*}), \qquad \pi([x]) = [B(x,\cdot)] ,
+$$</p>
+<p>sending a point to the hyperplane of the linear forms vanishing on it; under the identification $\mathbb{P}(V^{*}) = \mathbb{P}(V)$ induced by the form it is a map of $\mathbb{P}(V)$ to itself, and the <strong>polar hyperplane</strong> of a point $[x]$ is the hyperplane</p>
+<p>$$
+[x]^\perp = \{[y] : B(x,y) = 0\} .
+$$</p>
+<p><strong>Theorem.</strong> The polarity is a correlation of order two: it is a bijection of the projective space onto its dual reversing the inclusion of the subspaces,</p>
+<p>$$
+W \subseteq W' \quad \Longrightarrow \quad (W')^\perp \subseteq W^\perp ,
+$$</p>
+<p>and the <strong>orthogonal complement</strong> satisfies $W^{\perp\perp} = W$ and $\dim W^\perp = \dim V - \dim W$ for every subspace $W$; the map $W \mapsto W^\perp$ is therefore an inclusion-reversing involution on the lattice of the projective subspaces.</p>
+<p><strong>Proof.</strong> The orthogonality is inclusion-reversing by the definition, and the double complement returns the subspace because the form is nondegenerate and the restriction of the form to the quotient is nondegenerate; the dimension formula is the nondegeneracy of the restriction of the form to a complement, both of which are the standard consequences of the nondegeneracy of $B$. The statement is in <em>Bilinear Forms</em> and <em>Projective Geometry</em>, and it is the form of the involution of the orthogonal geometry.</p>
+<h3 id="the-absolute-points-and-the-quadric">The Absolute Points and the Quadric</h3>
+<p><strong>Definition.</strong> A point $[x]$ is <strong>absolute</strong> for the polarity when it lies in its polar hyperplane,</p>
+<p>$$
+[x] \in [x]^\perp \quad \Longleftrightarrow \quad B(x,x) = 0 \quad \Longleftrightarrow \quad q(x) = 0 ,
+$$</p>
+<p>so that the absolute points are exactly the points of the quadric $Q$.</p>
+<p><strong>Theorem.</strong> The fixed locus of the polarity in the sense of the absolute points is the quadric $Q$; the polar hyperplane of a point of $Q$ is the tangent hyperplane to the quadric at that point, and for a point outside $Q$ the polar hyperplane meets the quadric in the points of contact of the tangents drawn from the point. The polarity therefore intertwines the geometry of the quadric with the linear algebra of the form: the quadric is the locus of the points lying in their polar hyperplanes, and the tangent hyperplanes are the polar hyperplanes of the points of the quadric.</p>
+<p><strong>Proof.</strong> The absolute condition is $B(x,x) = 0$ by the definition of the polar hyperplane; the tangent hyperplane to the quadric at a smooth point $[x]$ is the kernel of the differential of $q$, which is the linear form $B(x,\cdot)$, so it is the polar hyperplane; the tangents from an outside point touch the quadric at the points of the intersection of the polar hyperplane with the quadric, which is the classical theorem of the polar line. The statement is in <em>Quadratic Forms and Polarisation</em> and <em>Projective Geometry</em>.</p>
+<p><strong>Remark (the degenerate case).</strong> When the form is degenerate the polarity is not an involution of the whole space: the radical is contained in every polar hyperplane and the map fails to be injective; the quadric becomes a cone with the vertex the projectivised radical, and the nondegenerate part of the form acts on the quotient. The article keeps the nondegenerate case, and it names the degenerate case as the one in which the involution degenerates to a correlation with a nonempty radical.</p>
+<h2 id="the-orthogonal-group-and-the-quadric">The Orthogonal Group and the Quadric</h2>
+<h3 id="the-action-on-the-quadric">The Action on the Quadric</h3>
+<p><strong>Theorem.</strong> The orthogonal group $O(V,q)$ preserves the quadric and the polarity, and it acts on the projective space by the projectivities induced by its elements; the projectivities so obtained form the <strong>projective orthogonal group</strong> $PO(V,q) = O(V,q)/\{\pm 1\}$ up to the scalars, and the preservation of the quadric by a projectivity is equivalent to the up-to-scalar preservation of the form, as recorded in <em>Operators on a Projective Space</em>.</p>
+<p><strong>Proof.</strong> An isometry of the form preserves $q$ and hence the quadric and the polarity; conversely a projectivity preserving the quadric preserves the polarity and the form up to a scalar, which is the statement of the companion article. The quotient by the scalars is the passage to the projective group, and the kernel of the projectivisation is the scalar matrices, which are $\pm 1$ in the orthogonal group. The statement is in <em>Operators on a Projective Space</em>.</p>
+<p><strong>Corollary (the orbits of the quadric).</strong> The orthogonal group acts transitively on the points of the quadric when the form is isotropic, and the quadric is the homogeneous space $O(V,q)/P$ of the group modulo the stabiliser $P$ of a point; the stabiliser is the subgroup preserving the polar hyperplane of the point, and it is the maximal parabolic of the orthogonal group associated with the isotropic line. The totally isotropic subspaces of each dimension form the orbits of the parabolic stabilisers, and the Witt index is their maximal dimension.</p>
+<p><strong>Proof.</strong> The transitivity on the isotropic points is the Witt extension theorem: two isotropic vectors of the same norm zero are carried to each other by an isometry of the form; the stabiliser of a point is the subgroup preserving it, which preserves its polar hyperplane and acts on it, and the orbit-stabiliser theorem gives the homogeneous space. The statement is in <em>Hermitian Forms and Unitary Geometry</em> and <em>Linear Algebraic Groups</em>.</p>
+<h3 id="the-quadric-as-a-homogeneous-variety">The Quadric as a Homogeneous Variety</h3>
+<p><strong>Theorem.</strong> A nondegenerate quadric in $\mathbb{P}^n$ with the split form of maximal Witt index is a <strong>rational homogeneous variety</strong> of the orthogonal group, it is invariant under the orthogonal group acting transitively, and its dimension, its degree and its singular locus are read from the rank and the index of the form: a nondegenerate quadric in $\mathbb{P}^n$ has dimension $n-1$ and degree $2$, and it is smooth exactly when the form is nondegenerate.</p>
+<p><strong>Proof.</strong> The quadric is the zero set of the quadratic form, so it has dimension $n-1$ and degree two; the smoothness is the nondegeneracy of the gradient, which is the statement of the previous sections; the homogeneity is the transitivity of the orthogonal group on the nondegenerate points, which is the Witt theorem. The statement is in <em>Quadratic Forms and Polarisation</em> and in the theory of the rational homogeneous varieties of <em>Linear Algebraic Groups</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-conic-and-the-quadric-surfaces">The Conic and the Quadric Surfaces</h3>
+<p><strong>Example (the conic in the plane).</strong> Let $\dim V = 3$ and let $q$ be a nondegenerate form of Witt index $1$ over $\mathbb{R}$ of signature $(2,1)$; the quadric is a smooth conic in $\mathbb{P}^2$, it is nonempty with real points, and the polarity sends a point of the conic to its tangent line. The polar line of an outside point is the chord of contact, the polar line of an inside point is the line with no real intersection, and the polarity restricted to the conic is the correspondence between the points and the tangents.</p>
+<p><strong>Example (the quadric surfaces).</strong> Let $\dim V = 4$; the nondegenerate quadrics in $\mathbb{P}^3$ are the smooth quadric surfaces, and they fall into the two types of the Witt index: the <strong>hyperbolic quadric</strong> of index $2$, which is the doubly ruled surface $\mathbb{P}^1 \times \mathbb{P}^1$ with the two families of the lines on it, and the <strong>elliptic quadric</strong> of index $1$, which carries no line. Over $\mathbb{R}$ the two types correspond to the signatures $(2,2)$ and $(3,1)$ of the form, and the quadric of signature $(2,2)$ is the real doubly ruled quadric of the hyperboloid.</p>
+<h3 id="the-klein-quadric">The Klein Quadric</h3>
+<p><strong>Example (the Klein quadric).</strong> Let $\dim V = 6$ with the split form of signature $(3,3)$; the quadric $Q \subset \mathbb{P}^5$ is the <strong>Klein quadric</strong>, the image of the Grassmannian of the lines of $\mathbb{P}^3$ under the Plücker embedding, and the two families of the three-dimensional isotropic subspaces of $V$ are the two rulings of the quadric by the planes corresponding to the lines through a point and the lines in a plane. The polarity of the Klein quadric exchanges the two families, and the orthogonal group of the form is the group of the linear automorphisms of the space of the lines of $\mathbb{P}^3$ preserving the incidence, an isomorphism with the projective group of the four-dimensional space.</p>
+<p><strong>Proof.</strong> The Plücker coordinates of a line of $\mathbb{P}^3$ are the six two-by-two minors of a two-by-four matrix, and the Plücker relation is the quadratic equation of the Klein quadric; the two rulings are the Schubert cells of the lines through a point and the lines in a plane, and the polarity of the quadric exchanges them by duality. The statement is in <em>Projective Geometry</em> and in the theory of the Grassmannians of <em>Grassmannians and Stiefel Manifolds</em>, later in this Part.</p>
+<h2 id="summary">Summary</h2>
+<p>Orthogonal geometry is the geometry of a nondegenerate symmetric bilinear form $B$ and its quadratic form $q$; the orthogonal group $O(V,q)$ is the group of the isometries, generated by the reflections $\rho_a(x) = x - 2B(x,a)a/B(a,a)$, and the isotropic cone $C = \{q = 0\}$ projectivises to the quadric $Q$. The <strong>polarity</strong> $\pi([x]) = [B(x,\cdot)]$ is an inclusion-reversing correlation of order two, with $W^{\perp\perp} = W$ and $\dim W^\perp = \dim V - \dim W$, and its absolute points, those lying in their polar hyperplanes, are exactly the points of the quadric; the polar hyperplane of a point of the quadric is the tangent hyperplane. The orthogonal group preserves the quadric and the polarity and acts as the projective orthogonal group $PO(V,q)$, transitively on the isotropic points and on the totally isotropic subspaces of each dimension, with the Witt index as the maximal dimension and the parabolics as the stabilisers. The conic, the hyperbolic and elliptic quadric surfaces, and the Klein quadric of the lines of $\mathbb{P}^3$ are the standard instances; the degenerate case is the one in which the polarity has a nonempty radical and the quadric becomes a cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(x,y)$, $q(x) = B(x,x)$</td>
+<td>Symmetric bilinear form and its quadratic form</td>
+</tr>
+<tr>
+<td>$O(V,q)$, $SO(V,q)$</td>
+<td>Orthogonal and special orthogonal groups</td>
+</tr>
+<tr>
+<td>$\rho_a(x) = x - 2B(x,a)a/B(a,a)$</td>
+<td>Reflection in the non-isotropic vector $a$</td>
+</tr>
+<tr>
+<td>Witt index</td>
+<td>Largest dimension of a totally isotropic subspace</td>
+</tr>
+<tr>
+<td>$C = \{q = 0\}$, $Q = \{[x] : q(x) = 0\}$</td>
+<td>Isotropic cone and quadric</td>
+</tr>
+<tr>
+<td>$\pi([x]) = [B(x,\cdot)]$</td>
+<td>Polarity</td>
+</tr>
+<tr>
+<td>$W^\perp$, $W^{\perp\perp} = W$</td>
+<td>Orthogonal complement, an involution of the lattice</td>
+</tr>
+<tr>
+<td>absolute point</td>
+<td>$[x] \in [x]^\perp$, i.e. $q(x) = 0$</td>
+</tr>
+<tr>
+<td>polar hyperplane</td>
+<td>The hyperplane $[x]^\perp$</td>
+</tr>
+<tr>
+<td>$PO(V,q) = O(V,q)/\{\pm1\}$</td>
+<td>Projective orthogonal group</td>
+</tr>
+<tr>
+<td>Klein quadric</td>
+<td>The quadric of the lines of $\mathbb{P}^3$ in $\mathbb{P}^5$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsit Yuen Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the forms, the orthogonal groups and the Witt theory.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the polarity, the quadrics and the orthogonal groups.</li>
+<li>H. S. M. Coxeter, <em>Projective Geometry</em>, 2nd ed. (Springer, 2003), for the polarity, the conics and the quadrics of the projective space.</li>
+<li>W. V. D. Hodge and Daniel Pedoe, <em>Methods of Algebraic Geometry</em>, vol. 2 (Cambridge University Press, 1952), for the quadrics, the polarities and the Klein quadric.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry</em>, vol. 1, 3rd ed. (Springer, 2013), for the quadrics as the projective varieties.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the orthogonal involutions and the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

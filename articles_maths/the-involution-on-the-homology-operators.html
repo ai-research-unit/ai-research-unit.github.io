@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Homology Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-homology-operators"><strong>The Involution on the Homology Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a manifold acts on its homology, and therefore acts on the <strong>operators</strong> on the homology: on the linear endomorphisms of $H_*(M;k)$ by conjugation, and on each natural operator of the theory — the intersection form, the Poincaré duality isomorphism, the cup product, the surgery and handle operators, the Dehn twist. This article is the operator-layer synthesis: it determines which operators are equivariant, it computes the induced action on the algebra of operators, and it reads the Lefschetz number as the supertrace of the induced involution.</p>
+<p>The structure is the one of the two earlier articles on the homology with one layer added. The endomorphism algebra decomposes into the invariant operators, which are block diagonal with respect to the fixed and the anti-fixed parts, and the anti-invariant operators, which are off diagonal; the natural operators of topology are equivariant up to the degree sign of <em>The Involution on the Homology</em>, and the supertrace of the induced involution is the Lefschetz number, which the Lefschetz fixed point theorem relates to the fixed set.</p>
+<p><strong>The article assumes</strong> everything of the group: <em>The Involution as an Operator on the Homology</em> (the module $H_*$ over $k[\mathbb{Z}/2]$ and the transfer), <em>The Involution on the Homology</em> (the interaction with the intersection form), <em>The Surgery Operator</em>, <em>The Handle Operator</em>, <em>The Dehn Twist as an Operator</em> and <em>The Mapping Class Group Action</em> (the operators whose equivariance is decided here), and the Steenrod operations of <em>The Steenrod Squares and the Cohomology Operations</em>.</p>
+<p><strong>The boundaries of the article.</strong> The homology of an involution and the intersection form are the two articles of the group's first-homology family; the classification of the Hermitian forms and the surgery obstruction groups are <em>Hermitian Pairings and the Signature</em>, the next article of this group; the equivariant signature is <em>Hermitian Pairings and the Equivariant Signature</em>. The index theory of an equivariant elliptic operator is Part IV (<em>Index Theory and the Atiyah–Singer Theorem</em>). No analysis and no smooth structure is used beyond the statement of the Lefschetz fixed point theorem.</p>
+<h2 id="the-conjugation-action-on-the-operators">The Conjugation Action on the Operators</h2>
+<p><strong>Definition.</strong> Let $T$ be an involution of a finite complex $M$ and let $H = H_*(M;k)$ be its homology over a ring $k$ in which $2$ is invertible. The involution acts on the endomorphism algebra by <strong>conjugation</strong>,
+$$
+\alpha\longmapsto T_*\,\alpha\,T_*^{-1}, \qquad \alpha\in\operatorname{End}_k(H),
+$$
+and makes $\operatorname{End}_k(H)$ a module over $k[\mathbb{Z}/2]$. An operator is <strong>equivariant</strong> (or invariant) if it is fixed by the action, that is, if it commutes with $T_*$; it is <strong>anti-equivariant</strong> if it satisfies $T_*\alpha T_*^{-1} = -\alpha$.</p>
+<p><strong>Theorem (the invariant operators are the block-diagonal ones).</strong> Write $H = H^{+}\oplus H^{-}$ for the fixed and the anti-fixed parts and, for a homogeneous operator, its block decomposition
+$$
+\alpha = \begin{pmatrix} \alpha^{++} & \alpha^{+-} \\ \alpha^{-+} & \alpha^{--} \end{pmatrix};
+$$
+then $\alpha$ is equivariant exactly when the off-diagonal blocks vanish, $\alpha^{+-} = \alpha^{-+} = 0$, and anti-equivariant exactly when the diagonal blocks vanish. Hence
+$$
+\operatorname{End}_k(H)^{\mathbb{Z}/2} \;\cong\; \operatorname{End}_k(H^{+})\oplus\operatorname{End}_k(H^{-}) \,\subseteq\, \operatorname{End}_k(H)
+$$
+and the anti-invariant operators form the complementary summand $\operatorname{Hom}_k(H^{+},H^{-})\oplus\operatorname{Hom}_k(H^{-},H^{+})$; over a field the algebra decomposes as a $k[\mathbb{Z}/2]$-module into these two summands, and $\operatorname{End}_k(H)$ is the direct sum of the invariant and the anti-invariant operators.</p>
+<p><strong>Proof.</strong> The action on a matrix is conjugation by the diagonal matrix $\operatorname{diag}(1,-1)$ on $H^{+}\oplus H^{-}$; conjugating a block by that matrix multiplies the off-diagonal blocks by $-1$ and fixes the diagonal ones. A matrix is therefore fixed exactly when its off-diagonal blocks vanish, and negated exactly when its diagonal blocks vanish. The direct-sum statement follows from the invertibility of $2$.</p>
+<p><strong>Corollary (the commutant and the bimodule structure).</strong> The invariant operators form the commutant $C(T_*) = \operatorname{End}_k(H)^{\mathbb{Z}/2}$, an algebra acting on each of the two parts, and the module $H$ is a module over this algebra with $H^{+}$ and $H^{-}$ as the two isotypic components. The centraliser of the image of $k[\mathbb{Z}/2]$ in $\operatorname{End}_k(H)$ is exactly the commutant, and the double centraliser statement gives the Morita equivalence between the module structure over $k[\mathbb{Z}/2]$ and the module structure over the commutant.</p>
+<p><strong>Proof.</strong> The commutant is the centraliser, and the isotypic decomposition of a module over the semisimple ring $k[\mathbb{Z}/2]$ is the decomposition into the two characters; the standard double centraliser theorem for semisimple modules gives the stated equivalence.</p>
+<p><strong>Example (the identity and the involutions).</strong> The identity operator is equivariant, and the operator $T_*$ itself is equivariant; the projection $P^{+} = (1+T_*)/2$ onto the fixed part and the projection $P^{-} = (1-T_*)/2$ onto the anti-fixed part are equivariant idempotents summing to the identity, and the two projections are the trace of the module structure. An operator mapping $H^{+}$ to $H^{-}$ is anti-equivariant; the intersection form of an orientation-reversing involution is such an operator, as <em>The Involution on the Homology</em> shows.</p>
+<h2 id="the-equivariance-of-the-natural-operators">The Equivariance of the Natural Operators</h2>
+<p><strong>Theorem (the natural operators of the homology are equivariant up to degree).</strong> The following operators of the theory are equivariant for an orientation-preserving involution and equivariant up to the degree sign for an orientation-reversing one:</p>
+<p><strong>(a)</strong> the Poincaré duality isomorphism $D : H^k(M)\to H_{n-k}(M)$, which intertwines the two actions and preserves the isotropy parts for an orientation-preserving involution and exchanges them for an orientation-reversing one;</p>
+<p><strong>(b)</strong> the cup product $\smile : H^p\times H^q\to H^{p+q}$, which satisfies $T^{*}(\alpha\smile\beta) = T^{*}\alpha\smile T^{*}\beta$;</p>
+<p><strong>(c)</strong> the cap product and the evaluation pairing, by the naturality of the product;</p>
+<p><strong>(d)</strong> the intersection form $Q$, with $Q(T_*x,T_*y) = \deg(T)Q(x,y)$;</p>
+<p><strong>(e)</strong> the Steenrod squares $Sq^i$ and the Bockstein, which are natural operations and therefore commute with every induced map, hence with $T_*$; in particular the action of $\mathbb{Z}/2$ on $H^*(M;\mathbb{F}_2)$ commutes with the whole Steenrod algebra.</p>
+<p><strong>Proof.</strong> (a) is the equivariant Poincaré duality of <em>The Involution on the Homology</em>; (b) and (c) are the naturality of the cup and cap products under a homeomorphism; (d) is the theorem of <em>The Involution on the Homology</em>; (e) is the naturality of the cohomology operations, which are defined on the category of spaces and maps.</p>
+<p><strong>Theorem (the equivariance of the geometric operators).</strong> Let $T$ be an involution of a manifold $M$.</p>
+<p><strong>(a)</strong> A Dehn twist $T_a$ on a surface is equivariant with respect to the involution of the mapping class group if and only if the curve $a$ is invariant (up to isotopy) under the involution; then the induced operator on the homology satisfies $T_*(T_a)_*T_*^{-1} = (T_{T(a)})_*$, and for an invariant non-separating curve the direction of the transvection is taken to the direction of the image class.</p>
+<p><strong>(b)</strong> The surgery and handle operators of <em>The Surgery Operator</em> and <em>The Handle Operator</em> are equivariant exactly when the attaching data (the sphere, the framing and the normal representation) are equivariant; the equivariant operators are the ones whose traces are the equivariant surgery obstructions of <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
+<p><strong>(c)</strong> The symplectic representation of the mapping class group is equivariant for the action of a surface involution on the mapping class group and on the homology.</p>
+<p><strong>Proof.</strong> (a) is the conjugation formula of the mapping class group action: $\rho(\phi T_a\phi^{-1}) = \rho(\phi)\rho(T_a)\rho(\phi)^{-1}$, applied to $\phi$ the involution; (b) is the naturality of the handle and surgery constructions under an equivariant homeomorphism, with the local model of the normal representation required for the equivariance; (c) is the compatibility of the action on $H_1$ with the action on the mapping class group.</p>
+<p><strong>Corollary (which operators descend to the quotient).</strong> An equivariant operator on $H_*(M)$ restricts to operators on the fixed part $H^{+}$ and on the anti-fixed part $H^{-}$; over a field in which $2$ is invertible, an equivariant operator therefore descends to an operator on the invariants and to one on the coinvariants, and the natural operators that are equivariant descend to the homology of the quotient and to the homology of the fixed set, as in <em>The Involution as an Operator on the Homology</em>.</p>
+<h2 id="the-supertrace-and-the-lefschetz-number">The Supertrace and the Lefschetz Number</h2>
+<p><strong>Definition.</strong> Let $H = \bigoplus_i H_i$ be a graded module with a degree-zero endomorphism $\alpha$ of finite rank. The <strong>supertrace</strong> is
+$$
+\operatorname{Str}(\alpha) = \sum_i(-1)^i\operatorname{tr}\bigl(\alpha\,|\,H_i\bigr),
+$$
+and the <strong>Lefschetz number</strong> of the involution is $L(T) = \operatorname{Str}(T_*)$.</p>
+<p><strong>Proposition (the Lefschetz number and the Euler characteristic).</strong> For a locally linear (or smooth) involution $T$ of a closed manifold, the Lefschetz number is the Euler characteristic of the fixed set,
+$$
+L(T) = \chi(F), \qquad F = M^{T}.
+$$
+In particular $L(T) = \#F$ when the fixed set is finite, and $L(T) = 0$ for a free involution; the identity $L(T)\equiv\chi(M)\pmod 2$ also holds, because the trace of an involution on a vector space has the parity of the dimension.</p>
+<p><strong>Proof sketch.</strong> The Lefschetz fixed point theorem computes $L(T)$ as the sum of the local contributions of the fixed set, which for a locally linear involution is the Euler characteristic of the fixed set because the local model $F\times D^k$ with the reflection contributes $\chi(F)$ and the normal reflection contributes $1$ to each fixed component. The examples check the formula: for the involution $-I$ of the torus the four fixed points give $L = 1 + 2 + 1 = 4$, for the reflection of a sphere the two fixed components give the Euler characteristic of the equator, and for the involution of $S^2$ with two fixed points $L = 2$. The general statement is the Atiyah–Bott form of the Lefschetz theorem for a periodic map.</p>
+<p><strong>Corollary (the supertrace detects the fixed set).</strong> The supertrace of the induced involution on the homology is a homeomorphism invariant of the action computing the Euler characteristic of the fixed set; it is the first and the simplest of the equivariant invariants of the action, and it is refined by the equivariant signature of <em>Hermitian Pairings and the Equivariant Signature</em>, which is the corresponding supertrace for the intersection form in dimension $4k$.</p>
+<p><strong>Proof.</strong> The Lefschetz number is homotopy invariant and the formula computes it from the fixed set; the refinement to the signature is the observation that the intersection form on the middle homology is a Hermitian form whose equivariant supertrace is the multisignature.</p>
+<p><strong>Remark (the index interpretation).</strong> The supertrace is the index of the "supersymmetric" operator $T_*$ on the graded module, and the equality $L(T) = \chi(F)$ is the equality of two indices: the index of the equivariant operator $1 - T_*$ and the index of the Euler characteristic of the fixed set. For the equivariant elliptic operators this becomes the Atiyah–Singer index theorem with the character $g$, which is Part IV; the present article keeps the algebraic form.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the identity operator and the projections).</strong> The projections $P^{\pm} = (1\pm T_*)/2$ are equivariant idempotents with $\operatorname{rank}$ the dimensions of the two parts; their supertraces are $\operatorname{Str}(P^{+}) = \sum_i(-1)^i\dim H_i^{+} = \chi(M/T)$ up to normalisation and $\operatorname{Str}(P^{-}) = \chi(M)-\chi(M/T)$, which is the Euler-characteristic splitting of <em>The Involution on the Homology</em>.</p>
+<p><strong>Example (the transvection and the invariant curve).</strong> On a surface with an involution fixing a non-separating curve $a$, the transvection $(T_a)_*$ is equivariant, with the direction $A$ either fixed or negated by the involution; the operator decomposes into its restrictions to the fixed and anti-fixed parts, and the decomposition is the operator form of the equivariant splitting of the intersection form. The example is the operator-level statement of the Dehn twist article.</p>
+<p><strong>Example (the Steenrod squares on a projective space).</strong> On $\mathbb{RP}^n$ the cohomology is the truncated polynomial ring $\mathbb{F}_2[x]/(x^{n+1})$ with $Sq^i(x^j) = \binom{j}{i}x^{i+j}$; the antipodal involution acts trivially on the mod $2$ cohomology and the Steenrod algebra is invariant, illustrating the naturality of the operations under the action. The example is the simplest computation of the equivariant cohomology operations.</p>
+<p><strong>Example (the Lefschetz number of the torus involution).</strong> For $T = -I$ on $T^2$ the induced map on $H_1$ has trace $-2$ and the map on $H_2$ has degree $+1$, so $L(T) = 1 + 2 + 1 = 4$, the number of two-torsion points, the fixed set of the involution; the computation is the standard verification of $L(T) = \chi(F)$.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a space acts on the operators of its homology by conjugation, and the operators fixed by the action are precisely the ones commuting with the induced involution, that is, the block-diagonal operators with respect to the splitting of the homology into the fixed and the anti-fixed parts; the anti-equivariant operators are the block off-diagonal ones. The natural operators of topology — Poincaré duality, the cup and cap products, the intersection form, the Steenrod squares and the Bockstein — are equivariant up to the degree sign of the action, and the geometric operators — the Dehn twist, the surgery and handle operators, the symplectic representation — are equivariant exactly when their defining data are invariant. Equivariant operators restrict to the two eigenspaces and descend to the homology of the quotient and of the fixed set. The supertrace of the induced involution is the Lefschetz number, which for a locally linear involution equals the Euler characteristic of the fixed set, and it is the first equivariant invariant of the action, refined by the equivariant signature in the middle dimension of a $4k$-manifold.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_*$, conjugation $\alpha\mapsto T_*\alpha T_*^{-1}$</td>
+<td>the induced action on the homology and on the operators</td>
+</tr>
+<tr>
+<td>$H = H^{+}\oplus H^{-}$</td>
+<td>the fixed and anti-fixed parts of the homology</td>
+</tr>
+<tr>
+<td>invariant / anti-equivariant operator</td>
+<td>commuting with $T_*$, respectively anti-commuting</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_k(H)^{\mathbb{Z}/2}\cong\operatorname{End}_k(H^{+})\oplus\operatorname{End}_k(H^{-})$</td>
+<td>the commutant, the block-diagonal operators</td>
+</tr>
+<tr>
+<td>$P^{\pm} = (1\pm T_*)/2$</td>
+<td>the equivariant projections onto the two parts</td>
+</tr>
+<tr>
+<td>$Q(T_*x,T_*y) = \deg(T)Q(x,y)$</td>
+<td>the equivariance of the intersection form</td>
+</tr>
+<tr>
+<td>$Sq^i$, Bockstein</td>
+<td>the natural cohomology operations, commuting with the action</td>
+</tr>
+<tr>
+<td>$\operatorname{Str}(\alpha) = \sum_i(-1)^i\operatorname{tr}(\alpha|H_i)$</td>
+<td>the supertrace; $L(T) = \operatorname{Str}(T_*)$ the Lefschetz number</td>
+</tr>
+<tr>
+<td>$L(T) = \chi(F)$</td>
+<td>the Lefschetz number of a locally linear involution is the Euler characteristic of the fixed set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for the fixed-set formula for the Lefschetz number and the equivariant neighbourhoods.</li>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the Lefschetz fixed point theorem, the trace and the supertrace formalism.</li>
+<li>Norman Steenrod and David Epstein, <em>Cohomology Operations</em> (Princeton University Press, 1962), for the Steenrod squares and their naturality, used in <em>The Steenrod Squares and the Cohomology Operations</em>.</li>
+<li>Benson Farb and Dan Margalit, <em>A Primer on Mapping Class Groups</em> (Princeton University Press, 2012), for the conjugation formula of the Dehn twist and the equivariance of the symplectic representation.</li>
+<li>Michael F. Atiyah and Raoul Bott, "A Lefschetz Fixed Point Formula for Elliptic Complexes I", <em>Annals of Mathematics</em> 86 (1967), 374–407, for the analytic refinement of the supertrace and the fixed-set formula.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The Index of Elliptic Operators: III", <em>Annals of Mathematics</em> 87 (1968), 546–604, for the equivariant index theorem, the analytic home of the equivariant supertrace in Part IV.</li>
+<li>Karl Heinz Dovermann and Reinhard Schultz, <em>Equivariant Surgery Theories and Their Periodicity Properties</em> (Springer Lecture Notes 1443, 1990), for the equivariant operators and the traces in the surgery theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

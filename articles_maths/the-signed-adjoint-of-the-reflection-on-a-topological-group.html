@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Topological Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-topological-group"><strong>The Signed Adjoint of the Reflection on a Topological Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of a graded topological group is a signed conjugation that is an involution, and read on the group algebra it is a signed operator whose adjoint is again a reflection, the reflection carried by the inverse element. The questions the adjoint answers are the classical ones: when is a reflection self-adjoint, when is it orthogonal, and what happens when the carrying element fails the centrality that makes the operator an involution at all. The answers are clean in the reflection case — self-adjointness, unitarity and orthogonality all coincide and hold exactly when the square of the carrying element is central — and they separate in the degenerate case, which is the operator form of the degeneracy of the reflection correspondence.</p>
+<p>The article assumes the signed form, the adjoints of the translations and the linear extension of the grade involution from <em>The Adjoint of the Left Multiplication on a Topological Group</em>; the adjoint of the signed sandwich, the inverse and the unitarity criterion from <em>The Signed Adjoint Sandwich on a Topological Group</em>; the signed conjugation, its square, the fixed subgroup and the carrying elements from <em>The Signed Sandwich on a Topological Group</em> and <em>Reflections as Signed Two-Sided Operators on a Topological Group</em>; and the fixed and inverted subgroups and the dictionary from <em>Involutive Topological Groups</em>. The Haar inner product and the adjoint of a reflection under it are Part III.</p>
+<p>Throughout, $G$ is a Hausdorff topological group, $k$ is a field of characteristic different from two, $k[G]$ is the group algebra, $\sigma$ is a continuous involution, $\alpha = \sigma\iota$ is the associated continuous involutive automorphism, $Z(G)$ is the centre, and the <strong>signed conjugation</strong> and the <strong>reflection</strong> are the operators on $k[G]$</p>
+<p>$$
+\rho_a = \Sigma^{\alpha}_{a,\,a^{-1}} , \qquad \rho_a(u) = a\,\alpha(u)\,a^{-1} = (c_a\alpha)(u) ,
+$$</p>
+<p>the second expression holding by the identification of the linear extension with the automorphism of the group algebra.</p>
+<h2 id="the-adjoint-of-a-reflection">The Adjoint of a Reflection</h2>
+<p><strong>Theorem (the class of reflections is closed under the adjoint).</strong> With respect to the signed form $B_\alpha(u,v) = \sum_g u_gv_{\alpha(g)}$, the adjoint of the signed conjugation is the signed conjugation by the inverse,</p>
+<p>$$
+\rho_a^\dagger = \rho_{a^{-1}} = \Sigma^{\alpha}_{a^{-1},\,a} ,
+$$</p>
+<p>so the adjoint of a reflection is the reflection carried by the inverse of the carrying element, and the adjoint operation is an involution on the set of reflections.</p>
+<p><strong>Proof.</strong> By the adjoint formula for the signed sandwich, $\rho_a^\dagger = (\Sigma^\alpha_{a,a^{-1}})^\dagger = \Sigma^\alpha_{a^{-1},(a^{-1})^{-1}} = \Sigma^\alpha_{a^{-1},a} = \rho_{a^{-1}}$. If $a\alpha(a)$ is central then so is $a^{-1}\alpha(a^{-1}) = (a\alpha(a))^{-1}$, so $\rho_{a^{-1}}$ is again a reflection; and $(\rho_{a^{-1}})^\dagger = \rho_a$.</p>
+<p><strong>Corollary (the adjoint in the operator algebra).</strong> As an element of the algebra generated by the translations and the linear extension $A$ of the grade involution, $\rho_a = c_aA = L_aAR_{a^{-1}}$, and its adjoint is $A R_{\sigma(a)^{-1}}L_{\sigma(a)^{-1}}$; the two expressions agree because $\sigma(a)^{-1} = \alpha(a)$.</p>
+<p><strong>Proof.</strong> $\rho_a = L_aR_{a^{-1}}A$, and the adjoint is $A^\dagger R_{a^{-1}}^\dagger L_a^\dagger = A\,R_{\sigma(a^{-1})}\,L_{\sigma(a)}$. Since $\sigma(a^{-1}) = \alpha(a)$ and $\sigma(a)^{-1} = \alpha(a)$ as well, the displayed form follows.</p>
+<h2 id="self-adjointness-and-orthogonality">Self-Adjointness and Orthogonality</h2>
+<p><strong>Theorem (self-adjointness).</strong> The signed conjugation $\rho_a$ is self-adjoint, $\rho_a^\dagger = \rho_a$, if and only if $a^2 \in Z(G)$. It is unitary if and only if $a^{-1}\alpha(a) \in Z(G)$. If $\rho_a$ is a reflection — that is, if $a\alpha(a) \in Z(G)$ — then the two conditions are equivalent, so a reflection is self-adjoint exactly when it is unitary, and it is then an <strong>orthogonal</strong> involution of the group algebra.</p>
+<p><strong>Proof.</strong> Self-adjointness: $\rho_a^\dagger = \rho_{a^{-1}}$ equals $\rho_a$ exactly when $a^{-1} \in aZ(G)$, by the coset criterion for signed conjugations, and $a^{-1}\in aZ(G)$ is $a^2 \in Z(G)$. Unitarity: by the unitarity criterion with $b = a^{-1}$, the second condition is automatic and the first is $a^{-1}\alpha(a) \in Z(G)$. If $a\alpha(a)$ is central then $\alpha(a) = a^{-1}z$ with $z$ central, so $a^{-1}\alpha(a) = a^{-2}z$, which is central exactly when $a^2$ is central. Finally, an involution is self-adjoint if and only if it is unitary: self-adjointness gives $\rho_a^\dagger\rho_a = \rho_a^2 = \mathrm{id}$, and unitarity with $\rho_a^2 = \mathrm{id}$ gives $\rho_a^\dagger = \rho_a^{-1} = \rho_a$.</p>
+<p><strong>Corollary (the involution and its fixed space).</strong> Let $\rho_a$ be a self-adjoint reflection. Then the group algebra decomposes as the direct sum of the two eigenspaces of the involution,</p>
+<p>$$
+k[G] = \ker(\rho_a - \mathrm{id}) \oplus \ker(\rho_a + \mathrm{id}),
+$$</p>
+<p>the two summands are mutually orthogonal for the signed form, and the first is the fixed space of the reflection, the annihilator of the second.</p>
+<p><strong>Proof.</strong> An involution with $2$ invertible has the decomposition into its $\pm1$-eigenspaces. If $\rho_a$ is self-adjoint and $\rho_au = u$, $\rho_av = -v$ then $B_\alpha(u,v) = B_\alpha(\rho_au,v) = B_\alpha(u,\rho_av) = -B_\alpha(u,v)$, so $B_\alpha(u,v) = 0$; hence the summands are orthogonal and each is the annihilator of the other under the nondegenerate form.</p>
+<p><strong>Corollary (the fixed space as a kernel).</strong> The fixed space of the reflection is the kernel of the operator $\alpha - c_{a^{-1}}$ on the group algebra, and it is spanned by the elements of the fixed subgroup $\operatorname{Fix}(a) = \{x : \alpha(x) = a^{-1}xa\}$ when the latter is a subgroup; in the topological case the fixed set is closed and the kernel is the closed span.</p>
+<p><strong>Proof.</strong> $\rho_a u = u$ means $a\alpha(u)a^{-1} = u$, that is $\alpha(u) = a^{-1}ua = c_{a^{-1}}(u)$ on group elements, so $(\alpha - c_{a^{-1}})u = 0$. The solutions in the basis are the elements of $\operatorname{Fix}(a)$, and the kernel is their span, closed by the continuity of the operator.</p>
+<h2 id="the-degenerate-case">The Degenerate Case</h2>
+<p><strong>Theorem (the separation of the conditions).</strong> Suppose $a\alpha(a)$ is not central, so that $\rho_a$ is not an involution and not a reflection. Then self-adjointness and unitarity separate: $\rho_a$ is self-adjoint when $a^2$ is central and unitary when $a^{-1}\alpha(a)$ is central, and neither condition implies the other in general. The operator has order the order of the inner conjugation $c_{a\alpha(a)}$, and it is self-adjoint if and only if $\rho_a^{-1} = \rho_a$, a condition on the carrying element alone.</p>
+<p><strong>Proof.</strong> In the reflection case the centrality of $a\alpha(a)$ made the two conditions equivalent; here it is absent, so the computations $a^2\in Z(G)$ and $a^{-1}\alpha(a)\in Z(G)$ are independent. The order statement is the computation of the square, $\rho_a^2 = c_{a\alpha(a)}$; self-adjointness is $\rho_{a^{-1}} = \rho_a$, which is $a^{-2}\in Z(G)$.</p>
+<p><strong>Corollary (the operator with a non-central square).</strong> If $a\alpha(a)\in Z(G)$ but $a^2\notin Z(G)$, then $\rho_a$ is an involution of the group algebra that is not self-adjoint: it is an involution whose adjoint is a different involution, $\rho_{a^{-1}}$, and it is not orthogonal. The pair $(\rho_a,\rho_{a^{-1}})$ are mutually adjoint and their product is the identity.</p>
+<p><strong>Proof.</strong> The square is the identity by the centrality of $a\alpha(a)$, so $\rho_{a^{-1}} = \rho_a^{-1}$; the adjoint is $\rho_{a^{-1}}$, and it differs from $\rho_a$ because $a^2$ is not central, so the involution is not self-adjoint. The product statement is the involution property.</p>
+<p><strong>Corollary (the reversion criterion).</strong> The reflection $\rho_a$ is orthogonal exactly when $a\,a$ is central, and the orthogonal reflections among the elements of the inverted subgroup $G^\sigma = I(\alpha)$ are those with $a^2$ central; when the action of the adjoint is used to read a reflection as a Hermitian operator, the carrier must satisfy this condition, not merely the involution condition.</p>
+<p><strong>Proof.</strong> Orthogonality is self-adjointness for an involution, just proved, and the condition is $a^2\in Z(G)$; for $a\in G^\sigma$ one has $\alpha(a) = a^{-1}$, so the involution condition $a\alpha(a)\in Z(G)$ holds automatically, and the orthogonality condition remains $a^2\in Z(G)$.</p>
+<h2 id="summary">Summary</h2>
+<p>Read on the group algebra with respect to the signed form, the signed conjugation $\rho_a$ has adjoint $\rho_{a^{-1}}$, so the class of reflections is closed under the adjoint and the adjoint operation is an involution on it. The signed conjugation is self-adjoint exactly when $a^2$ is central and unitary exactly when $a^{-1}\alpha(a)$ is central; for a genuine reflection the two conditions coincide, and then self-adjointness is the same as unitarity and the reflection is an orthogonal involution. A self-adjoint reflection splits the group algebra into two orthogonal eigenspaces, its fixed space being the kernel of $\alpha - c_{a^{-1}}$ and spanned by the fixed subgroup when the latter is one. In the degenerate case, when $a\alpha(a)$ is not central, the operator is not an involution, the two conditions separate, and a reflection of the group algebra may fail either self-adjointness or unitarity; the involution with a non-central square is the model case of an involution whose adjoint is a different involution. The carrier of an orthogonal reflection is an element whose square is central.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_a = \Sigma^{\alpha}_{a,a^{-1}}(u) = a\alpha(u)a^{-1}$</td>
+<td>the signed conjugation on the group algebra</td>
+</tr>
+<tr>
+<td>$\rho_a = c_a\alpha = L_aAR_{a^{-1}}$</td>
+<td>its expression as a composite</td>
+</tr>
+<tr>
+<td>$\rho_a^\dagger = \rho_{a^{-1}}$</td>
+<td>the adjoint with respect to the signed form</td>
+</tr>
+<tr>
+<td>$a^2 \in Z(G)$</td>
+<td>the self-adjointness condition</td>
+</tr>
+<tr>
+<td>$a^{-1}\alpha(a) \in Z(G)$</td>
+<td>the unitarity condition</td>
+</tr>
+<tr>
+<td>$a\alpha(a) \in Z(G)$</td>
+<td>the reflection (involution) condition</td>
+</tr>
+<tr>
+<td>$\ker(\rho_a-\mathrm{id})\oplus\ker(\rho_a+\mathrm{id})$</td>
+<td>the orthogonal splitting by a self-adjoint reflection</td>
+</tr>
+<tr>
+<td>$\operatorname{Fix}(a) = \{x : \alpha(x) = a^{-1}xa\}$</td>
+<td>the fixed subgroup, spanning the fixed space</td>
+</tr>
+<tr>
+<td>$a\alpha(a)\notin Z(G)$</td>
+<td>the degenerate case, conditions separate</td>
+</tr>
+<tr>
+<td>$G^\sigma = I(\alpha)$</td>
+<td>the inverted subgroup, whose elements carry reflections automatically</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions, adjoints, self-adjoint operators and the orthogonal and unitary groups.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for reflections as sandwich operators, their fixed hyperplanes and their orthogonality.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the sandwich operator, the reflection and the adjoint in a Clifford algebra.</li>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for self-adjoint and orthogonal operators with respect to a bilinear form.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the Haar inner product and the adjoint of a reflection under it, which is Part III and is not used here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

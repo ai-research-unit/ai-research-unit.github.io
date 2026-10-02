@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on a Topological Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-a-topological-vector-space"><strong>Reflections as Signed Two-Sided Operators on a Topological Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>reflection</strong> of a topological vector space with a continuous multiplication is an involutive automorphism of the algebra, and reading such an automorphism as a grade involution turns it into a signed two-sided operator: the signed inner sandwich $\Theta^{\alpha_r}_{r,r^{-1}}$ of a reflection $r$ with $\alpha_r = \mathrm{Ad}_r$ is the identity, so the reflection is fixed by its own signed sandwich, and for an arbitrary grade involution the adjoint of the signed inner sandwich of $r$ is the sandwich with the inverse of $\alpha(r)$. The choice of a reflection is the same datum as the choice of a grading of the algebra, and the algebra splits into the fixed part, a subalgebra, and the negated part. This article records the correspondences between reflections, involutive automorphisms and gradings, the trivial action of the signed sandwich of a reflection on itself, and the degenerate cases in which the distinctions collapse.</p>
+<p>This article is the topological companion of <em>Reflections as Signed Two-Sided Operators on a Linear Space</em> in Part I. The grade involution and its signs are <em>The Signed Sandwich on a Topological Vector Space</em>; the one-sided signed operator is <em>The Signed Left Multiplication on a Topological Vector Space</em>; the inner automorphisms and the centrality criterion are <em>The Signed Sandwich on a Topological Vector Space</em> and <em>The Left and Right Multiplication Operators on a Topological Vector Space</em>; the self-adjointness and unitarity of the signed sandwiches belong to <em>The Signed Adjoint of the Reflection on a Topological Vector Space</em> and <em>The Signed Adjoint Sandwich on a Topological Vector Space</em>. No form and no involution on the elements is used here.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $E$ is an associative unital topological algebra over $\mathbb{K}$ with a jointly continuous multiplication, and $\mathcal{L}(E)$ is its operator algebra. An <strong>involutive automorphism</strong> of $E$ is an algebra automorphism $\alpha$ with $\alpha^{2} = \mathrm{id}$; the <strong>fixed part</strong> and the <strong>negated part</strong> are</p>
+<p>$$
+E^{+} = \{x : \alpha(x) = x\}, \qquad E^{-} = \{x : \alpha(x) = -x\} .
+$$</p>
+<p>An element $r$ with $r^{2}$ central (in particular $r^{2} = 1$) is an <strong>involution</strong>, and the inner automorphism $\mathrm{Ad}_{r}(x) = rxr^{-1}$ that it defines is the <strong>reflection</strong> attached to $r$ when $r^{2} = 1$.</p>
+<h2 id="reflections-and-involutive-automorphisms">Reflections and Involutive Automorphisms</h2>
+<p><strong>Proposition (the correspondence).</strong> Let $\alpha$ be an involutive automorphism of $E$. Then $E^{+}$ is a subalgebra of $E$ containing $1$, the map $x \mapsto (x + \alpha(x))/2$ is a continuous projection onto $E^{+}$ with kernel $E^{-}$ when $2$ is invertible in $\mathbb{K}$, and</p>
+<p>$$
+E = E^{+} \oplus E^{-}
+$$</p>
+<p>as a topological direct sum; conversely an algebra grading $E = E_0 \oplus E_1$ with $E_{i}E_{j} \subseteq E_{i+j}$ defines an involutive automorphism, equal to $+1$ on $E_0$ and $-1$ on $E_1$. The two constructions are inverse to one another, so reflections, involutive automorphisms and gradings of $E$ are the same datum.</p>
+<p><strong>Proof.</strong> $\alpha(x + y) = \alpha(x) + \alpha(y)$ and, because $\alpha$ is multiplicative, $\alpha(xy) = \alpha(x)\alpha(y)$, so $E^{+}$ is closed under the product; it contains $1$ because $\alpha(1) = 1$. The averaging map is the projection of the idempotent $(1 + \alpha)/2$ and is continuous because $\alpha$ is; its kernel is $E^{-}$ and the sum is direct since $x = \alpha(x)$ and $x = -\alpha(x)$ force $2x = 0$. The converse is the definition of a grading, and the two constructions are inverse because $\alpha$ is the identity on $E_0$ and minus the identity on $E_1$.</p>
+<p><strong>Proposition (continuity of the reflection and the splitting).</strong> An involutive automorphism $\alpha$ of $E$ carries the fixed part $E^{+}$ onto itself and the negated part $E^{-}$ onto itself, $\alpha(E^{\pm}) = E^{\pm}$; $E^{+}$ is closed when $E$ is Hausdorff and $\alpha$ is continuous, and the direct sum $E = E^{+} \oplus E^{-}$ is topological.</p>
+<p><strong>Proof.</strong> $\alpha(x) = x$ implies $\alpha(\alpha(x)) = x$, and $\alpha(x) = -x$ implies $\alpha(\alpha(x)) = -x$. The fixed part is the kernel of the continuous map $\mathrm{id} - \alpha$, hence closed in a Hausdorff space; the topological direct-sum statement is the proposition above together with the continuity of the averaging projection.</p>
+<h2 id="the-inner-reflections-and-the-sandwich">The Inner Reflections and the Sandwich</h2>
+<p><strong>Proposition (the reflection is fixed by its signed sandwich).</strong> Let $r$ be an involution and let $\alpha_r = \mathrm{Ad}_{r}$ be the involutive automorphism it defines. Then</p>
+<p>$$
+\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id} ,
+$$</p>
+<p>so the signed inner sandwich of a reflection is the identity, and the reflection is fixed and unitary for its own signed sandwich.</p>
+<p><strong>Proof.</strong> $\Theta^{\alpha_r}_{r, r^{-1}}(x) = r\alpha_r(x)r^{-1} = r(rxr^{-1})r^{-1} = x$, using $r^{2} = 1$ and the definition of $\alpha_r$.</p>
+<p><strong>Proposition (the signed sandwich by a reflection).</strong> For an involution $r$ and an arbitrary grade involution $\alpha$,</p>
+<p>$$
+\Theta^{\alpha}_{r, r^{-1}} = \mathrm{Ad}_{r} \circ \alpha = \alpha \circ \mathrm{Ad}_{\alpha(r)} ,
+$$</p>
+<p>and the inner sandwich $\Phi_{r, r^{-1}} = \mathrm{Ad}_{r}$ is the reflection itself; the signed sandwich is the composite of the reflection with the grade involution, and it reduces to $\mathrm{Ad}_{r}$ when $\alpha = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> This is the definition $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\alpha$ of the signed sandwich with $\Phi_{r,r^{-1}} = \mathrm{Ad}_{r}$, and the second form is the relation $\Theta^{\alpha}_{a,b} = \alpha\Phi_{\alpha(a),\alpha(b)}$.</p>
+<p><strong>Corollary (the correspondence with the signed inner sandwiches).</strong> The map $r \mapsto \mathrm{Ad}_{r}$ from the involutions of $E$ to the involutive automorphisms is surjective onto the inner ones, with fibres the cosets of the centre; an involutive automorphism is inner exactly when it is $\mathrm{Ad}_{r}$ for some involution $r$, and then the corresponding signed inner sandwich is $\mathrm{Ad}_{r}\alpha$.</p>
+<p><strong>Proof.</strong> An inner automorphism is $\mathrm{Ad}_{r}$ for an invertible $r$, and it is an involution, $\mathrm{Ad}_{r}^{2} = \mathrm{Ad}_{r^{2}} = \mathrm{id}$, exactly when $r^{2}$ is central; normalising $r$ by a central scalar recovers $r^{2} = 1$ when the scalars permit, and the fibre statement is the kernel computation of the regular representation.</p>
+<h2 id="conjugation-and-the-degenerate-cases">Conjugation and the Degenerate Cases</h2>
+<p><strong>Proposition (conjugation of reflections).</strong> For an invertible $u$ and an involutive automorphism $\alpha$, the conjugate $u\alpha u^{-1}$, $x \mapsto u\alpha(u^{-1}xu)u^{-1}$, is an involutive automorphism; if $\alpha = \mathrm{Ad}_{r}$ with $r$ an involution then $u\alpha u^{-1} = \mathrm{Ad}_{uru^{-1}}$ with $uru^{-1}$ again an involution, so the inner reflections form the orbit of $\mathrm{Ad}$ under conjugation by the units. The fixed and negated parts of the conjugate are $uE^{+}$ and $uE^{-}$.</p>
+<p><strong>Proof.</strong> $\alpha^{2} = \mathrm{id}$ gives $(u\alpha u^{-1})^{2} = u\alpha^{2}u^{-1} = \mathrm{id}$, and multiplicativity is preserved by conjugation; if $\alpha = \mathrm{Ad}_{r}$ then $u\mathrm{Ad}_{r}u^{-1}(x) = uru^{-1}xuru^{-1} = \mathrm{Ad}_{uru^{-1}}(x)$, and $(uru^{-1})^{2} = ur^{2}u^{-1} = 1$. The fixed-part statement is the computation $u\alpha u^{-1}(ux) = u\alpha(x)$ for $x \in E^{\pm}$.</p>
+<p><strong>Proposition (the degenerate cases).</strong> A reflection $\alpha$ is the identity exactly when $E^{-} = 0$; it is minus the identity exactly when $E^{+} = 0$, which is impossible when $E$ is unital and $2 \neq 0$; and the two-sided signed sandwich of a reflection with a central involution reduces to the grade involution alone, $\Theta^{\alpha}_{z, z} = z^{2}\alpha = \alpha$ for central $z$ with $z^{2} = 1$. The reflection attached to an involution $r$ is trivial exactly when $r$ is central, in which case $\mathrm{Ad}_{r} = \mathrm{id}$ and the signed internal sandwich is the identity for that reason.</p>
+<p><strong>Proof.</strong> $\alpha = \mathrm{id}$ is $E = E^{+}$, i.e. $E^{-} = 0$; $\alpha = -\mathrm{id}$ is $E = E^{-}$, which would give $1 = -1$ and hence $2 = 0$, excluded. For central $z$, $\Phi_{z,z}(x) = z^{2}x = x$ and $\Theta^{\alpha}_{z,z} = \Phi_{z,z}\alpha = \alpha$. If $r$ is central then $\mathrm{Ad}_{r} = \mathrm{id}$ by the kernel computation, and the converse is that $\mathrm{Ad}_{r} = \mathrm{id}$ iff $r$ is central.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the matrix algebra).</strong> On $E = M_{n}(\mathbb{K})$ an involution is a matrix with $r^{2} = 1$, possibly not diagonalisable, and the reflection is the conjugation $X \mapsto rXr^{-1}$; the fixed part is the centraliser of $r$, the negated part is the $-1$ eigenspace of $\mathrm{Ad}_{r}$, and $\mathrm{Ad}_{r}$ is the identity exactly when $r$ is a scalar matrix.</p>
+<p><strong>Example (the operator algebra with an involutive operator).</strong> Let $F$ be a topological vector space and let $T \in \mathcal{L}(F)$ with $T^{2} = \mathrm{id}$. Then $\alpha(A) = TAT$ is an involutive automorphism of $\mathcal{L}(F)$, the fixed and negated parts are the operators commuting, respectively anticommuting, with $T$ in the appropriate sense, and the signed inner sandwich of $T$ is the identity: $\Theta^{\alpha}_{T,T}(X) = T(TXT)T = X$.</p>
+<p><strong>Example (the commutative case).</strong> On $E = C(K)$ the involution $\alpha(f) = f \circ \sigma$ for a continuous involutive homeomorphism $\sigma$ of $K$ is a reflection, the fixed part is the subalgebra of $\sigma$-invariant functions, and the negated part consists of the functions with $f \circ \sigma = -f$; the signed sandwich $\Theta^{\alpha}_{g,h}(f) = g\,(f \circ \sigma)\,h$ is multiplication by $gh$ composed with the reflection on $f$.</p>
+<h2 id="summary">Summary</h2>
+<p>A reflection of a unital topological algebra is an involutive continuous automorphism, equivalently a grading $E = E^{+} \oplus E^{-}$ with $E^{+}$ a closed subalgebra and $E^{-}$ the negated part; the two constructions are inverse, so reflections, involutive automorphisms and gradings are the same datum. An involution $r$ with $r^{2} = 1$ defines the inner reflection $\alpha_r = \mathrm{Ad}_{r}$, and the signed inner sandwich of the reflection is the identity, $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, so the reflection is fixed by its own signed sandwich; for an arbitrary grade involution the signed sandwich by a reflection is $\mathrm{Ad}_{r}\alpha = \alpha\mathrm{Ad}_{\alpha(r)}$, the composite of the reflection with the grade involution. The inner reflections are the conjugates of the inner ones and are classified by the involutions modulo the centre, with the trivial case exactly the central involutions; the reflection is the identity only when the negated part vanishes, and minus the identity only when the fixed part vanishes, which the unit forbids. The matrix algebra, the operator algebra with an involutive operator and the commutative algebra $C(K)$ with an involutive homeomorphism are the standard examples. The self-adjointness and the unitarity of these operators with respect to the pairing of the category are <em>The Signed Adjoint of the Reflection on a Topological Vector Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha$, $\alpha^{2} = \mathrm{id}$</td>
+<td>Involutive automorphism, a reflection</td>
+</tr>
+<tr>
+<td>$E^{+}$, $E^{-}$</td>
+<td>Fixed and negated parts</td>
+</tr>
+<tr>
+<td>$E = E^{+} \oplus E^{-}$</td>
+<td>Topological direct sum of the grading</td>
+</tr>
+<tr>
+<td>$r$, $r^{2} = 1$</td>
+<td>Involution of $E$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{r}(x) = rxr^{-1}$</td>
+<td>Inner reflection</td>
+</tr>
+<tr>
+<td>$\alpha_r = \mathrm{Ad}_{r}$</td>
+<td>Grade involution attached to $r$</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$</td>
+<td>A reflection is fixed by its own signed sandwich</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{ur} = u\mathrm{Ad}_{r}u^{-1}$</td>
+<td>Conjugation of reflections</td>
+</tr>
+<tr>
+<td>$Z(E)$</td>
+<td>Centre; inner reflections classified modulo it</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces, Chapters 1–5</em> (Springer, 1987), for the topological algebras, the involutive automorphisms and the gradings.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the involutive automorphisms, the inner ones and the centralities.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the involutive automorphisms of an operator algebra and the gradings they define.</li>
+<li>Helmut H. Schaefer and Manfred P. Wolff, <em>Topological Vector Spaces</em> (Springer, second edition, 1999), for the involutions of a topological vector space and the splitting they induce.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, second edition, 1990), for the involutions and the two-sided operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

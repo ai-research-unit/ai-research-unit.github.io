@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Operator Algebra of a Process — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-operator-algebra-of-a-process"><strong>The Involution on the Operator Algebra of a Process</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of a process — the multiplications, the shift, the Koopman operators, the conditional expectations, the Markov operators — form an algebra under composition, and the algebra carries an <strong>involution</strong>, the passage to the adjoint with respect to the form of the category,
+$$
+T\mapsto T^* ,\qquad \langle Tf,g\rangle=\langle f,T^*g\rangle,\qquad \langle f,g\rangle=\varphi(fg^*)=\mathbb E\bigl[f\bar g\bigr].
+$$
+This article is the study of that involution. The adjoint is the archetype of the operators built from the involution that gives the group of this article; it is an operation on the <strong>operators</strong>, distinct from the involution on the <strong>elements</strong>, which is the complex conjugation of <em>The Involution on the Algebra of Random Variables</em>, earlier in this category. The article defines the operator algebra of a process, proves that the adjoint is an involutive, anti-linear, isometric anti-automorphism satisfying the $C^*$-identity $\|T^*T\|=\|T\|^2$, identifies the self-adjoint elements, the unitaries, the projections and the partial isometries, computes the adjoints of the standard operators of a process, and states the precise relation between the element-level involution and the operator-level adjoint: the representation of the algebra of random variables by the left multiplications is a $*$-representation, $\pi(a^*)=\pi(a)^*$, and the agreement is <strong>proved</strong> from the positivity of the state and never assumed.</p>
+<p>The conventions are those of the category: the algebra of random variables $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the conjugation $a^*=\bar a$, the state $\varphi(a)=\mathbb E[a]$, the form $\langle f,g\rangle=\varphi(fg^*)$ on the Hilbert space $\mathcal{H}=L^2(\Omega,\mathbb P)$ of <em>The Involution on the Algebra of Random Variables</em>, earlier in this category. The operator algebra, the topologies on it, the $C^*$-algebras and the von Neumann algebras, the Gelfand–Naimark theorem and the spectral theorem are <em>Operator Algebras</em>, written; the adjoints, the self-adjoint operators and the spectral theory on a Hilbert space are <em>Banach and Hilbert Spaces</em>, written. The adjoint of the Markov operator is <em>The Adjoint of the Markov Operator</em>, the preceding article of this category; the adjoint of the transition operator is <em>The Adjoint of the Transition Operator</em>, later in this category; the shift is <em>The Shift Operator of a Process</em>, earlier in this category; the Koopman operator is <em>The Koopman Operator</em>, written; the conditional expectation is <em>The Conditional Expectation Operator</em>, earlier in this category; and the refinement of the spectrum by the reversing symmetry is <em>Reversible Operators and Self-Adjointness</em>, later in this category. No physics is invoked.</p>
+<p>Throughout, $\{X_t\}_{t\in T}$ is a process on the probability space $(\Omega,\mathcal F,\mathbb P)$, $\mathcal{H}=L^2(\Omega,\mathcal F,\mathbb P)$ is the Hilbert space with the form $\langle f,g\rangle=\varphi(fg^*)$, and $B(\mathcal{H})$ is the algebra of the bounded operators with composition. The <strong>operator algebra of the process</strong> is the von Neumann algebra $\mathcal{M}\subseteq B(\mathcal{H})$ generated by the process, that is the smallest von Neumann algebra containing the multiplications by the $X_t$ and the operators they determine; the involution is $T\mapsto T^*$, the adjoint in $\mathcal{H}$.</p>
+<h2 id="the-operator-algebra-of-a-process">The Operator Algebra of a Process</h2>
+<h3 id="the-algebra-and-the-involution">The algebra and the involution</h3>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> of $T\in B(\mathcal{H})$ is the unique bounded operator $T^*$ with
+$$
+\langle Tf,g\rangle=\langle f,T^*g\rangle\qquad\text{for all }f,g\in\mathcal{H},
+$$
+and the <strong>operator algebra of the process</strong> is the von Neumann algebra $\mathcal{M}$ generated by the operators determined by the process, closed under the adjoint.</p>
+<p><strong>Theorem.</strong> The passage to the adjoint is an involutive, conjugate-linear, isometric anti-automorphism of the operator algebra:
+$$
+(T^*)^*=T,\qquad (S+T)^*=S^*+T^*,\qquad (\lambda T)^*=\bar\lambda\,T^*,\qquad (ST)^*=T^*S^*,\qquad \|T^*\|=\|T\| ,
+$$
+and it satisfies the $C^*$-identity
+$$
+\|T^*T\|=\|T\|^2 ,
+$$
+so $\mathcal{M}$ is a von Neumann algebra, hence a $C^*$-algebra, and the involution is isometric for the form, $\langle Tf,g\rangle=\langle f,T^*g\rangle$.</p>
+<p><em>Proof.</em> The identities are the standard properties of the Hilbert-space adjoint; the anti-multiplicativity reverses the order because $\langle STf,g\rangle=\langle Tf,S^*g\rangle=\langle f,T^*S^*g\rangle$; the isometry and the $C^*$-identity are the standard theorems; the closure under the adjoint is the definition of a von Neumann algebra, <em>Operator Algebras</em>, written.</p>
+<h3 id="the-self-adjoint-elements">The self-adjoint elements</h3>
+<p><strong>Definition.</strong> An operator $T$ is <strong>self-adjoint</strong> if $T^*=T$, <strong>unitary</strong> if $T^*T=TT^*=I$, a <strong>projection</strong> if $T^*=T=T^2$, and a <strong>partial isometry</strong> if $T^*T$ is a projection.</p>
+<p><strong>Theorem (the decomposition and the spectral theorem).</strong> Every $T\in\mathcal{M}$ decomposes uniquely as $T=A+iB$ with $A=\frac12(T+T^*)$ and $B=\frac1{2i}(T-T^*)$ self-adjoint; the self-adjoint operators have real spectrum, the unitary operators have spectrum on the unit circle, the projections have spectrum in $\{0,1\}$, and every self-adjoint operator has the spectral decomposition $T=\int_{\mathbb R}\lambda\,dE_T(\lambda)$.</p>
+<p><em>Proof.</em> The decomposition is the definition of the real and imaginary parts, and the uniqueness is the directness of the self-adjoint part; the spectral statements are the spectral theorem for a self-adjoint operator and its unitary consequences, <em>Banach and Hilbert Spaces</em>, written.</p>
+<h3 id="the-operators-of-the-process">The operators of the process</h3>
+<p><strong>Theorem (the adjoints of the standard operators).</strong></p>
+<ol>
+<li>The multiplication $L_a f=af$ on $\mathcal{H}$ has the adjoint $L_a^*=L_{a^*}$; the representation $a\mapsto L_a$ is a $*$-representation of $\mathcal{A}$, $\pi(a^*)=\pi(a)^*$, and the multiplications are the self-adjoint elements when $a$ is a real random variable.</li>
+<li>The Koopman operator $U_Tf=f\circ T$ of a measure-preserving invertible $T$ is unitary, $U_T^*=U_{T^{-1}}$, and self-adjoint exactly when $T=T^{-1}$ almost everywhere.</li>
+<li>The conditional expectation $E^{\mathcal G}$ on a sub-$\sigma$-algebra $\mathcal G$ is self-adjoint and a projection, $E^{\mathcal G}=(E^{\mathcal G})^*=(E^{\mathcal G})^2$.</li>
+<li>The Markov operator $P$ of a stationary chain has the adjoint $P^*=\hat P$, the Markov operator of the reversed chain; it is self-adjoint exactly when the chain is reversible.</li>
+</ol>
+<p><em>Proof.</em> The adjoint of a multiplication is the multiplication by the conjugate, $\langle af,g\rangle=\varphi(afg^*)=\varphi(f(\bar ag)^*)=\langle f,\bar ag\rangle$, so $L_a^*=L_{a^*}$, and this is the $*$-representation because $\pi(a^*)=L_{a^*}=L_a^*$; the Koopman adjoint is the change of variables under the measure-preserving bijection; the conditional expectation is the orthogonal projection onto the closed subspace $L^2(\mathcal G)$ and a projection is self-adjoint; the Markov adjoint is the formula of <em>The Adjoint of the Markov Operator</em>, the preceding article.</p>
+<h2 id="the-two-structures">The Two Structures</h2>
+<h3 id="the-element-involution-and-the-operator-involution">The element involution and the operator involution</h3>
+<p><strong>Theorem (two levels).</strong> The <strong>involution on the elements</strong> of the algebra of random variables, $a\mapsto a^*=\bar a$, and the <strong>involution on the operators</strong>, $T\mapsto T^*$, are two structures, not one. They act on different objects — the first on the functions, the second on the operators — and they are related through a representation: for a representation $\pi$ of the algebra of random variables on $\mathcal{H}$, the two agree, $\pi(a^*)=\pi(a)^*$, exactly when $\pi$ is a $*$-representation.</p>
+<p><strong>Theorem (the agreement is proved).</strong> The representation $\pi(a)=L_a$ by the left multiplications is a $*$-representation,
+$$
+\pi(a^*)=\pi(a)^*,
+$$
+and the agreement is a theorem, proved from the positivity of the state and the invariance of the form; it is never assumed.</p>
+<p><em>Proof.</em> The identity $\langle af,g\rangle=\varphi(afg^*)=\varphi\bigl(f(\bar ag)^*\bigr)=\langle f,\bar ag\rangle$ gives $L_a^*=L_{\bar a}=\pi(a^*)$ directly, using only the definitions of the form and the involution; hence the multiplications give a $*$-representation and the element involution is realised by the operator involution on the subalgebra of the multiplications. On the whole von Neumann algebra the two structures are distinct: the Markov operator $P$ is not a multiplication, and its adjoint $\hat P$ is not the multiplication by a conjugate.</p>
+<h3 id="the-reversal-of-the-index">The reversal of the index</h3>
+<p><strong>Theorem (the reversal).</strong> The reversal $r$ of the index defines the operator $U_rf=f\circ r$ on the path-space $L^2$, which is an involution, $U_r^2=\mathrm{id}$, and self-adjoint, $U_r^*=U_r$; the conjugation
+$$
+\tau(T)=U_r\,T\,U_r^{-1}
+$$
+is an involutive automorphism of the operator algebra commuting with the adjoint, $\tau(T^*)=\tau(T)^*$, and it sends the shift to its inverse, $\tau(U_\sigma)=U_\sigma^{-1}$. The process is <strong>reversible</strong> exactly when $\tau$ preserves the state, $\varphi\circ\tau=\varphi$ on the multiplications, equivalently when the reversal operator is measure-preserving.</p>
+<p><em>Proof.</em> The identities $U_r^2=\mathrm{id}$ and $r\sigma r=\sigma^{-1}$ give $U_r^2=I$ and $\tau(U_\sigma)=U_\sigma^{-1}$; the conjugation by an involution is an automorphism, and it commutes with the adjoint because the adjoint is defined by the form, which is preserved by the unitary $U_r$. The reversibility is the invariance of the law under $r$, which is the identity $\mathbb E[f\circ r]=\mathbb E[f]$ for every bounded $f$, that is $\varphi\circ\tau=\varphi$; this is <em>The Reversibility of a Stationary Process</em>, earlier in this category.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the multiplication algebra).</strong> On $L^2(\Omega,\mathbb P)$ the multiplications $L_a$ form a commutative von Neumann algebra isomorphic to $\mathcal{A}$, and the involution is the conjugation: $L_a^*=L_{\bar a}$. The self-adjoint elements are the multiplications by the real random variables, the unitaries the multiplications by the unimodular ones, and the projections the multiplications by the indicator functions; the spectral decomposition of $L_a$ for a real $a$ is the spectral measure of the random variable $a$.</p>
+<p><strong>Example (the Bernoulli shift).</strong> For the two-sided Bernoulli shift on $\{0,1\}^{\mathbb Z}$ the shift operator $U_\sigma$ is unitary with $U_\sigma^*=U_\sigma^{-1}$, self-adjoint only in the trivial case $\sigma=\sigma^{-1}$; it is not a multiplication and its adjoint is the backwards shift. The reversal operator satisfies $\tau(U_\sigma)=U_\sigma^{-1}$, and the product measure is invariant under the reversal of the coordinates, so $\tau$ preserves the state and the Bernoulli process <strong>is</strong> reversible; the example shows that the reversal of the index and the reversibility of the process must not be confused.</p>
+<p><strong>Example (the directed cycle).</strong> Let the process be the stationary Markov chain on $\{1,2,3\}$ that moves cyclically, of <em>The Adjoint of the Markov Operator</em>, the preceding article. The reversal of the index is not measure-preserving, $\tau$ does not preserve the state, and the process is not reversible; the shift inverts under $\tau$ as always, but the law is not invariant, and the transition operator is not self-adjoint. The example is the non-reversible counterpart of the Bernoulli case.</p>
+<p><strong>Example (the conditional expectation).</strong> For the filtration generated by a process the conditional expectations $E_n=E^{\mathcal F_n}$ are self-adjoint projections, $E_n^*=E_n=E_n^2$, and $E_nE_m=E_{\min(n,m)}$ for an increasing filtration; the involution on this family of projections is the identity, and the whole content of the conditional expectation lies in its being a projection rather than an arbitrary idempotent.</p>
+<p><strong>Example (the Markov adjoint).</strong> For the directed cycle of <em>The Adjoint of the Markov Operator</em>, the preceding article, the Markov operator $P$ is not a multiplication and is not self-adjoint; its adjoint $P^*=\hat P$ is the backwards cycle, and $P^*\ne P$ while both are contractions fixing the constants. The example separates the two structures: the element involution leaves $P$ alone, and the operator involution reverses it.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The involution on the operator algebra degenerates in four configurations. First, the element involution and the operator involution coincide only on the multiplications; on the operators of the process that are not multiplications — the shift, the Markov operator, the transfer operators — the adjoint is a genuinely different operation, and assuming the agreement is the error the group contract forbids. Second, the representation by the multiplications is a $*$-representation because the state is a positive functional on the commutative algebra; for a non-commutative algebra with a non-tracial state the representation can fail to be a $*$-representation, and the agreement must be checked, not assumed. Third, the reversal automorphism exists as a unitary only when the reversal is measure-preserving; for a non-reversible process the reversal of the index is not implemented by a unitary, and the conjugation $U_rTU_r^{-1}$ is replaced by the adjoint of the transition operator. Fourth, the $C^*$-identity and the spectral theorem require the completeness of the Hilbert space, and they fail for an incomplete inner-product space; the operators of the process are bounded precisely when the multipliers are in $L^\infty$.</p>
+<h2 id="summary">Summary</h2>
+<p>The operator algebra of a process is the von Neumann algebra generated by the operators the process determines, with the involution $T\mapsto T^*$ the adjoint for the form $\langle f,g\rangle=\varphi(fg^*)$; the involution is an involutive, conjugate-linear, isometric anti-automorphism satisfying the $C^*$-identity $\|T^*T\|=\|T\|^2$, the self-adjoint elements decompose as $T=A+iB$ and have real spectrum, the unitaries have their spectrum on the circle and the projections on $\{0,1\}$, and the spectral theorem gives the decomposition of every self-adjoint operator. The standard operators have the adjoints $L_a^*=L_{a^*}$, $U_T^*=U_{T^{-1}}$, $(E^{\mathcal G})^*=E^{\mathcal G}$, and $P^*=\hat P$, the reversed chain. The involution on the elements and the involution on the operators are two structures: the representation by the multiplications is a $*$-representation, $\pi(a^*)=\pi(a)^*$, proved from the invariance of the form, while on the whole operator algebra the two differ; the reversal of the index, when it is implemented by a measure-preserving involution, acts by the conjugation with the unitary $U_r$, an automorphism commuting with the adjoint. The applications to the spectrum are <em>Reversible Operators and Self-Adjointness</em>, later in this category, and the adjoint of the transition operator is <em>The Adjoint of the Transition Operator</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{H}$, $\langle f,g\rangle=\varphi(fg^*)$</td>
+<td>the Hilbert space and the form</td>
+</tr>
+<tr>
+<td>$T^*$</td>
+<td>the adjoint, the operator involution</td>
+</tr>
+<tr>
+<td>$(ST)^*=T^*S^*$, $\|T^*T\|=\|T\|^2$</td>
+<td>anti-multiplicativity, $C^*$-identity</td>
+</tr>
+<tr>
+<td>$T=A+iB$</td>
+<td>the self-adjoint decomposition</td>
+</tr>
+<tr>
+<td>$L_a$, $L_a^*=L_{a^*}$</td>
+<td>the multiplications, a $*$-representation</td>
+</tr>
+<tr>
+<td>$U_T^*=U_{T^{-1}}$</td>
+<td>the Koopman adjoint</td>
+</tr>
+<tr>
+<td>$E^{\mathcal G}$, $(E^{\mathcal G})^*=E^{\mathcal G}=E^{\mathcal G\,2}$</td>
+<td>the conditional expectation, a projection</td>
+</tr>
+<tr>
+<td>$P^*=\hat P$</td>
+<td>the Markov adjoint, the reversed chain</td>
+</tr>
+<tr>
+<td>$U_r$, $\tau(T)=U_rTU_r^{-1}$</td>
+<td>the reversal unitary and its automorphism</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, Vol. I (Academic Press, 1983), for the adjoints, the $C^*$-identities and the von Neumann algebras.</li>
+<li>Jacques Dixmier, <em>C</em>-Algebras* (North-Holland, 1977), for the involutions, the $*$-representations and the Gelfand–Naimark theory.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the von Neumann algebras and their involutions.</li>
+<li>Gert K. Pedersen, <em>C</em>-Algebras and their Automorphism Groups* (Academic Press, 1979), for the automorphisms commuting with the involution.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the adjoints, the projections and the spectral theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

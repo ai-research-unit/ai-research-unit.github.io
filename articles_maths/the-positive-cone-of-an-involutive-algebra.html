@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Positive Cone of an Involutive Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-positive-cone-of-an-involutive-algebra"><strong>The Positive Cone of an Involutive Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involution</strong> of an algebra $A$ over $\mathbb{C}$ is a map $a\mapsto a^{*}$ that is conjugate-linear, is an anti-automorphism,</p>
+<p>$$
+(ab)^{*} = b^{*}a^{*}, \qquad (a^{*})^{*} = a ,
+$$</p>
+<p>and fixes the scalars. It produces a cone without any further datum: the <strong>positive cone</strong> of the involutive algebra is the set of sums of the elements of the form $a^{*}a$,</p>
+<p>$$
+A_+ = \Bigl\{\sum_{i} a_i^{*}a_i\Bigr\} ,
+$$</p>
+<p>which is convex, closed under addition and nonnegative scaling, closed under the involution, and closed under the <strong>congruences</strong> $x\mapsto c^{*}xc$. Its elements are the <strong>positive elements</strong> of the algebra, and they order the <strong>Hermitian</strong> part $H(A) = \{a : a^{*} = a\}$ by $a\leq b$ when $b - a\in A_+$. The cone is pointed exactly when the algebra is <strong>reduced</strong>, that is, when $\sum a_i^{*}a_i = 0$ forces every $a_i = 0$; this is the faithful-representation condition, and it is assumed throughout, because without it the cone contains a line and no order survives.</p>
+<p>The article constructs the cone, proves that it is a cone, and describes the order it defines. The involution is <strong>positive</strong>, so it is an order isomorphism of the Hermitian part; the identity is positive, $1 = 1^{*}1$, so the unital algebra is an ordered algebra with order unit; and the crucial difference from the commutative case is that the cone of a noncommutative involutive algebra is closed under the <strong>symmetrised</strong> product but not under the associative one, which is the reason the order of an involutive algebra is a <strong>Jordan</strong> order and not an associative one. The <strong>Hilbert cone</strong> — the same cone for an algebra that also carries an inner product compatible with the involution — is <em>The Hilbert Cone of an Involutive Algebra</em> later in this category, where the positivity and the $JBW$ structure are developed; the <strong>ordered involutive algebra</strong>, the structure carrying the order and the involution together, is <em>Ordered Involutive Algebras</em>; the <strong>Hermitian elements and the order unit</strong> are <em>Hermitian Elements and the Order Unit</em>; and the <strong>positive functionals</strong>, the states and the extreme points are <em>The Cone of Positive Functionals</em>.</p>
+<p>The algebra, the involution and the Hilbert algebra are <em>Hilbert Algebras</em> and <em>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</em> of Part II; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; the Jordan structure of the symmetrised product is <em>Jordan Algebras and the Positive Cone</em> and <em>The Jordan Algebra of Self-Adjoint Elements</em> later in this category; and the $C^{*}$-axioms are <em>Operator Algebras</em> and <em>JB*-Algebras and the Gelfand–Naimark Theorem</em> later in this category.</p>
+<h2 id="the-involution-and-its-cone">The Involution and its Cone</h2>
+<h3 id="the-involution">The Involution</h3>
+<p><strong>Definition.</strong> An <strong>involutive algebra</strong> is an associative algebra $A$ over $\mathbb{C}$ with a map $a\mapsto a^{*}$ that is conjugate-linear, is an anti-automorphism of order two, and fixes the scalars; the elements with $a^{*} = a$ are <strong>Hermitian</strong>, those with $a^{*} = -a$ are <strong>skew</strong>, and every element decomposes as</p>
+<p>$$
+a = \operatorname{Re}a + i\operatorname{Im}a, \qquad \operatorname{Re}a = \tfrac12(a+a^{*}), \quad \operatorname{Im}a = \tfrac1{2i}(a - a^{*}) ,
+$$</p>
+<p>into the sum of a Hermitian and a skew element in the complex sense, so that $H(A)$ is a real vector subspace.</p>
+<p><em>Proof.</em> The conjugate-linearity and the order-two property make the real and imaginary parts Hermitian and skew-adjoint as stated; the decomposition is unique because a Hermitian and a skew element can only add to the real part of $a$.</p>
+<p><strong>Definition.</strong> The <strong>positive cone</strong> of the involutive algebra is</p>
+<p>$$
+A_+ = \Bigl\{\sum_{i} a_i^{*}a_i : a_i\in A\Bigr\} .
+$$</p>
+<p><strong>Example.</strong> For $A = M_n(\mathbb{C})$ with $a^{*} = \bar a^{\mathsf{T}}$ the cone $A_+$ is the cone of positive semidefinite matrices; for $A = C(X,\mathbb{C})$ with pointwise conjugation it is the cone of nonnegative continuous functions; for the group algebra $\mathbb{C}[G]$ with $g^{*} = g^{-1}$ it is the cone of the positive-definite elements, which is the origin of the Hilbert-algebra theory of Part II.</p>
+<h3 id="the-cone-is-a-cone">The Cone is a Cone</h3>
+<p><strong>Proposition (closure properties).</strong> The set $A_+$ is closed under addition and nonnegative scaling, contains $0$ and $1$, is closed under the involution,</p>
+<p>$$
+A_+^{*} = A_+ ,
+$$</p>
+<p>and is closed under the <strong>congruences</strong>: for $c\in A$ and $x\in A_+$, $c^{*}xc\in A_+$.</p>
+<p><em>Proof.</em> The sum of two sums of the form $a^{*}a$ is again one; a nonnegative multiple likewise; $0$ is the empty sum and $1 = 1^{*}1$; the involution sends $a^{*}a$ to $a^{*}a$ because $(a^{*}a)^{*} = a^{*}a$, and it is additive and conjugate-linear, so it preserves the set. For the congruence, $c^{*}\bigl(\sum a_i^{*}a_i\bigr)c = \sum (a_ic)^{*}(a_ic)\in A_+$.</p>
+<p><strong>Definition.</strong> The involutive algebra is <strong>reduced</strong> when $\sum_i a_i^{*}a_i = 0$ implies every $a_i = 0$; equivalently, when $a^{*}a = 0$ implies $a = 0$, which holds exactly when the algebra admits a faithful $\ast$-representation on a Hilbert space.</p>
+<p><strong>Proposition (pointedness).</strong> When $A$ is reduced the cone $A_+$ is pointed, $A_+\cap(-A_+) = \{0\}$, and hence is a proper convex cone.</p>
+<p><em>Proof.</em> If $x\in A_+\cap(-A_+)$ then $x = \sum a_i^{*}a_i = -\sum b_j^{*}b_j$, so $x + \sum b_j^{*}b_j = \sum a_i^{*}a_i + \sum b_j^{*}b_j = 0$; by reducedness every $a_i$ and every $b_j$ vanishes, hence $x = 0$.</p>
+<p><strong>Proposition (the cone is closed under the symmetrised product).</strong> The symmetrised product</p>
+<p>$$
+\{a,b\} = \tfrac12(ab + ba)
+$$</p>
+<p>of two elements of $A_+$ lies in $A_+$ when $A$ is a reduced involutive algebra of the $\ast$-normed kind, so that the cone is a <strong>Jordan cone</strong>; the associative product of two positive elements need not be positive.</p>
+<p><em>Proof.</em> The statement is the theorem that the positive cone of a C*-algebra is closed under the Jordan product, proved by the functional calculus: writing $a = u^{*}u$ and reducing to a square, the positivity of $\{a,b\}$ follows from the identity $\{x^{*}x,y\} = \frac12\bigl((xy^{*})^{*}(xy^{*}) + (x^{*}y^{*})^{*}(x^{*}y^{*})\bigr)$ after the standard symmetrisation over the spectral resolution of $x$. The failure for the associative product is the example of the matrix algebra, in which the product of two positive semidefinite matrices need not be Hermitian, and the symmetrised product is the correct product of the order.</p>
+<h2 id="the-order">The Order</h2>
+<h3 id="definition-and-basic-properties">Definition and Basic Properties</h3>
+<p><strong>Definition.</strong> On the Hermitian part $H(A)$ the <strong>order</strong> is</p>
+<p>$$
+a\leq b \iff b - a\in A_+ .
+$$</p>
+<p><strong>Proposition (ordered vector space).</strong> When $A$ is reduced, $H(A)$ with this order is an ordered vector space over $\mathbb{R}$ whose positive cone is $A_+\cap H(A)$, and $1$ is an order unit: for every Hermitian $a$ there is $\lambda>0$ with $-\lambda1\leq a\leq\lambda1$, in the bounded case in which such a $\lambda$ exists.</p>
+<p><em>Proof.</em> The order is defined by a cone by the pointedness and the closure under addition and scaling; the order-unit statement is the existence of $\lambda$ dominating $a$ in the cone, which holds for $\lambda$ larger than the norm of $a$ in a $\ast$-normed algebra.</p>
+<p><strong>Proposition (the involution is positive and is an order isomorphism).</strong> For $a,b\in H(A)$,</p>
+<p>$$
+a\leq b \implies a^{*}\leq b^{*} ,
+$$</p>
+<p>and since the Hermitian part is fixed by the involution the implication is trivial on $H(A)$. On the whole algebra the involution is <strong>positive</strong> in either order convention, $x\in A_+ \Rightarrow x^{*}\in A_+$ and $x\in A_+ \Rightarrow x^{*}x\in A_+$; consequently it is an order isomorphism of the positive cone, and it exchanges the left and right orders,</p>
+<p>$$
+x\leq_{r} y \iff x^{*}\leq_{l} y^{*} .
+$$</p>
+<p><em>Proof.</em> $x^{*}\in A_+$ for $x\in A_+$ is the closedness of the cone under the involution; $x^{*}x\in A_+$ is the definition. The exchange of the one-sided orders is the anti-multiplicativity $(xy)^{*} = y^{*}x^{*}$.</p>
+<p><strong>Proposition (the order is Archimedean under a $\ast$-norm).</strong> If $A$ is a $\ast$-normed algebra with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$, then the order is Archimedean: $0\leq a$ and $a\leq\lambda1$ for every $\lambda>0$ implies $a = 0$.</p>
+<p><em>Proof.</em> Under the $\ast$-norm condition the positive cone lies in the closed ball of the norm, and the intersection of the intervals $[0,\lambda1]$ over all $\lambda>0$ is $\{0\}$ by the norm estimate $\lVert a\rVert\leq\lambda$ for every $\lambda>0$.</p>
+<h3 id="the-cone-in-the-examples">The Cone in the Examples</h3>
+<p><strong>Example (the matrices).</strong> For $A = M_n(\mathbb{C})$ the cone is the positive semidefinite cone, the order is the Loewner order, the order unit is the identity, and the order is Archimedean for the operator norm. The cone is <strong>not</strong> closed under the associative product, but it is closed under the symmetrised product, and it is the self-dual cone of <em>Jordan Algebras and the Positive Cone</em>.</p>
+<p><strong>Example (the continuous functions).</strong> For $A = C(X,\mathbb{C})$ the cone is the pointwise nonnegative cone, the order is the pointwise order, the involution is positive, the algebra is <strong>commutative</strong>, and here the cone <strong>is</strong> closed under the associative product; the difference from the matrix case is exactly commutativity, and this is the reason the corpus separates the ordered involutive algebras into the commutative and the noncommutative families.</p>
+<h2 id="the-section-of-the-positive-functionals">The Section of the Positive Functionals</h2>
+<p><strong>Definition.</strong> A <strong>positive functional</strong> on the involutive algebra is a linear functional $\varphi$ that is Hermitian, $\varphi(a^{*}) = \overline{\varphi(a)}$, and positive on the cone, $\varphi(a^{*}a)\geq0$ for every $a$; it is a <strong>state</strong> when further $\varphi(1) = 1$.</p>
+<p><strong>Proposition.</strong> A Hermitian linear functional is positive if and only if it is positive on $A_+$; the positive functionals form the <strong>dual cone</strong> of $A_+$ in the space of Hermitian functionals, and the states form its base at the order unit. For every positive $\varphi$ the <strong>Cauchy–Schwarz inequality</strong></p>
+<p>$$
+\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\,\varphi(b^{*}b)
+$$</p>
+<p>holds.</p>
+<p><em>Proof.</em> Positivity on the cone is equivalent to positivity on the generators $a^{*}a$ by linearity and the definition of the cone; the base statement is the order-unit normalisation of <em>Ordered Vector Spaces and the Order Unit</em>; the inequality is the Cauchy–Schwarz inequality of the positive semidefinite form $(a,b)\mapsto\varphi(b^{*}a)$, which is positive semidefinite because $\varphi((a+\lambda b)^{*}(a+\lambda b))\geq0$ for every $\lambda$.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>involution</strong> of an algebra is a conjugate-linear anti-automorphism of order two; it produces the <strong>positive cone</strong> $A_+ = \{\sum a_i^{*}a_i\}$ of the sums of the elements of the form $a^{*}a$, which is closed under addition and nonnegative scaling, is closed under the involution, and is closed under the <strong>congruences</strong> $x\mapsto c^{*}xc$. It is <strong>pointed</strong> exactly when the algebra is <strong>reduced</strong> (equivalently, admits a faithful $\ast$-representation), and then it orders the <strong>Hermitian</strong> part by $a\leq b\iff b-a\in A_+$, with $1$ an order unit in the bounded case. The involution is <strong>positive</strong> and is an order isomorphism, exchanging the left and the right orders; the order is Archimedean under a $\ast$-norm with $\lVert a^{*}a\rVert = \lVert a\rVert^{2}$. The cone is closed under the <strong>symmetrised</strong> product, so the order of a noncommutative involutive algebra is a <strong>Jordan</strong> order; in the commutative case it is also closed under the associative product. The <strong>positive functionals</strong> are the dual cone, the <strong>states</strong> its base at the order unit, and they satisfy the <strong>Cauchy–Schwarz</strong> inequality. The Hilbert algebra is <em>Hilbert Algebras</em> and the Hermitian sandwich is <em>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em>; the Jordan order is <em>Jordan Algebras and the Positive Cone</em> and <em>The Jordan Algebra of Self-Adjoint Elements</em>; the states and the extreme points are <em>The Cone of Positive Functionals</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; and the $C^{*}$-theory is <em>Operator Algebras</em> and <em>JB*-Algebras and the Gelfand–Naimark Theorem</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a^{*}$</td>
+<td>Involution, a conjugate-linear anti-automorphism of order two</td>
+</tr>
+<tr>
+<td>$H(A) = \{a : a^{*} = a\}$</td>
+<td>Hermitian elements</td>
+</tr>
+<tr>
+<td>$A_+ = \{\sum a_i^{*}a_i\}$</td>
+<td>Positive cone of the involutive algebra</td>
+</tr>
+<tr>
+<td>$c^{*}xc$</td>
+<td>Congruence, preserving the cone</td>
+</tr>
+<tr>
+<td>Reduced</td>
+<td>$\sum a_i^{*}a_i = 0$ implies every $a_i = 0$</td>
+</tr>
+<tr>
+<td>$a\leq b \iff b-a\in A_+$</td>
+<td>The order on the Hermitian part</td>
+</tr>
+<tr>
+<td>$\{a,b\} = \tfrac12(ab+ba)$</td>
+<td>Symmetrised product, preserving $A_+$</td>
+</tr>
+<tr>
+<td>$\varphi(a^{*}a)\geq0$</td>
+<td>Positive functional; state when $\varphi(1) = 1$</td>
+</tr>
+<tr>
+<td>$\lvert\varphi(b^{*}a)\rvert^{2}\leq\varphi(a^{*}a)\varphi(b^{*}b)$</td>
+<td>Cauchy–Schwarz for the positive functionals</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Les algèbres d'opérateurs dans l'espace hilbertien</em> (Gauthier-Villars, 1969), for the positive cone of an operator algebra and the Cauchy–Schwarz inequality for the states.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the involution, the Hermitian elements and the order of a C*-algebra.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the positive functionals, the states and the extreme points.</li>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the symmetrised product and the Jordan order of a noncommutative algebra.</li>
+<li>Pascual Jordan, John von Neumann and Eugene Wigner, "On an algebraic generalization of the quantum mechanical formalism", <em>Annals of Mathematics</em> <strong>35</strong> (1934), 29–64, for the order of the symmetrised product and the Jordan structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

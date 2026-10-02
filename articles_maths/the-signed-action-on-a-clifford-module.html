@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Action on a Clifford Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-action-on-a-clifford-module"><strong>The Signed Action on a Clifford Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Clifford module is a vector space on which the Clifford algebra acts; the module structure is one-sided, the algebra multiplying on the left. Twisting that action by the grade involution — letting $x$ act as $\alpha(x)$ acts, or equivalently attaching the sign $(-1)^{|x|}$ to an odd element — defines the <strong>signed action</strong>. This article is about that twist: what it does to the module, and how it is read by the grading.</p>
+<p>Two facts decide the answer. First, attaching the grade involution to the acting element is the same as twiddling the module by the automorphism $\alpha$ of the algebra, so the signed action makes the module $S$ into a new module $S^{\alpha}$ whose isomorphism type is a property of the automorphism $\alpha$: equivalent to $S$ when $\alpha$ is an inner automorphism, and different when it is not. Second, whether $\alpha$ is inner is decided by the parity of the dimension. In <strong>even</strong> dimension the volume element is even, it implements the grade involution by conjugation, and it is the chirality operator of the spinor module; so the signed action is the ordinary action conjugated by the chirality, and the twisted module is isomorphic to the original. In <strong>odd</strong> dimension the volume element is the central element $\omega$, the conjugation by it is the identity, and $\alpha$ is the outer automorphism exchanging the two simple modules; so the signed action carries each spinor module to the other.</p>
+<p>The Clifford algebra and its grading are <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>; the modules, the minimal left ideals and the number of simple modules are <em>Left Multiplication and the Clifford Module Structure</em>, <em>The One-Sided Action and the Spin Representation</em> and <em>Spin Representations and Clifford Modules with Inner Conjugation</em>; the operators twisted by the grading are <em>The Graded Multiplication Operators</em>; the volume element, the chirality and the two simple modules in odd dimension are <em>The Low-Dimensional Classification</em> and <em>Bott Periodicity and the Classification</em>. Those are cited. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate and $\alpha$ is the grade involution.</p>
+<h2 id="clifford-modules-and-the-signed-action">Clifford Modules and the Signed Action</h2>
+<p><strong>Definition.</strong> A <strong>Clifford module</strong> is a vector space $S$ with an action of $\mathrm{Cl}(V,q)$ by $F$-linear maps, $x\otimes s\mapsto x\cdot s$, respecting the algebra structure. Its <strong>signed action</strong> is</p>
+<p>$$
+x \cdot_{\alpha} s = \alpha(x)\cdot s, \qquad x \in \mathrm{Cl}(V,q),\ s \in S .
+$$</p>
+<p><strong>Proposition.</strong> The signed action makes $S$ into a Clifford module, denoted $S^{\alpha}$ and called the <strong>twist</strong> of $S$ by $\alpha$, and the identity map on the underlying space is an isomorphism of $F$-vector spaces carrying the signed action to the ordinary one. On a homogeneous element the signed action is $x\cdot_{\alpha} s = (-1)^{|x|}x\cdot s$.</p>
+<p><strong>Proof.</strong> Since $\alpha$ is an algebra automorphism, $x\mapsto \alpha(x)$ composed with the given action is again an action; the sign statement is the definition of $\alpha$ on a homogeneous element.</p>
+<p><strong>Proposition (fixed points and the even part).</strong> Under the signed action the even part of the algebra acts as it did before, and the odd part acts with the opposite sign. In particular an element of $S$ that is annihilated by the whole algebra is annihilated in either action, and for $x$ even the operators of $x$ in $S$ and in $S^{\alpha}$ coincide.</p>
+<p><strong>Proof.</strong> For $x$ even, $\alpha(x) = x$; for $x$ odd, $\alpha(x) = -x$.</p>
+<p><strong>Remark (the twist of a module is not new data).</strong> The signed action uses exactly the same linear maps of the algebra, only relabelled by $\alpha$; the module $S^{\alpha}$ is the module $S$ with the labels of the acting elements changed. Everything structural about $S^{\alpha}$ is therefore a question about the automorphism $\alpha$, and the next section answers it.</p>
+<h2 id="the-twist-by-an-automorphism">The Twist by an Automorphism</h2>
+<p><strong>Definition.</strong> For an algebra automorphism $\theta$ of $\mathrm{Cl}(V,q)$ and a module $S$, the <strong>twist</strong> $S^{\theta}$ is the module with the action $x\cdot_{\theta}s = \theta(x)\cdot s$.</p>
+<p><strong>Proposition (the criterion for isomorphism).</strong> The twist $S^{\theta}$ is isomorphic to $S$ for every module $S$ if $\theta$ is inner, that is $\theta = \mathrm{Ad}_u$ for a unit $u$; the isomorphism is the operator of $u$ on $S$. If $\theta$ is not inner, there are modules for which $S^{\theta}$ is not isomorphic to $S$; and if $\theta$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.</p>
+<p><strong>Proof.</strong> If $\theta(x) = uxu^{-1}$ then $\theta(x)\cdot s = u\cdot(x\cdot(u^{-1}\cdot s))$, so the operator of $u^{-1}$ intertwines the two actions. The converse and the outer case are the standard module theory of an automorphism.</p>
+<p><strong>Corollary (the signed action is a twist).</strong> The signed action is the twist by $\alpha$: $S^{\alpha}$ is the twist of $S$ by the grade involution. So the question "is the signed action equivalent to the ordinary one?" is the question "is $\alpha$ inner?".</p>
+<h2 id="compatibility-with-the-grading">Compatibility with the Grading</h2>
+<h3 id="the-even-dimension">The Even Dimension</h3>
+<p><strong>Theorem.</strong> Let $\dim V = n$ be <strong>even</strong>, and let $\omega = e_1\cdots e_n$ be the volume element. Then $\omega$ is even, it is a unit with $\omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_i) \in F^{\times}$, and it implements the grade involution:</p>
+<p>$$
+\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,q).
+$$</p>
+<p>Consequently $\alpha$ is an inner automorphism in even dimension, the signed action is the ordinary action conjugated by the operator of $\omega$ on the module, and $S^{\alpha}\cong S$ for every Clifford module $S$. For the spinor module the operator of $\omega$ is the <strong>chirality operator</strong> $\Gamma_S$, and the signed action is $\Gamma_S\,x\,\Gamma_S^{-1}$.</p>
+<p><strong>Proof.</strong> For a vector $v$, $\omega v\omega^{-1} = (-1)^{n-1}v = -v$ because $n$ is even, so $v\omega = -\omega v$ and $\omega v\omega^{-1} = -v$; since $v\mapsto -v$ extends to the unique automorphism $\alpha$ and both sides of the identity are automorphisms agreeing on the generators, they agree everywhere. The unit condition and the isomorphism are the preceding criterion, and the identification with the chirality is the definition of the chirality operator of a spinor module.</p>
+<p><strong>Corollary (the grading is internal in even dimension).</strong> In even dimension the graded structure of every Clifford module is detected by an operator of the algebra: the chirality $\Gamma_S = \omega\big|_S$ commutes with the even part, is invertible, and satisfies $\Gamma_S^{2} = \omega^{2}$, a scalar. Where that scalar is a square the eigenspaces of $\Gamma_S$ are the two chiral halves of $S$; in general the chirality grades the module over the extension of $F$ in which $\omega^{2}$ has a square root, and the signed action is the conjugation by this grading operator, so the sign rule of the graded operators is implemented inside the module and not merely declared.</p>
+<h3 id="the-odd-dimension">The Odd Dimension</h3>
+<p><strong>Theorem.</strong> Let $n$ be <strong>odd</strong> and let $\omega$ be the volume element. Then $\omega$ is central and odd, it lies in the centre $F\oplus F\omega$, and $\alpha(\omega) = -\omega$. The conjugation by $\omega$ is the identity on the algebra and hence does <strong>not</strong> implement $\alpha$; the grade involution is an <strong>outer</strong> automorphism, and it exchanges the two simple modules of $\mathrm{Cl}(V,q)$, sending a minimal left ideal $I$ to a minimal left ideal $I^{\alpha}$ carrying the other simple module.</p>
+<p><strong>Proof.</strong> $\omega$ is central in odd dimension by <em>Clifford Algebras in Finite Dimensions</em>, and $\alpha(\omega) = (-1)^{n}\omega = -\omega$. If $\alpha = \mathrm{Ad}_u$ then $\mathrm{Ad}_u(\omega) = \omega$ because $\omega$ is central, but $\alpha(\omega) = -\omega \neq \omega$, so $\alpha$ is not inner. The simple modules of the centre are distinguished by the scalar by which $\omega$ acts, and when $\omega^{2} = 1$ these scalars are the two signs $\pm1$; twisting by $\alpha$ changes the sign of that scalar and therefore exchanges the classes, and when the centre $F\oplus F\omega$ is a field the corresponding statement is the exchange of the two embeddings of that field.</p>
+<p><strong>Corollary (the signed action in odd dimension switches chirality).</strong> In odd dimension the signed action on a simple module is not isomorphic to the ordinary action on that module, but to the ordinary action on the other simple module: $S^{\alpha}\cong S'$, where $S, S'$ are the two simple modules. So the signed action is the map that exchanges the two chiral halves in odd dimension, where the exchange cannot be realised by an operator of the algebra.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-even-case-math117">The Even Case $\mathrm{Cl}_{1,1}(\mathbb{R})$</h3>
+<p>With $e_1^{2} = 1$, $e_2^{2} = -1$ the algebra is $M_2(\mathbb{R})$ and $\omega = e_1e_2$ has $\omega^{2} = -1$. For a vector $v$, $\omega v\omega^{-1} = -v$; the endomorphism $\omega$ of the module $\mathbb{R}^2$ has square $-1$, so it has no real eigenspaces and the chiral halves appear over $\mathbb{C}$, where the two eigenspaces of $\omega$ split the complexified module. The signed action is the conjugation by that endomorphism, hence isomorphic to the ordinary action.</p>
+<h3 id="the-odd-case-math130">The Odd Case $\mathrm{Cl}_{0,3}(\mathbb{R})$</h3>
+<p>With $e_j^{2} = -1$ the volume element $\omega = e_1e_2e_3$ is central with $\omega^{2} = 1$, and $\alpha(\omega) = -\omega$. The algebra is $\mathbb{H}\oplus\mathbb{H}$ and the two simple modules are distinguished by $\omega$ acting as $+1$ and as $-1$; twisting by $\alpha$ sends the module with $\omega = 1$ to the module with $\omega = -1$, so the signed action exchanges the two chiral halves.</p>
+<h3 id="the-even-dimension-four">The Even Dimension Four</h3>
+<p>In $\mathrm{Cl}_{3,1}(\mathbb{R})$ with $e_1^{2} = e_2^{2} = e_3^{2} = 1$ and $e_4^{2} = -1$ the volume element $\omega = e_1e_2e_3e_4$ is even and satisfies $\omega^{2} = -1$; on the Dirac spinor module it is the chirality operator $\Gamma$ with $\Gamma^{2} = -1$, so over $\mathbb{R}$ it has no eigenspaces and the half-spin spaces are its eigenspaces over $\mathbb{C}$, where $\Gamma$ acts as $+1$ on one and $-1$ on the other. The signed action is the conjugation by $\Gamma$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed action</strong> on a Clifford module is $x\cdot_{\alpha}s = \alpha(x)\cdot s$; it makes the module into the twist $S^{\alpha}$ by the grade involution and equals the ordinary action with the sign $(-1)^{|x|}$ on an odd element; it agrees with the ordinary action on the even part. Whether $S^{\alpha}$ is isomorphic to $S$ is decided by whether $\alpha$ is inner. It is inner in <strong>even</strong> dimension: the volume element $\omega$ is even with $\omega v\omega^{-1} = -v$, so $\alpha = \mathrm{Ad}_{\omega}$, the signed action is the conjugation by the <strong>chirality operator</strong> $\Gamma_S = \omega\big|_S$, and the twisted module is isomorphic to the original. It is outer in <strong>odd</strong> dimension: $\omega$ is central and odd with $\alpha(\omega) = -\omega$, so no unit implements $\alpha$, and the signed action <strong>exchanges the two simple modules</strong>, which are distinguished by the sign of $\omega$. This is the compatibility of the signed action with the grading: in even dimension the grading is an operator inside the module and the signed action is its conjugation, while in odd dimension the grading is the centre and the signed action permutes the two chiralities instead of conjugating one of them. The module theory is <em>Left Multiplication and the Clifford Module Structure</em> and <em>The One-Sided Action and the Spin Representation</em>; the graded operators are <em>The Graded Multiplication Operators</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$, $x\cdot s$</td>
+<td>Clifford module and its action</td>
+</tr>
+<tr>
+<td>$x\cdot_{\alpha}s = \alpha(x)\cdot s$</td>
+<td>Signed action</td>
+</tr>
+<tr>
+<td>$S^{\alpha}$</td>
+<td>Twist of $S$ by the grade involution</td>
+</tr>
+<tr>
+<td>$\alpha = \mathrm{Ad}_{\omega}$ (even $n$)</td>
+<td>The grade involution is inner in even dimension</td>
+</tr>
+<tr>
+<td>$\Gamma_S = \omega\big|_S$</td>
+<td>Chirality operator of a spinor module</td>
+</tr>
+<tr>
+<td>$\omega$, $F\oplus F\omega$ (odd $n$)</td>
+<td>Volume element, centre; $\alpha$ is outer</td>
+</tr>
+<tr>
+<td>$S \mapsto S^{\alpha}$</td>
+<td>Exchange of the two simple modules in odd dimension</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the volume element, the chirality and the twisting of a Clifford module.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the chirality operator and the half-spin modules.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the centre of a Clifford algebra and the inner automorphisms.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the twist of a module by an automorphism.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the volume element in the low-dimensional algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

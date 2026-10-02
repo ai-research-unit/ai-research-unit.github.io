@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hodge Star and the Real Structure of the Exterior Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hodge-star-and-the-real-structure-of-the-exterior-algebra"><strong>The Hodge Star and the Real Structure of the Exterior Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>When the finite-dimensional vector space $V$ carries a nondegenerate symmetric bilinear form and an orientation, the exterior algebra receives a further order-two-up-to-sign operator, the <strong>Hodge star</strong> $\star:\Lambda^kV\to\Lambda^{m-k}V$, determined by $\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\theta$ for the volume element $\theta$ of the orientation. Its square is a sign, $\star\star=(-1)^{k(m-k)}$ on $\Lambda^kV$ for a form with discriminant one, and that sign decides the nature of the operator: where it is $+1$ the star is an <strong>involution</strong> and splits the component into two real subspaces; where it is $-1$ the star is a <strong>complex structure</strong>, an operator whose square is $-1$, and endows the component with the structure of a complex vector space. This article, the fifth of the <code>- * Theory</code> group, establishes the square of the star, constructs the real and the complex structures it defines, treats the middle degree where the two cases separate according to $m$ modulo four, and records the compatibility of the star with the grade involution, the reversion and the reversal of <em>Involutions of the Exterior Algebra</em>. The star in general, its formula in an orthogonal basis and its isometry property are the theory that this entry cites; the exterior algebra and its order-two maps are <em>The Exterior Algebra</em> and <em>Involutions of the Exterior Algebra</em>; the adjoint of the star belongs to the <code>- * Operator Theory</code> group and is deferred.</p>
+<p>The base is a field $K$ of characteristic not two, $V$ has dimension $m$, the form is written $\langle\cdot,\cdot\rangle$, the volume element $\theta$ and the star $\star$. The form is used only through its nondegeneracy and the sign $\star^2=\pm1$; no length is formed from it.</p>
+<h2 id="the-square-of-the-star">The Square of the Star</h2>
+<p><strong>Theorem.</strong> With the form having discriminant one, the star satisfies</p>
+<p>$$
+\star\star=(-1)^{k(m-k)}\,\mathrm{id}\quad\text{on }\Lambda^kV ,
+$$</p>
+<p>so that $\star^2=\mathrm{id}$ when $k(m-k)$ is even and $\star^2=-\mathrm{id}$ when $k(m-k)$ is odd.</p>
+<p><strong>Proof.</strong> The star sends a basis $k$-vector to a scalar times the complementary basis vector; applying it twice returns the original vector, and the two signs of the two reorderings multiply to $(-1)^{k(m-k)}$, as computed in the theory of the Hodge star. $\square$</p>
+<p><strong>Corollary.</strong> On the components $\Lambda^0V$ and $\Lambda^mV$ the star has square $+1$; on $\Lambda^1V$ and $\Lambda^{m-1}V$ it has square $(-1)^{m-1}$; the sign depends only on $k$ and on the parity of $m$.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p><strong>Definition.</strong> A <strong>real structure</strong> on a vector space is an involutive linear operator, that is an operator $J$ with $J^2=\mathrm{id}$; a <strong>complex structure</strong> is a linear operator $J$ with $J^2=-\mathrm{id}$, which makes the space a complex vector space with $J$ as multiplication by $i$.</p>
+<p><strong>Theorem.</strong> On a component $\Lambda^kV$ with $\star^2=\mathrm{id}$ the star is a real structure, and the component splits as the direct sum of the two eigenspaces</p>
+<p>$$
+\Lambda^kV=\Lambda^k_+V\oplus\Lambda^k_-V,\qquad \Lambda^k_\pm V=\{x:\star x=\pm x\},
+$$</p>
+<p>the <strong>self-dual</strong> and <strong>anti-self-dual</strong> parts; the projections are $\tfrac12(\mathrm{id}\pm\star)$.</p>
+<p><strong>Proof.</strong> An involutive linear operator is diagonalisable with eigenvalues $\pm1$ in characteristic not two, and the eigenspaces are the ranges of the spectral projections. $\square$</p>
+<p><strong>Corollary.</strong> The self-dual and anti-self-dual parts have equal dimension $\tfrac12\dim\Lambda^kV$ when $\star^2=\mathrm{id}$ and the component has even dimension; they are the eigenspaces of the star and are interchanged by any orientation-reversing isometry, while an orientation-preserving isometry preserves each.</p>
+<h2 id="the-complex-structure">The Complex Structure</h2>
+<p><strong>Theorem.</strong> On a component $\Lambda^kV$ with $\star^2=-\mathrm{id}$ the star is a complex structure, and $\Lambda^kV$ becomes a vector space over $\mathbb{C}$ with $i$ acting as $\star$; the complex dimension is $\tfrac12\dim\Lambda^kV$.</p>
+<p><strong>Proof.</strong> A linear operator with square $-1$ defines the structure of a module over $K[i]$ with $i$ acting as the operator, equivalently a complex vector space; the dimension halves because the minimal polynomial divides $T^2+1$. $\square$</p>
+<p><strong>Corollary.</strong> The star is then invertible with $\star^{-1}=-\star$, and the components $\Lambda^kV$ and $\Lambda^{m-k}V$ are exchanged by a complex-linear isomorphism, since $\star$ is complex-linear for its own complex structure.</p>
+<h2 id="the-middle-degree">The Middle Degree</h2>
+<p><strong>Theorem.</strong> Let $m$ be even and $k=m/2$. Then $\star^2=(-1)^{m^2/4}\mathrm{id}$ on the middle component, so</p>
+<ul>
+<li>if $m\equiv0\pmod 4$, the star is a real structure and the middle component splits into the self-dual and anti-self-dual parts;</li>
+<li>if $m\equiv2\pmod 4$, the star is a complex structure and the middle component is a complex vector space of dimension half its dimension.</li>
+</ul>
+<p><strong>Proof.</strong> Put $k=m/2$ in the square formula: $k(m-k)=m^2/4$, which is even exactly when $m$ is divisible by four, and odd exactly when $m\equiv2\pmod4$. $\square$</p>
+<p><strong>Corollary.</strong> The classical cases are $m=4$, where $\Lambda^2$ splits into two three-dimensional parts, and $m=6$, where $\Lambda^3$ is a complex space of dimension ten; the first gives the self-dual and anti-self-dual bivectors of the four-dimensional theory, the second the complex structure on the middle forms.</p>
+<h2 id="compatibility-with-the-other-order-two-maps">Compatibility with the Other Order-Two Maps</h2>
+<p><strong>Proposition.</strong> The star commutes with the grade involution, $\star\alpha=(-1)^{m-k}\alpha\star$ on $\Lambda^kV$, and with the reversion and the reversal up to the degree signs; on the even-dimensional middle component the star commutes with $\alpha$ exactly when $m$ is even.</p>
+<p><strong>Proof.</strong> The star sends $\Lambda^kV$ to $\Lambda^{m-k}V$, on which the grade involution acts by $(-1)^{m-k}$, whereas it acts by $(-1)^k$ on $\Lambda^kV$; the two differ by $(-1)^{m}$; the reversion and the reversal are treated by the same computation with their own signs. $\square$</p>
+<p><strong>Corollary.</strong> The three maps $\alpha,r,\alpha r$ of <em>Involutions of the Exterior Algebra</em> preserve the self-dual and anti-self-dual parts when they commute with the star, and interchange them when they anticommute; the star thus refines the group $(\mathbb{Z}/2)^2$ generated by them into a larger diagonalisable family.</p>
+<h2 id="worked-case-math90-and-math91">Worked Case: $\mathbb{R}^4$ and $\mathbb{R}^6$</h2>
+<p>For $V=\mathbb{R}^4$ the star on $\Lambda^2$ has square $+1$, so $\Lambda^2$ splits into the self-dual and anti-self-dual bivectors, each of dimension three; on $\Lambda^1$ the star maps to $\Lambda^3$ and has square $(-1)^{1\cdot3}=-1$, so it is a complex structure on the six-dimensional space $\Lambda^1\oplus\Lambda^3$ viewed with the induced operator.</p>
+<p>For $V=\mathbb{R}^6$ the middle degree is $\Lambda^3$, of dimension twenty, and the star has square $(-1)^{9}=-1$, so it is a complex structure and $\Lambda^3$ is a complex space of dimension ten; the components $\Lambda^k$ and $\Lambda^{6-k}$ pair into complex spaces of total dimension $2\binom{6}{k}$ for $k\neq3$.</p>
+<p><strong>Verified.</strong> The squares of the star were recomputed for $m=4$ and $m=6$ on the basis elements of the exterior algebra, and the middle-degree signs $(-1)^{m^2/4}$ were checked against the general formula.</p>
+<h2 id="summary">Summary</h2>
+<p>With a nondegenerate symmetric bilinear form of discriminant one and an orientation, the <strong>Hodge star</strong> on $\Lambda^kV$ satisfies $\star^2=(-1)^{k(m-k)}\mathrm{id}$. Where the square is $+1$ the star is an involutive <strong>real structure</strong>, and the component splits into the <strong>self-dual</strong> and <strong>anti-self-dual</strong> eigenspaces of equal dimension; where the square is $-1$ the star is a <strong>complex structure</strong>, and the component becomes a complex vector space of half its dimension, with $\star^{-1}=-\star$. In the middle degree $k=m/2$ the square is $(-1)^{m^2/4}$, so the component carries a real structure when $m\equiv0\pmod4$ and a complex structure when $m\equiv2\pmod4$; the cases $m=4$ (self-dual bivectors) and $m=6$ (a complex middle space of dimension ten) are the classical instances. The star commutes or anticommutes with the grade involution, the reversion and the reversal according to the degree signs, refining the group they generate. The adjoint of the star belongs to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>a finite-dimensional space with a nondegenerate symmetric form</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>the form and its determinant extension</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the volume element of the orientation</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Hodge star, $\Lambda^kV\to\Lambda^{m-k}V$</td>
+</tr>
+<tr>
+<td>$\Lambda^k_\pm V$</td>
+<td>the self-dual and anti-self-dual parts</td>
+</tr>
+<tr>
+<td>$\alpha,r,\alpha r$</td>
+<td>the grade involution, reversion and reversal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Werner Greub, <em>Multilinear Algebra</em>, Universitext (Springer, 2nd ed. 1978), for the Hodge star and its square.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the star, the self-dual forms and the complex structures on the middle exterior power.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em>, Graduate Texts in Mathematics 94 (Springer, 1983), for the star and its use in Hodge theory.</li>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works, Volume 2 (Springer, 1997), for the order-two maps and the star.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

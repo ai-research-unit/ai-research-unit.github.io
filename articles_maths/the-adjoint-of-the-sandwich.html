@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Sandwich — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-sandwich"><strong>The Adjoint of the Sandwich</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The sandwich $T_{a,b}=L_aR_b$ is the two-sided multiplication $x\mapsto axb$, and its adjoint for the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is the sandwich by the Clifford-conjugated parameters,</p>
+<p>$$
+T_{a,b}^{*} = T_{\hat a,\hat b} , \qquad \hat a=\alpha(\tilde a) .
+$$</p>
+<p>The adjoint therefore acts on the pair $(a,b)$ by the involution in each factor, and the sandwich is self-adjoint exactly when the two parameters are fixed, up to the central units that leave the operator unchanged. The article computes the adjoint, deduces the self-adjointness and orthogonality conditions, and specialises to the inner automorphism $T_{a,a^{-1}}$, whose adjoint is the inner automorphism by the conjugated parameter. The signed version of the same computation is <em>The Adjoint of the Sandwich with the Signed Product</em>, and the general two-sided family is <em>The Adjoint of the Two-Sided Multiplication Operator</em>.</p>
+<p><strong>The boundaries.</strong> The sandwich and its composition are <em>The Sandwich on a Clifford Algebra</em>; the one-sided adjoints are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em> and <em>The Adjoint of the Right Multiplication</em>; the form and the conjugation are <em>The Twisted Adjoint on a Clifford Algebra</em>, on which this article depends. The inner automorphisms and the versors are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$ with a non-degenerate $q$, $q(u)=B(u,u)$, $uv+vu=2B(u,v)$.</p>
+<h2 id="the-adjoint-of-the-sandwich_1">The Adjoint of the Sandwich</h2>
+<p><strong>Theorem.</strong> For all $a,b$,</p>
+<p>$$
+T_{a,b}^{*} = (L_aR_b)^{*} = R_{\hat b}L_{\hat a} = L_{\hat a}R_{\hat b} = T_{\hat a,\hat b} ,
+$$</p>
+<p>and the map $(a,b)\mapsto(\hat a,\hat b)$ is an involution on the pairs; the adjoint is an involution of the two-sided family, $T_{a,b}^{**}=T_{a,b}$.</p>
+<p><strong>Proof.</strong> The adjoint of a composition is the composition of the adjoints in reverse order, so $(L_aR_b)^*=R_b^*L_a^*=R_{\hat b}L_{\hat a}$, and the two families commute, $R_{\hat b}L_{\hat a}=L_{\hat a}R_{\hat b}$; the result is the sandwich by $(\hat a,\hat b)$. The double adjoint is the double conjugation, which is the identity. The one-factor adjoints are <em>The Adjoint of the Left Multiplication on a Clifford Algebra</em> and <em>The Adjoint of the Right Multiplication</em>.</p>
+<p><strong>Proposition (self-adjointness).</strong> $T_{a,b}$ is self-adjoint if and only if $(\hat a,\hat b)=(a c,c^{-1}b)$ for a <strong>central unit</strong> $c$; in particular $T_{a,b}$ is self-adjoint whenever $\hat a=a$ and $\hat b=b$.</p>
+<p><strong>Proof.</strong> The two-sided operators $T_{a,b}$ and $T_{a',b'}$ are equal exactly when $a'=ac$, $b'=c^{-1}b$ for a central unit $c$ — substituting $x=1$ forces $ab=a'b'$, and the comparison for all $x$ forces $c$ central; this is the indeterminacy of the sandwich of <em>The Sandwich on a Clifford Algebra</em>. Combining with $T_{a,b}^*=T_{\hat a,\hat b}$ gives the stated condition, and the sufficient condition is the special case $c=1$.</p>
+<p><strong>Proposition (orthogonality).</strong> $T_{a,b}$ is orthogonal for the standard form if and only if $L_{\hat aa}$ and $R_{\hat bb}$ compose to the identity, that is</p>
+<p>$$
+T_{a,b}^{*}T_{a,b}=L_{\hat aa}R_{\hat bb}=\operatorname{id} ;
+$$</p>
+<p>for a pair of units with $\hat aa=\hat bb=1$ the sandwich is orthogonal, and more generally the condition may be met by a cancellation of the two factors when one of them is not orthogonal.</p>
+<p><strong>Proof.</strong> $T_{a,b}^*T_{a,b}=L_{\hat a}R_{\hat b}L_aR_b=L_{\hat aa}R_{\hat bb}$, using the commutation of the two families; the operator $L_cR_d$ is the identity exactly when $c x d=x$ for all $x$, which for $c,d$ units forces $c=d^{-1}$ central in the central-simple case and is satisfied in particular for $c=d=1$, i.e. $\hat aa=\hat bb=1$.</p>
+<h2 id="the-inner-automorphism">The Inner Automorphism</h2>
+<p><strong>Proposition.</strong> The sandwich by $(a,a^{-1})$ is the inner automorphism $\mathrm{Ad}_a$, and its adjoint is the inner automorphism by the conjugated parameter,</p>
+<p>$$
+T_{a,a^{-1}}^{*} = T_{\hat a,(\hat a)^{-1}} = \mathrm{Ad}_{\hat a} ;
+$$</p>
+<p>consequently $\mathrm{Ad}_a$ is orthogonal exactly when $\hat aa$ is central and $\hat aa=1$, that is when $a$ is a unit with $\hat a=a^{-1}$, and it is self-adjoint exactly when $\hat a$ is a central multiple of $a$.</p>
+<p><strong>Proof.</strong> $\widehat{a^{-1}}=(\hat a)^{-1}$ because the conjugation is an anti-automorphism and preserves inverses; the sandwich by $(a,a^{-1})$ acts by $x\mapsto axa^{-1}=\mathrm{Ad}_a(x)$; the adjoint formula gives the first display, and the orthogonality and self-adjointness conditions are the general ones read with $b=a^{-1}$: $\hat bb=(\hat a)^{-1}\hat a$, and $T_{a,a^{-1}}^*T_{a,a^{-1}}=\mathrm{Ad}_{\hat a}\mathrm{Ad}_a=\mathrm{Ad}_{\hat aa}$, which is the identity when $\hat aa$ is central and equals $1$.</p>
+<p><strong>Remark (the geometry).</strong> The inner automorphisms by the units with $\hat a=a^{-1}$ form the group of orthogonal inner automorphisms of the algebra; in the definite case with $q(u)=-1$ they are the rotations generated by the versors, by <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>. The adjoint computation above is the algebraic reason the group is closed under inversion, which is the versor condition $\hat a=a^{-1}$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $\mathrm{Cl}\cong\mathbb H$ the conjugation is the quaternionic conjugate, and $\mathrm{Ad}_a$ is the rotation of $\mathbb{R}^3$ by the unit quaternion $\tilde a=|a|^{-1}a$; the adjoint is $\mathrm{Ad}_{\hat a}=\mathrm{Ad}_{|a|^{-1}\tilde a^{-1}}$, the inverse rotation, and the sandwich is orthogonal exactly for $|a|=1$.</p>
+<h3 id="the-negative-definite-plane">The Negative-Definite Plane</h3>
+<p>For $\mathrm{Cl}$ of the negative-definite plane with $a=e_1$, $b=e_1^{-1}=-e_1$, the sandwich is $\mathrm{Ad}_{e_1}$: the conjugation $x\mapsto e_1xe_1^{-1}$, on the span of $e_1,e_2$ the half-turn; its adjoint is $\mathrm{Ad}_{\hat e_1}=\mathrm{Ad}_{-e_1}=\mathrm{Ad}_{e_1}$, so the half-turn is self-adjoint and orthogonal.</p>
+<h3 id="a-non-orthogonal-sandwich">A Non-Orthogonal Sandwich</h3>
+<p>For $a=\lambda$ a scalar and $b=1$, $T_{\lambda,1}=\lambda\operatorname{id}$ has adjoint $\lambda\operatorname{id}$ if $\lambda$ is central, and it is self-adjoint while orthogonal only for $\lambda^2=1$; the example shows that self-adjointness and orthogonality are independent conditions, the first a $\hat{}$-condition and the second a norm condition.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the sandwich is the sandwich by the <strong>Clifford-conjugated parameters</strong>, $T_{a,b}^*=R_{\hat b}L_{\hat a}=T_{\hat a,\hat b}$, and the adjoint is an involution of the two-sided family. The sandwich is <strong>self-adjoint</strong> exactly when $(\hat a,\hat b)=(ac,c^{-1}b)$ with $c$ central, and <strong>orthogonal</strong> exactly when $L_{\hat aa}R_{\hat bb}=\operatorname{id}$, the sufficient case being $\hat aa=\hat bb=1$. The inner automorphism $\mathrm{Ad}_a=T_{a,a^{-1}}$ has adjoint $\mathrm{Ad}_{\hat a}$, is orthogonal exactly for units with $\hat a=a^{-1}$, and is self-adjoint exactly when $\hat a$ is a central multiple of $a$; the orthogonal inner automorphisms are the rotations generated by the versors. The sandwich is <em>The Sandwich on a Clifford Algebra</em>, the form is <em>The Twisted Adjoint on a Clifford Algebra</em>, and the signed version of the computation is <em>The Adjoint of the Sandwich with the Signed Product</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}=L_aR_b$, $T_{a,b}(x)=axb$</td>
+<td>Sandwich; two-sided multiplication</td>
+</tr>
+<tr>
+<td>$T_{a,b}^*=T_{\hat a,\hat b}$</td>
+<td>Adjoint for the standard form</td>
+</tr>
+<tr>
+<td>$\hat a=\alpha(\tilde a)$</td>
+<td>Clifford conjugation</td>
+</tr>
+<tr>
+<td>$T_{a,b}^{**}=T_{a,b}$</td>
+<td>The adjoint is an involution of the family</td>
+</tr>
+<tr>
+<td>$(\hat a,\hat b)=(ac,c^{-1}b)$, $c$ central</td>
+<td>Self-adjointness condition</td>
+</tr>
+<tr>
+<td>$T_{a,b}^*T_{a,b}=L_{\hat aa}R_{\hat bb}$</td>
+<td>Orthogonality condition</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_a=T_{a,a^{-1}}$, $\mathrm{Ad}_a^*=\mathrm{Ad}_{\hat a}$</td>
+<td>Inner automorphism and its adjoint</td>
+</tr>
+<tr>
+<td>$\hat a=a^{-1}$</td>
+<td>Orthogonality of $\mathrm{Ad}_a$; the versor condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the
+  sandwich, the conjugation and the adjoint of the two-sided operators.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced
+  Mathematics 50 (Cambridge University Press, 1995), for the inner automorphisms and the unitary
+  condition $\hat a=a^{-1}$.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for
+  the conjugation action and the orthogonality of the versor automorphisms.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for the
+  inner automorphisms, the central units and the indeterminacy of the two-sided representation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

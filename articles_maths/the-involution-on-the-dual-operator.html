@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Dual Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-dual-operator"><strong>The Involution on the Dual Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A non-degenerate pairing on a linear space transports to the dual space, and with it the involution it defines on the endomorphisms. The result is that the two dualities of the category — the duality of the dual space, given by the transpose, and the duality of the pairing, given by the adjoint — commute: the adjoint of the transpose is the transpose of the adjoint, and the involution on the endomorphisms of the dual is the one transported from the involution on the endomorphisms of the space. This article develops the pairing induced on the dual, the comparison of the two dualities, and the involution it produces on the operators of the dual.</p>
+<p>The transposed involution of an <strong>involution</strong> of $V$ is <em>Involutions of the Dual Space</em>; the transpose of a general linear map and the double dual are <em>The Transpose of a Linear Map</em>; the pairing-based involution and the adjoint of a single endomorphism are <em>Involutions of the Endomorphism Algebra</em> and <em>The Adjoint of an Endomorphism</em>. This article compares the two dualities and is the compatibility statement between them. The forms and the analysis are <em>Hilbert Algebras</em>, Part II.</p>
+<p>Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $B$ is a non-degenerate reflexive pairing on $V$ with involution $\varsigma$ and reflexive sign $\varepsilon$, and $V^{*}$ is the dual space. The adjoint of $A \in \operatorname{End}_F(V)$ is $A^{*}$, and the transpose of a linear map is written ${}^{\mathsf{T}}$.</p>
+<h2 id="the-pairing-induced-on-the-dual">The Pairing Induced on the Dual</h2>
+<p><strong>Definition.</strong> For $\varphi \in V^{*}$ let $x_{\varphi}$ be the unique vector with $B(x_{\varphi},y) = \varphi(y)$ for all $y$, and define</p>
+<p>$$
+B^{*}(\varphi,\psi) = B(x_{\varphi},x_{\psi}) .
+$$</p>
+<p><strong>Proposition.</strong> $B^{*}$ is a non-degenerate reflexive pairing on $V^{*}$ with the same involution $\varsigma$ and the same reflexive sign $\varepsilon$ as $B$; the assignment $\varphi \mapsto x_{\varphi}$ is an isomorphism $V^{*} \to V$ carrying $B^{*}$ to $B$, and it is $\varsigma$-semilinear in the sesquilinear case.</p>
+<p><strong>Proof.</strong> Well-definedness and bilinearity are inherited; non-degeneracy follows because $\varphi \mapsto x_\varphi$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto B(x,\cdot)$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.</p>
+<p><strong>Lemma (the transpose transported is the adjoint).</strong> For $C \in \operatorname{End}_F(V)$ and $\varphi \in V^{*}$ the representing vector of the transpose is</p>
+<p>$$
+x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi} .
+$$</p>
+<p><strong>Proof.</strong> For every $z$, $B(C^{*}x_{\varphi}, z) = B(x_{\varphi}, Cz) = \varphi(Cz) = (C^{\mathsf{T}}\varphi)(z)$; the representing vector is unique, giving the identity.</p>
+<p><strong>Proposition (the transpose as an adjoint).</strong> For $A \in \operatorname{End}_F(V)$ the transpose $A^{\mathsf{T}} : V^{*} \to V^{*}$ satisfies</p>
+<p>$$
+B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr) ,
+$$</p>
+<p>so the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint; under the identification $V^{*} \cong V$ the transpose of $A$ corresponds to the adjoint of $A$.</p>
+<p><strong>Proof.</strong> By the lemma applied to $C=A$, the left side is $B(A^{*}x_{\varphi},x_{\psi}) = B(x_{\varphi}, A x_{\psi})$; by the lemma applied to $C=A^{*}$ and $(A^{*})^{*}=A$, the right side is $B(x_{\varphi}, A x_{\psi})$. For the last statement, the lemma with $C=A$ says exactly that $A^{\mathsf{T}}$ transported to $V$ is $A^{*}$.</p>
+<h2 id="the-two-dualities-commute">The Two Dualities Commute</h2>
+<p><strong>Theorem.</strong> On the endomorphisms of the dual the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint:</p>
+<p>$$
+\bigl(A^{\mathsf{T}}\bigr)^{*_{B^{*}}} = \bigl(A^{*_B}\bigr)^{\mathsf{T}} ,
+$$</p>
+<p>and the assignment $A \mapsto A^{*_B}$ transported to $V^{*}$ by the identification $V^{*}\cong V$ is the $B^{*}$-involution on $\operatorname{End}_F(V^{*})$.</p>
+<p><strong>Proof.</strong> The transposition is a contravariant functor, so $(A^{\mathsf{T}})^{\mathsf{T}} = A$ under the double-dual identification, and the adjoint is an involution; applying the previous proposition to the transpose and to the adjoint gives the displayed identity, and the transport statement is the definition of the involution transported by an isomorphism.</p>
+<p><strong>Corollary (the involutions correspond).</strong> If $\Phi_{B}$ is the involution on $\operatorname{End}_F(V)$ with $\Phi_B(A) = A^{*_B}$ and $\Phi_{B^{*}}$ the corresponding involution on $\operatorname{End}_F(V^{*})$, then the isomorphism $V^{*}\cong V$ conjugates $\Phi_{B^{*}}$ into $\Phi_B$; the two have the same type in the sense of the involution of a linear space, and the same fixed part under the identification.</p>
+<p><strong>Proof.</strong> Conjugation by an isomorphism preserves the order and the multiplication, hence the involutions; the fixed parts correspond because the isomorphism is bijective.</p>
+<p><strong>Example.</strong> For the standard pairing on $F^n$ the induced pairing on the dual is standard, the transpose of a matrix is its transpose, and the adjoint is the transpose; the two dualities coincide, which is the degenerate case where the two comparisons add nothing.</p>
+<h2 id="the-fixed-part-and-the-self-adjoint-operators">The Fixed Part and the Self-Adjoint Operators</h2>
+<p><strong>Proposition.</strong> A functional $\varphi$ is fixed by the transported involution exactly when its representing vector $x_{\varphi}$ is $B$-self-adjoint in the image of the corresponding operator; the fixed part of the involution on $\operatorname{End}_F(V^{*})$ therefore corresponds to the self-adjoint operators of $\operatorname{End}_F(V)$, and the unitary elements correspond to one another.</p>
+<p><strong>Proof.</strong> The transport is an isomorphism of algebras, and it carries the fixed points and the unitary elements of one involution to those of the other.</p>
+<h2 id="summary">Summary</h2>
+<p>A non-degenerate reflexive pairing $B$ on $V$ induces a pairing $B^{*}$ on the dual $V^{*}$ by $B^{*}(\varphi,\psi) = B(x_\varphi,x_\psi)$, with the same involution and reflexive sign, and the assignment $\varphi\mapsto x_\varphi$ is an isomorphism carrying $B^{*}$ to $B$. Under this identification the transpose of an endomorphism corresponds to its adjoint, $B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}(\varphi,A^{*}\psi)$, and consequently the two dualities commute: $(A^{\mathsf{T}})^{*_{B^{*}}} = (A^{*_B})^{\mathsf{T}}$. The $B^{*}$-involution on the endomorphisms of the dual is the transport of the $B$-involution on the endomorphisms of the space, so the two have the same type, the same fixed part and the same unitary elements under the identification; the standard pairing on $F^n$ is the case where the two dualities coincide.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$</td>
+<td>the pairing on $V$</td>
+</tr>
+<tr>
+<td>$B^{*}(\varphi,\psi)=B(x_\varphi,x_\psi)$</td>
+<td>the induced pairing on $V^{*}$</td>
+</tr>
+<tr>
+<td>$x_\varphi$</td>
+<td>the $B$-dual vector of $\varphi$, $B(x_\varphi,y)=\varphi(y)$</td>
+</tr>
+<tr>
+<td>$A^{\mathsf{T}}\varphi = \varphi A$</td>
+<td>the transpose on the dual</td>
+</tr>
+<tr>
+<td>$A^{*}$</td>
+<td>the $B$-adjoint on $V$</td>
+</tr>
+<tr>
+<td>$(A^{\mathsf{T}})^{*_{B^{*}}}=(A^{*_B})^{\mathsf{T}}$</td>
+<td>commutation of the two dualities</td>
+</tr>
+<tr>
+<td>$\Phi_B, \Phi_{B^{*}}$</td>
+<td>the involutions on the two endomorphism algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for duality and sesquilinear pairings.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, 4th ed. 1975), for the transpose and the adjoint.</li>
+<li>Serge Lang, <em>Linear Algebra</em> (Springer, 3rd ed. 1987), for dual spaces, adjoints and their compatibility.</li>
+<li>Steven Roman, <em>Advanced Linear Algebra</em> (Springer, 3rd ed. 2008), for bilinear pairings, the induced form on the dual and the adjoint.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

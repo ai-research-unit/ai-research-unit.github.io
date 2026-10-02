@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of an Integral Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-an-integral-operator"><strong>The Adjoint of an Integral Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint of an operator is the operator that moves the operator to the other side of the pairing, and for
+an integral operator it is again an integral operator, whose kernel is the conjugate transpose of the
+original one. If the pairing is the Hilbert pairing $\langle f,g\rangle=\int f\bar g$, then
+$$
+T_K^\dagger=T_{K^*},\qquad K^*(x,y)=\overline{K(y,x)} ,
+$$
+and the operator $T_K$ is self-adjoint exactly when its kernel is Hermitian. The passage
+$T\mapsto T^\dagger$ is the involution on the operators, the archetype of the <code>* Operator Theory</code> group:
+it is conjugate-linear, involutive, an isometric anti-automorphism of the operator algebra, and it carries
+the element involution $K\mapsto K^*$ of the kernel to the operator adjoint. This article derives that
+correspondence, distinguishes the two adjoints of an integral operator — the Hilbert adjoint, taken with
+respect to the sesquilinear pairing, and the transpose, taken with respect to the bilinear pairing — and
+identifies the Hermitian case.</p>
+<p>The article is the first of the <code>* Operator Theory</code> group of <em>Foundations of Analysis</em>. Its prerequisites
+are <em>The Integral Operator</em>, the first article of this category, for the integral operator and the kernel;
+<em>Banach and Hilbert Spaces</em>, later in this Part, for the adjoint of a bounded operator, its uniqueness and
+its algebraic properties, quoted as established; <em>Conventions in Mathematics</em> for the marks, where the
+<strong>dagger</strong> is the adjoint of an operator and the <strong>star</strong> the involution of an element; and <em>Hermitian
+Kernels and the Integral Operator</em>, the last article of the <code>* Theory</code> group, for the kernel involution and
+the dictionary of the two conditions. The spectral theory that the Hermitian case supports is <em>Hermitian
+Integral Kernels</em>, the next article; the general adjoint of a bounded operator, with domain considerations
+for the unbounded case, is <em>The Adjoint of a Bounded Operator</em> and the later unbounded-operator material,
+both later in this Part; the distributional kernel is <em>The Schwartz Kernel Theorem</em>, later in this Part. No
+geometry is invoked.</p>
+<h2 id="the-pairing-and-the-adjoint">The Pairing and the Adjoint</h2>
+<h3 id="the-pairing">The Pairing</h3>
+<p>Throughout, $X$ is a measure space with a $\sigma$-finite measure $\mu$, and $L^2=L^2(X,\mu)$ carries the
+<strong>Hilbert pairing</strong>
+$$
+\langle f,g\rangle=\int_Xf\bar g\,d\mu ,
+$$
+conjugate-linear in the second slot and linear in the first. The <strong>bilinear pairing</strong> is
+$$
+\{f,g\}=\int_Xfg\,d\mu ,
+$$
+with no conjugation, defined for the pairs for which the integral converges. The two pairings differ by the
+conjugate on the second slot, and they produce two different adjoints of the same operator.</p>
+<h3 id="the-adjoint-of-a-bounded-operator">The Adjoint of a Bounded Operator</h3>
+<p><strong>Definition.</strong> For a bounded operator $T:L^2\to L^2$, the <strong>adjoint</strong> $T^\dagger$ is the unique bounded
+operator with
+$$
+\langle Tf,g\rangle=\langle f,T^\dagger g\rangle\qquad\text{for all }f,g\in L^2 ;
+$$
+it exists by the Riesz representation theorem, and it is characterised by those identities.</p>
+<p><strong>Theorem (properties of the adjoint).</strong> The map $T\mapsto T^\dagger$ is conjugate-linear and involutive,
+$$
+(T+S)^\dagger=T^\dagger+S^\dagger,\qquad
+(\lambda T)^\dagger=\bar\lambda T^\dagger,\qquad
+T^{\dagger\dagger}=T ,
+$$
+it reverses products,
+$$
+(ST)^\dagger=S^\dagger T^\dagger ,
+$$
+and it is isometric, $\lVert T^\dagger\rVert=\lVert T\rVert$. Consequently $T$ is <strong>self-adjoint</strong> if
+$T^\dagger=T$, <strong>unitary</strong> if $T^\dagger T=TT^\dagger=\mathrm{id}$, and <strong>normal</strong> if
+$TT^\dagger=T^\dagger T$.</p>
+<p><strong>Proof.</strong> The properties are those of the adjoint of a bounded operator in <em>Banach and Hilbert Spaces</em>,
+later in this Part, and are quoted from there; the anti-multiplicativity is the computation
+$\langle STf,g\rangle=\langle Tf,S^\dagger g\rangle=\langle f,T^\dagger S^\dagger g\rangle$, and the
+isometry is $\lVert T^\dagger\rVert=\sup_{\lVert g\rVert=1}\sup_{\lVert f\rVert=1}\lvert\langle Tf,g\rangle\rvert=\lVert T\rVert$.
+$\blacksquare$</p>
+<p><strong>Remark (the marks).</strong> By <em>Conventions in Mathematics</em> the <strong>dagger</strong> names the adjoint of an operator and
+the <strong>star</strong> names the involution of an element, the layer of the <code>* Theory</code> group. The two are distinct
+structures, and the identity $T_K^\dagger=T_{K^*}$ below is the statement that, for integral operators, the
+element involution $K\mapsto K^*$ produces the operator adjoint $T\mapsto T^\dagger$; that agreement is
+proved, never assumed.</p>
+<h3 id="the-transpose-and-the-adjoint">The Transpose and the Adjoint</h3>
+<p><strong>Definition.</strong> With respect to the bilinear pairing, the <strong>transpose</strong> of a bounded operator $T$ is the
+operator $T^{\mathrm t}$ with
+$$
+\{Tf,g\}=\{f,T^{\mathrm t}g\}\qquad\text{for all }f,g ,
+$$
+when it exists. For an integral operator the transpose has the transposed kernel, while the Hilbert adjoint
+has the conjugate transposed kernel; the two coincide exactly for real kernels.</p>
+<p><strong>Theorem.</strong> Let $T_K$ be bounded with kernel $K$. Then provided the interchanges below are legitimate,
+$$
+T_K^{\mathrm t}=T_{K^{\mathrm t}},\quad K^{\mathrm t}(x,y)=K(y,x),
+\qquad
+T_K^\dagger=T_{K^*},\quad K^*(x,y)=\overline{K(y,x)} ,
+$$
+so that the transpose, the adjoint and the conjugate are related by
+$K^*=\overline{K^{\mathrm t}}$ and $T_K^\dagger=\overline{T_K^{\mathrm t}}$.</p>
+<p><strong>Proof.</strong> For the transpose,
+$$
+\{T_Kf,g\}=\iint K(x,y)f(y)g(x)\,d\mu(y)d\mu(x)
+=\int f(y)\Bigl(\int K(x,y)g(x)\,d\mu(x)\Bigr)d\mu(y)=\{f,T_{K^{\mathrm t}}g\} ,
+$$
+the middle integral being $(T_{K^{\mathrm t}}g)(y)$ with the kernel $K(y,x)$; the Hilbert case replaces $g$ by
+$\bar g$ throughout and produces $\overline{K(y,x)}$. The two differ by the conjugation on the second slot,
+which is exactly the relation $K^*=\overline{K^{\mathrm t}}$. $\blacksquare$</p>
+<h2 id="the-adjoint-of-an-integral-operator_1">The Adjoint of an Integral Operator</h2>
+<h3 id="the-kernel-of-the-adjoint">The Kernel of the Adjoint</h3>
+<p><strong>Theorem (the adjoint kernel).</strong> Let $K\in L^2(X\times X)$ and let $T_K$ be the integral operator of $K$,
+bounded on $L^2$. Then
+$$
+T_K^\dagger=T_{K^*},\qquad K^*(x,y)=\overline{K(y,x)} ,
+$$
+and $T_{K^*}$ is the integral operator of the conjugate transpose kernel, which lies in $L^2(X\times X)$ with
+the same norm, $\lVert K^*\rVert_{L^2}=\lVert K\rVert_{L^2}$.</p>
+<p><strong>Proof.</strong> By Fubini and the definition of the pairing,
+$$
+\langle T_Kf,g\rangle=\iint K(x,y)f(y)\overline{g(x)}\,d\mu(y)d\mu(x)
+=\iint f(y)\overline{\Bigl(\int\overline{K(x,y)}g(x)\,d\mu(x)\Bigr)}\,d\mu(y)
+=\langle f,T_{K^*}g\rangle ,
+$$
+and the inner integral is $(T_{K^*}g)(y)$ with $K^*(y,x)=\overline{K(x,y)}$, that is
+$K^*(x,y)=\overline{K(y,x)}$. The uniqueness of the adjoint identifies $T_K^\dagger$ with $T_{K^*}$, and the
+norm identity is the substitution $x\leftrightarrow y$. $\blacksquare$</p>
+<p><strong>Corollary (the Hermitian case).</strong> The following are equivalent: $T_K$ is self-adjoint; $K^*=K$, that is
+$K(y,x)=\overline{K(x,y)}$ for almost every $(x,y)$; and the sesquilinear form
+$(f,g)\mapsto\langle T_Kf,g\rangle$ is Hermitian, $\langle T_Kf,g\rangle=\overline{\langle T_Kg,f\rangle}$.
+In particular a real kernel is self-adjoint exactly when it is symmetric, $K(y,x)=K(x,y)$.</p>
+<p><strong>Proof.</strong> The first two are equivalent by the theorem and the uniqueness of the kernel of a Hilbert–Schmidt
+operator; the Hermitian property of the form is the polarisation of self-adjointness and is the kernel form
+of the Hermitian condition, as in the <code>* Theory</code> article. For a real kernel, $\overline{K(x,y)}=K(x,y)$, so
+$K^*=K$ is $K(y,x)=K(x,y)$. $\blacksquare$</p>
+<h3 id="the-involution-on-the-operators">The Involution on the Operators</h3>
+<p><strong>Theorem.</strong> The map $T\mapsto T^\dagger$ restricted to the integral operators is the conjugate transport of
+the kernel involution: on the class of integral operators with $L^2$ kernels,
+$$
+T_K^\dagger=T_{K^*},\qquad
+(T_KT_L)^\dagger=T_L^\dagger T_K^\dagger,\qquad
+(T_K^\dagger)^\dagger=T_K ,
+$$
+and it is an isometry of the Hilbert–Schmidt class onto itself.</p>
+<p><strong>Proof.</strong> The first identity is the theorem above; the anti-multiplicativity is the property of the adjoint
+of a bounded operator, read on the kernels through the correspondence
+$\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K\bar L$ of the <code>* Theory</code> article; the involution property
+$T^{\dagger\dagger}=T$ and the isometry are the same properties transported. $\blacksquare$</p>
+<p><strong>Example (the Volterra operator).</strong> The Volterra operator $Vf(x)=\int_0^xf(y)\,dy$ has the kernel
+$K(x,y)=\mathbf 1_{0\leq y\leq x}$, and its adjoint has the kernel
+$K^*(x,y)=\mathbf 1_{0\leq x\leq y}$, so that
+$$
+(V^\dagger f)(x)=\int_x^1f(y)\,dy .
+$$
+The operator is not self-adjoint, and $V+V^\dagger$ and $V-V^\dagger$ are its self-adjoint and skew-adjoint
+parts; the example shows that the kernel involution is the sharpening of the operator adjoint for integral
+operators.</p>
+<p><strong>Example (rank one).</strong> For $K(x,y)=\varphi(x)\overline{\psi(y)}$ the operator is
+$T_Kf=\varphi\int\bar\psi f$, and the adjoint kernel is
+$\overline{K(y,x)}=\overline{\varphi(y)}\psi(x)$, so that $T_K^\dagger g=\psi\int\bar\varphi g$; the two
+coincide with $K$ when $\varphi=\psi$ and $\lVert\varphi\rVert=1$, which recovers the orthogonal projection
+of rank one as the self-adjoint case.</p>
+<p><strong>Example (the Fourier and Hilbert operators).</strong> The Fourier operator $\mathcal F$ of <em>The Fourier Operator</em>
+is symmetric, $\mathcal F^{\mathrm t}=\mathcal F$, and unitary, so that its adjoint is its inverse,
+$\mathcal F^\dagger=\mathcal F^{-1}=\overline{\mathcal F}$; the adjoint is worked out in full in <em>The Adjoint
+of the Fourier Operator</em>, the last article of this group. The Hilbert transform $H$ of <em>The Fourier Transform
+and Conjugate Symmetry</em> has the purely imaginary multiplier $-i\operatorname{sgn}$, so it is skew-adjoint,
+$H^\dagger=-H$, and $iH$ is self-adjoint; this is the multiplier form of the kernel involution.</p>
+<h2 id="the-distributional-case">The Distributional Case</h2>
+<p><strong>Theorem (distributional adjoint).</strong> Let $T$ be a bounded operator $C_c^\infty(Y)\to\mathcal D'(X)$ with
+distribution kernel $K\in\mathcal D'(X\times Y)$, by the Schwartz kernel theorem. Then the adjoint
+$T^\dagger$ has the conjugate transpose kernel,
+$$
+K^\dagger(x,y)=\overline{K(y,x)} ,
+$$
+the conjugate being taken in the distributional sense,
+$\langle K^\dagger,\Phi\rangle=\overline{\langle K,\Phi^{\dagger}\rangle}$ for a test function $\Phi$, and
+$T$ is self-adjoint exactly when $K$ is Hermitian as a distribution.</p>
+<p><strong>Proof.</strong> The Schwartz kernel theorem of <em>The Schwartz Kernel Theorem</em>, later in this Part, provides the
+kernel; the computation of the previous sections carries over with the pairings of test functions against
+distributions, and the Hermitian condition is the distributional form of $K^*=K$, as in <em>Positive Definite
+Distributions</em>, the <code>* Theory</code> article. $\blacksquare$</p>
+<p><strong>Remark (unbounded operators).</strong> An unbounded operator has an adjoint only after its domain is fixed, and
+the adjoint may be densely defined and closed without the original being so; the distinction between a
+symmetric operator and a self-adjoint one, which coincide for bounded operators, is exactly the failure of
+the domain to match under the passage to the adjoint. This is <em>The Adjoint of a Bounded Operator</em> and the
+unbounded-operator material of <em>Analysis on Linear Spaces</em>, later in this Part; here the integral operators
+are bounded, and the subtlety does not arise.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of a bounded operator on $L^2(X,\mu)$ is characterised by
+$\langle Tf,g\rangle=\langle f,T^\dagger g\rangle$ for the Hilbert pairing $\langle f,g\rangle=\int f\bar g$;
+it is conjugate-linear, involutive, isometric and reverses products, and it is the involution of the
+<code>* Operator Theory</code> group, written with the dagger by <em>Conventions in Mathematics</em>, while the star is
+reserved for the involution of the elements. For an integral operator the adjoint is the integral operator
+with the conjugate transpose kernel, $T_K^\dagger=T_{K^*}$ with $K^*(x,y)=\overline{K(y,x)}$, and the
+transpose with respect to the bilinear pairing has the transposed kernel $K(y,x)$; the two differ by the
+conjugation, $K^*=\overline{K^{\mathrm t}}$, and agree exactly for real kernels. The operator $T_K$ is
+self-adjoint exactly when its kernel is Hermitian, $K(y,x)=\overline{K(x,y)}$, which for a real kernel is
+symmetry; examples are the Volterra operator, whose adjoint integrates from $x$ to $1$, the rank-one
+projections, the symmetric unitary Fourier operator with $\mathcal F^\dagger=\mathcal F^{-1}$ and the
+skew-adjoint Hilbert transform $H^\dagger=-H$. The distributional case follows from the Schwartz kernel
+theorem, with the same conjugate transpose kernel. The spectral theory of the self-adjoint case, and the
+distinction of symmetric from self-adjoint for unbounded operators, are owned by later articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle f,g\rangle=\int f\bar g$</td>
+<td>Hilbert pairing of $L^2(X,\mu)$</td>
+</tr>
+<tr>
+<td>$\{f,g\}=\int fg$</td>
+<td>Bilinear pairing</td>
+</tr>
+<tr>
+<td>$T^\dagger$</td>
+<td>Adjoint of the operator $T$</td>
+</tr>
+<tr>
+<td>$T^{\mathrm t}$</td>
+<td>Transpose of $T$ with respect to the bilinear pairing</td>
+</tr>
+<tr>
+<td>$K^*(x,y)=\overline{K(y,x)}$</td>
+<td>Conjugate transpose kernel</td>
+</tr>
+<tr>
+<td>$K^{\mathrm t}(x,y)=K(y,x)$</td>
+<td>Transposed kernel</td>
+</tr>
+<tr>
+<td>$T_K^\dagger=T_{K^*}$</td>
+<td>The adjoint of the integral operator</td>
+</tr>
+<tr>
+<td>self-adjoint / unitary / normal</td>
+<td>$T^\dagger=T$ / $T^\dagger T=TT^\dagger=\mathrm{id}$ / $TT^\dagger=T^\dagger T$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frigyes Riesz and Béla Szőkefalvi-Nagy, <em>Functional Analysis</em> (Ungar, 1955; reprinted Dover, 1990), for the
+  adjoint of a bounded operator and the integral operators.</li>
+<li>Paul R. Halmos, <em>Introduction to Hilbert Space and the Theory of Spectral Multiplicity</em> (Chelsea, 1951),
+  for the adjoint, its algebraic properties and the self-adjoint case.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic
+  Press, 1980), for the adjoint of bounded and unbounded operators and the domain questions.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (2nd ed., Springer, 1990), for the Hilbert-space adjoint
+  and the integral operators.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the adjoint of
+  integral operators and the distributional kernel.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Functions and Hermitian Kernels — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-functions-and-hermitian-kernels"><strong>Positive Definite Functions and Hermitian Kernels</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The involution of the algebra of functions is complex conjugation, and the structures that respect it are
+the Hermitian and positive definite ones. A kernel $K$ on a set $X$ is <strong>Hermitian</strong> if it is unchanged by
+the conjugate transpose, $K(x,y)=\overline{K(y,x)}$, and <strong>positive definite</strong> if every finite matrix
+$(K(x_i,x_j))$ it produces is positive semidefinite,
+$$
+\sum_{i,j=1}^n\overline{c_i}c_jK(x_i,x_j)\geq0
+$$
+for all choices of points and coefficients. A function $\varphi$ on a group is positive definite when the
+kernel $K(x,y)=\varphi(x-y)$ is, and the two notions are the two faces of one object: a positive definite
+function is exactly a Hermitian positive definite kernel that is translation invariant. The central theorem
+of the subject is <strong>Bochner's theorem</strong>: a continuous positive definite function on $\mathbb R^n$ is the
+Fourier transform of a unique finite positive measure, so that positive definiteness is the same condition
+as being the Fourier–Stieltjes transform of a measure, and the positive definite functions are the
+characters of the group mixed by a positive weight.</p>
+<p>This article is the first of the <code>*</code> group of <em>Foundations of Analysis</em>, and it fixes the notions for the
+five that follow: the corresponding Hilbert space of a kernel (the next article), the Hermitian part of a
+measure, the conjugate symmetry of the transform, the positive definite distributions, and the Hermitian
+kernels of integral operators. Its prerequisites are <em>Measure Theory and Integration</em> for positive measures,
+the Radon–Nikodym theorem, the decomposition of a complex measure and the properties of the integral, and
+<em>Fourier Analysis on Euclidean Spaces</em> for the transform and the multiplication formula. The Riesz
+representation theorem for positive linear functionals, which produces the measure of Bochner's theorem, is
+that of <em>Measure Theory and Integration</em>; the inner product of a Hilbert space is the one fixed by
+<em>Banach and Hilbert Spaces</em>, later in this Part, $\langle f,g\rangle=\int f\bar g$, linear in the first
+argument. The general locally compact abelian group version of Bochner's theorem, the Gelfand–Raikov theorem
+and the decomposition of the positive definite cone are the subject of <em>Harmonic Analysis on Groups</em>, in the
+neighbouring category <em>Analysis on Groups</em> of this Part, and of <em>Positive Definite Functions and the
+Gelfand–Raikov Theorem</em>; the present Article states the Euclidean theorem with proof sketch and the
+group-theoretic version as a forward reference. The reproducing kernel Hilbert space of a positive definite
+kernel is <em>Reproducing Kernel Hilbert Spaces</em>, the next article of this group. No geometry is invoked.</p>
+<h2 id="hermitian-kernels">Hermitian Kernels</h2>
+<h3 id="the-involution-on-functions-and-kernels">The Involution on Functions and Kernels</h3>
+<p><strong>Definition.</strong> On the $\mathbb C$-vector space of functions on a set $X$ the <strong>involution</strong> is complex
+conjugation, $f^{*}=\bar f$. It is conjugate-linear, involutive, $(f^{*})^{*}=f$, and multiplicative,
+$(fg)^{*}=f^{*}g^{*}$. On the space of kernels $K:X\times X\to\mathbb C$ the induced involution is
+$$
+K^{*}(x,y)=\overline{K(y,x)} ,
+$$
+which is again conjugate-linear and involutive, $(K^{*})^{*}=K$; the star on the elements is the same star,
+in the sense of <em>Conventions in Mathematics</em>: the involution of the function $\bar f$ and of the kernel on
+the diagonal coincide, $K^{*}(x,x)=\overline{K(x,x)}$, and this is why the same mark is used. Both marks
+coincide with the <strong>notational convention</strong> that the dagger is reserved for the adjoint of an operator,
+$T^\dagger$, and the star for the involution on elements.</p>
+<p><strong>Definition.</strong> A kernel $K$ is <strong>Hermitian</strong> if $K^{*}=K$, that is,
+$$
+K(x,y)=\overline{K(y,x)}\quad\text{for all }x,y\in X .
+$$
+The <strong>real part</strong> of a kernel is $K_{\mathrm h}=\frac12(K+K^{*})$; it is Hermitian, and $K$ is Hermitian
+exactly when $K=K_{\mathrm h}$, so that the Hermitian kernels are the fixed points of the involution, the
+kernel analogue of the real functions.</p>
+<h3 id="positive-definite-kernels">Positive Definite Kernels</h3>
+<p><strong>Definition.</strong> A kernel $K:X\times X\to\mathbb C$ is <strong>positive definite</strong> (in the sense of the
+kernel) if for every $n\geq1$, every $x_1,\dots,x_n\in X$ and every $c_1,\dots,c_n\in\mathbb C$,
+$$
+\sum_{i,j=1}^n\overline{c_i}c_jK(x_i,x_j)\geq0 ,
+$$
+equivalently if every finite matrix $(K(x_i,x_j))_{i,j=1}^n$ is Hermitian positive semidefinite; a
+<strong>positive definite function</strong> on a group is a function $\varphi$ for which the kernel
+$K(x,y)=\varphi(x-y)$ is positive definite.</p>
+<p><strong>Theorem (positivity implies Hermitian).</strong> Every positive definite kernel is Hermitian.</p>
+<p><strong>Proof.</strong> Take $n=2$, with points $x,y$ and coefficients $1,t$ for $t\in\mathbb C$; the condition is
+$$
+K(x,x)+\lvert t\rvert^2K(y,y)+\bar tK(x,y)+tK(y,x)\geq0
+$$
+for all $t$. The left side is a quadratic polynomial in $t,\bar t$ that is nonnegative for all $t$; varying
+the argument of $t$ forces the two linear terms to be conjugates in the sense $K(y,x)=\overline{K(x,y)}$.
+$\blacksquare$</p>
+<p><strong>Theorem (Cauchy–Schwarz for a positive definite kernel).</strong> For a positive definite kernel $K$,
+$$
+\lvert K(x,y)\rvert^2\leq K(x,x)\,K(y,y),\qquad K(x,x)\geq0 .
+$$</p>
+<p><strong>Proof.</strong> The $1\times1$ matrix is $K(x,x)\geq0$. Applying the $2\times2$ condition to
+$K$ with coefficients $\lambda,1$ and points $x,y$ gives
+$\lvert\lambda\rvert^2K(x,x)+\bar\lambda K(x,y)+\lambda K(y,x)+K(y,y)\geq0$ for all $\lambda$; the
+discriminant of this quadratic in $\lambda$ is $\lvert K(x,y)\rvert^2-K(x,x)K(y,y)$, and the
+nonnegativity forces it to be at most zero. $\blacksquare$</p>
+<p><strong>Remark.</strong> The Hermitian and positive definite conditions are the kernel form of the operator conditions of
+<em>Hermitian Kernels and the Integral Operator</em>, later in this group: a kernel is the Hermitian and positive
+definite object on the elements, and the integral operator with that kernel is the self-adjoint and positive
+operator. The dictionary is proved there.</p>
+<h2 id="positive-definite-functions">Positive Definite Functions</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> Let $G$ be an abelian group written additively. A function $\varphi:G\to\mathbb C$ is
+<strong>positive definite</strong> if
+$$
+\sum_{i,j=1}^n\overline{c_i}c_j\varphi(x_i-x_j)\geq0
+$$
+for all $n$, all $x_i\in G$ and all $c_i\in\mathbb C$; it is <strong>Hermitian</strong> if
+$\varphi(-x)=\overline{\varphi(x)}$.</p>
+<p><strong>Theorem (elementary properties).</strong> For a positive definite function $\varphi$:
+$$
+\varphi(0)\geq0,\qquad \varphi(-x)=\overline{\varphi(x)},\qquad \lvert\varphi(x)\rvert\leq\varphi(0),
+\qquad \varphi(x-x)=\overline{\varphi(x-x)} .
+$$
+If $\varphi(0)=0$ then $\varphi=0$; if $\varphi$ is not identically zero then $\varphi(0)>0$.</p>
+<p><strong>Proof.</strong> The first is the $1\times1$ case; the second is the Hermitian property of the kernel
+$K(x,y)=\varphi(x-y)$ established above, which gives
+$\varphi(x-y)=\overline{\varphi(y-x)}$ and hence $\varphi(-x)=\overline{\varphi(x)}$ at $y=0$; the third is
+the Cauchy–Schwarz inequality applied to $K(x,0)=\varphi(x)$, $K(x,x)=\varphi(0)$ and $K(0,0)=\varphi(0)$.
+$\blacksquare$</p>
+<p><strong>Theorem (the correspondence).</strong> A Hermitian function $\varphi$ on $G$ is positive definite if and only if
+the kernel $K(x,y)=\varphi(x-y)$ is positive definite; the matching is a bijection between the positive
+definite functions and the translation-invariant positive definite kernels on $G$.</p>
+<p><strong>Proof.</strong> The kernel $K(x,y)=\varphi(x-y)$ is translation invariant by construction, and its positive
+definiteness is the displayed condition for $\varphi$; conversely a translation-invariant kernel is
+determined by $\varphi(z)=K(z,0)$, and the Hermitian property of $K$ is the Hermitian property of $\varphi$.
+$\blacksquare$</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (characters and positive measures).</strong> Let $\mu$ be a finite positive measure on the character
+group $\widehat G$ of a group $G$ (on a finite abelian group, a positive measure on the finite set of
+characters). Then
+$$
+\varphi(x)=\int_{\widehat G}\chi(x)\,d\mu(\chi)
+$$
+is positive definite, because for every finite collection
+$$
+\sum_{i,j}\overline{c_i}c_j\varphi(x_i-x_j)
+=\int_{\widehat G}\Bigl\lvert\sum_ic_i\chi(x_i)\Bigr\rvert^2d\mu(\chi)\geq0 ,
+$$
+using $\chi(x_i-x_j)=\chi(x_i)\overline{\chi(x_j)}$. Every positive definite function of a finite abelian
+group is of this form, with $\mu$ a finite measure on the finite set of characters; this is the finite
+instance of Bochner's theorem.</p>
+<p><strong>Example (the Gaussian and the characteristic functions).</strong> On $\mathbb R$ the functions $e^{-\pi tx^2}$
+for $t>0$ are positive definite, with the measure $\mu$ of density $\sqrt t\,e^{-\pi t\xi^2}$ in Bochner's
+theorem below; more generally the characteristic function of any probability measure,
+$\varphi(x)=\int e^{2\pi ix\xi}d\mu(\xi)$ with $\mu\geq0$ and $\mu(\mathbb R)=1$, is positive definite. A
+function that is not Hermitian is not positive definite: the real cosine
+$\cos(2\pi\xi_0x)=\frac12(e^{2\pi i\xi_0x}+e^{-2\pi i\xi_0x})$ is positive definite, with
+$\mu=\frac12(\delta_{\xi_0}+\delta_{-\xi_0})$, while $\varphi(x)=e^{2\pi i\xi_0x}$ is Hermitian and positive
+definite because it is a character, and a function such as $\mathrm i\sin(2\pi\xi_0x)$ fails the Hermitian
+condition.</p>
+<p><strong>Example (the point mass).</strong> On a discrete group the function $\varphi=\mathbf 1_{\{0\}}$, equal to $1$ at
+the identity and $0$ elsewhere, is positive definite, with the measure $\mu$ the normalised Haar measure of
+the compact character group; on $\mathbb Z$ this is the constant measure $d\mu=d\theta$ on the circle, and
+$\varphi(n)=\int_0^1e^{2\pi in\theta}d\theta=\delta_{n0}$. This is the positive definite function of the
+regular representation, and its kernel is the identity kernel $K(x,y)=\mathbf 1_{\{x=y\}}$.</p>
+<h2 id="bochners-theorem">Bochner's Theorem</h2>
+<h3 id="statement">Statement</h3>
+<p><strong>Theorem (Bochner, Euclidean form).</strong> A continuous function $\varphi:\mathbb R^n\to\mathbb C$ is positive
+definite if and only if there is a unique finite positive measure $\mu$ on $\mathbb R^n$, with
+$\mu(\mathbb R^n)=\varphi(0)$, such that
+$$
+\varphi(x)=\int_{\mathbb R^n}e^{2\pi ix\cdot\xi}\,d\mu(\xi)\qquad\text{for all }x\in\mathbb R^n .
+$$
+The measure $\mu$ is a probability measure exactly when $\varphi(0)=1$, and it is the
+<strong>Fourier–Stieltjes transform</strong> (or spectral measure) of $\varphi$; the transform is written with the
+positive exponent $e^{+2\pi ix\cdot\xi}$, so that it is the conjugate of the transform at $x$.</p>
+<h3 id="proof-sketch">Proof Sketch</h3>
+<p><strong>Proof sketch.</strong> The easy direction is the computation of the example above: if
+$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$ with $\mu\geq0$, then
+$\sum\bar c_ic_j\varphi(x_i-x_j)=\int\lvert\sum_ic_ie^{2\pi ix_i\cdot\xi}\rvert^2d\mu(\xi)\geq0$, and the
+continuity is dominated convergence. For the converse, let $\varphi$ be continuous and positive definite,
+with $\varphi(0)\geq0$, and consider the linear functional defined on the compactly supported continuous
+functions by
+$$
+L(\psi)=\iint\varphi(x-y)\psi(x)\overline{\psi(y)}\,dx\,dy ;
+$$
+positive definiteness of $\varphi$ makes $L$ nonnegative on every $\psi=\sum c_ik_{\xi_i}$ and hence on all
+of $C_c(\mathbb R^n)$, by density, and a standard polarisation recovers $L$ from the diagonal values
+$L(\psi*\psi^{*})$. Since $\varphi$ is continuous and dominated by $\varphi(0)$, the functional $L$ is
+bounded by $\varphi(0)\lVert\psi\rVert_1^2$ and extends to a finite positive measure by the Riesz
+representation theorem of <em>Measure Theory and Integration</em> (the duality of $C_c$ and positive functionals).
+The Fourier transform of this measure is then computed from $L$ by inserting $e^{2\pi ix\cdot\cdot}$, which
+shows
+$$
+\varphi(x)=\int e^{2\pi ix\cdot\xi}\,d\mu(\xi) ;
+$$
+the uniqueness of $\mu$ is the injectivity of the Fourier–Stieltjes transform on finite measures, from the
+multiplication formula. The details of the duality argument belong to <em>Measure Theory and Integration</em> and
+to <em>Harmonic Analysis on Groups</em>, where the theorem is proved for a general locally compact abelian group.
+$\blacksquare$</p>
+<p>The proof of the converse is the only place where the Riesz representation of a positive functional on
+$C_c$ is used, and it is quoted from <em>Measure Theory and Integration</em>. The reader should note that the
+measure is produced from the functional, not observed directly; the theorem is therefore the statement that
+the positive definite cone is the image of the positive cone of measures under the transform.</p>
+<h3 id="consequences">Consequences</h3>
+<p>The theorem identifies four conditions on a continuous $\varphi$: positive definiteness, being a
+Fourier–Stieltjes transform with a positive measure, being a positive linear functional on the convolution
+algebra, and being the matrix of a positive operator on the characters. The consequences used later are the
+following.</p>
+<p><strong>Corollary (normalisation and products).</strong> For a positive definite $\varphi$ the value $\varphi(0)$ is the
+total mass $\mu(\mathbb R^n)$, and $\varphi$ is bounded with $\lvert\varphi\rvert\leq\varphi(0)$; the
+product of two positive definite functions is positive definite, with the measure the convolution of the two
+spectral measures; the conjugate $\bar\varphi$ and the reflection $x\mapsto\varphi(-x)$ are positive
+definite, with the reflected measure.</p>
+<p><strong>Proof.</strong> The mass statement is the value at $0$; the bound is above; the product is
+$\varphi\psi(x)=\iint e^{2\pi ix\cdot(\xi+\eta)}d\mu(\xi)d\nu(\eta)$, which is the transform of the
+push-forward of $\mu\otimes\nu$ under addition, a positive measure; the conjugation and reflection are the
+adjoint and the inverse of the transform on measures. $\blacksquare$</p>
+<p><strong>Corollary (Bochner on a group, forward reference).</strong> The same equivalence holds on a locally compact
+abelian group, with the character group in place of $\mathbb R^n$ and the Haar measure in place of Lebesgue
+measure, and it is the <strong>Bochner theorem on groups</strong>; the discrete group $\mathbb Z$, the circle, and the
+finite abelian groups are the instances with the known transforms. The statement and proof are in
+<em>Harmonic Analysis on Groups</em>, in <em>Analysis on Groups</em>, the neighbouring category of this Part; the
+Gelfand–Raikov theorem, the refinement in which a positive definite function separates the points of the
+group, is <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>.</p>
+<h2 id="the-gns-construction-and-the-bridge-to-hilbert-space">The GNS Construction and the Bridge to Hilbert Space</h2>
+<h3 id="the-kolmogorov-decomposition">The Kolmogorov Decomposition</h3>
+<p><strong>Theorem (the GNS decomposition of a positive definite kernel).</strong> Let $K$ be a positive definite kernel on
+a set $X$. Then there are a Hilbert space $H$ and a map $x\mapsto k_x$ of $X$ into $H$ with
+$$
+K(x,y)=\langle k_y,k_x\rangle
+$$
+for all $x,y$, and the $k_x$ span a dense subspace; the pair $(H,k_\bullet)$ is unique up to unitary
+equivalence fixing every $k_x$. Conversely, for every map $k_\bullet:X\to H$ the kernel
+$K(x,y)=\langle k_y,k_x\rangle$ is positive definite.</p>
+<p><strong>Proof.</strong> On the vector space of finite sums $\sum_ic_ik_{x_i}$ define
+$$
+\Bigl\langle\sum_ic_ik_{x_i},\sum_jd_jk_{x_j}\Bigr\rangle
+=\sum_{i,j}c_i\overline{d_j}K(x_j,x_i) ;
+$$
+the positive definiteness of $K$ makes this a positive semidefinite Hermitian form, the Schwarz inequality
+makes the null vectors a subspace, and the quotient completed in the induced norm is a Hilbert space $H$ in
+which the classes of the $k_x$ satisfy $\langle k_y,k_x\rangle=K(x,y)$. The span is dense by construction,
+and the uniqueness is that of a dense span in its completion. The converse is the computation of the
+previous section. $\blacksquare$</p>
+<p>The vectors $k_x$ are the <strong>Kolmogorov vectors</strong> of the kernel, and the construction is the
+<strong>Kolmogorov decomposition</strong>; when the kernel is the reproducing kernel of a space of functions it produces
+that space, which is the subject of <em>Reproducing Kernel Hilbert Spaces</em>, the next article of this group.</p>
+<h3 id="the-positive-definite-cone">The Positive Definite Cone</h3>
+<p><strong>Theorem.</strong> The positive definite kernels on a fixed set $X$ form a convex cone closed under pointwise
+limits: sums with nonnegative coefficients, products, and pointwise limits of positive definite kernels are
+positive definite.</p>
+<p><strong>Proof.</strong> Sums and nonnegative coefficients are immediate from the defining inequality; the product
+corresponds to the tensor product of the Kolmogorov spaces and the Hadamard product of Gram matrices, which
+is positive semidefinite by the Schur product theorem; the pointwise limit is the limit of nonnegative
+numbers. $\blacksquare$</p>
+<h2 id="summary">Summary</h2>
+<p>The involution $\bar f$ on functions induces the involution $K^{*}(x,y)=\overline{K(y,x)}$ on kernels; a
+kernel is Hermitian when $K^{*}=K$ and positive definite when every finite matrix $(K(x_i,x_j))$ is
+positive semidefinite, a condition that forces Hermitian and gives
+$\lvert K(x,y)\rvert^2\leq K(x,x)K(y,y)$. A function $\varphi$ on a group is positive definite when the
+translation-invariant kernel $K(x,y)=\varphi(x-y)$ is, and then $\varphi(0)\geq0$,
+$\varphi(-x)=\overline{\varphi(x)}$ and $\lvert\varphi(x)\rvert\leq\varphi(0)$. Bochner's theorem states
+that a continuous positive definite function on $\mathbb R^n$ is exactly the Fourier–Stieltjes transform
+$\varphi(x)=\int e^{2\pi ix\cdot\xi}d\mu(\xi)$ of a unique finite positive measure of total mass
+$\varphi(0)$, and the general locally compact abelian case, together with the Gelfand–Raikov theorem, is
+that of <em>Harmonic Analysis on Groups</em> and of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>.
+Every positive definite kernel is the Gram kernel of a family of vectors in a Hilbert space, the Kolmogorov
+decomposition, $K(x,y)=\langle k_y,k_x\rangle$; and the positive definite kernels form a cone closed under
+sums, products and limits. The Hilbert space so produced, when the kernel is a reproducing one, is the
+subject of the next article of this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f^{*}$, $K^{*}$</td>
+<td>Involution, $\bar f$; $K^{*}(x,y)=\overline{K(y,x)}$</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$K(x,y)=\overline{K(y,x)}$, the fixed points of the involution</td>
+</tr>
+<tr>
+<td>positive definite</td>
+<td>$\sum_{i,j}\overline{c_i}c_jK(x_i,x_j)\geq0$ for all finite data</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>Positive definite function, kernel $\varphi(x-y)$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>The spectral measure of Bochner's theorem, $\mu(\mathbb R^n)=\varphi(0)$</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>Character of the group</td>
+</tr>
+<tr>
+<td>$k_x$, $\langle k_y,k_x\rangle=K(x,y)$</td>
+<td>Kolmogorov vectors and decomposition</td>
+</tr>
+<tr>
+<td>$K_{\mathrm h}$</td>
+<td>Hermitian part $\frac12(K+K^{*})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Salomon Bochner, <em>Lectures on Fourier Integrals</em> (Princeton University Press, 1959), for Bochner's
+  theorem in its original setting.</li>
+<li>Walter Rudin, <em>Fourier Analysis on Groups</em> (Interscience, 1962), for the positive definite functions, the
+  Fourier–Stieltjes transform and the group form of Bochner's theorem.</li>
+<li>Saburou Saitoh, <em>Theory of Reproducing Kernels and its Applications</em> (Longman, 1988), for the
+  Kolmogorov decomposition and the correspondence with Hilbert spaces of functions.</li>
+<li>Zoltán Sasvári, <em>Positive Definite and Definitizable Functions</em> (Akademie Verlag, 1994), for the positive
+  definite cone and its integral representations.</li>
+<li>Christian Berg, Jens Peter Reus Christensen and Paul Ressel, <em>Harmonic Analysis on Semigroups</em> (Springer,
+  1984), for positive definite functions and kernels on semigroups and their applications.</li>
+<li>Nachman Aronszajn, <em>Theory of Reproducing Kernels</em> (Transactions of the American Mathematical Society 68,
+  1950), for the correspondence between positive definite kernels and Hilbert spaces of functions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

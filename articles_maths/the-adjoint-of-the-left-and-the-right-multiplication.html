@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left and the Right Multiplication — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-and-the-right-multiplication"><strong>The Adjoint of the Left and the Right Multiplication</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint of the left multiplication of a Hilbert algebra is the left multiplication by the involution, $L_x^{*} = L_{x^{\dagger}}$, and the adjoint of the right multiplication is the right multiplication by the involution, $R_x^{*} = R_{x^{\dagger}}$. Both identities are the adjoint axiom in operator form, and together they say that the two regular representations are $\ast$-representations up to the passage from left to right. The content of the article is the explicit form of these adjoints and the way the modular conjugation ties them together.</p>
+<p>The modular conjugation enters because the two representations are exchanged by it. On the standard form the <strong>modular conjugation</strong> $J$ is an antiunitary involution with $J\mathcal{M}J = \mathcal{M}'$, and through it the adjoint operation on the left multiplications becomes the right multiplication by the involution, $\jmath L_x \jmath = R_{x^{\dagger}}$: the exchange of left and right and the reversal of the involution are the same operation. This is the operator-theoretic reading of the adjoint axiom and the reason the modular conjugation is described as the map that turns the algebra into its commutant: adjunction and commutation are two names for the same reversal.</p>
+<p>This article fixes the adjoints of the one-sided multiplications, their explicit form, and the modular conjugation as the operator implementing the exchange.</p>
+<p>The adjoint axiom and the involution are <em>Hermitian Adjoints on a Hilbert Algebra</em> and <em>Hilbert Algebras</em>; the completion is <em>The Completion of a Hilbert Algebra</em>; the two representations are <em>The Left and the Right Regular Representation</em>; the modular conjugation is <em>The Modular Operator and Tomita-Takesaki Theory</em>; the standard form is <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>. Those are cited. The algebra is $A$, the completion $H$, the modular conjugation $\jmath$.</p>
+<h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
+<p><strong>Theorem.</strong> For every $x\in A$ the extended left multiplication satisfies</p>
+<p>$$
+\bar L_x^{*} = \bar L_{x^{\dagger}} \qquad \text{on } H .
+$$</p>
+<p>So the adjoint of the left multiplication by $x$ is the left multiplication by the involution of $x$, and the map $x\mapsto\bar L_x$ is a $\ast$-representation with the involution on the algebra and the Hilbert adjoint on the operators.</p>
+<p><strong>Proof.</strong> On $A$ the identity is the adjoint axiom, $\langle L_xy,z\rangle = \langle y,L_{x^{\dagger}}z\rangle$; both sides are bounded and agree on the dense set $A$, hence extend to the same operator on $H$.</p>
+<p><strong>Proposition (the action on the cyclic vector).</strong> With $\xi = \iota(1)$ the adjoint is determined at $\xi$: $\bar L_x^{*}\xi = \iota(x^{\dagger})$, whereas $\bar L_x\xi = \iota(x)$. So the adjoint moves the cyclic vector to the involution, which is the reason the involution is not a bounded map of $H$ in general.</p>
+<p><strong>Proof.</strong> $\bar L_{x^{\dagger}}\xi = \iota(x^{\dagger})$ and $\bar L_x\xi = \iota(x)$; the difference between the two orbits is the closure of the involution.</p>
+<p><strong>Proposition (positivity of the adjoint pairing).</strong> For every $x$ one has $\langle\bar L_x\bar L_x^{*}u,u\rangle = \|\bar L_x^{*}u\|^{2}\geq0$; so the operators $\bar L_x\bar L_x^{*}$ and $\bar L_x^{*}\bar L_x$ are positive, and the left multiplications form a $\ast$-closed family of operators whose positive parts are the ones of <em>Self-Adjoint Elements and the Positive Cone</em>.</p>
+<p><strong>Proof.</strong> The displayed identity is the definition of the Hilbert adjoint and the positivity of the norm.</p>
+<h2 id="the-adjoint-of-the-right-multiplication">The Adjoint of the Right Multiplication</h2>
+<p><strong>Theorem.</strong> For every $x\in A$ the extended right multiplication satisfies</p>
+<p>$$
+\bar R_x^{*} = \bar R_{x^{\dagger}} \qquad \text{on } H .
+$$</p>
+<p><strong>Proof.</strong> The same computation read from the other side: $\langle R_xy,z\rangle = \langle yx,z\rangle = \langle y,zx^{\dagger}\rangle$ by the adjoint axiom applied with the roles of the two arguments exchanged, which is $\langle y,R_{x^{\dagger}}z\rangle$.</p>
+<p><strong>Proposition (the adjoint is an antirepresentation).</strong> The map $x\mapsto\bar R_x$ is an anti-$\ast$-representation: $\bar R_{xy} = \bar R_y\bar R_x$ and $\bar R_{x^{\dagger}} = \bar R_x^{*}$, so the adjoint operation reverses the order of the representation and of the product in the same way.</p>
+<p><strong>Proof.</strong> $R_{xy}z = zxy = R_yR_xz$ and the adjoint identity is the theorem.</p>
+<p><strong>Remark (left and right adjoints are different operators).</strong> The adjoint of the left multiplication is a left multiplication and the adjoint of the right multiplication is a right multiplication: adjunction respects the side. The exchange between the sides is not adjunction but conjugation by the modular operator, taken up next.</p>
+<h2 id="the-modular-conjugation-and-the-exchange">The Modular Conjugation and the Exchange</h2>
+<p><strong>Theorem (the exchange).</strong> Let $\jmath$ be the modular conjugation of the completion. Then</p>
+<p>$$
+\jmath\,\bar L_x\,\jmath = \bar R_{x^{\dagger}} , \qquad \jmath\,\bar R_x\,\jmath = \bar L_{x^{\dagger}} ,
+$$</p>
+<p>and consequently $\jmath\bar L_x^{*}\jmath = \bar R_x$: the modular conjugation turns the adjoint of a left multiplication into the right multiplication by the same element.</p>
+<p><strong>Proof.</strong> The modular conjugation satisfies $\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$ and reverses products, by <em>The Modular Operator and Tomita-Takesaki Theory</em>; on the left multiplications this gives $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$ as in <em>The Left and the Right Regular Representation</em>; applying the involution gives the second identity, and combining with the adjoint formula gives the third.</p>
+<p><strong>Corollary (adjunction is the exchange of side).</strong> For every $x$ the operator $\jmath\bar L_x^{*}\jmath$ is $\bar R_x$; so the Hilbert adjoint followed by the modular conjugation is the passage from the left representation to the right representation, and the two operations together generate the symmetry between an algebra and its commutant.</p>
+<p><strong>Proof.</strong> Substitute $\bar L_x^{*} = \bar L_{x^{\dagger}}$ into the theorem.</p>
+<p><strong>Remark (three operations, one symmetry).</strong> The involution reverses products; the Hilbert adjoint reverses the arrow; the modular conjugation exchanges the algebra with its commutant. On the left multiplications the three compose into the single symmetry between the left and the right regular representations, and this is why the modular conjugation is the natural home of the adjoint operation in a standard form.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>For $A = \mathbb{C}[G]$ the adjoint of the left multiplication by $g$ is the left multiplication by $g^{-1}$, and the modular conjugation exchanges the left and the right regular representations, $\jmath L_g\jmath = R_{g^{-1}}$.</p>
+<h3 id="matrices">Matrices</h3>
+<p>For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, and the modular conjugation $J(u) = u^{*}$, the conjugate transpose, satisfies $JL_aJ = R_{a^{*}}$, which is the passage from the left-action copy of $M_n(\mathbb{C})$ to the right-action copy.</p>
+<h3 id="the-tracial-case">The Tracial Case</h3>
+<p>When the form is tracial the modular conjugation is the operator $x\xi\mapsto x^{*}\xi$ extended, and the exchange theorem reads $JL_xJ = R_{x^{\dagger}}$ with $J$ simultaneously the modular conjugation and the involution: the two operations coincide and the symmetry is transparent.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the <strong>left multiplication</strong> is the left multiplication by the involution, $\bar L_x^{*} = \bar L_{x^{\dagger}}$, and the adjoint of the <strong>right multiplication</strong> is the right multiplication by the involution, $\bar R_x^{*} = \bar R_{x^{\dagger}}$; both are the adjoint axiom in operator form, they show that the involution is simultaneously the adjoint operation and the product reversal $\bar R_{xy} = \bar R_y\bar R_x$, and they keep adjunction on the same side. The <strong>modular conjugation</strong> $\jmath$ implements the exchange between the sides, $\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$, whence $\jmath\bar L_x^{*}\jmath = \bar R_x$: adjunction followed by conjugation is the passage from the left to the right representation, and the involution, the adjoint and the conjugation are three descriptions of one symmetry between an algebra and its commutant. The involution and the adjoint axiom are <em>Hermitian Adjoints on a Hilbert Algebra</em>, the representations are <em>The Left and the Right Regular Representation</em>, and the conjugation is <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar L_x^{*} = \bar L_{x^{\dagger}}$</td>
+<td>Adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$\bar R_x^{*} = \bar R_{x^{\dagger}}$</td>
+<td>Adjoint of the right multiplication</td>
+</tr>
+<tr>
+<td>$\bar L_x^{*}\xi = \iota(x^{\dagger})$</td>
+<td>The adjoint on the cyclic vector</td>
+</tr>
+<tr>
+<td>$\bar L_x\bar L_x^{*}\geq0$</td>
+<td>Positivity of the adjoint products</td>
+</tr>
+<tr>
+<td>$\jmath\bar L_x\jmath = \bar R_{x^{\dagger}}$</td>
+<td>The exchange by the modular conjugation</td>
+</tr>
+<tr>
+<td>$\jmath\bar L_x^{*}\jmath = \bar R_x$</td>
+<td>Adjunction plus conjugation = passage to the right</td>
+</tr>
+<tr>
+<td>$\jmath\mathcal{M}\jmath = \mathcal{M}^{c}$</td>
+<td>The commutant statement behind the exchange</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the adjoints of the regular representations.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the left and right representations and their adjoints.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the modular conjugation and the standard form.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the exchange between the two regular representations.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the standard form as a left–right symmetry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

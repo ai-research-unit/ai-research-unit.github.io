@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Commuting Algebra of an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-commuting-algebra-of-an-involution"><strong>The Commuting Algebra of an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involutive automorphism $\alpha$ of a group $G$ has a fixed subgroup $G^{\alpha}$, and it also has a larger set of elements with which it is compatible in a weaker sense: those whose inner automorphism commutes with $\alpha$. That set is a subgroup, it contains the fixed subgroup and the centre, and it is exactly the set of elements whose conjugacy defect under $\alpha$ is central. It is the group-level form of the centraliser of the involution, and it is what this article calls the commuting algebra of the involution; the name is justified at the end, where the group algebra is mentioned, and the group itself is the object throughout. The article is the fourth of the involutive <code>*</code>-articles; the fixed subgroup is owned by <em>Involutions and the Fixed-Point Subgroup</em>, the semidirect product by <em>Involutive Groups</em>, §9, and the inner automorphism group by <em>The Conjugation Representation</em>.</p>
+<p>Throughout, $(G,\sigma)$ is an involutive group, $\alpha=\sigma\iota$ is the associated involutive automorphism, $\iota$ is the inversion, $c_g$ is the inner automorphism $x\mapsto gxg^{-1}$, and the action of a subgroup on the fixed subgroup follows <em>Involutive Group Actions</em>.</p>
+<h2 id="the-commuting-subgroup">The Commuting Subgroup</h2>
+<p><strong>Definition.</strong> An element $g\in G$ <strong>commutes with the involutive automorphism</strong> $\alpha$ if the inner automorphism $c_g$ commutes with $\alpha$ as a map, $c_g\alpha=\alpha c_g$. The <strong>commuting set</strong> is</p>
+<p>$$
+C_G(\alpha)=\{g\in G : c_g\alpha=\alpha c_g\}.
+$$</p>
+<p><strong>Proposition (the commuting condition is centrality of the defect).</strong> For $g\in G$,</p>
+<p>$$
+c_g\alpha=\alpha c_g \quad\Longleftrightarrow\quad g\,\alpha(g)^{-1}\in Z(G) \quad\Longleftrightarrow\quad \alpha(g)\,g^{-1}\in Z(G).
+$$</p>
+<p><strong>Proof.</strong> Writing the composition out, $c_g\alpha(x)=g\alpha(x)g^{-1}$ and $\alpha c_g(x)=\alpha(gxg^{-1})=\alpha(g)\alpha(x)\alpha(g)^{-1}$ for all $x$; the two are equal for all $x$ exactly when $g^{-1}\alpha(g)$ centralises $\alpha(G)=G$, that is $g^{-1}\alpha(g)\in Z(G)$. The second form is the inverse of the first.</p>
+<p><strong>Theorem (the commuting set is a subgroup).</strong> $C_G(\alpha)$ is a subgroup of $G$ containing $Z(G)$ and $G^{\alpha}$.</p>
+<p><strong>Proof.</strong> The identity commutes with $\alpha$. If $g\in C_G(\alpha)$ then $\alpha(g^{-1})=\alpha(g)^{-1}=(z g)^{-1}=g^{-1}z^{-1}$ for some $z\in Z(G)$, so $g^{-1}\alpha(g^{-1})^{-1}=g^{-1}\alpha(g)=g^{-1}zg\in Z(G)$, and $g^{-1}\in C_G(\alpha)$. If $g,h\in C_G(\alpha)$, write $\alpha(g)=z_1g$ and $\alpha(h)=z_2h$ with $z_1,z_2\in Z(G)$; then $\alpha(gh)=z_1z_2\,gh$, so $(gh)\alpha(gh)^{-1}=(z_1z_2)^{-1}\in Z(G)$ and $gh\in C_G(\alpha)$. The centre is contained because a central $g$ has $c_g=\mathrm{id}$, which commutes with everything; the fixed subgroup is contained because $\alpha(g)=g$ gives $g\alpha(g)^{-1}=e$.</p>
+<p><strong>Proposition (the form of $\alpha$ on the commuting subgroup).</strong> The restriction $\alpha|_{C_G(\alpha)}$ multiplies by a central element: the map</p>
+<p>$$
+z : C_G(\alpha)\longrightarrow Z(G), \qquad z(g)=\alpha(g)\,g^{-1},
+$$</p>
+<p>is a homomorphism whose kernel is the fixed subgroup $G^{\alpha}$, and $\alpha(g)=z(g)g$ for every $g\in C_G(\alpha)$.</p>
+<p><strong>Proof.</strong> The containment in $Z(G)$ is the proposition above. The multiplicativity follows from the central value: $z(gh)=\alpha(gh)(gh)^{-1}=\alpha(g)\alpha(h)h^{-1}g^{-1}=\alpha(g)z(h)g^{-1}=z(h)\alpha(g)g^{-1}=z(h)z(g)$, using that $z(h)$ is central. The kernel is $\{g:\alpha(g)g^{-1}=e\}=\{g:\alpha(g)=g\}=G^{\alpha}$.</p>
+<p><strong>Corollary (the exact sequence).</strong> The homomorphism $z$ realises the commuting subgroup as an extension of the fixed subgroup by a subgroup of the centre, and the image of $G\to\operatorname{Inn}(G)$ on $C_G(\alpha)$ is exactly the centraliser $C_{\operatorname{Inn}(G)}(\alpha)$ of $\alpha$ in the inner automorphism group. Consequently</p>
+<p>$$
+C_G(\alpha)/Z(G)\ \cong\ C_{\operatorname{Inn}(G)}(\alpha),
+\qquad\text{and}\qquad C_G(\alpha)/G^{\alpha}\ \cong\ \operatorname{im}z\ \leq Z(G).
+$$</p>
+<p><strong>Proof.</strong> The first isomorphism is that the kernel of $G\to\operatorname{Inn}(G)$ is $Z(G)$ and the image on $C_G(\alpha)$ is the set of inner automorphisms commuting with $\alpha$. The second is the first isomorphism theorem applied to $z$.</p>
+<h2 id="relation-to-the-fixed-subgroup">Relation to the Fixed Subgroup</h2>
+<p><strong>Proposition (the containment and its failure to be an equality).</strong> $G^{\alpha}\subseteq C_G(\alpha)$, and the inclusion is in general strict. It is an equality exactly when every element commuting with $\alpha$ is fixed by it, that is when $\alpha$ has no central defect on $C_G(\alpha)$.</p>
+<p><strong>Proof.</strong> The containment is the theorem. For the strictness, in the dihedral group $D_4=\langle r,s\mid r^{4}=s^{2}=e,\ srs=r^{-1}\rangle$ take $\alpha=c_s$, the conjugation by the reflection $s$; then $G^{\alpha}=C_{D_4}(s)=\{e,r^{2},s,sr^{2}\}$ has four elements, while $r\notin G^{\alpha}$ yet $r\alpha(r)^{-1}=r\cdot r=r^{2}\in Z(D_4)=\{e,r^{2}\}$, so $r\in C_G(\alpha)$ and the containment is strict.</p>
+<p><strong>Proposition (the commuting subgroup of the identity and of the inversion).</strong> If $\alpha=\mathrm{id}$ then $C_G(\alpha)=G$; if $\alpha=\iota$ then $C_G(\alpha)=\{g:g^{2}\in Z(G)\}$, the elements whose square is central.</p>
+<p><strong>Proof.</strong> For the identity the defect is $g\alpha(g)^{-1}=e$ for every $g$. For the inversion, $\alpha(g)g^{-1}=g^{-1}g^{-1}=g^{-2}$, which is central exactly when $g^{2}$ is central.</p>
+<p><strong>Corollary (two degenerate cases).</strong> On an abelian group the commuting subgroup of the inversion is the whole group; on a group of exponent two the commuting subgroup of every involutive automorphism is the whole group.</p>
+<p><strong>Proof.</strong> On an abelian group every square is central, so the criterion of the proposition holds for every element. On a group of exponent two every element satisfies $g^{2}=e$, hence $g=g^{-1}$, and for an involutive automorphism $\alpha$ one has $\alpha(g)=g^{-1}=g$; the defect $g\alpha(g)^{-1}$ is $e$ for every $g$, so $C_G(\alpha)=G$.</p>
+<h2 id="the-commuting-subgroup-and-the-semidirect-product">The Commuting Subgroup and the Semidirect Product</h2>
+<p>Let $t$ be the element of order two acting on $G$ by $\alpha$ in the semidirect product $G\rtimes\langle t\rangle$ of <em>Involutive Groups</em>, §9, so that $tgt^{-1}=\alpha(g)$.</p>
+<p><strong>Proposition (the commutation with $t$).</strong> For $g\in G$ the commutator with $t$ is $[g,t]=g\alpha(g)^{-1}$, and</p>
+<p>$$
+C_G(\alpha)=\{g\in G : [g,t]\in Z(G)\}.
+$$</p>
+<p><strong>Proof.</strong> $[g,t]=gtg^{-1}t^{-1}=g\,\alpha(g)^{-1}\,t t^{-1}=g\alpha(g)^{-1}$, using $t^{-1}=t$ and $tg^{-1}t^{-1}=\alpha(g^{-1})=\alpha(g)^{-1}$. The description of $C_G(\alpha)$ is then the proposition above.</p>
+<p><strong>Proposition (the centraliser of $t$).</strong> In $G\rtimes\langle t\rangle$ the centraliser of $t$ meets $G$ in $G^{\alpha}$: $C_{G\rtimes\langle t\rangle}(t)\cap G=G^{\alpha}$. Hence the elements commuting with $\alpha$ are the elements whose commutator with $t$ is central, and the elements fixed by $\alpha$ are the elements commuting with $t$.</p>
+<p><strong>Proof.</strong> $g t=t g$ is $tgt^{-1}=g$, that is $\alpha(g)=g$; so $C_{G\rtimes\langle t\rangle}(t)\cap G=G^{\alpha}$. The second statement restates the description of $C_G(\alpha)$.</p>
+<p><strong>Corollary (the commuting subgroup as a preimage).</strong> $C_G(\alpha)$ is the largest subgroup $H$ of $G$ containing $Z(G)$ with $[H,t]\subseteq Z(G)$; it is the full preimage under $G\to G/Z(G)$ of the centraliser of the coset $tZ(G)$ in $(G\rtimes\langle t\rangle)/Z(G)$.</p>
+<p><strong>Proof.</strong> The first statement is the definition read through the commutator description and the closure proved in the theorem. The second is the exact sequence, since the image of $G$ in $(G\rtimes\langle t\rangle)/Z(G)$ centralises the coset of $t$ exactly when $[g,t]\in Z(G)$.</p>
+<h2 id="the-name-and-the-group-algebra">The Name and the Group Algebra</h2>
+<p><strong>Remark (why "algebra").</strong> In the group $G$ the object defined here is a subgroup, and the word "algebra" in the title refers to its linearisation. The involutive automorphism $\alpha$ extends linearly to an automorphism of the group algebra $k[G]$, the fixed set $k[G]^{\alpha}=\{a:\alpha(a)=a\}$ is a subalgebra of $k[G]$, and the commuting subgroup is the preimage of the centraliser of $\alpha$ in the inner automorphism group computed in the previous section. The full treatment of $k[G]$, of the fixed subalgebra and of the skew group algebra belongs to <em>Group Algebras</em> and to the representation theory of later parts; nothing of it is used here.</p>
+<p><strong>Remark (the term for the working reader).</strong> The name "commuting algebra" is used here with the reading fixed by the scope of the article: the elements of the group commuting with the involutive automorphism in the sense that their inner automorphisms commute with it. A sibling reading of the same name, the fixed subalgebra of the group algebra, is the second object of this section and is cited, not developed.</p>
+<h2 id="summary">Summary</h2>
+<p>For an involutive automorphism $\alpha$ of $G$ the <strong>commuting set</strong> $C_G(\alpha)=\{g\in G : c_g\alpha=\alpha c_g\}$ consists of the elements whose <strong>conjugate defect</strong> $g\alpha(g)^{-1}$ is central, and it is a subgroup containing $Z(G)$ and the fixed subgroup $G^{\alpha}$. On it, $\alpha$ multiplies by the central element $z(g)=\alpha(g)g^{-1}$, the map $z$ is a homomorphism $C_G(\alpha)\to Z(G)$ with kernel $G^{\alpha}$, and</p>
+<p>$$
+C_G(\alpha)/Z(G)\cong C_{\operatorname{Inn}(G)}(\alpha), \qquad C_G(\alpha)/G^{\alpha}\cong\operatorname{im}z\leq Z(G).
+$$</p>
+<p>The fixed subgroup is contained and the containment is strict in general, the dihedral group $D_4$ with the conjugation by a reflection giving $G^{\alpha}$ of order four inside $C_G(\alpha)=G$ of order eight. For $\alpha=\mathrm{id}$ the commuting set is all of $G$, and for $\alpha=\iota$ it is the set of elements whose square is central.</p>
+<p>In the semidirect product $G\rtimes\langle t\rangle$ with $t$ acting by $\alpha$, the commutator is $[g,t]=g\alpha(g)^{-1}$, so $C_G(\alpha)=\{g:[g,t]\in Z(G)\}$, the centraliser of $t$ meets $G$ in $G^{\alpha}$, and $C_G(\alpha)$ is the full preimage of the centraliser of the coset of $t$ in the quotient by the centre. The name "commuting algebra" refers to the linearisation: $\alpha$ extends to the group algebra $k[G]$, whose fixed subalgebra is cited to <em>Group Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c_g\alpha=\alpha c_g$</td>
+<td>$g$ commutes with the involutive automorphism</td>
+</tr>
+<tr>
+<td>$C_G(\alpha)$</td>
+<td>commuting subgroup, the commuting algebra of $\alpha$</td>
+</tr>
+<tr>
+<td>$g\alpha(g)^{-1}\in Z(G)$</td>
+<td>centrality of the conjugate defect</td>
+</tr>
+<tr>
+<td>$z(g)=\alpha(g)g^{-1}$</td>
+<td>homomorphism $C_G(\alpha)\to Z(G)$, kernel $G^{\alpha}$</td>
+</tr>
+<tr>
+<td>$C_G(\alpha)/Z(G)\cong C_{\operatorname{Inn}(G)}(\alpha)$</td>
+<td>the exact sequence</td>
+</tr>
+<tr>
+<td>$[g,t]=g\alpha(g)^{-1}$</td>
+<td>commutator in the semidirect product</td>
+</tr>
+<tr>
+<td>$k[G]^{\alpha}$</td>
+<td>fixed subalgebra of the group algebra, the linearisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for centralisers, commutators and semidirect products.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for inner automorphism groups and the calculation of centralisers in the small groups.</li>
+<li>I. Martin Isaacs, <em>Finite Group Theory</em> (American Mathematical Society, Graduate Studies in Mathematics 92, 2008), for centralisers of automorphisms and their extensions.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebra, its fixed subalgebra under an automorphism and the skew group algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

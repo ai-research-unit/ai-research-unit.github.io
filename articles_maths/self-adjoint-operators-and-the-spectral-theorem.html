@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint Operators and the Spectral Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-operators-and-the-spectral-theorem"><strong>Self-Adjoint Operators and the Spectral Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A bounded self-adjoint operator is one equal to its own adjoint. The equality is a symmetry that forces the whole spectral theory: the spectrum is real, the operator has a spectral measure, and every bounded Borel function of the operator is defined and is again an operator of the same algebra. The <strong>spectral theorem</strong> is the precise form of this statement, $T=\int\lambda\,dE(\lambda)$, and the <strong>functional calculus</strong> $f\mapsto f(T)$ is its most useful corollary, since it converts a statement about a single operator into a statement about a commutative algebra of operators. This article develops the self-adjoint operator, the spectral measure, the theorem and the calculus, and it presents the two structural consequences that classify the operator: the Cayley transform, which converts self-adjointness into unitarity, and the multiplication model, in which the operator acts as a multiplication by the independent variable.</p>
+<p>The bounded operator theory is <em>Bounded Operators on a Hilbert Space</em>; the spectral theorem in its measure-theoretic form and the compact case are stated and proved in <em>Banach and Hilbert Spaces</em>, and the multiplication model of the theorem is developed in <em>The Spectral Operator</em>. The algebraic and order-theoretic study of the self-adjoint family is <em>Self-Adjoint Operators</em>; the unitary case with its own measure on the circle is <em>Unitary Operators and the Spectral Measure</em>; the positivity and the square root are <em>Positive Operators and the Square Root</em>; the unbounded case is <em>Unbounded Operators and Spectral Measures</em>. The measure and integration used are <em>Measure Theory and Integration</em>, and the $L^2$ theory is <em>Banach and Hilbert Spaces</em>.</p>
+<p>Throughout, $H$ is a complex (or real) Hilbert space with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, $T\in B(H)$ is bounded, $T^*$ is its adjoint, $\sigma(T)$ is its spectrum and $E$ is a spectral measure on the Borel subsets of $\sigma(T)$.</p>
+<h2 id="self-adjoint-operators">Self-Adjoint Operators</h2>
+<p><strong>Definition.</strong> $T$ is <strong>self-adjoint</strong> if $T^*=T$; it is <strong>positive</strong> if $T=T^*$ and $\langle Tx,x\rangle\ge0$ for all $x$; the self-adjoint operators form a real vector space and are ordered by $S\le T$ iff $T-S$ is positive.</p>
+<p><strong>Theorem (reality of the spectrum and the norm formula).</strong> For a self-adjoint $T$ the spectrum is real, $\sigma(T)\subseteq\mathbb{R}$, and</p>
+<p>$$
+\|T\|=\sup_{\|x\|=1}|\langle Tx,x\rangle|=\max_{\lambda\in\sigma(T)}|\lambda| .
+$$</p>
+<p><em>Proof.</em> The numerical range of a self-adjoint operator lies in $\mathbb{R}$ and its closure contains the spectrum, so the spectrum is real. For the norm formula, the bound $\|T\|\ge\sup|\langle Tx,x\rangle|$ is Cauchy–Schwarz; the reverse inequality follows by polarising $|\langle T(x+y),x+y\rangle|$ and using that the diagonal is real, which gives $\|Tx\|\le\sup_{\|x\|=1}|\langle Tx,x\rangle|\|x\|$; the identification with $\max|\lambda|$ is the spectral theorem below.</p>
+<p><strong>Proposition (real and imaginary parts; the Cayley transform).</strong> Every bounded operator is $T=A+iB$ with $A,B$ self-adjoint and this decomposition is unique; the <strong>Cayley transform</strong></p>
+<p>$$
+C(T)=(T-iI)(T+iI)^{-1}
+$$</p>
+<p>is a unitary of $H$ whose spectrum does not contain $1$, and the assignment $T\mapsto C(T)$ is a bijection from the bounded self-adjoint operators onto the unitaries $U$ with $1\notin\sigma(U)$, with inverse $U\mapsto i(I+U)(I-U)^{-1}$.</p>
+<p><em>Proof.</em> Since $T\pm iI$ is invertible for self-adjoint $T$ by the reality of the spectrum, the transform is defined; $C(T)^*C(T)=(T+iI)^{-1}(T-iI)(T+iI)(T-iI)^{-1}=I$ by the commutativity of the resolvent factors, so $C(T)$ is unitary, and the inverse formula inverts the Möbius transformation; the bijection is the two-sided verification of the compositions.</p>
+<p><strong>Proposition (the order).</strong> The positive operators are exactly the self-adjoint operators with $\sigma(T)\subseteq[0,\infty)$; the order is compatible with addition and with the unit and is an order on the self-adjoint family: every bounded set has a least upper bound, $0\le T\le I$ exactly when $T$ is a contraction that is positive, and $T^*T\ge0$ with $\|T^*T\|=\|T\|^2$ for every $T$.</p>
+<p><em>Proof.</em> The spectral criterion for positivity is the spectral theorem; the lattice statement is the spectral theorem applied to the spectral families of two commuting self-adjoint operators; the remaining identities are the $C^*$-identity and the reality of the diagonal.</p>
+<h2 id="the-spectral-measure-and-the-spectral-theorem">The Spectral Measure and the Spectral Theorem</h2>
+<p><strong>Definition.</strong> A <strong>spectral measure</strong> on $H$ is a map $E$ from the Borel subsets of a compact set $\Sigma\subseteq\mathbb{C}$ to projections with</p>
+<p>$$
+E(\varnothing)=0,\quad E(\Sigma)=I,\quad E(S\cap S')=E(S)E(S'),\quad E\Bigl(\bigcup_nS_n\Bigr)=\sum_nE(S_n)
+$$</p>
+<p>for the disjoint countable unions, the sum converging in the strong operator topology.</p>
+<p><strong>Theorem (the spectral theorem, self-adjoint case).</strong> Let $T$ be a bounded self-adjoint operator. Then there is a spectral measure $E$ on the Borel subsets of the compact set $\sigma(T)\subseteq\mathbb{R}$ with</p>
+<p>$$
+T=\int_{\sigma(T)}\lambda\,dE(\lambda),
+$$</p>
+<p>and for every bounded Borel function $f$ on $\sigma(T)$ the operator</p>
+<p>$$
+f(T)=\int_{\sigma(T)}f(\lambda)\,dE(\lambda)
+$$</p>
+<p>is bounded with $\|f(T)\|=\sup_{\lambda\in\sigma(T)}|f(\lambda)|$; the map $f\mapsto f(T)$ is a $\mathbb{K}$-algebra homomorphism sending $1$ to $I$, the identity function to $T$, and $\bar f$ to $f(T)^*$.</p>
+<p><em>Proof.</em> The spectral measure is constructed from the continuous functional calculus: polynomials in $T$ are computed on the spectrum, the Stone–Weierstrass theorem extends the calculus to the continuous functions, and the Riesz representation theorem converts the positive linear functionals $f\mapsto\langle f(T)x,x\rangle$ into measures; the strong-operator additivity and the multiplicativity are then the countable additivity and the multiplicativity of the integral. The norm identity is the isometry of the $*$-homomorphism of the bounded Borel functions.</p>
+<p><strong>Theorem (the spectral theorem, normal case).</strong> A bounded operator $T$ on a complex Hilbert space is normal, $T^*T=TT^*$, if and only if there is a spectral measure $E$ on the Borel subsets of $\sigma(T)\subseteq\mathbb{C}$ with $T=\int\lambda\,dE(\lambda)$; equivalently, $T$ is unitarily equivalent to a multiplication by the independent variable on a direct sum of spaces $L^2(\sigma(T),\mu_j)$.</p>
+<p><em>Proof.</em> The self-adjoint case applied to the commuting operators $\operatorname{Re}T$ and $\operatorname{Im}T$ produces their joint spectral measure, which is a measure in the plane supported on the joint spectrum; normality is the commutativity needed for the two real parts to be simultaneously diagonalised, and the multiplication model is the spectral theorem of <em>The Spectral Operator</em>.</p>
+<h2 id="the-functional-calculus">The Functional Calculus</h2>
+<p><strong>Proposition (the calculus).</strong> The map $f\mapsto f(T)$ from the bounded Borel functions on $\sigma(T)$ is a $*$-homomorphism onto the von Neumann algebra generated by $T$, it is isometric for the uniform norm, it is weak-operator continuous on bounded sets, and its kernel is the ideal of functions vanishing on the support of $E$.</p>
+<p><em>Proof.</em> Each statement is the corresponding statement for the integral against a spectral measure: multiplicativity is the multiplicativity of the integral, the $*$-property is the reality of $E$, the isometry is the norm formula, and the kernel is the vanishing of the measure on the support.</p>
+<p><strong>Corollary (the calculus acts by spectral projection).</strong> For a Borel set $S$ the operator $E(S)$ is the characteristic function of $T$, $E(S)=\mathbf{1}_S(T)$; conversely the spectral measure is recovered from the calculus, and the projections in the von Neumann algebra generated by $T$ are exactly the $E(S)$.</p>
+<p><em>Proof.</em> The characteristic function of $S$ integrated against $E$ is $E(S)$ by the definition of the integral, and the converse is the inversion formula for the measure.</p>
+<p><strong>Corollary (the spectral mapping theorem).</strong> For a continuous function $f$ one has $\sigma(f(T))=f(\sigma(T))$, and the eigenvalues of $T$ are the atoms of $E$, with the eigenspace at $\lambda$ the range of the projection $E(\{\lambda\})$.</p>
+<p><em>Proof.</em> $f(T)-\mu I=(f-\mu)(T)$ is invertible exactly when $f-\mu$ does not vanish on the spectrum; the eigenvalue statement is the atomic part of the spectral measure.</p>
+<h2 id="the-multiplication-model-and-multiplicity">The Multiplication Model and Multiplicity</h2>
+<p><strong>Theorem (the model).</strong> A bounded self-adjoint operator $T$ on a separable Hilbert space is unitarily equivalent to the multiplication by the independent variable on $L^2(\sigma(T),\mu)$ when it has a cyclic vector; in general it is unitarily equivalent to $M_\lambda$ on a direct sum $\bigoplus_nL^2(\sigma(T),\mu_n)$, and the measure class together with the multiplicity function is a complete unitary invariant.</p>
+<p><em>Proof.</em> This is the spectral operator of <em>The Spectral Operator</em>; the cyclic vector produces the transform that sends $T^nx_0$ to $\lambda^n$, and the general case decomposes the space into cyclic subspaces.</p>
+<p><strong>Proposition (support and point spectrum).</strong> The spectral measure of $T$ is supported on $\sigma(T)$, and its atoms are exactly the eigenvalues: $E(\{\lambda\})\neq0$ iff $\lambda$ is an eigenvalue, in which case the range of $E(\{\lambda\})$ is the eigenspace. The continuous part of $E$ corresponds to the continuous spectrum, and $T$ has no eigenvectors exactly when $E$ is non-atomic.</p>
+<p><em>Proof.</em> The complement of the support is the set on which $E$ vanishes, and there $T-\lambda I$ is invertible; an atom at $\lambda$ gives a nonzero projection whose range consists of eigenvectors, and conversely an eigenvector lies in the range of the corresponding atom.</p>
+<p><strong>Example (compact and finite-rank).</strong> For a compact self-adjoint operator the spectral measure is purely atomic, supported on $\{0\}\cup\{\lambda_n\}$ with $\lambda_n\to0$, and the spectral theorem is the orthonormal eigenbasis expansion of <em>Compact Operators</em>. For a finite-rank self-adjoint operator the measure is a finite atomic measure and the theorem is the orthogonal diagonalisation of a Hermitian matrix.</p>
+<p><strong>Example (multiplication operators).</strong> For $H=L^2(X,\mu)$ and a real $g\in L^\infty(X,\mu)$ the operator $M_g f=gf$ is self-adjoint, its spectral measure is $E(S)=M_{\mathbf{1}_{g^{-1}(S)}}$, and the spectral theorem is the identity $M_g=\int\lambda\,dE(\lambda)$; the model theorem in the other direction is exactly this computation.</p>
+<h2 id="summary">Summary</h2>
+<p>A bounded self-adjoint operator has real spectrum, satisfies $\|T\|=\sup_{\|x\|=1}|\langle Tx,x\rangle|=\max|\sigma(T)|$, is positive exactly when its spectrum lies in $[0,\infty)$, and is related to the unitaries by the Cayley transform $C(T)=(T-iI)(T+iI)^{-1}$. The spectral theorem represents it as $T=\int\lambda\,dE(\lambda)$ against a spectral measure on its real spectrum, and the functional calculus $f(T)=\int f\,dE$ is an isometric $*$-homomorphism from the bounded Borel functions onto the von Neumann algebra generated by $T$, sending $\mathbf{1}_S$ to $E(S)$, satisfying the spectral mapping theorem, and having as its kernel the functions vanishing on the support of $E$. A bounded operator on a complex Hilbert space is normal exactly when it has such a representation with a measure in the plane, equivalently when it is a multiplication by the independent variable on a direct sum of $L^2$ spaces; the measure class and the multiplicity form a complete unitary invariant, and the atoms of the measure are precisely the eigenvalues. The compact and finite-rank cases are the purely atomic specialisations, and the order structure and the algebraic properties of the self-adjoint family are <em>Self-Adjoint Operators</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T=T^*$</td>
+<td>self-adjointness, spectrum real</td>
+</tr>
+<tr>
+<td>$\|T\|=\sup_{\|x\|=1}|\langle Tx,x\rangle|$</td>
+<td>the norm formula</td>
+</tr>
+<tr>
+<td>$C(T)=(T-iI)(T+iI)^{-1}$</td>
+<td>the Cayley transform, a unitary avoiding $1$</td>
+</tr>
+<tr>
+<td>$E(S)$</td>
+<td>spectral measure, projection-valued</td>
+</tr>
+<tr>
+<td>$T=\int\lambda\,dE(\lambda)$</td>
+<td>the spectral theorem</td>
+</tr>
+<tr>
+<td>$f(T)=\int f\,dE$</td>
+<td>the functional calculus</td>
+</tr>
+<tr>
+<td>$\|f(T)\|=\sup|f|$</td>
+<td>isometry of the calculus</td>
+</tr>
+<tr>
+<td>$\sigma(f(T))=f(\sigma(T))$</td>
+<td>spectral mapping</td>
+</tr>
+<tr>
+<td>$E(\{\lambda\})$</td>
+<td>eigenspace projection at an eigenvalue</td>
+</tr>
+<tr>
+<td>$\bigoplus_nL^2(\sigma(T),\mu_n)$</td>
+<td>multiplication model with multiplicity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for the spectral theorem and the functional calculus.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the spectral measure, the Cayley transform and the multiplicity theory.</li>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw-Hill, 2nd ed. 1991), for the spectral theorem in its operator form and the Riesz representation theorem.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the spectral theorem as multiplication and the spectral mapping theorem.</li>
+<li>Paul R. Halmos, <em>Introduction to Hilbert Space</em> (Chelsea, 2nd ed. 1957), for the self-adjoint operator and its spectral measure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

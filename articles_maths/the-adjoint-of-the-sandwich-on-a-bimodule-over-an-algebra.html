@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Sandwich on a Bimodule over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-sandwich-on-a-bimodule-over-an-algebra"><strong>The Adjoint of the Sandwich on a Bimodule over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two-sided operator of a bimodule is the sandwich $S_{a,b}(x)=axb$, a left multiplication followed by a right one. This article computes its adjoint. The answer is that the adjoint acts on the parameters by the involution: $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. The involution of the algebra and the involution of the module's endomorphism ring are therefore the same operation seen in two coordinates, and the self-adjoint and unitary sandwiches are read off immediately.</p>
+<p>The article is the first of the <code>* Operator Theory</code> group of this category. It assumes the bimodule and sandwich of <em>The Signed Sandwich on a Bimodule over an Algebra</em> (in its unsigned, ungraded form), the one-sided multiplications of <em>Left and Right Multiplication of a Module</em>, the pairing and adjoint of <em>The Adjoint of a Module Homomorphism</em>, and the involution on the endomorphism ring of <em>The Involution on the Endomorphism Ring of a Module</em>. The signed version of the same computation, in which the grade involution is inserted in the middle, is <em>The Signed Adjoint Sandwich on a Bimodule over an Algebra</em>. The article stays inside Part I: no distance, norm, form with a norm, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is an involutive $R$-algebra, ${}_A M_A$ is an $(A,A)$-bimodule carrying a non-degenerate reflexive $\sigma$-sesquilinear pairing $\langle\cdot,\cdot\rangle$, $L_a$ and $R_b$ are the one-sided multiplications, and $S_{a,b}=L_aR_b=R_bL_a$.</p>
+<h2 id="the-bimodule-pairing">The Bimodule Pairing</h2>
+<h3 id="the-balanced-sesquilinear-pairing">The balanced sesquilinear pairing</h3>
+<p>For the adjoints of both one-sided multiplications to exist, the pairing must be compatible with both actions.</p>
+<p><strong>Definition.</strong> A <strong>balanced $\sigma$-sesquilinear pairing</strong> on the bimodule ${}_A M_A$ is a $\sigma$-sesquilinear pairing that is additionally compatible with the right action:</p>
+<p>$$
+\langle am,n\rangle=\langle m,\sigma(a)n\rangle, \qquad \langle mb,n\rangle=\langle m,n\sigma(b)\rangle \qquad (a,b \in A,\ m,n \in M).
+$$</p>
+<p>The two identities are equivalent when the pairing is non-degenerate and reflexive; the first says the pairing is balanced on the left, the second on the right.</p>
+<p>The compatibility is the bimodule form of the sesquilinear identity of <em>The Adjoint of a Module Homomorphism</em>: a pairing on a bimodule that only sees the left action would have no reason to be compatible with the right one, and the balanced condition is exactly what makes the sandwich adjoint computable.</p>
+<h3 id="the-adjoints-of-the-one-sided-multiplications">The adjoints of the one-sided multiplications</h3>
+<p><strong>Proposition.</strong> For all $a,b \in A$, when the adjoints exist,</p>
+<p>$$
+(L_a)^{*}=L_{\sigma(a)}, \qquad (R_b)^{*}=R_{\sigma(b)} .
+$$</p>
+<p><em>Proof.</em> The first is the computation of <em>The Adjoint of a Module Homomorphism</em>. For the second, $\langle R_b(m),n\rangle=\langle mb,n\rangle=\langle m,n\sigma(b)\rangle=\langle m,R_{\sigma(b)}(n)\rangle$, so $R_{\sigma(b)}$ represents the functional and is the adjoint by uniqueness. $\square$</p>
+<p>Both one-sided multiplications therefore have adjoints obtained by applying the involution to the parameter, and this is the key to the sandwich.</p>
+<h2 id="the-adjoint-of-the-sandwich">The Adjoint of the Sandwich</h2>
+<h3 id="the-main-computation">The main computation</h3>
+<p><strong>Theorem.</strong> For all $a,b \in A$,</p>
+<p>$$
+(S_{a,b})^{*}=S_{\sigma(a),\,\sigma(b)} .
+$$</p>
+<p><em>Proof.</em> Since $S_{a,b}=L_aR_b$ and the adjoint is anti-multiplicative, $(S_{a,b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}=S_{\sigma(a),\sigma(b)}$. $\square$</p>
+<p>The parameters are transformed by $\sigma$ in place; equivalently, $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$ says that the diagram</p>
+<p>$$
+(a,b) \xrightarrow{\ (\sigma,\sigma)\ } (\sigma(a),\sigma(b)), \qquad S_{a,b} \xrightarrow{\ {}^{*}\ } S_{\sigma(a),\sigma(b)}
+$$</p>
+<p>commutes: applying the pair $(\sigma,\sigma)$ to the parameters and applying the operator involution to the sandwich are the same operation. This is the precise sense in which the involution of the bimodule is compatible with the involution of the algebra.</p>
+<h3 id="self-adjoint-and-skew-adjoint-sandwiches">Self-adjoint and skew-adjoint sandwiches</h3>
+<p><strong>Corollary.</strong> Suppose the sandwich map $(a,b)\mapsto S_{a,b}$ is injective. Then</p>
+<p>$$
+(S_{a,b})^{*}=S_{a,b} \iff \sigma(a)=a,\ \sigma(b)=b, \qquad (S_{a,b})^{*}=-S_{a,b} \iff \sigma(a)=-a,\ \sigma(b)=-b .
+$$</p>
+<p>Thus the self-adjoint sandwiches are exactly those with both parameters symmetric, and the skew-adjoint sandwiches those with both parameters antisymmetric.</p>
+<p><em>Proof.</em> $S_{\sigma(a),\sigma(b)}=S_{a,b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $S_{a,b}$ is linear in each parameter. $\square$</p>
+<h3 id="unitary-sandwiches">Unitary sandwiches</h3>
+<p><strong>Theorem.</strong> If $a$ and $b$ are unitary elements of $A$, then $S_{a,b}$ is unitary:</p>
+<p>$$
+\sigma(a)a=a\sigma(a)=1 \text{ and } \sigma(b)b=b\sigma(b)=1 \implies (S_{a,b})^{*}S_{a,b}=S_{a,b}(S_{a,b})^{*}=\mathrm{id} .
+$$</p>
+<p>Conversely, for the regular bimodule with the regular pairing and an injective sandwich map, a unitary sandwich has unitary parameters.</p>
+<p><em>Proof.</em> By the composition law $S_{x,y}S_{u,v}=S_{xu,vy}$ of the sandwich,</p>
+<p>$$
+(S_{a,b})^{*}S_{a,b}=S_{\sigma(a)a,\,b\sigma(b)}, \qquad S_{a,b}(S_{a,b})^{*}=S_{a\sigma(a),\,\sigma(b)b},
+$$</p>
+<p>and these are $\mathrm{id}=S_{1,1}$ when $a,b$ are unitary. The converse is the same equalities read backwards. $\square$</p>
+<p>The unitary sandwiches are the two-sided operators that preserve the pairing, in agreement with the isometry characterisation of <em>The Involution on the Endomorphism Ring of a Module</em>; the condition on the parameters is that each be unitary in the algebra, and the two sides of the sandwich are independent.</p>
+<h2 id="kernel-image-and-the-paired-complement">Kernel, Image and the Paired Complement</h2>
+<p><strong>Corollary.</strong> For all $a,b$, when the pairing is perfect,</p>
+<p>$$
+\ker (S_{a,b})^{*}=(\operatorname{im}S_{a,b})^{\mathrm{c}}, \qquad \operatorname{im}(S_{a,b})^{*}={}^{\mathrm{c}}(\ker S_{a,b}),
+$$</p>
+<p>and the adjoint preserves the lengths of the kernel, the image and the cokernel.</p>
+<p><em>Proof.</em> These are the general kernel and image identities of <em>The Adjoint of a Module Homomorphism</em>, applied to $S_{a,b}$. $\square$</p>
+<p>The complement of the image of a sandwich is the set of $n$ killed by all $axb$, that is $(\operatorname{im}S_{a,b})^{\mathrm{c}}=\{n : \langle aMb,n\rangle=0\}$.</p>
+<h2 id="the-sandwich-involution-and-the-parameter-involution">The Sandwich Involution and the Parameter Involution</h2>
+<h3 id="the-involution-on-the-two-sided-operators">The involution on the two-sided operators</h3>
+<p><strong>Proposition.</strong> Let $T$ be the $R$-submodule of $E=\operatorname{End}_A(M)$ spanned by the sandwiches $S_{a,b}$. Then $T$ is stable under the involution ${}^{*}$ of $E$, and the induced map on $T$ is the map $S_{a,b}\mapsto S_{\sigma(a),\sigma(b)}$.</p>
+<p><em>Proof.</em> The adjoint of a sum is the sum of the adjoints, and the adjoint of a sandwich is again a sandwich by the theorem; hence $T$ is stable. $\square$</p>
+<p>So the sandwich span is not merely a submodule of $E$ but an <strong>involutive subalgebra</strong> when it is closed under products: it contains the identity and the involution. In the case of the regular bimodule it is all of $E$, and the involution it carries is $\sigma$.</p>
+<h3 id="compatibility-with-the-representation">Compatibility with the representation</h3>
+<p><strong>Proposition.</strong> The map $A\otimes_R A^{\mathrm{op}}\to E$, $a\otimes b\mapsto S_{a,b}$ of <em>Left and Right Multiplication of a Module</em>, is compatible with the involutions: the involution $\sigma\otimes\sigma$ on the source and the involution ${}^{*}$ on the target satisfy</p>
+<p>$$
+(a\otimes b)^{*} \longmapsto (S_{a,b})^{*}=S_{\sigma(a),\sigma(b)} .
+$$</p>
+<p><em>Proof.</em> Immediate from the theorem and the definition of the map. $\square$</p>
+<p>Consequently the image of the algebra of two-sided operators is an involutive quotient of $A\otimes_RA^{\mathrm{op}}$ with the involution $\sigma\otimes\sigma$; the kernel of the map is an involutive ideal.</p>
+<h2 id="degenerate-cases">Degenerate Cases</h2>
+<h3 id="a-pairing-that-is-not-balanced">A pairing that is not balanced</h3>
+<p><strong>Proposition.</strong> If the pairing is compatible with the left action but not with the right, then $(L_a)^{*}=L_{\sigma(a)}$ but $R_b$ need not have an adjoint of the form $R_{\sigma(b)}$; the formula $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$ may fail, and the adjoint of $S_{a,b}$, when it exists, is an operator that is not a sandwich.</p>
+<p><em>Proof.</em> The right-adjoint computation used the balanced identity $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$; without it the functional $n\mapsto\langle mb,n\rangle$ need not be represented by a right multiplication. $\square$</p>
+<h3 id="a-non-faithful-module">A non-faithful module</h3>
+<p><strong>Proposition.</strong> If the sandwich map is not injective — for instance when the bimodule is not faithful and $S_{a,b}=S_{a',b'}$ for distinct parameters — then the self-adjointness and unitarity criteria are criteria on the operators, not on the parameters: the parameters of a self-adjoint sandwich are determined only up to the kernel of the sandwich map.</p>
+<p><em>Proof.</em> $S_{a,b}$ depends only on the image of $(a,b)$ in the quotient by the kernel, and the adjoint depends only on the operator, so the criteria lift to the quotient. $\square$</p>
+<h3 id="the-degenerate-pairing-of-the-trivial-module">The degenerate pairing of the trivial module</h3>
+<p><strong>Proposition.</strong> If $M=0$ then every sandwich is $0$, the pairing is vacuous, and the involution on $E=0$ is the identity: the construction degenerates and every statement above is void.</p>
+<p><em>Proof.</em> Immediate. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The regular bimodule.</strong> For $M={}_A A_A$ with the balanced pairing $\langle m,n\rangle=\sigma(m)n$, the adjoint of $S_{a,b}$ is $S_{\sigma(a),\sigma(b)}$; the sandwich span is all of $E\cong A^{\mathrm{op}}$ when $A$ is a division ring, and the involution is $\sigma$.</p>
+<p><strong>(b) Matrix algebras.</strong> For $A=M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $M=A$ the regular bimodule, $S_{A,B}(X)=AXB$ and $(S_{A,B})^{*}=S_{A^{*},B^{*}}$ with $A^{*}=\overline{A}^{\mathsf{T}}$; self-adjoint sandwiches are those with $A,B$ hermitian.</p>
+<p><strong>(c) The group algebra of a finite group.</strong> For $A=R[G]$ with $\sigma(g)=g^{-1}$ extended $R$-linearly, the sandwich by group elements is $S_{g,h}(x)=gxh^{-1}$; the adjoint is $S_{g^{-1},h}$: the inverse in the group plays the role of $\sigma$ on the parameters.</p>
+<p><strong>(d) A pairing that is not balanced.</strong> For $M=A$ with the pairing $\langle m,n\rangle=\tau(m)n$ for a linear functional $\tau$ that is not $\sigma$-stable, the right action is not adjointable by right multiplication and the theorem fails.</p>
+<h2 id="summary">Summary</h2>
+<p>On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the sandwich is $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. The sandwich parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the sandwiches is an involutive submodule of $E$, and the map $A\otimes_RA^{\mathrm{op}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint sandwiches are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary sandwiches are the isometries; they are exactly the sandwiches with unitary parameters when the sandwich map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(S_{a,b})^{*}=(\operatorname{im}S_{a,b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is <em>The Signed Adjoint Sandwich on a Bimodule over an Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $(A,\sigma)$</td>
+<td>base ring, involutive $R$-algebra</td>
+</tr>
+<tr>
+<td>${}_A M_A$</td>
+<td>$(A,A)$-bimodule with balanced σ-sesquilinear pairing</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>the pairing, $\langle am,n\rangle=\langle m,\sigma(a)n\rangle$ and $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplications</td>
+</tr>
+<tr>
+<td>$S_{a,b}=L_aR_b$</td>
+<td>the sandwich, $S_{a,b}(x)=axb$</td>
+</tr>
+<tr>
+<td>$S_{x,y}S_{u,v}=S_{xu,vy}$</td>
+<td>composition of sandwiches</td>
+</tr>
+<tr>
+<td>$(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$</td>
+<td>the adjoint of the sandwich</td>
+</tr>
+<tr>
+<td>$\operatorname{im}(S_{a,b})^{\mathrm{c}}$</td>
+<td>paired complement of the image</td>
+</tr>
+<tr>
+<td>$A\otimes_RA^{\mathrm{op}}\to E$</td>
+<td>the sandwich representation, compatible with $\sigma\otimes\sigma$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for bimodules, sesquilinear forms and adjoints.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for bimodules and the adjoint of a two-sided multiplication.</li>
+<li>Israel N. Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for involutions and the balanced forms they act on.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for hermitian forms over a bimodule and the operators they adjoint.</li>
+<li>T. Y. Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for two-sided multiplications, their kernels and their adjoints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

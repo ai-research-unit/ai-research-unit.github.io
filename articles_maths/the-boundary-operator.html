@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Boundary Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-boundary-operator"><strong>The Boundary Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A chain complex is a graded module together with an operator that lowers the degree by one and squares to zero, and the homology of the complex is the graded module of the cycles modulo the boundaries. The operator is the <strong>boundary operator</strong> $\partial$, and the whole of the homology theory of this Part is the study of it: the singular complex of a space, the simplicial complex of a triangulation and the cellular complex of a CW complex are all complexes in this sense, and their homologies are all the homology of the same operator applied to different graded modules. This article isolates the operator. It states the square-zero property and the homology it defines, reads the functoriality of the construction as the statement that the chain maps are exactly the operators intertwining the boundaries, derives the connecting homomorphism of a short exact sequence as the operator built from $\partial$ by the snake lemma, identifies the coboundary $\delta$ as the adjoint of $\partial$ under the evaluation pairing, and records the two derivation laws by which $\partial$ acts on the cap product and $\delta$ on the cup product.</p>
+<p>The article is the operator layer of <em>Simplicial and Singular Homology</em>, which constructs the singular and the simplicial complexes and proves that their boundary operators square to zero; the explicit boundary formulas, the face relations and the computations are there and are not repeated. The construction of the connecting homomorphism, the snake lemma and the algebra of modules entering and leaving an exact sequence are those of <em>Exact Sequences</em>; the general theory of chain complexes over a ring, of resolutions, of derived functors and of the spectral sequence of a filtered complex is the planned <em>Homological Algebra</em> of Part I, written in parallel, and is cited only for the statements it supplies. The cup and cap products and the pairing between cohomology and homology are those of <em>Cup and Cap Products</em> and <em>Cohomology and the Universal Coefficient Theorem</em>; the transfer and the suspension, which are further operators built on the same complex, are the subjects of <em>The Transfer Map</em> and <em>The Suspension Operator</em> of this category.</p>
+<p>Nothing analytic and nothing geometric is used. The article is the algebra of a single square-zero operator on a graded module; the topological complexes are named as the instances that give the operator its content, and no distance, no norm, no limit and no measure occurs. The classes of this article are not to be confused with the boundary operator of a triangulation read concretely, which is the sibling article <em>The Boundary Operator of a Simplicial Complex</em>, nor with the differential of a spectral sequence, which is a family of boundary operators on the pages of a filtration and belongs to <em>The Leray–Serre Spectral Sequence</em>.</p>
+<h2 id="the-operator-and-its-square-zero">The Operator and Its Square Zero</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over a ring $R$ is a family $C_* = (C_n)_{n \in \mathbb{Z}}$ of $R$-modules; a <strong>boundary operator</strong> on it is a family of $R$-linear maps $\partial_n : C_n \to C_{n-1}$ with</p>
+<p>$$
+\partial_{n-1} \circ \partial_n = 0
+$$</p>
+<p>for every $n$. The pair $(C_*,\partial)$ is a <strong>chain complex</strong>; an element of $C_n$ is an $n$-<strong>chain</strong>, a chain $c$ with $\partial c = 0$ is a <strong>cycle</strong>, and a chain of the form $\partial c'$ is a <strong>boundary</strong>.</p>
+<p>Since $\partial$ lowers the degree, the two subspaces of $C_n$ with which the theory works are</p>
+<p>$$
+Z_n = \ker \partial_n, \qquad B_n = \operatorname{im}\partial_{n+1},
+$$</p>
+<p>the cycles and the boundaries; the square-zero property is exactly the inclusion $B_n \subseteq Z_n$, so the quotient makes sense.</p>
+<p><strong>Definition.</strong> The <strong>homology</strong> of the complex is the graded module</p>
+<p>$$
+H_n(C_*,\partial) = Z_n / B_n = \frac{\ker \partial_n}{\operatorname{im}\partial_{n+1}} .
+$$</p>
+<p>A complex is <strong>acyclic</strong>, or a <strong>resolution</strong>, when $H_n = 0$ for $n \neq 0$; it is <strong>exact in degree $n$</strong> when $H_n = 0$.</p>
+<p>The homology measures the failure of the operator to be as injective and as surjective as a boundary operator of acyclic provenance would be: it vanishes exactly when the complex is exact, and it is the obstruction to splitting the complex into its own cycles.</p>
+<h3 id="the-augmentation-and-the-reduced-complex">The Augmentation and the Reduced Complex</h3>
+<p><strong>Definition.</strong> An <strong>augmentation</strong> of a complex of non-negative degree is an $R$-linear map $\varepsilon : C_0 \to R$ with $\varepsilon \partial_1 = 0$; the <strong>reduced complex</strong> is obtained by replacing $C_0$ by $\ker\varepsilon$ and restricting $\partial_1$, and its homology is the <strong>reduced homology</strong> $\tilde H_*$.</p>
+<p>The augmentation is a map of complexes to the complex concentrated in degree zero, so it is an operator of the same kind as $\partial$, and the reduced complex is the kernel of that operator. The singular complex of a non-empty space carries the augmentation $\varepsilon(\sigma) = 1$ and the reduced complex of <em>Simplicial and Singular Homology</em> is this construction.</p>
+<h3 id="the-coboundary-as-the-dual-operator">The Coboundary as the Dual Operator</h3>
+<p><strong>Definition.</strong> Let $C^* = (C^n)$ be a graded module and let $\delta^n : C^n \to C^{n+1}$ be $R$-linear with $\delta^{n+1}\delta^n = 0$; then $(C^*,\delta)$ is a <strong>cochain complex</strong>, its elements in degree $n$ are <strong>cochains</strong>, and its <strong>cohomology</strong> is</p>
+<p>$$
+H^n(C^*,\delta) = \frac{\ker\delta^n}{\operatorname{im}\delta^{n-1}} .
+$$</p>
+<p>The operator $\delta$ is the <strong>coboundary</strong>.</p>
+<p>A cochain complex is the same thing as a chain complex with the grading reversed: writing $D_n = C^{-n}$ and $\partial_n = \delta^{-n}$ turns $\delta\delta = 0$ into $\partial\partial=0$. The two are distinguished only by the convention that homology is written with lower indices and cohomology with upper indices, and by the functorial variance: a chain map preserves the degree, while a cochain map does too, and it is the source and target that determine in which direction an induced map runs.</p>
+<h2 id="chain-maps-and-the-functoriality">Chain Maps and the Functoriality</h2>
+<h3 id="the-operators-intertwining-the-boundary">The Operators Intertwining the Boundary</h3>
+<p><strong>Definition.</strong> A <strong>chain map</strong> $f : (C_*,\partial) \to (D_*,\partial)$ is a family of $R$-linear maps $f_n : C_n \to D_n$ with $f_{n-1}\partial_n = \partial_n f_n$, that is an operator commuting with the boundary. A <strong>chain homotopy</strong> between two chain maps $f$ and $g$ is a family $P_n : C_n \to D_{n+1}$ with</p>
+<p>$$
+\partial_{n+1} P_n + P_{n-1}\partial_n = g_n - f_n .
+$$</p>
+<p><strong>Theorem.</strong> A chain map carries cycles to cycles and boundaries to boundaries, and hence induces $H_n(f) : H_n(C_*) \to H_n(D_*)$; the assignments $(C_*,\partial) \mapsto H_n(C_*,\partial)$, $f \mapsto H_n(f)$ are functorial. Chain-homotopic maps induce the same map on homology.</p>
+<p><em>Proof.</em> If $\partial c = 0$ then $\partial(fc) = f\partial c = 0$, so $fc$ is a cycle; if $c = \partial c'$ then $fc = f\partial c' = \partial f c'$, so $fc$ is a boundary. The induced map is therefore well defined on classes; $(g \circ f)_n = g_n \circ f_n$ and $(\mathrm{id})_n = \mathrm{id}$ give functoriality. For the last statement, the displayed identity applied to a cycle $c$ gives $g c - f c = \partial P c$, a boundary, so the two classes agree. $\square$</p>
+<p>The theorem is the exact content of the phrase that homology is a functor on the homotopy category of complexes: the objects are the complexes, the morphisms are the chain maps modulo chain homotopy, and the functor is homology.</p>
+<p><strong>Proposition (the boundary is determined by its values on generators).</strong> If a graded module is free with a basis and $\partial$ is defined on the basis with $\partial^2 = 0$, then $\partial$ extends uniquely to an $R$-linear boundary operator, and the homology is computed from the matrix of $\partial$ in the basis. In particular a boundary operator on a finitely generated free complex is a matrix operator, and its rank and nullity are the data from which the homology is read.</p>
+<p><em>Proof.</em> The extension is the universal property of a free module, and the square-zero condition is checked on the basis because both sides are $R$-linear. The matrix description and the rank-nullity computation of $H_n = \ker\partial_n/\operatorname{im}\partial_{n+1}$ are then linear algebra. $\square$</p>
+<p>This is the operator under which the concrete computations of <em>The Boundary Operator of a Simplicial Complex</em> are performed, and the incidence matrices of a triangulation are its matrix expression.</p>
+<h3 id="the-euler-characteristic-and-the-lefschetz-number">The Euler Characteristic and the Lefschetz Number</h3>
+<p><strong>Definition.</strong> For a finite complex of finitely generated free modules over a field, the <strong>Euler characteristic</strong> is</p>
+<p>$$
+\chi = \sum_{n} (-1)^n \dim_R H_n = \sum_{n} (-1)^n \dim_R C_n ,
+$$</p>
+<p>the second expression being the alternating sum of the ranks of the chain modules.</p>
+<p>The equality of the two expressions is the statement that the alternating sum of the dimensions is additive along an exact sequence, applied to the short exact sequences $0 \to Z_n \to C_n \to B_{n-1}\to 0$ and $0 \to B_n \to Z_n \to H_n \to 0$; it is the operator-level form of the Euler–Poincaré formula and the prototype of the Lefschetz fixed-point formula, in which a chain map that commutes with $\partial$ replaces the zero operator and the traces of its restrictions replace the dimensions.</p>
+<h2 id="the-boundary-of-an-exact-sequence">The Boundary of an Exact Sequence</h2>
+<h3 id="the-connecting-homomorphism">The Connecting Homomorphism</h3>
+<p><strong>Theorem.</strong> Let $0 \to A_* \xrightarrow{i} B_* \xrightarrow{j} C_* \to 0$ be a short exact sequence of chain complexes and chain maps. Then there is a boundary operator</p>
+<p>$$
+\Delta : H_n(C_*) \longrightarrow H_{n-1}(A_*),
+$$</p>
+<p>the <strong>connecting homomorphism</strong>, natural in maps of short exact sequences, and the resulting triangle</p>
+<p>$$
+H_n(A_*) \xrightarrow{\ i_*\ } H_n(B_*) \xrightarrow{\ j_*\ } H_n(C_*) \xrightarrow{\ \Delta\ } H_{n-1}(A_*) \xrightarrow{\ i_*\ } H_{n-1}(B_*) \to \cdots
+$$</p>
+<p>is exact. The map $\Delta$ satisfies $\Delta j_* = 0$ and $i_* \Delta = 0$, and it is the composite of the inverse of $j$ on a lift, an application of $\partial$, and the inverse of $i$ — the <strong>snake</strong> of the diagram.</p>
+<p><em>Proof.</em> This is the snake lemma of <em>Exact Sequences</em>, applied to the $3\times 3$ diagram whose two rows of complexes and two columns are the two adjacent degrees of the short exact sequence; the connecting map is built from $\partial_B$ by the chase, and the naturality is that of the chase. $\square$</p>
+<p>The connecting homomorphism is thus an operator <em>constructed from</em> the boundary operator of the middle complex and the inverses of the two maps of the sequence; it is the reason an exact sequence of complexes produces an exact sequence of homology modules, and it is the pattern that every long exact sequence of this Part follows.</p>
+<p><strong>Corollary (the boundary of a pair).</strong> For a pair $(X,A)$ of spaces, the connecting homomorphism $\partial : H_n(X,A;R) \to H_{n-1}(A;R)$ of the long exact sequence of <em>Simplicial and Singular Homology</em> is the connecting homomorphism of the short exact sequence $0 \to C_*(A) \to C_*(X) \to C_*(X,A) \to 0$ of complexes. The same statement holds for the relative complex of a pair of chain complexes and for every quotient by a subcomplex.</p>
+<p><em>Proof.</em> The relative complex is the quotient of the ambient complex by the subcomplex of the subspace, so the sequence of complexes is short exact; apply the theorem. $\square$</p>
+<h2 id="the-coboundary-as-the-adjoint">The Coboundary as the Adjoint</h2>
+<h3 id="the-evaluation-pairing">The Evaluation Pairing</h3>
+<p><strong>Definition.</strong> Let $C_*$ be a complex of free $R$-modules and let $C^* = \operatorname{Hom}_R(C_*,R)$ be its dual cochain complex with $\delta = \partial^*$, that is $(\delta \alpha)(c) = \alpha(\partial c)$ on cochains. The <strong>evaluation pairing</strong> is</p>
+<p>$$
+\langle \alpha, c \rangle = \alpha(c) \in R, \qquad \alpha \in C^n, \ c \in C_n .
+$$</p>
+<p><strong>Theorem.</strong> The coboundary is the adjoint of the boundary under the evaluation pairing,</p>
+<p>$$
+\langle \delta \alpha, c \rangle = \langle \alpha, \partial c \rangle ,
+$$</p>
+<p>so that $\delta = \partial^*$; consequently $\delta^2 = 0$ because $\partial^2 = 0$, and the pairing descends to cohomology and homology,</p>
+<p>$$
+\langle-,-\rangle : H^n(C^*) \times H_n(C_*) \longrightarrow R ,
+$$</p>
+<p>because a cocycle pairs with a boundary to zero and a coboundary pairs with a cycle to zero. A chain map $f : C_* \to D_*$ has a dual $f^* : D^* \to C^*$ with $\langle f^*\alpha, c\rangle = \langle \alpha, f c\rangle$; the dual is a cochain map, and dualising is contravariant.</p>
+<p><em>Proof.</em> The first identity is the definition of $\delta$; the bilinearity of the pairing together with the two vanishing statements — $\langle\delta\alpha, c\rangle = \langle\alpha,\partial c\rangle = 0$ for a cycle $c$ and a cocycle $\alpha$ — shows that the pairing of classes is well defined. The dual statements are the definition of the transpose and the associativity of composition. $\square$</p>
+<p>The theorem is the operator-layer form of the universal coefficient theorem: it says that passage to the dual exchanges the boundary and the coboundary and reverses the direction of the operators, and it is the reason the cohomology of a complex is computed from the same matrix as the homology, transposed.</p>
+<h3 id="the-leibniz-rule-for-the-cap-product">The Leibniz Rule for the Cap Product</h3>
+<p><strong>Theorem.</strong> The boundary operator is a graded derivation for the cap product of <em>Cup and Cap Products</em>: for a cochain $\varphi$ of degree $k$ and a chain $c$ of degree $n$,</p>
+<p>$$
+\partial(c \frown \varphi) = (-1)^{k}\bigl((\partial c) \frown \varphi - c \frown \delta\varphi\bigr),
+$$</p>
+<p>so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\varphi \smile \psi) = (\delta\varphi)\smile\psi + (-1)^{|\varphi|}\varphi\smile(\delta\psi)$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of <em>The Cup Product as an Operator</em>.</p>
+<p><em>Proof.</em> Both are the cochain-level identities of <em>Cup and Cap Products</em>, where the sign is forced by the convention for the evaluation of a cochain on a chain; the first is the boundary rule for the cap product, the second the Leibniz rule for the cup product. $\square$</p>
+<p><strong>Remark (the derivation and the product operators).</strong> The two rules say that $\partial$ and $\delta$ are derivations of the products that the complexes carry, and they are exactly the identities needed for the products to pass to homology and cohomology. An operator that is a derivation of a product is the operator-layer form of the product's compatibility with the boundary; in the differential graded algebra of the cochains the operator $\delta$ is the differential, the product is the cup product, and the Leibniz rule is the defining relation of the differential graded structure.</p>
+<h2 id="the-boundary-in-the-topological-complexes">The Boundary in the Topological Complexes</h2>
+<h3 id="the-instances">The Instances</h3>
+<p>The abstract operator of this article is realised by the following complexes, whose boundary operators are constructed and whose square-zero property is proved in the articles named.</p>
+<ol>
+<li><strong>The singular complex.</strong> $C_n(X;R)$ is free on the singular $n$-simplices, $\partial_n$ is the alternating sum of the face maps, and $\partial^2 = 0$ is the simplicial identity $\partial\partial=0$ of <em>Simplicial and Singular Homology</em>; the homology is the singular homology $H_n(X;R)$, and the augmentation is $\varepsilon(\sigma)=1$.</li>
+<li><strong>The simplicial complex.</strong> For a triangulation, $C_n$ is free on the oriented $n$-simplices and $\partial_n$ is given by the incidence numbers; the homology is the simplicial homology, and the concrete operator, its matrices and its computations are the subject of <em>The Boundary Operator of a Simplicial Complex</em>.</li>
+<li><strong>The cellular complex.</strong> For a CW complex the cellular chain group $C_n$ is free on the $n$-cells and the boundary is the degree of the attaching maps; the homology agrees with the singular homology, and the construction is that of <em>CW Complexes and Cellular Approximation</em>.</li>
+<li><strong>The de Rham complex.</strong> The differential forms of a smooth manifold form a cochain complex under the exterior derivative, with $\delta = d$ and $d^2 = 0$; the complex, its product and its cohomology belong to the analysis and geometry of Part III, and the operator is named there and not used here.</li>
+<li><strong>The Koszul and tensor complexes.</strong> The exterior algebra with its differential $\partial(e_{i_1}\wedge\cdots\wedge e_{i_p}) = \sum_k (-1)^{k+1} a_{i_k} e_{i_1}\wedge\cdots\widehat{e_{i_k}}\cdots\wedge e_{i_p}$ is a complex used in the algebra of Part I; it is a boundary operator of the same kind, and the general theory is the planned <em>Homological Algebra</em>.</li>
+</ol>
+<h3 id="naturality-of-the-instances">Naturality of the Instances</h3>
+<p>The boundary operators of the instances are natural for the maps of the appropriate kind, and the naturality is what makes the operator a functor. A continuous map induces a chain map of the singular complexes; a simplicial map induces a chain map of the simplicial complexes; an attaching map together with a cellular map induces the cellular chain map; and in each case the induced map intertwines the boundary. The identification of the homologies of the instances is the content of <em>Simplicial and Singular Homology</em>, and it is the statement that the different graded modules carry the same operator.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>chain complex</strong> is a graded module with a degree-lowering endomorphism $\partial$ satisfying $\partial^2 = 0$; its cycles and boundaries are $Z_n = \ker\partial_n$ and $B_n = \operatorname{im}\partial_{n+1}$, the square-zero property is the inclusion $B_n \subseteq Z_n$, and the homology is $H_n = Z_n/B_n$. An <strong>augmentation</strong> $\varepsilon$ with $\varepsilon\partial = 0$ defines the reduced complex and the reduced homology, and the <strong>coboundary</strong> $\delta$ of the dual complex is the same operator with the grading reversed. The <strong>chain maps</strong> are exactly the operators commuting with $\partial$; they carry cycles to cycles and boundaries to boundaries and induce maps on homology functorially, and a chain homotopy $\partial P + P\partial = g - f$ gives the equality of the induced maps, so that homology is a functor on the homotopy category of complexes. The connecting homomorphism of a short exact sequence of complexes is the operator built from $\partial$ by the snake lemma, and it is the source of every long exact sequence of this Part, in particular that of a pair. The coboundary is the adjoint of the boundary under the evaluation pairing, $\langle\delta\alpha, c\rangle = \langle\alpha,\partial c\rangle$, so dualising exchanges the two and reverses the operators; the boundary is a graded derivation for the cap product and the coboundary for the cup product, with the signs of <em>Cup and Cap Products</em>. The singular, simplicial, cellular, de Rham and Koszul complexes are the instances, and the general theory of the operator over a ring is the planned <em>Homological Algebra</em> of Part I; no analysis and no geometry was used here beyond the naming of the instances.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_*$, $C_n$</td>
+<td>Graded module and its degree-$n$ part</td>
+</tr>
+<tr>
+<td>$\partial$, $\partial_n$</td>
+<td>Boundary operator, of degree $-1$, with $\partial^2 = 0$</td>
+</tr>
+<tr>
+<td>$Z_n = \ker\partial_n$, $B_n = \operatorname{im}\partial_{n+1}$</td>
+<td>Cycles and boundaries</td>
+</tr>
+<tr>
+<td>$H_n = Z_n/B_n$</td>
+<td>Homology of the complex</td>
+</tr>
+<tr>
+<td>$\varepsilon : C_0 \to R$</td>
+<td>Augmentation, $\varepsilon\partial_1 = 0$; reduced complex and $\tilde H_*$</td>
+</tr>
+<tr>
+<td>$C^*$, $\delta$</td>
+<td>Dual cochain complex and coboundary; $H^n$</td>
+</tr>
+<tr>
+<td>chain map $f$, $H_n(f)$</td>
+<td>Operator commuting with $\partial$ and its induced map</td>
+</tr>
+<tr>
+<td>$P$, $\partial P + P\partial = g - f$</td>
+<td>Chain homotopy; equality of induced maps</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Connecting homomorphism of a short exact sequence of complexes</td>
+</tr>
+<tr>
+<td>$0 \to C_*(A) \to C_*(X) \to C_*(X,A) \to 0$</td>
+<td>The pair sequence; its connecting map is $\partial$</td>
+</tr>
+<tr>
+<td>$\langle\alpha,c\rangle = \alpha(c)$</td>
+<td>Evaluation pairing; $\delta = \partial^*$, adjointness</td>
+</tr>
+<tr>
+<td>$\frown$, $\smile$</td>
+<td>Cap and cup products; $\partial$ and $\delta$ are derivations</td>
+</tr>
+<tr>
+<td>$\chi = \sum (-1)^n\dim H_n$</td>
+<td>Euler characteristic, equal to $\sum(-1)^n\dim C_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the singular and cellular boundary operators, the square-zero identity and the long exact sequences.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the simplicial boundary operator, its incidence matrices and the Euler–Poincaré formula.</li>
+<li>Joseph J. Rotman, <em>An Introduction to Homological Algebra</em> (Springer, 2nd ed. 2009), for chain complexes, chain maps, the snake lemma and the connecting homomorphism over a general ring.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em> (Cambridge University Press, 1994), for the derived-functor and spectral-sequence context of a square-zero operator.</li>
+<li>Saunders Mac Lane, <em>Homology</em> (Springer, 1995), for the chain complex as the primitive object of homological algebra and the adjointness of the two differentials.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the de Rham complex and the two differentials of a double complex, named here and treated in Part III.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the Euler characteristic and the Lefschetz number as alternating traces of a chain operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

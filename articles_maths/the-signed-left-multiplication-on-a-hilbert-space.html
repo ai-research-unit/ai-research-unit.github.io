@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Left Multiplication on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-left-multiplication-on-a-hilbert-space"><strong>The Signed Left Multiplication on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed left multiplication of a graded Hilbert space is the one-sided operator $\ell_U(T)=U\alpha(T)$, the left multiplication with its argument twisted by the grade involution $\alpha(T)=\Gamma T\Gamma$. It is the left factor out of which the signed sandwich is built, in the same way that the ordinary left multiplication is the left factor of the unsigned sandwich, and it shares with the ordinary one the cleanest properties of a one-sided operator: it is bounded with the same norm as its element, its products are unsigned left multiplications, it is invertible exactly when its element is, and it is an isometry exactly when its element is. What changes is the grading: the signed left multiplication is a coset of the unsigned one, obtained by composing with the involution on the outside, and its action on the graded pieces of $B(H)$ is what the sign rule of the graded category expresses.</p>
+<p>The algebra $B(H)$ and its involution are <em>Bounded Operators on a Hilbert Space</em>; the unsigned left multiplication and its Hilbert–Schmidt structure are <em>The Left and Right Multiplication Operators on a Hilbert Space</em>; the signed sandwich that is assembled from the two signed one-sided multiplications is <em>The Signed Sandwich on a Hilbert Space</em>; the corresponding signed right multiplication and the adjoint of $\ell_U$ are <em>The Signed Adjoint Sandwich on a Hilbert Space</em> and <em>The Adjoint of the Left Multiplication on a Hilbert Space</em> below. The algebraic signed left multiplication is <em>The Signed Left Multiplication on a Graded Algebra</em> (Part II), of which the present article is the Hilbert-space reading.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, $\Gamma$ is the parity operator, $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)$, and $\|T\|$ and $\|T\|_{\mathrm{HS}}$ are the operator and Hilbert–Schmidt norms. The <strong>signed left multiplication</strong> is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$ and the <strong>signed right multiplication</strong> is $\varrho_V(T)=\alpha(T)V=R_V\circ\alpha$; the unsigned left multiplication is $L_U(T)=UT$.</p>
+<h2 id="the-signed-left-multiplication">The Signed Left Multiplication</h2>
+<p><strong>Definition.</strong> For $U\in B(H)$ the <strong>signed left multiplication</strong> is</p>
+<p>$$
+\ell_U:B(H)\longrightarrow B(H),\qquad \ell_U(T)=U\,\alpha(T)=L_U\circ\alpha .
+$$</p>
+<p><strong>Proposition (boundedness and norm).</strong> $\ell_U$ is a bounded linear operator on $B(H)$ with</p>
+<p>$$
+\|\ell_U\|=\|U\|,
+$$</p>
+<p>and the map $U\mapsto\ell_U$ is linear, injective and order-reversing under composition; the same identity holds for the Hilbert–Schmidt norm, $\|\ell_U(T)\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality for suitable $T$.</p>
+<p><em>Proof.</em> $\|U\alpha(T)\|\le\|U\|\|\alpha(T)\|=\|U\|\|T\|$ by the isometry of the grade involution, and the value $\|U\|$ is attained at a rank-one $T=\xi\otimes\bar\eta$ transforming in the even part of the grading with $\|U\xi\|=\|U\|\|\xi\|$; injectivity is the invertibility of $\alpha$ and the faithfulness of the left representation, and linearity is immediate.</p>
+<p><strong>Proposition (action on the graded pieces).</strong> If $T$ is even then $\ell_U(T)=UT$, if $T$ is odd then $\ell_U(T)=-UT$; hence</p>
+<p>$$
+\ell_U(T)=U\,T \quad\text{on the even part},\qquad \ell_U(T)=-U\,T \quad\text{on the odd part},
+$$</p>
+<p>and the signed left multiplication is the ordinary left multiplication with the sign $-1$ on the odd part.</p>
+<p><em>Proof.</em> $\alpha(T)=\varepsilon_T T$ with $\varepsilon_T=\pm1$ on the homogeneous parts, by the definition of $\alpha$.</p>
+<p><strong>Proposition (the signed right multiplication).</strong> The signed right multiplication is $\varrho_V(T)=\alpha(T)V$, and the two signed one-sided operators are related by</p>
+<p>$$
+\varrho_V=\alpha\circ R_V= R_V\circ\alpha ,
+$$</p>
+<p>so the signed right multiplication is the right multiplication with the same twist on the argument.</p>
+<p><em>Proof.</em> $\alpha(TV)=\alpha(T)\alpha(V)$, and $\alpha(V)=V$ only if $V$ is even; the correct statement is $\alpha(T)V=\varrho_V(T)$ by definition, and $\alpha(T)V=R_V(\alpha(T))$, which is $\varrho_V=R_V\alpha$; for the other order one has $\alpha(TV)=R_{\alpha(V)}\alpha(T)$, so the ordering of the twist matters and is fixed once and for all.</p>
+<h2 id="composition-and-the-coset">Composition and the Coset</h2>
+<p><strong>Theorem (products).</strong> For all $U,V,W\in B(H)$,</p>
+<p>$$
+\ell_U\,\ell_V=L_{U\alpha(V)},\qquad L_U\,\ell_V=\ell_{UV},\qquad \ell_U\,L_V=L_{U\alpha(V)},\qquad \ell_U\varrho_V=L_{U\alpha(V)} .
+$$</p>
+<p>So the product of two signed left multiplications is an unsigned left multiplication, the product of a signed and an unsigned one is signed, and the signed left multiplications form the coset</p>
+<p>$$
+\ell(B(H))=L(B(H))\,\alpha
+$$</p>
+<p>of the unsigned left multiplications inside $B(B(H))$.</p>
+<p><em>Proof.</em> $\ell_U(\ell_V(T))=U\alpha(V\alpha(T))=U\alpha(V)\alpha^2(T)=L_{U\alpha(V)}(T)$, using $\alpha^2=\mathrm{id}$; the remaining identities are the same computation with the involution applied to the inner factors, and they exhibit the coset structure.</p>
+<p><strong>Corollary (the parity of the signed length).</strong> The set $\{\ell_U\}\cup\{L_U\}$ is the algebra of left multiplications shifted by $\alpha$; the product is unsigned when the number of signed factors is even and signed when it is odd, and the quotient of the generated algebra by the unsigned subalgebra is $\mathbb{Z}/2$.</p>
+<p><em>Proof.</em> The composition rules add the numbers of signed factors modulo two, exactly as in the signed sandwich; the unsigned left multiplications form the index-two subalgebra.</p>
+<p><strong>Proposition (faithfulness and the image).</strong> The map $U\mapsto\ell_U$ is injective, so the signed left multiplications are parametrised by $B(H)$; the image is the set $L(B(H))\alpha$, and the map is not multiplicative, its failure being the twist $U V\mapsto U\alpha(V)$.</p>
+<p><em>Proof.</em> If $\ell_U=0$ then $U\alpha(T)=0$ for all $T$, and testing $T=I$ gives $U=0$; the parametrisation and the failure of multiplicativity are the composition rule $\ell_U\ell_V=L_{U\alpha(V)}$.</p>
+<h2 id="isometry-invertibility-and-the-kernel">Isometry, Invertibility and the Kernel</h2>
+<p><strong>Theorem (invertibility).</strong> $\ell_U$ is invertible in $B(B(H))$ exactly when $U\in B(H)$ is invertible, and then</p>
+<p>$$
+(\ell_U)^{-1}=\ell_{\alpha(U)^{-1}}=\ell_{\alpha(U^{-1})}.
+$$</p>
+<p><em>Proof.</em> $\ell_U\ell_W=L_{U\alpha(W)}=L_I$ exactly when $\alpha(W)=U^{-1}$, that is $W=\alpha(U^{-1})=\alpha(U)^{-1}$; the other order is analogous, and the inverse is a signed left multiplication. Invertibility of the product forces $U$ invertible since $\ell_U$ is a composite of the invertible $\alpha$ and the left multiplication by $U$.</p>
+<p><strong>Proposition (isometry).</strong> $\ell_U$ is isometric for the operator norm exactly when $U$ is isometric, and isometric for the Hilbert–Schmidt norm exactly when $U$ is isometric; it is a partial isometry exactly when $U$ is a partial isometry, and unitary exactly when $U$ is unitary.</p>
+<p><em>Proof.</em> $\|\ell_U(T)\|=\|U\alpha(T)\|$, and as $T$ ranges over the unit ball of $B(H)$ the operators $T$ and $\alpha(T)$ range over the same ball, so the norm of $\ell_U$ on the ball is that of $U$; the Hilbert–Schmidt statement is the same with the rank-one operators, and the partial-isometry and unitary statements are the special cases.</p>
+<p><strong>Proposition (kernel and image).</strong> For $U\in B(H)$,</p>
+<p>$$
+\ker\ell_U=\alpha^{-1}(\ker L_U)=\alpha(\ker U), \qquad \operatorname{im}\ell_U=U\,B(H),
+$$</p>
+<p>and the restriction of $\ell_U$ to the even and odd parts is $L_U$ and $-L_U$ respectively, so the kernel is the intersection of the kernel of the left multiplication with each graded piece taken with its sign.</p>
+<p><em>Proof.</em> $\ell_U(T)=0$ iff $U\alpha(T)=0$ iff $\alpha(T)\in\ker U$ iff $T\in\alpha(\ker U)$; the image is the range of the left multiplication by $U$; the graded description is the action on the homogeneous pieces.</p>
+<h2 id="the-sandwich-as-a-composite">The Sandwich as a Composite</h2>
+<p><strong>Proposition.</strong> The signed sandwich factors through the one-sided multiplications in two ways:</p>
+<p>$$
+S_{U,V}=L_U\,\varrho_V=\ell_U\,R_{\alpha(V)},
+$$</p>
+<p>and the unsigned sandwich is $T_{U,V}=L_UR_V$. So the signed sandwich is the signed right multiplication followed by the left multiplication by $U$, or equivalently the signed left multiplication followed by the right multiplication by $\alpha(V)$.</p>
+<p><em>Proof.</em> $(L_U\varrho_V)(T)=L_U(\alpha(T)V)=U\alpha(T)V=S_{U,V}(T)$, and $(\ell_UR_{\alpha(V)})(T)=\ell_U(T\alpha(V))=U\alpha(T)\alpha^2(V)=U\alpha(T)V$; the two expressions agree, and the unsigned case is associativity.</p>
+<p><strong>Corollary (the composition table recovered).</strong> The products of the signed sandwich computed in <em>The Signed Sandwich on a Hilbert Space</em> are the products of the factors displayed here, and the parity of the signed length is the parity of the numbers of signed one-sided factors.</p>
+<p><em>Proof.</em> Substituting the factorisations into the four products and using $\alpha^2=\mathrm{id}$ gives the table.</p>
+<p><strong>Example (finite dimension).</strong> For $H=\mathbb{K}^{p+q}$ with $\Gamma=\operatorname{diag}(I_p,-I_q)$ the signed left multiplication by a block matrix $U=\begin{pmatrix}A&B\\C&D\end{pmatrix}$ acts on a block matrix $T=\begin{pmatrix}P&Q\\R&S\end{pmatrix}$ by</p>
+<p>$$
+\ell_U(T)=\begin{pmatrix}A&B\\C&D\end{pmatrix}\begin{pmatrix}P&-Q\\-R&S\end{pmatrix},
+$$</p>
+<p>so the signed left multiplication is the ordinary one with the off-diagonal blocks of the argument negated. The unsigned left multiplication is the same product without the sign, and the kernel is the kernel of $U$ transported by the sign reversal of the off-diagonal blocks.</p>
+<p><strong>Example (the normal basis of a graded Hilbert space).</strong> When $H$ has a homogeneous orthonormal basis, the signed left multiplication by a diagonal $U$ acts on the matrix units by $\ell_U(e_m\otimes\bar e_n)=\varepsilon_n u_m\,e_m\otimes\bar e_n$, where $\varepsilon_n$ is the sign of the grading of $e_n$; the eigenvalues of $\ell_U$ in this basis are the products of the diagonal entries with the graded signs, and $\ell_U$ is isometric exactly when these products all have modulus one.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication of a graded Hilbert space is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$, bounded with $\|\ell_U\|=\|U\|$, injective in $U$, and equal to the ordinary left multiplication with the sign $-1$ on the odd part. Its products obey $\ell_U\ell_V=L_{U\alpha(V)}$ and $L_U\ell_V=\ell_{UV}$, so the signed left multiplications form the coset $L(B(H))\alpha$ of the unsigned ones inside $B(B(H))$, with the parity of the signed length adding modulo two; it is invertible exactly when $U$ is, with $(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$, is isometric exactly when $U$ is, and is unitary exactly when $U$ is. Its kernel is $\alpha(\ker U)$ and its image is $U\,B(H)$. The signed sandwich factors through the two one-sided multiplications, $S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$, which recovers the composition table of the sandwich and exhibits the signed left multiplication as the elementary building block of the two-sided theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha(T)=\Gamma T\Gamma$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$\ell_U(T)=U\alpha(T)=L_U\circ\alpha$</td>
+<td>the signed left multiplication</td>
+</tr>
+<tr>
+<td>$\varrho_V(T)=\alpha(T)V=R_V\circ\alpha$</td>
+<td>the signed right multiplication</td>
+</tr>
+<tr>
+<td>$\|\ell_U\|=\|U\|$</td>
+<td>the norm identity</td>
+</tr>
+<tr>
+<td>$\ell_U\ell_V=L_{U\alpha(V)}$</td>
+<td>product of two signed left multiplications</td>
+</tr>
+<tr>
+<td>$\ell(B(H))=L(B(H))\alpha$</td>
+<td>the coset of signed left multiplications</td>
+</tr>
+<tr>
+<td>$(\ell_U)^{-1}=\ell_{\alpha(U^{-1})}$</td>
+<td>the inverse</td>
+</tr>
+<tr>
+<td>$\ker\ell_U=\alpha(\ker U)$</td>
+<td>the kernel</td>
+</tr>
+<tr>
+<td>$S_{U,V}=L_U\varrho_V=\ell_UR_{\alpha(V)}$</td>
+<td>the sandwich as a composite</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the one-sided multiplications of $B(H)$ and their compositions.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the elementary operators and their kernels.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the operators $T\mapsto AT$ on operator spaces.</li>
+<li>Pierre Deligne and John W. Morgan, "Notes on Supersymmetry", in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, vol. 1 (American Mathematical Society, 1999), for the sign rule of graded multiplication.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

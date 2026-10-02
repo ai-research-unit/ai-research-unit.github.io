@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Manifolds with an Antiholomorphic Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="complex-manifolds-with-an-antiholomorphic-involution"><strong>Complex Manifolds with an Antiholomorphic Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>antiholomorphic involution</strong> of a complex manifold is the same object as a real structure, but considered without the requirement that it have real points: an involutive antiholomorphic diffeomorphism $c : M \to M$, $c^2 = \mathrm{id}$, $dc\circ J = -J\circ dc$. The two global constructions attached to it are the <strong>quotient</strong> and the <strong>real forms</strong>. The quotient $Q = M/\langle c\rangle$ is the orbit space of the involution; when the real locus is empty the involution is free and $Q$ is a smooth real manifold of dimension $2n$ on which $M$ is a double cover, and when the real locus is nonempty the orbit space is a real orbifold whose singular locus is the image of the real locus, a smooth manifold with boundary only in the reflection case of complex dimension one. The real structures on $M$ are the different involutions of the same complex manifold; two of them are <strong>equivalent</strong> when they differ by a holomorphic diffeomorphism, and the equivalence classes are the <strong>real forms</strong> of $M$, the manifold form of the real forms of a complex vector space. The article studies the quotient as an orbifold, the equivalence of real structures, and the classification of the real forms; the involution itself and its real points are the subject of the companion article <em>Real Structures on a Complex Manifold</em>.</p>
+<p>The article has three sections: the quotient by the antiholomorphic involution; the equivalence of real structures and the real forms; and the linear classification and its projective instance. The involution, its real locus and the descent are <em>Real Structures on a Complex Manifold</em>; the involutions of a real manifold and the quotient of a smooth manifold by an involution are <em>Real Structures on a Smooth Manifold</em> and <em>Free Involutions and the Quotient</em>; the complex structures and the type are <em>Hermitian Geometry and Almost Complex Structures</em>, <em>The Almost Complex Operator</em> and <em>Operators on a Complex Manifold</em>; the real structures of an algebraic variety and the Galois descent are <em>Real Structures on Varieties and Galois Descent</em>; the linear model and the real forms of a complex vector space are <em>The Involution on a Complex Vector Space</em>, later in this category.</p>
+<p>Throughout, $(M, c)$ is a connected complex manifold of complex dimension $n$ with an antiholomorphic involution, $M^{c}$ is the real locus, $Q = M/\langle c\rangle$ is the quotient, $\pi : M \to Q$ is the projection, and a <strong>real form</strong> of $M$ is the real locus of a real structure on $M$, a real submanifold of dimension $n$ by <em>Real Structures on a Complex Manifold</em>.</p>
+<h2 id="the-quotient-by-the-involution">The Quotient by the Involution</h2>
+<p><strong>Proposition (the quotient in the free case).</strong> If $M^{c} = \varnothing$ the group $\mathbb Z/2 = \langle c\rangle$ acts freely on $M$; the quotient $Q = M/\langle c\rangle$ is a smooth real manifold of dimension $2n$, the projection $\pi$ is a double covering, and $M$ is recovered as the total space of the covering with the deck transformation $c$.</p>
+<p><strong>Proof.</strong> A free action of a finite group on a manifold has a manifold quotient, and the quotient map is a covering of degree equal to the order of the group; the deck transformation group is $\mathbb Z/2$ generated by $c$. The general quotient of a manifold by a group action is <em>Free Involutions and the Quotient</em> and <em>Real Structures on a Smooth Manifold</em>.</p>
+<p><strong>Proposition (the quotient in the general case).</strong> If $M^{c} \neq \varnothing$ the quotient $Q = M/\langle c\rangle$ is a real orbifold of dimension $2n$ whose singular locus is the image of the real locus, $\pi(M^{c})$; at a real point $p$ the local model of the quotient is
+$$
+\mathbb{R}^{n} \times \bigl(\mathbb{R}^{n}/\pm\mathrm{id}\bigr),
+$$
+the fixed directions contributing the cone $\mathbb{R}^n/\pm\mathrm{id}$, so $Q$ is a smooth manifold with boundary only when $n = 1$, and is genuinely singular along $\pi(M^{c})$ when $n \ge 2$.</p>
+<p><strong>Proof.</strong> At a fixed point the linear action of $c$ on the real tangent space has $+1$-eigenspace $T_pM^c$ of dimension $n$ and $-1$-eigenspace of dimension $n$, by <em>Real Structures on a Complex Manifold</em>; the quotient of a vector space by the reflection in a subspace is the product of the subspace and the quotient of its complement by $\pm\mathrm{id}$, which is the cone over the sphere $S^{n-1}$, a smooth space only for $n = 1$. The orbifold and quotient structure is <em>Free Involutions and the Quotient</em>; the singular-locus description is the local model above.</p>
+<p><strong>Corollary (the double cover and the branch).</strong> When $M^{c} \neq \varnothing$ the projection $\pi : M \to Q$ is a two-to-one map branched along $\pi(M^{c})$; when $M^{c} = \varnothing$ it is an unramified double cover. A holomorphic object fixed by $c$ descends to $Q$, and the objects of $Q$ pull back to the $c$-fixed objects of $M$; this is the descent of <em>Real Structures on a Complex Manifold</em>.</p>
+<p><strong>Proof.</strong> Every point off the real locus has two preimages exchanged by $c$, and a real point has one; a $c$-fixed object is constant on the orbits, hence descends. The descent is the assignment of the previous article.</p>
+<p><strong>Example (the Riemann sphere and the real projective line).</strong> On $M = \mathbb{CP}^1$ the standard conjugation $c([z_0:z_1]) = [\bar z_0:\bar z_1]$ has real locus the circle $\mathbb{RP}^1$ and the quotient is the closed disc $M/\langle c\rangle$: the upper and lower hemispheres are identified along the equator, and the quotient is a smooth surface with boundary, the case $n = 1$ of the corollary. The other real structure of $\mathbb{CP}^1$, the fixed-point-free $c([z_0:z_1]) = [-\bar z_1:\bar z_0]$, has empty real locus and quotient the projective plane $\mathbb{RP}^2$, an unramified double cover of the sphere.</p>
+<h2 id="the-equivalence-of-real-structures-and-the-real-forms">The Equivalence of Real Structures and the Real Forms</h2>
+<p><strong>Definition.</strong> Two real structures $c, c'$ on the complex manifold $M$ are <strong>equivalent</strong> when $c' = g\,c\,g^{-1}$ for a holomorphic diffeomorphism $g$ of $M$; the equivalence classes are the <strong>real forms</strong> of $M$. When $M$ is the complexification of a real manifold, the real forms of $M$ are the real manifolds whose complexification is $M$, which is the descent reading of <em>Real Structures on a Complex Manifold</em>.</p>
+<p><strong>Proposition (equivalence and the real locus).</strong> Equivalent real structures have real loci that are diffeomorphic as real manifolds: if $c' = gcg^{-1}$ then $g$ restricts to a diffeomorphism $M^{c} \to M^{c'}$. The converse can fail, so the real locus is an invariant of the real structure but not a complete invariant of the real form.</p>
+<p><strong>Proof.</strong> $c'(g(p)) = g(c(p)) = g(p)$ for a real point $p$, so $g$ maps $M^c$ onto $M^{c'}$; the map is a diffeomorphism as the restriction of one. The converse fails in general because two real structures with diffeomorphic real loci can be non-conjugate: this is the classical distinction between the real forms of a complex manifold with the same real locus up to diffeomorphism. The classification of the real structures modulo equivalence is the subject of <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<p><strong>Proposition (the real forms of a complex vector space are all isomorphic).</strong> All real structures on a complex vector space $V$ of dimension $m$ are linearly conjugate: a real structure is the conjugation of a real form $V = V_0\oplus iV_0$, a real basis of $V_0$ is a complex basis of $V$, and the linear map carrying the real basis of one real form to the real basis of another conjugates the first real structure into the second, so $GL(V)$ acts transitively. The plain classification of real structures by linear conjugacy is therefore trivial, and the geometric classification uses the Hermitian form of the category.</p>
+<p><strong>Proof.</strong> If $v_1,\dots,v_m$ is a real basis of $V_0$ and $w_1,\dots,w_m$ a real basis of $V_0'$, both are complex bases of $V$; the complex-linear map $g$ with $g(v_i) = w_i$ carries the conjugation of $V_0$ to the conjugation of $V_0'$, since it commutes with complex conjugation on the real spans. Hence every real structure is conjugate to the standard one. This is the linear observation of <em>The Involution on a Complex Vector Space</em>.</p>
+<p><strong>Remark (the projective real forms).</strong> Passing to the projective space identifies real structures differing by a scalar, and the plain linear classification is already trivial, so the projective count is governed by the geometry: the complex projective line has exactly two real structures, the standard one with real locus the circle and the fixed-point-free one with empty real locus, and only the first has a nonempty real locus. For the projective space of higher dimension the real forms are classified by the real forms of the projective linear group, and the standard one has real locus $\mathbb{RP}^n$; the classification is <em>Real Structures on a Projective Space</em> and <em>Real Structures on Varieties and Galois Descent</em>.</p>
+<h2 id="the-linear-classification-and-the-projective-instance">The Linear Classification and the Projective Instance</h2>
+<p><strong>Theorem (the antiunitary real structures and their signatures).</strong> Let $(V, h)$ be a Hermitian space of complex dimension $m$ and let $c$ be a real structure on $V$ <strong>compatible with $h$</strong>, that is $h(cx, cy) = \overline{h(x, y)}$ for all $x,y$. Then the restriction of $h$ to the real locus $V_0 = V^{c}$ is a real symmetric bilinear form, and two compatible real structures are conjugate by the unitary group $U(h)$ exactly when these restrictions have the same signature; there are therefore $m+1$ classes, indexed by the signature $(p,q)$ with $p+q=m$, and the class of signature $(p,q)$ has a real locus on which $h$ has signature $(p,q)$, represented by $c(z) = (\bar z_1,\dots,\bar z_p,-\bar z_{p+1},\dots,-\bar z_m)$ with $h$ of signature $(p,q)$ in that basis.</p>
+<p><strong>Proof.</strong> For $x,y \in V_0$ one has $h(x,y) = h(cx,cy) = \overline{h(x,y)}$, so the restriction is real, and it is symmetric by the Hermitian symmetry of $h$; its normal form is the signature $(p,q)$ by Sylvester's law. A unitary $g \in U(h)$ with $gcg^{-1} = c'$ restricts to an isometry $V_0 \to V_0'$ of the two restricted forms, so conjugate structures have equivalent restrictions; conversely an isometry of the two restrictions extends to a unitary conjugating $c$ to $c'$, since the complexification of a real isometry of a real form is unitary for a real Hermitian form. The classification by the signature of a real form and the unitary group are <em>Hermitian Geometry and the Unitary Group</em> and <em>The Involution on a Complex Vector Space</em>.</p>
+<p><strong>Example (the small cases).</strong> On $(\mathbb{C}, h)$ with $h$ the standard form the antiunitary real structure $z\mapsto\bar z$ has real locus $\mathbb{R}$ on which $h$ is positive definite, of signature $(1,0)$, and the antiunitary real structure $z\mapsto-\bar z$ is conjugate to it by the unitary $z\mapsto iz$; the two have the same signature class. On $\mathbb{C}^2$ with the standard form the antiunitary real structures are represented by $c(z_1,z_2) = (\bar z_1,\bar z_2)$ with restriction of signature $(2,0)$, by $c(z_1,z_2) = (\bar z_1,-\bar z_2)$ with restriction of signature $(1,1)$ on $\mathbb R\oplus i\mathbb R$, and by $c(z_1,z_2) = (-\bar z_1,-\bar z_2)$ with restriction of signature $(0,2)$ on $i\mathbb R^2$; these three are inequivalent under the unitary group, and the example shows that the unitary classification is finer than the linear one, which has a single class.</p>
+<p><strong>Corollary (the transport to the operator layer).</strong> A real structure $c$ on $\mathbb{C}^m$ transports to the endomorphism algebra as the $\mathbb{C}$-linear involution $X\mapsto cXc^{-1} = cXc$, whose fixed part is the complexification of the endomorphisms of the real form, and (when $c$ is compatible with a Hermitian form) as the conjugate-linear anti-automorphism $X\mapsto cX^{\dagger}c$, which is the real structure of the operator layer; the Hermitian, unitary and adjoint operators fixed by these maps are the real operators of the chosen real form. This is the transport of <em>The Involution on a Complex Vector Space</em> and <em>Real Structures on the Operator Layer</em>.</p>
+<p><strong>Proof.</strong> The map $X\mapsto cXc$ is $\mathbb C$-linear because $c$ is antilinear and appears twice, and it is an algebra involution; its fixed part is the commutant of $c$, that is the complexification of $\operatorname{End}_{\mathbb R}(V_0)$. The conjugate-linear companion $X\mapsto cX^{\dagger}c$ is the real structure proper, and it reduces to the adjoint on the real operators. This is <em>The Involution on a Complex Vector Space</em> and <em>Real Structures on the Operator Layer</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>An antiholomorphic involution of a complex manifold $M$ has a quotient $Q = M/\langle c\rangle$ which is a smooth real manifold of dimension $2n$ when the real locus is empty — then $\pi$ is an unramified double cover — and a real orbifold with singular locus the image of the real locus when it is nonempty, the branch locus of a two-to-one map, and the quotient is a smooth manifold with boundary only in the case of complex dimension one. Two real structures are equivalent when they differ by a holomorphic diffeomorphism, and the equivalence classes are the real forms of $M$; equivalent structures have diffeomorphic real loci, and the real locus is not a complete invariant. On a complex vector space all real structures are linearly conjugate, while the real structures compatible with a Hermitian form are classified by the signature $(p,q)$, $p+q=m$, of the restriction of the form to the real locus, giving $m+1$ unitary classes, and the classification descends to the operator layer by conjugation. The involution, the real locus and the descent are <em>Real Structures on a Complex Manifold</em>; the quotient by an involution is <em>Free Involutions and the Quotient</em>; the projective and variety-level classifications are <em>Real Structures on a Projective Space</em> and <em>Real Structures on Varieties and Galois Descent</em>; the linear model is <em>The Involution on a Complex Vector Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$, $c^2=\mathrm{id}$</td>
+<td>the antiholomorphic involution</td>
+</tr>
+<tr>
+<td>$Q=M/\langle c\rangle$</td>
+<td>the quotient</td>
+</tr>
+<tr>
+<td>$\pi(M^{c})$</td>
+<td>the branch locus of the quotient</td>
+</tr>
+<tr>
+<td>$\mathbb R^n\times(\mathbb R^n/\pm\mathrm{id})$</td>
+<td>the local model of the quotient at a real point</td>
+</tr>
+<tr>
+<td>$c\sim c'$</td>
+<td>equivalence by a holomorphic diffeomorphism</td>
+</tr>
+<tr>
+<td>$h(cx,cy)=\overline{h(x,y)}$</td>
+<td>compatibility of the real structure with the Hermitian form</td>
+</tr>
+<tr>
+<td>$(p,q)$, $p+q=m$</td>
+<td>the signature classifying the compatible real structures</td>
+</tr>
+<tr>
+<td>$\mathbb R^p\oplus i\mathbb R^q$</td>
+<td>the real locus, restricted form of signature $(p,q)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for involutions, fixed-point sets and orbit spaces.</li>
+<li>Robert Silhol, <em>Real Algebraic Surfaces</em> (Lecture Notes in Mathematics 1399, Springer, 1989), for real structures, their quotients and the real forms.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1: Varieties in Projective Space</em> (Springer, third edition, 2013), for the real forms of a complex space and their real loci.</li>
+<li>Michèle Audin, <em>Torus Actions on Symplectic Manifolds</em> (Birkhäuser, revised edition, 2004), for involutions, quotients and the real parts of complex manifolds.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

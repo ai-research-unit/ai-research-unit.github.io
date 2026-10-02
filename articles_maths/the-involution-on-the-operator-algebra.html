@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Operator Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-operator-algebra"><strong>The Involution on the Operator Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra of bounded operators of a Banach algebra is an algebra without an involution, but a <strong>form</strong> on the algebra turns it into one: the <strong>adjoint</strong> of a bounded operator $T$ is the operator $T^\dagger$ determined by $\{Tx,y\} = \{x,T^\dagger y\}$, and the map $T \mapsto T^\dagger$ is additive, involutive and anti-multiplicative, so it is an anti-automorphism of the operator algebra of order two. The form of the category is the <strong>trace pairing</strong> $\{x,y\} = \tau(x\sigma(y))$ attached to a continuous $\sigma$-invariant trace $\tau$; when it is nondegenerate the adjoint exists and is unique, the adjointable operators form a closed subalgebra, and the left regular representation $a \mapsto L_a$ becomes a <code>*</code>-representation, $(L_a)^\dagger = L_{\sigma(a)}$. This article fixes the form of the category, defines the adjoint and proves that it is an order-two anti-automorphism of the operator algebra.</p>
+<p>The article assumes the Banach algebra, the bounded operators, the operator norm and the left and right multiplications from <em>Operators on a Banach Algebra</em>; the involution, its continuity, the fixed and skew elements and the isometry of the involution from <em>Involutive Banach Algebras and the Gelfand–Naimark Theorem</em>; the self-adjoint and unitary elements from <em>Adjoints in a Banach Algebra</em>; the completeness and closed subalgebras of the operator algebra from <em>The Operator Algebra of a Banach Space</em>; and the trace, the pairing and the operator involution of the finite-dimensional case from <em>Frobenius Algebras</em> and <em>The Adjoint in an Involutive Algebra</em>. The signed and reflection adjoints are the articles that follow; the grade involution $\alpha$ appears there.</p>
+<p>Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a <strong>continuous involution</strong> $\sigma$, $a^* = \sigma(a)$; $\tau : A \to \mathbb{C}$ is a <strong>continuous $\sigma$-invariant trace</strong>, $\tau(xy) = \tau(yx)$ and $\tau(\sigma(x)) = \tau(x)$, whose <strong>trace pairing</strong></p>
+<p>$$
+\{x,y\} = \tau\bigl(x\,\sigma(y)\bigr) , \qquad x,y \in A ,
+$$</p>
+<p>is <strong>nondegenerate</strong> — this is the <strong>form of the category</strong>; $B(A)$ is the unital Banach algebra of bounded operators; $L_a(x) = ax$ and $R_b(x) = xb$; an operator $T \in B(A)$ is <strong>adjointable</strong> when there is $T^\dagger$ with $\{Tx,y\} = \{x,T^\dagger y\}$ for all $x,y$; and $\mathcal{A}(A)\subseteq B(A)$ is the set of adjointable operators.</p>
+<h2 id="the-form-of-the-category">The Form of the Category</h2>
+<p><strong>Proposition (the form is sesquilinear and symmetric).</strong> The trace pairing is conjugate-linear in the second variable, linear in the first, and</p>
+<p>$$
+\{x,y\} = \overline{\{y,x\}} , \qquad \{\sigma(x),\sigma(y)\} = \overline{\{x,y\}} ,
+$$</p>
+<p>and it is nondegenerate by hypothesis; it is the twisted pairing $\{x,y\} = \langle x,\sigma(y)\rangle$ of the plain pairing $\langle x,y\rangle = \tau(xy)$.</p>
+<p><strong>Proof.</strong> Conjugate-linearity in the second variable is the conjugate-linearity of $\sigma$ and the linearity of $\tau$; for symmetry, $\overline{\{y,x\}} = \overline{\tau(y\sigma(x))} = \tau(\sigma(y\sigma(x))) = \tau(x\sigma(y)) = \{x,y\}$, using the $\sigma$-invariance of $\tau$ and $\sigma(y\sigma(x)) = x\sigma(y)$; the last identity is the definition of the twisted pairing. $\square$</p>
+<p><strong>Remark (the $\mathrm{C}^*$-specialisation).</strong> When $A$ is a $\mathrm{C}^*$-algebra of operators on a Hilbert space $H$ with the trace class and $\tau$ the Hilbert–Schmidt trace, the form of the category is the Hilbert–Schmidt inner product $\{x,y\} = \operatorname{tr}(x y^*)$, and the adjoint of an operator is the usual Hilbert-space adjoint; the trace pairing is then positive definite and the theory of this article is the operator theory of <em>Operator Algebras</em> read through the form.</p>
+<h2 id="the-adjoint">The Adjoint</h2>
+<p><strong>Theorem (existence, uniqueness and the elementary laws).</strong> Let $T \in B(A)$ be adjointable. Then $T^\dagger$ is unique, and the assignment $T \mapsto T^\dagger$ is additive, conjugate-linear when the scalar twist is present, involutive and anti-multiplicative:</p>
+<p>$$
+(S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger .
+$$</p>
+<p>Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of order two, an isomorphism $\mathcal{A}(A) \to \mathcal{A}(A)^{\mathrm{op}}$, and the adjointable operators form a subalgebra of $B(A)$.</p>
+<p><strong>Proof.</strong> Uniqueness and additivity are the nondegeneracy of the form: $\{x,(S+T)^\dagger y\} = \{(S+T)x,y\} = \{Sx,y\} + \{Tx,y\} = \{x,S^\dagger y\} + \{x,T^\dagger y\}$, and the form is conjugate-linear in the second argument. For the product, $\{x,(ST)^\dagger y\} = \{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$. The order two is $\{x,Ty\} = \{T^\dagger x,y\} = \{x,(T^\dagger)^\dagger y\}$, and the compatibility with the scalars is the conjugation. $\square$</p>
+<p><strong>Theorem (self-adjoint and skew operators).</strong> An operator $T$ is <strong>self-adjoint</strong> when $T^\dagger = T$ and <strong>skew</strong> when $T^\dagger = -T$; the self-adjoint operators form a real linear subspace and the skew operators the real subspace $i\mathcal{A}(A)^+$; every adjointable $T$ decomposes as</p>
+<p>$$
+T = \tfrac12(T + T^\dagger) + \tfrac12(T - T^\dagger) ,
+$$</p>
+<p>and the self-adjoint and the skew operators are closed when the adjoint is continuous. The self-adjoint operators are exactly the operators fixed by the involution, and they are the analogue in $\mathcal{A}(A)$ of the self-adjoint elements of $A$.</p>
+<p><strong>Proof.</strong> The decomposition is formal and the parts are self-adjoint and skew by the involutivity and conjugate-linearity; closedness is the closedness of the fixed set of a continuous map, the adjoint being continuous for the topology of bounded convergence when $\sigma$ and $\tau$ are. $\square$</p>
+<p><strong>Theorem (the left regular representation is a <code>*</code>-representation).</strong> The left and right multiplications are adjointable, with</p>
+<p>$$
+(L_a)^\dagger = L_{\sigma(a)} , \qquad (R_b)^\dagger = R_{\sigma(b)} ,
+$$</p>
+<p>and the map $a \mapsto L_a$ is a <code>*</code>-representation of $(A,\sigma)$ in $\mathcal{A}(A)$: $L_{ab} = L_aL_b$, $L_{a^*} = (L_a)^\dagger$. Hence the involution of the elements and the adjoint of the operators agree on the image of the regular representation, an agreement proved and not assumed.</p>
+<p><strong>Proof.</strong> $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$ by the cyclicity of $\tau$ and $\sigma^2 = \mathrm{id}$; the right-handed computation is the mirror. Multiplicativity is associativity and the adjoint formula is the computation. $\square$</p>
+<h2 id="the-adjointable-operators">The Adjointable Operators</h2>
+<p><strong>Proposition (closure and completion).</strong> The adjointable operators form a subalgebra $\mathcal{A}(A)$ of $B(A)$, closed under the adjoint; it is a closed subalgebra when the adjoint is continuous, and it is complete when $B(A)$ is, so the involution descends to the completion of $\mathcal{A}(A)$. The adjoint is continuous for the topology of bounded convergence.</p>
+<p><strong>Proof.</strong> Closure under products, sums and the adjoint is the theorem; the adjoint map $T \mapsto T^\dagger$ is the composite of the transpose with the form, continuous when the form is continuous and nondegenerate, and a closed $\dagger$-stable subalgebra is complete after completion with its involution extended by continuity. $\square$</p>
+<p><strong>Example (the matrix algebra).</strong> For $A = M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $\tau$ the trace, the trace pairing is the Hilbert–Schmidt inner product, the adjoint of an operator $T$ on $M_n$ is the Hilbert–Schmidt adjoint, and the self-adjoint operators are the operators fixed by it; the left regular representation is the <code>*</code>-representation of $M_n$ on itself.</p>
+<p><strong>Example (the group algebra).</strong> For the group algebra of a finite group with $\tau(\sum a_g u_g) = a_1$ and the involution $u_g^* = u_{g^{-1}}$, the trace pairing is nondegenerate and the adjoint of the left multiplication by a group element is the left multiplication by its inverse. The trace pairing is the base of the operator theory of the group algebra, <em>Group Algebras</em>.</p>
+<h2 id="the-transpose-the-form-and-the-matrix-model">The Transpose, the Form and the Matrix Model</h2>
+<p><strong>Definition.</strong> An operator $T$ has a <strong>transpose</strong> $T^{\mathsf t}$ relative to the plain pairing $\langle x,y\rangle = \tau(xy)$ when $\langle Tx,y\rangle = \langle x,T^{\mathsf t}y\rangle$; the adjoint is then the twist of the transpose by the involution.</p>
+<p><strong>Proposition (transpose and adjoint).</strong> If $T$ has a transpose $T^{\mathsf t}$ then $T$ is adjointable and</p>
+<p>$$
+T^\dagger = \sigma\,T^{\mathsf t}\,\sigma ,
+$$</p>
+<p>so the adjoint is the transpose conjugated by the involution; the transpose is linear and multiplicative, $(ST)^{\mathsf t} = T^{\mathsf t}S^{\mathsf t}$, and the adjoint inherits its anti-multiplicativity through the twist.</p>
+<p><strong>Proof.</strong> $\{Tx,y\} = \tau(Tx\,\sigma(y)) = \langle Tx,\sigma(y)\rangle = \langle x,T^{\mathsf t}\sigma(y)\rangle = \tau(x\,T^{\mathsf t}\sigma(y))$; and $\{x,\sigma(T^{\mathsf t}\sigma(y))\} = \tau(x\,\sigma(\sigma(T^{\mathsf t}\sigma(y)))) = \tau(x\,T^{\mathsf t}\sigma(y))$, so $T^\dagger = \sigma T^{\mathsf t}\sigma$. The multiplicativity of the transpose is the associativity of the product, and the twist by the anti-automorphism $\sigma$ reverses the order, giving the anti-multiplicativity of the adjoint. $\square$</p>
+<p><strong>Example (the matrix model).</strong> For $A = M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $\tau$ the trace, the plain pairing is $\langle X,Y\rangle = \operatorname{tr}(XY)$ and the transpose of an operator is the ordinary matrix transpose of the operator on the matrix space; the adjoint is its conjugate transpose, and the two coincide for real matrices.</p>
+<h2 id="summary">Summary</h2>
+<p>The form of the category of the operator theory on a Banach algebra $A$ with a continuous involution $\sigma$ and a continuous $\sigma$-invariant trace $\tau$ is the trace pairing $\{x,y\} = \tau(x\sigma(y))$, nondegenerate by hypothesis and sesquilinear; it defines the adjoint $T^\dagger$ by $\{Tx,y\} = \{x,T^\dagger y\}$. The adjoint is unique, additive, conjugate-linear and anti-multiplicative, $(ST)^\dagger = T^\dagger S^\dagger$ and $(T^\dagger)^\dagger = T$, so it is an order-two anti-automorphism of the algebra of adjointable operators, an isomorphism onto its opposite; the self-adjoint ($T^\dagger = T$) and skew ($T^\dagger = -T$) operators are real subspaces of the adjointable operators, closed when the adjoint is continuous, and every adjointable operator is their average. The left and right multiplications are adjointable with $(L_a)^\dagger = L_{\sigma(a)}$ and $(R_b)^\dagger = R_{\sigma(b)}$, so the left regular representation is a <code>*</code>-representation, and the adjointable operators form a closed subalgebra that is complete with $B(A)$. The signed, reflection and graded adjoints are the articles that follow.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\sigma$, $a^* = \sigma(a)$</td>
+<td>Banach algebra with a continuous involution</td>
+</tr>
+<tr>
+<td>$\tau$, $\tau(xy) = \tau(yx) = \tau(\sigma(x))$</td>
+<td>Continuous $\sigma$-invariant trace</td>
+</tr>
+<tr>
+<td>$\{x,y\} = \tau(x\sigma(y))$</td>
+<td>The form of the category (trace pairing), nondegenerate</td>
+</tr>
+<tr>
+<td>$T^\dagger$, $\{Tx,y\} = \{x,T^\dagger y\}$</td>
+<td>The adjoint of an operator</td>
+</tr>
+<tr>
+<td>$(ST)^\dagger = T^\dagger S^\dagger$, $(T^\dagger)^\dagger = T$</td>
+<td>Anti-multiplicativity and order two</td>
+</tr>
+<tr>
+<td>$T^\dagger = T$, $T^\dagger = -T$</td>
+<td>Self-adjoint and skew operators</td>
+</tr>
+<tr>
+<td>$\mathcal{A}(A)$</td>
+<td>The adjointable operators, a closed subalgebra</td>
+</tr>
+<tr>
+<td>$(L_a)^\dagger = L_{\sigma(a)}$</td>
+<td>The regular representation is a <code>*</code>-representation</td>
+</tr>
+<tr>
+<td>$T^{\mathsf t}$, $T^\dagger = \sigma T^{\mathsf t}\sigma$</td>
+<td>Transpose for the plain pairing; the adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the operators of a Banach algebra and the adjoints with respect to a form.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the involutive Banach algebras and the operator involution.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the Hilbert-space adjoint and the self-adjoint and skew operators.</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices, Volume I</em> (Chelsea, 1959), for the trace form, the adjoint of an operator and the Kronecker structure.</li>
+<li>Béla Bollobás, <em>Linear Analysis</em> (Cambridge University Press, second edition, 1999), for the bounded operators, the topologies and the completeness of the operator algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

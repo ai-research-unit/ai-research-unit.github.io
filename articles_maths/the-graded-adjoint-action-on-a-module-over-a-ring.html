@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-ring"><strong>The Graded Adjoint Action on a Module over a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>When a ring $A$ carries a $\mathbb{Z}/2$-grading and a module $M$ over it is graded as well, the operators that respect the grading acquire a <strong>sign</strong>: a homogeneous operator $T$ of degree $\lvert T\rvert$ satisfies $T(xa) = (-1)^{\lvert T\rvert\lvert a\rvert}T(x)a$ and $T(ax) = (-1)^{\lvert T\rvert\lvert a\rvert}aT(x)$ according to the side, and the adjoint of a product carries the Koszul sign,</p>
+<p>$$
+(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}\,T^{*}S^{*} .
+$$</p>
+<p>The <strong>adjoint action</strong> is the inner operator $\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ of the graded commutator; it is a graded derivation of degree $\lvert x\rvert$, it is compatible with the grading in the sense that it shifts the degree by $\lvert x\rvert$, and it is compatible with an involution $\sigma$ of degree zero exactly when $x$ lies in the appropriate eigenspace of $\sigma$. This article fixes the graded pairing on a graded module, computes the adjoint of a homogeneous operator, states the Koszul sign rule, and reads the adjoint action as a graded derivation with its sign.</p>
+<p>It assumes <em>The Graded Action on a Module over a Ring</em> for the graded action, <em>Involutions of the Endomorphism Ring</em> for the adjoint, <em>Star-Derivations and the Skew Derivations</em> for the inner derivations; the superalgebra of the sign rule is <em>Superalgebras and Graded Structures</em> and is named rather than used. Throughout, $A$ is a ring with a $\mathbb{Z}/2$-grading, $M$ is a graded module over $A$, the pairing $\langle-,-\rangle$ is biadditive and homogeneous of degree zero, homogeneous elements are written with their parity $\lvert a\rvert\in\mathbb{Z}/2$, and the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ is the Koszul sign.</p>
+<h2 id="the-graded-pairing-and-the-adjoint">The Graded Pairing and the Adjoint</h2>
+<p><strong>Definition.</strong> The pairing $\langle x,y\rangle$ on the graded module is <strong>graded</strong> when it is biadditive and homogeneous of degree zero, $\lvert\langle x,y\rangle\rvert = \lvert x\rvert+\lvert y\rvert$, and <strong>supersymmetric</strong> when</p>
+<p>$$
+\langle y,x\rangle = (-1)^{\lvert x\rvert\lvert y\rvert}\langle x,y\rangle .
+$$</p>
+<p>The <strong>grade involution</strong> of the ring acts on homogeneous elements by $a\mapsto (-1)^{\lvert a\rvert}a$; it is the operator $\alpha$ of the signed articles of this group.</p>
+<p><strong>Theorem.</strong> For a homogeneous operator $T$ the adjoint $T^{*}$ defined by $\langle Tx,y\rangle = \langle x,T^{*}y\rangle$ is homogeneous of degree $\lvert T\rvert$, and for homogeneous $S, T$</p>
+<p>$$
+(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}, \qquad (T^{*})^{*} = T, \qquad \mathrm{id}^{*} = \mathrm{id} .
+$$</p>
+<p>The adjoint is a <strong>graded involution</strong>: it is anti-multiplicative up to the Koszul sign.</p>
+<p><strong>Proof.</strong> The existence and uniqueness of $T^{*}$ are those of <em>Involutions of the Endomorphism Ring</em>; the degree is read off from $\lvert\langle Tx,y\rangle\rvert = \lvert T\rvert+\lvert x\rvert+\lvert y\rvert = \lvert x\rvert+\lvert T^{*}y\rvert$, so $\lvert T^{*}y\rvert = \lvert T\rvert+\lvert y\rvert$ and $\lvert T^{*}\rvert = \lvert T\rvert$. For the product, $(-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ is the ordinary adjoint of $ST$ with the sign inserted to make the two factors homogeneous of the correct degree: passing $S$ past $T^{*}$ in the chain of the pairing introduces the sign $(-1)^{\lvert S\rvert\lvert T\rvert}$, which is the Koszul rule; the order-two and the unit statements are as in the ungraded case.</p>
+<p><strong>Corollary (compatibility with the grading).</strong> The adjoint of a homogeneous operator preserves the parity, and the map $T\mapsto T^{*}$ is compatible with the grading in the sense of the sign rule above; on the even operators it restricts to the adjoint involution of the ungraded article, and on the odd ones it is the twisted (signed) adjoint.</p>
+<p><strong>Proof.</strong> The degree statement is the theorem; the restriction is the observation that for $\lvert T\rvert = 0$ the Koszul sign is $1$ and the rule is the ungraded one, while for odd operators the sign survives.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<p><strong>Definition.</strong> For $x \in A$ the <strong>adjoint action</strong> of $x$ is</p>
+<p>$$
+\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx ,
+$$</p>
+<p>the graded commutator; it is a linear map on $A$ and, for each $x$, an operator on the module by the action of $A$.</p>
+<p><strong>Theorem.</strong> For a homogeneous $x$ the operator $\operatorname{ad}_x$ is a graded derivation of degree $\lvert x\rvert$,</p>
+<p>$$
+\operatorname{ad}_x(yz) = \operatorname{ad}_x(y)z + (-1)^{\lvert x\rvert\lvert y\rvert}y\operatorname{ad}_x(z) ,
+$$</p>
+<p>it satisfies the graded Leibniz rule in the variable $x$ with the sign $(-1)^{\lvert y\rvert}$, and it is compatible with the grading by shifting the degree, $\lvert\operatorname{ad}_x(y)\rvert = \lvert x\rvert+\lvert y\rvert$.</p>
+<p><strong>Proof.</strong> Expand $\operatorname{ad}_x(yz) = xyz-(-1)^{\lvert x\rvert(\lvert y\rvert+\lvert z\rvert)}yzx$ and compare with $\operatorname{ad}_x(y)z + (-1)^{\lvert x\rvert\lvert y\rvert}y\operatorname{ad}_x(z) = xyz-(-1)^{\lvert x\rvert\lvert y\rvert}yxz+(-1)^{\lvert x\rvert\lvert y\rvert}yxz-(-1)^{\lvert x\rvert\lvert y\rvert}(-1)^{\lvert x\rvert\lvert z\rvert}yzx$; the middle terms cancel and the last term is $-(-1)^{\lvert x\rvert(\lvert y\rvert+\lvert z\rvert)}yzx$, matching. The degree is immediate from the homogeneity of the product.</p>
+<p><strong>Theorem (the graded Lie structure).</strong> The adjoint action satisfies the graded antisymmetry and the graded Jacobi identity,</p>
+<p>$$
+\operatorname{ad}_x(y) = -(-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y(x), \qquad \operatorname{ad}_x\operatorname{ad}_y - (-1)^{\lvert x\rvert\lvert y\rvert}\operatorname{ad}_y\operatorname{ad}_x = \operatorname{ad}_{\operatorname{ad}_x(y)} ,
+$$</p>
+<p>so the graded commutator turns $A$ into a <strong>graded Lie algebra</strong> and $\operatorname{ad}$ is a representation of it by graded derivations, with kernel the graded centre $Z_{\mathrm{gr}}(A)$.</p>
+<p><strong>Proof.</strong> The antisymmetry is the definition read twice; the Jacobi identity is the expansion of the graded commutator, the same computation as in the ungraded case with the Koszul signs inserted at each transposition; the kernel is the graded centre because $\operatorname{ad}_x = 0$ means $x$ graded-commutes with every element.</p>
+<p><strong>Proposition (compatibility with an involution).</strong> Let $\sigma$ be an involution of $A$ of degree zero commuting with the grade involution $\alpha$. Then</p>
+<p>$$
+\operatorname{ad}_x^{*_\sigma} = -\operatorname{ad}_{\delta(x)} , \qquad \delta = \sigma\alpha ,
+$$</p>
+<p>with respect to the twisted pairing: the adjoint of the adjoint action is the adjoint action of $-\delta(x)$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$.</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_x = L_x-(-1)^{\lvert x\rvert\lvert\cdot\rvert}R_x$ is the difference of a signed left and a signed right multiplication, and the signed adjoints of the two are $T_{\delta(x)}$ and the corresponding signed right multiplication by $\delta(x)$, by <em>The Signed Adjoint of the Left Multiplication on a Ring</em>; the difference is $-\operatorname{ad}_{\delta(x)}$.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The exterior algebra.</strong> For the exterior algebra of a module with the sign $(-1)^{\lvert x\rvert\lvert y\rvert}$, the adjoint action of a vector $v$ is the contraction-insertion operator $\operatorname{ad}_v(\omega) = v\omega-(-1)^{\lvert\omega\rvert}\omega v$, a graded derivation of degree one; its adjoint is $-\operatorname{ad}_v$ for the natural pairing, so the odd part acts by skew-adjoint operators.</p>
+<p><strong>(b) The Clifford algebra.</strong> With the Clifford product and the grading by degree, the adjoint action of a vector is the commutator $[v,\omega] = v\omega-\omega v$ on the even part and the anti-commutator on the odd part, the sign rule of <em>Hilbert Algebras</em>; the adjoint is $-\operatorname{ad}_{\delta(v)}$, and for the dagger of that theory $\delta(v) = -v$, so the adjoint action is self-adjoint.</p>
+<p><strong>(c) The matrix superalgebra.</strong> $A = M_{p|q}$ with the transpose and the grading by blocks: the adjoint action is the graded commutator of matrices, and the Koszul sign appears in the product rule the moment two odd matrices are multiplied.</p>
+<p><strong>(d) The sign rule.</strong> In every case the essential point is the sign: the adjoint of a product is $(-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$, and the graded commutator is $xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$. Setting the grading trivial, $\lvert a\rvert = 0$ for all $a$, recovers the ungraded adjoint involution and the ordinary commutator of <em>Involutions of the Endomorphism Ring</em> and <em>The Skew Field of a Ring with Involution</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded module over a graded ring the pairing is graded and supersymmetric, $\langle y,x\rangle = (-1)^{\lvert x\rvert\lvert y\rvert}\langle x,y\rangle$, and the adjoint of a homogeneous operator is homogeneous of the same degree with the <strong>Koszul sign rule</strong> $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ for products. The <strong>adjoint action</strong> $\operatorname{ad}_x(y) = xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$ is a graded derivation of degree $\lvert x\rvert$, it satisfies the graded antisymmetry and the graded Jacobi identity, so the graded commutator makes the ring a graded Lie algebra and $\operatorname{ad}$ a representation of it with kernel the graded centre. With respect to the twisted pairing the adjoint of the adjoint action is $-\operatorname{ad}_{\delta(x)}$ for $\delta = \sigma\alpha$, so the adjoint action is skew-adjoint exactly when $\delta(x) = -x$; when the grading is trivial the whole article reduces to the ungraded adjoint involution and the ordinary commutator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lvert a\rvert$</td>
+<td>Parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$(-1)^{\lvert a\rvert\lvert b\rvert}$</td>
+<td>Koszul sign</td>
+</tr>
+<tr>
+<td>$\langle y,x\rangle=(-1)^{\lvert x\rvert\lvert y\rvert}\langle x,y\rangle$</td>
+<td>Supersymmetric graded pairing</td>
+</tr>
+<tr>
+<td>$(ST)^{*}=(-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$</td>
+<td>Koszul sign rule for the adjoint</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>Grade involution, $a\mapsto(-1)^{\lvert a\rvert}a$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x(y)=xy-(-1)^{\lvert x\rvert\lvert y\rvert}yx$</td>
+<td>Adjoint action; graded commutator</td>
+</tr>
+<tr>
+<td>$\lvert\operatorname{ad}_x(y)\rvert=\lvert x\rvert+\lvert y\rvert$</td>
+<td>Degree shift</td>
+</tr>
+<tr>
+<td>graded Jacobi</td>
+<td>Graded Lie algebra; $\operatorname{ad}_{\operatorname{ad}_x(y)}$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x^{*_\sigma}=-\operatorname{ad}_{\delta(x)}$</td>
+<td>Adjoint of the adjoint action</td>
+</tr>
+<tr>
+<td>$\lvert a\rvert = 0$</td>
+<td>Trivial grading; recovers the ungraded case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for graded rings, graded modules and the Koszul sign rule.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the inner derivations and the adjoint representation.</li>
+<li>Matej Brešar, <em>Introduction to Noncommutative Algebra</em> (Springer, 2014), for the graded derivations, the adjoint action and the graded Lie structure.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the graded involution and the sign rule in the theory of algebras with involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

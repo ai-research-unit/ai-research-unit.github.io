@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conjugate Symmetry of the Hecke Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-conjugate-symmetry-of-the-hecke-operator"><strong>The Conjugate Symmetry of the Hecke Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hecke operator $T_n$ on the cusp forms of weight $k$ and level $N$ has a conjugate symmetry: it commutes with the conjugation of the coefficients, and its adjoint for the Petersson form is the conjugate operator when the space carries its natural real structure. This article states that symmetry, proves the identity $T_n^*=\iota T_n\iota$ with $\iota$ the coefficient conjugation, and draws the spectral consequences for the eigenvalues. It is the companion of <em>The Adjoint of the Hecke Operator</em>, which computes the adjoint; the Hecke action on the coefficients is <em>The Shift Operator on the Coefficients</em>, and the conjugate symmetry of the completed $L$-function is <em>The Functional Equation and the Conjugate Symmetry of an L-Function</em>. Nothing here reads a distance as an object.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> On the space $\mathcal{S}_k(\Gamma_0(N))$ the <strong>coefficient conjugation</strong> is the operator
+$$
+\iota:\sum_{m\ge1}a_mq^m\longmapsto\sum_{m\ge1}\overline{a_m}q^m ,
+$$
+and the space of the <strong>real forms</strong> is its fixed space, $\mathcal{S}_k(\Gamma_0(N))^\iota$.</p>
+<p><strong>Theorem.</strong> The coefficient conjugation is an anti-linear involution of $\mathcal{S}_k(\Gamma_0(N))$, and it is an isometry of the Petersson form:
+$$
+\iota^2=\mathrm{id},\qquad \langle\iota f,\iota g\rangle=\overline{\langle f,g\rangle} .
+$$
+The space of the cusp forms is the complexification of the space of the real forms.</p>
+<p><strong>Proof.</strong> The $q$-expansion coefficients of a cusp form are complex and the conjugation of all of them is again the $q$-expansion of a cusp form, because the functional equation of the automorphy factor is real; the isometry is the reality of the integrand of the Petersson form. The statements are the standard theory of the real structure of the space of modular forms, in <em>Modular Forms</em>.</p>
+<h3 id="the-symmetry">The symmetry</h3>
+<p><strong>Theorem (the conjugate symmetry).</strong> For every $n\ge1$ the Hecke operator commutes with the coefficient conjugation,
+$$
+\iota\,T_n\,\iota=T_n ,
+$$
+and consequently the adjoint of $T_n$ satisfies
+$$
+T_n^*=\iota\,T_n^*\,\iota,\qquad T_n^*=\overline{T_n}\ \text{ in the real basis},
+$$
+where the bar is the entrywise conjugation in a basis of forms with real $q$-expansion. In particular the matrix of $T_n$ in the basis of the real forms is real, and the characteristic polynomial of $T_n$ has real coefficients.</p>
+<p><strong>Proof.</strong> The action of $T_n$ on the $q$-expansion is the formula $\sum_{d\mid\gcd(m,n)}d^{k-1}a_{mn/d^2}$, whose coefficients are rational integers; conjugating the coefficients and applying the formula commutes with the operation. The adjoint statement follows from the theorem on the adjoint in <em>The Adjoint of the Hecke Operator</em>, because the Fricke involution commutes with $\iota$; the reality of the characteristic polynomial is the consequence that the matrix of $T_n$ in the real basis is real.</p>
+<p><strong>Corollary (the eigenvalues).</strong> The eigenvalues of $T_n$ on $\mathcal{S}_k(\Gamma_0(N))$ are the roots of a real polynomial; they are either real or occur in conjugate pairs; and the eigenforms can be chosen with real coefficients when the eigenvalue is real and with conjugate pairs of coefficients otherwise. The Ramanujan function $\tau(n)$ is real.</p>
+<p><strong>Proof.</strong> The characteristic polynomial is real, so its roots are real or in conjugate pairs; the eigenform of a real eigenvalue can be chosen in the real space, and the eigenforms of a nonreal eigenvalue are the conjugates of one another.</p>
+<h2 id="the-symmetry-of-the-operators">The Symmetry of the Operators</h2>
+<p><strong>Theorem.</strong> The conjugate symmetry holds for the good Hecke operators and for the Atkin–Lehner involutions,
+$$
+\iota\,T_n\,\iota=T_n\quad(\gcd(n,N)=1),\qquad \iota\,w_d\,\iota=w_d ,
+$$
+and it intertwines the adjoint and the conjugate:
+$$
+T_n^*=\iota\,T_n\,\iota
+$$
+on the subspaces where $T_n$ is self-adjoint. For the ramified operators $U_p$, $p\mid N$, one has $\iota U_p\iota=U_p$ but $U_p^*=\iota U_p^*\iota\ne U_p$, so the symmetry of the operator and its self-adjointness are different properties.</p>
+<p><strong>Proof.</strong> The Atkin–Lehner operators act on the $q$-expansion by a permutation of the coefficients with a root-of-unity factor, real for the appropriate normalisation, so they commute with $\iota$; the ramified case is the computation of the adjoint which is not the operator itself. This is the standard theory of <em>Modular Forms</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($N=1$).</strong> The space $\mathcal{S}_{12}(\mathrm{SL}_2(\mathbb{Z}))$ has the real form $\Delta$ with real coefficients and real eigenvalue $\tau(n)$; the operator is self-adjoint and the characteristic polynomial is $x-\tau(n)$.</p>
+<p><strong>Example ($N=11$, $k=2$).</strong> The space $\mathcal{S}_2(\Gamma_0(11))$ has real dimension one, spanned by a newform with real coefficients; its $L$-function has real Dirichlet series and the conjugate symmetry is trivial on the eigenform.</p>
+<p><strong>Example (a nonreal eigenform).</strong> On a higher-dimensional space an eigenform with a nonreal Hecke eigenvalue produces a conjugate eigenform; the pair spans a two-dimensional real subspace on which the operator acts as a rotation-dilation, and the conjugate symmetry exchanges the two.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The conjugate symmetry fails in four degenerate configurations. First, when the weight $k$ is odd the space of cusp forms of level $N$ has a modified real structure and the conjugation is not the coefficient conjugation; the symmetry must be stated with the appropriate sign. Second, the symmetry intertwines the operator with its adjoint only up to the Fricke involution when the level is not one, so on the full space the operator is normal but not self-adjoint; the "conjugate = adjoint" identity holds only after the conjugation by $w_N$. Third, the ramified operators commute with the conjugation but are not self-adjoint, so the coincidence of the two properties fails exactly at the ramified places. Fourth, the Eisenstein series do not have the real structure of the cuspidal space in the same sense, because their constant terms are not cuspidal, and the symmetry applies to the cuspidal part. These are the boundary cases of the conjugate symmetry.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hecke operator $T_n$ commutes with the coefficient conjugation $\iota$ of the cusp forms, so its matrix in the basis of the real forms is real, its characteristic polynomial has real coefficients and its eigenvalues are real or in conjugate pairs; the adjoint satisfies $T_n^*=\iota T_n\iota$ after the conjugation by the Fricke involution, so the conjugate symmetry and the self-adjointness coincide precisely on the good part of the space. The ramified operators $U_p$ commute with the conjugation but are not self-adjoint, the odd weight requires a modified real structure, and the Eisenstein part is excluded. The conjugate symmetry is the compatibility of the Hecke action with the conjugate symmetry of the associated $L$-functions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\iota$</td>
+<td>Coefficient conjugation</td>
+</tr>
+<tr>
+<td>$\mathcal{S}_k(\Gamma_0(N))^\iota$</td>
+<td>Space of the real forms</td>
+</tr>
+<tr>
+<td>$\iota T_n\iota=T_n$</td>
+<td>The conjugate symmetry</td>
+</tr>
+<tr>
+<td>$T_n^*=\iota T_n\iota$</td>
+<td>Adjoint as conjugated operator</td>
+</tr>
+<tr>
+<td>$\overline{T_n}$</td>
+<td>Conjugate matrix in the real basis</td>
+</tr>
+<tr>
+<td>$w_d$</td>
+<td>Atkin–Lehner involution</td>
+</tr>
+<tr>
+<td>$U_p$</td>
+<td>Ramified operator</td>
+</tr>
+<tr>
+<td>$\tau(n)$</td>
+<td>Ramanujan function</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Goro Shimura, <em>Introduction to the Arithmetic Theory of Automorphic Functions</em> (Princeton University Press, 1971), for the real structure of the space of cusp forms.</li>
+<li>Jean-Pierre Serre, <em>A Course in Arithmetic</em> (Springer, 1973), for the Hecke operators with real matrices.</li>
+<li>Fred Diamond and Jerry Shurman, <em>A First Course in Modular Forms</em> (Springer, 2005), for the newforms and the Atkin–Lehner operators.</li>
+<li>Martin Eichler, <em>Introduction to the Theory of Algebraic Numbers and Functions</em> (Academic Press, 1966), for the integral matrices of the Hecke operators.</li>
+<li>Wilfred Kohnen and Don Zagier, <em>Modular Forms with Rational Periods</em> (Academic Press, 1981), for the conjugate symmetry and the periods.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

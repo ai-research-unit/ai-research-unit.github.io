@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-a-hilbert-space"><strong>The Signed Adjoint of the Reflection on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection of the graded algebra $B(H)$ is the signed conjugation $\rho_U(T)=U\,\alpha(T)\,U^{-1}$, the signed sandwich with the second parameter the inverse of the first, and it is an involutive $*$-automorphism for every reflector $U$, that is, every invertible $U$ whose twisted product $U\alpha(U)$ is scalar. This article computes the adjoint of the reflection with respect to the Hilbert–Schmidt form of the category and reads off the consequences. The adjoint is again a reflection,</p>
+<p>$$
+(\rho_U)^*=\rho_{\alpha(U^*)},
+$$</p>
+<p>so the family of reflections is closed under adjunction, and the adjoint operation is the composite of the involution of the parameters, $U\mapsto U^*$, with the grade involution, $U\mapsto\alpha(U)$. The reflection is unitary on the Hilbert–Schmidt space whenever the reflector is unitary, and it is self-adjoint exactly when $\alpha(U^*)$ agrees with $U$ up to a scalar. The self-adjointness is therefore not automatic: the inner automorphisms of a Hilbert space are, in general, not self-adjoint operators on the Hilbert–Schmidt space, and the article isolates the condition and the degenerate case in which the correspondence between the reflector and the self-adjoint reflection fails.</p>
+<p>This article fixes the reflector and the reflection, the adjoint of the reflection and its closed form, the unitarity of the reflection for a unitary reflector, the self-adjointness criterion, the eigenvalue decomposition of a self-adjoint reflection, and the failure in the degenerate case $\alpha=\mathrm{id}$. The reflections and their algebra are <em>Reflections as Signed Two-Sided Operators on a Hilbert Space</em>; the signed sandwich and its composition table are <em>The Signed Sandwich on a Hilbert Space</em>; the adjoint of the sandwich is <em>The Signed Adjoint Sandwich on a Hilbert Space</em>; the one-sided adjoints are <em>The Adjoint of the Left Multiplication on a Hilbert Space</em> and <em>The Signed Adjoint of the Left Multiplication on a Hilbert Space</em>; the unitary operators are <em>Unitary Operators</em>.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operator $\Gamma$, grade involution $\alpha(T)=\Gamma T\Gamma$ and Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$; a <strong>reflector</strong> is an invertible $U$ with $U\alpha(U)=\lambda I$ scalar, and the <strong>reflection</strong> is the signed conjugation $\rho_U=S_{U,U^{-1}}$, $\rho_U(T)=U\alpha(T)U^{-1}$. The adjoint is taken with respect to the Hilbert–Schmidt form and is written with a star.</p>
+<h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
+<p><strong>Theorem (the adjoint).</strong> For every reflector $U$ the reflection has adjoint</p>
+<p>$$
+(\rho_U)^*=S_{\alpha(U^*),\,\alpha((U^*)^{-1})}=\rho_{\alpha(U^*)},
+$$</p>
+<p>so the adjoint of a reflection is the reflection by the $\alpha$-adjoint reflector; the adjoint operation on the reflections is an involution, $((\rho_U)^*)^*=\rho_U$, and it commutes with the scalar ambiguity of the reflector.</p>
+<p><em>Proof.</em> The reflection is the signed sandwich $S_{U,U^{-1}}$, whose adjoint is $S_{\alpha(U^*),\alpha((U^{-1})^*)}$ by <em>The Signed Adjoint Sandwich on a Hilbert Space</em>; since $(U^{-1})^*=(U^*)^{-1}$ and $\alpha$ is multiplicative, $\alpha((U^{-1})^*)=\alpha((U^*)^{-1})=(\alpha(U^*))^{-1}$, so the second parameter is the inverse of the first and the sandwich is the reflection $\rho_{\alpha(U^*)}$. The square of the operation is the identity because $U\mapsto U^*$ and $\alpha$ are involutions, and a scalar multiple of $U$ produces the same reflector property and the same adjoint reflection.</p>
+<p><strong>Corollary (the unitary case).</strong> If $U$ is unitary then $\alpha(U^*)=\alpha(U)^{-1}$ and</p>
+<p>$$
+(\rho_U)^*=\rho_{\alpha(U)^{-1}},
+$$</p>
+<p>so the adjoint is the reflection by the inverse of the twisted unitary, and it coincides with $\rho_U$ exactly when $U^2$ is a scalar.</p>
+<p><em>Proof.</em> Substitute $U^*=U^{-1}$ in the theorem; the second parameter of the sandwich adjoint is then the inverse of the first, which identifies the adjoint as the reflection by $\alpha(U)^{-1}$. The comparison with $\rho_U$ is the criterion of the self-adjointness theorem below.</p>
+<p><strong>Proposition (the adjoint on the eigenvalue pieces).</strong> Let $U$ be a reflector with reflection $\rho=\rho_U$ and eigenvalue decomposition $B(H)=B(H)^+_\rho\oplus B(H)^-_\rho$. The adjoint reflection is again an involutive $*$-automorphism, with its own eigenvalue decomposition</p>
+<p>$$
+B(H)=B(H)^+_{\rho_{\alpha(U^*)}}\oplus B(H)^-_{\rho_{\alpha(U^*)}} ;
+$$</p>
+<p>a self-adjoint reflection has mutually orthogonal eigenvalue pieces, the Hilbert–Schmidt orthogonal complement of $B(H)^+_\rho$ being $B(H)^-_\rho$, and in general the two decompositions differ by the adjunction.</p>
+<p><em>Proof.</em> The adjunction of operators preserves sums, products and the adjoint, so the adjoint of an involutive $*$-automorphism is again one, and hence has the eigenvalue decomposition; a self-adjoint involution on a Hilbert space has orthogonal eigenspaces, and the two eigenspaces of an involution are complementary, which gives the orthogonality statement; the two decompositions coincide exactly when the reflection is self-adjoint.</p>
+<h2 id="unitarity-and-self-adjointness">Unitarity and Self-Adjointness</h2>
+<p><strong>Theorem (unitarity).</strong> If the reflector $U$ is unitary then the reflection $\rho_U$ is a unitary operator on the Hilbert–Schmidt space; in general, for invertible $U$, the reflection is unitary if and only if $\alpha(U^*)U$ is a scalar, equivalently $\alpha(U^*)=kU^{-1}$.</p>
+<p><em>Proof.</em> $\rho_U$ is invertible with inverse $\rho_U^{-1}=\rho_{U^{-1}}$, and $(\rho_U)^*=\rho_{\alpha(U^*)}$; the reflection is unitary exactly when $(\rho_U)^*=\rho_U^{-1}$, and two reflections coincide exactly when their parameters are reciprocal scalar multiples, so the criterion is $\alpha(U^*)=kU^{-1}$, that is, $\alpha(U^*)U=kI$. For a unitary reflector $U^*=U^{-1}$ and $\alpha(U)=\pm U$, so $\alpha(U^*)U=\alpha(U)^{-1}U=\pm U^*U=\pm I$ is a scalar, and the reflection is unitary.</p>
+<p><strong>Theorem (self-adjointness).</strong> The reflection is self-adjoint, $(\rho_U)^*=\rho_U$, if and only if</p>
+<p>$$
+\alpha(U^*)=k\,U
+$$</p>
+<p>for a nonzero scalar $k$; for a unitary reflector the criterion is that $U^2$ be a scalar, and it is the same condition for the even and for the odd unitaries. In particular a general unitary reflector does not give a self-adjoint reflection.</p>
+<p><em>Proof.</em> The adjoint is $\rho_{\alpha(U^*)}$, and two reflections coincide exactly when their parameters are reciprocal scalar multiples, which gives the criterion. For unitary $U$ one has $U^*=U^{-1}$ and the criterion $\alpha(U^{-1})=kU$ reads $\alpha(U)^{-1}=kU$; multiplying by $U$ gives $\alpha(U)^{-1}U=kU^2$, and since $\alpha(U)=\pm U$ on a unitary, $U^2$ is a scalar. Conversely $U^2=cI$ makes $U^*=c^{-1}U$ and $\alpha(U)=\pm U$, so $\alpha(U^*)=\pm c^{-1}U$ is a scalar multiple of $U$ and the reflection is self-adjoint.</p>
+<p><strong>Corollary (the self-adjoint reflection is an orthogonal symmetry).</strong> A self-adjoint reflection is an involutive unitary with eigenvalues $\pm1$ on the Hilbert–Schmidt space, its eigenvalue pieces are mutually orthogonal and they exhaust the space, and it is the orthogonal symmetry with respect to the fixed algebra $B(H)^+_\rho$.</p>
+<p><em>Proof.</em> A self-adjoint involution has the spectral decomposition with eigenvalues $\pm1$ on orthogonal eigenspaces, and its fixed algebra is one of them; the exhaustive decomposition is the eigenvalue decomposition of the reflection, and the orthogonality is the self-adjointness.</p>
+<p><strong>Example (the grade involution).</strong> The identity is a reflector, $\rho_I=\alpha$, and its adjoint is $(\alpha)^*=\rho_{\alpha(I^*)}=\rho_{\alpha(I)}=\rho_I=\alpha$; the grade involution is self-adjoint for the Hilbert–Schmidt form, in agreement with the direct computation $\langle\alpha(X),Y\rangle_{\mathrm{HS}}=\langle X,\alpha(Y)\rangle_{\mathrm{HS}}$. Its eigenvalue pieces are the even and odd parts of $B(H)$, orthogonal in the Hilbert–Schmidt form, and the reflection is the symmetry that distinguishes them.</p>
+<h2 id="the-degenerate-case">The Degenerate Case</h2>
+<p><strong>Theorem (failure at $\alpha=\mathrm{id}$).</strong> Suppose the grading is trivial, $H^1=0$, so that $\alpha=\mathrm{id}$; then the reflectors are the scalar multiples of the unitaries, the reflection is the inner automorphism $\iota_U$, and</p>
+<p>$$
+(\iota_U)^*=\iota_{U^*} .
+$$</p>
+<p>Consequently $\iota_U$ is self-adjoint if and only if $U^*=kU$ for a nonzero scalar $k$; for a unitary $U$ this is $U^2$ scalar. A general inner automorphism of $B(H)$ by a unitary is therefore not self-adjoint on the Hilbert–Schmidt space, and the correspondence between the reflector and the self-adjoint reflection fails beyond the self-adjoint reflections.</p>
+<p><em>Proof.</em> With $\alpha=\mathrm{id}$ the adjoint theorem gives $(\iota_U)^*=\rho_{U^*}=\iota_{U^*}$; the reflection equality $\iota_U=\iota_V$ iff $V=kU$ gives the self-adjointness criterion; for unitary $U$, $U^*=kU$ reads $U^2=k^{-1}I$, so $U^2$ is scalar. Taking a diagonal unitary with distinct unimodular eigenvalues shows $U^2$ is not scalar and the inner automorphism is not self-adjoint.</p>
+<p><strong>Corollary (the self-adjoint inner automorphisms).</strong> In the degenerate case the self-adjoint inner automorphisms are exactly the conjugations by the unitary operators with $U^2$ scalar, that is, the reflections through a real orthogonal structure; the inner automorphism by a self-adjoint unitary is one of them, and the group of self-adjoint inner automorphisms is the group of such unitaries modulo the scalars.</p>
+<p><em>Proof.</em> The criterion $U^2$ scalar characterises the unitaries whose conjugation is self-adjoint; the scalar ambiguity of the parameter gives the quotient by the centre, and a self-adjoint unitary $U=U^*$ has $U^2=I$, hence belongs.</p>
+<p><strong>Proposition (the general case contains the degenerate one).</strong> When the grading is nontrivial the reflections include the inner automorphisms by the even unitaries, and for these the self-adjointness condition $\alpha(U^*)=kU$ reduces to $U^*=kU$ because $\alpha$ fixes them; the nontrivial grading therefore does not repair the failure, it only adds the reflections by the odd unitaries, for which the twisted condition differs from the untwisted one by the sign of the odd part.</p>
+<p><em>Proof.</em> An even unitary $U$ has $\alpha(U)=U$, so $\alpha(U^*)=\alpha(U)^*=U^*$ and the criterion is the degenerate one; an odd unitary $U$ has $\alpha(U)=-U$, so $\alpha(U^*)=-U^*$ and the criterion is $U^*=-kU$, which is the sign-twisted equation of the degenerate case.</p>
+<h2 id="summary">Summary</h2>
+<p>For a reflector $U$, the reflection $\rho_U(T)=U\alpha(T)U^{-1}$ has adjoint $(\rho_U)^*=\rho_{\alpha(U^*)}$ with respect to the Hilbert–Schmidt form, so the reflections are closed under adjunction, the operation being the composite of the Hilbert adjoint of the parameter with the grade involution. The reflection is unitary exactly when $\rho_U^*=\rho_U^{-1}$, that is, when $\alpha(U^*)U$ is a scalar, and in particular every unitary reflector gives a unitary reflection; it is self-adjoint exactly when $\alpha(U^*)=kU$ for a scalar, which for a unitary reflector is the scalar condition $U^2=cI$ and for the degenerate grading $\alpha=\mathrm{id}$ is the same condition, so a general unitary reflector does not give a self-adjoint reflection. A self-adjoint reflection is then an orthogonal symmetry with eigenvalues $\pm1$ on the orthogonal pieces it distinguishes. The grade involution itself, the reflection by the identity, is self-adjoint, and the degenerate case shows that the general inner automorphism of $B(H)$ by a unitary is not self-adjoint on the Hilbert–Schmidt space; the nontrivial grading adds the odd reflectors without repairing that failure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_U(T)=U\alpha(T)U^{-1}=S_{U,U^{-1}}(T)$</td>
+<td>the reflection</td>
+</tr>
+<tr>
+<td>$U\alpha(U)=\lambda I$, $|\lambda|=1$</td>
+<td>the reflector condition</td>
+</tr>
+<tr>
+<td>$(\rho_U)^*=\rho_{\alpha(U^*)}$</td>
+<td>the adjoint of the reflection</td>
+</tr>
+<tr>
+<td>$(\rho_U)^*=\rho_U^{-1}\iff\alpha(U^*)U$ scalar</td>
+<td>the unitarity criterion</td>
+</tr>
+<tr>
+<td>$\alpha(U^*)=kU$</td>
+<td>self-adjointness criterion</td>
+</tr>
+<tr>
+<td>$U^2$ scalar</td>
+<td>the criterion in the degenerate case</td>
+</tr>
+<tr>
+<td>$B(H)^\pm_\rho$</td>
+<td>the eigenvalue pieces of a reflection</td>
+</tr>
+<tr>
+<td>$\rho_I=\alpha$</td>
+<td>the grade involution, self-adjoint</td>
+</tr>
+<tr>
+<td>$\iota_U$</td>
+<td>the inner automorphism in the degenerate case</td>
+</tr>
+<tr>
+<td>$\rho_A=\rho_C\iff A=kC$</td>
+<td>the scalar ambiguity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the $*$-automorphisms, the inner automorphisms and the adjoint operation.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the elementary operators and their adjoints.</li>
+<li>Barry Simon, <em>Trace Ideals and Their Applications</em>, Mathematical Surveys and Monographs 120 (American Mathematical Society, 2nd ed. 2005), for the Hilbert–Schmidt form and the rank-one computations.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the adjoint of an inner automorphism and the reflection examples.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the automorphisms of $B(H)$ and the unitary implementations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

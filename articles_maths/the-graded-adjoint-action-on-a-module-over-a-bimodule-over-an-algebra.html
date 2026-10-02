@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Bimodule over an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-bimodule-over-an-algebra"><strong>The Graded Adjoint Action on a Module over a Bimodule over an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The graded action of a graded algebra on a graded module is even, and the Koszul sign rule governs every exchange of two homogeneous things. This article is about the <strong>adjoint action</strong>, the transpose of the graded action with respect to an $\alpha$-invariant pairing: the operator $L_a$ has adjoint $L_{\sigma(a)}$, so the algebra acts on the module a second time by $a\triangleright x=\sigma(a)x$; the article computes this action, shows that it is compatible with the grading, and derives the sign rule for the adjoint of a graded commutator.</p>
+<p>The article is the seventh and last of the <code>* Operator Theory</code> group of this category. It assumes the graded action and the Koszul sign rule of <em>The Graded Action on a Module over a Bimodule over an Algebra</em>, the one-sided adjoints of <em>The Signed Adjoint of the Left Multiplication on a Module over an Algebra</em> and <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>, and the involution and unitarity of <em>Module Operators with an Involution</em>. The grading itself, superalgebras and their morphisms belong to <em>Superalgebras and Graded Structures</em>. The article stays inside Part I: no distance, norm, form with a norm, positivity, topology or limit. Throughout, $R$ is a commutative ring with $1 \neq 0$ in which $2$ is invertible, $(A,\sigma)$ is a graded involutive $R$-algebra with graded involution ($\sigma(A_i)\subseteq A_i$) and grade involution $\alpha$ commuting with $\sigma$, $\beta=\alpha\sigma$, ${}_A M_A$ is a graded bimodule with the Koszul right action and an $\alpha$-invariant balanced $\sigma$-sesquilinear pairing, and $L_a$, $L^{\alpha}_a$ are the one-sided operators.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<h3 id="the-transpose-of-the-left-action">The transpose of the left action</h3>
+<p><strong>Definition.</strong> The <strong>adjoint action</strong> of $A$ on $M$ is</p>
+<p>$$
+a \triangleright x = \sigma(a)\,x \qquad (a \in A,\ x \in M),
+$$</p>
+<p>the one-sided operator adjoint read as an action: since $(L_a)^{*}=L_{\sigma(a)}$, the adjoint of the left multiplication by $a$ is the left multiplication by $\sigma(a)$.</p>
+<p><strong>Proposition.</strong> The adjoint action is a right action of $A$ on $M$,</p>
+<p>$$
+(a b)\triangleright x = b\triangleright(a\triangleright x),
+$$</p>
+<p>and it satisfies $a\triangleright x = L_a^{*}(x)$; the original left action is recovered from the adjoint action by $a x=\sigma(a)\triangleright x$.</p>
+<p><em>Proof.</em> $(ab)\triangleright x=\sigma(ab)x=\sigma(b)\sigma(a)x=b\triangleright(\sigma(a)x)=b\triangleright(a\triangleright x)$, so it is a right action; the last two clauses are the definitions and $\sigma^{2}=\mathrm{id}$. $\square$</p>
+<p>The pairing converts the left action of $A$ into the right adjoint action of $A$; the two actions together are the module-level form of the statement that the adjoint reverses the order, the content of $(L_{ab})^{*}=(L_b)^{*}(L_a)^{*}$.</p>
+<h3 id="evenness-of-the-adjoint-action">Evenness of the adjoint action</h3>
+<p><strong>Proposition.</strong> If the involution $\sigma$ is graded, $\sigma(A_i)\subseteq A_i$, then the adjoint action is even:</p>
+<p>$$
+a \in A_i \implies a\triangleright M_j \subseteq M_{i+j}, \qquad \deg(a\triangleright x)=\deg a+\deg x \quad (a,x \text{ homogeneous}).
+$$</p>
+<p><em>Proof.</em> $a\triangleright M_j=\sigma(a)M_j$, and $\deg\sigma(a)=\deg a$ because $\sigma$ is graded, so $a\triangleright M_j\subseteq M_{i+j}$. $\square$</p>
+<p><strong>Corollary.</strong> The operator $L_a^{*}=L_{\sigma(a)}$ has the same parity as $L_a$, and the adjoint operation preserves the $\mathbb{Z}/2$-degree of every homogeneous one-sided operator:</p>
+<p>$$
+\deg L_a^{*}=\deg L_a=\deg a .
+$$</p>
+<p><em>Proof.</em> $L_a$ has parity $\deg a$ by the evenness of the action, and $\deg\sigma(a)=\deg a$, so $L_{\sigma(a)}$ has the same parity. $\square$</p>
+<p>The adjoint is therefore not only additive and anti-multiplicative but <strong>graded</strong>: it maps operators of parity $i$ to operators of parity $i$, so no sign appears in the parity alone.</p>
+<h2 id="the-sign-rule">The Sign Rule</h2>
+<h3 id="the-koszul-sign-of-the-operators">The Koszul sign of the operators</h3>
+<p><strong>Proposition.</strong> For homogeneous $a$ and for every homogeneous operator $T$ of parity $\deg T$ the grade involution acts on the operators by the Koszul sign:</p>
+<p>$$
+\alpha\,L_a\,\alpha^{-1}=(-1)^{\deg a}L_a, \qquad \alpha\,T\,\alpha^{-1}=(-1)^{\deg T}T .
+$$</p>
+<p><em>Proof.</em> This is the sign rule of <em>The Graded Action on a Module over a Bimodule over an Algebra</em>. $\square$</p>
+<p><strong>Corollary.</strong> The sign rule is compatible with the adjoint: for homogeneous $T$,</p>
+<p>$$
+\alpha\,T^{*}\,\alpha^{-1}=(-1)^{\deg T}T^{*}.
+$$</p>
+<p><em>Proof.</em> $T^{*}$ has the same parity as $T$ by the gradedness of the adjoint, so applying the sign rule to $T^{*}$ gives the identity. $\square$</p>
+<p>Conjugation by the grade involution, the adjoint, and the grading are therefore mutually compatible: both operations multiply a homogeneous operator by the same sign $(-1)^{\deg T}$.</p>
+<h3 id="the-graded-commutator">The graded commutator</h3>
+<p><strong>Definition.</strong> For homogeneous operators $S$ and $T$ the <strong>graded commutator</strong> is</p>
+<p>$$
+[S,T]_{\epsilon}=ST-\epsilon\,TS, \qquad \epsilon=(-1)^{\deg S\,\deg T}.
+$$</p>
+<p>When $\epsilon=1$ it is the ordinary commutator; when $\epsilon=-1$, the case of two odd operators, it is the ordinary <strong>anticommutator</strong>.</p>
+<p><strong>Proposition.</strong> The graded commutator of the left multiplications is a left multiplication,</p>
+<p>$$
+[L_a,L_b]_{\epsilon}=L_{ab-\epsilon\,ba}, \qquad \epsilon=(-1)^{\deg a\,\deg b},
+$$</p>
+<p>and it vanishes exactly when $L_{ab-\epsilon ba}=0$, that is, when $ab-\epsilon ba$ annihilates $M$.</p>
+<p><em>Proof.</em> $L_aL_b-L_bL_a\cdot\epsilon=\ldots$: since $L_aL_b=L_{ab}$, the expression is $L_{ab}-\epsilon L_{ba}=L_{ab-\epsilon ba}$; the last clause is the kernel statement for $L$. $\square$</p>
+<p>The graded commutator is the graded version of the commutator, and the sign $\epsilon$ is the Koszul sign attached to the exchange of $a$ and $b$.</p>
+<h2 id="the-adjoint-of-the-graded-commutator">The Adjoint of the Graded Commutator</h2>
+<h3 id="the-sign-rule-for-the-bracket">The sign rule for the bracket</h3>
+<p><strong>Theorem.</strong> For homogeneous $a$ and a homogeneous operator $T$, with $\epsilon=(-1)^{\deg a\,\deg T}$,</p>
+<p>$$
+[L_a,T]_{\epsilon}^{*}=-\epsilon\,\bigl[L_{\sigma(a)},T^{*}\bigr]_{\epsilon}.
+$$</p>
+<p>Thus the adjoint of the graded commutator is the graded commutator of the adjoints, up to the sign $-\epsilon$: the ordinary sign $-1$ for the commutator ($\epsilon=1$) and the sign $+1$ for the anticommutator ($\epsilon=-1$).</p>
+<p><em>Proof.</em> By the laws of the adjoint, $(L_aT)^{*}=T^{*}L_{\sigma(a)}$ and $(TL_a)^{*}=L_{\sigma(a)}T^{*}$, and $T^{*}$ has parity $\deg T$; hence</p>
+<p>$$
+[L_a,T]_{\epsilon}^{*}=T^{*}L_{\sigma(a)}-\epsilon\,L_{\sigma(a)}T^{*}=-\epsilon\bigl(L_{\sigma(a)}T^{*}-\epsilon\,T^{*}L_{\sigma(a)}\bigr)=-\epsilon\,[L_{\sigma(a)},T^{*}]_{\epsilon}. \qquad\square
+$$</p>
+<p><strong>Corollary.</strong> For two homogeneous left multiplications,</p>
+<p>$$
+[L_a,L_b]_{\epsilon}^{*}=L_{\sigma(ab-\epsilon ba)}=-\epsilon\,[L_{\sigma(a)},L_{\sigma(b)}]_{\epsilon}.
+$$</p>
+<p><em>Proof.</em> Apply the theorem with $T=L_b$, $T^{*}=L_{\sigma(b)}$, and use $[L_a,L_b]_\epsilon=L_{ab-\epsilon ba}$ and $\sigma(ab-\epsilon ba)=\sigma(b)\sigma(a)-\epsilon\,\sigma(a)\sigma(b)$. $\square$</p>
+<p>The theorem is the sign rule the grading imposes on the adjoint action: for two odd operators the anticommutator has a self-adjoint bracket, $[L_a,T]_{-1}^{*}=[L_{\sigma(a)},T^{*}]_{-1}$, while for the ordinary commutator a sign is required. It is the graded refinement of the elementary fact that the adjoint of a composite reverses the order.</p>
+<h3 id="the-sign-rule-for-the-sandwich">The sign rule for the sandwich</h3>
+<p><strong>Proposition.</strong> The adjoint action on the signed sandwiches is compatible with the grading:</p>
+<p>$$
+\bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(b)}, \qquad \bigl(S_{a,b}\bigr)^{*}=S_{\sigma(a),\sigma(b)},
+$$</p>
+<p>and it sends operators of parity $i$ to operators of parity $i$: the adjoint action preserves the degree and the sign rule of the graded operators.</p>
+<p><em>Proof.</em> This is <em>The Signed Adjoint of the Sandwich on a Bimodule over an Algebra</em>; the parity statement follows because $\sigma$ and $\alpha$ are graded and their composite $\beta$ is graded, so both parameters keep their degrees. $\square$</p>
+<h2 id="the-adjoint-action-on-the-operators">The Adjoint Action on the Operators</h2>
+<h3 id="the-action-of-the-adjoint-action">The action of the adjoint action</h3>
+<p><strong>Proposition.</strong> The adjoint action of $A$ on $M$ induces an action on the operators by</p>
+<p>$$
+a \cdot T = L_{\sigma(a)}\,T, \qquad a \cdot T = T\,L_{\sigma(a)} ,
+$$</p>
+<p>the left and right regular actions of $A$ composed with the adjoint action, and the adjoint of $a\cdot T$ is computed by the rules above; in particular</p>
+<p>$$
+(L_a T)^{*}=T^{*}L_{\sigma(a)}, \qquad (T L_a)^{*}=L_{\sigma(a)}T^{*} .
+$$</p>
+<p><em>Proof.</em> The two formulas are the anti-multiplicativity of the adjoint with $(L_a)^{*}=L_{\sigma(a)}$. $\square$</p>
+<p><strong>Corollary.</strong> The adjoint action intertwines the involution of the algebra with the involution of the operators: the algebra element $a$ acts through $L_{\sigma(a)}$, so the adjoint action is the original action precomposed with $\sigma$, and applying the operator involution to an action applies $\sigma$ to the algebra element.</p>
+<p><em>Proof.</em> $L_a^{*}=L_{\sigma(a)}$ is the identity defining the adjoint action; the rest is its restatement. $\square$</p>
+<h3 id="self-adjointness-under-the-adjoint-action">Self-adjointness under the adjoint action</h3>
+<p><strong>Proposition.</strong> Let $T$ be homogeneous and let $a$ be homogeneous with $\sigma(a)=a$. Then $T$ is self-adjoint if and only if the graded commutator $[L_a,T]_{\epsilon}$ is skew with respect to the adjoint in the graded sense,</p>
+<p>$$
+T^{*}=T \implies [L_a,T]_{\epsilon}^{*}=-\epsilon\,[L_a,T]_{\epsilon},
+$$</p>
+<p>and conversely $T^{*}=T$ follows when this holds for a separating family of such $a$.</p>
+<p><em>Proof.</em> By the theorem $[L_a,T]_{\epsilon}^{*}=-\epsilon[L_a,T^{*}]_{\epsilon}$, and with $\sigma(a)=a$ this is $-\epsilon[L_a,T^{*}]_{\epsilon}$. If $T^{*}=T$ it equals $-\epsilon[L_a,T]_{\epsilon}$, which is the displayed skewness. Conversely, if the skewness holds then $[L_a,T^{*}]_{\epsilon}=[L_a,T]_{\epsilon}$ for the family, that is $L_{a(T^{*}-T)-\epsilon(T^{*}-T)a}=0$, and for a separating family this forces $T^{*}=T$. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The trivial grading.</strong> For $\alpha=\mathrm{id}$ the sign rule is vacuous, the graded commutator is the ordinary one, and the theorem reads $[L_a,T]^{*}=-[L_{\sigma(a)},T^{*}]$, the classical rule for the commutator with a left multiplication.</p>
+<p><strong>(b) The trivial involution.</strong> For $\sigma=\mathrm{id}$ the adjoint action is the original action, $a\triangleright x=ax$, and every operator is graded: the sign rule reduces to the graded action of <em>The Graded Action on a Module over a Bimodule over an Algebra</em>.</p>
+<p><strong>(c) The Clifford algebra.</strong> For a Clifford algebra with its canonical involution $\sigma$ and grade involution $\alpha$, the graded commutator $[L_a,L_b]_\epsilon=L_{ab-\epsilon ba}$ is the algebra bracket, and the theorem computes its adjoint with the Koszul sign; the anticommutator of two odd vectors is even and self-adjoint under the adjoint action.</p>
+<p><strong>(d) The exterior algebra.</strong> For $A=\Lambda(V)$ with the graded-commutative product, the graded commutator of two odd elements is the anticommutator, and its adjoint is the anticommutator of the adjoints with the sign $+1$, in agreement with the theorem.</p>
+<p><strong>(e) The matrix algebra with a diagonal grading.</strong> For $A=M_n(k)$ with the transpose involution and a diagonal grading by parity of the index, $\sigma$ is graded, and the adjoint action is $a\triangleright X=a^{\mathsf{T}}X$; the graded commutator's adjoint acquires the sign $-\epsilon$.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded module over a graded involutive algebra with an $\alpha$-invariant balanced pairing, the transpose of the left action $L_a$ is the left multiplication by $\sigma(a)$, so the algebra acts on the module a second time by the adjoint action $a\triangleright x=\sigma(a)x$, which is a right action and is even when the involution is graded. The adjoint operation preserves the parity of every homogeneous operator, and it is compatible with the Koszul sign rule: both the grade involution and the adjoint multiply a homogeneous operator by $(-1)^{\deg T}$. The graded commutator $[S,T]_\epsilon=ST-\epsilon TS$ has adjoint $[L_a,T]_\epsilon^{*}=-\epsilon[L_{\sigma(a)},T^*]_\epsilon$, so the adjoint of the ordinary commutator is minus the commutator of the adjoints and the adjoint of the anticommutator is the anticommutator of the adjoints; for two left multiplications the bracket is again a left multiplication and the formula reads $[L_a,L_b]_\epsilon^{*}=L_{\sigma(ab-\epsilon ba)}$. The adjoint action on the signed sandwiches is $(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{\beta(a),\beta(b)}$ with $\beta=\alpha\sigma$, and it preserves the degree and the sign rule. Nothing in the article uses a norm or a topology; the sign rule is the Koszul sign of the grading, and the adjoint action is the transpose of the graded action with respect to the pairing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $(A,\sigma)$</td>
+<td>base ring, graded involutive $R$-algebra, graded involution</td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta=\alpha\sigma$</td>
+<td>grade involution, commuting with $\sigma$, and the composite</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>graded bimodule with α-invariant balanced σ-sesquilinear pairing</td>
+</tr>
+<tr>
+<td>$a\triangleright x=\sigma(a)x$</td>
+<td>the adjoint action, a right action</td>
+</tr>
+<tr>
+<td>$L_a^{*}=L_{\sigma(a)}$</td>
+<td>the adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$(-1)^{\deg T}$</td>
+<td>the Koszul sign of the operator $T$</td>
+</tr>
+<tr>
+<td>$\alpha T\alpha^{-1}=(-1)^{\deg T}T$</td>
+<td>the sign rule</td>
+</tr>
+<tr>
+<td>$[S,T]_\epsilon=ST-\epsilon TS$</td>
+<td>the graded commutator, $\epsilon=(-1)^{\deg S\deg T}$</td>
+</tr>
+<tr>
+<td>$[L_a,T]_\epsilon^{*}=-\epsilon[L_{\sigma(a)},T^{*}]_\epsilon$</td>
+<td>the sign rule for the adjoint of the bracket</td>
+</tr>
+<tr>
+<td>$(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{\beta(a),\beta(b)}$</td>
+<td>the adjoint action on the signed sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I</em>, Chapters 1–3 (Springer, 1998), for graded algebras, involutions and sesquilinear forms.</li>
+<li>Pierre Deligne and John W. Morgan, <em>Notes on Supersymmetry</em>, in <em>Quantum Fields and Strings: A Course for Mathematicians</em> (American Mathematical Society, 1999), for the Koszul sign rule and graded operators.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for graded involutions and their adjoints.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the grade involution, the graded commutator and the adjoint action.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for one-sided operators, their adjoints and the graded bookkeeping over rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

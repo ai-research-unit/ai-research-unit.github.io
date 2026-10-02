@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Sandwich on a Krein Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-sandwich-on-a-krein-space"><strong>The Hermitian Sandwich on a Krein Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a Krein space $K$ with fundamental symmetry $J$ and indefinite adjoint $\dagger$, the <strong>Hermitian sandwich</strong> of a bounded operator $T$ by an operator $Q$ is</p>
+<p>$$
+H_{Q}(T) = Q\,T\,Q^{\dagger} ,
+$$</p>
+<p>the two-sided operator built from $Q$ and its indefinite adjoint. It is the indefinite counterpart of the sandwich $\Theta_x$ of a Hilbert algebra, and it is the operation that transports operators along the symmetry group of the form: for a $J$-unitary $Q$ the sandwich is the inner automorphism $\mathrm{Ad}_Q$, it preserves the indefinite form and the $J$-positivity, and it acts on self-adjointness and on the kernel and the image in a way that can be computed exactly.</p>
+<p>The contrast with the Hilbert case is the interesting part. In Hilbert space the sandwich by a unitary $U$ is a unitary equivalence, so it preserves the Hilbert norm, the spectrum, the positive cone and every spectral subspace. In a Krein space the sandwich by a $J$-unitary $Q$ preserves the indefinite form but not the Hilbert inner product, because a $J$-unitary operator need not be Hilbert-unitary: it is a form-isometry of the indefinite geometry, and the Hilbert norm of the sandwich generally changes. What is preserved is the indefinite geometry — the form, the $J$-positivity, the $J$-self-adjointness, the $J$-unitarity — and what is not preserved is the Hilbert metric; the sandwich therefore fails to transport the spectrum, and this failure is the reason the indefinite theory needs the modular and spectral tools of <em>Spectral Theory on Krein Spaces</em> rather than the Hilbert spectral theorem.</p>
+<p>This article fixes the dagger sandwich, its adjoint and composition laws, the preservation of the form and of $J$-positivity, the kernel and the image, the automorphism statement on the unitary slice, and the contrast with the Hilbert case.</p>
+<p>The indefinite adjoint is <em>J-Self-Adjoint and J-Unitary Operators</em>; the fundamental symmetry and the form are <em>The Fundamental Symmetry</em> and <em>Krein Spaces</em>; the $J$-positive cone and the order are <em>The J-Positive Cone and the J-Order</em> and <em>Krein Algebras</em>; the Hilbert-algebra sandwich is <em>The Adjoint of the Sandwich on a Hilbert Algebra</em> and <em>The Hermitian Sandwich on a Hilbert Algebra with Hermitian Adjoint</em>; the spectral consequences are <em>Spectral Theory on Krein Spaces</em>. Those are cited. The space is $K$ with form $[\cdot,\cdot]$, fundamental symmetry $J$, Hilbert adjoint $*$ and indefinite adjoint $\dagger$.</p>
+<h2 id="the-dagger-sandwich">The Dagger Sandwich</h2>
+<p><strong>Definition.</strong> For bounded operators $Q, T$ the <strong>Hermitian sandwich</strong> (or <strong>dagger sandwich</strong>) is</p>
+<p>$$
+H_{Q}(T) = Q\,T\,Q^{\dagger} , \qquad Q^{\dagger} = JQ^{*}J .
+$$</p>
+<p><strong>Proposition (adjoint and composition laws).</strong> For all bounded $Q, S, T$,</p>
+<p>$$
+H_{Q}(T)^{\dagger} = H_{Q}(T^{\dagger}) , \qquad H_{Q}(H_{S}(T)) = H_{QS}(T) , \qquad H_{Q}(ST) = H_{Q}(S)H_{Q}(T) \text{ if } Q^{\dagger}Q = 1 .
+$$</p>
+<p><strong>Proof.</strong> $(QTQ^{\dagger})^{\dagger} = Q^{\dagger\dagger}T^{\dagger}Q^{\dagger} = QT^{\dagger}Q^{\dagger}$; the composition is associativity; the multiplicativity uses $Q^{\dagger}Q = 1$ to cancel the middle pair.</p>
+<p><strong>Proposition (the parameter rule).</strong> For a scalar $\alpha$ one has $H_{\alpha Q}(T) = |\alpha|^{2}H_{Q}(T)$; the sandwich is a semilinear, homogeneous quadratic operation in the parameter and linear in the argument.</p>
+<p><strong>Proof.</strong> $(\alpha Q)^{\dagger} = \bar\alpha Q^{\dagger}$ and $(\alpha Q)T(\bar\alpha Q^{\dagger}) = |\alpha|^{2}QTQ^{\dagger}$.</p>
+<p><strong>Remark (the Hilbert-algebra sandwich is the definite case).</strong> When $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint, the dagger sandwich is the sandwich $\Theta_Q(T) = QTQ^{*}$ of a Hilbert algebra, and every statement below reduces to the Hilbert one; the indefinite theory is the same family of operations read with a form of nonzero rank.</p>
+<h2 id="preservation-of-the-form-and-of-j-positivity">Preservation of the Form and of J-Positivity</h2>
+<p><strong>Theorem (form preservation by $J$-unitary parameters).</strong> Let $Q$ be $J$-unitary, $Q^{\dagger}Q = QQ^{\dagger} = 1$. Then for every $T$ and all $x, y$</p>
+<p>$$
+[H_{Q}(T)x, H_{Q}(T)y] = [Tx,Ty] , \qquad [H_{Q}(T)x,y] = [Tx, Q^{\dagger}y] ,
+$$</p>
+<p>and $H_{Q}(T)$ is $J$-isometric whenever $T$ is; in particular the $J$-unitary group acts on the operators by sandwiches preserving the indefinite geometry.</p>
+<p><strong>Proof.</strong> $[QTQ^{\dagger}x, QTQ^{\dagger}y] = [TQ^{\dagger}x, TQ^{\dagger}y]$ because $Q$ preserves the form; the second identity is the same preservation with one argument unmoved; the isometry statement is the first identity with $T$ an isometry.</p>
+<p><strong>Proposition (preservation of $J$-self-adjointness and $J$-positivity).</strong> If $T$ is $J$-self-adjoint then $H_{Q}(T)$ is $J$-self-adjoint; if $T$ is $J$-positive and $Q$ is $J$-unitary then $H_{Q}(T)$ is $J$-positive; and if $T$ is $J$-unitary then $H_{Q}(T)$ is $J$-unitary.</p>
+<p><strong>Proof.</strong> The first statement is $H_Q(T)^{\dagger} = H_Q(T^\dagger) = H_Q(T)$ for $J$-self-adjoint $T$; for the second, $[H_Q(T)x,x] = [TQ^{\dagger}x,Q^{\dagger}x]\geq0$ by the second identity of the theorem and the $J$-positivity of $T$; the third is the isometry statement applied twice.</p>
+<p><strong>Proposition (the $J$-adjoint sandwich).</strong> With $Q = J$ one has $J^{\dagger} = J$ and $H_{J}(T) = JTJ$; this sandwich translates the indefinite data into Hilbert data: $H_{J}(T)$ is Hilbert-self-adjoint exactly when $T$ is $J$-self-adjoint, and $H_{J}(T)\geq0$ in the Hilbert sense exactly when $T$ is $J$-positive.</p>
+<p><strong>Proof.</strong> $H_J(T) = JTJ$ and $(JTJ)^{*} = JT^{*}J = T^{\dagger}$; the positivity statement is $[Tx,x] = \langle JTx,x\rangle = \langle JTJx,x\rangle$-type with the Hilbert-positivity of $JTJ$.</p>
+<h2 id="the-kernel-and-the-image">The Kernel and the Image</h2>
+<p><strong>Theorem (kernel and image for invertible parameters).</strong> Let $Q$ be invertible. Then for every $T$</p>
+<p>$$
+\ker H_{Q}(T) = Q^{\dagger-1}\bigl(\ker T\bigr) = (Q^{\dagger})^{-1}\ker T , \qquad \mathrm{im}\,H_{Q}(T) = Q\bigl(\mathrm{im}\,T\bigr) ,
+$$</p>
+<p>and for $J$-unitary $Q$ these read $\ker H_{Q}(T) = Q\ker T$ and $\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$.</p>
+<p><strong>Proof.</strong> $QTQ^{\dagger}x = 0 \iff TQ^{\dagger}x = 0$, so $x\in\ker H_Q(T) \iff Q^{\dagger}x\in\ker T$; the image statement is the same computation with the roles reversed, and $Q$ maps the image of $T$ onto the image of the sandwich.</p>
+<p><strong>Corollary (rank and index).</strong> For $J$-unitary $Q$ the sandwich preserves the dimension of the kernel, the codimension of the image and hence the Fredholm index of $T$; it does not preserve the Hilbert-orthogonal complement of the image, only the $J$-orthogonal one.</p>
+<p><strong>Proof.</strong> $Q$ is an isomorphism of the vector space $K$ and an isometry of the indefinite form; the kernel and image statements are the theorem, and the orthogonality statement is that $Q$ preserves $[\cdot,\cdot]$ but not $\langle\cdot,\cdot\rangle$.</p>
+<p><strong>Remark (what is preserved and what is not).</strong> The sandwich by a $J$-unitary $Q$ preserves the kernel dimension, the range and its codimension, and the indefinite geometry; it does not preserve the Hilbert norm, the Hilbert-orthogonal complements, the spectrum or the Hilbert positive cone. This is the exact sense in which the indefinite sandwich is a symmetry of the form and not of the metric.</p>
+<h2 id="the-unitary-slice-and-automorphisms">The Unitary Slice and Automorphisms</h2>
+<p><strong>Theorem (the sandwich is the inner automorphism on the $J$-unitary group).</strong> For $J$-unitary $Q$ the map $T\mapsto H_{Q}(T) = QTQ^{\dagger}$ is an algebra automorphism of $B(K)$ preserving the $J$-adjoint operation, with inverse $H_{Q^{\dagger}}$; the assignment $Q\mapsto H_{Q}$ is a group homomorphism from the $J$-unitary group $\mathcal{U}_{J}(K)$ into $\mathrm{Aut}(B(K))$ with kernel the scalars of modulus one.</p>
+<p><strong>Proof.</strong> Multiplicativity and preservation of the $J$-adjoint are the laws of the first section with $Q^{\dagger}Q = 1$; the inverse statement is $H_{Q}H_{Q^{\dagger}} = H_{QQ^{\dagger}} = \mathrm{id}$; the kernel statement is that $QTQ^{\dagger} = T$ for all $T$ forces $Q$ to be a scalar.</p>
+<p><strong>Proposition (what the automorphism does to the $J$-self-adjoint part).</strong> The automorphism $H_{Q}$ maps the real space of $J$-self-adjoint operators onto itself and the $J$-positive cone onto itself; on the $J$-unitary group it is the conjugation $U\mapsto QUQ^{\dagger}$, which is the defining action of $\mathcal{U}_{J}(K)$ on itself.</p>
+<p><strong>Proof.</strong> Preservation of $J$-self-adjointness and of $J$-positivity is the theorem of the previous section; the action on the unitary group is multiplicativity.</p>
+<p><strong>Remark (the sandwich generates the inner symmetries).</strong> Every $J$-unitary equivalence of operators is a sandwich, and every sandwich by a $J$-unitary element is a symmetry of the indefinite geometry. The inner symmetries of the theory are therefore exactly the sandwiches, and the outer ones — the modular and spectral operations that do not come from an element — are what the theory cannot express as a sandwich; this is the same dichotomy as in the Hilbert-algebra case, where the sandwiches give the inner automorphisms and the modular flow is generally outer.</p>
+<h2 id="contrast-with-the-hilbert-case">Contrast with the Hilbert Case</h2>
+<p><strong>Proposition (Hilbert space).</strong> If $J = \mathrm{id}$ then $K$ is a Hilbert space, every $Q$ with $Q^{*}Q = QQ^{*} = 1$ is unitary and $H_{Q}(T) = QTQ^{*}$; the sandwich is a unitary equivalence, so it preserves the Hilbert norm, the spectrum, the Hilbert positive cone, the Hilbert-orthogonal complements and the whole Hilbert spectral theory.</p>
+<p><strong>Proof.</strong> With $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint and the statements are the definitions of unitary equivalence.</p>
+<p><strong>Theorem (Krein space: the failures).</strong> For a $J$-unitary $Q$ that is not Hilbert-unitary, the sandwich $H_{Q}$ does not preserve the Hilbert norm, the Hilbert-orthogonal direct sum decompositions, the Hilbert positive cone or the spectrum; it preserves the indefinite form, the $J$-self-adjointness, the $J$-positivity, the $J$-unitarity and the kernel and image of every operator.</p>
+<p><strong>Proof.</strong> A $J$-unitary $Q$ satisfies $Q^{*}JQ = J$ and is Hilbert-unitary only if moreover $Q^{*}Q = 1$; when it is not, the sandwich changes the Hilbert norm, and the spectrum is not preserved because a $J$-self-adjoint operator has conjugate-symmetric spectrum while its sandwich by a merely form-preserving $Q$ need not; the positive statements are the theorems above.</p>
+<p><strong>Remark (why the contrast matters).</strong> The Hilbert sandwich is the natural notion of equivalence in Hilbert space, and it preserves everything. The indefinite sandwich is the natural notion of equivalence in a Krein space, and it preserves only the indefinite structure; the resulting equivalence relation on $J$-self-adjoint operators is coarser than similarity, and the classification of $J$-self-adjoint operators up to it is the classification of their invariants under form-preserving change of basis. This is why the spectral theory of <em>Spectral Theory on Krein Spaces</em> cannot be imported from the Hilbert theory by transport along a sandwich.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-fundamental-symmetry">The Fundamental Symmetry</h3>
+<p>For $Q = J$ the sandwich is $H_{J}(T) = JTJ$; for $T$ $J$-self-adjoint this is Hilbert-self-adjoint, for $T$ $J$-positive it is Hilbert-positive, and $H_{J}$ is an involution on the space of operators. This is the translation dictionary between the indefinite and the Hilbert descriptions, read as a sandwich.</p>
+<h3 id="matrices">Matrices</h3>
+<p>For $K = \mathbb{C}^{1,1}$ with $J = \mathrm{diag}(1,-1)$ and $Q = \left(\begin{smallmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{smallmatrix}\right)$, the operator $Q$ is $J$-unitary but not unitary; the sandwich $H_{Q}(J)$ is a $J$-self-adjoint operator with Hilbert norm different from that of $J$, and its Hilbert spectrum differs from $\{-1,+1\}$ while its indefinite spectrum is the same.</p>
+<h3 id="the-definite-case">The Definite Case</h3>
+<p>For $J = \mathrm{id}$ the sandwich by a unitary $Q$ is conjugation by a unitary, and kernel, image, spectrum, norm and positive cone are all preserved; the contrast of the previous section collapses.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Hermitian sandwich</strong> on a Krein space is $H_{Q}(T) = QTQ^{\dagger}$, with $Q^{\dagger} = JQ^{*}J$; it satisfies $H_Q(T^{\dagger}) = H_Q(T)^{\dagger}$, $H_Q(H_S(T)) = H_{QS}(T)$, and it is multiplicative in the argument exactly when $Q$ is $J$-isometric. For $J$-<strong>unitary</strong> $Q$ the sandwich <strong>preserves the indefinite form</strong>, $[H_Q(T)x,H_Q(T)y] = [Tx,Ty]$, it preserves <strong>$J$-self-adjointness</strong>, <strong>$J$-positivity</strong> and <strong>$J$-unitarity</strong>, and it is an algebra automorphism of $B(K)$; the <strong>kernel and the image</strong> are transported exactly, $\ker H_Q(T) = Q\ker T$ and $\mathrm{im}\,H_Q(T) = Q\,\mathrm{im}\,T$, so the kernel dimension, the range and the index are preserved. The <strong>contrast with the Hilbert case</strong> is that a $J$-unitary operator need not be Hilbert-unitary: the sandwich preserves the indefinite geometry — form, positivity, self-adjointness, kernel and image — but not the Hilbert norm, the Hilbert-orthogonal decompositions, the Hilbert positive cone or the spectrum, so the indefinite sandwich is a symmetry of the form rather than of the metric and cannot transport the Hilbert spectral theory. The indefinite adjoint is <em>J-Self-Adjoint and J-Unitary Operators</em>, the form and the symmetry are <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>, the positivity is <em>Krein Algebras</em> and <em>The J-Positive Cone and the J-Order</em>, the Hilbert-algebra sandwich is <em>The Adjoint of the Sandwich on a Hilbert Algebra</em>, and the spectral consequences are <em>Spectral Theory on Krein Spaces</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_{Q}(T) = QTQ^{\dagger}$</td>
+<td>The Hermitian sandwich</td>
+</tr>
+<tr>
+<td>$Q^{\dagger} = JQ^{*}J$</td>
+<td>The indefinite adjoint of the parameter</td>
+</tr>
+<tr>
+<td>$H_{Q}(T^{\dagger}) = H_{Q}(T)^{\dagger}$</td>
+<td>The sandwich commutes with adjunction</td>
+</tr>
+<tr>
+<td>$[H_{Q}(T)x,y] = [Tx,Q^{\dagger}y]$</td>
+<td>Form preservation for $J$-unitary $Q$</td>
+</tr>
+<tr>
+<td>$J$-positivity preserved</td>
+<td>$[H_Q(T)x,x] = [TQ^{\dagger}x,Q^{\dagger}x]$</td>
+</tr>
+<tr>
+<td>$\ker H_{Q}(T) = Q\ker T$</td>
+<td>Kernel for $J$-unitary $Q$</td>
+</tr>
+<tr>
+<td>$\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$</td>
+<td>Image for $J$-unitary $Q$</td>
+</tr>
+<tr>
+<td>$J = \mathrm{id}$</td>
+<td>Hilbert case, where the sandwich is unitary equivalence</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the form-preserving transformations of a Krein space.</li>
+<li>Tomas Ya. Azizov and I. S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the unitary group of a Krein space and its action.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the matrix form of the sandwich and its invariants.</li>
+<li>Peter Jonas, "On the spectral theory of operators on Krein spaces", in <em>Operator Theory: Advances and Applications</em> (Birkhäuser), for the limits of form-preserving equivalence.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the Hilbert-algebra sandwich $\Theta_x(y) = xyx^{\dagger}$ in the definite case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

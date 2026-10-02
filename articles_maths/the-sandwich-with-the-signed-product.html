@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sandwich with the Signed Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sandwich-with-the-signed-product"><strong>The Sandwich with the Signed Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed two-sided operators of <em>Two-Sided Operators with the Signed Product</em> become a family of conjugations when the two parameters are a unit and its inverse. The <strong>signed sandwich</strong> is</p>
+<p>$$
+\Sigma_x(y) = T^{\alpha}_{x,\,x^{-1}}(y) = x\,\alpha(y)\,x^{-1},
+$$</p>
+<p>the ordinary inner conjugation of the argument twisted by the grading. It is the map that carries the reflections on the nose: for a vector $u$ of nonzero norm the signed sandwich $\Sigma_u$ is the reflection $\rho_u$, where the ordinary inner conjugation returned $-\rho_u$ and the twisted conjugation $\chi_u$ also returned $\rho_u$ but by a different route. What the signed sandwich adds is that it does this with the ordinary inverse $x^{-1}$, so that the whole discussion stays inside the one-parameter family of conjugations.</p>
+<p>The article has three parts. It fixes the signed sandwich, its relation to the inner conjugation and to the twisted conjugation, and the value at the unit, which is the grade involution. It computes the composition, and finds that the product of <strong>two</strong> signed sandwiches is not signed but is an ordinary inner conjugation, the two grade involutions cancelling – the sandwich form of the coset structure of the parent family. And it reads the versor action: a versor acts on the quadratic space by an isometry, the odd versors give the reflections, the even ones give minus a rotation, and the products generate the orthogonal group.</p>
+<p>The ordinary sandwich and the twisted conjugation are <em>The Sandwich on a Clifford Algebra</em>; the signed family and its composition laws are <em>Two-Sided Operators with the Signed Product</em>; the signed inner conjugation $\alpha(x)yx^{-1}$, whose left factor carries the sign, is <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>; the versors, the reflections and the groups are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> and <em>The Two-Sided Operators and the Spin Group</em>. Those are cited. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate and $\alpha$ is the grade involution.</p>
+<h2 id="the-signed-sandwich">The Signed Sandwich</h2>
+<p><strong>Definition.</strong> For a unit $x \in \mathrm{Cl}(V,q)^{\times}$ the <strong>signed sandwich</strong> by $x$ is</p>
+<p>$$
+\Sigma_x(y) = x\,\alpha(y)\,x^{-1}, \qquad y \in \mathrm{Cl}(V,q).
+$$</p>
+<p><strong>Proposition (the three conjugations).</strong> Let $x$ be homogeneous of degree $k$ with $\varepsilon_x = (-1)^{k}$. Then</p>
+<p>$$
+\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x, \qquad \Sigma_x(v) = -\varepsilon_x\,\chi_x(v) \quad (v \in V),
+$$</p>
+<p>where $\mathrm{Ad}_x(y) = xyx^{-1}$ is the inner conjugation and $\chi_x(y) = xy\alpha(x)^{-1}$ is the twisted conjugation. So the signed sandwich is the inner conjugation with the argument twisted, it is also the inner conjugation conjugated by $\alpha$, and on the vectors it differs from the twisted conjugation by the sign $-\varepsilon_x$.</p>
+<p><strong>Proof.</strong> $\Sigma_x(y) = x\alpha(y)x^{-1} = \alpha\bigl(\alpha(x)y\alpha(x)^{-1}\bigr) = \alpha\,\mathrm{Ad}_{\alpha(x)}(y) = \alpha\,\mathrm{Ad}_x\,\alpha(y)$ because $\mathrm{Ad}_{\alpha(x)} = \alpha\mathrm{Ad}_x\alpha$; hence $\Sigma_x = \mathrm{Ad}_x\alpha = \alpha\mathrm{Ad}_x$. The vector statement is $\chi_x = \varepsilon_x\mathrm{Ad}_x$, so $x\alpha(v)x^{-1} = -xvx^{-1} = -\varepsilon_x\chi_x(v)$.</p>
+<p><strong>Proposition (elementary properties).</strong> $\Sigma_x$ is $F$-linear and bijective with inverse $\Sigma_{x^{-1}}$; $\Sigma_x(1) = 1$; $\Sigma_1 = \alpha$; and $\Sigma_x$ preserves the grading of the algebra modulo two, since it is a composition of the automorphism $\alpha$ with the automorphism $\mathrm{Ad}_x$.</p>
+<p><strong>Proof.</strong> $\Sigma_x$ is a composite of bijections; $\alpha(1) = 1$ and $x1x^{-1} = 1$; $\Sigma_1 = \alpha$; both $\alpha$ and $\mathrm{Ad}_x$ preserve the parity grading.</p>
+<p><strong>Proposition (the composition law and the cancellation).</strong> For units $x, z$,</p>
+<p>$$
+\Sigma_x \circ \Sigma_z = T_{x\alpha(z),\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
+$$</p>
+<p>So the composite of two signed sandwiches is an <strong>ordinary inner conjugation</strong>, with parameter $x\alpha(z)$; the two grade involutions cancel, exactly as for the general signed product.</p>
+<p><strong>Proof.</strong> By the composition law of <em>Two-Sided Operators with the Signed Product</em>, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = T_{x\alpha(z),\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.</p>
+<p><strong>Corollary (the group generated).</strong> The signed sandwiches generate together with their products the group</p>
+<p>$$
+\{\, \mathrm{Ad}_y : y \in \mathrm{Cl}(V,q)^{\times} \,\} \cup \{\, \Sigma_x : x \in \mathrm{Cl}(V,q)^{\times} \,\},
+$$</p>
+<p>in which the signed sandwiches form the nontrivial coset of the inner conjugations, since $\Sigma_x = \mathrm{Ad}_x\alpha$ and $\alpha$ is not an inner conjugation. No signed sandwich is the identity, and the square of one is the inner conjugation $\Sigma_x^{2} = \mathrm{Ad}_{x\alpha(x)}$.</p>
+<p><strong>Proof.</strong> $\Sigma_x\Sigma_z = \mathrm{Ad}_{x\alpha(z)}$ is the composition law; $\Sigma_x = \mathrm{Ad}_x\alpha$ is the first proposition, and $\alpha$ is an automorphism but not of the form $\mathrm{Ad}_y$, because it does not fix the odd part; the square is the law with $z = x$, giving $x\alpha(x)$.</p>
+<p><strong>Remark (the value at the unit and the odd part).</strong> $\Sigma_x(1) = 1$ for every unit, so unlike the general signed two-sided operator the signed sandwich is not detected by the unit; what distinguishes it from the ordinary inner conjugation is the odd part. Precisely, $\Sigma_x = \mathrm{Ad}_x\circ\alpha$ agrees with the inner conjugation on the even part, $\Sigma_x = \mathrm{Ad}_x$ on $\mathrm{Cl}^{0}$, and equals its negative on the odd part, $\Sigma_x = -\mathrm{Ad}_x$ on $\mathrm{Cl}^{1}$; this holds for every unit $x$, whatever its parity, and it is the sharp statement of the cancellation in the composition law.</p>
+<h2 id="the-reflections-and-the-versor-action">The Reflections and the Versor Action</h2>
+<p><strong>Theorem (the reflections).</strong> Let $u \in V$ with $q(u) \neq 0$. Then $\Sigma_u$ restricted to $V$ is the reflection in $u^{\perp}$:</p>
+<p>$$
+\Sigma_u(v) = u\,\alpha(v)\,u^{-1} = -u\,v\,u^{-1} = \rho_u(v), \qquad v \in V .
+$$</p>
+<p><strong>Proof.</strong> This is the reflection theorem of <em>Two-Sided Operators with the Signed Product</em>, in the sandwich form $b = u^{-1}$.</p>
+<p><strong>Theorem (the versor action).</strong> Let $x$ be a versor, so that $\chi_x(V) \subseteq V$. Then $\Sigma_x$ preserves $V$ and its restriction is an isometry,</p>
+<p>$$
+q\bigl(\Sigma_x(v)\bigr) = q(v), \qquad B\bigl(\Sigma_x(v),\Sigma_x(w)\bigr) = B(v,w), \qquad v, w \in V,
+$$</p>
+<p>and the map $x \mapsto \Sigma_x\big|_V$ is a homomorphism from the Clifford group into $O(V,q)$ whose restriction to the even versors carries a rotation $R$ to $-\mathrm{Ad}_R = -\chi_R$, the rotation composed with the central element $-1$, and whose value on an odd versor $u$ is the reflection $\rho_u$.</p>
+<p><strong>Proof.</strong> $\Sigma_x$ is a bijection preserving $V$ because $\chi_x$ is and the two differ on $V$ by the nonzero scalar $-\varepsilon_x$; an isometry scaled by a nonzero scalar is an isometry. The value on the even and the odd part is the sign computation of the first proposition, together with $\chi_u = \rho_u$ and $\chi_R = \mathrm{Ad}_R$ for the twisted conjugation.</p>
+<p><strong>Corollary (Cartan–Dieudonné).</strong> Every orthogonal transformation of the quadratic space is a composite of signed sandwiches: in even dimension it is $\Sigma_{u_1}\cdots\Sigma_{u_{2k}} = \mathrm{Ad}_{u_1\cdots u_{2k}}$ for vectors of nonzero norm, an even product, and a reflection is a single $\Sigma_u$.</p>
+<p><strong>Proof.</strong> The reflections generate $O(V,q)$ and each is a $\Sigma_u$; their products are composites of signed sandwiches, which by the cancellation are inner conjugations of products of vectors.</p>
+<p><strong>Remark (the three sandwiches distinguished).</strong> The ordinary sandwich $T_{x,x^{-1}} = \mathrm{Ad}_x$ is multiplicative and has value $1$ at the unit but gives $-\rho_u$ on a vector; the twisted conjugation $\chi_x$ gives $\rho_u$ but uses $\alpha(x)^{-1}$, not $x^{-1}$; the signed sandwich $\Sigma_u$ gives $\rho_u$ and uses $x^{-1}$, at the price of a family that is a coset and not a group. The three are related by $\chi_x = \varepsilon_x\mathrm{Ad}_x$ and $\Sigma_x = -\varepsilon_x\chi_x$ on $V$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="a-reflection-in-math110">A Reflection in $\mathrm{Cl}_{0,3}(\mathbb{R})$</h3>
+<p>With $e_j^{2} = -1$ let $x = e_1$, so $x^{-1} = -e_1$ and $\alpha(e_j) = -e_j$. Then $\Sigma_{e_1}(v) = e_1\alpha(v)(-e_1) = e_1ve_1$, and on the basis $(-e_1, e_2, e_3)$: the reflection $\rho_{e_1}$. The square is $\Sigma_{e_1}^{2} = \mathrm{Ad}_{e_1\alpha(e_1)} = \mathrm{Ad}_{-e_1^{2}} = \mathrm{Ad}_1 = \mathrm{id}$, which is the reflection squared.</p>
+<h3 id="an-even-versor">An Even Versor</h3>
+<p>In the same algebra let $R = e_1e_2$. Then $\Sigma_R$ acts on the basis of $V$ by $(e_1, e_2, -e_3)$, which is $-\mathrm{Ad}_R$, the half-turn composed with the central element $-1$; on the even part it agrees with $\mathrm{Ad}_R$, as the previous remark states. The product $\Sigma_R\Sigma_{e_1} = \mathrm{Ad}_{R\alpha(e_1)} = \mathrm{Ad}_{-e_1e_2e_1} = \mathrm{Ad}_{e_2}$ is an inner conjugation, as the composition law requires.</p>
+<h3 id="two-reflections">Two Reflections</h3>
+<p>With $u = e_1$ and $w = e_2$, $\Sigma_u\Sigma_w = \mathrm{Ad}_{u\alpha(w)} = \mathrm{Ad}_{e_1(-e_2)} = \mathrm{Ad}_{-e_1e_2} = \mathrm{Ad}_{e_1e_2}$, which acts on the basis by $(-e_1,-e_2,e_3)$: the rotation through the full angle in the $e_1,e_2$ plane, the product of the two reflections. The cancellation of the two involutions is visible in the sign of the parameter.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>signed sandwich</strong> $\Sigma_x(y) = x\alpha(y)x^{-1}$ is the inner conjugation with the argument twisted by the grading; it equals $\mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x$, it is bijective with inverse $\Sigma_{x^{-1}}$, and $\Sigma_1 = \alpha$. On the vectors it equals $-\varepsilon_x\chi_x$, so it agrees with the twisted conjugation on the odd part up to sign and with the inner conjugation on the even part. Its composition law is the cancellation statement: <strong>two signed sandwiches give an ordinary inner conjugation</strong>, $\Sigma_x\Sigma_z = \mathrm{Ad}_{x\alpha(z)}$, with square $\Sigma_x^{2} = \mathrm{Ad}_{x\alpha(x)}$; the family is the nontrivial coset of the inner conjugations, a torsor and not a group. A vector $u$ gives the reflection $\Sigma_u = \rho_u$; therefore the signed sandwiches carry the reflections, their products carry the rotations, and through Cartan–Dieudonné they generate the orthogonal group. The ordinary sandwich, the twisted conjugation and the versor action are <em>The Sandwich on a Clifford Algebra</em>; the signed family is <em>Two-Sided Operators with the Signed Product</em>; the groups are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_x(y) = x\,\alpha(y)\,x^{-1}$</td>
+<td>Signed sandwich</td>
+</tr>
+<tr>
+<td>$\Sigma_x = \mathrm{Ad}_x\circ\alpha = \alpha\circ\mathrm{Ad}_x$</td>
+<td>Relation to the inner conjugation</td>
+</tr>
+<tr>
+<td>$\Sigma_x = -\varepsilon_x\chi_x$ on $V$</td>
+<td>Relation to the twisted conjugation</td>
+</tr>
+<tr>
+<td>$\Sigma_x\circ\Sigma_z = \mathrm{Ad}_{x\alpha(z)}$</td>
+<td>Two signed sandwiches give an inner conjugation</td>
+</tr>
+<tr>
+<td>$\Sigma_x^{2} = \mathrm{Ad}_{x\alpha(x)}$</td>
+<td>Square of a signed sandwich</td>
+</tr>
+<tr>
+<td>$\Sigma_1 = \alpha$</td>
+<td>Value at the unit</td>
+</tr>
+<tr>
+<td>$\Sigma_u = \rho_u$</td>
+<td>Reflection by a vector of nonzero norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_x$, $\chi_x$, $T_{x,x^{-1}}$</td>
+<td>Inner conjugation; twisted conjugation; ordinary sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em>, Collected Works vol. 2 (Springer, 1997), for the two conjugation actions and the reflections.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the reflection formula and the versor action on the vectors.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the signed conjugations and the orthogonal group.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the reflection formula in the low-dimensional algebras.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em>, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the orthogonal group generated by reflections.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

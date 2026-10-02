@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Operator Layer — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-operator-layer"><strong>Involutions of the Operator Layer</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two preceding articles of this Part put an involution on the <strong>elements</strong> of a lattice or a
+relation algebra. This article puts the involution on the <strong>operators</strong> themselves. Given a poset $P$
+with an order-reversing involution $x \mapsto x^{\perp}$, the <strong>conjugate</strong> of a monotone map $f : P \to
+P$ is the map $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$, and the assignment $f \mapsto
+f^{\perp}$ is an <strong>involution of the operator layer</strong>. It is an anti-automorphism for composition,
+$(g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}$, and it is order-reversing for the pointwise order; its
+fixed elements are the operators commuting with the involution, and it exchanges left adjoints with
+right adjoints, so it reverses every Galois connection. An order-<strong>preserving</strong> involution $\sigma$
+gives the other case, the conjugation $f \mapsto \sigma \circ f \circ \sigma$, which is an
+order-preserving automorphism of the operator monoid. This article develops both, the fixed part and
+the adjoint operation.</p>
+<p>The article presupposes <em>Operators on a Poset</em> — monotone maps, residuated maps, Galois connections,
+the monoid of monotone maps — <em>Orthocomplemented Lattices and the Involution</em>, for the order-reversing
+involution, and <em>Involutive Categories and the Dagger Functor</em>, for the abstract involution on
+morphisms. The operator-algebraic and Hilbert-space adjoint is Part II and the <code>- * Operator Theory</code>
+group, and is named only; here the operators are monotone maps of a poset and the involution acts on
+them.</p>
+<h2 id="conjugation-by-the-involution">Conjugation by the Involution</h2>
+<p><strong>Definition.</strong> Let $P$ be a poset with an order-reversing involution ${}^{\perp}$ and let $f : P \to P$
+be monotone. The <strong>conjugate</strong> of $f$ is</p>
+<p>$$
+f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} : P \to P, \qquad f^{\perp}(x) = (f(x^{\perp}))^{\perp}.
+$$</p>
+<p><strong>Theorem.</strong> The conjugate of a monotone map is monotone, and the assignment $f \mapsto f^{\perp}$ is an
+involution of the set of monotone maps. It is an anti-automorphism of the composition monoid and an
+order-reversing map of the pointwise order:</p>
+<p>$$
+(f^{\perp})^{\perp} = f, \qquad (g \circ f)^{\perp} = f^{\perp} \circ g^{\perp}, \qquad
+f \leq g \Rightarrow g^{\perp} \leq f^{\perp} .
+$$</p>
+<p><strong>Proof.</strong> For monotonicity, if $x \leq y$ then $y^{\perp} \leq x^{\perp}$, so $f(y^{\perp}) \leq
+f(x^{\perp})$ and $(f(y^{\perp}))^{\perp} \geq (f(x^{\perp}))^{\perp}$; comparing with the definition
+gives $f^{\perp}(x) \leq f^{\perp}(y)$. The involution is $(f^{\perp})^{\perp} = {}^{\perp} \circ
+{}^{\perp} \circ f \circ {}^{\perp} \circ {}^{\perp} = f$ because ${}^{\perp}$ has order two. For the
+composition, $(g \circ f)^{\perp} = {}^{\perp} \circ g \circ f \circ {}^{\perp} = ({}^{\perp} \circ g
+\circ {}^{\perp}) \circ ({}^{\perp} \circ f \circ {}^{\perp}) = g^{\perp} \circ f^{\perp}$. For the order,
+$f \leq g$ pointwise gives $f(x^{\perp}) \leq g(x^{\perp})$, and applying the order-reversing
+${}^{\perp}$ reverses the inequality, so $g^{\perp}(x) \leq f^{\perp}(x)$ for all $x$.</p>
+<p><strong>Corollary.</strong> The involution $f \mapsto f^{\perp}$ is an automorphism of the order-dual of the operator
+monoid: it is a bijection that reverses the pointwise order and the composition. In particular it maps
+the identity to the identity, the constant maps to the constant maps, and idempotents to idempotents.</p>
+<p><strong>Proof.</strong> The identity satisfies $\mathrm{id}^{\perp} = \mathrm{id}$; a constant map $c_a$ with value
+$a$ satisfies $c_a^{\perp} = c_{a^{\perp}}$, so constants go to constants; and $f^2 = f$ implies
+$(f^{\perp})^2 = (f^2)^{\perp} = f^{\perp}$ by the composition law.</p>
+<p><strong>Definition.</strong> The <strong>fixed part</strong> of the involution of the operator layer is the set of operators with
+$f^{\perp} = f$.</p>
+<p><strong>Theorem.</strong> A monotone map $f$ is fixed by the conjugation exactly when it commutes with the
+involution, $f \circ {}^{\perp} = {}^{\perp} \circ f$. The fixed part contains the identity and is
+closed under composition; it is the centralizer of the involution in the monoid of monotone maps.</p>
+<p><strong>Proof.</strong> $f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp} = f$ is exactly $f \circ {}^{\perp} =
+{}^{\perp} \circ f$ after composing with ${}^{\perp}$ on one side and using that it is an involution.
+The fixed elements of a monoid endomorphism are always a submonoid, which here is the centralizer of
+${}^{\perp}$.</p>
+<h2 id="the-adjoint-operation">The Adjoint Operation</h2>
+<p><strong>Theorem.</strong> The conjugation reverses adjoint pairs: if $f \dashv g$ is a Galois connection between
+posets with order-reversing involutions, then $g^{\perp} \dashv f^{\perp}$, that is, the left and the
+right adjoints are exchanged.</p>
+<p><strong>Proof.</strong> The Galois condition is $f(x) \leq y \Leftrightarrow x \leq g(y)$. Replacing $x$ by
+$x^{\perp}$ and $y$ by $y^{\perp}$ and using the involutions, $f(x^{\perp}) \leq y^{\perp} \Leftrightarrow
+x^{\perp} \leq g(y^{\perp})$, which becomes $y \leq f^{\perp}(x) \Leftrightarrow g^{\perp}(y) \leq x$
+after applying ${}^{\perp}$ and rewriting; this is the Galois condition $g^{\perp} \dashv f^{\perp}$.</p>
+<p><strong>Corollary.</strong> The conjugation carries the set of left adjoints bijectively onto the set of right
+adjoints and exchanges the two; it is the <strong>adjoint operation</strong> of the scope, an order-reversing
+involution between the two families of residuated maps.</p>
+<p><strong>Proof.</strong> A left adjoint $f$ has a right adjoint $g$, and the theorem gives the right adjoint
+$g^{\perp}$ of $f^{\perp}$; applying the conjugation twice returns $f$ and $g$, so the map is a
+bijection exchanging the two families.</p>
+<p><strong>Example (relations).</strong> Let the poset be the lattice of relations on a set with the converse as the
+involution, in the sense of <em>The Converse as an Adjoint</em>: for an operator $F$ on relations put
+$F^{\perp}(R) = (F(R^{-1}))^{-1}$. Then $F \mapsto F^{\perp}$ is the conjugation, the fixed operators
+are those with $F(R^{-1}) = F(R)^{-1}$, that is, those commuting with the converse, and the conjugation
+is an anti-automorphism of the composition of operators. The left-composition operator $L_R(S) = R;S$
+of <em>The Converse as an Adjoint</em> has the conjugate $L_R^{\perp}(S) = (L_R(S^{-1}))^{-1} = (R;S^{-1})^{-1}
+= S;R^{-1}$, the right-composition by the converse of $R$; this is computed again in <em>The Converse
+Relation as an Adjoint</em>.</p>
+<p><strong>Example (a Boolean lattice).</strong> Let $P$ be a Boolean lattice and let ${}^{\perp}$ be the complement.
+For a monotone map $f$ the conjugate is $f^{\perp}(x) = \neg f(\neg x)$, the <strong>dual</strong> of $f$; the fixed
+maps are those commuting with the complement, and the conjugation exchanges the meet-preserving maps
+with the join-preserving maps, because it reverses the composition and the order.</p>
+<h2 id="the-order-preserving-case">The Order-Preserving Case</h2>
+<p><strong>Definition.</strong> Let $P$ have an order-<strong>preserving</strong> involution $\sigma$. The <strong>conjugate</strong> of a
+monotone map $f$ is $f^{\sigma} = \sigma \circ f \circ \sigma$.</p>
+<p><strong>Theorem.</strong> If $\sigma$ is an order-preserving involution, then $f \mapsto f^{\sigma}$ is an involution
+of the set of monotone maps, an <strong>automorphism</strong> of the composition monoid, and an order-preserving map
+of the pointwise order:</p>
+<p>$$
+(f^{\sigma})^{\sigma} = f, \qquad (g \circ f)^{\sigma} = g^{\sigma} \circ f^{\sigma}, \qquad
+f \leq g \Rightarrow f^{\sigma} \leq g^{\sigma} .
+$$</p>
+<p><strong>Proof.</strong> The same computations as before, with $\sigma$ order-preserving, so that $f \leq g$ gives
+$\sigma \circ f \circ \sigma \leq \sigma \circ g \circ \sigma$.</p>
+<p><strong>Corollary.</strong> An order-preserving involution of the base gives an ordinary automorphism of the operator
+monoid, and its fixed part is again the centralizer of $\sigma$. The order-reversing case is the one
+relevant to an orthocomplement, and it is the case of the rest of the group.</p>
+<p><strong>Proof.</strong> The fixed equation is the same $f \circ \sigma = \sigma \circ f$; the last assertion records
+that an orthocomplement is order-reversing.</p>
+<h2 id="summary">Summary</h2>
+<p>An order-reversing involution ${}^{\perp}$ of a poset acts on the operators by conjugation, $f^{\perp}
+= {}^{\perp} \circ f \circ {}^{\perp}$; this is an involution of the operator layer, an
+<strong>anti-automorphism</strong> of composition and an <strong>order-reversing</strong> map of the pointwise order, and its
+fixed elements are the operators commuting with ${}^{\perp}$. It exchanges left and right adjoints, so
+it reverses every Galois connection, and it carries left adjoints bijectively onto right adjoints. An
+order-preserving involution $\sigma$ gives instead the conjugation $f \mapsto \sigma \circ f \circ
+\sigma$, an order-preserving automorphism of the operator monoid with the same fixed part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f^{\perp} = {}^{\perp} \circ f \circ {}^{\perp}$</td>
+<td>The conjugate of $f$ by an order-reversing involution</td>
+</tr>
+<tr>
+<td>$f^{\sigma} = \sigma \circ f \circ \sigma$</td>
+<td>The conjugate by an order-preserving involution</td>
+</tr>
+<tr>
+<td>fixed part</td>
+<td>Operators with $f^{\perp} = f$, the centralizer of ${}^{\perp}$</td>
+</tr>
+<tr>
+<td>adjoint operation</td>
+<td>The exchange of left and right adjoints by the conjugation</td>
+</tr>
+<tr>
+<td>$L_R$, $L_R^{\perp} = R_{R^{-1}}$</td>
+<td>Left composition by $R$ and its conjugate, right composition by $R^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Garrett Birkhoff, <em>Lattice Theory</em>, 3rd ed. (American Mathematical Society, 1967), for monotone maps, residuated maps and Galois connections and their duals.</li>
+<li>Marcel Erné, "Adjunctions and Galois connections: origins, history and development", in <em>Galois Connections and Applications</em> (Kluwer, 2004), for the exchange of adjoints under duality.</li>
+<li>Chris Brink, Wolfram Kahl and Gunther Schmidt, <em>Relational Methods in Computer Science</em> (Springer, 1997), for the conjugation of operators on relations by the converse.</li>
+<li>Brian A. Davey and Hilary A. Priestley, <em>Introduction to Lattices and Order</em>, 2nd ed. (Cambridge University Press, 2002), for monotone maps, adjoints and the duality of Galois connections.</li>
+<li>Richard Bird and Oege de Moor, <em>Algebra of Programming</em> (Prentice Hall, 1997), for the dual of a map under an involution and the algebra of operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

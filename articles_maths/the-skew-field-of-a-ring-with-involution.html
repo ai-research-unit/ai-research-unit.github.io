@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Skew Field of a Ring with Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-skew-field-of-a-ring-with-involution"><strong>The Skew Field of a Ring with Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a ring $A$ with an involution $\sigma$ the <strong>skew elements</strong> are those with $\sigma(x) = -x$, and they stand against the <strong>symmetric</strong> elements, the fixed ones. When $2$ is invertible the two sets are the eigenspaces of $\sigma$ for $-1$ and $+1$, and they decompose the ring, $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$; what makes the pair interesting is that the two sets do not multiply among themselves in the naive way and that, with the commutator and the anti-commutator, they form exactly the two halves of a graded Lie structure. The word <strong>skew field</strong> in the title names this set of skew elements; it is not a division ring, and the collision with the established meaning of the phrase is flagged and avoided below, where the set is written $\mathrm{Skew}(A,\sigma)$.</p>
+<p>This article reads the skew elements against the symmetric ones, computes the products of two skew elements (their anti-commutator is symmetric and their commutator skew), records the resulting graded Lie and Jordan structure, and derives the vanishing of a trace on the skew elements for a trace-preserving involution. It assumes <em>Involutive Rings</em> for the involution, the fixed set and the eigenspace decomposition, and <em>Lie Algebras</em> and <em>Jordan Algebras</em> only as the names of the structures that the products suggest, since those categories come later in this Part. Throughout, $A$ is a ring with $1 \neq 0$, $\sigma$ is an involution, $2$ is invertible in $A$ when the eigenspace decomposition is used, and</p>
+<p>$$
+\mathrm{Sym}(A,\sigma) = \{x : \sigma(x) = x\}, \qquad \mathrm{Skew}(A,\sigma) = \{x : \sigma(x) = -x\}.
+$$</p>
+<h2 id="the-two-eigenspaces">The Two Eigenspaces</h2>
+<p><strong>Proposition.</strong> $\mathrm{Sym}(A,\sigma)$ and $\mathrm{Skew}(A,\sigma)$ are additive subgroups of $A$, they intersect in $\{0\}$, and for $2$ invertible</p>
+<p>$$
+A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma), \qquad x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x)).
+$$</p>
+<p>An element is symmetric and skew at once exactly when $2x = 0$; in particular the intersection is trivial in characteristic not two and equals $\{x : 2x = 0\}$ in general.</p>
+<p><strong>Proof.</strong> This is the eigenspace decomposition of the order-two additive map $\sigma$ of <em>Involutive Rings</em>: the sum of the two projections is the identity, each projection lands in the named set, and an element in both satisfies $x = -x$.</p>
+<p><strong>Remark (the name).</strong> The set $\mathrm{Skew}(A,\sigma)$ is not a field or a division ring, and the phrase "skew field" is used here in the sense of "the skew elements" only. To avoid the collision with the standard meaning, the article writes $\mathrm{Skew}(A,\sigma)$ throughout and never calls it a field.</p>
+<h2 id="the-products">The Products</h2>
+<p><strong>Proposition.</strong> For homogeneous $x, y$ the symmetry of a product is governed by the parities:</p>
+<p>$$
+\mathrm{Sym}\cdot\mathrm{Sym}\subseteq\mathrm{Sym} \iff \text{the factors commute}, \qquad \mathrm{Sym}\cdot\mathrm{Skew}\subseteq\mathrm{Skew} \iff \text{the factors commute},
+$$</p>
+<p>and the two products of a symmetric and a skew element have a fixed behaviour through the commutator and the anti-commutator, not through the product itself.</p>
+<p><strong>Proof.</strong> For $x, y$ symmetric, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, which equals $xy$ exactly when they commute. For $x$ symmetric and $y$ skew, $\sigma(xy) = \sigma(y)\sigma(x) = -yx$, which equals $-xy$, the skew condition, exactly when $yx = xy$.</p>
+<p><strong>Theorem (the commutator and the anti-commutator).</strong> For all homogeneous pairs the following hold with no commutativity hypothesis:</p>
+<p>$$
+[x,y] = xy-yx \in \mathrm{Skew} \ \text{if } x, y \in \mathrm{Skew}, \qquad [x,y] \in \mathrm{Sym} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew},
+$$</p>
+<p>$$
+\{x,y\} = xy+yx \in \mathrm{Sym} \ \text{if } x, y \in \mathrm{Skew}, \qquad \{x,y\} \in \mathrm{Skew} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew} .
+$$</p>
+<p>In particular $\mathrm{Skew}(A,\sigma)$ is closed under the commutator and is a <strong>Lie subalgebra</strong> of $A$ under $[x,y] = xy-yx$, while $\mathrm{Sym}(A,\sigma)$ is closed under the anti-commutator and is a <strong>Jordan subalgebra</strong> under $x\circ y = xy+yx$.</p>
+<p><strong>Proof.</strong> In each case apply $\sigma$ to the combination. For skew $x, y$: $\sigma(xy-yx) = \sigma(y)\sigma(x)-\sigma(x)\sigma(y) = (-y)(-x)-(-x)(-y) = yx-xy = -(xy-yx)$, so the commutator is skew; and $\sigma(xy+yx) = yx+xy$, so the anti-commutator is symmetric. For symmetric $x$ and skew $y$: $\sigma(xy-yx) = (-y)x-x(-y) = -yx+xy = xy-yx$, symmetric; and $\sigma(xy+yx) = -yx-xy = -(xy+yx)$, skew. The closure statements are the two rows.</p>
+<p><strong>Corollary (the graded structure).</strong> With $\mathrm{Sym}$ in even parity and $\mathrm{Skew}$ in odd parity, the two brackets $[\,,\,]$ and $\{\,,\,\}$ make $A$ a graded Lie-and-Jordan structure: the bracket of two even or two odd elements is odd, the bracket of an even and an odd element is even, the anti-commutator of two odd or of an even and an odd element is odd, and the anti-commutator of two even elements is even. This is the sign structure recorded in <em>Superalgebras and Graded Structures</em>, read on the symmetric and the skew parts rather than on a $\mathbb{Z}/2$-grading of the ring.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>Definition.</strong> A <strong>trace</strong> on $A$ is an additive map $\tau : A \to k$ into a commutative ring $k$ with $\tau(ab) = \tau(ba)$ for all $a, b$. It is <strong>$\sigma$-invariant</strong> when $\tau(\sigma(a)) = \tau(a)$.</p>
+<p><strong>Proposition.</strong> Let $\tau$ be a $\sigma$-invariant trace and let $2$ be invertible in $A$ and in $k$. Then</p>
+<p>$$
+\tau(\mathrm{Skew}(A,\sigma)) = 0, \qquad \tau\bigl(\mathrm{Sym}(A,\sigma)\cdot\mathrm{Skew}(A,\sigma)\bigr) = 0 .
+$$</p>
+<p><strong>Proof.</strong> For skew $x$ one has $\tau(x) = \tau(\sigma(x)) = \tau(-x) = -\tau(x)$, so $2\tau(x) = 0$ and $\tau(x) = 0$. For symmetric $x$ and skew $y$, $\tau(xy) = \tau(\sigma(xy)) = \tau(\sigma(y)\sigma(x)) = \tau((-y)x) = -\tau(yx) = -\tau(xy)$, so again $2\tau(xy) = 0$.</p>
+<p><strong>Corollary.</strong> For the matrix ring $M_n(k)$ with the transpose and $\tau = $ the matrix trace, which is invariant under the transpose, the skew-symmetric matrices have trace zero and the product of a symmetric and a skew matrix has trace zero; the latter is the orthogonality of the symmetric and the skew parts under the trace pairing $(X,Y)\mapsto \operatorname{tr}(XY)$. The same computation gives the vanishing of the trace on the pure quaternions for the conjugation of the quaternion algebra and on the odd part of a graded matrix algebra with the graded trace.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The transpose.</strong> In $M_n(k)$ with the transpose the skew elements are the skew-symmetric matrices and the symmetric elements the symmetric matrices; the commutator of two skew-symmetric matrices is skew-symmetric, the anti-commutator is symmetric, and the trace vanishes on the skew part. For $n = 3$ the skew-symmetric matrices have dimension $3$ and form, under the commutator and the identification with $k^3$, the cross-product Lie algebra.</p>
+<p><strong>(b) The quaternion conjugation.</strong> In the quaternion algebra $\mathbb{H}$ over $\mathbb{R}$ with the conjugation the symmetric part is the real line and the skew part is the space of pure quaternions; the commutator of two pure quaternions is pure, $[i,j] = 2k$, and the anti-commutator is real, $\{i,j\} = 0$, so the pure quaternions form a three-dimensional Lie algebra.</p>
+<p><strong>(c) The group ring.</strong> In $K[G]$ with the standard involution the skew elements are those with $a_g = -\sigma(a_{g^{-1}})$, and the commutator of two of them is skew; for a finite group the symmetric part contains the inversion-stable class sums, as in <em>Involutions of a Group Ring</em>.</p>
+<p><strong>(d) A noncommutative failure.</strong> In $M_2(F)$ with the transpose the symmetric matrices $\begin{pmatrix}1&1\\1&0\end{pmatrix}$ and $\begin{pmatrix}0&1\\1&1\end{pmatrix}$ have a non-symmetric product, so $\mathrm{Sym}$ is not closed under multiplication; the closure is restored by the anti-commutator of the theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>For an involution $\sigma$ of a ring $A$ with $2$ invertible, the symmetric and the skew elements are the eigenspaces and $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$; the two sets meet in $\{x : 2x = 0\}$ and the word <strong>skew field</strong> names the set of skew elements and not a division ring. The product of two elements is governed by the commutator and the anti-commutator rather than by the product itself: for two skew elements the commutator is skew and the anti-commutator is symmetric, for a symmetric and a skew element the commutator is symmetric and the anti-commutator is skew, so that $\mathrm{Skew}(A,\sigma)$ is a <strong>Lie subalgebra</strong> under $[x,y] = xy-yx$ and $\mathrm{Sym}(A,\sigma)$ is a <strong>Jordan subalgebra</strong> under $x\circ y = xy+yx$, the two forming the halves of a graded structure. A $\sigma$-invariant trace vanishes on the skew elements and on every product of a symmetric and a skew element, so for the transpose the symmetric and the skew matrices are orthogonal under the trace pairing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>Involution of the ring $A$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sym}(A,\sigma)$</td>
+<td>Fixed elements; the $+1$ eigenspace of $\sigma$</td>
+</tr>
+<tr>
+<td>$\mathrm{Skew}(A,\sigma)$</td>
+<td>Skew elements $\{x : \sigma(x) = -x\}$; the $-1$ eigenspace</td>
+</tr>
+<tr>
+<td>$A = \mathrm{Sym}\oplus\mathrm{Skew}$</td>
+<td>Eigenspace decomposition, $2$ invertible</td>
+</tr>
+<tr>
+<td>$[x,y] = xy-yx$</td>
+<td>Commutator; makes $\mathrm{Skew}$ a Lie subalgebra</td>
+</tr>
+<tr>
+<td>$\{x,y\} = xy+yx$</td>
+<td>Anti-commutator; makes $\mathrm{Sym}$ a Jordan subalgebra</td>
+</tr>
+<tr>
+<td>$[\,\mathrm{Sym},\mathrm{Skew}\,]\subseteq\mathrm{Sym}$</td>
+<td>Graded Lie structure</td>
+</tr>
+<tr>
+<td>$\{\mathrm{Sym},\mathrm{Skew}\}\subseteq\mathrm{Skew}$</td>
+<td>Graded Jordan structure</td>
+</tr>
+<tr>
+<td>$\tau$, $\sigma$-invariant trace</td>
+<td>$\tau(ab) = \tau(ba)$, $\tau(\sigma(a)) = \tau(a)$</td>
+</tr>
+<tr>
+<td>$\tau(\mathrm{Skew}) = 0$, $\tau(\mathrm{Sym}\cdot\mathrm{Skew}) = 0$</td>
+<td>Vanishing of the trace, $2$ invertible</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric and skew elements, their products and the trace conditions.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the Lie structure of the skew elements and the Jordan structure of the symmetric ones.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the Jordan product $x\circ y = xy+yx$ and the symmetric part of an associative algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em>, Graduate Texts in Mathematics 88 (Springer, 1982), for traces, the trace pairing and the graded structures of an algebra with involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

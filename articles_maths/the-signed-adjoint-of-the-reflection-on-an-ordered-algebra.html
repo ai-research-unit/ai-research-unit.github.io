@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on an Ordered Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-an-ordered-algebra"><strong>The Signed Adjoint of the Reflection on an Ordered Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>reflection</strong> of a graded algebra is the signed conjugation</p>
+<p>$$
+\tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x) ,
+$$</p>
+<p>the signed sandwich with the parameter $b = a^{-1}$; it is an involution exactly when $a$ is a <strong>reflection element</strong>, $\alpha(a) = a^{-1}$. The article computes its <strong>adjoint</strong> for the trace form by specialising the adjoint of the signed sandwich:</p>
+<p>$$
+(\tau_a)^{*} = \tau_{\alpha(a^{*})} ,
+$$</p>
+<p>so the adjoint of a reflection is again a reflection, with the parameter replaced by the $\alpha$-twist of the adjoint. The two special cases are the ones to remember: for the identity grade involution the adjoint of the ordinary conjugation by $a$ is the conjugation by $a^{*}$, and for a reflection element the adjoint is the reflection with the parameter $\alpha(a^{*})$, which is the twist of the adjoint that keeps the operator inside the reflection family. The article states the formula, identifies the <strong>self-adjoint reflections</strong> ($a = \alpha(a^{*})$ up to a central factor) and the <strong>skew-adjoint</strong> ones, and describes the interaction with the <strong>order</strong>: a reflection with a positive grade involution and positive invertible parameter is positive, hence so is its adjoint, and the order is an invariant of the adjoint involution.</p>
+<p>The reflection is the operator of the family that has an algebraic meaning in the outer automorphism group: $\tau_a = \operatorname{Inn}_a\circ\alpha$ is the composite of the inner automorphism and the grade involution, two reflection elements give the same reflection exactly when their ratio is central, and the realised reflections are the composites of the grade involution with the inner automorphisms. The adjoint computation of the article is therefore not only an operator identity but a statement about the <strong>outer class</strong> of the reflection: the adjoint of $\operatorname{Inn}_a\circ\alpha$ is $\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$, an inner automorphism conjugated with the grade involution, and the adjoint preserves the outer class.</p>
+<p>The reflections and the reflection elements are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the signed sandwich and its adjoint are <em>The Signed Sandwich on an Ordered Algebra</em> and <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>; the signed left multiplication is <em>The Signed Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Action on a Module over an Ordered Algebra</em>; the adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the order of the elements is <em>Self-Adjoint Elements and the Order</em>; the two-sided multiplications are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; the automorphisms are <em>The Involution on the Order Automorphisms</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em> and <em>Positive Operators on an Ordered Space</em>; the grading is <em>Superalgebras and Graded Structures</em> of Part I; and the algebra is <em>Ordered Involutive Algebras</em>.</p>
+<h2 id="the-adjoint-of-the-reflected-operator">The Adjoint of the Reflected Operator</h2>
+<p><strong>Definition.</strong> The <strong>reflected signed two-sided operator</strong> (the reflection) is</p>
+<p>$$
+\tau_a : A\to A, \qquad \tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,\,a^{-1}}(x) ;
+$$</p>
+<p>it is the signed conjugation by $a$, and it is an <strong>involution</strong> exactly when $a$ is a reflection element, $\alpha(a) = a^{-1}$.</p>
+<p><strong>Theorem (the adjoint of the reflection).</strong> For the trace form the adjoint of the reflection is the reflection with the $\alpha$-twisted adjoint parameter,</p>
+<p>$$
+(\tau_a)^{*} = \tau_{\alpha(a^{*})} ;
+$$</p>
+<p>in particular the adjoint of a reflection is again a reflection, the adjoint of $\tau_a$ is the ordinary conjugation by $a^{*}$ when the grade involution is the identity, and the family of the reflections is <strong>closed under the adjoint</strong>.</p>
+<p><em>Proof.</em> Apply the adjoint formula of the signed sandwich to $\Theta^{\alpha}_{a,a^{-1}}$:
+$$
+(\tau_a)^{*} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
+$$
+using $\alpha((a^{-1})^{*}) = \alpha(a^{-1})^{*} = \alpha(a^{*})^{-1}$ and the definition of the reflection. The identity grade involution gives $(\tau_a)^{*} = \tau_{a^{*}}$, the conjugation by the adjoint.</p>
+<p><strong>Corollary (the adjoint of a reflection element).</strong> If $a$ is a reflection element, $\alpha(a) = a^{-1}$, then</p>
+<p>$$
+(\tau_a)^{*} = \tau_{\alpha(a^{*})} = \tau_{a^{-*}} ,
+$$</p>
+<p>and the adjoint of the realised reflection $\tau_a = \operatorname{Inn}_a\circ\alpha$ is the realised reflection $\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$; the adjoint preserves the set of the realised reflections and acts on the reflection elements by $a\mapsto\alpha(a^{*})$.</p>
+<p><em>Proof.</em> The first statement is the theorem applied to the reflection element; for the realised-reflection statement, $\tau_{\alpha(a^{*})} = \operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$ by the composite formula of <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>, and the map $a\mapsto\alpha(a^{*})$ on the reflection elements is well defined because $\alpha(\alpha(a^{*})) = a^{*} = \alpha(a)^{*} = (a^{-1})^{*} = \alpha(a^{*})^{-1}$, so $\alpha(a^{*})$ is again a reflection element.</p>
+<p><strong>Corollary (the adjoint of the grade involution).</strong> The grade involution is the reflection $\tau_1$; its adjoint is $(\tau_1)^{*} = \tau_{\alpha(1^{*})} = \tau_1$, so the grade involution is <strong>self-adjoint</strong> for the trace form. More generally the reflection $\tau_a$ is self-adjoint exactly when the reflection $\tau_a$ and $\tau_{\alpha(a^{*})}$ coincide, that is, when $a^{-1}\alpha(a^{*})$ is <strong>central</strong>.</p>
+<p><em>Proof.</em> The grade involution is $\tau_1$ and $\alpha(1) = 1$; the self-adjointness criterion is the theorem together with the fibre statement of the reflections, which says that two reflection parameters give the same reflection exactly when their ratio is central.</p>
+<h2 id="self-adjointness-and-skew-adjointness">Self-Adjointness and Skew-Adjointness</h2>
+<p><strong>Proposition (the self-adjoint reflections).</strong> The reflection is <strong>self-adjoint</strong>,</p>
+<p>$$
+(\tau_a)^{*} = \tau_a ,
+$$</p>
+<p>when the parameter is <strong>$\alpha$-Hermitian</strong>, $a = \alpha(a^{*})$; conversely, the self-adjoint reflections are the reflections $\tau_a$ with $a^{-1}\alpha(a^{*})$ central, so the self-adjointness of the reflection depends on the parameter only through its class in the centre of the algebra.</p>
+<p><em>Proof.</em> If $a = \alpha(a^{*})$ then $\tau_{\alpha(a^{*})} = \tau_a$, so the adjoint is the reflection itself; conversely, if $(\tau_a)^{*} = \tau_a$ then $\tau_{\alpha(a^{*})} = \tau_a$, and the fibre statement gives the centrality of $a^{-1}\alpha(a^{*})$.</p>
+<p><strong>Corollary (the skew-adjoint reflections).</strong> The reflection is <strong>skew-adjoint</strong>, $(\tau_a)^{*} = -\tau_a$, exactly when $\tau_{\alpha(a^{*})} = -\tau_a$, which happens for the parameters with $\alpha(a^{*}) = -a$ up to the centre; in particular an <strong>odd</strong> reflection element with $a^{2} = -1$ in a graded algebra with a positive grade involution gives a reflection whose adjoint is the reflection with the parameter $-a^{*} = \alpha(a^{*})$, and the reflection is skew-adjoint exactly when $a$ is skew with respect to $\alpha$.</p>
+<p><em>Proof.</em> The skew-adjointness is the equation $\tau_{\alpha(a^{*})} = -\tau_a$; the odd reflection-element case uses $\alpha(a) = -a$ and $\alpha(a) = a^{-1}$, so $\alpha(a^{*}) = (a^{-1})^{*} = -a^{*}$ holds exactly when $a^{*} = -a$, the skewness. The centrality ambiguity is the fibre as before.</p>
+<p><strong>Proposition (the decomposition and the square).</strong> Every reflection decomposes into the self-adjoint and the skew-adjoint parts with respect to the adjoint,</p>
+<p>$$
+\tau_a = \tfrac12\bigl(\tau_a + \tau_{\alpha(a^{*})}\bigr) + \tfrac12\bigl(\tau_a - \tau_{\alpha(a^{*})}\bigr) ,
+$$</p>
+<p>and when $a$ is a reflection element the square is the identity, $\tau_a^{2} = \mathrm{id}$, so the adjoint of the square is the identity and the reflection is an isometry of the quadratic order exactly when it is self-adjoint.</p>
+<p><em>Proof.</em> The decomposition is the standard one; the square statement is the reflection theorem of <em>The Signed Sandwich on an Ordered Algebra</em>; the isometry statement follows because a reflection preserves the quadratic order exactly when it is an order automorphism commuting with the adjoint, which for an involution is the self-adjointness.</p>
+<h2 id="the-adjoint-and-the-order">The Adjoint and the Order</h2>
+<p><strong>Theorem (the positivity of the reflection and of its adjoint).</strong> If the grade involution is <strong>positive</strong> and the parameter $a$ is positive and invertible, then the reflection $\tau_a$ is <strong>positive</strong> and its adjoint $\tau_{\alpha(a^{*})}$ is positive:</p>
+<p>$$
+\alpha\geq0, \quad a\geq0\ \text{invertible} \implies \tau_a\geq0 \ \text{ and } \ (\tau_a)^{*}\geq0 .
+$$</p>
+<p>If the grade involution is not positive then the reflection of positive parameters need not be positive, and the obstruction is the sign of $\alpha$ on the odd part of the cone.</p>
+<p><em>Proof.</em> The reflection is the signed sandwich $\Theta^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of <em>The Adjoint of a Positive Operator</em>. The failure in the non-positive case is the positivity proposition of the signed sandwich.</p>
+<p><strong>Corollary (the order and the outer class).</strong> The reflections that are positive form a subset of the realised reflections closed under the adjoint; the order-reversing reflections are the ones whose adjoint is their negative up to the centre; and the adjoint action on the realised reflections preserves both the positive and the order-reversing classes, because it preserves the positivity of the operators. This is the order-theoretic statement of the outer-class computation: the adjoint is an order automorphism of the reflection family whose action on the outer classes is the $\alpha$-twist of the parameter.</p>
+<p><em>Proof.</em> The closure of the positive reflections under the adjoint is the theorem; the order-reversing case is the sign condition; the outer-class statement is the corollary on the adjoint of the realised reflection.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{R})$ with the identity grade involution. The reflection elements are the involutions $a^{2} = 1$, the reflected operator is the conjugation $\tau_a(x) = axa^{-1}$, and its adjoint is the conjugation by $a^{*} = a^{\mathsf{T}}$; the reflections are self-adjoint exactly for the symmetric involutions $a = a^{\mathsf{T}}$, and the fibre over the trivial reflection is the set of the central involutions $\{\pm I\}$. The adjoint therefore acts on the reflection parameters by the transpose, which is the identity on the symmetric involutions.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the $\operatorname{diag}(1,-1)$ grading and its inner grade involution. An odd element with $a^{2} = -1$ realises the signed conjugation, and the adjoint of $\tau_a$ is the reflection with parameter $\alpha(a^{*}) = -a^{*}$, which is again an odd reflection element; the ordinary conjugation by $a$ and its negative coincide with the sign of the parity, and the adjoint is the reflection realised by the adjoint of the parameter, so the adjoint is the $\alpha$-twist of the parameter involution. The example exhibits the adjoint formula in the smallest inner-graded case.</p>
+<h3 id="the-clifford-algebra">The Clifford Algebra</h3>
+<p>Let $A = \mathrm{Cl}(V,q)$ with the parity grading and its positive grade involution. A vector $e$ with $e^{2} = -1$ is an odd reflection element and $\tau_e$ is a reflection of the algebra restricting to a reflection of $V$; the adjoint of $\tau_e$ is $\tau_{\alpha(e^{*})} = \tau_{-e^{*}}$, the reflection realised by the twist of the adjoint vector, and the pair $e$, $-e$ realises the same reflection modulo the sign. The Clifford case is the geometric instance in which the adjoint of the reflection is the reflection of the adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>reflection</strong> $\tau_a(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x)$ of a graded ordered involutive algebra has, for the trace form, the adjoint</p>
+<p>$$
+(\tau_a)^{*} = \tau_{\alpha(a^{*})} ,
+$$</p>
+<p>so the adjoint of a reflection is again a reflection, the adjoint of the ordinary conjugation by $a$ is the conjugation by $a^{*}$ (the identity grade involution), and the family of the reflections is <strong>closed under the adjoint</strong>. The reflection is <strong>self-adjoint</strong> exactly when the parameter is $\alpha$-Hermitian, $a = \alpha(a^{*})$, up to a <strong>central</strong> factor, and <strong>skew-adjoint</strong> for the skew parameters; it decomposes into the self-adjoint and the skew-adjoint parts, and an involutive reflection is an isometry of the quadratic order exactly when it is self-adjoint. The adjoint acts on the realised reflections by the $\alpha$-twist of the parameter, $\operatorname{Inn}_a\circ\alpha\mapsto\operatorname{Inn}_{\alpha(a^{*})}\circ\alpha$, preserving the outer class, and it preserves the <strong>positivity</strong>: a reflection with a positive grade involution and a positive invertible parameter is positive, hence so is its adjoint. The reflections are <em>Reflections as Signed Two-Sided Operators on an Ordered Algebra</em>; the sandwich and its adjoint are <em>The Signed Sandwich on an Ordered Algebra</em> and <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>; the adjoint is <em>The Adjoint of a Positive Operator</em>; the order is <em>Self-Adjoint Elements and the Order</em> and <em>Ordered Vector Spaces and the Order Unit</em>; the two-sided multiplications are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>; the automorphisms are <em>The Involution on the Order Automorphisms</em>; and the grading is <em>Superalgebras and Graded Structures</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau_a(x) = a\alpha(x)a^{-1}$</td>
+<td>Reflection (signed conjugation)</td>
+</tr>
+<tr>
+<td>$\alpha(a) = a^{-1}$</td>
+<td>Reflection element</td>
+</tr>
+<tr>
+<td>$(\tau_a)^{*} = \tau_{\alpha(a^{*})}$</td>
+<td>Adjoint of a reflection</td>
+</tr>
+<tr>
+<td>$(\tau_a)^{*} = \tau_{a^{*}}$</td>
+<td>The identity grade involution</td>
+</tr>
+<tr>
+<td>$a = \alpha(a^{*})$</td>
+<td>$\alpha$-Hermitian parameter, the self-adjoint case</td>
+</tr>
+<tr>
+<td>$a^{-1}\alpha(a^{*})$ central</td>
+<td>The self-adjointness up to the fibre</td>
+</tr>
+<tr>
+<td>$\tau_a = \operatorname{Inn}_a\circ\alpha$</td>
+<td>Outer-class form of the reflection</td>
+</tr>
+<tr>
+<td>$\tau_1 = \alpha$</td>
+<td>The grade involution, self-adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2001), for the reflections realised by the conjugation, their adjoints and the parity grading.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the graded reflections and the reflection elements of a Clifford algebra.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the adjoints, the involutions and the order.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the inner automorphisms, the order-two automorphisms and the positivity.</li>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the reflections and the sandwich operators of the Jordan structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on Hyperbolic Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-hyperbolic-space"><strong>Operators on Hyperbolic Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The operators of hyperbolic space are its isometries, and the group they form is the pseudo-orthogonal group of the form of signature $(n,1)$: the matrix group $O(n,1)$ in the hyperboloid model, the Möbius group in the ball and half-space models. Beside the two-sided operator group, the hyperbolic space carries a distinguished <strong>one-sided</strong> operator, the <strong>geodesic flow</strong>, the one-parameter group that translates the points along the geodesics; it is the flow of the geodesic spray on the unit tangent bundle, and the article reads it in the <strong>signed one-sided</strong> slot of the category: the parameter is one, the direction of the geodesic carries a sign, and the reversal of the direction is the involution by which the signed operator is twisted.</p>
+<p>The article develops the isometry group in the three standard models and its identification with the pseudo-orthogonal group, the one-parameter subgroups and their fixed points, the classification of the isometries into the elliptic, parabolic and hyperbolic types with the loxodromic refinement in odd dimension, the geodesic flow on the unit tangent bundle with its generator and its invariant volume, and the signed structure of the direction reversal under which the flow is reversed. The dynamical and the ergodic properties of the flow are the subject of Part III, and the article names them and keeps to the operator and the geometry.</p>
+<p>The article assumes <em>Hyperbolic Geometry</em> for the models, the geodesics, the boundary at infinity and the classification of the isometries; <em>Euclidean Geometry</em> and <em>Spherical Geometry</em> for the comparison geometries; <em>Transformation Groups and the Erlangen Program</em>, <em>Homogeneous Spaces</em> and <em>Symmetric Spaces</em>, later in this Part, for the reading of the space as the quotient $SO^+(n,1)/SO(n)$ and for the geodesic symmetries; and <em>Smooth Dynamical Systems</em> and <em>Ergodic Theory</em> of Part III for the flow. No physics is invoked.</p>
+<h2 id="the-isometry-group-of-hyperbolic-space">The Isometry Group of Hyperbolic Space</h2>
+<h3 id="the-three-models-and-the-group">The Three Models and the Group</h3>
+<p><strong>Definition.</strong> The <strong>hyperbolic space</strong> $\mathbb{H}^n$ is the simply connected complete Riemannian manifold of constant sectional curvature $-1$; it is realised as the hyperboloid</p>
+<p>$$
+\mathbb{H}^n = \{x \in \mathbb{R}^{n,1} : B(x,x) = -1,\ x_0 > 0\}
+$$</p>
+<p>with the form $B$ of signature $(n,1)$ restricted to the tangent spaces, as the Poincaré ball with the metric $4\,|dx|^2/(1 - |x|^2)^2$, and as the upper half-space with the metric $|dx|^2/x_n^2$. The <strong>operators</strong> of the hyperbolic space are its isometries, and they form the group $\operatorname{Isom}(\mathbb{H}^n)$.</p>
+<p><strong>Theorem.</strong> The isometry group of the hyperboloid model is</p>
+<p>$$
+\operatorname{Isom}(\mathbb{H}^n) \cong O(n,1) ,
+$$</p>
+<p>the group of the linear maps preserving the form $B$, and the orientation-preserving subgroup is $SO^+(n,1)$, the connected component of the identity, which acts transitively on $\mathbb{H}^n$ and has the stabiliser of a point conjugate to $O(n)$; consequently</p>
+<p>$$
+\mathbb{H}^n \cong SO^+(n,1)/SO(n)
+$$</p>
+<p>as a homogeneous space, and the isotropy representation of $SO(n)$ on the tangent space at a point is the standard one.</p>
+<p><strong>Proof.</strong> A linear map preserving $B$ preserves the hyperboloid and the time orientation of the component, hence acts by an isometry; conversely an isometry of the hyperboloid extends uniquely to a linear automorphism of the ambient form by the rigidity of the metric and the geodesic completeness, which is the classical statement of <em>Hyperbolic Geometry</em>. The transitivity is the Witt extension theorem applied to the form: two points of the hyperboloid are two vectors of the same norm, and an element of $O(n,1)$ carries one to the other; the stabiliser of a timelike vector is the orthogonal group of its complement, of signature $(n,0)$, and the quotient statement follows.</p>
+<p><strong>Corollary (the dimensions).</strong> The isometry group has dimension $\frac{n(n+1)}{2}$, equal to the dimension of $SO(n+1)$ and to the dimension of the group $O(n,1)$; the stabiliser of a point has dimension $\frac{n(n-1)}{2}$, and the two numbers differ by $n$, the dimension of the hyperbolic space; the agreement of the dimensions of the isometry group of the hyperbolic space and of the sphere is the numerical shadow of the fact that the two spaces are the two real forms of the same complex geometry.</p>
+<h3 id="the-boundary-and-the-conformal-models">The Boundary and the Conformal Models</h3>
+<p><strong>Theorem.</strong> In the Poincaré ball model the isometry group is the group of the Möbius transformations preserving the ball, which is the same group $O(n,1)$ acting by the conformal action on the boundary sphere $S^{n-1} = \partial\mathbb{H}^n$; the orientation-preserving isometries act on the boundary by the Möbius transformations classified in <em>The Möbius Transformation as an Operator</em>, and the correspondence is an isomorphism of groups.</p>
+<p><strong>Proof.</strong> The ball model is conformally equivalent to the hyperboloid by the projection from the hyperboloid to the ball along the lines through the origin, and the conformal factors cancel in the isometry condition, so the isometry group is the conformal group of the ball; the conformal maps of the sphere are the Möbius transformations by Liouville, and the subgroup preserving the ball is the required group. The statement is in <em>Hyperbolic Geometry</em> and <em>Möbius and Lie Sphere Geometry</em>.</p>
+<h2 id="the-one-parameter-subgroups">The One-Parameter Subgroups</h2>
+<p><strong>Definition.</strong> A <strong>one-parameter subgroup</strong> of the isometry group is a continuous homomorphism $t \mapsto g_t$ from the additive group $\mathbb{R}$ into $\operatorname{Isom}(\mathbb{H}^n)$; it is the exponential of an element $\xi$ of the Lie algebra $\mathfrak{so}(n,1)$, $g_t = \exp(t\xi)$, and it acts on $\mathbb{H}^n$ as a one-parameter group of isometries. The one-parameter subgroups are the <strong>one-sided operators</strong> of the hyperbolic space, the two-sided operators being the general isometries.</p>
+<p><strong>Theorem.</strong> A one-parameter subgroup of $SO^+(n,1)$ is, up to conjugacy, of exactly one of the three types:</p>
+<ul>
+<li><strong>elliptic</strong>: conjugate to a rotation of $\mathbb{H}^n$ about a point, with the generator the rotation in an $\mathfrak{so}(2)$ inside the isotropy $\mathfrak{so}(n)$; the subgroup has a fixed point in the interior;</li>
+<li><strong>parabolic</strong>: conjugate to the group of the translations of the horospheres, with the generator nilpotent and exactly one fixed point on the boundary;</li>
+<li><strong>hyperbolic</strong>: conjugate to the group of the translations along a geodesic, with the generator semisimple and two fixed points on the boundary, and the subgroup acting on the geodesic by $t \mapsto$ the translation of length $t$.</li>
+</ul>
+<p><strong>Proof.</strong> The classification of the elements of $SO^+(n,1)$ by the location of the eigenvalues of the corresponding matrix in $O(n,1)$ gives the three types according to the eigenvalues on the unit circle, the real eigenvalue of modulus different from one with a Jordan block, and the two real eigenvalues; the fixed points are the eigenvectors in the ambient space, projected to the interior or to the boundary according to the sign of the norm. The statement is in <em>Hyperbolic Geometry</em> and <em>Symmetric Spaces</em>.</p>
+<p><strong>Proposition.</strong> The orbit of a point under a hyperbolic one-parameter subgroup is the geodesic through the point in the direction of the axis, the orbit under a parabolic subgroup is a horosphere, and the orbit under an elliptic subgroup is a sphere about the fixed point; the three orbit types are the three kinds of the orbits of the one-sided operators.</p>
+<p><strong>Proof.</strong> The geodesic through a point in a direction is the orbit of the point under the translation along it, which is the hyperbolic subgroup by definition; the horospheres are the orbits of the parabolic group by the definition of the horospherical coordinates, and the spheres about a point are the orbits of the rotations. The statement is the elementary geometry of the model, in <em>Hyperbolic Geometry</em>.</p>
+<h2 id="the-classification-of-the-isometries">The Classification of the Isometries</h2>
+<p><strong>Definition.</strong> An isometry $g \in \operatorname{Isom}(\mathbb{H}^n)$ is <strong>elliptic</strong> when it has a fixed point in $\mathbb{H}^n$, <strong>parabolic</strong> when it has no fixed point in $\mathbb{H}^n$ and exactly one fixed point on the boundary, and <strong>hyperbolic</strong> when it has no fixed point in $\mathbb{H}^n$ and exactly two fixed points on the boundary; the <strong>translation length</strong> of a hyperbolic isometry is the infimum of the distances $d(x,gx)$, attained along the axis, the geodesic joining the two boundary fixed points.</p>
+<p><strong>Theorem.</strong> Every isometry of $\mathbb{H}^n$ is elliptic, parabolic or hyperbolic; the elliptic isometries are the conjugates of the rotations and form the isotropy subgroups, the parabolic ones are the conjugates of the horospherical translations, and the hyperbolic ones are the conjugates of the translations along a geodesic, with the axis as the invariant geodesic and the translation length as the invariant. In dimension $n = 3$ the two-dimensional rotation about the axis may be added to the translation, giving the <strong>loxodromic</strong> isometries, which have two boundary fixed points and a screw motion along the axis.</p>
+<p><strong>Proof.</strong> The classification is by the fixed points on the boundary and in the interior, and it is the classification of the elements of $O(n,1)$ by their eigenvectors and by the corresponding one-parameter subgroups; the translation length is the logarithm of the eigenvalue ratio of the hyperbolic part. The statement is in <em>Hyperbolic Geometry</em>, and it is the same classification as the one of the Möbius operators by the trace, read in the conformal model.</p>
+<p><strong>Remark.</strong> The classification is the hyperbolic instance of the classification of the elements of a semisimple Lie group by the growth of the powers, and the three types correspond to the compact, the unipotent and the semisimple elements of <em>Lie Groups</em>; the article records only the geometric classification, and the group-theoretic one is in <em>Lie Groups</em> and <em>Symmetric Spaces</em>.</p>
+<h2 id="the-geodesic-flow">The Geodesic Flow</h2>
+<h3 id="the-unit-tangent-bundle-and-the-flow">The Unit Tangent Bundle and the Flow</h3>
+<p><strong>Definition.</strong> The <strong>unit tangent bundle</strong> of the hyperbolic space is</p>
+<p>$$
+S\mathbb{H}^n = \{(x, v) : x \in \mathbb{H}^n,\ v \in T_x\mathbb{H}^n,\ g_x(v,v) = 1\} ,
+$$</p>
+<p>a manifold of dimension $2n - 1$. The <strong>geodesic flow</strong> is the one-parameter group of diffeomorphisms</p>
+<p>$$
+\phi_t : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \phi_t(x,v) = (\gamma_{x,v}(t), \dot\gamma_{x,v}(t)) ,
+$$</p>
+<p>where $\gamma_{x,v}$ is the geodesic with the initial point $x$ and the initial velocity $v$; the flow translates the base point along the geodesic and carries the velocity by the parallel transport.</p>
+<p><strong>Proposition.</strong> The geodesic flow is a one-parameter group of diffeomorphisms of $S\mathbb{H}^n$, $\phi_{t+s} = \phi_t\circ\phi_s$, and it is the flow of the <strong>geodesic spray</strong>, the vector field on $S\mathbb{H}^n$ whose value at $(x,v)$ is the tangent vector of the curve $t \mapsto \phi_t(x,v)$ at $t = 0$; the flow preserves the volume of the Liouville measure on the unit tangent bundle, and it commutes with the isometries acting on the bundle by the differentials.</p>
+<p><strong>Proof.</strong> The geodesic equation is a second-order ordinary differential equation on the base with the solution depending smoothly on the initial data, so the flow is a one-parameter group of diffeomorphisms; the computation of the Lie derivative of the Liouville volume in the geodesic spray shows that it vanishes by the skew-symmetry of the Riemannian connection, and the isometries carry the geodesics to the geodesics and commute with the flow by definition. The statement is the standard one, in <em>Hyperbolic Geometry</em> and <em>Riemannian Geometry</em>.</p>
+<h3 id="the-generator-and-the-signed-structure">The Generator and the Signed Structure</h3>
+<p><strong>Definition.</strong> The <strong>direction reversal</strong> is the involution of the unit tangent bundle</p>
+<p>$$
+\sigma : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \sigma(x,v) = (x,-v) ;
+$$</p>
+<p>the <strong>signed geodesic flow</strong> is the flow together with the reversal, and the pair satisfies</p>
+<p>$$
+\sigma \circ \phi_t = \phi_{-t} \circ \sigma ,
+$$</p>
+<p>so the reversal conjugates the flow to its inverse. The article calls the flow the <strong>signed one-sided operator</strong> of the hyperbolic space, the one-sided datum being the parameter $t$ and the sign being the reversal $\sigma$.</p>
+<p><strong>Proposition.</strong> The signed geodesic flow is a one-parameter group of diffeomorphisms of $S\mathbb{H}^n$ generated by the geodesic spray, and the reversal $\sigma$ is the involutive automorphism of the flow that reverses the time; the fixed point set of $\sigma$ is empty on the level sets of the flow (a geodesic is not fixed by the reversal), while the base point is fixed and the velocity is negated, so the reversal is an involution without fixed points on each flow line.</p>
+<p><strong>Proof.</strong> The relation $\sigma\phi_t = \phi_{-t}\sigma$ is the equality of the geodesic with the reversed velocity traversed backwards, which is the same geodesic traversed forwards, $\gamma_{x,-v}(t) = \gamma_{x,v}(-t)$; the fixed points of $\sigma$ are the pairs with $v = -v$, that is, $v = 0$, which are not in the unit tangent bundle, so the reversal has no fixed point. The statement is elementary and is recorded in <em>Hyperbolic Geometry</em>.</p>
+<p><strong>Remark (the geodesic symmetries and the flow).</strong> The geodesic symmetry at a point $p$ reverses every geodesic through $p$, so it satisfies $s_p\circ\phi_t = \phi_{-t}\circ s_p$ on the geodesics through $p$, and it is the pointwise form of the reversal on the flow lines through $p$; the signed flow and the geodesic symmetries are the one-sided and the two-sided forms of the same reversal. This is the reason the geodesic flow is the distinguished one-sided operator of the hyperbolic space.</p>
+<h2 id="the-quotients-and-the-forward-reference">The Quotients and the Forward Reference</h2>
+<p><strong>Definition.</strong> A <strong>discrete group of isometries</strong> is a subgroup $\Gamma \subseteq \operatorname{Isom}(\mathbb{H}^n)$ whose action is properly discontinuous; the quotient $\Gamma\backslash\mathbb{H}^n$ is a complete hyperbolic manifold, and the flow descends to the unit tangent bundle of the quotient, $S(\Gamma\backslash\mathbb{H}^n) = \Gamma\backslash S\mathbb{H}^n$.</p>
+<p><strong>Theorem.</strong> The geodesic flow on the quotient of the hyperbolic space by a discrete group of isometries is the flow that Part III studies: its periodic orbits are the closed geodesics of the quotient, its recurrence and its ergodic properties with respect to the Liouville measure are the subject of <em>Smooth Dynamical Systems</em> and <em>Ergodic Theory</em>, and the present article keeps the flow as the one-sided operator of the geometry.</p>
+<p><strong>Proof.</strong> The closed geodesics of the quotient are the projections of the geodesics of the hyperbolic space whose endpoints are joined by an element of the discrete group, so they are the periodic orbits of the flow; the descent of the flow and of the measure to the quotient is the standard reduction, and the ergodic theory is the analysis of the flow, in Part III.</p>
+<p><strong>Remark.</strong> The quotient construction and the flow are the point at which the hyperbolic geometry of this Part meets the dynamical systems of Part III; the article states the descent and names the ergodic theory, and it does not use the analytic structure of the flow beyond its definition as a one-sided operator.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators of hyperbolic space are its isometries, and the group is $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$ in the hyperboloid model, with the orientation-preserving subgroup $SO^+(n,1)$ acting transitively and the space realising the homogeneous space $SO^+(n,1)/SO(n)$ of dimension $\frac{n(n+1)}{2}$; in the ball and half-space models the group is the Möbius group of the boundary. The one-parameter subgroups are the one-sided operators, and they are elliptic (a fixed interior point), parabolic (one boundary fixed point, the horospherical translations) or hyperbolic (two boundary fixed points, the translations along the axis). Every isometry is elliptic, parabolic or hyperbolic by the fixed points, with the loxodromic refinement in dimension three; the translation length is the invariant of the hyperbolic type. The geodesic flow $\phi_t$ on the unit tangent bundle is the distinguished one-sided operator, its generator is the geodesic spray, and it preserves the Liouville volume; the direction reversal $\sigma(x,v) = (x,-v)$ is the sign, and it satisfies $\sigma\phi_t = \phi_{-t}\sigma$. The flow descends to the quotients by the discrete groups, and its periodic orbits are the closed geodesics; the ergodic theory of the flow is Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}^n$</td>
+<td>Hyperbolic space of dimension $n$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>Form of signature $(n,1)$ on $\mathbb{R}^{n,1}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(\mathbb{H}^n) \cong O(n,1)$</td>
+<td>Isometry group (operator group)</td>
+</tr>
+<tr>
+<td>$SO^+(n,1)$</td>
+<td>Orientation-preserving isometry group</td>
+</tr>
+<tr>
+<td>$SO^+(n,1)/SO(n)$</td>
+<td>Homogeneous model of $\mathbb{H}^n$</td>
+</tr>
+<tr>
+<td>elliptic, parabolic, hyperbolic</td>
+<td>Isometry types by the fixed points</td>
+</tr>
+<tr>
+<td>loxodromic</td>
+<td>Screw type in dimension three</td>
+</tr>
+<tr>
+<td>translation length</td>
+<td>Infimum of $d(x,gx)$, attained on the axis</td>
+</tr>
+<tr>
+<td>$S\mathbb{H}^n$</td>
+<td>Unit tangent bundle, dimension $2n-1$</td>
+</tr>
+<tr>
+<td>$\phi_t$</td>
+<td>Geodesic flow</td>
+</tr>
+<tr>
+<td>geodesic spray</td>
+<td>Generator of the geodesic flow</td>
+</tr>
+<tr>
+<td>$\sigma(x,v) = (x,-v)$</td>
+<td>Direction reversal, the sign of the operator</td>
+</tr>
+<tr>
+<td>$\Gamma\backslash\mathbb{H}^n$</td>
+<td>Quotient by a discrete group of isometries</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em>, 2nd ed. (Springer, 2006), for the models, the isometry groups and the geodesic flow.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (Academic Press, 1978), for the homogeneous models and the isometry groups.</li>
+<li>Dmitri V. Alekseevskii, "Hyperbolic space", in <em>Encyclopaedia of Mathematics</em> (Kluwer, 1990), for the classification of the isometries.</li>
+<li>Werner Ballmann, Mikhael Gromov and Viktor Schroeder, <em>Manifolds of Nonpositive Curvature</em> (Birkhäuser, 1985), for the geodesic flow and the rank.</li>
+<li>Anthony W. Knapp, <em>Representation Theory of Semisimple Groups</em> (Princeton University Press, 1986), for the one-parameter subgroups and the classification of the elements.</li>
+<li>Peter J. Nicholls, <em>The Ergodic Theory of Discrete Groups</em> (Cambridge University Press, 1989), for the geodesic flow of the quotients (Part III).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

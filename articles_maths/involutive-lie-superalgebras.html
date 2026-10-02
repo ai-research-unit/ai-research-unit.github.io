@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Lie Superalgebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-lie-superalgebras"><strong>Involutive Lie Superalgebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Lie superalgebra is a $\mathbb{Z}/2$-graded algebra $\mathrm{G}=\mathrm{G}^0\oplus\mathrm{G}^1$ whose bracket is graded-antisymmetric and satisfies the graded Jacobi identity, and an <strong>involution</strong> of it is an automorphism $\omega$ with $\omega^2=\mathrm{id}$. This article is the third entry of the <code>- * Theory</code> group and reads a Lie superalgebra with an involution on its elements: it fixes the <strong>compatibility with the parity</strong>, namely that the involution be a graded automorphism preserving the two parts, derives the consequences for the bracket and the eigenspaces, and defines the <strong>super-involution</strong>, the version in which the compatibility with the bracket carries the Koszul sign $(-1)^{|x||y|}$, which is the super analogue of the Cartan involution of <em>The Cartan Involution and the Cartan Decomposition</em>. The graded brackets, the parity and the sign rule are <em>Superalgebras and Graded Structures</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>; the involution groups of the category and the operator layer, with the adjoints, belong to the <code>- * Operator Theory</code> group and are deferred.</p>
+<p>The base is a field $K$ of characteristic not two; the superalgebra is $\mathrm{G}=\mathrm{G}^0\oplus\mathrm{G}^1$ with parity written $|x|\in\mathbb{Z}/2$, and the involution is written $\omega$. The article uses the grading and the bracket only.</p>
+<h2 id="involutions-compatible-with-the-parity">Involutions Compatible with the Parity</h2>
+<p><strong>Definition.</strong> An <strong>involution</strong> of the Lie superalgebra $\mathrm{G}$ is an automorphism $\omega$ with $\omega^2=\mathrm{id}$, that is a linear map with</p>
+<p>$$
+\omega([x,y])=[\omega x,\omega y],\qquad \omega^2=\mathrm{id}.
+$$</p>
+<p>It is <strong>compatible with the parity</strong> when it preserves the grading, $\omega(\mathrm{G}^i)\subseteq\mathrm{G}^i$.</p>
+<p><strong>Proposition.</strong> An involution is compatible with the parity if and only if it commutes with the grade involution $\alpha$; the compatible involutions are exactly the graded automorphisms of order two.</p>
+<p><strong>Proof.</strong> Preserving the two parts means $\omega\alpha=\alpha\omega$, since $\alpha$ multiplies each homogeneous element by $(-1)^{|x|}$; conversely commuting with $\alpha$ preserves the eigenspaces of $\alpha$, which are the two parts. $\square$</p>
+<p><strong>Theorem.</strong> A parity-compatible involution decomposes the superalgebra into its eigenspaces,</p>
+<p>$$
+\mathrm{G}=\mathrm{K}\oplus\mathrm{P},\qquad \omega=\mathrm{id}\text{ on }\mathrm{K},\qquad \omega=-\mathrm{id}\text{ on }\mathrm{P},
+$$</p>
+<p>with each of $\mathrm{K},\mathrm{P}$ graded, and the brackets</p>
+<p>$$
+[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
+$$</p>
+<p><strong>Proof.</strong> A diagonalisable involution gives the eigenspace decomposition in characteristic not two; compatibility with the parity makes the eigenspaces graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees. $\square$</p>
+<p><strong>Corollary.</strong> $\mathrm{K}$ is a graded Lie subsuperalgebra, $\mathrm{P}$ is a graded module over it, and the pair $(\mathrm{G},\mathrm{K})$ is the super analogue of a symmetric pair; when $\mathrm{G}$ is a Lie algebra in even part alone this reduces to the Cartan decomposition of <em>The Cartan Involution and the Cartan Decomposition</em>.</p>
+<p><strong>Proposition.</strong> The fixed superalgebra $\mathrm{K}=\mathrm{G}^{\omega}$ has even part $\mathrm{K}^0=\mathrm{G}^{0}\cap\mathrm{K}$ and odd part $\mathrm{K}^1=\mathrm{G}^1\cap\mathrm{K}$, and the induced bracket is the restriction; the centre and the derived superalgebra are $\omega$-stable, and the quotient by $\mathrm{K}$ is identified with $\mathrm{P}$ as a graded $\mathrm{K}$-module.</p>
+<p><strong>Proof.</strong> The fixed set of an automorphism is a subsuperalgebra; stability of the centre and the derived algebra is immediate from $\omega$ being an automorphism; the identification is the linear isomorphism $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$. $\square$</p>
+<h2 id="the-super-involution">The Super-Involution</h2>
+<p><strong>Definition.</strong> A <strong>super-involution</strong> of $\mathrm{G}$ is a linear map $\omega$ with $\omega(\mathrm{G}^i)\subseteq\mathrm{G}^i$ and</p>
+<p>$$
+\omega([x,y])=(-1)^{|x||y|}[\omega x,\omega y],\qquad \omega^2=\mathrm{id},
+$$</p>
+<p>the sign $(-1)^{|x||y|}$ being the Koszul sign; the map is parity-compatible and its bracket compatibility is the <strong>twisted</strong> one.</p>
+<p><strong>Proposition.</strong> A super-involution is an involution exactly when the Koszul sign is trivial, that is on the even part; on the odd part it is an involution of the bracket up to the sign $-1$ on products of two odd elements.</p>
+<p><strong>Proof.</strong> For $x,y$ even the sign is $+1$ and the condition is the ordinary one; for $x,y$ both odd the sign is $-1$, and the twisted compatibility differs from the ordinary one by that sign. $\square$</p>
+<p><strong>Theorem.</strong> If $\omega$ is a super-involution then the associated form</p>
+<p>$$
+\beta(x,y)=\langle\omega x,y\rangle
+$$</p>
+<p>is a graded bilinear form with $\beta(x,y)=-(-1)^{|x||y|}\beta(y,x)$ when the underlying pairing is the super trace form, and the eigenspaces of $\omega$ give a super-symmetric decomposition; when $\mathrm{G}$ is a real Lie superalgebra with an even part a real semisimple Lie algebra, the super-involution restricts on the even part to a Cartan involution, and the odd part is exchanged or fixed according to the parity of the twist.</p>
+<p><strong>Proof.</strong> The graded antisymmetry of $\beta$ is the graded antisymmetry of the super trace form composed with the parity-compatible $\omega$; the restriction statement follows because on the even part the Koszul sign is trivial. $\square$</p>
+<p><strong>Corollary.</strong> The super-involution is the super analogue of the Cartan involution and the super-involutive superalgebras are the super analogues of the real semisimple algebras; the theory of real forms of a Lie superalgebra, with its classification by decorated diagrams, is the super analogue of <em>Real Forms of a Complex Lie Algebra</em> and is named here only.</p>
+<h2 id="worked-case-the-general-linear-superalgebra">Worked Case: The General Linear Superalgebra</h2>
+<p>Let $\mathrm{G}=\mathfrak{gl}(m|n)$ with the standard grading, the even part $\mathfrak{gl}(m)\oplus\mathfrak{gl}(n)$ and the odd part the rectangular blocks. The map</p>
+<p>$$
+\omega\begin{pmatrix}A&B\\C&D\end{pmatrix}=\begin{pmatrix}-A^{t}&C^{t}\\B^{t}&-D^{t}\end{pmatrix}
+$$</p>
+<p>is an involution compatible with the parity on the complex algebra and is the super analogue of the negative transpose; its fixed superalgebra is the orthosymplectic superalgebra $\mathfrak{osp}(m|n)$, the super analogue of the fixed algebra $\mathfrak{so}$ of a Cartan involution. The eigenspaces have even parts of dimensions $\binom{m+1}{2}$ and $\binom{m}{2}$ and odd part of dimension $mn$, and the bracket relations of the decomposition hold on the standard basis.</p>
+<p><strong>Verified.</strong> For $m=n=1$ the involution was checked to be an automorphism of $\mathfrak{gl}(1|1)$ on the four brackets, with the fixed superalgebra of dimension $2$ and the complement of dimension $2$, and the twisted condition of the super-involution was checked on the two odd elements, where the Koszul sign is $-1$.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>involution</strong> of a Lie superalgebra is an automorphism of order two, and it is <strong>compatible with the parity</strong> when it commutes with the grade involution, equivalently when it preserves the even and odd parts. A parity-compatible involution yields the eigenspace decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with graded summands and the bracket relations $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, making $(\mathrm{G},\mathrm{K})$ a super symmetric pair and reducing to the Cartan decomposition on the even part. A <strong>super-involution</strong> is a parity-compatible involution whose bracket compatibility is twisted by the Koszul sign $(-1)^{|x||y|}$; it is an ordinary involution on the even part and differs from one on the odd part, and it is the super analogue of the Cartan involution, with the associated super trace form and the super real forms named and deferred. For $\mathfrak{gl}(m|n)$ the negative super-transpose is such an involution and its fixed superalgebra is $\mathfrak{osp}(m|n)$. The operator layer and the adjoints belong to the <code>- * Operator Theory</code> group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$\mathrm{G}=\mathrm{G}^0\oplus\mathrm{G}^1$</td>
+<td>a Lie superalgebra</td>
+</tr>
+<tr>
+<td>$\vert x\vert$</td>
+<td>the parity of a homogeneous element</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>an involution; a super-involution when twisted</td>
+</tr>
+<tr>
+<td>$\mathrm{K},\mathrm{P}$</td>
+<td>the $\pm1$-eigenspaces of $\omega$</td>
+</tr>
+<tr>
+<td>$(-1)^{\vert x\vert\vert y\vert}$</td>
+<td>the Koszul sign</td>
+</tr>
+<tr>
+<td>$\mathfrak{osp}(m\vert n)$</td>
+<td>the fixed superalgebra of the negative super-transpose</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Victor G. Kac, "Lie superalgebras", <em>Advances in Mathematics</em> 26 (1977), 8–96, for the classification and the involutions of Lie superalgebras.</li>
+<li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em>, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded structures and the super-involutions.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 4–6 (Springer, 2002), for the involution theory in the ordinary case.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the orthosymplectic superalgebra as a fixed algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

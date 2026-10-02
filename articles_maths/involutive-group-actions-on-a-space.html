@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Group Actions on a Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-group-actions-on-a-space"><strong>Involutive Group Actions on a Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involutive group action is an action of a group with an involution in which the two involutions — the one on the group and the one on the space — are compatible, so that the space involution carries one orbit to another and descends to the quotient. The compatibility is a genuine constraint, and stating it correctly is the first result of the article: the anti-involution of the group cannot conjugate a left action unless it happens to be an automorphism, and the involution that does act on the space is the associated involutive automorphism. With the convention settled, the equivariant involution is exactly an action of the semidirect product of the group with the cyclic group of order two, the fixed set of the space involution is stable under the fixed subgroup, and the orbit space inherits an involution whose fixed points are computed by the fixed points of the space.</p>
+<p>The article assumes the continuous involution, the associated involutive automorphism, the fixed and inverted subgroups and the split extension $G\rtimes_\alpha C_2$ from <em>Involutive Topological Groups</em>; the fixed set of a continuous involution of a space, its orbit space, the quotient map and its universal property, the failure of the orbit space to be Hausdorff, and the orbit space of a free involution as a two-fold covering from <em>Involutions on a Topological Space and the Fixed Set</em>, <em>Spaces with an Involution and the Orbit Space</em> and <em>The Orbit Space of a Free Involution</em>; and the group actions of <em>Group Actions and Structure</em>. The cohomology of the orbit space and the equivariant cohomology are <em>Algebraic Topology</em>, later in this part, and are named only.</p>
+<p>Throughout, $G$ is a topological group with identity $e$ acting continuously on a topological space $X$, $\sigma$ is a continuous involution of $G$, $\alpha = \sigma\iota$ is the associated continuous involutive automorphism, $G^\alpha = I(\sigma)$ is the fixed subgroup, and the action map is written $(g, x)\mapsto g\cdot x$.</p>
+<h2 id="equivariant-involutions">Equivariant Involutions</h2>
+<p><strong>Definition.</strong> Let $(G,\sigma)$ be an involutive topological group acting continuously on $X$. An <strong>equivariant involution</strong> of the action is a continuous involution $\tau$ of $X$ such that</p>
+<p>$$
+\tau(g\cdot x) = \alpha(g)\cdot \tau(x) \qquad \text{for all } g \in G,\ x \in X ,
+$$</p>
+<p>equivalently $\tau\,g\,\tau = \alpha(g)$ for every $g$ as operators on $X$. An action equipped with such a $\tau$ is an <strong>involutive action</strong>.</p>
+<p><strong>Proposition (why the associated automorphism acts).</strong> A map $\tau$ satisfying $\tau(g\cdot x) = \sigma(g)\cdot\tau(x)$ for all $g$ exists for an effective action only when $\sigma$ is an automorphism of $G$; for a genuine anti-involution and a faithful action no such $\tau$ exists, and the correct compatibility is the one with $\alpha = \sigma\iota$ above, equivalently $\tau(g\cdot x) = \sigma(g^{-1})\cdot\tau(x)$.</p>
+<p><strong>Proof.</strong> If $\tau(g\cdot x) = \sigma(g)\cdot\tau(x)$ then conjugating the operators gives $\tau\,g\,\tau = \sigma(g)$; the map $g\mapsto \tau g\tau$ is an automorphism of the image of $G$ in the homeomorphism group of $X$ and $g\mapsto \sigma(g)$ is an isomorphism onto that image only if $\sigma$ is a homomorphism, because $\tau(gh)\tau = \sigma(gh)$ while $(\tau g\tau)(\tau h\tau) = \sigma(g)\sigma(h)$; for an effective action the two force $\sigma(gh) = \sigma(g)\sigma(h)$. Since $\alpha$ is an automorphism the consistency holds, and $\alpha(g) = \sigma(g^{-1}) = \sigma(g)^{-1}$ is the equivalent form.</p>
+<p><strong>Theorem (the extension).</strong> An equivariant involution $\tau$ is exactly the action of the generator of the semidirect product $G\rtimes_\alpha C_2$ on $X$: the formulas</p>
+<p>$$
+(g, t^\epsilon)\cdot x = g\cdot \tau^\epsilon(x) \qquad (\epsilon \in \{0, 1\})
+$$</p>
+<p>define a continuous action of $G\rtimes_\alpha C_2$ on $X$, and conversely every continuous action of the extension restricts to an action of $G$ with equivariant involution the action of the generator.</p>
+<p><strong>Proof.</strong> The multiplication in the extension is $(g,t^\epsilon)(h,t^\delta) = (g\alpha^\epsilon(h), t^{\epsilon+\delta})$, and a direct computation gives $(g,t^\epsilon)\cdot((h,t^\delta)\cdot x) = g\cdot\tau^\epsilon(h\cdot\tau^\delta(x)) = g\,\alpha^\epsilon(h)\cdot\tau^{\epsilon+\delta}(x) = (g\alpha^\epsilon(h),t^{\epsilon+\delta})\cdot x$, using $\tau^\epsilon h \tau^\epsilon = \alpha^\epsilon(h)$; the unit acts by the identity because $\tau^0 = \mathrm{id}$. Continuity is the continuity of the action and of $\tau$, and the equivalence is the restriction to $G$ and the identification of the generator with $\tau$.</p>
+<p><strong>Corollary.</strong> The equivariant involutions of a fixed action are the involutions $\tau$ of $X$ with $\tau g\tau = \alpha(g)$ for all $g$; they are in bijection with the continuous extensions of the action to the semidirect product, so the existence of one is the statement that the action extends.</p>
+<h2 id="the-fixed-set-of-the-space-involution">The Fixed Set of the Space Involution</h2>
+<p><strong>Theorem (the fixed set is a $G^\alpha$-space).</strong> Let $\tau$ be an equivariant involution and let $X^\tau$ be its fixed set, which is closed in $X$. Then $X^\tau$ is stable under the fixed subgroup $H = G^\alpha = I(\sigma)$, the action of $H$ on $X^\tau$ is continuous, and for $g \in G$ the translate $g\cdot X^\tau$ is the fixed set of the conjugate involution $g\,\tau\,g^{-1}$.</p>
+<p><strong>Proof.</strong> For $h \in H$ and $x \in X^\tau$ one has $\tau(h\cdot x) = \alpha(h)\cdot\tau(x) = h\cdot x$, so $h\cdot X^\tau\subseteq X^\tau$. For general $g$ and $x \in X^\tau$, the conjugate involution fixes $g\cdot x$; conversely an element $g\cdot x$ fixed by $g\tau g^{-1}$ has $x$ fixed by $\tau$ because $g$ acts injectively.</p>
+<p><strong>Corollary (the fixed subgroup acts, the inverted subgroup inverts).</strong> The fixed subgroup $H = G^\alpha$ acts on $X^\tau$ through the restricted action; the elements of the inverted set $G^\sigma = I(\alpha)$ act on $X^\tau$ by $\tau(g\cdot x) = g^{-1}\cdot x$, so they carry $X^\tau$ onto the fixed set of the conjugate involution and fix the fixed set only when $g^2 = e$.</p>
+<p><strong>Proof.</strong> For $g \in G^\sigma$ the dictionary gives $\alpha(g) = g^{-1}$, so $\tau(g\cdot x) = g^{-1}\cdot x$. The fixed set of the conjugate involution is $g\cdot X^\tau$, and $g\cdot X^\tau = X^\tau$ requires $g\in H$ and $g^2 = e$ by the stability criterion.</p>
+<p><strong>Theorem (the fixed set of the restricted involution).</strong> The involution $\tau$ restricts to a continuous involution of every closed $\tau$-stable subspace, and the fixed set of the restriction is the intersection; when $X$ is compact Hausdorff so is $X^\tau$, and when the action is effective the stabiliser of every point of $X^\tau$ is contained in $G^\alpha$.</p>
+<p><strong>Proof.</strong> A closed $\tau$-stable subspace carries the restricted homeomorphism, whose fixed set is the intersection. A closed subspace of a compact space is compact. For the stabiliser, $g\cdot x = x$ with $x \in X^\tau$ gives $\tau(x) = x$ and $\alpha(g)\cdot x = \tau(g\cdot x) = \tau(x) = x$, so $\alpha(g)$ and $g$ both stabilise $x$; effectiveness gives $\alpha(g) = g$, that is $g \in G^\alpha$.</p>
+<h2 id="the-induced-involution-on-the-quotient">The Induced Involution on the Quotient</h2>
+<p><strong>Theorem (descent to the orbit space).</strong> Let $\tau$ be an equivariant involution. Then $\tau$ maps orbits to orbits, $\tau(G\cdot x) = G\cdot\tau(x)$, and it induces a continuous involution $\bar\tau$ of the orbit space $X/G$ with the quotient topology; the quotient map $q : X\to X/G$ is equivariant, $q\tau = \bar\tau q$.</p>
+<p><strong>Proof.</strong> Since $\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$ and $\alpha(G) = G$, the image of an orbit under $\tau$ is the orbit of $\tau(x)$. The induced map is well defined, continuous by the universal property of the quotient map, and its square is the identity because $\tau^2 = \mathrm{id}$; equivariance of $q$ is the definition of $\bar\tau$.</p>
+<p><strong>Theorem (the fixed orbits).</strong> The fixed points of the induced involution are the orbits $G\cdot x$ with $\tau(x) = g\cdot x$ for some $g \in G$. The natural map</p>
+<p>$$
+\rho : X^\tau/G^\alpha \longrightarrow (X/G)^{\bar\tau}, \qquad \rho(G^\alpha\cdot x) = G\cdot x ,
+$$</p>
+<p>is well defined and injective; it is surjective exactly when every $\tau$-stable orbit contains a $\tau$-fixed point, and it may fail to be surjective.</p>
+<p><strong>Proof.</strong> If $x \in X^\tau$ then $\bar\tau(G\cdot x) = G\cdot\tau(x) = G\cdot x$, so the orbit is fixed and $\rho$ is well defined, because $X^\tau$ is $G^\alpha$-stable. Two fixed points with the same orbit differ by an element $g$ with $g\cdot x = y$; applying $\tau$ gives $\alpha(g)\cdot x = y$, so $\alpha(g)^{-1}g$ stabilises $x$, and for an effective action $g \in G^\alpha$; this gives injectivity in the effective case. For the failure of surjectivity it suffices that a group element carries an orbit to itself without fixing a point of it, the standard example being a free involution on $S^1$ whose orbit space has one point.</p>
+<p><strong>Corollary (free and transitive cases).</strong> If the action of $G$ is transitive then $X/G$ is a point and $\bar\tau$ is the identity; if $\tau$ is free then $X^\tau = \varnothing$ and $(X/G)^{\bar\tau}$ is the set of orbits $G\cdot x$ with $\tau(x)\in G\cdot x$. If in addition $G$ acts freely and $\tau$ commutes with $G$, then $X\to X/G$ is a covering and the induced involution is the deck transformation of a two-fold covering.</p>
+<p><strong>Proof.</strong> The transitive case is immediate. For the free case, $X^\tau = \varnothing$ makes $\rho$ empty. When $\tau$ commutes with the action and acts freely with a free $G$-action, the quotient by the group generated by $G$ and $\tau$ is a two-fold covering, by the theory of the orbit space of a free involution.</p>
+<p><strong>Remark (the orbit space need not be Hausdorff).</strong> The quotient $X/G$ and its fixed set $(X/G)^{\bar\tau}$ need not be Hausdorff, and the induced involution is continuous for the quotient topology regardless; Hausdorffness requires the action to be proper or the orbit space to be separated, as <em>Spaces with an Involution and the Orbit Space</em> records. The closedness of $(X/G)^{\bar\tau}$ therefore requires the Hausdorff hypothesis, exactly as in the group case.</p>
+<h2 id="functions-and-cohomology">Functions and Cohomology</h2>
+<p><strong>Proposition (the induced involution on functions).</strong> Let $C(X)$ be the algebra of continuous functions $X\to k$. The formula $\tau^*f = f\circ\tau$ is an involution of $C(X)$, the subalgebra of $G$-invariants $C(X)^G$ is stable under it, and $C(X)^G$ with the involution $\tau^*$ is the algebra of continuous functions on the orbit space with the induced involution,</p>
+<p>$$
+C(X)^G \;\cong\; C(X/G) , \qquad \tau^*\text{ on } C(X)^G \;\longleftrightarrow\; \bar\tau^*\text{ on } C(X/G) .
+$$</p>
+<p><strong>Proof.</strong> $\tau^*$ is an algebra involution because $\tau$ is a homeomorphism of order two. A $G$-invariant function $f$ satisfies $(\tau^* f)(g\cdot x) = f(\tau(g\cdot x)) = f(\alpha(g)\cdot\tau(x)) = f(\tau(x))$, so $\tau^*f$ is again $G$-invariant. The identification with $C(X/G)$ is the universal property of the quotient map, and the two involutions correspond because $\bar\tau q = q\tau$.</p>
+<p><strong>Remark (cohomology, deferred).</strong> The involution $\tau$ acts on the cohomology of $X$ by transport of structure, the action of $G\rtimes_\alpha C_2$ acts on the equivariant cohomology, and the Lefschetz fixed-point theorem relates the fixed set $X^\tau$ to the trace of the induced involution. All of this needs the cohomology of <em>Algebraic Topology</em>, later in this part, and the equivariant cohomology of <em>Equivariant Cohomology</em>, which is later still; this article states the topological action and its quotient and defers the cohomological statements entirely.</p>
+<h2 id="summary">Summary</h2>
+<p>An involutive action is an action of a group $G$ with involution $\sigma$ together with an involution $\tau$ of the space satisfying $\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$ for the associated involutive automorphism $\alpha = \sigma\iota$; the anti-involution $\sigma$ itself cannot conjugate a faithful left action, so the automorphism $\alpha$ is the correct involution to use, and the compatibility is equivalently $\tau(g\cdot x) = \sigma(g^{-1})\cdot\tau(x)$. An equivariant involution is exactly an action of the semidirect product $G\rtimes_\alpha C_2$ extending the given one. The fixed set $X^\tau$ is closed and is stable under the fixed subgroup $G^\alpha = I(\sigma)$, the inverted set $G^\sigma$ carries it to the fixed sets of the conjugate involutions, and the stabiliser of a fixed point lies in $G^\alpha$ for an effective action. The involution maps orbits to orbits and descends to a continuous involution of the orbit space $X/G$; the fixed orbits are those with $\tau(x) = g\cdot x$, the natural map $X^\tau/G^\alpha\to(X/G)^{\bar\tau}$ is injective and may fail to be surjective, and the orbit space carries the involution of a two-fold covering when the action and the involution are free and commute. On functions the involution acts by $\tau^*f = f\circ\tau$, restricts to the invariants and corresponds to the induced involution on the quotient. The cohomological consequences are Part II's algebraic topology and are named only.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>the continuous involution of the group</td>
+</tr>
+<tr>
+<td>$\alpha = \sigma\iota$</td>
+<td>the associated involutive automorphism, the involution that acts</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the equivariant involution of the space</td>
+</tr>
+<tr>
+<td>$\tau(g\cdot x) = \alpha(g)\cdot\tau(x)$</td>
+<td>the compatibility, equivalently $\tau(g\cdot x) = \sigma(g^{-1})\cdot\tau(x)$</td>
+</tr>
+<tr>
+<td>$G\rtimes_\alpha C_2$</td>
+<td>the extension whose generator acts by $\tau$</td>
+</tr>
+<tr>
+<td>$X^\tau$</td>
+<td>the closed fixed set, a $G^\alpha$-space</td>
+</tr>
+<tr>
+<td>$G^\alpha = I(\sigma)$</td>
+<td>the fixed subgroup, acting on $X^\tau$</td>
+</tr>
+<tr>
+<td>$G^\sigma = I(\alpha)$</td>
+<td>the inverted set, carrying $X^\tau$ to conjugate fixed sets</td>
+</tr>
+<tr>
+<td>$X/G$</td>
+<td>the orbit space with the quotient topology</td>
+</tr>
+<tr>
+<td>$\bar\tau$</td>
+<td>the induced involution, $q\tau = \bar\tau q$</td>
+</tr>
+<tr>
+<td>$X^\tau/G^\alpha \to (X/G)^{\bar\tau}$</td>
+<td>the injection of fixed orbits, not always onto</td>
+</tr>
+<tr>
+<td>$\tau^*f = f\circ\tau$</td>
+<td>the involution on the continuous functions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Glen E. Bredon, <em>Introduction to Compact Transformation Groups</em> (Academic Press, 1972), for group actions on spaces, orbit spaces and equivariant maps.</li>
+<li>Tammo tom Dieck, <em>Transformation Groups</em> (De Gruyter, 1987), for equivariant topology, the orbit space and the Borel construction.</li>
+<li>Nicolas Bourbaki, <em>General Topology</em>, Chapters 1–4 (Springer, 1995), for quotient topologies, the universal property of the quotient map and the separation axioms.</li>
+<li>Lev S. Pontryagin, <em>Topological Groups</em> (Gordon and Breach, second edition, 1966), for continuous group actions and the topology of orbit spaces.</li>
+<li>Alexander Arhangel'skii and Mikhail Tkachenko, <em>Topological Groups and Related Structures</em> (Atlantis Press, 2008), for the action of a topological group on a space and the orbit-space topologies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

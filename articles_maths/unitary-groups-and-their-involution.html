@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Groups and Their Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-groups-and-their-involution"><strong>Unitary Groups and Their Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hermitian form on a complex space is diagonalisable, and the diagonal form records only its <strong>signature</strong>: the pair $(p,q)$ of the dimensions of a maximal positive-definite and a maximal negative-definite subspace. The unitary group $U(V,h)$ of the form therefore contains, for a form of index $q$, a largest compact subgroup $K$ — the isometries that preserve the definite part — and the <strong>Cartan involution</strong> of the pair is the involutive automorphism whose fixed subgroup is $K$. It is the involution of the unitary group as a structure, and the quotient $U(V,h)/K$ is the symmetric space it defines. The involution is not a property of the abstract group alone: it is determined by the form, up to conjugation, and the signature is exactly the invariant that classifies it.</p>
+<p>The article treats the unitary groups of Hermitian forms of all indices, the Cartan involution and its fixed subgroup, the symmetric space they define, and the classification of the involution by the signature. It is the general form of <em>The Unitary Group and the Hermitian Symmetric Space</em>, the previous article, which treated the standard form and its bounded realisation; the bounded domain, which is special to the indefinite case, is not repeated. The unitary group of a Hermitian form, its determinant and its special subgroup are <em>The Unitary and Symplectic Groups</em>; the Hermitian forms, their diagonalisation and their classification are <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>; the symmetric space, the symmetric pair, the Cartan involution and the rank are <em>Riemannian Symmetric Spaces and the Involution</em>; the homogeneous space $G/K$ and the isotropy representation are <em>Transformation Groups</em>; the Lie algebra is <em>The Orthogonal Lie Algebra</em> and <em>Lie Groups</em>. The invariant metric and the Hermitian geometry of the quotient are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part, named and not used. The article reads the involution on the <strong>elements</strong> of the group; the <strong>adjoint</strong> of an operator and the <code>*</code>-structures it defines are the group <code>- * Operator Theory</code>.</p>
+<p>The article has four sections: the Hermitian space and its unitary group; the involution and its fixed subgroup; the symmetric space; and the worked cases. Throughout, $V$ is a finite-dimensional complex space with a non-degenerate Hermitian form $h$ of index $q$ and signature $(p,q)$, $p+q = \dim V$; the form is real-valued on $V$ when the field is $\mathbb{R}$ and the reference to the Hermitian case is dropped.</p>
+<h2 id="the-hermitian-space-and-its-unitary-group">The Hermitian Space and Its Unitary Group</h2>
+<h3 id="the-hermitian-adjoint">The Hermitian Adjoint</h3>
+<p><strong>Definition.</strong> The <strong>Hermitian adjoint</strong> of a linear map $T \in \operatorname{End}(V)$ with respect to $h$ is the unique map $T^{*}$ with</p>
+<p>$$
+h(Tu, v) = h(u, T^{*}v) \quad \text{for all } u, v \in V;
+$$</p>
+<p>the existence and uniqueness are the non-degeneracy of $h$, identifying $V$ with its conjugate dual.</p>
+<p><strong>Proposition.</strong> The adjoint satisfies $(ST)^{*} = T^{*}S^{*}$, $(T^{*})^{*} = T$, $(\lambda T)^{*} = \overline{\lambda}\,T^{*}$ and $\operatorname{id}^{*} = \operatorname{id}$; it is a conjugate-linear involution of the endomorphism algebra, and for the standard form with matrix $J$ it is $T^{*} = J^{-1}T^{\dagger}J$.</p>
+<p><strong>Proof.</strong> The identities are the defining relation applied twice and the conjugate-linearity of $h$ in the first argument; the matrix formula is the change of the inner product to the standard one.</p>
+<h3 id="the-unitary-group">The Unitary Group</h3>
+<p><strong>Definition.</strong> The <strong>unitary group</strong> of $(V,h)$ is the group of isometries</p>
+<p>$$
+U(V,h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v)\} = \{T : T^{*}T = \operatorname{id}\},
+$$</p>
+<p>and it is a real Lie group; the <strong>special unitary group</strong> $SU(V,h)$ is the kernel of the determinant.</p>
+<p><strong>Proposition.</strong> A Hermitian form is diagonalisable: there is a basis in which $h$ has the matrix $J = \operatorname{diag}(I_p, -I_q)$, where $(p,q)$ is the signature; hence every unitary group is conjugate to the model group</p>
+<p>$$
+U(p,q) = \{g : g^{\dagger}Jg = J\},
+$$</p>
+<p>and the isomorphism class depends only on the signature. For $q = 0$ the group is the compact unitary group $U(n)$; for $q \geq 1$ it is noncompact.</p>
+<p><strong>Proof.</strong> Diagonalisability is Sylvester's law of inertia, <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>; the model form is the diagonal one. Compactness for $q=0$ is that $U(n)$ is closed and bounded; noncompactness for $q \geq 1$ is exhibited below by an unbounded one-parameter subgroup.</p>
+<h2 id="the-involution-and-its-fixed-subgroup">The Involution and Its Fixed Subgroup</h2>
+<h3 id="the-choice-of-a-definite-subspace">The Choice of a Definite Subspace</h3>
+<p><strong>Definition.</strong> A <strong>definite decomposition</strong> of $(V,h)$ is an orthogonal decomposition $V = V_+\oplus V_-$ with $h$ positive definite on $V_+$ and negative definite on $V_-$; the signature is $(p,q)$ with $\dim V_+ = p$ and $\dim V_- = q$.</p>
+<p><strong>Proposition.</strong> Definite decompositions exist, they are permuted transitively by $U(V,h)$, and the <strong>stabiliser of a definite decomposition</strong> is the compact subgroup</p>
+<p>$$
+K = U(V_+)\times U(V_-) = \{T \in U(V,h) : T(V_+) = V_+,\ T(V_-) = V_-\},
+$$</p>
+<p>a maximal compact subgroup of $U(V,h)$; maximal compact subgroups are conjugate.</p>
+<p><strong>Proof.</strong> Existence is the diagonalisation; transitivity is Witt's theorem, which extends an isometry of a subspace to an isometry of the whole form. The stabiliser of the decomposition preserves each of $V_{\pm}$, hence is a product of unitary groups of the definite parts, hence compact; it is maximal because any compact subgroup has a fixed vector in $V$ and iterating fixes a maximal positive subspace and a maximal negative one, so it can be conjugated into $K$. That all maximal compact subgroups are conjugate is the standard theorem for a real Lie group with finitely many components.</p>
+<h3 id="the-cartan-involution">The Cartan Involution</h3>
+<p><strong>Theorem (the involution).</strong> Let $K$ be the stabiliser of a definite decomposition. Then there is a unique involutive automorphism $\theta$ of $U(V,h)$ with</p>
+<p>$$
+U(V,h)^{\theta} = K, \qquad \theta(T) = T \text{ on } K, \qquad d\theta = -1 \text{ on } \mathfrak{p},
+$$</p>
+<p>the <strong>Cartan involution</strong> of the pair; for the standard form it is $\theta(g) = JgJ^{-1}$. It is defined up to conjugacy, and two Cartan involutions are conjugate by an element of $U(V,h)$, through the conjugacy of the maximal compact subgroups.</p>
+<p><strong>Proof.</strong> In the model, the conjugation by $J$ is the inner automorphism $g \mapsto JgJ^{-1}$, an involution because $J^2 = I$, with fixed subgroup the block-diagonal matrices $K = U(p)\times U(q)$ and differential $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{p}$; a general form is conjugated to the model by the diagonalisation, and conjugating the involution by the change of basis gives an involution of $U(V,h)$ with the same properties. Uniqueness up to conjugacy follows from the conjugacy of the maximal compact subgroups.</p>
+<p><strong>Remark.</strong> The involution is on the <strong>elements</strong> of the group, in the sense of the group <code>- * Theory</code>: it is an automorphism of order two, its fixed subgroup is the compact $K$, and its differential splits the Lie algebra into the $+1$-eigenspace $\mathfrak{k}$ and the $-1$-eigenspace $\mathfrak{p}$. It is the differential of the <strong>geodesic symmetry</strong> of the symmetric space at the base point, <em>Riemannian Symmetric Spaces and the Involution</em>. The <strong>adjoint</strong> of an operator on $V$ is a different involution, on the operators, and is not taken here.</p>
+<h3 id="the-fixed-subgroup-and-the-noncompactness">The Fixed Subgroup and the Noncompactness</h3>
+<p><strong>Proposition.</strong> The fixed subgroup $K$ is a maximal compact subgroup of $U(V,h)$; the quotient $U(V,h)/K$ is a symmetric space of noncompact type when $q \geq 1$ and a point when $q = 0$; the Cartan decomposition</p>
+<p>$$
+\mathfrak{u}(V,h) = \mathfrak{k}\oplus\mathfrak{p}, \qquad
+\mathfrak{p} = \{X \in \mathfrak{u}(V,h) : \theta(X) = -X\},
+$$</p>
+<p>has $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$, and $\mathfrak{p}$ is a real vector space of dimension $2pq$.</p>
+<p><strong>Proof.</strong> The bracket relations are the statements that $\theta$ is an automorphism and $\mathfrak{k}$ and $\mathfrak{p}$ are its eigenspaces; $\mathfrak{k}$ is compact because it is the Lie algebra of the compact group $K$. The dimension of $\mathfrak{p}$ is the dimension of the off-diagonal block in the model, $2pq$. The noncompactness for $q\geq1$ is the one-parameter subgroup $\exp(tX)$ with $X \in \mathfrak{p}$ a nonzero diagonal entry, which is unbounded.</p>
+<h2 id="the-symmetric-space">The Symmetric Space</h2>
+<h3 id="the-quotient">The Quotient</h3>
+<p><strong>Definition.</strong> The <strong>symmetric space</strong> of the unitary group is the homogeneous space</p>
+<p>$$
+X = U(V,h)/K,
+$$</p>
+<p>with base point $o = eK$ and tangent space $T_oX = \mathfrak{p}$; the <strong>geodesic symmetry</strong> at $o$ is $s_o(gK) = \theta(g)K$.</p>
+<p><strong>Proposition.</strong> The space $X$ is diffeomorphic to the manifold of $h$-negative subspaces of dimension $q$,</p>
+<p>$$
+X \cong \{W \leq V : \dim W = q,\ h|_W < 0\},
+$$</p>
+<p>via $gK \mapsto gV_-$; it is connected, simply connected, of dimension $2pq$ and rank $\min(p,q)$, and it is a symmetric space of noncompact type in the sense of <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<p><strong>Proof.</strong> The stabiliser of $V_-$ is $K$, so the orbit is the quotient; the map is bijective by the transitivity of $U(V,h)$ on the negative $q$-subspaces, which is Witt's theorem. The rank is the maximal dimension of an abelian subspace of $\mathfrak{p}$, which for the model is $\min(p,q)$, achieved by the diagonal entries of the off-diagonal block. The space is simply connected because $K$ is connected and the pair is the noncompact dual, <em>Riemannian Symmetric Spaces and the Involution</em>.</p>
+<h3 id="the-classification-by-the-signature">The Classification by the Signature</h3>
+<p><strong>Theorem.</strong> The Cartan involution of $U(V,h)$, up to conjugacy, is determined by the signature $(p,q)$ alone, and the conjugacy classes of the involutions with compact fixed subgroup of the unitary groups correspond to the signatures; the family of symmetric spaces obtained is</p>
+<p>$$
+X_{p,q} = U(p,q)/(U(p)\times U(q)), \qquad 1 \leq q \leq p,\ \ p+q = \dim V,
+$$</p>
+<p>with $X_{p,q} \cong X_{q,p}$ under the exchange of the form with its negative.</p>
+<p><strong>Proof.</strong> By the diagonalisation, two forms of the same signature are isometric, so their unitary groups are conjugate in $GL(V)$ and their Cartan involutions are conjugate; conversely the signature is recovered from the dimensions of the two definite parts of the decomposition fixed by the involution, which is the rank and the dimension of the space. The symmetry $X_{p,q}\cong X_{q,p}$ is the interchange $h \leftrightarrow -h$.</p>
+<p><strong>Remark.</strong> The signature is the geometric datum, and it satisfies the boundary test of the part: a different Hermitian form of the same dimension gives a different symmetric space and a different involution. The compact case $q=0$ has $X$ a point and the involution the identity; the split case $p=q$ has maximal rank and is the case of the Siegel disc of the previous article.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the compact unitary group).</strong> Let $q = 0$. Then $U(V,h) = U(n)$ is compact, $K = U(n)$ and $X$ is a point; the Cartan involution is the identity (up to conjugacy there is no noncompact direction), and the involution is trivial. The example shows that the involution is the identity exactly in the compact case.</p>
+<p><strong>Example (the indefinite unitary group).</strong> Let $(p,q) = (1,n-1)$. Then $U(1,n-1)$ has the symmetric space $X = U(1,n-1)/(U(1)\times U(n-1))$ of rank one and dimension $2(n-1)$, the complex hyperbolic space; the involution is $\theta(g) = JgJ^{-1}$ with $J = \operatorname{diag}(1,-I_{n-1})$, the fixed subgroup is $U(1)\times U(n-1)$, and the geodesic symmetry is complex-antisymmetric. The previous article's bounded realisation identifies $X$ with the unit ball of $\mathbb{C}^{n-1}$.</p>
+<p><strong>Example (the split signature).</strong> Let $p = q = n$. Then $U(n,n)$ has the symmetric space $U(n,n)/(U(n)\times U(n))$ of rank $n$ and dimension $2n^2$, the Siegel disc in the bounded realisation; the involution $\theta(g) = JgJ^{-1}$ with $J = \operatorname{diag}(I_n,-I_n)$ is conjugation by $J$, and the maximal abelian subspace of $\mathfrak{p}$ is the diagonal, of dimension $n$. The signature $(n,n)$ is the largest rank among the unitary symmetric spaces of dimension $2n^2$.</p>
+<p><strong>Example (the real form).</strong> Let the field be $\mathbb{R}$ with the identity involution; the Hermitian form is then quadratic and the unitary group is the orthogonal group of signature $(p,q)$, $O(p,q)$. The involution $\theta(g) = JgJ^{-1}$ is again the Cartan involution, $\mathfrak{p}$ has dimension $pq$, and the symmetric space is $O(p,q)/(O(p)\times O(q))$. This is the model of <em>The Orthogonal Group and the Involutive Automorphism</em>, the next article, and shows that the construction is not special to the complex case.</p>
+<h2 id="summary">Summary</h2>
+<p>The unitary group $U(V,h)$ of a Hermitian form of signature $(p,q)$ is the group of isometries $\{T : T^{*}T = \operatorname{id}\}$ of the Hermitian adjoint; a Hermitian form is diagonalisable, so the group is conjugate to the model $U(p,q) = \{g : g^{\dagger}Jg = J\}$ and depends only on the signature. A definite decomposition $V = V_+\oplus V_-$ has the stabiliser $K = U(V_+)\times U(V_-)$, a maximal compact subgroup, and the pair has a Cartan involution $\theta$, unique up to conjugacy, with fixed subgroup $K$ and differential $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{p}$; for the model it is $\theta(g) = JgJ^{-1}$. The quotient $U(V,h)/K$ is the symmetric space of the negative $q$-subspaces, of dimension $2pq$ and rank $\min(p,q)$, with geodesic symmetry $s_o(gK) = \theta(g)K$; it is a point exactly in the compact case $q = 0$. The involution up to conjugacy is classified by the signature, and the unitary family of symmetric spaces is $U(p,q)/(U(p)\times U(q))$ with $X_{p,q}\cong X_{q,p}$. The invariant metric and the Hermitian geometry are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The involution here is on the elements of the group; the adjoint of an operator is the group <code>- * Operator Theory</code>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h$, $(p,q)$</td>
+<td>Hermitian form and its signature</td>
+</tr>
+<tr>
+<td>$T^{*}$</td>
+<td>the Hermitian adjoint of $T$, $h(Tu,v) = h(u,T^{*}v)$</td>
+</tr>
+<tr>
+<td>$U(V,h)$, $SU(V,h)$</td>
+<td>unitary and special unitary groups of $(V,h)$</td>
+</tr>
+<tr>
+<td>$J = \operatorname{diag}(I_p,-I_q)$</td>
+<td>the matrix of the diagonalised form</td>
+</tr>
+<tr>
+<td>$U(p,q)$</td>
+<td>the model unitary group, $\{g : g^{\dagger}Jg = J\}$</td>
+</tr>
+<tr>
+<td>$V = V_+\oplus V_-$</td>
+<td>a definite decomposition</td>
+</tr>
+<tr>
+<td>$K = U(V_+)\times U(V_-)$</td>
+<td>the maximal compact subgroup; the fixed subgroup</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the Cartan involution; $\theta(g) = JgJ^{-1}$ in the model</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}\oplus\mathfrak{p}$</td>
+<td>the Cartan decomposition; eigen-$\pm1$ spaces of $d\theta$</td>
+</tr>
+<tr>
+<td>$X = U(V,h)/K$</td>
+<td>the symmetric space; the negative $q$-subspaces</td>
+</tr>
+<tr>
+<td>$s_o(gK) = \theta(g)K$</td>
+<td>the geodesic symmetry at the base point</td>
+</tr>
+<tr>
+<td>$X_{p,q}$</td>
+<td>$U(p,q)/(U(p)\times U(q))$, classified by the signature</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the Cartan involution, the Cartan decomposition and the symmetric space of a real Lie group.</li>
+<li>Sigurdur Helgason, <em>Groups and Geometric Analysis</em> (Academic Press, 1984), for the unitary groups of Hermitian forms and their symmetric spaces.</li>
+<li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, second edition, 2002), for the classification of the symmetric spaces of the classical groups by the signature.</li>
+<li>Joseph A. Wolf, <em>Spaces of Constant Curvature</em> (American Mathematical Society, sixth edition, 2011), for the symmetric spaces of the unitary family and their rank.</li>
+<li>Ichiro Satake, <em>Algebraic Structures of Symmetric Domains</em> (Princeton University Press, 1980), for the unitary symmetric domains and their classification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

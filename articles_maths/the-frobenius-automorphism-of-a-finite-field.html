@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frobenius Automorphism of a Finite Field — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frobenius-automorphism-of-a-finite-field"><strong>The Frobenius Automorphism of a Finite Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every finite field carries a canonical operator: the <strong>Frobenius</strong>, the map that raises an element to the $p$-th power. It is an automorphism of the field, it generates the whole automorphism group, its order is the degree of the field over its prime field, and its fixed field is the prime field. Read as an operator it is an additive map that is linear over the prime field but not over the field itself, and its iterates have fixed fields that are the intermediate fields of the extension, so the operator encodes the whole lattice of subfields. This article treats the Frobenius as an operator of a finite field: it fixes it, computes its order and its fixed field, records the additive and multiplicative invariants it produces, and gives the topological reading, in which the finite field is discrete and every operator is continuous, so that the Frobenius is a topological automorphism and an isometry for free.</p>
+<p>The article assumes the finite field, its prime field $\mathbb{F}_p$, its multiplicative group, the degree $f = [\mathbb{F}_q : \mathbb{F}_p]$ and the cyclicity of the multiplicative group from <em>Finite Fields</em> and <em>Fields</em>; the additive group of a finite field as an $\mathbb{F}_p$-vector space, its dimension and its linear operators from <em>Linear Algebra</em>; and the discrete topology, the continuity of maps with a finite target, the compactness of a finite space and the trivial absolute value from <em>Topological Spaces</em> and <em>Absolute Values, Valuations and Completions</em>. The lifting of the Frobenius of the residue field to an unramified extension of local fields is <em>Local Fields</em>, and is named only. No measure, no norm and no form occurs.</p>
+<p>Throughout, $p$ is a prime, $q = p^f$ with $f \geq 1$, $\mathbb{F}_q$ is the field with $q$ elements, $\mathbb{F}_p$ its prime field, $\varphi$ is the Frobenius $x \mapsto x^p$ and $\varphi_a$ the iterate $x \mapsto x^{p^a}$; the norm and the trace of the extension $\mathbb{F}_q/\mathbb{F}_p$ are written $N$ and $\mathrm{Tr}$.</p>
+<h2 id="the-frobenius">The Frobenius</h2>
+<p><strong>Definition.</strong> The <strong>Frobenius</strong> of $\mathbb{F}_q$ is the map</p>
+<p>$$
+\varphi : \mathbb{F}_q \longrightarrow \mathbb{F}_q , \qquad \varphi(x) = x^p .
+$$</p>
+<p>For an integer $a \geq 0$ the $a$-th iterate is $\varphi_a(x) = x^{p^a}$, and $\varphi^a = \varphi_a$ with $\varphi_0 = \mathrm{id}$.</p>
+<p><strong>Theorem (it is an automorphism).</strong> In characteristic $p$ the map $\varphi$ is a field homomorphism, $(x + y)^p = x^p + y^p$ and $(xy)^p = x^p y^p$; it is injective because a field homomorphism is injective, and it is surjective because $\mathbb{F}_q$ is finite; hence $\varphi$ is a field automorphism, the <strong>Frobenius automorphism</strong>, and it fixes $\mathbb{F}_p$ pointwise.</p>
+<p><strong>Proof.</strong> The binomial coefficients $\binom{p}{k}$ for $1 \leq k \leq p-1$ are divisible by $p$, so in characteristic $p$ the binomial theorem gives $(x+y)^p = x^p + y^p$; multiplicativity is the commutativity of the product together with $(xy)^p = x^p y^p$. A homomorphism of fields has trivial kernel, so it is injective; an injective self-map of a finite set is bijective. Fermat's little theorem or the fact that $\mathbb{F}_p$ is the prime field gives $\varphi(x) = x$ for $x$ in $\mathbb{F}_p$.</p>
+<h2 id="the-order-and-the-automorphism-group">The Order and the Automorphism Group</h2>
+<p><strong>Theorem (the order is the degree).</strong> The order of $\varphi$ is $f = [\mathbb{F}_q : \mathbb{F}_p]$, and the automorphism group of $\mathbb{F}_q$ is the cyclic group generated by $\varphi$,</p>
+<p>$$
+\operatorname{Aut}(\mathbb{F}_q) = \operatorname{Gal}(\mathbb{F}_q/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/f .
+$$</p>
+<p><strong>Proof.</strong> $\varphi^a = \mathrm{id}$ means $x^{p^a} = x$ for all $x$, that is $\mathbb{F}_q \subseteq \mathbb{F}_{p^a}$, which holds exactly when the degree $f$ divides $a$; the least such $a$ is $f$. For the identification of the groups, every automorphism of $\mathbb{F}_q$ fixes $\mathbb{F}_p$ and is determined by the image of a primitive element, which must be a conjugate of it, that is an element $\zeta^{p^a}$ for a primitive $(q-1)$-th root $\zeta$; since the conjugates are exactly $\varphi^a(\zeta)$, every automorphism is a power of $\varphi$, and the powers are distinct because their orders are the degrees.</p>
+<p><strong>Corollary (the lattice of subfields).</strong> For each divisor $d$ of $f$ there is exactly one subfield $\mathbb{F}_{p^d}$ of $\mathbb{F}_q$, consisting of the elements fixed by $\varphi_d$, and there are no others.</p>
+<p><strong>Proof.</strong> The fixed field of $\varphi_d$ is the set of solutions of $X^{p^d} = X$, which has at most $p^d$ elements and, when $d|f$, contains the field $\mathbb{F}_{p^d}$ with $p^d$ elements; it is therefore exactly $\mathbb{F}_{p^d}$. Conversely a subfield of $\mathbb{F}_q$ has order a divisor of $q$ and is a field, hence of order $p^d$ with $d|f$. The Galois correspondence identifies the subfields with the subgroups of $\mathbb{Z}/f$, which are the divisors.</p>
+<h2 id="the-fixed-field">The Fixed Field</h2>
+<p><strong>Proposition (the fixed field of an iterate).</strong> For $a \geq 0$ the fixed field of $\varphi_a$ is</p>
+<p>$$
+\mathbb{F}_q^{\varphi_a} = \{ x : x^{p^a} = x \} = \mathbb{F}_{p^{\gcd(a,f)}} ,
+$$</p>
+<p>and in particular the fixed field of $\varphi$ itself is the prime field $\mathbb{F}_p$.</p>
+<p><strong>Proof.</strong> The set of solutions of $X^{p^a} - X$ in $\mathbb{F}_q$ is the largest subfield whose degree over $\mathbb{F}_p$ divides $a$ and $f$, namely $\mathbb{F}_{p^{\gcd(a,f)}}$, by the corollary above; for $a=1$ this is $\mathbb{F}_p$.</p>
+<p><strong>Corollary (the Frobenius is the generating operator).</strong> The fixed field of the operator $\varphi_a$ depends only on $\gcd(a,f)$; the distinct fixed fields are the $\mathbb{F}_{p^d}$ for $d | f$, each realised by the operators $\varphi_a$ with $\gcd(a,f) = d$. So the Frobenius and its iterates generate the entire lattice of subfields of $\mathbb{F}_q$.</p>
+<p><strong>Proof.</strong> The fixed field computation gives the first statement; the divisors $d$ of $f$ are realised, and every divisor is $\gcd(a,f)$ for suitable $a$, for instance $a=d$. The subfields are exactly these by the corollary above.</p>
+<h2 id="the-additive-and-multiplicative-invariants">The Additive and Multiplicative Invariants</h2>
+<p><strong>Proposition (the Frobenius is prime-field linear, not field linear).</strong> The Frobenius is additive and $\mathbb{F}_p$-linear, but it is not $\mathbb{F}_q$-linear for $f > 1$: $\varphi(cx) = c^p x^p = c\,\varphi(x)$ holds for all $x$ exactly when $c^p = c$, that is exactly when $c \in \mathbb{F}_p$.</p>
+<p><strong>Proof.</strong> Additivity is the theorem above, and $\mathbb{F}_p$-linearity follows from it together with $\varphi(cx) = c^p x^p = c x^p$ for $c \in \mathbb{F}_p$. For a general $c$, $\varphi(cx) = c^p \varphi(x)$ equals $c \varphi(x)$ for all $x$ exactly when $c^p = c$, which defines the prime field.</p>
+<p><strong>Proposition (order and a normal basis).</strong> The Frobenius is carried, in a suitable $\mathbb{F}_p$-basis, to the cyclic shift of the basis: there is $a \in \mathbb{F}_q$ such that $\{a, \varphi(a), \ldots, \varphi^{f-1}(a)\}$ is an $\mathbb{F}_p$-basis of $\mathbb{F}_q$, and in it the matrix of $\varphi$ is the companion of $X^f - 1$. Hence $\varphi$ has order $f$, its fixed space is one-dimensional over $\mathbb{F}_p$, and its eigenvalues in an algebraic closure are the $f$-th roots of unity.</p>
+<p><strong>Proof.</strong> The existence of a normal basis is the normal basis theorem for finite fields, a standard result; in such a basis $\varphi$ sends each basis vector to the next and the last to the first, so its matrix is the companion of $X^f - 1$, whose invariant factor is $X^f - 1$. The fixed space is the kernel of $X - 1$ in $\mathbb{F}_q$, the one-dimensional space $\mathbb{F}_p$.</p>
+<p><strong>Proposition (the trace and the norm).</strong> The <strong>trace</strong> and the <strong>norm</strong></p>
+<p>$$
+\mathrm{Tr}(x) = \sum_{i=0}^{f-1} \varphi^i(x) = \sum_{i=0}^{f-1} x^{p^i}, \qquad N(x) = \prod_{i=0}^{f-1} \varphi^i(x) = x^{\frac{q-1}{p-1}} \ (x \neq 0),
+$$</p>
+<p>satisfy $\mathrm{Tr}(x) \in \mathbb{F}_p$, $N(x) \in \mathbb{F}_p^\times$ and $\varphi \circ \mathrm{Tr} = \mathrm{Tr} \circ \varphi$, $\varphi \circ N = N \circ \varphi$; the trace is a surjective $\mathbb{F}_p$-linear map $\mathbb{F}_q \to \mathbb{F}_p$ and the norm is a surjective homomorphism $\mathbb{F}_q^\times \to \mathbb{F}_p^\times$.</p>
+<p><strong>Proof.</strong> The trace and the norm are invariant under $\varphi$ because $\varphi$ permutes the summands and the factors cyclically, so their values lie in the fixed field $\mathbb{F}_p$. The trace is additive and $\mathbb{F}_p$-linear because each $\varphi^i$ is; it is not identically zero because the distinct field homomorphisms $\mathrm{id}, \varphi, \ldots, \varphi^{f-1}$ are linearly independent (Dedekind's independence lemma), so their sum $\mathrm{Tr}$ is not the zero map, and a nonzero $\mathbb{F}_p$-linear map to a field is surjective. The norm is multiplicative, its value is nonzero for nonzero $x$, and for a primitive element $\zeta$ the value $N(\zeta) = \zeta^{(q-1)/(p-1)}$ is a primitive $(p-1)$-th root, so the norm is surjective.</p>
+<h2 id="the-topological-reading">The Topological Reading</h2>
+<p><strong>Proposition (the finite field is discrete and every operator is continuous).</strong> A finite field carries the discrete topology, which is the only Hausdorff linear topology on it and the topology of its trivial absolute value; every self-map of $\mathbb{F}_q$ is continuous, every subset is open and closed, and $\mathbb{F}_q$ is compact.</p>
+<p><strong>Proof.</strong> A finite set with the discrete topology is compact; a finite field has no proper nonzero ideal, so the only linear topology is the discrete or the indiscrete one, and the Hausdorff one is discrete; the trivial absolute value induces the discrete topology.</p>
+<p><strong>Corollary (the Frobenius is a topological automorphism and an isometry).</strong> The Frobenius is continuous, being any map from a discrete space, its inverse is $\varphi^{f-1}$, also continuous, so it is a homeomorphism and a <strong>topological automorphism</strong>; and it preserves the trivial absolute value, $\lvert \varphi(x) \rvert = \lvert x \rvert$, so it is an <strong>isometry</strong>. The fixed field $\mathbb{F}_p$ is closed, being finite, and every subgroup and subfield is closed.</p>
+<p><strong>Proof.</strong> Continuity is the preceding proposition; the inverse is an iterate because $\varphi^f = \mathrm{id}$. For the absolute value, $\lvert x^p \rvert = \lvert x \rvert^p = \lvert x \rvert$ for the trivial absolute value, whose values are $0$ and $1$; the fixed field is finite hence closed.</p>
+<p><strong>Remark (the boundary to the local fields).</strong> The Frobenius of a finite field is the model of the Frobenius of the residue field of an unramified extension of local fields: for a finite unramified extension $L/F$ the reduction identifies $\operatorname{Gal}(L/F)$ with $\operatorname{Gal}(k_L/k)$, and the lift of the generator is the Frobenius of $L/F$, which is <em>Local Fields</em>. Here only the finite-field operator is treated; the lifting, the ramification and the arithmetic of the residue field are named and not used.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example ($\mathbb{F}_4$ over $\mathbb{F}_2$).</strong> Here $p=2$, $f=2$ and $\varphi(x) = x^2$; with $\mathbb{F}_4 = \mathbb{F}_2[t]/(t^2 + t + 1)$, the element $t$ is primitive, $\varphi(t) = t + 1 = t^{-1}$, and $\varphi$ has order $2$ with fixed field $\mathbb{F}_2$; the two nontrivial elements $t$ and $t+1$ are exchanged, and the trace sends both to $1$.</p>
+<p><strong>Example ($\mathbb{F}_8$ over $\mathbb{F}_2$).</strong> Here $f = 3$ and $\varphi$ has order $3$; the fixed field of $\varphi$ is $\mathbb{F}_2$, the fixed field of $\varphi^2$ is also $\mathbb{F}_2$, and there are no proper intermediate fields because $3$ is prime; the trace $\mathrm{Tr}(x) = x + x^2 + x^4$ is $\mathbb{F}_2$-valued and the norm is $N(x) = x^7 = 1$ for $x \neq 0$.</p>
+<p><strong>Example ($\mathbb{F}_{16}$ over $\mathbb{F}_2$).</strong> Here $f = 4$; the fixed field of $\varphi$ is $\mathbb{F}_2$, of $\varphi^2$ is $\mathbb{F}_4$, and of $\varphi^4$ is $\mathbb{F}_{16}$; the Frobenius therefore carries the unique intermediate field $\mathbb{F}_4$, which is why $\operatorname{Gal}(\mathbb{F}_{16}/\mathbb{F}_2) \cong \mathbb{Z}/4$ has the single subgroup of order two.</p>
+<p><strong>Example ($\mathbb{F}_9$ over $\mathbb{F}_3$).</strong> Here $p = 3$, $f = 2$, $\varphi(x) = x^3$, order two, fixed field $\mathbb{F}_3$; with $\mathbb{F}_9 = \mathbb{F}_3[i]$ and $i^2 = -1$, the Frobenius is the conjugation $i \mapsto -i$, the analogue of complex conjugation, and $N(a + bi) = a^2 + b^2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The Frobenius of the finite field $\mathbb{F}_q$, $q = p^f$, is the map $\varphi(x) = x^p$. It is a field automorphism, because in characteristic $p$ the binomial theorem gives additivity and a field homomorphism is injective and hence bijective on a finite field; it fixes the prime field $\mathbb{F}_p$ and its order is the degree $f$, so that $\operatorname{Aut}(\mathbb{F}_q) = \langle \varphi \rangle \cong \mathbb{Z}/f$. The fixed field of the iterate $\varphi_a$ is $\mathbb{F}_{p^{\gcd(a,f)}}$, so the operator and its iterates generate the lattice of subfields, which consists of the unique $\mathbb{F}_{p^d}$ for $d | f$.</p>
+<p>Additively the Frobenius is $\mathbb{F}_p$-linear and not $\mathbb{F}_q$-linear for $f > 1$; in a normal basis it is the cyclic shift, its fixed space is one-dimensional and its eigenvalues are the $f$-th roots of unity. The trace $\mathrm{Tr}(x) = \sum_{i=0}^{f-1} x^{p^i}$ is a surjective $\mathbb{F}_p$-linear map to $\mathbb{F}_p$ and the norm $N(x) = \prod_{i=0}^{f-1} x^{p^i} = x^{(q-1)/(p-1)}$ is a surjective homomorphism $\mathbb{F}_q^\times \to \mathbb{F}_p^\times$, both invariant under $\varphi$. Topologically the finite field is discrete, so every operator is continuous, and the Frobenius is a topological automorphism and an isometry for the trivial absolute value, with every subfield closed; the operator is the finite model of the Frobenius of the residue field of an unramified extension of local fields.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p$, $q = p^f$</td>
+<td>Prime, and the order of the finite field</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q$, $\mathbb{F}_p$</td>
+<td>The finite field and its prime field</td>
+</tr>
+<tr>
+<td>$\varphi(x) = x^p$</td>
+<td>The Frobenius automorphism</td>
+</tr>
+<tr>
+<td>$\varphi_a(x) = x^{p^a}$</td>
+<td>Its $a$-th iterate</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{F}_q) = \langle \varphi \rangle \cong \mathbb{Z}/f$</td>
+<td>The automorphism group is cyclic of order $f$</td>
+</tr>
+<tr>
+<td>$\mathbb{F}_q^{\varphi_a} = \mathbb{F}_{p^{\gcd(a,f)}}$</td>
+<td>The fixed field of an iterate</td>
+</tr>
+<tr>
+<td>$\{a, \varphi(a), \ldots, \varphi^{f-1}(a)\}$</td>
+<td>A normal basis</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(x) = \sum_{i=0}^{f-1} x^{p^i}$</td>
+<td>The trace, $\mathbb{F}_q \to \mathbb{F}_p$</td>
+</tr>
+<tr>
+<td>$N(x) = x^{(q-1)/(p-1)}$</td>
+<td>The norm, $\mathbb{F}_q^\times \to \mathbb{F}_p^\times$</td>
+</tr>
+<tr>
+<td>$\lvert \cdot \rvert$ trivial</td>
+<td>The trivial absolute value; the discrete topology</td>
+</tr>
+<tr>
+<td>$\varphi^{f-1}$</td>
+<td>The inverse of the Frobenius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Rudolf Lidl and Harald Niederreiter, <em>Finite Fields</em> (Cambridge University Press, 2nd ed. 1997), for the Frobenius, the subfield lattice, normal bases, the trace and the norm.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, revised 3rd ed. 2002), for the finite field $\mathbb{F}_{p^f}$, its cyclicity and the Galois theory of finite fields.</li>
+<li>Kenneth Ireland and Michael Rosen, <em>A Classical Introduction to Modern Number Theory</em> (Springer, 2nd ed. 1990), for the Frobenius as an arithmetic operator and the trace and norm of a finite extension.</li>
+<li>Jean-Pierre Serre, <em>Local Fields</em> (Springer, 1979), for the lifting of the Frobenius of the residue field in an unramified extension.</li>
+<li>David Goss, <em>Basic Structures of Function Field Arithmetic</em> (Springer, 1996), for the Frobenius as an operator in characteristic $p$ and its iterates.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

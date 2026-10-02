@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-group"><strong>The Signed Adjoint Sandwich on a Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich $x\mapsto a\,\alpha(x)\,b$ is the two-sided operator built from the two-sided translation and the grade involution, and its adjoint under the natural pairing is again a signed sandwich, with the two parameters inverted and twisted by the involution. The computation is entirely explicit, and it has a sharp consequence: every signed sandwich is unitary, so the unitarity condition imposes no constraint on the parameters, while the self-adjointness condition is the nontrivial one and returns a centrality statement. This article gives the adjoint, the unitarity that follows from it, and the self-adjointness criterion. It is the fourth article of the <code>* Operator Theory</code> group; the signed sandwich and its composition law are from <em>The Signed Sandwich on a Group</em>, the pairing and the adjoint from <em>Involutions on the Operator Layer</em>, and the unsigned case from <em>The Group Inversion as an Adjoint</em>.</p>
+<p>Throughout, $(G,\alpha)$ is a group with an involutive automorphism $\alpha$, $\Sigma^{\alpha}_{a,b}$ is the signed sandwich $\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$, the pairing is $\langle g,h\rangle=\delta_{g,h}$, and the adjoint is defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Theorem (the adjoint is a signed sandwich).</strong> For every $a,b\in G$,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\ \alpha(b)^{-1}}
+=\Sigma^{\alpha}_{\alpha(a^{-1}),\ \alpha(b^{-1})}.
+$$</p>
+<p><strong>Proof.</strong> In the basis $G$, $\Sigma^{\alpha}_{a,b}(g)=a\,\alpha(g)\,b$, so the matrix entry $\bigl(\Sigma^{\alpha}_{a,b}\bigr)_{h,g}$ equals $1$ exactly when $h=a\,\alpha(g)\,b$, that is when $g=\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\alpha\bigl(a^{-1}hb^{-1}\bigr)$, using that $\alpha$ is an automorphism with $\alpha^{2}=\mathrm{id}$. Hence the transpose sends $h$ to $\alpha(a)^{-1}\alpha(h)\alpha(b)^{-1}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}(h)$.</p>
+<p><strong>Corollary (the adjoint inverts and twists the parameters).</strong> The adjoint of a signed sandwich is a signed sandwich, and the assignment on the parameters is</p>
+<p>$$
+(a,b)\longmapsto\bigl(\alpha(a)^{-1},\ \alpha(b)^{-1}\bigr)=\bigl(\alpha(a^{-1}),\ \alpha(b^{-1})\bigr).
+$$</p>
+<p>In particular the adjoint of the unsigned sandwich is the unsigned sandwich with inverted parameters, in agreement with <em>The Group Inversion as an Adjoint</em>.</p>
+<p><strong>Proof.</strong> The formula is the theorem with $\alpha=\mathrm{id}$, and the two expressions for the parameter pair agree because $\alpha$ is an automorphism. The unsigned case $\bigl(\Sigma_{a,b}\bigr)^{*}=\Sigma_{a^{-1},b^{-1}}$ is the specialisation.</p>
+<p><strong>Proposition (the adjoint of a product of two signed sandwiches).</strong> $\bigl(\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}\bigr)^{*}=\bigl(\Sigma^{\alpha}_{a\alpha(c),\,\alpha(d)b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1}\alpha(c)^{-1},\ \alpha(d)^{-1}\alpha(b)^{-1}}$, by the anti-multiplicativity of the adjoint and the composition law of <em>The Signed Sandwich on a Group</em>.</p>
+<p><strong>Proof.</strong> The composition law is $\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}$; applying the theorem to the composite gives the displayed pair. The two routes — composing the adjoints in reverse and transposing the composite — agree.</p>
+<h2 id="unitarity">Unitarity</h2>
+<p><strong>Theorem (every signed sandwich is unitary).</strong> For every $a,b\in G$,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}\Sigma^{\alpha}_{a,b}=\mathrm{id}=\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}.
+$$</p>
+<p><strong>Proof.</strong> By the adjoint formula and the composition law,</p>
+<p>$$
+\Sigma^{\alpha}_{a,b}\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}
+=\Sigma^{\alpha}_{a,b}\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}
+=\Sigma^{\alpha}_{a\,\alpha(\alpha(a)^{-1}),\ \alpha(\alpha(b)^{-1})\,b}
+=\Sigma^{\alpha}_{a\,a^{-1},\ b^{-1}\,b}=\Sigma^{\alpha}_{e,e}=\mathrm{id},
+$$</p>
+<p>and the other product is the same computation with the order exchanged.</p>
+<p><strong>Corollary (the unitarity condition imposes nothing).</strong> The condition $u^{*}u=uu^{*}=1$ of the menu is satisfied by every signed sandwich, whatever the pair $(a,b)$ and whatever the involutive automorphism $\alpha$; the signed sandwiches form a set of unitary operators and the unitarity condition does not cut it down.</p>
+<p><strong>Proof.</strong> The theorem is the condition for $u=\Sigma^{\alpha}_{a,b}$; it holds for all pairs, so the set of unitary operators contains all the signed sandwiches.</p>
+<p><strong>Remark (the contrast with the unsigned case).</strong> The unsigned sandwich is also unitary, with inverse $\Sigma_{a^{-1},b^{-1}}$, so unitarity is not the feature that distinguishes the signed family; the signed family is the coset of the unsigned family under the involution, by <em>The Signed Sandwich on a Group</em>, and the two have the same unitarity. The distinguishing feature is the sign carried by $\alpha$, which shows up in the self-adjointness rather than in the unitarity.</p>
+<h2 id="self-adjointness">Self-Adjointness</h2>
+<p><strong>Proposition (the equality of two signed sandwiches).</strong> Two signed sandwiches agree, $\Sigma^{\alpha}_{a,b}=\Sigma^{\alpha}_{c,d}$, if and only if there is a central element $z\in Z(G)$ with</p>
+<p>$$
+c=a\,z^{-1}, \qquad d=z\,b .
+$$</p>
+<p><strong>Proof.</strong> The equality $a\alpha(x)b=c\alpha(x)d$ for all $x$ is equivalent to $c^{-1}a\,\alpha(x)=\alpha(x)\,db^{-1}$ for all $x$; the element $u=c^{-1}a$ then commutes with every $\alpha(x)$, hence $u\in Z(G)$, and $db^{-1}=u$. Setting $z=u$ gives the two relations.</p>
+<p><strong>Theorem (the self-adjointness criterion).</strong> The signed sandwich $\Sigma^{\alpha}_{a,b}$ is self-adjoint if and only if</p>
+<p>$$
+\alpha(a)\,a\in Z(G) \quad\text{and}\quad b\,\alpha(b)=\bigl(\alpha(a)\,a\bigr)^{-1},
+$$</p>
+<p>equivalently if and only if there is a central element $z$ of order at most two with $\alpha(a)a=z$ and $b\alpha(b)=z$.</p>
+<p><strong>Proof.</strong> Self-adjointness is $\Sigma^{\alpha}_{a,b}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$, which by the equality criterion is the existence of $z\in Z(G)$ with $\alpha(a)^{-1}=a z^{-1}$ and $\alpha(b)^{-1}=zb$. The first gives $z=\alpha(a)a$; substituting into the second gives $\alpha(b)^{-1}=\alpha(a)a\,b$, equivalently $b\alpha(b)=(\alpha(a)a)^{-1}$. Since $z=\alpha(a)a$ and $z^{-1}=b\alpha(b)$ are both displayed as the same central element and its inverse, $z^{2}=e$. In particular the self-adjoint signed sandwiches are the ones whose two parameters satisfy the reflection condition $\alpha(a)a\in Z(G)$ on the first and its inverse on the second.</p>
+<p><strong>Corollary (the self-adjoint two-sided translations).</strong> For $\alpha=\mathrm{id}$ the criterion is $a^{2}\in Z(G)$ and $b^{2}=(a^{2})^{-1}$, so the self-adjoint unsigned sandwiches are the two-sided translations with $a^{2}$ central of order at most two and $b=a^{-1}$ up to the centre; the sandwich is then the unsigned translation paired with the corresponding reflection of the cyclic subgroup generated by $a$.</p>
+<p><strong>Proof.</strong> The criterion specialises with $\alpha=\mathrm{id}$, and the last statement is the identification of the two-sided translation with the reflection data of the unsigned operator.</p>
+<h2 id="the-relation-to-the-one-sided-operators">The Relation to the One-Sided Operators</h2>
+<p><strong>Proposition (factorisation).</strong> $\Sigma^{\alpha}_{a,b}=R_b\circ\ell^{\alpha}_a$, where $\ell^{\alpha}_a(x)=a\,\alpha(x)$ is the signed left multiplication of <em>The Signed Left Multiplication on a Group</em>.</p>
+<p><strong>Proof.</strong> $R_b(\ell^{\alpha}_a(x))=a\,\alpha(x)\,b=\Sigma^{\alpha}_{a,b}(x)$ for every $x$, and both maps are linear, so the composition is the signed sandwich.</p>
+<p><strong>Corollary (the adjoint factors in reverse).</strong> $\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\bigl(\ell^{\alpha}_a\bigr)^{*}\circ(R_b)^{*}=\ell^{\alpha}_{\alpha(a)^{-1}}\circ R_{b^{-1}}$.</p>
+<p><strong>Proof.</strong> The adjoint of a product reverses the order, the adjoint of $R_b$ is $R_{b^{-1}}$, and the adjoint of the signed left multiplication is computed in <em>The Signed Adjoint of the Left Multiplication on a Group</em>; composing and comparing with the theorem gives the same expression.</p>
+<p><strong>Remark.</strong> The factorisation shows that the signed sandwich is read from a signed one-sided operator and a right translation; its adjoint is then read from the two adjoints in the reverse order, and the result is again a signed sandwich with the two parameters transformed. Nothing in the computation uses invertibility of $a$ or of $b$, and the adjoint formula holds for all parameters.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of the signed sandwich is the signed sandwich with the parameters transformed by inversion and the involution,</p>
+<p>$$
+\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}},
+$$</p>
+<p>which for $\alpha=\mathrm{id}$ is the unsigned rule $\Sigma_{a,b}^{*}=\Sigma_{a^{-1},b^{-1}}$, and which respects composition through the anti-multiplicativity of the adjoint. <strong>Every signed sandwich is unitary</strong>, because the adjoint is its inverse; the unitarity condition $u^{*}u=uu^{*}=1$ therefore holds for all parameters and imposes no restriction. The <strong>self-adjointness</strong> is the nontrivial condition: $\Sigma^{\alpha}_{a,b}$ is self-adjoint if and only if $\alpha(a)a$ is a central element of order at most two and $b\alpha(b)$ is its inverse, the reflection condition on the first parameter and its dual on the second. Two signed sandwiches agree exactly when their parameters differ by a central factor, $\Sigma^{\alpha}_{a,b}=\Sigma^{\alpha}_{az^{-1},zb}$ for $z\in Z(G)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$</td>
+<td>the adjoint</td>
+</tr>
+<tr>
+<td>$u^{*}u=uu^{*}=1$</td>
+<td>the unitarity condition, satisfied by every signed sandwich</td>
+</tr>
+<tr>
+<td>$\alpha(a)a\in Z(G)$, $b\alpha(b)=(\alpha(a)a)^{-1}$</td>
+<td>the self-adjointness criterion</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}=\Sigma^{\alpha}_{az^{-1},zb}$</td>
+<td>equality up to a central factor</td>
+</tr>
+<tr>
+<td>$\Sigma^{\alpha}_{a,b}=R_b\circ\ell^{\alpha}_a$</td>
+<td>factorisation into one-sided operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for adjoints, unitary operators and the self-adjoint elements of a group with involution.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, Graduate Texts in Mathematics 211, third edition, 2002), for bilinear forms, adjoints and the unitary group.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the group algebra, its translations and their inverses.</li>
+<li>I. Martin Isaacs, <em>Finite Group Theory</em> (American Mathematical Society, Graduate Studies in Mathematics 92, 2008), for centrality conditions and elements of order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

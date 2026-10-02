@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dirac Operator and Its Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dirac-operator-and-its-adjoint"><strong>The Dirac Operator and Its Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Cauchy–Riemann operator of a spin manifold is assembled from two structures that the metric puts on the spinor bundle: the Clifford multiplication, which is skew-adjoint for the spinor inner product, and the spin connection, which is compatible with it. The product is <strong>formally self-adjoint</strong>: the adjoint of the operator is minus itself twice, hence the operator itself, and the self-adjointness is what makes the operator a Dirac-type operator in the analytic sense — discrete real spectrum, orthogonal eigenspinors, and two chiral halves that are mutual adjoints. The adjoint of the positive half is the negative half, $\operatorname{coker}D^{+}=\ker D^{-}$, and the index counts the chiral zero modes; the twisted operator and its adjoint satisfy the same identities with the twisted connection, and the square of the operator is the Lichnerowicz Laplacian, whose self-adjointness gives the vanishing theorem for the harmonic spinors.</p>
+<p>The article treats the spinor inner product and the formal adjoint, the self-adjointness of the Cauchy–Riemann operator, the adjoint of the chiral halves and the resulting form of the index, the twisted operator and its adjoint, and the place of the adjoint in the Lichnerowicz formula and the vanishing theorem. The operator on the manifold, its chirality, the Lichnerowicz formula and the $\hat A$-genus are <em>The Dirac Operator on a Manifold</em>; the spin structure and the spinor bundle are <em>Spin Geometry</em>; the algebraic <strong>Hermitian structure</strong> of the operator — the module form, the self-adjointness on a Hermitian Clifford module, the spinor adjoint $s\mapsto(s,\cdot)$ and the Dirac adjoint $\bar\psi=\psi^{\dagger}\gamma_0$ — belongs to the Part II articles <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>, and is cited here; the parallel article for the de Rham complex is <em>The Adjoint of the Signature Operator</em>.</p>
+<p>The prerequisites are <em>The Dirac Operator on a Manifold</em> for the operator, the spinor bundle and the index; <em>Spin Geometry</em> for the spin connection and the Clifford multiplication; <em>The Formal Adjoint of a Differential Operator</em> and <em>The L2 Adjoint of a Differential Operator</em> for the formal and $L^{2}$ adjoints; <em>The Codifferential</em> and <em>The Adjoint of the Signature Operator</em> for the differential-geometric adjoint of a Dirac-type operator; <em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em>, <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em> for the algebraic Hermitian structure; and <em>The Atiyah–Singer Index Theorem and K-Theory</em> for the index. The analytic domain theory belongs to Part III and is cited; the metric is chosen. No physics is invoked.</p>
+<h2 id="the-spinor-inner-product-and-the-formal-adjoint">The Spinor Inner Product and the Formal Adjoint</h2>
+<p>Let $(M,g)$ be a closed spin manifold of dimension $n$, with spinor bundle $\mathcal{S}$ and Clifford multiplication $c:TM\otimes\mathcal{S}\to\mathcal{S}$, $c(v)^{2}=-|v|^{2}$. The spinor bundle carries a Hermitian metric $(\cdot,\cdot)_{\mathcal{S}}$, the <strong>spinor inner product</strong>, for which the Clifford multiplication is skew-adjoint,</p>
+<p>$$
+(c(v)s,t)_{\mathcal{S}}=-(s,c(v)t)_{\mathcal{S}},
+$$</p>
+<p>and the spin connection is compatible with the metric and with the Clifford multiplication,</p>
+<p>$$
+X(s,t)_{\mathcal{S}}=(\nabla^{\mathcal{S}}_{X}s,t)_{\mathcal{S}}+(s,\nabla^{\mathcal{S}}_{X}t)_{\mathcal{S}},\qquad
+\nabla^{\mathcal{S}}_{X}\bigl(c(Y)s\bigr)=c(\nabla_{X}Y)s+c(Y)\nabla^{\mathcal{S}}_{X}s .
+$$</p>
+<p>The $L^{2}$ inner product on the spinors is</p>
+<p>$$
+\langle s,t\rangle=\int_{M}(s,t)_{\mathcal{S}}\,\mathrm{vol}_g ,
+$$</p>
+<p>a positive definite Hermitian form on $\Gamma(\mathcal{S})$.</p>
+<p><strong>Theorem.</strong> The <strong>formal adjoint</strong> of the Cauchy–Riemann operator $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, with respect to the spinor inner product, is</p>
+<p>$$
+D^{*}=\sum_i\nabla^{\mathcal{S},*}_{e_i}c(e_i)^{*}=\sum_i\Bigl(-\nabla^{\mathcal{S}}_{e_i}-\operatorname{div}e_i\Bigr)\bigl(-c(e_i)\bigr)=D ,
+$$</p>
+<p>the divergence term vanishing on a closed manifold; hence $D$ is <strong>formally self-adjoint</strong>, $D^{*}=D$. The adjoint of the operator with respect to the module form of a Hermitian Clifford module is the same statement algebraically, and it is the content of <em>Dirac Operators with Hermitian Adjoint</em>.</p>
+<p><strong>Proof.</strong> The formal adjoint of a composition is the composition of the adjoints in reverse order; the adjoint of $\nabla^{\mathcal{S}}_{e_i}$ is $-\nabla^{\mathcal{S}}_{e_i}-\operatorname{div}e_i$, and the adjoint of $c(e_i)$ is $-c(e_i)$ for the spinor metric; the divergence integrates to zero on a closed manifold, and the two minus signs cancel, leaving $\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}=D$. The algebraic form of the identity is the self-adjointness of the Dirac operator on a Hermitian Clifford module, which is the theorem of <em>Dirac Operators with Hermitian Adjoint</em>. $\square$</p>
+<p><strong>Remark.</strong> The two factors contribute two skew-adjoint properties: the Clifford multiplication is skew-adjoint and the covariant derivative is skew-adjoint up to the divergence, and the product of two skew-adjoint operators is self-adjoint. This is exactly the mechanism of <em>Dirac Operators with Hermitian Adjoint</em>, where the operator is the product of the skew-adjoint Clifford action and a formally skew-adjoint first-order operator; the differential-geometric statement is the same identity with the spin connection in place of the abstract first-order operator.</p>
+<h2 id="self-adjointness-of-the-cauchyriemann-operator">Self-Adjointness of the Cauchy–Riemann Operator</h2>
+<p><strong>Theorem.</strong> On a closed spin manifold the Cauchy–Riemann operator is self-adjoint as an unbounded operator on $L^{2}(\mathcal{S})$ with domain the Sobolev space $H^{1}(\mathcal{S})$; its spectrum is real and discrete, its eigenspinors form a complete orthonormal basis, and its square satisfies $D^{2}\geq0$ with $\ker D=\ker D^{2}$ the space of harmonic spinors.</p>
+<p><strong>Proof.</strong> The formal self-adjointness of the preceding theorem and the ellipticity of $D$, whose symbol $\sigma_D(\xi)=i\,c(\xi)$ is invertible for $\xi\neq0$, make $D$ a closed self-adjoint operator with compact resolvent on the closed manifold; the completeness is the spectral theorem for self-adjoint operators with compact resolvent, and $D^{2}\geq0$ because $D$ is self-adjoint. The equivalence $\ker D=\ker D^{2}$ is $(D^{2}s,s)=\|Ds\|^{2}$. The domain theory is that of <em>The L2 Adjoint of a Differential Operator</em> and of <em>Dirac Operators with Hermitian Adjoint</em>. $\square$</p>
+<p><strong>Theorem (spectral symmetry).</strong> In even dimensions the chirality $\tau$ anticommutes with the operator, $\tau D\tau^{-1}=-D$, so the spectrum is symmetric about the origin: if $D s=\lambda s$ then $D(\tau s)=-\lambda(\tau s)$, and the nonzero eigenvalues occur in pairs $\pm\lambda$ with eigenspinors exchanged by the chirality; the kernel is graded by $\tau$ into the two chiral zero-mode spaces.</p>
+<p><strong>Proof.</strong> The anticommutation was established in <em>The Dirac Operator on a Manifold</em>; applying $D$ to $\tau s$ and using $\tau D=-D\tau$ gives the pairing, and the grading of the kernel is the eigenvalue decomposition of the involution $\tau$ on $\ker D$. $\square$</p>
+<h2 id="the-adjoint-of-the-chiral-halves-and-the-index">The Adjoint of the Chiral Halves and the Index</h2>
+<p><strong>Theorem.</strong> In even dimensions the operator is odd for the chirality and splits into the two halves</p>
+<p>$$
+D^{+}:\Gamma(\mathcal{S}^{+})\to\Gamma(\mathcal{S}^{-}),\qquad
+D^{-}:\Gamma(\mathcal{S}^{-})\to\Gamma(\mathcal{S}^{+}),
+$$</p>
+<p>which are mutual adjoints,</p>
+<p>$$
+(D^{+})^{*}=D^{-},\qquad
+\operatorname{coker}D^{+}=\ker(D^{+})^{*}=\ker D^{-},
+$$</p>
+<p>and the index of the positive half is the difference of the chiral zero-mode spaces,</p>
+<p>$$
+\operatorname{ind}D^{+}=\dim\ker D^{+}-\dim\ker D^{-}=\int_{M}\hat A(TM),
+$$</p>
+<p>the $\hat A$-genus of the spin manifold.</p>
+<p><strong>Proof.</strong> The oddness of $D$ for the chirality restricts it to the two halves; the adjoint of $D^{+}$ is the restriction of the adjoint $D^{*}=D$ to the opposite chirality, namely $D^{-}$; the cokernel of $D^{+}$ is the kernel of its adjoint by the Fredholm alternative, which is $\ker D^{-}$; and the identification of the index with the $\hat A$-genus is the Atiyah–Singer theorem of <em>The Dirac Operator on a Manifold</em>. $\square$</p>
+<p><strong>Corollary.</strong> The index of the positive half is the trace of the chirality on the kernel,</p>
+<p>$$
+\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D),
+$$</p>
+<p>the difference of the dimensions of the two chiral zero-mode spaces; unlike the signature operator on the de Rham complex, there is no contribution from other degrees, because the operator acts on the single spinor bundle, and the kernel splits directly into the two chirality eigenspaces. The spectral symmetry of the preceding theorem pairs the nonzero eigenvalues and their eigenspinors, so the index is entirely carried by the zero modes.</p>
+<h2 id="the-twisted-operator-and-its-adjoint">The Twisted Operator and Its Adjoint</h2>
+<p><strong>Definition.</strong> Let $E\to M$ be a Hermitian vector bundle with connection $\nabla^{E}$ and curvature $F^{E}$. The <strong>twisted Cauchy–Riemann operator</strong> is</p>
+<p>$$
+D_{E}=\sum_{i}c(e_i)\,\nabla^{\mathcal{S}\otimes E}_{e_i}:\Gamma(\mathcal{S}\otimes E)\to\Gamma(\mathcal{S}\otimes E),
+$$</p>
+<p>the operator of the connection $\nabla^{\mathcal{S}}\otimes1+1\otimes\nabla^{E}$; it is the operator with coefficients in the Clifford module $E$, in the sense of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>.</p>
+<p><strong>Theorem.</strong> The twisted operator is formally self-adjoint, $D_{E}^{*}=D_{E}$; in even dimensions it is odd for the chirality of the spinor factor and splits into the mutually adjoint halves $(D_{E}^{+})^{*}=D_{E}^{-}$, with index</p>
+<p>$$
+\operatorname{ind}D_{E}^{+}=\int_{M}\hat A(TM)\operatorname{ch}(E),
+$$</p>
+<p>the $\hat A$-genus paired with the Chern character of the twisting bundle; the twisted square satisfies the Weitzenböck formula</p>
+<p>$$
+D_{E}^{2}=\nabla^{\mathcal{S}\otimes E,*}\nabla^{\mathcal{S}\otimes E}+\mathcal{R}^{E},\qquad
+\mathcal{R}^{E}=\tfrac14\operatorname{scal}\cdot\mathrm{id}+c(F^{E}),
+$$</p>
+<p>the Lichnerowicz curvature of the twisting.</p>
+<p><strong>Proof.</strong> The formal self-adjointness is the same computation as for the untwisted operator, with the connection $\nabla^{\mathcal{S}\otimes E}$ in place of $\nabla^{\mathcal{S}}$ and the metric on $E$ in place of the spinor metric; the twisted Weitzenböck formula and the twisted index are those of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em> and <em>The Dirac Operator on a Manifold</em>. $\square$</p>
+<p><strong>Remark.</strong> The adjoint of the twisted operator is computed with the adjoint of the twisting connection, which is $-\nabla^{E}-\operatorname{div}$; the twisting curvature enters the square through the Clifford multiplication of the two-form $F^{E}$, and the sign convention is the one of <em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em>.</p>
+<h2 id="the-adjoint-and-the-lichnerowicz-formula">The Adjoint and the Lichnerowicz Formula</h2>
+<p><strong>Theorem.</strong> The square of the Cauchy–Riemann operator is the self-adjoint Lichnerowicz Laplacian</p>
+<p>$$
+D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}\cdot\mathrm{id},
+$$</p>
+<p>whose adjoint is itself, $D^{2,*}=D^{2}$; for a harmonic spinor $\psi$ the formula gives the Bochner identity</p>
+<p>$$
+0=\|D\psi\|^{2}=\|\nabla\psi\|^{2}+\tfrac14\int_{M}\operatorname{scal}|\psi|^{2},
+$$</p>
+<p>and the vanishing theorem follows: a closed spin manifold of positive scalar curvature has no nonzero harmonic spinor, and its operator has no chiral zero modes.</p>
+<p><strong>Proof.</strong> The square of the self-adjoint operator $D$ is self-adjoint with $(D^{2})^{*}=D^{*}D^{*}=D^{2}$; the Lichnerowicz formula is that of <em>The Dirac Operator on a Manifold</em> and <em>Spin Geometry</em>; integrating the formula against $\psi$ and using the compatibility of the connection with the metric gives the Bochner identity, and the positivity of the scalar curvature forces $\|\nabla\psi\|^{2}=0$ and $\psi=0$. $\square$</p>
+<p><strong>Corollary (the adjoint and the index).</strong> The self-adjointness of $D^{2}$ makes the harmonic spinors the kernel of the self-adjoint positive operator $D^{2}$, and the index of $D^{+}$ is the index of the pair (kernel of $D^{2}$, chirality); in particular the index is unchanged by the adjoint operation, $\operatorname{ind}(D^{+})^{*}=\operatorname{ind}D^{-}=-\operatorname{ind}D^{+}$, and the vanishing of the index is the vanishing of the chiral zero modes.</p>
+<h2 id="the-hermitian-structure-of-the-adjoint">The Hermitian Structure of the Adjoint</h2>
+<p>The differential-geometric self-adjointness is the analytic shadow of the algebraic Hermitian structure of the Clifford module, and the corpus has built that structure in Part II.</p>
+<p><strong>Theorem (algebraic form).</strong> On a Hermitian Clifford module the Dirac operator is self-adjoint for the module form, its square is a positive operator, its spectrum is real and its eigenspinors are orthogonal; the <strong>spinor adjoint</strong> $s\mapsto(s,\cdot)$ is the Clifford-equivariant identification of the module with its dual, and the <strong>Dirac adjoint</strong> $s,t\mapsto\operatorname{Sc}(s^{\dagger}\gamma t)$ is the pairing obtained by inserting a fixed vector before the form, whose scalar part $\bar\psi\psi$ is invariant. The differential-geometric operator $D$ of a spin manifold is the curved-space member of the same family, with the module form the fibrewise spinor inner product and the identification with the dual the metric on $\mathcal{S}$.</p>
+<p><strong>Proof.</strong> The algebraic statements are those of <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; the passage to the manifold is the passage from a module to a bundle of modules, and the module form becomes the fibrewise Hermitian metric integrated against the volume form. $\square$</p>
+<p><strong>Remark.</strong> The two adjoints are distinct: the <strong>spinor adjoint</strong> is the conjugate-linear metric identification of the spinors with their dual, the analytic object that gives the $L^{2}$ inner product, while the <strong>Dirac adjoint</strong> is the bilinear pairing with the inserted vector, the invariant pairing of the spinor module. Both are the Hermitian structure of the operator, and the self-adjointness is stated for the first and the invariant form $\bar\psi\psi$ for the second.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the flat torus).</strong> On the flat torus $T^{n}$ with the product spin structure the spinor bundle is trivial and the operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial_i$; it is self-adjoint, its adjoint is itself, its spectrum is the set of $\pm|\xi|$ for the Fourier modes $\xi$, and the nonzero eigenvalues occur in opposite pairs; the kernels of $D^{\pm}$ have equal dimension and the index vanishes, as the $\hat A$-genus of a flat torus does.</p>
+<p><strong>Example (the round sphere).</strong> On $S^{n}$ with the round metric the operator is self-adjoint with $\tau D\tau^{-1}=-D$, so its spectrum is symmetric; the square is the Lichnerowicz Laplacian with the constant positive scalar curvature, and the vanishing theorem gives the absence of harmonic spinors; the adjoint of $D^{+}$ is $D^{-}$ and the index is zero.</p>
+<p><strong>Example (a $K3$ surface).</strong> On a $K3$ surface the operator is self-adjoint with index $\hat A[K3]=2$; the kernels of $D^{+}$ and $D^{-}$ have dimensions differing by $2$, and the spectral symmetry pairs the nonzero eigenvalues. The twisted operator $D_{E}$ has index $\int\hat A\operatorname{ch}(E)$; with $E$ the trivial bundle the untwisted value $2$ is recovered.</p>
+<p><strong>Example (the twisted operator and the vanishing).</strong> For a line bundle $L$ of negative degree over a Riemann surface of genus $g$ the twisted operator has vanishing kernel, and its index is by Riemann–Roch the Euler characteristic $\deg L+1-g$; the adjoint's kernel is therefore of dimension $g-1-\deg L$. The example shows the chiral asymmetry of the two kernels and the role of the adjoint in computing the index.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Cauchy–Riemann operator</strong> $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of a spin manifold, classically the <strong>Dirac operator</strong>, is <strong>formally self-adjoint</strong>, $D^{*}=D$, because the Clifford multiplication is skew-adjoint for the spinor metric and the spin connection is compatible with it, and the divergence vanishes on a closed manifold; it is self-adjoint as an unbounded operator with discrete real spectrum, orthogonal eigenspinors and $D^{2}\geq0$. In even dimensions the chirality makes the operator odd, splitting it into the <strong>mutually adjoint</strong> halves $(D^{+})^{*}=D^{-}$, with $\operatorname{coker}D^{+}=\ker D^{-}$ and index $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\int_M\hat A(TM)$; the spectrum is symmetric about the origin and the index is carried by the chiral zero modes alone. The <strong>twisted operator</strong> $D_{E}$ is self-adjoint with the same identities, the index $\int_M\hat A\operatorname{ch}(E)$ and the Weitzenböck square $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{E})$; the <strong>Lichnerowicz formula</strong> $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ is self-adjoint and gives the Bochner identity and the vanishing theorem for positive scalar curvature. The differential-geometric adjoint is the curved form of the algebraic <strong>Hermitian structure</strong> of <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>: the spinor adjoint is the metric identification giving the $L^{2}$ inner product, the Dirac adjoint is the invariant pairing $\bar\psi\psi$ with the inserted vector, and the operator is self-adjoint for the module form in both cases.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\cdot,\cdot)_{\mathcal{S}}$, $\langle s,t\rangle$</td>
+<td>Spinor inner product and its $L^{2}$ form</td>
+</tr>
+<tr>
+<td>$c(v)^{*}=-c(v)$</td>
+<td>Clifford multiplication is skew-adjoint</td>
+</tr>
+<tr>
+<td>$D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, $D^{*}=D$</td>
+<td>Cauchy–Riemann operator; formally self-adjoint</td>
+</tr>
+<tr>
+<td>$\tau D\tau^{-1}=-D$</td>
+<td>Chirality anticommutation; symmetric spectrum $\pm\lambda$</td>
+</tr>
+<tr>
+<td>$(D^{+})^{*}=D^{-}$, $\operatorname{coker}D^{+}=\ker D^{-}$</td>
+<td>Mutually adjoint chiral halves</td>
+</tr>
+<tr>
+<td>$\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\int_M\hat A(TM)$</td>
+<td>Index as the chirality trace</td>
+</tr>
+<tr>
+<td>$D_{E}=\sum_ic(e_i)\nabla^{\mathcal{S}\otimes E}_{e_i}$, $D_{E}^{*}=D_{E}$</td>
+<td>Twisted operator, self-adjoint</td>
+</tr>
+<tr>
+<td>$D_{E}^{2}=\nabla^{E,*}\nabla^{E}+\mathcal{R}^{E}$, $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{E})$</td>
+<td>Twisted Weitzenböck/Lichnerowicz formula</td>
+</tr>
+<tr>
+<td>$D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$; $0=\|\nabla\psi\|^{2}+\tfrac14\int\operatorname{scal}|\psi|^{2}$</td>
+<td>Lichnerowicz formula and Bochner identity</td>
+</tr>
+<tr>
+<td>$s\mapsto(s,\cdot)$; $s,t\mapsto\operatorname{Sc}(s^{\dagger}\gamma t)$</td>
+<td>Spinor adjoint; Dirac adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the spinor inner product, the self-adjointness and the Lichnerowicz formula.</li>
+<li>Thomas Friedrich, <em>Dirac Operators in Riemannian Geometry</em>, Graduate Studies in Mathematics 25 (American Mathematical Society, 2000), for the self-adjointness, the spectrum and the twisted operators.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I, III," <em>Annals of Mathematics</em> <strong>87</strong> (1968), 484–530 and 546–604, for the index of the chiral operator and the $\hat A$-genus.</li>
+<li>Nicole Berline, Ezra Getzler and Michèle Vergne, <em>Heat Kernels and Dirac Operators</em> (Springer, 1992), for the self-adjointness, the heat kernel and the local index theorem.</li>
+<li>André Lichnerowicz, "Spineurs harmoniques," <em>Comptes Rendus de l'Académie des Sciences</em> <strong>257</strong> (1963), 7–9, for the formula $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ and the vanishing of the harmonic spinors.</li>
+<li>John Roe, <em>Elliptic Operators, Topology and Asymptotic Methods</em>, Pitman Research Notes in Mathematics 179 (Longman, 1988), for the differential-geometric adjoints, the domains and the elliptic theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

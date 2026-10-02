@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of the Twistor Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-the-twistor-operator"><strong>Involutions of the Twistor Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The twistor operator $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ of <em>The Twistor Operator</em> is built from the covariant derivative and the orthogonal projection $\pi$ onto the kernel of the Clifford contraction; it is a first-order operator $\Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$ with the twistor equation $\mathcal{T}\sigma=0$ as its kernel equation. The spinor bundle carries canonical <strong>involutions</strong> — the chirality $\Pi$, the volume element $\omega$ in odd dimension, and the anti-linear charge conjugation $\kappa$ — and each of them either commutes or anticommutes with the Clifford multiplication by a vector. The article computes the effect of that sign on the twistor operator, and the outcome is uniform: <strong>the projection is quadratic in the Clifford multiplication</strong>, so all three involutions commute with $\mathcal{T}$, and the kernel of the twistor operator decomposes into their joint eigenspaces. The commuting of the anti-linear involution is the <strong>conjugate symmetry</strong> of the operator, and it produces the Hermitian pairing on the kernel whose Hermitian character is the <strong>self-adjointness</strong> statement of the article.</p>
+<p><strong>The boundaries.</strong> The operator, its symbol and its conformal covariance are <em>The Twistor Operator</em> and <em>The Penrose Operator</em>; the fibre form, the charge conjugation and the reality structure are <em>Hermitian Clifford Structures</em> and <em>Spin Geometry</em>; the formal adjoint operator, the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ and the twistor equation as an equation for $\nabla\sigma$ are <em>The Adjoint of the Twistor Operator</em>, the next entry of the group, and are quoted here. The analytic completions of the eigenspaces and the spectral theory belong to Part III and are named only. The body is a Riemannian spin manifold with the fibre form $h$, $c(v)^*=-c(v)$, and the operator $\mathcal{T}$ of <em>The Twistor Operator</em>.</p>
+<h2 id="the-involutions-of-the-spinor-bundle">The Involutions of the Spinor Bundle</h2>
+<p><strong>Definition.</strong> The <strong>chirality</strong> is the endomorphism $\Pi$ of the spinor bundle which in even dimension $n=2m$ is the Clifford product $\Pi=c(e_1)\cdots c(e_n)$ of a local orthonormal frame, normalised by a scalar so that $\Pi^2=\mathrm{id}$; the <strong>volume involution</strong> in odd dimension $n=2m+1$ is $\omega=c(e_1)\cdots c(e_n)$; the <strong>charge conjugation</strong> $\kappa : \mathcal{S}\to\mathcal{S}$ is the anti-linear map induced by the conjugation of the spin representation with respect to the fibre form $h$ of <em>Hermitian Clifford Structures</em>.</p>
+<p><strong>Proposition.</strong> The three maps satisfy the following, pointwise and globally.</p>
+<p><strong>(a)</strong> $\Pi^2=\mathrm{id}$ and $\Pi$ is self-adjoint and unitary for $h$; in odd dimension $\omega^2=\mathrm{id}$ and $\omega$ is self-adjoint and unitary.</p>
+<p><strong>(b)</strong> $\Pi c(v)=-c(v)\Pi$ in even dimension; $\omega c(v)=(-1)^{m}c(v)\omega$ in dimension $n=2m+1$.</p>
+<p><strong>(c)</strong> $\kappa$ is anti-linear, $\kappa^2=\pm\mathrm{id}$ according to $n\bmod 8$, and $c(v)\kappa=\kappa c(v)$ for a real vector $v$.</p>
+<p><strong>(d)</strong> $\Pi,\omega,\kappa$ are parallel for the spin connection, hence are global sections of the endomorphism bundle with $\nabla\Pi=\nabla\omega=\nabla\kappa=0$.</p>
+<p><strong>Proof.</strong> (a) is the standard computation of the chirality from the Clifford relations and the reality of the fibrewise form; (b) moving a vector past the product of $n$ vectors changes the number of sign changes by $n-1$, and the normalisation gives the stated signs; (c) the conjugation is anti-linear by construction and squares to a sign recorded by the real spinor type, and it commutes with $c(v)$ because the fibrewise form is invariant; (d) the spin connection is the lift of the Levi-Civita connection and the three endomorphisms are defined by the parallel Clifford structure, so they are annihilated by it. The sign table is that of <em>Spin Geometry</em>.</p>
+<h2 id="intertwining-with-the-twistor-operator">Intertwining with the Twistor Operator</h2>
+<p><strong>Theorem.</strong> The twistor operator commutes with each of the three involutions:</p>
+<p>$$
+\mathcal{T}\Pi=\Pi\mathcal{T} , \qquad \mathcal{T}\omega=\omega\mathcal{T} , \qquad \mathcal{T}\kappa=\kappa\mathcal{T} .
+$$</p>
+<p><strong>Proof.</strong> Write $\mathcal{T}=\pi\circ\nabla$ with $\pi=\mathrm{id}-\frac1nc^*c$ the orthogonal projection onto $\ker c$ and $c^*$ the adjoint of the contraction, of <em>The Twistor Operator</em>. Since $\Pi$ anticommutes with every $c(v)$ by (b) of the previous proposition, it commutes with $c^*$, hence with the product $c^*c$ and with $\pi$; and $\Pi$ commutes with $\nabla$ by parallelness, so $\mathcal{T}\Pi=\pi\nabla\Pi=\pi\Pi\nabla=\Pi\pi\nabla=\Pi\mathcal{T}$. The same computation with $\omega$ uses $\omega c(v)=(-1)^mc(v)\omega$ and the antisymmetry of the sign in the two factors of $c^*c$, which cancels; the computation with $\kappa$ uses its anti-linearity and its commutation with $c(v)$ and with $\nabla$, so $\mathcal{T}\kappa=\pi\nabla\kappa=\pi\kappa\nabla=\kappa\pi\nabla=\kappa\mathcal{T}$.</p>
+<p><strong>Remark (why no sign survives).</strong> For the individual Clifford multiplications the signs of $\Pi$ and $\omega$ are non-trivial, and they are the content of the chirality splitting of the spinor bundle; for the twistor operator the two factors of $c^*c$ carry opposite signs, cancel, and the projection is in fact a combination of the identity and an even element of the Clifford algebra. The uniform commutation is therefore not an accident of the signs but the statement that $\mathcal{T}$ is built from <strong>even</strong> elements of the Clifford algebra, and it holds for every involution $\varepsilon$ with $\varepsilon c(v)=\lambda(v)c(v)\varepsilon$.</p>
+<p><strong>Corollary.</strong> The kernel of $\mathcal{T}$ is stable under $\Pi$, $\omega$ and $\kappa$; since $\kappa$ is anti-linear, its kernel is a real structure of the solution space, and the space of twistor spinors is a module over the algebra generated by $\Pi,\omega$ and $\kappa$.</p>
+<p><strong>Proof.</strong> An intertwining operator maps solutions to solutions; the anti-linearity of $\kappa$ makes the fixed set of $\kappa^2$ a real form of the solution space in the sense of <em>Hermitian Clifford Structures</em>; the module statement is the associativity of the composition.</p>
+<h2 id="the-joint-decomposition-of-the-kernel">The Joint Decomposition of the Kernel</h2>
+<p><strong>Proposition.</strong> The space $\mathcal{K}=\ker\mathcal{T}$ decomposes into the joint eigenspaces of the commuting involutions $\Pi$ and $\omega$ (the relevant one according to the parity of $n$), and the charge conjugation $\kappa$ pairs the eigenspaces according to the reality type of the spinor module:</p>
+<p>$$
+\mathcal{K}=\bigoplus_{\varepsilon=\pm1}\mathcal{K}^{\varepsilon} , \qquad \Pi\,\mathcal{K}^{\varepsilon}=\varepsilon\mathcal{K}^{\varepsilon} , \qquad \kappa : \mathcal{K}^{\varepsilon}\longrightarrow \mathcal{K}^{\varepsilon} ,
+$$</p>
+<p>with $\kappa$ acting anti-linearly on each summand.</p>
+<p><strong>Proof.</strong> Commuting involutions are simultaneously diagonalisable in characteristic not two, which gives the decomposition; $\kappa$ commutes with $\Pi$ (it commutes with $c(v)$ and hence with the volume element), so it preserves each summand; its anti-linearity is (c) above.</p>
+<p><strong>Theorem (quoted).</strong> In even dimension the twistor operator splits as</p>
+<p>$$
+\mathcal{T} = \mathcal{T}^+\oplus\mathcal{T}^- : \Gamma(\mathcal{S}^\pm)\longrightarrow\Gamma(T^*M\otimes\mathcal{S}^\pm) ,
+$$</p>
+<p>each summand is itself a twistor operator, and the twistor spinors of <em>The Penrose Operator</em> satisfy $D^2\sigma=\frac{n}{4(n-1)}\operatorname{scal}\sigma$; the two chiral components of a twistor spinor are independent, and on an Einstein manifold the twistor equation is equivalent to the Killing spinor equation with the appropriate constant.</p>
+<p><strong>Proof sketch.</strong> The splitting is the commutation with $\Pi$; the scalar identity follows from $\mathcal{T}\sigma=0$ combined with the identity $\nabla^*\nabla=\mathcal{T}^*\mathcal{T}+\frac1nD^2$ and the Lichnerowicz formula, both of <em>The Adjoint of the Twistor Operator</em> and <em>The Spinor Operator</em>; the Einstein equivalence is the standard statement quoted from the twistor-spinor literature.</p>
+<h2 id="conjugate-symmetry-and-self-adjointness">Conjugate Symmetry and Self-Adjointness</h2>
+<p><strong>Definition.</strong> The <strong>conjugate symmetry</strong> of the twistor operator is the identity $\mathcal{T}\kappa=\kappa\mathcal{T}$: the operator is real for the charge conjugation, so it maps the conjugate spinor of a solution to the conjugate spinor of the solution.</p>
+<p><strong>Proposition (the Hermitian pairing of the kernel).</strong> The restriction of the pointwise Hermitian form $h$ of <em>Hermitian Clifford Structures</em> to the kernel of $\mathcal{T}$,</p>
+<p>$$
+\Sigma(\sigma,\tau) = \int_M h(\sigma,\tau)\,\mu_g ,
+$$</p>
+<p>is a Hermitian form on $\mathcal{K}$, conjugate-symmetric, and the current</p>
+<p>$$
+X_{\sigma,\tau} = \sum_i h(\sigma,c(e_i)\tau)\,\theta^i
+$$</p>
+<p>of <em>The Penrose Operator</em> satisfies $\operatorname{div}X_{\sigma,\tau}=0$ for twistor spinors $\sigma,\tau$, so the pairing is independent of the conformal factor in the sense recorded there; the eigenspaces $\mathcal{K}^\pm$ are orthogonal for $\Sigma$, and $\Sigma$ is non-degenerate exactly where the reality type of the spinor module permits it.</p>
+<p><strong>Proof.</strong> The Hermitian character is (a) of <em>Hermitian Clifford Structures</em>; the divergence identity is the pairing of the twistor equation with the conjugate equation, which is the statement of the invariance of the current in <em>The Penrose Operator</em>; the orthogonality of the chiral summands is the self-adjointness of $\Pi$; the non-degeneracy statement is the restriction of the fibre form, and its failure in the quaternionic type is the reason the pairing is indefinite there.</p>
+<p><strong>Remark (the sense of self-adjointness).</strong> The twistor operator itself is not a self-adjoint operator on a single bundle: it maps $\Gamma(\mathcal{S})$ to $\Gamma(T^*M\otimes\mathcal{S})$, and its formal adjoint is the operator of <em>The Adjoint of the Twistor Operator</em>. What is self-adjoint is the <strong>twistor Laplacian</strong> $\mathcal{T}^*\mathcal{T}$, a non-negative operator on $\Gamma(\mathcal{S})$, and its kernel is that of $\mathcal{T}$; the conjugate symmetry of $\mathcal{T}$ is what makes $\mathcal{T}^*\mathcal{T}$ a real operator and the pairing $\Sigma$ Hermitian rather than merely sesquilinear. The analytic theory of $\mathcal{T}^*\mathcal{T}$ belongs to Part III.</p>
+<h2 id="summary">Summary</h2>
+<p>The spinor bundle carries the commuting involutions $\Pi$ (chirality), $\omega$ (volume involution) and the anti-linear charge conjugation $\kappa$; each anticommutes or commutes with the Clifford multiplication by a vector, but because the twistor operator $\mathcal{T}=\pi\circ\nabla$ is quadratic in the Clifford multiplication through $\pi=\mathrm{id}-\frac1nc^*c$, <strong>all three commute with</strong> $\mathcal{T}$: $\mathcal{T}\Pi=\Pi\mathcal{T}$, $\mathcal{T}\omega=\omega\mathcal{T}$, $\mathcal{T}\kappa=\kappa\mathcal{T}$. The kernel decomposes into the joint eigenspaces of the commuting involutions, the anti-linear $\kappa$ acting on each summand and giving a real structure; in even dimension the twistor operator splits chirally, $\mathcal{T}=\mathcal{T}^+\oplus\mathcal{T}^-$. The <strong>conjugate symmetry</strong> $\mathcal{T}\kappa=\kappa\mathcal{T}$ makes the pointwise Hermitian form restricted to the kernel a Hermitian pairing with the conserved current $X_{\sigma,\tau}$ of <em>The Penrose Operator</em>, and the <strong>self-adjointness</strong> that survives is that of the twistor Laplacian $\mathcal{T}^*\mathcal{T}$, whose kernel is the space of twistor spinors. The formal adjoint is <em>The Adjoint of the Twistor Operator</em>; the form and the charge conjugation are <em>Hermitian Clifford Structures</em> and <em>Spin Geometry</em>; the analytic theory is Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{T}=\pi\circ\nabla$, $\pi=\mathrm{id}-\frac1nc^*c$</td>
+<td>Twistor operator and the projection onto $\ker c$</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>Chirality; $\Pi^2=\mathrm{id}$, $\Pi c(v)=-c(v)\Pi$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Volume involution in odd dimension</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>Anti-linear charge conjugation; $c(v)\kappa=\kappa c(v)$</td>
+</tr>
+<tr>
+<td>$\mathcal{T}\Pi=\Pi\mathcal{T}$, $\mathcal{T}\omega=\omega\mathcal{T}$, $\mathcal{T}\kappa=\kappa\mathcal{T}$</td>
+<td>The intertwining identities</td>
+</tr>
+<tr>
+<td>$\mathcal{K}=\ker\mathcal{T}$</td>
+<td>Space of twistor spinors</td>
+</tr>
+<tr>
+<td>$\mathcal{K}^\pm$</td>
+<td>Joint eigenspaces of the commuting involutions</td>
+</tr>
+<tr>
+<td>$X_{\sigma,\tau}=\sum_ih(\sigma,c(e_i)\tau)\theta^i$</td>
+<td>Conserved current of <em>The Penrose Operator</em></td>
+</tr>
+<tr>
+<td>$\Sigma(\sigma,\tau)=\int_Mh(\sigma,\tau)\mu_g$</td>
+<td>Hermitian pairing of the kernel</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Helga Baum, Thomas Friedrich, Ralf Grunewald and Ines Kath, <em>Twistors and Killing Spinors on Riemannian Manifolds</em> (Teubner, 1991), for the chirality splitting of the twistor operator, the charge conjugation and the conjugate symmetry.</li>
+<li>Thomas Friedrich, <em>Dirac Operators in Riemannian Geometry</em> (American Mathematical Society, 2000), for the twistor equation, the Lichnerowicz formula and the scalar identity for twistor spinors.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the chirality, the volume element, the charge conjugation and their sign tables.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time, Volume 2</em> (Cambridge University Press, 1986), for the conjugate symmetry of the twistor equation and the conserved currents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

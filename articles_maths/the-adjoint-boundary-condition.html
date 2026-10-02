@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Boundary Condition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-boundary-condition"><strong>The Adjoint Boundary Condition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A boundary condition is a constraint on the boundary data, and the adjoint condition is the constraint obtained by pairing: the boundary form of the operator is a nondegenerate skew-Hermitian pairing of the boundary data, the admissible subspace of a condition is a subspace $M$ of the boundary space, and the <strong>adjoint condition</strong> is the annihilator of $M$ under that pairing. The problem is self-adjoint exactly when $M$ equals its annihilator, that is, when $M$ is <strong>Lagrangian</strong>: isotropic for the boundary form and of half the dimension, the largest possible for a nondegenerate skew form. The construction settles the questions left open in the preceding articles: it produces the adjoint condition of an arbitrary boundary-value problem, it explains why a self-adjoint condition determines half the boundary data, and it reduces self-adjointness to a single algebraic condition on a finite-dimensional space.</p>
+<p>This article reads the boundary-value problem with the conjugation and builds the adjoint condition as an operator-level object. It fixes the boundary data, the boundary space and the boundary form as a pairing; proves that the adjoint of a problem $(L,B)$ is the problem $(L^{\dagger},B^{*})$ with $B^{*}$ the annihilator of the boundary subspace; proves that a formally self-adjoint operator under the condition $B$ is self-adjoint exactly when the boundary subspace is Lagrangian; describes the Lagrangian subspaces and their parameterisation; and works out the Sturm–Liouville case, where the boundary space is four-dimensional, the form is the classical bracket, and the Lagrangian subspaces are the separated and the coupled self-adjoint conditions.</p>
+<p>The boundary data, the trace and the boundary operator are <em>Differential Operators</em> and <em>Sobolev Spaces and Weak Solutions</em>; the boundary form and the skew-Hermitian property are <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>; the Green formula that produces it is <em>The Lagrange Identity and the Self-Adjoint System</em>; the adjoint problem and the reciprocity are <em>The Adjoint Problem and the Green Function</em>; the self-adjoint Sturm–Liouville operators are <em>Self-Adjoint Sturm–Liouville Operators</em>; the classical separated and periodic conditions are <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>; and the sesquilinear forms and the adjoint operator are <em>Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</em> and <em>Banach and Hilbert Spaces</em>.</p>
+<h2 id="the-boundary-data-and-the-boundary-space">The Boundary Data and the Boundary Space</h2>
+<p><strong>Definition.</strong> Let $L$ be a differential operator of order $m$ on a bounded domain $\Omega$ with smooth boundary, and for $u$ of class $C^m$ on $\overline\Omega$ let</p>
+<p>$$
+\gamma u = \bigl(\gamma_0u,\gamma_1u,\dots,\gamma_{m-1}u\bigr),\qquad \gamma_ku = \partial_\nu^k u\big|_{\partial\Omega} ,
+$$</p>
+<p>be the <strong>boundary data</strong> of $u$, the traces of the normal derivatives of order at most $m-1$. The <strong>boundary space</strong> is the product</p>
+<p>$$
+\mathcal{B} = \prod_{k=0}^{m-1}H^{m-k-1/2}(\partial\Omega) ,
+$$</p>
+<p>a Hilbert space, and the trace $\gamma$ is a bounded map from $H^m(\Omega)$ onto $\mathcal{B}$.</p>
+<p><strong>Definition.</strong> The <strong>boundary form</strong> of $L$, written as a pairing of the boundary data, is</p>
+<p>$$
+\langle u,v\rangle_\partial = \langle\gamma u,\ \Sigma\,\gamma v\rangle_{\mathcal B} ,
+$$</p>
+<p>where $\Sigma$ is the matrix of the form in the boundary data: sesquilinear, skew-Hermitian when $L=L^{\dagger}$, and nondegenerate on $\mathcal B$. That $\Sigma$ is nondegenerate is the statement that the boundary form pairs the boundary data without a kernel, so that the annihilator construction below is symmetric.</p>
+<p><strong>Definition.</strong> A <strong>boundary condition</strong> is a closed subspace $M\subseteq\mathcal B$, its admissible subspace being $\mathcal{A}=\{u\in H^m(\Omega) : \gamma u\in M\}$; a condition given by $B\gamma u=0$ with a boundary operator $B$ has $M=\ker B$. The <strong>annihilator</strong> of $M$ under the boundary form is</p>
+<p>$$
+M^{\perp} = \{w\in\mathcal B : \langle m,\Sigma w\rangle_{\mathcal B}=0 \ \text{for every } m\in M\} ,
+$$</p>
+<p>and the <strong>adjoint boundary condition</strong> is the condition whose boundary subspace is $M^{\perp}$.</p>
+<h2 id="the-adjoint-condition">The Adjoint Condition</h2>
+<p><strong>Theorem (the adjoint of a boundary-value problem).</strong> Let $L$ be a differential operator with smooth coefficients and let $B$ be a boundary condition with boundary subspace $M$. Then the realisation of $L$ under $B$ has the adjoint realisation of $L^{\dagger}$ under $B^{*}$, where $B^{*}$ is the boundary condition with subspace $M^{\perp}$:</p>
+<p>$$
+(L,B)^{*} = (L^{\dagger},B^{*}) .
+$$</p>
+<p><em>Proof.</em> The domain of the adjoint consists of the $v$ for which $u\mapsto\langle Lu,v\rangle$ is bounded by the norm on the admissible subspace. By the Green formula, $\langle Lu,v\rangle=\langle u,L^{\dagger}v\rangle+\langle u,v\rangle_\partial$; the first term is controlled by $L^{\dagger}v$ and the second by the boundary data, so the boundedness is the simultaneous requirement $L^{\dagger}v\in L^2$ and $\langle m,\Sigma\gamma v\rangle=0$ for every $m\in M$, that is $\gamma v\in M^{\perp}$; the action of the adjoint is $L^{\dagger}v$.</p>
+<p><strong>Theorem (the self-adjointness criterion).</strong> Let $L$ be formally self-adjoint, $L=L^{\dagger}$. Then the realisation of $L$ under $B$ is self-adjoint if and only if</p>
+<p>$$
+M^{\perp} = M ,
+$$</p>
+<p>that is, if and only if $M$ is isotropic for the boundary form and of half the dimension of $\mathcal{B}$; such a subspace is <strong>Lagrangian</strong>, and the condition is <strong>self-adjoint</strong>.</p>
+<p><em>Proof.</em> By the preceding theorem the adjoint problem has the boundary subspace $M^{\perp}$; the realisation is self-adjoint exactly when the adjoint problem coincides with the problem, which for $L=L^{\dagger}$ is the equality of the boundary subspaces $M^{\perp}=M$. In a nondegenerate skew-Hermitian form the equality $M=M^{\perp}$ holds exactly when $M\subseteq M^{\perp}$ and $\dim M=\dim M^{\perp}=\tfrac12\dim\mathcal B$; the isotropy is $M\subseteq M^{\perp}$ and the dimension condition is the maximality.</p>
+<p><strong>Theorem (the Lagrangian subspaces).</strong> The maximal isotropic subspaces of a nondegenerate skew-Hermitian form on a space $\mathcal B$ have dimension $\tfrac12\dim\mathcal B$, they exist, and they are parameterised by the unitary operators of the space; the graph of every unitary relative to a Lagrangian splitting is Lagrangian, and every Lagrangian subspace arises this way.</p>
+<p><em>Proof.</em> Existence is by induction on the dimension, pairing a vector $e$ with a vector $f$ with $\langle e,\Sigma f\rangle\neq0$ and splitting off the hyperbolic plane spanned by $e,f$; the parameterisation is the standard correspondence between the Lagrangian subspaces and the unitaries of the associated Hermitian form, obtained by writing a Lagrangian subspace as the graph of a map from one Lagrangian subspace to another and observing that the isotropy is the isometry of the map. The construction is that of the Lagrangian Grassmannian, and for a real form the unitaries are the orthogonal matrices.</p>
+<h2 id="the-sturmliouville-case">The Sturm–Liouville Case</h2>
+<p><strong>Theorem (the boundary form and the boundary space).</strong> For the Sturm–Liouville expression $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$ and real $q$, the boundary space is four-dimensional, $\gamma u=(u(a),(pu')(a),u(b),(pu')(b))$, and the boundary form is the classical bracket</p>
+<p>$$
+\langle u,v\rangle_\partial = \Bigl[u_1\bar v_2-u_2\bar v_1\Bigr]_a^b ,
+$$</p>
+<p>where $u_1=u$, $u_2=pu'$ are the components of the boundary data and $[\,\cdot\,]_a^b$ is the value at $b$ minus the value at $a$; the form is skew-Hermitian and nondegenerate in the four boundary values.</p>
+<p><em>Proof.</em> The bracket is $[p(u\bar v'-u'\bar v)]_a^b$ by <em>The Lagrange Identity and the Self-Adjoint System</em>, and $p(u\bar v'-u'\bar v)=u_1\bar v_2-u_2\bar v_1$ with $u_2=pu'$, $v_2=pv'$ and $p$ real; the nondegeneracy is that the determinant pairing of two vectors in $\mathbb C^2$ does not vanish identically.</p>
+<p><strong>Theorem (the self-adjoint conditions).</strong> The Lagrangian subspaces of the four-dimensional boundary space are exactly the self-adjoint boundary conditions of the Sturm–Liouville problem: they comprise the separated conditions</p>
+<p>$$
+\alpha_1u(a)+\alpha_2(pu')(a)=0,\qquad \beta_1u(b)+\beta_2(pu')(b)=0 ,
+$$</p>
+<p>with real $(\alpha_1,\alpha_2)$ and $(\beta_1,\beta_2)$ not both zero, and the coupled conditions, in which the boundary values at $a$ and at $b$ are related by a matrix whose graph is Lagrangian; the operator with such a domain is self-adjoint, and the classical Sturm–Liouville problems of <em>The Sturm–Liouville Operator</em> are the instances.</p>
+<p><em>Proof.</em> A separated condition at one endpoint singles out a one-dimensional subspace of that endpoint's two-dimensional data: if $(u_1,u_2)$ is parallel to $(\alpha_2,-\alpha_1)$ with $(\alpha_1,\alpha_2)$ real, then the endpoint form $u_1\bar v_2-u_2\bar v_1=\alpha_1\alpha_2(\bar st-t\bar s)$ vanishes for any two such vectors, so the subspace is isotropic and, being one-dimensional in a two-dimensional skew space, is maximal. A separated condition at $a$ and a separated condition at $b$ therefore give a two-dimensional isotropic subspace of the four-dimensional boundary space, which is Lagrangian because its dimension is half. A coupled condition is the graph of a form-preserving map between two Lagrangian subspaces, and its parameterisation is the previous theorem. The self-adjointness is the criterion, and the expansion is that of <em>Self-Adjoint Sturm–Liouville Operators</em>.</p>
+<p><strong>Example (the self-adjoint conditions of the model problem).</strong> For $\ell u=-u''$ on $(0,\pi)$ the boundary data are $(u(0),u'(0),u(\pi),u'(\pi))$ and the boundary form is $[u\bar v'-u'\bar v]_0^\pi$. The Dirichlet condition $u(0)=u(\pi)=0$ is Lagrangian and gives the eigenvalues $n^2$; the Neumann condition $u'(0)=u'(\pi)=0$ is Lagrangian and gives $n^2$, $n\ge0$; the periodic condition $u(0)=u(\pi)$, $u'(0)=u'(\pi)$ is the coupled Lagrangian condition spanned by the diagonal, and gives the full Fourier spectrum; and the Robin condition $u'(0)=\sigma u(0)$ with real $\sigma$, together with any Lagrangian condition at $\pi$, is Lagrangian. The problem $u'(0)=0$, $u(\pi)=0$ is Lagrangian as well, being separated with real coefficients; the problem $u'(0)=iu(0)$, with a nonreal coefficient, is not, and the corresponding operator is not self-adjoint.</p>
+<h2 id="summary">Summary</h2>
+<p>The boundary data of an operator of order $m$ are the traces of the normal derivatives up to order $m-1$, forming the boundary space $\mathcal B$; the boundary form pairs them through a nondegenerate skew-Hermitian matrix $\Sigma$, $\langle u,v\rangle_\partial=\langle\gamma u,\Sigma\gamma v\rangle$. A boundary condition is a subspace $M$ of the boundary space, and its adjoint is the annihilator $M^{\perp}$ under the form; the adjoint of the realisation $(L,B)$ is the realisation of $L^{\dagger}$ under the condition with subspace $M^{\perp}$. For a formally self-adjoint $L$ the realisation is self-adjoint exactly when $M=M^{\perp}$, that is, when $M$ is Lagrangian: isotropic with half the dimension of the boundary space. The Lagrangian subspaces exist, have the maximal isotropic dimension, and are parameterised by the unitary operators. In the Sturm–Liouville case the boundary space is four-dimensional and the form is the classical bracket $[u_1\bar v_2-u_2\bar v_1]_a^b$ with $u_2=pu'$; the Lagrangian subspaces are the separated conditions with real coefficients and the coupled conditions, the Dirichlet, Neumann, periodic and real Robin conditions among them, while a condition with a nonreal coefficient fails the Lagrangian test and the operator is not self-adjoint.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma u=(\gamma_0u,\dots,\gamma_{m-1}u)$</td>
+<td>Boundary data (traces of normal derivatives)</td>
+</tr>
+<tr>
+<td>$\mathcal B=\prod_kH^{m-k-1/2}(\partial\Omega)$</td>
+<td>Boundary space</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>Matrix of the boundary form in the boundary data</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>Boundary subspace of a condition</td>
+</tr>
+<tr>
+<td>$M^{\perp}=\{w : \langle m,\Sigma w\rangle=0\}$</td>
+<td>Annihilator, the adjoint boundary condition</td>
+</tr>
+<tr>
+<td>Lagrangian subspace</td>
+<td>Isotropic subspace of half the dimension</td>
+</tr>
+<tr>
+<td>$[u_1\bar v_2-u_2\bar v_1]_a^b$</td>
+<td>Classical bracket for Sturm–Liouville</td>
+</tr>
+<tr>
+<td>$u_1=u,\ u_2=pu'$</td>
+<td>Components of the Sturm–Liouville boundary data</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Earl A. Coddington and Norman Levinson, <em>Theory of Ordinary Differential Equations</em> (McGraw–Hill, 1955), for the adjoint boundary conditions and the self-adjoint extensions of a Sturm–Liouville problem.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 2nd ed. 1982), for the boundary matrices and the separated and coupled conditions.</li>
+<li>Joachim Weidmann, <em>Spectral Theory of Ordinary Differential Operators</em> (Springer, 1987), for the boundary triplets and the Lagrangian parameterisation of the self-adjoint extensions.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the adjoint of an operator and the domains of the extensions.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness</em> (Academic Press, 1975), for the boundary conditions and the self-adjoint extensions of an operator.</li>
+<li>Michael E. Taylor, <em>Partial Differential Equations I</em> (Springer, 2nd ed. 2011), for the boundary operators, the trace and the adjoint boundary conditions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

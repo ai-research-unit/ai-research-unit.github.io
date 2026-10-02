@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operators on a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="operators-on-a-symmetry-group"><strong>Operators on a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>symmetry group</strong> is a group of isometries of a space that carries a chosen distance or form, and the choice is what makes the group and its operators geometric: the same abstract group is the symmetry group of many forms, and a different form gives different motions, different orbits and different operators. This article opens the operator layer of <em>Geometry on Groups</em>. It treats the operators that the action of a symmetry group $G$ on its space $X$ produces — the action operators, the left and the right multiplications of the group on itself, the two-sided sandwich, and the operators that commute with the action — and it does no more. The involution on the <strong>elements</strong> of $G$, together with the spaces its fixed subgroup defines, is the subject of the group <code>- * Theory</code> of this category; the <strong>adjoint</strong> of an operator, which that involution defines, is the subject of the group <code>- * Operator Theory</code>. Neither is used here: an operator is introduced, composed and classified, and no form on the elements and no adjoint is taken.</p>
+<p>The base is a set $X$ with a chosen distance, or a linear space $V$ with a chosen quadratic or Hermitian form; the space $X$ is a smooth manifold when the regular action is used, and the group is a Lie group then. The isometries of the form and the group they form are <em>Isometries and Orthogonal Transformations</em>; the realisation of a figure's symmetry group inside the Euclidean isometry group, and the finiteness or discreteness of that group, are <em>Symmetry, Point and Crystallographic Groups</em>; the orbit–stabiliser theorem and the decomposition of a $G$-set into orbits are <em>Group Actions and Structure</em>; the automorphism group of a structure and the hierarchy of its symmetry groups are <em>Transformation Groups</em>; and a linear action of a group is a module over its group algebra, treated in <em>Representations of Groups</em> and <em>Modules over an Algebra</em>. None of that theory is re-derived.</p>
+<p>The article has six sections: the space, the form and the symmetry group; the action operators; the left and right multiplications and the sandwich; the equivariant operators; the operator layer the group generates; and the worked cases. The operators are collected in the closing <em>Summary of Notation</em>.</p>
+<h2 id="the-space-the-form-and-the-symmetry-group">The Space, the Form and the Symmetry Group</h2>
+<h3 id="the-chosen-form-and-its-isometries">The Chosen Form and Its Isometries</h3>
+<p>Let $X$ be a set with a chosen distance $d$, or a finite-dimensional space $V$ over a field of characteristic not $2$ with a chosen non-degenerate quadratic form $Q$ and its polar form $B$. A <strong>symmetry of $X$</strong> is a bijection preserving the chosen structure: a distance-preserving bijection when $X$ is metric, or a linear isomorphism $T$ with $Q(Tv) = Q(v)$ when $X = V$ is a quadratic space. The symmetries of the chosen form form a group under composition, the <strong>isometry group</strong> $\operatorname{Isom}(X)$ of the chosen structure; for a quadratic space it is the orthogonal group $\operatorname{O}(V, Q)$, a subgroup of the general linear group, and the reflections generate it, by the theorem of Cartan–Dieudonné. These are the objects of <em>Isometries and Orthogonal Transformations</em> and of <em>The Rotation Group and Orientation</em>, and are cited rather than restated.</p>
+<h3 id="the-symmetry-group">The Symmetry Group</h3>
+<p><strong>Definition.</strong> A <strong>symmetry group</strong> of $X$ is a subgroup $G \leq \operatorname{Isom}(X)$ of the isometry group of the chosen structure. Its elements are the <strong>motions</strong> available for $X$; when $X$ is a figure $F$ inside a larger space and the chosen structure is the ambient one, the maximal such subgroup is $\operatorname{Sym}(F) = \{\varphi \in \operatorname{Isom}(X) : \varphi(F) = F\}$, the symmetry group of the figure, whose finite and discrete instances are <em>Symmetry, Point and Crystallographic Groups</em>.</p>
+<p>A symmetry group is therefore not a datum of $X$ alone. The Euclidean plane with its form $x^2+y^2$ has the symmetry group $O(2)$ and no hyperbolic rotation; the plane with the form $x^2-y^2$ has the symmetry group $O(1,1)$ and no Euclidean rotation. This dependence on the chosen form is the boundary test of the part, and it is what makes every statement below a statement of geometry rather than of group theory.</p>
+<h3 id="the-action">The Action</h3>
+<p><strong>Definition.</strong> A symmetry group $G$ <strong>acts</strong> on $X$ by the evaluation map</p>
+<p>$$
+G \times X \longrightarrow X, \qquad (a, x) \longmapsto a \cdot x = a(x),
+$$</p>
+<p>with $e \cdot x = x$ and $(ab)\cdot x = a \cdot (b \cdot x)$; the action is <strong>effective</strong> when the assignment $a \mapsto (x \mapsto a\cdot x)$ is injective, and it is by definition by isometries of the chosen form. The <strong>orbit</strong> of $x$ is $G \cdot x = \{a \cdot x : a \in G\}$, the <strong>stabiliser</strong> is $G_x = \{a \in G : a \cdot x = x\}$, and the orbit–stabiliser theorem, <em>Group Actions and Structure</em>, identifies the orbit with the coset space $G/G_x$ as a $G$-set. The orbits are the figures of the geometry that the chosen form and the subgroup $G$ jointly single out: the circles of the Euclidean plane under $SO(2)$, the hyperbolas of the hyperbolic plane under the hyperbolic rotations, the spheres of $\mathbb{R}^n$ under $O(n)$.</p>
+<p><strong>Remark.</strong> When $G$ is the whole isometry group the action is transitive on each connected component of $X$; when $G$ is a proper subgroup the orbit decomposition is finer, and the refinement is the geometric content of the choice of $G$ inside $\operatorname{Isom}(X)$.</p>
+<h2 id="the-action-operators">The Action Operators</h2>
+<h3 id="the-operator-of-an-element">The Operator of an Element</h3>
+<p><strong>Definition.</strong> Let $\mathcal{F}(X)$ be the space of functions on $X$ (the smooth functions when $X$ is a manifold, the linear functions when $X = V$ is a quadratic space). The <strong>action operator</strong> of $a \in G$ is the linear map</p>
+<p>$$
+\pi(a) : \mathcal{F}(X) \longrightarrow \mathcal{F}(X), \qquad
+\bigl(\pi(a)f\bigr)(x) = f\bigl(a^{-1}\cdot x\bigr).
+$$</p>
+<p>The inverse in the argument is what makes the assignment a left action: for $a, b$ and $f$,</p>
+<p>$$
+\pi(a)\pi(b)f(x) = \pi(b)f(a^{-1}\cdot x) = f\bigl(b^{-1}\cdot a^{-1}\cdot x\bigr) = f\bigl((ab)^{-1}\cdot x\bigr) = \pi(ab)f(x).
+$$</p>
+<p><strong>Proposition.</strong> The assignment $\pi : G \to GL(\mathcal{F}(X))$ is a group homomorphism, $\pi(e) = \mathrm{id}$ and $\pi(a)^{-1} = \pi(a^{-1})$; the space $\mathcal{F}(X)$ is a module over the group algebra of $G$ through it, and the representation $\pi$ is the <strong>permutation representation</strong> of the action on functions. When $G$ is effective the representation is faithful on $\mathcal{F}(X)$ when the functions separate the points of $X$.</p>
+<p><strong>Proof.</strong> The composition rule is the computation above; that $\pi(e) = \mathrm{id}$ is $e \cdot x = x$; and the inverse is read off from $\pi(a)\pi(a^{-1}) = \pi(e)$. The module statement is the definition of the group algebra acting through a representation, <em>Representations of Groups</em>.</p>
+<h3 id="fixed-functions-and-invariants">Fixed Functions and Invariants</h3>
+<p><strong>Definition.</strong> A function $f$ is <strong>invariant</strong> under the action when $\pi(a)f = f$ for every $a \in G$, equivalently when $f$ is constant on every orbit. The invariant functions form the subspace</p>
+<p>$$
+\mathcal{F}(X)^G = \{f : f(a \cdot x) = f(x)\ \text{for all } a \in G,\ x \in X\},
+$$</p>
+<p>the <strong>fixed space</strong> of the representation, and the functions invariant under the isometry group of a form are the invariants of the form: on a quadratic space $\operatorname{O}(V,Q)$-invariant polynomials are the polynomials in $Q$, by the first fundamental theorem of invariant theory, so the invariant functions of a quadratic space are exactly the functions of $Q$.</p>
+<p><strong>Proposition.</strong> The fixed space $\mathcal{F}(X)^G$ is the common kernel of the operators $\pi(a) - \mathrm{id}$, and it is a subalgebra of $\mathcal{F}(X)$ when $G$ is effective and $\mathcal{F}$ is closed under products.</p>
+<h2 id="left-and-right-multiplication-and-the-sandwich">Left and Right Multiplication and the Sandwich</h2>
+<h3 id="the-group-as-a-space">The Group as a Space</h3>
+<p>The simplest space on which a symmetry group acts is the group itself. When $X = G$ with the chosen structure that the identification $G \leq \operatorname{Isom}(X)$ supplies, the action becomes the left multiplication, and it is accompanied by the right multiplication, which commutes with it.</p>
+<p><strong>Definition.</strong> The <strong>left translation operator</strong> and the <strong>right translation operator</strong> by $a \in G$ on $\mathcal{F}(G)$ are</p>
+<p>$$
+L_a f(x) = f(a^{-1}x), \qquad R_a f(x) = f(xa),
+$$</p>
+<p>so that $L_a$ is the action operator of the left action of $G$ on itself and $R_b$ is the action operator of the right action. They satisfy</p>
+<p>$$
+L_a L_b = L_{ab}, \qquad R_a R_b = R_{ab}, \qquad L_a R_b = R_b L_a,
+$$</p>
+<p>and each family is a representation of $G$ on $\mathcal{F}(G)$; the two representations commute.</p>
+<p><strong>Proof.</strong> The composition rules are immediate from the definitions, and the commutation is the associativity of the product: $L_a R_b f(x) = R_b f(a^{-1}x) = f(a^{-1}xb) = L_a f(xb) = R_b L_a f(x)$.</p>
+<p><strong>Remark.</strong> The two-sidedness matters. When $G$ is non-abelian, $L_a$ and $R_a$ differ, and the difference is the inner conjugation of the next subsection; when $G$ is abelian the two coincide, and the regular action degenerates. The left and the right multiplication are the elementary operators, and every operator built from the group is a composite of them.</p>
+<h3 id="the-sandwich">The Sandwich</h3>
+<p><strong>Definition.</strong> The <strong>sandwich</strong> by the pair $(a, b) \in G \times G$ is the two-sided operator</p>
+<p>$$
+\Psi_{a,b} : \mathcal{F}(G) \longrightarrow \mathcal{F}(G), \qquad
+\Psi_{a,b} f(x) = f(a\,x\,b),
+$$</p>
+<p>the pullback of the map $x \mapsto axb$. In terms of the one-sided operators,</p>
+<p>$$
+\Psi_{a,b} = L_{a^{-1}} R_b = R_b L_{a^{-1}} .
+$$</p>
+<p><strong>Proposition.</strong> The sandwiches compose by</p>
+<p>$$
+\Psi_{a,b} \circ \Psi_{c,d} = \Psi_{c a,\, b d},
+$$</p>
+<p>they satisfy $\Psi_{a,b}^{-1} = \Psi_{a^{-1}, b^{-1}}$, and the assignment $(a, b) \mapsto \Psi_{a,b}$ is a homomorphism $G \times G^{\mathrm{op}} \to GL(\mathcal{F}(G))$. The sandwich with $b = a^{-1}$ is the <strong>inner conjugation</strong> $\Psi_{a, a^{-1}} f(x) = f(a\,x\,a^{-1})$.</p>
+<p><strong>Proof.</strong> For the composition, $\Psi_{a,b}\bigl(\Psi_{c,d}f\bigr)(x) = \Psi_{c,d}f(axb) = f(c\,a x b\,d) = \Psi_{ca,bd}f(x)$; the inverse is the sandwich with the inverses, and the composition law is that of the direct product with the opposite group in the second factor.</p>
+<p><strong>Remark (the inner conjugation).</strong> The conjugation action $a \mapsto (x \mapsto axa^{-1})$ is the orbit map of the action of $G$ on itself by conjugation, and its orbits are the conjugacy classes of <em>Group Actions and Structure</em>. Its kernel is the centre $Z(G)$, so the inner automorphisms are $G/Z(G)$; this is the operator that the group-theoretic conjugation contributes to the layer, and it is taken up in the negative form of the signed operators of the group <code>- * Operator Theory</code> of this category.</p>
+<h2 id="equivariant-operators">Equivariant Operators</h2>
+<h3 id="the-commutant-of-the-action">The Commutant of the Action</h3>
+<p><strong>Definition.</strong> Let $\mathcal{H}$ be a module over the group algebra of $G$, that is, a space with a linear action $\pi$. An operator $T : \mathcal{H} \to \mathcal{H}$ is <strong>equivariant</strong> (or an <strong>intertwiner</strong> of the action with itself) when</p>
+<p>$$
+T \pi(a) = \pi(a) T \qquad \text{for every } a \in G .
+$$</p>
+<p>The equivariant operators form the <strong>commutant</strong> $\operatorname{End}_G(\mathcal{H})$, a subalgebra of $\operatorname{End}(\mathcal{H})$ under composition, and it is the set of operators of the action that the action cannot tell apart.</p>
+<p><strong>Proposition.</strong> The commutant is a unital subalgebra of $\operatorname{End}(\mathcal{H})$, closed under inversion of its invertible members; it contains the identity and every scalar multiple of the identity, so $\operatorname{End}_G(\mathcal{H}) \supseteq k\cdot\mathrm{id}$ when the action is over the field $k$.</p>
+<p><strong>Proof.</strong> If $S$ and $T$ commute with every $\pi(a)$ then so do $S + T$, $ST$ and $T^{-1}$ for invertible $T$; the identity commutes with everything.</p>
+<h3 id="schurs-lemma-and-the-irreducible-case">Schur's Lemma and the Irreducible Case</h3>
+<p><strong>Theorem (Schur).</strong> Let $\mathcal{H}$ be an irreducible module over the group algebra of $G$ over an algebraically closed field $k$. Then every equivariant operator is a scalar, $\operatorname{End}_G(\mathcal{H}) = k \cdot \mathrm{id}$; consequently two irreducible modules are either isomorphic or have no nonzero intertwiner between them.</p>
+<p><strong>Proof.</strong> An equivariant endomorphism of an irreducible module has kernel and image that are submodules, hence each is $0$ or the whole; so a nonzero endomorphism is invertible, and over an algebraically closed field an operator commuting with an irreducible action has an eigenvalue and the corresponding eigenspace is a nonzero submodule, hence the whole space, so the operator is that scalar. For the second statement, the kernel of an intertwiner is a submodule and the image is a submodule, and irreducibility forces the two alternatives.</p>
+<p><strong>Remark.</strong> The classification of the equivariant operators is therefore the classification of the module: an irreducible module has only scalars, a sum of isotypic components has as many operators as the component ring, and a general module has the matrix algebra of its multiplicity spaces. The geometric reading is exact: the operators of a space that commute with its symmetry group are precisely the operators that the symmetry cannot detect, and they are the invariants of the action on the operator layer.</p>
+<h3 id="the-equivariant-operators-of-a-space">The Equivariant Operators of a Space</h3>
+<p><strong>Definition.</strong> An operator $T$ on the chosen space $X$ is a <strong>symmetry-preserving operator</strong> when it commutes with every symmetry of the form, $T \in \operatorname{End}_G(\mathcal{F}(X))$. The group generated by the action operators and the sandwiche is contained in $\operatorname{End}_G(\mathcal{F}(X))$ when the group is abelian, and in general the action operators themselves are equivariant under the action by conjugation only.</p>
+<p><strong>Example.</strong> On the Euclidean plane the Laplacian commutes with $O(2)$, so it is a symmetry-preserving operator; the radial derivative commutes with $SO(2)$ but not with the reflections, so it is equivariant for the rotations alone. The operators equivariant for a subgroup are the operators equivariant for the larger group exactly when the larger group is generated by the smaller together with operators that already commute with them.</p>
+<h2 id="the-operator-layer-the-group-generates">The Operator Layer the Group Generates</h2>
+<h3 id="the-generated-algebra">The Generated Algebra</h3>
+<p><strong>Definition.</strong> The <strong>operator layer</strong> of the symmetry group $G$ is the smallest subalgebra of $\operatorname{End}(\mathcal{F}(G))$ containing the identity and the one-sided operators $L_a$, $R_b$ for $a, b \in G$; equivalently, it is the algebra generated by the image of the group algebra under the left and right regular representations.</p>
+<p><strong>Proposition.</strong> The operator layer contains every sandwich $\Psi_{a,b}$, because $\Psi_{a,b} = L_{a^{-1}}R_b$, and it contains the inner conjugation $\Psi_{a,a^{-1}}$; it is spanned by the sandwiches when the group is finite, since a word in the generators is a composite of sandwiches and reduces to one by the composition law.</p>
+<p><strong>Proof.</strong> The first statements are the definitions and the composition law of the sandwiches. For the spanning, expanding a word by $L_a = \Psi_{a,e}$ and $R_b = \Psi_{e,b^{-1}}$ and using the composition law $\Psi_{a,b}\Psi_{c,d} = \Psi_{ca,bd}$ reduces every word to a single sandwich; the span over the field of the group is the layer.</p>
+<h3 id="the-two-sided-operators">The Two-Sided Operators</h3>
+<p>The sandwiches are the two-sided operators of the layer, the one-sided operators are the degenerate cases with one parameter trivial, and the inner conjugation is the diagonal. They are the complete list of the operators that carry the group's own product to itself, in the following sense.</p>
+<p><strong>Proposition.</strong> A linear operator $T : kG \to kG$ on the group algebra is a sandwich, $T = \Psi_{a,b}$, exactly when $T$ is the pullback of a group automorphism of the form $x \mapsto axb$ for fixed $a, b$; in particular the invertible operators of the layer that are multiplicative on the group algebra are the composites of a left and a right multiplication.</p>
+<p><strong>Proof.</strong> The pullback of $x \mapsto axb$ is a sandwich, and conversely a sandwich carries the product of two elements to the product of their images, so it is multiplicative on the group algebra; an operator multiplicative on the group algebra and sending $e$ to $e$ is a group automorphism, and the automorphisms of the shape $x \mapsto axb$ are exactly the composites of the left and right translations, the inner ones when $b = a^{-1}$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the circle and its rotations).</strong> Let $X = S^1$ with the Euclidean form and $G = SO(2) = \{R(\theta)\}$. The action on $L^2(S^1)$ has the Fourier characters $f_m(x) = e^{imx}$ as eigenfunctions, $L_{R(\theta)}f_m = e^{-im\theta}f_m$, so the action operators are diagonal in the character basis and the commutant of the action on each isotypic component is the scalars. The subgroups of $SO(2)$ are the cyclic and the dense subgroups, and the commutant of a dense one is trivial, which is the operator form of the fact that a dense subgroup has no invariant functions but the constants.</p>
+<p><strong>Example (the finite symmetry group of a polygon).</strong> Let $X$ be the regular $n$-gon and $G = D_n$ its dihedral symmetry group of order $2n$, <em>Symmetry, Point and Crystallographic Groups</em>. The action on the $n$ vertices is the standard permutation action, and the equivariant operators are the $D_n$-stable linear maps of the vertex space: the circulant matrices commuting with the rotation form the cyclic algebra, and the reflection reduces the commutant to the symmetric circulants. The orbit–stabiliser count gives the invariant functions of the vertex set, one dimension for each orbit of the group on the vertex set.</p>
+<p><strong>Example (the Euclidean group and its translations).</strong> Let $X = \mathbb{R}^n$ and $G = E(n) = \mathbb{R}^n \rtimes O(n)$, the Euclidean isometry group of <em>Symmetry, Point and Crystallographic Groups</em>. A translation $T_b$ has the single action operator with $L_{T_b}f(x) = f(x-b)$, and the translations alone form the abelian normal subgroup; the sandwich by two translations is a single translation, $\Psi_{T_b,T_c} = L_{T_{-(b+c)}}$, so the layer of the translation subgroup is the commutative algebra generated by the shift operators, whose characters are the exponentials $e^{i\langle\xi,x\rangle}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A symmetry group $G$ is a subgroup of the isometry group of a space $X$ carrying a chosen distance or form, and the choice of the form is what makes the group and its operators geometric. The action $G \times X \to X$ by isometries gives the action operators $\pi(a)f(x) = f(a^{-1}\cdot x)$, a representation of $G$ on the functions, whose fixed space is the invariant functions, constant on the orbits. On the group itself the left and the right multiplications $L_a f(x) = f(a^{-1}x)$ and $R_a f(x) = f(xa)$ are two commuting representations, and the two-sided sandwich $\Psi_{a,b}f(x) = f(axb) = L_{a^{-1}}R_b f(x)$ composes by $\Psi_{a,b}\Psi_{c,d} = \Psi_{ca,bd}$ and has inverse $\Psi_{a^{-1},b^{-1}}$; the inner conjugation $\Psi_{a,a^{-1}}$ has kernel the centre. The operators equivariant for the action are the commutant of the representation, a unital subalgebra; for an irreducible module over an algebraically closed field Schur's lemma makes the commutant the scalars, and the equivariant operators of a space are exactly the operators the symmetry cannot detect. The layer generated by the group is spanned by the sandwiches, and the multiplicative invertible members of the layer are the composites of a left and a right multiplication.</p>
+<p>The involution on the elements of $G$, the spaces its fixed subgroup defines, and the adjoint of an operator defined by that involution are not part of this article: the first is the group <code>- * Theory</code> of this category and the second the group <code>- * Operator Theory</code>. The convolution and translation operators of the group are the two following articles of the present group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$</td>
+<td>a space with a chosen distance, or a quadratic space</td>
+</tr>
+<tr>
+<td>$Q$, $B$</td>
+<td>the chosen quadratic form and its polar form</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(X)$</td>
+<td>the isometry group of the chosen structure</td>
+</tr>
+<tr>
+<td>$G \leq \operatorname{Isom}(X)$</td>
+<td>the symmetry group; a subgroup of the isometries</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(F)$</td>
+<td>the symmetry group of a figure $F$</td>
+</tr>
+<tr>
+<td>$a \cdot x$</td>
+<td>the action of $a \in G$ on $x \in X$</td>
+</tr>
+<tr>
+<td>$G\cdot x$, $G_x$</td>
+<td>orbit and stabiliser of $x$</td>
+</tr>
+<tr>
+<td>$\mathcal{F}(X)$, $\mathcal{F}(X)^G$</td>
+<td>functions on $X$; the invariant functions</td>
+</tr>
+<tr>
+<td>$\pi(a)$</td>
+<td>the action operator, $\pi(a)f(x) = f(a^{-1}\cdot x)$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right translation operators</td>
+</tr>
+<tr>
+<td>$\Psi_{a,b} = L_{a^{-1}}R_b$</td>
+<td>the two-sided sandwich, $\Psi_{a,b}f(x) = f(axb)$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_G(\mathcal{H})$</td>
+<td>the commutant; the equivariant operators</td>
+</tr>
+<tr>
+<td>$kG$</td>
+<td>the group algebra acting through the representation</td>
+</tr>
+<tr>
+<td>$E(n) = \mathbb{R}^n \rtimes O(n)$</td>
+<td>the Euclidean isometry group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for group actions on spaces, invariant operators and the two-sided calculus on a group.</li>
+<li>Shoshichi Kobayashi and Katsumi Nomizu, <em>Foundations of Differential Geometry, Volume I</em> (Interscience, 1963), for the isometry group of a Riemannian manifold and the equivariant operators.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the isometry groups of the classical forms and their generation by reflections.</li>
+<li>Sergei Lang, <em>Algebra</em> (Springer, third edition, 2002), for group actions, the orbit–stabiliser theorem and the group algebra.</li>
+<li>Hermann Weyl, <em>The Classical Groups: Their Invariants and Representations</em> (Princeton, 1939), for the invariants of the classical groups and the operators the symmetry cannot detect.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

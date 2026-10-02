@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesquilinear Forms and the Lax–Milgram Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="sesquilinear-forms-and-the-laxmilgram-theorem"><strong>Sesquilinear Forms and the Lax–Milgram Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Many operators of analysis are defined not by a formula but by a form: a sesquilinear pairing $B(x,y)$ from which the operator is recovered by $B(x,y)=\langle Ax,y\rangle$. The pair of conditions that make this recovery possible and useful are <strong>boundedness</strong>, which bounds the form by a multiple of the two norms, and <strong>coercivity</strong>, which bounds the diagonal $B(x,x)$ below by a positive multiple of $\|x\|^2$. Under these two conditions the <strong>Lax–Milgram theorem</strong> produces a unique bounded operator $A$ representing the form, and it produces the operator's inverse with the bound controlled by the coercivity constant; the theorem is the variational entry point to the theory of elliptic equations, and its Hermitian specialisation is the positivity and self-adjointness of the represented operator.</p>
+<p>This article fixes the bounded sesquilinear forms, the operator they represent, the Lax–Milgram theorem with its inverse bound, the Hermitian forms and the associated self-adjoint operators, and the equivalent inner products that a coercive Hermitian form defines. The Hilbert-space structure is <em>Hilbert Spaces</em>; the Riesz representation theorem is there and in <em>Banach and Hilbert Spaces</em>; the self-adjointness and positivity of the represented operator are <em>Self-Adjoint Operators and the Spectral Theorem</em> and <em>Positive Operators and the Square Root</em>; the form-theoretic version for a form that is only semi-bounded is <em>The Friedrichs Extension of a Hermitian Form</em>; the Dirichlet form is <em>Dirichlet Forms and the Hermitian Dirichlet Principle</em>.</p>
+<p>Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{C}$ (or a real Hilbert space over $\mathbb{R}$), $\langle\cdot,\cdot\rangle$ is linear in the first argument and conjugate-linear in the second, and $\|\cdot\|$ is the induced norm. A <strong>sesquilinear form</strong> is a map $B:H\times H\to\mathbb{K}$ linear in the first argument and conjugate-linear in the second; it is <strong>bounded</strong> if $\|B\|=\sup_{\|x\|,\|y\|\le1}|B(x,y)|<\infty$ and <strong>coercive</strong> if there is $c>0$ with $\operatorname{Re}B(x,x)\ge c\|x\|^2$ for all $x$.</p>
+<h2 id="bounded-sesquilinear-forms">Bounded Sesquilinear Forms</h2>
+<p><strong>Definition.</strong> A <strong>bounded sesquilinear form</strong> on $H$ is a sesquilinear $B$ with $\|B\|<\infty$. It is <strong>Hermitian</strong> if $B(x,y)=\overline{B(y,x)}$ for all $x,y$, and <strong>symmetric</strong> in the real case if $B(x,y)=B(y,x)$.</p>
+<p><strong>Proposition (the form norm and the polarisation).</strong> For a bounded sesquilinear form,</p>
+<p>$$
+|B(x,y)|\le\|B\|\,\|x\|\,\|y\| ,
+$$</p>
+<p>the quantity $\|B\|$ is a norm on the space of bounded forms, and the form is determined by its diagonal values through the polarisation identity</p>
+<p>$$
+B(x,y)=\tfrac14\bigl(B(x+y,x+y)-B(x-y,x-y)+i\,B(x+iy,x+iy)-i\,B(x-iy,x-iy)\bigr) .
+$$</p>
+<p>A form is Hermitian exactly when its diagonal $B(x,x)$ is real for every $x$.</p>
+<p><em>Proof.</em> The bound is the definition of the supremum; the polarisation identity is the expansion of the four squares, valid because the form is sesquilinear; the Hermitian condition is equivalent to the reality of the diagonal, as the identity shows by exchanging the arguments.</p>
+<p><strong>Proposition (the adjoint form).</strong> The <strong>adjoint form</strong> is $B^*(x,y)=\overline{B(y,x)}$; it is sesquilinear and bounded with $\|B^*\|=\|B\|$, the operation $B\mapsto B^*$ is a conjugate-linear involution, and $B$ is Hermitian exactly when $B^*=B$.</p>
+<p><em>Proof.</em> Conjugating the arguments reverses the linearity, so $B^*$ is sesquilinear; the norm identity is the exchange of the two variables in the supremum; the involution and the criterion are immediate from the definitions.</p>
+<h2 id="the-represented-operator">The Represented Operator</h2>
+<p><strong>Theorem (representation of a bounded form).</strong> For every bounded sesquilinear form $B$ there is a unique $A\in B(H)$ with</p>
+<p>$$
+B(x,y)=\langle Ax,y\rangle\quad(x,y\in H),\qquad \|A\|=\|B\| .
+$$</p>
+<p>Conversely every $A\in B(H)$ represents the bounded form $B_A(x,y)=\langle Ax,y\rangle$, and the correspondence $B\leftrightarrow A$ is a conjugate-linear isometry that carries the adjoint form to the adjoint operator: $B^*\leftrightarrow A^*$.</p>
+<p><em>Proof.</em> For fixed $x$ the map $y\mapsto\overline{B(x,y)}$ is a bounded linear functional, so by the Riesz representation theorem there is a unique $Ax$ with $B(x,y)=\langle Ax,y\rangle$; the map $x\mapsto Ax$ is linear because $B$ is linear in its first argument, and $\|A\|=\|B\|$ is the equality of the two suprema. The converse and the adjoint statement are immediate from the definitions.</p>
+<p><strong>Corollary (Hermitian forms and self-adjoint operators).</strong> The form $B$ is Hermitian exactly when the represented operator $A$ is self-adjoint, and then $B(x,x)=\langle Ax,x\rangle$ is real; the form is positive definite exactly when $A$ is a positive operator, and coercive exactly when $A$ is positive with $\langle Ax,x\rangle\ge c\|x\|^2$, equivalently when $A$ is positive and invertible with $A\ge cI$.</p>
+<p><em>Proof.</em> $B(x,y)=\langle Ax,y\rangle$ and $\overline{B(y,x)}=\langle x,Ay\rangle=\langle A^*x,y\rangle$, so Hermitian symmetry is $A=A^*$; the positivity statements are the translation of the inequalities through the representation.</p>
+<h2 id="the-laxmilgram-theorem">The Lax–Milgram Theorem</h2>
+<p><strong>Theorem (Lax–Milgram).</strong> Let $B$ be a bounded coercive sesquilinear form on $H$ with coercivity constant $c>0$. Then the represented operator $A$ is boundedly invertible and</p>
+<p>$$
+\|A^{-1}\|\le\frac1c .
+$$</p>
+<p>Equivalently, for every $f\in H$ there is a unique $x\in H$ with</p>
+<p>$$
+B(x,y)=\langle f,y\rangle\qquad(y\in H),
+$$</p>
+<p>and it satisfies $\|x\|\le\frac1c\|f\|$.</p>
+<p><em>Proof.</em> Coercivity gives $c\|x\|^2\le\operatorname{Re}\langle Ax,x\rangle\le\|Ax\|\|x\|$, hence $\|Ax\|\ge c\|x\|$; so $A$ is injective with closed range. The adjoint form $\bar B$ is also coercive with the same constant, so $A^*$ has closed range, and the range of $A$ is the orthogonal complement of the kernel of $A^*$, which is zero; hence $A$ is surjective. The estimate for $A^{-1}$ is the same inequality read backwards, and the solvability statement is the representation $f=A^{-1}f$ of the equation.</p>
+<p><strong>Corollary (stability of the solution).</strong> The solution $x$ of the variational equation depends continuously on $f$, and if the form is represented by a self-adjoint coercive $A$ then $A$ is positive with spectrum contained in $[c,\|A\|]$; in particular the smallest spectral value is at least the coercivity constant.</p>
+<p><em>Proof.</em> Continuity is the bound $\|x\|\le\|f\|/c$; for self-adjoint $A$ the coercivity inequality and the bound $|\langle Ax,x\rangle|\le\|A\|\|x\|^2$ confine the numerical range to $[c,\|A\|]$, and the spectrum lies in the closure of the numerical range.</p>
+<p><strong>Remark.</strong> The two hypotheses are independent: the form $B(x,y)=i\langle x,y\rangle$ is bounded and not coercive, the diagonal form $\langle Ax,y\rangle$ with $A$ unbounded is coercive on its form domain and not bounded, and the form $B(x,y)=\langle x,y\rangle$ is both. The coercive Hermitian bounded case is the case in which $A$ is a positive invertible operator, and it is the case in which the form gives a new inner product equivalent to the old one.</p>
+<h2 id="hermitian-forms-and-equivalent-inner-products">Hermitian Forms and Equivalent Inner Products</h2>
+<p><strong>Proposition (a coercive Hermitian form is an inner product).</strong> Let $B$ be a Hermitian bounded form with $B(x,x)\ge c\|x\|^2$ for a constant $c>0$. Then</p>
+<p>$$
+\langle x,y\rangle_B=B(x,y)
+$$</p>
+<p>is an inner product on $H$ whose norm is equivalent to the original norm,</p>
+<p>$$
+\sqrt{c}\,\|x\|\le\|x\|_B\le\sqrt{\|B\|}\,\|x\| ,
+$$</p>
+<p>and $H$ is complete for $\|\cdot\|_B$; the two norms induce the same topology.</p>
+<p><em>Proof.</em> The form is sesquilinear, Hermitian and positive definite, hence an inner product; the two inequalities are the coercivity and the boundedness, and completeness follows from the equivalence of the norms.</p>
+<p><strong>Proposition (the operator that changes the inner product).</strong> With $B$ and $A$ as above, $A$ is positive and invertible, and the new inner product is</p>
+<p>$$
+\langle x,y\rangle_B=\langle Ax,y\rangle=\langle A^{1/2}x,A^{1/2}y\rangle ;
+$$</p>
+<p>hence $A^{1/2}$ is an isometry from $(H,\langle\cdot,\cdot\rangle_B)$ onto $(H,\langle\cdot,\cdot\rangle)$, and the self-adjoint operators of the two Hilbert structures are related by conjugation with $A^{1/2}$.</p>
+<p><em>Proof.</em> The square-root factorisation is the self-adjointness and positivity of $A$; the isometry statement is the second display, and the conjugation statement follows from the change of the inner product by an isometry.</p>
+<p><strong>Example (the Dirichlet form).</strong> For an open set $\Omega$ the form</p>
+<p>$$
+B(u,v)=\int_\Omega\nabla u\cdot\nabla\bar v
+$$</p>
+<p>is bounded and coercive on the Sobolev space $H^1_0(\Omega)$ by the Poincaré inequality, so the Lax–Milgram theorem represents it by a bounded operator on that space; the operator is the Dirichlet Laplacian, and the variational equation $B(u,v)=\langle f,v\rangle$ is the weak formulation of $-\Delta u=f$ with homogeneous boundary values.</p>
+<p><strong>Example (the weak formulation of an elliptic problem).</strong> For a uniformly elliptic coefficient matrix $a(x)$ the form</p>
+<p>$$
+B(u,v)=\int_\Omega a(x)\nabla u\cdot\nabla\bar v
+$$</p>
+<p>is bounded and coercive on $H^1_0(\Omega)$, so the boundary-value problem $\operatorname{div}(a\nabla u)=f$ has a unique weak solution for every $f\in H^{-1}(\Omega)$; the coercivity constant is the ellipticity constant, and the Lax–Milgram bound is the standard energy estimate.</p>
+<h2 id="summary">Summary</h2>
+<p>A bounded sesquilinear form $B$ on a Hilbert space satisfies $|B(x,y)|\le\|B\|\|x\|\|y\|$, is determined by its diagonal through the polarisation identity, and is Hermitian exactly when the diagonal is real; the adjoint form $B^*(x,y)=\overline{B(y,x)}$ is a conjugate-linear involution of the space of forms. Every bounded form is represented by a unique bounded operator, $B(x,y)=\langle Ax,y\rangle$ with $\|A\|=\|B\|$, and the correspondence carries the adjoint form to the adjoint operator, so Hermitian forms correspond to self-adjoint operators and coercive forms to positive invertible ones. The Lax–Milgram theorem states that a bounded coercive form represents a boundedly invertible operator with $\|A^{-1}\|\le1/c$, equivalently that the variational equation $B(x,y)=\langle f,y\rangle$ has a unique solution with $\|x\|\le\|f\|/c$. A coercive Hermitian form is itself an inner product equivalent to the given one, the equivalence being implemented by $A^{1/2}$, and the Dirichlet form and the weak formulation of an elliptic problem are the standard examples of the theorem in analysis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(x,y)$</td>
+<td>sesquilinear form, linear in the first argument</td>
+</tr>
+<tr>
+<td>$\|B\|$</td>
+<td>bound of the form, $|B(x,y)|\le\|B\|\|x\|\|y\|$</td>
+</tr>
+<tr>
+<td>$B^*(x,y)=\overline{B(y,x)}$</td>
+<td>adjoint form, $B^*\leftrightarrow A^*$</td>
+</tr>
+<tr>
+<td>$B(x,y)=\langle Ax,y\rangle$</td>
+<td>the represented operator</td>
+</tr>
+<tr>
+<td>$\|A\|=\|B\|$</td>
+<td>isometry of the correspondence</td>
+</tr>
+<tr>
+<td>coercive</td>
+<td>$\operatorname{Re}B(x,x)\ge c\|x\|^2$</td>
+</tr>
+<tr>
+<td>$\|A^{-1}\|\le1/c$</td>
+<td>Lax–Milgram inverse bound</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle_B=B(x,y)$</td>
+<td>equivalent inner product of a coercive Hermitian form</td>
+</tr>
+<tr>
+<td>$A^{1/2}$</td>
+<td>the isometry between the two inner products</td>
+</tr>
+<tr>
+<td>Dirichlet form</td>
+<td>$\int\nabla u\cdot\nabla\bar v$ on $H^1_0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Peter D. Lax and Arthur N. Milgram, "Parabolic Equations", in <em>Contributions to the Theory of Partial Differential Equations</em>, Annals of Mathematics Studies 33 (Princeton University Press, 1954), 167–190, for the original theorem.</li>
+<li>David Gilbarg and Neil S. Trudinger, <em>Elliptic Partial Differential Equations of Second Order</em> (Springer, 2nd ed. 1983), for the weak formulation and the energy estimates.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the sesquilinear forms and the representation theorem.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the forms associated with unbounded operators and the sectorial forms.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for the Lax–Milgram theorem and its operator form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

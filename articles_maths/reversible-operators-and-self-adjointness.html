@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reversible Operators and Self-Adjointness — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reversible-operators-and-self-adjointness"><strong>Reversible Operators and Self-Adjointness</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>reversing symmetry</strong> is an involutive operator that conjugates an operator into its adjoint, and it refines both the self-adjointness and the spectrum. Precisely, let $J$ be an involution of the Hilbert space, $J^2=I$, unitary or anti-unitary; an operator $T$ is <strong>reversible</strong> with respect to $J$ when
+$$
+T^*=J\,T\,J^{-1}=J\,T\,J ,
+$$
+that is, when $J$ intertwines $T$ with its adjoint. The definition includes the self-adjoint operators, for which $T^*=T$ and the reversibility is the commutation $TJ=JT$, and it includes the operators that are self-adjoint <strong>only up to the symmetry</strong>, whose spectra are conjugate-symmetric rather than real. The article develops the theory: the parity decomposition induced by a unitary involution, the block form of a reversible operator, the refinement of the spectrum into the parity parts, the conjugate symmetry of the spectrum in the non-self-adjoint case, and the application to a stationary process, where the reversing symmetry is the reversal $U_r$ of the index, the reversible operator is the transition operator of a reversible process, and the refinement of the spectrum is the symmetry of the relaxation of the chain under the reversal of the trajectories.</p>
+<p>The conventions are those of the category. The reversible chains, the time reversal and the detailed balance are <em>Reversible Markov Chains and Time Reversal</em>, earlier in this category; the reversibility of a stationary process and the reversal of the law are <em>The Reversibility of a Stationary Process</em>, earlier in this category; the adjoint of the Markov operator is <em>The Adjoint of the Markov Operator</em>, earlier in this category; the involution on the operator algebra of a process, with the reversal unitary $U_r$ and the automorphism $\tau$, is <em>The Involution on the Operator Algebra of a Process</em>, earlier in this category; the adjoint of the transition operator is <em>The Adjoint of the Transition Operator</em>, earlier in this category. The $J$-self-adjoint and $J$-unitary operators with respect to an indefinite form are <em>J-Self-Adjoint and J-Unitary Operators</em>, written, and the self-adjoint operators, the spectral theorem and the functional calculus are <em>Banach and Hilbert Spaces</em>, written, and <em>Self-Adjoint Operators and the Spectral Theorem</em>, written. The operator algebra and its involutions are <em>Operator Algebras</em>, written. No physics is invoked.</p>
+<p>Throughout, $\mathcal{H}$ is a complex Hilbert space with the form $\langle\cdot,\cdot\rangle$, $J$ is an involution with $J^2=I$, and $T$ is a bounded operator on $\mathcal{H}$; when $J$ is unitary it is self-adjoint, $J^*=J^{-1}=J$. The parity decomposition is $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$ with $\mathcal{H}_\pm$ the $\pm1$-eigenspaces of $J$. The operators of a process act on $\mathcal{H}=L^2(\Omega,\mathbb P)$ with the form $\langle f,g\rangle=\varphi(fg^*)$, and the reversal unitary is $U_rf=f\circ r$.</p>
+<h2 id="the-reversing-symmetry">The Reversing Symmetry</h2>
+<h3 id="definition-and-the-parity-decomposition">Definition and the parity decomposition</h3>
+<p><strong>Definition.</strong> A <strong>reversing symmetry</strong> of $\mathcal{H}$ is an involution $J$ with $J^2=I$, either <strong>unitary</strong>, $J^*=J^{-1}=J$, or <strong>anti-unitary</strong>, a conjugation with $J(\lambda x)=\bar\lambda Jx$ and $J^*=J^{-1}=J$ in the anti-linear sense.</p>
+<p><strong>Theorem (the parity decomposition).</strong> For a unitary involution $J$ the eigenspaces
+$$
+\mathcal{H}_+=\{x:Jx=x\},\qquad \mathcal{H}_-=\{x:Jx=-x\}
+$$
+are closed, orthogonal, and $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$; the orthogonal projections $P_\pm=\frac12(I\pm J)$ are self-adjoint projections and $J=P_+-P_-$. Every $x$ splits uniquely as $x=x_++x_-$ with $x_\pm\in\mathcal{H}_\pm$.</p>
+<p><em>Proof.</em> The eigenvalues of an involution are $\pm1$; the eigenspaces of a self-adjoint involution are orthogonal and span the whole space; the projections are the spectral projections of $J$, which are self-adjoint, and the decomposition is the spectral theorem for $J$.</p>
+<h3 id="the-two-classes-of-reversing-symmetry">The two classes of reversing symmetry</h3>
+<p><strong>Theorem (the unitary and the anti-unitary case).</strong> A unitary reversing symmetry is the parity operator of a decomposition and refines the spectrum into the parity blocks; an anti-unitary reversing symmetry is a conjugation and gives the classes of <strong>complex symmetric</strong> operators. The two cases share the intertwining relation $T^*=JTJ$ and differ in the reality of the symmetry.</p>
+<p><em>Proof.</em> The unitary $J$ is normal and diagonalisable with the eigenvalues $\pm1$; an anti-unitary $J$ has no eigenvalues in the ordinary sense but still satisfies $J^2=I$ and $J^*=J$, and the intertwining relation $T^*=JTJ$ makes sense in both cases because $J$ is anti-linear and $T^*$ is the Hilbert adjoint. The classes are distinguished by whether $J$ preserves the complex structure.</p>
+<h2 id="reversible-operators">Reversible Operators</h2>
+<h3 id="definition-and-first-properties">Definition and first properties</h3>
+<p><strong>Definition.</strong> An operator $T$ is <strong>reversible</strong> with respect to $J$ if
+$$
+T^*=J\,T\,J ,
+$$
+and it is <strong>$J$-self-adjoint</strong> in the same condition read on the indefinite form $[x,y]=\langle Jx,y\rangle$ (for the unitary $J$).</p>
+<p><strong>Theorem (properties).</strong> The reversibility is an involution-preserving condition: if $T$ is reversible then so are $T^*$ and $JTJ$; the reversible operators form a closed subspace and a Jordan algebra, being closed under the symmetrised product $\{S,T\}=ST+TS$. If $T$ is self-adjoint, the reversibility is the commutation $TJ=JT$, and then $T$ is reversible if and only if it preserves the parity decomposition.</p>
+<p><em>Proof.</em> From $T^*=JTJ$, taking adjoints and using $J^*=J$ gives $T=JT^*J$, so $T^*$ is reversible; the subspace is closed because the relation is linear; the Jordan closure is the identity $(ST+TS)^*=S^*T^*+T^*S^*=JSJ\,JTJ+JTJ\,JSJ=J(ST+TS)J$; for a self-adjoint $T$ the condition is $T=JTJ$, which is $TJ=JT$ because $J^2=I$, and the commutation with the parity operator is the preservation of the two eigenspaces.</p>
+<h3 id="self-adjointness-up-to-the-symmetry">Self-adjointness up to the symmetry</h3>
+<p><strong>Theorem (the spectrum is conjugate-symmetric).</strong> If $T$ is reversible with respect to $J$, then $J$ intertwines $T$ and $T^*$, so $T$ and $T^*$ are similar and
+$$
+\operatorname{spec}(T)=\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)},
+$$
+that is the spectrum of a reversible operator is symmetric under $\lambda\mapsto\bar\lambda$.</p>
+<p><em>Proof.</em> The intertwining gives $T^*=JTJ^{-1}$ with $J^{-1}=J$, so $T^*$ is similar to $T$ and they have the same spectrum; the spectrum of the adjoint is the conjugate, $\operatorname{spec}(T^*)=\overline{\operatorname{spec}(T)}$, since $T^*-\bar\lambda I=(T-\lambda I)^*$; combining the two gives the conjugate symmetry.</p>
+<p><strong>Corollary (self-adjointness and reversibility).</strong> A self-adjoint operator is reversible if and only if it commutes with $J$; an operator that is reversible but not self-adjoint has a conjugate-symmetric spectrum that need not be real, and the non-real eigenvalues occur in conjugate pairs of equal multiplicity.</p>
+<p><em>Proof.</em> The self-adjoint case is the theorem above with $T^*=T$, giving $T=JTJ$ and the commutation; in the general case the conjugate symmetry of the spectrum forces the non-real eigenvalues into conjugate pairs, with the multiplicities matched because the similarity $T\simeq T^*$ is implemented by the involution $J$.</p>
+<h2 id="the-refinement-of-the-spectrum">The Refinement of the Spectrum</h2>
+<h3 id="the-block-decomposition">The block decomposition</h3>
+<p><strong>Theorem (the refinement).</strong> Let $J$ be a unitary involution and let $T$ be reversible and self-adjoint, so that $TJ=JT$. Then $T$ decomposes as
+$$
+T=T_+\oplus T_-,\qquad T_\pm=T|_{\mathcal{H}_\pm},
+$$
+the operators $T_\pm$ are self-adjoint on $\mathcal{H}_\pm$, the spectrum splits as
+$$
+\operatorname{spec}(T)=\operatorname{spec}(T_+)\cup\operatorname{spec}(T_-),
+$$
+and every eigenvector of $T$ has a definite parity; the reversing symmetry therefore <strong>refines</strong> the spectrum by separating the even and the odd modes.</p>
+<p><em>Proof.</em> The commutation $TJ=JT$ makes the eigenspaces of $J$ invariant under $T$, so $T$ is block-diagonal in the parity decomposition; the restrictions are self-adjoint because $T$ is and the subspaces are reducing; the spectrum of a block-diagonal operator is the union of the spectra of the blocks; the eigenvector of a nondegenerate eigenvalue is even or odd by the invariance of the eigenspaces.</p>
+<p><strong>Corollary (the reversing symmetry of the spectral measure).</strong> For a reversible self-adjoint $T$ with the simple spectrum the spectral measure of a vector $x=x_++x_-$ splits into the measures of the parity parts, and the resolvent and the functional calculus preserve the parity; the reversing symmetry is a symmetry of the whole spectral analysis.</p>
+<p><em>Proof.</em> The functional calculus of a block-diagonal operator acts blockwise, and the spectral measure of $x$ is the sum of the measures of $x_+$ and $x_-$; the statement is the block form of the spectral theorem.</p>
+<h3 id="the-spectral-symmetry-in-the-non-self-adjoint-case">The spectral symmetry in the non-self-adjoint case</h3>
+<p><strong>Theorem (the conjugate pair reflection).</strong> Let $T$ be reversible with respect to a conjugation $J$ (anti-unitary), the case of the complex symmetric operators. Then the spectrum is conjugate-symmetric and the pairing of the eigenvectors is implemented by $J$: an eigenvector of $T$ at $\lambda$ is carried by $J$ to an eigenvector of $T^*$ at $\bar\lambda$, so the reversing symmetry reflects the spectrum across the real axis.</p>
+<p><em>Proof.</em> From $T^*=JTJ$ applied to $Tx=\lambda x$ and the anti-linearity of $J$, one gets $T^*(Jx)=JTx=J(\lambda x)=\bar\lambda\,Jx$, so $Jx$ is an eigenvector of $T^*$ at $\bar\lambda$; the reflection across the real axis is the content of the conjugate symmetry of the spectrum, and the pairing is the intertwining.</p>
+<h2 id="the-reversing-symmetry-of-a-process">The Reversing Symmetry of a Process</h2>
+<p><strong>Theorem (the reversible process).</strong> Let $\{X_n\}$ be a stationary process, $U_r$ the reversal operator, $U_rf=f\circ r$, and $P$ its transition or Markov operator with the stationary measure $\pi$. Then
+$$
+U_r\,P\,U_r=\hat P ,
+$$
+the transition operator of the reversed process, and the process is reversible exactly when $U_rPU_r=P$, that is exactly when $P$ is reversible with respect to $U_r$ and self-adjoint for the $\pi$-form. In that case the spectrum of $P$ refines into the even and the odd parts under the reversal, and the eigenfunctions have definite parity.</p>
+<p><em>Proof.</em> The conjugation by $U_r$ reverses the direction of the transitions, giving $\hat P$, by <em>The Involution on the Operator Algebra of a Process</em> and <em>The Adjoint of the Markov Operator</em>, earlier in this category; the self-adjointness $P^*=P$ in the reversible case is the theorem of <em>The Adjoint of the Markov Operator</em>; combining, $U_rPU_r=\hat P=P$ and $P$ commutes with the unitary involution $U_r$, so the refinement theorem applies with $J=U_r$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the parity of the two-state chain).</strong> For the two-state chain the reversal $U_r$ exchanges the two states and is the unitary involution with the parity decomposition into the symmetric and antisymmetric vectors; the transition operator is self-adjoint and commutes with $U_r$, its two eigenvalues $1$ and $1-a-b$ being the eigenvalues on the symmetric and the antisymmetric part; the spectrum refines into the even mode and the odd mode.</p>
+<p><strong>Example (the reflection symmetry of the circle).</strong> On $L^2(\mathbb R/\mathbb Z)$ with $Jf(\theta)=f(-\theta)$ the operator $J$ is a unitary involution with the parity decomposition into the even and the odd functions; the multiplication by $\cos(2\pi\theta)$ is self-adjoint and reversible, and its spectrum $[-1,1]$ refines into the parts of the even and the odd functions, the two parts overlapping on the whole interval.</p>
+<p><strong>Example (the complex symmetric operator).</strong> The operator $T$ represented in a basis by a complex symmetric matrix is reversible with respect to the conjugation $J$ given by the complex conjugation in that basis; its spectrum is conjugate-symmetric and the non-real eigenvalues occur in conjugate pairs, with the eigenvectors paired by $J$. The example is the original class of the reversible operators and the source of the conjugate-pair reflection.</p>
+<p><strong>Example (the non-reversible operator).</strong> For the directed cycle the conjugation by $U_r$ sends the transition operator to $\hat P\ne P$, so the operator is not reversible; its spectrum is not conjugate-symmetric as a whole, being the cyclic shift with the eigenvalues on the unit circle, and no parity refinement occurs. The example shows that the reversibility is a genuine restriction and not a property of every contraction.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The reversibility degenerates in four configurations. First, a reversible operator need not be self-adjoint, and its spectrum need not be real; the conjugate symmetry is the only spectral consequence in general, and the real spectrum holds exactly for the self-adjoint members, which is the extra hypothesis. Second, the reversing symmetry is an involution on the Hilbert space and need not preserve any given dense subspace; the parity decomposition is a statement about the whole space, and the block decomposition requires the reducing hypothesis $TJ=JT$, which is the self-adjoint case. Third, an anti-unitary reversing symmetry gives the conjugate-pair reflection but no parity decomposition in the ordinary sense, since a conjugation has no eigenvalues; treating the two cases alike is the standard error. Fourth, the reversibility of an operator and the reversibility of a process are different statements: the process is reversible when the reversing symmetry fixes its transition operator, while an operator can be reversible with respect to a symmetry that is not the reversal of any measure-preserving involution; the identification is a theorem, not a definition.</p>
+<h2 id="summary">Summary</h2>
+<p>A reversing symmetry is an involution $J$ of the Hilbert space, unitary or anti-unitary, and an operator is reversible with respect to it when $T^*=JTJ$; the unitary case gives the parity decomposition $\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$ and the projections $\frac12(I\pm J)$, the anti-unitary case gives the complex symmetric operators, and in both cases the spectrum of a reversible operator is conjugate-symmetric, $\operatorname{spec}(T)=\overline{\operatorname{spec}(T)}$. A self-adjoint operator is reversible exactly when it commutes with $J$, and then it is block-diagonal in the parity decomposition, its spectrum is the union of the spectra of the two blocks, and every eigenvector has a definite parity; this is the refinement of the spectrum by the reversing symmetry. For a stationary process the conjugation by the reversal $U_r$ sends the transition operator to the reversed one, $U_rPU_r=\hat P$, and the process is reversible exactly when $P$ is self-adjoint and commutes with $U_r$, in which case the spectrum of the chain refines into the even and the odd modes. The adjoint is <em>The Adjoint of the Markov Operator</em>, earlier in this category, the reversal in the operator algebra is <em>The Involution on the Operator Algebra of a Process</em>, earlier in this category, and the indefinite-form theory of the $J$-self-adjoint operators is <em>J-Self-Adjoint and J-Unitary Operators</em>, written.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J$, $J^2=I$</td>
+<td>the reversing symmetry, unitary or anti-unitary</td>
+</tr>
+<tr>
+<td>$\mathcal{H}=\mathcal{H}_+\oplus\mathcal{H}_-$</td>
+<td>the parity decomposition</td>
+</tr>
+<tr>
+<td>$P_\pm=\frac12(I\pm J)$</td>
+<td>the parity projections</td>
+</tr>
+<tr>
+<td>$T^*=JTJ$</td>
+<td>reversibility</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}(T)=\overline{\operatorname{spec}(T)}$</td>
+<td>the conjugate-symmetric spectrum</td>
+</tr>
+<tr>
+<td>$TJ=JT$</td>
+<td>reversibility of a self-adjoint operator</td>
+</tr>
+<tr>
+<td>$T=T_+\oplus T_-$</td>
+<td>the block refinement</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}(T)=\operatorname{spec}(T_+)\cup\operatorname{spec}(T_-)$</td>
+<td>the refined spectrum</td>
+</tr>
+<tr>
+<td>$U_rPU_r=\hat P$</td>
+<td>the reversal of the transition operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Tsuyoshi Ando and Chi-Kwong Li, "Operator radii and unitary equivalence", in <em>Operator Theory and Its Applications</em>, Fields Institute Communications 25 (American Mathematical Society, 2000), for the reversing symmetries and the operator radii.</li>
+<li>Stephan Ramon Garcia and Mihai Putinar, "Complex symmetric operators and applications", <em>Transactions of the American Mathematical Society</em> 358 (2006), 1285–1315, for the complex symmetric operators, their spectra and their conjugations.</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the $J$-self-adjoint operators, the $J$-unitary operators and the indefinite forms.</li>
+<li>Peter Lancaster and Miron Tismenetsky, <em>The Theory of Matrices</em> (Academic Press, 2nd edition, 1985), for the reversing symmetries, the block decompositions and the spectra.</li>
+<li>Peter D. Lax, <em>Functional Analysis</em> (Wiley, 2002), for the involutions, the spectral theory and the functional calculus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

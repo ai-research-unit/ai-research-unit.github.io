@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Sandwich on a Symmetry Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-sandwich-on-a-symmetry-group"><strong>The Signed Sandwich on a Symmetry Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A symmetry group that is realised inside a Clifford algebra — the pin group of a quadratic space, the reflection group of a form — is <strong>graded</strong>: its elements split into the even and the odd, and the splitting is a homomorphism to the two-element group. On a graded group the <strong>grade involution</strong> is the automorphism $\alpha(g) = \varepsilon(g)\,g$ that is the identity on the even part and multiplies the odd part by the central involution $z$ of the grading. The <strong>signed sandwich</strong> is the two-sided operator</p>
+<p>$$
+S^{\alpha}_{a,b} : G \longrightarrow G, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b,
+$$</p>
+<p>the sandwich of <em>Operators on a Symmetry Group</em> with the left entry twisted by the grade involution. It is the group-level form of the signed inner conjugation and of the signed sandwich of the Clifford algebra, and its geometric meaning is the reason it exists: the <strong>reflection</strong> of a quadratic space is realised by the signed sandwich with one parameter, $S^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1}$ for $u$ a vector, while the unsigned sandwich realises the reflection multiplied by $-1$.</p>
+<p>The article has five sections: the graded group and the grade involution; the signed sandwich and the parity sign; its composition law and its inverse; the elements it fixes and the reflection it realises; and the worked cases. The Clifford algebra and its grading, the three intrinsic involutions and the pin group are <em>Clifford Algebras</em>, <em>Clifford Algebras in Finite Dimensions</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and the signed inner conjugation there is the diagonal case of the present operator; the general two-sided family is <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, and nothing of that is re-derived. The unsigned sandwich and the left and right multiplications are <em>Operators on a Symmetry Group</em>, the previous article of this group. The grade involution $\alpha$ is the sign character of the <strong>grading</strong>, not the involution of the group <code>- * Theory</code> of this category: the two are different structures, the first is a parity and the second an involutive automorphism, and conflating them is the mistake this sentence is written to prevent. No adjoint is taken here; the adjoint of the signed sandwich is the group <code>- * Operator Theory</code>.</p>
+<p>Throughout, $G$ is a graded group with central involution $z$ and grading homomorphism $\varepsilon : G \to \{e, z\}$, so that $G = G_0 \sqcup G_1$ with $G_0 = \ker\varepsilon$ the <strong>even part</strong> and $G_1$ the odd part; the grade involution is $\alpha(g) = \varepsilon(g)\,g$.</p>
+<h2 id="the-graded-group-and-the-grade-involution">The Graded Group and the Grade Involution</h2>
+<h3 id="the-grading">The Grading</h3>
+<p><strong>Definition.</strong> A <strong>graded group</strong> is a group $G$ together with a homomorphism $\varepsilon : G \to \{e, z\}$ to the two-element group generated by a <strong>central</strong> involution $z \in Z(G)$, $z^2 = e$; the elements with $\varepsilon(g) = e$ are <strong>even</strong>, those with $\varepsilon(g) = z$ are <strong>odd</strong>, and the decomposition $G = G_0 \sqcup G_1$ has $G_0 = \ker\varepsilon$ a normal subgroup of index at most two and $G_1$ the other coset when $\varepsilon$ is surjective. The element $z$ is the <strong>sign element</strong> of the grading.</p>
+<p><strong>Proposition.</strong> The even part $G_0$ is a subgroup, the odd part $G_1$ is a coset, the product of two even or two odd elements is even and the product of an even and an odd element is odd:
+$$
+G_0\,G_0 \subseteq G_0, \qquad G_1\,G_1 \subseteq G_0, \qquad G_0\,G_1 \subseteq G_1, \qquad G_1\,G_0 \subseteq G_1 .
+$$
+The sign element $z$ is even, $z \in G_0$.</p>
+<p><strong>Proof.</strong> The containments are the multiplicativity of the homomorphism and its values; $z^{2}=e$ makes $\varepsilon(z)=e$ because the only element of $\{e,z\}$ of order two is $e$ when $\varepsilon$ is a homomorphism into the two-element group.</p>
+<p><strong>Example (the Clifford realisation).</strong> Let $V$ be a quadratic space over a field of characteristic not $2$ and let $G \leq \Gamma(V,q)$ be a subgroup of the Clifford group, together with the central element $-1$ of the algebra. The grading $\varepsilon(g) = +1$ on the even part and $-1$ on the odd part is a homomorphism, the sign element is $z = -1$, and the grade involution $\alpha(g) = \varepsilon(g) g$ is the restriction to $G$ of the grade involution of the Clifford algebra. This is the case the geometry uses; the abstract definition above is the same structure read without the algebra.</p>
+<h3 id="the-grade-involution">The Grade Involution</h3>
+<p><strong>Definition.</strong> The <strong>grade involution</strong> of the graded group $G$ is the map</p>
+<p>$$
+\alpha : G \longrightarrow G, \qquad \alpha(g) = \varepsilon(g)\,g .
+$$</p>
+<p>It is the identity on $G_0$ and the multiplication by $z$ on $G_1$.</p>
+<p><strong>Proposition.</strong> The grade involution is an automorphism of $G$ of order two,
+$$
+\alpha(gh) = \alpha(g)\alpha(h), \qquad \alpha^2 = \mathrm{id}, \qquad \alpha(e) = e, \qquad \alpha(g^{-1}) = \alpha(g)^{-1},
+$$
+and it commutes with every automorphism of $G$ that preserves the grading.</p>
+<p><strong>Proof.</strong> For multiplicativity, $\alpha(gh) = \varepsilon(gh)gh = \varepsilon(g)\varepsilon(h)gh$ and $\alpha(g)\alpha(h) = \varepsilon(g)g\,\varepsilon(h)h = \varepsilon(g)\varepsilon(h)\,gh$ because $\varepsilon(h) \in \{e,z\}$ is central. Then $\alpha^2(g) = \alpha(\varepsilon(g)g) = \varepsilon(\varepsilon(g)g)\,\varepsilon(g)g = \varepsilon(g)^2 g = g$, using $\varepsilon|_{G_0} = e$ and $\varepsilon(z)=e$ from the previous proposition. The inverse rule is the general property of a homomorphism on inverses.</p>
+<p><strong>Remark.</strong> The grade involution is not the involution of the group <code>- * Theory</code> of this category. The <code>- * Theory</code> involution is an involutive <strong>automorphism</strong> $\sigma$ of $G$ whose fixed subgroup defines a symmetric space; the grade involution is determined by the grading and is trivial precisely on the even part. A group can carry both, and in the Clifford case it does: the Cartan involution of the spin group and the grade involution of the algebra are different maps, and only their product is the Hermitian conjugation of the algebra.</p>
+<h2 id="the-signed-sandwich-and-the-parity-sign">The Signed Sandwich and the Parity Sign</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>signed sandwich</strong> by the pair $(a, b)$ is the two-sided operator</p>
+<p>$$
+S^{\alpha}_{a,b} : G \longrightarrow G, \qquad S^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b ,
+$$</p>
+<p>and it is the <strong>unsigned sandwich</strong> $S_{a,b}(x) = axb$ of <em>Operators on a Symmetry Group</em> with the left entry replaced by its image under the grade involution. The <strong>signed inner conjugation</strong> is the diagonal case $b = a^{-1}$, written $\mathrm{Ad}^{\alpha}_a(x) = a\,\alpha(x)\,a^{-1}$.</p>
+<h3 id="the-parity-sign">The Parity Sign</h3>
+<p><strong>Proposition (the parity sign).</strong> For every $x \in G$ the signed and the unsigned sandwich are related by the grading,</p>
+<p>$$
+S^{\alpha}_{a,b}(x) = \varepsilon(x)\, S_{a,b}(x),
+$$</p>
+<p>so that on the even part they agree and on the odd part they differ by the sign element $z$:</p>
+<p>$$
+S^{\alpha}_{a,b}(x) = S_{a,b}(x) \ \ (x \in G_0), \qquad S^{\alpha}_{a,b}(x) = z\,S_{a,b}(x) \ \ (x \in G_1).
+$$</p>
+<p><strong>Proof.</strong> By the definition of the grade involution, $\alpha(x) = \varepsilon(x)x$ with $\varepsilon(x)$ central, so $S^{\alpha}_{a,b}(x) = a\,\varepsilon(x)x\,b = \varepsilon(x)\,axb = \varepsilon(x)S_{a,b}(x)$; the two cases are $\varepsilon(x) = e$ and $\varepsilon(x) = z$.</p>
+<p><strong>Corollary.</strong> The signed sandwich agrees with the unsigned one exactly on the even part, and the defect is the constant sign $z$ on the odd part. Consequently the signed and the unsigned sandwich have the same value at the unit, $S^{\alpha}_{a,b}(e) = ab = S_{a,b}(e)$, and differ at every odd element.</p>
+<p><strong>Remark.</strong> This is the group-level shadow of the parity sign $\alpha(x) = \varepsilon_x x$ of the Clifford algebra: the sign is central, so it does not disturb the algebra structure, and it is what makes the odd elements behave against the even ones in every operator built from them.</p>
+<h2 id="the-composition-law-and-the-inverse">The Composition Law and the Inverse</h2>
+<p><strong>Proposition (composition).</strong> The signed sandwiches compose by</p>
+<p>$$
+S^{\alpha}_{a,b} \circ S^{\alpha}_{c,d} = S^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b},
+$$</p>
+<p>and the identity is $S^{\alpha}_{e,e} = \mathrm{id}$; the inverse is</p>
+<p>$$
+\bigl(S^{\alpha}_{a,b}\bigr)^{-1} = S^{\alpha}_{\alpha(a)^{-1},\,\alpha(b)^{-1}} .
+$$</p>
+<p>Hence the signed sandwiches form a subgroup of the bijections of $G$, isomorphic to the semidirect product $G \rtimes (G \times G^{\mathrm{op}})$ in which the first factor acts on the second by $\alpha$; in particular every signed sandwich is a bijection.</p>
+<p><strong>Proof.</strong> For the composition, $S^{\alpha}_{a,b}\bigl(S^{\alpha}_{c,d}(x)\bigr) = a\,\alpha(c\alpha(x)d)\,b = a\,\alpha(c)\,\alpha^2(x)\,\alpha(d)\,b = a\alpha(c)\,x\,\alpha(d)b$, since $\alpha$ is an automorphism. For the inverse, composing $S^{\alpha}_{a,b}$ with $S^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ gives $S^{\alpha}_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = S^{\alpha}_{a a^{-1},\, b^{-1}b} = S^{\alpha}_{e,e}$ using $\alpha^2 = \mathrm{id}$.</p>
+<p><strong>Remark (the even subgroup).</strong> On the even part $G_0$ the signed and the unsigned sandwiches coincide, so the restriction of the layer to $G_0$ is the ordinary sandwich layer; the difference lives entirely in the odd coset. This is the group form of the fact that the signed inner conjugation is an algebra automorphism on $\mathrm{Cl}^0$ and only a twisted one on $\mathrm{Cl}^1$.</p>
+<h2 id="fixed-elements-and-the-reflection">Fixed Elements and the Reflection</h2>
+<h3 id="fixed-and-inverted-elements">Fixed and Inverted Elements</h3>
+<p><strong>Definition.</strong> The <strong>fixed elements</strong> of the signed sandwich $S^{\alpha}_{a,b}$ are those $x \in G$ with $a\alpha(x)b = x$, and the <strong>reversed elements</strong> are those with $a\alpha(x)b = x^{-1}$.</p>
+<p><strong>Proposition.</strong> For the signed inner conjugation $\mathrm{Ad}^{\alpha}_a$ the fixed elements form the set</p>
+<p>$$
+\{x : a\,\alpha(x)\,a^{-1} = x\} = \{x : \alpha(x) = a^{-1}x\,a\},
+$$</p>
+<p>which contains the fixed subgroup $G^{\langle\alpha\rangle} = G_0$ when $a$ commutes with the grading; the reversed elements satisfy $\alpha(x) = a^{-1}x^{-1}a$. When $a$ is even the signed inner conjugation is the ordinary inner conjugation and its fixed elements are the centraliser of $a$.</p>
+<p><strong>Proof.</strong> The first identity is the definition rewritten with $a^{-1}$; for even $a$ one has $\alpha(a)=a$ and $a\alpha(x)a^{-1} = axa^{-1}$, whose fixed elements are $\{x : ax = xa\}$. The reversed set is computed the same way after inverting $x$.</p>
+<h3 id="the-reflection">The Reflection</h3>
+<p><strong>Theorem (the reflection).</strong> Let $V$ be a quadratic space with polar form $B$ and let $u \in V$ with $q(u) \neq 0$. In the pin group $\mathrm{Pin}(V,q) \leq \Gamma(V,q)$ the signed inner conjugation by the vector $u$ is the reflection in $u^{\perp}$,</p>
+<p>$$
+\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v) = v - 2\,\frac{B(v,u)}{q(u)}\,u, \qquad v \in V,
+$$</p>
+<p>while the unsigned inner conjugation is its negative, $\mathrm{Ad}_u(v) = -\rho_u(v)$. The signed sandwich is therefore the two-sided operator that realises the reflections, and the unsigned one realises them only up to sign.</p>
+<p><strong>Proof.</strong> For a vector $u$ one has $\alpha(u) = -u$, so $\mathrm{Ad}^{\alpha}_u(v) = -uvu^{-1}$ and $\mathrm{Ad}_u(v) = uvu^{-1}$; the fundamental relation $uvu = 2B(u,v)u - q(u)v$ gives $uvu^{-1} = 2B(u,v)q(u)^{-1}u - v = -\rho_u(v)$, hence $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$. This is <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and is quoted here.</p>
+<p><strong>Remark.</strong> The signed sandwich generalises the reflection. A product $u_1 \cdots u_k$ of vectors acts by $\mathrm{Ad}^{\alpha}$ as the composite of the reflections $\rho_{u_1}\cdots\rho_{u_k}$, and the sandwich with two independent parameters $a, b$ realises the general composite of a reflection and a rotation in either order; the diagonal with a vector parameter is the single reflection. The presence of the sign element $z$ on the odd coset, and its absence on the even one, is exactly what makes the half-turn of a product of two vectors carry no sign.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the pin group of the Euclidean plane).</strong> Let $V = \mathbb{R}^2$ with the Euclidean form and $u = e^{i\theta}$ a unit vector, $q(u) = 1$. The reflection $\rho_u$ fixes the line $u^{\perp}$ and negates $u$; the signed inner conjugation $\mathrm{Ad}^{\alpha}_u$ is this reflection, and the unsigned $\mathrm{Ad}_u$ is its negative, the half-turn composed with it. For the product $u v$ of two unit vectors, even, the two sandwiches agree and both give the rotation through twice the angle between them.</p>
+<p><strong>Example (the dihedral group).</strong> Let $G = D_n = \langle r, s \mid r^n = s^2 = e,\ srs = r^{-1}\rangle$ with the grading $\varepsilon(r) = e$, $\varepsilon(s) = z$, so that the rotations are even and the reflections odd. Then $\alpha(r^k) = r^k$ and $\alpha(r^k s) = z r^k s$. The signed left multiplication on $D_n$ fixes every rotation and sends each reflection to the reflection times the sign element; the signed sandwich $S^{\alpha}_{s,s}(x) = s\,\alpha(x)\,s$ is the inner conjugation by $s$ on the even part and its negative on the odd part, and it acts on the rotations by $r^k \mapsto r^{-k}$.</p>
+<p><strong>Example (the volume element in odd dimension).</strong> Let $V$ be odd-dimensional over $\mathbb{R}$ with the Euclidean form and let $\omega$ be the volume element of the Clifford algebra, odd and central. In the pin group $\omega$ is a unit of norm one; the unsigned inner conjugation $\mathrm{Ad}_\omega$ is the identity, because $\omega$ is central, while the signed inner conjugation is $\mathrm{Ad}^{\alpha}_\omega = z\,\mathrm{id} = -\mathrm{id}$, because $\alpha(\omega) = -\omega$. The signed sandwich is what makes the central odd element act nontrivially, and this is the reason the pin group is built on the signed operator and not on the unsigned one.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded symmetry group carries a homomorphism $\varepsilon : G \to \{e, z\}$ to the two-element group generated by a central involution, its elements split into the even subgroup $G_0$ and the odd coset $G_1$, and the grade involution is the automorphism $\alpha(g) = \varepsilon(g)g$, equal to the identity on the even part and to multiplication by $z$ on the odd part. The signed sandwich $S^{\alpha}_{a,b}(x) = a\alpha(x)b$ is the two-sided operator with the left entry twisted by $\alpha$; it equals the unsigned sandwich on the even part and the unsigned sandwich times $z$ on the odd part, is a bijection, composes by $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),\alpha(d)b}$ and has inverse $S^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$. Its diagonal case is the signed inner conjugation $\mathrm{Ad}^{\alpha}_a(x) = a\alpha(x)a^{-1}$, which on the even part is the ordinary inner conjugation, fixes the centraliser of an even parameter, and on the pin group realises the reflection $\mathrm{Ad}^{\alpha}_u(v) = \rho_u(v)$ for a vector $u$, where the unsigned operator gives $-\rho_u$; the odd central volume element of an odd-dimensional form is invisible to the unsigned operator and acts as $-1$ for the signed one. The parity sign, the reflection formula and the kernel are the content; everything is built on the single identity $\alpha(x) = \varepsilon(x)x$.</p>
+<p>The grade involution here is the sign character of the grading, not the involution of the group <code>- * Theory</code> of this category, and no adjoint is taken; the adjoint of the signed sandwich is the group <code>- * Operator Theory</code>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G = G_0 \sqcup G_1$</td>
+<td>the graded group; even subgroup and odd coset</td>
+</tr>
+<tr>
+<td>$\varepsilon : G \to \{e,z\}$</td>
+<td>the grading homomorphism</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>the central involution (sign element) of the grading</td>
+</tr>
+<tr>
+<td>$\alpha(g) = \varepsilon(g)\,g$</td>
+<td>the grade involution; an automorphism of order two</td>
+</tr>
+<tr>
+<td>$S_{a,b}(x) = axb$</td>
+<td>the unsigned sandwich</td>
+</tr>
+<tr>
+<td>$S^{\alpha}_{a,b}(x) = a\alpha(x)b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}^{\alpha}_a$</td>
+<td>the signed inner conjugation, $a\alpha(x)a^{-1}$</td>
+</tr>
+<tr>
+<td>$\rho_u(v) = v - 2B(v,u)q(u)^{-1}u$</td>
+<td>the reflection in $u^{\perp}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}(V,q)$</td>
+<td>the pin group, in which the reflection is realised</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley, <em>The Algebraic Theory of Spinors and Clifford Algebras</em> (Springer, 1997), for the Clifford group, the grading and the grade involution.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, second edition, 2001), for the pin and spin groups, the reflection formula and the role of the sign.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the graded structure and the realisation of the orthogonal group inside the Clifford group.</li>
+<li>James E. Humphreys, <em>Reflection Groups and Coxeter Groups</em> (Cambridge University Press, 1990), for the reflection representation and the parity of reflection length, the geometric grading of a reflection group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

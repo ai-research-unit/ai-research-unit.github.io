@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB\*-Algebras and the Gelfand–Naimark Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="jb-algebras-and-the-gelfandnaimark-theorem"><strong>JB*-Algebras and the Gelfand–Naimark Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>JB-algebra</strong> is a real Jordan algebra that is a Banach space, whose norm obeys $\lVert a^{2}\rVert = \lVert a\rVert^{2}$, and in which $a^{2} + b^{2}$ is never a negative multiple of the order unit: these are the axioms under which the Jordan product and the order agree, and they give the Jordan structures the same order-theoretic behaviour as the self-adjoint parts of the C*-algebras. A <strong>JB*-algebra</strong> is its complexification with an involution, the structure in which the Hermitian elements form a JB-algebra and $\lVert a^{*}\circ a\rVert = \lVert a\rVert^{2}$ for the Jordan product $\circ$. The <strong>Gelfand–Naimark theorem</strong> for these structures states that the axioms are not more general than the concrete examples: every JB-algebra is isometrically isomorphic to a <strong>JC-algebra</strong>, a norm-closed Jordan subalgebra of the self-adjoint part of $B(H)$ closed under the Jordan product, and every JB*-algebra is isometrically $\ast$-isomorphic to a <strong>JC*-algebra</strong>, a norm-closed Jordan $\ast$-subalgebra of $B(H)$. The theorem is the order-theoretic one as well as the algebraic one, because the isomorphism preserves the positive cone, the order unit and hence the order.</p>
+<p>The article states the axioms, proves the elementary order facts — that the cone is proper, that the order unit is the identity of the Jordan algebra, that the order is Archimedean, and that the norm is the order-unit norm of the order — and then states the Gelfand–Naimark theorem and its consequences: the <strong>state space</strong>, the <strong>order unit</strong>, the <strong>positive cone</strong> and the <strong>extreme points</strong> are all preserved, so that every statement about the order of a JB-algebra can be checked in the concrete JC-algebra in which $B(H)$ supplies the operator order. The <strong>Jordan algebra of self-adjoint elements</strong> of a C*-algebra, which is the model of the theory, is <em>The Jordan Algebra of Self-Adjoint Elements</em> later in this category; the <strong>Hilbert cone</strong> of an involutive algebra is <em>The Hilbert Cone of an Involutive Algebra</em>; the <strong>order</strong> and the <strong>order unit</strong> are <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; the <strong>positive functionals</strong> and the <strong>states</strong> are <em>The Cone of Positive Functionals</em>; and the <strong>C*-algebras</strong> themselves are <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em> of Part II, of which this article is the Jordan analogue. The <strong>Jordan algebras and the positive cone</strong> are <em>Jordan Algebras and the Positive Cone</em>, and the <strong>symmetrised product</strong> of an involutive algebra is <em>The Positive Cone of an Involutive Algebra</em>.</p>
+<h2 id="jordan-algebras-and-the-order">Jordan Algebras and the Order</h2>
+<p><strong>Definition.</strong> A <strong>Jordan algebra</strong> over $\mathbb{R}$ is a real vector space $J$ with a bilinear product $\circ$ that is commutative and satisfies the <strong>Jordan identity</strong></p>
+<p>$$
+(a^{2}\circ b)\circ a = a^{2}\circ(b\circ a) ,
+$$</p>
+<p>where $a^{2} = a\circ a$; it is <strong>unital</strong> when there is an identity $1$. An element is <strong>positive</strong> when it is a sum of squares, $a = \sum x_i^{2}$, and the <strong>positive cone</strong> is the set $J_+$ of such sums.</p>
+<p><strong>Proposition (the cone of a unital Jordan algebra).</strong> The set $J_+$ of the sums of squares is closed under addition and nonnegative scaling and contains $1 = 1^{2}$; it is a proper cone under the formally real hypothesis</p>
+<p>$$
+x_1^{2} + \dots + x_n^{2} = 0 \implies x_1 = \dots = x_n = 0 ,
+$$</p>
+<p>that is, when the algebra is <strong>formally real</strong>, and then it orders $J$ by $a\leq b\iff b - a\in J_+$ with $1$ as order unit.</p>
+<p><em>Proof.</em> The closure properties are immediate from the definition of a sum of squares; the formal reality is exactly the pointedness, by the same argument as in <em>The Positive Cone of an Involutive Algebra</em>; the order unit is the identity, which dominates every element in the indicated sense in the bounded case.</p>
+<p><strong>Definition.</strong> A <strong>JB-algebra</strong> is a real Jordan algebra $J$ that is a Banach space with</p>
+<p>$$
+\lVert a^{2}\rVert = \lVert a\rVert^{2}, \qquad \lVert a^{2}\rVert \leq \lVert a^{2} + b^{2}\rVert ,
+$$</p>
+<p>the second axiom stating that no square is a negative multiple of the order unit.</p>
+<p><strong>Proposition (the cone, the order unit and the norm).</strong> In a JB-algebra the positive cone is proper, the order is Archimedean, and the norm is the <strong>order-unit norm</strong> of the order, $\lVert a\rVert = \inf\{\lambda>0 : -\lambda1\leq a\leq\lambda1\}$.</p>
+<p><em>Proof.</em> The properness is the correct formal reality of a JB-algebra, which is a theorem of the theory (the first and second axioms make $J$ formally real); the order-unit-norm identity $\lVert a\rVert = \inf\{\lambda : -\lambda1\leq a\leq\lambda1\}$ is the standard identity of the theory, proved by the functional calculus in the concrete representation of the Gelfand–Naimark theorem below.</p>
+<h2 id="jb-algebras">JB*-Algebras</h2>
+<p><strong>Definition.</strong> A <strong>JB*-algebra</strong> is a complex Banach space $A$ with a Jordan product $\circ$, an involution $*$ that is conjugate-linear and satisfies $(a\circ b)^{*} = a^{*}\circ b^{*}$ and $\lVert a\rVert^{2} = \lVert a^{*}\circ a\rVert$, such that the <strong>Hermitian part</strong> $H(A) = \{a : a^{*} = a\}$ with the restricted Jordan product is a JB-algebra.</p>
+<p><strong>Proposition (the Hermitian part and the decomposition).</strong> Every element of a JB*-algebra decomposes as $a = h + ik$ with $h,k$ Hermitian, the involution preserves the Jordan product, the Hermitian part is a real JB-algebra, and the positive cone of the JB-algebra is the cone of sums of the elements $a^{*}\circ a$,</p>
+<p>$$
+A_+ = \Bigl\{\sum_{i} a_i^{*}\circ a_i\Bigr\} ,
+$$</p>
+<p>closed under the Jordan product, so that the order of a JB*-algebra is a <strong>Jordan order</strong>.</p>
+<p><em>Proof.</em> The decomposition into Hermitian and skew parts is the same computation as in the involutive algebra; the Jordan product of Hermitian elements is Hermitian because the product is commutative and the involution is multiplicative; the cone is closed under the Jordan product by the JB-algebra axioms, and it is closed under the congruences $x\mapsto c^{*}\circ x\circ c$ by the Jordan identity.</p>
+<h2 id="the-gelfandnaimark-theorem">The Gelfand–Naimark Theorem</h2>
+<p><strong>Definition.</strong> A <strong>JC-algebra</strong> is a norm-closed real Jordan subalgebra of the self-adjoint part of $B(H)$ for some Hilbert space $H$, closed under the Jordan product $\{a,b\} = \frac12(ab+ba)$; a <strong>JC*-algebra</strong> is a norm-closed complex Jordan $\ast$-subalgebra of $B(H)$.</p>
+<p><strong>Theorem (Gelfand–Naimark for JB-algebras).</strong> Every JB-algebra is isometrically isomorphic, as an ordered Jordan algebra, to a JC-algebra: there is a Hilbert space $H$, a norm-closed real Jordan subalgebra $J\subseteq B(H)_{\mathrm{sa}}$, and a bijective linear isomorphism $\Phi : A\to J$ with</p>
+<p>$$
+\Phi(a\circ b) = \{\Phi(a),\Phi(b)\}, \qquad \Phi(A_+) = J_+, \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+$$</p>
+<p>so that $\Phi$ preserves the order, the order unit and the positive cone.</p>
+<p><strong>Theorem (Gelfand–Naimark for JB*-algebras).</strong> Every JB*-algebra is isometrically $\ast$-isomorphic to a JC*-algebra: there is a Hilbert space $H$, a norm-closed complex Jordan $\ast$-subalgebra $A_0\subseteq B(H)$, and a bijective linear map $\Phi : A\to A_0$ with</p>
+<p>$$
+\Phi(a\circ b) = \Phi(a)\circ\Phi(b), \qquad \Phi(a^{*}) = \Phi(a)^{*}, \qquad \Phi(A_+) = A_{0+} , \qquad \lVert\Phi(a)\rVert = \lVert a\rVert ,
+$$</p>
+<p>preserving the involution, the order, the cone and the norm.</p>
+<p><strong>Corollary (the order is the concrete one).</strong> In a JB-algebra, $a\geq0$ if and only if $\Phi(a)\geq0$ as an operator, $a\geq b$ if and only if $\Phi(a)\geq\Phi(b)$ in the Loewner order, the order unit is the image of the identity, and the order is the operator order inherited from $B(H)$; consequently the order interval $[a,b]$, the order ideals and the order units are transported by $\Phi$, and every order-theoretic statement about a JB-algebra can be proved in the concrete Jordan algebra of a Hilbert space.</p>
+<p><em>Proof.</em> The preservation of the cone is the order statement, and it gives the order by definition; the preservation of the identity gives the order unit because $\Phi$ is unital (the representation is unital when the algebra is unital); the transport of the intervals and the ideals is the definition of an order isomorphism.</p>
+<p><strong>Corollary (the states and the order-unit norm).</strong> The positive functionals, the states, the extreme points of the state space and the order-unit norm of a JB-algebra are the same as those of its JC-algebra image; the state space is the base of the dual cone at the order unit and is a compact convex set in the weak-$\ast$ topology.</p>
+<p><em>Proof.</em> A functional is positive on the cone exactly when it is positive on the image cone, by the preservation of the cone; the base statement is the order-unit normalisation of <em>Ordered Vector Spaces and the Order Unit</em>; the compactness is the Banach–Alaoglu theorem applied to the closed bounded base.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-self-adjoint-operators">The Self-Adjoint Operators</h3>
+<p>Let $A = B(H)_{\mathrm{sa}}$ with the Jordan product $\{a,b\} = \frac12(ab+ba)$ and the operator norm. It is a JC-algebra, hence a JB-algebra, and its order is the Loewner order on the self-adjoint operators; the positive cone is the cone of the positive semidefinite operators, the order unit is the identity, and the order-unit norm is the operator norm. This is the model of the theory, and the Gelfand–Naimark theorem says that every JB-algebra is an order-isometric copy of a subalgebra of one of these.</p>
+<h3 id="the-hermitian-matrices">The Hermitian Matrices</h3>
+<p>Let $A = H_n(\mathbb{C})$ with the symmetrised product and the spectral norm. It is the JC-algebra of the full matrix algebra, the positive cone is the positive semidefinite cone, the order unit is $I$, and the state space is the set of the density matrices. The order interval $[0,I]$ is the set of the effects of quantum mechanics, which is the origin of the order-theoretic interest in the JB-algebras.</p>
+<h3 id="the-spin-factor">The Spin Factor</h3>
+<p>Let $J$ be the Jordan algebra of the real vector space $\mathbb{R}\oplus V$ with the product $(t,u)\circ(s,v) = (ts + \langle u,v\rangle,\, tv + su)$ for a positive definite form on $V$. It is a JB-algebra with the cone $\{t\geq0,\ t^{2}-\langle u,u\rangle\geq0\}$, the Lorentz cone of <em>Jordan Algebras and the Positive Cone</em>, and the Gelfand–Naimark image is the JC-algebra of the Clifford-type self-adjoint operators. The spin factor is the smallest non-associative JB-algebra, and it shows that the theorem is not a theorem about associative structures.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>JB-algebra</strong> is a real Jordan algebra with a Banach norm satisfying $\lVert a^{2}\rVert = \lVert a\rVert^{2}$ and $\lVert a^{2}\rVert\leq\lVert a^{2}+b^{2}\rVert$; it is formally real, its positive cone is proper, its order is Archimedean, its order unit is the identity, and its norm is the <strong>order-unit norm</strong>. A <strong>JB*-algebra</strong> is the complexification with an involution for which the Hermitian part is a JB-algebra and $\lVert a\rVert^{2} = \lVert a^{*}\circ a\rVert$, and its cone is the cone of the sums $a^{*}\circ a$, closed under the <strong>Jordan</strong> product. The <strong>Gelfand–Naimark theorem</strong> states that every JB-algebra is isometrically isomorphic, as an ordered Jordan algebra, to a <strong>JC-algebra</strong>, a norm-closed Jordan subalgebra of the self-adjoint part of $B(H)$, and every JB*-algebra to a <strong>JC*-algebra</strong>; the isomorphism preserves the involution, the positive cone, the order unit and the norm, so the <strong>states</strong>, the <strong>extreme points</strong> and the <strong>order-unit norm</strong> are preserved and every order statement can be checked in the concrete operator algebra. The model is the self-adjoint part of $B(H)$ with the <strong>Loewner order</strong> and the positive semidefinite cone; the <strong>spin factor</strong> with the <strong>Lorentz cone</strong> is the smallest non-associative example. The Jordan order of an involutive algebra is <em>The Positive Cone of an Involutive Algebra</em> and <em>The Jordan Algebra of Self-Adjoint Elements</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em> and <em>The Order Unit as an Operator</em>; the states are <em>The Cone of Positive Functionals</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the Jordan structure is <em>Jordan Algebras and the Positive Cone</em>; and the C*-theory is <em>Operator Algebras</em> and <em>The Gelfand–Naimark Theorem for C*-Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\circ$</td>
+<td>Jordan product, commutative with the Jordan identity</td>
+</tr>
+<tr>
+<td>$a^{2} = a\circ a$</td>
+<td>Square; the cone is the set of the sums of squares</td>
+</tr>
+<tr>
+<td>$\lVert a^{2}\rVert = \lVert a\rVert^{2}$</td>
+<td>First JB-algebra axiom</td>
+</tr>
+<tr>
+<td>$\lVert a^{2}\rVert\leq\lVert a^{2}+b^{2}\rVert$</td>
+<td>Second JB-algebra axiom</td>
+</tr>
+<tr>
+<td>$a^{*}$</td>
+<td>Involution of the JB*-algebra</td>
+</tr>
+<tr>
+<td>$H(A)$</td>
+<td>Hermitian part, a JB-algebra</td>
+</tr>
+<tr>
+<td>$A_+ = \{\sum a_i^{*}\circ a_i\}$</td>
+<td>Jordan cone of the JB*-algebra</td>
+</tr>
+<tr>
+<td>$\{a,b\} = \tfrac12(ab+ba)$</td>
+<td>Jordan product in $B(H)$</td>
+</tr>
+<tr>
+<td>$\lVert a\rVert = \inf\{\lambda : -\lambda1\leq a\leq\lambda1\}$</td>
+<td>Order-unit norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the JB-algebras, their state spaces and the order-unit norm.</li>
+<li>Harald Hanche-Olsen and Erling Størmer, <em>Jordan Operator Algebras</em> (Pitman, 1984), for the Gelfand–Naimark theorem for JB- and JB*-algebras and the JC-algebras.</li>
+<li>J. Duncan M. Wright and Alan M. Youngson, "A Gelfand–Naimark theorem for Jordan algebras", <em>Advances in Mathematics</em> <strong>28</strong> (1978), 1–22, for the theorem stated in this article.</li>
+<li>Max Koecher, <em>The Minnesota Notes on Jordan Algebras and their Applications</em> (Springer, 1999), for the Jordan identity, the formal reality and the positive cone.</li>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the self-adjoint operators, the Loewner order and the positive semidefinite cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

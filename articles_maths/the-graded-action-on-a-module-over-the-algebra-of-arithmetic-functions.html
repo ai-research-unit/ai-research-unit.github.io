@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Action on a Module over the Algebra of Arithmetic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-action-on-a-module-over-the-algebra-of-arithmetic-functions"><strong>The Graded Action on a Module over the Algebra of Arithmetic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $\mathcal{A}$ be the algebra of arithmetic functions under Dirichlet convolution, graded by the parity of $\Omega$, the number of prime factors counted with multiplicity, and let $M$ be a graded module over $\mathcal{A}$. The <strong>graded action</strong> of a homogeneous element $a$ on a homogeneous element $m$ carries the Koszul sign, $\rho_a(m)=(-1)^{|a||m|}a\cdot m$; it is the action that appears whenever a graded algebra acts on a graded object, and it is the form in which the algebra of arithmetic functions acts on the graded objects of analytic number theory. The purpose of this article is to state the action, to compute its products and its adjoints, to say exactly when it is a representation and when it is only a projective one, and to identify the point at which the commutative algebra of arithmetic functions makes the graded structure degenerate. The two principal questions are the sign in the product law and the relation between the involution on the elements and the adjoint on the operators; both answers are sharp over a commutative algebra.</p>
+<p>The conventions are those fixed for the category. The algebra $\mathcal{A}$ is $\mathbb{Z}/2$-graded by the parity of $\Omega$, $\alpha(f)=\lambda f$ is the grade involution, $\sigma(f)=\overline{f}$ is the coefficient involution, and $\delta=\sigma\alpha$. The form of the category on the regular module is the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$. The signed one-sided and two-sided operators on the regular module are treated in <em>The Signed Left Multiplication on the Algebra of Arithmetic Functions</em> and <em>The Signed Sandwich on the Algebra of Arithmetic Functions</em>, this category. Nothing here reads a distance as an object.</p>
+<h2 id="the-graded-action">The Graded Action</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over $\mathcal{A}$ is an $\mathcal{A}$-module $M$ with a decomposition $M=M_{\bar0}\oplus M_{\bar1}$ such that $\mathcal{A}_{\bar i}\cdot M_{\bar j}\subseteq M_{\overline{i+j}}$. For homogeneous $a\in\mathcal{A}$ and $m\in M$ of degrees $|a|,|m|\in\mathbb{Z}/2$, the <strong>graded action</strong> is
+$$
+\rho_a(m)=(-1)^{|a||m|}\,a\cdot m,
+$$
+extended by linearity.</p>
+<p><strong>Proposition (the regular and the Hilbert modules).</strong> The algebra $\mathcal{A}$ is a graded module over itself with $M=\mathcal{A}$ and the product of $\mathcal{A}$, and $\rho_a$ is then the signed left multiplication $T_a$ for odd $a$ and the ordinary left multiplication $L_a$ for even $a$. The space $\mathcal{H}=\ell^2$ is a graded module for the same grading, and $\rho_a$ is bounded on $\mathcal{H}$ for $a\in\ell^1$.</p>
+<p><strong>Proof.</strong> Both statements are the definition; the degree of $\alpha(f)$ is $|f|+1$, since $\lambda$ is odd at each prime, and this is what makes the graded action differ from the ordinary one exactly on the odd elements.</p>
+<h3 id="the-product-law">The product law</h3>
+<p><strong>Theorem.</strong> For homogeneous $a,b$ and every $m$,
+$$
+\rho_a\rho_b(m)=(-1)^{|a||b|}\rho_{a*b}(m).
+$$
+Hence the graded action is a representation of $\mathcal{A}$ if and only if $(-1)^{|a||b|}=1$ for all pairs arising from the module; in general it is a projective representation with cocycle $(-1)^{|a||b|}\in\{\pm1\}$. If $\mathcal{A}$ carried the Koszul sign in its own product, the two signs would cancel and the action would be a representation; the commutative algebra does not, and this is the source of the discrepancy.</p>
+<p><strong>Proof.</strong> Compute
+$$
+\rho_a\rho_b(m)=(-1)^{|a|(|b|+|m|)+|b||m|}(ab)\cdot m,\qquad \rho_{a*b}(m)=(-1)^{(|a|+|b|)|m|}(ab)\cdot m,
+$$
+and divide; the exponent difference is $|a|(|b|+|m|)+|b||m|-(|a|+|b|)|m|=|a||b|$, which is the displayed sign. The representation case is the vanishing of the sign, and the cancellation remark is the definition of the Koszul sign in the product.</p>
+<h3 id="the-parity-operator">The parity operator</h3>
+<p><strong>Theorem.</strong> The action of $\varepsilon$ is the <strong>parity operator</strong>
+$$
+P=\rho_\varepsilon,\qquad P(m)=(-1)^{|m|}m .
+$$
+It is an involutive unitary operator on the graded module, it satisfies $P\rho_a=(-1)^{|a|}\rho_aP$, and on the regular module it is the grade involution, $P=\alpha$.</p>
+<p><strong>Proof.</strong> $\rho_\varepsilon(m)=(-1)^{|m|}\varepsilon\cdot m=(-1)^{|m|}m$. The commutation with $\rho_a$ is the sign computation $P\rho_a=(-1)^{|a|}\rho_aP$, which holds by the product law. The remaining statements are the properties of $\alpha$ on the regular module.</p>
+<h2 id="the-adjoint-of-the-graded-action">The Adjoint of the Graded Action</h2>
+<h3 id="the-formula">The formula</h3>
+<p><strong>Theorem.</strong> On the regular module with the coefficient form, the adjoint of the graded action is
+$$
+\rho_a^*=\alpha^{|a|}\,\Theta_a ,
+$$
+that is $\rho_a^*=\Theta_a$ for even $a$ and $\rho_a^*=\alpha\Theta_a$ for odd $a$, where $\Theta_c$ is the transposed multiplication, $(\Theta_cg)(k)=\sum_m\overline{c(m)}g(mk)$.</p>
+<p><strong>Proof.</strong> For even $a$, $\rho_a=L_a$ and $L_a^*=\Theta_a$. For odd $a$, $\rho_a=L_a\alpha$ and $(L_a\alpha)^*=\alpha\Theta_a$, by the computation for the signed left multiplication. The display collects the two cases.</p>
+<p><strong>Corollary (the two structures).</strong> The involution on the elements, $a\mapsto a^*$, and the adjoint on the operators, $\rho_a\mapsto\rho_a^*$, do not coincide: in general $\rho_a^*$ is neither $\rho_{a^*}$ nor $\rho_{\alpha(a)}$. The equality $\rho_a^*=\rho_{a^*}$ holds for all $a$ only for the augmentation form, of rank one, and it fails for the coefficient form used here; this is the same obstruction as in <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>. In the graded setting the two structures are independent, and the article proves their relation rather than assuming it.</p>
+<h3 id="the-graded-commutator">The graded commutator</h3>
+<p><strong>Definition.</strong> The <strong>graded commutator</strong> of homogeneous elements is $[a,b]_{gr}=a*b-(-1)^{|a||b|}b*a$.</p>
+<p><strong>Theorem.</strong> In the commutative algebra $\mathcal{A}$,
+$$
+[a,b]_{gr}=a*b\bigl(1-(-1)^{|a||b|}\bigr)=
+\begin{cases}0 & \text{if at least one of } a,b \text{ is even},\\ 2\,a*b & \text{if both are odd}.\end{cases}
+$$
+Hence $\mathcal{A}$ is graded-commutative exactly when its odd part consists of zero divisors of the even part, which is not the case; in particular the odd part carries a nonzero bracket and the graded algebra is not super-commutative.</p>
+<p><strong>Proof.</strong> Commutativity gives $b*a=a*b$, so the graded commutator is $a*b(1-(-1)^{|a||b|})$, and the factor is $0$ unless both degrees are odd, in which case it is $2$. Because $\mathcal{A}$ is an integral domain, $2ab\ne0$ for nonzero odd $a,b$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the regular module).</strong> $M=\mathcal{A}$, and the graded action of $\delta_p$ (odd, since $\Omega(p)=1$) is $\rho_{\delta_p}=L_{\delta_p}\alpha=T_{\delta_p}$, the signed left multiplication, an isometry of $\mathcal{H}$ with cokernel the functions vanishing on the multiples of $p$.</p>
+<p><strong>Example (a module of rank one).</strong> If $M=\mathcal{A}\cdot m$ with $m$ even, then the graded action of $a$ is $(-1)^{|a||m|}=1$ times $a\cdot m$, so the action is the ordinary one and the grading does not act; this is the degenerate module in which the Koszul sign is trivial.</p>
+<p><strong>Example (the module of Dirichlet series).</strong> The space of formal Dirichlet series with coefficients in $\mathbb{C}$ is a graded module over $\mathcal{A}$ by $M_h$, and the graded action of an odd $h$ is the signed multiplication $M_h\circ\alpha$; its adjoint is $\alpha\Theta_h$, so the adjoint of the graded multiplication by an odd element is not the graded multiplication by $h^*$.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The graded action over the commutative algebra has four degenerate boundaries. First, the product law carries the nonzero cocycle $(-1)^{|a||b|}$ on the pairs of odd elements, so the action is not a representation but only a projective one; the cocycle is not a coboundary in general, and it cannot be removed by rescaling the action. Second, the graded commutator is twice the product on the odd part, so the algebra is not graded-commutative although it is commutative; the "graded" structure changes the answer by the factor $2$ and nothing else. Third, the module may fail to be graded and the grading of $M$ may be incompatible with the grading of $\mathcal{A}$; in that case the Koszul sign is not defined and the graded action reduces to the ordinary one. Fourth, the adjoint of the graded action is $\alpha^{|a|}\Theta_a$, which is a graded action only for the degenerate modules on which the grading is trivial; on the regular module the graded action of an odd element is not adjointable to a graded action of an element of $\mathcal{A}$. These four are the boundary cases of the graded family over a commutative algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>For a graded module $M$ over the algebra of arithmetic functions, graded by the parity of $\Omega$, the graded action is $\rho_a(m)=(-1)^{|a||m|}a\cdot m$; it satisfies the projective product law $\rho_a\rho_b=(-1)^{|a||b|}\rho_{a*b}$, so it is a representation exactly when the Koszul sign is trivial on the relevant pairs, and it is the ordinary action on the even part. The action of $\varepsilon$ is the parity operator $P$, an involutive unitary operator commuting with $\rho_a$ up to the sign $(-1)^{|a|}$, equal to the grade involution on the regular module. The adjoint on the regular module with the coefficient form is $\rho_a^*=\alpha^{|a|}\Theta_a$, which is not the graded action of $a^*$; the involution on the elements and the adjoint on the operators are two independent structures. The graded commutator is $[a,b]_{gr}=2ab$ on the odd part and $0$ otherwise, so the commutative algebra is not graded-commutative, and the degenerate modules are those whose grading is trivial.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M=M_{\bar0}\oplus M_{\bar1}$</td>
+<td>Graded module</td>
+</tr>
+<tr>
+<td>$\rho_a(m)=(-1)^{|a||m|}a\cdot m$</td>
+<td>Graded action</td>
+</tr>
+<tr>
+<td>$\rho_a\rho_b=(-1)^{|a||b|}\rho_{a*b}$</td>
+<td>Projective product law</td>
+</tr>
+<tr>
+<td>$P=\rho_\varepsilon$, $P(m)=(-1)^{|m|}m$</td>
+<td>Parity operator</td>
+</tr>
+<tr>
+<td>$\rho_a^*=\alpha^{|a|}\Theta_a$</td>
+<td>Adjoint of the graded action</td>
+</tr>
+<tr>
+<td>$[a,b]_{gr}=a*b-(-1)^{|a||b|}b*a$</td>
+<td>Graded commutator</td>
+</tr>
+<tr>
+<td>$[a,b]_{gr}=2ab$ on the odd part</td>
+<td>The graded commutator of $\mathcal{A}$</td>
+</tr>
+<tr>
+<td>$\alpha$, $\sigma$, $\delta=\sigma\alpha$</td>
+<td>The involutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pierre Deligne and John Morgan, <em>Notes on Supersymmetry</em> (American Mathematical Society, 1999), for the Koszul sign and the graded modules.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the graded actions and the commutators.</li>
+<li>Charles Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the projective representations and the cocycles.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the parity operators and the graded Hilbert spaces.</li>
+<li>Tsit Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the graded commutativity and the superalgebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Converse Relation as an Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-converse-relation-as-an-adjoint"><strong>The Converse Relation as an Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The converse $R^{-1}$ of a relation is the adjoint of $R$ in two distinct senses, and this article
+separates them and proves that they agree. In the <strong>residuation</strong> of composition, the operator $S
+\mapsto R ; S$ has the right adjoint $T \mapsto R \backslash T$, and the right adjoint is computed by
+the converse, $R \backslash T = \overline{R^{-1} ; \overline{T}}$; the same holds on the other side,
+$T / R = \overline{\overline{T} ; R^{-1}}$. In the <strong>operator layer</strong> of the preceding article, the
+conjugation by the converse sends the left-composition with $R$ to the right-composition with
+$R^{-1}$, and it exchanges the left and the right adjoints of the residuation; so the converse is the
+adjoint of $R$ both for the order and for the involution on the operators. The article proves these
+compatibilities, so that "adjoint" means the same thing in <em>The Converse as an Adjoint</em>, in <em>Relation
+Algebras and the Converse</em> and in <em>Involutions of the Operator Layer</em>.</p>
+<p>The article presupposes <em>Relation Algebras and the Converse</em>, for the residuals, and <em>The Converse as
+an Adjoint</em> and <em>Involutions of the Operator Layer</em>, which precede it in this Part. It names no form,
+no norm and no topology; the Hilbert-space adjoint is Part II and is not used.</p>
+<h2 id="the-residuation-by-the-converse">The Residuation by the Converse</h2>
+<p><strong>Definition.</strong> For relations $R \subseteq X \times Y$, $S \subseteq Y \times Z$ and $T \subseteq X
+\times Z$, the two composition operators are</p>
+<p>$$
+L_R(S) = R ; S, \qquad R_R(S) = S ; R ,
+$$</p>
+<p>the <strong>left</strong> and the <strong>right</strong> composition with $R$, where $R_R$ is defined for relations $S \subseteq
+W \times X$.</p>
+<p><strong>Theorem.</strong> The right adjoints of the two composition operators are computed by the converse:</p>
+<p>$$
+R \backslash T = \overline{R^{-1} ; \overline{T}}, \qquad T / R = \overline{\overline{T} ; R^{-1}} ,
+$$</p>
+<p>and the adjunctions are</p>
+<p>$$
+L_R \dashv (T \mapsto R \backslash T), \qquad (S \mapsto S ; R) \dashv (T \mapsto T / R) .
+$$</p>
+<p>The unit and counit are $S \subseteq R \backslash (R;S)$, $R ; (R \backslash T) \subseteq T$ on the
+left, and dually on the right.</p>
+<p><strong>Proof.</strong> The residual identities are proved in <em>Relation Algebras and the Converse</em>; the two
+formulas are the same computation as for $R \backslash T$ there, with the converse read on the other
+side for $T / R$. The unit and counit are the inclusions of the adjunction.</p>
+<p><strong>Corollary.</strong> The converse is the adjoint to composition in the following sense: the operator $L_R$
+has, as its right adjoint, the operator $T \mapsto \overline{R^{-1};\overline{T}}$, which is built from
+the composition with $R^{-1}$ and the complement, and the operator $R_{R}$ has the right adjoint built
+from $R^{-1}$ on the other side. Hence "compose with $R$" is left adjoint to "compose with $R^{-1}$ and
+complement".</p>
+<p><strong>Proof.</strong> The statement is the theorem together with the definition of the residuals; the two
+composites with $R^{-1}$ appear in the two displayed formulas.</p>
+<h2 id="compatibility-with-the-operator-layer-involution">Compatibility with the Operator-Layer Involution</h2>
+<p>Let $\varphi$ be the involution of the operator layer of <em>Involutions of the Operator Layer</em>, acting on
+operators $F$ on relations by $\varphi(F)(R) = (F(R^{-1}))^{-1}$, that is, conjugation by the converse.</p>
+<p><strong>Theorem.</strong> The involution exchanges the two composition operators and substitutes the converse:</p>
+<p>$$
+\varphi(L_R) = R_{R^{-1}}, \qquad \varphi(R_R) = L_{R^{-1}} .
+$$</p>
+<p><strong>Proof.</strong> For the first, $\varphi(L_R)(S) = (L_R(S^{-1}))^{-1} = (R ; S^{-1})^{-1} = (S^{-1})^{-1} ;
+R^{-1} = S ; R^{-1} = R_{R^{-1}}(S)$, using the law of the converse for a composite. The second is the
+same computation with the roles of the sides exchanged.</p>
+<p><strong>Corollary.</strong> The involution is an automorphism of the composition of operators,
+$\varphi(F \circ G) = \varphi(F) \circ \varphi(G)$, and it is an anti-automorphism of the composition of
+relations in the following sense: on the operators, it is a homomorphism; on the relations, the operator
+it is applied to has its converse taken. It maps the fixed operators of the operator layer, hence the
+operators that commute with the converse, to themselves.</p>
+<p><strong>Proof.</strong> The homomorphism property is the general property of the conjugation of <em>Involutions of the
+Operator Layer</em>; the last statement is the definition of the fixed part there.</p>
+<p><strong>Theorem (the two adjointnesses agree).</strong> The involution $\varphi$ exchanges the two members of the
+residuation: if $L_R$ has the right adjoint $K_R : T \mapsto R \backslash T$, then $\varphi(K_R)$ is the
+<strong>left</strong> adjoint of $\varphi(L_R) = R_{R^{-1}}$, and explicitly</p>
+<p>$$
+\varphi(K_R)(T) = \overline{\overline{T} ; R} = T / R^{-1} .
+$$</p>
+<p><strong>Proof.</strong> The adjunction-reversal of <em>Involutions of the Operator Layer</em> applied to $L_R \dashv K_R$
+gives $K_R^{\perp} \dashv L_R^{\perp}$, that is, $\varphi(K_R) \dashv \varphi(L_R)$. For the explicit
+formula, $K_R(T) = \overline{R^{-1};\overline{T}}$, so $\varphi(K_R)(T) = (K_R(T^{-1}))^{-1} =
+\overline{\overline{(T^{-1})} ; R} = \overline{\overline{T};R}$, using $(\overline{R^{-1};\overline{T^{-1}}})^{-1}
+= \overline{(\overline{T^{-1}})^{-1}; R}$; and $\overline{\overline{T};R} = T / R^{-1}$ by the definition
+of the left residual, since $(R^{-1})^{-1} = R$.</p>
+<p><strong>Example.</strong> Let $R$ be a function, so that $R^{-1}$ is its inverse relation. Then $R \backslash T =
+R^{-1} ; T$ (no complement is needed, because $R$ is total and single-valued), and the two operators
+$L_R$ and $L_{R^{-1}}$ are mutually inverse on the level of the induced maps; the involution
+$\varphi$ fixes the pair. For a general relation the complement remains and the adjoint is the residual
+of the theorem.</p>
+<h2 id="summary">Summary</h2>
+<p>The converse is the adjoint of a relation for composition: the operator "compose with $R$" is
+residuated with right adjoint the residual $R \backslash T = \overline{R^{-1} ; \overline{T}}$, and the
+same holds on the other side with $T / R = \overline{\overline{T} ; R^{-1}}$; the converse is exactly
+what computes the adjoint, and the unit and counit are the two inclusions of the residuation.</p>
+<p>On the operator layer the conjugation by the converse, $\varphi(F)(R) = (F(R^{-1}))^{-1}$, is an
+involution and an automorphism of the composition of operators that sends the left-composition with $R$
+to the right-composition with $R^{-1}$ and conversely, and it reverses the residuation by exchanging
+the left and the right adjoints. So the converse is the adjoint of $R$ for the order and, at the same
+time, the operation that makes the operator-layer involution act on composition.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_R(S) = R;S$, $R_R(S) = S;R$</td>
+<td>Left and right composition with $R$</td>
+</tr>
+<tr>
+<td>$R \backslash T = \overline{R^{-1};\overline{T}}$</td>
+<td>Right residual, computed by the converse</td>
+</tr>
+<tr>
+<td>$T / R = \overline{\overline{T};R^{-1}}$</td>
+<td>Left residual</td>
+</tr>
+<tr>
+<td>$\varphi(F)(R) = (F(R^{-1}))^{-1}$</td>
+<td>The operator-layer involution</td>
+</tr>
+<tr>
+<td>$\varphi(L_R) = R_{R^{-1}}$, $\varphi(R_R) = L_{R^{-1}}$</td>
+<td>The exchange of the composition operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Chris Brink, Wolfram Kahl and Gunther Schmidt, <em>Relational Methods in Computer Science</em> (Springer, 1997), for the residual calculus and the adjointness of the converse.</li>
+<li>Gunther Schmidt and Thomas Ströhlein, <em>Relations and Graphs</em> (Springer, 1993), for the algebra of relations, residuals and the converse.</li>
+<li>Michael Barr and Charles Wells, <em>Category Theory for Computing Science</em>, 3rd ed. (CRM, 1999), for adjunctions, units and counits.</li>
+<li>Richard Bird and Oege de Moor, <em>Algebra of Programming</em> (Prentice Hall, 1997), for the algebra of relations and the residual as an adjoint.</li>
+<li>Francis Borceux, <em>Handbook of Categorical Algebra 1</em> (Cambridge University Press, 1994), for adjunctions, units and counits and their duality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hilbert Adjoint on a Hilbert Module — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hilbert-adjoint-on-a-hilbert-module"><strong>The Hilbert Adjoint on a Hilbert Module</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hilbert module over a Hilbert algebra is a module carrying a form for which the action is self-adjoint, $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$; the axiom says that the adjoint of the action of $x$ is the action of the involution, $\rho(x)^{*} = \rho(x^{\dagger})$. This article develops the adjoint operation on the module: the Hilbert adjoint of an operator on the module, the involution that the adjoint induces on the elements of the module, and the self-adjoint operators and self-adjoint elements of the module.</p>
+<p>The module adjoint has the same shape as the algebra adjoint and one extra layer. The shape is that the adjoint of an operator is again an operator on the module, with $T^{**} = T$, $(TS)^{*} = S^{*}T^{*}$ and the positivity of $T^{*}T$; the extra layer is that the module carries an involution of its own, induced from the algebra by a cyclic vector, and the induced involution is the module's Tomita operator. With a cyclic and separating vector $\xi$ the map $S_M(x\cdot\xi) = x^{\dagger}\cdot\xi$ is an antilinear involution of the module; its polar decomposition produces a modular operator and a modular conjugation of the module, and the module adjoint of an operator intertwining the action is the same operation as the algebra adjoint transported by the module's modular data.</p>
+<p>This article fixes the adjoint of a module operator and its calculus, the induced involution and the module Tomita operator, and the self-adjoint operators and elements of the module, with the relation to the algebra through the action.</p>
+<p>The Hilbert algebra, its involution and its module forms are <em>Hilbert Algebras</em> and <em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em>; the adjoint of the action is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>; the adjoints of the multiplications are <em>The Adjoint of the Left and the Right Multiplication</em> and <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em>; the positivity is <em>Self-Adjoint Elements and the Positive Cone</em>; the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>. Those are cited. The algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$, the module is $M$ with form $(\cdot,\cdot)$, and the action is written $x\cdot s$ for $x\in A$, $s\in M$.</p>
+<h2 id="the-adjoint-of-a-module-operator">The Adjoint of a Module Operator</h2>
+<p><strong>Definition.</strong> An operator on the module is a linear map $T$ with dense domain in $M$; its <strong>Hilbert adjoint</strong> $T^{*}$ is defined by</p>
+<p>$$
+(T s,t) = (s,T^{*}t) \qquad \text{for all } s\in\mathrm{dom}\,T,\ t\in\mathrm{dom}\,T^{*} .
+$$</p>
+<p><strong>Proposition (the calculus).</strong> For densely defined closed operators the adjoint satisfies $T^{**} = T$; for bounded operators $S,T$ it satisfies $(S+T)^{*} = S^{*}+T^{*}$, $(\alpha T)^{*} = \bar\alpha T^{*}$ and $(ST)^{*} = T^{*}S^{*}$; and $T^{*}T$ is positive, $(T^{*}Ts,s) = \|Ts\|^{2}\geq0$.</p>
+<p><strong>Proof.</strong> The defining identity with the two sides exchanged gives $T^{**}\supseteq T$ and equality for closed $T$; the sum and scalar rules are immediate from the definition; the product rule is the defining identity applied twice; the positivity is the definition of the adjoint with $t = s$.</p>
+<p><strong>Theorem (the adjoint of the action).</strong> For every $x\in A$,</p>
+<p>$$
+\rho(x)^{*} = \rho(x^{\dagger}) ,
+$$</p>
+<p>so the action of $A$ on $M$ is a $\ast$-representation with the involution of the algebra and the Hilbert adjoint of the module.</p>
+<p><strong>Proof.</strong> The module axiom is exactly $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$; comparing with the definition of the adjoint gives $\rho(x)^{*} = \rho(x^{\dagger})$.</p>
+<p><strong>Proposition (the adjoint of a composite of actions).</strong> For $x, y\in A$ and bounded module operators $S,T$,</p>
+<p>$$
+\bigl(\rho(x)S\,\rho(y)\bigr)^{*} = \rho(y^{\dagger})S^{*}\rho(x^{\dagger}) ,
+$$</p>
+<p>so adjacency reverses the order and turns each action into the action of the involution.</p>
+<p><strong>Proof.</strong> Apply the calculus of the first proposition and the theorem.</p>
+<p><strong>Remark (the two adjoints on the module).</strong> The module carries two adjoint operations that must not be confused: the <strong>operator adjoint</strong> $T\mapsto T^{*}$, acting on the operators of the module, and the <strong>element involution</strong> $s\mapsto s^{\dagger}$, defined below on the elements of the module. The first is the Hilbert adjoint for the module form; the second is induced by the algebra involution through a cyclic vector. They agree on the action operators, by the theorem, and they differ on general elements of the module, as the next section shows.</p>
+<h2 id="the-induced-involution">The Induced Involution</h2>
+<p><strong>Definition.</strong> Let $\xi\in M$ be cyclic and separating for the action: the set $A\cdot\xi$ is dense in $M$, and $x\cdot\xi = 0$ forces $x = 0$. The <strong>induced involution</strong> (or <strong>module Tomita operator</strong>) is the antilinear map</p>
+<p>$$
+S_M : A\cdot\xi\longrightarrow M , \qquad S_M(x\cdot\xi) = x^{\dagger}\cdot\xi ,
+$$</p>
+<p>and the involution of an element $s = x\cdot\xi$ is $s^{\dagger} = x^{\dagger}\cdot\xi$.</p>
+<p><strong>Proposition (the induced involution is well defined and involutive).</strong> With $\xi$ separating, $S_M$ is well defined, antilinear, and $S_M^{2} = \mathrm{id}$; the involution of the module satisfies</p>
+<p>$$
+(x\cdot s)^{\dagger} = s^{\dagger}\cdot x^{\dagger} , \qquad (s^{\dagger})^{\dagger} = s ,
+$$</p>
+<p>so the module is a module over the involution as well, and the two structures are compatible.</p>
+<p><strong>Proof.</strong> If $x\cdot\xi = y\cdot\xi$ then $(x-y)\cdot\xi = 0$ and $x = y$ by separatingness, so $S_M$ is well defined; antilinearity and involutivity are those of the algebra involution; the first displayed identity is $(xy)\cdot\xi\mapsto (xy)^{\dagger}\cdot\xi = y^{\dagger}\cdot x^{\dagger}\cdot\xi$; the second is $S_M^{2} = \mathrm{id}$.</p>
+<p><strong>Theorem (polar decomposition of the module involution).</strong> The closure of $S_M$ has a polar decomposition</p>
+<p>$$
+\bar S_M = J_M\,\Delta_M^{1/2} ,
+$$</p>
+<p>with $J_M$ an antiunitary involution and $\Delta_M = \bar S_M^{*}\bar S_M\geq0$ the <strong>modular operator of the module</strong>; the identities $\Delta_M = \bar S_M^{*}\bar S_M$, $J_M\Delta_MJ_M = \Delta_M^{-1}$ and $J_M\Delta_M^{it}J_M = \Delta_M^{-it}$ hold as in the algebra case.</p>
+<p><strong>Proof.</strong> The same polar-decomposition argument as for the algebra involution, applied to the closed antilinear involution $\bar S_M$ of $M$.</p>
+<p><strong>Proposition (the action is compatible with the modular data).</strong> The action of $A$ satisfies</p>
+<p>$$
+S_M\,\rho(x)\,S_M = \rho(x^{\dagger}) \quad\text{on } A\cdot\xi, \qquad \Delta_M^{it}\,\rho(x)\,\Delta_M^{-it} = \rho(\sigma_t(x)) ,
+$$</p>
+<p>where $\sigma_t$ is the modular automorphism of the algebra; so the modular structures of the module and of the algebra are intertwined by the action.</p>
+<p><strong>Proof.</strong> On $A\cdot\xi$, $S_M\rho(x)S_M(y\cdot\xi) = S_M(x\cdot y\cdot\xi) = (xy)^{\dagger}\cdot\xi = y^{\dagger}\cdot x^{\dagger}\cdot\xi = \rho(x^{\dagger})(y\cdot\xi)$; the second identity is the modular flow of the algebra acting on the coefficients, as in <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="self-adjoint-operators-and-elements">Self-Adjoint Operators and Elements</h2>
+<p><strong>Definition.</strong> A module operator is <strong>self-adjoint</strong> when $T^{*} = T$, <strong>positive</strong> when $(Ts,s)\geq0$ for every $s$ in the domain of the form pairing, and <strong>unitary</strong> when $T^{*}T = TT^{*} = \mathrm{id}$; an element $s$ is <strong>self-adjoint</strong> when $s^{\dagger} = s$.</p>
+<p><strong>Proposition (the self-adjoint elements form a real form).</strong> The set of self-adjoint elements of $M$ is a real vector space, and every element is uniquely $s = s_1 + i s_2$ with $s_1, s_2$ self-adjoint; the involution is the conjugation with respect to this real form.</p>
+<p><strong>Proof.</strong> The involution is antilinear and involutive, so $s_1 = \tfrac12(s+s^{\dagger})$ and $s_2 = \tfrac{1}{2i}(s-s^{\dagger})$ are self-adjoint; expanding, $s_1+is_2 = s$. For uniqueness, if $s_1+is_2 = s_1'+is_2'$ with all four self-adjoint then $s_1-s_1' = i(s_2'-s_2)$ is at once self-adjoint and anti-self-adjoint, hence zero, and then $s_2 = s_2'$.</p>
+<p><strong>Proposition (self-adjointness of the actions).</strong> The action $\rho(x)$ is self-adjoint exactly when $x = x^{\dagger}$, positive when $x$ lies in the positive cone of the algebra, and unitary when $x$ is unitary; so the self-adjoint, positive and unitary operators of the module of the action kind are exactly those of the algebra.</p>
+<p><strong>Proof.</strong> $\rho(x)^{*} = \rho(x^{\dagger})$ by the theorem, and the action is faithful by the separatingness of $\xi$; the positivity is $(x\cdot s,s) = (s,x^{\dagger}\cdot s)$ with $x = x^{\dagger}$ and the positivity of the algebra cone.</p>
+<p><strong>Proposition (the module adjoint of an intertwiner).</strong> If $T\in B(M)$ intertwines the action, $T\rho(x) = \rho(x)T$ for every $x$, then $T^{*}$ intertwines the action as well; so the adjoint of an intertwiner is an intertwiner, and the self-adjoint intertwiners are the self-adjoint elements of the commutant of the action.</p>
+<p><strong>Proof.</strong> Taking adjoints in $T\rho(x) = \rho(x)T$ gives $\rho(x^{\dagger})T^{*} = T^{*}\rho(x^{\dagger})$ by the theorem, hence $T^{*}\rho(y) = \rho(y)T^{*}$ for every $y$, since the involution is of order two.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-regular-module">The Regular Module</h3>
+<p>For $M = A$ with the form $(s,t) = \langle s,t\rangle$ and $\xi = 1$, the action is the left multiplication, the induced involution is the involution of the algebra, and the module adjoint of $\rho(x)$ is $\rho(x^{\dagger})$, recovering the adjoint of <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em>.</p>
+<h3 id="the-vector-module">The Vector Module</h3>
+<p>For $M = \mathbb{C}^{n}$ with the standard form over $A = M_n(\mathbb{C})$ acting by matrices, $\rho(a)^{*} = \rho(a^{*})$ with $a^{*}$ the conjugate transpose, the induced involution is the entrywise conjugation, and the self-adjoint operators are the Hermitian matrices.</p>
+<h3 id="the-module-of-a-state">The Module of a State</h3>
+<p>For the cyclic module $M = A\cdot\xi$ of a state, $\xi$ is cyclic and separating exactly when the state is faithful, the module Tomita operator is the restriction of the algebra Tomita operator, and $\Delta_M$ is the restriction of $\Delta$; the case of a non-faithful state is excluded by the separatingness of the module's cyclic vector.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Hilbert module, the <strong>adjoint</strong> of an operator is defined by $(Ts,t) = (s,T^{*}t)$ and obeys the calculus $T^{**} = T$, $(ST)^{*} = T^{*}S^{*}$, $T^{*}T\geq0$; the adjoint of the <strong>action</strong> is the action of the involution, $\rho(x)^{*} = \rho(x^{\dagger})$, which is the self-adjointness of the module form $(x\cdot s,t) = (s,x^{\dagger}\cdot t)$. A <strong>cyclic and separating</strong> vector induces an <strong>involution of the module</strong>, $s^{\dagger} = S_M s$ for $s = x\cdot\xi$ with $S_M(x\cdot\xi) = x^{\dagger}\cdot\xi$; the induced involution is well defined and involutive, satisfies $(x\cdot s)^{\dagger} = s^{\dagger}\cdot x^{\dagger}$, and its polar decomposition produces the <strong>modular operator</strong> and the <strong>modular conjugation</strong> of the module, intertwined with the modular data of the algebra by the action. The <strong>self-adjoint elements</strong> of the module form a real form and give the decomposition $s = s_1+is_2$; the <strong>self-adjoint, positive and unitary</strong> operators of the action kind are exactly those of the algebra, and the adjoint of an <strong>intertwiner</strong> is an intertwiner, so the self-adjoint intertwiners form the self-adjoint part of the commutant of the action. The module axioms are <em>Hermitian Modules over a Hilbert Algebra with Hermitian Adjoint</em>, the adjoint of the action is <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em>, the algebra case is <em>The Adjoint of the Left Multiplication on a Hilbert Algebra</em>, and the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(Ts,t) = (s,T^{*}t)$</td>
+<td>Hilbert adjoint on the module</td>
+</tr>
+<tr>
+<td>$\rho(x)^{*} = \rho(x^{\dagger})$</td>
+<td>Adjoint of the action</td>
+</tr>
+<tr>
+<td>$S_M(x\cdot\xi) = x^{\dagger}\cdot\xi$</td>
+<td>The induced (module Tomita) operator</td>
+</tr>
+<tr>
+<td>$s^{\dagger} = S_Ms$, $(x\cdot s)^{\dagger} = s^{\dagger}\cdot x^{\dagger}$</td>
+<td>The induced involution</td>
+</tr>
+<tr>
+<td>$\bar S_M = J_M\Delta_M^{1/2}$</td>
+<td>Polar decomposition of the module involution</td>
+</tr>
+<tr>
+<td>$s = s_1+is_2$</td>
+<td>Decomposition into self-adjoint elements</td>
+</tr>
+<tr>
+<td>$T$ self-adjoint, positive, unitary</td>
+<td>$T^{*} = T$, $(Ts,s)\geq0$, $T^{*}T = TT^{*} = 1$</td>
+</tr>
+<tr>
+<td>$T\rho(x) = \rho(x)T \Rightarrow T^{*}\rho(x) = \rho(x)T^{*}$</td>
+<td>Adjoint of an intertwiner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for Hilbert modules over a Hilbert algebra and the induced involution.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the adjoint of a densely defined module operator and its calculus.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for cyclic and separating vectors and the induced Tomita operator.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular data of a module.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for Hermitian forms on modules and the self-adjointness axiom.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution on the Möbius Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-on-the-mobius-operators"><strong>The Involution on the Möbius Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Möbius operators</strong> are the fractional linear transformations $z \mapsto (az+b)/(cz+d)$ of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and they carry a distinguished <strong>involution</strong>: the complex conjugation $z \mapsto \bar z$, an anti-holomorphic involution of the sphere that acts on the operators by the conjugation of the matrix, $M \mapsto \bar M$. The operators fixed by the involution are the <strong>real Möbius transformations</strong>, the group $PSL_2(\mathbb{R})$, which is also the adjoint-unitary group of the Hermitian form of signature $(1,1)$ and the isometry group of the hyperbolic plane. The article develops the involution in the <strong>operator built from the involution</strong> layer of this Part: the Möbius operator is the one of <em>The Möbius Transformation as an Operator</em>, the involution is the complex conjugation, the adjoint is the one of <em>The Adjoint under a Hermitian Pairing</em>, and the article proves the agreement of the fixed group with the projective unitary group rather than assuming it.</p>
+<p>The article develops the Möbius operators and the conjugation of the sphere, the action of the conjugation on the group and the fixed subgroup, the real Möbius transformations as the isometries of the hyperbolic plane, the unitary realisation of the real group by the Hermitian form of signature $(1,1)$, and the classification of the real forms of $PSL_2(\mathbb{C})$ as the split and the compact one. The article owns the involution and the real forms of the Möbius group.</p>
+<p>The article assumes <em>The Möbius Transformation as an Operator</em> for the fractional linear maps, the matrix realisation, the cross ratio and the action on the hyperbolic space; <em>The Adjoint under a Hermitian Pairing</em> for the adjoint and the self-adjoint elements; <em>Real Structures on a Projective Space</em> for the real structures and the real points; <em>Unitary Geometry over a Field with Involution</em> for the Hermitian forms of signature $(1,1)$; and <em>Hyperbolic Geometry</em> and <em>Möbius and Lie Sphere Geometry</em> for the hyperbolic plane and its isometries. The real forms of a complex Lie group are <em>Real Forms of a Complex Lie Group and the Cartan Involution</em> of Part III. No distance beyond the hyperbolic metric and no physics is invoked.</p>
+<h2 id="the-mobius-operators-and-the-conjugation">The Möbius Operators and the Conjugation</h2>
+<h3 id="the-operators">The Operators</h3>
+<p><strong>Definition.</strong> The <strong>Möbius operators</strong> are the maps of the Riemann sphere</p>
+<p>$$
+M_A(z) = \frac{az + b}{cz + d}, \qquad A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in GL_2(\mathbb{C}) ,
+$$</p>
+<p>extended to the sphere by $M_A(\infty) = a/c$ and $M_A(-d/c) = \infty$; two matrices give the same map exactly when they differ by a scalar, so the Möbius group is the projective group $PGL_2(\mathbb{C}) = PSL_2(\mathbb{C})$, and it is the group of all the bijections of the sphere preserving the cross ratio. The Möbius operators are the operators of <em>The Möbius Transformation as an Operator</em>, and they act on the upper half-plane as the isometries of the hyperbolic plane.</p>
+<p><strong>Proposition.</strong> The Möbius operators form a group under the composition, $M_A \circ M_B = M_{AB}$, the inverse is $M_{A^{-1}}$, and the group acts triply transitively on the sphere; the cross ratio $[z_1:z_2:z_3:z_4]$ is invariant, the circle group of the sphere is preserved, and the classification of the operators by the trace of the matrix is that of the elliptic, parabolic and hyperbolic elements.</p>
+<p><strong>Proof.</strong> The composition of two fractional linear maps is the fractional linear map of the product, computed directly; the triple transitivity is the matching of the three images and the fundamental theorem of the projective line; the invariance of the cross ratio and the classification by the trace are in <em>The Möbius Transformation as an Operator</em>. The statement is the standard theory of the Möbius group.</p>
+<h3 id="the-complex-conjugation">The Complex Conjugation</h3>
+<p><strong>Definition.</strong> The <strong>complex conjugation</strong> is the map of the Riemann sphere</p>
+<p>$$
+\iota : \hat{\mathbb{C}} \to \hat{\mathbb{C}}, \qquad \iota(z) = \bar{z}, \qquad \iota(\infty) = \infty ;
+$$</p>
+<p>it is an <strong>anti-Möbius</strong> map (anti-holomorphic, orientation-reversing) and an involution, and its fixed locus is the real projective line</p>
+<p>$$
+\hat{\mathbb{C}}^{\iota} = \mathbb{P}^1(\mathbb{R}) = \mathbb{R} \cup \{\infty\} .
+$$</p>
+<p><strong>Proposition.</strong> The conjugation is an involution of the sphere reversing the orientation and the cross ratio, $\iota[z_1:z_2:z_3:z_4] = [\bar z_1:\bar z_2:\bar z_3:\bar z_4] = \overline{[z_1:z_2:z_3:z_4]}$; a Möbius operator commutes with the conjugation exactly when it is real, and the cross ratio of four points is real exactly when the four points lie on a circle or a line of the sphere.</p>
+<p><strong>Proof.</strong> The conjugation is additive and reverses the product, hence an involution of the field extended to the sphere; the cross ratio is a rational function with real coefficients under the conjugation, so it is replaced by its complex conjugate; a Möbius operator commutes with the conjugation exactly when its coefficients may be taken real, and the reality of the cross ratio is the classical criterion for the concyclicity. The statement is in <em>The Möbius Transformation as an Operator</em> and <em>Projective Geometry</em>.</p>
+<h2 id="the-involution-on-the-group">The Involution on the Group</h2>
+<h3 id="the-conjugation-of-the-operators">The Conjugation of the Operators</h3>
+<p><strong>Definition.</strong> The <strong>involution on the Möbius operators</strong> is the map induced by the conjugation of the sphere,</p>
+<p>$$
+\sigma : PGL_2(\mathbb{C}) \longrightarrow PGL_2(\mathbb{C}), \qquad \sigma(M) = \iota \circ M \circ \iota ,
+$$</p>
+<p>which on the matrix is the entrywise complex conjugation,</p>
+<p>$$
+\sigma(M_A) = M_{\bar A}, \qquad \bar A = \begin{pmatrix} \bar a & \bar b \\ \bar c & \bar d \end{pmatrix} .
+$$</p>
+<p><strong>Theorem.</strong> The involution $\sigma$ is well defined, it is an <strong>involutive automorphism</strong> of the group (the composition with the conjugation of the base),</p>
+<p>$$
+\sigma(MN) = \sigma(M)\,\sigma(N) , \qquad \sigma^2 = \mathrm{id} ,
+$$</p>
+<p>and its fixed elements are the Möbius operators with a real representative matrix; the map is the action of the conjugation of the sphere on the group by the conjugation, and it is the Möbius instance of an involution on the operator layer.</p>
+<p><strong>Proof.</strong> The composition is $\iota M N \iota = (\iota M \iota)(\iota N \iota)$ because $\iota^2 = \mathrm{id}$, so $\sigma$ is multiplicative; the square is the identity, and the matrices fixed up to a scalar are those with a real representative. The statement is the standard conjugation of the matrix group, in <em>Involutive Linear Algebras</em> and <em>Real Forms and the Descent of an Algebra</em>.</p>
+<h3 id="the-fixed-subgroup">The Fixed Subgroup</h3>
+<p><strong>Theorem.</strong> The fixed subgroup of the involution is the <strong>real Möbius group</strong>,</p>
+<p>$$
+PGL_2(\mathbb{C})^{\sigma} = PGL_2(\mathbb{R}) = PSL_2(\mathbb{R}) ,
+$$</p>
+<p>the group of the Möbius operators with real coefficients; it is the group of the automorphisms of the real projective line, it preserves the upper and the lower half-planes, and it acts on the upper half-plane as the orientation-preserving isometry group of the hyperbolic plane.</p>
+<p><strong>Proof.</strong> A class fixed by $\sigma$ has a representative matrix with $\bar A = \lambda A$ for a scalar, and multiplying by a scalar of the appropriate modulus gives a real representative; the group of the real matrices modulo the scalars is $PGL_2(\mathbb{R}) = PSL_2(\mathbb{R})$ because the nonzero real squares are positive, and the action on the half-plane is the classical one. The statement is in <em>The Möbius Transformation as an Operator</em> and <em>Hyperbolic Geometry</em>.</p>
+<h2 id="the-real-mobius-transformations">The Real Möbius Transformations</h2>
+<p><strong>Theorem.</strong> The real Möbius group $PSL_2(\mathbb{R})$ acts on the upper half-plane $\mathbb{H}^2 = \{z : \operatorname{Im} z > 0\}$ by the fractional linear maps, and this action is faithful, transitive and preserves the hyperbolic metric $|dz|^2/(\operatorname{Im} z)^2$; the group is the full orientation-preserving isometry group of the hyperbolic plane, and the boundary action on $\mathbb{P}^1(\mathbb{R})$ is the action on the circle at infinity.</p>
+<p><strong>Proof.</strong> The imaginary part transforms by $\operatorname{Im} M_A(z) = \operatorname{Im} z\,/\,|cz+d|^2$ for a real matrix of determinant one, so the half-plane is preserved and the hyperbolic metric is invariant; the transitivity is the matching of a point and a direction, and the faithfulness and the fullness are the standard computation of the isometry group. The statement is in <em>Hyperbolic Geometry</em>.</p>
+<p><strong>Corollary (the conjugation and the hyperbolic reflection).</strong> The conjugation $\iota$ is not in the Möbius group, but it is an isometry of the hyperbolic plane, and it is the reflection in the geodesic $i\mathbb{R}_{>0}$; it fixes that geodesic pointwise, it reverses the orientation, and it is the geodesic reflection of <em>Geodesic Reflection as an Operator</em> in the Poincaré model. The subgroup of the Möbius operators commuting with $\iota$ is the real Möbius group, and the fixed geodesic is the imaginary axis.</p>
+<p><strong>Proof.</strong> The conjugation is an anti-holomorphic isometry of the half-plane metric; its fixed set is the intersection of the fixed locus $\mathbb{R}\cup\{\infty\}$ with the half-plane, which is empty on the boundary but the geodesic between the two fixed boundary points $0$ and $\infty$ is the imaginary axis, fixed pointwise by $\iota$. The statement is in <em>Hyperbolic Geometry</em>.</p>
+<h2 id="the-adjoint-and-the-unitary-realisation">The Adjoint and the Unitary Realisation</h2>
+<h3 id="the-hermitian-form-of-signature-math42">The Hermitian Form of Signature $(1,1)$</h3>
+<p><strong>Definition.</strong> Let $J$ be the Hermitian form on $\mathbb{C}^2$ of signature $(1,1)$ with the matrix</p>
+<p>$$
+J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} ;
+$$</p>
+<p>the <strong>unitary group</strong> of the form is</p>
+<p>$$
+U(1,1) = \{A \in GL_2(\mathbb{C}) : A^{*} J A = J\} ,
+$$</p>
+<p>with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitary group $SU(1,1)$ is the subgroup of determinant one; the projective group is $PU(1,1) = U(1,1)/\{\pm 1\}$.</p>
+<p><strong>Theorem.</strong> The adjoint of a matrix $A$ with respect to $J$ is $A^{\dagger} = J^{-1}A^{*}J$, the unitary elements are those with $A^{\dagger} = A^{-1}$, and the projective unitary group of the form of signature $(1,1)$ is the real Möbius group,</p>
+<p>$$
+PU(1,1) = PSU(1,1) \cong PSL_2(\mathbb{R}) ,
+$$</p>
+<p>so the fixed subgroup of the conjugation and the projective unitary group of the Hermitian form coincide, and the adjoint realises the involution on the operators.</p>
+<p><strong>Proof.</strong> The adjoint is the sandwich of the conjugate transpose by $J$ by <em>The Adjoint under a Hermitian Pairing</em>; the isomorphism $PSU(1,1) \cong PSL_2(\mathbb{R})$ is given by an explicit change of basis over $\mathbb{R}$ that carries the form of signature $(1,1)$ to the determinant form on the real matrices, and it is the standard isomorphism of the classical groups. The statement is in <em>Unitary Geometry over a Field with Involution</em>.</p>
+<p><strong>Remark (the agreement of the two involutions).</strong> The involution of the article is the conjugation of the base acting on the operators, and the adjoint is the involution of the operators induced by the Hermitian form; the fixed subgroup of the first is the real Möbius group and the projective unitary group of the second is the same group, so the two structures agree on this group. The agreement is the statement that the representation is a $*$-representation in the projective sense, and it is proved by the isomorphism above and not assumed.</p>
+<h2 id="the-real-forms-of-math62">The Real Forms of $PSL_2(\mathbb{C})$</h2>
+<p><strong>Definition.</strong> A <strong>real form</strong> of a complex group $G$ is a subgroup $G_0$ for which the complexification is $G$, equivalently the fixed subgroup of an antilinear involution; the real forms of $PSL_2(\mathbb{C})$ are the fixed subgroups of the antilinear involutions of the group.</p>
+<p><strong>Theorem.</strong> The complex group $PSL_2(\mathbb{C})$ has exactly two real forms up to conjugacy:</p>
+<ul>
+<li>the <strong>split</strong> form $PSL_2(\mathbb{R})$, the fixed subgroup of the complex conjugation of the article, with the real points of the real projective line, and with the hyperbolic plane as its symmetric space;</li>
+<li>the <strong>compact</strong> form $PSU(2) = PSU_2 \cong SO(3)$, the fixed subgroup of the quaternionic involution, with no real point in the projective line of the standard structure and with the sphere as its symmetric space.</li>
+</ul>
+<p>The two forms correspond to the two classes of the Galois cohomology $H^1(\mathbb{C}/\mathbb{R}, PSL_2(\mathbb{C}))$, and the split form is the one of the involution of the article.</p>
+<p><strong>Proof.</strong> The real forms of $PSL_2(\mathbb{C})$ are classified by the antilinear involutions, and the two classes are distinguished by the real points of the corresponding structure on the projective line; the split form is the fixed group of the conjugation and the compact form is the fixed group of the quaternionic structure, and the cohomological classification is the standard one. The statement is in <em>Real Structures on a Projective Space</em> and <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>.</p>
+<p><strong>Remark (the trace classification and the involution).</strong> The real Möbius group classifies its elements by the trace into the elliptic, parabolic and hyperbolic types, and the involution $\sigma$ acts on the classes by the conjugation of the trace, which is the real number unchanged; the classification of <em>The Möbius Transformation as an Operator</em> is thus compatible with the involution, and the real types are the ones whose square length in the hyperbolic metric is measured by the trace.</p>
+<h2 id="summary">Summary</h2>
+<p>The Möbius operators are the fractional linear transformations of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and the <strong>complex conjugation</strong> $\iota(z) = \bar z$ is an anti-Möbius involution of the sphere fixing the real projective line pointwise. The conjugation acts on the group by $\sigma(M_A) = M_{\bar A}$, an involutive automorphism of the group of the operators, and its fixed subgroup is the <strong>real Möbius group</strong> $PSL_2(\mathbb{R})$, the group of the real fractional linear maps, which acts on the upper half-plane as the isometry group of the hyperbolic plane and whose involution action on the plane is the reflection in the imaginary axis. The adjoint with respect to the Hermitian form of signature $(1,1)$ gives the unitary group $U(1,1)$, and the projective unitary group of the form is the real Möbius group, $PU(1,1) \cong PSU(1,1) \cong PSL_2(\mathbb{R})$, so the fixed subgroup of the involution and the projective unitary group coincide and the representation is a projective $*$-representation; the agreement is proved and not assumed. The complex group has exactly two real forms up to conjugacy, the split $PSL_2(\mathbb{R})$ of the conjugation and the compact $PSU(2) \cong SO(3)$ of the quaternionic involution, corresponding to the two classes of the Galois cohomology.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_A(z) = (az+b)/(cz+d)$</td>
+<td>Möbius operator of the matrix $A$</td>
+</tr>
+<tr>
+<td>$PGL_2(\mathbb{C}) = PSL_2(\mathbb{C})$</td>
+<td>Möbius group of the sphere</td>
+</tr>
+<tr>
+<td>$\iota(z) = \bar z$</td>
+<td>Complex conjugation, an anti-Möbius involution</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{R})$</td>
+<td>Real projective line, the fixed locus of $\iota$</td>
+</tr>
+<tr>
+<td>$\sigma(M_A) = M_{\bar A}$</td>
+<td>Involution on the Möbius operators</td>
+</tr>
+<tr>
+<td>$PGL_2(\mathbb{C})^{\sigma} = PSL_2(\mathbb{R})$</td>
+<td>Real Möbius group, the fixed subgroup</td>
+</tr>
+<tr>
+<td>$J = \operatorname{diag}(1,-1)$</td>
+<td>Hermitian form of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$A^{\dagger} = J^{-1}A^{*}J$</td>
+<td>Adjoint with respect to $J$</td>
+</tr>
+<tr>
+<td>$U(1,1)$, $SU(1,1)$, $PU(1,1)$</td>
+<td>Unitary groups of the form of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$PU(1,1) \cong PSL_2(\mathbb{R})$</td>
+<td>Agreement of the unitary and the real Möbius groups</td>
+</tr>
+<tr>
+<td>$PSU(2) \cong SO(3)$</td>
+<td>Compact real form of $PSL_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^2 = \{z : \operatorname{Im} z > 0\}$</td>
+<td>Upper half-plane of the hyperbolic plane</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for the Möbius transformations, the real group and the hyperbolic plane.</li>
+<li>John B. Conway, <em>Functions of One Complex Variable</em>, 2nd ed. (Springer, 1978), for the fractional linear maps and the Riemann sphere.</li>
+<li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em>, 2nd ed. (Springer, 2006), for the isometry groups and the half-plane and ball models.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1955), for the classical groups and the isomorphism $PSU(1,1) \cong PSL_2(\mathbb{R})$.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups and Symmetric Spaces</em> (Academic Press, 1978), for the real forms and the symmetric spaces.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions and the unitary groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

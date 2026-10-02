@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on a Complex Vector Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-a-complex-vector-space"><strong>The Signed Adjoint Sandwich on a Complex Vector Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich on the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ is
+$$
+\Theta^{\alpha}_{a,b}(X) = a\,\alpha(X)\,b,
+$$
+with $\alpha(X) = TXT$ the grade involution of a unitary self-adjoint involution $T$ of a Hermitian space $V$, and the form of the category on $E$ is the Hermitian trace form $\langle X, Y\rangle = \operatorname{tr}(X^{\dagger}Y)$. The <strong>adjoint</strong> of the signed sandwich for this form is again a signed sandwich,
+$$
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})},
+$$
+the signed sandwich of the transported adjoint elements: the adjoint exchanges $a$ and $b$ through the involution and the dagger, and the verification is the identity $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$ of the unitary self-adjoint $T$. The formula is the signed form of the ordinary adjoint law $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$ of <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, and it makes the <strong>unitarity condition</strong> explicit: the signed sandwich $\Theta^{\alpha}_{a,b}$ is an isometry of the trace form exactly when both $a$ and $b$ are unitary, because
+$$
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})},
+$$
+which is the identity exactly for $a^{\dagger}a = \mathrm{id}$ and $bb^{\dagger} = \mathrm{id}$. The adjoint of the inner signed sandwich and of the reflection's sandwich are the two corollaries of the formula.</p>
+<p>The article has three sections: the adjoint of the signed sandwich and its proof; the unitarity condition; and the signed inner sandwich and the reflections. The signed sandwich, its laws and the grade involution are <em>The Signed Sandwich on a Complex Vector Space</em>; the unsigned adjoint law is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, the preceding article of this group; the endomorphism algebra and the trace form are <em>Algebras of Endomorphisms</em> and <em>The Left and Right Multiplication Operators on a Complex Vector Space</em>; the reflections are <em>Reflections as Signed Two-Sided Operators on a Complex Vector Space</em> and <em>The Signed Adjoint of the Reflection on a Complex Vector Space</em>; the Hermitian forms and the adjoint of a Hermitian operator are <em>Hermitian Geometry and the Unitary Group</em> and <em>The Adjoint of a Hermitian Operator</em>. None of that is re-derived.</p>
+<p>Throughout, $V$ is a finite-dimensional complex vector space with a positive-definite Hermitian form $h$, $E = \operatorname{End}_{\mathbb C}(V)$, $A^{\dagger}$ is the $h$-adjoint, $T$ is a unitary self-adjoint involution, $\alpha(X) = TXT$, $\Phi_{a,b}(X) = aXb$ and $\Theta^{\alpha}_{a,b}(X) = a\alpha(X)b$ are the unsigned and signed sandwiches, and $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$ is the Hermitian trace form.</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Proposition (adjoint of the involution).</strong> The grade involution is self-adjoint for the trace form, $\alpha^{*} = \alpha$, because $T$ is unitary and self-adjoint; and it preserves the adjoint, $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$.</p>
+<p><strong>Proof.</strong> $\langle\alpha(X), Y\rangle = \operatorname{tr}((TXT)^{\dagger}Y) = \operatorname{tr}(TX^{\dagger}TY) = \operatorname{tr}(X^{\dagger}TYT) = \langle X,\alpha(Y)\rangle$, using $T^{\dagger}=T$ and the trace cyclicity; the second statement is the same computation, $(TXT)^{\dagger} = TX^{\dagger}T$. This is <em>The Involution on a Complex Vector Space</em>.</p>
+<p><strong>Theorem (the signed adjoint).</strong> For all $a,b \in E$,
+$$
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha(b^{\dagger})},
+$$
+and in particular the unsigned case is $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the adjoint is conjugate-linear in the pair and involutive, $(\Theta^{*})^{*} = \Theta$.</p>
+<p><strong>Proof.</strong> Write $\Theta^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha$. Then $\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \alpha^{*}\Phi_{a,b}^{*} = \alpha\circ\Phi_{a^{\dagger},b^{\dagger}}$, using $\alpha^{*}=\alpha$ and the unsigned adjoint law; as an operator, $\alpha(\Phi_{a^{\dagger},b^{\dagger}}(Y)) = \alpha(a^{\dagger}Yb^{\dagger}) = Ta^{\dagger}Yb^{\dagger}T = \Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}(Y)$, since $\Theta^{\alpha}_{c,d}(Y) = c\alpha(Y)d$ with $c = \alpha(a^{\dagger}) = Ta^{\dagger}T$, $d=\alpha(b^{\dagger})=Tb^{\dagger}T$ gives $Ta^{\dagger}T\cdot TYT\cdot Tb^{\dagger}T = Ta^{\dagger}Yb^{\dagger}T$. The involutivity is $\alpha^2=\mathrm{id}$ and $(a^{\dagger})^{\dagger}=a$. The unsigned adjoint law is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>, and the sandwich laws are <em>The Signed Sandwich on a Complex Vector Space</em>.</p>
+<p><strong>Corollary (the self-adjoint signed sandwiches).</strong> $\Theta^{\alpha}_{a,b}$ is self-adjoint, $(\Theta^{\alpha}_{a,b})^{*} = \Theta^{\alpha}_{a,b}$, exactly when
+$$
+a = \alpha(a^{\dagger}), \qquad b = \alpha(b^{\dagger}),
+$$
+that is when $aT$ and $bT$ are Hermitian; in particular the signed sandwich of a Hermitian $a$ with $b = a$ and $a = \alpha(a)$ is self-adjoint.</p>
+<p><strong>Proof.</strong> The identity $\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})} = \Theta^{\alpha}_{a,b}$ holds when $\alpha(a^{\dagger})=a$ and $\alpha(b^{\dagger})=b$. The first equation is $Ta^{\dagger}T = a$, equivalently (right-multiplying by $T$) $aT = Ta^{\dagger} = (aT)^{\dagger}$, which is the Hermitian condition on $aT$; the second is the same condition on $bT$. This is the self-adjointness criterion of <em>The Adjoint of a Hermitian Operator</em>.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Proposition (the unitarity condition).</strong> The signed sandwich satisfies
+$$
+\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
+\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)},
+$$
+and it is a <strong>unitary</strong> operator on the Hermitian space $E$ exactly when $a$ and $b$ are unitary; the signed sandwiches with $a,b \in U(h)$ form the group $U(h)\times U(h)$ acting on $E$, each factor acting by a one-sided operator.</p>
+<p><strong>Proof.</strong> The products are computed with the composition law $\Theta_{c,d}\Theta_{a,b} = \Theta_{c\alpha(a),\alpha(b)d}$ of <em>The Signed Sandwich on a Complex Vector Space</em>, together with the adjoint formula: $\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}\Theta^{\alpha}_{a,b}$ has $c=\alpha(a^{\dagger})$, $d=\alpha(b^{\dagger})$, so $c\alpha(a) = \alpha(a^{\dagger})\alpha(a) = \alpha(a^{\dagger}a)$ and $\alpha(b)d = \alpha(b)\alpha(b^{\dagger}) = \alpha(bb^{\dagger})$. The composite is the identity exactly when $a^{\dagger}a = \mathrm{id}$ and $bb^{\dagger} = \mathrm{id}$, that is when $a$ and $b$ are unitary; the map $(a,b)\mapsto\Theta^{\alpha}_{a,b}$ is then multiplicative and injective. This is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em> and <em>The Unitary and Symplectic Groups</em>.</p>
+<p><strong>Corollary (the isometries of the trace form).</strong> The unitary group of the trace form on $E$ contains the image of $U(h)\times U(h)$ under $(a,b)\mapsto\Theta^{\alpha}_{a,b}$; the inner signed sandwich $\Theta^{\alpha}_{u,u^{-1}} = \mathrm{Ad}_u\circ\alpha$ of a unitary $u$ is the diagonal of this action and is an isometry; the signed sandwiches with $a$ or $b$ non-unitary are not isometries.</p>
+<p><strong>Proof.</strong> The unitarity of $\Theta^{\alpha}_{a,b}$ is the previous proposition; the inner signed sandwich has $a=u$ and $b=u^{-1}$ unitary when $u$ is, so it is an isometry; and if $a^{\dagger}a \neq \mathrm{id}$ or $bb^{\dagger}\neq\mathrm{id}$ the composite differs from the identity. This is <em>The Left and Right Multiplication Operators on a Complex Vector Space</em>.</p>
+<h2 id="the-signed-inner-sandwich-and-the-reflections">The Signed Inner Sandwich and the Reflections</h2>
+<p><strong>Proposition (the adjoint of the inner signed sandwich).</strong> For invertible $a$,
+$$
+\bigl(\Theta^{\alpha}_{a,a^{-1}}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\,\alpha((a^{-1})^{\dagger})} = \mathrm{Ad}_{\alpha(a^{\dagger})}\circ\alpha ,
+$$
+and it is unitary exactly when $a$ is unitary; when $a$ is unitary the adjoint is the inverse, $\bigl(\Theta^{\alpha}_{a,a^{-1}}\bigr)^{*} = \bigl(\Theta^{\alpha}_{a,a^{-1}}\bigr)^{-1}$.</p>
+<p><strong>Proof.</strong> The first formula is the theorem with $b = a^{-1}$; the inner sandwich is $\mathrm{Ad}_{a}\circ\alpha$ with parameter $a$, and its adjoint has parameter $\alpha(a^{\dagger})$; unitarity is the criterion; and for unitary $a$ the inverse is the adjoint by the unitarity. The inner sandwiches and their squares are <em>The Signed Sandwich on a Complex Vector Space</em>.</p>
+<p><strong>Proposition (the reflection as a self-adjoint signed operator).</strong> Let $r$ be a unitary reflection of $V$, so that $r^2 = \mathrm{id}$, $r^{\dagger} = r$ and $\alpha_r(X) = rXr$. Then the signed inner sandwich of the reflection is the identity, $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, and it is its own adjoint; more generally the signed sandwich $\Theta^{\alpha_r}_{r,r}$ is self-adjoint, since the criterion $r = \alpha_r(r^{\dagger}) = rrr = r^{3}$ holds by $r^{2}=\mathrm{id}$; and the conjugation $\mathrm{Ad}_r = \Theta^{\alpha_r}_{r,r^{-1}}\circ\alpha_r$ is a self-adjoint involution for the trace form.</p>
+<p><strong>Proof.</strong> The identity $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$ is the computation $r(rXr)r = X$ of <em>Reflections as Signed Two-Sided Operators on a Complex Vector Space</em>; the self-adjointness of $\Theta^{\alpha_r}_{r,r}$ is the criterion with $a = b = r$ Hermitian and $r = \alpha_r(r^\dagger)$; and $\mathrm{Ad}_r = L_rR_{r}$ is self-adjoint because $r^{\dagger}=r$, and an involution because $r^2 = \mathrm{id}$. This is <em>The Signed Adjoint of the Reflection on a Complex Vector Space</em>.</p>
+<p><strong>Remark (the failure in the degenerate case).</strong> The formulas presuppose the unitarity and self-adjointness of $T$, which is what makes $\alpha$ self-adjoint and adjoint-preserving. When the form is degenerate the dagger fails to be well behaved and the adjoint formula $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$ need not hold; the self-adjointness of the reflections and of the conjugations then fails, as in <em>The Signed Adjoint of the Reflection on a Complex Vector Space</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>On the endomorphism algebra of a Hermitian space the adjoint of the signed sandwich is the signed sandwich of the transported adjoints, $(\Theta^{\alpha}_{a,b})^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}$, proved from the self-adjointness $\alpha^{*}=\alpha$ of the grade involution and the unsigned law $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the signed sandwich is self-adjoint exactly when $a = \alpha(a^{\dagger})$ and $b = \alpha(b^{\dagger})$, that is when $aT$ and $bT$ are Hermitian. The unitarity condition is $a$ and $b$ both unitary, because $(\Theta^{\alpha}_{a,b})^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\alpha(bb^{\dagger})}$; the inner signed sandwich $\Theta^{\alpha}_{a,a^{-1}} = \mathrm{Ad}_a\alpha$ has adjoint with parameter $\alpha(a^{\dagger})$ and is unitary exactly for unitary $a$, and the reflection's signed inner sandwich is the identity, with the conjugation $\mathrm{Ad}_r$ a self-adjoint involution. The signed sandwich and its laws are <em>The Signed Sandwich on a Complex Vector Space</em>; the unsigned adjoint law is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em>; the reflections are <em>Reflections as Signed Two-Sided Operators on a Complex Vector Space</em> and <em>The Signed Adjoint of the Reflection on a Complex Vector Space</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta^{\alpha}_{a,b}(X)=a\alpha(X)b$</td>
+<td>the signed sandwich</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{a,b})^{*}=\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}$</td>
+<td>the signed adjoint</td>
+</tr>
+<tr>
+<td>$\alpha^{*}=\alpha$, $\alpha(X^{\dagger})=\alpha(X)^{\dagger}$</td>
+<td>the grade involution is self-adjoint</td>
+</tr>
+<tr>
+<td>$(\Theta^{\alpha}_{a,b})^{*}\Theta^{\alpha}_{a,b}=\Theta^{\alpha}_{\alpha(a^{\dagger}a),\alpha(bb^{\dagger})}$</td>
+<td>the unitarity condition</td>
+</tr>
+<tr>
+<td>$a,b$ unitary</td>
+<td>the isometry condition</td>
+</tr>
+<tr>
+<td>$\Theta^{\alpha}_{a,a^{-1}}=\mathrm{Ad}_a\circ\alpha$</td>
+<td>the inner signed sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the adjoints and the unitarity of sandwiched operators.</li>
+<li>Paul R. Halmos, <em>Finite-Dimensional Vector Spaces</em> (Springer, 1974), for the adjoint, the trace form and the unitary operators.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2012), for the conjugate transpose, the trace form and the unitary group.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the sandwich operators and the algebras with involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

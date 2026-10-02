@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Elements of an Involutive Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-elements-of-an-involutive-algebra"><strong>Unitary Elements of an Involutive Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of an algebra carries an element $u$ to its <strong>adjoint</strong> $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the <strong>unitary elements</strong>. They form a group under multiplication, they sit inside the group of units, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the <strong>self-adjoint</strong> elements, with $h^* = h$, and the <strong>skew</strong> elements, with $k^* = -k$ — and the three are tied together by the identities $u + u^* = 2h$ and $u - u^* = 2k$ for every unitary $u$.</p>
+<p>This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, the skew elements as the algebraic tangent space at the identity and as a Lie algebra under the commutator, and the relation between the unitary and the self-adjoint parts. The involution on the elements, the decomposition $A = A^+\oplus A^-$, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are the subject of <em>Involutive Linear Algebras</em>; the self-adjoint part is developed in <em>The Self-Adjoint Part of an Algebra</em>; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and <em>Hilbert Algebras</em>, which own them.</p>
+<p>Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are <strong>self-adjoint</strong> and the negated elements $A^- = \{k : k^* = -k\}$ are <strong>skew</strong>; the group of units is $A^\times$, and the group of unitary elements is written $U(A) = U(A,\sigma)$.</p>
+<h2 id="the-unitary-elements">The Unitary Elements</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> An element $u \in A$ is <strong>unitary</strong> for $\sigma$ if</p>
+<p>$$
+u^*u = 1 \quad \text{and} \quad uu^* = 1 .
+$$</p>
+<p>The set of unitary elements is written $U(A) = U(A,\sigma)$, and an element of $U(A)$ is also called a <strong>unitary</strong> of $(A,\sigma)$.</p>
+<p><strong>Proposition.</strong> An element $u$ is unitary if and only if it is a unit and $u^* = u^{-1}$; every unitary is a unit, $1$ is unitary, and the two equations $u^*u = 1$ and $uu^* = 1$ are equivalent when $A$ is finite-dimensional.</p>
+<p><em>Proof.</em> If $u^*u = 1$ and $uu^* = 1$ then $u$ has the two-sided inverse $u^*$, so $u \in A^\times$ and $u^* = u^{-1}$. Conversely if $u$ is a unit with $u^* = u^{-1}$ then both products are $1$. The two equations are the two halves of invertibility, and in finite dimension a one-sided inverse of a linear map is two-sided, so either equation suffices.</p>
+<h3 id="the-group">The Group</h3>
+<p><strong>Theorem.</strong> The unitary elements form a subgroup $U(A) \leq A^\times$. Precisely, the map</p>
+<p>$$
+\theta : A^\times \longrightarrow A^\times, \qquad \theta(g) = (g^*)^{-1} = \sigma(g)^{-1},
+$$</p>
+<p>is an automorphism of the group of units with $\theta^2 = \mathrm{id}$, and</p>
+<p>$$
+U(A) = \{g \in A^\times : \theta(g) = g\}
+$$</p>
+<p>is its fixed subgroup.</p>
+<p><em>Proof.</em> The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\theta$ is an automorphism; $\theta^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\theta$ has order two. An element is fixed by $\theta$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $U(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.</p>
+<p><strong>Corollary.</strong> $U(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\theta)$ in the sense of <em>Involutive Groups</em>, and the assignment $(A,\sigma)\mapsto(U(A,\sigma),\theta)$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\theta$ is the inversion, and $U(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.</p>
+<h2 id="the-skew-elements-and-the-tangent-space">The Skew Elements and the Tangent Space</h2>
+<h3 id="the-lie-algebra-of-the-skew-elements">The Lie Algebra of the Skew Elements</h3>
+<p><strong>Proposition.</strong> The skew elements $A^-$ are closed under the commutator,</p>
+<p>$$
+[A^-, A^-] \subseteq A^-, \qquad [A^-, A^+] \subseteq A^+, \qquad [A^+, A^+] \subseteq A^-,
+$$</p>
+<p>so that $A^-$ is a Lie algebra under $[x,y] = xy - yx$, that $A^+$ is a module over it, and that $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra with the grading-compatible bracket of <em>Graded Lie Algebras and Lie Superalgebras</em> — the Koszul sign would give the anticommutator on two skew elements, which is self-adjoint, so the signed convention is not the one here; and since $[A^+,A^+]\subseteq A^-$ and $[A^-,A^+]\subseteq A^+$, the self-adjoint part is also a Lie triple system under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The first statement is that of <em>Involutive Linear Algebras</em>.</p>
+<p><em>Proof.</em> For $x$ skew and $y$ skew, $(xy)^* = y^*x^* = (-y)(-x) = yx$, so $[x,y]^* = (xy-yx)^* = yx - xy = -[x,y]$ and $[x,y]$ is skew. The two mixed cases are the same computation with one sign, and the even-even case is the first with the signs cancelled.</p>
+<h3 id="the-tangent-at-the-identity">The Tangent at the Identity</h3>
+<p><strong>Theorem.</strong> The skew elements are the elements that make $1 + t x$ unitary to first order in $t$: expanding</p>
+<p>$$
+(1+tx)^*(1+tx) = 1 + t(x + x^*) + t^2 x^*x
+$$</p>
+<p>shows that the coefficient of $t$ vanishes exactly when $x^* = -x$, that is exactly when $x$ is skew. Consequently $A^-$ is the algebraic tangent space of the unitary group at the identity, and the Lie bracket of two skew elements is the second-order shadow of the group commutator: the coefficient of the leading term in the expansion of $(1+tx)(1+ty)(1+tx)^{-1}(1+ty)^{-1}$ lies in the span of $[x,y]$.</p>
+<p><em>Proof.</em> The expansion displayed is the definition of the product; the linear term vanishes exactly for $x^* = -x$. For the second statement one expands the four factors to second order; the quadratic part involves $[x,y]$ and the identity $x^* = -x$, $y^* = -y$, and it is the standard identification of the bracket with the commutator of the group, whose totality belongs to the theory of <em>Involutive Groups</em> and of the linear groups of Part II.</p>
+<p><strong>Corollary.</strong> For every unitary $u$ the elements $u + u^*$ and $i(u - u^*)$ are self-adjoint when the square root of $-1$ exists in $k$, and $u - u^*$ is always skew. The unitary elements therefore decompose in the affine form</p>
+<p>$$
+u = \tfrac12(u + u^*) + \tfrac12(u - u^*),
+$$</p>
+<p>the first summand self-adjoint and the second skew, which is the decomposition $A = A^+\oplus A^-$ applied to $u$.</p>
+<h2 id="the-relation-to-the-self-adjoint-part">The Relation to the Self-Adjoint Part</h2>
+<h3 id="the-self-adjoint-elements-of-a-unitary">The Self-Adjoint Elements of a Unitary</h3>
+<p><strong>Proposition.</strong> Let $u$ be unitary. Then $u + u^*$ and $u u^*$ are self-adjoint, $u - u^*$ is skew, and</p>
+<p>$$
+(u + u^*)^* = u + u^*, \qquad (u - u^*)^* = -(u - u^*), \qquad (u u^*)^* = u u^* = 1 .
+$$</p>
+<p><em>Proof.</em> Apply $^*$ and use $(uv)^* = v^*u^*$ and $u^* = u^{-1}$: $(u+u^*)^* = u^* + u = u+u^*$, $(u-u^*)^* = u^* - u = -(u-u^*)$, and $(uu^*)^* = u u^* = 1$.</p>
+<h3 id="the-symmetrised-product">The Symmetrised Product</h3>
+<p><strong>Definition.</strong> The <strong>symmetrised product</strong> of two elements is $x \circ y = \tfrac12(xy + yx)$, and the self-adjoint part $H(A) = A^+$ is a <strong>Jordan algebra</strong> under it, in the sense of <em>Involutive Linear Algebras</em>.</p>
+<p><strong>Proposition.</strong> The symmetrised product of two skew elements and of two self-adjoint elements is self-adjoint, while the symmetrised product of a self-adjoint and a skew element is skew:</p>
+<p>$$
+A^- \circ A^- \subseteq A^+, \qquad A^+ \circ A^+ \subseteq A^+, \qquad A^+ \circ A^- \subseteq A^- .
+$$</p>
+<p>Consequently $H(A)$ is closed under $\circ$, and the skew part $A^-$ is a <strong>Jordan module</strong> over the Jordan algebra $H(A)$ under the same product.</p>
+<p><em>Proof.</em> For $x, y$ skew, $(xy)^* = y^*x^* = yx$ and $(yx)^* = xy$, so $\tfrac12(xy+yx)$ is fixed by $^*$; similarly for two self-adjoint elements. For $h$ self-adjoint and $k$ skew, $(hk)^* = k^*h^* = -kh$ and $(kh)^* = -hk$, so the half-sum is negated by $^*$.</p>
+<h3 id="the-cayley-transform">The Cayley Transform</h3>
+<p><strong>Proposition.</strong> Let $k$ be a skew element with $1 - k$ invertible, and set</p>
+<p>$$
+u = (1+k)(1-k)^{-1} .
+$$</p>
+<p>Then $u$ is unitary, and its inverse is $(1-k)(1+k)^{-1}$. In particular the unitary group contains the image of the Cayley transform of the skew elements, and the transform is the algebraic substitute for the exponential of the Lie algebra: its first-order term at $k = 0$ is $2k$.</p>
+<p><em>Proof.</em> Compute $u^* = \bigl((1-k)^{-1}\bigr)^*(1+k)^*$. Since $(1-k)^* = 1 + k$ and $(1+k)^* = 1-k$, and since the involution reverses inverses, $u^* = (1+k)^{-1}(1-k)$. The factors $1+k$ and $1-k$ commute, so</p>
+<p>$$
+u^*u = (1+k)^{-1}(1-k)(1+k)(1-k)^{-1} = (1+k)^{-1}(1-k^2)(1-k)^{-1} = (1+k)^{-1}(1+k)(1-k)(1-k)^{-1} = 1,
+$$</p>
+<p>and the same computation with the factors in the other order gives $uu^* = 1$. The derivative statement is the expansion $u = (1+k)(1 + k + k^2 + \cdots) = 1 + 2k + O(k^2)$ for nilpotent or small $k$.</p>
+<p>The exponential $e^{k}$ is not available in a bare $k$-algebra; the formal series identifies the Lie algebra of the skew elements with the unitary group, as in the theory of the linear groups, and the convergent reading belongs to <em>Hilbert Algebras</em> and to Part II.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="the-trivial-involution">The Trivial Involution</h3>
+<p>Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $U(A,\mathrm{id})$ is the set of the units $u$ with $u^2 = 1$, that is the involutions of the group of units, and the skew part $A^- = \{k : k = -k\}$ is zero in characteristic not two. The example is the degenerate one, and it shows that the unitary group measures the involution and not the algebra.</p>
+<h3 id="the-transpose-on-a-matrix-algebra">The Transpose on a Matrix Algebra</h3>
+<p>Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $U(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{Sym}\oplus \mathrm{Alt}$ is the one of <em>Involutive Linear Algebras</em>. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to <em>Hilbert Algebras</em>.</p>
+<h3 id="the-inversion-on-a-group-algebra">The Inversion on a Group Algebra</h3>
+<p>Let $A = k[G]$ with the involution $\sigma(g) = g^{-1}$; then $(uv)^* = v^*u^*$ because the inversion reverses products, so $\sigma$ is an involution, and each group element $g$ is unitary, $g^* = g^{-1}$. The map $G \to U(k[G],\sigma)$ is injective, and the unitary group contains the image of $G$; the rest of the unitary group consists of the invertible elements $u$ with $u^*=u^{-1}$ and depends on $G$ and on $k$.</p>
+<h3 id="the-exchange-involution">The Exchange Involution</h3>
+<p>Let $A = B \times B^{\mathrm{op}}$ with the exchange involution $(b, c)^* = (c, b)$, as in <em>Involutive Linear Algebras</em>. An element $(b,c)$ is unitary exactly when $(c,b)(b,c) = 1$, that is when $cb = 1$ and $bc = 1$, so $c = b^{-1}$; hence</p>
+<p>$$
+U(B \times B^{\mathrm{op}}) = \{(b, b^{-1}) : b \in B^\times\} \cong B^\times ,
+$$</p>
+<p>and the unitary group of the exchange involution is the group of units of $B$.</p>
+<h3 id="the-conjugate-transpose">The Conjugate Transpose</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the skew elements the skew-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to <em>Hilbert Algebras</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the <strong>unitary elements</strong> are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $U(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\theta(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of <em>Involutive Groups</em>. The <strong>skew</strong> elements $A^- = \{k : k^* = -k\}$ are closed under the commutator, so they form a Lie algebra, and they are the algebraic tangent space of $U(A)$ at the identity: the elements $x$ with $1 + tx$ unitary to first order are exactly the skew elements. The <strong>self-adjoint</strong> elements $A^+ = H(A)$ form the Jordan algebra under the symmetrised product, and $A^-$ is a Jordan module over it; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is <em>Involutive Linear Algebras</em>, the self-adjoint part is <em>The Self-Adjoint Part of an Algebra</em>, the forms and the linear groups belong to <em>Hilbert Algebras</em> and to Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars, of characteristic not two</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>an involution of $A$</td>
+</tr>
+<tr>
+<td>$u^* = \sigma(u)$</td>
+<td>the adjoint of an element</td>
+</tr>
+<tr>
+<td>$A^+ = H(A)$</td>
+<td>the self-adjoint elements, $h^* = h$</td>
+</tr>
+<tr>
+<td>$A^-$</td>
+<td>the skew elements, $k^* = -k$</td>
+</tr>
+<tr>
+<td>$U(A) = U(A,\sigma)$</td>
+<td>the unitary elements, $u^*u = uu^* = 1$</td>
+</tr>
+<tr>
+<td>$\theta(g) = (g^*)^{-1}$</td>
+<td>the order-two automorphism of $A^\times$</td>
+</tr>
+<tr>
+<td>$x \circ y = \tfrac12(xy+yx)$</td>
+<td>the symmetrised product</td>
+</tr>
+<tr>
+<td>$O_n(k)$</td>
+<td>the orthogonal group, for the transpose</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the unitary elements and the involutions of a central simple algebra.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Jordan algebra of the self-adjoint elements and the symmetrised product.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the unitary and the self-adjoint elements of an algebra with involution.</li>
+<li>Israel Nathan Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric and the skew elements and their Lie and Jordan structures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

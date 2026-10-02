@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordered Vector Spaces and the Order Unit — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ordered-vector-spaces-and-the-order-unit"><strong>Ordered Vector Spaces and the Order Unit</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>ordered vector space</strong> is a real vector space with a distinguished cone of <em>positive</em> elements; the order compares two vectors by the membership of their difference in that cone. The order is not a distance and not a topology: it is an <strong>algebraic</strong> structure placed on the linear space, defined by linear operations alone, and it is the structure that the whole of this category develops. Two extra inputs make an ordered vector space into an instrument of analysis. An <strong>order unit</strong> is a positive element so large that the order intervals it defines absorb the space; it turns the order into a norm, the <strong>order-unit norm</strong>, and its unit ball is the order interval $[-u,u]$. The norm in turn defines the <strong>order topology</strong>, the topology in which the cone is closed and the order is continuous.</p>
+<p>This article fixes the vocabulary of the category: the positive cone and the order it generates, the generating and pointed cases, the Archimedean condition, the order intervals and the order-bounded sets, the order unit and the order-unit norm, and the order topology together with the convex <strong>state space</strong> that the dual carries. It is the space on which the operator articles of this category act: the positive operators, the cone of positive operators, the order unit as an operator, the order projections, and the affine maps of a convex set.</p>
+<p>The linear and topological background is <em>Topological Modules and Vector Spaces</em>, <em>Locally Convex Spaces</em> and <em>Duality Theory</em>, and the correspondence between a closed convex cone and a duality is <em>Duality Theory</em>; the order-theoretic vocabulary is <em>Order Theory and Lattices</em>. The order-unit norm is already used in <em>Jordan Algebras and the Positive Cone</em>, whose notation it is, and this article adopts it verbatim. The integral representation of a point of the state space is deferred to <em>Cones, Extremal Rays and the Choquet Theory</em> later in this category; the Riesz-space structure and the bands are deferred to <em>The Order Projection</em>.</p>
+<h2 id="ordered-vector-spaces">Ordered Vector Spaces</h2>
+<h3 id="the-positive-cone-and-the-order">The Positive Cone and the Order</h3>
+<p><strong>Definition.</strong> Let $E$ be a real vector space. A <strong>positive cone</strong> is a subset $E_+\subseteq E$ such that</p>
+<p>$$
+E_+ + E_+ \subseteq E_+, \qquad \lambda E_+ \subseteq E_+ \ \text{for every } \lambda\geq0, \qquad E_+ \cap (-E_+) = \{0\}.
+$$</p>
+<p>An <strong>ordered vector space</strong> is a pair $(E,E_+)$; the cone is <strong>generating</strong> when $E = E_+ - E_+$, and the order is defined by</p>
+<p>$$
+x \leq y \iff y - x \in E_+ .
+$$</p>
+<p><strong>Proposition.</strong> The relation $\leq$ is a partial order; it is compatible with the linear operations,</p>
+<p>$$
+x \leq y \implies x + z \leq y + z, \qquad x \leq y \implies \lambda x \leq \lambda y \ \text{for } \lambda \geq 0,
+$$</p>
+<p>and its positive part is $E_+$: $x\geq0$ exactly when $x\in E_+$. Conversely every partial order compatible with the linear operations and such that the order is determined by its positive part arises from the cone $E_+ = \{x : x\geq0\}$.</p>
+<p><em>Proof.</em> Reflexivity is $0\in E_+$; transitivity is closure under addition; antisymmetry is pointedness: $x\leq y$ and $y\leq x$ give $y-x\in E_+\cap(-E_+)$ and hence $y = x$. The two compatibility rules are closure under addition and under nonnegative scaling. Conversely a compatible order has $\{x : x\geq0\}$ closed under addition and under nonnegative scaling, and pointed because $\geq$ is antisymmetric.</p>
+<p>The order is <strong>total</strong> when $E_+ \cup (-E_+) = E$, <strong>directed</strong> when every pair has an upper bound, and the cone is <strong>generating</strong> exactly when the order is directed in the sense that $E = E_+ - E_+$. In finite dimension a cone is generating exactly when it has nonempty interior, and then its interior is the set of <strong>strictly positive</strong> elements. A linear subspace $M$ is <strong>order dense</strong> when every element of $E$ lies between two elements of $M$.</p>
+<h3 id="order-boundedness-and-the-archimedean-property">Order Boundedness and the Archimedean Property</h3>
+<p><strong>Definition.</strong> The <strong>order interval</strong> with endpoints $x\leq y$ is</p>
+<p>$$
+[x,y] = \{z : x \leq z \leq y\} = (x + E_+) \cap (y - E_+) .
+$$</p>
+<p>A set is <strong>order bounded</strong> when it is contained in an order interval, and a subset $A\subseteq E$ is <strong>bounded above</strong> when some $y$ satisfies $a\leq y$ for all $a\in A$.</p>
+<p><strong>Definition.</strong> The ordered vector space is <strong>Archimedean</strong> when, for every $x,y$,</p>
+<p>$$
+n\,x \leq y \ \text{for every } n\in\mathbb{N} \implies x \leq 0 .
+$$</p>
+<p>The real line, every ordered subspace of a space of real functions under the pointwise order, and every ordered vector space whose cone is closed for a linear topology are Archimedean. The standard non-Archimedean example is the lexicographic order on $\mathbb{R}^2$, in which $(0,1)$ is an infinitesimal against $(1,0)$.</p>
+<p><strong>Proposition.</strong> If $x\leq\epsilon u$ for every real $\epsilon>0$, then $x\leq0$, in an Archimedean space; and conversely an ordered vector space with an order unit is Archimedean exactly when this implication holds.</p>
+<p><em>Proof.</em> With $\epsilon = 1/n$ and $y = u$ the Archimedean condition gives the first claim. For the converse, $nx\leq u$ for all $n$ gives $x\leq u/n$ for all $n$, hence $x\leq0$.</p>
+<h3 id="order-units">Order Units</h3>
+<p><strong>Definition.</strong> An <strong>order unit</strong> of an ordered vector space $E$ is an element $u\in E_+$ such that for every $x\in E$ there is $\lambda>0$ with</p>
+<p>$$
+-\lambda u \leq x \leq \lambda u .
+$$</p>
+<p>Equivalently, the order intervals $[-\lambda u,\lambda u]$ absorb $E$, so that $u$ is an <strong>interior point of the cone</strong> for the order topology defined below; and an order unit exists exactly when the cone is generating and has an element whose order interval is absorbing.</p>
+<p><strong>Proposition (the order-unit norm).</strong> Let $E$ be Archimedean with order unit $u$. The formula</p>
+<p>$$
+\|x\|_u = \inf\{\lambda > 0 : -\lambda u \leq x \leq \lambda u\}
+$$</p>
+<p>defines a norm on $E$, the <strong>order-unit norm</strong>, whose closed unit ball is the order interval $[-u,u]$, and for which $u$ has norm one.</p>
+<p><em>Proof.</em> The set in the infimum is nonempty by the order-unit property, and it is upward closed, so the infimum is a nonnegative real. Homogeneity and the triangle inequality come from the closure of $E_+$ under addition and nonnegative scaling: $[-\lambda u,\lambda u]+[-\mu u,\mu u]\subseteq[-(\lambda+\mu)u,(\lambda+\mu)u]$, and $[-\lambda u,\lambda u]$ is scaled by $\lambda$. For definiteness, $\|x\|_u = 0$ says $x\leq\epsilon u$ and $-x\leq\epsilon u$ for every $\epsilon>0$, whence $x\leq0$ and $x\geq0$ by the Archimedean property, so $x = 0$. The unit ball is $[-u,u]$ by definition, and $\|u\|_u = 1$.</p>
+<p><strong>Proposition (uniqueness up to equivalence).</strong> Any two order units $u,v$ give equivalent order-unit norms: there are constants $0 < c\leq C$ with</p>
+<p>$$
+c\,\|x\|_u \leq \|x\|_v \leq C\,\|x\|_u
+$$</p>
+<p>for all $x$, so the order topology does not depend on the order unit.</p>
+<p><em>Proof.</em> Since $u$ is an order unit there is $\alpha>0$ with $u\leq\alpha v$, and since $v$ is an order unit there is $\beta>0$ with $v\leq\beta u$. Then $[-\lambda u,\lambda u]\subseteq[-\lambda\alpha v,\lambda\alpha v]$ and $[-\lambda v,\lambda v]\subseteq[-\lambda\beta u,\lambda\beta u]$, which is the two inequalities with $C = \alpha$ and $c = 1/\beta$.</p>
+<h3 id="the-order-topology">The Order Topology</h3>
+<p><strong>Definition.</strong> The <strong>order topology</strong> of an Archimedean ordered vector space with order unit is the topology of the order-unit norm. Its basic open sets are the translates of the order intervals $\epsilon[-u,u]$.</p>
+<p><strong>Proposition.</strong> In the order topology the cone $E_+$ is closed, the order intervals are closed convex bounded subsets, addition and nonnegative scaling are continuous, and the order unit lies in the interior of the cone.</p>
+<p><em>Proof.</em> The sets $[-\epsilon u,\epsilon u]$ are the closed balls of the norm, so intervals are closed; the cone is the intersection of the closed half-spaces $f\geq0$ over the functionals $f$ that are positive on the cone, and each such functional is continuous for the order-unit norm by the next proposition; addition is continuous because the norm is, and the unit ball is convex because the interval is. The order unit is interior to the cone because $u - \epsilon u$ has norm $1-\epsilon<1$ around it.</p>
+<p><strong>Proposition (order-bounded functionals and the dual).</strong> For a linear functional $f$ on $E$ the following are equivalent: $f$ is continuous for the order topology; $f$ is bounded on the order interval $[-u,u]$; $f$ is <strong>order bounded</strong>, meaning that it maps order-bounded sets to bounded sets of reals. The set of such functionals is the <strong>order dual</strong> $E'$, and $f\geq0$ in it exactly when $f(x)\geq0$ for every $x\in E_+$.</p>
+<p><em>Proof.</em> Continuity is boundedness on the unit ball $[-u,u]$, which is order boundedness; and a functional positive on the cone is monotone, hence bounded on an interval by its values at the endpoints, so order bounded. The positivity criterion is the definition of the dual order.</p>
+<h3 id="the-state-space">The State Space</h3>
+<p><strong>Definition.</strong> The <strong>state space</strong> of $E$ with order unit $u$ is the set of <strong>states</strong>,</p>
+<p>$$
+S = \{f\in E' : f\geq0,\ f(u) = 1\},
+$$</p>
+<p>a convex subset of the dual, and a <strong>pure state</strong> is an extreme point of $S$.</p>
+<p><strong>Proposition.</strong> $S$ is nonempty, convex, and a base of the cone $(E')_+$ of positive functionals: every positive functional is a nonnegative multiple of a state. When $E$ is a Banach space in its order-unit norm and $u$ is its own unit, $S$ is weak-<em> compact, by the Banach–Alaoglu theorem of </em>Duality Theory<em>, so it has extreme points by the Krein–Milman theorem of </em>Convex Sets and the Convex Hull*.</p>
+<p><em>Proof.</em> The order-unit property and the Hahn–Banach theorem produce a functional with $f(u)=1$ and $\lvert f\rvert\leq1$ on $[-u,u]$, which is a state. Convexity is linearity in $f$; the base property is that every $g\geq0$ with $g(u)=\alpha>0$ is $g = \alpha(g/\alpha)$ with $g/\alpha$ a state. The compactness is the weak-* compactness of the polar of the unit ball, and the extreme points follow.</p>
+<p>The cone of positive functionals, the states and their extreme points are developed in <em>The Cone of Positive Functionals</em> later in this category; the integral representation of a state and the Choquet boundary in <em>Cones, Extremal Rays and the Choquet Theory</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-space-of-continuous-functions">The Space of Continuous Functions</h3>
+<p>Let $E = C(X)$ be the continuous real functions on a compact Hausdorff space, with the pointwise order, so that $E_+$ is the cone of nonnegative functions, and let $u = 1$ be the constant function. The space is Archimedean, $1$ is an order unit, the order-unit norm is the supremum norm, and the order topology is the topology of uniform convergence. The states are the probability measures on $X$ by the Riesz representation theorem; the pure states are the point evaluations, which is the Krein–Milman theorem for the simplex of probability measures, and the finite-dimensional case is the simplex of <em>Convex Analysis</em>.</p>
+<h3 id="a-matrix-algebra">A Matrix Algebra</h3>
+<p>Let $E = H_n(\mathbb{R})$ be the real symmetric matrices under the Loewner order, whose cone is the positive semidefinite matrices. The identity matrix is an order unit, the order-unit norm is the operator norm, since $-\lambda 1\leq x\leq\lambda1$ for a Hermitian $x$ exactly when every eigenvalue of $x$ lies in $[-\lambda,\lambda]$, and the order topology is the norm topology. The states are the positive linear functionals normalised at the identity; the extreme ones are the vector states, and this is the finite-dimensional instance of the theory of <em>Jordan Algebras and the Positive Cone</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>ordered vector space</strong> is a real vector space with a positive cone $E_+$ that is closed under addition and nonnegative scaling and is pointed, and the order $x\leq y \iff y-x\in E_+$ is a partial order compatible with the linear operations, with positive part $E_+$; it is total or directed according to the cone, and generating when the cone has nonempty interior in finite dimension. The space is <strong>Archimedean</strong> when $nx\leq y$ for all $n$ forces $x\leq0$. An <strong>order unit</strong> $u$ is a positive element whose order intervals absorb the space; it defines the <strong>order-unit norm</strong> $\|x\|_u = \inf\{\lambda>0 : -\lambda u\leq x\leq\lambda u\}$, whose closed unit ball is $[-u,u]$, and two order units give equivalent norms, so the <strong>order topology</strong> is independent of the unit. In the order topology the cone is closed, the intervals are closed convex bounded, the operations are continuous, and the order-bounded functionals are exactly the continuous ones, so the order dual is the dual. The <strong>state space</strong> $S = \{f\geq0 : f(u)=1\}$ is a convex base of the positive cone of the dual, weak-<em> compact in the Banach case and hence with extreme points. The order-unit norm is the notation of </em>Jordan Algebras and the Positive Cone<em>; the duality is </em>Duality Theory<em>; the extreme-point theory is </em>Convex Sets and the Convex Hull<em>; the Riesz-space structure is deferred to </em>The Order Projection<em>, and the integral representation to </em>Cones, Extremal Rays and the Choquet Theory*.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$, $E_+$</td>
+<td>Ordered vector space, positive cone</td>
+</tr>
+<tr>
+<td>$x\leq y$</td>
+<td>$y - x\in E_+$</td>
+</tr>
+<tr>
+<td>$[x,y]$</td>
+<td>Order interval between $x$ and $y$</td>
+</tr>
+<tr>
+<td>Order bounded, directed, generating</td>
+<td>Contained in an interval; every pair bounded above; $E = E_+ - E_+$</td>
+</tr>
+<tr>
+<td>Archimedean</td>
+<td>$nx\leq y$ for all $n$ implies $x\leq0$</td>
+</tr>
+<tr>
+<td>$u$</td>
+<td>Order unit</td>
+</tr>
+<tr>
+<td>$\|x\|_u = \inf\{\lambda > 0 : -\lambda u \leq x \leq \lambda u\}$</td>
+<td>Order-unit norm</td>
+</tr>
+<tr>
+<td>$S = \{f\in E' : f\geq0,\ f(u)=1\}$</td>
+<td>State space, a convex base of $(E')_+$</td>
+</tr>
+<tr>
+<td>Pure state</td>
+<td>Extreme point of $S$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Topological Vector Spaces</em>, Chapters 1–5 (Springer, 1987), for ordered vector spaces, cones and the order topology.</li>
+<li>Graham Jameson, <em>Ordered Linear Spaces</em>, Lecture Notes in Mathematics 141 (Springer, 1970), for the positive cone, the order unit and the order-unit norm in their general form.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the cone, the order topology and the order dual.</li>
+<li>Karl R. Stromberg, <em>An Introduction to Classical Real Analysis</em> (Wadsworth, 1981), for the order-unit norm and the state space in the function-space case.</li>
+<li>Erik M. Alfsen, <em>Compact Convex Sets and Boundary Integrals</em> (Springer, 1971), for the state space as a convex set and its extreme points.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

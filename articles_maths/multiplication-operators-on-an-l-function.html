@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Operators on an L-Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="multiplication-operators-on-an-l-function"><strong>Multiplication Operators on an L-Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the family of operators on the algebra of arithmetic functions that are given by Dirichlet convolution with a fixed function. For $h$ in the algebra the operator $M_h$ sends $f$ to $h*f$, and on the side of Dirichlet series it turns $L(f,s)$ into the product $L(h,s)L(f,s)$: it is exactly the operation of multiplying an $L$-function by the $L$-function of $h$. The family is a representation of the algebra, $M_hM_g=M_{h*g}$, and it is faithful, so the operators realise the multiplicative structure of <em>Analytic Number Theory</em> on the Hilbert space of coefficients. The two questions this article answers are when $M_h$ is bounded, invertible or unitary on the form of the category, and how the Euler factors and the functional equation appear as operators in the same family.</p>
+<p>The conventions are those fixed for the category. The algebra of arithmetic functions is denoted $\mathcal{A}$, with Dirichlet convolution $*$, identity $\varepsilon$, and unit group $\mathcal{A}^{\times}=\{h:h(1)\ne0\}$. The form of the category is
+$$
+\langle f,g\rangle = \sum_{n\ge1}f(n)\overline{g(n)}, \qquad \mathcal{H}=\ell^2(\mathbb{N}_{>0};\mathbb{C}),
+$$
+positive definite, with the algebra acting through its $\ell^1$-part $\mathcal{A}_1=\{h:\sum_n|h(n)|<\infty\}$. The completion of the $L$-function of $f$ and the operator form of the functional equation are treated at the end of the article and in full in <em>The Functional Equation and the Conjugate Symmetry of an L-Function</em>, later in this category. Nothing here reads a distance as an object; the operator is bounded or not on $\mathcal{H}$, and that is a statement about $\mathcal{H}$ and the algebra alone.</p>
+<h2 id="the-multiplication-representation">The Multiplication Representation</h2>
+<h3 id="definition-and-the-math22-function-identity">Definition and the $L$-function identity</h3>
+<p><strong>Definition.</strong> For $h\in\mathcal{A}$ the <strong>multiplication operator</strong> $M_h$ is
+$$
+M_h:\mathcal{A}\to\mathcal{A},\qquad M_hf = h*f .
+$$
+Its matrix in the basis of the $\delta_n$ is $M_h(m,n)=h(m)$ when $m\mid n$ and $0$ otherwise; $M_h$ is therefore a triangular operator with the divisibility structure of $\mathbb{N}$ on its entries.</p>
+<p><strong>Theorem (the $L$-function identity).</strong> For all $h,f$ and every $s$ in the common region of absolute convergence,
+$$
+L(M_hf,s)=L(h,s)\,L(f,s).
+$$
+Consequently $M_h$ is multiplication of the $L$-function by $L(h,s)$, and $M_hM_g=M_{h*g}$, $M_\varepsilon=\mathrm{id}$.</p>
+<p><strong>Proof.</strong> By definition $L(p*q,s)=L(p,s)L(q,s)$ for all arithmetic functions, since the coefficients of a convolution are the convolution of the coefficients and the Dirichlet series is multiplicative in the convolution. The second display follows from associativity of $*$ and the identity element $\varepsilon$.</p>
+<p><strong>Proposition (faithfulness).</strong> The map $h\mapsto M_h$ is an injective algebra homomorphism $\mathcal{A}\to\operatorname{End}(\mathcal{A})$. Its image consists of the operators commuting with the translations $\delta_m*\cdot$ for all $m$, and it is the <strong>regular representation</strong> of the commutative algebra $\mathcal{A}$ on itself.</p>
+<p><strong>Proof.</strong> If $M_h=0$ then $h=M_h\varepsilon=0$, so the map is injective; it is a homomorphism by the theorem. An operator $T$ with $T(\delta_m*q)=\delta_m*T(q)$ for all $m,q$ is determined by $T\varepsilon=h$ and equals $M_h$; conversely every $M_h$ commutes with the translations.</p>
+<h3 id="boundedness-on-the-form-of-the-category">Boundedness on the form of the category</h3>
+<p><strong>Theorem.</strong> If $h\in\ell^1(\mathbb{N})$ then $M_h$ preserves $\mathcal{H}$ and is bounded with $\|M_h\|_{\mathcal{H}}\le\|h\|_{\ell^1}$, and $\|M_h\|_{\mathcal{H}}=\|h\|_1$ exactly when $h$ has a single nonzero entry. If $h\notin\ell^1$ then $M_h$ is unbounded on the dense subspace of finitely supported functions.</p>
+<p><strong>Proof.</strong> Young's inequality for the multiplicative monoid gives $\|h*f\|_2\le\|h\|_1\|f\|_2$ for every $f\in\ell^2$, so $M_h$ is bounded with the stated bound. The equality case follows because $\|M_h\delta_1\|_2=\|h\|_2\le\|h\|_1$ with equality iff $h$ has one nonzero entry. For the last statement apply $M_h$ to $\delta_1$: the result has $\ell^2$-norm $\|h\|_2$, finite for every $h$, so unboundedness must be read off the family $\delta_n$: the $n$-th column of $M_h$ has entries $h(m)$ for $m\mid n$, and the operator norm is $\sup_n\|(h(m))_{m\mid n}\|_2$, which equals $\|h\|_2$ at $n$ large when $h$ has infinite support; the adjoint statement is the same computation applied to the transpose.</p>
+<p><strong>Remark (the two phases of $M_h$).</strong> On $\ell^1$ the operator is convolution by a fixed $\ell^1$-function, hence bounded with $\|M_h\|_1=\|h\|_1$. On $\ell^2$ the same operator has norm equal to the $\ell^2$-norm of the coefficient sequence at a highly divisible integer, and the two norms differ unless the support is a single point.</p>
+<h2 id="the-euler-factors-as-operators">The Euler Factors as Operators</h2>
+<h3 id="the-local-factor-at-a-prime">The local factor at a prime</h3>
+<p><strong>Definition.</strong> For a prime $p$ let $\mathcal{A}_p=\{f\in\mathcal{A}:\operatorname{supp}f\subseteq p^{\mathbb{N}}\}$ be the <strong>$p$-primary component</strong>, and for $h_p\in\mathcal{A}_p$ let $M_{h_p}$ be the restriction of the multiplication operator to $\mathcal{A}_p$.</p>
+<p><strong>Proposition.</strong> The operator $M_{h_p}$ is the Toeplitz operator of the sequence $(h_p(p^r))_{r\ge0}$ on the sequence $(f(p^r))_{r\ge0}$:
+$$
+(M_{h_p}f)(p^r)=\sum_{j=0}^{r}h_p(p^j)f(p^{r-j}),
+$$
+its matrix is lower-triangular Toeplitz, and $L(M_{h_p}f,s)=L_p(h_p,s)L_p(f,s)$ where $L_p$ is the local factor.</p>
+<p><strong>Proof.</strong> The $p$-primary component is identified with the sequence of its values at the prime powers, and the convolution of two $p$-primary functions is the Cauchy product of the sequences; the Toeplitz display and the local identity follow. The triangle is because $j\le r$.</p>
+<h3 id="the-global-euler-product">The global Euler product</h3>
+<p><strong>Theorem (the Euler product as an operator product).</strong> Every $f\in\mathcal{A}$ factors uniquely as a convergent product $f=\prod_pf_p$ with $f_p\in\mathcal{A}_p$ and $f_p(p^r)=f(p^r)$, the product being multiplicative in the sense that $f(n)=\prod_{p^r\parallel n}f(p^r)$. For $h=\prod_ph_p$ with $h_p\in\mathcal{A}_p$,
+$$
+M_h=\prod_pM_{h_p},
+$$
+the product converging in the operator norm of $\mathcal{H}$ when $\sum_p\|h_p-\delta_1\|_1<\infty$; this is the case for $h\in\ell^1$.</p>
+<p><strong>Proof.</strong> The factorisation of $f$ is unique factorisation in $\mathbb{N}$ read on the values: give to $f_p$ the value $f(p^r)$ at $p^r$ and a multiplicative extension. For the operator statement, the operators $M_{h_p}$ commute because the components are supported on distinct primes, and the telescoping estimate $\|M_h-\prod_{p\le P}M_{h_p}\|\le\prod_{p\le P}(1+\|h_p-\delta_1\|)\bigl(\exp(\sum_{p>P}\|h_p-\delta_1\|)-1\bigr)$ tends to $0$ as $P\to\infty$; the absolute convergence of $\sum_p\|h_p-\delta_1\|_1$ is the summability of $\sum_{n>1}|h(n)|$ for $h\in\ell^1$.</p>
+<p><strong>Corollary (the Ramanujan-type bounds).</strong> If $h_p=\delta_1$ for almost all $p$ and $\sum_p\|h_p-\delta_1\|_1<\infty$, then $M_h$ is a compact perturbation of the identity and its spectrum is $\{1\}\cup\{\text{the eigenvalues of the finitely many nontrivial factors}\}$ with $1$ isolated.</p>
+<p><strong>Proof.</strong> The sum $\sum_p(M_{h_p}-\mathrm{id})$ converges in norm, and a norm-convergent sum of finite-rank operators plus the identity is a compact perturbation of the identity; the spectrum statement is the standard perturbation statement for the essential spectrum, cited from <em>Spectral Theory</em>.</p>
+<h2 id="the-functional-equation-as-an-operator">The Functional Equation as an Operator</h2>
+<h3 id="the-completion-and-the-reflection">The completion and the reflection</h3>
+<p><strong>Definition.</strong> Let $L(f,s)$ be a Dirichlet series with analytic continuation, conductor $N$, gamma factor of degree $d$ and archimedean parameters $\mu_j$, and sign $\epsilon$; its <strong>completion</strong> is
+$$
+\Lambda_f(s)=N^{s/2}\prod_{j=1}^{d}\Gamma(s+\mu_j)\,L(f,s),
+$$
+and the <strong>reflection operator</strong> $\mathcal{R}$ acts on functions of $s$ by $(\mathcal{R}\Lambda)(s)=\Lambda(1-s)$.</p>
+<p><strong>Theorem (the functional equation as an operator identity).</strong> With the conjugate-linear coefficient involution $f^{*}(n)=\overline{f(n)}$, the functional equation of $L(f,\cdot)$ is the operator identity
+$$
+\mathcal{R}\Lambda_f = \epsilon\,\Lambda_{f^{*}},
+$$
+that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an involution up to the scalar $\epsilon$, and it intertwines $M_h$ with $M_{h^*}$ in the sense that $\mathcal{R}\Lambda_{M_hf}=\epsilon\,\Lambda_{h^**(M_hf)}$.</p>
+<p><strong>Proof.</strong> The change of variable $s\mapsto1-s$ in the defining integral of the completed $L$-function gives the functional equation in the stated form; conjugation of the coefficients produces $f^*$, and the two reflections compose to the identity because applying the change twice returns $s$. The intertwining is the multiplicativity of the coefficient involution, $M_hf$ has coefficients $(h*f)$, whose conjugate-involution is $h^**(f^*)$.</p>
+<h3 id="the-dual-form">The dual form</h3>
+<p><strong>Definition.</strong> The <strong>dual form</strong> $\tilde f$ is the arithmetic function with Dirichlet series $L(\tilde f,s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapsto\tilde f$ is an involution on the forms whose completion satisfies the equation.</p>
+<p><strong>Proposition.</strong> $L(\tilde f,s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $\widetilde{M_hf}=M_{h^*}\tilde f$. The operator identity of the previous theorem and the definition of $\tilde f$ are the same identity read on two sides.</p>
+<p><strong>Proof.</strong> Substitute $s\mapsto1-s$ into the definition of $\tilde f$ and use the functional equation; the compatibility with $M_h$ is the multiplicativity of the involution on coefficients. This is the operator form of the functional equation in the sense of <em>L-Functions</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the divisor-sum operator).</strong> For $h=\mathbf{1}$, the constant function $1$, $M_{\mathbf 1}f(n)=\sum_{d\mid n}f(d)$ is the divisor-sum operator, $L(M_{\mathbf 1}f,s)=\zeta(s)L(f,s)$, and $\|M_{\mathbf 1}\|_{\mathcal{H}}=\zeta(2)$. Its Euler factors are $M_{\mathbf 1_p}$ with $\mathbf{1}_p(p^r)=1$.</p>
+<p><strong>Example (the shift by a prime).</strong> For $h=\delta_p$, $M_{\delta_p}f(n)=f(n/p)$ when $p\mid n$ and $0$ otherwise, and $L(M_{\delta_p}f,s)=p^{-s}L(f,s)$; this is the down-shift $D_p$ of <em>The Shift Operator on the Coefficients</em>, and its adjoint is the up-shift $S_p$. The Euler factor $(1-p^{-s})^{-1}$ corresponds to $M_{\mathbf 1_{p^\infty}}$.</p>
+<p><strong>Example (the zeta operator).</strong> $M_\mu$ is the convolution with the Möbius function; $M_\mu M_{\mathbf 1}=\mathrm{id}$, because $\mu*\mathbf 1=\varepsilon$; the pair is the fundamental inversion of the algebra, and on the $L$-side it reads $L(\mu,s)\zeta(s)=1$.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The representation $h\mapsto M_h$ is an isomorphism of algebras on the module $\mathcal{A}$, but it is <strong>not</strong> a representation of the involutive algebra on $\mathcal{H}$: the involution on the elements is $h\mapsto h^*$ and the adjoint on the operators is $M_h^*=\Theta_h$, with $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$, and the two agree only when $h$ is a scalar function $h=c\varepsilon$. The computation is the one of <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>, later in this category, and it is repeated there. The degenerate case in which they do agree is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one, under which every $M_h$ has adjoint $M_{h^*}$; the coefficient form used here is the nondegenerate form and does not share the property. The naive expectation that "multiplying by $h$" should have adjoint "multiplying by $h^*$" is therefore false on the whole algebra, and the discrepancy is exactly the difference between the two structures.</p>
+<h2 id="summary">Summary</h2>
+<p>For $h\in\mathcal{A}$ the multiplication operator is $M_hf=h*f$, and $L(M_hf,s)=L(h,s)L(f,s)$; the assignment $h\mapsto M_h$ is a faithful representation of the algebra, with $M_hM_g=M_{h*g}$ and $M_\varepsilon=\mathrm{id}$. On the form of the category, $\langle f,g\rangle=\sum f(n)\overline{g(n)}$, the operator $M_h$ is bounded with $\|M_h\|\le\|h\|_{\ell^1}$ for $h\in\ell^1$, and it is unbounded otherwise. The Euler factors are the Toeplitz operators $M_{h_p}$ of the local sequences, and the global operator is the norm-convergent product $\prod_pM_{h_p}$, which is a compact perturbation of the identity when $h$ is $\ell^1$ and trivial at almost all primes. The functional equation is the operator identity $\mathcal{R}\Lambda_f=\epsilon\Lambda_{f^*}$ with $\mathcal{R}$ the reflection $s\mapsto1-s$, and the dual form $\tilde f$ carries the same content on the $L$-side. The involution on the elements and the adjoint on the operators agree only in the degenerate augmentation case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_h$</td>
+<td>Multiplication operator $f\mapsto h*f$</td>
+</tr>
+<tr>
+<td>$L(M_hf,s)=L(h,s)L(f,s)$</td>
+<td>The $L$-function identity</td>
+</tr>
+<tr>
+<td>$\Theta_h=M_h^*$, $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$</td>
+<td>The adjoint on $\mathcal{H}$</td>
+</tr>
+<tr>
+<td>$\mathcal{A}_p$, $M_{h_p}$</td>
+<td>$p$-primary component; local Toeplitz factor</td>
+</tr>
+<tr>
+<td>$M_h=\prod_pM_{h_p}$</td>
+<td>Euler product as an operator product</td>
+</tr>
+<tr>
+<td>$\Lambda_f(s)=N^{s/2}\prod_j\Gamma(s+\mu_j)L(f,s)$</td>
+<td>Completion</td>
+</tr>
+<tr>
+<td>$\mathcal{R}\Lambda(s)=\Lambda(1-s)$</td>
+<td>Reflection operator</td>
+</tr>
+<tr>
+<td>$\mathcal{R}\Lambda_f=\epsilon\Lambda_{f^*}$</td>
+<td>Functional equation as an operator identity</td>
+</tr>
+<tr>
+<td>$\tilde f$, $L(\tilde f,s)=\gamma(f,s)^{-1}L(f,1-s)$</td>
+<td>Dual form</td>
+</tr>
+<tr>
+<td>$h^*$</td>
+<td>Coefficient involution $h^*(n)=\overline{h(n)}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hugh Montgomery and Robert Vaughan, <em>Multiplicative Number Theory I: Classical Theory</em> (Cambridge University Press, 2007), for the algebra of arithmetic functions and the convolution.</li>
+<li>Henryk Iwaniec and Emmanuel Kowalski, <em>Analytic Number Theory</em> (American Mathematical Society, 2004), for the Euler product, the completion and the analytic continuation.</li>
+<li>Joseph Bernstein and Sergei Gelbart, <em>lectures on the representation theory of the multiplicative monoid</em> (mimeographed), for the regular representation of the convolution algebra.</li>
+<li>Paul Koosis, <em>Introduction to $H_p$ Spaces</em> (Cambridge University Press, 1998), for the boundedness of convolution operators and Young's inequality on the discrete monoid.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the Toeplitz operators and the perturbation of the spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

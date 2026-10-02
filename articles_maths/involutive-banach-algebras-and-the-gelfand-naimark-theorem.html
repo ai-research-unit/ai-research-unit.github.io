@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Banach Algebras and the Gelfand–Naimark Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-banach-algebras-and-the-gelfandnaimark-theorem"><strong>Involutive Banach Algebras and the Gelfand–Naimark Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involutive Banach algebra</strong> is a Banach algebra together with an involution, an anti-automorphism $\sigma$ of order two; a <strong>$\mathrm{C}^*$-algebra</strong> is an involutive Banach algebra in which the involution governs the norm through the <strong>$\mathrm{C}^*$-identity</strong></p>
+<p>$$
+\lVert a^*a\rVert = \lVert a\rVert^2 .
+$$</p>
+<p>The identity is a rigidity statement: it makes the involution isometric, it makes every $*$-homomorphism contractive, and it makes the $\mathrm{C}^*$-norm unique on a given $*$-algebra. Its harvest is the <strong>Gelfand–Naimark theorem</strong>, which says that every $\mathrm{C}^*$-algebra is, up to an isometric $*$-isomorphism, an algebra of operators on a Hilbert space; in the commutative case the Gelfand transform is the isometric $*$-isomorphism onto the continuous functions on the spectrum, and the abstract $\mathrm{C}^*$-algebra is recovered from a compact Hausdorff space. This article develops the involutive Banach algebra and the Gelfand–Naimark theorem at the level the rest of the category needs.</p>
+<p>This article is the base of the <code>- * Theory</code> group of <em>Topology on Linear Algebras</em>. It assumes the Banach algebra, the submultiplicative norm, the spectrum, the spectral radius and the Gelfand duality of <em>Topological Algebras and Banach Algebras</em>; the continuous involution $\sigma$, its fixed and skew parts and the $\mathrm{C}^*$-case of <em>Involutive Topological Linear Algebras</em>; the abstract involution, the symmetric and skew elements and the opposite algebra of <em>Involutive Linear Algebras</em>; the bounded operators, the adjoint and the $\mathrm{C}^*$-identity of $B(H)$ from <em>Operator Algebras</em>, which owns the von Neumann algebras, the modular theory and the full representation theory; and the operator version from <em>Operators on a C</em>-Algebra<em>, earlier in this category. The states, the positive functionals and the GNS construction are </em>States and Positive Functionals on an Involutive Algebra<em>, the article that follows; the positivity and the order are </em>Hermitian and Self-Adjoint Elements of a Banach Algebra*.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{C}$ with a <strong>continuous involution</strong> $\sigma$, written $a^* = \sigma(a)$, so that $(ab)^* = b^*a^*$, $(a+b)^* = a^*+b^*$, $(\lambda a)^* = \bar\lambda a^*$ and $a^{**} = a$; the algebra is <strong>involutive</strong> with or without the continuity of $\sigma$, and a <strong>$\mathrm{C}^*$-algebra</strong> when the $\mathrm{C}^*$-identity holds; $A^+ = \{a : a^* = a\}$ is the set of self-adjoint (Hermitian) elements and $A^-$ the skew elements; a <strong>$*$-homomorphism</strong> $\varphi : A \to B$ is an algebra homomorphism with $\varphi(a^*) = \varphi(a)^*$; and a <strong>$*$-representation</strong> is a $*$-homomorphism into $B(H)$ for a Hilbert space $H$. The grade involution $\alpha$ of the signed block is an automorphism and is not the map $\sigma$ used here.</p>
+<h2 id="involutive-banach-algebras">Involutive Banach Algebras</h2>
+<p><strong>Definition.</strong> An <strong>involutive Banach algebra</strong> is a Banach algebra $A$ with an involution $\sigma$, an additive map of order two with $\sigma(ab) = \sigma(b)\sigma(a)$ and $\sigma(\lambda a) = \bar\lambda\sigma(a)$. It is a <strong>$\mathrm{C}^*$-algebra</strong> when $\lVert a^*a\rVert = \lVert a\rVert^2$ for all $a$.</p>
+<p><strong>Proposition (the involution of a $\mathrm{C}^*$-algebra is isometric).</strong> In a $\mathrm{C}^*$-algebra, $\lVert a^*\rVert = \lVert a\rVert$ for all $a$. Hence the involution is continuous, with $\lVert\sigma\rVert = 1$.</p>
+<p><strong>Proof.</strong> $\lVert a\rVert^2 = \lVert a^*a\rVert \leq \lVert a^*\rVert\lVert a\rVert$, so $\lVert a\rVert \leq \lVert a^*\rVert$; replacing $a$ by $a^*$ and using $a^{**} = a$ gives the reverse, so the two norms are equal, and $\lVert\sigma\rVert = 1$ by definition of the operator norm. $\square$</p>
+<p><strong>Proposition ($*$-homomorphisms are contractive).</strong> A unital $*$-homomorphism $\varphi : A \to B$ of unital $\mathrm{C}^*$-algebras is contractive, $\lVert\varphi(a)\rVert \leq \lVert a\rVert$, and isometric on the positive elements. A $*$-homomorphism of $\mathrm{C}^*$-algebras is continuous.</p>
+<p><strong>Proof.</strong> For a self-adjoint $a$ the spectrum is real and $\sigma(\varphi(a)) \subseteq \sigma(a)$, so $r(\varphi(a)) \leq r(a) = \lVert a\rVert$; for arbitrary $a$ apply this to $a^*a$, noting $\varphi(a^*a) = \varphi(a)^*\varphi(a)$ is self-adjoint: $\lVert\varphi(a)\rVert^2 = \lVert\varphi(a)^*\varphi(a)\rVert = r(\varphi(a)^*\varphi(a)) \leq r(a^*a) = \lVert a\rVert^2$, using the $\mathrm{C}^*$-identity and the spectral radius formula. $\square$</p>
+<p><strong>Theorem (uniqueness of the $\mathrm{C}^*$-norm).</strong> A $*$-algebra carries at most one $\mathrm{C}^*$-norm, and every $*$-isomorphism of $\mathrm{C}^*$-algebras is isometric.</p>
+<p><strong>Proof.</strong> In a $\mathrm{C}^*$-algebra the norm is determined by the algebraic and involutive structure through $\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a)$, the spectral radius being defined by invertibility in the $*$-algebra; two $\mathrm{C}^*$-norms on the same $*$-algebra thus agree. A $*$-isomorphism is an isometry by the same formula applied on both sides. $\square$</p>
+<h2 id="the-gelfandnaimark-theorem">The Gelfand–Naimark Theorem</h2>
+<p><strong>Theorem (Gelfand–Naimark).</strong> Every $\mathrm{C}^*$-algebra $A$ admits a faithful isometric $*$-representation $\pi : A \to B(H)$ on a Hilbert space $H$; equivalently, $A$ is isometrically $*$-isomorphic to a closed $*$-subalgebra of $B(H)$. In particular $A$ is semisimple.</p>
+<p><strong>Proof (sketch).</strong> The states of $A$ separate the points, and the GNS construction attaches to each state a cyclic $*$-representation whose vector is cyclic; the direct sum of these representations over the states is a $*$-representation, and it is faithful and isometric because for $a \neq 0$ some state reaches $\lVert a\rVert$ on $a^*a$. The construction of the states and of the GNS representation is <em>States and Positive Functionals on an Involutive Algebra</em>; the identification of the norm of the image with that of $A$ uses the $\mathrm{C}^*$-identity and the isometry of the involution. $\square$</p>
+<p><strong>Theorem (commutative Gelfand–Naimark).</strong> Let $A$ be a commutative unital $\mathrm{C}^*$-algebra. Then the Gelfand transform $a \mapsto \hat a$ is an isometric $*$-isomorphism onto $C(\operatorname{Max}(A))$, and the assignment $A \mapsto \operatorname{Max}(A)$ is a contravariant equivalence between commutative unital $\mathrm{C}^*$-algebras and compact Hausdorff spaces.</p>
+<p><strong>Proof.</strong> For a character $\chi$ of a $\mathrm{C}^*$-algebra one has $\chi(a^*) = \overline{\chi(a)}$, because $a = h + ik$ with $h,k$ self-adjoint and $\chi(h), \chi(k)$ real; the transform is therefore a $*$-homomorphism. The $\mathrm{C}^*$-identity gives $\lVert\hat a\rVert_\infty^2 = \sup\lvert\chi(a)\rvert^2 = \sup\chi(a^*a) = r(a^*a) = \lVert a\rVert^2$, using the spectral radius formula for the self-adjoint element $a^*a$; hence the transform is isometric, its image is a closed $*$-subalgebra separating points and containing the constants, and it is all of $C(\operatorname{Max}(A))$ by the Stone–Weierstrass theorem. The equivalence is the functoriality of the construction, a unital $*$-homomorphism inducing the continuous map of the spectra by composition. $\square$</p>
+<h2 id="the-spectrum-and-the-involution">The Spectrum and the Involution</h2>
+<p><strong>Proposition (the spectrum of the image).</strong> A unital $*$-homomorphism $\varphi : A \to B$ of $\mathrm{C}^*$-algebras satisfies $\sigma(\varphi(a)) \subseteq \sigma(a)$ and $\lVert\varphi(a)\rVert \leq \lVert a\rVert$; for an injective $\varphi$ the spectra agree. A self-adjoint element has real spectrum and $\lVert a\rVert = r(a)$; a positive element, one of the form $b^*b$, has non-negative spectrum.</p>
+<p><strong>Proof.</strong> The containment of the spectra is the behaviour of the spectrum under a unital homomorphism; the norm inequality is the contractivity above. For self-adjoint $a$ the element $a - \lambda$ is invertible for non-real $\lambda$ by the inequality $\lVert(a-\lambda)^{-1}\rVert \leq \lvert\operatorname{Im}\lambda\rvert^{-1}$ obtained from the $\mathrm{C}^*$-identity, so the spectrum is real, and then $r(a) = \lVert a\rVert$ by Gelfand duality applied to the commutative $\mathrm{C}^*$-algebra generated by $a$. For $b^*b$ the element is self-adjoint and $\sigma(b^*b) \subseteq [0,\infty)$ because $b^*b - \lambda$ is invertible for $\lambda < 0$ by the same inequality. $\square$</p>
+<p><strong>Remark (the boundary with the operator theory).</strong> The Gelfand–Naimark representation, the states and the positivity are proved in full in <em>Operator Algebras</em>, which owns the von Neumann algebras, the bicommutant theorem, the weak and strong topologies, the factors, the traces and the modular theory. This article records the involutive Banach algebra and the embedding it needs, and does not redevelop the operator algebra.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the continuous functions).</strong> For a compact Hausdorff space $X$, the algebra $C(X,\mathbb{C})$ with the sup norm and the involution $\sigma(f) = \bar f$ is a commutative unital $\mathrm{C}^*$-algebra: $\lVert\bar f f\rVert_\infty = \lVert f\rVert_\infty^2$. Its Gelfand transform is the identity reading of $X = \operatorname{Max}(C(X))$.</p>
+<p><strong>Example (the matrix algebra).</strong> For $A = M_n(\mathbb{C})$ with the operator norm and the conjugate transpose $X^* = \bar X^{\mathsf{T}}$, the $\mathrm{C}^*$-identity holds because $\lVert X^*X\rVert = \lVert X\rVert^2$; the algebra is the finite-dimensional model of $B(H)$, and its $*$-representations are the unitary equivalence classes of the defining representation.</p>
+<p><strong>Example ($L^1$ of a group).</strong> The convolution algebra $L^1(G)$ of a locally compact group with the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ is an involutive Banach algebra; it is a $\mathrm{C}^*$-algebra only after completing to the reduced group $\mathrm{C}^*$-algebra, and its $*$-representations are the unitary representations of $G$. The group algebra is <em>Group Algebras</em>.</p>
+<h2 id="the-universal-representation-and-the-enveloping-algebra">The Universal Representation and the Enveloping Algebra</h2>
+<p><strong>Theorem (the universal representation).</strong> Let $A$ be a unital $\mathrm{C}^*$-algebra and $\mathcal{S}(A)$ its state space. The direct sum</p>
+<p>$$
+\pi_u = \bigoplus_{f \in \mathcal{S}(A)} \pi_f : A \longrightarrow B\Bigl(\bigoplus_{f \in \mathcal{S}(A)} H_f\Bigr)
+$$</p>
+<p>is a faithful isometric <code>*</code>-representation, the <strong>universal representation</strong>, and for every $a$ the norm is the supremum of the GNS norms,</p>
+<p>$$
+\lVert a\rVert = \sup_{f \in \mathcal{S}(A)} \lVert\pi_f(a)\rVert = \sup_{f \in \mathcal{S}(A)} f(a^*a)^{1/2} .
+$$</p>
+<p><strong>Proof.</strong> Each $\pi_f$ is a <code>*</code>-representation by the GNS construction of <em>States and Positive Functionals on an Involutive Algebra</em>, so the direct sum is one and its norm is the supremum of the norms of the summands. For the isometry, $\lVert\pi_f(a)\rVert^2 = \lVert\pi_f(a^*a)\rVert$; the state $f$ with $f(a^*a) = \lVert a^*a\rVert$, which exists because $a^*a$ is self-adjoint, has $\langle\pi_f(a^*a)\xi_f,\xi_f\rangle = \lVert a^*a\rVert$ with $\pi_f(a^*a) \geq 0$, so $\lVert\pi_f(a^*a)\rVert \geq \lVert a^*a\rVert$ and hence $\lVert\pi_f(a^*a)\rVert = \lVert a^*a\rVert$; the supremum is therefore $\lVert a^*a\rVert = \lVert a\rVert^2$. $\square$</p>
+<p><strong>Corollary (the enveloping von Neumann algebra).</strong> The weak closure $\pi_u(A)''$ is the <strong>enveloping von Neumann algebra</strong> $A^{**}$ of $A$; it is the second dual of $A$ with the Arens product, and $A$ sits in it as a weakly dense $\mathrm{C}^*$-subalgebra. The algebra $A^{**}$ and its projections, weights and modular theory are <em>Operator Algebras</em> and <em>Involutive Operator Algebras and the Commutant</em>.</p>
+<p><strong>Proposition (the norm is an algebraic invariant).</strong> The universal representation shows that a unital <code>*</code>-homomorphism $\varphi : A \to B$ of unital $\mathrm{C}^*$-algebras satisfies $\lVert\varphi\rVert \leq 1$ and that an injective one is isometric, because the norm of $A$ is the supremum of the values $f(a^*a)^{1/2}$ over the states, and the states pull back under $\varphi$ when $\varphi$ is unital. This reproves the contractivity of <em>The Involution and the Spectral Radius</em> from the states rather than from the spectrum.</p>
+<h2 id="summary">Summary</h2>
+<p>An involutive Banach algebra is a Banach algebra with an anti-automorphism $\sigma$ of order two; a $\mathrm{C}^*$-algebra adds the $\mathrm{C}^*$-identity $\lVert a^*a\rVert = \lVert a\rVert^2$, which forces the involution to be isometric, $\lVert a^*\rVert = \lVert a\rVert$, and makes every $*$-homomorphism contractive, $\lVert\varphi(a)\rVert \leq \lVert a\rVert$, and every $*$-isomorphism isometric; a $*$-algebra carries at most one $\mathrm{C}^*$-norm, because $\lVert a\rVert^2 = r(a^*a)$. The Gelfand–Naimark theorem embeds every $\mathrm{C}^*$-algebra faithfully and isometrically as a closed $*$-subalgebra of $B(H)$, through the GNS representations of its states, and in the commutative case the Gelfand transform is the isometric $*$-isomorphism $A \to C(\operatorname{Max}(A))$, a contravariant equivalence with compact Hausdorff spaces. A self-adjoint element has real spectrum and $\lVert a\rVert = r(a)$, and a positive element $b^*b$ has non-negative spectrum; the von Neumann algebras and the modular theory are <em>Operator Algebras</em>. The states and the GNS construction are developed in <em>States and Positive Functionals on an Involutive Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\lVert\cdot\rVert$</td>
+<td>Banach algebra, its norm</td>
+</tr>
+<tr>
+<td>$a^* = \sigma(a)$</td>
+<td>The involution, an anti-automorphism of order two</td>
+</tr>
+<tr>
+<td>$\lVert a^*a\rVert = \lVert a\rVert^2$</td>
+<td>The $\mathrm{C}^*$-identity</td>
+</tr>
+<tr>
+<td>$A^+$, $A^-$</td>
+<td>Self-adjoint (Hermitian) and skew elements</td>
+</tr>
+<tr>
+<td>$\varphi$, $*$-homomorphism</td>
+<td>$\varphi(a^*) = \varphi(a)^*$</td>
+</tr>
+<tr>
+<td>$\pi : A \to B(H)$</td>
+<td>A $*$-representation</td>
+</tr>
+<tr>
+<td>$r(a)$, $\operatorname{Max}(A)$, $\hat a$</td>
+<td>Spectral radius, maximal ideal space, Gelfand transform</td>
+</tr>
+<tr>
+<td>$\lVert a^*\rVert = \lVert a\rVert$, $\lVert\varphi(a)\rVert \leq \lVert a\rVert$</td>
+<td>Isometry of the involution; contractivity</td>
+</tr>
+<tr>
+<td>$\pi_u = \bigoplus_f \pi_f$, $\mathcal{S}(A)$</td>
+<td>The universal representation, over the state space</td>
+</tr>
+<tr>
+<td>$A^{**} = \pi_u(A)''$</td>
+<td>The enveloping von Neumann algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the Gelfand–Naimark theorem, the states and the GNS construction.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the $\mathrm{C}^*$-algebras, the isometry of the involution and the contractivity of the $*$-homomorphisms.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the involutive Banach algebras, the spectral theory and the uniqueness of the $\mathrm{C}^*$-norm.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the general theory of the involutive Banach algebras.</li>
+<li>Gérard J. Murphy, <em>$\mathrm{C}^*$-Algebras and Operator Theory</em> (Academic Press, 1990), for the functional calculus and the positive elements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

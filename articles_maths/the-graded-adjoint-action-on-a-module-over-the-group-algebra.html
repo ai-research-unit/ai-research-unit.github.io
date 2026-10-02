@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over the Group Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-the-group-algebra"><strong>The Graded Adjoint Action on a Module over the Group Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded module over the group algebra carries a grading, a homogeneous action and a twisted action, and the adjoint of the action is a second action: the algebra acts on the endomorphisms by conjugation, on the dual module by the transposed action, and the grading involution keeps a bookkeeping of parities and signs. What makes the construction graded is that the grading involution is part of the data, so that the compatibility of the action with the grading becomes a compatibility of the adjoint action with the grade involution, and the sign rule attaches a parity to every operator and a sign to every transpose, exactly as the graded action attaches a sign to every product. On the group algebra the construction acquires its analytic content from the <code>*</code>-structure: the adjoint of the action operator of $a$ is the action operator of $a^*$, and the adjoint action of a unitary element preserves self-adjointness. This article fixes the graded adjoint action, its compatibility with the grading, the sign rule for the transpose, and the connection with the involution.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the group algebra, its involution and its <code>*</code>-structure from <em>The Convolution Algebra $L^1(G)$</em> and <em>The Group Algebra as an Involutive Algebra</em>; the grade involution, the signed sandwich and the signed left multiplication from <em>The Signed Sandwich on the Group Algebra</em> and <em>The Signed Left Multiplication on the Group Algebra</em>; the graded module, the grading involution, the homogeneous action, the sign rule and the twisted action from <em>The Graded Action on a Module over the Group Algebra</em>; the abstract graded module, the graded bilinear forms, the transposes and the adjoint action from <em>The Graded Adjoint Action on a Module over a Graded Algebra</em> and <em>The Graded Adjoint Action on a Module over a Topological Group</em>; the adjoints of the elementary operators from <em>Hermitian Operators on a Group Algebra</em>, <em>Unitary Representations and the Adjoint</em> and <em>The Signed Adjoint of the Left Multiplication on the Group Algebra</em>, immediately preceding; and the Hilbert spaces, the bounded operators, the adjoint and the commutant from <em>Operator Algebras</em>.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$; $\mathcal{A} = L^1(G)$ carries the involution $f^*$ and the Haar pairing; $\alpha$ is a grade involution, $\mathrm{A}f = \alpha(f)$, and $M = M^+\oplus M^-$ is a <strong>graded Banach module</strong> over $\mathcal{A}$ with grading involution $\varepsilon$ ($+1$ on $M^+$, $-1$ on $M^-$) and bounded homogeneous action written $\pi(a)m = a\cdot m$, so that $\varepsilon\,\pi(a)\,\varepsilon = \pi(\alpha(a))$; the <strong>twisted action</strong> is $a\cdot_\alpha m = \pi(\alpha(a))m$. When $M$ is a Hilbert space and the action is <code>*</code>-compatible, $\pi(a^*) = \pi(a)^*$.</p>
+<h2 id="graded-forms-and-transposes">Graded Forms and Transposes</h2>
+<p><strong>Definition.</strong> A <strong>graded form</strong> on $M$ is a bilinear form $B$ with $B(\varepsilon v,\varepsilon w) = B(v,w)$ (<strong>even</strong>) or $B(\varepsilon v,\varepsilon w) = -B(v,w)$ (<strong>odd</strong>); the <strong>transpose</strong> $T^\#$ of an operator $T$ on $M$ is defined by $B(Tv,w) = B(v,T^\#w)$ when $B$ is nondegenerate.</p>
+<p><strong>Proposition (the grading involution and the transpose).</strong> The grading involution is self-adjoint for an even graded form and anti-self-adjoint for an odd one,</p>
+<p>$$
+\varepsilon^\# = \varepsilon \ \text{(even)},\qquad \varepsilon^\# = -\varepsilon \ \text{(odd)},
+$$</p>
+<p>and for a homogeneous operator $T$ of parity $|T|$ the transpose has the same parity, $\varepsilon T^\#\varepsilon = (-1)^{|T|}T^\#$.</p>
+<p><strong>Proof.</strong> For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$; an even form pairs equal parities and an odd form opposite parities, which gives the two cases for $\varepsilon^\#$, and the parity of the transpose follows from $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ compared with $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w)$. $\square$</p>
+<p><strong>Theorem (the sign rule for the transpose).</strong> For a homogeneous operator $T$ and a homogeneous graded form, the transpose is characterised by</p>
+<p>$$
+B(Tv,w) = (-1)^{|T|\,q}\,B(v,T^\#w),
+$$</p>
+<p>with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.</p>
+<p><strong>Proof.</strong> The case $q = 0$ is the definition; for $q = 1$ it follows from the anti-self-adjointness of $\varepsilon$ by the computation of the proposition, and both are extended by linearity to the homogeneous decomposition. $\square$</p>
+<h2 id="the-adjoint-action-on-the-endomorphisms">The Adjoint Action on the Endomorphisms</h2>
+<p><strong>Definition.</strong> For a unit $a\in\mathcal{A}$ the <strong>adjoint action</strong> on the endomorphisms of $M$ is</p>
+<p>$$
+a\cdot T = \pi(a)\,T\,\pi(a)^{-1} .
+$$</p>
+<p><strong>Theorem (it is an action preserving the parity).</strong> The adjoint action is an action of the unit group of $\mathcal{A}$ on $\mathrm{End}(M)$, it is compatible with the grading in the form</p>
+<p>$$
+\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon ,
+$$</p>
+<p>and it preserves the parity, $|a\cdot T| = |T|$.</p>
+<p><strong>Proof.</strong> The action property is the standard conjugation identity $(ab)\cdot T = a\cdot(b\cdot T)$ with $ab$ written multiplicatively in $\mathcal{A}$; the compatibility is $\varepsilon\,\pi(a)\,T\,\pi(a)^{-1}\,\varepsilon = \pi(\alpha(a))\,\varepsilon T\varepsilon\,\pi(\alpha(a))^{-1}$, using $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ twice; the parity is preserved because conjugation by any invertible operator and the twist $\sigma$ preserve homogeneous degree. $\square$</p>
+<p><strong>Corollary (the twisted action appears).</strong> Reading the compatibility on the module rather than on the endomorphisms, the grading involution interchanges the given action and the twisted action, $\varepsilon\pi(a) = \pi(\alpha(a))\varepsilon$, which is the sign rule of <em>The Graded Action on a Module over the Group Algebra</em>; the adjoint action of $a$ on the endomorphisms equals the given action of $a$ composed with the inverse of the given action of $a$, and the twisted adjoint action is its $\alpha$-transport.</p>
+<p><strong>Proof.</strong> The interchange identity is $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ composed on the right with $\varepsilon$; the description of the adjoint action is its definition, and the twisted version is obtained by replacing $a$ with $\alpha(a)$. $\square$</p>
+<h2 id="the-hilbert-adjoint-and-the-involution">The Hilbert Adjoint and the Involution</h2>
+<p><strong>Theorem (the adjoint of the action operator).</strong> Suppose $M$ is a Hilbert space and the action is <code>*</code>-compatible, $\pi(a^*) = \pi(a)^*$; then for a unitary element $a$ the action operator is unitary, $\pi(a)^{-1} = \pi(a)^*$, and the adjoint of the adjoint action is</p>
+<p>$$
+\bigl(a\cdot T\bigr)^* = a\cdot T^* ,
+$$</p>
+<p>so the adjoint action of a unitary element preserves self-adjointness, positivity and unitarity.</p>
+<p><strong>Proof.</strong> $(a\cdot T)^* = (\pi(a)T\pi(a)^{-1})^* = \pi(a)^{-1*}T^*\pi(a)^* = \pi(a)T^*\pi(a)^{-1}$ when $\pi(a)^* = \pi(a)^{-1}$; positivity is preserved because $a\cdot T = \pi(a)T\pi(a)^*$ is a <code>*</code>-congruence, and unitarity because the map is a <code>*</code>-automorphism of $\mathrm{End}(M)$. $\square$</p>
+<p><strong>Corollary (the grading and the Hilbert adjoint).</strong> If the two summands $M^\pm$ are orthogonal and $\pi$ is <code>*</code>-compatible, then the grading involution is self-adjoint, $\varepsilon^* = \varepsilon$, and it commutes with the adjoint action, $\varepsilon(a\cdot T)\varepsilon = (a\cdot(\varepsilon T\varepsilon))$; the signs of the graded forms of the previous section are then the signs read off the orthogonal decomposition.</p>
+<p><strong>Proof.</strong> Orthogonality of $M^\pm$ makes the projection $\varepsilon$ self-adjoint; the commutation with the adjoint action is the compatibility of the action with the grading, and the identification of the signs is the proposition on graded forms in the Hilbert-space case. $\square$</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<p><strong>Theorem (trivial and inner grade involutions).</strong> If $\alpha = \mathrm{id}$ then the given and the twisted actions coincide and the adjoint action is the ordinary conjugation, $\varepsilon$ commuting with everything; if $\alpha = c_z$ is inner then the twisted action is the transport of the given action by $z$ and the compatibility reduces to the conjugation by $z$. In both cases the parity bookkeeping collapses.</p>
+<p><strong>Proof.</strong> With $\alpha = \mathrm{id}$, $\varepsilon$ is central and $\pi(\alpha(a)) = \pi(a)$; with $\alpha = c_z$, $\pi(\alpha(a)) = \pi(z)\pi(a)\pi(z)^{-1}$, which gives the stated transport and compatibility. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The adjoint of a convolution operator on its own terms, its expression on $L^p$ and the involutive algebra of convolution operators are <em>The Adjoint of a Convolution Operator</em>, the last article of this group; the abstract graded adjoint action over a graded algebra and the graded module over a topological group are the Part I and Part II articles of the same name; the graded forms of this article are not the Hermitian forms of the <code>- * Theory</code> group, which are conjugate-linear and are treated in <em>Hermitian Forms and the Group Algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A graded module over the group algebra carries a homogeneous action and its $\alpha$-twist, the grading involution $\varepsilon$ interchanging them, and the adjoint action $a\cdot T = \pi(a)T\pi(a)^{-1}$ of a unit is compatible with the grading in the form $\varepsilon(a\cdot T)\varepsilon = \alpha(a)\cdot(\varepsilon T\varepsilon)$, preserving the parity of operators. For a homogeneous graded form the transpose obeys the sign rule $B(Tv,w) = (-1)^{|T|q}B(v,T^\#w)$ with $q = 0$ for an even form and $q = 1$ for an odd one, and the grading involution is self-adjoint for an even form and anti-self-adjoint for an odd one. When the module is a Hilbert space with a <code>*</code>-compatible action and $a$ is unitary, the adjoint of the adjoint action is $(a\cdot T)^* = a\cdot T^*$, so self-adjointness, positivity and unitarity are preserved by the adjoint action; and when the two graded summands are orthogonal the grading involution is self-adjoint and commutes with the adjoint action. The degenerate cases are the trivial grade involution, where the two actions coincide and the grading is central, and the inner grade involution, where the compatibility is conjugation by the inner element. The adjoint of a convolution operator is the neighbouring article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M = M^+\oplus M^-$, $\varepsilon$</td>
+<td>The graded module and its grading involution</td>
+</tr>
+<tr>
+<td>$a\cdot m = \pi(a)m$</td>
+<td>The homogeneous action</td>
+</tr>
+<tr>
+<td>$a\cdot_\alpha m = \pi(\alpha(a))m$</td>
+<td>The twisted action</td>
+</tr>
+<tr>
+<td>$\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$</td>
+<td>The compatibility of the action with the grading</td>
+</tr>
+<tr>
+<td>$B(Tv,w) = \pm B(v,T^\#w)$</td>
+<td>The sign rule for the transpose</td>
+</tr>
+<tr>
+<td>$\varepsilon^\# = \pm\varepsilon$</td>
+<td>Self- or anti-self-adjointness of $\varepsilon$</td>
+</tr>
+<tr>
+<td>$a\cdot T = \pi(a)T\pi(a)^{-1}$</td>
+<td>The adjoint action</td>
+</tr>
+<tr>
+<td>$\varepsilon(a\cdot T)\varepsilon = \alpha(a)\cdot(\varepsilon T\varepsilon)$</td>
+<td>Compatibility with the grading</td>
+</tr>
+<tr>
+<td>$(a\cdot T)^* = a\cdot T^*$</td>
+<td>The Hilbert adjoint, unitary $a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the adjoint, the <code>*</code>-congruences and the commutant.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for graded forms, their parity and the transposes they define.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the adjoint action of a group on an operator algebra.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the graded module, the sign rule and the twisted action.</li>
+<li>George W. Mackey, <em>The Theory of Unitary Group Representations</em> (University of Chicago Press, 1976), for the module picture of a representation and the conjugation action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

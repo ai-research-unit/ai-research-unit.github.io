@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Metrics and the Codifferential — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-metrics-and-the-codifferential"><strong>Hermitian Metrics and the Codifferential</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On a Hermitian manifold the <strong>codifferential</strong> acquires a second reading: the exterior derivative splits by type as $d=\partial+\bar\partial$, and the codifferential — the formal adjoint of $d$ — splits with it as $\delta=\partial^*+\bar\partial^*$, into the formal adjoints of the two type components. The Hermitian metric is the datum that produces the Hodge star, hence $\delta$, hence the <strong>Hodge Laplacian</strong> $\Delta=d\delta+\delta d$ and the two <strong>Dolbeault Laplacians</strong> $\Delta_\partial$ and $\Delta_{\bar\partial}$ built from $\partial^*$ and $\bar\partial^*$. This is the last entry of the operator group, and the article closes the loop: the involution $J$ and its invariant metric act on the operators of the exterior algebra exactly as the metric of the previous group acted on the connections.</p>
+<p>The article develops the Hermitian codifferential. It defines the real and the complex Hodge stars, the Hermitian pairing on the forms and the codifferential $\delta=-\star d\star$ of an even-dimensional manifold; it proves the adjointness of $d$ and $\delta$ in the Hermitian setting; it proves the <strong>bidegree split</strong> $\delta=\partial^*+\bar\partial^*$, with $\partial^*$ and $\bar\partial^*$ the formal adjoints of the type components; it defines the Dolbeault Laplacians, relates them to the Hodge Laplacian, and states the Kähler relation $\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$ as a forward reference; and it reads the complex conjugation of the forms as the involution of the layer, commuting with $d$ and $\delta$.</p>
+<p>The article assumes the exterior derivative, the Hodge star, the codifferential, the Laplace–de Rham operator and the Hodge theory of <em>Differential Forms and Stokes' Theorem</em>, <em>The Exterior Derivative</em> and <em>The Codifferential</em>, all in this category; the Hermitian metrics, the fundamental form and the Kähler conditions of <em>Hermitian Metrics and the Levi-Civita Connection</em>; the almost complex structure, the type decomposition, the operators $\partial,\bar\partial$ and the Dolbeault complex of <em>Hermitian Structures and the Almost Complex Structure</em>; the formal adjoint, the pairing and the Lagrange identity of <em>The Formal Adjoint of a Differential Operator</em>; and the global adjoint, the domain and the spectral theory of <em>The L2 Adjoint of a Differential Operator</em>, the previous entry of the group. The Hermitian Hodge decomposition and the Dolbeault cohomology, the Kähler identities and the Lefschetz decomposition are <em>Hermitian Metrics and the Hodge Theory</em> and <em>Kähler Geometry</em> in Part IV, and are named as forward references; the ellipticity and the Hodge theory of the de Rham complex are the operator group's. No physics is invoked.</p>
+<h2 id="the-hodge-star-of-a-hermitian-metric">The Hodge Star of a Hermitian Metric</h2>
+<h3 id="the-real-star-and-the-complex-star">The Real Star and the Complex Star</h3>
+<p>Let $(M,J,g)$ be a Hermitian manifold of complex dimension $m$, with real dimension $2m$, and let $\mathrm{vol}$ be the Riemannian volume form of $g$; the fundamental form satisfies $\omega^m = m!\,\mathrm{vol}$, a real $(m,m)$-form. The <strong>Hodge star</strong> $\star$ of the Riemannian metric is, on the real forms, the operator $\star : \Omega^k(M;\mathbb{R})\to\Omega^{2m-k}(M;\mathbb{R})$ characterised by $\alpha\wedge\star\beta = \langle\alpha,\beta\rangle_{g}\,\mathrm{vol}$, and it is extended to the complex-valued and the complexified forms by $\mathbb{C}$-linearity.</p>
+<p><strong>Proposition.</strong> As a $\mathbb{C}$-linear operator on the complexified forms, the Hodge star respects the type decomposition by</p>
+<p>$$
+\star : \Omega^{p,q} \longrightarrow \Omega^{m-q,m-p}, \qquad \star(\alpha^{p,q}) \in \Omega^{m-q,m-p},
+$$</p>
+<p>and it satisfies $\star^2 = (-1)^{k(2m-k)}$ on $\Omega^k$ with $k=p+q$. The Hermitian metric enters through the volume form and through the fibrewise metric on the forms.</p>
+<p><em>Proof.</em> The metric pairing of two complexified forms, $\alpha\wedge\star\beta=g(\alpha,\beta)\mathrm{vol}$, is nonzero only when the bidegrees of $\alpha$ and $\beta$ are transposed, that is, it pairs $\Omega^{p,q}$ with $\Omega^{q,p}$ into $\mathbb{C}$: the Hermitian metric pairs a $(1,0)$-form with a $(0,1)$-form and vanishes on two $(1,0)$-forms, so the pairing of the forms of two bidegrees is nondegenerate exactly between the transposed bidegrees. Since $\mathrm{vol}$ has bidegree $(m,m)$, the identity forces the bidegree of $\star\beta$ to be the complement, $(m-q,m-p)$, when $\beta$ has bidegree $(p,q)$; and the identity $\star^2=(-1)^{k(2m-k)}$ is the real formula for the $2m$-dimensional manifold, extended $\mathbb{C}$-linearly.</p>
+<p><strong>Definition.</strong> The <strong>Hermitian pairing</strong> of two complex-valued forms is</p>
+<p>$$
+\langle\alpha,\beta\rangle_{L^2} = \int_M \langle\alpha,\beta\rangle_g\, \mathrm{vol} = \int_M \bar\alpha\wedge\star\beta,
+$$</p>
+<p>conjugate-linear in the first variable and complex-linear in the second, where the fibrewise Hermitian inner product $\langle\alpha,\beta\rangle_g$ on the cotangent spaces is the one induced by the metric; the identity with the star uses the complex conjugate $\bar\alpha$ and is the standard expression of the Hermitian inner product through the Hodge operator, since $g(\bar\alpha,\beta)$ is conjugate-linear in $\alpha$ and linear in $\beta$.</p>
+<h3 id="the-codifferential-of-the-hermitian-metric">The Codifferential of the Hermitian Metric</h3>
+<p><strong>Theorem.</strong> On the Hermitian manifold, where the real dimension is even, $2m$, the <strong>codifferential</strong></p>
+<p>$$
+\delta = (-1)^{2m(k+1)+1}\,\star\,d\,\star = -\,\star\,d\,\star \ : \ \Omega^k(M;\mathbb{C})\longrightarrow\Omega^{k-1}(M;\mathbb{C})
+$$</p>
+<p>is the formal adjoint of the exterior derivative for the Hermitian pairing,</p>
+<p>$$
+\langle d\alpha,\beta\rangle_{L^2} = \langle\alpha,\delta\beta\rangle_{L^2}, \qquad \alpha,\beta \ \text{compactly supported},
+$$</p>
+<p>and it is the same operator as the Riemannian codifferential of <em>The Codifferential</em>, its sign convention fixed by the even dimension.</p>
+<p><em>Proof.</em> The general formula $\delta=(-1)^{r(k+1)+1}\star d\star$ of the codifferential in real dimension $r$ becomes $\delta=-\star d\star$ when $r=2m$ is even, because $(-1)^{2m(k+1)+1}=(-1)^{\text{even}+1}=-1$. The adjointness is the integration by parts proved in <em>The Codifferential</em>, and the Hermitian pairing induces the same $L^2$ inner product as the Riemannian one on the complex-valued forms, so the adjoint operator is the same. The local formula $\delta\omega=-\sum_i\iota_{e_i}\nabla_{e_i}\omega$ of <em>The Codifferential</em> holds as well.</p>
+<p><strong>Example.</strong> On $\mathbb{C}$ with the Euclidean metric, $m=1$, $2m=2$, and $\delta = -\star d\star$ on the forms of the plane: on a function $f$, $\delta f=0$; on the $1$-form $\alpha = a\,dx + b\,dy$, $\delta\alpha = -(\partial_x a + \partial_y b)$, the negative divergence; on the $2$-form $h\,dx\wedge dy$, $\delta = 0$. The signs are those of the Euclidean Hodge theory.</p>
+<h2 id="the-bidegree-split-of-the-codifferential">The Bidegree Split of the Codifferential</h2>
+<p><strong>Theorem.</strong> On an integrable almost complex structure, with $d=\partial+\bar\partial$, the codifferential decomposes by type,</p>
+<p>$$
+\delta = \partial^* + \bar\partial^*, \qquad \partial^* : \Omega^{p,q}\to\Omega^{p-1,q}, \quad \bar\partial^* : \Omega^{p,q}\to\Omega^{p,q-1},
+$$</p>
+<p>where $\partial^*$ and $\bar\partial^*$ are the formal adjoints of the type components for the Hermitian pairing:</p>
+<p>$$
+\langle\partial\alpha,\beta\rangle_{L^2} = \langle\alpha,\partial^*\beta\rangle_{L^2}, \qquad \langle\bar\partial\alpha,\beta\rangle_{L^2} = \langle\alpha,\bar\partial^*\beta\rangle_{L^2}.
+$$</p>
+<p>Consequently $\delta$ is the sum of an operator lowering $p$ and an operator lowering $q$, and it preserves the total degree by lowering it by one.</p>
+<p><em>Proof.</em> The adjoint of a sum is the sum of the adjoints, so $d^*=\partial^*+\bar\partial^*$; and $d^*=\delta$. The bidegrees of $\partial^*$ and $\bar\partial^*$ are those of $\partial$ and $\bar\partial$ with the degree reversed, because the Hermitian pairing is nondegenerate on each bidegree $\Omega^{p,q}\times\Omega^{p,q}\to\mathbb{C}$ and vanishes across different bidegrees; hence $\partial^*$ lowers $p$ and $\bar\partial^*$ lowers $q$. The two adjoint identities are the definitions.</p>
+<p><strong>Remark.</strong> The two adjoints satisfy $\partial^{*2}=0$ and $\bar\partial^{*2}=0$ and anticommute, since they are the adjoints of operators with those properties; the pair $(\partial^*,\bar\partial^*)$ is the adjoint of the Dolbeault double complex, the mirror of $(\partial,\bar\partial)$, exactly as $\delta$ mirrors $d$.</p>
+<h2 id="the-laplacians-of-a-hermitian-metric">The Laplacians of a Hermitian Metric</h2>
+<h3 id="the-hodge-and-dolbeault-laplacians">The Hodge and Dolbeault Laplacians</h3>
+<p><strong>Definition.</strong> The <strong>Hodge Laplacian</strong> (Laplace–de Rham operator) and the <strong>Dolbeault Laplacians</strong> are</p>
+<p>$$
+\Delta = d\delta+\delta d, \qquad \Delta_\partial = \partial\partial^*+\partial^*\partial, \qquad \Delta_{\bar\partial} = \bar\partial\bar\partial^*+\bar\partial^*\bar\partial .
+$$</p>
+<p><strong>Theorem.</strong> The four operators are formally self-adjoint, nonnegative on the compactly supported forms,</p>
+<p>$$
+\langle\Delta\alpha,\alpha\rangle_{L^2} = \lVert d\alpha\rVert_{L^2}^2 + \lVert\delta\alpha\rVert_{L^2}^2 \ge 0, \qquad \langle\Delta_{\bar\partial}\alpha,\alpha\rangle_{L^2} = \lVert\bar\partial\alpha\rVert_{L^2}^2 + \lVert\bar\partial^*\alpha\rVert_{L^2}^2 \ge 0,
+$$</p>
+<p>and they preserve the bidegree; $\Delta$ commutes with $d$ and $\delta$, and $\Delta_{\bar\partial}$ commutes with $\bar\partial$ and $\bar\partial^*$. Expanding $d=\partial+\bar\partial$ and $\delta=\partial^*+\bar\partial^*$ gives the decomposition</p>
+<p>$$
+\Delta = \Delta_\partial + \Delta_{\bar\partial} + \bigl(\partial\bar\partial^* + \bar\partial^*\partial\bigr) + \bigl(\bar\partial\partial^* + \partial^*\bar\partial\bigr),
+$$</p>
+<p>whose last two terms, the <strong>cross terms</strong>, vanish when the Hermitian metric is Kähler.</p>
+<p><em>Proof.</em> The self-adjointness and the nonnegativity are the adjointness of $d$ and $\delta$ and the identities $\langle\alpha,\partial^*\beta\rangle=\langle\partial\alpha,\beta\rangle$, applied as in the Riemannian case of <em>The Codifferential</em>; the preservation of the bidegree is the bidegree of the constituents. The expansion is the substitution and the collection of the terms by type. The vanishing of the cross terms on a Kähler manifold is the Kähler identity $\partial\bar\partial^*+\bar\partial^*\partial=0$, the content of <em>Kähler Geometry</em> in Part IV.</p>
+<p><strong>Corollary (the Kähler case).</strong> On a Kähler manifold the cross terms vanish and moreover $\Delta_\partial=\Delta_{\bar\partial}$, so</p>
+<p>$$
+\Delta = 2\Delta_\partial = 2\Delta_{\bar\partial},
+$$</p>
+<p>and a form is harmonic for $\Delta$ exactly when it is harmonic for $\Delta_{\bar\partial}$. The identities producing this coincidence, the Lefschetz decomposition and the Hodge–Riemann relations are <em>Kähler Geometry</em> and <em>Hermitian Metrics and the Hodge Theory</em> in Part IV, and are named as forward references; the present article supplies only the operators and the split.</p>
+<p><strong>Corollary.</strong> A form of type $(p,q)$ is harmonic for $\Delta_{\bar\partial}$ exactly when it is $\bar\partial$-closed and $\bar\partial^*$-closed; the space of such forms is the <strong>harmonic representative</strong> of its Dolbeault class. The finiteness of the space, the Hodge decomposition of the Dolbeault complex and the identification of the harmonic representatives with the Dolbeault cohomology require the ellipticity of $\Delta_{\bar\partial}$ and the analysis of the previous entry, and the resulting theorem is <em>Hermitian Metrics and the Hodge Theory</em> in Part IV.</p>
+<p><em>Proof.</em> The vanishing of $\Delta_{\bar\partial}\alpha = \bar\partial\bar\partial^*\alpha+\bar\partial^*\bar\partial\alpha$ paired with $\alpha$ gives $\lVert\bar\partial\alpha\rVert^2+\lVert\bar\partial^*\alpha\rVert^2=0$, hence the two closedness conditions, by the nonnegativity of the terms. The remaining assertions are the elliptic Hodge theory, deferred.</p>
+<h3 id="the-involution-on-the-forms">The Involution on the Forms</h3>
+<p><strong>Proposition (the conjugation).</strong> The complex conjugation of the complex-valued forms, $\alpha\mapsto\bar\alpha$, maps $\Omega^{p,q}$ to $\Omega^{q,p}$, commutes with the exterior derivative, $d\bar\alpha=\overline{d\alpha}$, and with the Hodge star, $\star\bar\alpha=\overline{\star\alpha}$; consequently it commutes with the codifferential, $\delta\bar\alpha=\overline{\delta\alpha}$, and exchanges the two types of the differential, $\overline{\partial\alpha}=\bar\partial\bar\alpha$ and $\overline{\bar\partial\alpha}=\partial\bar\alpha$.</p>
+<p><em>Proof.</em> The conjugation of the coefficients is well defined on the complexified forms, and it exchanges the $(1,0)$- and the $(0,1)$-parts, hence the bidegrees $(p,q)$ and $(q,p)$. The commutation with the real operator $d$ is immediate from the reality of the exterior derivative; the Hodge star of the Riemannian metric is a real operator, so it commutes with the conjugation; the codifferential is built from $d$ and $\star$, so it commutes too. The exchange of $\partial$ and $\bar\partial$ is the conjugate of the type decomposition.</p>
+<p><strong>Remark.</strong> The conjugation is the involution of the layer, and $\delta$ is the operator that the involution and the metric jointly produce; the fixed forms of the involution are the real forms, and the Hermitian pairing is the involution-compatible pairing of the complex forms. This closes the group: the almost complex structure $J$ gives the type decomposition and the operators $\partial$ and $\bar\partial$, the Hermitian metric gives the fundamental form, the Hodge star, the codifferential and the Laplacians, and the adjoints $\partial^*$ and $\bar\partial^*$ are the involution-side mirrors of the two type components, exactly as the metric connection of the previous group was the metric-side mirror of the connection.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Hermitian manifold of complex dimension $m$ the Hodge star maps $\Omega^{p,q}$ to $\Omega^{m-q,m-p}$ and the codifferential of the even-dimensional manifold is $\delta=-\star d\star$, the formal adjoint of $d$ for the Hermitian pairing $\langle\alpha,\beta\rangle_{L^2}=\int\alpha\wedge\star\bar\beta$. The exterior derivative splits by type, $d=\partial+\bar\partial$, and the codifferential splits with it, $\delta=\partial^*+\bar\partial^*$, into the formal adjoints of the type components, with bidegrees $(p-1,q)$ and $(p,q-1)$; this is the mirror of the Dolbeault double complex.</p>
+<p>The Hodge Laplacian $\Delta=d\delta+\delta d$ and the Dolbeault Laplacians $\Delta_\partial=\partial\partial^*+\partial^*\partial$ and $\Delta_{\bar\partial}=\bar\partial\bar\partial^*+\bar\partial^*\bar\partial$ are formally self-adjoint, nonnegative and bidegree-preserving; the expansion of $\Delta$ in terms of the two Dolbeault Laplacians carries two cross terms, which vanish exactly on a Kähler manifold, where then $\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$. The complex conjugation of the forms is the involution of the layer: it exchanges the bidegrees $(p,q)$ and $(q,p)$ and commutes with $d$, $\star$ and $\delta$, and it exchanges $\partial$ with $\bar\partial$. The Hodge decomposition of the Dolbeault complex, the finiteness of the harmonic spaces and the Kähler identities that make the cross terms vanish are <em>Hermitian Metrics and the Hodge Theory</em> and <em>Kähler Geometry</em> in Part IV.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m$, $2m$</td>
+<td>Complex and real dimensions of the Hermitian manifold</td>
+</tr>
+<tr>
+<td>$\omega$, $\omega^m=m!\,\mathrm{vol}$</td>
+<td>Fundamental form and the volume form</td>
+</tr>
+<tr>
+<td>$\star : \Omega^{p,q}\to\Omega^{m-q,m-p}$</td>
+<td>Hodge star; $\star^2=(-1)^{k(2m-k)}$ on $\Omega^k$</td>
+</tr>
+<tr>
+<td>$\langle\alpha,\beta\rangle_{L^2}=\int\alpha\wedge\star\bar\beta$</td>
+<td>Hermitian pairing on the complex-valued forms</td>
+</tr>
+<tr>
+<td>$\delta=-\star d\star$</td>
+<td>Codifferential; the sign from the even dimension $2m$</td>
+</tr>
+<tr>
+<td>$\partial$, $\bar\partial$</td>
+<td>Type components of $d$; $\partial\Omega^{p,q}\subset\Omega^{p+1,q}$, $\bar\partial\Omega^{p,q}\subset\Omega^{p,q+1}$</td>
+</tr>
+<tr>
+<td>$\partial^*$, $\bar\partial^*$; $\delta=\partial^*+\bar\partial^*$</td>
+<td>Formal adjoints of $\partial,\bar\partial$; the bidegree split</td>
+</tr>
+<tr>
+<td>$\Delta=d\delta+\delta d$</td>
+<td>Hodge Laplacian (Laplace–de Rham operator)</td>
+</tr>
+<tr>
+<td>$\Delta_\partial$, $\Delta_{\bar\partial}$</td>
+<td>Dolbeault Laplacians; self-adjoint, nonnegative</td>
+</tr>
+<tr>
+<td>Cross terms $\partial\bar\partial^*+\bar\partial^*\partial$, $\bar\partial\partial^*+\partial^*\bar\partial$</td>
+<td>Vanishing exactly in the Kähler case</td>
+</tr>
+<tr>
+<td>$\Delta=2\Delta_\partial=2\Delta_{\bar\partial}$</td>
+<td>Kähler case; forward reference to Part IV</td>
+</tr>
+<tr>
+<td>$\alpha\mapsto\bar\alpha$</td>
+<td>Conjugation; $\Omega^{p,q}\leftrightarrow\Omega^{q,p}$, commutes with $d,\star,\delta$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Hodge star, the codifferential, the Dolbeault Laplacians and the Kähler identities.</li>
+<li>Raymond O. Wells, <em>Differential Analysis on Complex Manifolds</em> (Springer, 3rd ed. 2008), for the Hermitian Hodge theory and the Dolbeault complex.</li>
+<li>Werner Ballmann, <em>Lectures on Kähler Manifolds</em> (European Mathematical Society, 2006), for the Laplacians, the Kähler identities and the Hodge decomposition.</li>
+<li>Frank W. Warner, <em>Foundations of Differentiable Manifolds and Lie Groups</em> (Springer, 1983), for the Hodge star, the codifferential and the Laplace–de Rham operator.</li>
+<li>Jean-Pierre Demailly, <em>Complex Analytic and Differential Geometry</em> (OpenContent, 2012), for the Hermitian metric, the complex Laplacians and the Hodge theory of the Dolbeault complex.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

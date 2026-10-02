@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Problem and the Green Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-problem-and-the-green-function"><strong>The Adjoint Problem and the Green Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every boundary-value problem has an adjoint, and the two Green functions are transposes of one another. For the problem</p>
+<p>$$
+Lu=f,\quad Bu=0
+$$</p>
+<p>the <strong>adjoint problem</strong> is</p>
+<p>$$
+L^{\dagger}v=g,\quad B^{*}v=0 ,
+$$</p>
+<p>where $L^{\dagger}$ is the formal adjoint and $B^{*}$ is the boundary condition selected by the requirement that the boundary form of the pair vanish; the Green function $G$ of the problem and the Green function $G^{*}$ of the adjoint problem satisfy the <strong>reciprocity relation</strong></p>
+<p>$$
+G(x,y) = \overline{G^{*}(y,x)} ,
+$$</p>
+<p>and in the self-adjoint case, $L^{\dagger}=L$ and $B^{*}=B$, the Green function is Hermitian, $G(x,y)=\overline{G(y,x)}$. The reciprocity is the integral form of the identity $\langle Lu,v\rangle=\langle u,L^{\dagger}v\rangle$ on the admissible pairs, and it is the reason the solution operators of the two problems are adjoints.</p>
+<p>This article reads the boundary-value problem with the conjugation that produces the adjoint. It fixes the adjoint problem and the adjoint boundary condition, proves the reciprocity relation for the Green functions and the symmetry of the Green function of a self-adjoint problem, derives the reciprocity of the solutions and the adjointness of the solution operators, and works the one-dimensional case and the first-order example in which the adjoint problem is genuinely different. It closes with the relation to the boundary form of <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>, of which the reciprocity is the operator form.</p>
+<p>The formal adjoint $L^{\dagger}$, the boundary operator and the Green operator are those of <em>Differential Operators</em> and <em>The Green Operator</em>; the boundary form and the self-adjoint condition are <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>; the weak formulation and the solution operator are <em>Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</em>; the adjoint of a bounded operator and the Fredholm alternative are <em>Banach and Hilbert Spaces</em> and <em>Fredholm Theory</em>; the spectral theorem for the self-adjoint realisation is <em>Self-Adjoint Elliptic Operators and the Spectral Theorem</em>; and the classical Green function of the interval and its symmetry are <em>Ordinary Differential Equations</em> and <em>The Green Operator</em>. The pairing of the boundary data that defines the adjoint condition is <em>The Adjoint Boundary Condition</em>, below, and the general identity behind the computation is <em>The Lagrange Identity and the Self-Adjoint System</em>, below.</p>
+<h2 id="the-adjoint-problem">The Adjoint Problem</h2>
+<p><strong>Definition.</strong> Let $L$ be a differential operator with smooth coefficients on a domain $\Omega$ and let $B$ be a boundary condition, so that the realisation is defined on the admissible subspace $\mathcal{A}=\{u : Bu=0\}$. The <strong>adjoint problem</strong> is the boundary-value problem for $L^{\dagger}$ with the boundary condition $B^{*}$ whose admissible subspace is</p>
+<p>$$
+\mathcal{A}^{*} = \{v : B^{*}v=0\} ,
+$$</p>
+<p>chosen so that the boundary form vanishes on the pair:</p>
+<p>$$
+\langle u,v\rangle_\partial = 0 \qquad \text{for every } u\in\mathcal{A},\ v\in\mathcal{A}^{*} .
+$$</p>
+<p>A condition $B^{*}$ with this property is the <strong>adjoint boundary condition</strong>; when $B^{*}=B$ the problem is self-adjoint.</p>
+<p><strong>Theorem (existence and the adjoint condition).</strong> For every boundary condition $B$ of a differential operator there is an adjoint condition $B^{*}$, unique when the realisation of $L$ has dense domain; the realisation of $L^{\dagger}$ under $B^{*}$ is the adjoint of the realisation of $L$ under $B$. The problem is self-adjoint exactly when $L^{\dagger}=L$ and $B^{*}=B$.</p>
+<p><em>Proof.</em> The adjoint operator has the domain characterised by the vanishing of the boundary form against the admissible subspace: $\mathrm{dom}\,L^{*}=\{v : \langle Lu,v\rangle=\langle u,L^{\dagger}v\rangle \text{ for all } u\in\mathcal{A}\}$, and by the Green formula this is the set of $v$ with $\langle u,v\rangle_\partial=0$ for all $u\in\mathcal{A}$, which is a boundary condition of the same order as $B$; that condition is $B^{*}$. The uniqueness and the self-adjoint case follow from the definition.</p>
+<p><strong>Definition.</strong> The <strong>Green function of the adjoint problem</strong> is the kernel $G^{*}$ of the inverse of the realisation of $L^{\dagger}$ under $B^{*}$: for $g$ in the range,</p>
+<p>$$
+(L^{\dagger}v=g,\ B^{*}v=0) \iff v(x) = \int_\Omega G^{*}(x,y)\,g(y)\,dy .
+$$</p>
+<h2 id="reciprocity">Reciprocity</h2>
+<p><strong>Theorem (the reciprocity relation).</strong> Let $G$ be the Green function of the problem $(L,B)$ and $G^{*}$ that of the adjoint problem $(L^{\dagger},B^{*})$. Then</p>
+<p>$$
+G(x,y) = \overline{G^{*}(y,x)} ,
+$$</p>
+<p>for almost every $(x,y)$; equivalently $G^{*}(x,y)=\overline{G(y,x)}$.</p>
+<p><em>Proof.</em> Let $u$ solve $Lu=f$ with $Bu=0$ and let $v$ solve $L^{\dagger}v=g$ with $B^{*}v=0$. The Green formula gives</p>
+<p>$$
+\int_\Omega(Lu)\bar v - \int_\Omega u\,\overline{L^{\dagger}v} = \langle u,v\rangle_\partial = 0 ,
+$$</p>
+<p>the vanishing being the defining property of the adjoint condition; hence</p>
+<p>$$
+\int_\Omega f\bar v = \int_\Omega u\,\bar g .
+$$</p>
+<p>Substituting the two Green representations, the left side becomes $\iint f(x)\overline{G^{*}(x,z)}\,\bar g(z)\,dz\,dx$ and the right side becomes $\iint G(y,w)f(w)\bar g(y)\,dw\,dy$; equating for all $f,g$ and relabelling gives the kernel identity</p>
+<p>$$
+G(y,w) = \overline{G^{*}(w,y)}
+$$</p>
+<p>for almost every pair $(y,w)$, which is the display after renaming the variables.</p>
+<p><strong>Theorem (symmetry in the self-adjoint case).</strong> If the problem is self-adjoint, then $G^{*}=G$ and the Green function is Hermitian,</p>
+<p>$$
+G(x,y) = \overline{G(y,x)} .
+$$</p>
+<p><em>Proof.</em> Self-adjointness is $L^{\dagger}=L$ and $B^{*}=B$, so the adjoint problem is the original one and $G^{*}=G$; the reciprocity relation then reads $G(x,y)=\overline{G(y,x)}$.</p>
+<p><strong>Corollary (reciprocity of the solutions).</strong> Under the hypotheses of the reciprocity theorem, the solutions $u$ of $Lu=f$ and $v$ of $L^{\dagger}v=g$ satisfy</p>
+<p>$$
+\langle u,g\rangle = \langle f,v\rangle ,
+$$</p>
+<p>the <strong>reciprocity of the solutions</strong>; in the self-adjoint case this is the symmetry of the Green operator, $\langle Gf,g\rangle=\langle f,Gg\rangle$.</p>
+<p><em>Proof.</em> The identity $\int f\bar v=\int u\bar g$ is the display; the self-adjoint case is the same statement with $G^{*}=G$, which is the symmetry of the Green operator.</p>
+<h2 id="the-one-dimensional-case-and-an-example">The One-Dimensional Case and an Example</h2>
+<p><strong>Theorem (the adjoint of a Sturm–Liouville problem).</strong> Let $\ell u=-(pu')'+qu$ on $(a,b)$ with real $p>0$, $q$, and let $B$ be a separated boundary condition. Then $L^{\dagger}=L$, and the adjoint condition $B^{*}$ is obtained by transposing the boundary matrices; for the Dirichlet, the Neumann and the Robin conditions the problem is self-adjoint, while for a general separated condition $B^{*}$ differs from $B$ and the two Green functions are related by the reciprocity relation.</p>
+<p><em>Proof.</em> The formal self-adjointness $L^{\dagger}=L$ is the integration by parts of <em>The Sturm–Liouville Operator</em>; the boundary form is the bracket $[p(u\bar v'-u'\bar v)]_a^b$, and the adjoint condition is the set of $v$ making the bracket zero against all admissible $u$, which is the transposed boundary matrix. For the listed conditions the matrix is symmetric up to the bracket and the condition is its own adjoint.</p>
+<p><strong>Example (the first-order operator).</strong> Let $L=d/dx$ on $(0,1)$ with the boundary condition $u(0)=0$. The formal adjoint is $L^{\dagger}=-d/dx$, and the boundary form is $\int_0^1(u'v+u v')dx=[u\bar v]_0^1 = u(1)\bar v(1)-u(0)\bar v(0)$; with $u(0)=0$ the vanishing for all admissible $u$ forces $v(1)=0$, so the adjoint condition is $v(1)=0$, the condition at the opposite endpoint. The Green function of $L=d/dx$ with $u(0)=0$ is $G(x,y)=\mathbf{1}_{y<x}$, the indicator of $y<x$; the Green function of the adjoint problem $-v'=g$ with $v(1)=0$ is $G^{*}(x,y)=\mathbf{1}_{x<y}$, the indicator of $x<y$; and the reciprocity relation reads $\mathbf{1}_{y<x}=\overline{\mathbf{1}_{x<y}}$, which is the identity of the two complementary indicators. The example shows the adjoint problem as a genuinely different problem, with the boundary condition moved to the other endpoint and the Green function transposed.</p>
+<p><strong>Example (the self-adjoint Dirichlet problem).</strong> For $-\Delta$ on $\Omega$ with the Dirichlet condition the problem is self-adjoint and the Green function is symmetric in the real case, $G(x,y)=G(y,x)$; the symmetry is the reciprocity of <em>The Green Operator</em> and the integral form of the symmetry of the realisation, and it is what makes the Dirichlet principle of <em>The Dirichlet Principle and the Hermitian Functional</em> available.</p>
+<h2 id="summary">Summary</h2>
+<p>Every boundary-value problem $(L,B)$ has an adjoint problem $(L^{\dagger},B^{*})$, where $L^{\dagger}$ is the formal adjoint and $B^{*}$ is the boundary condition making the boundary form vanish on the admissible pairs; $B^{*}$ is the condition characterising the domain of the adjoint operator, and the problem is self-adjoint when $L^{\dagger}=L$ and $B^{*}=B$. The Green function of the adjoint problem is related to the original one by the reciprocity relation $G(x,y)=\overline{G^{*}(y,x)}$, proved from the vanishing of the boundary form and the two Green representations; in the self-adjoint case $G^{*}=G$ and the Green function is Hermitian, $G(x,y)=\overline{G(y,x)}$, so in the real case it is symmetric. The same computation gives the reciprocity of the solutions $\langle u,g\rangle=\langle f,v\rangle$, that is, the adjointness of the two solution operators. In one dimension the adjoint of a Sturm–Liouville problem is computed by transposing the boundary matrices; the Dirichlet, Neumann and Robin conditions are self-adjoint, while the first-order example $L=d/dx$ with $u(0)=0$ has the adjoint $L^{\dagger}=-d/dx$ with $v(1)=0$ and the transposed Green functions $\mathbf{1}_{y<x}$ and $\mathbf{1}_{x<y}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L$, $L^{\dagger}$</td>
+<td>Differential operator and its formal adjoint</td>
+</tr>
+<tr>
+<td>$B$, $B^{*}$</td>
+<td>Boundary condition and its adjoint condition</td>
+</tr>
+<tr>
+<td>$\mathcal{A}$, $\mathcal{A}^{*}$</td>
+<td>Admissible subspaces of $B$ and $B^{*}$</td>
+</tr>
+<tr>
+<td>$\langle u,v\rangle_\partial$</td>
+<td>Boundary form of the pair</td>
+</tr>
+<tr>
+<td>$G(x,y)$, $G^{*}(x,y)$</td>
+<td>Green functions of the problem and of the adjoint problem</td>
+</tr>
+<tr>
+<td>$G(x,y)=\overline{G^{*}(y,x)}$</td>
+<td>Reciprocity relation</td>
+</tr>
+<tr>
+<td>$\langle u,g\rangle=\langle f,v\rangle$</td>
+<td>Reciprocity of the solutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Earl A. Coddington and Norman Levinson, <em>Theory of Ordinary Differential Equations</em> (McGraw–Hill, 1955), for the adjoint boundary-value problem and the symmetry of the Green function.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 2nd ed. 1982), for the adjoint conditions of a Sturm–Liouville problem.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the adjoint operator and its domain.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic Press, 1980), for the adjoint of an unbounded operator and the boundary conditions.</li>
+<li>David Gilbarg and Neil S. Trudinger, <em>Elliptic Partial Differential Equations of Second Order</em> (Springer, 2nd ed. 1983), for the adjoint elliptic problem and the Green function.</li>
+<li>Michael E. Taylor, <em>Partial Differential Equations I</em> (Springer, 2nd ed. 2011), for the adjoint boundary conditions and the reciprocity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

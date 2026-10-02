@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint Sandwich on the Group Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-sandwich-on-the-group-algebra"><strong>The Signed Adjoint Sandwich on the Group Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The signed sandwich is the two-sided operator $f\mapsto a*\alpha(f)*b$, built from the two convolutions and the grade involution, and its adjoint with respect to the Haar pairing is another signed sandwich, with both parameters carried through the composite of the grade involution and the involution of the algebra. The adjoint turns out to be an involution on the family of signed sandwiches, compatible with their coset structure and their composition law, and the comparison of the adjoint with the inverse gives the unitarity condition: a signed sandwich is unitary exactly when both its parameters are unitary elements of the algebra, which on the group algebra forces the group to be discrete or the reading to be taken in the measure algebra. The elements fixed by the composite involution give self-adjoint sandwiches. This article computes the adjoint, states the unitarity and self-adjointness criteria, and records the degenerate cases.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the group algebra, its involution and the regular representation from <em>The Convolution Algebra $L^1(G)$</em>, <em>The Group Algebra as an Involutive Algebra</em>, <em>The Group Algebra as an Algebra of Operators</em> and <em>The Left and Right Regular Representation</em>; the grade involution $\alpha$, the operator $\mathrm{A}f = \alpha(f)$, the signed and unsigned sandwiches, their composition laws, their inverses and the signed conjugations from <em>The Signed Sandwich on the Group Algebra</em>; the signed left multiplication from <em>The Signed Left Multiplication on the Group Algebra</em>; the adjoints of the elementary operators, $(L_a)^* = L_{a^*}$, $(R_b)^* = R_{b^*}$, $\mathrm{A}^* = \mathrm{A}$, from <em>Hermitian Operators on a Group Algebra</em> and <em>Unitary Representations and the Adjoint</em>, immediately preceding; the involution on the measure algebra from <em>The Involution on the Measure Algebra</em>; and the bounded operators and the adjoint from <em>Operator Algebras</em>. The signed adjoint of the reflection and of the left multiplication are <em>The Signed Adjoint of the Reflection on the Group Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on the Group Algebra</em>, next; the adjoint of a convolution operator on its own terms is <em>The Adjoint of a Convolution Operator</em>, the last article of this group; the discrete version, with the natural and signed bilinear forms, is <em>The Signed Adjoint Sandwich on a Topological Group</em>.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$; $\mathcal{A} = L^1(G)$ carries the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ and the <strong>Haar pairing</strong> $\langle f,h\rangle = \int_G f\overline{h}\,dx$; $\alpha$ is a <strong>grade involution</strong>, a continuous involutive automorphism of the Banach algebra $\mathcal{A}$ (a sign character or a measure-preserving group automorphism), $\mathrm{A}f = \alpha(f)$, and the <strong>unsigned</strong> and <strong>signed sandwiches</strong> are</p>
+<p>$$
+T_{a,b} = L_aR_b, \quad T_{a,b}(f) = a*f*b ; \qquad S_{a,b} = L_a\mathrm{A}R_b, \quad S_{a,b}(f) = a*\alpha(f)*b .
+$$</p>
+<p>The adjoint is taken with respect to the Haar pairing; the right-handed identities are stated in the <strong>unimodular</strong> case, the left-handed ones hold for every $G$.</p>
+<h2 id="the-adjoints-of-the-elementary-operators">The Adjoints of the Elementary Operators</h2>
+<p><strong>Theorem (recalled).</strong> With respect to the Haar pairing,</p>
+<p>$$
+(L_a)^* = L_{a^*}\ \ (\text{every } G), \qquad (R_b)^* = R_{b^*}, \qquad \mathrm{A}^* = \mathrm{A}\ \ (\text{unimodular } G),
+$$</p>
+<p>and the adjoint is an anti-linear involution, $(ST)^* = T^*S^*$, $(T^*)^* = T$.</p>
+<p><strong>Proof.</strong> These are the computations of <em>Hermitian Operators on a Group Algebra</em>, obtained from the unitary representation $\lambda$ for the left identity and from the right regular representation in the unimodular case for the right identity; the operator identities are general. $\square$</p>
+<p><strong>Corollary (the inversion in the parameter).</strong> $a^{**} = a$ and $(a^{-1})^* = (a^*)^{-1}$, so the adjoint of an elementary operator is the elementary operator of the involuted parameter; for a point mass $\delta_x$ on a discrete group, $\delta_x^* = \delta_{x^{-1}}$ and $(L_{\delta_x})^* = L_{\delta_{x^{-1}}}$.</p>
+<p><strong>Proof.</strong> $(a^{-1})^* = (a^*)^{-1}$ is the anti-automorphism law applied to $a*a^{-1} = 1$; the point-mass statement is the discrete case of $a^*$. $\square$</p>
+<h2 id="the-adjoint-of-the-signed-sandwich">The Adjoint of the Signed Sandwich</h2>
+<p><strong>Theorem (the explicit form of the adjoint).</strong> With respect to the Haar pairing, in the unimodular case,</p>
+<p>$$
+\bigl(T_{a,b}\bigr)^* = T_{a^*,\,b^*} , \qquad \bigl(S_{a,b}\bigr)^* = S_{\alpha(a^*),\,\alpha(b^*)} ,
+$$</p>
+<p>and the adjoint operation is an involution on each family, $\bigl((S_{a,b})^*\bigr)^* = S_{a,b}$.</p>
+<p><strong>Proof.</strong> By the anti-automorphism property and the elementary adjoints, $(S_{a,b})^* = (L_a\mathrm{A}R_b)^* = R_b^*\mathrm{A}^*L_a^* = R_{b^*}\mathrm{A}L_{a^*}$. Now $\mathrm{A}L_c = L_{\alpha(c)}\mathrm{A}$ and $R_d\mathrm{A} = \mathrm{A}R_{\alpha^{-1}(d)} = \mathrm{A}R_{\alpha(d)}$, so $R_{b^*}\mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A}R_{\alpha(b^*)} = S_{\alpha(a^*),\alpha(b^*)}$. The unsigned formula is the case $\alpha = \mathrm{id}$ read off the same computation, and the double adjoint uses $\alpha^2 = \mathrm{id}$ and $a^{**} = a$. $\square$</p>
+<p><strong>Corollary (compatibility with the coset structure and the composition law).</strong> The adjoint carries the signed sandwiches to the signed sandwiches and the unsigned to the unsigned, and it is compatible with the composition law of <em>The Signed Sandwich on the Group Algebra</em>,</p>
+<p>$$
+\bigl(S_{c,d}S_{a,b}\bigr)^* = S_{a,b}^*\,S_{c,d}^* , \qquad S_{a,b}^* = T_{a,b}^*\,\mathrm{A} = S_{\alpha(a^*),\alpha(b^*)} ,
+$$</p>
+<p>and it respects the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$, carrying $\mathrm{A}$ to itself.</p>
+<p><strong>Proof.</strong> The first identity is the anti-automorphism property of the adjoint applied to the composition; the second is the decomposition $S_{a,b}^* = (T_{a,b}\mathrm{A})^* = \mathrm{A}^*T_{a,b}^* = \mathrm{A}T_{a^*,b^*}$ and the intertwining relations; the coset statement is immediate from $\mathrm{A}^* = \mathrm{A}$. $\square$</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Definition.</strong> A signed sandwich is <strong>unitary</strong> when $S_{a,b}^*S_{a,b} = 1$ and $S_{a,b}S_{a,b}^* = 1$; equivalently when it preserves the Haar pairing, $\langle S_{a,b}f,S_{a,b}h\rangle = \langle f,h\rangle$ for all $f,h$.</p>
+<p><strong>Theorem (the unitarity criterion).</strong> In the unital case (in particular for a discrete group, or in the measure algebra $M(G)$) the signed sandwich $S_{a,b}$ is unitary if and only if both parameters are unitary elements of $\mathcal{A}$,</p>
+<p>$$
+S_{a,b}^*S_{a,b} = S_{a,b}S_{a,b}^* = 1 \iff a^*\!*a = a*\!a^* = 1 \ \text{and}\ b^*\!*b = b*\!b^* = 1 .
+$$</p>
+<p>On the group algebra $L^1(G)$ of a non-discrete group there are no unitary elements, so no signed sandwich is unitary there; the unitarity condition is nonvacuous exactly on a discrete group or in the measure algebra, where the point masses are unitary.</p>
+<p><strong>Proof.</strong> By the composition law, $S_{\alpha(a^*),\alpha(b^*)}S_{a,b} = T_{\alpha(a^*)*\alpha(a),\,\alpha(b)*\alpha(b^*)}$ and $S_{a,b}S_{\alpha(a^*),\alpha(b^*)} = T_{a*a^*,\,b^*\!*b}$; the identity criterion for unsigned sandwiches, $T_{c,d} = 1$ iff $c = d = 1$ in the unital case, gives $\alpha(a^*\!*a) = 1$ and $\alpha(b*\!b^*) = 1$ for the first product and $a*a^* = 1$, $b^*\!*b = 1$ for the second. Applying $\alpha^{-1}$ and combining, the condition is that $a$ and $b$ be unitary. The absence of unitary elements on a non-discrete $L^1(G)$ is <em>The Group Algebra as an Involutive Algebra</em>. $\square$</p>
+<p><strong>Corollary (the fixed elements give self-adjoint sandwiches).</strong> If $\alpha(a^*) = a$ and $\alpha(b^*) = b$, then $S_{a,b}^* = S_{a,b}$, so the sandwich is self-adjoint; the elements fixed by the composite anti-automorphism $\sigma = \alpha\circ\,^*$ form a closed real subspace, and the self-adjoint signed sandwiches are exactly those whose parameters lie in it, up to the identification of the sandwich map.</p>
+<p><strong>Proof.</strong> $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)} = S_{a,b}$ by the hypothesis; the fixed set of an anti-linear involution is a closed real subspace, and the last statement is the definition of the sandwich map read on the parameters. $\square$</p>
+<h2 id="the-sandwich-identity-criterion">The Sandwich Identity Criterion</h2>
+<p><strong>Proposition (the identity criterion, recalled).</strong> In the unital case two signed sandwiches coincide,</p>
+<p>$$
+S_{c,d} = S_{a,b} \iff c^{-1}a \in Z(\mathcal{A})^\times \ \text{and}\ c^{-1}a = b\,d^{-1} ,
+$$</p>
+<p>the criterion of <em>The Signed Sandwich on a Topological Group</em>, read in the measure algebra; consequently the map $(a,b)\mapsto S_{a,b}$ is injective exactly on the pairs modulo the central relation, and the self-adjointness criterion of the corollary is exact.</p>
+<p><strong>Proof.</strong> $S_{c,d} = S_{a,b}$ means $c*\alpha(f)*d = a*\alpha(f)*b$ for all $f$; since $\alpha$ is onto this says $c^{-1}a$ commutes with every $\alpha(f)$, that is with all of $\mathcal{A}$, and equals $b d^{-1}$; the criterion follows. The parametric description of the self-adjoint sandwiches is then immediate from the adjoint formula. $\square$</p>
+<h2 id="the-degenerate-cases">The Degenerate Cases</h2>
+<p><strong>Theorem (the trivial grade involution).</strong> If $\alpha = \mathrm{id}$ then every signed sandwich is unsigned, $S_{a,b} = T_{a,b}$, and its adjoint is $T_{a^*,b^*}$; every unsigned sandwich with unitary parameters is unitary.</p>
+<p><strong>Proof.</strong> With $\alpha = \mathrm{id}$ the operator $\mathrm{A}$ is the identity, $S_{a,b} = T_{a,b}$, and the adjoint formula collapses to $(T_{a,b})^* = T_{a^*,b^*}$; the unitarity criterion is the last theorem with $\alpha = \mathrm{id}$. $\square$</p>
+<p><strong>Corollary (the inner grade involution).</strong> If $\alpha = c_z$ is inner, $S_{a,b} = T_{a*z,\,z^{-1}*b}$, and the adjoint is $(S_{a,b})^* = T_{(a*z)^*,\,(z^{-1}*b)^*}$; the signed adjoint differs from the unsigned adjoint of the transported sandwich by the transport only, and the unitarity criterion is unchanged.</p>
+<p><strong>Proof.</strong> The transport is that of <em>The Signed Sandwich on the Group Algebra</em>; the adjoint formula applied to the transported parameters gives the displayed expression, and unitarity is invariant under a transport by a fixed element because $z$ cancels. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The adjoint of the reflection and of the signed left multiplication are the next two articles; the adjoint of a general convolution operator, its expression on $L^p$ and the involutive algebra it generates are <em>The Adjoint of a Convolution Operator</em>; the discrete version with the natural and signed bilinear forms, where the adjoint relation is $(L_a)^\dagger = L_{a^{-1}}$, is <em>The Signed Adjoint Sandwich on a Topological Group</em>, and the two forms are reconciled by the passage from the bilinear form to the Haar pairing through the involution $a\mapsto a^*$.</p>
+<h2 id="summary">Summary</h2>
+<p>With respect to the Haar pairing the elementary operators have adjoints $(L_a)^* = L_{a^*}$ (every $G$) and, in the unimodular case, $(R_b)^* = R_{b^*}$ and $\mathrm{A}^* = \mathrm{A}$; the signed sandwich $S_{a,b}(f) = a*\alpha(f)*b = L_a\mathrm{A}R_b$ therefore has adjoint $S_{\alpha(a^*),\alpha(b^*)}$, the unsigned sandwich $T_{a,b}$ has adjoint $T_{a^*,b^*}$, and the adjoint is an involution on each family, compatible with the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$ and with the composition law. The sandwich $S_{a,b}$ is unitary exactly when $a$ and $b$ are unitary elements — nonvacuous only on a discrete group or in the measure algebra, where the point masses are unitary — and it is self-adjoint exactly when its parameters are fixed by the composite anti-automorphism $\sigma = \alpha\circ\,^*$, the sandwich identity criterion being the one recalled from the discrete theory. When the grade involution is trivial the signed family collapses to the unsigned, and when it is inner the signed adjoint is the unsigned adjoint of the transported sandwich. The adjacency with the discrete theory is the passage from the bilinear form of <em>The Signed Adjoint Sandwich on a Topological Group</em> to the Haar pairing through the involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}(f) = a*f*b$</td>
+<td>The unsigned sandwich</td>
+</tr>
+<tr>
+<td>$S_{a,b}(f) = a*\alpha(f)*b = L_a\mathrm{A}R_b$</td>
+<td>The signed sandwich</td>
+</tr>
+<tr>
+<td>$(L_a)^* = L_{a^*}$, $(R_b)^* = R_{b^*}$</td>
+<td>Elementary adjoints, Haar pairing</td>
+</tr>
+<tr>
+<td>$\mathrm{A}^* = \mathrm{A}$</td>
+<td>The grade-involution operator is self-adjoint</td>
+</tr>
+<tr>
+<td>$(T_{a,b})^* = T_{a^*,b^*}$</td>
+<td>The unsigned adjoint</td>
+</tr>
+<tr>
+<td>$(S_{a,b})^* = S_{\alpha(a^*),\alpha(b^*)}$</td>
+<td>The signed adjoint</td>
+</tr>
+<tr>
+<td>$(S_{a,b})^*S_{a,b} = 1\iff a,b$ unitary</td>
+<td>The unitarity criterion</td>
+</tr>
+<tr>
+<td>$\sigma = \alpha\circ\,^*$</td>
+<td>The composite anti-automorphism fixing the self-adjoint sandwiches</td>
+</tr>
+<tr>
+<td>$S_{c,d} = S_{a,b}\iff c^{-1}a\in Z^\times,\ c^{-1}a = bd^{-1}$</td>
+<td>The sandwich identity criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998), for involutions, their composites and the self-adjoint elements.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the adjoint, unitarity and the form-preserving operators.</li>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for the group von Neumann algebra and the unitarity of its operators.</li>
+<li>Edwin Hewitt and Kenneth A. Ross, <em>Abstract Harmonic Analysis I</em> (Springer, second edition, 1979), for the involution on the group algebra and the unitary elements.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the sandwich action, its adjoint and the groups it generates.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

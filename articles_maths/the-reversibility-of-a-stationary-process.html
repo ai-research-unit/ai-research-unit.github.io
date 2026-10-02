@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reversibility of a Stationary Process — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-reversibility-of-a-stationary-process"><strong>The Reversibility of a Stationary Process</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A stationary process is <strong>reversible</strong> when the operation of reading it backwards in the index leaves its law unchanged, that is when the law on the path space is invariant under the involution
+$$
+r:E^{\mathbb Z}\to E^{\mathbb Z},\qquad (r\omega)_n=\omega_{-n},
+$$
+which sends the process $\{X_n\}$ to the process $\{X_{-n}\}$. The reversal is the involution on the elements at the level of the process, and the article studies what it forces and what it does not: the covariance function of a reversible process is symmetric, $R(-n)=R(n)$, hence real, and its spectral measure is invariant under the reflection $\lambda\mapsto-\lambda$; conversely the symmetry of the covariance need not imply the reversibility, the gap being filled exactly by the Gaussian processes, for which a real stationary process is always reversible because its law is determined by the covariance. The article states the definition, proves the necessary conditions on the covariance and the spectral measure, establishes the Gaussian criterion, and places the Markov case, where the reversibility is the detailed balance of the preceding article and is a genuine restriction.</p>
+<p>The process theory is fixed elsewhere. The stationary processes, their spectral theory, the shift and the ergodicity are <em>Ergodic Theory</em>, written; the covariance function, its Hermitian symmetry and its positive-definiteness are <em>The Covariance Function and Hermitian Positivity</em>, later in this category, and the characteristic function is <em>The Characteristic Function and Conjugate Symmetry</em>, later in this category; the shift operator is <em>The Shift Operator of a Process</em>, earlier in this category; the reversibility of a Markov chain, with the detailed balance and the self-adjointness of the Markov operator, is <em>Reversible Markov Chains and Time Reversal</em>, the preceding article, and the adjoint operator is <em>The Adjoint of the Markov Operator</em>, later in this category. The Gaussian variables and their densities are <em>Independence and Conditional Expectation</em> and <em>Measure-Theoretic Probability</em>, written. No physics is invoked; the index is called time in the sense fixed by the theory of processes and carries no physical content.</p>
+<p>Throughout, $\{X_n\}_{n\in\mathbb Z}$ is a stationary process with values in a measurable space $E$, with law $\mu$ on the path space $E^{\mathbb Z}$, and $\mathbb E$ is the expectation. The process is complex-valued unless it is called real; the covariance function is
+$$
+R(n)=\mathbb E\bigl[X_nX_0^*\bigr],
+$$
+the pairing of two random variables is $\langle X,Y\rangle=\mathbb E[XY^*]$, and the reversal is $r$. The spectral measure is the positive measure $\mu_R$ on the circle $\mathbb T=\mathbb R/2\pi\mathbb Z$ of the Herglotz theorem.</p>
+<h2 id="time-reversal-of-a-stationary-process">Time Reversal of a Stationary Process</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The stationary process $\{X_n\}$ is <strong>reversible</strong> if its law is invariant under the reversal,
+$$
+\mu\circ r^{-1}=\mu ,
+$$
+equivalently, if the finite-dimensional distributions satisfy
+$$
+(X_{n_1},\dots,X_{n_k})\overset{d}{=}(X_{-n_1},\dots,X_{-n_k})
+$$
+for every choice of the indices. The <strong>reversed process</strong> is $\{X_{-n}\}$.</p>
+<p><strong>Theorem (reversal preserves stationarity).</strong> The reversed process is stationary, and the reversal commutes with the shift in the sense $r\sigma=\sigma^{-1}r$. The process is reversible exactly when the law of the reversed process equals the law of the original.</p>
+<p><em>Proof.</em> The stationarity of $\{X_{-n}\}$ is the stationarity of the original read on the reversed index; the commutation is $r(\sigma\omega)_n=(r\sigma\omega)_n=\omega_{-n-1}$ and $(\sigma^{-1}r\omega)_n=(r\omega)_{n+1}=\omega_{-n-1}$, the same. The last statement is the definition.</p>
+<h3 id="the-reversal-of-a-gaussian-process">The reversal of a Gaussian process</h3>
+<p><strong>Theorem (the Gaussian process).</strong> Let $\{X_n\}$ be a real stationary Gaussian process with mean $m$ and covariance $R$. Then $R$ is even, $R(-n)=R(n)$, and the process is reversible; more generally a Gaussian stationary process, real or complex, is reversible if and only if the reversal of its mean and covariance coincides with the original.</p>
+<p><em>Proof.</em> A Gaussian process is determined by its mean and its covariance; the reversed process has the mean $m'$ with $m'_n=m_{-n}=m$ by stationarity and the covariance $R'(n)=R(-n)$. For a real process $R(-n)=\mathbb E[X_{-n}X_0]=\mathbb E[X_0X_n]=R(n)$, so the reversed process has the same mean and covariance, hence the same law, hence the process is reversible. In the complex case the same argument applies to the full Hermitian covariance and the relation, and the criterion is the coincidence of the two.</p>
+<h2 id="the-covariance-function">The Covariance Function</h2>
+<h3 id="hermitian-symmetry">Hermitian symmetry</h3>
+<p><strong>Theorem (Hermitian symmetry).</strong> For every stationary process the covariance is Hermitian,
+$$
+R(-n)=\overline{R(n)},
+$$
+and the covariance is positive definite:
+$$
+\sum_{i,j=1}^k c_i\overline{c_j}\,R(n_i-n_j)\ge0
+$$
+for all indices $n_i$ and complex scalars $c_i$.</p>
+<p><em>Proof.</em> Hermitian symmetry is $R(-n)=\mathbb E[X_{-n}X_0^*]=\mathbb E[X_0X_n^*]=\overline{\mathbb E[X_nX_0^*]}=\overline{R(n)}$, the middle step being the stationarity; the positive-definiteness is the variance of the linear combination, $\mathbb E\bigl[|\sum_ic_iX_{n_i}|^2\bigr]\ge0$. The covariance function and its positivity are <em>The Covariance Function and Hermitian Positivity</em>, later in this category.</p>
+<h3 id="symmetry-under-reversal">Symmetry under reversal</h3>
+<p><strong>Theorem (reversibility forces a symmetric covariance).</strong> If the process is reversible then
+$$
+R(-n)=R(n)\qquad\text{for all } n,
+$$
+so the covariance is a real and even function of the index. Equivalently, the covariance matrix of every finite window is symmetric under the reflection of the index.</p>
+<p><em>Proof.</em> Reversibility gives $(X_0,X_n)\overset{d}{=}(X_n,X_0)$, hence $R(n)=\mathbb E[X_nX_0^*]=\mathbb E[X_0X_n^*]=R(-n)$; combined with the Hermitian symmetry, $R(n)=\overline{R(n)}$, so $R(n)$ is real. The finite-window statement is the same computation applied to the matrix entries.</p>
+<p><strong>Corollary (the converse fails).</strong> A stationary process with a real and even covariance need not be reversible; the symmetry of the covariance is necessary and not sufficient.</p>
+<p><em>Proof.</em> The stationary three-state cycle of <em>Reversible Markov Chains and Time Reversal</em>, the preceding article, is a stationary process whose covariance is real and even, being that of a real-valued chain, and which is not reversible, because its finite-dimensional distributions are not invariant under the reversal of the index; the circulation of the chain is the obstruction, and it is invisible in the covariance.</p>
+<h2 id="the-spectral-measure">The Spectral Measure</h2>
+<h3 id="the-herglotz-representation">The Herglotz representation</h3>
+<p><strong>Theorem (Herglotz).</strong> A function $R:\mathbb Z\to\mathbb C$ is the covariance function of a stationary process if and only if it is positive definite, and then there is a unique finite positive measure $\mu_R$ on the circle with
+$$
+R(n)=\int_{\mathbb T}e^{in\lambda}\,d\mu_R(\lambda).
+$$</p>
+<p><em>Proof.</em> The necessity is the positive-definiteness of the covariance; the sufficiency and the representation are the Herglotz theorem, the spectral theorem for the shift on the cyclic subspace generated by $X_0$. The measure $\mu_R$ is the spectral measure of the process, and the whole spectral theory is <em>Ergodic Theory</em>.</p>
+<h3 id="the-reality-of-the-spectral-measure">The reality of the spectral measure</h3>
+<p><strong>Theorem (reversal and the spectral measure).</strong> The covariance is real and even if and only if the spectral measure is invariant under the reflection $\lambda\mapsto-\lambda$,
+$$
+\mu_R(A)=\mu_R(-A)\qquad\text{for every } A .
+$$
+Consequently a reversible process has a symmetric spectral measure, and the spectral measure of a reversible process is determined by its values on the half-circle.</p>
+<p><em>Proof.</em> If $\mu_R$ is invariant under $\lambda\mapsto-\lambda$ then $R(-n)=\int e^{-in\lambda}d\mu_R=\int e^{in\lambda}d\mu_R(-(\lambda))=\int e^{in\lambda}d\mu_R=R(n)$, so $R$ is even and, with the Hermitian symmetry, real. Conversely an even real $R$ gives $\int e^{in\lambda}d[\mu_R-\tilde\mu_R]=0$ for the reflected measure $\tilde\mu_R(A)=\mu_R(-A)$ and all $n$, whence $\mu_R=\tilde\mu_R$ by the uniqueness in the Herglotz theorem.</p>
+<p><strong>Corollary (the spectral meaning of reversibility).</strong> A reversible process has a covariance that is the cosine transform of a symmetric measure, $R(n)=\int_{\mathbb T}\cos(n\lambda)\,d\mu_R(\lambda)$; its spectral measure carries no information about the sign of the frequency, and the one-sided spectral measure of the analytic-signal theory is not available.</p>
+<p><em>Proof.</em> Substituting the invariance into the Herglotz representation and using that $R$ is even, the integral of the sine vanishes and the cosine remains; the second statement is the reading of the symmetry.</p>
+<h2 id="the-gaussian-and-the-markov-cases">The Gaussian and the Markov Cases</h2>
+<p><strong>Theorem (the Gaussian criterion).</strong> A Gaussian stationary process is reversible if and only if the covariance is symmetric under the reversal, that is if and only if $R(-n)=R(n)$ for all $n$. For a real Gaussian process this is automatic, so every real stationary Gaussian process is reversible.</p>
+<p><em>Proof.</em> The law of a Gaussian process is determined by the mean and the covariance, the stationary mean is constant and invariant under the reversal, and the reversed covariance is $R(-n)$; the two laws coincide exactly when the covariances do. The automatic symmetry in the real case is the theorem of the Gaussian section above.</p>
+<p><strong>Theorem (the Markov criterion).</strong> A stationary Markov chain is reversible, in the sense of the invariance of its law under the reversal, if and only if its transition kernel satisfies the detailed balance identity $\pi(x)p(x,y)=\pi(y)p(y,x)$; equivalently, if and only if the Markov operator is self-adjoint on $L^2(\pi)$.</p>
+<p><em>Proof.</em> This is the equivalence of <em>Reversible Markov Chains and Time Reversal</em>, the preceding article: the reversed chain is the kernel $\hat p(x,y)=\pi(y)p(y,x)/\pi(x)$, the law of the backwards chain is that of the forwards chain under $\hat p$, and the invariance of the law under $r$ is $\hat p=p$.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example (the real Gaussian process).</strong> Let $\{X_n\}$ be real stationary Gaussian with covariance $R(n)=\rho^{|n|}$ for $\rho\in(-1,1)$. The covariance is even, the spectral measure is the symmetric density $\frac{1}{2\pi}\frac{1-\rho^2}{|1-\rho e^{i\lambda}|^2}$ on the circle, and the process is reversible by the Gaussian criterion; no computation of the finite-dimensional laws beyond the covariance is required.</p>
+<p><strong>Example (the complex Gaussian process).</strong> Let $X_n=Z\,e^{in\theta}$ with $Z$ a standard complex Gaussian and $\theta$ fixed. The process is stationary with $R(n)=e^{in\theta}$, which is Hermitian but not real unless $\theta\in\{0,\pi\}$; the reversal sends $X_n$ to $Z e^{-in\theta}$, a different process unless $\theta\in\{0,\pi\}$, so the reversibility fails and the covariance detects it. This is the boundary at which the covariance symmetry becomes a genuine condition.</p>
+<p><strong>Example (the three-state cycle).</strong> The stationary Markov chain on $\{1,2,3\}$ that moves cyclically is stationary with uniform measure and real covariance, and it is not reversible, the reversed chain running around the circle in the opposite direction; the covariance is even and real, and the non-reversibility is invisible in it. The example is the sharp statement that the covariance symmetry does not characterise the reversibility outside the Gaussian case.</p>
+<p><strong>Example (the two-state chain).</strong> The two-state chain is reversible for every transition probability by the preceding article, its covariance is a geometric sequence in $1-a-b$, real and even, and its spectral measure is symmetric; the reversibility is total in this family.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The reversibility degenerates in four configurations. First, the symmetry of the covariance is only necessary for a general process, and the whole non-Gaussian information of the reversal sits in the higher moments; the covariance cannot see it. Second, a stationary process need not be determined by its covariance even when the covariance is real and even, so the Gaussian criterion does not extend, and the example of the cycle makes the failure explicit. Third, the spectral measure can be symmetric while the process is not reversible, for the same reason; the spectral symmetry is a statement about the second-order structure alone. Fourth, the reversal of a process indexed by $\mathbb R$ or by a group is a larger structure than the reversal of the index of a sequence, and the invariance of the law under the whole reversing group is a strictly stronger condition than the symmetry of the covariance; the group case is <em>Ergodic Theory of Group Actions</em>, later in this Part, and only the symmetry of the covariance survives from the present article to it.</p>
+<h2 id="summary">Summary</h2>
+<p>A stationary process is reversible when the law on its path space is invariant under the reversal $r$ of the index, equivalently when all its finite-dimensional distributions are invariant under the reversal of the indices, equivalently when the reversed process has the same law; the reversal commutes with the shift, $r\sigma=\sigma^{-1}r$. Reversibility forces the covariance to be symmetric, $R(-n)=R(n)$, hence real by the Hermitian symmetry $R(-n)=\overline{R(n)}$, and it forces the spectral measure of the Herglotz representation to be invariant under $\lambda\mapsto-\lambda$, so that $R(n)=\int\cos(n\lambda)d\mu_R$. The converse fails in general and holds in the Gaussian case, where the law is determined by the covariance: a real stationary Gaussian process is always reversible, and a complex one is reversible exactly when its covariance is real. For a stationary Markov chain the reversibility is the detailed balance of the preceding article and the self-adjointness of the Markov operator. The covariance function and its positivity are <em>The Covariance Function and Hermitian Positivity</em>, later in this category, and the spectral theory is <em>Ergodic Theory</em>, written.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$, $(r\omega)_n=\omega_{-n}$</td>
+<td>the reversal of the path space</td>
+</tr>
+<tr>
+<td>$r\sigma=\sigma^{-1}r$</td>
+<td>the reversal intertwines the shift with its inverse</td>
+</tr>
+<tr>
+<td>$R(n)=\mathbb E[X_nX_0^*]$</td>
+<td>the covariance function</td>
+</tr>
+<tr>
+<td>$R(-n)=\overline{R(n)}$</td>
+<td>Hermitian symmetry</td>
+</tr>
+<tr>
+<td>$R(-n)=R(n)$</td>
+<td>the covariance symmetry forced by reversibility</td>
+</tr>
+<tr>
+<td>$\mu_R$, $R(n)=\int e^{in\lambda}d\mu_R$</td>
+<td>the spectral measure, Herglotz</td>
+</tr>
+<tr>
+<td>$\mu_R(A)=\mu_R(-A)$</td>
+<td>the symmetry of the spectral measure</td>
+</tr>
+<tr>
+<td>$R(n)=\int\cos(n\lambda)d\mu_R$</td>
+<td>the cosine form for a reversible process</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Ulf Grenander and Murray Rosenblatt, <em>Statistical Analysis of Stationary Time Series</em> (Wiley, 1957), for the covariance, the spectral measure and the Gaussian case.</li>
+<li>Norbert Wiener, <em>Extrapolation, Interpolation, and Smoothing of Stationary Time Series</em> (MIT Press, 1949), for the spectral theory of stationary processes.</li>
+<li>I. A. Ibragimov and Yuri A. Rozanov, <em>Gaussian Random Processes</em> (Springer, 1978), for the Gaussian laws determined by their covariances.</li>
+<li>Peter Walters, <em>An Introduction to Ergodic Theory</em> (Springer, 1982), for the shift and the spectral theory of the Koopman operator.</li>
+<li>Frank Spitzer, <em>Principles of Random Walk</em> (Springer, 2nd edition, 1976), for the reversible and the cyclic Markov examples.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

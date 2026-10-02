@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetry Operators of a Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetry-operators-of-a-space"><strong>The Symmetry Operators of a Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>symmetry operator</strong> of a space $X$ is an operator on $X$ that preserves the chosen structure: an isometry of the chosen distance or form, read as an operator rather than as a point of a group. The operators of <em>Operators on a Symmetry Group</em> are built from a given symmetry group and act on its functions; this article starts one step earlier and asks which operators of $X$ are symmetries, that the group they form is a group, and what the action of that group organises — the orbits, which are the geometric figures the structure singles out, and the invariants, which are the functions that the symmetries cannot change. The two articles are the two directions of the same datum: the earlier one takes a symmetry group as given and builds its operator layer, this one takes the space and the structure and extracts the maximal symmetry group with its orbit decomposition.</p>
+<p>The article stays inside the operator layer and uses no involution on the elements and no adjoint; those are the group <code>- * Theory</code> and the group <code>- * Operator Theory</code> of this category. The isometries of a form and the group they form are <em>Isometries and Orthogonal Transformations</em>; the realisation of the symmetry of a figure and the finiteness of a point group are <em>Symmetry, Point and Crystallographic Groups</em>; the quotient of a space by a group of operators, the orbit map and the invariant functions are <em>Group Actions and Structure</em>; and the automorphism group of a structure with the hierarchy of its symmetry groups is <em>Transformation Groups</em>. The measure that makes the averaging over a compact symmetry group rigorous is the Haar measure of <em>Locally Compact Groups and Haar Measure</em>, in Part III. None of that is re-derived.</p>
+<p>The article has five sections: the symmetry operators and the group they form; the two levels of symmetry, the structural and the metric; the orbits; the invariants and the orbit space; and the worked cases. Throughout, $X$ is a space with a chosen distance, or a finite-dimensional space $V$ over a field of characteristic not $2$ with a chosen non-degenerate quadratic form $Q$ and its polar form $B$, and $G = \operatorname{Sym}(X)$ is the group of symmetry operators.</p>
+<h2 id="the-symmetry-operators-and-the-group-they-form">The Symmetry Operators and the Group They Form</h2>
+<h3 id="symmetry-operators">Symmetry Operators</h3>
+<p><strong>Definition.</strong> A <strong>symmetry operator</strong> of $X$ is a bijection $T : X \to X$ preserving the chosen structure: a distance-preserving bijection $d(Tx, Ty) = d(x, y)$ when $X$ is metric, or a linear isomorphism $T \in GL(V)$ with $Q(Tv) = Q(v)$ for all $v$ when $X = V$ is a quadratic space. The symmetry operators form the <strong>symmetry group</strong> $\operatorname{Sym}(X)$ under composition, and for a quadratic space $\operatorname{Sym}(V, Q) = \operatorname{O}(V, Q)$ is the orthogonal group, a subgroup of $GL(V)$.</p>
+<p><strong>Proposition.</strong> The symmetry operators are closed under composition and under inversion, contain the identity, and form a group; for a quadratic space the condition $Q(Tv) = Q(v)$ is equivalent to the preservation of the polar form, $B(Tu, Tv) = B(u, v)$ for all $u, v$, and is verified on a spanning set.</p>
+<p><strong>Proof.</strong> The composite of two structure-preserving bijections preserves the structure and the inverse of one does, so the set is a group. The equivalence of the two preservation conditions is the polarisation identity $B(u,v) = \tfrac12\bigl(Q(u+v) - Q(u) - Q(v)\bigr)$, valid because the characteristic is not two, applied to $Tu, Tv$; a form identity holding on a spanning set of pairs holds everywhere by linearity of the form in each argument.</p>
+<p><strong>Remark (the group is not intrinsic to the set).</strong> The same set $X$ with a different chosen form has a different symmetry group: $V = \mathbb{R}^2$ with $x^2+y^2$ has $\operatorname{O}(2)$ of dimension one as a manifold, while $V$ with $x^2-y^2$ has $\operatorname{O}(1,1)$, and with the degenerate form $x^2$ the symmetry group is larger and not reductive. The dependence on the chosen form is the boundary test of the part, and the example shows that "the symmetry operators of a space" is a misleading abbreviation for "of a space with its chosen structure".</p>
+<h3 id="the-two-levels-of-symmetry">The Two Levels of Symmetry</h3>
+<p><strong>Definition.</strong> Let $X$ carry a coarser structure and a finer structure, as a smooth manifold carries its smooth structure and its metric. The <strong>structural symmetry group</strong> $\operatorname{Aut}(X, \text{structure})$ is the group of bijections preserving the coarse structure, and the <strong>metric symmetry group</strong> $\operatorname{Isom}(X, g) \subseteq \operatorname{Aut}(X, \text{structure})$ is the subgroup preserving the finer one; the inclusion is the hierarchy</p>
+<p>$$
+\operatorname{Sym}(X) = \operatorname{Isom}(X, g) \;\subseteq\; \operatorname{Aut}(X, \text{structure}) \;\subseteq\; \operatorname{Sym}(X^{\mathrm{set}}) = \operatorname{Bij}(X),
+$$</p>
+<p>and each inclusion can be strict. This is <em>Transformation Groups</em>, where the automorphism group of a structure is defined for a general structure; the metric case is the specialisation to the Riemannian or quadratic structure, and the properness of the inclusion is the difference between the differentiable and the isometric classification of a manifold.</p>
+<p><strong>Proposition.</strong> A symmetry operator is determined by its value and its differential at a single point when $X$ is connected: if two isometries agree at $p$ and have the same differential there, they agree everywhere.</p>
+<p><strong>Proof.</strong> The isometry $T_1^{-1}T_2$ fixes $p$ and has identity differential at $p$; the set of its fixed points is closed and the set of points where its differential is the identity is open, and a closed and open subset of a connected manifold is everything.</p>
+<p><strong>Remark.</strong> The rigidity is the geometric content of the second level: the finer the structure, the smaller the symmetry group and the more a single jet determines. The extreme cases are the smooth structure, whose automorphism group is enormous, and the metric, whose group is a finite-dimensional Lie group by the theorem of Myers–Steenrod; the theorem that $\operatorname{Isom}(X,g)$ is a Lie group, and the quotient theory of its orbits, are <em>Transformation Groups</em>.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<h3 id="orbits-of-the-symmetry-group">Orbits of the Symmetry Group</h3>
+<p><strong>Definition.</strong> The <strong>orbit</strong> of $x \in X$ under the symmetry group is</p>
+<p>$$
+G \cdot x = \{Tx : T \in G\},
+$$</p>
+<p>and the orbits partition $X$, because the relation $x \sim y$ iff $y \in G\cdot x$ is an equivalence relation. The orbit of $x$ is the figure that the chosen structure and the group jointly single out at $x$; the action is <strong>transitive</strong> when there is one orbit, in which case $X$ is a <strong>homogeneous</strong> space of $G$ and is identified with $G/G_x$ by the orbit–stabiliser theorem, $G_x$ the stabiliser of $x$.</p>
+<p><strong>Proposition.</strong> The orbit $G\cdot x$ is the smallest $G$-stable subset containing $x$, and it is invariant in the sense that $T(G \cdot x) = G \cdot x$ for every $T \in G$. If the action is transitive then every point is carried to every other by a symmetry operator, so no point is distinguished.</p>
+<p><strong>Proof.</strong> Stability is the group law; minimality is that any $G$-stable subset containing $x$ contains $T x$ for every $T$; transitivity is the definition.</p>
+<h3 id="the-orbit-map-and-its-fibres">The Orbit Map and Its Fibres</h3>
+<p><strong>Definition.</strong> The <strong>orbit map</strong> is the surjection</p>
+<p>$$
+\theta : X \longrightarrow X/G, \qquad \theta(x) = G \cdot x,
+$$</p>
+<p>onto the set $X/G$ of orbits, and its fibres are the orbits. The map is $G$-equivariant when $X/G$ carries the trivial action, $\theta(Tx) = \theta(x)$.</p>
+<p><strong>Proposition.</strong> For a group action the orbit map is the universal $G$-invariant map out of $X$: a map $f : X \to Y$ is invariant, $f(Tx) = f(x)$ for all $T \in G$, exactly when it factors as $f = \bar f \circ \theta$ through a map $\bar f : X/G \to Y$. Hence the invariant functions on $X$ are exactly the functions on the orbit space $X/G$, and the orbit space is the sharpest quotient on which the symmetry acts trivially.</p>
+<p><strong>Proof.</strong> If $f$ is invariant it is constant on each orbit, so $\bar f$ is well defined on $X/G$; conversely a map through $\theta$ is invariant because $\theta$ is. The identification of invariant functions with functions on $X/G$ is the same statement for $Y$ the scalars.</p>
+<p><strong>Remark.</strong> The quotient $X/G$ is a set, not in general a space with the structure of $X$: it is a smooth manifold when the action is free and proper, and otherwise an orbifold or a stratified space, and the regularity of the quotient is the content of the differentiable slice theorem, <em>Group Actions and Structure</em> for the finite case and <em>Transformation Groups</em> for the smooth one. The set-theoretic statement above needs no regularity and is what the invariants see.</p>
+<h3 id="transitivity-and-the-classification-of-orbits">Transitivity and the Classification of Orbits</h3>
+<p><strong>Proposition.</strong> The orbits of $G$ on $X$ are the transitive $G$-sets appearing in the decomposition, and each orbit is isomorphic as a $G$-set to $G/G_x$; the orbits are classified up to isomorphism by the conjugacy classes of the stabilisers.</p>
+<p><strong>Proof.</strong> This is the orbit–stabiliser theorem together with the observation that $G/T G_x T^{-1} = G_{Tx}$; two points have isomorphic orbits exactly when their stabilisers are conjugate.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<h3 id="invariant-functions-and-the-fixed-space">Invariant Functions and the Fixed Space</h3>
+<p><strong>Definition.</strong> A function $f : X \to k$ is <strong>invariant</strong> when $f(Tx) = f(x)$ for every symmetry operator $T$ and every $x$; the invariant functions form the subspace $\mathcal{F}(X)^G$ of the functions on $X$, and by the orbit-map proposition it is the space of functions on the orbit space $X/G$. When $X = V$ is a quadratic space and $k$ a field, the invariant functions are the <strong>invariants of the form</strong>, and the invariant polynomials form the <strong>ring of invariants</strong> $k[V]^G$.</p>
+<p><strong>Proposition.</strong> The invariant functions are the common fixed space of the action operators: $\mathcal{F}(X)^G = \bigcap_{T \in G}\ker(\pi(T) - \mathrm{id})$. The invariant polynomials are closed under multiplication and addition, so the ring of invariants is a subalgebra of the polynomial ring.</p>
+<p><strong>Proof.</strong> The first statement is the definition of invariance rewritten; the second is that the product and the sum of invariant polynomials are invariant, the action on polynomials being by the substitution $f \mapsto f(T^{-1}\cdot)$.</p>
+<h3 id="the-polynomial-invariants-of-the-classical-forms">The Polynomial Invariants of the Classical Forms</h3>
+<p><strong>Theorem (first fundamental theorem, examples).</strong> For the classical symmetry groups acting on their defining spaces, the invariant polynomials are generated by the form:</p>
+<ul>
+<li>$\operatorname{O}(V, Q)$ on a quadratic space: $k[V]^{\operatorname{O}(V,Q)} = k[Q]$, the polynomials in the quadratic form;</li>
+<li>$\operatorname{U}(n)$ on $\mathbb{C}^n$ with the standard Hermitian form: the invariants are the polynomials in the Hermitian norm $\lVert z\rVert^2$;</li>
+<li>for a finite reflection group $W$ on $V$: the invariants are a polynomial ring $k[V]^W = k[f_1, \ldots, f_n]$ on $n$ algebraically independent invariants, the fundamental degrees summing to the order of $W$.</li>
+</ul>
+<p><strong>Proof sketch.</strong> The invariants are characterised by the averaging operator $\pi \mapsto \frac{1}{\lvert G\rvert}\sum_{T}\pi(T)$ for a finite group, which projects onto the invariants and shows that the invariant polynomials separate the orbits when the action is finite; for the full orthogonal group the classical reduction to the symmetric algebra and the Weyl integration formula identify the algebra of invariants with the symmetric algebra of the invariants of the defining representation, giving $k[Q]$; the reflection-group statement is Chevalley's theorem, whose proof uses the Jacobian and the pseudoreflections.</p>
+<p><strong>Remark.</strong> The theorem is quoted, not proved; the invariant theory of the classical groups is its own subject and the reader is referred to Weyl's <em>The Classical Groups</em>. For the present article the consequence is what matters: the invariants of a form are the functions of the form, so the orbit of a vector under the orthogonal group is determined by the value of $Q$ at the vector.</p>
+<h3 id="invariants-separate-closed-orbits">Invariants Separate Closed Orbits</h3>
+<p><strong>Proposition.</strong> Let $G$ be a compact symmetry group acting continuously on a compact space $X$. Then the invariant continuous functions separate the orbits: two points lie in the same orbit if and only if every invariant function takes the same value at them.</p>
+<p><strong>Proof.</strong> If the orbits are distinct, compactness makes them disjoint compact sets; a continuous function taking the value $0$ on one and $1$ on the other is constructed by Urysohn, and its average over $G$ against the Haar measure is invariant, continuous, and still separates them.</p>
+<p><strong>Remark.</strong> The averaging uses the Haar measure of <em>Locally Compact Groups and Haar Measure</em>, Part III; the proposition is the source of the maxim that a compact symmetry group is detected by its invariants, while a noncompact one in general is not.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<p><strong>Example (the sphere).</strong> Let $X = \mathbb{R}^n$ with the Euclidean form and $G = \operatorname{O}(n)$. The orbits are the spheres $\lVert x\rVert = r$, the origin alone being the orbit of radius $0$, so the orbit space is $[0, \infty)$ and the invariant functions are the functions of $r = \lVert x\rVert$, equivalently of the quadratic form $Q(x) = \lVert x\rVert^2$; the ring of invariants is $k[Q]$. The unit sphere $S^{n-1}$ is the orbit of radius one, and it is homogeneous, being $SO(n)/SO(n-1)$.</p>
+<p><strong>Example (the hyperbolic plane).</strong> Let $X = \mathbb{R}^2$ with the form $Q(x) = x_1^2 - x_2^2$ of signature $(1,1)$ and $G = \operatorname{O}(1,1)$ its symmetry group. The orbits are the four families of level sets of $Q$: the two-sheeted hyperbolas $Q = r^2 > 0$, the upper and the lower branch being separate orbits of the identity component; the two hyperbolas $Q = -r^2 < 0$; the four rays $Q = 0$ off the origin; and the origin. The invariant functions are the functions of $Q$, which do not separate the two branches of a hyperbola, and the identity component separates them by a sign.</p>
+<p><strong>Example (the symmetry operators of a figure).</strong> Let $F$ be a figure in the plane and $G = \operatorname{Sym}(F)$ its symmetry group, <em>Symmetry, Point and Crystallographic Groups</em>. The orbits of $G$ on the vertices of $F$ are the vertex orbits, and the orbit–stabiliser theorem gives their sizes; the invariant functions on the vertex set are exactly the functions constant on the vertex orbits, one dimension for each orbit, and for the regular $n$-gon the two orbits — vertices and edges — give the invariant functions of the figure. The crystallographic restriction, that a finite-order rotation of a lattice has order $1, 2, 3, 4$ or $6$, is a statement about which symmetry operators a two-dimensional lattice admits.</p>
+<p><strong>Example (a noncompact group with few invariants).</strong> Let $X = \mathbb{R}^2$ with $G = \mathbb{R}^2$ acting by translations. The action is transitive and free, the orbit space is a single point, and the only invariant functions are the constants: a noncompact symmetry group can have arbitrarily complicated orbits with no separating invariants, the opposite of the compact case.</p>
+<h2 id="summary">Summary</h2>
+<p>A symmetry operator of a space is an operator preserving the chosen structure, and the symmetry operators form a group $\operatorname{Sym}(X)$, a subgroup of the automorphism group of any coarser structure on $X$; for a quadratic space it is the orthogonal group $\operatorname{O}(V, Q)$, whose condition is the preservation of the polar form. The symmetry group is determined by the chosen form and not by the underlying set, and a connected space has a rigid symmetry group, an isometry being determined by its value and differential at one point. The orbits of the symmetry group are the elementary figures the structure and the group single out; they partition the space, the orbit map is the universal invariant map, and the invariant functions are exactly the functions on the orbit space. The invariant polynomials of the classical forms are generated by the form — the polynomials in $Q$ for the orthogonal group, in the Hermitian norm for the unitary group, and a polynomial ring on $n$ fundamental invariants for a finite reflection group — and for a compact group the invariants separate the orbits, by averaging against the Haar measure, while for a noncompact group they need not.</p>
+<p>No involution on the elements of the group and no adjoint of an operator is taken here; those are the group <code>- * Theory</code> and the group <code>- * Operator Theory</code> of this category. The convolution and translation operators of the symmetry group are the two following articles of the present group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$</td>
+<td>a space with a chosen distance, or a quadratic space</td>
+</tr>
+<tr>
+<td>$Q$, $B$</td>
+<td>the chosen quadratic form and its polar form</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>a symmetry operator; a structure-preserving bijection</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X)$, $\operatorname{O}(V,Q)$</td>
+<td>the symmetry group; the orthogonal group</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(X,\text{structure})$</td>
+<td>the automorphisms of a coarser structure</td>
+</tr>
+<tr>
+<td>$G \cdot x$, $G_x$</td>
+<td>the orbit and the stabiliser of $x$</td>
+</tr>
+<tr>
+<td>$X/G$, $\theta$</td>
+<td>the orbit space and the orbit map</td>
+</tr>
+<tr>
+<td>$\mathcal{F}(X)^G$</td>
+<td>the invariant functions</td>
+</tr>
+<tr>
+<td>$k[V]^G$</td>
+<td>the ring of invariant polynomials</td>
+</tr>
+<tr>
+<td>$\frac{1}{\lvert G\rvert}\sum_T \pi(T)$</td>
+<td>the averaging projector onto the invariants</td>
+</tr>
+<tr>
+<td>$\operatorname{Isom}(X,g)$</td>
+<td>the isometry group, a Lie group in the smooth case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hermann Weyl, <em>The Classical Groups: Their Invariants and Representations</em> (Princeton, 1939), for the invariant theory of the classical groups and the fundamental theorems.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the orthogonal and unitary groups, their generation and their structure.</li>
+<li>Claude Chevalley, "Invariants of finite groups generated by reflections", <em>American Journal of Mathematics</em> <strong>77</strong> (1955), 778–782, for the theorem that the invariants of a finite reflection group form a polynomial ring.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, 1978), for the isometry group of a Riemannian manifold, the rigidity of a single jet and the orbit theory.</li>
+<li>John A. Wolf, <em>Spaces of Constant Curvature</em> (McGraw–Hill, 1967), for the model geometries and their symmetry groups, and for the orbits that the classical forms single out.</li>
+<li>Ludwig Bieberbach, "Über die Bewegungsgruppen der euklidischen Räume", <em>Mathematische Annalen</em> <strong>70</strong> (1911), 297–336, for the crystallographic groups and the finite point-group part of the symmetry of a discrete set.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

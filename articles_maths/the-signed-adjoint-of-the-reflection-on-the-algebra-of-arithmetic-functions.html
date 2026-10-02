@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Reflection on the Algebra of Arithmetic Functions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-reflection-on-the-algebra-of-arithmetic-functions"><strong>The Signed Adjoint of the Reflection on the Algebra of Arithmetic Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reflection of a unit $u$ in the algebra of arithmetic functions is the signed two-sided operator $r_u(f)=u*\alpha(f)*u^{-1}$, which equals the grade involution $\alpha$ for every unit because the convolution is commutative. The <strong>signed adjoint of the reflection</strong> is the adjoint of $r_u$ with respect to the coefficient form, and it is again the grade involution:
+$$
+r_u^*=\alpha=r_u .
+$$
+The reflection is therefore self-adjoint and unitary, and the adjoint operation fixes the whole class of reflections, which consists of the single operator $\alpha$. This article states the computation, describes the correspondence between the reflections and the involutions, and records the degenerate collapse of both in the commutative case. The reflection itself is <em>Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions</em>, and the general adjoint of a signed two-sided operator is <em>The Signed Adjoint Sandwich on the Algebra of Arithmetic Functions</em>. Nothing here reads a distance as an object.</p>
+<h2 id="the-adjoint-of-the-reflection">The Adjoint of the Reflection</h2>
+<h3 id="the-coefficient-form">The coefficient form</h3>
+<p><strong>Theorem.</strong> For every unit $u$ of $\mathcal{A}$, with the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$,
+$$
+r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha f\|=\|f\| ,
+$$
+so the reflection is an involutive unitary operator and is its own adjoint.</p>
+<p><strong>Proof.</strong> $r_u=\alpha$ by the commutativity of the convolution; $\alpha^*=\alpha$ because $\lambda$ is real, $\langle\alpha f,g\rangle=\sum_n\lambda(n)f(n)\overline{g(n)}=\langle f,\alpha g\rangle$; $\alpha^2=\mathrm{id}$ because $\lambda^2=1$; the isometry is $|\lambda(n)|=1$. This is the computation of <em>Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions</em> read with the adjoint.</p>
+<h3 id="the-signed-form">The signed form</h3>
+<p><strong>Definition.</strong> The <strong>signed pairing</strong> of two arithmetic functions is
+$$
+\{f,g\}=\sum_nf(n)\overline{\lambda(n)\,g(n)}=\langle f,\alpha g\rangle ,
+$$
+a Hermitian form equivalent to the coefficient form through the grade involution.</p>
+<p><strong>Theorem.</strong> With respect to the signed pairing the adjoint of the reflection is again the reflection:
+$$
+\{r_uf,g\}=\{f,r_ug\},\qquad \{r_uf,g\}=\{f,\alpha g\} .
+$$
+The signed adjoint of the reflection is the reflection, and the signed pairing makes the reflection an isometry.</p>
+<p><strong>Proof.</strong> Since $r_u=\alpha$ and $\alpha^2=\mathrm{id}$, $\{r_uf,g\}=\langle\alpha f,\alpha g\rangle=\langle f,g\rangle$ and $\{f,r_ug\}=\langle f,\alpha\alpha g\rangle=\langle f,g\rangle$; the two are equal. This is the signed version of the computation above.</p>
+<h2 id="the-correspondence">The Correspondence</h2>
+<p><strong>Theorem (the correspondence).</strong> The reflections of the units are the operators $r_u$ with
+$$
+r_u=\alpha\quad (u\in\mathcal{A}^\times),\qquad r_u^*=r_u ,
+$$
+so the adjoint operation maps the class of the reflections to itself and leaves every element fixed. The involutive signed sandwiches are the operators $S^\alpha_c=L_c\alpha$ with $c*c=\varepsilon$, and they are exactly $\pm\alpha$; the reflection is the one with $c=+\varepsilon$.</p>
+<p><strong>Proof.</strong> The first statement is the theorem; the classification of the involutions is <em>Reflections as Signed Two-Sided Operators on the Algebra of Arithmetic Functions</em>, where it is shown that the only solutions of $c*c=\varepsilon$ in the unit group are $c=\pm\varepsilon$, giving $\pm\alpha$. The equality $r_u^*=r_u$ is self-adjointness.</p>
+<p><strong>Corollary (the failure).</strong> Over the commutative algebra the adjoint operation carries no information about the reflection: the reflection of the unit $u$ is $\alpha$ for every $u$, its adjoint is $\alpha$, and the group of the reflections is $\mathbb{Z}/2\mathbb{Z}$ generated by $\alpha$. In the noncommutative ring of <em>The Signed Adjoint of the Reflection on a Ring</em> the adjoint of the reflection $r_u$ is the reflection $r_{\delta(u)^{-1}}$ with $\delta=\sigma\alpha$, which depends on the unit, and the adjoint operation is nontrivial.</p>
+<p><strong>Proof.</strong> The commutative statement is the theorem; the noncommutative formula is the computation of the adjoint of the two-sided product with the involution inserted. The difference is exactly the commutativity.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>Example ($u=\mathbf 1$).</strong> $r_{\mathbf 1}=\alpha$, and $r_{\mathbf 1}^*=\alpha$; the operator is self-adjoint and unitary, with fixed algebra the even part and $(-1)$-eigenspace the odd part.</p>
+<p><strong>Example ($u=\lambda$).</strong> $r_\lambda=\alpha$ by the theorem, and $r_\lambda^*=\alpha$; the unit $\lambda$ gives the same reflection as $\mathbf 1$ and the same adjoint.</p>
+<p><strong>Example ($c=-\varepsilon$).</strong> The involution $S^\alpha_{-\varepsilon}=-\alpha$ is not a reflection of any unit, because the reflection of the unit $u$ has $c=u*u^{-1}=\varepsilon$; it is nevertheless self-adjoint and unitary, and it is the degenerate companion of the reflection.</p>
+<h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
+<p>The signed adjoint of the reflection fails in four degenerate configurations. First, the adjoint of the reflection is the reflection itself, so the adjoint operation is the identity on the class of the reflections; there is no correspondence to compute. Second, the signed pairing $\{f,g\}=\langle f,\alpha g\rangle$ is equivalent to the coefficient form through $\alpha$, so the signed adjoint and the ordinary adjoint coincide; the signed structure adds nothing in the commutative case. Third, the class of the reflections is a single operator, so the adjoint operation cannot distinguish the units; in the noncommutative ring the class is a group and the adjoint is an anti-automorphism of it. Fourth, the involution $-\alpha$, which is not a reflection, is self-adjoint and unitary and is not attained by the adjoint of any reflection; it is the boundary of the correspondence. These are the boundary cases of the signed adjoint of the reflection.</p>
+<h2 id="summary">Summary</h2>
+<p>The reflection $r_u(f)=u*\alpha(f)*u^{-1}$ of the algebra of arithmetic functions is the grade involution $\alpha$ for every unit $u$, and its adjoint for the coefficient form is again $\alpha$, so the reflection is self-adjoint and unitary and the adjoint operation fixes the class of the reflections. With respect to the signed pairing $\{f,g\}=\langle f,\alpha g\rangle$ the reflection is an isometry and its signed adjoint is itself. The involutive signed sandwiches are exactly $\pm\alpha$, the reflection being the positive one, and the degenerate cases are the collapse of the correspondence, the equivalence of the two forms, the single-element class of the reflections and the non-reflection involution $-\alpha$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r_u(f)=u*\alpha(f)*u^{-1}$</td>
+<td>Reflection</td>
+</tr>
+<tr>
+<td>$r_u=\alpha$</td>
+<td>The reflection is unique</td>
+</tr>
+<tr>
+<td>$r_u^*=\alpha=r_u$</td>
+<td>The signed adjoint</td>
+</tr>
+<tr>
+<td>$\alpha(f)(n)=\lambda(n)f(n)$</td>
+<td>Grade involution</td>
+</tr>
+<tr>
+<td>$\{f,g\}=\langle f,\alpha g\rangle$</td>
+<td>Signed pairing</td>
+</tr>
+<tr>
+<td>$S^\alpha_c=L_c\alpha$</td>
+<td>Signed left multiplication</td>
+</tr>
+<tr>
+<td>$c*c=\varepsilon$</td>
+<td>Involution condition</td>
+</tr>
+<tr>
+<td>$\pm\alpha$</td>
+<td>The two involutions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the reflections and their adjoints.</li>
+<li>Tsit Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the involutions and the symmetric forms.</li>
+<li>Paul Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 1982), for the self-adjoint involutions.</li>
+<li>Sterling Berberian, <em>Introduction to Hilbert Space</em> (Oxford University Press, 1961), for the reflection operators.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the comparison with the noncommutative case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

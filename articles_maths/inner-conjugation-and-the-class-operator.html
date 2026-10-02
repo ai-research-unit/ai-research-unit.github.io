@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inner Conjugation and the Class Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="inner-conjugation-and-the-class-operator"><strong>Inner Conjugation and the Class Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The conjugation action of a group on itself produces, for every element $g$, the operator $c_g(x)=gxg^{-1}$. It is the first operator of the category that is neither a left nor a right translation but the product of the two, and it is the operator from which the conjugacy classes, the centralisers and the class equation are read. This article treats that operator as an object: it fixes it, derives the identities it satisfies, identifies its orbits with the conjugacy classes, follows it to the subgroup lattice, and attaches to each conjugacy class the operator that sums the conjugations by its elements.</p>
+<p>The article assumes the elementary theory of groups, the conjugation action, the conjugacy classes, the class equation and the normal subgroups from <em>Groups</em>, and the language of actions, orbits, stabilisers, faithful actions and the permutation representation from <em>Transformation Groups</em>. The conjugacy classes and the class equation are not re-derived; they are cited, and what is established here is the operator that produces them, the factorisation $c_g=L_gR_{g^{-1}}$ that places it in the operator layer, the composition law $c_gc_h=c_{gh}$, the action on the lattice of subgroups, and the class operator. The interpretation of $g\mapsto c_g$ as a homomorphism into the automorphism group, the inner automorphisms and the outer quotient, is <em>The Conjugation Representation</em>; the two-sided operators with a fixed left and right factor are <em>Left and Right Multiplication in a Group</em> and <em>The Signed Sandwich on a Group</em>; the inversion of a group and the involutions it carries are <em>Involutive Groups</em>; and the class sums, their centrality and the centre of the group algebra are <em>Group Algebras</em>. Nothing of those entries is repeated.</p>
+<p>The article reasons with no distance, no norm and no form. Its operators act on the set $G$; where a sum of operators is needed, the operators are extended linearly to the group algebra $k[G]$, whose elements are finite $k$-linear combinations of the group elements.</p>
+<h2 id="the-inner-conjugation-operator">The Inner Conjugation Operator</h2>
+<p><strong>Definition.</strong> For $g \in G$ the <strong>inner conjugation by $g$</strong> is the map</p>
+<p>$$
+c_g : G \longrightarrow G, \qquad c_g(x) = gxg^{-1}.
+$$</p>
+<p><strong>Proposition (it is an automorphism).</strong> For every $g$ the map $c_g$ is an automorphism of $G$, with inverse $c_{g^{-1}}$; and $c_e = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> It is bijective, because $c_{g^{-1}}(c_g(x)) = g^{-1}(gxg^{-1})g = x$ and symmetrically. It is a homomorphism, because</p>
+<p>$$
+c_g(xy) = gxyg^{-1} = (gxg^{-1})(gyg^{-1}) = c_g(x)\,c_g(y).
+$$</p>
+<p>The statements $c_gc_{g^{-1}}=\mathrm{id}=c_{g^{-1}}c_g$ and $c_e=\mathrm{id}$ are immediate.</p>
+<p><strong>Proposition (the composition law).</strong> For all $g, h \in G$,</p>
+<p>$$
+c_g \circ c_h = c_{gh}.
+$$</p>
+<p><strong>Proof.</strong> For every $x$, $c_g(c_h(x)) = g(hxh^{-1})g^{-1} = (gh)x(gh)^{-1} = c_{gh}(x)$. The law says that the assignment $g\mapsto c_g$ is multiplicative, a fact whose interpretation as a homomorphism into $\operatorname{Aut}(G)$ belongs to <em>The Conjugation Representation</em>.</p>
+<p><strong>Proposition (the factorisation into one-sided translations).</strong> Let $L_g(x)=gx$ and $R_h(x)=xh$ be the left and the right translation by $g$ and $h$. Then</p>
+<p>$$
+c_g = L_g \circ R_{g^{-1}} = R_{g^{-1}} \circ L_g .
+$$</p>
+<p><strong>Proof.</strong> $L_g(R_{g^{-1}}(x)) = g\,x\,g^{-1} = R_{g^{-1}}(L_g(x))$, so the two orders agree because the inner conjugation computes both. That the two orders agree is the statement that left and right translations commute, taken up in <em>Left and Right Multiplication in a Group</em>.</p>
+<p>The factorisation records the position of the inner conjugation in the operator layer of the category: it is the two-sided operator whose left factor and right factor are the single element $g$ and its inverse $g^{-1}$. A general two-sided operator with independent factors is the subject of <em>The Signed Sandwich on a Group</em>, and the one-sided factors themselves are the subject of <em>Left and Right Multiplication in a Group</em>.</p>
+<p><strong>Proposition (the inversion is an involution on the operators).</strong> Composition of inner conjugations is inner conjugation; inversion of the conjugating element inverts the operator, $c_g^{-1}=c_{g^{-1}}$; and $c_g$ depends only on the coset of $g$ modulo the centre.</p>
+<p><strong>Proof.</strong> The first two statements restate the propositions above. For the last, if $z \in Z(G)$ then $c_{gz}(x) = gzxz^{-1}g^{-1} = gxg^{-1} = c_g(x)$ because $z$ is central; hence $c_{gz}=c_g$ for every $z \in Z(G)$.</p>
+<h2 id="the-orbits-the-conjugacy-classes">The Orbits: the Conjugacy Classes</h2>
+<p>The inner conjugations act on the set $G$: the assignment $(g,x)\mapsto c_g(x)$ satisfies $c_e=\mathrm{id}$ and $c_{gh}=c_gc_h$, so it is a left action of $G$ on itself. Its orbits are the <strong>conjugacy classes</strong> of <em>Groups</em>: two elements $x,y$ lie in the same orbit exactly when $y=gxg^{-1}$ for some $g$, which is the definition of conjugacy. The class of $x$ is written $\chi(x)$, and the classes partition $G$.</p>
+<p><strong>Proposition (the stabiliser is the centraliser).</strong> For $x \in G$ the stabiliser of $x$ under the conjugation action is the centraliser</p>
+<p>$$
+C_G(x) = \{ g \in G : gx = xg \},
+$$</p>
+<p>and the orbit–stabiliser theorem of <em>Transformation Groups</em> gives $|\chi(x)| = [G:C_G(x)]$, so the size of a class divides $|G|$ when $G$ is finite.</p>
+<p><strong>Proof.</strong> $c_g(x)=x$ is equivalent to $gx=xg$. The orbital statement is the orbit–stabiliser theorem applied to the action of $G$ on itself by conjugation.</p>
+<p><strong>Proposition (the fixed points are the centre).</strong> The elements whose conjugacy class is a singleton are exactly the elements of the centre $Z(G)$.</p>
+<p><strong>Proof.</strong> $c_g(x)=x$ for all $g$ is the definition of $x\in Z(G)$.</p>
+<p>The orbit decomposition of the conjugation action is the <strong>class equation</strong> of <em>Groups</em>: for a finite group, the classes of size greater than $1$ contribute $[G:C_G(x_i)]$ and the singleton classes contribute the centre,</p>
+<p>$$
+|G| = |Z(G)| + \sum_{i} [G:C_G(x_i)],
+$$</p>
+<p>each index being an integer greater than $1$ that divides $|G|$. The equation is stated and used in <em>Groups</em>; its content here is only that it is the orbit decomposition of the operator $c_g$.</p>
+<h2 id="the-action-on-the-subgroups">The Action on the Subgroups</h2>
+<p>The operator $c_g$ is a bijection of $G$, so it carries a subset to a subset of the same cardinality, and it carries a subgroup to a subgroup.</p>
+<p><strong>Proposition.</strong> If $H \leq G$ then $c_g(H) = gHg^{-1} \leq G$, of the same order as $H$; and $c_g$ preserves inclusion, intersection and generation, so $H\mapsto gHg^{-1}$ is an automorphism of the lattice of subgroups of $G$.</p>
+<p><strong>Proof.</strong> $gHg^{-1}$ is closed under multiplication, contains $e$, and is closed under inversion because $(ghg^{-1})^{-1}=gh^{-1}g^{-1}$; its cardinality equals that of $H$ because $x\mapsto gxg^{-1}$ is a bijection. The preservation of inclusion and intersection is immediate from bijectivity, and generation is preserved because the image of a generating set generates the image.</p>
+<p><strong>Proposition (normality is preserved).</strong> If $H \trianglelefteq G$ then $c_g(H)=H$ for every $g$, and conversely a subgroup fixed by every inner conjugation is normal; hence the normal subgroups of $G$ are exactly the fixed points of the conjugation action on the subgroup lattice.</p>
+<p><strong>Proof.</strong> Normality says $gHg^{-1}=H$ for every $g$, which is $c_g(H)=H$; and conversely if $c_g(H)=H$ for all $g$ then $H$ is normal by the definition of normality.</p>
+<p><strong>Proposition (the orbit of a subgroup).</strong> The orbit of $H$ under the conjugation action is its conjugacy class $\{gHg^{-1}: g \in G\}$, its stabiliser is the normaliser $N_G(H)=\{g \in G : gHg^{-1}=H\}$, and its size is $[G:N_G(H)]$; in particular $H$ is normal exactly when its orbit is a single point.</p>
+<p><strong>Proof.</strong> The action on subgroups is the restriction of the conjugation action, so the orbit and stabiliser statements are those of the orbit–stabiliser theorem; the stabiliser of $H$ is by definition the normaliser, and the fixed points are the normal subgroups by the proposition above.</p>
+<p>Because $c_g$ preserves the order, the index, the normality, the cyclicity, the commutativity and the derived subgroup of a subgroup, it permutes the subgroups of any fixed order and the normal subgroups of any fixed order. The normal subgroups are the fixed points of that permuted set; this is what makes the conjugation action the tool by which the normal subgroups of a finite group are counted.</p>
+<h2 id="the-class-operator">The Class Operator</h2>
+<p>Let $\chi$ be a conjugacy class of $G$. The class carries an operator formed by summing the conjugations by its elements.</p>
+<p><strong>Definition.</strong> The <strong>class operator</strong> of $\chi$ is the linear operator on the group algebra,</p>
+<p>$$
+\mathrm{Ad}_\chi = \sum_{g \in \chi} c_g : k[G] \longrightarrow k[G],
+$$</p>
+<p>the sum of the linear extensions of the inner conjugations by the elements of $\chi$. For a single element write $\mathrm{Ad}_g$ for $c_g$ extended linearly.</p>
+<p>The operator $\mathrm{Ad}_g$ is the inner automorphism of the algebra $k[G]$ induced by the unit $g$; the class operator is the sum of these inner automorphisms over a conjugacy class.</p>
+<p><strong>Proposition (it commutes with every inner conjugation).</strong> For every $h \in G$,</p>
+<p>$$
+\mathrm{Ad}_h \circ \mathrm{Ad}_\chi = \mathrm{Ad}_\chi \circ \mathrm{Ad}_h .
+$$</p>
+<p><strong>Proof.</strong> Because $c_h c_g c_h^{-1} = c_{hgh^{-1}}$ for every $g$, by the composition law and the inverse statement, and because $g\mapsto hgh^{-1}$ permutes the class $\chi$,</p>
+<p>$$
+\mathrm{Ad}_h \,\mathrm{Ad}_\chi\, \mathrm{Ad}_h^{-1} = \sum_{g\in\chi} c_{hgh^{-1}} = \sum_{g'\in\chi} c_{g'} = \mathrm{Ad}_\chi .
+$$</p>
+<p>Multiplying on the right by $\mathrm{Ad}_h$ gives the claim, since $\mathrm{Ad}_h^{-1}=\mathrm{Ad}_{h^{-1}}$.</p>
+<p><strong>Proposition (its value on the centre).</strong> An element $z \in k[G]$ fixed by every inner conjugation is central, and the class operator acts on it by the scalar $|\chi|$:</p>
+<p>$$
+\mathrm{Ad}_\chi(z) = |\chi|\, z .
+$$</p>
+<p><strong>Proof.</strong> An element is fixed by every $\mathrm{Ad}_g$ exactly when its coefficients are constant on conjugacy classes, which is the centrality statement of <em>Group Algebras</em>. For such a $z$ each term of the sum sends $z$ to itself, because $gzg^{-1}=z$ when $z$ is central, and there are $|\chi|$ terms.</p>
+<p>In particular, for the <strong>class sum</strong> $C_\psi=\sum_{h\in\psi} h$ of a conjugacy class $\psi$, the class sums being a basis of the centre of $k[G]$ by <em>Group Algebras</em>, the proposition gives $\mathrm{Ad}_\chi(C_\psi)=|\chi|\,C_\psi$. The class operators therefore act on the centre diagonally with the class sizes as eigenvalues. The product of two class operators on the centre, and the algebra of the centre that the product defines, are the class algebra of the representation theory and belong to the later categories; what is fixed here is the operator attached to a class and its commutation with the inner conjugations.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>inner conjugation</strong> by $g$ is the operator $c_g(x)=gxg^{-1}$. It is an automorphism of $G$ with inverse $c_{g^{-1}}$, it satisfies the composition law $c_gc_h=c_{gh}$ so that $g\mapsto c_g$ is a multiplicative assignment, and it factors as the two-sided operator $c_g=L_gR_{g^{-1}}=R_{g^{-1}}L_g$ into a left and a right translation. It depends only on the coset of $g$ modulo the centre.</p>
+<p>The orbits of the conjugation action are the <strong>conjugacy classes</strong> of <em>Groups</em>, the stabiliser of $x$ is the centraliser $C_G(x)$, so the size of a class is $[G:C_G(x)]$, and the fixed points are the elements of the centre. The orbit decomposition is the <strong>class equation</strong>, cited from <em>Groups</em>.</p>
+<p>On the lattice of subgroups the operator $H\mapsto gHg^{-1}$ is an order-preserving bijection that preserves the order, the index, the normality, the cyclicity and the derived subgroup; the orbit of $H$ is its conjugacy class, its stabiliser is the normaliser $N_G(H)$, its orbit size is $[G:N_G(H)]$, and the normal subgroups are exactly the fixed points.</p>
+<p>The <strong>class operator</strong> of a conjugacy class $\chi$ is the sum $\mathrm{Ad}_\chi=\sum_{g\in\chi}c_g$ of the inner conjugations by its elements, extended linearly to the group algebra. It commutes with every inner conjugation, and it acts on the centre of $k[G]$ — the space of central elements, whose basis is formed by the class sums — by the scalar $|\chi|$. In particular the class sum of any class is an eigenvector of every class operator with eigenvalue the size of the operator's class.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c_g$</td>
+<td>inner conjugation by $g$, $c_g(x)=gxg^{-1}$</td>
+</tr>
+<tr>
+<td>$L_g$, $R_h$</td>
+<td>left translation $L_g(x)=gx$ and right translation $R_h(x)=xh$</td>
+</tr>
+<tr>
+<td>$c_g=L_gR_{g^{-1}}$</td>
+<td>factorisation of the inner conjugation into one-sided translations</td>
+</tr>
+<tr>
+<td>$c_gc_h=c_{gh}$</td>
+<td>the composition law of the inner conjugations</td>
+</tr>
+<tr>
+<td>$\chi(x)$</td>
+<td>the conjugacy class of $x$, the orbit of $x$ under conjugation</td>
+</tr>
+<tr>
+<td>$C_G(x)$</td>
+<td>centraliser of $x$, the stabiliser of $x$; $|\chi(x)|=[G:C_G(x)]$</td>
+</tr>
+<tr>
+<td>$Z(G)$</td>
+<td>centre, the set of singleton orbits</td>
+</tr>
+<tr>
+<td>$N_G(H)$</td>
+<td>normaliser of $H$, the stabiliser of $H$ in the action on subgroups</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_g$</td>
+<td>the linear extension of $c_g$ to $k[G]$, the inner automorphism of the algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_\chi=\sum_{g\in\chi}c_g$</td>
+<td>class operator of the conjugacy class $\chi$</td>
+</tr>
+<tr>
+<td>$C_\psi=\sum_{h\in\psi}h$</td>
+<td>class sum of $\psi$, central in $k[G]$ by <em>Group Algebras</em></td>
+</tr>
+<tr>
+<td>$k[G]$</td>
+<td>group algebra of finite $k$-linear combinations of the group elements</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Derek J. S. Robinson, <em>A Course in the Theory of Groups</em> (Springer, second edition, 1996), for the conjugation action, the conjugacy classes, the centraliser and the action on the subgroup lattice.</li>
+<li>Joseph J. Rotman, <em>An Introduction to the Theory of Groups</em> (Springer, fourth edition, 1995), for the orbit decomposition and the class equation of a finite group.</li>
+<li>I. Martin Isaacs, <em>Character Theory of Finite Groups</em> (Academic Press, 1976), for the class sums as a basis of the centre of the group algebra and the class multiplication coefficients.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for the inner automorphisms of the group algebra and the centre as the fixed space of the conjugation action.</li>
+<li>Donald S. Passman, <em>The Algebraic Structure of Group Rings</em> (Wiley, 1977), for the centrality of the class sums in the infinite case and the algebra they generate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

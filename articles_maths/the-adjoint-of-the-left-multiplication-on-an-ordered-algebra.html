@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint of the Left Multiplication on an Ordered Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-of-the-left-multiplication-on-an-ordered-algebra"><strong>The Adjoint of the Left Multiplication on an Ordered Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>left multiplication</strong> $L_a : x\mapsto ax$ of an ordered involutive algebra has, for the trace form, the adjoint</p>
+<p>$$
+(L_a)^{*} = L_{a^{*}} ,
+$$</p>
+<p>and its right-handed companion satisfies $(R_a)^{*} = R_{a^{*}}$; the article develops the consequences of this single computation. The two-sided <strong>multiplication operator</strong> $T_{a,b} = L_aR_b$, which sends $x$ to $axb$, has the adjoint $(T_{a,b})^{*} = T_{b^{*},a^{*}}$, so the adjoint of a two-sided multiplication is again a two-sided multiplication, with the parameters interchanged and conjugated. The <strong>inner derivation</strong> $\delta_a = L_a - R_a$ has the adjoint $\delta_a^{*} = \delta_{a^{*}}$, so an inner derivation is <strong>self-adjoint</strong> exactly when the deriving element is self-adjoint; and the derivation property is preserved by the adjoint involution. In all of this the order is the quadratic order of <em>Self-Adjoint Elements and the Order</em>: an element is positive if and only if its left multiplication is a positive operator, and the adjoint is order preserving, so the <strong>adjoint and the order</strong> are compatible in every form in which the one-sided multiplications appear.</p>
+<p>The map $a\mapsto L_a$ is a <strong>*-homomorphism</strong> of the algebra into the algebra of operators, and $a\mapsto R_a$ is a <strong>*-anti-homomorphism</strong>; their combination produces the two-sided structure, the derivations, and the <strong>multiplication algebra</strong> $\{L_aR_b\}$. The article states these maps, computes their adjoints, and identifies the order-theoretic content: the positive cone of the algebra is carried isomorphically onto the cone of the positive one-sided multiplications, and the symmetrised combinations $L_a + R_a$ are the self-adjoint operators of the multiplication algebra.</p>
+<p>The adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the order of the self-adjoint elements is <em>Self-Adjoint Elements and the Order</em>; the positive functionals are <em>Positive Functionals and Self-Adjointness</em>; the involution on the automorphisms is <em>The Involution on the Order Automorphisms</em>; the signed adjoints are <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Adjoint Action on a Module over an Ordered Algebra</em>; the forms are <em>Positive Definite Forms and the Order</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; and the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>. The operator-algebraic models are <em>Operator Algebras</em> and <em>The Theory of von Neumann Algebras</em> of Part II.</p>
+<h2 id="the-adjoints-of-the-one-and-two-sided-multiplications">The Adjoints of the One- and Two-Sided Multiplications</h2>
+<p><strong>Proposition (the one-sided multiplications).</strong> With the adjoints taken for the trace form,</p>
+<p>$$
+(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}} ,
+$$</p>
+<p>so the left multiplications form a <strong>*-homomorphism</strong> $a\mapsto L_a$ with $L_{ab} = L_aL_b$ and $L_{a^{*}} = (L_a)^{*}$, and the right multiplications form a <strong>*-anti-homomorphism</strong> $a\mapsto R_a$ with $R_{ab} = R_bR_a$ and $R_{a^{*}} = (R_a)^{*}$.</p>
+<p><em>Proof.</em> $\langle L_ax,y\rangle = \operatorname{tr}((ax)^{*}y) = \operatorname{tr}(x^{*}a^{*}y) = \langle x,L_{a^{*}}y\rangle$ and $\langle R_ax,y\rangle = \operatorname{tr}((xa)^{*}y) = \operatorname{tr}(a^{*}x^{*}y) = \operatorname{tr}(x^{*}ya^{*}) = \langle x,R_{a^{*}}y\rangle$. The homomorphism and anti-homomorphism properties are the associativity, $L_{ab} = L_aL_b$ and $R_{ab} = R_bR_a$, together with the adjoint identities.</p>
+<p><strong>Proposition (the two-sided multiplications).</strong> For $a,b\in A$ let $T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$; then</p>
+<p>$$
+(T_{a,b})^{*} = T_{b^{*},a^{*}} ,
+$$</p>
+<p>so the two-sided multiplications form a <strong>bimodule</strong> under the adjoint, the map $(a,b)\mapsto T_{a,b}$ is bilinear, and the identity $T_{a,b}T_{c,d} = T_{ac,db}$ holds by associativity; consequently the adjoint of a two-sided multiplication is again a two-sided multiplication, and the <strong>self-adjoint</strong> two-sided multiplications are the $T_{a,a^{*}}$ and their sums.</p>
+<p><em>Proof.</em> $\langle T_{a,b}x,y\rangle = \operatorname{tr}((axb)^{*}y) = \operatorname{tr}(b^{*}x^{*}a^{*}y) = \operatorname{tr}(x^{*}a^{*}yb^{*}) = \langle x,T_{b^{*},a^{*}}y\rangle$, which is the adjoint formula; the composition identity is associativity, and the self-adjointness statement is the fixed-point condition $T_{a,b} = T_{b^{*},a^{*}}$.</p>
+<p><strong>Corollary (the symmetrised two-sided multiplication).</strong> The operator $L_a + R_a$, the <strong>symmetrised two-sided multiplication</strong>, is self-adjoint exactly when $a$ is self-adjoint, $(L_a + R_a)^{*} = L_{a^{*}} + R_{a^{*}}$, and it is the operator $x\mapsto ax + xa$; the <strong>Jordan multiplication</strong> of the algebra is its restriction to the self-adjoint part.</p>
+<p><em>Proof.</em> The adjoint formula is the sum of the two adjoint identities; the self-adjointness condition is immediate; the identification with the Jordan multiplication is the definition $\{a,x\} = \frac12(ax + xa)$.</p>
+<h2 id="the-inner-derivations">The Inner Derivations</h2>
+<p><strong>Definition.</strong> The <strong>inner derivation</strong> of $a$ is $\delta_a = L_a - R_a$, the operator $\delta_a(x) = ax - xa = [a,x]$.</p>
+<p><strong>Proposition (the adjoint of an inner derivation).</strong> The adjoint of an inner derivation is</p>
+<p>$$
+(\delta_a)^{*} = \delta_{a^{*}} ,
+$$</p>
+<p>so $\delta_a$ is self-adjoint exactly when $a$ is self-adjoint, and it is <strong>skew-adjoint</strong>, $(\delta_a)^{*} = -\delta_a$, exactly when $a$ is <strong>skew-adjoint</strong>, $a^{*} = -a$; the inner derivations form a Lie subalgebra of the operators, $[\delta_a,\delta_b] = \delta_{[a,b]}$, closed under the adjoint.</p>
+<p><em>Proof.</em> The adjoint formula is the difference of the one-sided adjoints. The skew-adjointness condition is $\delta_{a^{*}} = -\delta_a = \delta_{-a}$, which is $a^{*} = -a$. The Lie-algebra statement is the Jacobi-type identity $[\delta_a,\delta_b] = \delta_{[a,b]}$, which is the derivation property computed on the generators.</p>
+<p><strong>Proposition (the Leibniz rule and the order).</strong> Every inner derivation <strong>derives</strong> the multiplication, $\delta_a(xy) = \delta_a(x)y + x\delta_a(y)$, and the adjoint of a derivation is a derivation; the map $a\mapsto\delta_a$ is linear, its kernel is the centre of the algebra, and the positive elements of the centre give the vanishing inner derivations, so the order of the derivation algebra is the order of the central elements.</p>
+<p><em>Proof.</em> The Leibniz rule is the associativity $a(xy) - (xy)a = (ax - xa)y + x(ay - ya)$; the adjoint of a derivation is a derivation because the adjoint of the Leibniz rule is the Leibniz rule for the adjoint; the kernel statement is the definition of the centre, and the order statement is the restriction of the quadratic order to the centre.</p>
+<h2 id="the-adjoint-and-the-order">The Adjoint and the Order</h2>
+<p><strong>Theorem (the order of the multiplications).</strong> The map $a\mapsto L_a$ is an <strong>order isomorphism</strong> of the ordered involutive algebra onto the subalgebra of the left multiplications, and</p>
+<p>$$
+a\geq0 \iff L_a\geq0 \iff R_a\geq0 \iff T_{a,b}\geq0 \ \text{ for every } b\geq0 ,
+$$</p>
+<p>so the positive cone of the algebra is carried isomorphically onto the cone of the positive multiplications; the adjoint of a positive multiplication is positive, and the adjoint is therefore an <strong>order automorphism</strong> of the multiplication algebra.</p>
+<p><em>Proof.</em> The first two equivalences are the theorem of <em>Self-Adjoint Elements and the Order</em>; the third is the two-sided statement $T_{a,b}(A_+) = L_aR_b(A_+)\subseteq L_a(A_+)\subseteq A_+$ for $a,b\geq0$, with the converse from the choice $b = 1$; the positivity of the adjoint is <em>The Adjoint of a Positive Operator</em>, and the order-automorphism statement is its consequence.</p>
+<p><strong>Corollary (the symmetrised multiplications and the order unit).</strong> The symmetrised two-sided multiplication $L_a + R_a$ is positive if and only if $a\geq0$, and the <strong>order unit</strong> of the multiplication algebra is $L_1 = I$; the positive elements of the multiplication algebra are generated by the $L_aR_b$ with $a,b\geq0$, and the order interval at the identity is the set of the multiplications $T_{a,b}$ with $0\leq a,b$ and $T_{a,b}\leq I$.</p>
+<p><em>Proof.</em> The positivity of $L_a + R_a$ reduces to the positivity of $L_a$ and $R_a$, hence to $a\geq0$; the order unit is the identity multiplication; the generation statement is the additive closure of the cone; the interval statement is the definition of the order interval.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the trace form. The left multiplication is $L_A(X) = AX$, its adjoint is the multiplication by $A^{*}$, and the inner derivation is $\delta_A(X) = AX - XA$ with adjoint $\delta_{A^{*}}$; the skew-adjoint derivations are the $\delta_A$ with $A$ skew-Hermitian, which are the infinitesimal generators of the unitary conjugations. The positivity of $L_A$ is the positivity of $A$ in the Loewner order. This is the finite-dimensional model.</p>
+<h3 id="the-self-adjoint-operators">The Self-Adjoint Operators</h3>
+<p>Let $A$ be a von Neumann algebra with the trace form. The left and right multiplications, the two-sided multiplications and the inner derivations are the standard operators of the algebra; the derivations with self-adjoint deriving elements are self-adjoint, and the derivations with skew-adjoint elements are skew-adjoint and generate the group of the inner *-automorphisms. The positivity of the multiplications is the positivity of the elements in the order of the algebra.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $A = C(X,\mathbb{C})$ with the pointwise order and the $L^{2}$ trace form. The left multiplication $L_f$ is the multiplication by $f$, its adjoint is the multiplication by $\bar f$, and the inner derivation $\delta_f$ is the multiplication by $f - \bar f\cdot$ in the commutative case the derivations vanish on the self-adjoint part, and the adjoint of $L_f$ is $L_{\bar f}$; the positivity of $L_f$ is the pointwise nonnegativity of $f$. The commutative case shows that the derivation structure disappears and the adjoint reduces to the complex conjugation.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>left multiplication</strong> $L_a : x\mapsto ax$ has the adjoint $(L_a)^{*} = L_{a^{*}}$ for the trace form, the <strong>right multiplication</strong> has $(R_a)^{*} = R_{a^{*}}$, and $a\mapsto L_a$ (resp. $a\mapsto R_a$) is a <strong>*-homomorphism</strong> (resp. a <strong>*-anti-homomorphism</strong>). The <strong>two-sided multiplication</strong> $T_{a,b} = L_aR_b$ has $(T_{a,b})^{*} = T_{b^{*},a^{*}}$, so it is self-adjoint for the parameters $(a,a^{*})$; the <strong>symmetrised</strong> $L_a + R_a$ is self-adjoint exactly for the self-adjoint $a$ and is the Jordan multiplication. The <strong>inner derivation</strong> $\delta_a = L_a - R_a = [a,\cdot]$ has $(\delta_a)^{*} = \delta_{a^{*}}$, is self-adjoint exactly for the self-adjoint $a$ and skew-adjoint exactly for the skew-adjoint $a$, satisfies the <strong>Leibniz rule</strong>, and its kernel is the centre. The <strong>order</strong> is transported: $a\geq0\iff L_a\geq0\iff R_a\geq0\iff T_{a,b}\geq0$ for every $b\geq0$, the adjoint of a positive multiplication is positive, and the adjoint is an <strong>order automorphism</strong> of the multiplication algebra, whose order unit is $L_1 = I$ and whose interval at the identity is the set of the multiplications $T_{a,b}$ below $I$. The adjoint and the positivity are <em>The Adjoint of a Positive Operator</em>; the order is <em>Self-Adjoint Elements and the Order</em>; the functionals are <em>Positive Functionals and Self-Adjointness</em>; the automorphisms are <em>The Involution on the Order Automorphisms</em>; the signed adjoints are <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>; the graded action is <em>The Graded Adjoint Action on a Module over an Ordered Algebra</em>; the forms are <em>Positive Definite Forms and the Order</em>; and the ordered involution is <em>Ordered Involutive Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a x = ax$, $R_a x = xa$</td>
+<td>Left and right multiplications</td>
+</tr>
+<tr>
+<td>$(L_a)^{*} = L_{a^{*}}$, $(R_a)^{*} = R_{a^{*}}$</td>
+<td>Adjoints</td>
+</tr>
+<tr>
+<td>$T_{a,b} = L_aR_b$, $T_{a,b}(x) = axb$</td>
+<td>Two-sided multiplication</td>
+</tr>
+<tr>
+<td>$(T_{a,b})^{*} = T_{b^{*},a^{*}}$</td>
+<td>Adjoint of a two-sided multiplication</td>
+</tr>
+<tr>
+<td>$L_a + R_a$</td>
+<td>Symmetrised, self-adjoint for self-adjoint $a$</td>
+</tr>
+<tr>
+<td>$\delta_a = L_a - R_a = [a,\cdot]$</td>
+<td>Inner derivation</td>
+</tr>
+<tr>
+<td>$(\delta_a)^{*} = \delta_{a^{*}}$</td>
+<td>Adjoint of a derivation</td>
+</tr>
+<tr>
+<td>$a\geq0\iff L_a\geq0$</td>
+<td>Order isomorphism of the multiplications</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the left and right multiplications, the derivations and the order.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the inner derivations, the Leibniz rule and the automorphism groups.</li>
+<li>Jacques Dixmier, <em>Les algèbres d'opérateurs dans l'espace hilbertien</em> (Gauthier-Villars, 1969), for the multiplication algebra, the derivations and the order of a von Neumann algebra.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the positive multiplications, the quadratic order and the order-isomorphism of the multiplication algebra.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the derivations, the inner automorphisms and the order of the operator algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

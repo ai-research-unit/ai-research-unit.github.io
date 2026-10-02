@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hilbert Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hilbert-spaces"><strong>Hilbert Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hilbert space is a vector space with an inner product whose induced norm is complete. The inner product is a sesquilinear form with a conjugation built into it, and the present article reads the space through that form: the second slot is conjugate-linear, the form is Hermitian, positive definite, and it induces the norm, so a Hilbert space is a normed space together with a compatible involution on the scalars. The companion article <em>Banach and Hilbert Spaces</em> of this category develops the same space in the normed setting and proves the projection theorem, the existence of orthonormal bases and the classification of the separable case; the present article is the involution-first reading on which the rest of the group builds.</p>
+<p>The one structure that the form adds to the vector-space data is the <strong>conjugation</strong>: an antilinear isometric involution $J$ with $\langle Jx,Jy\rangle=\langle y,x\rangle$, which exists on every Hilbert space, is the componentwise conjugation in the sequence and function models, and is the algebraic shadow of the sesquilinearity. Conjugations classify the real forms of a complex Hilbert space, and they make the adjoint of an operator expressible through the real structure. This article fixes the form, the completeness, the orthonormal bases, the projection theorem, the conjugation and the self-duality, and points to the operator theory that these produce.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $H$ is a Hilbert space over $\mathbb{K}$ with inner product $\langle\cdot,\cdot\rangle$ <strong>linear in the first argument and conjugate-linear in the second</strong>, and $\|x\|=\sqrt{\langle x,x\rangle}$ is the induced norm. A <strong>conjugation</strong> on $H$ is an antilinear map $J$ with $J^2=I$ and $\langle Jx,Jy\rangle=\langle y,x\rangle$. The dual is $H^*$, the bounded operators are $B(H)$, and the adjoint is $T^*$.</p>
+<h2 id="the-inner-product-and-the-norm">The Inner Product and the Norm</h2>
+<p><strong>Definition.</strong> An <strong>inner product</strong> on a $\mathbb{K}$-vector space $H$ is a pairing $\langle\cdot,\cdot\rangle:H\times H\to\mathbb{K}$ that is linear in the first argument, conjugate-linear in the second, Hermitian in the sense $\langle x,y\rangle=\overline{\langle y,x\rangle}$, and positive definite, $\langle x,x\rangle>0$ for $x\neq0$. An <strong>inner product space</strong> is a pair $(H,\langle\cdot,\cdot\rangle)$, and its induced norm is $\|x\|=\sqrt{\langle x,x\rangle}$.</p>
+<p><strong>Theorem (Cauchy–Schwarz and the norm axioms).</strong> For all $x,y\in H$,</p>
+<p>$$
+|\langle x,y\rangle|\le\|x\|\,\|y\| ,
+$$</p>
+<p>with equality exactly when $x,y$ are linearly dependent, and $\|\cdot\|$ is a norm: the triangle inequality is</p>
+<p>$$
+\|x+y\|\le\|x\|+\|y\| .
+$$</p>
+<p><em>Proof.</em> If $y\neq0$, write $x=\alpha y+z$ with $\alpha=\langle x,y\rangle/\|y\|^2$ so that $\langle z,y\rangle=0$; then $\|x\|^2=|\alpha|^2\|y\|^2+\|z\|^2\ge|\langle x,y\rangle|^2/\|y\|^2$, which is the inequality, and equality forces $z=0$. The triangle inequality follows from expanding $\|x+y\|^2$ and applying Cauchy–Schwarz. The form is recovered from the norm by the polarisation identity $\langle x,y\rangle=\frac14\sum_{k=0}^3i^k\|x+i^ky\|^2$ over $\mathbb{C}$.</p>
+<p><strong>Proposition (the form as the involution on the scalars).</strong> The sesquilinearity is exactly the statement that the map $x\mapsto\langle x,\cdot\rangle$ is linear while $y\mapsto\langle\cdot,y\rangle$ is conjugate-linear, and the Hermitian symmetry is the compatibility of the form with the conjugation of $\mathbb{K}$. So the form may be read as a linear structure in the first argument together with a conjugate-linear structure in the second, and the two are exchanged by the Hermitian symmetry.</p>
+<p><em>Proof.</em> The two linearity statements are the definition, and the Hermitian symmetry conjugates the scalars, which is the statement that the two structures are mutual conjugates.</p>
+<p><strong>Theorem (Jordan–von Neumann).</strong> A norm on a $\mathbb{K}$-vector space is induced by an inner product if and only if it satisfies the parallelogram law</p>
+<p>$$
+\|x+y\|^2+\|x-y\|^2=2\|x\|^2+2\|y\|^2 ,
+$$</p>
+<p>and the inner product is then unique and given by the polarisation identity.</p>
+<p><em>Proof.</em> Expanding the squares shows that an inner-product norm satisfies the law; conversely, defining the form by polarisation, the parallelogram law is precisely what is needed for additivity in each argument, and the remaining axioms follow. The norm of $\ell^p$ for $p\neq2$ and of $C(K)$ for $K$ with more than one point fails the law, so those spaces are not Hilbert spaces for their given norms.</p>
+<h2 id="completeness-and-the-projection-theorem">Completeness and the Projection Theorem</h2>
+<p><strong>Definition.</strong> A <strong>Hilbert space</strong> is an inner product space that is complete for the induced norm.</p>
+<p><strong>Proposition (closed subspaces).</strong> A subspace $M\subseteq H$ is a Hilbert space under the restricted inner product exactly when it is closed; the completion of an incomplete inner product space is a Hilbert space containing it as a dense subspace, and every closed subspace of a Hilbert space is complemented by its orthogonal complement $M^{\perp}=\{y:\langle y,m\rangle=0\ \text{for all } m\in M\}$.</p>
+<p><em>Proof.</em> A complete subspace of a metric space is closed, and a closed subspace of a complete space is complete; the completion is the standard metric completion of the normed space, on which the polarized form extends by continuity.</p>
+<p><strong>Theorem (projection).</strong> Let $C\subseteq H$ be a nonempty closed convex set. For every $x\in H$ there is a unique $p\in C$ with $\|x-p\|=d(x,C)$, and if $C=M$ is a closed subspace then $x-p\perp M$ and</p>
+<p>$$
+H=M\oplus M^{\perp},\qquad x=p+q,\quad p\in M,\ q\in M^{\perp}.
+$$</p>
+<p><em>Proof.</em> A minimising sequence is Cauchy by the parallelogram law applied to $x-c_m$ and $x-c_n$, so completeness gives a limit that is a nearest point, and uniqueness is again the parallelogram law; for a subspace, minimising $t\mapsto\|x-p-tm\|^2$ gives $\operatorname{Re}\langle x-p,m\rangle=0$ and, over $\mathbb{C}$, also $\langle x-p,im\rangle=0$, so $x-p\perp M$.</p>
+<p><strong>Corollary.</strong> The orthogonal projection $P_M$ onto a closed subspace $M$ is the linear map $x\mapsto p$ of the theorem; it is idempotent and self-adjoint, $P_M^2=P_M=P_M^*$, it is a contraction, and $I-P_M=P_{M^{\perp}}$. Conversely every self-adjoint idempotent of $B(H)$ is the orthogonal projection onto its range.</p>
+<p><em>Proof.</em> Linearity follows from the characterisation of $p$ as the unique element of $M$ with $x-p\perp M$; the self-adjointness is $\langle p_M(x),y\rangle=\langle x,p_M(y)\rangle$ by the orthogonality of the three pieces, and the converse is the projection theorem applied to the range.</p>
+<h2 id="orthonormal-bases-and-the-conjugation">Orthonormal Bases and the Conjugation</h2>
+<p><strong>Definition.</strong> A set $\{e_\alpha\}$ is <strong>orthonormal</strong> if $\langle e_\alpha,e_\beta\rangle=\delta_{\alpha\beta}$, and an <strong>orthonormal basis</strong> if it is maximal, equivalently if no nonzero vector is orthogonal to all of it. Each vector has the expansion $x=\sum_\alpha\langle x,e_\alpha\rangle e_\alpha$ against a basis, with $\|x\|^2=\sum_\alpha|\langle x,e_\alpha\rangle|^2$ (Parseval), and every Hilbert space has an orthonormal basis, countable exactly when the space is separable.</p>
+<p><em>Proof.</em> This is the Bessel–Parseval theory of <em>Banach and Hilbert Spaces</em>, where the existence by Zorn's lemma and the classification by the cardinality of a basis are proved.</p>
+<p><strong>Definition.</strong> A <strong>conjugation</strong> on $H$ is an antilinear map $J:H\to H$ with</p>
+<p>$$
+J^2=I,\qquad \langle Jx,Jy\rangle=\langle y,x\rangle ,
+$$</p>
+<p>equivalently an antiunitary involution. A vector is <strong>real</strong> for $J$ if $Jx=x$; the <strong>real form</strong> is the real Hilbert space $H_J=\{x:Jx=x\}$ with the real part of the form.</p>
+<p><strong>Proposition (existence and the models).</strong> Every Hilbert space carries a conjugation: choose an orthonormal basis $\{e_\alpha\}$ and set $J(\sum_\alpha c_\alpha e_\alpha)=\sum_\alpha\bar c_\alpha e_\alpha$. On $\ell^2$ the standard conjugation is the componentwise conjugation, and on $L^2(X,\mu)$ it is $f\mapsto\bar f$; the real form of the second is the space of real-valued square-integrable functions.</p>
+<p><em>Proof.</em> The map defined by conjugating the coordinates is antilinear, its square is the identity, and it reverses the form because it conjugates each coefficient; the models are the special cases of the coordinate formula in the standard bases.</p>
+<p><strong>Proposition (conjugations and the real forms).</strong> The conjugations of $H$ are in bijection with the real Hilbert subspaces $H_J$ whose complex span is $H$; two conjugations differ by a unitary of $H$, and the group of unitaries acts transitively on them. A conjugation is an isometry of $H$, so it is continuous, and its fixed space $H_J$ is closed and totally real, $H_J\cap iH_J=0$ over $\mathbb{C}$.</p>
+<p><em>Proof.</em> The fixed space of an antiunitary involution is a real closed subspace spanning $H$ over $\mathbb{C}$, and conversely a real form determines the conjugation by $J(x+iy)=x-iy$ on the complex span; for two conjugations the composite is a unitary, giving the transitivity; the closedness is the continuity of an isometry and the total reality is $J(ix)=-iJ(x)$.</p>
+<h2 id="self-duality-and-the-riesz-map">Self-Duality and the Riesz Map</h2>
+<p><strong>Theorem (Riesz representation).</strong> For every bounded linear functional $\varphi\in H^*$ there is a unique $y\in H$ with</p>
+<p>$$
+\varphi(x)=\langle x,y\rangle\quad(x\in H),\qquad \|\varphi\|=\|y\| .
+$$</p>
+<p>The map $\Phi:H\to H^*$, $\Phi(y)=\langle\cdot,y\rangle$, is a conjugate-linear isometric bijection, and $H$ is reflexive.</p>
+<p><em>Proof.</em> If $\varphi\neq0$ its kernel is a closed hyperplane, whose orthogonal complement is spanned by a unit vector $e$; then $y=\overline{\varphi(e)}e$ represents $\varphi$ and the norm identity follows from Cauchy–Schwarz with equality. Uniqueness is the nondegeneracy of the form, conjugate-linearity is the sesquilinearity, and reflexivity is the surjectivity of the map $H\to H^{**}$ obtained by iterating $\Phi$.</p>
+<p><strong>Proposition (the form and the dual form).</strong> The Riesz map $\Phi$ carries the inner product of $H$ to the dual pairing, so the form on $H^*$ defined by $\langle\Phi x,\Phi y\rangle=\overline{\langle x,y\rangle}$ makes $H^*$ a Hilbert space isometric to $H$ through a conjugate-linear map; in this sense a Hilbert space is its own dual, with the identification conjugate-linear rather than linear.</p>
+<p><em>Proof.</em> Insert the definition of $\Phi$ and use the Hermitian symmetry; the induced norm on $H^*$ is the operator norm by the Riesz theorem, so the identification is isometric.</p>
+<p><strong>Example (finite dimension).</strong> For $H=\mathbb{K}^n$ with the standard form the Riesz map is $y\mapsto\langle\cdot,y\rangle$, the conjugation is the componentwise conjugation, and the projection theorem is the orthogonal decomposition of linear algebra. For the real Hilbert space $\mathbb{R}^n$ the conjugation is the identity and the form is symmetric.</p>
+<p><strong>Example (the Dirichlet space and the Sobolev spaces).</strong> The Sobolev space $H^1_0(\Omega)$ with $\langle u,v\rangle=\int\nabla u\cdot\nabla\bar v$ is a Hilbert space whose conjugation is complex conjugation of functions; it is the form domain of the Dirichlet form of <em>Dirichlet Forms and the Hermitian Dirichlet Principle</em>, and it shows that a Hilbert space is often specified by its form rather than by its coordinates.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hilbert space is an inner product space complete for the induced norm; the inner product is linear in the first argument and conjugate-linear in the second, the Hermitian symmetry is its compatibility with the conjugation of the scalars, and the Cauchy–Schwarz inequality and the parallelogram law govern it, the latter characterising the inner-product norms by the Jordan–von Neumann theorem. Every closed convex set has a unique nearest point, and for a closed subspace this gives the orthogonal decomposition $H=M\oplus M^{\perp}$ and the orthogonal projection $P_M$, idempotent and self-adjoint. Orthonormal bases exist, they give the expansion $x=\sum\langle x,e_\alpha\rangle e_\alpha$ and Parseval's identity, and the space is separable exactly when it has a countable basis. The sesquilinearity is carried by a <strong>conjugation</strong> $J$, antilinear and antiunitary with $J^2=I$, which exists on every Hilbert space, is componentwise conjugation in the standard models, and whose fixed space is a real form; the conjugations are permuted transitively by the unitaries. The Riesz representation theorem identifies $H^*$ with $H$ conjugate-linearly and isometrically, so a Hilbert space is reflexive and is its own dual, and the operator theory that this structure supports is <em>Bounded Operators on a Hilbert Space</em> and <em>Self-Adjoint Operators and the Spectral Theorem</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$, $\langle\cdot,\cdot\rangle$</td>
+<td>Hilbert space and inner product, linear in the first argument</td>
+</tr>
+<tr>
+<td>$\|x\|^2=\langle x,x\rangle$</td>
+<td>the induced norm</td>
+</tr>
+<tr>
+<td>$M^{\perp}$</td>
+<td>orthogonal complement, $H=M\oplus M^{\perp}$ for closed $M$</td>
+</tr>
+<tr>
+<td>$P_M$</td>
+<td>orthogonal projection, $P_M^2=P_M=P_M^*$</td>
+</tr>
+<tr>
+<td>$\{e_\alpha\}$, $\delta_{\alpha\beta}$</td>
+<td>orthonormal set and the Kronecker delta</td>
+</tr>
+<tr>
+<td>$J$, $J^2=I$</td>
+<td>conjugation, antiunitary involution</td>
+</tr>
+<tr>
+<td>$H_J=\{x:Jx=x\}$</td>
+<td>real form of the conjugation</td>
+</tr>
+<tr>
+<td>$\Phi(y)=\langle\cdot,y\rangle$</td>
+<td>Riesz map, conjugate-linear isometry $H\to H^*$</td>
+</tr>
+<tr>
+<td>$H^*\cong H$</td>
+<td>self-duality, conjugate-linear</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul R. Halmos, <em>Introduction to Hilbert Space</em> (Chelsea, 2nd ed. 1957), for the geometry of the inner product, orthonormal bases and the projection theorem.</li>
+<li>Frigyes Riesz and Béla Sz.-Nagy, <em>Functional Analysis</em> (Dover, 1990), for the form, the projection theorem and the Riesz representation theorem.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, 2nd ed. 1990), for the completeness, the orthonormal bases and the duality of Hilbert space.</li>
+<li>Erwin Kreyszig, <em>Introductory Functional Analysis with Applications</em> (Wiley, 1978), for the elementary theory and the standard examples.</li>
+<li>Israel M. Gelfand and Naum Ya. Vilenkin, <em>Generalized Functions</em>, vol. 4 (Academic Press, 1964), for the real forms and the conjugations of a Hilbert space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

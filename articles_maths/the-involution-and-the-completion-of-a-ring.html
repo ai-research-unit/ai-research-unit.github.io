@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution and the Completion of a Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-and-the-completion-of-a-ring"><strong>The Involution and the Completion of a Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>involution</strong> of a ring is an anti-automorphism of order two, and when the ring is topological and the involution is continuous it is, like every continuous additive map, uniformly continuous for the additive uniformity; it therefore extends to the completion, and the extension is again an anti-automorphism of order two. This article treats the interaction of the involution with the <strong>completion operator</strong>: it proves that a continuous involution of a topological ring extends uniquely to a continuous involution of the completion, that the extension has the same fixed and skew parts up to closure, that the averaging map makes the fixed part a topological retract when $2$ is invertible, so that the additive group of the completion splits topologically into the fixed and the skew parts, and that the completion is an endofunctor of the category of involutive topological rings. The $I$-adic case, in which the involution preserves a defining ideal of a linear topology, is treated in <em>Involutive Topological Rings and Fields</em> and is quoted, not repeated.</p>
+<p>The article assumes the involution, its fixed subring and its skew additive subgroup from <em>Involutive Rings</em>; the continuity of an involution, the averaging map and the $I$-adic criterion $\sigma(I)^m\subseteq I$ from <em>Involutive Topological Rings and Fields</em>; the topological ring, its additive uniformity, its linear topologies and the closure of zero from <em>Topological Rings and Fields</em>; the completion, the canonical map $\iota$, its kernel and its functoriality from <em>The Completion Operator</em>; and the continuous operators and the natural pairing from <em>Operators on a Topological Ring</em>. The $p$-adic fields, the residue involution and the valuation topologies are <em>Absolute Values, Valuations and Completions</em> and <em>Involutive Valued Fields</em>, and are named only. No measure, no norm and no form occurs; the signed operators of the grade involution are a different structure and are not used.</p>
+<p>Throughout, $R$ is a topological ring with a <strong>continuous involution</strong> $\sigma$, that is a map $\sigma : R\to R$ with $\sigma(x + y) = \sigma(x)+\sigma(y)$, $\sigma(xy) = \sigma(y)\sigma(x)$, $\sigma^2 = \mathrm{id}$, continuous; the fixed subring is $R^\sigma = \{x : \sigma(x) = x\}$, the <strong>skew</strong> additive subgroup is $\mathrm{Skew}(R) = \{x : \sigma(x) = -x\}$, the completion is $\widehat{R}$ with its canonical map $\iota = \iota_R$, and the extension of $\sigma$ to the completion is $\widehat{\sigma}$.</p>
+<h2 id="the-extension-to-the-completion">The Extension to the Completion</h2>
+<p><strong>Proposition (a continuous involution is uniformly continuous).</strong> A continuous involution $\sigma$ of $R$ is an additive map, hence a continuous homomorphism of the additive topological group of $R$ into itself; it is therefore uniformly continuous for the additive (left) uniformity of $R$.</p>
+<p><strong>Proof.</strong> The involution is additive by definition of an anti-automorphism, so it is a continuous group homomorphism of the underlying additive group. A continuous homomorphism of topological groups is uniformly continuous for the left uniformities, because it commutes with the translations: the uniformity is generated by the entourages $\{(x, y) : y - x \in U\}$ for $U$ a neighbourhood of $0$, and $\sigma(y)-\sigma(x) = \sigma(y-x)$ carries the entourage of $U$ into that of $\sigma(U)$, which is a neighbourhood since $\sigma$ is continuous at $0$.</p>
+<p><strong>Theorem (the extension).</strong> Let $\sigma$ be a continuous involution of $R$. Then there is a unique continuous map $\widehat{\sigma} : \widehat{R}\to\widehat{R}$ with $\widehat{\sigma}\circ\iota = \iota\circ\sigma$, and $\widehat{\sigma}$ is an involution of the completion; the completion $\widehat{R}$ is therefore an involutive topological ring, and its involution is continuous.</p>
+<p><strong>Proof.</strong> A uniformly continuous map into a complete Hausdorff space extends uniquely to the completion, which is the universal property of the completion applied to $\sigma$ as a continuous homomorphism $R\to\widehat{R}$; more explicitly, $\widehat{\sigma}$ sends the limit of a Cauchy net to the limit of the image net, which exists by completeness. The map $\widehat{\sigma}$ is additive and reverses products because those identities hold on the dense image $\iota(R)$ and the operations are continuous, so they hold on the closure; and $\widehat{\sigma}^2 = \mathrm{id}$ by the same density argument. Continuity is the continuity of the extension of a uniformly continuous map.</p>
+<p><strong>Corollary (functoriality of the extension).</strong> If $\sigma$ and $\tau$ are continuous involutions with $\sigma\tau = \tau\sigma$ and if they commute, then $\widehat{\sigma}\widehat{\tau} = \widehat{\tau}\widehat{\sigma}$; the extension is compatible with composition, $\widehat{\sigma\circ f} = \widehat{\sigma}\circ\widehat{f}$ for a continuous homomorphism $f$ commuting with the involutions; and the extension of the identity involution is the identity of the completion.</p>
+<p><strong>Proof.</strong> All identities hold on the dense image and pass to the closure by continuity, as in the theorem.</p>
+<h2 id="the-fixed-and-the-skew-elements">The Fixed and the Skew Elements</h2>
+<p><strong>Theorem (the fixed part of the completion).</strong> Let $\sigma$ be a continuous involution. The fixed part $\widehat{R}^{\widehat{\sigma}}$ and the skew part $\mathrm{Skew}(\widehat{R})$ are closed, being the equalizers of $\widehat\sigma$ with $\mathrm{id}$ and with $-\mathrm{id}$, and they contain the closures $\overline{\iota(R^\sigma)}$ and $\overline{\iota(\mathrm{Skew}(R))}$. When $2$ is invertible in $\widehat{R}$ the inclusions are equalities,</p>
+<p>$$
+\widehat{R}^{\widehat{\sigma}} = \overline{\iota(R^\sigma)} , \qquad \mathrm{Skew}(\widehat{R}) = \overline{\iota(\mathrm{Skew}(R))} .
+$$</p>
+<p><strong>Proof.</strong> The sets are equalizers of continuous maps, hence closed, and they contain the images because $\widehat\sigma\iota = \iota\sigma$. For the converse when $2$ is invertible, let $x$ be fixed and write $x = \lim_i\iota(a_i)$ with $a_i\in R$, possible because $\iota(R)$ is dense; applying $\widehat\sigma$ and using continuity, $\widehat\sigma(x) = \lim_i\iota(\sigma(a_i)) = x$, so $\lim_i\iota(a_i - \sigma(a_i)) = 0$. The elements $\tfrac12(a_i + \sigma(a_i))$ lie in $R^\sigma$ and their images converge to $\tfrac12(x + x) = x$, so $x \in \overline{\iota(R^\sigma)}$. The skew case is identical with the sign reversed.</p>
+<p><strong>Proposition (the averaging map and the topological splitting).</strong> Assume $2$ is invertible in $\widehat{R}$ and let $\pi_+ = \tfrac12(\mathrm{id}+\widehat\sigma)$ and $\pi_- = \tfrac12(\mathrm{id}-\widehat\sigma)$. Then $\pi_+$ and $\pi_-$ are continuous additive projectors with images the fixed and the skew parts, $\pi_+ + \pi_- = \mathrm{id}$, $\pi_+\pi_- = 0$, and</p>
+<p>$$
+\widehat{R} = \widehat{R}^{\widehat\sigma} \oplus \mathrm{Skew}(\widehat{R})
+$$</p>
+<p>is a topological direct sum of additive topological groups. The involution acts as $+1$ on the first summand and $-1$ on the second.</p>
+<p><strong>Proof.</strong> The maps are continuous because $\widehat\sigma$ and the scalar $\tfrac12$ are; they are additive because $\widehat\sigma$ is; the identities are immediate from $\widehat\sigma^2 = \mathrm{id}$. The image of $\pi_+$ is the fixed part and of $\pi_-$ the skew part, and the direct sum decomposition is the statement that every $x$ is $\pi_+(x)+\pi_-(x)$ with the two components in the two closed subgroups; the decomposition is topological because the projections $\pi_\pm$ are continuous.</p>
+<p><strong>Corollary (the completion of the fixed part).</strong> The inclusion $R^\sigma\hookrightarrow R$ is a continuous homomorphism commuting with the involutions, so it extends to a continuous homomorphism of the completions whose image lies in the fixed part of $\widehat{R}$ and is dense there; when the involution is continuous and the topology of $R^\sigma$ has the same Cauchy filters as its image in $R$, this map is an isomorphism onto $\widehat{R}^{\widehat\sigma}$, which holds for the standard linear topologies and fails in pathological ones.</p>
+<p><strong>Proof.</strong> The extension exists by <em>The Completion Operator</em> and commutes with the involutions by the functoriality of the extension, so its image lies in the fixed part; the image contains $\iota(R^\sigma)$, hence is dense. The isomorphism statement is the case in which the extension is injective and has image the whole fixed part, which is not automatic for the subspace topology and is stated as a sufficient condition.</p>
+<h2 id="the-completion-as-an-involutive-functor">The Completion as an Involutive Functor</h2>
+<p><strong>Theorem (the completion is an endofunctor of the involutive rings).</strong> The category of topological rings with a continuous involution has as morphisms the continuous homomorphisms commuting with the involutions, and the completion operator carries it to itself: $R\mapsto\widehat{R}$, $\sigma\mapsto\widehat\sigma$, $f\mapsto\widehat f$. The completion is idempotent on this category, $\widehat{\widehat{R}}\cong\widehat{R}$, and the canonical map $\iota : (R,\sigma)\to(\widehat{R},\widehat\sigma)$ is a natural transformation of involutive topological rings.</p>
+<p><strong>Proof.</strong> Functoriality of the completion is <em>The Completion Operator</em>; the compatibility with the involutions is the corollary on functoriality of the extension, and it shows that the completed morphisms commute with the completed involutions, so the assignment is a functor. Idempotence is the idempotence of the completion operator together with the uniqueness of the extension. The naturality of $\iota$ is the identity $\widehat\sigma\iota = \iota\sigma$.</p>
+<p><strong>Corollary (the $I$-adic case).</strong> If the topology is the $I$-adic topology of an ideal $I$ and $\sigma(I)$ is such that the involution is continuous — which by the $I$-adic criterion $\sigma(I)^m\subseteq I$ for some $m$ holds whenever $\sigma$ preserves $I$ up to a power — then $\widehat{R} = \varprojlim R/I^n$ is the $I$-adic completion and $\widehat\sigma$ is the involution induced on the inverse limit; this is the case treated in <em>Involutive Topological Rings and Fields</em>, and the present article recovers it as the special case in which the linear topology is given by the powers of a single ideal. The fixed set of $\widehat\sigma$ is then the closure of the fixed set when $2$ is invertible, as in $\mathbb{Z}_p[i] = \mathbb{Z}_p[X]/(X^2+1)$ with $X\mapsto -X$.</p>
+<p><strong>Proof.</strong> The $I$-adic completion is the one of <em>The Completion Operator</em>; the continuity of $\sigma$ is the $I$-adic criterion quoted from <em>Involutive Topological Rings and Fields</em>, and the extension is the inverse limit of the induced maps $R/I^n\to R/\sigma(I)^n$, which coincide with the maps induced by $\sigma$ when $\sigma(I^n)\subseteq I^n$. The fixed-set statement is the theorem above.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the identity involution).</strong> For $\sigma = \mathrm{id}$ the completion is the completion of the ring and $\widehat\sigma = \mathrm{id}$; the fixed part is all of $\widehat{R}$ and the skew part is zero. On $\mathbb{Z}$ with the $p$-adic topology, $\widehat{\mathbb{Z}} = \mathbb{Z}_p$ with the identity involution.</p>
+<p><strong>Example ($\mathbb{Z}[i]$ and the conjugation).</strong> Let $R = \mathbb{Z}[i]$ with the $p$-adic topology and $\sigma$ the conjugation $i\mapsto -i$; the involution is continuous because $\sigma((p)^n) = (p)^n$, and it extends to $\widehat{R} = \mathbb{Z}_p[i] = \mathbb{Z}_p[X]/(X^2+1)$ with $\widehat\sigma(X) = -X$; the fixed part is $\mathbb{Z}_p$ and the skew part is $i\mathbb{Z}_p$, and the decomposition $\mathbb{Z}_p[i] = \mathbb{Z}_p\oplus i\mathbb{Z}_p$ is topological because $2$ is invertible for odd $p$, while for $p = 2$ the two parts overlap and the averaging map is unavailable.</p>
+<p><strong>Example ($\mathbb{R}[x]$ and $f(x)\mapsto f(-x)$).</strong> On $\mathbb{R}[x]$ with the $(x)$-adic topology, the involution $\sigma(f)(x) = f(-x)$ satisfies $\sigma((x)) = (x)$, so it is continuous and extends to $\widehat{\sigma}(f)(x) = f(-x)$ on $\mathbb{R}[[x]]$; the fixed part consists of the even series and the skew part of the odd series, and $\mathbb{R}[[x]] = \mathbb{R}[[x^2]]\oplus x\mathbb{R}[[x^2]]$ is the topological splitting.</p>
+<p><strong>Example (a continuous involution failing to preserve the ideal).</strong> On $\mathbb{R}[x]$ with the $(x)$-adic topology, the involution $f(x)\mapsto f(1-x)$ is not continuous, as <em>Involutive Topological Rings and Fields</em> records; it has no extension to the completion, which shows that the continuity hypothesis in the extension theorem is genuine and not automatic.</p>
+<h2 id="summary">Summary</h2>
+<p>A continuous involution of a topological ring is additive and therefore uniformly continuous for the additive uniformity, so it extends uniquely to a continuous involution $\widehat\sigma$ of the completion with $\widehat\sigma\iota = \iota\sigma$; the completion is an involutive topological ring, and the extension is compatible with composition, so the completion operator is an endofunctor of the category of topological rings with a continuous involution, idempotent and with $\iota$ as a natural transformation. The fixed part of the extension is the closure of the fixed subring, $\widehat{R}^{\widehat\sigma} = \overline{\iota(R^\sigma)}$, and the skew part is the closure of the skew subgroup; both are closed, being equalizers.</p>
+<p>When $2$ is invertible the averaging maps $\pi_\pm = \tfrac12(\mathrm{id}\pm\widehat\sigma)$ are continuous additive projectors, so the additive group of the completion splits topologically, $\widehat{R} = \widehat{R}^{\widehat\sigma}\oplus\mathrm{Skew}(\widehat{R})$, and the completion of the fixed subring maps densely into the fixed part, with isomorphism under a mild completeness hypothesis. The $I$-adic case, where the involution preserves the defining ideal up to a power, is the criterion of <em>Involutive Topological Rings and Fields</em>, recovered here as the special case of a linear topology given by the powers of one ideal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(R, \sigma)$</td>
+<td>Topological ring with a continuous involution</td>
+</tr>
+<tr>
+<td>$R^\sigma$, $\mathrm{Skew}(R)$</td>
+<td>Fixed subring and skew additive subgroup</td>
+</tr>
+<tr>
+<td>$\iota : R\to\widehat{R}$</td>
+<td>The canonical map of the completion</td>
+</tr>
+<tr>
+<td>$\widehat\sigma$</td>
+<td>The extension of the involution, $\widehat\sigma\iota = \iota\sigma$</td>
+</tr>
+<tr>
+<td>$\widehat{R}^{\widehat\sigma} = \overline{\iota(R^\sigma)}$</td>
+<td>Fixed part of the completion</td>
+</tr>
+<tr>
+<td>$\mathrm{Skew}(\widehat{R}) = \overline{\iota(\mathrm{Skew}(R))}$</td>
+<td>Skew part of the completion</td>
+</tr>
+<tr>
+<td>$\pi_\pm = \tfrac12(\mathrm{id}\pm\widehat\sigma)$</td>
+<td>Averaging projectors when $2$ is invertible</td>
+</tr>
+<tr>
+<td>$\widehat{R} = \widehat{R}^{\widehat\sigma}\oplus\mathrm{Skew}(\widehat{R})$</td>
+<td>Topological splitting</td>
+</tr>
+<tr>
+<td>$\sigma(I)^m\subseteq I$</td>
+<td>The $I$-adic continuity criterion, quoted</td>
+</tr>
+<tr>
+<td>$(\widehat{R},\widehat\sigma)$</td>
+<td>The completed involutive topological ring</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>General Topology, Chapters 1–4</em> (Springer, 1995), for the extension of uniformly continuous maps to a completion and the additive uniformity.</li>
+<li>Nicolas Bourbaki, <em>Algebra I, Chapters 1–3</em> (Springer, 1998), for involutions, their fixed and skew parts and the averaging map.</li>
+<li>Seth Warner, <em>Topological Fields</em> (North-Holland, 1989), for involutions of topological rings and the continuity of the anti-automorphisms.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions of rings and algebras and their fixed subrings.</li>
+<li>Michael Atiyah and Ian Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, 1969), for the $I$-adic completion and the behaviour of an involution preserving the ideal.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

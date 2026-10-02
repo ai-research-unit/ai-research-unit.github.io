@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Theory on Krein Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-theory-on-krein-spaces"><strong>Spectral Theory on Krein Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A $J$-self-adjoint operator on a Krein space need not have real spectrum, and the failure is not a pathology but the general situation: the fundamental symmetry $J$ has spectrum $\{\pm1\}$, so it is itself $J$-self-adjoint with a negative spectral point, and the negativity propagates to every indefinite space of positive rank. The spectral theory of a $J$-self-adjoint operator is therefore not the spectral theorem of Hilbert space with a change of notation; it is a theory in which the real axis carries the ordinary spectral data, the upper half-plane carries at most a finite amount of extra data, and the two are related by conjugation.</p>
+<p>What survives from the Hilbert theory is the <strong>symmetry</strong>: the spectrum of a $J$-self-adjoint operator is invariant under conjugation, because $\bar T = JTJ^{-1}$ makes $T$ similar to its complex conjugate. What changes is the <strong>semi-boundedness</strong> of the real spectrum, which is lost, and the <strong>definiteness</strong> of the eigenvectors, which is replaced by a trichotomy of positive, negative and neutral eigenvectors. What is bounded is the exceptional set: in a Pontryagin space $\Pi_{\kappa}$ the non-real spectrum consists of at most $\kappa$ conjugate pairs counting algebraic multiplicities, and in a general Krein space the non-real spectrum consists of isolated eigenvalues with finite-dimensional root subspaces that can accumulate only on the real axis. For a bounded operator the theory is self-contained; the unbounded theory, with its own difficulties, is <em>Spectral Theory</em> (Part III).</p>
+<p>This article fixes the conjugate symmetry of the spectrum, the trichotomy of real eigenvalues, the Pontryagin bound on the non-real spectrum, the accumulation statement, and the pointer to definitizability.</p>
+<p>The indefinite adjoint, $J$-self-adjointness and the $J$-positive cone are <em>J-Self-Adjoint and J-Unitary Operators</em>; the space, the fundamental symmetry and the ranks are <em>Indefinite Inner Product Spaces</em>, <em>Krein Spaces</em> and <em>The Fundamental Symmetry</em>; the ordered structure is <em>The J-Positive Cone and the J-Order</em> and <em>Krein Algebras</em>; the definitizable case is <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>; the unbounded case is Part III. Those are cited. The operator is bounded and $J$-self-adjoint on the Krein space $K$ with $\kappa = \kappa(K)$.</p>
+<h2 id="the-spectrum-of-a-j-self-adjoint-operator">The Spectrum of a J-Self-Adjoint Operator</h2>
+<p><strong>Definition.</strong> The <strong>spectrum</strong> $\sigma(T)$ is the complement of the set of $\lambda$ with $\lambda - T$ boundedly invertible; the <strong>point spectrum</strong> $\sigma_{p}(T)$ is the set of eigenvalues, and the <strong>root subspace</strong> at $\lambda$ is $\bigcup_{n}\ker(\lambda - T)^{n}$.</p>
+<p><strong>Proposition (resolvent identity).</strong> If $T$ is $J$-self-adjoint then $\lambda - T$ is $J$-self-adjoint exactly for real $\lambda$, and $(\lambda - T)^{-1}$ is $J$-self-adjoint at every point of the resolvent that is real; at non-real $\lambda$ the resolvent is $J$-self-adjoint with parameter $\bar\lambda$.</p>
+<p><strong>Proof.</strong> $(\lambda - T)^{\dagger} = \bar\lambda - T^{\dagger} = \bar\lambda - T$, which equals $\lambda - T$ exactly for real $\lambda$; the resolvent of a $J$-self-adjoint operator at a real point is $J$-self-adjoint, and the general statement is the adjoint of $(\lambda - T)^{-1}$ computed at $\bar\lambda$.</p>
+<p><strong>Theorem (conjugate symmetry).</strong> The spectrum and the point spectrum of a $J$-self-adjoint operator are symmetric with respect to the real axis:</p>
+<p>$$
+\lambda\in\sigma(T) \iff \bar\lambda\in\sigma(T) , \qquad \lambda\in\sigma_{p}(T) \iff \bar\lambda\in\sigma_{p}(T) ,
+$$</p>
+<p>with equality of algebraic multiplicities, and the root subspace at $\bar\lambda$ is the $J$-orthogonal complement of the root subspace at $\lambda$ for the appropriate invariant pairing.</p>
+<p><strong>Proof.</strong> $T$ is similar to its complex conjugate, $\bar T = JTJ^{-1}$, so the spectrum is conjugation-invariant; multiplicities agree because the similarity is explicit; the pairing statement is the $J$-orthogonality of root subspaces at distinct conjugate eigenvalues.</p>
+<h2 id="real-eigenvalues-and-their-types">Real Eigenvalues and Their Types</h2>
+<p><strong>Definition.</strong> A real eigenvalue $\lambda$ of $T$ is of <strong>positive type</strong> when $[x,x] > 0$ for every eigenvector $x$ at $\lambda$, of <strong>negative type</strong> when $[x,x] < 0$, and of <strong>neutral type</strong> when the eigenvectors at $\lambda$ form an isotropic set; the type is a property of the eigenvalue and the operator.</p>
+<p><strong>Proposition (the type is a spectral invariant).</strong> The set of eigenvalues of positive type and of negative type are invariant under $J$-unitary equivalence, and the algebraic multiplicity of an eigenvalue of definite type is bounded by the rank of the space in the corresponding sign.</p>
+<p><strong>Proof.</strong> $J$-unitary operators preserve the form and hence the signs of vectors; the multiplicity bound is the dimensionality of a positive or negative definite subspace of $K$.</p>
+<p><strong>Remark (the real spectrum need not be semi-bounded).</strong> For a Hilbert-self-adjoint operator the spectrum lies in an interval $[m,M]$ of the line. For a $J$-self-adjoint operator the real spectrum may be bounded below but not above, or exhibit both signs, because the operator $J$ itself has real spectrum $\{-1,+1\}$ with the two points of opposite type. The real spectrum is a union of sets of positive, negative and neutral type, and only its restriction to the definite parts behaves as in the Hilbert theory.</p>
+<h2 id="the-pontryagin-case">The Pontryagin Case</h2>
+<p><strong>Theorem (finiteness of the non-real spectrum).</strong> Let $K = \Pi_{\kappa}$ be a Pontryagin space and $T$ bounded and $J$-self-adjoint. Then the non-real spectrum of $T$ consists of finitely many conjugate pairs, and the total algebraic multiplicity of the non-real eigenvalues is at most $2\kappa$; every non-real eigenvalue has a root subspace that is a nondegenerate invariant subspace.</p>
+<p><strong>Proof.</strong> The invariant subspaces of a $J$-self-adjoint operator at non-real eigenvalues are of uniform type, and the geometry of $\Pi_{\kappa}$ bounds their total dimension by $2\kappa$; the conjugate pairing follows from the symmetry theorem.</p>
+<p><strong>Corollary (the non-real part is spectrally isolated).</strong> In $\Pi_{\kappa}$ the non-real spectrum is finite, its points are poles of the resolvent, and the restriction of $T$ to the direct sum of the root subspaces at the non-real eigenvalues is similar to a normal operator on a finite-dimensional Hilbert space.</p>
+<p><strong>Proof.</strong> The direct sum of the finitely many root subspaces is finite dimensional, invariant and nondegenerate, and on it the operator is $J$-self-adjoint with no real spectrum; a finite-dimensional $J$-self-adjoint operator with no real spectrum is similar to a normal operator.</p>
+<p><strong>Proposition (the Pontryagin bound is sharp).</strong> For every $\kappa$ there is a $J$-self-adjoint operator on $\Pi_{\kappa}$ with $\kappa$ conjugate pairs of non-real eigenvalues, namely the direct sum of $\kappa$ copies of the two-dimensional example $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ on a neutral pair of vectors.</p>
+<p><strong>Proof.</strong> The two-dimensional example is $J$-self-adjoint and non-real on $\mathbb{C}^{1,1}$; taking the direct sum of $\kappa$ copies saturates the bound of the theorem.</p>
+<h2 id="accumulation-of-the-non-real-spectrum">Accumulation of the Non-Real Spectrum</h2>
+<p><strong>Theorem (the general Krein case).</strong> For a bounded $J$-self-adjoint operator on an arbitrary Krein space, the non-real spectrum consists of eigenvalues whose root subspaces are finite dimensional, and every point of the non-real spectrum is isolated in the non-real part of the spectrum: the non-real spectrum can accumulate only on the real axis.</p>
+<p><strong>Proof (sketch).</strong> The root subspace at a non-real eigenvalue $\lambda$ is nondegenerate, finite dimensional and invariant, and the root subspaces at distinct non-real eigenvalues are $J$-orthogonal; the indefinite form therefore controls the total dimension of the non-real part, and a non-real eigenvalue has a neighbourhood meeting the non-real spectrum only finitely. The full statement is the theorem of Kreĭn and Langer on the spectral function of a $J$-self-adjoint operator.</p>
+<p><strong>Corollary (the real axis carries the continuous spectrum).</strong> The continuous spectrum, if any, lies on the real axis, and the non-real part of the spectrum is a purely point spectrum with finite-dimensional root subspaces.</p>
+<p><strong>Proof.</strong> The complement statement from the theorem, and the Hilbert-space fact that an isolated point of the spectrum of a bounded operator is an eigenvalue.</p>
+<p><strong>Remark (the shape of the spectral theory).</strong> The spectral theory of a $J$-self-adjoint operator is therefore layered: on the real axis the spectral data may be as complicated as in the Hilbert theory and in general is not semi-bounded; off the real axis the data is a finite (in $\Pi_{\kappa}$) or thin (in general) set of invariant subspaces with a conjugate pairing; and the two layers are coupled by the form. The tool that controls the coupling is definitizability, taken up in <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>, where the spectral function of the operator is built.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-fundamental-symmetry">The Fundamental Symmetry</h3>
+<p>For $T = J$ the spectrum is $\{-1,+1\}$; the eigenvalue $+1$ is of positive type with multiplicity $\kappa_{+}$ and the eigenvalue $-1$ is of negative type with multiplicity $\kappa_{-}$; the non-real spectrum is empty and the structure is purely real.</p>
+<h3 id="the-two-dimensional-example">The Two-Dimensional Example</h3>
+<p>For $T = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$ on $\mathbb{C}^{1,1}$ the spectrum is $\{i,-i\}$, a conjugate pair, and the root subspaces are one dimensional; this saturates the Pontryagin bound for $\kappa = 1$ and shows that a $J$-self-adjoint operator with real rank one can have all of its spectrum non-real.</p>
+<h3 id="a-hilbert-self-adjoint-operator">A Hilbert-Self-Adjoint Operator</h3>
+<p>If $T$ commutes with $J$ and is Hilbert-self-adjoint, then $T$ is $J$-self-adjoint with real spectrum, all eigenvalues of definite type, and the spectral theory reduces to the Hilbert one; the indefinite theory is nontrivial exactly when $T$ fails to commute with $J$.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectrum of a bounded <strong>$J$-self-adjoint</strong> operator on a Krein space is <strong>symmetric with respect to the real axis</strong>, $\lambda\in\sigma(T)\iff\bar\lambda\in\sigma(T)$ with equal multiplicities, because $T$ is similar to its complex conjugate, $\bar T = JTJ^{-1}$. Real eigenvalues carry a <strong>type</strong> — positive, negative or neutral according to the sign of $[x,x]$ on the eigenvectors — and the real spectrum need not be semi-bounded, since $J$ itself has the two real points of opposite type. The non-real spectrum is bounded by the indefiniteness: in a <strong>Pontryagin space</strong> $\Pi_{\kappa}$ the non-real spectrum consists of at most $\kappa$ conjugate pairs counting algebraic multiplicities, and the bound is sharp; in a general Krein space the non-real spectrum consists of <strong>isolated eigenvalues with finite-dimensional root subspaces</strong>, accumulating only on the real axis, so the continuous spectrum lies on the real line. The controlling tool for the coupling of the two layers is definitizability, which is <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>; the indefinite adjoint and the $J$-self-adjoint operators are <em>J-Self-Adjoint and J-Unitary Operators</em>, the space and its ranks are <em>Krein Spaces</em> and <em>Indefinite Inner Product Spaces</em>, and the unbounded theory is Part III.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma(T)$, $\sigma_{p}(T)$</td>
+<td>Spectrum and point spectrum</td>
+</tr>
+<tr>
+<td>$\bar T = JTJ^{-1}$</td>
+<td>Similarity to the complex conjugate</td>
+</tr>
+<tr>
+<td>$\lambda\in\sigma(T)\iff\bar\lambda\in\sigma(T)$</td>
+<td>Conjugate symmetry</td>
+</tr>
+<tr>
+<td>Positive, negative, neutral type</td>
+<td>Sign of $[x,x]$ on eigenvectors</td>
+</tr>
+<tr>
+<td>$\Pi_{\kappa}$</td>
+<td>Pontryagin space of rank $\kappa$</td>
+</tr>
+<tr>
+<td>$\leq\kappa$ conjugate pairs</td>
+<td>Bound on the non-real spectrum</td>
+</tr>
+<tr>
+<td>Isolated root subspaces</td>
+<td>Accumulation only on the real axis</td>
+</tr>
+<tr>
+<td>$\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$</td>
+<td>Sharp example on $\mathbb{C}^{1,1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Mark G. Kreĭn and Heinz Langer, "On the spectral function of a self-adjoint operator in a space with indefinite metric", <em>Doklady Akademii Nauk SSSR</em> <strong>211</strong> (1973), 1027–1030, for the spectral function of a $J$-self-adjoint operator.</li>
+<li>Heinz Langer, "Spectral functions of definitizable operators in Krein spaces", in <em>Functional Analysis</em>, Lecture Notes in Mathematics 948 (Springer, 1982), for the structure of the spectrum.</li>
+<li>Tomas Ya. Azizov and I. S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the Pontryagin case and the accumulation theorem.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the spectral theory of $J$-self-adjoint operators.</li>
+<li>Peter Jonas, "On the spectral theory of operators on Krein spaces", in <em>Operator Theory: Advances and Applications</em> (Birkhäuser), for the modern account.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Completion of a Hilbert Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-completion-of-a-hilbert-algebra"><strong>The Completion of a Hilbert Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Hilbert algebra is a $\ast$-algebra with a positive definite form tied to the product by the adjoint axiom $\langle xy,z\rangle = \langle y,x^{\dagger}z\rangle$, with left multiplications bounded. It is not complete: the form is an inner product, but the algebra is a pre-Hilbert space. <strong>Completing</strong> it gives a Hilbert space $H$, and the point of the completion is that the algebra does not disappear — the left multiplications extend to bounded operators on $H$, the involution extends to a closed antilinear operator, and the extension of the involution is the Tomita operator of the standard form. So the completion is the passage from an algebraic object to the Hilbert-space object that carries its operator algebra.</p>
+<p>Two extensions have to be justified. The <strong>left multiplication</strong> $L_x$ is bounded on $A$ by hypothesis, hence extends by continuity to all of $H$, and the extension is a $\ast$-representation: this is what makes the completion a representation space. The <strong>involution</strong> $x\mapsto x^{\dagger}$ is an isometry on $A$ only when the form is tracial, and in general it is closable rather than bounded; the closure of its graph is the antilinear operator $S$ with $S(x) = x^{\dagger}$ on the algebra, which is exactly the Tomita operator $S\xi\mapsto x^{\dagger}\xi$ after the algebra is identified with its orbit in $H$. Completing a Hilbert algebra is therefore the same as building the Hilbert space of its standard form, and the involution carried by the completion is the modular antilinear operator.</p>
+<p>This article fixes the completion, the Hilbert space it defines, the extension of the left multiplication, the extension of the involution and the identification of that extension with the Tomita operator.</p>
+<p>The Hilbert algebra, its involution, its adjoint axiom and its positivity are <em>Hilbert Algebras</em>; the operator algebras generated after completion are <em>The Left and the Right Regular Representation</em> and <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>; the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>; the construction from a state is <em>The GNS Construction</em>. Those are cited. The algebra is $A$ with involution $\dagger$ and form $\langle\cdot,\cdot\rangle$, and the completion is $H$.</p>
+<h2 id="the-completion">The Completion</h2>
+<p><strong>Definition.</strong> Let $A$ be a Hilbert algebra. Its <strong>completion</strong> $H$ is the Hilbert space obtained as the completion of $A$ for the norm $\|x\| = \langle x,x\rangle^{1/2}$, with $\iota : A\to H$ the canonical injection, injective because the form is positive definite.</p>
+<p><strong>Proposition (the axioms used).</strong> The completion uses exactly three of the axioms of a Hilbert algebra: the positivity of the form, the adjoint axiom $\langle xy,z\rangle = \langle y,x^{\dagger}z\rangle$, and the boundedness of the left multiplications. The associativity and the existence of a unit are not needed for the completion but are needed for the identification of the involution with the Tomita operator.</p>
+<p><strong>Proof.</strong> Positivity makes the norm; the adjoint axiom is what makes the left multiplications adjointable; boundedness is what lets them extend. The unit is used only to say that $A$ itself is an orbit, $A = L_A(1)$, whence the identification with $\mathcal{M}\xi$.</p>
+<p><strong>Proposition (density and the unit).</strong> The image $\iota(A)$ is dense in $H$ by construction; if $A$ has a unit $1$ then $\iota(A) = \{L_x(1) : x\in A\}$ and $H$ is the closure of the orbit of the vector $\xi = \iota(1)$ under the left multiplications.</p>
+<p><strong>Proof.</strong> Density is the definition of completion; the orbit statement is $L_x(1) = x$.</p>
+<h2 id="the-left-multiplication-on-the-completion">The Left Multiplication on the Completion</h2>
+<p><strong>Theorem (the extension).</strong> For each $x\in A$ the left multiplication $L_x$ is bounded on $A$ with $\|L_x\|\leq\|x\|$; it extends uniquely to a bounded operator $\bar L_x$ on $H$, the map $x\mapsto\bar L_x$ is a $\ast$-representation of $A$ on $H$, and $\bar L_{x^{\dagger}} = \bar L_x^{*}$.</p>
+<p><strong>Proof.</strong> Boundedness is an axiom; the extension is the density of $\iota(A)$ and the bounded linear extension theorem for normed spaces; multiplicativity is the associativity of $A$ on a dense set, hence everywhere; and the adjoint identity is the adjoint axiom on a dense set.</p>
+<p><strong>Corollary (the completion carries the representation).</strong> $H$ is a Hilbert module of the algebra in the sense that the assignment gives a non-degenerate $\ast$-representation whenever $A^{2}$ is dense in $A$; the pair $(H, \bar L)$ is the Hilbert-space representation attached to the algebra.</p>
+<p><strong>Proof.</strong> Non-degeneracy is $\overline{\bar L_A H} = H$, which follows from the density of $\iota(A)$ and $L_x(1) = x$.</p>
+<h2 id="the-involution-and-the-tomita-operator">The Involution and the Tomita Operator</h2>
+<p><strong>Definition.</strong> The <strong>involution as a graph</strong> is $\Gamma = \{(\iota(x),\iota(x^{\dagger})) : x\in A\}\subseteq H\oplus H$. Its closure is the graph of a closed antilinear operator when the closure is a graph, and that operator, when it exists, is written $S$ and called the <strong>Tomita operator of the completion</strong>.</p>
+<p><strong>Proposition (closability).</strong> The involution is closable, and its closure $S$ is antilinear, $S^{2} = \mathrm{id}$, and has dense domain containing $\iota(A)$.</p>
+<p><strong>Proof.</strong> Closability is the adjoint axiom together with positivity: if $x_n\to0$ and $x_n^{\dagger}\to u$ then $\langle u,y\rangle = \lim\langle x_n^{\dagger},y\rangle = \lim\langle x_n,y^{\dagger}\rangle = 0$ for all $y$, so $u = 0$. The involution identity is $S^{2} = \mathrm{id}$ on the dense set, and density of the domain is the density of $\iota(A)$.</p>
+<p><strong>Theorem (the identification with the Tomita operator).</strong> Let $\mathcal{M}$ be the von Neumann algebra generated by the extended left multiplications on $H$ and $\xi = \iota(1)$ its cyclic vector. Then $S$ coincides with the Tomita operator $S(x\xi) = x^{\dagger}\xi$ of <em>The Modular Operator and Tomita-Takesaki Theory</em>:</p>
+<p>$$
+S : \mathcal{M}\xi\to H, \qquad S(x\xi) = x^{\dagger}\xi .
+$$</p>
+<p>So the involution carried by the completion is precisely the modular antilinear operator, and the completion of a Hilbert algebra is the Hilbert space of its standard form.</p>
+<p><strong>Proof.</strong> $\mathcal{M}\xi$ contains $\iota(A)$ and the Tomita operator agrees with $S$ there, whence the equality of the closures.</p>
+<p><strong>Remark (what the completion is).</strong> The completion adds to the Hilbert algebra exactly two things: the limits of the left multiplications, which give the represented algebra, and the closure of the involution, which gives the modular operator. Everything modular about a Hilbert algebra is already present in its involution, and the completion is the device that makes the involution an operator.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-group-algebra">The Group Algebra</h3>
+<p>$A = \mathbb{C}[G]$ for a finite group with the standard form $\langle\sum a_g g,\sum b_h h\rangle = \sum a_g\bar b_g$ and involution $g^{\dagger} = g^{-1}$ is a Hilbert algebra; its completion is $\mathbb{C}^{G}$ and the left multiplications extend to the regular representation; the involution closes to the antilinear map $(\sum a_g g)^{\dagger} = \sum \bar a_g g^{-1}$ on the completion.</p>
+<h3 id="matrices">Matrices</h3>
+<p>$A = M_n(\mathbb{C})$ with $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$ and $\dagger$ the conjugate transpose is a Hilbert algebra, already complete: $H = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, and the involution is bounded and closable (already closed).</p>
+<h3 id="the-trivial-completion">The Trivial Completion</h3>
+<p>$A = \mathbb{C}$ with the unit and the standard form is complete, the left multiplication is scalar and the Tomita operator is the identity; the completion adds nothing and the modular theory of $A$ is trivial.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>completion</strong> of a Hilbert algebra $A$ is the Hilbert space $H$ obtained from the positive form $\langle\cdot,\cdot\rangle$ by completion, and the algebra survives in it: the <strong>left multiplications</strong> extend to a $\ast$-representation $x\mapsto\bar L_x$ on $H$, and the <strong>involution</strong> closes to an antilinear operator $S$ with $S^{2} = \mathrm{id}$. The closure of the involution is exactly the <strong>Tomita operator</strong> attached to the completion, so that upon identifying the image of the algebra with an orbit $\mathcal{M}\xi$ the objects of the theory are recovered: the completion of a Hilbert algebra is the Hilbert space of its <strong>standard form</strong>, and the involution it carries is the modular antilinear operator. The three axioms used are Positivity, the adjoint axiom and the boundedness of the left multiplications; the unit is used only to identify the algebra with the orbit of a vector. The algebra itself is <em>Hilbert Algebras</em>, the representation it defines is <em>The Left and the Right Regular Representation</em>, the completeness of the algebra with respect to the operator algebra is <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>, and the modular objects are <em>The Modular Operator and Tomita-Takesaki Theory</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $\dagger$, $\langle\cdot,\cdot\rangle$</td>
+<td>Hilbert algebra, involution, form</td>
+</tr>
+<tr>
+<td>$H$, $\iota$</td>
+<td>Completion and the canonical injection</td>
+</tr>
+<tr>
+<td>$L_x$, $\bar L_x$</td>
+<td>Left multiplication and its extension</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>Graph of the involution</td>
+</tr>
+<tr>
+<td>$S$, $S^{2} = \mathrm{id}$</td>
+<td>Tomita operator, closure of the involution</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$, $\xi = \iota(1)$</td>
+<td>Generated von Neumann algebra and cyclic vector</td>
+</tr>
+<tr>
+<td>$S(x\xi) = x^{\dagger}\xi$</td>
+<td>The identification with the Tomita operator</td>
+</tr>
+<tr>
+<td>$H$ = standard form space</td>
+<td>What the completion is</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>Von Neumann Algebras</em> (North-Holland, 1981), for Hilbert algebras and their completion.</li>
+<li>Masamichi Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and its Applications</em>, Lecture Notes in Mathematics 128 (Springer, 1970), for the modular theory of the completion.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 2 (Academic Press, 1986), for the standard form and the Tomita operator.</li>
+<li>Serban Stratila and László Zsidó, <em>Lectures on von Neumann Algebras</em> (Abacus Press, 1979), for the completion of a Hilbert algebra and the regular representations.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for the standard form and the modular objects.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

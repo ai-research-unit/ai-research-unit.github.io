@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive Definite Forms and the Order — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="positive-definite-forms-and-the-order"><strong>Positive Definite Forms and the Order</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>positive definite form</strong> on an ordered involutive algebra is the Hermitian form attached to a positive functional,</p>
+<p>$$
+\langle a,b\rangle_\varphi = \varphi(b^{*}a) ,
+$$</p>
+<p>which is positive semidefinite by the definition of $\varphi$, and positive definite after the quotient by the radical $\{a : \langle a,a\rangle_\varphi = 0\}$; the construction that turns it into a Hilbert space and a representation is the <strong>Gelfand–Naimark–Segal</strong> construction. The forms are not a side structure: they <strong>are</strong> the order. A Hermitian element is positive if and only if every positive definite form takes a nonnegative value on it,</p>
+<p>$$
+a\geq0 \iff \varphi(a)\geq0 \ \text{ for every positive functional } \varphi ,
+$$</p>
+<p>so the positive cone is the intersection of the half-spaces cut by the forms, and the order of the algebra is completely determined by the convex set of its positive definite forms. The article states this duality, shows that the forms organise into the dual cone, and describes the three equivalent ways of presenting the order — by the cone of the algebra, by its positive functionals, and by the representations on Hilbert space — together with the order-preserving correspondences among them.</p>
+<p>The forms are the inner products in which the order becomes geometric: the <strong>Cauchy–Schwarz</strong> inequality of a form is the inequality of the positive functional, the <strong>radical</strong> of a form is the left ideal of the GNS construction, and the <strong>order</strong> of the algebra is the order of the operators in every associated representation. The article is thus the form-theoretic companion of <em>The Cone of Positive Functionals</em>, and it prepares the <strong>Hilbert cone</strong> of an involutive algebra, which is the same cone for the algebra that carries a form intrinsically.</p>
+<p>The positive cone and the positive functionals are <em>The Positive Cone of an Involutive Algebra</em> and <em>The Cone of Positive Functionals</em>; the Hermitian elements and the order unit are <em>Hermitian Elements and the Order Unit</em>; the order and the order unit are <em>Ordered Vector Spaces and the Order Unit</em>; the ordered involutive algebra is <em>Ordered Involutive Algebras</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the forms on an ordered space are <em>Positive Definite Forms on an Ordered Space</em>; and the GNS representation and the Hilbert algebras are <em>Hilbert Algebras</em> and <em>Operator Algebras</em> of Part II.</p>
+<h2 id="positive-definite-forms">Positive Definite Forms</h2>
+<p><strong>Definition.</strong> A <strong>positive definite form</strong> (or a <strong>semidefinite form</strong>) on the involutive algebra is a Hermitian form $\langle\cdot,\cdot\rangle : A\times A\to\mathbb{C}$ with</p>
+<p>$$
+\langle a,a\rangle\geq0 \ \text{ for every } a , \qquad \langle a,b\rangle = \overline{\langle b,a\rangle} , \qquad \langle \alpha a + \beta b, c\rangle = \alpha\langle a,c\rangle + \beta\langle b,c\rangle ;
+$$</p>
+<p>it is <strong>definite</strong> when $\langle a,a\rangle = 0$ implies $a = 0$, and its <strong>radical</strong> is the subspace $N = \{a : \langle a,a\rangle = 0\}$.</p>
+<p><strong>Proposition (the forms are the positive functionals).</strong> A positive definite form is of the form $\langle a,b\rangle = \varphi(b^{*}a)$ for a unique positive functional $\varphi$ when it is <strong>invariant</strong>, $\langle ca,b\rangle = \langle a,c^{*}b\rangle$, that is, when it is compatible with the multiplication; without the invariance it is the general positive semidefinite Hermitian form on the underlying vector space. The invariant forms are exactly the positive functionals, and the map $\varphi\mapsto\langle\cdot,\cdot\rangle_\varphi$ is a linear isomorphism of the dual cone onto the cone of the invariant positive definite forms.</p>
+<p><em>Proof.</em> For a positive functional $\varphi$ the form $\langle a,b\rangle = \varphi(b^{*}a)$ is Hermitian by the Hermitian-ness of $\varphi$, positive by the definition, and invariant because $\langle ca,b\rangle = \varphi(b^{*}ca) = \varphi((c^{*}b)^{*}a) = \langle a,c^{*}b\rangle$. Conversely an invariant positive definite form gives the functional $\varphi(x) = \langle 1,x\rangle$, which is linear and positive because $\varphi(x^{*}x) = \langle 1,x^{*}x\rangle = \langle x,x\rangle\geq0$ by the invariance, and which recovers the form because $\langle a,b\rangle = \varphi(b^{*}a)$ by the invariance and the Hermitian symmetry. The correspondence is linear and preserves the cones in both directions.</p>
+<p><strong>Proposition (Cauchy–Schwarz and the radical).</strong> Every positive definite form satisfies</p>
+<p>$$
+\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle ,
+$$</p>
+<p>its radical $N$ is a subspace on which the form vanishes, the quotient $A/N$ carries a definite form, and the completion of the quotient is a Hilbert space $\mathcal{H}_\varphi$.</p>
+<p><em>Proof.</em> The Cauchy–Schwarz inequality is that of the positive functional; the radical is a subspace by the inequality (the equality case of the Cauchy–Schwarz inequality); the quotient form is definite by construction, and the completion is a Hilbert space.</p>
+<h2 id="the-order-from-the-forms">The Order from the Forms</h2>
+<p><strong>Theorem (the order is the intersection of the forms).</strong> For Hermitian $h$,</p>
+<p>$$
+h\geq0 \iff \langle h\, a, a\rangle_\varphi\geq0 \ \text{ for every } a \text{ and every positive functional } \varphi \iff \varphi(h)\geq0 \ \text{ for every positive functional } \varphi ,
+$$</p>
+<p>equivalently $h$ is positive exactly when it is a positive operator in every representation associated with a positive definite form; hence the order of the Hermitian part is recovered from the cone of the forms, and the cone is the intersection of the half-spaces cut by the positive functionals.</p>
+<p><em>Proof.</em> If $h\geq0$ the invariance gives $\varphi(a^{*}ha)\geq0$ because $a^{*}ha$ is a congruence of a positive element; conversely, if $h$ is not positive then by the Hahn–Banach theorem some positive functional is negative at $h$, as in the separation theorem of <em>The Cone of Positive Functionals</em>. The representation statement is the GNS construction applied to the form, in which the order is the operator order.</p>
+<p><strong>Corollary (the order is an order of representations).</strong> The order-theoretic structure of the involutive algebra is the same as the order-theoretic structure of its <strong>universal representation</strong>: the direct sum of the GNS representations over all the positive functionals is faithful, and $h\geq0$ if and only if the image of $h$ is a positive operator in it. Consequently every order statement has a concrete operator form.</p>
+<p><em>Proof.</em> The universal representation is the direct sum of the GNS representations, and it is faithful because the positive functionals separate the Hermitian elements; the positivity of $h$ in the universal representation is the positivity in every GNS representation, which is the theorem above.</p>
+<p><strong>Proposition (the order unit and the forms).</strong> In a unital reduced algebra the identity is positive, every state takes the value $1$ at it, and the order-unit norm is the norm in the universal representation; the positive definite forms with $\varphi(1) = 1$ are the <strong>states</strong>, and the order interval $[-1,1]$ is the set of the Hermitian elements that are contractions in every associated form.</p>
+<p><em>Proof.</em> The positivity of $1$ and the normalisation of the states are the definitions; the norm statement is the coincidence of the order-unit norm with the $\ast$-norm in the universal representation; the interval statement is the definition of the order unit.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the trace form $\langle a,b\rangle = \operatorname{tr}(b^{*}a)$, which is definite and invariant. The order is the Loewner order, the positive definite forms are the maps $a\mapsto\operatorname{tr}(\rho a)$ for positive semidefinite $\rho$, and the GNS construction with a rank-one $\rho$ gives the natural module $\mathbb{C}^{n}$; the order is the operator order in that representation, and the universal representation is the direct sum over all the density matrices. This is the finite-dimensional model in which every statement of the article is a matrix identity.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $A = C(X,\mathbb{C})$ with the form $\langle a,b\rangle = \int b^{*}a\,\mathrm{d}\mu$ for a positive measure $\mu$. The form is invariant, the order is the pointwise order, and a function is positive exactly when it is nonnegative on the support of every positive measure; the GNS construction gives the representation of $A$ on $L^{2}(\mu)$, in which the order is again the operator order. The commutative case shows that the forms and the order carry the same information as the measure-theoretic positivity.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>positive definite form</strong> on an involutive algebra is a positive semidefinite Hermitian form; it is <strong>invariant</strong> when it is compatible with the multiplication, and then it is exactly $\langle a,b\rangle = \varphi(b^{*}a)$ for a unique <strong>positive functional</strong> $\varphi$, so the invariant forms are the positive functionals and the map is a linear isomorphism on the cones. Every form satisfies the <strong>Cauchy–Schwarz inequality</strong>, its <strong>radical</strong> is a subspace and the completion of the quotient is the Hilbert space of the <strong>GNS</strong> construction. The <strong>order</strong> is the intersection of the forms: a Hermitian element is positive if and only if every positive functional takes a nonnegative value on it, equivalently if and only if it is a positive operator in every GNS representation; hence the order is recovered from the cone of the forms and coincides with the operator order in the <strong>universal representation</strong>. In the unital reduced algebra the identity is positive, the states are the forms with $\varphi(1) = 1$, the order-unit norm is the norm of the universal representation, and the order interval $[-1,1]$ is the set of the Hermitian contractions. The positive cone and functionals are <em>The Positive Cone of an Involutive Algebra</em> and <em>The Cone of Positive Functionals</em>; the Hermitian elements are <em>Hermitian Elements and the Order Unit</em>; the order is <em>Ordered Vector Spaces and the Order Unit</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; the Hilbert cone is <em>The Hilbert Cone of an Involutive Algebra</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the forms on an ordered space are <em>Positive Definite Forms on an Ordered Space</em>; and the GNS theory is <em>Hilbert Algebras</em> and <em>Operator Algebras</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle a,b\rangle = \varphi(b^{*}a)$</td>
+<td>Positive definite form attached to $\varphi$</td>
+</tr>
+<tr>
+<td>$\langle ca,b\rangle = \langle a,c^{*}b\rangle$</td>
+<td>Invariance; the invariant forms are the positive functionals</td>
+</tr>
+<tr>
+<td>$\lvert\langle a,b\rangle\rvert^{2}\leq\langle a,a\rangle\langle b,b\rangle$</td>
+<td>Cauchy–Schwarz inequality</td>
+</tr>
+<tr>
+<td>$N = \{a : \langle a,a\rangle = 0\}$</td>
+<td>Radical of the form</td>
+</tr>
+<tr>
+<td>$h\geq0\iff\varphi(h)\geq0$</td>
+<td>The order is the intersection of the forms</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_\varphi$</td>
+<td>Hilbert space of the GNS construction</td>
+</tr>
+<tr>
+<td>$\varphi(1) = 1$</td>
+<td>The state forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the GNS construction, the positive forms and the universal representation.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the positive definite forms and the order of a C*-algebra.</li>
+<li>Jacques Dixmier, <em>Les algèbres d'opérateurs dans l'espace hilbertien</em> (Gauthier-Villars, 1969), for the forms, the states and the universal representation of a von Neumann algebra.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the positive forms, the order and the representation theory.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the positive forms and the order of an ordered vector space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

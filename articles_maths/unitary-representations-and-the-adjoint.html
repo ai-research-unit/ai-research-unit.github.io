@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Representations and the Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-representations-and-the-adjoint"><strong>Unitary Representations and the Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A unitary representation is a representation by operators whose adjoint is their inverse, and that single condition is the source of every adjoint identity of the theory: the integrated form of the representation is a <code>*</code>-representation, the invariants are the kernel of the adjoint-summed projection, and the intertwining operators are the commutant of the image. This article takes the unitarity condition, derives the adjoint identities it forces, and reads off the invariants and the commutant. It is the operator form of the correspondence between the unitary representations and the <code>*</code>-representations of the group algebra.</p>
+<p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the group algebra $L^1(G)$ and the correspondence between nondegenerate <code>*</code>-representations and continuous unitary representations from <em>The Convolution Algebra $L^1(G)$</em>; the involution, the positive functionals and the completions from <em>The Group Algebra as an Involutive Algebra</em>; the positive definite functions, the GNS construction and the Gelfand–Raikov theorem from <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>; the Plancherel theorem and the unitary dual from <em>Unitary Representations and the Plancherel Theorem</em> and <em>Noncommutative Harmonic Analysis</em>; the compact averaging and the orthogonality relations from <em>Analysis on Compact Groups</em> and <em>The Peter–Weyl Theorem</em>; the adjoint on the group algebra and the elementary adjoints from <em>Hermitian Operators on a Group Algebra</em>, immediately preceding; the Hilbert spaces, the adjoint, the projections, the commutant and Schur's lemma from <em>Operator Algebras</em>. The adjoint of a convolution operator on its own terms is <em>The Adjoint of a Convolution Operator</em>, later in this group; the adjoint of a two-sided operator on a Hilbert algebra is <em>Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</em>.</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and modular function $\Delta$; $\pi : G\to\mathcal{U}(\mathcal{H})$ is a continuous <strong>unitary representation</strong> on a Hilbert space $\mathcal{H}$, with $\pi(x)^* = \pi(x)^{-1} = \pi(x^{-1})$; its <strong>integrated form</strong> is $\pi(f) = \int_G f(x)\pi(x)\,dx$, $f\in L^1(G)$; and the <strong>invariant subspace</strong> is $\mathcal{H}^G = \{\xi : \pi(x)\xi = \xi\ \forall x\}$, with $P$ the projection onto it.</p>
+<h2 id="the-unitarity-condition">The Unitarity Condition</h2>
+<p><strong>Theorem (the forms of unitarity).</strong> For a homomorphism $\pi : G\to B(\mathcal{H})$ the following are equivalent: (i) $\pi(x)^*\pi(x) = 1$ for all $x$; (ii) $\pi(x)\pi(x)^* = 1$ for all $x$; (iii) $\pi(x)$ is an isometry for every $x$; (iv) $\pi$ preserves the inner product, $\langle\pi(x)\xi,\pi(x)\eta\rangle = \langle\xi,\eta\rangle$; and when these hold $\pi(x)^* = \pi(x)^{-1} = \pi(x^{-1})$ and $\pi(x)^*$ is again unitary.</p>
+<p><strong>Proof.</strong> For a homomorphism, (i) says $\pi(x)$ is an isometry, (ii) says it is a co-isometry; in a Hilbert space an isometry of the whole space is onto, so (i) implies (ii); (iii) is (i) by the polarisation identity, and (iv) is (iii) expanded. Then $\pi(x)^{-1} = \pi(x)^*$ and $\pi(x^{-1}) = \pi(x)^{-1}$ by the homomorphism property, and a unitary operator has unitary adjoint. $\square$</p>
+<p><strong>Theorem (the integrated form is a <code>*</code>-representation).</strong> For every continuous unitary representation $\pi$ and every $f\in L^1(G)$,</p>
+<p>$$
+\pi(f)^* = \pi(f^*), \qquad \pi(f*g) = \pi(f)\pi(g), \qquad \|\pi(f)\|\leq\|f\|_1 ,
+$$</p>
+<p>with $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, for every locally compact $G$.</p>
+<p><strong>Proof.</strong> The adjoint of the operator-valued integral is the integral of the adjoints, $\pi(f)^* = \int\overline{f(x)}\pi(x)^*dx = \int\overline{f(x)}\pi(x^{-1})dx$, and the substitution $x = y^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ turns this into $\int\overline{f(y^{-1})}\Delta(y)^{-1}\pi(y)dy = \pi(f^*)$. The multiplicativity is the convolution theorem in integrated form, and the norm bound is $\|\pi(f)\|\leq\int|f(x)|\|\pi(x)\|dx\leq\|f\|_1$. $\square$</p>
+<p><strong>Corollary (positivity is automatic).</strong> For every $f\in L^1(G)$ the operator $\pi(f^*\!*f) = \pi(f)^*\pi(f)$ is positive, and the functional $f\mapsto\langle\pi(f)\xi,\xi\rangle$ is a positive functional on the group algebra for every $\xi\in\mathcal{H}$; conversely every positive functional of norm one is of this form for some cyclically represented $\pi$. This is the operator statement of the correspondence between positive functionals and positive definite functions.</p>
+<p><strong>Proof.</strong> $\pi(f)^*\pi(f)\geq0$ in $B(\mathcal{H})$; the functional $\omega_\xi(f) = \langle\pi(f)\xi,\xi\rangle = \int f(x)\langle\pi(x)\xi,\xi\rangle dx$ has the positive definite function $\phi_\xi(x) = \langle\pi(x)\xi,\xi\rangle$ as its kernel, and the converse is the GNS construction of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>. $\square$</p>
+<h2 id="invariants-and-the-averaging-projection">Invariants and the Averaging Projection</h2>
+<p><strong>Definition.</strong> The <strong>projection onto the invariants</strong> of $\pi$ is the strong limit</p>
+<p>$$
+P = \text{strong-}\!\lim_{\alpha}\pi(u_\alpha), \qquad \mathcal{H}^G = P\mathcal{H},
+$$</p>
+<p>where $u_\alpha$ is a normalised approximate identity of $L^1(G)$; equivalently $P\xi$ is the unique invariant element closest to $\xi$.</p>
+<p><strong>Theorem (the averaging identities).</strong> The projection $P$ onto $\mathcal{H}^G$ is the strong limit of $\pi(u_\alpha)$ over a normalised approximate identity, is self-adjoint and idempotent, and commutes with every $\pi(x)$ in the strong sense $P\pi(x) = \pi(x)P = P$ for $x\in G$. If $G$ is compact with $\int_G dx = 1$ then $P = \int_G\pi(x)\,dx$, and a vector $\xi$ is invariant if and only if $\pi(f)\xi = \bigl(\int_G f\bigr)\xi$ for every $f\in L^1(G)$.</p>
+<p><strong>Proof.</strong> If $\xi\in\mathcal{H}^G$ then $\pi(f)\xi = \int f(x)\xi\,dx = (\int f)\xi$; for compact $G$ with total mass one this is $(\int f)\xi$, and conversely the identity for all $f$, tested against a bump approximate identity concentrated at $x$, gives $\pi(x)\xi = \xi$. For a general group, $P$ is the strong limit of $\pi(u_\alpha)$ (the approximate identity converges to the identity of the multiplier algebra and its integrated images converge to the projection on the fixed space), and $\pi(x)\pi(u_\alpha) = \pi(L_xu_\alpha)$ converges strongly to $P$ for each fixed $x$, so $P\pi(x) = \pi(x)P$; on $\mathcal{H}^G$ one has $P = 1$ and the stated identity follows. Self-adjointness and idempotence of $\pi(u_\alpha)$ hold in the limit because $\pi(u_\alpha)^* = \pi(u_\alpha^*)$ with $u_\alpha$ symmetric and $\pi(u_\alpha*u_\beta) = \pi(u_\alpha)\pi(u_\beta)$. $\square$</p>
+<p><strong>Corollary (the compact case is averaging).</strong> If $G = K$ is compact with normalised Haar measure then $P = \pi(\mathbf{1}_K) = \int_K\pi(k)\,dk$ is the orthogonal projection onto the $K$-fixed vectors, and the adjoint of the averaging operator is itself, $P^* = P$, with $P^2 = P$.</p>
+<p><strong>Proof.</strong> $P = \int_K\pi(k)dk$ is the strong (Bochner) integral of unitaries; $P^2 = \iint\pi(kk')dkdk' = P$ by invariance of $dk$, $P^* = \int_K\pi(k)^*dk = \int_K\pi(k^{-1})dk = P$, and the range is the fixed space. $\square$</p>
+<h2 id="the-contragredient-and-unitary-equivalence">The Contragredient and Unitary Equivalence</h2>
+<p><strong>Definition.</strong> The <strong>contragredient</strong> of $\pi$ acts on the conjugate Hilbert space $\bar{\mathcal H}$ by $\bar\pi(x) = (\pi(x)^{-1})^{\mathsf t}$, the transpose in a fixed orthonormal realisation; equivalently $\langle\bar\pi(x)\bar\xi,\bar\eta\rangle = \langle\pi(x)^{-1}\xi,\eta\rangle$. Two unitary representations $\pi,\sigma$ are <strong>unitarily equivalent</strong>, $\pi\cong\sigma$, when there is a unitary $U$ with $U\pi(x) = \sigma(x)U$.</p>
+<p><strong>Theorem (the contragredient is unitary and involutive).</strong> The contragredient $\bar\pi$ is a continuous unitary representation, the assignment $\pi\mapsto\bar\pi$ is an involution on the unitary dual up to equivalence, $\bar{\bar\pi}\cong\pi$, and the operator $U$ of a unitary equivalence is itself an intertwining unitary whose adjoint $U^*$ gives the reverse equivalence.</p>
+<p><strong>Proof.</strong> $\bar\pi$ is a composite of the anti-homomorphism $x\mapsto\pi(x)^{-1}$ with the transpose, and the transpose of a unitary is unitary, so $\bar\pi$ is unitary and continuous; applying the construction twice returns the transpose of the transpose, which is $\pi$ in the given realisation; the adjoint statement is $\langle U\pi(x)\xi,\eta\rangle = \langle\pi(x)\xi,U^*\eta\rangle = \langle\xi,\pi(x)^{-1}U^*\eta\rangle = \langle\xi,U^*\sigma(x)^{-1}\eta\rangle$. $\square$</p>
+<p><strong>Corollary (the invariants).</strong> Unitary equivalence is an equivalence relation on the unitary representations, the adjoint of any member of the intertwining space belongs to the intertwining space of the reverse pair, and the invariants of a representation under unitary equivalence are its dimension, its decomposition type and the multiplicities of its irreducible constituents.</p>
+<p><strong>Proof.</strong> Symmetry, reflexivity and transitivity of unitary equivalence are the identity, the adjoint and the composition of the intertwiners, each of which is unitary; the invariants are computed from the commutant and the decomposition, and are invariant because a unitary equivalence is an isomorphism of the module structures. $\square$</p>
+<h2 id="the-commutant-and-the-adjoint">The Commutant and the Adjoint</h2>
+<p><strong>Theorem (intertwiners and the commutant).</strong> Let $\pi, \rho$ be unitary representations. A bounded operator $T : \mathcal{H}_\pi\to\mathcal{H}_\rho$ intertwines them, $T\pi(x) = \rho(x)T$ for all $x$, if and only if $T\pi(f) = \rho(f)T$ for all $f\in L^1(G)$; hence the commutant of the integrated algebra equals the commutant of the representation, $\pi(L^1(G))' = \pi(G)'$, and the adjoint of an intertwiner is an intertwiner in the reverse direction, $T^*\rho(x) = \pi(x)T^*$.</p>
+<p><strong>Proof.</strong> The equivalence uses the approximate identity to recover $\pi(x)$ from the integrated form and conversely; the adjoint statement is the identity $\langle T\pi(x)\xi,\eta\rangle = \langle\pi(x)\xi,T^*\eta\rangle = \langle\xi,\pi(x)^{-1}T^*\eta\rangle$ combined with $\rho(x)^* = \rho(x)^{-1}$. $\square$</p>
+<p><strong>Corollary (Schur's lemma via the adjoint).</strong> If $\pi$ is irreducible then $\pi(G)' = \mathbb{C}\cdot1$, and every self-adjoint operator commuting with $\pi$ is a real scalar; in particular the centre of the integrated algebra acts by scalars, and the irreducible representations are the extreme points of the normalised positive cone.</p>
+<p><strong>Proof.</strong> The commutant of an irreducible representation is the scalars; a self-adjoint element of the commutant has real spectrum, and its spectral projections commute with $\pi$, so by irreducibility they are $0$ or $1$, giving a scalar. $\square$</p>
+<p><strong>Remark (what the article does not do).</strong> The adjoint of a convolution operator on its own terms, its expression on $L^p$ and the involutive algebra of convolution operators are <em>The Adjoint of a Convolution Operator</em>, later in this group. The adjoint of a representation operator is given here only through the unitarity condition; the Plancherel measure and the inversion formula are <em>Unitary Representations and the Plancherel Theorem</em>. The adjoint of the two-sided operators of the signed block is <em>Two-Sided Operators on a Hilbert Algebra with Signed Hermitian Adjoint</em>, where the signed form appears.</p>
+<h2 id="summary">Summary</h2>
+<p>A unitary representation satisfies the equivalent conditions $\pi(x)^*\pi(x) = 1$, $\pi(x)\pi(x)^* = 1$, isometry, and preservation of the inner product, and then $\pi(x)^* = \pi(x)^{-1} = \pi(x^{-1})$. Its integrated form is a <code>*</code>-representation for every locally compact $G$, $\pi(f)^* = \pi(f^*)$, $\pi(f*g) = \pi(f)\pi(g)$, $\|\pi(f)\|\leq\|f\|_1$: the modular factor in $f^*$ is exactly what the substitution $x\to x^{-1}$ and the unitarity produce. Positivity is automatic, $\pi(f^*\!*f) = \pi(f)^*\pi(f)\geq0$, and the vector functionals $\langle\pi(f)\xi,\xi\rangle$ are the positive functionals of the group algebra, with the GNS construction as the converse. The invariants are the fixed space of the representation, in the compact case the range of the averaging projection $P = \int_K\pi(k)dk$, which is self-adjoint and idempotent; on a general group $P$ commutes with every $\pi(x)$. The intertwining operators of a pair of representations are the adjoint-stable commutant of the integrated algebra, $\pi(L^1(G))' = \pi(G)'$, and for an irreducible $\pi$ the commutant is the scalars, which is Schur's lemma read through the adjoint. The adjoint of a convolution operator and the Plancherel theory are the neighbouring articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi(x)^* = \pi(x)^{-1} = \pi(x^{-1})$</td>
+<td>The unitarity condition</td>
+</tr>
+<tr>
+<td>$\pi(f) = \int_G f(x)\pi(x)\,dx$</td>
+<td>The integrated form</td>
+</tr>
+<tr>
+<td>$\pi(f)^* = \pi(f^*)$, $\pi(f*g) = \pi(f)\pi(g)$</td>
+<td>The <code>*</code>-representation property, every $G$</td>
+</tr>
+<tr>
+<td>$\langle\pi(f)\xi,\xi\rangle = \omega_\xi(f)$</td>
+<td>The positive functional of a vector</td>
+</tr>
+<tr>
+<td>$\mathcal{H}^G$, $P$</td>
+<td>The invariant space and the projection onto it</td>
+</tr>
+<tr>
+<td>$P = \int_K\pi(k)\,dk$</td>
+<td>The compact averaging projection, $P^* = P = P^2$</td>
+</tr>
+<tr>
+<td>$\pi(L^1(G))' = \pi(G)'$</td>
+<td>The commutant of the integrated algebra</td>
+</tr>
+<tr>
+<td>$T\pi(x) = \rho(x)T\iff T\pi(f) = \rho(f)T$</td>
+<td>Intertwiners</td>
+</tr>
+<tr>
+<td>$\pi(G)' = \mathbb{C}\cdot1$</td>
+<td>Schur's lemma</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Jacques Dixmier, <em>$\mathrm{C}^*$-Algebras</em> (North-Holland, 1977), for the integrated form, the <code>*</code>-representation property and the commutant.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras I</em> (Academic Press, 1983), for the adjoint, projections, invariants and Schur's lemma.</li>
+<li>Gerald B. Folland, <em>A Course in Abstract Harmonic Analysis</em> (CRC Press, second edition, 2015), for the unitarity condition, the integrated forms and the averaging over a compact group.</li>
+<li>George W. Mackey, <em>The Theory of Unitary Group Representations</em> (University of Chicago Press, 1976), for irreducibility, the commutant and the unitary invariants.</li>
+<li>Masamichi Takesaki, <em>Theory of Operator Algebras I</em> (Springer, 1979), for the commutant theorem and the structure of the intertwining operators.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

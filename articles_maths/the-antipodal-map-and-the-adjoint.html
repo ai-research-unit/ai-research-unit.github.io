@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antipodal Map and the Adjoint — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antipodal-map-and-the-adjoint"><strong>The Antipodal Map and the Adjoint</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>antipodal map</strong> $\alpha(x) = -x$ of the sphere is the free involution of <em>Borsuk's Theorem and the Antipodal Involution</em>, and it is also an operator on the cohomology of the sphere. The article computes the operator: on the top cohomology $H^{n}(S^{n})$ it is multiplication by the degree, $\deg\alpha = (-1)^{n+1}$, so that the antipodal map preserves the orientation of the sphere in odd dimensions and reverses it in even dimensions. The article then computes its <strong>adjoint</strong> with respect to the cup-product pairing, the archetypal pairing of the operator group. The adjoint turns out to be a scalar multiple of the operator itself, $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$, so that the antipodal operator is self-adjoint in odd dimensions and skew-adjoint in even dimensions; the computation is the model of the Hermitian pairings of <em>Hermitian Pairings on a Topological Space</em>, and the fixed part of the operator is computed at the same time, the invariant cohomology being the whole ring in the odd case and the degree-zero part alone in the even case.</p>
+<p>The article continues <em>The Involution on the Cohomology Operators</em>, whose general involution it specialises to the antipodal map, and <em>Borsuk's Theorem and the Antipodal Involution</em>, whose degree it recomputes and whose rigidity it reinterprets. It prepares <em>Hermitian Pairings on a Topological Space</em>. It uses the cohomology ring and the cup product of <em>Cup and Cap Products</em>, the degree of a map of spheres from the homology of this Part, and the antipodal involution of the sphere. Nothing analytic and nothing geometric is used: the sphere is the set of unit vectors, the antipodal map is the restriction of the linear map $-I$, and the only geometry is the determinant of that linear map, read as the sign of the degree; no metric is chosen on the cohomology and no length or angle on the sphere.</p>
+<h2 id="the-antipodal-map-as-an-operator">The Antipodal Map as an Operator</h2>
+<h3 id="the-involution-of-the-sphere">The Involution of the Sphere</h3>
+<p><strong>Definition.</strong> The <strong>antipodal map</strong> of the sphere $S^{n} = \{x \in \mathbb{R}^{n+1} : |x| = 1\}$ is $\alpha(x) = -x$. It is the restriction of the linear operator $-I$ of $\mathbb{R}^{n+1}$ to the sphere.</p>
+<p><strong>Theorem.</strong> The antipodal map is a homeomorphism of the sphere of order two, $\alpha^{2} = \mathrm{id}$, with no fixed point; it commutes with the group of rotations of the sphere, and the orbit space $S^{n}/\alpha$ is real projective space $\mathbb{RP}^{n}$. The map is the free involution whose orbit map is the universal two-fold covering $S^{n} \to \mathbb{RP}^{n}$.</p>
+<p><strong>Proof.</strong> The restriction of a linear homeomorphism to the sphere is a homeomorphism, $(-I)^{2} = I$ restricts to $\alpha^{2} = \mathrm{id}$, and $-x = x$ forces $x = 0$, which is not on the sphere; the orbit space is the projective space by the definition of the latter, and the covering statement is that of <em>The Orbit Space of a Free Involution</em>.</p>
+<h3 id="the-induced-operator-on-cohomology">The Induced Operator on Cohomology</h3>
+<p><strong>Definition.</strong> The <strong>antipodal operator</strong> is the induced map</p>
+<p>$$
+\alpha^{*} : H^{*}(S^{n};R) \longrightarrow H^{*}(S^{n};R),
+$$</p>
+<p>the involution of the cohomology ring induced by the antipodal map, with coefficients in a commutative ring $R$.</p>
+<p><strong>Theorem.</strong> The cohomology of the sphere is $H^{0}(S^{n};R) = R$, $H^{n}(S^{n};R) = R$, and the intermediate groups are zero, so the antipodal operator is determined by its action on the two generators: it is the identity on $H^{0}(S^{n};R)$, because $S^{n}$ is connected, and it is the multiplication by an element $c \in R$ on $H^{n}(S^{n};R)$, which is the degree of the antipodal map,</p>
+<p>$$
+\alpha^{*}(u_{n}) = \deg(\alpha)\, u_{n}, \qquad \alpha^{*}(u_{0}) = u_{0},
+$$</p>
+<p>where $u_{n}$ is a chosen generator of $H^{n}(S^{n};R)$ and $u_{0}$ the unit.</p>
+<p><strong>Proof.</strong> The cohomology of the sphere is the standard computation of the homology and cohomology of a sphere in <em>Simplicial and Singular Homology</em> and <em>Cohomology and the Universal Coefficient Theorem</em>; the degree of a self-map of the sphere is by definition the integer by which it acts on the top cohomology, and it acts as the identity on $H^{0}$ because a map of a connected space to itself induces the identity on the degree-zero cohomology.</p>
+<h2 id="the-degree">The Degree</h2>
+<h3 id="the-degree-of-the-antipodal-map">The Degree of the Antipodal Map</h3>
+<p><strong>Theorem.</strong> For $n \geq 1$ the degree of the antipodal map of $S^{n}$ is</p>
+<p>$$
+\deg(\alpha) = (-1)^{n+1} .
+$$</p>
+<p><strong>Proof.</strong> The degree is multiplicative, $\deg(f \circ g) = \deg(f)\deg(g)$, for self-maps of the sphere, and the degree of a reflection is $-1$. The linear operator $-I$ of $\mathbb{R}^{n+1}$ is the composite of the $n+1$ reflections $\rho_{i}$ that change the sign of the $i$-th coordinate, and each $\rho_{i}$ restricts to a reflection of the sphere, a homeomorphism that fixes the equator of the $i$-th coordinate and exchanges the two hemispheres, of degree $-1$. Hence the antipodal map, the restriction of $-I = \rho_{1}\circ\cdots\circ\rho_{n+1}$, has degree $(-1)^{n+1}$.</p>
+<p><strong>Corollary.</strong> The antipodal map preserves the orientation of the sphere in the odd dimensions and reverses it in the even dimensions; on the top cohomology it is multiplication by $(-1)^{n+1}$, and the induced map on the fundamental class is</p>
+<p>$$
+\alpha_{*}[S^{n}] = (-1)^{n+1}[S^{n}] .
+$$</p>
+<p><strong>Proof.</strong> The orientation of the sphere is a choice of generator of the top homology, and the degree is the multiplier by which a self-map acts on that generator; the sign is the theorem.</p>
+<h3 id="two-computations-of-the-sign">Two Computations of the Sign</h3>
+<p><strong>Remark.</strong> The sign has two independent computations, and the article records both. The first is the product of the reflections above, which uses the multiplicativity of the degree and the degree of a single reflection; the second is the determinant of the linear operator, $\det(-I) = (-1)^{n+1}$, which the degree of the restriction of a linear isomorphism to the sphere reproduces, because the orientation of the sphere is carried by the volume form that the linear operator scales by the determinant. The two agree, and the agreement is the reason the sign can be read off the linear algebra of $\mathbb{R}^{n+1}$ without a separate computation on the sphere.</p>
+<p><strong>Example.</strong> For $n = 1$ the antipodal map is the rotation by $\pi$, of degree $1 = (-1)^{2}$, and it is homotopic to the identity on the circle; it is then invisible on the cohomology, in accordance with the general statement that the involution is orientation-preserving in the odd dimensions. For $n = 2$ the antipodal map is the orientation-reversing involution of the two-sphere, of degree $-1 = (-1)^{3}$. The case $n = 0$ is exceptional: $S^{0}$ is disconnected, the antipodal map interchanges the two points, and it acts on $H^{0}(S^{0};R) = R \oplus R$ by the exchange of the two summands, not by the multiplication by a scalar, so the degree is defined for $n \geq 1$.</p>
+<h2 id="the-pairing-and-the-adjoint">The Pairing and the Adjoint</h2>
+<h3 id="the-cup-product-pairing">The Cup-Product Pairing</h3>
+<p><strong>Definition.</strong> The <strong>cup-product pairing</strong> on the cohomology of the sphere, with coefficients in a commutative ring $R$, is</p>
+<p>$$
+b : H^{*}(S^{n};R) \times H^{*}(S^{n};R) \longrightarrow R, \qquad b(u,v) = \langle u \cup v, [S^{n}]\rangle,
+$$</p>
+<p>the evaluation of the cup product on the fundamental class; it is nondegenerate in the sense of Poincaré duality, and it vanishes unless the degrees of $u$ and $v$ sum to $n$. On the middle group $H^{n}(S^{n};R)$ it is the symmetric form $b(u,v) = u_{n}$-coefficient of $u \cup v$, and it is $\varepsilon$-symmetric with the graded sign $\varepsilon = (-1)^{n}$: symmetric in the even dimensions and alternating in the odd dimensions.</p>
+<p><strong>Proof.</strong> The cup product is graded-commutative, $u \cup v = (-1)^{|u||v|}v \cup u$, so the pairing is symmetric when both degrees are even and alternating when both are odd; the only nonzero case for the sphere has $|u| = |v| = n$ in the middle, giving the stated sign. The nondegeneracy is Poincaré duality of the sphere, <em>Poincaré Duality</em>.</p>
+<h3 id="the-adjoint-of-the-antipodal-operator">The Adjoint of the Antipodal Operator</h3>
+<p><strong>Theorem.</strong> The antipodal operator scales the cup-product pairing by its degree:</p>
+<p>$$
+b(\alpha^{*}u, \alpha^{*}v) = (-1)^{n+1}\, b(u,v) \qquad (u, v \in H^{*}(S^{n};R)).
+$$</p>
+<p>Consequently the adjoint of the antipodal operator with respect to the pairing is the same operator multiplied by that scalar,</p>
+<p>$$
+\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\,\alpha^{*},
+$$</p>
+<p>so that the antipodal operator is <strong>self-adjoint</strong> in the odd dimensions and <strong>skew-adjoint</strong> in the even dimensions; in both cases it satisfies $\operatorname{Ad}(\alpha^{*}) = \pm\alpha^{*}$ and it is an involution up to the sign of the degree. The pairing is invariant under the antipodal operator exactly in the odd dimensions and anti-invariant in the even dimensions.</p>
+<p><strong>Proof.</strong> The antipodal operator is a ring homomorphism, so $\alpha^{*}(u\cup v) = \alpha^{*}u \cup \alpha^{*}v$; naturality of the evaluation gives</p>
+<p>$$
+b(\alpha^{*}u,\alpha^{*}v) = \langle \alpha^{*}(u\cup v),[S^{n}]\rangle = \langle u\cup v, \alpha_{*}[S^{n}]\rangle = (-1)^{n+1}b(u,v),
+$$</p>
+<p>using $\alpha_{*}[S^{n}] = (-1)^{n+1}[S^{n}]$ of the corollary. For the adjoint, the defining relation of the adjoint operator and the fact that $\alpha^{*}$ is an involution give</p>
+<p>$$
+b(\alpha^{*}u, v) = (-1)^{n+1}b(u,\alpha^{*}v),
+$$</p>
+<p>because $v = \alpha^{*}\alpha^{*}v$ and the isometry-up-to-sign relation applies to the pair $(u,\alpha^{*}v)$; hence $\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$. The self-adjoint and the skew-adjoint statements are the two cases of the sign, and the invariance and anti-invariance are the two cases of the displayed scaling.</p>
+<p><strong>Corollary.</strong> The pairing defined by the antipodal operator through the adjoint is the scaled pairing $b_{\alpha}(u,v) = b(\alpha^{*}u,v) = (-1)^{n+1}b(u,\alpha^{*}v)$; it is symmetric in the even dimensions and skew-symmetric in the odd dimensions, and it is nondegenerate exactly when the cup-product pairing is, since $\alpha^{*}$ is an invertible operator.</p>
+<p><strong>Proof.</strong> The displayed identity is the definition of $b_{\alpha}$ read through the adjoint. For the symmetry, the defining relation of the adjoint and the graded symmetry of $b$ give $b_{\alpha}(u,v) = (-1)^{n+1}b(u,\alpha^{*}v) = (-1)^{n+1}\cdot(-1)^{n}b(\alpha^{*}v,u) = (-1)^{n}b_{\alpha}(v,u)$, since $\alpha^{*}$ is an involution and $b(\alpha^{*}v,u) = b_{\alpha}(v,u)$; hence the symmetry sign of $b_{\alpha}$ is $(-1)^{n}$, as stated. Nondegeneracy is preserved by the invertible operator $\alpha^{*}$.</p>
+<h2 id="the-fixed-part-of-the-antipodal-operator">The Fixed Part of the Antipodal Operator</h2>
+<p><strong>Theorem.</strong> The fixed part of the antipodal operator on the cohomology of the sphere is</p>
+<p>$$
+H^{*}(S^{n};R)^{\alpha^{*}} = \begin{cases} H^{0}(S^{n};R) \oplus H^{n}(S^{n};R), & n \text{ odd}, \\ H^{0}(S^{n};R), & n \text{ even}, \end{cases}
+$$</p>
+<p>and the anti-invariant part is the complementary summand when two is invertible: the whole of $H^{n}$ in the even case and zero in the odd case. In the even dimensions the invariant cohomology is only the degree-zero part, and in the odd dimensions it is the whole ring.</p>
+<p><strong>Proof.</strong> The cohomology of the sphere is concentrated in degrees $0$ and $n$, the operator is the identity in degree zero, and in degree $n$ it is the multiplication by $(-1)^{n+1}$; the fixed elements of the multiplication by a scalar $c$ on the rank-one module $R$ are the elements annihilated by $c-1$, which is the whole module when $c = 1$ and is zero when $c - 1$ is not a zero-divisor, in particular for $c = -1$. The two cases are therefore as stated, and the anti-invariant part is the other eigenspace.</p>
+<p><strong>Corollary.</strong> For odd $n$ the antipodal operator is the identity on the cohomology, the involution is cohomologically invisible, and the induced involution on the cohomology ring of the projective space is the identity; for even $n$ the invariant cohomology is the degree-zero part and the top class is anti-invariant. The contrast with the quotient $\mathbb{RP}^{n}$, whose mod-two cohomology is larger, shows that the invariant cohomology of the free action forgets the quotient in the odd case and retains only the bottom in the even case; the forgetfulness is the cohomological shadow of the orientation reversal.</p>
+<p><strong>Proof.</strong> The first clauses are the theorem; the comparison with the projective space uses the mod-two cohomology $H^{*}(\mathbb{RP}^{n};\mathbb{Z}/2) = \mathbb{Z}/2[\omega]/(\omega^{n+1})$ of <em>Borsuk's Theorem and the Antipodal Involution</em>, which is not the fixed part in either case, so that the fixed part of the involution on the sphere is a coarser invariant than the quotient.</p>
+<h2 id="summary">Summary</h2>
+<p>The antipodal map is a free involution of the sphere, the orbit map is the universal two-fold covering of the projective space, and the induced operator on the cohomology is the identity in degree zero and the multiplication by the degree in the top degree. The degree is $(-1)^{n+1}$: it is computed as the product of the degrees of the $n+1$ reflections whose composite is $-I$, and equally as the determinant of the linear operator, and the two agree. With respect to the cup-product pairing of Poincaré duality the antipodal operator scales the pairing by its degree, and its adjoint is therefore the same operator multiplied by the degree; the antipodal operator is self-adjoint in odd dimensions and skew-adjoint in even dimensions, and the pairing it defines through the adjoint is symmetric in the odd dimensions and skew-symmetric in the even dimensions. Its fixed part on the cohomology of the sphere is the whole ring in the odd dimensions and the degree-zero part in the even dimensions, with the complementary top class anti-invariant when two is invertible; the fixed part is coarser than the cohomology of the quotient, and the article that follows develops the pairings of which this computation is the model.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha(x) = -x$</td>
+<td>The antipodal map of $S^{n}$; the restriction of $-I$</td>
+</tr>
+<tr>
+<td>$S^{n}/\alpha = \mathbb{RP}^{n}$</td>
+<td>The orbit space; the universal two-fold covering quotient</td>
+</tr>
+<tr>
+<td>$\alpha^{*}$</td>
+<td>The antipodal operator on $H^{*}(S^{n};R)$</td>
+</tr>
+<tr>
+<td>$\deg(\alpha) = (-1)^{n+1}$</td>
+<td>The degree of the antipodal map</td>
+</tr>
+<tr>
+<td>$\alpha_{*}[S^{n}] = (-1)^{n+1}[S^{n}]$</td>
+<td>The action on the fundamental class</td>
+</tr>
+<tr>
+<td>$b(u,v) = \langle u\cup v,[S^{n}]\rangle$</td>
+<td>The cup-product (intersection) pairing</td>
+</tr>
+<tr>
+<td>$\varepsilon = (-1)^{n}$</td>
+<td>The symmetry sign of the middle pairing</td>
+</tr>
+<tr>
+<td>$b(\alpha^{*}u,\alpha^{*}v) = (-1)^{n+1}b(u,v)$</td>
+<td>The scaling of the pairing by the degree</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}(\alpha^{*}) = (-1)^{n+1}\alpha^{*}$</td>
+<td>The adjoint of the antipodal operator</td>
+</tr>
+<tr>
+<td>self-adjoint / skew-adjoint</td>
+<td>Odd dimensions / even dimensions</td>
+</tr>
+<tr>
+<td>$b_{\alpha}(u,v) = b(\alpha^{*}u,v)$</td>
+<td>The pairing defined by the antipodal operator</td>
+</tr>
+<tr>
+<td>$H^{*}(S^{n})^{\alpha^{*}}$</td>
+<td>Invariant cohomology: whole ring if $n$ odd, degree zero if $n$ even</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the degree of a self-map of a sphere, the cohomology of the sphere and the cup-product pairing.</li>
+<li>James R. Munkres, <em>Elements of Algebraic Topology</em> (Addison-Wesley, 1984), for the degree, the multiplicativity of the degree and the action on the fundamental class.</li>
+<li>Glen E. Bredon, <em>Topology and Geometry</em> (Springer, 1993), for the antipodal map, its degree and the orientation of the sphere.</li>
+<li>Jean Dieudonné, <em>A History of Algebraic and Differential Topology 1900–1960</em> (Birkhäuser, 1989), for the origins of the degree and the antipodal map.</li>
+<li>William S. Massey, <em>A Basic Course in Algebraic Topology</em> (Springer, 1991), for Poincaré duality, the intersection pairing and the adjoint of a map with respect to it.</li>
+<li>Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators III", <em>Annals of Mathematics</em> 87 (1968), 546–604, for the equivariant refinement of the signature and the pairing, which the later articles name.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

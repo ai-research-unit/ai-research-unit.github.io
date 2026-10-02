@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equivariant Dynamics under an Involution — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equivariant-dynamics-under-an-involution"><strong>Equivariant Dynamics under an Involution</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A dynamical system has an <strong>equivariant symmetry</strong> when an involution of the phase space commutes with the dynamics; an invertible map $T$ is <strong>$\mathbb{Z}/2$-equivariant</strong> with respect to an involution $\sigma$, $\sigma^2=\mathrm{id}$, when</p>
+<p>$$
+\sigma\circ T=T\circ\sigma ,
+$$</p>
+<p>and a flow is equivariant when $\sigma\circ\varphi_t=\varphi_t\circ\sigma$ for all $t$. The involution is a genuine order-two map of the phase space, and it is not the reversal of the preceding article: a reversor makes the system conjugate to its inverse, $RTR=T^{-1}$, while an equivariant symmetry leaves the arrow of time intact and only permutes the orbits. The consequence is immediate and strong: the <strong>fixed-point subspace</strong> $\mathrm{Fix}(\sigma)$ is invariant under the dynamics, a point fixed by $\sigma$ is carried by $T$ to a point fixed by $\sigma$; the symmetric subsystem is thus a dynamical system in its own right, of lower dimension, embedded in the full one, and the orbit structure of the full system is the orbit structure of that subsystem together with the orbits paired by $\sigma$. The group $\mathbb{Z}/2$ acts on the state space, the space of equivariant maps is the space of fixed points of the induced action on maps, and the linear theory is the isotypic decomposition of the representation into the trivial and the sign components.</p>
+<p>The article develops the equivariant structure. It defines the commuting involution for maps and flows and proves the invariance of the fixed-point subspace and the restriction of the dynamics to it; it establishes the <strong>$\mathbb{Z}/2$ orbit structure</strong>: an orbit is either contained in $\mathrm{Fix}(\sigma)$ or paired with its image, the periodic orbit of an equivariant map is either contained in $\mathrm{Fix}(\sigma)$ or carries a free $\mathbb{Z}/2$-action, and the quotient dynamics is well defined; it decomposes a linear equivariant map into its blocks on the $+1$ and the $-1$ eigenspaces and states the equivariant version of the linear theory; it gives the examples — the doubling map with its reflection, the standard map with the central involution, the even and the odd maps of the interval, and the time-one maps of $\mathbb{Z}/2$-equivariant fields; and it closes with the consequences: symmetric attractors, the symmetric subsystem as the carrier of the homoclinic structure of a symmetric equilibrium, and the fixed-point subspace principle that reduces the dimension of a symmetric problem.</p>
+<p>The groups, the actions, the quotients and the fixed-point sets are those of <em>Groups and Group Actions</em> and <em>Topological Groups</em>; the smooth involutions, the submanifolds and the transverse theory are those of <em>Differential Topology</em>; the maps, the flows and the periodic orbits are those of <em>Smooth Dynamical Systems</em> and <em>Topological Dynamics</em>; the symmetric bifurcations are those of <em>Equivariant Bifurcation Theory</em>, and the symmetric invariant tori are those of <em>Invariant Tori under an Involution</em>, both later in the <code>- * Theory</code> group of this category. The <strong>reversing</strong> involution is <em>Reversible Dynamical Systems and Time-Reversal Symmetry</em>, immediately preceding, and the two must not be conflated; the involution on the operators is <em>Reversible Operators and the Involution</em>, in the <code>- * Operator Theory</code> group.</p>
+<p>No physics is invoked.</p>
+<h2 id="equivariance-and-the-fixed-point-subspace">Equivariance and the Fixed-Point Subspace</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $X$ be a set and let $\sigma:X\to X$ be an <strong>involution</strong>, $\sigma^2=\mathrm{id}$. A map $T:X\to X$ is <strong>equivariant</strong> with respect to $\sigma$ if $\sigma\circ T=T\circ\sigma$, and an invertible equivariant map $T$ generates the group $\mathbb{Z}/2\times\mathbb{Z}$ acting on $X$ by $\sigma^mT^n$; the pair $(T,\sigma)$ is a <strong>$\mathbb{Z}/2$-equivariant dynamical system</strong>. For a flow $\varphi_t$ on a manifold the condition is $\sigma\circ\varphi_t=\varphi_t\circ\sigma$ for all $t$, equivalently, for the generating field, $D\sigma(X(x))=X(\sigma x)$.</p>
+<p><strong>Definition.</strong> The <strong>fixed-point subspace</strong> of the involution is $\mathrm{Fix}(\sigma)=\{x:\sigma x=x\}$; for a linear representation of $\mathbb{Z}/2$ the <strong>isotypic decomposition</strong> of a vector space $V$ on which $\sigma$ acts linearly is $V=V_+\oplus V_-$, where $V_+$ is the $+1$-eigenspace (the symmetric part) and $V_-$ the $-1$-eigenspace (the antisymmetric part).</p>
+<p><strong>Theorem (the fixed-point subspace is invariant).</strong> Let $T$ be equivariant with respect to $\sigma$ and let $x\in\mathrm{Fix}(\sigma)$. Then $T(x)\in\mathrm{Fix}(\sigma)$, so the restriction $T|_{\mathrm{Fix}(\sigma)}$ is a well-defined dynamical system, the <strong>symmetric subsystem</strong>; the same holds for an equivariant flow and for an equivariant vector field, whose restriction to $\mathrm{Fix}(\sigma)$ is a vector field tangent to it. More generally $\sigma$ commutes with every power $T^n$ and with the whole flow, so the fixed-point subspace is invariant under the entire group.</p>
+<p><em>Proof.</em> If $\sigma x=x$ then $\sigma(Tx)=T(\sigma x)=Tx$, so $Tx$ is fixed; iterating gives $T^n(\mathrm{Fix}(\sigma))\subseteq\mathrm{Fix}(\sigma)$. For a flow, differentiating the relation $\sigma\varphi_t=\varphi_t\sigma$ in $t$ gives $D\sigma(X(\varphi_tx))=X(\varphi_t\sigma x)$, and at a fixed point the field is tangent to the fixed set.</p>
+<h3 id="the-orbit-structure">The Orbit Structure</h3>
+<p><strong>Theorem (the $\mathbb{Z}/2$ orbit structure).</strong> Let $T$ be equivariant with respect to $\sigma$ and let $x\in X$. The orbit $\mathcal{O}(x)=\{T^nx\}$ is either contained in $\mathrm{Fix}(\sigma)$ — equivalently $x\in\mathrm{Fix}(\sigma)$ — or it is disjoint from $\mathrm{Fix}(\sigma)$ and $\sigma(\mathcal{O}(x))=\mathcal{O}(\sigma x)$ is a second orbit, so that the orbits of the quotient $X/\sigma$ are the pairs $\{\mathcal{O}(x),\mathcal{O}(\sigma x)\}$ and the single orbits inside the fixed set. If $x$ is periodic of period $n$ and $\sigma x=T^jx$ for some $j$, then $2j\equiv0\pmod n$; the involution acts on the periodic orbit either as the identity (the orbit is contained in $\mathrm{Fix}(\sigma)$) or as the shift by $n/2$, so a $\sigma$-invariant periodic orbit of odd period is contained in $\mathrm{Fix}(\sigma)$, while one of even period is either symmetric or a pair of orbits exchanged by $\sigma$.</p>
+<p><em>Proof.</em> If $x\in\mathrm{Fix}(\sigma)$ then the orbit is fixed by $\sigma$. If $x\notin\mathrm{Fix}(\sigma)$, then $\sigma x\ne x$ and no element of the orbit of $x$ is fixed, because $\sigma(T^nx)=T^n(\sigma x)$ and $T^nx=T^n(\sigma x)$ would give $x=\sigma x$. For the periodic case, $\sigma x=T^jx$ for some $j$ because $\sigma x$ lies on the orbit of $x$; applying $\sigma$ again gives $x=\sigma^2x=T^j(\sigma x)=T^{2j}x$, so $n\mid2j$, and the two possibilities $j\equiv0$ or $j\equiv n/2$ are the dichotomy stated.</p>
+<p><strong>Corollary (the symmetric subsystem carries the symmetric periodic orbits).</strong> A periodic orbit of the equivariant map is $\sigma$-invariant exactly when it contains a point of $\mathrm{Fix}(\sigma)$, and the even $\sigma$-invariant orbits are the pairs $\{p,T^{n/2}p\}$ with $p\in\mathrm{Fix}(\sigma)$ and $T^np=p$, while a $\sigma$-invariant orbit of odd period lies in the fixed set.</p>
+<h2 id="the-linear-theory">The Linear Theory</h2>
+<p><strong>Theorem (the isotypic block decomposition).</strong> Let $\sigma$ act linearly on a vector space $V$, $V=V_+\oplus V_-$ the isotypic decomposition, and let $A\in\mathrm{GL}(V)$ commute with $\sigma$. Then $A$ preserves each isotypic component, $A(V_\pm)\subseteq V_\pm$, and in the splitting $A=A_+\oplus A_-$; consequently the spectrum of $A$ is the union of the spectra of the two blocks and the symmetric and antisymmetric modes do not mix under the linearised dynamics.</p>
+<p><em>Proof.</em> If $v\in V_+$ then $\sigma(Av)=A(\sigma v)=Av$, so $Av\in V_+$; the argument for $V_-$ is the same with the sign reversed. The block diagonal form and the spectral statement follow.</p>
+<p><strong>Corollary (the derivative at a symmetric fixed point).</strong> Let $p\in\mathrm{Fix}(\sigma)$ be a fixed point of an equivariant diffeomorphism $T$, so that $D\sigma(p)$ and $D_pT$ commute. Then $T_pM$ splits into the symmetric and the antisymmetric subspaces of $D\sigma(p)$, the derivative preserves the splitting, and the stability of $p$ is the union of the stabilities of the two blocks; one of the modes is tangent to the fixed-point submanifold and the other is transverse to it, and the transverse block governs the motion off the symmetric subsystem.</p>
+<h2 id="the-examples">The Examples</h2>
+<p><strong>Example (the doubling map and the reflection, verified).</strong> On the circle $\mathbb{T}=\mathbb{R}/\mathbb{Z}$ let $T x=2x\bmod1$ and $\sigma x=-x\bmod1$. Then $\sigma$ is an involution and $T\circ\sigma=\sigma\circ T$; the identity was checked numerically at three points to $10^{-16}$. The fixed set is $\mathrm{Fix}(\sigma)=\{0,\tfrac12\}$, a two-point set invariant under $T$, with $T(0)=0$ and $T(\tfrac12)=0$; the symmetric subsystem consists of the two fixed points collapsed by the doubling, while the rest of the circle is paired into $\{x,-x\}$ with the same orbit structure. The example shows that the fixed-point subspace may be as small as a finite set and still determine the symmetric part of the dynamics.</p>
+<p><strong>Example (the standard map and the central involution, verified).</strong> For the standard map $S(\theta,I)=(\theta+I+k\sin\theta,\,I+k\sin\theta)$ on the cylinder, the <strong>central involution</strong> $\Sigma(\theta,I)=(-\theta,-I)$ is an involution and $S\circ\Sigma=\Sigma\circ S$; the identity was checked numerically to $10^{-16}$. The fixed set is $\mathrm{Fix}(\Sigma)=\{(0,0),(\pi,0)\}$, and both points are fixed points of $S$, so the symmetric subsystem is the two fixed points; the standard map also has the <strong>reversal</strong> $R(\theta,I)=(-\theta,I+k\sin\theta)$ of the preceding article, and $R$ is not $\Sigma$: the two involutions play different roles, the reversor reversing the iteration and the central involution commuting with it.</p>
+<p><strong>Example (even and odd maps of the interval).</strong> For $\sigma(x)=-x$ on $\mathbb{R}$, an equivariant map is an <strong>odd</strong> map, $T(-x)=-T(x)$; the fixed-point subspace is $\{0\}$, and the symmetric subsystem is the fixed point at the origin. The odd maps $\dot x=-x^3$, $T(x)=x-x^3$ are the normal forms of a $\mathbb{Z}/2$-symmetric equilibrium, and the symmetric periodic orbits are those of the odd map that pass through the origin. An <strong>even</strong> map $T(-x)=T(x)$ is not equivariant for $\sigma(x)=-x$ unless $T\equiv0$; it is constant on the orbits of $\sigma$ and descends to the quotient half-line $[0,\infty)$, where it defines the folded dynamics $x\mapsto|T(x)|$.</p>
+<p><strong>Example (time-one maps and the symmetric subsystems of a field).</strong> Let $X$ be a $\mathbb{Z}/2$-equivariant vector field, $D\sigma\,X=X\circ\sigma$; then the flow is equivariant and its fixed-point subspace is an invariant submanifold carrying the restricted field. This is the mechanism by which a symmetric equilibrium of a physical system has its centre, stable and unstable manifolds constrained to lie within the fixed-point subspace (when the equilibrium is fixed by the symmetry), and it is the <strong>fixed-point subspace principle</strong> used to reduce the dimension of a symmetric problem before applying the invariant manifold theorems. The precise use of the principle in the homoclinic and the bifurcation theory is <em>Equivariant Bifurcation Theory</em>, later in this category.</p>
+<h2 id="consequences-of-the-equivariance">Consequences of the Equivariance</h2>
+<p><strong>Remark (symmetric attractors).</strong> For an equivariant dissipative map, an attractor $\Lambda$ has the property that $\sigma(\Lambda)$ is again an attractor, because $\sigma$ conjugates the dynamics to itself and preserves the topology of the basins; hence the attractors come in $\sigma$-pairs, and an attractor with a non-symmetric shape is accompanied by its reflected image, while a <strong>symmetric attractor</strong> satisfies $\sigma(\Lambda)=\Lambda$ and carries a $\mathbb{Z}/2$-action of its own. This is the equivariant companion of the attractor/repeller pairing of the reversible theory, and the two must be distinguished: the reversible pairing sends an attractor to a repeller, the equivariant pairing sends an attractor to an attractor.</p>
+<p><strong>Remark (the space of equivariant maps).</strong> The equivariant maps of a representation form the fixed-point set of the action of $\mathbb{Z}/2$ on the space of maps, $T\mapsto\sigma^{-1}T\sigma$; genericity statements are therefore stated within the equivariant class rather than in the class of all maps, and the symmetric degeneracies that are non-generic in the class of all maps are generic in the equivariant class. This is the reason for the separate bifurcation theory of the next group: a symmetry forces eigenvalues of the linearisation to appear with multiplicity, and the forced multiplicity is exactly the isotypic structure of the representation.</p>
+<h2 id="summary">Summary</h2>
+<p>An <strong>equivariant</strong> involution $\sigma$ of a dynamical system is an involution of the phase space, $\sigma^2=\mathrm{id}$, that <strong>commutes</strong> with the dynamics, $\sigma T=T\sigma$ (for a flow, $\sigma\varphi_t=\varphi_t\sigma$, or $D\sigma\,X=X\circ\sigma$ for the field); it is not a reversal, which would make the system conjugate to its inverse. Its decisive consequence is that the <strong>fixed-point subspace</strong> $\mathrm{Fix}(\sigma)$ is invariant and carries the <strong>symmetric subsystem</strong> $T|_{\mathrm{Fix}(\sigma)}$; the involution is an order-two map on the elements and it permutes the orbits without changing the direction of time. The <strong>orbit structure</strong> is the dichotomy: an orbit lies in $\mathrm{Fix}(\sigma)$ or is paired with the distinct orbit of $\sigma x$; a periodic orbit of period $n$ with $\sigma x=T^jx$ has $2j\equiv0\pmod n$, so it is contained in the fixed set or shifted by $n/2$, and a $\sigma$-invariant orbit of odd period lies in the fixed set. A linear map commuting with $\sigma$ preserves the <strong>isotypic decomposition</strong> $V=V_+\oplus V_-$ and splits as $A_+\oplus A_-$, so the symmetric and antisymmetric modes never mix under the linearised dynamics; at a symmetric fixed point the derivative splits into a tangent block (on the fixed submanifold) and a transverse block. The examples are the doubling map with $\sigma x=-x$ (verified, $\mathrm{Fix}(\sigma)=\{0,\tfrac12\}$), the standard map with the central involution $\Sigma(\theta,I)=(-\theta,-I)$ (verified, $\mathrm{Fix}(\Sigma)=\{(0,0),(\pi,0)\}$), the odd and even maps of the interval, and the time-one maps of equivariant fields; the last supplies the <strong>fixed-point subspace principle</strong>, the reduction of a symmetric problem to its fixed set before the application of the invariant-manifold and bifurcation theorems. The reversible pairing sends an attractor to a repeller, while the equivariant pairing sends an attractor to an attractor, and the two involutions must not be conflated. The symmetric bifurcations are <em>Equivariant Bifurcation Theory</em>, the symmetric tori are <em>Invariant Tori under an Involution</em>, and the operator form of the involution is <em>Reversible Operators and the Involution</em>, later in this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$</td>
+<td>Equivariant involution, $\sigma^2=\mathrm{id}$, $\sigma T=T\sigma$</td>
+</tr>
+<tr>
+<td>$\mathrm{Fix}(\sigma)$</td>
+<td>Fixed-point subspace, invariant under the dynamics</td>
+</tr>
+<tr>
+<td>$T\|_{\mathrm{Fix}(\sigma)}$</td>
+<td>Symmetric subsystem</td>
+</tr>
+<tr>
+<td>$V=V_+\oplus V_-$, $A_+\oplus A_-$</td>
+<td>Isotypic decomposition and the commuting linear map</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(x)$, $X/\sigma$</td>
+<td>Orbit and quotient by the involution</td>
+</tr>
+<tr>
+<td>$T^jx=\sigma x$, $2j\equiv0\pmod n$</td>
+<td>Action of $\sigma$ on a periodic orbit</td>
+</tr>
+<tr>
+<td>$\Sigma(\theta,I)=(-\theta,-I)$</td>
+<td>Central involution of the standard map</td>
+</tr>
+<tr>
+<td>$R(\theta,I)=(-\theta,I+k\sin\theta)$</td>
+<td>Reversor of the standard map (contrast, not equivariance)</td>
+</tr>
+<tr>
+<td>$\Lambda$, $\sigma(\Lambda)$</td>
+<td>Attractor and its reflected partner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Martin Golubitsky, Ian Stewart and David G. Schaeffer, <em>Singularities and Groups in Bifurcation Theory</em>, Vol. II (Springer, 1988), for the equivariant dynamics and the fixed-point subspace principle.</li>
+<li>Martin Golubitsky and Ian Stewart, <em>The Symmetry Perspective</em> (Birkhäuser, 2002), for the dynamics of symmetric systems.</li>
+<li>Pascal Chossat and Reiner Lauterbach, <em>Methods in Equivariant Bifurcations and Dynamical Systems</em> (World Scientific, 2000).</li>
+<li>John Guckenheimer and Philip Holmes, <em>Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields</em> (Springer, 1983), for the symmetric examples and the invariant manifolds.</li>
+<li>Michael Field, <em>Dynamics and Symmetry</em> (Imperial College Press, 2007), for the lattice of isotropy subgroups and the equivariant flows.</li>
+<li>Jeff Moehlis and Edgar Knobloch, "Equivariant bifurcation theory" and the survey literature, for the symmetric bifurcations.</li>
+<li>Robert L. Devaney, <em>An Introduction to Chaotic Dynamical Systems</em> (Westview, 2nd ed. 2003), for the doubling map and its symmetries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

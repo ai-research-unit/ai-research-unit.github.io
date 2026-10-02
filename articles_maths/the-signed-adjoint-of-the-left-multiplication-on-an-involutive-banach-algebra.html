@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-signed-adjoint-of-the-left-multiplication-on-an-involutive-banach-algebra"><strong>The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>signed left multiplication</strong> by an element $r$ is the operator $\ell_r(x) = r\,\alpha(x)$, the left multiplication twisted by the grade involution; it is the one-sided operator of the signed theory, and its adjoint with respect to the form of the category is the signed left multiplication by the <strong>conjugate element</strong>, $(\ell_r)^\dagger = \ell_{\delta(r)}$, $\delta = \sigma\alpha$. From this formula the dictionary of the signed block follows: the signed left multiplication is self-adjoint exactly when $\delta(r) = r$ modulo the kernel, it is unitary exactly when the <strong>defect</strong> $\delta(r)\alpha(r)$ is the unit, and the two-sided signed sandwich is the composite of the signed left multiplication with a right multiplication. This article computes the adjoint of the signed left multiplication, derives its dictionary, and assembles the one-sided and two-sided operators.</p>
+<p>The article assumes the signed left multiplication, its composition and its action on the regular module from <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>; the grade involution $\alpha$, the composite $\delta = \sigma\alpha$ and the reflection from <em>The Grade Involution on a Banach Algebra</em> and <em>The Signed Left Multiplication on an Involutive Banach Algebra</em>; the form of the category, the adjoint and the self-adjoint and skew operators from <em>The Involution on the Operator Algebra</em>; the adjoint of the (unsigned) left multiplication from <em>The Adjoint of the Left Multiplication on an Involutive Banach Algebra</em>; the adjoint of the signed sandwich from <em>The Signed Adjoint Sandwich on a Banach Algebra</em>; and the involution $\sigma$, the unitary elements and the Cayley transform from <em>Adjoints in a Banach Algebra</em>. The graded module case is <em>The Graded Adjoint Action on a Graded Module</em>.</p>
+<p>Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with the grade involution $\alpha$ and the involution $\sigma$, with $\sigma\alpha = \alpha\sigma$ and $\delta = \sigma\alpha = \alpha\sigma$; the form of the category is $\{x,y\} = \tau(x\sigma(y))$ with $\tau$ a continuous $\sigma$-invariant and $\alpha$-invariant trace, and $\alpha^\dagger = \alpha$; the <strong>signed left multiplication</strong> and the <strong>signed right multiplication</strong> are</p>
+<p>$$
+\ell_r(x) = r\,\alpha(x) , \qquad \varrho_s(x) = \alpha(x)\,s ,
+$$</p>
+<p>and the <strong>defect</strong> of $r$ is $\delta(r)\alpha(r)$; the signed sandwich is $\Sigma^\alpha_{r,s} = L_rR_s\alpha$.</p>
+<h2 id="the-adjoint-of-the-signed-left-multiplication">The Adjoint of the Signed Left Multiplication</h2>
+<p><strong>Theorem (the explicit form).</strong> For every $r$, the signed left multiplication is adjointable with</p>
+<p>$$
+(\ell_r)^\dagger = \ell_{\delta(r)} , \qquad (\ell_r)^\dagger(x) = \delta(r)\,\alpha(x) ,
+$$</p>
+<p>and the signed right multiplication satisfies $(\varrho_s)^\dagger = \varrho_{\delta(s)}$; hence the adjoint of a signed one-sided multiplication is the signed one-sided multiplication by the conjugate parameter.</p>
+<p><strong>Proof.</strong> $\ell_r = L_r\alpha = \Sigma^\alpha_{r,1}$, so its adjoint is $\Sigma^\alpha_{\delta(r),\delta(1)} = \Sigma^\alpha_{\delta(r),1} = \ell_{\delta(r)}$ by <em>The Signed Adjoint Sandwich on a Banach Algebra</em>, using $\delta(1) = 1$; the right-handed computation is the mirror, $\varrho_s = R_s\alpha = \Sigma^\alpha_{1,\delta^{-1}(s)}$ with the conjugate parameter $\delta(s)$. $\square$</p>
+<p><strong>Corollary (the regular graded module).</strong> The algebra $A$ is a graded left module over itself through $\ell$, and the map $r \mapsto \ell_r$ is a homomorphism of the graded algebra into the graded operator algebra: $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$, and the involution and the adjoint agree on the image, $(\ell_r)^\dagger = \ell_{\delta(r)}$. The signed sandwich is the one-sided operator followed by a right multiplication,</p>
+<p>$$
+\Sigma^\alpha_{r,s} = \ell_r\,R_s ,
+$$</p>
+<p>so the adjoint of the two-sided operator is read from the one-sided and the right multiplication.</p>
+<p><strong>Proof.</strong> $\ell_r\ell_{t}(x) = \ell_r(t\alpha(x)) = r\alpha(t\alpha(x)) = r\alpha(t)x = \Sigma^\alpha_{r\alpha(t),1}(x)$, giving the composition law $\ell_r\ell_t = \ell_{r\alpha(t)}$, that is $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$ after the substitution $s = \alpha(t)$; the sandwich identity is associativity, and the adjoint of the composite is the composite of the adjoints by anti-multiplicativity. $\square$</p>
+<h2 id="the-dictionary">The Dictionary</h2>
+<p><strong>Theorem (self-adjoint, unitary, involutive).</strong> For every $r$,</p>
+<p>$$
+\ell_r \text{ self-adjoint} \iff \delta(r) = r \ (\text{modulo the kernel}) , \qquad \ell_r \text{ unitary} \iff \delta(r)\,\alpha(r) = 1 ,
+$$</p>
+<p>$$
+\ell_r \text{ an involution} \iff \ell_r^2 = \mathrm{id} , \ \ell_r \text{ self-adjoint} .
+$$</p>
+<p>The self-adjoint signed left multiplications are those with $r$ fixed by $\delta$, the unitary ones are those with $\delta(r)\alpha(r) = 1$, and the involutions are the self-adjoint ones with $\ell_r^2 = \mathrm{id}$, that is $r\alpha(r) = 1$.</p>
+<p><strong>Proof.</strong> $\ell_r$ is self-adjoint iff $\ell_{\delta(r)} = \ell_r$, which is the kernel condition on the parametrisation of the one-sided operators, and it is the identity $\delta(r) = r$ modulo the kernel; $\ell_r$ is unitary iff $\ell_{\delta(r)}\ell_r = \ell_{\delta(r)\alpha(r)} = \mathrm{id}$, that is $\delta(r)\alpha(r) = 1$; and $\ell_r^2 = \mathrm{id}$ is $r\alpha(r) = 1$, with self-adjointness from the previous line. $\square$</p>
+<p><strong>Theorem (assembly of the two-sided operator).</strong> Every signed sandwich is the composite of a signed left multiplication and a signed right multiplication,</p>
+<p>$$
+\Sigma^\alpha_{r,s} = \ell_r\,R_s = L_r\,\varrho_s ,
+$$</p>
+<p>and its adjoint is $\Sigma^\alpha_{\delta(r),\delta(s)} = \ell_{\delta(r)}R_{\delta(s)}$, so the two-sided adjoint is recovered from the one-sided adjoints and the commutation of the left and right multiplications.</p>
+<p><strong>Proof.</strong> The identities are associativity; the adjoint of the composite is the composite of the adjoints by anti-multiplicativity, $(L_r\varrho_s)^\dagger = \varrho_{\delta(s)}^\dagger L_{\delta(r)}^\dagger = R_{\delta(s)}L_{\delta(r)} = \Sigma^\alpha_{\delta(r),\delta(s)}$. $\square$</p>
+<h2 id="examples">Examples</h2>
+<p><strong>Example (the matrix algebra).</strong> For $A = M_n(\mathbb{C})$ with the transpose-involution and the trace form, the signed left multiplication by $X$ has adjoint the signed left multiplication by $\delta(X) = X^{\mathsf{T}}$ in the graded sense; the self-adjoint signed left multiplications are the symmetric graded multiplications, and the unitary ones satisfy $\delta(X)\alpha(X) = 1$.</p>
+<p><strong>Example (the commutative algebra).</strong> For a commutative $A$ the kernel of the one-sided parametrisation is trivial on the units, the self-adjoint signed left multiplication is exactly $\delta(r) = r$, and the unitarity condition reads $\delta(r)\alpha(r) = 1$; the Cayley transform of <em>Adjoints in a Banach Algebra</em> produces a family of unitary signed left multiplications from the self-adjoint ones.</p>
+<p><strong>Example (the group algebra).</strong> For the group algebra of a finite group with $\alpha(g) = g$, $\delta(g) = g^{-1}$ on the group elements, the signed left multiplication by a group element $g$ has adjoint the signed left multiplication by $g^{-1}$; it is unitary because $\delta(g)\alpha(g) = 1$, and the regular graded module is the group algebra acting on itself.</p>
+<h2 id="summary">Summary</h2>
+<p>The signed left multiplication $\ell_r(x) = r\alpha(x)$ is adjointable with $(\ell_r)^\dagger = \ell_{\delta(r)}$, and the signed right multiplication satisfies $(\varrho_s)^\dagger = \varrho_{\delta(s)}$; the adjoint sends the parameter to its conjugate under $\delta = \sigma\alpha$. The algebra is a graded left module over itself through $\ell$, the composition is $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$, and the signed sandwich is the composite $\Sigma^\alpha_{r,s} = \ell_rR_s$ of the one-sided and the right multiplication, so the two-sided adjoint is recovered from the one-sided ones. The dictionary holds: $\ell_r$ is self-adjoint exactly when $\delta(r) = r$ modulo the kernel, unitary exactly when the defect $\delta(r)\alpha(r)$ is the unit, and an involution exactly when it is self-adjoint with $r\alpha(r) = 1$. The reflection is the special case $s = \delta(r)^{-1}$ of <em>The Signed Adjoint of the Reflection on a Banach Algebra</em>, and the module case is <em>The Graded Adjoint Action on a Graded Module</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell_r(x) = r\alpha(x)$</td>
+<td>The signed left multiplication</td>
+</tr>
+<tr>
+<td>$\varrho_s(x) = \alpha(x)s$</td>
+<td>The signed right multiplication</td>
+</tr>
+<tr>
+<td>$\delta = \sigma\alpha = \alpha\sigma$</td>
+<td>The composite involution</td>
+</tr>
+<tr>
+<td>$(\ell_r)^\dagger = \ell_{\delta(r)}$</td>
+<td>The signed adjoint of the left multiplication</td>
+</tr>
+<tr>
+<td>$\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$</td>
+<td>Composition of the signed left multiplications</td>
+</tr>
+<tr>
+<td>$\delta(r) = r$ modulo kernel</td>
+<td>Criterion for self-adjointness</td>
+</tr>
+<tr>
+<td>$\delta(r)\alpha(r) = 1$</td>
+<td>Criterion for unitarity</td>
+</tr>
+<tr>
+<td>$\Sigma^\alpha_{r,s} = \ell_rR_s$</td>
+<td>Assembly of the two-sided operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the graded left multiplications and the involutions.</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices, Volume I</em> (Chelsea, 1959), for the one-sided multiplications and their adjoints with respect to a trace form.</li>
+<li>Theodore W. Palmer, <em>Banach Algebras and the General Theory of ${}^*$-Algebras, Volume II</em> (Cambridge University Press, 2001), for the <code>*</code>-representations and the involutions of the multiplications.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras, Volume I</em> (Academic Press, 1983), for the one-sided multiplications and their adjoints.</li>
+<li>Charles E. Rickart, <em>General Theory of Banach Algebras</em> (Van Nostrand, 1960), for the operators of a Banach algebra and the adjoints with respect to a form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

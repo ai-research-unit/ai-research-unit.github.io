@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unitary Operators of an Involutive Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unitary-operators-of-an-involutive-algebra"><strong>Unitary Operators of an Involutive Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of the operator algebra distinguishes among the operators those that it carries to their inverse: an operator $T$ is <strong>unitary</strong> for the involution when $T^{*}T=TT^{*}=\mathrm{id}$, and the unitary operators form a group — the fixed subgroup of the automorphism $\theta(T)=(T^{*})^{-1}$ of the unit group, and the operator analogue of the group of unitary elements of an involutive algebra. The two groups are related by the regular representation: the assignment $a \mapsto L_a$ carries a unitary element of $A$ to a unitary operator of $E$, and against the twisted pairing this assignment is a <code>*</code>-representation, so that the unitary group of the algebra appears as a subgroup of the unitary group of its operators. The operator group is in general larger, and its Lie algebra is the space of the skew-adjoint operators.</p>
+<p>This article develops the unitary operators of an involutive algebra, the group they form, the self-adjoint and the skew-adjoint operators beside them, the two unitary groups attached to the two pairings of the category, and the map from the unitary elements of the algebra into the unitary operators. It assumes the operator algebra and its involution of <em>Involutions of the Operator Algebra</em>, the adjoint operation and the twisted pairing of <em>The Adjoint in an Involutive Algebra</em>, the trace and the pairing of <em>Frobenius Algebras</em>, the involutions of an algebra of <em>Involutive Linear Algebras</em>, the unitary elements, the self-adjoint part and the Lie algebra of the skew elements of <em>Unitary Elements of an Involutive Algebra</em> and <em>The Self-Adjoint Part of an Algebra</em>, and the one-sided multiplications of <em>Left and Right Multiplication</em>. The adjoints of the one-sided and the signed operators are <em>The Adjoint of the Left Multiplication on an Algebra</em> and <em>The Signed Adjoint Sandwich on an Algebra</em>; the analytic unitary group, the norm and the positivity are Part II and <em>Hilbert Algebras</em> and <em>Operator Algebras</em>, named as the owner and not used.</p>
+<p>Throughout, $k$ is a field of characteristic not two, $A$ is a finite-dimensional unital associative $k$-algebra, $\tau$ is a trace with a nondegenerate pairing $\langle x,y\rangle=\tau(xy)$, $\sigma$ is an involution of $A$ with $\tau(\sigma(x))=\tau(x)$, and $E=\operatorname{End}_k(A)$ is the operator algebra with the involution $T\mapsto T^{*}$ for the plain pairing and $T\mapsto T^{*_\sigma}$ for the twisted pairing $\{x,y\}=\tau(x\sigma(y))$. The unitary groups are written $U(E)=U(E,*)$ and $U(E,*_\sigma)$ for the two pairings, and $U(A)=U(A,\sigma)$ for the group of unitary elements of the algebra.</p>
+<h2 id="the-two-unitary-groups-of-the-operators">The Two Unitary Groups of the Operators</h2>
+<p><strong>Definition.</strong> An operator $T \in E$ is <strong>unitary</strong> for the plain pairing when</p>
+<p>$$
+T^{*}T=TT^{*}=\mathrm{id},
+$$</p>
+<p>and <strong>unitary for the twisted pairing</strong> when the same equations hold with $T^{*_\sigma}$ in place of $T^{*}$. The sets of such operators are written $U(E)=U(E,*)$ and $U(E,*_\sigma)$.</p>
+<p><strong>Theorem.</strong> $U(E)$ and $U(E,*_\sigma)$ are subgroups of the unit group $E^{\times}$, and</p>
+<p>$$
+T \in U(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in U(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1} .
+$$</p>
+<p>Each is the fixed subgroup of the order-two automorphism $\theta(T)=(T^{*})^{-1}$, respectively $\theta_\sigma(T)=(T^{*_\sigma})^{-1}$, of $E^{\times}$, and each contains the identity and is closed under the adjoint and under inversion.</p>
+<p><em>Proof.</em> The equivalence is the definition read as the two halves of invertibility: the two equations say that $T^{*}$ is the two-sided inverse of $T$. That the fixed subgroup of an order-two automorphism of a group is a subgroup, that the identity is fixed, and that the fixed set is closed under inversion and under the automorphism are the general theory of <em>Unitary Elements of an Involutive Algebra</em>, applied to the involutive algebra $(E,*)$ and to $(E,*_\sigma)$; the involution maps a unitary operator to its inverse because $T^{*_\sigma}T=\mathrm{id}$ is equivalent to $T^{*_\sigma}=T^{-1}$.</p>
+<p><strong>Corollary (the involution on the operators extends the involution of the algebra).</strong> The unitary operators are exactly the operators that the automorphism $\theta(T)=(T^{*})^{-1}$ fixes, and the maps $T\mapsto T^{*}$ and $T\mapsto T^{-1}$ agree on $U(E)$; in particular $U(E)$ is stable under the involution and $\theta$ restricts to the identity on it.</p>
+<p><em>Proof.</em> The first statement is the theorem; on a unitary operator $T^{*}=T^{-1}$, so the involution and the inversion coincide there, and $\theta(T)=(T^{*})^{-1}=(T^{-1})^{-1}=T$.</p>
+<h2 id="the-self-adjoint-and-skew-adjoint-operators">The Self-Adjoint and Skew-Adjoint Operators</h2>
+<p><strong>Definition.</strong> The <strong>self-adjoint operators</strong> $E^{+}$ and the <strong>skew-adjoint operators</strong> $E^{-}$ are those with $T^{*}=T$ and with $T^{*}=-T$; for the twisted involution they are written $E^{+}_\sigma$ and $E^{-}_\sigma$.</p>
+<p><strong>Theorem.</strong> For every unitary operator $u \in U(E)$ the operators $u+u^{*}$ and $u u^{*}$ are self-adjoint and $u-u^{*}$ is skew-adjoint, and</p>
+<p>$$
+u=\tfrac12\bigl(u+u^{*}\bigr)+\tfrac12\bigl(u-u^{*}\bigr), \qquad (u+u^{*})^{*}=u+u^{*}, \qquad (u-u^{*})^{*}=-(u-u^{*}), \qquad (uu^{*})^{*}=uu^{*}=1 .
+$$</p>
+<p><em>Proof.</em> Apply $*$ and use $(ST)^{*}=S^{*}T^{*}$ and $u^{*}=u^{-1}$: $(u+u^{*})^{*}=u^{*}+u=u+u^{*}$, $(u-u^{*})^{*}=u^{*}-u=-(u-u^{*})$, and $(uu^{*})^{*}=u^{**}u^{*}=uu^{*}$, which is $1$ for a unitary $u$. This is the computation of <em>Unitary Elements of an Involutive Algebra</em> carried out in the involutive algebra $(E,*)$.</p>
+<p><strong>Corollary (the Lie algebra of the unitary group).</strong> The skew-adjoint operators $E^{-}$ are the algebraic tangent space of $U(E)$ at the identity, and with the commutator they form a Lie algebra; the self-adjoint operators $E^{+}$ with the symmetrised product form a Jordan algebra, and the two are the Jordan–Lie pair of the involution of <em>Involutions of the Operator Algebra</em>.</p>
+<p><em>Proof.</em> The statements are <em>The Self-Adjoint Part of an Algebra</em> and <em>Unitary Elements of an Involutive Algebra</em> applied to $(E,*)$; for skew-adjoint $T$ and $S$ one has $[T,S]^{*}=[S^{*},T^{*}]=[-S,-T]=[S,T]=-[T,S]$, so a commutator of skew-adjoint operators is skew-adjoint.</p>
+<h2 id="the-two-pairings-and-the-unitary-groups">The Two Pairings and the Unitary Groups</h2>
+<p><strong>Theorem.</strong> The conjugation $c_{\sigma}(T)=\sigma T\sigma$ is an involutive automorphism of $E$ that carries the plain unitary group isomorphically onto the twisted one,</p>
+<p>$$
+c_{\sigma}\bigl(U(E)\bigr)=U(E,*_\sigma), \qquad c_{\sigma}\bigl(U(E,*_\sigma)\bigr)=U(E),
+$$</p>
+<p>and it carries $E^{+}$ onto $E^{+}_\sigma$ and $E^{-}$ onto $E^{-}_\sigma$.</p>
+<p><em>Proof.</em> The dictionary $T^{*_\sigma}=\sigma T^{*}\sigma$ of <em>The Adjoint in an Involutive Algebra</em> gives $c_{\sigma}(T^{*})=T^{*_\sigma}$, and $c_{\sigma}$ is multiplicative; hence $c_{\sigma}(T^{*}T)=c_{\sigma}(T^{*})c_{\sigma}(T)=T^{*_\sigma}c_{\sigma}(T)$, and $T^{*}T=\mathrm{id}$ is carried to $T^{*_\sigma}c_{\sigma}(T)=\mathrm{id}$, which is the unitarity of $c_{\sigma}(T)$ for the twisted pairing. The reverse implication is the same with $\sigma$ exchanged, and the fixed parts are carried because $c_{\sigma}$ commutes with the two involutions up to the dictionary.</p>
+<p><strong>Corollary.</strong> If the adjoint of $T$ commutes with $\sigma$ then $T$ is unitary for the plain pairing exactly when it is unitary for the twisted one, and then $c_{\sigma}(T)=T$.</p>
+<p><em>Proof.</em> On such a $T$ the two adjoints coincide by the corollary of <em>The Adjoint in an Involutive Algebra</em>, so the two unitarity conditions are the same equation.</p>
+<h2 id="the-unitary-elements-of-the-algebra">The Unitary Elements of the Algebra</h2>
+<p><strong>Theorem.</strong> The left regular representation $L : A \to E$, $a \mapsto L_a$, is an injective $k$-algebra homomorphism satisfying</p>
+<p>$$
+L_{\sigma(a)}=L_a^{*_\sigma} ;
+$$</p>
+<p>hence it restricts to an injective homomorphism of groups</p>
+<p>$$
+L : U(A,\sigma) \longrightarrow U(E,*_\sigma), \qquad u \longmapsto L_u,
+$$</p>
+<p>so the unitary elements of the algebra form a subgroup of the unitary operators, isomorphic to $U(A,\sigma)$.</p>
+<p><em>Proof.</em> Injectivity is $L_a=0 \Rightarrow a=L_a 1=0$. The intertwining identity is the corollary of <em>The Adjoint in an Involutive Algebra</em>, $L(\sigma(a))=L(a)^{*_\sigma}$. For $u \in U(A)$ one has $\sigma(u)u=1$ and $u\sigma(u)=1$, so $L_u^{*_\sigma}L_u=L_{\sigma(u)}L_u=L_{\sigma(u)u}=L_1=\mathrm{id}$ and similarly in the other order; hence $L_u$ is unitary for the twisted pairing. The restriction is injective because $L$ is, and it is a homomorphism because $L$ is multiplicative.</p>
+<p><strong>Corollary.</strong> The right regular representation $R : a \mapsto R_a$ is an injective anti-homomorphism carrying $U(A,\sigma)$ into $U(E,*_\sigma)$ as well, since $R_{\sigma(a)}=R_a^{*_\sigma}$; the two images are exchanged by the adjoint, and together they generate the two-sided representation of the algebra by unitary operators.</p>
+<p><em>Proof.</em> $R$ reverses products, $R_{ab}=R_bR_a$, and the identity $R_{\sigma(a)}=R_a^{*_\sigma}$ is the right-hand case of the adjoint theorem; the arguments of the preceding theorem then apply with the order reversed.</p>
+<p><strong>Corollary.</strong> The subgroup generated by the left and the right regular images of $U(A,\sigma)$ is a subgroup of $U(E,*_\sigma)$, and the two-sided operators $T_{a,b}$ with $a$ and $b$ unitary are unitary operators of the twisted pairing.</p>
+<p><em>Proof.</em> A product of unitary operators is unitary, and $T_{a,b}=L_aR_b$ is a product of two unitary operators, hence unitary; the general two-sided statement is <em>The Signed Adjoint Sandwich on an Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The matrix algebra with the transpose.</strong> For $A=M_n(k)$ with $\sigma$ the transpose and $\tau=\operatorname{Tr}$, a matrix $X$ is unitary in the algebra exactly when $X^{\mathsf{T}}X=1$, that is when $X$ is orthogonal over $k$; the left and the right multiplications by such an $X$ are unitary operators for the coefficient pairing $\{X,Y\}=\sum X_{ij}Y_{ij}$. Over $\mathbb{R}$ the group is the orthogonal group of order $n$, and over $\mathbb{C}$ with the conjugate transpose it is the unitary group, which is Part II.</p>
+<p><strong>(b) The group algebra.</strong> For $A=k[G]$ with $\sigma(g)=g^{-1}$, every group element is unitary, $U(A)=G$, and the left regular representation $g \mapsto L_g$ is an injective homomorphism of $G$ into the unitary operators for the pairing $\{g,h\}=\delta_{g,h}$; the right regular representation gives the other copy, and the two-sided operators $T_{g,h}$ with $g,h \in G$ are unitary operators for this pairing as well.</p>
+<p><strong>(c) The trivial involution.</strong> For $\sigma=\mathrm{id}$ the twisted pairing is the plain one, the two unitary groups coincide, and the unitary elements are the elements with $u^{2}=1$; the unitary operators are the operators with $T^{*}=T^{-1}$ for the plain pairing.</p>
+<p><strong>(d) The identity and the scalars.</strong> The identity operator is unitary in every case, and a scalar operator $\lambda\,\mathrm{id}$ is unitary exactly when $\lambda^{2}=1$; the scalars therefore contribute the two-element group $\{\pm\mathrm{id}\}$ in characteristic not two, and this is the kernel of the map from the unitary operators to the projective ones, whose study belongs to the representations of the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>An operator $T \in E=\operatorname{End}_k(A)$ is <strong>unitary</strong> for the involution $*$ when $T^{*}T=TT^{*}=\mathrm{id}$, equivalently when it is invertible with $T^{*}=T^{-1}$, and the unitary operators form a subgroup $U(E)$ of $E^{\times}$ — the fixed subgroup of the order-two automorphism $\theta(T)=(T^{*})^{-1}$. Beside it sit the self-adjoint operators $E^{+}$, with the symmetrised product a Jordan algebra, and the skew-adjoint operators $E^{-}$, with the commutator a Lie algebra and the tangent space of $U(E)$ at the identity; the unitary $u$ decomposes as $u=\tfrac12(u+u^{*})+\tfrac12(u-u^{*})$ into a self-adjoint and a skew-adjoint part. The twisted pairing gives a second unitary group $U(E,*_\sigma)$, and the conjugation $c_{\sigma}(T)=\sigma T\sigma$ is an isomorphism $U(E)\to U(E,*_\sigma)$ carrying the fixed parts accordingly. The left regular representation is an injective $*$-homomorphism $(A,\sigma)\to(E,*_\sigma)$, so it carries the unitary elements $U(A,\sigma)$ isomorphically onto a subgroup of the unitary operators, and the right representation gives the other copy; the two-sided unitary operators of the twisted pairing include all products $T_{a,b}=L_aR_b$ with $a,b$ unitary. The operator unitary group is in general larger than the image of the elements, and its analytic reading — the norm, the positivity, the Hilbert-space unitary group — is Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E=\operatorname{End}_k(A)$</td>
+<td>the operator algebra</td>
+</tr>
+<tr>
+<td>$T^{*}$, $T^{*_\sigma}$</td>
+<td>the adjoints for the plain and the twisted pairings</td>
+</tr>
+<tr>
+<td>$U(E)=U(E,*)$</td>
+<td>the unitary operators, $T^{*}T=TT^{*}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$U(E,*_\sigma)$</td>
+<td>the unitary operators for the twisted pairing</td>
+</tr>
+<tr>
+<td>$\theta(T)=(T^{*})^{-1}$</td>
+<td>the order-two automorphism whose fixed subgroup is $U(E)$</td>
+</tr>
+<tr>
+<td>$E^{+}$, $E^{-}$</td>
+<td>the self-adjoint and the skew-adjoint operators</td>
+</tr>
+<tr>
+<td>$E^{+}_\sigma$, $E^{-}_\sigma$</td>
+<td>the same for the twisted involution</td>
+</tr>
+<tr>
+<td>$c_{\sigma}(T)=\sigma T\sigma$</td>
+<td>the conjugation, an isomorphism $U(E)\to U(E,*_\sigma)$</td>
+</tr>
+<tr>
+<td>$L$, $R$</td>
+<td>the left and the right regular representations</td>
+</tr>
+<tr>
+<td>$L_{\sigma(a)}=L(a)^{*_\sigma}$, $R_{\sigma(a)}=R(a)^{*_\sigma}$</td>
+<td>the regular representations as <code>*</code>-representations</td>
+</tr>
+<tr>
+<td>$U(A)=U(A,\sigma)$</td>
+<td>the unitary elements of the algebra, mapped into $U(E,*_\sigma)$</td>
+</tr>
+<tr>
+<td>$u=\tfrac12(u+u^{*})+\tfrac12(u-u^{*})$</td>
+<td>the self-adjoint and skew-adjoint decomposition of a unitary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the unitary elements, the self-adjoint part and the decomposition of a unitary element.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for the unitary group of an algebra with involution and the operators of the regular representation.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the unitary group of an algebra with involution and its Lie algebra.</li>
+<li>K. R. Goodearl and R. B. Warfield, <em>An Introduction to Noncommutative Noetherian Rings</em> (Cambridge University Press, 1989), for the endomorphism algebra of a module, its involution and the unitary operators it defines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

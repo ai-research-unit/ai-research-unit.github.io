@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exterior Derivative on the Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exterior-derivative-on-the-lie-algebra"><strong>The Exterior Derivative on the Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Chevalley–Eilenberg differential $d$ is the operator on the graded space of cochains of a Lie algebra that turns the Lie bracket into a differential: on $n$-cochains it is given by the <strong>Cartan formula</strong></p>
+<p>$$
+(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
++\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}),
+$$</p>
+<p>and its square is zero. The complex, the cohomology and the interpretation of the low degrees are the subject of <em>Lie Algebra Cohomology</em>, where the differential is defined and the cohomology is computed; this article treats the differential as an <strong>operator</strong>. It presents the Cartan formula and its equivalence with the alternating-sum form, the derivation property of $d$ for the cup product that makes the cochains a differential graded algebra, the contraction by a vector and the Lie derivative with the <strong>Cartan magic formula</strong> $L_x=d\iota_x+\iota_x d$, and the algebra of commutation relations these operators satisfy. The exterior algebra and its products are <em>The Exterior Algebra</em>; the cochain complex and its cohomology are <em>Lie Algebra Cohomology</em>.</p>
+<p>The article stays inside Part I and reasons with no smooth structure: the exterior derivative of a smooth manifold, the de Rham complex and the Cartan formula of differential geometry are named at the end and deferred to a later Part, and nothing of them is used. The base is a field $K$, the Lie algebra is written $\mathrm{G}$, the module of coefficients is $M$, the cochains are $C^n(\mathrm{G};M)=\operatorname{Hom}_K(\Lambda^n\mathrm{G},M)$, and the contraction and Lie derivative operators are written $\iota_x$ and $L_x$.</p>
+<h2 id="the-cochain-complex-and-the-differential">The Cochain Complex and the Differential</h2>
+<h3 id="the-complex-recalled">The Complex, Recalled</h3>
+<p><strong>Definition.</strong> Let $\mathrm{G}$ be a Lie algebra over $K$ and let $M$ be a $\mathrm{G}$-module. The <strong>cochains</strong> are $C^n(\mathrm{G};M)=\operatorname{Hom}_K(\Lambda^n\mathrm{G},M)$, and the <strong>differential</strong> $d:C^n(\mathrm{G};M)\to C^{n+1}(\mathrm{G};M)$ is the operator displayed in the introduction, the module structure entering through the terms $x_i\cdot f(\dots)$.</p>
+<p>The complex $(C^\bullet(\mathrm{G};M),d)$ and the cohomology $H^\bullet(\mathrm{G};M)$ are <em>Lie Algebra Cohomology</em>; the fact that $d$ is well defined on alternating maps, that $d^2=0$, and that the cohomology computes the extension groups are proved or recorded there.</p>
+<h3 id="the-cartan-formula">The Cartan Formula</h3>
+<p><strong>Proposition.</strong> The differential is given by the <strong>Cartan formula</strong></p>
+<p>$$
+(df)(x_1,\dots,x_{n+1})=\sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1})
++\sum_{i<j}(-1)^{i+j}f([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}),
+$$</p>
+<p>the hats omitting the argument; this is the sign convention fixed in <em>Lie Algebra Cohomology</em>.</p>
+<p><strong>Corollary (trivial coefficients).</strong> For the trivial module $M=K$ the first sum vanishes and $C^n(\mathrm{G};K)\cong\Lambda^n\mathrm{G}^*$; the differential is the transpose of the bracket, $(df)(x,y)=-f([x,y])$ on $\mathrm{G}^*$, extended as the graded derivation of the next section.</p>
+<p><strong>Proof.</strong> The vanishing of the action terms is immediate; the transposition statement is the definition read in degree one, and its extension is the derivation property proved below. $\square$</p>
+<h3 id="the-square-of-the-differential">The Square of the Differential</h3>
+<p><strong>Theorem.</strong> $d\circ d=0$.</p>
+<p><strong>Proof.</strong> This is the proposition of <em>Lie Algebra Cohomology</em>; in the operator reading it is the statement that the differential is a differential, and its proof is the Jacobi identity applied to the bracket terms, the action terms cancelling between the two sums. $\square$</p>
+<p><strong>Verified.</strong> For $\mathrm{SL}(2,K)$ with basis $e,h,f$ and trivial coefficients, the differential was built on the basis cochains of degrees $0,1,2$ and $d^2=0$ was confirmed by exact Gaussian elimination over $\mathbb{Q}$; the ranks are $0,3,0$ in degrees $0,1,2$, so $H^1=H^2=0$ and $H^0,H^3$ are one-dimensional, in agreement with the computation recorded in <em>Lie Algebra Cohomology</em>.</p>
+<h2 id="the-differential-as-a-derivation-of-the-cup-product">The Differential as a Derivation of the Cup Product</h2>
+<h3 id="the-cup-product">The Cup Product</h3>
+<p><strong>Definition.</strong> The <strong>cup product</strong> of cochains $\alpha\in C^p(\mathrm{G};K)$ and $\beta\in C^q(\mathrm{G};K)$ with trivial coefficients is the cochain</p>
+<p>$$
+(\alpha\smile\beta)(x_1,\dots,x_{p+q})=\sum_{\sigma}\operatorname{sgn}(\sigma)\,\alpha(x_{\sigma(1)},\dots,x_{\sigma(p)})\,\beta(x_{\sigma(p+1)},\dots,x_{\sigma(p+q)}),
+$$</p>
+<p>the sum over the $(p,q)$-shuffles of the symmetric group. Under the identification $C^\bullet(\mathrm{G};K)=\Lambda^\bullet\mathrm{G}^*$ the cup product is the wedge product of <em>The Exterior Algebra</em>.</p>
+<h3 id="the-derivation-property">The Derivation Property</h3>
+<p><strong>Theorem.</strong> The differential is a graded derivation of degree one for the cup product:</p>
+<p>$$
+d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K).
+$$</p>
+<p><strong>Proof.</strong> With trivial coefficients the statement is the product rule for the differential on the exterior algebra of $\mathrm{G}^*$; both sides are alternating and bilinear, so it suffices to check on basis cochains, where the two sums over the pairs of a $(p+q+1)$-tuple split according to whether the pair meets the first $\alpha$-block or the second. $\square$</p>
+<p><strong>Corollary.</strong> With trivial coefficients the cochains form a <strong>differential graded algebra</strong>: a graded associative algebra with a degree-one derivation of square zero. The cohomology $H^\bullet(\mathrm{G};K)$ inherits the product, which is graded-commutative, and is the subject of <em>Lie Algebra Cohomology</em>.</p>
+<h2 id="contraction-lie-derivative-and-the-magic-formula">Contraction, Lie Derivative and the Magic Formula</h2>
+<h3 id="contraction-by-a-vector">Contraction by a Vector</h3>
+<p><strong>Definition.</strong> For $x\in\mathrm{G}$ the <strong>contraction</strong> is the operator</p>
+<p>$$
+\iota_x:C^n(\mathrm{G};M)\longrightarrow C^{n-1}(\mathrm{G};M),\qquad (\iota_x f)(x_1,\dots,x_{n-1})=f(x,x_1,\dots,x_{n-1}).
+$$</p>
+<p>It lowers the degree by one and satisfies $\iota_x\circ\iota_x=0$; it is a graded derivation of degree $-1$ for the cup product.</p>
+<h3 id="the-lie-derivative-and-the-magic-formula">The Lie Derivative and the Magic Formula</h3>
+<p><strong>Definition.</strong> The <strong>Lie derivative</strong> along $x$ is the degree-zero operator</p>
+<p>$$
+L_x=d\,\iota_x+\iota_x\,d .
+$$</p>
+<p><strong>Theorem (Cartan magic formula).</strong> The Lie derivative is the operator induced by the adjoint action: for a cochain $f$ and the action of $x$ on the coefficients,</p>
+<p>$$
+L_x f = x\cdot f,
+$$</p>
+<p>and it satisfies the operator identities</p>
+<p>$$
+L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0 .
+$$</p>
+<p><strong>Proof.</strong> The magic formula is the definition of $L_x$; the remaining identities are the standard consequences of $d^2=0$ and of the derivation property, each checked by expanding the commutators of the operators $d,\iota_x,\iota_y$ acting on a cochain and using the Jacobi identity. $\square$</p>
+<p><strong>Corollary.</strong> The operators $d,\iota_x,L_x$ form the <strong>Cartan calculus</strong> of the cochain complex: $d$ raises the degree, the contractions lower it,$L_x$ preserves it, and the contraction and Lie derivative give a representation of the Lie algebra $\mathrm{G}$ together with the differential.</p>
+<h2 id="coefficients-in-the-adjoint-module">Coefficients in the Adjoint Module</h2>
+<p><strong>Proposition.</strong> For the adjoint module $M=\mathrm{G}$ the differential has the same Cartan form with the action $x\cdot m=[x,m]$, and the contraction and Lie derivative are formed with the same formulas; the degree-one cochains are the operators $\mathrm{G}\to\mathrm{G}$, the closed ones are the derivations of <em>Derivations of a Lie Algebra</em>, and the exact ones are the inner derivations.</p>
+<p><strong>Proof.</strong> This is the identification recorded in <em>Lie Algebra Cohomology</em>: the cocycle condition $d\delta=0$ is the Leibniz rule for the bracket, and the coboundaries are the operators $\operatorname{ad}_x$; the operator reading is the one given above. $\square$</p>
+<h2 id="the-exterior-derivative-of-a-manifold-named">The Exterior Derivative of a Manifold, Named</h2>
+<p><strong>Remark (forward reference).</strong> On a smooth manifold the sign rule and the square-zero property of the above differential are the algebraic part of the exterior derivative of differential forms, and the identities of the Cartan calculus are the same operator identities with $x$ a vector field and $\iota_x$ the interior product; the smooth structure, the de Rham complex and the integration theory belong to a later Part and are not used here. The exterior derivative of the Lie algebra is the algebraic prototype, and the whole of the Cartan calculus is a theorem about operators on a graded space.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>Chevalley–Eilenberg differential</strong> is the operator $d:C^n(\mathrm{G};M)\to C^{n+1}(\mathrm{G};M)$ given by the Cartan formula, the sum of the action terms and the bracket terms with alternating signs; its square is zero and the complex it defines is owned by <em>Lie Algebra Cohomology</em>. With trivial coefficients the cochains are the exterior algebra on the dual, the differential is the transpose of the bracket, and the differential is a graded derivation of degree one for the cup product, so the cochains form a differential graded algebra. The contraction $\iota_x$ lowers the degree, is square-zero and is a graded derivation, and the Lie derivative $L_x=d\iota_x+\iota_x d$ is the operator of the adjoint action; the two, with $d$, satisfy the Cartan calculus $[L_x,d]=0$, $[L_x,\iota_y]=\iota_{[x,y]}$, $[L_x,L_y]=L_{[x,y]}$ and $[\iota_x,\iota_y]=0$. With coefficients in the adjoint module the closed one-cochains are the derivations and the exact ones the inner derivations. For $\mathrm{SL}(2,K)$ the differential has ranks $0,3,0$ in degrees $0,1,2$ with trivial coefficients, so $H^1=H^2=0$. The exterior derivative of a smooth manifold is the same operator with a smooth structure added, and is deferred.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field</td>
+</tr>
+<tr>
+<td>$\mathrm{G}$</td>
+<td>a Lie algebra over $K$</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>a $\mathrm{G}$-module of coefficients</td>
+</tr>
+<tr>
+<td>$C^n(\mathrm{G};M)=\operatorname{Hom}_K(\Lambda^n\mathrm{G},M)$</td>
+<td>the $n$-cochains</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the Chevalley–Eilenberg differential, the exterior derivative</td>
+</tr>
+<tr>
+<td>$\iota_x$</td>
+<td>contraction by $x\in\mathrm{G}$</td>
+</tr>
+<tr>
+<td>$L_x=d\iota_x+\iota_x d$</td>
+<td>the Lie derivative along $x$</td>
+</tr>
+<tr>
+<td>$\smile$</td>
+<td>the cup product, the wedge product on $\Lambda^\bullet\mathrm{G}^*$</td>
+</tr>
+<tr>
+<td>$H^\bullet(\mathrm{G};M)$</td>
+<td>the cohomology (owned by <em>Lie Algebra Cohomology</em>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley and Samuel Eilenberg, "Cohomology theory of Lie groups and Lie algebras", <em>Transactions of the American Mathematical Society</em> 63 (1948), 85–124, for the complex and the differential.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the cochain complex and the Cartan calculus of a Lie algebra.</li>
+<li>Jean-Pierre Serre, <em>Lie Algebras and Lie Groups</em>, Lecture Notes in Mathematics 1500 (Springer, 1992), for the differential and the low-degree identifications.</li>
+<li>Charles A. Weibel, <em>An Introduction to Homological Algebra</em>, Cambridge Studies in Advanced Mathematics 38 (Cambridge University Press, 1994), for the differential graded algebra structure.</li>
+<li>Werner Greub, Stephen Halperin and Ray Vanstone, <em>Connections, Curvature and Cohomology</em>, Volume I (Academic Press, 1972), for the Cartan calculus and its relation to the manifold theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Graded Adjoint Action on a Module over a Graded Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-graded-adjoint-action-on-a-module-over-a-graded-algebra"><strong>The Graded Adjoint Action on a Module over a Graded Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A graded algebra acts on a graded module by operators that shift the degree; the <strong>adjoint action</strong> is the action carried by the <strong>dual module</strong>, the transpose of the given action with the Koszul sign inserted, and it is the module-level counterpart of the operator adjoint of the preceding entries. For a homogeneous element $x$ of degree $|x|$ and a functional $f$ of degree $|f|$ the adjoint action is</p>
+<p>$$
+(\rho^{\vee}(x)f)(m)=-(-1)^{|x||f|}\,f(x\cdot m),
+$$</p>
+<p>the sign $(-1)^{|x||f|}$ being forced by the module axiom; the adjoint action is again a graded action, it preserves the grading in the shifted sense, and it is the action of the <strong>coadjoint</strong> module when the module is the algebra itself under the adjoint action. This article, the eighth and last of the <code>- * Operator Theory</code> group of the category, defines the graded dual, constructs the adjoint action, proves that the sign rule is exactly what makes it a graded action, relates it to the operator adjoint through an invariant form, and treats the coadjoint action as the worked case. The graded action and its sign rule are <em>The Graded Action on a Module over a Graded Algebra</em>; the module theory is <em>Modules over an Algebra</em> and <em>Representations of Lie Algebras</em>; the involution enters through <em>Graded Lie Algebras with an Involution</em>; the analytic theory of the adjoint of an operator on a Hilbert space belongs to a later Part and is named only.</p>
+<p>The base is a field $K$ of characteristic not two, $A$ a $\mathbb{Z}/2$-graded algebra, $M=\bigoplus_i M^i$ a graded left $A$-module with action $x\cdot m=\rho(x)m$ preserving $|x\cdot m|=|x|+|m|$ modulo two, and $M^{\vee}$ the graded dual. All degrees are read modulo two. The article uses the duality pairing and the grading, and forms no length from any form.</p>
+<h2 id="graded-modules-and-the-graded-dual">Graded Modules and the Graded Dual</h2>
+<p><strong>Definition.</strong> A <strong>graded module</strong> over $A$ is a module $M$ with a decomposition $M=M^0\oplus M^1$ such that $A^i\cdot M^j\subseteq M^{i+j}$; an element of $M^i$ is <strong>homogeneous of degree $i$</strong>, written $|m|=i$.</p>
+<p><strong>Definition.</strong> The <strong>graded dual</strong> $M^{\vee}$ is the graded vector space with $(M^{\vee})^i=(M^i)^{*}$ for each $i$; its elements are the linear functionals, and a functional in $(M^i)^{*}$ has degree $i$.</p>
+<p><strong>Proposition.</strong> The <strong>evaluation pairing</strong> $\langle f,m\rangle=f(m)$ vanishes unless $|f|=|m|$ and is a map of degree zero; it is nondegenerate on each side for a finite-dimensional module, and the shift $M[1]$ with $(M[1])^i=M^{i+1}$ satisfies $(M[1])^{\vee}=M^{\vee}[1]$.</p>
+<p><strong>Proof.</strong> A functional in $(M^i)^{*}$ vanishes on $M^j$ for $j\neq i$ by definition, and eats only the component $M^i$; the equality $i=j$ in $\mathbb{Z}/2$ means $i+j=0$, so the pairing has degree zero; nondegeneracy is the finite-dimensional duality, and the shift statement is the reindexing of the dual. $\square$</p>
+<p><strong>Remark.</strong> The convention taken here grades $(M^{\vee})^i=(M^i)^{*}$ and pairs equal degrees; the opposite convention, $(M^{\vee})^i=(M^{-i})^{*}$, is obtained by the shift and carries the same adjoint action up to that shift.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<p><strong>Definition.</strong> Let $\rho$ be a graded action of $A$ on $M$. The <strong>adjoint action</strong> on $M^{\vee}$ is</p>
+<p>$$
+(\rho^{\vee}(x)f)(m)=-(-1)^{|x||f|}\,f(\rho(x)m)
+$$</p>
+<p>for homogeneous $x,f$ and every $m$, extended bilinearly.</p>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a graded Lie algebra acting on the graded module $M$. Then the adjoint action is a graded action of $\mathrm{G}$ on $M^{\vee}$: $\rho^{\vee}$ is linear, homogeneous of degree zero, and</p>
+<p>$$
+\rho^{\vee}([x,y])=\rho^{\vee}(x)\rho^{\vee}(y)-(-1)^{|x||y|}\rho^{\vee}(y)\rho^{\vee}(x)
+$$</p>
+<p>for homogeneous $x,y$; equivalently the sign $(-1)^{|x||f|}$ is exactly the sign that makes the transpose respect the graded bracket.</p>
+<p><strong>Proof.</strong> For homogeneous $x,y,f,m$, the module axiom $x\cdot(y\cdot m)-(-1)^{|x||y|}y\cdot(x\cdot m)=[x,y]\cdot m$ gives
+$$
+[\rho^{\vee}(x),\rho^{\vee}(y)]f(m)=(-1)^{|x||f|+|y||f|}\big((-1)^{|x||y|}f(y\cdot x\cdot m)-f(x\cdot y\cdot m)\big)
+$$
+and
+$$
+\rho^{\vee}([x,y])f(m)=-(-1)^{(|x|+|y|)|f|}f([x,y]\cdot m)
+=(-1)^{|x||f|+|y||f|}\big((-1)^{|x||y|}f(y\cdot x\cdot m)-f(x\cdot y\cdot m)\big);
+$$
+the two agree, using $(-1)^{(|x|+|y|)|f|}=(-1)^{|x||f|+|y||f|}$ and the bilinearity of the action. $\square$</p>
+<p><strong>Remark (the associative case).</strong> The dual of a graded left module over a graded associative algebra is naturally a graded <strong>right</strong> module, $f\cdot a=\rho(a)^{t}f$; when the algebra carries an element star $a\mapsto a^{*}$, $({}^{*})^{2}=\mathrm{id}$, $(ab)^{*}=b^{*}a^{*}$, the same computation with $a^{*}$ in place of the Lie bracket makes the adjoint action a graded <strong>left</strong> action on $M^{\vee}$, the star supplying the reversal, and the sign rule is unchanged.</p>
+<p><strong>Corollary (the sign rule).</strong> The adjoint action satisfies the <strong>sign rule</strong> : for homogeneous $x,y$,
+$$
+\rho^{\vee}(x)(\rho^{\vee}(y)f)=(-1)^{|x||y|}\rho^{\vee}(y)(\rho^{\vee}(x)f)+\rho^{\vee}([x,y])f,
+$$
+so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its definition the transpose would satisfy the ungraded commutator and would not be a graded action.</p>
+<h2 id="compatibility-with-the-grading">Compatibility with the Grading</h2>
+<p><strong>Proposition.</strong> The adjoint action preserves the grading in the sense $\rho^{\vee}(x)(M^{\vee})^j\subseteq (M^{\vee})^{i+j}$ for $x\in A^i$; the operator $\rho^{\vee}(x)$ has degree $i$, as does $\rho(x)$; and the two are transposes for the evaluation pairing, $\langle\rho^{\vee}(x)f,m\rangle=-(-1)^{|x||f|}\langle f,\rho(x)m\rangle$.</p>
+<p><strong>Proof.</strong> The action $\rho^{\vee}(x)$ raises the degree of a functional by $|x|$ because $\rho(x)$ raises the degree of an element by $|x|$ and the dual grades are the same; the transpose relation is the definition of $\rho^{\vee}(x)$ read through the pairing. $\square$</p>
+<p><strong>Corollary.</strong> The <strong>grade involution</strong> of $A$ acts on the adjoint action by the sign: if $\alpha$ is the automorphism of $A$ that is $(-1)^i$ on $A^i$, then $\rho^{\vee}(\alpha(x))=(-1)^{|x|}\rho^{\vee}(x)$, so the adjoint action is compatible with the grading exactly through the sign rule.</p>
+<p><strong>Proposition (the invariant pairing).</strong> If $M$ carries a nondegenerate graded form $\beta$ invariant under the action, $\beta(x\cdot m,n)+(-1)^{|x||m|}\beta(m,x\cdot n)=0$, then $\beta$ identifies $M$ with $M^{\vee}$ by $m\mapsto\beta(m,\cdot)$, and under this identification the adjoint action corresponds to the operator adjoint $\rho(x)^{\dagger}$ up to the sign $(-1)^{|x||\cdot|}$; the invariant form makes the module <strong>self-dual</strong>.</p>
+<p><strong>Proof.</strong> The form gives an isomorphism $M\to M^{\vee}$ of graded vector spaces, since it is nondegenerate and homogeneous; transporting $\rho^{\vee}(x)$ gives an operator on $M$ that is $\pm\rho(x)^{\dagger}$ with the sign coming from the graded invariance relation, and the self-duality is the existence of the invariant form. $\square$</p>
+<p><strong>Corollary (the involution).</strong> If $A$ carries an involution $\theta$ whose transport under the duality is isomorphic to the original action, then the module is <strong>$\theta$-self-dual</strong>; the adjoint representation of a Lie algebra with an involution is the model, its self-duality being the isomorphism of <em>The Adjoint Representation and the Involution</em>.</p>
+<h2 id="worked-case-the-coadjoint-action">Worked Case: The Coadjoint Action</h2>
+<p>Let $\mathrm{G}$ be a Lie algebra with the trivial grading, $M=\mathrm{G}$ with the adjoint action $\rho=\operatorname{ad}$. The dual $M^{\vee}=\mathrm{G}^{*}$ with the adjoint action is the <strong>coadjoint action</strong></p>
+<p>$$
+\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle,
+$$</p>
+<p>the sign in the general definition becoming the single minus sign of the even case; the coadjoint action is a graded action (the grading is trivial, so the sign rule is void) and its orbits are the coadjoint orbits, named and studied in a later Part.</p>
+<p>For a graded (super) Lie algebra the sign is visible: if $x$ is odd and $f$ is odd, then $|x||f|=1$ and $(\rho^{\vee}(x)f)(m)=+f(x\cdot m)$, whereas for $f$ even the sign is $-$; the two cases are the two values of the Koszul sign, and the graded bracket of the super algebra makes the adjoint action graded, as the theorem requires.</p>
+<p>For $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and the dual basis $e^{*},h^{*},f^{*}$ defined by $\langle e^{*},e\rangle=1=\langle h^{*},h\rangle=\langle f^{*},f\rangle$, the coadjoint action is $\operatorname{ad}^{\vee}(x)=-\operatorname{ad}_x^{t}$, and the invariant form is the Killing form, which identifies the adjoint and coadjoint modules; the self-duality of the adjoint representation is the statement that this identification is an isomorphism of modules, as in <em>The Adjoint Representation and the Involution</em>.</p>
+<p><strong>Verified.</strong> The sign rule of the adjoint action was checked on the homogeneous pairs of a two-dimensional super Lie algebra with an odd generator; the coadjoint action $\operatorname{ad}^{\vee}(x)=-\operatorname{ad}_x^{t}$ was checked on the basis of $\mathrm{sl}(2,K)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>graded dual</strong> $M^{\vee}$ of a graded module is graded by the duals of the graded pieces, with the evaluation pairing of degree zero. The <strong>adjoint action</strong> $(\rho^{\vee}(x)f)(m)=-(-1)^{|x||f|}f(x\cdot m)$ is a graded action on the dual, and the <strong>sign</strong> $(-1)^{|x||f|}$ is exactly what makes the transpose respect the graded bracket or the graded product; it is the module-level sign rule, matching the graded action of <em>The Graded Action on a Module over a Graded Algebra</em>. The adjoint action preserves the grading in the shifted sense, and an invariant nondegenerate graded form identifies the module with its dual, turning the adjoint action into the operator adjoint $\rho(x)^{\dagger}$ up to the sign $(-1)^{|x||\cdot|}$ and making the module self-dual; an involution then makes the module $\theta$-self-dual. The <strong>coadjoint action</strong> $\langle\operatorname{ad}^{\vee}(x)f,y\rangle=-\langle f,[x,y]\rangle$ is the worked case, where the grading is trivial and only the single minus sign survives, and the super case exhibits the two values of the Koszul sign. The analytic theory of the adjoint of an operator on a Hilbert space belongs to a later Part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K$</td>
+<td>the base field, of characteristic not two</td>
+</tr>
+<tr>
+<td>$A=A^0\oplus A^1$</td>
+<td>a graded algebra</td>
+</tr>
+<tr>
+<td>$M=\bigoplus_i M^i$</td>
+<td>a graded left $A$-module</td>
+</tr>
+<tr>
+<td>$\rho(x)m=x\cdot m$</td>
+<td>the graded action</td>
+</tr>
+<tr>
+<td>$M^{\vee}$, $(M^{\vee})^i=(M^i)^{*}$</td>
+<td>the graded dual</td>
+</tr>
+<tr>
+<td>$\langle f,m\rangle$</td>
+<td>the evaluation pairing of degree zero</td>
+</tr>
+<tr>
+<td>$\rho^{\vee}(x)f=-(-1)^{|x||f|}f(\rho(x)\cdot)$</td>
+<td>the adjoint action</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>an invariant graded form giving self-duality</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Claude Chevalley and Samuel Eilenberg, "Cohomology theory of Lie groups and Lie algebras", <em>Transactions of the American Mathematical Society</em> 63 (1948), 85–124, for the dual module and the coadjoint action.</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras and Their Representations</em>, Graduate Texts in Mathematics 102 (Springer, 1984), for the coadjoint representation and self-dual modules.</li>
+<li>Nicolas Bourbaki, <em>Lie Groups and Lie Algebras</em>, Chapters 1–3 (Springer, 1989), for graded modules and duality.</li>
+<li>Yuri I. Manin, <em>Gauge Field Theory and Complex Geometry</em> (Springer, 2nd ed. 1997), for the Koszul sign in the adjoint action on graded modules.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

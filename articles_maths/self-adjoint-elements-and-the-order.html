@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint Elements and the Order — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-elements-and-the-order"><strong>Self-Adjoint Elements and the Order</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>self-adjoint elements</strong> of an ordered involutive algebra are the fixed points of the involution, $a = a^{*}$, and they are exactly the elements whose <strong>left multiplication</strong> operators are self-adjoint for the trace form,</p>
+<p>$$
+(L_a)^{*} = L_{a^{*}} ,
+$$</p>
+<p>so that $L_a = (L_a)^{*}$ if and only if $a = a^{*}$. The article is the element-level companion of <em>The Adjoint of a Positive Operator</em>: the order of the ordered involutive algebra is transported, by the map $a\mapsto L_a$, into the <strong>quadratic order</strong> of the operators, and the transport is an <strong>order isomorphism</strong> on the self-adjoint part,</p>
+<p>$$
+a\geq0 \iff L_a\geq0 \iff \langle L_ax,x\rangle\geq0 \ \text{ for every } x \iff \varphi(a)\geq0 \ \text{ for every positive functional } \varphi ,
+$$</p>
+<p>so that the order of the self-adjoint elements, the order of their multiplication operators and the order of the positive functionals are the same order read in three ways. The self-adjointness is what makes the three readings compatible: on a general element the left multiplication is not self-adjoint and the quadratic form need not be real, whereas on the self-adjoint part the quadratic form of $L_a$ is the <strong>real</strong> form $x\mapsto\langle ax,x\rangle$, and its positivity is the positivity of $a$.</p>
+<p>The article states the adjoint of the left multiplication, the transport of the order, the correspondence between the self-adjoint elements and the self-adjoint operators, and the extremal order-theoretic facts: the order unit, the Jordan decomposition, the order ideals and the <strong>self-adjointness</strong> of the order isomorphisms. It is thus the bridge between the element theory of <em>Hermitian Elements and the Order Unit</em> and the operator theory of <em>Positive Operators on an Ordered Space</em>, and it prepares the adjoints of the left multiplications and the signed operators that follow.</p>
+<p>The Hermitian elements and the order unit are <em>Hermitian Elements and the Order Unit</em>; the adjoint and the order of the operators are <em>The Adjoint of a Positive Operator</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; the positive functionals are <em>The Cone of Positive Functionals</em> and <em>Positive Functionals and Self-Adjointness</em>; the forms are <em>Positive Definite Forms and the Order</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; the ordered involution is <em>Ordered Involutive Algebras</em>; and the concrete adjoints are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>, <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<h2 id="the-adjoint-of-the-left-multiplication">The Adjoint of the Left Multiplication</h2>
+<p><strong>Definition.</strong> For $a\in A$ the <strong>left multiplication</strong> is $L_a : x\mapsto ax$ and the <strong>right multiplication</strong> is $R_a : x\mapsto xa$; the <strong>trace form</strong> is $\langle x,y\rangle = \operatorname{tr}(x^{*}y)$ when $A$ carries a faithful trace, and the <strong>adjoint</strong> is taken with respect to it.</p>
+<p><strong>Proposition (the adjoint of the one-sided multiplications).</strong> The adjoints of the one-sided multiplications are</p>
+<p>$$
+(L_a)^{*} = L_{a^{*}}, \qquad (R_a)^{*} = R_{a^{*}} ;
+$$</p>
+<p>consequently $L_a$ is <strong>self-adjoint</strong> if and only if $a$ is self-adjoint, and the map $a\mapsto L_a$ is a <strong>*-homomorphism</strong>: $L_{ab} = L_aL_b$ and $L_{a^{*}} = (L_a)^{*}$, so it carries the involution of the algebra to the adjoint involution of the operators.</p>
+<p><em>Proof.</em> $\langle L_ax,y\rangle = \operatorname{tr}((ax)^{*}y) = \operatorname{tr}(x^{*}a^{*}y) = \langle x,a^{*}y\rangle = \langle x,L_{a^{*}}y\rangle$, so $(L_a)^{*} = L_{a^*}$; the right-handed computation is the same with the factors in the other order. The *-homomorphism property is the associativity $L_{ab} = L_aL_b$ together with the adjoint statement.</p>
+<p><strong>Proposition (the decomposition of the left multiplication).</strong> For every $a$ the operator $L_a$ decomposes as</p>
+<p>$$
+L_a = L_{\operatorname{Re}a} + iL_{\operatorname{Im}a} ,
+$$</p>
+<p>the sum of two self-adjoint operators, and the symmetrised combination $L_a + L_{a^{*}} = 2L_{\operatorname{Re}a}$ is self-adjoint with the quadratic form $x\mapsto 2\operatorname{Re}\langle ax,x\rangle$; the operator $L_a$ is <strong>normal</strong> exactly when $a$ is normal, $(L_a)^{*}L_a = L_a(L_a)^{*} = L_{a^{*}a}$.</p>
+<p><em>Proof.</em> The decomposition is the linearity of $a\mapsto L_a$ and the fact that $\operatorname{Re}a$, $\operatorname{Im}a$ are self-adjoint; the quadratic form is the computation $\langle (L_a + L_{a^*})x,x\rangle = \langle ax,x\rangle + \langle x,ax\rangle = 2\operatorname{Re}\langle ax,x\rangle$; the normality is the *-homomorphism property applied to $a^{*}a = aa^{*}$.</p>
+<h2 id="the-order-of-the-self-adjoint-elements">The Order of the Self-Adjoint Elements</h2>
+<p><strong>Theorem (the order of the self-adjoint elements is the order of their operators).</strong> For self-adjoint $a,b$ the following are equivalent:</p>
+<p>$$
+\text{(i)} \ a\leq b ; \quad \text{(ii)} \ L_{b-a}\geq0 ; \quad \text{(iii)} \ \langle (b-a)x,x\rangle\geq0 \ \text{ for every } x ; \quad \text{(iv)} \ \varphi(b-a)\geq0 \ \text{ for every positive functional } \varphi ,
+$$</p>
+<p>so the map $a\mapsto L_a$ is an <strong>order isomorphism</strong> of the self-adjoint part onto its image in the self-adjoint operators, and the order of the elements is the <strong>quadratic order</strong> of the multiplication operators.</p>
+<p><em>Proof.</em> The equivalence (i) $\iff$ (iv) is the theorem that the order is the intersection of the forms of <em>Positive Definite Forms and the Order</em>; (i) $\iff$ (iii) is the quadratic form of $L_{b-a}$ computed at $x$: $\langle (b-a)x,x\rangle = \langle L_{b-a}x,x\rangle$ for the trace form; (ii) $\iff$ (iii) is the definition of the positivity of an operator. Hence the four conditions are equivalent, and the transport is an order isomorphism because it is injective (the algebra is faithful) and preserves the order in both directions.</p>
+<p><strong>Corollary (the positivity of an element and of its multiplication).</strong> An element is positive if and only if its left multiplication is positive, and if and only if its right multiplication is positive,</p>
+<p>$$
+a\geq0 \iff L_a\geq0 \iff R_a\geq0 ;
+$$</p>
+<p>the map $a\mapsto L_a$ carries the order unit to the identity operator, the Jordan decomposition to the decomposition of $L_a$ into self-adjoint parts, and the order interval $[0,1]$ to the interval $[0,L_1] = [0,I]$ of the multiplication operators.</p>
+<p><em>Proof.</em> The equivalences are the theorem with $b - a = a$ and $a = 0$; the order unit is carried to $L_1 = I$; the Jordan decomposition is the spectral decomposition transported by the *-homomorphism; the interval statement is the order isomorphism applied to $[0,1]$.</p>
+<p><strong>Proposition (self-adjointness and the order isomorphisms).</strong> An order isomorphism of the self-adjoint part that commutes with the adjoint is a <strong>self-adjoint order isomorphism</strong>, and the order isomorphisms induced by the *-automorphisms of the algebra are exactly the order isomorphisms of the form $L_a\circ R_{a^{-1}}$ for a unitary $a$ for which the conjugation is a *-automorphism; the identity component of these is the group of the inner *-automorphisms, and the order is preserved by the action.</p>
+<p><em>Proof.</em> A *-automorphism $\Phi$ of the algebra induces the order isomorphism $T\mapsto\Phi T\Phi^{-1}$ on the operators, and its restriction to the self-adjoint part is an order isomorphism commuting with the adjoint, which is the definition of a <strong>self-adjoint order isomorphism</strong>; the inner ones are the conjugations $L_aR_{a^{-1}}$ with $a^* = a^{-1}$, which is the unitarity, and this conjugation is a *-automorphism exactly when it commutes with the involution, which holds for the unitaries of the connected component.</p>
+<h2 id="the-order-and-the-self-adjoint-operators">The Order and the Self-Adjoint Operators</h2>
+<p><strong>Proposition (the self-adjoint operators are an ordered space).</strong> The self-adjoint operators on the space with the trace form form a real ordered vector space under the quadratic order, with the identity as order unit and the order-unit norm equal to the operator norm; the map $a\mapsto L_a$ is an order isomorphism of the self-adjoint part onto a subalgebra of this space, and it is <strong>isometric</strong> for the order-unit norms when the algebra is a $\ast$-normed algebra.</p>
+<p><em>Proof.</em> The ordered-space structure is that of <em>The Adjoint of a Positive Operator</em>; the order-unit norm is the operator norm; the map $L$ is an isometric order isomorphism on the self-adjoint part by the *-homomorphism and the order-isomorphism properties together.</p>
+<p><strong>Corollary (the self-adjointness of the order).</strong> The order of the ordered involutive algebra is <strong>self-adjoint</strong> in the sense that it is determined by the self-adjoint operators, and every order statement has a self-adjoint operator form: $a\geq0$ if and only if $L_a$ is a positive operator, $a$ is an order unit if and only if $L_a$ is an order unit of the multiplication algebra, and the order ideals of the algebra correspond to the order ideals of the multiplication algebra.</p>
+<p><em>Proof.</em> The statements are the transport of the order-theoretic notions by the order isomorphism; the correspondence of the ideals is the definition of an order isomorphism in the ordered-vector-space sense.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the trace form. The self-adjoint elements are the Hermitian matrices, the left multiplication $L_A(B) = AB$ has the adjoint $L_{A^{*}}$, and the order is the Loewner order; the self-adjoint elements correspond to the self-adjoint left multiplications, and the positivity of $A$ is the positivity of $L_A$ as an operator on the Hilbert space of the matrices. This is the finite-dimensional model.</p>
+<h3 id="the-self-adjoint-operators">The Self-Adjoint Operators</h3>
+<p>Let $A$ be a von Neumann algebra of operators, self-adjoint elements its self-adjoint operators; the left multiplication is the operator $T\mapsto AT$, its adjoint is the multiplication by $A^{*}$, and the order is the Loewner order of the multiplication operators; the self-adjoint part of the algebra is an ordered vector space isomorphic to the corresponding operators. The effects $[0,I]$ are the order interval of the algebra's order unit.</p>
+<h3 id="the-continuous-functions">The Continuous Functions</h3>
+<p>Let $A = C(X,\mathbb{C})$ with the pointwise order and the $L^{2}$ trace form. The self-adjoint elements are the real-valued functions, the left multiplication is the multiplication by the function, its adjoint is the multiplication by the complex conjugate function, and the order is pointwise; the order isomorphism $f\mapsto L_f$ carries the pointwise order to the order of the multiplication operators, and the order unit is the constant function $1$.</p>
+<h2 id="summary">Summary</h2>
+<p>For an ordered involutive algebra the <strong>adjoint of the left multiplication</strong> is $(L_a)^{*} = L_{a^{*}}$, so the left multiplication is self-adjoint exactly on the <strong>self-adjoint elements</strong>, and the map $a\mapsto L_a$ is a <strong>*-homomorphism</strong>. The order of the self-adjoint elements is the <strong>quadratic order</strong> of their operators: $a\leq b$ if and only if $L_{b-a}\geq0$, equivalently $\langle(b-a)x,x\rangle\geq0$ for every $x$, equivalently $\varphi(b-a)\geq0$ for every positive functional $\varphi$; hence $a\mapsto L_a$ is an <strong>order isomorphism</strong> of the self-adjoint part onto its image, carrying the order unit to the identity, the Jordan decomposition to the decomposition into self-adjoint parts, and the order interval $[0,1]$ to $[0,I]$. The isometric order isomorphisms are the *-automorphisms conjugate by the unitaries, the <strong>self-adjoint order isomorphisms</strong>, and the order is <strong>self-adjoint</strong>: every order statement has a self-adjoint operator form. The Hermitian elements are <em>Hermitian Elements and the Order Unit</em>; the adjoint and the order are <em>The Adjoint of a Positive Operator</em>; the positive operators are <em>Positive Operators on an Ordered Space</em>; the functionals are <em>The Cone of Positive Functionals</em> and <em>Positive Functionals and Self-Adjointness</em>; the forms are <em>Positive Definite Forms and the Order</em>; the Jordan order is <em>The Jordan Algebra of Self-Adjoint Elements</em>; and the concrete adjoints are <em>The Adjoint of the Left Multiplication on an Ordered Algebra</em>, <em>The Signed Adjoint Sandwich on an Ordered Algebra</em>, <em>The Signed Adjoint of the Reflection on an Ordered Algebra</em> and <em>The Signed Adjoint of the Left Multiplication on an Ordered Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a x = ax$, $R_a x = xa$</td>
+<td>One-sided multiplications</td>
+</tr>
+<tr>
+<td>$(L_a)^{*} = L_{a^{*}}$, $(R_a)^{*} = R_{a^{*}}$</td>
+<td>Adjoints of the multiplications</td>
+</tr>
+<tr>
+<td>$L_{ab} = L_aL_b$</td>
+<td>The map $a\mapsto L_a$ is a homomorphism</td>
+</tr>
+<tr>
+<td>$a\leq b\iff L_{b-a}\geq0$</td>
+<td>The order of the self-adjoint elements</td>
+</tr>
+<tr>
+<td>$\langle(b-a)x,x\rangle\geq0$</td>
+<td>Quadratic form of the order</td>
+</tr>
+<tr>
+<td>$L_1 = I$</td>
+<td>Order unit carried to the identity</td>
+</tr>
+<tr>
+<td>Self-adjoint order isomorphism</td>
+<td>Order isomorphism commuting with the adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the left multiplications, the adjoints and the order of an operator algebra.</li>
+<li>Gert K. Pedersen, <em>C*-Algebras and their Automorphism Groups</em> (Academic Press, 1979), for the *-automorphisms, the inner automorphisms and the order.</li>
+<li>Charalambos D. Aliprantis and Owen Burkinshaw, <em>Positive Operators</em> (Academic Press, 1985), for the quadratic order, the order isomorphisms and the order-unit norms.</li>
+<li>Shoichiro Sakai, <em>C*-Algebras and W*-Algebras</em> (Springer, 1971), for the self-adjoint operators, the order and the normal states.</li>
+<li>Erik M. Alfsen and Frederik W. Shultz, <em>State Spaces of Operator Algebras</em> (Birkhäuser, 2001), for the order isomorphisms and the self-adjoint structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

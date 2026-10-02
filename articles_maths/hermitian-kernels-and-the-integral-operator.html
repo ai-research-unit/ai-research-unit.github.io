@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Kernels and the Integral Operator — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-kernels-and-the-integral-operator"><strong>Hermitian Kernels and the Integral Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The integral operator with kernel $K$ on a measure space is
+$$
+(T_Kf)(x)=\int_XK(x,y)f(y)\,d\mu(y),
+$$
+and its adjoint is the integral operator with the conjugate-transposed kernel,
+$T_K^\dagger=T_{K^*}$ where $K^*(x,y)=\overline{K(y,x)}$. The involution of the previous articles of this
+group — the conjugate transpose of a kernel — is in this way exactly the adjoint of an operator, and the
+Hermitian kernels are exactly the self-adjoint integral operators, while the positive definite kernels are
+exactly the positive ones. The correspondence is not only a dictionary: for kernels in $L^2$ it is an
+isometry onto the Hilbert–Schmidt operators, so that the Hilbert–Schmidt class is a space of kernels with the
+operator norm replaced by the $L^2$ norm, and the spectral decomposition of a Hermitian kernel is the
+spectral decomposition of a compact self-adjoint operator, with real eigenvalues and orthogonal
+eigenfunctions (Mercer's theorem). This article is the bridge between the kernel theory of the <code>*</code> group and
+the operator theory of the corpus, and it completes the first half of the <code>*</code> material.</p>
+<p>It is the sixth and last article of the <code>*</code> group of <em>Foundations of Analysis</em>. Its prerequisites are
+<em>The Integral Operator</em>, <em>Convolution Operators</em> and <em>The Fourier Operator</em>, the operator articles of the
+first group of this category, for the integral operator, the kernel and its adjoint; <em>Positive Definite
+Functions and Hermitian Kernels</em> and <em>Reproducing Kernel Hilbert Spaces</em>, the first two articles of this
+group, for the Hermitian and positive definite kernels and the reproducing space; and <em>Measure Theory and
+Integration</em> for the product measure and Fubini. The general theorem that every bounded operator has a
+distribution kernel is <em>The Schwartz Kernel Theorem</em>, later in this Part; the spectral theory of self-adjoint
+and compact operators is <em>Banach and Hilbert Spaces</em> and <em>Compact Operators</em>, later in this Part; and the
+<code>* Operator</code> group that follows this article — <em>The Adjoint of an Integral Operator</em>, <em>Hermitian Integral
+Kernels</em>, <em>Involutions of the Convolution Operators</em> and <em>The Adjoint of the Fourier Operator</em> — develops the
+operator theory for which the present article supplies the kernel form. The classical Fredholm theory of
+integral equations and the Hilbert–Schmidt expansion are quoted from <em>Compact Operators</em>; the reproducing
+kernel Hilbert space inside the range of the square root is the previous article. No geometry is invoked.</p>
+<h2 id="the-integral-operator-of-a-kernel">The Integral Operator of a Kernel</h2>
+<h3 id="definition-and-the-adjoint">Definition and the Adjoint</h3>
+<p><strong>Definition.</strong> Let $(X,\mathcal A,\mu)$ be a measure space and $K:X\times X\to\mathbb C$ a measurable
+kernel. The <strong>integral operator</strong> with kernel $K$ is
+$$
+(T_Kf)(x)=\int_XK(x,y)f(y)\,d\mu(y) ,
+$$
+whenever the integral converges, and $K$ is a <strong>kernel</strong> of $T_K$; the <strong>conjugate transpose</strong> of the kernel
+is $K^*(x,y)=\overline{K(y,x)}$, and the kernel is <strong>Hermitian</strong> if $K^*=K$, <strong>positive definite</strong> if the
+kernel of the first article of this group is, and <strong>real</strong> if $K$ takes real values.</p>
+<p><strong>Theorem (the adjoint kernel).</strong> When $T_K$ is bounded on $L^2(\mu)$, its adjoint is the integral operator
+with the conjugate transpose kernel,
+$$
+T_K^\dagger=T_{K^*} .
+$$
+Consequently $T_K$ is self-adjoint, $T_K^\dagger=T_K$, if and only if the kernel is Hermitian.</p>
+<p><strong>Proof.</strong> By Fubini,
+$$
+\langle T_Kf,g\rangle=\iint K(x,y)f(y)\overline{g(x)}\,d\mu(y)d\mu(x)
+=\iint f(y)\overline{\Bigl(\int\overline{K(x,y)}g(x)\,d\mu(x)\Bigr)}\,d\mu(y)
+=\langle f,T_{K^*}g\rangle ,
+$$
+the inner integral being $(T_{K^*}g)(y)$ with $K^*(y,x)=\overline{K(x,y)}$. Hence
+$T_K^\dagger=T_{K^*}$, and the fixed-point statement is immediate. $\blacksquare$</p>
+<h3 id="positive-definite-kernels-and-positive-operators">Positive Definite Kernels and Positive Operators</h3>
+<p><strong>Theorem (the dictionary).</strong> Let $K\in L^2(X\times X)$ and suppose $T_K$ is bounded. Then $K$ is positive
+definite if and only if $T_K$ is a positive operator,
+$$
+K\ \text{positive definite}\ \Longleftrightarrow\ \langle T_Kf,f\rangle\geq0\ \text{for all }f\in L^2(\mu) ;
+$$
+more precisely, for $f$ a finite linear combination of indicator functions,
+$$
+\langle T_Kf,f\rangle=\sum_{i,j}\overline{c_i}c_jK(x_i,x_j) ,
+$$
+so the positivity of the quadratic form of the operator is the positivity of the kernel.</p>
+<p><strong>Proof.</strong> The identity is the expansion of the double integral on simple functions; the passage to all of
+$L^2$ is the density of the simple functions and the boundedness of $T_K$; the positive definite condition on
+the kernel is the positivity of the same form for all finite data, which is the density of the finite
+combinations of indicators in the relevant sense. $\blacksquare$</p>
+<p><strong>Corollary (the Hermitian and the positive).</strong> The Hermitian kernels correspond to the self-adjoint integral
+operators and the positive definite kernels to the positive operators; the value-conjugation is not involved,
+the relevant involution being the conjugate transpose $K\mapsto K^*$, which is the adjoint
+$T\mapsto T^\dagger$ under the correspondence.</p>
+<h2 id="hilbertschmidt-operators">Hilbert–Schmidt Operators</h2>
+<h3 id="the-isometry">The Isometry</h3>
+<p><strong>Definition.</strong> An operator $T$ on $L^2(X,\mu)$ is <strong>Hilbert–Schmidt</strong> if it is the integral operator of a
+kernel $K\in L^2(X\times X,\mu\otimes\mu)$, and the <strong>Hilbert–Schmidt norm</strong> is
+$$
+\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2(X\times X)} .
+$$</p>
+<p><strong>Theorem (the correspondence is an isometry onto the Hilbert–Schmidt class).</strong> The map $K\mapsto T_K$ is a
+linear isometry of $L^2(X\times X)$ onto the class of Hilbert–Schmidt operators on $L^2(X)$, and the class is
+a Hilbert space with the inner product
+$$
+\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K(x,y)\overline{L(x,y)}\,d\mu(x)d\mu(y) ;
+$$
+the correspondence carries the kernel involution to the adjoint, $T_{K^*}=T_K^\dagger$, so that it is a
+$\ast$-isometry.</p>
+<p><strong>Proof.</strong> That the operator of an $L^2$ kernel is bounded and Hilbert–Schmidt is the computation of
+$\lVert T_K\rVert_{\mathrm{HS}}^2=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
+recovered from the operator by the formula $K(x,y)=\sum_n(T_Ke_n)(x)\overline{e_n(y)}$ in the $L^2$ sense;
+the inner product identity is the polarisation of the norm. The involution statement is the theorem of the
+previous section. $\blacksquare$</p>
+<p><strong>Forward reference.</strong> The spectral theory of a Hermitian kernel — the reality of the spectrum, the
+orthogonal eigenfunctions, the expansion of the kernel and Mercer's theorem — is the subject of
+<em>Hermitian Integral Kernels</em>, the article of the <code>* Operator Theory</code> group that follows this one; it is the
+operator theory built from the involution, and the present article supplies only the kernel, the involution
+and the two conditions that it tests.</p>
+<h2 id="the-kernel-as-the-symbol-of-the-operator">The Kernel as the Symbol of the Operator</h2>
+<h3 id="the-general-theorem">The General Theorem</h3>
+<p><strong>Theorem (Schwartz kernel theorem, quoted).</strong> Every bounded operator $T$ from $C_c^\infty(Y)$ to
+$\mathcal D'(X)$ has a distribution kernel $K\in\mathcal D'(X\times Y)$ with
+$$
+\langle Tu,v\rangle=\langle K,v\otimes\bar u\rangle ,
+$$
+so that the operator is the integral operator of a distribution kernel; $T$ is self-adjoint exactly when the
+kernel is Hermitian as a distribution, $K(x,y)=\overline{K(y,x)}$, and $T$ is positive exactly when the
+kernel is positive definite as a distribution.</p>
+<p><strong>Proof.</strong> The existence and uniqueness of the kernel is the Schwartz kernel theorem of <em>The Schwartz Kernel
+Theorem</em>, later in this Part; the identification of the Hermitian and positive conditions is the
+distributional form of the computations of the previous sections, with the pairing of <em>Positive Definite
+Distributions</em>, the previous article of this group. $\blacksquare$</p>
+<p>The general bounded operator therefore has a kernel in the sense of distributions, and the kernel dictionary
+of this article — the involution $K\mapsto K^*$ with the adjoint, the positive definite with the positive —
+holds in the distributional generality; when the kernel is a function and the operator is Hilbert–Schmidt,
+the isometry of the previous section identifies the two spaces.</p>
+<h3 id="the-dictionary">The Dictionary</h3>
+<p><strong>Theorem (the correspondence of structures).</strong> Under the kernel-to-operator correspondence:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kernel</th>
+<th>Operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$K^*(x,y)=\overline{K(y,x)}$</td>
+<td>$T_K^\dagger$, the adjoint</td>
+</tr>
+<tr>
+<td>$K$ Hermitian</td>
+<td>$T_K$ self-adjoint</td>
+</tr>
+<tr>
+<td>$K$ positive definite</td>
+<td>$T_K$ positive</td>
+</tr>
+<tr>
+<td>$K\in L^2(X\times X)$</td>
+<td>$T_K$ Hilbert–Schmidt</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the correspondence is involution-preserving in each row; the last row is an isometry whose inverse is
+the recovery of the kernel from the operator. The row that carries the spectral expansion of a Hermitian
+kernel belongs to <em>Hermitian Integral Kernels</em>, later in this group.</p>
+<p><strong>Proof.</strong> The rows are the theorems of the previous sections; the Hilbert–Schmidt case is the isometry, and
+the general rows are the distributional form. $\blacksquare$</p>
+<h2 id="the-spectral-theory-of-the-hermitian-kernel">The Spectral Theory of the Hermitian Kernel</h2>
+<p>The operator theory built from the kernel involution — the self-adjointness of $T_K$, its compactness in the
+Hilbert–Schmidt case, the reality of the eigenvalues, the orthogonal eigenfunctions, the expansion
+$K(x,y)=\sum_n\lambda_n\varphi_n(x)\overline{\varphi_n(y)}$ with $\lambda_n\geq0$ exactly for a positive
+definite kernel, the uniform convergence of the expansion for a continuous kernel (Mercer's theorem) and the
+trace identities $\sum_n\lambda_n=\int K(x,x)\,d\mu$ and $\lVert K\rVert_{L^2}^2=\sum_n\lambda_n^2$ — is
+<em>Hermitian Integral Kernels</em>, the article of the <code>* Operator Theory</code> group that follows this one, together
+with the reproducing space $H_K$ of <em>Reproducing Kernel Hilbert Spaces</em>, the second article of this group.
+This article has established the two conditions the spectral theory tests, the kernel involution that makes
+the operator self-adjoint and the positive definiteness that makes it positive, and nothing more.</p>
+<h2 id="summary">Summary</h2>
+<p>The integral operator $(T_Kf)(x)=\int K(x,y)f(y)d\mu(y)$ has adjoint $T_K^\dagger=T_{K^*}$ with the
+conjugate transpose kernel $K^*(x,y)=\overline{K(y,x)}$, so that the Hermitian kernels are exactly the
+self-adjoint integral operators and the positive definite kernels exactly the positive ones; this is the
+operator form of the involution of the <code>*</code> group, and it is the pair of conditions that the later spectral
+theory tests. For kernels in $L^2(X\times X)$ the correspondence is an isometry onto the Hilbert–Schmidt
+operators, with the inner product $\iint K\bar L$ and the norm $\lVert K\rVert_{L^2}$, and it is a
+$\ast$-isometry for the kernel involution. The general bounded operator has a distribution kernel by the
+Schwartz kernel theorem, and the same dictionary holds in the distributional generality, with the
+involution $K\mapsto K^*$ matched to the adjoint. The spectral theory that the two conditions support — the
+reality of the spectrum, the eigenfunction expansion, Mercer's theorem and the trace identities — is
+<em>Hermitian Integral Kernels</em>, later in this group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_K$, $K$</td>
+<td>Integral operator and its kernel, $(T_Kf)(x)=\int K(x,y)f(y)d\mu(y)$</td>
+</tr>
+<tr>
+<td>$K^*(x,y)=\overline{K(y,x)}$</td>
+<td>Conjugate transpose kernel</td>
+</tr>
+<tr>
+<td>$T_K^\dagger=T_{K^*}$</td>
+<td>The adjoint is the conjugate transpose kernel</td>
+</tr>
+<tr>
+<td>Hermitian / positive definite</td>
+<td>$K^*=K$ / $\sum\overline{c_i}c_jK(x_i,x_j)\geq0$</td>
+</tr>
+<tr>
+<td>$\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2}$</td>
+<td>Hilbert–Schmidt norm and isometry</td>
+</tr>
+<tr>
+<td>$\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K\bar L$</td>
+<td>Hilbert–Schmidt inner product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frigyes Riesz and Béla Szőkefalvi-Nagy, <em>Functional Analysis</em> (Ungar, 1955; reprinted Dover, 1990), for the
+  integral operators and the Hilbert–Schmidt class.</li>
+<li>Franco Smithies, <em>Integral Equations</em> (Cambridge University Press, 1958), for the kernel/operator
+  correspondence.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part II</em> (Interscience, 1963), for the
+  Hilbert–Schmidt class and the adjoint.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (2nd ed., Springer, 1990), for the integral operators and
+  the Hilbert-space adjoint.</li>
+<li>Michael Reed and Barry Simon, <em>Methods of Modern Mathematical Physics I: Functional Analysis</em> (Academic
+  Press, 1980), for the Hilbert–Schmidt class and the adjoint.</li>
+<li>Kôsaku Yosida, <em>Functional Analysis</em> (6th ed., Springer, 1980), for the integral operators and the
+  distributional kernel.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

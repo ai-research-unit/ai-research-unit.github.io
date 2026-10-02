@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complex Structure of the Twistor Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-complex-structure-of-the-twistor-space"><strong>The Complex Structure of the Twistor Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The twistor space $Z(M)=\mathbb{P}(\mathcal{S}^-)$ of a four-dimensional oriented conformal spin manifold carries a natural <strong>almost complex structure</strong> $I$, built from the horizontal distribution of the Levi-Civita connection of a metric in the conformal class and the complex structure of the projective fibre. The almost complex structure is conformally natural; its <strong>integrability</strong> is the geometric theorem that ties the twistor space to the curvature of the manifold: $I$ is integrable if and only if the metric is <strong>anti-self-dual</strong>, that is the anti-self-dual part $W^-$ of the Weyl tensor vanishes. When it is integrable, the twistor projection is holomorphic, the twistor lines are holomorphic rational curves, and the complex geometry of $Z(M)$ is equivalent to the conformal geometry of $M$.</p>
+<p><strong>The boundaries.</strong> The twistor space and its real and Hermitian structures are <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em> and <em>The Hermitian Structure of the Twistor Space</em>; the correspondence and the transform are <em>Hermitian Spin Geometry and the Twistor Correspondence</em>; the spinor bundle and the chirality are <em>Spin Geometry</em>; the Weyl tensor and the Levi-Civita connection are <em>Riemannian Geometry</em> and <em>Fibre Bundles, Connections and Curvature</em>. The body is a four-dimensional oriented conformal spin manifold $(M,[g])$ with the choice of the negative spinor bundle.</p>
+<h2 id="the-almost-complex-structure">The Almost Complex Structure</h2>
+<p><strong>Definition.</strong> Let $g$ be a representative metric in the conformal class, let $H$ be the horizontal distribution of its Levi-Civita connection on the fibre bundle $\pi : Z(M)\to M$, and let $J^{\mathrm{fib}}$ be the complex structure of the projective fibre $\mathbb{CP}^1$. The <strong>almost complex structure</strong> of the twistor space is</p>
+<p>$$
+I = J^{H}\oplus J^{\mathrm{fib}} ,
+$$</p>
+<p>acting by the lift of the complex structure $J^{H}$ on the horizontal space $H\cong\pi^*TM$ (induced by the fibrewise complex structure of the twistor point) and by $J^{\mathrm{fib}}$ on the vertical space.</p>
+<p><strong>Proposition.</strong> The almost complex structure $I$ is well defined, it is compatible with the orientation, the twistor projection $\pi$ is $(I,J^{H})$-holomorphic in the sense that its differential is complex-linear on $H$, and $I$ restricts on each fibre to the standard complex structure of $\mathbb{CP}^1$; the fibrewise complex structure on $H$ is the one determined by the twistor point, that is by the complex structure on $T_xM$ which that point represents.</p>
+<p><strong>Proof.</strong> The horizontal distribution is a complement to the vertical space; a twistor point over $x$ is a compatible complex structure on $T_xM$, which is an endomorphism of the horizontal space with square $-\operatorname{id}$ on the two-dimensional quotient structure; combining with the fibrewise structure gives an endomorphism $I$ of the tangent space of $Z(M)$ with $I^2=-\operatorname{id}$, and the compatibility with the orientation follows from the compatibility of the twistor point with the orientation. The restriction to the fibre is by construction the complex structure of $\mathbb{CP}^1$.</p>
+<p><strong>Remark (the two orientation choices).</strong> The construction uses the negative spinor bundle $\mathcal{S}^-$, one of the two chiral halves; the other choice gives the conjugate almost complex structure and the criterion with the other half $W^+$ of the Weyl tensor. The article fixes one choice and states the criterion for it; the mirror statements are obtained by reversing the orientation of $M$.</p>
+<h2 id="integrability">Integrability</h2>
+<p><strong>Theorem (the integrability criterion, quoted).</strong> The almost complex structure $I$ of the twistor space is <strong>integrable</strong> if and only if the metric $g$ is <strong>anti-self-dual</strong>, $W^-=0$. When $W^-=0$ the twistor space is a complex threefold, the projection $\pi$ is holomorphic, and each twistor line $\pi^{-1}(x)$ is a holomorphic rational curve with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$.</p>
+<p><strong>Proof sketch.</strong> The Nijenhuis tensor of $I$ is computed on the horizontal and vertical parts; the vertical and mixed components vanish identically, and the horizontal component is a tensor on $M$ that is identified with the anti-self-dual Weyl tensor $W^-$ up to a non-zero constant depending on the dimension, so the vanishing of the Nijenhuis tensor is equivalent to $W^-=0$. The identification is the computation of Atiyah–Hitchin–Singer, quoted; the integrability is then the Newlander–Nirenberg theorem, and the holomorphicity of the projection and of the lines follows from the definition of $I$.</p>
+<p><strong>Remark (the two halves of the Weyl tensor).</strong> In dimension four the Weyl tensor splits as $W=W^++W^-$ under the Hodge star of the two-forms, and the two halves are exchanged by the reversal of the orientation; the twistor space of a given orientation is complex exactly when the half of the Weyl tensor selected by that orientation vanishes. The self-dual and anti-self-dual conditions are therefore the two faces of the same construction, and the article works with one of them.</p>
+<p><strong>Corollary (the Einstein case).</strong> If $M$ is Einstein and anti-self-dual, the twistor space is a complex threefold with a real structure and the Hermitian form of <em>The Hermitian Structure of the Twistor Space</em>; in particular the model case $S^4$ gives the complex projective space $\mathbb{CP}^3$.</p>
+<p><strong>Proof.</strong> An Einstein anti-self-dual metric satisfies the hypotheses of the theorem; the additional structures are those of the cited articles, and the model case is the explicit computation.</p>
+<h2 id="dependence-on-the-conformal-class">Dependence on the Conformal Class</h2>
+<p><strong>Proposition.</strong> The almost complex structure $I$ depends only on the conformal class and the orientation: a conformal change $g\to\Omega^2g$ changes the horizontal distribution by a horizontal tensor field but leaves the horizontal complex structure and the vertical structure unchanged, so $I$ is the same.</p>
+<p><strong>Proof.</strong> The Levi-Civita connections of two conformally related metrics differ by a horizontal tensor, the difference being expressible in terms of the differential of the conformal factor; the horizontal complement $H$ of the vertical space changes, but the complex structure induced on the horizontal space by the twistor point is defined by the conformal class, since a compatible complex structure depends only on the conformal class and the orientation. Hence $I$ is conformally invariant.</p>
+<p><strong>Remark (why the twistor space can encode the conformal geometry).</strong> The conformal invariance of $I$ is the reason the twistor space is a conformal object: the complex structure of $Z(M)$ depends on the conformal class and not on the metric, while the metric in the class selects a horizontal distribution. The Hermitian form of <em>The Hermitian Structure of the Twistor Space</em> depends on the representative metric only through the scaling, in accordance with this invariance.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>almost complex structure</strong> of the twistor space is $I=J^H\oplus J^{\mathrm{fib}}$, the sum of the horizontal complex structure induced by the twistor point and the standard complex structure of the fibre $\mathbb{CP}^1$; the projection is holomorphic on the horizontal part and $I$ restricts to the standard structure on each fibre. It is <strong>integrable exactly when the metric is anti-self-dual</strong>, $W^-=0$, by the computation of the Nijenhuis tensor and the Newlander–Nirenberg theorem; then $Z(M)$ is a complex threefold, the twistor lines are holomorphic rational curves with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and in the Einstein case the twistor space carries the Hermitian structure of the sibling article. The almost complex structure depends only on the <strong>conformal class and the orientation</strong>, which is the reason the twistor space is a conformal object. The twistor space itself is <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>, the metric side is <em>The Hermitian Structure of the Twistor Space</em>, the correspondence is <em>Hermitian Spin Geometry and the Twistor Correspondence</em>, and the criterion is the theorem of Atiyah–Hitchin–Singer.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z(M)=\mathbb{P}(\mathcal{S}^-)$</td>
+<td>Twistor space</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Horizontal distribution of the Levi-Civita connection</td>
+</tr>
+<tr>
+<td>$J^{\mathrm{fib}}$</td>
+<td>Standard complex structure of the fibre $\mathbb{CP}^1$</td>
+</tr>
+<tr>
+<td>$I=J^H\oplus J^{\mathrm{fib}}$</td>
+<td>Almost complex structure of $Z(M)$</td>
+</tr>
+<tr>
+<td>$W=W^++W^-$</td>
+<td>Weyl tensor and its two halves</td>
+</tr>
+<tr>
+<td>$W^-=0$</td>
+<td>Anti-self-duality; integrability of $I$</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(1)\oplus\mathcal{O}(1)$</td>
+<td>Normal bundle of a twistor line</td>
+</tr>
+<tr>
+<td>$I$ independent of the metric in $[g]$</td>
+<td>Conformal invariance of the complex structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael F. Atiyah, Nigel J. Hitchin and Isidore M. Singer, "Self-Duality in Four-Dimensional Riemannian Geometry", <em>Proceedings of the Royal Society of London A</em> 362 (1978), 425–461, for the almost complex structure, its integrability and the anti-self-duality criterion.</li>
+<li>Nigel J. Hitchin, "Kählerian Twistor Spaces", <em>Proceedings of the London Mathematical Society</em> 43 (1981), 133–150, for the complex and Kähler structures on twistor spaces.</li>
+<li>Simon Salamon, "Quaternionic Kähler Manifolds", <em>Inventiones Mathematicae</em> 67 (1982), 143–171, for the higher-dimensional analogue of the integrability statement.</li>
+<li>Arthur L. Besse, <em>Einstein Manifolds</em> (Springer, 1987), for the Weyl tensor, the self-dual and anti-self-dual conditions and the twistor space of an Einstein four-manifold.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

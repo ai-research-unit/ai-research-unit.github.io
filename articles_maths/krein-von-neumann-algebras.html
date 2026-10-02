@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krein–von Neumann Algebras — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="kreinvon-neumann-algebras"><strong>Krein–von Neumann Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A von Neumann algebra is a $\ast$-algebra of bounded operators on a Hilbert space closed in the weak operator topology; equivalently, by the bicommutant theorem, it is the commutant of its commutant. On a Krein space the same definition has to be read with the indefinite adjoint, and two questions arise at once: which algebras of operators deserve the name, and whether the bicommutant theorem survives. The answer is that the theorem survives for the algebras that respect the fundamental symmetry, and those are exactly the <strong>Krein–von Neumann algebras</strong>.</p>
+<p>The adjoint for an indefinite form is not the Hilbert adjoint, and the equality $T^{\dagger} = J T^{*} J$ shows that the two differ by conjugation with $J$. An algebra of operators closed under the indefinite adjoint is therefore closed under $T\mapsto JT^{*}J$, and this is the whole content of the definition. The <strong>$J$-representations</strong> are the $\ast$-representations for which the representing operators are closed in this sense; the <strong>$J$-commutant</strong> is the set of bounded operators commuting with the algebra, and the <strong>$J$-bicommutant theorem</strong> says that a unital algebra closed under the indefinite adjoint and closed in the weak topology equals its own double commutant, exactly as in the definite case, provided the commutant is taken among the bounded operators of the Krein space.</p>
+<p>The modular theory of the indefinite setting – the modular operator and the modular conjugation attached to a $J$-cyclic and $J$-separating vector – is the content of <em>The Indefinite Modular Operator</em> and <em>Krein–Tomita–Takesaki Theory</em>, and the analytic machinery of unbounded operators is flagged to <em>Analysis on Linear Spaces</em> (Part III). This article fixes the $J$-representations, the operator algebras on a Krein space, the $J$-commutant and the $J$-bicommutant theorem.</p>
+<p>The indefinite form, the fundamental symmetry and the operator $J$ are <em>Indefinite Inner Product Spaces</em>, <em>The Fundamental Symmetry</em>, <em>J-Self-Adjoint and J-Unitary Operators</em>; the representation theory that produces these algebras is <em>The Indefinite GNS Construction</em>; the Hilbert-space case is <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em> and <em>The Modular Operator and Tomita-Takesaki Theory</em>; the Krein algebras are <em>Krein Algebras</em>. Those are cited. The Krein space is $K$ with form $[\cdot,\cdot]$, definite form $\langle x,y\rangle = [Jx,y]$, and $T^{\dagger}$ is the adjoint for the indefinite form.</p>
+<h2 id="math18-representations">$J$-Representations</h2>
+<p><strong>Definition.</strong> A <strong>$J$-representation</strong> of a unital $\ast$-algebra $A$ on a Krein space $K$ is a linear map $\pi : A\to\mathcal{L}(K)$ with</p>
+<p>$$
+\pi(xy) = \pi(x)\pi(y), \qquad \pi(1) = \mathrm{id}, \qquad \pi(x^{\dagger}) = \pi(x)^{\dagger} ,
+$$</p>
+<p>where $T^{\dagger} = JT^{*}J$ is the adjoint for the indefinite form. A <strong>non-degenerate</strong> $J$-representation is one with $\overline{\pi(A)\xi} = K$ for every $\xi\neq0$, equivalently $\overline{\pi(A)K} = K$.</p>
+<p><strong>Proposition (the adjoint in terms of $J$).</strong> For a bounded operator $T$ on $K$ the indefinite adjoint exists, is unique and equals $T^{\dagger} = JT^{*}J$, where $T^{*}$ is the adjoint for the definite form; and $T\mapsto T^{\dagger}$ is an involutive antiautomorphism of $\mathcal{L}(K)$ that reverses products, $(TS)^{\dagger} = S^{\dagger}T^{\dagger}$.</p>
+<p><strong>Proof.</strong> The defining relation $[Tx,y] = [x,T^{\dagger}y]$ reads $\langle JTx,y\rangle = \langle Jx,T^{\dagger}y\rangle = \langle x, J T^{\dagger}y\rangle$, so the operator $JT^{\dagger}$ is the definite adjoint of $JT$, that is $JT^{\dagger} = (JT)^{*} = T^{*}J$, giving $T^{\dagger} = JT^{*}J$; uniqueness is the non-degeneracy of the form.</p>
+<p><strong>Proposition (the $J$-representation as a definite one).</strong> A map $\pi$ is a $J$-representation of $A$ on $K$ if and only if it is an algebra representation of $A$ on the Hilbert space $(K,\langle\cdot,\cdot\rangle)$, $\pi(xy) = \pi(x)\pi(y)$ and $\pi(1) = \mathrm{id}$, which is $\ast$-preserving in the <strong>twisted</strong> sense $\pi(x^{\dagger}) = J\pi(x)^{*}J$. In particular a $J$-representation is determined by its values and its $J$, and for $J = \mathrm{id}$ it is an ordinary $\ast$-representation.</p>
+<p><strong>Proof.</strong> Substitute the formula of the previous proposition into the third axiom of the definition.</p>
+<p><strong>Proposition (self-adjoint elements of the representation).</strong> An element $x = x^{\dagger}$ has $\pi(x)$ self-adjoint for the indefinite form, and then $J\pi(x)$ is self-adjoint for the definite form; conversely $\pi(x)$ self-adjoint for the indefinite form forces $x = x^{\dagger}$ when $\pi$ is faithful.</p>
+<p><strong>Proof.</strong> $T^{\dagger} = JT^{*}J$ gives $T^{\dagger} = T$ if and only if $JT$ is definite-self-adjoint; the converse is faithfulness.</p>
+<h2 id="operator-algebras-on-krein-spaces">Operator Algebras on Krein Spaces</h2>
+<p><strong>Definition.</strong> A <strong>$J$-algebra</strong> is a subalgebra $\mathcal{M}\subseteq\mathcal{L}(K)$ that is unital, closed under the indefinite adjoint $T\mapsto T^{\dagger}$, and closed in the weak operator topology. A <strong>Krein–von Neumann algebra</strong> is a $J$-algebra.</p>
+<p><strong>Proposition (the definite translation).</strong> $\mathcal{M}$ is a $J$-algebra if and only if it is a unital subalgebra of $\mathcal{L}(K)$ closed in the weak operator topology and satisfying</p>
+<p>$$
+J\mathcal{M}^{*}J = \mathcal{M}, \qquad \mathcal{M}^{*} = \{\,T^{*} : T\in\mathcal{M}\,\} .
+$$</p>
+<p>If in addition $J\in\mathcal{M}$ then $\mathcal{M}$ is a von Neumann algebra of the Hilbert space $(K,\langle\cdot,\cdot\rangle)$ containing $J$; conversely every such von Neumann algebra is a $J$-algebra.</p>
+<p><strong>Proof.</strong> The first statement is the identity $T^{\dagger} = JT^{*}J$ read as a set identity, weak closure being preserved because $J$ is bounded with bounded inverse. For the second, if $T\in\mathcal{M}$ and $J\in\mathcal{M}$ then $T^{*} = JT^{\dagger}J$ lies in $\mathcal{M}$, because $T^{\dagger}\in\mathcal{M}$ and $\mathcal{M}$ is an algebra containing $J$; so $\mathcal{M}$ is $\ast$-closed, that is a von Neumann algebra of the Hilbert space. The converse is the same identity.</p>
+<p><strong>Definition.</strong> The <strong>$J$-commutant</strong> of a set $\mathcal{S}\subseteq\mathcal{L}(K)$ is</p>
+<p>$$
+\mathcal{S}^{c} = \{\, T\in\mathcal{L}(K) : TS = ST \text{ for every } S\in\mathcal{S} \,\},
+$$</p>
+<p>the ordinary commutant; the <strong>$J$-bicommutant</strong> is $\mathcal{S}^{cc}$. When $\mathcal{S}$ is $J$-closed, so is every commutant of it and every bicommutant, as the next proposition shows.</p>
+<p><strong>Proposition (the commutant is a $J$-algebra).</strong> If $\mathcal{S}$ is $J$-closed then $\mathcal{S}^{c}$ is a $J$-algebra, and $\mathcal{S}\subseteq\mathcal{S}^{cc}$.</p>
+<p><strong>Proof.</strong> The commutant of a $J$-closed set is closed under the indefinite adjoint: if $T$ commutes with all $S$ then $T^{\dagger}$ does, because $TS = ST$ implies $S^{\dagger}T^{\dagger} = T^{\dagger}S^{\dagger}$ and $S^{\dagger}$ ranges over $\mathcal{S}$; weak closure and the algebra properties are those of a commutant.</p>
+<h2 id="the-math113-bicommutant-theorem">The $J$-Bicommutant Theorem</h2>
+<p><strong>Theorem ($J$-bicommutant).</strong> Let $\mathcal{M}$ be a unital $J$-algebra on a Krein space $K$ containing the identity and the fundamental symmetry $J$. Then</p>
+<p>$$
+\mathcal{M}^{cc} = \mathcal{M} .
+$$</p>
+<p>Equivalently, a unital algebra of bounded operators closed under the indefinite adjoint and in the weak operator topology is a Krein–von Neumann algebra.</p>
+<p><strong>Proof.</strong> The hypothesis $J\in\mathcal{M}$ makes $\mathcal{M}$ a von Neumann algebra of the Hilbert space $(K,\langle\cdot,\cdot\rangle)$, by the definite translation; the commutant of $\mathcal{M}$ is defined by products alone, so the definite and the ordinary commutant of $\mathcal{M}$ are the same set. The classical bicommutant theorem for Hilbert-space von Neumann algebras therefore gives $\mathcal{M}^{cc} = \mathcal{M}$.</p>
+<p><strong>Corollary (which algebras contain $J$).</strong> A Krein–von Neumann algebra that contains $J$ is exactly a von Neumann algebra of the Hilbert space $(K,\langle\cdot,\cdot\rangle)$ containing $J$; equivalently, a Krein–von Neumann algebra that is not one of these does <strong>not</strong> contain $J$. Every Krein–von Neumann algebra containing $J$ is the commutant of its commutant, as in the definite theory.</p>
+<p><strong>Proof.</strong> If $J\in\mathcal{M}$ then $\mathcal{M}$ is $\ast$-closed by the definite translation, hence a Hilbert-space von Neumann algebra; conversely a Hilbert-space von Neumann algebra containing $J$ is closed under $T\mapsto JT^{*}J = T^{\dagger}$. The remaining assertion is the bicommutant theorem.</p>
+<p><strong>Remark (why the hypothesis $J\in\mathcal{M}$ is not innocuous).</strong> Without it there are $J$-algebras that are not von Neumann algebras of the Hilbert space, and for those the commutant does not see the indefinite adjoint. In $\mathbb{C}^{1,1}$ with $J = \mathrm{diag}(1,-1)$ take $\mathcal{M} = \mathrm{span}\{\mathrm{id}, T\}$ with $T = \left(\begin{smallmatrix}1&1\\-1&0\end{smallmatrix}\right)$: one has $T^{\dagger} = T$, so $\mathcal{M}$ is a $J$-algebra, but $T^{*} = \left(\begin{smallmatrix}1&-1\\1&0\end{smallmatrix}\right)$ is not in $\mathcal{M}$, so $\mathcal{M}$ is not $\ast$-closed, and $J\notin\mathcal{M}$. The commutant of $\mathcal{M}$ is the algebra of polynomials in $T$, which is again $\mathcal{M}$, so the bicommutant statement still holds there; what fails without $J\in\mathcal{M}$ is the reduction to the definite theory, and that is why the Krein–von Neumann algebras of the bicommutant theorem are required to contain $J$.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-trivial-algebras">The Trivial Algebras</h3>
+<p>For $\mathcal{M} = \mathcal{L}(K)$ the commutant is the scalars, and the bicommutant is again the scalars' commutant, $\mathcal{L}(K)$: the theorem is the classical double-commutant statement. For $\mathcal{M}$ the algebra generated by $J$ alone, the commutant is the set of operators preserving both eigenspaces of $J$, and the bicommutant returns the algebra of $J$.</p>
+<h3 id="a-pontryagin-space">A Pontryagin Space</h3>
+<p>Let $K = \mathbb{C}^{1,1}$ with $J = \mathrm{diag}(1,-1)$ and $\mathcal{M}$ the diagonal $2\times2$ matrices. Then $\mathcal{M}$ is a $J$-algebra containing $J$, its commutant is the diagonal matrices themselves, and $\mathcal{M}^{cc} = \mathcal{M}$: the operators preserving the two indefinite directions form a Krein–von Neumann algebra of indefinite dimension two.</p>
+<h3 id="the-definite-case">The Definite Case</h3>
+<p>For a Hilbert space, $J = \mathrm{id}$ and every von Neumann algebra is a Krein–von Neumann algebra; the $J$-bicommutant theorem is then the classical one, and the theorem is a strict extension of it.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Krein space the adjoint for the indefinite form is $T^{\dagger} = JT^{*}J$, and a <strong>$J$-representation</strong> of a $\ast$-algebra is a representation satisfying $\pi(x^{\dagger}) = JT^{*}J$-adjoint, equivalently a Hilbert-space $\ast$-representation whose operators are $J$-twisted. A <strong>$J$-algebra</strong>, or <strong>Krein–von Neumann algebra</strong>, is a unital algebra of bounded operators closed under $T\mapsto T^{\dagger}$ and in the weak operator topology; these are exactly the algebras with $J\mathcal{M}^{*}J = \mathcal{M}$, and those of them that contain $J$ are exactly the von Neumann algebras of the Hilbert space containing $J$. The <strong>$J$-commutant</strong> is the ordinary commutant, it is a $J$-algebra when the algebra is, and the <strong>$J$-bicommutant theorem</strong> holds: a unital $J$-algebra containing $J$ equals its double commutant, so the theory is the Hilbert-space theory conjugated by $J$. The hypothesis that $J$ belongs to the algebra is what reduces the statement to the classical one: it forces $\mathcal{M}$ to be $\ast$-closed, that is a von Neumann algebra of the underlying Hilbert space, and it is not automatic, since there are algebras with $J\mathcal{M}^{*}J = \mathcal{M}$ that are not $\ast$-closed. The representation theory that produces these algebras is <em>The Indefinite GNS Construction</em>, the modular theory is <em>The Indefinite Modular Operator</em> and <em>Krein–Tomita–Takesaki Theory</em> with the analytic machinery deferred to <em>Analysis on Linear Spaces</em> (Part III), and the definite case is <em>The Modular Operator and Tomita-Takesaki Theory</em> and <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{\dagger} = JT^{*}J$</td>
+<td>Adjoint for the indefinite form</td>
+</tr>
+<tr>
+<td>$\pi$, $\pi(x^{\dagger}) = \pi(x)^{\dagger}$</td>
+<td>$J$-representation</td>
+</tr>
+<tr>
+<td>$\mathcal{L}(K)$</td>
+<td>Bounded operators on the Krein space</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$, $J$-algebra</td>
+<td>Krein–von Neumann algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{S}^{c}$, $\mathcal{S}^{cc}$</td>
+<td>$J$-commutant and $J$-bicommutant</td>
+</tr>
+<tr>
+<td>$T\mapsto JT$</td>
+<td>Definite translation, a von Neumann algebra containing $J$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}^{cc} = \mathcal{M}$</td>
+<td>The $J$-bicommutant theorem</td>
+</tr>
+<tr>
+<td>$J\in\mathcal{M}$</td>
+<td>The indispensable hypothesis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em>, Ergebnisse der Mathematik und ihrer Grenzgebiete 78 (Springer, 1974), for the operators of a Krein space and their adjoints.</li>
+<li>Tomas Ya. Azizov and Iosif S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the algebras of operators preserving an indefinite form.</li>
+<li>Konrad Schmüdgen, <em>Unbounded Operator Algebras and Representation Theory</em> (Akademie-Verlag, 1990), for representations of $\ast$-algebras with indefinite adjoints.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the classical bicommutant theorem against which the $J$-version is read.</li>
+<li>Ola Bratteli and Derek W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, vol. 1 (Springer, 1987), for von Neumann algebras and their commutants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutive Set Theory and the Symmetric Difference — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutive-set-theory-and-the-symmetric-difference"><strong>Involutive Set Theory and the Symmetric Difference</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>On the subsets of a set $X$ two structures meet: the <strong>symmetric difference</strong> $A \triangle B =
+(A \setminus B) \cup (B \setminus A)$, which makes $\mathcal{P}(X)$ an abelian group of exponent two,
+and the <strong>complement</strong> $A \mapsto X \setminus A$, an order-reversing involution that is a translation of
+that group. With the
+intersection as a second, multiplicative operation the three together make $\mathcal{P}(X)$ a
+<strong>Boolean ring</strong>, and the dictionary between this ring and the Boolean algebra of <em>Boolean Algebras and
+Lattices</em> is the content of the <strong>identification</strong> of the two presentations. The complement is a
+translation in the group, $A \mapsto X \triangle A$; it is an involution, and it is anti-multiplicative,
+so its fixed part is trivial, and it must not be confused with the order-preserving involution of a
+Boolean algebra treated in <em>Boolean Algebras with an Involution</em>. This article develops these three
+structures and their interaction.</p>
+<p>The article presupposes <em>Sets, Functions and Relations</em> — sets, the Boolean operations on the power
+set, the complement — <em>Boolean Algebras and Lattices</em>, earlier in this Part, for the Boolean algebra,
+and <em>Boolean Algebras with an Involution</em> and <em>Orthocomplemented Lattices and the Involution</em>, earlier
+in this group, for the two kinds of involution. It is the set-theoretic base of the <code>- * Theory</code> group.</p>
+<p>Three boundaries are observed. No <strong>measure</strong> is used; the counting of a finite set is used, a
+distribution on the power set is not. No <strong>category theory</strong> and no <strong>topology</strong> is used; the Boolean
+algebras of this category are reached through the Boolean-ring dictionary, and the Stone space is a
+forward reference to Part V. The <strong>ring with an involution</strong> in the sense of an algebra with a star is
+<em>Involutive Algebras</em> and the <code>- Algebras</code> group, and is named only; here the involution is the
+complement on the power set.</p>
+<h2 id="the-symmetric-difference">The Symmetric Difference</h2>
+<h3 id="definition-and-the-group-structure">Definition and the Group Structure</h3>
+<p><strong>Definition.</strong> For subsets $A, B$ of a set $X$ the <strong>symmetric difference</strong> is</p>
+<p>$$
+A \triangle B = (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B) .
+$$</p>
+<p><strong>Theorem.</strong> The symmetric difference is associative and commutative, has the empty set as identity, and
+every element is its own inverse: $A \triangle A = \emptyset$. Hence $(\mathcal{P}(X), \triangle)$ is an
+abelian group of exponent two, in which the third sum of a pair rewrites as</p>
+<p>$$
+A \triangle B = (A \cap \neg B) \cup (\neg A \cap B), \qquad A \triangle B = (A \cup B) \triangle
+(A \cap B) .
+$$</p>
+<p><strong>Proof.</strong> An element $x$ lies in the left side of the first expression exactly when it lies in one of
+$A, B$ and not in both, which is a symmetric condition in the three sets for the associativity; the
+empty set contributes nothing, and $A \triangle A = \emptyset$ because no $x$ can lie in exactly one of
+the two copies of $A$. The rewritings are the same condition written with the complement and with the
+union and intersection.</p>
+<h3 id="the-boolean-ring">The Boolean Ring</h3>
+<p><strong>Theorem.</strong> The intersection distributes over the symmetric difference on both sides:</p>
+<p>$$
+A \cap (B \triangle C) = (A \cap B) \triangle (A \cap C), \qquad
+(A \triangle B) \cap C = (A \cap C) \triangle (B \cap C),
+$$</p>
+<p>and it is associative and commutative; so $(\mathcal{P}(X), \triangle, \cap)$ is a commutative ring. The
+ring is <strong>Boolean</strong>: every element is idempotent, $A \cap A = A$; its zero is $\emptyset$, and its
+multiplicative identity is $X$, because $A \cap X = A$.</p>
+<p><strong>Proof.</strong> For the distributivity, $x$ lies in $A \cap (B \triangle C)$ exactly when $x \in A$ and $x$
+lies in exactly one of $B, C$, which is the same as lying in exactly one of $A \cap B$, $A \cap C$; the
+other side is the same. The idempotence and the identity element are immediate.</p>
+<p><strong>Theorem (the dictionary).</strong> The following relations hold and translate between the ring and the
+Boolean algebra on the same power set:</p>
+<p>$$
+A \cup B = A \triangle B \triangle (A \cap B), \qquad A \setminus B = A \triangle (A \cap B),
+\qquad X \triangle A = \neg A .
+$$</p>
+<p><strong>Proof.</strong> The first identity is the complement of the second rewriting of the symmetric difference
+above; the second holds because $A \triangle (A \cap B) = A \setminus B$; the third is $X \triangle A =
+X \setminus A$, since $A \subseteq X$.</p>
+<h2 id="the-complement-as-the-involution">The Complement as the Involution</h2>
+<p><strong>Theorem.</strong> The complement $\neg A = X \setminus A$ is the translation by $X$ in the group
+$(\mathcal{P}(X), \triangle)$, that is, $\neg A = X \triangle A$; it is an involution, $\neg\neg A = A$.
+It is <strong>not</strong> a homomorphism of the group: translating twice by $X$ gives</p>
+<p>$$
+\neg(A \triangle B) = X \triangle A \triangle B = \neg A \triangle B,
+\qquad \neg A \triangle \neg B = A \triangle B,
+$$</p>
+<p>so the two agree only when $X = \emptyset$. The complement is an affine involution of the group, that
+is, the composite of the group automorphism $A \mapsto -A$, which is the identity, with the translation
+by $X$.</p>
+<p><strong>Proof.</strong> $X \triangle A = X \setminus A$ because $A \subseteq X$, which is the definition of the
+complement; translating twice by the same element of a group of exponent two is the identity; and the
+computation of the group law is $X \triangle A \triangle B = \neg A \triangle B$ on one side and $(A
+\triangle X) \triangle (B \triangle X) = A \triangle B$ on the other, using $X \triangle X =
+\emptyset$. An affine map of an abelian group is a translation composed with a homomorphism, and here
+the homomorphism is the identity because $-A = A$.</p>
+<p>The complement is therefore the <strong>involution</strong> of the order, an order-reversing map of order two, and
+it is a translation of the group, not an automorphism of it; its fixed part is trivial as soon as $X$
+is nonempty.</p>
+<p><strong>Theorem.</strong> The complement has no fixed point in a nonempty $X$, and in the group
+$(\mathcal{P}(X), \triangle)$ the <strong>additive</strong> involution is the identity, since every element is its
+own inverse. The complement is not an involution of the multiplicative structure: it satisfies
+$\neg(A \cap B) = \neg A \cup \neg B$, which differs from $\neg A \cap \neg B = \neg(A \cup B)$ whenever
+$A \cup B \neq X$.</p>
+<p><strong>Proof.</strong> $A = \neg A$ would give $A = X \setminus A$, hence $A \subseteq X \setminus A$ and $A \cap A
+= \emptyset$, so $A = \emptyset$ and then $X = \emptyset$. The additive involution is the identity
+because $A \triangle A = \emptyset$ means $-A = A$. For the last statement, if $A \cup B \neq X$ pick $x
+\notin A \cup B$; then $x \in \neg A \cap \neg B = \neg(A \cup B)$ but $x \notin \neg A \cup \neg B =
+\neg(A \cap B)$.</p>
+<p><strong>Corollary.</strong> The complement is an anti-automorphism of the intersection and the union, and it is a
+translation, not an automorphism, of the symmetric difference; it converts the ring multiplication
+$A \cap B$ into the "dual" multiplication $A \star B = \neg(\neg A \cap \neg B) = A \cup B$.</p>
+<p><strong>Proof.</strong> The De Morgan laws are the first statement, and they say that the map $A \mapsto \neg A$
+exchanges $\cap$ and $\star$; the second statement is the computation of the theorem, where the
+translation by $X$ fails to be a homomorphism.</p>
+<h2 id="the-identification-with-the-boolean-algebras-of-this-category">The Identification with the Boolean Algebras of this Category</h2>
+<p><strong>Theorem.</strong> Under the dictionary, a Boolean algebra and a Boolean ring on the same underlying set are
+the same structure: setting $A \wedge B = A \cap B$, $A \vee B = A \triangle B \triangle (A \cap B)$
+and $\neg A = X \triangle A$ recovers the Boolean operations from $\triangle$ and $\cap$, and conversely
+$A \triangle B = (A \wedge \neg B) \vee (\neg A \wedge B)$ and $A \cap B = A \wedge B$ recover the ring
+from the Boolean algebra.</p>
+<p><strong>Proof.</strong> The two translations are mutually inverse because the identities of the dictionary are
+involutive, and each set of axioms is satisfied by the other: a complemented distributive lattice is a
+Boolean ring with $x + y = (x \wedge \neg y) \vee (\neg x \wedge y)$ and $xy = x \wedge y$, and a
+Boolean ring is a Boolean algebra with the meet $xy$ and the join $x + y + xy$, as <em>Boolean Algebras and
+Lattices</em> records.</p>
+<p>So the <strong>symmetric difference is the product</strong> (the group law, the addition of the ring) and the
+<strong>complement is the involution</strong>; the intersection is the multiplication, and the power-set structure
+with its two involutions — the additive one, which is the identity, and the complement, which is the
+translation by $X$ — is the set-theoretic model of the structures treated in <em>Boolean Algebras with an
+Involution</em>. There the involution is an order-preserving automorphism of order two, and the complement
+is the order-reversing involution; here the complement appears in both roles at once, as the translation
+of a group of exponent two and as the anti-automorphism of the intersection, which is why its fixed
+part is trivial.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric difference makes the power set an abelian group of exponent two, and with the intersection
+it makes a Boolean ring whose zero is $\emptyset$ and whose identity is $X$; the dictionary
+$A \cup B = A \triangle B \triangle (A \cap B)$, $A \setminus B = A \triangle (A \cap B)$ and $\neg A =
+X \triangle A$ identifies the ring with the Boolean algebra on the same power set.</p>
+<p>The complement is the involution of the order, the translation by $X$ in the group of exponent two; it
+is an anti-automorphism of the intersection and the union and a translation, not an automorphism, of
+the symmetric difference, and its fixed part is trivial for a nonempty $X$. Every element is its own
+additive inverse, so the additive involution is the identity and
+the only involution of the structure that carries information is the complement, which pairs $A$ with
+$\neg A$. This is the set-theoretic model that leads to the involutive Boolean algebras of <em>Boolean
+Algebras with an Involution</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A \triangle B$</td>
+<td>Symmetric difference; the additive group law</td>
+</tr>
+<tr>
+<td>$A \cap B$</td>
+<td>Intersection; the multiplication of the Boolean ring</td>
+</tr>
+<tr>
+<td>$\neg A = X \triangle A$</td>
+<td>Complement; the involution, the translation by $X$</td>
+</tr>
+<tr>
+<td>$x + x = 0$</td>
+<td>Exponent two: every element is its own additive inverse</td>
+</tr>
+<tr>
+<td>identity of $\cap$</td>
+<td>The whole set $X$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>The dual multiplication $A \star B = A \cup B$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Garrett Birkhoff, <em>Lattice Theory</em>, 3rd ed. (American Mathematical Society, 1967), for Boolean algebras, Boolean rings and the dictionary between them.</li>
+<li>Paul R. Halmos, <em>Lectures on Boolean Algebras</em> (Van Nostrand, 1963), for the Boolean ring, the symmetric difference and the complement.</li>
+<li>Roman Sikorski, <em>Boolean Algebras</em>, 3rd ed. (Springer, 1969), for the arithmetic of Boolean rings and the representation of a Boolean algebra by a field of sets.</li>
+<li>Steven Givant and Paul Halmos, <em>Introduction to Boolean Algebras</em> (Springer, 2009), for the power-set model and the identification of the ring and the lattice presentation.</li>
+<li>Sabine Koppelberg, <em>Handbook of Boolean Algebras</em>, Vol. 1 (North-Holland, 1989), for the algebraic identities of Boolean rings and the complement as a translation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

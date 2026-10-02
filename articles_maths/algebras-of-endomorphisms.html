@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebras of Endomorphisms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="algebras-of-endomorphisms"><strong>Algebras of Endomorphisms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A subalgebra of $\operatorname{End}_F(V)$ is a linear space of operators closed under composition, and the smallest such spaces are the scalars, the block-diagonal algebras and the triangular algebras. Two of them can have the same commutant, and the whole structure of a subalgebra is governed by the pair it forms with the set of operators commuting with it. This article develops the subalgebras of the endomorphism algebra, their <strong>commutants</strong>, the <strong>bicommutant</strong>, and the <strong>double centraliser theorem</strong> that identifies the subalgebras which are recovered from their commutant: precisely those for which $V$ is a semisimple module over the subalgebra.</p>
+<p>The endomorphism algebra $E = \operatorname{End}_F(V)$, its units, its centre and its simplicity are <em>Endomorphisms of a Linear Space</em>; the transpose and the anti-isomorphism $E \cong E^{\mathrm{op}}$ are <em>The Transpose of a Linear Map</em>; Schur's lemma, the simple and semisimple modules, the isotypic decomposition and the Wedderburn–Artin theorem are <em>Simple and Semisimple Modules</em>, and none of them is reproved here. What is established here is the correspondence between the subalgebras of $E$ and the module structures on $V$, the centraliser anti-isomorphism, the bicommutant, and the double centraliser theorem in the form used by the operator layer.</p>
+<p>The article assumes a field $F$, a finite-dimensional $F$-linear space $V$, the endomorphism algebra $E$, and the module theory of <em>Simple and Semisimple Modules</em>: the notions of a simple module, a semisimple module, the isotypic decomposition, and Schur's lemma. It uses no form, no norm and no distance, and no topology. The density theorem and Burnside's theorem are <em>Module Endomorphisms</em>, in the category Linear Spaces over Linear Algebras, and are named here only as the non-finite-dimensional and non-semisimple completions of the double centraliser theorem.</p>
+<p>Throughout, a <strong>subalgebra</strong> $A \subseteq E$ is a linear subspace containing $\mathrm{id}_V$ and closed under composition; the action of $A$ on $V$ makes $V$ a left $A$-module, and $V$ is read as a module over $A$ without further mention.</p>
+<h2 id="subalgebras-and-their-commutants">Subalgebras and Their Commutants</h2>
+<h3 id="subalgebras">Subalgebras</h3>
+<p><strong>Definition.</strong> A <strong>subalgebra</strong> of $E$ is a subset $A \subseteq E$ that is a linear subspace, contains $\mathrm{id}_V$, and is closed under composition: $a,b \in A$ implies $ab \in A$.</p>
+<p><strong>Proposition.</strong> The subalgebras of $E$ containing a given set $S \subseteq E$ are the subalgebras containing $S$; the intersection of a family of subalgebras is a subalgebra, so the subalgebras form a lattice under inclusion, and the smallest subalgebra containing $S$, the <strong>subalgebra generated by $S$</strong>, is the linear span of the finite products of elements of $S \cup \{\mathrm{id}_V\}$.</p>
+<p><strong>Proof.</strong> The intersection of subalgebras is a linear subspace, contains $\mathrm{id}_V$, and is closed under composition; the description of the generated subalgebra is the usual closure under the three operations and is contained in every subalgebra containing $S$.</p>
+<h3 id="the-commutant">The Commutant</h3>
+<p><strong>Definition.</strong> For a subalgebra $A \subseteq E$ the <strong>commutant</strong>, also called the <strong>centraliser</strong>, is</p>
+<p>$$
+A' = \{X \in E : aX = Xa \text{ for all } a \in A\} .
+$$</p>
+<p><strong>Proposition (the commutant is the algebra of $A$-linear endomorphisms).</strong> An operator $X \in E$ lies in $A'$ if and only if $X$ is $A$-linear, $X(av) = aX(v)$ for all $a \in A$ and $v \in V$; that is,</p>
+<p>$$
+A' = \operatorname{End}_A(V) .
+$$</p>
+<p>Consequently $A'$ is a subalgebra of $E$ closed under composition and containing $\mathrm{id}_V$.</p>
+<p><strong>Proof.</strong> If $aX = Xa$ for all $a \in A$ then $X(av) = (Xa)(v) = (aX)(v) = aX(v)$. Conversely, if $X(av) = aX(v)$ for all $a,v$ then $Xa$ and $aX$ agree on every $v$, so $Xa = aX$. That $A'$ is a subalgebra follows from the commutation conditions being linear in $X$ and closed under composition: if $X,Y$ commute with every $a$ then so do $X+Y$, $\lambda X$ and $XY$.</p>
+<p><strong>Proposition (inclusion is reversed).</strong> For subalgebras $A \subseteq B$ one has $B' \subseteq A'$; and for the generated subalgebra, $(A)' = (A'')'$.</p>
+<p><strong>Proof.</strong> If $X$ commutes with every element of $B$ it commutes with every element of $A$. The second statement is the Galois connection read twice.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>Example (the scalars).</strong> For $A = F\,\mathrm{id}_V$ the commutant is $A' = E$, since scalars commute with everything; this repeats the computation of the centre in <em>Endomorphisms of a Linear Space</em>.</p>
+<p><strong>Example (the full algebra).</strong> For $A = E$ the commutant is $A' = F\,\mathrm{id}_V$, because an operator commuting with every operator is scalar; this is the centre computation again.</p>
+<p><strong>Example (block diagonal).</strong> Let $V = V_1 \oplus \cdots \oplus V_k$ be a decomposition into nonzero summands and let $A = \{\operatorname{diag}(f_1,\dots,f_k) : f_i \in \operatorname{End}_F(V_i)\}$ be the algebra of block diagonal maps. Then</p>
+<p>$$
+A' = \{\operatorname{diag}(\lambda_1\mathrm{id}_{V_1},\dots,\lambda_k\mathrm{id}_{V_k}) : \lambda_i \in F\} \cong F^{k} ,
+$$</p>
+<p>the algebra of block-scalar maps, and $A'' = A$. The statement is computed below for two blocks.</p>
+<p><strong>Example (upper triangular).</strong> Let $V = F^n$ and let $A$ be the algebra of upper triangular matrices, which contains the identity and is closed under multiplication. Then $A' = F\,\mathrm{id}_V$ is the scalars, the same commutant that the full matrix algebra has, while $A \neq E$; hence $A'' = E \neq A$, and $A$ is not recovered from its commutant.</p>
+<h2 id="the-bicommutant">The Bicommutant</h2>
+<p><strong>Definition.</strong> The <strong>bicommutant</strong> of a subalgebra $A$ is $A'' = (A')'$; $A$ is <strong>closed</strong> when $A'' = A$.</p>
+<p><strong>Proposition (the basic laws).</strong> For every subalgebra $A \subseteq E$,</p>
+<p>$$
+A \subseteq A'' , \qquad A' = A''' , \qquad A'' \text{ is a subalgebra},
+$$</p>
+<p>and the bicommutant is the largest subalgebra with the same commutant: if $B' = A'$ then $B \subseteq A''$.</p>
+<p><strong>Proof.</strong> Every element of $A$ commutes with every element of $A'$, so $A \subseteq A''$. Applying the reversal $(-)'$ to $A \subseteq A''$ gives $A''' \subseteq A'$, and applying it to $A \subseteq A''$ once more, $(A'')' \subseteq A'$; the reverse inclusion is $A' \subseteq (A')'' = A'''$, so $A' = A'''$. If $B' = A'$ then $B'' = (A')' = A'$ and $B \subseteq B'' = A''$. The bicommutant is a commutant, hence a subalgebra.</p>
+<p><strong>Remark (the bicommutant sees the module structure).</strong> The commutant $A' = \operatorname{End}_A(V)$ depends only on the $A$-module structure of $V$, and it is one and the same for $A$ and for $A''$. The bicommutant is therefore the largest subalgebra of $E$ whose action on $V$ has the given algebra of intertwiners; passing from $A$ to $A''$ is passing from a set of operators to the full algebra of operators compatible with its own intertwiners, and it is exactly the closure operation that the double centraliser theorem resolves.</p>
+<h2 id="the-double-centraliser-theorem">The Double Centraliser Theorem</h2>
+<p><strong>Theorem (double centraliser).</strong> Let $A \subseteq E$ be a subalgebra. If $V$ is a semisimple $A$-module, then</p>
+<p>$$
+A'' = A .
+$$</p>
+<p>Equivalently, a subalgebra of $\operatorname{End}_F(V)$ over which $V$ is semisimple is determined by its commutant.</p>
+<p><strong>Proof.</strong> Suppose first that $V$ is isotypic of type $S$, that is, $V \cong S^{m}$ for a simple $A$-module $S$ with $D = \operatorname{End}_A(S)$, a division algebra over $F$ by Schur's lemma. With $S^{m} = S\oplus\cdots\oplus S$, an $A$-linear endomorphism of $S^{m}$ is given by an $m\times m$ matrix over $D$, so $A' \cong M_m(D)$ up to the choice of a decomposition; a matrix over a division algebra that commutes with every matrix over that algebra is a scalar matrix, by the argument of the centre of $E$, so $A'' \cong M_m(D)$ acting on $S^{m}$, and this is $A$, since by the Wedderburn–Artin theorem $A$ is the full matrix algebra over $D$ on each isotypic component. In the general semisimple case, decompose $V = \bigoplus_i V_i$ into isotypic components, of types $S_i$ and multiplicities $m_i$; an $A$-linear endomorphism preserves these components because distinct isotypic components are non-isomorphic simple modules and carry no intertwiners, so $A' = \prod_i M_{m_i}(D_i)$ up to decomposition, and the same computation componentwise gives $A'' = A$. The Wedderburn–Artin theorem, the isotypic decomposition and Schur's lemma are <em>Simple and Semisimple Modules</em>, and the reduction to the matrix computation over a division algebra is by that theorem.</p>
+<p><strong>Corollary (semisimple subalgebras are closed).</strong> Every finite-dimensional semisimple subalgebra $A \subseteq E$ satisfies $A'' = A$, because a semisimple algebra has $V$ semisimple as a module over it.</p>
+<p><strong>Corollary (the commutant of a semisimple algebra is its opposite over the division algebra).</strong> For a semisimple $A$ acting faithfully on $V$ with $V \cong \bigoplus_i S_i^{m_i}$ and $D_i = \operatorname{End}_A(S_i)$,</p>
+<p>$$
+A' \cong \prod_i M_{m_i}(D_i^{\mathrm{op}}) ,
+$$</p>
+<p>which is the double centraliser identity read from the other side.</p>
+<p><strong>Remark (the non-semisimple case).</strong> For the triangular algebra of the example above, $V$ is not semisimple as an $A$-module: the flag $0 \subset Fe_1 \subset Fe_1 \oplus Fe_2 \subset \cdots \subset V$ has no complement preserved by $A$. Correspondingly $A'' = E \neq A$, and the double centraliser theorem fails; the failure is exactly the non-splitness of the flag. The measure of the failure in general is the radical of the module, and the density theorem of <em>Module Endomorphisms</em> gives the completion of the theorem for an irreducible module over an algebraically closed field.</p>
+<h2 id="summary">Summary</h2>
+<p>A subalgebra $A$ of $E = \operatorname{End}_F(V)$ is a linear space of operators closed under composition and containing $\mathrm{id}_V$, and its commutant $A' = \{X : aX = Xa \text{ for } a \in A\} = \operatorname{End}_A(V)$ is the algebra of $A$-linear endomorphisms, a subalgebra with reversed inclusions. The scalars have commutant $E$, the full algebra has commutant the scalars, the block-diagonal algebra $\prod_i\operatorname{End}_F(V_i)$ has commutant the block-scalar algebra $\cong F^k$ and is its own bicommutant, while the triangular algebra has commutant the scalars and bicommutant $E$. The bicommutant satisfies $A \subseteq A''$, $A' = A'''$, and is the largest subalgebra with the given commutant; the subalgebras recovered from their commutant are exactly those for which $V$ is semisimple, by the double centraliser theorem $A'' = A$, whose proof reduces to the classical fact that the centre of a full matrix algebra over a division algebra is the scalars. The density theorem of <em>Module Endomorphisms</em> completes the picture outside the semisimple case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>the field of scalars</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>an $F$-linear space of finite dimension</td>
+</tr>
+<tr>
+<td>$E = \operatorname{End}_F(V)$</td>
+<td>the endomorphism algebra</td>
+</tr>
+<tr>
+<td>$A \subseteq E$</td>
+<td>a subalgebra, containing $\mathrm{id}_V$ and closed under composition</td>
+</tr>
+<tr>
+<td>$A'$</td>
+<td>the commutant, $A' = \{X \in E : aX = Xa \ \forall a\in A\} = \operatorname{End}_A(V)$</td>
+</tr>
+<tr>
+<td>$A''$</td>
+<td>the bicommutant, $(A')'$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>a simple $A$-module</td>
+</tr>
+<tr>
+<td>$D = \operatorname{End}_A(S)$</td>
+<td>the division algebra of $A$-linear maps of a simple module</td>
+</tr>
+<tr>
+<td>$M_m(D)$</td>
+<td>the algebra of $m\times m$ matrices over a division algebra</td>
+</tr>
+<tr>
+<td>$A$ closed</td>
+<td>$A'' = A$</td>
+</tr>
+<tr>
+<td>$F^k$</td>
+<td>the block-scalar algebra of a decomposition into $k$ summands</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the endomorphism ring of a module, its bicommutant and the density theorem.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the double centraliser theorem and the structure of semisimple algebras.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the commutant, the double centraliser and the isotypic decomposition.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the density theorem and the structure of rings of endomorphisms.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the Wedderburn–Artin theorem and the double centraliser.</li>
+<li>Joseph J. Rotman, <em>Advanced Modern Algebra</em> (American Mathematical Society, 2nd ed. 2010), for the commutant of a semisimple algebra and the module-theoretic formulation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

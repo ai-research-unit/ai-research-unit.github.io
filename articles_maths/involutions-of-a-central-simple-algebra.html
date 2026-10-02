@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Involutions of a Central Simple Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="involutions-of-a-central-simple-algebra"><strong>Involutions of a Central Simple Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>central simple algebra</strong> over a field $F$ is an $F$-algebra whose centre is $F$ and which has no nonzero proper two-sided ideal; the matrix algebras $M_n(F)$ are the split examples, and the quaternion algebra over $\mathbb{R}$ is the standard non-split one. On such an algebra the involutions are rigidly constrained. An involution is of the <strong>first kind</strong> when it fixes $F$ elementwise and of the <strong>second kind</strong> when it acts on $F$ through a nontrivial automorphism of order two; the <strong>first-kind</strong> involutions split into two <strong>types</strong>, the <strong>orthogonal</strong> and the <strong>symplectic</strong>, distinguished by the dimension of the symmetric part, and on a matrix algebra the two types are the transpose and the symplectic involution of <em>Matrix Rings with an Involution</em>. Because every automorphism of a central simple algebra is inner, two involutions differ by an inner automorphism, and this reduces the classification to the study of a single unit: the unit that conjugates one involution into the other, and the associated symmetry or skew-symmetry.</p>
+<p>This article treats the kind, the two types of the first kind, the reduction of the comparison of two involutions to an inner automorphism, and the examples; the dimension theory of a central simple algebra, the Brauer group, the discriminant and the Clifford invariant belong to <em>Central Simple Algebras and the Brauer Group</em> and to <em>Hilbert Algebras</em> in Part II, and are named only to mark the boundary, not defined or used. It assumes <em>Involutive Rings</em> for the involution and <em>Fields</em> and <em>Division Rings</em> for the objects, and it forward-references the algebra category where the central simple algebras are treated. Throughout, $A$ is a central simple $F$-algebra with $1 \neq 0$, $\sigma$ is an involution, and $2$ is invertible in $F$ when the eigenspaces are used.</p>
+<h2 id="first-and-second-kind">First and Second Kind</h2>
+<p><strong>Definition.</strong> An involution $\sigma$ of $A$ is of the <strong>first kind</strong> when $\sigma(z) = z$ for every $z \in Z(A) = F$, and of the <strong>second kind</strong> when its restriction to $F$ is a nontrivial automorphism of order two.</p>
+<p><strong>Proposition.</strong> If $\sigma$ is of the second kind then $F$ is a quadratic extension of its fixed field $F^\sigma$; the involution is $\varsigma$-semilinear with $\varsigma = \sigma|_F$, and the pair $(A,\sigma)$ is a form of the pair over $F^\sigma$ obtained by the descent along the quadratic extension. If $\sigma$ is of the first kind then it is $F$-linear, and $A$ is the sum of the symmetric and the skew parts, $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$.</p>
+<p><strong>Proof.</strong> An order-two automorphism of a field has fixed field of index two when it is nontrivial, by the quadratic-extension theorem of <em>Involutive Rings</em>; the semilinearity of $\sigma$ over the fixed field is <em>Rings with a Semilinear Involution</em>; and the eigenspace decomposition is the same theorem applied to the $F$-linear order-two map $\sigma$.</p>
+<p><strong>Theorem (the two types of the first kind).</strong> A first-kind involution $\sigma$ of $A$ is of <strong>orthogonal type</strong> or of <strong>symplectic type</strong>; the type is determined by</p>
+<p>$$
+\dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n+1) \quad \text{(orthogonal)}, \qquad \dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n-1) \quad \text{(symplectic)},
+$$</p>
+<p>where $n$ is the degree of $A$ over $F$ in the sense of <em>Central Simple Algebras and the Brauer Group</em>; an orthogonal involution has a symmetric unit and a family of orthogonal symmetric idempotents summing to $1$, a symplectic one has neither, and a symplectic involution exists only when $n$ is even.</p>
+<p><strong>Proof.</strong> This is the matrix classification of <em>Matrix Rings with an Involution</em> transported to the general $A$: splitting $A$ by a finite extension of $F$ in which the algebra becomes a matrix algebra, the involution becomes a matrix involution of the same type there, and the dimension of the symmetric part is invariant under the extension because the type is; the idempotent criterion is the one of that article, and the parity obstruction to the symplectic type is the evenness of the rank of a symplectic idempotent.</p>
+<p><strong>Remark.</strong> The general classification of the first-kind involutions by orthogonal and symplectic type is due to Albert and is the algebraic core of the theory of the classical groups; the arithmetic refinement, by the discriminant and the Clifford invariant, requires the quadratic forms of Part II and is deferred to <em>Hilbert Algebras</em>.</p>
+<h2 id="comparing-two-involutions">Comparing Two Involutions</h2>
+<p><strong>Theorem (inner reduction).</strong> Let $\sigma$ and $\tau$ be two involutions of $A$, and suppose that $\sigma$ and $\tau$ have the same restriction to $F$, so that $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$. Then $\sigma\tau^{-1}$ is inner: there is a unit $u \in A^\times$ with</p>
+<p>$$
+\sigma(a) = u\,\tau(a)\,u^{-1} \quad \text{for all } a \in A .
+$$</p>
+<p><strong>Proof.</strong> The composite $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$, and every automorphism of a central simple algebra is inner by the Skolem–Noether theorem, which is proved in <em>Central Simple Algebras and the Brauer Group</em>; write it as conjugation by $u$.</p>
+<p><strong>Proposition (when the conjugate is an involution).</strong> For a unit $u$ the map $\sigma = \operatorname{inn}_u\circ\tau$ is an involution if and only if $\tau(u)u$ is central,</p>
+<p>$$
+\sigma^2 = \mathrm{id} \iff \tau(u)\,u \in F .
+$$</p>
+<p>Under this condition $\sigma$ is of the same kind as $\tau$; it is of the <strong>same type</strong> as $\tau$ when $\tau(u)u$ is a square in $F$ and of the <strong>opposite type</strong> when it is not, in the first-kind case.</p>
+<p><strong>Proof.</strong> $\operatorname{inn}_u\tau$ is additive and $F$-linear, and its square is $\operatorname{inn}_u\tau\operatorname{inn}_u\tau = \operatorname{inn}_{u\tau(u)}\tau^2 = \operatorname{inn}_{u\tau(u)}$, which is the identity exactly when $u\tau(u)$ is central, i.e. $\tau(u)u \in F$ by the centrality of scalars. For the type, conjugation by $u$ leaves the dimension of the symmetric part unchanged, and the change is read off from the symmetry of $u$ relative to $\tau$: a unit fixed up to the scalar $\tau(u)u$ contributes a symmetric or a skew symmetry according as that scalar is a square, which exchanges the two dimensions of the matrix case.</p>
+<p><strong>Corollary (the classification reduces to units).</strong> Two first-kind involutions of $A$ differ by an inner automorphism, and the comparison is governed by the class of $\tau(u)u$ in $F^\times/F^{\times2}$, where $u$ is the unit with $\sigma = \operatorname{inn}_u\circ\tau$; this class is the elementary invariant of the pair, and it decides whether the two involutions have the same type or opposite type. The finer invariants, the discriminant and the Clifford invariant, are the forms of Part II.</p>
+<h2 id="examples">Examples</h2>
+<p><strong>(a) The matrix algebra.</strong> For $A = M_n(F)$ the first-kind involutions are the transpose and the symplectic involution, with $\dim\mathrm{Sym} = \tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$, and the second-kind ones exist when $F$ has an involution $\varsigma$ and are the conjugate transposes of <em>Matrix Rings with an Involution</em>.</p>
+<p><strong>(b) The quaternion algebra.</strong> For the quaternion algebra $A = \mathbb{H}(F)$ over a field $F$ of characteristic not two and the conjugation $\sigma$, the involution is of the first kind; the symmetric part is $F$ and the skew part is the trace-zero subspace of dimension three, so for $n = 2$ the conjugation is of orthogonal type, in agreement with $\tfrac12\cdot 2\cdot 3 = 3$; the quaternion algebras are the central simple algebras of degree two that are not split.</p>
+<p><strong>(c) The complex matrix algebra.</strong> For $A = M_n(\mathbb{C})$ over $\mathbb{C}$ with the conjugate transpose, the involution is of the second kind, its fixed field is $\mathbb{R}$, and the pair is the descent of $M_n(\mathbb{C})$ to the real form $M_n(\mathbb{R})$ or to the quaternionic form according to the symmetry of the Hermitian form involved; the classification of the second-kind involutions is the classification of the Hermitian forms over $\mathbb{C}$ with the conjugation.</p>
+<p><strong>(d) The degree-two case.</strong> For a degree-two central simple algebra every first-kind involution is either the conjugation of a quaternion algebra, of orthogonal type, or the composite of it with the symplectic matrix involution after splitting, of symplectic type; the two occur on the same algebra and the passage between them is conjugation by a unit with $\tau(u)u$ a non-square.</p>
+<h2 id="summary">Summary</h2>
+<p>An involution of a central simple $F$-algebra is of the <strong>first kind</strong> when it fixes the centre and of the <strong>second kind</strong> when it acts on the centre by a nontrivial automorphism of order two; the second-kind involutions are $\varsigma$-semilinear over the fixed field, and the first-kind ones are $F$-linear and split the algebra into symmetric and skew parts. A first-kind involution is of <strong>orthogonal</strong> or of <strong>symplectic</strong> type, determined by the dimension of the symmetric part, $\tfrac12 n(n+1)$ or $\tfrac12 n(n-1)$, with the orthogonal type characterised by a symmetric unit and by orthogonal symmetric idempotents summing to $1$ and the symplectic type occurring only in even degree. Two involutions with the same restriction to the centre differ by an inner automorphism, $\sigma = \operatorname{inn}_u\circ\tau$, by Skolem–Noether; the composite is an involution exactly when $\tau(u)u$ is central, and the type is unchanged or exchanged according as that scalar is or is not a square, so the classification reduces to the orbits of the norm-one torus and to the class of $\tau(u)u$ in $F^\times/F^{\times2}$. The arithmetic invariants, the discriminant, the Clifford invariant and the Brauer classes, are the forms of Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$, $F$</td>
+<td>Central simple $F$-algebra with centre $F$</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>Degree of $A$ over $F$</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>Involution of $A$</td>
+</tr>
+<tr>
+<td>first kind, second kind</td>
+<td>Fixes $F$, or acts on $F$ by a nontrivial order-two automorphism</td>
+</tr>
+<tr>
+<td>$\mathrm{Sym},\mathrm{Skew}$</td>
+<td>Eigenspaces of a first-kind involution, $2$ invertible</td>
+</tr>
+<tr>
+<td>$\tfrac12 n(n+1)$, $\tfrac12 n(n-1)$</td>
+<td>Dimensions of the symmetric part, orthogonal and symplectic types</td>
+</tr>
+<tr>
+<td>$\sigma = \operatorname{inn}_u\circ\tau$</td>
+<td>Any two involutions with the same centre restriction</td>
+</tr>
+<tr>
+<td>$\tau(u)u \in F$</td>
+<td>Condition for the conjugate to be an involution</td>
+</tr>
+<tr>
+<td>$F^\times/F^{\times2}$</td>
+<td>The type invariant for a first-kind involution</td>
+</tr>
+<tr>
+<td>$\mathbb{H}(F)$, $M_n(F)$</td>
+<td>Quaternion and matrix examples</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Albert Adrian Albert, <em>Structure of Algebras</em>, American Mathematical Society Colloquium Publications 24 (1939), for the classification of the involutions of a central simple algebra and the two types of the first kind.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the first and second kind, the inner reduction and the symmetric and skew parts.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, American Mathematical Society Colloquium Publications 44 (1998), for the discriminant, the Clifford invariant and the full classification of involutions of a central simple algebra.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em>, American Mathematical Society Colloquium Publications 37 (1964), for Skolem–Noether and the inner structure of a simple ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

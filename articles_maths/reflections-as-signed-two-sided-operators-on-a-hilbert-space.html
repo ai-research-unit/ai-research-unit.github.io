@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections as Signed Two-Sided Operators on a Hilbert Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="reflections-as-signed-two-sided-operators-on-a-hilbert-space"><strong>Reflections as Signed Two-Sided Operators on a Hilbert Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A reflection is an order-two symmetry, and on the algebra $B(H)$ of a Hilbert space the symmetries are the automorphisms. The reflections that $B(H)$ carries with respect to the grade involution $\alpha(T)=\Gamma T\Gamma$ are the automorphisms of order two of the form</p>
+<p>$$
+\rho_U(T)=U\,\alpha(T)\,U^{-1},
+$$</p>
+<p>one for each operator $U$ whose product $U\alpha(U)$ with its twist is central, that is, a scalar. Each such $\rho_U$ is the signed sandwich $S_{U,U^{-1}}$ of <em>The Signed Sandwich on a Hilbert Space</em>, and the present article studies the correspondence between these reflections and the operators that produce them, computes the fixed part and the negated part, records the isometry and unitarity properties that the Hilbert structure makes available, and isolates the cases in which the correspondence degenerates.</p>
+<p>The algebra $B(H)$ and the involution are <em>Bounded Operators on a Hilbert Space</em>; the signed sandwich, its composition table and its invertibility are <em>The Signed Sandwich on a Hilbert Space</em>; the algebraic correspondence, of which the present article is the Hilbert-space reading, is <em>Reflections as Signed Two-Sided Operators on an Algebra</em> (Part I). The graded modules and the adjoint theory of the reflections are <em>The Graded Action on a Module over a Hilbert Space</em> and <em>The Signed Adjoint of the Reflection on a Hilbert Space</em>.</p>
+<p>Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space, $\Gamma$ is the parity operator, $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)$, and $\rho_U(T)=U\alpha(T)U^{-1}$ is the signed conjugation by an invertible $U$. The reflectors are the invertible $U$ with $U\alpha(U)$ central, the set of reflections is written $\mathrm{Ref}(H,\alpha)$, and the group of invertible operators is $B(H)^\times$.</p>
+<h2 id="the-reflector-and-the-reflection">The Reflector and the Reflection</h2>
+<p><strong>Definition.</strong> A <strong>reflector</strong> of the graded Hilbert space is an invertible $U\in B(H)^\times$ with</p>
+<p>$$
+U\,\alpha(U)=\lambda I,\qquad \lambda\in\mathbb{K},
+$$</p>
+<p>that is, an invertible operator whose product with its twist is a scalar. The <strong>reflection</strong> determined by a reflector $U$ is</p>
+<p>$$
+\rho_U:B(H)\longrightarrow B(H),\qquad \rho_U(T)=U\,\alpha(T)\,U^{-1}=S_{U,U^{-1}}(T).
+$$</p>
+<p>The set of reflectors is $R^\times(H,\alpha)$ and the set of reflections is $\mathrm{Ref}(H,\alpha)$.</p>
+<p><strong>Proposition (the scalar is unimodular).</strong> If $U$ is a reflector with $U\alpha(U)=\lambda I$ then $|\lambda|=1$, and $\lambda$ is real only when $U\alpha(U)$ is self-adjoint. In particular $\rho_U$ is determined by the reflector $U$, and distinct scalars give distinct signed products but the same type of reflection.</p>
+<p><em>Proof.</em> $U\alpha(U)$ is a product of unitaries when $U$ is unitary and is invertible in general; its scalar value has modulus $\|U\alpha(U)\|$ when $U$ is unitary, hence $|\lambda|=1$; the reality statement is $\lambda I=(\lambda I)^*=\overline{\lambda}I$, that is $\lambda=\bar\lambda$.</p>
+<p><strong>Proposition (the identity and the grade involution).</strong> The identity operator is a reflector and $\rho_I=\alpha$, so the grade involution is always among the reflections; a scalar multiple $\lambda U$ of a reflector is again a reflector, with $\lambda^2 U\alpha(U)$ in place of $U\alpha(U)$, and it determines the same reflection.</p>
+<p><em>Proof.</em> $I\alpha(I)=I$ is central; $\rho_I(T)=\alpha(T)$; $(\lambda U)\alpha(\lambda U)=\lambda^2U\alpha(U)$ is central, and the conjugation by $\lambda U$ equals the conjugation by $U$.</p>
+<h2 id="the-reflection-is-an-involutive-automorphism">The Reflection Is an Involutive Automorphism</h2>
+<p><strong>Theorem.</strong> For every reflector $U$ the signed conjugation $\rho_U$ is a $*$-automorphism of $B(H)$ with</p>
+<p>$$
+\rho_U^2=\mathrm{id},
+$$</p>
+<p>so $\rho_U$ is an involutive automorphism of $B(H)$. Conversely, if the signed conjugation $\rho_U$ is involutive, then $U$ is a reflector.</p>
+<p><em>Proof.</em> The map is the composite of the automorphisms $\alpha$ and $\iota_U$, hence an automorphism, and it preserves the adjoint because both factors do. Its square is $\rho_U^2(T)=U\alpha(U)\,T\,(U\alpha(U))^{-1}=\iota_{U\alpha(U)}(T)$, the inner automorphism by $U\alpha(U)$, which is the identity exactly when $U\alpha(U)$ is central; the centre of $B(H)$ is the scalar operators, so this is the reflector condition. The converse is the same computation read backwards.</p>
+<p><strong>Corollary (the eigenvalue decomposition).</strong> Let $U$ be a reflector and $\rho=\rho_U$. Then</p>
+<p>$$
+B(H)=B(H)^+_\rho\oplus B(H)^-_\rho,\qquad
+B(H)^\pm_\rho=\{T:\rho(T)=\pm T\},
+$$</p>
+<p>the summands are the fixed part and the negated part, they are closed in the operator norm and in the Hilbert–Schmidt norm, and</p>
+<p>$$
+B(H)^+_\rho B(H)^+_\rho\subseteq B(H)^+_\rho,\quad
+B(H)^+_\rho B(H)^-_\rho\subseteq B(H)^-_\rho,\quad
+B(H)^-_\rho B(H)^+_\rho\subseteq B(H)^-_\rho,\quad
+B(H)^-_\rho B(H)^-_\rho\subseteq B(H)^+_\rho .
+$$</p>
+<p><em>Proof.</em> An involutive automorphism has eigenvalues $\pm1$ and its eigenspaces give the decomposition; the multiplication table is the multiplicativity of $\rho$, applied to the four combinations of signs.</p>
+<p><strong>Corollary (the reflection is determined by its mirror).</strong> A reflection is determined by its fixed subalgebra: if two involutive $*$-automorphisms have the same fixed subalgebra then they are equal.</p>
+<p><em>Proof.</em> An order-two automorphism is determined by its action on the two eigenspaces, and the $\pm1$ eigenspaces determine each other by the direct sum decomposition.</p>
+<h2 id="the-correspondence">The Correspondence</h2>
+<p><strong>Theorem.</strong> The assignment $U\mapsto\rho_U$ is a map from the reflectors onto the reflections, and it is constant exactly on the cosets of the centre: for invertible $U,V$,</p>
+<p>$$
+\rho_U=\rho_V \qquad\Longleftrightarrow\qquad V^{-1}U=\lambda I\ \text{for a scalar}\ \lambda\neq0 .
+$$</p>
+<p>Hence the reflections are parametrised by the reflectors modulo the scalars,</p>
+<p>$$
+\mathrm{Ref}(H,\alpha)\;\cong\;R^\times(H,\alpha)/\mathbb{K}^\times ,
+$$</p>
+<p>and the reflection $\rho_I=\alpha$ is the class of the scalar operators.</p>
+<p><em>Proof.</em> If $\rho_U=\rho_V$ then $U\alpha(T)U^{-1}=V\alpha(T)V^{-1}$ for every $T$, whence $(V^{-1}U)\alpha(T)=\alpha(T)(V^{-1}U)$ for every $T$, so $V^{-1}U$ commutes with all of $B(H)$ and is scalar; conversely a scalar is absorbed by the conjugation. The image of the scalars is $\alpha$.</p>
+<p><strong>Proposition (the reflector acts on itself by its twist).</strong> For a reflector $U$ with reflection $\rho=\rho_U$,</p>
+<p>$$
+\rho(U)=\alpha(U),
+$$</p>
+<p>so $U$ acts on $B(H)$ through the inner automorphism that corrects the grade involution to the reflection, $\rho_U=\iota_U\circ\alpha$.</p>
+<p><em>Proof.</em> Since $U\alpha(U)$ is central, $U$ commutes with it, so $\rho_U(U)=U\alpha(U)U^{-1}=\alpha(U)$; the composite form is the definition $\iota_U(\alpha(T))=U\alpha(T)U^{-1}$.</p>
+<h2 id="isometry-unitarity-and-the-form">Isometry, Unitarity and the Form</h2>
+<p><strong>Proposition (the reflection is an isometry).</strong> Every $\rho_U$ is isometric for the operator norm, $\|\rho_U(T)\|=\|T\|$, and isometric for the Hilbert–Schmidt norm when $U$ is unitary, $\|\rho_U(T)\|_{\mathrm{HS}}=\|T\|_{\mathrm{HS}}$.</p>
+<p><em>Proof.</em> The automorphism $\rho_U$ is a composite of isometries when $U$ is unitary: the conjugation by a unitary and the grade involution are both isometric on $B(H)$ and on $S_2(H)$.</p>
+<p><strong>Proposition (unitary reflections and the geometric reflection).</strong> When $U$ is unitary the reflection $\rho_U$ is implemented on the Hilbert–Schmidt space by the unitary $L_U$ of <em>The Left and Right Multiplication Operators on a Hilbert Space</em>, and it is the inner automorphism of $B(H)$ by the unitary $U\Gamma$: since $\alpha(T)=\Gamma T\Gamma$, one has</p>
+<p>$$
+\rho_U(T)=U\Gamma\,T\,\Gamma U^{-1}=(U\Gamma)\,T\,(U\Gamma)^{-1},
+$$</p>
+<p>so a unitary reflector produces the conjugation by the unitary $U\Gamma$, and every conjugation by a unitary is a reflection for the appropriate sign of $\Gamma$. In particular a unitary reflector with $U\Gamma$ self-adjoint has $\rho_U$ an involutive $*$-automorphism implemented by a self-adjoint unitary, the operator form of the geometric reflection in a hyperplane.</p>
+<p><em>Proof.</em> The composite of the conjugations by $U$ and by $\Gamma$ is the conjugation by $U\Gamma$, and the product is unitary because both factors are; self-adjointness of $U\Gamma$ makes the implementing unitary a reflection operator in the geometric sense.</p>
+<p><strong>Remark (the fixed part of a unitary reflection).</strong> For a unitary reflector $U$ the fixed part $B(H)^+_\rho$ is the commutant of the implementing unitary $U\Gamma$, and the negated part is spanned by the operators $T$ with $\rho_U(T)=-T$; when $U\Gamma$ is the geometric reflection $x\mapsto x-2\langle x,u\rangle u$ in the hyperplane orthogonal to a unit vector $u$, the fixed part is the algebra of operators commuting with that reflection, the operator counterpart of the mirror of the reflection.</p>
+<h2 id="failure-in-degenerate-cases">Failure in Degenerate Cases</h2>
+<p><strong>Proposition (the trivial grading).</strong> If $H^1=0$ then $\alpha=\mathrm{id}$ and every invertible $U$ is a reflector; the reflections are the inner automorphisms $\iota_U$, and the correspondence $\mathrm{Ref}\cong B(H)^\times/\mathbb{K}^\times$ is the standard identification of the inner automorphism group. No reflection beyond the inner automorphisms is produced.</p>
+<p><em>Proof.</em> $\Gamma=I$, so $\alpha=\mathrm{id}$ and $U\alpha(U)=U^2$ is central only via the scalar condition; the signed sandwich reduces to the inner automorphism by $U$.</p>
+<p><strong>Proposition (the non-reflector).</strong> An invertible $U$ fails to be a reflector exactly when $U\alpha(U)$ is not a scalar, and then $\rho_U$ is an automorphism of infinite order in general; the signed conjugation is not a reflection, and the family $B(H)^\pm$ is not defined.</p>
+<p><em>Proof.</em> The square of $\rho_U$ is the inner automorphism by $U\alpha(U)$; the inner automorphism group of $B(H)$ is the group of invertible scalars modulo the scalars, which is trivial, so an inner automorphism is the identity exactly when the implementing element is central; thus the square is nontrivial exactly when $U\alpha(U)$ is non-central, and the order of $\rho_U$ is the order of the class of $U\alpha(U)$.</p>
+<p><strong>Proposition (the split grading and the block form).</strong> When $H^0$ and $H^1$ have different dimensions the parity operator is not scalar and the centre of the parity-invariant subalgebra may be larger than the scalars; in that case the reflector condition is more than $U\alpha(U)$ scalar, and the correspondence acquires extra parameters.</p>
+<p><em>Proof.</em> The commutant of $\Gamma$ is $B(H^0)\oplus B(H^1)$, whose centre is the pair of scalars; for $U$ commuting with $\Gamma$ the product $U\alpha(U)=U^2$ is central in the commutant but not necessarily scalar in $B(H)$, and such a $U$ gives an involutive automorphism of the commutant not detected by the scalar criterion.</p>
+<h2 id="summary">Summary</h2>
+<p>On a graded Hilbert space with grade involution $\alpha(T)=\Gamma T\Gamma$, the signed conjugations $\rho_U(T)=U\alpha(T)U^{-1}=S_{U,U^{-1}}$ are automorphisms of $B(H)$; they are involutive exactly when $U\alpha(U)$ is central, that is for the <strong>reflectors</strong> $U$, and then they are the reflections of the algebra, with the fixed part and the negated part giving a direct sum decomposition of $B(H)$ and with $\rho_U(U)=\alpha(U)$ and $\rho_U=\iota_U\alpha$. The assignment $U\mapsto\rho_U$ maps the reflectors onto the reflections and is constant exactly on the cosets of the scalars, so $\mathrm{Ref}(H,\alpha)\cong R^\times(H,\alpha)/\mathbb{K}^\times$ and the grade involution is the class of the scalars. Every reflection is isometric, and for a unitary reflector it is implemented on the Hilbert–Schmidt space by the unitary $L_U$ and is the operator form of the geometric reflection; the correspondence degenerates when the grading is trivial, in which case only the inner automorphisms remain, when a factor $U\alpha(U)$ is non-central, in which case the signed conjugation has infinite order and is not a reflection, and when the two graded summands have different dimensions, in which case the centre of the parity-invariant subalgebra is larger than the scalars and the reflector condition acquires extra parameters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha(T)=\Gamma T\Gamma$</td>
+<td>the grade involution of $B(H)$</td>
+</tr>
+<tr>
+<td>$\rho_U(T)=U\alpha(T)U^{-1}$</td>
+<td>the signed conjugation, a reflection for a reflector</td>
+</tr>
+<tr>
+<td>$R^\times(H,\alpha)$</td>
+<td>the reflectors, $U\alpha(U)$ scalar</td>
+</tr>
+<tr>
+<td>$\mathrm{Ref}(H,\alpha)$</td>
+<td>the reflections of $B(H)$</td>
+</tr>
+<tr>
+<td>$\rho_U^2=\iota_{U\alpha(U)}$</td>
+<td>the square is the inner automorphism by the twist</td>
+</tr>
+<tr>
+<td>$\rho_U=\iota_U\circ\alpha$</td>
+<td>reflection as inner automorphism after the twist</td>
+</tr>
+<tr>
+<td>$\rho_U(U)=\alpha(U)$</td>
+<td>the action of the reflector on itself</td>
+</tr>
+<tr>
+<td>$\mathrm{Ref}\cong R^\times/\mathbb{K}^\times$</td>
+<td>the correspondence up to scalars</td>
+</tr>
+<tr>
+<td>$B(H)^\pm_\rho$</td>
+<td>the fixed part and the negated part</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, vol. 1 (Academic Press, 1983), for the automorphisms of $B(H)$ and the inner automorphism group.</li>
+<li>Paul R. Halmos, <em>A Hilbert Space Problem Book</em> (Springer, 2nd ed. 1982), for the conjugations of operators and their fixed points.</li>
+<li>Percy Deift, <em>Orthogonal Polynomials and Random Matrices: A Riemann–Hilbert Approach</em>, Courant Lecture Notes 3 (American Mathematical Society, 1999), for the reflection of the Hilbert space in a hyperplane and its role in the theory of groups.</li>
+<li>Pierre Deligne and John W. Morgan, "Notes on Supersymmetry", in <em>Quantum Fields and Strings: A Course for Mathematicians</em>, vol. 1 (American Mathematical Society, 1999), for the graded conjugations and the sign rule.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

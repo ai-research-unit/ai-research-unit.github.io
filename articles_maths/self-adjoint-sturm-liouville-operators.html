@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Adjoint Sturm–Liouville Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="self-adjoint-sturmliouville-operators"><strong>Self-Adjoint Sturm–Liouville Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Sturm–Liouville expression $\ell u=-(pu')'+qu$ defines many operators, one for each boundary condition, and the self-adjoint ones are those built from its formal self-adjointness: the domain is a subspace of the maximal domain on which the boundary form vanishes. The construction is the operator form of the theory of the preceding group. The expression generates a <strong>minimal operator</strong> $T_0$, the closure of the restriction to the compactly supported test functions, and a <strong>maximal operator</strong> $T_1$, its adjoint; the self-adjoint operators between them are the operators $T$ with $T_0\subseteq T\subseteq T_1$ and $T=T^{*}$, and they are parameterised by the boundary conditions that make the classical bracket vanish. The regular case, in which all self-adjoint extensions come from boundary conditions at the two endpoints, has a compact resolvent and a discrete spectrum with a complete eigenfunction expansion in the weighted space; the singular case, in which an endpoint fails to be regular, is classified by the <strong>limit-point</strong> and <strong>limit-circle</strong> alternatives of Weyl, and no boundary condition is needed at a limit-point endpoint.</p>
+<p>This article builds the self-adjoint Sturm–Liouville operators from the involution. It fixes the minimal and maximal operators and proves that the maximal is the adjoint of the minimal; identifies the self-adjoint extensions with the Lagrangian boundary conditions for the bracket; proves the compactness of the resolvent and the eigenfunction expansion in the regular case; states the limit-point and limit-circle classification and the self-adjoint conditions at a singular endpoint; and describes the spectrum, discrete in the regular case and with an essential part in the singular case.</p>
+<p>The Sturm–Liouville expression, the weighted space and the classical eigenvalue theory are those of <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>; the form of the expression and the boundary form are <em>Differential Operators</em> and <em>The Lagrange Identity and the Self-Adjoint System</em>; the boundary form, the reality and the completeness are <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em>; the adjoint operator and its domain are <em>The Adjoint Problem and the Green Function</em> and <em>The Adjoint Boundary Condition</em>; the spectral theorem for the self-adjoint realisation is <em>Self-Adjoint Elliptic Operators and the Spectral Theorem</em>; and the compactness of the resolvent is <em>The Green Operator</em> and <em>Sobolev Spaces and Weak Solutions</em>.</p>
+<h2 id="the-minimal-and-maximal-operators">The Minimal and Maximal Operators</h2>
+<p><strong>Definition.</strong> Let $\ell u=-(pu')'+qu$ on an interval $(a,b)$ with real $p>0$, real $q$, and $1/p$, $q$ locally integrable. Let $w>0$ be the weight and $L^2_w(a,b)$ the weighted space. The <strong>minimal operator</strong> $T_0$ is the closure in $L^2_w(a,b)$ of the operator defined on $C_c^\infty(a,b)$ by $\ell$; the <strong>maximal operator</strong> $T_1$ is the restriction of $\ell$, read in the distributional sense, to the set of $u\in L^2_w$ with $\ell u\in L^2_w$.</p>
+<p><strong>Theorem (the adjoint of the minimal operator).</strong> The minimal operator is symmetric, $T_0\subseteq T_0^{*}$, and its adjoint is the maximal operator:</p>
+<p>$$
+T_0^{*} = T_1 .
+$$</p>
+<p><em>Proof.</em> The symmetry of $T_0$ is the vanishing of the bracket on compactly supported functions, which have both boundary terms zero. For the adjoint, $v\in\mathrm{dom}\,T_0^{*}$ means that the functional $u\mapsto\langle T_0u,v\rangle$ is bounded on $C_c^\infty$; integrating by parts twice writes the pairing as $\langle u,\ell v\rangle$ plus boundary terms, and the boundedness for all $u$ forces $\ell v\in L^2_w$ and the boundary terms to vanish; hence $v\in\mathrm{dom}\,T_1$, and the two domains agree by the same computation in reverse.</p>
+<p><strong>Theorem (self-adjointness and the bracket).</strong> An operator $T$ with $T_0\subseteq T\subseteq T_1$ is self-adjoint if and only if its domain is the set of $u\in\mathrm{dom}\,T_1$ for which the boundary form vanishes against the domain,</p>
+<p>$$
+\langle u,v\rangle_\partial = \Bigl[p\,(u\bar v'-u'\bar v)\Bigr]_a^b = 0 \qquad \text{for all } u,v\in\mathrm{dom}\,T .
+$$</p>
+<p>The conditions defining such domains are the <strong>self-adjoint boundary conditions</strong>, and they are exactly the Lagrangian subspaces of the boundary form of <em>The Lagrange Identity and the Self-Adjoint System</em>.</p>
+<p><em>Proof.</em> For $u,v\in\mathrm{dom}\,T_1$, the Green formula of the interval gives $\langle\ell u,v\rangle-\langle u,\ell v\rangle=[p(u\bar v'-u'\bar v)]_a^b$. The adjoint $T^{*}$ of an operator $\mathcal{D}$ between $T_0$ and $T_1$ has the domain of the $v\in\mathrm{dom}\,T_1$ for which this bracket vanishes against every $u\in\mathcal{D}$; hence $T=T^{*}$ exactly when the bracket vanishes for all pairs in the domain, which is the stated condition. The Lagrangian description is that of the general theory of the boundary form.</p>
+<h2 id="the-regular-case">The Regular Case</h2>
+<p><strong>Definition.</strong> The endpoint $a$ is <strong>regular</strong> if it is finite and $1/p$, $q$, $w$ are integrable near it; the problem is <strong>regular</strong> if both endpoints are regular. For a regular problem the boundary values $u(a),(pu')(a),u(b),(pu')(b)$ are defined and the bracket is a skew-Hermitian form in them.</p>
+<p><strong>Theorem (the self-adjoint conditions of a regular problem).</strong> For a regular Sturm–Liouville problem every self-adjoint extension is given by two separated conditions</p>
+<p>$$
+\alpha_1 u(a)+\alpha_2 (pu')(a)=0,\qquad \beta_1 u(b)+\beta_2 (pu')(b)=0 ,
+$$</p>
+<p>with real pairs $(\alpha_1,\alpha_2)$, $(\beta_1,\beta_2)$ not both zero, or by a coupled condition whose boundary matrix satisfies the Lagrangian property; the resulting operator $T$ is self-adjoint, $T=T^{*}$, and its domain is</p>
+<p>$$
+\mathrm{dom}\,T = \Bigl\{u\in L^2_w : u,u'\in AC_{\mathrm{loc}},\ \ell u\in L^2_w,\ \text{the conditions hold at } a,b\Bigr\} .
+$$</p>
+<p><em>Proof.</em> The bracket $[p(u\bar v'-u'\bar v)]_a^b$ is the sum of the two endpoint forms; a separated condition at each endpoint makes each endpoint form vanish because the pair $(u,(pu'))$ is parallel to $(\alpha_2,-\alpha_1)$, so the assembled vector is isotropic, and a coupled condition with a Lagrangian matrix makes the whole form vanish. The self-adjointness is the preceding theorem, and the domain is the maximal domain cut down by the conditions.</p>
+<p><strong>Theorem (compact resolvent and the eigenfunction expansion).</strong> Let the problem be regular and let $T$ be a self-adjoint extension. Then $T$ has a compact resolvent, its spectrum is discrete, real and simple, the eigenvalues $\lambda_1<\lambda_2<\cdots$ tend to infinity, and the eigenfunctions $\varphi_n$ are complete in $L^2_w(a,b)$:</p>
+<p>$$
+f=\sum_{n\ge1}\bigl(f,\varphi_n\bigr)_w\varphi_n , \qquad \|f\|_w^2=\sum_{n\ge1}\bigl|(f,\varphi_n)_w\bigr|^2 .
+$$</p>
+<p><em>Proof.</em> The resolvent of a regular problem is the Green operator, which is compact on $L^2_w$ because it maps into a space of functions with an $L^2$ second derivative, compactly embedded by Rellich–Kondrachov; the compact self-adjoint spectral theorem of <em>Banach and Hilbert Spaces</em> then gives the orthonormal basis of eigenvectors, and the reality and the simplicity are those of the self-adjoint problem. The expansion is the expansion in that basis.</p>
+<h2 id="the-singular-case">The Singular Case</h2>
+<p><strong>Definition.</strong> The endpoint $a$ is <strong>singular</strong> if it is infinite or if the coefficients fail to be integrable near it. The <strong>limit-circle</strong> and <strong>limit-point</strong> alternatives concern the number of solutions of $\ell u=\lambda u$ in $L^2_w(a,c)$: for a nonreal $\lambda$ that number is constant, and the endpoint is <strong>limit-circle</strong> if it is two and <strong>limit-point</strong> if it is one.</p>
+<p><strong>Theorem (Weyl's classification).</strong> For a formally self-adjoint Sturm–Liouville expression and a nonreal $\lambda$, the number of linearly independent solutions of $\ell u=\lambda u$ in $L^2_w$ near the endpoint $a$ is either one or two, independent of the nonreal $\lambda$; if it is one, the endpoint is limit-point, no boundary condition is needed there and the operator is essentially self-adjoint at that endpoint; if it is two, the endpoint is limit-circle, a boundary condition is needed, and the self-adjoint extensions are parameterised by the real boundary conditions of a one-dimensional family.</p>
+<p><em>Proof.</em> The solutions of $\ell u=\lambda u$ near a singular endpoint span a two-dimensional space, and the $L^2_w$ condition selects a subspace whose dimension is independent of $\lambda$ in the upper half-plane by the theory of the Weyl circle and the Weyl coefficient; the two cases are the two possibilities. At a limit-point endpoint the maximal and minimal domains require no boundary condition because only one solution is $L^2_w$, so the bracket vanishes automatically; at a limit-circle endpoint the two $L^2_w$ solutions make the bracket nontrivial and a one-parameter family of conditions is required. The detailed computation with the Weyl circles is that of <em>The Sturm–Liouville Operator</em> and <em>Ordinary Differential Equations</em>.</p>
+<p><strong>Theorem (the expansion in the singular case).</strong> For a self-adjoint singular Sturm–Liouville operator the spectrum is the union of the discrete eigenvalues and the essential spectrum, the eigenfunction expansion holds in the generalised sense with respect to a spectral measure $\rho$,</p>
+<p>$$
+f\sim\int_{\sigma(T)}\Bigl(\int f\varphi(x,w)\,w\,dx\Bigr)\varphi(\cdot,w)\,d\rho(w) ,
+$$</p>
+<p>and the measure $\rho$ is the Weyl–Titchmarsh measure of the problem; when the spectrum is discrete the integral is the sum of the regular expansion.</p>
+<p><em>Proof.</em> The self-adjoint operator has a spectral measure by the spectral theorem, and the generalised eigenfunctions $\varphi(\cdot,w)$ diagonalise it; the representation is the direct integral form of that theorem. The discrete case is the special case in which the spectral measure is a sum of atoms, which is the regular expansion above.</p>
+<h2 id="summary">Summary</h2>
+<p>A Sturm–Liouville expression $\ell u=-(pu')'+qu$ determines the minimal operator $T_0$, the closure on the compactly supported functions, and the maximal operator $T_1$, whose domain is the set of $L^2_w$ functions with $\ell u\in L^2_w$; the minimal operator is symmetric and $T_0^{*}=T_1$. The self-adjoint operators are the operators between them whose domain makes the classical bracket $[p(u\bar v'-u'\bar v)]_a^b$ vanish, that is, whose boundary conditions are Lagrangian for the boundary form; in the regular case they are given by separated or coupled boundary conditions, and the operator has a compact resolvent, a discrete real spectrum with eigenvalues going to infinity and a complete orthonormal eigenfunction expansion in $L^2_w$. At a singular endpoint the alternatives of Weyl apply: the endpoint is limit-point if only one solution of $\ell u=\lambda u$ is square-integrable there, in which case no boundary condition is needed and the endpoint is essentially self-adjoint, and limit-circle if two are, in which case a one-parameter family of boundary conditions is required. The self-adjoint singular operator has a discrete part and an essential part, and its eigenfunction expansion holds with respect to the Weyl–Titchmarsh spectral measure, the regular expansion being the discrete case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\ell u=-(pu')'+qu$</td>
+<td>Sturm–Liouville expression</td>
+</tr>
+<tr>
+<td>$w$</td>
+<td>Weight, $L^2_w(a,b)$ the weighted space</td>
+</tr>
+<tr>
+<td>$T_0$</td>
+<td>Minimal operator, closure on $C_c^\infty$</td>
+</tr>
+<tr>
+<td>$T_1$</td>
+<td>Maximal operator, adjoint of $T_0$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Self-adjoint extension, $T_0\subseteq T\subseteq T_1$, $T=T^{*}$</td>
+</tr>
+<tr>
+<td>$[p(u\bar v'-u'\bar v)]_a^b$</td>
+<td>Boundary form (classical bracket)</td>
+</tr>
+<tr>
+<td>limit-point / limit-circle</td>
+<td>One or two $L^2_w$ solutions at a singular endpoint</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>Weyl–Titchmarsh spectral measure</td>
+</tr>
+<tr>
+<td>$\lambda_n,\varphi_n$</td>
+<td>Eigenvalues and eigenfunctions in the regular case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Earl A. Coddington and Norman Levinson, <em>Theory of Ordinary Differential Equations</em> (McGraw–Hill, 1955), for the minimal and maximal operators and the self-adjoint extensions.</li>
+<li>Philip Hartman, <em>Ordinary Differential Equations</em> (Wiley, 2nd ed. 1982), for the limit-point and limit-circle classification and the self-adjoint conditions.</li>
+<li>Hermann Weyl, <em>Über gewöhnliche Differentialgleichungen mit Singularitäten und die zugehörigen Entwicklungen willkürlicher Funktionen</em> (Mathematische Annalen 68, 1910), for the circle and point alternatives and the singular expansion.</li>
+<li>Edward C. Titchmarsh, <em>Eigenfunction Expansions Associated with Second-Order Differential Equations</em> (Oxford University Press, 2nd ed. 1962), for the spectral measure and the singular eigenfunction expansion.</li>
+<li>Joachim Weidmann, <em>Spectral Theory of Ordinary Differential Operators</em> (Springer, 1987), for the minimal and maximal operators, the self-adjoint extensions and the direct-integral expansion.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 2nd ed. 1976), for the self-adjoint extensions and the compact-resolvent argument.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
