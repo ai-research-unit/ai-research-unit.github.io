@@ -53,7 +53,7 @@
         <h1 id="biquaternion-algebra"><strong>Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the <strong>six</strong> distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. The inner product is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy. Nothing is measured with it: lengths, signs and orthogonal decompositions, and the theory of norms and forms, are in the Topology group (<em>Biquaternion Norm and Invertibility</em>).</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. No form is used here: the Hermitian form $\tilde{Q}\tilde{Q}^{*}$, the inner product, and everything measured with them — lengths, signs and orthogonal decompositions — are in the Topology group, where the Hermitian form and the inner product are <em>The Hermitian Form on the Biquaternion Algebra</em> and the metric read from them is <em>Biquaternion Norm and Invertibility</em>.</p>
 <p>The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication and its conjugation. No facts about $\mathbb{H}$ are restated here.</p>
 <h2 id="biquaternions">Biquaternions</h2>
 <h3 id="definition">Definition</h3>
@@ -61,7 +61,7 @@
 <p>$$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}.
 $$</p>
-<h3 id="two-views-over-math3-and-over-math4">Two Views: Over $\mathbb{C}$ and Over $\mathbb{R}$</h3>
+<h3 id="two-views-over-math4-and-over-math5">Two Views: Over $\mathbb{C}$ and Over $\mathbb{R}$</h3>
 <p>The biquaternion algebra can be viewed in two equivalent ways, depending on which scalars we allow.</p>
 <p><strong>As a $\mathbb{C}$-algebra.</strong> The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a <strong>four-dimensional algebra over $\mathbb{C}$</strong>: its complex basis is $\{e_0, e_1, e_2, e_3\}$, and every element is a $\mathbb{C}$-linear combination of these four basis elements. The multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The center of this $\mathbb{C}$-algebra is $\mathbb{C}$.</p>
 <p><strong>As an $\mathbb{R}$-algebra.</strong> Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is also naturally a <strong>real vector space of dimension $8$</strong>, with real basis $\{e_0, e_1, e_2, e_3, i e_0, i e_1, i e_2, i e_3\}$. In this view, $\mathbb{B}$ is an <strong>eight-dimensional algebra over $\mathbb{R}$</strong>. The multiplication is $\mathbb{R}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The scalar imaginary $i$ is now an element of the algebra itself, not a scalar, and it lies in the center.</p>
@@ -417,46 +417,6 @@ i\,\mathbb{C}_{\mathbb{B}}=\mathbb{C}_{\mathbb{B}},\qquad
 i\,\mathrm{Vect}(\mathbb{B})=\mathrm{Vect}(\mathbb{B}).
 $$</p>
 <p>The complex conjugation $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation ${}^{*}$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.</p>
-<h2 id="the-hermitian-form">The Hermitian Form</h2>
-<h3 id="definition_1">Definition</h3>
-<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is the biquaternion</p>
-<p>$$
-\tilde{Q} \tilde{Q}^{*},
-$$</p>
-<p>where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate.</p>
-<p><strong>Basic properties.</strong></p>
-<ul>
-<li>$\tilde{Q} \tilde{Q}^{*}$ is a <strong>biquaternion</strong>, not a real scalar in general. Its <strong>scalar part</strong> is</li>
-</ul>
-<p>$$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2),
-$$</p>
-<p>with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^{*}$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^{*} = e_0 + ie_1$ and</p>
-<p>$$
-\tilde{Q} \tilde{Q}^{*} = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
-$$</p>
-<p>which has a nonzero vector part $2ie_1$.</p>
-<ul>
-<li>The Hermitian form is <strong>not</strong> multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$.</li>
-<li>The Hermitian form is <strong>Hermitian</strong> in the sense that $(\tilde{Q} \tilde{Q}^{*})^\dagger = \tilde{Q} \tilde{Q}^{*}$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.</li>
-</ul>
-<h2 id="the-inner-product">The Inner Product</h2>
-<p>The <strong>inner product</strong> of two biquaternions is the complex scalar</p>
-<p>$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu
-= \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu),
-$$</p>
-<p>with $Q_\mu = q_\mu + i q'_\mu$. It is <strong>sesquilinear</strong>, linear in the second argument and conjugate-linear in the first,</p>
-<p>$$
-\langle \lambda \tilde{P}, \tilde{Q} \rangle = \bar{\lambda} \langle \tilde{P}, \tilde{Q} \rangle, \qquad
-\langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C},
-$$</p>
-<p>and <strong>Hermitian</strong>, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is <strong>non-degenerate</strong>: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\bar{\mu} = 0$.</p>
-<p>The inner product pairs the algebra with its conjugate and is complex-valued in general. Forming it, evaluating it to a scalar, and asking when it vanishes is all that is done with it here; its diagonal value
-$$
-\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)
-$$
-vanishes only at $\tilde{Q} = 0$.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.</p>
 <p>It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The <strong>six</strong> distinguished real subspaces are the eigenspaces of those three involutions:</p>
@@ -529,18 +489,6 @@ vanishes only at $\tilde{Q} = 0$.</p>
 <tr>
 <td>$\tilde{Q}^\flat = -\overline{\tilde{Q}^{\natural}} = -\tilde{Q}^{*}$</td>
 <td>Anti-Hermitian conjugate</td>
-</tr>
-<tr>
-<td>$\tilde{Q} \tilde{Q}^{*}$</td>
-<td>Hermitian form; a Hermitian biquaternion, defined before the inner product</td>
-</tr>
-<tr>
-<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$</td>
-<td>Scalar part of the Hermitian form</td>
-</tr>
-<tr>
-<td>$\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$</td>
-<td>Inner product; a complex scalar, formed and evaluated algebraically</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>

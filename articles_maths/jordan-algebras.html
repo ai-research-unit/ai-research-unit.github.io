@@ -137,11 +137,7 @@ $$</p>
 <h3 id="hermitian-matrices">Hermitian Matrices</h3>
 <p>Let $D$ be a composition algebra over $R$ with a conjugation, for instance $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$, and let $H_n(D)$ denote the $n \times n$ matrices that are equal to their conjugate transpose, with the symmetrised product. Then $H_n(D)$ is a Jordan algebra, a subalgebra of $M_n(D)^+$ for associative $D$. For $n = 1$ this is the base field with its multiplication. For $n = 2$ and $D = \mathbb{R}$ it is the three-dimensional algebra spanned by orthogonal idempotents $u_+, u_-$ with $u_+ + u_- = 1$ together with an element $w$ satisfying $w \circ w = 1$ and $u_\pm \circ w = \tfrac12 w$; this is the smallest spin factor. These algebras, and the non-associative case $D = \mathbb{O}$, are treated; here they serve as the main source of examples.</p>
 <h3 id="spin-factors">Spin Factors</h3>
-<p>Let $V$ be a free $R$-module with a quadratic form $q$ and polar form $B$, normalised so that $B(v, v) = q(v)$, and put $JSpin(V) = R \cdot 1 \oplus V$ with product</p>
-<p>$$
-(\alpha, v) \circ (\beta, w) = \bigl(\alpha\beta + B(v, w),\ \alpha w + \beta v\bigr).
-$$</p>
-<p>Then $JSpin(V)$ is a unital Jordan algebra of <strong>degree two</strong>: every element satisfies the quadratic equation $x^2 - 2\alpha x + (\alpha^2 - q(v))1 = 0$ over its powers, and the idempotents other than $0$ and $1$ are exactly the elements $\tfrac12(1 \pm u)$ with $q(u) = 1$. For $V = R^n$ with the standard form write $JSpin_n$. The Clifford algebra of the form supplies an associative algebra in which $JSpin(V)$ embeds, and the construction of that enveloping algebra is not covered here.</p>
+<p>A <strong>spin factor</strong> is a Jordan algebra of degree two built from a quadratic form on a free $R$-module; for $V = R^n$ with the standard form it is written $JSpin_n$. Its construction, its idempotents and the Clifford algebra that envelops it use the form and its standard form, and are <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>, in Part II, where the form is available; they are named only here.</p>
 <h3 id="the-albert-algebra">The Albert Algebra</h3>
 <p>If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the <strong>Albert algebra</strong>, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are in <em>Non-Associative Algebras and the Property Ladder</em>. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.</p>
 <h2 id="the-trace-form-and-derivations">The Trace Form and Derivations</h2>
@@ -210,7 +206,7 @@ $$</p>
 <p>$$
 J_1 \circ J_1 \subseteq J_1, \quad J_0 \circ J_0 \subseteq J_0, \quad J_1 \circ J_0 = 0, \quad J_1 \circ J_{1/2} \subseteq J_{1/2}, \quad J_0 \circ J_{1/2} \subseteq J_{1/2}, \quad J_{1/2} \circ J_{1/2} \subseteq J_1 \oplus J_0 .
 $$</p>
-<p>For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the hyperplane of $V$ orthogonal to the vector part of $e$; this is the form in which the spin factors and the Clifford envelope are analysed.</p>
+<p>For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the middle space $J_{1/2}(e)$; this is the shape in which the spin factors and the Clifford envelope are analysed, in <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em> of Part II.</p>
 <p><strong>Example.</strong> In $A^+$ for $A = M_n(R)$ and $e = \operatorname{diag}(1, \ldots, 1, 0, \ldots, 0)$ with $r$ ones, the Peirce spaces are the block-diagonal parts $J_1 = A_{11}$, $J_0 = A_{22}$ and the two off-diagonal blocks, which together make up $J_{1/2}$.</p>
 <h2 id="formally-real-jordan-algebras-and-the-classification">Formally Real Jordan Algebras and the Classification</h2>
 <h3 id="formal-reality">Formal Reality</h3>
@@ -218,7 +214,7 @@ $$</p>
 <p>$$
 x_1^2 + x_2^2 + \cdots + x_k^2 = 0 \quad \Longrightarrow \quad x_1 = x_2 = \cdots = x_k = 0 .
 $$</p>
-<p>This is the algebraic condition that makes the set of sums of squares a pointed convex cone, free of lines through the orig. In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers: $x^2 = 0$ forces $x = 0$, and the set of sums of squares is a pointed cone. The associated <strong>positive cone</strong> and its properties are not covered here. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$, and it forces the trace form to be positive definite when the algebra is finite-dimensional and unital.</p>
+<p>In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers and $x^2 = 0$ forces $x = 0$. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$. The associated <em>order</em>, the <strong>positive cone</strong> it defines, and the equivalent criterion that the trace form be positive definite are not covered here; they are <em>Jordan Algebras and the Positive Cone</em>, in Part III, where the order is available, and are named only.</p>
 <h3 id="the-classification">The Classification</h3>
 <p><strong>Theorem (Jordan–von Neumann–Wigner).</strong> Every finite-dimensional formally real Jordan algebra is a direct sum of simple ideals, and every simple finite-dimensional formally real Jordan algebra is isomorphic to one of the following:</p>
 <ol>
@@ -283,12 +279,8 @@ $$</p>
 <td>Hermitian $n \times n$ matrices over $D$</td>
 </tr>
 <tr>
-<td>$JSpin(V)$, $JSpin_n$</td>
-<td>Spin factor $R \oplus V$ with $(\alpha,v)\circ(\beta,w) = (\alpha\beta + B(v,w), \alpha w + \beta v)$</td>
-</tr>
-<tr>
-<td>$q$, $B$</td>
-<td>Quadratic form and its polar form, $B(v,v) = q(v)$</td>
+<td>$JSpin_n$, $JSpin(V)$</td>
+<td>Spin factor of a quadratic form; constructed in <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em> (Part II)</td>
 </tr>
 <tr>
 <td>$H_3(\mathbb{O})$</td>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Isotropic Structure of the Krein Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-isotropic-structure-of-the-krein-form"><strong>The Isotropic Structure of the Krein Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An indefinite Hermitian form has a <strong>null set</strong> beyond the origin, and the shape of that set and of the totally isotropic subspaces it carries is the geometry of the form. For the Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ the null set is the real quadric $[\tilde{Q},\tilde{Q}]=0$ of dimension $7$, it is smooth away from the origin, its link is the product $S^{1}\times S^{5}$, and its maximal totally isotropic subspaces have dimension the <strong>Witt index</strong> $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. This article treats that structure: the isotropic elements, the totally isotropic subspaces, the isotropic lines and their boundary sphere, and the comparison with the <em>other</em> null set of the algebra, the zero-divisor cone of the norm $N$. The orthogonality and the subspaces are in <em>Krein Orthogonality and the Fundamental Decomposition</em>; the level sets of positive and negative sign are in <em>The Krein Level Sets and the Hyperbolic Structure</em>; and the projective geometry of the norm's cone is in <em>Biquaternion Topology</em>.</p>
+<p><strong>Conventions.</strong> $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the Krein form is $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$, the Hermitian form is $\langle\tilde{Q},\tilde{Q}'\rangle=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle$, and the norm is $N(\tilde{Q})=\sum_{\mu}Q_{\mu}^{2}$.</p>
+<h2 id="isotropic-elements">Isotropic Elements</h2>
+<p><strong>Definition.</strong> An element $\tilde{Q}$ is <strong>Krein-isotropic</strong>, or <strong>Krein-null</strong>, when $[\tilde{Q},\tilde{Q}]=0$; the <strong>Krein null set</strong> is</p>
+<p>$$
+\mathcal{K}=\{\tilde{Q}:[\tilde{Q},\tilde{Q}]=0\}=\Bigl\{\tilde{Q}:\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}=0\Bigr\}.
+$$</p>
+<p><strong>Theorem (the shape of the null set).</strong> In the splitting $\tilde{Q}=c+v$ of the algebra into its centre and vector parts, with $c\in\mathbb{C}_{\mathbb{B}}$ the scalar part and $v\in\mathbb{V}_{\mathbb{B}}$ the vector part,</p>
+<p>$$
+\mathcal{K}=\{\tilde{Q}:\|c\|_E=\|v\|_E\};
+$$</p>
+<p>it is a closed real algebraic cone of apex the origin, homogeneous of degree two, of real dimension $7$, irregular only at the apex, and it is connected.</p>
+<p><strong>Proof.</strong> $[\tilde{Q},\tilde{Q}]=\|c\|_E^{2}-\|v\|_E^{2}$ by the sign vector of the coefficient basis, so the equation is $\|c\|_E=\|v\|_E$. The set is the zero set of a single non-constant real polynomial, hence of dimension $7$ at its smooth points; its gradient with respect to the four real coordinates of $c$ and the six of $v$ is $2(c,-v)\neq0$ off the origin, so the apex is the only singular point and the cone is a real $7$-manifold away from it. Connectivity follows because the map $\tilde{Q}\mapsto(\|c\|_E,\|v\|_E)$ makes the cone for each $t>0$ the product of the spheres of radius $t$ in the two factors, glued along $t$, that is $S^{1}\times S^{5}$.</p>
+<p><strong>Theorem (the link).</strong> The intersection of the null set with the Euclidean unit sphere $\|\tilde{Q}\|_E=1$ is diffeomorphic to $S^{1}\times S^{5}$; the punctured cone $\mathcal{K}\setminus\{0\}$ retracts onto it and is homotopy equivalent to $S^{1}\times S^{5}$.</p>
+<p><strong>Proof.</strong> On the unit sphere $\|c\|_E^{2}+\|v\|_E^{2}=1$ together with $\|c\|_E=\|v\|_E$ forces $\|c\|_E=\|v\|_E=1/\sqrt2$, so the link is $S^{1}\times S^{5}$ with the radii $1/\sqrt2$; the retraction is $\tilde{Q}\mapsto\tilde{Q}/\|\tilde{Q}\|_E$.</p>
+<p><strong>Example.</strong> $e_0+e_1$ has $[e_0+e_1,e_0+e_1]=1-1=0$ and $N=2$, so it is isotropic for the Krein form and not for the norm. The element $e_1+ie_2$ has $N=1+i^{2}=0$ and $[e_1+ie_2,e_1+ie_2]=-2$, the reverse situation.</p>
+<h2 id="the-comparison-with-the-norm-cone">The Comparison with the Norm Cone</h2>
+<p><strong>Definition.</strong> The <strong>norm cone</strong> of the algebra is the zero set $\mathcal{N}=\{\tilde{Q}:N(\tilde{Q})=0\}$ of the norm, the union of the origin and the zero-divisor set of <em>Biquaternion Zero Divisors</em>; it is a complex cone of real dimension $6$.</p>
+<p><strong>Theorem (the two cones are different).</strong> The Krein null set and the norm cone are distinct: neither is contained in the other. Their intersection $\mathcal{K}\cap\mathcal{N}$ is a real algebraic cone of dimension $5$, and it contains the two complex lines $\mathbb{C}(e_0+ie_1)$ and $\mathbb{C}(e_0-ie_1)$.</p>
+<p><strong>Proof.</strong> $e_0+e_1$ is in the Krein null set and not in the norm cone, $e_1+ie_2$ in the norm cone and not in the Krein null set, so neither inclusion holds. For the dimension, in the affine chart $Q_0=1$ the equations $N=0$ and $[\tilde{Q},\tilde{Q}]=0$ are one complex and one real equation on the six real coordinates $Q_1,Q_2,Q_3$, that is three real equations in six unknowns, so the projective intersection has real dimension $3$ and the cone over it has real dimension $5$. The two displayed lines are isotropic for both forms: $N(e_0\pm ie_1)=1+(i)^{2}=0$ and $[e_0\pm ie_1,e_0\pm ie_1]=1-1=0$.</p>
+<p><strong>Remark (the two cones agree on a real slice).</strong> On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the Krein form is the interval form and the norm is the Euclidean form, $[\tilde{Q},\tilde{Q}]=q_0^{2}-\sum_kq_k^{2}$ and $N(\tilde{Q})=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.</p>
+<h2 id="totally-isotropic-subspaces">Totally Isotropic Subspaces</h2>
+<p><strong>Definition.</strong> A subspace $\mathbb{W}$ is <strong>totally isotropic</strong> when $[\tilde{Q},\tilde{Q}']=0$ for all $\tilde{Q},\tilde{Q}'\in\mathbb{W}$, equivalently when $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$; it is <strong>maximal</strong> when it is contained in no larger one. The <strong>Witt index</strong> of the Krein form is the common dimension of the maximal totally isotropic subspaces.</p>
+<p><strong>Theorem (the Witt index and the maximal isotropic subspaces).</strong> The Witt index is $\min(p,q)$: it is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. A maximal totally isotropic complex subspace is $\mathbb{C}(e_0+e_1)$, and a maximal totally isotropic real subspace is the plane</p>
+<p>$$
+\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\},
+\qquad
+e_0+e_1\ \text{and}\ i(e_0+e_1)\ \text{isotropic, mutually orthogonal}.
+$$</p>
+<p>Every totally isotropic subspace is contained in a maximal one, and the isometry group $U(1,3)$ acts transitively on the maximal ones.</p>
+<p><strong>Proof.</strong> If $\mathbb{W}$ is totally isotropic then it is orthogonal to itself, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$, and the restriction of the form to $\mathbb{W}+\mathbb{W}^{\perp_{K}}/\mathbb{W}^{\perp_{K}}$ makes the dimension of $\mathbb{W}$ at most $\min(p,q)$: an isotropic subspace meets the maximal positive definite subspaces and the maximal negative definite subspaces only at $0$. The two displayed spaces attain $\min(p,q)=1$ over $\mathbb{C}$ and $\min(p,q)=2$ over $\mathbb{R}$, since $[e_0+e_1,e_0+e_1]=0$, $[e_0+e_1,i(e_0+e_1)]=i-i=0$ and the plane is $2$-dimensional over $\mathbb{R}$. The extension and transitivity are Witt's extension theorem for Hermitian forms (<em>Witt's Theorems</em>).</p>
+<p><strong>Remark (the isotropic and the null elements).</strong> An element $\tilde{Q}$ is isotropic exactly when the line $\mathbb{C}\tilde{Q}$ is totally isotropic (over $\mathbb{R}$, the real plane $\mathrm{span}_{\mathbb{R}}\{\tilde{Q},i\tilde{Q}\}$ is); the null set of the first section is the union of the totally isotropic complex lines, and the totally isotropic subspaces are the subspaces all of whose elements are isotropic.</p>
+<h2 id="the-isotropic-lines-and-the-boundary-sphere">The Isotropic Lines and the Boundary Sphere</h2>
+<p><strong>Definition.</strong> The <strong>isotropic lines</strong> of $\mathbb{C}^{4}$ for the Krein form are the complex lines $\mathbb{C}\tilde{Q}$ spanned by nonzero isotropic elements.</p>
+<p><strong>Theorem (the isotropic lines form $S^{5}$).</strong> The isotropic complex lines are exactly the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\tilde{V}\|_E=1$, so the assignment $\tilde{V}\mapsto\mathbb{C}(e_0+\tilde{V})$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.</p>
+<p><strong>Proof.</strong> An isotropic line $\mathbb{C}\tilde{Q}$ has $[\tilde{Q},\tilde{Q}]=0$, hence $\|c\|_E=\|v\|_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling it gives exactly one representative of the form $e_0+\tilde{V}$. For that representative $[e_0+\tilde{V},e_0+\tilde{V}]=1-\|\tilde{V}\|_E^{2}$, so the line is isotropic exactly for $\|\tilde{V}\|_E=1$; and distinct points $\tilde{V}$ of the unit sphere give distinct lines, since $e_0+\tilde{V}$ and $e_0+\tilde{V}'$ span the same line only if $\tilde{V}=\tilde{V}'$. This is the boundary case of the parametrisation of the maximal positive definite subspaces in <em>Krein Orthogonality and the Fundamental Decomposition</em>, which uses the open ball $\|\tilde{V}\|_E<1$.</p>
+<p><strong>Corollary (the two links).</strong> The punctured real cone $\mathcal{K}\setminus\{0\}$ is homotopy equivalent to $S^{1}\times S^{5}$, and the space of isotropic complex lines is $S^{5}$: passing from one to the other is dividing by the action of the circle of complex phases, which acts freely on the isotropic elements.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>An isotropic element of the centre–vector type.</strong> $\tilde{Q}=e_0+e_1$: isotropic, norm $2$, in the light cone of the real quaternion slice at the boundary.</p>
+<p><strong>A zero divisor that is isotropic.</strong> $\tilde{Q}=e_0+ie_1$: both $N=0$ and $[\tilde{Q},\tilde{Q}]=0$; the line it spans is a doubly null line.</p>
+<p><strong>A zero divisor that is not isotropic.</strong> $\tilde{Q}=e_1+ie_2$: $N=0$, $[\tilde{Q},\tilde{Q}]=-2$, a strictly negative element.</p>
+<p><strong>A timelike element.</strong> $\tilde{Q}=e_0+0.5e_1$: $[\,\tilde{Q},\tilde{Q}]=0.75>0$, so it lies inside the positive region and spans a maximal positive definite line.</p>
+<p><strong>A maximal isotropic plane.</strong> $\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\}$: real dimension $2$, over $\mathbb{C}$ it is the single line $\mathbb{C}(e_0+e_1)$, and it is maximal because the Witt index over $\mathbb{R}$ is $2$.</p>
+<p><strong>The link at a point.</strong> For $\tilde{Q}=(e_0+e_1)/\sqrt2$ one has $\|\tilde{Q}\|_E=1$ and $[\,\tilde{Q},\tilde{Q}]=0$: the point $S^{1}\times S^{5}$ of the link is reached by normalising, and the circle is the phase of the complex coefficient.</p>
+<h2 id="summary">Summary</h2>
+<p>The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, smooth away from its apex, connected, with link and punctured homotopy type $S^{1}\times S^{5}$. It is distinct from the complex norm cone of the zero divisors: neither contains the other, the two meet in a cone of real dimension $5$, and the lines $\mathbb{C}(e_0\pm ie_1)$ are null for both forms. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the isometry group acts transitively on the maximal ones. The isotropic complex lines are the points of $S^{5}$, the boundary sphere of the positive half of the ball; the centre $S^{1}$ is the difference between the punctured cone and the space of isotropic lines.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{K}=\{\tilde{Q}:[\tilde{Q},\tilde{Q}]=0\}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$</td>
+<td>The Krein null set</td>
+</tr>
+<tr>
+<td>$S^{1}\times S^{5}$</td>
+<td>The link of the null cone and the homotopy type of $\mathcal{K}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathcal{N}=\{N(\tilde{Q})=0\}$</td>
+<td>The norm cone of the zero divisors</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_0\pm ie_1)$</td>
+<td>Doubly null isotropic lines</td>
+</tr>
+<tr>
+<td>$\min(p,q)=1$ over $\mathbb{C}$, $2$ over $\mathbb{R}$</td>
+<td>The Witt index</td>
+</tr>
+<tr>
+<td>$\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$</td>
+<td>The maximal isotropic real plane</td>
+</tr>
+<tr>
+<td>$\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$</td>
+<td>Totally isotropic subspace</td>
+</tr>
+<tr>
+<td>$S^{5}$</td>
+<td>The space of isotropic complex lines</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the norm cone that the Krein null set is compared with</li>
+<li><em>Krein Orthogonality and the Fundamental Decomposition</em> (<code>articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md</code>), for the complements used here</li>
+<li><em>The Krein Level Sets and the Hyperbolic Structure</em> (<code>articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md</code>), for the ball whose boundary is the isotropic sphere</li>
+<li><em>Biquaternion Topology</em> (<code>articles_maths/biquaternion-topology.md</code>), for the projective geometry of the norm's null cone</li>
+<li><em>Witt's Theorems</em> (<code>articles_maths/witts-theorems.md</code>), for the extension and transitivity theorems for forms</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for isotropic subspaces, the Witt index and neutrality in a Krein space</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

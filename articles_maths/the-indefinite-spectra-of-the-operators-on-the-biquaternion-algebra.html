@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Indefinite Spectra of the Operators on the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-indefinite-spectra-of-the-operators-on-the-biquaternion-algebra"><strong>The Indefinite Spectra of the Operators on the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spectral theory of the Hermitian adjoint on the biquaternion algebra gives the spectra of the left and right multiplications and of the sandwich, and reads self-adjointness, positivity and unitarity off the element spectrum (<em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, <em>Biquaternion Spectral Theory</em>). This article does the same for the <strong>Krein adjoint</strong> $T^{\dagger}=J\,T^{*}J$ of <em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em>. Two facts govern the answer. First, the $J$-self-adjoint operators of the three families are very few: the left and right multiplications by real scalars, and the sandwiches with a parameter in the centre or in the vector subspace. Second, on those families the spectrum comes out <strong>real with signs</strong>: for the sandwich with a vector parameter the spectrum is the pair $\pm|N(\tilde{Q})|$ with multiplicity two each, so the operator has an <strong>inertia</strong> $(2,2)$, while a central parameter gives $(4,0)$; the case $N=0$ degenerates to a single nilpotent value. The general Krein theory allows a non-real spectrum, symmetric about the real axis, and the algebra exhibits it as soon as a mixed sum of a left and a right multiplication is admitted.</p>
+<p>The general theory is <em>Spectral Theory on Krein Spaces</em> and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>; the definite counterpart is <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>; the operator classes are <em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em>; the element spectra that the operator spectra are read from are <em>Biquaternion Spectral Theory</em>; and the symmetry is <em>The Fundamental Symmetry of the Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{X})=\tilde{Q}\tilde{X}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $N(\tilde{Q})=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.</p>
+<h2 id="the-spectral-rules-of-the-definite-case">The Spectral Rules of the Definite Case</h2>
+<p>The following rules are quoted from the sibling article and are the input to everything below.</p>
+<ul>
+<li>$\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\Phi(\tilde{Q}))$ with each eigenvalue of multiplicity two, and the same for $R_{\tilde{Q}}$.</li>
+<li>If $\Phi(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1,\lambda_2$, then
+$$
+\mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\{\lambda_i\bar\lambda_j\}_{i,j=1}^{2}.
+$$</li>
+</ul>
+<p><strong>Proof.</strong> These are the Kronecker forms $L_{\tilde{Q}}=\Phi(\tilde{Q})\otimes I$, $R_{\tilde{R}}=I\otimes\Phi(\tilde{R})^{\mathsf T}$ and $\Theta_{\tilde{Q}}=\Phi(\tilde{Q})\otimes\overline{\Phi(\tilde{Q})}$ of <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, whose spectra are the sums and products of the spectra of the factors.</p>
+<h2 id="the-math24-self-adjoint-left-and-right-multiplications">The $J$-Self-Adjoint Left and Right Multiplications</h2>
+<p><strong>Theorem.</strong> A left multiplication $L_{\tilde{Q}}$ is $J$-self-adjoint exactly for $\tilde{Q}\in\mathbb{R}e_0$, and then</p>
+<p>$$
+\mathrm{spec}\bigl(L_{te_0}\bigr)=\{t\}\ \text{with multiplicity }4,\qquad t\in\mathbb{R},
+$$</p>
+<p>so the spectrum is real and the operator is a real scalar.</p>
+<p><strong>Proof.</strong> The criterion is that of <em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em>, §<em>The $J$-Adjoint of the Three Families</em>; a scalar multiple of the identity has the single eigenvalue $t$ with multiplicity $\dim_{\mathbb{C}}\mathbb{B}=4$.</p>
+<p><strong>Remark (why there is no non-real case here).</strong> A real quaternion $\tilde{Q}=t+\sum_kq_ke_k$ has the two eigenvalues $\lambda=t+i|\mathbf{q}|$ and $\bar\lambda$ of $\Phi(\tilde{Q})$ (<em>Biquaternion Spectral Theory</em>, §<em>The Biquaternion Spectrum</em>), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\mathbf{q}=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.</p>
+<p><strong>Proof.</strong> The eigenvalues of a real quaternion are those of its $2\times2$ matrix, computed in <em>Biquaternion Spectral Theory</em>; the collapse is the criterion above.</p>
+<h2 id="the-math44-self-adjoint-sandwiches">The $J$-Self-Adjoint Sandwiches</h2>
+<p><strong>Theorem (the two regimes).</strong> Let $\Theta_{\tilde{Q}}$ be a sandwich with $\tilde{Q}$ in $\mathbb{C}_{\mathbb{B}}\cup\mathbb{V}_{\mathbb{B}}$ — the $J$-self-adjoint sandwiches of <em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em>.</p>
+<ul>
+<li>If $\tilde{Q}=\zeta e_0$ is central, then $\Theta_{\tilde{Q}}=|\zeta|^{2}\,\mathrm{id}$ and
+$$
+\mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\bigl\{|\zeta|^{2}\bigr\}\ \text{with multiplicity }4,\qquad\text{inertia }(4,0).
+$$</li>
+<li>If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $N(\tilde V)\neq0$, then
+$$
+\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\bigl\{|N(\tilde V)|,\,|N(\tilde V)|,\,-|N(\tilde V)|,\,-|N(\tilde V)|\bigr\},\qquad\text{inertia }(2,2).
+$$</li>
+<li>If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ has $N(\tilde V)=0$, then $\Theta_{\tilde{V}}$ is nilpotent of order two, $\Theta_{\tilde{V}}^{2}=0$, and
+$$
+\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\{0\}\ \text{with multiplicity }4.
+$$</li>
+</ul>
+<p><strong>Proof.</strong> For a central parameter, $\Theta_{\zeta e_0}(\tilde{X})=\zeta\tilde{X}\bar\zeta=|\zeta|^{2}\tilde{X}$, which is the first line. For a vector parameter, $\tilde V^{2}=-N(\tilde V)e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{N(\tilde V)}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-N(\bar{\tilde V})e_0=-\overline{N(\tilde V)}e_0$; hence
+$$
+\Theta_{\tilde V}^{2}(\tilde{X})=\tilde V^{2}\tilde X(\tilde V^{\dagger})^{2}=|N(\tilde V)|^{2}\tilde X,
+$$
+so $\Theta_{\tilde V}^{2}=|N(\tilde V)|^{2}\mathrm{id}$. If $N(\tilde V)\neq0$ the matrix $\Phi(\tilde V)$ is traceless with $\Phi(\tilde V)^{2}=-N(\tilde V)I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{N(\tilde V)}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $N(\tilde V)=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.</p>
+<p><strong>Corollary (the sandwich is definitizable except at the null elements).</strong> A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde V$ with $N(\tilde V)=0$; in that case its spectrum is the real pair $\pm|N(\tilde Q)|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of <em>Definitizable Operators and the Krein–Naĭmark Theorem</em>.</p>
+<p><strong>Proof.</strong> The theorem gives the two diagonalisable regimes; the nilpotent case has no basis of eigenvectors.</p>
+<p><strong>Remark (the sign structure).</strong> The signs are the content of the indefinite theory: the sandwich of a vector parameter of nonzero norm has exactly two positive and two negative eigenvalues, whereas the definite sibling's sandwich of a Hermitian element is positive and has non-negative spectrum. The two regimes $(4,0)$ and $(2,2)$ are the two possible inertias of a $J$-self-adjoint sandwich on a space of complex dimension four, and they are the "signature of the sandwich operator" alluded to in the sibling article.</p>
+<h2 id="the-symmetry-of-the-spectrum">The Symmetry of the Spectrum</h2>
+<p><strong>Theorem.</strong> For every $J$-self-adjoint operator $T$ on $\mathbb{B}$ the spectrum is symmetric under conjugation, $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$, and the algebraic multiplicities of $\lambda$ and $\bar\lambda$ coincide.</p>
+<p><strong>Proof.</strong> $T^{\dagger}=T$ gives $T^{*}=JTJ$, so $T$ is similar to its adjoint; a matrix is similar to its adjoint only... precisely, $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ for every operator and $\mathrm{spec}(JTJ)=\mathrm{spec}(T)$, so $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$; the multiplicities agree because similarity preserves the characteristic polynomial up to conjugation.</p>
+<p><strong>Corollary (the symmetry is visible in the two regimes).</strong> In the regime $(4,0)$ the symmetry is vacuous (a real multiple of the identity); in the regime $(2,2)$ it pairs $|N|$ with itself and $-|N|$ with itself; and it constrains any non-real $J$-self-adjoint spectrum of the algebra to consist of conjugate pairs.</p>
+<p><strong>Proof.</strong> Immediate from the theorem and the spectra computed above.</p>
+<h2 id="the-mixed-sums-and-the-non-real-spectrum">The Mixed Sums and the Non-Real Spectrum</h2>
+<p>The symmetry is a constraint, not a triviality: away from the three families the algebra has $J$-self-adjoint operators with genuinely non-real spectrum.</p>
+<p><strong>Theorem.</strong> The operator</p>
+<p>$$
+T=L_{e_1}+R_{e_1}
+$$</p>
+<p>is $J$-self-adjoint, and</p>
+<p>$$
+\mathrm{spec}(T)=\{2i,\,-2i,\,0,\,0\}.
+$$</p>
+<p><strong>Proof.</strong> $J$-self-adjointness is $(L_{\tilde{Q}})^{\dagger}+(R_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}+L_{\bar{\tilde{Q}}}$, which for $\tilde{Q}=e_1$ (real coefficients) returns $L_{e_1}+R_{e_1}$; the sum is a "Sylvester" operator, and the rule $\mathrm{spec}(L_{\tilde{Q}}+R_{\tilde{Q}})=\{\lambda_i+\lambda_j\}$ for the eigenvalues $\lambda_i$ of $\Phi(\tilde{Q})$ (<em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>, §<em>The Spectrum of the Sylvester Operator</em>) applied to $\Phi(e_1)=i\sigma_1$ with eigenvalues $\pm i$ gives $\{i+i,i-i,-i+i,-i-i\}=\{2i,0,0,-2i\}$.</p>
+<p><strong>Remark.</strong> The spectrum is non-real and symmetric about the real axis, exactly as the general theory of <em>Spectral Theory on Krein Spaces</em> predicts, and the operator is $J$-self-adjoint but not definitizable; it is therefore a $J$-self-adjoint operator of the algebra to which the Krein–Naĭmark theory does not apply, in contrast with the sandwiches of §<em>The $J$-Self-Adjoint Sandwiches</em>.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A central scalar.</strong> $\tilde{Q}=t e_0$, $t\in\mathbb{R}$: $L_{\tilde{Q}}$ is $J$-self-adjoint with spectrum $\{t\}$ of multiplicity four.</p>
+<p><strong>A real quaternion.</strong> $\tilde{Q}=\tfrac12+\tfrac{\sqrt3}{2}e_1$: $N(\tilde{Q})=1$ and the eigenvalues of $\Phi(\tilde{Q})$ are $e^{\pm i\pi/3}$; $L_{\tilde{Q}}$ is a unit-norm element, but it is <strong>not</strong> $J$-self-adjoint, and its spectrum $\{e^{\pm i\pi/3}\}$ is not the $J$-self-adjoint spectrum. It is $J$-unitary as a sandwich, by $|N|=1$.</p>
+<p><strong>A vector sandwich of nonzero norm.</strong> $\tilde{Q}=e_1$: $\mathrm{spec}(\Theta_{e_1})=\{1,1,-1,-1\}$, inertia $(2,2)$; the operator is $J$-self-adjoint and $J$-unitary.</p>
+<p><strong>A vector sandwich of zero norm.</strong> $\tilde{Q}=e_1+ie_2$: $N=0$, so $\Theta_{\tilde{Q}}^{2}=0$ and the spectrum is $\{0\}$; the sandwich of a null vector is nilpotent.</p>
+<p><strong>A central phase.</strong> $\tilde{Q}=e^{i\theta}e_0$: $\Theta_{\tilde{Q}}=\mathrm{id}$, spectrum $\{1\}$ of multiplicity four, inertia $(4,0)$.</p>
+<p><strong>The non-real example.</strong> $T=L_{e_1}+R_{e_1}$: spectrum $\{2i,-2i,0\}$, non-real, symmetric, not definitizable.</p>
+<h2 id="summary">Summary</h2>
+<p>For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of the three families are few and their spectra are real with signs. A left or right multiplication is $J$-self-adjoint exactly for a real scalar parameter, and then the spectrum is that scalar with multiplicity four. A sandwich is $J$-self-adjoint exactly for a parameter in the centre or in the vector subspace, and there are two regimes: a central parameter gives $|\zeta|^{2}$ with multiplicity four and inertia $(4,0)$, while a vector parameter of nonzero norm gives the real pair $\pm|N(\tilde{Q})|$ with multiplicity two each and inertia $(2,2)$; a null vector parameter gives the nilpotent operator $\Theta_{\tilde{Q}}^{2}=0$ with the single spectrum $\{0\}$. Every $J$-self-adjoint operator has a spectrum symmetric under conjugation with matching multiplicities, and this is the only general constraint: away from the three families the algebra carries $J$-self-adjoint operators with non-real spectrum, the simplest being $L_{e_1}+R_{e_1}$ with $\{2i,-2i,0\}$, which is not definitizable.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T^{\dagger}=JT^{*}J$</td>
+<td>The Krein adjoint</td>
+</tr>
+<tr>
+<td>$\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\Phi(\tilde{Q}))$ (twice)</td>
+<td>Rule for the left multiplication</td>
+</tr>
+<tr>
+<td>$L_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{R}e_0$, spectrum $\{t\}$ (mult. 4)</td>
+<td>The left-multiplication case</td>
+</tr>
+<tr>
+<td>$\mathrm{spec}(\Theta_{\zeta e_0})=\{\lvert\zeta\rvert^{2}\}$ (mult. 4), inertia $(4,0)$</td>
+<td>The central regime</td>
+</tr>
+<tr>
+<td>$\mathrm{spec}(\Theta_{\tilde V})=\{\pm\lvert N(\tilde V)\rvert\}$ (mult. 2), inertia $(2,2)$</td>
+<td>The vector regime</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde V}^{2}=0$, $\mathrm{spec}=\{0\}$</td>
+<td>The null-vector regime</td>
+</tr>
+<tr>
+<td>$\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$</td>
+<td>The general symmetry</td>
+</tr>
+<tr>
+<td>$\mathrm{spec}(L_{e_1}+R_{e_1})=\{2i,-2i,0\}$</td>
+<td>A non-real, non-definitizable spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Spectral Theory on Krein Spaces</em> (<code>articles_maths/spectral-theory-on-krein-spaces.md</code>) and <em>Definitizable Operators and the Krein–Naĭmark Theorem</em> (<code>articles_maths/definitizable-operators-and-the-krein-naimark-theorem.md</code>), for the indefinite spectral theory and definitizability</li>
+<li><em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em> (<code>articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md</code>), for the definite spectral rules quoted here</li>
+<li><em>J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra</em> (<code>articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md</code>), for the $J$-self-adjointness criteria</li>
+<li><em>The Fundamental Symmetry of the Biquaternion Algebra</em> (<code>articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md</code>), for $J$ and its eigenspaces</li>
+<li><em>Indefinite Positivity and the Krein Cone of the Biquaternion Algebra</em> (<code>articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md</code>), for the indefinite cone and the $J$-Cartan involution</li>
+<li><em>Biquaternion Spectral Theory</em> (<code>articles_maths/biquaternion-spectral-theory.md</code>), for the element spectra and the Cayley–Hamilton functionals</li>
+<li>Israel Gohberg, Peter Lancaster and Leiba Rodman, <em>Indefinite Linear Algebra and Applications</em> (Birkhäuser, 2005), for the spectra, the inertias and the normal forms of indefinite operators</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

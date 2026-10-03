@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Euclidean Topology of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-euclidean-topology-of-the-biquaternion-algebra"><strong>The Euclidean Topology of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hermitian form of the biquaternion algebra $\mathbb{B}$ — the sesquilinear inner product $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_{\bar\mu}Q_\mu$ built on the antilinear conjugation ${}^{*}$ — makes $\mathbb{B}$ into a complex Hilbert space whose real part is a Euclidean inner product, and the topology it defines is the topology in which every topological statement of the corpus is made. This article reads the topology of $\mathbb{B}$ <strong>from the Hermitian form</strong>: the Euclidean norm, the linear isometry onto $\mathbb{R}^{8}$, the Hilbert-space structure and the Riemannian metric; the normed-algebra inequality with its sharp constant; the contractibility of the algebra and of its six distinguished subspaces; and the Euclidean unit sphere $S^{7}_{E}$, which — unlike the level sets of the biquaternion norm — is a genuine sphere but is not a group and contains zero divisors.</p>
+<p>The readings collected here are the Hermitian half of the former joint treatment of the ambient topology. The bilinear half — the null cone, its link and the projective geometry of the norm — is <em>Biquaternion Topology</em>, which quotes this article for the Euclidean structure and the contractibility. The two forms are compared in <em>The Hermitian Form on the Biquaternion Algebra</em> and <em>The Bilinear Form on the Biquaternion Algebra</em>; the matrix reading of the Euclidean norm is <em>The Unit Group and the Frobenius Norm in the Matrix Representation</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and a general element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, the inner product is $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_{\bar\mu}Q_\mu$, the Euclidean norm is $\|\tilde{Q}\|_E=\bigl(\sum_\mu|Q_\mu|^{2}\bigr)^{1/2}=\bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\bigr)^{1/2}$, and the biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$.</p>
+<h2 id="the-euclidean-norm-and-the-isometry-onto-math17">The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$</h2>
+<p>The real part of the inner product is a genuine inner product. Write $\tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ and introduce the real inner product</p>
+<p>$$
+(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\,\langle\tilde{P},\tilde{Q}\rangle=\sum_{\mu=0}^{3}\bigl(p_\mu q_\mu+p'_\mu q'_\mu\bigr).
+$$</p>
+<p><strong>Proposition.</strong> $(\cdot,\cdot)_{\mathbb{R}}$ is a positive definite real inner product on $\mathbb{B}$, of the form $\mathrm{Re}\langle\tilde{P},\tilde{Q}\rangle$, and its associated norm is $\|\tilde{Q}\|_E$.</p>
+<p><strong>Proof.</strong> Bilinearity over $\mathbb{R}$ is immediate from the definition; symmetry follows from $\langle\tilde{P},\tilde{Q}\rangle^{*}=\langle\tilde{Q},\tilde{P}\rangle$; and $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ is positive off zero, since a vanishing sum of squares forces $q_\mu=q'_\mu=0$. The associated norm is the square root of $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$.</p>
+<p><strong>Theorem (the isometry).</strong> The coefficient map</p>
+<p>$$
+\iota:\mathbb{B}\longrightarrow\mathbb{R}^{8},\qquad \tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu\longmapsto(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3),
+$$</p>
+<p>is a linear isometry of $(\mathbb{B},(\cdot,\cdot)_{\mathbb{R}})$ onto $\mathbb{R}^{8}$ with the standard inner product. Equivalently, $\mathbb{B}\cong\mathbb{C}^{4}$ as a complex Hilbert space with orthonormal basis $e_0,e_1,e_2,e_3$.</p>
+<p><strong>Proof.</strong> The map is bijective and $\mathbb{R}$-linear because $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ is a real basis; it preserves the inner product by the displayed formula. The complex structure is the central multiplication by $i$, which acts as $i$ on each coefficient, so the $\mathbb{C}$-span of the same four vectors is $\mathbb{B}$ and the complex inner product is $\langle\cdot,\cdot\rangle$.</p>
+<p>Two consequences are used throughout. First, $\mathbb{B}$ is <strong>complete</strong> in $\|\cdot\|_E$: it is finite-dimensional, and a finite-dimensional inner product space is a Hilbert space. Second, $\|\cdot\|_E$ defines the unique Hausdorff vector-space topology on $\mathbb{B}$, the <strong>Euclidean topology</strong>, and this is the topology of the corpus. The metric is $d(\tilde{P},\tilde{Q})=\|\tilde{P}-\tilde{Q}\|_E$.</p>
+<p><strong>Remark (distinct from the bilinear norm).</strong> The corpus carries a second quadratic function, the biquaternion norm $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$, complex-valued and indefinite; it is not a norm and defines no topology. The two agree on the quaternion subspace and differ by a sign on the anti-quaternion subspace (<em>Biquaternion Norm and Invertibility</em>, §<em>The Euclidean Norm and the Hermitian Form</em>). Everything topological uses $\|\cdot\|_E$, never $N$.</p>
+<h2 id="the-algebra-as-a-normed-algebra">The Algebra as a Normed Algebra</h2>
+<p>The multiplication is continuous, and the estimate is sharp.</p>
+<p><strong>Theorem (the normed-algebra inequality).</strong> For all $\tilde{Q},\tilde{R}\in\mathbb{B}$,</p>
+<p>$$
+\|\tilde{Q}\tilde{R}\|_E\leq\sqrt{2}\,\|\tilde{Q}\|_E\|\tilde{R}\|_E,
+$$</p>
+<p>and the constant $\sqrt{2}$ cannot be lowered.</p>
+<p><strong>Proof.</strong> Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Element Representation</em>, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{X})\|_F=\sqrt2\|\tilde{X}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm (<em>The Forms in the Matrix Representation of the Biquaternion Algebra</em>, §<em>The Inner Product as the Hilbert–Schmidt Pairing</em>). The Frobenius norm is submultiplicative, so
+$$
+\sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\Phi(\tilde{Q})\Phi(\tilde{R})\|_F\leq\|\Phi(\tilde{Q})\|_F\|\Phi(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
+$$
+which is the inequality. For sharpness take $\tilde{Q}=\tilde{R}=e_0+ie_1$: then $\tilde{Q}^{2}=2e_0+2ie_1$ and $\|\tilde{Q}\|_E^{2}=2$, $\|\tilde{Q}^{2}\|_E=2\sqrt2$, so $\|\tilde{Q}^{2}\|_E=\sqrt2\,\|\tilde{Q}\|_E^{2}$.</p>
+<p><strong>Corollary.</strong> Multiplication $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$ is continuous, inversion is continuous on the units, and $\mathbb{B}$ is a topological algebra over $\mathbb{R}$ with $\mathbb{B}^{\times}$ a topological group.</p>
+<p><strong>Proof.</strong> The inequality bounds the product in terms of the factors; inversion is $N(\tilde{Q})^{-1}\tilde{Q}^{\natural}$-based and $N^{-1}$ is continuous off the closed null cone, so the standard arguments apply; the group axioms with continuous operations give a topological group.</p>
+<p><strong>Proposition (the isometries that the algebra supplies).</strong> Multiplication by a central element and the conjugations are orthogonal:</p>
+<p>$$
+\|(z e_0)\tilde{Q}\|_E=|z|\,\|\tilde{Q}\|_E,\qquad
+\|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
+$$</p>
+<p>Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{*}$ is a Euclidean isometry.</p>
+<p><strong>Proof.</strong> A central multiplier scales every coefficient by $z$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.</p>
+<h2 id="the-contractibility-of-the-algebra">The Contractibility of the Algebra</h2>
+<p><strong>Theorem.</strong> $\mathbb{B}$ is contractible; hence it is path-connected and simply connected, with $\pi_n(\mathbb{B})=0$ for every $n\geq1$.</p>
+<p><strong>Proof.</strong> The straight-line homotopy $H(t,\tilde{Q})=(1-t)\tilde{Q}$, $t\in[0,1]$, is jointly continuous with $H(0,\cdot)=\mathrm{id}$ and $H(1,\cdot)\equiv0$, so the identity is homotopic to a constant map.</p>
+<p><strong>Corollary (the fixed subspaces).</strong> The centre, the vector subspace, the Hermitian subspace, the anti-Hermitian subspace, the quaternion subspace and the anti-quaternion subspace are each contractible, the homotopy above preserving every linear subspace, so each is a point as far as homotopy is concerned:</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^{2},\qquad
+\mathbb{V}_{\mathbb{B}}\cong\mathbb{R}^{6},\qquad
+\mathbb{H}_{\mathbb{B}}\cong i\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4},\qquad
+\mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4}.
+$$</p>
+<p><strong>Proof.</strong> Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of <em>Biquaternion Relations Between Subspaces</em>.</p>
+<p><strong>Corollary.</strong> Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the null cone and the spheres.</p>
+<p><strong>Proof.</strong> Immediate from the theorem.</p>
+<p>The complement of the null cone is dense in $\mathbb{B}$, because the null cone is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (<em>Biquaternion Topology</em>, §<em>The null cone</em>); this is what makes the group of units, an open dense subset, carry the topology it does.</p>
+<h2 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h2>
+<p>$$
+S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^{7}
+$$</p>
+<p>is, by the isometry of §<em>The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$</em>, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the <strong>wrong</strong> sphere for the algebra, and the reason is that $\|\cdot\|_E$ is not multiplicative: for $\tilde{Q}=e_1+ie_2$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|_E=\sqrt2$, so</p>
+<p>$$
+\tilde{Q}_0=\frac{e_1+ie_2}{\sqrt2}\in S^{7}_{E},\qquad N(\tilde{Q}_0)=0,
+$$</p>
+<p>and $\tilde{Q}_0$ is a zero divisor. Hence $S^{7}_{E}\not\subseteq\mathbb{B}^{\times}$ and $S^{7}_{E}$ is not a subgroup of $\mathbb{B}^{\times}$.</p>
+<p><strong>Proposition (the sphere meets the null cone in a compact $5$-manifold).</strong> The intersection $S^{7}_{E}\cap\mathcal{N}$, with $\mathcal{N}=\{N=0\}$, is a compact real $5$-manifold without boundary, homeomorphic to the link of the null cone.</p>
+<p><strong>Proof.</strong> The null cone is a real algebraic cone of real dimension $6$ with its only singular point at the origin (<em>Biquaternion Topology</em>, §<em>The null cone</em>); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, and it is the link by definition (<em>Biquaternion Topology</em>, §<em>The link of the null cone</em>).</p>
+<p><strong>Remark (the three spherical level sets).</strong> The algebra carries three level sets that look like unit spheres, and they are genuinely different objects; only the group-theoretic ones are developed in <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Level set</th>
+<th>Geometry</th>
+<th>Algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\|\tilde{Q}\|_E=1$</td>
+<td>$S^{7}$, compact $7$-manifold</td>
+<td>no group structure; contains zero divisors</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q})=1$</td>
+<td>non-compact real $6$-manifold, homotopy equivalent to $S^{3}$</td>
+<td>closed subgroup $\mathbb{B}^{\times}_1$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{*}\tilde{Q}=e_0$</td>
+<td>$\cong S^{1}\times S^{3}$</td>
+<td>closed subgroup $U(\mathbb{B})\cong U(2)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The middle row is <em>The Biquaternion Unit Group as a Topological Group</em>; the bottom row is <em>The Unitary Group of the Biquaternion Algebra</em>, where the retraction of the group of units onto it is proved.</p>
+<h2 id="the-hilbert-space-and-the-duality">The Hilbert Space and the Duality</h2>
+<p>The inner product $\langle\cdot,\cdot\rangle$ makes $\mathbb{B}$ a Hilbert space of complex dimension four, and the real inner product $(\cdot,\cdot)_{\mathbb{R}}$ a Euclidean space of dimension eight. Two structures follow and are recorded here because later articles use them.</p>
+<p><strong>The Riesz duality.</strong> Every $\mathbb{C}$-linear functional on $\mathbb{B}$ is $\tilde{Q}\mapsto\langle\tilde{P},\tilde{Q}\rangle$ for a unique $\tilde{P}$; every $\mathbb{R}$-linear functional is $(\tilde{P},\cdot)_{\mathbb{R}}$ for a unique $\tilde{P}$. This is the finite-dimensional Riesz representation theorem, and it is what makes the adjoint operations of the operator articles well defined.</p>
+<p><strong>The Riemannian metric.</strong> $(\cdot,\cdot)_{\mathbb{R}}$ is the flat Riemannian metric of $\mathbb{B}\cong\mathbb{R}^{8}$; the orthogonal group $O(8)$ is its isometry group, and the $\mathbb{C}$-linear isometries that preserve the algebra structure are exactly the inner automorphisms by the unitary biquaternions, of group $PU(2)\cong SO(3)$ (<em>Biquaternion Automorphisms and Derivations</em>). Over $\mathbb{R}$ the coefficient conjugation adds one more coset, since it is an $\mathbb{R}$-algebra automorphism of unit Euclidean norm, so the real-linear automorphisms that are Euclidean isometries form $PU(2)\rtimes\mathbb{Z}/2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian form equips $\mathbb{B}$ with the real inner product $(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\sum_\mu P_{\bar\mu}Q_\mu$ and the Euclidean norm $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$, equivalently $\mathbb{B}\cong\mathbb{C}^{4}$ as a complex Hilbert space. Multiplication satisfies the sharp inequality $\|\tilde{Q}\tilde{R}\|_E\leq\sqrt2\|\tilde{Q}\|_E\|\tilde{R}\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its six distinguished subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The three spherical level sets — Euclidean, norm-one and unitary — are distinct, and only the last two are groups.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\tilde{P},\tilde{Q})_{\mathbb{R}}=\mathrm{Re}\,\langle\tilde{P},\tilde{Q}\rangle$</td>
+<td>Real inner product; positive definite</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\iota:\mathbb{B}\to\mathbb{R}^{8}$</td>
+<td>Linear isometry onto $\mathbb{R}^{8}$</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\tilde{R}\|_E\leq\sqrt2\|\tilde{Q}\|_E\|\tilde{R}\|_E$</td>
+<td>Normed-algebra inequality, sharp</td>
+</tr>
+<tr>
+<td>$H(t,\tilde{Q})=(1-t)\tilde{Q}$</td>
+<td>Contraction of $\mathbb{B}$ to $0$</td>
+</tr>
+<tr>
+<td>$S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$</td>
+<td>Euclidean unit sphere; not a group</td>
+</tr>
+<tr>
+<td>$S^{7}_{E}\cap\mathcal{N}$</td>
+<td>Compact $5$-manifold; the link of the null cone</td>
+</tr>
+<tr>
+<td>$O(8)$</td>
+<td>Isometry group of the Euclidean structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Hermitian Form on the Biquaternion Algebra</em> (<code>articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md</code>), for the form whose topology this article reads</li>
+<li><em>Biquaternion Topology</em> (<code>articles_maths/biquaternion-topology.md</code>), for the null cone and its projective geometry, and the link used here</li>
+<li><em>The Unitary Group of the Biquaternion Algebra</em> (<code>articles_maths/the-unitary-group-of-the-biquaternion-algebra.md</code>), for the group of the unitary level set</li>
+<li><em>The Unit Group and the Frobenius Norm in the Matrix Representation</em> (<code>articles_maths/the-unit-group-and-the-frobenius-norm-in-the-matrix-representation.md</code>), for the matrix reading of $\|\cdot\|_E$</li>
+<li><em>Biquaternion Norm and Invertibility</em> (<code>articles_maths/biquaternion-norm-and-invertibility.md</code>), for the comparison of $\|\cdot\|_E$ with $N$</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em>, 2nd edition (Springer, 1990), for the finite-dimensional Hilbert-space facts used here</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
