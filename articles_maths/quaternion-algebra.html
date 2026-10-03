@@ -96,7 +96,7 @@ $$</p>
 <p>The notation $e_0, e_1, e_2, e_3$ avoids all three collisions. It also has the advantage of being uniform: the scalar unit $e_0$ is treated on the same footing as the vector units $e_1, e_2, e_3$, which makes the algebra look like a graded algebra with a single family of generators. This is the notation used throughout the corpus.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Non-commutative.</strong> Quaternion multiplication is not commutative: $e_1 e_2 = e_3$ but $e_2 e_1 = -e_3$.</p>
-<p><strong>Associative.</strong> Quaternion multiplication is associative: $(pq)r = p(qr)$.</p>
+<p><strong>Associative.</strong> Quaternion multiplication is associative: $(p\tilde q)r = p(\tilde q r)$.</p>
 <p><strong>Conjugation.</strong> The <strong>quaternion conjugate</strong> of $\tilde q$ is</p>
 <p>$$
 \tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
@@ -107,7 +107,7 @@ $$</p>
 <h3 id="the-vector-part-and-math41">The Vector Part and $\mathbb{R}^3$</h3>
 <p>The vector part $\mathbf{q}$ of a quaternion is identified with a vector in $\mathbb{R}^3$. Under this identification, the product of two quaternions is</p>
 <p>$$
-pq = (p_0 q_0 - \mathbf{p} \cdot \mathbf{q}) + (p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}),
+p\tilde q = (p_0 q_0 - \mathbf{p} \cdot \mathbf{q}) + (p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}),
 $$</p>
 <p>where $\mathbf{p} \cdot \mathbf{q}$ is the ordinary dot product and $\mathbf{p} \times \mathbf{q}$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.</p>
 <h2 id="the-algebra-structure">The Algebra Structure</h2>
@@ -128,11 +128,11 @@ $$</p>
 <h3 id="multiplication">Multiplication</h3>
 <p>The product of two quaternions is defined by extending the real multiplication bilinearly:</p>
 <p>$$
-pq = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} p_\mu q_\nu \, e_\mu e_\nu,
+p\tilde q = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} p_\mu q_\nu \, e_\mu e_\nu,
 $$</p>
 <p>where the products $e_\mu e_\nu$ are those of the quaternion algebra. In scalar-vector notation, this becomes</p>
 <p>$$
-pq = p_0 q_0 - \mathbf{p} \cdot \mathbf{q} + p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}.
+p\tilde q = p_0 q_0 - \mathbf{p} \cdot \mathbf{q} + p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}.
 $$</p>
 <h3 id="conjugations">Conjugations</h3>
 <p>There are <strong>three</strong> natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:</p>
@@ -243,7 +243,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, in which $e_0$ is the unit, the three imaginary units square to $-e_0$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every non-zero element is invertible, the inverse being expressed through the quaternion norm of <em>Quaternion Norm and Invertibility</em>. A general element is written in developed form as $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$.</p>
 <p>The algebra carries three conjugations, and each has its fixed-point subspace; the fundamental one is quaternion conjugation, whose fixed points form the real subspace $\mathbb{R}_{\mathbb{H}}$ and whose anti-fixed points form the vector subspace $\operatorname{Im}\mathbb{H}$. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every quaternion decomposes uniquely both as a scalar part plus a vector part and as the sum of the two eigencomponents.</p>
-<p>The commutator $[p,\tilde q] = pq - qp$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$; the vector subspace is thereby the orthogonal Lie algebra $\mathrm{SO}(3)$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance and belong to the topology group, in <em>Quaternion Norm and Invertibility</em>.</p>
+<p>The commutator $[p,\tilde q] = p\tilde q - \tilde q p$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$; the vector subspace is thereby the orthogonal Lie algebra $\mathrm{SO}(3)$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance and belong to the topology group, in <em>Quaternion Norm and Invertibility</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
