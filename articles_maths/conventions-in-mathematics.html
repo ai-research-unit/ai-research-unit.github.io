@@ -165,49 +165,8 @@
 <p>The conventions below fix how the elements themselves are written: the case and the tilde that name its
 algebra, the shape of a generic element and the letters of its coefficients, the marks reserved for the
 conjugations, and the symbol of the idempotents.</p>
-<h3 id="case-and-tildes">Case and tildes</h3>
-<p>A generic element is preferably written so that the glyph alone identifies its algebra. Two features are read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Algebra</th>
-<th>Glyph</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>the real numbers</td>
-<td>lower case, no tilde</td>
-<td>$q_\mu$, $t$, $x$</td>
-</tr>
-<tr>
-<td>the complex numbers</td>
-<td>upper case, no tilde</td>
-<td>$Q_\mu$, $Z$</td>
-</tr>
-<tr>
-<td>the quaternions and split-quaternions</td>
-<td>lower case, with tilde</td>
-<td>$\tilde q$</td>
-</tr>
-<tr>
-<td>the biquaternions and split-biquaternions</td>
-<td>upper case, with tilde</td>
-<td>$\tilde Q$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The conventions above already read through it, and it is worth saying so explicitly: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$. The case names the scalar sector, the tilde the presence of the quaternion factor, and the two are read independently: $q_\mu$ is a real number, $Z$ a complex, split-complex or dual number, $\tilde q$ a quaternion or split-quaternion, and $\tilde Q$ a biquaternion or split-biquaternion.</p>
-<p>For the commutative two-parameter systems the general element itself is written $Z = a + ib$ — with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers — so that the element carries the upper case and its two real coefficients the lower case.</p>
-<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
 <h3 id="the-element-and-its-coefficients">The element and its coefficients</h3>
-<p>The case and the tilde of the glyph are fixed above; the element itself is written as a linear combination of the basis with its coefficients in the scalar sector of the algebra. For the biquaternions, whose basis is $e_0, e_1, e_2, e_3$ with $e_0 = 1$ the unit,</p>
-<p>$$
-\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu = q_\mu + iq'_\mu,
-$$</p>
-<p>where the four coefficients $Q_\mu$ are complex, and each of them splits into a real part $q_\mu$ and an imaginary part $q'_\mu$. <strong>The two parts of a coefficient share its letter</strong>, the imaginary part carrying a prime.</p>
-<p>The shape is the same in the quaternion systems; only the coefficient sector changes.</p>
+<p>The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -219,16 +178,52 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>$\mathbb{2}$</td>
+<td>Booleans</td>
+<td>$\alpha, \beta, \dots$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathbb{N}$</td>
+<td>naturals</td>
+<td>$n, m, \dots$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}$</td>
+<td>integers</td>
+<td>$n, m, \dots$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>rationals</td>
+<td>$a, b, c, \dots$</td>
+<td>—</td>
+</tr>
+<tr>
 <td>$\mathbb{R}$</td>
 <td>reals</td>
-<td>$a$</td>
-<td>real</td>
+<td>$a, b, c$</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{C}$</td>
 <td>complex numbers</td>
-<td>$Z = a + ib$</td>
-<td>complex</td>
+<td>$A = a + ia'$, $B = b + ib'$</td>
+<td>real, $a, a'$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>split-complex numbers</td>
+<td>$A = a + ja'$, $B = b + jb'$</td>
+<td>real, $a, a'$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>dual numbers</td>
+<td>$A = a + \varepsilon a'$, $B = b + \varepsilon b'$</td>
+<td>real, $a, a'$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}$</td>
@@ -244,7 +239,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The unit $e_0$ is the identity in the two quaternion systems. The real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{C}$ and $\mathbb{B}$ and not in $\mathbb{R}$ or $\mathbb{H}$.</p>
+<p>Four rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. <strong>The four quaternionic elements carry a tilde</strong>: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And <strong>the arithmetic systems and the reals carry a letter that is theirs alone</strong>: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations.</p>
+<p>For the biquaternions, whose basis is $e_0, e_1, e_2, e_3$ with $e_0 = 1$ the unit,</p>
+<p>$$
+\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu = q_\mu + iq'_\mu,
+$$</p>
+<p>where the four coefficients $Q_\mu$ are complex, and each of them splits into a real part $q_\mu$ and an imaginary part $q'_\mu$. <strong>The two parts of a coefficient share its letter</strong>, the imaginary part carrying a prime. The shape is the same in the quaternion systems; only the coefficient sector changes, and the table above gives the element and the coefficients of each system. The unit $e_0$ is the identity in the two quaternion systems, and the real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{C}$ and $\mathbb{B}$ and not in $\mathbb{R}$ or $\mathbb{H}$.</p>
+<p>The case and the tilde are read independently, and the glyph of a generic element is the two together: $a$ is real, $A$ complex, split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion.</p>
+<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
 <h3 id="the-conjugations-and-the-adjoint">The conjugations and the adjoint</h3>
 <p>The biquaternion algebra carries four natural involutions, all of them used in the series, together with the adjoint of an operator, which belongs to the operators and not to the algebra:</p>
 <div class="table-scroll"><table>
@@ -286,11 +288,11 @@ $$</p>
 <p>Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The four examples below fix it system by system.</p>
 <p><strong>The complex numbers $\mathbb{C}$.</strong> Only the bar has a sense, the algebra carrying a single non-trivial involution:</p>
 <p>$$
-\bar Z = a - ib .
+\bar A = a - ia' .
 $$</p>
 <p><strong>The split-complex numbers $\mathbb{D}$.</strong> Only the bar has a sense:</p>
 <p>$$
-\bar Z = a - jb , \qquad j^2 = +1 .
+\bar A = a - ja' , \qquad j^2 = +1 .
 $$</p>
 <p><strong>The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{s}}$.</strong> Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:</p>
 <p>$$
@@ -347,8 +349,8 @@ $$</p>
 <p>The conventions are of two kinds: the mathematical notation, and the working conventions of the corpus.</p>
 <p>A generic element of a number system is written as a linear combination of the basis with its coefficients in
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
-with $Q_\mu = q_\mu + iq'_\mu$. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a <strong>natural sign</strong>. The involution of the base extends to the coefficients and is written with a <strong>bar</strong>. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a <strong>star</strong>; its negative is the <strong>anti-Hermitian</strong> conjugation, written <strong>flat</strong>; and the <strong>dagger</strong> is the adjoint, which on the elements of a Hilbert algebra names the same map as the star. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.</p>
-<p>On the number systems the <strong>case</strong> records whether the commuting scalar sector is larger than the reals and the <strong>tilde</strong> records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $Z$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The <strong>idempotents</strong> carry a symbol of their own: $\tilde\Pi$ is an idempotent, a projector or a pure state, and the minimal left ideal it generates, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde is thus split between two roles, and the split is deliberate.</p>
+with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a <strong>natural sign</strong>. The involution of the base extends to the coefficients and is written with a <strong>bar</strong>. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a <strong>star</strong>; its negative is the <strong>anti-Hermitian</strong> conjugation, written <strong>flat</strong>; and the <strong>dagger</strong> is the adjoint, which on the elements of a Hilbert algebra names the same map as the star. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.</p>
+<p>On the number systems the <strong>case</strong> records whether the commuting scalar sector is larger than the reals and the <strong>tilde</strong> records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The <strong>idempotents</strong> carry a symbol of their own: $\tilde\Pi$ is an idempotent, a projector or a pure state, and the minimal left ideal it generates, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde is thus split between two roles, and the split is deliberate.</p>
 <p>The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading <code>+</code> marks a planned article. The four groups of a category — Theory, Operator Theory, <code>*</code> Theory and <code>*</code> Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group <code>Applications</code> closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of <em>Introduction to Mathematics</em> is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -390,6 +392,14 @@ with $Q_\mu = q_\mu + iq'_\mu$. The notation is fixed here above all for the con
 <tr>
 <td>tilde</td>
 <td>the presence of the quaternionic factor</td>
+</tr>
+<tr>
+<td>$\alpha, \beta$; $n, m$; $a, b, c$</td>
+<td>the generic elements of the Booleans, the naturals and the integers, and the rationals and the reals</td>
+</tr>
+<tr>
+<td>$A = a + ia'$, $B = b + ib'$</td>
+<td>the generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime</td>
 </tr>
 <tr>
 <td>$\tilde\Pi$</td>

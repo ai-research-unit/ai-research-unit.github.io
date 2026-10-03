@@ -78,48 +78,100 @@ $$</p>
 <p>$$
 Q_0 = q_0 + iq'_0, \qquad Q_1 = q_1 + iq'_1, \qquad Q_2 = q_2 + iq'_2, \qquad Q_3 = q_3 + iq'_3, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$</p>
-<p>replaces the four complex coefficients by <strong>eight real parameters</strong>: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the six subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Six Subspaces</em> and <em>The Prime Convention</em> below; nothing in them changes the split stated here.</p>
+<p>replaces the four complex coefficients by <strong>eight real parameters</strong>: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the six subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The element and its coefficients</em> and <em>The Six Subspaces</em> below; nothing in them changes the split stated here.</p>
 <p>One structural fact governs the whole series, so it is worth isolating. <strong>The scalar unit $i$ is central</strong>: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a <em>central</em> phase $e^{i\alpha}$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.</p>
 <p>As a complex algebra $\mathbb{B}$ is isomorphic to the full matrix algebra,</p>
 <p>$$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$</p>
 <p>and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in <em>The 2×2 Matrix Representation</em> below, and the development of the representation — the general element, the six subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article <em>The 2×2 Matrix Element Representation of Biquaternions</em>. Its two <strong>minimal left ideals</strong> are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.</p>
-<h3 id="case-and-tildes">Case and Tildes</h3>
-<p>A generic element is preferably written so that the glyph alone identifies its algebra. Two features are read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
+<h3 id="the-element-and-its-coefficients">The element and its coefficients</h3>
+<p>The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Algebra</th>
-<th>Glyph</th>
-<th>Example</th>
+<th>System</th>
+<th>Name</th>
+<th>Generic element</th>
+<th>Coefficients</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the real numbers</td>
-<td>lower case, no tilde</td>
-<td>$q_\mu$, $t$, $x$</td>
+<td>$\mathbb{C}$</td>
+<td>complex numbers</td>
+<td>$A = a + ia'$</td>
+<td>real, $a, a'$</td>
 </tr>
 <tr>
-<td>the complex numbers</td>
-<td>upper case, no tilde</td>
-<td>$Q_\mu$, $ct'$</td>
+<td>$\mathbb{H}$</td>
+<td>quaternions</td>
+<td>$\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$</td>
+<td>real</td>
 </tr>
 <tr>
-<td>the quaternions and split-quaternions</td>
-<td>lower case, with tilde</td>
-<td>$\tilde q$</td>
-</tr>
-<tr>
-<td>the biquaternions and split-biquaternions</td>
-<td>upper case, with tilde</td>
-<td>$\tilde Q$</td>
+<td>$\mathbb{B}$</td>
+<td>biquaternions</td>
+<td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
+<td>complex, $Q_\mu = q_\mu + iq'_\mu$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The notation of this article already reads through the convention, and it is worth saying so explicitly: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$. The case names the scalar sector, the tilde the presence of the quaternion factor.</p>
-<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols, and a split construction is qualified by a subscript where it must be separated from the non-split one.</p>
+<p>Three rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$. And <strong>the quaternionic elements carry a tilde</strong>: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$.</p>
+<p>The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.</p>
+<p><strong>What the prime marks.</strong> The prime belongs to the <strong>coefficients</strong>, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,</p>
+<p>$$
+Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}, \qquad \mu = 0, 1, 2, 3,
+$$</p>
+<p>gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coefficient</th>
+<th>real part</th>
+<th>attached to</th>
+<th>imaginary part</th>
+<th>attached to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_0$</td>
+<td>$q_0$</td>
+<td>$e_0$</td>
+<td>$q'_0$</td>
+<td>$ie_0$</td>
+</tr>
+<tr>
+<td>$Q_1$</td>
+<td>$q_1$</td>
+<td>$e_1$</td>
+<td>$q'_1$</td>
+<td>$ie_1$</td>
+</tr>
+<tr>
+<td>$Q_2$</td>
+<td>$q_2$</td>
+<td>$e_2$</td>
+<td>$q'_2$</td>
+<td>$ie_2$</td>
+</tr>
+<tr>
+<td>$Q_3$</td>
+<td>$q_3$</td>
+<td>$e_3$</td>
+<td>$q'_3$</td>
+<td>$ie_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The primed parameter is the one attached to $ie_\mu$, so <strong>the prime marks the slot that carries the $i$</strong>. It is not a label of a subspace, and it has nothing to do with the physical coordinates: the primes live on the $q$'s, which index the four basis elements, while $x, y, z, t, t'$ name the physical directions those $q$'s are read as. Grouped by the algebra's real-and-imaginary split, the four unprimed parameters are the coordinates of the quaternion subspace and the four primed ones those of the antiquaternion subspace,</p>
+<p>$$
+q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{H}_{\mathbb{B}}, \qquad iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 \in i\mathbb{H}_{\mathbb{B}} .
+$$</p>
+<p><strong>The three-and-one pattern.</strong> The two subspaces of the coefficient split are uniform: $\mathbb{H}_{\mathbb{B}}$ is carried entirely by unprimed parameters, $i\mathbb{H}_{\mathbb{B}}$ entirely by primed ones. Each of the two sectors, by contrast, is mixed, because each takes its scalar slot from one side of that split and its three vector slots from the other. The informational sector is $q_0e_0 + iq'_ke_k$ — unprimed scalar, primed vectors — and the material sector is $iq'_0e_0 + q_ke_k$ — primed scalar, unprimed vectors. Read by parameter, the primed set $\{q'_0, q'_1, q'_2, q'_3\}$ is therefore one material slot (the material time $q'_0$) and three informational ones (the informational space $q'_k$), rather than four belonging to a single sector; that mixed ownership is the same statement as the crossing of the two decompositions.</p>
+<p><strong>The alternative, and why it is not used.</strong> $\mathbb{H}_{\mathbb{B}}$, which takes its scalar slot from $\mathbb{M}_+$ and its vector slots from $\mathbb{M}_-$, would be split across the two primes under the alternative labelling, so that it could no longer be written with a single name. That alternative makes the prime mark the <strong>sector</strong> — all-primed for $\mathbb{M}_+$ against all-unprimed for $\mathbb{M}_-$ — which is uniform in the opposite direction, and the corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the informational time $ct'$ would be carried by a primed parameter although it is real, and the material time $ict$ by an unprimed one although it is imaginary. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in <em>Relations Between Subspaces</em>.</p>
+<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols.</p>
 <h3 id="the-conjugations-and-the-adjoint">The Conjugations and the Adjoint</h3>
 <p>The biquaternion algebra carries four natural involutions, all of them used in the series, together with
 the adjoint of an operator, which belongs to the operators and not to the algebra:</p>
@@ -159,20 +211,16 @@ the adjoint of an operator, which belongs to the operators and not to the algebr
 </tr>
 </tbody>
 </table></div>
-<p>Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The five examples below fix it system by system.</p>
+<p>Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The examples below fix it system by system.</p>
 <p><strong>The complex numbers $\mathbb{C}$.</strong> Only the bar has a sense, the algebra carrying a single non-trivial involution:</p>
 <p>$$
-\bar Z = a - ib .
+\bar A = a - ia' .
 $$</p>
-<p><strong>The split-complex numbers $\mathbb{D}$.</strong> Only the bar has a sense:</p>
-<p>$$
-\bar Z = a - jb, \qquad j^2 = +1 .
-$$</p>
-<p><strong>The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{s}}$.</strong> Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor; the formula is the same in both, read on the quaternion units for $\mathbb{H}$ and on the split units for $\mathbb{H}_{\mathrm{s}}$:</p>
+<p><strong>The quaternions $\mathbb{H}$.</strong> Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor:</p>
 <p>$$
 \tilde q^{\natural} = q_0e_0 - q_1e_1 - q_2e_2 - q_3e_3 .
 $$</p>
-<p><strong>The biquaternions $\mathbb{B}$ and the split-biquaternions.</strong> All four have a sense, the bar conjugating the coefficient, complex in $\mathbb{B}$ and split-complex in the split-biquaternions:</p>
+<p><strong>The biquaternions $\mathbb{B}$.</strong> All four have a sense, the bar conjugating the coefficient, which is complex:</p>
 <p>$$
 \bar{\tilde Q} = \bar Q_0e_0 + \bar Q_1e_1 + \bar Q_2e_2 + \bar Q_3e_3, \qquad \tilde Q^{\natural} = Q_0e_0 - Q_1e_1 - Q_2e_2 - Q_3e_3,
 $$</p>
@@ -345,63 +393,10 @@ $$</p>
 <p>$$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-
 $$</p>
-<p>pairs the two sectors — in this series' usage, <em>the sectors</em>, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as <em>The Prime Convention</em> below records.</p>
+<p>pairs the two sectors — in this series' usage, <em>the sectors</em>, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as <em>The element and its coefficients</em> above records.</p>
 <p><strong>The choice of which subspace is "real".</strong> The convention that has to be flagged is that $\mathbb{M}_-$ is the <em>anti</em>-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the <strong>field</strong> rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.</p>
-<h3 id="the-prime-convention">The Prime Convention</h3>
-<p><strong>What the prime marks.</strong> The prime belongs to the <strong>coefficients</strong>, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,</p>
-<p>$$
-Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}, \qquad \mu = 0, 1, 2, 3,
-$$</p>
-<p>gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>coefficient</th>
-<th>real part</th>
-<th>attached to</th>
-<th>imaginary part</th>
-<th>attached to</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$Q_0$</td>
-<td>$q_0$</td>
-<td>$e_0$</td>
-<td>$q'_0$</td>
-<td>$ie_0$</td>
-</tr>
-<tr>
-<td>$Q_1$</td>
-<td>$q_1$</td>
-<td>$e_1$</td>
-<td>$q'_1$</td>
-<td>$ie_1$</td>
-</tr>
-<tr>
-<td>$Q_2$</td>
-<td>$q_2$</td>
-<td>$e_2$</td>
-<td>$q'_2$</td>
-<td>$ie_2$</td>
-</tr>
-<tr>
-<td>$Q_3$</td>
-<td>$q_3$</td>
-<td>$e_3$</td>
-<td>$q'_3$</td>
-<td>$ie_3$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The primed parameter is the one attached to $ie_\mu$, so <strong>the prime marks the slot that carries the $i$</strong>. It is not a label of a subspace, and it has nothing to do with the physical coordinates: the primes live on the $q$'s, which index the four basis elements, while $x, y, z, t, t'$ name the physical directions those $q$'s are read as. Grouped by the algebra's real-and-imaginary split, the four unprimed parameters are the coordinates of the quaternion subspace and the four primed ones those of the antiquaternion subspace,</p>
-<p>$$
-q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{H}_{\mathbb{B}}, \qquad iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 \in i\mathbb{H}_{\mathbb{B}} .
-$$</p>
-<p><strong>The three-and-one pattern.</strong> The two subspaces of the coefficient split are uniform: $\mathbb{H}_{\mathbb{B}}$ is carried entirely by unprimed parameters, $i\mathbb{H}_{\mathbb{B}}$ entirely by primed ones. Each of the two sectors, by contrast, is mixed, because each takes its scalar slot from one side of that split and its three vector slots from the other. The informational sector is $q_0e_0 + iq'_ke_k$ — unprimed scalar, primed vectors — and the material sector is $iq'_0e_0 + q_ke_k$ — primed scalar, unprimed vectors. Read by parameter, the primed set $\{q'_0, q'_1, q'_2, q'_3\}$ is therefore one material slot (the material time $q'_0$) and three informational ones (the informational space $q'_k$), rather than four belonging to a single sector; that mixed ownership is the same statement as the crossing of the two decompositions.</p>
-<p><strong>The alternative, and why it is not used.</strong> $\mathbb{H}_{\mathbb{B}}$, which takes its scalar slot from $\mathbb{M}_+$ and its vector slots from $\mathbb{M}_-$, would be split across the two primes under the alternative labelling, so that it could no longer be written with a single name. That alternative makes the prime mark the <strong>sector</strong> — all-primed for $\mathbb{M}_+$ against all-unprimed for $\mathbb{M}_-$ — which is uniform in the opposite direction, and the corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the informational time $ct'$ would be carried by a primed parameter although it is real, and the material time $ict$ by an unprimed one although it is imaginary. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in <em>Relations Between Subspaces</em>.</p>
 <h3 id="the-idempotent-convention">The Idempotent Convention</h3>
-<p>The convention of <em>Case and Tildes</em> fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.</p>
+<p>The convention of <em>The element and its coefficients</em> fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.</p>
 <p>An <strong>idempotent</strong> of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a <strong>projector</strong> is a Hermitian idempotent, $\tilde{\Pi}^{*} = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the <strong>pure states</strong> of the informational sector,</p>
 <p>$$
 \tilde{\Pi}_\pm(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\,\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}| = 1 .
@@ -723,8 +718,8 @@ $$</p>
 <li><strong>The axial current is what the mass breaks</strong>, with $\partial_\mu j_5^\mu = 2im\bar{\Psi}\gamma_5\Psi$, and it is checked on a superposition.</li>
 <li><strong>The mass is the off-diagonal coupling between the two central ideals</strong> of $\mathbb{B} \cong M_2(\mathbb{C})$ — the two chiralities, that is, the algebra's central splitting. It breaks exactly the symmetry that rotates those two ideals, and <em>not</em> the central $U(1)$ the algebra canonically carries.</li>
 </ol>
-<h2 id="the-real-structure-math610">The Real Structure $\flat$</h2>
-<h3 id="what-math611-is">What $\flat$ Is</h3>
+<h2 id="the-real-structure-math609">The Real Structure $\flat$</h2>
+<h3 id="what-math610-is">What $\flat$ Is</h3>
 <p>The map</p>
 <p>$$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
@@ -741,7 +736,7 @@ $$</li>
 <li>consequently its <strong>fixed space is the anti-Hermitian sector $\mathbb{M}_-$</strong>.</li>
 </ul>
 <p>The map $\flat$ is the algebra's <strong>real structure</strong>, and its shape is that of a charge-conjugation (Majorana) pairing: it relates a field to its own conjugate. The sign convention on the two sectors is what makes $\mathbb{M}_-$ the fixed space, and hence what makes $\mathbb{M}_-$ the material sector — the two conventions are the same convention seen twice.</p>
-<h3 id="what-math622-is-for">What $\flat$ Is For</h3>
+<h3 id="what-math621-is-for">What $\flat$ Is For</h3>
 <p>$\flat$ is retained in the framework for what it is genuinely for:</p>
 <ul>
 <li>conjugation, and the definition of the $\mathbb{M}_\pm$ split itself;</li>
@@ -749,7 +744,7 @@ $$</li>
 <li>the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop.</li>
 </ul>
 <p>In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$. Because $\flat$ is antilinear, such a coupling is <strong>not invariant under the continuous central phase</strong> — which is precisely the difference between a Majorana-type pairing and an ordinary Dirac mass, and precisely why $\flat$ cannot serve as the mass term of the Dirac equation.</p>
-<h3 id="what-math630-is-not">What $\flat$ Is Not</h3>
+<h3 id="what-math629-is-not">What $\flat$ Is Not</h3>
 <p>$\flat$ is <strong>not</strong> the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.</p>
 <h2 id="summary">Summary</h2>
 <p>The conventions of the series fall into two groups.</p>
