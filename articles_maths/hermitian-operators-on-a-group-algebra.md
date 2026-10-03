@@ -48,10 +48,10 @@ $$
 **Definition.** The **bilinear pairing** on the group algebra is $\langle\!\langle f,h\rangle\!\rangle = \int_G fh\,dx$, the Haar pairing read without the conjugation; writing $Jf = \overline{f}$ for the pointwise complex conjugation and $f^\vee(x) = f(x^{-1})$ for the reflection, the two pairings are related by
 
 $$
-\langle\!\langle f,h\rangle\!\rangle = \langle f,Jh\rangle, \qquad J = \,^*\circ\vee,
+\langle\!\langle f,h\rangle\!\rangle = \langle f,Jh\rangle, \qquad J = \,{}^{*}\circ\vee,
 $$
 
-so on a unimodular group the missing conjugation is recovered by the complex conjugate, $J = \,^*\circ\vee$, the involution composed with the reflection; in the general case the modular factor enters $J$ through the involution.
+so on a unimodular group the missing conjugation is recovered by the complex conjugate, $J = \,{}^{*}\circ\vee$, the involution composed with the reflection; in the general case the modular factor enters $J$ through the involution.
 
 **Proposition (the two adjoints are conjugate by $J$).** If $T^\dagger$ denotes the adjoint with respect to the bilinear pairing, then
 
@@ -63,9 +63,9 @@ so the Haar-pairing adjoint is the bilinear-pairing adjoint conjugated by the co
 
 **Proof.** For the general identity, $\langle f,JT^\dagger Jh\rangle = \int f\,\overline{JT^\dagger Jh} = \int f\,T^\dagger(\overline h) = \langle\!\langle f, T^\dagger(\overline h)\rangle\!\rangle = \langle\!\langle Tf,\overline h\rangle\!\rangle = \int Tf\,\overline h = \langle Tf,h\rangle$, using $J^2 = \mathrm{id}$ and $\overline{\overline{T^\dagger(\overline h)}} = T^\dagger(\overline h)$. The elementary case follows from $(L_a)^\dagger = L_{a^{-1}}$ and $JL_{a^{-1}}J = L_{\overline{a^{-1}}}$, with $\overline{a^{-1}}(x) = \overline{a(x^{-1})} = a^*(x)$ on a unimodular group. $\square$
 
-**Corollary (which adjoint the discrete articles use).** The discrete `- Operator Theory` articles of Parts I and II work with the bilinear natural and signed forms and obtain $(L_a)^\dagger = L_{a^{-1}}$; the present group works with the Haar pairing and obtains $(L_a)^* = L_{a^*}$; the two computations are reconciled in every case by the conjugation $T\mapsto JTJ$ of the proposition, the involution entering through $J = \,^*\circ\vee$.
+**Corollary (which adjoint the discrete articles use).** The discrete `- Operator Theory` articles of Parts I and II work with the bilinear natural and signed forms and obtain $(L_a)^\dagger = L_{a^{-1}}$; the present group works with the Haar pairing and obtains $(L_a)^* = L_{a^*}$; the two computations are reconciled in every case by the conjugation $T\mapsto JTJ$ of the proposition, the involution entering through $J = \,{}^{*}\circ\vee$.
 
-**Proof.** The discrete adjoints are computed from the bilinear forms of *The Adjoint of the Left Multiplication on a Topological Group*; the present adjoints are the proposition's conjugation of them, and the formula $J = \,^*\circ\vee$ identifies $a^{-1}$ with $a^*$ under the conjugation. $\square$
+**Proof.** The discrete adjoints are computed from the bilinear forms of *The Adjoint of the Left Multiplication on a Topological Group*; the present adjoints are the proposition's conjugation of them, and the formula $J = \,{}^{*}\circ\vee$ identifies $a^{-1}$ with $a^*$ under the conjugation. $\square$
 
 ## Hermitian and Positive Elements
 

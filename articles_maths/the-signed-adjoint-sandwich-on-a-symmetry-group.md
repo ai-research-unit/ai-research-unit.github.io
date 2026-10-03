@@ -99,7 +99,7 @@ and it is unitary exactly when $\alpha(a)^{*} = a^{-1}$, in which case the adjoi
 
 **Example (the quaternion group).** Let $G$ be the quaternion group of order eight, with the central involution $z = -1$ and the grading the sign in the Clifford algebra $\mathbb{H}$; the grade involution is $\alpha(a) = \pm a$ according to the parity, and the adjoint of the signed inner conjugation by $a$ is the signed inner conjugation by $\alpha(a)^{*}$, which for a unit quaternion $a$ is the inverse of $a$ when $a$ is even and the negative of the inverse when $a$ is odd. The unitarity condition $\alpha(a)^{*} = a^{-1}$ therefore holds on the even part and fails on the odd part, which is the reflection case.
 
-**Example (a failure of self-adjointness).** Let $u$ be a vector with $u^{*} = -u$ (an imaginary vector in a complexified Clifford algebra); then the reflection $\mathrm{Ad}^{\alpha}_u$ has adjoint $\mathrm{Ad}^{\alpha}_{\alpha(u)^{*}} = \mathrm{Ad}^{\alpha}_{-u} = \mathrm{Ad}^{\alpha}_{u}^{-1}$, so it is unitary but not self-adjoint. The example shows that self-adjointness of the reflection is the condition $u^{*} = u$ and not automatic.
+**Example (a failure of self-adjointness).** Let $u$ be a vector with $u^{*} = -u$ (an imaginary vector in a complexified Clifford algebra); then the reflection $\mathrm{Ad}^{\alpha}_u$ has adjoint $\mathrm{Ad}^{\alpha}_{\alpha(u)^{*}} = \mathrm{Ad}^{\alpha}_{-u} = {\mathrm{Ad}^{\alpha}_{u}}^{-1}$, so it is unitary but not self-adjoint. The example shows that self-adjointness of the reflection is the condition $u^{*} = u$ and not automatic.
 
 ## Summary
 

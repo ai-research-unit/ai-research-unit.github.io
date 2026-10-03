@@ -44,7 +44,7 @@ Because $N(\tilde q)$ is strictly positive on the nonzero elements, the square r
 The modulus is multiplicative, because the quaternion norm is: for any two quaternions,
 
 $$
-r(pq) = r(p)\,r(\tilde q).
+r(p\tilde q) = r(p)\,r(\tilde q).
 $$
 
 ### The Unit Factor

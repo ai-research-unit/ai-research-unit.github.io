@@ -123,13 +123,13 @@ $$
 **Definition.** The **traceless Ricci tensor** is $\operatorname{Ric}_0 = \operatorname{Ric} - \frac{1}{n}S\,g$. The **Weyl tensor** is
 
 $$
-W = R - \frac{1}{n-2}\Bigl(\operatorname{Ric} - \frac{1}{2(n-1)}S\,g\Bigr)\owedge g,
+W = R - \frac{1}{n-2}\Bigl(\operatorname{Ric} - \frac{1}{2(n-1)}S\,g\Bigr)\wedge g,
 $$
 
 where the **Kulkarni–Nomizu product** of symmetric $(0,2)$-tensors $h, k$ is
 
 $$
-(h\owedge k)(X, Y, Z, W) = h(X, Z)k(Y, W) + h(Y, W)k(X, Z) - h(X, W)k(Y, Z) - h(Y, Z)k(X, W).
+(h\wedge k)(X, Y, Z, W) = h(X, Z)k(Y, W) + h(Y, W)k(X, Z) - h(X, W)k(Y, Z) - h(Y, Z)k(X, W).
 $$
 
 The Weyl tensor has the symmetries of the curvature, it satisfies the first Bianchi identity, and it is **totally trace-free**: every contraction of two of its slots with the metric vanishes. In dimension $n \leq 3$ it vanishes identically, and in dimension $n \geq 4$ it vanishes exactly for the locally conformally flat metrics.
@@ -140,9 +140,9 @@ $$
 \mathcal{R} = \frac{S}{n(n-1)}\,\mathrm{id} + \mathcal{R}_0 + \mathcal{W},
 $$
 
-where the first summand is scalar, the second is the image of the traceless Ricci tensor $\operatorname{Ric}_0$ under the identification of the previous section applied to the tensor $\operatorname{Ric}_0 \owedge g$, and the third, the **Weyl operator**, is the image of the Weyl tensor. The three summands are the isotypic components of $\mathcal{R}$ under the orthogonal group $O(T_pM, g_p)$: the trivial representation, the traceless symmetric square, and the Weyl module.
+where the first summand is scalar, the second is the image of the traceless Ricci tensor $\operatorname{Ric}_0$ under the identification of the previous section applied to the tensor $\operatorname{Ric}_0 \wedge g$, and the third, the **Weyl operator**, is the image of the Weyl tensor. The three summands are the isotypic components of $\mathcal{R}$ under the orthogonal group $O(T_pM, g_p)$: the trivial representation, the traceless symmetric square, and the Weyl module.
 
-**Proof sketch.** The identification of the previous section is $O(T_pM,g_p)$-equivariant, so it carries the decomposition of the curvature tensors into irreducible representations to a decomposition of the operators. The tensor decomposition $R = \frac{S}{2n(n-1)}g\owedge g + \frac{1}{n-2}\operatorname{Ric}_0\owedge g + W$ is a direct computation in the tensor calculus: the scalar multiple of $g\owedge g$ has scalar curvature $S$ and vanishing traceless Ricci and Weyl parts, the product $\operatorname{Ric}_0\owedge g$ has traceless Ricci part $\operatorname{Ric}_0$ and vanishing Weyl part, and the remainder is totally trace-free, hence the Weyl tensor. The image of $g\owedge g$ under the identification is a multiple of the identity: $g\owedge g(X,Y,Z,W) = 2\langle X\wedge Y, Z\wedge W\rangle$, and the constant is fixed by matching the trace, $2\operatorname{tr}\mathcal{R} = S$, which gives the coefficient $\frac{S}{n(n-1)}$.
+**Proof sketch.** The identification of the previous section is $O(T_pM,g_p)$-equivariant, so it carries the decomposition of the curvature tensors into irreducible representations to a decomposition of the operators. The tensor decomposition $R = \frac{S}{2n(n-1)}g\wedge g + \frac{1}{n-2}\operatorname{Ric}_0\wedge g + W$ is a direct computation in the tensor calculus: the scalar multiple of $g\wedge g$ has scalar curvature $S$ and vanishing traceless Ricci and Weyl parts, the product $\operatorname{Ric}_0\wedge g$ has traceless Ricci part $\operatorname{Ric}_0$ and vanishing Weyl part, and the remainder is totally trace-free, hence the Weyl tensor. The image of $g\wedge g$ under the identification is a multiple of the identity: $g\wedge g(X,Y,Z,W) = 2\langle X\wedge Y, Z\wedge W\rangle$, and the constant is fixed by matching the trace, $2\operatorname{tr}\mathcal{R} = S$, which gives the coefficient $\frac{S}{n(n-1)}$.
 
 ### The Weyl Operator and the Hodge Star
 
@@ -187,7 +187,7 @@ The operator decomposes into three orthogonal self-adjoint parts, $\mathcal{R} =
 | $\operatorname{Ric}(X,Y) = \sum_i\langle\mathcal{R}(X\wedge e_i), Y\wedge e_i\rangle$ | Ricci contraction of the operator |
 | $S$, $\operatorname{tr}\mathcal{R} = S/2$ | Scalar curvature and the operator trace |
 | $\operatorname{Ric}_0 = \operatorname{Ric} - \frac1nSg$ | Traceless Ricci tensor |
-| $h\owedge k$ | Kulkarni–Nomizu product of symmetric $(0,2)$-tensors |
+| $h\wedge k$ | Kulkarni–Nomizu product of symmetric $(0,2)$-tensors |
 | $W$ | Weyl tensor; totally trace-free, zero in dimension $\leq 3$ |
 | $\mathcal{R}_0$, $\mathcal{W}$ | Traceless-Ricci and Weyl parts of $\mathcal{R}$ |
 | $\Lambda^2 = \Lambda^2_+\oplus\Lambda^2_-$ | Self-dual and anti-self-dual bivectors in dimension four |

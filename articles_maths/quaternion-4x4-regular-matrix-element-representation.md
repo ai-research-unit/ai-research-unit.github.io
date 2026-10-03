@@ -137,7 +137,7 @@ and the identity involution gives $L_{\tilde q}$ itself.
 
 **Definition.** The **right regular representation** is $R : \mathbb{H}\to M_4(F)$ with $R_{\tilde q}(\tilde r) = \tilde r\tilde q$.
 
-**Theorem.** The map $R$ is an injective algebra anti-homomorphism, $R_{pq} = R_qR_p$, and the matrix of right multiplication is
+**Theorem.** The map $R$ is an injective algebra anti-homomorphism, $R_{p\tilde q} = R_{\tilde q}R_p$, and the matrix of right multiplication is
 
 $$
 R_{\tilde q} = \begin{pmatrix}
@@ -171,7 +171,7 @@ where $D$ is the matrix of quaternion conjugation.
 *Proof.* The trace is $4q_0$ from the diagonal. The relation $R_{\tilde q}^{T} = R_{\tilde{q}^{\natural}}$ is the same entrywise comparison as for $L$. For the last identity, $D$ is the matrix of the linear map $\tilde r\mapsto \tilde r^{\natural}$, so for every $\tilde r$,
 
 $$
-D L_{\tilde q}^{T} D \tilde r = D L_{\tilde{q}^{\natural}} D \tilde r = D\bigl(\tilde{q}^{\natural}\,\tilde r^{\natural}\bigr) = (\tilde{q}^{\natural}\,\tilde r^{\natural})^{\natural} = xq = R_{\tilde q}\,\tilde r,
+D L_{\tilde q}^{T} D \tilde r = D L_{\tilde{q}^{\natural}} D \tilde r = D\bigl(\tilde{q}^{\natural}\,\tilde r^{\natural}\bigr) = (\tilde{q}^{\natural}\,\tilde r^{\natural})^{\natural} = \tilde r\tilde q = R_{\tilde q}\,\tilde r,
 $$
 
 using $L_{\tilde q}^{T} = L_{\tilde{q}^{\natural}}$ and the reversal $(\tilde q_1\tilde q_2)^{\natural} = \tilde{q}^{\natural}_2\,\tilde{q}^{\natural}_1$ of conjugation. Hence $R_{\tilde q} = D L_{\tilde q}^{T} D$, and the determinant is that of $L_{\tilde q}$ because $D^2 = I$.

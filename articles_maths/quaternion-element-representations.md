@@ -22,7 +22,7 @@ $$
 satisfying
 
 $$
-\tilde q \cdot (r \cdot v) = (qr) \cdot v, \qquad 1 \cdot v = v.
+\tilde q \cdot (r \cdot v) = (\tilde q r) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism

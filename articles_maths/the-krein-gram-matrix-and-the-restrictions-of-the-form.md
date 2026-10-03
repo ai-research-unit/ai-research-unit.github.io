@@ -84,7 +84,7 @@ The six subspaces are defined in *Biquaternion Relations Between Subspaces*: the
 
 ## Orthogonality of the Distinctions
 
-**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{Z}$, when $[\tilde{Q},\tilde{T}]=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde{T}\in\mathbb{Z}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde{T}:[\tilde{Q},\tilde{T}]=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
+**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{U}$, when $[\tilde{Q},\tilde{T}]=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde{T}\in\mathbb{U}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde{T}:[\tilde{Q},\tilde{T}]=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
 
 **Theorem (the orthogonal splitting).** The Krein form splits the algebra as an orthogonal sum
 

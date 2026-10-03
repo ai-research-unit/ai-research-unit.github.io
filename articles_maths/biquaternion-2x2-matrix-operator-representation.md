@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H
 The element article answers *what is* $\tilde{Q}$ by displaying its matrix. This article answers *what does* $\tilde{Q}$ *do*, and it answers it in the smallest space that carries an action at all: the algebra is $M_2(\mathbb{C})$, and the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* acts on it by the **congruence**
 
 $$
-X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) .
+Y \longmapsto M Y M^{\dagger}, \qquad M = \Phi(\tilde{Q}) .
 $$
 
 This is the realization in which the operator is a single familiar operation of matrix algebra, and in which the two regimes of the operator — invertible congruence, or collapse — become the two cases of the rank of one matrix.
@@ -36,7 +36,7 @@ $$
 
 The operator on $M_2(\mathbb{C})$ is thus a **congruence**: the same matrix $M$ on the left and its conjugate transpose on the right. Three consequences are immediate and are the reason this realization is the clearest one.
 
-The operator is $\mathbb{C}$-**linear** in $X$, because left and right multiplication by fixed matrices are linear. The coefficients of $\tilde{Q}$ enter through $M$ and $M^{\dagger}$, so the operator is quadratic in $\tilde{Q}$.
+The operator is $\mathbb{C}$-**linear** in $Y$, because left and right multiplication by fixed matrices are linear. The coefficients of $\tilde{Q}$ enter through $M$ and $M^{\dagger}$, so the operator is quadratic in $\tilde{Q}$.
 
 The operator is **not** a similarity unless $M$ is unitary: the two conjugating factors must be inverse for that, and $M^{\dagger} = M^{-1}$ is the unitarity condition, which is the matrix form of the fact that the sandwich is multiplicative only on the unitary slice.
 
@@ -56,7 +56,7 @@ $$
 \det\Phi(\tilde T) = \lvert\det M\rvert^{2}\det\Phi(\tilde R), \qquad\text{that is}\qquad N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R) .
 $$
 
-**Proof.** Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the cone. For the determinant, $\det(MXM^{\dagger}) = \det M\cdot\det X\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det X$ by multiplicativity, and $\det\Phi = N$ by the element article.
+**Proof.** Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the cone. For the determinant, $\det(MYM^{\dagger}) = \det M\cdot\det Y\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det Y$ by multiplicativity, and $\det\Phi = N$ by the element article.
 
 The rank of the congruence is limited by the rank of $M$ itself. A matrix of rank one can raise no rank, and this is the mechanism of the collapse: a null element has a rank-one matrix, so its congruence has image of rank at most one however large the rank of the argument.
 
@@ -74,13 +74,13 @@ $$
 
 **Proof.** $MM^{\dagger}$ is a Gram matrix, hence positive semidefinite, and its rank equals the rank of $M$. Its trace is the sum of the squared moduli of the four entries; expanding the entries of $M = \Phi(\tilde{Q})$ gives $\lvert M_{11}\rvert^{2} + \lvert M_{22}\rvert^{2} = 2(\lvert Q_0\rvert^{2}+\lvert Q_3\rvert^{2})$ and $\lvert M_{12}\rvert^{2}+\lvert M_{21}\rvert^{2} = 2(\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2})$, whose sum is twice the sum of the squared moduli of the coefficients. That sum is the scalar component of $\tilde{Q}\tilde{Q}^{*}$ by *Biquaternion Four-Vector Operator Representation*, and $\operatorname{Tr}\Phi(\cdot) = 2\,\mathrm{Sc}(\cdot)$ closes the computation.
 
-**Corollary (the sectors).** The congruence maps the Hermitian matrices to the Hermitian matrices and the skew-Hermitian matrices to the skew-Hermitian matrices, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ when $X^{\dagger} = X$ and $= -MXM^{\dagger}$ when $X^{\dagger} = -X$. These are the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the algebra, and they are the only pair of the six distinguished subspaces that every congruence preserves.
+**Corollary (the sectors).** The congruence maps the Hermitian matrices to the Hermitian matrices and the skew-Hermitian matrices to the skew-Hermitian matrices, because $(MYM^{\dagger})^{\dagger} = MYM^{\dagger}$ when $Y^{\dagger} = Y$ and $= -MYM^{\dagger}$ when $Y^{\dagger} = -Y$. These are the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the algebra, and they are the only pair of the six distinguished subspaces that every congruence preserves.
 
 ## The Case $N(\tilde{Q}) \neq 0$
 
-**Theorem (the invertible congruence).** Let $N(\tilde{Q}) \neq 0$. Then $M$ is invertible, the congruence $X \mapsto MXM^{\dagger}$ is a bijection of $M_2(\mathbb{C})$ that preserves the rank of every matrix, the operator has rank $4$ on the four-dimensional space, and $\det = \lvert N(\tilde{Q})\rvert^{4}$, $\operatorname{Tr} = 4\lvert Q_0\rvert^{2}$.
+**Theorem (the invertible congruence).** Let $N(\tilde{Q}) \neq 0$. Then $M$ is invertible, the congruence $Y \mapsto MYM^{\dagger}$ is a bijection of $M_2(\mathbb{C})$ that preserves the rank of every matrix, the operator has rank $4$ on the four-dimensional space, and $\det = \lvert N(\tilde{Q})\rvert^{4}$, $\operatorname{Tr} = 4\lvert Q_0\rvert^{2}$.
 
-**Proof.** $M$ is invertible because $\det M = N(\tilde{Q}) \neq 0$; the inverse congruence is $X \mapsto M^{-1}X(M^{\dagger})^{-1}$, so the map is a bijection; multiplication by an invertible matrix on either side preserves rank, so rank is preserved, the strata of $M_2(\mathbb{C})$ being the zero matrix, the nonzero matrices of rank one, and the full-rank matrices; the rank and the invariants are *Biquaternion 4×4 Regular Matrix Operator Representation*.
+**Proof.** $M$ is invertible because $\det M = N(\tilde{Q}) \neq 0$; the inverse congruence is $Y \mapsto M^{-1}Y(M^{\dagger})^{-1}$, so the map is a bijection; multiplication by an invertible matrix on either side preserves rank, so rank is preserved, the strata of $M_2(\mathbb{C})$ being the zero matrix, the nonzero matrices of rank one, and the full-rank matrices; the rank and the invariants are *Biquaternion 4×4 Regular Matrix Operator Representation*.
 
 The matrix $M$ has two eigenvalues $\lambda_1, \lambda_2$, nonzero in this case, and the operator has the four eigenvalues $\lambda_i\bar{\lambda}_j$; the determinant is their product and the trace their sum. The congruence preserves the rank, so each rank stratum of $M_2(\mathbb{C})$ — the zero matrix, the nonzero matrices of rank one, and the full-rank matrices — is carried into itself, and the operator on the four-dimensional matrix space has rank $4$ in this case.
 
@@ -92,10 +92,10 @@ On the unit-norm slice the congruence by $M \in SL(2,\mathbb{C})$ is the action 
 
 On the cone the matrix $M$ has rank one, and a congruence by a rank-one matrix annihilates everything except one line.
 
-**Theorem (the collapse of a null congruence).** Let $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, so that $\operatorname{rank}M = 1$. Write $M = uv^{\dagger}$ with nonzero column vectors $u, v \in \mathbb{C}^{2}$. Then for every $X$,
+**Theorem (the collapse of a null congruence).** Let $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, so that $\operatorname{rank}M = 1$. Write $M = uv^{\dagger}$ with nonzero column vectors $u, v \in \mathbb{C}^{2}$. Then for every $Y$,
 
 $$
-M X M^{\dagger} = \bigl(v^{\dagger}Xv\bigr)\, u\,u^{\dagger} .
+M Y M^{\dagger} = \bigl(v^{\dagger}Yv\bigr)\, u\,u^{\dagger} .
 $$
 
 Consequently the image of the congruence is the single complex line $\mathbb{C}\, uu^{\dagger}$ spanned by the rank-one **Hermitian** matrix $uu^{\dagger}$, the operator has rank $1$, and
@@ -106,7 +106,7 @@ $$
 
 The element corresponding to the Hermitian matrix $uu^{\dagger}$, normalised, is a minimal idempotent of $\mathbb{B}$; the operator is nilpotent when $Q_0 = 0$ and a scaled projection when $Q_0 \neq 0$.
 
-**Proof.** $MXM^{\dagger} = uv^{\dagger}X(vu^{\dagger}) = u(v^{\dagger}Xv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *Biquaternion 4×4 Regular Matrix Operator Representation*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection.
+**Proof.** $MYM^{\dagger} = uv^{\dagger}Y(vu^{\dagger}) = u(v^{\dagger}Yv)u^{\dagger}$, the parenthesis being a scalar; so every image is a multiple of $uu^{\dagger}$, which is nonzero and Hermitian, and the image has complex dimension one. The rank statement and the square are *Biquaternion 4×4 Regular Matrix Operator Representation*, and the identification of $uu^{\dagger}$ with a minimal idempotent is the statement that an idempotent of $M_2(\mathbb{C})$ is a rank-one projection.
 
 **Example (nilpotent).** For $\tilde{Q} = e_1 + ie_2$, a zero divisor with $Q_0 = 0$,
 
@@ -120,7 +120,7 @@ $$
 E_{11} \mapsto 0, \qquad E_{12} \mapsto 0, \qquad E_{21} \mapsto 0, \qquad E_{22} \mapsto 4E_{11} ,
 $$
 
-so the image is the line $\mathbb{C}E_{11} = \mathbb{C}\Phi(\tilde\Pi_1)$ with $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, and the image depends on $X$ only through its second diagonal entry, since $v^{\dagger}Xv = 4X_{22}$. The operator has trace $0$ and all four eigenvalues zero: it is nilpotent, and the collapse is the loss of rank, not the vanishing of the entries of a diagonal.
+so the image is the line $\mathbb{C}E_{11} = \mathbb{C}\Phi(\tilde\Pi_1)$ with $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, and the image depends on $Y$ only through its second diagonal entry, since $v^{\dagger}Yv = 4Y_{22}$. The operator has trace $0$ and all four eigenvalues zero: it is nilpotent, and the collapse is the loss of rank, not the vanishing of the entries of a diagonal.
 
 **Example (projection).** For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_2$, Hermitian, of norm zero and scalar part $\tfrac12$,
 
@@ -128,7 +128,7 @@ $$
 M = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22} = uv^{\dagger}, \qquad u = v = \begin{pmatrix} 0 \\ 1 \end{pmatrix},
 $$
 
-and the congruence sends $X$ to $X_{22}E_{22}$: it is exactly the projection onto the line of the idempotent $\tilde\Pi_2$. The trace of the operator is $4\lvert\tfrac12\rvert^{2} = 1$ and its square is itself. The same idempotent appears as the generator of the image in the four-vector realization, where the operator was found to send $\tilde R$ to $(R^0 + iR^3)\tilde\Pi_2$.
+and the congruence sends $Y$ to $Y_{22}E_{22}$: it is exactly the projection onto the line of the idempotent $\tilde\Pi_2$. The trace of the operator is $4\lvert\tfrac12\rvert^{2} = 1$ and its square is itself. The same idempotent appears as the generator of the image in the four-vector realization, where the operator was found to send $\tilde R$ to $(R^0 + iR^3)\tilde\Pi_2$.
 
 The two examples separate the two faces of the cone exactly as in the other realizations: both matrices have rank one and determinant zero, both congruences have a one-dimensional image spanned by a rank-one Hermitian matrix, and the value of the trace $4\lvert Q_0\rvert^{2}$ decides whether the surviving operator is nilpotent or a projection. The element $e_2 + ie_3$, a third null operand, has $M = \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix} = uv^{\dagger}$ with $u = (1,1)$ and $v = (1,-1)$, of scalar part zero, and its image is again the line of a minimal idempotent, this time $\tfrac12(e_0 + ie_1)$.
 
@@ -137,10 +137,10 @@ The two examples separate the two faces of the cone exactly as in the other real
 In the matrix realization the operator is a congruence. The map $\Phi$ carries the Hermitian conjugate to the conjugate transpose, so the sandwich $\mathrm{H}_{\tilde{Q}}(\tilde R) = \tilde{Q}\tilde R\tilde{Q}^{*}$ becomes
 
 $$
-X \longmapsto M X M^{\dagger}, \qquad M = \Phi(\tilde{Q}) \in M_2(\mathbb{C}),
+Y \longmapsto M Y M^{\dagger}, \qquad M = \Phi(\tilde{Q}) \in M_2(\mathbb{C}),
 $$
 
-a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the identity $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
+a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary. It preserves the two Hermitian sectors, because $(MYM^{\dagger})^{\dagger} = MYM^{\dagger}$ or its negative according to the sector of $Y$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the identity $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
 
 The two regimes are the two ranks of $M$. Off the cone $M$ is invertible, the congruence is a bijection preserving the four ranks of the two-by-two matrices, and the operator has rank $4$, determinant $\lvert N(\tilde{Q})\rvert^{4}$ and trace $4\lvert Q_0\rvert^{2}$, with the spectrum $\lambda_i\bar{\lambda}_j$ read from the eigenvalues of $M$. On the cone $M = uv^{\dagger}$ has rank one and the congruence collapses the whole matrix algebra onto the single Hermitian line $\mathbb{C}uu^{\dagger}$, the line of a minimal idempotent: the operator has rank one, its square is $4\lvert Q_0\rvert^{2}$ times itself, and it is nilpotent for $Q_0 = 0$ and a scaled projection otherwise. The worked null operands $e_1 + ie_2$, $\tilde\Pi_2$ and $e_2 + ie_3$ show the three cases of the collapse, with images the lines of $\tilde\Pi_1$, $\tilde\Pi_2$ and $\tfrac12(e_0 + ie_1)$.
 
@@ -150,12 +150,12 @@ The two regimes are the two ranks of $M$. Off the cone $M$ is invertible, the co
 |---|---|
 | $M = \Phi(\tilde{Q})$ | the matrix of the operand, $\det M = N(\tilde{Q})$, $\operatorname{Tr}M = 2Q_0$ |
 | $\Phi(\tilde{Q}^{*}) = \Phi(\tilde{Q})^{\dagger}$ | $\Phi$ carries the dagger to the conjugate transpose |
-| $X \mapsto MXM^{\dagger}$ | the sandwich as a congruence |
+| $Y \mapsto MYM^{\dagger}$ | the sandwich as a congruence |
 | $MM^{\dagger} = \Phi(\tilde{Q}\tilde{Q}^{*})$ | the image of the identity; the Gram matrix of $M$ |
 | $\operatorname{rank}\Phi(\tilde{Q}\tilde R\tilde{Q}^{*}) \leq \operatorname{rank}\Phi(\tilde R)$ | rank never increases; preserved off the cone |
-| $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$ |
+| $\det(MYM^{\dagger}) = \lvert\det M\rvert^{2}\det Y$ | the determinant scales; $N(\tilde T) = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$ |
 | $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = (\operatorname{rank}M)^{2}$ | $4$ off the cone, $1$ on it, $0$ only at $\tilde{Q} = 0$ |
-| $M = uv^{\dagger} \Rightarrow MXM^{\dagger} = (v^{\dagger}Xv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
+| $M = uv^{\dagger} \Rightarrow MYM^{\dagger} = (v^{\dagger}Yv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
 | $uu^{\dagger} \leftrightarrow \tfrac12(e_0 + i\mathbf{n}\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |
 | $4\lvert Q_0\rvert^{2}$ | trace of the operator; vanishes exactly for the nilpotent case |
 

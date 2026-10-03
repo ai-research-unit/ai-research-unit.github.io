@@ -8,7 +8,7 @@ The Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'
 
 ## Orthogonality and Complements
 
-**Definition.** Elements $\tilde{Q},\tilde{Q}'$ are **Krein-orthogonal**, written $\tilde{Q}\perp_{K}\tilde{Q}'$, when $[\tilde{Q},\tilde{Q}']=0$. A subspace is **Krein-orthogonal** to another, $\mathbb{W}\perp_{K}\mathbb{Z}$, when every element of one is Krein-orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
+**Definition.** Elements $\tilde{Q},\tilde{Q}'$ are **Krein-orthogonal**, written $\tilde{Q}\perp_{K}\tilde{Q}'$, when $[\tilde{Q},\tilde{Q}']=0$. A subspace is **Krein-orthogonal** to another, $\mathbb{W}\perp_{K}\mathbb{U}$, when every element of one is Krein-orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
 
 $$
 \mathbb{W}^{\perp_{K}}=\{\tilde{S}\in\mathbb{B}:[\tilde{Q},\tilde{S}]=0\ \text{for all}\ \tilde{Q}\in\mathbb{W}\}.

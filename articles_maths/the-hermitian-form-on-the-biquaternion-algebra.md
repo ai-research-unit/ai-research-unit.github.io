@@ -38,7 +38,7 @@ which has a nonzero vector part $2ie_1$.
 The **inner product** of two biquaternions is the complex scalar
 
 $$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu
+\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_{\bar{\mu}} Q_\mu
 = \sum_{\mu=0}^{3} \left(p_\mu q_\mu + p'_\mu q'_\mu\right) + i \sum_{\mu=0}^{3} \left(p_\mu q'_\mu - p'_\mu q_\mu\right),
 $$
 
@@ -49,7 +49,7 @@ $$
 \langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C},
 $$
 
-and **Hermitian**, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is **non-degenerate**: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\bar{\mu} = 0$.
+and **Hermitian**, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is **non-degenerate**: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_{\bar{\mu}} = 0$.
 
 The inner product pairs the algebra with its conjugate and is complex-valued in general. Its diagonal value
 

@@ -64,7 +64,7 @@ $$
 \Theta^{\alpha}_u(v)=u\,v\,\sigma(u)=-q(u)\,\rho_u(v),\qquad v\in V .
 $$
 
-On a vector of square $-1$ the signed Hermitian sandwich **is** the reflection, $\Theta^{\alpha}_u=\rho_u$, and $\Theta^{\alpha}_u\in\Gamma_\bar{\cdot}$; the unsigned Hermitian sandwich is $-\rho_u$ there. So the odd elements of the Hermitian Clifford group realise the reflections, and the even ones realise the rotations.
+On a vector of square $-1$ the signed Hermitian sandwich **is** the reflection, $\Theta^{\alpha}_u=\rho_u$, and $\Theta^{\alpha}_u\in\Gamma_{\bar{\cdot}}$; the unsigned Hermitian sandwich is $-\rho_u$ there. So the odd elements of the Hermitian Clifford group realise the reflections, and the even ones realise the rotations.
 
 *Proof.* The vector identity and the reflection statement are the propositions of the companion article; $\Theta^{\alpha}_u$ is an isometry for a unit vector by the determinant-and-scalar computation: $-q(u)$ has square $1$ when $q(u)=\pm1$. That an even element gives a rotation follows from $\Theta^{\alpha}_x=\Theta_x=\mathrm{Ad}_x$ on the slice and the parity of the determinant.
 

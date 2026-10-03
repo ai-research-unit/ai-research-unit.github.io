@@ -91,8 +91,8 @@ is the general similarity statement of *The Hermitian Sandwich on a Clifford Alg
 **Proposition (the three forms in the biquaternion algebra).** On $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $\tilde{R} = \sum_\mu R_\mu e_\mu$,
 
 $$
-h_{\dagger}(\tilde{Q},\tilde{R}) = \sum_\mu Q_\bar{\mu}R_\mu + (\text{blade cross terms}), \qquad
-\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{R}\bigr) = \sum_\mu Q_\bar{\mu}R_\mu ,
+h_{\dagger}(\tilde{Q},\tilde{R}) = \sum_\mu Q_{\bar{\mu}}R_\mu + (\text{blade cross terms}), \qquad
+\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{R}\bigr) = \sum_\mu Q_{\bar{\mu}}R_\mu ,
 $$
 
 so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{4}$ and the blade form is the coefficient form twisted by the signature of the quaternion units, as in *The Blade Form and the Hilbert Structure with Hermitian Adjoint*.

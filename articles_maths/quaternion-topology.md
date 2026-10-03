@@ -41,9 +41,9 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The unit sphere is a closed, compact, connected three-dimensional manifold, homeomorphic to the standard sphere $S^3\subset\mathbb{R}^4$, and it is a topological group under the inherited multiplication, with $S^3\subseteq\mathbb{H}^{\times}$; its smooth and Lie-group structure is that of *Quaternion Exponential and Lie Group Structure*, where it is identified with $Sp(1)\cong SU(2)$.
 
-*Proof.* The unit sphere is the level set of the continuous function $N$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $N(pq) = N(p)N(\tilde q)$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
+*Proof.* The unit sphere is the level set of the continuous function $N$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $N(p\tilde q) = N(p)N(\tilde q)$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
 
-**Remark.** Multiplicativity of the quaternion norm, $N(pq) = N(p)N(\tilde q)$, is exactly the statement that $S^3$ is closed under the product, so the unit sphere is a subgroup rather than merely a subset; for the biquaternions the corresponding Euclidean sphere is not closed under the product and is not contained in the unit group.
+**Remark.** Multiplicativity of the quaternion norm, $N(p\tilde q) = N(p)N(\tilde q)$, is exactly the statement that $S^3$ is closed under the product, so the unit sphere is a subgroup rather than merely a subset; for the biquaternions the corresponding Euclidean sphere is not closed under the product and is not contained in the unit group.
 
 ## The Group of Units
 

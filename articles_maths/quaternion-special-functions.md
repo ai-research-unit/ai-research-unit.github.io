@@ -420,7 +420,7 @@ where the integral is along the positive real axis and the powers are quaternion
 ### Relation to the Gamma Function
 
 $$
-B(p, \tilde q) = \frac{\Gamma(p) \Gamma(\tilde q)}{\Gamma(p + \tilde q)}, \qquad pq = qp.
+B(p, \tilde q) = \frac{\Gamma(p) \Gamma(\tilde q)}{\Gamma(p + \tilde q)}, \qquad p\tilde q = \tilde q p.
 $$
 
 This follows from the same substitution as in the real case, applied to the scalar-vector decomposition, which requires $p$ and $\tilde q$ to commute.
@@ -428,7 +428,7 @@ This follows from the same substitution as in the real case, applied to the scal
 ### Symmetry
 
 $$
-B(p, \tilde q) = B(\tilde q, p), \qquad pq = qp.
+B(p, \tilde q) = B(\tilde q, p), \qquad p\tilde q = \tilde q p.
 $$
 
 The symmetry fails when $p$ and $\tilde q$ do not commute.

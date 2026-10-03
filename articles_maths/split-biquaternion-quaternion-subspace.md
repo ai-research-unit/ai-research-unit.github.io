@@ -15,13 +15,13 @@ $$
 \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \left\{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \bar{\tilde{Q}} = \tilde{Q} \right\},
 $$
 
-where split complex conjugation conjugates each coefficient, $Q_\mu \mapsto Q_\bar{\mu} = q_\mu - j q'_\mu$.
+where split complex conjugation conjugates each coefficient, $Q_\mu \mapsto Q_{\bar{\mu}} = q_\mu - j q'_\mu$.
 
 Since $\bar{\cdot}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{H}_{\mathbb{D}}$ is the direct sum of its fixed space and its anti-fixed space, the anti-fixed space being $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
 
 ### The Condition in Coordinates
 
-Comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient, $Q_\bar{\mu} = Q_\mu$ means $q_\mu - j q'_\mu = q_\mu + j q'_\mu$, that is $q'_\mu = 0$ for each $\mu$. The subspace is therefore the set of elements with **real coefficients**,
+Comparing the two sides of $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient, $Q_{\bar{\mu}} = Q_\mu$ means $q_\mu - j q'_\mu = q_\mu + j q'_\mu$, that is $q'_\mu = 0$ for each $\mu$. The subspace is therefore the set of elements with **real coefficients**,
 
 $$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -155,11 +155,11 @@ The subspace meets the split complex subspace and the Hermitian subspace each in
 
 ## The Analysis on the Quaternion Subspace
 
-The quaternion subspace is a copy of the real quaternion algebra $\mathbb{H}$, a division algebra, so the function theory it carries is the one-variable quaternion analysis of *Quaternion Analysis*: a function of the quaternion variable $q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$ is regular when it satisfies the Cauchy–Riemann equation of *Quaternion Analysis*, and the harmonic functions are the solutions of the four-dimensional Laplace equation $\sum_{\mu=0}^{3}\partial_{q_\mu}^2 f = 0$. Embedded in $\mathbb{H}_{\mathbb{D}}$, the quaternion subspace inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the quaternion subspace that operator is the quaternion Cauchy–Riemann operator above. This is the one subspace of the four on which the split-biquaternion norm is positive definite and the analytic theory is elliptic, exactly because the subspace is a division algebra.
+The quaternion subspace is a copy of the real quaternion algebra $\mathbb{H}$, a division algebra, so the function theory it carries is the one-variable quaternion analysis of *Quaternion Analysis*: a function of the quaternion variable $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$ is regular when it satisfies the Cauchy–Riemann equation of *Quaternion Analysis*, and the harmonic functions are the solutions of the four-dimensional Laplace equation $\sum_{\mu=0}^{3}\partial_{q_\mu}^2 f = 0$. Embedded in $\mathbb{H}_{\mathbb{D}}$, the quaternion subspace inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the quaternion subspace that operator is the quaternion Cauchy–Riemann operator above. This is the one subspace of the four on which the split-biquaternion norm is positive definite and the analytic theory is elliptic, exactly because the subspace is a division algebra.
 
 ## The Geometry of the Quaternion Subspace
 
-As the fixed space of split complex conjugation, the quaternion subspace is the real form of the algebra, the axis of that involution, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the quaternion algebra: the level set of unit norm is the round three-sphere $S^3$, of constant curvature one, the pure imaginary directions are the sphere $S^2$ of roots of $-1$ of *Quaternion Algebra*, and the motions it carries are the left and right multiplications $q\mapsto u q v$ with $u, v$ unit quaternions, giving the compact group $S^3\times S^3$ and the rotation group $SO(4)$ on the subspace. Both the Euclidean form and the Hermitian scalar form restrict to the same positive definite form of signature $(4,0)$, so the quaternion subspace is the definite core of the algebra.
+As the fixed space of split complex conjugation, the quaternion subspace is the real form of the algebra, the axis of that involution, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the quaternion algebra: the level set of unit norm is the round three-sphere $S^3$, of constant curvature one, the pure imaginary directions are the sphere $S^2$ of roots of $-1$ of *Quaternion Algebra*, and the motions it carries are the left and right multiplications $\tilde q\mapsto u \tilde q v$ with $u, v$ unit quaternions, giving the compact group $S^3\times S^3$ and the rotation group $SO(4)$ on the subspace. Both the Euclidean form and the Hermitian scalar form restrict to the same positive definite form of signature $(4,0)$, so the quaternion subspace is the definite core of the algebra.
 
 ## Summary
 

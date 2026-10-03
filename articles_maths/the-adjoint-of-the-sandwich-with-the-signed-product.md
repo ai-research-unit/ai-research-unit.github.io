@@ -23,7 +23,7 @@ $$
 
 and $\bigl(T^{\alpha}_{a,b}\bigr)^{**}=T^{\alpha}_{a,b}$. Equivalently, the adjoint of the signed sandwich is the grade involution of the ordinary sandwich with parameters $(\hat a,\alpha(\hat b))$.
 
-**Proof.** The adjoint of a composition is the reverse composition of the adjoints; the one-factor adjoints are $L_a^*=L_{\hat a}$, $R_b^*=R_{\hat b}$, $\alpha^*=\alpha$, so $\bigl(T^{\alpha}_{a,b}\bigr{)}^{*}=R_b^*\alpha^*L_a^*=R_{\hat b}\alpha L_{\hat a}$. Using $R_{\hat b}\alpha=\alpha R_{\alpha(\hat b)}$ and $L_{\alpha(\hat a)}\alpha=\alpha L_{\hat a}$, the expression becomes $L_{\alpha(\hat a)}\alpha R_{\alpha(\hat b)}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$, and also $\alpha R_{\alpha(\hat b)}L_{\hat a}=\alpha L_{\hat a}R_{\alpha(\hat b)}=\alpha T_{\hat a,\alpha(\hat b)}$. Applying the adjoint twice returns the conjugation twice and $\alpha$ twice, hence the operator itself.
+**Proof.** The adjoint of a composition is the reverse composition of the adjoints; the one-factor adjoints are $L_a^*=L_{\hat a}$, $R_b^*=R_{\hat b}$, $\alpha^*=\alpha$, so $\bigl(T^{\alpha}_{a,b}\bigr)^{*}=R_b^*\alpha^*L_a^*=R_{\hat b}\alpha L_{\hat a}$. Using $R_{\hat b}\alpha=\alpha R_{\alpha(\hat b)}$ and $L_{\alpha(\hat a)}\alpha=\alpha L_{\hat a}$, the expression becomes $L_{\alpha(\hat a)}\alpha R_{\alpha(\hat b)}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$, and also $\alpha R_{\alpha(\hat b)}L_{\hat a}=\alpha L_{\hat a}R_{\alpha(\hat b)}=\alpha T_{\hat a,\alpha(\hat b)}$. Applying the adjoint twice returns the conjugation twice and $\alpha$ twice, hence the operator itself.
 
 **Proposition (self-adjointness).** $T^{\alpha}_{a,b}$ is self-adjoint if and only if $(\alpha(\hat a),\alpha(\hat b))=(ac,c^{-1}b)$ for a central unit $c$; in particular every reflection $T^{\alpha}_{u,u^{-1}}$, $q(u)\ne0$, is self-adjoint.
 
@@ -70,18 +70,18 @@ For $a=x$ even, $\alpha(x)=x$ and $\alpha(\hat x)=\hat x$, so the adjoint of $T^
 
 ## Summary
 
-The adjoint of the **signed sandwich** is the signed sandwich by the doubly twisted parameters, $\bigl(T^{\alpha}_{a,b}\bigr{)}^{*}=R_{\hat b}\alpha L_{\hat a}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}=\alpha T_{\hat a,\alpha(\hat b)}$, and the adjoint is an involution of the signed family. The signed sandwich is **self-adjoint** exactly when $(\alpha(\hat a),\alpha(\hat b))=(ac,c^{-1}b)$ with $c$ central; in particular every **reflection** $T^{\alpha}_{u,u^{-1}}$ is self-adjoint. For the **twisted form** the adjoint of the signed sandwich is the same operator, because the twist of the form cancels against the twist of the operator. The signed one-sided factors have adjoints $(L_a\alpha)^*=\alpha L_{\hat a}=L_{\alpha(\hat a)}\alpha$ and similarly on the right, so the signed one-sided families are closed under the adjoint; the signed left multiplication by a vector is self-adjoint while the ordinary one is skew-adjoint. The operator is *The Signed Sandwich on a Clifford Algebra*, the ordinary adjoint is *The Adjoint of the Sandwich*, and the form is *The Twisted Adjoint on a Clifford Algebra*.
+The adjoint of the **signed sandwich** is the signed sandwich by the doubly twisted parameters, $\bigl(T^{\alpha}_{a,b}\bigr)^{*}=R_{\hat b}\alpha L_{\hat a}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}=\alpha T_{\hat a,\alpha(\hat b)}$, and the adjoint is an involution of the signed family. The signed sandwich is **self-adjoint** exactly when $(\alpha(\hat a),\alpha(\hat b))=(ac,c^{-1}b)$ with $c$ central; in particular every **reflection** $T^{\alpha}_{u,u^{-1}}$ is self-adjoint. For the **twisted form** the adjoint of the signed sandwich is the same operator, because the twist of the form cancels against the twist of the operator. The signed one-sided factors have adjoints $(L_a\alpha)^*=\alpha L_{\hat a}=L_{\alpha(\hat a)}\alpha$ and similarly on the right, so the signed one-sided families are closed under the adjoint; the signed left multiplication by a vector is self-adjoint while the ordinary one is skew-adjoint. The operator is *The Signed Sandwich on a Clifford Algebra*, the ordinary adjoint is *The Adjoint of the Sandwich*, and the form is *The Twisted Adjoint on a Clifford Algebra*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $T^{\alpha}_{a,b}=L_a\alpha R_b$ | Signed sandwich, $x\mapsto a\alpha(x)b$ |
-| $\bigl(T^{\alpha}_{a,b}\bigr{)}^{*}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ | Adjoint for the standard form |
-| $\bigl(T^{\alpha}_{a,b}\bigr{)}^{*}=\alpha T_{\hat a,\alpha(\hat b)}$ | Equivalent form through an ordinary sandwich |
+| $\bigl(T^{\alpha}_{a,b}\bigr)^{*}=T^{\alpha}_{\alpha(\hat a),\alpha(\hat b)}$ | Adjoint for the standard form |
+| $\bigl(T^{\alpha}_{a,b}\bigr)^{*}=\alpha T_{\hat a,\alpha(\hat b)}$ | Equivalent form through an ordinary sandwich |
 | $(\alpha(\hat a),\alpha(\hat b))=(ac,c^{-1}b)$, $c$ central | Self-adjointness condition |
 | $T^{\alpha}_{u,u^{-1}}$ self-adjoint | Self-adjointness of every reflection |
-| $\bigl(T^{\alpha}_{a,b}\bigr{)}^{*\alpha}=\bigl(T^{\alpha}_{a,b}\bigr{)}^{*}$ | Cancellation of the twists for the twisted form |
+| $\bigl(T^{\alpha}_{a,b}\bigr)^{*\alpha}=\bigl(T^{\alpha}_{a,b}\bigr)^{*}$ | Cancellation of the twists for the twisted form |
 | $(L_a\alpha)^*=\alpha L_{\hat a}$ | Adjoint of a signed one-sided factor |
 
 ## Further Reading

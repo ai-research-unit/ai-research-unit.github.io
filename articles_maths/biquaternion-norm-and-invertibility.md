@@ -44,7 +44,7 @@ the complex bilinear dot product. It is symmetric and non-degenerate, and the qu
 $$
 B(e_\mu,e_\nu)=\delta_{\mu\nu}.
 $$
-So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_\bar{\mu}Q_\mu$ of the basic algebra article.
+So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension $4$ over $\mathbb{C}$. The form $B$ is complex-bilinear; it is not the Hermitian inner product $\sum_\mu P_{\bar{\mu}}Q_\mu$ of the basic algebra article.
 
 ### Multiplicativity
 

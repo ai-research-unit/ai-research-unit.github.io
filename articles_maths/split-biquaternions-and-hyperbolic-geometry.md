@@ -174,7 +174,7 @@ The split biquaternion hyperbolic geometry is the three-dimensional member of a 
 
 | Feature | $\mathbb{D}$ (dimension $1$) | $\mathbb{H}_{\mathbb{D}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
 |---|---|---|---|
-| Ambient form | $a^2 - b^2$ on $\mathbb{D}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert q\rvert^2$ on $\mathbb{H}$ |
+| Ambient form | $a^2 - b^2$ on $\mathbb{D}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert\tilde q\rvert^2$ on $\mathbb{H}$ |
 | Level set | hyperbola $c^2 - s^2 = 1$ | hyperboloid $g = -1$ | sphere $S^3$ |
 | Space | $H^1\cong\mathbb{R}$ | $H^3\cong\mathbb{R}^3$ | $S^3$ |
 | Curvature | $-1$ | $-1$ | $+1$ |

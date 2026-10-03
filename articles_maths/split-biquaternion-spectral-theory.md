@@ -45,7 +45,7 @@ $$
 
 where $\mathbf{Q}_\pm = \mathrm{Vect}\,\tilde{Q}_\pm$ is the vector part of the component and $|\mathbf{Q}_\pm| = \sqrt{|\tilde{Q}_\pm|^2 - (q_0^\pm)^2}$ its modulus, the four values with each occurring to multiplicity two.
 
-**Proof.** Left multiplication by a quaternion $q$ on $\mathbb{H}$ has characteristic polynomial $(\lambda^2 - 2q_0\lambda + |q|^2)^2$: the eigenvalues of $L_q$ are $q_0 \pm i|\mathbf{v}|$, where $\mathbf{v} = \mathrm{Vect}\,q$, each occurring to multiplicity two when $q$ is non-real, since the real vector space $\mathbb{H}$ is two-dimensional over the centraliser plane $\mathbb{R}[q] \cong \mathbb{C}$, and the real value $q_0$ occurs to multiplicity four when $q$ is real. Applying this to the two blocks and multiplying gives the displayed polynomial; the roots are as stated.
+**Proof.** Left multiplication by a quaternion $\tilde q$ on $\mathbb{H}$ has characteristic polynomial $(\lambda^2 - 2q_0\lambda + |\tilde q|^2)^2$: the eigenvalues of $L_{\tilde q}$ are $q_0 \pm i|\mathbf{v}|$, where $\mathbf{v} = \mathrm{Vect}\,\tilde q$, each occurring to multiplicity two when $\tilde q$ is non-real, since the real vector space $\mathbb{H}$ is two-dimensional over the centraliser plane $\mathbb{R}[\tilde q] \cong \mathbb{C}$, and the real value $q_0$ occurs to multiplicity four when $\tilde q$ is real. Applying this to the two blocks and multiplying gives the displayed polynomial; the roots are as stated.
 
 **Corollary.** $\sigma(\tilde{Q})$ contains $0$ if and only if $\tilde{Q}$ lies on the zero divisor locus, that is $N(\tilde{Q}_+) = 0$ or $N(\tilde{Q}_-) = 0$, equivalently $|\tilde{Q}_+| = 0$ or $|\tilde{Q}_-| = 0$; by the division property of $\mathbb{H}$ this means $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, the union $\mathbb{H}\tilde\Pi_+\cup\mathbb{H}\tilde\Pi_-$ of the two ideals.
 
@@ -134,7 +134,7 @@ $$
 
 with $|\tilde{Q}_\pm - \lambda|^2 = (\mathrm{Re}(\tilde{Q}_\pm) - \mathrm{Re}\,\lambda)^2 + |\mathrm{Vect}(\tilde{Q}_\pm) - \mathrm{Vect}\,\lambda|^2 \neq 0$.
 
-**Proof.** Componentwise, $(q - \lambda)^{-1} = \overline{(q-\lambda)}/|q-\lambda|^2$ for a quaternion $q$ and $\lambda$ not conjugate to $q$; the denominator is a sum of squares of real numbers and vanishes exactly when $q = \lambda$. Apply this in each idempotent component.
+**Proof.** Componentwise, $(\tilde q - \lambda)^{-1} = \overline{(\tilde q-\lambda)}/|\tilde q-\lambda|^2$ for a quaternion $\tilde q$ and $\lambda$ not conjugate to $\tilde q$; the denominator is a sum of squares of real numbers and vanishes exactly when $\tilde q = \lambda$. Apply this in each idempotent component.
 
 **Corollary (analyticity and resolvent identity).** The resolvent is real-analytic on its domain, with poles along the two conjugacy classes $[\tilde{Q}_\pm]$; for $\lambda,\mu$ in the resolvent set,
 
@@ -158,10 +158,10 @@ The contrast with the biquaternion case is sharp: there $\rho(\tilde{Q}) = 0$ fo
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_+ + (\exp\tilde{Q}_-)\tilde\Pi_-$, and is the value of $e^{\lambda}$ at the reduced spectrum. Componentwise, for a quaternion $q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
+The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_+ + (\exp\tilde{Q}_-)\tilde\Pi_-$, and is the value of $e^{\lambda}$ at the reduced spectrum. Componentwise, for a quaternion $\tilde q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
 
 $$
-\exp q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat q\right) ,
+\exp\tilde q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat q\right) ,
 $$
 
 so the eigenvalues of $L_{\exp\tilde{Q}}$ are $e^{q_0^\pm}(\cos|\mathbf{Q}_\pm| \pm i\sin|\mathbf{Q}_\pm|) = e^{q_0^\pm \pm i|\mathbf{Q}_\pm|}$, as expected from the spectrum.

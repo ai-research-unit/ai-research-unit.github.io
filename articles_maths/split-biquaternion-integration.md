@@ -471,7 +471,7 @@ The integration theory developed in this article is the split biquaternion analo
 
 **Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(A - A_0)$. The split biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
-**Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split biquaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
+**Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $\tilde q^{-1}/\|\tilde q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split biquaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
 
 **Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $\tilde Q^{-1}/\|\tilde Q\|^{n-2}$, equivalently $\tilde Q^{\natural}/\|\tilde Q\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
 

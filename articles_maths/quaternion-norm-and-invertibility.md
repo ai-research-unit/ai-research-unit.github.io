@@ -44,12 +44,12 @@ $$
 *Proof.* Using $(p\tilde q)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ is central,
 
 $$
-N(pq) = (pq)(pq)^{\natural} = pq\,\tilde{q}^{\natural}\,p^{\natural} = p\,N(\tilde q)\,p^{\natural} = N(\tilde q)\,p p^{\natural} = N(p)N(\tilde q) .
+N(p\tilde q) = (p\tilde q)(p\tilde q)^{\natural} = p\tilde q\,\tilde q^{\natural}\,p^{\natural} = p\,N(\tilde q)\,p^{\natural} = N(\tilde q)\,p p^{\natural} = N(p)N(\tilde q) .
 $$
 
 Multiplicativity is the single feature that makes the quaternion norm the algebraic centre of gravity of the subject. It holds over any commutative base in which the computation makes sense, and in particular over any field.
 
-**Corollary.** If $N(p) = 0$ then $N(pq) = N(qp) = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $N(u) = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.
+**Corollary.** If $N(p) = 0$ then $N(p\tilde q) = N(\tilde q p) = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $N(u) = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.
 
 ### Positive Definiteness and the Real Norm
 
@@ -62,7 +62,7 @@ Multiplicativity is the single feature that makes the quaternion norm the algebr
 **Theorem.** The modulus is a norm on the real vector space $\mathbb{H}\cong\mathbb{R}^4$: it is positive definite, absolutely homogeneous, and satisfies the triangle inequality. It is also multiplicative,
 
 $$
-|pq| = |p|\,|\tilde q|,
+|p\tilde q| = |p|\,|\tilde q|,
 $$
 
 and therefore submultiplicative as well.
@@ -91,7 +91,7 @@ a symmetric bilinear form on the real vector space $\mathbb{H}$. The one-variabl
 
 **Proposition.** The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle p, \tilde q\rangle = \mathrm{Sc}(p^{\natural} \tilde q)$, and it is invariant under left and under right multiplication by a unit quaternion.
 
-*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = N(\tilde q)$. For a unit $u$, $\langle up, uq\rangle = \mathrm{Sc}(up(uq)^{\natural}) = \mathrm{Sc}(u\,p\tilde{q}^{\natural}\,u^{\natural}) = \mathrm{Sc}(p\tilde{q}^{\natural})$ because conjugation by a unit preserves the scalar part, as in *Quaternion Rotations and Reflections*; the right case is the same computation.
+*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = N(\tilde q)$. For a unit $u$, $\langle up, u\tilde q\rangle = \mathrm{Sc}(up(u\tilde q)^{\natural}) = \mathrm{Sc}(u\,p\tilde{q}^{\natural}\,u^{\natural}) = \mathrm{Sc}(p\tilde{q}^{\natural})$ because conjugation by a unit preserves the scalar part, as in *Quaternion Rotations and Reflections*; the right case is the same computation.
 
 ### The Euclidean Norm
 
@@ -121,7 +121,7 @@ The two forms are therefore the same datum: a positive definite quadratic form o
 
 **Theorem.** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q$ has a left inverse; $\tilde q$ has a right inverse; $\tilde q$ has a two-sided inverse; $N(\tilde q)\neq 0$.
 
-*Proof.* If $pq = 1$ for some $p$, then $N(p)N(\tilde q) = N(pq) = 1$, so $N(\tilde q)\neq 0$ in the base field; conversely if $N(\tilde q)\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is a two-sided inverse by the inverse formula below. The right case is symmetric.
+*Proof.* If $p\tilde q = 1$ for some $p$, then $N(p)N(\tilde q) = N(p\tilde q) = 1$, so $N(\tilde q)\neq 0$ in the base field; conversely if $N(\tilde q)\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ is a two-sided inverse by the inverse formula below. The right case is symmetric.
 
 Thus, over a field of characteristic not $2$, the three notions coincide, and an element is a unit exactly when its quaternion norm does not vanish.
 
@@ -165,9 +165,9 @@ $$
 
 ### The Inverse Map
 
-**Proposition.** The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(pq)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/N(\tilde q)$, and it coincides with conjugation on the unit sphere $N(\tilde q) = 1$.
+**Proposition.** The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(p\tilde q)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/N(\tilde q)$, and it coincides with conjugation on the unit sphere $N(\tilde q) = 1$.
 
-*Proof.* $(pq)(\tilde q^{-1}p^{-1}) = p(qq^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ then exhibits the composite.
+*Proof.* $(p\tilde q)(\tilde q^{-1}p^{-1}) = p(\tilde q\tilde q^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ then exhibits the composite.
 
 ### The Polar Split of the Units
 
@@ -185,11 +185,11 @@ Thus every unit is the product of a positive scale and a unit quaternion, and th
 
 ## The Absence of Zero Divisors
 
-**Definition.** An element $\tilde q\neq 0$ is a **zero divisor** if there is $p\neq 0$ with $pq = 0$ or $qp = 0$.
+**Definition.** An element $\tilde q\neq 0$ is a **zero divisor** if there is $p\neq 0$ with $p\tilde q = 0$ or $\tilde q p = 0$.
 
-**Theorem.** Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $pq = 0$ implies $p = 0$ or $\tilde q = 0$.
+**Theorem.** Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $p\tilde q = 0$ implies $p = 0$ or $\tilde q = 0$.
 
-*Proof.* Take norms: $N(pq) = N(p)N(\tilde q)$ and $N(pq) = 0$, so $N(p)N(\tilde q) = 0$ in the field $\mathbb{R}$, hence $N(p) = 0$ or $N(\tilde q) = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.
+*Proof.* Take norms: $N(p\tilde q) = N(p)N(\tilde q)$ and $N(p\tilde q) = 0$, so $N(p)N(\tilde q) = 0$ in the field $\mathbb{R}$, hence $N(p) = 0$ or $N(\tilde q) = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.
 
 The same argument shows that over any field in which the quaternion norm is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $N(\tilde q) = 0$ for some $\tilde q\neq 0$, then $\tilde{q}^{\natural}$ is a non-zero element annihilating $\tilde q$.
 
@@ -236,7 +236,7 @@ In the biquaternion case the norm is a complex-valued quadratic form, its zero s
 
 ## Summary
 
-The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(pq) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $N(\tilde q)$.
+The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(p\tilde q) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $N(\tilde q)$.
 
 Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. Over $\mathbb{R}$ every non-zero quaternion is invertible, the algebra has no zero divisors, and it is a division algebra, so the three-way classification of the biquaternion case collapses to the dichotomy zero or invertible. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times Sp(1)$ of a positive scale and the unit sphere.
 

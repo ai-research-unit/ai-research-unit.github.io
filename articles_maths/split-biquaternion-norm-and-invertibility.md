@@ -13,7 +13,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_\bar{\mu} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
+The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
 The idempotents of the split complex algebra are denoted $\tilde\Pi_+ = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -145,10 +145,10 @@ On the quaternion subspace the split-biquaternion norm is real and positive defi
 The **Hermitian form** of a split biquaternion $\tilde{Q}$ is
 
 $$
-\tilde{Q} \tilde{Q}^{*}, \qquad \text{whose scalar part is } \sum_{\mu=0}^{3} Q_\mu Q_\bar{\mu} = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu),
+\tilde{Q} \tilde{Q}^{*}, \qquad \text{whose scalar part is } \sum_{\mu=0}^{3} Q_\mu Q_{\bar{\mu}} = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu),
 $$
 
-where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate and $Q_\bar{\mu} = q_\mu - j q'_\mu$ is the split complex conjugate.
+where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate and $Q_{\bar{\mu}} = q_\mu - j q'_\mu$ is the split complex conjugate.
 
 **Basic properties.**
 
@@ -181,7 +181,7 @@ This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \con
 The Hermitian form is polarised by the **inner product**
 
 $$
-\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu,
+\langle \tilde P, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_{\bar{\mu}} Q_\mu,
 $$
 
 which is a split complex number in general:
@@ -198,7 +198,7 @@ The three quadratic objects are related as follows.
 
 - **Norm:** $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, split complex-valued, anisotropic, multiplicative, with polarisation $B$.
 - **Hermitian form:** $\tilde{Q} \tilde{Q}^{*}$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$, real, indefinite of signature $(4, 4)$, vanishing on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
-- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
+- **Inner product:** $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$, split complex-valued, Hermitian, linear in the second argument.
 
 The three are distinct, and each is useful in a different context. The split-biquaternion norm controls invertibility through the reduced norm below. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure; the Euclidean norm, defined separately, does.
 
@@ -288,7 +288,7 @@ $$
 \tilde{Q}^{-1} = \tilde{Q}^{\natural} \, N(\tilde{Q})^{-1}.
 $$
 
-This is the split biquaternion analogue of the formula $q^{-1} = q^{\natural}/|q|^2$ for quaternions.
+This is the split biquaternion analogue of the formula $\tilde q^{-1} = \tilde q^{\natural}/|\tilde q|^2$ for quaternions.
 
 ### The Criterion in the Idempotent Basis
 
@@ -528,7 +528,7 @@ Of the four fixed-point subspaces:
 
 The split-biquaternion norm $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ is a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear pairing $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$.
 
-The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
+The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^{*}$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. Its polarisation is the Hermitian inner product $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$. Neither defines a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
@@ -557,7 +557,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $B(\tilde P, \tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polarisation of the split-biquaternion norm |
-| $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$ | Hermitian inner product |
+| $\langle \tilde P, \tilde{Q} \rangle = \sum_\mu P_{\bar{\mu}} Q_\mu$ | Hermitian inner product |
 | $\tilde{Q} \tilde{Q}^{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian form (signature $(4,4)$) |
 | $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |

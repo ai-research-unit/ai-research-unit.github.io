@@ -157,10 +157,10 @@ a rotation followed by a boost, both with **doubled** parameters. The rotor $\ha
 $$
 \Phi(B)=\mathrm{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr),
 \qquad
-\Phi(B)\,X\,\Phi(B)=\mathrm{diag}\bigl(e^{\psi},e^{-\psi}\bigr)X ,
+\Phi(B)\,\Phi(\tilde P)\,\Phi(B)=\mathrm{diag}\bigl(e^{\psi},e^{-\psi}\bigr)\,\Phi(\tilde P) ,
 $$
 
-so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t\,e_0+c\,e_3$ of the anti-Hermitian sector this reads on the $(t,c)$ plane as
+so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $\tilde P=t\,e_0+c\,e_3$ of the anti-Hermitian sector this reads on the $(t,c)$ plane as
 
 $$
 t'=t\cosh\psi+c\sinh\psi, \qquad c'=t\sinh\psi+c\cosh\psi ,

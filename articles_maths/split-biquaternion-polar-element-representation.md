@@ -437,7 +437,7 @@ is of this kind: $\rho_+ = 2$, $\rho_- = 1$, $\rho = 1.5 + 0.5j$, $\lambda = \sq
 
 ### The Real Quaternions
 
-If $\tilde{Q} = q\in\mathbb{H}$, that is $A = q$ and $A' = 0$, then $A\pm A' = q$, so $\rho_+ = \rho_- = |q|$, $\rho = |q|e_0$, $\lambda = |q|$, $\tau = 0$ and $\tilde{U} = (q/|q|)\tilde\Pi_+ + (q/|q|)\tilde\Pi_-$, which is the diagonal element $(u,u)$ with $u = q/|q|$. The polar representation of a real quaternion is therefore the quaternion polar representation itself, with the same unit factor in both halves: the modulus is the real number $|q|$ written as the central element $|q|e_0$, and the rotor is the diagonal element $u\,\tilde\Pi_+ + u\,\tilde\Pi_-$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Quaternion Polar Element Representation*. The two-sided rotor group contains the diagonal $S^3$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
+If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $A = \tilde q$ and $A' = 0$, then $A\pm A' = \tilde q$, so $\rho_+ = \rho_- = |\tilde q|$, $\rho = |\tilde q|e_0$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_+ + (\tilde q/|\tilde q|)\tilde\Pi_-$, which is the diagonal element $(u,u)$ with $u = \tilde q/|\tilde q|$. The polar representation of a real quaternion is therefore the quaternion polar representation itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_0$, and the rotor is the diagonal element $u\,\tilde\Pi_+ + u\,\tilde\Pi_-$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Quaternion Polar Element Representation*. The two-sided rotor group contains the diagonal $S^3$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
 
 ### The Zero Divisors
 
@@ -531,7 +531,7 @@ $$
 \exp\tilde{Q} = e^{Q_0}\left(\cos\theta\,e_0 + \frac{\sin\theta}{\theta}\,\mathbf{Q}\right) , \qquad \theta^2 = -\mathbf{Q}^2 = \sum_kQ_k^2 ,
 $$
 
-with the split complex cosine, sine and square root taken componentwise in the central element $\theta$. This is the form of the de Moivre identity in this algebra: it is the analogue of the quaternion formula $\exp(q) = e^{q_0}(\cos|\mathbf{q}| + \mathbf{q}\sin|\mathbf{q}|/|\mathbf{q}|)$ and of the biquaternion formula with its complex angle, its angle here being split complex. Over three thousand random elements the identity was verified with largest coefficient residual $3.7\times10^{-14}$.
+with the split complex cosine, sine and square root taken componentwise in the central element $\theta$. This is the form of the de Moivre identity in this algebra: it is the analogue of the quaternion formula $\exp(\tilde q) = e^{q_0}(\cos|\mathbf{q}| + \mathbf{q}\sin|\mathbf{q}|/|\mathbf{q}|)$ and of the biquaternion formula with its complex angle, its angle here being split complex. Over three thousand random elements the identity was verified with largest coefficient residual $3.7\times10^{-14}$.
 
 ### The Vector Part
 
@@ -573,7 +573,7 @@ $$
 \log\tilde{Q} = \left(\log\tilde{Q}_+\right)\tilde\Pi_+ + \left(\log\tilde{Q}_-\right)\tilde\Pi_- ,
 $$
 
-with the ordinary quaternion logarithm: for $q = ru$ with $r>0$ and a unit quaternion $u = \cos\theta + \mu\sin\theta$, $\theta\in[0,\pi]$, the logarithm is $\log q = \ln r + \theta\mu$. It is defined exactly on the invertible elements, the complement of the zero divisors, because the quaternion logarithm is defined on $\mathbb{H}\setminus\{0\}$. It is a relation and not a function: the angle of a unit quaternion is determined modulo $2\pi$, and at the two central points of each half the axis is arbitrary, so that
+with the ordinary quaternion logarithm: for $\tilde q = ru$ with $r>0$ and a unit quaternion $u = \cos\theta + \mu\sin\theta$, $\theta\in[0,\pi]$, the logarithm is $\log\tilde q = \ln r + \theta\mu$. It is defined exactly on the invertible elements, the complement of the zero divisors, because the quaternion logarithm is defined on $\mathbb{H}\setminus\{0\}$. It is a relation and not a function: the angle of a unit quaternion is determined modulo $2\pi$, and at the two central points of each half the axis is arbitrary, so that
 
 $$
 \exp\left(2\pi k\,\mu \tilde\Pi_+\right) = e_0 \quad\text{for every unit pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln r + \pi\mu\right) = -r ,
@@ -591,7 +591,7 @@ $$
 
 whose argument is the sum of the argument of the modulus, $\log\rho = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \theta_+\mu_+\tilde\Pi_+ + \theta_-\mu_-\tilde\Pi_-$.
 
-**Proof.** The two summands commute, the first being central and the second lying in the compact part, so the exponential of the sum is the product of the exponentials and the product is $\rho\tilde{U} = \tilde{Q}$. If both components of $\tilde{Q}$ are non-zero then $\rho_\pm>0$, both quaternion logarithms exist, and the argument is defined; if a component vanishes then $\tilde{Q}$ is a zero divisor, and no exponential has a vanishing component, because $\left|\exp q\right| = e^{q_0}>0$ for every quaternion $q$.
+**Proof.** The two summands commute, the first being central and the second lying in the compact part, so the exponential of the sum is the product of the exponentials and the product is $\rho\tilde{U} = \tilde{Q}$. If both components of $\tilde{Q}$ are non-zero then $\rho_\pm>0$, both quaternion logarithms exist, and the argument is defined; if a component vanishes then $\tilde{Q}$ is a zero divisor, and no exponential has a vanishing component, because $\left|\exp\tilde q\right| = e^{q_0}>0$ for every quaternion $\tilde q$.
 
 **Consequences.** First, the exponential polar form of the earlier literature is not a second polar form of this algebra: it is the same decomposition with the modulus written as an exponential and each half of the rotor written as an exponential, and the two presentations differ only in the representative they choose for the argument of the modulus. Second, the domain of the exponential polar form is the invertible set and not the whole algebra, in contrast with the two-factor representation, whose domain is the whole algebra: the exponential is surjective onto the invertible elements and misses the zero divisors, which is the precise form of the failure recorded in the degenerate cases. Third, the count of polar forms for this algebra is a count of presentations and not of decompositions. The biquaternion partial forms arise from the three ways of splitting four factors into two pairs; two factors admit one splitting, so this algebra has no partial polar representations, and the two-factor grouping is available for every element of the algebra.
 

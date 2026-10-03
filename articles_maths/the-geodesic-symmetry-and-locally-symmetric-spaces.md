@@ -58,7 +58,7 @@ in which the curvature at $p$ appears at the second order. The reflection $x\map
 
 **Corollary.** A manifold of constant curvature is locally symmetric, since its curvature is a constant multiple of the metric and the metric is parallel. A Riemannian product of locally symmetric manifolds is locally symmetric, since the curvature of the product is the sum of the curvatures of the factors, each parallel. A covering of a locally symmetric manifold is locally symmetric, and so is a quotient by a discrete group of isometries acting freely and properly.
 
-**Proof.** For the constant curvature the tensor $R = \lambda g\owedge g$ is parallel because $g$ is parallel. For the product, the curvature splits and the covariant derivative respects the splitting. The covering and quotient statements are local, and a local symmetry lifts through a covering and descends through a quotient by isometries.
+**Proof.** For the constant curvature the tensor $R = \lambda g\wedge g$ is parallel because $g$ is parallel. For the product, the curvature splits and the covariant derivative respects the splitting. The covering and quotient statements are local, and a local symmetry lifts through a covering and descends through a quotient by isometries.
 
 ### Parallel Curvature
 

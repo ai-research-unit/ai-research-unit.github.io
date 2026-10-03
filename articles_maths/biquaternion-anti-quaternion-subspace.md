@@ -20,7 +20,7 @@ with $\bar{\tilde{Q}} = \bar{Q_0}e_0 + \bar{Q_1}e_1 + \bar{Q_2}e_2 + \bar{Q_3}e_
 
 ### The Condition in Coordinates
 
-Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient gives $Q_\bar{\mu} = -Q_\mu$ for each $\mu$, so every coefficient is purely imaginary:
+Comparing $\bar{\tilde{Q}} = -\tilde{Q}$ coefficient by coefficient gives $Q_{\bar{\mu}} = -Q_\mu$ for each $\mu$, so every coefficient is purely imaginary:
 
 $$
 \tilde{Q} = i q'_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3 = i\left(q'_0e_0 + q'_1e_1 + q'_2e_2 + q'_3e_3\right) , \qquad q'_\mu \in \mathbb{R} .

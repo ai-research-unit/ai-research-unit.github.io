@@ -67,7 +67,7 @@ On the group algebra $L^1(G)$ of a non-discrete group there are no unitary eleme
 
 **Proof.** By the composition law, $S_{\alpha(a^*),\alpha(b^*)}S_{a,b} = T_{\alpha(a^*)*\alpha(a),\,\alpha(b)*\alpha(b^*)}$ and $S_{a,b}S_{\alpha(a^*),\alpha(b^*)} = T_{a*a^*,\,b^*\!*b}$; the identity criterion for unsigned sandwiches, $T_{c,d} = 1$ iff $c = d = 1$ in the unital case, gives $\alpha(a^*\!*a) = 1$ and $\alpha(b*\!b^*) = 1$ for the first product and $a*a^* = 1$, $b^*\!*b = 1$ for the second. Applying $\alpha^{-1}$ and combining, the condition is that $a$ and $b$ be unitary. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*. $\square$
 
-**Corollary (the fixed elements give self-adjoint sandwiches).** If $\alpha(a^*) = a$ and $\alpha(b^*) = b$, then $S_{a,b}^* = S_{a,b}$, so the sandwich is self-adjoint; the elements fixed by the composite anti-automorphism $\sigma = \alpha\circ\,^*$ form a closed real subspace, and the self-adjoint signed sandwiches are exactly those whose parameters lie in it, up to the identification of the sandwich map.
+**Corollary (the fixed elements give self-adjoint sandwiches).** If $\alpha(a^*) = a$ and $\alpha(b^*) = b$, then $S_{a,b}^* = S_{a,b}$, so the sandwich is self-adjoint; the elements fixed by the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$ form a closed real subspace, and the self-adjoint signed sandwiches are exactly those whose parameters lie in it, up to the identification of the sandwich map.
 
 **Proof.** $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)} = S_{a,b}$ by the hypothesis; the fixed set of an anti-linear involution is a closed real subspace, and the last statement is the definition of the sandwich map read on the parameters. $\square$
 
@@ -97,7 +97,7 @@ the criterion of *The Signed Sandwich on a Topological Group*, read in the measu
 
 ## Summary
 
-With respect to the Haar pairing the elementary operators have adjoints $(L_a)^* = L_{a^*}$ (every $G$) and, in the unimodular case, $(R_b)^* = R_{b^*}$ and $\mathrm{A}^* = \mathrm{A}$; the signed sandwich $S_{a,b}(f) = a*\alpha(f)*b = L_a\mathrm{A}R_b$ therefore has adjoint $S_{\alpha(a^*),\alpha(b^*)}$, the unsigned sandwich $T_{a,b}$ has adjoint $T_{a^*,b^*}$, and the adjoint is an involution on each family, compatible with the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$ and with the composition law. The sandwich $S_{a,b}$ is unitary exactly when $a$ and $b$ are unitary elements — nonvacuous only on a discrete group or in the measure algebra, where the point masses are unitary — and it is self-adjoint exactly when its parameters are fixed by the composite anti-automorphism $\sigma = \alpha\circ\,^*$, the sandwich identity criterion being the one recalled from the discrete theory. When the grade involution is trivial the signed family collapses to the unsigned, and when it is inner the signed adjoint is the unsigned adjoint of the transported sandwich. The adjacency with the discrete theory is the passage from the bilinear form of *The Signed Adjoint Sandwich on a Topological Group* to the Haar pairing through the involution.
+With respect to the Haar pairing the elementary operators have adjoints $(L_a)^* = L_{a^*}$ (every $G$) and, in the unimodular case, $(R_b)^* = R_{b^*}$ and $\mathrm{A}^* = \mathrm{A}$; the signed sandwich $S_{a,b}(f) = a*\alpha(f)*b = L_a\mathrm{A}R_b$ therefore has adjoint $S_{\alpha(a^*),\alpha(b^*)}$, the unsigned sandwich $T_{a,b}$ has adjoint $T_{a^*,b^*}$, and the adjoint is an involution on each family, compatible with the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$ and with the composition law. The sandwich $S_{a,b}$ is unitary exactly when $a$ and $b$ are unitary elements — nonvacuous only on a discrete group or in the measure algebra, where the point masses are unitary — and it is self-adjoint exactly when its parameters are fixed by the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$, the sandwich identity criterion being the one recalled from the discrete theory. When the grade involution is trivial the signed family collapses to the unsigned, and when it is inner the signed adjoint is the unsigned adjoint of the transported sandwich. The adjacency with the discrete theory is the passage from the bilinear form of *The Signed Adjoint Sandwich on a Topological Group* to the Haar pairing through the involution.
 
 ## Summary of Notation
 
@@ -110,7 +110,7 @@ With respect to the Haar pairing the elementary operators have adjoints $(L_a)^*
 | $(T_{a,b})^* = T_{a^*,b^*}$ | The unsigned adjoint |
 | $(S_{a,b})^* = S_{\alpha(a^*),\alpha(b^*)}$ | The signed adjoint |
 | $(S_{a,b})^*S_{a,b} = 1\iff a,b$ unitary | The unitarity criterion |
-| $\sigma = \alpha\circ\,^*$ | The composite anti-automorphism fixing the self-adjoint sandwiches |
+| $\sigma = \alpha\circ\,{}^{*}$ | The composite anti-automorphism fixing the self-adjoint sandwiches |
 | $S_{c,d} = S_{a,b}\iff c^{-1}a\in Z^\times,\ c^{-1}a = bd^{-1}$ | The sandwich identity criterion |
 
 ## Further Reading

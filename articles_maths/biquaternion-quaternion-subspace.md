@@ -22,7 +22,7 @@ The complementary space, the anti-fixed space of $\bar{\cdot}$, is the anti-quat
 
 ### The Condition in Coordinates
 
-Comparing $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient gives $Q_\bar{\mu} = Q_\mu$ for each $\mu = 0, 1, 2, 3$, that is, each coefficient is real:
+Comparing $\bar{\tilde{Q}} = \tilde{Q}$ coefficient by coefficient gives $Q_{\bar{\mu}} = Q_\mu$ for each $\mu = 0, 1, 2, 3$, that is, each coefficient is real:
 
 $$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 , \qquad q_0, q_1, q_2, q_3 \in \mathbb{R} .

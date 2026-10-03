@@ -7,7 +7,7 @@ The signed left multiplication is the one-sided operator $f\mapsto a*\alpha(f)$,
 
 The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the group algebra, its involution and its completions from *The Convolution Algebra $L^1(G)$* and *The Group Algebra as an Involutive Algebra*; the grade involution, the operator $\mathrm{A}$, the signed sandwich and its composition laws from *The Signed Sandwich on the Group Algebra*; the signed left multiplication $\Lambda_a = L_a\mathrm{A}$, its composition laws $\Lambda_a\Lambda_b = L_{a*\alpha(b)}$, $\Lambda_a^2 = L_{a*\alpha(a)}$, its invertibility, its fixed set and its relation to the sandwich from *The Signed Left Multiplication on the Group Algebra*; the reflection as the two-sided case from *Reflections as Signed Two-Sided Operators on the Group Algebra*; the adjoint of the signed sandwich from *The Signed Adjoint Sandwich on the Group Algebra*; the adjoint of the reflection from *The Signed Adjoint of the Reflection on the Group Algebra*, immediately preceding; and the adjoint on the group algebra from *Hermitian Operators on a Group Algebra*. The graded adjoint action on a module is next; the adjoint of a convolution operator on its own terms is *The Adjoint of a Convolution Operator*, later in this group; the discrete version is *The Signed Adjoint of the Left Multiplication on a Topological Group*.
 
-Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$; $\mathcal{A} = L^1(G)$ carries the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ and the Haar pairing; $\alpha$ is a **grade involution**, $\mathrm{A}f = \alpha(f)$, $\sigma = \alpha\circ\,^*$, $\sigma(a) = \alpha(a^*)$, and the **signed left multiplication** and its right-handed mirror are
+Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$; $\mathcal{A} = L^1(G)$ carries the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ and the Haar pairing; $\alpha$ is a **grade involution**, $\mathrm{A}f = \alpha(f)$, $\sigma = \alpha\circ\,{}^{*}$, $\sigma(a) = \alpha(a^*)$, and the **signed left multiplication** and its right-handed mirror are
 
 $$
 \Lambda_a = L_a\mathrm{A}, \quad \Lambda_a(f) = a*\alpha(f); \qquad \Lambda^{\mathrm R}_b = \mathrm{A}R_b, \quad \Lambda^{\mathrm R}_b(f) = \alpha(f)*b .
@@ -49,7 +49,7 @@ and it preserves the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A}$, ca
 
 **Proof.** $\Lambda_a = \Lambda_b$ means $L_a\mathrm{A} = L_b\mathrm{A}$; composing with $\mathrm{A}^{-1} = \mathrm{A}$ on the right gives $L_a = L_b$, and left convolution is injective, so $a = b$. The self-adjointness criterion is then the theorem read with $\Lambda_{\alpha(a^*)} = \Lambda_a$. $\square$
 
-**Theorem (self-adjointness and the fixed set of $\sigma$).** The signed left multiplication $\Lambda_a$ is self-adjoint if and only if $a$ lies in the fixed set of the composite anti-automorphism $\sigma = \alpha\circ\,^*$,
+**Theorem (self-adjointness and the fixed set of $\sigma$).** The signed left multiplication $\Lambda_a$ is self-adjoint if and only if $a$ lies in the fixed set of the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$,
 
 $$
 \Lambda_a^* = \Lambda_a \iff \sigma(a) = a ,
@@ -95,7 +95,7 @@ $$
 
 **Theorem (the trivial grade involution).** If $\alpha = \mathrm{id}$ then $\Lambda_a = L_a$ is the unsigned left convolution, and its adjoint is $L_{a^*}$: it is self-adjoint exactly when $a^* = a$, unitary exactly when $a$ is unitary, and an involution exactly when $a = 1$.
 
-**Proof.** With $\mathrm{A} = \mathrm{id}$ the operator is $L_a$; the adjoint formula gives $L_{a^*}$, and the three criteria specialise the theorems with $\sigma = \,^*$ and $\alpha = \mathrm{id}$. $\square$
+**Proof.** With $\mathrm{A} = \mathrm{id}$ the operator is $L_a$; the adjoint formula gives $L_{a^*}$, and the three criteria specialise the theorems with $\sigma = \,{}^{*}$ and $\alpha = \mathrm{id}$. $\square$
 
 **Corollary (the inner grade involution).** If $\alpha = c_z$ then $\Lambda_a(f) = a*z*f*z^{-1} = L_{a*z}c_{z^{-1}}(f)$, the product of a left convolution and an inner automorphism, and the adjoint is $\Lambda_{\alpha(a^*)}$; the self-adjointness criterion becomes $\alpha(a^*) = a$, which is the conjugation by $z$ condition $z^{-1}*a*z\cdot$ fixed.
 
@@ -105,7 +105,7 @@ $$
 
 ## Summary
 
-The signed left multiplication $\Lambda_a = L_a\mathrm{A}$, $\Lambda_a(f) = a*\alpha(f)$, has adjoint $(\Lambda_a)^* = \mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)}$ with respect to the Haar pairing, $\sigma = \alpha\circ\,^*$; the adjoint is compatible with the composition laws, with the factorisation of the sandwich $S_{a,b} = \Lambda_aR_{\alpha(b)}$, and with the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A}$. Because the parametrisation $a\mapsto\Lambda_a$ is faithful, the three criteria are clean: the operator is self-adjoint exactly when $\sigma(a) = a$, that is when the parameter lies in the fixed set of the composite involution (the fixed subgroup $G^\sigma$ on the point masses), unitary exactly when $a$ is a unitary element (nonvacuous only on a discrete group or in the measure algebra), and an involution exactly when $\alpha(a) = a^{-1}$, that is when $a$ lies in the carrier of the inverted subgroup. The reflection is the two-sided case, where the non-faithful parametrisation replaces the fixed-point condition by a centrality condition, and the unsigned left convolution is recovered when the grade involution is trivial. The discrete version with the bilinear signed form is the neighbouring Part II article.
+The signed left multiplication $\Lambda_a = L_a\mathrm{A}$, $\Lambda_a(f) = a*\alpha(f)$, has adjoint $(\Lambda_a)^* = \mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A} = \Lambda_{\alpha(a^*)} = \Lambda_{\sigma(a)}$ with respect to the Haar pairing, $\sigma = \alpha\circ\,{}^{*}$; the adjoint is compatible with the composition laws, with the factorisation of the sandwich $S_{a,b} = \Lambda_aR_{\alpha(b)}$, and with the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A}$. Because the parametrisation $a\mapsto\Lambda_a$ is faithful, the three criteria are clean: the operator is self-adjoint exactly when $\sigma(a) = a$, that is when the parameter lies in the fixed set of the composite involution (the fixed subgroup $G^\sigma$ on the point masses), unitary exactly when $a$ is a unitary element (nonvacuous only on a discrete group or in the measure algebra), and an involution exactly when $\alpha(a) = a^{-1}$, that is when $a$ lies in the carrier of the inverted subgroup. The reflection is the two-sided case, where the non-faithful parametrisation replaces the fixed-point condition by a centrality condition, and the unsigned left convolution is recovered when the grade involution is trivial. The discrete version with the bilinear signed form is the neighbouring Part II article.
 
 ## Summary of Notation
 
@@ -113,7 +113,7 @@ The signed left multiplication $\Lambda_a = L_a\mathrm{A}$, $\Lambda_a(f) = a*\a
 |---|---|
 | $\Lambda_a = L_a\mathrm{A}$, $\Lambda_a(f) = a*\alpha(f)$ | The signed left multiplication |
 | $\Lambda^{\mathrm R}_b = \mathrm{A}R_b$ | The signed right multiplication |
-| $\sigma = \alpha\circ\,^*$, $\sigma(a) = \alpha(a^*)$ | The composite anti-automorphism |
+| $\sigma = \alpha\circ\,{}^{*}$, $\sigma(a) = \alpha(a^*)$ | The composite anti-automorphism |
 | $(\Lambda_a)^* = \Lambda_{\alpha(a^*)}$ | The adjoint |
 | $\Lambda_a\Lambda_b = L_{a*\alpha(b)}$, $\Lambda_a^2 = L_{a*\alpha(a)}$ | The composition laws |
 | $\Lambda_a^* = \Lambda_a\iff\sigma(a) = a$ | Self-adjointness criterion |

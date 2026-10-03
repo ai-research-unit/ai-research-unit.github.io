@@ -408,7 +408,7 @@ The higher-dimensional transform is separable, and it can be computed by applyin
 The transform pair above analyses a finite sequence; the transform of this section analyses an infinite one, and it is the discrete analogue of the Laplace transform rather than of the Fourier transform. Let $f = \{f_n\}_{n \ge 0}$ be a biquaternion-valued sequence. Its **Z transform** is
 
 $$
-X[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
+\mathcal{X}[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$
 
 the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = e^{s}$ turns the sum into $\sum_n f_n e^{-ns}$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = e^{2\pi i u/N}$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
@@ -416,16 +416,16 @@ the generating function of the sequence, and the variable ranges over the units 
 The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde Q'$-scaling rule would require every sample to commute with $\tilde Q'$. The two conventions are interconverted by the quaternion conjugate. Writing
 
 $$
-Y[f](\tilde{Q}) = \sum_{n=0}^{\infty} \tilde{Q}^{-n} f_n
+\mathcal{Y}[f](\tilde{Q}) = \sum_{n=0}^{\infty} \tilde{Q}^{-n} f_n
 $$
 
 for the transform with the variable on the left,
 
 $$
-\overline{X[f](\tilde{Q})} = Y[\bar f](\bar \tilde{Q}),
+\overline{\mathcal{X}[f](\tilde{Q})} = \mathcal{Y}[\bar f](\bar{\tilde{Q}}),
 $$
 
-because quaternion conjugation reverses products and $\overline{\tilde{Q}^{-1}} = \bar \tilde{Q}^{-1}$.
+because quaternion conjugation reverses products and $\overline{\tilde{Q}^{-1}} = \bar{\tilde{Q}}^{-1}$.
 
 ### The Region of Convergence
 
@@ -477,14 +477,14 @@ Each row below is an identity of series, valid wherever the series concerned con
 
 | Property | Sequence | Transform |
 |---|---|---|
-| Left linearity | $c_1f + c_2g$ | $c_1X[f](\tilde{Q}) + c_2X[g](\tilde{Q})$, for any constants |
-| Right linearity | $fc_1 + gc_2$ | $X[f](\tilde{Q})c_1 + X[g](\tilde{Q})c_2$, for $c_1\tilde{Q} = \tilde{Q}c_1$ and $c_2\tilde{Q} = \tilde{Q}c_2$ |
-| Two-sided linearity | $c_1f + gc_2$ | $c_1X[f](\tilde{Q}) + X[g](\tilde{Q})c_2$, for $c_2\tilde{Q} = \tilde{Q}c_2$ |
-| $\tilde Q'$-scaling | $f_n\tilde Q'^n$ | $X[f](\tilde Q'^{-1}\tilde{Q})$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ |
-| $n$-scaling | $nf_n$ | $-\tilde{Q}\,\dfrac{d}{d\tilde{Q}}X[f](\tilde{Q})$, for $\tilde{Q}$ central |
-| Shifting | $f_{n+k}$ | $X[f](\tilde{Q})\tilde{Q}^{k} - \sum_{n=0}^{k-1} f_n\tilde{Q}^{k-n}$ |
-| Inverse shifting | $f_{n-k}$ ($0$ for $n<k$) | $X[f](\tilde{Q})\tilde{Q}^{-k}$ |
-| Convolution | $\sum_{j=0}^{n} f_{n-j}g_j$ | $X[f](\tilde{Q})X[g](\tilde{Q})$, for $\tilde{Q}$ central |
+| Left linearity | $c_1f + c_2g$ | $c_1\mathcal{X}[f](\tilde{Q}) + c_2\mathcal{X}[g](\tilde{Q})$, for any constants |
+| Right linearity | $fc_1 + gc_2$ | $\mathcal{X}[f](\tilde{Q})c_1 + \mathcal{X}[g](\tilde{Q})c_2$, for $c_1\tilde{Q} = \tilde{Q}c_1$ and $c_2\tilde{Q} = \tilde{Q}c_2$ |
+| Two-sided linearity | $c_1f + gc_2$ | $c_1\mathcal{X}[f](\tilde{Q}) + \mathcal{X}[g](\tilde{Q})c_2$, for $c_2\tilde{Q} = \tilde{Q}c_2$ |
+| $\tilde Q'$-scaling | $f_n\tilde Q'^n$ | $\mathcal{X}[f](\tilde Q'^{-1}\tilde{Q})$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ |
+| $n$-scaling | $nf_n$ | $-\tilde{Q}\,\dfrac{d}{d\tilde{Q}}\mathcal{X}[f](\tilde{Q})$, for $\tilde{Q}$ central |
+| Shifting | $f_{n+k}$ | $\mathcal{X}[f](\tilde{Q})\tilde{Q}^{k} - \sum_{n=0}^{k-1} f_n\tilde{Q}^{k-n}$ |
+| Inverse shifting | $f_{n-k}$ ($0$ for $n<k$) | $\mathcal{X}[f](\tilde{Q})\tilde{Q}^{-k}$ |
+| Convolution | $\sum_{j=0}^{n} f_{n-j}g_j$ | $\mathcal{X}[f](\tilde{Q})\mathcal{X}[g](\tilde{Q})$, for $\tilde{Q}$ central |
 
 The shifting rows need no hypothesis, because $\tilde{Q}^{-(n+k)} = \tilde{Q}^{-n}\tilde{Q}^{-k}$ for the powers of a single element. The $\tilde Q'$-scaling row compares $(\tilde Q'\tilde{Q}^{-1})^n$ with $\tilde Q'^n\tilde{Q}^{-n}$ and therefore needs $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$, and the convolution row needs each $g_j$ to commute with $\tilde{Q}$, which the centrality of $\tilde{Q}$ supplies. The linearity rows show where the non-commutativity bites: a constant written on the right of a sequence may be moved outside the transform only if it commutes with the variable.
 
@@ -492,7 +492,7 @@ The shifting rows need no hypothesis, because $\tilde{Q}^{-(n+k)} = \tilde{Q}^{-
 
 In the table below the entry $n$ abbreviates the sequence $ne_0$, and the variable is a complex scalar, the case used in the applications. The rows whose base is a biquaternion carry the commutation hypotheses displayed, and the two scalar rows use the $n$-scaling rule, which a complex scalar satisfies.
 
-| $f_n$ | $X[f](\tilde{Q})$ |
+| $f_n$ | $\mathcal{X}[f](\tilde{Q})$ |
 |---|---|
 | $e_0$ | $(e_0 - \tilde{Q}^{-1})^{-1}$ |
 | $n$ | $\tilde{Q}(\tilde{Q} - e_0)^{-2}$ |
@@ -509,7 +509,7 @@ $$
 \sum_{m=0}^{M} f_{n+m}p_m = g_n, \qquad n \ge 0,
 $$
 
-where the coefficients $p_m$ are biquaternions and the right-hand side $g$ is a known sequence. Transforming both sides with the shifting and linearity rules converts the recurrence into an algebraic equation for $X[f]$, which is solved in the algebra; the sequence is then read off the table of elementary sequences. It is the discrete analogue of the Laplace-transform solution of a linear differential equation with constant coefficients.
+where the coefficients $p_m$ are biquaternions and the right-hand side $g$ is a known sequence. Transforming both sides with the shifting and linearity rules converts the recurrence into an algebraic equation for $\mathcal{X}[f]$, which is solved in the algebra; the sequence is then read off the table of elementary sequences. It is the discrete analogue of the Laplace-transform solution of a linear differential equation with constant coefficients.
 
 **Example.** Let $u = e_1 + e_2$, so that $u^2 = -2e_0$, and let
 
@@ -520,19 +520,19 @@ $$
 Transforming both sides and using the shifting rule, with $\tilde{Q}$ central,
 
 $$
-\tilde{Q}^2\bigl(X[f] - e_0 - u\tilde{Q}^{-1}\bigr) = \tilde{Q}\bigl(X[f] - e_0\bigr)(u - e_0) + X[f]u,
+\tilde{Q}^2\bigl(\mathcal{X}[f] - e_0 - u\tilde{Q}^{-1}\bigr) = \tilde{Q}\bigl(\mathcal{X}[f] - e_0\bigr)(u - e_0) + \mathcal{X}[f]u,
 $$
 
 which, after $e_0u = u$ and $e_0^2 = e_0$, is the linear equation
 
 $$
-X[f](\tilde{Q})\,(\tilde{Q}^2 + \tilde{Q} - \tilde{Q}u - u) = \tilde{Q}^2 + \tilde{Q} .
+\mathcal{X}[f](\tilde{Q})\,(\tilde{Q}^2 + \tilde{Q} - \tilde{Q}u - u) = \tilde{Q}^2 + \tilde{Q} .
 $$
 
 The left factor is the product $(\tilde{Q} + e_0)(\tilde{Q} - u)$ of two commuting factors, and $\tilde{Q}^2 + \tilde{Q} = \tilde{Q}(\tilde{Q} + e_0)$, so
 
 $$
-X[f](\tilde{Q}) = \tilde{Q}(\tilde{Q} - u)^{-1} = (e_0 - u\tilde{Q}^{-1})^{-1}.
+\mathcal{X}[f](\tilde{Q}) = \tilde{Q}(\tilde{Q} - u)^{-1} = (e_0 - u\tilde{Q}^{-1})^{-1}.
 $$
 
 By the table this is the transform of the sequence $f_n = u^n$, which satisfies the recurrence because $u^{n+1}(u - e_0) + u^{n+1} = u^{n+2}$, and satisfies the initial values. The solution is
@@ -541,7 +541,7 @@ $$
 f_n = (e_1 + e_2)^n, \qquad n \ge 0 .
 $$
 
-An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $X[f]$ is decomposed in powers of $\tilde{Q}^{-1}$, and each term is read off the table.
+An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $\mathcal{X}[f]$ is decomposed in powers of $\tilde{Q}^{-1}$, and each term is read off the table.
 
 ## The Commutative Alternative: The Reduced Biquaternion Transform
 
@@ -579,7 +579,7 @@ The vanishing-norm issue is a genuinely biquaternionic feature: signals containi
 
 The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the biquaternion signal processing applications.
 
-The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
+The infinite-sequence analogue is the **biquaternion Z transform**, $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
 
 ## Summary of Notation
 
@@ -594,8 +594,8 @@ The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](\tilde
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; not to be confused with the sample count $N$ |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
 | $e^{\rho\theta} = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
-| $X[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
-| $Y[f](\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^{-n}f_n$ | The Z transform with the variable on the left; $\overline{X[f](\tilde{Q})} = Y[\bar f](\bar \tilde{Q})$ |
+| $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
+| $\mathcal{Y}[f](\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^{-n}f_n$ | The Z transform with the variable on the left; $\overline{\mathcal{X}[f](\tilde{Q})} = \mathcal{Y}[\bar f](\bar{\tilde{Q}})$ |
 | $\tilde{Q} \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
 | $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
 | $\sigma_f$ | Radius of convergence of the Z transform, the geometric growth rate of $r(f_n)$ |

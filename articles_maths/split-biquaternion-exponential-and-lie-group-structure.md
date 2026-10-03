@@ -37,15 +37,15 @@ a reductive Lie algebra whose semisimple part is $\mathrm{SO}(4)$.
 
 **Definition.** For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the **exponential** is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.
 
-**Theorem.** $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $q = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in \mathrm{Im}\,\mathbb{H}$,
+**Theorem.** $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in \mathrm{Im}\,\mathbb{H}$,
 
 $$
-\exp(q) = e^{a}\left(\cos|\mathbf{u}| + \frac{\mathbf{u}}{|\mathbf{u}|}\sin|\mathbf{u}|\right) , \qquad \mathbf{u} \neq 0 ,
+\exp(\tilde q) = e^{a}\left(\cos|\mathbf{u}| + \frac{\mathbf{u}}{|\mathbf{u}|}\sin|\mathbf{u}|\right) , \qquad \mathbf{u} \neq 0 ,
 $$
 
 and $\exp(a) = e^{a}e_0$ for the real case $\mathbf{u} = 0$.
 
-**Proof.** The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $q = a + \mathbf{u}$ with $a$ central and $\mathbf{u}^2 = -|\mathbf{u}|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.
+**Proof.** The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $\tilde q = a + \mathbf{u}$ with $a$ central and $\mathbf{u}^2 = -|\mathbf{u}|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.
 
 So the exponential in the split biquaternion algebra is the pair of quaternion exponentials, one per half, and the closed form follows from the formula above componentwise.
 
@@ -60,12 +60,12 @@ So the exponential in the split biquaternion algebra is the pair of quaternion e
 **Theorem.** $\exp : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}^{\times}$ is surjective, and its kernel is
 
 $$
-\ker\exp = \left\{ (q_+, q_-) : \exp q_+ = \exp q_- = 1 \right\} ,
+\ker\exp = \left\{ (\tilde Q_+, \tilde Q_-) : \exp\tilde Q_+ = \exp\tilde Q_- = 1 \right\} ,
 $$
 
-where for a quaternion $q$, $\exp q = 1$ if and only if $q = 0$ or $q = 2\pi k\,\hat{\mathbf{u}}$ with $k \in \mathbb{Z}_{>0}$ and $\hat{\mathbf{u}}$ a unit imaginary quaternion.
+where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\hat{\mathbf{u}}$ with $k \in \mathbb{Z}_{>0}$ and $\hat{\mathbf{u}}$ a unit imaginary quaternion.
 
-**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $q = r\hat{q}$ with $r > 0$ and $\hat q$ a unit quaternion, and $\hat q = \cos\theta + \sin\theta\,\hat{\mathbf{u}}$ is $\exp(\theta\hat{\mathbf{u}})$, so $\exp(\log r + \theta\hat{\mathbf{u}}) = q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \mathbf{u}) = 1$ gives $e^a\cos|\mathbf{u}| = 1$ and $e^a\sin|\mathbf{u}|\,\hat{\mathbf{u}} = 0$; if $\mathbf{u} = 0$ then $e^a = 1$ and $a = 0$, while if $\mathbf{u} \neq 0$ then $\sin|\mathbf{u}| = 0$ forces $a = 0$ and $|\mathbf{u}| \in 2\pi\mathbb{Z}_{>0}$.
+**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\hat{q}$ with $r > 0$ and $\hat q$ a unit quaternion, and $\hat q = \cos\theta + \sin\theta\,\hat{\mathbf{u}}$ is $\exp(\theta\hat{\mathbf{u}})$, so $\exp(\log r + \theta\hat{\mathbf{u}}) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \mathbf{u}) = 1$ gives $e^a\cos|\mathbf{u}| = 1$ and $e^a\sin|\mathbf{u}|\,\hat{\mathbf{u}} = 0$; if $\mathbf{u} = 0$ then $e^a = 1$ and $a = 0$, while if $\mathbf{u} \neq 0$ then $\sin|\mathbf{u}| = 0$ forces $a = 0$ and $|\mathbf{u}| \in 2\pi\mathbb{Z}_{>0}$.
 
 The kernel is therefore a union of a point and countably many two-spheres in each half, and the exponential fails to be injective in the same manner as the quaternion exponential.
 

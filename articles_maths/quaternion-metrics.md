@@ -66,7 +66,7 @@ $$
 L_g(\tilde q) = g\tilde q, \qquad R_g(\tilde q) = \tilde q g .
 $$
 
-**Proposition.** $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{pq} = L_pL_q$, $R_{pq} = R_qR_p$.
+**Proposition.** $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{p\tilde q} = L_pL_{\tilde q}$, $R_{p\tilde q} = R_{\tilde q}R_p$.
 
 *Proof.* Multiplication is associative and every nonzero quaternion is invertible by *Quaternion Norm and Invertibility*, with $g^{-1} = g^{\natural}/N(g)$; this gives the inverses and the composition rules directly from the definitions.
 
