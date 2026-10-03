@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation: the elements of $\mathbb{B}$ all of whose four complex coefficients are purely imaginary. It is the multiple of the quaternion subspace by the central imaginary unit, and together the two subspaces give the **quaternion decomposition** $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ of the algebra into its real and imaginary coefficient parts. Like the quaternion subspace it is four-dimensional and free of zero divisors, but its biquaternion norm is negative definite rather than positive definite, and it is not a subalgebra: the product of two of its elements lands in the quaternion subspace.
+The **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation: the elements of $\mathbb{B}$ all of whose four complex coefficients are purely imaginary. It is the multiple of the quaternion subspace by the central imaginary unit, and together the two subspaces give the **quaternion decomposition** $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ of the algebra into its real and imaginary coefficient parts. Like the quaternion subspace it is four-dimensional and free of zero divisors, but its biquaternion norm is the negative of a sum of four real squares, and it is not a subalgebra: the product of two of its elements lands in the quaternion subspace.
 
 The article follows the plan of its companions, including a final section on the place of the subspace among the particular cases of the algebra. All statements are algebraic; the only coordinates used are the coefficients $Q_\mu = q_\mu + iq'_\mu$.
 
@@ -92,17 +92,17 @@ of the same form as the square of a real vector.
 
 ## The Biquaternion Norm
 
-**Theorem.** On the anti-quaternion subspace the biquaternion norm is the **negative definite** quadratic form
+**Theorem.** On the anti-quaternion subspace the biquaternion norm is
 
 $$
-N(\tilde{Q}) = -\left((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2\right) \leq 0 , \qquad N(\tilde{Q}) = 0 \iff \tilde{Q} = 0 ,
+N(\tilde{Q}) = -\left((q'_0)^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2\right) ,
 $$
 
 and it is related to the norm of the corresponding real quaternion by $N(i\tilde{P}) = -N(\tilde{P})$.
 
 **Proof.** Substituting $Q_\mu = iq'_\mu$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives $\sum_\mu (iq'_\mu)^2 = -\sum_\mu (q'_\mu)^2$; the multiplicativity of $N$ and the centrality of $i$ give the second statement.
 
-The subspace is thus the exact negative counterpart of the quaternion subspace: it is one of the four subspaces on which the biquaternion norm is real, and the only one on which it is negative definite. Its real restriction has signature $(0,4)$ in the basis $ie_0, ie_1, ie_2, ie_3$.
+The subspace is thus the exact negative counterpart of the quaternion subspace: it is one of the four subspaces on which the biquaternion norm is real. Its signature is read in *The Bilinear Form on the Biquaternion Algebra*.
 
 ### Units and Zero Divisors
 
@@ -112,7 +112,7 @@ $$
 (i\tilde{P})^{-1} = -i\,\frac{\tilde{P}^{\natural}}{N(\tilde{P})} ,
 $$
 
-which is again an element of $i\mathbb{H}_{\mathbb{B}}$. The group of units of the subspace is $i\mathbb{H}_{\mathbb{B}}\setminus\{0\}$, which retracts onto the sphere $S^3$ of the elements of norm $-1$.
+which is again an element of $i\mathbb{H}_{\mathbb{B}}$. The group of units of the subspace is $i\mathbb{H}_{\mathbb{B}}\setminus\{0\}$.
 
 **Proof.** The inverse formula is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$; with $\tilde{Q} = i\tilde{P}$ one has $\tilde{Q}^{\natural} = i\tilde{P}^{\natural}$ and $N(\tilde{Q}) = -N(\tilde{P})$, giving the displayed expression, in which $i$ is held by a real quaternion and the result is therefore in the subspace.
 
@@ -204,7 +204,7 @@ satisfy $\eta^2 = +e_0$ and are the **roots of $+1$** of the subspace, filling a
 
 **Proposition.** $i\mathbb{H}_{\mathbb{B}}$ contains no zero divisor; it is the third of the three subspaces free of them.
 
-**Proof.** For $\tilde{Q} = i\tilde{P}$ the norm is $N(\tilde{Q}) = -N(\tilde{P})$, which is the negative definite sum of four squares and vanishes only at the origin; the criterion of *Biquaternion Zero Divisors* makes every non-zero element a unit.
+**Proof.** For $\tilde{Q} = i\tilde{P}$ the norm is $N(\tilde{Q}) = -N(\tilde{P})$, which is the negative of a sum of four real squares and vanishes only at the origin; the criterion of *Biquaternion Zero Divisors* makes every non-zero element a unit.
 
 So the subspace contains no null element, and in the distribution of that article it completes, with the centre and the quaternion subspace, the three subspaces free of zero divisors; the vector subspace and the two sectors carry the null sets.
 
@@ -274,7 +274,7 @@ which is the module statement in a concrete instance: multiplication of a subspa
 
 ## Summary
 
-The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, the set of elements with purely imaginary coefficients, a real vector space of dimension $4$ with basis $ie_0, ie_1, ie_2, ie_3$, equal to the product of the quaternion subspace with the central imaginary unit. It is not a subalgebra: the product of two of its elements lies in $\mathbb{H}_{\mathbb{B}}$, and in particular $(ie_k)^2 = +e_0$ for the three imaginary vector units, so the subspace contains a two-sphere of square roots of plus one and exactly the two square roots $\pm ie_0$ of minus one. It is a free two-sided module of rank one over the quaternion subspace, generated by $i$. Its biquaternion norm is the negative definite form $-\sum_\mu (q'_\mu)^2$, so every non-zero element is a unit and there are no zero divisors; its only idempotent is $0$. Complex conjugation acts as minus the identity, quaternion conjugation and reversal coincide on the subspace, and Hermitian conjugation is their negative. It is complementary to the quaternion subspace, its intersection with the vector subspace is the triple of imaginary vectors, and its decomposition along the coordinate blocks is $i\mathbb{H}_{\mathbb{B}} = i\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. In the algebra of particular cases the subspace carries only the trivial idempotent $0$, it is a free rank-one module over the quaternion subspace and no ideal of $\mathbb{B}$, its only roots of minus one are the two trivial points $\pm ie_0$ while a two-sphere of roots of plus one fills it, it contains no zero divisor, and the bracket carries it into the rotation subalgebra $\mathrm{K}$ of the quaternion subspace.
+The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, the set of elements with purely imaginary coefficients, a real vector space of dimension $4$ with basis $ie_0, ie_1, ie_2, ie_3$, equal to the product of the quaternion subspace with the central imaginary unit. It is not a subalgebra: the product of two of its elements lies in $\mathbb{H}_{\mathbb{B}}$, and in particular $(ie_k)^2 = +e_0$ for the three imaginary vector units, so the subspace contains a two-sphere of square roots of plus one and exactly the two square roots $\pm ie_0$ of minus one. It is a free two-sided module of rank one over the quaternion subspace, generated by $i$. Its biquaternion norm is $-\sum_\mu (q'_\mu)^2$, so every non-zero element is a unit and there are no zero divisors; its only idempotent is $0$. Complex conjugation acts as minus the identity, quaternion conjugation and reversal coincide on the subspace, and Hermitian conjugation is their negative. It is complementary to the quaternion subspace, its intersection with the vector subspace is the triple of imaginary vectors, and its decomposition along the coordinate blocks is $i\mathbb{H}_{\mathbb{B}} = i\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. In the algebra of particular cases the subspace carries only the trivial idempotent $0$, it is a free rank-one module over the quaternion subspace and no ideal of $\mathbb{B}$, its only roots of minus one are the two trivial points $\pm ie_0$ while a two-sphere of roots of plus one fills it, it contains no zero divisor, and the bracket carries it into the rotation subalgebra $\mathrm{K}$ of the quaternion subspace.
 
 ## Summary of Notation
 

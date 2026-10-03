@@ -247,7 +247,7 @@ Associativity is assumed in most of the corpus, and it is used at specific point
 
 - **Presentations by generators and relations.** The quotient presentations $\mathbb{C} = \mathbb{R}\langle x\rangle/(x^2+1)$, $\mathbb{D} = \mathbb{R}\langle x\rangle/(x^2-1)$, $\mathbb{D}' = \mathbb{R}\langle x\rangle/(x^2)$ and $\mathbb{H} = \mathbb{R}\langle x,y\rangle/(x^2+1, y^2+1, xy+yx)$ are presentations of associative algebras, in the form and the notation of *Quotients of the Tensor Algebra*, and the free algebra on which the last of them is built is the free associative algebra of this article.
 
-Associativity is therefore not an incidental hypothesis. It is what makes the product of an algebra act on its ideals, on its modules and on its homology; it holds for the matrix algebras, the endomorphism algebras, the polynomial algebras, the group algebras, the tensor algebra, the algebras of *The Symmetric Algebra*, *The Exterior Algebra* and *Clifford Algebras in Finite Dimensions*, the enveloping algebras and the algebras of the number systems, with the octonions and the algebras of the ladder the named exceptions.
+Associativity is therefore not an incidental hypothesis. It is what makes the product of an algebra act on its ideals, on its modules and on its homology; it holds for the matrix algebras, the endomorphism algebras, the polynomial algebras, the group algebras, the tensor algebra, the algebras of *The Symmetric Algebra* and *The Exterior Algebra*, the enveloping algebras and the algebras of the number systems, with the octonions and the algebras of the ladder the named exceptions.
 
 ## Summary
 

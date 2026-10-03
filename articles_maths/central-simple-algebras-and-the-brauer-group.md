@@ -5,7 +5,7 @@
 
 A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebra with centre exactly $F$ and no two-sided ideal other than $0$ and the algebra itself. These are the algebras that behave, over an arbitrary field, as the matrix algebras behave over an algebraically closed one: every one of them becomes a full matrix algebra after a suitable extension of scalars, and every one of them is a matrix algebra over a division algebra, by Wedderburn's structure theorem. They are the natural home of the Skolem–Noether theorem, of the notion of similarity, and of the tensor product; and the classes of central simple algebras under similarity form a group, the **Brauer group** $\operatorname{Br}(F)$, which is the subject of this article.
 
-The article develops the theory from the definition of a central simple algebra. The facts used are stated as standard: that a finite-dimensional algebra over a field without zero divisors is a division algebra; that the tensor product of central simple algebras is central simple; Frobenius' theorem; Wedderburn's little theorem; and the Skolem–Noether theorem. What this article adds is the systematic theory: the structure and dimension of a central simple algebra, the index and the exponent, splitting fields, the crossed-product description of the classes, the identification of the $2$-torsion with the quadratic forms by the Clifford invariant, and the computation of the Brauer group for the standard fields. The generalisation from a field to a commutative ring is not developed here.
+The article develops the theory from the definition of a central simple algebra. The facts used are stated as standard: that a finite-dimensional algebra over a field without zero divisors is a division algebra; that the tensor product of central simple algebras is central simple; Frobenius' theorem; Wedderburn's little theorem; and the Skolem–Noether theorem. What this article adds is the systematic theory: the structure and dimension of a central simple algebra, the index and the exponent, splitting fields, the crossed-product description of the classes, the $2$-torsion and its quaternion generators, and the computation of the Brauer group for the standard fields. The finer identification of the $2$-torsion with the quadratic forms by the Clifford invariant needs the forms of Part II and is named only. The generalisation from a field to a commutative ring is not developed here.
 
 Everything is algebraic. The finer arithmetic of the Brauer group and its cohomological interpretation of the relative Brauer group over a local or global field are named where they belong and deferred to the articles that own them; in particular, the class-field-theoretic identifications belong to the Part I article *Class Field Theory*, in the category *Rings and Fields*.
 
@@ -200,7 +200,7 @@ $$
 
 the second cohomology group of $G$ with coefficients in the multiplicative group of $L$; the group cohomology is that of *Group Cohomology*. This is the cohomological face of the theory and the reason the exponent of a class is the order of a cohomology class.
 
-### The Two-Torsion and Quadratic Forms
+### The Two-Torsion and the Quaternion Algebras
 
 The **$2$-torsion** of the Brauer group is the subgroup
 
@@ -208,16 +208,9 @@ $$
 \operatorname{Br}_2(F) = \{[A] \in \operatorname{Br}(F) : 2[A] = 0\}
 $$
 
-of the classes whose exponent divides $2$. By the crossed-product description these are the classes of the quaternion algebras and of their tensor products, and the reason is that this subgroup is the same group as the second graded piece of the Witt ring of quadratic forms.
+of the classes whose exponent divides $2$. By the crossed-product description these are the classes of the quaternion algebras and of their tensor products.
 
-**Theorem (standard; Merkurjev in characteristic not $2$, Sah in characteristic $2$).** Let $I_q$ be the fundamental ideal of the Witt group of non-degenerate quadratic forms over $F$ and let $I_q^n$ be its $n$-th power. The Clifford algebra of a form $q \in I_q$ is isomorphic to a tensor product of quaternion algebras over $F$, the assignment $q \mapsto C(q)$ is an epimorphism $I_q^2 \to \operatorname{Br}_2(F)$, and its kernel is $I_q^3$. Hence
-$$
-\operatorname{Br}_2(F) \;\cong\; I_q^2/I_q^3 .
-$$
-
-The quaternion algebras are the four-dimensional central simple algebras, as recorded above, so the theorem places them inside the Brauer group: their classes generate the $2$-torsion, and the relations among those classes are the three-fold Pfister forms of *The Witt Group and the Grothendieck–Witt Ring*. The comparison is explicit on the generators: the $2$-fold Pfister form $\langle\!\langle a, b\rangle\!\rangle = \langle 1, -a\rangle \otimes \langle 1, -b\rangle$ has Clifford algebra Brauer-equivalent to the quaternion algebra $(a, b)_F$ of *Tensor Products of Algebras*, so $\langle\!\langle a, b\rangle\!\rangle$ lies in $I_q^3$ exactly when $(a, b)_F$ is split.
-
-**Remark.** This is the reason the two subjects are one, and it is a method, not an analogy. A question about products of quaternion algebras is read as a question about quadratic forms, answered there, and transported back; the transport is the epimorphism $I_q^2 \to \operatorname{Br}_2(F)$. In particular a chain equivalence for the presentations of a quadratic form, of *Witt's Theorems*, pushes forward along it to a chain equivalence for the tensor products of quaternion algebras, where the moves become the moves on the factors. Over a field in which the three-fold Pfister forms vanish, that is $I_q^3 = 0$, the epimorphism is an isomorphism and the transport is exact.
+**Remark.** The finer identification of this subgroup with the quadratic form theory — the Clifford invariant, the Witt group, the Pfister forms, and the theorem of Merkurjev that $\operatorname{Br}_2(F) \cong I_q^2/I_q^3$ — needs the forms of Part II, is treated in *Hilbert Algebras* and in *The Witt Group and the Grothendieck–Witt Ring*, and is named here only. What the present Part supplies is the algebra: the quaternion algebras are the four-dimensional central simple algebras, and their classes generate the $2$-torsion.
 
 ## Crossed Products and Cyclic Algebras
 
@@ -302,7 +295,7 @@ A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebr
 
 A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_d(L)$; a splitting field of degree $\operatorname{ind}(A)$ always exists, and the **exponent** of $A$, its order in $\operatorname{Br}(F)$, divides its index. For a finite Galois extension $L/F$ with group $G$, every central simple algebra split by $L$ is a crossed product, and the relative Brauer group is $\operatorname{Br}(L/F) \cong H^2(G, L^\times)$, so the Brauer group is the cohomological home of the factor-set classification; the cyclic algebras $(L/F, \sigma, a)$ are the explicit case. The computations are $\operatorname{Br}(F) = 0$ for algebraically closed and for finite $F$, $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ generated by $[\mathbb{H}]$ with $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{H} \cong M_4(\mathbb{R})$, $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$ for a non-Archimedean local field, and for a number field the Hasse–Brauer–Noether isomorphism onto the families of local invariants with zero sum, which belongs to *Class Field Theory*.
 
-The **Clifford invariant** identifies the classes of exponent dividing $2$ with the quadratic forms: the Clifford algebra of a form $q \in I_q$ is a tensor product of quaternion algebras over $F$, the assignment $q \mapsto C(q)$ is an epimorphism $I_q^2 \to \operatorname{Br}_2(F)$ with kernel $I_q^3$, and hence $\operatorname{Br}_2(F) \cong I_q^2/I_q^3$ (Merkurjev in characteristic not $2$, Sah in characteristic $2$). So the $2$-torsion of the Brauer group is the second graded piece of the Witt ring, the quaternion algebras generate it, and the relations among their classes are the three-fold Pfister forms.
+The **$2$-torsion** of the Brauer group is generated by the quaternion algebras: the classes of exponent dividing $2$ are the classes of the quaternion algebras and of their tensor products, and the quaternion algebras are the four-dimensional central simple algebras. The finer **Clifford invariant**, which identifies this subgroup with the Witt ring of quadratic forms and gives $\operatorname{Br}_2(F) \cong I_q^2/I_q^3$ (Merkurjev in characteristic not $2$, Sah in characteristic $2$), needs the forms of Part II and is named only.
 
 ## Summary of Notation
 
@@ -322,8 +315,6 @@ The **Clifford invariant** identifies the classes of exponent dividing $2$ with 
 | $\operatorname{Br}(F)$ | Brauer group: similarity classes under $\otimes_F$ |
 | $\operatorname{Br}(L/F)$ | relative Brauer group, classes split by $L$ |
 | $\operatorname{Br}_2(F)$ | $2$-torsion, classes of exponent dividing $2$ |
-| $I_q$, $I_q^n$ | fundamental ideal of the Witt group of quadratic forms, and its powers |
-| $C(q)$ | Clifford algebra of a quadratic form, a product of quaternion algebras for $q \in I_q$ |
 | $\operatorname{Trd}, \operatorname{Nrd}$ | reduced trace and reduced determinant |
 | $C_A(B)$ | centralizer of $B$ in $A$ |
 | $\operatorname{Aut}_F(A) \cong A^\times/F^\times$ | automorphisms, all inner (Skolem–Noether) |
@@ -344,4 +335,3 @@ The **Clifford invariant** identifies the classes of exponent dividing $2$ with 
 - Jean-Pierre Serre, *Local Fields* (Springer, 1979), for the local invariant map and the Brauer group of a local field.
 - Jürgen Neukirch, Alexander Schmidt and Kay Wingberg, *Cohomology of Number Fields* (Springer, 2nd ed. 2008), for the Hasse–Brauer–Noether theorem and the Brauer group of a number field.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for algebras with involution and the deeper structure of central simple algebras.
-- Richard Elman, Nikita Karpenko and Alexander Merkurjev, *The Algebraic and Geometric Theory of Quadratic Forms*, American Mathematical Society Colloquium Publications 56 (2008), for the Clifford invariant and the isomorphism $\operatorname{Br}_2(F) \cong I_q^2/I_q^3$.

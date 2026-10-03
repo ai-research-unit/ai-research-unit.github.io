@@ -2,65 +2,19 @@
 
 ## Introduction
 
-This article collects the topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as a space, together with the projective geometry of its null cone: the contractibility of the ambient space, the Euclidean unit sphere, the null cone and its link, the Segre embedding and the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, and the Klein–Plücker geometry of the lines of $\mathbb{P}^3$.
+This article collects the topology of the **null cone** of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its projective geometry: the null cone and its link, the Segre embedding and the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, and the Klein–Plücker geometry of the lines of $\mathbb{P}^3$. The Euclidean structure of the ambient space, its contractibility and the Euclidean unit sphere read the *Hermitian* form and belong to *The Euclidean Topology of the Biquaternion Algebra*; they are quoted from there wherever the geometry of the null cone needs them.
 
 The norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ decides invertibility and vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); both treatments are algebraic, and the projective sections below treat the same form geometrically, as the equation of a quadric. The article uses the algebra and fixed-point subspaces of *Biquaternion Algebra*, the zero divisor set of *Biquaternion Zero Divisors*, and *Lie Groups*. The polarisation of the norm, its real forms and its associated Clifford algebra are in *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*. No physics is invoked and no new result is claimed.
 
-**Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — belongs to the Lie theory of the algebra and is treated in *The Biquaternion Unit Group as a Topological Group*. This article owns the ambient space, its distinguished subsets and the projective geometry of the null cone, and takes from that article only the homotopy type of $\mathbb{B}^\times$ when a comparison is needed.
+**Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — is read on the Hermitian form and is treated in *The Unitary Group of the Biquaternion Algebra*, the algebraic group itself being *The Biquaternion Unit Group as a Topological Group*. This article owns the null cone, its link and their projective geometry, quoting the ambient Euclidean structure from *The Euclidean Topology of the Biquaternion Algebra* and the homotopy type of $\mathbb{B}^\times$ from those articles when a comparison is needed.
 
 **Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$ and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$.
 
-The algebra itself has no interesting topology: as a real vector space it is $\mathbb{R}^8$, hence contractible. The two distinguished subsets studied here are the **Euclidean unit sphere** $S^7_E$ and the **null cone** $\{N(\tilde{Q})=0\}$, together with the link of the latter.
+As a real vector space the algebra is $\mathbb{R}^8$, hence contractible, and the Euclidean structure that exhibits this, the Euclidean unit sphere and the contractibility of the six distinguished subspaces are *The Euclidean Topology of the Biquaternion Algebra*; only the contractibility of the ambient space is quoted here. The distinguished subset studied in this article is the **null cone** $\{N(\tilde{Q})=0\}$ together with its link.
 
-## The underlying space and its contractibility
+## The Ambient Space
 
-The real basis is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, and
-
-$$
-\tilde{Q}\mapsto(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)
-$$
-
-is a linear isometry of $(\mathbb{B},\|\cdot\|_E)$ onto $\mathbb{R}^8$. Thus the topology of $\mathbb{B}$ is the Euclidean topology of $\mathbb{R}^8$. The product is bilinear, hence continuous, so $\mathbb{B}$ is a topological algebra over $\mathbb{R}$; inversion is continuous on the units, so $\mathbb{B}^\times$ is a topological group.
-
-**Theorem.** $\mathbb{B}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{B})=0$ for all $n\geq1$.
-
-**Proof.** The straight-line homotopy
-
-$$
-H(t,\tilde{Q})=(1-t)\tilde{Q},\qquad t\in[0,1],
-$$
-
-is continuous with $H(0,\tilde{Q})=\tilde{Q}$ and $H(1,\tilde{Q})=0$, so the identity is homotopic to the constant map at $0$.
-
-Thus every map into $\mathbb{B}$ is null-homotopic, and by the same homotopy the fixed-point subspaces are contractible:
-
-$$
-\mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^2,\qquad \mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4,\qquad \mathbb{M}_+\cong\mathbb{R}^4,\qquad \mathbb{M}_-\cong\mathbb{R}^4.
-$$
-
-So $\mathbb{M}_\pm$ carry no topology beyond that of $\mathbb{R}^4$; their Minkowski content comes from the restricted quadratic form (*Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*; *Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*), not from the topology.
-
-## The Euclidean unit sphere
-
-$$
-S^7_E=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^7
-$$
-
-is a closed, compact, connected $7$-manifold, but it is the wrong object here. Multiplication does not preserve $\|\cdot\|_E$: for $\tilde{Q}=e_1+ie_2$,
-
-$$
-\tilde{Q}^2=0,\qquad \|\tilde{Q}\|_E=\sqrt2,\qquad \|\tilde{Q}^2\|_E=0\neq\|\tilde{Q}\|_E^2=2.
-$$
-
-Normalizing, $\tilde{Q}_0=(e_1+ie_2)/\sqrt{2}$ has $\|\tilde{Q}_0\|_E=1$ but $N(\tilde{Q}_0)=0$, so $\tilde{Q}_0$ is a zero divisor, and
-
-$$
-S^7_E\not\subseteq\mathbb{B}^\times.
-$$
-
-For the normed division algebras the biquaternion norm is multiplicative and the unit sphere is a topological group, $S^0,S^1,S^3$, while $S^7$ is a Moufang loop for the octonions; since $\mathbb{B}$ is not a division algebra, none of this applies.
-
-The level set that *is* a subgroup of $\mathbb{B}^\times$ is $N(\tilde{Q})=1$, not $\|\tilde{Q}\|_E=1$: the **norm-one group** $\mathbb{B}^\times_1$ is developed with the rest of the group structure in *Biquaternion Lie Group and Exponential Structure*, §*The Group of Units*.
+The algebra is $\mathbb{R}^8$ with the Euclidean topology of *The Euclidean Topology of the Biquaternion Algebra*, and it is contractible: the straight-line homotopy $H(s,\tilde{Q})=(1-s)\tilde{Q}$ contracts it to the origin, so $\pi_n(\mathbb{B})=0$ for every $n\geq1$ and every map into $\mathbb{B}$ is null-homotopic. The homotopy preserves every linear subspace, hence also the six distinguished subspaces and the null cone, so the null cone is homotopy trivial as well, like the algebra around it; but it is a singular subset of it, and its smooth structure away from the apex is what the rest of the article uses. Nothing in the projective sections rests on the metric; the Euclidean input is used only through the metric topology it induces.
 
 ## The null cone
 
@@ -235,8 +189,8 @@ Finally, on either pure reality slice the restricted norm is definite, being $q_
 
 ## Summary
 
-- $\mathbb{B}\cong\mathbb{R}^8$ with the Euclidean topology is contractible, hence path-connected and simply connected with $\pi_n(\mathbb{B})=0$ for all $n\geq1$; the six distinguished real subspaces are contractible as well, so they carry no topology beyond that of $\mathbb{R}^n$.
-- The Euclidean unit sphere $S^7_E$ is a closed, compact, connected $7$-manifold but not a group: $\|\cdot\|_E$ is not multiplicative and $S^7_E\not\subseteq\mathbb{B}^\times$. The level set that is a group, $N=1$, is the norm-one group treated in *The Biquaternion Unit Group as a Topological Group*.
+- $\mathbb{B}\cong\mathbb{R}^8$ with the Euclidean topology is contractible, hence path-connected and simply connected with $\pi_n(\mathbb{B})=0$ for all $n\geq1$; the Euclidean structure itself, the six distinguished real subspaces and the Euclidean sphere are *The Euclidean Topology of the Biquaternion Algebra*, §*The Contractibility of the Algebra* and §*The Euclidean Unit Sphere*.
+- The Euclidean unit sphere $S^7_E$ is a closed, compact, connected $7$-manifold but not a group: $\|\cdot\|_E$ is not multiplicative and $S^7_E\not\subseteq\mathbb{B}^\times$. Its Hermitian topology is *The Euclidean Topology of the Biquaternion Algebra*; the level set that is a group, $N=1$, is the norm-one group treated in *The Biquaternion Unit Group as a Topological Group*.
 - The null cone $\mathcal{N}=\{N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z}$ is a closed real algebraic cone of real dimension $6$, irreducible, with the origin as its only singular point; it is a manifold away from the apex and non-manifold at the apex, and contractible, being the cone on its link; punctured, it is exactly the zero-divisor set.
 - The link $L=\mathcal{N}\cap S^7_E$ is a closed connected $5$-manifold, an $S^1$-bundle over $S^2\times S^2$, simply connected with $\pi_2(L)\cong\mathbb{Z}$. Since $\pi_2(S^5)=0$, the apex is genuinely singular.
 - The projectivised null cone is the smooth quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, the Segre quadric; the null cone is the affine cone over it, and its two rulings are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$.

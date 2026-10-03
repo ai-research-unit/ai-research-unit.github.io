@@ -43,20 +43,20 @@ $$
 **Theorem (form preservation by $J$-unitary parameters).** Let $Q$ be $J$-unitary, $Q^{\dagger}Q = QQ^{\dagger} = 1$. Then for every $T$ and all $x, y$
 
 $$
-[H_{Q}(T)x, H_{Q}(T)y] = [Tx,Ty] , \qquad [H_{Q}(T)x,y] = [Tx, Q^{\dagger}y] ,
+[H_{Q}(T)x, H_{Q}(T)y] = [TQ^{\dagger}x, TQ^{\dagger}y] , \qquad [H_{Q}(T)x,y] = [TQ^{\dagger}x, Q^{\dagger}y] ,
 $$
 
 and $H_{Q}(T)$ is $J$-isometric whenever $T$ is; in particular the $J$-unitary group acts on the operators by sandwiches preserving the indefinite geometry.
 
-**Proof.** $[QTQ^{\dagger}x, QTQ^{\dagger}y] = [TQ^{\dagger}x, TQ^{\dagger}y]$ because $Q$ preserves the form; the second identity is the same preservation with one argument unmoved; the isometry statement is the first identity with $T$ an isometry.
+**Proof.** The elementary rule is $[Qx,y] = [x,Q^{\dagger}y]$, which follows from $[x,y] = \langle Jx,y\rangle$ and $(Qx,y) = (x,Q^{*}y)$. With $x$ replaced by $TQ^{\dagger}x$ it gives $[QTQ^{\dagger}x,y] = [TQ^{\dagger}x,Q^{\dagger}y]$, the second identity; the first follows by applying the rule once more with $y$ replaced by $H_{Q}(T)y$. If $T$ is $J$-isometric then $[TQ^{\dagger}x,TQ^{\dagger}y] = [Q^{\dagger}x,Q^{\dagger}y]$, and $Q^{\dagger}$ is $J$-unitary with $Q$, so this is $[x,y]$.
 
 **Proposition (preservation of $J$-self-adjointness and $J$-positivity).** If $T$ is $J$-self-adjoint then $H_{Q}(T)$ is $J$-self-adjoint; if $T$ is $J$-positive and $Q$ is $J$-unitary then $H_{Q}(T)$ is $J$-positive; and if $T$ is $J$-unitary then $H_{Q}(T)$ is $J$-unitary.
 
 **Proof.** The first statement is $H_Q(T)^{\dagger} = H_Q(T^\dagger) = H_Q(T)$ for $J$-self-adjoint $T$; for the second, $[H_Q(T)x,x] = [TQ^{\dagger}x,Q^{\dagger}x]\geq0$ by the second identity of the theorem and the $J$-positivity of $T$; the third is the isometry statement applied twice.
 
-**Proposition (the $J$-adjoint sandwich).** With $Q = J$ one has $J^{\dagger} = J$ and $H_{J}(T) = JTJ$; this sandwich translates the indefinite data into Hilbert data: $H_{J}(T)$ is Hilbert-self-adjoint exactly when $T$ is $J$-self-adjoint, and $H_{J}(T)\geq0$ in the Hilbert sense exactly when $T$ is $J$-positive.
+**Proposition (the $J$-adjoint sandwich).** With $Q = J$ one has $J^{\dagger} = J$ and $H_{J}(T) = JTJ$; this sandwich is the dictionary between the Hilbert data and the indefinite ones: $H_{J}(T)$ is Hilbert-self-adjoint exactly when $T$ is, and $H_{J}(T)\geq0$ in the Hilbert sense exactly when $T\geq0$. The link with the indefinite notions is the dictionary $T$ is $J$-self-adjoint $\iff$ $JT$ is Hilbert-self-adjoint, and in that case $H_{J}(T) = JTJ = T^{*}$.
 
-**Proof.** $H_J(T) = JTJ$ and $(JTJ)^{*} = JT^{*}J = T^{\dagger}$; the positivity statement is $[Tx,x] = \langle JTx,x\rangle = \langle JTJx,x\rangle$-type with the Hilbert-positivity of $JTJ$.
+**Proof.** $H_J(T) = JTJ$ and $(JTJ)^{*} = JT^{*}J$, so $H_J(T)$ is Hilbert-self-adjoint iff $T^{*}=T$; further $\langle JTJx,x\rangle = \langle T(Jx),Jx\rangle$ and $J$ is surjective, so $H_J(T)\geq0$ iff $T\geq0$. Finally $T$ is $J$-self-adjoint iff $JT^{*}J=T$, i.e. $T^{*}=JTJ=H_J(T)$, iff $JT^{*} = TJ$, which says $JT$ is Hilbert-self-adjoint.
 
 ## The Kernel and the Image
 
@@ -104,7 +104,7 @@ and for $J$-unitary $Q$ these read $\ker H_{Q}(T) = Q\ker T$ and $\mathrm{im}\,H
 
 ### The Fundamental Symmetry
 
-For $Q = J$ the sandwich is $H_{J}(T) = JTJ$; for $T$ $J$-self-adjoint this is Hilbert-self-adjoint, for $T$ $J$-positive it is Hilbert-positive, and $H_{J}$ is an involution on the space of operators. This is the translation dictionary between the indefinite and the Hilbert descriptions, read as a sandwich.
+For $Q = J$ the sandwich is $H_{J}(T) = JTJ$; it is Hilbert-self-adjoint exactly when $T$ is and Hilbert-positive exactly when $T$ is, $H_{J}$ is an involution on the space of operators, and for $T$ $J$-self-adjoint the sandwich is the Hilbert adjoint, $H_{J}(T)=T^{*}$. This is the translation dictionary between the indefinite and the Hilbert descriptions, read as a sandwich.
 
 ### Matrices
 
@@ -116,7 +116,7 @@ For $J = \mathrm{id}$ the sandwich by a unitary $Q$ is conjugation by a unitary,
 
 ## Summary
 
-The **Hermitian sandwich** on a Krein space is $H_{Q}(T) = QTQ^{\dagger}$, with $Q^{\dagger} = JQ^{*}J$; it satisfies $H_Q(T^{\dagger}) = H_Q(T)^{\dagger}$, $H_Q(H_S(T)) = H_{QS}(T)$, and it is multiplicative in the argument exactly when $Q$ is $J$-isometric. For $J$-**unitary** $Q$ the sandwich **preserves the indefinite form**, $[H_Q(T)x,H_Q(T)y] = [Tx,Ty]$, it preserves **$J$-self-adjointness**, **$J$-positivity** and **$J$-unitarity**, and it is an algebra automorphism of $B(K)$; the **kernel and the image** are transported exactly, $\ker H_Q(T) = Q\ker T$ and $\mathrm{im}\,H_Q(T) = Q\,\mathrm{im}\,T$, so the kernel dimension, the range and the index are preserved. The **contrast with the Hilbert case** is that a $J$-unitary operator need not be Hilbert-unitary: the sandwich preserves the indefinite geometry — form, positivity, self-adjointness, kernel and image — but not the Hilbert norm, the Hilbert-orthogonal decompositions, the Hilbert positive cone or the spectrum, so the indefinite sandwich is a symmetry of the form rather than of the metric and cannot transport the Hilbert spectral theory. The indefinite adjoint is *J-Self-Adjoint and J-Unitary Operators*, the form and the symmetry are *Krein Spaces* and *The Fundamental Symmetry*, the positivity is *Krein Algebras* and *The J-Positive Cone and the J-Order*, the Hilbert-algebra sandwich is *The Adjoint of the Sandwich on a Hilbert Algebra*, and the spectral consequences are *Spectral Theory on Krein Spaces*.
+The **Hermitian sandwich** on a Krein space is $H_{Q}(T) = QTQ^{\dagger}$, with $Q^{\dagger} = JQ^{*}J$; it satisfies $H_Q(T^{\dagger}) = H_Q(T)^{\dagger}$, $H_Q(H_S(T)) = H_{QS}(T)$, and it is multiplicative in the argument exactly when $Q$ is $J$-isometric. For $J$-**unitary** $Q$ the sandwich **preserves the indefinite form** in the twisted sense $[H_Q(T)x,H_Q(T)y] = [TQ^{\dagger}x,TQ^{\dagger}y]$, it preserves **$J$-self-adjointness**, **$J$-positivity** and **$J$-unitarity**, and it is an algebra automorphism of $B(K)$; the **kernel and the image** are transported exactly, $\ker H_Q(T) = Q\ker T$ and $\mathrm{im}\,H_Q(T) = Q\,\mathrm{im}\,T$, so the kernel dimension, the range and the index are preserved. The **contrast with the Hilbert case** is that a $J$-unitary operator need not be Hilbert-unitary: the sandwich preserves the indefinite geometry — form, positivity, self-adjointness, kernel and image — but not the Hilbert norm, the Hilbert-orthogonal decompositions, the Hilbert positive cone or the spectrum, so the indefinite sandwich is a symmetry of the form rather than of the metric and cannot transport the Hilbert spectral theory. The indefinite adjoint is *J-Self-Adjoint and J-Unitary Operators*, the form and the symmetry are *Krein Spaces* and *The Fundamental Symmetry*, the positivity is *Krein Algebras* and *The J-Positive Cone and the J-Order*, the Hilbert-algebra sandwich is *The Adjoint of the Sandwich on a Hilbert Algebra*, and the spectral consequences are *Spectral Theory on Krein Spaces*.
 
 ## Summary of Notation
 
@@ -125,7 +125,7 @@ The **Hermitian sandwich** on a Krein space is $H_{Q}(T) = QTQ^{\dagger}$, with 
 | $H_{Q}(T) = QTQ^{\dagger}$ | The Hermitian sandwich |
 | $Q^{\dagger} = JQ^{*}J$ | The indefinite adjoint of the parameter |
 | $H_{Q}(T^{\dagger}) = H_{Q}(T)^{\dagger}$ | The sandwich commutes with adjunction |
-| $[H_{Q}(T)x,y] = [Tx,Q^{\dagger}y]$ | Form preservation for $J$-unitary $Q$ |
+| $[H_{Q}(T)x,y] = [TQ^{\dagger}x,Q^{\dagger}y]$ | Form preservation for $J$-unitary $Q$ |
 | $J$-positivity preserved | $[H_Q(T)x,x] = [TQ^{\dagger}x,Q^{\dagger}x]$ |
 | $\ker H_{Q}(T) = Q\ker T$ | Kernel for $J$-unitary $Q$ |
 | $\mathrm{im}\,H_{Q}(T) = Q\,\mathrm{im}\,T$ | Image for $J$-unitary $Q$ |

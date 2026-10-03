@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **Hermitian subspace** $\mathbb{M}_+$ is the fixed space of Hermitian conjugation: the elements of $\mathbb{B}$ with real scalar part and purely imaginary vector part. It is four-dimensional, it is not a subalgebra, and it is one of the four subspaces on which the biquaternion norm is real. On it that form is indefinite of signature $(1,3)$, and the elements of zero norm form a cone; this is what makes the subspace the richest of the six from the point of view of quadratic forms, and the reason it carries the idempotents and the isotropic directions of the algebra.
+The **Hermitian subspace** $\mathbb{M}_+$ is the fixed space of Hermitian conjugation: the elements of $\mathbb{B}$ with real scalar part and purely imaginary vector part. It is four-dimensional, it is not a subalgebra, and it is one of the four subspaces on which the biquaternion norm is real. On it some non-zero elements have zero norm, and the elements of zero norm form a cone; this is what makes the subspace the richest of the six from the point of view of the quadratic form, and it is the reason the subspace carries the idempotents and the null directions of the algebra.
 
-Three structures coexist on $\mathbb{M}_+$: the vector-space structure with the quadratic form of signature $(1,3)$; a **Jordan algebra** structure under the symmetrized product, inherited from the Hermitian matrices; and a Lie-theoretic relation with the anti-Hermitian subspace, into which the commutator of two of its elements falls. The article sets out all three.
+Three structures coexist on $\mathbb{M}_+$: the vector-space structure; a **Jordan algebra** structure under the symmetrized product, inherited from the Hermitian matrices; and a Lie-theoretic relation with the anti-Hermitian subspace, into which the commutator of two of its elements falls. The article sets out all three.
 
 As in the companion articles, all statements are algebraic, and the notation is that of the coefficient decomposition $\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ with $Q_\mu = q_\mu + iq'_\mu$. A final section places the subspace among the particular cases of the algebra — the idempotents, the ideals and Peirce decomposition, the roots of minus one, the zero divisors and the bracket.
 
@@ -109,25 +109,19 @@ $\mathbb{M}_+$ is a module over the centre subspace, which acts by scalar extens
 
 ## The Biquaternion Norm
 
-### Restriction and Signature
+### Restriction
 
-**Theorem.** On the Hermitian subspace the biquaternion norm is the real quadratic form
+**Theorem.** On the Hermitian subspace the biquaternion norm is
 
 $$
 N(\tilde{Q}) = q_0^2 - \left((q'_1)^2 + (q'_2)^2 + (q'_3)^2\right) , \qquad \tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 ,
 $$
 
-of signature $(1,3)$; it is real, indefinite, positive on the central line and negative on the imaginary vector triple, and its associated symmetric bilinear form is
-
-$$
-B(\tilde{Q}, \tilde{R}) = \tfrac{1}{2}\left(N(\tilde{Q}+\tilde{R}) - N(\tilde{Q}) - N(\tilde{R})\right) = q_0 r_0 - (\mathbf{q}', \mathbf{r}') .
-$$
-
-**Proof.** Substituting $Q_0 = q_0$ and $Q_k = iq'_k$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives $q_0^2 - \sum_k (q'_k)^2$, and the signs of the four basis elements $e_0, ie_1, ie_2, ie_3$ are $+,-,-,-$. Polarization gives the displayed bilinear form.
+**Proof.** Substituting $Q_0 = q_0$ and $Q_k = iq'_k$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives $q_0^2 - \sum_k (q'_k)^2$. The signature of the restriction, its definiteness and its polar form are in *The Bilinear Form on the Biquaternion Algebra*.
 
 ### Units and Zero Divisors
 
-**Theorem.** For $\tilde{Q} \in \mathbb{M}_+$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the non-zero elements of the **isotropic cone**
+**Theorem.** For $\tilde{Q} \in \mathbb{M}_+$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the non-zero elements of the **null set**
 
 $$
 q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2 ,
@@ -137,7 +131,7 @@ a cone of real dimension three, and no zero divisor of the subspace is nilpotent
 
 **Proof.** The equivalence of the first two conditions is the general criterion, and the third follows from it because the identity $\tilde{Q}\tilde{R} = 0$ forces $N(\tilde{Q})N(\tilde{R}) = 0$. For the nilpotency statement, $\tilde{Q}^2 = 0$ requires both $q_0^2 + (\mathbf{q}',\mathbf{q}') = 0$ and $q_0\mathbf{q}' = 0$ by the square formula, whence $q_0 = 0$ and $\mathbf{q}' = 0$.
 
-The second half of the theorem is the sharpest difference between this subspace and the vector subspace: both contain zero divisors, but the zero divisors of the vector subspace are nilpotent, while those of $\mathbb{M}_+$ are not, and their squares are non-zero Hermitian elements with positive scalar part.
+The second half of the theorem is the sharpest difference between this subspace and the vector subspace: both contain zero divisors, but the zero divisors of the vector subspace are nilpotent, while those of $\mathbb{M}_+$ are not, and their squares are non-zero Hermitian elements.
 
 ### The Idempotents
 
@@ -224,13 +218,13 @@ $$
 [\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_- ,
 $$
 
-since $(\tilde{P}\tilde{Q})^\dagger = \tilde{Q}^{*}\tilde{P}^{*}$ gives $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ for Hermitian $\tilde{P}, \tilde{Q}$; the computation is §*The Commutator Lands in the Anti-Hermitian Subspace*. The role of the subspace in the Lie theory is therefore that of a source of brackets rather than that of a Lie subalgebra, and its own structure is the Jordan one of §*It Is a Jordan Algebra*: under the symmetrized product it is a Jordan algebra isomorphic to $H_2(\mathbb{C})$, of degree two, whose idempotents are the orthogonal projections above, whose trace $\mathrm{Tr}(\tilde{Q}) = 2q_0$ is real, and whose trace form has signature $(1,3)$. The details are in *Biquaternion Lie Algebra*, *Biquaternion Relations Between Subspaces* and *Jordan Algebras*.
+since $(\tilde{P}\tilde{Q})^\dagger = \tilde{Q}^{*}\tilde{P}^{*}$ gives $[\tilde{P},\tilde{Q}]^\dagger = -[\tilde{P},\tilde{Q}]$ for Hermitian $\tilde{P}, \tilde{Q}$; the computation is §*The Commutator Lands in the Anti-Hermitian Subspace*. The role of the subspace in the Lie theory is therefore that of a source of brackets rather than that of a Lie subalgebra, and its own structure is the Jordan one of §*It Is a Jordan Algebra*: under the symmetrized product it is a Jordan algebra isomorphic to $H_2(\mathbb{C})$, of degree two, whose idempotents are the orthogonal projections above, whose trace $\mathrm{Tr}(\tilde{Q}) = 2q_0$ is real. The details are in *Biquaternion Lie Algebra*, *Biquaternion Relations Between Subspaces* and *Jordan Algebras*.
 
 ## Examples
 
 ### A Unit, a Null Element, an Idempotent
 
-Take $\tilde{Q} = e_0 + ie_1$. Its biquaternion norm is $N(\tilde{Q}) = 1 - 1 = 0$, so it is a zero divisor and lies on the isotropic cone, and
+Take $\tilde{Q} = e_0 + ie_1$. Its biquaternion norm is $N(\tilde{Q}) = 1 - 1 = 0$, so it is a zero divisor and is null, and
 
 $$
 \tilde{Q}^2 = (1+1)e_0 + 2i e_1 = 2\tilde{Q} , \qquad \frac{\tilde{Q}}{2} = \frac{e_0+ie_1}{2} ,
@@ -264,7 +258,7 @@ again in the subspace, since quaternion conjugation preserves $\mathbb{M}_+$ and
 
 ## Summary
 
-The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the set of elements with real scalar part and imaginary vector part, a real vector space of dimension $4$ with basis $e_0, ie_1, ie_2, ie_3$ and decomposition $\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. It is not a subalgebra, but it is closed under the symmetrized product, with which it is a Jordan algebra of degree two; it is closed under powers; and its commutator lands in the anti-Hermitian subspace. The biquaternion norm restricts to the real form $q_0^2 - ((q'_1)^2+(q'_2)^2+(q'_3)^2)$ of signature $(1,3)$, so the units are the elements off the isotropic cone $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$; the zero divisors are exactly the non-zero elements of the cone, and none of them is nilpotent. The non-trivial idempotents are the elements $\tfrac12(e_0 + i\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a unit real vector, of zero norm, forming a two-sphere of orthogonal pairs; one such pair sums to the unit and generates the two minimal left ideals. Complex conjugation and quaternion conjugation both negate the vector part, Hermitian conjugation fixes the subspace, and reversal negates it. It is complementary to $\mathbb{M}_-$. In the algebra of particular cases the subspace carries the Hermitian idempotents, the whole primitive idempotent set up to a central phase, with the diagonal Peirce corners and the two minimal left ideals; it contains no root of $-1$ but a two-sphere of roots of $+1$; its zero divisors are exactly the complex multiples of its idempotents; and its bracket falls in $\mathbb{M}_-$ while its own structure is the Jordan algebra $H_2(\mathbb{C})$.
+The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the set of elements with real scalar part and imaginary vector part, a real vector space of dimension $4$ with basis $e_0, ie_1, ie_2, ie_3$ and decomposition $\mathbb{R}e_0 \oplus \operatorname{span}\{ie_1,ie_2,ie_3\}$. It is not a subalgebra, but it is closed under the symmetrized product, with which it is a Jordan algebra of degree two; it is closed under powers; and its commutator lands in the anti-Hermitian subspace. The biquaternion norm restricts to $q_0^2 - ((q'_1)^2+(q'_2)^2+(q'_3)^2)$, so the units are the elements off the null set $q_0^2 = (q'_1)^2+(q'_2)^2+(q'_3)^2$; the zero divisors are exactly the non-zero elements of that set, and none of them is nilpotent. The non-trivial idempotents are the elements $\tfrac12(e_0 + i\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a unit real vector, of zero norm, forming a two-sphere of orthogonal pairs; one such pair sums to the unit and generates the two minimal left ideals. Complex conjugation and quaternion conjugation both negate the vector part, Hermitian conjugation fixes the subspace, and reversal negates it. It is complementary to $\mathbb{M}_-$. In the algebra of particular cases the subspace carries the Hermitian idempotents, the whole primitive idempotent set up to a central phase, with the diagonal Peirce corners and the two minimal left ideals; it contains no root of $-1$ but a two-sphere of roots of $+1$; its zero divisors are exactly the complex multiples of its idempotents; and its bracket falls in $\mathbb{M}_-$ while its own structure is the Jordan algebra $H_2(\mathbb{C})$.
 
 ## Summary of Notation
 
@@ -277,7 +271,6 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 | $q_0$ | the real scalar part |
 | $\mathbf{q}' = (q'_1,q'_2,q'_3)$ | the real vector parameters of the imaginary vector part |
 | $N(\tilde{Q})$ | the biquaternion norm, $q_0^2 - (\mathbf{q}',\mathbf{q}')$ on the subspace |
-| $B$ | the symmetric bilinear form polarizing $N$ |
 | $\tilde{Q} \circ \tilde{R}$ | the symmetrized product, $\tfrac12(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})$ |
 | $\hat{\mathbf{u}}$ | a unit real vector, used to parametrize the idempotents |
 | $\tilde\Pi = \tfrac12(e_0+i\hat{\mathbf{u}})$ | the idempotents of $\mathbb{M}_+$, forming the pair $\tilde\Pi_\pm$ |
@@ -289,7 +282,7 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the Hermitian decomposition, the biquaternion norm and the quadratic forms of the algebra
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the Hermitian decomposition and the biquaternion norm
 - *Biquaternion Anti-Hermitian Subspace* (`articles_maths/biquaternion-anti-hermitian-subspace.md`), the complementary subspace, into which the commutator maps
 - *Jordan Algebras* (`articles_maths/jordan-algebras.md`), for the symmetrized product, the Jordan identity and the structure of Hermitian matrix algebras
 - *Quadratic Forms over Algebras and Norms* (`articles_maths/quadratic-forms-over-algebras-and-norms.md`), for quadratic forms of signature $(1,3)$ and norms over algebras

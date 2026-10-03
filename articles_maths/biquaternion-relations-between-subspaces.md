@@ -22,12 +22,14 @@ The fourth conjugation, the reversal $\flat = -{}^{*}$, has the same eigenspaces
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex, real signature $(1,1)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex, real signature $(3,3)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $ie_0,ie_1,ie_2,ie_3$ | $4$ | no | $-\sum_\mu (q'_\mu)^2$, definite negative |
-| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,ie_1,ie_2,ie_3$ | $4$ | no, Jordan | $q_0^2 - |\mathbf{q}'|^2$, signature $(1,3)$ |
-| $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,e_1,e_2,e_3$ | $4$ | no, Lie | $|\mathbf{q}|^2 - (q'_0)^2$, signature $(3,1)$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0, ie_0$ | $2$ | yes, $\cong \mathbb{C}$ | $Q_0^2$, complex |
+| $\mathrm{Vect}(\mathbb{B})$ | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,e_2,e_3,ie_1,ie_2,ie_3$ | $6$ | no, Lie | $Q_1^2+Q_2^2+Q_3^2$, complex |
+| $\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $\bar{\tilde{Q}} = -\tilde{Q}$ | $ie_0,ie_1,ie_2,ie_3$ | $4$ | no | $-\sum_\mu (q'_\mu)^2$ |
+| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,ie_1,ie_2,ie_3$ | $4$ | no, Jordan | $q_0^2 - |\mathbf{q}'|^2$ |
+| $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,e_1,e_2,e_3$ | $4$ | no, Lie | $|\mathbf{q}|^2 - (q'_0)^2$ |
+
+The signatures and the definiteness of these restrictions are read in *The Bilinear Form on the Biquaternion Algebra*.
 
 Only two of the six are closed under multiplication, and among the remaining four two are closed under the commutator as Lie algebras and one under the symmetrized product as a Jordan algebra; the table names them in the last column.
 

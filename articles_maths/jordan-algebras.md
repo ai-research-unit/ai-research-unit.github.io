@@ -144,13 +144,7 @@ Let $D$ be a composition algebra over $R$ with a conjugation, for instance $\mat
 
 ### Spin Factors
 
-Let $V$ be a free $R$-module with a quadratic form $q$ and polar form $B$, normalised so that $B(v, v) = q(v)$, and put $JSpin(V) = R \cdot 1 \oplus V$ with product
-
-$$
-(\alpha, v) \circ (\beta, w) = \bigl(\alpha\beta + B(v, w),\ \alpha w + \beta v\bigr).
-$$
-
-Then $JSpin(V)$ is a unital Jordan algebra of **degree two**: every element satisfies the quadratic equation $x^2 - 2\alpha x + (\alpha^2 - q(v))1 = 0$ over its powers, and the idempotents other than $0$ and $1$ are exactly the elements $\tfrac12(1 \pm u)$ with $q(u) = 1$. For $V = R^n$ with the standard form write $JSpin_n$. The Clifford algebra of the form supplies an associative algebra in which $JSpin(V)$ embeds, and the construction of that enveloping algebra is not covered here.
+A **spin factor** is a Jordan algebra of degree two built from a quadratic form on a free $R$-module; for $V = R^n$ with the standard form it is written $JSpin_n$. Its construction, its idempotents and the Clifford algebra that envelops it use the form and its standard form, and are *Spin Factors and the Clifford Envelope with Inner Conjugation*, in Part II, where the form is available; they are named only here.
 
 ### The Albert Algebra
 
@@ -262,7 +256,7 @@ $$
 J_1 \circ J_1 \subseteq J_1, \quad J_0 \circ J_0 \subseteq J_0, \quad J_1 \circ J_0 = 0, \quad J_1 \circ J_{1/2} \subseteq J_{1/2}, \quad J_0 \circ J_{1/2} \subseteq J_{1/2}, \quad J_{1/2} \circ J_{1/2} \subseteq J_1 \oplus J_0 .
 $$
 
-For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the hyperplane of $V$ orthogonal to the vector part of $e$; this is the form in which the spin factors and the Clifford envelope are analysed.
+For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the middle space $J_{1/2}(e)$; this is the shape in which the spin factors and the Clifford envelope are analysed, in *Spin Factors and the Clifford Envelope with Inner Conjugation* of Part II.
 
 **Example.** In $A^+$ for $A = M_n(R)$ and $e = \operatorname{diag}(1, \ldots, 1, 0, \ldots, 0)$ with $r$ ones, the Peirce spaces are the block-diagonal parts $J_1 = A_{11}$, $J_0 = A_{22}$ and the two off-diagonal blocks, which together make up $J_{1/2}$.
 
@@ -276,7 +270,7 @@ $$
 x_1^2 + x_2^2 + \cdots + x_k^2 = 0 \quad \Longrightarrow \quad x_1 = x_2 = \cdots = x_k = 0 .
 $$
 
-This is the algebraic condition that makes the set of sums of squares a pointed convex cone, free of lines through the orig. In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers: $x^2 = 0$ forces $x = 0$, and the set of sums of squares is a pointed cone. The associated **positive cone** and its properties are not covered here. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$, and it forces the trace form to be positive definite when the algebra is finite-dimensional and unital.
+In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers and $x^2 = 0$ forces $x = 0$. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$. The associated *order*, the **positive cone** it defines, and the equivalent criterion that the trace form be positive definite are not covered here; they are *Jordan Algebras and the Positive Cone*, in Part III, where the order is available, and are named only.
 
 ### The Classification
 
@@ -311,8 +305,7 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \circ)$ satisfying the Jo
 | $A^+$ | Symmetrisation of an associative algebra, $x \circ y = xy + yx$ |
 | $D$ | A composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$; distinct from $\mathbb{D}$, the split complex numbers |
 | $H_n(D)$ | Hermitian $n \times n$ matrices over $D$ |
-| $JSpin(V)$, $JSpin_n$ | Spin factor $R \oplus V$ with $(\alpha,v)\circ(\beta,w) = (\alpha\beta + B(v,w), \alpha w + \beta v)$ |
-| $q$, $B$ | Quadratic form and its polar form, $B(v,v) = q(v)$ |
+| $JSpin_n$, $JSpin(V)$ | Spin factor of a quadratic form; constructed in *Spin Factors and the Clifford Envelope with Inner Conjugation* (Part II) |
 | $H_3(\mathbb{O})$ | Albert algebra, the exceptional $27$-dimensional Jordan algebra |
 | $T(x,y) = \operatorname{tr}(L_{x\circ y})$ | Trace form |
 | $\operatorname{Der}(J)$ | Lie algebra of derivations of $J$ |

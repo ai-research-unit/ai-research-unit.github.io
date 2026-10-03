@@ -5,11 +5,9 @@
 
 The exterior powers of the companion article *Exterior Powers* carry, in their top degree, a one-dimensional module attached to a free module of finite rank, and an endomorphism acts on it by a scalar. That scalar is the **determinant**. The determinant is therefore not an ad hoc formula in the entries of a matrix but the unique scalar invariant of a linear transformation, obtained by transport along the top exterior power. The same construction in every intermediate degree produces the **minors**, and the multiplicativity of the determinant is a special case of the functoriality of $\Lambda^n$, while the formula relating the minors of a composite to those of its factors, known as the **Cauchy–Binet formula**, is the degreewise statement that $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$.
 
-The linear functionals on the exterior powers are the **alternating forms**, and the exterior algebra of the dual module is the algebraic prototype of the algebra of differential forms. A differential $k$-form on a smooth manifold is a smoothly varying alternating form on the tangent space, and the operations of the calculus — the wedge product, the pullback, and the exterior derivative — are visible already at the level of a single free module over a commutative ring, with no smooth structure required.
+The linear functionals on the exterior powers are the **alternating forms**, and the exterior algebra of the dual module is the algebraic prototype of the algebra of differential forms of Part III, which is named only and not used; the operations of the calculus — the wedge product, the pullback, and the exterior derivative — are visible already at the level of a single free module over a commutative ring, with no smooth structure required.
 
 Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $M$, $N$, $P$ are $R$-modules; over a commutative ring left and right modules coincide, so no side is specified. The field is written $K$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The determinant is defined over an arbitrary commutative ring, and the place where a field, a characteristic assumption, or the invertibility of $2$ is needed is flagged; in particular the sign-based expansions below require no division, while the Pfaffian and the identification of alternating with skew-symmetric forms require care in characteristic $2$. No physics is invoked.
-
-The companion articlesandcontinue from here; the latter is with this one.
 
 ## Induced Maps and Minors
 
@@ -159,10 +157,6 @@ $$
 
 **Proof.** Both are immediate from the definition; the reversal of order is the usual contravariance of a hom functor.
 
-### The Prototype of Differential Forms
-
-The algebraic data above are the pointwise model of the differential calculus. On a smooth manifold $M$ one forms the cotangent bundle $T^*M$ , for each $k$, the bundle $\Lambda^k T^*M$; a **differential $k$-form** is a smooth section of that bundle, and the space of sections $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ is the module of $k$-forms. The wedge product of forms and the pullback of forms along a smooth map are obtained by applying the constructions of this section fibrewise. The exterior derivative, a degree-one derivation $d: \Omega^k(M) \to \Omega^{k+1}(M)$ with $d^2 = 0$, is the further structure that the smooth setting supplies; it is the subject of with this one. The determinant reappears there as the change-of-variables factor in the integration of a top-degree form.
-
 ## The Cauchy–Binet Formula
 
 The multiplicativity of the determinant in the square case is the $n = m$ case of a formula valid in every degree.
@@ -225,7 +219,7 @@ $$
 \det\bigl((AB)_{I,J}\bigr) = \sum_K \det(A_{I,K})\det(B_{K,J}).
 $$
 
-The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$, equivalently, for free $M$ of finite rank, the elements of $\Lambda^n(M^*)$; they form the graded-commutative algebra $\Lambda(M^*)$, with wedge product and contravariant pullback. This algebra, with the extra structure of a smooth manifold supplying the exterior derivative, is the algebra of differential forms, and the determinant is the factor by which a linear map scales a volume form. For an alternating matrix of even size the determinant is the square of the Pfaffian.
+The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$, equivalently, for free $M$ of finite rank, the elements of $\Lambda^n(M^*)$; they form the graded-commutative algebra $\Lambda(M^*)$, with wedge product and contravariant pullback. This algebra is the algebraic prototype of the algebra of differential forms of Part III, and the determinant is the factor by which a linear map scales a top-degree form. For an alternating matrix of even size the determinant is the square of the Pfaffian.
 
 ## Summary of Notation
 
@@ -249,7 +243,6 @@ The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$,
 | $f^*$ | Pullback of forms, contravariant: $(g \circ f)^* = f^* \circ g^*$ |
 | $\Omega = (\omega_{ij})$ | Matrix of an alternating $2$-form, $\Omega^{\mathsf{T}} = -\Omega$ |
 | $\operatorname{Pf}(\Omega)$ | Pfaffian of an alternating matrix of even size; $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ |
-| $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ | Module of differential $k$-forms on a smooth manifold |
 
 
 
@@ -260,5 +253,4 @@ The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$,
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for the determinant over a commutative ring and the adjugate identity.
 - Gilbert Strang, *Linear Algebra and Its Applications* (Cengage, 4th ed. 2005), for the Leibniz formula, the classical expansions, and the volume interpretation.
 - Israel M. Gelfand and Mikhail M. Kapranov and Andrei V. Zelevinsky, *Discriminants, Resultants, and Multidimensional Determinants* (Birkhäuser, 1994), for determinants, minors, and their geometric role.
-- Frank W. Warner, *Foundations of Differentiable Manifolds and Lie Groups* (Springer, 1983), for alternating forms on the tangent space and the prototype of differential forms.
 - D. G. Northcott, *Multilinear Algebra* (Cambridge University Press, 1984), for the exterior algebra of the dual and the algebra of alternating forms.

@@ -8,15 +8,15 @@ $$
 $$
 The problem is not the same as the three central cases $\xi^2 = -1,0,+1$ treated in *Biquaternion Square Roots of Minus One, Zero and Plus One*. For those three values the set of roots is a union of small families found directly from the vector–scalar decomposition; for a general $Q$ the answer is a finite set — generically four elements, falling to two — or a four-parameter continuum, or empty, and finding it needs the Clifford structure of the algebra rather than a case check. This article owns that classification and states the algorithm that produces it, in the form the algebra is usually written in.
 
-The method is the one of Acus and Dargys: the biquaternion algebra is identified with the Euclidean Clifford algebra $Cl_{3,0}$, in which the square-root problem reduces to a complex quadratic. The identification and its dictionary are *The Clifford Structure of the Biquaternion Algebra*; the square-root algorithm in $Cl_{3,0}$ is *Clifford Algebras in Finite Dimensions*, where it is proved. The three special data $Q=-1,0,+1$ and the relation to the idempotents are *Biquaternion Square Roots of Minus One, Zero and Plus One*; the zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, and is named here only where the classification touches it and not developed. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
+The method is the one of Acus and Dargys: the biquaternion algebra is identified with the Clifford algebra $Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, in which the square-root problem reduces to a complex quadratic. The identification and its dictionary are *The Clifford Structure of the Biquaternion Algebra*; the square-root algorithm in $Cl_{3,0}$ is *Clifford Algebras in Finite Dimensions*, where it is proved. The three special data $Q=-1,0,+1$ and the relation to the idempotents are *Biquaternion Square Roots of Minus One, Zero and Plus One*; the zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, and is named here only where the classification touches it and not developed. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
 
 The treatment is mathematically honest: every claim is either proved or cited to the article that proves it, and the algorithm is verified against the worked examples. No physics is invoked.
 
-Throughout, the quaternion basis is $e_0=1,e_1,e_2,e_3$, the scalar imaginary is $i$, and a general biquaternion is $\tilde Q = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_\mu\in\mathbb{C}$. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the polar form is $B(\tilde P,\tilde Q)=\sum_\mu P_\mu Q_\mu$.
+Throughout, the quaternion basis is $e_0=1,e_1,e_2,e_3$, the scalar imaginary is $i$, and a general biquaternion is $\tilde Q = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_\mu\in\mathbb{C}$. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$.
 
-## The Identification with the Euclidean Clifford Algebra
+## The Identification with the Clifford Algebra
 
-**Theorem (the working identification).** The biquaternion algebra is the Euclidean Clifford algebra $Cl_{3,0}$ as a real algebra, $\mathbb{B}\cong Cl_{3,0}$.
+**Theorem (the working identification).** The biquaternion algebra is the Clifford algebra $Cl_{3,0}$ as a real algebra, $\mathbb{B}\cong Cl_{3,0}$.
 
 This is proved in *The Clifford Structure of the Biquaternion Algebra*, together with the dictionary that identifies the four biquaternion components with the four Clifford grades under the assignment $\gamma_k\mapsto ie_k$ on the generators, $\omega=\gamma_1\gamma_2\gamma_3\mapsto i$ on the volume element. The dictionary is, in full, a linear bijection
 
@@ -89,7 +89,7 @@ satisfies $\Xi^2 = B$, and the two signs of $s$ give the two elements $\pm\Xi$. 
 
 **Proof.** The reduction $\Xi=a+b\omega=s+v+(S+V)\omega$, the graded equations, and the derivation of the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta^2-\gamma=b_S+ib_I$ are proved in *Clifford Algebras in Finite Dimensions* §§28–30, where $\omega=e_1e_2e_3$ is central of square $-1$ and the symbols $P$ and $R$ of this article are the $P$ and $Q$ of that one. The present article only transports the statement. $\square$
 
-**Corollary (the biquaternion algorithm).** To compute the square roots of $Q\in\mathbb{B}$, transport $Q$ to $B=\Phi(Q)$ by the dictionary of §*The Identification with the Euclidean Clifford Algebra*, apply the theorem to $B$, and transport each root $\Xi$ back to $\xi=\Phi^{-1}(\Xi)$. Reading the inverse dictionary off the table,
+**Corollary (the biquaternion algorithm).** To compute the square roots of $Q\in\mathbb{B}$, transport $Q$ to $B=\Phi(Q)$ by the dictionary of §*The Identification with the Clifford Algebra*, apply the theorem to $B$, and transport each root $\Xi$ back to $\xi=\Phi^{-1}(\Xi)$. Reading the inverse dictionary off the table,
 
 $$
 q_0 = b_0,\quad q'_0=b_{123},\qquad q'_k=b_k,\quad q_1=-b_{23},\quad q_2=-b_{13},\quad q_3=-b_{12},
@@ -166,7 +166,7 @@ whose square is $-(2+i)e_3$.
 
 ## Summary
 
-The square roots of $Q\in\mathbb{B}$ are computed by transporting $Q$ to the Euclidean Clifford algebra $Cl_{3,0}$ through the identification $\mathbb{B}\cong Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, with dictionary $\Phi$; applying there the closed-form algorithm of *Clifford Algebras in Finite Dimensions*; and transporting the roots back.
+The square roots of $Q\in\mathbb{B}$ are computed by transporting $Q$ to the Clifford algebra $Cl_{3,0}$ through the identification $\mathbb{B}\cong Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, with dictionary $\Phi$; applying there the closed-form algorithm of *Clifford Algebras in Finite Dimensions*; and transporting the roots back.
 
 The algorithm solves a complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=R-2iP$, whose discriminant is $16(b_S+ib_I)$; each nonzero root $z$ yields a pair $\pm\xi$ through $s=\pm\sqrt{(\sigma+\delta)/2}$, $S$ signed by $2sS=\tau$, $\sigma=|z|$, and the vector formulas. The existence scalars are $b_S=b_0^2-b_{123}^2-R$ and $b_I=2(P-b_0b_{123})$.
 

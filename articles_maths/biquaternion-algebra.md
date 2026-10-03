@@ -4,7 +4,7 @@
 
 This article introduces the biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. The inner product is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy. Nothing is measured with it: lengths, signs and orthogonal decompositions, and the theory of norms and forms, are in the Topology group (*Biquaternion Norm and Invertibility*).
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. No form is used here: the Hermitian form $\tilde{Q}\tilde{Q}^{*}$, the inner product, and everything measured with them — lengths, signs and orthogonal decompositions — are in the Topology group, where the Hermitian form and the inner product are *The Hermitian Form on the Biquaternion Algebra* and the metric read from them is *Biquaternion Norm and Invertibility*.
 
 The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication and its conjugation. No facts about $\mathbb{H}$ are restated here.
 
@@ -399,61 +399,6 @@ $$
 
 The complex conjugation $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation ${}^{*}$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.
 
-## The Hermitian Form
-
-### Definition
-
-The **Hermitian form** of a biquaternion $\tilde{Q}$ is the biquaternion
-
-$$
-\tilde{Q} \tilde{Q}^{*},
-$$
-
-where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is the Hermitian conjugate.
-
-**Basic properties.**
-
-- $\tilde{Q} \tilde{Q}^{*}$ is a **biquaternion**, not a real scalar in general. Its **scalar part** is
-
-$$
-\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + (q'_\mu)^2),
-$$
-
-with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^{*}$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^{*} = e_0 + ie_1$ and
-
-$$
-\tilde{Q} \tilde{Q}^{*} = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
-$$
-
-which has a nonzero vector part $2ie_1$.
-
-- The Hermitian form is **not** multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$.
-- The Hermitian form is **Hermitian** in the sense that $(\tilde{Q} \tilde{Q}^{*})^\dagger = \tilde{Q} \tilde{Q}^{*}$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.
-
-## The Inner Product
-
-The **inner product** of two biquaternions is the complex scalar
-
-$$
-\langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\bar{\mu} Q_\mu
-= \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p_\mu q'_\mu - p'_\mu q_\mu),
-$$
-
-with $Q_\mu = q_\mu + i q'_\mu$. It is **sesquilinear**, linear in the second argument and conjugate-linear in the first,
-
-$$
-\langle \lambda \tilde{P}, \tilde{Q} \rangle = \bar{\lambda} \langle \tilde{P}, \tilde{Q} \rangle, \qquad
-\langle \tilde{P}, \lambda \tilde{Q} \rangle = \lambda \langle \tilde{P}, \tilde{Q} \rangle, \qquad \lambda \in \mathbb{C},
-$$
-
-and **Hermitian**, $\langle \tilde{P}, \tilde{Q} \rangle^* = \langle \tilde{Q}, \tilde{P} \rangle$. It is **non-degenerate**: if $\langle \tilde{P}, \tilde{Q} \rangle = 0$ for every $\tilde{Q}$, then $\tilde{P} = 0$, since testing against the units gives $P_\bar{\mu} = 0$.
-
-The inner product pairs the algebra with its conjugate and is complex-valued in general. Forming it, evaluating it to a scalar, and asking when it vanishes is all that is done with it here; its diagonal value
-$$
-\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2 = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^{*}\right)
-$$
-vanishes only at $\tilde{Q} = 0$.
-
 ## Summary
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.
@@ -486,9 +431,6 @@ The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathb
 | $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ | Complex conjugate |
 | $\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\overline{\tilde{Q}^{\natural}} = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
-| $\tilde{Q} \tilde{Q}^{*}$ | Hermitian form; a Hermitian biquaternion, defined before the inner product |
-| $\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
-| $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\bar{\mu} Q_\mu$ | Inner product; a complex scalar, formed and evaluated algebraically |
 | $\mathbb{C}_{\mathbb{B}}$ | Center (complex subspace), fixed-point set of ${}^{\natural}$; basis $e_0, ie_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed-point set of ${}^{\natural}$; $\{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = [\mathbb{B}, \mathbb{B}]$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed-point set of $\bar{\cdot}$; basis $e_0, e_1, e_2, e_3$ |

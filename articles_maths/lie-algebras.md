@@ -154,15 +154,9 @@ $$
 
 This bracket is bilinear, antisymmetric, and satisfies the Jacobi identity. So $A$, equipped with this bracket, is a Lie algebra.
 
-This construction applies in particular to the Clifford algebras studied in the other articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.
+This construction applies in particular to every associative algebra: an associative algebra is a Lie algebra with the commutator bracket. The Clifford algebras are the central instance — they are associative and carry a form — and the Lie algebras they yield, the bivectors together with the orthogonal Lie algebra $\mathrm{SO}(V,Q)$ and the rotations these generate, belong to Part II and to Part IV, where the form and the distance are available, and are named only.
 
 The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ is an example of a Lie algebra that does not arise from an associative algebra. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.
-
-### The Subspace of Bivectors
-
-Inside a Clifford algebra, the subspace of bivectors forms a Lie subalgebra under the commutator bracket. This Lie subalgebra is isomorphic to the orthogonal Lie algebra $\mathrm{SO}(V, Q)$.
-
-This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra.
 
 ---
 
@@ -350,7 +344,7 @@ This is the reason Lie algebras were introduced in the first place. Sophus Lie, 
 
 **The Jacobi identity** is the replacement for associativity. It says that the adjoint action is a derivation, and it makes the adjoint representation a representation.
 
-**Every associative algebra is a Lie algebra** when equipped with the commutator bracket. This applies in particular to the Clifford algebras.
+**Every associative algebra is a Lie algebra** when equipped with the commutator bracket. This applies in particular to the matrix algebras, the endomorphism algebras and the enveloping algebras; the Clifford algebras are the instance that belongs to Part II.
 
 **The structure theory** of Lie algebras includes subalgebras, ideals, the center, the derived subalgebra, solvable and nilpotent Lie algebras, and simple Lie algebras.
 

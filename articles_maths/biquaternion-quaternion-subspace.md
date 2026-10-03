@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation: the elements of the biquaternion algebra $\mathbb{B}$ whose four complex coefficients are real. It is the copy of the real quaternion algebra inside $\mathbb{B}$, and it is one of the two distinguished subspaces that are subalgebras — indeed the only one that is non-commutative. On it the biquaternion norm is positive definite, so every non-zero element is a unit and there are no zero divisors; this is what separates it from the two sectors and from the vector subspace, where the biquaternion norm is indefinite.
+The **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation: the elements of the biquaternion algebra $\mathbb{B}$ whose four complex coefficients are real. It is the copy of the real quaternion algebra inside $\mathbb{B}$, and it is one of the two distinguished subspaces that are subalgebras — indeed the only one that is non-commutative. On it the biquaternion norm is a sum of four real squares, so every non-zero element is a unit and there are no zero divisors; this is what separates it from the two sectors and from the vector subspace, where the norm can vanish off the origin.
 
 The article follows the same plan as its companion *Biquaternion Centre Subspace*: definition and basis, algebra and module structure, norm, the action of the four involutions, the intersections with the other five subspaces, and its place among the particular cases of the algebra. All statements are algebraic; no coordinates other than the coefficients $Q_0, \dots, Q_3$ and their real and imaginary parts $q_\mu, q'_\mu$ are used.
 
@@ -84,7 +84,7 @@ $$
 
 a two-sphere. The element $\tilde{Q} = q_0e_0 + \mathbf{q}$ with $\mathbf{q}$ in that span satisfies $\tilde{Q}^2 = -e_0$ if and only if $q_0 = 0$ and $|\mathbf{q}| = 1$.
 
-**Proof.** For a pure imaginary element the cross product of its coefficient triple with itself vanishes, so $\tilde{Q}^2 = -N(\tilde{Q})e_0$; the equation $\tilde{Q}^2 = -e_0$ is therefore $N(\tilde{Q}) = 1$ together with vanishing of the scalar part, and the biquaternion norm on $\operatorname{span}\{e_1,e_2,e_3\}$ is the Euclidean square $|\mathbf{q}|^2$.
+**Proof.** For a pure imaginary element the cross product of its coefficient triple with itself vanishes, so $\tilde{Q}^2 = -N(\tilde{Q})e_0$; the equation $\tilde{Q}^2 = -e_0$ is therefore $N(\tilde{Q}) = 1$ together with vanishing of the scalar part, and the biquaternion norm on $\operatorname{span}\{e_1,e_2,e_3\}$ is the sum of squares $|\mathbf{q}|^2$.
 
 ### The Commutator
 
@@ -94,17 +94,17 @@ a two-sphere. The element $\tilde{Q} = q_0e_0 + \mathbf{q}$ with $\mathbf{q}$ in
 
 ## The Biquaternion Norm
 
-**Theorem.** On the quaternion subspace the biquaternion norm is the positive definite quadratic form
+**Theorem.** On the quaternion subspace the biquaternion norm is
 
 $$
-N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2 , \qquad N(\tilde{Q}) \geq 0 , \ \ N(\tilde{Q}) = 0 \iff \tilde{Q} = 0 ,
+N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
-with $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q}$, and it is the square of the Euclidean norm on the four real coordinates.
+with $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q}$.
 
-**Proof.** Setting $Q_\mu = q_\mu$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives the displayed sum of squares, non-negative and vanishing only at the origin; multiplicativity is the multiplicativity of the biquaternion norm of $\mathbb{B}$.
+**Proof.** Setting $Q_\mu = q_\mu$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives the displayed sum of squares; multiplicativity is the multiplicativity of the biquaternion norm of $\mathbb{B}$.
 
-The subspace is one of four on which the biquaternion norm is real — the others being the anti-quaternion subspace and the two sectors — and the only one on which it is positive definite. Its inverse form, so to speak, is the anti-quaternion subspace, where the biquaternion norm is negative definite.
+The subspace is one of four on which the biquaternion norm is real, the others being the anti-quaternion subspace and the two sectors. The positivity and the Euclidean reading of the restriction are in *The Hermitian Form on the Biquaternion Algebra*; its signature is in *The Bilinear Form on the Biquaternion Algebra*.
 
 ### Units and Idempotents
 
@@ -197,7 +197,7 @@ These are the **real roots** of *Biquaternion Square Roots of Minus One, Zero an
 
 **Proposition.** $\mathbb{H}_{\mathbb{B}}$ contains no zero divisor; it is one of the three subspaces free of them.
 
-**Proof.** On the subspace the biquaternion norm is the positive definite sum of four squares, which vanishes only at the origin; by the criterion of *Biquaternion Zero Divisors* every non-zero element is then a unit.
+**Proof.** On the subspace the biquaternion norm is a sum of four real squares, which vanishes only at the origin; by the criterion of *Biquaternion Zero Divisors* every non-zero element is then a unit.
 
 In the distribution of that article the quaternion subspace is joined by the centre and the anti-quaternion subspace; these are exactly the subspaces on which the norm has no null element other than the origin, as against the vector subspace and the two sectors, where the null set is non-trivial.
 
@@ -247,7 +247,7 @@ a pure imaginary element. Its inverse is $(e_0 - e_1)/2$, and the computation sh
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the biquaternion norm restricts to the positive definite sum of four squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, and the roots of minus one in it fill a two-sphere. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace contributes the two trivial idempotents and no non-trivial one, it is a division algebra and therefore no ideal of $\mathbb{B}$ but the free rank-two module of the quaternion decomposition, its roots of minus one are the unit sphere $S^2$ of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and parametrise the Hermitian idempotents, it contains no zero divisor, and as a real Lie algebra it is $\mathbb{R} \oplus \mathfrak{su}(2)$ with derived subalgebra $\mathrm{K}$.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the set of elements with real coefficients, a real vector space of dimension $4$ with basis $e_0, e_1, e_2, e_3$, and the real form of the algebra, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \otimes_{\mathbb{R}} \mathbb{C}$. It is a subalgebra, isomorphic to the real quaternions, non-commutative, central simple, and a division algebra: the biquaternion norm restricts to a sum of four real squares, every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $e_0$. Its group of units is $\mathbb{R}^4 \setminus \{0\}$, and the roots of minus one in it fill a two-sphere. Of the four involutions, complex conjugation fixes the subspace pointwise, quaternion and Hermitian conjugation coincide on it and act as quaternion conjugation, and reversal acts as its negative; the subspace is invariant under all four. It is complementary to the anti-quaternion subspace, its intersection with the vector subspace is the pure imaginary triple, and its decompositions along the coordinate blocks are $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace contributes the two trivial idempotents and no non-trivial one, it is a division algebra and therefore no ideal of $\mathbb{B}$ but the free rank-two module of the quaternion decomposition, its roots of minus one are the unit sphere $S^2$ of $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and parametrise the Hermitian idempotents, it contains no zero divisor, and as a real Lie algebra it is $\mathbb{R} \oplus \mathfrak{su}(2)$ with derived subalgebra $\mathrm{K}$.
 
 ## Summary of Notation
 

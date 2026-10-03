@@ -77,7 +77,7 @@ because $h_c(x,1) = c(x)$ and $c$ is bijective. In particular every Hermitian fo
 
 **Remark.** Non-degeneracy over $R$ is a weak statement, since the form takes values in the same algebra it is a form on. The forms that carry arithmetic information are its scalar reductions, the trace form and the blade form, whose non-degeneracy is not automatic and is discussed in *The Blade Form and the Hilbert Structure with Hermitian Adjoint*.
 
-## The Three Forms of a Clifford Algebra
+## The Three Forms of a Linear Algebra with a Degree-2 Form
 
 ### The Table
 

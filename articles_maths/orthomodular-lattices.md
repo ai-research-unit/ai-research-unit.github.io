@@ -17,20 +17,19 @@ two other forms, shows that it is self-dual, and proves that a **modular** ortho
 orthomodular, so the orthomodular law is the weak form of modularity that remains available once a
 lattice is read with an involution. It then turns to the failure of distributivity: a distributive
 orthomodular lattice is a Boolean algebra, and the smallest non-distributive example is the six-element
-lattice $M_4$, whose four atoms are paired by the orthocomplement. The standard infinite example, the
-**projection lattice** of a Hilbert space, is named and deferred to Part II.
+lattice $M_4$, whose four atoms are paired by the orthocomplement. The non-modular orthomodular
+lattices that a distance supplies belong to Part II and are not used here.
 
 The article presupposes *Order Theory and Lattices* — posets, lattices, bounded, complete,
 distributive and modular lattices, and the Boolean lattice — and *Orthocomplemented Lattices and the
 Involution*, which precedes it in this group and supplies the ortholattice, the De Morgan laws and the
 failure of the complement. The **Boolean** case and the involutive Boolean algebra are *Boolean
 Algebras with an Involution*, later in this group, and the general Boolean algebra is *Boolean Algebras
-and Lattices*, in Part V; both are named only. The **projection lattice** of a Hilbert space is a
-forward reference to Part II and is not defined or used.
+and Lattices*, in Part V; both are named only.
 
-Three boundaries are observed. No **topology** is used, and no **form** is formed: the projection
-lattice is named only, the orthogonal complement is the name of an involution on it, and nothing is
-measured with an inner product. No **measure** and no probability is used; the logical reading of the
+Three boundaries are observed. No **topology** is used and no **form** is formed: the orthocomplement
+is the name of an involution on the lattice, and nothing is measured with it. No **measure** and no
+probability is used; the logical reading of the
 lattice is *Logic and Proof* in Part 0 and *Effect Algebras and Orthomodular Lattices* in Part V, and
 neither is used here. The adjoint of an operator, and the involution on the operator layer, belong to
 the `* Operator Theory` group of this category and are named only.
@@ -95,8 +94,8 @@ $$
 
 so the orthomodular law holds.
 
-The converse fails: the projection lattice of a Hilbert space of dimension at least two is
-orthomodular and not modular, as the next section records and Part II proves. So orthomodularity is the
+The converse fails: orthomodularity is strictly weaker than modularity, and the example that witnesses
+the strictness needs a distance and belongs to Part II, where it is met. So orthomodularity is the
 weak form of modularity, and it is the form that the orthocomplement forces.
 
 ## The Failure of Distributivity
@@ -133,21 +132,6 @@ Boolean orthomodular lattices are exactly the distributive ones by the theorem a
 of the non-distributive behaviour provable without a topology are the $M_n$ with $n$ even and $n \geq
 4$, of which $M_4$ is the smallest, and their subortholattices.
 
-## The Projection Lattice of a Hilbert Space
-
-The standard example of an orthomodular lattice is the family of closed subspaces of a Hilbert space,
-ordered by inclusion, with the **orthogonal complement** as the orthocomplement and the closed span as
-the join. The structure is a **complete** orthomodular lattice; it is not distributive when the
-dimension is at least two, and it is not modular; and the elements of its associated operator layer are
-the projections. The Hilbert space, its inner product and the orthogonal complement are Part II, and
-this article names the lattice only: the definition of the space, of the complement, and the proof that
-the lattice is orthomodular and not distributive are met when Part II reaches them, and nothing of the
-kind is used or computed here.
-
-The projection lattice is the reason the notion is studied at all: it is the instance in which
-orthomodularity is the natural axiom, and it is non-Boolean, so no amount of distributivity is
-available there. Its place in the corpus is fixed by this paragraph and its content is deferred.
-
 ## Summary
 
 An orthomodular lattice is an ortholattice in which $x \leq y$ implies $y = x \vee (x^{\perp} \wedge
@@ -158,9 +142,8 @@ with the orthomodular law the one instance of the modular law that the complemen
 
 An orthomodular lattice is distributive if and only if it is a Boolean algebra. The smallest
 non-distributive orthomodular lattice is $M_4$, with six elements, whose four atoms are paired by the
-orthocomplement; it is modular and not distributive. The standard infinite example is the projection
-lattice of a Hilbert space, complete, orthomodular, non-modular and non-distributive, which is a
-forward reference to Part II and is not defined or used here.
+orthocomplement; it is modular and not distributive. The non-modular examples need a distance and
+belong to Part II, and are not defined or used here.
 
 ## Summary of Notation
 
@@ -171,7 +154,6 @@ forward reference to Part II and is not defined or used here.
 | $M_n$ | The lattice with bottom, top and $n$ pairwise incomparable atoms |
 | $M_4$ | The six-element lattice with four atoms, the smallest non-distributive orthomodular lattice |
 | $B_2$ | The four-element Boolean lattice, the smallest orthomodular lattice |
-| projection lattice | The lattice of closed subspaces of a Hilbert space, deferred to Part II |
 
 ## Further Reading
 

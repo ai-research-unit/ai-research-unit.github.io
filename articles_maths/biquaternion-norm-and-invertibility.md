@@ -115,7 +115,7 @@ where $\langle q_r, q_i\rangle = \sum_\mu (q_r)_\mu (q_i)_\mu$ is the scalar pro
 
 ## The Euclidean Norm and the Hermitian Form
 
-The **Hermitian form** $\tilde{Q} \tilde{Q}^{*}$ is defined, with its basic properties, in *Biquaternion Algebra*, §*The Hermitian Form*, immediately before the inner product there. This article reads the metric from it: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.
+The **Hermitian form** $\tilde{Q} \tilde{Q}^{*}$ is defined, with its basic properties and with the inner product, in *The Hermitian Form on the Biquaternion Algebra*. This article reads the metric from it: the Euclidean norm below, and the relation of its scalar part to the biquaternion norm.
 
 ### The Euclidean Norm
 
@@ -145,7 +145,7 @@ They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion
 The two forms play different roles:
 
 - The **biquaternion norm** controls the multiplicative structure: it determines invertibility, zero divisors, and the multiplicativity of the biquaternion norm.
-- The **scalar part of the Hermitian form** (equivalently the diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle$ of the inner product formed in *Biquaternion Algebra*) controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.
+- The **scalar part of the Hermitian form** (equivalently the diagonal value $\langle \tilde{Q}, \tilde{Q}\rangle$ of the inner product of *The Hermitian Form on the Biquaternion Algebra*) controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.
 
 ## The Real Forms and Their Signatures
 
@@ -493,7 +493,7 @@ The zero divisors themselves are studied in the article on biquaternion zero div
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the semi-norm of the literature |
 | $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|}$ | The unique multiplicative real norm on the units |
-| $\tilde{Q} \tilde{Q}^{*}$ | Hermitian form (a Hermitian biquaternion); defined in *Biquaternion Algebra* |
+| $\tilde{Q} \tilde{Q}^{*}$ | Hermitian form (a Hermitian biquaternion); defined in *The Hermitian Form on the Biquaternion Algebra* |
 | $\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*}) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^{*})}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | Inverse |

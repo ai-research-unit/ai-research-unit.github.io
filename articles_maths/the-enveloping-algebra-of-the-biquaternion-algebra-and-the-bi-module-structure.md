@@ -170,63 +170,6 @@ $$
 
 **Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; its two displays of $S$ then differ by an overall sign. The corpus fixes the sign by the printed matrix, the one written here. $A\{a\}$ and $D\{d\}$ reproduce the source's displays exactly, with zero residual.
 
-### Function Association and the Adjoint
-
-The operator picture has a second involution besides the dagger, and it is the one that makes a linear function transposable.
-
-**Definition (function association).** Let $\mathrm{Sc}$ be the scalar part and $B(X,Y)=\mathrm{Sc}(XY)$ the scalar bilinear form. The **associate** $F^{\approx}$ of a linear function $F$ is defined by
-
-$$
-\mathrm{Sc}\bigl(F(X)\,Y\bigr)=\mathrm{Sc}\bigl(X\,F^{\approx}(Y)\bigr)
-\qquad\text{for all }X,Y\in\mathbb B ,
-$$
-
-equivalently $B(FX,Y)=B(X,F^{\approx}Y)$.
-
-**Proposition (association reverses the factors).** On the Conway basis
-
-$$
-\bigl(e_n[\,]e_m\bigr)^{\approx}=e_m[\,]e_n ,
-\qquad\text{so}\qquad
-\Bigl(\sum_{n,m}z_{nm}\,e_n[\,]e_m\Bigr)^{\approx}=\sum_{n,m}z_{nm}\,e_m[\,]e_n ,
-$$
-
-and in particular $\bigl(a[\,]b\bigr)^{\approx}=b[\,]a$, so that $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$. Association is the transpose with respect to $B$.
-
-*Proof.* $B\bigl((a[\,]b)(X),Y\bigr)=\mathrm{Sc}(aXbY)=\mathrm{Sc}(XbYa)=B\bigl(X,(b[\,]a)(Y)\bigr)$ by the invariance of the scalar part under cyclic permutation, and $B$ is non-degenerate. Verified for all sixteen basis operators, residual $2\cdot10^{-15}$.
-
-**Proposition (the form and its Gram matrix).** The scalar bilinear form is
-
-$$
-B(X,Y)=X_0Y_0-X_1Y_1-X_2Y_2-X_3Y_3 :
-$$
-
-symmetric, non-degenerate and **indefinite**, of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ in the basis $e_0,e_1,e_2,e_3$. The transpose with respect to $B$ is therefore
-
-$$
-F^{\approx}=D\,F^{\mathsf T}D ,
-$$
-
-for $F^{\mathsf T}$ the plain matrix transpose, and the two agree exactly when $D$ acts trivially, in particular for the operators that fix $e_0$ and preserve the vector part. Verified on random operators, to machine precision.
-
-**Proposition (coefficient conjugation and the Hermitian adjoint).** Let $\bar F( )=\sum\bar z_{nm}e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde{X}^{*}\tilde Y)=\sum_\mu\tilde X_\bar{\mu}\tilde Y_\mu$ of *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*, $(\tilde F(X),Y)=(X,F^{*}(Y))$. Then
-
-$$
-\bar F^{\approx}=D\,F^{*}D .
-$$
-
-On the operators that fix $e_0$ and preserve the vector part — among them every $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ element of *Biquaternion Lie Group and Exponential Structure* — the matrix has no entries mixing the scalar slot with the vector slots, the conjugation by $D$ is invisible, and the identity collapses to
-
-$$
-\bar F^{\approx}=F^{*}=F^{-1}\qquad\text{for unitary }F ,
-$$
-
-which is the source's $G^{-1}=G^{+\approx}=G^{\dagger}$.
-
-*Proof.* The Gram matrix of $(\cdot,\cdot)$ is the identity while that of $B$ is $D$, so the two transposes differ by a conjugation by $D$ on both sides, and conjugating the coefficients turns the transpose with respect to $B$ into the adjoint with respect to $(\cdot,\cdot)$, again up to $D$. For a unitary $F$ the adjoint is the inverse. Verified numerically: $F^{\approx}=DF^{\mathsf T}D$ on random operators, and $\bar F^{\approx}=F^{*}$ on the $\mathrm{SU}(3)$ elements, both to machine precision.
-
-**Remark (why the source's rule is safe there).** The source's group elements all fix the scalar unit and map the vector part to itself, so $D$ has no visible effect on their block form; this is why the source may use the plain transpose and the Hermitian adjoint interchangeably. For a general linear function the two involutions differ, and the corpus keeps them apart: association is the transpose for the **indefinite** scalar form, the dagger is the adjoint for the **positive Hermitian** form.
-
 ### The Limit of the Method
 
 The quaternion formulation of the classical matrix types is complete in dimension three and incomplete in dimension four, and the reason is visible in the displays above.
@@ -291,7 +234,7 @@ The two structural statements were checked numerically on the biquaternion algeb
 
 ## Summary
 
-The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(z)=e_nze_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types, and a linear function carries a second involution, **association**, which is the transpose for the indefinite scalar form $\mathrm{Sc}(XY)$ of signature $(1,3)$ and which combines with the conjugation of the coefficients to give the Hermitian adjoint on the group elements. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
+The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(x\otimes y^{\mathrm{op}})\cdot z=xzy$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(z)=e_nze_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types; a linear function carries a second involution, **association**, which is treated, with the scalar bilinear form it belongs to, in *Association and the Transpose on the Biquaternion Algebra*. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
 
 ## Summary of Notation
 
@@ -302,9 +245,6 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 | $e_n[\,]e_m$, $(e_n[\,]e_m)(z)=e_nze_m$ | Conway operator; a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$ |
 | $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ | The composition rule |
 | $A\{a\}$, $D\{d\}$, $S\{s\}$ | The antisymmetric, diagonal and diagonal-less symmetric linear functions |
-| $B(X,Y)=\mathrm{Sc}(XY)$, $D=\operatorname{diag}(1,-1,-1,-1)$ | The scalar bilinear form, indefinite of signature $(1,3)$, and its Gram matrix |
-| $F^{\approx}$ | The associate of $F$; the transpose for $B$, $F^{\approx}=DF^{\mathsf T}D$ |
-| $\bar F^{\approx}=DF^{*}D$; $=F^{\dagger}$ on the group elements | Association combined with conjugation, against the Hermitian adjoint |
 | $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$, $L_aR_b=R_bL_a$ | The composition laws |
 | $\{L_a\}'=\{R_b\}$, $\{R_b\}'=\{L_a\}$ | The double centraliser |
 | $\mathbb B^{\mathrm{op}}$ | The opposite algebra |

@@ -11,7 +11,7 @@ This article takes the entry point that makes the relations between all of these
 - a condition that is **nonlinear** in the operator defines a set that is not a subspace. It is a **group** when the condition is multiplicativity together with invertibility — the endomorphisms form only a monoid, and the automorphisms are its units;
 - the exponential passes from one of the subspaces to one of the groups, so that the subspace is the Lie algebra of the group.
 
-Two consequences are worth stating at the outset, because they are the reason the entry point is useful. First, the natural classes of operators are not a miscellaneous list: the conditions linear in the operator give subspaces of one ambient space, comparable with one another by inclusion, and the nonlinear conditions give groups acting on that same space. Second, the entry point separates cleanly the questions that a metric can answer from the questions that only the algebra can answer: an automorphism preserves the product and no metric data beyond what the product forces, while a condition that references structure the algebra alone does not provide admits a strictly larger class.
+Two consequences are worth stating at the outset, because they are the reason the entry point is useful. First, the natural classes of operators are not a miscellaneous list: the conditions linear in the operator give subspaces of one ambient space, comparable with one another by inclusion, and the nonlinear conditions give groups acting on that same space. Second, the entry point separates cleanly the questions that extra structure can answer from the questions that only the algebra can answer: an automorphism preserves the product and no structure beyond what the product forces, while a condition that references structure the algebra alone does not provide admits a strictly larger class.
 
 The classes themselves are treated in *Automorphisms and Derivations of Algebras* and in *Automorphisms of Modules over an Algebra*; the biquaternion case is worked out in *Biquaternion Automorphisms and Derivations*. What is assembled here is the ambient space they share, the ladder of subspaces and groups inside it, and the worked examples that exhibit the ladder in the smallest dimensions.
 
@@ -144,7 +144,7 @@ This is the case for the matrix algebras, the quaternion algebra and the biquate
 
 **Definition.** A **$k$-algebra automorphism** of $A$ is a bijective $k$-linear operator with $M(xy) = M(x)M(y)$.
 
-The automorphisms form the group $\operatorname{Aut}_k(A)$. The condition is nonlinear, so this is a group and not a subspace, and it is a closed subgroup of the units of $\operatorname{End}_k(A)$; when $k$ is $\mathbb{R}$ or $\mathbb{C}$ it is a Lie group, and its Lie algebra is $\operatorname{Der}_k(A)$, as the dimension check of the previous section records. An automorphism preserves the centre, the idempotents, the units, the zero divisors and the lattice of two-sided ideals. It preserves no metric data beyond what the product already forces: extra structure on $A$ is not automatically respected, but structure determined by the product is carried along automatically.
+The automorphisms form the group $\operatorname{Aut}_k(A)$. The condition is nonlinear, so this is a group and not a subspace, and it sits inside the units of $\operatorname{End}_k(A)$; its Lie algebra is $\operatorname{Der}_k(A)$, the derivations being the infinitesimal automorphisms, as the dimension check of the previous section records. An automorphism preserves the centre, the idempotents, the units, the zero divisors and the lattice of two-sided ideals. It preserves no structure beyond what the product already forces: extra structure on $A$ is not automatically respected, but structure determined by the product is carried along automatically.
 
 ## The Ladder
 
@@ -153,7 +153,7 @@ Collecting the classes, and reading the containments off the dimensions, gives o
 | class | dimension over $\mathbb{C}$ | defined by |
 |---|---|---|
 | all $\mathbb{C}$-linear operators | 16 | none |
-| $\mathrm{SO}(4,\mathbb{C})$ | 6 | $X^{\mathsf T} + X = 0$ |
+| $\mathfrak{skew}_4(\mathbb{C})$, the skew operators | 6 | $X^{\mathsf T} + X = 0$ |
 | $L(\mathbb{B})$, the left multiplications | 4 | $M = L(a)$ |
 | $R(\mathbb{B})$, the $A$-linear maps | 4 | centralizer of $L(\mathbb{B})$ |
 | $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ | 3 | Leibniz |
@@ -168,10 +168,10 @@ The containments that hold, all of them dimension checks that have been verified
 
 $$
 \mathbb{C}\cdot I \subset L(\mathbb{B}) \subset M_4(\mathbb{C}), \qquad
-\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathrm{SO}(4,\mathbb{C}) \subset M_4(\mathbb{C}).
+\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{skew}_4(\mathbb{C}) \subset M_4(\mathbb{C}).
 $$
 
-Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(e_1)$, $L(e_2)$ and $L(e_3)$, while $L(e_0) = I$ is not.
+Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(e_1)$, $L(e_2)$ and $L(e_3)$, while $L(e_0) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary *The Orthogonal Lie Algebra* of Part II supplies.
 
 Two finer statements sharpen the picture. First, the element $L(e_0) = I$ is the identity operator and is not skew, while $L(e_1)$, $L(e_2)$, $L(e_3)$ are skew, so that
 
@@ -182,10 +182,10 @@ $$
 with $L(\text{pure})$ of dimension $3$. Second, the two three-dimensional pieces add up to the whole skew Lie algebra:
 
 $$
-\mathrm{SO}(4,\mathbb{C}) = L(\text{pure}) \ \oplus\ \operatorname{Der}_{\mathbb{C}}(\mathbb{B}), \qquad 3 + 3 = 6 .
+\mathfrak{skew}_4(\mathbb{C}) = L(\text{pure}) \ \oplus\ \operatorname{Der}_{\mathbb{C}}(\mathbb{B}), \qquad 3 + 3 = 6 .
 $$
 
-The identity has been verified by exhibiting both spaces as subspaces of the sixteen-dimensional operator space and computing their intersection and their sum. It says that an operator of $\mathrm{SO}(4,\mathbb{C})$ splits uniquely into the part that is a left multiplication by a vector of $\mathbb{B}$ and the part that is a derivation, and that the two parts have nothing else in common.
+The identity has been verified by exhibiting both spaces as subspaces of the sixteen-dimensional operator space and computing their intersection and their sum. It says that a skew operator splits uniquely into the part that is a left multiplication by a vector of $\mathbb{B}$ and the part that is a derivation, and that the two parts have nothing else in common.
 
 ## Worked Example: The Complex Numbers as a Real Algebra
 
@@ -275,21 +275,15 @@ $$
 \dim \operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = 0 = \dim \operatorname{Der}_{\mathbb{R}}(\mathbb{C}).
 $$
 
-The automorphism group is finite, so it is a zero-dimensional Lie group, and its Lie algebra is zero. The check is not vacuous, and it is what would fail if a derivation or an automorphism had been missed.
+The automorphism group is finite, so its Lie algebra is zero. The check is not vacuous, and it is what would fail if a derivation or an automorphism had been missed.
 
 **The skew operators.** The condition $X^{\mathsf T} + X = 0$ on the operator matrix cuts out
 
 $$
-\mathrm{SO}(2) = \operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
+\operatorname{span}_{\mathbb{R}} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \operatorname{span}_{\mathbb{R}} L(i),
 $$
 
-a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the generator of the rotation flow is exactly multiplication by $i$. Exponentiating gives
-
-$$
-\exp(t L(i)) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t \end{pmatrix} = L(\cos t + i\sin t),
-$$
-
-so the one-parameter group of rotations is the image under $L$ of the unit circle of $\mathbb{C}$, and the isomorphism $U(1) \to SO(2)$ of the companion article on the two-dimensional algebras is the restriction of $L$ to that circle. The rotation is algebraic in origin, and the metric is what makes it visible.
+a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the nonzero skew operator is exactly multiplication by the imaginary unit, up to scale. The transposition is the one of the trace pairing, and the pairing is used only to define the subspace. The reading of this line as the orthogonal group of the plane, with its rotations and its unit circle, needs the norm and belongs to Part IV, where the distance is available, and is named only.
 
 ## The Three Two-Dimensional Algebras
 
@@ -315,7 +309,7 @@ $$
 
 This derivation rescales the infinitesimal direction. It is worth noting that the naive derivative is not the derivation here: the map sending $\varepsilon$ to $1$ fails the Leibniz rule at $\varepsilon^2$, since it would send $0$ to $\varepsilon \cdot 1 + 1 \cdot \varepsilon = 2\varepsilon$. The derivation space is one-dimensional and is spanned by $\delta$ above, not by the difference quotient.
 
-The two-dimensional algebras therefore show the ladder in two dimensions with the derivation rung and the automorphism rung changing height together, and they show the nilpotent as the source of the change. The rotations implemented by these three algebras are treated in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
+The two-dimensional algebras therefore show the ladder in two dimensions with the derivation rung and the automorphism rung changing height together, and they show the nilpotent as the source of the change. The multiplicative reading of these three algebras, which needs the norm and the sign of the form, is *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, in Part IV, where the distance is available; it is named only.
 
 ## The Four-Dimensional Cases
 
@@ -324,10 +318,10 @@ The quaternions and the biquaternions show the ladder at $n = 4$ over two differ
 **The quaternions over $\mathbb{R}$.** Here $n = 4$ and the ambient space is $M_4(\mathbb{R})$, of dimension $16$. The centre is $\mathbb{R}$, so $\dim \operatorname{Der}_{\mathbb{R}}(\mathbb{H}) = 4 - 1 = 3$, and the derivations are the inner ones $\mathrm{ad}_p$ with $p$ pure imaginary. On the three-dimensional space of pure imaginary quaternions the bracket is twice the cross product, so
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3 \cong \mathrm{SO}(3), \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3),
+\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{R}^3, \qquad \operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times ,
 $$
 
-and the automorphism group is realised by the inner automorphisms, giving the double cover $S^3 \to SO(3)$. The two dimensions agree, 3 and 3.
+the automorphism group being realised by the inner automorphisms. The two dimensions agree, 3 and 3. The reading of $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ as a rotation group of $\mathbb{R}^3$, and of the quaternion units as a double cover of it, needs the form and the distance, belongs to Part IV, and is named only.
 
 **The biquaternions over $\mathbb{C}$.** Here $n = 4$ and the ambient space is $M_4(\mathbb{C})$, again of dimension $16$, but the scalars are $\mathbb{C}$ rather than $\mathbb{R}$. The centre is $\mathbb{C}$, so $\dim_{\mathbb{C}} \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$, and every derivation is inner:
 
@@ -340,28 +334,28 @@ the automorphism group being the inner automorphisms modulo the scalars by Skole
 **The biquaternions over $\mathbb{R}$.** Reading the same set over $\mathbb{R}$ changes the ambient space to $M_8(\mathbb{R})$, of dimension $64$, while the centre becomes the two-dimensional $\mathbb{C}_{\mathbb{B}}$, so the formula gives $8 - 2 = 6$ and
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})_{\mathbb{R}} \cong \mathrm{SO}(3,1),
+\operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})_{\mathbb{R}},
 $$
 
-of real dimension $6$. The automorphism group acquires a second coset from complex conjugation, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PSL_2(\mathbb{C}) \rtimes \mathbb{Z}/2$, again of dimension $6$.
+of real dimension $6$. The automorphism group acquires a second coset from complex conjugation, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PSL_2(\mathbb{C}) \rtimes \mathbb{Z}/2$, again of dimension $6$. The identification of this six-dimensional space with the orthogonal Lie algebra of a form of signature $(3,1)$ needs the form, belongs to Part II, and is named only.
 
-**The rotations and the boosts.** The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{e_k}$ and $b_k = \mathrm{ad}_{i e_k}$ for $k = 1,2,3$, the brackets are
+**The two three-dimensional pieces.** The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{e_k}$ and $b_k = \mathrm{ad}_{i e_k}$ for $k = 1,2,3$, the brackets are
 
 $$
 [r_i, r_j] = 2\varepsilon_{ijk} r_k, \qquad [r_i, b_j] = 2\varepsilon_{ijk} b_k, \qquad [b_i, b_j] = -2\varepsilon_{ijk} r_k .
 $$
 
-The $r_k$ span a three-dimensional subalgebra isomorphic to $\mathrm{SU}(2) \cong \mathrm{SO}(3)$, the compact rotations. The $b_k$ span a complementary three-dimensional subspace, the non-compact boosts, which is not a subalgebra: the third relation returns a rotation rather than a boost. The minus sign there is what makes the algebra $\mathrm{SO}(3,1)$ rather than $\mathrm{SO}(4)$; for $\mathrm{SO}(4)$ the two pieces would be two copies of $\mathrm{SU}(2)$ closing separately with the same sign. Scaling by $J_k = \tfrac{1}{2}r_k$ and $K_k = \tfrac{1}{2}b_k$ exhibits the standard Lorentz relations. The full details, with the automorphism and derivation computations for both ground fields, are in *Biquaternion Automorphisms and Derivations*.
+The $r_k$ span a three-dimensional subalgebra, and the $b_k$ span a complementary three-dimensional subspace which is **not** a subalgebra: the third relation returns an element of the first piece. The minus sign there is the whole difference from the case in which the two pieces close separately with the same sign. The reading of the two pieces as the compact and the non-compact part of an orthogonal Lie algebra, and the Lorentz interpretation of the brackets, need the form of Part II and belong to *The Orthogonal Lie Algebra* and to *Biquaternion Automorphisms and Derivations*; they are named only. What stands here is the algebraic content — the two pieces, their dimensions, the two brackets that close and the one that does not — and the full details, with the automorphism and derivation computations for both ground fields, are in *Biquaternion Automorphisms and Derivations*.
 
 ## Summary
 
 Fixing a $k$-algebra $A$ with $n = \dim_k A$ places every linear operator on $A$ in the one ambient space $\operatorname{End}_k(A) \cong M_n(k)$, of dimension $n^2$, and the classes of operators worth naming are subspaces and groups inside it. A condition linear in the operator defines a subspace: the derivations by the Leibniz rule, the $A$-linear operators as the centralizer of the left multiplications, and the skew operators. A condition nonlinear in the operator defines a set that is not a subspace, and a group once invertibility is added: the algebra automorphisms, which are the units of the endomorphism monoid. The derivations are the tangent space of the automorphism group at the identity, so the dimension of the one equals the dimension of the other.
 
-The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the skew rung $\mathrm{SO}(4,\mathbb{C})$ of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathrm{SO}(4,\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ sits inside the ambient space as a group.
+The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the skew-operator rung of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathfrak{skew}_4(\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ sits inside the ambient space as a group.
 
-The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the Lie algebra $\mathrm{SO}(2)$ of the rotations is spanned by $L(i)$ itself, so that the rotation is generated by multiplication by the imaginary unit and the metric only makes it visible.
+The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the skew operators span the one-dimensional subspace generated by $L(i)$.
 
-Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{D}$ and $1$ for $\mathbb{D}'$, and the asymmetry is caused by the nilpotent generator of $\mathbb{D}'$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{D}'$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$ with automorphism groups $SO(3)$ and $PSL_2(\mathbb{C})$ respectively, and over $\mathbb{R}$ the biquaternion derivation space is the six-dimensional $\mathrm{SO}(3,1)$, whose split into rotations and boosts is the origin of the Lorentz algebra in this setting.
+Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{D}$ and $1$ for $\mathbb{D}'$, and the asymmetry is caused by the nilpotent generator of $\mathbb{D}'$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{D}'$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$, and over $\mathbb{R}$ the biquaternion derivation space is six-dimensional. The orthogonal and Lorentz readings of these spaces need a form and belong to Part II and Part IV, where the form and the distance are available.
 
 ## Summary of Notation
 
@@ -380,8 +374,8 @@ Running the same computation over the three two-dimensional algebras shows the d
 | $\operatorname{Aut}_k(A)$ | Group of $k$-algebra automorphisms of $A$ |
 | $Z(A)$ | Centre of $A$, a subspace of $A$ |
 | $\exp(\delta)$ | Exponential of a nilpotent derivation, an automorphism |
-| $\mathrm{SO}(n,\mathbb{C})$, $\mathrm{SO}(n)$ | Lie algebras of skew operators |
-| $r_k = \mathrm{ad}_{e_k}$, $b_k = \mathrm{ad}_{ie_k}$ | Rotations and boosts in $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ |
+| $\mathfrak{skew}_n(k) = \{X : X^{\mathsf T} + X = 0\}$ | Skew operators relative to the trace pairing |
+| $r_k = \mathrm{ad}_{e_k}$, $b_k = \mathrm{ad}_{ie_k}$ | The two three-dimensional pieces of $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ |
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ | Real, complex, quaternion and biquaternion algebras |
 | $\mathbb{D}$, $\mathbb{D}'$ | Split complex numbers and dual numbers |
 
@@ -395,4 +389,4 @@ Running the same computation over the three two-dimensional algebras shows the d
 - Gerhard Hochschild, *On the cohomology groups of an associative algebra* (Annals of Mathematics 46, 1945), for the identification of the first cohomology with the derivations and the vanishing for separable algebras.
 - Murray Gerstenhaber, *On the deformation of rings and algebras* (Annals of Mathematics 79, 1964), for the reading of the higher cohomology as deformations.
 - John Voight, *Quaternion Algebras* (Springer, 2021), for the quaternion and biquaternion computations used in the examples.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the relation of the biquaternion derivations to the Lorentz algebra.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the quaternion and biquaternion computations.

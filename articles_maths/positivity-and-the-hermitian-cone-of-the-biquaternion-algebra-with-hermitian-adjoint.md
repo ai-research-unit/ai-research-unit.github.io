@@ -54,7 +54,7 @@ $$
 
 with equality if and only if $\tilde{Q}=0$. Hence the dagger of $\mathbb{B}$ is a positive involution and the scalar form $(\tilde{Q},\tilde{R})=\mathrm{Sc}(\tilde{Q}^{*}\tilde{R})$ is positive definite.
 
-*Proof.* Write $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. By *Biquaternion Algebra* the diagonal of the Hermitian form is $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$, and $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ by the same computation applied to $\tilde{Q}^{*}$, whose coefficients are the conjugates $Q_\bar{\mu}$ of those of $\tilde{Q}$. A sum of non-negative reals vanishes only if each term does, so the form vanishes only at $\tilde{Q}=0$; and the same computation with $\tilde{R}$ in place of $\tilde{Q}^{*}$ makes the sesquilinear form positive definite in the basis $e_0,e_1,e_2,e_3$, where its Gram matrix is the identity.
+*Proof.* Write $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. By *The Hermitian Form on the Biquaternion Algebra* the diagonal of the Hermitian form is $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$, and $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ by the same computation applied to $\tilde{Q}^{*}$, whose coefficients are the conjugates $Q_\bar{\mu}$ of those of $\tilde{Q}$. A sum of non-negative reals vanishes only if each term does, so the form vanishes only at $\tilde{Q}=0$; and the same computation with $\tilde{R}$ in place of $\tilde{Q}^{*}$ makes the sesquilinear form positive definite in the basis $e_0,e_1,e_2,e_3$, where its Gram matrix is the identity.
 
 **Remark (why no contradiction with the general theorem).** The general article proves that the dagger of a real Clifford algebra is positive exactly when the quadratic form is negative definite, and it adds the correction that a positive definite form gives the cone of the *other* involution, the two statements being exchanged by $e_i\mapsto ie_i$ (*Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint*, §*Remark (the exchange of sides)*). The biquaternion algebra is that exchange in force. Its dagger is not the Clifford conjugation of the Minkowski structure $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; it is the **reversion** of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $ie_k$ and reversion fixes them, which is why $ie_3$ is Hermitian while $e_3$ is not (*Biquaternion Versors and the Orthogonal Group*, §*The Two Involutions*). The scalar form it licenses is the Euclidean form $\sum_\mu\lvert Q_\mu\rvert^{2}$, not the quaternion norm. The two structures on the one algebra carry two forms:
 
@@ -234,7 +234,10 @@ Every element has a **polar decomposition** $\tilde{Q}=U\lvert\tilde{Q}\rvert$ w
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra, the four conjugations, the Hermitian form and the scalar form.
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra and the four conjugations
+- *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the Hermitian form and the inner product
+- *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the bilinear form
+- *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the scalar form
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and their fixed spaces.
 - *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`), for $\mathbb{M}_+$, its Jordan structure, its norm and its isotropic cone.
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for $\Phi(e_k)=-i\sigma_k$, the Hermitian matrices, the determinant and the absolute determinant.
