@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Born Rule (S53) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-born-rule-s53">Charon — The Born Rule (S53)</h1>
+<p><em>Audits inventory §11 item 4 (the Cartan conditions; "curvature = Born probability") and §2.5–§2.6 (the fusion machinery it rests on). Sources: RC 021 §II.1 (the Cartan conditions), RC 022 ((2-3), (2-4)), RC 028 §II.6 (the status of (2-46)), Esp 030 §4.6 (eq. (135)), RC 035 §II.3 ((2-83)–(2-87)). </em><em>[BRIDGE]</em><em> — see §5.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's line is that "Cartan is [EST], 'curvature = Born probability' is [SPEC], and what is actually derived is that $|\psi|^{2}$ gives the observation probability". After doing the three parts, the split holds and the third part is sharper than that: what the corpus derives is exact, and it is not the Born rule — it is the identification of the probability density with the fraction of the oscillator's <em>field energy</em> stored in one elementary cell. And the phrase "curvature = Born probability", read through the corpus's own curvature law, is wrong by two powers.</strong></p>
+<p><strong>Three findings, in order of what they are worth.</strong></p>
+<p><strong>(1) Cartan's conditions are stated correctly.</strong> RC 021–022 gives three: a four-dimensional Riemannian metric (2-2); a rank-2 tensor $T_{\alpha\beta}$ expressible in the $g_{\alpha\beta}$ and their derivatives to second order; and $\nabla_\alpha T^{\alpha}_{\ \beta} \equiv 0$ (2-3). <strong>These are the hypotheses of the uniqueness theorem — Cartan's (1922) in four dimensions, of which Lovelock's theorem (1971) is the general form — and their conclusion in 4D is $T_{\alpha\beta} = \alpha G_{\alpha\beta} + \Lambda g_{\alpha\beta}$ up to normalisation, which is (2-4).</strong> So the corpus's attribution is right, its conditions are complete, and <strong>[EST]/[MATH] stands.</strong> One qualification is owed and the corpus makes it itself (RC 028): the theorem fixes the <em>form</em> of the geometric tensor; the further identification of that tensor with the physical energy-momentum tensor is Einstein's principle, not Cartan's theorem.</p>
+<p><strong>(2) The Born rule is not derived and the normalisation is.</strong> The corpus says so in its own words: <em>"L'idée fondamentale de la Mécanique ondulatoire a été de dire (et vérifiée dans l'expérience) que le carré $\psi^{2}$ de l'amplitude de l'onde psi est proportionnel à la probabilité de présence"</em> — the rule is assumed, as verified. <strong>What follows is the <em>constant</em>: (2-87), $\psi^{2} = \Sigma^{2}/(8\pi W)$ with $W = (M_0^{2}c^{4}+p^{2}c^{2})^{1/2}$.</strong> The dimensional check passes — an energy density divided by an energy is an inverse volume, which is what $\int\psi^{2}d\omega = 1$ requires.</p>
+<p><strong>(3) And (2-87) is not new: it is Esp 030's (135) rewritten, and that identifies its integration volume.</strong> Esp 030 gives $W = \pm\frac{\Omega_0}{8\pi}\Sigma^{2}$ — the energy <em>at a point</em> is proportional to the field intensity there, with the elementary volume $\Omega_0$ as the factor. RC 035's (2-85) instead integrates: $\int_\omega\frac{\Sigma^{2}}{8\pi}d\omega = W$. <strong>The two are the same statement exactly when $\omega = \Omega_0$ and $\Sigma^{2}$ is uniform over it.</strong> So the corpus's Born-normalised wave function is <em>cell-local</em>: <strong>$\psi^{2} = \Sigma^{2}/(8\pi W) = \Sigma^{2}/(\Omega_0\bar{\Sigma}^{2})$, the local field intensity divided by its cell average, and the probability of finding the particle in a region is the fraction of the oscillator's field energy stored in that region.</strong> For the monochromatic fundamental state, $\Sigma^{2} = 8\pi W/\Omega_0$ and the density is <em>flat</em>: $\psi^{2} = 1/\Omega_0 = 4{,}10\times10^{40}$ cm⁻³ over a cell of side $1{,}8\times10^{-14}$ cm — the elementary length $l_0$, which is the nucleon's radius in this corpus (S22).</p>
+<p><strong>And the curvature version of the claim is off by two powers.</strong> The register, following the inventory, summarises the corpus as <em>"the lepton's curvature is the Born probability"</em>. <strong>Read through the corpus's own curvature law, $R = \xi^{2}\rho^{2} + 4\Lambda$ (4-18), and $\rho = W/(\Omega_0c^{2})$ with $W\propto\Sigma^{2}$: $R - 4\Lambda \propto \rho^{2} \propto \Sigma^{4} \propto (\psi^{2})^{2}$.</strong> So the curvature is the <strong>square</strong> of the probability density, not the probability density. <strong>The correction is algebraic and needs no modern input</strong> — it is the corpus's own two equations (135) and (4-18) combined — <strong>and it matters because the phrase appears in the register and in the inventory's item 4 as though the identity were the corpus's.</strong></p>
+<p><strong>The verdict.</strong> Cartan's conditions <strong>[EST]/[MATH]</strong>, confirmed, with the corpus's own caveat about (2-46). The derivation of the normalisation constant <strong>[MATH]</strong> — exact and dimensionally sound. The identification that the probability density <em>is</em> the field-energy share <strong>[SPEC]</strong>: it is a real physical reading (a detector in a region responds to the energy in it), and it depends entirely on (2-85), the statement that the particle's whole energy is trapped field energy in a finite volume. <strong>"Curvature = Born probability" [SPEC] and, as stated, wrong by two powers.</strong> Rule R6: coherence passes; reproducibility passes for (2-87) and for the cell identity; correspondence fails, and <em>has</em> to — the Born rule's empirical content is not derivable from a wave equation, and the existing corpus article on the subject (<code>the-born-rule-as-a-trace-formula-derivation-and-comparison</code>) shows that the biquaternion framework relocates the rule rather than eliminating it.</p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>The Cartan conditions, RC 021 §II.1 and RC 022:</strong></p>
+<blockquote>
+<p>Ces conditions complémentaires, appelées <em>conditions de Cartan</em>, sont les suivantes : a) L'espace-temps est représenté par une métrique riemannienne quadridimensionnelle : $ds^{2} = g_{\alpha\beta}dy^{\alpha}dy^{\beta}$ (2-2) […] b) $T_{\alpha\beta}$ est un tenseur de rang 2 qui peut être exprimé en termes des $g_{\alpha\beta}$ et leurs dérivées partielles jusqu'au second ordre. c) $T_{\alpha\beta}$ satisfait identiquement les relations de conservation : $\nabla_\alpha T^{\alpha}_{\ \beta} \equiv 0$ (2-3).</p>
+<p>Les conditions de Cartan conduisent univoquement à la formulation usuelle de la Relativité générale […] : $R_{\alpha\beta} - \frac{1}{2}Rg_{\alpha\beta} + \Lambda g_{\alpha\beta} = -T_{\alpha\beta}$ (2-4).</p>
+</blockquote>
+<p><strong>And the corpus's own caveat, RC 028 §II.6:</strong></p>
+<blockquote>
+<p>Le premier principe accepté par Albert Einstein au moment de la création de sa Relativité générale a été l'équivalence possible entre la représentation physique et la représentation géométrique de l'Univers : $S_{\alpha\beta} = T_{\alpha\beta}$ (2-46) où $S_{\alpha\beta}$ est un tenseur géométrique supposé être défini par les conditions de Cartan et $T_{\alpha\beta}$ un tenseur impulsion-énergie.</p>
+</blockquote>
+<p><strong>The field energy at a point, Esp 030 §4.6 (135):</strong></p>
+<blockquote>
+<p>On démontre que [23] : $W = \pm\frac{\Omega_0}{8\pi}(E^{2}+H^{2}+A^{2}+V^{2}) = \pm\frac{\Omega_0}{8\pi}\Sigma^{2}$ (135), où les carrés désignent ici les produits des quantités conjuguées : $\Sigma^{2} = \Sigma\Sigma^{*}$ (136).</p>
+</blockquote>
+<p><strong>The confinement statement and the Born rule, RC 035 §II.3:</strong></p>
+<blockquote>
+<p>Si les conditions initiales du monde « extérieur » de $P$ sont telles que $P$ est « confiné » à l'intérieur d'un volume spatial $\omega$ (éventuellement infini), alors […] $$\int_\omega\frac{\Sigma^{2}}{8\pi}d\omega = \int_\omega\frac{E^{2}+H^{2}+A^{2}+V^{2}}{8\pi}d\omega = (M_0^{2}c^{4}+p^{2}c^{2})^{\frac{1}{2}} \tag{2-85}$$</p>
+<p>L'idée fondamentale de la Mécanique ondulatoire a été de dire (et vérifiée dans l'expérience) que le carré $\psi^{2}$ de l'amplitude de l'onde psi est proportionnel à la probabilité de présence dans le volume $\omega$ de l'oscillateur $\Sigma$ […] Et d'écrire, plus précisément encore, la proportionnalité entre $\psi^{2}$ et $\Sigma^{2}/8\pi$. Si l'on tient alors compte de la normalisation usuelle de toute probabilité : $\int_\omega\psi^{2}d\omega = 1$ (2-86), on est très naturellement conduit à la relation suivante entre $\psi^{2}$ et $\Sigma^{2}$ : $$\psi^{2} = \frac{\Sigma^{2}}{8\pi(M_0^{2}c^{4}+p^{2}c^{2})^{\frac{1}{2}}} \tag{2-87}$$</p>
+</blockquote>
+<h2 id="1-cartans-conditions-and-the-one-step-that-is-not-cartans">1. Cartan's conditions, and the one step that is not Cartan's</h2>
+<p><strong>The three conditions are quoted above and they are the right three.</strong> Read as hypotheses on a rank-2 symmetric tensor built from a 4-dimensional metric and its first two derivatives, and divergence-free as an identity, they admit in four dimensions exactly the Einstein tensor and the metric, in any linear combination: <strong>$S_{\alpha\beta} = \alpha G_{\alpha\beta} + \Lambda g_{\alpha\beta}$, which is (2-4) up to the constant and the sign convention.</strong> The result is due to Cartan (1922) in this dimension; Weyl and Vermeil's earlier variational arguments reach it, and Lovelock (1971) generalised it, adding the Gauss–Bonnet combination in $d \ge 5$ — <strong>so the four-dimensional statement the corpus uses is the <em>strongest</em> form of the theorem and is not affected by the higher-dimensional terms.</strong> Charon names the right person for the right statement, which is worth recording because misattributions in this area (Cartan for Lovelock, Weyl for Cartan) are common.</p>
+<p><strong>The qualification the corpus makes itself.</strong> A uniqueness theorem about a <em>geometric</em> tensor is a theorem about geometry. The next line of the corpus — <em>"Einstein a de cette manière admis la complète équivalence entre la courbure riemannienne scalaire $R$ […] et la densité d'impulsion-énergie"</em> (RC 028) — identifies that tensor with momentum-energy, and <strong>the corpus then departs from Einstein under a different principle</strong> (its own; S8's subject). So <strong>the [EST]/[MATH] tag covers exactly (2-2)–(2-4), and (2-46) is [SPEC] on the same footing as the rest of the corpus's ontology.</strong> The register's item 4 must be read with that boundary.</p>
+<h2 id="2-what-the-corpus-derives-and-what-it-assumes">2. What the corpus derives, and what it assumes</h2>
+<p><strong>Assumed, in the corpus's own words:</strong> the Born rule — that $\psi^{2}$ is proportional to the probability of presence, established by experiment. <strong>No chapter of the corpus claims to derive it, and no reading of (2-85)–(2-87) derives it.</strong></p>
+<p><strong>Derived: the constant.</strong> (2-87) follows from (2-86) plus (2-85) in one line: normalise $\psi^{2}\propto\Sigma^{2}/8\pi$ against $\int\psi^{2}d\omega = 1$ and use $\int_\omega\Sigma^{2}/8\pi\,d\omega = W$. <strong>The interesting content is therefore not in (2-87) but in (2-85).</strong></p>
+<p><strong>And (2-85) is an assumption with a physical name.</strong> It says: <strong>the particle's total energy is exactly the field energy stored in the confinement volume.</strong> That is the corpus's substitute for the classical self-energy problem — the same move as S19's trapped radiation and S47's photon gas — and it is where the model is [SPEC]. <strong>Two consequences follow, and both are checked.</strong></p>
+<p><strong>Check 1 — the cell.</strong> Esp 030's (135) gives the <em>local</em> statement $W = \Omega_0\Sigma^{2}/8\pi$, and RC 035's (2-85) gives the <em>integrated</em> one. <strong>Verified: they agree exactly when $\omega = \Omega_0$ and $\Sigma^{2}$ is uniform over it</strong>, since then $\int_\omega\Sigma^{2}/8\pi\,d\omega = \Omega_0\Sigma^{2}/8\pi = W$. <strong>So (2-86)'s normalisation fixes the integration volume at $\Omega_0 = \frac{4}{3}\pi l_0^{3} = 2{,}44\times10^{-41}$ cm³, i.e. $l_0 = 1{,}8\times10^{-14}$ cm</strong> — the elementary length, and the nucleon's radius in this corpus (S22). <strong>The probability density is normalised per elementary cell.</strong></p>
+<p><strong>Check 2 — the density.</strong> With $W = \Omega_0\bar{\Sigma}^{2}/8\pi$, (2-87) becomes $\psi^{2} = \Sigma^{2}/(\Omega_0\bar{\Sigma}^{2})$ — <strong>the local field intensity over its cell average</strong> — and for the fundamental monochromatic state, where the corpus's (133)–(135) apply point by point, $\psi^{2} = 1/\Omega_0 = 4{,}10\times10^{40}$ cm⁻³, <strong>a constant.</strong> So the corpus's Born density in the fundamental state is <em>flat over the cell</em>, which is what consistent normalisation over a single cell means, and the position-dependence of $\psi^{2}$ is the position-dependence of the field intensity at scales larger than $l_0$.</p>
+<p><strong>What this is worth.</strong> The statement "the probability of finding the particle in a region is the fraction of its field energy stored in that region" is a real physical reading: it is what a detector does — it responds to the energy in its own volume, so the frequency of detections tracks the energy share. <strong>And it is the corpus's own running identification, not a one-off: the same "the information is the trapped radiation" move carries Esp 098's memory chapter (S56).</strong> So S53 hands the identification to S56 and does not re-argue it there.</p>
+<h2 id="3-the-curvature-version-is-off-by-two-powers">3. The curvature version is off by two powers</h2>
+<p><strong>The register and the inventory both summarise item 4 as <em>"the lepton's curvature is the Born probability"</em>. The corpus's own equations do not say that.</strong></p>
+<ul>
+<li>The curvature law: $R = \xi^{2}\rho^{2} + 4\Lambda$ (4-18, S10's subject), with $\rho$ the proper density.</li>
+<li>The density and the energy: $\rho = W/(\Omega_0c^{2})$ (from $m = \Omega_0\rho$, RC 047's $m_n = \Omega_0\rho_n$).</li>
+<li>The energy and the field: $W = \Omega_0\Sigma^{2}/8\pi$ (Esp 030, (135)), so $\rho = \Sigma^{2}/(8\pi c^{2})$.</li>
+<li>The probability density: $\psi^{2} = \Sigma^{2}/(8\pi W)$ (2-87).</li>
+</ul>
+<p><strong>Combining: $R - 4\Lambda = \xi^{2}\rho^{2} = \xi^{2}\Sigma^{4}/(64\pi^{2}c^{4}) \propto \Sigma^{4} \propto (\psi^{2})^{2}$.</strong></p>
+<p><strong>So the curvature goes as the <em>square</em> of the probability density, not as the probability density.</strong> The correction is internal — no modern physics enters — and it is worth stating because the phrase circulates as a summary of the corpus's position: <strong>what the corpus's own chain gives is $R - 4\Lambda \propto \rho^{2}$ with $\rho \propto \psi^{2}$, i.e. $R - 4\Lambda \propto \psi^{4}$.</strong> Anyone citing "curvature = Born probability" is citing a summary, not a derivation, and the summary is two powers wrong.</p>
+<p><strong>Why the summary was made is understandable</strong>, and the article says so: $\rho$ <em>is</em> the corpus's carrier of "how much of the oscillator is here", and $\psi^{2}$ is the probability of presence, so the two are verbally interchangeable in a sentence. <strong>They are not interchangeable in $R = \xi^{2}\rho^{2} + 4\Lambda$, and that is the whole of the correction.</strong></p>
+<h2 id="4-verdict">4. Verdict</h2>
+<p><strong>Inventory item 4 splits three ways, and the split is confirmed with one correction.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>part</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cartan's conditions (2-2), (2-3) and the uniqueness leading to (2-4)</td>
+<td><strong>[EST]/[MATH]</strong>, confirmed; Charon names the right result, and the 4-D case is not affected by Lovelock's higher-dimensional terms</td>
+</tr>
+<tr>
+<td>the identification $S_{\alpha\beta} = T_{\alpha\beta}$ (2-46)</td>
+<td><strong>[SPEC]</strong>: Einstein's principle, and the corpus says so</td>
+</tr>
+<tr>
+<td>the Born rule itself</td>
+<td><strong>[EST]</strong> and assumed, as the corpus states</td>
+</tr>
+<tr>
+<td>the derivation of the normalisation (2-87)</td>
+<td><strong>[MATH]</strong>: exact, dimensionally sound, and a one-line consequence of (2-85)</td>
+</tr>
+<tr>
+<td>"probability = field-energy share, per elementary cell $\Omega_0$"</td>
+<td><strong>[SPEC]</strong>, and the article's finding: <strong>(2-85) is the load-bearing assumption, and it fixes the cell at $l_0 = 1{,}8\times10^{-14}$ cm</strong></td>
+</tr>
+<tr>
+<td>"curvature = Born probability"</td>
+<td><strong>[SPEC]</strong>, and as stated <strong>wrong by two powers</strong>: $R - 4\Lambda \propto \psi^{4}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Rule R6, asked separately.</strong> <em>Coherence</em>: passes — the three equations (2-85), (135) and (4-18) are mutually consistent and the normalisation is exact. <em>Reproducibility</em>: passes — (2-87) and the cell identity are recoverable in one line each, and the flat density $1/\Omega_0$ is checked. <em>Correspondence</em>: fails, and necessarily: a wave equation cannot supply the identification of $|\psi|^{2}$ with observed frequencies, which is why the corpus says it takes the rule as experimentally verified. <strong>The honest summary is the one the existing biquaternion article uses for its own framework: the model relocates the Born rule rather than eliminating it — and what Charon relocates it <em>into</em> is the field-energy share of one elementary cell.</strong></p>
+<h2 id="5-what-this-article-adds-the-bridge-line">5. What this article adds (the [BRIDGE] line)</h2>
+<p><strong>One line, as the register requires: this article adds that Charon's Born rule is not the postulate but the identification of $|\psi|^{2}$ with the fraction of the oscillator's field energy stored in the elementary cell $\Omega_0$, that the corpus's own (135) and (2-85) force that cell to be $\Omega_0 = \frac{4}{3}\pi l_0^{3}$ with $l_0 = 1{,}8\times10^{-14}$ cm, and that the register's shorthand "curvature = Born probability" is two powers wrong ($R - 4\Lambda \propto \psi^{4}$).</strong></p>
+<p><strong>Against <code>the-born-rule-as-a-trace-formula-derivation-and-comparison</code> (the duplicate the register names): no overlap in the mathematics.</strong> That article works in the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, reads the Born rule off the trace pairing, and shows what the algebra supplies (the pairing, the rank-one idempotents, the $\cos^{2}(\theta/2)$ transition probability) and what it does not (the identification with frequencies). <strong>It contains no field energy, no elementary cell, no curvature law, and no Charon.</strong> This article contains no matrices, no trace and no biquaternions. <strong>What is shared is the conclusion about the rule's status — relocated, not derived — and the two routes to that conclusion are independent, which is itself a fact about the programme worth one sentence: both the algebra and the corpus arrive at an argument that must locate the Born rule outside themselves.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register asks for item 4 in three parts: Cartan, the curvature claim, and what is actually derived. <strong>All three are answered, and the second needs a correction.</strong></p>
+<p><strong>Cartan is [EST]/[MATH], and the corpus states it correctly.</strong> RC 021–022 gives the three conditions — a 4-D Riemannian metric, a rank-2 tensor built from the metric and its derivatives to second order, and $\nabla_\alpha T^{\alpha}_{\ \beta}\equiv0$ — whose unique 4-D consequence is the Einstein tensor plus the metric, i.e. (2-4). <strong>The attribution is right: this is Cartan's (1922) result, of which Lovelock's theorem (1971) is the general form, and the 4-D case is unaffected by the higher-dimensional Lovelock terms.</strong> The corpus itself marks the further step (2-46), the identification of the geometric tensor with momentum-energy, as Einstein's principle — so <strong>[EST]/[MATH] covers (2-2)–(2-4) and stops there.</strong></p>
+<p><strong>The Born rule is assumed, and the norm is derived.</strong> The corpus's words: <em>"L'idée fondamentale de la Mécanique ondulatoire a été de dire (et vérifiée dans l'expérience) que le carré $\psi^{2}$ […] est proportionnel à la probabilité de présence"</em>. What follows — (2-87), $\psi^{2} = \Sigma^{2}/(8\pi W)$ — is exact, dimensionally sound, and a one-line consequence of (2-85).</p>
+<p><strong>And the identification behind it fixes a volume.</strong> Esp 030's (135), $W = \Omega_0\Sigma^{2}/8\pi$, and RC 035's (2-85), $\int_\omega\Sigma^{2}/8\pi\,d\omega = W$, <strong>agree exactly when $\omega = \Omega_0$ and $\Sigma^{2}$ is uniform over it.</strong> So the normalised $\psi^{2} = \Sigma^{2}/(\Omega_0\bar{\Sigma}^{2})$ is the field intensity divided by its cell average — <strong>the probability of finding the particle in a region is the fraction of the oscillator's field energy stored there</strong> — and the fundamental monochromatic density is flat, $\psi^{2} = 1/\Omega_0 = 4{,}10\times10^{40}$ cm⁻³, over a cell of size $l_0 = 1{,}8\times10^{-14}$ cm, the nucleon's radius.</p>
+<p><strong>"Curvature = Born probability" is wrong by two powers, and the correction is internal.</strong> With $R = \xi^{2}\rho^{2}+4\Lambda$ (4-18), $\rho = W/(\Omega_0c^{2})$ and $W\propto\Sigma^{2}$: $R - 4\Lambda \propto \rho^{2} \propto \Sigma^{4} \propto (\psi^{2})^{2}$. <strong>The curvature is the square of the probability density, not the probability density.</strong> Anyone citing the shorthand is citing a summary; the corpus's equations give $R - 4\Lambda \propto \psi^{4}$.</p>
+<p><strong>Verdict: Cartan [EST]/[MATH] confirmed; (2-46) [SPEC]; the Born rule [EST] and assumed; the normalisation [MATH]; the energy-share identification [SPEC] with the cell $\Omega_0$; "curvature = Born probability" [SPEC] and two powers wrong. Per rule R6: coherence and reproducibility pass, correspondence fails necessarily — the rule is relocated, not derived, and this article's addition is to say what Charon relocates it into.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{\alpha\beta}$, $T_{\alpha\beta}$, $S_{\alpha\beta}$</td>
+<td>the metric; the corpus's tensors — geometric and momentum-energy</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the corpus's ten-component field $(\mathbf{E},\mathbf{H},\mathbf{A},V)$ of the oscillator at $P$; $\Sigma^{2} = \Sigma\Sigma^{*}$</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>the energy of the oscillator at $P$, $W = (M_0^{2}c^{4}+p^{2}c^{2})^{1/2}$</td>
+</tr>
+<tr>
+<td>$\psi^{2}$</td>
+<td>the probability density of the psi wave; (2-87) relates it to $\Sigma^{2}$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the confinement volume of $P$; (2-85) integrates the field energy over it</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>the elementary volume, $\frac{4}{3}\pi l_0^{3} = 2{,}44\times10^{-41}$ cm³, with $l_0 = 1{,}8\times10^{-14}$ cm</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the proper density; $R = \xi^{2}\rho^{2}+4\Lambda$ is the corpus's curvature law (4-18)</td>
+</tr>
+<tr>
+<td>§11 item 4</td>
+<td>the inventory's item: Cartan conditions; "curvature = Born probability"</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S10</strong> — the curvature law $R = \xi^{2}\rho^{2}+4\Lambda$, which §3's correction uses.</li>
+<li><strong>S8</strong> — the geometric source and (2-46)'s status.</li>
+<li><strong>S12</strong> — the oscillator and the fusion machinery (135) belongs to.</li>
+<li><strong>S19</strong> — the trapped radiation: the same energy-accounting move, applied to the electron's charge.</li>
+<li><strong>S22</strong> — the elementary length $l_0 = 1{,}8\times10^{-14}$ cm and the nucleon radius.</li>
+<li><strong>S56</strong> — the memory chapter, which runs on the identification established here.</li>
+<li><code>the-born-rule-as-a-trace-formula-derivation-and-comparison</code> (existing corpus) — the independent biquaternion route to "relocated, not derived"; no mathematical overlap, same conclusion.</li>
+<li>Corpus: RC 021 §II.1; RC 022; RC 028 §II.6; Esp 030 §4.6 (133)–(136); RC 035 §II.3 (2-83)–(2-87); Esp 098.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

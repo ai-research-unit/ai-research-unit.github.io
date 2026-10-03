@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Level-Transition Energy (S49) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-level-transition-energy-s49">Charon — The Level-Transition Energy (S49)</h1>
+<p><em>Audits inventory §6.4 (quark level transitions and their boson), §6.5 (the chromodynamics analogy), §6.6 (the intermediate vector boson as a $(\nu_e,\nu_\mu)$ pair) and §6.7 (electromagnetic and weak as one family). Sources: RC 064 §III–IV; RC 065 (4-21)–(4-27-a); RC 066 §4 (the table and eq. (4-28)); RC 057 §VIII; RC 063 §III (the level table).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The inventory calls the level-energy calculation <em>"arguably the most respectable calculation in ch. IV"</em>, and after doing it the phrase has to be split in three: the algebra is exact, one ratio is exact, and none of the five printed energies can be recomputed.</strong> The article does the three parts separately, and the third is why the article exists.</p>
+<p><strong>The exact part.</strong> (4-22) is $q_rV_1\cdot2\pi r = h/2$, so $q_rV_1 = \hbar/2r$; (4-23) is the centrifugal force $F_r = q_rV_1^{2}/r$; with $V_1 = c$ the two give $F_r = \hbar c/2r^{2}$ — <strong>(4-24), verified exactly.</strong> The electrostatic companion is exact too: $F_e = -Q^{2}/4r^{2}$ with $Q = \pm\frac{2}{3}e$ gives $-(4/9)e^{2}/4r^{2} = -e^{2}/9r^{2}$, which is the corpus's (4-25-b) <strong>to the last digit</strong>. And the corpus's own summary ratio is exact: $2e^{2}/(9\hbar c)$ with $e^{2}/\hbar c = 1/137{,}036$ is $1{,}6216\times10^{-3}$ against the printed $1{,}62\times10^{-3}$, <strong>a 0,1 % agreement</strong> (this is the same number S48 uses).</p>
+<p><strong>The defect.</strong> (4-22-a) is printed as <em>"$V_1 \neq c$"</em> — an <em>inequality</em> — in a sentence that says <em>"nous pouvons faire l'approximation"</em>, and (4-23) prints $F_r = q_rV_1^{2}/r \neq q_r c^{2}/r$ on its way to the <em>equality</em> (4-24). <strong>The two sentences and the symbol cannot all be true, and the derivation needs the equality: as printed, (4-22-a) forbids the step that produces (4-24).</strong> The only reading under which ch. IV's central equation follows is that both $\neq$ signs are misprints for $\simeq$. <strong>This must be recorded, because a reader who takes the symbol literally finds the calculation broken at its first step and the register's <em>"with $V_1 \to c$"</em> is a silent repair of it.</strong></p>
+<p><strong>The unrecomputable part, and the reason.</strong> The five transition energies are $E_n = 2E_r$ (4-28) with $E_r$ from (4-27), and (4-27) is <em>not</em> the force law alone: it divides $\pm(\hbar c/2r^{2} + e^{2}/9r^{2})$ by $\frac{1}{2}\lambda'V_r^{2}/c^{2} + \frac{1}{2}\nu'e^{\nu-\lambda}$, <strong>the metric terms of the holon solution (4-11), which the corpus does not exhibit in the chapters available.</strong> So the article stops where rule R3 says to stop — <strong>but the scaling test is still decisive.</strong> $\hbar c/(2r_1^{2})$ at the outermost level ($r_1 = 1{,}79\times10^{-14}$ cm) is $3{,}1\times10^{13}$ GeV, so the denominator must supply a factor $\sim7{,}4\times10^{12}$ cm⁻¹, i.e. a length of $1{,}3\times10^{-13}$ cm; <strong>and the five printed ratios do not follow any single power of $r_n$: the effective index from $n = 1$ to $n = 5$ is $1{,}42$, where the force law alone would give $2$ and the length scale $1$.</strong> The only clean relation the table admits is $E_2/E_1 = 16{,}64$ against $\rho_2/\rho_1 = 16{,}86$ — <strong>a 1,3 % agreement that rows 3 to 5 destroy.</strong></p>
+<p><strong>And the comparison to nature cannot be avoided, because the corpus's own sentence about it is cut off.</strong> RC 066 ends the paragraph with <em>"…des énergies de l'ordre de 4 GeV : rappelons que"</em> and the text moves to chapter IV. <strong>The clause that would have told the reader what to recall is missing in the printed source and in the transcription both.</strong> So the article makes the comparison: <strong>the lightest colour boson at 4,14 GeV sits 34 % above the $J/\psi$ (3,097 GeV); the $n = 2$ entry at 68,9 GeV is 14 % below the $W$ (80,38) and 24 % below the $Z$ (91,19); and 253,2 GeV, 734,8 GeV and 3022,2 GeV have no counterparts.</strong> And the corpus contradicts its own scale: <strong>RC 057 §VIII puts colour interactions at <em>"de l'ordre de 50 GeV et plus"</em>, while the table's lightest entry is 4,14 GeV.</strong> The article records the discrepancy and does not resolve it.</p>
+<p><strong>The verdict.</strong> §6.4 is <strong>[MIX]</strong>, and the split is now precise: <strong>the algebra [EST]/[MATH] (reproduced exactly), one ratio [EST] (1,6216×10⁻³), the level energies [SPEC] (not recomputable and not internally scaling), the boson's identity [OUT] (a charged quark pair is a meson, not a gluon).</strong> §6.5 is <strong>[MIX]</strong> as S48 found. §6.6 is <strong>[OUT]</strong> and §6.7 is <strong>[MIX]</strong>, both as the inventory has them. <strong>Rule R6 on the calculation: coherence passes; reproducibility passes for the algebra and the ratio and fails for the five energies; correspondence fails — the energies are not the observed bosons' masses and the corpus's own two scales disagree.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>The algebra, RC 065 (4-21)–(4-27-a):</strong></p>
+<blockquote>
+<p>Soit $q_r$ la masse relativiste du quark […] nous avons […] $$q_r V_1 \times 2\pi r = \frac{h}{2} \tag{4-22}$$ où $V_1$ désigne la vitesse tangentielle du quark […] Cela veut dire que nous pouvons faire l'approximation : $$V_1 \neq c. \tag{4-22-a}$$ b) La force centrifuge appliquée au quark est (avec 4-22-a) : $$F_r = \frac{q_r V_1^{2}}{r} \neq \frac{q_r c^{2}}{r} \tag{4-23}$$ La comparaison de (4-22) et (4-23) donne : $$F_r = \frac{\hbar c}{2r^{2}} \tag{4-24}$$ […] $$F_e = -\frac{Q^{2}}{4r^{2}} = -\frac{4}{9}\frac{e^{2}}{4r^{2}} = -\frac{e^{2}}{9r^{2}} \tag{4-25-b}$$ […] $$E_r = \pm\left(\frac{\hbar c}{2r^{2}} + \frac{e^{2}}{9r^{2}}\right)\frac{1}{\frac{1}{2}\lambda'V_r^{2}/c^{2} + \frac{1}{2}\nu'e^{\nu-\lambda}} \tag{4-27}$$ […] On note que l'interaction électrostatique n'entre dans l'énergie totale $E_r$ que dans un rapport : $$\frac{2e^{2}}{9\hbar c} = 1{,}62\cdot10^{-3} \tag{4-27-a}$$</p>
+</blockquote>
+<p><strong>The transition energies, RC 066 §4:</strong></p>
+<blockquote>
+<p>Étant donné que chaque niveau doit conserver une charge électrique totale entière, le quark et l'antiquark composant le quarkonium du niveau doivent simultanément effectuer la transition de niveau à niveau. Il en résulte que l'énergie totale $E_n$ associée à une transition quantique (ou transition de couleur) au niveau $n$ est $2E_r$ […] $$E_n = 2E_r \tag{4-28}$$</p>
+</blockquote>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$E_n$ (GeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4,14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>68,9</td>
+</tr>
+<tr>
+<td>3</td>
+<td>253,2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>734,8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3 022,2</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>Ces énergies sont également celles des bosons vecteurs intermédiaires qui sont émis par la structure hadronique quand les quarks reviennent depuis leur niveau supérieur ($n=1$ à $5$) jusqu'au niveau fondamental $n=0$ […] Nous voyons que ces transitions de couleur présentent […] des analogies avec les transitions des électrons dans la structure atomique, les bosons vecteurs jouant dans les transitions de couleur le rôle des photons dans les transitions atomiques.</p>
+</blockquote>
+<p><strong>The truncation, RC 066:</strong></p>
+<blockquote>
+<p>Nous notons sur les résultats de calcul fournis ci-dessus que les transitions entre les niveaux 1 et 0 indiquent la formation de bosons vecteurs avec des énergies de l'ordre de 4 GeV : rappelons que</p>
+</blockquote>
+<p><strong>The flavour-change part, RC 064 §III:</strong></p>
+<blockquote>
+<p>Le quark (ou l'antiquark) ne peut changer de niveau (de géodésique) qu'en devenant un autre quark, c'est-à-dire en subissant une interaction faible modifiant sa masse propre $m_n$ […] On note immédiatement que : — une interaction de couleur comporte une part d'interaction faible, mais ne se limite pas à une interaction faible.</p>
+</blockquote>
+<p><strong>The two boson identities, RC 057 §VIII:</strong></p>
+<blockquote>
+<p>On voit que la conversion fait appel à la formation intermédiaire d'un boson vecteur $(\nu_e, \nu_\mu)$, de spin total 1, qui se désintègre immédiatement en ses constituants, les deux neutrinos $\nu_e$ et $\nu_\mu$.</p>
+<p>[…] l'interaction de couleur est également portée par un boson vecteur (spin entier), mais celui-ci est constitué par une paire de quarks (et non une paire de neutrinos), c'est-à-dire que sa désintégration va comporter des constituants <em>électriquement chargés</em>; et, d'autre part, les interactions de couleur font souvent intervenir des énergies <em>beaucoup plus élevées</em> (de l'ordre de 50 GeV et plus).</p>
+</blockquote>
+<p><strong>The level radii, RC 063 §III:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>name</th>
+<th>$\rho_n$ (g/cm³)</th>
+<th>$r_n$ (cm)</th>
+<th>$m_n$ (g)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>up</td>
+<td>$3{,}73\cdot10^{13}$</td>
+<td>$1{,}8\cdot10^{-14}$</td>
+<td>$9{,}11\cdot10^{-28}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>down</td>
+<td>$7{,}71\cdot10^{15}$</td>
+<td>$1{,}79\cdot10^{-14}$</td>
+<td>$1{,}89\cdot10^{-25}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>charm</td>
+<td>$1{,}30\cdot10^{17}$</td>
+<td>$4{,}2\cdot10^{-15}$</td>
+<td>$3{,}18\cdot10^{-24}$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>strange</td>
+<td>$2{,}33\cdot10^{17}$</td>
+<td>$1{,}7\cdot10^{-15}$</td>
+<td>$6{,}18\cdot10^{-24}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>beauty</td>
+<td>$3{,}76\cdot10^{17}$</td>
+<td>$4{,}2\cdot10^{-16}$</td>
+<td>$9{,}18\cdot10^{-23}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>top</td>
+<td>$4{,}99\cdot10^{17}$</td>
+<td>$1{,}7\cdot10^{-16}$</td>
+<td>$1{,}52\cdot10^{-23}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-algebra-reproduced">1. The algebra, reproduced</h2>
+<p><strong>Step 1 — the action condition (4-22).</strong> A quark of relativistic mass $q_r$ on a circular orbit of radius $r$ at tangential speed $V_1$ carries angular momentum $q_rV_1r$, and the corpus quantises the <em>action over one turn</em> at $h/2$: $q_rV_1\cdot2\pi r = h/2$. <strong>Hence $q_rV_1 = h/4\pi r = \hbar/2r$ exactly.</strong></p>
+<p><strong>Step 2 — the centrifugal force (4-23).</strong> $F_r = q_rV_1^{2}/r$. <strong>Substituting step 1: $F_r = (\hbar/2r)\cdot V_1/r = \hbar V_1/(2r^{2})$, so the corpus's (4-24), $F_r = \hbar c/2r^{2}$, holds exactly at $V_1 = c$ and only there.</strong> Verified.</p>
+<p><strong>Step 3 — the electrostatic term (4-25-b).</strong> Two charges $\pm Q$ separated by $2r$, so $F_e = -Q^{2}/(2r)^{2} = -Q^{2}/4r^{2}$; with $Q = \frac{2}{3}e$, $Q^{2} = \frac{4}{9}e^{2}$, giving $-e^{2}/9r^{2}$. <strong>Verified exactly.</strong></p>
+<p><strong>Step 4 — the total energy (4-27).</strong> $E_r = \pm(\hbar c/2r^{2} + e^{2}/9r^{2})\times\frac{1}{2}\big/\big(\frac{1}{2}\lambda'V_r^{2}/c^{2} + \frac{1}{2}\nu'e^{\nu-\lambda}\big)$ as printed, i.e. a force divided by a quantity of dimension 1/length. <strong>Dimensional check: $[\hbar c/2r^{2}] = $ g·cm·s⁻² and $[\lambda'] = $ cm⁻¹, so the quotient is an energy — the expression is dimensionally sound</strong>, contrary to what a first reading of a "force" inside an energy suggests. The corpus's remark that $E_r$ is <em>"indépendante de la masse relativiste $q_r$"</em> is then correct by construction: the mass cancelled between (4-22) and (4-23), as it must for a geodesic motion.</p>
+<p><strong>Step 5 — the ratio (4-27-a).</strong> $2e^{2}/(9\hbar c)$: verified $1{,}6216\times10^{-3}$ against the printed $1{,}62\times10^{-3}$, <strong>0,1 %</strong>.</p>
+<p><strong>So five of the section's statements reproduce exactly, and one of them — the mass-independence of $E_r$ — is a structural result rather than an arithmetic one and is worth keeping on its own.</strong> A level energy that does not depend on the quark's mass, in a model whose levels <em>are</em> masses (P4), is the corpus at its most coherent: the level structure and the constituent masses are made independent.</p>
+<h2 id="2-the-printed-defect-in-4-22-a">2. The printed defect in (4-22-a)</h2>
+<p><strong>The corpus writes, in one breath:</strong> <em>"L'analyse numérique du mouvement des quarks montre que $q_rc^{2}$ est </em><em>beaucoup plus grand</em><em> que l'énergie $q_0c^{2}$ correspondant à la masse propre $q_0$ du quark […] Cela veut dire que nous pouvons faire l'approximation : $V_1 \neq c$."</em></p>
+<p><strong>Three things cannot coexist:</strong> the noun <em>approximation</em>, the symbol $\neq$, and the use that is made of it two lines later, where $F_r = \hbar c/2r^{2}$ requires $V_1 = c$ — indeed the <em>reason</em> the approximation is introduced is that $q_rc^{2} \gg q_0c^{2}$, i.e. that the quark is ultra-relativistic, i.e. that $V_1$ approaches $c$. <strong>The sentence's own argument says $V_1 \to c$; its symbol says the opposite.</strong> The same misprint recurs in (4-23), $F_r = q_rV_1^{2}/r \neq q_rc^{2}/r$, where the following equality needs the $V_1 \to c$ replacement to be <em>available</em>, not excluded.</p>
+<p><strong>This is a carried defect, not a transcription slip of this project: the pattern is present in the printed source's text as transcribed (RC 065, both the <code>.tex</code> and the <code>_improved.md</code>).</strong> The article records it as <strong>(4-22-a) is to be read with $\simeq$ for $\neq$</strong>, and notes that the register's own phrasing <em>"with $V_1 \to c$"</em> silently makes that repair — which is the right repair, and should be stated rather than assumed.</p>
+<h2 id="3-the-five-energies-and-why-they-cannot-be-recomputed">3. The five energies, and why they cannot be recomputed</h2>
+<p><strong>(4-27) needs the holon solution (4-11).</strong> The energy of a quark <em>on its level</em> is fixed by the geodesic equation (4-25) of the holon metric, and the denominator of (4-27) is exactly where that metric enters: $\lambda'$ and $\nu'$ are the derivatives of the Schwarzschild-like coefficients of the holon's interior solution. <strong>The corpus's chapters available to this project compute the level radii $r_n$ (RC 063) and the transition energies (RC 066) <em>from</em> (4-11) without exhibiting the solution in the transcribed text.</strong> So rule R3 applies: the article does not fabricate the missing metric, and the recomputation stops at what (4-24) and the radii allow.</p>
+<p><strong>What the radii do allow is a scaling test, and it fails cleanly.</strong> The force law's own scaling is $E_r \propto 1/r^{2}$ <em>if</em> the denominator is a mild function of $r$; the corpus's printed ratios are not:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$E_n/E_1$ (printed)</th>
+<th>$1/r_n$</th>
+<th>$1/r_n^{2}$</th>
+<th>$1/r_n^{3}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>16,64</td>
+<td>4,26</td>
+<td>18,16</td>
+<td>77,4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>61,16</td>
+<td>10,53</td>
+<td>110,87</td>
+<td>1 167,4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>177,49</td>
+<td>42,62</td>
+<td>1 816,38</td>
+<td>77 412,5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>730,00</td>
+<td>105,29</td>
+<td>11 086,85</td>
+<td>1 167 380,2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The effective index from $n = 1$ to $n = 5$ is $1{,}42$ — between the length scale ($1$) and the force law ($2$), and not a power the corpus names.</strong> The denominator would have to grow as $r^{-0{,}58}$... — that is, the metric terms carry the entire difference, and without (4-11) there is nothing to check them against. <strong>The one clean agreement in the table is at the first row: $E_2/E_1 = 16{,}64$ against $\rho_2/\rho_1 = 16{,}86$, 1,3 %.</strong> Rows 3 to 5 destroy it (the corresponding density ratios are 30,2, 48,8, 64,7). <strong>So the corpus's five energies are consistent with its own radii exactly once, at the second level, and are otherwise an unexplained sequence.</strong></p>
+<p><strong>And the input table does not close on itself, which matters because (4-27) needs both its columns.</strong> The table's second relation is $m_n = \Omega_0\rho_n$ with $\Omega_0 = \frac{4}{3}\pi l_0^{3} = 2{,}44\times10^{-41}$ cm³ (RC 051) — $l_0 = 1{,}8\times10^{-14}$ cm gives $2{,}4429\times10^{-41}$ cm³, so $\Omega_0$ is fixed and no freedom is available. <strong>Recomputed:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\rho_n$</th>
+<th>$\Omega_0\rho_n$ (g)</th>
+<th>printed $m_n$ (g)</th>
+<th>printed/computed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$3{,}73\cdot10^{13}$</td>
+<td>$9{,}101\cdot10^{-28}$</td>
+<td>$9{,}11\cdot10^{-28}$</td>
+<td>1,001</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$7{,}71\cdot10^{15}$</td>
+<td>$1{,}881\cdot10^{-25}$</td>
+<td>$1{,}89\cdot10^{-25}$</td>
+<td>1,005</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$1{,}30\cdot10^{17}$</td>
+<td>$3{,}172\cdot10^{-24}$</td>
+<td>$3{,}18\cdot10^{-24}$</td>
+<td>1,003</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$2{,}33\cdot10^{17}$</td>
+<td>$5{,}685\cdot10^{-24}$</td>
+<td>$6{,}18\cdot10^{-24}$</td>
+<td><strong>1,087</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$3{,}76\cdot10^{17}$</td>
+<td>$9{,}174\cdot10^{-24}$</td>
+<td>$9{,}18\cdot10^{-23}$</td>
+<td><strong>10,006</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$4{,}99\cdot10^{17}$</td>
+<td>$1{,}218\cdot10^{-23}$</td>
+<td>$1{,}52\cdot10^{-23}$</td>
+<td><strong>1,248</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three rows fail and one of them is an exponent slip.</strong> Row 4's printed $9{,}18\cdot10^{-23}$ is ten times its computed $9{,}174\cdot10^{-24}$ — an exponent error, and the value $9{,}18\cdot10^{-24}$ is the one the corpus's own arithmetic ladder for the lepton masses gives ($\mu + (n-1)\cdot2h/c^{2}T_0 = 9{,}162\cdot10^{-24}$ g with $T_0 = 4{,}9295\cdot10^{-24}$ s, the same ladder S35 and S41 audit). <strong>Row 3's $\rho_3$ is 8,7 % low</strong> (2,33 instead of the 2,53 that $m_3 = 6{,}18\cdot10^{-24}$ requires), and <strong>row 5's $m_5$ is 25 % high</strong> (1,52 against both $\Omega_0\rho_5 = 1{,}218\cdot10^{-23}$ and the ladder's $1{,}215\cdot10^{-23}$, which agree with each other to 0,25 %). <strong>So the two columns are consistent with the mass ladder and with each other in rows 0–2; row 3 has a density error, row 4 an exponent slip, row 5 a mass error — and the radii, which (4-27) uses directly, are the one column the article cannot check against anything in the corpus.</strong> Note also that $r_0 = 1{,}8\cdot10^{-14}$ and $r_1 = 1{,}79\cdot10^{-14}$ are the same radius to the printed precision while their densities differ by a factor 207, which a single-valued profile $\rho(r)$ cannot produce.</p>
+<p><strong>One scale remark completes the test, and it is a large one.</strong> $\hbar c/(2r_1^{2})$ at the outermost level is $4{,}93\times10^{10}$ erg $= 3{,}08\times10^{13}$ GeV, against the printed $E_1 = 4{,}14$ GeV. <strong>The denominator of (4-27) must therefore carry a factor of $\sim7{,}4\times10^{12}$ cm⁻¹ — a fiducial length of $1{,}3\times10^{-13}$ cm, seven times the level radius.</strong> That is not impossible for a metric coefficient, but it is a <em>large</em> factor sitting inside a calculation the inventory calls respectable, and it should be stated whenever the calculation is cited.</p>
+<h2 id="4-the-comparison-with-nature-which-the-corpuss-own-sentence-would-have-made">4. The comparison with nature, which the corpus's own sentence would have made</h2>
+<p><strong>The corpus's paragraph ends mid-sentence:</strong> <em>"…des énergies de l'ordre de 4 GeV : rappelons que"</em>, and the next line is chapter IV. <strong>Both the printed text as transcribed and the improved transcription stop there; the clause is missing and this article does not invent it.</strong> What it can do is the comparison the clause was introducing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>transition</th>
+<th>$E_n$ (GeV)</th>
+<th>nearest observed object</th>
+<th>agreement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1 \to 0$</td>
+<td>4,14</td>
+<td>$J/\psi$ 3,097; $\Upsilon$ 9,460</td>
+<td>34 % above $J/\psi$; between the two quarkonia</td>
+</tr>
+<tr>
+<td>$2 \to 0$</td>
+<td>68,9</td>
+<td>$W$ 80,38; $Z$ 91,19</td>
+<td>14 % below $W$; 24 % below $Z$</td>
+</tr>
+<tr>
+<td>$3 \to 0$</td>
+<td>253,2</td>
+<td>—</td>
+<td>no counterpart</td>
+</tr>
+<tr>
+<td>$4 \to 0$</td>
+<td>734,8</td>
+<td>—</td>
+<td>no counterpart</td>
+</tr>
+<tr>
+<td>$5 \to 0$</td>
+<td>3 022,2</td>
+<td>—</td>
+<td>no counterpart</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's claim is that these are the intermediate vector bosons' masses.</strong> The $n = 2$ entry lands 14 % below the $W$ — <strong>a near-miss of the kind that is worth recording and not worth calling a prediction</strong>, since the $W$ and $Z$ were discovered at CERN in 1983, the same year as <em>L'Esprit</em>, and were certainly not available to the model as targets. The $n = 1$ entry at 4,14 GeV has no boson; the observed objects in that region are quarkonia, whose masses are <em>not</em> of this form. <strong>And the corpus contradicts its own scale: RC 057 §VIII puts colour interactions at <em>"de l'ordre de 50 GeV et plus"</em> — a statement from the same book — while the table's lowest entry is 4,14 GeV.</strong> The article records the discrepancy; the corpus does not resolve it and nothing in the chapters available explains which scale is meant to apply to which transition.</p>
+<h2 id="5-the-boson-identities-64-66-67">5. The boson identities: §6.4, §6.6, §6.7</h2>
+<p><strong>The corpus gets one structural distinction right and both carrier identities wrong.</strong></p>
+<p><strong>Right — flavour change is weak, and the corpus says so.</strong> RC 064 §III: <em>"Le quark […] ne peut changer de niveau […] qu'en devenant un autre quark, c'est-à-dire en subissant une interaction faible modifiant sa masse propre $m_n$"</em>, followed by <em>"une interaction de couleur comporte une part d'interaction faible, mais ne se limite pas à une interaction faible"</em>. <strong>This is exactly the observed distinction between flavour-conserving gluon emission and flavour-changing $W$ emission</strong>, and the corpus states it eight years before the top quark and in the same terms the modern account uses. It is the strongest single item in §6.4 and it is [EST] content in a [MIX] section.</p>
+<p><strong>Wrong — the weak boson is a $(\nu_e,\nu_\mu)$ pair.</strong> RC 057 §VIII describes a spin-1 $(\nu_e,\nu_\mu)$ boson that <em>"se désintègre immédiatement en ses constituants, les deux neutrinos"</em>. <strong>The naming is right — "boson vecteur intermédiaire" is the historical name of the $W$ and $Z$ — and the object is not: $W^{\pm}$ (80,38 GeV) and $Z$ (91,19 GeV) are massive gauge bosons, not neutrino pairs, and were discovered in 1983.</strong> §6.6 is <strong>[OUT]</strong> as the inventory has it, and the corpus's spin-1 composite of two neutrinos is not an established object in any form.</p>
+<p><strong>Wrong — the colour boson is a charged quark pair.</strong> RC 057 §VIII again: the colour boson's decay products are <em>"électriquement chargés"</em>. <strong>A neutral massless octet of gluons is the observed carrier, and an integrally charged quark pair is a meson — so the corpus has attached "colour" to an object that already has a name.</strong> S48 records the same finding from the confinement side.</p>
+<p><strong>And §6.7's conclusion is right by a route that does not reach it.</strong> <em>"Les interactions électromagnétiques et faibles sont une seule famille"</em> is Glashow–Salam–Weinberg's unification (1967–68), confirmed by neutral currents in 1973 and Nobel-prizewinning in 1979 — <strong>[EST]</strong>, and the corpus states it as established. Its <em>route</em> — two kinds of virtual-boson exchange in one scheme — reproduces neither the gauge structure nor the Weinberg angle nor the $W$/$Z$ masses, and the corpus's own carriers are the wrong objects (§ above). <strong>So §6.7 is [MIX] with the same shape as §6.2: a correct conclusion attached to a route that arrives at it by coincidence of content.</strong></p>
+<h2 id="6-verdict">6. Verdict</h2>
+<p><strong>§6.4 is [MIX], and the article's three-way split is the finding:</strong> the <strong>algebra</strong> is [EST]/[MATH] — (4-22), (4-24), (4-25-b), the dimensional consistency of (4-27) and the mass-independence of $E_r$ all reproduce exactly; the <strong>ratio</strong> (4-27-a) is [EST] at 0,1 %; the <strong>five energies</strong> are [SPEC] — not recomputable without (4-11), not internally scaling by any single power of $r_n$, agreeing with the density ratio once (1,3 % at $n = 2$) and contradicting the corpus's own 50 GeV scale elsewhere; the <strong>boson identity</strong> is [OUT]. <strong>Add the carried defect of (4-22-a), whose printed $\neq$ contradicts its own sentence and its own next equation.</strong></p>
+<p><strong>§6.5 [MIX], §6.6 [OUT], §6.7 [MIX]</strong> — as the inventory has them, with S48's breaks added for §6.5.</p>
+<p><strong>Rule R6, asked separately.</strong> <em>Coherence</em>: passes; the derivation is internally connected and (4-27) is dimensionally sound. <em>Reproducibility</em>: passes for the algebra and the ratio; fails for the five energies, which is the calculation the section exists for. <em>Correspondence</em>: fails — the energies are not the observed bosons' masses, the $n = 3$ to $5$ entries have no counterparts, and the corpus's two stated colour scales disagree.</p>
+<p><strong>One line for the register: the most respectable calculation in ch. IV is respectable in its algebra and in one ratio of 1,62×10⁻³, and its five outputs are unreproducible, single-power-inconsistent, and 12 to 13 orders of magnitude below the force law that generates them.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register asks for ch. IV's level-transition energy to be redone. <strong>Done, and the calculation separates into an exact algebra, one exact ratio, and five unreproducible energies.</strong></p>
+<p><strong>The algebra reproduces exactly.</strong> (4-22) gives $q_rV_1 = \hbar/2r$; (4-23) with $V_1 = c$ then gives (4-24), $F_r = \hbar c/2r^{2}$; (4-25-b) gives $-e^{2}/9r^{2}$ from $Q = \frac{2}{3}e$ at separation $2r$; (4-27) is dimensionally an energy, as it must be, and its stated mass-independence is correct by construction — <strong>the quark's level energy does not depend on its mass, which is the strongest structural result in the chapter.</strong></p>
+<p><strong>One ratio is exact.</strong> $2e^{2}/(9\hbar c)$: <strong>verified $1{,}6216\times10^{-3}$ against the printed $1{,}62\times10^{-3}$, 0,1 %.</strong></p>
+<p><strong>One printed defect is carried and must be flagged.</strong> (4-22-a) reads <em>"$V_1 \neq c$"</em> in a sentence that says <em>"nous pouvons faire l'approximation"</em>, and (4-23) prints $\neq$ where (4-24) needs the equality. <strong>As printed, the calculation is broken at its first step; the register's <em>"with $V_1 \to c$"</em> is the (correct) silent repair.</strong></p>
+<p><strong>The five energies cannot be recomputed.</strong> (4-27)'s denominator is where the holon solution (4-11) enters, and (4-11) is not exhibited in the transcribed chapters, so rule R3 is invoked. <strong>The scaling test still decides: $\hbar c/(2r_1^{2}) = 3{,}08\times10^{13}$ GeV against a printed $E_1 = 4{,}14$ GeV, so the denominator must carry $\sim7{,}4\times10^{12}$ cm⁻¹; and the printed ratios follow an effective index $1{,}42$ in $r_n$, not the force law's $2$, not the length scale's $1$.</strong> The single clean agreement is $E_2/E_1 = 16{,}64$ against $\rho_2/\rho_1 = 16{,}86$ (1,3 %), destroyed by rows 3–5. <strong>And the input table does not close: with $\Omega_0 = 2{,}4429\times10^{-41}$ cm³ fixed, $m_n = \Omega_0\rho_n$ fails in row 3 by 8,7 % (density low), in row 4 by a factor 10 (exponent slip in the printed mass) and in row 5 by 25 % (mass high).</strong></p>
+<p><strong>The comparison the corpus's own sentence would have made is missing.</strong> RC 066 stops at <em>"…des énergies de l'ordre de 4 GeV : rappelons que"</em> — in the printed text as transcribed and in the transcription both. Made by the article: <strong>4,14 GeV is 34 % above the $J/\psi$ and has no boson; 68,9 GeV is 14 % below the $W$ (and 24 % below the $Z$), a near-miss that cannot be a prediction since $W$ and $Z$ were discovered the same year as the book; 253,2, 734,8 and 3022,2 GeV have no counterparts. And RC 057 §VIII puts colour interactions at 50 GeV and more, while the table's lowest entry is 4,14 GeV — the corpus's two scales disagree and the article says so.</strong></p>
+<p><strong>The identities: one distinction right, both carriers wrong.</strong> RC 064 §III states the flavour-changing/flavour-conserving split correctly — the strongest item in §6.4. The weak boson as a $(\nu_e,\nu_\mu)$ pair is <strong>[OUT]</strong> (W and Z are massive gauge bosons, 1983); the colour boson as a charged quark pair is <strong>[OUT]</strong> (that object is a meson; S48); and §6.7's correct conclusion — electroweak unification — is reached without the gauge structure, the Weinberg angle or the masses.</p>
+<p><strong>Verdict: §6.4 [MIX] — algebra [EST]/[MATH], one ratio [EST], energies [SPEC], identity [OUT]; §6.5 [MIX]; §6.6 [OUT]; §6.7 [MIX]. Per rule R6: coherence passes, reproducibility passes for the algebra and fails for the outputs, correspondence fails.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q_r$, $q_0$</td>
+<td>the quark's relativistic mass on level $r$, and its proper mass</td>
+</tr>
+<tr>
+<td>$V_1$, $V_r$</td>
+<td>tangential speed on the level, and radial speed of the holon's pulsation</td>
+</tr>
+<tr>
+<td>$\lambda$, $\nu$</td>
+<td>the two metric coefficients of the holon's interior solution (4-1), (4-11)</td>
+</tr>
+<tr>
+<td>$E_r$, $E_n$</td>
+<td>the energy of one quark on its level; the transition energy $2E_r$ (4-28)</td>
+</tr>
+<tr>
+<td>$r_n$, $\rho_n$, $m_n$</td>
+<td>level radius, density and the quark's proper mass there (RC 063's table)</td>
+</tr>
+<tr>
+<td>$\Omega_0$</td>
+<td>the elementary volume, $2{,}44\times10^{-41}$ cm³ $=\frac{4}{3}\pi l_0^{3}$</td>
+</tr>
+<tr>
+<td>§6.4–§6.7</td>
+<td>the inventory's items: level transitions; the chromodynamics analogy; the intermediate vector boson; electroweak</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S47</strong> <code>charon-s47-fractional-charge-by-saturation.md</code> — the geometry of $Q$'s charge, this article's $Q$.</li>
+<li><strong>S48</strong> <code>charon-s48-why-2-3-is-not-enough.md</code> — the same 1,62×10⁻³ read as the charge mechanism's irrelevance to the level energy.</li>
+<li><strong>S24</strong>, <strong>S26</strong>, <strong>S28</strong> — the holon solution, the strong range, and the strong saturation; (4-11) belongs to that block.</li>
+<li><strong>S19</strong>/<strong>S20</strong> — the trapped radiation that (4-22)'s action condition is applied to.</li>
+<li><strong>P4</strong>, <strong>P5</strong>, <strong>P6</strong> — the six levels as flavours, the top, quarkonium — all of which the level table's masses are used for.</li>
+<li>Corpus: RC 063 §III (the level table); RC 064 §III–IV; RC 065 (4-21)–(4-27-a); RC 066 §4 (table, (4-28), and the truncated sentence); RC 057 §VIII; Esp 082.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

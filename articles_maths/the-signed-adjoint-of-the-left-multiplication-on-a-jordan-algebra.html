@@ -54,10 +54,10 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>signed left multiplication</strong> of a Jordan algebra with a grade involution is the one-sided operator obtained from the left multiplication by precomposition with the involution; intrinsically it is</p>
 <p>$$
-\ell^{\alpha}_a = L_a\circ\alpha , \qquad \ell^{\alpha}_a(x) = a\circ\alpha(x) ,
+\ell^{\alpha}_a = L_a\circ\alpha , \qquad \ell^{\alpha}_a(x) = a\bullet\alpha(x) ,
 $$</p>
-<p>the Jordan form of the signed one-sided action of <em>The Signed Left Multiplication on a Jordan Algebra</em>, whose associative model is $\ell^{\alpha}_a(x) = a\,\alpha(x)$ on a special algebra $J = A^+$. The present article computes the <strong>adjoint</strong> of this operator with respect to the <strong>natural pairing</strong> of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ of <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>, and relates it to the signed sandwich of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
-<p>The trace form is associative, $T(x\circ y,z) = T(x,y\circ z)$, so the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$; the adjoint of the composite is therefore the composite of the adjoints in the reverse order, and since $\alpha$ is an automorphism with $\alpha L_a\alpha^{-1} = L_{\alpha(a)}$,</p>
+<p>the Jordan form of the signed one-sided action of <em>The Signed Left Multiplication on a Jordan Algebra</em>, whose associative model is $\ell^{\alpha}_a(x) = a\,\alpha(x)$ on a special algebra $J = A^+$. The present article computes the <strong>adjoint</strong> of this operator with respect to the <strong>natural pairing</strong> of the category, the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em>, and relates it to the signed sandwich of <em>The Signed Adjoint Sandwich on a Jordan Algebra</em>.</p>
+<p>The trace form is associative, $T(x\bullet y,z) = T(x,y\bullet z)$, so the left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the grade involution is an isometry, $\alpha^{\dagger} = \alpha$; the adjoint of the composite is therefore the composite of the adjoints in the reverse order, and since $\alpha$ is an automorphism with $\alpha L_a\alpha^{-1} = L_{\alpha(a)}$,</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \bigl(L_a\circ\alpha\bigr)^{\dagger} = \alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)} .
 $$</p>
@@ -65,7 +65,7 @@ $$</p>
 <p>The article assumes <em>The Signed Left Multiplication on a Jordan Algebra</em> for the signed one-sided action, its homogeneity and the fixed elements; <em>The Signed Adjoint Sandwich on a Jordan Algebra</em> for the signed sandwich and its adjoint; <em>The Adjoint of the Left Multiplication on a Jordan Algebra</em> for the trace form, its associativity and the self-adjointness of $L_a$ and $U_a$; <em>The Left and Right Multiplication Operators on a Jordan Algebra</em> for the quadratic representation and the symmetries; and <em>The Operators on an Algebra</em> for the ambient endomorphism algebra. Throughout, $J = A^+$ is a special unital Jordan algebra over a commutative ring $R$ in which $2$ is invertible, $\alpha$ is a grade involution of $A$, $L_a$ is the Jordan left multiplication, $\ell^{\alpha}_a = L_a\circ\alpha$ is the signed left multiplication, $T$ is the trace form and ${}^{\dagger}$ its adjoint; no norm, form, distance or geometric reflection occurs.</p>
 <h2 id="the-signed-left-multiplication-and-its-adjoint">The Signed Left Multiplication and Its Adjoint</h2>
 <h3 id="the-definition-and-the-unsigned-case">The Definition and the Unsigned Case</h3>
-<p><strong>Definition.</strong> The <strong>signed left multiplication</strong> by $a$ is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\circ\alpha(x)$; for $\alpha = \mathrm{id}$ it is the ordinary left multiplication $L_a$.</p>
+<p><strong>Definition.</strong> The <strong>signed left multiplication</strong> by $a$ is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\bullet\alpha(x)$; for $\alpha = \mathrm{id}$ it is the ordinary left multiplication $L_a$.</p>
 <p><strong>Theorem (the unsigned adjoint).</strong> The unsigned left multiplication is self-adjoint, $L_a^{\dagger} = L_a$, and the adjoint of the signed left multiplication is the signed left multiplication at the image of the parameter:</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} .
@@ -95,10 +95,10 @@ $$</p>
 <p><strong>Corollary.</strong> The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of <em>The Signed Adjoint of the Left Multiplication on a Ring</em>.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the identity grade involution).</strong> For $\alpha = \mathrm{id}$ the signed left multiplication is the unsigned one, $\ell^{\alpha}_a = L_a$, which is self-adjoint for every $a$; the unitarity condition is $L_a^2 = \mathrm{id}$, the symmetry condition, and it holds for the symmetries.</p>
-<p><strong>Example (the transpose involution).</strong> Let $J = H_n(F)$ with the transpose grade involution on the ambient matrix algebra; then $\ell^{\alpha}_a(x) = a\circ x^{\mathsf{T}}$, and its adjoint is $\ell^{\alpha}_{a^{\mathsf{T}}}$. The operator is self-adjoint exactly when $a$ is symmetric, and unitary exactly when $a$ is a symmetry of the Jordan algebra.</p>
+<p><strong>Example (the transpose involution).</strong> Let $J = H_n(F)$ with the transpose grade involution on the ambient matrix algebra; then $\ell^{\alpha}_a(x) = a\bullet x^{\mathsf{T}}$, and its adjoint is $\ell^{\alpha}_{a^{\mathsf{T}}}$. The operator is self-adjoint exactly when $a$ is symmetric, and unitary exactly when $a$ is a symmetry of the Jordan algebra.</p>
 <p><strong>Example (the odd element).</strong> For an odd element $a$ the signed left multiplication is $\ell^{\alpha}_a = L_a\circ\alpha$, which is not self-adjoint: $\ell^{\alpha\dagger}_a = \ell^{\alpha}_{\alpha(a)} = \ell^{\alpha}_{-a} = -\ell^{\alpha}_a$, so an odd parameter gives a skew-adjoint signed left multiplication.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>signed left multiplication</strong> on a Jordan algebra is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\circ\alpha(x)$; with respect to the <strong>trace form</strong> its adjoint is the signed left multiplication at the image of the parameter,</p>
+<p>The <strong>signed left multiplication</strong> on a Jordan algebra is $\ell^{\alpha}_a = L_a\circ\alpha$, $\ell^{\alpha}_a(x) = a\bullet\alpha(x)$; with respect to the <strong>trace form</strong> its adjoint is the signed left multiplication at the image of the parameter,</p>
 <p>$$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} ,
 $$</p>
@@ -113,7 +113,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$L_a(x) = a\circ x$</td>
+<td>$L_a(x) = a\bullet x$</td>
 <td>Jordan left multiplication</td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ $$</p>
 <td>Signed left multiplication</td>
 </tr>
 <tr>
-<td>$\ell^{\alpha}_a(x) = a\circ\alpha(x)$</td>
+<td>$\ell^{\alpha}_a(x) = a\bullet\alpha(x)$</td>
 <td>Jordan form; associative form $a\alpha(x)$</td>
 </tr>
 <tr>

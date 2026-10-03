@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Rebuilt Theory (S58) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-rebuilt-theory-s58">Charon — The Rebuilt Theory (S58)</h1>
+<p><em>Consolidation, first article. Depends on S2 and S16; uses S3, S4, S7, S10, S64. Every choice that the corpus made silently is listed here in the open.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This is the corpus rewritten in the framework's language, and its deliverable is not a derivation but a list of admissions.</strong> The corpus presents an axiomatic reconstruction of physics from two sheets — a real one and an imaginary one — with an interacting micro-universe, a cosmology and a theory of mind. Rewriting it in the biquaternion universe's language does three things: it settles what each of the corpus's objects <em>is</em> in a formalism that has the algebra the corpus lacks; it shows how much of the corpus transcribes unchanged; and it forces into the open the choices that carry the theory's content. <strong>The first two are gains. The third is the result.</strong></p>
+<p><strong>The headline: the corpus closes by selection and not by derivation, and its content lives in eight choices, six of which it made silently.</strong> S16 found the six — the source tensor's form, the tangent-space identification, the linearisation of the field equation, the exact spin–pulse split, the definition of $\xi$, and the mass law $M_0 = \Omega_0\rho$ — and S37 added a seventh ($T_0$), while S39's eighth ($d_0$) was withdrawn. <strong>Each is individually defensible, each is declared somewhere in the printed text, none is derived.</strong> A reader who wants to know where the theory's physics is should be sent to that list and nowhere else.</p>
+<p><strong>The second headline: the rewrite is available for two-thirds of the corpus and changes no digit of its arithmetic.</strong> S64's capped sample of 100 of the 522 numbered display equations finds ≈ 37 that change content, ≈ 150 that are expressible and supplied, and ≈ 330 that transcribe coefficient-wise and unchanged. <strong>So "write Charon in biquaternion language" is a real and bounded task, its only decided gain is the per-quantity sector rule, and its one live lead is the source tensor's placement on the framework's spin-two machinery.</strong> The numerical system is untouched.</p>
+<p><strong>And the third: what the rewrite <em>cannot</em> do is the honest part.</strong> The algebra carries spin 0 and $\tfrac12$; a spin-$j$ object needs the $2j$-th tensor power. The corpus's memory mechanism is spin-two (Esp 098). <strong>So the rewrite reaches the corpus's dynamics and not its higher-spin apparatus</strong>, and the framework in turn has no dynamics coupling its two sectors — which is precisely the coupling the corpus's whole theory proposes. <strong>The two programmes are mirror images, and this article is the statement of the mirror.</strong></p>
+<h2 id="1-what-rebuilt-means-and-what-it-does-not">1. What "rebuilt" means, and what it does not</h2>
+<p><strong>Three operations are on the table, and this article keeps them apart.</strong></p>
+<ul>
+<li><strong>Transcription</strong>: writing a corpus equation in the framework's notation with no change of content. Roughly 330 of 522 display equations, plus the definitions and the comparison numbers.</li>
+<li><strong>Expression</strong>: writing a corpus object using framework machinery that exists and is documented — the Einstein tensor, the Bianchi identity, the interior solution, the geodesic equation, and the symmetric traceless part of a rank-two tensor. Roughly 150 equations, of which about 120 are <em>imported</em> (the framework has carried them and transcribed them; nothing new is bought) and about 30 <em>carried</em> by the metric's own device.</li>
+<li><strong>Change of content</strong>: the rewrite alters what the object <em>is</em>. About 37 equations, and in this corpus the content change is one thing — the sector rule, made precise below.</li>
+</ul>
+<p><strong>So the rebuilt theory is mostly the old theory in a better language.</strong> That is not a small thing: a better language is what makes the silent choices visible and their consequences checkable. But it is not a new physics, and no article in this block should present it as one.</p>
+<p><strong>Two misreadings to block at the start.</strong></p>
+<ul>
+<li><strong>The rewrite does not make the corpus's numbers a computation.</strong> The numerical system is unchanged by transcribing it, so every input/output verdict of S34 and S41 survives the rewrite intact. <strong>A rewritten fit is still a fit.</strong></li>
+<li><strong>The rewrite does not repair the corpus's dead claims.</strong> The lepton's internal structure (P3), the spin ladder (P23) and the cosmological identifications (P9–P15) stay dead whatever alphabet they are written in. <strong>What a rewrite can do is explain <em>why</em> they were made</strong> — and in one case (§4) it can.</li>
+</ul>
+<h2 id="2-the-dictionary-per-quantity">2. The dictionary, per quantity</h2>
+<p><strong>The corpus's two sheets are the framework's Prime Convention, and the rule is per quantity, not per sheet (S2).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Charon</th>
+<th>biquaternion universe</th>
+<th>relation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RÉEL = $(x,y,z,t)$</td>
+<td>the real parts $q_0,q_1,q_2,q_3$</td>
+<td>the Prime Convention</td>
+</tr>
+<tr>
+<td>IMAGINAIRE = $(\tilde x,\tilde y,\tilde z,\tilde t)$</td>
+<td>the imaginary parts $q'_0,q'_1,q'_2,q'_3$</td>
+<td>the Prime Convention</td>
+</tr>
+<tr>
+<td>—</td>
+<td>$\mathbb{M}_- = \{q'_0,q_1,q_2,q_3\}$ — material</td>
+<td>imaginary time with real space</td>
+</tr>
+<tr>
+<td>—</td>
+<td>$\mathbb{M}_+ = \{q_0,q'_1,q'_2,q'_3\}$ — informational</td>
+<td>real time with imaginary space</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two partitions are transversal</strong>, so each of the corpus's sheets is half of each sector: RÉEL is $q_0$ (one parameter of $\mathbb{M}_+$) plus $q_1,q_2,q_3$ (three of $\mathbb{M}_-$), and IMAGINAIRE is $q'_0$ (one of $\mathbb{M}_-$) plus $q'_1,q'_2,q'_3$ (three of $\mathbb{M}_+$). <strong>This is the rewrite's only decided gain, because it corrects a file folder that the corpus searched for years.</strong> The corpus's sentence <em>"the real sector carries curvature and no energy"</em> is false as written — its own $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ is built from RÉEL objects — while its <em>equations</em> are right; the error is a filing error, and the per-quantity rule removes it.</p>
+<p><strong>The level at which the two complexifications agree and disagree (S3).</strong> Charon writes $x = \dot x + i\ddot x$: a complexification of a real four-space carrying only a commutative product. The framework complexifies $\mathbb{H}$: $Q = q + iq'$. <strong>The outputs are isomorphic as complex vector spaces ($\mathbb{C}^{4}\cong\mathbb{C}\otimes\mathbb{H}$) and non-isomorphic as algebras</strong> ($\mathbb{C}^{4}$ commutative, $M_2(\mathbb{C})$ not), and $\mathbb{C}^{4}$ is not a subalgebra of $M_2(\mathbb{C})$. <strong>The correct sentence is therefore: the same complexification of a real four-space, with the quaternion product absent</strong> — never "the same as". The corpus's complex structure is also <em>global and stipulated</em>, whereas the framework's is local; on a contractible four-manifold a constant complex structure is removable by a change of coordinates, so the corpus's own justification — base vectors multiplied by $i$ at the horizon — needs a locality its definition does not supply (S3, S4).</p>
+<p><strong>What the dictionary buys, stated as three facts and not as a slogan.</strong></p>
+<ul>
+<li><strong>The horizon story is licensed, not forced (S4).</strong> Crossing the horizon swapping space and time is the local complex structure deciding which direction carries the $i$; the corpus refuses the maximal extension (Novikov, Eddington–Finkelstein, Kruskal–Szekeres) on a ground that belongs to a collapsing star's interior and not to the vacuum manifold where the extensions live. Four coordinates do not all change type: two do.</li>
+<li><strong>The curvature law becomes a sector-coupling ansatz (S10).</strong> $R = \xi^{2}\rho^{2} + 4\Lambda$ is the corpus's most original structural move: with a source quadratic in the density there is no cancellation of $\pm\rho$, no creation paradox, and mass proportional to density. <strong>In the framework's language it is an interaction term between the two sectors, which is exactly what the framework lacks.</strong></li>
+<li><strong>The energy and action bookkeeping is a partition rule (S11).</strong> Action quantised at $\pm n\hbar$, split into $\pm n\hbar/2$ spin and $\pm n\hbar/2$ pulse, is an $\mathbb{M}_+/\mathbb{M}_-$ partition — and S11's audit is what killed its observable half (P23) while keeping the arithmetic of its layer (iii).</li>
+</ul>
+<h2 id="3-what-transcribes-and-what-does-not">3. What transcribes and what does not</h2>
+<p><strong>The three grades, with their counts (S64, capped stratified sample of 100 of 522 display equations).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>count</th>
+<th>what it means</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong> — changes content</td>
+<td>≈ 37</td>
+<td>the sector rule; the complexification's meaning</td>
+<td>RÉEL/IMAGINAIRE as the Prime Convention, transversal to $\mathbb{M}_\pm$</td>
+</tr>
+<tr>
+<td><strong>B</strong> — expressible and supplied</td>
+<td>≈ 150</td>
+<td>the framework has the machinery</td>
+<td>Einstein tensor, Bianchi, interior solution, geodesic (≈ 120 imported); the symmetric traceless part carried by the metric's device (≈ 30)</td>
+</tr>
+<tr>
+<td><strong>C</strong> — expressible, unchanged</td>
+<td>≈ 330</td>
+<td>coefficient-wise transcription</td>
+<td>scalar coefficients, conditions, identities, the integrals of scalars, the comparison numbers, the definitions</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one live lead of the whole rewrite is in grade B, and it is specific.</strong> The source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ is symmetric rank-two. A product of two four-vectors yields a scalar part and an antisymmetric part, so <strong>its symmetric traceless part must be carried by something else</strong> — and the framework carries exactly that object through the metric's own device, $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$, with $16 = 10 + 6$. <strong>So Charon's $T_{\alpha\beta}$ sits on the framework's spin-two machinery, and whether a matter source can be written <em>as</em> a frame perturbation is open.</strong> That question is the rewrite's one research direction, and it is handed to the framework, not to the corpus.</p>
+<p><strong>The blocker, which is a ceiling and not a gap.</strong> The algebra carries spin 0 and $\tfrac12$; spin $j$ requires the $2j$-th tensor power. The corpus's memory mechanism is spin-two and grows by <em>"l'augmentation de spin des photons"</em> (Esp 098). <strong>The higher-spin equations are de Broglie's and Tonnelat's and are not wrong; it is their placement that fails</strong>, and no transcription can move them into an algebra that does not hold them. <strong>Structural conclusion: the synthesis — the corpus's dynamics with the framework's algebra — has one gain taken (A), one lead open (B2) and one blocker that is a ceiling, while the framework's own missing piece is the inter-sector dynamics that the corpus's $R = \xi^{2}\rho^{2}+4\Lambda$ supplies.</strong> The two programmes are mirror images: each has what the other lacks.</p>
+<h2 id="4-the-eight-choices-the-theorys-content-made-explicit">4. The eight choices: the theory's content, made explicit</h2>
+<p><strong>This is the centrepiece, and it is what S58 exists to carry.</strong> The corpus's formalism closes by <em>selection</em>. A rebuilt statement of Charon must open with this table, because a reader who does not know where the freedom was spent cannot tell a derived law from a chosen one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>the choice</th>
+<th>where it is declared</th>
+<th>what it buys</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>$T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ — <em>"the simplest form"</em></td>
+<td>RC 028</td>
+<td>a source quadratic in the density</td>
+<td>chosen; not a physical stress tensor except at $\rho_* = 4{,}0\times10^{-21}$ g cm$^{-3}$ (S7, S8)</td>
+</tr>
+<tr>
+<td>②</td>
+<td>the tangent-space identification (2-12)</td>
+<td>RC</td>
+<td>the geometric reading of the source</td>
+<td>chosen</td>
+</tr>
+<tr>
+<td>③</td>
+<td>the linearisation of (2-8)</td>
+<td>RC</td>
+<td>a tractable field equation</td>
+<td>chosen</td>
+</tr>
+<tr>
+<td>④</td>
+<td>Axiome 4's exact spin–pulse split, $\pm n\hbar/2$ each</td>
+<td>RC</td>
+<td>integer action from two half-integral parts</td>
+<td>chosen; its layer (iii) is the arithmetic that survives (S11)</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>$\xi \equiv \Omega_0 c/\hbar$</td>
+<td>RC</td>
+<td>one constant instead of two</td>
+<td>chosen</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>$M_0 = \Omega_0\rho$</td>
+<td>RC</td>
+<td>mass from a volume times a density</td>
+<td>chosen</td>
+</tr>
+<tr>
+<td>⑦</td>
+<td>$T_0$</td>
+<td>Esp, via S37</td>
+<td>the nucleon-mass chain's time constant</td>
+<td>chosen</td>
+</tr>
+<tr>
+<td>⑧</td>
+<td>$d_0$</td>
+<td>S39</td>
+<td>—</td>
+<td><strong>withdrawn</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table as a statement about what kind of theory this is.</strong> Every choice is defensible on its own; several are the simplest assumption available; and each is printed. <strong>None is derived, and the corpus's ambition — an axiomatic reconstruction in which the principles are not free — is therefore not met.</strong> But the same structure is what makes adjudication possible: <strong>a theory whose content is in eight named choices can be assessed choice by choice, and that is what the R-chains do (S59).</strong> The corpus's structure is simultaneously why it could not deliver its ambition and why it can be judged at all.</p>
+<p><strong>One consequence to state plainly, because the corpus's rhetoric obscures it.</strong> With ①, ⑤ and ⑥ in place, the electron's mass, the elementary length and the action quantum are bookkeeping among three constants, not predictions. <strong>The corpus's six numerical results are its six inputs</strong> (S34), and the source of the freedom is exactly this table. A reader comparing Charon's <em>"sans introduction d'aucun paramètre numérique"</em> with the table should see the table.</p>
+<h2 id="5-what-closes-and-what-does-not">5. What closes, and what does not</h2>
+<p><strong>The formalism's own ledger (S16), carried forward.</strong></p>
+<p><strong>Closes.</strong> The geometric side (Cartan–Lovelock conditions, S7); the curvature law given the source; the quantum equation (Klein–Gordon with a geometric mass); the action-density weight argument; and the cosmological first integral (5-45) → (5-46), verified numerically by S50.</p>
+<p><strong>Does not close.</strong> The source's fitness as an energy–momentum tensor (quadratic in $\rho$, not a physical $T_{\mu\nu}$ except at one density); the spin sector's predictions (P23, P24); the negative-energy licence's transfer to the cosmology (S13); the axiomatics as a system (S15); and the variational principle's advertised role (S14).</p>
+<p><strong>The yields that are real and must not be dropped, because they are qualitative and they are not nothing.</strong> The geometric reading of mass; the $\rho^{2}$ conservation law's answer to a real objection (no $\pm\rho$ cancellation, hence no creation paradox); and outside the formalism block, $\dot G/G$ (S40) and the bounce as a physical notion (S51). <strong>The fault is that the corpus has less than it claimed, not that it has nothing.</strong></p>
+<p><strong>And one structural warning that belongs in a rebuilt statement.</strong> The closedness of the spatial section is a <em>hypothesis</em>, not a derivation. The interior observer's volume is $2\pi^{2}R^{3}$, the 3-volume of a closed $K=+1$ three-sphere, and the same $2\pi^{2}c^{2}R^{3}$ carries the cosmological action (5-41) whose output (5-46) is the corpus's best-verified identity. <strong>So the hole-universe behind the horizon, the micro-universe and the cosmological model are one construction at three scales</strong> — and the resemblance between the small and the large is guaranteed by construction, not discovered (S57). <strong>Any rebuilt statement must record $K=+1$ as a hypothesis of the same family as the second sheet, the tangent-space identification and the rest of §4's table.</strong></p>
+<h2 id="6-the-rebuilt-theory-in-one-page">6. The rebuilt theory in one page</h2>
+<p><strong>Write it as a sequence of labelled statements, so that the silent choices appear where they are used.</strong> This is the form a rebuilt presentation should take.</p>
+<ol>
+<li><strong>Space.</strong> A complexified four-space, $\mathbb{C}^{4}$, with coordinates $x = \dot x + i\ddot x$; equivalently $\mathbb{C}\otimes\mathbb{H}$ with the quaternion product <em>retained</em> if the framework's algebra is wanted. <strong>Choice.</strong> The complex structure is global and stipulated.</li>
+<li><strong>Sectors.</strong> The eight real parameters split, on the framework's side, into $\mathbb{M}_-$ (material) and $\mathbb{M}_+$ (informational). <strong>Choice.</strong> The corpus's RÉEL/IMAGINAIRE split is the Prime Convention, transversal to this — a filing rule, per quantity.</li>
+<li><strong>Metric and curvature.</strong> A real metric on the real part, with curvature $R$; Cartan's complementary conditions fix the connection and produce the usual general relativity (RC 021–022), so the geometric side is standard and <em>not</em> a Charon result.</li>
+<li><strong>Source.</strong> $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$. <strong>Choice ①.</strong> Quadratic in $\rho$; in the framework's language it is the inter-sector coupling term the framework lacks.</li>
+<li><strong>Field equation.</strong> The linearised (2-8), giving $R = \xi^{2}\rho^{2} + 4\Lambda$. <strong>Choices ② and ③.</strong> With $\Lambda$ the only geometric freedom, the law answers the creation paradox and makes mass proportional to density.</li>
+<li><strong>Matter.</strong> Action quantised at $\pm n\hbar$, split $\pm n\hbar/2$ spin and $\pm n\hbar/2$ pulse. <strong>Choice ④.</strong> The pulse's observable claims are dead (P23, P24); the arithmetic layer (iii) survives.</li>
+<li><strong>Scale.</strong> $\xi \equiv \Omega_0 c/\hbar$ and $M_0 = \Omega_0\rho$. <strong>Choices ⑤ and ⑥.</strong> These are what make the mass spectrum bookkeeping rather than prediction.</li>
+<li><strong>Cosmology.</strong> The same construction at the large scale: a closed $K=+1$ section, a bounce at $R_0$, a negative $\Lambda$; the identity (5-46) verified (S50); the cycle's closure resting on the annihilating era that is [FALS] (S52's qualification). <strong>Hypothesis.</strong> $K=+1$.</li>
+<li><strong>Mind.</strong> Memory as the integration constants of the field's system (S56), the éon as Knower (S57). <strong>[SPEC]/[PHIL].</strong> The mechanism needs spin two, which the framework's algebra does not reach.</li>
+<li><strong>Numbers.</strong> Six inputs, one defined constant, one suggested, one period, no independent output (S34, S41). The "2,3 %" is the depth of the search well inside a $\pm 10\,\%$ box, not a prediction; $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$ is the one live prediction (S40).</li>
+</ol>
+<p><strong>Read statements 1–7 as a formalism and 8–10 as its applications.</strong> The formalism is coherent; its content is in choices ①②③④⑤⑥; and the applications' statuses are Part S and Part P by the clean split of S59. <strong>Nothing in this page is new physics. What is new is that the choices are numbered and the claims are separable.</strong></p>
+<h2 id="7-verdict">7. Verdict</h2>
+<p><strong>By rule R6, the three questions are answered separately, and the rebuild's answers are:</strong></p>
+<ul>
+<li><strong>Coherence: yes.</strong> The formalism closes, given the eight choices. The geometric side closes on its own (Cartan–Lovelock); the curvature law closes once the source is chosen; the cosmology's first integral closes and its identity verifies.</li>
+<li><strong>Reproducibility: partly, and never for a constant.</strong> Every number the corpus prints follows from its own printed inputs; the search that produced the six values is ±10 % <em>about</em> those values. <strong>Reproducible as arithmetic, not as prediction.</strong></li>
+<li><strong>Correspondence: three items beyond established theory, one live, one dead, one open</strong> (S62, which is §16 in article form).</li>
+</ul>
+<p><strong>The one-line verdict of the rebuilt theory: it is a coherent formalism whose physics sits in eight named choices, whose arithmetic reproduces its own inputs, whose rewrite into the framework's algebra is available for two-thirds of its equations and changes nothing, and which reaches beyond established theory in three places — one live prediction, one disproof and one open structure.</strong> That is a smaller thing than the corpus claims and a larger thing than a relabelling. <strong>The rebuild's contribution is to make the size of it exact.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus rewritten in the biquaternion universe's language is a coherent formalism, two-thirds of whose equations transcribe unchanged, and whose physics lives in eight choices that the corpus made without deriving them.</strong></p>
+<p>The dictionary is per quantity: RÉEL/IMAGINAIRE is the Prime Convention and is transversal to the sectors $\mathbb{M}_\pm$, so each of the corpus's sheets is half of each sector. That rule is the rewrite's only decided gain, and it corrects a filing error rather than a calculation. The two complexifications agree as complex vector spaces and disagree as algebras: the same complexification of a real four-space, with the quaternion product absent.</p>
+<p>The rewrite's counts are ≈ 37 equations that change content, ≈ 150 that are expressible and supplied, and ≈ 330 that transcribe coefficient-wise and unchanged. Its one live lead is the source tensor's symmetric traceless part, which the framework carries through the metric's device $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$ with $16 = 10+6$ — so $T_{\alpha\beta}$ sits on the framework's spin-two machinery and whether a matter source can be written <em>as</em> a frame perturbation is open. Its blocker is a ceiling: the algebra holds spin 0 and $\tfrac12$ only, so the corpus's spin-two memory apparatus has no home in it, and the higher-spin equations are de Broglie's and Tonnelat's and are not the corpus's error.</p>
+<p>The eight choices are ① $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$, ② the tangent-space identification (2-12), ③ the linearisation of (2-8), ④ Axiome 4's exact spin–pulse split, ⑤ $\xi \equiv \Omega_0c/\hbar$, ⑥ $M_0 = \Omega_0\rho$, ⑦ $T_0$ (S37), ⑧ $d_0$ (S39, withdrawn). Each is defensible, each is declared, none is derived. With ①, ⑤ and ⑥ in place the constants are bookkeeping, which is the mechanical reason the corpus computes none of them.</p>
+<p>What closes: the geometric side, the curvature law given the source, the quantum equation, the action-density weight argument, and the cosmological first integral verified by S50. What does not: the source's fitness as a physical stress tensor, the spin sector's predictions, the negative-energy licence's transfer to cosmology, the axiomatics, and the variational principle's advertised role. The real and qualitative yields — the geometric reading of mass, the $\rho^{2}$ answer to the creation paradox, $\dot G/G$, the bounce — are kept.</p>
+<p>The closed $K=+1$ section is a hypothesis, not a derivation, and it is the reason the micro-universe, the hole-universe and the cosmological model resemble each other: they are one construction at three scales.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}^{4}$, $\mathbb{C}\otimes\mathbb{H}$</td>
+<td>the corpus's complexified space; the framework's algebra</td>
+<td>isomorphic as vector spaces, not as algebras (S3)</td>
+</tr>
+<tr>
+<td>RÉEL / IMAGINAIRE</td>
+<td>the corpus's two sheets</td>
+<td>the Prime Convention; transversal to $\mathbb{M}_\pm$ (S2)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
+<td>material / informational sectors</td>
+<td>the framework's partition</td>
+</tr>
+<tr>
+<td>$R = \xi^{2}\rho^{2} + 4\Lambda$</td>
+<td>the curvature law</td>
+<td>the corpus's most original structural move; <strong>choice ①③</strong></td>
+</tr>
+<tr>
+<td>$\xi \equiv \Omega_0c/\hbar$, $M_0 = \Omega_0\rho$</td>
+<td>the scale laws</td>
+<td><strong>choices ⑤⑥</strong></td>
+</tr>
+<tr>
+<td>$\pm n\hbar/2$ spin and pulse</td>
+<td>the action split</td>
+<td><strong>choice ④</strong>; layer (iii) survives</td>
+</tr>
+<tr>
+<td>$h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$</td>
+<td>the framework's spin-two device</td>
+<td>the rewrite's one live lead</td>
+</tr>
+<tr>
+<td>grade A / B / C</td>
+<td>content changed / supplied / unchanged</td>
+<td>≈ 37 / ≈ 150 / ≈ 330 of 522</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S2, <code>charon-s02-dictionary-reel-imaginaire-to-m-plus-m-minus</code>, which settles the dictionary and passes gate G-A in refined form; S3, <code>charon-s03-complexification-vs-complexification</code>, for the algebra-level comparison; S4, <code>charon-s04-status-of-the-second-sheet</code>, for licensed-versus-posited.</li>
+<li>S16, <code>charon-s16-state-of-the-rebuilt-formalism</code>, which is this article's source for the closes / does-not-close ledger and for the original six silent choices; S10, <code>charon-s10-the-quadratic-curvature-law</code>, for $R = \xi^{2}\rho^{2}+4\Lambda$; S7, <code>charon-s07-einstein-equations-taken-over</code>, for the geometric side.</li>
+<li>S64, <code>charon-s64-the-biquaternion-rewrite-scope</code>, for the grades and the counts; S59, <code>charon-s59-the-numerical-ledger</code>, for every number with its input/output verdict; S62, <code>charon-s62-what-survived</code>, for the three items beyond established theory.</li>
+<li>S34, <code>charon-s34-the-input-output-ledger</code>, and S41, <code>charon-s41-the-constants-ledger</code>, for the counting; S40, <code>charon-s40-gdot-over-g</code>, for the one live prediction; S37, <code>charon-s37-the-beta-gamma-chain</code>, for $T_0$.</li>
+<li>J. E. Charon, <em>Théorie de la relativité complexe</em> (Albin Michel, 1987), chapters 1–3 and 5, and <em>L'Esprit et la Relativité complexe</em> (Albin Michel, 1983), §§1–3 — the sources of statements 1–10 above, in the corpus's own notation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

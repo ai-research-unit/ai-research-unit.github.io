@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Fitted Versus Predicted — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-fitted-versus-predicted"><strong>Charon: Fitted Versus Predicted</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is not about a claim of the corpus. It is about the pattern that explains most of the corpus's failures, and it is the instrument the register itself uses. <strong>The pattern is: sweep a parameter, select a minimum, report a hit.</strong> A number obtained that way cannot be a test — it cannot fail, because a free sweep with a selection always lands somewhere, and it cannot succeed, because nothing was pre-registered. <strong>The corpus's real problem is not that it fitted things; modern theory fits things too. The problem is that it did not label which numbers were inputs and which were outputs.</strong></p>
+<p><strong>Why this article exists.</strong> Three of the corpus's most-discussed numerical results are of exactly this kind: the nucleon mass from the minimum of $M(d_{0})$ (§5.4), the fine-structure constant from the model's integral (§7.1), and the general claim that the lepton model is <em>"entièrement dépourvu de paramètres arbitraires"</em> (§4.8). <strong>Auditing those three yields the rule the register uses everywhere else: rule R1, input/output accounting.</strong></p>
+<p><strong>A note on what follows.</strong> The corpus's numbers here are not wrong in the way P13's $Z_{\max}$ is wrong. They are <em>well fitted</em>. The verdict is a statement about method, so this article carries no [FALS] tag of its own: <strong>the pattern is alive as method — it is what the register itself uses.</strong> The related articles are P1 and P2 (the lepton tower, which is the pattern's <em>exception</em>), P14 (the $q_{a} = 0{,}28$ calibration), and S20, S22, S38, S45 (the sector audits that supply the numbers).</p>
+<p><strong>Conventions.</strong> $d_{0}$ and $\omega$ are the density and the pulsation parameter swept in the nucleon-mass computation; $\xi$ the Système H's closure constant; $\alpha, \beta, T_{0}$ the lepton sector's three "computed" constants; $m$, $\mu$, $\tau$ the measured electron, muon and tau masses. R1 is the register's input/output rule; R3 is the strong-force-range chain.</p>
+<h2 id="part-1-the-pattern-and-why-it-is-not-a-test">Part 1 — The pattern, and why it is not a test</h2>
+<p><strong>The three steps.</strong> (i) A parameter is free — the corpus does not claim a value for it in advance. (ii) A function is computed, and an extremum is selected. (iii) The value at the extremum is compared with a measured number and reported as agreement. <strong>Each step is individually defensible; together, they carry no information about whether the model is right.</strong></p>
+<p><strong>Why it cannot fail.</strong> A one-parameter family of predictions, evaluated over a wide sweep, will come within a few per cent of almost any target. <strong>If the sweep is wide enough and the selected point is the closest approach, agreement is guaranteed by construction.</strong> The modern names for this are <em>researcher degrees of freedom</em> and the <em>garden of forking paths</em>; in collider physics it has a quantity, the <em>look-elsewhere effect</em>. <strong>The corpus's computations have no look-elsewhere correction, because there is no pre-registered target to correct for.</strong></p>
+<p><strong>Why it cannot succeed.</strong> The evidential weight of an agreement comes from the number of ways it could have gone wrong. <strong>A sweep with a selection removes those ways: there is no failed region, because the failed region is not reported.</strong> So the agreement cannot discriminate the model from its alternatives, and it cannot be used to calibrate confidence in it.</p>
+<p><strong>And the pattern quantifies itself, which is the useful part.</strong> For the nucleon mass, S38's audit of S27's table shows the minimum is shallow: <strong>across the whole table — a factor $2{,}2$ in $\omega$ and in $d_{0}$ — the mass stays within $0{,}9\,\%$ of its minimum.</strong> So the sweep is <em>flat</em>: it can neither fail (the plateau is wide) nor succeed (there is no peak to hit). <strong>And the discriminating power sits in an input, not in the sweep</strong>: the two printed values of $\xi$ differ by $5{,}1\,\%$ and move the mass by the same $5{,}1\,\%$. <strong>That is the pattern's signature, and it is quantifiable.</strong></p>
+<h2 id="part-2-the-three-audited-sections">Part 2 — The three audited sections</h2>
+<p><strong>§5.4 — the nucleon mass from the minimum of $M(d_{0})$, $M_{\min} = 1{,}68\times10^{-24}$ g for $0{,}11 \le \omega \le 0{,}13$.</strong> The measured proton mass is $1{,}6726\times10^{-24}$ g, and the agreement is excellent ($+0{,}24\,\%$ on the 1987 $\xi$). <strong>The tag is [MIX] (fit-like success), and the reason is the sweep.</strong> But S38's audit separates three features that make this case <em>less</em> bad than the pattern's stereotype and one that makes the quantification exact:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>feature</th>
+<th>finding (S38)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dictionary $d_{0}(\omega)$</td>
+<td>one parameter and monotone — <strong>no second handle</strong> to tune</td>
+</tr>
+<tr>
+<td>the selection</td>
+<td><strong>derived, not chosen</strong>: Esp (352)–(353)'s lifetime bound vanishes at every extremum of $M(d_{0})$, so the curve's extrema are the only observable states, and the corpus's own argument picks one</td>
+</tr>
+<tr>
+<td>the printed window</td>
+<td>the minimum falls <em>outside</em> it ($\omega = 0{,}105$–$0{,}106$ against $0{,}11 \le \omega \le 0{,}13$)</td>
+</tr>
+<tr>
+<td>the plateau</td>
+<td>$0{,}9\,\%$ across the whole table — <strong>the sweep can neither fail nor succeed</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the honest reading of §5.4 is not "he tuned $\omega$ and $d_{0}$ until the proton came out".</strong> It is: a one-parameter monotone map with a <em>derived</em> selection rule produced the proton mass to $0{,}24\,\%$, over a plateau too flat to discriminate anything, with the real sensitivity in a constant quoted to two figures. <strong>That is a weaker claim than "predicted" and a stronger one than "fitted" — and the article's contribution is to say so precisely rather than to sort it into a bin.</strong> Per R1 the sweep is METHOD, not a free parameter; that distinction is the reason R1 can classify this case at all.</p>
+<p><strong>§7.1 — $\alpha$ from the model: $e^{2}/\hbar c = 7{,}65\times10^{-3}$ against $1/137 = 7{,}30\times10^{-3}$, a $2{,}3\,\%$ error.</strong> The register's tag is [MIX] — "a genuine output with a real discrepancy". <strong>The honesty requires the refinement S34 supplies: the <em>comparison</em> is genuine, the <em>number</em> is not an independent output — e is one of the six seeds, and the 2,3 % is the distance between two measured sectors bridged by β (S35).</strong> Three qualifications make it a fitted estimate rather than a prediction:</p>
+<ul>
+<li><strong>It depends on $\beta$, and $\beta$ was fitted from the lepton masses.</strong> So the chain to $\alpha$ runs through the lepton masses; the freedom is upstream, not eliminated.</li>
+<li><strong>The numerical value of the integral does real work.</strong> The integral comes out at $\approx23{,}6$, and that number is what lands $\alpha$ in the right place. <strong>Nothing in the model forces $23{,}6$; the corpus evaluates it.</strong></li>
+<li><strong>A $2{,}3\,\%$ agreement is not a prediction at today's precision.</strong> Modern QED tests $\alpha$ to twelve digits. <strong>A fundamental theory that outputs $\alpha$ at $2{,}3\,\%$ has not computed it; it has come close.</strong> And $2{,}3\,\%$ is the same size as the model's own residual elsewhere (S57's pricing), so the agreement is within the theory's own error scale, not better than it.</li>
+</ul>
+<p><strong>The honest description, which the register gives and this article endorses: an elegant fitted estimate of $\alpha$, not a prediction of $\alpha$.</strong></p>
+<p><strong>§4.8 — "entirely devoid of arbitrary parameters".</strong> This is the general claim, and it is the one rule R1 settles. <strong>The count, done honestly:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c$</td>
+<td>universal input; <strong>defined</strong>, not computed</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>universal input; a measured seed</td>
+</tr>
+<tr>
+<td>$m_{e}$, $m_{\mu}$, $m_{\tau}$</td>
+<td>measured inputs</td>
+</tr>
+<tr>
+<td>$\alpha$, $\beta$, $T_{0}$</td>
+<td><strong>defined by those inputs</strong></td>
+</tr>
+<tr>
+<td>$\xi$, $l_{0}$</td>
+<td>fixed by one closure condition</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>a <strong>measured seed</strong> (S34); the $\alpha$ agreement it carries is inherited from $\beta$, hence from the lepton masses (S35)</td>
+</tr>
+<tr>
+<td>the lepton tower</td>
+<td>the one genuine prediction — <strong>falsified</strong> (P1)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>"Six fundamental constants computed" should be read as S34's count, which is the corpus's own list read honestly: one defined constant ($c$), five measured seeds ($h$, $m$, $\mu$, $\tau$, $e$), one suggested degree of freedom ($\xi$), and zero independent outputs.</strong> <strong>S34's evidence is decisive and verbatim</strong>: Esp 057 §1 lists the six <em>seeded</em> values as h, c, m, µ, τ₂ and e, and Esp 058 confines the search to ±10 % about the experimental values, reporting the minimum <em>at</em> them — so <strong>e, the row S32 provisionally called "the one output", is one of the six inputs</strong>, every deviation in S32's table is smaller than the search radius by construction, and the largest of them (e's 2,3 %) equals the residual χ_L = 2 % the same page reports. <strong>S41's final count is therefore "0 independent outputs", and S34 must be cited wherever the 2,3 % is quoted.</strong> And S21's audit converts the count from an estimate into a proof: <strong>the closed form is $\alpha = (m + 3\mu - 2\tau)/4\pi^{2}$ — no $h$, no $c$, no $\xi$.</strong> A constant that emerges from a system containing $h$ and $c$ and yet does not depend on them has not been <em>derived</em> from the system; the system has been <em>solved</em> for it. <strong>One line of substitution.</strong> The three constants are nested restatements: $\alpha$ is 97 % a mass difference, $\beta$ is 94 % the pure $h/c$ combination (S37), and $T_{0}$ is exactly $h$, $c$ and one mass difference. <strong>And the corpus states its own five inputs</strong> — RC 051 says <em>"cinq paramètres ... bien mesurés par l'expérience"</em> and that the Système E provides $\alpha$, $\beta$, $T_{0}$ <em>"en fonction de ces paramètres"</em>. <strong>So the sentence to correct is the corpus's claim, not its algebra.</strong></p>
+<h2 id="part-3-what-the-pattern-does-not-cover-and-why-that-matters">Part 3 — What the pattern does not cover, and why that matters</h2>
+<p><strong>The lepton tower is the exception, and the register must not read it as another fitted case.</strong> S45's finding: <strong>the lepton sector has zero lepton-specific parameters.</strong> There is nothing to sweep. So when the sector's mass rule extrapolated to a fourth charged lepton, there was no free quantity to absorb the disagreement — <strong>the prediction stayed hard, and LEP refused it (P1, P2).</strong></p>
+<p><strong>This is the mirror image of the plateau pattern, and it is the single most useful thing the sector audits contribute to this article.</strong> A model with a free parameter can hide a failure; a model with none cannot. <strong>The corpus's lepton sector had none, and it failed openly.</strong> That is, methodologically, the corpus's best moment and its clearest defeat at once.</p>
+<p><strong>And the pattern's boundaries elsewhere.</strong> R3 (the strong-force range) <em>is</em> a sweep case — the $\omega$ window is selected, which is why R3 is weaker than R2 (S22). R2 (the proton radius) is not: it closes an elementary length against measured inputs (S38, S23). <strong>And the quasar calibration $q_{a} = 0{,}28$ (P14) is a fourth instance, in the cosmology: one parameter fitted to one datum (Osmer's peak), the fit then reported as the model's reproduction of it.</strong> So the pattern appears in the lepton sector's <em>deliverables</em>, the hadron sector's mass and range, and the cosmology — but not in the lepton sector's <em>chain</em>.</p>
+<h2 id="part-4-what-this-buys">Part 4 — What this buys</h2>
+<p><strong>It explains most failures, and it is why the register needs R1.</strong> Four of the corpus's headline numerical results — the nucleon mass, the strong-force range, $\alpha$, and the deceleration parameter — are of this kind. <strong>Their common failure mode is not a wrong equation; it is an unlabelled freedom.</strong> Which is why the register's first rule is not a physical criterion but a bookkeeping one:</p>
+<blockquote>
+<p><strong>R1 — Input/output accounting.</strong> Every number is labelled INPUT (measured, fed in) or OUTPUT (no freedom left). Charon's own count is five inputs and one output. <strong>Any larger claim must itemise.</strong></p>
+</blockquote>
+<p><strong>And the pattern is the register's own instrument, which is why this article has no refutation tag.</strong> The register applies sweep–select–report to the corpus; the corpus applies it to nature. <strong>The asymmetry is the point: the corpus did not know which of its numbers were which, and the audit is what makes them which.</strong></p>
+<p><strong>A final distinction, so that this article is not read as a rule against fitting.</strong> Fitting is how physics is done: the Standard Model's parameters are measured, not derived, and QCD's hadron masses come from a fit-free but computationally enormous framework. <strong>What is not permitted is to describe a fit as a computation and then offer it, in the corpus's own words, as evidence <em>"sans introduction d'aucun paramètre numérique"</em>.</strong> The corpus does exactly that (§4.8), and S45's ledger prices it: five measured inputs, three constants of which one is an identity and one is 94 % an input combination, and one genuine <em>comparison</em> against an independently measured constant — the $\alpha$ agreement, itself inherited from $\beta$ (S35) — at $2{,}3\,\%$, against the model's own $2\,\%$ residual.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The pattern that explains most of the corpus's numerical failures is: sweep a parameter, select a minimum, report a hit.</strong> It cannot fail (a free sweep with selection lands somewhere) and cannot succeed (nothing was pre-registered); the modern names are researcher degrees of freedom, the garden of forking paths and the look-elsewhere effect. <strong>Three sections are audited.</strong> §5.4's nucleon mass is a one-parameter monotone dictionary with a <em>derived</em> selection but a plateau flat to $0{,}9\,\%$ across a factor $2{,}2$ in its inputs, with the discriminating power in $\xi$ — weaker than "predicted", stronger than "fitted". §7.1's $\alpha$ at $2{,}3\,\%$ is a fitted estimate: $\beta$ came from the lepton masses, the integral's $\approx23{,}6$ does the work, and modern precision is twelve digits. §4.8's "devoid of arbitrary parameters" is [FALS] as stated: one defined constant, five measured seeds, zero independent outputs, one dead prediction (S34, S41), and $\alpha = (m+3\mu-2\tau)/4\pi^{2}$ emerging independent of $h$ and $c$ is proof that the system was solved rather than derived. <strong>The pattern's exception is the lepton tower, where the sector had zero lepton-specific parameters and its one prediction therefore stayed hard and was refused (S45) — the corpus's best methodological moment and its clearest defeat at once. This article carries no refutation tag: the pattern is alive as method, it is what the register itself uses, and it is why the register's first rule is input/output accounting (R1).</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d_{0}$, $\omega$</td>
+<td>the swept density and pulsation parameters (nucleon mass)</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the Système H's closure constant</td>
+</tr>
+<tr>
+<td>$\alpha, \beta, T_{0}$</td>
+<td>the lepton sector's three "computed" constants</td>
+</tr>
+<tr>
+<td>$m, \mu, \tau$</td>
+<td>measured electron, muon, tau masses</td>
+</tr>
+<tr>
+<td>R1</td>
+<td>input/output accounting; R3, the strong-range chain</td>
+</tr>
+<tr>
+<td>§4.8, §5.4, §7.1</td>
+<td>the companion inventory's entries audited here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, <strong>§4.8</strong> (the parameter-free claim), <strong>§5.4</strong> (the nucleon mass), <strong>§7.1</strong> ($\alpha$): the three audited entries.</li>
+<li><strong>S38</strong> (the nucleon mass as output; the $0{,}9\,\%$ plateau and the $\xi$ sensitivity), <strong>S45</strong> (fit or derivation; zero lepton-specific parameters), <strong>S21</strong> and <strong>S43</strong> ($\alpha$'s closed form), <strong>S37</strong> ($\beta$), <strong>S20</strong> and <strong>S22</strong> (the plateau pattern), <strong>S57</strong> (the $2{,}3\,\%$ pricing).</li>
+<li><strong>P1</strong> and <strong>P2</strong> (the exception: the tower), <strong>P14</strong> (the $q_{a} = 0{,}28$ calibration), <strong>S22</strong>/R3 and <strong>S23</strong>/R2 for the range versus the radius.</li>
+<li>The register's §1 for rule R1 and §12.1 for the chains.</li>
+<li>Gelman–Loken on the garden of forking paths; the pre-registration literature; the look-elsewhere effect in particle physics.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

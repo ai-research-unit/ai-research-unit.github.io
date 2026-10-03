@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Why 2/3 Is Not Enough (S48) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-why-23-is-not-enough-s48">Charon — Why 2/3 Is Not Enough (S48)</h1>
+<p><em>Audits inventory §6.2's mechanism half and §6.5 (chromodynamics as atomic electrodynamics). Sources: Esp 062 §VI.18.3; RC 056 §V.5; RC 057 §VIII; RC 064 §III–IV; RC 065 (4-25-b)–(4-27-a). The dead identifications (six levels as flavours, the top, quarkonium) are P4, P5, P6.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register's line for this article is <em>"the value 2/3 is right; the mechanism is not colour"</em>, and the article's job is to say exactly how far that goes. It goes four structural steps, and the article locates the first three in the corpus's own text.</strong> (1) <strong>The corpus's colour boson is electrically charged; the gluon is neutral.</strong> RC 057 says so explicitly, contrasting the weak boson's neutrino pair with the colour boson's quark pair, <em>"c'est-à-dire que sa désintégration va comporter des constituants électriquement chargés"</em>. (2) <strong>The corpus's quarks are not confined.</strong> Esp 062 allows structures $Q$ that exist <em>"en principe indépendantes"</em> and annihilate as $Q^{+}+Q^{-}\to2\gamma$, while RC 056 describes quarks as charged leptons locked inside the hadron volume; confinement is observed and the corpus's geometry does not supply it. (3) <strong>The corpus's mechanism is abelian.</strong> Its colour is the strong interaction of <em>one</em> quark on its level, with the electric charge's role played by an intensity (RC 064), and no colour label, no three-valued charge, and no non-abelian structure appears anywhere in it. (4) <strong>And the mechanism's own size is inconsistent with its own importance</strong>, which is the finding the article adds:</p>
+<blockquote>
+<p><strong>The corpus derives the quark's fractional charge from electrostatic saturation (Esp 062), and then shows in chapter IV that the electrostatic term is 1,6×10⁻³ of the quark's level energy — negligible, and explicitly dropped (RC 065, (4-27-a)).</strong> So in the corpus's own arithmetic, the interaction that <em>creates</em> the quark's charge does not participate in the quark's binding.</p>
+</blockquote>
+<p><strong>That is the article's central statement, and it is a statement about the corpus's internal structure rather than about modern physics.</strong> The modern objection — colour is a non-abelian SU(3) charge and the observed charges are the eigenvalues of the electric-charge generator on the quarks' multiplets — is stated in §3, and the corpus cannot meet it. <strong>But the corpus does not need to be met on that ground to be judged: its own two chapters assign the fractional charge to an interaction that its own arithmetic makes irrelevant to the level it is supposed to explain.</strong></p>
+<p><strong>The verdict.</strong> §6.2's <em>mechanism</em> is <strong>[SPEC]</strong>, and after S47's relocation of its free element, this article adds that it is <strong>[SPEC] in a way that is internally unsupported as well as externally incomplete</strong>: the right value, produced by a construction whose link to the binding it describes is 1,6×10⁻³. §6.5's analogy is <strong>[MIX]</strong>: the level-transition comparison is loose but defensible, and the "colour is like electric charge" step is where it breaks. <strong>Rule R6: coherence passes, reproducibility passes, correspondence passes on the two numbers and fails on everything the mechanism is asked to explain.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>The mechanism, Esp 062 §VI.18.3:</strong></p>
+<blockquote>
+<p>Une partie des photons des électrons composant la structure $Q$ interagissent entre eux de façon <em>permanente</em> […] le nombre de photons dans chaque électron composant $Q$ qui sont <em>disponibles</em> à chaque instant pour une interaction électrostatique <em>avec</em> $E$ n'est plus (246) : $N = \int_{v_1}^{\infty}\frac{4}{3}\pi R^{3}n_v\,dv$ mais seulement une fraction $N'$ de ceux-ci […] $\frac{N'}{N} = 1 - \frac{\pi/6}{\pi/2} = \frac{2}{3}$ […] Nous appellerons <em>quark</em> une structure leptonique composite telle que $Q$ agissant sur un électron éloigné de charge $e$ avec une charge électrique de seulement $\frac{2}{3}e$.</p>
+</blockquote>
+<p><strong>The saturation threshold, RC 056 §V.5:</strong></p>
+<blockquote>
+<p>[…] on peut pressentir la possibilité d'un effet de <em>saturation</em> de l'interaction électrostatique quand deux éons […] deviennent tels que $r \leqslant 2l_{0}$ […] Cette « saturation » est due au fait que, pour de courtes distances $r$ entre $A$ et $B$, une très grande part des photons éoniques sont simultanément et continuellement impliqués dans un échange d'impulsions électrostatique avec un troisième éon $C$ à très courte distance […] Nous verrons que les <em>quarks</em> sont des leptons chargés enfermés dans le volume hadronique.</p>
+</blockquote>
+<p><strong>The colour boson's charged constituents, RC 057 §VIII:</strong></p>
+<blockquote>
+<p>[…] l'interaction de couleur est également portée par un boson vecteur (spin entier), mais celui-ci est constitué par une paire de quarks (et non une paire de neutrinos), c'est-à-dire que sa désintégration va comporter des constituants <em>électriquement chargés</em>; et, d'autre part, les interactions de couleur font souvent intervenir des énergies <em>beaucoup plus élevées</em> (de l'ordre de 50 GeV et plus) que les interactions faibles.</p>
+</blockquote>
+<p><strong>The analogy, RC 064 §IV:</strong></p>
+<blockquote>
+<p>On devine une analogie des interactions de couleur avec les transitions quantiques des électrons entre les niveaux atomiques; la couleur, qui n'est autre que l'interaction forte d'un quark sur son niveau […] jouant cependant dans les interactions de couleur le rôle de la charge électrique dans les transitions atomiques.</p>
+</blockquote>
+<p><strong>And the electrostatic term's size, RC 065 (4-27-a):</strong></p>
+<blockquote>
+<p>On note que l'interaction électrostatique n'entre dans l'énergie totale $E_r$ que dans un rapport $\frac{2e^{2}}{9\hbar c} = 1{,}62\cdot10^{-3}$, ce qui justifie que, dans une première approximation, on néglige dans les énergies des quarks sur leur niveau ces actions électrostatiques, pour se limiter aux interactions fortes gluoniques.</p>
+</blockquote>
+<h2 id="1-where-the-corpuss-mechanism-stops">1. Where the corpus's mechanism stops</h2>
+<p><strong>The corpus's mechanism is an <em>effect</em>, not a <em>charge</em>.</strong> A structure $Q$ of three leptons in contact permanently exchanges part of its photons internally, so that only a fraction $N'/N$ of them remain available for an interaction with a third body; the observed charge is the residue. <strong>Verified as an internal account: the mechanism uses no new field, no new quantum number and no new symmetry, and its only inputs are the tangency of S47 and the plasma of photons (246).</strong> It is therefore a <em>screening</em> mechanism in a photon gas.</p>
+<p><strong>Screening mechanisms are respectable, and the corpus's is the wrong kind of screening.</strong> In the standard account, a charge is <em>renormalised</em> by the vacuum's polarisable content — the running of $\alpha$ — and the effect is multiplicative on a charge that exists. <strong>The corpus's effect is multiplicative on a charge that also exists (the electron's), and it produces a <em>fraction</em> of it.</strong> So the two structures are alike in being "the observed charge is not the bare charge" and unlike in everything else: the corpus's dilution has a threshold ($r \le 2l_{0}$), is not scale-dependent beyond that threshold, and yields exactly one rational number.</p>
+<p><strong>And the mechanism's disagreement with its own surroundings is arithmetic.</strong> (4-27-a) computes the electrostatic term's share of the quark's level energy as $2e^{2}/(9\hbar c)$ with $e^{2}/\hbar c = 1/137$: <strong>verified, $2/(9\times137) = 1{,}6216\times10^{-3}$ against the corpus's printed $1{,}62\times10^{-3}$, a $0{,}1\,\%$ agreement.</strong> The corpus then drops it — <em>"on néglige"</em> — and attributes the level energies to the strong interaction. <strong>So the corpus's own chapter IV says: the interaction that gives the quark its charge contributes one part in 617 to the quark's energy. The fractional charge and the level structure come from two different interactions, and the corpus never reconciles them.</strong></p>
+<p><strong>That is not a contradiction and the article does not report it as one</strong> — a charge and a binding energy are different quantities, and a small coupling can fix a superselection rule. <strong>It is a missing link, and the corpus's own numbers are what make the link missing: the same 1,6×10⁻³ that justifies dropping the electrostatic term in the level energies is the coupling strength of the mechanism that produces the levels' charges.</strong></p>
+<h2 id="2-where-the-analogy-holds-and-where-it-breaks">2. Where the analogy holds, and where it breaks</h2>
+<p><strong>§6.5's analogy — colour is to the strong interaction what electric charge is to atomic electrodynamics — is [MIX], and the split is clean.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the corpus's analogy</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level transitions are quantised, with emission of an integer-spin boson</td>
+<td><strong>[EST]</strong> in the loose sense: both are quantised transitions with a spin-1 carrier</td>
+</tr>
+<tr>
+<td>a hadron has discrete internal levels of increasing energy</td>
+<td><strong>[EST]</strong> for the observed resonance structure, and the corpus's own levels are lepton masses (P4)</td>
+</tr>
+<tr>
+<td>"colour" is the strong interaction of a quark on its level, and plays the electric charge's role</td>
+<td><strong>[SPEC]</strong>: the corpus's colour has no label, no three-valued structure, no multiplet</td>
+</tr>
+<tr>
+<td>the colour boson is a charged quark pair with energies of 50 GeV and more</td>
+<td><strong>[OUT]</strong>: gluons are massless, neutral, and self-coupling</td>
+</tr>
+<tr>
+<td>the transition energies are 4,14 / 68,9 / 253,2 / 734,8 / 3022,2 GeV</td>
+<td><strong>not recomputable</strong> — S49's subject</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two breaks are internal to the corpus's own text and need no modern input.</strong> (i) <strong>The corpus's colour boson carries electric charge</strong> (RC 057), which is impossible for a gluon and, more tellingly, <em>is not needed</em> by the corpus's own picture: if the colour boson is a quark–antiquark pair at the same level, its charge is whatever the level's charges sum to, which the corpus has already constrained to be integral (0 or +1). So the corpus's "colour boson" is an integrally charged composite — a meson in modern language — and colour has been attached to the wrong object. (ii) <strong>Confined and independent are both asserted</strong>: RC 056 calls the quarks leptons locked inside the hadron, Esp 062 makes them independent composites that annihilate in pairs, and no sentence reconciles the two. <strong>The second reading is the one the geometry needs</strong> (a $Q$ must be able to interact with a distant $E$ at $r \gg R$ as though it were a point charge), <strong>and it is the reading observation excludes.</strong></p>
+<p><strong>The modern objection is stated for the record and is not the article's argument.</strong> Colour is the charge of a non-abelian $SU(3)$; quarks sit in its triplet and gluons in its octet; the observed electric charges $\pm1/3$, $\pm2/3$ are the eigenvalues of the electric-charge generator on the quark multiplets, normalised so that the proton's three valence quarks sum to $+1$; confinement and asymptotic freedom follow from the running of the non-abelian coupling. <strong>The corpus reproduces the same two numbers from a two-sphere tangency, and reproduces none of the structure: no group, no confinement, no running, no neutral massless carrier.</strong> That is what <em>"the mechanism is not colour"</em> means, and S47 supplies the sharper half of it — that the reproduction itself rests on an unmotivated reference angle.</p>
+<h2 id="3-the-two-places-the-corpus-is-right-and-what-they-are-worth">3. The two places the corpus is right, and what they are worth</h2>
+<p><strong>Six flavours is the right count and the wrong list.</strong> The corpus's table (RC 063) has six levels and names all six flavours on them — up, down, charm, strange, beauty, top — so the count is a genuine anticipation; <strong>the values attached to them are the lepton masses (the table's $m_n$ column runs from $9{,}11\times10^{-28}$ g to $\sim10^{-23}$ g), not the quark masses, and the top at 173 GeV has nowhere to sit.</strong> That is P4's and P5's finding and the article only records it.</p>
+<p><strong>And the fractional charges themselves are the right numbers.</strong> $+2/3$ and $-1/3$ for the proton's constituents, $-2/3$ and $+1/3$ for the neutron's, are exactly what the quark model requires and what was measured. <strong>The corpus's $\pm2/3$ structure and its integrality bookkeeping (S47) return exactly these.</strong> So §6.2 contains one correct value and one correct count, at the right time, arrived at by routes that have no counterpart in the modern theory.</p>
+<h2 id="4-verdict">4. Verdict</h2>
+<p><strong>§6.2's mechanism is [SPEC], and the article's addition is that it is unsupported <em>internally</em> as well as externally.</strong> S47 shows the free element is the reference angle; S48 shows that the interaction the mechanism invokes is, by the corpus's own computation, one part in 617 of the energy of the levels whose charges it is meant to explain. <strong>Neither observation contradicts the mechanism — a superselection rule can be fixed by a small coupling — and both make the mechanism's success harder to read as a derivation.</strong></p>
+<p><strong>§6.5's analogy is [MIX]</strong>: the quantised-level-transition comparison is loose but defensible; the identification of the carrier with a charged quark pair is wrong twice over (gluons are neutral, and an integrally charged composite is a meson); and the confinement ambiguity is present in the corpus itself.</p>
+<p><strong>Rule R6, asked separately.</strong> <em>Coherence</em>: passes — the mechanism closes and the corpus's chapters are mutually consistent <em>about any single quantity</em>; the failure is in a quantity's linkage, not in a derivation. <em>Reproducibility</em>: passes for the two numbers (2/3, and 1,62×10⁻³), and the mechanism's inputs are all exhibited. <em>Correspondence</em>: passes on the values 1/3 and 2/3 and on the count six; fails on the mechanism, on the carrier's identity, and on confinement.</p>
+<p><strong>One line for the register: the corpus gets the two fractional charges and the number of flavours right, and the object it calls colour wrong; and its own arithmetic separates the charge-producing interaction from the level-producing one by a factor 617.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The register asks what remains of §6.2 once the value is separated from the mechanism. <strong>The value stands and the mechanism does not, and the article locates three breaks in the corpus's own text and one in its own arithmetic.</strong></p>
+<p><strong>First, the corpus's colour boson is charged.</strong> RC 057 §VIII says the colour interaction is carried by a quark pair whose decay products are electrically charged, in contrast with the weak boson's neutrino pair. <strong>Gluons are massless and neutral, and self-coupling.</strong> And an integrally charged quark pair is what the corpus has elsewhere called a meson, so the corpus has attached colour to the wrong object.</p>
+<p><strong>Second, the corpus asserts confinement and its negation.</strong> RC 056 §V.5: quarks are <em>"des leptons chargés enfermés dans le volume hadronique"</em>. Esp 062: structures $Q$ are <em>"en principe indépendantes"</em> and can annihilate as $Q^{+}+Q^{-}\to2\gamma$. <strong>The geometry needs the second reading — a $Q$ must act on a distant electron as a point charge — and observation excludes it.</strong></p>
+<p><strong>Third, the mechanism is abelian.</strong> Colour in RC 064 is an intensity, the strong interaction of one quark on its level, playing the role of the electric charge of atomic transitions. <strong>There is no colour label, no triplet, no octet, and no group. The corpus reproduces the two fractional charges from a tangency (S47) and reproduces none of the structure.</strong></p>
+<p><strong>Fourth, and new here: the corpus's own arithmetic makes the charge-producing interaction irrelevant to the level it explains.</strong> The mechanism derives the fractional charge from <em>electrostatic</em> saturation; RC 065 (4-27-a) computes the electrostatic term's share of a quark's level energy as $2e^{2}/(9\hbar c)$ — <strong>verified, $1{,}6216\times10^{-3}$ against the printed $1{,}62\times10^{-3}$, a $0{,}1\,\%$ agreement</strong> — and drops it, attributing the level energies to the strong interaction. <strong>So the corpus derives a charge from one interaction and the energy from another, and never links them.</strong></p>
+<p><strong>What the corpus does get right: the two fractional charges, exactly, and the count of six flavours.</strong> The flavour <em>list</em> is wrong (the six levels are the lepton masses, and the top has nowhere to sit): that is P4's and P5's finding.</p>
+<p><strong>Verdict: §6.2's mechanism [SPEC] — externally incomplete and internally unlinked; §6.5's analogy [MIX]. Per rule R6: coherence passes, reproducibility passes, correspondence passes on the values and the count and fails on everything the mechanism is asked to explain.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>the corpus's composite quark structure: three leptons in line</td>
+</tr>
+<tr>
+<td>$N'/N$</td>
+<td>the fraction of photons left available by permanent internal exchange</td>
+</tr>
+<tr>
+<td>$2l_{0}$</td>
+<td>the electrostatic saturation threshold, $r \le 2l_{0}$ (RC 056 §V.5)</td>
+</tr>
+<tr>
+<td>(4-27-a)</td>
+<td>the electrostatic term's share of a quark's level energy, $2e^{2}/(9\hbar c)$</td>
+</tr>
+<tr>
+<td>§6.2, §6.5</td>
+<td>the inventory's items: the fractional-charge mechanism; chromodynamics as atomic electrodynamics</td>
+</tr>
+<tr>
+<td>P4, P5, P6</td>
+<td>the dead identifications: six levels as flavours, the missing top, quarkonium mass</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S47</strong> <code>charon-s47-fractional-charge-by-saturation.md</code> — the geometry and the location of its free element.</li>
+<li><strong>S49</strong> <code>charon-s49-the-level-transition-energy.md</code> — the level energies and the boson identity in full.</li>
+<li><strong>S28</strong> <code>charon-s28-saturation-and-no-diholon.md</code> — the strong saturation, a different object with the same name.</li>
+<li><strong>S24</strong>/<strong>S26</strong> — the holon and the strong range, which is what actually binds the levels in the corpus.</li>
+<li><strong>P4</strong>, <strong>P5</strong>, <strong>P6</strong> — the six levels as flavours, the top, and quarkonium.</li>
+<li>Corpus: Esp 062 §VI.18.3; Esp 082; RC 056 §V.5; RC 057 §VIII; RC 063 §III; RC 064 §III–IV; RC 065 (4-25-b)–(4-27-a).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -88,18 +88,18 @@ $$</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The split-biquaternion norm is multiplicative:</p>
 <p>$$
-N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+N(\tilde{Q} \bullet \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
 $$</p>
 <p><strong>Proof.</strong> Compute</p>
 <p>$$
-N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
+N(\tilde{Q} \bullet \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
 $$</p>
 <p>Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So</p>
 <p>$$
 \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
 $$</p>
-<p><strong>Corollary.</strong> If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \circ \tilde{R})$ is invertible in $\mathbb{D}$.</p>
-<p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.</p>
+<p><strong>Corollary.</strong> If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \bullet \tilde{R})$ is invertible in $\mathbb{D}$.</p>
+<p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \bullet \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.</p>
 <h3 id="the-split-biquaternion-norm-in-the-idempotent-basis">The Split-Biquaternion Norm in the Idempotent Basis</h3>
 <p>In the idempotent basis, the split-biquaternion norm takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_+ + \tilde{Q}_- \tilde\Pi_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
 <p>$$
@@ -234,7 +234,7 @@ $$</p>
 <h3 id="definition_3">Definition</h3>
 <p>A split biquaternion $\tilde{Q}$ is <strong>invertible</strong> if there exists a split biquaternion $\tilde{R}$ such that</p>
 <p>$$
-\tilde{Q} \circ \tilde{R} = \tilde{R} \circ \tilde{Q} = e_0.
+\tilde{Q} \bullet \tilde{R} = \tilde{R} \bullet \tilde{Q} = e_0.
 $$</p>
 <p>The split biquaternion $\tilde{R}$, if it exists, is the <strong>inverse</strong> of $\tilde{Q}$ and is denoted $\tilde{Q}^{-1}$.</p>
 <h3 id="left-and-right-inverses">Left and Right Inverses</h3>
@@ -250,10 +250,10 @@ $$</p>
 $$</p>
 <p>This is legitimate because $N(\tilde{Q})$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then</p>
 <p>$$
-\tilde{Q} \circ \tilde{R} = N(\tilde{Q}) N(\tilde{Q})^{-1} = e_0,
+\tilde{Q} \bullet \tilde{R} = N(\tilde{Q}) N(\tilde{Q})^{-1} = e_0,
 $$</p>
 <p>so $\tilde{R}$ is a right inverse, hence also a left inverse.</p>
-<p>Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives</p>
+<p>Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \bullet \tilde{Q}^{-1} = e_0$ and using multiplicativity gives</p>
 <p>$$
 N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
 $$</p>

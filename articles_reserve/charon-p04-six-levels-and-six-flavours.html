@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Six Levels and Six Flavours — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-six-levels-and-six-flavours"><strong>Charon: Six Levels and Six Flavours</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the corpus's identification of six spherical density levels inside the holon with the six quark flavours. The count is right — there are six flavours — and the corpus prints a table giving each level a quark name. The identification fails anyway, and it fails on four independent grounds: the level masses are charged-lepton masses, not quark masses; the ordering is inverted where it matters most; the table does not close arithmetically; and the number six comes from where a density table was cut off, not from anything about quarks.</p>
+<p><strong>The claim, verbatim.</strong> RC 063, §III.1: after defining the level density $\rho_{n} = m_{n}/\Omega_{0}$ and the holon's central density $\rho_{H}$, the text states <em>"on constate donc qu'il existe six niveaux sphériques de densité $\rho_n$ fournis par (4-19), qui se situent dans le volume holonique"</em>, and prints table (3-79), which names the six levels $u, d, c, s, b, t$. RC 053's prose version of the same claim lists them as <em>"les six niveaux de quarks (u, d, s, b, t)"</em>.</p>
+<p><strong>The verdict is [MIX] then [OUT].</strong> [MIX] because six flavours exist and a six-level scheme is not absurd on its face. [OUT] because every mass is wrong, the charm-and-strange ordering is reversed, the table's own arithmetic fails at three of six rows, and the truncation that fixed the number six is circular.</p>
+<p><strong>A note on sources.</strong> The claim is inventory §6.1, sourced to RC (3-79) at <code>RC/063_improved.md</code> and to RC 053. The transition-energy audit is S49's; the density slide is P21's. The downstream articles are P5 (the top) and P6 (quarkonium); the fractional-charge mechanism is S47 and S48. The related chains are R7 and R11.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $n$ is the level index, $\rho_{n} = m_{n}/\Omega_{0}$ the level density, $r_{n}$ the level's radius, $\Omega_{0} = 2{,}44\times10^{-41}$ cm$^{3}$ the elementary cell, $\rho_{H} = 5{,}8\times10^{17}$ g cm$^{-3}$ the holon's central density. Quark masses are modern PDG values, $\overline{\mathrm{MS}}$ for the light quarks.</p>
+<h2 id="part-1-the-table-and-what-the-level-masses-actually-are">Part 1 — The table, and what the level masses actually are</h2>
+<p>Table (3-79) is six rows, each assigning a quark name to a lepton mass. The corpus's numbers and the real quark masses are placed side by side:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>corpus</th>
+<th>corpus mass (g)</th>
+<th>corpus mass (MeV)</th>
+<th>real quark mass (MeV)</th>
+<th>ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$u$ up</td>
+<td>$9{,}11\times10^{-28}$</td>
+<td>$0{,}511$</td>
+<td>$2{,}16$</td>
+<td>$0{,}24$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$d$ down</td>
+<td>$1{,}89\times10^{-25}$</td>
+<td>$105{,}7$</td>
+<td>$4{,}67$</td>
+<td>$22{,}6$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$c$ charm</td>
+<td>$3{,}18\times10^{-24}$</td>
+<td>$1777$</td>
+<td>$1270$</td>
+<td>$1{,}40$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$s$ strange</td>
+<td>$6{,}18\times10^{-24}$</td>
+<td>$3470$</td>
+<td>$93{,}4$</td>
+<td>$37$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$b$ beauty</td>
+<td>$9{,}18\times10^{-24}$</td>
+<td>$5150$</td>
+<td>$4180$</td>
+<td>$1{,}23$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$t$ top</td>
+<td>$1{,}52\times10^{-23}$</td>
+<td>$8500$</td>
+<td>$172700$</td>
+<td>$0{,}049$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The masses are the positron's, the muon's and the tau's, followed by three more rungs of the same arithmetic ladder — that is, the corpus's quark masses <em>are</em> the corpus's lepton masses. P1 refutes that ladder; this table is one of its uses.</p>
+<p><strong>Two rows look close and are not.</strong> The charm ($1{,}40$) and the beauty ($1{,}23$) are within tens of percent, and a careless reader could take the identification as approximately right. It is not, because the identification is a <em>scheme</em>: it fixes which level is which, and the scheme's ordering is tested next.</p>
+<h2 id="part-2-the-ordering-is-inverted-and-that-is-decisive">Part 2 — The ordering is inverted, and that is decisive</h2>
+<p>A table of six numbers can be right in its values and wrong in its assignment. Here the assignment is wrong in the most conspicuous way.</p>
+<p><strong>The real ordering.</strong> In the measured spectrum the charm is about fourteen times the strange: $m_{c} \approx 1270$ MeV against $m_{s} \approx 93$ MeV. Any scheme that assigns the levels to flavours must have the charm's level well above the strange's.</p>
+<p><strong>The corpus's ordering.</strong> Table (3-79) has the charm at $1777$ MeV and the strange at $3470$ MeV. <strong>The charm sits <em>below</em> the strange — the ordering is inverted.</strong> In the corpus's own arithmetic-progression levels there is no way to repair this, because the rungs are fixed by the ladder's step; moving the charm above the strange would break the relation between the levels and the leptons.</p>
+<p><strong>A second inversion, in the light quarks.</strong> The corpus has the down ($105{,}7$ MeV) more than twenty times the up ($0{,}511$ MeV); the measured ratio is about two.</p>
+<p><strong>So the scheme fails as a scheme, not as a set of numbers.</strong> It would be a coincidence if all six masses were wrong but the ordering right; the ordering is wrong too, and the charm-strange inversion is visible in the corpus's own table.</p>
+<h2 id="part-3-the-table-does-not-close">Part 3 — The table does not close</h2>
+<p>Table (3-79) lists $\rho_{n}$, $r_{n}$ and $m_{n}$ for each level, and the corpus defines $m_{n} = \Omega_{0}\rho_{n}$ (4-20-a). The three columns should therefore be consistent with one another. Three rows are not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\rho_{n}$ (g cm$^{-3}$)</th>
+<th>$\Omega_{0}\rho_{n}$ (g)</th>
+<th>printed $m_{n}$ (g)</th>
+<th>discrepancy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$3{,}73\times10^{13}$</td>
+<td>$9{,}10\times10^{-28}$</td>
+<td>$9{,}11\times10^{-28}$</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$7{,}71\times10^{15}$</td>
+<td>$1{,}88\times10^{-25}$</td>
+<td>$1{,}89\times10^{-25}$</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$1{,}30\times10^{17}$</td>
+<td>$3{,}17\times10^{-24}$</td>
+<td>$3{,}18\times10^{-24}$</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$2{,}33\times10^{17}$</td>
+<td>$5{,}69\times10^{-24}$</td>
+<td>$6{,}18\times10^{-24}$</td>
+<td>$+8{,}7\,\%$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$3{,}76\times10^{17}$</td>
+<td>$9{,}17\times10^{-24}$</td>
+<td>$9{,}18\times10^{-23}$</td>
+<td>$\times 10$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$4{,}99\times10^{17}$</td>
+<td>$1{,}22\times10^{-23}$</td>
+<td>$1{,}52\times10^{-23}$</td>
+<td>$+25\,\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The fourth row is an exponent slip: the printed $m_{4}$ is $9{,}18\times10^{-23}$ where the definition gives $9{,}18\times10^{-24}$, and the corrected value is exactly the lepton ladder's $m_{4}$. The third and fifth rows are further gaps. <strong>So the identification is not even self-consistent on its own page</strong> — the reader cannot use the definition and the table together. S49 records the same finding and the correction to row 4.</p>
+<h2 id="part-4-where-the-six-comes-from-and-why-that-is-not-evidence">Part 4 — Where the "six" comes from, and why that is not evidence</h2>
+<p>The sixth level is not derived from the quark spectrum. It is where the table stopped.</p>
+<p>RC 053 prints its lepton table up to $n = 6$ and explains: <em>"Nous avons arrêté le tableau juste au-delà de la densité centrale hadronique donnée par (3-78)."</em> The table was truncated when $\rho_{n}$ passed $\rho_{0H}$. RC 063 then reads the truncation back as a physical fact: six levels fit inside the holon, therefore six quark levels.</p>
+<p><strong>P21 shows $\rho_{0H}$ is not a density.</strong> It is a mass divided by the <em>fixed</em> cell $\Omega_{0}$, so the ceiling is a mass threshold in disguise. The count of six is therefore the number of rungs of a leaky ladder that fall below a threshold which is itself circular. <strong>The agreement with the six flavours is a coincidence of two errors</strong>, and a coincidence produced by cutting a one-parameter ladder at a threshold is exactly the kind of hit that carries no evidential weight.</p>
+<p><strong>An internal inconsistency worth recording.</strong> RC 053's prose list is $u, d, s, b, t$ — five names for six levels, and no charm. RC 063's table is $u, d, c, s, b, t$ — six names, with charm, in an order that inverts charm and strange. The two pages of the same chapter do not agree on what the six levels are called.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus identifies six holonic density levels with the six quark flavours, and the count is the only thing that survives.</strong> Table (3-79) assigns the positron's, muon's and tau's masses — and three further rungs of the refuted arithmetic ladder (P1) — to $u, d, c, s, b, t$. The charm-and-strange ordering is inverted (charm 1777 MeV below strange 3470 MeV, against a measured ratio of fourteen the other way); the table does not close at rows 3, 4 and 5, with row 4 a factor-ten exponent slip; and the number six comes from truncating a density table at a ceiling that is not a density (P21) — a coincidence of two errors. RC 053's prose list even disagrees with RC 063's table. <strong>Verdict [MIX] $\to$ [OUT]; the root of the P5, P6, S47 and S48 chains.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$</td>
+<td>level index, $n = 0, \ldots, 5$</td>
+</tr>
+<tr>
+<td>$\rho_{n}$</td>
+<td>level density, $\rho_{n} = m_{n}/\Omega_{0}$</td>
+</tr>
+<tr>
+<td>$r_{n}$</td>
+<td>level radius</td>
+</tr>
+<tr>
+<td>$\rho_{H}$</td>
+<td>holon central density, $5{,}8\times10^{17}$ g cm$^{-3}$</td>
+</tr>
+<tr>
+<td>$\Omega_{0}$</td>
+<td>elementary cell, $2{,}44\times10^{-41}$ cm$^{3}$</td>
+</tr>
+<tr>
+<td>$u, d, s, c, b, t$</td>
+<td>the six quark flavours</td>
+</tr>
+<tr>
+<td>[MIX] $\to$ [OUT]</td>
+<td>companion tags: partly right, then superseded</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §6.1 and §6.4: <strong>this article is the article-form of §6.1 and adopts S49's arithmetic findings on §6.4.</strong></li>
+<li><code>RC/063_improved.md</code> (table (3-79), (4-19), (4-20-a)), <code>RC/053_improved.md</code> (the truncation sentence and the prose list), <code>RC/066_improved.md</code> (the level transitions).</li>
+<li>P21 for the density slide, P1 for the ladder, P5 for the top, P6 for quarkonium; S47 and S48 for the fractional charge, S49 for the transition energies.</li>
+<li>The register's §12 for chains R7 and R11; S60 for the tier verdict.</li>
+<li>The PDG quark-mass review.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

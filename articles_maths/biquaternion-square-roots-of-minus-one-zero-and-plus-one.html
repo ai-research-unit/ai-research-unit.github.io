@@ -52,181 +52,240 @@
       <div class="article-body">
         <h1 id="biquaternion-square-roots-of-minus-one-zero-and-plus-one"><strong>Biquaternion Square Roots of Minus One, Zero and Plus One</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\xi \in \mathbb{B}$ satisfying</p>
+<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\tilde P \in \mathbb{B}$ satisfying</p>
 <p>$$
-\xi^2 = -1, \qquad \xi^2 = 0, \qquad \xi^2 = +1.
+\tilde P^2 = -1, \qquad \tilde P^2 = 0, \qquad \tilde P^2 = +1.
 $$</p>
-<p>It relates to <em>Biquaternion Idempotents and Projections</em> through the bijection between the roots of $-1$ and the idempotents established in §<em>The Relation to the Idempotents</em>. The goal here is to state the classification precisely and to prove it. The classification of $\xi^2 = \tilde Q$ for an arbitrary $\tilde Q \in \mathbb{B}$, and the Clifford-algebra algorithm that computes it, are the subject of <em>Biquaternion Square Roots of a General Element</em>; the three cases treated here are its degenerate data, and the algorithm is deliberately not reproduced, since these three sets are small enough to be found directly.</p>
+<p>It relates to <em>Biquaternion Idempotents and Projections</em> through the bijection between the roots of $-1$ and the idempotents established in §<em>The Relation to the Idempotents</em>. The goal here is to state the classification precisely and to prove it. The classification of $\tilde P^2 = \tilde Q$ for an arbitrary $\tilde Q \in \mathbb{B}$, by the same vector–scalar split and free of Clifford algebras, is the subject of <em>Biquaternion Square Roots of a General Element</em>; the three cases treated here are its degenerate data, and the algorithm is deliberately not reproduced, since these three sets are small enough to be found directly.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its six distinguished subspaces.</p>
 <p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
+\tilde{P} = P_0 e_0 + P_1 e_1 + P_2 e_2 + P_3 e_3, \qquad P_k \in \mathbb{C}.
 $$</p>
-<p>The quaternion conjugate is denoted $\tilde{Q}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{Q}}$, and the Hermitian conjugate is denoted $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair is said to <strong>anticommute</strong> when $\mu\nu + \nu\mu = 0$.</p>
+<p>The quaternion conjugate is denoted $\tilde{P}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{P}}$, and the Hermitian conjugate is denoted $\tilde{P}^{*} = \overline{\tilde{P}^{\natural}}$. Throughout, $\boldsymbol{p}$ and $\boldsymbol{p}'$ denote the real and imaginary parts of the vector part of a root, and two pure real quaternions are said to <strong>anticommute</strong> when $\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = 0$.</p>
 <h2 id="the-problem-and-its-reduction">The Problem and Its Reduction</h2>
-<p>The three problems of this article — the equations $\xi^2 = -1$, $\xi^2 = 0$ and $\xi^2 = +1$ — share one reduction, carried out once here and applied three times. Write $\xi$ in the scalar-vector form</p>
+<p>The three problems of this article — the equations $\tilde P^2 = -1$, $\tilde P^2 = 0$ and $\tilde P^2 = +1$ — share one reduction, carried out once here and applied three times. In the components $P_k$ of the general biquaternion fixed above, the root splits as</p>
 <p>$$
-\xi = Q_0 + \mathbf{Q}, \qquad Q_0 \in \mathbb{C}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+\tilde P = P_0 e_0 + \boldsymbol{P}, \qquad \boldsymbol{P} = P_1 e_1 + P_2 e_2 + P_3 e_3,
 $$</p>
-<p>where $Q_0$ is the <strong>complex scalar part</strong> and $\mathbf{Q}$ is the <strong>complex vector part</strong>. The square of $\xi$ is given by the product formula for biquaternions:</p>
+<p>where $P_0 e_0$ is the <strong>complex scalar part</strong> and $\boldsymbol{P}$ the <strong>complex vector part</strong>. The square of $\tilde P$ is given by the product formula for biquaternions:</p>
 <p>$$
-\xi^2 = \bigl(Q_0^2 - (\mathbf{Q}, \mathbf{Q})\bigr) e_0 + 2Q_0\mathbf{Q}, \qquad (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2.
+\tilde P^2 = \bigl(P_0^2 - (\boldsymbol{P}, \boldsymbol{P})\bigr) e_0 + 2P_0\boldsymbol{P}, \qquad (\boldsymbol{P}, \boldsymbol{P}) = P_1^2 + P_2^2 + P_3^2.
 $$</p>
-<p>The scalar part of $\xi^2$ is $(Q_0^2 - (\mathbf{Q}, \mathbf{Q})) e_0$ and the vector part is $2Q_0\mathbf{Q}$, so equating $\xi^2$ to a central value splits the equation into a vector part and a scalar part.</p>
+<p>The scalar part of $\tilde P^2$ is $(P_0^2 - (\boldsymbol{P}, \boldsymbol{P})) e_0$ and the vector part is $2P_0\boldsymbol{P}$, so equating $\tilde P^2$ to a central value splits the equation into a vector part and a scalar part.</p>
 <h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
 <h3 id="statement">Statement</h3>
-<p>A <strong>root of $-1$</strong> in $\mathbb{B}$ is an element $\xi \in \mathbb{B}$ satisfying</p>
+<p>A <strong>root of $-1$</strong> in $\mathbb{B}$ is an element $\tilde P \in \mathbb{B}$ satisfying</p>
 <p>$$
-\xi^2 = -1.
+\tilde P^2 = -1.
 $$</p>
 <p>The problem is to find all such elements.</p>
 <h3 id="reduction-to-two-cases">Reduction to Two Cases</h3>
-<p>Equating $\xi^2$ to $-1 = -e_0$ requires</p>
+<p>Equating $\tilde P^2$ to $-1 = -e_0$ requires</p>
 <p>$$
-2Q_0\mathbf{Q} = 0, \qquad Q_0^2 - (\mathbf{Q}, \mathbf{Q}) = -1.
+2P_0\boldsymbol{P} = 0, \qquad P_0^2 - (\boldsymbol{P}, \boldsymbol{P}) = -1.
 $$</p>
-<p>The first equation is a vector equation. Since $\mathbb{B}$ is a free $\mathbb{C}$-module and $\mathbb{C}$ is a field, the equation $Q_0\mathbf{Q} = 0$ holds if and only if $Q_0 = 0$ or $\mathbf{Q} = 0$. So the roots of $-1$ split into two cases.</p>
-<p><strong>Case 1: $\mathbf{Q} = 0$.</strong> Then $\xi = Q_0 e_0$ is a complex scalar, and the scalar equation becomes $Q_0^2 = -1$. So $Q_0 = \pm i$, and</p>
+<p>The first equation is a vector equation. Since $\mathbb{B}$ is a free $\mathbb{C}$-module and $\mathbb{C}$ is a field, the equation $P_0\boldsymbol{P} = 0$ holds if and only if $P_0 = 0$ or $\boldsymbol{P} = 0$. So the roots of $-1$ split into two cases.</p>
+<p><strong>Case A — the root is a complex scalar ($\boldsymbol{P} = 0$).</strong> Then $\tilde P = P_0 e_0$, and the scalar equation becomes $P_0^2 = -1$, so $P_0 = \pm i$. <strong>The roots in this case are the two complex scalars</strong></p>
 <p>$$
-\xi = \pm i.
+\tilde P = +i, \qquad \tilde P = -i,
 $$</p>
-<p>These are the <strong>trivial roots</strong>.</p>
-<p><strong>Case 2: $Q_0 = 0$.</strong> Then $\xi = \mathbf{Q}$ is <strong>pure</strong> (vanishing scalar part), and the scalar equation becomes $(\mathbf{Q}, \mathbf{Q}) = 1$. The <strong>pure roots</strong> are the pure biquaternions whose square is $-1$.</p>
-<p>The two cases are disjoint: the trivial roots have vanishing vector part, so they fall only in Case 1; the pure roots have vanishing scalar part, so they fall only in Case 2.</p>
+<p>the <strong>trivial roots</strong>.</p>
+<p><strong>Case B — the root is pure ($P_0 = 0$).</strong> Then $\tilde P = \boldsymbol{P} = P_1 e_1 + P_2 e_2 + P_3 e_3$ has vanishing scalar part, and the scalar equation becomes</p>
+<p>$$
+(\boldsymbol{P}, \boldsymbol{P}) = P_1^2 + P_2^2 + P_3^2 = 1 .
+$$</p>
+<p><strong>The roots in this case are the pure biquaternions of complex square $1$</strong>, the <strong>pure roots</strong>, found in the next section.</p>
+<p>The two cases are disjoint: a trivial root has vanishing vector part and so lies only in Case A, while a pure root has vanishing scalar part and so lies only in Case B.</p>
 <h3 id="the-pure-roots">The Pure Roots</h3>
-<p>We now solve the equation $(\mathbf{Q}, \mathbf{Q}) = 1$ for the pure biquaternion $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
-<p>Write each complex coefficient as $Q_k = q_k + i q'_k$ with $q_k, q'_k \in \mathbb{R}$. Then</p>
+<p>We now solve the equation $(\boldsymbol{P}, \boldsymbol{P}) = 1$ for the pure biquaternion $\boldsymbol{P} = P_1 e_1 + P_2 e_2 + P_3 e_3$.</p>
+<p>Write each complex coefficient as $P_k = p_k + i p'_k$ with $p_k, p'_k \in \mathbb{R}$, so that the complex vector part splits into its real and imaginary parts,</p>
 <p>$$
-(\mathbf{Q}, \mathbf{Q}) = \sum_{k=1}^{3} Q_k^2 = \sum_{k=1}^{3} (q_k + i q'_k)^2 = \sum_{k=1}^{3} (q_k^2 - (q'_k)^2) + 2i \sum_{k=1}^{3} q_k q'_k.
+\boldsymbol{P} = \boldsymbol{p} + i\boldsymbol{p}', \qquad \boldsymbol{p} = p_1 e_1 + p_2 e_2 + p_3 e_3, \qquad \boldsymbol{p}' = p'_1 e_1 + p'_2 e_2 + p'_3 e_3 .
+$$</p>
+<p>Then</p>
+<p>$$
+(\boldsymbol{P}, \boldsymbol{P}) = P_1^2 + P_2^2 + P_3^2 = (p_1 + ip'_1)^2 + (p_2 + ip'_2)^2 + (p_3 + ip'_3)^2
+= \bigl(p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2\bigr) + 2i\bigl(p_1p'_1 + p_2p'_2 + p_3p'_3\bigr).
 $$</p>
 <p>Equating the real and imaginary parts to $1$ and $0$:</p>
 <p>$$
-\sum_{k=1}^{3} q_k^2 - \sum_{k=1}^{3} (q'_k)^2 = 1, \qquad \sum_{k=1}^{3} q_k q'_k = 0.
+p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1, \qquad p_1p'_1 + p_2p'_2 + p_3p'_3 = 0.
 $$</p>
-<p>The first equation gives $\sum_k q_k^2 = 1 + \sum_k (q'_k)^2 \geq 1 > 0$, so the triple $(q_1, q_2, q_3)$ is nonzero.</p>
-<p><strong>Sub-case 2a: $\mathbf{q}' = 0$.</strong> Then $\sum_k q_k^2 = 1$. Let $\mu = q_1 e_1 + q_2 e_2 + q_3 e_3$, a pure real quaternion with</p>
+<p>The first equation gives $p_1^2 + p_2^2 + p_3^2 = 1 + p_1'^2 + p_2'^2 + p_3'^2 \geq 1 > 0$, so the triple $(p_1, p_2, p_3)$ is nonzero.</p>
+<p><strong>Sub-case B1 — the root is real ($\boldsymbol{p}' = 0$).</strong> The imaginary part of the root vanishes, so the second equation $p_1p'_1 + p_2p'_2 + p_3p'_3 = 0$ holds automatically, and the first equation reduces to the single condition</p>
 <p>$$
-\mu^2 = -\Bigl(\sum_{k=1}^{3} q_k^2\Bigr) e_0 = -1,
+p_1^2 + p_2^2 + p_3^2 = 1 .
 $$</p>
-<p>and $\mathbf{Q} = \mu$, so $\xi = \mu$. These are the <strong>real roots</strong>. The family is invariant under $\mu \mapsto -\mu$, so it may also be written in the redundant form $\xi = \pm \mu$.</p>
-<p><strong>Sub-case 2b: $\mathbf{q}' \neq 0$.</strong> Then $\sum_k q_k^2 \geq 1 > 0$ and $\sum_k (q'_k)^2 > 0$. Put</p>
+<p>The root is the pure real quaternion, with three real coefficients,</p>
 <p>$$
-b = \Bigl(\sum_{k=1}^{3} q_k^2\Bigr)^{1/2} > 0, \qquad d = \Bigl(\sum_{k=1}^{3} (q'_k)^2\Bigr)^{1/2} > 0,
+\tilde P = \boldsymbol{p} = p_1e_1 + p_2e_2 + p_3e_3, \qquad p_1, p_2, p_3 \in \mathbb{R},
 $$</p>
-<p>and define the pure real quaternions</p>
+<p>and squaring it term by term,</p>
 <p>$$
-\mu = \sum_{k=1}^{3} \frac{q_k}{b} e_k, \qquad \nu = \sum_{k=1}^{3} \frac{q'_k}{d} e_k.
+\boldsymbol{p}^2 = p_1^2e_1^2 + p_2^2e_2^2 + p_3^2e_3^2 + p_1p_2\bigl(e_1e_2 + e_2e_1\bigr) + p_1p_3\bigl(e_1e_3 + e_3e_1\bigr) + p_2p_3\bigl(e_2e_3 + e_3e_2\bigr) = -\bigl(p_1^2 + p_2^2 + p_3^2\bigr)e_0 = -e_0 = -1,
 $$</p>
-<p>Then $\sum_k \mu_k^2 = 1$, so $\mu^2 = -1$; likewise $\nu^2 = -1$; and the second equation gives $\sum_k \mu_k \nu_k = \frac{1}{bd} \sum_k q_k q'_k = 0$, hence</p>
+<p>because $e_k^2 = -1$ and each cross term vanishes, $e_je_k + e_ke_j = 0$ for $j \neq k$. So every pure real quaternion satisfying that one condition is a root.</p>
+<p>The condition $p_1^2 + p_2^2 + p_3^2 = 1$ is the <strong>unit sphere</strong> in the three real coordinates $(p_1, p_2, p_3)$: three real coefficients carrying one constraint, hence two free real parameters, which may be taken as two angles on the sphere. <strong>The roots in this case are the pure real quaternions of unit length</strong>, the <strong>real roots</strong> — the roots of $-1$ lying in the real subspace $\mathbb{H}$ of $\mathbb{B}$, that is, the classical imaginary units of the quaternions.</p>
+<p>The two signs describe one set and not two: if $\boldsymbol{p}$ is a root then so is $-\boldsymbol{p}$, because $(-\boldsymbol{p})^2 = \boldsymbol{p}^2 = -1$, and the sphere already contains both. The family is therefore written in the redundant form</p>
 <p>$$
-\mu\nu + \nu\mu = -2\Bigl(\sum_{k=1}^{3} \mu_k \nu_k\Bigr) e_0 = 0 :
+\tilde P = \pm\boldsymbol{p}, \qquad \boldsymbol{p} = p_1e_1 + p_2e_2 + p_3e_3, \qquad p_1^2 + p_2^2 + p_3^2 = 1,
 $$</p>
-<p>the two anticommute. With $\mathbf{q} = b\mu$, $\mathbf{q}' = d\nu$ and the first equation $b^2 - d^2 = 1$,</p>
+<p>the sign being the image of the root under $\boldsymbol{p} \mapsto -\boldsymbol{p}$.</p>
+<p><strong>Sub-case B2 — the root is genuinely complex ($\boldsymbol{p}' \neq 0$).</strong> Then $p_1^2 + p_2^2 + p_3^2 \geq 1 > 0$ and $p_1'^2 + p_2'^2 + p_3'^2 > 0$. The square of a pure real quaternion is a scalar,</p>
 <p>$$
-\mathbf{Q} = \mathbf{q} + i\mathbf{q}' = b\mu + d\nu i.
+\boldsymbol{p}^2 = -\bigl(p_1^2 + p_2^2 + p_3^2\bigr) e_0, \qquad \boldsymbol{p}'^2 = -\bigl(p_1'^2 + p_2'^2 + p_3'^2\bigr) e_0,
 $$</p>
-<p>These are the <strong>non-trivial roots</strong>.</p>
+<p>and the mixed product is a scalar multiple of $e_0$,</p>
+<p>$$
+\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = -2\bigl(p_1p'_1 + p_2p'_2 + p_3p'_3\bigr) e_0 = 0
+$$</p>
+<p>by the second equation, so the two pure real quaternions $\boldsymbol{p}$ and $\boldsymbol{p}'$ anticommute. <strong>The roots in this case are the elements</strong></p>
+<p>$$
+\tilde P = \boldsymbol{p} + i\boldsymbol{p}' = \bigl(p_1e_1 + p_2e_2 + p_3e_3\bigr) + i\bigl(p'_1e_1 + p'_2e_2 + p'_3e_3\bigr),
+$$</p>
+<p>whose six real coefficients satisfy the two conditions</p>
+<p>$$
+p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1, \qquad p_1p'_1 + p_2p'_2 + p_3p'_3 = 0,
+$$</p>
+<p>a four-real-parameter family, the <strong>non-trivial roots</strong>.</p>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
-<p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{B}$ are exactly the elements of the form</p>
+<p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{B}$ are exactly the elements of the three following families.</p>
+<p><strong>The trivial roots.</strong> The two elements</p>
 <p>$$
-\xi = \pm i, \qquad \xi = \pm\mu, \qquad \xi = b\mu + d\nu i,
+\tilde P = +i, \qquad \tilde P = -i .
 $$</p>
-<p>where $\mu$ and $\nu$ are pure real quaternions with $\mu^2 = \nu^2 = -1$ and $\mu\nu + \nu\mu = 0$, and $b, d > 0$ satisfy $b^2 - d^2 = 1$.</p>
-<p>The three families are the <strong>trivial roots</strong> $\xi = \pm i$, the <strong>real roots</strong> $\xi = \pm\mu$, and the <strong>non-trivial roots</strong> $\xi = b\mu + d\nu i$.</p>
+<p><strong>The real roots.</strong> The pure real quaternions of unit length, a two-real-parameter family,</p>
+<p>$$
+\tilde P = \boldsymbol{p} = p_1e_1 + p_2e_2 + p_3e_3, \qquad p_1^2 + p_2^2 + p_3^2 = 1 ;
+$$</p>
+<p>the sign is absorbed, so the family is also written $\tilde P = \pm\boldsymbol{p}$.</p>
+<p><strong>The non-trivial roots.</strong> The four-real-parameter family</p>
+<p>$$
+\tilde P = \boldsymbol{p} + i\boldsymbol{p}' = \bigl(p_1e_1+p_2e_2+p_3e_3\bigr) + i\bigl(p'_1e_1+p'_2e_2+p'_3e_3\bigr),
+$$</p>
+<p>whose six real coefficients satisfy the two conditions</p>
+<p>$$
+p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1, \qquad p_1p'_1 + p_2p'_2 + p_3p'_3 = 0,
+$$</p>
+<p>equivalently $\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = 0$, and whose imaginary part $\boldsymbol{p}'$ is nonzero.</p>
+<p>The three families are disjoint, and together they are all the roots.</p>
 <h3 id="verification">Verification</h3>
 <p>We verify that each of the three families consists of roots of $-1$.</p>
 <p><strong>Trivial root.</strong> $(\pm i)^2 = -1$ since $i^2 = -1$. ✓</p>
-<p><strong>Real roots.</strong> For a pure real quaternion $\mu$ with $\mu^2 = -1$, $(\pm \mu)^2 = \mu^2 = -1$. ✓</p>
+<p><strong>Real roots.</strong> For a pure real quaternion $\boldsymbol{p}$ with $\boldsymbol{p}^2 = -1$, $(\pm \boldsymbol{p})^2 = \boldsymbol{p}^2 = -1$. ✓</p>
 <p><strong>Non-trivial roots.</strong> Compute</p>
 <p>$$
-\xi^2 = (b\mu + d\nu i)^2 = b^2 \mu^2 + d^2 \nu^2 i^2 + bd(\mu\nu + \nu\mu) i.
+\tilde P^2 = (\boldsymbol{p} + i\boldsymbol{p}')^2 = \boldsymbol{p}^2 + i\bigl(\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p}\bigr) + \boldsymbol{p}'^2 i^2 = \boldsymbol{p}^2 - \boldsymbol{p}'^2 + i\bigl(\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p}\bigr).
 $$</p>
-<p>Now $\mu^2 = \nu^2 = -1$ and $i^2 = -1$, so the first two terms sum to $-(b^2 - d^2) e_0$. The cross term $bd(\mu\nu + \nu\mu) i$ vanishes because $\mu$ and $\nu$ anticommute. Therefore</p>
+<p>Now $\boldsymbol{p}^2 = -(p_1^2 + p_2^2 + p_3^2)e_0$, $\boldsymbol{p}'^2 = -(p_1'^2 + p_2'^2 + p_3'^2)e_0$ and $\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = -2(p_1p'_1 + p_2p'_2 + p_3p'_3)e_0 = 0$, so</p>
 <p>$$
-\xi^2 = -(b^2 - d^2) e_0 = -1,
+\tilde P^2 = -\bigl(p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2\bigr) e_0 = -e_0 = -1 . ✓
 $$</p>
-<p>using the constraint $b^2 - d^2 = 1$. ✓</p>
 <h3 id="degenerate-cases">Degenerate Cases</h3>
 <p>The three families are related as follows.</p>
-<p><strong>The real roots as the case $d = 0$.</strong> In the non-trivial family the constraint $b^2 - d^2 = 1$ is carried with $d > 0$. If the condition $d > 0$ is relaxed to $d \geq 0$, then $d = 0$ forces $b = 1$ and $\xi = \mu$, a real root; the element $\nu$ no longer enters. The real roots are therefore the case $d = 0$ of the non-trivial formula, and not a separate construction.</p>
-<p><strong>The trivial roots as a separate family.</strong> The trivial roots $\xi = \pm i$ have vanishing vector part. The real roots (with $\mathbf{Q} = \mu \neq 0$) and the non-trivial roots (with $\mathbf{Q} = b\mu + d\nu i$ and $b \neq 0$, hence $\mathbf{Q} \neq 0$) all have nonvanishing vector part. So the roots with vanishing vector part are exactly $\pm i$, and they form a separate family.</p>
+<p><strong>The real roots as the case $\boldsymbol{p}' = 0$.</strong> In the non-trivial family $\boldsymbol{p}'$ is nonzero. If that condition is relaxed to $\boldsymbol{p}' = 0$, the two constraints reduce to the single equation $p_1^2 + p_2^2 + p_3^2 = 1$, and $\tilde P = \boldsymbol{p}$ is a real root. The real roots are therefore the case $\boldsymbol{p}' = 0$ of the non-trivial formula, and not a separate construction.</p>
+<p><strong>The trivial roots as a separate family.</strong> The trivial roots $\tilde P = \pm i$ have vanishing vector part. The real roots (with $\boldsymbol{P} = \boldsymbol{p} \neq 0$) and the non-trivial roots (with $\boldsymbol{P} = \boldsymbol{p} + i\boldsymbol{p}'$, whose real part $\boldsymbol{p}$ is nonzero since $p_1^2 + p_2^2 + p_3^2 = 1 + p_1'^2 + p_2'^2 + p_3'^2 \geq 1$) all have nonvanishing vector part. So the roots with vanishing vector part are exactly $\pm i$, and they form a separate family.</p>
 <h3 id="status-of-the-roots">Status of the Roots</h3>
-<p>The <strong>trivial</strong> roots are the two elements $\pm i$. The <strong>real</strong> roots are the elements $\pm\mu$ with $\mu$ a pure real quaternion of square $-1$; the single constraint $\sum_k \mu_k^2 = 1$ on the three real coefficients leaves two free real parameters. The <strong>non-trivial</strong> roots are parametrised by the pair $(\mu, \nu)$ with $\mu^2 = \nu^2 = -1$ and $\mu\nu + \nu\mu = 0$ — two free real parameters for $\mu$, and one for $\nu$, its two constraints $\sum_k \nu_k^2 = 1$ and $\sum_k \mu_k \nu_k = 0$ acting on three real coefficients — together with the pair $(b, d)$ with $b^2 - d^2 = 1$ and $b, d > 0$, one further parameter: four free real parameters in all.</p>
-<p>All roots except the trivial ones are <strong>pure</strong> (their scalar part vanishes), hence lie in the six-real-dimensional vector subspace of pure biquaternions. The roots are neither idempotents ($\xi^2 = -1 \neq \xi$) nor zero divisors (§<em>The Roots as Invertible Elements</em>).</p>
+<p>Counting the free real parameters: the trivial roots are two isolated elements, the real roots are a two-real-parameter family (three real coefficients carrying one constraint), and the non-trivial roots are a four-real-parameter family (six real coefficients carrying two constraints).</p>
+<p>All roots except the trivial ones are <strong>pure</strong> (their scalar part vanishes), hence lie in the six-real-dimensional vector subspace of pure biquaternions. The roots are neither idempotents ($\tilde P^2 = -1 \neq \tilde P$) nor zero divisors (§<em>The Roots as Invertible Elements</em>).</p>
 <h2 id="the-roots-of-zero">The Roots of Zero</h2>
 <h3 id="reduction-to-two-cases_1">Reduction to Two Cases</h3>
-<p>A <strong>root of $0$</strong> is an element $\xi \in \mathbb{B}$ with $\xi^2 = 0$. With $\xi = Q_0 + \mathbf{Q}$ the square is $\xi^2 = (Q_0^2 - (\mathbf{Q},\mathbf{Q}))e_0 + 2Q_0\mathbf{Q}$ (§<em>The Problem and Its Reduction</em>), and equating it to $0$ gives</p>
+<p>A <strong>root of $0$</strong> is an element $\tilde P \in \mathbb{B}$ with $\tilde P^2 = 0$. With $\tilde P = P_0 e_0 + \boldsymbol{P}$ the square is $\tilde P^2 = (P_0^2 - (\boldsymbol{P},\boldsymbol{P}))e_0 + 2P_0\boldsymbol{P}$ (§<em>The Problem and Its Reduction</em>), and equating it to $0$ gives</p>
 <p>$$
-2Q_0\mathbf{Q} = 0, \qquad Q_0^2 - (\mathbf{Q},\mathbf{Q}) = 0 .
+2P_0\boldsymbol{P} = 0, \qquad P_0^2 - (\boldsymbol{P},\boldsymbol{P}) = 0 .
 $$</p>
-<p>The first equation is the same vector equation as for the roots of $-1$, and again forces $Q_0 = 0$ or $\mathbf{Q} = 0$.</p>
-<p><strong>Case $\mathbf{Q} = 0$.</strong> Then $\xi = Q_0 e_0$ and $Q_0^2 = 0$; since $\mathbb{C}$ is a field, $Q_0 = 0$. This case gives the single element $\xi = 0$.</p>
-<p><strong>Case $Q_0 = 0$.</strong> Then $\xi = \mathbf{Q}$ is pure and $(\mathbf{Q},\mathbf{Q}) = 0$, that is</p>
+<p>The first equation is the same vector equation as for the roots of $-1$, and again forces $P_0 = 0$ or $\boldsymbol{P} = 0$.</p>
+<p><strong>Case A — the root is a complex scalar ($\boldsymbol{P} = 0$).</strong> Then $\tilde P = P_0 e_0$ and $P_0^2 = 0$; since $\mathbb{C}$ is a field, $P_0 = 0$. <strong>The root in this case is the single element</strong></p>
 <p>$$
-Q_1^2 + Q_2^2 + Q_3^2 = 0 .
+\tilde P = 0 .
 $$</p>
+<p><strong>Case B — the root is pure ($P_0 = 0$).</strong> Then $\tilde P = \boldsymbol{P}$ and $(\boldsymbol{P},\boldsymbol{P}) = 0$, that is</p>
+<p>$$
+\tilde P = P_1e_1 + P_2e_2 + P_3e_3, \qquad P_1^2 + P_2^2 + P_3^2 = 0 .
+$$</p>
+<p><strong>The roots in this case are the pure biquaternions of vanishing complex square</strong>, a four-real-parameter family; writing $P_k = p_k + ip'_k$, the condition is the pair of real equations $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2 = 0$ and $p_1p'_1+p_2p'_2+p_3p'_3 = 0$.</p>
 <h3 id="statement-of-the-theorem_1">Statement of the Theorem</h3>
-<p><strong>Theorem.</strong> The roots of $0$ in $\mathbb{B}$ are the element $0$ together with the pure biquaternions of vanishing complex square,</p>
+<p><strong>Theorem.</strong> The roots of $0$ in $\mathbb{B}$ are exactly the following.</p>
+<p><strong>The zero element.</strong></p>
 <p>$$
-\xi = 0 \quad\text{or}\quad \xi = Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_1^2+Q_2^2+Q_3^2 = 0 .
+\tilde P = 0 .
 $$</p>
-<p>Writing $Q_k = q_k + i q'_k$, the condition on the pure case is the pair of real equations $\sum_k (q_k^2 - (q'_k)^2) = 0$ and $\sum_k q_k q'_k = 0$: four free real parameters inside the six-real-dimensional pure subspace.</p>
+<p><strong>The nilpotent cone.</strong> The pure biquaternions of vanishing complex square, a four-real-parameter family,</p>
+<p>$$
+\tilde P = P_1e_1 + P_2e_2 + P_3e_3, \qquad P_1^2 + P_2^2 + P_3^2 = 0,
+$$</p>
+<p>that is, writing $P_k = p_k + ip'_k$, the pair of real equations $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2 = 0$ and $p_1p'_1+p_2p'_2+p_3p'_3 = 0$. Its nonzero elements are the nilpotents of the algebra.</p>
 <h3 id="verification_1">Verification</h3>
-<p>For a pure $\xi$ with $(\mathbf{Q},\mathbf{Q}) = 0$ the scalar part of $\xi^2$ is $-(\mathbf{Q},\mathbf{Q}) = 0$ and the vector part is $2Q_0\mathbf{Q} = 0$, and the two cases are exhaustive by the reduction above. ✓</p>
-<p>The nonzero roots of $0$ are exactly the <strong>nilpotents</strong> of the algebra, and they form the <strong>nilpotent cone</strong> of the pure subspace. An example is $\xi = e_1 + ie_2$, for which</p>
+<p>For a pure $\tilde P$ with $(\boldsymbol{P},\boldsymbol{P}) = 0$ the scalar part of $\tilde P^2$ is $-(\boldsymbol{P},\boldsymbol{P}) = 0$ and the vector part is $2P_0\boldsymbol{P} = 0$, and the two cases are exhaustive by the reduction above. ✓</p>
+<p>The nonzero roots of $0$ are exactly the <strong>nilpotents</strong> of the algebra, and they form the <strong>nilpotent cone</strong> of the pure subspace. An example is $\tilde P = e_1 + ie_2$, for which</p>
 <p>$$
 (e_1+ie_2)^2 = e_1^2 + i^2e_2^2 + i(e_1e_2+e_2e_1) = -1 + 1 + 0 = 0 .
 $$</p>
 <p>The set is the zero-divisor set of $\mathbb{B}$ — the elements of vanishing complex square — whose structure, its two families and the criterion in terms of the scalar part, is the subject of <em>Biquaternion Zero Divisors</em>. It is named here only to complete the list of the three central values, and not developed.</p>
 <h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
 <h3 id="statement-of-the-theorem_2">Statement of the Theorem</h3>
-<p>A <strong>root of $+1$</strong> is an element $\eta \in \mathbb{B}$ satisfying $\eta^2 = 1$. The roots of $+1$ are related to the roots of $-1$ by</p>
+<p>A <strong>root of $+1$</strong> is an element $\tilde P_+ \in \mathbb{B}$ satisfying $\tilde P_+^2 = 1$. The roots of $+1$ are related to the roots of $-1$ by</p>
 <p>$$
-\eta = \xi i,
+\tilde P_+ = \tilde P i,
 $$</p>
-<p>where $\xi$ is a root of $-1$. Applying the classification of the roots of $-1$:</p>
-<ul>
-<li><strong>Non-trivial roots of $+1$:</strong> $\eta = b\mu i + d\nu i^2 = b\mu i - d\nu$, with $b^2 - d^2 = 1$ and $\mu\nu + \nu\mu = 0$.</li>
-<li><strong>Trivial roots of $+1$:</strong> $\eta = \pm 1$ (from $\xi = \pm i$). These are the only roots of $+1$ that lie in the center $\mathbb{C}$.</li>
-<li><strong>Real roots of $+1$:</strong> $\eta = \pm \mu i$, where $\mu$ is a pure real quaternion with $\mu^2 = -1$.</li>
-</ul>
+<p>where $\tilde P$ is a root of $-1$. <strong>The roots of $+1$ are exactly the following three families.</strong></p>
+<p><strong>The trivial roots.</strong> The two elements</p>
+<p>$$
+\tilde P_+ = +1, \qquad \tilde P_+ = -1,
+$$</p>
+<p>the images of $\tilde P = \pm i$. They are the only roots of $+1$ that lie in the centre $\mathbb{C}$.</p>
+<p><strong>The real roots.</strong> The images of the real roots of $-1$: the elements</p>
+<p>$$
+\tilde P_+ = \pm\boldsymbol{p}i, \qquad \boldsymbol{p} = p_1e_1 + p_2e_2 + p_3e_3, \qquad p_1^2 + p_2^2 + p_3^2 = 1,
+$$</p>
+<p>where $\boldsymbol{p}$ is a pure real quaternion of unit length. Each one is a root of $+1$, since</p>
+<p>$$
+(\boldsymbol{p}i)^2 = \boldsymbol{p}^2 i^2 = (-1)(-1) = 1 .
+$$</p>
+<p>Spelled out, the family is $\tilde P_+ = \pm(p_1e_1 + p_2e_2 + p_3e_3)i$ with $p_1^2 + p_2^2 + p_3^2 = 1$: the same unit sphere of the real roots of $-1$, mapped by $\boldsymbol{p} \mapsto \boldsymbol{p}i$. It is a <strong>two-real-parameter family</strong>, and its elements are the only roots of $+1$ that are pure multiples of a real quaternion.</p>
+<p><strong>The non-trivial roots.</strong> The four-real-parameter family</p>
+<p>$$
+\tilde P_+ = (\boldsymbol{p} + i\boldsymbol{p}') i = \boldsymbol{p}i - \boldsymbol{p}', \qquad \boldsymbol{p}' \neq 0,
+$$</p>
+<p>whose six real coefficients satisfy $p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1$ and $p_1p'_1 + p_2p'_2 + p_3p'_3 = 0$.</p>
 <h3 id="verification_2">Verification</h3>
-<p>That $\eta = \xi i$ is a root of $+1$ follows from</p>
+<p>That $\tilde P_+ = \tilde P i$ is a root of $+1$ follows from</p>
 <p>$$
-(\xi i)^2 = \xi^2 i^2 = (-1)(-1) = 1,
+(\tilde P i)^2 = \tilde P^2 i^2 = (-1)(-1) = 1,
 $$</p>
-<p>and the map $\xi \mapsto \xi i$ is a bijection from the roots of $-1$ to the roots of $+1$: it is injective since $i$ is invertible, and if $\eta^2 = 1$ then $\xi = -\eta i$ satisfies $\xi^2 = -1$ and $\xi i = \eta$. ✓</p>
+<p>and the map $\tilde P \mapsto \tilde P i$ is a bijection from the roots of $-1$ to the roots of $+1$: it is injective since $i$ is invertible, and if $\tilde P_+^2 = 1$ then $\tilde P = -\tilde P_+ i$ satisfies $\tilde P^2 = -1$ and $\tilde P i = \tilde P_+$. ✓</p>
 <p>The roots of $+1$ are not used in the classification of the idempotents, but they appear in the theory of the biquaternion exponential and in the theory of the biquaternion logarithm.</p>
 <h2 id="the-three-sets-compared">The Three Sets Compared</h2>
-<p>The three root sets are related by their invertibility. The roots of $-1$ and of $+1$ are <strong>units</strong>: a root $\xi$ of $\pm 1$ satisfies $\xi^{-1} = \pm\xi$, in $\mathbb{B}^\times$. The nonzero roots of $0$ are the exception: they are nilpotents, hence zero divisors and not units. So of the three central values only $0$ has non-unit roots.</p>
-<p>The three sets also differ in kind. The roots of $-1$ are two isolated elements together with a two-parameter family and a four-parameter family; the roots of $+1$ are the bijective image of that set under $\xi \mapsto \xi i$; and the roots of $0$ are the single element $0$ together with one four-parameter family, the nilpotent cone. In particular the roots of $0$ contain no unit, and the only non-pure roots of the three values are the trivial ones, $\pm i$ for $-1$ and $\pm 1$ for $+1$.</p>
+<p>The three root sets are related by their invertibility. The roots of $-1$ and of $+1$ are <strong>units</strong>: a root $\tilde P$ of $\pm 1$ satisfies $\tilde P^{-1} = \pm\tilde P$, in $\mathbb{B}^\times$. The nonzero roots of $0$ are the exception: they are nilpotents, hence zero divisors and not units. So of the three central values only $0$ has non-unit roots.</p>
+<p>The three sets also differ in kind. The roots of $-1$ are two isolated elements together with a two-parameter family and a four-parameter family; the roots of $+1$ are the bijective image of that set under $\tilde P \mapsto \tilde P i$; and the roots of $0$ are the single element $0$ together with one four-parameter family, the nilpotent cone. In particular the roots of $0$ contain no unit, and the only non-pure roots of the three values are the trivial ones, $\pm i$ for $-1$ and $\pm 1$ for $+1$.</p>
 <h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
 <p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$: the map</p>
 <p>$$
-\xi \longmapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)
+\tilde P \longmapsto \tilde\Pi_+(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)
 $$</p>
-<p>is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\xi, -\xi\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of <em>Biquaternion Idempotents and Projections</em>.</p>
+<p>is a bijection from the set of roots of $-1$ onto the set of idempotents, under which the complementary pairs $\{\tilde\Pi, e_0 - \tilde\Pi\}$ correspond to the classes $\{\tilde P, -\tilde P\}$, and under which the three families of roots give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and the idempotents lying in none of the four four-dimensional subspaces. The construction of the idempotent, the proof of the bijection and the projection interpretation are the subject of <em>Biquaternion Idempotents and Projections</em>.</p>
 <h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
 <h3 id="the-idempotents-as-zero-divisors">The Idempotents as Zero Divisors</h3>
 <p>Every non-trivial idempotent is a zero divisor, $\tilde\Pi(e_0 - \tilde\Pi) = 0$ with both factors nonzero (the construction of $\tilde\Pi$ is in <em>Biquaternion Idempotents and Projections</em>). The trivial idempotents $0$ and $e_0$ are not zero divisors: $0$ is excluded by the definition, and $e_0$ is a unit.</p>
 <h3 id="the-roots-as-invertible-elements">The Roots as Invertible Elements</h3>
-<p>A root of $-1$ is a unit and <strong>not</strong> a zero divisor. Indeed, $\xi^2 = -1$ gives</p>
+<p>A root of $-1$ is a unit and <strong>not</strong> a zero divisor. Indeed, $\tilde P^2 = -1$ gives</p>
 <p>$$
-\xi\,(-\xi) = (-\xi)\,\xi = e_0,
+\tilde P\,(-\tilde P) = (-\tilde P)\,\tilde P = e_0,
 $$</p>
-<p>so $\xi$ is invertible, with inverse $\xi^{-1} = -\xi$. A unit is not a zero divisor: if $\xi R = 0$ for some $R$, then $R = (-\xi)(\xi R) = 0$, and the same argument applies to $R\xi = 0$. Hence the roots of $-1$ lie in the group of units $\mathbb{B}^\times$. The central scalar $\xi \xi^{\natural}$ is $-1$ for the trivial roots and $+1$ for a pure root.</p>
+<p>so $\tilde P$ is invertible, with inverse $\tilde P^{-1} = -\tilde P$. A unit is not a zero divisor: if $\tilde P \tilde Q = 0$ for some $\tilde Q$, then $\tilde Q = (-\tilde P)(\tilde P \tilde Q) = 0$, and the same argument applies to $\tilde Q\tilde P = 0$. Hence the roots of $-1$ lie in the group of units $\mathbb{B}^\times$. The central scalar $\tilde P \tilde P^{\natural}$ is $-1$ for the trivial roots and $+1$ for a pure root.</p>
 <h2 id="summary">Summary</h2>
-<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra, by one reduction applied three times: writing $\xi = Q_0 + \mathbf{Q}$ and using the product formula $\xi^2 = (Q_0^2 - (\mathbf{Q},\mathbf{Q}))e_0 + 2Q_0\mathbf{Q}$, the vector part forces $Q_0 = 0$ or $\mathbf{Q} = 0$, and the scalar part then gives the equation of the value.</p>
+<p>This article determines the square roots of the three central values $-1$, $0$ and $+1$ in the biquaternion algebra, by one reduction applied three times: writing $\tilde P = P_0 e_0 + \boldsymbol{P}$ and using the product formula $\tilde P^2 = (P_0^2 - (\boldsymbol{P},\boldsymbol{P}))e_0 + 2P_0\boldsymbol{P}$, the vector part forces $P_0 = 0$ or $\boldsymbol{P} = 0$, and the scalar part then gives the equation of the value.</p>
 <p>The square roots of $-1$ are exactly:</p>
 <ol>
-<li><strong>Non-trivial roots:</strong> $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are pure real quaternions with $\mu^2 = \nu^2 = -1$ and $\mu\nu + \nu\mu = 0$, and $b, d > 0$ satisfy $b^2 - d^2 = 1$.</li>
-<li><strong>Trivial roots:</strong> $\xi = \pm i$.</li>
-<li><strong>Real roots:</strong> $\xi = \pm \mu$, where $\mu$ is a pure real quaternion with $\mu^2 = -1$.</li>
+<li><strong>Trivial roots:</strong> $\tilde P = \pm i$.</li>
+<li><strong>Real roots:</strong> $\tilde P = \pm\boldsymbol{p}$, where $\boldsymbol{p}$ is a pure real quaternion with $\boldsymbol{p}^2 = -1$.</li>
+<li><strong>Non-trivial roots:</strong> $\tilde P = \boldsymbol{p} + i\boldsymbol{p}'$, where $\boldsymbol{p}' \neq 0$ and the two real conditions $p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1$ and $p_1p'_1 + p_2p'_2 + p_3p'_3 = 0$ hold.</li>
 </ol>
-<p>The scalar case gives the trivial roots. The pure case reduces to $(\mathbf{Q}, \mathbf{Q}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part of the pure biquaternion vanishes. The trivial roots are the two elements $\pm i$. The real roots are the family $\pm\mu$ cut out by the single constraint $\sum_k \mu_k^2 = 1$, leaving two free real parameters. The non-trivial roots carry the pair $(\mu, \nu)$ with $\mu^2 = \nu^2 = -1$ and $\mu\nu + \nu\mu = 0$ together with the pair $(b, d)$ with $b^2 - d^2 = 1$ and $b, d > 0$, four free real parameters in all. All roots except the trivial ones are pure, hence lie in the six-real-dimensional vector subspace of pure biquaternions.</p>
-<p>The square roots of $0$ are the element $0$ together with the pure biquaternions $\xi = Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_1^2+Q_2^2+Q_3^2=0$, a four-real-parameter nilpotent cone whose nonzero elements are the nilpotents of the algebra, for example $e_1+ie_2$. Unlike the roots of $-1$ and $+1$, which are units, the nonzero roots of $0$ are zero divisors; the full structure of the cone, and the classification of the zero divisors it is part of, are in <em>Biquaternion Zero Divisors</em>, and the classification of $\xi^2=\tilde Q$ for a general $\tilde Q$ is in <em>Biquaternion Square Roots of a General Element</em>.</p>
-<p>The square roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.</p>
-<p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto \tilde\Pi_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-real-parameter family, and are used in the classification of the non-pure zero divisors. The roots themselves are units, and they lie in the group of units $\mathbb{B}^\times$.</p>
+<p>The scalar case gives the trivial roots. The pure case reduces to $(\boldsymbol{P}, \boldsymbol{P}) = 1$, which splits into the real and non-trivial families according to whether the imaginary part $\boldsymbol{p}'$ of the pure biquaternion vanishes. The trivial roots are the two elements $\pm i$. The real roots are the family $\pm\boldsymbol{p}$ cut out by the single constraint $p_1^2 + p_2^2 + p_3^2 = 1$, leaving two free real parameters. The non-trivial roots are the elements $\boldsymbol{p} + i\boldsymbol{p}'$ cut out by the two constraints $p_1^2 + p_2^2 + p_3^2 - p_1'^2 - p_2'^2 - p_3'^2 = 1$ and $p_1p'_1 + p_2p'_2 + p_3p'_3 = 0$, four free real parameters in all. All roots except the trivial ones are pure, hence lie in the six-real-dimensional vector subspace of pure biquaternions.</p>
+<p>The square roots of $0$ are the element $0$ together with the pure biquaternions $\tilde P = P_1e_1+P_2e_2+P_3e_3$ with $P_1^2+P_2^2+P_3^2=0$, a four-real-parameter nilpotent cone whose nonzero elements are the nilpotents of the algebra, for example $e_1+ie_2$. Unlike the roots of $-1$ and $+1$, which are units, the nonzero roots of $0$ are zero divisors; the full structure of the cone, and the classification of the zero divisors it is part of, are in <em>Biquaternion Zero Divisors</em>, and the classification of $\tilde P^2=\tilde Q$ for a general $\tilde Q$ is in <em>Biquaternion Square Roots of a General Element</em>.</p>
+<p>The square roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\tilde P_+ = \tilde P i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.</p>
+<p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde P i$. The map $\tilde P \mapsto \tilde\Pi_+(\tilde P) = \tfrac{1}{2}(e_0 + \tilde P i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\tilde P \sim -\tilde P$. The non-trivial idempotents form a four-real-parameter family, and are used in the classification of the non-pure zero divisors. The roots themselves are units, and they lie in the group of units $\mathbb{B}^\times$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -249,31 +308,31 @@ $$</p>
 <td>Scalar imaginary</td>
 </tr>
 <tr>
-<td>$\xi$</td>
-<td>Root of $-1$ or of $0$</td>
+<td>$\tilde P$</td>
+<td>A biquaternion; here the root of $-1$ or of $0$</td>
 </tr>
 <tr>
-<td>$\eta$</td>
-<td>Root of $+1$</td>
+<td>$\tilde P_+$</td>
+<td>The root of $+1$</td>
 </tr>
 <tr>
-<td>$Q_0$</td>
-<td>Complex scalar part of the root, $Q_0 \in \mathbb{C}$</td>
+<td>$\tilde Q$</td>
+<td>A second biquaternion, the element whose roots are sought in the general problem</td>
 </tr>
 <tr>
-<td>$\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$</td>
+<td>$P_k = p_k + ip'_k$, $k=0,\dots,3$</td>
+<td>Complex components of the root, $P_k \in \mathbb{C}$; the scalar part is $P_0 e_0$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{P} = P_1e_1+P_2e_2+P_3e_3$</td>
 <td>Complex vector part of the root</td>
 </tr>
 <tr>
-<td>$\mu, \nu$</td>
-<td>Pure real quaternions with $\mu^2 = \nu^2 = -1$</td>
+<td>$\boldsymbol{p}, \boldsymbol{p}'$</td>
+<td>Its real and imaginary parts, $\boldsymbol{P} = \boldsymbol{p} + i\boldsymbol{p}'$</td>
 </tr>
 <tr>
-<td>$b, d$</td>
-<td>Real parameters with $b^2 - d^2 = 1$</td>
-</tr>
-<tr>
-<td>$\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$</td>
+<td>$\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde P i$</td>
 <td>Idempotent</td>
 </tr>
 </tbody>
@@ -286,7 +345,7 @@ $$</p>
 <li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the constraint verification.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
-<li>A. Acus and A. Dargys, <em>Square roots of complexified quaternions</em>, arXiv:2601.08391 (2026), for the square roots of an arbitrary complexified quaternion and the Clifford-algebra algorithm, the subject of <em>Biquaternion Square Roots of a General Element</em>.</li>
+<li>A. Acus and A. Dargys, <em>Square roots of complexified quaternions</em>, arXiv:2601.08391 (2026), for the square roots of an arbitrary complexified quaternion, the subject of <em>Biquaternion Square Roots of a General Element</em>.</li>
 </ul>
       </div>
     </main>

@@ -92,10 +92,10 @@ $$</p>
 <p>$$
 \mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & \tilde o & \tilde p\\ \tilde o^{\natural} & \beta & \tilde r\\ \tilde p^{\natural} & \tilde r^{\natural} & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ \tilde o,\tilde p,\tilde r\in\mathbb{O},
 $$</p>
-<p>with the symmetrised product $A\circ B = \tfrac{1}{2}(AB + BA)$.</p>
-<p><strong>Proposition.</strong> $\mathrm{H}_3(\mathbb{O})$ is a real vector space of dimension $3 + 3\cdot 8 = 27$; the product $\circ$ is commutative and satisfies the Jordan identity $(A\circ B)\circ(A\circ A) = A\circ(B\circ(A\circ A))$, and the algebra is <strong>exceptional</strong>, that is, it is not isomorphic to a subalgebra of an associative algebra with the symmetrised product.</p>
+<p>with the symmetrised product $A\bullet B = \tfrac{1}{2}(AB + BA)$.</p>
+<p><strong>Proposition.</strong> $\mathrm{H}_3(\mathbb{O})$ is a real vector space of dimension $3 + 3\cdot 8 = 27$; the product $\bullet$ is commutative and satisfies the Jordan identity $(A\bullet B)\bullet(A\bullet A) = A\bullet(B\bullet(A\bullet A))$, and the algebra is <strong>exceptional</strong>, that is, it is not isomorphic to a subalgebra of an associative algebra with the symmetrised product.</p>
 <p><em>Proof.</em> The dimension count is immediate: three real diagonal entries and three octonion off-diagonal entries, the conjugate entries determined. The Jordan identity is the standard theorem on Hermitian matrices over a composition algebra, verified by a finite expansion using the alternating property of the associator; exceptionality is the theorem of Albert, quoted as standard.</p>
-<p>The product $\circ$ requires the two octonion products $\tilde o\tilde p$ and $\tilde p\tilde o$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.</p>
+<p>The product $\bullet$ requires the two octonion products $\tilde o\tilde p$ and $\tilde p\tilde o$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.</p>
 <p><strong>Definition.</strong> The <strong>determinant</strong> of $A\in\mathrm{H}_3(\mathbb{O})$ is the real cubic form</p>
 <p>$$
 \det A = \alpha\beta\gamma + 2\operatorname{Sc}(\tilde o\tilde p\tilde r) - \alpha\lvert \tilde r\rvert^2 - \beta\lvert \tilde p\rvert^2 - \gamma\lvert \tilde o\rvert^2 ,
@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof.</em> The determinants of the three principal $2\times2$ minors together with $\det$ give the structure of a cubic Jordan algebra; closedness under the inverse and the identities are the standard ones of a Jordan algebra of degree three, verified by expansion. The identification of the automorphism group with the compact $F_4$ and the dimension count $\dim F_4 = 52$ are the standard theorem of Chevalley and Schafer, quoted with the sources cited.</p>
 <p>The appearance of the associative triple $\operatorname{Sc}(\tilde o\tilde p\tilde r)$ in the determinant is the way in which the octonion multiplication enters: the triple product is alternating in $\tilde o,\tilde p,\tilde r$, so the three bracketings agree on its real part, and the non-associativity of $\mathbb{O}$ does not reach the determinant.</p>
 <h3 id="the-freudenthal-triple-system-and-the-groups-math99-math100">The Freudenthal Triple System and the Groups $E_6$, $E_7$</h3>
-<p><strong>Definition.</strong> The <strong>Freudenthal triple system</strong> associated with $\mathrm{H}_3(\mathbb{O})$ is the pair $(\mathbb{R}\oplus\mathbb{R}\oplus\mathrm{H}_3(\mathbb{O})\oplus\mathrm{H}_3(\mathbb{O}), [\cdot,\cdot,\cdot])$ with the triple product built from the determinant, the adjoint (the quadratic map $A\mapsto A^\# = A\circ A - \operatorname{tr}(A)A + \cdots$) and the trace pairing.</p>
+<p><strong>Definition.</strong> The <strong>Freudenthal triple system</strong> associated with $\mathrm{H}_3(\mathbb{O})$ is the pair $(\mathbb{R}\oplus\mathbb{R}\oplus\mathrm{H}_3(\mathbb{O})\oplus\mathrm{H}_3(\mathbb{O}), [\cdot,\cdot,\cdot])$ with the triple product built from the determinant, the adjoint (the quadratic map $A\mapsto A^\# = A\bullet A - \operatorname{tr}(A)A + \cdots$) and the trace pairing.</p>
 <p><strong>Theorem.</strong> The groups associated with the exceptional Jordan algebra are the following.</p>
 <ol>
 <li>The reduced structure group of the cubic form, that is the group of linear maps preserving the determinant up to a scalar, is the group $E_6$; in its simply connected form it is a compact simple Lie group of dimension $78$ and rank six, and the automorphism group $F_4$ sits inside it as the subgroup fixing the trilinear form, giving the chain
@@ -264,7 +264,7 @@ $$</p>
 <td>Exceptional Jordan algebra, Hermitian $3\times3$ matrices, $\dim 27$</td>
 </tr>
 <tr>
-<td>$A\circ B = \tfrac12(AB+BA)$, $\operatorname{tr}$, $\det$</td>
+<td>$A\bullet B = \tfrac12(AB+BA)$, $\operatorname{tr}$, $\det$</td>
 <td>Jordan product, trace, cubic determinant</td>
 </tr>
 <tr>

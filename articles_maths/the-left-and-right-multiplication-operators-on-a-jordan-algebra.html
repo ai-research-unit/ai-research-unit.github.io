@@ -52,18 +52,18 @@
       <div class="article-body">
         <h1 id="the-left-and-right-multiplication-operators-on-a-jordan-algebra"><strong>The Left and Right Multiplication Operators on a Jordan Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>In an associative algebra there are two one-sided multiplications, $L_a(x) = ax$ and $R_a(x) = xa$, and the whole theory of two-sided operators rests on the fact that they differ. The defining axiom of a Jordan algebra is the <strong>commutativity</strong> of its product, $x\circ y = y\circ x$, and the first consequence recorded here is that the two families collapse into one: $L_a = R_a$ for every $a$. There is a single family of one-sided multiplications on a Jordan algebra, and the operator that plays the role of the two-sided product is not a product of two one-sided operators, because $L_aL_b$ is not a multiplication. It is instead the <strong>symmetrised</strong> product</p>
+<p>In an associative algebra there are two one-sided multiplications, $L_a(x) = ax$ and $R_a(x) = xa$, and the whole theory of two-sided operators rests on the fact that they differ. The defining axiom of a Jordan algebra is the <strong>commutativity</strong> of its product, $x\bullet y = y\bullet x$, and the first consequence recorded here is that the two families collapse into one: $L_a = R_a$ for every $a$. There is a single family of one-sided multiplications on a Jordan algebra, and the operator that plays the role of the two-sided product is not a product of two one-sided operators, because $L_aL_b$ is not a multiplication. It is instead the <strong>symmetrised</strong> product</p>
 <p>$$
-U_{a,b} = L_aL_b + L_bL_a - L_{a\circ b} ,
+U_{a,b} = L_aL_b + L_bL_a - L_{a\bullet b} ,
 $$</p>
 <p>the <strong>quadratic representation</strong>, whose diagonal $U_a = U_{a,a}$ is the operator of the square and whose special form is $U_{a,b}(x) = \tfrac12(axb + bxa)$ and $U_a(x) = axa$.</p>
-<p>The article defines the two one-sided families, proves that they coincide, and then develops the quadratic representation: the fundamental formula $U_{U_a b} = U_aU_bU_a$ quoted from <em>The Jordan Multiplication Operators</em>, the identification of $U_a$ as the square in the operator algebra, invertibility, its action on the Peirce spaces of an idempotent, and its role as the source of the symmetries $a$ with $a \circ a = 1$. It is the companion of <em>The Jordan Multiplication Operators</em>: that article owns the one-sided family $L_a$ and the multiplication algebra it generates, this one owns the pair $L_a, R_a$ and the two-sided operator $U_{a,b}$. The quadratic representation is defined here and its theory is developed here; the special-case computation and the fundamental formula are proved there and are cited. The trace form and the symmetries are used again in <em>The Signed Sandwich on a Jordan Algebra</em> and in the <code>* Operator Theory</code> group. The article stays inside Part I: no form, norm, distance or topology occurs, and the "symmetry" is an algebraic element with $a \circ a = 1$, not a geometric reflection.</p>
+<p>The article defines the two one-sided families, proves that they coincide, and then develops the quadratic representation: the fundamental formula $U_{U_a b} = U_aU_bU_a$ quoted from <em>The Jordan Multiplication Operators</em>, the identification of $U_a$ as the square in the operator algebra, invertibility, its action on the Peirce spaces of an idempotent, and its role as the source of the symmetries $a$ with $a \bullet a = 1$. It is the companion of <em>The Jordan Multiplication Operators</em>: that article owns the one-sided family $L_a$ and the multiplication algebra it generates, this one owns the pair $L_a, R_a$ and the two-sided operator $U_{a,b}$. The quadratic representation is defined here and its theory is developed here; the special-case computation and the fundamental formula are proved there and are cited. The trace form and the symmetries are used again in <em>The Signed Sandwich on a Jordan Algebra</em> and in the <code>* Operator Theory</code> group. The article stays inside Part I: no form, norm, distance or topology occurs, and the "symmetry" is an algebraic element with $a \bullet a = 1$, not a geometric reflection.</p>
 <h2 id="the-two-one-sided-families">The Two One-Sided Families</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> For $a \in J$ the <strong>left multiplication</strong> and the <strong>right multiplication</strong> by $a$ are the $R$-linear maps</p>
 <p>$$
-L_a : J \to J, \qquad L_a(x) = a \circ x , \qquad
-R_a : J \to J, \qquad R_a(x) = x \circ a .
+L_a : J \to J, \qquad L_a(x) = a \bullet x , \qquad
+R_a : J \to J, \qquad R_a(x) = x \bullet a .
 $$</p>
 <p>Both are $R$-linear in $a$ and in $x$, and both are injective and unital when $J$ is unital.</p>
 <h3 id="the-commutativity-of-the-two">The Commutativity of the Two</h3>
@@ -71,24 +71,24 @@ $$</p>
 <p>$$
 L_a = R_a .
 $$</p>
-<p><em>Proof.</em> For every $x$, $L_a(x) = a \circ x = x \circ a = R_a(x)$, by the commutativity axiom of the Jordan product. $\square$</p>
-<p><strong>Corollary.</strong> A Jordan algebra carries one family of one-sided multiplications, not two; the left and the right action coincide, and there is no opposite-algebra distinction of the kind that <em>Left and Right Multiplication in a Ring</em> records for an associative algebra. Consequently every operator built from one-sided multiplications is symmetric in the sense that interchanging a left and a right factor does not change it, and the product of two multiplications is commutative only exceptionally: $L_aL_b = L_bL_a$ precisely when $(a\circ x)\circ b = (b\circ x)\circ a$ for all $x$, which holds for all $a, b$ exactly when $J$ is associative.</p>
+<p><em>Proof.</em> For every $x$, $L_a(x) = a \bullet x = x \bullet a = R_a(x)$, by the commutativity axiom of the Jordan product. $\square$</p>
+<p><strong>Corollary.</strong> A Jordan algebra carries one family of one-sided multiplications, not two; the left and the right action coincide, and there is no opposite-algebra distinction of the kind that <em>Left and Right Multiplication in a Ring</em> records for an associative algebra. Consequently every operator built from one-sided multiplications is symmetric in the sense that interchanging a left and a right factor does not change it, and the product of two multiplications is commutative only exceptionally: $L_aL_b = L_bL_a$ precisely when $(a\bullet x)\bullet b = (b\bullet x)\bullet a$ for all $x$, which holds for all $a, b$ exactly when $J$ is associative.</p>
 <p><strong>Remark.</strong> The collapse $L_a = R_a$ is the operator form of commutativity: the commutation of $L_a$ and $R_b$, which for an associative algebra is automatic, here becomes the statement $[L_a, L_b] = 0$, i.e. the statement that $J$ is associative. The failure of the family to be commutative is thus exactly the failure of associativity, and it is measured by the inner derivations $[L_a, L_b]$ of <em>The Jordan Multiplication Operators</em>.</p>
 <p><strong>Example.</strong> For the spin factor $J = R\oplus V$ of <em>Jordan Algebras</em> the two families coincide, and in the basis $1, e_1, e_2$ the two matrices of the previous section are the same whether read as $L_{e_1}$ or as $R_{e_1}$, because they are symmetric. For a special Jordan algebra $J = A^+$ with the halved product, $L_a = R_a$ is the symmetrised one-sided multiplication $\tfrac12(\lambda_a+\rho_a)$ of $A$, so the collapse of the Jordan families is the statement $\tfrac12(\lambda_a+\rho_a) = \tfrac12(\rho_a+\lambda_a)$, which is trivial, while the one-sided multiplications of $A$ themselves do not collapse.</p>
 <h2 id="the-quadratic-representation">The Quadratic Representation</h2>
 <h3 id="definition-as-a-symmetrised-product">Definition as a Symmetrised Product</h3>
 <p><strong>Definition.</strong> For $a, b\in J$ the <strong>quadratic representation</strong> is</p>
 <p>$$
-U_{a,b} = L_aL_b + L_bL_a - L_{a\circ b} \in \operatorname{Mult}(J) ,
+U_{a,b} = L_aL_b + L_bL_a - L_{a\bullet b} \in \operatorname{Mult}(J) ,
 $$</p>
 <p>and the <strong>quadratic representation of an element</strong> is $U_a = U_{a,a} = 2L_a^2 - L_{a^2}$.</p>
-<p>The operator $U_{a,b}$ is the symmetrised product of the one-sided multiplications, corrected by the multiplication by $a\circ b$; equivalently $L_aL_b + L_bL_a = U_{a,b} + L_{a\circ b}$, so the symmetrised product of two multiplications is a quadratic representation plus a multiplication. The correction is forced by the Jordan identity and is what makes $U_{a,b}$ bilinear in its parameters rather than quadratic in each. It is symmetric, $U_{a,b} = U_{b,a}$, and polarised, $U_{a,b} = \tfrac12(U_{a+b} - U_a - U_b)$, as in <em>The Polarisation Operator</em>.</p>
+<p>The operator $U_{a,b}$ is the symmetrised product of the one-sided multiplications, corrected by the multiplication by $a\bullet b$; equivalently $L_aL_b + L_bL_a = U_{a,b} + L_{a\bullet b}$, so the symmetrised product of two multiplications is a quadratic representation plus a multiplication. The correction is forced by the Jordan identity and is what makes $U_{a,b}$ bilinear in its parameters rather than quadratic in each. It is symmetric, $U_{a,b} = U_{b,a}$, and polarised, $U_{a,b} = \tfrac12(U_{a+b} - U_a - U_b)$, as in <em>The Polarisation Operator</em>.</p>
 <h3 id="the-special-case">The Special Case</h3>
-<p><strong>Theorem.</strong> For a special Jordan algebra $J = A^+$ with the product $x\circ y = \tfrac12(xy+yx)$,</p>
+<p><strong>Theorem.</strong> For a special Jordan algebra $J = A^+$ with the product $x\bullet y = \tfrac12(xy+yx)$,</p>
 <p>$$
 U_{a,b}(x) = \tfrac12\bigl(axb + bxa\bigr), \qquad U_a(x) = axa .
 $$</p>
-<p><em>Proof.</em> Expand $L_a = \tfrac12(\lambda_a+\rho_a)$ and $L_aL_b+L_bL_a-L_{a\circ b}$ in the one-sided multiplications of $A$ as in <em>The Jordan Multiplication Operators</em>. The computation gives $U_{a,b} = \tfrac12(\lambda_a\rho_b + \lambda_b\rho_a)$, which is $x\mapsto\tfrac12(axb+bxa)$; at $b=a$ this is $axa$. $\square$</p>
+<p><em>Proof.</em> Expand $L_a = \tfrac12(\lambda_a+\rho_a)$ and $L_aL_b+L_bL_a-L_{a\bullet b}$ in the one-sided multiplications of $A$ as in <em>The Jordan Multiplication Operators</em>. The computation gives $U_{a,b} = \tfrac12(\lambda_a\rho_b + \lambda_b\rho_a)$, which is $x\mapsto\tfrac12(axb+bxa)$; at $b=a$ this is $axa$. $\square$</p>
 <p>Thus in the associative case the quadratic representation is the <strong>two-sided product</strong> $x\mapsto axb$ symmetrised, the object that a Jordan algebra retains from the associative sandwich of <em>The Signed Sandwich on a Ring</em>. The symmetrised form returns the two-sided product without the distinction between left and right, which is exactly why the quadratic representation rather than a one-sided multiplication is the two-sided operator of a Jordan algebra.</p>
 <h3 id="the-fundamental-formula-and-invertibility">The Fundamental Formula and Invertibility</h3>
 <p><strong>Theorem (fundamental formula).</strong> For all $a, b \in J$,</p>
@@ -96,17 +96,17 @@ $$</p>
 U_{U_a b} = U_a U_b U_a .
 $$</p>
 <p>This is proved in <em>The Jordan Multiplication Operators</em>; it is quoted here and used below.</p>
-<p><strong>Corollary.</strong> $U_a^2 = U_{a^2}$ when $J$ is unital, because $U_a(1) = a^2$ and $U_1 = \mathrm{id}$, so the fundamental formula with $b = 1$ gives $U_{a^2} = U_{U_a1} = U_a\,\mathrm{id}\,U_a$. In particular $U_a$ is an idempotent when $a\circ a = a$ and an involution when $a\circ a = 1$.</p>
+<p><strong>Corollary.</strong> $U_a^2 = U_{a^2}$ when $J$ is unital, because $U_a(1) = a^2$ and $U_1 = \mathrm{id}$, so the fundamental formula with $b = 1$ gives $U_{a^2} = U_{U_a1} = U_a\,\mathrm{id}\,U_a$. In particular $U_a$ is an idempotent when $a\bullet a = a$ and an involution when $a\bullet a = 1$.</p>
 <p><strong>Theorem (invertibility).</strong> Let $J$ be finite-dimensional over a field and let $a \in J$ be invertible. Then $U_a$ is invertible, with</p>
 <p>$$
 U_a^{-1} = U_{a^{-1}} ;
 $$</p>
 <p>conversely if $U_a$ is invertible then $a$ is invertible.</p>
-<p><em>Proof.</em> Let $a$ be invertible. One computes $U_a(a^{-1}) = 2a\circ(a\circ a^{-1}) - a^2\circ a^{-1} = 2a - a = a$ and $U_{a^{-1}}(a) = a^{-1}$, using $a\circ a^{-1} = 1$. The fundamental formula with $b = a^{-1}$ gives $U_a = U_{U_a a^{-1}} = U_aU_{a^{-1}}U_a$, and with $b = a$ for the parameter $a^{-1}$ it gives $U_{a^{-1}} = U_{a^{-1}}U_aU_{a^{-1}}$. The two identities are the relations of a generalised inverse; over a finite-dimensional algebra the rank argument upgrades them to invertibility: $U_a$ and $U_{a^{-1}}$ have the same rank, and if $U_a(x) = 0$ then applying $U_{a^{-1}}$ and the second relation gives $x = 0$, so $U_a$ is injective and hence invertible with the displayed inverse. Conversely, if $U_a$ is invertible then $a = U_a(a^{-1})$ lies in the image and $a$ has an inverse, namely the image of $1$ under $U_a^{-1}$ composed with the inversion identity; the verification is the same rank argument read backwards. $\square$</p>
+<p><em>Proof.</em> Let $a$ be invertible. One computes $U_a(a^{-1}) = 2a\bullet(a\bullet a^{-1}) - a^2\bullet a^{-1} = 2a - a = a$ and $U_{a^{-1}}(a) = a^{-1}$, using $a\bullet a^{-1} = 1$. The fundamental formula with $b = a^{-1}$ gives $U_a = U_{U_a a^{-1}} = U_aU_{a^{-1}}U_a$, and with $b = a$ for the parameter $a^{-1}$ it gives $U_{a^{-1}} = U_{a^{-1}}U_aU_{a^{-1}}$. The two identities are the relations of a generalised inverse; over a finite-dimensional algebra the rank argument upgrades them to invertibility: $U_a$ and $U_{a^{-1}}$ have the same rank, and if $U_a(x) = 0$ then applying $U_{a^{-1}}$ and the second relation gives $x = 0$, so $U_a$ is injective and hence invertible with the displayed inverse. Conversely, if $U_a$ is invertible then $a = U_a(a^{-1})$ lies in the image and $a$ has an inverse, namely the image of $1$ under $U_a^{-1}$ composed with the inversion identity; the verification is the same rank argument read backwards. $\square$</p>
 <p><strong>Corollary.</strong> The operators $U_a$ with $a$ invertible form a subgroup of the unit group of $\operatorname{End}_R(J)$, the <strong>inner structure group</strong> of $J$, with $U_aU_b$ generally not of the form $U_c$ but the whole group generated by the $U_a$. Its elements are the inner structure transformations of $J$, and they act on $J$ by $x\mapsto U_ax$.</p>
 <h2 id="peirce-action-and-symmetries">Peirce Action and Symmetries</h2>
 <h3 id="the-action-on-the-peirce-spaces-of-an-idempotent">The Action on the Peirce Spaces of an Idempotent</h3>
-<p><strong>Theorem.</strong> Let $e$ be an idempotent of $J$, $e\circ e = e$, and let</p>
+<p><strong>Theorem.</strong> Let $e$ be an idempotent of $J$, $e\bullet e = e$, and let</p>
 <p>$$
 J = J_1 \oplus J_{1/2} \oplus J_0
 $$</p>
@@ -118,26 +118,26 @@ $$</p>
 <p><em>Proof.</em> On $J_1$ the operator $L_e$ is $1$, so $2L_e^2 - L_e = 2-1 = 1$. On $J_{1/2}$ it is $\tfrac12$, so $2\cdot\tfrac14 - \tfrac12 = 0$. On $J_0$ it is $0$, so $0$. The subspaces are the eigenspaces of $L_e$, and the polynomial $2t^2-t$ takes the values $1, 0, 0$ on the three eigenvalues $1, \tfrac12, 0$. $\square$</p>
 <p><strong>Corollary.</strong> The idempotents of $J$ are recovered from the quadratic representations as the elements $e$ with $U_e(e) = e$ and $U_e$ of rank equal to the rank of $J_1$; the projection $U_e$ is the operator with which the Peirce decomposition is usually exhibited.</p>
 <h3 id="symmetries-and-operators-of-order-two">Symmetries and Operators of Order Two</h3>
-<p><strong>Definition.</strong> An element $a$ with $a \circ a = 1$ is a <strong>symmetry</strong>, or a <strong>unitary element</strong>, of $J$; it is an element whose square is the unit.</p>
+<p><strong>Definition.</strong> An element $a$ with $a \bullet a = 1$ is a <strong>symmetry</strong>, or a <strong>unitary element</strong>, of $J$; it is an element whose square is the unit.</p>
 <p><strong>Proposition.</strong> If $a$ is a symmetry of the unital Jordan algebra $J$, then $U_a^2 = \mathrm{id}$; in the special case $J = A^+$ with $a^2=1$, the operator $U_a$ is the inner automorphism $x\mapsto axa = axa^{-1}$ of $J$, of order two.</p>
 <p><em>Proof.</em> $U_a^2 = U_{a^2} = U_1 = \mathrm{id}$ by the corollary of the fundamental formula. In the special case, $U_a(x) = axa$ and since $a^{-1} = a$ this is $axa^{-1}$, the conjugation by $a$ inside $A$; it is multiplicative on the halved product, so it is an automorphism of $J$. $\square$</p>
 <p>The symmetries therefore give automorphisms of order two of the special Jordan algebra, and in a general unital Jordan algebra the operators $U_a$ with $a$ a symmetry generate the inner automorphism group; the statement that each such $U_a$ is an automorphism is the standard theorem on the inner structure group, and the special computation above is its model. The <strong>signed</strong> version of these operators, in which a grade involution is inserted in the middle, is <em>The Signed Sandwich on a Jordan Algebra</em>, and the reflections it realises are <em>Reflections as Signed Two-Sided Operators on a Jordan Algebra</em>; the unsigned symmetries here are their untwisted counterparts.</p>
 <h2 id="the-trace-form">The Trace Form</h2>
-<p><strong>Proposition.</strong> Let $J$ be free of finite rank over $R$ and let $T(x,y) = \operatorname{tr}(L_{x\circ y})$ be the trace form. Then every quadratic representation is self-adjoint for $T$:</p>
+<p><strong>Proposition.</strong> Let $J$ be free of finite rank over $R$ and let $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ be the trace form. Then every quadratic representation is self-adjoint for $T$:</p>
 <p>$$
 T(U_{a,b}x, y) = T(x, U_{a,b}y), \qquad T(U_ax,y) = T(x, U_ay) .
 $$</p>
-<p><em>Proof.</em> By <em>The Jordan Multiplication Operators</em> the trace form is associative and every $L_a$ is self-adjoint, $T(L_ax,y) = T(x,L_ay)$. Since $U_{a,b} = L_aL_b+L_bL_a-L_{a\circ b}$, the adjoint of $U_{a,b}$ for $T$ is $L_bL_a + L_aL_b - L_{a\circ b} = U_{a,b}$, using the self-adjointness of each term and the symmetry of $T$. The diagonal case is $b=a$. $\square$</p>
+<p><em>Proof.</em> By <em>The Jordan Multiplication Operators</em> the trace form is associative and every $L_a$ is self-adjoint, $T(L_ax,y) = T(x,L_ay)$. Since $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$, the adjoint of $U_{a,b}$ for $T$ is $L_bL_a + L_aL_b - L_{a\bullet b} = U_{a,b}$, using the self-adjointness of each term and the symmetry of $T$. The diagonal case is $b=a$. $\square$</p>
 <p><strong>Corollary.</strong> The structure group of $J$ consists of operators that are self-adjoint for the trace form, and the trace form's associativity makes the adjoint operation on $\operatorname{Mult}(J)$ the identity on the quadratic representations. This is the algebraic reason the structure group sits inside the "orthogonal" part of the operator algebra; the form that makes this a statement about isometries rather than about adjoints is a bilinear form on $J$ and belongs to Part II, while the adjoint here is the algebraic adjoint of the trace form alone.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="the-associative-case">The Associative Case</h3>
-<p>Let $A$ be a commutative associative algebra and let $J = A$ with $x\circ y = xy$. Then every one-sided multiplication is $L_a(x) = ax$, the symmetrised product identity reads $L_aL_b+L_bL_a = 2L_{ab}$, and $L_{a\circ b} = L_{ab}$, so</p>
+<p>Let $A$ be a commutative associative algebra and let $J = A$ with $x\bullet y = xy$. Then every one-sided multiplication is $L_a(x) = ax$, the symmetrised product identity reads $L_aL_b+L_bL_a = 2L_{ab}$, and $L_{a\bullet b} = L_{ab}$, so</p>
 <p>$$
 U_{a,b} = 2L_{ab} - L_{ab} = L_{ab} , \qquad U_a = L_{a^2} .
 $$</p>
 <p>In an associative commutative Jordan algebra the quadratic representation is again a multiplication, by $ab$ and by $a^2$ respectively, and the quadratic representations form the subgroup $L(A^{\times 2}) = \{L_{a^2} : a \in A^\times\}$ of the unit group of the multiplication algebra. In particular $U_a^2 = L_{a^4} = U_{a^2}$, recovering the general identity in the case where the operators are multiplications.</p>
 <h3 id="the-spin-factor">The Spin Factor</h3>
-<p>Let $J = R\oplus V$ be the spin factor of <em>Jordan Algebras</em>, with $V$ a finite-dimensional space carrying the standard form $B$, and let $a = (\alpha, v)$. Writing $U_a = 2L_a^2 - L_{a^2}$ and using the product $(\alpha,v)\circ(\beta,w) = (\alpha\beta+B(v,w),\ \alpha w+\beta v)$, one obtains for $x = (\xi, z)$</p>
+<p>Let $J = R\oplus V$ be the spin factor of <em>Jordan Algebras</em>, with $V$ a finite-dimensional space carrying the standard form $B$, and let $a = (\alpha, v)$. Writing $U_a = 2L_a^2 - L_{a^2}$ and using the product $(\alpha,v)\bullet(\beta,w) = (\alpha\beta+B(v,w),\ \alpha w+\beta v)$, one obtains for $x = (\xi, z)$</p>
 <p>$$
 U_a(x) = \Bigl((\alpha^2+B(v,v))\xi + 2\alpha\,B(v,z),\ \ (\alpha^2-B(v,v))z + 2\alpha\xi v + 2B(v,z)v\Bigr) .
 $$</p>
@@ -149,7 +149,7 @@ $$</p>
 <h3 id="a-coordinatewise-jordan-algebra">A Coordinatewise Jordan Algebra</h3>
 <p>Let $J = R^n$ with the coordinatewise product, the associative case of the first example with $A = R^n$. For an idempotent $e$ with coordinates in $\{0,1\}$ the Peirce piece $J_1$ is spanned by the standard idempotents supported where $e = 1$, and $U_e$ is the coordinatewise projection onto that span, in agreement with the Peirce proposition. Every $a = (a_1,\dots,a_n)$ satisfies $U_a = L_{a^2}$, and $a$ is a symmetry exactly when every coordinate is $1$ or $-1$.</p>
 <h2 id="summary">Summary</h2>
-<p>A Jordan algebra carries one family of one-sided multiplications: the left and the right multiplication by $a$ coincide, $L_a = R_a$, because the product is commutative, and the operator form of commutativity is the collapse of the two families rather than the automatic commutation of $L_a$ with $R_b$. The two-sided operator is the <strong>quadratic representation</strong> $U_{a,b} = L_aL_b + L_bL_a - L_{a\circ b}$, with diagonal $U_a = 2L_a^2 - L_{a^2}$; in the special case it is $U_{a,b}(x) = \tfrac12(axb+bxa)$ and $U_a(x) = axa$. It satisfies the fundamental formula $U_{U_ab} = U_aU_bU_a$, whence $U_a^2 = U_{a^2}$ and, over a field in finite dimension, $U_a$ is invertible exactly when $a$ is, with $U_a^{-1} = U_{a^{-1}}$. On the Peirce spaces of an idempotent, $U_e$ is the projection onto $J_1$. A symmetry, an element with $a\circ a=1$, makes $U_a$ an operator of order two, and in the special case an inner automorphism $x\mapsto axa$. The quadratic representations generate the inner structure group and are self-adjoint for the trace form. The signed versions with a grade involution are <em>The Signed Sandwich on a Jordan Algebra</em> and <em>Reflections as Signed Two-Sided Operators on a Jordan Algebra</em>.</p>
+<p>A Jordan algebra carries one family of one-sided multiplications: the left and the right multiplication by $a$ coincide, $L_a = R_a$, because the product is commutative, and the operator form of commutativity is the collapse of the two families rather than the automatic commutation of $L_a$ with $R_b$. The two-sided operator is the <strong>quadratic representation</strong> $U_{a,b} = L_aL_b + L_bL_a - L_{a\bullet b}$, with diagonal $U_a = 2L_a^2 - L_{a^2}$; in the special case it is $U_{a,b}(x) = \tfrac12(axb+bxa)$ and $U_a(x) = axa$. It satisfies the fundamental formula $U_{U_ab} = U_aU_bU_a$, whence $U_a^2 = U_{a^2}$ and, over a field in finite dimension, $U_a$ is invertible exactly when $a$ is, with $U_a^{-1} = U_{a^{-1}}$. On the Peirce spaces of an idempotent, $U_e$ is the projection onto $J_1$. A symmetry, an element with $a\bullet a=1$, makes $U_a$ an operator of order two, and in the special case an inner automorphism $x\mapsto axa$. The quadratic representations generate the inner structure group and are self-adjoint for the trace form. The signed versions with a grade involution are <em>The Signed Sandwich on a Jordan Algebra</em> and <em>Reflections as Signed Two-Sided Operators on a Jordan Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -164,11 +164,11 @@ $$</p>
 <td>Jordan $R$-algebra, unital where stated</td>
 </tr>
 <tr>
-<td>$L_a(x) = a\circ x$</td>
+<td>$L_a(x) = a\bullet x$</td>
 <td>Left multiplication</td>
 </tr>
 <tr>
-<td>$R_a(x) = x\circ a$</td>
+<td>$R_a(x) = x\bullet a$</td>
 <td>Right multiplication</td>
 </tr>
 <tr>
@@ -176,7 +176,7 @@ $$</p>
 <td>The two coincide, by commutativity</td>
 </tr>
 <tr>
-<td>$U_{a,b} = L_aL_b+L_bL_a-L_{a\circ b}$</td>
+<td>$U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$</td>
 <td>Quadratic representation (bilinear)</td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ $$</p>
 <td>Projection onto $J_1$</td>
 </tr>
 <tr>
-<td>$a\circ a = 1$</td>
+<td>$a\bullet a = 1$</td>
 <td>Symmetry (unitary element)</td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ $$</p>
 <td>Multiplication algebra (cf. <em>The Jordan Multiplication Operators</em>)</td>
 </tr>
 <tr>
-<td>$T(x,y) = \operatorname{tr}(L_{x\circ y})$</td>
+<td>$T(x,y) = \operatorname{tr}(L_{x\bullet y})$</td>
 <td>Trace form; $U_{a,b}$ is self-adjoint for it</td>
 </tr>
 </tbody>

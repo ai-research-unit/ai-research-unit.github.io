@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Final Assessment (S60) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-final-assessment-s60">Charon — Final Assessment (S60)</h1>
+<p><em>Consolidation, third article. A tiered verdict on the sub-theory, by tag: what is retained, what is speculative, what is falsified, what is mixed and can be salvaged.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict, in one paragraph: the ontology, the formalism, the micro-universe, the holon model and the input/output method stand; the particle identifications and the cosmology do not; the mind material survives except its EPR reading; and the whole is a coherent smaller theory than it claimed to be, with one live prediction.</strong> Of the programme's 88 articles, 64 stand and 24 are post-mortem. That ratio — about 73 % legitimate material — is the honest headline, and it is stated here with the qualification that a large share of the standing material is <em>structure</em>, not prediction.</p>
+<p><strong>The assessment is tiered by tag, and the tags are the corpus's own discipline.</strong> [EST] marks what established physics already holds; [MATH] what the corpus derives correctly; [OUT] what follows with no freedom left; [SPEC] what is guessed and not contradicted; [MIX] what is part right and part wrong; [FALS] what observation has settled against; [PHIL] what is interpretation. <strong>This article sorts the programme into those bins and defends each placement with the article that made it.</strong></p>
+<p><strong>Three principles govern the sorting, and they are rule R6's.</strong> <em>Coherence</em>: does the formalism close? <em>Reproducibility</em>: does the number follow from the stated inputs? <em>Correspondence</em>: does the number match nature? <strong>A pass on one is never a pass on another</strong>, and most of the corpus's rhetoric consists of reporting a coherence or reproducibility pass as though it were a correspondence pass. The tiers below are reported question by question for exactly that reason.</p>
+<h2 id="1-what-stands-est-math-and-out-retained">1. What stands: [EST], [MATH] and [OUT] retained</h2>
+<p><strong>The retained material is large and it is mostly structural.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>what stands</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Foundations, dictionary</strong> (6 articles, 0 post-mortem)</td>
+<td>the complexified space, the two-sheet structure, the notation</td>
+<td>S2–S5: coherent, map onto the framework's language; the correct claim is "the same complexification of a real four-space, with the quaternion product absent"</td>
+</tr>
+<tr>
+<td><strong>The formalism</strong> (9, 0)</td>
+<td>the field equations, the source tensor, the quadratic curvature law $R = \xi^{2}\rho^{2}+4\Lambda$, the quantisation axiom</td>
+<td>coherent; its content sits in the eight named choices (S58); the geometric side is standard general relativity</td>
+</tr>
+<tr>
+<td><strong>The micro-universe</strong> (7, 1)</td>
+<td>the préon/éon taxonomy as an audited idea, the closure conditions, the elementary length</td>
+<td>the <em>taxonomy</em> stands; the objects themselves are Part P (their defining properties are falsified)</td>
+</tr>
+<tr>
+<td><strong>Hadrons</strong> (6, 0)</td>
+<td>the holon model and the saturation geometry</td>
+<td>S24, S47: reproducible; the best numerical hit is here (R2)</td>
+</tr>
+<tr>
+<td><strong>The Système L</strong> (4, 0)</td>
+<td>the lepton-sector closure</td>
+<td>the closure is real; the claim of parameter-freedom is not (S34)</td>
+</tr>
+<tr>
+<td><strong>The constants ledger</strong> (8, 0)</td>
+<td>the input/output method, rule R1</td>
+<td><strong>the method is the programme's most transferable asset</strong></td>
+</tr>
+<tr>
+<td><strong>Leptons</strong> (5, 3)</td>
+<td>the radius spectrum, the internal constants</td>
+<td>the tower is dead; the rest stands</td>
+</tr>
+<tr>
+<td><strong>Measurement and mind</strong> (5, 1)</td>
+<td>memory as integration constants, the éon as Knower</td>
+<td>as [SPEC]/[PHIL]; the EPR reading is the one post-mortem</td>
+</tr>
+<tr>
+<td><strong>Consolidation and assessment</strong> (6, 0)</td>
+<td>this block</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three things worth keeping above all, stated once.</strong> (i) <strong>The geometric reading of mass</strong> — mass as a property of the curvature of the cell, with $M_0 = \Omega_0\rho$. (ii) <strong>The $\rho^{2}$ law's answer to a real objection</strong> — with a source quadratic in the density there is no cancellation of $\pm\rho$, so the creation paradox does not arise. (iii) <strong>The input/output method</strong> — the demand that every number be labelled measured or derived, which is what makes this whole assessment possible and which the corpus itself did not consistently apply.</p>
+<p><strong>And the identities that hold</strong> (S59): the cosmological first integral (5-46) verified numerically; the electron mass chain (58)–(60) closing exactly; $x_1 = 1{,}9209$; $T = 4{,}9425\times10^{-24}$ s; and the 1983 unit table reproduced to a few parts in a thousand from its own entries, which independently identifies $\mu_0$ as the muon. <strong>These are real and they are internal consistency, not correspondence.</strong></p>
+<h2 id="2-what-is-speculative-and-not-contradicted-spec-enumerated">2. What is speculative and not contradicted: [SPEC] enumerated</h2>
+<p><strong>The programme's [SPEC] content is large, and enumerating it is the fairest thing this assessment can do</strong>, because a speculation that is named and not contradicted is legitimate material — unlike a claim that has been tested and failed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>[SPEC] block</th>
+<th>the speculation</th>
+<th>why it is not [FALS]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The eight choices</strong> (S58)</td>
+<td>the source tensor's form, the tangent-space identification, the linearisation, the spin–pulse split, $\xi \equiv \Omega_0c/\hbar$, $M_0 = \Omega_0\rho$, $T_0$</td>
+<td>chosen, declared, defensible; no observation touches a choice</td>
+</tr>
+<tr>
+<td><strong>The second sheet</strong> (S4)</td>
+<td>a populated imaginary sector</td>
+<td>licensed by the horizon argument, posited rather than forced</td>
+</tr>
+<tr>
+<td><strong>Action quantisation and the pulse's layer (iii)</strong> (S11)</td>
+<td>an integer action cannot be one half-integral object, so a second half-integral component is forced</td>
+<td>the arithmetic is untouched by the death of the spin ladder</td>
+</tr>
+<tr>
+<td><strong>The negative-energy licence</strong> (S13)</td>
+<td>negative proper mass at the boundary</td>
+<td>untransferred to the cosmology; not disproved</td>
+</tr>
+<tr>
+<td><strong>The bounce</strong> (S51)</td>
+<td>a minimum radius instead of a singularity</td>
+<td>retained as an idea; the accompanying redshift cut-off is what died (P12)</td>
+</tr>
+<tr>
+<td><strong>Memory</strong> (S56)</td>
+<td>information stored as the field system's integration constants</td>
+<td>the nesting is de Broglie's and [MATH]; the "memory" reading is [SPEC] and the capacity and rate are absent</td>
+</tr>
+<tr>
+<td><strong>The éon as Knower</strong> (S57)</td>
+<td>the lepton as an elementary knower</td>
+<td>[PHIL]; coherent, and it fails the corpus's own physics criterion for adoption</td>
+</tr>
+<tr>
+<td><strong>Collective and individual behaviour</strong> (S55)</td>
+<td>memory biases probable behaviour</td>
+<td>sits outside Bell's theorem in either reading; the re-weighting law is never supplied</td>
+</tr>
+<tr>
+<td><strong>The pilot-wave reading</strong> (S54)</td>
+<td>ψ as a real phase wave with a read-only regard</td>
+<td>legitimate and non-mainstream; the propagation equation is promised and never written</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table as the boundary between "legitimate" and "dead".</strong> Everything in it could be false; none of it has been shown false. <strong>A programme's honour is in keeping the two lists apart, and the corpus's own manner — printing a speculation beside a measurement — is what blurred them.</strong></p>
+<h2 id="3-what-is-falsified-fals-accounted-for">3. What is falsified: [FALS] accounted for</h2>
+<p><strong>Twenty-four post-mortem articles, in five groups. Each entry names the observation that settled it and what breaks downstream — the form the corpus itself never used.</strong></p>
+<p><strong>P1–P8, particle spectra and identifications (8).</strong> The lepton tower $m_n = \mu + 2(n-1)h/(c^{2}T_0)$ dies at LEP (1989–2000), which found no charged lepton up to ~100 GeV; the three known leptons are accommodated only because $T_0$ was fitted to $\tau-\mu$ (P1, P2). The electron's size dies against the point-like limit below $10^{-18}$ m and $g-2$'s ten-digit agreement with QED (P3). The six density levels die as a quark spectrum: the count of six flavours is right, the identification is wrong — his levels are lepton masses (P4); the top at 173 GeV has nowhere to sit under a ceiling of ~8.5 GeV (P5); the zero-mass quarkonium dies against $J/\psi$ at 3.097 GeV and $\Upsilon$ at 9.46 GeV (P6). The $W/Z$ as a neutrino pair dies on the 1983 CERN discovery — in the book's own year — of $W^\pm$ at 80.4 GeV and $Z$ at 91.2 GeV (P7). The massless neutrino dies on oscillations: Super-Kamiokande 1998, SNO 2001–02, KamLAND 2002 (P8). <strong>Downstream: the "parameter-free lepton model" loses its main claim, and the quark block is largely dead.</strong></p>
+<p><strong>P9–P15, cosmology (7).</strong> The 303-Myr antimatter era (P9), the negative-density vacuum $\rho = -2{,}9\times10^{-32}$ g cm$^{-3}$ (P10), continuous creation at $10^{5}\,M_\odot$/s (P11), Axiom 6's universal age (P12), the finite redshift $Z_{\max} = 4{,}736/5{,}438$ (P13), the quasar peak (P14), and the closed universe without inflation (P15). <strong>Downstream: the cosmology is largely dead; the bounce survives as an idea (S51), and the cycle is the one standing claim that rests on a dead one.</strong> Note the contrast with §1: the cosmology's failure was never novelty; it was conflict with observation.</p>
+<p><strong>P16–P18, relativity, quantum tests, the EPR reading (3).</strong> EPR and telepathy (P16) — dead as a mechanism, with the ψ-wave ontology kept separately (S54); the twin paradox and universal age (P17); the boson-spin identifications (P18). <strong>These are the cases where the corpus made a sharp physical claim and nature refused it.</strong></p>
+<p><strong>P19–P22, method and analysis (4).</strong> Three dated falsifications (P19); the sweep-and-report pattern (P20) — <strong>the single pattern that explains most failures</strong>; the density-definition slide, $\rho_H = 5{,}81\times10^{17}$ g cm$^{-3}$ as a mass per cell rather than a density (P21); the bootstrap connection (P22). <strong>P20 and P21 are the most valuable of these, because they are failures of <em>method</em>, and a method's failure transfers to every application of it.</strong></p>
+<p><strong>P23–P24, the pulse's two disproved claims (2).</strong> The spin ladder (P23) and gravity from the pulsation (P24). <strong>Both are layer-(i) deaths; the pulse's layer (iii) survives in S11</strong> — the separable-remainder rule is this assessment's one genuinely constructive finding about failure.</p>
+<p><strong>What the [FALS] list is for.</strong> It is not a prosecution. A programme that fails a real test is more informative than one that never risks a number, and the corpus did risk numbers: $Z_{\max}$, the lepton tower, Axiom 6 and the electron's size were all stated sharply enough to be checked. <strong>The register's rule is that a disproved claim is never silently dropped: it is quoted, dated, and given an article. This section is that rule's output.</strong></p>
+<h2 id="4-what-is-mixed-and-can-be-salvaged-mix">4. What is mixed and can be salvaged: [MIX]</h2>
+<p><strong>The [MIX] entries are where the assessment does real work</strong>, because each contains a part that is right and a part that is wrong, and discarding the whole would discard something.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>entry</th>
+<th>right</th>
+<th>wrong</th>
+<th>what is salvaged</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P4</strong> six levels</td>
+<td>the count of six flavours</td>
+<td>the identification with quarks</td>
+<td>the holon geometry (S24) is audited separately and stands</td>
+</tr>
+<tr>
+<td><strong>P7</strong> $W/Z$ as a neutrino pair</td>
+<td>the weak force is carried by a virtual massive integer-spin boson</td>
+<td>the identity</td>
+<td>the structural statement</td>
+</tr>
+<tr>
+<td><strong>P16</strong> EPR</td>
+<td>the correlate exists</td>
+<td>the telepathic mechanism</td>
+<td>the ψ-wave ontology (S54)</td>
+</tr>
+<tr>
+<td><strong>P20</strong> fitted versus predicted</td>
+<td>—</td>
+<td>the practice</td>
+<td><strong>the rule itself: alive, as method</strong></td>
+</tr>
+<tr>
+<td><strong>P21</strong> the density slide</td>
+<td>the level structure is real</td>
+<td>$\rho_H$'s definition</td>
+<td>the level geometry, read as levels not densities</td>
+</tr>
+<tr>
+<td><strong>P23/P24</strong> the pulse's claims</td>
+<td>—</td>
+<td>layers (i) and (ii)</td>
+<td><strong>layer (iii), the arithmetic of the forced second half-integral component</strong></td>
+</tr>
+<tr>
+<td><strong>S11</strong> the action split</td>
+<td>the arithmetic</td>
+<td>the exact equipartition and its observables</td>
+<td>layer (iii)</td>
+</tr>
+<tr>
+<td><strong>S13</strong> negative energy</td>
+<td>the local licence</td>
+<td>the transfer to the cosmology</td>
+<td>the licence itself, untransferred</td>
+</tr>
+<tr>
+<td><strong>S55</strong> collective behaviour</td>
+<td>the reduction to orthodox statistics</td>
+<td>the individual bias</td>
+<td>the model's safety from Bell</td>
+</tr>
+<tr>
+<td><strong>S30–S33</strong> the Système L</td>
+<td>the closure to a few parts in a thousand</td>
+<td>the claim of parameter-freedom</td>
+<td><strong>the table's internal consistency, which identifies $\mu_0$ as the muon</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The general rule the [MIX] column produces, and it is this article's most useful export: <em>a dead verdict at the level of a claim does not propagate to the level of the argument underneath it</em>.</strong> The register states it for the pulse and it applies throughout: <strong>the failures that were methods rather than claims are the ones that transfer.</strong> The programme's own rules of engagement are largely composed of such transfers — which is the sense in which even its errors were productive.</p>
+<h2 id="5-the-three-questions-answered-separately">5. The three questions, answered separately</h2>
+<p><strong>Rule R6 forbids merging them, and the merged answer is where the corpus's overclaim lives. Stated separately, the assessment is:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+<th>the evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coherence</strong> — does the formalism close?</td>
+<td><strong>Yes, by selection.</strong> The geometric side, the curvature law given the source, the quantum equation, the action-density argument and the cosmological first integral all close — with eight named choices carrying the content</td>
+<td>S58, S16, S7, S10, S50</td>
+</tr>
+<tr>
+<td><strong>Reproducibility</strong> — do the numbers follow?</td>
+<td><strong>Yes as arithmetic, never as computation.</strong> Every printed value follows from the corpus's printed inputs; the executed search is ±10 % about those inputs</td>
+<td>S34, S59</td>
+</tr>
+<tr>
+<td><strong>Correspondence</strong> — do they match nature?</td>
+<td><strong>Once: the drift.</strong> One live prediction ($\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$), one disproof (the lepton's internal structure), one open structure (the inter-sector coupling)</td>
+<td>S40, S62, S64</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three sentences that keep the answers apart, and they are the assessment's core.</strong></p>
+<ul>
+<li><strong>A coherent formalism is not a physical theory.</strong> The corpus closes; that says its axioms do not contradict each other, not that they describe the world.</li>
+<li><strong>Arithmetic that reproduces its own inputs is not a computation.</strong> A theory computes a constant when a number it <em>could have got wrong</em> comes out right at a point it did not start from. <strong>By that test the corpus computes none of its six constants, because each is one of the values it started from.</strong></li>
+<li><strong>One correspondence is not a confirmation.</strong> $\dot G/G$ is allowed and untested, at two to four orders below the present frontier. <strong>It is the only claim that could still be right without the rest of the programme being right</strong>, and that is exactly its value.</li>
+</ul>
+<p><strong>And the counterweight, which must be stated in the same breath.</strong> The corpus's novelty is structural and predictive, not numerical: it reaches beyond established theory in <strong>three</strong> places (S62), it made <strong>numbered, dated, falsifiable</strong> predictions, and one of them has not been excluded. <strong>A theory that is wrong about the lepton's size and the cosmology, and whose only live prediction is a slow drift of $G$, is still a theory that made claims nature could check.</strong> That is the difference between a failed programme and a private language.</p>
+<h2 id="6-the-one-line-verdict">6. The one-line verdict</h2>
+<p><strong>By tier: 64 articles stand and 24 are post-mortem. Of the standing material, the ontology, the formalism, the micro-universe taxonomy, the holon model and the input/output method are retained; the choices, the second sheet, the bounce, the memory, the Knower and the collective/individual split are [SPEC] and not contradicted; the particle identifications and the cosmology are [FALS] except for the snippets the [MIX] table salvages; and exactly one number, $\dot G/G$, is a live prediction.</strong></p>
+<p><strong>The programme's ambition was an axiomatic reconstruction of physics from two sheets. What it delivered is a coherent formalism whose content sits in eight declared choices, a set of equations that transcribe two-thirds unchanged into a language it did not know, one prediction it did not fit, and a properly organised list of its own refutations. That is less than it claimed and considerably more than nothing — and the distance between those two phrases is what this assessment exists to measure.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The final assessment, tiered by tag and governed by rule R6.</strong></p>
+<p><strong>Retained — [EST], [MATH], [OUT].</strong> The ontology and dictionary (S2–S5), the formalism with its quadratic curvature law $R = \xi^{2}\rho^{2}+4\Lambda$ (S7, S10), the micro-universe taxonomy (S17–S23 audited), the holon model and saturation geometry (S24, S47), the Système L's closure, the constants ledger's method, the radius spectrum and internal constants, and the mind material as [SPEC]/[PHIL]. The three items worth keeping above all: the geometric reading of mass, the $\rho^{2}$ answer to the creation paradox, and the input/output method. The identities that hold are internal consistency: (5-46), the electron chain (58)–(60), $x_1 = 1{,}9209$, $T = 4{,}9425\times10^{-24}$ s, the 1983 unit table to a few parts in a thousand.</p>
+<p><strong>Speculative and not contradicted — [SPEC].</strong> The eight choices; the second sheet (licensed, not forced); action quantisation and the pulse's layer (iii); the negative-energy licence; the bounce; memory as integration constants; the Knower; collective and individual behaviour; the pilot-wave reading. None has been shown false; none has been shown true.</p>
+<p><strong>Falsified — [FALS].</strong> Twenty-four articles in five groups: the particle identifications (P1–P8: lepton tower at LEP, the electron's size, the quark levels, quarkonium mass, $W/Z$, the massless neutrino), the cosmology (P9–P15: the antimatter era, the negative vacuum, continuous creation, Axiom 6, the finite redshift, the quasar peak, no inflation), three relativity and quantum tests (P16–P18, including the EPR reading), the method failures (P19–P22, of which the sweep-and-report pattern is the one that explains most failures), and the pulse's two claims (P23, P24).</p>
+<p><strong>Mixed and salvaged — [MIX].</strong> Ten entries where a part survives: the count of six flavours, the weak boson's structure, the EPR correlate's existence, the fitted-versus-predicted rule as method, the level geometry read as levels, the pulse's layer (iii), the local negative-energy licence, the reduction to orthodox statistics, and the Système L's internal consistency. <strong>The rule they produce: a dead verdict at the level of a claim does not propagate to the level of the argument underneath it.</strong></p>
+<p><strong>The three answers, kept apart.</strong> Coherence: yes, by selection. Reproducibility: yes as arithmetic, never as a computation. Correspondence: once — the drift — plus one disproof and one open structure. <strong>A coherent formalism is not a physical theory; arithmetic on one's own inputs is not a computation; and one allowed prediction is not a confirmation.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tag</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[EST]</td>
+<td>established physics already holds it</td>
+</tr>
+<tr>
+<td>[MATH]</td>
+<td>the corpus derives it correctly</td>
+</tr>
+<tr>
+<td>[OUT]</td>
+<td>follows with no freedom left</td>
+</tr>
+<tr>
+<td>[SPEC]</td>
+<td>guessed, declared, not contradicted</td>
+</tr>
+<tr>
+<td>[MIX]</td>
+<td>part right, part wrong</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>observation has settled it against</td>
+</tr>
+<tr>
+<td>[PHIL]</td>
+<td>interpretation, not a physics claim</td>
+</tr>
+<tr>
+<td>layer (i)/(ii)/(iii)</td>
+<td>the claim as stated / the mechanism offered / the argument underneath</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S58, <code>charon-s58-the-rebuilt-theory</code>, for the eight choices and the closes / does-not-close ledger; S59, <code>charon-s59-the-numerical-ledger</code>, for every number's class and verdict; S62, <code>charon-s62-what-survived</code>, for the three items beyond established theory; S61, <code>charon-s61-what-to-do-next</code>, for the work order this assessment implies.</li>
+<li>S6, <code>charon-s06-what-would-count-as-success</code>, for the pre-registered criteria and the pass vocabulary; the register's rules R1–R6 for the discipline this article applies.</li>
+<li>S34, <code>charon-s34-the-input-output-ledger</code>, and S41, <code>charon-s41-the-constants-ledger</code>, for the count; S16 for the formalism's ledger; S11 for the pulse's layers; S4 for the second sheet's status; S51 for the bounce.</li>
+<li>P1–P24, in <code>articles_reserve/</code>, for the post-mortem record this article summarises — in particular P20 (<code>charon-p20-fitted-versus-predicted</code>) and P21 (<code>charon-p21-the-density-definition-slide</code>), the two method failures that transfer.</li>
+<li>J. E. Charon, <em>Théorie de la relativité complexe</em> (Albin Michel, 1987) and <em>L'Esprit et la Relativité complexe</em> (Albin Michel, 1983), in full — the subject of this assessment.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

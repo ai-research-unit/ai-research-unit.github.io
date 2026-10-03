@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: EPR and Telepathy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-epr-and-telepathy"><strong>Charon: EPR and Telepathy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the corpus's reading of the Einstein–Podolsky–Rosen correlations. <strong>The corpus says the two photons of a correlated pair continuously exchange information instantaneously, at any distance, through "virtual" interactions that carry no real energy — and that the experiment shows this exchange taking place faster than light. It then says these principles are a scientific basis for telepathy.</strong> The correlations are real. The explanation is exactly what quantum mechanics and relativity forbid, and the corpus had the relevant experiment and the relevant theorem in hand.</p>
+<p><strong>The claim, verbatim.</strong> Esp 103: <em>"L'échange est instantané dans la durée, quelle que soit la distance entre les particules corrélées, puisque rien ne se propage entre les deux particules (ou seulement des particules virtuelles, c'est-à-dire non porteuses d'impulsion-énergie réelle)."</em> And: <em>"il y a seulement un échange de signe de l'impulsion sans changement d'énergie entre les deux états corrélés (cet échange constituant l'« information »)."</em> Esp 104 draws the experimental conclusion: <em>"ce qui montre bien que le photon qui traverse le dernier est instantanément informé de ce qu'a fait le premier photon (ou au moins l'information a transité plus vite qu'à la vitesse de la lumière)"</em> — and then: <em>"Il est clair que les principes utilisés ici pour fournir une « explication » du paradoxe E.P.R. ... doivent aussi être considérés comme constituant une base scientifique de ce qu'on appelle généralement les « phénomènes télépathiques »."</em></p>
+<p><strong>The verdict is [FALS].</strong> Entanglement is real and now standard — Aspect's experiments (1981–82), the loophole-free tests (2015), the 2022 Nobel Prize. But the corpus's <em>mechanism</em> — a real, instantaneous transfer of information — is precisely what the <strong>no-signalling theorem</strong> forbids and what Bell's (1964) and CHSH's (1969) inequalities exclude. <strong>The historically sharpest fact: the experiments the corpus cites were designed to test Bell's inequality, and it cites them without the inequality.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §10.2, sourced to Esp Annexe 3 (scans 102–104) — <strong>note that the register and the companion cite "Esp Annexe 4"; Esp's own annexe list makes E.P.R. Annexe 3 and the twin paradox Annexe 4 (P17). The numbers are swapped in the register, and P16/P17 use the correct ones.</strong> The related articles are P12 (Axiom 6, which Esp 104 claims the EPR data <em>prove</em>) and P17 (the twin paradox). The chain is R9's neighbourhood; the EPR result is downstream of Axiom 6.</p>
+<p><strong>Conventions.</strong> $\alpha, \beta$ are polariser angles; $\theta$ a photon's polarisation direction; the pair state is the Ca-cascade type, for which the coincidence probability is $\tfrac12\cos^{2}(\alpha-\beta)$. "No-signalling" is the theorem that the marginal statistics at one wing are independent of the other wing's setting.</p>
+<h2 id="part-1-the-experiment-the-corpus-describes-and-what-it-actually-shows">Part 1 — The experiment the corpus describes, and what it actually shows</h2>
+<p><strong>The corpus's description of the $\alpha = \beta$ case is correct.</strong> Esp 104 sets two polarisers with <em>parallel</em> axes on the two photons of a cascade pair. Quantum mechanics predicts, and the experiments find, that when the axes are equal the two outcomes agree perfectly: both photons pass, or neither does, each with overall probability $\tfrac12$. The corpus reports this correctly.</p>
+<p><strong>The general case is the one that carries the physics.</strong> For analyser angles $\alpha$ and $\beta$ the coincidence probability is</p>
+<p>$$P(\alpha,\beta) = \tfrac12\cos^{2}(\alpha-\beta),$$</p>
+<p>so the agreement is perfect at $\alpha = \beta$ and vanishes at $\alpha - \beta = 90^{\circ}$. <strong>The corpus's perfect-correlation statement is the $\alpha = \beta$ slice of this function, and the slice alone is consistent with a purely classical correlation</strong> — two photons of the same polarisation, or two gloves, behave the same way at equal settings. What distinguishes the quantum case is the <em>whole</em> angular function, and that is Bell's business (Part 2).</p>
+<p><strong>And the corpus's own example does not show what it says it shows.</strong> Its experimental "constatation" is that <em>"on a toujours les deux photons qui traversent les polariseurs, ou aucun photon qui traverse les polariseurs"</em>. <strong>That statement cannot be made at either polariser.</strong> Each observer, at their own polariser, sees a random sequence of passes and fails with probability $\tfrac12$ each, and nothing in their own data tells them what happened at the other end. The "always both or neither" fact is a <em>joint</em> property of the two records, and assembling it requires bringing the records together — an operation that proceeds at or below $c$. <strong>So what the experiment delivers is a correlation visible only in coincidence counting, and coincidence counting is a classical communication.</strong></p>
+<p><strong>This is the whole of the matter.</strong> The corpus's own sentence says the photon <em>"est instantanément informé de ce qu'a fait le premier"</em>. If that information were physically present at the second photon and <em>locally accessible</em>, the second observer's marginal statistics would depend on the first observer's choice of axis, and the first observer could send a signal by choosing an axis. <strong>The theorem says the marginal is $\tfrac12$ for every setting of the other polariser</strong> — measured, and exact in the quantum formalism. No signal, and no local record of the other wing.</p>
+<h2 id="part-2-bell-chsh-and-the-experiment-the-corpus-cites">Part 2 — Bell, CHSH, and the experiment the corpus cites</h2>
+<p><strong>The corpus cites the right experiments and omits their purpose.</strong> Esp 103 names <em>"les récentes expériences de 1976 (Clauser, Fry et Thompson) associées aux « cascades » atomiques"</em>. Those experiments — Clauser–Freedman (1972), Fry–Thompson (1976), and Aspect (1981–82) — were built to test <strong>Bell's inequality</strong> (1964), and the CHSH form of it (1969). <strong>They were designed to exclude exactly the kind of mechanism the corpus proposes:</strong> a local, causal account in which each photon carries its own definite properties. Bell's theorem says that no such account reproduces the observed angular correlations, and the experiments confirm the violation. The corpus cites the tests as evidence for a superluminal exchange, when the inequality they test is the statement that a <em>local</em> exchange cannot produce the data.</p>
+<p><strong>Historically, the omission is the sharpest part of the case.</strong> Bell's paper is from 1964; the book appeared in 1983, nineteen years later, and the corpus engages the paradox in detail without citing the inequality that had by then become its central technical content. <strong>And the corpus's mechanism is not a hidden-variable local model — it is explicitly non-local, with instantaneous transfer — so it is not what Bell excludes by hypothesis. What excludes it is the no-signalling theorem (Part 1) and relativity (Part 3).</strong></p>
+<p><strong>The loophole-free tests close the remaining routes.</strong> The 2015 experiments (Hensen et al.; Giustina et al.; Shalm et al.) closed the locality and detection loopholes simultaneously, in three independent systems. <strong>No local-causal account of the correlations survives</strong>, and the 2022 Nobel Prize marks the field's own reading of the result.</p>
+<h2 id="part-3-why-instantaneous-and-no-energy-transits-does-not-save-it">Part 3 — Why "instantaneous, and no energy transits" does not save it</h2>
+<p>The corpus offers two safeguards, and neither works.</p>
+<p><strong>Safeguard 1: it is information, not energy, that transits, and no real energy is carried.</strong> Esp 103: <em>"aucune impulsion-énergie réelle ne se propage d'un état corrélé vers l'autre"</em>. <strong>But signalling is about information, not energy.</strong> Nothing in relativity, and nothing in quantum theory, limits the speed of energy transfer as such; what is limited is the causal propagation of <em>signals</em>, and the corpus explicitly says the information transits with <em>"un temps de transit nul"</em>. <strong>Zero transit time for information is superluminal signalling, stated as clearly as possible.</strong> The claim that no energy moves does not weaken it; it sharpens it, since a content-free superluminal influence is still a preferred causal structure.</p>
+<p><strong>Safeguard 2: the exchange is "at the same instant $\tau$".</strong> Esp 103: <em>"cette interaction débutant au même instant $\tau$ pour les deux particules de la paire"</em>. <strong>For spacelike-separated events there is no frame-independent "same instant".</strong> Simultaneity is relative; two events at a spacelike separation are simultaneous in some frames and ordered one way in others. <strong>So the corpus's mechanism — an exchange "beginning at the same instant $\tau$ for both particles" — is not a frame-independent statement, and it is precisely the simultaneity structure that relativity denies.</strong> This is an argument that does not need Bell at all, and the corpus never meets it. (Its Axiom 6 supplies the universal $\tau$ that makes the statement sound natural <em>inside the model</em> — and Axiom 6 is [FALS], P12. <strong>So the EPR mechanism inherits Axiom 6's failure and adds a second, independent one.</strong>)</p>
+<p><strong>What actually explains the correlations, and it explains more.</strong> Quantum mechanics: the pair is in an entangled state; the joint statistics are (Part 1's formula); the marginals are flat; and there is no fact of the matter about "what the second photon did" before it is measured. <strong>This account is local in its dynamics (no influences propagate), non-local in its correlations (the joint state is not a product), and it is <em>used</em> in practice precisely because it cannot signal:</strong> quantum key distribution, and quantum teleportation, whose central protocol requires the two parties to exchange <em>classical</em> information afterwards <strong>because the entanglement alone transmits nothing.</strong> The one phenomenon the corpus cites as a communication channel is the one modern technology relies on for being secure — it cannot carry a message.</p>
+<p><strong>And the telepathy claim.</strong> Esp 104's closing sentence moves from a physics discussion to <em>"une base scientifique de ce qu'on appelle généralement les « phénomènes télépathiques »"</em>. <strong>No measurement supports telepathy</strong>, and the corpus's bridge to it is the supposed instantaneous information channel — which does not exist. This is the one place in the EPR annexe where the argument leaves physics, and it should be recorded as such rather than argued with.</p>
+<h2 id="part-4-the-claim-that-epr-proves-axiom-6">Part 4 — The claim that EPR proves Axiom 6</h2>
+<p>Esp 104 lists as its first conclusion: <em>"Elle démontre que notre </em><em>axiome 6 est bien fondé</em><em>"</em> — the EPR experiment demonstrates the universal age. <strong>This inference fails in both directions.</strong></p>
+<p><strong>The data do not imply Axiom 6.</strong> What the experiment shows is entanglement, and entanglement is fully accounted for in quantum mechanics with no universal age. The corpus's route is: the exchange must be instantaneous; therefore all phenomena share one age. <strong>The first premise is not established by the data (Part 1), and even if it were, "instantaneous in some slicing" does not give every object the same age</strong> — that would require the additional claim that the slicing is the ageing variable, which is Axiom 6 itself, assumed rather than shown.</p>
+<p><strong>And Axiom 6 is independently false.</strong> RC 038–040's universal age is contradicted by look-back time and time dilation (P12), and the twin-paradox conclusion that follows from it is contradicted by direct experiment (P17). <strong>So the corpus's first conclusion from its flagship quantum argument is a premise it needed, labelled as a proof.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus explains the EPR correlations by a continuous, instantaneous exchange of information between the pair, carried by virtual interactions that transfer no real energy, and presents this as a scientific basis for telepathy.</strong> The correlations are real — entanglement, Aspect 1981–82, loophole-free 2015, Nobel 2022 — and the corpus's description of the equal-angle case is correct. Its <em>mechanism</em> is [FALS]: the marginal statistics at either polariser are $\tfrac12$ for any setting of the other, so no information is locally accessible; the "always both or neither" fact is a joint property of two records and is assembled by classical coincidence counting, at or below $c$; Bell (1964) and CHSH (1969) exclude local accounts, and the corpus cites the experiments built to test them without the inequality; and "instantaneous at the same instant $\tau$" presupposes a frame-independent simultaneity relativity denies. "No real energy transits" does not help — it is <em>information</em> that must not transit, and the corpus says it transits with zero delay. The telepathy remark is not physics. <strong>And the annexe's claim that EPR demonstrates Axiom 6 fails twice: the data do not imply it, and Axiom 6 is independently [FALS] (P12, P17).</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha, \beta$</td>
+<td>polariser angles</td>
+</tr>
+<tr>
+<td>$P(\alpha,\beta)$</td>
+<td>coincidence probability, $\tfrac12\cos^{2}(\alpha-\beta)$</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the corpus's universal age (Axiom 6)</td>
+</tr>
+<tr>
+<td>EPR</td>
+<td>Einstein–Podolsky–Rosen (1935)</td>
+</tr>
+<tr>
+<td>CHSH</td>
+<td>Clauser–Horne–Shimony–Holt (1969)</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation and theory</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §10.2: <strong>this article is the article-form of that entry.</strong></li>
+<li><code>Esp/102_improved.md</code>, <code>Esp/103_improved.md</code>, <code>Esp/104_improved.md</code> (Annexe 3: the virtual-interaction principle, the corollary, the polariser argument, the two conclusions and the telepathy remark).</li>
+<li>P12 for Axiom 6, P17 for the twin paradox, P19 for the dated falsifications.</li>
+<li>S59 for the chains; S60 for the tier verdict.</li>
+<li>Bell, <em>Physics</em> 1 (1964) 195; CHSH, <em>Phys. Rev. Lett.</em> 23 (1969) 880; Clauser–Freedman (1972); Fry–Thompson (1976); Aspect et al. (1981–82); Hensen et al. (2015); Giustina et al. (2015); Shalm et al. (2015).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Vacuum with Negative Density — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-vacuum-with-negative-density"><strong>Charon: The Vacuum with Negative Density</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the corpus's identification of <em>empty space</em> with antimatter. RC 069 states the premise — a closed, pulsating universe means the cosmological density is not zero — and RC 084 gives the number: $\rho = -2{,}9\times10^{-32}$ g cm$^{-3}$. <strong>The claim is doubly wrong, and in a way that is more interesting than a simple miss: the sign and the magnitude are both reversed, and the corpus needs the wrong sign.</strong></p>
+<p><strong>The claim, verbatim.</strong> RC 084: <em>"Cette densité $\rho = \alpha/R^{3}$ de l'espace « vide » est actuellement, comme nous le montre le modèle cosmologique, de $-2{,}9\times10^{-32}$ g/cm$^{3}$."</em> RC 069 sets up the reason: <em>"Le Réel dans son ensemble est, comme nous le verrons dans le chapitre V (modèle cosmologique), un espace sphérique fermé ($K = +1$). Le rayon spatial $R(\tau)$ de ce modèle cosmologique possède lui-même une pulsation radiale périodique. Ceci veut dire à son tour que, ce que nous nommons généralement « espace vide », n'est pas rigoureusement vide, la densité cosmologique $\rho_c$ n'est pas nulle."</em></p>
+<p><strong>The verdict is [FALS].</strong> The occupant of that role in modern cosmology is dark energy, discovered in 1998, with density <strong>positive</strong> and $\approx 6\times10^{-30}$ g cm$^{-3}$ equivalent — about <strong>200 times larger in magnitude and opposite in sign</strong>. Worse, the corpus does not merely get the sign wrong; it <em>requires</em> $\Lambda \le 0$, because a closed universe with a finite maximum radius has $\Lambda = -3/R_{\max}^{2} < 0$ necessarily. S52 computes the required value as $-1{,}53\times10^{-60}$ cm$^{-2}$ against the observed $+1{,}10\times10^{-56}$ cm$^{-2}$ — opposite sign, 7168 times smaller. <strong>So the corpus's needed sign is wrong, its stated magnitude is wrong, and the magnitude the geometry actually demands is wrong too.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §8.5, sourced to RC ch. V §2 (5-68), RC 069 and Esp §VII.14. The geometric requirement and the computed comparison are S52's, and the relation to the bounce is S51's. The related articles are P9, P11 and P15; the related chain is R9's neighbourhood (the redshift cut-off depends on the same closed-universe geometry).</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $\rho$ is the corpus's "void" density, $\Lambda$ the cosmological constant, $R(\tau)$ the cosmic scale factor, $R_{\max}$ its maximum, $K$ the curvature sign, $\Omega_{\Lambda}$ and $\rho_{\Lambda}$ the modern dark-energy parameters. The conversion used is $\rho_{\Lambda} = \Lambda c^{2}/8\pi G$.</p>
+<h2 id="part-1-why-the-corpus-needs-a-non-zero-vacuum-and-why-it-needs-the-sign-it-chose">Part 1 — Why the corpus needs a non-zero vacuum, and why it needs the sign it chose</h2>
+<p>The claim is not an idle remark. It is load-bearing in three places, and in each of them the corpus needs the density to be <strong>negative</strong>.</p>
+<p><strong>The premise: a closed pulsating universe cannot be empty.</strong> RC 069's argument is that a finite closed space with a moving radius has curvature, so its "vacuum" carries an energy density. That step is correct and it is standard: in general relativity a closed universe has a non-zero vacuum contribution fixed by its geometry, and the sign follows from the closure.</p>
+<p><strong>The sign is forced geometrically.</strong> This is S52's finding, and it is stronger than the corpus's own derivation. For a closed ($K = +1$) universe with a finite maximum radius $R_{\max}$, the Friedmann equation at the turning point requires</p>
+<p>$$\Lambda = -\frac{3}{R_{\max}^{2}} < 0 .$$</p>
+<p><strong>The requirement does not depend on the micro-universe, on (3-69-2), or on any of the corpus's own machinery</strong> — it is a statement about a closed universe that turns around. That matters, because it means a defender cannot drop the sign without dropping the bounce and the cycle as well.</p>
+<p><strong>Two values, and they differ.</strong> The corpus states $\rho = -2{,}9\times10^{-32}$ g cm$^{-3}$, which converts to $\Lambda = 8\pi G\rho/c^{2} = -5{,}4\times10^{-59}$ cm$^{-2}$. The geometry above demands $-1{,}53\times10^{-60}$ cm$^{-2}$. <strong>The corpus's own two routes to $\Lambda$ disagree with each other by a factor of 35</strong> — a smaller internal tension than the external one, but worth recording, and the same shape as the $l_{0}$/$\xi$ misfit S30 finds in the Système L.</p>
+<h2 id="part-2-what-is-actually-there">Part 2 — What is actually there</h2>
+<p><strong>The measurement.</strong> In 1998 two supernova teams found that the expansion is <em>accelerating</em>; combined with the CMB and baryon acoustic oscillations, the acceleration requires a component with negative pressure and positive energy density. Planck 2018 fixes it:</p>
+<p>$$\Omega_{\Lambda} = 0{,}6889 \pm 0{,}0056, \qquad
+\rho_{\Lambda} = \Omega_{\Lambda}\rho_{\mathrm{crit}} \approx 5{,}9\times10^{-30}\ \mathrm{g\ cm^{-3}},$$</p>
+<p>and a corresponding $\Lambda_{\mathrm{obs}} = +1{,}10\times10^{-56}$ cm$^{-2}$.</p>
+<p><strong>The comparison, three ways.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>corpus</th>
+<th>required by its own geometry (S52)</th>
+<th>observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sign</td>
+<td>negative</td>
+<td>negative</td>
+<td><strong>positive</strong></td>
+</tr>
+<tr>
+<td>$\rho$ (g cm$^{-3}$)</td>
+<td>$-2{,}9\times10^{-32}$</td>
+<td>$\approx-8{,}2\times10^{-34}$</td>
+<td>$+5{,}9\times10^{-30}$</td>
+</tr>
+<tr>
+<td>$\Lambda$ (cm$^{-2}$)</td>
+<td>$-5{,}4\times10^{-59}$</td>
+<td>$-1{,}53\times10^{-60}$</td>
+<td>$+1{,}10\times10^{-56}$</td>
+</tr>
+<tr>
+<td>ratio to observation</td>
+<td>200× too small, wrong sign</td>
+<td>7168× too small, wrong sign</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus's "negative vacuum density" is wrong three times: the sign is wrong, its own number is 200 times too small, and the number its geometry actually demands is 7000 times too small.</strong> This is not a near-miss that better data might repair; it is a disagreement about the sign of the dominant term in the cosmic energy budget.</p>
+<p><strong>The magnitude problem is the same problem as the cosmological-constant problem.</strong> An honest reading must say that <em>both</em> the corpus's $-2{,}9\times10^{-32}$ and the modern $+5{,}9\times10^{-30}$ are enormously larger than a naive quantum-field-theory estimate of the vacuum energy density — by some 120 orders of magnitude in the standard estimate. <strong>So the corpus's number is not absurd as a <em>vacuum</em> number; it is the wrong sign, and it is not what the universe is doing.</strong></p>
+<h2 id="part-3-the-vacuum-is-a-form-of-antimatter">Part 3 — "The vacuum is a form of antimatter"</h2>
+<p>The corpus draws a further identification: since the vacuum density is negative and its own particles carry negative proper mass under some conditions, the vacuum <em>is</em> antimatter (inventory §8.5, and the companion's caution that the corpus's version is its own).</p>
+<p><strong>Why this cannot be maintained.</strong> In the modern account dark energy is a smooth stress-energy component with $w \approx -1$; it carries no antiparticles, and the "antimatter" of the standard model is a set of anti-particles with positive energy and opposite charges. <strong>The corpus's "negative proper mass" is a bookkeeping device internal to its ±-energy scheme (S13), not an identification with $\bar{p}$ or $\bar{n}$.</strong> Calling the vacuum "a form of antimatter" therefore inherits the failure of P9's antimatter era: it needs the same sign convention, and that sign is the one observation contradicts.</p>
+<p><strong>And it interacts with the bounce.</strong> S51's finding is that the modification producing the bounce <em>is</em> $\Lambda \le 0$ and dies with its sign. So the vacuum density claim, the bounce and the cycle are one cluster: <strong>all three rest on the same negative-$\Lambda$ requirement, and observation supplies a positive one.</strong> That is the cleanest way to say what breaks.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus gives "empty space" a negative density, $\rho = -2{,}9\times10^{-32}$ g cm$^{-3}$, and identifies the vacuum with antimatter.</strong> Dark energy, discovered in 1998, has density $+5{,}9\times10^{-30}$ g cm$^{-3}$ — about 200 times larger and of the opposite sign. The corpus does not merely get the sign wrong; its closed, bouncing universe <em>requires</em> $\Lambda = -3/R_{\max}^{2} < 0$, and S52 computes the demanded value as $-1{,}53\times10^{-60}$ cm$^{-2}$ against the observed $+1{,}10\times10^{-56}$ cm$^{-2}$ — opposite sign, 7168 times smaller. The corpus's two internal routes to $\Lambda$ also disagree by a factor 35. <strong>Verdict [FALS], and the failure takes the bounce (S51) and the cycle (S52) with it, since all three rest on the same negative-$\Lambda$ requirement.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho$</td>
+<td>the corpus's vacuum ("void") density, RC (5-68)</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>cosmological constant; observed $+1{,}10\times10^{-56}$ cm$^{-2}$</td>
+</tr>
+<tr>
+<td>$R_{\max}$</td>
+<td>maximum radius of the closed universe</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>curvature sign; the corpus has $K = +1$</td>
+</tr>
+<tr>
+<td>$\Omega_{\Lambda}$</td>
+<td>dark-energy density parameter, $0{,}6889 \pm 0{,}0056$</td>
+</tr>
+<tr>
+<td>$w$</td>
+<td>dark-energy equation of state, $\approx -1$</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §8.5: <strong>this article is the article-form of that entry, with S52's sharper form of the comparison.</strong></li>
+<li><code>RC/084_improved.md</code> (the $-2{,}9\times10^{-32}$ g cm$^{-3}$ and the equation), <code>RC/069_improved.md</code> (the closed pulsating universe and the non-zero vacuum), Esp §VII.14.</li>
+<li>P15 for $K = +1$, P9 for the antimatter era, P11 for creation; S50, S51 and S52 for the zero-total-energy axiom, the bounce and the cyclic model; S13 for negative proper mass.</li>
+<li>S59 for the chains; S60 for the tier verdict.</li>
+<li>Riess et al., <em>A. J.</em> 116 (1998) 1009; Perlmutter et al., <em>Ap. J.</em> 517 (1999) 565; Planck 2018 results VI.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

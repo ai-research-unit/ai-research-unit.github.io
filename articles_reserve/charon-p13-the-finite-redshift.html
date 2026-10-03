@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Finite Redshift — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-finite-redshift"><strong>Charon: The Finite Redshift</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the corpus's one self-declared new observability, and the one that died hardest. <strong>The corpus says no object in the universe can have a redshift greater than $Z_{\max} = 4{,}736$ (Esp, 1983) or $5{,}438$ (RC, 1987).</strong> The prediction is finite, dated and unambiguous — exactly what a physical theory should produce — and it is wrong by a factor of $2{,}6$ today.</p>
+<p><strong>The claim, verbatim.</strong> Esp 077: <em>"Il s'ensuit qu'aucun déplacement vers le rouge observé ne devrait actuellement supérieur à : $Z = \dfrac{\Delta\lambda}{\lambda} = \sqrt{\dfrac{1+\beta_{\max}}{1-\beta_{\max}}} - 1 = 4{,}736$."</em> RC 076, four years later: <em>"Étant donné que $R'$ ne peut jamais excéder $c$, nous obtenons comme le « redshift » $Z_{\max}$ </em>maximum<em> pour tout objet de l'Univers : $\quad Z_{\max} = \left(\frac{1+\beta_{\max}}{1-\beta_{\max}}\right)^{1/2} - 1 = 5{,}438$."</em> And the corpus knew what it had: §10.11 records its own assessment that the finite $Z_{\max}$ is the only genuine claim to a new observability in the whole program.</p>
+<p><strong>The verdict is [FALS], and it is the cleanest outright falsification in the corpus.</strong> $z = 3{,}53$ was the record when Esp was written ($z = 3{,}78$ when RC was); quasars with $z > 4$ arrived in 1991; the record today is <strong>$z = 14{,}32$</strong> (JADES-GS-z14-0, 2024). <strong>The corpus's ceiling is exceeded by roughly a factor of two and a half, and the exceedance began thirty-five years ago.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §7.5, sourced to Esp Annexe 2 and RC ch. V. The companion's §10.11 records the corpus's self-assessment. This article also covers the modified Hubble law of §7.7, because the cut-off and the law are one statement. The related articles are P12 (Axiom 6), P14 (the quasar peak, from the same annexe) and P15 (the closed universe); the related chain is R9.</p>
+<p><strong>Conventions.</strong> $z = \Delta\lambda/\lambda$ is redshift; $\beta = v/c$; $R(\tau)$ the cosmic scale factor and $R'$ its time derivative; $L = \pi R$ the corpus's maximum distance; $q_a$ the corpus's deceleration parameter. The relativistic Doppler relation used by the corpus is $1 + z = \sqrt{(1+\beta)/(1-\beta)}$.</p>
+<h2 id="part-1-where-the-finite-ceiling-comes-from">Part 1 — Where the finite ceiling comes from</h2>
+<p>The ceiling is not independent. It is the product of three corpus commitments, and it is worth setting them out in order because the failure of the third is the failure of the article.</p>
+<p><strong>(1) The redshift is interpreted as a Doppler shift.</strong> The corpus's (5-36) is a <em>modified Hubble law</em>:</p>
+<p>$$\frac{v}{c} = \frac{lR'}{\sqrt{c^{2}R^{2} + l^{2}R'^{2}}},$$</p>
+<p>which is inventory §7.7. Here $v$ is the recession velocity of an object at distance $l$, and the corpus reads the observed redshift as the Doppler shift of that $v$. <strong>This is the interpretive step.</strong> In general relativity, cosmological redshift is not a Doppler shift from a recession velocity: it is the accumulated effect of the expansion of space along the light's path. A comoving galaxy's "recession velocity" $v = Hl$ is not the velocity of anything through space, and it is not bounded by $c$.</p>
+<p><strong>(2) The recession velocity is capped at $c$.</strong> With $l \to L = \pi R$ and $R' \le c$, (5-36) gives the corpus's</p>
+<p>$$\beta_{\max} = \frac{\pi R'}{\sqrt{c^{2} + \pi^{2}R'^{2}}},$$</p>
+<p>which approaches 1 but never reaches it — the corpus's own point that <em>"$R'$ ne peut jamais excéder $c$"</em>. <strong>The cap at $c$ is a non-standard constraint</strong>: it is what turns a velocity into a bound on the redshift.</p>
+<p><strong>(3) A finite maximum distance $L = \pi R$ and the closed universe.</strong> Esp 099 (Annexe 2) uses the observed $z = 3{,}53$ to conclude <em>"que la distance « maximum » $L$ dans l'Univers est $\pi R$ et non $\pi R/2$"</em> — the topologically spherical rather than elliptical case. The closed universe supplies a finite maximum distance; the Doppler reading turns that into a finite maximum redshift.</p>
+<p><strong>So $Z_{\max}$ is exactly the length of this chain, and the chain's weak link is (1).</strong> Modern cosmology keeps a finite spatial extent for a closed universe and has no ceiling on $z$, because it does not read the redshift as a velocity. <strong>A finite maximum <em>distance</em> does not imply a finite maximum <em>redshift</em>:</strong> in an expanding closed universe the light from the antipode has travelled since a very early, much denser epoch, and its redshift is therefore large. This is the structural statement, and it survives every attempt to keep the closed geometry (P15).</p>
+<p><strong>Where the two numbers come from.</strong> The corpus's two books differ by 15 %, and the reason is a difference in the input, not in the formula:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>book</th>
+<th>$R'$ used</th>
+<th>$\beta_{\max}$</th>
+<th>$Z_{\max}$</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Esp 1983 (§18)</td>
+<td>$0{,}884\,c$ (its own "Système C" solution)</td>
+<td>$0{,}941$</td>
+<td><strong>4,736</strong></td>
+<td>the model's <em>current</em> $R'$</td>
+</tr>
+<tr>
+<td>RC 1987 (5-38)–(5-39)</td>
+<td>$c$ (the kinematic ceiling)</td>
+<td>$0{,}953$</td>
+<td><strong>5,438</strong></td>
+<td><em>"$R'$ ne peut jamais excéder $c$"</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both are consistent with the corpus's own machinery, and both are ~5.</strong> So the disagreement between the two books is a bookkeeping matter; the falsification is common to both.</p>
+<h2 id="part-2-the-record-and-where-each-number-was">Part 2 — The record, and where each number was</h2>
+<p>The corpus's prediction is dated, so it can be tested chronologically, which is the fairest way to test a prediction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>year</th>
+<th>record $z$</th>
+<th>object</th>
+<th>exceeds the corpus's ceiling?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1973</td>
+<td>$3{,}53$</td>
+<td>OQ 172 (the corpus's own citation)</td>
+<td>no — it is the value he used</td>
+</tr>
+<tr>
+<td>1982</td>
+<td>$3{,}78$</td>
+<td>PKS 2000$-$330 (RC's citation)</td>
+<td>no</td>
+</tr>
+<tr>
+<td><strong>1991</strong></td>
+<td><strong>$4{,}897$</strong></td>
+<td>PC 1247+3406</td>
+<td><strong>yes — first exceedance</strong></td>
+</tr>
+<tr>
+<td>2001</td>
+<td>$6{,}28$</td>
+<td>SDSS quasar</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>$8{,}55$</td>
+<td>UDFy-38135539</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>2015–16</td>
+<td>$11{,}1$</td>
+<td>EGSY8p7, then GN-z11</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>$13{,}2$</td>
+<td>JADES-GS-z13-0</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><strong>2024</strong></td>
+<td><strong>$14{,}32$</strong></td>
+<td><strong>JADES-GS-z14-0</strong></td>
+<td><strong>yes, by a factor $2{,}6$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first exceedance was in 1991, four years after RC.</strong> The prediction was live for less than a decade, and it has been dead for thirty-five years. (For completeness: the JWST spectroscopic revision of GN-z11 gives $z = 10{,}60$, and candidates near $z = 15$ exist but are not yet confirmed; neither affects the verdict.)</p>
+<p><strong>The excluded object is not exotic.</strong> JADES-GS-z14-0 is a compact star-forming galaxy with a stellar mass of order $4\times10^{8}$ $M_{\odot}$, seen 290 Myr after the Big Bang. Its redshift is measured spectroscopically, from multiple emission lines, and it is not a marginal case: at $\beta = 0{,}9915$ it sits far beyond the corpus's $\beta_{\max} = 0{,}941$–$0{,}953$.</p>
+<p>$$\beta(z = 14{,}32) = \frac{(1+z)^{2} - 1}{(1+z)^{2} + 1} = 0{,}9915
+\quad\text{against}\quad \beta_{\max} = 0{,}941\ (0{,}953).$$</p>
+<p><strong>The corpus's own ceiling on $\beta$ is violated, which shows that the failure is not a rounding error in the formula but a false premise about the physics.</strong></p>
+<h2 id="part-3-what-the-failure-takes-with-it">Part 3 — What the failure takes with it</h2>
+<p><strong>The modified Hubble law (§7.7) dies with the ceiling.</strong> (5-36) is the same statement as (5-38): the ceiling is (5-36) evaluated at $l = L$. If the ceiling is wrong, the law that produces it is wrong, and the corpus's account of why <em>"la vitesse de récession reste inférieure à $c$"</em> is wrong. Standard cosmology needs no such cap and has none.</p>
+<p><strong>The quasar-distance argument dies with it.</strong> Esp 099 uses $z = 3{,}53$ to fix $L = \pi R$ rather than $\pi R/2$, i.e. to fix the topology as spherical rather than elliptical. That inference is sound only if the observed $z$ is a lower bound on $Z_{\max}$; with $z = 14{,}32$ observed, the argument no longer distinguishes the two topologies.</p>
+<p><strong>But the closed universe does not die with it.</strong> This is the article's one careful distinction. P15's verdict on $K = +1$ is [OUT] (disfavoured), not [FALS], and that is a separate question. <strong>A closed universe with a large finite $z$ is perfectly consistent.</strong> The corpus's error was to convert a statement about geometry into a statement about velocity.</p>
+<p><strong>And the corpus's own self-assessment sharpens the lesson.</strong> §10.11 records that the finite $Z_{\max}$ was the program's <em>only</em> claimed new observability. It was also the program's most falsifiable prediction, and it is dead. <strong>The single claim the corpus was willing to stake on an observation is the claim an observation refuted</strong> — which is P19's teaching case, and the reason the surviving numbers of the program (R1's $\alpha$, R2's proton radius, R5's $\dot G/G$) are all of a different kind.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus predicts a finite maximum redshift, $Z_{\max} = 4{,}736$ (Esp, 1983) or $5{,}438$ (RC, 1987), and calls it the program's only genuine new observability.</strong> The prediction is [FALS]. It follows from reading the redshift as the Doppler shift of a recession velocity capped at $c$ at the maximum distance $L = \pi R$; the cap is non-standard, and a finite maximum distance does not imply a finite maximum redshift. The record redshift was $z = 3{,}53$ when the first book was written, $3{,}78$ when the second was; quasars with $z > 4$ arrived in 1991; and the record today is $z = 14{,}32$ (JADES-GS-z14-0, 2024), with $\beta = 0{,}9915$ against the corpus's $\beta_{\max} = 0{,}941$–$0{,}953$. The modified Hubble law (§7.7) and the topological inference of Esp Annexe 2 die with it. <strong>The closed universe of P15 does not die with it — that is a separate, merely disfavoured, claim. Chain R9 ($S51 \to P12 \to P13$) dies on its Part P links: at Axiom 6 (P12, the register's dated verdict) and again at the ceiling itself here.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z$</td>
+<td>redshift, $\Delta\lambda/\lambda$</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$v/c$; the corpus's $\beta_{\max}$ is $0{,}941$ (Esp) / $0{,}953$ (RC)</td>
+</tr>
+<tr>
+<td>$R$, $R'$</td>
+<td>cosmic scale factor and its time derivative</td>
+</tr>
+<tr>
+<td>$L$</td>
+<td>corpus's maximum distance, $\pi R$</td>
+</tr>
+<tr>
+<td>$q_a$</td>
+<td>corpus's deceleration parameter, $0{,}28$</td>
+</tr>
+<tr>
+<td>$Z_{\max}$</td>
+<td>corpus's maximum redshift, $4{,}736$ / $5{,}438$</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §7.5 (the claim) and §7.7 (the modified Hubble law) and §10.11 (the self-assessment): <strong>this article is the article-form of those entries.</strong></li>
+<li><code>Esp/077_improved.md</code> (§18: $\beta_{\max} = 0{,}941$ from $R' = 0{,}884c$, and $Z = 4{,}736$), <code>Esp/073_improved.md</code> ($z = 3{,}53$ and $\beta = 0{,}907$), <code>Esp/099_improved.md</code> (Annexe 2), <code>RC/076_improved.md</code> ((5-34)–(5-40): the modified Hubble law, $\beta_{\max}$, $Z_{\max} = 5{,}438$, the comparison with $z = 3{,}78$).</li>
+<li>P12 for Axiom 6, P14 for the quasar peak, P15 for $K = +1$, P19 for the dated falsifications.</li>
+<li>S51, S52 for the closed-universe and bounce analysis; S59 for chain R9; S60 for the tier verdict.</li>
+<li>JADES-GS-z14-0 (Carniani et al., 2024); the SDSS and 2dF quasar redshift records; the standard FLRW account of cosmological redshift.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

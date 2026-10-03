@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Quarkonium Mass — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-quarkonium-mass"><strong>Charon: Quarkonium Mass</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus's quark–antiquark pairs have <strong>zero global proper mass</strong>. The claim is stated plainly, applied to all five upper levels of the hadron, and it is used to resolve a "paradox" the corpus finds elsewhere. It is also wrong in the most direct possible way: the quarkonium states have measured masses, and two of them were measured before the book was published.</p>
+<p><strong>The claim, verbatim.</strong> RC 030: <em>"C'est ce qui se produit avec certains hadrons, constitués de quarks parfois groupés en «quarkonium», ou systèmes particulaires sous-jacents formés d'un quark et son antiquark. De telles «paires» constituantes ont, pour la RC, une masse propre globale </em><em>nulle</em><em>, puisque quark et antiquark ont des énergies égales et de signes contraires dans le système «quarkonium»."</em> RC 066 states the same for the hadron's five upper levels: the total energy <em>"est zéro pour l'ensemble de ces cinq niveaux supérieurs, puisque sur ces niveaux nous avons à la fois un quark et son antiquark (quarkonium), ayant respectivement des énergies $E_r$ égales mais de signes contraires."</em></p>
+<p><strong>The verdict is [FALS].</strong> The $J/\psi$, a $c\bar{c}$ state, has a mass of $3096{,}900$ MeV$/c^{2}$, measured in 1974. The $\Upsilon(1S)$, a $b\bar{b}$ state, has a mass of $9460{,}30$ MeV$/c^{2}$, measured in 1977. Both are before RC's publication in 1987. <strong>A pair whose mass is zero cannot be the state these experiments found.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §6.3, sourced to RC ch. III §2.2 at <code>RC/030_improved.md</code> and to RC ch. IV §III at <code>RC/066_improved.md</code>. The particle data are the PDG values for the $J/\psi$ and $\Upsilon(1S)$. The related articles are P4 (the level identification) and P5 (the top); the related chains are R7 and R11.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. <em>Quarkonium</em> is the term for a bound quark–antiquark system. Masses in MeV$/c^{2}$; $m_{c} \approx 1270$ MeV, $m_{b} \approx 4180$ MeV (PDG $\overline{\mathrm{MS}}$).</p>
+<h2 id="part-1-the-measured-states-and-the-arithmetic-they-contradict">Part 1 — The measured states, and the arithmetic they contradict</h2>
+<p>The corpus's claim is a numerical one — the pair's global proper mass is zero — so a measured mass settles it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>state</th>
+<th>composition</th>
+<th>mass (MeV$/c^{2}$)</th>
+<th>measured</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J/\psi$</td>
+<td>$c\bar{c}$</td>
+<td>$3096{,}900$</td>
+<td>1974</td>
+</tr>
+<tr>
+<td>$\psi(2S)$</td>
+<td>$c\bar{c}$</td>
+<td>$3686{,}10$</td>
+<td>1974</td>
+</tr>
+<tr>
+<td>$\Upsilon(1S)$</td>
+<td>$b\bar{b}$</td>
+<td>$9460{,}30$</td>
+<td>1977</td>
+</tr>
+<tr>
+<td>$\Upsilon(2S)$</td>
+<td>$b\bar{b}$</td>
+<td>$10023{,}26$</td>
+<td>1977</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the four states were known before the book.</strong> The $J/\psi$ was the November 1974 discovery at Brookhaven and SLAC, and the $\Upsilon$ was found at Fermilab in 1977. The corpus's own word <em>quarkonium</em> is the name the literature gave these states. So the corpus uses the correct term for the correct object and assigns it the wrong mass, in reference to measurements that existed when it was written.</p>
+<p><strong>The sign is wrong as well as the magnitude.</strong> Compare the $J/\psi$ with twice the charm mass: $2m_{c} \approx 2540$ MeV against $M_{J/\psi} = 3097$ MeV. The bound state is <strong>heavier</strong> than the sum of its constituents, not lighter. In QCD this is the confinement and kinetic energy of the bound system, which is positive. A "cancellation" of the constituents' energies would require the interaction to subtract exactly — the opposite of what binds the state.</p>
+<p><strong>Why "equal and opposite energies" does not give zero mass.</strong> In a bound system the rest mass is the total energy in the centre-of-momentum frame divided by $c^{2}$. Two constituents with equal and opposite <em>kinetic</em> energies do not cancel in that total: kinetic energies add, because they are quadratic. The corpus's cancellation is only possible if the two energies are signed quantities that add to zero <em>by construction</em>, which is a modelling assumption, not a measured fact — and the measurement contradicts it.</p>
+<h2 id="part-2-the-paradox-the-claim-was-introduced-to-resolve">Part 2 — The "paradox" the claim was introduced to resolve</h2>
+<p>The corpus does not state the zero-mass claim for its own sake; it uses it to answer an objection it raises itself.</p>
+<p><strong>The objection.</strong> RC 030 notes that if one tries to act on the individual constituents of a hadron — to move a quark or an antiquark to a lower energy level — the energy required from an external source may be <em>"beaucoup plus"</em> than the energy corresponding to the hadron's total proper mass. The corpus asks: <em>"Paradoxe?"</em></p>
+<p><strong>The corpus's answer.</strong> No paradox, <em>"si les notions d'énergies positive et négative ont droit de cité en Physique"</em>: the pair's global proper mass is zero, so any individual constituent's energy can exceed the pair's total without contradiction. The claim is load-bearing for the argument.</p>
+<p><strong>What is right and what is wrong in the answer.</strong> The <em>observation</em> behind the objection is real and important: the mass of a hadron is not the sum of its constituent quarks' masses. For the proton, $2m_{u} + m_{d} \approx 9$ MeV against $M_{p} = 938$ MeV — the great majority of the mass comes from the confinement energy and gluon fields, not from the quarks. <strong>So the corpus is right that something is missing from a naive constituent sum, and its instinct that the story is not additive is correct.</strong> What is wrong is the sign and the size: the missing mass is <em>positive</em> and large (about 99 % of the proton), so it does not cancel the constituents and cannot make a pair massless. <strong>The corpus saw a real gap and closed it in the wrong direction.</strong></p>
+<p><strong>And the corpus's own data point out the direction.</strong> RC 030 ends by invoking the large-accelerator experiments at CERN as revealing "energy paradoxes". That gesture is in the direction of the real physics — the hadron's mass being generated dynamically — but the corpus's own $J/\psi$ comparison, available since 1974, shows the bound state heavier than its parts.</p>
+<h2 id="part-3-what-breaks">Part 3 — What breaks</h2>
+<p><strong>The five upper levels lose their zero-energy justification.</strong> RC 066 uses the claim to set the total energy of the hadron's five upper levels to zero for the proton. With the pair's mass positive, that total is not zero, and the level bookkeeping of the hadron chapter has to be redone. It does not survive the redo, because the levels are P4's refuted ladder.</p>
+<p><strong>The "positive and negative energies" licence is the load-bearing step.</strong> The corpus is explicit that its resolution requires signed energies to "have a right of citizenship" in physics. That licence is the whole argument, and the measured quarkonium masses remove the need for it. A reissue should state the observation (mass is not the constituent sum), the correct explanation (confinement), and drop the cancellation.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus's quark–antiquark pairs have zero global proper mass, on the argument that a quark and an antiquark have equal and opposite energies in the pair.</strong> The claim is [FALS]: the $J/\psi$ has a mass of $3096{,}900$ MeV$/c^{2}$ (1974) and the $\Upsilon(1S)$ of $9460{,}30$ MeV$/c^{2}$ (1977), both before the book's publication. The bound state is <em>heavier</em> than the sum of its constituents ($2m_{c} \approx 2540$ MeV against $3097$ MeV), because confinement energy is positive. The claim is load-bearing for the corpus's answer to a "paradox" — that acting on a hadron's constituents may require more energy than the hadron's total mass — and that answer has a real observation underneath it (a hadron's mass is not the sum of its quarks' masses, which is about 1 % of the proton) closed in the wrong direction. <strong>Verdict [FALS].</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar{q}$</td>
+<td>antiquark</td>
+</tr>
+<tr>
+<td>$J/\psi$, $\Upsilon$</td>
+<td>$c\bar{c}$ and $b\bar{b}$ quarkonium states</td>
+</tr>
+<tr>
+<td>$m_{c}, m_{b}$</td>
+<td>charm and bottom masses, $1270$ and $4180$ MeV</td>
+</tr>
+<tr>
+<td>$E_{r}$</td>
+<td>the corpus's level energy, RC (4-27)</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_reserve/charon-p04-six-levels-and-six-flavours.md</code> (the levels the pair sits on) and <code>articles_reserve/charon-p05-where-does-the-top-quark-go.md</code> (the top, which forms no quarkonium).</li>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §6.3.</li>
+<li><code>RC/030_improved.md</code> (the zero-mass claim and the paradox), <code>RC/066_improved.md</code> (the five upper levels), <code>RC/050_improved.md</code> (the gluon construction, on the same signed-mass principle).</li>
+<li>S49 for the level transitions; S59 for chains R7 and R11; S60 for the tier verdict.</li>
+<li>The PDG listings for the $J/\psi$ and $\Upsilon$ families; the 1974 $J/\psi$ and 1977 $\Upsilon$ discovery papers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

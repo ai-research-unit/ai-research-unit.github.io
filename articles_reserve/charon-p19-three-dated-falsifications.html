@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: Three Dated Falsifications — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-three-dated-falsifications"><strong>Charon: Three Dated Falsifications</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article collects the three claims of the corpus that were falsified by unambiguous measurements, and treats them as a teaching case. <strong>The finite redshift $Z_{\max}$ (P13), the charged-lepton mass tower (P1), and Axiom 6 (P12) each made a definite, dated claim, and each was refuted by data.</strong> Real, documented falsifications of this kind are far more useful than a general verdict of "speculative", because they say exactly which premises the corpus can no longer use.</p>
+<p><strong>Why these three.</strong> They are the clearest, not the only, failures — the register's Part P holds twenty-four. They qualify because in each case the corpus states a value or a rule, the statement is testable, and a later measurement settled it. <strong>Two of the three are cases where the corpus deserves credit for making a falsifiable claim at all; one is a case where the refuting data were already in print when the corpus was written.</strong></p>
+<p><strong>The article's new finding, and it is a refinement of the usual account.</strong> The register's compressed phrasing says the three were "each killed by data that arrived later". <strong>That is true of the redshift ceiling and the lepton tower, and false of Axiom 6</strong>: time dilation had been measured since Rossi–Hall (1941) and Hafele–Keating (1971), the corpus cites the muon result itself (P17), and look-back time is the daily practice of astronomy. <strong>So the three failures are of two kinds, and the distinction matters: two are cases of the corpus being overtaken by new instruments, and one is a case of the corpus rejecting data in hand.</strong></p>
+<p><strong>A note on sources.</strong> This article is methodological and owns no claim of its own: P13, P1 and P12 own the three verdicts, and P15, P20 and S60 carry the surrounding analysis. The dated falsifications are the register's Part P contribution to the "case study" literature.</p>
+<h2 id="part-1-the-three-in-one-table">Part 1 — The three, in one table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>claim</th>
+<th>the corpus's value</th>
+<th>refuted by</th>
+<th>first refuting datum</th>
+<th>margin</th>
+<th>data available to Charon?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>finite maximum redshift (P13)</td>
+<td>$Z_{\max} = 4{,}736$ (1983) / $5{,}438$ (1987)</td>
+<td>quasar and galaxy surveys</td>
+<td>$z = 4{,}897$ (1991); record now $z = 14{,}32$ (2024)</td>
+<td><strong>2,6×</strong></td>
+<td><strong>no</strong> — the 1983 record was $z = 3{,}53$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>infinite charged-lepton tower (P1)</td>
+<td>rungs at $\approx3{,}47, 5{,}15, 6{,}83, 8{,}51$ GeV …</td>
+<td>LEP</td>
+<td>no charged lepton to $\approx100{,}8$ GeV (1989–2000)</td>
+<td><strong>≈29×</strong> in mass</td>
+<td><strong>no</strong> — LEP ran after the books</td>
+</tr>
+<tr>
+<td>3</td>
+<td>universal age, non-ageing photons (P12)</td>
+<td>all phenomena share $\tau$; no look-back time</td>
+<td>CMB, SN time dilation, muon lifetime</td>
+<td>Rossi–Hall 1941; Hafele–Keating 1971; CMB 1992</td>
+<td><strong>— (a category, not a margin: see below)</strong></td>
+<td><strong>yes</strong> — and cited by the corpus itself</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the last column first.</strong> It is the article's refinement. <strong>Two of these are scientific failures of the ordinary kind</strong> — a model made a prediction that the instruments of the day could not test, and the next generation of instruments tested it. <strong>The third is not:</strong> Axiom 6 is contradicted by measurements published forty-two and twelve years before the corpus's own books, and the corpus quotes one of them (<em>"résultat qui a bien été expérimentalement retrouvé, avec les muons du rayonnement cosmique"</em>, P17). <strong>That is a different kind of error and it should be labelled differently.</strong></p>
+<p><strong>And the margins differ in kind.</strong> $2{,}6\times$ and $29\times$ are quantitative disagreements. The third is not a margin but a category: if there is no look-back time then the CMB cannot be a photograph of a 380 000-year-old universe, and the disagreement is with a <em>practice</em> rather than with a number.</p>
+<h2 id="part-2-what-each-failure-costs-the-corpus">Part 2 — What each failure costs the corpus</h2>
+<p>Each of the three is a premise of other work, and this is why the falsifications matter beyond themselves.</p>
+<p><strong>The redshift ceiling takes the modified Hubble law with it.</strong> RC's (5-36) is the same statement as its (5-39) evaluated at $l = L$ (P13, §7.7). <strong>Its failure is not an isolated number: the corpus's account of why recession stays below $c$ goes with it, and so does Esp 099's inference that the universe is spherical rather than elliptical</strong> — an inference drawn from the observed $z = 3{,}53$ being a lower bound on $Z_{\max}$.</p>
+<p><strong>The lepton tower is the program's only numerological chain.</strong> R7 (S20 → S21 → P1 → P2) dies at P1. <strong>The corpus's three charged leptons fit only because $T_{0}$ was fitted to $\tau-\mu$ (S21, S31, S43).</strong> So the failure is not that the model missed a fourth lepton; it is that the <em>fit</em> to the three observed leptons was the whole empirical content of the lepton sector's mass formula, and the extrapolation beyond it was the prediction — and the prediction is dead (P1, P2, P20).</p>
+<p><strong>Axiom 6 is the most damaging, by a wide margin.</strong> It is the premise of the twin-paradox conclusion (P17) and the EPR mechanism (P16), and it is what makes the corpus's imaginary sector an "age" sector. <strong>Its failure is therefore inherited by two other Part P articles and by everything in the corpus that uses a universal $\tau$</strong> — which S59's chain map records.</p>
+<p><strong>The one thing the failures do <em>not</em> take is gravity.</strong> R5's $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$ passes through none of the three; it is the corpus's one live, dated prediction and it remains allowed (P20, S40).</p>
+<h2 id="part-3-the-teaching-case-what-to-do-with-a-dated-claim">Part 3 — The teaching case: what to do with a dated claim</h2>
+<p><strong>The corpus did something right, and the thing it did right is what makes this article possible.</strong> It staked its observability on a number. §10.11 records its own assessment that the finite $Z_{\max}$ is the only genuine claim to a new observability in the whole program. <strong>A programme that says "here is a value, go and measure it" is falsifiable, and falsifiable is better than unfalsifiable even when the value is wrong.</strong> Most of the corpus's 88 articles are not like this; the three that are can be audited exactly.</p>
+<p><strong>And the pattern of what survived is the lesson.</strong> Compare the three dead claims with the numbers that stand:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>number</th>
+<th>status</th>
+<th>why it stands</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z_{\max}$ (dead)</td>
+<td>[FALS]</td>
+<td>a <em>declared</em> prediction, tested by instruments that came later</td>
+</tr>
+<tr>
+<td>the tower (dead)</td>
+<td>[FALS]</td>
+<td>the <em>extrapolation</em> of a fit to three data points</td>
+</tr>
+<tr>
+<td>Axiom 6 (dead)</td>
+<td>[FALS]</td>
+<td>a premise contradicted by measurements in print</td>
+</tr>
+<tr>
+<td>$\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$</td>
+<td><strong>[SPEC], allowed</strong></td>
+<td>a <em>derived</em> number with no data yet to test it (R5)</td>
+</tr>
+<tr>
+<td>$\alpha$ to $2{,}3\%$</td>
+<td>[MIX]</td>
+<td>an internal consistency check seeded from measured masses (R1)</td>
+</tr>
+<tr>
+<td>the proton radius, $\approx0{,}92$ fm</td>
+<td><strong>STANDS</strong></td>
+<td>a closure of the elementary length with measured inputs (R2)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus's declared prediction died, and its undeclared numbers are the ones that stand.</strong> The reason is structural: a declared prediction has to be <em>derived</em> from the model's own dynamics, and the corpus's dynamics could not support it, while the surviving numbers are either internal consistency checks or closures of fitted inputs (P20's subject). <strong>This is the most useful single observation the falsification record yields, and it is more useful than any individual verdict.</strong></p>
+<p><strong>Three claims that are often called dead and are not.</strong> It is worth recording them so that this article is not read as a blanket verdict:</p>
+<ul>
+<li><strong>The closed universe (P15).</strong> Planck's $\Omega_{k} = -0{,}0007 \pm 0{,}0019$ makes it <em>disfavoured</em>, not excluded — though the corpus's own $R' = 0{,}884c$ excludes its <em>specific</em> solution by a factor 640 (P15, Part 2).</li>
+<li><strong>The bounce and the cycle (S51, S52).</strong> The period is derived and correct to 2 %; the mechanism's $\Lambda$ sign is wrong (P10); the claim is untestable for lack of a perturbation sector, not refuted by a datum.</li>
+<li><strong>$\dot G/G$ (R5).</strong> Still allowed, and the only one of the corpus's numbers a future measurement could confirm (S40).</li>
+</ul>
+<p><strong>So the honest summary of the program's empirical record is narrower than "it was wrong".</strong> Three claims died; one is disfavoured; two are live-but-unaddressed; and the numerical survivors are consistency checks rather than predictions. <strong>That is what a dated audit can say, and a general verdict cannot.</strong></p>
+<h2 id="part-4-dates-once-more-because-they-are-the-whole-point">Part 4 — Dates, once more, because they are the whole point</h2>
+<p><strong>The record of maximum redshift, as it stood when each book went to press.</strong> Esp (March 1982) cites OQ 172, $z = 3{,}53$, discovered 1973. RC (1986–87) cites PKS 2000$-$330, $z = 3{,}78$. <strong>Both books therefore predicted a ceiling that the next decade's instruments would cross:</strong> $z = 4{,}897$ in 1991, $z = 6{,}28$ in 2001, $z = 8{,}55$ in 2010, $z = 11{,}1$ by 2016, $z = 14{,}32$ in 2024.</p>
+<p><strong>The record of excluded charged leptons.</strong> When the corpus was written, no accelerator could reach 3.5 GeV in the relevant channel — so the tower's first rung at $\approx3{,}47$ GeV was, in 1983, beyond reach. <strong>LEP was approved in 1981 and ran from 1989; by 2000 the sequential-lepton search had reached the Z pole and beyond, and the $Z$ width fixed the number of light neutrino species at $N_{\nu} = 2{,}984 \pm 0{,}008$.</strong> So the tower's window closed between the two books and the LEP results.</p>
+<p><strong>The record of time dilation.</strong> Rossi–Hall (1941) measured the dilated muon lifetime; Hafele–Keating (1971) flew caesium clocks round the world and found the east/west asymmetry; the muon storage-ring measurement (1977) fixed the dilation at $\gamma = 29{,}3$. <strong>All three precede the corpus's 1983 book, and the corpus cites the muon result.</strong> So on this claim the corpus was not overtaken; it was contradicted.</p>
+<p><strong>And that distinction is the article's closing methodological point.</strong> A dated audit separates three things that a general verdict runs together: (i) claims refuted by <em>later</em> data, which are the normal cost of doing predictive science; (ii) claims refuted by data <em>in hand</em>, which are errors of method; and (iii) claims merely <em>disfavoured</em> or <em>untested</em>, which are not refutations at all. <strong>The corpus has examples of all three, and only the audit can tell them apart.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>Three corpus claims are cleanly falsified, and they are worth auditing by date: the finite redshift $Z_{\max} = 4{,}736$/$5{,}438$ (record now $z = 14{,}32$, a factor 2,6), the infinite charged-lepton tower (no charged lepton below $\approx100$ GeV, a factor $\ge20$ in mass), and Axiom 6's universal age (contradicted by time dilation and look-back time).</strong> The article's refinement: <strong>two of the three were refuted by instruments that arrived later — the ordinary cost of a predictive claim — and one, Axiom 6, was refuted by measurements in print since 1941 and 1971, which the corpus cites and rejects.</strong> Their costs differ too: the redshift ceiling takes the modified Hubble law and Esp's topology inference with it; the tower was the only numerological chain (R7) and it rested on a $T_{0}$ fitted to $\tau-\mu$; Axiom 6 is inherited by the twin-paradox and EPR articles. <strong>And the pattern is the lesson: the corpus's one declared prediction died, while its undeclared numbers — the derived $\dot G/G$, the $\alpha$ consistency check, the proton radius closure — are the ones that stand. The closed universe, the bounce and $\dot G/G$ are not refuted, and saying so is part of the audit.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z_{\max}$</td>
+<td>the corpus's maximum redshift, $4{,}736$ / $5{,}438$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>observed redshift; record $z = 14{,}32$ (2024)</td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>the corpus's universal period, fitted to $\tau-\mu$</td>
+</tr>
+<tr>
+<td>$N_{\nu}$</td>
+<td>number of light neutrino species, $2{,}984 \pm 0{,}008$ (LEP)</td>
+</tr>
+<tr>
+<td>$\dot G/G$</td>
+<td>fractional variation of $G$, corpus's $5\times10^{-16}$ yr$^{-1}$</td>
+</tr>
+<tr>
+<td>R1, R2, R5, R7</td>
+<td>the chains of §12.1</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>P13</strong> (the redshift ceiling), <strong>P1</strong> (the tower), <strong>P12</strong> (Axiom 6): the three verdicts this article collects.</li>
+<li><strong>P20</strong> for the fitted-versus-predicted pattern that explains the split in Part 3; <strong>P15</strong> for the closed universe; <strong>P16</strong> and <strong>P17</strong> for the two claims inheriting Axiom 6; <strong>S40</strong> for $\dot G/G$.</li>
+<li><code>UPDATED_CHARON_THEORY_2026_ARTICLE_LIST.md</code> §12.1 for the chains R1–R11, and the Part P section for the full set of twenty-four.</li>
+<li>S59 (the chain ledger), S60 (the tier verdict), S6 (what would count as success).</li>
+<li>The chronological sources cited in P13, P1 and P12; LEP's $N_{\nu}$ measurement; Rossi–Hall (1941) and Hafele–Keating (1971).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

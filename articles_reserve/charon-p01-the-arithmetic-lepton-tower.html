@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Arithmetic Lepton Tower — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-arithmetic-lepton-tower"><strong>Charon: The Arithmetic Lepton Tower</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This post-mortem article records the single cleanest falsification in the corpus. Charon's charged leptons are an <strong>infinite arithmetic ladder</strong>, one charged lepton for every non-negative integer $n$, its mass rising by a fixed amount. The claim is printed as an equation, generalised in the text without qualification, and it is dead: the Large Electron–Positron collider searched for exactly these particles and found none.</p>
+<p>The claim is that the $n$-th charged lepton has proper mass</p>
+<p>$$m_n = \mu + \frac{2(n-1)h}{c^{2}T_{0}},$$</p>
+<p>which the corpus numbers (3-76). The spacing between successive leptons is the constant $2h/(c^{2}T_{0})$, and Charon states the generalisation in words: <em>"l'ensemble des LEPTONS CHARGÉS correspond aux valeurs successives de $n$, quel que soit l'entier $n \in [0, \infty[$"</em> (RC 053, §VI.6). <strong>One lepton per integer, without end.</strong></p>
+<p><strong>The verdict is [FALS].</strong> LEP ran from 1989 to 2000 and accumulated some $10^{7}$ hadronic $Z^{0}$ decays and a large sample of $e^{+}e^{-}$ collisions at centre-of-mass energies up to 209 GeV. A fourth charged lepton with the tower's first predicted mass, about 3.5 GeV, would have been pair-produced with a cross-section of picobarns — it was not seen, and the direct-search limit now stands above 100 GeV. The tower's first rung is about thirty times below the exclusion. <strong>The three known charged leptons are accommodated, but only because the period $T_{0}$ was fixed using the $\tau-\mu$ mass difference: the ladder is the input printed back.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §4.3 and §4.4, sourced to RC (3-76) at scan <code>053_improved.md</code>. The LEP limit is the LEP Electroweak Working Group's 2000 combination, and the invisible-width count is the LEP measurement $N_{\nu} = 2{,}984 \pm 0{,}008$. The related chains are R7 ($T_{0}$ to the tower), which the register marks <strong>DIES here</strong>, and R1, which loses its "output" row. The downstream article is P22.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $n$ is the ladder index; $m_n$ the proper mass of the $n$-th charged lepton; $\mu$ the muon mass, so that $n = 1$ is the muon and $n = 0$ is the positron; $T_{0}$ the common pulsation period; $h$ Planck's constant and $c$ the speed of light. Masses are quoted as printed by the corpus, and converted to GeV where the comparison needs it ($1$ GeV$/c^{2} = 1{,}7827\times10^{-24}$ g).</p>
+<h2 id="part-1-the-claim-from-the-equation-to-the-words">Part 1 — The claim, from the equation to the words</h2>
+<p>The section that carries the claim is short and leaves no room for a charitable reading.</p>
+<p><strong>The energy rung.</strong> RC (3-75) gives the éonic neutrino's energy as $W_n = 2(n+\tfrac12)h/T_{0}$, printed numerically as (3-75-a), $W_n = 2(n+\tfrac12)\times0{,}832$ GeV. The coefficient is $h/T_{0}$, and $T_{0}$ is the period fixed in (3-68).</p>
+<p><strong>The mass rung.</strong> RC (3-76) is the equation above. It matters that the corpus calls this a <em>result</em>: the text says <em>"Le Système $E$ (3-53) nous fournit immédiatement les masses propres des leptons chargés quel que soit $n > 0$."</em> The generalisation is then stated explicitly — every charged lepton corresponds to a successive value of $n$, <em>"quel que soit l'entier $n$"</em> — with no upper bound.</p>
+<p><strong>The fitted input.</strong> The same page states how $\alpha$, $\beta$ and $T_{0}$ were obtained: <em>"en supposant que les 3 premières valeurs $n = 0$, $1$ et $2$ … correspondaient respectivement au positron, au muon et au tau."</em> So the reading order is fixed by the corpus itself. Three measured masses go in; the period comes out; the period is then used as the ladder's spacing; and the ladder's first three rungs reconstruct the three measured masses. <strong>That is an identity, not a prediction</strong> — the register's chain R7 records it as DIES at this page.</p>
+<p><strong>The arithmetic, checked.</strong> With the corpus's own 1983 masses, $\tau - \mu = 3{,}18\times10^{-24} - 1{,}89\times10^{-25} = 2{,}991\times10^{-24}$ g, which is $1{,}678$ GeV$/c^{2}$. The printed spacing is $2h/(c^{2}T_{0})$, and since $T_{0} = 2h/[c^{2}(\tau-\mu)]$ that is $(\tau-\mu)$ exactly. The predicted tower therefore begins at the values the corpus's own table prints:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>particle</th>
+<th>mass (g)</th>
+<th>mass (GeV$/c^{2}$)</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>positron</td>
+<td>$9{,}11\times10^{-28}$</td>
+<td>$0{,}000511$</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>1</td>
+<td>muon</td>
+<td>$1{,}89\times10^{-25}$</td>
+<td>$0{,}1057$</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>2</td>
+<td>tau</td>
+<td>$3{,}18\times10^{-24}$</td>
+<td>$1{,}777$</td>
+<td>measured</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m_3$</td>
+<td>$6{,}18\times10^{-24}$</td>
+<td>$3{,}47$</td>
+<td><strong>not observed</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$m_4$</td>
+<td>$9{,}18\times10^{-24}$</td>
+<td>$5{,}15$</td>
+<td><strong>not observed</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$m_5$</td>
+<td>$1{,}218\times10^{-23}$</td>
+<td>$6{,}83$</td>
+<td><strong>not observed</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$m_6$</td>
+<td>$1{,}518\times10^{-23}$</td>
+<td>$8{,}51$</td>
+<td><strong>not observed</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the corpus's (RC 053), with the GeV column added. The first three rows are the three known charged leptons. <strong>Every row from $n = 3$ upward is a prediction, and every one of them is excluded.</strong></p>
+<h2 id="part-2-what-settled-it-lep">Part 2 — What settled it: LEP</h2>
+<p>The disproof is a direct search, and it is worth stating precisely because the claim leaves no escape.</p>
+<p><strong>The machine.</strong> LEP collided electrons and positrons at CERN from 1989 to 2000. It ran first at the $Z^{0}$ pole, then above the $W^{+}W^{-}$ threshold, reaching a centre-of-mass energy of 209 GeV in its final year. A charged lepton $L^{\pm}$ of mass $m_{L}$ would be pair-produced, $e^{+}e^{-} \to L^{+}L^{-}$, once the beam energy exceeded $m_{L}c^{2}$, with a QED cross-section of order picobarns near threshold.</p>
+<p><strong>What was found.</strong> Nothing. No fourth charged lepton signal appeared at any energy. The combined LEP limit places a sequential charged lepton above <strong>100.8 GeV$/c^{2}$</strong> at 95 % confidence. The tower's rungs sit at 3.5, 5.1, 6.8, 8.5 GeV and upward by 1.68 GeV steps: <strong>the rungs at 3.5, 5.1, 6.8 and 8.5 GeV and upward in 1.68 GeV steps fill the region LEP scanned.</strong></p>
+<p><strong>The independent count.</strong> LEP measured the $Z^{0}$ invisible width and inferred the number of light neutrino species, $N_{\nu} = 2{,}984 \pm 0{,}008$. This does not by itself bound charged leptons, but it fixes the generation bookkeeping: three light neutrinos, so three charged leptons. A fourth generation with a light neutrino is excluded by the same measurement.</p>
+<p><strong>Why no escape hatch.</strong> The tower is not a band, a resonance family or an internal label. It is one particle per integer with a defined mass, and the corpus's own words generalise it to all $n$. A search at fixed energies below the first rung would have been a weak test; LEP scanned far enough to cover dozens of rungs. <strong>The falsification is as complete as a falsification gets.</strong></p>
+<h2 id="part-3-what-breaks-and-what-does-not">Part 3 — What breaks, and what does not</h2>
+<p><strong>The "parameter-free" claim loses its only genuine output.</strong> The corpus's headline (inventory §4.8) is that the lepton model is <em>"entièrement dépourvue de paramètres arbitraires"</em>. S21's audit shows the claim fails on its own terms — α is a pure mass combination, β is 94 % the $h/c$ combination, $T_{0}$ is the fitted difference — and this article removes the last thing the claim could have meant. A "computed" spectrum that reproduces three inputs and predicts nothing observed is not a computation; it is a fit with a forecast attached.</p>
+<p><strong>The prediction was tested and failed, not merely outrun.</strong> This matters for how the corpus is judged. A claim refuted only by later and better data is one kind of error; a claim that named specific particles at specific masses in a range a dedicated machine then searched is another. The tower belongs to the second kind. <strong>Charon made a bet with a settlement date, and it settled against him.</strong></p>
+<p><strong>Feeds P22 and S45.</strong> The bootstrap claim — that coherence principles suffice to fix the model — is tested here, and this is the test it fails. S45 owns the general form of the argument; this article owns the number.</p>
+<p><strong>One thing that survives unchanged:</strong> the three measured masses, and the arithmetic that $\tau - \mu$ is the ladder's step. That is an identity and it stays true. What dies is reading the identity as a discovery.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Charon's charged leptons form an infinite arithmetic tower, $m_n = \mu + 2(n-1)h/(c^{2}T_{0})$, with one charged lepton for every integer $n$ — and the tower is dead.</strong> LEP (1989–2000) searched for a fourth charged lepton up to 100.8 GeV and found none, while the tower's first rungs sit at 3.5, 5.1, 6.8 and 8.5 GeV. The three known leptons fit the ladder only because the period $T_{0}$ was fitted to the $\tau-\mu$ difference, so the ladder's spacing is that difference printed back — chain R7, DIES at RC 053. What breaks: the "parameter-free lepton model" loses its only output, and the bootstrap claim (P22, S45) fails its test. What stands: the $\tau-\mu$ arithmetic, which is an identity. <strong>Verdict [FALS], settled by LEP and confirmed by every search since.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n$</td>
+<td>the ladder index, $n = 0, 1, 2, \ldots$</td>
+</tr>
+<tr>
+<td>$m_n$</td>
+<td>proper mass of the $n$-th charged lepton</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>the muon mass ($n = 1$)</td>
+</tr>
+<tr>
+<td>$T_{0}$</td>
+<td>the common pulsation period of the charged leptons, RC (3-68)</td>
+</tr>
+<tr>
+<td>$\alpha, \beta$</td>
+<td>the corpus's two other internal constants, RC (3-68)</td>
+</tr>
+<tr>
+<td>$N_{\nu}$</td>
+<td>the effective number of light neutrino species, LEP: $2{,}984 \pm 0{,}008$</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>the companion inventory's tag for a claim refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §4.3 and §4.4: <strong>this article is the article-form of those entries.</strong></li>
+<li><code>RC/053_improved.md</code> (the tower equation and the table), <code>RC/045_improved.md</code> and <code>RC/046_improved.md</code> (the éonic energy), <code>Esp/058_improved.md</code> (the lepton model).</li>
+<li>S21 for the constant count, S34 for the ledger, S45 for the bootstrap argument, S59 for chains R1 and R7, S60 for the tier verdict.</li>
+<li>The register's §12 for the chains, and <code>articles_reserve/charon-p22-the-bootstrap-connection.md</code> (to be drafted) for the downstream.</li>
+<li>LEP Electroweak Working Group, <em>Phys. Lett. B</em> 276 (1992), and the 2000 LEP II direct-search combination.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

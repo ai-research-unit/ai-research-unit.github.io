@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — What To Do Next (S61) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-what-to-do-next-s61">Charon — What To Do Next (S61)</h1>
+<p><em>Consolidation, fourth article. The open threads worth keeping, each with the cheapest next test.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The programme's remaining work is short, and most of it is cheap.</strong> After S60's assessment the live questions are few: one prediction to push toward testability, three internal checks that would settle open numbers, a handful of archival recovery tasks, and two structural questions that belong to the framework rather than to Charon. <strong>This article lists them in order of cost, because the programme's history is a history of expensive work done in the wrong order.</strong></p>
+<p><strong>The selection rule: a thread is worth keeping if a cheap test could change its status.</strong> A thread that needs a new theory before it can be tested is not a thread; it is a research programme. A thread whose test is a reading of a page already on disk is the cheapest kind and is listed first.</p>
+<p><strong>And the standing warning, from the register's own method notes.</strong> Every check below must be run <strong>in dimensioned units, never with $c = \hbar = 1$.</strong> An earlier reconstruction of (58) read $\xi^{2}c^{2}\rho^{2}$ on both sides where the printed equation has $\Omega_0^{2}c^{2}\rho^{2}$, and the error survived a numerical test <em>because</em> the test ran in units where $\xi = \Omega_0$ and the two forms coincide. The dimensional check separates them at once: $\Omega_0^{2}c^{2}\rho^{2}$ has the dimension of $E^{2}/c^{2}$, while $\xi^{2}c^{2}\rho^{2}$ is $[\mathrm{s}^{-2}]$. <strong>The lesson is the first item of method in this article.</strong></p>
+<h2 id="1-the-one-prediction-and-how-to-make-it-testable">1. The one prediction, and how to make it testable</h2>
+<p><strong>Thread: $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$ (R5, S40).</strong> It is the only claim in the programme that could still be right without the rest being right, and it sits two to four orders below the present frontier: lunar-laser-ranging and binary-pulsar timing reach the $10^{-12}$–$10^{-13}$ yr$^{-1}$ level.</p>
+<p><strong>The cheapest next test is not observational; it is an internal one: close the derivation's open factor of 32.</strong> The re-scan resolved S40's equation and promoted the prediction to a derived one, but left the <em>present rate</em> open by a factor 32. <strong>That factor is a derivation gap in a written chain, checkable against the transcribed pages.</strong> If the factor closes, the prediction's value is fixed and the observational comparison becomes a clean one-sided statement; if it does not close, the honest report is that the chain gives an order of magnitude only.</p>
+<p><strong>The second-cheapest: state the prediction in the currency an experiment reports.</strong> LLR measures a secular change in the lunar orbit; pulsar timing measures a change in the binary's orbital period; neither reports $\dot G/G$ directly. <strong>The conversion is standard and one page of arithmetic</strong>, and until it is done the claim cannot be compared with anything.</p>
+<p><strong>What is not worth doing: waiting for the frontier to move by two orders.</strong> That is a decade-scale prospect and is not a reason to keep or drop the thread. <strong>The thread's value is that it exists and is stated, and the article that owns it is the one article in the list whose subject is a prediction rather than a fit.</strong></p>
+<h2 id="2-the-internal-checks-that-would-settle-open-numbers">2. The internal checks that would settle open numbers</h2>
+<p><strong>Thread: the two printed values of $\xi$ (S27, S38, R3).</strong> The nucleon-mass chain stays within 1 % of its minimum across a factor 2,7 in $\omega$ and $d_0$, while the 1987 and 1983 $\xi$'s differ by 5,1 % — <strong>so the discriminating power sits in an input, and the check is to decide which $\xi$ is the corpus's own.</strong> This is a reading task: Esp 057's suggestion footnote and the 1983 density both bear on it, and the 1983 book's printed curve needs $6{,}8\times10^{-4}$ while its printed density needs $6{,}467\times10^{-4}$. <strong>Two internal inconsistencies, one page each, no new physics.</strong></p>
+<p><strong>Thread: the 1977 first edition of <em>Théorie de la relativité complexe</em> is not in the corpus.</strong> It may hold the definition of $\gamma$ (S37) in clearer form, and $\gamma$ is the last unfixed quantity in the $\alpha$ chain. <strong>The cheapest test is a library or archive copy and one page read against S37's reconstruction.</strong> If the definition differs, S35's "+3,64 % on the coupling" is the number that moves.</p>
+<p><strong>Thread: the two regularities in the éon's table (S20).</strong> $\rho = \alpha/R^{3}$ reproduces both turning points with one constant across a factor 218 in $\rho$, and $\theta R = 3{,}76\times10^{-9}$ K cm agrees at the two ends to 0,14 %. <strong>Neither definition is transcribed, so this is a reading task in RC 046–052, not a scan task</strong> — the pages are already on disk. <strong>If the definitions are found, the éon's spectrum gains a second internal check and S20's tag can be raised.</strong></p>
+<p><strong>Thread: $\Omega_0 = \tfrac43\pi l_0^{3}$ is the Euclidean ball, while the micro-universe's volume is the closed $2\pi^{2}R^{3}$ (RC 047, (5-41)).</strong> The two differ by a factor $3\pi/2$ at $K = +1$. <strong>The cheapest test is to read the definitions at (2-18-a) in RC 019–023, which are already transcribed.</strong> This matters because S50, S51 and S52 all use $2\pi^{2}R^{3}$, and a genuine discrepancy would touch the cosmology's bookkeeping.</p>
+<p><strong>And one method item, which costs nothing: run every equation check in dimensioned units.</strong> The (58) error is the worked example, and the rule is already in the register's method notes. <strong>It is listed here because it is the cheapest possible improvement to the programme's reliability.</strong></p>
+<h2 id="3-the-archival-tasks-in-order-of-value">3. The archival tasks, in order of value</h2>
+<p><strong>These are cheap because the images are already on disk.</strong> The corpus's scans are <code>Esp/NNN.jpg</code> and <code>RC/NNN.jpg</code>; a task is a reading, not a search.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>task</th>
+<th>why it matters</th>
+<th>cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>RC 060/061, equation (4-11)</strong> — referenced at RC 060 and printed nowhere; the transcription jumps (4-10-a) → (4-12)</td>
+<td><strong>it is half of the éon/holon coupling</strong>, the other half being (3-49-a) with $T_H = T_0$, so it is load-bearing</td>
+<td>one page read (<code>RC_im/060.jpg</code> or <code>061.jpg</code>)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>The 30 figure pages</strong> (Esp 025 041 063 075 076 082 083 089 097 101 102 103 105 106 115; RC 008 009 010 011 013 037 038 039 041 052 056 061 062 079 083)</td>
+<td>captions and the F3/EPR checks only; <strong>all are marked "[Figure non transcrite]"</strong></td>
+<td>a caption per page</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Esp 058's five defects</strong> — the $l_0$ row's empty cgs column and its 2 256/2,256 reading; the $\mu_0$ row's wrong label ("tau" for muon); the two entirely blank rows (the tau's $\tau_{on}(n=2)$ and the $\nu_\tau$ rest energy); the $\alpha$/$\beta$ formula collapse</td>
+<td><strong>S32 and P1 both cite the table; the $\mu_0$ row corrupts a citation</strong></td>
+<td>one page read; defect 2 is already corrected in <code>Esp/058_improved.md</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Esp 039's symbol collapse</strong> — §1.2–1.3 prints one symbol $(\tilde r,\tilde t)$ for both the entropic and the negentropic space</td>
+<td>it is the source of S5's Hazard 10; <strong>not a blocker</strong></td>
+<td>one page read (<code>Esp_im/039.jpg</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Defect 3 of the 058 table is the one to do first among the table's items, because the empty row is the tau itself</strong> — the third seeded lepton — and the lepton-tower reading (P1) would want it most. Defect 1 is closed from the solution's side: the units-$L$ entry must be the decimal comma $2{,}256$, since $l_0/R_0 = 2{,}2564$.</p>
+<p><strong>And the rule for writing any of this back, from the register's workflow.</strong> Write into <code>NNN_improved.tex</code>, <code>NNN_improved.md</code> and the merged file; mark the true provenance — <em>"supplied by the user from the printed book"</em> where that is the case; never alter text that is already legible; never touch the archives and originals. <strong>Two corrections in the register's own history came from breaking the provenance rule, and both are recorded so the rule is not re-learned.</strong></p>
+<h2 id="4-the-two-structural-questions-which-are-not-the-corpuss">4. The two structural questions, which are not the corpus's</h2>
+<p><strong>Thread: the spin-two lead (S64).</strong> Charon's source tensor $T_{\alpha\beta} = \xi^{2}\rho^{2}u_\alpha u_\beta$ is symmetric rank-two, its symmetric traceless part must be carried, and the framework carries exactly that object through the metric's own device $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde E_\nu\rangle + \langle\delta\tilde E_\mu,\varepsilon_\nu\rangle$ with $16 = 10+6$. <strong>The open question: can a matter source be written <em>as</em> a frame perturbation?</strong> This is the rewrite's one research direction, and it is handed to the framework.</p>
+<p><strong>Thread: the inter-sector coupling (S62, §16.3).</strong> The framework has no dynamics coupling $\mathbb{M}_+$ to $\mathbb{M}_-$; the corpus's whole theory is a proposal for exactly that coupling. <strong>The open question: can $R = \xi^{2}\rho^{2}+4\Lambda$ be given as a dynamics rather than an ansatz?</strong> This is the framework's open item and it is a research direction, not a computation.</p>
+<p><strong>Neither has a cheap test, and the honest report is that neither is testable yet.</strong> They are listed because they are the programme's two live structural contributions, and because a reader who follows the framework's side will need to know that they came from here. <strong>The cheapest thing that <em>can</em> be done with them is a one-page statement of what would count as success</strong> — the same move S6 made for the corpus, applied to the framework.</p>
+<h2 id="5-what-to-resurrect-and-what-not-to">5. What to resurrect, and what not to</h2>
+<p><strong>The register's layer rule is the criterion: a dead verdict at the level of a claim does not propagate to the level of the argument underneath it.</strong> Applied to the post-mortem block, the candidates sort as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>candidate</th>
+<th>layer (i) — the claim</th>
+<th>layer (iii) — the separable remainder</th>
+<th>worth doing?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong> lepton tower</td>
+<td>dead at LEP</td>
+<td>the three real charged-lepton masses reproduce with $T_0$ fitted — <strong>a fit, retained as a fit</strong></td>
+<td><strong>yes, as a labelled fit</strong></td>
+</tr>
+<tr>
+<td><strong>P4–P6</strong> quark levels</td>
+<td>dead (identifications)</td>
+<td>the holon geometry (S24) survives on its own</td>
+<td><strong>yes, separately audited</strong></td>
+</tr>
+<tr>
+<td><strong>P9–P15</strong> cosmology</td>
+<td>mostly dead</td>
+<td>the bounce (S51) is already kept as an idea</td>
+<td><strong>yes, already done</strong></td>
+</tr>
+<tr>
+<td><strong>P16</strong> EPR</td>
+<td>dead as a mechanism</td>
+<td>the ψ-wave ontology (S54) is kept separately</td>
+<td><strong>yes, already done</strong></td>
+</tr>
+<tr>
+<td><strong>P3</strong> electron size</td>
+<td>dead ($g-2$, point-like)</td>
+<td>none found</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td><strong>P7</strong> $W/Z$ as a neutrino pair</td>
+<td>dead</td>
+<td>none found</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td><strong>P18</strong> boson spins</td>
+<td>dead</td>
+<td>none found</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td><strong>P20</strong> fitted versus predicted</td>
+<td>not a claim but a rule</td>
+<td><strong>alive, as method</strong> — it is what the register itself uses</td>
+<td><strong>yes, and it is already in use</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern in the last two rows is the general one: the failures that were <em>methods</em> rather than claims are the ones that transfer.</strong> P20's sweep-and-report diagnosis is not a dead claim; it is a working rule that this whole assessment applies. <strong>The register's rules of engagement are largely composed of such transfers, which is the sense in which the programme's errors were productive.</strong></p>
+<p><strong>And the explicit negative list, so that effort is not spent twice.</strong> Do not resurrect: the electron's internal structure (P3); the $W/Z$ identity (P7); the boson-spin identifications (P18); the lepton tower's <em>tower</em> (P1) — only its first three masses, and only as a fit; the antimatter era and the negative vacuum (P9, P10); the finite redshift (P13); the EPR mechanism (P16). <strong>Each of these has been tested and refused, and re-opening one without a new mechanism would repeat the programme's central error: continuing to work on what nature has already answered.</strong></p>
+<h2 id="6-the-work-order-in-one-page">6. The work order, in one page</h2>
+<p><strong>Cheapest first, and each item stated as a single action.</strong></p>
+<ol>
+<li><strong>Run every existing check in dimensioned units.</strong> No new source; finds errors of the (58) class. <em>Cost: one pass over the checked equations.</em></li>
+<li><strong>Read (2-18-a) in RC 019–023 for the volume definition</strong> ($\tfrac43\pi l_0^{3}$ versus $2\pi^{2}R^{3}$). <em>Cost: one page.</em></li>
+<li><strong>Read Esp 058's page for the tau row and the $\nu_\tau$ row.</strong> <em>Cost: one page; closes the table.</em></li>
+<li><strong>Read RC 060/061 for (4-11)</strong>, the missing half of the éon/holon coupling. <em>Cost: one page.</em></li>
+<li><strong>Read the éon table's definitions in RC 046–052</strong> for $\rho = \alpha/R^{3}$ and $\theta R = 3{,}76\times10^{-9}$ K cm. <em>Cost: six pages; would raise S20's tag if found.</em></li>
+<li><strong>Close S40's factor 32</strong> in the $\dot G/G$ chain. <em>Cost: one derivation against transcribed pages.</em></li>
+<li><strong>Convert $\dot G/G$ into the currency of LLR and pulsar timing.</strong> <em>Cost: one page of arithmetic.</em></li>
+<li><strong>Decide which printed $\xi$ is the corpus's own</strong> (1983's $6{,}8\times10^{-4}$ or $6{,}467\times10^{-4}$). <em>Cost: two readings; would fix R3's verdict.</em></li>
+<li><strong>Find the 1977 first edition</strong> for $\gamma$'s definition. <em>Cost: a library.</em></li>
+<li><strong>Write the framework-side statement of what would count as success</strong> for the spin-two lead and the inter-sector coupling. <em>Cost: one page, but it is a research document and not a reading.</em></li>
+</ol>
+<p><strong>Items 1–5 are reading tasks on pages already on disk. Item 6 is a derivation. Items 7–9 are bounded. Item 10 is the only one that opens new ground.</strong> A programme that spends a month on items 1–6 would close every internal question this assessment found open.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The remaining work is short and mostly cheap: five reading tasks on pages already on disk, one derivation to close the live prediction's open factor, three bounded external tasks, and two structural questions that belong to the framework.</strong></p>
+<p>The one prediction, $\dot G/G \simeq 5\times10^{-16}$ yr$^{-1}$, is made testable not by waiting for the experimental frontier but by closing the derivation's open factor of 32 and converting the result into the currency that LLR and pulsar timing actually report. The internal checks that would settle open numbers are: which of the two printed $\xi$'s is the corpus's own (R3's discriminating power sits there, a 5,1 % spread against a plateau of 1 %); the definition of $\gamma$ (which the 1977 first edition may carry and which fixes the $\alpha$ chain's last unfixed quantity); the éon table's two regularities (a reading in RC 046–052); and the volume definition $\tfrac43\pi l_0^{3}$ versus $2\pi^{2}R^{3}$, a factor $3\pi/2$ apart, settled by (2-18-a).</p>
+<p>The archival tasks, in order of value: (4-11) in RC 060/061, the missing half of the éon/holon coupling; the thirty figure pages; Esp 058's five defects, of which the blank tau row matters most; and Esp 039's symbol collapse. All are readings of images already on disk. <strong>The write-back rule is stated once: mark true provenance, never alter what is legible, never touch the archives.</strong></p>
+<p>The two structural questions — can a matter source be written <em>as</em> a frame perturbation (the spin-two lead), and can $R = \xi^{2}\rho^{2}+4\Lambda$ be given as a dynamics rather than an ansatz (the inter-sector coupling) — have no cheap test and are handed to the framework. <strong>The cheapest thing to do with them is a one-page statement of what would count as success, the same move S6 made for the corpus.</strong></p>
+<p>The resurrection list applies the layer rule: keep the lepton masses as a labelled fit, the holon geometry on its own, the bounce and the ψ-wave ontology as already separated, and the sweep-and-report rule as live method. <strong>Do not re-open the electron's size, the $W/Z$ identity, the boson spins, the tower, the antimatter era, the negative vacuum, the finite redshift or the EPR mechanism: each was tested and refused, and re-opening one without a new mechanism would repeat the programme's central error.</strong></p>
+<p><strong>And the method item that costs nothing: run every check in dimensioned units, never with $c = \hbar = 1$.</strong> The (58) error is the worked example, and it is the cheapest possible improvement to the programme's reliability.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R5, R3, R1</td>
+<td>the result-chains of S59: the drift, the nucleon mass, $\alpha$</td>
+</tr>
+<tr>
+<td>(4-11), (2-18-a), (3-49-a)</td>
+<td>corpus equations; (4-11) is missing from the transcription</td>
+</tr>
+<tr>
+<td>layer (i)/(ii)/(iii)</td>
+<td>the claim as stated / the mechanism offered / the argument underneath</td>
+</tr>
+<tr>
+<td>$\xi$, $l_0$, $\Omega_0$</td>
+<td>one degree of freedom: $\xi \equiv \Omega_0c/\hbar$, $\Omega_0 = \tfrac43\pi l_0^{3}$</td>
+</tr>
+<tr>
+<td>the spin-two lead</td>
+<td>whether $T_{\alpha\beta}$ can be written as a frame perturbation (S64)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S60, <code>charon-s60-final-assessment</code>, for the verdict that this work order serves; S59, <code>charon-s59-the-numerical-ledger</code>, for R1/R3/R5's verdicts; S62, <code>charon-s62-what-survived</code>, for the three items beyond established theory that items 6–7 and 10 protect.</li>
+<li>S40, <code>charon-s40-gdot-over-g</code>, for the factor-32 gap; S37, <code>charon-s37-the-beta-gamma-chain</code>, for $\gamma$'s definition; S27 and S38 for the two $\xi$'s; S20, <code>charon-s20-the-eon-radius-spectrum</code>, for the éon table's regularities.</li>
+<li>S64, <code>charon-s64-the-biquaternion-rewrite-scope</code>, for the spin-two lead; S51 for the bounce; S11 for the layer rule's worked case; S6, <code>charon-s06-what-would-count-as-success</code>, for the one-page-success model that item 10 copies.</li>
+<li>J. E. Charon, <em>Théorie de la relativité complexe</em> (Albin Michel, 1977, 1987) and <em>L'Esprit et la Relativité complexe</em> (Albin Michel, 1983) — the pages named above, and the 1977 edition in particular.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

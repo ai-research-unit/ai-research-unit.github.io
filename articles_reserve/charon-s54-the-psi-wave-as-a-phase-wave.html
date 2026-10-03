@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The ψ Wave as a Phase Wave (S54) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-wave-as-a-phase-wave-s54">Charon — The ψ Wave as a Phase Wave (S54)</h1>
+<p><em>Audits inventory §2.7. Sources: RC 034 §§2–3, RC 035 §3, RC 036 §4.3; Esp 034 §1.2, Esp 035 §3, Esp 036 §§3–4. [BRIDGE]</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The ψ wave is the one object in Charon's formalism that standard quantum mechanics already owns, and the corpus says so. What it adds is a source for ψ — the imaginary oscillator Σ — and a reading of ψ as a real phase wave that transports no momentum-energy.</strong> This article separates three things the corpus runs together: the <em>kinematics</em> of a de Broglie phase wave, the <em>derivation</em> of ψ from Σ, and the <em>interpretation</em> of ψ as the particle's "regard" of the world. The first is verified by the corpus's own equations, four times over; the second is promised and never written; the third is the de Broglie–Bohm reading stated in Charon's own vocabulary.</p>
+<p><strong>The phase wave is not an exotic object, and the article's first job is to say so with numbers.</strong> A material particle's phase velocity is $E/p$, which is $\ge c$ for every massive particle in every inertial frame, and a room-temperature electron's ψ phase velocity is about $3{,}1\times10^{3}\,c$ — while its group velocity, the velocity that carries energy and that any experiment sees, is $95$ km/s. <strong>So "superluminal phase, subluminal group" is not a Charon claim at all: it is de Broglie's relation $\tilde Vv = c^{2}$, and the corpus states that product explicitly (Esp 036).</strong> What is Charon's is where the phase wave <em>comes from</em> and what it is <em>for</em>.</p>
+<p><strong>The article's verdict, stated at the top.</strong> The kinematics is <strong>[EST]</strong>, and the corpus's printed relations are exact identities: (2-83) is $E/p$, (2-84) collapses to $\nu = E/h$, Esp 035's (142) is one equation in two dresses, and (154) recovers the relativistic momentum. The derivation of ψ from Σ is <strong>[SPEC]</strong>, and the corpus's own wording shows why: RC 034 says one <em>may expect</em> to obtain ψ's propagation equation from (2-81), and the equation never appears. The pilot-wave reading is <strong>[SPEC]/interpretation</strong> — legitimate, non-mainstream, and empirically indistinguishable from orthodox quantum theory as the corpus states it. <strong>So the [BRIDGE] cut recommendation survives only if the audit is also cut, and it should not be: the audit is what makes the identities citable and the missing equation visible.</strong></p>
+<h2 id="1-what-the-corpus-claims">1. What the corpus claims</h2>
+<p><strong>The claim has four parts, and they are printed in two books with one symbol change.</strong></p>
+<p><strong>(1) The phase wave.</strong> <em>"Les phases de l'oscillateur Σ se répartissent dans l'espace Réel comme les phases d'une onde sphérique à vitesse infinie et de longueur infinie, que nous appellerons onde psi"</em> (RC 034 §2, particle at rest). <em>"Cette onde […] est une onde de phase, qui ne transporte aucune impulsion-énergie (et qui possède d'ailleurs une vitesse de propagation jamais inférieure à c)"</em> (RC 034 §3).</p>
+<p><strong>(2) Its kinematics in a general frame.</strong> RC 035 writes the observed phase velocity and frequency for an observer $O$ for whom $P$ has momentum $p$:</p>
+<p>$$\bar{v} = \frac{(M_0^{2}c^{4}+p^{2}c^{2})^{1/2}}{p}                 \tag{2-83}$$</p>
+<p>$$\nu = \frac{cM_0\bar{v}}{h\left(\bar{v}^{2}/c^{2}-1\right)^{1/2}}   \tag{2-84}$$</p>
+<p><strong>Esp 035 §3 repeats both with $m_0$ for $M_0$</strong> — (143) and (144) — and adds the momentum form (142), $p = \Omega_0 idc/\sqrt{1-\tilde V^{2}/c^{2}} = \Omega_0 dc/\sqrt{\tilde V^{2}/c^{2}-1}$, and the rest-frame statement: <em>"Si $p = 0$ […] la vitesse de phase $\tilde V$ de $\Sigma_0$ est infinie. Ceci signifie encore que $\Sigma_0$ est […] une onde stationnaire sphérique de longueur infinie."</em></p>
+<p><strong>(3) The group.</strong> Esp 036 §4 states the product — <em>"un groupe d'ondes à vitesse de groupe $V = c^{2}/\bar{V}$"</em> — and derives the hadron's momentum from the superposition of the Σ waves, (154):</p>
+<p>$$p = \sum_{\mathrm{vol}\,\Omega}\frac{h\nu}{\bar{V}} = \frac{V}{c^{2}}\sum_{\Omega}h\nu_0 = \frac{\mu_0 V}{\sqrt{1-V^{2}/c^{2}}} \qquad (\mu_0c^{2} = \sum_{\Omega}h\nu_0) \tag{154}$$</p>
+<p><strong>(4) The source and the reading.</strong> <em>"Cet « oscillateur » (que nous avons nommé Σ) génère à son tour dans l'espace Réel une onde de phase ψ, dont on peut s'attendre à pouvoir obtenir l'équation de propagation à partir des équations (2-81) représentant l'oscillateur Σ, qui est la « source » de ψ. Nous nous proposons de montrer que l'onde ψ est l'onde probabiliste habituelle considérée par la Mécanique ondulatoire et d'établir la relation entre ψ et Σ"</em> (RC 034 §2). And its purpose: <em>"l'onde de phase psi et ses conditions initiales constituent un véritable « regard » de la particule P, qui « renseigne » celle-ci sur les Formes de la totalité de son monde « extérieur », à chaque instant t du Réel"</em> (RC 034 §2).</p>
+<h2 id="2-the-four-identities-checked">2. The four identities, checked</h2>
+<p><strong>Every relation in §1 is an exact identity, and each is a check on the corpus's algebra rather than on its physics.</strong></p>
+<p><strong>(a) (2-83)/(143) is $E/p$, the standard de Broglie phase velocity.</strong> With $E = (M_0^{2}c^{4}+p^{2}c^{2})^{1/2}$, the printed form <em>is</em> $E/p$. <strong>Verified by inspection.</strong> The consequence is the corpus's own inequality $\tilde V\ge c$: since $E/p = c^{2}/v$ for the particle's velocity $v = pc^{2}/E$, one has $\tilde V = c^{2}/v\ge c$, with equality only for $M_0 = 0$.</p>
+<p><strong>(b) (2-84)/(144) collapses to $\nu = E/h$.</strong> Evaluate $\tilde V^{2}/c^{2}-1$ using $\tilde V = E/p$:</p>
+<p>$$\frac{\tilde V^{2}}{c^{2}}-1 = \frac{E^{2}-p^{2}c^{2}}{p^{2}c^{2}} = \frac{M_0^{2}c^{4}}{p^{2}c^{2}}
+\qquad\Longrightarrow\qquad \left(\frac{\tilde V^{2}}{c^{2}}-1\right)^{1/2} = \frac{M_0c^{2}}{pc}.$$</p>
+<p>Substituting in (2-84): $\nu = \dfrac{cM_0\,(E/p)\,pc}{h\,M_0c^{2}} = \dfrac{E}{h}$. <strong>The corpus's frequency law is the de Broglie frequency, exactly.</strong> This is worth stating plainly because the printed form hides it: <strong>there is no separate frequency postulate in the corpus.</strong></p>
+<p><strong>(c) Esp 035's (142) is one equation in two dresses.</strong> The two printed forms are $\Omega_0 idc/\sqrt{1-\tilde V^{2}/c^{2}}$ and $\Omega_0 dc/\sqrt{\tilde V^{2}/c^{2}-1}$. For $\tilde V>c$ one has $\sqrt{1-\tilde V^{2}/c^{2}} = i\sqrt{\tilde V^{2}/c^{2}-1}$, so the $i$ in the numerator cancels the $i$ in the root and the two forms are equal. <strong>Verified.</strong> The sign is carried by $i^{2} = -1$ inside the corpus's own step, not by a convention added here.</p>
+<p><strong>(d) (154) is the relativistic momentum.</strong> With the time-dilated frequency $\nu = \nu_0/\sqrt{1-V^{2}/c^{2}}$ and $\tilde V = c^{2}/V$:</p>
+<p>$$\sum_\Omega \frac{h\nu}{\tilde V} = \frac{V}{c^{2}}\sum_\Omega \frac{h\nu_0}{\sqrt{1-V^{2}/c^{2}}} = \frac{\mu_0V}{\sqrt{1-V^{2}/c^{2}}}.$$</p>
+<p><strong>Verified, and the corpus's intermediate equality $(V/c^{2})\sum_\Omega h\nu_0$ is the same line.</strong> The superposition of Σ phase waves reproduces the momentum of a body of proper mass $\mu_0$ moving at $V$ — de Broglie's group-velocity theorem, recovered rather than postulated.</p>
+<p><strong>And the "infinite speed, infinite wavelength" of RC 034 is the $p\to0$ limit of (2-83)</strong>, where $\tilde V\to\infty$ and $\lambda = h/p\to\infty$; the two books' descriptions agree and neither needs a separate assumption. <strong>Four printed relations, four passes.</strong></p>
+<h2 id="3-numbers-why-a-superluminal-phase-is-not-new-physics">3. Numbers: why a superluminal phase is not new physics</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>phase velocity $\tilde V = c^{2}/v$</th>
+<th>group velocity $v$</th>
+<th>wavelength $\lambda = h/p$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>neutrino or photon ($M_0 = 0$)</td>
+<td>$c$ exactly (Esp 036)</td>
+<td>$c$</td>
+<td>$h/p$</td>
+</tr>
+<tr>
+<td>electron at rest</td>
+<td>$\infty$</td>
+<td>$0$</td>
+<td>$\infty$</td>
+</tr>
+<tr>
+<td>electron, thermal, 300 K</td>
+<td>$\approx 3{,}1\times10^{3}\,c$</td>
+<td>$95$ km s⁻¹</td>
+<td>$7{,}6$ nm</td>
+</tr>
+<tr>
+<td>electron, $p = m_0c$</td>
+<td>$\sqrt{2}\,c = 1{,}414\,c$</td>
+<td>$c/\sqrt{2} = 0{,}707\,c$</td>
+<td>$2{,}43\times10^{-12}$ m</td>
+</tr>
+<tr>
+<td>electron, 99 % of $c$</td>
+<td>$1{,}0101\,c$</td>
+<td>$0{,}99\,c$</td>
+<td>$2{,}7\times10^{-12}$ m</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every row is a textbook consequence of $\tilde Vv = c^{2}$.</strong> For the thermal row: $p = \sqrt{2m_0k_BT} = 8{,}69\times10^{-26}$ kg m s⁻¹, giving $v = p/m_0 = 95{,}4$ km s⁻¹ and $\tilde V = c^{2}/v = 9{,}4\times10^{11}$ m s⁻¹ $\approx 3{,}1\times10^{3}c$. <strong>This is the number that settles the interpretive question: a superluminal phase velocity belongs to every matter wave ever written down, so a model that produces one has produced nothing new.</strong> The corpus's contribution is not (2-83); it is the <em>derivation</em> of (2-83) from (2-81) — and that derivation is one line, the change $d\to id$ (Esp 034 §1.2.b, (137): $x^{a} = i\tilde Z^{a}$).</p>
+<p><strong>Why the $d\to id$ step matters for the corpus's argument.</strong> Esp 034 §1.2.b says the imaginary density turns the oscillator at $M$ into a phase velocity <em>"comprise entre $c$ et l'infini"</em>. That is correct, and it is the corpus's own route to the bound: the complex spacetime supplies the imaginary density, the imaginary density supplies the phase velocity, and the phase velocity supplies the probabilistic reading. <strong>So the phase wave is not imported into the model; it is generated by the model's central postulate</strong> — the strongest form of the corpus's claim, and one that survives §4's objection, because the kinematics is exactly what one wants a generated quantity to reproduce.</p>
+<h2 id="4-what-is-spec-the-generator-and-the-equation-that-is-never-written">4. What is [SPEC]: the generator, and the equation that is never written</h2>
+<p><strong>The derivation of ψ is announced, not performed.</strong> RC 034's wording is a promise — <em>"dont on peut s'attendre à pouvoir obtenir l'équation de propagation"</em> — one may expect to obtain the propagation equation for ψ from (2-81). <strong>What the corpus then supplies is (2-85)–(2-87), which are an energy normalisation, not a propagation equation.</strong> ψ's own wave equation is never written, and neither is (2-81) made explicit as ψ's source. Esp 035 continues in the same direction: after (143)/(144) it writes <em>"cette représentation du phénomène observé en M est exactement celle qui avait été postulée par la Mécanique ondulatoire"</em> — an identification of the corpus's output with de Broglie's postulate, not a derivation of it. <strong>The honest ledger entry: the corpus derives the <em>kinematics</em> of ψ and <em>identifies</em> ψ with the quantum probability amplitude; it does not derive the amplitude's equation.</strong></p>
+<p><strong>What this does to the claim.</strong> The companion tags §2.7 as [MIX] — mathematics [EST], pilot-wave reading legitimate but non-mainstream, derivation of ψ from Σ [SPEC]. <strong>The audit sharpens the third part: the derivation is [SPEC] because it does not exist as a derivation — it is an expectation followed by a normalisation.</strong> Two further points are worth recording, because they are usually lost in the interpretation debate.</p>
+<ul>
+<li><strong>The "no momentum-energy transported" clause is internally coherent.</strong> RC 034–035 deny that ψ carries momentum-energy while (2-85) integrates $\Sigma^{2}/8\pi$ — the <em>oscillator's</em> energy — over $\omega$. There is no conflict: Σ holds the energy, ψ is the phase, and (2-87) makes $\psi^{2}$ the distribution of that energy normalised by its total. The corpus is careful here, and the clause is a statement about the phase, not a claim that ψ is unphysical.</li>
+<li><strong>The "regard" is not a hidden-variable postulate of the usual kind.</strong> The corpus says ψ's initial conditions are the <em>Forms of the Real</em> at each $t$ (RC 034 §2) — data collected from the particle's world. That is a read-only coupling: ψ learns the world, and this chapter does not yet say that ψ steers the particle. <strong>Steering appears only with the sigma field and the memory chapter — S55's and S56's subject, not this article's. S54 must therefore not be read as the model's hidden-variable claim; it is the model's information channel.</strong></li>
+</ul>
+<h2 id="5-what-this-article-adds-and-the-bridge-line">5. What this article adds, and the [BRIDGE] line</h2>
+<p><strong>The [BRIDGE] obligation, in one line: S54 adds the four exact identity checks of §2, the numeric demonstration of §3 that a superluminal phase is universal and therefore not a Charon result, the location of the corpus's own $\ge c$ bound in the $d\to id$ step of Esp 034, and the observation that ψ's propagation equation is promised in RC 034 and never written — none of which is in the corpus articles S54 is said to duplicate.</strong></p>
+<p><strong>Non-overlap, stated explicitly.</strong> <code>subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum</code> treats the phase and group velocities of <em>electromagnetic</em> waves in the biquaternion formalism, where the superluminal case is a dispersion branch; it contains no oscillator Σ, no equations (2-81), no ψ/Σ relation and no de Broglie frequency. <code>the-free-particle-and-wave-packets-in-biquaternionic-form</code> treats wave packets in the biquaternion Dirac theory; it has packet kinematics but no pilot-wave reading and no corpus equations (2-83)–(2-87). <strong>The corpus's reading of the norm, (2-85)–(2-87), is owned by S53 and is used here only where the phase wave needs it (one line, §4); the memory reading of the same field is S56's.</strong></p>
+<h2 id="6-verdict-rule-r6-on-the-phase-wave">6. Verdict: rule R6 on the phase wave</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>content</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the kinematics</td>
+<td>(2-83) $= E/p$; (2-84) $= E/h$; (142)'s two forms equal; (154) $=$ relativistic momentum; rest frame $=$ the $p\to0$ limit</td>
+<td><strong>[EST] / [MATH] — four passes</strong></td>
+</tr>
+<tr>
+<td>the $\ge c$ bound</td>
+<td>from $d\to id$ (Esp 034 (137)) and from $\tilde Vv = c^{2}$ (Esp 036)</td>
+<td><strong>[MATH]</strong>, and standard</td>
+</tr>
+<tr>
+<td>the generator</td>
+<td>ψ generated by Σ; propagation equation "expected" from (2-81)</td>
+<td><strong>[SPEC]</strong> — asserted, not derived; the equation is never written</td>
+</tr>
+<tr>
+<td>the identification with the quantum amplitude</td>
+<td>ψ is the usual probability wave</td>
+<td><strong>[EST]</strong> as an identification; the corpus's own words</td>
+</tr>
+<tr>
+<td>the "regard"</td>
+<td>ψ's initial conditions are the Forms of the Real</td>
+<td><strong>[SPEC]/[PHIL]</strong>; read-only here, steering appears only in S55/S56</td>
+</tr>
+<tr>
+<td>"no momentum-energy transported"</td>
+<td>Σ holds the energy, ψ the phase</td>
+<td><strong>[MATH]</strong>, coherent with (2-85)/(2-87)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Per rule R6: coherence passes (the kinematics is internally exact and reproduces de Broglie); reproducibility passes for the kinematics and is <em>empty</em> for the generator; correspondence passes for the part that is de Broglie's and is <em>unavailable</em> for the part that is Charon's — nothing in this chapter distinguishes a Σ-generated phase wave from a postulated one.</strong> The [BRIDGE] cut recommendation is answered rather than resisted: cutting S54 saves nothing, because the corpus articles it would be folded into do not contain the checks, the numbers, the $d\to id$ provenance or the missing-equation finding.</p>
+<p><strong>And one warning for readers of the later articles.</strong> The phrase "ψ is a real phase wave" must not be allowed to carry the model's empirical weight. As §3 shows, a real phase wave with $\tilde V\ge c$ is what a <em>classical</em> matter wave already is, so the phrase commits Charon to nothing observable. What commits him to something is the sigma field — <strong>S55's collective/individual split and S56's cumulative memory — and those are where the model either becomes physics or stays a vocabulary.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The ψ wave is de Broglie's, and the corpus proves it four times over.</strong> RC 035's (2-83) is the phase velocity $E/p$; (2-84) reduces exactly to the frequency $\nu = E/h$; Esp 035's two printed forms of (142) are one equation; and Esp 036's (154) recovers $p = \mu_0V/\sqrt{1-V^{2}/c^{2}}$ from the superposition of Σ waves. <strong>All four checks pass, and the same section carries the identity the textbooks carry: $\tilde Vv = c^{2}$, so the phase is superluminal and the group subluminal for every massive particle.</strong> A 300 K electron's phase velocity is $3{,}1\times10^{3}c$ — a fact of de Broglie kinematics, not of Charon's model.</p>
+<p><strong>What is Charon's is the source and the purpose.</strong> The phase wave is generated by the imaginary oscillator Σ through the change $d\to id$ (Esp 034 (137)), which is where the corpus's own $\ge c$ bound lives; and it is read as the particle's "regard" of the Forms of the Real. <strong>The first is a genuine, if one-line, derivation, and it is the chapter's strongest structural claim. The second is a reading, and the corpus's wording for the derivation of ψ's <em>equation</em> is an expectation — <em>"on peut s'attendre à pouvoir obtenir"</em> — that is never fulfilled.</strong> No propagation equation for ψ appears in RC 034–036.</p>
+<p><strong>Verdict: [EST]/[MATH] for the kinematics; [SPEC] for the generator, asserted and never computed; [SPEC]/interpretation for the pilot-wave reading, legitimate and non-mainstream; and empirically empty either way, because the chapter's ψ-wave content is de Broglie's and the model's own content is the sigma field, which is S55's and S56's subject.</strong> Per R6: coherence passes, reproducibility passes for the kinematics and is empty for the generator, correspondence is available only for the parts that are not Charon's.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma$</td>
+<td>the imaginary oscillator at $P$, $\Sigma(E,H,A,V)$; the source of ψ (RC 033–034)</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>the phase wave in the Real; the corpus's "regard" and its probability amplitude</td>
+</tr>
+<tr>
+<td>$\bar v$ / $\tilde V$</td>
+<td>phase velocity — (2-83) in RC, (143) in Esp; always $\ge c$</td>
+</tr>
+<tr>
+<td>$v$ / $V$</td>
+<td>group velocity, the particle's own velocity; $V = c^{2}/\tilde V$</td>
+</tr>
+<tr>
+<td>$M_0$ / $m_0$</td>
+<td>proper mass; RC writes $M_0$, Esp writes $m_0$ for the same quantity</td>
+</tr>
+<tr>
+<td>(2-83), (2-84)</td>
+<td>phase velocity and observed frequency, RC 035</td>
+</tr>
+<tr>
+<td>(142), (143), (144)</td>
+<td>the same two relations in Esp 035, plus the momentum form</td>
+</tr>
+<tr>
+<td>(154)</td>
+<td>the hadron's momentum from the Σ superposition, Esp 036</td>
+</tr>
+<tr>
+<td>(2-85)–(2-87)</td>
+<td>the energy normalisation and the $\psi^{2}/\Sigma^{2}$ relation; owned by S53</td>
+</tr>
+<tr>
+<td>§2.7</td>
+<td>the inventory item: "the ψ wave is a real phase wave with phase velocity ≥ c and no transported momentum-energy"</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S53</strong> — the norm (2-85)–(2-87): the same equations read as an energy-share identification rather than as kinematics.</li>
+<li><strong>S12</strong> — the oscillator Σ and the fusion formalism, whose (2-81) is the source invoked here.</li>
+<li><strong>S55</strong> — the collective/individual split, the first place the phase wave's <em>steering</em> is claimed.</li>
+<li><strong>S56</strong> — the cumulative memory carried by the sigma field, which is what the ψ/Σ coupling exists for.</li>
+<li><strong>S19</strong> — the trapped radiation and the electron's size: the same micro-universe read for its charge.</li>
+<li><code>subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum</code>, <code>the-free-particle-and-wave-packets-in-biquaternionic-form</code> (existing corpus) — the [BRIDGE] duplicates, with the non-overlap stated in §5.</li>
+<li>Corpus: RC 033 §II.3; RC 034 §§2–3; RC 035 §§2.3–3; RC 036 §§I and 4.3; Esp 034 §1.2; Esp 035 §3; Esp 036 §§3–4.</li>
+<li>External: L. de Broglie, <em>Recherches sur la théorie des quanta</em> (1924) and the 1940s fusion-field papers; D. Bohm, <em>Phys. Rev.</em> <strong>85</strong> (1952) 166 and 180, for the pilot-wave reading.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — The Lepton Sector: Fit or Derivation? (S45) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-lepton-sector-fit-or-derivation-s45">Charon — The Lepton Sector: Fit or Derivation? (S45)</h1>
+<p><em>Audits inventory §4.8 (the lepton model is "entirely devoid of arbitrary parameters") and the lepton half of rules R1/R2. Sources: RC 051 §IV, (3-68)–(3-74); RC 053 (3-75)–(3-77); Esp 050 §8, Esp 051 §9–§10, Esp 052 §11, Esp 058 (the numerical solution of the </em>Système L<em>).</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The register calls this the methodological centre of the lepton sector, and the walk gives a result that is the opposite of the one the corpus advertises: the sector has no arbitrary parameter at all, and that is precisely why it failed.</strong> Charon's claim (Esp §VI, inventory §4.8) is that the lepton model is <em>"entirely devoid of arbitrary parameters"</em>. <strong>The honest count, row by row, is: three measured lepton masses as the sector's anchors, two universal constants ($c$, $h$), one suggested seed ($\xi$), two numbers shared with other sectors ($e$ and the nucleon closure), four quantities that are restatements of the anchors ($\alpha$, $\beta$, $T_{0}$, and $k_{S} = k_{P}$), one conditional geometric output set ($R_{0}$, $\mathcal{R}$, $\Lambda$, $\langle R \rangle$, $Y$), two numbers the corpus defines but never derives ($W_{0e}$, $W_{0\mu}$), one dead prediction (the tower), and one convention (the spin sign).</strong> <strong>And the number of parameters specific to a lepton is zero.</strong></p>
+<p><strong>That last count is the article's finding, and it has a direction.</strong> The usual way a model survives its own wrong prediction is by absorbing it in a free parameter; the lepton model has none — one éon, repeated, with the mass supplied from outside (S42). <strong>So the sector could not be tuned, its tower prediction stayed hard, and LEP killed it.</strong> §4.8's sentence is false as stated <em>and</em> the reason is not that the model is loose: it is that the model is unable to be loose. <strong>The correction to §4.8 is therefore not "one output and five inputs" — S21's correction — but the sharper statement that the lepton sector's only adjustable objects are the masses it is given.</strong></p>
+<p><strong>The second finding is about direction, and it is what closes the ledger.</strong> Esp computes masses <em>from</em> the model's constants — forward. RC (3-68) computes the constants <em>from</em> the masses — backward. <strong>S43 shows the two directions are one constraint: the $\alpha$ implied by the mass equations (220)/(221) equals the $\alpha$ of (3-68) to $0{,}002\,\%$, through the identity $\alpha = (m + 3\mu - 2\tau)/4\pi^{2}$.</strong> So the forward reading in Esp and the backward reading in RC are the same equation read twice, and <strong>a system inverted is not a derivation of its own outputs</strong> — which is rule R1's whole content, applied here for the first time to the lepton sector.</p>
+<p><strong>The third finding is what the sector does put out.</strong> Given $\xi$, the <em>Système E</em> returns a trajectory and an internal geometry — $R_{0} = 8{,}01\times10^{-15}$ cm, $\mathcal{R} = 4{,}82\times10^{-14}$ cm, $\Lambda \le 0$, the neutrino orbit $Y = 2{,}27$, and now $\langle R \rangle = 2{,}35\times10^{-14}$ cm (S43) — <strong>and every one of these is a genuine output of the model, conditional on the one seed.</strong> None of them is observable (S42). <strong>So the sector's ledger is: it computes a geometry nobody can see, from a seed it was given, and it computes no mass it was not given.</strong></p>
+<h2 id="what-the-corpus-claims">What the Corpus Claims</h2>
+<p><strong>The claim, Esp §VI (inventory §4.8):</strong></p>
+<blockquote>
+<p>… le modèle leptonique est entièrement dépourvu de paramètres arbitraires.</p>
+</blockquote>
+<p><strong>The corpus's own count, RC 051 §IV:</strong></p>
+<blockquote>
+<p>Une première analyse du Système $E$ montre que, pour calculer l'ensemble des solutions particulières, nous avons besoin des valeurs de cinq des paramètres mentionnés ci-dessus, avec bien entendu leurs valeurs propres des trois leptons chargés connus ($m$, $\mu$ et $\tau$). Les équations (3-53) du Système $E$ fournissent alors facilement, en fonction de ces paramètres bien mesurés par l'expérience, les valeurs des trois principaux paramètres inconnus, à savoir $\alpha$, $\beta$ et $T_{0}$.</p>
+</blockquote>
+<p><strong>The inversion itself, (3-68):</strong></p>
+<p>$$\alpha = \frac{m+\mu}{4\pi^{2}} - \frac{h}{\pi^{2}c^{2}T_{0}}, \qquad \beta = \frac{(\mu-m)c^{2}T_{0}-2h}{8\pi^{3}c}, \qquad T_{0} = \frac{2h}{c^{2}(\tau-\mu)}$$</p>
+<p><strong>And the forward direction, Esp 050 §8, where the same constants are used to produce $m_{0}$ and $\mu_{0}$ (eqs 220–221).</strong></p>
+<h2 id="1-the-walk-row-by-row">1. The walk, row by row</h2>
+<p><strong>Each lepton number is marked on the corpus's own statements. <em>INPUT</em> means measured and fed in; <em>SUGGESTED</em> means taken from another sector as a starting value; <em>RESTATEMENT</em> means a closed form in the inputs; <em>OUTPUT</em> means no freedom left once the inputs are fixed; <em>DEFINED</em> means the corpus gives a definition and never exhibits the computation; <em>DEAD</em> means falsified.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>number</th>
+<th>value</th>
+<th>status</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$c$</td>
+<td>$2{,}998\times10^{10}$ cm s$^{-1}$</td>
+<td><strong>INPUT</strong></td>
+<td>universal, measured</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$h$</td>
+<td>$6{,}61\times10^{-27}$ erg s</td>
+<td><strong>INPUT</strong></td>
+<td>universal, measured (Esp 058's value)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m$, $\mu$, $\tau$</td>
+<td>$9{,}11\times10^{-28}$, $1{,}89\times10^{-25}$, $3{,}18\times10^{-24}$ g</td>
+<td><strong>INPUT</strong></td>
+<td>the 1983 PDG values; the sector's three anchors (RC 053 table)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\xi$</td>
+<td>$6{,}8\times10^{-4}$ cgs</td>
+<td><strong>SUGGESTED</strong></td>
+<td>taken from $l_{0} = R_{H}$, the nucleon closure (S22; S34 item)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$e$</td>
+<td>—</td>
+<td><strong>INPUT</strong></td>
+<td>shared seed; the charge's <em>value</em> is R1's chain, not the sector's (S34, S35)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\alpha$</td>
+<td>$-1{,}46\times10^{-25}$ g (Esp: $-1{,}472$; recomputed $-1{,}4672$)</td>
+<td><strong>RESTATEMENT</strong></td>
+<td>$\alpha = (m+3\mu-2\tau)/4\pi^{2}$ exactly (S21); the pair (220)/(221) gives the same to $0{,}002\,\%$ (S43)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\beta$</td>
+<td>$-1{,}74\times10^{-39}$ g cm (recomputed $-1{,}6700$)</td>
+<td><strong>RESTATEMENT</strong></td>
+<td>$\beta = -h(1-\varepsilon)/(4\pi^{3}c)$: $94\,\%$ the pure $h/c$ combination (S37); RC's printed value is $4{,}0\,\%$ off its own formula (S37)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$T_{0}$</td>
+<td>$4{,}93\times10^{-24}$ s</td>
+<td><strong>RESTATEMENT</strong></td>
+<td>$T_{0} = 2h/(c^{2}(\tau-\mu))$ exactly (S21); the same number is the ladder's step (S43)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>$R_{0}$, $\mathcal{R}$</td>
+<td>$8{,}01\times10^{-15}$, $4{,}82\times10^{-14}$ cm</td>
+<td><strong>OUTPUT</strong></td>
+<td>the éon trajectory's turning points, conditional on $\xi$ (RC (3-72))</td>
+</tr>
+<tr>
+<td>10</td>
+<td>$\Lambda$</td>
+<td>$\le 0$</td>
+<td><strong>OUTPUT</strong></td>
+<td>the existence condition (3-69-2), conditional on $\xi$</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$\langle R \rangle$</td>
+<td>$2{,}35\times10^{-14}$ cm</td>
+<td><strong>OUTPUT</strong></td>
+<td>from the mass pair and $\beta$ (S43); inside the turning points</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$Y$</td>
+<td>$2{,}27$</td>
+<td><strong>OUTPUT</strong></td>
+<td>the orbit condition (3-74-a); the <em>same</em> number for every $n$ (S42)</td>
+</tr>
+<tr>
+<td>13</td>
+<td>$k_{S} = k_{P}$</td>
+<td>$1{,}36$</td>
+<td><strong>RESTATEMENT</strong></td>
+<td>a harmonic mean of the pulsation; the exact value is $1{,}3632$ (S32)</td>
+</tr>
+<tr>
+<td>14</td>
+<td>$W_{0e}$, $W_{0\mu}$</td>
+<td>$0{,}824\times10^{-3}$, $2{,}615\times10^{-3}$ erg</td>
+<td><strong>DEFINED</strong></td>
+<td>(226), (232), (233) define them; the integrals (223)/(224) that would produce them are not evaluated in the corpus</td>
+</tr>
+<tr>
+<td>15</td>
+<td>$W_{n}$</td>
+<td>$2(n+\frac{1}{2})h/T_{0}$</td>
+<td><strong>OUTPUT</strong></td>
+<td>a formula, and its quantum $h/T_{0} = 0{,}8389$ GeV against the printed $0{,}832$ ($-0{,}8\,\%$)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>$m_{3}\ldots m_{6}$</td>
+<td>$3{,}46$, $5{,}14$, $6{,}82$, $8{,}50$ GeV</td>
+<td><strong>DEAD</strong></td>
+<td>the tower's extension; LEP excludes charged leptons to $\sim100$ GeV (R7, P1)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>electron spin $-1/2$</td>
+<td>—</td>
+<td><strong>CONVENTION</strong></td>
+<td>an exact sign symmetry of (3-32), broken by stipulation (S44)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>éonic eccentricity</td>
+<td>$E = 0{,}36$</td>
+<td><strong>FITTED</strong></td>
+<td>chosen to make the charge exact; RC's $0{,}933$ leaves a $2{,}7\,\%$ gap (S41's open item; S37)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Counting, and the count is the point.</strong> Inputs: 2 universal + 3 lepton anchors + 1 shared + 1 suggested $=7$. Restatements: 4 ($\alpha$, $\beta$, $T_{0}$, $k_{S}/k_{P}$). Conditional outputs: 4 rows of geometry (their number of <em>numbers</em> is larger — the trajectory, $\Lambda$, $\langle R \rangle$, $Y$). Defined-but-not derived: 2. Dead: 1 prediction set. Convention: 1. <strong>Parameters specific to a lepton: 0.</strong></p>
+<h2 id="2-zero-lepton-parameters-and-why-that-is-a-weakness-rather-than-a-strength">2. Zero lepton parameters, and why that is a weakness rather than a strength</h2>
+<p><strong>The corpus presents "no arbitrary parameters" as the sector's virtue. The ledger says it is the sector's rigidity.</strong> A model with no per-lepton parameter cannot accommodate a wrong spectrum by adjusting anything: <strong>the three masses are the <em>input</em>, the éon is one object repeated (S42), and every other lepton number is either universal, shared, or a closed form in the three masses.</strong> So when the model extrapolates the sequence beyond the tau, the extrapolation is forced, and it is wrong (R7, P1: the next four members at $3{,}46$–$8{,}50$ GeV do not exist).</p>
+<p><strong>This makes the lepton sector the cleanest instance of the programme's two opposite failure modes, and it is the one that is not the fitted-minimum pattern.</strong> S20 and S38 record claims that survive because a plateau makes them unfalsifiable. <strong>The lepton tower is the reverse: a claim with no slack, tested by data, and dead.</strong> The register's §4.8 tag [FALS] <em>as stated</em> therefore stands — but with the corpus's own count as the correction, and not with a suspicion of over-parameterisation, which the ledger does not support.</p>
+<p><strong>And the corpus's own count is nearly the honest one.</strong> RC 051 §IV says five parameters are needed, <em>"bien mesurés par l'expérience"</em>, and that the <em>Système E</em> then <em>provides</em> $\alpha$, $\beta$, $T_{0}$ <em>"en fonction de ces paramètres"</em>. <strong>That is the input/output accounting stated by the corpus itself, and it is correct: five in (its count is $c$, $h$, $m$, $\mu$, $\tau$), three derived.</strong> The only thing missing from RC's sentence is that the three derived constants are <em>closed forms</em> in the five rather than independent numbers — which is S21's finding, and which the forward direction in Esp hides.</p>
+<h2 id="3-the-direction-of-read-and-why-computed-is-not-derived">3. The direction of read, and why "computed" is not "derived"</h2>
+<p><strong>The two books read one system in opposite directions.</strong> Esp 050 §8 and Esp 051 write the mass equations (220)/(221) and produce $m_{0}$ and $\mu_{0}$ from $\alpha$ and $\beta$. RC 051 writes (3-68) and produces $\alpha$ and $\beta$ from $m$ and $\mu$. <strong>S43's check shows these are the same constraint: adding the two mass equations returns (3-68)'s $\alpha$ exactly, and subtracting them returns $\beta I$.</strong> So:</p>
+<ul>
+<li>the <em>forward</em> reading's appearance of computing the masses is the appearance of solving a system whose constants were obtained by inverting it;</li>
+<li>the <em>backward</em> reading is honest and the corpus says so (<em>"en fonction de ces paramètres bien mesurés par l'expérience"</em>).</li>
+</ul>
+<p><strong>Rule R1: a computation is not a derivation, and the first thing to report about a number is whether it was put in. For the lepton sector the answer is that the masses were put in — in the 1983 book explicitly and in the 1987 book implicitly, and the two statements are one line of algebra apart.</strong></p>
+<p><strong>A second check-point follows from the same structure, and it sharpens R3.</strong> The mass equations contain the integral $\int_{0}^{T_{0}}dt/R$, whose primitive the corpus never writes; <strong>S43 shows that the pair's own two combinations eliminate every integral except through $\int dt/R$, which the turning points bound.</strong> So the lepton sector is checkable to the point where only one unexhibited primitive remains, and the obstruction §4.6 records is no longer a missing integrand but a missing integral.</p>
+<h2 id="4-what-the-sector-genuinely-outputs-and-what-it-costs">4. What the sector genuinely outputs, and what it costs</h2>
+<p><strong>The genuine outputs are geometric, and they are the reason the sector is worth keeping.</strong> Given $\xi$ and the three masses, the <em>Système E</em> fixes a trajectory with definite turning points $R_{0}$ and $\mathcal{R}$, a negative $\Lambda$, a quantised neutrino orbit $Y = 2{,}27$ shared by every éon, and a mean inverse radius $\langle R \rangle = 2{,}35\times10^{-14}$ cm (S43). <strong>These are outputs in the strict sense — no freedom left once the inputs are fixed.</strong> They are also, by S42's identification, internal to an unobservable object.</p>
+<p><strong>And they are conditional on $\xi$, whose status is the same problem S38 found for the nucleon mass.</strong> $\xi$ is taken from $l_{0} = R_{H}$ — the nucleon closure — as a starting suggestion, and S38 shows the nucleon mass moves $5{,}1\,\%$ when the two printed $\xi$'s are compared. <strong>So the lepton sector's output set is a function of a seed that is not the sector's own, and the debt is S22's and S38's.</strong> The article records the dependency rather than the numbers' apparent precision.</p>
+<p><strong>Two rows are defined and never derived, and they are the sector's unexplained cells.</strong> $W_{0e}$ and $W_{0\mu}$ (Esp 058's $0{,}824\times10^{-3}$ and $2{,}615\times10^{-3}$ erg) are the neutrino "rest energies"; relations (226), (232), (233) define them in terms of the spin and pulse integrals (223)/(224)/(229)/(230), <strong>and the corpus evaluates none of those integrals anywhere in the transcribed text.</strong> The table's $W_{0\tau}$ and $\tau_{\mathrm{on}}$ rows are blank as transcribed. <strong>So two numbers the sector uses are carried on faith, and S41 already lists the blanks among the block's open items.</strong></p>
+<h2 id="5-the-corpuss-strongest-form-of-the-claim-four-principles-six-constants">5. The corpus's strongest form of the claim: four principles, six constants</h2>
+<p><strong>Esp 116 states the claim in its sharpest form, and it is the place P22 sends S45 to adjudicate.</strong> The passage lists the four coherence principles — <em>the principle of relativity; homogeneity and isotropy; conservation of energy-momentum; quantisation (action $nh$ divided equally between a spin and a pulse)</em> — and asserts both halves:</p>
+<blockquote>
+<p>Nous avons pu effectivement vérifier que le modèle leptonique, construit comme un micro-univers obéissant aux 4 principes de cohérence globale précédents, et à eux seulement, était entièrement dépourvu de paramètres arbitraires, et permettait en fait le calcul direct de 6 des constantes fondamentales de la Physique ($c$, $h$, $e$, $m$, $\mu$ et $\tau$).</p>
+</blockquote>
+<p><strong>The ledger's answer to the six constants is the shortest possible:</strong> $c$ and $h$ are measured universal constants, and <strong>no theory computes its own universal constants</strong> — they are the units in which every other number is expressed; $e$'s value is R1's chain, whose agreement is <em>inherited</em> from $\beta$ through the lepton spectrum (S34, S35, S37); and $m$, $\mu$, $\tau$ are this article's three anchors. <strong>So of the six constants the corpus lists as directly computed, the ledger returns five as inputs and one as an inherited agreement — none as an independent output.</strong></p>
+<p><strong>The second half of the claim fails on a different clause, the word <em>"only"</em>.</strong> <em>"Ces 4 principes et à eux seulement"</em> is a sufficiency claim, and the walk finds an input that none of the four principles supplies: <strong>$\xi$, or equivalently $l_{0}$, taken from the nucleon closure $l_{0} = R_{H}$ as a starting suggestion (S22, S34).</strong> The quantisation principle fixes the action $(n+\frac{1}{2})h$ and the equipartition; it does not fix the elementary length. <strong>So the model is built from the four principles <em>plus</em> a closure it borrows from the hadron sector, and the sentence's <em>"et à eux seulement"</em> is the part that does not survive the ledger.</strong> That is P22's [FALS] <em>as stated</em>, in the form the lepton sector can supply: <strong>not "the bootstrap idea is wrong", but "these four principles are not sufficient, and the sixth input is visible in the table".</strong></p>
+<p><strong>What the four principles do produce is the geometry of §4</strong> — and its dependence on the borrowed seed is exactly why the sufficiency claim cannot be repaired by counting outputs instead of inputs.</p>
+<h2 id="6-verdict">6. Verdict</h2>
+<p><strong>§4.8's sentence is false as stated, and the corrected sentence is stronger than the register's.</strong> The corpus claims <em>"entirely devoid of arbitrary parameters"</em>; the walk finds seven inputs — of which three are the lepton masses — four restatements, one conditional geometric output set, two defined-but-not-derived numbers, one dead prediction and one convention, <strong>and zero parameters specific to a lepton.</strong> The correction is therefore not <em>"one output, five inputs"</em> alone but: <strong>the lepton sector has no lepton-specific freedom at all, which is why its one hard prediction died.</strong></p>
+<p><strong>Per rule R1, marked:</strong> the sector's inputs are its three measured masses plus $c$, $h$, $\xi$ (suggested) and $e$ (shared); its restatements are $\alpha$, $\beta$, $T_{0}$, $k_{S}/k_{P}$; its outputs are the geometry; its prediction is dead; its convention is unobservable. <strong>Per rule R2, there is nothing to pre-register and nothing to back-fit: the sector never had a number to adjust.</strong> <strong>Per rule R6, the three questions separate cleanly: coherence passes (one system, two directions); reproducibility passes for the geometry and fails for the masses, which are inputs; correspondence fails, and not by a near miss — the geometry is invisible and the prediction is excluded.</strong></p>
+<p><strong>The register's methodological centre produces a verdict that is neither a rescue nor a dismissal: the lepton sector is the programme's most constrained construction, and the constraint is what killed it.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The inventory's §4.8 says the lepton model is <em>"entirely devoid of arbitrary parameters"</em>, and the register asks for each lepton number to be marked INPUT or OUTPUT. <strong>The walk gives seven inputs, four restatements, one conditional output set, two undefined-in-practice numbers, one dead prediction, one convention — and zero parameters specific to a lepton.</strong></p>
+<p><strong>First, the inputs.</strong> $c$ and $h$ universal; $m$, $\mu$, $\tau$ at their 1983 values, which are the sector's anchors; $\xi = 6{,}8\times10^{-4}$ suggested from the nucleon closure $l_{0} = R_{H}$ (S22, S34); and $e$ shared with the hadron sector. <strong>RC 051 §IV states this count itself — five parameters, <em>"bien mesurés par l'expérience"</em>, from which the <em>Système E</em> provides $\alpha$, $\beta$, $T_{0}$ — and it is correct.</strong></p>
+<p><strong>Second, the restatements, and this is where the claim fails.</strong> $\alpha = (m+3\mu-2\tau)/4\pi^{2}$ (S21, and to $0{,}002\,\%$ from the mass equations themselves, S43); $\beta = -h(1-\varepsilon)/(4\pi^{3}c)$, i.e. $94\,\%$ a pure $h/c$ combination (S37); $T_{0} = 2h/(c^{2}(\tau-\mu))$, which is also the ladder's step (S21, S43); and $k_{S} = k_{P} = 1{,}36$ as the harmonic $1{,}3632$ (S32). <strong>Nothing here is an independent number, and the two books read the same system in opposite directions: Esp computes masses from the constants, RC computes the constants from the masses, and S43 shows the two are one line of algebra apart.</strong></p>
+<p><strong>Third, the outputs.</strong> Conditional on $\xi$, the <em>Système E</em> returns $R_{0} = 8{,}01\times10^{-15}$ cm, $\mathcal{R} = 4{,}82\times10^{-14}$ cm, $\Lambda \le 0$, $Y = 2{,}27$ for every éon, and $\langle R \rangle = 2{,}35\times10^{-14}$ cm (S43) — genuine outputs, and invisible (S42), and dependent on a seed that is not the sector's (S38). $W_{0e}$ and $W_{0\mu}$ are defined but their integrals are never evaluated.</p>
+<p><strong>Fourth, the dead prediction and the absent freedom.</strong> The tower at $3{,}46$, $5{,}14$, $6{,}82$, $8{,}50$ GeV is forced and excluded by LEP (R7, P1) — and <strong>it could not have been tuned, because the sector has no lepton-specific parameter: the lepton masses are the input, and the éon is one object repeated.</strong> This is the mirror image of S20's and S38's plateau pattern: a claim with no slack, tested, and dead.</p>
+<p><strong>Fifth, the claim's strongest form fails on two clauses, and this is the item P22 asks S45 for.</strong> Esp 116 lists the four coherence principles (relativity; homogeneity and isotropy; conservation of energy-momentum; quantisation with equipartition) and asserts that a model obeying <em>those and only those</em> is <em>"entirely devoid of arbitrary parameters"</em> and permits the direct computation of six constants — $c$, $h$, $e$, $m$, $\mu$, $\tau$. <strong>The ledger returns five of the six as inputs and one as an inherited agreement: $c$ and $h$ are the units, $m$, $\mu$, $\tau$ are the anchors, and $e$'s agreement comes from $\beta$ through the lepton spectrum (S34, S35). No theory computes its own universal constants.</strong> And the word <em>"only"</em> fails separately: <strong>$\xi$ (i.e. $l_{0} = R_{H}$) is supplied by the nucleon closure, not by any of the four principles, so the model is built from the four plus a borrowed seed.</strong> That is P22's [FALS] <em>as stated</em>, in the lepton sector's own terms.</p>
+<p><strong>Per rules R1, R2 and R6: the masses were put in; there was nothing to pre-register and nothing to back-fit; coherence passes, reproducibility passes for the geometry and fails for the masses, correspondence fails on an invisible output and an excluded prediction.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>term</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INPUT</td>
+<td>measured and fed in</td>
+</tr>
+<tr>
+<td>SUGGESTED</td>
+<td>taken from another sector as a starting value</td>
+</tr>
+<tr>
+<td>RESTATEMENT</td>
+<td>a closed form in the inputs</td>
+</tr>
+<tr>
+<td>OUTPUT</td>
+<td>no freedom left once the inputs are fixed</td>
+</tr>
+<tr>
+<td>DEFINED</td>
+<td>a definition the corpus gives without exhibiting the computation</td>
+</tr>
+<tr>
+<td>DEAD</td>
+<td>falsified</td>
+</tr>
+<tr>
+<td>(3-68)</td>
+<td>RC's inversion: $\alpha$, $\beta$, $T_{0}$ from $m$, $\mu$, $\tau$</td>
+</tr>
+<tr>
+<td>(220), (221)</td>
+<td>Esp's forward mass equations, S43's subject</td>
+</tr>
+<tr>
+<td>$l_{0} = R_{H}$</td>
+<td>the closure that fixes $\xi$ from the nucleon radius (S22)</td>
+</tr>
+<tr>
+<td>R1, R2, R6</td>
+<td>the register's input/output, pre-registration and three-questions rules</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S43</strong> <code>charon-s43-the-electron-muon-mass-relations.md</code> — the pair, the cancellation, and the identity that makes the two reading directions one constraint.</li>
+<li><strong>S44</strong> <code>charon-s44-spin-sign-bookkeeping.md</code> — the convention row of the table.</li>
+<li><strong>S46</strong> <code>charon-s46-lepton-sector-what-survives.md</code> — the sector's close, built on this walk.</li>
+<li><strong>S21</strong> <code>charon-s21-the-three-internal-constants.md</code> — the closed forms, from the constants' side.</li>
+<li><strong>S37</strong> <code>charon-s37-the-beta-gamma-chain.md</code> — $\beta$'s restatement, its $4{,}0\,\%$ printed defect and its two routes.</li>
+<li><strong>S34</strong> <code>charon-s34-the-input-output-ledger.md</code> — the whole-programme ledger this walk is a sector of.</li>
+<li><strong>P22</strong> — the bootstrap claim, whose [FALS] <em>as stated</em> §5 supplies in the lepton sector's terms.</li>
+<li><strong>P1</strong>/<strong>R7</strong> — the tower, and why nothing could absorb it.</li>
+<li>Corpus: RC 051 §IV and (3-68)–(3-74); RC 053 (3-75)–(3-77); Esp 050 §8; Esp 051 §9–§10; Esp 052 §11; Esp 058; Esp 116 (the four coherence principles).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

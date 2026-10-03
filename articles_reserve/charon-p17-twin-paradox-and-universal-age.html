@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Twin Paradox and the Universal Age — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-twin-paradox-and-the-universal-age"><strong>Charon: The Twin Paradox and the Universal Age</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the corpus's answer to the Langevin twin paradox. <strong>The corpus says there is no age difference at the reunion: if the two twins are subjected to the same accelerations, then the same physical conditions produce the same evolution, and the twins are the same age.</strong> It reaches this by moving the stay-at-home twin — into an elevator in a "transterrestrial tunnel" — so that both twins accelerate identically. The corpus is right that accelerations alone do not explain the twin result, and right that its own symmetric construction has no age difference. <strong>It is wrong to conclude that the twin paradox has no age difference, and wrong because the conclusion is a restatement of Axiom 6.</strong></p>
+<p><strong>The claim, verbatim.</strong> Esp 105 puts the dilemma: either the twins are <em>"soumis, pendant la durée du voyage, à des conditions physiques différentes"</em> — the standard resolution — or they are <em>"soumis ... aux mêmes conditions physiques ; dans ce cas, les mêmes conditions physiques entraînant les mêmes évolutions, les frères jumeaux au départ sont encore jumeaux à l'arrivée"</em>. Esp 106 descends on the second horn: <em>"Puisque $T$ et $C$ ont, dans ce cas, été soumis pendant leur séparation aux mêmes conditions physiques (au point que si leurs cabines sont complètement fermées ni l'un ni l'autre ne pourra affirmer au retour s'il a été ou non du voyage cosmique), comment pourrait-on justifier que l'un soit au retour plus jeune que l'autre, si on mesure leur vieillissement au moyen de l'âge universel $\tau$ de l'Univers, par exemple ? Ainsi sommes-nous logiquement conduit à la seule réponse acceptable pour lever le paradoxe : il n'y a aucune différence d'âge entre les jumeaux quand ils se retrouvent à la fin de l'expérience. C'est aussi la réponse logique qu'il nous faut donner dès que l'on accepte notre axiome 6."</em></p>
+<p><strong>The verdict is [FALS].</strong> The age difference is measured — cosmic-ray muons (1941), caesium clocks flown round the world (1971), GPS (nanoseconds per day), muon storage rings (1977), and modern optical clocks (2010, parts in $10^{17}$). <strong>And the corpus cites the muon measurements itself, as confirming the very relation whose conclusion it denies.</strong></p>
+<p><strong>A note on sources.</strong> The claim is inventory §10.3, sourced to <strong>Esp Annexe 4 (scans 105–106)</strong> — note that the register and the companion cite "Esp Annexe 3"; Esp's own list makes E.P.R. Annexe 3 and the twin paradox Annexe 4 (P16). The claim follows from Axiom 6 (P12) and is the twin-paradox branch of the same failure. The related articles are P12 and P16.</p>
+<p><strong>Conventions.</strong> $\tau$ is the corpus's universal age; $t_{T}$, $t_{C}$ the twins' proper times; $v$ the relative speed; $g$ the terrestrial surface gravity; $\gamma = (1 - v^{2}/c^{2})^{-1/2}$. The corpus's (1) is $t_{T} = t_{C}\sqrt{1 - v^{2}/c^{2}}$.</p>
+<h2 id="part-1-the-corpus-changed-the-experiment-and-then-answered-the-changed-one">Part 1 — The corpus changed the experiment, and then answered the changed one</h2>
+<p><strong>The construction is explicit.</strong> Esp 106: <em>"Pendant que le Cosmonaute quitte la Terre et est soumis, suivant son programme de vol, à des accélérations que nous supposerons varier entre $g$ et $-g$ ..., nous ferons mouvoir $T$ grâce à un ascenseur se déplaçant dans le tunnel « transterrestre », et cela de manière que, aux mêmes instants du voyage, $C$ et $T$ connaissent les mêmes accélérations."</em> So the stay-at-home twin is given the traveller's accelerations.</p>
+<p><strong>And the corpus's conclusion then follows from its own premise.</strong> If the two observers genuinely undergo the same conditions, the same evolution is not a mystery — it is the premise. <strong>Special relativity agrees: a properly symmetric scenario has a symmetric result.</strong> So the corpus has not refuted the twin paradox by computation; it has replaced the experiment with a symmetric version and reported the symmetric answer.</p>
+<p><strong>But the symmetric version is not the twin paradox.</strong> In Langevin's problem the stay-at-home twin does not accelerate at all. The corpus's twin does, and in a closed cabin (Esp 106's own point that neither could say whether he had made the voyage). <strong>Changing one of the two worldlines, and then concluding something about the original, is the step that fails.</strong> The corpus's sentence <em>"nous ferons mouvoir $T$"</em> is the moment the experiment changes, and the article's evidence is in the corpus's own text.</p>
+<p><strong>Why the corpus thought the change was necessary.</strong> Esp 105 attacks the standard resolution on two grounds: it is <em>"surprenant ... que la relation (1), qui ne concerne que les vitesses relatives, doive se justifier numériquement en faisant essentiellement intervenir des accélérations"</em>, and <em>"personne n'a jamais pu expliquer comment, quantitativement, les accélérations pourraient justifier le résultat numérique déduit de (1)"</em>. <strong>Both objections are well aimed at a popular mis-explanation, and both miss the actual resolution — which does not mention accelerations.</strong></p>
+<h2 id="part-2-the-resolution-the-corpus-did-not-consider">Part 2 — The resolution the corpus did not consider</h2>
+<p><strong>The ageing variable is not a universal time; it is the proper time along a worldline.</strong></p>
+<p>$$\tau_{\mathrm{proper}} = \int \mathrm{d}\tau = \int \sqrt{1 - v(t)^{2}/c^{2}}\;\mathrm{d}t .$$</p>
+<p>This is a <strong>geometric invariant</strong> of the worldline, computed in any frame, giving the same answer in all of them. <strong>The two twins follow different worldlines, so the integrals differ.</strong> Nothing in that statement mentions accelerations, so the corpus's two objections do not touch it.</p>
+<p><strong>And the twin result survives with no acceleration at all.</strong> The paradox can be stated with three inertial observers: one who stays, and two who travel out and back in opposite directions, comparing clock readings as they pass one another. <strong>Nobody accelerates anywhere in that version, and the traveller's total elapsed proper time is still the shorter.</strong> The asymmetry is not the acceleration but the fact that the traveller's path is the concatenation of two different inertial worldlines while the stay-at-home's is a single one — and the turn-around is where the change happens. <strong>So the corpus's central objection ("the accelerations are symmetric, so there is no age difference") is defeated by a formulation in which there are no accelerations to be symmetric.</strong></p>
+<p><strong>The corpus's "no unique answer" claim is also wrong.</strong> Esp 105 says the numerical result depends on <em>"la manière dont l'accélération varie dans le temps"</em>. <strong>It does not, once the worldline is specified</strong>: $\int\sqrt{1-v^{2}/c^{2}}\,\mathrm{d}t$ is determined by the worldline, and different acceleration profiles that produce the same cruise speed and the same total distance change the answer only in the (small) turnaround intervals. <strong>For an instantaneous turnaround the result is exact and profile-independent</strong> — which is why the muon experiments, the flying clocks and the satellites all agree.</p>
+<h2 id="part-3-the-circularity">Part 3 — The circularity</h2>
+<p><strong>The corpus's argument measures ageing by $\tau$.</strong> Esp 106: <em>"si on mesure leur vieillissement au moyen de l'âge universel $\tau$ de l'Univers"</em>. <strong>But $\tau$ is defined, in Axiom 6, to be the same for every observable phenomenon (P12).</strong> So the argument reads: assume a universal age that everyone shares; measure ageing by it; conclude that everyone is the same age. <strong>It is a restatement of the premise, not a result, and the corpus's own closing sentence concedes the derivation</strong> — <em>"C'est aussi la réponse logique qu'il nous faut donner dès que l'on accepte notre axiome 6."</em> It does not follow <em>dès que</em> one accepts Axiom 6; it <em>is</em> Axiom 6, applied to clocks.</p>
+<p><strong>The physical variable is the one the corpus set aside.</strong> A clock does not accumulate $\tau$; it accumulates the proper time along its worldline. That is what the experiments measure, and it is the quantity that differs. <strong>So the twin-paradox conclusion fails in the same way as everything else downstream of Axiom 6: the axiom supplies a universal label, and the label is then mistaken for the physical age.</strong></p>
+<p><strong>And the corpus's own construction has a physical answer too.</strong> In the corpus's symmetric version, the two worldlines are not identical — one is a path through a tunnel, the other through space — so the proper times are the thing to compute, and the corpus never computes them. <strong>The corpus's "same conditions" argument is a statement about the accelerometers, not about the clocks.</strong></p>
+<h2 id="part-4-and-the-corpus-cites-the-measurements">Part 4 — And the corpus cites the measurements</h2>
+<p><strong>This is the article's sharpest material, and it is a documentary fact.</strong> Esp 105, in the middle of denying that accelerations explain the result, writes: <em>"Personne n'a jamais pu expliquer comment, quantitativement, les accélérations pourraient justifier le résultat numérique déduit de (1) (résultat qui a bien été expérimentalement retrouvé, avec les muons du rayonnement cosmique par exemple, et de très nombreuses autres vérifications)."</em></p>
+<p><strong>So the corpus states that the result has been experimentally confirmed</strong>, cites the cosmic-ray muons, and then concludes that there is no age difference. The measurements it cites are the ones against it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measurement</th>
+<th>year</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rossi–Hall: cosmic-ray muons</td>
+<td>1941</td>
+<td>the muon's mean life is dilated by $\gamma$, measured through the altitude–flux curve</td>
+</tr>
+<tr>
+<td>Ives–Stilwell: transverse Doppler</td>
+<td>1938–41</td>
+<td>the moving emitter's frequency shifted by $\sqrt{1-v^{2}/c^{2}}$</td>
+</tr>
+<tr>
+<td>Hafele–Keating: caesium clocks flown round the world</td>
+<td>1971</td>
+<td>eastward and westward flights differ in both sign and magnitude, as the frame analysis predicts</td>
+</tr>
+<tr>
+<td>muon $g-2$ storage ring</td>
+<td>1977</td>
+<td>the stored muons' <em>dilated lifetime</em> measured at $\gamma = 29{,}3$</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>operating</td>
+<td>clock corrections of $38\ \mu\mathrm{s}$/day, dominated by the relativistic terms</td>
+</tr>
+<tr>
+<td>optical clocks (Chou et al.)</td>
+<td>2010</td>
+<td>time dilation at $v = 10$ m/s measured to parts in $10^{17}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Hafele–Keating result is the one that answers the corpus's symmetry argument most directly</strong>: the two flights (eastward and westward) give <em>different</em> net shifts, of opposite sign, which is exactly what the frame-dependent analysis predicts and exactly what "the same physical conditions" would not produce. <strong>And the corpus's own construction — a rocket and an elevator — is a case the standard theory handles: it computes both proper times; the corpus's model does not.</strong></p>
+<p><strong>One concession worth making.</strong> The corpus's complaint that the popular explanation ("acceleration causes the asymmetry") is loose is <em>correct</em>, and it is a complaint professionals have made too. <strong>The corpus's error is to have drawn the wrong conclusion from it: the fact that accelerations are not the explanation does not mean there is no age difference — it means the explanation is the worldline, hence the proper time, hence the clock reading that every experiment measures.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus concludes that the twins are the same age at the reunion, because it subjects both to the same accelerations and measures ageing by the universal age $\tau$.</strong> The claim is [FALS]. Its symmetric construction is internally coherent and its conclusion correct <em>for that construction</em>, but the construction is not the twin paradox: the corpus moves the stay-at-home twin (<em>"nous ferons mouvoir $T$"</em>) and then answers the changed problem. The standard resolution is not accelerations but the proper time along a worldline, $\int\sqrt{1-v^{2}/c^{2}}\,\mathrm{d}t$ — a geometric invariant which no objection to "accelerations" can touch, and which can be exhibited in a version of the paradox with no accelerations at all. The conclusion is also circular: $\tau$ is <em>defined</em> to be universal (Axiom 6, P12), so "everyone has the same age" is the premise. <strong>And the corpus states, in the same annexe, that the result "a bien été expérimentalement retrouvé, avec les muons du rayonnement cosmique" — citing the measurement it denies.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau$</td>
+<td>the corpus's universal age (Axiom 6); physical proper time</td>
+</tr>
+<tr>
+<td>$t_{T}$, $t_{C}$</td>
+<td>the twins' proper times</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>relative speed</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>$(1-v^{2}/c^{2})^{-1/2}$</td>
+</tr>
+<tr>
+<td>$\tau_{\mathrm{proper}}$</td>
+<td>$\int\sqrt{1-v^{2}/c^{2}}\,\mathrm{d}t$, the worldline invariant</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §10.3: <strong>this article is the article-form of that entry.</strong></li>
+<li><code>Esp/105_improved.md</code>, <code>Esp/106_improved.md</code> (Annexe 4: the dilemma (a)/(b), the tunnel elevator, the two conclusions, the appeal to Axiom 6, and the citation of the muon result).</li>
+<li>P12 for Axiom 6, P16 for EPR (the other claimed demonstration of it), P19 for the dated falsifications.</li>
+<li>S59 for the chains; S60 for the tier verdict.</li>
+<li>Rossi–Hall, <em>Phys. Rev.</em> 59 (1941) 223; Ives–Stilwell, <em>J.O.S.A.</em> 31 (1941) 369; Hafele–Keating, <em>Science</em> 177 (1972) 166; Bailey et al., <em>Nature</em> 268 (1977) 301; Chou et al., <em>Science</em> 329 (2010) 1630.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

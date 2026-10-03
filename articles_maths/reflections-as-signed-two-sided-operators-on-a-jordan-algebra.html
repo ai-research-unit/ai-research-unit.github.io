@@ -65,11 +65,11 @@ $$</p>
 <p><strong>Theorem.</strong> For every unit $u$, the signed conjugation $c_u$ is an automorphism of the Jordan algebra $J$.</p>
 <p><em>Proof.</em> For $x, y \in J$,
 $$
-c_u(x\circ y) = u\,\alpha(x\circ y)\,u^{-1} = u\,\bigl(\alpha(x)\circ\alpha(y)\bigr)\,u^{-1} ,
+c_u(x\bullet y) = u\,\alpha(x\bullet y)\,u^{-1} = u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} ,
 $$
 and, since $z\mapsto uzu^{-1}$ is an algebra automorphism of $A$ and therefore preserves the halved product,
 $$
-u\,\bigl(\alpha(x)\circ\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\circ\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\circ c_u(y) .
+u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y) .
 $$
 Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$. $\square$</p>
 <p><strong>Corollary.</strong> The map $u \mapsto c_u$ is a homomorphism from $A^\times$ to the automorphism group of $J$ (with the composition law computed below); its kernel is the group of units fixed by the automorphism, that is, the units $u$ with $uzu^{-1} = \alpha(z)$ for all $z$, which is $Z(A)^\times$ when $\alpha = \mathrm{id}$.</p>
@@ -96,7 +96,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>reflection</strong> of the graded Jordan algebra $J = A^+$ is a signed conjugation $c_u$ of order two, $c_u^2 = \mathrm{id}$, $c_u \ne \mathrm{id}$.</p>
 <p><strong>Theorem (the criterion).</strong> A signed conjugation $c_u$ is a reflection exactly when the twisted square $N(u) = u\alpha(u)$ is central in $A$; it is then the inner automorphism $\operatorname{conj}_{N(u)}$ of order two, and the reflection satisfies $c_u^2 = \mathrm{id}$.</p>
 <p><em>Proof.</em> By the square theorem, $c_u^2 = \operatorname{conj}_{N(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central. $\square$</p>
-<p><strong>Corollary (parity).</strong> If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \circ u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.</p>
+<p><strong>Corollary (parity).</strong> If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.</p>
 <h3 id="the-relation-to-the-signed-sandwich">The Relation to the Signed Sandwich</h3>
 <p><strong>Proposition.</strong> If the unit $u$ satisfies $u^{-1} = u$, then the reflection $c_u$ is the symmetrised signed sandwich</p>
 <p>$$

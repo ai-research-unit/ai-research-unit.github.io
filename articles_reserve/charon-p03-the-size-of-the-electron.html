@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Size of the Electron — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-size-of-the-electron"><strong>Charon: The Size of the Electron</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records a claim of the corpus that is rarely noticed because it arrives as a correction to something else. To make his computed charge <em>exact</em>, Charon deforms the éon from a sphere into an oblate spheroid with a free eccentricity $E$. The deformation buys the charge and, in the same move, gives the electron a <strong>finite, anisotropic extension</strong> of order the éon's radii. The first is a fit; the second is a claim about the electron's structure, and the electron is the one particle whose point-like nature has been tested to many decimal places.</p>
+<p><strong>The claim, in the corpus's words.</strong> The difference between his computed charge and the measured $e$ is attributed to spherical symmetry being an approximation: <em>"Nous pouvons admettre que la petite différence … provient du fait que, dans le modèle éonique, nous nous sommes limités à la symétrie sphérique, alors que plus généralement (spin éonique) nous aurions dû choisir une symétrie axiale, admettant la possibilité d'une excentricité $E$ de l'espace éonique"</em> (RC 055, §VII.4). With the deformed cross-section (3-110), <em>"le même calcul … fournit alors la valeur expérimentale exacte de la charge $e$"</em> for $r/R = 0{,}933$, that is $E = 0{,}36$.</p>
+<p><strong>The verdict is [FALS].</strong> The electron is point-like below about $10^{-18}$ m: its magnetic moment agrees with the quantum-electrodynamic prediction to ten significant figures, and the agreement is <em>better</em> than any composite model with a structure at the éon's scale could give. The corpus's own radii put the extension at $0{,}08$ to $0{,}48$ fm, one and a half to two and a half orders of magnitude above the bound. <strong>And the corpus concedes the point</strong> elsewhere: Esp 053, explaining why the elementary length $l_{0}$ is <em>not</em> the electron's radius, writes that the point-electron hypothesis <em>"est confirmée par l'expérience"</em>.</p>
+<p><strong>A note on sources.</strong> The claim is inventory §4.7, sourced to RC (3-110), (3-111), (3-112) at scan <code>055_improved.md</code>, with the éon's radii from RC (3-72) and (3-68). The audit is S19's, whose finding that $E$ is a fit is adopted here. The experimental bound is the electron $g-2$ agreement with QED and the collider limits on an excited electron.</p>
+<p><strong>Conventions.</strong> Gaussian cgs. $r$ and $R$ are the small and large semi-axes of the éon, $E$ its eccentricity, $\rho_{n}$ the proper density, $\Omega_{0}$ the elementary cell, $l_{0}$ the elementary length. <strong>Note the corpus's radii are printed in cm</strong>; comparisons with the experimental bound are made after converting.</p>
+<h2 id="part-1-how-the-deformation-buys-the-charge-and-what-it-costs">Part 1 — How the deformation buys the charge, and what it costs</h2>
+<p>The construction is short and its logic is worth following, because the electron's size is a <em>by-product</em> of a fit.</p>
+<p><strong>The un-deformed charge.</strong> The charge is computed from blackbody radiation trapped in the éon (inventory §3.3). S19's audit recomputes the chain: $\gamma = -c\beta/h$, the infra-red cut-off $x_{1} = (\pi h/30c|\beta|)^{1/4} = 1{,}9103$, the truncated Planck integral $23{,}455$, and finally the coupling $e^{2}/\hbar c = 7{,}608\times10^{-3}$ against the observed $7{,}2993\times10^{-3}$. <strong>The unfitted result misses by 4.2 % in the coupling, which is 2 % in the charge.</strong></p>
+<p><strong>The deformation.</strong> RC 055 replaces the electrostatic cross-section $\overline{\sigma} = \pi R^{2}/2$ by its oblate form (3-110), and reports that the deformed calculation gives the measured charge <em>exactly</em> when $r/R = 0{,}933$, i.e. $E = 0{,}36$. The relation between the two is the spheroid's, $r/R = \sqrt{1-E^{2}}$, and $E = 0{,}36$ does give $\sqrt{1-0{,}36^{2}} = 0{,}933$.</p>
+<p><strong>The cost, verified.</strong> Charon's own correction multiplies his unfitted coupling by $(1-E^{2})^{1/2} = 0{,}933$, giving $7{,}098\times10^{-3}$ — which is <strong>2.8 % <em>below</em> $1/137$</strong>, not the exact value the text claims. The eccentricity that would land exactly is $E = 0{,}282$. Since $E$ is free, "exact" means "chosen", and the honest headline is the unfitted 2 %. <strong>S19's finding is adopted: the eccentricity is a fit, and the fit does not even land where the text says it lands.</strong></p>
+<p><strong>The by-product.</strong> Once the éon is an oblate spheroid with $r/R = 0{,}933$, the model has a preferred axis and two radii. The electron's structure is no longer a point and no longer isotropic. That is the size claim, and it is now load-bearing whether or not the author wanted it.</p>
+<h2 id="part-2-the-size-and-the-experimental-bound">Part 2 — The size, and the experimental bound</h2>
+<p><strong>The corpus's own lengths.</strong> From RC (3-72) and (3-68) the éon's radii are</p>
+<p>$$R_{0} = 8{,}01\times10^{-15}\ \mathrm{cm}, \qquad R_{\max} = 4{,}82\times10^{-14}\ \mathrm{cm},$$</p>
+<p>that is $0{,}080$ fm and $0{,}482$ fm. The elementary length is $l_{0} = 1{,}8\times10^{-14}$ cm $= 0{,}18$ fm, and the holon's maximum radius is $R_{H\max} = 9{,}2\times10^{-14}$ cm $= 0{,}92$ fm. The eccentricity makes the electron's extension of order the éon's radii, with the anisotropy fixed by r/R.</p>
+<p><strong>The experimental bound.</strong> The electron's anomalous magnetic moment, $g-2$, agrees with the QED prediction to ten significant figures. Any composite structure at a scale $\Lambda$ would shift the magnetic moment by terms of order $m_{e}^{2}/\Lambda^{2}$; the agreement bounds $\Lambda$ far above the éon's radii. Direct searches for an excited electron at LEP and the LHC bound the scale of structure at or above a few hundred GeV to a TeV, corresponding to lengths below $10^{-18}$ m $= 10^{-16}$ cm.</p>
+<p><strong>The comparison, done carefully.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value (cm)</th>
+<th>value (fm)</th>
+<th>against a $10^{-16}$ cm bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>éon small semi-axis $R_{0}$</td>
+<td>$8{,}01\times10^{-15}$</td>
+<td>$0{,}080$</td>
+<td>$\sim 80$ times above</td>
+</tr>
+<tr>
+<td>éon large semi-axis $R_{\max}$</td>
+<td>$4{,}82\times10^{-14}$</td>
+<td>$0{,}482$</td>
+<td>$\sim 480$ times above</td>
+</tr>
+<tr>
+<td>elementary length $l_{0}$</td>
+<td>$1{,}8\times10^{-14}$</td>
+<td>$0{,}18$</td>
+<td>$\sim 180$ times above</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the model's electron is a structure of tenths of a femtometre, and the bound is a hundredth of an attometre. <strong>The extension is one and a half to two and a half orders of magnitude above the point-like bound</strong> — decisively excluded, and worth stating precisely rather than loosely.</p>
+<p><strong>Correction to the inventory's wording.</strong> The companion (§4.7) reads the scale as $\sim10^{-14}$ m and calls it "four orders of magnitude above the bound". The corpus's lengths are printed in <strong>cm</strong>, and $10^{-14}$ cm $=10^{-16}$ m is <em>below</em>, not above, the bound; the correct reading is the table above, with the éon's extension at $10^{-15}$ to $10^{-14}$ cm, one and a half to two and a half orders above. The verdict is unchanged; the number is corrected.</p>
+<h2 id="part-3-the-corpus-concedes-the-point">Part 3 — The corpus concedes the point</h2>
+<p>This is the part of the article that should be quoted in any reissue, because it removes the disagreement.</p>
+<p>In Esp 053, discussing why $l_{0}$ is introduced, Charon writes that the elementary length can be considered the "radius" of the electron — <em>"(ce qui est, naturellement, contradictoire avec l'hypothèse d'un électron ponctuel qui a été utilisée pour développer le formalisme quantique et qui, par ailleurs, est confirmée par l'expérience)"</em>. <strong>The parenthetical states that the point-electron hypothesis is confirmed by experiment.</strong> So the corpus is not in the dark about the electron's structure; it treats the point electron as established, and treats $l_{0}$ as a cut-off parameter rather than a literal radius. The size claim of §VII.4 is the tension the rest of the corpus avoids.</p>
+<p><strong>What this means for the eccentricity.</strong> The eccentricity is load-bearing in three places at once (S19): the charge "exact" (§3.3), the electron's real size (§4.7), and the spin of the éon. <strong>The corpus cannot keep the charge result and drop the size, because one fit produces both.</strong> The correct disposition is the one S19 reached: record the arithmetic of the charge as a real success, and mark the mechanism and the size as post-mortem.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>To make his computed charge exact, Charon gave the éon an eccentricity $E = 0{,}36$, and the same deformation gives the electron a finite, anisotropic extension of 0.08 to 0.48 fm.</strong> The electron is point-like below about $10^{-18}$ m, with $g-2$ agreeing with QED to ten figures, so the extension sits one and a half to two and a half orders of magnitude above the bound — not four orders, as the inventory loosely states, since the corpus prints radii in cm. The corpus itself concedes the point at Esp 053, where the point-electron hypothesis is called confirmed by experiment. The eccentricity is a free fit that does not even land exactly ($E = 0{,}282$ would, against the printed $0{,}36$), and it carries the electron size, the "exact" charge and the éon spin together. <strong>Verdict [FALS].</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r, R$</td>
+<td>small and large semi-axes of the éon</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>eccentricity of the éonic space, $r/R = \sqrt{1-E^{2}}$</td>
+</tr>
+<tr>
+<td>$\overline{\sigma}$</td>
+<td>electrostatic cross-section, $\pi R^{2}/2$ undeformed</td>
+</tr>
+<tr>
+<td>$R_{0}, R_{\max}$</td>
+<td>éon turning radii, $8{,}01\times10^{-15}$ and $4{,}82\times10^{-14}$ cm</td>
+</tr>
+<tr>
+<td>$l_{0}$</td>
+<td>elementary length, $1{,}8\times10^{-14}$ cm</td>
+</tr>
+<tr>
+<td>$g-2$</td>
+<td>electron anomalous magnetic moment, the sharpest point-like test</td>
+</tr>
+<tr>
+<td>[FALS]</td>
+<td>companion tag: refuted by observation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §4.7 and §3.3: <strong>this article is the article-form of §4.7 and adopts S19's finding on §3.3.</strong></li>
+<li><code>RC/055_improved.md</code> (the eccentricity, (3-110) to (3-112)), <code>RC/044_improved.md</code> and <code>RC/046_improved.md</code> (the éon radii), <code>Esp/053_improved.md</code> (the point-electron concession), <code>Esp/058_improved.md</code> (the éon model).</li>
+<li>S19 for the charge arithmetic and the three-way load-bearing finding, S20 for the radii, S5 for the units.</li>
+<li>S60 for the tier verdict, S59 for the charge row of the ledger.</li>
+<li>The PDG review of the electron's $g-2$; LEP and LHC excited-electron searches.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

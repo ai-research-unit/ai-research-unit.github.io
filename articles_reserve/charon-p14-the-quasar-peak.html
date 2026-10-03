@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon: The Quasar Peak — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-the-quasar-peak"><strong>Charon: The Quasar Peak</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article records the one place where the corpus reads a real statistical fact out of the sky, and gives a wrong reason for it. <strong>The corpus notices that the number density of quasars peaks at a redshift near $z \approx 2{,}1$ and explains the peak as a geometric effect: quasars are ordinary galaxies focused into images at the antipode, $L = \pi R$.</strong> The observation is right. It is also, in the corpus's own use, a cautionary tale: the fact that the peak exists is used to <em>calibrate</em> the corpus's deceleration parameter, so a correct datum becomes a fitted input.</p>
+<p><strong>The claim, verbatim.</strong> Esp 100: <em>"Les quasars sont beaucoup moins nombreux près de nous ($Z < 1$) qu'à très grande distance. En fait, la statistique obtenue par Osmer montre que la densité des quasars passe par un maximum au voisinage de $Z = 2{,}1$."</em> And the inference: <em>"Ces résultats encouragent à penser que les quasars sont bien des images galactiques focalisées."</em> Esp 099 gives the mechanism: <em>"chaque galaxie devrait avoir une « image » à distance $L = \pi R$, où tout le rayonnement électromagnétique issu de la galaxie originale viendrait converger."</em></p>
+<p><strong>The verdict is [MIX] — the right observation with the wrong explanation.</strong> The peak is confirmed; modern large surveys put the comoving quasar density maximum at $z \approx 2{,}0$–$2{,}5$. The explanation is not: quasars are accreting supermassive black holes, and they are <em>found in</em> galaxies, not formed as images of them.</p>
+<p><strong>A note on sources.</strong> The claim is inventory §7.6, sourced to Esp Annexe 2 (scans 099–101) and Osmer's Cerro Tololo statistics. The related articles are P13 (the same annexe and the same $L = \pi R$ geometry), P15 ($K = +1$, which the corpus claims the peak confirms) and P20 (the fitted-versus-predicted pattern, of which this is an instance).</p>
+<p><strong>Conventions.</strong> $z$ is redshift; $l$ the distance; $R(\tau)$ the scale factor; $L = \pi R$ the corpus's maximum distance; $q_a$ the deceleration parameter, $0{,}28$ in the corpus; $\Delta V$ the volume element between $l$ and $l + \Delta l$. "Quasar" and "AGN" are used interchangeably.</p>
+<h2 id="part-1-the-observation-the-corpus-made-and-it-was-real">Part 1 — The observation the corpus made, and it was real</h2>
+<p><strong>Osmer's statistic.</strong> Patrick Osmer's Cerro Tololo survey, running from 1973 and reported as the corpus was going to press in March 1982, found quasar surface density rising with distance and turning over: few quasars nearby ($z < 1$), a maximum near $z = 2{,}1$. <strong>This was a genuine and non-obvious result</strong>, and the corpus's decision to engage with it — rather than ignore the data — is to its credit. It is, with M. Schmidt's later work, one of the founding facts of quasar cosmology.</p>
+<p><strong>And it survives.</strong> The modern luminosity function and comoving number density, built from SDSS (&gt;10⁶ quasar spectra) and 2dF, confirm a peak in the <em>number density of optically selected quasars</em> at $z \approx 2{,}0$–$2{,}5$, with a decline by roughly an order of magnitude towards $z = 0$ and a further drop beyond $z \approx 3$. <strong>So the corpus's headline statement — the density peaks at a few, not at zero and not at the maximum distance — is correct, and it was correct in 1982.</strong></p>
+<p><strong>The corpus also reasoned correctly about why a geometric distribution must peak.</strong> Esp 100 computes the proper volume between $l$ and $l + \Delta l$ in a closed spherical universe,</p>
+<p>$$\Delta V \propto R^{2}\Delta l\left(1 - \cos\frac{2l}{R}\right),$$</p>
+<p>which vanishes at $l = 0$ and at $l = \pi R$ and is maximum at $l = \pi R/2$. <strong>If quasar images were laid down uniformly through a closed universe, their number per shell would necessarily peak in the middle.</strong> That reasoning is sound, and it is the one geometric ingredient the corpus got right.</p>
+<h2 id="part-2-why-the-explanation-fails">Part 2 — Why the explanation fails</h2>
+<p><strong>A quasar is not an image of a galaxy; it is a black hole inside one.</strong> The decisive evidence accumulated from the late 1970s onwards: broad permitted emission lines requiring gas at $10^{4}$ K moving at thousands of km s$^{-1}$ in a small volume; the extreme and rapid variability (magnitudes changing in days) requiring a source of light-days in size; the power-law continuum running from radio to X-rays; relativistic jets and superluminal motion; and, from the 1980s and 1990s, direct imaging of quasar <em>host galaxies</em> around the quasars. Reverberation mapping then measured the broad-line region radius and the black-hole mass, and the $M$–$\sigma$ relation tied the black hole to its host's bulge. <strong>Quasars are compact engines, and they are in galaxies — two facts that a "focused image" reading gets wrong simultaneously.</strong></p>
+<p><strong>A focused image would look like the source galaxy, and it does not.</strong> The corpus itself lists the expected signatures (Esp 100): low matter density, low temperature, rapid variation, and a spectrum indicating a small object. The first two are wrong for quasars — the emission comes from gas at $10^{4}$–$10^{5}$ K, with X-ray emission from the innermost accretion flow. The third is right about the rapid variation but for the wrong reason: a focused image <em>preserves the source's time structure</em> (rescaling it by $1+z$), while a quasar's variation comes from its own accretion physics and is far faster than starlight. <strong>And the spectrum is the giveaway: an image of a galaxy would show stellar absorption lines; quasars show broad emission lines and a power-law continuum.</strong></p>
+<p><strong>The strong-lensing relative is real but is not this.</strong> Gravitational lensing does "focus" light, and its modern forms are strong lensing, arcs and Einstein rings — real effects, observed in hundreds of systems. <strong>But lensing by a foreground mass produces <em>multiple</em> images, arcs or a ring, distributed around the lens, with the lens itself visible.</strong> The corpus's scheme has one image, at the antipode, of <em>every</em> galaxy, with no lensing mass identified. Observation finds the former and not the latter.</p>
+<p><strong>And the corpus's own mechanism has a consistency problem.</strong> Esp 099 admits that the image would be depleted by <em>"une perte appréciable d'énergie électromagnétique, due aux interactions des photons avec la matière (poussière cosmique)"</em> over the path $L = \pi R$, and then requires <em>"un groupe dense d'étoiles, ou encore une étoile très dense"</em> at the image position to do the focusing. <strong>The scheme therefore predicts that quasars come in pairs with a dense lens object, at the antipodal distance of a visible galaxy.</strong> Neither prediction is observed.</p>
+<h2 id="part-3-how-a-correct-observation-became-a-fitted-input">Part 3 — How a correct observation became a fitted input</h2>
+<p>This is the article's structural point, and it explains the [MIX] tag better than the physics does.</p>
+<p><strong>The corpus does not stop at noticing the peak; it uses it to fix $q_a$.</strong> Esp 101 sets $l = \pi R/2$ (where the geometric volume is maximum) and requires the peak to sit at the observed $Z = 2{,}1$; inverting the model's own equations gives</p>
+<p>$$q = \left[\frac{2l}{R}\cdot\frac{Z+1}{Z(Z+2)}\right]^{2} - 1
+\quad\Longrightarrow\quad q_a = 0{,}28 .$$</p>
+<p><strong>And then all the corpus's cosmological curves are computed with $q_a = 0{,}28$</strong> — Esp 073 says so explicitly: <em>"Nous calculerons donc toutes les valeurs numériques de notre modèle cosmologique en adoptant la valeur $q_a = 0{,}28$."</em></p>
+<p><strong>So the peak enters the model as a calibration, not as a test.</strong> The logic runs: the peak is at $z = 2{,}1$; the model's geometry says the peak should be at $l = \pi R/2$; therefore $q_a = 0{,}28$; therefore the model with $q_a = 0{,}28$ reproduces a peak at $z = 2{,}1$. <strong>The last step is the one printed as confirmation, and it is the one that carries no information.</strong> This is precisely the sweep–select–report pattern of P20, in its purest form: one free parameter fitted to one datum, then the fit presented as agreement.</p>
+<p><strong>And the corpus claims confirmations it cannot have.</strong> Esp 101 lists three gains: that the universe is spherical ($K = +1$), that $q_a$ is computed "de manière précise", and that the peak confirms the universal cosmological principle. <strong>The first is an artefact of the assumption</strong> (the peak's position is <em>derived from</em> the closed geometry, so it cannot confirm it), and the third inherits P12's failure. The claim that $q_a$ is computed "precisely" from Osmer's 1982 sample — a statistic built on a modest number of objects by modern standards — is the over-reading of a small-sample result.</p>
+<p><strong>And the modern $q_0$ is not 0.28.</strong> The measured deceleration parameter, in the $\Lambda$CDM that fits the CMB, supernovae and BAO, is <strong>negative</strong>: the expansion accelerates, $q_{0} \approx -0{,}55$. The corpus's $0{,}28$ belongs to a decelerating closed universe and is excluded by the same 1998 supernova result that gives the vacuum its positive density (P10). So even the one number the corpus extracted from Osmer's statistic is wrong for today's data — <strong>though that is P10's and P15's failure, not the peak's.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus reads Osmer's quasar statistics as showing a number-density peak near $z = 2{,}1$, and explains it by making quasars focused images of galaxies at the antipode $L = \pi R$.</strong> The observation is [MIX]'s right half: the comoving quasar density really does peak at $z \approx 2{,}0$–$2{,}5$, confirmed by SDSS and 2dF, and the corpus's geometric reasoning about a closed universe's shell volume is sound. The explanation is the wrong half: quasars are accreting supermassive black holes <em>inside</em> galaxies, with broad emission lines, power-law continua, X-ray emission, extreme variability and measured black-hole masses; a focused image would show a galaxy's stellar spectrum and the source's time structure. Strong lensing is the real relative of "focusing", and it produces multiple images, arcs and rings. <strong>The article's structural finding: the corpus used the peak to calibrate $q_a = 0{,}28$, then presented the model's reproduction of $z = 2{,}1$ as a confirmation — a correct datum absorbed as a fitted input (P20).</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z$</td>
+<td>redshift; the observed quasar-density peak is at $z \approx 2{,}1$</td>
+</tr>
+<tr>
+<td>$l$</td>
+<td>distance; $L = \pi R$ is the corpus's maximum</td>
+</tr>
+<tr>
+<td>$\Delta V$</td>
+<td>shell volume between $l$ and $l + \Delta l$</td>
+</tr>
+<tr>
+<td>$q_a$, $q_{0}$</td>
+<td>corpus's deceleration parameter $0{,}28$; measured $q_{0} \approx -0{,}55$</td>
+</tr>
+<tr>
+<td>$R(\tau)$</td>
+<td>cosmic scale factor</td>
+</tr>
+<tr>
+<td>[MIX]</td>
+<td>companion tag: right observation, wrong explanation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The companion inventory, <code>CHARON_IDEAS_AND_CLAIMS.md</code>, §7.6: <strong>this article is the article-form of that entry.</strong></li>
+<li><code>Esp/099_improved.md</code>, <code>Esp/100_improved.md</code>, <code>Esp/101_improved.md</code> (Annexe 2 in full: the focused-image mechanism, Osmer's statistic, the $\Delta V$ computation, the $q_a = 0{,}28$ derivation), <code>Esp/073_improved.md</code> (the adoption of $q_a = 0{,}28$ for all the numerical tables).</li>
+<li>P13 for the same annexe's redshift ceiling, P15 for $K = +1$, P12 for Axiom 6, P20 for the fitted-versus-predicted pattern.</li>
+<li>S59 for the chains; S60 for the tier verdict.</li>
+<li>Osmer, <em>Scientific American</em>, February 1982, and his Cerro Tololo quasar surveys; SDSS and 2dF quasar luminosity functions; quasar host-galaxy imaging and reverberation mapping.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

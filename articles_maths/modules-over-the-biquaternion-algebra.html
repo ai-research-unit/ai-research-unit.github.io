@@ -69,13 +69,9 @@ $$</p>
 S:=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\,\tilde U\},
 $$</p>
 <p>of complex dimension two, the <strong>defining module</strong> of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\,\tilde R\}$ is a second minimal left ideal, isomorphic to the first.</p>
-<p>The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_1,\tilde U)$. Multiplication by the idempotent fixes $\tilde\Pi_1$ and kills $\tilde U$, while multiplication by the matrix units exchanges the columns: $\tilde R\tilde\Pi_1=0$, $\tilde U\tilde\Pi_1=\tilde U$, $\tilde R \tilde U=\tilde\Pi_1$ and $\tilde U^2=0$. On the algebra basis the action is</p>
-<p>$$
-\Phi(e_0)=I,\qquad \Phi(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad \Phi(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad \Phi(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},\qquad \Phi(i)=iI,
-$$</p>
-<p>the matrices being those of <em>Biquaternion 2×2 Matrix Element Representation</em>; in particular $\Phi(e_k)=-i\sigma_k$ for the Pauli matrices $\sigma_1,\sigma_2,\sigma_3$. The assignment $\Phi$ is an algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, so the module $S$ is the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$, written in the idempotent basis. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p>The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_1,\tilde U)$. Multiplication by the idempotent fixes $\tilde\Pi_1$ and kills $\tilde U$, while multiplication by the off-diagonal elements interchanges the two: $\tilde R\tilde\Pi_1=0$, $\tilde U\tilde\Pi_1=\tilde U$, $\tilde R \tilde U=\tilde\Pi_1$ and $\tilde U^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in <em>Biquaternion Ideals and Peirce Decomposition</em>.</p>
 <p><strong>Theorem.</strong> $S$ is a simple left $\mathbb{B}$-module, and up to isomorphism it is the only one.</p>
-<p><em>Proof.</em> In the matrix model $S=\mathbb{C}^2$ with $\mathbb{B}\cong M_2(\mathbb{C})$ acting on column vectors: if $s\neq0$ then the matrix units send $s$ to a basis of $\mathbb{C}^2$, so $\mathbb{B}s=\mathbb{C}^2$ and $S$ has no nonzero proper submodule. For uniqueness, $\mathbb{B}$ is a simple artinian ring with a single isotypic component, and a full matrix algebra has exactly one simple module, its column space; see <em>Simple and Semisimple Modules</em> and <em>Representations of Algebras</em>.</p>
+<p><em>Proof.</em> For $s\neq0$ the left ideal $\mathbb{B}s$ is nonzero, and $\mathbb{B}$ being simple artinian it is all of $S$; so $S$ has no nonzero proper submodule. For uniqueness, $\mathbb{B}$ is a simple artinian ring with a single isotypic component, and such a ring has exactly one simple module up to isomorphism; see <em>Simple and Semisimple Modules</em> and <em>Representations of Algebras</em>.</p>
 <h2 id="the-category-of-left-modules">The Category of Left Modules</h2>
 <p>The classification of modules over $\mathbb{B}$ is complete and has no exceptional cases.</p>
 <p><strong>Theorem.</strong> Let $M$ be a left $\mathbb{B}$-module. Then $M$ is a direct sum of copies of $S$,</p>
@@ -87,12 +83,12 @@ $$</p>
 {}_\mathbb{B}\mathbb{B}\cong S\oplus S,
 $$</p>
 <p>the two summands being the two columns $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$.</p>
-<p><em>Proof.</em> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and the simple modules are the columns of the matrix algebra, of which there is one isomorphism class. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_0$.</p>
+<p><em>Proof.</em> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and there is a single simple module up to isomorphism. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_0$.</p>
 <p>For a finite-dimensional $\mathbb{B}$-module the invariant $k$ is recovered from the dimension: since $\dim_\mathbb{C}S=2$,</p>
 <p>$$
 \dim_\mathbb{C}S^{\oplus k}=2k,
 $$</p>
-<p>so a finite-dimensional module is $\mathbb{C}^{2k}$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts block-diagonally, as $k$ copies of the defining two-dimensional action. The module category of $\mathbb{B}$ is thus the category of complex vector spaces with a fixed identification $\mathbb{B}\cong M_2(\mathbb{C})$; what the biquaternion structure adds over the bare complex field is exactly that identification, and nothing else.</p>
+<p>so a finite-dimensional module is a direct sum of $k$ copies of $S$. The module category of $\mathbb{B}$ is thus the category of finite-dimensional complex vector spaces carrying that action; what the biquaternion structure adds over the bare complex field is exactly the action through $S$, and nothing else.</p>
 <p><strong>A caution on tensor products.</strong> For a non-commutative algebra the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module: the two actions compete on the shared algebra, and only a diagonal action survives. The tensor-product ring structure therefore belongs to the group-theoretic side, where the representations are those of the group of units; the module classification above uses direct sums only.</p>
 <h2 id="projectivity-and-the-parity-of-freeness">Projectivity and the Parity of Freeness</h2>
 <p>Over a field projectivity and freeness coincide, and the same holds over the quaternion division algebra. Over the matrix algebra they part, and the divergence is the whole of the departure of $\mathbb{B}$ from a field.</p>
@@ -116,11 +112,8 @@ $$</p>
 \operatorname{End}_\mathbb{C}(S)=\mathbb{B},\qquad \{b\in\mathbb{B}: bs=sb\text{ for all }s\in S\}=\mathbb{C}.
 $$</p>
 <p>The module $S$ is consequently a bimodule over the pair $(\mathbb{B},\mathbb{C})$. The left action is the algebra action, the right action is multiplication by the central scalars, and the two commute because $\mathbb{C}$ is the centre of $\mathbb{B}$; this is the structure denoted ${}_\mathbb{B}S_\mathbb{C}$. The left and right actions are genuinely different data — the left action is the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, while the right action is scalar multiplication and has kernel only at $0$ — and it is their compatibility, not either alone, that makes $S$ the standard bimodule of the Morita theory.</p>
-<p>The dual is not a new module. Let $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carry the contragredient action, a right $\mathbb{B}$-module and hence a left $\mathbb{B}^{\mathrm{op}}$-module; the anti-automorphism ${}^{\natural}$ of quaternion conjugation identifies $\mathbb{B}^{\mathrm{op}}$ with $\mathbb{B}$, and under it $S^*$ is simple of complex dimension two and therefore isomorphic to $S$. In the matrix model the identification is the adjugate. With $\varepsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ one has, for every $\tilde Q\in\mathbb{B}$,</p>
-<p>$$
-\Phi\bigl(\tilde{Q}^{\natural}\bigr)=\varepsilon\,\Phi(\tilde Q)^{\mathrm T}\,\varepsilon^{-1},
-$$</p>
-<p>so quaternion conjugation on $\mathbb{B}$ is transposition in the basis selected by $\varepsilon$: the adjugate of a matrix is its transpose conjugated by $\varepsilon$, and the row space of the matrix model is the dual of its column space, again the module $S$.</p>
+<p><strong>The opposite algebra.</strong> The <strong>opposite algebra</strong> $A^{\mathrm{op}}$ of an algebra $A$ has the same additive group and the reversed product, $a^{\mathrm{op}}\cdot b^{\mathrm{op}}=(ba)^{\mathrm{op}}$; the construction in general is <em>Opposite Algebras and Anti-Isomorphisms</em>. For $\mathbb{B}$ the quaternion conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, hence an isomorphism $\mathbb{B}^{\mathrm{op}}\to\mathbb{B}$: the opposite of the biquaternion algebra is the algebra itself.</p>
+<p>The dual is not a new module. Let $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carry the contragredient action, a right $\mathbb{B}$-module and hence a left $\mathbb{B}^{\mathrm{op}}$-module; under that identification $S^*$ is simple of complex dimension two and therefore isomorphic to $S$.</p>
 <h2 id="morita-equivalence-with-the-complex-field">Morita Equivalence with the Complex Field</h2>
 <p>The pair $(\mathbb{B},\mathbb{C})$ is a Morita pair, and the equivalence is implemented by $S$.</p>
 <p><strong>Theorem.</strong> The functor</p>
@@ -172,6 +165,10 @@ $$</p>
 <td>biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
+<td>$\mathbb{B}^{\mathrm{op}}$</td>
+<td>the opposite algebra, $\cong\mathbb{B}$ through the anti-automorphism ${}^{\natural}$</td>
+</tr>
+<tr>
 <td>$e_0,e_1,e_2,e_3$</td>
 <td>quaternion basis, $e_0=1$, $e_k^2=-e_0$</td>
 </tr>
@@ -185,7 +182,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde R,\tilde U$</td>
-<td>matrix units $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$</td>
+<td>the two off-diagonal elements $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$</td>
 </tr>
 <tr>
 <td>$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde U\}$</td>
@@ -198,10 +195,6 @@ $$</p>
 <tr>
 <td>${}_\mathbb{B}\mathbb{B}\cong S\oplus S$</td>
 <td>left regular module, free of rank one over $\mathbb{B}$</td>
-</tr>
-<tr>
-<td>$\Phi$</td>
-<td>isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI$</td>
 </tr>
 <tr>
 <td>$\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$</td>

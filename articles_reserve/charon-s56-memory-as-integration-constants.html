@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charon — Memory as Integration Constants (S56) — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charon-memory-as-integration-constants-s56">Charon — Memory as Integration Constants (S56)</h1>
+<p><em>Audits inventory §9.1–§9.3. Sources: RC 020 §3.5, RC 036 §I, Esp 042 §2, Esp 098 (annexe). Feeds S55 and S57.</em></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The memory claim is stronger than an analogy and weaker than a mechanism: it rests on a real mathematical property of de Broglie's fusion formalism — a higher-spin state contains all the lower-spin states — so that "adding information without erasing the old" is a statement about a nested family of equations and needs no further assumption. That is the good news, and this article establishes it.</strong> The arithmetic is exact: $16^{8} = 4\,294\,967\,296$, which is the corpus's <em>"4,3 milliards"</em>.</p>
+<p><strong>The bad news is of two kinds, and both are new.</strong> <strong>(1) The corpus prints two internally consistent but mutually inconsistent counting laws for the same field</strong> — one in chapter I (RC 020, followed by Esp 098) and one in chapters II–III (RC 035–036) — <strong>differing by a factor 16 on every state.</strong> At the photon, chapter I gives 16 components and chapters II–III give 256. <strong>(2) The memory has no capacity.</strong> The count is a count of <em>field components</em>; a component of a classical complex field is not a bit, and the corpus never gives an accumulation rate, a capacity, or a retrieval procedure. <strong>So "4,3 billion components" is not "4,3 Gbit", and a reader who quotes it as a memory size has converted a component count into a storage figure the corpus never claims.</strong></p>
+<p><strong>The decomposition this article proposes.</strong> The inventory's §9.2 ("new initial conditions add to old ones instead of replacing them") should be <strong>split</strong>. Its <em>nesting</em> half is <strong>[MATH]</strong> and is de Broglie's: the fusion family is nested, so the state of higher spin contains the lower. Its <em>no-erasure-over-time</em> half is <strong>[SPEC]</strong>: it needs the negentropic imaginary time of §1.4, which is a premise of the model. <strong>Only the first half is needed for the memory to be cumulative, and the corpus has the first half.</strong> What the corpus does not have is the dynamics, and §9.3's "memory of the future" needs the second half and a mechanism on top of it.</p>
+<h2 id="1-what-the-corpus-claims">1. What the corpus claims</h2>
+<p><strong>(1) The memory is the set of integration constants of the field's equations.</strong> Esp 098: <em>"Toutes les informations mémorisées sont enregistrées par le rayonnement électromagnétique enfermé dans la structure leptonique"</em>; the memory is <em>"les conditions complémentaires (constantes d'intégration) du système d'équations aux dérivées partielles qui fournissent une description de l'état de l'espace-temps de spin $n$ ($n=1,2,3,\ldots$)"</em>. And it grows: <em>"L'action, et l'information, s'accroissent sans cesse grâce à l'augmentation de spin des photons du rayonnement électromagnétique leptonique."</em></p>
+<p><strong>(2) The count.</strong> RC 020 §3.5: <em>"Si $2n$ est le spin du champ sigma, le nombre maximum de conditions initiales pour ce champ est $16^{2n}$, avec $n = 1/2,\ 1,\ 2,\ 4,\ 8\ldots$"</em>, and <em>"par exemple, 4,3 milliards de composantes pour ce champ sigma pour $n = 4$"</em>. Esp 098: <em>"Les équations du spin 2 sont au nombre de $16\times16 = 256$, et ainsi de suite."</em></p>
+<p><strong>(3) The nesting, which is what makes the memory cumulative.</strong> RC 036 §I: <em>"Un tel boson est représenté par des équations $\Sigma_{2^{n}}$ ayant $16^{2^{n}}$ composantes, avec la particularité importante que les équations pour la structure $\Sigma_{2^{n}}$ contiennent les équations pour la structure $\Sigma_{2^{n-1}}$ : l'état d'action totale $2^{n}h$ contient les états $2h, 4h, 8h\ldots mh$, jusqu'à $m = 2^{n}$."</em> Esp 098 draws the consequence and labels it: <em>"l'état de spin $n$ contient la superposition de tous les états de spin plus petits que $n$ […]. On remarquera que cette particularité de « superposition » est </em><em>aussi</em><em> une propriété de l'esprit : une nouvelle information n'efface pas les informations anciennes (comme ce serait le cas dans une mémoire d'ordinateur), la nouvelle donnée est simplement ajoutée aux anciennes précédemment mémorisées."</em></p>
+<p><strong>(4) The source, credited by the corpus itself.</strong> Esp 098: <em>"La théorie mathématique du rayonnement dans des états de spin plus élevés que 1 a, en fait, été déjà formulée il y a plus de 30 ans, principalement par Louis de Broglie et Marie-Antoinette Tonnelat."</em></p>
+<p><strong>(5) The negentropic premise.</strong> Esp 042 §2: <em>"Tous les phénomènes dans $(\tilde r,\tilde t)$ évoluent avec une entropie qui n'est jamais croissante, ou encore avec une néguentropie non décroissante"</em>; <em>"Raisonner est, sans aucun doute, un phénomène néguentropique."</em> RC 020 §3.5 reads this into the memory: <em>"une mémoire cumulative puisque les conditions initiales nouvelles ne viennent pas se substituer aux anciennes (évolution néguentropique de l'espace-temps Imaginaire, qui ne laisse pas disparaître les informations mais les « intègre » dans le temps)."</em></p>
+<p><strong>(6) The prevision of the future.</strong> RC 020 §3.5: <em>"Le champ sigma n'est pas seulement une mémoire cumulative du passé et du présent : c'est aussi une mémoire prévisionnelle du futur. En effet, la structure néguentropique de l'espace-temps Imaginaire entraîne que les conditions initiales du champ sigma à l'instant $t_{0}$ peuvent générer de l'information nouvelle, sous la forme du comportement logique de la particule : celle-ci est dotée à chaque instant $t$ d'une sorte de « vouloir », qui lui permet d'avoir un comportement pour atteindre une situation future."</em></p>
+<h2 id="2-the-counts-two-laws-printed-and-the-photon-is-the-outlier">2. The counts: two laws, printed, and the photon is the outlier</h2>
+<p><strong>Three printed counts, two functional forms, and no single assignment satisfies all three.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the printed count</th>
+<th>where</th>
+<th>the state it is attached to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$16\times16 = 256$</td>
+<td>RC 035 §4.2</td>
+<td>the <strong>photon</strong> $\Sigma_{2}$, action $2h$, which the same page calls <em>"spin $\hbar$ et pulse $\hbar$"</em> (spin 1)</td>
+</tr>
+<tr>
+<td>$16\times16 = 256$</td>
+<td>Esp 098</td>
+<td><em>"les équations du </em><em>spin 2</em><em>"</em></td>
+</tr>
+<tr>
+<td>$4{,}3$ milliards $= 16^{8}$</td>
+<td>RC 020 §3.5</td>
+<td>the sigma field at $n = 4$, i.e. spin $2n = 8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two forms are:</strong></p>
+<ul>
+<li><strong>Chapter I's law, $16^{s}$</strong>, with $s$ the spin: $16^{2n}$ where spin $= 2n$ gives 16, 256, 65 536, $4{,}29\times10^{9}$, $1{,}84\times10^{19}$ for spins 1, 2, 4, 8, 16.</li>
+<li><strong>Chapters II–III's law, $16^{2s}$</strong>, since the exponent is the action in units of $h$ and the action of a state is twice its spin: $16^{2^{n}}$ for action $2^{n}h$ gives 256, 65 536, $4{,}29\times10^{9}$, $1{,}84\times10^{19}$ for $n = 1,2,3,4$, i.e. for spins 1, 2, 4, 8.</li>
+</ul>
+<p><strong>Check each printed number against each law.</strong> Esp 098's spin-2 count of 256 matches $16^{s}$ ($16^{2}$) ✓ and not $16^{2s}$ ($16^{4} = 65\,536$) ✗. RC 020's $4{,}3$ milliards at spin 8 matches $16^{s}$ ($16^{8}$) ✓ and not $16^{2s}$ ($16^{16} = 1{,}84\times10^{19}$) ✗. <strong>RC 035's photon count of 256 matches $16^{2s}$ ($16^{2}$) ✓ and not $16^{s}$ ($16$) ✗.</strong> So chapter I and Esp 098 agree with each other; RC 035 and RC 036 agree with each other; and the two pairs differ by exactly one factor of 16 at every spin — <strong>the photon, the most elementary object in the family, is the single printed outlier.</strong></p>
+<p><strong>The corpus itself gives the third and authoritative figure for that state, and it is neither.</strong> RC 035 adds: <em>"l'analyse [7] montre qu'il y a seulement 215 composantes tensorielles non nulles, seulement 168 équations indépendantes, pour cet état d'action $2h$."</em> <strong>So for the very state whose formal count is quoted as 256, de Broglie's analysis gives 215 non-zero tensor components and 168 independent equations</strong> — neither of which is a power of 16, and the corpus reports both without reconciling them with its own $16^{2}$. <strong>The honest conclusion is that all four numbers are formal counts of different things (components, equations, non-zero components, independent equations), that the corpus prints them side by side, and that the article should quote the state's count with its provenance attached.</strong> The one thing the article can settle is the arithmetic: $16^{8} = 4\,294\,967\,296$ ✓ and $16\times16 = 256$ ✓, so the <em>printed numbers are correctly evaluated</em>; what is ambiguous is which state each belongs to.</p>
+<h2 id="3-why-cumulative-is-not-an-added-assumption">3. Why "cumulative" is not an added assumption</h2>
+<p><strong>The nesting property does the work that §9.2's "instead of replacing" needs, and it does it without the negentropy.</strong> RC 036 states the property as a fact about the equations: the structure $\Sigma_{2^{n}}$ <em>contains</em> the structures $\Sigma_{2^{n-1}}, \ldots, \Sigma_{2}$. Esp 098 states the same property as a <em>superposition</em> of spin states, and adds the memory gloss with the word <em>"aussi"</em> — <strong>the corpus itself marks the step from mathematics to mind as an analogy, which is the honesty this article records rather than a defect it invents.</strong></p>
+<p><strong>Three things follow, and the article keeps them apart.</strong></p>
+<ul>
+<li><strong>Nesting is [MATH] and is de Broglie's.</strong> The family of fusion states is nested; a specific <em>physical</em> construction of the higher-spin field's equations (the fusion of $4^n$ components, or whatever count the corpus intends) is de Broglie's and Tonnelat's mathematics, published 30 years before <em>L'Esprit</em>.</li>
+<li><strong>"Adding without erasing" follows from nesting alone</strong>, for the <em>family</em>: if the state of higher spin contains the lower, then moving to a higher state cannot remove the lower state's content. <strong>This is a statement about a family of equations, not about a record.</strong> It is a genuine mathematical support and it needs no dynamics.</li>
+<li><strong>"Information is never erased over time" does not follow from nesting.</strong> That is the negentropic claim, and it needs the imaginary sector's thermodynamics (§1.4). <strong>So §9.2's tag line should be split: the nesting half is [MATH]/[EST] (de Broglie's), the no-erasure half is [SPEC] (rests on §1.4).</strong></li>
+</ul>
+<p><strong>And a caution about what nesting is not.</strong> A nested family of equations is not a memory in any sense that carries capacity: nothing in the nesting says how many <em>bits</em> the particle holds, how they are addressed, or how a history is read back. <strong>The corpus's memory is a structural fact about a tower of fields, and the tower's height is indexed by the field's spin — which is also the particle's spin-like degree of freedom. That is a strong constraint in one direction (no memory without higher spin) and an empty one in every other.</strong> Esp 098's reference is to <em>L'Esprit, cet inconnu</em> (1977), chapter 15, <em>"Le matricialisme"</em> — the corpus's own fuller treatment, which the 1983 and 1987 books both cite rather than repeat.</p>
+<h2 id="4-what-is-spec-memory-negentropy-and-the-prevision-of-the-future">4. What is [SPEC]: memory, negentropy, and the prevision of the future</h2>
+<p><strong>§9.1's physical claim, "this realises a memory", is [SPEC], and the article's objection is not that it is wrong but that it is unquantified in the two places where it would have to be quantified.</strong></p>
+<ul>
+<li><strong>Capacity.</strong> The count is components, not bits. A component of the corpus's complex field is a continuous quantity, so the "4,3 billion components" at spin 8 is not a storage figure at all. <strong>Any article that writes "4,3 Gbit" is writing something the corpus does not say and could not support</strong>: components are not bits, and the corpus gives no quantisation of them at the level where the memory is defined.</li>
+<li><strong>Dynamics.</strong> The corpus gives the <em>ladder</em> (spin $1, 2, 4, 8\dots$) and the <em>nesting</em>, but no law by which a physical history moves a particle up the ladder, and no rate. <strong>So "memory grows" is a direction without a rate, and S55's individual-behaviour claim inherits exactly this gap.</strong></li>
+</ul>
+<p><strong>§9.2's negentropy is [SPEC] on the inventory's own reading of §1.4</strong> — negentropy is a real concept for local order in an open system, not for an extra spacetime with its own thermodynamics. <strong>The article adds one internal observation: the memory claim does not need it, since nesting already gives the "add, don't replace" property.</strong> Keeping the negentropy in the memory argument therefore imports a premise the argument can do without — a presentational improvement the register should record, because it removes one [SPEC] from the memory's support and leaves the mathematics standing.</p>
+<p><strong>§9.3's "memory of the future" is [SPEC]/[PHIL], and the argument has a gap it can be charged with.</strong> <em>"Les conditions initiales du champ sigma à l'instant $t_{0}$ peuvent générer de l'information nouvelle, sous la forme du comportement logique de la particule."</em> <strong>Generating new information from initial conditions is what any deterministic system does; it is extrapolation, not prevision.</strong> For the field to be a <em>memory of the future</em>, the generated behaviour would have to anticipate a situation — and the corpus's own mechanism, the field's coupling to the particle's psi wave (S54), is fed by the <em>Forms of the Real</em> at times $t \le t_0$, i.e. by the past. <strong>So the "prevision" sentence needs something the corpus does not supply: a channel from future boundary conditions, or a negative-time propagation of the imaginary sector. The imaginary time reversal (§1.5) is the only candidate, and the corpus does not work it out.</strong></p>
+<p><strong>One modern comparison, offered because it cuts against the corpus and the article should say so.</strong> The <em>no-hiding theorem</em> (Braunstein–Pati 2007) states that information lost from a subsystem is never destroyed but always redistributed into correlations with the rest of the system. <strong>That is the opposite of a cumulative local memory: it says information does not stay where it was stored, it moves into correlations.</strong> The corpus's memory is a <em>local</em> record kept in a particle's own field; the theorem is about erasure from a subsystem. <strong>The two are not in direct conflict</strong> — the corpus's field is not a subsystem from which the information is erased — <strong>but the comparison shows what a modern "information is never lost" claim looks like when it is a theorem with a stated content: it is a statement about correlations, not a capacity, which is exactly the shape the corpus's memory lacks.</strong></p>
+<h2 id="5-verdict-rule-r6-on-the-memory">5. Verdict: rule R6 on the memory</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>content</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§9.1 — the count $16^{2n}$</td>
+<td>RC 020; $16^{8} = 4{,}29\times10^{9}$ ✓, the printed <em>"4,3 milliards"</em></td>
+<td><strong>[MATH]</strong> — arithmetic correct</td>
+</tr>
+<tr>
+<td>§9.1 — which state each count belongs to</td>
+<td>256 for the photon (RC 035) vs 256 for spin 2 (Esp 098) vs $16^{8}$ for spin 8 (RC 020); two laws differing by a factor 16; and 215/168 as the corpus's own authority for the photon state</td>
+<td><strong>internal inconsistency, printed</strong></td>
+</tr>
+<tr>
+<td>§9.1 — "this realises a memory"</td>
+<td>integration constants of the higher-spin field</td>
+<td><strong>[SPEC]</strong> — unquantified in capacity and dynamics</td>
+</tr>
+<tr>
+<td>§9.2 — nesting ("add, don't replace")</td>
+<td>RC 036's containment, Esp 098's superposition</td>
+<td><strong>[MATH]/[EST]</strong> — de Broglie's; <strong>needs no negentropy</strong></td>
+</tr>
+<tr>
+<td>§9.2 — "information is never erased"</td>
+<td>the negentropic imaginary sector</td>
+<td><strong>[SPEC]</strong> — rests on §1.4; <strong>not needed for the nesting half</strong></td>
+</tr>
+<tr>
+<td>§9.3 — memory of the future</td>
+<td><em>"générer de l'information nouvelle"</em></td>
+<td><strong>[SPEC]/[PHIL]</strong> — extrapolation, not anticipation; the channel is missing</td>
+</tr>
+<tr>
+<td>the stored medium</td>
+<td>the trapped electromagnetic radiation of the leptonic structure</td>
+<td><strong>[SPEC]</strong> — and it is the same field whose energy share S53 identified with $\psi^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Per rule R6: coherence passes (the nesting is real, the arithmetic is right, the corpus labels its own analogy); reproducibility fails (no rate, no capacity, no retrieval); correspondence is empty — a memory that is never read out makes no prediction, and the model's only observable claim in this neighbourhood is S55's, which is itself unquantified.</strong> </p>
+<p><strong>The article's one-line verdict: Charon's memory is a theorem about a nested family of field equations, read as a memory of the world — and the theorem is de Broglie's, the reading is the corpus's, and the corpus says so.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus's memory is a real theorem read as a mind.</strong> Esp 098 states it: every memorised datum is stored as the <em>complementary conditions</em> — the integration constants — of the partial-differential system describing the state of spin $n$, and the higher-spin state <em>contains</em> the lower ones, so new data are added and old data are not erased. <strong>The nesting is de Broglie's and Tonnelat's mathematics, the corpus credits them, and it marks the step to "a property of the mind" as an analogy with the word <em>aussi</em>.</strong> This is the strongest thing that can be said for the memory claim, and it is stronger than the companion's [SPEC] tag suggests.</p>
+<p><strong>Its arithmetic is correct and its bookkeeping is not.</strong> $16^{8} = 4\,294\,967\,296$ is the printed <em>"4,3 milliards"</em> — verified — and $16\times16 = 256$ is correct arithmetic. <strong>But the corpus attaches 256 both to the photon (RC 035, action $2h$, spin 1) and to spin 2 (Esp 098), and these cannot both hold: chapter I's law is $16^{s}$ in the spin and chapters II–III's is $16^{2s}$, differing by a factor 16 at every state.</strong> For the photon's own count the corpus also reports de Broglie's figures — 215 non-zero tensor components, 168 independent equations — which match neither power. <strong>All four numbers are formal counts of different objects, printed side by side without reconciliation.</strong></p>
+<p><strong>And the memory has no capacity and no dynamics.</strong> The count is components of a continuous field, not bits; there is no accumulation rate and no retrieval. <strong>So "4,3 billion components" must never be quoted as a storage figure, and "memory grows with spin" is a direction without a magnitude</strong> — the same gap S55 inherits for its individual behaviour.</p>
+<p><strong>Verdict.</strong> §9.1's count <strong>[MATH]</strong>; its bookkeeping <strong>internally inconsistent</strong>; "this realises a memory" <strong>[SPEC]</strong> and unquantified. §9.2 should be <strong>split</strong>: the nesting half <strong>[MATH]/[EST]</strong> (de Broglie's, and sufficient for "add, don't replace" without the negentropy), the no-erasure half <strong>[SPEC]</strong> on §1.4. §9.3 <strong>[SPEC]/[PHIL]</strong>, since generating information from initial conditions is extrapolation, not prevision. Per R6: coherence passes, reproducibility fails, correspondence empty.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{2^{n}}$</td>
+<td>the sigma boson of action $2^{n}h$; its structure contains all lower ones (RC 036)</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>RC 020's ladder index; the corpus writes spin $= 2n$, $n = 1/2, 1, 2, 4, 8$</td>
+</tr>
+<tr>
+<td>$16^{2n}$</td>
+<td>RC 020's count of the sigma field's initial conditions</td>
+</tr>
+<tr>
+<td>$16^{2^{n}}$</td>
+<td>RC 036's count of $\Sigma_{2^{n}}$'s components</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>the spin; action $= 2s\hbar$, so $16^{s}$ (chapter I) and $16^{2s}$ (chapters II–III) are the two laws</td>
+</tr>
+<tr>
+<td>integration constants</td>
+<td>the corpus's name for what is stored: the complementary conditions of the field's equations</td>
+</tr>
+<tr>
+<td>negentropy</td>
+<td>the imaginary sector's non-decreasing order (Esp 042 §2); §1.4's [SPEC] premise</td>
+</tr>
+<tr>
+<td>§9.1, §9.2, §9.3</td>
+<td>the inventory items: the count, the cumulative memory, the memory of the future</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>S55</strong> — collective and individual behaviour: the claim that consumes the memory, and the gap it inherits.</li>
+<li><strong>S57</strong> — the éon as Knower: the interpretive horizon of the stored record.</li>
+<li><strong>S53</strong> — the same trapped field read for its energy share and the Born rule.</li>
+<li><strong>S54</strong> — the ψ/Σ coupling, the channel the memory is said to be written through.</li>
+<li><strong>S12</strong> — the fusion formalism whose containment property is the memory's mathematical basis.</li>
+<li>Corpus: RC 020 §3.5; RC 035 §4.2–4.3; RC 036 §I; Esp 042 §§2–3; Esp 098 (annexe 1) and the reference to <em>L'Esprit, cet inconnu</em> (1977), ch. 15, "Le matricialisme".</li>
+<li>External: L. de Broglie and M.-A. Tonnelat, the higher-spin fusion-field papers the corpus cites; S. L. Braunstein and A. K. Pati, <em>Phys. Rev. Lett.</em> <strong>98</strong> (2007) 080502 (no-hiding theorem), for what a modern information-conservation theorem actually says.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
