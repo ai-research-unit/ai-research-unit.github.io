@@ -7,7 +7,7 @@ The involution of a Banach algebra fixes a real linear subspace, the **self-adjo
 
 The article assumes the involutive Banach algebra, the $\mathrm{C}^*$-identity, the isometry of the involution and the contractivity of the $*$-homomorphisms from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the reality of the spectrum and the norm formula for a self-adjoint element from *The Spectrum of a Self-Adjoint Element*; the self-adjoint elements, the positive cone, the order, the square roots and the symmetrised product from *Self-Adjoint Elements and the Positive Cone* and *Involutive Linear Algebras*; the states and the positivity they detect from *States and Positive Functionals on an Involutive Algebra*; the Jordan and Lie structures from *Jordan Algebras* and *Lie Algebras*; and the spectrum and the functional calculus from *Topological Algebras and Banach Algebras* and *The Functional Calculus of a Self-Adjoint Element*.
 
-Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with involution $a \mapsto a^*$; when a norm statement is made the involution is assumed **isometric**, $\lVert a^*\rVert = \lVert a\rVert$, which holds in every $\mathrm{C}^*$-algebra; $A^+ = \{a : a^* = a\}$ is the real subspace of **self-adjoint** (Hermitian) elements and $A^- = \{a : a^* = -a\}$ the **skew** elements; the **positive cone** is $P = \{b^*b : b \in A\}$, with $a \geq 0$ meaning $a \in P$; the **symmetrised product** and the **commutator** are $h\circ k = \tfrac12(hk+kh)$ and $[h,k] = hk - kh$; and an element is **unitary** when $u^*u = uu^* = 1$, **normal** when $a^*a = aa^*$, and **positive** when $a \in P$.
+Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with involution $a \mapsto a^*$; when a norm statement is made the involution is assumed **isometric**, $\lVert a^*\rVert = \lVert a\rVert$, which holds in every $\mathrm{C}^*$-algebra; $A^+ = \{a : a^* = a\}$ is the real subspace of **self-adjoint** (Hermitian) elements and $A^- = \{a : a^* = -a\}$ the **skew** elements; the **positive cone** is $P = \{b^*b : b \in A\}$, with $a \geq 0$ meaning $a \in P$; the **symmetrised product** and the **commutator** are $h\bullet k = \tfrac12(hk+kh)$ and $[h,k] = hk - kh$; and an element is **unitary** when $u^*u = uu^* = 1$, **normal** when $a^*a = aa^*$, and **positive** when $a \in P$.
 
 ## The Self-Adjoint Elements
 
@@ -21,7 +21,7 @@ a direct sum of real vector spaces; the decomposition is unique and $A$ is the c
 
 **Proof.** The fixed set of the real-linear (conjugate-linear) involution is a real vector space; the displayed elements are self-adjoint, they sum to $a$, and a self-adjoint element in $iA^+$ is both self-adjoint and skew, hence zero, giving directness and uniqueness. $\square$
 
-**Proposition (products, squares and commutators).** The product of two self-adjoint elements is self-adjoint exactly when they commute; $h^2$ is positive for every self-adjoint $h$; $A^+$ is closed under the symmetrised product $\circ$, so it is a real **Jordan algebra**, and $A^-$ is closed under the commutator, so it is a real **Lie algebra**. The involution exchanges the two structures: $(h\circ k)^* = h\circ k$ and $[h,k]^* = -[h,k]$ for self-adjoint $h,k$.
+**Proposition (products, squares and commutators).** The product of two self-adjoint elements is self-adjoint exactly when they commute; $h^2$ is positive for every self-adjoint $h$; $A^+$ is closed under the symmetrised product $\bullet$, so it is a real **Jordan algebra**, and $A^-$ is closed under the commutator, so it is a real **Lie algebra**. The involution exchanges the two structures: $(h\bullet k)^* = h\bullet k$ and $[h,k]^* = -[h,k]$ for self-adjoint $h,k$.
 
 **Proof.** $(hk)^* = k^*h^* = kh$, which equals $hk$ exactly when $h,k$ commute; $h^2 = h^*h \in P$; the symmetrised product of two self-adjoint elements is self-adjoint by the same computation with the two terms, and the commutator is skew; the Jordan and Lie identities are the associativity of the product read in the two symmetrisations. $\square$
 
@@ -81,7 +81,7 @@ In an involutive Banach algebra the self-adjoint elements $A^+ = \{a : a^* = a\}
 |---|---|
 | $A^+ = \{a : a^* = a\}$ | Self-adjoint (Hermitian) elements, a real subspace |
 | $A^-$, $A = A^+\oplus iA^+$ | Skew elements and the decomposition |
-| $h\circ k$, $[h,k]$ | Symmetrised product (Jordan) and commutator (Lie) |
+| $h\bullet k$, $[h,k]$ | Symmetrised product (Jordan) and commutator (Lie) |
 | $P = \{b^*b\}$ | The positive cone |
 | $a \leq b$, $b - a \in P$ | The order |
 | $a^{1/2}$, $\lvert a\rvert = (a^*a)^{1/2}$ | Square root and absolute value |

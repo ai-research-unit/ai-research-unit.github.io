@@ -40,7 +40,7 @@ The algebra is **formally real** when its involution is.
 
 **Theorem (the Jordan case).** Let $J$ be a Jordan algebra with a formally real involution $\sigma$, so that $H(J)$ is a Jordan subalgebra. Then $H(J)$ with the restricted product is a formally real Jordan algebra, and the map $h\mapsto h^2$ on $H(J)$ has no nontrivial zero sum; conversely a formally real Jordan algebra $J$ with the identity involution is formally real in this sense.
 
-*Proof.* The self-adjoint part is closed under the Jordan product and the squares $h^2 = h\circ h$ lie in it by the involution property; the two conditions are the same written with the Jordan product. $\square$
+*Proof.* The self-adjoint part is closed under the Jordan product and the squares $h^2 = h\bullet h$ lie in it by the involution property; the two conditions are the same written with the Jordan product. $\square$
 
 ## The Sum of Squares
 

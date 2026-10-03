@@ -47,7 +47,7 @@ $$
 \{x,y\} = xy+yx \in \mathrm{Sym} \ \text{if } x, y \in \mathrm{Skew}, \qquad \{x,y\} \in \mathrm{Skew} \ \text{if } x \in \mathrm{Sym},\ y \in \mathrm{Skew} .
 $$
 
-In particular $\mathrm{Skew}(A,\sigma)$ is closed under the commutator and is a **Lie subalgebra** of $A$ under $[x,y] = xy-yx$, while $\mathrm{Sym}(A,\sigma)$ is closed under the anti-commutator and is a **Jordan subalgebra** under $x\circ y = xy+yx$.
+In particular $\mathrm{Skew}(A,\sigma)$ is closed under the commutator and is a **Lie subalgebra** of $A$ under $[x,y] = xy-yx$, while $\mathrm{Sym}(A,\sigma)$ is closed under the anti-commutator and is a **Jordan subalgebra** under $x\bullet y = xy+yx$.
 
 **Proof.** In each case apply $\sigma$ to the combination. For skew $x, y$: $\sigma(xy-yx) = \sigma(y)\sigma(x)-\sigma(x)\sigma(y) = (-y)(-x)-(-x)(-y) = yx-xy = -(xy-yx)$, so the commutator is skew; and $\sigma(xy+yx) = yx+xy$, so the anti-commutator is symmetric. For symmetric $x$ and skew $y$: $\sigma(xy-yx) = (-y)x-x(-y) = -yx+xy = xy-yx$, symmetric; and $\sigma(xy+yx) = -yx-xy = -(xy+yx)$, skew. The closure statements are the two rows.
 
@@ -79,7 +79,7 @@ $$
 
 ## Summary
 
-For an involution $\sigma$ of a ring $A$ with $2$ invertible, the symmetric and the skew elements are the eigenspaces and $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$; the two sets meet in $\{x : 2x = 0\}$ and the word **skew field** names the set of skew elements and not a division ring. The product of two elements is governed by the commutator and the anti-commutator rather than by the product itself: for two skew elements the commutator is skew and the anti-commutator is symmetric, for a symmetric and a skew element the commutator is symmetric and the anti-commutator is skew, so that $\mathrm{Skew}(A,\sigma)$ is a **Lie subalgebra** under $[x,y] = xy-yx$ and $\mathrm{Sym}(A,\sigma)$ is a **Jordan subalgebra** under $x\circ y = xy+yx$, the two forming the halves of a graded structure. A $\sigma$-invariant trace vanishes on the skew elements and on every product of a symmetric and a skew element, so for the transpose the symmetric and the skew matrices are orthogonal under the trace pairing.
+For an involution $\sigma$ of a ring $A$ with $2$ invertible, the symmetric and the skew elements are the eigenspaces and $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$; the two sets meet in $\{x : 2x = 0\}$ and the word **skew field** names the set of skew elements and not a division ring. The product of two elements is governed by the commutator and the anti-commutator rather than by the product itself: for two skew elements the commutator is skew and the anti-commutator is symmetric, for a symmetric and a skew element the commutator is symmetric and the anti-commutator is skew, so that $\mathrm{Skew}(A,\sigma)$ is a **Lie subalgebra** under $[x,y] = xy-yx$ and $\mathrm{Sym}(A,\sigma)$ is a **Jordan subalgebra** under $x\bullet y = xy+yx$, the two forming the halves of a graded structure. A $\sigma$-invariant trace vanishes on the skew elements and on every product of a symmetric and a skew element, so for the transpose the symmetric and the skew matrices are orthogonal under the trace pairing.
 
 ## Summary of Notation
 
@@ -100,5 +100,5 @@ For an involution $\sigma$ of a ring $A$ with $2$ invertible, the symmetric and 
 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the symmetric and skew elements, their products and the trace conditions.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for the Lie structure of the skew elements and the Jordan structure of the symmetric ones.
-- Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Jordan product $x\circ y = xy+yx$ and the symmetric part of an associative algebra.
+- Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Jordan product $x\bullet y = xy+yx$ and the symmetric part of an associative algebra.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for traces, the trace pairing and the graded structures of an algebra with involution.

@@ -70,7 +70,7 @@ $$
 
 **Example (the identity grade involutions).** For $\alpha = \mathrm{id}$ and $\alpha_M = \mathrm{id}$ the graded action is the unsigned action $\rho_{L_a}$, which is self-adjoint for every $a$; the adjoint action is the same action, and the sign rule is vacuous.
 
-**Example (the transpose involution on a matrix module).** Let $J = H_n(F)$ and let $M$ be a module of matrices with the transpose grade involution; the graded action $\rho^{\alpha}_a(m) = a\circ m^{\mathsf{T}}$ has the adjoint $\rho^{\alpha}_{a^{\mathsf{T}}}$, and it is self-adjoint exactly when $a$ is symmetric.
+**Example (the transpose involution on a matrix module).** Let $J = H_n(F)$ and let $M$ be a module of matrices with the transpose grade involution; the graded action $\rho^{\alpha}_a(m) = a\bullet m^{\mathsf{T}}$ has the adjoint $\rho^{\alpha}_{a^{\mathsf{T}}}$, and it is self-adjoint exactly when $a$ is symmetric.
 
 ## Summary
 

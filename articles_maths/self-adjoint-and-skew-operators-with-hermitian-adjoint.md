@@ -71,13 +71,13 @@ so the skew-adjoint part is closed under the commutator and is a **Lie algebra**
 
 ### The Self-Adjoint Part is a Jordan Algebra
 
-**Theorem (the circle product).** The **circle product** (the anticommutator) $H\circ H' = \tfrac12(HH'+H'H)$ of two self-adjoint operators is self-adjoint,
+**Theorem (the circle product).** The **circle product** (the anticommutator) $H\bullet H' = \tfrac12(HH'+H'H)$ of two self-adjoint operators is self-adjoint,
 
 $$
-H^{\ast} = H,\ H'^{\ast} = H' \ \Longrightarrow \ (H\circ H')^{\ast} = H\circ H' ,
+H^{\ast} = H,\ H'^{\ast} = H' \ \Longrightarrow \ (H\bullet H')^{\ast} = H\bullet H' ,
 $$
 
-and it is commutative and satisfies the Jordan identity, so the self-adjoint part is a **Jordan algebra**. This was checked: $H\circ H'$ landed in $\mathrm{Herm}$ for generic self-adjoint $H,H'$.
+and it is commutative and satisfies the Jordan identity, so the self-adjoint part is a **Jordan algebra**. This was checked: $H\bullet H'$ landed in $\mathrm{Herm}$ for generic self-adjoint $H,H'$.
 
 **Proof.** $(HH'+H'H)^{\ast} = H'^{\ast}H^{\ast}+H^{\ast}H'^{\ast} = H'H+HH'$, the same operator.
 
@@ -146,7 +146,7 @@ The regular representations realize the structure on the algebra itself: $L_a^{\
 | $H(T)=\tfrac12(T+T^{\ast})$, $K(T)=\tfrac12(T-T^{\ast})$ | Self-adjoint and skew-adjoint parts |
 | $\mathrm{End}=\mathrm{Herm}\oplus\mathrm{Skew}$ | The decomposition |
 | $[\mathrm{Herm},\mathrm{Herm}]\subseteq\mathrm{Skew}$, $[\mathrm{Herm},\mathrm{Skew}]\subseteq\mathrm{Herm}$, $[\mathrm{Skew},\mathrm{Skew}]\subseteq\mathrm{Skew}$ | Graded Lie structure |
-| $H\circ H'=\tfrac12(HH'+H'H)$ self-adjoint | Jordan structure |
+| $H\bullet H'=\tfrac12(HH'+H'H)$ self-adjoint | Jordan structure |
 | $L_a^{\ast}=L_{a^{\dagger}}$, $R_a^{\ast}=R_{a^{\dagger}}$ | Regular representations |
 | $\mathrm{ad}_a^{\ast}=\mathrm{ad}_{a^{\dagger}}$ | Inner derivations |
 | $A^{\pm}=\mathrm{span}\{e_A : |A|\equiv0,3\,/\,1,2\pmod4\}$ | Hermitian and skew part of the algebra |

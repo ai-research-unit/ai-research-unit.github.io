@@ -168,13 +168,13 @@ The Clifford reading is the reason the split biquaternion algebra is the natural
 The product of two split biquaternions is defined by extending the quaternion product split-complex-linearly. In developed form,
 
 $$
-\tilde{Q} \circ \tilde{R} = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} Q_\mu R_\nu \, e_\mu e_\nu,
+\tilde{Q} \bullet \tilde{R} = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} Q_\mu R_\nu \, e_\mu e_\nu,
 $$
 
 where the products $e_\mu e_\nu$ are those of the quaternion algebra, extended split-complex-linearly. In scalar-vector notation, this becomes
 
 $$
-\tilde{Q} \circ \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
+\tilde{Q} \bullet \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
 $$
 
 where

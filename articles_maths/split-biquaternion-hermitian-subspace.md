@@ -64,21 +64,21 @@ So the Hermitian subspace is **not** a Lie subalgebra; the bracket of two Hermit
 
 ### It Is a Jordan Algebra
 
-**Proposition.** The symmetrized product $\tilde{Q} \circ \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ closes on $\mathbb{M}_+$,
+**Proposition.** The symmetrized product $\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ closes on $\mathbb{M}_+$,
 
 $$
-\tilde{Q} \circ \tilde{R} = \left(q_0 r_0 - \mathbf{u}\cdot\mathbf{v}\right) e_0 + j\left(q_0 \mathbf{v} + r_0 \mathbf{u}\right) \in \mathbb{M}_+,
+\tilde{Q} \bullet \tilde{R} = \left(q_0 r_0 - \mathbf{u}\cdot\mathbf{v}\right) e_0 + j\left(q_0 \mathbf{v} + r_0 \mathbf{u}\right) \in \mathbb{M}_+,
 $$
 
-and with it $\mathbb{M}_+$ is a **Jordan algebra** (commutative, with $\tilde{Q} \circ (\tilde{Q} \circ \tilde{Q}) = (\tilde{Q} \circ \tilde{Q}) \circ \tilde{Q}$).
+and with it $\mathbb{M}_+$ is a **Jordan algebra** (commutative, with $\tilde{Q} \bullet (\tilde{Q} \bullet \tilde{Q}) = (\tilde{Q} \bullet \tilde{Q}) \bullet \tilde{Q}$).
 
-**Proof.** The symmetrized product of the expansions is as displayed, with real scalar part and purely split-imaginary vector part; commutativity is clear, and the Jordan identity follows from the associativity of the total product and the commutativity of $\circ$.
+**Proof.** The symmetrized product of the expansions is as displayed, with real scalar part and purely split-imaginary vector part; commutativity is clear, and the Jordan identity follows from the associativity of the total product and the commutativity of $\bullet$.
 
 The precedent is the Hermitian subspace of the biquaternion algebra, where the same symmetrized product gives a Jordan algebra; the general theory is the companion article *Jordan Algebras*.
 
 ### The Square and the Higher Powers
 
-Because $\circ$ closes, every power of a Hermitian element is Hermitian. Explicitly,
+Because $\bullet$ closes, every power of a Hermitian element is Hermitian. Explicitly,
 
 $$
 \tilde{Q}^2 = \left(q_0^2 - (\mathbf{u}, \mathbf{u})\right) e_0 + 2 j q_0 \mathbf{u}, \qquad \tilde{Q} = q_0 e_0 + j \mathbf{u},
@@ -215,7 +215,7 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $N(\tilde{Q}) = q_0^2 + |\mathbf{u}|^2$ | Norm on $\mathbb{M}_+$, signature $(4,0)$ |
 | $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(1,3)$ on $\mathbb{M}_+$ |
-| $\tilde{Q} \circ \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ | Symmetrized (Jordan) product |
+| $\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ | Symmetrized (Jordan) product |
 | $[\tilde{Q}, \tilde{R}] = 2\,\mathbf{u}\times\mathbf{v}$ | Commutator, an element of $\mathbb{M}_-$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{M}_+$ |
 | $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$ | Isotropic cone of the Hermitian form |

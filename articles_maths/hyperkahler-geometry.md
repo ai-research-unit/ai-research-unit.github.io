@@ -86,7 +86,7 @@ where each $\mu_i:M\to\mathrm{K}^*$ is a moment map for the action on the symple
 **Theorem (hyperkähler quotient).** Let $K$ act on a hyperkähler manifold $M$ with a hyperkähler moment map $\mu$, and let the action be free and proper on the common zero locus $\mu^{-1}(0)$. Then the quotient
 
 $$
-M \sslash\!\!/ K = \mu^{-1}(0)/K
+M \mathbin{/\!\!/} K = \mu^{-1}(0)/K
 $$
 
 is a smooth manifold carrying an induced hyperkähler structure, of dimension $\dim M - 4\dim K$. It is the **hyperkähler quotient**.
@@ -148,7 +148,7 @@ The examples are the flat quaternionic spaces and their torus quotients, the com
 | $\Omega_{\mathbb{I}}=a\Omega_1+b\Omega_2+c\Omega_3$ | Corresponding Kähler form |
 | $Z(M)$ | Twistor space of *Quaternionic Geometry*; its fibre at $x$ is the sphere of complex structures |
 | $\mu=(\mu_1,\mu_2,\mu_3)$ | Hyperkähler moment map, $\mu_i$ a moment map for $\Omega_i$ |
-| $M \sslash\!\!/ K = \mu^{-1}(0)/K$ | Hyperkähler quotient, $\dim = \dim M - 4\dim K$ |
+| $M \mathbin{/\!\!/} K = \mu^{-1}(0)/K$ | Hyperkähler quotient, $\dim = \dim M - 4\dim K$ |
 | $\nabla$, $\mathrm{Ric}$ | Levi-Civita connection and Ricci tensor (from *Riemannian Geometry*); $\mathrm{Ric}=0$ here |
 | ALE | Asymptotically locally Euclidean; the hyperkähler resolution of $\mathbb{C}^2/\Gamma$ |
 | Bogomolov decomposition | $\tilde M = T\times\prod Y_i\times\prod Z_j$ for a compact Kähler $M$ with $c_1=0$ |

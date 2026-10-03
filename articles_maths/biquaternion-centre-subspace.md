@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ carries four linear involutions, and each of them splits $\mathbb{B}$ into a fixed space and an anti-fixed space. Six of the eight spaces so obtained are distinct and are called the **six distinguished subspaces** of $\mathbb{B}$: four of dimension four, together with the two-dimensional centre and the six-dimensional vector subspace. This article treats the smallest of them, the **centre subspace** $\mathbb{C}_{\mathbb{B}}$, on its own: its definition, its basis, its algebra and module structure, the restriction of the biquaternion norm to it, the action of the four involutions upon it, and its place among the particular cases of the algebra. The other five are treated in the companion articles *Biquaternion Vector Subspace*, *Biquaternion Quaternion Subspace*, *Biquaternion Anti-Quaternion Subspace*, *Biquaternion Hermitian Subspace* and *Biquaternion Anti-Hermitian Subspace*; their relations with one another are collected in *Biquaternion Relations Between Subspaces*, and the involutions themselves in *Biquaternion Involution Lattice*.
+The biquaternion algebra $\mathbb{B}$ carries four linear involutions, and each of them splits $\mathbb{B}$ into a fixed space and an anti-fixed space. Six of the eight spaces so obtained are distinct and are called the **six distinguished subspaces** of $\mathbb{B}$: four of dimension four, together with the two-dimensional centre and the six-dimensional vector subspace. This article treats the smallest of them, the **centre subspace** $\mathbb{C}_{\mathbb{B}}$, on its own: its definition, its basis, its algebra and module structure, the restriction of the algebraic square $N$ to it, the action of the four involutions upon it, and its place among the particular cases of the algebra. The other five are treated in the companion articles *Biquaternion Vector Subspace*, *Biquaternion Quaternion Subspace*, *Biquaternion Anti-Quaternion Subspace*, *Biquaternion Hermitian Subspace* and *Biquaternion Anti-Hermitian Subspace*; their relations with one another are collected in *Biquaternion Relations Between Subspaces*, and the involutions themselves in *Biquaternion Involution Lattice*.
 
 Nothing below is a physical statement. The elements are written $\tilde{Q}, \tilde{R}, \tilde{P}, \dots$, their complex coefficients $Q_0, Q_1, Q_2, Q_3$, and the real and imaginary parts of a coefficient $Q_\mu = q_\mu + i q'_\mu$; no other coordinates are used.
 
@@ -85,21 +85,15 @@ The products within the subspace and the products with the vector units that gen
 
 for $k = 1, 2, 3$. The table is the statement that $\mathbb{C}_{\mathbb{B}}$ multiplies into every subspace and is multiplied into by every subspace, with no sign change: multiplication by a central element is a scalar extension, and the four subspaces $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ and the two sectors are all modules over $\mathbb{C}_{\mathbb{B}}$.
 
-## The Biquaternion Norm
+## Units and Zero Divisors
 
-### Restriction
-
-**Proposition.** On the centre subspace the biquaternion norm is the square of the coefficient,
+**Proposition.** On the centre subspace the algebraic operation $N$ is the square of the coefficient,
 
 $$
 N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 , \qquad \tilde{Q} = Q_0 e_0 .
 $$
 
 **Proof.** $\tilde{Q}^{\natural} = \tilde{Q}$ on the subspace, so $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^2 = Q_0^2 e_0$, read as the scalar $Q_0^2$.
-
-One feature is worth isolating, because it differs from the other five subspaces: $N$ takes **complex** values on $\mathbb{C}_{\mathbb{B}}$: it is real on $\mathbb{R}e_0$ and on $i\mathbb{R}e_0$ separately, but $Q_0^2$ is not real for a general complex $Q_0$. The signature of the restriction is read in *The Bilinear Form on the Biquaternion Algebra*. The centre subspace is thus one of the two subspaces on which the biquaternion norm is not real-valued, the other being the vector subspace.
-
-### Units and Zero Divisors
 
 **Theorem.** For $\tilde{Q} = Q_0 e_0$, the following are equivalent:
 
@@ -113,9 +107,9 @@ The inverse is $\tilde{Q}^{-1} = Q_0^{-1} e_0 = \dfrac{\bar{Q_0}}{|Q_0|^2} e_0$.
 
 **Corollary.** The only zero divisor in $\mathbb{C}_{\mathbb{B}}$ is $0$, and the only non-unit is $0$.
 
-**Proof.** A zero divisor is a non-zero element of zero norm; on the subspace $N(\tilde{Q}) = Q_0^2$, which vanishes only at $Q_0 = 0$.
+**Proof.** A zero divisor is a non-zero element with $N(\tilde{Q}) = 0$; on the subspace $N(\tilde{Q}) = Q_0^2$, which vanishes only at $Q_0 = 0$.
 
-The corollary is the statement that $\mathbb{C}_{\mathbb{B}}$ is a field, and it is the reason the centre subspace carries none of the degeneracy phenomena — null elements, idempotents of zero norm, unbounded families — that the vector subspace and the zero divisors exhibit. The **idempotents** of the subspace are the solutions of $Q_0^2 = Q_0$, namely $Q_0 \in \{0, 1\}$: the zero element and the unit. In particular $\mathbb{C}_{\mathbb{B}}$ contains no non-trivial idempotent, while $\mathbb{B}$ contains many, all of them away from the centre.
+The corollary is the statement that $\mathbb{C}_{\mathbb{B}}$ is a field, and it is the reason the centre subspace carries none of the degeneracy phenomena — null elements, idempotents with $N=0$, unbounded families — that the vector subspace and the zero divisors exhibit. The **idempotents** of the subspace are the solutions of $Q_0^2 = Q_0$, namely $Q_0 \in \{0, 1\}$: the zero element and the unit. In particular $\mathbb{C}_{\mathbb{B}}$ contains no non-trivial idempotent, while $\mathbb{B}$ contains many, all of them away from the centre.
 
 ## The Four Involutions on It
 
@@ -178,7 +172,7 @@ In the classification of *Biquaternion Square Roots of Minus One, Zero and Plus 
 
 **Proposition.** The only zero divisor in $\mathbb{C}_{\mathbb{B}}$ is $0$; the centre is a field.
 
-**Proof.** A zero divisor is a non-zero element of zero norm, and on the centre $N(\tilde{Q}) = Q_0^2$ vanishes only at $Q_0 = 0$.
+**Proof.** A zero divisor is a non-zero element with $N=0$, and on the centre $N(\tilde{Q}) = Q_0^2$ vanishes only at $Q_0 = 0$.
 
 In the distribution of *Biquaternion Zero Divisors* the centre is the first of the three subspaces free of zero divisors, with $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; it is the degenerate case of that distribution in which the only null element is the origin.
 
@@ -196,7 +190,7 @@ and the bracket vanishes on it identically: it is an abelian Lie subalgebra and 
 
 ### A Central Element and Its Invariants
 
-Take $\tilde{Q} = (3 + 4i)e_0$. Its biquaternion norm is
+Take $\tilde{Q} = (3 + 4i)e_0$. Its algebraic square is
 
 $$
 N(\tilde{Q}) = (3+4i)^2 = -7 + 24i , \qquad |N(\tilde{Q})| = 25 = |3+4i|^2 ,
@@ -206,17 +200,17 @@ so $\tilde{Q}$ is a unit, with inverse $\tilde{Q}^{-1} = \frac{3-4i}{25} e_0$. C
 
 ### The Unit and the Idempotents
 
-The element $e_0$ has norm $1$ and is the unit of the algebra; $ie_0$ has norm $-1$ and satisfies $(ie_0)^2 = -e_0$, so the subspace contains the copy of the imaginary unit. The idempotents of $\mathbb{C}_{\mathbb{B}}$ are $0$ and $e_0$ only: the equation $Q_0^2 = Q_0$ has no other complex solution. No non-trivial idempotent of $\mathbb{B}$ is therefore central. The standard pair of non-trivial idempotents is
+The element $e_0$ has $N=1$ and is the unit of the algebra; $ie_0$ has $N=-1$ and satisfies $(ie_0)^2 = -e_0$, so the subspace contains the copy of the imaginary unit. The idempotents of $\mathbb{C}_{\mathbb{B}}$ are $0$ and $e_0$ only: the equation $Q_0^2 = Q_0$ has no other complex solution. No non-trivial idempotent of $\mathbb{B}$ is therefore central. The standard pair of non-trivial idempotents is
 
 $$
 \frac{e_0 + ie_1}{2} , \qquad \frac{e_0 - ie_1}{2} ,
 $$
 
-of scalar part $\tfrac12$, of zero norm, and lying in the Hermitian subspace — so the idempotents that generate the minimal left ideals of $\mathbb{B}$ are constructed in the sector rather than in the centre, and the centre supplies only the two trivial ones.
+of scalar part $\tfrac12$, with $N=0$, and lying in the Hermitian subspace — so the idempotents that generate the minimal left ideals of $\mathbb{B}$ are constructed in the sector rather than in the centre, and the centre supplies only the two trivial ones.
 
 ## Summary
 
-The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_0 e_0$ with vanishing vector part, a real vector space of dimension $2$ with basis $e_0, ie_0$. It coincides with the centre of the algebra; it is a commutative subalgebra, isomorphic to $\mathbb{C}$; it is one of the two subalgebras among the six distinguished subspaces and the only commutative one. Multiplication by its elements acts as scalar extension on every other subspace. The biquaternion norm restricts to $N = Q_0^2$, complex-valued on the subspace; the units are exactly the elements with $Q_0 \neq 0$, they are all invertible, and there are no zero divisors except $0$. Of the four involutions, quaternion conjugation fixes it pointwise; complex conjugation and Hermitian conjugation act on it as the non-trivial involution $i \mapsto -i$, the action that no inner automorphism can reproduce; and reversal negates $e_0$ while fixing $ie_0$. Its intersection with the vector subspace is the origin, and its intersections with each of the remaining four subspaces are the two coordinate lines $\mathbb{R}e_0$ and $i\mathbb{R}e_0$. In the algebra of particular cases the centre contributes the two trivial idempotents $0$ and $e_0$ and no non-trivial one, no Peirce corner, only the two trivial roots $\pm ie_0$, no zero divisor other than the origin, and it is the centre and the abelianisation of the Lie algebra $\mathrm{G}$.
+The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_0 e_0$ with vanishing vector part, a real vector space of dimension $2$ with basis $e_0, ie_0$. It coincides with the centre of the algebra; it is a commutative subalgebra, isomorphic to $\mathbb{C}$; it is one of the two subalgebras among the six distinguished subspaces and the only commutative one. Multiplication by its elements acts as scalar extension on every other subspace. The algebraic square $N$ restricts to $N = Q_0^2$, complex-valued on the subspace; the units are exactly the elements with $Q_0 \neq 0$, they are all invertible, and there are no zero divisors except $0$. Of the four involutions, quaternion conjugation fixes it pointwise; complex conjugation and Hermitian conjugation act on it as the non-trivial involution $i \mapsto -i$, the action that no inner automorphism can reproduce; and reversal negates $e_0$ while fixing $ie_0$. Its intersection with the vector subspace is the origin, and its intersections with each of the remaining four subspaces are the two coordinate lines $\mathbb{R}e_0$ and $i\mathbb{R}e_0$. In the algebra of particular cases the centre contributes the two trivial idempotents $0$ and $e_0$ and no non-trivial one, no Peirce corner, only the two trivial roots $\pm ie_0$, no zero divisor other than the origin, and it is the centre and the abelianisation of the Lie algebra $\mathrm{G}$.
 
 ## Summary of Notation
 
@@ -230,7 +224,7 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm |
+| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | the algebraic square $N$ |
 | $\mathbb{R}e_0$, $i\mathbb{R}e_0$ | the two coordinate lines of the centre subspace |
 | $\xi$ | a root of $-1$ in $\mathbb{B}$, $\xi^2 = -1$ |
 | $\tilde\Pi$ | an idempotent of $\mathbb{B}$; the centre contributes only $0$ and $e_0$ |
@@ -247,5 +241,5 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification whose two trivial points are the roots of the centre
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors, the centre contributing only the origin
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the centre of the Lie algebra $\mathrm{G}$ and its abelianisation
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm on the whole algebra and the invertibility criterion
+- *The Centre Subspace under the Three Topologies* (`articles_maths/the-centre-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies
 - *Jordan Algebras* (`articles_maths/jordan-algebras.md`), for the symmetrized product that gives the Hermitian subspace its algebraic structure

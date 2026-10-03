@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the six distinguished subspaces of the biquaternion algebra $\mathbb{B}$, the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ is the largest: the only one of dimension six. It is the anti-fixed space of quaternion conjugation, the kernel of the scalar-part functional, the derived subspace spanned by the commutators, and the Lie algebra of the unit-norm group; these four descriptions are proved below to coincide. It is not a subalgebra, its elements have central squares, and the zero divisors it contains are exactly the null elements with respect to the biquaternion norm.
+Of the six distinguished subspaces of the biquaternion algebra $\mathbb{B}$, the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ is the largest: the only one of dimension six. It is the anti-fixed space of quaternion conjugation, the kernel of the scalar-part functional, the derived subspace spanned by the commutators, and the Lie algebra of the group $N=1$; these four descriptions are proved below to coincide. It is not a subalgebra, its elements have central squares, and the zero divisors it contains are exactly the null elements with respect to the algebraic square $N$.
 
 As in the companion articles, everything here is algebraic and nothing is physical: the elements are written $\tilde{Q}, \tilde{R}$, their coefficients $Q_0, \dots, Q_3$ with $Q_\mu = q_\mu + i q'_\mu$, and no further coordinates are introduced. The other five subspaces are treated in *Biquaternion Centre Subspace*, *Biquaternion Quaternion Subspace*, *Biquaternion Anti-Quaternion Subspace*, *Biquaternion Hermitian Subspace* and *Biquaternion Anti-Hermitian Subspace*.
 
@@ -64,11 +64,11 @@ The two summands are precisely two of the four coordinate blocks of the algebra:
 
 **Proof.** For the basis elements, $[e_j, e_k] = 2 e_{j \times k}$ when $j \neq k$ in cyclic order and $[e_j, e_k] = 0$ when $j = k$, and the products with $i$ are obtained by complex linearity; every bracket is therefore traceless, so $[\mathbb{B}, \mathbb{B}] \subseteq \mathrm{Vect}(\mathbb{B})$. Conversely $e_1 = \tfrac12 [e_2, e_3]$ and its cyclic analogues give the three real vector units as brackets, and $ie_k = i e_k$ is then a complex multiple of a bracket; the six basis elements of the subspace lie in $[\mathbb{B}, \mathbb{B}]$, which therefore contains it.
 
-### It Is the Lie Algebra of the Unit-Norm Group
+### It Is the Lie Algebra of the Group $N=1$
 
-**Theorem.** The vector subspace is the Lie algebra of the norm-one group $\{\tilde{Q} : N(\tilde{Q}) = 1\}$: it is the tangent space at $e_0$ of that group.
+**Theorem.** The vector subspace is the Lie algebra of the group $N=1$ $\{\tilde{Q} : N(\tilde{Q}) = 1\}$: it is the tangent space at $e_0$ of that group.
 
-**Proof.** The norm-one group is a smooth subgroup of the units, so its Lie algebra is its tangent space at the identity, and an element $\tilde{Q}$ lies in that tangent space exactly when the derivative at $t = 0$ of $t \mapsto N(e_0 + t\tilde{Q})$ vanishes. By multiplicativity of the biquaternion norm,
+**Proof.** The group $N=1$ is a smooth subgroup of the units, so its Lie algebra is its tangent space at the identity, and an element $\tilde{Q}$ lies in that tangent space exactly when the derivative at $t = 0$ of $t \mapsto N(e_0 + t\tilde{Q})$ vanishes. By multiplicativity of the algebraic square $N$,
 
 $$
 N(e_0 + t\tilde{Q}) = (e_0 + t\tilde{Q})(e_0 + t\tilde{Q}^{\natural}) = e_0 + t\bigl(\tilde{Q} + \tilde{Q}^{\natural}\bigr) + t^2 N(\tilde{Q}) ,
@@ -76,7 +76,7 @@ $$
 
 whose linear coefficient is $\tilde{Q} + \tilde{Q}^{\natural} = 2\operatorname{Sc}(\tilde{Q})$; this vanishes exactly on the vector subspace.
 
-The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the norm-one group, a statement developed in *Biquaternion Lie Algebra* from the side of the group.
+The proposition identifies $\mathrm{Vect}(\mathbb{B})$ with the Lie algebra of the group $N=1$, a statement developed in *Biquaternion Lie Algebra* from the side of the group.
 
 ## Algebra and Module Structure
 
@@ -120,21 +120,17 @@ because the cross product of a triple with itself vanishes. Every element of the
 
 **Proof.** The scalar part of $h\tilde{Q}$ is read from the product formula, and it vanishes for all pairs only in the degenerate cases $h = 0$ or $\tilde{Q} = 0$; the centre is contained in the commuting elements and acts by scalar extension.
 
-## The Biquaternion Norm
+## Units and Zero Divisors
 
-**Proposition.** On the vector subspace the biquaternion norm is the complex bilinear form in the three coefficients,
+**Proposition.** On the vector subspace the algebraic operation $N$ is the complex quadratic expression in the three coefficients,
 
 $$
-N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 ,
+N(\tilde{Q}) = Q_1^2 + Q_2^2 + Q_3^2 .
 $$
 
-complex-valued in general. The signature of the real restriction is read in *The Bilinear Form on the Biquaternion Algebra*.
+**Proof.** Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms.
 
-**Proof.** Substituting $Q_0 = 0$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ leaves the three terms; the signs of the real basis vectors are computed from $(ie_k)^2 = i^2 e_k^2 = -(-1) = 1$ for the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$.
-
-Like the centre subspace and unlike the four others, the vector subspace is a subspace on which the biquaternion norm is not real-valued. Its **null elements** are the solutions of $Q_1^2 + Q_2^2 + Q_3^2 = 0$, a complex cone through the origin of real dimension four.
-
-### Units and Zero Divisors
+Its **null elements** are the solutions of $Q_1^2 + Q_2^2 + Q_3^2 = 0$, a complex cone through the origin of real dimension four.
 
 **Theorem.** For $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the null elements, $\tilde{Q} \neq 0$ with $N(\tilde{Q}) = 0$.
 
@@ -265,7 +261,7 @@ $$
 \tilde{Q}^2 = -N(\tilde{Q})e_0 = 0 , \qquad \tilde{Q} \neq 0 ,
 $$
 
-so $\tilde{Q}$ is its own annihilator. The example exhibits the coincidence of three conditions that hold only on the vector subspace among the six: purity of the element, nullity of the biquaternion norm, and nilpotency of index two.
+so $\tilde{Q}$ is its own annihilator. The example exhibits the coincidence of three conditions that hold only on the vector subspace among the six: purity of the element, nullity of the algebraic square $N$, and nilpotency of index two.
 
 ### An Imaginary Vector and the Cross Product
 
@@ -279,7 +275,7 @@ with vanishing dot product of the triples $(1, 0, 0)$ and $(0, i, 0)$. The brack
 
 ## Summary
 
-The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the unit-norm group. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The biquaternion norm restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation fixes the coordinate block $\operatorname{span}\{e_k\}$ and negates $\operatorname{span}\{ie_k\}$, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional. In the algebra of particular cases the vector subspace carries no idempotent but the origin but does carry the two nilpotent Peirce corners $\tilde T, \tilde S$, it is no ideal of any kind, it contains every root of $-1$ except the two trivial points, it carries the pure (nilpotent) family of zero divisors, and it is the derived subalgebra $[\mathrm{G},\mathrm{G}]$ of the Lie algebra.
+The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation, the set of elements of vanishing scalar part, a real vector space of dimension $6$ with basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, splitting into the real and imaginary vectors. It is simultaneously the kernel of the scalar-part functional, the derived subspace $[\mathbb{B}, \mathbb{B}]$, and the Lie algebra of the group $N=1$. It is not a subalgebra and not a module over the quaternion or anti-quaternion subspaces, but it is closed under the commutator, where the bracket is twice the cross product of the coefficient triples. The square of a vector element is central, $\tilde{Q}^2 = -N(\tilde{Q})e_0$, so null elements are nilpotent and units have their inverses in the subspace. The algebraic square $N$ restricts to $Q_1^2+Q_2^2+Q_3^2$, complex-valued; the zero divisors are exactly the null elements. Quaternion conjugation acts as minus the identity, complex conjugation fixes the coordinate block $\operatorname{span}\{e_k\}$ and negates $\operatorname{span}\{ie_k\}$, and all four involutions preserve the subspace. It is complementary to the centre, and its intersections with the other four subspaces are three-dimensional. In the algebra of particular cases the vector subspace carries no idempotent but the origin but does carry the two nilpotent Peirce corners $\tilde T, \tilde S$, it is no ideal of any kind, it contains every root of $-1$ except the two trivial points, it carries the pure (nilpotent) family of zero divisors, and it is the derived subalgebra $[\mathrm{G},\mathrm{G}]$ of the Lie algebra.
 
 ## Summary of Notation
 
@@ -293,7 +289,7 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 | $\operatorname{span}\{e_1,e_2,e_3\}$ | the real vectors |
 | $\operatorname{span}\{ie_1,ie_2,ie_3\}$ | the imaginary vectors |
 | $[\mathbb{B},\mathbb{B}]$ | the derived subspace, equal to $\mathrm{Vect}(\mathbb{B})$ |
-| $N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the biquaternion norm on the subspace |
+| $N(\tilde{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the algebraic square $N$ on the subspace |
 | $\tilde T, \tilde S$ | the off-diagonal Peirce elements $\tfrac12(ie_1 \mp e_2)$, nilpotents of the subspace |
 | $\xi$, $\tilde\Pi$ | a root of $-1$ and an idempotent of $\mathbb{B}$ |
 | $\mathrm{K}$ | the rotation subalgebra $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ |
@@ -310,6 +306,5 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the pure and non-pure zero divisors and the two families of the algebra
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and the two spaces each defines
-- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`) and *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the Lie algebra of the group of units and of the norm-one group
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm and the invertibility criterion
-- *The Orthogonal Lie Algebra* (`articles_maths/the-orthogonal-lie-algebra.md`), for the cross-product Lie structure in its general setting
+- *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`) and *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the Lie algebra of the group of units
+- *The Vector Subspace under the Three Topologies* (`articles_maths/the-vector-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies

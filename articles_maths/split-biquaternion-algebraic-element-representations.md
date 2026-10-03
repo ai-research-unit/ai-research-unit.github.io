@@ -65,11 +65,11 @@ The split scalar part of the split biquaternion becomes the time component of th
 The product of two split biquaternions in four-vector form separates into a scalar part and a vector part:
 
 $$
-(\tilde{Q} \circ \tilde{R})^0 = Q^0 R^0 - \sum_{k=1}^{3} Q^k R^k,
+(\tilde{Q} \bullet \tilde{R})^0 = Q^0 R^0 - \sum_{k=1}^{3} Q^k R^k,
 $$
 
 $$
-(\tilde{Q} \circ \tilde{R})^i = Q^0 R^i + R^0 Q^i + \sum_{j,k=1}^{3} \epsilon^{i j k} Q^j R^k, \qquad i = 1, 2, 3,
+(\tilde{Q} \bullet \tilde{R})^i = Q^0 R^i + R^0 Q^i + \sum_{j,k=1}^{3} \epsilon^{i j k} Q^j R^k, \qquad i = 1, 2, 3,
 $$
 
 where $\epsilon^{i j k}$ is the Levi-Civita symbol on the spatial indices $1, 2, 3$. The time component of the product is the scalar part; the spatial components are the vector part. This is the four-vector expression of the quaternion product formula.

@@ -9,7 +9,7 @@ The boundary against the general theory is deliberate. Lattices, distributivity 
 
 The corpus's default base is the commutative ring; this article replaces it by an MV-algebra, as the Boolean system replaces it by a Boolean algebra. No field, no characteristic hypothesis and no invertibility of $2$ is used. The one place where an additive group appears is Mundici's theorem, and there the group is a lattice-ordered abelian group, which is torsion-free.
 
-Throughout, an MV-algebra is written $(A, \oplus, \neg, 0)$, its order is $\leq$, and its top is $1 = \neg 0$. The lattice operations are written $\wedge$ and $\vee$ and are *distinct* from $\oplus$ and the derived product $\odot$; this distinction is the single most common error in the subject. The unit interval with the Łukasiewicz operations is written $[0,1]_{\L}$ when the operations need to be emphasised, and the chain with $n+1$ elements is $\L_n$.
+Throughout, an MV-algebra is written $(A, \oplus, \neg, 0)$, its order is $\leq$, and its top is $1 = \neg 0$. The lattice operations are written $\wedge$ and $\vee$ and are *distinct* from $\oplus$ and the derived product $\odot$; this distinction is the single most common error in the subject. The unit interval with the Łukasiewicz operations is written $[0,1]_{\mathrm{L}}$ when the operations need to be emphasised, and the chain with $n+1$ elements is $\mathrm{L}_n$.
 
 ## MV-Algebras
 
@@ -67,7 +67,7 @@ and the order is characterised by $\alpha \leq \beta \iff \neg \beta \leq \neg \
 
 **Proof.** The first two are the standard identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$, derived from (MV4)–(MV6) by Chang. The third is (MV5). The fourth is the negation of the third. The fifth is (MV4) applied to the definition of $\odot$. The last is the order-reversing property of the involution $\neg$, which follows from $\alpha \odot \neg \beta = \neg(\neg \alpha \oplus \beta)$.
 
-**Remark.** The identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$ do **not** make $\neg$ a Boolean complement: the complement of a Boolean algebra complements with respect to the *lattice* operations, so that $\alpha \vee \neg \alpha = 1$ and $\alpha \wedge \neg \alpha = 0$; here the identities are stated for $\oplus$ and $\odot$, which are not the join and the meet. In the standard algebra $[0,1]_{\L}$ one has $\alpha \vee \neg \alpha = \max(\alpha, 1-\alpha)$, which equals $1$ only for $\alpha \in \{0,1\}$, and $\alpha \wedge \neg \alpha = \min(\alpha,1-\alpha) = 0$ only for the same two points. The lattice of an MV-algebra is distributive and complemented only when the algebra is Boolean.
+**Remark.** The identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$ do **not** make $\neg$ a Boolean complement: the complement of a Boolean algebra complements with respect to the *lattice* operations, so that $\alpha \vee \neg \alpha = 1$ and $\alpha \wedge \neg \alpha = 0$; here the identities are stated for $\oplus$ and $\odot$, which are not the join and the meet. In the standard algebra $[0,1]_{\mathrm{L}}$ one has $\alpha \vee \neg \alpha = \max(\alpha, 1-\alpha)$, which equals $1$ only for $\alpha \in \{0,1\}$, and $\alpha \wedge \neg \alpha = \min(\alpha,1-\alpha) = 0$ only for the same two points. The lattice of an MV-algebra is distributive and complemented only when the algebra is Boolean.
 
 ### Elementary Identities
 
@@ -99,7 +99,7 @@ $$
 \alpha \oplus \beta = \min(1, \alpha + \beta), \qquad \neg \alpha = 1 - \alpha, \qquad 0 = 0 .
 $$
 
-Then $1 = 1$, $\alpha \odot \beta = \max(0, \alpha + \beta - 1)$, and $\alpha \to \beta = \min(1, 1 - \alpha + \beta)$; the order of the MV-algebra is the usual order of $[0,1]$, and the lattice operations are $\min$ and $\max$. The six axioms are verified directly from the arithmetic of the interval: commutativity and associativity of $\oplus$ reduce to the associativity of truncated addition, $\neg\neg \alpha = 1-(1-\alpha)=\alpha$, and $\alpha \oplus 1 = \min(1,\alpha+1)=1$. This is the **standard MV-algebra** $[0,1]_{\L}$.
+Then $1 = 1$, $\alpha \odot \beta = \max(0, \alpha + \beta - 1)$, and $\alpha \to \beta = \min(1, 1 - \alpha + \beta)$; the order of the MV-algebra is the usual order of $[0,1]$, and the lattice operations are $\min$ and $\max$. The six axioms are verified directly from the arithmetic of the interval: commutativity and associativity of $\oplus$ reduce to the associativity of truncated addition, $\neg\neg \alpha = 1-(1-\alpha)=\alpha$, and $\alpha \oplus 1 = \min(1,\alpha+1)=1$. This is the **standard MV-algebra** $[0,1]_{\mathrm{L}}$.
 
 The truncation is what distinguishes the algebra from a ring: $\alpha \oplus \beta$ is not addition in $[0,1]$, and no subtraction is available except through $\neg$. The connection with the additive structure of the reals is made precise by Mundici's theorem below.
 
@@ -110,18 +110,18 @@ The truncation is what distinguishes the algebra from a ring: $\alpha \oplus \be
 **Definition.** For $n \geq 1$ let
 
 $$
-\L_n = \left\{ 0, \tfrac{1}{n}, \tfrac{2}{n}, \dots, \tfrac{n}{n} = 1 \right\}
+\mathrm{L}_n = \left\{ 0, \tfrac{1}{n}, \tfrac{2}{n}, \dots, \tfrac{n}{n} = 1 \right\}
 $$
 
-with the operations inherited from $[0,1]_{\L}$. This is the **Łukasiewicz chain** with $n+1$ elements.
+with the operations inherited from $[0,1]_{\mathrm{L}}$. This is the **Łukasiewicz chain** with $n+1$ elements.
 
-The term "chain" is used because the order of $\L_n$ is total. Each $\L_n$ is a subalgebra of $[0,1]_{\L}$, and $\L_1 = \{0,1\}$ is the two-element algebra.
+The term "chain" is used because the order of $\mathrm{L}_n$ is total. Each $\mathrm{L}_n$ is a subalgebra of $[0,1]_{\mathrm{L}}$, and $\mathrm{L}_1 = \{0,1\}$ is the two-element algebra.
 
-**Theorem.** For every $n \geq 1$ the algebra $\L_n$ is an MV-algebra, and it is generated as an MV-algebra by the single element $1/n$.
+**Theorem.** For every $n \geq 1$ the algebra $\mathrm{L}_n$ is an MV-algebra, and it is generated as an MV-algebra by the single element $1/n$.
 
-**Proof.** The set $\L_n$ is closed under $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and under $\neg \alpha = 1-\alpha$ because the operations send multiples of $1/n$ to multiples of $1/n$. The element $1/n$ generates $1$ by repeated $\oplus$, then all $k/n$ for $k \leq n$, and the subalgebra generated is all of $\L_n$.
+**Proof.** The set $\mathrm{L}_n$ is closed under $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and under $\neg \alpha = 1-\alpha$ because the operations send multiples of $1/n$ to multiples of $1/n$. The element $1/n$ generates $1$ by repeated $\oplus$, then all $k/n$ for $k \leq n$, and the subalgebra generated is all of $\mathrm{L}_n$.
 
-**Example (three-valued logic).** The chain $\L_2 = \{0, \tfrac12, 1\}$ is the three-valued Łukasiewicz algebra. With $u = \tfrac12$ one has $\neg u = u$, $u \oplus u = 1$ and $u \odot u = 0$, while $u \wedge \neg u = u \wedge u = u \neq 0$. The third truth value is neither true nor false, and the lattice meet of a proposition with its negation is a third value rather than false: this is the algebraic content of the failure of the law of non-contradiction in the lattice operations of the many-valued calculus.
+**Example (three-valued logic).** The chain $\mathrm{L}_2 = \{0, \tfrac12, 1\}$ is the three-valued Łukasiewicz algebra. With $u = \tfrac12$ one has $\neg u = u$, $u \oplus u = 1$ and $u \odot u = 0$, while $u \wedge \neg u = u \wedge u = u \neq 0$. The third truth value is neither true nor false, and the lattice meet of a proposition with its negation is a third value rather than false: this is the algebraic content of the failure of the law of non-contradiction in the lattice operations of the many-valued calculus.
 
 ### Boolean Algebras as the Idempotent Case
 
@@ -129,9 +129,9 @@ The term "chain" is used because the order of $\L_n$ is total. Each $\L_n$ is a 
 
 **Proof.** Suppose $\oplus$ is idempotent. Then $\odot$ is idempotent too, since $\alpha \odot \alpha = \neg(\neg \alpha \oplus \neg \alpha) = \neg\neg \alpha = \alpha$. For idempotent operations the absorption identities $\alpha \oplus (\alpha \odot \beta) = \alpha$ and $\alpha \odot (\alpha \oplus \beta) = \alpha$ follow from (MV6), so $\oplus$ and $\odot$ are the join and the meet of the order, and the lattice is distributive by Chang's theorem; the identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$ then exhibit $\neg$ as a Boolean complement. Conversely, in a Boolean algebra take $\oplus = \vee$, $\odot = \wedge$ and $\neg$ the complement; then $\oplus$ is idempotent and the six axioms reduce to the Boolean laws of *Boolean Algebras and Lattices*.
 
-**Corollary.** The Boolean algebras are exactly the idempotent MV-algebras. The idempotent elements of an MV-algebra $A$ form a subalgebra $B(A)$, the **Boolean skeleton** of $A$: it is closed under $\oplus$ because $(\alpha \oplus \beta) \oplus (\alpha \oplus \beta) = \alpha \oplus \beta$ for idempotent $\alpha$ and $\beta$, and closed under $\neg$ by the duality of $\oplus$ and $\odot$. With the inherited operations it is a Boolean algebra, it is the largest Boolean subalgebra of $A$, and $B(A) = A$ exactly when $A$ is Boolean. For the standard algebra $B([0,1]_{\L}) = \{0,1\} = \L_1 = \mathbf{2}$, and for the three-element chain $\L_2$ the skeleton is again $\{0,1\}$, the intermediate element $u$ not being idempotent.
+**Corollary.** The Boolean algebras are exactly the idempotent MV-algebras. The idempotent elements of an MV-algebra $A$ form a subalgebra $B(A)$, the **Boolean skeleton** of $A$: it is closed under $\oplus$ because $(\alpha \oplus \beta) \oplus (\alpha \oplus \beta) = \alpha \oplus \beta$ for idempotent $\alpha$ and $\beta$, and closed under $\neg$ by the duality of $\oplus$ and $\odot$. With the inherited operations it is a Boolean algebra, it is the largest Boolean subalgebra of $A$, and $B(A) = A$ exactly when $A$ is Boolean. For the standard algebra $B([0,1]_{\mathrm{L}}) = \{0,1\} = \mathrm{L}_1 = \mathbf{2}$, and for the three-element chain $\mathrm{L}_2$ the skeleton is again $\{0,1\}$, the intermediate element $u$ not being idempotent.
 
-The corollary isolates the Boolean system inside the many-valued one. The two-element algebra $\mathbf{2}$ is the *Boolean* skeleton of $[0,1]_{\L}$, and it is the only Boolean algebra that embeds in $[0,1]_{\L}$ as a subalgebra; the many-valued semantics is not the classical semantics with extra values attached, because the extra values are not idempotent and do not obey the excluded middle in the lattice operations.
+The corollary isolates the Boolean system inside the many-valued one. The two-element algebra $\mathbf{2}$ is the *Boolean* skeleton of $[0,1]_{\mathrm{L}}$, and it is the only Boolean algebra that embeds in $[0,1]_{\mathrm{L}}$ as a subalgebra; the many-valued semantics is not the classical semantics with extra values attached, because the extra values are not idempotent and do not obey the excluded middle in the lattice operations.
 
 ## Ideals, Quotients and Simple Algebras
 
@@ -157,17 +157,17 @@ The map $d(\alpha,\beta) = (\alpha \odot \neg \beta) \oplus (\beta \odot \neg \a
 
 ### Simple MV-Algebras and the Representation Theorem
 
-**Theorem (Chang).** An MV-algebra is simple if and only if it is isomorphic to a subalgebra of $[0,1]_{\L}$.
+**Theorem (Chang).** An MV-algebra is simple if and only if it is isomorphic to a subalgebra of $[0,1]_{\mathrm{L}}$.
 
-**Proof.** Both directions are Chang's. A subalgebra of $[0,1]_{\L}$ has no nontrivial proper ideal, since any nonzero element generates the unit and hence the whole algebra; conversely a simple MV-algebra has no nontrivial proper ideal; every simple MV-algebra is archimedean, and the archimedean simple MV-algebras are exactly the subalgebras of $[0,1]_{\L}$, the embedding being given by the unique state. The argument is quoted from Chang's paper.
+**Proof.** Both directions are Chang's. A subalgebra of $[0,1]_{\mathrm{L}}$ has no nontrivial proper ideal, since any nonzero element generates the unit and hence the whole algebra; conversely a simple MV-algebra has no nontrivial proper ideal; every simple MV-algebra is archimedean, and the archimedean simple MV-algebras are exactly the subalgebras of $[0,1]_{\mathrm{L}}$, the embedding being given by the unique state. The argument is quoted from Chang's paper.
 
 **Theorem (subdirect representation).** Every MV-algebra is a subdirect product of totally ordered MV-algebras (MV-chains).
 
 **Proof.** Let $\alpha \neq \beta$ in $A$; then the Chang distance $d(\alpha,\beta)$ is nonzero, and by Zorn's lemma there is an ideal maximal among the proper ideals not containing $d(\alpha,\beta)$. Such an ideal is prime, so the quotient is an MV-chain in which the images of $\alpha$ and $\beta$ remain distinct. The family of all these quotients therefore separates the points of $A$, and the induced map is the required subdirect embedding.
 
-**Theorem (Chang completeness, algebraic form).** The variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$: the smallest variety containing $[0,1]_{\L}$ is the class of all MV-algebras. Equivalently, an identity holds in every MV-algebra if and only if it holds in $[0,1]_{\L}$. Consequently, for every MV-algebra $A$ and all distinct $\alpha, \beta \in A$ there is a homomorphism $h : A \to [0,1]_{\L}$ with $h(\alpha) \neq h(\beta)$, and every free MV-algebra is a subdirect product of copies of $[0,1]_{\L}$.
+**Theorem (Chang completeness, algebraic form).** The variety of MV-algebras is generated by the single algebra $[0,1]_{\mathrm{L}}$: the smallest variety containing $[0,1]_{\mathrm{L}}$ is the class of all MV-algebras. Equivalently, an identity holds in every MV-algebra if and only if it holds in $[0,1]_{\mathrm{L}}$. Consequently, for every MV-algebra $A$ and all distinct $\alpha, \beta \in A$ there is a homomorphism $h : A \to [0,1]_{\mathrm{L}}$ with $h(\alpha) \neq h(\beta)$, and every free MV-algebra is a subdirect product of copies of $[0,1]_{\mathrm{L}}$.
 
-**Proof (sketch).** The nontrivial half is that an identity failing in some MV-algebra fails in $[0,1]_{\L}$. Chang proves this by associating to each MV-algebra a lattice-ordered abelian group and using the archimedean embedding of its simple quotients in $[0,1]_{\L}$; the argument is quoted in full from the literature. The free algebra statement follows because the evaluation homomorphisms at the points of $[0,1]^n$ are surjective and separate the elements of $F_{\mathrm{MV}}(n)$.
+**Proof (sketch).** The nontrivial half is that an identity failing in some MV-algebra fails in $[0,1]_{\mathrm{L}}$. Chang proves this by associating to each MV-algebra a lattice-ordered abelian group and using the archimedean embedding of its simple quotients in $[0,1]_{\mathrm{L}}$; the argument is quoted in full from the literature. The free algebra statement follows because the evaluation homomorphisms at the points of $[0,1]^n$ are surjective and separate the elements of $F_{\mathrm{MV}}(n)$.
 
 ## Mundici's Theorem and Lattice-Ordered Groups
 
@@ -195,7 +195,7 @@ Then $\Gamma(G,u)$ is an MV-algebra, and every MV-algebra is of this form: there
 
 **Proof.** For the algebra structure: $\Gamma(G,u)$ is closed under $u \wedge (g+h)$ because the meet of $u$ with a positive element is between $0$ and $u$, and under $u - g$ because $0 \leq g \leq u$ gives $0 \leq u - g \leq u$. The six axioms follow from the distributivity of the lattice order and the compatibility of addition with it; (MV6) is the translation of the fact that in a lattice-ordered group the positive cone satisfies $(g \wedge h) + k \leq (g+k)\wedge(h+k)$ and one has the Riesz decomposition. The construction of $G(A)$ is by the Grothendieck completion of the monoid $A$ modulo the relations that make $\alpha \oplus \beta$ the truncated sum, and the strong unit is the class of $1$; the verification of the inverse equivalence is Mundici's theorem and is quoted.
 
-**Corollary.** $\Gamma(\mathbb{R}, 1) = [0,1]_{\L}$, and $\Gamma(\mathbb{Z}, 1) = \L_1 = \{0,1\}$; more generally $\Gamma(\tfrac{1}{n}\mathbb{Z}, 1) = \L_n$.
+**Corollary.** $\Gamma(\mathbb{R}, 1) = [0,1]_{\mathrm{L}}$, and $\Gamma(\mathbb{Z}, 1) = \mathrm{L}_1 = \{0,1\}$; more generally $\Gamma(\tfrac{1}{n}\mathbb{Z}, 1) = \mathrm{L}_n$.
 
 **Proof.** The interval $[0,1]$ with $g \oplus h = 1 \wedge (g+h)$ is the standard algebra, and the interval $[0,1] \cap \mathbb{Z} = \{0,1\}$ is the two-element algebra. The last statement is the same computation in the cyclic group $\tfrac1n \mathbb{Z}$.
 
@@ -219,7 +219,7 @@ such that for every $x \in [0,1]^n$ one has $f(x) = \ell_i(x)$ for some $i$. The
 
 **Theorem (McNaughton).** The free MV-algebra $F_{\mathrm{MV}}(n)$ on $n$ generators is isomorphic to $M([0,1]^n)$, the isomorphism sending the $i$-th generator to the coordinate function $x \mapsto x_i$. In particular $F_{\mathrm{MV}}(n)$ is countably infinite for every $n \geq 1$.
 
-**Proof.** A term in the generators evaluates to a function on $[0,1]^n$ built from the coordinate functions by $\oplus$ and $\neg$, and each such function is McNaughton because the operations preserve the class: $\min(1, f+g)$ and $1-f$ of McNaughton functions are again continuous and piecewise linear with integer pieces. The map is therefore well defined and surjective, since McNaughton functions are exactly the finite max-min combinations of the integer-linear ones, by the standard piecewise-linear approximation. To see that it is injective, let $t$ and $s$ be terms that define the same function; since the variety is generated by $[0,1]_{\L}$, an identity holding in that algebra holds in every MV-algebra, so $t$ and $s$ are equal in the free algebra. Hence the map is an isomorphism. The countability is clear from the finite description of a McNaughton function.
+**Proof.** A term in the generators evaluates to a function on $[0,1]^n$ built from the coordinate functions by $\oplus$ and $\neg$, and each such function is McNaughton because the operations preserve the class: $\min(1, f+g)$ and $1-f$ of McNaughton functions are again continuous and piecewise linear with integer pieces. The map is therefore well defined and surjective, since McNaughton functions are exactly the finite max-min combinations of the integer-linear ones, by the standard piecewise-linear approximation. To see that it is injective, let $t$ and $s$ be terms that define the same function; since the variety is generated by $[0,1]_{\mathrm{L}}$, an identity holding in that algebra holds in every MV-algebra, so $t$ and $s$ are equal in the free algebra. Hence the map is an isomorphism. The countability is clear from the finite description of a McNaughton function.
 
 **Example.** For $n = 1$ the free algebra is generated by the identity function $\alpha$. The function $\alpha \oplus \alpha = \min(1,2\alpha)$, the function $\neg \alpha = 1-\alpha$, and the iterated truncated sums $\min(1,k\alpha)$ all lie in $M([0,1])$, so $F_{\mathrm{MV}}(1)$ already contains functions with arbitrarily many linear pieces and is infinite. This is the many-valued analogue of the Rieger–Nishimura lattice of *Heyting Algebras and Intuitionistic Logic*, and it shows that the free MV-algebra, like the free Heyting algebra but unlike the free Boolean algebra, is infinite; the difference is that $M([0,1]^n)$ is still described by a single continuously-valued standard algebra.
 
@@ -229,23 +229,23 @@ such that for every $x \in [0,1]^n$ one has $f(x) = \ell_i(x)$ for some $i$. The
 
 ### Łukasiewicz Logic
 
-**Definition.** The formulas of **Łukasiewicz propositional logic** $\L$ are built from propositional variables by the connectives $\neg$ and $\to$; the derived connectives are $\alpha \oplus \beta = \neg \alpha \to \beta$, $\alpha \odot \beta = \neg(\alpha \to \neg \beta)$, $\alpha \vee \beta = (\alpha \to \beta) \to \beta$ and $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$. A **valuation** is a map $v$ from the variables to $[0,1]$, extended by
+**Definition.** The formulas of **Łukasiewicz propositional logic** $\mathrm{L}$ are built from propositional variables by the connectives $\neg$ and $\to$; the derived connectives are $\alpha \oplus \beta = \neg \alpha \to \beta$, $\alpha \odot \beta = \neg(\alpha \to \neg \beta)$, $\alpha \vee \beta = (\alpha \to \beta) \to \beta$ and $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$. A **valuation** is a map $v$ from the variables to $[0,1]$, extended by
 $$
 v(\neg\varphi) = 1 - v(\varphi), \qquad v(\varphi \to \psi) = \min(1, 1 - v(\varphi) + v(\psi)).
 $$
-A formula is a **tautology** if $v(\varphi) = 1$ for every valuation, and $\L$ is the logic whose theorems are the tautologies. Equivalently, valuations into $[0,1]_{\L}$ are exactly the homomorphisms from the free MV-algebra on the variables to $[0,1]_{\L}$.
+A formula is a **tautology** if $v(\varphi) = 1$ for every valuation, and $\mathrm{L}$ is the logic whose theorems are the tautologies. Equivalently, valuations into $[0,1]_{\mathrm{L}}$ are exactly the homomorphisms from the free MV-algebra on the variables to $[0,1]_{\mathrm{L}}$.
 
 ### Algebraic Completeness
 
-**Theorem (Chang completeness).** For every formula $\varphi$ of $\L$,
+**Theorem (Chang completeness).** For every formula $\varphi$ of $\mathrm{L}$,
 
 $$
-\vdash_{\L} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1] .
+\vdash_{\mathrm{L}} \varphi \iff v(\varphi) = 1 \text{ for every valuation } v : \mathrm{Vars} \to [0,1] .
 $$
 
-**Proof.** Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\L$ are identities of MV-algebras, each of which is verified in $[0,1]_{\L}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\L$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\L}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\L}$ separate the points of $F$, so if $\varphi$ is not a theorem and its class is therefore not $1$, some valuation sends $\varphi$ to a value different from $1$.
+**Proof.** Soundness is induction on the length of the derivation: the Łukasiewicz axioms of the Hilbert system for $\mathrm{L}$ are identities of MV-algebras, each of which is verified in $[0,1]_{\mathrm{L}}$, and the rules preserve the value $1$. For completeness, the Lindenbaum algebra $F$ of $\mathrm{L}$ is an MV-algebra, and the valuations are exactly the homomorphisms from the term algebra to $[0,1]_{\mathrm{L}}$ that respect provable equivalence; by Chang's theorem the homomorphisms to $[0,1]_{\mathrm{L}}$ separate the points of $F$, so if $\varphi$ is not a theorem and its class is therefore not $1$, some valuation sends $\varphi$ to a value different from $1$.
 
-**Corollary.** The logic $\L$ is *the* logic of the standard interval, and the many-valued semantics is complete: the interval supplies all the counterexamples needed. The finite chains $\L_n$ give the **finite-valued Łukasiewicz logics** $\L_n$, and a formula valid in $[0,1]_{\L}$ is valid in each $\L_n$ because $\L_n$ is a subalgebra. Conversely, a counterexample on $[0,1]$ can be perturbed, since the operations $\min(1,\cdot)$, $1-\cdot$ and $+$ are continuous, to one whose values all lie in $\tfrac1n\mathbb{Z}$ for some $n$, and it is then a counterexample in $\L_n$; hence the tautologies of the infinite-valued logic are exactly the formulas tautological in every finite-valued logic, and $\L$ is the intersection of the logics $\L_n$.
+**Corollary.** The logic $\mathrm{L}$ is *the* logic of the standard interval, and the many-valued semantics is complete: the interval supplies all the counterexamples needed. The finite chains $\mathrm{L}_n$ give the **finite-valued Łukasiewicz logics** $\mathrm{L}_n$, and a formula valid in $[0,1]_{\mathrm{L}}$ is valid in each $\mathrm{L}_n$ because $\mathrm{L}_n$ is a subalgebra. Conversely, a counterexample on $[0,1]$ can be perturbed, since the operations $\min(1,\cdot)$, $1-\cdot$ and $+$ are continuous, to one whose values all lie in $\tfrac1n\mathbb{Z}$ for some $n$, and it is then a counterexample in $\mathrm{L}_n$; hence the tautologies of the infinite-valued logic are exactly the formulas tautological in every finite-valued logic, and $\mathrm{L}$ is the intersection of the logics $\mathrm{L}_n$.
 
 ### Comparison with the Boolean and Intuitionistic Systems
 
@@ -254,18 +254,18 @@ Three systems of propositional logic have now appeared in the algebra slot of th
 | Logic | Algebras | Standard model | Characteristic algebra? |
 |---|---|---|---|
 | Classical | Boolean algebras | $\mathbf{2}$ | Yes, $\mathbf{2}$ alone generates the variety |
-| Many-valued (Łukasiewicz) | MV-algebras | $[0,1]_{\L}$ | Yes, $[0,1]_{\L}$ alone generates the variety |
+| Many-valued (Łukasiewicz) | MV-algebras | $[0,1]_{\mathrm{L}}$ | Yes, $[0,1]_{\mathrm{L}}$ alone generates the variety |
 | Intuitionistic | Heyting algebras | $\mathcal{O}(X)$, frames | No finite set of finite algebras suffices |
 
 The classical and Łukasiewicz logics each have a single generating algebra, and their free algebras are concrete: Boolean functions and McNaughton functions respectively. The intuitionistic calculus does not, by the finiteness theorem of *Heyting Algebras and Intuitionistic Logic*; its characteristic semantics is the variety of Heyting algebras, not a single finite or interval algebra. The three systems are therefore different answers to the question of what replaces the two-element domain, and the answer "the unit interval with the Łukasiewicz operations" is the *continuous* answer, with $\mathbf{2}$ recovering the classical case by idempotence.
 
 ## Summary
 
-An MV-algebra is a set with a commutative monoid operation $\oplus$, an involution $\neg$ and a zero $0$ satisfying Chang's six axioms; the order $\alpha \leq \beta \iff \alpha \odot \neg \beta = 0$ is a distributive lattice order with bounds $0$ and $1 = \neg 0$, and the lattice operations are $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$ and $\alpha \vee \beta = (\alpha \to \beta) \to \beta$. The standard example is the unit interval with $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and $\neg \alpha = 1-\alpha$; the finite chains $\L_n = \{0, 1/n, \dots, 1\}$ are its finite subalgebras, $\L_1$ is the two-element algebra, and an MV-algebra is a Boolean algebra exactly when $\oplus$ is idempotent. The subalgebras of $[0,1]_{\L}$ are exactly the simple MV-algebras, the maximal ideals have simple quotients, and every MV-algebra is a subdirect product of subalgebras of $[0,1]_{\L}$; consequently the variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$.
+An MV-algebra is a set with a commutative monoid operation $\oplus$, an involution $\neg$ and a zero $0$ satisfying Chang's six axioms; the order $\alpha \leq \beta \iff \alpha \odot \neg \beta = 0$ is a distributive lattice order with bounds $0$ and $1 = \neg 0$, and the lattice operations are $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$ and $\alpha \vee \beta = (\alpha \to \beta) \to \beta$. The standard example is the unit interval with $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and $\neg \alpha = 1-\alpha$; the finite chains $\mathrm{L}_n = \{0, 1/n, \dots, 1\}$ are its finite subalgebras, $\mathrm{L}_1$ is the two-element algebra, and an MV-algebra is a Boolean algebra exactly when $\oplus$ is idempotent. The subalgebras of $[0,1]_{\mathrm{L}}$ are exactly the simple MV-algebras, the maximal ideals have simple quotients, and every MV-algebra is a subdirect product of subalgebras of $[0,1]_{\mathrm{L}}$; consequently the variety of MV-algebras is generated by the single algebra $[0,1]_{\mathrm{L}}$.
 
 Mundici's theorem identifies this variety with the category of lattice-ordered abelian groups with strong unit through the functor $\Gamma(G,u) = \{g : 0 \leq g \leq u\}$ with $g \oplus h = u \wedge (g+h)$; the standard algebra is $\Gamma(\mathbb{R},1)$ and the finite chains are the intervals in $\tfrac1n\mathbb{Z}$. McNaughton's theorem describes the free MV-algebra on $n$ generators as the algebra of continuous piecewise-linear functions on $[0,1]^n$ with integer coefficients, which is countably infinite and is the many-valued analogue of the Rieger–Nishimura lattice.
 
-Łukasiewicz propositional logic is the logic of the standard algebra: its connectives are the MV-operations, its valuations are the homomorphisms into $[0,1]_{\L}$, and Chang's completeness theorem states that its theorems are exactly the formulas taking the value $1$ under every valuation. The classical logic is recovered as the idempotent case, and the intuitionistic logic is a different and genuinely non-finitely-valued system; the three algebras of the Boolean category — Boolean, MV and Heyting — are the three answers to replacing the two-element domain, and they separate on finiteness: a finitely generated Boolean algebra is finite, whereas the free MV-algebra and the free Heyting algebra on one generator are already infinite.
+Łukasiewicz propositional logic is the logic of the standard algebra: its connectives are the MV-operations, its valuations are the homomorphisms into $[0,1]_{\mathrm{L}}$, and Chang's completeness theorem states that its theorems are exactly the formulas taking the value $1$ under every valuation. The classical logic is recovered as the idempotent case, and the intuitionistic logic is a different and genuinely non-finitely-valued system; the three algebras of the Boolean category — Boolean, MV and Heyting — are the three answers to replacing the two-element domain, and they separate on finiteness: a finitely generated Boolean algebra is finite, whereas the free MV-algebra and the free Heyting algebra on one generator are already infinite.
 
 ## Summary of Notation
 
@@ -279,15 +279,15 @@ Mundici's theorem identifies this variety with the category of lattice-ordered a
 | $0, 1 = \neg 0$ | Least and greatest elements |
 | $\leq$ | Order, $\alpha \leq \beta \iff \alpha \odot \neg \beta = 0$ |
 | $\wedge, \vee$ | Lattice meet and join of the order |
-| $[0,1]_{\L}$ | Standard MV-algebra, $\alpha \oplus \beta = \min(1,\alpha+\beta)$, $\neg \alpha = 1-\alpha$ |
-| $\L_n$ | Łukasiewicz chain $\{0, 1/n, \dots, 1\}$ with $n+1$ elements |
+| $[0,1]_{\mathrm{L}}$ | Standard MV-algebra, $\alpha \oplus \beta = \min(1,\alpha+\beta)$, $\neg \alpha = 1-\alpha$ |
+| $\mathrm{L}_n$ | Łukasiewicz chain $\{0, 1/n, \dots, 1\}$ with $n+1$ elements |
 | $d(\alpha,\beta)$ | Chang distance, $(\alpha \odot \neg \beta) \oplus (\beta \odot \neg \alpha)$ |
 | $\Gamma(G,u)$ | Mundici functor, interval $[0,u]$ of an ℓ-group with strong unit |
 | $F_{\mathrm{MV}}(n)$ | Free MV-algebra on $n$ generators |
 | $M([0,1]^n)$ | McNaughton functions on the cube |
-| $\vdash_{\L}$ | Derivability in Łukasiewicz logic |
+| $\vdash_{\mathrm{L}}$ | Derivability in Łukasiewicz logic |
 | $B(A)$ | Boolean skeleton, the idempotent elements of $A$ |
-| $\mathbf{2}$ | Two-element Boolean algebra, $\L_1$ |
+| $\mathbf{2}$ | Two-element Boolean algebra, $\mathrm{L}_1$ |
 
 
 

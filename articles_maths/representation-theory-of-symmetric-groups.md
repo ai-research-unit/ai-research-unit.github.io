@@ -136,7 +136,7 @@ in agreement with the character table of $S_4$ displayed above. Computing the wh
 
 **(a)** The number of irreducible representations of $S_n$ over $K$ equals the number of $p$-regular partitions of $n$; the irreducible module $D^\lambda$ attached to a $p$-regular $\lambda$ is the head of the Specht module $S^\lambda$, and the other Specht modules have $D^\mu$ as a composition factor of $S^\lambda$ with multiplicity given by the **decomposition numbers** $d_{\lambda\mu}$.
 
-**(b)** The **$p$-core** of a partition is obtained by repeatedly removing border strips of size $p$; it does not depend on the order of removal. Two partitions $\lambda, \mu dash n$ lie in the same **$p$-block** of $S_n$ if and only if they have the same $p$-core, a statement known as Nakayama's conjecture and proved by Brauer.
+**(b)** The **$p$-core** of a partition is obtained by repeatedly removing border strips of size $p$; it does not depend on the order of removal. Two partitions $\lambda, \mu \vdash n$ lie in the same **$p$-block** of $S_n$ if and only if they have the same $p$-core, a statement known as Nakayama's conjecture and proved by Brauer.
 
 **(c)** The decomposition matrix of $S_n$ is unitriangular with respect to the dominance order among $p$-regular partitions, and its entries are the composition multiplicities, not generally known by a closed formula.
 

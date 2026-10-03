@@ -58,13 +58,13 @@ So the real part of the split-biquaternion norm is the sum of the squares of all
 **Theorem.** The split-biquaternion norm is multiplicative:
 
 $$
-N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+N(\tilde{Q} \bullet \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
 $$
 
 **Proof.** Compute
 
 $$
-N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
+N(\tilde{Q} \bullet \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
 $$
 
 Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So
@@ -73,9 +73,9 @@ $$
 \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
 $$
 
-**Corollary.** If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \circ \tilde{R})$ is invertible in $\mathbb{D}$.
+**Corollary.** If $N(\tilde{Q})$ and $N(\tilde{R})$ are invertible in $\mathbb{D}$, then $N(\tilde{Q} \bullet \tilde{R})$ is invertible in $\mathbb{D}$.
 
-**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
+**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \bullet \tilde{R}) = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
 
 ### The Split-Biquaternion Norm in the Idempotent Basis
 
@@ -239,7 +239,7 @@ The split-biquaternion norm, which is multiplicative, is split complex-valued an
 A split biquaternion $\tilde{Q}$ is **invertible** if there exists a split biquaternion $\tilde{R}$ such that
 
 $$
-\tilde{Q} \circ \tilde{R} = \tilde{R} \circ \tilde{Q} = e_0.
+\tilde{Q} \bullet \tilde{R} = \tilde{R} \bullet \tilde{Q} = e_0.
 $$
 
 The split biquaternion $\tilde{R}$, if it exists, is the **inverse** of $\tilde{Q}$ and is denoted $\tilde{Q}^{-1}$.
@@ -265,12 +265,12 @@ $$
 This is legitimate because $N(\tilde{Q})$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
 
 $$
-\tilde{Q} \circ \tilde{R} = N(\tilde{Q}) N(\tilde{Q})^{-1} = e_0,
+\tilde{Q} \bullet \tilde{R} = N(\tilde{Q}) N(\tilde{Q})^{-1} = e_0,
 $$
 
 so $\tilde{R}$ is a right inverse, hence also a left inverse.
 
-Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
+Conversely, suppose $\tilde{Q}$ is invertible. Applying the split-biquaternion norm to $\tilde{Q} \bullet \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
 
 $$
 N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,

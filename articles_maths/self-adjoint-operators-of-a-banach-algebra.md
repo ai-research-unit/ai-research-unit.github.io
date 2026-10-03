@@ -33,7 +33,7 @@ and the positive operators form a convex cone containing the operators $S^\dagge
 
 **Proof.** Positivity is a convex condition closed under sums and under non-negative scalar multiples, so its associated order is a partial order when the cone is proper, which positive definiteness of the form gives: if $T \geq 0$ and $-T \geq 0$ then $\pm\{Tx,x\} \geq 0$ for all $x$, so $\{Tx,x\} = 0$ and $T = 0$. For invariance, $\{U^\dagger TU\,x,x\} = \{TUx,Ux\}$; and $S^\dagger S \geq 0$ because $\{S^\dagger Sx,x\} = \{Sx,Sx\} \geq 0$. $\square$
 
-**Proposition (the Jordan structure).** The self-adjoint operators form a real **Jordan algebra** under the symmetrised product $S \circ T = \tfrac12(ST + TS)$, and the positive operators are closed under the Jordan product and the functional calculus; the invertible positive operators form a convex cone in the unit group, and the order is the Loewner order when $A$ is a $\mathrm{C}^*$-algebra of operators.
+**Proposition (the Jordan structure).** The self-adjoint operators form a real **Jordan algebra** under the symmetrised product $S \bullet T = \tfrac12(ST + TS)$, and the positive operators are closed under the Jordan product and the functional calculus; the invertible positive operators form a convex cone in the unit group, and the order is the Loewner order when $A$ is a $\mathrm{C}^*$-algebra of operators.
 
 **Proof.** For self-adjoint $S,T$ the symmetrised product is self-adjoint, and the Jordan identities are the associativity of the operator product read in the symmetrisation; positivity under the symmetrised product and the calculus is the operator statement of the same facts. $\square$
 
@@ -68,7 +68,7 @@ With the form of the category on a Banach algebra $A$ positive definite, the adj
 | $T^\dagger = T$ | Self-adjoint operator |
 | $\{Tx,x\} \geq 0$ | Positive operator |
 | $S \leq T$ iff $T-S$ positive | The order (Loewner in the $\mathrm{C}^*$ case) |
-| $S\circ T = \tfrac12(ST+TS)$ | Symmetrised (Jordan) product |
+| $S\bullet T = \tfrac12(ST+TS)$ | Symmetrised (Jordan) product |
 | $S^\dagger S \geq 0$ | Positivity of the squares |
 | $\{x,y\} = \operatorname{tr}(xy^*)$ | Hilbert–Schmidt form, the $\mathrm{C}^*$-specialisation |
 

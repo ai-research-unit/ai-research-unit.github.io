@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article analyses the Jordan algebras that come from associative algebras and the one that does not. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and the Jordan conventions — the commutative product $\circ$, the square $x^2 = x \circ x$, the multiplication operators $L_x$, the Jordan identity $[L_x, L_{x^2}] = 0$ — are those fixed in *Jordan Algebras*. The general setting is that article; here we study the dichotomy and the examples.
+This article analyses the Jordan algebras that come from associative algebras and the one that does not. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and the Jordan conventions — the commutative product $\bullet$, the square $x^2 = x \bullet x$, the multiplication operators $L_x$, the Jordan identity $[L_x, L_{x^2}] = 0$ — are those fixed in *Jordan Algebras*. The general setting is that article; here we study the dichotomy and the examples.
 
 A Jordan algebra is **special** if it embeds into the symmetrisation $A^+$ of an associative algebra $A$ and **exceptional** if it does not. The classification of the finite-dimensional formally real algebras, quoted in *Jordan Algebras*, lists three families: the matrix algebras $H_n(D)$ over the associative composition algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, the degree-two spin factors, together with the one-dimensional algebra $\mathbb{R}$, all of which are special; and the single algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over the octonions, the **Albert algebra**, which is exceptional. That one exception is the whole reason the subject is a theory of its own rather than a chapter of associative algebra.
 
@@ -12,7 +12,7 @@ The article constructs the special algebras $H_n(D)$ and verifies that they are 
 
 ### The Definition
 
-Let $A$ be an associative $R$-algebra and let $A^+$ be the same module with the symmetrised product $x \circ y = \tfrac{1}{2}(xy + yx)$, defined when $2$ is invertible, or $xy + yx$ in general; by *Jordan Algebras*, $A^+$ is a Jordan algebra. A Jordan algebra $J$ is **special** if there exist an associative algebra $A$ and an injective Jordan homomorphism $J \hookrightarrow A^+$; it is **exceptional** otherwise. A **special identity**, or **$s$-identity**, is a polynomial identity in the operations $\circ$ that holds in every $A^+$.
+Let $A$ be an associative $R$-algebra and let $A^+$ be the same module with the symmetrised product $x \bullet y = \tfrac{1}{2}(xy + yx)$, defined when $2$ is invertible, or $xy + yx$ in general; by *Jordan Algebras*, $A^+$ is a Jordan algebra. A Jordan algebra $J$ is **special** if there exist an associative algebra $A$ and an injective Jordan homomorphism $J \hookrightarrow A^+$; it is **exceptional** otherwise. A **special identity**, or **$s$-identity**, is a polynomial identity in the operations $\bullet$ that holds in every $A^+$.
 
 The notion of specialness is not defined by a property of the multiplication table alone, because "embeds in some $A^+$" quantifies over an algebra that does not appear in the data. This is the source of the difficulty: to prove a Jordan algebra exceptional one must show that no associative algebra whatsoever can receive it.
 
@@ -72,9 +72,9 @@ so the product is again Hermitian. Thus $H_n(D)$ is a Jordan subalgebra of $M_n(
 
 **Theorem.** For $D$ associative and $2$ invertible, $H_n(D)$ is a Jordan algebra. In particular $H_n(\mathbb{R})$, $H_n(\mathbb{C})$ and $H_n(\mathbb{H})$ are Jordan algebras for every $n \geq 1$.
 
-*Proof.* $H_n(D)$ is a submodule of $M_n(D)$ closed under $\circ$, and a subalgebra of a Jordan algebra is a Jordan algebra, since the identity is verified in the larger algebra. The ambient $M_n(D)^+$ is a Jordan algebra by the theorem of *Jordan Algebras* on $A^+$.
+*Proof.* $H_n(D)$ is a submodule of $M_n(D)$ closed under $\bullet$, and a subalgebra of a Jordan algebra is a Jordan algebra, since the identity is verified in the larger algebra. The ambient $M_n(D)^+$ is a Jordan algebra by the theorem of *Jordan Algebras* on $A^+$.
 
-**Remark.** Closure under $\circ$ uses only that conjugation is an anti-automorphism, so it does not need associativity. For $D = \mathbb{O}$ conjugation is still an anti-automorphism and closure still holds; what fails is the associativity of $M_n(\mathbb{O})$ used in the proof of the Jordan identity for $A^+$. The case $n = 3$ survives, and that is the Albert algebra.
+**Remark.** Closure under $\bullet$ uses only that conjugation is an anti-automorphism, so it does not need associativity. For $D = \mathbb{O}$ conjugation is still an anti-automorphism and closure still holds; what fails is the associativity of $M_n(\mathbb{O})$ used in the proof of the Jordan identity for $A^+$. The case $n = 3$ survives, and that is the Albert algebra.
 
 ### Matrix Units and the Peirce Decomposition
 
@@ -140,7 +140,7 @@ $$
 H_3(\mathbb{O}) = \{x \in M_3(\mathbb{O}) : x^* = x\}
 $$
 
-of Hermitian $3 \times 3$ matrices over $\mathbb{O}$, with the symmetrised product $x \circ y = \tfrac{1}{2}(xy + yx)$.
+of Hermitian $3 \times 3$ matrices over $\mathbb{O}$, with the symmetrised product $x \bullet y = \tfrac{1}{2}(xy + yx)$.
 
 A Hermitian $3 \times 3$ matrix has real diagonal entries (an octonion fixed by conjugation is real) and three independent off-diagonal octonion entries, the lower triangle being the conjugate transpose of the upper. Hence
 
@@ -154,7 +154,7 @@ This is the value quoted in *Jordan Algebras*, and the algebra is the unique exc
 
 **Theorem (Albert).** $H_3(\mathbb{O})$ with the symmetrised product is a Jordan algebra.
 
-*Proof (sketch).* Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = x^{\natural}_{ij}$. The product $x \circ y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\circ$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $(uv)(uv)^{\natural} = (uu^{\natural})(v v^{\natural})$ with $u u^{\natural}$ real, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units.
+*Proof (sketch).* Let $x = \sum_{i,j} x_{ij} \otimes E_{ij}$ be a generic Hermitian matrix, with $x_{ii} \in \mathbb{R}$ and $x_{ji} = x^{\natural}_{ij}$. The product $x \bullet y = \tfrac{1}{2}(xy + yx)$ is again Hermitian, by the anti-automorphism property of the octonion conjugation, so $\bullet$ is a commutative product on $H_3(\mathbb{O})$. The Jordan identity $[L_x, L_{x^2}] = 0$ becomes, after expanding both sides over the eight basis octonions, a polynomial identity of degree four in the entries $x_{ij}$. The reduction uses the alternative laws $u(uv) = (uu)v$ and $(vu)u = v(uu)$, the vanishing of the real part of the associator, $\operatorname{Re}[u,v,w] = 0$, and the composition law $(uv)(uv)^{\natural} = (uu^{\natural})(v v^{\natural})$ with $u u^{\natural}$ real, which together bring the two sides to the same normal form. This is the classical theorem of Albert; the finite ingredient is the multiplication table of the eight basis units.
 
 **Remark.** The same computation fails for $n \geq 4$: the symmetrised product on $H_n(\mathbb{O})$ is not a Jordan product for $n \geq 4$. The reason is that the proof of the Jordan identity for $A^+$ uses the associativity of the entries, which an associative composition algebra ($\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$) supplies and which the octonions supply only up to the alternative laws. The case $n = 3$ escapes because the Hermitian condition pairs every entry with its conjugate transpose, and the associator of octonions has vanishing real part, so the alternative laws suffice for the products that occur; from $n = 4$ onwards the identity contains a product of three off-diagonal octonions whose bracketing matters.
 
@@ -192,7 +192,7 @@ $$
 \operatorname{Aut}(H_3(\mathbb{O})) \cong F_4 ,
 $$
 
-of dimension $52$; its Lie algebra is the derivation algebra $\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4$, also of dimension $52$. The derivations are exactly the Jordan derivations of the previous article, $\operatorname{Der}(H_3(\mathbb{O})) = \{\delta: \delta(x\circ y) = \delta x \circ y + x \circ \delta y\}$; the trace form is invariant under them by the theorem of *Jordan Algebras*. The group $F_4$ acts transitively on the idempotents of rank one; the larger structure group is generated by $E_6$ of dimension $78$ together with the dilations $x \mapsto \lambda x$, whose multipliers $\lambda^3$ fill $\mathbb{R}^{\times}$, and it has dimension $79$.
+of dimension $52$; its Lie algebra is the derivation algebra $\operatorname{Der}(H_3(\mathbb{O})) \cong \mathrm{F}_4$, also of dimension $52$. The derivations are exactly the Jordan derivations of the previous article, $\operatorname{Der}(H_3(\mathbb{O})) = \{\delta: \delta(x\bullet y) = \delta x \bullet y + x \bullet \delta y\}$; the trace form is invariant under them by the theorem of *Jordan Algebras*. The group $F_4$ acts transitively on the idempotents of rank one; the larger structure group is generated by $E_6$ of dimension $78$ together with the dilations $x \mapsto \lambda x$, whose multipliers $\lambda^3$ fill $\mathbb{R}^{\times}$, and it has dimension $79$.
 
 ## The Tits–Kantor–Koecher Construction
 
@@ -258,7 +258,7 @@ A Jordan algebra is **special** if it embeds in the symmetrisation $A^+$ of an a
 | $T(x)$, $S(x)$, $N(x)$ | Trace and the quadratic and cubic invariants on $H_3(\mathbb{O})$ |
 | $x^{\#} = x^2 - T(x)x + S(x)1$ | Quadratic adjoint of $x$ |
 | $e_1, e_2, e_3$ | Jordan frame of $H_3(\mathbb{O})$ |
-| $\delta$ | A derivation, $\delta(x\circ y) = \delta x \circ y + x \circ \delta y$ |
+| $\delta$ | A derivation, $\delta(x\bullet y) = \delta x \bullet y + x \bullet \delta y$ |
 | $F_4$, $\mathrm{F}_4$ | Automorphism group and derivation algebra of $H_3(\mathbb{O})$ |
 | $\mathrm{G}(J)$ | Tits–Kantor–Koecher Lie algebra of $J$ |
 | $\mathrm{STR}(H_3(\mathbb{O})) \cong \mathrm{E}_6 \oplus \mathbb{R}$ | Structure algebra, $\operatorname{Der}(H_3(\mathbb{O})) \oplus L(H_3(\mathbb{O}))$ |

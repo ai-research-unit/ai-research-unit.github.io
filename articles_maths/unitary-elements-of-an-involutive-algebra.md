@@ -92,15 +92,15 @@ $$
 
 ### The Symmetrised Product
 
-**Definition.** The **symmetrised product** of two elements is $x \circ y = \tfrac12(xy + yx)$, and the self-adjoint part $H(A) = A^+$ is a **Jordan algebra** under it, in the sense of *Involutive Linear Algebras*.
+**Definition.** The **symmetrised product** of two elements is $x \bullet y = \tfrac12(xy + yx)$, and the self-adjoint part $H(A) = A^+$ is a **Jordan algebra** under it, in the sense of *Involutive Linear Algebras*.
 
 **Proposition.** The symmetrised product of two skew elements and of two self-adjoint elements is self-adjoint, while the symmetrised product of a self-adjoint and a skew element is skew:
 
 $$
-A^- \circ A^- \subseteq A^+, \qquad A^+ \circ A^+ \subseteq A^+, \qquad A^+ \circ A^- \subseteq A^- .
+A^- \bullet A^- \subseteq A^+, \qquad A^+ \bullet A^+ \subseteq A^+, \qquad A^+ \bullet A^- \subseteq A^- .
 $$
 
-Consequently $H(A)$ is closed under $\circ$, and the skew part $A^-$ is a **Jordan module** over the Jordan algebra $H(A)$ under the same product.
+Consequently $H(A)$ is closed under $\bullet$, and the skew part $A^-$ is a **Jordan module** over the Jordan algebra $H(A)$ under the same product.
 
 *Proof.* For $x, y$ skew, $(xy)^* = y^*x^* = yx$ and $(yx)^* = xy$, so $\tfrac12(xy+yx)$ is fixed by $^*$; similarly for two self-adjoint elements. For $h$ self-adjoint and $k$ skew, $(hk)^* = k^*h^* = -kh$ and $(kh)^* = -hk$, so the half-sum is negated by $^*$.
 
@@ -168,7 +168,7 @@ For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elem
 | $A^-$ | the skew elements, $k^* = -k$ |
 | $U(A) = U(A,\sigma)$ | the unitary elements, $u^*u = uu^* = 1$ |
 | $\theta(g) = (g^*)^{-1}$ | the order-two automorphism of $A^\times$ |
-| $x \circ y = \tfrac12(xy+yx)$ | the symmetrised product |
+| $x \bullet y = \tfrac12(xy+yx)$ | the symmetrised product |
 | $O_n(k)$ | the orthogonal group, for the transpose |
 
 ## Further Reading

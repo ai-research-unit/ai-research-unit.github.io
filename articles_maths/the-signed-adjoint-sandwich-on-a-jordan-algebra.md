@@ -8,7 +8,7 @@ $$
 \Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha ,
 $$
 
-the signed sandwich of *The Signed Sandwich on a Jordan Algebra*. The **natural pairing** of the category is the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ of *The Adjoint of the Left Multiplication on a Jordan Algebra*, and the present article computes the adjoint of the signed sandwich with respect to it. Because the trace form is **associative**, $T(x\circ y,z) = T(x,y\circ z)$, every left multiplication is self-adjoint, $L_a^{\dagger} = L_a$; because the grade involution is an **isometry**, $T(\alpha x,\alpha y) = T(x,y)$, the involution itself is self-adjoint, $\alpha^{\dagger} = \alpha$; and because the quadratic representation is a polynomial in the self-adjoint left multiplications, it is self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$. Together these give the explicit expression
+the signed sandwich of *The Signed Sandwich on a Jordan Algebra*. The **natural pairing** of the category is the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of *The Adjoint of the Left Multiplication on a Jordan Algebra*, and the present article computes the adjoint of the signed sandwich with respect to it. Because the trace form is **associative**, $T(x\bullet y,z) = T(x,y\bullet z)$, every left multiplication is self-adjoint, $L_a^{\dagger} = L_a$; because the grade involution is an **isometry**, $T(\alpha x,\alpha y) = T(x,y)$, the involution itself is self-adjoint, $\alpha^{\dagger} = \alpha$; and because the quadratic representation is a polynomial in the self-adjoint left multiplications, it is self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$. Together these give the explicit expression
 
 $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} ,
@@ -22,9 +22,9 @@ After the definitions the article proves the $\alpha$-invariance of the trace fo
 
 ### The Trace Form
 
-**Definition.** The **natural pairing** of the category on a finite-dimensional Jordan algebra $J$ is the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$, the trace of the left multiplication by the Jordan product; the **adjoint** of an operator $F$ on $J$ is the unique $F^{\dagger}$ with $T(Fx,y) = T(x,F^{\dagger}y)$.
+**Definition.** The **natural pairing** of the category on a finite-dimensional Jordan algebra $J$ is the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$, the trace of the left multiplication by the Jordan product; the **adjoint** of an operator $F$ on $J$ is the unique $F^{\dagger}$ with $T(Fx,y) = T(x,F^{\dagger}y)$.
 
-**Theorem (associativity).** The trace form is symmetric and associative, $T(x\circ y,z) = T(x,y\circ z)$; it is non-degenerate when $J$ is semisimple, and it is invariant under the left multiplications, $T(L_ax,y) = T(x,L_ay)$, so that
+**Theorem (associativity).** The trace form is symmetric and associative, $T(x\bullet y,z) = T(x,y\bullet z)$; it is non-degenerate when $J$ is semisimple, and it is invariant under the left multiplications, $T(L_ax,y) = T(x,L_ay)$, so that
 
 $$
 L_a^{\dagger} = L_a .
@@ -40,7 +40,7 @@ $$
 T(\alpha x,\alpha y) = T(x,y) , \qquad \text{hence} \qquad T(\alpha x,y) = T(x,\alpha y) , \qquad \alpha^{\dagger} = \alpha .
 $$
 
-*Proof.* For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\circ y)}) = \operatorname{tr}(\alpha L_{x\circ y}\alpha^{-1}) = \operatorname{tr}(L_{x\circ y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$. $\square$
+*Proof.* For an automorphism $\varphi$ of $J$ one has $L_{\varphi a} = \varphi L_a\varphi^{-1}$; with $\varphi = \alpha$ and the trace invariant under conjugation, $T(\alpha x,\alpha y) = \operatorname{tr}(L_{\alpha(x\bullet y)}) = \operatorname{tr}(\alpha L_{x\bullet y}\alpha^{-1}) = \operatorname{tr}(L_{x\bullet y}) = T(x,y)$. Replacing $y$ by $\alpha y$ and using $\alpha^2 = \mathrm{id}$ gives $T(\alpha x,y) = T(x,\alpha y)$, which is the defining relation of the adjoint $\alpha^{\dagger} = \alpha$. $\square$
 
 **Corollary (the quadratic representation).** The quadratic representations are self-adjoint, $U_a^{\dagger} = U_a$ and $U_{a,b}^{\dagger} = U_{a,b}$, because they are polynomials in the self-adjoint left multiplications and the symmetrisation preserves self-adjointness.
 
@@ -86,11 +86,11 @@ $$
 
 **Example (the identity grade involution).** For $\alpha = \mathrm{id}$ the signed sandwich is the unsigned one $\Sigma^{\alpha}_{a,b} = U_{a,b}$ and the adjoint is $U_{a,b}^{\dagger} = U_{a,b}$, so every unsigned sandwich is self-adjoint; the unitary ones are those with $U_{a,b}^2 = \mathrm{id}$.
 
-**Example (the symmetric matrices).** Let $J = H_n(F)$ with $x\circ y = \tfrac12(xy+yx)$ and the transpose grade involution on the ambient matrix algebra; then $U_a(x) = axa$ and $U_{a,b}(x) = \tfrac12(axb+bxa)$; the signed sandwich $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ has the adjoint $U_{a^{\mathsf{T}},b^{\mathsf{T}}}\circ\alpha$, and it is unitary when $U_{a,b}$ is an involution.
+**Example (the symmetric matrices).** Let $J = H_n(F)$ with $x\bullet y = \tfrac12(xy+yx)$ and the transpose grade involution on the ambient matrix algebra; then $U_a(x) = axa$ and $U_{a,b}(x) = \tfrac12(axb+bxa)$; the signed sandwich $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ has the adjoint $U_{a^{\mathsf{T}},b^{\mathsf{T}}}\circ\alpha$, and it is unitary when $U_{a,b}$ is an involution.
 
 ## Summary
 
-The **natural pairing** on a Jordan algebra is the **trace form** $T(x,y) = \operatorname{tr}(L_{x\circ y})$, symmetric, associative and non-degenerate in the semisimple case; its associativity makes every left multiplication self-adjoint, $L_a^{\dagger} = L_a$, and the **grade involution** is an isometry, $T(\alpha x,\alpha y) = T(x,y)$, hence self-adjoint, $\alpha^{\dagger} = \alpha$. The quadratic representations are self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$, and the adjoint of the **signed sandwich** $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ is the signed sandwich at the images of the parameters,
+The **natural pairing** on a Jordan algebra is the **trace form** $T(x,y) = \operatorname{tr}(L_{x\bullet y})$, symmetric, associative and non-degenerate in the semisimple case; its associativity makes every left multiplication self-adjoint, $L_a^{\dagger} = L_a$, and the **grade involution** is an isometry, $T(\alpha x,\alpha y) = T(x,y)$, hence self-adjoint, $\alpha^{\dagger} = \alpha$. The quadratic representations are self-adjoint, $U_{a,b}^{\dagger} = U_{a,b}$, and the adjoint of the **signed sandwich** $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ is the signed sandwich at the images of the parameters,
 
 $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{\dagger} = \Sigma^{\alpha}_{\alpha(a),\alpha(b)} .
@@ -104,8 +104,8 @@ The signed sandwich is **unitary** exactly when $U_{a,b}^2 = \mathrm{id}$, the J
 |---|---|
 | $J = A^+$ | Special unital Jordan algebra |
 | $\alpha$ | Grade involution (automorphism of order two) |
-| $T(x,y) = \operatorname{tr}(L_{x\circ y})$ | Natural pairing, the trace form |
-| $T(x\circ y,z) = T(x,y\circ z)$ | Associativity of the trace form |
+| $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ | Natural pairing, the trace form |
+| $T(x\bullet y,z) = T(x,y\bullet z)$ | Associativity of the trace form |
 | $L_a^{\dagger} = L_a$, $\alpha^{\dagger} = \alpha$ | Self-adjointness of the multiplications and the involution |
 | $U_{a,b} = \tfrac12(U_{a+b}-U_a-U_b)$ | Polarised quadratic representation, self-adjoint |
 | $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ | Signed sandwich |

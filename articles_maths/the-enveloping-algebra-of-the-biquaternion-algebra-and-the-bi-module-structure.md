@@ -141,40 +141,33 @@ $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde R)\bigr)=a\,c\,\tilde R\,d\,b=(ac)\tilde R(db)$. Verified on random operators to $10^{-13}$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
 
-**Remark (the regular matrices).** In the coordinate basis of $\mathbb B$ the operator $e_n[\,]e_m$ is the matrix product $\rho_L(e_n)\rho_R(e_m)$ of the left and right regular matrices of *Biquaternion 4×4 Regular Matrix Element Representation*, and those sixteen products are an orthogonal basis of $M_4(\mathbb C)$ there. The Conway basis and that matrix basis are the same sixteen operators; the one is written as a linear function, the other as a matrix.
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\rho_L(e_n)\rho_R(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *Biquaternion 4×4 Regular Matrix Element Representation*.
 
-### The Three Classical Functions and Their Matrices
+### The Three Classical Functions
 
-Three linear functions carry the classical matrix types. In the coordinate order $(e_1,e_2,e_3,e_0)$ — vector part first, scalar last — they are, with $t_1=s_2s_3$, $t_2=s_1s_3$ and $t_3=s_1s_2$,
-
-$$
-A\{a\}=\tfrac12\bigl(a[\,]-[\,]a\bigr)\ \longleftrightarrow\
-\begin{pmatrix}0&-a_3&a_2&0\\a_3&0&-a_1&0\\-a_2&a_1&0&0\\0&0&0&0\end{pmatrix},
-$$
+Three linear functions of the algebra carry the classical types. With $t_1=s_2s_3$, $t_2=s_1s_3$ and $t_3=s_1s_2$ they are
 
 $$
-D\{d\}=\tfrac12\bigl(d_1e_1[\,]e_1+d_2e_2[\,]e_2+d_3e_3[\,]e_3\bigr)
-\ \longleftrightarrow\
-\tfrac12\begin{pmatrix}-d_1+d_2+d_3&0&0&0\\0&d_1-d_2+d_3&0&0\\0&0&d_1+d_2-d_3&0\\0&0&0&-(d_1+d_2+d_3)\end{pmatrix},
+A\{a\}=\tfrac12\bigl(a[\,]-[\,]a\bigr),
 $$
 
 $$
-S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s
-\ \longleftrightarrow\
-\begin{pmatrix}0&t_3&t_2&0\\t_3&0&t_1&0\\t_2&t_1&0&0\\0&0&0&0\end{pmatrix}.
+D\{d\}=\tfrac12\bigl(d_1e_1[\,]e_1+d_2e_2[\,]e_2+d_3e_3[\,]e_3\bigr),
 $$
 
-**Proposition (the matrix dictionary).** In the order $(e_1,e_2,e_3,e_0)$ the function $A\{a\}$ is the antisymmetric $3\times3$ block, $D\{d\}$ the traceless diagonal and $S\{s\}$ the diagonal-less symmetric $3\times3$ block, each with a vanishing fourth row and column, and the three families together span the traceless part of $M_3(\mathbb C)$.
+$$
+S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s .
+$$
 
-*Proof.* Direct computation of the sixteen operator matrices and comparison with the displays. The coordinate order is a genuine trap: the corpus's basis order is $(e_0,e_1,e_2,e_3)$, whereas the matrix displays put the scalar last, and in the corpus's order the same matrices appear shifted by one. Verified numerically: exact in the order $(e_1,e_2,e_3,e_0)$, and not in the order $(e_0,e_1,e_2,e_3)$.
+The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *Biquaternion 4×4 Regular Matrix Element Representation*.
 
-**Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; its two displays of $S$ then differ by an overall sign. The corpus fixes the sign by the printed matrix, the one written here. $A\{a\}$ and $D\{d\}$ reproduce the source's displays exactly, with zero residual.
+**Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; the two conventions differ by an overall sign, and the corpus fixes the sign as written above.
 
 ### The Limit of the Method
 
-The quaternion formulation of the classical matrix types is complete in dimension three and incomplete in dimension four, and the reason is visible in the displays above.
+The quaternion formulation of the classical types is complete in dimension three and incomplete in dimension four.
 
-**Remark (the method degrades from three to four dimensions).** The antisymmetric, diagonal and diagonal-less symmetric functions exhaust the traceless part of $M_3(\mathbb C)$ in the order $(e_1,e_2,e_3,e_0)$, since each acts on the vector part and fixes the scalar. For a general traceless $\mathbb C^4\to\mathbb C^4$ map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and vector parts, and the source records that the expression for it is cumbersome and not useful. The four-dimensional unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and less clean four-dimensional parametrizations.
+**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the traceless maps that act on the vector part and fix the scalar. For a general traceless map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
 
 ## The Base Field and the Real Dimension Count
 
@@ -234,7 +227,7 @@ The two structural statements were checked numerically on the biquaternion algeb
 
 ## Summary
 
-The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(\tilde Q\otimes \tilde P^{\mathrm{op}})\cdot \tilde R=\tilde Q\tilde R\tilde P$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types; a linear function carries a second involution, **association**, which is treated, with the scalar bilinear form it belongs to, in *Association and the Transpose on the Biquaternion Algebra*. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
+The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{op}}$, with the sandwich action $(\tilde Q\otimes \tilde P^{\mathrm{op}})\cdot \tilde R=\tilde Q\tilde R\tilde P$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types; a linear function carries a second involution, **association**, which is treated in *Association and the Transpose on the Biquaternion Algebra*. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{op}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{op}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{op}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once.
 
 ## Summary of Notation
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **Jordan triple system** is an $R$-module $T$ with a trilinear ternary product $\{\cdot,\cdot,\cdot\} : T^3\to T$ that is symmetric in the outer two variables and satisfies the Jordan triple identity; the ternary product is the symmetrised form of the binary Jordan product, since a Jordan algebra $J$ with product $\circ$ becomes a Jordan triple under $\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$. A **Jordan triple with an involution** is such a system together with a **conjugate-linear involution** $\sigma$ of order two that preserves the ternary product,
+A **Jordan triple system** is an $R$-module $T$ with a trilinear ternary product $\{\cdot,\cdot,\cdot\} : T^3\to T$ that is symmetric in the outer two variables and satisfies the Jordan triple identity; the ternary product is the symmetrised form of the binary Jordan product, since a Jordan algebra $J$ with product $\bullet$ becomes a Jordan triple under $\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y$. A **Jordan triple with an involution** is such a system together with a **conjugate-linear involution** $\sigma$ of order two that preserves the ternary product,
 
 $$
 \sigma\{x,y,z\} = \{\sigma(x),\sigma(y),\sigma(z)\}, \qquad \sigma^2 = \mathrm{id}, \qquad \sigma(\lambda x) = \varsigma(\lambda)\sigma(x),
@@ -33,15 +33,15 @@ $$
 
 The first identity is the symmetry in the outer variables and the second is the **Jordan triple identity**.
 
-**Proposition (the triple of a Jordan algebra).** Let $J$ be a Jordan algebra with product $\circ$. Then
+**Proposition (the triple of a Jordan algebra).** Let $J$ be a Jordan algebra with product $\bullet$. Then
 
 $$
-\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y
+\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y
 $$
 
 makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $U_x$, $\{x,y,x\} = 2\,U_x(y)$.
 
-*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\circ$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2U_x(y)$ is the defining formula $U_x = 2L_x^2-L_{x^2}$ read on $y$. $\square$
+*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2U_x(y)$ is the defining formula $U_x = 2L_x^2-L_{x^2}$ read on $y$. $\square$
 
 **Definition (morphism).** A **homomorphism** of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an **anti-homomorphism** reverses the order of the arguments, and $T$ with the reversed arguments is the **opposite** triple.
 
@@ -90,10 +90,10 @@ and $H(T)$ is the **fixed subtriple**, a Jordan triple over the fixed field $F$.
 **Theorem.** Let $J$ be a Jordan algebra with a $\varsigma$-semilinear involution $\sigma$ in the sense of *Jordan Algebras with an Involution*, and let $T = J$ be the associated Jordan triple. Then $\sigma$ is a $\varsigma$-semilinear involution of $T$, and the fixed subtriple of $T$ is the triple of the self-adjoint part:
 
 $$
-H(T) = H(J), \qquad \{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y \ \text{ on } \ H(J) .
+H(T) = H(J), \qquad \{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y \ \text{ on } \ H(J) .
 $$
 
-*Proof.* The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\circ\sigma y)\circ\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition. $\square$
+*Proof.* The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\bullet\sigma y)\bullet\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition. $\square$
 
 **Corollary.** The involution of a Jordan triple restricts to the involution of any Jordan subalgebra that it preserves, and the fixed subtriple of the triple of $J$ is the Jordan triple of the fixed subalgebra; in particular the theory of the involutions of a Jordan triple contains that of the involutions of a Jordan algebra.
 
@@ -115,7 +115,7 @@ $$
 
 ## Summary
 
-A **Jordan triple system** is a module with a trilinear product symmetric in the outer variables and satisfying the Jordan triple identity; a Jordan algebra yields such a triple by $\{x,y,z\} = (x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$, with $\{x,y,x\} = 2U_x(y)$. A $\varsigma$-semilinear **involution** of the triple preserves the ternary product and is of order two; its fixed set, the **self-adjoint part** $H(T)$, is a sub-triple, and over a quadratic extension $K/F$ the triple splits as $T = H(T)\oplus iH(T)$, so the fixed subtriple is a **real form** of $T$ and the structure descends to it. The triple of a Jordan algebra with involution inherits the involution, and its fixed subtriple is the triple of the self-adjoint part, so the triple theory contains the binary theory. The rectangular matrix triple with the conjugate transpose is the standard example, its fixed subtriple being the Hermitian matrices. No form, norm, distance or order occurs.
+A **Jordan triple system** is a module with a trilinear product symmetric in the outer variables and satisfying the Jordan triple identity; a Jordan algebra yields such a triple by $\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y$, with $\{x,y,x\} = 2U_x(y)$. A $\varsigma$-semilinear **involution** of the triple preserves the ternary product and is of order two; its fixed set, the **self-adjoint part** $H(T)$, is a sub-triple, and over a quadratic extension $K/F$ the triple splits as $T = H(T)\oplus iH(T)$, so the fixed subtriple is a **real form** of $T$ and the structure descends to it. The triple of a Jordan algebra with involution inherits the involution, and its fixed subtriple is the triple of the self-adjoint part, so the triple theory contains the binary theory. The rectangular matrix triple with the conjugate transpose is the standard example, its fixed subtriple being the Hermitian matrices. No form, norm, distance or order occurs.
 
 ## Summary of Notation
 
@@ -125,7 +125,7 @@ A **Jordan triple system** is a module with a trilinear product symmetric in the
 | $\{x,y,z\}$ | Ternary product |
 | $\{x,y,z\}=\{z,y,x\}$ | Outer symmetry |
 | $\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\}-\{u,\{y,x,v\},w\}+\{u,v,\{x,y,w\}\}$ | Jordan triple identity |
-| $\{x,y,z\}=(x\circ y)\circ z+(z\circ y)\circ x-(x\circ z)\circ y$ | Triple of a Jordan algebra |
+| $\{x,y,z\}=(x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y$ | Triple of a Jordan algebra |
 | $\sigma$ | $\varsigma$-semilinear involution of $T$ |
 | $H(T)$ | Self-adjoint part, the fixed subtriple |
 | $T = H(T)\oplus iH(T)$ | Decomposition over a quadratic extension |

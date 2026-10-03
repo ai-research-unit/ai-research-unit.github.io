@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **anti-Hermitian subspace** $\mathbb{M}_-$ is the fixed space of reversal, equivalently the anti-fixed space of Hermitian conjugation: the elements of $\mathbb{B}$ whose scalar part is purely imaginary and whose vector part is real. It is the image of the Hermitian subspace under multiplication by the central imaginary unit, the two together decomposing the algebra. It is not a subalgebra; it is closed under the commutator and its symmetrized product lands in $\mathbb{M}_+$; and the biquaternion norm on it is real, so that its zero divisors form a null cone.
+The **anti-Hermitian subspace** $\mathbb{M}_-$ is the fixed space of reversal, equivalently the anti-fixed space of Hermitian conjugation: the elements of $\mathbb{B}$ whose scalar part is purely imaginary and whose vector part is real. It is the image of the Hermitian subspace under multiplication by the central imaginary unit, the two together decomposing the algebra. It is not a subalgebra; it is closed under the commutator and its symmetrized product lands in $\mathbb{M}_+$; and the algebraic square $N$ on it is real, so that its zero divisors form a null cone.
 
-The article parallels *Biquaternion Hermitian Subspace*, to which it is tied by the central imaginary unit at every step: the products, the norm, the idempotents and the involutions of the two subspaces correspond, with a sign turned each time. The notation is as in the companion articles, and a final section places the subspace among the particular cases of the algebra — the idempotents, the ideals and Peirce decomposition, the roots of minus one, the zero divisors and the bracket.
+The article parallels *Biquaternion Hermitian Subspace*, to which it is tied by the central imaginary unit at every step: the products, the algebraic square, the idempotents and the involutions of the two subspaces correspond, with a sign turned each time. The notation is as in the companion articles, and a final section places the subspace among the particular cases of the algebra — the idempotents, the ideals and Peirce decomposition, the roots of minus one, the zero divisors and the bracket.
 
 ## Definition and Basis
 
@@ -84,7 +84,7 @@ The theorem is the mirror image of the corresponding statement for $\mathbb{M}_+
 $\mathbb{M}_-$ is a module over the centre subspace, and it is not a module over the quaternion subspace, since $e_1 \cdot ie_0 = ie_1$ leaves the subspace. The correspondence with $\mathbb{M}_+$ through multiplication by $i$ is an isomorphism of real vector spaces and reverses the two products in the following sense: for $\tilde{Q}, \tilde{R} \in \mathbb{M}_+$,
 
 $$
-(i\tilde{Q})(i\tilde{R}) = -\tilde{Q}\tilde{R} , \qquad (i\tilde{Q}) \circ (i\tilde{R}) = -(\tilde{Q}\circ\tilde{R}) ,
+(i\tilde{Q})(i\tilde{R}) = -\tilde{Q}\tilde{R} , \qquad (i\tilde{Q}) \bullet (i\tilde{R}) = -(\tilde{Q}\bullet\tilde{R}) ,
 $$
 
 so the symmetrized product of two elements of $\mathbb{M}_-$ is minus the symmetrized product of the corresponding Hermitian elements, and the Jordan algebra structure of $\mathbb{M}_+$ is transported to a Jordan structure on $\mathbb{M}_-$ with the sign of the product reversed.
@@ -101,11 +101,9 @@ In particular the scalar part of the square is negative, and $\tilde{Q}^2$ is ne
 
 **Proof.** Expanding with $\mathbf{q}^2 = -|\mathbf{q}|^2e_0$ and the centrality of $i$ gives the displayed element, whose scalar part is $-\left((q'_0)^2+|\mathbf{q}|^2\right) \leq 0$ and whose vector part is imaginary, so it lies in $\mathbb{M}_+$; the scalar part cannot equal $1$, so $\tilde{Q}^2 \neq e_0$, and it vanishes only for $\tilde{Q} = 0$.
 
-## The Biquaternion Norm
+## Units and Zero Divisors
 
-### Restriction
-
-**Theorem.** On the anti-Hermitian subspace the biquaternion norm is
+**Theorem.** On the anti-Hermitian subspace the algebraic operation $N$ is
 
 $$
 N(\tilde{Q}) = (q_1^2 + q_2^2 + q_3^2) - (q'_0)^2 , \qquad \tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 ,
@@ -113,9 +111,7 @@ $$
 
 related to the Hermitian case by $N(i\tilde{P}) = -N(\tilde{P})$ for $\tilde{P} \in \mathbb{M}_+$.
 
-**Proof.** Substituting $Q_0 = iq'_0$ and $Q_k = q_k$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives $(iq'_0)^2 + \sum_k q_k^2 = -(q'_0)^2 + |\mathbf{q}|^2$. The relation to the Hermitian case is the centrality of $i$ together with $i^2 = -1$. The signature of the restriction and its polar form are in *The Bilinear Form on the Biquaternion Algebra*.
-
-### Units and Zero Divisors
+**Proof.** Substituting $Q_0 = iq'_0$ and $Q_k = q_k$ in $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ gives $(iq'_0)^2 + \sum_k q_k^2 = -(q'_0)^2 + |\mathbf{q}|^2$. The relation to the Hermitian case is the centrality of $i$ together with $i^2 = -1$.
 
 **Theorem.** For $\tilde{Q} \in \mathbb{M}_-$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q}$ is not a zero divisor. The zero divisors are exactly the non-zero elements of the **null set**
 
@@ -196,13 +192,13 @@ The roots of $-1$ in the subspace have been classified in §*The Roots of Minus 
 
 ### Zero Divisors
 
-The zero divisors of the subspace are the non-zero null elements of the cone $|\mathbf{q}|^2 = (q'_0)^2$ found in §*Units and Zero Divisors*; none is nilpotent. They are exactly the complex multiples of the elements $i\tilde\Pi$ with $\tilde\Pi$ a Hermitian idempotent. Indeed a null element of the subspace has $q'_0 \neq 0$, since $q'_0 = 0$ would give $\mathbf{q} = 0$ and the zero element; on the cone the square formula of §*The Square* reads $\tilde{Q}^2 = 2iq'_0\tilde{Q}$, so
+The zero divisors of the subspace are the non-zero null elements of the null set $|\mathbf{q}|^2 = (q'_0)^2$ found in §*Units and Zero Divisors*; none is nilpotent. They are exactly the complex multiples of the elements $i\tilde\Pi$ with $\tilde\Pi$ a Hermitian idempotent. Indeed a null element of the subspace has $q'_0 \neq 0$, since $q'_0 = 0$ would give $\mathbf{q} = 0$ and the zero element; on the cone the square formula of §*The Square* reads $\tilde{Q}^2 = 2iq'_0\tilde{Q}$, so
 
 $$
 \tilde{Q} = 2iq'_0\,\tilde\Pi, \qquad \tilde\Pi = \frac{\tilde{Q}}{2iq'_0} \in \mathbb{M}_+ ,
 $$
 
-and $\tilde\Pi$, an idempotent of $\mathbb{M}_+$, is Hermitian. The cone is of real dimension $3$, and it is the part of the non-pure family of *Biquaternion Zero Divisors* that lies in the subspace.
+and $\tilde\Pi$, an idempotent of $\mathbb{M}_+$, is Hermitian. The null set is of real dimension $3$, and it is the part of the non-pure family of *Biquaternion Zero Divisors* that lies in the subspace.
 
 ### The Lie Algebra Structure
 
@@ -218,7 +214,7 @@ It is not abelian: its derived subalgebra is $\operatorname{span}_{\mathbb{R}}\{
 
 ### A Unit, a Null Element, an Inverse
 
-Take $\tilde{Q} = e_1 + ie_0$. Its biquaternion norm is $N(\tilde{Q}) = 1 - 1 = 0$, so it is a zero divisor on the cone, and
+Take $\tilde{Q} = e_1 + ie_0$. Its algebraic square is $N(\tilde{Q}) = 1 - 1 = 0$, so it is a zero divisor on the null set, and
 
 $$
 \tilde{Q}^2 = -(1+1)e_0 + 2i e_1 = -2e_0 + 2ie_1 ,
@@ -230,7 +226,7 @@ $$
 \tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} = ie_0 - e_1 - e_2 ,
 $$
 
-again in the subspace, since quaternion conjugation preserves it and the biquaternion norm is real.
+again in the subspace, since quaternion conjugation preserves it and the algebraic square $N$ is real.
 
 ### A Zero-Divisor Pair
 
@@ -254,7 +250,7 @@ and for $\tilde{Q} = ie_0$ the bracket with any element vanishes, $[ie_0, \tilde
 
 ## Summary
 
-The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equivalently the anti-fixed space of Hermitian conjugation, the set of elements with imaginary scalar part and real vector part: a real vector space of dimension $4$ with basis $ie_0, e_1, e_2, e_3$, equal to $i\mathbb{M}_+$ and complementary to $\mathbb{M}_+$. It is not a subalgebra; its symmetrized product lands in $\mathbb{M}_+$ while its commutator stays inside, so that it is a real Lie algebra with the central imaginary line as an abelian ideal. The square of one of its elements is always Hermitian, with negative definite scalar part, so the subspace contains no root of plus one; its roots of minus one are the unit sphere of the real vector triple together with the two elements $\pm ie_0$. The biquaternion norm restricts to $|\mathbf{q}|^2 - (q'_0)^2$, the negative of its value on the Hermitian subspace; the units are the elements off the null set $|\mathbf{q}|^2 = (q'_0)^2$, the zero divisors are the non-zero elements of that set, and none of them is nilpotent. Reversal fixes the subspace, Hermitian conjugation negates it, complex conjugation negates the central line, and quaternion conjugation negates the real vector triple. Its decomposition along the coordinate blocks is $i\mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace carries no idempotent but the origin but does carry the $i$-images of the Hermitian idempotents, it is no ideal of any kind, its roots of minus one are the two trivial points together with the two-sphere of real unit vectors while it contains no root of $+1$, its zero divisors are exactly the complex multiples of the elements $i\tilde\Pi$ with $\tilde\Pi$ Hermitian, and it is one of the two Lie subalgebras of the six, isomorphic to $\mathbb{R} \oplus \mathfrak{su}(2)$ and also receiving the bracket of $\mathbb{M}_+$.
+The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equivalently the anti-fixed space of Hermitian conjugation, the set of elements with imaginary scalar part and real vector part: a real vector space of dimension $4$ with basis $ie_0, e_1, e_2, e_3$, equal to $i\mathbb{M}_+$ and complementary to $\mathbb{M}_+$. It is not a subalgebra; its symmetrized product lands in $\mathbb{M}_+$ while its commutator stays inside, so that it is a real Lie algebra with the central imaginary line as an abelian ideal. The square of one of its elements is always Hermitian, with negative definite scalar part, so the subspace contains no root of plus one; its roots of minus one are the unit sphere of the real vector triple together with the two elements $\pm ie_0$. The algebraic square $N$ restricts to $|\mathbf{q}|^2 - (q'_0)^2$, the negative of its value on the Hermitian subspace; the units are the elements off the null set $|\mathbf{q}|^2 = (q'_0)^2$, the zero divisors are the non-zero elements of that set, and none of them is nilpotent. Reversal fixes the subspace, Hermitian conjugation negates it, complex conjugation negates the central line, and quaternion conjugation negates the real vector triple. Its decomposition along the coordinate blocks is $i\mathbb{R}e_0 \oplus \operatorname{span}\{e_1,e_2,e_3\}$. In the algebra of particular cases the subspace carries no idempotent but the origin but does carry the $i$-images of the Hermitian idempotents, it is no ideal of any kind, its roots of minus one are the two trivial points together with the two-sphere of real unit vectors while it contains no root of $+1$, its zero divisors are exactly the complex multiples of the elements $i\tilde\Pi$ with $\tilde\Pi$ Hermitian, and it is one of the two Lie subalgebras of the six, isomorphic to $\mathbb{R} \oplus \mathfrak{su}(2)$ and also receiving the bracket of $\mathbb{M}_+$.
 
 ## Summary of Notation
 
@@ -266,7 +262,7 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equiv
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $q'_0$ | the imaginary scalar parameter |
 | $\mathbf{q} = (q_1,q_2,q_3)$ | the real vector part |
-| $N(\tilde{Q})$ | the biquaternion norm, $|\mathbf{q}|^2-(q'_0)^2$ on the subspace |
+| $N(\tilde{Q})$ | the algebraic square $N$, $|\mathbf{q}|^2-(q'_0)^2$ on the subspace |
 | $\flat = -{}^{*}$ | the reversal |
 | $\tilde\Pi$ | a Hermitian idempotent of $\mathbb{M}_+$; its $i$-image $i\tilde\Pi$ is a zero divisor of $\mathbb{M}_-$ |
 | $\mathrm{K} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | the rotation subalgebra, the derived subalgebra and intersection with $\mathbb{H}_{\mathbb{B}}$ |
@@ -274,7 +270,7 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equiv
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the Hermitian decomposition, the biquaternion norm and the four involutions
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the Hermitian decomposition and the four involutions
 - *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`), the complementary subspace and its Jordan structure
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, the composition law and the lattice of fixed spaces
@@ -283,5 +279,4 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equiv
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification whose trivial and real families meet in the subspace
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors and the associated idempotents
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the sector that is a Lie subalgebra and the brackets of both sectors
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the biquaternion norm, the group of units and the invertibility criterion
-- *The Orthogonal Lie Algebra* (`articles_maths/the-orthogonal-lie-algebra.md`), for the Lie algebras attached to a quadratic form of signature $(3,1)$
+- *The Anti-Hermitian Subspace under the Three Topologies* (`articles_maths/the-anti-hermitian-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies

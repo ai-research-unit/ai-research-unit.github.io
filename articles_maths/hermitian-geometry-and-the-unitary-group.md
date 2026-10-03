@@ -66,7 +66,7 @@ $$
 
 **Proposition (the positive-definite forms as a symmetric space).** The set of positive-definite Hermitian forms on $V$ is the homogeneous space $GL(m,\mathbb{C})/U(m)$; it is a symmetric space of noncompact type, and its Riemannian metric is the trace form. The set of Hermitian forms of signature $(p,q)$ is the orbit $GL(m,\mathbb{C})/U(p,q)$, a symmetric space whose complexification is the compact dual.
 
-**Proof.** $GL(m,\C)$ acts transitively on the positive-definite forms by $H\mapsto A^{\dagger}HA$, and the stabiliser of the standard form is $U(m)$; the involution $g\mapsto (g^{\dagger})^{-1}$ gives the symmetric structure, whose fixed-point group is $U(m)$. The signature orbit and the duality are the general homogeneous-space statement of *Homogeneous Spaces* and *Hermitian Symmetric Spaces and the Bergman Metric*.
+**Proof.** $GL(m,\mathbb{C})$ acts transitively on the positive-definite forms by $H\mapsto A^{\dagger}HA$, and the stabiliser of the standard form is $U(m)$; the involution $g\mapsto (g^{\dagger})^{-1}$ gives the symmetric structure, whose fixed-point group is $U(m)$. The signature orbit and the duality are the general homogeneous-space statement of *Homogeneous Spaces* and *Hermitian Symmetric Spaces and the Bergman Metric*.
 
 **Proposition (the Grassmannians as unitary symmetric spaces).** The unitary group $U(m)$ acts transitively on the complex $k$-planes of $V$, with stabiliser $U(k)\times U(m-k)$, so the complex Grassmannian is
 $$

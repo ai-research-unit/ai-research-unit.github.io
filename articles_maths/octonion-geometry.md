@@ -114,7 +114,7 @@ of right multiplication by a unit octonion. The set of classes is the **octonion
 **Theorem.** The octonionic projective plane is isomorphic to the space of rank-one idempotents of trace one in the exceptional Jordan algebra $\mathrm{H}_3(\mathbb{O})$,
 
 $$
-\mathbb{OP}^2\cong\left\{A\in\mathrm{H}_3(\mathbb{O}) : A\circ A = A,\ \operatorname{tr}A = 1\right\},
+\mathbb{OP}^2\cong\left\{A\in\mathrm{H}_3(\mathbb{O}) : A\bullet A = A,\ \operatorname{tr}A = 1\right\},
 $$
 
 and as a homogeneous space it is

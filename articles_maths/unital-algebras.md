@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the second of the two axioms that the corpus adds to the broad sense of an algebra. An $R$-algebra in the sense fixed in *Algebras* is an $R$-module with a bilinear product; the previous article of this category, *Associative Algebras*, adds associativity; this article adds the existence of an **identity** $1$ with $1x = x1 = x$ for every $x$. The two axioms are independent, and most of the corpus assumes both. Associativity without unitality is the ideal $(x) \subseteq R[x]$ of §*The Non-Unital Algebras of the Corpus*; unitality without associativity is the symmetrised algebra of $M_2(k)$ over a field of characteristic not $2$, in *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*: with the product $x \circ y = \tfrac12(xy + yx)$ the identity matrix is an identity, and the product is not associative.
+This article studies the second of the two axioms that the corpus adds to the broad sense of an algebra. An $R$-algebra in the sense fixed in *Algebras* is an $R$-module with a bilinear product; the previous article of this category, *Associative Algebras*, adds associativity; this article adds the existence of an **identity** $1$ with $1x = x1 = x$ for every $x$. The two axioms are independent, and most of the corpus assumes both. Associativity without unitality is the ideal $(x) \subseteq R[x]$ of §*The Non-Unital Algebras of the Corpus*; unitality without associativity is the symmetrised algebra of $M_2(k)$ over a field of characteristic not $2$, in *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*: with the product $x \bullet y = \tfrac12(xy + yx)$ the identity matrix is an identity, and the product is not associative.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra in the broad sense, unless a sentence names a stronger hypothesis. The article is algebraic throughout and uses no distance, no norm and no limit.
 
@@ -310,7 +310,7 @@ The non-unital algebras of the corpus are the polynomials of positive degree, th
 | unit, $u$ | An invertible element, as fixed in *Rings*, §*Units*; the corpus also says of a ring that it "need not have a unit" in the sense of an identity, the sense this article calls unital |
 | $A^\times$ | The unit group, as in *Centre, Units, Zero Divisors and Division Algebras*, §*Units* |
 | $\mathrm{GL}_n(R) = M_n(R)^\times$ | The units of the matrix algebra, $\det A \in R^\times$, as in *Matrix Algebras* |
-| $x \circ y = \tfrac12(xy + yx)$ | The symmetrised product, unital with identity $I$ in $M_n(k)$; *Jordan Algebras* writes the same symmetrisation as $xy + yx$, differing by the unit $2$ |
+| $x \bullet y = \tfrac12(xy + yx)$ | The symmetrised product, unital with identity $I$ in $M_n(k)$; *Jordan Algebras* writes the same symmetrisation as $xy + yx$, differing by the unit $2$ |
 | $k^\times G \subseteq k[G]^\times$ | Units of a group algebra over a field $k$, as in *Group Algebras*, §*Units and Zero Divisors* |
 | $(x) \subseteq R[x]$ | The polynomials of positive degree, a non-unital algebra |
 | $A^+ = A \oplus R$ | The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$; not the symmetrised algebra $A^+$ of *Jordan Algebras* |

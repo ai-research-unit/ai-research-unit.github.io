@@ -29,7 +29,7 @@ The **action of $J$** on $M$ is the composite $J\to\operatorname{Mult}(J)\to\ope
 **Proposition.** A module over $J$ is the same thing as an $R$-module $M$ with an $R$-linear map $\rho : J \to \operatorname{End}_R(M)$ such that
 
 $$
-\rho_{a\circ b} = \tfrac12\bigl(\rho_a\rho_b + \rho_b\rho_a\bigr) \qquad \text{and} \qquad [\rho_a, \rho_{a^2}] = 0 ,
+\rho_{a\bullet b} = \tfrac12\bigl(\rho_a\rho_b + \rho_b\rho_a\bigr) \qquad \text{and} \qquad [\rho_a, \rho_{a^2}] = 0 ,
 $$
 
 the second being the operator form of the Jordan identity.
@@ -118,7 +118,7 @@ the **twisted product** law: the graded actions compose by the multiplication al
 
 *Proof.* The first identity is the compatibility assumed in the definition of the graded module, applied to the generator $L_a$ and extended multiplicatively. For the second, $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_a\alpha_M\rho_b\alpha_M = \rho_a(\alpha_M\rho_b\alpha_M^{-1})\alpha_M^2 = \rho_a\rho_{\alpha(b)} = \rho_{L_aL_{\alpha(b)}}$. $\square$
 
-**Corollary.** The graded action is not a representation of the Jordan algebra: whereas the unsigned actions satisfy $\rho_a\rho_b = \rho_{L_aL_b}$, the graded actions satisfy $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, and $L_aL_{\alpha(b)}$ is generally neither $L_{a\circ\alpha(b)}$ nor of the form $L_c$. The set $\{\rho^{\alpha}_a : a \in J\}$ is closed under composition in the multiplication algebra, with the twisted law, but it is a representation of $J$ only when $\alpha = \mathrm{id}$ or when the twist is absorbed, which is the analogue for the action of the phenomenon recorded for the signed sandwich.
+**Corollary.** The graded action is not a representation of the Jordan algebra: whereas the unsigned actions satisfy $\rho_a\rho_b = \rho_{L_aL_b}$, the graded actions satisfy $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}}$, and $L_aL_{\alpha(b)}$ is generally neither $L_{a\bullet\alpha(b)}$ nor of the form $L_c$. The set $\{\rho^{\alpha}_a : a \in J\}$ is closed under composition in the multiplication algebra, with the twisted law, but it is a representation of $J$ only when $\alpha = \mathrm{id}$ or when the twist is absorbed, which is the analogue for the action of the phenomenon recorded for the signed sandwich.
 
 **Example.** The regular graded module is $M = J$ with $\alpha_M = \alpha$ and $\rho_a = L_a$. The graded action is $\rho^{\alpha}_a = L_a\alpha = \ell^{\alpha}_a$ of *The Signed Left Multiplication on a Jordan Algebra*, and the twisted law reads $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_aL_{\alpha(b)}} = L_aL_{\alpha(b)}$, the composite of the unsigned multiplication by $a$ and the unsigned multiplication by $\alpha(b)$. The sign rule is the parity shift of that article, recovered here as the twisted product law of the graded action.
 
@@ -136,7 +136,7 @@ The action of $J$ on $M$ has an **adjoint** with respect to the pairing of the c
 
 ## Summary
 
-A module over a Jordan algebra $J$ is a module over the multiplication algebra $\operatorname{Mult}(J)$, equivalently an $R$-module $M$ with $\rho:J\to\operatorname{End}_R(M)$ satisfying $\rho_{a\circ b}=\tfrac12(\rho_a\rho_b+\rho_b\rho_a)$ and $[\rho_a,\rho_{a^2}]=0$. When $J$ is graded by its grade involution $\alpha$ and $M$ by a compatible $\alpha_M$, the multiplication algebra is graded by the total parity of the multiplications, a homogeneous action by $a$ shifts the module degree by $|a|$, and the representing map is graded. The **graded action** $\rho^{\alpha}_a=\rho_a\alpha_M$ inserts the module grade involution; on the odd part it equals the negative of the unsigned action, and it composes by the **twisted product** $\rho^{\alpha}_a\rho^{\alpha}_b=\rho_{L_aL_{\alpha(b)}}$. The twist is the sign rule the grading imposes, and it makes the graded action a representation of the twisted multiplication algebra rather than of the Jordan algebra. No form, norm or distance occurs; the adjoint action is deferred to the `* Operator Theory` group.
+A module over a Jordan algebra $J$ is a module over the multiplication algebra $\operatorname{Mult}(J)$, equivalently an $R$-module $M$ with $\rho:J\to\operatorname{End}_R(M)$ satisfying $\rho_{a\bullet b}=\tfrac12(\rho_a\rho_b+\rho_b\rho_a)$ and $[\rho_a,\rho_{a^2}]=0$. When $J$ is graded by its grade involution $\alpha$ and $M$ by a compatible $\alpha_M$, the multiplication algebra is graded by the total parity of the multiplications, a homogeneous action by $a$ shifts the module degree by $|a|$, and the representing map is graded. The **graded action** $\rho^{\alpha}_a=\rho_a\alpha_M$ inserts the module grade involution; on the odd part it equals the negative of the unsigned action, and it composes by the **twisted product** $\rho^{\alpha}_a\rho^{\alpha}_b=\rho_{L_aL_{\alpha(b)}}$. The twist is the sign rule the grading imposes, and it makes the graded action a representation of the twisted multiplication algebra rather than of the Jordan algebra. No form, norm or distance occurs; the adjoint action is deferred to the `* Operator Theory` group.
 
 ## Summary of Notation
 

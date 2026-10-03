@@ -71,13 +71,13 @@ $$
 \mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & \tilde o & \tilde p\\ \tilde o^{\natural} & \beta & \tilde r\\ \tilde p^{\natural} & \tilde r^{\natural} & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ \tilde o,\tilde p,\tilde r\in\mathbb{O},
 $$
 
-with the symmetrised product $A\circ B = \tfrac{1}{2}(AB + BA)$.
+with the symmetrised product $A\bullet B = \tfrac{1}{2}(AB + BA)$.
 
-**Proposition.** $\mathrm{H}_3(\mathbb{O})$ is a real vector space of dimension $3 + 3\cdot 8 = 27$; the product $\circ$ is commutative and satisfies the Jordan identity $(A\circ B)\circ(A\circ A) = A\circ(B\circ(A\circ A))$, and the algebra is **exceptional**, that is, it is not isomorphic to a subalgebra of an associative algebra with the symmetrised product.
+**Proposition.** $\mathrm{H}_3(\mathbb{O})$ is a real vector space of dimension $3 + 3\cdot 8 = 27$; the product $\bullet$ is commutative and satisfies the Jordan identity $(A\bullet B)\bullet(A\bullet A) = A\bullet(B\bullet(A\bullet A))$, and the algebra is **exceptional**, that is, it is not isomorphic to a subalgebra of an associative algebra with the symmetrised product.
 
 *Proof.* The dimension count is immediate: three real diagonal entries and three octonion off-diagonal entries, the conjugate entries determined. The Jordan identity is the standard theorem on Hermitian matrices over a composition algebra, verified by a finite expansion using the alternating property of the associator; exceptionality is the theorem of Albert, quoted as standard.
 
-The product $\circ$ requires the two octonion products $\tilde o\tilde p$ and $\tilde p\tilde o$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.
+The product $\bullet$ requires the two octonion products $\tilde o\tilde p$ and $\tilde p\tilde o$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.
 
 **Definition.** The **determinant** of $A\in\mathrm{H}_3(\mathbb{O})$ is the real cubic form
 
@@ -101,7 +101,7 @@ The appearance of the associative triple $\operatorname{Sc}(\tilde o\tilde p\til
 
 ### The Freudenthal Triple System and the Groups $E_6$, $E_7$
 
-**Definition.** The **Freudenthal triple system** associated with $\mathrm{H}_3(\mathbb{O})$ is the pair $(\mathbb{R}\oplus\mathbb{R}\oplus\mathrm{H}_3(\mathbb{O})\oplus\mathrm{H}_3(\mathbb{O}), [\cdot,\cdot,\cdot])$ with the triple product built from the determinant, the adjoint (the quadratic map $A\mapsto A^\# = A\circ A - \operatorname{tr}(A)A + \cdots$) and the trace pairing.
+**Definition.** The **Freudenthal triple system** associated with $\mathrm{H}_3(\mathbb{O})$ is the pair $(\mathbb{R}\oplus\mathbb{R}\oplus\mathrm{H}_3(\mathbb{O})\oplus\mathrm{H}_3(\mathbb{O}), [\cdot,\cdot,\cdot])$ with the triple product built from the determinant, the adjoint (the quadratic map $A\mapsto A^\# = A\bullet A - \operatorname{tr}(A)A + \cdots$) and the trace pairing.
 
 **Theorem.** The groups associated with the exceptional Jordan algebra are the following.
 
@@ -244,7 +244,7 @@ The representation theory of $\mathrm{E}_8$ carries the same octonionic data. It
 | $S^6 = G_2/SU(3)$ | Imaginary unit sphere; isotropy $SU(3)$ |
 | $\varphi(u,v,w) = \langle u\times v,w\rangle$ | Associative three-form, $G_2 = \operatorname{Stab}_{SO(7)}\varphi$ |
 | $\mathrm{H}_3(\mathbb{O})$ | Exceptional Jordan algebra, Hermitian $3\times3$ matrices, $\dim 27$ |
-| $A\circ B = \tfrac12(AB+BA)$, $\operatorname{tr}$, $\det$ | Jordan product, trace, cubic determinant |
+| $A\bullet B = \tfrac12(AB+BA)$, $\operatorname{tr}$, $\det$ | Jordan product, trace, cubic determinant |
 | $F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O}))$ | Compact simple group, $\dim 52$, rank $4$ |
 | $E_6$, $E_7$, $E_8$ | Structure group of the determinant ($78$), Freudenthal triple system ($133$), magic square ($248$) |
 | $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$ | Cayley plane, $\dim 16$, Moufang plane |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The one-sided multiplication of a Jordan algebra is the operator $L_a(x) = a \circ x$ of *The Left and Right Multiplication Operators on a Jordan Algebra*; on a special Jordan algebra $J = A^+$ it is the symmetrisation $\tfrac12(\ell_a+\rho_a)$ of the two associative one-sided multiplications $\ell_a(x) = ax$ and $\rho_a(x) = xa$ of the ambient algebra $A$. When $A$ carries a grade involution $\alpha$, each of the associative one-sided multiplications admits a **signed** version, in which the argument is replaced by $\alpha(x)$: the **signed left multiplication** is
+The one-sided multiplication of a Jordan algebra is the operator $L_a(x) = a \bullet x$ of *The Left and Right Multiplication Operators on a Jordan Algebra*; on a special Jordan algebra $J = A^+$ it is the symmetrisation $\tfrac12(\ell_a+\rho_a)$ of the two associative one-sided multiplications $\ell_a(x) = ax$ and $\rho_a(x) = xa$ of the ambient algebra $A$. When $A$ carries a grade involution $\alpha$, each of the associative one-sided multiplications admits a **signed** version, in which the argument is replaced by $\alpha(x)$: the **signed left multiplication** is
 
 $$
 \ell^{\alpha}_a : J \to J, \qquad \ell^{\alpha}_a(x) = a\,\alpha(x) ,
@@ -31,14 +31,14 @@ the one-sided multiplications of *Left and Right Multiplication in a Ring*. They
 The Jordan left multiplication of $J = A^+$ is
 
 $$
-L_a = \tfrac12\bigl(\ell_a + \rho_a\bigr), \qquad L_a(x) = a \circ x = \tfrac12(ax + xa) ,
+L_a = \tfrac12\bigl(\ell_a + \rho_a\bigr), \qquad L_a(x) = a \bullet x = \tfrac12(ax + xa) ,
 $$
 
 as in *The Left and Right Multiplication Operators on a Jordan Algebra*. The two associative one-sided actions therefore do not separately descend to the Jordan structure; only their symmetrisation does, and this is the same phenomenon as the collapse $L_a = R_a$ of the two Jordan one-sided multiplications: the Jordan structure retains the symmetric part and discards the difference $\tfrac12(\ell_a-\rho_a) = \tfrac12\operatorname{ad}_a$.
 
 **Proposition.** The correspondence $a \mapsto L_a = \tfrac12(\ell_a+\rho_a)$ is injective when $A$ has no nonzero element annihilating $A$ on both sides, and it is additive; the map is an $R$-linear isomorphism onto its image, and it is not multiplicative in $a$ unless $A$ is commutative.
 
-*Proof.* Additivity is clear. If $\tfrac12(\ell_a+\rho_a) = 0$ then $ax+xa = 0$ for all $x$; multiplying by $x$ on the appropriate side or specialising to $x = 1$ gives $a = 0$ when $A$ is unital with $2$ invertible or when the two-sided annihilator is zero. The failure of multiplicativity is the failure of the associativity of $\circ$: $L_aL_b \ne L_{a\circ b}$ unless $A$ is commutative, as in *The Left and Right Multiplication Operators on a Jordan Algebra*. $\square$
+*Proof.* Additivity is clear. If $\tfrac12(\ell_a+\rho_a) = 0$ then $ax+xa = 0$ for all $x$; multiplying by $x$ on the appropriate side or specialising to $x = 1$ gives $a = 0$ when $A$ is unital with $2$ invertible or when the two-sided annihilator is zero. The failure of multiplicativity is the failure of the associativity of $\circ$: $L_aL_b \ne L_{a\bullet b}$ unless $A$ is commutative, as in *The Left and Right Multiplication Operators on a Jordan Algebra*. $\square$
 
 ## The Signed One-Sided Actions
 

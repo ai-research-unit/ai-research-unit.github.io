@@ -150,10 +150,10 @@ The decomposition is produced by the orthogonal idempotents $\tilde\Pi_1=\tfrac1
 
 **Corollary (complete reducibility).** Every left $\mathbb{B}$-module is semisimple: it is a direct sum of copies of $S$, and by the Morita equivalence of *Modules over the Biquaternion Algebra* it is $S\otimes_\mathbb{C}W$ for a complex vector space $W$, of complex dimension $2\dim_\mathbb{C}W$. The regular module is the particular case $W=\mathbb{C}^2$.
 
-**Remark (the minimal left ideals and the lines of $\mathbb{C}^2$).** In the matrix model the minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two-dimensional subspaces
+**Remark (the minimal left ideals and the lines of $S$).** The minimal left ideals of $\mathbb{B}$ are the two-dimensional subspaces
 
 $$
-L_\ell=\{\tilde R:\tilde R(\mathbb{C}^2)\subseteq\ell\},\qquad \ell \text{ a line in } \mathbb{C}^2,
+L_\ell=\{\tilde R:\tilde R S\subseteq\ell\},\qquad \ell \text{ a line in } S,
 $$
 
 one for each line $\ell$, so the family of minimal left ideals is a projective line; the two summands of the decomposition above correspond to the two coordinate lines, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with image $\ell$. The classification is that of *Biquaternion Ideals and Peirce Decomposition*, and the theorem above adds only the reading that these are the simple submodules of the regular module.
@@ -162,7 +162,7 @@ one for each line $\ell$, so the family of minimal left ideals is a projective l
 
 **Proposition.** The algebra $\mathbb{B}$ is von Neumann regular: for every $\tilde Q\in\mathbb{B}$ there is a $\tilde B\in\mathbb{B}$ with $\tilde Q\tilde B\tilde Q=\tilde Q$. It is self-injective: as a left module over itself it is injective, so every $\mathbb{B}$-linear map from a submodule of ${}_{\mathbb{B}}\mathbb{B}$ to ${}_{\mathbb{B}}\mathbb{B}$ extends to ${}_{\mathbb{B}}\mathbb{B}$.
 
-**Proof.** Both properties are properties of the matrix algebra $M_2(\mathbb{C})$ transported along the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. A matrix $Q$ has the von Neumann inverse $B$ with $QBQ=Q$, for instance the Moore–Penrose inverse of $Q$; and $M_2(\mathbb{C})$ is self-injective because it is a Frobenius algebra, the matrix trace providing the non-degenerate associative pairing. Both are preserved by isomorphism, and the injectivity statement is the Baer criterion applied to ${}_{\mathbb{B}}\mathbb{B}$.
+**Proof.** Both properties are properties of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: it is von Neumann regular, and it is self-injective because it is a Frobenius algebra, the trace providing the non-degenerate associative pairing. Both are preserved by isomorphism, and the injectivity statement is the Baer criterion applied to ${}_{\mathbb{B}}\mathbb{B}$.
 
 **Corollary (the regular module is projective and injective).** The left regular module is free and therefore projective, and it is injective by the proposition; the two properties together mean that ${}_{\mathbb{B}}\mathbb{B}$ is a projective generator and an injective cogenerator of the module category, the reference object from which every module is built by direct sums, quotients and submodules.
 

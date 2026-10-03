@@ -67,7 +67,7 @@ $$
 \mathcal{E}nd(\mathcal{F})=\mathcal{H}(\mathcal{F})\oplus\mathcal{S}(\mathcal{F}),\qquad T=\tfrac12(T+T^{\dagger})+\tfrac12(T-T^{\dagger}),
 $$
 
-the Hermitian part is closed under the **Jordan product** $T\circ S=\frac12(TS+ST)$ and is a sheaf of Jordan algebras, and the skew part is closed under the **commutator** $[T,S]=TS-ST$ and is a sheaf of Lie algebras.
+the Hermitian part is closed under the **Jordan product** $T\bullet S=\frac12(TS+ST)$ and is a sheaf of Jordan algebras, and the skew part is closed under the **commutator** $[T,S]=TS-ST$ and is a sheaf of Lie algebras.
 
 *Proof.* The dagger laws of the previous section are the axioms of a $\sigma$-semilinear anti-involution, with the fixed elements the Hermitian endomorphisms and the anti-invariant elements the skew ones. The decomposition is the sectionwise decomposition of the fixed and anti-invariant parts of an involutive algebra of *Involutive Linear Algebras*; the Hermitian part is closed under the anticommutator and the skew part under the commutator, and the closure of the Hermitian part under the ordinary product would require $TS=T^{\dagger}S^{\dagger}=ST$, that is, the commutativity of the factors.
 

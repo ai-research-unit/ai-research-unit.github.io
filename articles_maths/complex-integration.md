@@ -224,7 +224,7 @@ $$
 so
 
 $$
-\frac{F(A+h) - F(A)}{h} - f(A) = \int_0^1 \bigl( f(A + th) - f(A) \bigr) \, dt \longrightarroB 0
+\frac{F(A+h) - F(A)}{h} - f(A) = \int_0^1 \bigl( f(A + th) - f(A) \bigr) \, dt \longrightarrow 0
 $$
 
 by continuity of $f$ at $A$. Hence $F'(A) = f(A)$.

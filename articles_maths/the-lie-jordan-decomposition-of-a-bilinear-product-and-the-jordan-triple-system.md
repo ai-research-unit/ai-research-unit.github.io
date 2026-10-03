@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \circ y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of *Jordan Algebras* and of the *Symmetric Linear Algebras* of this part, and the antisymmetric bracket is the subject of *Lie Algebras* and of the *Anti-symmetric Linear Algebras*. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are *both* present and *compatible*, and that the ternary product they generate is a Jordan triple system.
+A single bilinear product on a vector space carries two structures at once. Its symmetrisation $x \bullet y = \tfrac12(xy + yx)$ is commutative, and its antisymmetrisation $[x,y] = \tfrac12(xy - yx)$ is anticommutative. The corpus treats the two separately: the symmetric product is the subject of *Jordan Algebras* and of the *Symmetric Linear Algebras* of this part, and the antisymmetric bracket is the subject of *Lie Algebras* and of the *Anti-symmetric Linear Algebras*. This article records the observation — Liu Yu-Fen's, in the source of the biquaternion dirac construction — that for the specific product built from the Dirac matrices the two structures are *both* present and *compatible*, and that the ternary product they generate is a Jordan triple system.
 
 The setting is the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, read as a complex four-dimensional vector space $V = \mathbb{C}^4$ with a bilinear composition whose structure constants are the source's
 
@@ -25,12 +25,12 @@ is associative and has $k$ as its unit; it is the biquaternion product in a part
 For $G, H \in V$ put
 
 $$
-G \circ H = \tfrac12\bigl(G \star H + H \star G\bigr),
+G \bullet H = \tfrac12\bigl(G \star H + H \star G\bigr),
 \qquad
 [G, H] = \tfrac12\bigl(G \star H - H \star G\bigr).
 $$
 
-Then $G \circ H = H \circ G$ and $[G,H] = -[H,G]$: the symmetrisation is commutative, the antisymmetrisation anticommutative. Both are bilinear, and either, together with the other, reconstructs the product: $G \star H = G \circ H + [G, H]$. The two are therefore not two structures on $V$ but the two halves of one structure.
+Then $G \bullet H = H \bullet G$ and $[G,H] = -[H,G]$: the symmetrisation is commutative, the antisymmetrisation anticommutative. Both are bilinear, and either, together with the other, reconstructs the product: $G \star H = G \bullet H + [G, H]$. The two are therefore not two structures on $V$ but the two halves of one structure.
 
 ### The Lie Half
 
@@ -47,23 +47,23 @@ so $(V,[\cdot,\cdot])$ is a Lie algebra. Because the product that defines it is 
 The symmetrisation satisfies the **Jordan identity**
 
 $$
-G \circ (H \circ (G \circ G)) = (G \circ H) \circ (G \circ G),
+G \bullet (H \bullet (G \bullet G)) = (G \bullet H) \bullet (G \bullet G),
 $$
 
-so $(V, \circ)$ is a Jordan algebra. Because the product is associative, this is the *special* Jordan algebra $M_2(\mathbb{C})^+$ — the symmetrisation of an associative algebra, which is the general source of special Jordan algebras, and which here is the corpus's $H_2(\mathbb{C})$ with the Hermitian part singled out. The corpus's *Jordan Algebras* and *Special and Exceptional Jordan Algebras* record the theory; the second half of the source's decomposition lands exactly there.
+so $(V, \bullet)$ is a Jordan algebra. Because the product is associative, this is the *special* Jordan algebra $M_2(\mathbb{C})^+$ — the symmetrisation of an associative algebra, which is the general source of special Jordan algebras, and which here is the corpus's $H_2(\mathbb{C})$ with the Hermitian part singled out. The corpus's *Jordan Algebras* and *Special and Exceptional Jordan Algebras* record the theory; the second half of the source's decomposition lands exactly there.
 
 ### The Compatibility
 
 The two halves are not independent: the bracket is a *derivation* of the Jordan product,
 
 $$
-[G, H \circ K] = [G,H] \circ K + H \circ [G,K],
+[G, H \bullet K] = [G,H] \bullet K + H \bullet [G,K],
 $$
 
 and the sum
 
 $$
-[G, H \circ K] + [H, K \circ G] + [K, G \circ H] = 0
+[G, H \bullet K] + [H, K \bullet G] + [K, G \bullet H] = 0
 $$
 
 vanishes identically. The first identity says the Lie algebra acts on the Jordan algebra by derivations; the second is the **fundamental identity** that the source names, the compatibility condition that makes the pair a *Lie–Jordan algebra* in the sense of the literature on the Kantor–Koecher construction. The three identities — Jacobi, Jordan, and this compatibility — are what the source's "revised and corrected" account of its algebra asserts; the correction it makes to its earlier formulation is exactly a sign, the sign of the $\varepsilon$ term in $c^{\mu\nu\lambda}$, without which the antisymmetric half fails Jacobi and the symmetric half fails Jordan.
@@ -75,10 +75,10 @@ vanishes identically. The first identity says the Lie algebra acts on the Jordan
 The symmetrised product generates a *ternary* operation,
 
 $$
-\{G, H, K\} = (G \circ H) \circ K + (K \circ H) \circ G - (G \circ K) \circ H,
+\{G, H, K\} = (G \bullet H) \bullet K + (K \bullet H) \bullet G - (G \bullet K) \bullet H,
 $$
 
-which is the linearisation of the **quadratic representation** $U_G H = G \circ (H \circ G)$ of the Jordan algebra. Equivalently, and this is the form the source's construction makes natural, the ternary product of an associative algebra with an involution is
+which is the linearisation of the **quadratic representation** $U_G H = G \bullet (H \bullet G)$ of the Jordan algebra. Equivalently, and this is the form the source's construction makes natural, the ternary product of an associative algebra with an involution is
 
 $$
 \{G, H, K\} = (G \star H) \star K + (K \star H) \star G .
@@ -107,8 +107,8 @@ The four-dimensional carrier has one more piece of visible structure. In the tri
 
 - Jacobi for the antisymmetric half;
 - the Jordan identity for the symmetric half;
-- the derivation identity $[G, H\circ K] = [G,H]\circ K + H\circ[G,K]$;
-- the fundamental identity $[G,H\circ K] + [H,K\circ G] + [K,G\circ H] = 0$;
+- the derivation identity $[G, H\bullet K] = [G,H]\bullet K + H\bullet[G,K]$;
+- the fundamental identity $[G,H\bullet K] + [H,K\bullet G] + [K,G\bullet H] = 0$;
 - the symmetry $\{G,H,K\} = \{K,H,G\}$ and the five-linear Jordan triple identity, for both ternary forms;
 - that the composition is associative with unit $k$, and that the blocks of $e_1, e_2, e_3$ reproduce the quaternion relations.
 
@@ -130,7 +130,7 @@ These questions are open.
 
 ## Summary
 
-A bilinear product on a vector space has two halves: its symmetrisation $G\circ H = \tfrac12(G\star H + H\star G)$ and its antisymmetrisation $[G,H] = \tfrac12(G\star H - H\star G)$. For the product built from the Dirac matrices, $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$, the antisymmetric half satisfies the Jacobi identity and is the Lie algebra $\mathfrak{gl}(2,\mathbb{C})$, and the symmetric half satisfies the Jordan identity and is the special Jordan algebra $M_2(\mathbb{C})^+$. The two halves are compatible: the bracket is a derivation of the Jordan product, $[G,H\circ K] = [G,H]\circ K + H\circ[G,K]$, and the fundamental identity $[G,H\circ K] + [H,K\circ G] + [K,G\circ H] = 0$ holds. The symmetrised product generates a ternary operation $\{G,H,K\} = (G\circ H)\circ K + (K\circ H)\circ G - (G\circ K)\circ H$, symmetric in its outer arguments and satisfying the five-linear Jordan triple identity; the source's order-three ding is this triple system. The block structure of the units $e_\mu$ exhibits the matrix algebra directly, with the four blocks of each unit being the source's periodic matrices $J_i$.
+A bilinear product on a vector space has two halves: its symmetrisation $G\bullet H = \tfrac12(G\star H + H\star G)$ and its antisymmetrisation $[G,H] = \tfrac12(G\star H - H\star G)$. For the product built from the Dirac matrices, $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$, the antisymmetric half satisfies the Jacobi identity and is the Lie algebra $\mathfrak{gl}(2,\mathbb{C})$, and the symmetric half satisfies the Jordan identity and is the special Jordan algebra $M_2(\mathbb{C})^+$. The two halves are compatible: the bracket is a derivation of the Jordan product, $[G,H\bullet K] = [G,H]\bullet K + H\bullet[G,K]$, and the fundamental identity $[G,H\bullet K] + [H,K\bullet G] + [K,G\bullet H] = 0$ holds. The symmetrised product generates a ternary operation $\{G,H,K\} = (G\bullet H)\bullet K + (K\bullet H)\bullet G - (G\bullet K)\bullet H$, symmetric in its outer arguments and satisfying the five-linear Jordan triple identity; the source's order-three ding is this triple system. The block structure of the units $e_\mu$ exhibits the matrix algebra directly, with the four blocks of each unit being the source's periodic matrices $J_i$.
 
 The identities Jacobi, Jordan, the derivation identity, the fundamental identity and the Jordan triple identity are all verified. The content of the construction is the identification: one product, the structure constants of $M_2(\mathbb{C})$, carries three compatible algebraic structures at once.
 
@@ -145,7 +145,7 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
 | $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol |
 | $k^\mu$ | Neutral vector, the unit of the composition |
-| $G \circ H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
+| $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |
 | $\{G,H,K\}$ | Ternary (Jordan triple) product |
 | $e_\mu = i\hat e_\mu$ | Units of the trinomial basis, $\hat e_k^2 = -I$ |

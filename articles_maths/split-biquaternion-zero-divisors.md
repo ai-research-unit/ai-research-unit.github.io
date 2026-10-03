@@ -30,10 +30,10 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternio
 A split biquaternion $\tilde{Q}$ is a **zero divisor** if it is **nonzero** and there exists a **nonzero** split biquaternion $\tilde{R}$ such that
 
 $$
-\tilde{Q} \circ \tilde{R} = 0 \quad \text{or} \quad \tilde{R} \circ \tilde{Q} = 0.
+\tilde{Q} \bullet \tilde{R} = 0 \quad \text{or} \quad \tilde{R} \bullet \tilde{Q} = 0.
 $$
 
-The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is **not** a zero divisor, even though $0 \circ \tilde{R} = 0$ for any $\tilde{R}$.
+The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is **not** a zero divisor, even though $0 \bullet \tilde{R} = 0$ for any $\tilde{R}$.
 
 ### Criterion
 

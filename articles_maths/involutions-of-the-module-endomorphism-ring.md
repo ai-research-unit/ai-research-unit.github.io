@@ -93,7 +93,7 @@ $$
 \operatorname{Fix}(\theta)=\operatorname{Sym}(M)
 $$
 
-is an $R$-submodule closed under the Jordan product $f\circ g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.
+is an $R$-submodule closed under the Jordan product $f\bullet g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.
 
 *Proof.* This is *Module Operators with an Involution*. $\square$
 

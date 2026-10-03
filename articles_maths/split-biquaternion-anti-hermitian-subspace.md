@@ -55,7 +55,7 @@ The obstruction is that a product of two anti-Hermitian elements has a real scal
 **Proposition.** For $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ and $\tilde{R} = j s_0 e_0 + \mathbf{v}$ in $\mathbb{M}_-$, with $\mathbf{u}, \mathbf{v}$ real pure quaternions,
 
 $$
-\tilde{Q} \circ \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}) = \left(r_0 s_0 - \mathbf{u}\cdot\mathbf{v}\right) e_0 + j\left(r_0 \mathbf{v} + s_0 \mathbf{u}\right) \in \mathbb{M}_+.
+\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}) = \left(r_0 s_0 - \mathbf{u}\cdot\mathbf{v}\right) e_0 + j\left(r_0 \mathbf{v} + s_0 \mathbf{u}\right) \in \mathbb{M}_+.
 $$
 
 **Proof.** Expanding and using $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$, the products $\tilde{Q}\tilde{R}$ and $\tilde{R}\tilde{Q}$ differ only in the sign of the cross term $\mathbf{u}\times\mathbf{v}$, which therefore cancels under symmetrization; the remaining scalar part is real and the remaining vector part is purely split-imaginary.
@@ -221,7 +221,7 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian 
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $N(\tilde{Q}) = r_0^2 + |\mathbf{u}|^2$ | Norm on $\mathbb{M}_-$, signature $(4,0)$ |
 | $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(3,1)$ on $\mathbb{M}_-$ |
-| $\tilde{Q} \circ \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ | Symmetrized product, landing in $\mathbb{M}_+$ |
+| $\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ | Symmetrized product, landing in $\mathbb{M}_+$ |
 | $[\tilde{Q}, \tilde{R}] = 2\,\mathbf{u} \times \mathbf{v}$ | Commutator, a pure real quaternion |
 | $j : \mathbb{M}_- \to \mathbb{M}_+$ | Isomorphism by multiplication by $j$ |
 | $S^2$ | The roots of $-1$ in $\mathbb{M}_-$, unit pure real quaternions |

@@ -471,7 +471,7 @@ For $\tilde{Q} = 0$ the modulus is $\rho = 0$ and the rotor is arbitrary: $0 = 0
 
 ### The Four Conjugations and the Two Factors
 
-The four conjugations act on the pair $(A,A')$ as follows: ${}^{\natural}$ conjugates the two quaternion parts, $\tilde{Q}^{\natural} = A^{\natural} + j A^{\natural}'$; $\bar{\cdot}$ changes the sign of the split complex part, $\bar{\tilde{Q}} = A - jA'$, so that $\bar{\tilde{Q}_{\pm}} = \tilde{Q}_{\mp}$; ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ does both; and $\flat = -{}^{*}$. Of these, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ in place of an anti-automorphism law.
+The four conjugations act on the pair $(A,A')$ as follows: ${}^{\natural}$ conjugates the two quaternion parts, $\tilde{Q}^{\natural} = A^{\natural} + j {A^{\natural}}'$; $\bar{\cdot}$ changes the sign of the split complex part, $\bar{\tilde{Q}} = A - jA'$, so that $\bar{\tilde{Q}_{\pm}} = \tilde{Q}_{\mp}$; ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ does both; and $\flat = -{}^{*}$. Of these, ${}^{\natural}$ and ${}^{*}$ are anti-automorphisms, $\bar{\cdot}$ is an automorphism, and $\flat$ is neither, satisfying $(\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat}$ in place of an anti-automorphism law.
 
 On the polar data the first three act as follows. Quaternion conjugation fixes the modulus — $\rho$ has real components, so $\bar{\rho} = \rho$ — and inverts each half of the rotor,
 

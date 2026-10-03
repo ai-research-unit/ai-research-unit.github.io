@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The second $4 \times 4$ realization of the biquaternion algebra, the one built on the basis whose vector units square to $+e_0$, carries two objects of a form-theoretic nature: a real form of signature $(1,3)$, for which the three generators are skew-symmetric, and a multiplicative quadratic map into the real matrices. Both are read here. The realization itself is *Biquaternion 4×4 Regular Matrix Element Representation*, §*A Second $4 \times 4$ Realization, and the Modulus-Squared Map*, where the matrix $\Phi'$ is written and its equivalence to the regular representation is proved; the coefficient-space form is *The Bilinear Form on the Biquaternion Algebra*; the companion FORM article for the first realization is *The Forms in the Matrix Representation of the Biquaternion Algebra*.
+The second $4 \times 4$ realization of the biquaternion algebra, the one built on the basis whose vector units square to $+e_0$, carries two objects of a form-theoretic nature: a real form of signature $(1,3)$, for which the three generators are skew-symmetric, and a multiplicative quadratic map into the real matrices. Both are read here. The realization itself is *Biquaternion 4×4 Regular Matrix Element Representation*, §*A Second $4 \times 4$ Realization, and the Multiplicative Map*, where the matrix $\Phi'$ is written and its equivalence to the regular representation is proved; the coefficient-space form is *The Bilinear Form on the Biquaternion Algebra*; the companion FORM article for the first realization is *The Forms in the Matrix Representation of the Biquaternion Algebra*.
 
 The realization is written in the basis $e_0, ie_1, ie_2, ie_3$ with
 

@@ -95,13 +95,13 @@ then $\mathbb{P}(\bigcap_i A_i^c) > 0$.
 *Proof (sketch).* One shows, by induction on $|S|$, that
 
 $$
-\mathbb{P}\!\left(A_i \bigm\mid \bigcap_{j\in S}A_j^c\right) \leq x_i
+\mathbb{P}\!\left(A_i \bigm| \bigcap_{j\in S}A_j^c\right) \leq x_i
 $$
 
 for every $i$ and every $S$ disjoint from $N(i)\cup\{i\}$. The induction splits $S$ into $S_1 = S\cap N(i)$ and $S_2 = S\setminus N(i)$: the events indexed by $S_2$ are independent of $A_i$ and drop out of the conditional probability, while the events indexed by $S_1$ are estimated by the induction hypothesis and the product in the hypothesis. Then
 
 $$
-\mathbb{P}\!\left(\bigcap_iA_i^c\right) = \prod_i\left(1 - \mathbb{P}\!\left(A_i\bigm\mid \bigcap_{j<i}A_j^c\right)\right) > 0,
+\mathbb{P}\!\left(\bigcap_iA_i^c\right) = \prod_i\left(1 - \mathbb{P}\!\left(A_i\bigm| \bigcap_{j<i}A_j^c\right)\right) > 0,
 $$
 
 since every factor is at least $1-x_i > 0$; in the symmetric form one takes $x_i = 1/(d+1)$, for which $\prod_{j\in N(i)}(1-x_j) \geq (1-\frac1{d+1})^d$, and $ep(d+1)\leq1$ makes the product inequality hold.

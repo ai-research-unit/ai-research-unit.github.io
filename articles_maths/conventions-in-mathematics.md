@@ -31,13 +31,14 @@ The conventions below are those used throughout the corpus. They are stated once
 | $T(V), S(V), \Lambda(V), Cl(V,Q)$ | tensor, symmetric, exterior and Clifford algebras |
 | $V^{\otimes n}, S^n V, \Lambda^n V$ | tensor, symmetric and exterior powers |
 | $B(v,w), Q(v), N(x)$ | bilinear form, quadratic form, norm |
+| $\bullet$ | the symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
 | $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | the conjugations of an algebra with an involution, and the adjoint of an operator; *The conjugations and the adjoint* below fixes their meanings |
 | $\tilde\Pi$ | an idempotent, a projector or a pure state, and the minimal left ideal it generates |
 | $\tilde P, \tilde q, \tilde Q$ | a generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one |
 
 ### Groups, rings and operations
 
-A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector.
+A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector. The **symmetrised (Jordan) product** is written with a bullet, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and the circle $\circ$ is kept for the **composition of maps**, as in $\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\tilde R}$.
 
 ### LaTeX and typesetting
 

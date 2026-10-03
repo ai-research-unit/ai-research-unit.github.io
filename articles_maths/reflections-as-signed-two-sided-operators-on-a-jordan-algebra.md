@@ -24,11 +24,11 @@ It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal
 
 *Proof.* For $x, y \in J$,
 $$
-c_u(x\circ y) = u\,\alpha(x\circ y)\,u^{-1} = u\,\bigl(\alpha(x)\circ\alpha(y)\bigr)\,u^{-1} ,
+c_u(x\bullet y) = u\,\alpha(x\bullet y)\,u^{-1} = u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} ,
 $$
 and, since $z\mapsto uzu^{-1}$ is an algebra automorphism of $A$ and therefore preserves the halved product,
 $$
-u\,\bigl(\alpha(x)\circ\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\circ\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\circ c_u(y) .
+u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y) .
 $$
 Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$. $\square$
 
@@ -72,7 +72,7 @@ $$
 
 *Proof.* By the square theorem, $c_u^2 = \operatorname{conj}_{N(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central. $\square$
 
-**Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \circ u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
+**Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
 
 ### The Relation to the Signed Sandwich
 

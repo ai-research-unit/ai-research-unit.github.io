@@ -167,7 +167,7 @@ On a module with a non-degenerate reflexive pairing, the endomorphism ring is an
 | $\operatorname{cong}_g(f)=g^{*}fg$ | congruence by $g$ |
 | $f\sim h$ | unitarily equivalent, $h=ufu^{*}$ |
 | $L_a^{*}=L_{\sigma(a)}$ | the involution on the action |
-| $f\circ g=\frac12(fg+gf)$ | the Jordan product on the self-adjoint part |
+| $f\bullet g=\frac12(fg+gf)$ | the Jordan product on the self-adjoint part |
 
 ## Further Reading
 

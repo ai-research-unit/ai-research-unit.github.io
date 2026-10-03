@@ -91,7 +91,7 @@ Associativity implies power-associativity, and the converse fails; the corpus ca
 | Algebra | The property it has | Introduced in |
 |---|---|---|
 | The algebra $A$ with basis $u, v$ and $u^2 = v$, $uv = vu = v$, $v^2 = 0$ | commutative, hence flexible, but not power-associative: $(u^2)(u^2) = 0$ while $((u^2)u)u = v$ | *Non-Associative Algebras and the Property Ladder* |
-| The algebra $B$, the symmetrised $M_2(k)$ with $x \circ y = \tfrac{1}{2}(xy + yx)$ | power-associative but not alternative, for $k$ of characteristic not $2$ | *Non-Associative Algebras and the Property Ladder* |
+| The algebra $B$, the symmetrised $M_2(k)$ with $x \bullet y = \tfrac{1}{2}(xy + yx)$ | power-associative but not alternative, for $k$ of characteristic not $2$ | *Non-Associative Algebras and the Property Ladder* |
 
 These two algebras are constructed in the ladder article to separate the rungs of the ladder rather than met as named algebras elsewhere, and they are included here because they show that associativity is not recovered from the weaker identities in either direction.
 
@@ -137,7 +137,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $M_n(D)$ | The matrix ring over a division ring |
 | $U(\mathrm{G})$, $A_{\mathrm{Lie}}$ | The universal enveloping algebra, and the commutator Lie algebra of an associative algebra |
 | $\mathbb{O}$, $\mathbb{S}$ | The octonions and the sedenions |
-| $x \circ y = \tfrac{1}{2}(xy + yx)$ | The symmetrised product |
+| $x \bullet y = \tfrac{1}{2}(xy + yx)$ | The symmetrised product |
 
 ## Further Reading
 

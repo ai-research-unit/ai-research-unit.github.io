@@ -38,7 +38,7 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 **Definition.** An operator $F$ is **self-adjoint** when $F^{\dagger} = F$, **skew-adjoint** when $F^{\dagger} = -F$, and **unitary** when $F^{\dagger}F = FF^{\dagger} = 1$; the set of the self-adjoint operators is $E^+$ and the set of the skew-adjoint operators is $E^-$, with $E = \operatorname{End}_R(A)$.
 
-**Proposition.** The self-adjoint operators form a Jordan algebra under $F\circ G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
+**Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
 
 *Proof.* This is *Involutive Linear Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group. $\square$
 

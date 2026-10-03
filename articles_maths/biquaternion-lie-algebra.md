@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as $\mathrm{GL}(2,\mathbb{C})$ over $\mathbb{C}$ with its centre, the trace-free part as $\mathrm{SL}(2,\mathbb{C})$, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as a cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a natural bracket, the commutator, and with it the structure of a Lie algebra. This article reads that structure: the algebra as the endomorphism Lie algebra $\mathfrak{gl}(2,\mathbb{C})$ with its centre, the trace-free part as the traceless endomorphisms $\mathfrak{sl}(2,\mathbb{C})$, the derived subalgebra and its identity with the vector subspace, the bracket of two vectors as a cross product, the action of the bracket on the six distinguished subspaces, and the real form of the trace-free part with its two three-dimensional real summands. The adjoint maps close the account.
 
 The bracket is the infinitesimal counterpart of the group. The group of units, the exponential and its parametrisation are in *Biquaternion Lie Group and Exponential Structure*; the topology of the group is in *The Biquaternion Unit Group as a Topological Group*; and the motions the bracket generates are in *Biquaternion Rotations and Lorentz Transformations*. The algebra, its basis and its six subspaces are from *Biquaternion Algebra*, and the behaviour of the product and the bracket on each subspace is tabulated in *Biquaternion Relations Between Subspaces*, cited below.
 
@@ -102,7 +102,7 @@ and the map $\tilde{Q}\mapsto\operatorname{ad}_{\tilde{Q}}$ is a Lie algebra hom
 
 ## Summary
 
-Under the commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ the biquaternion algebra is a complex Lie algebra of complex dimension $4$ and real dimension $8$, isomorphic to $\mathrm{GL}(2,\mathbb{C})$; its centre is the scalar line $\mathbb{C}e_0$, of complex dimension $1$. The trace functional is $\mathrm{Tr}(\tilde{Q})=2Q_0$, and the trace-free part $\mathrm{B}_0=\{\tilde{Q}:Q_0=0\}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ has complex dimension $3$ and real dimension $6$, isomorphic to $\mathrm{SL}(2,\mathbb{C})$; the algebra splits as $\mathrm{G}=\mathrm{B}_0\oplus\mathbb{C}e_0$.
+Under the commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ the biquaternion algebra is a complex Lie algebra of complex dimension $4$ and real dimension $8$, isomorphic to $\mathfrak{gl}(2,\mathbb{C})$; its centre is the scalar line $\mathbb{C}e_0$, of complex dimension $1$. The trace functional is $\mathrm{Tr}(\tilde{Q})=2Q_0$, and the trace-free part $\mathrm{B}_0=\{\tilde{Q}:Q_0=0\}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ has complex dimension $3$ and real dimension $6$, isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; the algebra splits as $\mathrm{G}=\mathrm{B}_0\oplus\mathbb{C}e_0$.
 
 The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$, so the algebra is not solvable; the bracket of two pure vectors is twice their cross product, $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$. Over $\mathbb{R}$ the trace-free part is the sum of the two three-dimensional real summands $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, and on the first the bracket is twice the cross product.
 
@@ -113,7 +113,7 @@ The derived subalgebra is the vector subspace itself, $[\mathrm{G},\mathrm{G}]=\
 | $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ | Commutator bracket; $\mathbb{B}$ is a complex Lie algebra under it |
 | $\mathrm{G}=\mathbb{B}$ | The algebra as a Lie algebra; complex dimension $4$, real dimension $8$ |
 | $\mathrm{Tr}(\tilde{Q})=2Q_0$ | Trace functional |
-| $\mathrm{B}_0=\{Q_0=0\}$ | Trace-free subalgebra; $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; $\mathrm{SL}(2,\mathbb{C})$ |
+| $\mathrm{B}_0=\{Q_0=0\}$ | Trace-free subalgebra; $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; $\mathfrak{sl}(2,\mathbb{C})$ |
 | $\mathrm{Z}(\mathrm{G})=\mathbb{C}e_0$ | Centre; complex dimension $1$, real dimension $2$ |
 | $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$ | Derived subalgebra, the vector subspace |
 | $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$ | Bracket of pure vectors as twice the cross product |

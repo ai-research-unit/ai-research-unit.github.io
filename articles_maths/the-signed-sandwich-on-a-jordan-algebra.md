@@ -32,7 +32,7 @@ $$
 
 the quadratic representation of *The Left and Right Multiplication Operators on a Jordan Algebra*; in particular the symmetrisation of the sandwiches is an operator of the Jordan structure, and it lies in $\operatorname{Mult}(J)$.
 
-*Proof.* For $x \in J$ one has $\tfrac12(S_{a,b}+S_{b,a})(x) = \tfrac12(axb+bxa)$, and the special form of the quadratic representation is $U_{a,b}(x) = \tfrac12(axb+bxa)$. That $U_{a,b}$ lies in $\operatorname{Mult}(J)$ is its definition, $U_{a,b} = L_aL_b+L_bL_a-L_{a\circ b}$. $\square$
+*Proof.* For $x \in J$ one has $\tfrac12(S_{a,b}+S_{b,a})(x) = \tfrac12(axb+bxa)$, and the special form of the quadratic representation is $U_{a,b}(x) = \tfrac12(axb+bxa)$. That $U_{a,b}$ lies in $\operatorname{Mult}(J)$ is its definition, $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$. $\square$
 
 **Corollary.** The antisymmetrisation $\tfrac12(S_{a,b}-S_{b,a})$ is nonzero exactly when the sandwich does not commute with the transposition of its parameters; it equals $\tfrac12(axb-bxa)$ and is the operator that the Jordan structure discards. The Jordan two-sided operator is the part of $S_{a,b}$ that is symmetric in $a$ and $b$, and the discarded part measures the failure of the Jordan product to see the order of the factors.
 
@@ -48,9 +48,9 @@ $$
 A = A_{\bar 0} \oplus A_{\bar 1}, \qquad A_{\bar 0} = \{x : \alpha(x) = x\}, \qquad A_{\bar 1} = \{x : \alpha(x) = -x\},
 $$
 
-makes $A$ a $\mathbb{Z}/2$-graded algebra, with $A_iA_j \subseteq A_{i+j}$; this is the graded structure of *The Signed Sandwich on a Ring*, and $\alpha$ is an automorphism of the special Jordan algebra $J = A^+$, since $\alpha(x\circ y) = \alpha(x)\circ\alpha(y)$ for the halved product.
+makes $A$ a $\mathbb{Z}/2$-graded algebra, with $A_iA_j \subseteq A_{i+j}$; this is the graded structure of *The Signed Sandwich on a Ring*, and $\alpha$ is an automorphism of the special Jordan algebra $J = A^+$, since $\alpha(x\bullet y) = \alpha(x)\bullet\alpha(y)$ for the halved product.
 
-**Proposition.** $\alpha$ is a grade involution of the Jordan algebra $J$, that is, an automorphism of $J$ with $\alpha^2 = \mathrm{id}$, and the Jordan product respects the induced grading, $J_i\circ J_j \subseteq J_{i+j}$ with $J_i = A_i$; the commutativity of $\circ$ is not disturbed, and the only new datum is the sign rule that an odd element carries.
+**Proposition.** $\alpha$ is a grade involution of the Jordan algebra $J$, that is, an automorphism of $J$ with $\alpha^2 = \mathrm{id}$, and the Jordan product respects the induced grading, $J_i\bullet J_j \subseteq J_{i+j}$ with $J_i = A_i$; the commutativity of $\bullet$ is not disturbed, and the only new datum is the sign rule that an odd element carries.
 
 *Proof.* $\alpha$ preserves the associative product, hence the halved product, hence is an automorphism of $J$; $\alpha^2 = \mathrm{id}$ is assumed; the grading statement is the multiplicativity of $\alpha$ read on the decomposition. $\square$
 

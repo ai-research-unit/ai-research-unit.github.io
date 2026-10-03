@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is an application of the Jordan theory to convex geometry. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, but the results are specific to the formally real algebras over $\mathbb{R}$, where a cone can be defined. The Jordan conventions are those of *Jordan Algebras*: the commutative product $\circ$, the square $x^2 = x\circ x$, the identity $[L_x, L_{x^2}] = 0$, the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ and the Peirce decomposition; the examples are those of *Special and Exceptional Jordan Algebras* and *Spin Factors and the Clifford Envelope with Inner Conjugation*.
+This article is an application of the Jordan theory to convex geometry. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, but the results are specific to the formally real algebras over $\mathbb{R}$, where a cone can be defined. The Jordan conventions are those of *Jordan Algebras*: the commutative product $\bullet$, the square $x^2 = x\bullet x$, the identity $[L_x, L_{x^2}] = 0$, the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ and the Peirce decomposition; the examples are those of *Special and Exceptional Jordan Algebras* and *Spin Factors and the Clifford Envelope with Inner Conjugation*.
 
 To a formally real Jordan algebra one attaches its **positive cone**
 
@@ -24,7 +24,7 @@ $$
 x_1^2 + x_2^2 + \cdots + x_m^2 = 0 \implies x_1 = x_2 = \cdots = x_m = 0 ,
 $$
 
-for every finite family $x_i \in J$. Since a sum of finitely many squares can be written as a single square only in special cases, the condition is stated for finite sums. It is equivalent to: $-1$ is not a sum of squares; and, for $J$ finite dimensional and unital, to the trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ being positive definite. The last equivalence is the criterion used in the classification, and it is standard.
+for every finite family $x_i \in J$. Since a sum of finitely many squares can be written as a single square only in special cases, the condition is stated for finite sums. It is equivalent to: $-1$ is not a sum of squares; and, for $J$ finite dimensional and unital, to the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ being positive definite. The last equivalence is the criterion used in the classification, and it is standard.
 
 **Example.** $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the spin factors of positive definite forms are formally real. The algebra $H_3(\mathbb{O})$ is formally real. On the other hand, $M_n(\mathbb{R})^+$ and the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ are not formally real: for $n \geq 2$ the matrix with a single entry $1$ in position $(1,2)$ is nonzero with square zero, and in $\mathbb{D}'$ the element $\varepsilon \neq 0$ has $\varepsilon^2 = 0$. Each exhibits a nonzero element whose square is zero, hence a sum of squares equal to zero.
 
@@ -56,12 +56,12 @@ The theorem is the Koecher–Vinberg theorem, quoted here as standard. The examp
 
 *Proof.* The equation $x^2 = 0$ exhibits $0$ as the sum $x^2 + 0^2$ of two squares, so $x = 0$ by formal reality. For the second, $y - x \in J_+$ and $x - y \in J_+$ give $x - y = u^2$ and $y - x = v^2$ for some $u, v$, so $u^2 + v^2 = 0$ and $u = v = 0$, whence $x = y$.
 
-**Proposition.** If $x = u^2$, $y = v^2$ and $u \circ v = 0$, then $x + y = (u + v)^2 \in J_+$.
+**Proposition.** If $x = u^2$, $y = v^2$ and $u \bullet v = 0$, then $x + y = (u + v)^2 \in J_+$.
 
-*Proof.* By bilinearity and commutativity of $\circ$,
+*Proof.* By bilinearity and commutativity of $\bullet$,
 
 $$
-(u + v)^2 = u \circ u + u \circ v + v \circ u + v \circ v = u^2 + 2\,u\circ v + v^2 = x + y ,
+(u + v)^2 = u \bullet u + u \bullet v + v \bullet u + v \bullet v = u^2 + 2\,u\bullet v + v^2 = x + y ,
 $$
 
 so $x + y$ is the square of $u + v$ and lies in $J_+$.
@@ -72,7 +72,7 @@ The cone is closed under addition in general, which says that the sum of two squ
 
 ### The Cone of a Matrix Algebra
 
-Let $J = H_n(\mathbb{R})$, the real symmetric matrices with $x \circ y = \tfrac12(xy + yx)$ and $x^2 = xx$.
+Let $J = H_n(\mathbb{R})$, the real symmetric matrices with $x \bullet y = \tfrac12(xy + yx)$ and $x^2 = xx$.
 
 **Proposition.** $J_+$ is the cone of positive semidefinite matrices.
 
@@ -160,11 +160,11 @@ $$
 f(x) = \sum_{i=1}^r f(\lambda_i) e_i .
 $$
 
-Then $f(x)$ depends only on $x$ and $f$, the map $x \mapsto f(x)$ is continuous on the set of elements with spectrum in the domain of $f$, and it respects pointwise operations: $(f + h)(x) = f(x) + h(x)$, $(fh)(x) = f(x)\circ h(x)$, $(\mathrm{id})^n(x) = x^n$.
+Then $f(x)$ depends only on $x$ and $f$, the map $x \mapsto f(x)$ is continuous on the set of elements with spectrum in the domain of $f$, and it respects pointwise operations: $(f + h)(x) = f(x) + h(x)$, $(fh)(x) = f(x)\bullet h(x)$, $(\mathrm{id})^n(x) = x^n$.
 
 The construction is standard; it is the Jordan analogue of the continuous functional calculus of matrices and of operators, and for $H_n(\mathbb{R})$ it is the ordinary functional calculus of symmetric matrices. Consequences used above are the square root, $x = (\sqrt{x})^2$ for $x \in J_+$, the absolute value $|x| = \sqrt{x^2}$, and the indicator-type idempotents obtained by applying a characteristic function of a spectral value.
 
-**Corollary.** $J_+ = \{x : x = \sqrt{x}\circ\sqrt{x}\} = \{x : x \geq 0\}$, and $x \in \Omega$ if and only if $\sqrt{x}$ is invertible.
+**Corollary.** $J_+ = \{x : x = \sqrt{x}\bullet\sqrt{x}\} = \{x : x \geq 0\}$, and $x \in \Omega$ if and only if $\sqrt{x}$ is invertible.
 
 ### Extreme Rays and Idempotents
 
@@ -188,13 +188,13 @@ The cone of squares organises and completes the algebra.
 
 **Definition.** A **JB-algebra** is a real Jordan algebra $J$ that is simultaneously a real Banach space such that, for all $x, y \in J$,
 
-1. $\|x \circ y\| \leq \|x\|\,\|y\|$;
+1. $\|x \bullet y\| \leq \|x\|\,\|y\|$;
 2. $\|x^2\| = \|x\|^2$;
 3. $\|x^2\| \leq \|x^2 + y^2\|$.
 
 The conditions make the product continuous and force the cone $J_+$ to be closed and the order to be archimedean. In a JB-algebra the norm is determined by the cone, and the cone determines the norm.
 
-**Example.** The algebra $C(X,\mathbb{R})$ of continuous real functions on a compact Hausdorff space $X$, with the pointwise product, the supremum norm and the cone of nonnegative functions, is a JB-algebra; here $x \circ y = xy$ and the conditions are elementary. The algebras $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ with the operator norm and the cone of positive semidefinite elements are JB-algebras, and so are the spin factors of positive definite forms with the spectral norm $\|(\alpha, v)\| = |\alpha| + \sqrt{q(v)}$, which is the order-unit norm of the identity. The Albert algebra $H_3(\mathbb{O})$ with the spectral norm is a JB-algebra; it is the exceptional example.
+**Example.** The algebra $C(X,\mathbb{R})$ of continuous real functions on a compact Hausdorff space $X$, with the pointwise product, the supremum norm and the cone of nonnegative functions, is a JB-algebra; here $x \bullet y = xy$ and the conditions are elementary. The algebras $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ with the operator norm and the cone of positive semidefinite elements are JB-algebras, and so are the spin factors of positive definite forms with the spectral norm $\|(\alpha, v)\| = |\alpha| + \sqrt{q(v)}$, which is the order-unit norm of the identity. The Albert algebra $H_3(\mathbb{O})$ with the spectral norm is a JB-algebra; it is the exceptional example.
 
 **Theorem.** The finite-dimensional JB-algebras are exactly the finite-dimensional formally real Jordan algebras, by the classical Jordan–von Neumann–Wigner classification. In general every JB-algebra is the self-adjoint part of a JB*-algebra and admits a Gelfand–Naimark representation as a Jordan algebra of self-adjoint operators on a complex Hilbert space; the representation theorem is due to Alfsen, Shultz and Størmer.
 
@@ -248,19 +248,19 @@ The homogeneity of the cone itself uses the larger group: the connected structur
 
 ## Summary
 
-In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}$ is a pointed closed convex cone with interior $\Omega$, and the order $x \leq y \Leftrightarrow y - x \in J_+$ makes $J$ a partially ordered real vector space. For the Hermitian matrix algebra $H_n(\mathbb{R})$ the cone is the positive semidefinite cone, $J_+ = \{x : x = y^2,\ y \text{ symmetric}\}$, proved by the spectral theorem, and it is convex; for the spin factor $JSpin(V)$ of a positive definite form it is the second-order cone $\{(\alpha,v) : \alpha \geq 0,\ \alpha^2 \geq q(v)\}$, proved by completing the square, and it is convex by Cauchy–Schwarz. Every element has a spectral resolution $x = \sum_i \lambda_i e_i$ in orthogonal idempotents, and $x \in J_+$ exactly when all eigenvalues are nonnegative. The JB-algebra axioms — a real Jordan algebra with a Banach norm satisfying $\|x\circ y\|\leq\|x\|\|y\|$, $\|x^2\|=\|x\|^2$ and $\|x^2\|\leq\|x^2+y^2\|$ — characterise the algebras whose cone is closed and whose order is archimedean, and the finite-dimensional ones are exactly the formally real Jordan algebras. The interior is a symmetric cone, homogeneous and self-dual; the Koecher–Vinberg theorem makes this a bijective correspondence between symmetric cones and formally real Jordan algebras, and the structure group is the group that acts transitively on it. The algebra automorphism group preserves the cone and acts transitively on the extreme rays; for $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the Albert algebra these are $PO(n)$, $PU(n)$, $PU(n,\mathbb{H})$ and $F_4$, while the structure groups are $GL_n(\mathbb{R})/\{\pm1\}$, $GL_n(\mathbb{C})/U(1)$, $GL_n(\mathbb{H})/\{\pm1\}$ and the $79$-dimensional $E_6\cdot\mathbb{R}_{>0}$, the quotient in each matrix case being by the scalars that act trivially on the Hermitian matrices, namely $\{\pm1\}$ over $\mathbb{R}$ and over $\mathbb{H}$ and the unit circle over $\mathbb{C}$, whereas on the Albert algebra no scalar other than $1$ acts trivially, so the dilations are retained and the structure group is one dimension larger than its norm-preserving part $E_6$.
+In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}$ is a pointed closed convex cone with interior $\Omega$, and the order $x \leq y \Leftrightarrow y - x \in J_+$ makes $J$ a partially ordered real vector space. For the Hermitian matrix algebra $H_n(\mathbb{R})$ the cone is the positive semidefinite cone, $J_+ = \{x : x = y^2,\ y \text{ symmetric}\}$, proved by the spectral theorem, and it is convex; for the spin factor $JSpin(V)$ of a positive definite form it is the second-order cone $\{(\alpha,v) : \alpha \geq 0,\ \alpha^2 \geq q(v)\}$, proved by completing the square, and it is convex by Cauchy–Schwarz. Every element has a spectral resolution $x = \sum_i \lambda_i e_i$ in orthogonal idempotents, and $x \in J_+$ exactly when all eigenvalues are nonnegative. The JB-algebra axioms — a real Jordan algebra with a Banach norm satisfying $\|x\bullet y\|\leq\|x\|\|y\|$, $\|x^2\|=\|x\|^2$ and $\|x^2\|\leq\|x^2+y^2\|$ — characterise the algebras whose cone is closed and whose order is archimedean, and the finite-dimensional ones are exactly the formally real Jordan algebras. The interior is a symmetric cone, homogeneous and self-dual; the Koecher–Vinberg theorem makes this a bijective correspondence between symmetric cones and formally real Jordan algebras, and the structure group is the group that acts transitively on it. The algebra automorphism group preserves the cone and acts transitively on the extreme rays; for $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the Albert algebra these are $PO(n)$, $PU(n)$, $PU(n,\mathbb{H})$ and $F_4$, while the structure groups are $GL_n(\mathbb{R})/\{\pm1\}$, $GL_n(\mathbb{C})/U(1)$, $GL_n(\mathbb{H})/\{\pm1\}$ and the $79$-dimensional $E_6\cdot\mathbb{R}_{>0}$, the quotient in each matrix case being by the scalars that act trivially on the Hermitian matrices, namely $\{\pm1\}$ over $\mathbb{R}$ and over $\mathbb{H}$ and the unit circle over $\mathbb{C}$, whereas on the Albert algebra no scalar other than $1$ acts trivially, so the dilations are retained and the structure group is one dimension larger than its norm-preserving part $E_6$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $J$ | Real Jordan algebra with product $\circ$ |
+| $J$ | Real Jordan algebra with product $\bullet$ |
 | Formally real | $\sum x_i^2 = 0 \Rightarrow$ all $x_i = 0$ |
 | $J_+ = \{x^2 : x \in J\}$ | Positive cone, the set of squares |
 | $\Omega = \operatorname{int} J_+$ | Interior of the positive cone |
 | $x \leq y$ | $y - x \in J_+$ |
 | $x = \sum_i \lambda_i e_i$ | Spectral resolution in orthogonal idempotents |
-| $T(x,y) = \operatorname{tr}(L_{x\circ y})$ | Trace form, self-duality pairing |
+| $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ | Trace form, self-duality pairing |
 | $JSpin(V)$ | Spin factor, second-order cone $\alpha^2 \geq q(v)$ |
 | JB-algebra | Real Jordan Banach algebra with axioms 1–3 |
 | $u$ | Order unit; order-unit norm $\|\cdot\|_u$ |

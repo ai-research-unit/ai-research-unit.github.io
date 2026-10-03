@@ -78,7 +78,7 @@ $$
 The exponential is not a group homomorphism from the additive group of the algebra: $\exp(\tilde q)\exp(\tilde p) \neq \exp(\tilde q+\tilde p)$ whenever $[\tilde q,\tilde p] \neq 0$. The correct statement is the **Baker–Campbell–Hausdorff formula**, whose first terms are
 
 $$
-\log\bigl(e^{\tilde q} e^\tilde p\bigr) = \tilde q + \tilde p + \tfrac{1}{2}[\tilde q,\tilde p] + \tfrac{1}{12}\bigl([\tilde q,[\tilde q,\tilde p]] - [\tilde p,[\tilde p,\tilde q]]\bigr) + \cdots,
+\log\bigl(e^{\tilde q} e^{\tilde p}\bigr) = \tilde q + \tilde p + \tfrac{1}{2}[\tilde q,\tilde p] + \tfrac{1}{12}\bigl([\tilde q,[\tilde q,\tilde p]] - [\tilde p,[\tilde p,\tilde q]]\bigr) + \cdots,
 $$
 
 a series in the free Lie algebra on $\tilde q,\tilde p$, convergent near the origin. Consequently the exponential is a local diffeomorphism from a neighbourhood of $0$ on the algebra to a neighbourhood of $1$ in the group of units, with local inverse the logarithm.
