@@ -47,7 +47,13 @@ $$
 
 ## Algebra and Module Structure
 
-### It Is Not a Subalgebra
+### Modules
+
+$\mathbb{M}_+$ is a module over the centre subspace, which acts by scalar extension; it is not a module over the quaternion subspace, since the product of $e_1 \in \mathbb{H}_{\mathbb{B}}$ with $ie_1 \in \mathbb{M}_+$ is $ie_1^2 = -ie_0 \notin \mathbb{M}_+$; and it is not a module over $\mathbb{H}_{\mathbb{B}}$ on the right either, by the same computation. Its role as a module is therefore limited to the central one, while its role as a product space is the Jordan one below.
+
+### The Jordan Remark
+
+The subspace is not closed under the product, but it is closed under the symmetrized product, and with that product it **is a commutative Jordan algebra over $\mathbb{R}$ of degree two**.
 
 **Proposition.** The product of two elements of $\mathbb{M}_+$ lies in $\mathbb{M}_+$ only under a condition, and the subspace is not closed under multiplication.
 
@@ -65,16 +71,6 @@ $$
 \tilde{Q}\tilde{R} = \tfrac{1}{2}\left(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\right) + \tfrac{1}{2}\left[\tilde{Q}, \tilde{R}\right] .
 $$
 
-### The Commutator Lands in the Anti-Hermitian Subspace
-
-**Theorem.** For $\tilde{Q}, \tilde{R} \in \mathbb{M}_+$ one has $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} \in \mathbb{M}_-$.
-
-**Proof.** ${}^{*}$ reverses the order of a product and is the identity on $\mathbb{M}_+$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}\tilde{Q}$; hence $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}\tilde{Q}-\tilde{Q}\tilde{R} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, which is the defining condition of the anti-Hermitian subspace.
-
-In the formula of the previous paragraph this is the statement that the symmetric part is Hermitian and the antisymmetric part anti-Hermitian, as it must be. The corresponding statement in the other direction is proved in *Biquaternion Anti-Hermitian Subspace*.
-
-### It Is a Jordan Algebra
-
 **Theorem.** $\mathbb{M}_+$ is closed under the **symmetrized product**
 
 $$
@@ -86,8 +82,6 @@ and with this product it is a Jordan algebra over $\mathbb{R}$, commutative, of 
 **Proof.** $(\tilde{Q}\tilde{R}+\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*} + \tilde{Q}^{*}\tilde{R}^{*} = \tilde{R}\tilde{Q} + \tilde{Q}\tilde{R}$, so the symmetrized product of two Hermitian elements is again Hermitian; commutativity is built into the definition, and the product is bilinear, so it makes $\mathbb{M}_+$ a commutative algebra over $\mathbb{R}$ with the Jordan identity.
 
 Two consequences are read off. First, the subspace is **closed under powers**: $\tilde{Q}^2 = \tilde{Q} \bullet \tilde{Q} \in \mathbb{M}_+$, and by induction every positive power of a Hermitian element is Hermitian. Second, the subspace is power-associative but not associative, which is exactly the Jordan axiom pattern; the general theory is in *Jordan Algebras*.
-
-### The Square and Higher Powers
 
 **Proposition.** For $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ one has
 
@@ -103,9 +97,15 @@ $$
 
 **Proof.** Expanding $(q_0e_0+i\mathbf{q}')^2$ with $(\mathbf{q}')^2 = -(\mathbf{q}',\mathbf{q}')e_0$ and using the centrality of $i$ gives the stated scalar and vector parts; the pure case is $q_0 = 0$, and the algebraic square $N$ of an imaginary vector is $-(\mathbf{q}',\mathbf{q}')$.
 
-### Modules
+### The Lie Remark
 
-$\mathbb{M}_+$ is a module over the centre subspace, which acts by scalar extension; it is not a module over the quaternion subspace, since the product of $e_1 \in \mathbb{H}_{\mathbb{B}}$ with $ie_1 \in \mathbb{M}_+$ is $ie_1^2 = -ie_0 \notin \mathbb{M}_+$; and it is not a module over $\mathbb{H}_{\mathbb{B}}$ on the right either, by the same computation. Its role as a module is therefore limited to the central one, while its role as a product space is the Jordan one above.
+The subspace **is not closed under the commutator**: the bracket of two Hermitian elements is anti-Hermitian, and the subspace is the source of the bracket into its companion rather than a Lie subalgebra.
+
+**Theorem.** For $\tilde{Q}, \tilde{R} \in \mathbb{M}_+$ one has $\tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} \in \mathbb{M}_-$.
+
+**Proof.** ${}^{*}$ reverses the order of a product and is the identity on $\mathbb{M}_+$, so $(\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}\tilde{Q}$; hence $(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})^{\dagger} = \tilde{R}\tilde{Q}-\tilde{Q}\tilde{R} = -(\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q})$, which is the defining condition of the anti-Hermitian subspace.
+
+In the decomposition formula above this is the statement that the symmetric part is Hermitian and the antisymmetric part anti-Hermitian, as it must be. The corresponding statement in the other direction is proved in *Biquaternion Anti-Hermitian Subspace*.
 
 ## Units and Zero Divisors
 
@@ -289,3 +289,4 @@ The Hermitian subspace $\mathbb{M}_+$ is the fixed space of Hermitian conjugatio
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the non-pure family, of which the null set of the subspace is the part in $\mathbb{M}_+$
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the sectors and the bracket $\mathbb{M}_+ \to \mathbb{M}_-$ in the Lie algebra $\mathrm{G}$
 - *The Hermitian Subspace under the Three Topologies* (`articles_maths/the-hermitian-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies
+- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product of $\mathbb{B}$ and the classification of the six subspaces under the two halves

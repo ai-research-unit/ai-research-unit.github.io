@@ -120,6 +120,21 @@ because the cross product of a triple with itself vanishes. Every element of the
 
 **Proof.** The scalar part of $h\tilde{Q}$ is read from the product formula, and it vanishes for all pairs only in the degenerate cases $h = 0$ or $\tilde{Q} = 0$; the centre is contained in the commuting elements and acts by scalar extension.
 
+### The Jordan Remark
+
+The vector subspace **is not closed under the symmetrized product**. For two vector elements it is a multiple of the unit,
+
+$$
+\mathbf{P}\bullet\mathbf{Q} = -\bigl(\mathbf{P},\mathbf{Q}\bigr)e_0 ,
+$$
+
+so it leaves the subspace for the centre as soon as the two vectors are not orthogonal. The classification of the six subspaces is in *Biquaternion Jordan Algebra*.
+
+### The Lie Remark
+
+The vector subspace **is closed under the commutator**. It is the derived subalgebra of the Lie algebra, $[\mathrm{G},\mathrm{G}]=\mathrm{B}_0=\mathrm{Vect}(\mathbb{B})$, and on it the bracket is twice the outer product. It is therefore one of the two subspaces closed under the bracket and not under the Jordan product, the anti-Hermitian subspace being the other; the detail is in §*The Lie Algebra Structure* below.
+
+
 ## Units and Zero Divisors
 
 **Proposition.** On the vector subspace the algebraic operation $N$ is the complex quadratic expression in the three coefficients,
@@ -308,3 +323,4 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions and the two spaces each defines
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`) and *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the Lie algebra of the group of units
 - *The Vector Subspace under the Three Topologies* (`articles_maths/the-vector-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies
+- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product of $\mathbb{B}$ and the classification of the six subspaces under the two halves

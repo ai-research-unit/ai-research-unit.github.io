@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$ satisfying $i^2 = -1$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The algebra, its determinant $N$, its conjugations, its six distinguished subspaces and its matrix realization are those of *Biquaternion Algebra*, *Biquaternion Four-Vector Element Representation* and *Biquaternion 2×2 Matrix Element Representation*.
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$ satisfying $i^2 = -1$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The algebra, its determinant $N$, its conjugations, its six distinguished subspaces and its matrix realization are those of *Biquaternion Algebra* and *Biquaternion Four-Vector Element Representation*.
 
 This article presents the **regular representation** of $\mathbb{B}$: the algebra acting on itself on the left, and the $4 \times 4$ matrix of that action in the coefficient space of *Biquaternion Four-Vector Element Representation*. The word *representation* is used here in both senses at once, the concrete realization and the technical representation of an algebra on a vector space, because the action is the object of study. The article is the third and last of the group, and it uses both predecessors: the coefficient space of the first article, on which the operator is written, and the simple module $V$ of the second, because the algebra is $V \oplus V$ as a left module and the regular representation is therefore reducible. It is the first reducible realization met in this subcategory.
 
@@ -46,7 +46,7 @@ $$
 
 Expanding with $e_1 e_2 = e_3$, $e_2 e_3 = e_1$, $e_3 e_1 = e_2$ gives the displayed columns, hence the matrix.
 
-**Remark (the same four for a different reason).** The matrix above is $4 \times 4$, and the coefficient space of *Biquaternion Four-Vector Element Representation* has complex dimension $4$. These are the same four for the same reason and not because of a coincidence: the algebra has complex dimension $4$, and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object. In *Biquaternion 2×2 Matrix Element Representation* the number $2$ appears both as the dimension of the simple module and as the size of the matrix algebra, for the parallel reason that the algebra is the algebra of endomorphisms of that module.
+**Remark (the same four for a different reason).** The matrix above is $4 \times 4$, and the coefficient space of *Biquaternion Four-Vector Element Representation* has complex dimension $4$. These are the same four for the same reason and not because of a coincidence: the algebra has complex dimension $4$, and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object.
 
 **Example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$, so that $(Q_0, Q_1, Q_2, Q_3) = (2+i, 1-i, 3, i)$, the regular matrix is
 
@@ -173,7 +173,7 @@ Hence the right representation is the contragredient of the left one up to the f
 
 **Corollary (the difference vanishes exactly on the centre).** The difference $\rho_L(\tilde{Q}) - \rho_R(\tilde{Q})$ is the zero matrix if and only if $\tilde{Q} \in \mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$.
 
-**Proof.** If $\tilde{Q} = \lambda e_0$ then $\rho_L(\tilde{Q}) = \rho_R(\tilde{Q}) = \lambda I$, since scalar multiplication is central. Conversely, if the two matrices agree then $\tilde{Q}\tilde{R} = \tilde{R}\tilde{Q}$ for every $\tilde{R}$, so $\tilde{Q}$ lies in the centre, which is the scalar subspace by *Biquaternion 2×2 Matrix Element Representation*. Comparing the two closed forms directly, the entries in the three last rows and columns agree only when $Q_1 = Q_2 = Q_3 = 0$.
+**Proof.** If $\tilde{Q} = \lambda e_0$ then $\rho_L(\tilde{Q}) = \rho_R(\tilde{Q}) = \lambda I$, since scalar multiplication is central. Conversely, if the two matrices agree then $\tilde{Q}\tilde{R} = \tilde{R}\tilde{Q}$ for every $\tilde{R}$, so $\tilde{Q}$ lies in the centre, which is the scalar subspace. Comparing the two closed forms directly, the entries in the three last rows and columns agree only when $Q_1 = Q_2 = Q_3 = 0$.
 
 **Remark (what left and right mean).** The two representations differ **because the algebra is non-commutative**. The matrix $\rho_L(\tilde{Q}) - \rho_R(\tilde{Q})$ is the operator $\tilde{R} \mapsto \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q}$ written in the basis, so its $m$-th column is the coordinate column of the commutator $[\tilde{Q}, e_m]$; the difference vanishes on $\mathbb{C}_{\mathbb{B}}$ and nowhere else. This is the sense in which the left and right regular representations of $\mathbb{B}$ are distinct, and the sense in which the row of *Biquaternion Four-Vector Element Representation* carries the right action and not a further left one.
 
@@ -203,19 +203,18 @@ $$
 \tilde\Pi_1, \quad e_1 \tilde\Pi_1, \quad \tilde\Pi_2, \quad e_1 \tilde\Pi_2
 $$
 
-of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is block diagonal,
+of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is
 
 $$
-\rho_L(\tilde{Q}) \sim \begin{pmatrix} A_+(\tilde{Q}) & 0 \\ 0 & A_-(\tilde{Q}) \end{pmatrix},
-\qquad
-A_+(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -Q_1 + iQ_2 \\ Q_1 + iQ_2 & Q_0 + iQ_3 \end{pmatrix},
+\rho_L(\tilde{Q}) \sim \begin{pmatrix}
+Q_0 - iQ_3 & -Q_1 + iQ_2 & 0 & 0 \\
+Q_1 + iQ_2 & Q_0 + iQ_3 & 0 & 0 \\
+0 & 0 & Q_0 + iQ_3 & -Q_1 - iQ_2 \\
+0 & 0 & Q_1 - iQ_2 & Q_0 - iQ_3
+\end{pmatrix},
 $$
 
-$$
-A_-(\tilde{Q}) = \begin{pmatrix} Q_0 + iQ_3 & -Q_1 - iQ_2 \\ Q_1 - iQ_2 & Q_0 - iQ_3 \end{pmatrix},
-$$
-
-and each block has trace $2Q_0$ and determinant $N(\tilde{Q})$. Consequently each block is similar to the matrix $\Phi(\tilde{Q})$ of *Biquaternion 2×2 Matrix Element Representation*, each block is a copy of the simple module $V$, and
+with the four corner entries zero: the subspaces spanned by $\tilde\Pi_1, e_1\tilde\Pi_1$ and by $\tilde\Pi_2, e_1\tilde\Pi_2$ are invariant under $\rho_L(\tilde{Q})$, and on each of them the action is that of a minimal left ideal, hence a copy of the simple module $V$, and
 
 $$
 \rho_L \cong V \oplus V
@@ -229,44 +228,23 @@ $$
 e_1 \tilde\Pi_1 = e_1\tilde\Pi_1, \quad e_2 \tilde\Pi_1 = ie_1\tilde\Pi_1, \quad e_3 \tilde\Pi_1 = -i\tilde\Pi_1, \qquad e_1(e_1\tilde\Pi_1) = -\tilde\Pi_1, \quad e_2(e_1\tilde\Pi_1) = i\tilde\Pi_1, \quad e_3(e_1\tilde\Pi_1) = ie_1\tilde\Pi_1,
 $$
 
-so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the three units act by the matrices
-$\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$,
-$\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and
-$\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives the displayed block $A_+$; the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is computed as in the matrix realization,
+so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ acts by the first two rows and columns of the displayed matrix, and the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives the last two. The trace of the matrix is $4Q_0$ by inspection and the determinant is the product of its two diagonal groups,
 
 $$
-\det A_+ = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = N(\tilde{Q}),
+(Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = N(\tilde{Q}),
 $$
 
-and likewise $\det A_- = N(\tilde{Q})$. The similarity is then exhibited by an explicit change of basis. With
+each of the two diagonal groups contributing the same factor, so that the determinant of the regular matrix is $N(\tilde{Q})^2$.
 
-$$
-u_+ = e_0 + e_3, \qquad u_- = e_1 + e_2,
-$$
-
-and hence
-
-$$
-\Phi(u_+) = \begin{pmatrix} 1-i & 0 \\ 0 & 1+i \end{pmatrix}, \qquad \Phi(u_-) = \begin{pmatrix} 0 & -1-i \\ 1-i & 0 \end{pmatrix},
-$$
-
-one has
-
-$$
-A_+(\tilde{Q}) = \Phi(u_+)\,\Phi(\tilde{Q})\,\Phi(u_+)^{-1}, \qquad A_-(\tilde{Q}) = \Phi(u_-)\,\Phi(\tilde{Q})\,\Phi(u_-)^{-1}
-$$
-
-for every $\tilde{Q}$: both sides are $\mathbb{C}$-linear in $\tilde{Q}$, so it suffices to compare them on the four basis elements $e_0, e_1, e_2, e_3$, where the two displayed formulas agree elementwise. Both conjugating matrices are invertible, since $\det\Phi(u_+) = (1-i)(1+i) = 2 = \det\Phi(u_-)$, and consequently each block is similar to $\Phi(\tilde{Q})$ for every $\tilde{Q}$, including the elements whose vector part is nonzero while $Q_1^2 + Q_2^2 + Q_3^2 = 0$ and the block has a repeated eigenvalue. Both blocks therefore have the characteristic polynomial $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ of $\Phi(\tilde{Q})$, as the similarity requires, and each realizes the simple module $V$ of *Biquaternion 2×2 Matrix Element Representation*; the regular module is $V \oplus V$.
-
-**Remark (the characteristic polynomial).** In the block basis of the theorem above the regular matrix is block diagonal with the two blocks $A_+$ and $A_-$, each similar to $\Phi(\tilde{Q})$, so its characteristic polynomial is the square of that of the simple module,
+**Remark (the characteristic polynomial).** In the adapted basis of the theorem above the regular matrix is diagonal in the two invariant subspaces, so its characteristic polynomial is the square of that of the simple module,
 
 $$
 \chi_{\rho_L(\tilde{Q})}(\lambda) = \bigl( \lambda^2 - 2Q_0\lambda + N(\tilde{Q}) \bigr)^2,
 $$
 
-which the block form of the theorem above gives at once. The eigenvalues themselves, the Cayley–Hamilton identity, the eigenspace dimensions and the doubling of the multiplicities that the square produces are the subject of *Biquaternion Spectral Theory*, later in this chapter, and are cited from there rather than developed here.
+which the form of the theorem above gives at once. The eigenvalues themselves, the Cayley–Hamilton identity, the eigenspace dimensions and the doubling of the multiplicities that the square produces are the subject of *Biquaternion Spectral Theory*, later in this chapter, and are cited from there rather than developed here.
 
-**Remark (the irreducible submodules are the minimal left ideals).** The two blocks are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_1$ and $I_2 = \mathbb{B}\tilde\Pi_2$ of the algebra. Both are isomorphic to the module $V$ of *Biquaternion 2×2 Matrix Element Representation*, and the fact that $V$ is the only simple module is the classification of the simple modules. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the two-block form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *Modules over the Biquaternion Algebra*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
+**Remark (the irreducible submodules are the minimal left ideals).** The two invariant subspaces are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_1$ and $I_2 = \mathbb{B}\tilde\Pi_2$ of the algebra. Both afford the module $V$, and the fact that $V$ is the only simple module is the classification of the simple modules. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the diagonal form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *Modules over the Biquaternion Algebra*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
 
 ## The Determinant and the Trace
 
@@ -278,7 +256,7 @@ $$
 
 The determinant of the regular matrix is the **square** of $N$, and it is not $N$.
 
-**Proof.** In the block basis of the preceding theorem the matrix is block diagonal with the two blocks $A_+$ and $A_-$, so the determinant is the product $\det A_+ \det A_- = N(\tilde{Q}) \cdot N(\tilde{Q}) = N(\tilde{Q})^2$, and the trace is the sum $\operatorname{Tr} A_+ + \operatorname{Tr} A_- = 2Q_0 + 2Q_0 = 4Q_0$. Both quantities are unchanged by the change of basis.
+**Proof.** In the adapted basis of the preceding theorem the matrix is diagonal in the two invariant subspaces, so the determinant is the product of the two diagonal groups, $N(\tilde{Q}) \cdot N(\tilde{Q}) = N(\tilde{Q})^2$, and the trace is the sum of their traces, $2Q_0 + 2Q_0 = 4Q_0$. Both quantities are unchanged by the change of basis.
 
 **Example.** For $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ one has $N(\tilde{Q}) = 11 + 2i$ and
 
@@ -286,9 +264,9 @@ $$
 \det \rho_L(\tilde{Q}) = (11+2i)^2 = 117 + 44i, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4(2+i) = 8 + 4i,
 $$
 
-in agreement with the two blocks $A_+(\tilde{Q}) = \begin{pmatrix} 3+i & -1+4i \\ 1+2i & 1+i \end{pmatrix}$ and $A_-(\tilde{Q}) = \begin{pmatrix} 1+i & -1-2i \\ 1-4i & 3+i \end{pmatrix}$ on this element, each of trace $4+2i$ and determinant $11+2i$.
+in agreement with the two diagonal groups of the matrix on this element, each of trace $4+2i$ and determinant $11+2i$.
 
-**Remark (the determinant is not $N$).** The determinant of the regular matrix is $N^2$, and the difference from $N$ is a genuine feature of the regular representation and not a notational slip. The simple module carries $N$ as its determinant, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two copies of $N$. The square appears because the regular representation acts on a space of dimension twice that of the simple module; it is the algebraic shadow of the factor $2$ between the two dimensions.
+**Remark (the determinant is not $N$).** The determinant of the regular matrix is $N^2$, and the difference from $N$ is a genuine feature of the regular representation and not a notational slip. Each diagonal group carries $N$ as its determinant, and the regular module is the direct sum of two copies of the simple module, so its determinant is the product of two copies of $N$. The square appears because the regular representation acts on a space of dimension twice that of the simple module; it is the algebraic shadow of the factor $2$ between the two dimensions.
 
 ## The Double Centralizer
 
@@ -320,7 +298,7 @@ $$
 
 **Proof.** The real matrix is the realification of the complex-linear endomorphism $\rho_L(\tilde{Q})$ of the four-dimensional complex space $\mathbb{B}$. A complex-linear endomorphism with eigenvalues $\lambda_1, \ldots, \lambda_4$ has realification with eigenvalues $\lambda_1, \bar\lambda_1, \ldots, \lambda_4, \bar\lambda_4$, so its determinant is $|\lambda_1 \cdots \lambda_4|^2 = |\det \rho_L(\tilde{Q})|^2 = |N(\tilde{Q})^2|^2 = |N(\tilde{Q})|^4$, and its trace is $2\operatorname{Re}(\lambda_1 + \cdots + \lambda_4) = 2\operatorname{Re}(4Q_0) = 8\operatorname{Re}(Q_0)$.
 
-**Remark (why the dimension doubles).** The real dimension doubles because $\mathbb{B}$ is a complex vector space and is regarded as a real vector space by restriction of scalars: the correspondence $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} \mathbb{C}^4 = \mathbb{R}^8$ replaces each complex coordinate by its real and imaginary parts. The same doubling applies to the module $V$ of *Biquaternion 2×2 Matrix Element Representation*, whose realification $S$ has real dimension $4$, so over $\mathbb{R}$ the regular representation is $\rho_L^{\mathbb{R}} \cong \operatorname{Res}_{\mathbb{C}/\mathbb{R}}(V \oplus V)$, and the block decomposition of the complex case survives with each block doubled in size. Restricted to the real subalgebra $\mathbb{H}_{\mathbb{B}}$, and read on $\mathbb{H}_{\mathbb{B}}$ itself, the same construction is the $4 \times 4$ real regular representation of the quaternions, which is the subject of *Quaternion Element Representations*; complexifying the algebra doubles both its real dimension and the size of the regular matrix.
+**Remark (why the dimension doubles).** The real dimension doubles because $\mathbb{B}$ is a complex vector space and is regarded as a real vector space by restriction of scalars: the correspondence $\operatorname{Res}_{\mathbb{C}/\mathbb{R}} \mathbb{C}^4 = \mathbb{R}^8$ replaces each complex coordinate by its real and imaginary parts. The same doubling applies to the module $V$, whose realification $S$ has real dimension $4$, so over $\mathbb{R}$ the regular representation is $\rho_L^{\mathbb{R}} \cong \operatorname{Res}_{\mathbb{C}/\mathbb{R}}(V \oplus V)$, and the decomposition of the complex case survives with each part doubled in size. Restricted to the real subalgebra $\mathbb{H}_{\mathbb{B}}$, and read on $\mathbb{H}_{\mathbb{B}}$ itself, the same construction is the $4 \times 4$ real regular representation of the quaternions, which is the subject of *Quaternion Element Representations*; complexifying the algebra doubles both its real dimension and the size of the regular matrix.
 
 ## A Second $4 \times 4$ Realization, and the Multiplicative Map
 
@@ -452,7 +430,7 @@ The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{
 
 The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra. The naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\rho_L(\tilde{Q}^{\natural})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\rho_L - \rho_R$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, which is the precise sense in which left and right differ because the algebra is non-commutative.
 
-The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with the two blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars.
+The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars.
 
 A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to $\rho_L$ as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural}$ to the real matrices which the regular realization does not have, in contrast with the congruence-shaped quadratic operator of *Biquaternion 4×4 Regular Matrix Operator Representation*. In that realization the sixteen products $\rho_L(e_i)\rho_R(e_j)$ are the Hermitian outer products $E_iE_j^{\mathsf T}$ and form a basis of $\mathbb{M}_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex-linear transformation of the algebra is a biparavector, the two-sided multiplication $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$.
 
@@ -474,12 +452,9 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subalgebra; its restriction carries the quaternion regular representation of *Quaternion Element Representations* |
 | $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
 | $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
-| $A_+(\tilde{Q}), A_-(\tilde{Q})$ | The two $2 \times 2$ blocks of $\rho_L$ in the adapted basis |
-| $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \Phi(u_\pm)\Phi(\tilde{Q})\Phi(u_\pm)^{-1}$ |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |
 | $\mathbb{B}^{\mathrm{op}}$ | Opposite algebra; $\rho_R$ is a homomorphism from it |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
-| $\Phi(\tilde{Q})$ | Matrix realization of *Biquaternion 2×2 Matrix Element Representation* |
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}$ | Restriction of scalars |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix |

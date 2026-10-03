@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H
 
 This article presents the **matrix realization** of $\mathbb{B}$ together with the module on which the matrices act. It is deeper than the coefficient realization of *Biquaternion Four-Vector Element Representation* by exactly one level of structure: the four-vector article lists the four coefficients, while the matrix realization exhibits an **action**. The word *representation* is therefore used here in both of its senses at once, the concrete realization and the technical representation of an algebra on a vector space, and the module $V = \mathbb{C}^2$ is introduced as the object on which the action is defined. The two realizations agree on the four parameters: they are related by an explicit $\mathbb{C}$-linear isomorphism, stated below.
 
-The article owns the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, the trace and the determinant, the matrix form of the four conjugations, the six distinguished subspaces in matrix form, the characteristic polynomial and the spectrum, the Cayley–Hamilton identity, the Jordan structure of the Hermitian subspace, the matrix exponential, the structural consequences of the isomorphism, and the simple module $V$ with its left action. It deliberately does not treat the spinor reading of $V$, which belongs to *Biquaternion Spin Geometry*; it does not treat the module-theoretic treatment with matrix units, which belongs to *Modules over the Biquaternion Algebra*; it does not re-derive the Clifford identification of *The Clifford Structure of the Biquaternion Algebra*; and it does not reprove the classification of the simple modules or Schur's lemma, which belong to *Modules over the Biquaternion Algebra*. No physical vocabulary is used: in particular the matrices below are not gamma matrices and the module is not a spinor of a physical field.
+The article owns the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, the trace and the determinant, the matrix form of the four conjugations, the six distinguished subspaces in matrix form, the characteristic polynomial and the spectrum, the Cayley–Hamilton identity, the structural consequences of the isomorphism, and the simple module $V$ with its left action. It deliberately does not treat the spinor reading of $V$, which belongs to *Biquaternion Spin Geometry*; it does not treat the module-theoretic treatment with matrix units, which belongs to *Modules over the Biquaternion Algebra*; it does not re-derive the Clifford identification of *The Clifford Structure of the Biquaternion Algebra*; and it does not reprove the classification of the simple modules or Schur's lemma, which belong to *Modules over the Biquaternion Algebra*. It does not treat the Jordan structure of the Hermitian subspace, which belongs to *Biquaternion Hermitian Subspace* and *Biquaternion Jordan Algebra*, nor the exponential, which belongs to *Biquaternion Elementary Functions*. No physical vocabulary is used: in particular the matrices below are not gamma matrices and the module is not a spinor of a physical field.
 
 ## The Isomorphism
 
@@ -156,38 +156,6 @@ $$
 **Proof.** Cayley–Hamilton for the $2 \times 2$ matrix $\Phi(\tilde{Q})$ reads $\Phi(\tilde{Q})^2 - \operatorname{Tr}\Phi(\tilde{Q})\,\Phi(\tilde{Q}) + \det\Phi(\tilde{Q})\,I = 0$. Substituting $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ and transporting back along the injective map $\Phi$ gives the identity.
 
 **Remark.** This is the identity that reduces every power of $\tilde{Q}$ to a combination of $e_0$ and $\tilde{Q}$, and it is the starting point for the closed forms of the exponential and the trigonometric functions in *Biquaternion Elementary Functions*.
-
-## The Jordan Structure of the Hermitian Subspace
-
-**Proposition.** The isomorphism $\Phi$ carries $\mathbb{M}_+$ onto the Hermitian $2 \times 2$ matrices and intertwines the **symmetrized product**
-
-$$
-\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}\bigl(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}\bigr)
-$$
-
-with $\tfrac{1}{2}(AB + BA)$. Hence $\mathbb{M}_+$ is a Jordan algebra over $\mathbb{R}$, isomorphic through $\Phi$ to the Jordan algebra $H_2(\mathbb{C})$ of Hermitian $2 \times 2$ complex matrices.
-
-**Proof.** The subspace $\mathbb{M}_+$ is the fixed space of ${}^{*}$ and the Hermitian matrices are the fixed space of the conjugate transpose, and the proposition above shows that $\Phi$ carries ${}^{*}$ to the conjugate transpose, so $\Phi(\mathbb{M}_+)$ is exactly $H_2(\mathbb{C})$. Since $\Phi$ is $\mathbb{C}$-linear and multiplicative, $\Phi(\tilde{Q} \bullet \tilde{R}) = \tfrac{1}{2}\bigl(\Phi(\tilde{Q})\Phi(\tilde{R}) + \Phi(\tilde{R})\Phi(\tilde{Q})\bigr)$.
-
-**Remark.** The symmetrized product is commutative but not associative, which is the Jordan axiom pattern; the Jordan theory of the Hermitian subspace, its powers and its idempotents are developed in *Biquaternion Hermitian Subspace*.
-
-## The Exponential and the Matrix Exponential
-
-**Proposition.** Under the isomorphism the biquaternion exponential corresponds to the matrix exponential:
-
-$$
-\Phi\bigl(\exp \tilde{Q}\bigr) = \exp\bigl(\Phi(\tilde{Q})\bigr),
-$$
-
-and consequently
-
-$$
-N\bigl(\exp \tilde{Q}\bigr) = \det\Phi\bigl(\exp \tilde{Q}\bigr) = e^{\operatorname{Tr}\Phi(\tilde{Q})} = e^{2Q_0}.
-$$
-
-**Proof.** The power series defining $\exp$ involves only sums, scalar multiples and products, all of which $\Phi$ preserves, so it commutes with $\Phi$; the identity $\det(e^{M}) = e^{\operatorname{Tr} M}$ is Jacobi's formula for a square matrix.
-
-**Remark (the spectrum of the exponential).** Since $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, the spectrum of $\exp\tilde{Q}$ is $\{e^{\lambda_1}, e^{\lambda_2}\}$, where $\lambda_1, \lambda_2$ are the eigenvalues of $\Phi(\tilde{Q})$, and the determinant identity above is the product of the two. The exponential itself, its group law and its kernel are the subject of *Biquaternion Elementary Functions*.
 
 ## The Conjugations in Matrix Form
 
@@ -385,7 +353,7 @@ Taken together, the three statements say that $\mathbb{B}$ is the full endomorph
 
 ## Summary
 
-The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing determinant and the zero divisors are the singular matrices, a nonzero zero divisor being a rank-one matrix $\Phi(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. The biquaternion exponential corresponds to the matrix exponential, $\Phi(\exp\tilde{Q}) = \exp\Phi(\tilde{Q})$, whence $N(\exp\tilde{Q}) = e^{2Q_0}$; and $\Phi$ carries the Hermitian subspace onto the Hermitian matrices, intertwining the symmetrized product with $\tfrac12(AB + BA)$ as Jordan algebras.
+The biquaternion algebra is isomorphic to $M_2(\mathbb{C})$ through the map $\Phi$ fixed by $e_0 \mapsto I$ and $e_k \mapsto -i\sigma_k$, whose explicit form is $\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix}$. The choice is stated once: the Pauli matrices are a shorthand for the images and not the organising device, and every statement is about $\mathbb{B}$ and $M_2(\mathbb{C})$. The trace is $2Q_0$ and the determinant is $N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, so invertibility is non-vanishing determinant and the zero divisors are the singular matrices, a nonzero zero divisor being a rank-one matrix $\Phi(\tilde{Q}) = uv^{T}$. The characteristic polynomial is $\lambda^2 - 2Q_0\lambda + N(\tilde{Q})$ and the Cayley–Hamilton identity is $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, so every power reduces to a combination of $e_0$ and $\tilde{Q}$. And $\Phi$ carries the Hermitian subspace onto the Hermitian matrices.
 
 Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate transpose, and complex conjugation is **not** entrywise: it is dressed with the antisymmetric matrix $\epsilon = i\sigma_2 = \Phi(-e_2)$, as $\Phi(\bar{\tilde{Q}}) = \epsilon(\Phi(\tilde{Q}))^{\natural}\epsilon^{-1}$. The six distinguished subspaces are the scalar, traceless, quaternionic, anti-quaternionic, Hermitian and anti-Hermitian matrices. The algebra is simple with centre the scalar matrices and is the full endomorphism algebra of the simple module $V = \mathbb{C}^2$ of complex dimension $2$, on which it acts by matrix multiplication; the minimal left ideals are the column spaces, and $V$ is the only simple module. The two dimensions $2$ of the module and $2$ of the matrix are the same two, because the algebra is the endomorphism algebra of the module.
 
@@ -405,7 +373,7 @@ Quaternion conjugation is the adjugate, Hermitian conjugation is the conjugate t
 | $\epsilon = i\sigma_2 = \Phi(-e_2)$ | Antisymmetric matrix, $\Phi(\bar{\tilde{Q}}) = \epsilon(\Phi(\tilde{Q}))^{\natural}\epsilon^{-1}$ |
 | $\operatorname{Tr}\Phi(\tilde{Q}) = 2Q_0$ | Trace of the matrix realization |
 | $\operatorname{spec}\tilde{Q} = \{Q_0 \pm iB\}$ | Spectrum, the eigenvalues of $\Phi(\tilde{Q})$, $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ |
-| $H_2(\mathbb{C})$ | Hermitian $2 \times 2$ matrices, the Jordan algebra $\Phi(\mathbb{M}_+)$ |
+| $H_2(\mathbb{C})$ | Hermitian $2 \times 2$ matrices, the image of $\mathbb{M}_+$ under $\Phi$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Traceless matrices, the image $\Phi(\mathrm{Vect}(\mathbb{B}))$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The six distinguished subspaces |

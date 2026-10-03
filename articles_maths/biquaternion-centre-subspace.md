@@ -85,6 +85,21 @@ The products within the subspace and the products with the vector units that gen
 
 for $k = 1, 2, 3$. The table is the statement that $\mathbb{C}_{\mathbb{B}}$ multiplies into every subspace and is multiplied into by every subspace, with no sign change: multiplication by a central element is a scalar extension, and the four subspaces $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ and the two sectors are all modules over $\mathbb{C}_{\mathbb{B}}$.
 
+### The Jordan Remark
+
+The centre **is closed under the symmetrized product**. For two central elements, $\tilde{P}=P_0e_0$ and $\tilde{R}=R_0e_0$,
+
+$$
+\tilde{P}\bullet\tilde{R} = \tfrac{1}{2}\bigl(\tilde{P}\tilde{R}+\tilde{R}\tilde{P}\bigr) = P_0R_0\,e_0 ,
+$$
+
+with $e_0$ the unit of the Jordan algebra. The centre is therefore one of the two subspaces closed under both halves of the product, the quaternion subspace being the other; the classification is in *Biquaternion Jordan Algebra*.
+
+### The Lie Remark
+
+The centre **is closed under the commutator**, the bracket vanishing identically on it: it is the centre of the Lie algebra and an abelian ideal. The detail is in §*The Lie Algebra Structure* below, and the general account in *Biquaternion Lie Algebra*.
+
+
 ## Units and Zero Divisors
 
 **Proposition.** On the centre subspace the algebraic operation $N$ is the square of the coefficient,
@@ -243,3 +258,4 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the centre of the Lie algebra $\mathrm{G}$ and its abelianisation
 - *The Centre Subspace under the Three Topologies* (`articles_maths/the-centre-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies
 - *Jordan Algebras* (`articles_maths/jordan-algebras.md`), for the symmetrized product that gives the Hermitian subspace its algebraic structure
+- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product of $\mathbb{B}$ and the classification of the six subspaces under the two halves

@@ -50,6 +50,11 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
 - A prime is never written immediately after a symbol that also carries a subscript: the form `q'_0^2` is not written. The prime is applied to the symbol first, and the subscript follows it.
 - Tables are Markdown tables. A LaTeX array is never used for a table.
 - Every heading that introduces a comparison or a classification is a real `###` heading, and the objects are defined before they are tabulated.
+- **Bold marks the result.** In a Remark that states a verdict, the clause carrying the outcome is
+  set in bold, `**...**`, the object of the sentence staying in plain roman: *the subspace **is a
+  commutative Jordan algebra over $\mathbb{R}$ of degree two***. A statement already displayed as a
+  Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
+  to the lead sentence of a section that states an outcome.
 - The macros `\dddot` and `\slashed` are available. The characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping.
 - A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.
 

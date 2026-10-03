@@ -101,6 +101,15 @@ In particular the scalar part of the square is negative, and $\tilde{Q}^2$ is ne
 
 **Proof.** Expanding with $\mathbf{q}^2 = -|\mathbf{q}|^2e_0$ and the centrality of $i$ gives the displayed element, whose scalar part is $-\left((q'_0)^2+|\mathbf{q}|^2\right) \leq 0$ and whose vector part is imaginary, so it lies in $\mathbb{M}_+$; the scalar part cannot equal $1$, so $\tilde{Q}^2 \neq e_0$, and it vanishes only for $\tilde{Q} = 0$.
 
+### The Jordan Remark
+
+The subspace **is not closed under the symmetrized product**: for anti-Hermitian $\tilde{P},\tilde{R}$ the product $\tilde{P}\bullet\tilde{R}$ is Hermitian and lands in $\mathbb{M}_+$, as §*The Symmetrized Product Lands in the Hermitian Subspace* above reads. The general theory is in *Biquaternion Jordan Algebra*.
+
+### The Lie Remark
+
+The subspace **is closed under the commutator**. It is a real Lie algebra of dimension four, with the central line $i\mathbb{R}e_0$ as an abelian ideal and derived subalgebra $\mathrm{K}$, as §*It Is a Lie Subalgebra* above reads. Together with the vector subspace it is one of the two subspaces closed under the bracket and not under the Jordan product; the general account is in *Biquaternion Lie Algebra*.
+
+
 ## Units and Zero Divisors
 
 **Theorem.** On the anti-Hermitian subspace the algebraic operation $N$ is
@@ -280,3 +289,4 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of reversal, equiv
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the two families of zero divisors and the associated idempotents
 - *Biquaternion Lie Algebra* (`articles_maths/biquaternion-lie-algebra.md`), for the sector that is a Lie subalgebra and the brackets of both sectors
 - *The Anti-Hermitian Subspace under the Three Topologies* (`articles_maths/the-anti-hermitian-subspace-under-the-three-topologies.md`), for the subspace read under each of the three topologies
+- *Biquaternion Jordan Algebra* (`articles_maths/biquaternion-jordan-algebra.md`), for the symmetrized product of $\mathbb{B}$ and the classification of the six subspaces under the two halves
