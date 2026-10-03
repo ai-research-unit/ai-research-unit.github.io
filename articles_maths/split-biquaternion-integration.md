@@ -23,10 +23,10 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm \in \mathbb{H}$ ordinary quaternio
 
 ### Definition
 
-Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $x_0, x_1, x_2, x_3$. Let $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as
+Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. Let $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as
 
 $$
-\tilde{F}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(x_0, x_1, x_2, x_3) e_\mu, \qquad F_\mu \in \mathbb{D}.
+\tilde{F}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(Q_0, Q_1, Q_2, Q_3) e_\mu, \qquad F_\mu \in \mathbb{D}.
 $$
 
 Let $\Omega \subset V$ be a domain. The **integral** of $\tilde{F}$ over $\Omega$ is
@@ -247,10 +247,10 @@ $$
 \tilde{\nabla} \tilde{G}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu x_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu x_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = x_0 e_0 - \sum_k x_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \sum_k Q_k e_k$. So
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{x_0 e_0 - \sum_k x_k e_k}{(\sum_\mu x_\mu^2)^2}.
+\tilde{G}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu Q_\mu^2)^2}.
 $$
 
 A direct computation gives
@@ -262,7 +262,7 @@ $$
 The first term is $\sum_\mu e_\mu \partial_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
 
 $$
-\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
+\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
 $$
 
 Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$.
@@ -469,18 +469,18 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimen
 
 The integration theory developed in this article is the split biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
 
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The split biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
+**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(A - A_0)$. The split biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split biquaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
 
-**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $x^{\natural}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
+**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $\tilde Q^{-1}/\|\tilde Q\|^{n-2}$, equivalently $\tilde Q^{\natural}/\|\tilde Q\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
 
 ## The Relation to the Split Complex Case
 
-In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(z - z_0)$, whose singular locus is the translate $z_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{D}$. The integral formula is
+In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(A - A_0)$, whose singular locus is the translate $A_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{D}$. The integral formula is
 
 $$
-f(z_0) = \frac{1}{2\pi i_{\mathbb{D}}} \oint_\gamma \frac{f(z)}{z - z_0} \, dz,
+f(A_0) = \frac{1}{2\pi i_{\mathbb{D}}} \oint_\gamma \frac{f(A)}{A - A_0} \, dA,
 $$
 
 where $i_{\mathbb{D}}$ is the "imaginary" unit of the split complex algebra. But the split complex algebra has no imaginary unit, so the formula is not directly analogous to the complex case. Instead, the split complex integration theory is expressed in the idempotent basis, where it reduces to two copies of the real integration theory.
@@ -524,7 +524,7 @@ The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) =
 | ${}^{\natural}, \bar{\cdot}, {}^\dagger, {}^\flat$ | The four conjugations |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
-| $V$ | A four-dimensional real subspace, coordinates $x_0, \dots, x_3$ |
+| $V$ | A four-dimensional real subspace, coordinates $Q_0, \dots, Q_3$ |
 | $\Omega \subset V$ | Domain of integration |
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega \tilde{F} \, dV$ | Integral of $\tilde{F}$ over $\Omega$ |

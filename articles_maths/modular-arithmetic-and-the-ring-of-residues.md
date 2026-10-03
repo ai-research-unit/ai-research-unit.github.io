@@ -137,7 +137,7 @@ and if $p \nmid a$ then $a^{p-1} \equiv 1 \pmod p$.
 
 **Theorem (Wilson).** If $p$ is prime then $(p-1)! \equiv -1 \pmod p$.
 
-**Proof.** In $\mathbb{F}_p$ the nonzero elements pair off into inverse pairs except for the self-inverse elements $\pm 1$, since the solutions of $x^2 = 1$ are $x = \pm 1$ in a field; multiplying all nonzero classes gives $\bar 1 \cdot (-\bar 1)$ times $\bar 1$ for each inverse pair, hence $-1$.
+**Proof.** In $\mathbb{F}_p$ the nonzero elements pair off into inverse pairs except for the self-inverse elements $\pm 1$, since the solutions of $m^2 = 1$ are $m = \pm 1$ in a field; multiplying all nonzero classes gives $\bar 1 \cdot (-\bar 1)$ times $\bar 1$ for each inverse pair, hence $-1$.
 
 **Corollary.** The order $\operatorname{ord}_n(a)$ of a unit $a$ modulo $n$ divides $\varphi(n)$, and $a$ is a **primitive root** modulo $n$ exactly when its order is $\varphi(n)$. For $p$ prime the group $\mathbb{F}_p^\times$ is cyclic of order $p-1$.
 
@@ -147,17 +147,17 @@ and if $p \nmid a$ then $a^{p-1} \equiv 1 \pmod p$.
 
 ### Linear Congruences
 
-**Theorem.** The congruence $ax \equiv b \pmod n$ has a solution if and only if $d = \gcd(a,n)$ divides $b$, in which case it has exactly $d$ solutions modulo $n$, namely
+**Theorem.** The congruence $am \equiv b \pmod n$ has a solution if and only if $d = \gcd(a,n)$ divides $b$, in which case it has exactly $d$ solutions modulo $n$, namely
 
 $$
-x \equiv x_0 + \frac{n}{d}\,t \pmod n, \qquad t = 0, 1, \dots, d-1,
+m \equiv m_0 + \frac{n}{d}\,t \pmod n, \qquad t = 0, 1, \dots, d-1,
 $$
 
-where $x_0 = u(b/d)$ for a Bézout coefficient $u$ with $ua + vn = d$.
+where $m_0 = u(b/d)$ for a Bézout coefficient $u$ with $ua + vn = d$.
 
-**Proof.** The congruence is $n \mid (ax - b)$, so $d \mid b$ is necessary. If $d \mid b$, divide by $d$: the congruence $a'x \equiv b' \pmod{n'}$ with $a' = a/d$, $n' = n/d$ has $\gcd(a',n')=1$, so $x \equiv u b' \pmod{n'}$ by Bézout, and this class has exactly $d$ lifts modulo $n$.
+**Proof.** The congruence is $n \mid (am - b)$, so $d \mid b$ is necessary. If $d \mid b$, divide by $d$: the congruence $a'm \equiv b' \pmod{n'}$ with $a' = a/d$, $n' = n/d$ has $\gcd(a',n')=1$, so $m \equiv u b' \pmod{n'}$ by Bézout, and this class has exactly $d$ lifts modulo $n$.
 
-**Corollary.** The congruence is solvable for every $b$ exactly when $a$ is a unit modulo $n$; in that case the solution is unique modulo $n$ and is $x \equiv a^{-1}b$.
+**Corollary.** The congruence is solvable for every $b$ exactly when $a$ is a unit modulo $n$; in that case the solution is unique modulo $n$ and is $m \equiv a^{-1}b$.
 
 ### Quadratic Residues
 
@@ -175,7 +175,7 @@ $$
 \left(\frac{a}{p}\right) \equiv a^{(p-1)/2} \pmod p .
 $$
 
-**Proof.** Fermat's little theorem gives $a^{p-1} = 1$, so $a^{(p-1)/2}$ is a root of $x^2 = 1$ in the field $\mathbb{F}_p$, hence is $\pm 1$. The squares are the even powers of a generator of the cyclic group $\mathbb{F}_p^\times$, and for them the exponent is a multiple of $p-1$, giving $1$; the nonsquares give $-1$.
+**Proof.** Fermat's little theorem gives $a^{p-1} = 1$, so $a^{(p-1)/2}$ is a root of $m^2 = 1$ in the field $\mathbb{F}_p$, hence is $\pm 1$. The squares are the even powers of a generator of the cyclic group $\mathbb{F}_p^\times$, and for them the exponent is a multiple of $p-1$, giving $1$; the nonsquares give $-1$.
 
 **Corollary.** The Legendre symbol is multiplicative in $a$, and exactly half of the nonzero residues are quadratic residues.
 
@@ -189,7 +189,7 @@ and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and 
 
 **Proof.** The reciprocity law is Gauss's; the standard proof uses the Gaussian lemma and the counting of lattice points in a rectangle, and is given in the references.
 
-**Corollary.** The congruence $x^2 \equiv a \pmod p$ is solvable exactly when $\left(\frac{a}{p}\right) = 1$, and the number of solutions is then $2$; the law of quadratic reciprocity makes the decidability of this question effective.
+**Corollary.** The congruence $m^2 \equiv a \pmod p$ is solvable exactly when $\left(\frac{a}{p}\right) = 1$, and the number of solutions is then $2$; the law of quadratic reciprocity makes the decidability of this question effective.
 
 ### Applications
 
@@ -205,9 +205,9 @@ and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and 
 
 ### Polynomials over $\mathbb{Z}/n\mathbb{Z}$
 
-**Definition.** For $f \in \mathbb{Z}[x]$ and $n \geq 1$ the **polynomial congruence** $f(x) \equiv 0 \pmod n$ asks for the classes $\bar x \in \mathbb{Z}/n\mathbb{Z}$ with $f(\bar x) = \bar 0$ in the reduction of $f$ modulo $n$. The number of solutions is not a function of the degree: $x^2 \equiv 1 \pmod 8$ has the four solutions $1, 3, 5, 7$, and $x^2 \equiv 0 \pmod{p^k}$ has $p^{\lfloor k/2\rfloor}$ of them.
+**Definition.** For $f \in \mathbb{Z}[x]$ and $n \geq 1$ the **polynomial congruence** $f(m) \equiv 0 \pmod n$ asks for the classes $\bar m \in \mathbb{Z}/n\mathbb{Z}$ with $f(\bar m) = \bar 0$ in the reduction of $f$ modulo $n$. The number of solutions is not a function of the degree: $m^2 \equiv 1 \pmod 8$ has the four solutions $1, 3, 5, 7$, and $m^2 \equiv 0 \pmod{p^k}$ has $p^{\lfloor k/2\rfloor}$ of them.
 
-**Theorem (reduction to prime powers).** If $n = p_1^{k_1}\cdots p_r^{k_r}$, then the solutions of $f(x) \equiv 0 \pmod n$ are in bijection with the $r$-tuples of solutions modulo the $p_i^{k_i}$, under the Chinese remainder isomorphism. Consequently the counting of solutions reduces to the prime powers.
+**Theorem (reduction to prime powers).** If $n = p_1^{k_1}\cdots p_r^{k_r}$, then the solutions of $f(m) \equiv 0 \pmod n$ are in bijection with the $r$-tuples of solutions modulo the $p_i^{k_i}$, under the Chinese remainder isomorphism. Consequently the counting of solutions reduces to the prime powers.
 
 **Proof.** The Chinese remainder theorem identifies $\mathbb{Z}/n\mathbb{Z}$ with the product of the $\mathbb{Z}/p_i^{k_i}\mathbb{Z}$, and under a ring isomorphism the solutions of a polynomial equation correspond componentwise.
 
@@ -233,11 +233,11 @@ $$
 
 and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k f'(r_k) \equiv 0$. Writing $f(r_k) = p^k s$ and using $f'(r_k) \equiv f'(r) \not\equiv 0 \pmod p$, the congruence becomes $s + t f'(r) \equiv 0 \pmod p$, which has the unique solution $t \equiv -s f'(r)^{-1} \pmod p$. The induction begins at $k = 1$ with $r_1 = r$.
 
-**Corollary.** Let $p$ be odd and let $a$ be a quadratic residue modulo $p$ with $p \nmid a$. Then $x^2 \equiv a \pmod{p^k}$ has exactly two solutions for every $k$, obtained by lifting the two roots modulo $p$; more generally a simple root of a polynomial congruence lifts uniquely to every prime power.
+**Corollary.** Let $p$ be odd and let $a$ be a quadratic residue modulo $p$ with $p \nmid a$. Then $m^2 \equiv a \pmod{p^k}$ has exactly two solutions for every $k$, obtained by lifting the two roots modulo $p$; more generally a simple root of a polynomial congruence lifts uniquely to every prime power.
 
-**Proof.** For $f = x^2 - a$ and a root $r$ with $r^2 \equiv a \pmod p$ one has $f'(r) = 2r \not\equiv 0 \pmod p$ because $p$ is odd and $a \not\equiv 0$, so Hensel's lemma applies to each of the two roots $\pm r$; the two lifted solutions are distinct modulo $p$ and hence modulo every $p^k$.
+**Proof.** For $f = m^2 - a$ and a root $r$ with $r^2 \equiv a \pmod p$ one has $f'(r) = 2r \not\equiv 0 \pmod p$ because $p$ is odd and $a \not\equiv 0$, so Hensel's lemma applies to each of the two roots $\pm r$; the two lifted solutions are distinct modulo $p$ and hence modulo every $p^k$.
 
-**Example.** The lemma is sharp: for $f = x^2 - 1$ and $p = 2$ one has $f'(r) = 2r \equiv 0 \pmod 2$ for every $r$, and indeed $x^2 \equiv 1 \pmod{2^k}$ has one solution for $k=1$, two for $k=2$ and four for $k \geq 3$, namely $\pm 1$ and $\pm(1 + 2^{k-1})$. For $f = x^2$ the only root modulo $p$ is multiple, and the number of solutions modulo $p^k$ is $p^{\lfloor k/2\rfloor}$. Thus Hensel's lemma asserts exactly that the *simple* roots, and only they, lift uniquely.
+**Example.** The lemma is sharp: for $f = m^2 - 1$ and $p = 2$ one has $f'(r) = 2r \equiv 0 \pmod 2$ for every $r$, and indeed $m^2 \equiv 1 \pmod{2^k}$ has one solution for $k=1$, two for $k=2$ and four for $k \geq 3$, namely $\pm 1$ and $\pm(1 + 2^{k-1})$. For $f = m^2$ the only root modulo $p$ is multiple, and the number of solutions modulo $p^k$ is $p^{\lfloor k/2\rfloor}$. Thus Hensel's lemma asserts exactly that the *simple* roots, and only they, lift uniquely.
 
 ### The $p$-adic Reading
 
@@ -251,7 +251,7 @@ and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k f'(r
 
 Congruence modulo $n$ is the equivalence relation $a \equiv b \pmod n \iff n \mid (a-b)$, compatible with addition and multiplication, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with identity whose elements are the classes $\bar 0, \dots, \overline{n-1}$; it is a field exactly when $n$ is prime, in which case it is $\mathbb{F}_p$. An element is a unit exactly when it is coprime to $n$, a zero divisor exactly when its gcd with $n$ is proper nontrivial, and the units form a group of order $\varphi(n)$. The Chinese remainder theorem identifies $\mathbb{Z}/mn\mathbb{Z}$ with $\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ for coprime $m, n$, whence the multiplicativity of $\varphi$ and the decomposition of the rings and unit groups into their prime-power parts; $\varphi(n) = n\prod(1 - 1/p_i)$ and $\sum_{d\mid n}\varphi(d) = n$.
 
-Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for units, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of a unit divides $\varphi(n)$, the group of units modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $ax \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $x^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
+Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for units, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of a unit divides $\varphi(n)$, the group of units modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $am \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $m^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
 
 ## Summary of Notation
 

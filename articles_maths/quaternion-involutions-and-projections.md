@@ -8,9 +8,9 @@ The article turns on one computation, the multiplicativity of $-\nu\tilde q\nu$,
 
 The treatment is mathematical throughout. No physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. A unit vector is an element of the imaginary subspace with unit quaternion norm; it is a direction in $\mathbb{R}^3$ and nothing else.
 
-The quaternion algebra and its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the conjugate, the quaternion norm and the absence of zero divisors are from *Quaternion Algebra* and *Quaternion Norm and Invertibility*; the inner automorphism $\iota_u(\tilde x) = u\tilde xu^{-1}$ and the theorem that every automorphism of $\mathbb{H}$ is inner are from *Quaternion Automorphisms and Derivations*; the adjoint action, the plane reflection $\rho_v$, the half-angle formula and the composition $\rho_{v_1}\rho_{v_2} = \operatorname{Ad}_{v_1v_2}$ are from *Quaternion Rotations and Reflections*; the three coordinate involutions, the sign matrix, the Klein group and the recovery of the conjugate from the three coordinate involutions are from *Quaternion Augmented Statistics*; the sphere of unit vectors, identified with $Sp(1)/U(1)$, is from *Quaternion Roots of Minus One*.
+The quaternion algebra and its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the conjugate, the quaternion norm and the absence of zero divisors are from *Quaternion Algebra* and *Quaternion Norm and Invertibility*; the inner automorphism $\iota_u(\tilde q) = u\tilde q u^{-1}$ and the theorem that every automorphism of $\mathbb{H}$ is inner are from *Quaternion Automorphisms and Derivations*; the adjoint action, the plane reflection $\rho_v$, the half-angle formula and the composition $\rho_{v_1}\rho_{v_2} = \operatorname{Ad}_{v_1v_2}$ are from *Quaternion Rotations and Reflections*; the three coordinate involutions, the sign matrix, the Klein group and the recovery of the conjugate from the three coordinate involutions are from *Quaternion Augmented Statistics*; the sphere of unit vectors, identified with $Sp(1)/U(1)$, is from *Quaternion Roots of Minus One*.
 
-Throughout, a quaternion is $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with scalar part $q_0 = \mathrm{Sc}\,\tilde q$ and vector part $\mathbf q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, the real inner product on $\operatorname{Im}\mathbb{H}$ is $\langle x,y\rangle = \mathrm{Sc}(x y^{\natural}) = \sum_{k=1}^{3}x_ky_k$ with $|x|^2 = \langle x,x\rangle$, and a **unit vector** is an element $\nu\in\operatorname{Im}\mathbb{H}$ with $N(\nu) = 1$. For a unit vector $\nu$ one has $\nu^2 = -e_0$ and $\nu^{-1} = \bar\nu = -\nu$. The units of $\mathbb{H}$ are the non-zero elements, and $Sp(1)$ is the unit sphere.
+Throughout, a quaternion is $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with scalar part $q_0 = \mathrm{Sc}\,\tilde q$ and vector part $\mathbf q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, the real inner product on $\operatorname{Im}\mathbb{H}$ is $\langle\mathbf{q},\mathbf{p}\rangle = \mathrm{Sc}(\mathbf{q}\mathbf{p}^{\natural}) = \sum_{k=1}^{3}q_kp_k$ with $|\mathbf{q}|^2 = \langle\mathbf{q},\mathbf{q}\rangle$, and a **unit vector** is an element $\nu\in\operatorname{Im}\mathbb{H}$ with $N(\nu) = 1$. For a unit vector $\nu$ one has $\nu^2 = -e_0$ and $\nu^{-1} = \bar\nu = -\nu$. The units of $\mathbb{H}$ are the non-zero elements, and $Sp(1)$ is the unit sphere.
 
 The source of the arrangement is the paper of Ell and Sangwine, *Quaternion Involutions* (arXiv:math/0506034): the axioms, the infinitude of the family, the reflection reading, the composition theorems, the recovery of the conjugate and the projection formulas are theirs. The notation is the corpus's. Where the source writes $\tilde q^{\nu}$ for the value $-\nu\tilde q\nu$, this article writes $\iota_\nu(\tilde q)$, the inner-automorphism notation of *Quaternion Automorphisms and Derivations*, to which the involution is a specialisation.
 
@@ -91,10 +91,10 @@ Consequently $\iota_\nu$ fixes the scalar part, fixes the vector part parallel t
 **Remark.** The reflection of *Quaternion Rotations and Reflections* is the plane reflection
 
 $$
-\rho_\nu(\tilde x) = -\nu\tilde x\nu^{-1},
+\rho_\nu(\tilde q) = -\nu\tilde q\nu^{-1},
 $$
 
-which on $\operatorname{Im}\mathbb{H}$ equals $\tilde x-2\langle\tilde x,\nu\rangle\nu$ and is the reflection in the **plane** $\nu^{\perp}$; on $\mathbb{H}$ it also negates the scalar line, $\rho_\nu(e_0) = -e_0$. Since $\nu^{-1} = -\nu$, one has $\rho_\nu = -\iota_\nu$: the involution and the plane reflection are the two reflections attached to the axis $\nu$, and the sign between them is exactly the difference between reflecting in the line and reflecting in the plane. The plane reflection is orientation-reversing on $\operatorname{Im}\mathbb{H}$ and the involution is orientation-preserving there, the determinants being $-1$ and $+1$.
+which on $\operatorname{Im}\mathbb{H}$ equals $\tilde q-2\langle\tilde q,\nu\rangle\nu$ and is the reflection in the **plane** $\nu^{\perp}$; on $\mathbb{H}$ it also negates the scalar line, $\rho_\nu(e_0) = -e_0$. Since $\nu^{-1} = -\nu$, one has $\rho_\nu = -\iota_\nu$: the involution and the plane reflection are the two reflections attached to the axis $\nu$, and the sign between them is exactly the difference between reflecting in the line and reflecting in the plane. The plane reflection is orientation-reversing on $\operatorname{Im}\mathbb{H}$ and the involution is orientation-preserving there, the determinants being $-1$ and $+1$.
 
 ## Composition of Involutions
 
@@ -243,14 +243,14 @@ Three mutually perpendicular involutions recover the conjugate and the scalar pa
 | $\tilde{q}^{\natural}$ | Quaternion conjugate, an anti-involution |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert\tilde q\rvert^2$ | Quaternion norm and modulus |
 | $\operatorname{Im}\mathbb{H}$ | Imaginary subspace, the space of vectors |
-| $\langle x,y\rangle = \mathrm{Sc}(x y^{\natural})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
+| $\langle\mathbf{q},\mathbf{p}\rangle = \mathrm{Sc}(\mathbf{q}\mathbf{p}^{\natural})$ | Real inner product on $\operatorname{Im}\mathbb{H}$ |
 | $\nu$ | Unit vector, $\nu\in\operatorname{Im}\mathbb{H}$, $N(\nu) = 1$ |
 | $Sp(1)$ | Unit sphere and unit group of $\mathbb{H}$ |
-| $\iota_u(\tilde x) = u\tilde xu^{-1}$ | Inner automorphism (from *Quaternion Automorphisms and Derivations*) |
+| $\iota_u(\tilde q) = u\tilde q u^{-1}$ | Inner automorphism (from *Quaternion Automorphisms and Derivations*) |
 | $\iota_\nu(\tilde q) = \nu\tilde q\nu^{-1} = -\nu\tilde q\nu$ | Involution about the axis $\nu$, a unit vector |
 | $\tilde q^{\nu} = -\nu\tilde q\nu$ | The source's notation for the value of $\iota_\nu$ |
-| $\operatorname{Ad}_q(\tilde x) = q\tilde xq^{-1}$ | Adjoint action and inner automorphism |
-| $\rho_\nu(\tilde x) = -\nu\tilde x\nu^{-1} = -\iota_\nu(\tilde x)$ | Plane reflection of the axis $\nu$ |
+| $\operatorname{Ad}_{\tilde q}(\tilde p) = \tilde q\tilde p\tilde q^{-1}$ | Adjoint action and inner automorphism |
+| $\rho_\nu(\tilde q) = -\nu\tilde q\nu^{-1} = -\iota_\nu(\tilde q)$ | Plane reflection of the axis $\nu$ |
 | $\operatorname{span}(e_0,\nu)$ | Argand plane of the axis $\nu$ |
 | $\nu_1,\nu_2,\nu_3$ mutually perpendicular | Orthonormal frame of axes |
 | $\mathbb{R}\nu$ | Axis line; the involutions are parametrised by the axis lines |

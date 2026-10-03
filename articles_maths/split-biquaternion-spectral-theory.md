@@ -13,7 +13,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 **Definition.** Let $A$ be a unital associative algebra over a field $F$. The **spectrum** of $a \in A$ is $\sigma_A(a) = \{\lambda \in F : a - \lambda 1_A \text{ is not invertible in } A\}$.
 
-**Proposition.** If $A$ is a finite-dimensional unital algebra over $\mathbb{C}$ with $A \neq 0$ and $L_a(x) = ax$ is left multiplication, then $\sigma_A(a)$ is the set of eigenvalues of $L_a$ and is nonempty.
+**Proposition.** If $A$ is a finite-dimensional unital algebra over $\mathbb{C}$ with $A \neq 0$ and $L_a(b) = ab$ is left multiplication, then $\sigma_A(a)$ is the set of eigenvalues of $L_a$ and is nonempty.
 
 **Proof.** $b$ is invertible if and only if $L_b$ is bijective; the characteristic polynomial of $L_a$ has a root $\mu \in \mathbb{C}$, and $L_a - \mu\,\mathrm{id} = L_{a-\mu1_A}$ is singular, so $\mu \in \sigma_A(a)$; conversely $\lambda \in \sigma_A(a)$ makes $L_{a-\lambda1_A}$ non-bijective.
 
@@ -158,7 +158,7 @@ The contrast with the biquaternion case is sharp: there $\rho(\tilde{Q}) = 0$ fo
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_+ + (\exp\tilde{Q}_-)\tilde\Pi_-$, and is the value of $e^z$ at the reduced spectrum. Componentwise, for a quaternion $q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
+The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_+ + (\exp\tilde{Q}_-)\tilde\Pi_-$, and is the value of $e^{\lambda}$ at the reduced spectrum. Componentwise, for a quaternion $q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
 
 $$
 \exp q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat q\right) ,

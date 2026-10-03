@@ -96,7 +96,7 @@ Over $\mathbb{R}$ the algebra is the Lie algebra of the real Lie group $\mathbb{
 
 The **adjoint maps** are
 $$
-\operatorname{ad}_{\tilde{Q}} : X\mapsto[\tilde{Q},X],
+\operatorname{ad}_{\tilde{Q}} : \tilde{P}\mapsto[\tilde{Q},\tilde{P}],
 $$
 and the map $\tilde{Q}\mapsto\operatorname{ad}_{\tilde{Q}}$ is a Lie algebra homomorphism whose kernel is the centre $\mathbb{C}e_0$.
 

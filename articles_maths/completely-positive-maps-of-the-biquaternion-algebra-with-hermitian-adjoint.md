@@ -17,7 +17,7 @@ The rank-one case is exactly the sandwich of *Two-Sided Operators on the Biquate
 
 **Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde V\succeq0$ then $\tilde{Q}\tilde V\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
 
-*Proof.* For $\tilde V\succeq0$, write $\tilde V=\bar{z}z$; then $\tilde{Q}\tilde V\tilde{Q}^{*}=(\tilde Rz)^{\dagger}(\tilde Rz)\succeq0$. The amplified statement is the same computation blockwise. Verified: sandwiches sent thousands of random positive semidefinite elements to positive semidefinite elements.
+*Proof.* For $\tilde V\succeq0$, write $\tilde V=\bar{\tilde S}\tilde S$; then $\tilde{Q}\tilde V\tilde{Q}^{*}=(\tilde R\tilde S)^{\dagger}(\tilde R\tilde S)\succeq0$. The amplified statement is the same computation blockwise. Verified: sandwiches sent thousands of random positive semidefinite elements to positive semidefinite elements.
 
 **Proposition (positivity is not complete positivity).** A positive map need not be completely positive; the canonical example on the biquaternion algebra is the **transposition** $\Phi(\tilde V)=\tilde V^{T}$, which is positive and not completely positive. This is the content of the section *The Transposition* below.
 

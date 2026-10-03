@@ -77,7 +77,7 @@ On the Lorentzian four-plane $\mathbb{M}_-$ the split-biquaternion norm restrict
 
 **Theorem.** The projective null quadric of the Lorentzian slice $\mathbb{M}_-$ is a smooth real quadric surface in $\mathbb{P}^3$ whose real points form $S^2$ and which contains no real line; the projective null quadric of a neutral plane is a smooth real quadric surface whose real points form a torus $S^1\times S^1$ and which contains two families of real lines.
 
-**Proof.** In coordinates the Lorentzian form is $q'^2_0 - \sum_k q_k^2$, whose projectivised real zero set is the image of the unit sphere $S^2$ of the spacelike three-space; a non-degenerate quadratic form on $\mathbb{R}^4$ of signature $(3,1)$ has no isotropic line, so no real line lies on its quadric. For signature $(2,2)$ the form is $x_1^2 + x_2^2 - x_3^2 - x_4^2$, whose real isotropic lines separate into the two families $x_1 = \pm x_3$-type and, after the standard change of coordinates, form two copies of $S^1$; the real points form $S^1\times S^1$.
+**Proof.** In coordinates the Lorentzian form is $q'^2_0 - \sum_k q_k^2$, whose projectivised real zero set is the image of the unit sphere $S^2$ of the spacelike three-space; a non-degenerate quadratic form on $\mathbb{R}^4$ of signature $(3,1)$ has no isotropic line, so no real line lies on its quadric. For signature $(2,2)$ the form is $a_1^2 + a_2^2 - a_3^2 - a_4^2$, whose real isotropic lines separate into the two families $a_1 = \pm a_3$-type and, after the standard change of coordinates, form two copies of $S^1$; the real points form $S^1\times S^1$.
 
 ## Summary
 

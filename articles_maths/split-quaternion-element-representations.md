@@ -14,10 +14,10 @@ The split-quaternion algebra, its matrix model $\Phi$, its idempotents $\tilde\p
 A **representation** of $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q,v) \mapsto \tilde q \cdot v$, such that
 
 $$
-\tilde q \cdot (y \cdot v) = (xy) \cdot v, \qquad 1 \cdot v = v
+\tilde q \cdot (\tilde p \cdot v) = (\tilde q \tilde p) \cdot v, \qquad 1 \cdot v = v
 $$
 
-for all $\tilde q,y \in \mathbb{H}_{\mathrm{s}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}_{\mathrm{s}} \to \operatorname{End}_{\mathbb{R}}(M)$. A **module** is a representation; the two words are used interchangeably, and a module is **simple** or **irreducible** when it has no submodule other than $0$ and itself. The representation is **finite-dimensional** when $M$ is.
+for all $\tilde q,\tilde p \in \mathbb{H}_{\mathrm{s}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}_{\mathrm{s}} \to \operatorname{End}_{\mathbb{R}}(M)$. A **module** is a representation; the two words are used interchangeably, and a module is **simple** or **irreducible** when it has no submodule other than $0$ and itself. The representation is **finite-dimensional** when $M$ is.
 
 By (*Split-Quaternion Algebra*, §*The Centre and Simplicity*) the algebra is simple and non-commutative, so the kernel of a unital homomorphism $\rho$ is a two-sided ideal, hence $0$ or all of $\mathbb{H}_{\mathrm{s}}$; it is not all, because $\rho(1) = \mathrm{id}$. Every representation of a nonzero module is therefore faithful.
 
@@ -26,10 +26,10 @@ By (*Split-Quaternion Algebra*, §*The Centre and Simplicity*) the algebra is si
 The **left regular representation** is the algebra acting on itself by left multiplication:
 
 $$
-\lambda(\tilde q) y = \tilde q y .
+\lambda(\tilde q) \tilde p = \tilde q \tilde p .
 $$
 
-It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The **right regular representation** $\varrho(\tilde q) y = yx$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of *Quaternion Element Representations*, §*The Left and Right Regular Representations*. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)
+It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The **right regular representation** $\varrho(\tilde q) \tilde p = \tilde p \tilde q$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of *Quaternion Element Representations*, §*The Left and Right Regular Representations*. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)
 
 ### The Idempotent Decomposition
 
@@ -58,7 +58,7 @@ so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorph
 **Proof.** Let $e = E_{11} = \Phi\big(\tfrac12(1 - e_3)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps
 
 $$
-eV \longrightarrow fV, \quad w \longmapsto E_{21}w, \qquad fV \longrightarrow eV, \quad z \longmapsto E_{12}z
+eV \longrightarrow fV, \quad w \longmapsto E_{21}w, \qquad fV \longrightarrow eV, \quad u \longmapsto E_{12}u
 $$
 
 are mutually inverse, because $E_{12}E_{21} = E_{11} = e$ and $E_{21}E_{12} = E_{22} = f$. Choose a basis $w_1,\dots,w_d$ of $eV$; then $E_{21}w_1,\dots,E_{21}w_d$ is a basis of $fV$, and the two families together form a basis of $M$.

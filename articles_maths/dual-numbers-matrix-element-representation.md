@@ -8,10 +8,10 @@ This article constructs the faithful two-dimensional matrix representation of th
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm $N(Z) = Z\bar{Z} = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
 
 ## The Representation
 
@@ -20,17 +20,17 @@ with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\b
 **Definition.** The **matrix representation** of $\mathbb{D}'_R$ is the map
 
 $$
-\Phi : \mathbb{D}'_R \longrightarrow M_2(R), \qquad \Phi(a + \varepsilon b) = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}.
+\Phi : \mathbb{D}'_R \longrightarrow M_2(R), \qquad \Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}.
 $$
 
-The matrix $\Phi(Z)$ is the **matrix of** $Z$; its diagonal entry is the real part and its strictly upper-triangular entry is the infinitesimal part.
+The matrix $\Phi(A)$ is the **matrix of** $A$; its diagonal entry is the real part and its strictly upper-triangular entry is the infinitesimal part.
 
 ### Linearity and the Identity
 
 $\Phi$ is $R$-linear by construction, and it preserves the identity:
 
 $$
-\Phi(Z + W) = \Phi(Z) + \Phi(W), \qquad \Phi(\lambda Z) = \lambda\,\Phi(Z), \qquad \Phi(1) = I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
+\Phi(A + B) = \Phi(A) + \Phi(B), \qquad \Phi(\lambda A) = \lambda\,\Phi(A), \qquad \Phi(1) = I = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.
 $$
 
 ## The Representation Is an Algebra Homomorphism
@@ -40,22 +40,22 @@ $$
 **Theorem.** $\Phi$ is a unital algebra homomorphism:
 
 $$
-\Phi(ZW) = \Phi(Z)\,\Phi(W) \qquad \text{for all } Z, W \in \mathbb{D}'_R.
+\Phi(AB) = \Phi(A)\,\Phi(B) \qquad \text{for all } A, B \in \mathbb{D}'_R.
 $$
 
-**Proof.** With $Z = a + \varepsilon b$ and $W = c + \varepsilon d$,
+**Proof.** With $A = a + \varepsilon a'$ and $B = b + \varepsilon b',$
 
 $$
-\Phi(Z)\Phi(W) = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}\begin{pmatrix} c & d \\ 0 & c \end{pmatrix} = \begin{pmatrix} a c & a d + b c \\ 0 & a c \end{pmatrix} = \Phi(ZW),
+\Phi(A)\Phi(B) = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}\begin{pmatrix} b & b' \\ 0 & b \end{pmatrix} = \begin{pmatrix} a b & a b' + a' b \\ 0 & a b \end{pmatrix} = \Phi(AB),
 $$
 
-using $ZW = a c + (a d + b c)\varepsilon$.
+using $AB = a b + (a b' + a' b)\varepsilon$.
 
 ### Injectivity
 
 **Theorem.** $\Phi$ is injective, and hence a ring isomorphism onto its image.
 
-**Proof.** If $\Phi(Z) = 0$ then $a = 0$ and $b = 0$, so $Z = 0$.
+**Proof.** If $\Phi(A) = 0$ then $a = 0$ and $a' = 0$, so $A = 0$.
 
 So $\mathbb{D}'_R$ is isomorphic to the subalgebra $\Phi(\mathbb{D}'_R) \subseteq M_2(R)$, and the representation is faithful. The algebra is thus a **concrete** algebra of matrices, and everything proved about $\mathbb{D}'_R$ can be read in $M_2(R)$.
 
@@ -66,7 +66,7 @@ So $\mathbb{D}'_R$ is isomorphic to the subalgebra $\Phi(\mathbb{D}'_R) \subsete
 **Theorem.** The image $\Phi(\mathbb{D}'_R)$ is exactly the subalgebra of upper-triangular Toeplitz matrices,
 
 $$
-\Phi(\mathbb{D}'_R) = \left\{\begin{pmatrix} a & b \\ 0 & a \end{pmatrix} : a, b \in R\right\}.
+\Phi(\mathbb{D}'_R) = \left\{\begin{pmatrix} a & a' \\ 0 & a \end{pmatrix} : a, a' \in R\right\}.
 $$
 
 It is a commutative unital subalgebra of $M_2(R)$, of $R$-rank two, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$.
@@ -74,50 +74,50 @@ It is a commutative unital subalgebra of $M_2(R)$, of $R$-rank two, spanned by $
 **Proof.** The displayed set is the image by definition; it is closed under addition and multiplication, since
 
 $$
-\begin{pmatrix} a & b \\ 0 & a \end{pmatrix}\begin{pmatrix} c & d \\ 0 & c \end{pmatrix} = \begin{pmatrix} a c & a d+b c \\ 0 & a c \end{pmatrix},
+\begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}\begin{pmatrix} b & b' \\ 0 & b \end{pmatrix} = \begin{pmatrix} a b & a b'+a' b \\ 0 & a b \end{pmatrix},
 $$
 
 which is again upper-triangular Toeplitz; the unit is $I$; and $E^2 = 0$.
 
 ### The Nilpotent
 
-**Proposition.** $\Phi(\varepsilon) = E$ and every element of the image is $aI + bE$; the algebra is the algebra of truncated polynomials in $E$ at $E^2 = 0$.
+**Proposition.** $\Phi(\varepsilon) = E$ and every element of the image is $aI + a'E$; the algebra is the algebra of truncated polynomials in $E$ at $E^2 = 0$.
 
-**Proof.** $\Phi(\varepsilon) = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E$, and $\Phi(a + \varepsilon b) = aI + bE$ by linearity.
+**Proof.** $\Phi(\varepsilon) = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E$, and $\Phi(a + \varepsilon a') = aI + a'E$ by linearity.
 
 ## The Trace and the Determinant
 
-**Theorem.** For $Z = a + \varepsilon b$,
+**Theorem.** For $A = a + \varepsilon a',$
 
 $$
-\operatorname{tr}\Phi(Z) = 2a, \qquad \det\Phi(Z) = a^2 = N(Z), \qquad \chi_{\Phi(Z)}(\lambda) = (\lambda - a)^2.
+\operatorname{tr}\Phi(A) = 2a, \qquad \det\Phi(A) = a^2 = N(A), \qquad \chi_{\Phi(A)}(\lambda) = (\lambda - a)^2.
 $$
 
-**Proof.** The trace is the sum of the diagonal entries $a + a = 2a$; the determinant is $a^2 - 0 = a^2$; the characteristic polynomial is the product of the diagonal entries of $\lambda I - \Phi(Z)$, namely $(\lambda - a)^2$, the matrix being triangular.
+**Proof.** The trace is the sum of the diagonal entries $a + a = 2a$; the determinant is $a^2 - 0 = a^2$; the characteristic polynomial is the product of the diagonal entries of $\lambda I - \Phi(A)$, namely $(\lambda - a)^2$, the matrix being triangular.
 
-**Corollary.** The determinant is the norm and is multiplicative, $\det\Phi(ZW) = \det\Phi(Z)\det\Phi(W)$, which is the multiplicativity of $N$ read in the matrix algebra; the trace is twice the real part.
+**Corollary.** The determinant is the norm and is multiplicative, $\det\Phi(AB) = \det\Phi(A)\det\Phi(B)$, which is the multiplicativity of $N$ read in the matrix algebra; the trace is twice the real part.
 
-**Corollary.** The eigenvalues of $\Phi(Z)$ are both equal to $a$, the real part. The matrix is diagonalizable only when $b = 0$, in which case it is the scalar matrix $aI$; otherwise it is a nondiagonalizable Jordan block.
+**Corollary.** The eigenvalues of $\Phi(A)$ are both equal to $a$, the real part. The matrix is diagonalizable only when $a' = 0$, in which case it is the scalar matrix $aI$; otherwise it is a nondiagonalizable Jordan block.
 
-**Remark.** The determinant vanishes if and only if the eigenvalues vanish, that is if and only if $a = 0$; so $\Phi(Z)$ is invertible if and only if $a$ is a unit of $R$, recovering the criterion of *Dual-Numbers Norm and Invertibility* from the matrix side.
+**Remark.** The determinant vanishes if and only if the eigenvalues vanish, that is if and only if $a = 0$; so $\Phi(A)$ is invertible if and only if $a$ is a unit of $R$, recovering the criterion of *Dual-Numbers Norm and Invertibility* from the matrix side.
 
-**Corollary (the polar form).** For $Z, W \in \mathbb{D}'_R$ the polar form of the norm is read from the trace and the determinant:
+**Corollary (the polar form).** For $A, B \in \mathbb{D}'_R$ the polar form of the norm is read from the trace and the determinant:
 
 $$
-B(Z, W) = \tfrac{1}{2}\bigl(\operatorname{tr}\Phi(Z)\operatorname{tr}\Phi(W) - \operatorname{tr}(\Phi(Z)\Phi(W))\bigr).
+B(A, B) = \tfrac{1}{2}\bigl(\operatorname{tr}\Phi(A)\operatorname{tr}\Phi(B) - \operatorname{tr}(\Phi(A)\Phi(B))\bigr).
 $$
 
-**Proof.** The identity $\det(X + Y) - \det X - \det Y = \operatorname{tr}(X)\operatorname{tr}(Y) - \operatorname{tr}(XY)$ holds for all $2\times2$ matrices; substituting $\operatorname{tr}\Phi(Z) = 2a$, $\operatorname{tr}\Phi(W) = 2c$ and $\operatorname{tr}(\Phi(Z)\Phi(W)) = \operatorname{tr}\Phi(ZW) = 2ac$ gives $\tfrac{1}{2}(4ac - 2ac) = ac = B(Z,W)$.
+**Proof.** The identity $\det(X + Y) - \det X - \det Y = \operatorname{tr}(X)\operatorname{tr}(Y) - \operatorname{tr}(XY)$ holds for all $2\times2$ matrices; substituting $\operatorname{tr}\Phi(A) = 2a$, $\operatorname{tr}\Phi(B) = 2b$ and $\operatorname{tr}(\Phi(A)\Phi(B)) = \operatorname{tr}\Phi(AB) = 2ab$ gives $\tfrac{1}{2}(4ab - 2ab) = ab = B(A,B)$.
 
 ## The Image of the Distinguished Submodules
 
 **Theorem.** The two distinguished submodules map onto the scalar and the strictly upper-triangular matrices:
 
 $$
-\Phi(R_{\mathbb{D}'}) = \left\{\begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} : a \in R\right\} = R\,I, \qquad \Phi(\varepsilon R_{\mathbb{D}'}) = \left\{\begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix} : b \in R\right\} = R\,E.
+\Phi(R_{\mathbb{D}'}) = \left\{\begin{pmatrix} a & 0 \\ 0 & a \end{pmatrix} : a \in R\right\} = R\,I, \qquad \Phi(\varepsilon R_{\mathbb{D}'}) = \left\{\begin{pmatrix} 0 & a' \\ 0 & 0 \end{pmatrix} : a' \in R\right\} = R\,E.
 $$
 
-**Proof.** An element of $R_{\mathbb{D}'}$ is $a$, mapping to $aI$; an element of $\varepsilon R_{\mathbb{D}'}$ is $\varepsilon b$, mapping to $bE$.
+**Proof.** An element of $R_{\mathbb{D}'}$ is $a$, mapping to $aI$; an element of $\varepsilon R_{\mathbb{D}'}$ is $\varepsilon a'$, mapping to $a'E$.
 
 **Corollary.** The matrix model carries the direct-sum decomposition to the decomposition $M_2(R) \supseteq R\,I \oplus R\,E$, with $\Phi(R_{\mathbb{D}'}) \cap \Phi(\varepsilon R_{\mathbb{D}'}) = 0$ and sum $\Phi(\mathbb{D}'_R)$.
 
@@ -128,17 +128,17 @@ $$
 **Theorem.** Dual conjugation becomes the conjugation by the diagonal involution $J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$:
 
 $$
-\Phi(\bar{Z}) = J\,\Phi(Z)\,J^{-1} = J\,\Phi(Z)\,J = \begin{pmatrix} a & -b \\ 0 & a \end{pmatrix}.
+\Phi(\bar A) = J\,\Phi(A)\,J^{-1} = J\,\Phi(A)\,J = \begin{pmatrix} a & -a' \\ 0 & a \end{pmatrix}.
 $$
 
-**Proof.** $J^2 = I$ and $J\begin{pmatrix} a & b \\ 0 & a \end{pmatrix}J = \begin{pmatrix} a & -b \\ 0 & a \end{pmatrix}$.
+**Proof.** $J^2 = I$ and $J\begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}J = \begin{pmatrix} a & -a' \\ 0 & a \end{pmatrix}$.
 
 **Corollary.** The real submodule is the fixed subalgebra of the inner involution $\operatorname{Ad}_J$, and the infinitesimal submodule is the $(-1)$-eigenspace; in matrix form these are the scalar matrices and the strictly upper-triangular matrices.
 
 **Remark (the transpose and the regular representation).** The multiplication convention of the matrix model puts the infinitesimal part in the upper-right corner. The regular representation of *Dual-Numbers Element Representations* and *Shears and Parabolic Rotations*, computed in the basis $(1, \varepsilon)$ of left multiplication, instead puts it in the lower-left corner:
 
 $$
-[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}, \qquad u = a + \varepsilon b.
+[u] = \begin{pmatrix} a & 0 \\ a' & a \end{pmatrix}, \qquad u = a + \varepsilon a'.
 $$
 
 The two conventions are related by transpose, $[u] = \Phi(u)^{\mathsf{T}}$, and the transpose reverses the order of multiplication, so $[u][v] = \Phi(vu)^{\mathsf{T}} = \Phi(uv)^{\mathsf{T}}$ because the algebra is commutative. Both are faithful representations of $\mathbb{D}'_R$ by $2\times2$ matrices; the classification of representations in *Dual-Numbers Element Representations* shows that this is essentially the only faithful two-dimensional one, up to the choice of basis in which the nilpotent is a Jordan block.
@@ -147,27 +147,27 @@ The two conventions are related by transpose, $[u] = \Phi(u)^{\mathsf{T}}$, and 
 
 ### Commutativity and the Center
 
-The image is commutative, so $\Phi$ cannot be surjective onto $M_2(R)$ unless the base ring is the zero ring; the image is a proper subalgebra of dimension two inside the four-dimensional $M_2(R)$. The center of the image is the whole image, and the centralizer of a non-scalar element $aI + bE$, $b \neq 0$, is exactly the image; the centralizer of a scalar matrix is all of $M_2(R)$.
+The image is commutative, so $\Phi$ cannot be surjective onto $M_2(R)$ unless the base ring is the zero ring; the image is a proper subalgebra of dimension two inside the four-dimensional $M_2(R)$. The center of the image is the whole image, and the centralizer of a non-scalar element $aI + a'E$, $a' \neq 0$, is exactly the image; the centralizer of a scalar matrix is all of $M_2(R)$.
 
 ### Units
 
-An upper-triangular Toeplitz matrix $aI + bE$ is invertible if and only if $a$ is a unit of $R$, and then
+An upper-triangular Toeplitz matrix $aI + a'E$ is invertible if and only if $a$ is a unit of $R$, and then
 
 $$
-(aI + bE)^{-1} = a^{-1}I - a^{-2}b\,E = \begin{pmatrix} a^{-1} & -a^{-2}b \\ 0 & a^{-1} \end{pmatrix},
+(aI + a'E)^{-1} = a^{-1}I - a^{-2}a'\,E = \begin{pmatrix} a^{-1} & -a^{-2}a' \\ 0 & a^{-1} \end{pmatrix},
 $$
 
-matching $\Phi(Z^{-1})$ for $Z = a + \varepsilon b$. The unit group of the image is the set of matrices $aI + bE$ with $a \in R^\times$, whose shear subgroup is $I + R\,E = \{I + bE\} \cong (R,+)$.
+matching $\Phi(A^{-1})$ for $A = a + \varepsilon a'$. The unit group of the image is the set of matrices $aI + a'E$ with $a \in R^\times$, whose shear subgroup is $I + R\,E = \{I + a'E\} \cong (R,+)$.
 
 ### Automorphisms in the Matrix Model
 
 **Proposition.** The automorphism $\varphi_c(\varepsilon) = \varepsilon c$ with $c \in R^\times$ of *Dual-Numbers Automorphisms and Derivations* is realised by conjugation with the diagonal matrix $\operatorname{diag}(c, 1)$:
 
 $$
-\operatorname{diag}(c, 1)\,\Phi(Z)\,\operatorname{diag}(c, 1)^{-1} = \begin{pmatrix} a & c b \\ 0 & a \end{pmatrix} = \Phi\bigl(\varphi_c(Z)\bigr).
+\operatorname{diag}(c, 1)\,\Phi(A)\,\operatorname{diag}(c, 1)^{-1} = \begin{pmatrix} a & c a' \\ 0 & a \end{pmatrix} = \Phi\bigl(\varphi_c(A)\bigr).
 $$
 
-**Proof.** $\operatorname{diag}(c,1)^{-1} = \operatorname{diag}(c^{-1},1)$, and multiplying the three matrices gives $\begin{pmatrix} a & c b \\ 0 & a \end{pmatrix}$.
+**Proof.** $\operatorname{diag}(c,1)^{-1} = \operatorname{diag}(c^{-1},1)$, and multiplying the three matrices gives $\begin{pmatrix} a & c a' \\ 0 & a \end{pmatrix}$.
 
 So $\operatorname{Aut}_R(\mathbb{D}'_R)$ is the image of the diagonal subgroup of $GL_2(R)$ acting by conjugation: a diagonal element $\operatorname{diag}(c, d)$ rescales the $E$-coordinate by $c d^{-1}$, and the induced homomorphism $(c,d) \mapsto c d^{-1}$ onto $R^\times$ is surjective with kernel the scalar matrices $\operatorname{diag}(c, c)$.
 
@@ -193,13 +193,13 @@ The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\ma
 
 ## Worked Examples
 
-**Example (the homomorphism property).** For $Z = 2 + 3\varepsilon$ and $W = 4 + 5\varepsilon$,
+**Example (the homomorphism property).** For $A = 2 + 3\varepsilon$ and $B = 4 + 5\varepsilon$,
 
 $$
-\Phi(Z)\Phi(W) = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 4 & 5 \\ 0 & 4 \end{pmatrix} = \begin{pmatrix} 8 & 22 \\ 0 & 8 \end{pmatrix} = \Phi(ZW),
+\Phi(A)\Phi(B) = \begin{pmatrix} 2 & 3 \\ 0 & 2 \end{pmatrix}\begin{pmatrix} 4 & 5 \\ 0 & 4 \end{pmatrix} = \begin{pmatrix} 8 & 22 \\ 0 & 8 \end{pmatrix} = \Phi(AB),
 $$
 
-matching $ZW = 8 + 22\varepsilon$; moreover $\det\Phi(Z) = 4 = N(Z)$ and $\det\Phi(ZW) = 64 = N(Z)N(W)$.
+matching $AB = 8 + 22\varepsilon$; moreover $\det\Phi(A) = 4 = N(A)$ and $\det\Phi(AB) = 64 = N(A)N(B)$.
 
 **Example (the shear subgroup).** For $s \in R$ the image of $1 + s\varepsilon$ is the unipotent matrix
 
@@ -214,10 +214,10 @@ so these matrices form the shear subgroup $I + R\,E$, with $\Phi(1 + s\varepsilo
 The dual-number algebra has the faithful unital $R$-algebra representation
 
 $$
-\Phi(a + \varepsilon b) = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}, \qquad \Phi(ZW) = \Phi(Z)\Phi(W), \qquad \ker\Phi = 0,
+\Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}, \qquad \Phi(AB) = \Phi(A)\Phi(B), \qquad \ker\Phi = 0,
 $$
 
-identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular Toeplitz matrices, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ with $E^2 = 0$. The trace is $2a$, twice the real part; the determinant is $a^2 = N(Z)$, the degenerate norm; and the characteristic polynomial is $(\lambda - a)^2$, exhibiting the single repeated eigenvalue equal to the real part. The distinguished submodules map to the scalar matrices $R\,I$ and the strictly upper-triangular matrices $R\,E$; dual conjugation is the inner involution by $J = \operatorname{diag}(1,-1)$; and the maximal ideal is the nilpotent line $R\,E$. The regular representation of the companion articles is the transpose convention, with the infinitesimal part in the lower-left corner. the shear subgroup is $I + R\,E$, with $\Phi(1 + s\varepsilon)\Phi(1 + t\varepsilon) = \Phi(1 + (s+t)\varepsilon)$; the algebra automorphisms $\varphi_c$ are realised by conjugation with the diagonal matrices $\operatorname{diag}(c, 1)$; and the polar form is recovered from the trace and the determinant by $B(Z, W) = \tfrac{1}{2}(\operatorname{tr}\Phi(Z)\operatorname{tr}\Phi(W) - \operatorname{tr}(\Phi(Z)\Phi(W)))$. Comparing with the quaternion case, $\mathbb{H}$ has a faithful $2\times2$ representation over $\mathbb{C}$ with determinant the non-degenerate form $a^2 + b^2 + c^2 + d^2$, while the dual algebra has a faithful $2\times2$ representation over $R$ with determinant the degenerate form $a^2$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, of real dimension eight, has **no** faithful $2\times2$ representation, over $\mathbb{R}$ or over $\mathbb{C}$ — by the dimension count over $\mathbb{R}$ and by the centre obstruction over $\mathbb{C}$ — the smallest faithful representation being $4\times4$ over $\mathbb{C}$.
+identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular Toeplitz matrices, spanned by $I$ and the nilpotent $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ with $E^2 = 0$. The trace is $2a$, twice the real part; the determinant is $a^2 = N(A)$, the degenerate norm; and the characteristic polynomial is $(\lambda - a)^2$, exhibiting the single repeated eigenvalue equal to the real part. The distinguished submodules map to the scalar matrices $R\,I$ and the strictly upper-triangular matrices $R\,E$; dual conjugation is the inner involution by $J = \operatorname{diag}(1,-1)$; and the maximal ideal is the nilpotent line $R\,E$. The regular representation of the companion articles is the transpose convention, with the infinitesimal part in the lower-left corner. the shear subgroup is $I + R\,E$, with $\Phi(1 + s\varepsilon)\Phi(1 + t\varepsilon) = \Phi(1 + (s+t)\varepsilon)$; the algebra automorphisms $\varphi_c$ are realised by conjugation with the diagonal matrices $\operatorname{diag}(c, 1)$; and the polar form is recovered from the trace and the determinant by $B(A, B) = \tfrac{1}{2}(\operatorname{tr}\Phi(A)\operatorname{tr}\Phi(B) - \operatorname{tr}(\Phi(A)\Phi(B)))$. Comparing with the quaternion case, $\mathbb{H}$ has a faithful $2\times2$ representation over $\mathbb{C}$ with determinant the non-degenerate form $a^2 + b^2 + c^2 + d^2$, while the dual algebra has a faithful $2\times2$ representation over $R$ with determinant the degenerate form $a^2$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, of real dimension eight, has **no** faithful $2\times2$ representation, over $\mathbb{R}$ or over $\mathbb{C}$ — by the dimension count over $\mathbb{R}$ and by the centre obstruction over $\mathbb{C}$ — the smallest faithful representation being $4\times4$ over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -225,15 +225,15 @@ identifying $\mathbb{D}'_R$ with the commutative subalgebra of upper-triangular 
 |---|---|
 | $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
 | $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
-| $Z = a + \varepsilon b$ | General dual number |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
-| $N(Z) = a^2$ | Norm, equal to $\det\Phi(Z)$ |
-| $\Phi(a + \varepsilon b) = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}$ | Faithful matrix representation |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $\bar{A} = a - \varepsilon a'$ | Dual conjugation |
+| $N(A) = a^2$ | Norm, equal to $\det\Phi(A)$ |
+| $\Phi(a + \varepsilon a') = \begin{pmatrix} a & a' \\ 0 & a \end{pmatrix}$ | Faithful matrix representation |
 | $E = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = \Phi(\varepsilon)$ | Nilpotent Jordan block, $E^2 = 0$ |
 | $J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$ | Involution realizing dual conjugation |
 | $\varphi_c$ | Automorphism $\varepsilon \mapsto c\varepsilon$, conjugation by $\operatorname{diag}(c, 1)$ |
-| $B(Z,W) = ac$ | Polar form, $\tfrac{1}{2}(\operatorname{tr}\Phi(Z)\operatorname{tr}\Phi(W) - \operatorname{tr}(\Phi(Z)\Phi(W)))$ |
+| $B(A,B) = ab$ | Polar form, $\tfrac{1}{2}(\operatorname{tr}\Phi(A)\operatorname{tr}\Phi(B) - \operatorname{tr}(\Phi(A)\Phi(B)))$ |
 | $[u] = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix} = \Phi(u)^{\mathsf{T}}$ | Regular representation, transpose convention |
 | $I = \Phi(1)$ | Identity matrix |
 | $\mathbb{H}$ | Quaternions, faithful $2\times2$ representation over $\mathbb{C}$ |

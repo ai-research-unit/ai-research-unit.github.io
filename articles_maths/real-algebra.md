@@ -248,20 +248,20 @@ The order on $\mathbb{R}$ is not merely a binary relation. It interacts with the
 For $a, b \in \mathbb{R}$ with $a \leq b$:
 
 $$
-[a, b] = \{x \in \mathbb{R} : a \leq x \leq b\}, \qquad (a, b) = \{x \in \mathbb{R} : a < x < b\},
+[a, b] = \{c \in \mathbb{R} : a \leq c \leq b\}, \qquad (a, b) = \{c \in \mathbb{R} : a < c < b\},
 $$
 
 $$
-[a, b) = \{x \in \mathbb{R} : a \leq x < b\}, \qquad (a, b] = \{x \in \mathbb{R} : a < x \leq b\}.
+[a, b) = \{c \in \mathbb{R} : a \leq c < b\}, \qquad (a, b] = \{c \in \mathbb{R} : a < c \leq b\}.
 $$
 
-Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$ is an interval iff for all $a, b \in S$ with $a < b$, every $x$ with $a < x < b$ lies in $S$.
+Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$ is an interval iff for all $a, b \in S$ with $a < b$, every $c$ with $a < c < b$ lies in $S$.
 
 ### Bounds
 
-A set $S \subseteq \mathbb{R}$ is **bounded above** if there exists $M \in \mathbb{R}$ with $x \leq M$ for all $x \in S$. Such an $M$ is an **upper bound**. The **supremum** $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.
+A set $S \subseteq \mathbb{R}$ is **bounded above** if there exists $M \in \mathbb{R}$ with $a \leq M$ for all $a \in S$. Such an $M$ is an **upper bound**. The **supremum** $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.
 
-Dually, $S$ is **bounded below** if there exists $m \in \mathbb{R}$ with $m \leq x$ for all $x \in S$, and the **infimum** $\inf S$ is the greatest lower bound.
+Dually, $S$ is **bounded below** if there exists $m \in \mathbb{R}$ with $m \leq a$ for all $a \in S$, and the **infimum** $\inf S$ is the greatest lower bound.
 
 ### The Completeness Consequences
 
@@ -271,7 +271,7 @@ Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its
 
 **Density of $\mathbb{Q}$.** For any $a, b \in \mathbb{R}$ with $a < b$, there exists $q \in \mathbb{Q}$ with $a < q < b$. Proof: by Archimedes, choose $n$ with $n(b - a) > 1$; then choose $m$ with $m > na$ minimal; then $m/n \in (a, b)$.
 
-**Existence of $n$-th roots.** For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{x \geq 0 : x^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.
+**Existence of $n$-th roots.** For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{c \geq 0 : c^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.
 
 **Nested interval property.** If $(I_n)$ is a decreasing sequence of non-empty closed intervals, then $\bigcap_n I_n \neq \emptyset$. Proof: the left endpoints form a set bounded above, whose supremum lies in every $I_n$.
 

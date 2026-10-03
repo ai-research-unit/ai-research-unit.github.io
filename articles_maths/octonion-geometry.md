@@ -7,7 +7,7 @@ This article is the geometry slot of the octonion system. It sets out the geomet
 
 The article takes the multiplication and the associator from *Octonion Algebra*, the norm, the inner product and the unit sphere from *Octonion Norm and Invertibility*, the operator theory from *Octonion Element Representations*, and the groups $G_2$, $F_4$ and the Cayley plane from *Octonions and the Exceptional Lie Groups*. The differential forms and their integrals are those of *Differential Forms and Stokes' Theorem*, the fibrations those of *Fibre Bundles, Connections and Curvature*, and the projective geometry of Part II is the companion *Projective Geometry*. The exceptional holonomy of Part II is the subject of *G2 and Spin(7) Manifolds* ; the geometry of the other number systems is *Quaternion Geometry* , for the split systems, *Split-Biquaternion Geometry* and *Split-Biquaternions and Hyperbolic Geometry*, written in this batch. The present article supplies the octonionic geometry that these articles use.
 
-**Conventions.** The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $x^{\natural}$, norm $\lvert x\rvert^2 = x x^{\natural} = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the **cross product** is
+**Conventions.** The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $\tilde o^{\natural}$, norm $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural} = \langle \tilde o,\tilde o\rangle$ and inner product $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the **cross product** is
 
 $$
 u\times v = \operatorname{Vect}(uv) = \tfrac{1}{2}(uv - vu),
@@ -60,7 +60,7 @@ The value of $\varphi$ on an ordered orthonormal triple of imaginary basis eleme
 
 **Proposition.** The unit sphere $S^7\subset\mathbb{O}$ is a compact Riemannian manifold of dimension seven with the round metric inherited from $\mathbb{R}^8$; it is parallelizable, and it is homogeneous under the action of left multiplication, so that $S^7 = \operatorname{Spin}(7)/G_2$ with the isotropy $G_2$ acting irreducibly on the tangent space $\operatorname{Im}\mathbb{O}$.
 
-*Proof.* The round metric is the restriction of the Euclidean metric by definition of a submanifold, the parallelizability is the existence of the seven global fields $x\mapsto xe_k$, and the homogeneous description is the orbit theorem of *Octonion Element Representations*.
+*Proof.* The round metric is the restriction of the Euclidean metric by definition of a submanifold, the parallelizability is the existence of the seven global fields $\tilde o\mapsto \tilde oe_k$, and the homogeneous description is the orbit theorem of *Octonion Element Representations*.
 
 ### The Sphere $S^6$ and the Nearly Kähler Structure
 
@@ -100,12 +100,12 @@ Both bundles are non-trivial and their total spaces are the spheres of the quate
 **Definition.** Let $\mathbb{O}^3$ be the free right $\mathbb{O}$-module of triples, with the equivalence relation on nonzero triples
 
 $$
-(x_0,x_1,x_2)\sim(x_0u,x_1u,x_2u), \qquad u\in\mathbb{O}^{\times},
+(o_0,o_1,o_2)\sim(o_0u,o_1u,o_2u), \qquad u\in\mathbb{O}^{\times},
 $$
 
-of right multiplication by a unit octonion. The set of classes is the **octonionic projective plane** $\mathbb{OP}^2$; the class of $(x_0,x_1,x_2)$ is written $[x_0:x_1:x_2]$ and is a **point** of the plane. A **line** is the set of points satisfying a right-linear equation $x_0a_0 + x_1a_1 + x_2a_2 = 0$ with a triple of octonions not all zero.
+of right multiplication by a unit octonion. The set of classes is the **octonionic projective plane** $\mathbb{OP}^2$; the class of $(o_0,o_1,o_2)$ is written $[o_0:o_1:o_2]$ and is a **point** of the plane. A **line** is the set of points satisfying a right-linear equation $o_0a_0 + o_1a_1 + o_2a_2 = 0$ with a triple of octonions not all zero.
 
-**Proposition.** The relation $\sim$ is an equivalence relation; the map assigning to a unit octonion the line through a fixed point is well defined; and $\mathbb{OP}^2$ is a compact topological space of real dimension $16$. Two distinct points determine a unique line, and two lines in general position meet in a unique point, so that $\mathbb{OP}^2$ satisfies the incidence axioms of a projective plane; the duality between points and lines is the map sending the point $[x]$ to the line $\{y : \langle x,y\rangle = 0\}$ up to the appropriate side.
+**Proposition.** The relation $\sim$ is an equivalence relation; the map assigning to a unit octonion the line through a fixed point is well defined; and $\mathbb{OP}^2$ is a compact topological space of real dimension $16$. Two distinct points determine a unique line, and two lines in general position meet in a unique point, so that $\mathbb{OP}^2$ satisfies the incidence axioms of a projective plane; the duality between points and lines is the map sending the point $[\tilde o]$ to the line $\{\tilde p : \langle \tilde o,\tilde p\rangle = 0\}$ up to the appropriate side.
 
 *Proof.* The equivalence relation is the action of the group $\mathbb{O}^{\times}$ on $\mathbb{O}^3\setminus\{0\}$ by right multiplication, which is free; the quotient is compact because the sphere $S^{23}$ is compact and the action restricts to it. Incidence is proved by solving the right-linear systems, which are solvable because $\mathbb{O}$ is a division algebra; the uniqueness statements use the cancellation property of *Octonion Norm and Invertibility*. The detailed verification of the incidence axioms is standard and is cited.
 
@@ -183,14 +183,14 @@ Finally the forms $\varphi$, its dual $\psi$ and the Cayley form $\Phi = e^0\wed
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra, basis with $e_k^2 = -e_0$ for $k\geq1$ |
 | $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ | Imaginary subspace, orthonormal basis $e_1,\dots,e_7$ |
-| $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ | Inner product, Euclidean metric |
+| $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$ | Inner product, Euclidean metric |
 | $u\times v = \operatorname{Vect}(uv)$ | Cross product on $\operatorname{Im}\mathbb{O}$ |
 | $\varphi(u,v,w) = \langle u\times v,w\rangle$ | Associative three-form, $G_2 = \operatorname{Stab}\varphi$ |
 | $\psi = *\varphi$, $\Phi = e^0\wedge\varphi+\psi$ | Coassociative four-form, Cayley four-form on $\mathbb{O}$ |
 | $S^6$, $S^7$ | Unit spheres of $\operatorname{Im}\mathbb{O}$ and of $\mathbb{O}$ |
 | $J_uv = u\times v$ | Nearly Kähler almost complex structure on $S^6$ |
 | $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$ | Cayley plane, $\dim_{\mathbb{R}} = 16$, Moufang, not Desarguesian |
-| $[x_0:x_1:x_2]$ | Octonionic homogeneous coordinates on $\mathbb{OP}^2$ |
+| $[o_0:o_1:o_2]$ | Octonionic homogeneous coordinates on $\mathbb{OP}^2$ |
 | $\mathrm{H}_3(\mathbb{O})$ | Exceptional Jordan algebra of Hermitian $3\times3$ matrices |
 | $F_4$, $G_2$, $\operatorname{Spin}(7)$ | Structure groups of the plane, the imaginary space and the sphere |
 

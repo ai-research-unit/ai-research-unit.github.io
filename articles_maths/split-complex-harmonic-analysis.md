@@ -14,13 +14,13 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The split complex plane $\mathbb{D}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(Z) = e^{2\pi i \operatorname{Re}(\bar{\xi} Z)}, \qquad \xi \in \mathbb{D},
+\chi_\xi(A) = e^{2\pi i \operatorname{Re}(\bar{\xi} A)}, \qquad \xi \in \mathbb{D},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
 
 $$
-\langle \xi, Z \rangle = \operatorname{Re}(\bar{\xi} Z) = u x - v y, \qquad \xi = u + jv, \quad Z = x + jy.
+\langle \xi, A \rangle = \operatorname{Re}(\bar{\xi} A) = u a - v a', \qquad \xi = u + jv, \quad A = a + ja'.
 $$
 
 Note the minus sign: it comes from the split complex conjugation $\bar{\xi} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{D}}$ is isomorphic to $\mathbb{D}$ itself, but the pairing is indefinite.
@@ -32,16 +32,16 @@ So at the level of the additive group, split complex harmonic analysis is the sa
 The **split complex characters** are the homomorphisms into the multiplicative monoid of $\mathbb{D}$:
 
 $$
-\chi_\xi(Z) = e^{j \operatorname{Re}(\bar{\xi} Z)}, \qquad \xi \in \mathbb{D},
+\chi_\xi(A) = e^{j \operatorname{Re}(\bar{\xi} A)}, \qquad \xi \in \mathbb{D},
 $$
 
 where the exponential is the split complex exponential. Explicitly,
 
 $$
-\chi_\xi(Z) = \cosh(\operatorname{Re}(\bar{\xi} Z)) + j \sinh(\operatorname{Re}(\bar{\xi} Z)).
+\chi_\xi(A) = \cosh(\operatorname{Re}(\bar{\xi} A)) + j \sinh(\operatorname{Re}(\bar{\xi} A)).
 $$
 
-These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} Z)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.
+These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} A)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.
 
 ## The Split Complex Fourier Transform
 
@@ -50,10 +50,10 @@ These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} Z)| \to \in
 The **split complex Fourier transform** of a function $f : \mathbb{D} \to \mathbb{D}$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}} f(Z) e^{-j \operatorname{Re}(\bar{\xi} Z)} \, dZ,
+\hat{f}(\xi) = \int_{\mathbb{D}} f(A) e^{-j \operatorname{Re}(\bar{\xi} A)} \, dA,
 $$
 
-where $dZ$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
+where $dA$ is Lebesgue measure on $\mathbb{D} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
 
 **Caution.** The integral converges only for functions $f$ that decay faster than any exponential in both directions. This is the fundamental difference from the complex case.
 
@@ -68,7 +68,7 @@ $$
 where
 
 $$
-\hat{f}_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(Z_\pm) e^{\mp \xi_\pm Z_\pm} \, dZ_\pm.
+\hat{f}_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(A_\pm) e^{\mp \xi_\pm A_\pm} \, dA_\pm.
 $$
 
 The two integrals are **Laplace transforms**, one for each idempotent component. The first integral converges for $\xi_+ > 0$ and the second for $\xi_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.
@@ -98,7 +98,7 @@ whenever the integral converges. For $f$ of exponential growth, the transform co
 The split complex Fourier transform on the positive null direction is the Laplace transform:
 
 $$
-\hat{f}_+(\xi_+) = \int_0^\infty f_+(Z_+) e^{-\xi_+ Z_+} \, dZ_+ = \mathcal{L} f_+(\xi_+).
+\hat{f}_+(\xi_+) = \int_0^\infty f_+(A_+) e^{-\xi_+ A_+} \, dA_+ = \mathcal{L} f_+(\xi_+).
 $$
 
 So the split complex Fourier transform is the pair of Laplace transforms on the two null directions. This is not an analogy; it is an identity.
@@ -117,10 +117,10 @@ which is a contour integral in the complex plane. So the inversion of the split 
 
 ### Definition
 
-On a bounded interval $[-T, T]$, the characters $e^{-j \operatorname{Re}(\bar{\xi} Z)}$ are bounded, and the split complex Fourier transform
+On a bounded interval $[-T, T]$, the characters $e^{-j \operatorname{Re}(\bar{\xi} A)}$ are bounded, and the split complex Fourier transform
 
 $$
-\hat{f}(\xi) = \int_{-T}^T f(Z) e^{-j \operatorname{Re}(\bar{\xi} Z)} \, dZ
+\hat{f}(\xi) = \int_{-T}^T f(A) e^{-j \operatorname{Re}(\bar{\xi} A)} \, dA
 $$
 
 converges for $f \in L^1([-T, T])$.
@@ -130,7 +130,7 @@ converges for $f \in L^1([-T, T])$.
 On a bounded interval, the inversion formula is
 
 $$
-f(Z) = \frac{1}{2\pi} \int_{\mathbb{R}} \hat{f}(\xi) e^{j \operatorname{Re}(\bar{\xi} Z)} \, d\xi,
+f(A) = \frac{1}{2\pi} \int_{\mathbb{R}} \hat{f}(\xi) e^{j \operatorname{Re}(\bar{\xi} A)} \, d\xi,
 $$
 
 under suitable conditions. This is the analogue of the Fourier inversion theorem for the split complex case, and it is the setting in which split complex harmonic analysis is useful.
@@ -146,7 +146,7 @@ The split complex Fourier transform on a bounded interval is used in the analysi
 The **convolution** of $f, g : \mathbb{D} \to \mathbb{D}$ is
 
 $$
-(f * g)(Z) = \int_{\mathbb{D}} f(Z - W) g(W) \, dW,
+(f * g)(A) = \int_{\mathbb{D}} f(A - B) g(B) \, dB,
 $$
 
 whenever the integral converges. This is the convolution on the additive group $\mathbb{D} \cong \mathbb{R}^2$.
@@ -212,7 +212,7 @@ where $\delta_+$ and $\delta_-$ are the ordinary real delta distributions on the
 The **split complex Hilbert transform** of $f : \mathbb{R} \to \mathbb{R}$ is
 
 $$
-Hf(x) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(y)}{x - y} \, dy,
+Hf(a) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(b)}{a - b} \, db,
 $$
 
 where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on each idempotent component separately.
@@ -222,7 +222,7 @@ where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert
 For $f : \mathbb{D} \to \mathbb{D}$, the split complex Hilbert transform is defined by
 
 $$
-Hf(Z) = Hf_+(Z_+) \Pi_1 + Hf_-(Z_-) \Pi_2.
+Hf(A) = Hf_+(A_+) \Pi_1 + Hf_-(A_-) \Pi_2.
 $$
 
 So the split complex Hilbert transform is the pair of ordinary real Hilbert transforms.
@@ -250,17 +250,17 @@ where $\operatorname{sgn}$ is the sign function on each idempotent component.
 The **split complex Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{D})$ is
 
 $$
-Mf(Z) = \sup_{r > 0} \frac{1}{|B(Z, r)|} \int_{B(Z, r)} \|f(W)\|_E \, dW,
+Mf(A) = \sup_{r > 0} \frac{1}{|B(A, r)|} \int_{B(A, r)} \|f(B)\|_E \, dB,
 $$
 
-where $B(Z, r)$ is the Euclidean ball of radius $r$ centered at $Z$, and $|B(Z, r)|$ is its area.
+where $B(A, r)$ is the Euclidean ball of radius $r$ centered at $A$, and $|B(A, r)|$ is its area.
 
 ### The Maximal Inequality
 
 **Theorem (Hardy–Littlewood, split version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D})$ and every $\lambda > 0$,
 
 $$
-|\{Z : Mf(Z) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{A : Mf(A) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$
 
 This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^p(\mathbb{D})$ for $1 < p \leq \infty$.
@@ -284,17 +284,17 @@ In the idempotent basis, the split complex maximal function decomposes as the pa
 A **split complex Calderón–Zygmund operator** is a bounded operator $T : L^2(\mathbb{D}) \to L^2(\mathbb{D})$ with a kernel $K : \mathbb{D} \times \mathbb{D} \to \mathbb{D}$ such that
 
 $$
-Tf(Z) = \int_{\mathbb{D}} K(Z, W) f(W) \, dW
+Tf(A) = \int_{\mathbb{D}} K(A, B) f(B) \, dB
 $$
 
-for $Z \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
+for $A \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
 
 $$
-\|K(Z, W)\|_E \leq \frac{C}{\|Z - W\|_E},
+\|K(A, B)\|_E \leq \frac{C}{\|A - B\|_E},
 $$
 
 $$
-\|K(Z, W) - K(Z', W)\|_E \leq C \frac{\|Z - Z'\|_E^\delta}{\|Z - W\|_E^{1+\delta}}, \qquad \|Z - Z'\|_E < \frac{1}{2} \|Z - W\|_E,
+\|K(A, B) - K(A', B)\|_E \leq C \frac{\|A - A'\|_E^\delta}{\|A - B\|_E^{1+\delta}}, \qquad \|A - A'\|_E < \frac{1}{2} \|A - B\|_E,
 $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.
@@ -327,20 +327,20 @@ where $\mathcal{M}$ on the right is the ordinary real Mellin transform.
 
 ### Relation to the Split Complex Fourier Transform
 
-Under the change of variables $t = e^x$, the Mellin transform becomes the split complex Fourier transform on the real line:
+Under the change of variables $t = e^a$, the Mellin transform becomes the split complex Fourier transform on the real line:
 
 $$
-\mathcal{M} f(\sigma + j\tau) = \int_{-\infty}^\infty e^{(\sigma + j\tau) x} f(e^x) \, dx = \hat{g}(\tau),
+\mathcal{M} f(\sigma + j\tau) = \int_{-\infty}^\infty e^{(\sigma + j\tau) a} f(e^a) \, da = \hat{g}(\tau),
 $$
 
-where $g(x) = e^{\sigma x} f(e^x)$. So the Mellin transform is the split complex Fourier transform in logarithmic coordinates.
+where $g(a) = e^{\sigma a} f(e^a)$. So the Mellin transform is the split complex Fourier transform in logarithmic coordinates.
 
 ### The Mellin Convolution
 
 The **split complex Mellin convolution** is
 
 $$
-(f \star g)(x) = \int_0^\infty f(x/y) g(y) \frac{dy}{y}.
+(f \star g)(a) = \int_0^\infty f(a/b) g(b) \frac{db}{b}.
 $$
 
 It satisfies
@@ -358,7 +358,7 @@ which is the multiplicative analogue of the convolution theorem.
 The **split complex Radon transform** of a function $f : \mathbb{D} \to \mathbb{D}$ is
 
 $$
-Rf(\theta, t) = \int_{L(\theta, t)} f(Z) \, ds,
+Rf(\theta, t) = \int_{L(\theta, t)} f(A) \, ds,
 $$
 
 where $L(\theta, t)$ is the line with normal direction $(\cosh\theta, \sinh\theta)$ and signed distance $t$ from the origin, and $ds$ is the hyperbolic arc length.
@@ -380,7 +380,7 @@ The Fourier slice theorem is the mathematical basis of hyperbolic tomography, th
 **Theorem.** For suitable $f$,
 
 $$
-f(Z) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{j \sigma \operatorname{Re}(\bar{\xi} Z)} \, d\sigma \, d\theta,
+f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{j \sigma \operatorname{Re}(\bar{\xi} A)} \, d\sigma \, d\theta,
 $$
 
 where $\xi = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.
@@ -418,7 +418,7 @@ The inversion formula reconstructs $f$ from its wavelet transform.
 In the split complex setting, the wavelet $\psi$ is allowed to be split-complex-valued, and the transform becomes
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}} f(Z) \overline{\psi\left( \frac{Z - b}{a} \right)} \, dZ, \qquad a \in \mathbb{D}^\times, \; b \in \mathbb{D}.
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}} f(A) \overline{\psi\left( \frac{A - b}{a} \right)} \, dA, \qquad a \in \mathbb{D}^\times, \; b \in \mathbb{D}.
 $$
 
 The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.
@@ -435,7 +435,8 @@ The split complex Fourier transform is defined with a kernel built from the spli
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
-| $\chi_\xi(Z) = e^{j \operatorname{Re}(\bar{\xi} Z)}$ | Split complex character |
+| $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
+| $\chi_\xi(A) = e^{j \operatorname{Re}(\bar{\xi} A)}$ | Split complex character |
 | $\hat{f}$ | Split complex Fourier transform |
 | $f * g$ | Convolution |
 | $f \star g$ | Mellin convolution |

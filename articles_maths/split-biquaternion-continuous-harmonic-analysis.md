@@ -291,7 +291,7 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $x_0, x_1, x_2, x_3$. For a function $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $x_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
+Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
 
 $$
 \mathcal{F}[\partial_0 \tilde{F}](\omega) = 2\pi \rho \omega \, \mathcal{F}[\tilde{F}](\omega),
@@ -305,7 +305,7 @@ $$
 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$
 
-where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $x_0, x_1, x_2, x_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a split-biquaternion-valued multiplier.
+where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_0, Q_1, Q_2, Q_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a split-biquaternion-valued multiplier.
 
 ### The d'Alembertian
 
@@ -445,7 +445,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
-| $K_\rho(\mathbf{x})$ | Split biquaternion Fourier kernel |
+| $K_\rho(\mathbf{Q})$ | Split biquaternion Fourier kernel |
 | $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |
 | $f * g$ | Convolution |
 | $\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |

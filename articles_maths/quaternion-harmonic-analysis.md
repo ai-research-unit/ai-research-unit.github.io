@@ -138,17 +138,17 @@ The inversion formula holds because the kernel is bounded and the transform is e
 The transform above acts on $\mathbb{H}\cong\mathbb{R}^4$ and uses a single unit $\omega$. Signal and image processing uses a different quaternion Fourier transform: the variable is $\mathbb{R}^2$, one unit is assigned to each variable, and the product is written in a fixed order,
 
 $$
-\mathcal{F}(f)(\omega_1,\omega_2) = \int_a^b\int_a^b f(x_1,x_2)\, e^{-2\pi e_1 \omega_1 x_1} e^{-2\pi e_2 \omega_2 x_2}\, dx_1 dx_2,
+\mathcal{F}(f)(\omega_1,\omega_2) = \int_a^b\int_a^b f(q_1,q_2)\, e^{-2\pi e_1 \omega_1 q_1} e^{-2\pi e_2 \omega_2 q_2}\, dq_1 dq_2,
 $$
 
 for $f : [a,b]\times[a,b] \to \mathbb{H}$. The order is part of the definition: the two exponential factors rotate in different planes, and $e_1e_2 = e_3 = -e_2e_1$, so they do not commute. The factor $2\pi$ sits in the kernel, as everywhere in this article; the signal-processing literature writes the same kernel without it, which is the substitution $\omega_i \mapsto 2\pi\omega_i$.
 
 The transform above has the kernel on the **right** of $f$; call it $\mathcal{F}_{\mathrm{r}}$. The mirror form $\mathcal{F}_{\mathrm{l}}$ has the kernel on the **left**, and it is a genuinely different transform, not a relabelling of the same one. The literature's names are the reverse of this article's: Ell and Sangwine call the transform whose exponential stands on the left of the signal the *left-sided* one, while the list of the three transforms above names the kernel-right transform left-sided. The words **kernel-right** and **kernel-left** are used below.
 
-**The Closed Form.** With $c_i = 2\pi\omega_ix_i$, the kernel splits into four real-coefficient terms,
+**The Closed Form.** With $c_i = 2\pi\omega_iq_i$, the kernel splits into four real-coefficient terms,
 
 $$
-e^{-2\pi e_1 \omega_1 x_1}e^{-2\pi e_2 \omega_2 x_2} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 + e_3\sin c_1\sin c_2,
+e^{-2\pi e_1 \omega_1 q_1}e^{-2\pi e_2 \omega_2 q_2} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 + e_3\sin c_1\sin c_2,
 $$
 
 and the transform is the sum $\mathcal{F}(f) = \Phi_0 + \Phi_1 + \Phi_2 + \Phi_3$ of the four integrals over $[a,b]^2$
@@ -165,13 +165,13 @@ Each term multiplies the whole of the $\mathbb{H}$-valued $f$ on the right by $1
 **The sign of the $e_3$ term is the whole difference between the two orders.** The kernel-left form is the same object with the opposite sign on $e_3$,
 
 $$
-e^{-2\pi e_2 \omega_2 x_2}e^{-2\pi e_1 \omega_1 x_1} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 - e_3\sin c_1\sin c_2,
+e^{-2\pi e_2 \omega_2 q_2}e^{-2\pi e_1 \omega_1 q_1} = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 - e_3\sin c_1\sin c_2,
 $$
 
 and the two kernels are conjugates,
 
 $$
-\overline{e^{-2\pi e_1 \omega_1 x_1}e^{-2\pi e_2 \omega_2 x_2}} = e^{2\pi e_2 \omega_2 x_2}e^{2\pi e_1 \omega_1 x_1},
+\overline{e^{-2\pi e_1 \omega_1 q_1}e^{-2\pi e_2 \omega_2 q_2}} = e^{2\pi e_2 \omega_2 q_2}e^{2\pi e_1 \omega_1 q_1},
 $$
 
 where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$. Both identities are exact and were verified on independent samples.
@@ -193,7 +193,7 @@ where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$. Bo
 
 All ten hold to round-off. They are the parity bookkeeping of the kernel: reversal of $\omega_2$ flips the terms built on $\sin c_2$, that is $\Phi_2$ and $\Phi_3$; reversal of $\omega_1$ flips $\Phi_1$ and $\Phi_3$; the two reversals together flip $\Phi_1$ and $\Phi_2$; and adding and subtracting the resulting pairs separates the four terms.
 
-**The Side of the Kernel Is Not Optional.** The reversal relation $\mathcal{F}(f)(-\omega_1,-\omega_2) = \mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)$ is often printed, and it is derived by replacing $e^{2\pi e_1\omega_1x_1}e^{2\pi e_2\omega_2x_2}$ with $e^{-2\pi e_2\omega_2x_2}e^{-2\pi e_1\omega_1x_1}$. That replacement is invalid: the two are conjugates, as the identity above shows. Numerically, on a $10\times10$ grid at $(\omega_1,\omega_2) = (0.09,0.13)$ the two sides differ by about $10$ for $f \equiv 1$ and by about $12$ for a general quaternionic $f$.
+**The Side of the Kernel Is Not Optional.** The reversal relation $\mathcal{F}(f)(-\omega_1,-\omega_2) = \mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)$ is often printed, and it is derived by replacing $e^{2\pi e_1\omega_1q_1}e^{2\pi e_2\omega_2q_2}$ with $e^{-2\pi e_2\omega_2q_2}e^{-2\pi e_1\omega_1q_1}$. That replacement is invalid: the two are conjugates, as the identity above shows. Numerically, on a $10\times10$ grid at $(\omega_1,\omega_2) = (0.09,0.13)$ the two sides differ by about $10$ for $f \equiv 1$ and by about $12$ for a general quaternionic $f$.
 
 What is true is weaker. For $f$ whose values commute with the kernel — in particular for any scalar-valued $f$ — the two sides are conjugates of one another,
 
@@ -206,26 +206,26 @@ which was checked exactly for $f \equiv 1$ and for a scalar-valued $f$. For a ge
 **The Riemann–Lebesgue Lemma with a Rate.** The lemma above is qualitative. In the two-dimensional case the decay rate is explicit, and the kernel standing on the right of $f$ makes the integration by parts unambiguous. If $f$ vanishes at the boundary of the square and $\omega_1 \ne 0$, then
 
 $$
-\mathcal{F}(f)(\omega_1,\omega_2) = -\frac{1}{2\pi e_1\omega_1}\int_a^b\int_a^b \partial_{x_1}f(x_1,x_2)\, e^{-2\pi e_1\omega_1x_1}e^{-2\pi e_2\omega_2x_2}\, dx_1 dx_2,
+\mathcal{F}(f)(\omega_1,\omega_2) = -\frac{1}{2\pi e_1\omega_1}\int_a^b\int_a^b \partial_{q_1}f(q_1,q_2)\, e^{-2\pi e_1\omega_1q_1}e^{-2\pi e_2\omega_2q_2}\, dq_1 dq_2,
 $$
 
 because the boundary terms vanish, so
 
 $$
-\lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \lVert f\rVert_{L^1}, \qquad \lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \frac{\lVert \partial_{x_1}f\rVert_{L^1}}{2\pi\lvert\omega_1\rvert},
+\lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \lVert f\rVert_{L^1}, \qquad \lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \frac{\lVert \partial_{q_1}f\rVert_{L^1}}{2\pi\lvert\omega_1\rvert},
 $$
 
-and the same with $x_2$ and $\omega_2$. Hence $\mathcal{F}(f)$ is bounded and uniformly continuous, and it tends to zero as either frequency tends to infinity, uniformly in the other frequency. The first bound holds for every frequency; the second only for $\omega_i \ne 0$. Both were checked for $f = (1-x_1^2)^2(1-x_2^2)^2$ on $[-1,1]^2$, where $\lVert f\rVert_{L^1} = (16/15)^2 = 1.1378$ and $\lVert \partial_{x_1}f\rVert_{L^1} = 32/15 = 2.1333$, at six frequencies including the cases $\omega_1 = 0$ and $\omega_2 = 0$.
+and the same with $q_2$ and $\omega_2$. Hence $\mathcal{F}(f)$ is bounded and uniformly continuous, and it tends to zero as either frequency tends to infinity, uniformly in the other frequency. The first bound holds for every frequency; the second only for $\omega_i \ne 0$. Both were checked for $f = (1-q_1^2)^2(1-q_2^2)^2$ on $[-1,1]^2$, where $\lVert f\rVert_{L^1} = (16/15)^2 = 1.1378$ and $\lVert \partial_{q_1}f\rVert_{L^1} = 32/15 = 2.1333$, at six frequencies including the cases $\omega_1 = 0$ and $\omega_2 = 0$.
 
 ### The Transform of a Measure
 
 **Definition.** Let $\mu$ be a finite positive Borel measure on $\mathbb{R}^2$. Its two transforms are
 
 $$
-\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_1\omega_1x_1}e^{-2\pi e_2\omega_2x_2}\, d\mu(x_1,x_2),
+\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_1\omega_1q_1}e^{-2\pi e_2\omega_2q_2}\, d\mu(q_1,q_2),
 $$
 $$
-\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_2\omega_2x_2}e^{-2\pi e_1\omega_1x_1}\, d\mu(x_1,x_2).
+\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} e^{-2\pi e_2\omega_2q_2}e^{-2\pi e_1\omega_1q_1}\, d\mu(q_1,q_2).
 $$
 
 For a measure with density $f$ these are the transforms of the previous subsection. Written against $d\mu$ they are defined for measures with no density, which is what the Fourier analysis of probability measures needs. The kernel has modulus one, so both integrals converge absolutely.
@@ -239,14 +239,14 @@ For a measure with density $f$ these are the transforms of the previous subsecti
 **Positive definiteness.** A bounded continuous $\mathbb{H}$-valued function $g$ on $\mathbb{R}^2$ is **positive definite** when
 
 $$
-\sum_{k<l} z_k \bar z_l\, g(\lambda_k-\lambda_l) + \sum_{k>l} g(\lambda_k-\lambda_l)\, z_k \bar z_l + \sum_k \lvert z_k\rvert^2 g(0,0) \ge 0
+\sum_{k<l} \tilde p_k \tilde p_l^{\natural}\, g(\lambda_k-\lambda_l) + \sum_{k>l} g(\lambda_k-\lambda_l)\, \tilde p_k \tilde p_l^{\natural} + \sum_k \lvert \tilde p_k\rvert^2 g(0,0) \ge 0
 $$
 
-for every finite set $\lambda_1,\dots,\lambda_N \in \mathbb{R}^2$ and every $z_1,\dots,z_N \in \mathbb{H}$. Three features separate this from the commutative statement: the coefficients are quaternions rather than complex numbers; the two sums are kept apart because $z_k\bar z_l g$ and $g\,z_l\bar z_k$ are different products, so the quadratic form is not the square of a single sum; and the diagonal term carries $g(0,0)$, which for the transform of a measure is $\mu(\mathbb{R}^2)$. Written with $\mu(\mathbb{R}^2)$ in the diagonal from the outset, the property is tied to the measure it is meant to produce; with $g(0,0)$ it is a property of $g$ alone, which is what an existence theorem needs.
+for every finite set $\lambda_1,\dots,\lambda_N \in \mathbb{R}^2$ and every $\tilde p_1,\dots,\tilde p_N \in \mathbb{H}$. Three features separate this from the commutative statement: the coefficients are quaternions rather than complex numbers; the two sums are kept apart because $\tilde p_k\tilde p_l^{\natural} g$ and $g\,\tilde p_l\tilde p_k^{\natural}$ are different products, so the quadratic form is not the square of a single sum; and the diagonal term carries $g(0,0)$, which for the transform of a measure is $\mu(\mathbb{R}^2)$. Written with $\mu(\mathbb{R}^2)$ in the diagonal from the outset, the property is tied to the measure it is meant to produce; with $g(0,0)$ it is a property of $g$ alone, which is what an existence theorem needs.
 
 **Theorem.** $\mathcal{F}_{\mathrm{r}}(\mu)$ and $\mathcal{F}_{\mathrm{l}}(\mu)$ are positive definite and bounded.
 
-**Why two points are enough to see it, and why the printed proof for more points does not go through.** For $N=2$ the sum is $X+\overline{X}+\lvert z_1\rvert^2g(0,0)+\lvert z_2\rvert^2g(0,0)$ with $X = z_1\bar z_2\,g(\lambda_1-\lambda_2)$, and $\lvert g\rvert \le g(0,0)$, so the sum is at least $(\lvert z_1\rvert-\lvert z_2\rvert)^2 g(0,0) \ge 0$. For general $N$ the source bounds the sum below by $\sum_k\lvert z_k\rvert^2 - 2\sum_{k<l}\lvert z_k\rvert\lvert z_l\rvert$ and then asserts an induction; that lower bound is negative, being $3-6 = -3$ for $N = 3$ with all $\lvert z_k\rvert = 1$. Random draws at $N = 3$ gave a positive minimum in every trial, so the statement is consistent with the numerical evidence, but the induction as printed is not established.
+**Why two points are enough to see it, and why the printed proof for more points does not go through.** For $N=2$ the sum is $X+\overline{X}+\lvert \tilde p_1\rvert^2g(0,0)+\lvert \tilde p_2\rvert^2g(0,0)$ with $X = \tilde p_1\tilde p_2^{\natural}\,g(\lambda_1-\lambda_2)$, and $\lvert g\rvert \le g(0,0)$, so the sum is at least $(\lvert \tilde p_1\rvert-\lvert \tilde p_2\rvert)^2 g(0,0) \ge 0$. For general $N$ the source bounds the sum below by $\sum_k\lvert \tilde p_k\rvert^2 - 2\sum_{k<l}\lvert \tilde p_k\rvert\lvert \tilde p_l\rvert$ and then asserts an induction; that lower bound is negative, being $3-6 = -3$ for $N = 3$ with all $\lvert \tilde p_k\rvert = 1$. Random draws at $N = 3$ gave a positive minimum in every trial, so the statement is consistent with the numerical evidence, but the induction as printed is not established.
 
 **What a Bochner–Minlos theorem is, and what is proved here.** The classical theorem says that a functional on a nuclear space that is continuous, normalised and positive definite **is** the Fourier transform of a unique probability measure; the substance is the existence direction, in which positivity of the quadratic form produces the measure. A quaternion form of the theorem is stated in the literature for functionals on the dual of the sequence space $s$ of quaternion sequences with $\lVert p\rVert_m^2 = \sum_n (1+n^2)^m\lvert p_n\rvert^2$ and $s = \bigcap_m s_m$, and what is proved there is the converse direction: a probability measure on the dual is given, and its functional is shown to be normalised, continuous in the Fréchet topology and positive definite. With the measure written into the definition of positive definiteness, the theorem cannot be run in the existence direction, and that direction, which needs the nuclear structure of the test space, is not proved. Nothing in this article depends on the claim.
 
@@ -360,7 +360,7 @@ $$
 D E = 2\pi^2 \delta_0
 $$
 
-in the sense of distributions, where $D$ is the quaternion Cauchy–Riemann operator. It is the fundamental solution of the Cauchy–Riemann operator, and it is the quaternion analogue of the kernel $1/z$ in complex analysis.
+in the sense of distributions, where $D$ is the quaternion Cauchy–Riemann operator. It is the fundamental solution of the Cauchy–Riemann operator, and it is the quaternion analogue of the kernel $1/A$ in complex analysis.
 
 ## The Quaternion Hilbert Transform
 
@@ -472,20 +472,20 @@ where the power is the quaternion power. Because the variable $t$ is real and th
 
 ### Relation to the Quaternion Fourier Transform
 
-Under the change of variables $t = e^x$, the Mellin transform becomes the quaternion Fourier transform on the real line:
+Under the change of variables $t = e^a$, the Mellin transform becomes the quaternion Fourier transform on the real line:
 
 $$
-\mathcal{M} f(\sigma + \omega \tau) = \int_{-\infty}^\infty e^{(\sigma + \omega \tau) x} f(e^x) \, dx = \hat{g}(\tau),
+\mathcal{M} f(\sigma + \omega \tau) = \int_{-\infty}^\infty e^{(\sigma + \omega \tau) a} f(e^a) \, da = \hat{g}(\tau),
 $$
 
-where $g(x) = e^{\sigma x} f(e^x)$ and $\omega$ is a unit pure quaternion. So the Mellin transform is the quaternion Fourier transform in logarithmic coordinates.
+where $g(a) = e^{\sigma a} f(e^a)$ and $\omega$ is a unit pure quaternion. So the Mellin transform is the quaternion Fourier transform in logarithmic coordinates.
 
 ### The Mellin Convolution
 
 The **quaternion Mellin convolution** is
 
 $$
-(f \star g)(x) = \int_0^\infty f(x/y) g(y) \frac{dy}{y}.
+(f \star g)(a) = \int_0^\infty f(a/b) g(b) \frac{db}{b}.
 $$
 
 It satisfies

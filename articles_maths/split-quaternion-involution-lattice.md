@@ -31,10 +31,10 @@ All three are $\mathbb{R}$-linear and fix the real scalars; none is $\mathbb{C}$
 
 ### (Anti)automorphism properties
 
-**Proposition.** For all $\tilde q, y \in \mathbb{H}_{\mathrm{s}}$,
+**Proposition.** For all $\tilde q, \tilde p \in \mathbb{H}_{\mathrm{s}}$,
 
 $$
-\alpha(\tilde q y) = \alpha(\tilde q)\alpha(y), \qquad \rho(\tilde q y) = \rho(y)\rho(\tilde q), \qquad (\tilde q y)^{\natural} = y^{\natural}\,\tilde{q}^{\natural}.
+\alpha(\tilde q \tilde p) = \alpha(\tilde q)\alpha(\tilde p), \qquad \rho(\tilde q \tilde p) = \rho(\tilde p)\rho(\tilde q), \qquad (\tilde q \tilde p)^{\natural} = \tilde p^{\natural}\,\tilde{q}^{\natural}.
 $$
 
 **Proof.** It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $e_2^{\natural}e_1^{\natural} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = e_3^{\natural}$.

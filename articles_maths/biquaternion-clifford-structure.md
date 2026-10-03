@@ -65,15 +65,15 @@ $$
 
 Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with $\gamma_k\mapsto ie_k$, the four Clifford grades are the four biquaternion components. The generators are $\gamma_k=ie_k$, so grade one is the **imaginary pure quaternions** $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$; grade two is $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, since $(ie_j)(ie_k)=-e_je_k$ is a **real pure quaternion**; grade zero is the **real scalar** line $\mathbb{R}e_0$; and grade three is the **imaginary scalar** line $\mathbb{R}ie_0$, spanned by the volume element. The correspondence is summarised as
 $$
-p\longleftrightarrow S(p)e_0+\underbrace{V(p)}_{\text{grade 2}}+\underbrace{iV(p)}_{\text{grade 1}}+iS(p)e_0\ \ (\text{grade 3}),
+\tilde{P}\longleftrightarrow S(\tilde{P})e_0+\underbrace{V(\tilde{P})}_{\text{grade 2}}+\underbrace{iV(\tilde{P})}_{\text{grade 1}}+iS(\tilde{P})e_0\ \ (\text{grade 3}),
 $$
 so that the quaternion vector part is the grade-two part and the imaginary quaternion part is the grade-one part. The four grades are exactly the four components isolated by the character projections of the involution analysis of *Biquaternion Algebra*. The general theory of the grading and of the geometric product is *The Geometric Product and the Grade Decomposition*.
 
 **Remark (the naming).** The dictionary is where the literature is easily misled. The scalar/vector terminology standard for quaternions labels the three quaternion units $e_k$ as vectors, whereas in the Clifford reading they are directed areas, of grade two; the geometric grade-one vectors are the imaginary quaternions $ie_k$. Sangwine, Ell and Le Bihan record that the axial and polar terminology of physics has caused further confusion, because the two terms suggest different types of vector for what is one algebraic object, and Suter's summary is quoted with approval: "a quaternion is a scalar plus a bivector". This article uses the geometric names throughout: scalar, vector, bivector, pseudoscalar for grades zero, one, two, three.
 
-**Remark.** The antisymmetric part of the biquaternion product is the outer product of the Clifford algebra, and it reads back on the vector parts as the cross product: $p\wedge q=\tfrac12(pq-qp)=V(p)\times V(q)$ for every pair of biquaternions, not only for vector-like ones. The identity and the naming consequences are in *Biquaternion Algebra*.
+**Remark.** The antisymmetric part of the biquaternion product is the outer product of the Clifford algebra, and it reads back on the vector parts as the cross product: $\tilde{P}\wedge\tilde{Q}=\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=V(\tilde{P})\times V(\tilde{Q})$ for every pair of biquaternions, not only for vector-like ones. The identity and the naming consequences are in *Biquaternion Multiplication*.
 
-**Remark (an open point).** The geometric reading of the full product is incomplete. The paper on which the identification is recorded writes the general product as $pq=S(p)S(q)+S(p)V(q)+S(q)V(p)+V(p)V(q)$, splits the last term into its inner and outer parts, and then states explicitly that "a deeper analysis of the biquaternions as a geometric algebra requires further work". The corpus records the grades, the outer product and the duality, and claims no interpretation of a general product beyond them.
+**Remark (an open point).** The geometric reading of the full product is incomplete. The paper on which the identification is recorded writes the general product as $\tilde{P}\tilde{Q}=S(\tilde{P})S(\tilde{Q})+S(\tilde{P})V(\tilde{Q})+S(\tilde{Q})V(\tilde{P})+V(\tilde{P})V(\tilde{Q})$, splits the last term into its inner and outer parts, and then states explicitly that "a deeper analysis of the biquaternions as a geometric algebra requires further work". The corpus records the grades, the outer product and the duality, and claims no interpretation of a general product beyond them.
 
 ## The Involutive Structure and the Conjugations
 
@@ -195,7 +195,7 @@ The algebra is involutive in the Clifford sense. Its four conjugations ${}^{\nat
 | $\gamma_k\mapsto ie_k$ | Isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$ |
 | $\omega=\gamma_1\gamma_2\gamma_3\mapsto i$ | Volume element of $\mathrm{Cl}_{3,0}$; central, $\omega^2=-1$ |
 | $\Omega=\Gamma_1\Gamma_2\Gamma_3\Gamma_4\,(\Omega^2=-1)$ | Volume element of $\mathrm{Cl}_{3,1}$, central in the even part |
-| $p\wedge q=\tfrac12(pq-qp)=V(p)\times V(q)$ | Outer product; the cross product of the vector parts (*Biquaternion Algebra*) |
+| $\tilde{P}\wedge\tilde{Q}=\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=V(\tilde{P})\times V(\tilde{Q})$ | Outer product; the cross product of the vector parts (*Biquaternion Multiplication*) |
 | grade 0 / 1 / 2 / 3 | real scalar / imaginary pure quaternion / real pure quaternion / imaginary scalar |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*},\ {}^{\flat}$ | the four conjugations, identified with $\alpha(X^{r})$, $\alpha$, $X^{r}$, $-X^{r}$ on $\mathrm{Cl}_{3,0}$ |
 | $\mathbb{M}_{+},\ \mathbb{M}_{-}$ | Hermitian and anti-Hermitian subspaces; grade $0\oplus$ grade $1$ and grade $2\oplus$ grade $3$ |

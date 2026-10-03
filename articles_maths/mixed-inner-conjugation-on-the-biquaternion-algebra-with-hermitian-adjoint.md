@@ -36,18 +36,18 @@ $$
 
 *Proof.* $\bar{\cdot}(\tilde{Q}\tilde{R})=\bar{\cdot}(\tilde{Q})\bar{\cdot}(\tilde{R})$ because the coefficient conjugation is an automorphism, and $(\tilde{Q}\tilde{R})^{\dagger}=\tilde{R}^{*}\tilde{Q}^{*}$ because the dagger is an anti-automorphism. Then $\Phi^{\theta,\rho}_{\tilde{Q}}(\Phi^{\theta,\rho}_{\tilde{R}}(\tilde T))=\theta(\tilde{Q})\theta(\tilde{R})\,\tilde T\,\rho(\tilde{R})\rho(\tilde{Q})$, and the two middle factors combine into $\theta(\tilde{Q}\tilde{R})$ and $\rho(\tilde{Q}\tilde{R})$ respectively. Verified in the matrix model for all four pairs over random invertible parameters.
 
-**Corollary (the parameter rule).** For a central scalar $z$ and an invertible $\tilde{Q}$,
+**Corollary (the parameter rule).** For a central scalar $A$ and an invertible $\tilde{Q}$,
 
 $$
-\Phi^{\mathrm{id},\mathrm{inv}}_{z\tilde{Q}}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}},\qquad
-\Phi^{\bar{\cdot},\mathrm{inv}}_{z\tilde{Q}}=\frac{\overline{z}}{z}\,\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}},\qquad
-\Phi^{\mathrm{id},{}^{*}}_{z\tilde{Q}}=\lvert z\rvert^{2}\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}},\qquad
-\Phi^{\bar{\cdot},{}^{*}}_{z\tilde{Q}}=\overline{z}^{2}\,\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}} .
+\Phi^{\mathrm{id},\mathrm{inv}}_{A\tilde{Q}}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}},\qquad
+\Phi^{\bar{\cdot},\mathrm{inv}}_{A\tilde{Q}}=\frac{\overline{A}}{A}\,\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}},\qquad
+\Phi^{\mathrm{id},{}^{*}}_{A\tilde{Q}}=\lvert A\rvert^{2}\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}},\qquad
+\Phi^{\bar{\cdot},{}^{*}}_{A\tilde{Q}}=\overline{A}^{2}\,\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}} .
 $$
 
-So the inner conjugation is **blind to the central phase**, and the twist is not: for $\lvert z\rvert=1$ the inner conjugation and the unsigned sandwich are unchanged, while the signed members are multiplied by the units $\overline{z}/z$ and $\overline{z}^{2}$, which are $1$ only at $z=\pm1$. For $z=i$ this is the statement that the inner conjugation satisfies $\Phi^{\mathrm{id},\mathrm{inv}}_{i\tilde{Q}}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}$ while the signed inner conjugation is negated, $\Phi^{\bar{\cdot},\mathrm{inv}}_{i\tilde{Q}}=-\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}}$.
+So the inner conjugation is **blind to the central phase**, and the twist is not: for $\lvert A\rvert=1$ the inner conjugation and the unsigned sandwich are unchanged, while the signed members are multiplied by the units $\overline{A}/A$ and $\overline{A}^{2}$, which are $1$ only at $A=\pm1$. For $A=i$ this is the statement that the inner conjugation satisfies $\Phi^{\mathrm{id},\mathrm{inv}}_{i\tilde{Q}}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}$ while the signed inner conjugation is negated, $\Phi^{\bar{\cdot},\mathrm{inv}}_{i\tilde{Q}}=-\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}}$.
 
-*Proof.* $z$ is central. For $\rho=\mathrm{inv}$ use $(z\tilde{Q})^{-1}=z^{-1}\tilde{Q}^{-1}$: the computation gives $\theta(z)z^{-1}\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}$, which is $1$ for $\theta=\mathrm{id}$ and $\overline{z}/z$ for $\theta=\bar{\cdot}$. For $\rho={}^{*}$ use $(z\tilde{Q})^{\dagger}=\overline{z}\tilde{Q}^{*}$: the computation gives $\theta(z)\overline{z}\,\Phi^{\theta,{}^{*}}_{\tilde{Q}}$, which is $z\overline{z}=\lvert z\rvert^{2}$ for $\theta=\mathrm{id}$ and $\overline{z}^{2}$ for $\theta=\bar{\cdot}$. Verified numerically on random parameters and central phases.
+*Proof.* $A$ is central. For $\rho=\mathrm{inv}$ use $(A\tilde{Q})^{-1}=A^{-1}\tilde{Q}^{-1}$: the computation gives $\theta(A)A^{-1}\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}$, which is $1$ for $\theta=\mathrm{id}$ and $\overline{A}/A$ for $\theta=\bar{\cdot}$. For $\rho={}^{*}$ use $(A\tilde{Q})^{\dagger}=\overline{A}\tilde{Q}^{*}$: the computation gives $\theta(A)\overline{A}\,\Phi^{\theta,{}^{*}}_{\tilde{Q}}$, which is $A\overline{A}=\lvert A\rvert^{2}$ for $\theta=\mathrm{id}$ and $\overline{A}^{2}$ for $\theta=\bar{\cdot}$. Verified numerically on random parameters and central phases.
 
 ## The Two Defects
 
@@ -85,7 +85,7 @@ $$
 \bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}=e_0 \iff \bar{\cdot}(\tilde{Q})=\tilde{Q} \iff \tilde{Q}\in\mathbb{H}_{\mathbb{B}},
 $$
 
-and it detects the central phase: it is the inverse-square phase for a central unit, $\bar{\cdot}(z e_0)(ze_0)^{-1}=(\overline{z}/z)e_0$, so that the twist vanishes on the central phase only at $z=\pm1$.
+and it detects the central phase: it is the inverse-square phase for a central unit, $\bar{\cdot}(A e_0)(Ae_0)^{-1}=(\overline{A}/A)e_0$, so that the twist vanishes on the central phase only at $A=\pm1$.
 
 ## The Adjoint and the Types
 

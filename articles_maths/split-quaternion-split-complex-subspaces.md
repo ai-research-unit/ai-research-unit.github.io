@@ -64,17 +64,17 @@ $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1, \qquad \mathbb{D}_2 e_1 = \operatorname{span}\{e_1, e_3\},
 $$
 
-a free left $\mathbb{D}_2$-module with basis $\{1, e_1\}$; the same decomposition is a free right $\mathbb{D}_2$-module with the same basis. The two module structures differ, and the difference is the twist. Since $e_1$ anticommutes with $e_2$, passing $e_1$ to the right of an element $w = q_0 + q_2 e_2 \in \mathbb{D}_2$ conjugates that element:
+a free left $\mathbb{D}_2$-module with basis $\{1, e_1\}$; the same decomposition is a free right $\mathbb{D}_2$-module with the same basis. The two module structures differ, and the difference is the twist. Since $e_1$ anticommutes with $e_2$, passing $e_1$ to the right of an element $A = q_0 + q_2 e_2 \in \mathbb{D}_2$ conjugates that element:
 
 $$
-e_1 w = \bar{w} e_1, \qquad \bar{w} = q_0 - q_2 e_2,
+e_1 A = \bar{A} e_1, \qquad \bar{A} = q_0 - q_2 e_2,
 $$
 
-where $\bar{\cdot}$ is the conjugation of the split-complex plane, the nontrivial involution of $\mathbb{D}$. Consequently the product in $\mathbb{H}_{\mathrm{s}}$, written in the $\mathbb{D}_2$-basis $\{1, e_1\}$ as $\tilde q = z_1 + z_2 e_1$ and $y = w_1 + w_2 e_1$ with $z_i, w_i \in \mathbb{D}_2$, is the **twisted multiplication**
+where $\bar{\cdot}$ is the conjugation of the split-complex plane, the nontrivial involution of $\mathbb{D}$. Consequently the product in $\mathbb{H}_{\mathrm{s}}$, written in the $\mathbb{D}_2$-basis $\{1, e_1\}$ as $\tilde q = A_1 + A_2 e_1$ and $\tilde p = B_1 + B_2 e_1$ with $A_i, B_i \in \mathbb{D}_2$, is the **twisted multiplication**
 
 $$
-(z_1 + z_2 e_1)(w_1 + w_2 e_1)
-= \big(z_1 w_1 - z_2 \bar{w_2}\big) + \big(z_1 w_2 + z_2 \bar{w_1}\big)e_1 .
+(A_1 + A_2 e_1)(B_1 + B_2 e_1)
+= \big(A_1 B_1 - A_2 \bar{B_2}\big) + \big(A_1 B_2 + A_2 \bar{B_1}\big)e_1 .
 $$
 
 This is the multiplication of a quaternion-like algebra over the commutative ring $\mathbb{D}_2$, in which the anticommuting generator $e_1$ acts by the conjugation of the coefficient algebra. The same computation with $e_2$ in place of $e_1$ gives the rank-$2$ module structure over $\mathbb{D}_3$. Because $\mathbb{D}_2$ and $\mathbb{D}_3$ are not central, the algebra is a module and a bimodule over each, but not an algebra over either, and the twist $\bar{\cdot}$ is exactly what obstructs the algebra structure.
@@ -154,7 +154,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 **Example (a unit of the second plane).** For $\tilde q = 2 + e_3$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - e_3)/3$.
 
-**Example (the twisted multiplication).** Take $z_1 = 1$, $z_2 = e_2$, $w_1 = 1$, $w_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = e_2^{\natural}\, e_1$. This is the concrete content of the twisted formula above.
+**Example (the twisted multiplication).** Take $A_1 = 1$, $A_2 = e_2$, $B_1 = 1$, $B_2 = 0$ in $\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1$. Then $(1 + e_2 e_1)(1) = 1 + e_2 e_1 = 1 - e_1 e_2 = 1 - e_3$, while treating $e_1$ as commuting with $\mathbb{D}_2$ would give $1 + e_3$; the sign is the twist $e_1 e_2 = e_2^{\natural}\, e_1$. This is the concrete content of the twisted formula above.
 
 **Example (the isotropic lines).** For the first plane, $(1 + e_2)(1 - e_2) = 0$; for the second, $(1 + e_3)(1 - e_3) = 0$. The four lines $\mathbb{R}(1\pm e_2)$, $\mathbb{R}(1\pm e_3)$ are the split-complex traces of the null cone.
 

@@ -59,7 +59,7 @@ $$
 
 **Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$; the central elements are then the $\mathbb{C}$-multiples of $e_0$, which is the fixed space of ${}^{\natural}$ computed above.
 
-The two names of the subspace are therefore the same object described in two ways: it is the fixed space of one involution, and it is the centre of the algebra. Its elements are the **central elements**, and in the corpus's notation a central element is written $z e_0$ with $z \in \mathbb{C}$, or $\rho e_0$ when a modulus is in play.
+The two names of the subspace are therefore the same object described in two ways: it is the fixed space of one involution, and it is the centre of the algebra. Its elements are the **central elements**, and in the corpus's notation a central element is written $A e_0$ with $A \in \mathbb{C}$, or $\rho e_0$ when a modulus is in play.
 
 ### Subalgebra, Commutativity, Field Structure
 
@@ -237,7 +237,8 @@ The centre subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion c
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the multiplication of $\mathbb{B}$, the three decompositions and the definitions of the six subspaces
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the three decompositions and the definitions of the six subspaces
+- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product of $\mathbb{B}$
 - *Biquaternion Vector Subspace* (`articles_maths/biquaternion-vector-subspace.md`), the anti-fixed companion of the present subspace
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six together
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their composition law and the two spaces each of them defines

@@ -46,7 +46,7 @@ $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{X})\|_F=\sqrt2\|\tilde{X}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm (*The Forms in the Matrix Representation of the Biquaternion Algebra*, §*The Inner Product as the Hilbert–Schmidt Pairing*). The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm (*The Forms in the Matrix Representation of the Biquaternion Algebra*, §*The Inner Product as the Hilbert–Schmidt Pairing*). The Frobenius norm is submultiplicative, so
 $$
 \sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\Phi(\tilde{Q})\Phi(\tilde{R})\|_F\leq\|\Phi(\tilde{Q})\|_F\|\Phi(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
 $$
@@ -59,13 +59,13 @@ which is the inequality. For sharpness take $\tilde{Q}=\tilde{R}=e_0+ie_1$: then
 **Proposition (the isometries that the algebra supplies).** Multiplication by a central element and the conjugations are orthogonal:
 
 $$
-\|(z e_0)\tilde{Q}\|_E=|z|\,\|\tilde{Q}\|_E,\qquad
+\|(A e_0)\tilde{Q}\|_E=|A|\,\|\tilde{Q}\|_E,\qquad
 \|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
 $$
 
-Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{*}$ is a Euclidean isometry.
+Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{T})=\tilde{U}\tilde{T}\tilde{U}^{*}$ is a Euclidean isometry.
 
-**Proof.** A central multiplier scales every coefficient by $z$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.
+**Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.
 
 ## The Contractibility of the Algebra
 

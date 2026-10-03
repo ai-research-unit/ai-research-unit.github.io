@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The linear endomorphisms of the biquaternion algebra carry two involutions. The first is the **dagger**, the adjoint with respect to the positive definite Hermitian form, treated in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*. The second is **association**, and it is the involution that makes a linear function transposable; it is the adjoint with respect to the **scalar bilinear form** $B(X,Y) = \mathrm{Sc}(XY)$ of signature $(1,3)$ rather than with respect to the Hermitian one.
+The linear endomorphisms of the biquaternion algebra carry two involutions. The first is the **dagger**, the adjoint with respect to the positive definite Hermitian form, treated in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*. The second is **association**, and it is the involution that makes a linear function transposable; it is the adjoint with respect to the **scalar bilinear form** $B(\tilde R,\tilde S) = \mathrm{Sc}(\tilde R\tilde S)$ of signature $(1,3)$ rather than with respect to the Hermitian one.
 
 The two agree on the group elements that the corpus uses, and this is the reason the source literature can treat them interchangeably. Off those elements they differ, and the corpus keeps them apart. This article holds the association construction and the scalar form it belongs to; they were §*Function Association and the Adjoint* of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*, extracted here because they are a form and its duality, not algebra.
 
@@ -11,7 +11,7 @@ The two agree on the group elements that the corpus uses, and this is the reason
 Let $\mathrm{Sc}$ be the scalar part. The **scalar bilinear form** is
 
 $$
-B(X,Y) = \mathrm{Sc}(XY) = X_0Y_0 - X_1Y_1 - X_2Y_2 - X_3Y_3 .
+B(\tilde R,\tilde S) = \mathrm{Sc}(\tilde R\tilde S) = R_0S_0 - R_1S_1 - R_2S_2 - R_3S_3 .
 $$
 
 It is symmetric and non-degenerate, and it is **indefinite**, of signature $(1,3)$, with Gram matrix
@@ -27,23 +27,23 @@ in the basis $e_0,e_1,e_2,e_3$. It is the form whose polarisation is the bilinea
 The **associate** $F^{\approx}$ of a linear function $F$ is defined by
 
 $$
-\mathrm{Sc}\bigl(F(X)\,Y\bigr) = \mathrm{Sc}\bigl(X\, F^{\approx}(Y)\bigr)
-\qquad \text{for all } X, Y \in \mathbb{B},
+\mathrm{Sc}\bigl(F(\tilde R)\,\tilde S\bigr) = \mathrm{Sc}\bigl(\tilde R\, F^{\approx}(\tilde S)\bigr)
+\qquad \text{for all } \tilde R, \tilde S \in \mathbb{B},
 $$
 
-equivalently $B(FX,Y) = B(X,F^{\approx}Y)$. Association is the **transpose** with respect to $B$.
+equivalently $B(F\tilde R,\tilde S) = B(\tilde R,F^{\approx}\tilde S)$. Association is the **transpose** with respect to $B$.
 
 **Proposition (association reverses the factors).** On the Conway operator basis $e_n[\,]e_m$ of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Conway Operator Basis*,
 
 $$
 \bigl(e_n[\,]e_m\bigr)^{\approx} = e_m[\,]e_n ,
 \qquad\text{so}\qquad
-\Bigl(\sum_{n,m} z_{nm}\, e_n[\,]e_m\Bigr)^{\approx} = \sum_{n,m} z_{nm}\, e_m[\,]e_n ,
+\Bigl(\sum_{n,m} A_{nm}\, e_n[\,]e_m\Bigr)^{\approx} = \sum_{n,m} A_{nm}\, e_m[\,]e_n ,
 $$
 
 and in particular $\bigl(a[\,]b\bigr)^{\approx} = b[\,]a$, so that $L_a^{\approx} = R_a$ and $R_b^{\approx} = L_b$.
 
-*Proof.* $B\bigl((a[\,]b)(X), Y\bigr) = \mathrm{Sc}(aXbY) = \mathrm{Sc}(XbYa) = B\bigl(X, (b[\,]a)(Y)\bigr)$ by the invariance of the scalar part under cyclic permutation, and $B$ is non-degenerate.
+*Proof.* $B\bigl((a[\,]b)(\tilde R), \tilde S\bigr) = \mathrm{Sc}(a\tilde Rb\tilde S) = \mathrm{Sc}(\tilde Rb\tilde Sa) = B\bigl(\tilde R, (b[\,]a)(\tilde S)\bigr)$ by the invariance of the scalar part under cyclic permutation, and $B$ is non-degenerate.
 
 **Proposition (the matrix of association).** The transpose with respect to $B$ is
 
@@ -55,7 +55,7 @@ for $F^{\mathsf T}$ the plain matrix transpose. The two agree exactly when $D$ a
 
 ## Association and the Hermitian Adjoint
 
-**Proposition (coefficient conjugation).** Let $\bar F( ) = \sum \bar z_{nm} e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde X, \tilde Y) = \mathrm{Sc}(\tilde X^{*}\tilde Y) = \sum_\mu \tilde X_{\bar\mu}\tilde Y_\mu$ of *The Hermitian Form on the Biquaternion Algebra*, so that $(\tilde F(X),Y) = (X,F^{*}(Y))$. Then
+**Proposition (coefficient conjugation).** Let $\bar F( ) = \sum \bar A_{nm} e_n[\,]e_m$ be the function obtained by conjugating the coefficients, and let $F^{*}$ be the adjoint of $F$ with respect to the Hermitian form $(\tilde R, \tilde S) = \mathrm{Sc}(\tilde R^{*}\tilde S) = \sum_\mu \tilde R_{\bar\mu}\tilde S_\mu$ of *The Hermitian Form on the Biquaternion Algebra*, so that $(\tilde F(\tilde R),\tilde S) = (\tilde R,F^{*}(\tilde S))$. Then
 
 $$
 \bar F^{\approx} = D\,F^{*}D .
@@ -75,13 +75,13 @@ which is the source's $G^{-1} = G^{+\approx} = G^{\dagger}$.
 
 ## Summary
 
-The **scalar product form** $B(X,Y) = \mathrm{Sc}(XY)$ is symmetric, non-degenerate and indefinite, and on the real quaternion subspace of signature $(1,3)$; its Gram matrix in the basis $e_0,e_1,e_2,e_3$ is $D = \operatorname{diag}(1,-1,-1,-1)$. It is the companion of the *bilinear form* $N(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ of *The Bilinear Form on the Biquaternion Algebra*, which is a different pairing, the polarisation of the norm, of Gram matrix $\mathrm{I}_4$: **Association** $F^{\approx}$ is the transpose with respect to it, defined by $\mathrm{Sc}(F(X)Y) = \mathrm{Sc}(X F^{\approx}(Y))$; on the Conway basis it reverses the factors, $(e_n[\,]e_m)^{\approx} = e_m[\,]e_n$, and in matrix form $F^{\approx} = D F^{\mathsf T} D$. Combined with the conjugation of the coefficients it gives $\bar F^{\approx} = D F^{*} D$ against the Hermitian adjoint, which collapses to $\bar F^{\approx} = F^{*} = F^{-1}$ on the unitary elements that fix the scalar unit and preserve the vector part. This construction was §*Function Association and the Adjoint* of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*; the enveloping algebra itself, the Conway basis and the bi-module structure are that article, and the Hermitian adjoint is *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+The **scalar product form** $B(\tilde R,\tilde S) = \mathrm{Sc}(\tilde R\tilde S)$ is symmetric, non-degenerate and indefinite, and on the real quaternion subspace of signature $(1,3)$; its Gram matrix in the basis $e_0,e_1,e_2,e_3$ is $D = \operatorname{diag}(1,-1,-1,-1)$. It is the companion of the *bilinear form* $N(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ of *The Bilinear Form on the Biquaternion Algebra*, which is a different pairing, the polarisation of the norm, of Gram matrix $\mathrm{I}_4$: **Association** $F^{\approx}$ is the transpose with respect to it, defined by $\mathrm{Sc}(F(\tilde R)\tilde S) = \mathrm{Sc}(\tilde R F^{\approx}(\tilde S))$; on the Conway basis it reverses the factors, $(e_n[\,]e_m)^{\approx} = e_m[\,]e_n$, and in matrix form $F^{\approx} = D F^{\mathsf T} D$. Combined with the conjugation of the coefficients it gives $\bar F^{\approx} = D F^{*} D$ against the Hermitian adjoint, which collapses to $\bar F^{\approx} = F^{*} = F^{-1}$ on the unitary elements that fix the scalar unit and preserve the vector part. This construction was §*Function Association and the Adjoint* of *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure*; the enveloping algebra itself, the Conway basis and the bi-module structure are that article, and the Hermitian adjoint is *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $B(X,Y) = \mathrm{Sc}(XY)$ | The scalar bilinear form; symmetric, indefinite of signature $(1,3)$ |
+| $B(\tilde R,\tilde S) = \mathrm{Sc}(\tilde R\tilde S)$ | The scalar bilinear form; symmetric, indefinite of signature $(1,3)$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | The Gram matrix of $B$; the fundamental symmetry up to sign |
 | $F^{\approx}$ | The associate of $F$; the transpose for $B$, $F^{\approx} = D F^{\mathsf T} D$ |
 | $\bar F^{\approx} = D F^{*} D$ | Association combined with coefficient conjugation, against the Hermitian adjoint |

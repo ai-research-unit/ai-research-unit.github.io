@@ -87,7 +87,7 @@ The three forms are collected in one table; each entry is defined before it is u
 | $\langle\cdot,\cdot\rangle$ Hermitian | ${}^{*}$ (antilinear) | conjugate-linear | Hermitian, positive definite | $\mathrm{I}_4$ | $(8,0)$ | $\|\tilde{Q}\|_{E}^{2}$ |
 | $[\cdot,\cdot]$ Krein | $\bar{\cdot}$ (antilinear) | conjugate-linear | Hermitian, indefinite | $\mathrm{E}$ | $(2,6)$ | the Krein square |
 
-**Proof of the signatures.** $B$ is a complex bilinear form; writing $Q_{\mu}=x_{\mu}+iy_{\mu}$ gives $\mathrm{Re}\,B=\sum_{\mu}(x_{\mu}^{2}-y_{\mu}^{2})$, of signature $(4,4)$ over the eight real coordinates. The Hermitian form is $\sum_{\mu}|Q_{\mu}|^{2}$, positive definite of rank $8$. The Krein form is $\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$ with the signs $\varepsilon$, hence of signature $(2,6)$: the positive part is the centre and the negative part the vector subspace (*The Biquaternion Krein Form and Its Signature*, §*The Signature*).
+**Proof of the signatures.** $B$ is a complex bilinear form; writing $Q_{\mu}=q_{\mu}+iq'_{\mu}$ gives $\mathrm{Re}\,B=\sum_{\mu}(q_{\mu}^{2}-q'_{\mu}^{2})$, of signature $(4,4)$ over the eight real coordinates. The Hermitian form is $\sum_{\mu}|Q_{\mu}|^{2}$, positive definite of rank $8$. The Krein form is $\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$ with the signs $\varepsilon$, hence of signature $(2,6)$: the positive part is the centre and the negative part the vector subspace (*The Biquaternion Krein Form and Its Signature*, §*The Signature*).
 
 **Theorem (the three forms are mutually non-degenerate and no two agree).** All three pairings are non-degenerate; $B$ is not sesquilinear, $\langle\cdot,\cdot\rangle$ is definite and $[\cdot,\cdot]$ is not, and $B$ is $\mathbb{C}$-valued while the other two are real on the diagonal. Nevertheless they determine one another by the identities
 
@@ -108,11 +108,11 @@ Each form has its own adjoint on the operators and its own group of isometries. 
 **Theorem (the adjoint dichotomy).** Let $\sigma$ be an involution of the group and $\Phi_{\sigma}$ its pairing, and let $L_{\tilde{Q}}$ be the left multiplication. Then
 
 $$
-\Phi_{\sigma}\bigl(L_{\tilde{Q}}\tilde{X},\tilde{Y}\bigr)=\Phi_{\sigma}\bigl(\tilde{X},L_{\sigma(\tilde{Q})}\tilde{Y}\bigr)
+\Phi_{\sigma}\bigl(L_{\tilde{Q}}\tilde{P},\tilde{S}\bigr)=\Phi_{\sigma}\bigl(\tilde{P},L_{\sigma(\tilde{Q})}\tilde{S}\bigr)
 \ \ \text{if }\sigma\text{ is an anti-automorphism},
 $$
 $$
-\Phi_{\sigma}\bigl(L_{\tilde{Q}}\tilde{X},\tilde{Y}\bigr)=\Phi_{\sigma}\bigl(\tilde{X},R_{\sigma(\tilde{Q})}\tilde{Y}\bigr)
+\Phi_{\sigma}\bigl(L_{\tilde{Q}}\tilde{P},\tilde{S}\bigr)=\Phi_{\sigma}\bigl(\tilde{P},R_{\sigma(\tilde{Q})}\tilde{S}\bigr)
 \ \ \text{if }\sigma\text{ is an automorphism},
 $$
 
@@ -124,7 +124,7 @@ $$
 \bigl(L_{\tilde{Q}}\bigr)^{[\cdot,\cdot]}=R_{\bar{\tilde{Q}}}.
 $$
 
-**Proof.** $\Phi_{\sigma}(L_{\tilde{Q}}\tilde{X},\tilde{Y})=\mathrm{Sc}(\sigma(\tilde{Q}\tilde{X})\tilde{Y})$. If $\sigma$ is an anti-automorphism this is $\mathrm{Sc}(\sigma(\tilde{X})\sigma(\tilde{Q})\tilde{Y})=\mathrm{Sc}(\sigma(\tilde{X})(\sigma(\tilde{Q})\tilde{Y}))$, which is $\Phi_{\sigma}(\tilde{X},L_{\sigma(\tilde{Q})}\tilde{Y})$. If $\sigma=\bar{\cdot}$ is the automorphism, it is $\mathrm{Sc}(\bar{\tilde{Q}}\,\bar{\tilde{X}}\tilde{Y})$; by the cyclicity $\mathrm{Sc}(PQR)=\mathrm{Sc}(QRP)$ this is $\mathrm{Sc}(\bar{\tilde{X}}\tilde{Y}\bar{\tilde{Q}})=\mathrm{Sc}(\bar{\tilde{X}}(\tilde{Y}\bar{\tilde{Q}}))=\Phi_{\sigma}(\tilde{X},R_{\bar{\tilde{Q}}}\tilde{Y})$. The three adjoints are the substitutions $\sigma={}^{\natural},{}^{*},\bar{\cdot}$.
+**Proof.** $\Phi_{\sigma}(L_{\tilde{Q}}\tilde{P},\tilde{S})=\mathrm{Sc}(\sigma(\tilde{Q}\tilde{P})\tilde{S})$. If $\sigma$ is an anti-automorphism this is $\mathrm{Sc}(\sigma(\tilde{P})\sigma(\tilde{Q})\tilde{S})=\mathrm{Sc}(\sigma(\tilde{P})(\sigma(\tilde{Q})\tilde{S}))$, which is $\Phi_{\sigma}(\tilde{P},L_{\sigma(\tilde{Q})}\tilde{S})$. If $\sigma=\bar{\cdot}$ is the automorphism, it is $\mathrm{Sc}(\bar{\tilde{Q}}\,\bar{\tilde{P}}\tilde{S})$; by the cyclicity $\mathrm{Sc}(PQR)=\mathrm{Sc}(QRP)$ this is $\mathrm{Sc}(\bar{\tilde{P}}\tilde{S}\bar{\tilde{Q}})=\mathrm{Sc}(\bar{\tilde{P}}(\tilde{S}\bar{\tilde{Q}}))=\Phi_{\sigma}(\tilde{P},R_{\bar{\tilde{Q}}}\tilde{S})$. The three adjoints are the substitutions $\sigma={}^{\natural},{}^{*},\bar{\cdot}$.
 
 **Remark.** The third line is the structural surprise of *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*: because the Krein form is built on the *automorphism* $\bar{\cdot}$, its adjoint changes the side. The reason is exactly the dichotomy above: the cyclicity of $\mathrm{Sc}$ transports the parameter to the other side.
 

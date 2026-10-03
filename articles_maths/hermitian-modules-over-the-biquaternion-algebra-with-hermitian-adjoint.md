@@ -64,10 +64,10 @@ $$
 
 is a Hermitian form, positive definite and non-degenerate, and it satisfies the adjointness axiom; so the algebra over itself is a Hermitian Clifford module.
 
-*Proof.* Sesquilinearity and Hermitian symmetry are assembled from the two commuting involutions: the coefficient conjugation $\bar{\cdot}$ conjugates the scalar of the form and the quaternion conjugation ${}^{\natural}$ negates the three vector coefficients. Positivity is $\mathrm{Sc}(\tilde{R}^{*}\tilde R)=\sum_{\mu}\lvert R_\mu\rvert^{2}\ge0$, vanishing only at $\tilde R=0$, so the Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity and the form is non-degenerate. For the axiom, left multiplication by $z$ gives
+*Proof.* Sesquilinearity and Hermitian symmetry are assembled from the two commuting involutions: the coefficient conjugation $\bar{\cdot}$ conjugates the scalar of the form and the quaternion conjugation ${}^{\natural}$ negates the three vector coefficients. Positivity is $\mathrm{Sc}(\tilde{R}^{*}\tilde R)=\sum_{\mu}\lvert R_\mu\rvert^{2}\ge0$, vanishing only at $\tilde R=0$, so the Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity and the form is non-degenerate. For the axiom, left multiplication by $A$ gives
 
 $$
-(z\tilde R,\tilde T)=\mathrm{Sc}\bigl((z\tilde R)^{\dagger}\tilde T\bigr)=\mathrm{Sc}\bigl(\tilde{R}^{*}\bar{z}\tilde T\bigr)=\bigl(\tilde R,\bar{z}\tilde T\bigr),
+(A\tilde R,\tilde T)=\mathrm{Sc}\bigl((A\tilde R)^{\dagger}\tilde T\bigr)=\mathrm{Sc}\bigl(\tilde{R}^{*}\bar{A}\tilde T\bigr)=\bigl(\tilde R,\bar{A}\tilde T\bigr),
 $$
 
 using that the dagger is an anti-involution and that the scalar part is a trace, $\mathrm{Sc}(\tilde B\tilde C)=\mathrm{Sc}(\tilde C\tilde B)$.

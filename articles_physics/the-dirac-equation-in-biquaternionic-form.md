@@ -456,7 +456,7 @@ The coupling has to be off-diagonal. Left multiplication by an element of $\math
 **A remark on the anti-Hermitian conjugation $\flat$.** The algebra carries, besides the quaternion conjugate and the Hermitian conjugation ${}^{*}$, a further antilinear involution:
 
 $$
-\tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\tilde{\Psi}^{*},
+\tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}},
 $$
 
 the **anti-Hermitian conjugate** $\flat = -{}^{*}$. It is a $\mathbb{C}$-**antilinear** involution, and it is order-reversing with a twist,

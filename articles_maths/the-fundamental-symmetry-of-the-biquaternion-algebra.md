@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An indefinite inner product is a definite one together with an involution $J$ of square one, self-adjoint for the indefinite form, such that $[x,y]=\langle Jx,y\rangle$ and $\langle x,x\rangle=[Jx,x]>0$ off zero: the **fundamental symmetry** (*The Fundamental Symmetry*). For the Krein form of the biquaternion algebra that involution is already at hand in the Algebra layer: it is the **natural conjugation** ${}^{\natural}$, which negates the vector units and fixes the centre. The bridge identity is
+An indefinite inner product is a definite one together with an involution $J$ of square one, self-adjoint for the indefinite form, such that $[\tilde{Q},\tilde{Q}']=\langle J\tilde{Q},\tilde{Q}'\rangle$ and $\langle \tilde{Q},\tilde{Q}\rangle=[J\tilde{Q},\tilde{Q}]>0$ off zero: the **fundamental symmetry** (*The Fundamental Symmetry*). For the Krein form of the biquaternion algebra that involution is already at hand in the Algebra layer: it is the **natural conjugation** ${}^{\natural}$, which negates the vector units and fixes the centre. The bridge identity is
 
 $$
 [\tilde{Q},\tilde{Q}']=\langle\tilde{Q}^{\natural},\tilde{Q}'\rangle,
@@ -78,7 +78,7 @@ $$
 {}^{\natural}\,R_{\tilde{R}}\,{}^{\natural}=L_{\tilde{R}^{\natural}}.
 $$
 
-**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $e_k^{\natural}=-e_k$ and $(-e_k)(-e_l)=e_ke_l=-(e_le_k)$ for $k\neq l$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}}{}^{\natural}\right)(\tilde{X})={}^{\natural}(\tilde{Q}\,\tilde{X}^{\natural})=\tilde{X}\,\tilde{Q}^{\natural}=R_{\tilde{Q}^{\natural}}\tilde{X}$, using the anti-automorphism; the second is the same computation.
+**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $e_k^{\natural}=-e_k$ and $(-e_k)(-e_l)=e_ke_l=-(e_le_k)$ for $k\neq l$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}}{}^{\natural}\right)(\tilde{P})={}^{\natural}(\tilde{Q}\,\tilde{P}^{\natural})=\tilde{P}\,\tilde{Q}^{\natural}=R_{\tilde{Q}^{\natural}}\tilde{P}$, using the anti-automorphism; the second is the same computation.
 
 **Remark (the matrix picture).** Under $\Phi$ the natural conjugation is the adjugate: $\Phi(\tilde{Q}^{\natural})=\mathrm{adj}\,\Phi(\tilde{Q})=\varepsilon\,\Phi(\tilde{Q})^{\mathsf T}\varepsilon^{-1}$ with $\varepsilon=i\sigma_2$, and the anti-automorphism property is the classical identity $\mathrm{adj}(MN)=\mathrm{adj}(N)\mathrm{adj}(M)$. The fundamental symmetry is therefore the linear operator $X\mapsto\mathrm{adj}X=\varepsilon X^{\mathsf T}\varepsilon^{-1}$ on $M_2(\mathbb{C})$.
 

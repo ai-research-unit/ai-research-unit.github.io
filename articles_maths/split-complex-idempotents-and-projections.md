@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_\pm = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $Z^2 = Z$ — and the projections and direct-sum decompositions they carry. It is the two-dimensional counterpart of *Biquaternion Idempotents and Projections*, and the contrast is sharp: the biquaternion algebra has a two-parameter family of idempotents in bijection with the roots of $-1$, while $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
+The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_\pm = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. It is the two-dimensional counterpart of *Biquaternion Idempotents and Projections*, and the contrast is sharp: the biquaternion algebra has a two-parameter family of idempotents in bijection with the roots of $-1$, while $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do three jobs at once:
 
@@ -13,7 +13,7 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do 
 
 **Placement.** The article is second in the Algebra group, after *Split-Complex Algebra* and before *Split-Complex Ideals and Peirce Decomposition*, *Split-Complex Zero Divisors* and *Worked Examples in the Split-Complex Algebra*, all of which use the idempotents. Its proofs use only the algebra article; the norm and the invertibility criterion belong to *Split-Complex Norm and Invertibility* in the Topology group.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $Z = a+j b$ with $a, b \in \mathbb{R}$, the conjugate is $\bar Z = a-j b$, and the idempotents are $\Pi_\pm = \tfrac12(1\pm j)$, with $Z = Z_+\Pi_1 + Z_-\Pi_2$ and $Z_\pm = a\pm b$. The base field is $\mathbb{R}$, so $2$ is invertible.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$. A general element is $A = a+ja'$ with $a, a' \in \mathbb{R}$, the conjugate is $\bar A = a-ja'$, and the idempotents are $\Pi_\pm = \tfrac12(1\pm j)$, with $A = A_+\Pi_1 + A_-\Pi_2$ and $A_\pm = a\pm a'$. The base field is $\mathbb{R}$, so $2$ is invertible.
 
 ## Idempotents in an Algebra
 
@@ -79,31 +79,31 @@ $$
 0, \qquad 1, \qquad \Pi_1 = \frac{1+j}{2}, \qquad \Pi_2 = \frac{1-j}{2}.
 $$
 
-**Proof.** Write $Z = a+j b$ with $a, b \in \mathbb{R}$ and impose $Z^2 = Z$. Since
+**Proof.** Write $A = a+ja'$ with $a, a' \in \mathbb{R}$ and impose $A^2 = A$. Since
 
 $$
-Z^2 = (a+j b)^2 = a^2 + 2abj + b^2 j^2 = (a^2+b^2) + 2a j b,
+A^2 = (a+j a')^2 = a^2 + 2a a'j + a'^2 j^2 = (a^2+a'^2) + 2a a' j,
 $$
 
-the equation $Z^2 = Z = a + j b$ is equivalent to the two real equations
+the equation $A^2 = A = a + j a'$ is equivalent to the two real equations
 
 $$
-a^2 + b^2 = a, \qquad 2a b = b.
+a^2 + a'^2 = a, \qquad 2a a' = a'.
 $$
 
-The second factors as $b(2a-1) = 0$:
+The second factors as $a'(2a-1) = 0$:
 
-- If $b = 0$, the first becomes $a^2 = a$, so $a = 0$ or $a = 1$: the idempotents $0$ and $1$.
-- If $b \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + b^2 = \tfrac12$, so $b^2 = \tfrac14$ and $b = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$.
+- If $a' = 0$, the first becomes $a^2 = a$, so $a = 0$ or $a = 1$: the idempotents $0$ and $1$.
+- If $a' \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + a'^2 = \tfrac12$, so $a'^2 = \tfrac14$ and $a' = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$.
 
-There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $b^2 = +1/4$, whose solution set is the two points $b = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
+There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $a'^2 = +1/4$, whose solution set is the two points $a' = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.
 
 ## The Idempotents as Indicator Functions
 
 The classification has a transparent form under the algebra isomorphism
 
 $$
-\varphi : \mathbb{D} \to \mathbb{R}\oplus\mathbb{R}, \qquad \varphi(a+j b) = (a+b, a-b).
+\varphi : \mathbb{D} \to \mathbb{R}\oplus\mathbb{R}, \qquad \varphi(a+j a') = (a+a', a-a').
 $$
 
 The four idempotents map to the four vectors
@@ -141,7 +141,7 @@ and equally $\mathbb{D} = e\mathbb{D}\oplus(1-e)\mathbb{D}$ on the other side; s
 For the standard pair $\{\Pi_1, \Pi_2\}$ the projections are the coordinate projections of $\mathbb{R}\oplus\mathbb{R}$:
 
 $$
-P_+ : Z \longmapsto Z_+ = a+b, \qquad P_- : Z \longmapsto Z_- = a-b,
+P_+ : A \longmapsto A_+ = a+a', \qquad P_- : A \longmapsto A_- = a-a',
 $$
 
 with
@@ -162,11 +162,11 @@ $$
 
 and symmetrically for $\Pi_2$. Conversely, every zero divisor of $\mathbb{D}$ is a real multiple of an idempotent:
 
-**Theorem.** A nonzero element $Z$ is a zero divisor if and only if $Z = \lambda \Pi_1$ or $Z = \lambda \Pi_2$ for some $\lambda \in \mathbb{R}^\times$.
+**Theorem.** A nonzero element $A$ is a zero divisor if and only if $A = \lambda \Pi_1$ or $A = \lambda \Pi_2$ for some $\lambda \in \mathbb{R}^\times$.
 
-**Proof.** If $Z = \lambda \Pi_1$ then $Z \Pi_2 = 0$ with $\Pi_2 \neq 0$, so $Z$ is a zero divisor, and similarly for $\Pi_2$. Conversely, if $ZW = 0$ with $Z, W \neq 0$, write both in the idempotent basis; then $ZW = Z_+W_+\Pi_1 + Z_-W_-\Pi_2 = 0$ gives $Z_+W_+ = 0$ and $Z_-W_- = 0$. Since $W \neq 0$ at least one of $W_+, W_-$ is nonzero, and the corresponding coordinate of $Z$ vanishes; hence $Z \in \mathbb{R}\Pi_1$ or $Z \in \mathbb{R}\Pi_2$.
+**Proof.** If $A = \lambda \Pi_1$ then $A \Pi_2 = 0$ with $\Pi_2 \neq 0$, so $A$ is a zero divisor, and similarly for $\Pi_2$. Conversely, if $AB = 0$ with $A, B \neq 0$, write both in the idempotent basis; then $AB = A_+B_+\Pi_1 + A_-B_-\Pi_2 = 0$ gives $A_+B_+ = 0$ and $A_-B_- = 0$. Since $B \neq 0$ at least one of $B_+, B_-$ is nonzero, and the corresponding coordinate of $A$ vanishes; hence $A \in \mathbb{R}\Pi_1$ or $A \in \mathbb{R}\Pi_2$.
 
-In the idempotent coordinates this is the statement that the zero divisors are the elements lying on the coordinate axes of the decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$: an element $Z = Z_+\Pi_1 + Z_-\Pi_2$ is a zero divisor exactly when one of the two coordinates vanishes, and it is then supported on the corresponding idempotent. The classification of the null cone and the form of the zero-divisor set are the subject of *Split-Complex Zero Divisors*; the present statement is the piece of it that belongs to the idempotents.
+In the idempotent coordinates this is the statement that the zero divisors are the elements lying on the coordinate axes of the decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$: an element $A = A_+\Pi_1 + A_-\Pi_2$ is a zero divisor exactly when one of the two coordinates vanishes, and it is then supported on the corresponding idempotent. The classification of the null cone and the form of the zero-divisor set are the subject of *Split-Complex Zero Divisors*; the present statement is the piece of it that belongs to the idempotents.
 
 ## Idempotents and the Minimal Ideals
 
@@ -184,7 +184,7 @@ $$
 
 as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$.
 
-**Proof.** Every $Z$ satisfies $Z = Z(\Pi_1 + \Pi_2) = Z\Pi_1 + Z\Pi_2$, so the two ideals span; their intersection is zero because $\Pi_1\Pi_2 = 0$: if $Z\Pi_1 = W\Pi_2$ then multiplying by $\Pi_1$ gives $Z\Pi_1 = 0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_1$ contains some $\lambda \Pi_1$ with $\lambda \neq 0$, hence contains $\Pi_1$ and equals $\mathbb{R}\Pi_1$; so each is minimal.
+**Proof.** Every $A$ satisfies $A = A(\Pi_1 + \Pi_2) = A\Pi_1 + A\Pi_2$, so the two ideals span; their intersection is zero because $\Pi_1\Pi_2 = 0$: if $A\Pi_1 = B\Pi_2$ then multiplying by $\Pi_1$ gives $A\Pi_1 = 0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_1$ contains some $\lambda \Pi_1$ with $\lambda \neq 0$, hence contains $\Pi_1$ and equals $\mathbb{R}\Pi_1$; so each is minimal.
 
 The two ideals are also the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two projection idempotents. The lattice of the ideals of $\mathbb{D}$, the Peirce decomposition of the algebra with respect to an idempotent, and the failure of simplicity that these two minimal ideals express are developed in *Split-Complex Ideals and Peirce Decomposition*.
 
@@ -214,24 +214,24 @@ The table is the summary of the systematic degeneration: the two-dimensional alg
 
 ## Summary
 
-An idempotent of $\mathbb{D}$ is an element $Z$ with $Z^2 = Z$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_\pm = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.
+An idempotent of $\mathbb{D}$ is an element $A$ with $A^2 = A$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_\pm = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.
 
-The idempotents are projections: $Z = Z_+\Pi_1 + Z_-\Pi_2$, with $Z_\pm = Z\Pi_\pm$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the two-dimensional analogue of the idempotent theory of $\mathbb{B}$, with the vector part missing and the non-commutativity gone.
+The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_\pm$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the two-dimensional analogue of the idempotent theory of $\mathbb{B}$, with the vector part missing and the non-commutativity gone.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
-| $Z = a + j b$ | General split complex number |
-| $Z^2 = Z$ | Idempotence condition |
+| $A = a + j a'$ | General split complex number |
+| $A^2 = A$ | Idempotence condition |
 | $\Pi_1 = \tfrac12(1+j)$ | Standard positive idempotent |
 | $\Pi_2 = \tfrac12(1-j)$ | Standard negative idempotent |
 | $\Pi_\pm$ | Orthogonal, complete, central, primitive pair |
-| $Z = Z_+\Pi_1 + Z_-\Pi_2$ | Idempotent decomposition, $Z_\pm = a\pm b$ |
-| $P_+, P_-$ | Projections $Z \mapsto Z_+$, $Z \mapsto Z_-$; $P_+ + P_- = \mathrm{id}$ |
+| $A = A_+\Pi_1 + A_-\Pi_2$ | Idempotent decomposition, $A_\pm = a\pm a'$ |
+| $P_+, P_-$ | Projections $A \mapsto A_+$, $A \mapsto A_-$; $P_+ + P_- = \mathrm{id}$ |
 | $\mathbb{D}\Pi_1, \mathbb{D}\Pi_2$ | The two minimal ideals, $\cong \mathbb{R}$ |
-| $\varphi(a+j b) = (a+b, a-b)$ | Isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ |
+| $\varphi(a+j a') = (a+a', a-a')$ | Isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two null lines of zero divisors |
 
 ## Further Reading

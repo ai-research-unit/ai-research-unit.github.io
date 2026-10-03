@@ -4,7 +4,7 @@
 
 The Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ of *The Biquaternion Krein Form and Its Signature* is a Hermitian form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the six distinguished subspaces of *Biquaternion Relations Between Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the Krein Form*, and it fixes the conventions for all three.
 
-**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\Phi$ the $2\times2$ matrix representation of *Biquaternion 2×2 Matrix Element Representation*, so that $\mathrm{Sc}(\tilde X\tilde Y)=\tfrac12\operatorname{Tr}(\Phi(\tilde X)\Phi(\tilde Y))$ and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$.
+**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\Phi$ the $2\times2$ matrix representation of *Biquaternion 2×2 Matrix Element Representation*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$.
 
 ## The Gram Matrix in the Coefficient Basis
 
@@ -39,7 +39,7 @@ $$
 
 where $\dagger$ is the conjugate transpose in the matrix algebra.
 
-**Proof.** $[\tilde{Q},\tilde{Q}']=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde X\tilde Y)=\tfrac12\operatorname{Tr}(\Phi(\tilde X)\Phi(\tilde Y))$ of *The Forms in the Matrix Representation of the Biquaternion Algebra* then gives the result, and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$ with $\Phi$ a $*$-homomorphism gives the second form.
+**Proof.** $[\tilde{Q},\tilde{Q}']=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ of *The Forms in the Matrix Representation of the Biquaternion Algebra* then gives the result, and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$ with $\Phi$ a $*$-homomorphism gives the second form.
 
 **Corollary (the three trace expressions).** The bilinear form, the Hermitian form and the Krein form are the three pairings
 
@@ -84,7 +84,7 @@ The six subspaces are defined in *Biquaternion Relations Between Subspaces*: the
 
 ## Orthogonality of the Distinctions
 
-**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{Z}$, when $[\tilde{Q},\tilde{Z}]=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde{Z}\in\mathbb{Z}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde{Z}:[\tilde{Q},\tilde{Z}]=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
+**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{Z}$, when $[\tilde{Q},\tilde{T}]=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde{T}\in\mathbb{Z}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde{T}:[\tilde{Q},\tilde{T}]=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
 
 **Theorem (the orthogonal splitting).** The Krein form splits the algebra as an orthogonal sum
 
@@ -97,7 +97,7 @@ $$
 
 and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}^{\perp_{K}}=\{0\}$, and are pairwise **not** Krein-orthogonal.
 
-**Proof.** $[e_0,e_k]=0$ and $[ie_0,e_k]=0$ give the splitting and the two complements. In coefficients $[e_{\mu},\tilde{Z}]=\varepsilon_{\mu}Z_{\mu}$ and $[ie_{\mu},\tilde{Z}]=-i\varepsilon_{\mu}Z_{\mu}$, so an element orthogonal to a basis of a subspace is orthogonal to all of $\mathbb{B}$: the four subspaces of signature $(1,3)$ are therefore non-degenerate. For the failure of mutual orthogonality, $[e_0,ie_0]=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $[ie_0,e_0]=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
+**Proof.** $[e_0,e_k]=0$ and $[ie_0,e_k]=0$ give the splitting and the two complements. In coefficients $[e_{\mu},\tilde{T}]=\varepsilon_{\mu}T_{\mu}$ and $[ie_{\mu},\tilde{T}]=-i\varepsilon_{\mu}T_{\mu}$, so an element orthogonal to a basis of a subspace is orthogonal to all of $\mathbb{B}$: the four subspaces of signature $(1,3)$ are therefore non-degenerate. For the failure of mutual orthogonality, $[e_0,ie_0]=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $[ie_0,e_0]=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
 
 ## The Discriminant
 

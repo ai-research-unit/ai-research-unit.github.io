@@ -61,7 +61,7 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\xi = x_0+\mathbf{x}$. Then $\xi^2 = x_0^2-N(\mathbf{x})+2x_0\mathbf{x}$, so $\xi^2 = -1$ gives $2x_0\mathbf{x} = 0$ and $x_0^2-N(\mathbf{x}) = -1$. If $x_0\neq0$ then $\mathbf{x} = 0$ and $x_0^2 = -1$, impossible, so $x_0 = 0$ and $N(\mathbf{x}) = 1$.
+*Proof.* Write $\xi = p_0+\mathbf{p}$. Then $\xi^2 = p_0^2-N(\mathbf{p})+2p_0\mathbf{p}$, so $\xi^2 = -1$ gives $2p_0\mathbf{p} = 0$ and $p_0^2-N(\mathbf{p}) = -1$. If $p_0\neq0$ then $\mathbf{p} = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\mathbf{p}) = 1$.
 
 **Worked roots.** The element
 
@@ -81,7 +81,7 @@ because the off-diagonal products cancel in pairs and each square is $-1$. The e
 
 ## The Conjugation Action
 
-**Definition.** For a unit quaternion $u$ the **conjugation action**, or adjoint action, is $\operatorname{Ad}_u(x) = uxu^{-1} = uxu^{\natural}$.
+**Definition.** For a unit quaternion $u$ the **conjugation action**, or adjoint action, is $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1} = u\tilde q u^{\natural}$.
 
 **Worked computation.** Take the unit quaternion
 
@@ -107,7 +107,7 @@ $$
 R_u = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix},
 $$
 
-and it agrees with the general formula $R_q = \bigl(1-2(q_2^2+q_3^2),\,2(q_1q_2-q_0q_3),\,2(q_1q_3+q_0q_2);\ \dots\bigr)$ at $q_0 = q_1 = 1/\sqrt2$, $q_2 = q_3 = 0$. The reading of $R_u$ as the quarter turn about $e_1$, and of the assignment $u\mapsto R_u$ as the two-to-one covering $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, is in *Quaternion Rotations and Reflections*.
+and it agrees with the general formula $R_{\tilde q} = \bigl(1-2(q_2^2+q_3^2),\,2(q_1q_2-q_0q_3),\,2(q_1q_3+q_0q_2);\ \dots\bigr)$ at $q_0 = q_1 = 1/\sqrt2$, $q_2 = q_3 = 0$. The reading of $R_u$ as the quarter turn about $e_1$, and of the assignment $u\mapsto R_u$ as the two-to-one covering $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, is in *Quaternion Rotations and Reflections*.
 
 ## The Matrix Images
 
@@ -128,7 +128,7 @@ Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement 
 **The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Regular Matrix Element Representation*, whose Cayley matrix has the four products $\tilde q e_k$ for columns, the worked element has image
 
 $$
-L_q = \begin{pmatrix}
+L_{\tilde q} = \begin{pmatrix}
 1 & -2 & 1 & -3 \\
 2 & 1 & -3 & -1 \\
 -1 & 3 & 1 & -2 \\
@@ -136,13 +136,13 @@ L_q = \begin{pmatrix}
 \end{pmatrix}.
 $$
 
-Its trace is $4q_0 = 4$, its determinant is $N(\tilde q)^2 = 225$, and $L_q^{T}L_q = 15\,I = N(\tilde q)I$.
+Its trace is $4q_0 = 4$, its determinant is $N(\tilde q)^2 = 225$, and $L_{\tilde q}^{T}L_{\tilde q} = 15\,I = N(\tilde q)I$.
 
 ## Summary
 
 The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(e_1+e_2+e_3)/\sqrt3$ is a worked root of the first equation.
 
-The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $N(\tilde q) = 15$, the $2\times2$ complex image $\Phi(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $L_q$ has trace $4$, determinant $225$ and $L_q^{T}L_q = 15\,I$.
+The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $N(\tilde q) = 15$, the $2\times2$ complex image $\Phi(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $L_{\tilde q}$ has trace $4$, determinant $225$ and $L_{\tilde q}^{T}L_{\tilde q} = 15\,I$.
 
 ## Summary of Notation
 
@@ -155,10 +155,10 @@ The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and 
 | $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Fixed space of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Fixed space of $\tilde{\cdot}$ |
 | $N$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $N(\tilde q) = 15$ for the worked element |
-| $\operatorname{Ad}_u(x) = uxu^{\natural}$ | Conjugation action |
+| $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{\natural}$ | Conjugation action |
 | $R_u$ | Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$ |
 | $\Phi$ | The isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ |
-| $L_q$ | Cayley matrix of left multiplication by $\tilde q$ |
+| $L_{\tilde q}$ | Cayley matrix of left multiplication by $\tilde q$ |
 
 ## Further Reading
 

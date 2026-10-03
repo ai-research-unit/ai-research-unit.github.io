@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article solves the square-root problem in the biquaternion algebra $\mathbb{B}$: given $Q \in \mathbb{B}$, find every $\xi \in \mathbb{B}$ with
+This article solves the square-root problem in the biquaternion algebra $\mathbb{B}$: given $\tilde Q \in \mathbb{B}$, find every $\xi \in \mathbb{B}$ with
 $$
-\xi^2 = Q .
+\xi^2 = \tilde Q .
 $$
-The problem is not the same as the three central cases $\xi^2 = -1,0,+1$ treated in *Biquaternion Square Roots of Minus One, Zero and Plus One*. For those three values the set of roots is a union of small families found directly from the vector–scalar decomposition; for a general $Q$ the answer is a finite set — generically four elements, falling to two — or a four-parameter continuum, or empty, and finding it needs the Clifford structure of the algebra rather than a case check. This article owns that classification and states the algorithm that produces it, in the form the algebra is usually written in.
+The problem is not the same as the three central cases $\xi^2 = -1,0,+1$ treated in *Biquaternion Square Roots of Minus One, Zero and Plus One*. For those three values the set of roots is a union of small families found directly from the vector–scalar decomposition; for a general $\tilde Q$ the answer is a finite set — generically four elements, falling to two — or a four-parameter continuum, or empty, and finding it needs the Clifford structure of the algebra rather than a case check. This article owns that classification and states the algorithm that produces it, in the form the algebra is usually written in.
 
-The method is the one of Acus and Dargys: the biquaternion algebra is identified with the Clifford algebra $Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, in which the square-root problem reduces to a complex quadratic. The identification and its dictionary are *The Clifford Structure of the Biquaternion Algebra*; the square-root algorithm in $Cl_{3,0}$ is *Clifford Algebras in Finite Dimensions*, where it is proved. The three special data $Q=-1,0,+1$ and the relation to the idempotents are *Biquaternion Square Roots of Minus One, Zero and Plus One*; the zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, and is named here only where the classification touches it and not developed. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
+The method is the one of Acus and Dargys: the biquaternion algebra is identified with the Clifford algebra $Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, in which the square-root problem reduces to a complex quadratic. The identification and its dictionary are *The Clifford Structure of the Biquaternion Algebra*; the square-root algorithm in $Cl_{3,0}$ is *Clifford Algebras in Finite Dimensions*, where it is proved. The three special data $\tilde Q=-1,0,+1$ and the relation to the idempotents are *Biquaternion Square Roots of Minus One, Zero and Plus One*; the zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Biquaternion Zero Divisors*, and is named here only where the classification touches it and not developed. The polar and exponential decompositions that the answer must be consistent with are *Biquaternion Polar Element Representation*.
 
 The treatment is mathematically honest: every claim is either proved or cited to the article that proves it, and the algorithm is verified against the worked examples. No physics is invoked.
 
@@ -40,7 +40,7 @@ $$
 B = \Phi(\tilde Q) = q_0 + \sum_{k=1}^{3} q'_k \gamma_k\;-\; q_3\gamma_1\gamma_2\;-\;q_2\gamma_3\gamma_1\;-\;q_1\gamma_2\gamma_3\;+\;q'_0\omega .
 $$
 
-**Corollary (transport of the problem).** $\xi^2=Q$ in $\mathbb{B}$ holds if and only if $\Phi(\xi)^2 = \Phi(Q)$ in $Cl_{3,0}$. The square-root problem in $\mathbb{B}$ is therefore the square-root problem in $Cl_{3,0}$, transported by $\Phi$; the root set of $Q$ is the $\Phi$-image of the root set of $\Phi(Q)$.
+**Corollary (transport of the problem).** $\xi^2=\tilde Q$ in $\mathbb{B}$ holds if and only if $\Phi(\xi)^2 = \Phi(\tilde Q)$ in $Cl_{3,0}$. The square-root problem in $\mathbb{B}$ is therefore the square-root problem in $Cl_{3,0}$, transported by $\Phi$; the root set of $\tilde Q$ is the $\Phi$-image of the root set of $\Phi(\tilde Q)$.
 
 ## The Algorithm
 
@@ -67,10 +67,10 @@ $$
 **Theorem (isolated roots in $Cl_{3,0}$).** Write $\beta = b_0 - ib_{123}$ and $\gamma = R - 2iP$. The isolated square roots of $B$ are obtained as follows. For each of the two complex numbers
 
 $$
-z = \frac{\beta \pm \sqrt{b_S+ib_I}}{2}
+A = \frac{\beta \pm \sqrt{b_S+ib_I}}{2}
 $$
 
-with $z\neq0$, put $\delta=\mathrm{Re}\,z$, $\tau=-\mathrm{Im}\,z$, $\sigma=|z|$, and let
+with $A\neq0$, put $\delta=\mathrm{Re}\,A$, $\tau=-\mathrm{Im}\,A$, $\sigma=|A|$, and let
 
 $$
 s = \pm\sqrt{\frac{\sigma+\delta}{2}},\qquad S=\text{the choice of }\pm\sqrt{\frac{\sigma-\delta}{2}}\text{ with }2sS=\tau,
@@ -85,11 +85,11 @@ $$
 \Xi = s + \sum_k v_k\gamma_k + \Bigl(S+\sum_k V_k\gamma_k\Bigr)\omega
 $$
 
-satisfies $\Xi^2 = B$, and the two signs of $s$ give the two elements $\pm\Xi$. Each nonzero value of $z$ contributes a pair, so the isolated roots are two or four in number according as one or both values of $z$ are nonzero.
+satisfies $\Xi^2 = B$, and the two signs of $s$ give the two elements $\pm\Xi$. Each nonzero value of $A$ contributes a pair, so the isolated roots are two or four in number according as one or both values of $A$ are nonzero.
 
-**Proof.** The reduction $\Xi=a+b\omega=s+v+(S+V)\omega$, the graded equations, and the derivation of the complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta^2-\gamma=b_S+ib_I$ are proved in *Clifford Algebras in Finite Dimensions* §§28–30, where $\omega=e_1e_2e_3$ is central of square $-1$ and the symbols $P$ and $R$ of this article are the $P$ and $Q$ of that one. The present article only transports the statement. $\square$
+**Proof.** The reduction $\Xi=a+b\omega=s+v+(S+V)\omega$, the graded equations, and the derivation of the complex quadratic $4A^2-4\beta A+\gamma=0$ with $\beta^2-\gamma=b_S+ib_I$ are proved in *Clifford Algebras in Finite Dimensions* §§28–30, where $\omega=e_1e_2e_3$ is central of square $-1$ and the symbols $P$ and $R$ of this article are the $P$ and $Q$ of that one. The present article only transports the statement. $\square$
 
-**Corollary (the biquaternion algorithm).** To compute the square roots of $Q\in\mathbb{B}$, transport $Q$ to $B=\Phi(Q)$ by the dictionary of §*The Identification with the Clifford Algebra*, apply the theorem to $B$, and transport each root $\Xi$ back to $\xi=\Phi^{-1}(\Xi)$. Reading the inverse dictionary off the table,
+**Corollary (the biquaternion algorithm).** To compute the square roots of $\tilde Q\in\mathbb{B}$, transport $\tilde Q$ to $B=\Phi(\tilde Q)$ by the dictionary of §*The Identification with the Clifford Algebra*, apply the theorem to $B$, and transport each root $\Xi$ back to $\xi=\Phi^{-1}(\Xi)$. Reading the inverse dictionary off the table,
 
 $$
 q_0 = b_0,\quad q'_0=b_{123},\qquad q'_k=b_k,\quad q_1=-b_{23},\quad q_2=-b_{13},\quad q_3=-b_{12},
@@ -101,24 +101,24 @@ so that $\xi = (b_0 + b_{123}i) + (-b_{23}+b_1i)e_1 + (-b_{13}+b_2i)e_2 + (-b_{1
 
 The algorithm of §*The Algorithm* assumes the scalar $\sigma=s^2+S^2$ of the root nonzero. Its complement is a four-parameter family.
 
-**Theorem (the continuum).** If and only if the multivector $B$ has vanishing vector and bivector parts — that is, $b_1=b_2=b_3=b_{12}=b_{13}=b_{23}=0$, so that $B=b_0+b_{123}\omega$ and, in biquaternion terms, $Q$ is a **complex scalar** $Q=q_0+q'_0i$ — the roots of $B$ include the four-parameter family of elements $\Xi=\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ whose real coefficients $v_k,V_k$ satisfy
+**Theorem (the continuum).** If and only if the multivector $B$ has vanishing vector and bivector parts — that is, $b_1=b_2=b_3=b_{12}=b_{13}=b_{23}=0$, so that $B=b_0+b_{123}\omega$ and, in biquaternion terms, $\tilde Q$ is a **complex scalar** $\tilde Q=q_0+q'_0i$ — the roots of $B$ include the four-parameter family of elements $\Xi=\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ whose real coefficients $v_k,V_k$ satisfy
 
 $$
 \sum_{k=1}^3 v_k^2-\sum_{k=1}^3 V_k^2 = b_0, \qquad 2\sum_{k=1}^3 v_kV_k = b_{123},
 $$
 
-alongside the isolated roots supplied by the two values of $z$. The case $B=0$ is the extreme instance: the roots of $0$ are the nonzero elements $\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ with $\sum_k v_k^2=\sum_k V_k^2$ and $\sum_k v_kV_k=0$, the nilpotent set.
+alongside the isolated roots supplied by the two values of $A$. The case $B=0$ is the extreme instance: the roots of $0$ are the nonzero elements $\sum_k v_k\gamma_k+\bigl(\sum_k V_k\gamma_k\bigr)\omega$ with $\sum_k v_k^2=\sum_k V_k^2$ and $\sum_k v_kV_k=0$, the nilpotent set.
 
 The statement and proof are in *Clifford Algebras in Finite Dimensions* §31; the transport to $\mathbb{B}$ uses the same dictionary. The family is the complex-scalar locus of the algebra, and in biquaternion terms a complex scalar is exactly an element of the centre $\mathbb{C}_{\mathbb{B}}$.
 
-Collecting the two theorems, and reading the number of solutions off the quadratic, every $Q$ falls into exactly one of:
+Collecting the two theorems, and reading the number of solutions off the quadratic, every $\tilde Q$ falls into exactly one of:
 
-| case | condition on the data of $B=\Phi(Q)$ | roots of $Q$ |
+| case | condition on the data of $B=\Phi(\tilde Q)$ | roots of $\tilde Q$ |
 |---|---|---|
 | none | $b_S=b_I=0$ and $b_0=b_{123}=0$, $B$ not a complex scalar | $\varnothing$ |
-| two | $b_S+ib_I=0$ and $\beta\neq0$, or one value of $z$ vanishes | a single pair $\pm\xi$ |
-| four | $b_S+ib_I\neq0$ and both values of $z$ nonzero | two pairs |
-| continuum | $b_1=\dots=b_{23}=0$ ($Q$ a complex scalar) | the four-parameter family, plus any isolated pairs |
+| two | $b_S+ib_I=0$ and $\beta\neq0$, or one value of $A$ vanishes | a single pair $\pm\xi$ |
+| four | $b_S+ib_I\neq0$ and both values of $A$ nonzero | two pairs |
+| continuum | $b_1=\dots=b_{23}=0$ ($\tilde Q$ a complex scalar) | the four-parameter family, plus any isolated pairs |
 
 The generic case is four roots. The existence scalar is $\beta^2-\gamma=b_S+ib_I$: its vanishing separates the four-root case from the two-root case, and the further vanishing of $\beta$ is the frontier with the rootless case.
 
@@ -126,17 +126,17 @@ The generic case is four roots. The existence scalar is $\beta^2-\gamma=b_S+ib_I
 
 The classification specialises to the three central values of *Biquaternion Square Roots of Minus One, Zero and Plus One*, and reproduces them; the correspondence is a check that the transport and the algorithm agree with the direct computation.
 
-**$Q=-1$ and $Q=+1$ are complex scalars**, so both fall in the continua row. For $Q=-1$ the pair $z$ is $(0,-1)$: the zero value gives no isolated root and opens the family, the value $-1$ gives the pair $\pm i\omega$ in the Clifford picture, that is $\pm i$ in $\mathbb{B}$. For $Q=+1$ the pair is $(1,0)$: the value $1$ gives $\pm1$, the zero value opens the family. The families are $\sum_k v_k^2-\sum_k V_k^2=\mp1$, $2\sum_k v_kV_k=0$.
+**$\tilde Q=-1$ and $\tilde Q=+1$ are complex scalars**, so both fall in the continua row. For $\tilde Q=-1$ the pair $A$ is $(0,-1)$: the zero value gives no isolated root and opens the family, the value $-1$ gives the pair $\pm i\omega$ in the Clifford picture, that is $\pm i$ in $\mathbb{B}$. For $\tilde Q=+1$ the pair is $(1,0)$: the value $1$ gives $\pm1$, the zero value opens the family. The families are $\sum_k v_k^2-\sum_k V_k^2=\mp1$, $2\sum_k v_kV_k=0$.
 
-**$Q=0$** has $b_0=b_{123}=0$ and $b_S=b_I=0$, the rootless row for a nonzero vector–bivector part, but $B=0$ is a complex scalar, so it lies in the continuum row: its roots are the nonzero null elements, the nilpotent cone of *Biquaternion Zero Divisors*.
+**$\tilde Q=0$** has $b_0=b_{123}=0$ and $b_S=b_I=0$, the rootless row for a nonzero vector–bivector part, but $B=0$ is a complex scalar, so it lies in the continuum row: its roots are the nonzero null elements, the nilpotent cone of *Biquaternion Zero Divisors*.
 
 The three sets are therefore the degenerate data of the general classification, and the general article is where the four-root and two-root cases live.
 
 ## Worked Examples
 
-The examples are computed with the algorithm and verified by squaring; the verification is the multiplication check $\xi^2=Q$.
+The examples are computed with the algorithm and verified by squaring; the verification is the multiplication check $\xi^2=\tilde Q$.
 
-**A pure imaginary quaternion.** For $Q=-ie_3$ (that is $-Ik$ in the notation of Acus and Dargys) the transport gives the multivector $-e_3$, with $b_S=-1$, $b_I=0$ and $\beta=0$, so $b_S+ib_I\neq0$. The two values of $z$ are distinct and nonzero and the four roots are
+**A pure imaginary quaternion.** For $\tilde Q=-ie_3$ (that is $-Ik$ in the notation of Acus and Dargys) the transport gives the multivector $-e_3$, with $b_S=-1$, $b_I=0$ and $\beta=0$, so $b_S+ib_I\neq0$. The two values of $A$ are distinct and nonzero and the four roots are
 
 $$
 \xi = \pm\tfrac12\bigl(1 - i + e_3 - ie_3\bigr), \qquad \xi = \pm\tfrac12\bigl(1 + i - e_3 - ie_3\bigr),
@@ -144,7 +144,7 @@ $$
 
 in agreement with the roots of $-Ik$ computed directly. Squaring recovers $-ie_3$ in each case.
 
-**A complex scalar.** For $Q=-1+i$ (that is $-1+I$), a complex scalar with $b_0=-1$, $b_{123}=1$, the two values of $z$ are $0$ and $-1-i$, so one is zero and there are two isolated roots,
+**A complex scalar.** For $\tilde Q=-1+i$ (that is $-1+I$), a complex scalar with $b_0=-1$, $b_{123}=1$, the two values of $A$ are $0$ and $-1-i$, so one is zero and there are two isolated roots,
 
 $$
 \xi = \pm\Bigl(\sqrt{\tfrac{\sqrt2-1}{2}} + i\sqrt{\tfrac{\sqrt2+1}{2}}\Bigr),
@@ -152,9 +152,9 @@ $$
 
 and a continuum. Squaring the displayed root gives $-1+i$.
 
-**A rootless element.** For $Q=e_1-ie_3$ (that is $i-Ik$) the transport gives $b_3=b_{23}=-1$, with $b_S=b_I=0$ and $\beta=0$. The row is the rootless one, and $Q$ has no square root. This is the example of Acus and Dargys.
+**A rootless element.** For $\tilde Q=e_1-ie_3$ (that is $i-Ik$) the transport gives $b_3=b_{23}=-1$, with $b_S=b_I=0$ and $\beta=0$. The row is the rootless one, and $\tilde Q$ has no square root. This is the example of Acus and Dargys.
 
-**Four roots of a non-scalar.** For $Q=-(2+i)e_3$ (that is $-(2+I)k$) the transport gives $b_{12}=2$, $b_3=-1$; the algorithm returns four roots, for instance
+**Four roots of a non-scalar.** For $\tilde Q=-(2+i)e_3$ (that is $-(2+I)k$) the transport gives $b_{12}=2$, $b_3=-1$; the algorithm returns four roots, for instance
 
 $$
 \xi = \pm\bigl(0.2429 + 0.2429\,e_3 - 1.0291\,i - 1.0291\,ie_3\bigr),
@@ -162,32 +162,32 @@ $$
 
 whose square is $-(2+i)e_3$.
 
-**A nilpotent root of $0$.** For $Q=0$ the algorithm gives the continuum, whose nonzero members are the nilpotents; $\xi=e_1+ie_2$ is one of them, with $\xi^2=0$.
+**A nilpotent root of $0$.** For $\tilde Q=0$ the algorithm gives the continuum, whose nonzero members are the nilpotents; $\xi=e_1+ie_2$ is one of them, with $\xi^2=0$.
 
 ## Summary
 
-The square roots of $Q\in\mathbb{B}$ are computed by transporting $Q$ to the Clifford algebra $Cl_{3,0}$ through the identification $\mathbb{B}\cong Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, with dictionary $\Phi$; applying there the closed-form algorithm of *Clifford Algebras in Finite Dimensions*; and transporting the roots back.
+The square roots of $\tilde Q\in\mathbb{B}$ are computed by transporting $\tilde Q$ to the Clifford algebra $Cl_{3,0}$ through the identification $\mathbb{B}\cong Cl_{3,0}$ of *The Clifford Structure of the Biquaternion Algebra*, with dictionary $\Phi$; applying there the closed-form algorithm of *Clifford Algebras in Finite Dimensions*; and transporting the roots back.
 
-The algorithm solves a complex quadratic $4z^2-4\beta z+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=R-2iP$, whose discriminant is $16(b_S+ib_I)$; each nonzero root $z$ yields a pair $\pm\xi$ through $s=\pm\sqrt{(\sigma+\delta)/2}$, $S$ signed by $2sS=\tau$, $\sigma=|z|$, and the vector formulas. The existence scalars are $b_S=b_0^2-b_{123}^2-R$ and $b_I=2(P-b_0b_{123})$.
+The algorithm solves a complex quadratic $4A^2-4\beta A+\gamma=0$ with $\beta=b_0-ib_{123}$, $\gamma=R-2iP$, whose discriminant is $16(b_S+ib_I)$; each nonzero root $A$ yields a pair $\pm\xi$ through $s=\pm\sqrt{(\sigma+\delta)/2}$, $S$ signed by $2sS=\tau$, $\sigma=|A|$, and the vector formulas. The existence scalars are $b_S=b_0^2-b_{123}^2-R$ and $b_I=2(P-b_0b_{123})$.
 
-The classification is: **no root** when $b_S=b_I=0$, $\beta=0$ and $Q$ is not a complex scalar; **two roots** when one value of $z$ vanishes or when $b_S+ib_I=0$ with $\beta\neq0$; **four roots** generically; and the **four-parameter continuum** when and only when $Q$ is a complex scalar, alongside the isolated pairs.
+The classification is: **no root** when $b_S=b_I=0$, $\beta=0$ and $\tilde Q$ is not a complex scalar; **two roots** when one value of $A$ vanishes or when $b_S+ib_I=0$ with $\beta\neq0$; **four roots** generically; and the **four-parameter continuum** when and only when $\tilde Q$ is a complex scalar, alongside the isolated pairs.
 
-The three central data $-1,0,+1$ are the degenerate entries of the classification and are treated in *Biquaternion Square Roots of Minus One, Zero and Plus One*; the nonzero roots of $0$ are the nilpotent cone of *Biquaternion Zero Divisors*, named here and not developed. This article owns the classification of $\xi^2=Q$ for a general $Q$.
+The three central data $-1,0,+1$ are the degenerate entries of the classification and are treated in *Biquaternion Square Roots of Minus One, Zero and Plus One*; the nonzero roots of $0$ are the nilpotent cone of *Biquaternion Zero Divisors*, named here and not developed. This article owns the classification of $\xi^2=\tilde Q$ for a general $\tilde Q$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $Q$ | The element whose square roots are sought |
-| $\xi$ | A square root of $Q$ |
+| $\tilde Q$ | The element whose square roots are sought |
+| $\xi$ | A square root of $\tilde Q$ |
 | $\Phi$ | The identification $\mathbb{B}\to Cl_{3,0}$ |
-| $B=\Phi(Q)$ | The multivector of $Q$, coefficients $b_0,b_k,b_{jk},b_{123}$ |
+| $B=\Phi(\tilde Q)$ | The multivector of $\tilde Q$, coefficients $b_0,b_k,b_{jk},b_{123}$ |
 | $c_k$ | $c_1=b_{23}$, $c_2=-b_{13}$, $c_3=b_{12}$ |
 | $P,R$ | $P=\sum b_kc_k$, $R=\sum(b_k^2-c_k^2)$ |
 | $b_S,b_I$ | $b_S=b_0^2-b_{123}^2-R$, $b_I=2(P-b_0b_{123})$ |
 | $\beta,\gamma$ | $\beta=b_0-ib_{123}$, $\gamma=R-2iP$; $\beta^2-\gamma=b_S+ib_I$ |
-| $z$ | $\frac{\beta\pm\sqrt{b_S+ib_I}}{2}$ |
+| $A$ | $\frac{\beta\pm\sqrt{b_S+ib_I}}{2}$ |
 | $s,S,v,V$ | Paravector data of a root, $\xi=s+v+(S+V)i$ in Clifford form |
 
 ## Further Reading

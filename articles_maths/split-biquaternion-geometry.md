@@ -265,7 +265,7 @@ The geometry of the split biquaternions is best read against the two geometries 
 | Feature | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{H}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|---|---|
 | Real dimension | $2$ | $2$ | $4$ | $8$ |
-| Norm | $z\bar z > 0$ | $c^2 - s^2$ indefinite | $qq^{\natural} > 0$ | $N = R + jI$ split complex |
+| Norm | $A\bar A > 0$ | $c^2 - s^2$ indefinite | $qq^{\natural} > 0$ | $N = R + jI$ split complex |
 | Zero divisors | none | two lines | none | two four-dimensional ideals |
 | Unit sphere | $S^1$ | two hyperbola branches | $S^3$ | $S^3\times S^3$ |
 | Unit sphere compact | yes | no | yes | yes |

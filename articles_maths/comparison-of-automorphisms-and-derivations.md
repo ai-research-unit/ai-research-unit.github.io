@@ -25,7 +25,7 @@ The table records the first and the sharpest change of the ladder. In $\mathbb{R
 
 ## The Inner Group and the Invariant Form
 
-The two invariants are trivial exactly on the commutative columns, and continuous from $\mathbb{D}'$ onward because $\mathbb{D}'$ has an infinitesimal direction to scale. Where the algebra is non-commutative the automorphism group is the group of inner transformations $x\mapsto \tilde u x\tilde u^{-1}$ of the unit group, and it is the transformation group of the invariant form of the algebra.
+The two invariants are trivial exactly on the commutative columns, and continuous from $\mathbb{D}'$ onward because $\mathbb{D}'$ has an infinitesimal direction to scale. Where the algebra is non-commutative the automorphism group is the group of inner transformations $\tilde q\mapsto \tilde u\tilde q\tilde u^{-1}$ of the unit group, and it is the transformation group of the invariant form of the algebra.
 
 In $\mathbb{H}$ the group $Sp(1)/\{\pm1\}$ is the rotation group $SO(3)$ of the positive definite form $N(\tilde q)=\sum_k q_k^2$ on $\operatorname{Im}\mathbb{H}$, the adjoint action of the unit sphere rotating the imaginary subspace and fixing the real line (*Quaternion Automorphisms and Derivations*). In $\mathbb{H}_{\mathrm{s}}$ the inner group is $\mathrm{PGL}_2(\mathbb{R})\cong SO(2,1)$, the Lorentz group of a form of signature $(2,1)$, with identity component the orientation-preserving $SO^{+}(2,1)$ and Lie algebra $\mathrm{SO}(2,1)$ (*Split-Quaternion Automorphisms and Derivations*). In $\mathbb{B}$ the complex automorphism group $\operatorname{PGL}(2,\mathbb{C})$ is that same identity component of the Lorentz group $O(1,3)$ of a real form of signature $(1,3)$, with Lie algebra $\mathrm{SO}(1,3)$, and the outer $\mathbb{Z}/2$ of the real automorphism group is the swap of the two factors of the complexification; in $\mathbb{H}_{\mathbb{D}}$ the inner group is instead the compact product $SO(3)\times SO(3)$ acting on the two quaternion halves, with Lie algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$, and the same outer $\mathbb{Z}/2$ swaps the halves (*Biquaternion Automorphisms and Derivations*; *Split-Biquaternion Automorphisms and Derivations*). The two split columns thus carry a Lorentz group as a mathematical group — the projective Lorentz group in $\mathbb{H}_{\mathrm{s}}$, the identity component of $O(1,3)$ in $\mathbb{B}$ — while the compact rungs $\mathbb{H}$ and $\mathbb{H}_{\mathbb{D}}$ carry orthogonal groups.
 
@@ -39,7 +39,7 @@ The automorphism group and the derivation space are both trivial for $\mathbb{R}
 |---|---|
 | $\operatorname{Aut},\operatorname{Der}$ | automorphism group and derivation space over $\mathbb{R}$ |
 | $\operatorname{Inn},\operatorname{Out}$ | inner and outer automorphism groups |
-| $\operatorname{ad}_a(x)=[a,x]$ | inner derivation of an associative algebra |
+| $\operatorname{ad}_a(b)=[a,b]$ | inner derivation of an associative algebra |
 | $\partial_\varepsilon(a+\varepsilon b)=\varepsilon b$ | the outer derivation of $\mathbb{D}'$ |
 | $Sp(1)/\{\pm1\}$ | the group of inner automorphisms of $\mathbb{H}$, $\cong SO(3)$ |
 | $\mathrm{PGL}_2(\mathbb{R}),\mathrm{PGL}(2,\mathbb{C})$ | the inner automorphism groups of $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ |

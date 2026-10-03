@@ -16,13 +16,13 @@ Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and t
 A **representation** of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{D}' \times V \to V, \qquad \rho(Z, v) = Z \cdot v,
+\rho : \mathbb{D}' \times V \to V, \qquad \rho(A, v) = A \cdot v,
 $$
 
 satisfying
 
 $$
-Z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+A \cdot (B \cdot v) = (AB) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -47,10 +47,10 @@ $$
 E^2 = 0.
 $$
 
-So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + \varepsilon b$ is
+So a representation of $\mathbb{D}'$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $a + \varepsilon a'$ is
 
 $$
-(a + \varepsilon b) \cdot v = a v + b E(v).
+(a + \varepsilon a') \cdot v = a v + a' E(v).
 $$
 
 This is the fundamental structural fact about representations of $\mathbb{D}'$: they are determined by a single square-zero endomorphism.
@@ -60,17 +60,17 @@ This is the fundamental structural fact about representations of $\mathbb{D}'$: 
 The **regular representation** of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(Z) w = Z w, \qquad Z, w \in \mathbb{D}'.
+\rho_{\mathrm{reg}}(A) B = A B, \qquad A, B \in \mathbb{D}'.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(Z) = Z$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + \varepsilon b$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(A) = A$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $a + \varepsilon a'$ to $a \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
 
 ### The Trivial Representation
 
 The **trivial representation** (or **augmentation representation**) is the one-dimensional representation on $R$ defined by
 
 $$
-\rho_{\mathrm{triv}}(a + \varepsilon b) = a.
+\rho_{\mathrm{triv}}(a + \varepsilon a') = a.
 $$
 
 This is the representation that sends $\varepsilon$ to zero. It is the quotient of the regular representation by the maximal ideal.
@@ -80,7 +80,7 @@ This is the representation that sends $\varepsilon$ to zero. It is the quotient 
 The **standard representation** is the one-dimensional representation on $R$ defined by
 
 $$
-\rho_{\mathrm{std}}(a + \varepsilon b) = a.
+\rho_{\mathrm{std}}(a + \varepsilon a') = a.
 $$
 
 This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{D}' \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.
@@ -92,19 +92,19 @@ This coincides with the trivial representation. In the dual case, there is no no
 **Theorem.** Let $V$ be an $R$-module. The representations of $\mathbb{D}'$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence
 
 $$
-E \longleftrightarrow \rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E.
+E \longleftrightarrow \rho_E(a + \varepsilon a') = a \cdot \mathrm{id}_V + a' E.
 $$
 
-**Proof.** Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + \varepsilon b) = a \cdot \mathrm{id}_V + b E$ defines an algebra homomorphism, because
+**Proof.** Given a representation $\rho$, the endomorphism $E = \rho(\varepsilon)$ satisfies $E^2 = \rho(\varepsilon^2) = 0$. Conversely, given a square-zero endomorphism $E$, the formula $\rho_E(a + \varepsilon a') = a \cdot \mathrm{id}_V + a' E$ defines an algebra homomorphism, because
 
 $$
-\rho_E((a + \varepsilon b)(c + \varepsilon d)) = \rho_E(ac + (ad + bc)\varepsilon) = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E((a + \varepsilon a')(b + \varepsilon b')) = \rho_E(ab + (a b' + a' b)\varepsilon) = ab \cdot \mathrm{id}_V + (a b' + a' b) E,
 $$
 
 and
 
 $$
-\rho_E(a + \varepsilon b) \rho_E(c + \varepsilon d) = (a \cdot \mathrm{id}_V + b E)(c \cdot \mathrm{id}_V + d E) = ac \cdot \mathrm{id}_V + (ad + bc) E + bd E^2 = ac \cdot \mathrm{id}_V + (ad + bc) E,
+\rho_E(a + \varepsilon a') \rho_E(b + \varepsilon b') = (a \cdot \mathrm{id}_V + a' E)(b \cdot \mathrm{id}_V + b' E) = ab \cdot \mathrm{id}_V + (a b' + a' b) E + a' b' E^2 = ab \cdot \mathrm{id}_V + (a b' + a' b) E,
 $$
 
 since $E^2 = 0$. The two agree.
@@ -224,7 +224,7 @@ $$
 E^* : V^* \to V^*, \qquad (E^* f)(v) = -f(E v).
 $$
 
-The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(Z \cdot f)(v) = f(\bar{Z} v)$. Indeed,
+The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(A \cdot f)(v) = f(\bar A v)$. Indeed,
 
 $$
 (E^*)^2 f = E^*(E^* f) = - (E^* f) \circ E = f \circ E \circ E = f \circ E^2 = 0.
@@ -338,6 +338,7 @@ The article also records the representation ring $R(\mathbb{D}')$, the dual or c
 |---|---|
 | $\mathbb{D}'$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
+| $A = a + \varepsilon a'$ | General dual number |
 | $V$ | Representation space |
 | $E = \rho(\varepsilon)$ | Square-zero endomorphism |
 | $\rho_{\mathrm{reg}}$ | Regular representation |

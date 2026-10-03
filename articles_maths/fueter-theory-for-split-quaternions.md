@@ -81,15 +81,15 @@ This is the first departure from the quaternion theory, where the imaginary unit
 
 ### Holomorphic Functions on a Slice Are Regular
 
-**Theorem.** Fix an imaginary unit $I$, with slice coordinate $z = q_0 + I\rho$ on $\mathbb{C}_I$, and let $F$ depend only on $q_0$ and $\rho$ (not on the two directions of $V$ orthogonal to $I$). Then
+**Theorem.** Fix an imaginary unit $I$, with slice coordinate $A = q_0 + I\rho$ on $\mathbb{C}_I$, and let $F$ depend only on $q_0$ and $\rho$ (not on the two directions of $V$ orthogonal to $I$). Then
 
 $$
-\nabla F = (\partial_{q_0} + I\partial_\rho)F = 2\partial_{\bar z}F,
+\nabla F = (\partial_{q_0} + I\partial_\rho)F = 2\partial_{\bar A}F,
 $$
 
-so $F$ is regular if and only if $F$ is holomorphic in $z$ in the classical sense. Hence every classical holomorphic function of $z = q_0+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.
+so $F$ is regular if and only if $F$ is holomorphic in $A$ in the classical sense. Hence every classical holomorphic function of $A = q_0+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.
 
-**Proof.** Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar z = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar z} = \tfrac12(\partial_{q_0} + I\partial_\rho)$.
+**Proof.** Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar A = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar A} = \tfrac12(\partial_{q_0} + I\partial_\rho)$.
 
 This slice statement is exact and requires no modification for the split signature, because on a slice the form is definite (the slice is a copy of $\mathbb{C}$). It is the part of the theory that survives intact.
 
@@ -131,7 +131,7 @@ and the second sum is not a scalar multiple of $\hat{\mathbf v}$ but has the non
 
 **Theorem (right-coefficient series).** A series $F(\tilde q) = \sum_{n\geq0} \tilde q^n a_n$ with coefficients $a_n \in \mathbb{H}_{\mathrm{s}}$ on the right converges absolutely and normally on $\|\tilde q\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, and its sum is **slice-regular** (Cullen-regular): holomorphic on each slice.
 
-**Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = z$ and the sum is a power series in the slice variable.
+**Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = A$ and the sum is a power series in the slice variable.
 
 **Proposition.** The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_0^2+e_1^2+e_2^2+e_3^2 = 1-1+1+1 = 2e_0 \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.
 

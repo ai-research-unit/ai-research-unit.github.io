@@ -411,7 +411,7 @@ The information-theoretic reading is that $J^+(p)$ is the set of events that $p$
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{Q}^{\natural}, \bar{\tilde{Q}} , \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} | Quaternion, complex and Hermitian conjugation |
+| $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Quaternion, complex and Hermitian conjugation |
 | $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the interval on $\mathbb{M}_-$ |

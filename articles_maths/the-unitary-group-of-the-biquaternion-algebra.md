@@ -19,7 +19,7 @@ $$
 **Theorem ($U(\mathbb{B})\cong U(2)$).** $\Phi$ restricts to an isomorphism of groups $\Phi:U(\mathbb{B})\to U(2)$. In particular $U(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form
 
 $$
-\tilde{U}=z\,\tilde{q},\qquad z\in\mathbb{C},\ |z|=1,\quad \tilde{q}\in\mathbb{H},\ N(\tilde{q})=1,
+\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ N(\tilde{q})=1,
 $$
 
 that is, scalar multiples of unit quaternions by phases.
@@ -28,7 +28,7 @@ that is, scalar multiples of unit quaternions by phases.
 
 **Corollary (the determinant and the norm coincide).** On $U(\mathbb{B})$ the biquaternion norm is the determinant through $\Phi$, and $N:U(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $N$ realises an isomorphism $U(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $N(\tilde{U}\tilde{V})=N(\tilde{U})N(\tilde{V})$ is the multiplicativity of the norm ($\det$ is multiplicative), $N(e_0)=1$, and $|N(\tilde{U})|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $z\mapsto ze_0$ is unitary of norm $z$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $N(\tilde{U}\tilde{V})=N(\tilde{U})N(\tilde{V})$ is the multiplicativity of the norm ($\det$ is multiplicative), $N(e_0)=1$, and $|N(\tilde{U})|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 
@@ -40,7 +40,7 @@ $$
 
 with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3}$.
 
-**Proof.** The normal form writes an element as $z\tilde q$ with $z\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{z\in S^{1}: z\in\mathbb{H}\}=\{\pm e_0\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(N(\tilde{U}),N(\tilde{U})^{-1/2}\tilde{U})$.
+**Proof.** The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_0\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(N(\tilde{U}),N(\tilde{U})^{-1/2}\tilde{U})$.
 
 **Remark (not an isomorphism of groups).** The homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is not a group isomorphism: its centre is connected, that of $S^{1}\times S^{3}$ is not, and the product map above is two-to-one.
 
@@ -123,7 +123,7 @@ and the universal covers are $\widetilde{\mathbb{B}^{\times}}\cong\widetilde{U(\
 
 The compact slice is not only the compact real form of the algebra; it is the double cover of the rotation group of the Hermitian subspace.
 
-**Theorem.** The inner conjugation $\tilde{U}\mapsto\Theta_{\tilde{U}}$, $\Theta_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{\dagger}$, restricts to an action of $U(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
+**Theorem.** The inner conjugation $\tilde{U}\mapsto\Theta_{\tilde{U}}$, $\Theta_{\tilde{U}}(\tilde{R})=\tilde{U}\tilde{R}\tilde{U}^{\dagger}$, restricts to an action of $U(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
 
 $$
 U(\mathbb{B})\longrightarrow SO(3),\qquad \tilde{U}\longmapsto \Theta_{\tilde{U}}|_{\mathbb{M}_{+}},
@@ -137,11 +137,11 @@ is a surjective homomorphism with kernel $U(1)e_0$, so that $U(\mathbb{B})/U(1)\
 
 ## Worked Examples
 
-**A central element.** $\tilde{U}=ze_0$ is unitary exactly when $|z|=1$, and then $N(\tilde{U})=z^{2}$, so the centre circle maps onto $S^{1}$ twice.
+**A central element.** $\tilde{U}=Ae_0$ is unitary exactly when $|A|=1$, and then $N(\tilde{U})=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
 
 **A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde{U})=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
 
-**A null scalar multiple.** $\tilde{Q}=z(e_1+ie_2)$ with $z\neq0$ has $N(\tilde{Q})=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|z|$.
+**A null scalar multiple.** $\tilde{Q}=A(e_1+ie_2)$ with $A\neq0$ has $N(\tilde{Q})=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
 **A negative determinant.** $U(2)$ has determinant of modulus one; the slice $SU(2)=\{N=1\}\cap U(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $N$, and the double cover of $SO(3)$.
 

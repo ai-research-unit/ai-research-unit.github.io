@@ -139,7 +139,7 @@ The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel 
 | $S^3 = Sp(1) = \{\lvert \tilde q\rvert = 1\}$ | Unit sphere; compact group, $S^3\subseteq\mathbb{H}^{\times}$ |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | Group of units; $\simeq S^3$ |
 | $\pi_1(\mathbb{H}^{\times}) = 0$, $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$ | Homotopy groups of the units |
-| $\operatorname{Ad}_u(x) = uxu^{-1}$ | Adjoint action; quotient map to $SO(3)$ |
+| $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$ | Adjoint action; quotient map to $SO(3)$ |
 | $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$ | Rotation group; $\pi_1\cong\mathbb{Z}/2$ |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra; indefinite norm, null cone |
 | $\mathcal{N} = \{N = 0\}$ | Null cone of $\mathbb{B}$, absent here |

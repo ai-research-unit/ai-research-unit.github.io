@@ -77,40 +77,40 @@ A set $K \subseteq \mathbb{H}$ is **compact** if every open cover of $K$ has a f
 
 ### Limits of Sequences
 
-A sequence $(q_n)$ of quaternions **converges** to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(\tilde q_n)$ of quaternions **converges** to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-n \geq N \implies |q_n - L| < \epsilon.
+n \geq N \implies |\tilde q_n - L| < \epsilon.
 $$
 
-We write $q_n \to L$ or $\lim_{n \to \infty} q_n = L$.
+We write $\tilde q_n \to L$ or $\lim_{n \to \infty} \tilde q_n = L$.
 
-**Uniqueness.** If $q_n \to L$ and $q_n \to L'$, then $L = L'$.
+**Uniqueness.** If $\tilde q_n \to L$ and $\tilde q_n \to L'$, then $L = L'$.
 
-**Componentwise convergence.** Write $q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then
+**Componentwise convergence.** Write $\tilde q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then
 
 $$
-q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
+\tilde q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
 $$
 
 This is the reason quaternion convergence is no harder than real convergence: it is four real convergences in parallel.
 
 **Boundedness.** Every convergent sequence is bounded. The converse fails.
 
-**Algebra of limits.** If $q_n \to L$ and $r_n \to M$, then
+**Algebra of limits.** If $\tilde q_n \to L$ and $\tilde r_n \to M$, then
 
 $$
-q_n + r_n \to L + M, \qquad q_n r_n \to L M, \qquad q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
+\tilde q_n + \tilde r_n \to L + M, \qquad \tilde q_n \tilde r_n \to L M, \qquad \tilde q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
 $$
 
 The quotient rule holds because $\mathbb{H}$ is a division algebra: every non-zero quaternion is invertible.
 
 ### Cauchy Sequences
 
-A sequence $(q_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(\tilde q_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-m, n \geq N \implies |q_m - q_n| < \epsilon.
+m, n \geq N \implies |\tilde q_m - \tilde q_n| < \epsilon.
 $$
 
 **Theorem.** In $\mathbb{H}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{H}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the four components.
@@ -131,7 +131,7 @@ $$
 
 **Uniqueness.** If the limit exists, it is unique.
 
-**Sequential criterion.** $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(q_n)$ in $D \setminus \{q_0\}$ with $q_n \to q_0$, we have $f(q_n) \to L$.
+**Sequential criterion.** $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(\tilde q_n)$ in $D \setminus \{q_0\}$ with $\tilde q_n \to q_0$, we have $f(\tilde q_n) \to L$.
 
 **Algebra of limits.** Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.
 
@@ -185,16 +185,16 @@ The limit is taken in the quaternion space, so $h$ can approach $0$ from any dir
 
 ### The Cauchy–Riemann Equations
 
-Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and $u, v_k : U \to \mathbb{R}$.
+Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $u, v_k : U \to \mathbb{R}$.
 
 **Theorem.** $f$ is quaternion differentiable at $q_0$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $q_0$ and satisfy the **quaternion Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial x_0} = \frac{\partial v_1}{\partial x_1} = \frac{\partial v_2}{\partial x_2} = \frac{\partial v_3}{\partial x_3},
+\frac{\partial u}{\partial q_0} = \frac{\partial v_1}{\partial q_1} = \frac{\partial v_2}{\partial q_2} = \frac{\partial v_3}{\partial q_3},
 $$
 
 $$
-\frac{\partial u}{\partial x_k} = -\frac{\partial v_k}{\partial x_0}, \qquad k = 1, 2, 3,
+\frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_0}, \qquad k = 1, 2, 3,
 $$
 
 and the remaining equations obtained by cyclically permuting the indices $1, 2, 3$.
@@ -236,15 +236,15 @@ So the naive notion of quaternion differentiability is too restrictive to be use
 A function $f : U \to \mathbb{H}$ is **monogenic** (or **regular**) if it satisfies the **Cauchy–Riemann–Fueter equation**
 
 $$
-\frac{\partial f}{\partial x_0} + e_1 \frac{\partial f}{\partial x_1} + e_2 \frac{\partial f}{\partial x_2} + e_3 \frac{\partial f}{\partial x_3} = 0.
+\frac{\partial f}{\partial q_0} + e_1 \frac{\partial f}{\partial q_1} + e_2 \frac{\partial f}{\partial q_2} + e_3 \frac{\partial f}{\partial q_3} = 0.
 $$
 
-Equivalently, if $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ is the **Cauchy–Riemann operator**, then $f$ is monogenic iff $D f = 0$.
+Equivalently, if $D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$ is the **Cauchy–Riemann operator**, then $f$ is monogenic iff $D f = 0$.
 
-The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial_{x_0} - e_1 \partial_{x_1} - e_2 \partial_{x_2} - e_3 \partial_{x_3}$ satisfy
+The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3}$ satisfy
 
 $$
-D \bar{D} = \bar{D} D = \partial_{x_0}^2 + \partial_{x_1}^2 + \partial_{x_2}^2 + \partial_{x_3}^2 = \Delta,
+D \bar{D} = \bar{D} D = \partial_{q_0}^2 + \partial_{q_1}^2 + \partial_{q_2}^2 + \partial_{q_3}^2 = \Delta,
 $$
 
 where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:
@@ -448,13 +448,13 @@ The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, an
 The **Cauchy–Riemann operator** is
 
 $$
-D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
+D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}.
 $$
 
 It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by
 
 $$
-D f = \partial_{x_0} f + e_1 \partial_{x_1} f + e_2 \partial_{x_2} f + e_3 \partial_{x_3} f.
+D f = \partial_{q_0} f + e_1 \partial_{q_1} f + e_2 \partial_{q_2} f + e_3 \partial_{q_3} f.
 $$
 
 ### Properties
@@ -476,7 +476,7 @@ which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.
 In complex analysis, the Cauchy–Riemann operator is
 
 $$
-\bar{\partial} = \frac{1}{2}(\partial_x + i \partial_y),
+\bar{\partial} = \frac{1}{2}(\partial_a + i \partial_{a'}),
 $$
 
 and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.
@@ -545,7 +545,7 @@ The article develops what that notion supports: contour integrals along paths, p
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $\lvert \tilde q\rvert = \sqrt{\tilde q \tilde{q}^{\natural}}$ | Modulus |
 | $B(q_0, r)$ | Open ball of radius $r$ |
-| $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ | Cauchy–Riemann operator |
+| $D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$ | Cauchy–Riemann operator |
 | $D f = 0$ | Monogenic equation |
 | $\Delta = \bar{D} D$ | Laplacian |
 | $\int_\gamma f(\tilde q) \, dq$ | Contour integral |

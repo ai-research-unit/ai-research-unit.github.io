@@ -7,7 +7,7 @@ This article describes the group of rotations and reflections of the plane as it
 
 The treatment is mathematical throughout. A rotation is an element of $SO(2)$ and a reflection is an element of $O(2)$; no physical object is introduced, and no physical interpretation is invoked.
 
-The complex algebra is taken from *Complex Algebra*, with conjugation $\bar z$, the norm $N(z) = z\bar z$, and the real inner product $\operatorname{Re}(\bar z w)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
+The complex algebra is taken from *Complex Algebra*, with conjugation $\bar A$, the norm $N(A) = A\bar A$, and the real inner product $\operatorname{Re}(\bar A B)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
 
 ## The Unit Circle and Its Group Structure
 
@@ -25,7 +25,7 @@ Geometrically $U(1) = C(0, 1)$ is the circle of radius $1$ about the origin.
 
 ### Group Structure
 
-**Theorem.** $U(1)$ is an abelian group under multiplication, and it is the kernel of the modulus homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$, $z \mapsto |z|$.
+**Theorem.** $U(1)$ is an abelian group under multiplication, and it is the kernel of the modulus homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$, $A \mapsto |A|$.
 
 **Proof.** If $|u| = |v| = 1$, then $|uv| = |u||v| = 1$ and $|u^{-1}| = |u|^{-1} = 1$, and $u^{-1} = \bar u$; associativity and the identity $1 \in U(1)$ are inherited from $\mathbb{C}$. Commutativity is inherited from $\mathbb{C}$. The modulus is multiplicative, so it is a homomorphism from $\mathbb{C}^\times$ onto $\mathbb{R}_{>0}$ with kernel exactly $U(1)$.
 
@@ -36,12 +36,12 @@ Since every $u \in U(1)$ satisfies $\bar u = u^{-1}$, the inversion map of $U(1)
 **Theorem.** Every non-zero complex number factors uniquely as a strictly positive real number times a unit:
 
 $$
-\mathbb{C}^\times = \mathbb{R}_{>0} \times U(1), \qquad z = |z| \cdot \frac{z}{|z|}, \qquad \left| \frac{z}{|z|} \right| = 1.
+\mathbb{C}^\times = \mathbb{R}_{>0} \times U(1), \qquad A = |A| \cdot \frac{A}{|A|}, \qquad \left| \frac{A}{|A|} \right| = 1.
 $$
 
-**Proof.** The element $z/|z|$ has modulus $1$; conversely, if $z = \rho u$ with $\rho > 0$ and $|u| = 1$, then $|z| = \rho$ and $u = z/|z|$, so the factorisation is unique.
+**Proof.** The element $A/|A|$ has modulus $1$; conversely, if $A = \rho u$ with $\rho > 0$ and $|u| = 1$, then $|A| = \rho$ and $u = A/|A|$, so the factorisation is unique.
 
-The map $z \mapsto (|z|, z/|z|)$ is an isomorphism of groups from $\mathbb{C}^\times$ onto the direct product $\mathbb{R}_{>0} \times U(1)$. It says that a non-zero complex number is a scaling by a positive real number composed with a rotation, which is the first appearance of the two ingredients of a similarity.
+The map $A \mapsto (|A|, A/|A|)$ is an isomorphism of groups from $\mathbb{C}^\times$ onto the direct product $\mathbb{R}_{>0} \times U(1)$. It says that a non-zero complex number is a scaling by a positive real number composed with a rotation, which is the first appearance of the two ingredients of a similarity.
 
 ### Compactness and Connectedness
 
@@ -68,16 +68,16 @@ The parameter $\theta$ is the **angle** of the unit $u = e^{i\theta}$. It is def
 **Definition.** For $u \in U(1)$, let
 
 $$
-R_u : \mathbb{C} \to \mathbb{C}, \qquad R_u(z) = uz.
+R_u : \mathbb{C} \to \mathbb{C}, \qquad R_u(A) = uA.
 $$
 
 **Theorem.** For every $u \in U(1)$ the map $R_u$ is an $\mathbb{R}$-linear bijection of $\mathbb{C}$ that preserves the modulus and the distance:
 
 $$
-|R_u(z)| = |z|, \qquad |R_u(z) - R_u(w)| = |z - w|.
+|R_u(A)| = |A|, \qquad |R_u(A) - R_u(B)| = |A - B|.
 $$
 
-**Proof.** Linearity: $R_u(z + w) = u(z + w) = uz + uw$ and $R_u(\lambda z) = u \lambda z = \lambda u z$ for real $\lambda$. Bijectivity: $R_u^{-1} = R_{u^{-1}} = R_{\bar u}$. Isometry: $|R_u(z) - R_u(w)| = |u(z-w)| = |u|\,|z-w| = |z-w|$.
+**Proof.** Linearity: $R_u(A + B) = u(A + B) = uA + uB$ and $R_u(\lambda A) = u \lambda A = \lambda u A$ for real $\lambda$. Bijectivity: $R_u^{-1} = R_{u^{-1}} = R_{\bar u}$. Isometry: $|R_u(A) - R_u(B)| = |u(A-B)| = |u|\,|A-B| = |A-B|$.
 
 The map $R_u$ fixes the origin and preserves distances, so it is an **isometry of the plane** fixing the origin.
 
@@ -107,9 +107,9 @@ $$
 
 In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$. In $\mathbb{C}$ the sandwich is vacuous.
 
-**Proposition.** Let $u \in U(1)$ and $z \in \mathbb{C}$. Then $u z u^{-1} = z$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the algebra has no nontrivial inner automorphism.
+**Proposition.** Let $u \in U(1)$ and $A \in \mathbb{C}$. Then $u A u^{-1} = A$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the algebra has no nontrivial inner automorphism.
 
-**Proof.** Complex multiplication is commutative, so $u z u^{-1} = z u u^{-1} = z$.
+**Proof.** Complex multiplication is commutative, so $u A u^{-1} = A u u^{-1} = A$.
 
 The reason is structural and not a defect of the choice of $u$: conjugation by a fixed element acts trivially on the center, and in a commutative algebra every element is central, so the inner automorphism group is trivial. For $\mathbb{C}$ the algebra automorphism group is even smaller than one might expect.
 
@@ -123,7 +123,7 @@ where $\bar{\cdot}$ is complex conjugation. Consequently no rotation $R_u$ with 
 
 **Proof.** An automorphism $\sigma$ fixes $\mathbb{R}$ and is determined by $\sigma(i)$, which must satisfy $\sigma(i)^2 = \sigma(-1) = -1$, so $\sigma(i) = \pm i$; this is the computation of the Galois group of $\mathbb{C}/\mathbb{R}$, where the group is shown to be $\mathbb{Z}/2\mathbb{Z}$ generated by conjugation. A rotation $R_u$ with $u \neq 1$ does not fix $1$, since $R_u(1) = u$, so it is not an algebra automorphism.
 
-Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $U(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm $N(z) = z\bar z$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that the isometries of the plane are the action of $U(1)$ on $\mathbb{C}$ by multiplication, $u \mapsto R_u$, which is faithful; in a commutative algebra multiplication, not conjugation, is the natural action.
+Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $U(1)$ is a circle: the rotation group cannot be recovered from the multiplication alone. It is recovered only when the norm $N(A) = A\bar A$ — equivalently, the Euclidean metric — is carried along with the algebra. The correct reading is that the isometries of the plane are the action of $U(1)$ on $\mathbb{C}$ by multiplication, $u \mapsto R_u$, which is faithful; in a commutative algebra multiplication, not conjugation, is the natural action.
 
 ## Reflections
 
@@ -132,15 +132,15 @@ Thus $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ is finite whereas $U(1)$ is a
 **Definition.** For $u \in U(1)$, let
 
 $$
-S_u : \mathbb{C} \to \mathbb{C}, \qquad S_u(z) = u\bar z.
+S_u : \mathbb{C} \to \mathbb{C}, \qquad S_u(A) = u\bar A.
 $$
 
 **Theorem.** For every $u \in U(1)$ the map $S_u$ is an $\mathbb{R}$-linear isometry of $\mathbb{C}$ and an involution, and $\det S_u = -1$; it is therefore orientation-reversing.
 
-**Proof.** Linearity over $\mathbb{R}$ is immediate; $|S_u(z)| = |u|\,|\bar z| = |z|$ gives the isometry property, and
+**Proof.** Linearity over $\mathbb{R}$ is immediate; $|S_u(A)| = |u|\,|\bar A| = |A|$ gives the isometry property, and
 
 $$
-S_u(S_u(z)) = u\overline{u\bar z} = u\bar u z = |u|^2 z = z,
+S_u(S_u(A)) = u\overline{u\bar A} = u\bar u A = |u|^2 A = A,
 $$
 
 so $S_u$ is an involution. For the determinant, write $u = e^{2i\alpha}$; then $S_u$ sends $1$ to $e^{2i\alpha}$ and $i$ to $e^{2i\alpha}(-i) = -e^{2i\alpha} i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$.
@@ -148,21 +148,21 @@ so $S_u$ is an involution. For the determinant, write $u = e^{2i\alpha}$; then $
 **Theorem (fixed line).** Write $u = e^{2i\alpha}$. The fixed-point set of $S_u$ is the line through the origin of direction $e^{i\alpha}$:
 
 $$
-\{z \in \mathbb{C} : S_u(z) = z\} = \{t e^{i\alpha} : t \in \mathbb{R}\}.
+\{A \in \mathbb{C} : S_u(A) = A\} = \{t e^{i\alpha} : t \in \mathbb{R}\}.
 $$
 
-**Proof.** The equation $u\bar z = z$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar z = \bar u z$. Write $z = re^{i\phi}$ with $r \ge 0$; then $e^{-i\phi} = e^{-2i\alpha} e^{i\phi}$, that is, $e^{2i\phi} = e^{2i\alpha}$, so $\phi \equiv \alpha \pmod \pi$. Conversely every $z = te^{i\alpha}$ with $t$ real satisfies $u\bar z = e^{2i\alpha}t e^{-i\alpha} = t e^{i\alpha} = z$.
+**Proof.** The equation $u\bar A = A$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar A = \bar u A$. Write $A = re^{i\phi}$ with $r \ge 0$; then $e^{-i\phi} = e^{-2i\alpha} e^{i\phi}$, that is, $e^{2i\phi} = e^{2i\alpha}$, so $\phi \equiv \alpha \pmod \pi$. Conversely every $A = te^{i\alpha}$ with $t$ real satisfies $u\bar A = e^{2i\alpha}t e^{-i\alpha} = t e^{i\alpha} = A$.
 
 Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\alpha$, where $u = e^{2i\alpha}$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $e^{i(\alpha + \pi/2)}$ it acts as $-1$, since $S_u(e^{i(\alpha+\pi/2)}) = e^{2i\alpha} e^{-i(\alpha+\pi/2)} = e^{i(\alpha - \pi/2)} = -e^{i(\alpha+\pi/2)}$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
 
-**Example.** For $u = 1$ the reflection $S_1(z) = \bar z$ is complex conjugation, with fixed line the real axis. For $u = -1$ the reflection $S_{-1}(z) = -\bar z$ has fixed line the imaginary axis. The first is the nontrivial field automorphism of $\mathbb{C}$; the second is its composition with the rotation by $\pi$, and it is not a field automorphism, since it sends $1$ to $-1$.
+**Example.** For $u = 1$ the reflection $S_1(A) = \bar A$ is complex conjugation, with fixed line the real axis. For $u = -1$ the reflection $S_{-1}(A) = -\bar A$ has fixed line the imaginary axis. The first is the nontrivial field automorphism of $\mathbb{C}$; the second is its composition with the rotation by $\pi$, and it is not a field automorphism, since it sends $1$ to $-1$.
 
 ### The Reflection–Rotation Decomposition
 
 **Proposition.** Every reflection is a rotation composed with conjugation:
 
 $$
-S_u = R_u \circ S_1, \qquad S_u(z) = R_u(\bar z) = u\bar z .
+S_u = R_u \circ S_1, \qquad S_u(A) = R_u(\bar A) = u\bar A .
 $$
 
 **Proof.** Immediate from the definitions.
@@ -175,10 +175,10 @@ $$
 R_u \circ S_1 \circ R_u^{-1} = S_{u^2} .
 $$
 
-**Proof.** Compute on $z$:
+**Proof.** Compute on $A$:
 
 $$
-R_u(S_1(R_u^{-1}(z))) = R_u(\overline{u^{-1} z}) = u\,\overline{u^{-1}}\,\bar z = u^2 \bar z = S_{u^2}(z),
+R_u(S_1(R_u^{-1}(A))) = R_u(\overline{u^{-1} A}) = u\,\overline{u^{-1}}\,\bar A = u^2 \bar A = S_{u^2}(A),
 $$
 
 using $\bar u^{-1} = u$ for $|u| = 1$. As $u$ ranges over $U(1)$, $u^2$ ranges over $U(1)$, so every reflection is conjugate to conjugation; the reflections form one conjugacy class.
@@ -193,10 +193,10 @@ $$
 
 In particular the composition of two reflections is a rotation.
 
-**Proof.** For every $z$,
+**Proof.** For every $A$,
 
 $$
-S_u(S_v(z)) = u\overline{v\bar z} = u\bar v z = R_{u\bar v}(z).
+S_u(S_v(A)) = u\overline{v\bar A} = u\bar v A = R_{u\bar v}(A).
 $$
 
 **Corollary (the angle).** Let $S_u$ be the reflection in the line at angle $\alpha$ and $S_v$ the reflection in the line at angle $\beta$, so that $u = e^{2i\alpha}$ and $v = e^{2i\beta}$. Then
@@ -214,12 +214,12 @@ Two reflections in lines meeting at angle $\phi = \alpha - \beta$ therefore comp
 **Theorem (Cartan–Dieudonné, dimension two).** Every element of $O(2)$ is a composition of at most two reflections: a reflection is already such a composition, and a rotation is
 
 $$
-R_w = S_w \circ S_1 ,
+R_B = S_B \circ S_1 ,
 $$
 
 with the identity the empty product.
 
-**Proof.** The rotation identity was proved in the previous theorem, since $w\bar 1 = w$.
+**Proof.** The rotation identity was proved in the previous theorem, since $B\bar 1 = B$.
 
 ## The Orthogonal Group O(2)
 
@@ -228,18 +228,18 @@ with the identity the empty product.
 **Theorem.** Let $T : \mathbb{C} \to \mathbb{C}$ be $\mathbb{R}$-linear. Then $T$ is an isometry with $T(0) = 0$ if and only if there exist $a, b \in \mathbb{C}$ with
 
 $$
-T(z) = az + b\bar z, \qquad |a|^2 + |b|^2 = 1, \qquad ab = 0,
+T(A) = aA + b\bar A, \qquad |a|^2 + |b|^2 = 1, \qquad ab = 0,
 $$
 
 that is, if and only if $T = R_u$ or $T = S_u$ for some $u \in U(1)$.
 
-**Proof.** Every $\mathbb{R}$-linear map has the form $T(z) = az + b\bar z$, because $T$ is determined by $T(1) = a + b$ and $T(i) = ai - b$. Then
+**Proof.** Every $\mathbb{R}$-linear map has the form $T(A) = aA + b\bar A$, because $T$ is determined by $T(1) = a + b$ and $T(i) = ai - b$. Then
 
 $$
-|T(z)|^2 = |a|^2|z|^2 + |b|^2|z|^2 + a\bar b z^2 + \overline{a\bar b z^2} = (|a|^2 + |b|^2)|z|^2 + 2\operatorname{Re}(a\bar b z^2).
+|T(A)|^2 = |a|^2|A|^2 + |b|^2|A|^2 + a\bar b A^2 + \overline{a\bar b A^2} = (|a|^2 + |b|^2)|A|^2 + 2\operatorname{Re}(a\bar b A^2).
 $$
 
-For $|T(z)| = |z|$ for all $z$ one needs $|a|^2 + |b|^2 = 1$ and $a\bar b = 0$. If $b = 0$ then $|a| = 1$ and $T = R_a$; if $a = 0$ then $|b| = 1$ and $T = S_b$.
+For $|T(A)| = |A|$ for all $A$ one needs $|a|^2 + |b|^2 = 1$ and $a\bar b = 0$. If $b = 0$ then $|a| = 1$ and $T = R_a$; if $a = 0$ then $|b| = 1$ and $T = S_b$.
 
 **Corollary.** The group of $\mathbb{R}$-linear isometries of $\mathbb{C}$ fixing the origin is
 
@@ -268,7 +268,7 @@ where the generator of $\mathbb{Z}/2\mathbb{Z}$ acts on $U(1)$ by inversion $u \
 **Proof.** Represent an element of $O(2)$ by a pair $(u, \varepsilon)$ with $u \in U(1)$ and $\varepsilon \in \{1, -1\}$, acting by
 
 $$
-(u, 1)(z) = uz, \qquad (u, -1)(z) = u\bar z .
+(u, 1)(A) = uA, \qquad (u, -1)(A) = u\bar A .
 $$
 
 Composition gives the law
@@ -297,7 +297,7 @@ $$
 \mathrm{U}(1) = i\mathbb{R} \subset \mathbb{C},
 $$
 
-a one-dimensional abelian real Lie algebra, and the exponential is $\exp(it) = e^{it}$, which maps this line onto $U(1)$ with kernel $2\pi i\mathbb{Z}$. Written as a rotation, $R_{e^{i\theta}}(z) = e^{i\theta}z$, and $\exp : \mathrm{U}(1) \to SO(2)$ is surjective with kernel $2\pi i \mathbb{Z}$; the identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to the one-dimensional Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ of $SO(2)$.
+a one-dimensional abelian real Lie algebra, and the exponential is $\exp(it) = e^{it}$, which maps this line onto $U(1)$ with kernel $2\pi i\mathbb{Z}$. Written as a rotation, $R_{e^{i\theta}}(A) = e^{i\theta}A$, and $\exp : \mathrm{U}(1) \to SO(2)$ is surjective with kernel $2\pi i \mathbb{Z}$; the identification $U(1) \cong SO(2)$ carries $i\mathbb{R}$ to the one-dimensional Lie algebra $\mathrm{SO}(2) \cong \mathbb{R}$ of $SO(2)$.
 
 **Theorem.** The determinant and the trace of the rotation $R_u$ with $u = e^{i\theta}$ are
 
@@ -317,28 +317,28 @@ Three distinct groups act on the complex plane and they should not be confused.
 
 **The algebra automorphisms.** By the theorem above, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2\mathbb{Z}$, the Galois group of $\mathbb{C}/\mathbb{R}$. It contains no rotation by an angle other than $0$ or $\pi$. So the algebraic structure of the field does not determine the rotation group.
 
-**The linear isometries.** The group of distance-preserving $\mathbb{R}$-linear maps fixing the origin is $O(2) = U(1) \cup U(1)\bar{\cdot}$, of which $SO(2) = U(1)$ is the orientation-preserving half. This group is determined by the algebra *together with* its norm $N(z) = z\bar z$, equivalently the inner product $\operatorname{Re}(\bar z w)$.
+**The linear isometries.** The group of distance-preserving $\mathbb{R}$-linear maps fixing the origin is $O(2) = U(1) \cup U(1)\bar{\cdot}$, of which $SO(2) = U(1)$ is the orientation-preserving half. This group is determined by the algebra *together with* its norm $N(A) = A\bar A$, equivalently the inner product $\operatorname{Re}(\bar A B)$.
 
-**The similarities.** The group of $\mathbb{C}$-linear bijections of $\mathbb{C}$, that is, the maps $z \mapsto az$ with $a \neq 0$, is $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$. Each such map is a rotation followed by a scaling by $|a|$, and it preserves angles but not distances; the rotations are the isometric part.
+**The similarities.** The group of $\mathbb{C}$-linear bijections of $\mathbb{C}$, that is, the maps $A \mapsto aA$ with $a \neq 0$, is $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$. Each such map is a rotation followed by a scaling by $|a|$, and it preserves angles but not distances; the rotations are the isometric part.
 
 This is the precise sense in which multiplication is the natural action. In $\mathbb{C}$ the sandwich action is trivial, the algebra automorphism group is finite, and the isometries come from the multiplication action of the units, $u \mapsto R_u$; adding the reflections gives the full orthogonal group. The subgroups are summarised below.
 
 | Group | Elements | Structure | Fixes |
 |---|---|---|---|
-| $U(1) \cong SO(2)$ | $z \mapsto uz$, $\lvert u\rvert = 1$ | circle group, connected, abelian | the origin only, when $u \neq 1$ |
-| $U(1)\bar{\cdot}$ | $z \mapsto u\bar z$, $\lvert u\rvert = 1$ | a coset, not a group | each element fixes a line through the origin |
+| $U(1) \cong SO(2)$ | $A \mapsto uA$, $\lvert u\rvert = 1$ | circle group, connected, abelian | the origin only, when $u \neq 1$ |
+| $U(1)\bar{\cdot}$ | $A \mapsto u\bar A$, $\lvert u\rvert = 1$ | a coset, not a group | each element fixes a line through the origin |
 | $O(2)$ | rotations and reflections | $U(1) \rtimes \mathbb{Z}/2\mathbb{Z}$, two components | the origin |
-| $\mathbb{C}^\times$ | $z \mapsto az$, $a \neq 0$ | $\mathbb{R}_{>0} \times U(1)$, similarities | the origin |
+| $\mathbb{C}^\times$ | $A \mapsto aA$, $a \neq 0$ | $\mathbb{R}_{>0} \times U(1)$, similarities | the origin |
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C})$ | $\mathrm{id}$, $\bar{\cdot}$ | $\mathbb{Z}/2\mathbb{Z}$, the Galois group | $\mathbb{R}$ pointwise |
 
 ## Isometries of the Plane
 
-The isometries that do not fix the origin complete the picture. An **isometry of the plane** is a map $T : \mathbb{C} \to \mathbb{C}$ preserving distances. Its value $c = T(0)$ is a translation, and the map $L(z) = T(z) - c$ fixes the origin and is again an isometry, hence lies in $O(2)$; so every isometry is a translation composed with a linear isometry.
+The isometries that do not fix the origin complete the picture. An **isometry of the plane** is a map $T : \mathbb{C} \to \mathbb{C}$ preserving distances. Its value $c = T(0)$ is a translation, and the map $L(A) = T(A) - c$ fixes the origin and is again an isometry, hence lies in $O(2)$; so every isometry is a translation composed with a linear isometry.
 
 **Theorem.** Every isometry of $\mathbb{C}$ has exactly one of the two forms
 
 $$
-T(z) = uz + c \quad \text{or} \quad T(z) = u\bar z + c, \qquad u \in U(1), \ c \in \mathbb{C},
+T(A) = uA + c \quad \text{or} \quad T(A) = u\bar A + c, \qquad u \in U(1), \ c \in \mathbb{C},
 $$
 
 and the isometries form the semidirect product
@@ -349,7 +349,7 @@ $$
 
 in which the translations $\mathbb{C}$ form a normal subgroup and $O(2)$ acts on them by its linear action. The orientation-preserving isometries are those of the first form, and they form the subgroup $\mathbb{C} \rtimes SO(2)$.
 
-**Proof.** The decomposition $T = L + c$ with $c = T(0)$ and $L \in O(2)$ gives the two forms. Conversely each displayed map is an isometry, since $|T(z) - T(w)| = |u(z-w)| = |z-w|$ in the first case and $|u(\bar z - \bar w)| = |z-w|$ in the second. The composition law $(L, c)(L', c') = (LL', L c' + c)$ is that of the semidirect product, and the determinant of the linear part gives the orientation.
+**Proof.** The decomposition $T = L + c$ with $c = T(0)$ and $L \in O(2)$ gives the two forms. Conversely each displayed map is an isometry, since $|T(A) - T(B)| = |u(A-B)| = |A-B|$ in the first case and $|u(\bar A - \bar B)| = |A-B|$ in the second. The composition law $(L, c)(L', c') = (LL', L c' + c)$ is that of the semidirect product, and the determinant of the linear part gives the orientation.
 
 Every orientation-preserving isometry with $u = 1$ is a translation, and with $u \neq 1$ it is a rotation about its unique fixed point; every orientation-reversing isometry is a reflection if it has a fixed point and a glide reflection otherwise. The two-element structure $\mathbb{Z}/2\mathbb{Z}$ of $O(2)/SO(2)$ and the circle $U(1)$ of rotations are the two ingredients of this classification.
 
@@ -357,9 +357,9 @@ Every orientation-preserving isometry with $u = 1$ is a translation, and with $u
 
 The unit circle $U(1) = \{u : \lvert u\rvert = 1\}$ is a compact connected abelian group, isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$ via $\theta \mapsto e^{i\theta}$, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ by the polar decomposition.
 
-Multiplication by a unit, $R_u(z) = uz$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $z \mapsto uzu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the center. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(z) = z\bar z$. Multiplication, not conjugation, is the natural action.
+Multiplication by a unit, $R_u(A) = uA$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = e^{i\theta}$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $e^{\pm i\theta}$. The map $u \mapsto R_u$ is an isomorphism $U(1) \cong SO(2)$. The sandwich $A \mapsto uAu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the center. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $N(A) = A\bar A$. Multiplication, not conjugation, is the natural action.
 
-The reflections are the maps $S_u(z) = u\bar z$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = e^{2i\alpha}$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
+The reflections are the maps $S_u(A) = u\bar A$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = e^{2i\alpha}$. They form the coset $U(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
 The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant homomorphism onto $\{\pm 1\}$ and kernel $SO(2) = U(1)$ of index $2$. It is the semidirect product $O(2) \cong U(1) \rtimes \mathbb{Z}/2\mathbb{Z}$ with the generator acting by inversion $u \mapsto \bar u$, it is compact with two circle components, and its identity component is the rotation group. The exponential identifies $\mathrm{SO}(2) \cong \mathbb{R}$ with the Lie algebra of $SO(2)$ and $\mathrm{U}(1) = i\mathbb{R}$ with that of $U(1)$. Adding translations gives $\operatorname{Isom}(\mathbb{C}) \cong \mathbb{C} \rtimes O(2)$, in which the linear part is an element of $O(2)$ and the orientation is the sign of its determinant.
 
@@ -368,15 +368,15 @@ The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant hom
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}$ | Complex plane |
-| $z = x + iy$ | General complex number |
-| $\bar z = x - iy$ | Complex conjugate |
-| $\lvert z\rvert = \sqrt{z\bar z}$ | Modulus |
-| $N(z) = z\bar z$ | Norm |
-| $\operatorname{Re}(\bar z w)$ | Real inner product |
+| $A = a + i a'$ | General complex number |
+| $\bar A = a - i a'$ | Complex conjugate |
+| $\lvert A\rvert = \sqrt{A\bar A}$ | Modulus |
+| $N(A) = A\bar A$ | Norm |
+| $\operatorname{Re}(\bar A B)$ | Real inner product |
 | $U(1) = \{u : \lvert u\rvert = 1\}$ | Unit circle, unit group of $\mathbb{C}$ |
 | $e^{i\theta} = \cos\theta + i\sin\theta$ | Exponential of an angle |
-| $R_u(z) = uz$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = e^{i\theta}$ |
-| $S_u(z) = u\bar z$ | Reflection determined by the unit $u$ |
+| $R_u(A) = uA$ | Rotation by the unit $u$; determinant $1$, trace $2\cos\theta$ for $u = e^{i\theta}$ |
+| $S_u(A) = u\bar A$ | Reflection determined by the unit $u$ |
 | $O(2)$ | Orthogonal group of the plane; rotations and reflections |
 | $SO(2)$ | Rotation group, $\cong U(1)$ |
 | $O(2) \cong U(1) \rtimes \mathbb{Z}/2\mathbb{Z}$ | Reflection–rotation decomposition of $O(2)$ |
@@ -388,7 +388,7 @@ The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant hom
 ## Further Reading
 
 - Felix Klein, *Vorlesungen über das Ikosaeder und die Auflösung der Gleichungen vom fünften Grade* (Teubner, 1884), for the origin of the rotation-group viewpoint in the complex plane.
-- Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the systematic use of $z \mapsto uz$ and $z \mapsto u\bar z$ as rotations and reflections.
+- Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the systematic use of $A \mapsto uA$ and $A \mapsto u\bar A$ as rotations and reflections.
 - Carl Ludwig Siegel, *Topics in Complex Function Theory, Vol. I* (Wiley, 1969), for the analytic treatment of the exponential and the argument.
 - Michael Artin, *Algebra* (Prentice Hall, 2nd ed. 2011), for the structure of the orthogonal group and semidirect products.
 - Benson Farb and R. Keith Dennis, *Noncommutative Algebra* (Springer, 1993), for the reflection–rotation decomposition as a special case of Cartan–Dieudonné.

@@ -3,18 +3,18 @@
 
 ## Introduction
 
-The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(x) = e^x$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.
+The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(a) = e^a$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.
 
 The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathrm{GL}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.
 
-The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $x = x e_0$, the sole involution the identity, norm $N(x) = x\,x = x^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$, with the quaternions $\mathbb{H}$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which the exponential is neither injective nor a homomorphism. Every numerical value displayed below is exact.
+The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$, with the quaternions $\mathbb{H}$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which the exponential is neither injective nor a homomorphism. Every numerical value displayed below is exact.
 
 ## The Algebra as the Abelian Lie Algebra
 
 The commutator bracket of $\mathbb{R}$ vanishes identically,
 
 $$
-[x, y] = xy - yx = 0 \qquad (x, y \in \mathbb{R}),
+[a, b] = ab - ba = 0 \qquad (a, b \in \mathbb{R}),
 $$
 
 because the algebra is commutative. Hence $\mathbb{R}$ is an **abelian Lie algebra** of real dimension $1$. It is in fact the general linear Lie algebra of the one-dimensional real vector space,
@@ -36,7 +36,7 @@ The universal enveloping algebra of this abelian Lie algebra is the polynomial a
 The **group of units** is
 
 $$
-\mathbb{R}^\times = \{x : N(x) \neq 0\} = \mathbb{R} \setminus \{0\},
+\mathbb{R}^\times = \{a : N(a) \neq 0\} = \mathbb{R} \setminus \{0\},
 $$
 
 the real line with the origin removed. It is a real Lie group of dimension $1$, open and dense in $\mathbb{R}$ by *Real Norm and Invertibility*, and it **decomposes into two components**,
@@ -55,28 +55,28 @@ the product of the identity component and the component group. In the complex an
 
 ## The Exponential: Series and Closed Form
 
-**Definition.** The **exponential** of a real number $x$ is the sum of the convergent series
+**Definition.** The **exponential** of a real number $a$ is the sum of the convergent series
 
 $$
-\exp(x) = \sum_{n \geq 0} \frac{x^n}{n!} .
+\exp(a) = \sum_{n \geq 0} \frac{a^n}{n!} .
 $$
 
-Since $|x^n/n!| \leq |x|^n/n!$, the series converges absolutely for every real $x$; the exponential is thus defined on all of $\mathbb{R}$. Its closed form is the classical one,
+Since $|a^n/n!| \leq |a|^n/n!$, the series converges absolutely for every real $a$; the exponential is thus defined on all of $\mathbb{R}$. Its closed form is the classical one,
 
 $$
-\exp(x) = e^{x}, \qquad e = \exp(1) = \sum_{n\ge0} \frac{1}{n!} .
+\exp(a) = e^{a}, \qquad e = \exp(1) = \sum_{n\ge0} \frac{1}{n!} .
 $$
 
 **Basic properties.** The exponential never vanishes, so it takes values in $\mathbb{R}^\times$:
 
 $$
-\exp(x) > 0 \qquad \text{for all} \ x \in \mathbb{R}, \qquad \exp(-x) = \exp(x)^{-1}.
+\exp(a) > 0 \qquad \text{for all} \ a \in \mathbb{R}, \qquad \exp(-a) = \exp(a)^{-1}.
 $$
 
 Its norm is positive and satisfies
 
 $$
-N(\exp x) = e^{2x} = \exp(2x),
+N(\exp a) = e^{2a} = \exp(2a),
 $$
 
 the square of the exponential itself. The differential at the origin is the identity, $d\exp_0 = \operatorname{id}$, so $\exp$ is a local diffeomorphism near $0$ and supplies exponential coordinates near the identity; as the kernel computation below shows, it is in fact a global homeomorphism onto its image.
@@ -85,13 +85,13 @@ the square of the exponential itself. The differential at the origin is the iden
 
 The exponential is a **homomorphism** from the additive group of the Lie algebra to the multiplicative group of the units:
 
-**Theorem.** For all $x, y \in \mathbb{R}$,
+**Theorem.** For all $a, b \in \mathbb{R}$,
 
 $$
-\exp(x+y) = \exp(x)\exp(y).
+\exp(a+b) = \exp(a)\exp(b).
 $$
 
-**Proof.** The real numbers commute, so $x$ and $y$ generate a commutative subalgebra, and the binomial theorem reorders the product of the two absolutely convergent series term by term into the series of $\exp(x+y)$; explicitly, the coefficient of the $n$-th power of the combined series is $\sum_{k} \frac{1}{k!(n-k)!} x^k y^{n-k} = \frac{(x+y)^n}{n!}$.
+**Proof.** The real numbers commute, so $a$ and $b$ generate a commutative subalgebra, and the binomial theorem reorders the product of the two absolutely convergent series term by term into the series of $\exp(a+b)$; explicitly, the coefficient of the $n$-th power of the combined series is $\sum_{k} \frac{1}{k!(n-k)!} a^k b^{n-k} = \frac{(a+b)^n}{n!}$.
 
 This is the sharp difference from the biquaternion algebra, where the exponential is not a homomorphism and the failure is measured by the Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$. Here every bracket in that series vanishes, so the series terminates at the leading term and the identity is exact without any smallness hypothesis. The general form reduces to the commuting case, which for $\mathbb{B}$ is the special case $[a,b] = 0$; for $\mathbb{R}$ the commuting case is the only case. The complex case is the same, one dimension up.
 
@@ -103,23 +103,23 @@ $$
 \exp(\mathbb{R}) = \mathbb{R}_{>0}, \qquad \exp : (\mathbb{R}, +) \longrightarrow (\mathbb{R}_{>0}, \cdot) \ \text{is an isomorphism of Lie groups.}
 $$
 
-**Proof.** The exponential is a strictly increasing continuous function with $\lim_{x\to-\infty}e^x = 0$ and $\lim_{x\to+\infty}e^x = +\infty$, so its image is exactly $(0,\infty)$ and it is injective. It is a group homomorphism by the group law, and a bijective homomorphism of groups is an isomorphism; it is smooth with smooth inverse $\ln$, so it is an isomorphism of Lie groups.
+**Proof.** The exponential is a strictly increasing continuous function with $\lim_{a\to-\infty}e^a = 0$ and $\lim_{a\to+\infty}e^a = +\infty$, so its image is exactly $(0,\infty)$ and it is injective. It is a group homomorphism by the group law, and a bijective homomorphism of groups is an isomorphism; it is smooth with smooth inverse $\ln$, so it is an isomorphism of Lie groups.
 
 The inverse is the **natural logarithm**, the unique map
 
 $$
-\ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \exp(\ln r) = r, \qquad \ln(\exp x) = x,
+\ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \exp(\ln r) = r, \qquad \ln(\exp a) = a,
 $$
 
-which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $e^x > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex, quaternion and biquaternion exponentials all reach their whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
+which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $e^a > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex, quaternion and biquaternion exponentials all reach their whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
 
-**Theorem (the kernel).** For $x \in \mathbb{R}$ one has $\exp(x) = 1$ if and only if $x = 0$; hence
+**Theorem (the kernel).** For $a \in \mathbb{R}$ one has $\exp(a) = 1$ if and only if $a = 0$; hence
 
 $$
 \ker\exp = \{0\}.
 $$
 
-**Proof.** $e^x = 1$ with $x \neq 0$ is impossible, since $e^x > 1$ for $x > 0$ and $0 < e^x < 1$ for $x < 0$.
+**Proof.** $e^a = 1$ with $a \neq 0$ is impossible, since $e^a > 1$ for $a > 0$ and $0 < e^a < 1$ for $a < 0$.
 
 The kernel is trivial, so the exponential is injective and the real logarithm has no ambiguity. The biquaternion kernel is very much larger: it is not discrete, it is not a subgroup, and in its coordinates the conditions $Q_0 \in \pi i\mathbb{Z}$, $B \in \pi\mathbb{Z}$ with $Q_0$ and $B$ congruent modulo one another appear; the complex kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The real kernel is the smallest possible, the trivial subgroup, and every positive real has exactly one real logarithm.
 
@@ -154,7 +154,7 @@ a bijection of topological groups. The two one-parameter subgroups for $X$ and $
 **The sign group is not generated by the exponential.** The sign group $\{\pm1\}$ is **not** in the image of any one-parameter subgroup: every $\gamma_X(t)$ is positive. It is instead the **torsion subgroup** of $\mathbb{R}^\times$,
 
 $$
-\{x \in \mathbb{R}^\times : x^n = 1 \ \text{for some} \ n \geq 1\} = \{\pm1\},
+\{a \in \mathbb{R}^\times : a^n = 1 \ \text{for some} \ n \geq 1\} = \{\pm1\},
 $$
 
 the elements of finite order. The sign group is thus the group of components $\pi_0(\mathbb{R}^\times)$, the maximal compact subgroup of $\mathbb{R}^\times$, and the two-element group $O(1)$, all at once. In the complex case the corresponding group of components is trivial, its compact subgroup $U(1)$ is nontrivial and connected, and the torsion of $\mathbb{C}^\times$ is the group of all roots of unity, $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$, a countable dense subgroup of $U(1)$; here the torsion is the two-element sign group and nothing else.
@@ -195,7 +195,7 @@ Every exponential is entire and satisfies a group law; the differences are that 
 
 The commutator bracket of $\mathbb{R}$ vanishes identically, so $\mathbb{R} \cong \mathrm{GL}_1(\mathbb{R})$ is an abelian Lie algebra of real dimension $1$, with the universal enveloping algebra the polynomial algebra on one generator, and it is the Lie algebra both of the additive group $(\mathbb{R},+)$ and of the positive multiplicative group $(\mathbb{R}_{>0},\cdot)$.
 
-The exponential $\exp(x) = \sum x^n/n!$ is entire, never zero, and a group homomorphism, $\exp(x+y) = \exp x \exp y$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^x$, its norm is $N(\exp x) = e^{2x}$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
+The exponential $\exp(a) = \sum a^n/n!$ is entire, never zero, and a group homomorphism, $\exp(a+b) = \exp a \exp b$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^a$, its norm is $N(\exp a) = e^{2a}$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
 
 The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.
 
@@ -204,11 +204,11 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$
 | symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | the real algebra, basis $e_0 = 1$ |
-| $[x,y] = xy - yx = 0$ | the commutator bracket, identically zero |
+| $[a,b] = ab - ba = 0$ | the commutator bracket, identically zero |
 | $\mathrm{GL}_1(\mathbb{R}) \cong \mathbb{R}$ | the abelian Lie algebra of the $1\times1$ matrices |
 | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units, two components |
-| $\exp(x) = \sum_n x^n/n! = e^x$ | the exponential, entire and a homomorphism |
-| $N(\exp x) = e^{2x}$ | the norm of an exponential |
+| $\exp(a) = \sum_n a^n/n! = e^a$ | the exponential, entire and a homomorphism |
+| $N(\exp a) = e^{2a}$ | the norm of an exponential |
 | $\exp : (\mathbb{R},+)\to(\mathbb{R}_{>0},\cdot)$ | the isomorphism onto the positive reals |
 | $\ln = \exp^{-1}$ | the natural logarithm |
 | $\ker\exp = \{0\}$ | the kernel, trivial |

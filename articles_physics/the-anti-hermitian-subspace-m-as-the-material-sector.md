@@ -22,7 +22,7 @@ $$
 \mathbb{M}_- = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
 $$
 
-where $\tilde{Q}^\flat = -\tilde{Q}^{*}$ and \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
+where $\tilde{Q}^\flat = -\tilde{Q}^{*}$ and $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
 
 $$
 \tilde{Q} = i q'_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -51,7 +51,7 @@ As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalg
 The subspace is the fixed space of the **anti-Hermitian conjugation**
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^{*} = -\tilde{Q}^{*},
+\tilde{Q}^\flat = -\tilde{Q}^{*} = -\overline{\tilde{Q}^{\natural}},
 $$
 
 which is an involution: applying it twice returns the original element, $(\tilde{Q}^\flat)^\flat = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
@@ -69,7 +69,7 @@ $$
 and complex conjugation then replaces $i$ by $-i$ throughout, leaving the quaternion units fixed, so that
 
 $$
-\tilde{Q}^{*} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 = \tilde{Q}^{*} .
+\tilde{Q}^{*} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 = \overline{\tilde{Q}^{\natural}} .
 $$
 
 Negating this gives the anti-Hermitian conjugation itself,
@@ -98,7 +98,7 @@ $$
 \tilde{Q}^\flat = \tilde{Q} \iff \tilde{Q} = iq'_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3 .
 $$
 
-**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3$, hence \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = -iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3 = -\tilde{Q}$, and therefore $\tilde{Q}^\flat = -\tilde{Q}^{*} = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_1, q_2, q_3$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_0 = 0$ and $q'_k = 0$.
+**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3$, hence $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = -iq'_0\,e_0 - q_1\,e_1 - q_2\,e_2 - q_3\,e_3 = -\tilde{Q}$, and therefore $\tilde{Q}^\flat = -\tilde{Q}^{*} = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_1, q_2, q_3$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_0 = 0$ and $q'_k = 0$.
 
 ### Properties
 

@@ -54,7 +54,7 @@ Two features of the rule carry the meaning of the operator.
 
 The first factor is **not** conjugated and the second **is**: the pair of signs $\overline{Q^0}$ and $-\overline{Q^k}$ is what makes the operator Hermitian rather than an inner automorphism, and it is the coordinate trace of the dagger.
 
-The rule is **linear in $\tilde U$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde U$ because both steps of the product are bilinear and only one factor carries $\tilde U$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde U \mapsto \lambda \tilde U$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and that $\mathrm{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $z$: doubling the operand quadruples the operator.
+The rule is **linear in $\tilde U$ and quadratic in $\tilde{Q}$**. It is linear in $\tilde U$ because both steps of the product are bilinear and only one factor carries $\tilde U$; linearity over $\mathbb{C}$ follows because the central scalar $\lambda$ in $\tilde U \mapsto \lambda \tilde U$ passes through both factors. It is quadratic in $\tilde{Q}$ because $\tilde{Q}$ occurs once on each side and once conjugated. This is the component form of the two laws of *Biquaternion Rotations and Lorentz Transformations*, that $\mathrm{H}_{\tilde{Q}\tilde{R}} = \mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}$ and that $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$ for a central $A$: doubling the operand quadruples the operator.
 
 **Corollary (the operator of a scalar multiple).** In particular $\mathrm{H}_{\tilde{Q}} = 0$ if and only if $\tilde{Q} = 0$, since the scalar component of the rule contains the nonzero factor $\overline{Q^0}$ composed with $Q^0$ as soon as any component of $\tilde{Q}$ is nonzero; and $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$, since $\lvert i\rvert^{2} = 1$.
 
@@ -208,7 +208,7 @@ The two regimes are decided by two numbers: whether the biquaternion norm $\sum_
 | $(\tilde{Q}^{*})^\mu = (\overline{Q^0},-\overline{Q^1},-\overline{Q^2},-\overline{Q^3})$ | the dagger in coordinates |
 | $\mathrm{H}_{\tilde{Q}}(e_0) = \tilde{Q}\tilde{Q}^{*}$, scalar part $\sum_\mu\lvert Q^\mu\rvert^{2}$ | image of the identity; the Hermitian form |
 | $\mathrm{H}_{\tilde{Q}}(e_k)^0 = 2i\,\mathrm{Im}(Q^0\overline{Q^k}) - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^k$ | scalar part of the image of a vector unit |
-| $\mathrm{H}_{z\tilde{Q}} = \lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$ | central rule; blindness to $i$ |
+| $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$ | central rule; blindness to $i$ |
 | $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$ or $1$ | outside the cone, and on it |
 | $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $N(\tilde{Q}) = 0$ | nilpotent if $Q^0 = 0$, projection up to scale otherwise |
 | $\tilde\Pi = \tfrac12(e_0 + i\mathbf{n}\cdot\mathbf{e})$ | the idempotent whose line is the image on the cone |

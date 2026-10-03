@@ -92,7 +92,7 @@ The boost biquaternion $\tilde{\Lambda}$ has the following properties.
 **2. It is Hermitian.** Since $\tilde{\Lambda} \in \mathbb{M}_+$, its Hermitian conjugate is
 
 $$
-\tilde{\Lambda}^{*} = \tilde{\Lambda}^{*} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}} = \tilde{\Lambda}.
+\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}} = \tilde{\Lambda}.
 $$
 
 **3. It has unit norm.** The biquaternion norm is

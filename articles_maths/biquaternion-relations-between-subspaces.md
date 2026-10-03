@@ -200,4 +200,5 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 - *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`)
 - *Biquaternion Anti-Hermitian Subspace* (`articles_maths/biquaternion-anti-hermitian-subspace.md`)
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their group structure and the two spaces each defines
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra, its multiplication and its three decompositions in their original setting
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra and its three decompositions in their original setting
+- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product, the commutator and the symmetrized product in their original setting

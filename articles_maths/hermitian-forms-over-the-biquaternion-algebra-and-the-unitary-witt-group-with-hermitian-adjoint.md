@@ -2,31 +2,31 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde R\mapsto \tilde R\tilde Y\tilde{R}^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{\dagger}HS$ acts, that is, the objects the two-sided operators are made to transform.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde R\mapsto \tilde R\tilde P\tilde{R}^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{\dagger}HS$ acts, that is, the objects the two-sided operators are made to transform.
 
 The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, **the invariant is the inertia** (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$, the isometry group of the unit form is the unitary slice $U=U(2)$, and the forms modulo the hyperbolic ones form the **unitary Witt group** $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.
 
 ## Hermitian Forms on the Algebra
 
-**Definition.** Let $M$ be a right $\mathbb{B}$-module and let $h:M\times M\to\mathbb{B}$ be sesquilinear, $h(\tilde R\lambda+\tilde Y\mu,z)=\bar{\lambda}h(\tilde R,z)+\bar{\mu}h(\tilde Y,z)$ and $h(\tilde R,\tilde Y\lambda)=h(\tilde R,\tilde Y)\lambda$. The form is **Hermitian** if in addition
+**Definition.** Let $M$ be a right $\mathbb{B}$-module and let $h:M\times M\to\mathbb{B}$ be sesquilinear, $h(\tilde R\lambda+\tilde P\mu,\tilde Q)=\bar{\lambda}h(\tilde R,\tilde Q)+\bar{\mu}h(\tilde P,\tilde Q)$ and $h(\tilde R,\tilde P\lambda)=h(\tilde R,\tilde P)\lambda$. The form is **Hermitian** if in addition
 
 $$
-h(\tilde Y,\tilde R) = h(\tilde R,\tilde Y)^{\dagger}.
+h(\tilde P,\tilde R) = h(\tilde R,\tilde P)^{\dagger}.
 $$
 
-The form is **non-degenerate** if $h(\tilde R,\tilde Y)=0$ for all $\tilde Y$ implies $\tilde R=0$, and **positive definite** if $h(\tilde R,\tilde R)\in\mathbb{M}_+$ for $\tilde R\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint*).
+The form is **non-degenerate** if $h(\tilde R,\tilde P)=0$ for all $\tilde P$ implies $\tilde R=0$, and **positive definite** if $h(\tilde R,\tilde R)\in\mathbb{M}_+$ for $\tilde R\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Clifford Algebra with Hermitian Adjoint*).
 
 **Proposition (the forms of the rank-one module).** Let $M=\mathbb{B}$ with the right action of the algebra on itself. Every Hermitian form on $M$ is
 
 $$
-h_{H}(\tilde R,\tilde Y) = \tilde{R}^{*}H\,\tilde Y\qquad\text{with } H\in\mathbb{M}_+,
+h_{H}(\tilde R,\tilde P) = \tilde{R}^{*}H\,\tilde P\qquad\text{with } H\in\mathbb{M}_+,
 $$
 
-and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\Phi(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde Y)=\Phi(\tilde R)^{\dagger}\Phi(H)\Phi(\tilde Y)$.
+and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\Phi(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde P)=\Phi(\tilde R)^{\dagger}\Phi(H)\Phi(\tilde P)$.
 
-*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde Y)=\tilde{R}^{*}h(e_{0},\tilde Y)=\tilde{R}^{*}h(e_{0},e_{0})\tilde Y$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
+*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde P)=\tilde{R}^{*}h(e_{0},\tilde P)=\tilde{R}^{*}h(e_{0},e_{0})\tilde P$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
 
-**Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$, of scalar part $\mathrm{Sc}(\tilde{R}^{*}\tilde Y)=\sum_{\mu}R_{\mu}^{*}Y_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
+**Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$, of scalar part $\mathrm{Sc}(\tilde{R}^{*}\tilde P)=\sum_{\mu}R_{\mu}^{*}P_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
 
 **Example (the norm form, and why it is not here).** The quaternion norm $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the complex bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Biquaternion Norm and Invertibility*).
 
@@ -112,7 +112,7 @@ $$
 
 ## $\varepsilon$-Hermitian Forms and the Signed Involution
 
-**Definition.** Let $\theta$ be an involution of $\mathbb{B}$ and let $\varepsilon=\pm1$. A form is **$\varepsilon$-Hermitian** for $\theta$ if $h(\tilde Y,\tilde R)=\varepsilon\,\theta(h(\tilde R,\tilde Y))$. The case $\varepsilon=+1$ is the Hermitian case of the article; the case $\varepsilon=-1$ is the **skew-Hermitian** case, and for $\theta=\mathrm{id}$ the two cases are the symmetric and the alternating bilinear forms, whose classification over a field of characteristic not two is again by congruence but with the alternating forms contributing the hyperbolic class.
+**Definition.** Let $\theta$ be an involution of $\mathbb{B}$ and let $\varepsilon=\pm1$. A form is **$\varepsilon$-Hermitian** for $\theta$ if $h(\tilde P,\tilde R)=\varepsilon\,\theta(h(\tilde R,\tilde P))$. The case $\varepsilon=+1$ is the Hermitian case of the article; the case $\varepsilon=-1$ is the **skew-Hermitian** case, and for $\theta=\mathrm{id}$ the two cases are the symmetric and the alternating bilinear forms, whose classification over a field of characteristic not two is again by congruence but with the alternating forms contributing the hyperbolic class.
 
 **Remark (the four combinations of the corpus).** The corpus's four two-sided operators are the four combinations of the left twist, identity or signed, and the right factor, inverse or dagger: $\Theta_{\tilde R}$ for the twisted cases and $\mathrm{H}_{\tilde R}$ for the Hermitian ones (*Mixed Inner Conjugation and Hermitian Adjoint*). Each of them acts on the forms of the corresponding type: the congruence $H\mapsto S^{\dagger}HS$ is the Hermitian case, the congruence $H\mapsto S^{\dagger}HS$ with the twist $\alpha$ is the signed case, and the two have the same inertia theory because the twist is an isomorphism of $\mathbb{M}_+$.
 
@@ -128,14 +128,14 @@ $$
 
 ## Summary
 
-A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $H$, $h_{H}(\tilde R,\tilde Y)=\tilde{R}^{*}H\tilde Y$; congruence $H\mapsto S^{\dagger}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(p,q,r)$ with $p+q+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$. The signature $\sigma=p-q$ and the rank are additive under the orthogonal sum. The isometry group of the unit form $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$ is the unitary slice $U=U(2)$, and the isometry group of the quaternion norm is a different, non-compact group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **unitary Witt group $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
+A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $H$, $h_{H}(\tilde R,\tilde P)=\tilde{R}^{*}H\tilde P$; congruence $H\mapsto S^{\dagger}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(p,q,r)$ with $p+q+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{p},-1_{q},0_{r})$. The signature $\sigma=p-q$ and the rank are additive under the orthogonal sum. The isometry group of the unit form $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$ is the unitary slice $U=U(2)$, and the isometry group of the quaternion norm is a different, non-compact group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **unitary Witt group $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $h_{H}(\tilde R,\tilde Y)=\tilde{R}^{*}H\tilde Y$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
-| $h_{e_{0}}(\tilde R,\tilde Y)=\tilde{R}^{*}\tilde Y$ | The unit form; positive definite; trace form of the dagger |
+| $h_{H}(\tilde R,\tilde P)=\tilde{R}^{*}H\tilde P$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
+| $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$ | The unit form; positive definite; trace form of the dagger |
 | $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ | The quaternion norm; **not** a Hermitian form of the dagger |
 | $H'\sim H \iff H'=S^{\dagger}HS$ | Congruence; the two-sided operator on the form matrix |
 | $(p,q,r)$ | Inertia: positive, negative and null dimensions |

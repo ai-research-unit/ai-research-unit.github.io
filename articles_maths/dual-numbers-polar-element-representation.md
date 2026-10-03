@@ -10,10 +10,10 @@ The polar representation of the dual numbers is the **third and last row of the 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{D}'$. A general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm $N(Z) = Z\bar{Z} = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
 
 ## Why a Single Scale and a Single Nilpotent Factor
 
@@ -31,7 +31,7 @@ of real dimension two. A polar representation writes every element of a group as
 |---|---|---|---|
 | Scale | $1$ | $r > 0$ | modulus $|a|$ |
 | Sign | $0$ | $\{\pm 1\}$ | the order-two component of $\mathbb{R}^\times$ |
-| Shear | $1$ | $s \in \mathbb{R}$ | parabolic angle $s = b/a$ |
+| Shear | $1$ | $s \in \mathbb{R}$ | parabolic angle $s = a'/a$ |
 
 So there is one positive scale, one discrete sign, and one real angle, and the angle is not a compact phase but a shear parameter.
 
@@ -57,24 +57,24 @@ The trichotomy is exhaustive for a generator of square $\sigma\,\mathrm{id}$ wit
 
 ### The Norm
 
-The norm is $N(Z) = Z\bar{Z} = a^2$, multiplicative and degenerate, with vanishing locus the maximal ideal $\mathrm{M}$; this is established in *Dual-Numbers Norm and Invertibility*. On a unit it is a nonzero element of $R$, and over $\mathbb{R}$ it is a positive real number.
+The norm is $N(A) = A\bar A = a^2$, multiplicative and degenerate, with vanishing locus the maximal ideal $\mathrm{M}$; this is established in *Dual-Numbers Norm and Invertibility*. On a unit it is a nonzero element of $R$, and over $\mathbb{R}$ it is a positive real number.
 
 ### The Square Root and the Branch
 
-**Definition.** The **modulus** of $Z = a + \varepsilon b$ over $\mathbb{R}$ is
+**Definition.** The **modulus** of $A = a + \varepsilon a'$ over $\mathbb{R}$ is
 
 $$
-r(Z) = \sqrt{|N(Z)|} = \sqrt{a^2} = |a|.
+r(A) = \sqrt{|N(A)|} = \sqrt{a^2} = |a|.
 $$
 
 The modulus takes values in $\mathbb{R}_{\ge 0}$ and is the continuous multiplicative function on the units that equals $|\lambda|$ on the real scalars and is invariant under the shear group, by the theorem of *Dual-Numbers Norm and Invertibility*; those two requirements characterise it, and without the shear-invariance it is one of a one-parameter family. It is a genuine positive scale on the units and vanishes on the maximal ideal.
 
 ### The Sign
 
-**Definition.** Over $\mathbb{R}$ the **sign** of a unit $Z = a + \varepsilon b$ is
+**Definition.** Over $\mathbb{R}$ the **sign** of a unit $A = a + \varepsilon a'$ is
 
 $$
-u(Z) = \operatorname{sgn}(a) \in \{\pm 1\}.
+u(A) = \operatorname{sgn}(a) \in \{\pm 1\}.
 $$
 
 It is the discrete part of the real scale, and it distinguishes the two connected components of $(\mathbb{D}')^\times$.
@@ -99,32 +99,32 @@ The exponential is polynomial because $(s\varepsilon)^2 = 0$; the series termina
 
 ### The Parabolic Angle
 
-**Definition.** If $Z = a + \varepsilon b$ is a unit, the **parabolic angle** of $Z$ is
+**Definition.** If $A = a + \varepsilon a'$ is a unit, the **parabolic angle** of $A$ is
 
 $$
-s(Z) = \frac{b}{a} \in \mathbb{R}.
+s(A) = \frac{a'}{a} \in \mathbb{R}.
 $$
 
-The angle is the parameter of the shear factor: $Z = a\,e^{(b/a)\varepsilon}$. It is additive under multiplication, since $s(zw) = s(Z) + s(W)$ when the scale is one, and it is globally defined without period.
+The angle is the parameter of the shear factor: $A = a\,e^{(a'/a)\varepsilon}$. It is additive under multiplication, since $s(AB) = s(A) + s(B)$ when the scale is one, and it is globally defined without period.
 
 ## The Theorem
 
 ### Statement
 
-**Theorem.** Let $R$ be an ordered commutative ring with $2$ invertible, and let $Z = a + \varepsilon b$ be a unit, so that $a \in R^\times$. Then $Z$ has a unique representation
+**Theorem.** Let $R$ be an ordered commutative ring with $2$ invertible, and let $A = a + \varepsilon a'$ be a unit, so that $a \in R^\times$. Then $A$ has a unique representation
 
 $$
-Z = r\,u\,\exp(s\varepsilon), \qquad r > 0, \quad u \in \{\pm 1\}, \quad s \in R,
+A = r\,u\,\exp(s\varepsilon), \qquad r > 0, \quad u \in \{\pm 1\}, \quad s \in R,
 $$
 
-with $r = |a|$, $u = \operatorname{sgn}(a)$ and $s = a^{-1}b$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $a \neq 0$.
+with $r = |a|$, $u = \operatorname{sgn}(a)$ and $s = a^{-1}a'$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $a \neq 0$.
 
 ### Existence
 
 Since $a$ is a unit, one has $a = r\,u$ with $r = |a| > 0$ and $u = \operatorname{sgn}(a)$, a nonzero element of an ordered ring being positive or negative, and then
 
 $$
-Z = a\Bigl(1 + a^{-1}\varepsilon b\Bigr) = r\,u\,\exp\bigl(a^{-1}\varepsilon b\bigr),
+A = a\Bigl(1 + a^{-1}\varepsilon a'\Bigr) = r\,u\,\exp\bigl(a^{-1}\varepsilon a'\bigr),
 $$
 
 using $\exp(s\varepsilon) = 1 + s\varepsilon$. So the polar data exist for every unit.
@@ -139,35 +139,35 @@ The domain of the polar representation is the set of units, $\mathbb{D}' \setmin
 
 ## The Algorithm
 
-Given a unit $Z = a + \varepsilon b$ with $a \in R^\times$ (over a field, $a \neq 0$), the polar data are computed as follows.
+Given a unit $A = a + \varepsilon a'$ with $a \in R^\times$ (over a field, $a \neq 0$), the polar data are computed as follows.
 
-1. **Real part.** Read $a = \operatorname{Re} Z$.
+1. **Real part.** Read $a = \operatorname{Re} A$.
 2. **Modulus.** Set $r = |a|$.
 3. **Sign.** Set $u = \operatorname{sgn}(a)$, so that $a = ru$.
-4. **Angle.** Set $s = a^{-1}b$.
-5. **Reassembly.** Output $Z = r\,u\,(1 + s\varepsilon)$.
+4. **Angle.** Set $s = a^{-1}a'$.
+5. **Reassembly.** Output $A = r\,u\,(1 + s\varepsilon)$.
 
-The algorithm is exact in rational arithmetic when $a$ and $b$ are rational; no transcendental quantity is produced, because the exponential is polynomial.
+The algorithm is exact in rational arithmetic when $a$ and $a'$ are rational; no transcendental quantity is produced, because the exponential is polynomial.
 
 ## A Worked Example
 
-Take $Z = 2 + 3\varepsilon$.
+Take $A = 2 + 3\varepsilon$.
 
 1. $a = 2$.
 2. $r = |2| = 2$.
 3. $u = \operatorname{sgn}(2) = 1$.
 4. $s = 3/2$.
-5. $Z = 2\cdot 1\cdot(1 + \tfrac{3}{2}\varepsilon) = 2 + 3\varepsilon$.
+5. $A = 2\cdot 1\cdot(1 + \tfrac{3}{2}\varepsilon) = 2 + 3\varepsilon$.
 
-Take $Z = -4 + \varepsilon$.
+Take $A = -4 + \varepsilon$.
 
 1. $a = -4$.
 2. $r = 4$.
 3. $u = \operatorname{sgn}(-4) = -1$.
 4. $s = 1/(-4) = -\tfrac{1}{4}$.
-5. $Z = 4\cdot(-1)\cdot(1 - \tfrac{1}{4}\varepsilon) = -4 + \varepsilon$.
+5. $A = 4\cdot(-1)\cdot(1 - \tfrac{1}{4}\varepsilon) = -4 + \varepsilon$.
 
-Take $Z = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar representation fails: the element lies on the boundary $\mathrm{M}$ and is a zero divisor.
+Take $A = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar representation fails: the element lies on the boundary $\mathrm{M}$ and is a zero divisor.
 
 ## The Factors and Their Meanings
 
@@ -176,13 +176,13 @@ Take $Z = 3\varepsilon$. Then $a = 0$, no modulus is defined, and the polar repr
 | Scale | $r = |a|$ | $\mathbb{R}_{>0}$ | the unique real modulus |
 | Sign | $u = \operatorname{sgn}(a)$ | $\{\pm 1\}$ | the component of the unit group |
 | Shear | $e^{s\varepsilon}$ | $1 + \mathrm{M}$ | the nilpotent central factor |
-| Parabolic angle | $s = b/a$ | $\mathbb{R}$ | the additive shear parameter |
+| Parabolic angle | $s = a'/a$ | $\mathbb{R}$ | the additive shear parameter |
 
 The scale and the sign give the real factor $a = ru$; the shear gives the nilpotent factor $e^{s\varepsilon}$. The two are independent, and their product is the whole unit.
 
 ### The Scale
 
-The scale $r = |a|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + b^2}$ and of the split-complex modulus $\sqrt{|a^2 - b^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
+The scale $r = |a|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
 
 ### The Central Factor
 
@@ -192,29 +192,29 @@ The factor $e^{s\varepsilon}$ is central because the algebra is commutative, and
 
 ### The Nilpotent Elements
 
-For $Z = \varepsilon b$ with $b \neq 0$ the real part vanishes, $r = 0$, and no polar data exist; the polar representation degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
+For $A = \varepsilon a'$ with $a' \neq 0$ the real part vanishes, $r = 0$, and no polar data exist; the polar representation degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
 
 ### The Real Elements
 
-For $Z = a$ real, $a \neq 0$, the angle is $s = 0$ and $Z = r\,u\,e^{0} = ru$; the polar form reduces to the modulus and the sign.
+For $A = a$ real, $a \neq 0$, the angle is $s = 0$ and $A = r\,u\,e^{0} = ru$; the polar form reduces to the modulus and the sign.
 
 ### The Pure Shears
 
-For $Z = 1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = 1$, so $Z = e^{s\varepsilon}$; the pure shears are exactly the norm-one elements of positive real part.
+For $A = 1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = 1$, so $A = e^{s\varepsilon}$; the pure shears are exactly the norm-one elements of positive real part.
 
 ### The Negative Real Axis
 
-For $Z = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the element lies in the other component of the unit group, and there is no continuous way to pass between the components, since the shear parameter does not distinguish them.
+For $A = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the element lies in the other component of the unit group, and there is no continuous way to pass between the components, since the shear parameter does not distinguish them.
 
 ## Relation to the Two Partial Forms
 
-The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + b^2}$ and $\theta = \arctan(b/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - b^2|}$ and $\psi = \operatorname{artanh}(b/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
+The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\psi = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
-\rho \longrightarrow |a|, \qquad \theta \text{ or } \psi \longrightarrow s = \frac{b}{a}, \qquad e^{i\theta} \text{ or } e^{\psi j} \longrightarrow 1 + s\varepsilon.
+\rho \longrightarrow |a|, \qquad \theta \text{ or } \psi \longrightarrow s = \frac{a'}{a}, \qquad e^{i\theta} \text{ or } e^{\psi j} \longrightarrow 1 + s\varepsilon.
 $$
 
-The two transcendental functions $\theta$ and $\psi$ collapse to the rational function $b/a$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
+The two transcendental functions $\theta$ and $\psi$ collapse to the rational function $a'/a$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
 
 ## The Series of Polar Representations
 
@@ -222,8 +222,8 @@ The polar representations of the number systems of the corpus form a series, of 
 
 | Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
-| $\mathbb{C}$ | $a^2 + b^2$ | $\sqrt{a^2+b^2}$ | $e^{i\theta}$ | elliptic |
-| $\mathbb{D} = \mathbb{R}[j]$ | $a^2 - b^2$ | $\sqrt{|a^2-b^2|}$ | $e^{\psi j}$ | hyperbolic |
+| $\mathbb{C}$ | $a^2 + a'^2$ | $\sqrt{a^2+a'^2}$ | $e^{i\theta}$ | elliptic |
+| $\mathbb{D} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $e^{\psi j}$ | hyperbolic |
 | $\mathbb{D}'$ | $a^2$ | $|a|$ | $1 + s\varepsilon$ | parabolic |
 | $\mathbb{H}$ | $a^2 + \|\vec v\|^2$ | $\|Q\|$ | unit sphere | spherical |
 | $\mathbb{H}_{\mathrm{s}}$ | $a^2 + b^2 - c^2 - d^2$ | $\sqrt{|\cdot|}$ | one-sheeted hyperboloid | hyperbolic |
@@ -237,10 +237,10 @@ The dual row is the missing link between the two-dimensional cases and the quate
 The polar representation of the dual-number algebra is
 
 $$
-Z = r\,u\,\exp(s\varepsilon), \qquad r = |a| > 0, \quad u = \operatorname{sgn}(a) \in \{\pm 1\}, \quad s = \frac{b}{a},
+A = r\,u\,\exp(s\varepsilon), \qquad r = |a| > 0, \quad u = \operatorname{sgn}(a) \in \{\pm 1\}, \quad s = \frac{a'}{a},
 $$
 
-for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = b/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series that continues with the quaternion, split-quaternion, biquaternion and split-biquaternion forms.
+for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = a'/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series that continues with the quaternion, split-quaternion, biquaternion and split-biquaternion forms.
 
 ## Summary of Notation
 
@@ -249,16 +249,16 @@ for every dual number $Z = a + \varepsilon b$ with $a \neq 0$. It has a single p
 | $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
 | $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
 | $\mathbb{D}$ | Split-complex algebra, unit $j$, $j^2 = +1$ |
-| $Z = a + \varepsilon b$ | General dual number |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
-| $N(Z) = Z\bar{Z} = a^2$ | Norm |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $\bar{A} = a - \varepsilon a'$ | Dual conjugation |
+| $N(A) = A\bar A = a^2$ | Norm |
 | $r = |a|$ | Modulus, real size on the units (shear-invariant) |
 | $u = \operatorname{sgn}(a)$ | Sign, component of the unit group |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, boundary of the polar domain |
 | $1 + \mathrm{M}$ | Shear group, image of $s \mapsto e^{s\varepsilon}$ |
 | $e^{s\varepsilon} = 1 + s\varepsilon$ | Nilpotent central factor |
-| $s = a^{-1}b$ | Parabolic angle |
+| $s = a^{-1}a'$ | Parabolic angle |
 | $\mathbb{B}$ | Biquaternion algebra, the model of the polar series |
 | $\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$ | Split quaternions and split biquaternions |
 

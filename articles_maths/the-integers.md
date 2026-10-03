@@ -38,7 +38,7 @@ is an injective homomorphism of semirings whose image is the set of nonnegative 
 **Definition.** The **negation** is $-[(a,b)] = [(b,a)]$, and one writes $[(a,b)] = \iota(a) - \iota(b)$; the **absolute value** is
 
 $$
-\lvert x \rvert = \begin{cases} x, & x \geq 0, \\ -x, & x < 0. \end{cases}
+\lvert n \rvert = \begin{cases} n, & n \geq 0, \\ -n, & n < 0. \end{cases}
 $$
 
 **Theorem (universal property).** Let $A$ be a commutative ring with identity and let $f : \mathbb{N} \to A$ be a homomorphism of semirings, that is, a map preserving $+, \cdot, 0, 1$. Then there is a unique ring homomorphism $F : \mathbb{Z} \to A$ with $F \circ \iota = f$. In particular $\mathbb{Z}$ is the **initial object** in the category of commutative rings with identity: for every such ring $A$ there is a unique unital homomorphism $\mathbb{Z} \to A$, sending $n$ to $n \cdot 1_A$, and this map is injective exactly when $A$ has characteristic $0$.
@@ -51,39 +51,39 @@ $$
 
 ### The Ring Structure
 
-**Theorem.** $\mathbb{Z}$ is a commutative ring with identity of **characteristic zero**, and it is an **integral domain**: if $xy = 0$ then $x = 0$ or $y = 0$.
+**Theorem.** $\mathbb{Z}$ is a commutative ring with identity of **characteristic zero**, and it is an **integral domain**: if $nm = 0$ then $n = 0$ or $m = 0$.
 
-**Proof.** The ring axioms were verified in the construction. If $x = \iota(a) - \iota(b)$ and $y = \iota(c) - \iota(d)$ with $xy = 0$, then $\iota(ac + bd) = \iota(ad + bc)$, so $ac + bd = ad + bc$ in $\mathbb{N}$. If $a \geq b$, write $a = b + m$ with $m \in \mathbb{N}$; substituting gives $bc + mc + bd = bd + md + bc$, hence $mc = md$ and $m(c-d) = 0$, so $m = 0$ or $c = d$ by the integrality of $\mathbb{N}$, that is, $x = 0$ or $y = 0$. If $a < b$, the same computation with $b = a + m$ gives $m(d-c) = 0$, so again $x = 0$ or $y = 0$. The characteristic is zero because $\iota$ is injective and $n \cdot 1 = \iota(n) \neq 0$ for $n > 0$.
+**Proof.** The ring axioms were verified in the construction. If $n = \iota(a) - \iota(b)$ and $m = \iota(c) - \iota(d)$ with $nm = 0$, then $\iota(ac + bd) = \iota(ad + bc)$, so $ac + bd = ad + bc$ in $\mathbb{N}$. If $a \geq b$, write $a = b + k$ with $k \in \mathbb{N}$; substituting gives $bc + kc + bd = bd + kd + bc$, hence $kc = kd$ and $k(c-d) = 0$, so $k = 0$ or $c = d$ by the integrality of $\mathbb{N}$, that is, $n = 0$ or $m = 0$. If $a < b$, the same computation with $b = a + k$ gives $k(d-c) = 0$, so again $n = 0$ or $m = 0$. The characteristic is zero because $\iota$ is injective and $k \cdot 1 = \iota(k) \neq 0$ for $k > 0$.
 
-**Theorem (cancellation).** If $xy = xz$ and $x \neq 0$ then $y = z$. Consequently the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is cancellative and its group of units is $\{1, -1\}$.
+**Theorem (cancellation).** If $nm = nk$ and $n \neq 0$ then $m = k$. Consequently the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is cancellative and its group of units is $\{1, -1\}$.
 
-**Proof.** $x(y-z) = 0$ and the integrality gives $y - z = 0$. The units are the divisors of $1$; an integer $u$ with $uv = 1$ has $\lvert u \rvert \lvert v \rvert = 1$ in $\mathbb{N}$, so $\lvert u\rvert = 1$.
+**Proof.** $n(m-k) = 0$ and the integrality gives $m - k = 0$. The units are the divisors of $1$; an integer $u$ with $uv = 1$ has $\lvert u \rvert \lvert v \rvert = 1$ in $\mathbb{N}$, so $\lvert u\rvert = 1$.
 
-**Theorem.** The **division algorithm** holds in $\mathbb{Z}$: for all $a, b \in \mathbb{Z}$ with $b \neq 0$ there are $q, r \in \mathbb{Z}$ with
+**Theorem.** The **division algorithm** holds in $\mathbb{Z}$: for all $n, m \in \mathbb{Z}$ with $m \neq 0$ there are $q, r \in \mathbb{Z}$ with
 
 $$
-a = qb + r, \qquad 0 \leq r < \lvert b \rvert ,
+n = qm + r, \qquad 0 \leq r < \lvert m \rvert ,
 $$
 
-and $q, r$ are unique. Thus $\mathbb{Z}$ is a **Euclidean domain** with Euclidean function $x \mapsto \lvert x \rvert$.
+and $q, r$ are unique. Thus $\mathbb{Z}$ is a **Euclidean domain** with Euclidean function $n \mapsto \lvert n \rvert$.
 
-**Proof.** Reduce to the nonnegative case: if $a \geq 0$ and $b > 0$, apply the division algorithm of *The Natural Numbers*; if $a < 0$ or $b < 0$, adjust signs. Uniqueness is the uniqueness of the natural division algorithm.
+**Proof.** Reduce to the nonnegative case: if $n \geq 0$ and $m > 0$, apply the division algorithm of *The Natural Numbers*; if $n < 0$ or $m < 0$, adjust signs. Uniqueness is the uniqueness of the natural division algorithm.
 
 ### The Order
 
-**Theorem.** There is a unique total order $\leq$ on $\mathbb{Z}$ extending the order of $\mathbb{N}$ under $\iota$ and making $\mathbb{Z}$ an **ordered ring**, that is, such that for all $x, y, z$,
+**Theorem.** There is a unique total order $\leq$ on $\mathbb{Z}$ extending the order of $\mathbb{N}$ under $\iota$ and making $\mathbb{Z}$ an **ordered ring**, that is, such that for all $n, m, k$,
 
 $$
-x \leq y \implies x + z \leq y + z, \qquad 0 \leq x,\ 0 \leq y \implies 0 \leq xy .
+n \leq m \implies n + k \leq m + k, \qquad 0 \leq n,\ 0 \leq m \implies 0 \leq nm .
 $$
 
-With this order, $\mathbb{Z}$ is a discrete ordered ring: every element has an immediate successor $x+1$ and an immediate predecessor $x-1$, and there is no element strictly between $x$ and $x+1$.
+With this order, $\mathbb{Z}$ is a discrete ordered ring: every element has an immediate successor $n+1$ and an immediate predecessor $n-1$, and there is no element strictly between $n$ and $n+1$.
 
-**Proof.** Define $x \geq 0$ if $x = \iota(n)$ for some $n$, and $x \leq y$ if $y - x \geq 0$. The order axioms follow from the corresponding facts in $\mathbb{N}$ and the translation invariance of the differences. Discreteness is immediate from the definition of the successor.
+**Proof.** Define $n \geq 0$ if $n = \iota(k)$ for some $k$, and $n \leq m$ if $m - n \geq 0$. The order axioms follow from the corresponding facts in $\mathbb{N}$ and the translation invariance of the differences. Discreteness is immediate from the definition of the successor.
 
-**Theorem.** $\mathbb{Z}$ is **Archimedean** as an ordered group: for $x > 0$ and any $y$ there is $n \in \mathbb{N}$ with $nx > y$. Every nonempty subset of $\mathbb{Z}$ bounded below has a least element, and every nonempty subset bounded above has a greatest element.
+**Theorem.** $\mathbb{Z}$ is **Archimedean** as an ordered group: for $n > 0$ and any $m$ there is $k \in \mathbb{N}$ with $kn > m$. Every nonempty subset of $\mathbb{Z}$ bounded below has a least element, and every nonempty subset bounded above has a greatest element.
 
-**Proof.** Choose $m$ with $y \leq \iota(m)$, which is possible because $y$ is an integer. Since $x > 0$ in $\mathbb{Z}$ we have $x \geq 1$, so $\iota(m+1) \leq x\,\iota(m+1)$ and $n = m+1$ satisfies $nx \geq \iota(m+1) > y$. For the second statement, let $A$ be nonempty and bounded below by $b$; then $\{a - b : a \in A\}$ is a nonempty subset of $\mathbb{N}$, so it has a least element $a_0 - b$ by the well ordering of $\mathbb{N}$, and $a_0$ is the least element of $A$.
+**Proof.** Choose $j$ with $m \leq \iota(j)$, which is possible because $m$ is an integer. Since $n > 0$ in $\mathbb{Z}$ we have $n \geq 1$, so $\iota(j+1) \leq n\,\iota(j+1)$ and $j+1$ satisfies $(j+1)n \geq \iota(j+1) > m$. For the second statement, let $A$ be nonempty and bounded below by $m$; then $\{n - m : n \in A\}$ is a nonempty subset of $\mathbb{N}$, so it has a least element $n_0 - m$ by the well ordering of $\mathbb{N}$, and $n_0$ is the least element of $A$.
 
 **Remark.** The order type of $(\mathbb{Z}, <)$ is $\zeta$, the order type of the integers; it is a countable discrete order without endpoints, and it is the unique countable discrete order without endpoints up to isomorphism. This is in contrast with $\mathbb{N}$, whose order type $\omega$ has a least element.
 
@@ -91,21 +91,21 @@ With this order, $\mathbb{Z}$ is a discrete ordered ring: every element has an i
 
 ### Units, Primes and gcd
 
-**Definition.** For $a, b \in \mathbb{Z}$, $a \mid b$ if $b = ac$ for some $c$. Two integers are **associates** if each divides the other, which in $\mathbb{Z}$ means $a = \pm b$. An element $p$ is **irreducible** if $p \neq 0$, $p$ is not a unit, and $p = ab$ forces $a$ or $b$ to be a unit; $p$ is **prime** if $p$ is not a unit and $p \mid ab$ implies $p \mid a$ or $p \mid b$. A **greatest common divisor** of $a$ and $b$ is a common divisor divisible by every common divisor.
+**Definition.** For $n, m \in \mathbb{Z}$, $n \mid m$ if $m = nk$ for some $k$. Two integers are **associates** if each divides the other, which in $\mathbb{Z}$ means $n = \pm m$. An element $p$ is **irreducible** if $p \neq 0$, $p$ is not a unit, and $p = nm$ forces $n$ or $m$ to be a unit; $p$ is **prime** if $p$ is not a unit and $p \mid nm$ implies $p \mid n$ or $p \mid m$. A **greatest common divisor** of $n$ and $m$ is a common divisor divisible by every common divisor.
 
 **Theorem.** In $\mathbb{Z}$ an element is irreducible if and only if it is prime, and the irreducibles are the numbers $\pm p$ with $p$ a prime of $\mathbb{N}$.
 
-**Proof.** An irreducible is prime in every unique factorisation domain; conversely a prime is irreducible, since $p = ab$ with $p$ prime gives $p \mid a$ or $p \mid b$, so one of $a, b$ is an associate of $p$ and the other is a unit. The irreducibles of $\mathbb{N}$ are its primes, and adjoining the sign gives the irreducibles of $\mathbb{Z}$.
+**Proof.** An irreducible is prime in every unique factorisation domain; conversely a prime is irreducible, since $p = nm$ with $p$ prime gives $p \mid n$ or $p \mid m$, so one of $n, m$ is an associate of $p$ and the other is a unit. The irreducibles of $\mathbb{N}$ are its primes, and adjoining the sign gives the irreducibles of $\mathbb{Z}$.
 
-**Theorem (Bézout).** Any two integers $a, b$, not both zero, have a greatest common divisor $d$, unique up to sign, and there are $u, v \in \mathbb{Z}$ with
+**Theorem (Bézout).** Any two integers $n, m$, not both zero, have a greatest common divisor $d$, unique up to sign, and there are $u, v \in \mathbb{Z}$ with
 
 $$
-ua + vb = d .
+un + vm = d .
 $$
 
-The Euclidean algorithm computes $d$, and $d$ is determined up to sign by this property: it is the least positive element of the ideal generated by $a$ and $b$.
+The Euclidean algorithm computes $d$, and $d$ is determined up to sign by this property: it is the least positive element of the ideal generated by $n$ and $m$.
 
-**Proof.** The set $I = \{ua + vb : u, v \in \mathbb{Z}\}$ is the ideal generated by $a$ and $b$; it contains a least positive element $d$ by the order properties, and division of $a$ by $d$ leaves remainder $r = a - qd \in I$ with $0 \leq r < d$, whence $r = 0$ and $d \mid a$; similarly $d \mid b$, and every common divisor of $a,b$ divides every element of $I$, hence $d$. The Euclidean algorithm computes $I$ by decreasing remainders, terminating by the well ordering from below.
+**Proof.** The set $I = \{un + vm : u, v \in \mathbb{Z}\}$ is the ideal generated by $n$ and $m$; it contains a least positive element $d$ by the order properties, and division of $n$ by $d$ leaves remainder $r = n - qd \in I$ with $0 \leq r < d$, whence $r = 0$ and $d \mid n$; similarly $d \mid m$, and every common divisor of $n,m$ divides every element of $I$, hence $d$. The Euclidean algorithm computes $I$ by decreasing remainders, terminating by the well ordering from below.
 
 ### Principal Ideals and Unique Factorisation
 
@@ -116,20 +116,20 @@ The Euclidean algorithm computes $d$, and $d$ is determined up to sign by this p
 **Theorem (fundamental theorem of arithmetic).** Every nonzero non-unit of $\mathbb{Z}$ is a product of irreducibles, uniquely up to order and up to multiplication by units. Equivalently, the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is the free commutative monoid on the primes $\pm p$ modulo the relation $-1$; every nonzero integer has a unique expression
 
 $$
-x = \pm \prod_{p} p^{v_p(x)}, \qquad v_p(x) \in \mathbb{N},
+n = \pm \prod_{p} p^{v_p(n)}, \qquad v_p(n) \in \mathbb{N},
 $$
 
 with finitely many nonzero exponents. Thus $\mathbb{Z}$ is a unique factorisation domain.
 
-**Proof.** Existence and uniqueness are the corresponding statements of *The Natural Numbers* applied to $\lvert x \rvert$, together with the sign of $x$.
+**Proof.** Existence and uniqueness are the corresponding statements of *The Natural Numbers* applied to $\lvert n \rvert$, together with the sign of $n$.
 
-**Corollary.** The greatest common divisor and least common multiple of $a$ and $b$ are given by
+**Corollary.** The greatest common divisor and least common multiple of $n$ and $m$ are given by
 
 $$
-\gcd(a,b) = \prod_p p^{\min(v_p(a), v_p(b))}, \qquad \operatorname{lcm}(a,b) = \prod_p p^{\max(v_p(a), v_p(b))},
+\gcd(n,m) = \prod_p p^{\min(v_p(n), v_p(m))}, \qquad \operatorname{lcm}(n,m) = \prod_p p^{\max(v_p(n), v_p(m))},
 $$
 
-up to sign, so that $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$.
+up to sign, so that $\gcd(n,m) \cdot \operatorname{lcm}(n,m) = \lvert nm \rvert$.
 
 ## Quotients and Embeddings
 
@@ -139,11 +139,11 @@ up to sign, so that $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$
 
 **Theorem.** $\mathbb{Z}/n\mathbb{Z}$ has exactly $n$ elements, it is a commutative ring with identity, and it is a field if and only if $n$ is prime, in which case it is $\mathbb{F}_p$. For every $n$, the canonical map $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ is a surjective ring homomorphism with kernel $(n)$, and $\mathbb{Z}/n\mathbb{Z}$ is the initial object among rings $A$ with $n \cdot 1_A = 0$.
 
-**Proof.** The classes are $0, 1, \dots, n-1$ and are distinct, so there are $n$ of them. If $n$ is prime then every nonzero class is a unit by Bézout: $up + va = 1$ gives an inverse of $a$; if $n = ab$ with $1 < a, b < n$, then $a$ is a zero divisor and not a unit. The universal property is the standard one of the quotient by the kernel of the map $\mathbb{Z} \to A$.
+**Proof.** The classes are $0, 1, \dots, n-1$ and are distinct, so there are $n$ of them. If $n$ is prime then every nonzero class is a unit by Bézout: $up + vm = 1$ gives an inverse of $m$; if $n = m_1 m_2$ with $1 < m_1, m_2 < n$, then $m_1$ is a zero divisor and not a unit. The universal property is the standard one of the quotient by the kernel of the map $\mathbb{Z} \to A$.
 
 **Corollary (Chinese remainder).** If $m$ and $n$ are coprime then $\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ as rings.
 
-**Proof.** The map $x \mapsto (x \bmod m, x \bmod n)$ has kernel $mn\mathbb{Z}$ and is surjective by Bézout; the first isomorphism theorem gives the result.
+**Proof.** The map $k \mapsto (k \bmod m, k \bmod n)$ has kernel $mn\mathbb{Z}$ and is surjective by Bézout; the first isomorphism theorem gives the result.
 
 ### The Place of $\mathbb{Z}$ among the Systems
 
@@ -153,9 +153,9 @@ up to sign, so that $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$
 
 | System | Adjoined structure | What fails in $\mathbb{Z}$ |
 |---|---|---|
-| $\mathbb{Q}$ | multiplicative inverses | no solution to $2x = 1$ |
-| $\mathbb{R}$ | order-completeness | no supremum for $\{x : x^2 < 2\}$ |
-| $\mathbb{C}$ | algebraic closure | no root of $x^2 + 1$ |
+| $\mathbb{Q}$ | multiplicative inverses | no solution to $2n = 1$ |
+| $\mathbb{R}$ | order-completeness | no supremum for $\{n : n^2 < 2\}$ |
+| $\mathbb{C}$ | algebraic closure | no root of $n^2 + 1$ |
 | $\mathbb{Z}/n\mathbb{Z}$ | quotient by $(n)$ | the residue classes collapse divisibility |
 
 **Theorem.** $\mathbb{Z}$ is countable of cardinality $\aleph_0$, is not well ordered, since $\mathbb{Z}$ itself has no least element, but every nonempty subset bounded below has a least element. It is a Euclidean domain, hence a principal ideal domain, hence a unique factorisation domain, and it is integrally closed in $\mathbb{Q}$.
@@ -188,7 +188,7 @@ up to sign, so that $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$
 
 The integers are the Grothendieck group of the additive monoid of the naturals: $\mathbb{Z} = (\mathbb{N}\times\mathbb{N})/{\sim}$ with $(a,b) \sim (c,d) \iff a+d = b+c$, with componentwise addition and the multiplication $(a,b)(c,d) = (ac+bd, ad+bc)$. The quotient is a commutative ring with identity, the map $n \mapsto [(n,0)]$ is an injective semiring homomorphism, and $\mathbb{Z}$ is the initial object among commutative rings with identity: every such ring receives a unique unital homomorphism from $\mathbb{Z}$, injective exactly in characteristic $0$. Additively, $\mathbb{Z}$ is the free group on one generator, and the abelian groups are its modules.
 
-$\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in which cancellation holds and the division algorithm makes $\lvert\cdot\rvert$ a Euclidean function. Its order is the unique total order making it an ordered ring; the order is discrete, Archimedean and well ordered from below, with order type $\zeta$. Divisibility is governed by the associates $a = \pm b$, the irreducibles are the $\pm p$ with $p$ prime in $\mathbb{N}$, irreducible and prime coincide, the greatest common divisor exists and satisfies the Bézout identity $ua + vb = d$, and every ideal is principal, so that $\mathbb{Z}$ is a Euclidean domain, a principal ideal domain and a unique factorisation domain with $x = \pm\prod p^{v_p(x)}$. The quotients $\mathbb{Z}/n\mathbb{Z}$ have $n$ elements and are fields exactly for $n$ prime, and the Chinese remainder theorem decomposes $\mathbb{Z}/mn\mathbb{Z}$ for coprime $m, n$. The naturals embed in $\mathbb{Z}$ as the nonnegative elements and $\mathbb{Z}$ embeds in $\mathbb{Q}$ as its fraction field, in $\mathbb{R}$ and in $\mathbb{C}$; $\mathbb{Z}$ is countable, of cardinality $\aleph_0$.
+$\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in which cancellation holds and the division algorithm makes $\lvert\cdot\rvert$ a Euclidean function. Its order is the unique total order making it an ordered ring; the order is discrete, Archimedean and well ordered from below, with order type $\zeta$. Divisibility is governed by the associates $n = \pm m$, the irreducibles are the $\pm p$ with $p$ prime in $\mathbb{N}$, irreducible and prime coincide, the greatest common divisor exists and satisfies the Bézout identity $un + vm = d$, and every ideal is principal, so that $\mathbb{Z}$ is a Euclidean domain, a principal ideal domain and a unique factorisation domain with $n = \pm\prod p^{v_p(n)}$. The quotients $\mathbb{Z}/n\mathbb{Z}$ have $n$ elements and are fields exactly for $n$ prime, and the Chinese remainder theorem decomposes $\mathbb{Z}/mn\mathbb{Z}$ for coprime $m, n$. The naturals embed in $\mathbb{Z}$ as the nonnegative elements and $\mathbb{Z}$ embeds in $\mathbb{Q}$ as its fraction field, in $\mathbb{R}$ and in $\mathbb{C}$; $\mathbb{Z}$ is countable, of cardinality $\aleph_0$.
 
 ## Summary of Notation
 
@@ -197,12 +197,12 @@ $\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in
 | $\mathbb{Z}$ | The ring of integers, $(\mathbb{N}\times\mathbb{N})/{\sim}$ |
 | $\iota$ | Embedding $\mathbb{N} \hookrightarrow \mathbb{Z}$, $n \mapsto [(n,0)]$ |
 | $[(a,b)]$ | Class of $(a,b)$, equal to $a - b$ |
-| $\lvert x\rvert$ | Absolute value |
+| $\lvert n\rvert$ | Absolute value |
 | $\leq$ | The order of $\mathbb{Z}$, extending that of $\mathbb{N}$ |
-| $a \mid b$ | Divisibility |
-| $\gcd(a,b)$, $\operatorname{lcm}(a,b)$ | Greatest common divisor and least common multiple |
+| $n \mid m$ | Divisibility |
+| $\gcd(n,m)$, $\operatorname{lcm}(n,m)$ | Greatest common divisor and least common multiple |
 | $p$ | A prime |
-| $v_p(x)$ | Exponent of $p$ in $x$ |
+| $v_p(n)$ | Exponent of $p$ in $n$ |
 | $(n)$ | Principal ideal generated by $n$ |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$ | Ring of residues, field with $p$ elements |
 | $\mathbb{Q}$ | The field of fractions of $\mathbb{Z}$, the rational numbers |

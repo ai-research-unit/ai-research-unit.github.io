@@ -28,15 +28,15 @@ A + B = \{a + b : a \in A,\ b \in B\}, \qquad
 A \cdot B = \{ab : a \in A,\ b \in B,\ a, b \geq 0\} \cup \{q \in \mathbb{Q} : q < 0\} \ (\text{for } A, B \geq 0),
 $$
 
-and with negative elements handled by sign, $\mathcal{R}$ is an order-complete ordered field. The map $q \mapsto \{x \in \mathbb{Q} : x < q\}$ embeds $\mathbb{Q}$ as an ordered subfield, and $\mathcal{R}$ is the order completion of $\mathbb{Q}$.
+and with negative elements handled by sign, $\mathcal{R}$ is an order-complete ordered field. The map $q \mapsto \{a \in \mathbb{Q} : a < q\}$ embeds $\mathbb{Q}$ as an ordered subfield, and $\mathcal{R}$ is the order completion of $\mathbb{Q}$.
 
-**Proof sketch.** $\mathcal{R}$ is totally ordered by inclusion, since cuts are downward closed subsets of $\mathbb{Q}$. A nonempty family of cuts that is bounded above has a supremum: every upper bound is a cut and hence is not all of $\mathbb{Q}$, the family is contained in such a bound, so the union of the family is a downward closed subset of $\mathbb{Q}$ that is neither empty nor all of $\mathbb{Q}$, and it has no greatest element because no member of the family has one; hence the union is a cut, and it is the least upper bound. A nonempty family that is bounded below has an infimum, namely the intersection of the family with the greatest element removed if the intersection has one: the intersection is downward closed and nonempty because it contains a lower bound, and a cut contained in every member of the family has no greatest element, so it lies in the intersection with the greatest element removed, which is therefore the largest such cut. Addition of cuts is well defined and makes $\mathcal{R}$ an ordered abelian group whose zero is the cut of negative rationals, and multiplication is defined on nonnegative cuts by the display and extended by the sign rule; the field axioms are verified case by case, distributivity being the only substantive one. The embedding $q \mapsto \{x < q\}$ preserves the order and the operations, and the least upper bound property is the sup-of-unions statement.
+**Proof sketch.** $\mathcal{R}$ is totally ordered by inclusion, since cuts are downward closed subsets of $\mathbb{Q}$. A nonempty family of cuts that is bounded above has a supremum: every upper bound is a cut and hence is not all of $\mathbb{Q}$, the family is contained in such a bound, so the union of the family is a downward closed subset of $\mathbb{Q}$ that is neither empty nor all of $\mathbb{Q}$, and it has no greatest element because no member of the family has one; hence the union is a cut, and it is the least upper bound. A nonempty family that is bounded below has an infimum, namely the intersection of the family with the greatest element removed if the intersection has one: the intersection is downward closed and nonempty because it contains a lower bound, and a cut contained in every member of the family has no greatest element, so it lies in the intersection with the greatest element removed, which is therefore the largest such cut. Addition of cuts is well defined and makes $\mathcal{R}$ an ordered abelian group whose zero is the cut of negative rationals, and multiplication is defined on nonnegative cuts by the display and extended by the sign rule; the field axioms are verified case by case, distributivity being the only substantive one. The embedding $q \mapsto \{a < q\}$ preserves the order and the operations, and the least upper bound property is the sup-of-unions statement.
 
 **Remark.** The cut construction is the one explained in *Real-Closed and Complete Ordered Fields* as the order completion $\widehat{F}$ of an Archimedean ordered field $F$, applied to $F = \mathbb{Q}$.
 
 ### Cauchy Sequences
 
-**Definition.** A sequence $(x_n)$ in $\mathbb{Q}$ is **Cauchy** if for every rational $\epsilon > 0$ there is $n_0$ with $\lvert x_n - x_m \rvert < \epsilon$ for all $n, m \geq n_0$. Two Cauchy sequences are **equivalent** if $\lvert x_n - y_n \rvert \to 0$, and the completion is
+**Definition.** A sequence $(a_n)$ in $\mathbb{Q}$ is **Cauchy** if for every rational $\epsilon > 0$ there is $n_0$ with $\lvert a_n - a_m \rvert < \epsilon$ for all $n, m \geq n_0$. Two Cauchy sequences are **equivalent** if $\lvert a_n - b_n \rvert \to 0$, and the completion is
 
 $$
 \mathcal{C} = \{\text{Cauchy sequences in } \mathbb{Q}\}/\sim .
@@ -51,12 +51,12 @@ $$
 **Theorem.** The two constructions produce isomorphic ordered fields, canonically: the map
 
 $$
-\Phi : \mathcal{C} \to \mathcal{R}, \qquad \Phi[(x_n)] = \left\{q \in \mathbb{Q} : q + \epsilon < x_n \text{ for all sufficiently large } n \text{ and some rational } \epsilon > 0\right\},
+\Phi : \mathcal{C} \to \mathcal{R}, \qquad \Phi[(a_n)] = \left\{q \in \mathbb{Q} : q + \epsilon < a_n \text{ for all sufficiently large } n \text{ and some rational } \epsilon > 0\right\},
 $$
 
 is an order-preserving field isomorphism.
 
-**Proof sketch.** The set displayed is a cut: it is nonempty and not all of $\mathbb{Q}$ because $(x_n)$ is Cauchy and hence bounded; it is downward closed, and it has no greatest element, because $q$ lies in it with gap $\epsilon$ precisely when $q + \epsilon/2$ lies in it with gap $\epsilon/2$; and it depends only on the class of $(x_n)$, since two equivalent Cauchy sequences are eventually within any prescribed rational distance of one another. The element $q$ lies in $\Phi[(x_n)]$ exactly when $q < x$, where $x$ is the limit of $(x_n)$ in the complete field $\mathcal{C}$: if $q < x$ then eventually $x_n \geq q + \epsilon$ for a rational $\epsilon$ with $q + \epsilon < x$, and conversely $q + \epsilon < x_n$ eventually gives $q < x$. Conversely every cut arises from a Cauchy sequence, for instance from an increasing sequence of rationals converging to the cut, which exists by density. The map is additive and multiplicative by the arithmetic of cuts, and it preserves the order by construction.
+**Proof sketch.** The set displayed is a cut: it is nonempty and not all of $\mathbb{Q}$ because $(a_n)$ is Cauchy and hence bounded; it is downward closed, and it has no greatest element, because $q$ lies in it with gap $\epsilon$ precisely when $q + \epsilon/2$ lies in it with gap $\epsilon/2$; and it depends only on the class of $(a_n)$, since two equivalent Cauchy sequences are eventually within any prescribed rational distance of one another. The element $q$ lies in $\Phi[(a_n)]$ exactly when $q < a$, where $a$ is the limit of $(a_n)$ in the complete field $\mathcal{C}$: if $q < a$ then eventually $a_n \geq q + \epsilon$ for a rational $\epsilon$ with $q + \epsilon < a$, and conversely $q + \epsilon < a_n$ eventually gives $q < a$. Conversely every cut arises from a Cauchy sequence, for instance from an increasing sequence of rationals converging to the cut, which exists by density. The map is additive and multiplicative by the arithmetic of cuts, and it preserves the order by construction.
 
 **Corollary.** Any two order-complete ordered fields are isomorphic by a unique order-preserving isomorphism, by *Real-Closed and Complete Ordered Fields*; hence $\mathcal{R} \cong \mathcal{C} \cong \mathbb{R}$ and $\mathbb{R}$ is unique up to a unique ordered-field isomorphism.
 
@@ -95,7 +95,7 @@ and the set of irrationals is uncountable, of the same cardinality; in particula
 
 **Theorem.** Any two complete dense linear orders without endpoints that contain a countable dense subset are order-isomorphic; in particular any such order is isomorphic to $\mathbb{R}$.
 
-**Proof.** The same back-and-forth construction on the countable dense subsets, with completeness and density extending the partial isomorphism to a map of the whole order: given $x$ in the first order, send it to the supremum in the second order of the images of the dense elements below $x$, which exists by completeness and is strictly increasing by density.
+**Proof.** The same back-and-forth construction on the countable dense subsets, with completeness and density extending the partial isomorphism to a map of the whole order: given $a$ in the first order, send it to the supremum in the second order of the images of the dense elements below $a$, which exists by completeness and is strictly increasing by density.
 
 **Corollary.** The order type of $\mathbb{R}$ is the unique complete dense order type without endpoints that has a countable dense subset; $\mathbb{Q}$ is the unique countable dense order type without endpoints, and it is the dense subset of $\mathbb{R}$ in the above.
 
@@ -106,10 +106,10 @@ and the set of irrationals is uncountable, of the same cardinality; in particula
 **Proof sketch.** If $F$ embeds in $\mathbb{R}$ it is Archimedean, because $\mathbb{R}$ is. Conversely, if $F$ is Archimedean then the map
 
 $$
-\varphi : F \to \mathbb{R}, \qquad \varphi(x) = \sup\{q \in \mathbb{Q} : q < x\},
+\varphi : F \to \mathbb{R}, \qquad \varphi(a) = \sup\{q \in \mathbb{Q} : q < a\},
 $$
 
-is well defined because $\{q \in \mathbb{Q} : q < x\}$ is nonempty and bounded above in $F$, hence bounded by a real after the identification of the rationals; it is order-preserving by construction, additive because the rationals below $x + y$ are exactly the sums of rationals below $x$ and below $y$ up to arbitrarily small error, and multiplicative by the analogous squeezing argument using the Archimedean property; it fixes $\mathbb{Q}$ and is therefore the unique such embedding.
+is well defined because $\{q \in \mathbb{Q} : q < a\}$ is nonempty and bounded above in $F$, hence bounded by a real after the identification of the rationals; it is order-preserving by construction, additive because the rationals below $a + b$ are exactly the sums of rationals below $a$ and below $b$ up to arbitrarily small error, and multiplicative by the analogous squeezing argument using the Archimedean property; it fixes $\mathbb{Q}$ and is therefore the unique such embedding.
 
 **Corollary.** $\mathbb{R}$ contains an isomorphic copy of every Archimedean ordered field, and it is the order-complete field generated by $\mathbb{Q}$; a non-Archimedean ordered field, such as $\mathbb{Q}(t)$ with $t$ infinite, admits no order-preserving embedding into $\mathbb{R}$, though its underlying field may still embed by a non-order-preserving map.
 
@@ -142,12 +142,12 @@ $$
 **Theorem.** Every subfield $F \subseteq \mathbb{R}$ is ordered by the restriction of the order of $\mathbb{R}$, and this order is Archimedean. Let
 
 $$
-M = \{x \in \mathbb{R} : x \text{ is algebraic over } F\}.
+M = \{a \in \mathbb{R} : a \text{ is algebraic over } F\}.
 $$
 
 Then $M$ is a subfield of $\mathbb{R}$, it is real closed, and it is the smallest real-closed subfield of $\mathbb{R}$ containing $F$; it is the **real closure** of $F$ inside $\mathbb{R}$.
 
-**Proof.** The restriction of the order satisfies the ordered-field axioms on any subfield and is Archimedean because $\mathbb{R}$ is. The set of elements algebraic over $F$ is a subfield, being closed under the field operations by the algebraic dependence of sums, products and inverses. It is real closed: a positive $x \in M$ has a square root in the real-closed field $\mathbb{R}$, and $\sqrt x$ satisfies the quadratic $X^2 - x$ over $M$, hence is algebraic over $F$ and lies in $M$; and a polynomial of odd degree over $M$ has a root in the real-closed field $\mathbb{R}$, and that root is algebraic over $M$ and hence over $F$, so it lies in $M$. Minimality is because any real-closed subfield of $\mathbb{R}$ containing $F$ must contain every real root of a polynomial over $F$, hence every element algebraic over $F$.
+**Proof.** The restriction of the order satisfies the ordered-field axioms on any subfield and is Archimedean because $\mathbb{R}$ is. The set of elements algebraic over $F$ is a subfield, being closed under the field operations by the algebraic dependence of sums, products and inverses. It is real closed: a positive $a \in M$ has a square root in the real-closed field $\mathbb{R}$, and $\sqrt a$ satisfies the quadratic $X^2 - a$ over $M$, hence is algebraic over $F$ and lies in $M$; and a polynomial of odd degree over $M$ has a root in the real-closed field $\mathbb{R}$, and that root is algebraic over $M$ and hence over $F$, so it lies in $M$. Minimality is because any real-closed subfield of $\mathbb{R}$ containing $F$ must contain every real root of a polynomial over $F$, hence every element algebraic over $F$.
 
 **Corollary.** The real closure of an ordered field is unique up to an order-preserving isomorphism, by *Real-Closed and Complete Ordered Fields*, and inside $\mathbb{R}$ it is the literal set $M$ above; in particular $\overline{\mathbb{Q}} \cap \mathbb{R}$ is the real closure of $\mathbb{Q}$.
 
@@ -165,7 +165,7 @@ The **supremum** of a set $S \subseteq \mathbb{R}$ is its least upper bound and 
 
 **(c)** $\mathbb{R}$ is order-complete, and therefore no proper subfield of $\mathbb{R}$ is order-complete.
 
-**Proof.** (a) is the least upper bound property, proved in the cut model. (b) is the theorem on order-complete fields from *Real-Closed and Complete Ordered Fields*. (c) Let $F \subsetneq \mathbb{R}$ be a subfield and let $x \in \mathbb{R} \setminus F$. The set $S = \{q \in \mathbb{Q} : q < x\}$ is a nonempty subset of $F$, since $\mathbb{Q} \subseteq F$, and it is bounded above in $F$ because $\mathbb{R}$ is Archimedean; its least upper bound in $\mathbb{R}$ is $x$. If $y \in F$ is an upper bound of $S$ then $y \geq x$, and if $y > x$ then, $\mathbb{Q}$ being dense in $\mathbb{R}$, there is a rational $q$ with $x < q < y$, and $q \in F$ is an upper bound of $S$ smaller than $y$. Hence a least upper bound of $S$ in $F$, if it existed, would have to equal $x$ and lie in $F$, a contradiction. Hence no proper subfield is order-complete.
+**Proof.** (a) is the least upper bound property, proved in the cut model. (b) is the theorem on order-complete fields from *Real-Closed and Complete Ordered Fields*. (c) Let $F \subsetneq \mathbb{R}$ be a subfield and let $a \in \mathbb{R} \setminus F$. The set $S = \{q \in \mathbb{Q} : q < a\}$ is a nonempty subset of $F$, since $\mathbb{Q} \subseteq F$, and it is bounded above in $F$ because $\mathbb{R}$ is Archimedean; its least upper bound in $\mathbb{R}$ is $a$. If $b \in F$ is an upper bound of $S$ then $b \geq a$, and if $b > a$ then, $\mathbb{Q}$ being dense in $\mathbb{R}$, there is a rational $q$ with $a < q < b$, and $q \in F$ is an upper bound of $S$ smaller than $b$. Hence a least upper bound of $S$ in $F$, if it existed, would have to equal $a$ and lie in $F$, a contradiction. Hence no proper subfield is order-complete.
 
 **Remark.** Property (b) is what makes the order of $\mathbb{R}$ usable: every real is determined by the rationals below it, which is the content of the cut construction, and by Cantor's theorem this determination is what makes $\mathbb{R}$ unique.
 
@@ -175,7 +175,7 @@ $\mathbb{R}$ is the order completion of $\mathbb{Q}$ and the metric completion o
 
 The field $\mathbb{R}$ has characteristic $0$ and prime field $\mathbb{Q}$; it is real closed, so every positive real is a square and every odd-degree real polynomial has a real root, and it is not algebraically closed, its algebraic closure being $\mathbb{C} = \mathbb{R}(i)$ of degree $2$ over it. The real algebraic numbers $\overline{\mathbb{Q}} \cap \mathbb{R}$ form the real closure of $\mathbb{Q}$ and are countable and not complete, while $\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R} = 2^{\aleph_0}$. And $\mathbb{R}$ is not isomorphic to any $\mathbb{Q}_p$, since it is formally real and they are not; the triviality of $\operatorname{Aut}(\mathbb{R})$ is treated in *Real Automorphisms and Derivations*.
 
-In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique countable dense linear order without endpoints and $\mathbb{R}$ is the unique complete dense linear order without endpoints with a countable dense subset. An ordered field embeds order-preservingly into $\mathbb{R}$ exactly when it is Archimedean, the embedding being $x \mapsto \sup\{q \in \mathbb{Q} : q < x\}$, and it is then unique; so $\mathbb{R}$ is the order-complete field universal for Archimedean ordered fields. Every subfield of $\mathbb{R}$ inherits an Archimedean order and has a real closure inside $\mathbb{R}$, namely its relative algebraic closure.
+In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique countable dense linear order without endpoints and $\mathbb{R}$ is the unique complete dense linear order without endpoints with a countable dense subset. An ordered field embeds order-preservingly into $\mathbb{R}$ exactly when it is Archimedean, the embedding being $a \mapsto \sup\{q \in \mathbb{Q} : q < a\}$, and it is then unique; so $\mathbb{R}$ is the order-complete field universal for Archimedean ordered fields. Every subfield of $\mathbb{R}$ inherits an Archimedean order and has a real closure inside $\mathbb{R}$, namely its relative algebraic closure.
 
 | Property | Value for $\mathbb{R}$ |
 |---|---|
@@ -204,7 +204,7 @@ In the order-theoretic terms of Cantor's theorems, $\mathbb{Q}$ is the unique co
 | $\overline{\mathbb{Q}} \cap \mathbb{R}$ | Real algebraic numbers, real closure of $\mathbb{Q}$ |
 | $\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{R}$ | Transcendence degree, $2^{\aleph_0}$ |
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | Non-Archimedean completions of $\mathbb{Q}$ |
-| $\varphi : F \to \mathbb{R}$ | Archimedean embedding $x \mapsto \sup\{q \in \mathbb{Q} : q < x\}$ |
+| $\varphi : F \to \mathbb{R}$ | Archimedean embedding $a \mapsto \sup\{q \in \mathbb{Q} : q < a\}$ |
 | $M$ | Relative algebraic closure of a subfield $F \subseteq \mathbb{R}$ |
 
 ## Further Reading

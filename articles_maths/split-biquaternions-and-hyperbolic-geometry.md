@@ -51,7 +51,7 @@ The second component of the level set $g = -1$ is the image of $H^3$ under the c
 **Definition.** The **hyperbolic distance** on $H^3$ is
 
 $$
-d_H(\tilde{Q},\tilde Y) = \operatorname{arcosh}\!\left(-g(\tilde{Q},\tilde Y)\right), \qquad \tilde{Q},\tilde Y\in H^3 .
+d_H(\tilde{Q},\tilde R) = \operatorname{arcosh}\!\left(-g(\tilde{Q},\tilde R)\right), \qquad \tilde{Q},\tilde R\in H^3 .
 $$
 
 **Theorem.** The hyperbolic distance is a metric on $H^3$, it is invariant under every linear isometry of $(\mathbb{M}_-,g)$ that preserves the sheet, and $H^3$ with this metric is a complete Riemannian manifold of constant sectional curvature $-1$. Its isometry group is
@@ -74,7 +74,7 @@ $$
 
 as a homogeneous space, and the stabiliser of a point acts on the tangent space by the standard representation of $SO(3)$.
 
-*Proof.* The argument $-g(\tilde{Q},\tilde Y)$ is at least $1$ for $\tilde{Q},\tilde Y$ on the same sheet, because the reverse Schwarz inequality for a form of signature $(3,1)$ gives $g(\tilde{Q},\tilde Y)^2\geq g(\tilde{Q},\tilde{Q})g(\tilde Y,\tilde Y) = 1$ with the negative sign of $g$; so the arcosh is defined and non-negative, and it vanishes exactly at $\tilde{Q} = \tilde Y$. The triangle inequality is the corresponding form of the reverse Schwarz inequality, applied to the three pairs. Invariance under a linear isometry preserving the sheet is immediate from the invariance of $g$. Completeness is the completeness of the hyperboloid in the ambient Euclidean space. The curvature computation is the standard one for the hyperboloid model. The group $O(3,1)$ has four components, and the subgroup preserving a chosen sheet is of index two; its identity component is $SO^{+}(3,1)$, which is isomorphic to $PSL_2(\mathbb{C})$ by the standard two-to-one covering $SL_2(\mathbb{C})\to SO^{+}(3,1)$, and has trivial centre so that no further quotient is needed. The orbit and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*.
+*Proof.* The argument $-g(\tilde{Q},\tilde R)$ is at least $1$ for $\tilde{Q},\tilde R$ on the same sheet, because the reverse Schwarz inequality for a form of signature $(3,1)$ gives $g(\tilde{Q},\tilde R)^2\geq g(\tilde{Q},\tilde{Q})g(\tilde R,\tilde R) = 1$ with the negative sign of $g$; so the arcosh is defined and non-negative, and it vanishes exactly at $\tilde{Q} = \tilde R$. The triangle inequality is the corresponding form of the reverse Schwarz inequality, applied to the three pairs. Invariance under a linear isometry preserving the sheet is immediate from the invariance of $g$. Completeness is the completeness of the hyperboloid in the ambient Euclidean space. The curvature computation is the standard one for the hyperboloid model. The group $O(3,1)$ has four components, and the subgroup preserving a chosen sheet is of index two; its identity component is $SO^{+}(3,1)$, which is isomorphic to $PSL_2(\mathbb{C})$ by the standard two-to-one covering $SL_2(\mathbb{C})\to SO^{+}(3,1)$, and has trivial centre so that no further quotient is needed. The orbit and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*.
 
 ### Geodesics and Two-Dimensional Subspaces
 
@@ -117,7 +117,7 @@ The boundary sphere has a preferred conformal structure, and it is the same stru
 **Proposition.** The boundary sphere $\partial H^3$ is conformally equivalent to the Riemann sphere $\mathbb{C}P^1$; the equivalence is realised by stereographic projection from the null cone of $\mathbb{M}_-$ onto the plane $\{a = 1\}$ in the coordinates $\tilde{Q} = a\,je_0 + v$, which is a copy of $\mathbb{R}^2$ completed by one point. Under this equivalence the action of $SO^{+}(3,1)$ on $\partial H^3$ becomes the action of $PSL_2(\mathbb{C})$ on $\mathbb{C}P^1$ by Möbius transformations,
 
 $$
-z\longmapsto\frac{\alpha z + \beta}{\gamma z + \delta}, \qquad \begin{pmatrix}\alpha & \beta\\ \gamma & \delta\end{pmatrix}\in SL_2(\mathbb{C}),
+A\longmapsto\frac{\alpha A + \beta}{\gamma A + \delta}, \qquad \begin{pmatrix}\alpha & \beta\\ \gamma & \delta\end{pmatrix}\in SL_2(\mathbb{C}),
 $$
 
 and the isomorphism $SO^{+}(3,1)\cong PSL_2(\mathbb{C})$ is the isomorphism of their boundary actions.
@@ -174,7 +174,7 @@ The split biquaternion hyperbolic geometry is the three-dimensional member of a 
 
 | Feature | $\mathbb{D}$ (dimension $1$) | $\mathbb{H}_{\mathbb{D}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
 |---|---|---|---|
-| Ambient form | $x^2 - y^2$ on $\mathbb{D}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert q\rvert^2$ on $\mathbb{H}$ |
+| Ambient form | $a^2 - b^2$ on $\mathbb{D}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert q\rvert^2$ on $\mathbb{H}$ |
 | Level set | hyperbola $c^2 - s^2 = 1$ | hyperboloid $g = -1$ | sphere $S^3$ |
 | Space | $H^1\cong\mathbb{R}$ | $H^3\cong\mathbb{R}^3$ | $S^3$ |
 | Curvature | $-1$ | $-1$ | $+1$ |
@@ -191,7 +191,7 @@ The relation to the split complex plane is not merely an analogy: the split comp
 
 ## Summary
 
-The anti-Hermitian four-plane $\mathbb{M}_-$ of the split biquaternion algebra, with the Hermitian form $g$ of signature $(3,1)$, carries the hyperboloid model of hyperbolic three-space: the points are the elements of Hermitian norm $-1$ with a positive $je_0$-coordinate, the space is diffeomorphic to $\mathbb{R}^3$, and its metric is $d_H(\tilde{Q},\tilde Y) = \operatorname{arcosh}(-g(\tilde{Q},\tilde Y))$, complete of constant curvature $-1$. Its isometry group is the sheet-preserving subgroup $O^{\uparrow}(3,1)$, of index two in $O(3,1)$, acting transitively with isotropy $SO(3)$, so that $H^3\cong SO^{+}(3,1)/SO(3)$.
+The anti-Hermitian four-plane $\mathbb{M}_-$ of the split biquaternion algebra, with the Hermitian form $g$ of signature $(3,1)$, carries the hyperboloid model of hyperbolic three-space: the points are the elements of Hermitian norm $-1$ with a positive $je_0$-coordinate, the space is diffeomorphic to $\mathbb{R}^3$, and its metric is $d_H(\tilde{Q},\tilde R) = \operatorname{arcosh}(-g(\tilde{Q},\tilde R))$, complete of constant curvature $-1$. Its isometry group is the sheet-preserving subgroup $O^{\uparrow}(3,1)$, of index two in $O(3,1)$, acting transitively with isotropy $SO(3)$, so that $H^3\cong SO^{+}(3,1)/SO(3)$.
 
 The geodesics are the intersections of $H^3$ with the two-dimensional subspaces of signature $(1,1)$, equivalently the orbits of the hyperbolic one-parameter subgroups, and they are hyperbolas in their planes. The boundary at infinity is the projectivised null cone and is a two-sphere, conformally equivalent to the Riemann sphere, on which $SO^{+}(3,1)$ acts as $PSL_2(\mathbb{C})$ by Möbius transformations. The Klein model is the open unit ball with chords as geodesics; the Poincaré ball and upper half-space models are obtained conformally.
 
@@ -216,7 +216,7 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{M}_-$ |
 | $H^3 = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\}$ | Hyperboloid model of hyperbolic three-space |
 | $\tilde V$ | Tangent vector, $g(\tilde V,\tilde V) = 1$, $g(\tilde{Q},\tilde V) = 0$ |
-| $d_H(\tilde{Q},\tilde Y) = \operatorname{arcosh}(-g(\tilde{Q},\tilde Y))$ | Hyperbolic distance |
+| $d_H(\tilde{Q},\tilde R) = \operatorname{arcosh}(-g(\tilde{Q},\tilde R))$ | Hyperbolic distance |
 | $O(3,1)$, $SO^{+}(3,1)$, $O^{\uparrow}(3,1)$ | Lorentz group, restricted Lorentz group, sheet-preserving subgroup |
 | $SO(3)$, $O(4)$, $SO(4)$ | Isotropy and the rotational comparison groups |
 | $\partial H^3$ | Boundary at infinity, the projectivised null cone $\cong S^2$ |

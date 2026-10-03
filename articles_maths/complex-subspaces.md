@@ -5,30 +5,30 @@
 
 The complex algebra $\mathbb{C}$, regarded as a two-dimensional algebra over $\mathbb{R}$, carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Each of the two involutions determines a fixed subspace and an anti-fixed subspace, and the algebra splits as their direct sum. The whole of this article is the analysis of those subspaces: their bases, their dimensions, their closure properties, the quadratic form they inherit, and the sense in which they are the one-dimensional analogue of the six-subspace lattice of the biquaternion algebra $\mathbb{B}$.
 
-The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $Z = a + i b$, and the norm is $N(Z) = Z\bar{Z} = a^2 + b^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
+The algebra and its conventions are those of the companion article *Complex Algebra*: the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. The algebra is a field, so it has no proper ideals and no zero divisors; the biquaternion algebra $\mathbb{B}$ is the four-dimensional complex algebra whose six distinguished subspaces are the model this article is measured against, and the difference between the two lattices is the point. The two involutions are treated in the article *Complex Automorphisms and Derivations*, where they are the automorphism group of the algebra; here they are used only to cut the algebra into subspaces.
 
 ## The Involutions and the Two Decompositions
 
 **Definition.** An **involution** of $\mathbb{C}$ is an $\mathbb{R}$-linear map $\sigma : \mathbb{C} \to \mathbb{C}$ with $\sigma^2 = \operatorname{id}$. Its **fixed subspace** and **anti-fixed subspace** are
 
 $$
-\mathbb{C}^{\sigma} = \{ Z \in \mathbb{C} : \sigma(Z) = Z \}, \qquad \mathbb{C}^{-\sigma} = \{ Z \in \mathbb{C} : \sigma(Z) = -Z \}.
+\mathbb{C}^{\sigma} = \{ A \in \mathbb{C} : \sigma(A) = A \}, \qquad \mathbb{C}^{-\sigma} = \{ A \in \mathbb{C} : \sigma(A) = -A \}.
 $$
 
 The two natural involutions are the identity and complex conjugation:
 
 $$
-\operatorname{id}(Z) = Z, \qquad \bar{\cdot}(Z) = \bar{Z} = a - i b .
+\operatorname{id}(A) = A, \qquad \bar{\cdot}(A) = \bar{A} = a - i a' .
 $$
 
 **Proposition (eigenspace decomposition).** For any involution $\sigma$ of $\mathbb{C}$,
 
 $$
 \mathbb{C} = \mathbb{C}^{\sigma} \oplus \mathbb{C}^{-\sigma}, \qquad
-Z = \tfrac{1}{2}\bigl(Z + \sigma(Z)\bigr) + \tfrac{1}{2}\bigl(Z - \sigma(Z)\bigr).
+A = \tfrac{1}{2}\bigl(A + \sigma(A)\bigr) + \tfrac{1}{2}\bigl(A - \sigma(A)\bigr).
 $$
 
-**Proof.** The element $\tfrac{1}{2}(Z+\sigma Z)$ is fixed because $\sigma^2 = \operatorname{id}$, and $\tfrac{1}{2}(Z-\sigma Z)$ is anti-fixed, so the sum is $Z$ and the two subspaces span. If $Z$ lies in both then $Z = -Z$, hence $2Z = 0$ and $Z = 0$ because $\mathbb{R}$ has characteristic not $2$, so the sum is direct. Equivalently, the decomposition is the spectral decomposition of $\sigma$ into its eigenspaces for the eigenvalues $+1$ and $-1$.
+**Proof.** The element $\tfrac{1}{2}(A+\sigma A)$ is fixed because $\sigma^2 = \operatorname{id}$, and $\tfrac{1}{2}(A-\sigma A)$ is anti-fixed, so the sum is $A$ and the two subspaces span. If $A$ lies in both then $A = -A$, hence $2A = 0$ and $A = 0$ because $\mathbb{R}$ has characteristic not $2$, so the sum is direct. Equivalently, the decomposition is the spectral decomposition of $\sigma$ into its eigenspaces for the eigenvalues $+1$ and $-1$.
 
 The two involutions therefore give two decompositions of the algebra:
 
@@ -44,46 +44,46 @@ The identity is degenerate: its fixed subspace is the whole algebra and its anti
 **Definition.** The **real subspace** and the **imaginary subspace** of $\mathbb{C}$ are
 
 $$
-\mathbb{R}_{\mathbb{C}} = \{ Z \in \mathbb{C} : \bar{Z} = Z \}, \qquad i\mathbb{R}_{\mathbb{C}} = \{ Z \in \mathbb{C} : \bar{Z} = -Z \}.
+\mathbb{R}_{\mathbb{C}} = \{ A \in \mathbb{C} : \bar{A} = A \}, \qquad i\mathbb{R}_{\mathbb{C}} = \{ A \in \mathbb{C} : \bar{A} = -A \}.
 $$
 
 **Proposition (bases and dimensions).** In the basis $1$, $i$,
 
 $$
 \mathbb{R}_{\mathbb{C}} = \{ a : a \in \mathbb{R} \} = \mathbb{R} 1, \qquad
-i\mathbb{R}_{\mathbb{C}} = \{ i b : b \in \mathbb{R} \} = \mathbb{R} i,
+i\mathbb{R}_{\mathbb{C}} = \{ i a' : a' \in \mathbb{R} \} = \mathbb{R} i,
 $$
 
 so each has real dimension $1$ and $\dim_{\mathbb{R}} \mathbb{C} = 1 + 1 = 2$.
 
-**Proof.** If $Z = a + i b$ is fixed by conjugation then $a - i b = a + i b$, so $b = 0$; if it is anti-fixed then $a - i b = -(a+i b)$, so $a = 0$. The two conditions define the two coordinate axes, of dimension one each.
+**Proof.** If $A = a + i a'$ is fixed by conjugation then $a - i a' = a + i a'$, so $a' = 0$; if it is anti-fixed then $a - i a' = -(a+i a')$, so $a = 0$. The two conditions define the two coordinate axes, of dimension one each.
 
 The two subspaces could hardly be more different in their multiplicative behaviour. The real subspace is closed under multiplication and is a field; the imaginary subspace is not closed at all.
 
 **Proposition (the real subspace is a subfield).** $\mathbb{R}_{\mathbb{C}}$ is a subalgebra of $\mathbb{C}$, and the map $a \mapsto a$ is an isomorphism of fields $\mathbb{R}_{\mathbb{C}} \cong \mathbb{R}$. It is an ordered field under the inherited order.
 
-**Proof.** The product of two fixed elements is fixed, since $\overline{ZW} = \bar{Z}\bar{W}$, and the multiplicative identity $1$ is fixed, so $\mathbb{R}_{\mathbb{C}}$ is a subalgebra. The map is a ring isomorphism onto $\mathbb{R}$ by the multiplication rule $(a)(b) = ab$, and the restriction of the ordering of $\mathbb{R}$ makes it ordered.
+**Proof.** The product of two fixed elements is fixed, since $\overline{AB} = \bar{A}\bar{B}$, and the multiplicative identity $1$ is fixed, so $\mathbb{R}_{\mathbb{C}}$ is a subalgebra. The map is a ring isomorphism onto $\mathbb{R}$ by the multiplication rule $(a)(b) = ab$, and the restriction of the ordering of $\mathbb{R}$ makes it ordered.
 
-**Proposition (the imaginary subspace is not closed).** $i\mathbb{R}_{\mathbb{C}}$ is not closed under multiplication. For $x, y \in i\mathbb{R}_{\mathbb{C}}$ neither $xy$ nor $x^2$ need lie in $i\mathbb{R}_{\mathbb{C}}$; in fact
+**Proposition (the imaginary subspace is not closed).** $i\mathbb{R}_{\mathbb{C}}$ is not closed under multiplication. For $A, B \in i\mathbb{R}_{\mathbb{C}}$ neither $AB$ nor $A^2$ need lie in $i\mathbb{R}_{\mathbb{C}}$; in fact
 
 $$
-(i b)(i c) = -b c \in \mathbb{R}_{\mathbb{C}}, \qquad (i b)^2 = -b^2 \in \mathbb{R}_{\mathbb{C}},
+(i a')(i b') = -a' b' \in \mathbb{R}_{\mathbb{C}}, \qquad (i a')^2 = -a'^2 \in \mathbb{R}_{\mathbb{C}},
 $$
 
 so the product of two anti-fixed elements is fixed.
 
-**Proof.** The rule $i^2 = -1$ gives both displays directly; the right-hand sides are real and nonzero for $b$ and $c$ nonzero, so the product leaves the imaginary subspace.
+**Proof.** The rule $i^2 = -1$ gives both displays directly; the right-hand sides are real and nonzero for $a'$ and $b'$ nonzero, so the product leaves the imaginary subspace.
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}}$ | $\bar{Z} = Z$ | $1$ | $1$ | yes, $\cong \mathbb{R}$, a field | $a^2$, definite positive |
-| $i\mathbb{R}_{\mathbb{C}}$ | $\bar{Z} = -Z$ | $i$ | $1$ | no | $b^2$, definite positive |
+| $\mathbb{R}_{\mathbb{C}}$ | $\bar{A} = A$ | $1$ | $1$ | yes, $\cong \mathbb{R}$, a field | $a^2$, definite positive |
+| $i\mathbb{R}_{\mathbb{C}}$ | $\bar{A} = -A$ | $i$ | $1$ | no | $a'^2$, definite positive |
 
 The last column records that the norm is positive on each subspace; this is the degeneracy of the definite two-dimensional case and is developed in the last section but one.
 
 ## The Two Coordinate Blocks
 
-Writing $Z = a + i b$, the two real coordinates $(a, b)$ group into the two lines
+Writing $A = a + i a'$, the two real coordinates $(a, a')$ group into the two lines
 
 $$
 \mathbb{R}_{\mathbb{C}} = \langle 1 \rangle, \qquad i\mathbb{R}_{\mathbb{C}} = \langle i \rangle,
@@ -104,7 +104,7 @@ The pairwise intersections of the two subspaces are read off from the blocks:
 
 **Proposition.** $\mathbb{R}_{\mathbb{C}} \cap i\mathbb{R}_{\mathbb{C}} = \{0\}$.
 
-**Proof.** An element of the intersection is both fixed and anti-fixed by conjugation, so $Z = -Z$ and $Z = 0$ in characteristic not $2$; alternatively the two subspaces are the coordinate lines $\langle 1 \rangle$ and $\langle i \rangle$, which are independent.
+**Proof.** An element of the intersection is both fixed and anti-fixed by conjugation, so $A = -A$ and $A = 0$ in characteristic not $2$; alternatively the two subspaces are the coordinate lines $\langle 1 \rangle$ and $\langle i \rangle$, which are independent.
 
 The diagonal of the table carries the dimensions $1$ and $1$; the off-diagonal entry is $0$ because the two subspaces are the two members of a direct-sum decomposition. In the biquaternion lattice the analogous entry is also $0$ for the pairs of each decomposition, but there the off-diagonal entries can be $1$ or $3$ because subspaces assembled from several blocks can share a block.
 
@@ -117,7 +117,7 @@ The diagonal of the table carries the dimensions $1$ and $1$; the off-diagonal e
 
 **Proposition.** $\mathbb{R}_{\mathbb{C}} + i\mathbb{R}_{\mathbb{C}} = \mathbb{C}$.
 
-**Proof.** Every $Z = a + i b$ is the sum of $a \in \mathbb{R}_{\mathbb{C}}$ and $i b \in i\mathbb{R}_{\mathbb{C}}$, and the sum is direct by the previous proposition.
+**Proof.** Every $A = a + i a'$ is the sum of $a \in \mathbb{R}_{\mathbb{C}}$ and $i a' \in i\mathbb{R}_{\mathbb{C}}$, and the sum is direct by the previous proposition.
 
 The single off-diagonal entry is $2 = \dim_{\mathbb{R}} \mathbb{C}$: the two subspaces together span the algebra, exactly as the members of each decomposition do in $\mathbb{B}$. There is no second distinct pair and hence no larger body of sum arithmetic.
 
@@ -142,7 +142,7 @@ $$
 i\,\mathbb{R}_{\mathbb{C}} = i\mathbb{R}_{\mathbb{C}}, \qquad i\, i\mathbb{R}_{\mathbb{C}} = \mathbb{R}_{\mathbb{C}}.
 $$
 
-The first identity says that the real axis is carried to the imaginary axis, the second that the imaginary axis is carried back; the operator $Z \mapsto i Z$ is therefore a real-linear map of order four with square $-1$, the complex structure of the algebra. It is the placement, in the two-dimensional case, of the block exchange recorded for $\mathbb{B}$.
+The first identity says that the real axis is carried to the imaginary axis, the second that the imaginary axis is carried back; the operator $A \mapsto i A$ is therefore a real-linear map of order four with square $-1$, the complex structure of the algebra. It is the placement, in the two-dimensional case, of the block exchange recorded for $\mathbb{B}$.
 
 ### The Product and the Brackets
 
@@ -158,37 +158,37 @@ The first identity says that the real axis is carried to the imaginary axis, the
 Since $\mathbb{C}$ is commutative, every commutator vanishes:
 
 $$
-[Z, W] = ZW - WZ = 0 \qquad (Z, W \in \mathbb{C}),
+[A, B] = AB - BA = 0 \qquad (A, B \in \mathbb{C}),
 $$
 
-so the commutator bracket produces no subspace, and the symmetrized product $ZW + WZ = 2ZW$ produces no subspace beyond the product itself. The Lie-algebra slot of the biquaternion table, occupied there by the vector subspace $\mathrm{Vect}(\mathbb{B})$ under the commutator, is empty here. This emptiness is a mathematical statement: it is the commutativity of the field, and it is why the derivation space of $\mathbb{C}$ vanishes while that of $\mathbb{B}$ does not.
+so the commutator bracket produces no subspace, and the symmetrized product $AB + BA = 2AB$ produces no subspace beyond the product itself. The Lie-algebra slot of the biquaternion table, occupied there by the vector subspace $\mathrm{Vect}(\mathbb{B})$ under the commutator, is empty here. This emptiness is a mathematical statement: it is the commutativity of the field, and it is why the derivation space of $\mathbb{C}$ vanishes while that of $\mathbb{B}$ does not.
 
 ## Worked Verifications
 
-**A generic element.** For $Z = 3 + 4i$ the eigencomponents of conjugation are
+**A generic element.** For $A = 3 + 4i$ the eigencomponents of conjugation are
 
 $$
-Z_+ = \tfrac{1}{2}(Z + \bar{Z}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
-Z_- = \tfrac{1}{2}(Z - \bar{Z}) = 4i \in i\mathbb{R}_{\mathbb{C}},
+A_+ = \tfrac{1}{2}(A + \bar{A}) = 3 \in \mathbb{R}_{\mathbb{C}}, \qquad
+A_- = \tfrac{1}{2}(A - \bar{A}) = 4i \in i\mathbb{R}_{\mathbb{C}},
 $$
 
-with $Z_+ + Z_- = 3 + 4i = Z$, and the norm on the pieces is $N(Z_+) = 9$ and $N(Z_-) = 16$, whose sum $25 = N(Z)$ is the norm of $Z$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
+with $A_+ + A_- = 3 + 4i = A$, and the norm on the pieces is $N(A_+) = 9$ and $N(A_-) = 16$, whose sum $25 = N(A)$ is the norm of $A$. The two blocks are the real coordinate $3$ and the imaginary coordinate $4$.
 
-**A product that leaves a subspace.** For $Z_- = 4i$ and $W_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,
+**A product that leaves a subspace.** For $A_- = 4i$ and $B_- = 5i$, both in $i\mathbb{R}_{\mathbb{C}}$,
 
 $$
-Z_- W_- = (4i)(5i) = 20\, i^2 = -20 \in \mathbb{R}_{\mathbb{C}},
+A_- B_- = (4i)(5i) = 20\, i^2 = -20 \in \mathbb{R}_{\mathbb{C}},
 $$
 
-so the product of two anti-fixed elements is fixed and nonzero. The commutator is $Z_- W_- - W_- Z_- = 0$, consistent with the vanishing bracket of the previous section.
+so the product of two anti-fixed elements is fixed and nonzero. The commutator is $A_- B_- - B_- A_- = 0$, consistent with the vanishing bracket of the previous section.
 
-**An intersection.** If $Z = a + i b$ lies in both $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$ then $b = 0$ and $a = 0$, so $Z = 0$; the intersection is the origin, as the table records.
+**An intersection.** If $A = a + i a'$ lies in both $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$ then $a' = 0$ and $a = 0$, so $A = 0$; the intersection is the origin, as the table records.
 
 ## Summary
 
 The complex algebra carries exactly one nontrivial involution, complex conjugation, and beside it the identity. Conjugation splits the algebra as $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into its fixed subspace, the real axis $\mathbb{R}_{\mathbb{C}} = \mathbb{R} 1$ of real dimension one, and its anti-fixed subspace, the imaginary axis $i\mathbb{R}_{\mathbb{C}} = \mathbb{R} i$, also of real dimension one. The identity is degenerate, with fixed subspace the whole algebra and anti-fixed subspace the origin.
 
-The real subspace is closed under multiplication and is a field isomorphic to $\mathbb{R}$; the imaginary subspace is not closed, since the product of two of its elements is real, $(ib)(ic) = -b c$. The two subspaces meet only in the origin and together span the algebra. They are the two coordinate blocks of the real basis, and multiplication by $i$ exchanges them.
+The real subspace is closed under multiplication and is a field isomorphic to $\mathbb{R}$; the imaginary subspace is not closed, since the product of two of its elements is real, $(i a')(i b') = -a' b'$. The two subspaces meet only in the origin and together span the algebra. They are the two coordinate blocks of the real basis, and multiplication by $i$ exchanges them.
 
 The lattice is the two-member shadow of the six-subspace lattice of the biquaternion algebra: the two blocks $\langle 1 \rangle$ and $\langle i \rangle$ of the two coordinates replace the four blocks of the eight real coordinates of $\mathbb{B}$, and the four involutions of $\mathbb{B}$ collapse to the single nontrivial involution of $\mathbb{C}$. The commutator bracket vanishes identically because the algebra is commutative, so the vector subspace of $\mathbb{B}$ and its Lie-algebra structure have no analogue here; that absent slot is the commutativity of the field.
 
@@ -197,12 +197,12 @@ The lattice is the two-member shadow of the six-subspace lattice of the biquater
 | symbol | meaning |
 |---|---|
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
-| $Z = a + i b$ | a complex number |
+| $A = a + i a'$ | a complex number |
 | $\operatorname{id}$, $\bar{\cdot}$ | the identity and the nontrivial involution, complex conjugation |
 | $\mathbb{C}^{\sigma}$, $\mathbb{C}^{-\sigma}$ | fixed and anti-fixed subspaces of an involution $\sigma$ |
-| $\mathbb{R}_{\mathbb{C}}$ | real subspace $\{Z : \bar{Z} = Z\} = \mathbb{R} 1$, real dimension $1$ |
-| $i\mathbb{R}_{\mathbb{C}}$ | imaginary subspace $\{Z : \bar{Z} = -Z\} = \mathbb{R} i$, real dimension $1$ |
-| $N(Z) = Z\bar{Z} = a^2 + b^2$ | the norm |
+| $\mathbb{R}_{\mathbb{C}}$ | real subspace $\{A : \bar{A} = A\} = \mathbb{R} 1$, real dimension $1$ |
+| $i\mathbb{R}_{\mathbb{C}}$ | imaginary subspace $\{A : \bar{A} = -A\} = \mathbb{R} i$, real dimension $1$ |
+| $N(A) = A\bar{A} = a^2 + a'^2$ | the norm |
 | $i\,\cdot$ (multiplication by $i$) | exchanges the two subspaces: $\mathbb{R}_{\mathbb{C}} \to i\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}} \to \mathbb{R}_{\mathbb{C}}$ |
 
 ## Further Reading

@@ -198,26 +198,26 @@ $$
 
 with $Q_0, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.
 
-The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\mathbf{v} = x e_1 + y e_2 + z e_3$ with $x, y, z \in \mathbb{C}$, then the coefficients are
+The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\mathbf{v} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_1, Q_2, Q_3 \in \mathbb{C}$, then the coefficients are
 
 $$
 Q_\rho = \langle \rho, \mathbf{v} \rangle, \qquad Q_\nu = \langle \nu, \mathbf{v} \rangle, \qquad Q_\xi = \langle \xi, \mathbf{v} \rangle,
 $$
 
-where the pairing is the complex bilinear dot product $\sum_k x_k y_k$ defined in *Biquaternion Algebra*, §*Biquaternions* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
+where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *Biquaternion Multiplication*, §*The Scalar–Vector Form* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.
 
 ### The Factorization
 
 Writing each sample $f[n]$ in the new basis,
 
 $$
-f[n] = w[n] e_0 + x'[n] \rho + y'[n] \nu + z'[n] \xi,
+f[n] = w[n] e_0 + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi,
 $$
 
 and substituting into the transform with the closed form of the kernel,
 
 $$
-F[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_0 - \sin\theta_n \, \rho\right) \left(w[n] e_0 + x'[n] \rho + y'[n] \nu + z'[n] \xi\right),
+F[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_0 - \sin\theta_n \, \rho\right) \left(w[n] e_0 + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi\right),
 $$
 
 where $\theta_n = 2\pi nu/N$.
@@ -241,19 +241,19 @@ $$
 where
 
 $$
-F_0[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, w[n] + \sin\theta_n \, x'[n]\right),
+F_0[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, w[n] + \sin\theta_n \, Q_\rho[n]\right),
 $$
 
 $$
-F_\rho[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, x'[n] - \sin\theta_n \, w[n]\right),
+F_\rho[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\rho[n] - \sin\theta_n \, w[n]\right),
 $$
 
 $$
-F_\nu[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, y'[n] + \sin\theta_n \, z'[n]\right),
+F_\nu[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\xi[n]\right),
 $$
 
 $$
-F_\xi[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, z'[n] - \sin\theta_n \, y'[n]\right).
+F_\xi[u] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\xi[n] - \sin\theta_n \, Q_\nu[n]\right).
 $$
 
 ### The Complex Fourier Transforms
@@ -274,7 +274,7 @@ and $G_\bullet[n]$ are the complex coefficients of $f[n]$ in the new basis. The 
 
 Concretely, the factorization is the following algorithm:
 
-1. **Change of basis.** For each $n$, write the sample $f[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$, obtaining four complex coefficients $w[n], x'[n], y'[n], z'[n]$.
+1. **Change of basis.** For each $n$, write the sample $f[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$, obtaining four complex coefficients $w[n], Q_\rho[n], Q_\nu[n], Q_\xi[n]$.
 2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex sequences obtained by combining the coefficients as above. The result is four complex spectra.
 3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F[u]$.
 
@@ -352,7 +352,7 @@ The non-commutativity is a genuinely biquaternionic feature of the harmonic anal
 
 A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
 
-More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion $\tilde{Z}$ with $f[n] \circ \tilde{Z} = 0$ or $\tilde{Z} \circ f[n] = 0$. The kernel is invertible, so multiplying $f[n]$ by the kernel gives another zero divisor, and the sum over $n$ may or may not preserve the information of $f[n]$.
+More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion $\tilde{R}$ with $f[n] \circ \tilde{R} = 0$ or $\tilde{R} \circ f[n] = 0$. The kernel is invertible, so multiplying $f[n]$ by the kernel gives another zero divisor, and the sum over $n$ may or may not preserve the information of $f[n]$.
 
 ### Consequences for the Transform
 
@@ -408,34 +408,34 @@ The higher-dimensional transform is separable, and it can be computed by applyin
 The transform pair above analyses a finite sequence; the transform of this section analyses an infinite one, and it is the discrete analogue of the Laplace transform rather than of the Fourier transform. Let $f = \{f_n\}_{n \ge 0}$ be a biquaternion-valued sequence. Its **Z transform** is
 
 $$
-X[f](x) = \sum_{n=0}^{\infty} f_n x^{-n}, \qquad x \in \mathbb{B}^{\times},
+X[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$
 
-the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $x = e^{s}$ turns the sum into $\sum_n f_n e^{-ns}$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $x = e^{2\pi i u/N}$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
+the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = e^{s}$ turns the sum into $\sum_n f_n e^{-ns}$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = e^{2\pi i u/N}$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
 
-The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $x$ through the sequence, and with the variable placed on the left the $q$-scaling rule would require every sample to commute with $q$. The two conventions are interconverted by the quaternion conjugate. Writing
+The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde Q'$-scaling rule would require every sample to commute with $\tilde Q'$. The two conventions are interconverted by the quaternion conjugate. Writing
 
 $$
-Y[f](x) = \sum_{n=0}^{\infty} x^{-n} f_n
+Y[f](\tilde{Q}) = \sum_{n=0}^{\infty} \tilde{Q}^{-n} f_n
 $$
 
 for the transform with the variable on the left,
 
 $$
-\overline{X[f](x)} = Y[\bar f](\bar x),
+\overline{X[f](\tilde{Q})} = Y[\bar f](\bar \tilde{Q}),
 $$
 
-because quaternion conjugation reverses products and $\overline{x^{-1}} = \bar x^{-1}$.
+because quaternion conjugation reverses products and $\overline{\tilde{Q}^{-1}} = \bar \tilde{Q}^{-1}$.
 
 ### The Region of Convergence
 
 Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Biquaternion Norm and Invertibility*. Only the second reduces the question to scalars, because only the second is multiplicative:
 
 $$
-r(f_n x^{-n}) = r(f_n)\,r(x)^{-n}.
+r(f_n \tilde{Q}^{-n}) = r(f_n)\,r(\tilde{Q})^{-n}.
 $$
 
-So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(x) > \sigma_f$, and the Z-transform literature takes the **region of convergence** to be this set, with $\sigma_f$ the **radius of convergence**. Two corrections come from the vanishing of $r$ on the zero divisors.
+So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(\tilde{Q}) > \sigma_f$, and the Z-transform literature takes the **region of convergence** to be this set, with $\sigma_f$ the **radius of convergence**. Two corrections come from the vanishing of $r$ on the zero divisors.
 
 **Vanishing of the seminorm is not convergence.** The first standard idempotent of *Biquaternion Idempotents and Projections* is
 
@@ -455,51 +455,51 @@ $$
 S_K = \sum_{k=0}^{K-1} \tilde\Pi_1^{\,k} = e_0 + (K-1)\tilde\Pi_1, \qquad r(S_K) = \sqrt{K},
 $$
 
-are unbounded in both norms. The point lies inside the claimed region $r(x) < 1$, and the geometric identity
+are unbounded in both norms. The point lies inside the claimed region $r(\tilde{Q}) < 1$, and the geometric identity
 
 $$
-\sum_{k=0}^{\infty} y^{k} = (e_0 - y)^{-1}
+\sum_{k=0}^{\infty} \tilde{Q}^{k} = (e_0 - \tilde{Q})^{-1}
 $$
 
-fails there, because $e_0 - \tilde\Pi_1 = \tilde\Pi_2$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $y^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $y$, read in the $2\times2$ complex matrix representation of *Biquaternion 2×2 Matrix Element Representation*, has modulus less than one; the sum is then $(e_0 - y)^{-1}$, as the identity $(e_0 - y)S_K = e_0 - y^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
+fails there, because $e_0 - \tilde\Pi_1 = \tilde\Pi_2$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of *Biquaternion 2×2 Matrix Element Representation*, has modulus less than one; the sum is then $(e_0 - \tilde{Q})^{-1}$, as the identity $(e_0 - \tilde{Q})S_K = e_0 - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.
 
-**The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = N(\tilde{Q})$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $x^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (cx^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(x) > \sigma_f$ always **contains** the true region and may contain divergent points. For
+**The seminorm radius is the geometric mean of the eigenvalues.** By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = N(\tilde{Q})$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $\tilde{Q}^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (c\tilde{Q}^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(\tilde{Q}) > \sigma_f$ always **contains** the true region and may contain divergent points. For
 
 $$
-x = 3e_0 + ie_1, \qquad N(x) = 8, \qquad r(x) = 2\sqrt2 \approx 2.83,
+\tilde{Q} = 3e_0 + ie_1, \qquad N(\tilde{Q}) = 8, \qquad r(\tilde{Q}) = 2\sqrt2 \approx 2.83,
 $$
 
-the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the region, although $\sum_k (2.5\,x^{-1})^k$ diverges, its partial sums reaching Euclidean norm $6.8 \times 10^{19}$ at $k = 200$. For an element with real quaternion coordinates the two eigenvalues are conjugate, $r$ is their common modulus, and the two regions coincide, so the correction concerns the biquaternions proper and not the quaternion subspace. In the applications the variable is a complex scalar, where $x^{-n}$ has norm $\lvert x\rvert^{-n}$ and the classical theory of the complex Z transform carries over to the coefficients unchanged.
+the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the region, although $\sum_k (2.5\,\tilde{Q}^{-1})^k$ diverges, its partial sums reaching Euclidean norm $6.8 \times 10^{19}$ at $k = 200$. For an element with real quaternion coordinates the two eigenvalues are conjugate, $r$ is their common modulus, and the two regions coincide, so the correction concerns the biquaternions proper and not the quaternion subspace. In the applications the variable is a complex scalar, where $\tilde{Q}^{-n}$ has norm $\lvert \tilde{Q}\rvert^{-n}$ and the classical theory of the complex Z transform carries over to the coefficients unchanged.
 
 ### The Calculation Rules
 
-Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2 \in \mathbb{B}$ and $p, q \in \mathbb{B}$, and $k$ is a non-negative integer.
+Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2 \in \mathbb{B}$ and $\tilde P, \tilde Q' \in \mathbb{B}$, and $k$ is a non-negative integer.
 
 | Property | Sequence | Transform |
 |---|---|---|
-| Left linearity | $c_1f + c_2g$ | $c_1X[f](x) + c_2X[g](x)$, for any constants |
-| Right linearity | $fc_1 + gc_2$ | $X[f](x)c_1 + X[g](x)c_2$, for $c_1x = xc_1$ and $c_2x = xc_2$ |
-| Two-sided linearity | $c_1f + gc_2$ | $c_1X[f](x) + X[g](x)c_2$, for $c_2x = xc_2$ |
-| $q$-scaling | $f_nq^n$ | $X[f](q^{-1}x)$, for $qx = xq$ |
-| $n$-scaling | $nf_n$ | $-x\,\dfrac{d}{dx}X[f](x)$, for $x$ central |
-| Shifting | $f_{n+k}$ | $X[f](x)x^{k} - \sum_{n=0}^{k-1} f_nx^{k-n}$ |
-| Inverse shifting | $f_{n-k}$ ($0$ for $n<k$) | $X[f](x)x^{-k}$ |
-| Convolution | $\sum_{j=0}^{n} f_{n-j}g_j$ | $X[f](x)X[g](x)$, for $x$ central |
+| Left linearity | $c_1f + c_2g$ | $c_1X[f](\tilde{Q}) + c_2X[g](\tilde{Q})$, for any constants |
+| Right linearity | $fc_1 + gc_2$ | $X[f](\tilde{Q})c_1 + X[g](\tilde{Q})c_2$, for $c_1\tilde{Q} = \tilde{Q}c_1$ and $c_2\tilde{Q} = \tilde{Q}c_2$ |
+| Two-sided linearity | $c_1f + gc_2$ | $c_1X[f](\tilde{Q}) + X[g](\tilde{Q})c_2$, for $c_2\tilde{Q} = \tilde{Q}c_2$ |
+| $\tilde Q'$-scaling | $f_n\tilde Q'^n$ | $X[f](\tilde Q'^{-1}\tilde{Q})$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ |
+| $n$-scaling | $nf_n$ | $-\tilde{Q}\,\dfrac{d}{d\tilde{Q}}X[f](\tilde{Q})$, for $\tilde{Q}$ central |
+| Shifting | $f_{n+k}$ | $X[f](\tilde{Q})\tilde{Q}^{k} - \sum_{n=0}^{k-1} f_n\tilde{Q}^{k-n}$ |
+| Inverse shifting | $f_{n-k}$ ($0$ for $n<k$) | $X[f](\tilde{Q})\tilde{Q}^{-k}$ |
+| Convolution | $\sum_{j=0}^{n} f_{n-j}g_j$ | $X[f](\tilde{Q})X[g](\tilde{Q})$, for $\tilde{Q}$ central |
 
-The shifting rows need no hypothesis, because $x^{-(n+k)} = x^{-n}x^{-k}$ for the powers of a single element. The $q$-scaling row compares $(qx^{-1})^n$ with $q^nx^{-n}$ and therefore needs $qx = xq$, and the convolution row needs each $g_j$ to commute with $x$, which the centrality of $x$ supplies. The linearity rows show where the non-commutativity bites: a constant written on the right of a sequence may be moved outside the transform only if it commutes with the variable.
+The shifting rows need no hypothesis, because $\tilde{Q}^{-(n+k)} = \tilde{Q}^{-n}\tilde{Q}^{-k}$ for the powers of a single element. The $\tilde Q'$-scaling row compares $(\tilde Q'\tilde{Q}^{-1})^n$ with $\tilde Q'^n\tilde{Q}^{-n}$ and therefore needs $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$, and the convolution row needs each $g_j$ to commute with $\tilde{Q}$, which the centrality of $\tilde{Q}$ supplies. The linearity rows show where the non-commutativity bites: a constant written on the right of a sequence may be moved outside the transform only if it commutes with the variable.
 
 ### The Elementary Sequences
 
 In the table below the entry $n$ abbreviates the sequence $ne_0$, and the variable is a complex scalar, the case used in the applications. The rows whose base is a biquaternion carry the commutation hypotheses displayed, and the two scalar rows use the $n$-scaling rule, which a complex scalar satisfies.
 
-| $f_n$ | $X[f](x)$ |
+| $f_n$ | $X[f](\tilde{Q})$ |
 |---|---|
-| $e_0$ | $(e_0 - x^{-1})^{-1}$ |
-| $n$ | $x(x - e_0)^{-2}$ |
-| $n^2$ | $(x + x^2)(x - e_0)^{-3}$ |
-| $p^n$, for $px = xp$ | $(e_0 - px^{-1})^{-1}$ |
-| $np^n$, for $px = xp$ | $px^{-1}(e_0 - px^{-1})^{-2}$ |
-| $\dfrac{q^n}{n!}$, for $qx = xq$ | $e^{qx^{-1}}$ |
+| $e_0$ | $(e_0 - \tilde{Q}^{-1})^{-1}$ |
+| $n$ | $\tilde{Q}(\tilde{Q} - e_0)^{-2}$ |
+| $n^2$ | $(\tilde{Q} + \tilde{Q}^2)(\tilde{Q} - e_0)^{-3}$ |
+| $\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $(e_0 - \tilde P\tilde{Q}^{-1})^{-1}$ |
+| $n\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $\tilde P\tilde{Q}^{-1}(e_0 - \tilde P\tilde{Q}^{-1})^{-2}$ |
+| $\dfrac{\tilde Q'^n}{n!}$, for $\tilde Q'\tilde{Q} = \tilde{Q}\tilde Q'$ | $e^{\tilde Q'\tilde{Q}^{-1}}$ |
 
 ### Recurrence Relations
 
@@ -517,22 +517,22 @@ $$
 f_{n+2} = f_{n+1}(u - e_0) + f_nu, \qquad f_0 = e_0, \qquad f_1 = u .
 $$
 
-Transforming both sides and using the shifting rule, with $x$ central,
+Transforming both sides and using the shifting rule, with $\tilde{Q}$ central,
 
 $$
-x^2\bigl(X[f] - e_0 - ux^{-1}\bigr) = x\bigl(X[f] - e_0\bigr)(u - e_0) + X[f]u,
+\tilde{Q}^2\bigl(X[f] - e_0 - u\tilde{Q}^{-1}\bigr) = \tilde{Q}\bigl(X[f] - e_0\bigr)(u - e_0) + X[f]u,
 $$
 
 which, after $e_0u = u$ and $e_0^2 = e_0$, is the linear equation
 
 $$
-X[f](x)\,(x^2 + x - xu - u) = x^2 + x .
+X[f](\tilde{Q})\,(\tilde{Q}^2 + \tilde{Q} - \tilde{Q}u - u) = \tilde{Q}^2 + \tilde{Q} .
 $$
 
-The left factor is the product $(x + e_0)(x - u)$ of two commuting factors, and $x^2 + x = x(x + e_0)$, so
+The left factor is the product $(\tilde{Q} + e_0)(\tilde{Q} - u)$ of two commuting factors, and $\tilde{Q}^2 + \tilde{Q} = \tilde{Q}(\tilde{Q} + e_0)$, so
 
 $$
-X[f](x) = x(x - u)^{-1} = (e_0 - ux^{-1})^{-1}.
+X[f](\tilde{Q}) = \tilde{Q}(\tilde{Q} - u)^{-1} = (e_0 - u\tilde{Q}^{-1})^{-1}.
 $$
 
 By the table this is the transform of the sequence $f_n = u^n$, which satisfies the recurrence because $u^{n+1}(u - e_0) + u^{n+1} = u^{n+2}$, and satisfies the initial values. The solution is
@@ -541,7 +541,7 @@ $$
 f_n = (e_1 + e_2)^n, \qquad n \ge 0 .
 $$
 
-An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $X[f]$ is decomposed in powers of $x^{-1}$, and each term is read off the table.
+An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $X[f]$ is decomposed in powers of $\tilde{Q}^{-1}$, and each term is read off the table.
 
 ## The Commutative Alternative: The Reduced Biquaternion Transform
 
@@ -579,7 +579,7 @@ The vanishing-norm issue is a genuinely biquaternionic feature: signals containi
 
 The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the biquaternion signal processing applications.
 
-The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](x) = \sum_{n \ge 0} f_nx^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(x) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
+The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
 
 ## Summary of Notation
 
@@ -594,9 +594,9 @@ The infinite-sequence analogue is the **biquaternion Z transform**, $X[f](x) = \
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; not to be confused with the sample count $N$ |
 | $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
 | $e^{\rho\theta} = \cos\theta\,e_0 + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
-| $X[f](x) = \sum_{n \ge 0} f_nx^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
-| $Y[f](x) = \sum_{n \ge 0} x^{-n}f_n$ | The Z transform with the variable on the left; $\overline{X[f](x)} = Y[\bar f](\bar x)$ |
-| $x \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
+| $X[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
+| $Y[f](\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^{-n}f_n$ | The Z transform with the variable on the left; $\overline{X[f](\tilde{Q})} = Y[\bar f](\bar \tilde{Q})$ |
+| $\tilde{Q} \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
 | $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
 | $\sigma_f$ | Radius of convergence of the Z transform, the geometric growth rate of $r(f_n)$ |
 

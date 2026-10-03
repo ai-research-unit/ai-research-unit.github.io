@@ -72,7 +72,7 @@ which is the biquaternion-norm statement of the relativistic dispersion relation
 A Green's function of the Klein–Gordon operator is a distributional inverse. This article fixes the defining equation once,
 
 $$
-\boxed{\;\left(\Box-\mu^2\right)G(\tilde{Q}})=-\delta^{(4)}(\tilde{Q}),
+\boxed{\;\left(\Box-\mu^2\right)G(\tilde{Q})=-\delta^{(4)}(\tilde{Q}),
 \qquad
 \delta^{(4)}(\tilde{Q})=\delta(t)\,\delta^{(3)}(\mathbf{x})\;}
 $$

@@ -318,7 +318,7 @@ where $\tilde{G}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the componen
 The **Poisson kernel** for the ball of radius $r$ is
 
 $$
-P(\tilde{Q}, \tilde{Y}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{Y}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{Y}\|_E = r.
+P(\tilde{Q}, \tilde{R}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{R}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{R}\|_E = r.
 $$
 
 It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomposes in the idempotent basis into the quaternion Poisson kernels of the two components.
@@ -328,7 +328,7 @@ It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomp
 The **Green's function** for the d'Alembertian on a domain $\Omega$ satisfies
 
 $$
-\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{Y}) = \delta(\tilde{Q} - \tilde{Y}) e_0, \qquad G(\tilde{Q}, \tilde{Y}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
+\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{R}) = \delta(\tilde{Q} - \tilde{R}) e_0, \qquad G(\tilde{Q}, \tilde{R}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
 $$
 
 Its construction is standard from the fundamental solution, and it decomposes in the idempotent basis.
@@ -403,7 +403,7 @@ The split biquaternion special functions are therefore a partially developed sub
 | $\zeta$ | Riemann zeta function |
 | $\tilde{K}$ | Cauchy kernel |
 | $P(\tilde{Q}, \zeta)$ | Poisson kernel |
-| $G(\tilde P, \tilde{Q})$ | Green's function |
+| $G(\tilde Q, \tilde R)$ | Green's function |
 
 ## Further Reading
 

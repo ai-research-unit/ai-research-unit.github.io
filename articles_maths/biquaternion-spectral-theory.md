@@ -100,7 +100,7 @@ $$
 
 So $\dim_{\mathbb{C}} \mathbb{C}[\tilde{Q}]$ is $2$ in the first two cases and $1$ in the scalar case, and the isomorphism type is the same dichotomy as the conjugacy classification of §*Similarity Classes and the Eigenvalue Dichotomy*.
 
-**The functional calculus.** Since $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[x]/(m_{\tilde{Q}})$, every power series $F(z) = \sum_n a_n z^n$ with complex coefficients has $F(\tilde{Q}) = \alpha e_0 + \beta \tilde{Q}$ for scalars $\alpha, \beta$ determined by the data of $F$ on the roots: the two values $F(Q_0 \pm iB)$ in the semisimple case, and $F(Q_0)$ together with $F'(Q_0)$ in the local case. Consequently $F(\tilde{Q})$ converges if and only if $F$ converges at the root or roots (in the local case, $F$ and its derivative). Every elementary function of a single biquaternion is an instance, and the standard identities of complex analysis hold in $\mathbb{C}[\tilde{Q}]$ because it is commutative; this is the structural fact behind *Biquaternion Elementary Functions*.
+**The functional calculus.** Since $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[x]/(m_{\tilde{Q}})$, every power series $F(A) = \sum_n a_n A^n$ with complex coefficients has $F(\tilde{Q}) = \alpha e_0 + \beta \tilde{Q}$ for scalars $\alpha, \beta$ determined by the data of $F$ on the roots: the two values $F(Q_0 \pm iB)$ in the semisimple case, and $F(Q_0)$ together with $F'(Q_0)$ in the local case. Consequently $F(\tilde{Q})$ converges if and only if $F$ converges at the root or roots (in the local case, $F$ and its derivative). Every elementary function of a single biquaternion is an instance, and the standard identities of complex analysis hold in $\mathbb{C}[\tilde{Q}]$ because it is commutative; this is the structural fact behind *Biquaternion Elementary Functions*.
 
 ## Similarity Classes and the Eigenvalue Dichotomy
 
@@ -120,11 +120,11 @@ In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divi
 
 ## Eigenspaces and Their Dimensions
 
-**Definition 6.1.** For $\lambda \in \sigma(\tilde{Q})$ the **eigenspace** is $E_\lambda = \{x \in \mathbb{B} : \tilde{Q}x = \lambda x\}$, the eigenspace of left multiplication by $\tilde{Q}$ on $\mathbb{B}$, and $\dim_\mathbb{C} E_\lambda$ is the **geometric multiplicity**.
+**Definition 6.1.** For $\lambda \in \sigma(\tilde{Q})$ the **eigenspace** is $E_\lambda = \{\tilde{P} \in \mathbb{B} : \tilde{Q}\tilde{P} = \lambda \tilde{P}\}$, the eigenspace of left multiplication by $\tilde{Q}$ on $\mathbb{B}$, and $\dim_\mathbb{C} E_\lambda$ is the **geometric multiplicity**.
 
 **Proposition 6.2.** For $\lambda \in \sigma(\tilde{Q})$: (1) if $B \neq 0$ then $\dim_\mathbb{C} E_\lambda = 2$; (2) if $B = 0$ and $\mathbf{Q} = 0$ then $E_{Q_0} = \mathbb{B}$; (3) if $B = 0$ and $\mathbf{Q} \neq 0$ then $\dim_\mathbb{C} E_{Q_0} = 2$.
 
-**Proof.** (1) Left multiplication by $\tilde{Q}$ is diagonalizable with the two distinct eigenvalues $Q_0 \pm iB$, each of algebraic multiplicity $2$, hence each eigenspace has dimension $2$. (2) $\tilde{Q} = Q_0e_0$ is central, so $\tilde{Q}x = Q_0x$ for every $x$. (3) Left multiplication by the nilpotent $\tilde{Q} - Q_0e_0$ has square $0$ and rank $2$, hence nullity $2$.
+**Proof.** (1) Left multiplication by $\tilde{Q}$ is diagonalizable with the two distinct eigenvalues $Q_0 \pm iB$, each of algebraic multiplicity $2$, hence each eigenspace has dimension $2$. (2) $\tilde{Q} = Q_0e_0$ is central, so $\tilde{Q}\tilde{P} = Q_0\tilde{P}$ for every $\tilde{P}$. (3) Left multiplication by the nilpotent $\tilde{Q} - Q_0e_0$ has square $0$ and rank $2$, hence nullity $2$.
 
 **Corollary 6.3.** In the regular module $\mathbb{B}$ the geometric multiplicity of an eigenvalue is $2$, except for a central element, where it is $4$; only for a nilpotent element does it fall below the algebraic multiplicity $4$.
 
@@ -156,7 +156,7 @@ Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^z$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \mathbf{Q}/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \mathbf{Q})$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
+The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^A$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \mathbf{Q}/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \mathbf{Q})$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
 
 **Non-injectivity.** Since $2\pi i n e_0$ is central, $\exp(\tilde{Q} + 2\pi i n e_0) = \exp(\tilde{Q})$ for every integer $n$; in particular $\exp(0) = \exp(2\pi i e_0) = e_0$, although $2\pi i e_0 \neq 0$.
 
@@ -216,7 +216,7 @@ the roots of the characteristic polynomial $\lambda^2 - 2Q_0\lambda + D(\tilde{Q
 
 The rest of the theory is intrinsic to $\mathbb{B}$: the commutative subalgebra generated by a single element and its functional calculus, Cayley–Hamilton, the similarity classification and the eigenvalue dichotomy, the eigenspace dimensions in the regular module, the resolvent and its expansion, the spectral radius, and the exponential and the logarithm. The spectral theorem takes the biquaternion form $\tilde{Q} = \lambda_1 \tilde\Pi_1 + \lambda_2 \tilde\Pi_2$ with Hermitian idempotents $\tilde\Pi_1, \tilde\Pi_2$ summing to $e_0$ and orthogonal; a Hermitian element has real spectrum, a unitary element spectrum on the unit circle.
 
-When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity requires a different notion, the S-spectrum $\sigma_S(T) = \{s \in \mathbb{H} : T^2 - 2\operatorname{Re}(s)T + |s|^2 I$ is not invertible$\}$, which coincides with the right spectrum and, for a real quaternion viewed as a biquaternion, restricts to the complex spectrum as $\sigma(q) = [q] \cap \mathbb{C}_i$. The S-spectrum thus plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.
+When the scalars do not commute, as over $\mathbb{H}$, the left/right ambiguity requires a different notion, the S-spectrum $\sigma_S(T) = \{s \in \mathbb{H} : T^2 - 2\operatorname{Re}(s)T + |s|^2 I \text{ is not invertible}\}$, which coincides with the right spectrum and, for a real quaternion viewed as a biquaternion, restricts to the complex spectrum as $\sigma(q) = [q] \cap \mathbb{C}_i$. The S-spectrum thus plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.
 
 ## Summary of Notation
 

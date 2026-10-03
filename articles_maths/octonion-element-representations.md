@@ -7,7 +7,7 @@ This article is the representations slot of the octonion system. Its subject is 
 
 The article takes the multiplication and the identities of *Octonion Algebra*, the norm and the invertibility theory of *Octonion Norm and Invertibility*, and the model of the quaternion case from *Quaternion Element Representations*. The general theory of modules over an associative algebra, of algebras of endomorphisms and of the enveloping algebra of a Lie algebra is that of the Part I companions *Modules*, *Algebras: A General Introduction* and *Universal Enveloping Algebras*; the Clifford algebras and their classification are the subject of *Clifford Algebras in Finite Dimensions* and *Spin Representations and Clifford Modules with Inner Conjugation*, and the identification of the number systems with Clifford algebras is the subject of *The Number Systems as Clifford Algebras*. The finite-dimensional representation theory of $G_2$ and its role in the exceptional groups is taken up again; the present article states the representations and does not derive the classification of the exceptional groups.
 
-**Conventions.** The octonion algebra has basis $e_0,\dots,e_7$ with the Fano multiplication of *Octonion Algebra*, inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ and norm $\lvert x\rvert^2 = \langle x,x\rangle$. For $x\in\mathbb{O}$ the operators $L_x,R_x\in\operatorname{End}_{\mathbb{R}}(\mathbb{O})$ are left and right multiplication, $L_x(y) = xy$, $R_y(x) = xy$. The associator is $[x,y,z] = (xy)z - x(yz)$.
+**Conventions.** The octonion algebra has basis $e_0,\dots,e_7$ with the Fano multiplication of *Octonion Algebra*, inner product $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$ and norm $\lvert \tilde o\rvert^2 = \langle \tilde o,\tilde o\rangle$. For $\tilde o\in\mathbb{O}$ the operators $L_{\tilde o},R_{\tilde o}\in\operatorname{End}_{\mathbb{R}}(\mathbb{O})$ are left and right multiplication, $L_{\tilde o}(\tilde p) = \tilde o\tilde p$, $R_{\tilde p}(\tilde o) = \tilde o\tilde p$. The associator is $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$.
 
 ## The Failure of an Associative Module Theory
 
@@ -28,7 +28,7 @@ For an associative algebra these are the usual three axioms of a bimodule; for a
 *Proof.* By the first axiom the map $a\mapsto L^M_a$, where $L^M_a(m) = am$, is a homomorphism of $\mathbb{O}$ into the associative algebra $\operatorname{End}(M)$: $L^M_{ab} = L^M_aL^M_b$. In an associative algebra the associator of three elements vanishes, so
 
 $$
-L^M_{[x,y,z]} = L^M_{(xy)z} - L^M_{x(yz)} = L^M_{xy}L^M_z - L^M_xL^M_{yz} = L^M_xL^M_yL^M_z - L^M_xL^M_yL^M_z = 0 .
+L^M_{[\tilde o,\tilde p,\tilde r]} = L^M_{(\tilde o\tilde p)\tilde r} - L^M_{\tilde o(\tilde p\tilde r)} = L^M_{\tilde o\tilde p}L^M_{\tilde r} - L^M_{\tilde o}L^M_{\tilde p\tilde r} = L^M_{\tilde o}L^M_{\tilde p}L^M_{\tilde r} - L^M_{\tilde o}L^M_{\tilde p}L^M_{\tilde r} = 0 .
 $$
 
 Hence every associator of $\mathbb{O}$ acts as the zero operator on $M$. Now the associators span the imaginary subspace $\operatorname{Im}\mathbb{O}$, a seven-dimensional space, and the two-sided ideal that they generate is all of $\mathbb{O}$: it contains $e_1e_1 = -e_0$, hence $e_0\mathbb{O} = \mathbb{O}$. Since $L^M$ is a homomorphism, the left action of every element of the generated ideal is zero, so $L^M_a = 0$ for every $a\in\mathbb{O}$. Applying this to $a = e_0$ and using unitality gives $m = e_0m = 0$ for every $m\in M$, so $M = 0$.
@@ -41,7 +41,7 @@ The obstruction is therefore not a technicality but a vanishing theorem, and it 
 
 The vanishing theorem forces the following reading of the phrase "the representations of the octonions".
 
-1. The multiplication operators $L_x$ and $R_x$ are linear endomorphisms of $\mathbb{O}$; they define an injective linear map $\mathbb{O}\to\operatorname{End}(\mathbb{O})$ that is **not** an algebra homomorphism, and the defect is exactly the associator.
+1. The multiplication operators $L_{\tilde o}$ and $R_{\tilde o}$ are linear endomorphisms of $\mathbb{O}$; they define an injective linear map $\mathbb{O}\to\operatorname{End}(\mathbb{O})$ that is **not** an algebra homomorphism, and the defect is exactly the associator.
 2. The derivations and automorphisms of $\mathbb{O}$ are the structure-preserving linear maps; they form the Lie algebra $\mathrm{G}_2$ and the group $G_2$, both of which are linear in the ordinary sense, so their representation theory is the usual one.
 3. The unit sphere $S^7$ acts on $\mathbb{O}$ by multiplication and embeds in the orthogonal group; it is a Moufang loop of isometries, and its image generates the relative groups $\operatorname{Spin}(7)$ and $\operatorname{SO}(8)$.
 
@@ -54,34 +54,34 @@ Each of the three is taken up in turn. Nothing else survives: there are no modul
 **Definition.** The **left regular representation** of $\mathbb{O}$ is the map
 
 $$
-\lambda : \mathbb{O}\longrightarrow\operatorname{End}_{\mathbb{R}}(\mathbb{O}), \qquad \lambda(x) = L_x, \quad L_x(y) = xy ,
+\lambda : \mathbb{O}\longrightarrow\operatorname{End}_{\mathbb{R}}(\mathbb{O}), \qquad \lambda(\tilde o) = L_{\tilde o}, \quad L_{\tilde o}(\tilde p) = \tilde o\tilde p ,
 $$
 
-and the **right regular representation** is $\rho(x) = R_x$, $R_x(y) = yx$.
+and the **right regular representation** is $\rho(\tilde o) = R_{\tilde o}$, $R_{\tilde o}(\tilde p) = \tilde p\tilde o$.
 
-**Proposition.** The maps $\lambda$ and $\rho$ are injective and $\mathbb{R}$-linear, and $\lambda(e_0) = \rho(e_0) = \mathrm{id}$. Neither is an algebra homomorphism: for all $x,y$
-
-$$
-\lambda(x)\lambda(y) - \lambda(xy) : z\longmapsto -[x,y,z], \qquad
-\rho(y)\rho(x) - \rho(xy) : z\longmapsto [x,y,z] ,
-$$
-
-that is, the defect of multiplicativity of the regular representation is the associator operator. Consequently $\lambda$ is multiplicative precisely on the set of pairs $(x,y)$ for which $[x,y,\cdot]$ vanishes identically, and in particular on every pair lying in a common associative subalgebra, by Artin's theorem.
-
-*Proof.* Injectivity: $L_xe_0 = x$, so $L_x = 0$ only for $x = 0$; linearity is the bilinearity of the product; $\lambda(e_0) = \mathrm{id}$ is the identity axiom. For the defect, $(\lambda(x)\lambda(y))(z) - \lambda(xy)(z) = x(yz) - (xy)z = -[x,y,z]$. The analogue on the right is the same computation with the reversed product. The last statement is Artin's theorem.
-
-The defect is thus an operator-valued trilinear form, and it is not something that can be removed by a change of basis: it vanishes on a pair $(x,y)$ only for those pairs whose generated subalgebra is associative, and by the previous section it cannot vanish identically on any non-zero module.
-
-**Proposition.** For imaginary $x,y$ the operators satisfy the **Clifford relations**
+**Proposition.** The maps $\lambda$ and $\rho$ are injective and $\mathbb{R}$-linear, and $\lambda(e_0) = \rho(e_0) = \mathrm{id}$. Neither is an algebra homomorphism: for all $\tilde o,\tilde p$
 
 $$
-L_xL_y + L_yL_x = -2\langle x,y\rangle\,\mathrm{id}, \qquad
-R_xR_y + R_yR_x = -2\langle x,y\rangle\,\mathrm{id} .
+\lambda(\tilde o)\lambda(\tilde p) - \lambda(\tilde o\tilde p) : \tilde r\longmapsto -[\tilde o,\tilde p,\tilde r], \qquad
+\rho(\tilde p)\rho(\tilde o) - \rho(\tilde o\tilde p) : \tilde r\longmapsto [\tilde o,\tilde p,\tilde r] ,
+$$
+
+that is, the defect of multiplicativity of the regular representation is the associator operator. Consequently $\lambda$ is multiplicative precisely on the set of pairs $(\tilde o,\tilde p)$ for which $[\tilde o,\tilde p,\cdot]$ vanishes identically, and in particular on every pair lying in a common associative subalgebra, by Artin's theorem.
+
+*Proof.* Injectivity: $L_{\tilde o}e_0 = \tilde o$, so $L_{\tilde o} = 0$ only for $\tilde o = 0$; linearity is the bilinearity of the product; $\lambda(e_0) = \mathrm{id}$ is the identity axiom. For the defect, $(\lambda(\tilde o)\lambda(\tilde p))(\tilde r) - \lambda(\tilde o\tilde p)(\tilde r) = \tilde o(\tilde p\tilde r) - (\tilde o\tilde p)\tilde r = -[\tilde o,\tilde p,\tilde r]$. The analogue on the right is the same computation with the reversed product. The last statement is Artin's theorem.
+
+The defect is thus an operator-valued trilinear form, and it is not something that can be removed by a change of basis: it vanishes on a pair $(\tilde o,\tilde p)$ only for those pairs whose generated subalgebra is associative, and by the previous section it cannot vanish identically on any non-zero module.
+
+**Proposition.** For imaginary $\tilde o,\tilde p$ the operators satisfy the **Clifford relations**
+
+$$
+L_{\tilde o}L_{\tilde p} + L_{\tilde p}L_{\tilde o} = -2\langle \tilde o,\tilde p\rangle\,\mathrm{id}, \qquad
+R_{\tilde o}R_{\tilde p} + R_{\tilde p}R_{\tilde o} = -2\langle \tilde o,\tilde p\rangle\,\mathrm{id} .
 $$
 
 Hence the assignment $e_k\mapsto L_{e_k}$ for $k = 1,\dots,7$ extends to a representation of the Clifford algebra $\mathrm{Cl}_{0,7}$ on the vector space $\mathbb{O}$, and $\mathbb{O}$ is a Clifford module of dimension eight over $\mathrm{Cl}_{0,7}$.
 
-*Proof.* The identity is the linearisation of $L_xL_x = L_{x^2}$ for imaginary $x$: since $x^2 = -\lvert x\rvert^2e_0$, one has $L_x^2 = -\lvert x\rvert^2\mathrm{id}$, and polarising in $x$ gives the displayed relation. Equivalently, the relation is a finite computation on the basis using the Fano rule. The universality of $\mathrm{Cl}_{0,7}$ then gives the representation.
+*Proof.* The identity is the linearisation of $L_{\tilde o}L_{\tilde o} = L_{\tilde o^2}$ for imaginary $\tilde o$: since $\tilde o^2 = -\lvert \tilde o\rvert^2e_0$, one has $L_{\tilde o}^2 = -\lvert \tilde o\rvert^2\mathrm{id}$, and polarising in $\tilde o$ gives the displayed relation. Equivalently, the relation is a finite computation on the basis using the Fano rule. The universality of $\mathrm{Cl}_{0,7}$ then gives the representation.
 
 **Theorem.** The algebra generated inside $\operatorname{End}_{\mathbb{R}}(\mathbb{O})\cong M_8(\mathbb{R})$ by the seven operators $L_{e_1},\dots,L_{e_7}$ is the full matrix algebra $M_8(\mathbb{R})$, of dimension sixty-four.
 
@@ -103,7 +103,7 @@ $$
 S^7 = \operatorname{Spin}(7)/G_2 .
 $$
 
-*Proof.* Orthogonality is the invariance of the inner product, $\langle uy,uz\rangle = \lvert u\rvert^2\langle y,z\rangle$, at $\lvert u\rvert = 1$; the determinant is one because $u\mapsto L_u$ is continuous with $L_{e_0} = \mathrm{id}$ and $S^7$ is connected. Injectivity is $L_ue_0 = u$; the failure of multiplicativity is the defect $\lambda(u)\lambda(v) - \lambda(uv) = -[u,v,\cdot]$, which is non-zero for suitable $u,v$, for instance $u = e_1$, $v = e_4$, where the operator applied to $e_2$ gives $\pm2e_7$. The generation of $\operatorname{Spin}(7)$ by the even Clifford products, the transitivity of its action on $S^7$ and the identification of the isotropy with $G_2$ are standard, with the standard sources cited.
+*Proof.* Orthogonality is the invariance of the inner product, $\langle u\tilde p,u\tilde r\rangle = \lvert u\rvert^2\langle \tilde p,\tilde r\rangle$, at $\lvert u\rvert = 1$; the determinant is one because $u\mapsto L_u$ is continuous with $L_{e_0} = \mathrm{id}$ and $S^7$ is connected. Injectivity is $L_ue_0 = u$; the failure of multiplicativity is the defect $\lambda(u)\lambda(v) - \lambda(uv) = -[u,v,\cdot]$, which is non-zero for suitable $u,v$, for instance $u = e_1$, $v = e_4$, where the operator applied to $e_2$ gives $\pm2e_7$. The generation of $\operatorname{Spin}(7)$ by the even Clifford products, the transitivity of its action on $S^7$ and the identification of the isotropy with $G_2$ are standard, with the standard sources cited.
 
 The proposition is the octonion replacement for the embedding of the quaternion unit sphere in $SO(4)$: the sphere acts on the algebra by isometries, and the failure of associativity appears as the difference between the loop $S^7$ and the group generated by its left translations.
 
@@ -111,7 +111,7 @@ The proposition is the octonion replacement for the embedding of the quaternion 
 
 ### The Derivation Algebra and Its Representations
 
-**Definition.** A **derivation** of $\mathbb{O}$ is a linear map $d : \mathbb{O}\to\mathbb{O}$ satisfying the Leibniz rule $d(xy) = (dx)y + x(dy)$ for all $x,y$; the space of derivations is written $\operatorname{Der}(\mathbb{O}) = \mathrm{G}_2$.
+**Definition.** A **derivation** of $\mathbb{O}$ is a linear map $d : \mathbb{O}\to\mathbb{O}$ satisfying the Leibniz rule $d(\tilde o\tilde p) = (d\tilde o)\tilde p + \tilde o(d\tilde p)$ for all $\tilde o,\tilde p$; the space of derivations is written $\operatorname{Der}(\mathbb{O}) = \mathrm{G}_2$.
 
 **Theorem.** $\operatorname{Der}(\mathbb{O})$ is a Lie subalgebra of $\mathrm{SO}(8)$ of dimension fourteen, acting trivially on $e_0$ and irreducibly on $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, and it is the exceptional simple Lie algebra $\mathrm{G}_2$. The group $\operatorname{Aut}(\mathbb{O})$ is the compact simply connected simple Lie group $G_2$ of dimension fourteen; it acts transitively on the unit sphere $S^6\subset\operatorname{Im}\mathbb{O}$ with isotropy $SU(3)$, so that
 
@@ -157,7 +157,7 @@ Triality is the reason why the octonions, alone among the number systems, are ti
 
 The octonions have no associative module theory: a unital bimodule over $\mathbb{O}$ is necessarily zero, because the left action of a bimodule is an algebra homomorphism into an associative algebra, in which all associators vanish, while the associators of $\mathbb{O}$ span $\operatorname{Im}\mathbb{O}$ and generate $\mathbb{O}$ as a two-sided ideal.
 
-What replaces modules are the multiplication operators and the representations of the structure objects. The left and right regular representations $x\mapsto L_x$, $x\mapsto R_x$ are injective linear maps, and their defect of multiplicativity is exactly the associator operator: $\lambda(x)\lambda(y) - \lambda(xy) = -[x,y,\cdot]$. For imaginary elements the operators satisfy the Clifford relations $L_xL_y + L_yL_x = -2\langle x,y\rangle\mathrm{id}$, so that $\mathbb{O}$ is a Clifford module over $\mathrm{Cl}_{0,7}$; the seven operators $L_{e_k}$ generate the full matrix algebra $M_8(\mathbb{R})$, and the unit sphere acts by orthogonal maps, $S^7\to SO(8)$, as a Moufang loop; the even products generate $\operatorname{Spin}(7)$ and $S^7 = \operatorname{Spin}(7)/G_2$.
+What replaces modules are the multiplication operators and the representations of the structure objects. The left and right regular representations $\tilde o\mapsto L_{\tilde o}$, $\tilde o\mapsto R_{\tilde o}$ are injective linear maps, and their defect of multiplicativity is exactly the associator operator: $\lambda(\tilde o)\lambda(\tilde p) - \lambda(\tilde o\tilde p) = -[\tilde o,\tilde p,\cdot]$. For imaginary elements the operators satisfy the Clifford relations $L_{\tilde o}L_{\tilde p} + L_{\tilde p}L_{\tilde o} = -2\langle \tilde o,\tilde p\rangle\mathrm{id}$, so that $\mathbb{O}$ is a Clifford module over $\mathrm{Cl}_{0,7}$; the seven operators $L_{e_k}$ generate the full matrix algebra $M_8(\mathbb{R})$, and the unit sphere acts by orthogonal maps, $S^7\to SO(8)$, as a Moufang loop; the even products generate $\operatorname{Spin}(7)$ and $S^7 = \operatorname{Spin}(7)/G_2$.
 
 The structure objects have ordinary representation theory. The derivation algebra $\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$ has dimension fourteen and acts irreducibly on $\operatorname{Im}\mathbb{O}$; $\mathrm{SO}(7) = \mathrm{G}_2\oplus\mathbb{R}^7$ and $\mathbb{R}^7\otimes\mathbb{R}^7 = \mathbb{R}\oplus\mathbb{R}^7\oplus\mathrm{G}_2\oplus V_{27}$. The automorphism group $G_2$ acts transitively on the imaginary units with isotropy $SU(3)$, so $S^6 = G_2/SU(3)$. Finally, $\operatorname{Spin}(8)$ has three eight-dimensional representations permuted by an outer automorphism of order three whose fixed subgroup is $G_2$, and the octonion multiplication is the triality-equivariant tensor coupling the three.
 
@@ -166,10 +166,10 @@ The structure objects have ordinary representation theory. The derivation algebr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{O}$ | The octonion algebra, $\dim_{\mathbb{R}} = 8$ |
-| $L_x$, $R_x$ | Left and right multiplication by $x$ |
-| $\lambda$, $\rho$ | Left and right regular representations, $x\mapsto L_x$, $x\mapsto R_x$ |
-| $[x,y,z] = (xy)z - x(yz)$ | Associator; $\lambda(x)\lambda(y) - \lambda(xy) = -[x,y,\cdot]$ |
-| $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ | Inner product, $L_xL_y + L_yL_x = -2\langle x,y\rangle\mathrm{id}$ for imaginary $x,y$ |
+| $L_{\tilde o}$, $R_{\tilde o}$ | Left and right multiplication by $\tilde o$ |
+| $\lambda$, $\rho$ | Left and right regular representations, $\tilde o\mapsto L_{\tilde o}$, $\tilde o\mapsto R_{\tilde o}$ |
+| $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$ | Associator; $\lambda(\tilde o)\lambda(\tilde p) - \lambda(\tilde o\tilde p) = -[\tilde o,\tilde p,\cdot]$ |
+| $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$ | Inner product, $L_{\tilde o}L_{\tilde p} + L_{\tilde p}L_{\tilde o} = -2\langle \tilde o,\tilde p\rangle\mathrm{id}$ for imaginary $\tilde o,\tilde p$ |
 | $\mathrm{Cl}_{0,7}$ | Clifford algebra acting on $\mathbb{O}$ through the $L_{e_k}$ |
 | $M_8(\mathbb{R})$ | Generated by $L_{e_1},\dots,L_{e_7}$ |
 | $S^7 = \operatorname{Spin}(7)/G_2$ | Unit sphere as a homogeneous space |

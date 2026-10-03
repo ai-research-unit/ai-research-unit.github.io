@@ -13,7 +13,7 @@ The following table compares the polar parametrisation of the eight algebras: th
 
 | datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|---|---|---|---|---|---|
-| modulus | $\lvert x\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\sqrt{\lvert N\rvert}$ | $\rho_\pm=\lvert A\pm A'\rvert$, scale $\lambda=\sqrt{\rho_+\rho_-}$ |
+| modulus | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\lvert a\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\sqrt{\lvert N\rvert}$ | $\rho_\pm=\lvert A\pm A'\rvert$, scale $\lambda=\sqrt{\rho_+\rho_-}$ |
 | unit factor | $\{\pm1\}$ | $U(1)$ | $\{N=\pm1\}$ | $1+\mathrm{M}$ | $Sp(1)$ | $\{N=\pm1\}$ | $U(1)\cdot B_+\cdot Sp(1)$ | $e^{j\tau}\cdot(S^3\times S^3)$ |
 | number of factors | $2$ | $2$ | $2$ | $2$ | $2$ | $2$ | $4$ | $2$ |
 | domain | $\mathbb{R}\setminus\{0\}$ | $\mathbb{C}\setminus\{0\}$ | $N\neq0$ | $a\neq0$ | $\mathbb{H}\setminus\{0\}$ | $N\neq0$ | $N\neq0$ | all elements |

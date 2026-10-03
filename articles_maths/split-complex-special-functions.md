@@ -11,25 +11,25 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 ### The Split Complex Exponential
 
-The **split complex exponential** is defined for $Z \in \mathbb{D}$ by
+The **split complex exponential** is defined for $A \in \mathbb{D}$ by
 
 $$
-\exp(Z) = \sum_{n=0}^\infty \frac{Z^n}{n!}.
+\exp(A) = \sum_{n=0}^\infty \frac{A^n}{n!}.
 $$
 
-The series converges absolutely for every $Z$ in the Euclidean norm. The function is entire in the split complex sense, and it satisfies
+The series converges absolutely for every $A$ in the Euclidean norm. The function is entire in the split complex sense, and it satisfies
 
 $$
-\exp(Z + W) = \exp(Z) \exp(W), \qquad \exp(0) = 1, \qquad \exp'(Z) = \exp(Z).
+\exp(A + B) = \exp(A) \exp(B), \qquad \exp(0) = 1, \qquad \exp'(A) = \exp(A).
 $$
 
-For $Z = x + jy$ with $x, y \in \mathbb{R}$,
+For $A = a + ja'$ with $a, a' \in \mathbb{R}$,
 
 $$
-\exp(Z) = e^x (\cosh y + j \sinh y).
+\exp(A) = e^a (\cosh a' + j \sinh a').
 $$
 
-This is the **split Euler formula**, and it is the bridge between the exponential and the hyperbolic functions. In particular, for $y = \theta$,
+This is the **split Euler formula**, and it is the bridge between the exponential and the hyperbolic functions. In particular, for $a' = \theta$,
 
 $$
 e^{j\theta} = \cosh\theta + j \sinh\theta.
@@ -42,41 +42,41 @@ The exponential is **not** periodic. Unlike the complex exponential, which is $2
 In the idempotent basis, the exponential decomposes as
 
 $$
-\exp(Z) = e^{Z_+} \Pi_1 + e^{Z_-} \Pi_2, \qquad Z_+ = x + y, \quad Z_- = x - y.
+\exp(A) = e^{A_+} \Pi_1 + e^{A_-} \Pi_2, \qquad A_+ = a + a', \quad A_- = a - a'.
 $$
 
 So the split complex exponential is the pair of ordinary real exponentials, one for each idempotent. This is the fundamental structural fact about the exponential, and it is the reason most split complex special functions are pairs of real special functions.
 
 ### The Split Complex Logarithm
 
-The **split complex logarithm** is the inverse of the exponential. It is defined for $Z$ with $Z_+ > 0$ and $Z_- > 0$ by
+The **split complex logarithm** is the inverse of the exponential. It is defined for $A$ with $A_+ > 0$ and $A_- > 0$ by
 
 $$
-\log Z = \frac{1}{2} \log(Z_+ Z_-) + \frac{j}{2} \log\left(\frac{Z_+}{Z_-}\right).
+\log A = \frac{1}{2} \log(A_+ A_-) + \frac{j}{2} \log\left(\frac{A_+}{A_-}\right).
 $$
 
 Equivalently, in the idempotent basis,
 
 $$
-\log Z = \log(Z_+) \Pi_1 + \log(Z_-) \Pi_2.
+\log A = \log(A_+) \Pi_1 + \log(A_-) \Pi_2.
 $$
 
 The logarithm is defined only on the region where both idempotent components are positive. It is not defined on the null cone, because one of the components vanishes there.
 
-The logarithm is split complex differentiable on its domain, with derivative $1/Z$. It satisfies
+The logarithm is split complex differentiable on its domain, with derivative $1/A$. It satisfies
 
 $$
-\log(Z W) = \log Z + \log W
+\log(A B) = \log A + \log B
 $$
 
 whenever both sides are defined.
 
 ### Split Complex Powers
 
-For $a \in \mathbb{D}$ and $Z$ in the domain of the logarithm,
+For $a \in \mathbb{D}$ and $A$ in the domain of the logarithm,
 
 $$
-Z^a = \exp(a \log Z).
+A^a = \exp(a \log A).
 $$
 
 This is single-valued on the domain of the logarithm, unlike the complex case, where the logarithm is multivalued. The reason is that the split complex exponential is injective on its domain, so the logarithm is single-valued.
@@ -88,27 +88,27 @@ This is single-valued on the domain of the logarithm, unlike the complex case, w
 The **split hyperbolic sine** and **cosine** are defined by
 
 $$
-\sinh Z = \frac{e^Z - e^{-Z}}{2}, \qquad \cosh Z = \frac{e^Z + e^{-Z}}{2}.
+\sinh A = \frac{e^A - e^{-A}}{2}, \qquad \cosh A = \frac{e^A + e^{-A}}{2}.
 $$
 
 They are entire in the split complex sense, and they satisfy
 
 $$
-\sinh' Z = \cosh Z, \qquad \cosh' Z = \sinh Z,
+\sinh' A = \cosh A, \qquad \cosh' A = \sinh A,
 $$
 
 $$
-\cosh^2 Z - \sinh^2 Z = 1.
+\cosh^2 A - \sinh^2 A = 1.
 $$
 
 In the idempotent basis,
 
 $$
-\sinh Z = \sinh(Z_+) \Pi_1 + \sinh(Z_-) \Pi_2,
+\sinh A = \sinh(A_+) \Pi_1 + \sinh(A_-) \Pi_2,
 $$
 
 $$
-\cosh Z = \cosh(Z_+) \Pi_1 + \cosh(Z_-) \Pi_2.
+\cosh A = \cosh(A_+) \Pi_1 + \cosh(A_-) \Pi_2.
 $$
 
 So the split hyperbolic functions are pairs of ordinary real hyperbolic functions.
@@ -116,32 +116,32 @@ So the split hyperbolic functions are pairs of ordinary real hyperbolic function
 ### The Other Hyperbolic Functions
 
 $$
-\tanh Z = \frac{\sinh Z}{\cosh Z}, \qquad \coth Z = \frac{\cosh Z}{\sinh Z}.
+\tanh A = \frac{\sinh A}{\cosh A}, \qquad \coth A = \frac{\cosh A}{\sinh A}.
 $$
 
-These are defined wherever the denominator is invertible. The denominator $\cosh Z$ is invertible unless $\cosh(Z_+) = 0$ or $\cosh(Z_-) = 0$, which never happens for real $Z_+$ and $Z_-$. So $\tanh$ is defined on all of $\mathbb{D}$, and $\coth$ is defined except on the null cone.
+These are defined wherever the denominator is invertible. The denominator $\cosh A$ is invertible unless $\cosh(A_+) = 0$ or $\cosh(A_-) = 0$, which never happens for real $A_+$ and $A_-$. So $\tanh$ is defined on all of $\mathbb{D}$, and $\coth$ is defined except on the null cone.
 
 ### Inverse Hyperbolic Functions
 
 The **split inverse hyperbolic sine** is defined by
 
 $$
-\operatorname{arsinh} Z = \log\left(Z + \sqrt{Z^2 + 1}\right),
+\operatorname{arsinh} A = \log\left(A + \sqrt{A^2 + 1}\right),
 $$
 
 where the square root is the split complex square root. The **split inverse hyperbolic cosine** is
 
 $$
-\operatorname{arcosh} Z = \log\left(Z + \sqrt{Z^2 - 1}\right),
+\operatorname{arcosh} A = \log\left(A + \sqrt{A^2 - 1}\right),
 $$
 
-defined for $Z$ with $Z_+ \geq 1$ and $Z_- \geq 1$. The **split inverse hyperbolic tangent** is
+defined for $A$ with $A_+ \geq 1$ and $A_- \geq 1$. The **split inverse hyperbolic tangent** is
 
 $$
-\operatorname{artanh} Z = \frac{1}{2} \log \frac{1 + Z}{1 - Z},
+\operatorname{artanh} A = \frac{1}{2} \log \frac{1 + A}{1 - A},
 $$
 
-defined for $Z$ with $|Z_+| < 1$ and $|Z_-| < 1$.
+defined for $A$ with $|A_+| < 1$ and $|A_-| < 1$.
 
 In the idempotent basis, each of these is the ordinary real inverse hyperbolic function applied to the corresponding component.
 
@@ -149,16 +149,16 @@ In the idempotent basis, each of these is the ordinary real inverse hyperbolic f
 
 ### Definition
 
-The **split complex gamma function** is defined for $Z$ with $Z_+ > 0$ and $Z_- > 0$ by
+The **split complex gamma function** is defined for $A$ with $A_+ > 0$ and $A_- > 0$ by
 
 $$
-\Gamma(Z) = \int_0^\infty t^{Z-1} e^{-t} \, dt,
+\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt,
 $$
 
-where the integral is along the positive real axis, and $t^{Z-1}$ is the split complex power. In the idempotent basis,
+where the integral is along the positive real axis, and $t^{A-1}$ is the split complex power. In the idempotent basis,
 
 $$
-\Gamma(Z) = \Gamma(Z_+) \Pi_1 + \Gamma(Z_-) \Pi_2.
+\Gamma(A) = \Gamma(A_+) \Pi_1 + \Gamma(A_-) \Pi_2.
 $$
 
 So the split complex gamma function is the pair of ordinary real gamma functions, one for each idempotent.
@@ -166,7 +166,7 @@ So the split complex gamma function is the pair of ordinary real gamma functions
 ### Functional Equation
 
 $$
-\Gamma(Z + 1) = Z \Gamma(Z).
+\Gamma(A + 1) = A \Gamma(A).
 $$
 
 This follows from integration by parts, exactly as in the real case.
@@ -182,7 +182,7 @@ for non-negative integers $n$, where the factorial is the ordinary real factoria
 ### Reflection Formula
 
 $$
-\Gamma(Z) \Gamma(1 - Z) = \frac{\pi}{\sin(\pi Z)},
+\Gamma(A) \Gamma(1 - A) = \frac{\pi}{\sin(\pi A)},
 $$
 
 where the sine is the ordinary real sine applied to each idempotent component.
@@ -224,13 +224,13 @@ $$
 The **split complex error function** is defined by
 
 $$
-\operatorname{erf}(Z) = \frac{2}{\sqrt{\pi}} \int_0^Z e^{-t^2} \, dt,
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt,
 $$
 
-where the integral is along a path from $0$ to $Z$ that does not cross the null cone. In the idempotent basis,
+where the integral is along a path from $0$ to $A$ that does not cross the null cone. In the idempotent basis,
 
 $$
-\operatorname{erf}(Z) = \operatorname{erf}(Z_+) \Pi_1 + \operatorname{erf}(Z_-) \Pi_2.
+\operatorname{erf}(A) = \operatorname{erf}(A_+) \Pi_1 + \operatorname{erf}(A_-) \Pi_2.
 $$
 
 So the split complex error function is the pair of ordinary real error functions.
@@ -238,11 +238,11 @@ So the split complex error function is the pair of ordinary real error functions
 ### Properties
 
 $$
-\operatorname{erf}'(Z) = \frac{2}{\sqrt{\pi}} e^{-Z^2},
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2},
 $$
 
 $$
-\lim_{Z \to \infty} \operatorname{erf}(Z) = 1, \qquad \lim_{Z \to -\infty} \operatorname{erf}(Z) = -1,
+\lim_{A \to \infty} \operatorname{erf}(A) = 1, \qquad \lim_{A \to -\infty} \operatorname{erf}(A) = -1,
 $$
 
 where the limits are taken along the real axis.
@@ -250,7 +250,7 @@ where the limits are taken along the real axis.
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(Z) = 1 - \operatorname{erf}(Z) = \frac{2}{\sqrt{\pi}} \int_Z^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
 $$
 
 In the idempotent basis, this is the ordinary real complementary error function applied to each component.
@@ -262,13 +262,13 @@ In the idempotent basis, this is the ordinary real complementary error function 
 The **split complex Airy function** is defined by
 
 $$
-\operatorname{Ai}(Z) = \frac{1}{\pi} \int_0^\infty \cos\left(\frac{t^3}{3} + Zt\right) dt,
+\operatorname{Ai}(A) = \frac{1}{\pi} \int_0^\infty \cos\left(\frac{t^3}{3} + At\right) dt,
 $$
 
 where the cosine is the ordinary real cosine applied to each idempotent component. In the idempotent basis,
 
 $$
-\operatorname{Ai}(Z) = \operatorname{Ai}(Z_+) \Pi_1 + \operatorname{Ai}(Z_-) \Pi_2.
+\operatorname{Ai}(A) = \operatorname{Ai}(A_+) \Pi_1 + \operatorname{Ai}(A_-) \Pi_2.
 $$
 
 So the split complex Airy function is the pair of ordinary real Airy functions.
@@ -276,23 +276,23 @@ So the split complex Airy function is the pair of ordinary real Airy functions.
 ### Differential Equation
 
 $$
-y'' - Z y = 0.
+w'' - A w = 0.
 $$
 
 This is Airy's equation, and it holds in each idempotent component separately.
 
 ### Asymptotics
 
-For $Z_+ \to +\infty$,
+For $A_+ \to +\infty$,
 
 $$
-\operatorname{Ai}(Z_+) \sim \frac{1}{2 \sqrt{\pi} Z_+^{1/4}} e^{-2 Z_+^{3/2}/3}.
+\operatorname{Ai}(A_+) \sim \frac{1}{2 \sqrt{\pi} A_+^{1/4}} e^{-2 A_+^{3/2}/3}.
 $$
 
-For $Z_+ \to -\infty$,
+For $A_+ \to -\infty$,
 
 $$
-\operatorname{Ai}(Z_+) \sim \frac{1}{\sqrt{\pi} |Z_+|^{1/4}} \sin\left(\frac{2 |Z_+|^{3/2}}{3} + \frac{\pi}{4}\right).
+\operatorname{Ai}(A_+) \sim \frac{1}{\sqrt{\pi} |A_+|^{1/4}} \sin\left(\frac{2 |A_+|^{3/2}}{3} + \frac{\pi}{4}\right).
 $$
 
 The same asymptotics hold for the minus component.
@@ -304,13 +304,13 @@ The same asymptotics hold for the minus component.
 The **split complex Bessel function** of the first kind of order $\nu$ is defined by
 
 $$
-J_\nu(Z) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{Z}{2} \right)^{2n + \nu},
+J_\nu(A) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{A}{2} \right)^{2n + \nu},
 $$
 
 where the power and the gamma function are split complex. In the idempotent basis,
 
 $$
-J_\nu(Z) = J_\nu(Z_+) \Pi_1 + J_\nu(Z_-) \Pi_2.
+J_\nu(A) = J_\nu(A_+) \Pi_1 + J_\nu(A_-) \Pi_2.
 $$
 
 So the split complex Bessel function is the pair of ordinary real Bessel functions.
@@ -318,7 +318,7 @@ So the split complex Bessel function is the pair of ordinary real Bessel functio
 ### Differential Equation
 
 $$
-Z^2 y'' + Z y' + (Z^2 - \nu^2) y = 0.
+A^2 w'' + A w' + (A^2 - \nu^2) w = 0.
 $$
 
 This is Bessel's equation, and it holds in each idempotent component separately.
@@ -328,7 +328,7 @@ This is Bessel's equation, and it holds in each idempotent component separately.
 The **split complex modified Bessel function** of the first kind is
 
 $$
-I_\nu(Z) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{Z}{2} \right)^{2n + \nu}.
+I_\nu(A) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{A}{2} \right)^{2n + \nu}.
 $$
 
 In the idempotent basis, this is the ordinary real modified Bessel function applied to each component.
@@ -337,16 +337,16 @@ In the idempotent basis, this is the ordinary real modified Bessel function appl
 
 ### Definition
 
-The **split complex Gauss hypergeometric function** is defined for $|Z_+| < 1$ and $|Z_-| < 1$ by
+The **split complex Gauss hypergeometric function** is defined for $|A_+| < 1$ and $|A_-| < 1$ by
 
 $$
-{}_2F_1(a, b; c; Z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{Z^n}{n!},
+{}_2F_1(a, b; c; A) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{A^n}{n!},
 $$
 
 where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and all operations are split complex. In the idempotent basis,
 
 $$
-{}_2F_1(a, b; c; Z) = {}_2F_1(a_+, b_+; c_+; Z_+) \Pi_1 + {}_2F_1(a_-, b_-; c_-; Z_-) \Pi_2.
+{}_2F_1(a, b; c; A) = {}_2F_1(a_+, b_+; c_+; A_+) \Pi_1 + {}_2F_1(a_-, b_-; c_-; A_-) \Pi_2.
 $$
 
 So the split complex hypergeometric function is the pair of ordinary real hypergeometric functions.
@@ -354,7 +354,7 @@ So the split complex hypergeometric function is the pair of ordinary real hyperg
 ### Differential Equation
 
 $$
-Z(1 - Z) y'' + [c - (a + b + 1) Z] y' - ab y = 0.
+A(1 - A) w'' + [c - (a + b + 1) A] w' - ab w = 0.
 $$
 
 This is the hypergeometric equation, and it holds in each idempotent component separately.
@@ -362,15 +362,15 @@ This is the hypergeometric equation, and it holds in each idempotent component s
 ### Special Cases
 
 $$
-{}_2F_1(1, 1; 2; Z) = -\frac{\log(1 - Z)}{Z},
+{}_2F_1(1, 1; 2; A) = -\frac{\log(1 - A)}{A},
 $$
 
 $$
-{}_2F_1(a, b; b; Z) = (1 - Z)^{-a},
+{}_2F_1(a, b; b; A) = (1 - A)^{-a},
 $$
 
 $$
-{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; Z^2\right) = \frac{\arcsin Z}{Z},
+{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; A^2\right) = \frac{\arcsin A}{A},
 $$
 
 where the arcsine is the ordinary real arcsine applied to each idempotent component.
@@ -378,7 +378,7 @@ where the arcsine is the ordinary real arcsine applied to each idempotent compon
 ### The Generalized Hypergeometric Function
 
 $$
-{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; Z) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{Z^n}{n!}.
+{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; A) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{A^n}{n!}.
 $$
 
 In the idempotent basis, this is the ordinary real generalized hypergeometric function applied to each component.
@@ -390,19 +390,19 @@ In the idempotent basis, this is the ordinary real generalized hypergeometric fu
 The **split complex Lambert W function** is the inverse of
 
 $$
-Z \mapsto Z e^Z.
+A \mapsto A e^A.
 $$
 
-That is, $W(Z)$ is any solution of
+That is, $W(A)$ is any solution of
 
 $$
-W(Z) e^{W(Z)} = Z.
+W(A) e^{W(A)} = A.
 $$
 
 In the idempotent basis,
 
 $$
-W(Z) = W(Z_+) \Pi_1 + W(Z_-) \Pi_2,
+W(A) = W(A_+) \Pi_1 + W(A_-) \Pi_2,
 $$
 
 where $W$ on the right is the ordinary real Lambert W function.
@@ -410,14 +410,14 @@ where $W$ on the right is the ordinary real Lambert W function.
 ### Derivative
 
 $$
-W'(Z) = \frac{W(Z)}{Z(1 + W(Z))},
+W'(A) = \frac{W(A)}{A(1 + W(A))},
 $$
 
 defined wherever the denominator is invertible.
 
 ### Branches
 
-The split complex Lambert W function is defined componentwise, so it inherits the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function independently in each idempotent component; its branches are the four combinations obtained by choosing one of $W_0$ and $W_{-1}$ for $Z_+$ and one for $Z_-$. On the region where $Z_+ > -1/e$ and $Z_- > -1/e$, the principal branch $W_0$, taken in both components, is defined, and it is split complex differentiable.
+The split complex Lambert W function is defined componentwise, so it inherits the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function independently in each idempotent component; its branches are the four combinations obtained by choosing one of $W_0$ and $W_{-1}$ for $A_+$ and one for $A_-$. On the region where $A_+ > -1/e$ and $A_- > -1/e$, the principal branch $W_0$, taken in both components, is defined, and it is split complex differentiable.
 
 ## The Idempotent Principle
 
@@ -426,7 +426,7 @@ The pattern in all the definitions above is the same: every split complex specia
 **Theorem (Idempotent Principle).** Let $F$ be a split complex special function defined by a formula that involves only the split complex algebra operations, the split complex exponential, and the split complex logarithm. Then $F$ decomposes in the idempotent basis as
 
 $$
-F(Z) = F_+(Z_+) \Pi_1 + F_-(Z_-) \Pi_2,
+F(A) = F_+(A_+) \Pi_1 + F_-(A_-) \Pi_2,
 $$
 
 where $F_+$ and $F_-$ are the corresponding real special functions.
@@ -449,18 +449,19 @@ The section on the idempotent principle states what organises the whole collecti
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
-| $e^Z, \log Z$ | Split complex exponential, logarithm |
-| $\sinh Z, \cosh Z, \tanh Z$ | Split hyperbolic functions |
-| $\Gamma(Z)$ | Split complex gamma function |
+| $A = a + ja'$ | General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$ |
+| $e^A, \log A$ | Split complex exponential, logarithm |
+| $\sinh A, \cosh A, \tanh A$ | Split hyperbolic functions |
+| $\Gamma(A)$ | Split complex gamma function |
 | $B(p, q)$ | Split complex beta function; arguments $p, q$ |
-| $\operatorname{erf}(Z), \operatorname{erfc}(Z)$ | Split error function, complementary error function |
-| $\operatorname{Ai}(Z)$ | Split Airy function |
-| $J_\nu(Z), I_\nu(Z)$ | Split Bessel functions |
+| $\operatorname{erf}(A), \operatorname{erfc}(A)$ | Split error function, complementary error function |
+| $\operatorname{Ai}(A)$ | Split Airy function |
+| $J_\nu(A), I_\nu(A)$ | Split Bessel functions |
 | ${}_pF_q$ | Split generalized hypergeometric function |
-| $W(Z)$ | Split Lambert W function |
+| $W(A)$ | Split Lambert W function |
 | $\Pi_1 = (1 + j)/2$ | Positive idempotent |
 | $\Pi_2 = (1 - j)/2$ | Negative idempotent |
-| $Z = Z_+ \Pi_1 + Z_- \Pi_2$ | Idempotent decomposition |
+| $A = A_+ \Pi_1 + A_- \Pi_2$ | Idempotent decomposition |
 
 ## Further Reading
 

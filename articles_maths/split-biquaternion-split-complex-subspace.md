@@ -49,7 +49,7 @@ $$
 
 **Proof.** An element commutes with every other element if and only if it commutes with the basis elements $e_1, e_2, e_3$, and $Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ commutes with all three precisely when $Q_1 = Q_2 = Q_3 = 0$, because $Q_k e_k$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{D}$-multiples of $e_0$, which is the fixed space of ${}^{\natural}$.
 
-The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $z e_0$ with $z \in \mathbb{D}$.
+The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $A e_0$ with $A \in \mathbb{D}$.
 
 ### Subalgebra, Commutativity, and the Absence of a Field Structure
 
@@ -173,7 +173,7 @@ the pair of squares of the two real scalars. The two light lines are the loci $Q
 
 ## The Analysis on the Split Complex Subspace
 
-The centre is a copy of the split complex algebra $\mathbb{D}$, so the function theory it carries is the one-variable split complex analysis of *Split Complex Analysis*. A differentiable function of the centre variable $z = q_0 + jq'_0$, written $f = u + jv$, satisfies the Cauchy–Riemann pair
+The centre is a copy of the split complex algebra $\mathbb{D}$, so the function theory it carries is the one-variable split complex analysis of *Split Complex Analysis*. A differentiable function of the centre variable $A = q_0 + jq'_0$, written $f = u + jv$, satisfies the Cauchy–Riemann pair
 
 $$
 \partial_{q_0}u = \partial_{q'_0}v, \qquad \partial_{q'_0}u = \partial_{q_0}v,
@@ -183,7 +183,7 @@ and the twice differentiable functions that are harmonic in the split complex se
 
 ## The Geometry of the Split Complex Subspace
 
-As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_0^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $z\mapsto e^{\theta j}z$ of $\mathbb{D}$, the identity component of the group of units of $\mathbb{D}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the positive definite form $q_0^2 + q'^2_0$ of signature $(2,0)$, so the centre is a definite slice of an indefinite ambient algebra.
+As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_0^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $A\mapsto e^{\theta j}A$ of $\mathbb{D}$, the identity component of the group of units of $\mathbb{D}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the positive definite form $q_0^2 + q'^2_0$ of signature $(2,0)$, so the centre is a definite slice of an indefinite ambient algebra.
 
 ## Summary
 

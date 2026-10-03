@@ -44,18 +44,18 @@ and it is the coordinate expression of the inner product of *Quaternion Norm and
 **Theorem.** The product of $p = p_0+\mathbf{p}$ and $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, in components, is given by the scalar and vector parts
 
 $$
-\mathrm{Sc}(pq) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
-\mathrm{Vect}(pq) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
+\mathrm{Sc}(p\tilde q) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
+\mathrm{Vect}(p\tilde q) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
 $$
 
 that is, in coordinates,
 
 $$
-(pq)_0 = p_0q_0 - p_1q_1 - p_2q_2 - p_3q_3, \qquad
+(p\tilde q)_0 = p_0q_0 - p_1q_1 - p_2q_2 - p_3q_3, \qquad
 \begin{aligned}
-(pq)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
-(pq)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
-(pq)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
+(p\tilde q)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
+(p\tilde q)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
+(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
 \end{aligned}
 $$
 
@@ -133,7 +133,7 @@ The table makes the point of the comparison: the quaternion coordinate descripti
 
 ## Summary
 
-The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(pq)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(pq)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.
+The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(p\tilde q)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(p\tilde q)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.
 
 The three involutions are the diagonal sign matrices $\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{diag}(-1,1,1,1)$ and $-I$, whose fixed coordinate sets are the first axis, the hyperplane $q_0 = 0$ and the origin. The scalar and vector subspaces are the first axis and that hyperplane, an orthogonal decomposition of the coordinate space, and the quaternion norm is the sum of the four positive squares $[\tilde q]^T[\tilde q]$.
 

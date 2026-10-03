@@ -7,10 +7,10 @@ This article studies the zero divisors of the dual-number algebra $\mathbb{D}'_R
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is an integral domain in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$; the criterion is sharp over an integral domain, in particular over a field $k$. A general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} Z$ and $b = \operatorname{Inf} Z$, and dual conjugation is $\bar{Z} = a - \varepsilon b$. The two distinguished submodules are $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$.
+with $a = \operatorname{Re} A$ and $a' = \operatorname{Inf} A$, and dual conjugation is $\bar A = a - \varepsilon a'$. The two distinguished submodules are $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$.
 
 The scope boundaries are these. This article owns the classification of the zero divisors and their distribution. The maximal ideal *as an ideal*, and the Peirce-type decomposition, belong to *Dual-Numbers Ideals and the Maximal Ideal*; the unit criterion and the measure of size belong to *Dual-Numbers Norm and Invertibility*; the position of the zero-divisor set inside the Euclidean plane belongs to *Dual-Numbers Topology*. The zero-divisor set is the maximal ideal with the origin removed, and the ideals article and this one describe the same line from the two sides.
 
@@ -18,33 +18,33 @@ The scope boundaries are these. This article owns the classification of the zero
 
 ### Definition
 
-**Definition.** A dual number $Z$ is a **zero divisor** if $Z \neq 0$ and there exists a nonzero $W$ with
+**Definition.** A dual number $A$ is a **zero divisor** if $A \neq 0$ and there exists a nonzero $B$ with
 
 $$
-Z W = 0.
+A B = 0.
 $$
 
-Because $\mathbb{D}'_R$ is commutative, left and right annihilation coincide and only one equation is needed. The requirement that both $Z$ and $W$ be nonzero is essential: the element $0$ is **not** a zero divisor, even though $0 \cdot W = 0$ for every $W$.
+Because $\mathbb{D}'_R$ is commutative, left and right annihilation coincide and only one equation is needed. The requirement that both $A$ and $B$ be nonzero is essential: the element $0$ is **not** a zero divisor, even though $0 \cdot B = 0$ for every $B$.
 
 ### Criterion
 
-**Theorem.** Let $R$ be an integral domain and let $Z = a + \varepsilon b \in \mathbb{D}'_R$ be nonzero. Then $Z$ is a zero divisor if and only if its real part vanishes:
+**Theorem.** Let $R$ be an integral domain and let $A = a + \varepsilon a' \in \mathbb{D}'_R$ be nonzero. Then $A$ is a zero divisor if and only if its real part vanishes:
 
 $$
-Z \text{ is a zero divisor} \iff a = 0 \iff Z \in \mathrm{M} \setminus \{0\}.
+A \text{ is a zero divisor} \iff a = 0 \iff A \in \mathrm{M} \setminus \{0\}.
 $$
 
-**Proof.** Suppose $a = 0$, so $Z = \varepsilon b$ with $b \neq 0$. Then
+**Proof.** Suppose $a = 0$, so $A = \varepsilon a'$ with $a' \neq 0$. Then
 
 $$
-Z \cdot \varepsilon = \varepsilon b \cdot \varepsilon = \varepsilon^2 b = 0
+A \cdot \varepsilon = \varepsilon a' \cdot \varepsilon = \varepsilon^2 a' = 0
 $$
 
-with $\varepsilon \neq 0$, so $Z$ is a zero divisor. Conversely, suppose $Z W = 0$ with $W = c + \varepsilon d \neq 0$. The real part of $Z W$ is $a c$, so $a c = 0$. If $a \neq 0$ then $c = 0$, since $R$ is a domain; the $\varepsilon$-part is then $a d + b c = a d$, which vanishes with $a \neq 0$ and forces $d = 0$, giving $W = 0$, a contradiction. Hence $a = 0$.
+with $\varepsilon \neq 0$, so $A$ is a zero divisor. Conversely, suppose $A B = 0$ with $B = b + \varepsilon b' \neq 0$. The real part of $A B$ is $a b$, so $a b = 0$. If $a \neq 0$ then $b = 0$, since $R$ is a domain; the $\varepsilon$-part is then $a b' + a' b = a b'$, which vanishes with $a \neq 0$ and forces $b' = 0$, giving $B = 0$, a contradiction. Hence $a = 0$.
 
-**Corollary (explicit annihilation).** For $Z = \varepsilon b$ with $b \neq 0$ the element $W = \varepsilon$ is a nonzero annihilator, since $\varepsilon b \cdot \varepsilon = \varepsilon^2 b = 0$.
+**Corollary (explicit annihilation).** For $A = \varepsilon a'$ with $a' \neq 0$ the element $B = \varepsilon$ is a nonzero annihilator, since $\varepsilon a' \cdot \varepsilon = \varepsilon^2 a' = 0$.
 
-**Remark.** The criterion is a condition on the real part alone: a dual number is a zero divisor exactly when it is purely infinitesimal and nonzero. The infinitesimal part is invisible to the criterion. The same set is the vanishing locus of the norm $N(Z) = a^2$, so that $a = 0$ and $N(Z) = 0$ agree; the norm is a measure of size rather than an algebraic object, and it is treated in *Dual-Numbers Norm and Invertibility*.
+**Remark.** The criterion is a condition on the real part alone: a dual number is a zero divisor exactly when it is purely infinitesimal and nonzero. The infinitesimal part is invisible to the criterion. The same set is the vanishing locus of the norm $N(A) = a^2$, so that $a = 0$ and $N(A) = 0$ agree; the norm is a measure of size rather than an algebraic object, and it is treated in *Dual-Numbers Norm and Invertibility*.
 
 ### The Three-Way Classification
 
@@ -52,9 +52,9 @@ Over a field $k$ the elements of $\mathbb{D}'_k$ are partitioned into exactly th
 
 | Real part | Element | Conclusion |
 |---|---|---|
-| $a \neq 0$ | — | $Z$ is a unit |
-| $a = 0$ | $b = 0$ | $Z$ is the zero element |
-| $a = 0$ | $b \neq 0$ | $Z$ is a zero divisor |
+| $a \neq 0$ | — | $A$ is a unit |
+| $a = 0$ | $a' = 0$ | $A$ is the zero element |
+| $a = 0$ | $a' \neq 0$ | $A$ is a zero divisor |
 
 The third class is exactly $\mathrm{M} \setminus \{0\}$; the ideals that organise the classification are studied in *Dual-Numbers Ideals and the Maximal Ideal*.
 
@@ -69,7 +69,7 @@ A **division algebra** is an algebra in which every nonzero element is invertibl
 **Definition.** Over an integral domain $R$, the **zero-divisor set** of $\mathbb{D}'_R$ is
 
 $$
-\mathcal{Z} = \{Z \in \mathbb{D}'_R : Z \neq 0,\ \operatorname{Re} Z = 0\} = \mathrm{M} \setminus \{0\} = \{\varepsilon b : b \in R,\ b \neq 0\}.
+\mathcal{Z} = \{A \in \mathbb{D}'_R : A \neq 0,\ \operatorname{Re} A = 0\} = \mathrm{M} \setminus \{0\} = \{\varepsilon a' : a' \in R,\ a' \neq 0\}.
 $$
 
 Over a field it is the complement of the units inside the complement of the zero element:
@@ -86,7 +86,7 @@ The dual algebra has **one** family, not two. The reason is structural: the biqu
 
 ### Why the Split Is Not Available
 
-The scalar part is unavailable as an invariant that separates families. The natural invariant here is the real part $a = \operatorname{Re} Z$, and the criterion is the single condition $a = 0$, not a dichotomy of two nonempty families. The complement of the condition, $a \neq 0$, consists entirely of units over a field; it is not a second zero-divisor family. So the two-way split of the biquaternion case collapses to the unit/zero-divisor dichotomy.
+The scalar part is unavailable as an invariant that separates families. The natural invariant here is the real part $a = \operatorname{Re} A$, and the criterion is the single condition $a = 0$, not a dichotomy of two nonempty families. The complement of the condition, $a \neq 0$, consists entirely of units over a field; it is not a second zero-divisor family. So the two-way split of the biquaternion case collapses to the unit/zero-divisor dichotomy.
 
 ## The Nilpotent Direction
 
@@ -95,30 +95,30 @@ The scalar part is unavailable as an invariant that separates families. The natu
 **Theorem.** Every zero divisor of $\mathbb{D}'_R$ is nilpotent, and in fact squares to zero:
 
 $$
-Z \in \mathcal{Z} \implies Z^2 = 0.
+A \in \mathcal{Z} \implies A^2 = 0.
 $$
 
-**Proof.** If $Z = \varepsilon b$ then $Z^2 = b^2 \varepsilon^2 = 0$.
+**Proof.** If $A = \varepsilon a'$ then $A^2 = a'^2 \varepsilon^2 = 0$.
 
 So the zero divisors do not merely have a nonzero annihilator; each one is annihilated by itself. This is the *nilpotent direction*: the maximal ideal is a square-zero ideal, and its nonzero elements are the zero divisors.
 
 ### The Annihilator
 
-**Definition.** The **annihilator** of a dual number $Z$ is
+**Definition.** The **annihilator** of a dual number $A$ is
 
 $$
-\operatorname{Ann}(Z) = \{W : Z W = 0\}.
+\operatorname{Ann}(A) = \{B : A B = 0\}.
 $$
 
-**Proposition.** For every nonzero $Z = \varepsilon b \in \mathrm{M}$,
+**Proposition.** For every nonzero $A = \varepsilon a' \in \mathrm{M}$,
 
 $$
-\operatorname{Ann}(Z) = \mathrm{M} = (\varepsilon),
+\operatorname{Ann}(A) = \mathrm{M} = (\varepsilon),
 $$
 
 the maximal ideal itself; the annihilator of a unit is $0$.
 
-**Proof.** For $W = c + \varepsilon d$ one has $Z W = b c \varepsilon$, which vanishes exactly when $b c = 0$, that is $c = 0$ over an integral domain; so $\operatorname{Ann}(\varepsilon b) = \mathrm{M}$. If $Z$ is a unit, $Z W = 0$ forces $W = 0$.
+**Proof.** For $B = b + \varepsilon b'$ one has $A B = a' b \varepsilon$, which vanishes exactly when $a' b = 0$, that is $b = 0$ over an integral domain; so $\operatorname{Ann}(\varepsilon a') = \mathrm{M}$. If $A$ is a unit, $A B = 0$ forces $B = 0$.
 
 **Corollary.** All nonzero zero divisors have the same annihilator, namely the maximal ideal; the annihilator of a zero divisor strictly contains the zero divisor itself, and it is the principal ideal generated by any one of them.
 
@@ -129,7 +129,7 @@ This is the sharpest contrast with the biquaternion pure case, where the annihil
 Over $R = \mathbb{R}$ the zero-divisor set is the set of nonzero real multiples of $\varepsilon$,
 
 $$
-\mathcal{Z} = \{\varepsilon b : b \in \mathbb{R},\ b \neq 0\} = \varepsilon\mathbb{R} \setminus \{0\}.
+\mathcal{Z} = \{\varepsilon a' : a' \in \mathbb{R},\ a' \neq 0\} = \varepsilon\mathbb{R} \setminus \{0\}.
 $$
 
 It is one-dimensional as a real vector space with the origin removed, it is closed under multiplication by every nonzero real scalar, and it is parameterised bijectively by $\mathbb{R} \setminus \{0\}$. Its position as a subset of the Euclidean plane is established in *Dual-Numbers Topology*.
@@ -140,14 +140,14 @@ It is one-dimensional as a real vector space with the origin removed, it is clos
 
 **Proposition.** Let $R$ be connected (for instance an integral domain or a field). Then the idempotents of $\mathbb{D}'_R$ are exactly $0$ and $1$. In particular no zero divisor is idempotent, and no zero divisor is a nonzero multiple of a nontrivial idempotent.
 
-**Proof.** Write $Z = a + \varepsilon b$. From $Z^2 = Z$ one gets $a^2 = a$ and $2 a b = b$; connectedness gives $a = 0$ or $a = 1$. If $a = 0$ then $b = 0$, giving $Z = 0$; if $a = 1$ then $b = 0$ (since $2$ is invertible), giving $Z = 1$. Neither is a zero divisor.
+**Proof.** Write $A = a + \varepsilon a'$. From $A^2 = A$ one gets $a^2 = a$ and $2 a a' = a'$; connectedness gives $a = 0$ or $a = 1$. If $a = 0$ then $a' = 0$, giving $A = 0$; if $a = 1$ then $a' = 0$ (since $2$ is invertible), giving $A = 1$. Neither is a zero divisor.
 
 ### What Stands In for the Idempotent Classification
 
-In the biquaternion algebra the non-pure zero divisors are exactly the nonzero complex multiples of the nontrivial idempotents, so the classification of the zero divisors is the classification of the idempotents, which in turn is the classification of the roots of $-1$. In $\mathbb{D}'_R$ there are no nontrivial idempotents, so the corresponding classification is empty, and the zero divisors are labelled instead by the single nonzero scalar: $\mathcal{Z} = \{\varepsilon b : b \neq 0\}$. The projection that survives is the conjugation projection
+In the biquaternion algebra the non-pure zero divisors are exactly the nonzero complex multiples of the nontrivial idempotents, so the classification of the zero divisors is the classification of the idempotents, which in turn is the classification of the roots of $-1$. In $\mathbb{D}'_R$ there are no nontrivial idempotents, so the corresponding classification is empty, and the zero divisors are labelled instead by the single nonzero scalar: $\mathcal{Z} = \{\varepsilon a' : a' \neq 0\}$. The projection that survives is the conjugation projection
 
 $$
-Z \mapsto \operatorname{Inf}(Z)\,\varepsilon = \tfrac{1}{2}(Z - \bar{Z}) \in \varepsilon R_{\mathbb{D}'},
+A \mapsto \operatorname{Inf}(A)\,\varepsilon = \tfrac{1}{2}(A - \bar A) \in \varepsilon R_{\mathbb{D}'},
 $$
 
 which is the analogue of the Peirce projection but is associated to the involution rather than to an idempotent. Every zero divisor is the image of itself under this projection, and the image of a unit is its infinitesimal part, an element of $\mathrm{M}$ that is *not* a zero divisor unless the real part vanishes. So the projection does not map onto the zero divisors, and it does not classify them.
@@ -158,11 +158,11 @@ The two distinguished submodules behave oppositely.
 
 ### The Real Submodule
 
-An element of $R_{\mathbb{D}'}$ is $Z = a$ with real part $a$; it is nonzero whenever $a \neq 0$, so $R_{\mathbb{D}'}$ contains **no** zero divisors. Over a field every nonzero element of $R_{\mathbb{D}'}$ is a unit, reflecting that $R_{\mathbb{D}'}$ is a copy of the field and is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.
+An element of $R_{\mathbb{D}'}$ is $A = a$ with real part $a$; it is nonzero whenever $a \neq 0$, so $R_{\mathbb{D}'}$ contains **no** zero divisors. Over a field every nonzero element of $R_{\mathbb{D}'}$ is a unit, reflecting that $R_{\mathbb{D}'}$ is a copy of the field and is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.
 
 ### The Infinitesimal Submodule
 
-An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $Z = \varepsilon b$ with real part $0$; every nonzero element of the infinitesimal submodule is a zero divisor. So the zero-divisor set is the punctured infinitesimal submodule:
+An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $A = \varepsilon a'$ with real part $0$; every nonzero element of the infinitesimal submodule is a zero divisor. So the zero-divisor set is the punctured infinitesimal submodule:
 
 $$
 \mathcal{Z} = \varepsilon R_{\mathbb{D}'} \setminus \{0\}.
@@ -173,7 +173,7 @@ $$
 | Submodule | Elements | Real part | Zero divisors |
 |---|---|---|---|
 | $R_{\mathbb{D}'}$ | $a$, $a \in R$ | $a$ | none |
-| $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ | $\varepsilon b$, $b \in R$ | $0$ | all $b \neq 0$ |
+| $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ | $\varepsilon a'$, $a' \in R$ | $0$ | all $a' \neq 0$ |
 
 So the zero divisors are concentrated in one of the two eigenspaces of dual conjugation and absent from the other. There is no intermediate distribution: unlike the biquaternion case, where the zero divisors are spread over six distinguished subspaces of dimensions three, four and six and a generic zero divisor lies in none of them, here every zero divisor lies in the single infinitesimal submodule.
 
@@ -197,10 +197,10 @@ In each case the number of families is the number of independent ways of being a
 
 ## Summary
 
-Over an integral domain $R$ (in particular over a field $k$), a nonzero dual number $Z = a + \varepsilon b$ is a zero divisor if and only if its real part vanishes, so the zero-divisor set is the punctured maximal ideal,
+Over an integral domain $R$ (in particular over a field $k$), a nonzero dual number $A = a + \varepsilon a'$ is a zero divisor if and only if its real part vanishes, so the zero-divisor set is the punctured maximal ideal,
 
 $$
-\mathcal{Z} = \mathrm{M} \setminus \{0\} = \{\varepsilon b : b \neq 0\}.
+\mathcal{Z} = \mathrm{M} \setminus \{0\} = \{\varepsilon a' : a' \neq 0\}.
 $$
 
 The zero divisors form a **single family**, against the two families of the biquaternion algebra, the split complex algebra and the split biquaternion algebra. The reason is that $\mathbb{D}'_R$ has no nontrivial idempotent — so the idempotent classification that produces the second family elsewhere is empty — and that its maximal ideal is square-zero. Every zero divisor is nilpotent, in fact squares to zero, and lies in the nilpotent direction of the maximal ideal; the annihilator of every nonzero zero divisor is the same space, namely $\mathrm{M}$, and the zero divisor generates that annihilator. The relation to the projections is through the conjugation projection onto $\varepsilon R_{\mathbb{D}'}$ rather than through any idempotent. Of the two distinguished submodules, $R_{\mathbb{D}'}$ contains no zero divisors and $\varepsilon R_{\mathbb{D}'}$ consists entirely of them, and there is no generic zero divisor outside the distinguished subspaces, in contrast to the biquaternion case. The position of $\mathcal{Z}$ as a subset of the plane is the subject of *Dual-Numbers Topology*.
@@ -212,13 +212,13 @@ The zero divisors form a **single family**, against the two families of the biqu
 | $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
 | $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
 | $\mathbb{D}$ | Split-complex algebra, unit $j$, $j^2 = +1$ |
-| $Z = a + \varepsilon b$ | General dual number |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $\bar{A} = a - \varepsilon a'$ | Dual conjugation |
 | $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$ | Maximal ideal, square-zero |
 | $R_{\mathbb{D}'}$, $\varepsilon R_{\mathbb{D}'}$ | Real and infinitesimal submodules |
 | $\mathcal{Z} = \mathrm{M} \setminus \{0\}$ | Zero-divisor set, a single family |
-| $\operatorname{Ann}(Z)$ | Annihilator of $Z$; equals $\mathrm{M}$ for $Z \in \mathcal{Z}$ |
+| $\operatorname{Ann}(A)$ | Annihilator of $A$; equals $\mathrm{M}$ for $A \in \mathcal{Z}$ |
 | $\pi_\pm = \tfrac{1}{2}(1 \pm j)$ | The idempotents of the split complex algebra, two zero-divisor families |
 | $\mathbb{B}$ | Biquaternion algebra, two families of zero divisors |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ | Split biquaternions, two families |

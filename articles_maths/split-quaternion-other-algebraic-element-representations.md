@@ -66,7 +66,7 @@ The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the spl
 
 The algebra acts on itself by left multiplication, and the two minimal left ideals are the two **Clifford modules** of the algebra under this action.
 
-**Definition.** A **left module** for $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q, m) \mapsto \tilde q \cdot m$, satisfying $\tilde q \cdot (y \cdot m) = (\tilde q y) \cdot m$ and $1 \cdot m = m$.
+**Definition.** A **left module** for $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q, m) \mapsto \tilde q \cdot m$, satisfying $\tilde q \cdot (\tilde p \cdot m) = (\tilde q \tilde p) \cdot m$ and $1 \cdot m = m$.
 
 **Theorem.** The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has a unique simple left module up to isomorphism, of real dimension $2$, and the algebra is the direct sum of two copies of it as a left module:
 
@@ -82,7 +82,7 @@ The module realization is the split, real analogue of the biquaternion spinor re
 
 ### Module over the Split-Complex Algebra
 
-Each split-complex plane $\mathbb{D}_k$ is a commutative subalgebra, and the algebra is a module over it by restriction of scalars: $\mathbb{D}_k \times \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$, $(z, \tilde q) \mapsto zx$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this makes $\mathbb{H}_{\mathrm{s}}$ a free module of rank two over $\mathbb{D}_k$, with basis $\{1, e_1\}$; the idempotent decomposition $\tilde q = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$ is the separate decomposition of the regular module over itself into the two minimal left ideals. This is the module-theoretic form of the product-table entries $\mathbb{D}_k \cdot \mathbb{H}_{\mathrm{s}} \subseteq \mathbb{H}_{\mathrm{s}}$ of *Split-Quaternion Relations Between Subspaces*; the twisted multiplication which makes the plane a left module in a genuinely different way is treated in *Split-Quaternion Split-Complex Subspaces*.
+Each split-complex plane $\mathbb{D}_k$ is a commutative subalgebra, and the algebra is a module over it by restriction of scalars: $\mathbb{D}_k \times \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$, $(A, \tilde q) \mapsto A\tilde q$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this makes $\mathbb{H}_{\mathrm{s}}$ a free module of rank two over $\mathbb{D}_k$, with basis $\{1, e_1\}$; the idempotent decomposition $\tilde q = \tilde q \tilde\pi_+ + \tilde q \tilde\pi_-$ is the separate decomposition of the regular module over itself into the two minimal left ideals. This is the module-theoretic form of the product-table entries $\mathbb{D}_k \cdot \mathbb{H}_{\mathrm{s}} \subseteq \mathbb{H}_{\mathrm{s}}$ of *Split-Quaternion Relations Between Subspaces*; the twisted multiplication which makes the plane a left module in a genuinely different way is treated in *Split-Quaternion Split-Complex Subspaces*.
 
 ## Relation to the Split-Complex and Matrix Models
 

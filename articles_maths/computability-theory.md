@@ -19,10 +19,10 @@ $$
 Z(n) = 0, \qquad S(n) = n+1, \qquad P^k_i(n_1,\dots,n_k) = n_i,
 $$
 
-and closed under **composition**, $h(\bar x) = f(g_1(\bar x),\dots,g_m(\bar x))$, and **primitive recursion**,
+and closed under **composition**, $h(\bar n) = f(g_1(\bar n),\dots,g_m(\bar n))$, and **primitive recursion**,
 
 $$
-h(\bar x, 0) = f(\bar x), \qquad h(\bar x, S n) = g(\bar x, n, h(\bar x, n)).
+h(\bar n, 0) = f(\bar n), \qquad h(\bar n, S n) = g(\bar n, n, h(\bar n, n)).
 $$
 
 A relation $R \subseteq \mathbb{N}^k$ is **primitive recursive** if its characteristic function is.
@@ -30,7 +30,7 @@ A relation $R \subseteq \mathbb{N}^k$ is **primitive recursive** if its characte
 **Theorem.** The primitive recursive functions are total and computable, and they are closed under the bounded operations: if $f$ is primitive recursive then so are
 
 $$
-\sum_{i \leq n} f(\bar x, i), \qquad \prod_{i \leq n} f(\bar x, i), \qquad \max_{i \leq n} f(\bar x, i), \qquad \min_{i \leq n} f(\bar x, i),
+\sum_{i \leq n} f(\bar n, i), \qquad \prod_{i \leq n} f(\bar n, i), \qquad \max_{i \leq n} f(\bar n, i), \qquad \min_{i \leq n} f(\bar n, i),
 $$
 
 and bounded quantification over primitive recursive relations yields primitive recursive relations.
@@ -51,27 +51,27 @@ Then $A$ is total and computable but not primitive recursive.
 
 ### Partial Recursion and the Church–Turing Thesis
 
-**Definition.** The **partial recursive functions** are the smallest class containing the primitive recursive functions and closed under **unbounded search**: if $g(\bar x, n)$ is partial recursive and total in its last argument whenever it is defined, then
+**Definition.** The **partial recursive functions** are the smallest class containing the primitive recursive functions and closed under **unbounded search**: if $g(\bar n, n)$ is partial recursive and total in its last argument whenever it is defined, then
 
 $$
-f(\bar x) = \mu n\, (g(\bar x, n) = 0),
+f(\bar n) = \mu n\, (g(\bar n, n) = 0),
 $$
 
-the least $n$ with $g(\bar x, n) = 0$, is partial recursive; the search diverges when no such $n$ exists.
+the least $n$ with $g(\bar n, n) = 0$, is partial recursive; the search diverges when no such $n$ exists.
 
 **Theorem (Church–Turing).** A partial function $\mathbb{N}^k \to \mathbb{N}$ is partial recursive if and only if it is computable by a Turing machine. This identification is the **Church–Turing thesis**; it is a thesis because it identifies a formal class with an informal notion.
 
 **Proof.** The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in *Formal Logic and Computability*.
 
-**Theorem (Kleene normal form).** There is a primitive recursive predicate $T(e, x, s)$ and a primitive recursive function $U$ such that
+**Theorem (Kleene normal form).** There is a primitive recursive predicate $T(e, n, s)$ and a primitive recursive function $U$ such that
 
 $$
-\varphi_e(x) \simeq U(\mu s\, T(e, x, s)),
+\varphi_e(n) \simeq U(\mu s\, T(e, n, s)),
 $$
 
-where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(x)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,x) = \varphi_e(x)$ being partial recursive and not total.
+where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(n)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,n) = \varphi_e(n)$ being partial recursive and not total.
 
-**Proof.** $T(e,x,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $x$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of *Formal Logic and Computability*, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.
+**Proof.** $T(e,n,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $n$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of *Formal Logic and Computability*, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.
 
 ### The Recursion Theorem
 
@@ -81,10 +81,10 @@ $$
 \varphi_e = \varphi_{f(e)} .
 $$
 
-**Proof.** By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(x) = \varphi_e(e,x)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then
+**Proof.** By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(n) = \varphi_e(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then
 
 $$
-\varphi_{e_0}(x) = \varphi_{s(v)}(x) = \varphi_v(v,x) = h(v) = f(s(v)) = f(e_0),
+\varphi_{e_0}(n) = \varphi_{s(v)}(n) = \varphi_v(v,n) = h(v) = f(s(v)) = f(e_0),
 $$
 
 so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$.
@@ -99,9 +99,9 @@ so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only
 
 **Theorem.** A set $A$ is c.e. if and only if it is empty or it is the range of a total computable function. A set is decidable if and only if it and its complement are both c.e.
 
-**Proof.** If $W_e$ is nonempty, choose $a \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $a$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.
+**Proof.** If $W_e$ is nonempty, choose $m \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $m$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.
 
-**Theorem (halting problem).** The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $x$, whether $\varphi_e(x)$ converges.
+**Theorem (halting problem).** The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $n$, whether $\varphi_e(n)$ converges.
 
 **Proof.** $K$ is c.e. because it is the domain of the partial recursive function $e \mapsto \varphi_e(e)$. If $K$ were decidable with characteristic function $k$, the function
 
@@ -159,10 +159,10 @@ would be total computable, and for an index $e_0$ of $g$ one has $g = \varphi_{e
 
 ### Diophantine Sets
 
-**Theorem (Matiyasevich, after Davis–Putnam–Robinson).** A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is **Diophantine**: there is a polynomial $P(x, y_1, \dots, y_k)$ with integer coefficients such that
+**Theorem (Matiyasevich, after Davis–Putnam–Robinson).** A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is **Diophantine**: there is a polynomial $P(n, m_1, \dots, m_k)$ with integer coefficients such that
 
 $$
-n \in A \iff \exists y_1 \cdots \exists y_k \in \mathbb{N}\ P(n, y_1, \dots, y_k) = 0 .
+n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 .
 $$
 
 **Proof.** A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references.
@@ -213,7 +213,7 @@ the measure of the set of programs on which $U$ halts.
 
 ## Summary
 
-The primitive recursive functions are built from the zero, successor and projection functions by composition and primitive recursion; they are total and computable and are closed under bounded sums, products and quantification, and they include addition, multiplication, exponentiation, the factorial, the binomial coefficients and the coding functions for finite sequences. The Ackermann function is total and computable but not primitive recursive, so primitive recursion is strictly weaker than computability. Adding unbounded search gives the partial recursive functions, which by the Church–Turing thesis are exactly the Turing-computable partial functions; Kleene's normal form expresses every partial recursive function as $U(\mu s\, T(e,x,s))$ with $T$ and $U$ primitive recursive, and the recursion theorem gives every total computable transformation of programs a fixed point.
+The primitive recursive functions are built from the zero, successor and projection functions by composition and primitive recursion; they are total and computable and are closed under bounded sums, products and quantification, and they include addition, multiplication, exponentiation, the factorial, the binomial coefficients and the coding functions for finite sequences. The Ackermann function is total and computable but not primitive recursive, so primitive recursion is strictly weaker than computability. Adding unbounded search gives the partial recursive functions, which by the Church–Turing thesis are exactly the Turing-computable partial functions; Kleene's normal form expresses every partial recursive function as $U(\mu s\, T(e,n,s))$ with $T$ and $U$ primitive recursive, and the recursion theorem gives every total computable transformation of programs a fixed point.
 
 A set is decidable if its characteristic function is computable and recursively enumerable if it is the domain of a partial recursive function, equivalently the range of a total one; a set is decidable exactly when it and its complement are c.e. The halting set $K$ is c.e. but not decidable, it is m-complete for the c.e. sets, and Rice's theorem makes every nontrivial index set undecidable; Myhill's theorem upgrades m-equivalence to a computable isomorphism. The arithmetical hierarchy stratifies the definable sets, with $\Sigma_1$ the c.e. sets and $\Pi_1$ their complements, and Post's theorem identifies $\Sigma_{n+1}$ with the sets c.e. in $\emptyset^{(n)}$; the Shoenfield limit lemma identifies $\Delta_2$ with the sets computable in $\emptyset'$. The Turing degrees form an upper semilattice with least element $\mathbf{0}$ and a strictly increasing jump, the c.e. degrees are dense and contain incomparable elements by the Friedberg–Muchnik theorem, and the MRDP theorem identifies the c.e. sets with the Diophantine sets, making the decision problem for Diophantine equations undecidable. The computability theory of $\mathbb{N}$ is thus the effective algebra of the natural numbers, and with the model theory of the previous article it completes the algebra slot of the system.
 
@@ -224,10 +224,10 @@ A set is decidable if its characteristic function is computable and recursively 
 | $Z, S, P^k_i$ | Zero, successor and projection functions |
 | $\mu n$ | Unbounded search, least $n$ with a given property |
 | $\varphi_e$ | The $e$-th partial recursive function |
-| $\varphi_e(x)\!\downarrow$ | The computation halts |
+| $\varphi_e(n)\!\downarrow$ | The computation halts |
 | $W_e$ | $\operatorname{dom}(\varphi_e)$, the $e$-th c.e. set |
 | $K$ | Halting set $\{e : \varphi_e(e)\!\downarrow\}$ |
-| $T(e,x,s)$, $U$ | Kleene's normal form predicate and output function |
+| $T(e,n,s)$, $U$ | Kleene's normal form predicate and output function |
 | $A \leq_m B$ | Many-one reducibility |
 | $A \leq_T B$ | Turing reducibility, computable in $B$ |
 | $A \oplus B$ | Join of two sets |

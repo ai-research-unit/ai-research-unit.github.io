@@ -12,7 +12,7 @@ The contributions divide cleanly, and the division is the content of the article
 
 - **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the trace pairing. The framework's real bilinear form is
 $$
-\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde Y\big) = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde Y\big),
+\langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde Y\big),
 $$
 which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$ — the signature split — and for a field $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ the quadratic action is
 $$

@@ -7,13 +7,13 @@ This is the seventh article of the Complex Numbers system in Part V, and it occu
 
 The one-variable theory is from *Complex Analysis*, which constructs holomorphic functions, the Cauchy integral, the power series and the singularities; the present article assumes that theory and develops what is genuinely new from two variables upward. The new phenomena are not technical refinements but structural changes: a function holomorphic on a domain minus a compact set extends across the removed set (the Hartogs phenomenon), so there are no isolated singularities in dimension $\geq 2$; the Riemann mapping theorem fails, so there is no biholomorphic classification of domains; and the natural home of the theory is not the domain of the one-variable theory but the *domain of holomorphy*, characterised by holomorphic convexity and by pseudoconvexity. The formal apparatus of differential forms and the $\bar\partial$ operator is from *Differential Forms and Stokes' Theorem*, and the cohomological method by which the global problems are solved is from *Sheaf Cohomology*.
 
-Throughout, $n \geq 2$ unless stated, $z = (z_1, \dots, z_n) \in \mathbb{C}^n$ with $z_j = x_j + iy_j$, and a **domain** is a connected open subset of $\mathbb{C}^n$. The **polydisc** of multiradius $r = (r_1, \dots, r_n)$ about $a$ is
+Throughout, $n \geq 2$ unless stated, $A = (A_1, \dots, A_n) \in \mathbb{C}^n$ with $A_j = a_j + i a'_j$, and a **domain** is a connected open subset of $\mathbb{C}^n$. The **polydisc** of multiradius $r = (r_1, \dots, r_n)$ about $a$ is
 
 $$
-\Delta(a, r) = \{z : \lvert z_j - a_j\rvert < r_j,\ j = 1, \dots, n\},
+\Delta(a, r) = \{A : \lvert A_j - a_j\rvert < r_j,\ j = 1, \dots, n\},
 $$
 
-the unit ball is $B^n = \{z : \lvert z_1\rvert^2 + \cdots + \lvert z_n\rvert^2 < 1\}$, and the **Wirtinger operators** are $\partial/\partial z_j = \tfrac12(\partial/\partial x_j - i\partial/\partial y_j)$ and $\partial/\partial \bar z_j = \tfrac12(\partial/\partial x_j + i\partial/\partial y_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar z_j)\,d\bar z_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^p$ is the sheaf of holomorphic $p$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
+the unit ball is $B^n = \{A : \lvert A_1\rvert^2 + \cdots + \lvert A_n\rvert^2 < 1\}$, and the **Wirtinger operators** are $\partial/\partial A_j = \tfrac12(\partial/\partial a_j - i\partial/\partial a'_j)$ and $\partial/\partial \bar A_j = \tfrac12(\partial/\partial a_j + i\partial/\partial a'_j)$. The **Cauchy–Riemann operator** is $\bar\partial = \sum_j (\partial/\partial \bar A_j)\,d\bar A_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^p$ is the sheaf of holomorphic $p$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.
 
 ## Holomorphic Functions of Several Variables
 
@@ -22,26 +22,26 @@ the unit ball is $B^n = \{z : \lvert z_1\rvert^2 + \cdots + \lvert z_n\rvert^2 <
 **Definition.** Let $U \subseteq \mathbb{C}^n$ be open. A function $f : U \to \mathbb{C}$ is **holomorphic** if it is complex differentiable at every point, that is, real differentiable with a $\mathbb{C}$-linear differential; equivalently, if it is locally the sum of a convergent power series. The first condition is expressed by the system of Cauchy–Riemann equations
 
 $$
-\frac{\partial f}{\partial \bar z_j} = 0, \qquad j = 1, \dots, n ,
+\frac{\partial f}{\partial \bar A_j} = 0, \qquad j = 1, \dots, n ,
 $$
 
-which for $f = u + iv$ reads $\partial u/\partial x_j = \partial v/\partial y_j$ and $\partial u/\partial y_j = -\partial v/\partial x_j$ for every $j$.
+which for $f = u + iv$ reads $\partial u/\partial a_j = \partial v/\partial a'_j$ and $\partial u/\partial a'_j = -\partial v/\partial a_j$ for every $j$.
 
 **Theorem.** A function $f$ on a polydisc $\Delta(a,r)$ is holomorphic if and only if it is represented there by a convergent power series
 
 $$
-f(z) = \sum_{\alpha \in \mathbb{N}^n} c_\alpha (z-a)^\alpha, \qquad c_\alpha = \frac{1}{\alpha!}\,\frac{\partial^{\lvert\alpha\rvert} f}{\partial z^\alpha}(a),
+f(A) = \sum_{\alpha \in \mathbb{N}^n} c_\alpha (A-a)^\alpha, \qquad c_\alpha = \frac{1}{\alpha!}\,\frac{\partial^{\lvert\alpha\rvert} f}{\partial A^\alpha}(a),
 $$
 
 the series converging absolutely and uniformly on every compact subset of the polydisc.
 
-**Proof.** If $f$ is holomorphic, iterating the one-variable Cauchy integral formula of *Complex Analysis* over the $n$ variables gives, for $z$ in a smaller polydisc,
+**Proof.** If $f$ is holomorphic, iterating the one-variable Cauchy integral formula of *Complex Analysis* over the $n$ variables gives, for $A$ in a smaller polydisc,
 
 $$
-f(z) = \frac{1}{(2\pi i)^n}\int_{\lvert \zeta_j - a_j\rvert = r_j} \frac{f(\zeta)}{(\zeta_1 - z_1)\cdots(\zeta_n - z_n)}\,d\zeta_1\cdots d\zeta_n ,
+f(A) = \frac{1}{(2\pi i)^n}\int_{\lvert \zeta_j - a_j\rvert = r_j} \frac{f(\zeta)}{(\zeta_1 - A_1)\cdots(\zeta_n - A_n)}\,d\zeta_1\cdots d\zeta_n ,
 $$
 
-and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic.
+and expanding each factor $(\zeta_j - A_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic.
 
 **Theorem (Cauchy estimates and the identity theorem).** If $f$ is holomorphic on $\Delta(a,r)$ with $\lvert f\rvert \leq M$ then $\lvert c_\alpha\rvert \leq M r^{-\alpha}$. If $f$ vanishes on a nonempty open subset of a domain $D$, then $f \equiv 0$ on $D$.
 
@@ -88,7 +88,7 @@ and expanding each factor $(\zeta_j - z_j)^{-1}$ as a geometric series gives the
 **Definition.** For a compact set $K$ in a domain $D \subseteq \mathbb{C}^n$, the **holomorphic hull** of $K$ in $D$ is
 
 $$
-\hat K_D = \left\{ z \in D : \lvert f(z)\rvert \leq \sup_K \lvert f\rvert \ \text{ for every } f \text{ holomorphic on } D \right\}.
+\hat K_D = \left\{ A \in D : \lvert f(A)\rvert \leq \sup_K \lvert f\rvert \ \text{ for every } f \text{ holomorphic on } D \right\}.
 $$
 
 The domain $D$ is **holomorphically convex** if $\hat K_D$ is compact in $D$ for every compact $K \subset D$.
@@ -105,19 +105,19 @@ The domain $D$ is **holomorphically convex** if $\hat K_D$ is compact in $D$ for
 
 ### Plurisubharmonic Functions
 
-**Definition.** An upper semicontinuous function $\varphi : U \to [-\infty, \infty)$ on an open $U \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $z \in U$ and $w \in \mathbb{C}^n$ the function $\zeta \mapsto \varphi(z + \zeta w)$ of the complex variable $\zeta$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
+**Definition.** An upper semicontinuous function $\varphi : U \to [-\infty, \infty)$ on an open $U \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $A \in U$ and $B \in \mathbb{C}^n$ the function $\zeta \mapsto \varphi(A + \zeta B)$ of the complex variable $\zeta$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
 
 $$
-L\varphi(z; w) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial z_j \partial \bar z_k}(z)\, w_j \bar w_k
+L\varphi(A; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial A_j \partial \bar A_k}(A)\, B_j \bar B_k
 $$
 
-is positive semidefinite for every $z$ and every $w$.
+is positive semidefinite for every $A$ and every $B$.
 
 **Theorem.** A function $\varphi$ is plurisubharmonic if and only if it is locally the upper semicontinuous regularisation of the supremum of a family of functions of the form $c\log\lvert f\rvert$ with $f$ holomorphic and $c > 0$. In particular $\log\lvert f\rvert$ is plurisubharmonic for every holomorphic $f$, and plurisubharmonicity is invariant under biholomorphic maps.
 
 **Proof.** The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\zeta\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references.
 
-**Definition.** A domain $D \subseteq \mathbb{C}^n$ is **pseudoconvex** if it has a continuous plurisubharmonic exhaustion function $\varphi : D \to \mathbb{R}$, that is, a plurisubharmonic $\varphi$ such that $\{z \in D : \varphi(z) < c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.
+**Definition.** A domain $D \subseteq \mathbb{C}^n$ is **pseudoconvex** if it has a continuous plurisubharmonic exhaustion function $\varphi : D \to \mathbb{R}$, that is, a plurisubharmonic $\varphi$ such that $\{A \in D : \varphi(A) < c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.
 
 **Remark.** Pseudoconvexity is the local form of holomorphic convexity: the plurisubharmonic exhaustion measures the failure of the domain to extend across its boundary, and the Levi form is the second-order test for that failure. In one variable every domain is pseudoconvex, so the notion is new from two variables upward.
 
@@ -239,21 +239,21 @@ $$
 
 ### The Weierstrass Preparation Theorem
 
-**Definition.** A **Weierstrass polynomial** of degree $k$ in $z_n$ over the ring $\mathcal{O}_{\mathbb{C}^{n-1},0}$ is a polynomial $w(z') = z_n^k + a_1(z')z_n^{k-1} + \cdots + a_k(z')$ with coefficients $a_i$ holomorphic near $0$ and vanishing at $z' = 0$. A germ $f \in \mathcal{O}_{\mathbb{C}^n,0}$ is **regular of order $k$ in $z_n$** if $f(0, z_n)$ has a zero of order $k$ at $z_n = 0$.
+**Definition.** A **Weierstrass polynomial** of degree $k$ in $A_n$ over the ring $\mathcal{O}_{\mathbb{C}^{n-1},0}$ is a polynomial $w(A') = A_n^k + a_1(A')A_n^{k-1} + \cdots + a_k(A')$ with coefficients $a_i$ holomorphic near $0$ and vanishing at $A' = 0$. A germ $f \in \mathcal{O}_{\mathbb{C}^n,0}$ is **regular of order $k$ in $A_n$** if $f(0, A_n)$ has a zero of order $k$ at $A_n = 0$.
 
-**Theorem (Weierstrass preparation and division).** Let $f \in \mathcal{O}_{\mathbb{C}^n,0}$ be regular of order $k$ in $z_n$. Then $f$ factors uniquely as
+**Theorem (Weierstrass preparation and division).** Let $f \in \mathcal{O}_{\mathbb{C}^n,0}$ be regular of order $k$ in $A_n$. Then $f$ factors uniquely as
 
 $$
 f = u \cdot w ,
 $$
 
-where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $z_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $q$ and $r$ with $g = qf + r$, where $r$ is a polynomial in $z_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
+where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $A_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $q$ and $r$ with $g = qf + r$, where $r$ is a polynomial in $A_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
 
-**Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $z_n$ with parameters $z'$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = z_n^k$. The details are in the references.
+**Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $A_n$ with parameters $A'$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = A_n^k$. The details are in the references.
 
 **Corollary.** The local ring $\mathcal{O}_{\mathbb{C}^n,0}$ is a unique factorization domain and a regular local ring of dimension $n$; hence the germ of a hypersurface is the zero set of a Weierstrass polynomial and has a local branched covering structure over $\mathbb{C}^{n-1}$.
 
-**Proof.** Unique factorization follows from the preparation theorem by induction on $n$, beginning with the one-variable case, and the regular local ring statement is the computation of the maximal ideal of $\mathcal{O}_{\mathbb{C}^n,0}$, which is generated by $z_1, \dots, z_n$, together with the dimension.
+**Proof.** Unique factorization follows from the preparation theorem by induction on $n$, beginning with the one-variable case, and the regular local ring statement is the computation of the maximal ideal of $\mathcal{O}_{\mathbb{C}^n,0}$, which is generated by $A_1, \dots, A_n$, together with the dimension.
 
 ### Coherence and the Nullstellensatz
 
@@ -271,7 +271,7 @@ where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of deg
 
 ## Summary
 
-Holomorphic functions of several complex variables are the functions satisfying the Cauchy–Riemann equations $\partial f/\partial\bar z_j = 0$ in each variable; by Hartogs' theorem separate holomorphy implies joint holomorphy, and holomorphic functions are exactly the locally convergent power series, with the Cauchy integral formula taken over polydiscs supplying the coefficients and the Cauchy estimates. The decisive novelty is the Hartogs extension theorem: in $n \geq 2$ variables a function holomorphic on a domain minus a compact set with connected complement extends across the removed set, so there are no isolated singularities and no compact singularities. The natural domains are the domains of holomorphy, equivalently by Cartan–Thullen the holomorphically convex domains, and equivalently by the solution of the Levi problem of Oka, Bremermann and Norguet the pseudoconvex domains, those carrying a plurisubharmonic exhaustion function.
+Holomorphic functions of several complex variables are the functions satisfying the Cauchy–Riemann equations $\partial f/\partial\bar A_j = 0$ in each variable; by Hartogs' theorem separate holomorphy implies joint holomorphy, and holomorphic functions are exactly the locally convergent power series, with the Cauchy integral formula taken over polydiscs supplying the coefficients and the Cauchy estimates. The decisive novelty is the Hartogs extension theorem: in $n \geq 2$ variables a function holomorphic on a domain minus a compact set with connected complement extends across the removed set, so there are no isolated singularities and no compact singularities. The natural domains are the domains of holomorphy, equivalently by Cartan–Thullen the holomorphically convex domains, and equivalently by the solution of the Levi problem of Oka, Bremermann and Norguet the pseudoconvex domains, those carrying a plurisubharmonic exhaustion function.
 
 The local and global problems of the theory are governed by the $\bar\partial$-equation and by sheaf cohomology: the Dolbeault isomorphism identifies the cohomology of the $\bar\partial$-complex with the sheaf cohomology of the holomorphic forms, Hörmander's $L^2$ estimates solve $\bar\partial u = f$ on pseudoconvex domains, and Cartan's Theorems A and B give the vanishing $H^q(X,\mathcal{F}) = 0$ for $q \geq 1$ on Stein manifolds, which solves the first Cousin problem and identifies the obstruction to the second with a class in $H^2(X,\mathbb{Z})$ via the exponential sheaf sequence. Stein manifolds are the holomorphically convex manifolds with enough holomorphic functions; they embed properly in some $\mathbb{C}^N$, and on them the Oka principle makes the holomorphic existence problems agree with the topological ones. The one-variable phenomena do not persist: the Riemann mapping theorem fails, as Poincaré's comparison of the ball and the polydisc shows, and Fefferman's boundary extension theorem replaces the flexible conformal theory by a rigid one. The analysis slot of the system $\mathbb{C}$ is thus enlarged from the one-variable theory of *Complex Analysis* to the several-variable theory, in which the Cauchy–Riemann operator, the plurisubharmonic functions and the cohomology of the structure sheaf take over the role of the Cauchy integral and the residue calculus.
 
@@ -280,11 +280,13 @@ The local and global problems of the theory are governed by the $\bar\partial$-e
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}^n$ | Complex $n$-space, $n \geq 2$ |
-| $z_j = x_j + iy_j$ | Coordinates |
+| $A = (A_1, \dots, A_n)$ | Generic element of $\mathbb{C}^n$ |
+| $A_j = a_j + i a'_j$ | Coordinates |
+| $B$ | Direction in $\mathbb{C}^n$ |
 | $\Delta(a,r)$ | Polydisc of multiradius $r$ about $a$ |
 | $\Delta^n$, $B^n$ | Unit polydisc and unit ball |
-| $\partial/\partial z_j$, $\partial/\partial \bar z_j$ | Wirtinger operators |
-| $\bar\partial$ | Cauchy–Riemann operator $\sum_j (\partial/\partial\bar z_j)\,d\bar z_j$ |
+| $\partial/\partial A_j$, $\partial/\partial \bar A_j$ | Wirtinger operators |
+| $\bar\partial$ | Cauchy–Riemann operator $\sum_j (\partial/\partial\bar A_j)\,d\bar A_j$ |
 | $\mathcal{O}$, $\mathcal{O}^*$ | Sheaves of holomorphic and nowhere-vanishing holomorphic functions |
 | $\mathcal{O}_X$ | Structure sheaf of a complex manifold $X$ |
 | $\Omega^p$, $\Omega^{0,q}$ | Sheaves of holomorphic $p$-forms and of $(0,q)$-forms |

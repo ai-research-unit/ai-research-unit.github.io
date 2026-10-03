@@ -11,7 +11,7 @@ The Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'
 **Definition.** Elements $\tilde{Q},\tilde{Q}'$ are **Krein-orthogonal**, written $\tilde{Q}\perp_{K}\tilde{Q}'$, when $[\tilde{Q},\tilde{Q}']=0$. A subspace is **Krein-orthogonal** to another, $\mathbb{W}\perp_{K}\mathbb{Z}$, when every element of one is Krein-orthogonal to every element of the other. The **Krein-orthogonal complement** of $\mathbb{W}$ is
 
 $$
-\mathbb{W}^{\perp_{K}}=\{\tilde{Z}\in\mathbb{B}:[\tilde{Q},\tilde{Z}]=0\ \text{for all}\ \tilde{Q}\in\mathbb{W}\}.
+\mathbb{W}^{\perp_{K}}=\{\tilde{S}\in\mathbb{B}:[\tilde{Q},\tilde{S}]=0\ \text{for all}\ \tilde{Q}\in\mathbb{W}\}.
 $$
 
 **Theorem (the complement).** For every subspace $\mathbb{W}$,
@@ -26,7 +26,7 @@ $$
 
 In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and $\mathbb{V}_{\mathbb{B}}^{\perp_{K}}=\mathbb{C}_{\mathbb{B}}$.
 
-**Proof.** The map $\mathbb{B}\to\mathbb{W}^{*}$, $\tilde{Z}\mapsto[\cdot,\tilde{Z}]$, has kernel $\mathbb{W}^{\perp_{K}}$ and rank $\dim\mathbb{W}$, because the ambient form is non-degenerate and every linear form on $\mathbb{W}$ extends; rank–nullity gives the dimension formula. The inclusion and the criterion for equality are formal consequences. The last line is the computation $[e_0,e_k]=0$ with the dimensions.
+**Proof.** The map $\mathbb{B}\to\mathbb{W}^{*}$, $\tilde{S}\mapsto[\cdot,\tilde{S}]$, has kernel $\mathbb{W}^{\perp_{K}}$ and rank $\dim\mathbb{W}$, because the ambient form is non-degenerate and every linear form on $\mathbb{W}$ extends; rank–nullity gives the dimension formula. The inclusion and the criterion for equality are formal consequences. The last line is the computation $[e_0,e_k]=0$ with the dimensions.
 
 **Remark (the contrast with a Euclidean space).** In a positive definite space $\mathbb{W}\cap\mathbb{W}^{\perp}=\{0\}$ for every $\mathbb{W}$; here the intersection can be non-trivial, and it is exactly the radical of the restricted form.
 
@@ -36,7 +36,7 @@ In particular $\mathbb{C}_{\mathbb{B}}^{\perp_{K}}=\mathbb{V}_{\mathbb{B}}$ and 
 
 **Theorem (definite implies non-degenerate; the converse fails).** A definite subspace is non-degenerate. The converse is false: the real plane $\mathbb{W}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ e_0-e_1\}$ is non-degenerate and neutral, since $[e_0+e_1,e_0+e_1]=[e_0-e_1,e_0-e_1]=0$ while $[e_0+e_1,e_0-e_1]=2$.
 
-**Proof.** If $\mathbb{W}$ is positive definite and $\tilde{Z}\in\mathbb{W}\cap\mathbb{W}^{\perp_{K}}$ then $[\tilde{Z},\tilde{Z}]>0$ unless $\tilde{Z}=0$, while $\tilde{Z}\in\mathbb{W}^{\perp_{K}}$ gives $[\tilde{Z},\tilde{Z}]=0$; the negative definite case is the same with the sign reversed. For the plane, the two displayed values give a restriction of Gram matrix $\begin{pmatrix}0&2\\2&0\end{pmatrix}$, of determinant $-4\neq0$ and of inertia $(1,1)$.
+**Proof.** If $\mathbb{W}$ is positive definite and $\tilde{S}\in\mathbb{W}\cap\mathbb{W}^{\perp_{K}}$ then $[\tilde{S},\tilde{S}]>0$ unless $\tilde{S}=0$, while $\tilde{S}\in\mathbb{W}^{\perp_{K}}$ gives $[\tilde{S},\tilde{S}]=0$; the negative definite case is the same with the sign reversed. For the plane, the two displayed values give a restriction of Gram matrix $\begin{pmatrix}0&2\\2&0\end{pmatrix}$, of determinant $-4\neq0$ and of inertia $(1,1)$.
 
 **Theorem (the dimension of a definite subspace).** A positive definite subspace has complex dimension at most $1$ (real dimension at most $2$), and a negative definite subspace has complex dimension at most $3$ (real dimension at most $6$); the bounds are the inertia indices $p$ and $q$ of *The Krein Gram Matrix and the Restrictions of the Form*.
 
@@ -72,7 +72,7 @@ $$
 
 The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$, with $J_{\mathbb{C}_{\mathbb{B}}}=J={}^{\natural}$.
 
-**Proof.** The operator is well defined because $\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_{K}}$, and it is an involution by construction. For the first identity, split $\tilde{Q}=\tilde{W}+\tilde{Z}$ and $\tilde{Q}'=\tilde{W}'+\tilde{Z}'$: $[\tilde{Q},\tilde{Q}']=[\tilde{W},\tilde{W}']+[\tilde{Z},\tilde{Z}']$ and $\langle J_{\mathbb{W}}\tilde{Q},\tilde{Q}'\rangle=\langle\tilde{W},\tilde{W}'\rangle-\langle\tilde{Z},\tilde{Z}'\rangle$; on the positive definite $\mathbb{W}$ the two forms agree and on the negative definite $\mathbb{W}^{\perp_{K}}$ they agree up to the sign $-$ because $[\tilde{Z},\tilde{Z}']=-\langle\tilde{Z},\tilde{Z}'\rangle$ there. The second identity is the first with $J_{\mathbb{W}}^{2}=\mathrm{id}$ and $\langle J_{\mathbb{W}}\tilde{Q},\tilde{Q}'\rangle=[\tilde{Q},\tilde{Q}']$. The signature is that of the form, and the canonical pair is the sign comparison of the two conjugations.
+**Proof.** The operator is well defined because $\mathbb{B}=\mathbb{W}\oplus\mathbb{W}^{\perp_{K}}$, and it is an involution by construction. For the first identity, split $\tilde{Q}=\tilde{W}+\tilde{S}$ and $\tilde{Q}'=\tilde{W}'+\tilde{S}'$: $[\tilde{Q},\tilde{Q}']=[\tilde{W},\tilde{W}']+[\tilde{S},\tilde{S}']$ and $\langle J_{\mathbb{W}}\tilde{Q},\tilde{Q}'\rangle=\langle\tilde{W},\tilde{W}'\rangle-\langle\tilde{S},\tilde{S}'\rangle$; on the positive definite $\mathbb{W}$ the two forms agree and on the negative definite $\mathbb{W}^{\perp_{K}}$ they agree up to the sign $-$ because $[\tilde{S},\tilde{S}']=-\langle\tilde{S},\tilde{S}'\rangle$ there. The second identity is the first with $J_{\mathbb{W}}^{2}=\mathrm{id}$ and $\langle J_{\mathbb{W}}\tilde{Q},\tilde{Q}'\rangle=[\tilde{Q},\tilde{Q}']$. The signature is that of the form, and the canonical pair is the sign comparison of the two conjugations.
 
 **Corollary (the family of symmetries).** The fundamental symmetries of $\mathbb{B}$ are the involutions whose $+1$-eigenspace is positive definite of dimension $p$; through the parametrisation of the maximal positive definite subspaces they are indexed by the open unit ball of $\mathbb{V}_{\mathbb{B}}$, the canonical one $-1$ of them being $J$ itself. Any two fundamental symmetries are congruent by an isometry of the Krein form.
 
@@ -82,7 +82,7 @@ The canonical fundamental decomposition is $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\p
 
 **Theorem (the Krein projections are exactly the $J$-self-adjoint idempotents).** An idempotent $P$ of $\mathbb{B}$ is $J$-self-adjoint, $P^{\dagger}=P$, if and only if it is the Krein-orthogonal projection onto a non-degenerate subspace.
 
-**Proof.** If $P^{\dagger}=P$ and $P^{2}=P$, then $[P\tilde{X},\tilde{Y}]=[\tilde{X},P\tilde{Y}]$; for $\tilde{X}\in\ker P$ this gives $[\tilde{X},\tilde{Y}']=0$ for every $\tilde{Y}'$ in the range, so $\ker P\subseteq(\mathrm{ran}\,P)^{\perp_{K}}$, and the two sides have the same dimension because the form is non-degenerate, whence equality. Conversely, for the projection onto a non-degenerate $\mathbb{W}$ along $\mathbb{W}^{\perp_{K}}$, writing $\tilde{X}=\tilde{W}+\tilde{Z}$ and $\tilde{Y}=\tilde{W}'+\tilde{Z}'$ gives $[P\tilde{X},\tilde{Y}]=[\tilde{W},\tilde{W}']=[\tilde{X},P\tilde{Y}]$, so $P^{\dagger}=P$.
+**Proof.** If $P^{\dagger}=P$ and $P^{2}=P$, then $[P\tilde{P},\tilde{R}]=[\tilde{P},P\tilde{R}]$; for $\tilde{P}\in\ker P$ this gives $[\tilde{P},\tilde{R}']=0$ for every $\tilde{R}'$ in the range, so $\ker P\subseteq(\mathrm{ran}\,P)^{\perp_{K}}$, and the two sides have the same dimension because the form is non-degenerate, whence equality. Conversely, for the projection onto a non-degenerate $\mathbb{W}$ along $\mathbb{W}^{\perp_{K}}$, writing $\tilde{P}=\tilde{W}+\tilde{S}$ and $\tilde{R}=\tilde{W}'+\tilde{S}'$ gives $[P\tilde{P},\tilde{R}]=[\tilde{W},\tilde{W}']=[\tilde{P},P\tilde{R}]$, so $P^{\dagger}=P$.
 
 **Theorem (Krein-orthogonality is not definite-orthogonality).** The definite-orthogonal projections that commute with $J$ are the Krein-orthogonal projections with $J$-invariant range, and they are a proper subclass: for $\mathbb{W}=\mathbb{C}(e_0+\tfrac12e_1)$, the Krein-orthogonal projection onto $\mathbb{W}$ is $J$-self-adjoint, is not self-adjoint for $\langle\cdot,\cdot\rangle$, and does not commute with $J$.
 

@@ -8,16 +8,16 @@ This article collects the submodule structure of the dual-number algebra $\mathb
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, norm $N(Z) = Z\bar{Z} = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are
 
 $$
-R_{\mathbb{D}'} = R\cdot 1 = \{Z : \bar{Z} = Z\}, \qquad \varepsilon R_{\mathbb{D}'} = \varepsilon R = \{Z : \bar{Z} = -Z\}.
+R_{\mathbb{D}'} = R\cdot 1 = \{A : \bar A = A\}, \qquad \varepsilon R_{\mathbb{D}'} = \varepsilon R = \{A : \bar A = -A\}.
 $$
 
-The scope boundaries are these. This article owns the submodule lattice, the relations among the submodules, and the analysis that the two submodules carry. The ideals and the Peirce-type decomposition belong to *Dual-Numbers Ideals and the Maximal Ideal*; the classification of the zero divisors belongs to *Dual-Numbers Zero Divisors*; limits, continuity and the Cauchy–Riemann system as whole-plane notions belong to *Dual-Numbers Analysis*; the global integration theory belongs to *Dual-Numbers Integration*. The two submodules are treated first as $R$-linear objects and then as the carriers of the differential operators, and the reader is referred elsewhere for their ideal-theoretic role. The second half of the article passes from the algebraic coordinates $a, b$ of the constant coefficients to the analytic coordinates $Z = x + y\varepsilon$ of *Dual-Numbers Analysis*; the change is one of letters only.
+The scope boundaries are these. This article owns the submodule lattice, the relations among the submodules, and the analysis that the two submodules carry. The ideals and the Peirce-type decomposition belong to *Dual-Numbers Ideals and the Maximal Ideal*; the classification of the zero divisors belongs to *Dual-Numbers Zero Divisors*; limits, continuity and the Cauchy–Riemann system as whole-plane notions belong to *Dual-Numbers Analysis*; the global integration theory belongs to *Dual-Numbers Integration*. The two submodules are treated first as $R$-linear objects and then as the carriers of the differential operators, and the reader is referred elsewhere for their ideal-theoretic role. The article uses throughout the corpus coordinates $A = a + \varepsilon a'$; the second half passes from the constant coefficients to the variable element of *Dual-Numbers Analysis*, the change being one of role rather than of letters.
 
 ## The Decompositions
 
@@ -26,17 +26,17 @@ The scope boundaries are these. This article owns the submodule lattice, the rel
 Dual conjugation $\bar{\cdot}$ is an involution of $\mathbb{D}'_R$ with eigenvalues $+1$ and $-1$, and its eigenspace decomposition is
 
 $$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Z = \underbrace{a}_{+1} + \underbrace{\varepsilon b}_{-1}.
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad A = \underbrace{a}_{+1} + \underbrace{\varepsilon a'}_{-1}.
 $$
 
-The two projections are $Z \mapsto \tfrac{1}{2}(Z + \bar{Z}) = \operatorname{Re}(Z)$ and $Z \mapsto \tfrac{1}{2}(Z - \bar{Z}) = \operatorname{Inf}(Z)\varepsilon$.
+The two projections are $A \mapsto \tfrac{1}{2}(A + \bar A) = \operatorname{Re}(A)$ and $A \mapsto \tfrac{1}{2}(A - \bar A) = \operatorname{Inf}(A)\varepsilon$.
 
 ### The Real–Infinitesimal Decomposition
 
 The same decomposition is the **real–infinitesimal decomposition**, written in the coordinates of the basis:
 
 $$
-Z = a + \varepsilon b, \qquad a \in R_{\mathbb{D}'}, \quad \varepsilon b \in \varepsilon R_{\mathbb{D}'}.
+A = a + \varepsilon a', \qquad a \in R_{\mathbb{D}'}, \quad \varepsilon a' \in \varepsilon R_{\mathbb{D}'}.
 $$
 
 It is not a second decomposition but the same one: the two names record the two ways of describing the same pair of eigenspaces.
@@ -47,7 +47,7 @@ The biquaternion algebra carries four conjugations, and their eigenspaces genera
 
 ## The Two Submodules at a Glance
 
-| Submodule | Description | $R$-rank | Generator | Square in itself | Closed under $Z \mapsto \varepsilon Z$ |
+| Submodule | Description | $R$-rank | Generator | Square in itself | Closed under $A \mapsto \varepsilon A$ |
 |---|---|---|---|---|---|
 | $R_{\mathbb{D}'}$ | $+1$-eigenspace of $\bar{\cdot}$ | $1$ | $1$ | yes (it is a subalgebra) | no ($\varepsilon \notin R_{\mathbb{D}'}$) |
 | $\varepsilon R_{\mathbb{D}'}$ | $-1$-eigenspace of $\bar{\cdot}$ | $1$ | $\varepsilon$ | yes (it squares to $0$) | yes (it is an ideal) |
@@ -62,25 +62,25 @@ The two submodules have the same rank, and they differ in every structural respe
 
 ## The Coordinate Blocks
 
-With respect to the basis $(1, \varepsilon)$, the group $\mathbb{D}'_R$ is the free module $R \oplus R$, and a general element is the coordinate pair $(a, b)$:
+With respect to the basis $(1, \varepsilon)$, the group $\mathbb{D}'_R$ is the free module $R \oplus R$, and a general element is the coordinate pair $(a, a')$:
 
 $$
-Z = a + \varepsilon b \;\longleftrightarrow\; (a, b) \in R \oplus R.
+A = a + \varepsilon a' \;\longleftrightarrow\; (a, a') \in R \oplus R.
 $$
 
-The two submodules are the coordinate axes: $R_{\mathbb{D}'} = \{b = 0\}$ and $\varepsilon R_{\mathbb{D}'} = \{a = 0\}$. Multiplication in coordinates is
+The two submodules are the coordinate axes: $R_{\mathbb{D}'} = \{a' = 0\}$ and $\varepsilon R_{\mathbb{D}'} = \{a = 0\}$. Multiplication in coordinates is
 
 $$
-(a, b)(c, d) = (a c,\; a d + b c),
+(a, a')(b, b') = (a b,\; a b' + a' b),
 $$
 
-the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, b) \mapsto (a, -b)$, and the norm is $N(a, b) = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.
+the truncated polynomial product. The conjugation is the coordinatewise sign change $(a, a') \mapsto (a, -a')$, and the norm is $N(a, a') = a^2$, the square of the first coordinate. So the submodule structure is the coordinate structure of the free module $R^2$ together with the diagonal sign action of the involution.
 
 ## The Intersections
 
 **Proposition.** $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$; this is the only intersection of distinct positive-dimensional submodules, and it is the intersection of the two eigenspaces of an involution.
 
-**Proof.** An element of the intersection has $b = 0$ and $a = 0$, hence is $0$.
+**Proof.** An element of the intersection has $a' = 0$ and $a = 0$, hence is $0$.
 
 **Proposition.** The intersections with the maximal ideal are
 
@@ -105,7 +105,7 @@ So the maximal ideal coincides with one of the two submodules and meets the othe
 An $R$-linear involution $s$ that is also an algebra automorphism fixes $1$ and, by the automorphism theorem of *Dual-Numbers Automorphisms and Derivations*, is $\varphi_c$ with $\varphi_c(\varepsilon) = \varepsilon c$ for some $c \in R^\times$; it is an involution exactly when $c^2 = 1$. Over a field (or, more generally, an integral domain) this gives $c = \pm 1$, so the involutions are the sign patterns
 
 $$
-(+,+) : (a, b) \mapsto (a, b) \qquad \text{(identity)}, \qquad (+,-) : (a, b) \mapsto (a, -b) \qquad \text{(dual conjugation)}.
+(+,+) : (a, a') \mapsto (a, a') \qquad \text{(identity)}, \qquad (+,-) : (a, a') \mapsto (a, -a') \qquad \text{(dual conjugation)}.
 $$
 
 There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every unit $c$ with $c^2 = 1$. The biquaternion algebra has four conjugations, whose sign patterns on the six subspaces fill a richer table; the reason for the difference is that $\mathbb{D}'_R$ has only one unit $\varepsilon$ of square zero up to scaling, whereas $\mathbb{B}$ has the two independent quaternion units and the scalar imaginary, giving four independent sign choices.
@@ -119,7 +119,7 @@ There are exactly two over a field, and the second is the unique nontrivial one;
 The operator $E = \varepsilon\cdot$ acts on the two submodules as
 
 $$
-E : R_{\mathbb{D}'} \longrightarrow \varepsilon R_{\mathbb{D}'}, \qquad a \mapsto \varepsilon a, \qquad E : \varepsilon R_{\mathbb{D}'} \longrightarrow 0, \qquad \varepsilon b \mapsto 0.
+E : R_{\mathbb{D}'} \longrightarrow \varepsilon R_{\mathbb{D}'}, \qquad a \mapsto \varepsilon a, \qquad E : \varepsilon R_{\mathbb{D}'} \longrightarrow 0, \qquad \varepsilon a' \mapsto 0.
 $$
 
 So $E$ has $\ker E = \varepsilon R_{\mathbb{D}'}$ and $\operatorname{im}E = \varepsilon R_{\mathbb{D}'}$: the kernel and the image coincide. This is the submodule form of the nilpotence $\mathrm{M}^2 = 0$.
@@ -129,7 +129,7 @@ So $E$ has $\ker E = \varepsilon R_{\mathbb{D}'}$ and $\operatorname{im}E = \var
 The norm is additive on the direct sum and depends only on the first summand:
 
 $$
-N(a + \varepsilon b) = N(a) + N(\varepsilon b) = a^2 + 0 = a^2.
+N(a + \varepsilon a') = N(a) + N(\varepsilon a') = a^2 + 0 = a^2.
 $$
 
 On the two submodules,
@@ -142,7 +142,7 @@ So the norm restricts to a multiplicative form on the real submodule and vanishe
 
 ### The Product and the Bracket
 
-Since $\mathbb{D}'_R$ is commutative, the commutator bracket vanishes: $[Z, W] = ZW - WZ = 0$ for all $Z, W$. The product respects the splits in the sense that
+Since $\mathbb{D}'_R$ is commutative, the commutator bracket vanishes: $[A, B] = AB - BA = 0$ for all $A, B$. The product respects the splits in the sense that
 
 $$
 R_{\mathbb{D}'} \cdot R_{\mathbb{D}'} \subseteq R_{\mathbb{D}'}, \qquad R_{\mathbb{D}'} \cdot \varepsilon R_{\mathbb{D}'} \subseteq \varepsilon R_{\mathbb{D}'}, \qquad \varepsilon R_{\mathbb{D}'} \cdot \varepsilon R_{\mathbb{D}'} = 0.
@@ -154,11 +154,11 @@ So the real submodule is a subalgebra, the infinitesimal submodule is an ideal, 
 
 ### The Decomposition
 
-For $Z = 2 + 3\varepsilon$ the conjugate decomposition is $Z = 2 + 3\varepsilon$ with $2 \in R_{\mathbb{D}'}$ and $3\varepsilon \in \varepsilon R_{\mathbb{D}'}$; the projections are $\tfrac{1}{2}(Z + \bar{Z}) = 2$ and $\tfrac{1}{2}(Z - \bar{Z}) = 3\varepsilon$.
+For $A = 2 + 3\varepsilon$ the conjugate decomposition is $A = 2 + 3\varepsilon$ with $2 \in R_{\mathbb{D}'}$ and $3\varepsilon \in \varepsilon R_{\mathbb{D}'}$; the projections are $\tfrac{1}{2}(A + \bar A) = 2$ and $\tfrac{1}{2}(A - \bar A) = 3\varepsilon$.
 
 ### An Intersection
 
-$R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$: the element $a + \varepsilon b$ lies in both submodules only if $b = 0$ and $a = 0$.
+$R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = \{0\}$: the element $a + \varepsilon a'$ lies in both submodules only if $a' = 0$ and $a = 0$.
 
 ### A Pair That Spans the Algebra
 
@@ -166,17 +166,17 @@ $1 \in R_{\mathbb{D}'}$ and $\varepsilon \in \varepsilon R_{\mathbb{D}'}$ are li
 
 ### A Mixed Element and Its Blocks
 
-For $Z = -4 + \varepsilon$ the blocks are $\operatorname{Re}(Z) = -4$ and $\operatorname{Inf}(Z)\varepsilon = \varepsilon$; the norm is $N(Z) = (-4)^2 = 16$, read from the real block alone.
+For $A = -4 + \varepsilon$ the blocks are $\operatorname{Re}(A) = -4$ and $\operatorname{Inf}(A)\varepsilon = \varepsilon$; the norm is $N(A) = (-4)^2 = 16$, read from the real block alone.
 
 ## The Analytic Coordinates
 
-The remainder of the article reads the two submodules as the carriers of the differential operators, and for that it uses the analytic coordinates of *Dual-Numbers Analysis* in place of the algebraic pair $a, b$: a variable dual number is written
+The remainder of the article reads the two submodules as the carriers of the differential operators, and for that it uses a variable dual number in the corpus coordinates of *Dual-Numbers Analysis*:
 
 $$
-Z = x + y\varepsilon, \qquad x, y \in \mathbb{R},
+A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
 $$
 
-with $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$; the algebraic articles keep $a, b$ for the constant coefficients. The augmentation is $\pi(Z) = x$, the maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R} = \{x = 0\}$, and the two distinguished submodules are $R_{\mathbb{D}'} = \{y = 0\}$ and $\varepsilon R_{\mathbb{D}'} = \mathrm{M} = \{x = 0\}$. A function is written
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$. The augmentation is $\pi(A) = a$, the maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R} = \{a = 0\}$, and the two distinguished submodules are $R_{\mathbb{D}'} = \{a' = 0\}$ and $\varepsilon R_{\mathbb{D}'} = \mathrm{M} = \{a = 0\}$. A function is written
 
 $$
 f = u + v\varepsilon, \qquad u, v : U \to \mathbb{R},
@@ -188,26 +188,26 @@ on an open set $U \subseteq \mathbb{D}'$, its two components real-valued.
 
 ### The Two Partial Derivatives
 
-The algebra $\mathbb{D}'$ is $\mathbb{R}^2$ with the coordinates $(x, y)$ of $Z = x + y\varepsilon$. On smooth functions the **coordinate operators** are
+The algebra $\mathbb{D}'$ is $\mathbb{R}^2$ with the coordinates $(a, a')$ of $A = a + \varepsilon a'$. On smooth functions the **coordinate operators** are
 
 $$
-\partial_x = \frac{\partial}{\partial x}, \qquad \partial_y = \frac{\partial}{\partial y},
+\partial_a = \frac{\partial}{\partial a}, \qquad \partial_{a'} = \frac{\partial}{\partial a'},
 $$
 
 acting componentwise: for $f = u + v\varepsilon$,
 
 $$
-\partial_x f = u_x + v_x \varepsilon, \qquad \partial_y f = u_y + v_y \varepsilon.
+\partial_a f = u_a + v_a \varepsilon, \qquad \partial_{a'} f = u_{a'} + v_{a'} \varepsilon.
 $$
 
-Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial_x, \partial_y] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{D}'$ is a multiple of $\partial_\varepsilon$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial_x$ and $\partial_y$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
+Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial_a, \partial_{a'}] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{D}'$ is a multiple of $\partial_\varepsilon$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial_a$ and $\partial_{a'}$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
 
 ### Restriction to the Submodules
 
 The two submodules carry the two coordinate directions, and the operators restrict to them as follows.
 
-- Along $R_{\mathbb{D}'} = \{y = 0\}$ the operator $\partial_x$ acts as the ordinary derivative $d/dx$; the restriction of $f$ to $R_{\mathbb{D}'}$ is the function $u(x, 0)$.
-- Along $\varepsilon R_{\mathbb{D}'} = \{x = 0\}$ the operator $\partial_y$ acts as the ordinary derivative $d/dy$; the restriction of $f$ to $\varepsilon R_{\mathbb{D}'}$ is the function $v(0, y)\varepsilon$.
+- Along $R_{\mathbb{D}'} = \{a' = 0\}$ the operator $\partial_a$ acts as the ordinary derivative $d/da$; the restriction of $f$ to $R_{\mathbb{D}'}$ is the function $u(a, 0)$.
+- Along $\varepsilon R_{\mathbb{D}'} = \{a = 0\}$ the operator $\partial_{a'}$ acts as the ordinary derivative $d/da'$; the restriction of $f$ to $\varepsilon R_{\mathbb{D}'}$ is the function $v(0, a')\varepsilon$.
 - Both coordinate operators preserve the summands, each sending the real part into the real part and the infinitesimal part into the infinitesimal part; neither mixes the two submodules, because the coordinates separate them.
 
 The two restrictions of a function are therefore independent, and a function on the dual plane is the same datum as a pair of functions on the two lines together with the off-line values.
@@ -217,16 +217,16 @@ The two restrictions of a function are therefore independent, and a function on 
 Multiplication by $\varepsilon$ is the nilpotent endomorphism $E$ introduced above, and it commutes with every coordinate operator. Hence the operator
 
 $$
-E\,\partial_x = \varepsilon\,\partial_x
+E\,\partial_a = \varepsilon\,\partial_a
 $$
 
 is **nilpotent of index two**:
 
 $$
-(\varepsilon\,\partial_x)^2 = \varepsilon^2\,\partial_x^2 = 0,
+(\varepsilon\,\partial_a)^2 = \varepsilon^2\,\partial_a^2 = 0,
 $$
 
-as an operator on smooth functions, because the scalar $\varepsilon^2 = 0$. The operator $\varepsilon\,\partial_x$ annihilates the real part of a function and differentiates its infinitesimal part, and it is the nilpotent component of every operator below.
+as an operator on smooth functions, because the scalar $\varepsilon^2 = 0$. The operator $\varepsilon\,\partial_a$ annihilates the real part of a function and differentiates its infinitesimal part, and it is the nilpotent component of every operator below.
 
 ## The Cauchy–Riemann Operator
 
@@ -235,44 +235,44 @@ as an operator on smooth functions, because the scalar $\varepsilon^2 = 0$. The 
 **Definition.** The **Cauchy–Riemann operator** of the dual algebra is
 
 $$
-\bar{\partial} = \partial_y - \varepsilon\,\partial_x.
+\bar{\partial} = \partial_{a'} - \varepsilon\,\partial_a.
 $$
 
-It is the sum of the real operator $\partial_y$ and the nilpotent operator $-\varepsilon\,\partial_x$:
+It is the sum of the real operator $\partial_{a'}$ and the nilpotent operator $-\varepsilon\,\partial_a$:
 
 $$
-\bar{\partial} = \underbrace{\partial_y}_{\text{real part}} \;-\; \underbrace{\varepsilon\,\partial_x}_{\text{nilpotent component}}.
+\bar{\partial} = \underbrace{\partial_{a'}}_{\text{real part}} \;-\; \underbrace{\varepsilon\,\partial_a}_{\text{nilpotent component}}.
 $$
 
 **Proposition.** Applied to $f = u + v\varepsilon$,
 
 $$
-\bar{\partial} f = u_y + \bigl(v_y - u_x\bigr)\varepsilon.
+\bar{\partial} f = u_{a'} + \bigl(v_{a'} - u_a\bigr)\varepsilon.
 $$
 
-**Proof.** $\partial_y f = u_y + v_y \varepsilon$ and $\varepsilon\partial_x f = \varepsilon u_x$.
+**Proof.** $\partial_{a'} f = u_{a'} + v_{a'} \varepsilon$ and $\varepsilon\partial_a f = \varepsilon u_a$.
 
 ### The Regularity Equations
 
 **Theorem.** $f = u + v\varepsilon$ is dual differentiable, that is $\bar{\partial} f = 0$, if and only if $u$ and $v$ satisfy
 
 $$
-u_y = 0, \qquad v_y = u_x.
+u_{a'} = 0, \qquad v_{a'} = u_a.
 $$
 
-**Proof.** Both components of $\bar{\partial} f = u_y + (v_y - u_x)\varepsilon$ must vanish.
+**Proof.** Both components of $\bar{\partial} f = u_{a'} + (v_{a'} - u_a)\varepsilon$ must vanish.
 
-These are the dual Cauchy–Riemann equations of *Dual-Numbers Analysis*, and the theorem above is their operator form. The equation $u_y = 0$ is the vanishing of the real part of the operator, and the equation $v_y = u_x$ is the vanishing of its nilpotent component; the nilpotent component of $\bar{\partial}$ couples the two submodules, since it differentiates the real part and places the result in the infinitesimal part.
+These are the dual Cauchy–Riemann equations of *Dual-Numbers Analysis*, and the theorem above is their operator form. The equation $u_{a'} = 0$ is the vanishing of the real part of the operator, and the equation $v_{a'} = u_a$ is the vanishing of its nilpotent component; the nilpotent component of $\bar{\partial}$ couples the two submodules, since it differentiates the real part and places the result in the infinitesimal part.
 
 ### The Nilpotent Component Is the Only Coupling
 
-Since $\partial_y$ preserves the submodule decomposition and $\varepsilon\,\partial_x$ is the only term that moves the real part into the infinitesimal part, the equation $v_y = u_x$ is exactly the statement that the infinitesimal part of a regular function is generated from the real part. A regular function is therefore determined by its restriction to the real submodule together with one further function of one variable:
+Since $\partial_{a'}$ preserves the submodule decomposition and $\varepsilon\,\partial_a$ is the only term that moves the real part into the infinitesimal part, the equation $v_{a'} = u_a$ is exactly the statement that the infinitesimal part of a regular function is generated from the real part. A regular function is therefore determined by its restriction to the real submodule together with one further function of one variable:
 
 $$
-f(x + y\varepsilon) = u(x) + \bigl(y\,u'(x) + c(x)\bigr)\varepsilon,
+f(a + \varepsilon a') = u(a) + \bigl(a'\,u'(a) + c(a)\bigr)\varepsilon,
 $$
 
-where $u$ and $c$ are ordinary differentiable functions of $x$. The formula is that of *Dual-Numbers Analysis*, restated as a statement about the two submodules: the restriction of $f$ to $R_{\mathbb{D}'}$ is $u$, and the slope of its restriction to the fibre $\pi^{-1}(x)$ along the infinitesimal direction is $u'(x)$.
+where $u$ and $c$ are ordinary differentiable functions of $a$. The formula is that of *Dual-Numbers Analysis*, restated as a statement about the two submodules: the restriction of $f$ to $R_{\mathbb{D}'}$ is $u$, and the slope of its restriction to the fibre $\pi^{-1}(a)$ along the infinitesimal direction is $u'(a)$.
 
 ## The Reduction to the Real Line
 
@@ -284,20 +284,20 @@ $$
 \mathbb{D}' = \mathbb{R} \oplus \eta\,\mathbb{R}, \qquad \eta^2 = 0,
 $$
 
-in the variable $\eta = \varepsilon$, and the first-order neighbourhood of a point $x \in R_{\mathbb{D}'}$ is the fibre $x + \mathrm{M} = \{x + y\varepsilon : y \in \mathbb{R}\}$.
+in the variable $\eta = \varepsilon$, and the first-order neighbourhood of a point $a \in R_{\mathbb{D}'}$ is the fibre $a + \mathrm{M} = \{a + \varepsilon a' : a' \in \mathbb{R}\}$.
 
 ### The Taylor Truncation Is Exact
 
 For a smooth function $g : \mathbb{R} \to \mathbb{R}$ the extension to the first-order neighbourhood is
 
 $$
-g(x + y\varepsilon) = g(x) + y\,g'(x)\,\varepsilon,
+g(a + \varepsilon a') = g(a) + a'\,g'(a)\,\varepsilon,
 $$
 
 exact because $\varepsilon^2 = 0$: the Taylor series of $g$ terminates at its first-order term. The same statement for the whole dual algebra is that the differential of $g$ is recovered from the first-order part,
 
 $$
-g'(x) = \operatorname{Inf}\bigl(g(x + \varepsilon)\bigr),
+g'(a) = \operatorname{Inf}\bigl(g(a + \varepsilon)\bigr),
 $$
 
 so that the first-order neighbourhood of $\mathbb{R}$ is the algebraic model of the derivative.
@@ -306,7 +306,7 @@ so that the first-order neighbourhood of $\mathbb{R}$ is the algebraic model of 
 
 **Theorem.** A regular function $f$ on an open set $U \subseteq \mathbb{D}'$ is determined by its restriction to $U \cap R_{\mathbb{D}'}$ and the restriction of its infinitesimal part to one transversal to the infinitesimal direction, that is by two ordinary functions of one real variable.
 
-**Proof.** By the structure formula $f(x + y\varepsilon) = u(x) + (y\,u'(x) + c(x))\varepsilon$, the pair $(u, c)$ of functions of $x$ determines $f$, and $f$ restricts to $u$ on $R_{\mathbb{D}'}$ and to $c(x)\varepsilon$ on the section $y = 0$ of the infinitesimal direction.
+**Proof.** By the structure formula $f(a + \varepsilon a') = u(a) + (a'\,u'(a) + c(a))\varepsilon$, the pair $(u, c)$ of functions of $a$ determines $f$, and $f$ restricts to $u$ on $R_{\mathbb{D}'}$ and to $c(a)\varepsilon$ on the section $a' = 0$ of the infinitesimal direction.
 
 So the analysis of the dual algebra reduces to the analysis of the real line together with its first-order neighbourhood, and it never reduces to a pair of independent real analyses as in the split complex case below.
 
@@ -317,18 +317,18 @@ So the analysis of the dual algebra reduces to the analysis of the real line tog
 Define the **dual Laplacian**
 
 $$
-\Delta = \partial_x^2 + \partial_y^2, \qquad \Delta f = u_{xx} + u_{yy} + \bigl(v_{xx} + v_{yy}\bigr)\varepsilon.
+\Delta = \partial_a^2 + \partial_{a'}^2, \qquad \Delta f = u_{aa} + u_{a'a'} + \bigl(v_{aa} + v_{a'a'}\bigr)\varepsilon.
 $$
 
-**Proposition.** For a regular function $f(x + y\varepsilon) = u(x) + (y\,u'(x) + c(x))\varepsilon$,
+**Proposition.** For a regular function $f(a + \varepsilon a') = u(a) + (a'\,u'(a) + c(a))\varepsilon$,
 
 $$
-\Delta f = u''(x) + \bigl(u'''(x) y + c''(x)\bigr)\varepsilon,
+\Delta f = u''(a) + \bigl(u'''(a)\,a' + c''(a)\bigr)\varepsilon,
 $$
 
-which is not zero unless $u$ and $c$ are affine in $x$.
+which is not zero unless $u$ and $c$ are affine in $a$.
 
-**Proof.** $u_{yy} = 0$ and $v = y u' + c$ has $v_{xx} = y u''' + c''$ and $v_{yy} = 0$; collecting gives the display.
+**Proof.** $u_{a'a'} = 0$ and $v = a' u' + c$ has $v_{aa} = a' u''' + c''$ and $v_{a'a'} = 0$; collecting gives the display.
 
 So regularity does not imply harmonicity: a regular function is not harmonic unless $u$ and $c$ are affine, in contrast with the complex case, where holomorphic functions are harmonic.
 
@@ -337,33 +337,33 @@ So regularity does not imply harmonicity: a regular function is not harmonic unl
 In complex analysis the Laplacian factors through the two Wirtinger operators,
 
 $$
-\Delta = 4\,\frac{\partial}{\partial z}\,\frac{\partial}{\partial \bar{z}},
+\Delta = 4\,\frac{\partial}{\partial A}\,\frac{\partial}{\partial \bar{A}},
 $$
 
-and this factorisation is the reason holomorphic functions are harmonic. In the dual algebra the corresponding operators are $\partial_x$ and $\bar{\partial} = \partial_y - \varepsilon\partial_x$, and
+and this factorisation is the reason holomorphic functions are harmonic. In the dual algebra the corresponding operators are $\partial_a$ and $\bar{\partial} = \partial_{a'} - \varepsilon\partial_a$, and
 
 $$
-\partial_x \bar{\partial} = \partial_x \partial_y - \varepsilon\,\partial_x^2 = \partial_{xy} - \varepsilon\,\partial_x^2,
+\partial_a \bar{\partial} = \partial_a \partial_{a'} - \varepsilon\,\partial_a^2 = \partial_a\partial_{a'} - \varepsilon\,\partial_a^2,
 $$
 
-which is not $\Delta$ in any sign, and cannot be brought into the form $\partial_{xx} + \partial_{yy}$ by any choice of the two first-order factors. The reason is the degeneracy: the two complex Wirtinger operators $\partial_z$, $\partial_{\bar z}$ are conjugates of one another and their product recovers a positive form, whereas here the conjugate of $\bar{\partial}$ in the sense of dual conjugation changes the sign of the nilpotent term only,
+which is not $\Delta$ in any sign, and cannot be brought into the form $\partial_{aa} + \partial_{a'a'}$ by any choice of the two first-order factors. The reason is the degeneracy: the two complex Wirtinger operators $\partial_A$, $\partial_{\bar A}$ are conjugates of one another and their product recovers a positive form, whereas here the conjugate of $\bar{\partial}$ in the sense of dual conjugation changes the sign of the nilpotent term only,
 
 $$
-\overline{\bar{\partial}} = \partial_y + \varepsilon\,\partial_x,
+\overline{\bar{\partial}} = \partial_{a'} + \varepsilon\,\partial_a,
 $$
 
-and the product $\bar{\partial}\,\overline{\bar{\partial}} = \partial_y^2 - \varepsilon^2 \partial_x^2 = \partial_y^2$ has lost the real direction entirely, because $\varepsilon^2 = 0$. So there is no factorisation of $\Delta$ into dual-conjugate first-order operators and no harmonicity theorem.
+and the product $\bar{\partial}\,\overline{\bar{\partial}} = \partial_{a'}^2 - \varepsilon^2 \partial_a^2 = \partial_{a'}^2$ has lost the real direction entirely, because $\varepsilon^2 = 0$. So there is no factorisation of $\Delta$ into dual-conjugate first-order operators and no harmonicity theorem.
 
 ### The Ellipticity Failure
 
-The principal symbol of $\bar{\partial}$ is $\xi_y - \varepsilon\xi_x$; it vanishes on the covectors with $\xi_y = 0$ and $\varepsilon\xi_x = 0$, that is, on the whole co-normal direction of the infinitesimal line. The operator is therefore not elliptic, and it has no fundamental solution with the decay properties of the complex case. This is the operator form of the fact that the norm is degenerate: the direction of the radical is exactly the direction on which the principal symbol vanishes.
+The principal symbol of $\bar{\partial}$ is $\xi_{a'} - \varepsilon\xi_a$; it vanishes on the covectors with $\xi_{a'} = 0$ and $\varepsilon\xi_a = 0$, that is, on the whole co-normal direction of the infinitesimal line. The operator is therefore not elliptic, and it has no fundamental solution with the decay properties of the complex case. This is the operator form of the fact that the norm is degenerate: the direction of the radical is exactly the direction on which the principal symbol vanishes.
 
 ## The Role of the Maximal Ideal
 
 The maximal ideal is the nilpotent direction of the whole analysis.
 
-- It is the **kernel of the augmentation** $\pi(x + y\varepsilon) = x$, so it measures the failure of a dual number to be real.
-- It is the **image of the nilpotent component** $\varepsilon\,\partial_x$: differentiating the real part and multiplying by $\varepsilon$ lands in the infinitesimal submodule, and the operator is nilpotent only because $\mathrm{M}^2 = 0$.
+- It is the **kernel of the augmentation** $\pi(a + \varepsilon a') = a$, so it measures the failure of a dual number to be real.
+- It is the **image of the nilpotent component** $\varepsilon\,\partial_a$: differentiating the real part and multiplying by $\varepsilon$ lands in the infinitesimal submodule, and the operator is nilpotent only because $\mathrm{M}^2 = 0$.
 - It is the **radical of the norm**, and hence the direction on which the principal symbol of $\bar{\partial}$ vanishes and ellipticity is lost.
 - It is the **first-order neighbourhood** of the origin, and hence the direction in which the Taylor series terminates at first order.
 
@@ -376,17 +376,17 @@ So the maximal ideal controls the operator theory, the harmonicity theory and th
 The restriction of the analysis to the real submodule is the ordinary real analysis: for $f$ with restriction $u$ to $R_{\mathbb{D}'}$,
 
 $$
-\int_a^b f(x)\,\mathrm{d}x = \int_a^b u(x)\,\mathrm{d}x,
+\int_a^b f(a)\,\mathrm{d}a = \int_a^b u(a)\,\mathrm{d}a,
 $$
 
 and the fundamental theorem of calculus holds on the real line. This is the ordinary real analysis carried by the subalgebra $R_{\mathbb{D}'}$.
 
 ### Along the Fibre
 
-On a fibre $x + \mathrm{M} = \{x + y\varepsilon : y \in [0, 1]\}$ of the augmentation, the restriction of $f = u + v\varepsilon$ to the fibre is affine in $y$ when $f$ is regular, and the fibre integral is the average
+On a fibre $a + \mathrm{M} = \{a + \varepsilon a' : a' \in [0, 1]\}$ of the augmentation, the restriction of $f = u + v\varepsilon$ to the fibre is affine in $a'$ when $f$ is regular, and the fibre integral is the average
 
 $$
-\int_0^1 f(x + y\varepsilon)\,\mathrm{d}y = u(x) + \Bigl(\tfrac{1}{2}u'(x) + c(x)\Bigr)\varepsilon,
+\int_0^1 f(a + \varepsilon a')\,\mathrm{d}a' = u(a) + \Bigl(\tfrac{1}{2}u'(a) + c(a)\Bigr)\varepsilon,
 $$
 
 obtained by integrating the two summands of $f$ separately. The real part of the fibre integral is the value of $u$, and the infinitesimal part is the value of the primitive, so the two submodule restrictions integrate independently.
@@ -405,8 +405,8 @@ The dual algebra has only the idempotent $1$, so the two-component splitting is 
 |---|---|---|
 | Idempotents | two, $\pi_\pm$ | one, $1$ |
 | Decomposition | $\mathbb{R} \oplus \mathbb{R}$, two lines | $\mathbb{R} \oplus \varepsilon\mathbb{R}$, line plus first-order neighbourhood |
-| First-order operators | two, one per component | $\partial_x$, $\partial_y$, coupled by $\varepsilon\partial_x$ |
-| Cauchy–Riemann system | two independent real equations | $u_y = 0$, $v_y = u_x$ |
+| First-order operators | two, one per component | $\partial_a$, $\partial_{a'}$, coupled by $\varepsilon\partial_a$ |
+| Cauchy–Riemann system | two independent real equations | $u_{a'} = 0$, $v_{a'} = u_a$ |
 | Laplacian factorisation | yes, componentwise | no |
 | Reduction of the analysis | two independent real analyses | real line plus its first-order neighbourhood |
 
@@ -420,7 +420,7 @@ $$
 
 the real and infinitesimal submodules, of $R$-rank one each. The only intersection of the two positive-dimensional submodules is $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = 0$, and their sum is the whole algebra; the maximal ideal $\mathrm{M} = \varepsilon R_{\mathbb{D}'}$ coincides with the infinitesimal submodule and meets the real submodule only at the origin. Multiplication by $\varepsilon$ has kernel and image both equal to $\varepsilon R_{\mathbb{D}'}$, the submodule form of $\mathrm{M}^2 = 0$; the norm restricts multiplicatively to $R_{\mathbb{D}'}$ and vanishes on $\varepsilon R_{\mathbb{D}'}$. The lattice of six subspaces that organizes the biquaternion article has no analogue here: with a single nontrivial involution there are only two submodules and the two sign patterns $(+,+)$ and $(+,-)$, so a six-subspace lattice is unavailable for structural reasons and not for lack of interest.
 
-The differential operators of the dual algebra act on the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ as the coordinate operators $\partial_x$ and $\partial_y$, and the Cauchy–Riemann operator $\bar{\partial} = \partial_y - \varepsilon\partial_x$ is the sum of the real operator $\partial_y$ and the nilpotent component $\varepsilon\partial_x$, nilpotent of index two because $\varepsilon^2 = 0$. Regularity is the pair of equations $u_y = 0$, $v_y = u_x$, and a regular function is determined by two ordinary functions of one variable, $f(x + y\varepsilon) = u(x) + (y\,u'(x) + c(x))\varepsilon$. The reduction of the analysis is to the real line and its first-order neighbourhood: the infinitesimal submodule is the first-order neighbourhood of the origin, and the extension of a function of one variable to it is the exact first-order Taylor truncation $g(x + y\varepsilon) = g(x) + y\,g'(x)\varepsilon$. The maximal ideal controls everything at once — it is the kernel of the augmentation, the image of the nilpotent component, the radical of the norm and the first-order neighbourhood — and every degeneracy is the single fact $\mathrm{M}^2 = 0$. Two consequences are established: the dual Laplacian does not imply harmonicity of regular functions, and it admits no factorisation into dual-conjugate first-order operators, in contrast with the complex case; and the principal symbol of $\bar{\partial}$ vanishes on the co-normal of the infinitesimal line, so the operator is not elliptic. Integration on the submodules is the ordinary integral on the real line together with the fibre average on the first-order neighbourhood. Compared with the split complex case, where the analysis splits into two independent real analyses, the dual analysis reduces to one real line and one nilpotent direction, the two components being coupled through the nilpotent component rather than separated.
+The differential operators of the dual algebra act on the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ as the coordinate operators $\partial_a$ and $\partial_{a'}$, and the Cauchy–Riemann operator $\bar{\partial} = \partial_{a'} - \varepsilon\partial_a$ is the sum of the real operator $\partial_{a'}$ and the nilpotent component $\varepsilon\partial_a$, nilpotent of index two because $\varepsilon^2 = 0$. Regularity is the pair of equations $u_{a'} = 0$, $v_{a'} = u_a$, and a regular function is determined by two ordinary functions of one variable, $f(a + \varepsilon a') = u(a) + (a'\,u'(a) + c(a))\varepsilon$. The reduction of the analysis is to the real line and its first-order neighbourhood: the infinitesimal submodule is the first-order neighbourhood of the origin, and the extension of a function of one variable to it is the exact first-order Taylor truncation $g(a + \varepsilon a') = g(a) + a'\,g'(a)\varepsilon$. The maximal ideal controls everything at once — it is the kernel of the augmentation, the image of the nilpotent component, the radical of the norm and the first-order neighbourhood — and every degeneracy is the single fact $\mathrm{M}^2 = 0$. Two consequences are established: the dual Laplacian does not imply harmonicity of regular functions, and it admits no factorisation into dual-conjugate first-order operators, in contrast with the complex case; and the principal symbol of $\bar{\partial}$ vanishes on the co-normal of the infinitesimal line, so the operator is not elliptic. Integration on the submodules is the ordinary integral on the real line together with the fibre average on the first-order neighbourhood. Compared with the split complex case, where the analysis splits into two independent real analyses, the dual analysis reduces to one real line and one nilpotent direction, the two components being coupled through the nilpotent component rather than separated.
 
 ## Summary of Notation
 
@@ -428,23 +428,23 @@ The differential operators of the dual algebra act on the two submodules $R_{\ma
 |---|---|
 | $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
 | $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
-| $Z = a + \varepsilon b$ | General dual number, algebraic coordinates |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $\bar{Z} = a - \varepsilon b$ | Dual conjugation, the unique nontrivial involution |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $\bar{A} = a - \varepsilon a'$ | Dual conjugation, the unique nontrivial involution |
 | $R_{\mathbb{D}'} = R\cdot 1$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
 | $\varepsilon R_{\mathbb{D}'} = \varepsilon R$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, equal to $\varepsilon R_{\mathbb{D}'}$ and to the first-order neighbourhood |
-| $N(Z) = a^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{D}'}$, radical $\mathrm{M}$ |
+| $N(A) = a^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{D}'}$, radical $\mathrm{M}$ |
 | $E = \varepsilon\cdot$ | Nilpotent operator, $\ker E = \operatorname{im}E = \varepsilon R_{\mathbb{D}'}$ |
-| $Z = x + y\varepsilon$ | The dual variable in the analytic coordinates, $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$ |
-| $\pi(Z) = x$ | Augmentation, kernel $\mathrm{M}$ |
+| $A = a + \varepsilon a'$ | The dual variable, in the algebraic and the analytic reading alike, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ |
+| $\pi(A) = a$ | Augmentation, kernel $\mathrm{M}$ |
 | $f = u + v\varepsilon$ | Function of the dual variable, $u, v$ real-valued |
-| $\partial_x$, $\partial_y$ | Coordinate operators, $[\partial_x, \partial_y] = 0$ |
-| $\varepsilon\,\partial_x$ | Nilpotent component, $(\varepsilon\,\partial_x)^2 = 0$ |
-| $\bar{\partial} = \partial_y - \varepsilon\,\partial_x$ | Cauchy–Riemann operator |
-| $\overline{\bar{\partial}} = \partial_y + \varepsilon\,\partial_x$ | Its dual conjugate |
-| $\Delta = \partial_x^2 + \partial_y^2$ | Dual Laplacian, no factorisation |
-| $g(x + y\varepsilon) = g(x) + y\,g'(x)\varepsilon$ | First-order Taylor truncation, exact |
+| $\partial_a$, $\partial_{a'}$ | Coordinate operators, $[\partial_a, \partial_{a'}] = 0$ |
+| $\varepsilon\,\partial_a$ | Nilpotent component, $(\varepsilon\,\partial_a)^2 = 0$ |
+| $\bar{\partial} = \partial_{a'} - \varepsilon\,\partial_a$ | Cauchy–Riemann operator |
+| $\overline{\bar{\partial}} = \partial_{a'} + \varepsilon\,\partial_a$ | Its dual conjugate |
+| $\Delta = \partial_a^2 + \partial_{a'}^2$ | Dual Laplacian, no factorisation |
+| $g(a + \varepsilon a') = g(a) + a'\,g'(a)\varepsilon$ | First-order Taylor truncation, exact |
 | $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex algebra, the comparison case |
 
 ## Further Reading

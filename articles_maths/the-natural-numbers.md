@@ -61,7 +61,7 @@ $$
 
 **Theorem.** $\mathbb{N}$ is **well ordered**: every nonempty subset $A \subseteq \mathbb{N}$ has a least element. Consequently there is no infinite descending sequence $n_0 > n_1 > n_2 > \cdots$ in $\mathbb{N}$, and the three principles — induction, strong induction, and well ordering — are equivalent.
 
-**Proof.** Let $A$ be nonempty and suppose it has no least element; let $B$ be the set of $n$ below every element of $A$, that is, $n < a$ for all $a \in A$. Then $0 \in B$ because otherwise $0 \in A$ would be a least element, and $B$ is closed under $S$ because if $S(n) \in A$ then $n \in B$ and $S(n)$ would be least; hence $B = \mathbb{N}$ by induction, so $A$ is empty, a contradiction. The equivalence of the three principles is standard: well ordering gives strong induction by considering the set of counterexamples, and strong induction gives ordinary induction trivially.
+**Proof.** Let $A$ be nonempty and suppose it has no least element; let $B$ be the set of $n$ below every element of $A$, that is, $n < m$ for all $m \in A$. Then $0 \in B$ because otherwise $0 \in A$ would be a least element, and $B$ is closed under $S$ because if $S(n) \in A$ then $n \in B$ and $S(n)$ would be least; hence $B = \mathbb{N}$ by induction, so $A$ is empty, a contradiction. The equivalence of the three principles is standard: well ordering gives strong induction by considering the set of counterexamples, and strong induction gives ordinary induction trivially.
 
 ## Arithmetic in $\mathbb{N}$
 
@@ -103,23 +103,23 @@ Thus $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity.
 
 ### The Multiplicative Structure
 
-**Definition.** For $a, b \in \mathbb{N}$ one writes $a \mid b$ if there is $c$ with $b = ac$. The **units** of $\mathbb{N}$ are the divisors of $1$, namely $1$. A natural number $p > 1$ is **prime** if its only divisors are $1$ and $p$, and **composite** otherwise.
+**Definition.** For $n, m \in \mathbb{N}$ one writes $n \mid m$ if there is $k$ with $m = nk$. The **units** of $\mathbb{N}$ are the divisors of $1$, namely $1$. A natural number $p > 1$ is **prime** if its only divisors are $1$ and $p$, and **composite** otherwise.
 
-**Theorem (division algorithm).** For all $a, b \in \mathbb{N}$ with $b \neq 0$ there are unique $q, r \in \mathbb{N}$ with
+**Theorem (division algorithm).** For all $n, m \in \mathbb{N}$ with $m \neq 0$ there are unique $q, r \in \mathbb{N}$ with
 
 $$
-a = qb + r, \qquad 0 \leq r < b .
+n = qm + r, \qquad 0 \leq r < m .
 $$
 
-**Proof.** Existence by induction on $a$: if $a < b$ take $q = 0$, $r = a$; otherwise $a \geq b$, so $a = a' + 1 = a' + b\cdot 0 + 1$; if $a' = q'b + r'$ with $r' < b$ then $a = q'b + (r'+1)$ and either $r'+1 < b$ or $r' + 1 = b$, in which case $a = (q'+1)b + 0$. Uniqueness: if $qb + r = q'b + r'$ with $r, r' < b$, then $b \mid r - r'$ and $\lvert r - r'\rvert < b$, so $r = r'$ and then $q = q'$ by cancellation.
+**Proof.** Existence by induction on $n$: if $n < m$ take $q = 0$, $r = n$; otherwise $n \geq m$, so $n = n' + 1 = n' + m\cdot 0 + 1$; if $n' = q'm + r'$ with $r' < m$ then $n = q'm + (r'+1)$ and either $r'+1 < m$ or $r' + 1 = m$, in which case $n = (q'+1)m + 0$. Uniqueness: if $qm + r = q'm + r'$ with $r, r' < m$, then $m \mid r - r'$ and $\lvert r - r'\rvert < m$, so $r = r'$ and then $q = q'$ by cancellation.
 
-**Theorem (Euclid).** Every pair $a, b \in \mathbb{N}$ not both zero has a greatest common divisor $d$, and there are integers $u, v$ with $ua + vb = d$; the Euclidean algorithm computes $d$ and terminates. In particular $a$ and $b$ are **coprime** exactly when $ua + vb = 1$ for some integers $u, v$.
+**Theorem (Euclid).** Every pair $n, m \in \mathbb{N}$ not both zero has a greatest common divisor $d$, and there are integers $u, v$ with $un + vm = d$; the Euclidean algorithm computes $d$ and terminates. In particular $n$ and $m$ are **coprime** exactly when $un + vm = 1$ for some integers $u, v$.
 
-**Proof.** The Euclidean algorithm is the iterated division algorithm applied to $(a,b)$, and termination is by the well-ordering of $\mathbb{N}$, since the remainders strictly decrease. The Bézout identity is the standard back-substitution, and the gcd properties follow from it; the details are in *GCD Domains*.
+**Proof.** The Euclidean algorithm is the iterated division algorithm applied to $(n,m)$, and termination is by the well-ordering of $\mathbb{N}$, since the remainders strictly decrease. The Bézout identity is the standard back-substitution, and the gcd properties follow from it; the details are in *GCD Domains*.
 
 **Theorem (fundamental theorem of arithmetic).** Every natural number $n > 1$ has a factorization $n = p_1 p_2 \cdots p_k$ into primes, unique up to the order of the factors.
 
-**Proof.** Existence by strong induction: if $n$ is not prime it has a factorization $n = ab$ with $a, b < n$, and the induction hypothesis factors $a$ and $b$. Uniqueness by the standard argument using Euclid's lemma: if $p$ is prime and $p \mid ab$ then $p \mid a$ or $p \mid b$, which follows from the Bézout identity $up + va = 1$ for $p \nmid a$ by multiplying by $b$. The full argument is in *Unique Factorisation Domains*.
+**Proof.** Existence by strong induction: if $n$ is not prime it has a factorization $n = m_1 m_2$ with $m_1, m_2 < n$, and the induction hypothesis factors $m_1$ and $m_2$. Uniqueness by the standard argument using Euclid's lemma: if $p$ is prime and $p \mid nm$ then $p \mid n$ or $p \mid m$, which follows from the Bézout identity $up + vn = 1$ for $p \nmid n$ by multiplying by $m$. The full argument is in *Unique Factorisation Domains*.
 
 **Corollary.** $(\mathbb{N}\setminus\{0\}, \cdot, 1)$ is the free commutative monoid on the set of primes: every positive natural number has a unique expression $\prod_p p^{v_p(n)}$ with $v_p(n) \in \mathbb{N}$ and only finitely many exponents nonzero. Its group of fractions is the multiplicative group $\mathbb{Q}^\times$ of *The Rational Numbers*.
 
@@ -149,10 +149,10 @@ $\mathbb{N}$ is the base of the ladder of Part V, and each later system is obtai
 
 | System | Adjoined structure | What fails in $\mathbb{N}$ |
 |---|---|---|
-| $\mathbb{Z}$ | additive inverses | no solution to $x + 1 = 0$ |
-| $\mathbb{Q}$ | multiplicative inverses | no solution to $2x = 1$ |
-| $\mathbb{R}$ | order-completeness | no supremum for $\{x : x^2 < 2\}$ |
-| $\mathbb{C}$ | algebraic closure | no root of $x^2 + 1$ |
+| $\mathbb{Z}$ | additive inverses | no solution to $n + 1 = 0$ |
+| $\mathbb{Q}$ | multiplicative inverses | no solution to $2n = 1$ |
+| $\mathbb{R}$ | order-completeness | no supremum for $\{n : n^2 < 2\}$ |
+| $\mathbb{C}$ | algebraic closure | no root of $n^2 + 1$ |
 
 The table is the ladder of Part V read from its base, and the additions are cumulative: $\mathbb{Z}$ is the ring of fractions of the additive monoid $\mathbb{N}$ in the sense of Grothendieck, $\mathbb{Q}$ is the fraction field of $\mathbb{Z}$, and $\mathbb{R}$ and $\mathbb{C}$ are the completions and algebraic closure. No arrow in the table reverses, so $\mathbb{N}$ cannot be recovered from a later system by an algebraic operation alone; it is recovered by taking the nonnegative elements, which requires the order of the later system.
 
@@ -174,8 +174,8 @@ $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity, and it i
 | $\omega$ | First infinite von Neumann ordinal, a model of $\mathbb{N}$ |
 | $+$, $\cdot$ | Addition and multiplication, defined by recursion |
 | $\leq$, $<$ | The total order and its strict part |
-| $m \mid n$ | Divisibility in $\mathbb{N}$ |
-| $\gcd(a,b)$ | Greatest common divisor |
+| $n \mid m$ | Divisibility in $\mathbb{N}$ |
+| $\gcd(n,m)$ | Greatest common divisor |
 | $p$ | A prime |
 | $v_p(n)$ | Exponent of $p$ in $n$ |
 | $\aleph_0$ | Cardinality of $\mathbb{N}$ |

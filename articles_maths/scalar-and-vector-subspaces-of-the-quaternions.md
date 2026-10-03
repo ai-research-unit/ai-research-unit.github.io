@@ -58,7 +58,7 @@ $$
 
 **Proposition.** The vector subspace is the kernel of the scalar-part functional and the derived subspace of the algebra: it is the smallest subspace whose products generate the whole algebra, and it is the Lie algebra of the unit group under the commutator bracket.
 
-*Proof.* The kernel description is the coordinate condition. That the products of elements of $\operatorname{Im}\mathbb{H}$ generate $\mathbb{H}$ follows from $e_je_k\in\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$ with the vector components filling out the imaginary basis. The Lie-algebra statement is from *Quaternion Rotations and Reflections*, where $\operatorname{Im}\mathbb{H}$ is identified with the tangent space of $Sp(1)$ and the bracket is $[x,y] = 2(x\times y)$.
+*Proof.* The kernel description is the coordinate condition. That the products of elements of $\operatorname{Im}\mathbb{H}$ generate $\mathbb{H}$ follows from $e_je_k\in\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}$ with the vector components filling out the imaginary basis. The Lie-algebra statement is from *Quaternion Rotations and Reflections*, where $\operatorname{Im}\mathbb{H}$ is identified with the tangent space of $Sp(1)$ and the bracket is $[\mathbf{q},\mathbf{p}] = 2(\mathbf{q}\times\mathbf{p})$.
 
 ## Algebra and Module Structure
 
@@ -100,9 +100,9 @@ so that the symmetric part of the product is the scalar inner product and the an
 
 ### Modules over the Other Subspace
 
-**Proposition.** The algebra $\mathbb{H}$ is a free module of rank four over the scalar line $\mathbb{R}_{\mathbb{H}}\cong F$, and the bracket $\operatorname{ad}_x(y) = [x,y]$ of an element of the vector subspace annihilates the scalar line and preserves the vector subspace, where it acts as $\mathbf{y}\mapsto 2(\mathbf{x}\times\mathbf{y})$.
+**Proposition.** The algebra $\mathbb{H}$ is a free module of rank four over the scalar line $\mathbb{R}_{\mathbb{H}}\cong F$, and the bracket $\operatorname{ad}_{\mathbf{q}}(\mathbf{p}) = [\mathbf{q},\mathbf{p}]$ of an element of the vector subspace annihilates the scalar line and preserves the vector subspace, where it acts as $\mathbf{p}\mapsto 2(\mathbf{q}\times\mathbf{p})$.
 
-*Proof.* Over $\mathbb{R}_{\mathbb{H}}\cong F$ the algebra is free of rank four, the scalar line being the centre. For $x\in\operatorname{Im}\mathbb{H}$ the bracket is the commutator of the algebra, and $\operatorname{ad}_x(1) = 0$ while $\operatorname{ad}_x(\mathbf{y}) = x\mathbf{y}-\mathbf{y}x = 2(x\times\mathbf{y})$ lies in the vector subspace; the bracket is $F$-bilinear and antisymmetric.
+*Proof.* Over $\mathbb{R}_{\mathbb{H}}\cong F$ the algebra is free of rank four, the scalar line being the centre. For $\mathbf{q}\in\operatorname{Im}\mathbb{H}$ the bracket is the commutator of the algebra, and $\operatorname{ad}_{\mathbf{q}}(1) = 0$ while $\operatorname{ad}_{\mathbf{q}}(\mathbf{p}) = \mathbf{q}\mathbf{p}-\mathbf{p}\mathbf{q} = 2(\mathbf{q}\times\mathbf{p})$ lies in the vector subspace; the bracket is $F$-bilinear and antisymmetric.
 
 ## The Quaternion Norm
 

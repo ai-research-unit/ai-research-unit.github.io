@@ -8,7 +8,7 @@ This article records the monogenic Bohr phenomenon as it stands after the paper 
 
 ## The Classical Theorem and Its Radius
 
-**Theorem (Bohr, 1914).** Let $f(z) = \sum_{n\ge 0} a_n z^n$ be holomorphic in the unit disk with $\lvert f(z)\rvert \le 1$ there. Then
+**Theorem (Bohr, 1914).** Let $f(A) = \sum_{n\ge 0} a_n A^n$ be holomorphic in the unit disk with $\lvert f(A)\rvert \le 1$ there. Then
 
 $$
 \sum_{n\ge 0} \lvert a_n\rvert r^n \le 1 \qquad \text{for } 0 \le r \le \frac13,
@@ -35,19 +35,19 @@ with real coefficients, and it splits orthogonally as $f = f(0) + g + h$, where 
 | Input | Statement |
 |---|---|
 | Ladder | $\tfrac12\bar D X_n^{l,\dagger} = (n+l+1)X_{n-1}^{l,\dagger}$ for $0 \le l \le n$, and $\tfrac12\bar D Y_n^{m,\dagger} = (n+m+1)Y_{n-1}^{m,\dagger}$ for $1 \le m \le n$ |
-| Pointwise bound | $\lvert X_n^{l,\dagger}(x)\rvert \le \tfrac12(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,\lvert x\rvert^n$, and the same with $Y_n^{m,\dagger}$ and $m$ |
+| Pointwise bound | $\lvert X_n^{l,\dagger}(\tilde q)\rvert \le \tfrac12(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,\lvert \tilde q\rvert^n$, and the same with $Y_n^{m,\dagger}$ and $m$ |
 
 ## The Coefficient Estimate
 
 The classical proof needs to bound every coefficient by the first. In the monogenic case there is no Schwarz–Pick estimate, and the bound is obtained instead by integrating the function against the scalar parts of the basis, which are themselves orthogonal.
 
-**Lemma (coefficient estimate).** Let $f$ be a monogenic function with $\lvert f(x)\rvert < 1$ in $B$ such that $f(x)-f(0)$ is orthogonal to the hyperholomorphic constants in $L^2(B;\mathcal{A};\mathbb{R})$. Then each coefficient satisfies
+**Lemma (coefficient estimate).** Let $f$ be a monogenic function with $\lvert f(\tilde q)\rvert < 1$ in $B$ such that $f(\tilde q)-f(0)$ is orthogonal to the hyperholomorphic constants in $L^2(B;\mathcal{A};\mathbb{R})$. Then each coefficient satisfies
 
 $$
 \lvert a_n^{l}\rvert \le \max_{B}\lvert \operatorname{Sc}(X_n^{l,\dagger})\rvert \, \frac{\lVert X_n^{l,\dagger}\rVert_{L^2(B;\mathcal{A};\mathbb{R})}}{\lVert \operatorname{Sc}(X_n^{l,\dagger})\rVert^2_{L^2(B)}} \, \frac{4\pi}{3}\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big),
 $$
 
-and the same inequality holds with $Y_n^{m,\dagger}$ and $b_n^m$; here $\mathcal{M}_f(1) = \sup_{\lvert x\rvert<1}\lvert f(x)\rvert$. In the normalised form of the source, in which $\mathcal{M}_f(1) = 1$, the last factor is written as $2\sqrt{\pi/3}\,(2\sqrt{\pi/3} - a_0^0)$.
+and the same inequality holds with $Y_n^{m,\dagger}$ and $b_n^m$; here $\mathcal{M}_f(1) = \sup_{\lvert \tilde q\rvert<1}\lvert f(\tilde q)\rvert$. In the normalised form of the source, in which $\mathcal{M}_f(1) = 1$, the last factor is written as $2\sqrt{\pi/3}\,(2\sqrt{\pi/3} - a_0^0)$.
 
 **The two constants in the estimate.** The factor $4\pi/3$ is the volume of the unit ball and enters through the norm of the normalised constant. Its equivalent normalised form is arithmetic: $X_0^{0,\dagger} = \tfrac12$ and therefore $\lVert X_0^{0,\dagger}\rVert^2_{L^2(B)} = \tfrac14\cdot\tfrac{4\pi}{3} = \pi/3$; since the scalar part of $f$ at the origin is carried by that single basis element, $\operatorname{Sc}f(0) = \tfrac12\sqrt{3/\pi}\,a_0^0$, that is $a_0^0 = 2\sqrt{\pi/3}\,\operatorname{Sc}f(0)$. With $\mathcal{M}_f(1) = 1$ this gives
 
@@ -63,17 +63,17 @@ so the two printed forms are the same factor. Both normalisations were recompute
 
 The monogenic analogue of Bohr's theorem has two readings, which differ in where the modulus is taken. The source proves both, and the resulting radii differ by a factor of about five.
 
-**Corollary (the case $f(0) = 0$).** Let $f$ be a square-integrable monogenic function with $f(0) = 0$ and $\lvert f(x)\rvert < 1$ in $B$. Then
+**Corollary (the case $f(0) = 0$).** Let $f$ be a square-integrable monogenic function with $f(0) = 0$ and $\lvert f(\tilde q)\rvert < 1$ in $B$. Then
 
 $$
 \sum_{n\ge 1}\Big\lvert X_n^{0,\dagger,*}\,a_n^0 + \sum_{m=1}^{n+1} \big( X_n^{m,\dagger,*}\,a_n^m + Y_n^{m,\dagger,*}\,b_n^m \big) \Big\rvert < 1
 $$
 
-in the ball $\lvert x\rvert = r < 0.125$.
+in the ball $\lvert \tilde q\rvert = r < 0.125$.
 
 The modulus is taken of the whole cluster of summands of one degree, which is the form the theorem has in the complex case and the reason the corollary is a genuine generalisation. The result improves the first quaternionic version of the theorem, in which the same inequality was asserted only for $r < 0.047$; the improvement comes from the pointwise bound of the table above.
 
-**Theorem (the general case, summand by summand).** Let $f$ be a monogenic function such that $f(x)-f(0)$ is orthogonal to the hyperholomorphic constants, with $\lvert f(x)\rvert < 1$ in $B$. Then
+**Theorem (the general case, summand by summand).** Let $f$ be a monogenic function such that $f(\tilde q)-f(0)$ is orthogonal to the hyperholomorphic constants, with $\lvert f(\tilde q)\rvert < 1$ in $B$. Then
 
 $$
 \sum_{n\ge 0}\Big[ \lvert X_n^{0,\dagger,*}\rvert\,\lvert a_n^0\rvert + \sum_{m=1}^{n} \big( \lvert X_n^{m,\dagger,*}\rvert\,\lvert a_n^m\rvert + \lvert Y_n^{m,\dagger,*}\rvert\,\lvert b_n^m\rvert \big) \Big] < 1
@@ -110,10 +110,10 @@ and $\tilde f(0)$ is real, because the orthogonality removes the $e_1$- and $e_2
 **The decisive step, and its arithmetic.** The proof replaces $f$ by its main part $g$, applies the ladder to the Fourier series, estimates each term by the pointwise bound and sums, which gives
 
 $$
-\Big\lvert \tfrac12\bar Dg(x)\Big\rvert \le \frac43\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big) \sum_{n\ge 1} n^2(n+1)(n+2)\lvert x\rvert^{n-1}.
+\Big\lvert \tfrac12\bar Dg(\tilde q)\Big\rvert \le \frac43\big( \mathcal{M}_f(1) - \operatorname{Sc}f(0) \big) \sum_{n\ge 1} n^2(n+1)(n+2)\lvert \tilde q\rvert^{n-1}.
 $$
 
-The series is elementary. With $\lvert x\rvert = r$,
+The series is elementary. With $\lvert \tilde q\rvert = r$,
 
 $$
 \sum_{n\ge 1} n^2(n+1)(n+2)r^{n-1} = \frac{6(1+3r)}{(1-r)^5},
@@ -121,7 +121,7 @@ $$
 
 since $n^2(n+1)(n+2) = n^4+3n^3+2n^2$ and the four Euler sums combine to $6(1+3r)/(1-r)^5$; the factor $\tfrac43$ then turns it into $8(3r+1)/(1-r)^5$ exactly. This closed form was recomputed here symbolically, term by term, so no numerical constant of the theorem is left undetermined.
 
-**What the estimate says.** It bounds the hypercomplex derivative of a monogenic function by the supremum of the function on the ball and by the scalar part of the function at the origin, and it is the inequality that makes the Bohr sums converge to a value below one on a fixed ball. It differs in kind from the estimate of the companion Bloch article, which bounds the oscillation of the hypercomplex derivative, $\lvert \tfrac12\bar Df(x) - \tfrac12\bar Df(0)\rvert$, by the maximum modulus of the derivative itself; the present inequality bounds the derivative of $f$ by the modulus of $f$, and it is its growth factor $(1-r)^{-5}$ that the Bohr radius must absorb.
+**What the estimate says.** It bounds the hypercomplex derivative of a monogenic function by the supremum of the function on the ball and by the scalar part of the function at the origin, and it is the inequality that makes the Bohr sums converge to a value below one on a fixed ball. It differs in kind from the estimate of the companion Bloch article, which bounds the oscillation of the hypercomplex derivative, $\lvert \tfrac12\bar Df(\tilde q) - \tfrac12\bar Df(0)\rvert$, by the maximum modulus of the derivative itself; the present inequality bounds the derivative of $f$ by the modulus of $f$, and it is its growth factor $(1-r)^{-5}$ that the Bohr radius must absorb.
 
 ## Summary
 
@@ -145,7 +145,7 @@ The **two monogenic Bohr inequalities** take the modulus of a whole degree clust
 | $X_n^{0,\dagger,*}$, $X_n^{m,\dagger,*}$, $Y_n^{m,\dagger,*}$ | Their normalisations, an orthonormal basis of $\mathcal{R}^+(B;\mathcal{A};n)$ |
 | $a_n^0$, $a_n^m$, $b_n^m$ | Real Fourier coefficients of $f$ in that basis |
 | $f = f(0)+g+h$ | Orthogonal decomposition into main part $g$ and hyperholomorphic constant $h$ |
-| $\mathcal{M}(f,r) = \max_{\lvert x\rvert=r}\lvert f(x)\rvert$ | Maximum modulus function |
+| $\mathcal{M}(f,r) = \max_{\lvert \tilde q\rvert=r}\lvert f(\tilde q)\rvert$ | Maximum modulus function |
 | $\mathcal{M}_f(r) = \sup_{\lvert\xi\rvert<r}\lvert f(\xi)\rvert$ | Supremum over the ball; equal to $\mathcal{M}(f,r)$ by the maximum principle |
 | $P_n^{l}$, $T_l$, $U_l$ | Associated Legendre function with $P_n^{l} = 0$ for $l \ge n+1$; Chebyshev polynomials of the first and second kinds |
 | $1/3$ | The classical Bohr radius, optimal |

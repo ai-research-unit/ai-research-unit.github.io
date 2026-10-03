@@ -14,7 +14,7 @@ The two actions are different in kind. The four-vector action is two-sided — i
 
 This article develops three things explicitly: the identification of the spinor module inside the biquaternion algebra, the two chiral halves (the left- and right-handed Weyl spinors), and the action of $SL(2,\mathbb{C})$ on the module together with its bilinear pairings. It is written as the foundation for the exercise on chirality and the Weyl spinors: the notation, the module, the two chiral halves, and the action are all defined here, so that the exercise can apply them.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1 e_2 = e_3$, and the scalar imaginary is $i$. The conjugations are the quaternion conjugate $\tilde{Q}^{\natural}$, the complex conjugate $\tilde{Q}^*$ (conjugation of the coefficients), and the Hermitian conjugate \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}. The anti-Hermitian and Hermitian subspaces are
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1 e_2 = e_3$, and the scalar imaginary is $i$. The conjugations are the quaternion conjugate $\tilde{Q}^{\natural}$, the complex conjugate $\tilde{Q}^*$ (conjugation of the coefficients), and the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The anti-Hermitian and Hermitian subspaces are
 
 $$
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\},

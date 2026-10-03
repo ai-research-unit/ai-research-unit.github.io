@@ -12,7 +12,7 @@ The split-quaternion algebra, its involution, its idempotents and its null basis
 **Theorem (Extension by Substitution).** Let $F$ be a classical special function given by a power series
 
 $$
-F(z) = \sum_{n\geq 0} a_n z^n
+F(A) = \sum_{n\geq 0} a_n A^n
 $$
 
 with real coefficients $a_n$ and radius of convergence $R$. Then the same series
@@ -81,7 +81,7 @@ $$
 
 On the norm-one group the Gamma function of the interpolation is defined off the elements whose characteristic polynomial has a non-positive root, and it agrees with the substitution extension on the elements of scalar square.
 
-**Proof.** The null-basis formula follows from $t^x = t^p n_+ + t^q n_-$ and the fact that $e^{-t}$ is central; the scalar identities are the classical ones for real arguments, and the last statement is the agreement of the two extensions, which is the theorem on the reduction on a plane.
+**Proof.** The null-basis formula follows from $t^{\tilde q} = t^p n_+ + t^q n_-$ and the fact that $e^{-t}$ is central; the scalar identities are the classical ones for real arguments, and the last statement is the agreement of the two extensions, which is the theorem on the reduction on a plane.
 
 **Remark (No Integral in the General Case).** The integral definition does not extend to a general element, because $e^{-t}$ is central but $t^{\tilde q}$ is not defined for a general $\tilde q$ without a branch and a commutative subalgebra; this is the reason for the interpolation convention. Recorded here once and used below.
 
@@ -101,9 +101,9 @@ $$
 B(pn_+ + qn_-, r n_+ + s n_-) = B(p,r)\,n_+ + B(q,s)\,n_- ,
 $$
 
-and $B(\tilde q,y) = \Gamma(\tilde q)\Gamma(y)/\Gamma(\tilde q+y)$ for $\tilde q,y$ in a commutative subalgebra on which both sides are defined; for central arguments the identity holds in the algebra.
+and $B(\tilde q,\tilde p) = \Gamma(\tilde q)\Gamma(\tilde p)/\Gamma(\tilde q+\tilde p)$ for $\tilde q,\tilde p$ in a commutative subalgebra on which both sides are defined; for central arguments the identity holds in the algebra.
 
-**Proof.** The binary expansion of $t^{\tilde q}$ and $(1-t)^{y}$ in the null basis is termwise, and $t$ is central, so the integral splits into the two scalar integrals; the classical identity is then applied in each component.
+**Proof.** The binary expansion of $t^{\tilde q}$ and $(1-t)^{\tilde p}$ in the null basis is termwise, and $t$ is central, so the integral splits into the two scalar integrals; the classical identity is then applied in each component.
 
 ## Bessel Functions
 

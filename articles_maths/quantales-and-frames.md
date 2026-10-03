@@ -16,20 +16,20 @@ Throughout, a frame is written $L$ and a quantale $Q$; a locale is a frame read 
 **Definition.** A **frame** is a complete lattice $L$ in which the finite meets distribute over arbitrary joins:
 
 $$
-a \wedge \bigvee_{i \in I} b_i = \bigvee_{i \in I} (a \wedge b_i)
+\alpha \wedge \bigvee_{i \in I} \beta_i = \bigvee_{i \in I} (\alpha \wedge \beta_i)
 $$
 
-for every $a \in L$ and every family $(b_i)_{i \in I}$. A **frame homomorphism** is a map $f : L \to M$ preserving finite meets, including the empty meet $1$, and arbitrary joins, including the empty join $0$.
+for every $\alpha \in L$ and every family $(\beta_i)_{i \in I}$. A **frame homomorphism** is a map $f : L \to M$ preserving finite meets, including the empty meet $1$, and arbitrary joins, including the empty join $0$.
 
 **Theorem.** Every frame is a complete Heyting algebra, with
 
 $$
-a \to b = \bigvee \{c \in L : c \wedge a \leq b\},
+\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\},
 $$
 
 and conversely every complete Heyting algebra is a frame. The underlying lattice of a frame is distributive.
 
-**Proof.** The element displayed is the largest $c$ with $c\wedge a \leq b$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $a\wedge b_i \leq a\wedge\bigvee_i b_i$, so $\bigvee_i(a\wedge b_i)\leq a\wedge\bigvee_i b_i$, while $a\wedge\bigvee_i b_i \leq \bigvee_i(a\wedge b_i)$ follows by applying the adjunction to the element $\bigvee_i(a\wedge b_i)$, which satisfies $c\wedge a\leq \bigvee_i b_i$. Distributivity is immediate from the axiom applied to finite joins.
+**Proof.** The element displayed is the largest $\gamma$ with $\gamma\wedge \alpha \leq \beta$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $\alpha\wedge \beta_i \leq \alpha\wedge\bigvee_i \beta_i$, so $\bigvee_i(\alpha\wedge \beta_i)\leq \alpha\wedge\bigvee_i \beta_i$, while $\alpha\wedge\bigvee_i \beta_i \leq \bigvee_i(\alpha\wedge \beta_i)$ follows by applying the adjunction to the element $\bigvee_i(\alpha\wedge \beta_i)$, which satisfies $\gamma\wedge \alpha\leq \bigvee_i \beta_i$. Distributivity is immediate from the axiom applied to finite joins.
 
 **Example (open sets).** Let $X$ be a topological space. The open sets, ordered by inclusion, form a frame $\mathcal{O}(X)$: the join of a family of open sets is its union, the meet of two is the intersection, and the distribution axiom is the set-theoretic identity
 
@@ -45,17 +45,17 @@ The relative pseudocomplement is $U \to V = \operatorname{int}\bigl((X \setminus
 
 ### Nuclei and Sublocales
 
-**Definition.** A **nucleus** on a frame $L$ is a map $j : L \to L$ that is monotone and extensive ($a \leq j(a)$), idempotent, and preserves finite meets: $j(a\wedge b) = j(a)\wedge j(b)$ and $j(1) = 1$. The **fixed-point set** is
+**Definition.** A **nucleus** on a frame $L$ is a map $j : L \to L$ that is monotone and extensive ($\alpha \leq j(\alpha)$), idempotent, and preserves finite meets: $j(\alpha\wedge \beta) = j(\alpha)\wedge j(\beta)$ and $j(1) = 1$. The **fixed-point set** is
 
 $$
-L_j = \{a \in L : j(a) = a\}.
+L_j = \{\alpha \in L : j(\alpha) = \alpha\}.
 $$
 
-**Theorem.** For every nucleus $j$ on a frame $L$, the fixed-point set $L_j$ is a frame for the order inherited from $L$, with joins $\bigvee_i a_i$ computed as $j\bigl(\bigvee_i a_i\bigr)$ and meets computed as in $L$; the map $j$ is a frame homomorphism onto $L_j$, and this correspondence is a bijection between nuclei and **sublocales** of $L$.
+**Theorem.** For every nucleus $j$ on a frame $L$, the fixed-point set $L_j$ is a frame for the order inherited from $L$, with joins $\bigvee_i \alpha_i$ computed as $j\bigl(\bigvee_i \alpha_i\bigr)$ and meets computed as in $L$; the map $j$ is a frame homomorphism onto $L_j$, and this correspondence is a bijection between nuclei and **sublocales** of $L$.
 
-**Proof.** The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i a_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei.
+**Proof.** The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i \alpha_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei.
 
-**Example (the double-negation nucleus).** The map $j(a) = \neg\neg a$ is a nucleus on any frame, as in *Heyting Algebras and Intuitionistic Logic*; its fixed points are the **regular elements**. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the **Booleanization** of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.
+**Example (the double-negation nucleus).** The map $j(\alpha) = \neg\neg \alpha$ is a nucleus on any frame, as in *Heyting Algebras and Intuitionistic Logic*; its fixed points are the **regular elements**. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the **Booleanization** of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.
 
 **Example (the open-set nucleus).** For a subspace $Y \subseteq X$, the map $U \mapsto U \cap Y$ on $\mathcal{O}(X)$ is not a nucleus; the correct construction is to take the frame $\mathcal{O}(Y)$, which is the image of the frame homomorphism $\mathcal{O}(X) \to \mathcal{O}(Y)$, $U \mapsto U\cap Y$. The nuclei of $\mathcal{O}(X)$ are exactly the sublocales, which include more than the subspaces: the sublocales of a locale form a frame under the reverse of inclusion, and the empty sublocale and the whole locale are among them.
 
@@ -68,7 +68,7 @@ A continuous map $f : X \to Y$ of topological spaces induces a frame homomorphis
 **Definition.** The category **Loc** of **locales** is the opposite of the category **Frm** of frames and frame homomorphisms; a morphism $L \to M$ of locales is a frame homomorphism $M \to L$. The **open-set functor** is $\mathcal{O} : \mathbf{Top} \to \mathbf{Loc}$, and the **points** of a locale $L$ are the frame homomorphisms $p : L \to \mathbf{2}$; the set of points is written $\operatorname{pt}(L)$, with the topology whose open sets are
 
 $$
-\operatorname{pt}(L)_a = \{p : p(a) = 1\}, \qquad a \in L .
+\operatorname{pt}(L)_\alpha = \{p : p(\alpha) = 1\}, \qquad \alpha \in L .
 $$
 
 The assignment $L \mapsto \operatorname{pt}(L)$ is a functor $\operatorname{pt} : \mathbf{Loc} \to \mathbf{Top}$.
@@ -81,14 +81,14 @@ $$
 
 the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $U \mapsto 1$ if $x \in U$ and $0$ otherwise.
 
-**Proof.** A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $a \mapsto \{x : g(x)(a) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.
+**Proof.** A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $\alpha \mapsto \{x : g(x)(\alpha) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.
 
 ### Spatial and Sober Objects
 
 **Definition.** A locale $L$ is **spatial** if the frame homomorphism
 
 $$
-L \longrightarrow \mathcal{O}(\operatorname{pt}(L)), \qquad a \mapsto \operatorname{pt}(L)_a,
+L \longrightarrow \mathcal{O}(\operatorname{pt}(L)), \qquad \alpha \mapsto \operatorname{pt}(L)_\alpha,
 $$
 
 is an isomorphism; equivalently, if the points separate the elements of $L$. A topological space $X$ is **sober** if every nonempty closed irreducible subset of $X$ is the closure of a unique point.
@@ -120,12 +120,12 @@ is an isomorphism; equivalently, if the points separate the elements of $L$. A t
 **Definition.** A **quantale** is a complete lattice $Q$ with an associative binary operation $\cdot$ that distributes over arbitrary joins on both sides:
 
 $$
-a \cdot \bigvee_i b_i = \bigvee_i (a \cdot b_i), \qquad \bigvee_i a_i \cdot b = \bigvee_i (a_i \cdot b) .
+\alpha \cdot \bigvee_i \beta_i = \bigvee_i (\alpha \cdot \beta_i), \qquad \bigvee_i \alpha_i \cdot \beta = \bigvee_i (\alpha_i \cdot \beta) .
 $$
 
-A quantale is **unital** if it has an element $e$ with $e\cdot a = a\cdot e = a$ for all $a$, and **commutative** if $\cdot$ is commutative. A **quantale homomorphism** preserves arbitrary joins and the multiplication, and the unit when there is one.
+A quantale is **unital** if it has an element $e$ with $e\cdot \alpha = \alpha\cdot e = \alpha$ for all $\alpha$, and **commutative** if $\cdot$ is commutative. A **quantale homomorphism** preserves arbitrary joins and the multiplication, and the unit when there is one.
 
-**Theorem.** A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $a \cdot b = a \wedge b$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.
+**Theorem.** A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $\alpha \cdot \beta = \alpha \wedge \beta$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.
 
 **Proof.** In a frame the meet is commutative and associative with unit $1$, and it distributes over arbitrary joins by the frame axiom, so the frame is a quantale with $\cdot = \wedge$. Conversely, if in a quantale the multiplication is the meet, then the distribution axiom of the frame is exactly the distribution of $\cdot$ over arbitrary joins, and the lattice is complete by hypothesis.
 
@@ -142,19 +142,19 @@ Composition is associative and distributes over arbitrary unions, and the identi
 **Example (the free quantale).** For a monoid $M$, the power set $\mathcal{P}(M)$ with
 
 $$
-A \cdot B = \{ab : a \in A,\ b \in B\}, \qquad \bigvee_i A_i = \bigcup_i A_i
+A \cdot B = \{\alpha\beta : \alpha \in A,\ \beta \in B\}, \qquad \bigvee_i A_i = \bigcup_i A_i
 $$
 
 is a unital quantale, and it is the free unital quantale on the monoid $M$; when $M$ is the free monoid on a set, this is the quantale of formal languages. The construction is the quantale analogue of the free Boolean algebra of *Boolean Algebras and Lattices*.
 
 ### Modules, Involutions and the Relation to Frames
 
-**Definition.** A **left module** over a quantale $Q$ is a complete lattice $M$ with an action $Q \times M \to M$, $(a,x)\mapsto a\cdot x$, associative and distributing over joins in both variables. An **involution** on a quantale is a map ${}^{*}$ with $a^{**} = a$, $(a\cdot b)^{*} = b^{*}\cdot a^{*}$ and $(\bigvee_i a_i)^{*} = \bigvee_i a_i^{*}$; the pair is an **involutive quantale**.
+**Definition.** A **left module** over a quantale $Q$ is a complete lattice $M$ with an action $Q \times M \to M$, $(\alpha,x)\mapsto \alpha\cdot x$, associative and distributing over joins in both variables. An **involution** on a quantale is a map ${}^{*}$ with $\alpha^{**} = \alpha$, $(\alpha\cdot \beta)^{*} = \beta^{*}\cdot \alpha^{*}$ and $(\bigvee_i \alpha_i)^{*} = \bigvee_i \alpha_i^{*}$; the pair is an **involutive quantale**.
 
 **Theorem.** Let $Q$ be an involutive quantale. Then the involution is an order isomorphism, and its fixed points,
 
 $$
-Q^{*} = \{a \in Q : a^{*} = a\},
+Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
 $$
 
 form a frame for the order inherited from $Q$, with the joins and meets of $Q$.
@@ -164,7 +164,7 @@ form a frame for the order inherited from $Q$, with the joins and meets of $Q$.
 **Example (the quantale of a group).** Let $G$ be a group and let $Q = \mathcal{P}(G)$ with convolution
 
 $$
-A \cdot B = \{ab : a \in A,\ b \in B\}, \qquad A^{*} = \{a^{-1} : a \in A\}.
+A \cdot B = \{\alpha\beta : \alpha \in A,\ \beta \in B\}, \qquad A^{*} = \{\alpha^{-1} : \alpha \in A\}.
 $$
 
 This is an involutive unital quantale, with unit $\{e\}$, and it is the quantale of the group algebra at the level of subsets. Its fixed points under ${}^{*}$ are the inverse-closed subsets, and they form a frame; the subgroups are among them but do not themselves form a distributive lattice in general, the subgroup lattice of $\mathbb{Z}/2 \times \mathbb{Z}/2$ being the non-distributive lattice $M_3$ of *Effect Algebras and Orthomodular Lattices*.
@@ -186,8 +186,8 @@ A quantale is a complete lattice with an associative multiplication distributing
 | $L$ | A frame (also read as a locale) |
 | $Q$ | A quantale |
 | $\bigvee, \bigwedge$ | Arbitrary join and meet in a frame |
-| $a \to b$ | Relative pseudocomplement, $\bigvee\{c : c\wedge a \leq b\}$ |
-| $\neg a$ | Pseudocomplement, $a \to 0$ |
+| $\alpha \to \beta$ | Relative pseudocomplement, $\bigvee\{\gamma : \gamma\wedge \alpha \leq \beta\}$ |
+| $\neg \alpha$ | Pseudocomplement, $\alpha \to 0$ |
 | $\mathcal{O}(X)$ | Frame of open sets of a topological space |
 | $\operatorname{Id}(R)$ | Frame and quantale of ideals of a commutative ring |
 | $\operatorname{Dn}(P)$ | Frame of down-sets of a poset |

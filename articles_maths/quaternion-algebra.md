@@ -60,7 +60,7 @@ $$
 The notation $e_1, e_2, e_3$ is chosen deliberately, and it replaces the classical notation $i, j, k$ used in the older literature. The reason is that the symbols $i, j, k$ collide with other standard notations:
 
 - The symbol $i$ is universally used for the scalar imaginary unit of the complex numbers, with $i^2 = -1$. In the quaternion algebra, the unit $e_1$ also satisfies $e_1^2 = -e_0$, so writing it as $i$ makes it visually indistinguishable from the scalar imaginary. This collision becomes acute when the quaternion algebra is complexified: the biquaternion algebra $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ contains both the scalar imaginary $i$ and the quaternion unit $e_1$, and they are different elements. Writing both as $i$ makes the algebra unreadable.
-- The symbol $j$ is universally used as an index, as in $a_j$, $e_j$, $x_j$, and so on. Writing the quaternion unit as $j$ makes every expression with an index ambiguous.
+- The symbol $j$ is universally used as an index, as in $a_j$, $e_j$, $q_j$, and so on. Writing the quaternion unit as $j$ makes every expression with an index ambiguous.
 - The symbol $k$ is also used as an index, particularly in sums over three variables.
 
 The notation $e_0, e_1, e_2, e_3$ avoids all three collisions. It also has the advantage of being uniform: the scalar unit $e_0$ is treated on the same footing as the vector units $e_1, e_2, e_3$, which makes the algebra look like a graded algebra with a single family of generators. This is the notation used throughout the corpus.
@@ -77,7 +77,7 @@ $$
 \tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
 $$
 
-an involution of the algebra that reverses the order of a product, $(pq)^{\natural} = \tilde{q}^{\natural}\,\bar p$.
+an involution of the algebra that reverses the order of a product, $(p\tilde q)^{\natural} = \tilde{q}^{\natural}\,\bar p$.
 
 **Division algebra.** Every non-zero quaternion has a two-sided multiplicative inverse, so $\mathbb{H}$ is a division algebra; it is the largest-dimensional associative real division algebra. The inverse is expressed through the quaternion norm, and the quaternion norm, its multiplicativity and the invertibility criterion it supplies are a form and a distance, developed in *Quaternion Norm and Invertibility* and not here.
 
@@ -265,7 +265,7 @@ This is the same decomposition as above, written in terms of the eigenspaces of 
 The quaternion algebra carries a Lie bracket, defined by the commutator
 
 $$
-[p, \tilde q] = pq - qp.
+[p, \tilde q] = p\tilde q - \tilde q p.
 $$
 
 For pure quaternions $\mathbf{p}, \mathbf{q} \in \operatorname{Im}\mathbb{H}$, the commutator is

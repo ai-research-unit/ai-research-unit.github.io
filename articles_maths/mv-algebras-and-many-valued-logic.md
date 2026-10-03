@@ -18,21 +18,21 @@ Throughout, an MV-algebra is written $(A, \oplus, \neg, 0)$, its order is $\leq$
 **Definition.** An **MV-algebra** is a set $A$ with a binary operation $\oplus$, a unary operation $\neg$ and an element $0$, satisfying
 
 $$
-\text{(MV1)}\quad x \oplus y = y \oplus x, \qquad \text{(MV2)}\quad (x \oplus y) \oplus z = x \oplus (y \oplus z),
+\text{(MV1)}\quad \alpha \oplus \beta = \beta \oplus \alpha, \qquad \text{(MV2)}\quad (\alpha \oplus \beta) \oplus \gamma = \alpha \oplus (\beta \oplus \gamma),
 $$
 
 $$
-\text{(MV3)}\quad x \oplus 0 = x, \qquad \text{(MV4)}\quad \neg \neg x = x, \qquad \text{(MV5)}\quad x \oplus \neg 0 = \neg 0,
+\text{(MV3)}\quad \alpha \oplus 0 = \alpha, \qquad \text{(MV4)}\quad \neg \neg \alpha = \alpha, \qquad \text{(MV5)}\quad \alpha \oplus \neg 0 = \neg 0,
 $$
 
 $$
-\text{(MV6)}\quad \neg(\neg x \oplus y) \oplus y = \neg(\neg y \oplus x) \oplus x .
+\text{(MV6)}\quad \neg(\neg \alpha \oplus \beta) \oplus \beta = \neg(\neg \beta \oplus \alpha) \oplus \alpha .
 $$
 
 One writes $1 = \neg 0$, and defines the **product** and the **residuum** by
 
 $$
-x \odot y = \neg(\neg x \oplus \neg y), \qquad x \to y = \neg x \oplus y .
+\alpha \odot \beta = \neg(\neg \alpha \oplus \neg \beta), \qquad \alpha \to \beta = \neg \alpha \oplus \beta .
 $$
 
 A **homomorphism** of MV-algebras is a map preserving $\oplus$, $\neg$ and $0$; it then preserves $1$, $\odot$ and $\to$ as well. A **subalgebra** is a subset closed under $\oplus$ and $\neg$ and containing $0$.
@@ -44,64 +44,64 @@ The axioms (MV1)–(MV4) say that $(A, \oplus, 0)$ is a commutative monoid and t
 **Definition.** On an MV-algebra $A$ define
 
 $$
-x \leq y \iff x \odot \neg y = 0 \iff x \to y = 1 .
+\alpha \leq \beta \iff \alpha \odot \neg \beta = 0 \iff \alpha \to \beta = 1 .
 $$
 
 **Theorem.** The relation $\leq$ is a partial order with least element $0$ and greatest element $1$, and the operations
 
 $$
-x \wedge y = x \odot (x \to y), \qquad x \vee y = (x \to y) \to y
+\alpha \wedge \beta = \alpha \odot (\alpha \to \beta), \qquad \alpha \vee \beta = (\alpha \to \beta) \to \beta
 $$
 
-are the meet and the join for it. Under these operations $A$ is a distributive lattice, and $\neg$ is an order-reversing involution with $\neg 0 = 1$, $\neg 1 = 0$. The monoid operation is monotone: $x \leq y$ implies $x \oplus z \leq y \oplus z$ and $x \odot z \leq y \odot z$.
+are the meet and the join for it. Under these operations $A$ is a distributive lattice, and $\neg$ is an order-reversing involution with $\neg 0 = 1$, $\neg 1 = 0$. The monoid operation is monotone: $\alpha \leq \beta$ implies $\alpha \oplus \gamma \leq \beta \oplus \gamma$ and $\alpha \odot \gamma \leq \beta \odot \gamma$.
 
-**Proof.** The relation is reflexive because $x \odot \neg x = \neg(x \oplus \neg x)$ and $x \oplus \neg x = 1$ by (MV5) with $x$ and $\neg x$; it is antisymmetric and transitive by the standard computations from (MV6), which is precisely the axiom that makes $x \odot \neg y$ a *residuated* pairing and yields the lattice laws. Monotonicity of $\oplus$ and $\odot$ is immediate from the definition of $\leq$ and the associativity of $\oplus$. The distributivity is the standard theorem of Chang; the lattice of an MV-algebra is distributive and is a sublattice of a product of chains. The full verification is Chang's and is quoted.
+**Proof.** The relation is reflexive because $\alpha \odot \neg \alpha = \neg(\alpha \oplus \neg \alpha)$ and $\alpha \oplus \neg \alpha = 1$ by (MV5) with $\alpha$ and $\neg \alpha$; it is antisymmetric and transitive by the standard computations from (MV6), which is precisely the axiom that makes $\alpha \odot \neg \beta$ a *residuated* pairing and yields the lattice laws. Monotonicity of $\oplus$ and $\odot$ is immediate from the definition of $\leq$ and the associativity of $\oplus$. The distributivity is the standard theorem of Chang; the lattice of an MV-algebra is distributive and is a sublattice of a product of chains. The full verification is Chang's and is quoted.
 
-**Theorem.** In an MV-algebra, for all $x, y$:
+**Theorem.** In an MV-algebra, for all $\alpha, \beta$:
 
 $$
-x \oplus \neg x = 1, \qquad x \odot \neg x = 0, \qquad x \oplus 1 = 1, \qquad x \odot 0 = 0, \qquad x \oplus y = \neg(\neg x \odot \neg y),
+\alpha \oplus \neg \alpha = 1, \qquad \alpha \odot \neg \alpha = 0, \qquad \alpha \oplus 1 = 1, \qquad \alpha \odot 0 = 0, \qquad \alpha \oplus \beta = \neg(\neg \alpha \odot \neg \beta),
 $$
 
-and the order is characterised by $x \leq y \iff \neg y \leq \neg x$.
+and the order is characterised by $\alpha \leq \beta \iff \neg \beta \leq \neg \alpha$.
 
-**Proof.** The first two are the standard identities $x \oplus \neg x = 1$ and $x \odot \neg x = 0$, derived from (MV4)–(MV6) by Chang. The third is (MV5). The fourth is the negation of the third. The fifth is (MV4) applied to the definition of $\odot$. The last is the order-reversing property of the involution $\neg$, which follows from $x \odot \neg y = \neg(\neg x \oplus y)$.
+**Proof.** The first two are the standard identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$, derived from (MV4)–(MV6) by Chang. The third is (MV5). The fourth is the negation of the third. The fifth is (MV4) applied to the definition of $\odot$. The last is the order-reversing property of the involution $\neg$, which follows from $\alpha \odot \neg \beta = \neg(\neg \alpha \oplus \beta)$.
 
-**Remark.** The identities $x \oplus \neg x = 1$ and $x \odot \neg x = 0$ do **not** make $\neg$ a Boolean complement: the complement of a Boolean algebra complements with respect to the *lattice* operations, so that $x \vee \neg x = 1$ and $x \wedge \neg x = 0$; here the identities are stated for $\oplus$ and $\odot$, which are not the join and the meet. In the standard algebra $[0,1]_{\L}$ one has $x \vee \neg x = \max(x, 1-x)$, which equals $1$ only for $x \in \{0,1\}$, and $x \wedge \neg x = \min(x,1-x) = 0$ only for the same two points. The lattice of an MV-algebra is distributive and complemented only when the algebra is Boolean.
+**Remark.** The identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$ do **not** make $\neg$ a Boolean complement: the complement of a Boolean algebra complements with respect to the *lattice* operations, so that $\alpha \vee \neg \alpha = 1$ and $\alpha \wedge \neg \alpha = 0$; here the identities are stated for $\oplus$ and $\odot$, which are not the join and the meet. In the standard algebra $[0,1]_{\L}$ one has $\alpha \vee \neg \alpha = \max(\alpha, 1-\alpha)$, which equals $1$ only for $\alpha \in \{0,1\}$, and $\alpha \wedge \neg \alpha = \min(\alpha,1-\alpha) = 0$ only for the same two points. The lattice of an MV-algebra is distributive and complemented only when the algebra is Boolean.
 
 ### Elementary Identities
 
 The following identities are used constantly and are collected here.
 
-**Theorem.** In an MV-algebra, for all $x, y, z$:
+**Theorem.** In an MV-algebra, for all $\alpha, \beta, \gamma$:
 
 $$
-x \to y = \neg y \to \neg x, \qquad (x \to y) \to (x \to z) = (x \wedge y) \to z,
+\alpha \to \beta = \neg \beta \to \neg \alpha, \qquad (\alpha \to \beta) \to (\alpha \to \gamma) = (\alpha \wedge \beta) \to \gamma,
 $$
 
 $$
-x \to (y \to z) = (x \odot y) \to z, \qquad x \to y = 1 \iff x \leq y,
+\alpha \to (\beta \to \gamma) = (\alpha \odot \beta) \to \gamma, \qquad \alpha \to \beta = 1 \iff \alpha \leq \beta,
 $$
 
 and the residuation law
 
 $$
-z \leq x \to y \iff x \odot z \leq y
+\gamma \leq \alpha \to \beta \iff \alpha \odot \gamma \leq \beta
 $$
 
 holds.
 
-**Proof.** Since $x \to y = \neg x \oplus y$ and $\neg y \to \neg x = \neg\neg y \oplus \neg x = y \oplus \neg x$, the first identity is the commutativity of $\oplus$. The second and the third express the fact that $\odot$ is left adjoint to $\to$; they are the standard consequences of (MV6), verified directly from the axioms in Chang's original paper. The equivalence $x \to y = 1 \iff x \leq y$ is the definition of the order, and the residuation law is its residuated form.
+**Proof.** Since $\alpha \to \beta = \neg \alpha \oplus \beta$ and $\neg \beta \to \neg \alpha = \neg\neg \beta \oplus \neg \alpha = \beta \oplus \neg \alpha$, the first identity is the commutativity of $\oplus$. The second and the third express the fact that $\odot$ is left adjoint to $\to$; they are the standard consequences of (MV6), verified directly from the axioms in Chang's original paper. The equivalence $\alpha \to \beta = 1 \iff \alpha \leq \beta$ is the definition of the order, and the residuation law is its residuated form.
 
 **Example (the standard algebra).** On the unit interval $[0,1]$ put
 
 $$
-x \oplus y = \min(1, x + y), \qquad \neg x = 1 - x, \qquad 0 = 0 .
+\alpha \oplus \beta = \min(1, \alpha + \beta), \qquad \neg \alpha = 1 - \alpha, \qquad 0 = 0 .
 $$
 
-Then $1 = 1$, $x \odot y = \max(0, x + y - 1)$, and $x \to y = \min(1, 1 - x + y)$; the order of the MV-algebra is the usual order of $[0,1]$, and the lattice operations are $\min$ and $\max$. The six axioms are verified directly from the arithmetic of the interval: commutativity and associativity of $\oplus$ reduce to the associativity of truncated addition, $\neg\neg x = 1-(1-x)=x$, and $x \oplus 1 = \min(1,x+1)=1$. This is the **standard MV-algebra** $[0,1]_{\L}$.
+Then $1 = 1$, $\alpha \odot \beta = \max(0, \alpha + \beta - 1)$, and $\alpha \to \beta = \min(1, 1 - \alpha + \beta)$; the order of the MV-algebra is the usual order of $[0,1]$, and the lattice operations are $\min$ and $\max$. The six axioms are verified directly from the arithmetic of the interval: commutativity and associativity of $\oplus$ reduce to the associativity of truncated addition, $\neg\neg \alpha = 1-(1-\alpha)=\alpha$, and $\alpha \oplus 1 = \min(1,\alpha+1)=1$. This is the **standard MV-algebra** $[0,1]_{\L}$.
 
-The truncation is what distinguishes the algebra from a ring: $x \oplus y$ is not addition in $[0,1]$, and no subtraction is available except through $\neg$. The connection with the additive structure of the reals is made precise by Mundici's theorem below.
+The truncation is what distinguishes the algebra from a ring: $\alpha \oplus \beta$ is not addition in $[0,1]$, and no subtraction is available except through $\neg$. The connection with the additive structure of the reals is made precise by Mundici's theorem below.
 
 ## Chains, Finite Algebras and the Boolean Case
 
@@ -119,17 +119,17 @@ The term "chain" is used because the order of $\L_n$ is total. Each $\L_n$ is a 
 
 **Theorem.** For every $n \geq 1$ the algebra $\L_n$ is an MV-algebra, and it is generated as an MV-algebra by the single element $1/n$.
 
-**Proof.** The set $\L_n$ is closed under $x \oplus y = \min(1,x+y)$ and under $\neg x = 1-x$ because the operations send multiples of $1/n$ to multiples of $1/n$. The element $1/n$ generates $1$ by repeated $\oplus$, then all $k/n$ for $k \leq n$, and the subalgebra generated is all of $\L_n$.
+**Proof.** The set $\L_n$ is closed under $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and under $\neg \alpha = 1-\alpha$ because the operations send multiples of $1/n$ to multiples of $1/n$. The element $1/n$ generates $1$ by repeated $\oplus$, then all $k/n$ for $k \leq n$, and the subalgebra generated is all of $\L_n$.
 
 **Example (three-valued logic).** The chain $\L_2 = \{0, \tfrac12, 1\}$ is the three-valued Łukasiewicz algebra. With $u = \tfrac12$ one has $\neg u = u$, $u \oplus u = 1$ and $u \odot u = 0$, while $u \wedge \neg u = u \wedge u = u \neq 0$. The third truth value is neither true nor false, and the lattice meet of a proposition with its negation is a third value rather than false: this is the algebraic content of the failure of the law of non-contradiction in the lattice operations of the many-valued calculus.
 
 ### Boolean Algebras as the Idempotent Case
 
-**Theorem.** An MV-algebra $A$ is a Boolean algebra, for the lattice operations and the complement $\neg$, if and only if $x \oplus x = x$ for every $x \in A$.
+**Theorem.** An MV-algebra $A$ is a Boolean algebra, for the lattice operations and the complement $\neg$, if and only if $\alpha \oplus \alpha = \alpha$ for every $\alpha \in A$.
 
-**Proof.** Suppose $\oplus$ is idempotent. Then $\odot$ is idempotent too, since $x \odot x = \neg(\neg x \oplus \neg x) = \neg\neg x = x$. For idempotent operations the absorption identities $x \oplus (x \odot y) = x$ and $x \odot (x \oplus y) = x$ follow from (MV6), so $\oplus$ and $\odot$ are the join and the meet of the order, and the lattice is distributive by Chang's theorem; the identities $x \oplus \neg x = 1$ and $x \odot \neg x = 0$ then exhibit $\neg$ as a Boolean complement. Conversely, in a Boolean algebra take $\oplus = \vee$, $\odot = \wedge$ and $\neg$ the complement; then $\oplus$ is idempotent and the six axioms reduce to the Boolean laws of *Boolean Algebras and Lattices*.
+**Proof.** Suppose $\oplus$ is idempotent. Then $\odot$ is idempotent too, since $\alpha \odot \alpha = \neg(\neg \alpha \oplus \neg \alpha) = \neg\neg \alpha = \alpha$. For idempotent operations the absorption identities $\alpha \oplus (\alpha \odot \beta) = \alpha$ and $\alpha \odot (\alpha \oplus \beta) = \alpha$ follow from (MV6), so $\oplus$ and $\odot$ are the join and the meet of the order, and the lattice is distributive by Chang's theorem; the identities $\alpha \oplus \neg \alpha = 1$ and $\alpha \odot \neg \alpha = 0$ then exhibit $\neg$ as a Boolean complement. Conversely, in a Boolean algebra take $\oplus = \vee$, $\odot = \wedge$ and $\neg$ the complement; then $\oplus$ is idempotent and the six axioms reduce to the Boolean laws of *Boolean Algebras and Lattices*.
 
-**Corollary.** The Boolean algebras are exactly the idempotent MV-algebras. The idempotent elements of an MV-algebra $A$ form a subalgebra $B(A)$, the **Boolean skeleton** of $A$: it is closed under $\oplus$ because $(x \oplus y) \oplus (x \oplus y) = x \oplus y$ for idempotent $x$ and $y$, and closed under $\neg$ by the duality of $\oplus$ and $\odot$. With the inherited operations it is a Boolean algebra, it is the largest Boolean subalgebra of $A$, and $B(A) = A$ exactly when $A$ is Boolean. For the standard algebra $B([0,1]_{\L}) = \{0,1\} = \L_1 = \mathbf{2}$, and for the three-element chain $\L_2$ the skeleton is again $\{0,1\}$, the intermediate element $u$ not being idempotent.
+**Corollary.** The Boolean algebras are exactly the idempotent MV-algebras. The idempotent elements of an MV-algebra $A$ form a subalgebra $B(A)$, the **Boolean skeleton** of $A$: it is closed under $\oplus$ because $(\alpha \oplus \beta) \oplus (\alpha \oplus \beta) = \alpha \oplus \beta$ for idempotent $\alpha$ and $\beta$, and closed under $\neg$ by the duality of $\oplus$ and $\odot$. With the inherited operations it is a Boolean algebra, it is the largest Boolean subalgebra of $A$, and $B(A) = A$ exactly when $A$ is Boolean. For the standard algebra $B([0,1]_{\L}) = \{0,1\} = \L_1 = \mathbf{2}$, and for the three-element chain $\L_2$ the skeleton is again $\{0,1\}$, the intermediate element $u$ not being idempotent.
 
 The corollary isolates the Boolean system inside the many-valued one. The two-element algebra $\mathbf{2}$ is the *Boolean* skeleton of $[0,1]_{\L}$, and it is the only Boolean algebra that embeds in $[0,1]_{\L}$ as a subalgebra; the many-valued semantics is not the classical semantics with extra values attached, because the extra values are not idempotent and do not obey the excluded middle in the lattice operations.
 
@@ -137,19 +137,19 @@ The corollary isolates the Boolean system inside the many-valued one. The two-el
 
 ### Ideals and Homomorphisms
 
-**Definition.** An **ideal** of an MV-algebra $A$ is a subset $I \subseteq A$ with $0 \in I$, closed under $\oplus$, and downward closed: $x \in I$ and $y \leq x$ imply $y \in I$. A **filter** is the order-dual notion, a subset containing $1$ and closed under $\odot$ and upward inclusion. An ideal is **proper** if $1 \notin I$ and **maximal** if it is proper and maximal under inclusion among proper ideals.
+**Definition.** An **ideal** of an MV-algebra $A$ is a subset $I \subseteq A$ with $0 \in I$, closed under $\oplus$, and downward closed: $\alpha \in I$ and $\beta \leq \alpha$ imply $\beta \in I$. A **filter** is the order-dual notion, a subset containing $1$ and closed under $\odot$ and upward inclusion. An ideal is **proper** if $1 \notin I$ and **maximal** if it is proper and maximal under inclusion among proper ideals.
 
 **Theorem.** An ideal $I$ is a congruence class of the congruence
 
 $$
-x \sim_I y \iff (x \odot \neg y) \oplus (y \odot \neg x) \in I,
+\alpha \sim_I \beta \iff (\alpha \odot \neg \beta) \oplus (\beta \odot \neg \alpha) \in I,
 $$
 
 the quotient $A/I$ is an MV-algebra, and the quotient map is a homomorphism whose kernel is $I$. The quotient is nontrivial if and only if $I$ is proper, and the correspondence $I \leftrightarrow$ kernel is a bijection between ideals and kernels of homomorphisms.
 
-**Proof.** The relation displayed is the standard MV-congruence associated with an ideal: it is reflexive and symmetric by construction, transitive by the triangle inequality of the derived distance $d(x,y) = (x \odot \neg y) \oplus (y \odot \neg x)$, and compatible with the operations because $d$ is invariant under them. The quotient inherits the operations, and the kernel of the quotient map is $I$, since $d(x,0) = (x \odot \neg 0) \oplus (0 \odot \neg x) = x \oplus 0 = x$, so that $x$ is identified with $0$ exactly when $x \in I$.
+**Proof.** The relation displayed is the standard MV-congruence associated with an ideal: it is reflexive and symmetric by construction, transitive by the triangle inequality of the derived distance $d(\alpha,\beta) = (\alpha \odot \neg \beta) \oplus (\beta \odot \neg \alpha)$, and compatible with the operations because $d$ is invariant under them. The quotient inherits the operations, and the kernel of the quotient map is $I$, since $d(\alpha,0) = (\alpha \odot \neg 0) \oplus (0 \odot \neg \alpha) = \alpha \oplus 0 = \alpha$, so that $\alpha$ is identified with $0$ exactly when $\alpha \in I$.
 
-The map $d(x,y) = (x \odot \neg y) \oplus (y \odot \neg x)$ is the **Chang distance**. It is a metric on $A$, bounded by $1$: it vanishes exactly when $x \odot \neg y = 0 = y \odot \neg x$, that is, exactly when $x = y$, and it satisfies the triangle inequality by the MV laws. It is the algebraic ancestor of the distance used in the metric theory of MV-algebras.
+The map $d(\alpha,\beta) = (\alpha \odot \neg \beta) \oplus (\beta \odot \neg \alpha)$ is the **Chang distance**. It is a metric on $A$, bounded by $1$: it vanishes exactly when $\alpha \odot \neg \beta = 0 = \beta \odot \neg \alpha$, that is, exactly when $\alpha = \beta$, and it satisfies the triangle inequality by the MV laws. It is the algebraic ancestor of the distance used in the metric theory of MV-algebras.
 
 **Theorem (prime ideals).** Every proper ideal of an MV-algebra is contained in a maximal ideal, every maximal ideal is prime in the sense that $A/I$ is totally ordered, and the quotient by a maximal ideal is a simple MV-algebra.
 
@@ -163,9 +163,9 @@ The map $d(x,y) = (x \odot \neg y) \oplus (y \odot \neg x)$ is the **Chang dista
 
 **Theorem (subdirect representation).** Every MV-algebra is a subdirect product of totally ordered MV-algebras (MV-chains).
 
-**Proof.** Let $a \neq b$ in $A$; then the Chang distance $d(a,b)$ is nonzero, and by Zorn's lemma there is an ideal maximal among the proper ideals not containing $d(a,b)$. Such an ideal is prime, so the quotient is an MV-chain in which the images of $a$ and $b$ remain distinct. The family of all these quotients therefore separates the points of $A$, and the induced map is the required subdirect embedding.
+**Proof.** Let $\alpha \neq \beta$ in $A$; then the Chang distance $d(\alpha,\beta)$ is nonzero, and by Zorn's lemma there is an ideal maximal among the proper ideals not containing $d(\alpha,\beta)$. Such an ideal is prime, so the quotient is an MV-chain in which the images of $\alpha$ and $\beta$ remain distinct. The family of all these quotients therefore separates the points of $A$, and the induced map is the required subdirect embedding.
 
-**Theorem (Chang completeness, algebraic form).** The variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$: the smallest variety containing $[0,1]_{\L}$ is the class of all MV-algebras. Equivalently, an identity holds in every MV-algebra if and only if it holds in $[0,1]_{\L}$. Consequently, for every MV-algebra $A$ and all distinct $a, b \in A$ there is a homomorphism $h : A \to [0,1]_{\L}$ with $h(a) \neq h(b)$, and every free MV-algebra is a subdirect product of copies of $[0,1]_{\L}$.
+**Theorem (Chang completeness, algebraic form).** The variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$: the smallest variety containing $[0,1]_{\L}$ is the class of all MV-algebras. Equivalently, an identity holds in every MV-algebra if and only if it holds in $[0,1]_{\L}$. Consequently, for every MV-algebra $A$ and all distinct $\alpha, \beta \in A$ there is a homomorphism $h : A \to [0,1]_{\L}$ with $h(\alpha) \neq h(\beta)$, and every free MV-algebra is a subdirect product of copies of $[0,1]_{\L}$.
 
 **Proof (sketch).** The nontrivial half is that an identity failing in some MV-algebra fails in $[0,1]_{\L}$. Chang proves this by associating to each MV-algebra a lattice-ordered abelian group and using the archimedean embedding of its simple quotients in $[0,1]_{\L}$; the argument is quoted in full from the literature. The free algebra statement follows because the evaluation homomorphisms at the points of $[0,1]^n$ are surjective and separate the elements of $F_{\mathrm{MV}}(n)$.
 
@@ -173,7 +173,7 @@ The map $d(x,y) = (x \odot \neg y) \oplus (y \odot \neg x)$ is the **Chang dista
 
 ### Lattice-Ordered Abelian Groups
 
-**Definition.** A **lattice-ordered abelian group** (an **ℓ-group**) is an abelian group $(G, +)$ with a lattice order $\leq$ compatible with addition: $x \leq y$ implies $x + z \leq y + z$. A **strong unit** of $(G, +, \leq)$ is an element $u > 0$ such that for every $g \in G$ there is $n \geq 1$ with $g \leq n u$, where $nu$ is the $n$-fold sum.
+**Definition.** A **lattice-ordered abelian group** (an **ℓ-group**) is an abelian group $(G, +)$ with a lattice order $\leq$ compatible with addition: $g \leq h$ implies $g + k \leq h + k$. A **strong unit** of $(G, +, \leq)$ is an element $u > 0$ such that for every $g \in G$ there is $n \geq 1$ with $g \leq n u$, where $nu$ is the $n$-fold sum.
 
 The standard example is $(\mathbb{R}, +, \leq)$ with strong unit $1$. The positive cone $G^+ = \{g : g \geq 0\}$ is a submonoid, and every element is a difference of positive elements.
 
@@ -193,7 +193,7 @@ $$
 
 Then $\Gamma(G,u)$ is an MV-algebra, and every MV-algebra is of this form: there is an ℓ-group $G(A)$ with strong unit $u$ and an isomorphism $A \cong \Gamma(G(A), u)$. The construction $A \mapsto G(A)$ is functorial, and $\Gamma$ is an equivalence of categories between MV-algebras and ℓ-groups with strong unit.
 
-**Proof.** For the algebra structure: $\Gamma(G,u)$ is closed under $u \wedge (g+h)$ because the meet of $u$ with a positive element is between $0$ and $u$, and under $u - g$ because $0 \leq g \leq u$ gives $0 \leq u - g \leq u$. The six axioms follow from the distributivity of the lattice order and the compatibility of addition with it; (MV6) is the translation of the fact that in a lattice-ordered group the positive cone satisfies $(x \wedge y) + z \leq (x+z)\wedge(y+z)$ and one has the Riesz decomposition. The construction of $G(A)$ is by the Grothendieck completion of the monoid $A$ modulo the relations that make $x \oplus y$ the truncated sum, and the strong unit is the class of $1$; the verification of the inverse equivalence is Mundici's theorem and is quoted.
+**Proof.** For the algebra structure: $\Gamma(G,u)$ is closed under $u \wedge (g+h)$ because the meet of $u$ with a positive element is between $0$ and $u$, and under $u - g$ because $0 \leq g \leq u$ gives $0 \leq u - g \leq u$. The six axioms follow from the distributivity of the lattice order and the compatibility of addition with it; (MV6) is the translation of the fact that in a lattice-ordered group the positive cone satisfies $(g \wedge h) + k \leq (g+k)\wedge(h+k)$ and one has the Riesz decomposition. The construction of $G(A)$ is by the Grothendieck completion of the monoid $A$ modulo the relations that make $\alpha \oplus \beta$ the truncated sum, and the strong unit is the class of $1$; the verification of the inverse equivalence is Mundici's theorem and is quoted.
 
 **Corollary.** $\Gamma(\mathbb{R}, 1) = [0,1]_{\L}$, and $\Gamma(\mathbb{Z}, 1) = \L_1 = \{0,1\}$; more generally $\Gamma(\tfrac{1}{n}\mathbb{Z}, 1) = \L_n$.
 
@@ -221,7 +221,7 @@ such that for every $x \in [0,1]^n$ one has $f(x) = \ell_i(x)$ for some $i$. The
 
 **Proof.** A term in the generators evaluates to a function on $[0,1]^n$ built from the coordinate functions by $\oplus$ and $\neg$, and each such function is McNaughton because the operations preserve the class: $\min(1, f+g)$ and $1-f$ of McNaughton functions are again continuous and piecewise linear with integer pieces. The map is therefore well defined and surjective, since McNaughton functions are exactly the finite max-min combinations of the integer-linear ones, by the standard piecewise-linear approximation. To see that it is injective, let $t$ and $s$ be terms that define the same function; since the variety is generated by $[0,1]_{\L}$, an identity holding in that algebra holds in every MV-algebra, so $t$ and $s$ are equal in the free algebra. Hence the map is an isomorphism. The countability is clear from the finite description of a McNaughton function.
 
-**Example.** For $n = 1$ the free algebra is generated by the identity function $x$. The function $x \oplus x = \min(1,2x)$, the function $\neg x = 1-x$, and the iterated truncated sums $\min(1,kx)$ all lie in $M([0,1])$, so $F_{\mathrm{MV}}(1)$ already contains functions with arbitrarily many linear pieces and is infinite. This is the many-valued analogue of the Rieger–Nishimura lattice of *Heyting Algebras and Intuitionistic Logic*, and it shows that the free MV-algebra, like the free Heyting algebra but unlike the free Boolean algebra, is infinite; the difference is that $M([0,1]^n)$ is still described by a single continuously-valued standard algebra.
+**Example.** For $n = 1$ the free algebra is generated by the identity function $\alpha$. The function $\alpha \oplus \alpha = \min(1,2\alpha)$, the function $\neg \alpha = 1-\alpha$, and the iterated truncated sums $\min(1,k\alpha)$ all lie in $M([0,1])$, so $F_{\mathrm{MV}}(1)$ already contains functions with arbitrarily many linear pieces and is infinite. This is the many-valued analogue of the Rieger–Nishimura lattice of *Heyting Algebras and Intuitionistic Logic*, and it shows that the free MV-algebra, like the free Heyting algebra but unlike the free Boolean algebra, is infinite; the difference is that $M([0,1]^n)$ is still described by a single continuously-valued standard algebra.
 
 **Corollary.** The freeness of $F_{\mathrm{MV}}(n)$ is witnessed by its embeddings into the algebra of all functions $[0,1]^n \to [0,1]$; the free algebra on $n$ generators is the algebra of the definable functions of the standard interval, and the algebraic semantics is the fragment of continuous piecewise-linear real geometry with integer coefficients.
 
@@ -229,7 +229,7 @@ such that for every $x \in [0,1]^n$ one has $f(x) = \ell_i(x)$ for some $i$. The
 
 ### Łukasiewicz Logic
 
-**Definition.** The formulas of **Łukasiewicz propositional logic** $\L$ are built from propositional variables by the connectives $\neg$ and $\to$; the derived connectives are $x \oplus y = \neg x \to y$, $x \odot y = \neg(x \to \neg y)$, $x \vee y = (x \to y) \to y$ and $x \wedge y = x \odot (x \to y)$. A **valuation** is a map $v$ from the variables to $[0,1]$, extended by
+**Definition.** The formulas of **Łukasiewicz propositional logic** $\L$ are built from propositional variables by the connectives $\neg$ and $\to$; the derived connectives are $\alpha \oplus \beta = \neg \alpha \to \beta$, $\alpha \odot \beta = \neg(\alpha \to \neg \beta)$, $\alpha \vee \beta = (\alpha \to \beta) \to \beta$ and $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$. A **valuation** is a map $v$ from the variables to $[0,1]$, extended by
 $$
 v(\neg\varphi) = 1 - v(\varphi), \qquad v(\varphi \to \psi) = \min(1, 1 - v(\varphi) + v(\psi)).
 $$
@@ -261,7 +261,7 @@ The classical and Łukasiewicz logics each have a single generating algebra, and
 
 ## Summary
 
-An MV-algebra is a set with a commutative monoid operation $\oplus$, an involution $\neg$ and a zero $0$ satisfying Chang's six axioms; the order $x \leq y \iff x \odot \neg y = 0$ is a distributive lattice order with bounds $0$ and $1 = \neg 0$, and the lattice operations are $x \wedge y = x \odot (x \to y)$ and $x \vee y = (x \to y) \to y$. The standard example is the unit interval with $x \oplus y = \min(1,x+y)$ and $\neg x = 1-x$; the finite chains $\L_n = \{0, 1/n, \dots, 1\}$ are its finite subalgebras, $\L_1$ is the two-element algebra, and an MV-algebra is a Boolean algebra exactly when $\oplus$ is idempotent. The subalgebras of $[0,1]_{\L}$ are exactly the simple MV-algebras, the maximal ideals have simple quotients, and every MV-algebra is a subdirect product of subalgebras of $[0,1]_{\L}$; consequently the variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$.
+An MV-algebra is a set with a commutative monoid operation $\oplus$, an involution $\neg$ and a zero $0$ satisfying Chang's six axioms; the order $\alpha \leq \beta \iff \alpha \odot \neg \beta = 0$ is a distributive lattice order with bounds $0$ and $1 = \neg 0$, and the lattice operations are $\alpha \wedge \beta = \alpha \odot (\alpha \to \beta)$ and $\alpha \vee \beta = (\alpha \to \beta) \to \beta$. The standard example is the unit interval with $\alpha \oplus \beta = \min(1,\alpha+\beta)$ and $\neg \alpha = 1-\alpha$; the finite chains $\L_n = \{0, 1/n, \dots, 1\}$ are its finite subalgebras, $\L_1$ is the two-element algebra, and an MV-algebra is a Boolean algebra exactly when $\oplus$ is idempotent. The subalgebras of $[0,1]_{\L}$ are exactly the simple MV-algebras, the maximal ideals have simple quotients, and every MV-algebra is a subdirect product of subalgebras of $[0,1]_{\L}$; consequently the variety of MV-algebras is generated by the single algebra $[0,1]_{\L}$.
 
 Mundici's theorem identifies this variety with the category of lattice-ordered abelian groups with strong unit through the functor $\Gamma(G,u) = \{g : 0 \leq g \leq u\}$ with $g \oplus h = u \wedge (g+h)$; the standard algebra is $\Gamma(\mathbb{R},1)$ and the finite chains are the intervals in $\tfrac1n\mathbb{Z}$. McNaughton's theorem describes the free MV-algebra on $n$ generators as the algebra of continuous piecewise-linear functions on $[0,1]^n$ with integer coefficients, which is countably infinite and is the many-valued analogue of the Rieger–Nishimura lattice.
 
@@ -273,15 +273,15 @@ Mundici's theorem identifies this variety with the category of lattice-ordered a
 |---|---|
 | $A$ | An MV-algebra |
 | $\oplus$ | Commutative monoid operation, truncated addition in $[0,1]$ |
-| $\odot$ | Product, $x \odot y = \neg(\neg x \oplus \neg y)$ |
-| $\neg$ | Involution, $\neg\neg x = x$ |
-| $\to$ | Residuum, $x \to y = \neg x \oplus y$ |
+| $\odot$ | Product, $\alpha \odot \beta = \neg(\neg \alpha \oplus \neg \beta)$ |
+| $\neg$ | Involution, $\neg\neg \alpha = \alpha$ |
+| $\to$ | Residuum, $\alpha \to \beta = \neg \alpha \oplus \beta$ |
 | $0, 1 = \neg 0$ | Least and greatest elements |
-| $\leq$ | Order, $x \leq y \iff x \odot \neg y = 0$ |
+| $\leq$ | Order, $\alpha \leq \beta \iff \alpha \odot \neg \beta = 0$ |
 | $\wedge, \vee$ | Lattice meet and join of the order |
-| $[0,1]_{\L}$ | Standard MV-algebra, $x \oplus y = \min(1,x+y)$, $\neg x = 1-x$ |
+| $[0,1]_{\L}$ | Standard MV-algebra, $\alpha \oplus \beta = \min(1,\alpha+\beta)$, $\neg \alpha = 1-\alpha$ |
 | $\L_n$ | Łukasiewicz chain $\{0, 1/n, \dots, 1\}$ with $n+1$ elements |
-| $d(x,y)$ | Chang distance, $(x \odot \neg y) \oplus (y \odot \neg x)$ |
+| $d(\alpha,\beta)$ | Chang distance, $(\alpha \odot \neg \beta) \oplus (\beta \odot \neg \alpha)$ |
 | $\Gamma(G,u)$ | Mundici functor, interval $[0,u]$ of an ℓ-group with strong unit |
 | $F_{\mathrm{MV}}(n)$ | Free MV-algebra on $n$ generators |
 | $M([0,1]^n)$ | McNaughton functions on the cube |

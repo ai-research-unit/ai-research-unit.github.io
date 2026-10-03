@@ -42,7 +42,7 @@ and **unitary** for the form exactly when $A^{\dagger}GA = G$. The self-adjoint 
 
 **Proof.** The two identities are the definitions $[Ax,y] = [x,Ay]$ and $[Ax,Ay] = [x,y]$ written in the standard basis, where $[x,y] = x^{\dagger}Gy$.
 
-**Proposition (the admissible normal form).** If $A$ is self-adjoint for the form and the restriction of the form to a spectral subspace is definite, the restriction is diagonalisable with real eigenvalues; a non-real eigenvalue of such an $A$ has a conjugate partner, and the pair occupies at least one dimension of the negative part, so at most $\kappa$ conjugate pairs \u2013 equivalently at most $2\kappa$ non-real eigenvalues counted with multiplicity, or $\kappa$ in the open upper half-plane \u2013 can occur.
+**Proposition (the admissible normal form).** If $A$ is self-adjoint for the form and the restriction of the form to a spectral subspace is definite, the restriction is diagonalisable with real eigenvalues; a non-real eigenvalue of such an $A$ has a conjugate partner, and the pair occupies at least one dimension of the negative part, so at most $\kappa$ conjugate pairs – equivalently at most $2\kappa$ non-real eigenvalues counted with multiplicity, or $\kappa$ in the open upper half-plane – can occur.
 
 **Proof.** On a definite invariant subspace the form is an inner product and $A$ is an ordinary self-adjoint operator there; each non-real eigenvalue consumes at least one dimension of the negative part, and there are only $\kappa$ of them.
 

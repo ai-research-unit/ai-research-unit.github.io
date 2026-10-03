@@ -149,7 +149,7 @@ $$
 
 This is the algebraic content of the statement that idempotents are projections: the idempotent is the projection, its complement the complementary projection, and the algebra splits into their images.
 
-A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \tilde\Pi^{*}$, the Hermitian idempotents are exactly the second family of Section 4 and lie in $\mathbb{M}_+$.
+A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \tilde\Pi$, the Hermitian idempotents are exactly the second family of Section 4 and lie in $\mathbb{M}_+$.
 
 **Physical reading: the projection, the state and the measurement.** The Hermitian idempotents of $\mathbb{M}_+$ are the pure states, and the pairing of one with an observable gives the Born probability through the trace; the spectral decomposition of an observable is a sum of orthogonal Hermitian idempotents. The two objects called "projection" must be kept apart here as well: the **idempotent element** $\tilde\Pi$ is a state, and the **sandwich** $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$ is the measurement operation; the operation squares to itself only in the idealised case, while the state is idempotent by definition. The passage from a pure state (idempotent) to a mixed state (not idempotent) is the subject of *Decoherence as Idempotent Projection*, and the pairing with the Born rule is in *Quantum Mechanics in Biquaternionic Form*.
 

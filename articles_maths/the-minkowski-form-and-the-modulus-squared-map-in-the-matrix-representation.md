@@ -4,21 +4,21 @@
 
 The second $4 \times 4$ realization of the biquaternion algebra, the one built on the basis whose vector units square to $+e_0$, carries two objects of a form-theoretic nature: a real form of signature $(1,3)$, for which the three generators are skew-symmetric, and a multiplicative quadratic map into the real matrices. Both are read here. The realization itself is *Biquaternion 4×4 Regular Matrix Element Representation*, §*A Second $4 \times 4$ Realization, and the Modulus-Squared Map*, where the matrix $\Phi'$ is written and its equivalence to the regular representation is proved; the coefficient-space form is *The Bilinear Form on the Biquaternion Algebra*; the companion FORM article for the first realization is *The Forms in the Matrix Representation of the Biquaternion Algebra*.
 
-The realization is written in the basis $e_0, x, y, z$ with
+The realization is written in the basis $e_0, ie_1, ie_2, ie_3$ with
 
 $$
-x = ie_1, \qquad y = ie_2, \qquad z = ie_3, \qquad x^2 = y^2 = z^2 = e_0, \qquad xy = iz, \quad yz = ix, \quad zx = iy .
+(ie_1)^2 = (ie_2)^2 = (ie_3)^2 = e_0, \qquad (ie_1)(ie_2) = i(ie_3), \quad (ie_2)(ie_3) = i(ie_1), \quad (ie_3)(ie_1) = i(ie_2) .
 $$
 
 ## The Minkowski Form
 
-**Definition.** The **Minkowski form** of the realization is the real form of signature $(1,3)$ on the real span of $e_0, x, y, z$ whose matrix is
+**Definition.** The **Minkowski form** of the realization is the real form of signature $(1,3)$ on the real span of $e_0, ie_1, ie_2, ie_3$ whose matrix is
 
 $$
 D = \operatorname{diag}(-1,1,1,1),
 $$
 
-the coordinates being ordered $(x, y, z, e_0)$ in the realization's own convention.
+the coordinates being ordered $(ie_1, ie_2, ie_3, e_0)$ in the realization's own convention.
 
 **Proposition (the generators are skew-symmetric).** Each of the three generators is skew-symmetric for the form,
 
@@ -28,7 +28,7 @@ $$
 
 and the form is invariant under conjugation by the generated group.
 
-**Proof.** Direct verification on the three matrices $x, y, z$ of the realization, entry by entry; the relation is the defining property of the Lie algebra element of $O(1,3)$. $\square$
+**Proof.** Direct verification on the three matrices $ie_1, ie_2, ie_3$ of the realization, entry by entry; the relation is the defining property of the Lie algebra element of $O(1,3)$. $\square$
 
 **Remark (why the form is here and not in the Algebra group).** The statement is a statement of a form and its orthogonal group, and it belongs to the Topology induced by the Bilinear Form. What the Algebra group retains of the basis is only its algebraic shape: the squares $+e_0$, the anticommutation, and the fact that the products of the basis elements give the Hermitian basis of $M_4(\mathbb{C})$ recorded in the $4 \times 4$ article. The form itself, the signature, and the orthogonal group of the realization are read here.
 
@@ -71,7 +71,7 @@ The third row is the same group that the two-sided action of *Biquaternion 4×4 
 The algebra therefore carries two real forms of opposite character, and the realization separates them.
 
 - The **bilinear form** $N(\tilde{P}, \tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ is $\mathbb{C}$-bilinear, indefinite of signature $(4,4)$ on $\mathbb{B}_{\mathbb{R}}$, and vanishes on the null elements. In the first realization it is the adjugate pairing of *The Forms in the Matrix Representation of the Biquaternion Algebra*.
-- The **Minkowski form** of the second realization is a real form of signature $(1,3)$ on the four-dimensional real span of $e_0, x, y, z$, and it is the form whose orthogonal group is $O(1,3)$.
+- The **Minkowski form** of the second realization is a real form of signature $(1,3)$ on the four-dimensional real span of $e_0, ie_1, ie_2, ie_3$, and it is the form whose orthogonal group is $O(1,3)$.
 
 The first is the form of the algebra, the second is the form of the realization's real slice; they are different objects, and the modulus-squared map is the multiplicative quadratic map attached to the second.
 
@@ -83,7 +83,7 @@ The second $4 \times 4$ realization of the biquaternion algebra carries a real f
 
 | Symbol | Meaning |
 |---|---|
-| $x = ie_1, y = ie_2, z = ie_3$ | Generators of the second realization, $x^2 = y^2 = z^2 = e_0$ |
+| $ie_1, ie_2, ie_3$ | Generators of the second realization, $(ie_k)^2 = e_0$, $(ie_1)(ie_2) = i(ie_3)$ |
 | $\Phi'(A_0,A_1,A_2,A_3)$ | The second $4 \times 4$ realization |
 | $D = \operatorname{diag}(-1,1,1,1)$ | Matrix of the Minkowski form; $M^{\mathsf{T}} = -DMD$ |
 | $O(1,3)$, $SO^+(1,3)$ | Orthogonal group of the form and its identity component |

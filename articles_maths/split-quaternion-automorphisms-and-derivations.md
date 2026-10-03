@@ -23,7 +23,7 @@ The automorphism group and the derivation algebra are governed by two structural
 
 ## Automorphisms over $\mathbb{R}$
 
-**Definition.** An **$\mathbb{R}$-algebra automorphism** of $\mathbb{H}_{\mathrm{s}}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $\sigma(\tilde q y) = \sigma(\tilde q)\sigma(y)$ and $\sigma(1) = 1$. They form a group under composition, written $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$.
+**Definition.** An **$\mathbb{R}$-algebra automorphism** of $\mathbb{H}_{\mathrm{s}}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $\sigma(\tilde q \tilde p) = \sigma(\tilde q)\sigma(\tilde p)$ and $\sigma(1) = 1$. They form a group under composition, written $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$.
 
 **Inner automorphisms.** For an invertible $g \in \mathbb{H}_{\mathrm{s}}$ the map $\iota_g(\tilde q) = g\tilde q g^{-1}$ is an automorphism, the **inner automorphism** determined by $g$. Since the centre is $\mathbb{R}$, the automorphism $\iota_g$ depends only on the class of $g$ modulo nonzero scalars, so $\iota_g = \iota_{\lambda g}$ for $\lambda \in \mathbb{R}^\times$.
 
@@ -60,7 +60,7 @@ which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \
 **Definition.** An **$\mathbb{R}$-linear derivation** of $\mathbb{H}_{\mathrm{s}}$ is an $\mathbb{R}$-linear map $D : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ satisfying the Leibniz rule
 
 $$
-D(\tilde q y) = D(\tilde q)\,y + \tilde q\,D(y) .
+D(\tilde q \tilde p) = D(\tilde q)\,\tilde p + \tilde q\,D(\tilde p) .
 $$
 
 The derivations form a real Lie algebra under the commutator, written $\mathrm{Der}(\mathbb{H}_{\mathrm{s}})$.
@@ -68,10 +68,10 @@ The derivations form a real Lie algebra under the commutator, written $\mathrm{D
 **Inner derivations.** For $a \in \mathbb{H}_{\mathrm{s}}$ the map
 
 $$
-\mathrm{ad}_a : \tilde q \mapsto [a,\tilde q] = ax - xa
+\mathrm{ad}_a : \tilde q \mapsto [a,\tilde q] = a\tilde q - \tilde q a
 $$
 
-is a derivation, the **inner derivation** by $a$, and $\mathrm{ad}_a$ depends only on the class of $a$ modulo the centre: $\mathrm{ad}_a = \mathrm{ad}_{a + z}$ for $z \in \mathbb{R}$.
+is a derivation, the **inner derivation** by $a$, and $\mathrm{ad}_a$ depends only on the class of $a$ modulo the centre: $\mathrm{ad}_a = \mathrm{ad}_{a + c}$ for $c \in \mathbb{R}$.
 
 **Theorem.** Every derivation of $\mathbb{H}_{\mathrm{s}}$ is inner, and the map
 
@@ -103,7 +103,7 @@ The exceptional phenomena that produce outer automorphisms elsewhere — the out
 
 ### Anti-Automorphisms
 
-The conjugations ${}^{\natural}$ and $\rho$ are **anti**-automorphisms, satisfying $(\tilde q y)^{\natural} = y^{\natural}\,\tilde{q}^{\natural}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Element Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
+The conjugations ${}^{\natural}$ and $\rho$ are **anti**-automorphisms, satisfying $(\tilde q \tilde p)^{\natural} = \tilde p^{\natural}\,\tilde{q}^{\natural}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in *Split-Quaternion Involution Lattice*. In the Clifford description of *Split-Quaternion Other Algebraic Element Representations*, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.
 
 ## The Lie Algebra Statement
 

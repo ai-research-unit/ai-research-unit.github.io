@@ -32,7 +32,7 @@ and $L_{\tilde B}=0$ or $R_{\tilde C}=0$ implies $\tilde B=0$ or $\tilde C=0$.
 
 *Proof.* The two displays are the distributivity of the algebra, and the injectivity follows by evaluating on $e_{0}$.
 
-**Remark (the contrast with the two-sided case).** The parameter enters **once**, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta z}(\tilde V)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde V)+\beta\beta^{*}\Theta_{z}(\tilde V)+(\alpha\beta^{*}\tilde T\tilde V \bar{z}+\beta\alpha^{*}z\tilde V\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.
+**Remark (the contrast with the two-sided case).** The parameter enters **once**, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta \tilde Q}(\tilde V)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde V)+\beta\beta^{*}\Theta_{\tilde Q}(\tilde V)+(\alpha\beta^{*}\tilde T\tilde V \bar{\tilde Q}+\beta\alpha^{*}\tilde Q\tilde V\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.
 
 ## The Composition Laws
 
@@ -54,17 +54,17 @@ $$
 (L_{\tilde B})^{*} = L_{\tilde{B}^{*}},\qquad (R_{\tilde C})^{*} = R_{\tilde{C}^{*}} .
 $$
 
-*Proof.* For $\tilde V,z\in\mathbb{B}$, using the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation,
+*Proof.* For $\tilde V,\tilde Q\in\mathbb{B}$, using the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation,
 
 $$
-(L_{\tilde B}\tilde V,z) = \mathrm{Sc}\bigl((\tilde B\tilde V)^{\dagger}z\bigr) = \mathrm{Sc}\bigl(\tilde{V}^{*}\tilde{B}^{*}z\bigr) = \bigl(\tilde V,\ L_{\tilde{B}^{*}}z\bigr) ,
+(L_{\tilde B}\tilde V,\tilde Q) = \mathrm{Sc}\bigl((\tilde B\tilde V)^{\dagger}\tilde Q\bigr) = \mathrm{Sc}\bigl(\tilde{V}^{*}\tilde{B}^{*}\tilde Q\bigr) = \bigl(\tilde V,\ L_{\tilde{B}^{*}}\tilde Q\bigr) ,
 $$
 
-and the same computation on the right with $(\tilde V\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{V}^{*}$ gives $(R_{\tilde C}\tilde V,z)=(\tilde V,R_{\tilde{C}^{*}}z)$. The adjoint is unique, since the form is non-degenerate. Verified on the generators and on random elements.
+and the same computation on the right with $(\tilde V\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{V}^{*}$ gives $(R_{\tilde C}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{C}^{*}}\tilde Q)$. The adjoint is unique, since the form is non-degenerate. Verified on the generators and on random elements.
 
 **Corollary (the dagger is natural for the one-sided operators).** The assignments $\tilde B\mapsto L_{\tilde B}$ and $\tilde C\mapsto R_{\tilde C}$ carry the dagger of the algebra to the adjoint of the operator. Consequently $L$ is a **faithful $*$-representation** of the algebra on the Hilbert space $(\mathbb{B},(\cdot,\cdot))$: it is linear, multiplicative, injective and compatible with the dagger. Since $\mathbb{B}\cong M_{2}(\mathbb{C})$ and $\dim_{\mathbb{C}}\mathbb{B}=4$, the representation is the left regular representation, that is two copies of the standard module $\mathbb{C}^{2}$ of the algebra (*Biquaternion 2×2 Matrix Element Representation*).
 
-**Remark (which half of the dagger is used).** The adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and **not** $R_{\tilde{B}^{*}}$: the cross identity $(L_{\tilde B}\tilde V,z)=(\tilde V,R_{\tilde{B}^{*}}z)$ is false in general. In the matrix model the point is that the Hilbert structure of the algebra is the space of matrices with the Hilbert–Schmidt form, and the adjoint of left multiplication is again left multiplication.
+**Remark (which half of the dagger is used).** The adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and **not** $R_{\tilde{B}^{*}}$: the cross identity $(L_{\tilde B}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{B}^{*}}\tilde Q)$ is false in general. In the matrix model the point is that the Hilbert structure of the algebra is the space of matrices with the Hilbert–Schmidt form, and the adjoint of left multiplication is again left multiplication.
 
 ## Self-Adjoint, Skew and Unitary One-Sided Operators
 
@@ -82,7 +82,7 @@ $$
 
 and $L_{\tilde B}$ is invertible if and only if $\tilde B\in\mathbb{B}^{\times}$, with inverse $L_{\tilde B^{-1}}$. The same four statements hold for the right multiplication with the same criteria on the parameter.
 
-*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The isometry criterion is the same computation, $(L_{\tilde B}\tilde V,L_{\tilde B}z)=(\tilde V,\tilde{B}^{*}\tilde Bz)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element. All four were verified over random parameters and over both sectors.
+*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The isometry criterion is the same computation, $(L_{\tilde B}\tilde V,L_{\tilde B}\tilde Q)=(\tilde V,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element. All four were verified over random parameters and over both sectors.
 
 **Corollary (the two sectors give the two types).** The Hermitian and the anti-Hermitian elements act by the self-adjoint and by the skew-adjoint operators respectively, and the correspondence is exactly that of the involutions of the algebra:
 
@@ -123,10 +123,10 @@ $$
 
 ## The Form That Makes the Action Self-Adjoint
 
-**Theorem (the defining property of the form).** The scalar form satisfies, for all $\tilde B,\tilde V,z$,
+**Theorem (the defining property of the form).** The scalar form satisfies, for all $\tilde B,\tilde V,\tilde Q$,
 
 $$
-(\tilde B\,\tilde V,\ z) = \bigl(\tilde V,\ \tilde{B}^{*}z\bigr) ,
+(\tilde B\,\tilde V,\ \tilde Q) = \bigl(\tilde V,\ \tilde{B}^{*}\tilde Q\bigr) ,
 $$
 
 and it is, up to a positive scalar, the **only** Hermitian form on $\mathbb{B}$ that is $\mathbb{C}$-linear in the second argument and invariant in the sense that the adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and the form is positive definite.
@@ -151,7 +151,7 @@ and is therefore of neither of the two types, in agreement with the theorem: the
 
 **A mixed operator that is not two-sided.** The operator $\tilde V\mapsto e_{1}\tilde Ve_{2}=L_{e_{1}}R_{e_{2}}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_{0})=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde B}R_{\tilde C}$ is two-sided only if $\tilde B\tilde C\in\mathbb{M}_+$, and when $\tilde C=\lambda \tilde{B}^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde B}R_{\tilde C}=\Theta_{\mu \tilde B}$. Its adjoint is $L_{e_{1}^{\dagger}}R_{e_{2}^{\dagger}}=L_{-e_{1}}R_{-e_{2}}=L_{e_{1}}R_{e_{2}}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.
 
-**A check of the composition and the adjoint.** For random $\tilde B,\tilde C$ and random $\tilde V,z$, the identities $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ and $(L_{\tilde B}\tilde V,z)=(\tilde V,L_{\tilde{B}^{*}}z)$ were verified to machine precision, as were the four type criteria over the four subspaces.
+**A check of the composition and the adjoint.** For random $\tilde B,\tilde C$ and random $\tilde V,\tilde Q$, the identities $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ and $(L_{\tilde B}\tilde V,\tilde Q)=(\tilde V,L_{\tilde{B}^{*}}\tilde Q)$ were verified to machine precision, as were the four type criteria over the four subspaces.
 
 ## Summary
 

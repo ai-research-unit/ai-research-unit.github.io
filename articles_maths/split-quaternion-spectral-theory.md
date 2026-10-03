@@ -77,7 +77,7 @@ $$
 T(\tilde q) = 2q_0 = \tilde q + \tilde{q}^{\natural}, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} .
 $$
 
-Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q y) = D(\tilde q)D(y)$, and $D(\tilde q) \neq 0$ is exactly invertibility.
+Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q \tilde p) = D(\tilde q)D(\tilde p)$, and $D(\tilde q) \neq 0$ is exactly invertibility.
 
 **Theorem (Cayley–Hamilton).** Every element satisfies its characteristic equation,
 
@@ -127,7 +127,7 @@ $$
 
 the resolvent identity and commutativity with $\tilde q$, on the common domain of definition.
 
-**Proof.** The inverse formula is the standard $y^{-1} = y^{\natural}/N(y)$ of *Split-Quaternion Norm and Invertibility* applied to $y = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.
+**Proof.** The inverse formula is the standard $\tilde p^{-1} = \tilde p^{\natural}/N(\tilde p)$ of *Split-Quaternion Norm and Invertibility* applied to $\tilde p = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.
 
 **Remark.** $R$ is analytic in $\lambda$ off $\sigma(\tilde q)$ in the sense of $\mathbb{H}_{\mathrm{s}}$-valued functions of a **real or complex central** variable $\lambda$; because $\lambda$ is central, the calculus of one real or complex variable applies to $R$ componentwise. There is no analogue of the Cauchy integral of a non-central variable here.
 

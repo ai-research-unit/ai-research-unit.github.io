@@ -36,7 +36,7 @@ $$
 
 where $S^{1}e_0$ is the circle of central phases.
 
-**Proof.** $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ is the operator $\tilde{X}\mapsto\tilde{Q}\tilde{X}\bar{\tilde{Q}}$, which is the identity exactly when $\tilde{Q}\bar{\tilde{Q}}=e_0$ and $\tilde{Q}$ is central, that is $\tilde{Q}\in S^{1}e_0$; the right case is symmetric. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{N(\tilde{Q})e_0}=|N(\tilde{Q})|^{2}\mathrm{id}$.
+**Proof.** $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ is the operator $\tilde{P}\mapsto\tilde{Q}\tilde{P}\bar{\tilde{Q}}$, which is the identity exactly when $\tilde{Q}\bar{\tilde{Q}}=e_0$ and $\tilde{Q}$ is central, that is $\tilde{Q}\in S^{1}e_0$; the right case is symmetric. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{N(\tilde{Q})e_0}=|N(\tilde{Q})|^{2}\mathrm{id}$.
 
 **Corollary (the algebraic subgroup).** The central phases and the sandwiches of norm one generate the compact subgroup
 
@@ -44,7 +44,7 @@ $$
 U(1)\times PU(2)\cong U(1)\times SO(3),
 $$
 
-of real dimension $4$: the phases are the scalar isometries and the norm-one sandwiches are the inner automorphisms $\tilde{X}\mapsto\tilde{Q}\tilde{X}\tilde{Q}^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}$ in $U(2)/U(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
+of real dimension $4$: the phases are the scalar isometries and the norm-one sandwiches are the inner automorphisms $\tilde{P}\mapsto\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}$ in $U(2)/U(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
 
 **Proof.** The kernel of the map $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ is the centre of the algebra, so its image over the norm-one elements is $U(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\Theta_{\tilde{Q}}$ is scalar only for $\tilde{Q}$ a scalar of modulus one, in which case $\Theta_{\tilde{Q}}=\mathrm{id}$.
 

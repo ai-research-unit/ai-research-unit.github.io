@@ -156,6 +156,6 @@ The **rigid motions** are the rotors of this algebra, the rotations being the ro
 
 - Charles Gunn, *Geometry, Kinematics and Rigid Body Mechanics in Cayley–Klein Geometries* (thesis, Technische Universität Berlin, 2011), for projective geometric algebra, the degenerate form and the rigid motions.
 - Leo Dorst, Daniel Fontijne and Stephen Mann, *Geometric Algebra for Computer Science* (Morgan Kaufmann, 2007), for the projective model and its computational use.
-- Ken Shoemake, *Animating rotation with quaternion curves* (SIGGRAPH 1985), and Ladislav Kavan, Steven Collins, Ji\v{r}\'i \v{Z}\'ara and Carol O'Sullivan, *Dual quaternions for rigid transformation blending* (2006), for the interpolation of rigid motions by dual quaternions.
+- Ken Shoemake, *Animating rotation with quaternion curves* (SIGGRAPH 1985), and Ladislav Kavan, Steven Collins, Jiří Žára and Carol O'Sullivan, *Dual quaternions for rigid transformation blending* (2006), for the interpolation of rigid motions by dual quaternions.
 - J. Michael McCarthy, *An Introduction to Theoretical Kinematics* (MIT Press, 1990), for the screw theory of rigid motions and its algebraic form.
 - John Conway and Derek Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the quaternions and the double covers used throughout.

@@ -185,10 +185,10 @@ We adopt this approach for the split biquaternion algebra. The function is defin
 Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$. A general element of $V$ is written
 
 $$
-\tilde{Q} = x_0 f_0 + x_1 f_1 + x_2 f_2 + x_3 f_3,
+\tilde{Q} = Q_0 f_0 + Q_1 f_1 + Q_2 f_2 + Q_3 f_3,
 $$
 
-where $\{f_0, f_1, f_2, f_3\}$ is a basis of $V$ and $x_0, x_1, x_2, x_3 \in \mathbb{R}$ are the **coordinates**. The four real numbers $x_\mu$ are the independent variables.
+where $\{f_0, f_1, f_2, f_3\}$ is a basis of $V$ and $Q_0, Q_1, Q_2, Q_3 \in \mathbb{R}$ are the **coordinates**. The four real numbers $Q_\mu$ are the independent variables.
 
 In the applications below, the basis $\{f_\mu\}$ is one of:
 - $\{e_0, e_1, e_2, e_3\}$ (the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$).
@@ -206,25 +206,25 @@ $$
 \tilde{F} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{Q} \mapsto \tilde{F}(\tilde{Q}).
 $$
 
-Writing $\tilde{Q} = \sum_\mu x_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:
+Writing $\tilde{Q} = \sum_\mu Q_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $Q_0, Q_1, Q_2, Q_3$:
 
 $$
-\tilde{F}(\tilde{Q}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
+\tilde{F}(\tilde{Q}) = F_0(Q_0, Q_1, Q_2, Q_3) e_0 + F_1(Q_0, Q_1, Q_2, Q_3) e_1 + F_2(Q_0, Q_1, Q_2, Q_3) e_2 + F_3(Q_0, Q_1, Q_2, Q_3) e_3.
 $$
 
 The restriction to $V$ reduces the number of independent real variables from eight to four.
 
 ### Partial Derivatives
 
-For each $\mu = 0, 1, 2, 3$, we define the **partial derivative** of $\tilde{F}$ with respect to $x_\mu$ by
+For each $\mu = 0, 1, 2, 3$, we define the **partial derivative** of $\tilde{F}$ with respect to $Q_\mu$ by
 
 $$
-\frac{\partial \tilde{F}}{\partial x_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial x_\mu} e_\nu.
+\frac{\partial \tilde{F}}{\partial Q_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
 $$
 
 The partial derivative acts component-wise on the coefficients. Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately.
 
-We write $\partial_\mu$ for $\partial/\partial x_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.
+We write $\partial_\mu$ for $\partial/\partial Q_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.
 
 ## The Differential Operators
 
@@ -509,7 +509,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $\|\tilde{Q}\|_E$ | Euclidean norm on $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$ |
 | $d(\tilde P, \tilde{Q}) = \|\tilde P - \tilde{Q}\|_E$ | Distance |
-| $V$ | A four-dimensional real subspace, coordinates $x_0, x_1, x_2, x_3$ |
+| $V$ | A four-dimensional real subspace, coordinates $Q_0, Q_1, Q_2, Q_3$ |
 | $\tilde{F}$ | Split-biquaternion-valued function on $V$ |
 | $\tilde{\nabla}$ | Split-biquaternion gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of the gradient |

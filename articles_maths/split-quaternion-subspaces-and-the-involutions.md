@@ -43,9 +43,9 @@ All three maps are $\mathbb{R}$-linear involutions: each fixes $\mathbb{R}$ poin
 
 **Proposition.**
 
-- $\alpha$ is an $\mathbb{R}$-**algebra automorphism**: $\alpha(\tilde q y) = \alpha(\tilde q)\alpha(y)$ and $\alpha(1) = 1$.
-- $\rho$ is an $\mathbb{R}$-**algebra anti-automorphism**: $\rho(\tilde q y) = \rho(y)\rho(\tilde q)$ and $\rho(1) = 1$.
-- ${}^{\natural}$ is an $\mathbb{R}$-algebra anti-automorphism as well: $(\tilde q y)^{\natural} = y^{\natural}\,\tilde{q}^{\natural}$ and $\bar{1} = 1$.
+- $\alpha$ is an $\mathbb{R}$-**algebra automorphism**: $\alpha(\tilde q \tilde p) = \alpha(\tilde q)\alpha(\tilde p)$ and $\alpha(1) = 1$.
+- $\rho$ is an $\mathbb{R}$-**algebra anti-automorphism**: $\rho(\tilde q \tilde p) = \rho(\tilde p)\rho(\tilde q)$ and $\rho(1) = 1$.
+- ${}^{\natural}$ is an $\mathbb{R}$-algebra anti-automorphism as well: $(\tilde q \tilde p)^{\natural} = \tilde p^{\natural}\,\tilde{q}^{\natural}$ and $\bar{1} = 1$.
 
 **Proof.** For $\alpha$, it is defined on generators, where the relations are preserved: $\alpha(e_1)^2 = (-e_1)^2 = -1$, $\alpha(e_2)^2 = (-e_2)^2 = +1$, and $\alpha(e_3) = e_3 = e_1 e_2 = \alpha(e_1)\alpha(e_2)$, since $(-e_1)(-e_2) = e_1 e_2$; so $\alpha$ extends to an automorphism. For $\rho$, the products reverse: $\rho(e_1 e_2) = \rho(e_3) = -e_3$, while $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3$, and the other products are similar, so $\rho$ is an anti-automorphism. The conjugation is the composite $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$, computed below, and the composite of an automorphism with an anti-automorphism is an anti-automorphism.
 

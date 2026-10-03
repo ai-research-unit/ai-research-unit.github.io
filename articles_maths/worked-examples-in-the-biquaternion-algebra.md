@@ -3,7 +3,7 @@
 
 ## Introduction
 
-*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
+*Biquaternion Algebra ($\mathbb{B}$)* developed the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its six distinguished real subspaces, its three decompositions, and the product whose table is written out below is the one of *Biquaternion Multiplication*. This article works the computations out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the six subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the subject of *Biquaternion Idempotents and Projections*, which owns the general construction.
 
 Notation follows *Biquaternion Algebra ($\mathbb{B}$)*. A biquaternion is written in developed form
 
@@ -83,7 +83,7 @@ $$
 \tilde{Q}^{\flat} = -\tilde{Q}^{*} = -(2-i)e_0 + (1+i)e_1 + 3e_2 - ie_3 .
 $$
 
-Each is an involution, and the Klein group is visible in the relations $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat} = -\tilde{Q}$ and $(\tilde{Q}^{\flat})^{\dagger} = -\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give one of the six subspaces tabulated above: for instance, the Hermitian part of $\tilde{Q}$ is $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 2e_0 - ie_1 + ie_3$, which agrees with the table.
+Each is an involution, and the Klein group is visible in the relations $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \bar{\tilde{Q}}^{\natural}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat} = -\tilde{Q}$ and $(\tilde{Q}^{\flat})^{\dagger} = -\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give one of the six subspaces tabulated above: for instance, the Hermitian part of $\tilde{Q}$ is $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 2e_0 - ie_1 + ie_3$, which agrees with the table.
 
 ## Idempotents and the Two Minimal Left Ideals
 

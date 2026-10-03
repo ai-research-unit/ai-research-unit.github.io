@@ -120,12 +120,12 @@ so that $\Omega$ acts on the Minkowski space as $-\mathrm{id}$, the product of p
 
 ## The Two Involutions
 
-**Theorem (the dagger is not the Clifford conjugation).** Let $\mathrm{rev}$ be the reversion of $\mathrm{Cl}_{1,3}$, the anti-automorphism fixing every vector; on the even slot it is the Clifford conjugation. Restricted to $\mathbb{B}$ the two involutions ${}^{*}$ and $\mathrm{rev}$ are different: $\mathrm{rev}$ fixes $e_0$, negates $e_1,e_2,e_3$, fixes $i$ and $\Omega$, and negates the boosts $ie_k$, while ${}^{*}$ fixes $e_0$, negates $e_1,e_2,e_3$, negates $i$, and fixes the boosts $ie_k$. Their composite is the real-structure automorphism $\sigma$ of the algebra, the map $z\otimes h\mapsto\bar{z}\otimes h$ that conjugates the coefficients and fixes the quaternion units,
+**Theorem (the dagger is not the Clifford conjugation).** Let $\mathrm{rev}$ be the reversion of $\mathrm{Cl}_{1,3}$, the anti-automorphism fixing every vector; on the even slot it is the Clifford conjugation. Restricted to $\mathbb{B}$ the two involutions ${}^{*}$ and $\mathrm{rev}$ are different: $\mathrm{rev}$ fixes $e_0$, negates $e_1,e_2,e_3$, fixes $i$ and $\Omega$, and negates the boosts $ie_k$, while ${}^{*}$ fixes $e_0$, negates $e_1,e_2,e_3$, negates $i$, and fixes the boosts $ie_k$. Their composite is the real-structure automorphism $\sigma$ of the algebra, the map $A\otimes h\mapsto\bar{A}\otimes h$ that conjugates the coefficients and fixes the quaternion units,
 $$
 \mathrm{rev}={}^{*}\circ\sigma .
 $$
 
-**Proof.** The dictionary sends $e_k$ to a spatial bivector and $i$ to $-\Omega$. Reversion negates every bivector, so it negates $e_k$ and $ie_k$, and it fixes the identity and the degree-four volume element. The Hermitian dagger negates the coefficients of $e_1,e_2,e_3$ and of $i$, and fixes $i$ times a quaternion unit. The two agree on $e_0$ and on $e_k$, and differ on $i$ and on $ie_k$; the composite therefore fixes the quaternion units and negates $i$, which is the automorphism $z\otimes h\mapsto\bar{z}\otimes h$.
+**Proof.** The dictionary sends $e_k$ to a spatial bivector and $i$ to $-\Omega$. Reversion negates every bivector, so it negates $e_k$ and $ie_k$, and it fixes the identity and the degree-four volume element. The Hermitian dagger negates the coefficients of $e_1,e_2,e_3$ and of $i$, and fixes $i$ times a quaternion unit. The two agree on $e_0$ and on $e_k$, and differ on $i$ and on $ie_k$; the composite therefore fixes the quaternion units and negates $i$, which is the automorphism $A\otimes h\mapsto\bar{A}\otimes h$.
 
 **Remark (verified).** The composite was recomputed: the reversion of the volume element is the volume element, the reversion of $ie_1$ is $-ie_1$, the dagger of $i$ is $-i$, and the identity $\mathrm{rev}={}^{*}\circ\sigma$ held on random elements of the algebra to machine precision. The equality $\mathrm{rev}(\tilde{Q})=\tilde{Q}^{*}$ holds exactly on the real-quaternion slice, since it is equivalent to $\sigma$ fixing the element and $\sigma$ conjugates the four coefficients.
 
@@ -169,7 +169,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Minkowski s
 | $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$ | The signed inner conjugation; $\mathrm{Ad}_{\tilde{Q}}(U)=\tilde{Q}U\tilde{Q}^{-1}$ is the inner automorphism |
 | $\Gamma$, $N_{\mathrm{Cl}}(U)=UU^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{N_{\mathrm{Cl}}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
 | $\Omega=\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$ | The volume element of $\mathrm{Cl}_{1,3}$, $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
-| $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $z\otimes h\mapsto\bar{z}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
+| $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $A\otimes h\mapsto\bar{A}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=N(\tilde{Q})\mathrm{Ad}_{\tilde{Q}}$ |
 | $P,PT$ | Parity, the quaternion conjugation of the argument; the product of parity and time reversal, the negation; neither is a sandwich |
 | $O(1,3),SO^{+}(1,3)$ | The orthogonal group of the form and its identity component; their components are indexed by the determinant and the time orientation |

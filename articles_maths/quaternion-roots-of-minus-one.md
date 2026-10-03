@@ -18,7 +18,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2
 **Theorem.** A quaternion $\tilde q\in\mathbb{H}$ satisfies $\tilde q^2 = -1$ if and only if $\tilde q$ is a pure imaginary quaternion with $N = 1$,
 
 $$
-\tilde q\in\operatorname{Im}\mathbb{H}\cap Sp(1) = \{x\in\operatorname{Im}\mathbb{H} : N(x) = 1\}.
+\tilde q\in\operatorname{Im}\mathbb{H}\cap Sp(1) = \{\tilde q\in\operatorname{Im}\mathbb{H} : N(\tilde q) = 1\}.
 $$
 
 *Proof.* Write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_0\in\mathbb{R}$ and $\mathbf{q}\in\operatorname{Im}\mathbb{H}$. The square is
@@ -57,7 +57,7 @@ Thus the quaternion algebra has a two-dimensional family of square roots of $-1$
 
 **Theorem.** The root set $\Sigma = \{\xi : \xi^2 = -1\}$ is a single conjugacy class of the unit group $\mathbb{H}^{\times}$ under the adjoint action, and the map $\tilde q\mapsto \tilde q e_1\tilde q^{-1}$ is a surjection $Sp(1)\to\Sigma$ with fibres the cosets of the stabiliser $U(1)$ of $e_1$.
 
-*Proof.* The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ of a unit quaternion preserves the imaginary subspace and the quaternion norm, hence carries $\Sigma$ to itself, and it is transitive on $\Sigma$: the transitivity of the adjoint action on the imaginary subspace is in *Quaternion Rotations and Reflections*. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $qe_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$.
+*Proof.* The adjoint action $\operatorname{Ad}_{\tilde q}(\tilde p) = \tilde q\tilde p\tilde q^{-1}$ of a unit quaternion preserves the imaginary subspace and the quaternion norm, hence carries $\Sigma$ to itself, and it is transitive on $\Sigma$: the transitivity of the adjoint action on the imaginary subspace is in *Quaternion Rotations and Reflections*. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $\tilde q e_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$.
 
 ### The Homogeneous Space
 
@@ -81,7 +81,7 @@ Each root $\xi\in\Sigma$ is a unit quaternion, hence invertible, with $\xi^{-1} 
 
 ## The Relation to the Complex Structures on $\mathbb{R}^4$
 
-**Definition.** A **complex structure** on the real vector space $\mathbb{H}$ is a real-linear map $J : \mathbb{H}\to\mathbb{H}$ with $J^2 = -\mathrm{id}$. A complex structure $J$ is **compatible with the quaternion structure** if it is left multiplication by a root, $J = L_\xi$ with $\xi^2 = -1$, where $L_\xi(x) = \xi x$.
+**Definition.** A **complex structure** on the real vector space $\mathbb{H}$ is a real-linear map $J : \mathbb{H}\to\mathbb{H}$ with $J^2 = -\mathrm{id}$. A complex structure $J$ is **compatible with the quaternion structure** if it is left multiplication by a root, $J = L_\xi$ with $\xi^2 = -1$, where $L_\xi(\tilde q) = \xi\tilde q$.
 
 **Theorem.** For every $\xi\in\Sigma$ the operator $L_\xi$ of left multiplication by $\xi$ is a complex structure on $\mathbb{H}$, and the assignment $\xi\mapsto L_\xi$ is a bijection from $\Sigma$ onto the set of complex structures on $\mathbb{H}$ compatible with the quaternion structure.
 
@@ -118,7 +118,7 @@ The root set of $-1$ grows as soon as the coefficient field is enlarged, and the
 **Proposition.** In the split quaternion algebra $\mathbb{H}_{\mathrm{s}}$, with basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1e_2$, the solutions of $\xi^2 = -1$ are the points of the level set $N = 1$
 
 $$
-x_1^2 - x_2^2 - x_3^2 = 1, \qquad \xi = x_1e_1+x_2e_2+x_3e_3 ,
+q_1^2 - q_2^2 - q_3^2 = 1, \qquad \xi = q_1e_1+q_2e_2+q_3e_3 ,
 $$
 
 a set of dimension two rather than a surface of higher dimension.
@@ -128,7 +128,7 @@ The derivation is in *Split-Quaternion Roots of Minus One*, where the split quat
 | Algebra | Roots of $-1$ | Roots of $+1$ |
 |---|---|---|
 | $\mathbb{H}$ | the pure elements with $N = 1$ | $\{\pm1\}$ |
-| $\mathbb{H}_{\mathrm{s}}$ | the level set $x_1^2-x_2^2-x_3^2 = 1$ (in $x_0 = 0$) | the level set $x_2^2+x_3^2-x_1^2 = 1$ (in $x_0 = 0$), together with $\pm1$ |
+| $\mathbb{H}_{\mathrm{s}}$ | the level set $q_1^2-q_2^2-q_3^2 = 1$ (in $q_0 = 0$) | the level set $q_2^2+q_3^2-q_1^2 = 1$ (in $q_0 = 0$), together with $\pm1$ |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | a two-dimensional family together with further complex sheets | the roots $\xi i$ obtained from those of $-1$, including $\pm\mu i$ for a pure unit $\mu$ |
 
 The biquaternion root set is computed in *Biquaternion Square Roots of Minus One, Zero and Plus One*; it contains the pure roots but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.
@@ -155,7 +155,7 @@ The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because t
 | $Sp(1) = \{N = 1\}$ | The group $\{N = 1\}$ of units, from *Quaternion Norm and Invertibility* |
 | $U(1) = \{e^{e_1\theta}\}$ | Stabiliser of $e_1$, the commutant unit circle |
 | $\Sigma\cong Sp(1)/U(1)\cong SO(3)/SO(2)$ | Root set as a homogeneous space |
-| $L_\xi(x) = \xi x$ | Complex structure of left multiplication by a root |
+| $L_\xi(\tilde q) = \xi\tilde q$ | Complex structure of left multiplication by a root |
 | $I_1,I_2,I_3$ | Complex structures $L_{e_1},L_{e_2},L_{e_3}$, a quaternionic structure |
 | $\mathbb{H}_{\mathrm{s}}$ | Split quaternion algebra, for contrast |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, for contrast |

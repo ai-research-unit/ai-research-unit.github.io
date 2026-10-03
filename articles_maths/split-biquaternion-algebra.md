@@ -217,22 +217,16 @@ Each conjugation is an involution: applying it twice returns the original split 
 
 ### The Group of Conjugations
 
-The two conjugations ${}^{\natural}$ and $\bar{\cdot}$ commute and generate the group $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^\dagger\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2$; the anti-Hermitian conjugation $\flat = -{}^{*}$ is an involution outside this group:
+The two conjugations ${}^{\natural}$ and $\bar{\cdot}$ commute, and the Hermitian conjugation is their composite; the three, together with the identity, form the group $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2$:
 
 $$
-\overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}.
+\overline{\tilde{Q}^{\natural}} = \bar{\tilde{Q}}^{\natural} = \tilde{Q}^{*}.
 $$
 
-The Hermitian conjugation is the composition of the two:
+The anti-Hermitian conjugation $\flat = -{}^{*}$ is an involution outside this group:
 
 $$
-\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \overline{\tilde{Q}^{\natural}}.
-$$
-
-The anti-Hermitian conjugation is the negative of the Hermitian conjugation:
-
-$$
-\tilde{Q}^\flat = -\tilde{Q}^{*}.
+\tilde{Q}^{\flat} = -\tilde{Q}^{*}.
 $$
 
 So the four conjugations are not independent: they are determined by the two commuting involutions ${}^{\natural}$ and $\bar{\cdot}$, together with the sign choice in the definition of $\flat$.

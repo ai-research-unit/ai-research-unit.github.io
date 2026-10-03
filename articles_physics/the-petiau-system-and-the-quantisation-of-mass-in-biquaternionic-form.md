@@ -240,7 +240,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde{E}$ | Einstein–Mayer mass biquaternion |
 | $\tilde{C}$ | Petiau spin-0 field, closing the system |
 | $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; $N=0$ defines the singular elements |
-| \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}} | Hermitian conjugation (the source's biconjugation) |
+| $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Hermitian conjugation (the source's biconjugation) |
 | $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde{A}$ and $\tilde{B}$ |
 | $\det\Phi(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2$ | Determinant identity; vanishing forces a massless mode |
 | $\sigma=\tfrac12(e_0+i\hat{\nu})$ | Idempotent (nullquat), $\sigma^2=\sigma$, $N(\sigma)=0$ |

@@ -51,7 +51,7 @@ $$
 
 the set of zero divisors together with the origin; the **link** of the cone is $\mathcal{N} \cap \Sigma^3$.
 
-**Theorem.** The null cone is a cone on its link: $\mathcal{N} = \{\, t\, y : t \geq 0,\ y \in \mathcal{N}\cap\Sigma^3 \,\}$, and the link is a **torus**,
+**Theorem.** The null cone is a cone on its link: $\mathcal{N} = \{\, t\, \tilde p : t \geq 0,\ \tilde p \in \mathcal{N}\cap\Sigma^3 \,\}$, and the link is a **torus**,
 
 $$
 \mathcal{N} \cap \Sigma^3 \;\cong\; S^1 \times S^1 = T^2 .
@@ -59,7 +59,7 @@ $$
 
 Hence $\mathcal{N}\setminus\{0\}$ is homotopy equivalent to $T^2$, with $\pi_1(\mathcal{N}\setminus\{0\}) = \mathbb{Z}^2$.
 
-**Proof.** A null point $\tilde q \neq 0$ is $t y$ with $t = |\tilde q|_E > 0$ and $y$ on the sphere; the cone property is homogeneity of $N$. On the sphere the equations $q_0^2+q_1^2 = q_2^2+q_3^2$ and $q_0^2+q_1^2+q_2^2+q_3^2 = 1$ give $q_0^2+q_1^2 = q_2^2+q_3^2 = \tfrac12$, so $(q_0,q_1)$ lies on the circle of radius $1/\sqrt2$ and $(q_2,q_3)$ on the circle of radius $1/\sqrt2$, independently: the link is the product of the two circles, a torus. The radial retraction makes $\mathcal{N}\setminus\{0\}$ homotopy equivalent to the link.
+**Proof.** A null point $\tilde q \neq 0$ is $t \tilde p$ with $t = |\tilde q|_E > 0$ and $\tilde p$ on the sphere; the cone property is homogeneity of $N$. On the sphere the equations $q_0^2+q_1^2 = q_2^2+q_3^2$ and $q_0^2+q_1^2+q_2^2+q_3^2 = 1$ give $q_0^2+q_1^2 = q_2^2+q_3^2 = \tfrac12$, so $(q_0,q_1)$ lies on the circle of radius $1/\sqrt2$ and $(q_2,q_3)$ on the circle of radius $1/\sqrt2$, independently: the link is the product of the two circles, a torus. The radial retraction makes $\mathcal{N}\setminus\{0\}$ homotopy equivalent to the link.
 
 The cone is singular at the origin, and the singularity is the vertex of the cone on the torus; away from the origin the cone is a smooth three-manifold.
 

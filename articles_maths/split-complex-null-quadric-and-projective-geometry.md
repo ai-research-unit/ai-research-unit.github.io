@@ -3,37 +3,37 @@
 
 ## Introduction
 
-The norm $N(Z)=a^2-b^2$ of the split-complex algebra decides invertibility (*Split-Complex Norm and Invertibility*) and vanishes exactly on the zero divisors together with the origin (*Split-Complex Zero Divisors*). Both treatments are algebraic; this article treats the form geometrically. It polarises $N$ and reads $\mathbb{D}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{e^{jt}\}$ as the projectivity fixing them; and relates the picture to the projective quadric of the biquaternion algebra and to the hyperbolic geometry developed in *Hyperbolic Rotations*. It is the two-dimensional counterpart of *Biquaternion Topology*, and the degeneration is complete: the smooth quadric surface of the biquaternion theory drops to two projective points.
+The norm $N(A)=a^2-a'^2$ of the split-complex algebra decides invertibility (*Split-Complex Norm and Invertibility*) and vanishes exactly on the zero divisors together with the origin (*Split-Complex Zero Divisors*). Both treatments are algebraic; this article treats the form geometrically. It polarises $N$ and reads $\mathbb{D}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{e^{jt}\}$ as the projectivity fixing them; and relates the picture to the projective quadric of the biquaternion algebra and to the hyperbolic geometry developed in *Hyperbolic Rotations*. It is the two-dimensional counterpart of *Biquaternion Topology*, and the degeneration is complete: the smooth quadric surface of the biquaternion theory drops to two projective points.
 
 The article owns the quadratic space $(\mathbb{D},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Split-Complex Norm and Invertibility*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1$, $j$ with $j^2=+1$; a general element is $Z=a+j b$ with $a,b\in\mathbb{R}$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; norm $N(Z)=a^2-b^2$, of signature $(1,1)$. The projective line of one-dimensional subspaces is written $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$, with homogeneous coordinates $[a:b]$ and affine coordinate $t=b/a$.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1$, $j$ with $j^2=+1$; a general element is $A=a+j a'$ with $a,a'\in\mathbb{R}$; idempotents $\Pi_\pm=\tfrac12(1\pm j)$; norm $N(A)=a^2-a'^2$, of signature $(1,1)$. The projective line of one-dimensional subspaces is written $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$, with homogeneous coordinates $[a:a']$ and affine coordinate $t=a'/a$.
 
 ## The Quadratic Space
 
-The norm $N(a,b)=a^2-b^2$ and its polarisation are defined and owned by *Split-Complex Norm and Invertibility*; the present article reads them geometrically. The form is homogeneous of degree two, and it polarises to the symmetric real-bilinear form
+The norm $N(a,a')=a^2-a'^2$ and its polarisation are defined and owned by *Split-Complex Norm and Invertibility*; the present article reads them geometrically. The form is homogeneous of degree two, and it polarises to the symmetric real-bilinear form
 
 $$
-B(Z,W)=a c-b d, \qquad Z=a+j b,\ W=c+j d,
+B(A,B)=a b-a' b', \qquad A=a+j a',\ B=b+j b',
 $$
 
 whose Gram matrix in the basis $\{1,j\}$ is $\mathbf{G}=\operatorname{diag}(1,-1)$. The pair $(\mathbb{D},N)$ is therefore a non-degenerate real quadratic space of dimension $2$ and signature $(1,1)$: the basis $\{1,j\}$ is orthogonal, with $N(1)=+1$ and $N(j)=-1$, and the Gram determinant is $\det\mathbf{G}=-1\neq0$. This is the geometry's input rather than its construction: the algebra owns the form, and the geometry reads it.
 
-The form is **indefinite** and **split**: its discriminant is $\operatorname{disc}(N)=4>0$, a square in $\mathbb{R}$, and the form is isometric to the difference of two squares. The comparison with the definite case is the whole content of the geometry: the complex field carries the positive definite form $a^2+b^2$, whose projective null quadric is empty over $\mathbb{R}$, whereas the split-complex algebra carries $a^2-b^2$, whose projective null quadric is the pair of points computed below. The motions the form generates — its isometry group $O(1,1)$ and the hyperbolic rotations of its identity component — are the subject of *Hyperbolic Rotations*.
+The form is **indefinite** and **split**: its discriminant is $\operatorname{disc}(N)=4>0$, a square in $\mathbb{R}$, and the form is isometric to the difference of two squares. The comparison with the definite case is the whole content of the geometry: the complex field carries the positive definite form $a^2+a'^2$, whose projective null quadric is empty over $\mathbb{R}$, whereas the split-complex algebra carries $a^2-a'^2$, whose projective null quadric is the pair of points computed below. The motions the form generates — its isometry group $O(1,1)$ and the hyperbolic rotations of its identity component — are the subject of *Hyperbolic Rotations*.
 
 ## The Isotropic Cone and the Null Lines
 
-**Definition.** A vector $Z\neq0$ is **isotropic** or **null** if $N(Z)=0$, and the **isotropic cone** (the null cone) is $\mathcal{N}=\{Z:N(Z)=0\}$.
+**Definition.** A vector $A\neq0$ is **isotropic** or **null** if $N(A)=0$, and the **isotropic cone** (the null cone) is $\mathcal{N}=\{A:N(A)=0\}$.
 
 **Theorem.** The isotropic cone is the union of the two **null lines**
 
 $$
-\mathcal{N}=\{a=b\}\cup\{a=-b\}=\mathbb{R}(1+j)\ \cup\ \mathbb{R}(1-j)=\mathbb{R}\Pi_1\ \cup\ \mathbb{R}\Pi_2,
+\mathcal{N}=\{a=a'\}\cup\{a=-a'\}=\mathbb{R}(1+j)\ \cup\ \mathbb{R}(1-j)=\mathbb{R}\Pi_1\ \cup\ \mathbb{R}\Pi_2,
 $$
 
 each a maximal totally isotropic subspace of $(\mathbb{D},N)$; the two lines are the eigenspaces of the conjugation and are interchanged by it. There are no other isotropic vectors.
 
-**Proof.** $N(Z)=a^2-b^2=(a-b)(a+b)$, so $N(Z)=0$ iff $a=b$ or $a=-b$, which are the two lines displayed. On either line the restricted form vanishes identically, so each is totally isotropic; a two-dimensional space of signature $(1,1)$ has totally isotropic subspaces only of dimension $1$, so each is maximal. The idempotents $\Pi_\pm=\tfrac12(1\pm j)$ span the two lines, and $\bar \Pi_1 = \Pi_2$.
+**Proof.** $N(A)=a^2-a'^2=(a-a')(a+a')$, so $N(A)=0$ iff $a=a'$ or $a=-a'$, which are the two lines displayed. On either line the restricted form vanishes identically, so each is totally isotropic; a two-dimensional space of signature $(1,1)$ has totally isotropic subspaces only of dimension $1$, so each is maximal. The idempotents $\Pi_\pm=\tfrac12(1\pm j)$ span the two lines, and $\bar \Pi_1 = \Pi_2$.
 
 So the null cone is a **degenerate quadric**: two lines meeting at the apex, rather than the nonsingular cone of a definite form. It contains the zero divisors of the algebra together with $0$, and the two lines are exactly the two isotropic directions of the Lorentzian plane.
 
@@ -45,7 +45,7 @@ $$
 \mathbb{P}(\mathbb{D})=(\mathbb{D}\setminus\{0\})/\mathbb{R}^\times \cong \mathbb{RP}^1\cong S^1,
 $$
 
-with a point written $[a:b]$ for the line spanned by $a+j b$; the affine coordinate is $t=b/a$ on the chart $a\neq0$, with the remaining point $[0:1]=[j]$ the point at infinity of the chart.
+with a point written $[a:a']$ for the line spanned by $a+j a'$; the affine coordinate is $t=a'/a$ on the chart $a\neq0$, with the remaining point $[0:1]=[j]$ the point at infinity of the chart.
 
 **Theorem (the projective null quadric).** The projectivised isotropic cone is the two-point set
 
@@ -77,7 +77,7 @@ $$
 
 a Möbius transformation **fixing the two points at infinity** $t=\pm1$.
 
-**Proof.** Multiplication by $e^{js}$ has matrix $\begin{pmatrix}\cosh s & \sinh s \\ \sinh s & \cosh s\end{pmatrix}$ on coordinates $(a,b)$, and preserves $N$ because $N(e^{js}Z)=N(e^{js})N(Z)=N(Z)$ with $N(e^{js})=\cosh^2 s-\sinh^2 s=1$. On the ratio $t=b/a$ it acts by $t'=\dfrac{a\sinh s+b\cosh s}{a\cosh s+b\sinh s}=\dfrac{t+\tanh s}{1+t\tanh s}$, the stated Möbius map. Its fixed points solve $t=(t+\tau)/(1+\tau t)$, that is $\tau t^2=\tau$, so $t=\pm1$ for $\tau\neq0$, which are the isotropic points.
+**Proof.** Multiplication by $e^{js}$ has matrix $\begin{pmatrix}\cosh s & \sinh s \\ \sinh s & \cosh s\end{pmatrix}$ on coordinates $(a,a')$, and preserves $N$ because $N(e^{js}A)=N(e^{js})N(A)=N(A)$ with $N(e^{js})=\cosh^2 s-\sinh^2 s=1$. On the ratio $t=a'/a$ it acts by $t'=\dfrac{a\sinh s+a'\cosh s}{a\cosh s+a'\sinh s}=\dfrac{t+\tanh s}{1+t\tanh s}$, the stated Möbius map. Its fixed points solve $t=(t+\tau)/(1+\tau t)$, that is $\tau t^2=\tau$, so $t=\pm1$ for $\tau\neq0$, which are the isotropic points.
 
 **Corollary (the velocity-addition law).** The composition of two projectivities is the projectivity of the sum, $\tau\mapsto\tanh(s_1+s_2)=\dfrac{\tau_1+\tau_2}{1+\tau_1\tau_2}$; the parameter $\tau=\tanh s$ obeys the addition law of hyperbolic tangents, the two-dimensional analogue of the tangent-addition law of the complex circle.
 
@@ -127,7 +127,7 @@ The biquaternion null quadric in $\mathbb{P}^3(\mathbb{C})$ is the smooth Segre 
 
 | feature | $\mathbb{B}$ | $\mathbb{D}$ |
 |---|---|---|
-| quadratic space | $(\mathbb{C}^4, \sum_\mu Q_\mu^2)$, non-degenerate | $(\mathbb{R}^2, a^2-b^2)$, signature $(1,1)$ |
+| quadratic space | $(\mathbb{C}^4, \sum_\mu Q_\mu^2)$, non-degenerate | $(\mathbb{R}^2, a^2-a'^2)$, signature $(1,1)$ |
 | null cone | nonsingular complex hypersurface, real dim $6$ | two real lines, real dim $1$ |
 | projective null quadric | $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$ | $Q^0$, two points of $\mathbb{RP}^1$ |
 | rulings | two $\mathbb{P}^1$-families (the spinor lines) | two lines, each a single $1$-dimensional family |
@@ -138,7 +138,7 @@ The pattern is that the null cone of $\mathbb{B}$ is a nonsingular quadric whose
 
 ## Summary
 
-The split-complex norm $N(a,b)=a^2-b^2$ polarises to the Lorentzian inner product $B(Z,W)=a c-b d$ with Gram matrix $\operatorname{diag}(1,-1)$, making $(\mathbb{D},N)$ a non-degenerate real quadratic space of signature $(1,1)$. Its isotropic cone is the pair of null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, each maximal totally isotropic and each spanned by an idempotent; the two lines are interchanged by the conjugation. The projective null quadric is the two-point set $Q^0=\{[1:1],[1:-1]\}\subset\mathbb{RP}^1$, whose points are the two points at infinity of the hyperbolic geometry: they are the absolute of the form, and they divide the projective line into the arc of positive directions and the arc of negative directions.
+The split-complex norm $N(a,a')=a^2-a'^2$ polarises to the Lorentzian inner product $B(A,B)=a b-a' b'$ with Gram matrix $\operatorname{diag}(1,-1)$, making $(\mathbb{D},N)$ a non-degenerate real quadratic space of signature $(1,1)$. Its isotropic cone is the pair of null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, each maximal totally isotropic and each spanned by an idempotent; the two lines are interchanged by the conjugation. The projective null quadric is the two-point set $Q^0=\{[1:1],[1:-1]\}\subset\mathbb{RP}^1$, whose points are the two points at infinity of the hyperbolic geometry: they are the absolute of the form, and they divide the projective line into the arc of positive directions and the arc of negative directions.
 
 The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by the Möbius projectivity $t\mapsto(t+\tanh s)/(1+t\tanh s)$, fixing the two points at infinity; the full stabiliser of the pair is the one-dimensional group $\mathbb{R}^\times$, of which $\{e^{js}\}$ is the identity component. On the interval between the points at infinity the group acts as translations of the hyperbolic line, and the hyperbolic distance is the logarithm of the cross-ratio to the two points at infinity, $\tfrac12\lvert\ln(t_1,t_2\,;-1,1)\rvert$. The relation to the biquaternion quadric is a degeneration: the smooth Segre quadric surface $\mathbb{P}^1\times\mathbb{P}^1$ of $\mathbb{B}$ drops to two projective points, its two rulings to the two null directions, and its isometry group to the one-dimensional $O(1,1)$ whose identity component is the hyperbolic group.
 
@@ -147,13 +147,13 @@ The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
-| $Z = a + j b$ | General split complex number |
-| $N(Z) = a^2 - b^2$ | Norm, signature $(1,1)$ |
-| $B(Z,W) = a c - b d$ | Polar form, Lorentzian inner product |
+| $A = a + j a'$ | General split complex number |
+| $N(A) = a^2 - a'^2$ | Norm, signature $(1,1)$ |
+| $B(A,B) = a b - a' b'$ | Polar form, Lorentzian inner product |
 | $\mathbf{G} = \operatorname{diag}(1,-1)$ | Gram matrix of $B$ |
-| $\mathcal{N}$ | Isotropic cone; the two null lines $a = \pm b$ |
+| $\mathcal{N}$ | Isotropic cone; the two null lines $a = \pm a'$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
-| $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$ | Real projective line; $[a:b]$, affine coordinate $t = b/a$ |
+| $\mathbb{P}(\mathbb{D})\cong\mathbb{RP}^1$ | Real projective line; $[a:a']$, affine coordinate $t = a'/a$ |
 | $Q^0 = \{[1:1],[1:-1]\}$ | Projective null quadric; the two points at infinity |
 | $t = \pm1$ | The two isotropic points in the affine coordinate |
 | $e^{js} = \cosh s + j\sinh s$ | Hyperbolic one-parameter group |
@@ -166,7 +166,7 @@ The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by t
 ## Further Reading
 
 - O. Timothy O'Meara, *Introduction to Quadratic Forms* (Springer, Grundlehren der Mathematischen Wissenschaften 117, 1973), for quadratic spaces, signature, isotropy and totally isotropic subspaces.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, Graduate Studies in Mathematics 67, 2005), for the split form $x^2-y^2$, its discriminant and its isometry group.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, Graduate Studies in Mathematics 67, 2005), for the split form $a^2-a'^2$, its discriminant and its isometry group.
 - H. S. M. Coxeter, *The Real Projective Plane* (Springer, 3rd ed. 1993), for projectivities of the projective line, fixed points and cross-ratio.
 - Jürgen Richter-Gebert, *Perspectives on Projective Geometry* (Springer, 2011), for the absolute, the Cayley–Klein model and hyperbolic distance as a cross-ratio.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic rotation group and the geometry of the split complex plane.

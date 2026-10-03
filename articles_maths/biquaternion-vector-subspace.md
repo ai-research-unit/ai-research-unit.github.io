@@ -118,7 +118,7 @@ because the cross product of a triple with itself vanishes. Every element of the
 
 **Proposition.** $\mathrm{Vect}(\mathbb{B})$ is not a module over the quaternion subspace: for $h \in \mathbb{H}_{\mathbb{B}}$ and $\tilde{Q} \in \mathrm{Vect}(\mathbb{B})$ the scalar part of $h\tilde{Q}$ is $-\sum_{k} h_k Q_k$, which does not vanish in general. It is not a module over the anti-quaternion subspace either, for the same reason with $h$ replaced by $ih'$. It is a module over the centre subspace.
 
-**Proof.** The scalar part of $h\tilde{Q}$ is read from the product formula, and it vanishes for all pairs only in the degenerate cases $h = 0$ or $Q = 0$; the centre is contained in the commuting elements and acts by scalar extension.
+**Proof.** The scalar part of $h\tilde{Q}$ is read from the product formula, and it vanishes for all pairs only in the degenerate cases $h = 0$ or $\tilde{Q} = 0$; the centre is contained in the commuting elements and acts by scalar extension.
 
 ## The Biquaternion Norm
 
@@ -301,7 +301,8 @@ The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quate
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the multiplication of $\mathbb{B}$ and the scalar–vector decomposition
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the scalar–vector decomposition
+- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product of $\mathbb{B}$ and its cross-product term
 - *Biquaternion Centre Subspace* (`articles_maths/biquaternion-centre-subspace.md`), the fixed companion of the present subspace
 - *Biquaternion Idempotents and Projections* (`articles_maths/biquaternion-idempotents-and-projections.md`), for the classification whose non-trivial idempotents all lie outside the subspace
 - *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the off-diagonal Peirce corners $\tilde T, \tilde S$ that the subspace carries

@@ -7,7 +7,7 @@ The complex numbers are the field obtained by adjoining to $\mathbb{R}$ a root o
 
 This article constructs $\mathbb{C}$, records its field, order-theoretic and automorphism structure, develops conjugation and the norm and trace of the quadratic extension, describes its roots of unity, and classifies it among algebraically closed fields by the Steinitz theorem. The fundamental theorem of algebra and the algebraic closedness of $\mathbb{C}$ are proved in *Real-Closed and Complete Ordered Fields* and *Algebraically Closed Fields* and are used here; the analytic theory of holomorphic functions on $\mathbb{C}$ belongs to the companion articles *Complex Analysis* and *Several Complex Variables*, and only the algebraic and topological structure is developed here.
 
-Throughout, $\mathbb{R}$ is the complete ordered field and $i$ is a fixed square root of $-1$. The quadratic form $N(Z) = Z\bar Z$ is the norm of the quadratic extension $\mathbb{C}/\mathbb{R}$, in the sense of *Field Extensions*.
+Throughout, $\mathbb{R}$ is the complete ordered field and $i$ is a fixed square root of $-1$. The quadratic form $N(A) = A\bar A$ is the norm of the quadratic extension $\mathbb{C}/\mathbb{R}$, in the sense of *Field Extensions*.
 
 ## Construction of $\mathbb{C}$
 
@@ -22,16 +22,16 @@ $$
 is a field of characteristic $0$ and degree $2$ over $\mathbb{R}$. Writing $i$ for the class of $x$, every element has a unique expression
 
 $$
-Z = a + i b, \qquad a, b \in \mathbb{R}, \qquad i^2 = -1,
+A = a + i a', \qquad a, a' \in \mathbb{R}, \qquad i^2 = -1,
 $$
 
 and the field operations are
 
 $$
-(a + i b) + (c + i d) = (a+c) + (b+d)i, \qquad (a+i b)(c+i d) = (ac - bd) + (ad + bc)i .
+(a + i a') + (b + i b') = (a+b) + (a'+b')i, \qquad (a+i a')(b+i b') = (ab - a'b') + (ab' + a'b)i .
 $$
 
-**Proof.** $x^2 + 1$ has no real root and has degree $2$, so it is irreducible; the quotient of a ring by an irreducible polynomial is a field, by *Fields*. The normal form $a + i b$ is the division algorithm in $\mathbb{R}[x]$ modulo $x^2+1$, and the multiplication formula is the reduction of the product using $i^2 = -1$. The characteristic is that of $\mathbb{R}$, namely $0$.
+**Proof.** $x^2 + 1$ has no real root and has degree $2$, so it is irreducible; the quotient of a ring by an irreducible polynomial is a field, by *Fields*. The normal form $a + i a'$ is the division algorithm in $\mathbb{R}[x]$ modulo $x^2+1$, and the multiplication formula is the reduction of the product using $i^2 = -1$. The characteristic is that of $\mathbb{R}$, namely $0$.
 
 **Corollary.** $\mathbb{C}$ is a splitting field of $x^2 + 1$ over $\mathbb{R}$, and $\{1, i\}$ is a basis of $\mathbb{C}$ as an $\mathbb{R}$-vector space; the theory of that vector-space structure belongs to *Vector Spaces*, and only the basis and the degree $[\mathbb{C}:\mathbb{R}] = 2$ are used here.
 
@@ -75,19 +75,19 @@ is a chain of fields above the prime field: $\mathbb{Q}$ is the prime field of b
 
 ### Conjugation
 
-**Definition.** The **complex conjugate** of $Z = a + i b$ is
+**Definition.** The **complex conjugate** of $A = a + i a'$ is
 
 $$
-\bar Z = a - i b .
+\bar A = a - i a' .
 $$
 
-**Proposition.** Conjugation is an automorphism of $\mathbb{C}$ with $\overline{\bar Z} = Z$, it is the identity exactly on $\mathbb{R}$, and it satisfies
+**Proposition.** Conjugation is an automorphism of $\mathbb{C}$ with $\overline{\bar A} = A$, it is the identity exactly on $\mathbb{R}$, and it satisfies
 
 $$
-\overline{Z + W} = \bar Z + \bar W, \qquad \overline{ZW} = \bar Z\, \bar W, \qquad \overline{Z^{-1}} = \bar Z^{-1}
+\overline{A + B} = \bar A + \bar B, \qquad \overline{AB} = \bar A\, \bar B, \qquad \overline{A^{-1}} = \bar A^{-1}
 $$
 
-for $Z \neq 0$. It is the unique nontrivial $\mathbb{R}$-automorphism of $\mathbb{C}$:
+for $A \neq 0$. It is the unique nontrivial $\mathbb{R}$-automorphism of $\mathbb{C}$:
 
 $$
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \operatorname{Gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}.
@@ -95,27 +95,27 @@ $$
 
 **Proof.** The identities are immediate from the multiplication formula. An $\mathbb{R}$-automorphism $\sigma$ satisfies $\sigma(i)^2 = \sigma(-1) = -1$, so $\sigma(i) = \pm i$, and $\sigma$ is determined by $\sigma(i)$ because $\{1,i\}$ is an $\mathbb{R}$-basis; hence there are at most two, and conjugation is a nontrivial one.
 
-**Definition.** An element $Z \in \mathbb{C}$ is **real** if $\bar Z = Z$ and **imaginary** if $\bar Z = -Z$; write
+**Definition.** An element $A \in \mathbb{C}$ is **real** if $\bar A = A$ and **imaginary** if $\bar A = -A$; write
 
 $$
-\operatorname{Re}(Z) = \tfrac12(Z + \bar Z), \qquad \operatorname{Im}(Z) = \tfrac{1}{2i}(Z - \bar Z),
+\operatorname{Re}(A) = \tfrac12(A + \bar A), \qquad \operatorname{Im}(A) = \tfrac{1}{2i}(A - \bar A),
 $$
 
-so that $\mathbb{R}$ is the fixed field of conjugation, $\operatorname{Im}(Z) \in \mathbb{R}$ for every $Z$, and the map $Z \mapsto \operatorname{Im}(Z)\, i = \tfrac12(Z - \bar Z)$ has image the subspace $i\mathbb{R}$ of purely imaginary elements.
+so that $\mathbb{R}$ is the fixed field of conjugation, $\operatorname{Im}(A) \in \mathbb{R}$ for every $A$, and the map $A \mapsto \operatorname{Im}(A)\, i = \tfrac12(A - \bar A)$ has image the subspace $i\mathbb{R}$ of purely imaginary elements.
 
-**Remark (the norm as a form).** The norm as a *form and a distance* — its positive definiteness, the modulus $\lvert Z \rvert = \sqrt{N(Z)}$, the unit circle and the polar split $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ — is a structure of the topology layer, developed in *Complex Norm and Invertibility* and not here. What the algebra layer uses is the norm and the trace of the quadratic extension, which are elements of $\mathbb{R}$ attached to each $Z$.
+**Remark (the norm as a form).** The norm as a *form and a distance* — its positive definiteness, the modulus $\lvert A \rvert = \sqrt{N(A)}$, the unit circle and the polar split $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ — is a structure of the topology layer, developed in *Complex Norm and Invertibility* and not here. What the algebra layer uses is the norm and the trace of the quadratic extension, which are elements of $\mathbb{R}$ attached to each $A$.
 
 ### Norm and Trace of the Quadratic Extension
 
-**Theorem.** For $Z \in \mathbb{C}$ the **trace** $T(Z) = Z + \bar Z = 2\operatorname{Re}(Z)$ and the norm $N(Z) = Z\bar Z$ are elements of $\mathbb{R}$, and if $Z \notin \mathbb{R}$ then the minimal polynomial of $Z$ over $\mathbb{R}$ is
+**Theorem.** For $A \in \mathbb{C}$ the **trace** $T(A) = A + \bar A = 2\operatorname{Re}(A)$ and the norm $N(A) = A\bar A$ are elements of $\mathbb{R}$, and if $A \notin \mathbb{R}$ then the minimal polynomial of $A$ over $\mathbb{R}$ is
 
 $$
-x^2 - T(Z)x + N(Z) = (x - Z)(x - \bar Z) .
+x^2 - T(A)x + N(A) = (x - A)(x - \bar A) .
 $$
 
 In particular every element of $\mathbb{C} \setminus \mathbb{R}$ is the root of a unique monic quadratic over $\mathbb{R}$, and $\mathbb{C}/\mathbb{R}$ is a separable quadratic extension with exactly one nontrivial automorphism, as befits a Galois extension of degree $2$.
 
-**Proof.** The displayed polynomial has the two roots $Z$ and $\bar Z$, distinct because $Z \notin \mathbb{R}$, and coefficients $T(Z), N(Z) \in \mathbb{R}$; it is irreducible over $\mathbb{R}$ by the absence of real roots and degree $2$, hence it is the minimal polynomial. Normality and separability are from *Galois Theory*, and the group is computed above.
+**Proof.** The displayed polynomial has the two roots $A$ and $\bar A$, distinct because $A \notin \mathbb{R}$, and coefficients $T(A), N(A) \in \mathbb{R}$; it is irreducible over $\mathbb{R}$ by the absence of real roots and degree $2$, hence it is the minimal polynomial. Normality and separability are from *Galois Theory*, and the group is computed above.
 
 ## Automorphisms of $\mathbb{C}$
 
@@ -144,7 +144,7 @@ Every automorphism of $\mathbb{C}$ fixes $\mathbb{Q}$ and preserves the set of a
 **Definition.** For $n \geq 1$ let
 
 $$
-\mu_n = \{Z \in \mathbb{C} : Z^n = 1\}, \qquad \mu = \bigcup_{n \geq 1} \mu_n .
+\mu_n = \{A \in \mathbb{C} : A^n = 1\}, \qquad \mu = \bigcup_{n \geq 1} \mu_n .
 $$
 
 **Theorem.** For each $n$, $\mu_n$ is a cyclic subgroup of $\mathbb{C}^\times$ of order $n$, generated by any element of order $n$, that is, by any **primitive $n$-th root of unity**. The groups form a directed system under divisibility, and
@@ -166,46 +166,46 @@ as abstract groups. The elements of $\mu$ are exactly the roots of unity, and fo
 **Definition.** The **Gaussian integers** are the subring
 
 $$
-\mathbb{Z}[i] = \{a + i b : a, b \in \mathbb{Z}\} \subseteq \mathbb{C},
+\mathbb{Z}[i] = \{a + i a' : a, a' \in \mathbb{Z}\} \subseteq \mathbb{C},
 $$
 
-with the **norm** $N(a+i b) = a^2 + b^2 = (a+i b)(a-i b)$.
+with the **norm** $N(a+i a') = a^2 + a'^2 = (a+i a')(a-i a')$.
 
 **Proposition.** $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of units is $\{\pm 1, \pm i\}$; and the norm is multiplicative.
 
-**Proof.** Closure under the ring operations is immediate from the addition and multiplication formulas for $\mathbb{C}$, and the norm is the restriction of $Z \mapsto Z\bar Z$, which is multiplicative and vanishes only at $0$; hence there are no zero divisors. Every quotient lies in $\mathbb{Q}(i)$, since
+**Proof.** Closure under the ring operations is immediate from the addition and multiplication formulas for $\mathbb{C}$, and the norm is the restriction of $A \mapsto A\bar A$, which is multiplicative and vanishes only at $0$; hence there are no zero divisors. Every quotient lies in $\mathbb{Q}(i)$, since
 
 $$
-\frac{a+i b}{c+i d} = \frac{(a+i b)(c-i d)}{c^2+d^2} \in \mathbb{Q}(i) \quad (c+i d \neq 0),
+\frac{a+i a'}{b+i b'} = \frac{(a+i a')(b-i b')}{b^2+b'^2} \in \mathbb{Q}(i) \quad (b+i b' \neq 0),
 $$
 
-so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $x$ is a unit if and only if $N(x) = 1$, since $xu = 1$ gives $N(x)N(u) = 1$ with both norms nonnegative integers; $a^2 + b^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
+so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $A$ is a unit if and only if $N(A) = 1$, since $AU = 1$ gives $N(A)N(U) = 1$ with both norms nonnegative integers; $a^2 + a'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
 
 ### Euclidean Structure
 
 **Theorem.** $\mathbb{Z}[i]$ is a Euclidean domain for the norm $N$, hence a principal ideal domain and a unique factorization domain.
 
-**Proof.** Let $Z, W \in \mathbb{Z}[i]$ with $W \neq 0$. Then $Z/W = Z\bar W/N(W)$ has rational coordinates, since $\bar W \in \mathbb{Z}[i]$ and $N(W) \in \mathbb{Z}\setminus\{0\}$; choose integers $m, n$ with
+**Proof.** Let $A, B \in \mathbb{Z}[i]$ with $B \neq 0$. Then $A/B = A\bar B/N(B)$ has rational coordinates, since $\bar B \in \mathbb{Z}[i]$ and $N(B) \in \mathbb{Z}\setminus\{0\}$; choose integers $m, n$ with
 
 $$
-\lvert \operatorname{Re}(Z/W) - m \rvert \leq \tfrac12, \qquad \lvert \operatorname{Im}(Z/W) - n \rvert \leq \tfrac12,
+\lvert \operatorname{Re}(A/B) - m \rvert \leq \tfrac12, \qquad \lvert \operatorname{Im}(A/B) - n \rvert \leq \tfrac12,
 $$
 
 and set $Q = m + ni \in \mathbb{Z}[i]$. Then
 
 $$
-N(Z/W - Q) = \left(\operatorname{Re}(Z/W) - m\right)^2 + \left(\operatorname{Im}(Z/W) - n\right)^2 \leq \tfrac14 + \tfrac14 = \tfrac12 < 1,
+N(A/B - Q) = \left(\operatorname{Re}(A/B) - m\right)^2 + \left(\operatorname{Im}(A/B) - n\right)^2 \leq \tfrac14 + \tfrac14 = \tfrac12 < 1,
 $$
 
-so for $R = Z - QW$ we get $N(R) = N(W)N(Z/W - Q) < N(W)$. This is the Euclidean division property, and the consequences are those of *Euclidean Domains*.
+so for $R = A - QB$ we get $N(R) = N(B)N(A/B - Q) < N(B)$. This is the Euclidean division property, and the consequences are those of *Euclidean Domains*.
 
 **Corollary (the primes of $\mathbb{Z}[i]$).** Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ remains prime in $\mathbb{Z}[i]$; if $p \equiv 1 \pmod 4$ then $p$ splits as $p = \pi\bar\pi$ with $\pi$ and $\bar\pi$ nonassociate primes; and $2 = -i(1+i)^2$ ramifies.
 
-**Proof.** If $p$ were not prime in $\mathbb{Z}[i]$ then $p = xy$ with $N(x), N(y) > 1$, so $p^2 = N(x)N(y)$ forces $N(x) = N(y) = p$, giving $p = a^2 + b^2$; this is impossible for $p \equiv 3 \pmod 4$, since squares are $0$ or $1$ modulo $4$ and $a^2 + b^2 \equiv 3 \pmod 4$ has no solution. For $p \equiv 1 \pmod 4$ the congruence $m^2 \equiv -1 \pmod p$ is soluble, so $p \mid (m+i)(m-i)$ while $p$ divides neither factor in $\mathbb{Z}[i]$ (as $p \nmid m$ and $p \nmid 1$), and since $\mathbb{Z}[i]$ is a unique factorization domain, $p$ admits a nontrivial factorization $p = \pi\bar\pi$ with $N(\pi) = p$. Finally $(1+i)^2 = 2i$ gives $2 = -i(1+i)^2$.
+**Proof.** If $p$ were not prime in $\mathbb{Z}[i]$ then $p = AB$ with $N(A), N(B) > 1$, so $p^2 = N(A)N(B)$ forces $N(A) = N(B) = p$, giving $p = a^2 + a'^2$; this is impossible for $p \equiv 3 \pmod 4$, since squares are $0$ or $1$ modulo $4$ and $a^2 + a'^2 \equiv 3 \pmod 4$ has no solution. For $p \equiv 1 \pmod 4$ the congruence $m^2 \equiv -1 \pmod p$ is soluble, so $p \mid (m+i)(m-i)$ while $p$ divides neither factor in $\mathbb{Z}[i]$ (as $p \nmid m$ and $p \nmid 1$), and since $\mathbb{Z}[i]$ is a unique factorization domain, $p$ admits a nontrivial factorization $p = \pi\bar\pi$ with $N(\pi) = p$. Finally $(1+i)^2 = 2i$ gives $2 = -i(1+i)^2$.
 
 **Theorem (Fermat).** A positive integer $n$ is a sum of two squares of integers if and only if every prime $p \equiv 3 \pmod 4$ occurs in the prime factorization of $n$ with an even exponent.
 
-**Proof.** By the description of the primes of $\mathbb{Z}[i]$, an element $n \in \mathbb{Z}$ is a norm $N(Z)$ for some $Z \in \mathbb{Z}[i]$ exactly when the primes $p \equiv 3 \pmod 4$ dividing $n$ divide it to an even power: such primes stay prime and their exponents in $N(Z)$ are twice their exponents in $Z$, while the primes $p \equiv 1 \pmod 4$ and the prime $2$ are norms of elements and can be distributed arbitrarily. The norm of $Z = a + i b$ is $a^2 + b^2$.
+**Proof.** By the description of the primes of $\mathbb{Z}[i]$, an element $n \in \mathbb{Z}$ is a norm $N(A)$ for some $A \in \mathbb{Z}[i]$ exactly when the primes $p \equiv 3 \pmod 4$ dividing $n$ divide it to an even power: such primes stay prime and their exponents in $N(A)$ are twice their exponents in $A$, while the primes $p \equiv 1 \pmod 4$ and the prime $2$ are norms of elements and can be distributed arbitrarily. The norm of $A = a + i a'$ is $a^2 + a'^2$.
 
 **Remark.** $\mathbb{Z}[i]$ is the ring of integers of the quadratic field $\mathbb{Q}(i)$, and the example shows the general mechanism by which arithmetic in a number field controls representations of integers by quadratic forms; quadratic form theory in this corpus is developed in category 14, and the use made here is only to exhibit $\mathbb{Z}[i]$ as a Euclidean domain inside $\mathbb{C}$.
 
@@ -251,9 +251,9 @@ $$
 
 $\mathbb{C} = \mathbb{R}[x]/(x^2+1) = \mathbb{R}(i)$ is the quadratic extension of $\mathbb{R}$ obtained by adjoining a square root of $-1$, with $\{1,i\}$ as an $\mathbb{R}$-basis, characteristic $0$ and prime field $\mathbb{Q}$. It is algebraically closed, by the fundamental theorem of algebra, and is the algebraic closure of $\mathbb{R}$, with no proper algebraic extension and with every polynomial of degree $n$ factorising into $n$ linear factors. It admits no ordering, being non-formally-real because $-1 = i^2$ is a square, and it is therefore not real closed; the passage from $\mathbb{R}$ to $\mathbb{C}$ trades orderability for algebraic closedness.
 
-Conjugation $Z \mapsto \bar Z$ is the unique nontrivial $\mathbb{R}$-automorphism, with $\operatorname{Gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ and fixed field $\mathbb{R}$; the norm $N(Z) = Z\bar Z$ is multiplicative, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$. Every element outside $\mathbb{R}$ has minimal polynomial $x^2 - T(Z)x + N(Z)$ over $\mathbb{R}$. The roots of unity form the group $\mu \cong \mathbb{Q}/\mathbb{Z}$, and $\mathbb{C}$ contains every cyclotomic field and every algebraic extension of $\mathbb{Q}$. As a field, $\mathbb{C}$ has $2^{2^{\aleph_0}}$ automorphisms, of which only the identity and conjugation are continuous; it is the unique algebraically closed field of characteristic $0$ and cardinality $2^{\aleph_0}$ up to isomorphism, and it is isomorphic as an abstract field, but not as a topological or valued field, to the completed algebraic closure of $\mathbb{Q}_p$.
+Conjugation $A \mapsto \bar A$ is the unique nontrivial $\mathbb{R}$-automorphism, with $\operatorname{Gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ and fixed field $\mathbb{R}$; the norm $N(A) = A\bar A$ is multiplicative, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$. Every element outside $\mathbb{R}$ has minimal polynomial $x^2 - T(A)x + N(A)$ over $\mathbb{R}$. The roots of unity form the group $\mu \cong \mathbb{Q}/\mathbb{Z}$, and $\mathbb{C}$ contains every cyclotomic field and every algebraic extension of $\mathbb{Q}$. As a field, $\mathbb{C}$ has $2^{2^{\aleph_0}}$ automorphisms, of which only the identity and conjugation are continuous; it is the unique algebraically closed field of characteristic $0$ and cardinality $2^{\aleph_0}$ up to isomorphism, and it is isomorphic as an abstract field, but not as a topological or valued field, to the completed algebraic closure of $\mathbb{Q}_p$.
 
-Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domain for the norm $a^2+b^2$, hence a unique factorization domain; this yields the description of the primes of $\mathbb{Z}[i]$, with $p \equiv 3 \pmod 4$ inert, $p \equiv 1 \pmod 4$ split and $2$ ramified, and gives Fermat's criterion for an integer to be a sum of two squares. The rational function field $\mathbb{C}(t)$ has automorphism group $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ acting by fractional linear substitutions, with finite subgroups the cyclic, dihedral and polyhedral groups, and $\mathbb{C}(t)$ is an example of a field that is neither algebraically closed nor real closed but whose algebraic closure is, as an abstract field, isomorphic to $\mathbb{C}$.
+Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domain for the norm $a^2+a'^2$, hence a unique factorization domain; this yields the description of the primes of $\mathbb{Z}[i]$, with $p \equiv 3 \pmod 4$ inert, $p \equiv 1 \pmod 4$ split and $2$ ramified, and gives Fermat's criterion for an integer to be a sum of two squares. The rational function field $\mathbb{C}(t)$ has automorphism group $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ acting by fractional linear substitutions, with finite subgroups the cyclic, dihedral and polyhedral groups, and $\mathbb{C}(t)$ is an example of a field that is neither algebraically closed nor real closed but whose algebraic closure is, as an abstract field, isomorphic to $\mathbb{C}$.
 
 | Property | Value for $\mathbb{C}$ |
 |---|---|
@@ -268,7 +268,7 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 | $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
 | $\operatorname{Aut}(\mathbb{C})$ | $2^{2^{\aleph_0}}$; only id and conjugation continuous |
 | Roots of unity | $\mu \cong \mathbb{Q}/\mathbb{Z}$ |
-| Norm | $N(Z) = Z\bar Z$, multiplicative |
+| Norm | $N(A) = A\bar A$, multiplicative |
 | Subring $\mathbb{Z}[i]$ | Gaussian integers, Euclidean, UFD |
 | Function field $\mathbb{C}(t)$ | $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ |
 
@@ -278,18 +278,18 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 |---|---|
 | $\mathbb{C}$ | Complex numbers |
 | $i$ | Fixed square root of $-1$ |
-| $a + i b$ | Normal form |
-| $\bar Z$ | Complex conjugate |
-| $\operatorname{Re}(Z)$, $\operatorname{Im}(Z)$ | Real and imaginary parts |
-| $N(Z) = Z\bar Z$ | Norm of the quadratic extension |
-| $T(Z) = Z + \bar Z$ | Trace of the quadratic extension |
+| $A = a + i a'$ | Normal form |
+| $\bar A$ | Complex conjugate |
+| $\operatorname{Re}(A)$, $\operatorname{Im}(A)$ | Real and imaginary parts |
+| $N(A) = A\bar A$ | Norm of the quadratic extension |
+| $T(A) = A + \bar A$ | Trace of the quadratic extension |
 | $\mu_n$, $\mu$ | $n$-th roots of unity, all roots of unity |
 | $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
 | $\operatorname{Aut}(\mathbb{C})$ | Full automorphism group, of cardinality $2^{2^{\aleph_0}}$ |
 | $\overline{\mathbb{Q}}$, $\mathbb{C}_p$ | Algebraic numbers; completed algebraic closure of $\mathbb{Q}_p$ |
 | $\operatorname{Frac}$ | Field of fractions, $\operatorname{Frac}(\mathbb{Z}[i]) = \mathbb{Q}(i)$ |
 | $\operatorname{tr.deg}$ | Transcendence degree |
-| $\mathbb{Z}[i]$ | Gaussian integers, norm $N(a+i b) = a^2+b^2$ |
+| $\mathbb{Z}[i]$ | Gaussian integers, norm $N(a+i a') = a^2+a'^2$ |
 | $\mathrm{Cl}_{0,1}$ | Clifford algebra isomorphic to $\mathbb{C}$ |
 | $\mathbb{C}(t)$ | Rational function field; $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ |
 | $\operatorname{PGL}_2(\mathbb{C})$ | $\operatorname{GL}_2(\mathbb{C})/\mathbb{C}^\times$, fractional linear substitutions |
@@ -299,6 +299,6 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 - Carl Friedrich Gauss, *Demonstratio nova theorematis omnem functionem algebraicam rationalem integram unius variabilis in factores reales primi vel secundi gradus resolvi posse* (Helmstedt, 1799), for the first substantial proof of the fundamental theorem of algebra.
 - Reinhold Remmert, *Theory of Complex Functions* (Springer, 1991), for the analytic theory of $\mathbb{C}$ and the analytic proof of the fundamental theorem.
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for $\mathbb{C}$ as the algebraic closure of $\mathbb{R}$ and for the classification of algebraically closed fields.
-- Thomas W. Hungerford, *Algebra* (Springer, 1974), for Galois theory over $\mathbb{R}$ and the structure of $\mathbb{C}/\mathbb{R}$.
+- Thomas B. Hungerford, *Algebra* (Springer, 1974), for Galois theory over $\mathbb{R}$ and the structure of $\mathbb{C}/\mathbb{R}$.
 - Nathan Jacobson, *Basic Algebra I* (Dover, 2nd ed. 2009), for the field structure, conjugation and the norm.
 - Robert M. Solovay, "A model of set-theory in which every set of reals is Lebesgue measurable", *Annals of Mathematics* 92 (1970), for the consistency of the statement that every automorphism of $\mathbb{C}$ is continuous.

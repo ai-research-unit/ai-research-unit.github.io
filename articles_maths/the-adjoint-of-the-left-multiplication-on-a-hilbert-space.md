@@ -94,7 +94,7 @@ $$
 
 because the grade involution is a $*$-automorphism and is self-adjoint for the Hilbert–Schmidt form, $\alpha^*=\alpha$; so the adjoint of a signed left multiplication is again a signed left multiplication, and the explicit computation is *The Signed Adjoint of the Left Multiplication on a Hilbert Space* below.
 
-*Proof.* $(L_U\alpha)^*=\alpha^*L_U^*=\alpha L_{U^*}$, and $\alpha L_{U^*}=\alpha L_{U^*}$ acts by $X\mapsto\alpha(U^*X)=\alpha(U^*)\alpha(X)$, which is $\ell_{\alpha(U^*)}$; the self-adjointness of $\alpha$ is $\langle\alpha X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(\Gamma X\Gamma Y^*)=\operatorname{tr}(X\Gamma Y^*\Gamma)=\langle X,\alpha Y\rangle_{\mathrm{HS}}$.
+*Proof.* $(L_U\alpha)^*=\alpha^*L_U^*=\alpha L_{U^*}$, and $\alpha L_{U^*}$ acts by $X\mapsto\alpha(U^*X)=\alpha(U^*)\alpha(X)$, which is $\ell_{\alpha(U^*)}$; the self-adjointness of $\alpha$ is $\langle\alpha X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(\Gamma X\Gamma Y^*)=\operatorname{tr}(X\Gamma Y^*\Gamma)=\langle X,\alpha Y\rangle_{\mathrm{HS}}$.
 
 **Forward reference.** The two-sided adjoint, the sandwich $S_{A,B}=L_A\varrho_B=\ell_AR_{\alpha(B)}$ and its adjoint $S_{\alpha(A^*),\alpha(B^*)}$, the unitarity condition they define, and the reflection case are *The Signed Adjoint Sandwich on a Hilbert Space* and *The Signed Adjoint of the Reflection on a Hilbert Space*, written in parallel; the graded-module adjoint action is *The Graded Adjoint Action on a Module over a Hilbert Space*. Nothing of those is used here.
 

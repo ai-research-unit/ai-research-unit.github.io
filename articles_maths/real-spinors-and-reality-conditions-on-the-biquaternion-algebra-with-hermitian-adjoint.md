@@ -107,7 +107,7 @@ The biquaternion algebra is the even part of a Minkowski Clifford algebra, $\mat
 | Statement | Verification |
 |---|---|
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI$, $\Phi$ an algebra isomorphism | exact on a basis and on $50$ random products |
-| $\Phi(\bar Q)=\mathrm{adj}\,\Phi(Q)$, $\Phi(Q^{\dagger})=\Phi(Q)^{\dagger}$, $\Phi(Q^{*})=\varepsilon\overline{\Phi(Q)}\varepsilon^{-1}$, $\Phi(Q^{\flat})=-\Phi(Q)^{\dagger}$ | $200$ random elements each |
+| $\Phi(\bar{\tilde Q})=\mathrm{adj}\,\Phi(\tilde Q)$, $\Phi(\tilde Q^{\dagger})=\Phi(\tilde Q)^{\dagger}$, $\Phi(\tilde Q^{*})=\varepsilon\overline{\Phi(\tilde Q)}\varepsilon^{-1}$, $\Phi(\tilde Q^{\flat})=-\Phi(\tilde Q)^{\dagger}$ | $200$ random elements each |
 | $\bar{\cdot}$ $\mathbb{C}$-linear and order-reversing; ${}^{*}$ conjugate-linear and multiplicative; ${}^{\dagger}$ conjugate-linear and order-reversing; ${}^{\flat}$ order-reversing up to sign | $50$ random pairs each |
 | fixed spaces of real dimension $2,4,4,4$ for $\bar{\cdot},{}^{*},{}^{\dagger},{}^{\flat}$ | exact linear algebra on the coefficients |
 | no antilinear $J$ commuting with $c(\gamma_k)=\sigma_k$ | solution space of dimension $0$ |

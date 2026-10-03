@@ -14,13 +14,13 @@ The treatment is mathematically honest: every claim is either proved or stated a
 A **representation** of $\mathbb{C}$ is a complex vector space $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{C} \times V \to V, \qquad \rho(z, v) = z \cdot v,
+\rho : \mathbb{C} \times V \to V, \qquad \rho(A, v) = A \cdot v,
 $$
 
 satisfying
 
 $$
-z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+A \cdot (B \cdot v) = (AB) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -36,20 +36,20 @@ Since $\mathbb{C}$ is a field, every representation is a complex vector space, a
 The **regular representation** of $\mathbb{C}$ is $\mathbb{C}$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{C}.
+\rho_{\mathrm{reg}}(A) B = A B, \qquad A, B \in \mathbb{C}.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(A) = A$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.
 
 ### The Scalar Maps
 
 For each $\lambda \in \mathbb{C}$, the **scalar map** $\rho_\lambda$ is defined on $\mathbb{C}$ by
 
 $$
-\rho_\lambda(z) w = \lambda z w, \qquad z, w \in \mathbb{C}.
+\rho_\lambda(A) B = \lambda A B, \qquad A, B \in \mathbb{C}.
 $$
 
-Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. Since a representation must satisfy $1 \cdot w = w$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.
+Equivalently, $\rho_\lambda(A) = \lambda A$ as a complex-linear map. Since a representation must satisfy $1 \cdot B = B$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.
 
 ## Classification
 
@@ -58,10 +58,10 @@ Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. Since a rep
 **Theorem.** Every finite-dimensional complex representation of $\mathbb{C}$ is isomorphic to a direct sum of copies of the regular representation:
 
 $$
-V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
+V \cong \mathbb{C}^{\oplus n}, \qquad \rho(A)(v_1, \dots, v_n) = (A v_1, \dots, A v_n).
 $$
 
-**Proof.** The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation.
+**Proof.** The map $A \mapsto A \cdot v$ is $\mathbb{C}$-linear in $A$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $A \cdot v = A\,(1 \cdot v) = A v$ for every $v$. In particular $A \cdot v_i = A v_i$ on a basis, so the action is the scalar multiplication $A \cdot v = Av$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation.
 
 ### Irreducible Representations
 
@@ -126,7 +126,7 @@ So the representation theory of $\mathbb{C}$ is trivial as a complex algebra, an
 The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{C}}(V, \mathbb{C})$ defined by
 
 $$
-(\rho^*(z) f)(v) = f(\rho(z) v), \qquad z \in \mathbb{C}, \; f \in V^*, \; v \in V.
+(\rho^*(A) f)(v) = f(\rho(A) v), \qquad A \in \mathbb{C}, \; f \in V^*, \; v \in V.
 $$
 
 ### Basic Properties
@@ -150,7 +150,7 @@ $$
 satisfies
 
 $$
-\langle \rho^*(z) f, v \rangle = \langle f, \rho(z) v \rangle.
+\langle \rho^*(A) f, v \rangle = \langle f, \rho(A) v \rangle.
 $$
 
 This is the definition of the dual representation, written as a pairing.
@@ -162,7 +162,7 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{C}} W$ defined by
 
 $$
-z \cdot (v \otimes u) = (z \cdot v) \otimes u = v \otimes (z \cdot u).
+A \cdot (v \otimes u) = (A \cdot v) \otimes u = v \otimes (A \cdot u).
 $$
 
 The two definitions agree because $\mathbb{C}$ is commutative.
@@ -188,7 +188,7 @@ $$
 A **homomorphism** of representations $V$ and $W$ is a complex-linear map $T : V \to W$ such that
 
 $$
-T(z \cdot v) = z \cdot T(v), \qquad z \in \mathbb{C}, \; v \in V.
+T(A \cdot v) = A \cdot T(v), \qquad A \in \mathbb{C}, \; v \in V.
 $$
 
 The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}}(V, W)$.
@@ -235,7 +235,7 @@ A representation of $\mathbb{C}$ is a complex vector space $V$ together with a b
 
 The representation ring $R(\mathbb{C})$ is the Grothendieck ring of the finite-dimensional representations. It is generated as an abelian group by the class of the regular representation with no relations, so $R(\mathbb{C}) \cong \mathbb{Z}$. The field structure is the source of this simplicity and of every contrast with the split complex case, where $\mathbb{D}$ is a ring with zero divisors rather than a field.
 
-The article also records the standard constructions on representations: the dual or contragredient representation on $V^*$, defined by $(\rho^*(z)f)(v) = f(\rho(z)v)$; the tensor product, whose action is well defined because $\mathbb{C}$ is commutative; and the homomorphisms, the complex-linear maps intertwining the two actions, with their composition and functorial behaviour. The final section sets out the four essential differences from the representation theory of $\mathbb{D}$.
+The article also records the standard constructions on representations: the dual or contragredient representation on $V^*$, defined by $(\rho^*(A)f)(v) = f(\rho(A)v)$; the tensor product, whose action is well defined because $\mathbb{C}$ is commutative; and the homomorphisms, the complex-linear maps intertwining the two actions, with their composition and functorial behaviour. The final section sets out the four essential differences from the representation theory of $\mathbb{D}$.
 
 ## Summary of Notation
 
@@ -245,7 +245,7 @@ The article also records the standard constructions on representations: the dual
 | $i$ | Imaginary unit, $i^2 = -1$ |
 | $\rho : \mathbb{C} \to \operatorname{End}(V)$ | Representation |
 | $\rho_{\mathrm{reg}}$ | Regular representation |
-| $\rho_\lambda$ | Scalar map $z \mapsto \lambda z$ |
+| $\rho_\lambda$ | Scalar map $A \mapsto \lambda A$ |
 | $V^*$ | Dual representation |
 | $V \otimes W$ | Tensor product |
 | $\operatorname{Hom}_{\mathbb{C}}(V, W)$ | Space of homomorphisms |

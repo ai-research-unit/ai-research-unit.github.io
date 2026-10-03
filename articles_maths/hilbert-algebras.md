@@ -111,7 +111,7 @@ $$
 
 The choice between them is the choice of a sign per grade, hence the choice of a signature.
 
-**Example (the biquaternions).** On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the three commuting conjugations ${}^{\natural}$, ${}^{\natural}$ and $\bar{\cdot}$ are involutions; ${}^{\natural}$ conjugates the complex coefficients and $\bar{\cdot} = {}^{\natural}\circ{}^{\natural}$ is the dagger. Their composition rules make $\{\mathrm{id}, {}^{\natural}, {}^{\natural}, \bar{\cdot}\}$ a Klein four-group, which is the smallest case in which the involution of the base and the intrinsic anti-involutions are both visible.
+**Example (the biquaternions).** On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the three commuting conjugations ${}^{\natural}$, $\sigma$ and $\bar{\cdot}$ are involutions; $\sigma$ conjugates the complex coefficients and $\bar{\cdot} = \sigma\circ{}^{\natural}$ is the dagger. Their composition rules make $\{\mathrm{id}, {}^{\natural}, \sigma, \bar{\cdot}\}$ a Klein four-group, which is the smallest case in which the involution of the base and the intrinsic anti-involutions are both visible.
 
 ### Semilinearity
 
@@ -183,7 +183,7 @@ $$
 
 so the form is represented by a Hermitian matrix, and it is non-degenerate exactly when $H$ is invertible. The **radical** $\operatorname{rad}\langle\cdot,\cdot\rangle = \{x : \langle x, y\rangle = 0$ for all $y\}$ is the kernel of $H$, so the form of a Hilbert algebra is non-degenerate, its radical being zero by positive definiteness.
 
-The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natural}$: the shared block reserves $\bar{\cdot}$ for Hermitian conjugation and ${}^{\natural}$ for the conjugation of coefficients, which is what makes the article agree with its own use of $\bar{\cdot}$ for the biquaternion Hermitian conjugation.
+The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natural}$: the shared block reserves $\bar{\cdot}$ for Hermitian conjugation and $\sigma$ for the conjugation of coefficients, which is what makes the article agree with its own use of $\bar{\cdot}$ for the biquaternion Hermitian conjugation.
 
 ### Positivity of the Trace Form
 
@@ -246,7 +246,7 @@ The form is the **trace form** $\langle x, y\rangle = \tau(x^{\dagger}y)$, with 
 | $x^{\natural} = \alpha(x^{r})$ | The conjugate anti-involution, negating the vectors |
 | $\alpha$ | Grade involution, $\alpha(x) = (-1)^k x$ on the degree-$k$ part |
 | $x^{r,\sigma} = \sigma(x^{r})$ | Conjugate reversion, $x^{\dagger} = \alpha(x^{r,\sigma})$ |
-| ${}^{\natural}$ | Conjugation of coefficients; on $\mathbb{B}$, $\bar{\cdot} = {}^{\natural}\circ{}^{\natural}$ |
+| ${}^{\natural}$ | The conjugate, negating the vectors; the coefficient conjugation is $\sigma$, so on $\mathbb{B}$, $\bar{\cdot} = \sigma\circ{}^{\natural}$ |
 | $m_x$, $\lambda(x)$ | Left multiplication by $x$; the left regular representation |
 | $\operatorname{Tr}$, $N(x) = \det(m_x)$ | Regular trace and regular norm |
 | $\operatorname{Trd}$, $\operatorname{Nrd}$ | Reduced trace and reduced norm, $A$ central simple of degree $d$ |

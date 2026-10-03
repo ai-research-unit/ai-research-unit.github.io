@@ -24,7 +24,7 @@ $$
 The series converges absolutely for every $\tilde q$, because the quaternion norm is submultiplicative. The function is entire in the quaternion sense, and it satisfies
 
 $$
-\exp(p + \tilde q) = \exp(p) \exp(\tilde q) \quad \text{only if } pq = qp,
+\exp(p + \tilde q) = \exp(p) \exp(\tilde q) \quad \text{only if } p\tilde q = \tilde q p,
 $$
 
 $$
@@ -90,14 +90,14 @@ $$
 The logarithm is defined on the complement of the non-positive real axis, and it is single-valued on that domain. It satisfies
 
 $$
-\log(pq) = \log(p) + \log(\tilde q) \quad \text{only if } pq = qp,
+\log(p\tilde q) = \log(p) + \log(\tilde q) \quad \text{only if } p\tilde q = \tilde q p,
 $$
 
 $$
 \log(1) = 0, \qquad \log'(\tilde q) = \tilde q^{-1}.
 $$
 
-**Caution.** The logarithm is not additive in general, because $\mathbb{H}$ is not commutative. The identity $\log(pq) = \log(p) + \log(\tilde q)$ holds if and only if $p$ and $\tilde q$ commute.
+**Caution.** The logarithm is not additive in general, because $\mathbb{H}$ is not commutative. The identity $\log(p\tilde q) = \log(p) + \log(\tilde q)$ holds if and only if $p$ and $\tilde q$ commute.
 
 **Conjugation.** The principal logarithm also commutes with conjugation,
 
@@ -141,13 +141,13 @@ $$
 \lvert \log \tilde q\rvert \leq \lvert \tilde q\rvert - 1 + \pi ,
 $$
 
-because the scalar part of the logarithm is $\log \lvert \tilde q\rvert \leq \lvert \tilde q\rvert - 1$, and the length of its vector part is the argument, at most $\pi$. The bound is the first member of a family: replacing $\log(1 + x) \le x$ by a longer truncation of the series, with $x = \lvert \tilde q\rvert - 1$, gives
+because the scalar part of the logarithm is $\log \lvert \tilde q\rvert \leq \lvert \tilde q\rvert - 1$, and the length of its vector part is the argument, at most $\pi$. The bound is the first member of a family: replacing $\log(1 + a) \le a$ by a longer truncation of the series, with $a = \lvert \tilde q\rvert - 1$, gives
 
 $$
 \lvert \log \tilde q\rvert \leq \sum_{k=1}^{2n-1} (-1)^{k+1} \frac{(\lvert \tilde q\rvert - 1)^k}{k} + \pi , \qquad n \in \mathbb{N},
 $$
 
-since every odd truncation of the alternating series for $\log(1+x)$ is an upper bound for it. The case $n = 2$ is the explicit cubic form
+since every odd truncation of the alternating series for $\log(1+a)$ is an upper bound for it. The case $n = 2$ is the explicit cubic form
 
 $$
 \lvert \log \tilde q\rvert \leq \frac{2\lvert \tilde q\rvert^3 - 9\lvert \tilde q\rvert^2 + 18\lvert \tilde q\rvert - 11}{6} + \pi .
@@ -221,7 +221,7 @@ $$
 
 the right-hand side being the exponential of the mean of the logarithms.
 
-**Caution (the modulus is not the limit).** For a positive real argument the three limits reduce to the classical statements $n(\sqrt[n]{x} - 1) \to \log x$ and $\left((1 + \sqrt[n]{x})/2\right)^n \to \sqrt{x}$ and the geometric mean. For a general quaternion they do not, and the real numbers obtained by reading the limits as their real parts are wrong: $\log \lvert \tilde p\rvert$ is only the scalar part of $\log\tilde p$, so it is $\lvert \log\tilde p\rvert = \sqrt{\log^2 \lvert \tilde p\rvert + \lvert \operatorname{Arg}\tilde p\rvert^2}$ and not $\log \lvert \tilde p\rvert$ that equals $\lvert n(\tilde p^{1/n}-1)\rvert$ in the limit; likewise $\sqrt{\lvert \tilde p\rvert}$ is the modulus of the limit $\tilde p^{1/2}$ and $\left(\prod_\nu \lvert \tilde p_\nu\rvert\right)^{1/k}$ the modulus of the mean limit, not the limits themselves.
+**Caution (the modulus is not the limit).** For a positive real argument the three limits reduce to the classical statements $n(\sqrt[n]{a} - 1) \to \log a$ and $\left((1 + \sqrt[n]{a})/2\right)^n \to \sqrt{a}$ and the geometric mean. For a general quaternion they do not, and the real numbers obtained by reading the limits as their real parts are wrong: $\log \lvert \tilde p\rvert$ is only the scalar part of $\log\tilde p$, so it is $\lvert \log\tilde p\rvert = \sqrt{\log^2 \lvert \tilde p\rvert + \lvert \operatorname{Arg}\tilde p\rvert^2}$ and not $\log \lvert \tilde p\rvert$ that equals $\lvert n(\tilde p^{1/n}-1)\rvert$ in the limit; likewise $\sqrt{\lvert \tilde p\rvert}$ is the modulus of the limit $\tilde p^{1/2}$ and $\left(\prod_\nu \lvert \tilde p_\nu\rvert\right)^{1/k}$ the modulus of the mean limit, not the limits themselves.
 
 ## The Trigonometric and Hyperbolic Functions
 
@@ -270,7 +270,7 @@ The element $\tilde q \operatorname{sgn}(\tilde q) = q_0 \operatorname{sgn}(\til
 The **quaternion hyperbolic sine** and **cosine** are defined by
 
 $$
-\sinh(\tilde q) = \frac{e^q - e^{-\tilde q}}{2}, \qquad \cosh(\tilde q) = \frac{e^q + e^{-\tilde q}}{2}.
+\sinh(\tilde q) = \frac{e^{\tilde q} - e^{-\tilde q}}{2}, \qquad \cosh(\tilde q) = \frac{e^{\tilde q} + e^{-\tilde q}}{2}.
 $$
 
 They are entire, and they satisfy
@@ -440,7 +440,7 @@ The symmetry fails when $p$ and $\tilde q$ do not commute.
 The **quaternion error function** is defined by
 
 $$
-\operatorname{erf}(\tilde q) = \frac{2}{\sqrt{\pi}} \int_0^q e^{-t^2} \, dt,
+\operatorname{erf}(\tilde q) = \frac{2}{\sqrt{\pi}} \int_0^{\tilde q} e^{-t^2} \, dt,
 $$
 
 where the integral is along a path from $0$ to $\tilde q$ and the exponential is the quaternion exponential. The integrand $e^{-t^2}$ is entire, but it is not monogenic, so the integral depends on the path in general.
@@ -460,7 +460,7 @@ where the limits are taken along the real axis.
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(\tilde q) = 1 - \operatorname{erf}(\tilde q) = \frac{2}{\sqrt{\pi}} \int_q^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(\tilde q) = 1 - \operatorname{erf}(\tilde q) = \frac{2}{\sqrt{\pi}} \int_{\tilde q}^\infty e^{-t^2} \, dt.
 $$
 
 ## The Quaternion Airy Function
@@ -478,7 +478,7 @@ where $C$ is a contour in the complex plane, the exponential is the quaternion e
 ### Differential Equation
 
 $$
-y'' - \tilde q y = 0.
+w'' - \tilde q w = 0.
 $$
 
 This is Airy's equation, and it holds in the quaternion sense.
@@ -514,7 +514,7 @@ where the power and the gamma function are quaternion. The series converges abso
 ### Differential Equation
 
 $$
-\tilde q^2 y'' + \tilde q y' + (\tilde q^2 - \nu^2) y = 0.
+\tilde q^2 w'' + \tilde q w' + (\tilde q^2 - \nu^2) w = 0.
 $$
 
 This is Bessel's equation, and it holds in the quaternion sense.
@@ -530,7 +530,7 @@ $$
 It satisfies
 
 $$
-\tilde q^2 y'' + \tilde q y' - (\tilde q^2 + \nu^2) y = 0.
+\tilde q^2 w'' + \tilde q w' - (\tilde q^2 + \nu^2) w = 0.
 $$
 
 ### The Relation to the Cauchy–Riemann Operator
@@ -552,7 +552,7 @@ where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and all operatio
 ### Differential Equation
 
 $$
-\tilde q(1 - \tilde q) y'' + [c - (a + b + 1) \tilde q] y' - ab y = 0.
+\tilde q(1 - \tilde q) w'' + [c - (a + b + 1) \tilde q] w' - ab w = 0.
 $$
 
 This is the hypergeometric equation, and it holds in the quaternion sense.
@@ -623,7 +623,7 @@ $$
 D E = 2\pi^2 \delta_0
 $$
 
-in the sense of distributions. It is the quaternion analogue of the kernel $1/z$ in complex analysis.
+in the sense of distributions. It is the quaternion analogue of the kernel $1/A$ in complex analysis.
 
 ### The Exponential in Scalar-Vector Form
 
@@ -633,7 +633,7 @@ $$
 f(\tilde q) = e^{q_0} \left( \cos|\mathbf{q}| + \frac{\mathbf{q}}{|\mathbf{q}|} \sin|\mathbf{q}| \right),
 $$
 
-which is $e^q$. It is not monogenic: $D f = -2 e^{q_0} \sin|\mathbf{q}| / |\mathbf{q}|$, which is non-zero wherever $\sin|\mathbf{q}| \neq 0$.
+which is $e^{\tilde q}$. It is not monogenic: $D f = -2 e^{q_0} \sin|\mathbf{q}| / |\mathbf{q}|$, which is non-zero wherever $\sin|\mathbf{q}| \neq 0$.
 
 ### The Power Functions
 
@@ -684,7 +684,7 @@ The Cauchy kernel $\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, the fundamenta
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $\mathbf{q} = \mathrm{Vect}\tilde q = q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector part |
 | $\operatorname{sgn}(\tilde q) = \mathbf{q}/\lvert \mathbf{q}\rvert$ | Unit pure quaternion of the vector part |
-| $e^q, \log \tilde q$ | Quaternion exponential, logarithm (principal branch) |
+| $e^{\tilde q}, \log \tilde q$ | Quaternion exponential, logarithm (principal branch) |
 | $\operatorname{Arg}\tilde q$ | Principal argument of $\tilde q$, in $[0, \pi]$ |
 | $\sin \tilde q, \cos \tilde q, \tan \tilde q$ | Quaternion trigonometric functions |
 | $\sinh \tilde q, \cosh \tilde q, \tanh \tilde q, \coth \tilde q$ | Quaternion hyperbolic functions |

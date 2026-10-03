@@ -172,7 +172,7 @@ The intersections are $S \cap V = 0$, $V \cap \mathbb{D}_k = \mathbb{R} e_k$, an
 | $\langle \cdot \rangle$ | real span of the displayed elements | this article |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
 | $B$, $N$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |
-| $[\tilde q,y] = \tilde q y-y\tilde q$ | the commutator | *Split-Quaternion Scalar and Vector Subspaces* |
+| $[\tilde q,\tilde p] = \tilde q \tilde p-\tilde p\tilde q$ | the commutator | *Split-Quaternion Scalar and Vector Subspaces* |
 
 ## Further Reading
 

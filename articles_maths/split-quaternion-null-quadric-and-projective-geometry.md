@@ -7,7 +7,7 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries a non-degenerate 
 
 The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the units, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
 
-**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $N = q_0^2+q_1^2-q_2^2-q_3^2$ and polarisation $B(\tilde q,y) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'$, whose matrix in the basis $1, e_1, e_2, e_3$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $B(\tilde q,y) = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with $N|_V = q_1^2-q_2^2-q_3^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.
+**Conventions.** Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $N = q_0^2+q_1^2-q_2^2-q_3^2$ and polarisation $B(\tilde q,\tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$, whose matrix in the basis $1, e_1, e_2, e_3$ is $G = \operatorname{diag}(1,1,-1,-1)$, so that $B(\tilde q,\tilde p) = X^{\mathsf{T}} G Y$ for the coordinate columns $X, Y$. The vector subspace is $V = \operatorname{span}\{e_1,e_2,e_3\}$ with $N|_V = q_1^2-q_2^2-q_3^2$. The projective space of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{P}^3 = \mathbb{P}(\mathbb{H}_{\mathrm{s}})$.
 
 ## The Null Cone
 
@@ -115,7 +115,7 @@ The split-quaternion norm $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ is a form of s
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $N(\tilde q) = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $B(\tilde q,y)$, $G = \operatorname{diag}(1,1,-1,-1)$ | the polarisation and its matrix | this article |
+| $B(\tilde q,\tilde p)$, $G = \operatorname{diag}(1,1,-1,-1)$ | the polarisation and its matrix | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 | $uv^{\mathsf{T}}$ | the rank-one (outer-product) form of a nonzero null element | this article |
 | $\mathcal{L}, \mathcal{M}$ | the two families of maximal isotropic planes | this article |

@@ -8,23 +8,23 @@ This article computes the two standard invariants of the dual-number algebra: th
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
 
 ## The Automorphism Group
 
 ### Definition
 
-**Definition.** An **$R$-algebra automorphism** of $\mathbb{D}'_R$ is a bijective $R$-linear map $\varphi : \mathbb{D}'_R \to \mathbb{D}'_R$ with $\varphi(ZW) = \varphi(Z)\varphi(W)$ and $\varphi(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{D}'_R)$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{D}')$.
+**Definition.** An **$R$-algebra automorphism** of $\mathbb{D}'_R$ is a bijective $R$-linear map $\varphi : \mathbb{D}'_R \to \mathbb{D}'_R$ with $\varphi(AB) = \varphi(A)\varphi(B)$ and $\varphi(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{D}'_R)$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{D}')$.
 
 ### The Automorphisms
 
 **Theorem.** Every automorphism of $\mathbb{D}'_R$ is determined by its value on $\varepsilon$, and
 
 $$
-\varphi(a + \varepsilon b) = a + bc\,\varepsilon, \qquad c \in R^\times,
+\varphi(a + \varepsilon a') = a + a'c\,\varepsilon, \qquad c \in R^\times,
 $$
 
 so the assignment $\varphi \mapsto c$ is a group isomorphism
@@ -39,7 +39,7 @@ $$
 0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = p^2 + 2pq\,\varepsilon,
 $$
 
-that is, $p^2 = 0$ and $2pq = 0$. The scalar $q$ is a unit: $\varphi(a + \varepsilon b) = (a + bp) + bq\,\varepsilon$ has $\varepsilon$-component $bq$, and surjectivity of $\varphi$ forces $b \mapsto bq$ to be onto $R$, which happens only for $q \in R^\times$. With $q$ a unit and $2$ invertible, $pq = 0$ gives $p = 0$, so $\varphi(\varepsilon) = q\varepsilon$ and $\varphi(a + \varepsilon b) = a + bq\varepsilon$. This is bijective exactly when multiplication by $q$ is, that is, exactly when $q \in R^\times$. Composition corresponds to multiplication of the scalars, so $\varphi \mapsto q$ is an isomorphism onto $R^\times$; writing the multiplier as $c$ gives the stated form $\varphi(a + \varepsilon b) = a + bc\,\varepsilon$.
+that is, $p^2 = 0$ and $2pq = 0$. The scalar $q$ is a unit: $\varphi(a + \varepsilon a') = (a + a'p) + a'q\,\varepsilon$ has $\varepsilon$-component $a'q$, and surjectivity of $\varphi$ forces $a' \mapsto a'q$ to be onto $R$, which happens only for $q \in R^\times$. With $q$ a unit and $2$ invertible, $pq = 0$ gives $p = 0$, so $\varphi(\varepsilon) = q\varepsilon$ and $\varphi(a + \varepsilon a') = a + a'q\varepsilon$. This is bijective exactly when multiplication by $q$ is, that is, exactly when $q \in R^\times$. Composition corresponds to multiplication of the scalars, so $\varphi \mapsto q$ is an isomorphism onto $R^\times$; writing the multiplier as $c$ gives the stated form $\varphi(a + \varepsilon a') = a + a'c\,\varepsilon$.
 
 **Corollary.** Over $\mathbb{R}$ the automorphism group is $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$, a one-dimensional abelian Lie group with exactly two connected components, distinguished by the sign of the scalar $c$; the identity component is $\{c > 0\} \cong \mathbb{R}_{>0}$.
 
@@ -48,10 +48,10 @@ that is, $p^2 = 0$ and $2pq = 0$. The scalar $q$ is a unit: $\varphi(a + \vareps
 **Proposition.** Every automorphism fixes the real submodule $R_{\mathbb{D}'}$ pointwise and acts on the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$ by the scalar $c$:
 
 $$
-\varphi(R_{\mathbb{D}'}) = R_{\mathbb{D}'}, \qquad \varphi(\varepsilon b) = c \varepsilon b.
+\varphi(R_{\mathbb{D}'}) = R_{\mathbb{D}'}, \qquad \varphi(\varepsilon a') = c \varepsilon a'.
 $$
 
-**Proof.** $\varphi(a) = a$ by $R$-linearity and unitality, and $\varphi(\varepsilon b) = b\varphi(\varepsilon) = b \varepsilon c$.
+**Proof.** $\varphi(a) = a$ by $R$-linearity and unitality, and $\varphi(\varepsilon a') = a'\varphi(\varepsilon) = a' \varepsilon c$.
 
 So the automorphism group acts trivially on the quotient $\mathbb{D}'_R/\mathrm{M} \cong R$ and by the full group of scalars on $\mathrm{M}$. This is the algebraic reason that an automorphism cannot exchange the two submodules: the identity $1$ is fixed, so the real submodule is stable, and the class of $\varepsilon$ in the quotient is nonzero, so the infinitesimal submodule is stable.
 
@@ -62,7 +62,7 @@ So the automorphism group acts trivially on the quotient $\mathbb{D}'_R/\mathrm{
 **Definition.** An **$R$-linear derivation** of $\mathbb{D}'_R$ is an $R$-linear map $D : \mathbb{D}'_R \to \mathbb{D}'_R$ with the Leibniz rule
 
 $$
-D(ZW) = D(Z)\,W + Z\,D(W).
+D(AB) = D(A)\,B + A\,D(B).
 $$
 
 The set of all such maps is an $R$-module written $\operatorname{Der}_R(\mathbb{D}'_R)$, and it is a Lie algebra under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$.
@@ -74,7 +74,7 @@ Every derivation satisfies $D(1) = 0$, since $D(1) = D(1\cdot 1) = 2D(1)$ and $2
 **Theorem.** Every derivation of $\mathbb{D}'_R$ is of the form
 
 $$
-D(a + \varepsilon b) = c \varepsilon b
+D(a + \varepsilon a') = c \varepsilon a'
 $$
 
 for a unique $c \in R$. The module of derivations is therefore free of rank one,
@@ -86,7 +86,7 @@ $$
 generated by the derivation
 
 $$
-\partial_\varepsilon(a + \varepsilon b) = \varepsilon b.
+\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'.
 $$
 
 **Proof.** Let $D$ be a derivation. From $D(1) = 0$ and $R$-linearity, $D(a) = 0$ for all $a \in R$, so $D$ is determined by $D(\varepsilon)$. Applying $D$ to $\varepsilon^2 = 0$ gives
@@ -98,7 +98,7 @@ $$
 so $\varepsilon D(\varepsilon) = 0$. Writing $D(\varepsilon) = c + \varepsilon d$, this gives $\varepsilon c = 0$, hence $c = 0$; so $D(\varepsilon) = \varepsilon d$ and
 
 $$
-D(a + \varepsilon b) = D(a) + D(b)\varepsilon + b\,D(\varepsilon) = b \varepsilon d.
+D(a + \varepsilon a') = D(a) + D(a')\varepsilon + a'\,D(\varepsilon) = a' \varepsilon d.
 $$
 
 The map $D \mapsto d$ is an $R$-linear isomorphism onto $R$, so the module is free of rank one and generated by $\partial_\varepsilon$, the case $d = 1$.
@@ -107,9 +107,9 @@ The map $D \mapsto d$ is an $R$-linear isomorphism onto $R$, so the module is fr
 
 ### No Inner Derivations
 
-**Proposition.** Every inner derivation of $\mathbb{D}'_R$ vanishes: $\operatorname{ad}_Z(W) = [Z, W] = 0$ for all $Z, W$. Consequently **no nonzero derivation of $\mathbb{D}'_R$ is inner**, and the whole derivation space consists of outer derivations.
+**Proposition.** Every inner derivation of $\mathbb{D}'_R$ vanishes: $\operatorname{ad}_A(B) = [A, B] = 0$ for all $A, B$. Consequently **no nonzero derivation of $\mathbb{D}'_R$ is inner**, and the whole derivation space consists of outer derivations.
 
-**Proof.** $\mathbb{D}'_R$ is commutative, so $ZW = WZ$ and the commutator is identically zero; the kernel of $\operatorname{ad}$ is all of $\mathbb{D}'_R$, and $\partial_\varepsilon \neq 0$ is outer.
+**Proof.** $\mathbb{D}'_R$ is commutative, so $AB = BA$ and the commutator is identically zero; the kernel of $\operatorname{ad}$ is all of $\mathbb{D}'_R$, and $\partial_\varepsilon \neq 0$ is outer.
 
 This is the exact reversal of the biquaternion case: in $\mathbb{B} \cong M_2(\mathbb{C})$ every derivation is inner, by Skolem–Noether-adjacent matrix computation, and $\operatorname{Der}_\mathbb{C}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}} = \mathrm{SL}(2,\mathbb{C})$. Here the algebra is commutative and no derivation is inner.
 
@@ -117,7 +117,7 @@ This is the exact reversal of the biquaternion case: in $\mathbb{B} \cong M_2(\m
 
 ### The Derivation in the Nilpotent Direction
 
-**Definition.** The derivation $\partial_\varepsilon$, with $\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$, is the **derivation in the nilpotent direction**; it acts as the identity on the infinitesimal submodule and as zero on the real submodule.
+**Definition.** The derivation $\partial_\varepsilon$, with $\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'$, is the **derivation in the nilpotent direction**; it acts as the identity on the infinitesimal submodule and as zero on the real submodule.
 
 **Proposition.** The derivation $\partial_\varepsilon$ satisfies
 
@@ -125,7 +125,7 @@ This is the exact reversal of the biquaternion case: in $\mathbb{B} \cong M_2(\m
 - $\partial_\varepsilon^2 = \partial_\varepsilon$, so it is a projection and is **not** nilpotent;
 - its matrix in the basis $(1, \varepsilon)$ is $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$.
 
-**Proof.** $\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$ vanishes exactly when $b = 0$, giving the kernel; its image is the set of all $\varepsilon b$, which is $\mathrm{M}$. Applying it twice gives $\partial_\varepsilon(\varepsilon b) = \varepsilon b$, hence $\partial_\varepsilon^2 = \partial_\varepsilon$. The matrix has columns $\partial_\varepsilon(1) = 0$ and $\partial_\varepsilon(\varepsilon) = \varepsilon$.
+**Proof.** $\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'$ vanishes exactly when $a' = 0$, giving the kernel; its image is the set of all $\varepsilon a'$, which is $\mathrm{M}$. Applying it twice gives $\partial_\varepsilon(\varepsilon a') = \varepsilon a'$, hence $\partial_\varepsilon^2 = \partial_\varepsilon$. The matrix has columns $\partial_\varepsilon(1) = 0$ and $\partial_\varepsilon(\varepsilon) = \varepsilon$.
 
 So $\partial_\varepsilon$ is a projection onto the nilpotent direction, and it is the unique (up to scale) derivation. The name records the direction of its image, not any nilpotence of the map itself.
 
@@ -134,7 +134,7 @@ So $\partial_\varepsilon$ is a projection onto the nilpotent direction, and it i
 **Theorem.** The exponential of the derivation $\partial_\varepsilon$ is the automorphism
 
 $$
-\exp(t\,\partial_\varepsilon)(a + \varepsilon b) = a + b\,e^{t}\,\varepsilon,
+\exp(t\,\partial_\varepsilon)(a + \varepsilon a') = a + a'\,e^{t}\,\varepsilon,
 $$
 
 and $\{\exp(t\partial_\varepsilon) : t \in \mathbb{R}\}$ is exactly the identity component of $\operatorname{Aut}(\mathbb{D}')$. Hence
@@ -149,7 +149,7 @@ This is the standard correspondence for a finite-dimensional real algebra: the L
 
 ### The Derivations and the Unit Group
 
-The derivation $\partial_\varepsilon$ rescales the infinitesimal direction and fixes the real direction; it does **not** generate the shear group $1 + \mathrm{M}$ of *Shears and Parabolic Rotations*. The shear acts by $1 + s\varepsilon$, translating the infinitesimal coordinate by $x + y\varepsilon \mapsto x + (y + sx)\varepsilon$, and it is the exponential $\exp(s\varepsilon)$ of the element $\varepsilon$ of the algebra, not of any derivation. So the unit group is generated by the algebra's own nilpotent direction, while the automorphism group is generated by the derivation $\partial_\varepsilon$; the two are different objects and must not be conflated.
+The derivation $\partial_\varepsilon$ rescales the infinitesimal direction and fixes the real direction; it does **not** generate the shear group $1 + \mathrm{M}$ of *Shears and Parabolic Rotations*. The shear acts by $1 + s\varepsilon$, translating the infinitesimal coordinate by $a + \varepsilon a' \mapsto a + (a' + sa)\varepsilon$, and it is the exponential $\exp(s\varepsilon)$ of the element $\varepsilon$ of the algebra, not of any derivation. So the unit group is generated by the algebra's own nilpotent direction, while the automorphism group is generated by the derivation $\partial_\varepsilon$; the two are different objects and must not be conflated.
 
 ## Relation to the Biquaternion Theory
 
@@ -167,7 +167,7 @@ Two structural facts account for the difference. First, the biquaternion algebra
 
 ## Summary
 
-The unital algebra automorphisms of $\mathbb{D}'_R$ are exactly the maps $\varphi_c(a + \varepsilon b) = a + bc\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{D}'_R) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(a + \varepsilon b) = c \varepsilon b$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{D}'_R) \cong R$, generated by $\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$. As a space of derivations of $\mathbb{D}'$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\partial_\varepsilon$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{D}'$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial_\varepsilon$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\partial_\varepsilon)(\varepsilon) = e^t\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{D}') = \operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$. The contrast with the biquaternion theory is total: there $\operatorname{Aut}_\mathbb{C}(\mathbb{B}) = PGL(2,\mathbb{C})$ with all derivations inner and $\operatorname{Der}_\mathbb{C}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$ of dimension three, while here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
+The unital algebra automorphisms of $\mathbb{D}'_R$ are exactly the maps $\varphi_c(a + \varepsilon a') = a + a'c\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{D}'_R) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(a + \varepsilon a') = c \varepsilon a'$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{D}'_R) \cong R$, generated by $\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'$. As a space of derivations of $\mathbb{D}'$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\partial_\varepsilon$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{D}'$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial_\varepsilon$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\partial_\varepsilon)(\varepsilon) = e^t\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{D}') = \operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$. The contrast with the biquaternion theory is total: there $\operatorname{Aut}_\mathbb{C}(\mathbb{B}) = PGL(2,\mathbb{C})$ with all derivations inner and $\operatorname{Der}_\mathbb{C}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$ of dimension three, while here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
 
 ## Summary of Notation
 
@@ -175,16 +175,16 @@ The unital algebra automorphisms of $\mathbb{D}'_R$ are exactly the maps $\varph
 |---|---|
 | $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
 | $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
-| $Z = a + \varepsilon b$ | General dual number |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $\bar{Z} = a - \varepsilon b$ | Dual conjugation |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $\bar{A} = a - \varepsilon a'$ | Dual conjugation |
 | $R_{\mathbb{D}'}$, $\varepsilon R_{\mathbb{D}'}$ | Real and infinitesimal submodules |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 | $\operatorname{Aut}_R(\mathbb{D}'_R) \cong R^\times$ | Group of unital algebra automorphisms, $\varphi_c(\varepsilon) = \varepsilon c$ |
 | $\operatorname{Der}_R(\mathbb{D}'_R) \cong R$ | Module of derivations, free of rank one |
-| $\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$ | The derivation in the nilpotent direction |
+| $\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'$ | The derivation in the nilpotent direction |
 | $\varphi_c$ | Automorphism with $\varphi_c(\varepsilon) = \varepsilon c$, $c \in R^\times$ |
-| $\operatorname{ad}_Z(W) = [Z, W]$ | Inner derivation, identically zero here |
+| $\operatorname{ad}_A(B) = [A, B]$ | Inner derivation, identically zero here |
 | $\mathbb{B}$ | Biquaternion algebra, the comparison model |
 
 ## Further Reading

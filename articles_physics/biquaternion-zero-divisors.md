@@ -13,7 +13,7 @@ The zero divisors split into two families, and the split is the same one that or
 
 The article closes with the distribution of the zero divisors over the six distinguished subspaces — this is where the causal structure appears explicitly, as the double cones inside the two Hermitian sectors — and with the zero divisor set itself.
 
-**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$ and \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
+**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$; a general element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$ and $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$.
 
 ## Definition and Criterion
 

@@ -43,13 +43,13 @@ e_1e_3 = -e_2, \quad e_3e_1 = e_2, \qquad
 e_2e_3 = -e_1, \quad e_3e_2 = e_1 .
 $$
 
-**Example.** For $\tilde q = 2 + e_1$ and $y = 1 + e_2 + e_3$, the table gives
+**Example.** For $\tilde q = 2 + e_1$ and $\tilde p = 1 + e_2 + e_3$, the table gives
 
 $$
 (2 + e_1)(1 + e_2 + e_3) = 2 + 2e_2 + 2e_3 + e_1 + e_1e_2 + e_1e_3 = 2 + e_1 + 2e_2 + 2e_3 - e_2 + e_3 = 2 + e_1 + e_2 + 3e_3 ,
 $$
 
-so the product is $\tilde q y = 2 + e_1 + e_2 + 3e_3$; the coefficient of $e_1$ also follows from the general product formula displayed above.
+so the product is $\tilde q \tilde p = 2 + e_1 + e_2 + 3e_3$; the coefficient of $e_1$ also follows from the general product formula displayed above.
 
 ## The Three Involutions and Their Eigenspaces
 
@@ -117,7 +117,7 @@ $$
 \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \operatorname{span}\{\tilde\pi_-, e_1 \tilde\pi_-\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - e_2),\, \tfrac{1}{2}(e_1 - e_3)\big\},
 $$
 
-each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The four spanning elements are the vectors $\tilde\pi_+$, $y = \tfrac{1}{2}(e_1+e_3)$, $\tilde\pi_-$, $-\tilde q = \tfrac{1}{2}(e_1-e_3)$ of the matrix-unit basis $\{\tilde\pi_+, \tilde q, y, \tilde\pi_-\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The four spanning elements are the vectors $\tilde\pi_+$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$, $\tilde\pi_-$, $-\tilde q = \tfrac{1}{2}(e_1-e_3)$ of the matrix-unit basis $\{\tilde\pi_+, \tilde q, \tilde p, \tilde\pi_-\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
 
 **Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, e_2\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_+ e_3 \tilde\pi_- = \tfrac{1}{2}(e_3 - e_1) \neq 0$.
 
@@ -160,9 +160,9 @@ $$
 (2 + e_1)\frac{2 - e_1}{5} = \frac{4 - e_1^2}{5} = \frac{5}{5} = 1 .
 $$
 
-**Example (a unit of norm one).** For $y = 1 + e_1 + e_2$, the split-quaternion norm is $N(y) = 1 + 1 - 1 = 1$, so $y^{-1} = y^{\natural} = 1 - e_1 - e_2$; indeed $y y^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(y) = 1$, the element is a unit split-quaternion.
+**Example (a unit of norm one).** For $\tilde p = 1 + e_1 + e_2$, the split-quaternion norm is $N(\tilde p) = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - e_1 - e_2$; indeed $\tilde p \tilde p^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $N(\tilde p) = 1$, the element is a unit split-quaternion.
 
-**Example (a unit of negative norm).** For $z = e_2$, the split-quaternion norm is $N(z) = -1$, and $z^{-1} = \bar{z}/N(z) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
+**Example (a unit of negative norm).** For $\tilde r = e_2$, the split-quaternion norm is $N(\tilde r) = -1$, and $\tilde r^{-1} = \bar{\tilde r}/N(\tilde r) = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
 
 **Example (a non-unit).** For $w = 1 + e_3$, the split-quaternion norm is $N(w) = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. 
 

@@ -182,7 +182,7 @@ which is unitary exactly because the coefficients are real and their squares sum
 
 **$2\times2$.** The image is $\{\pm I\}$, the central element of $SL(2,\mathbb{C})$ of order two, which is the kernel of the map $SL(2,\mathbb{C})\to PSL(2,\mathbb{C})$.
 
-**$4\times4$.** The image is $\{\pm I_4}$.
+**$4\times4$.** The image is $\{\pm I_4\}$.
 
 **Other.** This is the kernel of the two-to-one cover of the Lorentz group, and it is the algebraic origin of the spinor sign: a rotor turned by a full turn gives $-e_0$, by two turns gives $+e_0$.
 

@@ -9,7 +9,7 @@ The split-quaternion algebra, its central product $N(\tilde q) = \tilde q\tilde{
 
 ## Definition and Criterion
 
-**Definition.** A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $y \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q y = 0$ or a nonzero $z \in \mathbb{H}_{\mathrm{s}}$ with $z\tilde q = 0$. The **zero divisor set** is
+**Definition.** A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $\tilde p \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q \tilde p = 0$ or a nonzero $\tilde r \in \mathbb{H}_{\mathrm{s}}$ with $\tilde r\tilde q = 0$. The **zero divisor set** is
 
 $$
 Z = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \tilde q \neq 0 \text{ and } \tilde q \text{ is a zero divisor}\}.

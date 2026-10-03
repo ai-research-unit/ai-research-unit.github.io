@@ -99,7 +99,7 @@ a contradiction.
 **Theorem (algebra of limits).** If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
 $$
-\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q}) \circ \tilde{G}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q})\tilde{G}(\tilde{Q}) \to \tilde{L}\tilde{M}.
 $$
 
 **Proof.** For the sum, use the triangle inequality:
@@ -132,7 +132,7 @@ $$
 
 The function is **continuous on an open set** if it is continuous at every point of the set.
 
-**Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.
+**Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and the pointwise product $\tilde{F}\tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then the composite $\tilde{G}\circ\tilde{F}$ is continuous at $\tilde{Q}_0$.
 
 **Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 

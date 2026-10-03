@@ -7,7 +7,7 @@ This article develops the integration theory of quaternion-valued functions of a
 
 The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its quaternion norm are taken from *Quaternion Algebra*; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from *Quaternion Analysis*. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of *Hypercomplex Integration* and *Regularity and the Cauchy–Riemann Operator*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. The coordinates of a point are also written $x_0, x_1, x_2, x_3$, so that $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, and $\partial_\mu = \partial/\partial x_\mu$. The **Cauchy–Riemann operator** is
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $N(\tilde q) = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. Its coordinates are $q_0, q_1, q_2, q_3$, and $\partial_\mu = \partial/\partial q_\mu$. The **Cauchy–Riemann operator** is
 
 $$
 D = \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
@@ -22,7 +22,7 @@ and its **conjugate** is $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 -
 **Definition.** Let $\Omega \subseteq \mathbb{H}$ be a domain and let $f : \Omega \to \mathbb{H}$ be written in components as
 
 $$
-f(\tilde q) = \sum_{\mu=0}^{3} f_\mu(x_0, x_1, x_2, x_3)\, e_\mu, \qquad f_\mu \in \mathbb{R}.
+f(\tilde q) = \sum_{\mu=0}^{3} f_\mu(q_0, q_1, q_2, q_3)\, e_\mu, \qquad f_\mu \in \mathbb{R}.
 $$
 
 The **domain integral** of $f$ over $\Omega$ is
@@ -112,7 +112,7 @@ The conormal element is the quaternionic form of the unit normal used by the div
 The Cauchy–Riemann operator $D$ and its conjugate $\bar{D}$ are first-order operators with constant coefficients; they act on a $C^1$ function by taking its partial derivatives and left-multiplying by the basis elements. Their elementary action on the coordinate functions is
 
 $$
-Dq = \sum_{\mu=0}^{3} e_\mu e_\mu = e_0 - 3e_0 = -2, \qquad D\tilde{q}^{\natural} = \sum_{\mu=0}^{3} e_\mu e_\mu^{\natural} = e_0 + 3e_0 = 4,
+D\tilde q = \sum_{\mu=0}^{3} e_\mu e_\mu = e_0 - 3e_0 = -2, \qquad D\tilde{q}^{\natural} = \sum_{\mu=0}^{3} e_\mu e_\mu^{\natural} = e_0 + 3e_0 = 4,
 $$
 
 and conjugating the first identity gives $\bar{D}\tilde{q}^{\natural} = -2$ and $\bar{D}\tilde q = 4$. The two constant values $2$ and $4$ recur in the analysis of the operator.
@@ -199,7 +199,7 @@ which is not identically zero. So the left-regular functions are not closed unde
 
 ### The Divergence Form of the Operators
 
-**Theorem.** With $\partial_\mu$ acting on the coordinate $x_\mu$,
+**Theorem.** With $\partial_\mu$ acting on the coordinate $q_\mu$,
 
 $$
 Df = \sum_{\mu=0}^{3} \partial_\mu (e_\mu f), \qquad fD = \sum_{\mu=0}^{3} \partial_\mu (f e_\mu).
@@ -277,10 +277,10 @@ It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\ti
 
 **Theorem.** $E$ is both left regular and right regular on $\mathbb{H} \setminus \{0\}$.
 
-**Proof.** The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial_\mu(|\tilde q|^{-4})$, and $\partial_\mu(|\tilde q|^{-4}) = -4 x_\mu |\tilde q|^{-6}$ because $\partial_\mu|\tilde q|^2 = 2x_\mu$. Hence
+**Proof.** The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial_\mu(|\tilde q|^{-4})$, and $\partial_\mu(|\tilde q|^{-4}) = -4 q_\mu |\tilde q|^{-6}$ because $\partial_\mu|\tilde q|^2 = 2q_\mu$. Hence
 
 $$
-DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu e_\mu^{\natural}\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu x_\mu e_\mu\Bigr)\tilde{q}^{\natural} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\tilde{q}^{\natural},
+DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu e_\mu^{\natural}\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu q_\mu e_\mu\Bigr)\tilde{q}^{\natural} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\tilde{q}^{\natural},
 $$
 
 using $\sum_\mu e_\mu e_\mu^{\natural} = 4$; since $\tilde q\tilde{q}^{\natural} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $e_\mu^{\natural} e_\mu$ in place of $e_\mu e_\mu^{\natural}$ and $\tilde{q}^{\natural}\tilde q$ in place of $\tilde q\tilde{q}^{\natural}$, and also gives $0$.
@@ -319,33 +319,33 @@ The constant $2\pi^2$ is the four-dimensional analogue of the factor $2\pi$ of c
 
 On the boundary of a ball, the quaternion product of the kernel and the conormal element collapses to a scalar.
 
-**Theorem.** Let $y \in \mathbb{H}$, let $r > 0$ and let $w \in \partial B(y, r)$. Then
+**Theorem.** Let $\tilde p \in \mathbb{H}$, let $r > 0$ and let $w \in \partial B(\tilde p, r)$. Then
 
 $$
-E(w - y)\,\nu(w) = \nu(w)\,E(w - y) = \frac{1}{|w - y|^3} = \frac{1}{r^3},
+E(w - \tilde p)\,\nu(w) = \nu(w)\,E(w - \tilde p) = \frac{1}{|w - \tilde p|^3} = \frac{1}{r^3},
 $$
 
-a positive real scalar independent of the direction of $w - y$.
+a positive real scalar independent of the direction of $w - \tilde p$.
 
-**Proof.** On the sphere, $\nu(w) = (w - y)/|w - y|$ and $E(w - y) = (w-y)^{\natural}/|w - y|^4$. Hence
+**Proof.** On the sphere, $\nu(w) = (w - \tilde p)/|w - \tilde p|$ and $E(w - \tilde p) = (w-\tilde p)^{\natural}/|w - \tilde p|^4$. Hence
 
 $$
-E(w - y)\nu(w) = \frac{(w-y)^{\natural}\,(w - y)}{|w - y|^5} = \frac{|w - y|^2}{|w - y|^5} = \frac{1}{|w - y|^3},
+E(w - \tilde p)\nu(w) = \frac{(w-\tilde p)^{\natural}\,(w - \tilde p)}{|w - \tilde p|^5} = \frac{|w - \tilde p|^2}{|w - \tilde p|^5} = \frac{1}{|w - \tilde p|^3},
 $$
 
-and the opposite order gives the same scalar because $(w - y)(w-y)^{\natural} = (w-y)^{\natural}(w - y) = |w - y|^2$.
+and the opposite order gives the same scalar because $(w - \tilde p)(w-\tilde p)^{\natural} = (w-\tilde p)^{\natural}(w - \tilde p) = |w - \tilde p|^2$.
 
-The collapse of the product to a scalar is special to the quaternion case, where $z\bar{z} = \bar{z}z$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.
+The collapse of the product to a scalar is special to the quaternion case, where $A\bar A = \bar A A$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.
 
 ### The Cauchy–Pompeiu Representation
 
-**Theorem (Cauchy–Pompeiu).** Let $\Omega$ be a bounded domain with smooth boundary, let $f$ be $C^1$ on $\bar{\Omega}$, and let $y \in \Omega$. Then
+**Theorem (Cauchy–Pompeiu).** Let $\Omega$ be a bounded domain with smooth boundary, let $f$ be $C^1$ on $\bar{\Omega}$, and let $\tilde p \in \Omega$. Then
 
 $$
-f(y) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-y)^{\natural}}{|w - y|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-y)^{\natural}}{|w - y|^4}\,(Df)(w)\,dV(w).
+f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial\Omega} \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,\nu(w)\,f(w)\,dS(w) - \frac{1}{2\pi^2}\int_\Omega \frac{(w-\tilde p)^{\natural}}{|w - \tilde p|^4}\,(Df)(w)\,dV(w).
 $$
 
-**Proof (sketch).** Fix $y$ and remove from $\Omega$ a closed ball $\overline{B(y,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - y)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is
+**Proof (sketch).** Fix $\tilde p$ and remove from $\Omega$ a closed ball $\overline{B(\tilde p,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - \tilde p)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is
 
 $$
 \sum_{\mu=0}^{3} \partial_\mu F_\mu = \sum_\mu (\partial_\mu E)\, e_\mu f + E \sum_\mu e_\mu \partial_\mu f = (ED)f + E(Df) = E(Df),
@@ -354,37 +354,37 @@ $$
 since $E$ is right regular, and its boundary term is $\sum_\mu n_\mu F_\mu = E\nu f$. Hence
 
 $$
-\int_{\Omega_\varepsilon} E(w-y)\,(Df)(w)\,dV = \int_{\partial\Omega} E(w-y)\,\nu(w)\,f(w)\,dS - \int_{\partial B(y,\varepsilon)} E(w-y)\,\nu(w)\,f(w)\,dS .
+\int_{\Omega_\varepsilon} E(w-\tilde p)\,(Df)(w)\,dV = \int_{\partial\Omega} E(w-\tilde p)\,\nu(w)\,f(w)\,dS - \int_{\partial B(\tilde p,\varepsilon)} E(w-\tilde p)\,\nu(w)\,f(w)\,dS .
 $$
 
-On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(y)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-y)(Df)(w)\,dV$; the identity follows.
+On the small sphere the kernel–normal product is the scalar $1/\varepsilon^3$, so by continuity of $f$ the last integral tends to $2\pi^2 f(\tilde p)$ as $\varepsilon \to 0$, while the left side tends to $\int_\Omega E(w-\tilde p)(Df)(w)\,dV$; the identity follows.
 
 The representation is the quaternionic instance of the general Cauchy–Pompeiu formula of *Hypercomplex Integration*: the boundary term reproduces $f$ when $f$ is regular, and the volume term corrects for the failure of regularity through $Df$. The kernel depends on the system only through the fundamental solution of its operator.
 
 ### The Cauchy Integral Formula for Regular Functions
 
-**Theorem (Cauchy integral formula).** Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(y, r)}$. Then for every $\tilde q$ with $|\tilde q - y| < r$,
+**Theorem (Cauchy integral formula).** Let $f$ be left regular and $C^1$ on a domain containing the closed ball $\overline{B(\tilde p, r)}$. Then for every $\tilde q$ with $|\tilde q - \tilde p| < r$,
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w).
 $$
 
-**Proof.** Apply the Cauchy–Pompeiu representation with $\Omega = B(y,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.
+**Proof.** Apply the Cauchy–Pompeiu representation with $\Omega = B(\tilde p,r)$; since $Df = 0$ throughout $\Omega$, the volume term vanishes and only the boundary term remains. The kernel is $E(w-\tilde q) = ((w-\tilde q))^{\natural}/|w-\tilde q|^4$ with the normalisation $1/(2\pi^2)$ fixed by the distributional identity $DE = 2\pi^2\delta_0$.
 
-For a ball centred at the point of evaluation, $\tilde q = y$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the **mean value property**
+For a ball centred at the point of evaluation, $\tilde q = \tilde p$, the kernel–normal product is the scalar $1/r^3$, and the formula becomes the **mean value property**
 
 $$
-f(y) = \frac{1}{2\pi^2 r^3} \int_{\partial B(y, r)} f(w) \, dS(w).
+f(\tilde p) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde p, r)} f(w) \, dS(w).
 $$
 
 This is the mean value formula for harmonic functions, applied to the four components of the regular function; it shows directly that the Cauchy kernel is correctly normalised, and it exhibits the constant $\omega_4 = 2\pi^2$ as the surface area that makes the average an average.
 
 ### The Right-Regular Formula
 
-**Theorem (right-regular Cauchy integral formula).** Let $f$ be right regular and $C^1$ on a domain containing $\overline{B(y,r)}$. Then for $|\tilde q - y| < r$,
+**Theorem (right-regular Cauchy integral formula).** Let $f$ be right regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| < r$,
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$
 
 **Proof.** Let $f$ be right $D$-regular, so that $\bar{f}$ is left $\bar{D}$-regular. The left-handed formula for the conjugate operator $\bar{D}$ reads $\bar{f}(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\bar{E}(w-\tilde q)\,\bar{\nu}(w)\,\bar{f}(w)\,dS(w)$, with kernel $\bar{E}$ and conormal element $\bar{\nu}$. Conjugating this identity reverses the order of the factors and uses $\overline{\bar{E}} = E$ and $\overline{\bar{\nu}} = \nu$, giving the displayed formula for $f$; the constant $2\pi^2$ is unchanged.
@@ -393,46 +393,46 @@ $$
 
 **Definition.** A function is **two-sided regular** if it is both left regular and right regular.
 
-**Theorem (two-sided Cauchy integral formula).** Let $f$ be two-sided regular and $C^1$ on a domain containing $\overline{B(y,r)}$. Then for $|\tilde q - y| < r$ both formulas hold and they coincide:
+**Theorem (two-sided Cauchy integral formula).** Let $f$ be two-sided regular and $C^1$ on a domain containing $\overline{B(\tilde p,r)}$. Then for $|\tilde q - \tilde p| < r$ both formulas hold and they coincide:
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(y, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, \nu(w) \, f(w) \, dS(w) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p, r)} f(w) \, \nu(w) \, \frac{(w - \tilde q)^{\natural}}{|w - \tilde q|^4} \, dS(w).
 $$
 
-**Proof.** A two-sided regular function is left regular and right regular, so both theorems apply: the first integral equals $f(\tilde q)$ by the left-regular formula and the second equals $f(\tilde q)$ by the right-regular formula, whence the two are equal. The equality is not termwise: when $\tilde q \neq y$ the product $E(w-\tilde q)\nu(w)$ has a non-zero vector part, and only for $\tilde q = y$ does the kernel–normal theorem make it the scalar $1/r^3$.
+**Proof.** A two-sided regular function is left regular and right regular, so both theorems apply: the first integral equals $f(\tilde q)$ by the left-regular formula and the second equals $f(\tilde q)$ by the right-regular formula, whence the two are equal. The equality is not termwise: when $\tilde q \neq \tilde p$ the product $E(w-\tilde q)\nu(w)$ has a non-zero vector part, and only for $\tilde q = \tilde p$ does the kernel–normal theorem make it the scalar $1/r^3$.
 
-**Remark.** The kernel $E$ is itself two-sided regular by the theorem of the preceding section, so the two-sided formula can be read as the statement that both the function and the kernel are regular from both sides. In the complex case, where the algebra is commutative, the distinction between the two orders disappears and the two-sided formula reduces to the single classical formula. In the quaternion case the two integrands are genuinely different functions of $w$ for $\tilde q \neq y$; the kernel–normal collapse, and with it the coincidence of the two orders, takes place only at $\tilde q = y$, where the formula becomes the mean value property.
+**Remark.** The kernel $E$ is itself two-sided regular by the theorem of the preceding section, so the two-sided formula can be read as the statement that both the function and the kernel are regular from both sides. In the complex case, where the algebra is commutative, the distinction between the two orders disappears and the two-sided formula reduces to the single classical formula. In the quaternion case the two integrands are genuinely different functions of $w$ for $\tilde q \neq \tilde p$; the kernel–normal collapse, and with it the coincidence of the two orders, takes place only at $\tilde q = \tilde p$, where the formula becomes the mean value property.
 
 ## Consequences of the Cauchy Integral Formula
 
 ### The Mean Value Property
 
-**Theorem.** If $f$ is left regular on a domain containing the closed ball $\overline{B(y,r)}$, then
+**Theorem.** If $f$ is left regular on a domain containing the closed ball $\overline{B(\tilde p,r)}$, then
 
 $$
-f(y) = \frac{1}{2\pi^2 r^3} \int_{\partial B(y, r)} f(w) \, dS(w) = \frac{2}{\pi^2 r^4} \int_{B(y, r)} f(w) \, dV(w).
+f(\tilde p) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde p, r)} f(w) \, dS(w) = \frac{2}{\pi^2 r^4} \int_{B(\tilde p, r)} f(w) \, dV(w).
 $$
 
-**Proof.** The surface form was obtained above from the Cauchy formula at $\tilde q = y$. For the volume form, integrate the surface form over the radius: the volume of the ball is $\int_0^r 2\pi^2 s^3\,ds = \frac{\pi^2}{2}r^4$, so the average of $f$ over the ball of radius $r$ equals the common value $f(y)$.
+**Proof.** The surface form was obtained above from the Cauchy formula at $\tilde q = \tilde p$. For the volume form, integrate the surface form over the radius: the volume of the ball is $\int_0^r 2\pi^2 s^3\,ds = \frac{\pi^2}{2}r^4$, so the average of $f$ over the ball of radius $r$ equals the common value $f(\tilde p)$.
 
 ### The Maximum Principle
 
 **Theorem (maximum modulus principle).** If $f$ is left regular on a domain $\Omega$ and $|f|$ attains a maximum at an interior point of $\Omega$, then $f$ is constant on $\Omega$.
 
-**Proof.** Suppose $|f|$ attains its maximum $M$ at $y \in \Omega$. The mean value property bounds $|f(y)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial_\mu f|^2$.
+**Proof.** Suppose $|f|$ attains its maximum $M$ at $\tilde p \in \Omega$. The mean value property bounds $|f(\tilde p)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial_\mu f|^2$.
 
 ### Liouville's Theorem
 
 **Theorem (Liouville).** Every bounded left regular function on all of $\mathbb{H}$ is constant.
 
-**Proof.** Let $|f| \leq M$ and fix $y$. The Cauchy integral formula on the sphere $\partial B(y, r)$ expresses $f(y)$ as $\frac{1}{2\pi^2}\int_{\partial B(y,r)}K(y,w)\,dS(w)$ with kernel $K(\tilde q,w) = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(y) = \frac{1}{2\pi^2}\int_{\partial B(y,r)}\partial_k K(y,w)\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=y}\nu f$. On the sphere $|w - y| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(y)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(y) = 0$ for every $k$; since $y$ was arbitrary, $f$ is constant.
+**Proof.** Let $|f| \leq M$ and fix $\tilde p$. The Cauchy integral formula on the sphere $\partial B(\tilde p, r)$ expresses $f(\tilde p)$ as $\frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}K(\tilde p,w)\,dS(w)$ with kernel $K(\tilde q,w) = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\partial_k K(\tilde p,w)\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=\tilde p}\nu f$. On the sphere $|w - \tilde p| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(\tilde p)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(\tilde p) = 0$ for every $k$; since $\tilde p$ was arbitrary, $f$ is constant.
 
 ### The Cauchy Estimates
 
-**Theorem (Cauchy estimates).** Let $f$ be left regular on a ball $B(y, R)$ with $|f| \leq M$ on the boundary. Then for every multi-index $\alpha$ there is a constant $C_\alpha$, depending only on $\alpha$, with
+**Theorem (Cauchy estimates).** Let $f$ be left regular on a ball $B(\tilde p, R)$ with $|f| \leq M$ on the boundary. Then for every multi-index $\alpha$ there is a constant $C_\alpha$, depending only on $\alpha$, with
 
 $$
-\left| \partial^\alpha f(y) \right| \leq \frac{C_\alpha M}{R^{|\alpha|}} .
+\left| \partial^\alpha f(\tilde p) \right| \leq \frac{C_\alpha M}{R^{|\alpha|}} .
 $$
 
 **Proof.** Differentiate the Cauchy integral formula $|\alpha|$ times with respect to $\tilde q$ under the integral sign. Each differentiation increases the order of the singularity of the kernel by one, so the integrand is bounded by a constant times $R^{-3-|\alpha|}$, and the surface area contributes $2\pi^2 R^3$.
@@ -447,7 +447,7 @@ $$
 
 ## Relation to the General Hypercomplex Integration
 
-The theory above is the quaternionic instance of the general integration theory of an elliptic hypercomplex system $(A, D)$ treated in *Hypercomplex Integration*. In that general setting $A$ is a finite-dimensional unital associative real algebra with basis $e_0 = 1, \dots, e_{m-1}$, the operator is $D = \partial_0 + \sum_{k\geq1} B_k\partial_k$ with $B_jB_k + B_kB_j = -2\delta_{jk}$, and $E$ denotes a fundamental solution of $D$, so that $E(x-y)$ is a Cauchy kernel. The conormal element $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ of *Regularity and the Cauchy–Riemann Operator* is the general form of the quaternion $\nu$.
+The theory above is the quaternionic instance of the general integration theory of an elliptic hypercomplex system $(A, D)$ treated in *Hypercomplex Integration*. In that general setting $A$ is a finite-dimensional unital associative real algebra with basis $e_0 = 1, \dots, e_{m-1}$, the operator is $D = \partial_0 + \sum_{k\geq1} B_k\partial_k$ with $B_jB_k + B_kB_j = -2\delta_{jk}$, and $E$ denotes a fundamental solution of $D$, so that $E(\tilde q-\tilde p)$ is a Cauchy kernel. The conormal element $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ of *Regularity and the Cauchy–Riemann Operator* is the general form of the quaternion $\nu$.
 
 The dictionary for the quaternion case is:
 
@@ -461,7 +461,7 @@ The dictionary for the quaternion case is:
 | Cauchy–Goursat | $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$ |
 | Cauchy integral formula | $f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{(w-\tilde q)^{\natural}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$ |
 
-In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $z\bar{z}$, which makes the kernel–normal product scalar. Both are needed for the statements above in their sharp form; the biquaternion algebra of category 30, which is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and is not a division algebra, is treated separately.
+In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $A\bar A$, which makes the kernel–normal product scalar. Both are needed for the statements above in their sharp form; the biquaternion algebra of category 30, which is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and is not a division algebra, is treated separately.
 
 ## Summary
 
@@ -469,10 +469,10 @@ The integral of a quaternion-valued function is defined componentwise: the domai
 
 Because the coefficients of the Cauchy–Riemann operator $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ are constant, $Df = \sum_\mu \partial_\mu(e_\mu f)$ is a divergence, and the divergence theorem reads $\int_\Omega Df\,dV = \int_{\partial\Omega}\nu f\,dS$, with the conjugate identity for $\bar{D}$. The Cauchy–Goursat theorem, that $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$, is an immediate consequence, and it is a statement about a three-dimensional boundary, not about a curve. Left regularity and right regularity are distinct and are exchanged by quaternion conjugation; the operators satisfy $D\bar{D} = \bar{D}D = \Delta$ and $D$ is elliptic.
 
-The fundamental solution is $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4 = \tilde q^{-1}/|\tilde q|^2$, which is both left and right regular away from the origin and satisfies $DE = ED = 2\pi^2\delta_0$, with $2\pi^2$ the surface area of $S^3$. The kernel–normal product $E(w-y)\nu(w)$ is the scalar $1/|w-y|^3$, so that the Cauchy integral formula
+The fundamental solution is $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4 = \tilde q^{-1}/|\tilde q|^2$, which is both left and right regular away from the origin and satisfies $DE = ED = 2\pi^2\delta_0$, with $2\pi^2$ the surface area of $S^3$. The kernel–normal product $E(w-\tilde p)\nu(w)$ is the scalar $1/|w-\tilde p|^3$, so that the Cauchy integral formula
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(y,r)} \frac{(w-\tilde q)^{\natural}}{|w-\tilde q|^4}\,\nu(w)\,f(w)\,dS(w)
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde p,r)} \frac{(w-\tilde q)^{\natural}}{|w-\tilde q|^4}\,\nu(w)\,f(w)\,dS(w)
 $$
 
 holds for left regular $f$, its mirror image with the kernel on the right holds for right regular $f$, and the two coincide for two-sided regular functions; this is the two-sided Cauchy integral formula. From it follow the mean value property, the maximum modulus principle, Liouville's theorem, the Cauchy estimates and the identity theorem. The general shape of all of these is that of *Hypercomplex Integration*, and the quaternion case is the four-dimensional instance of that theory.
@@ -486,7 +486,7 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
-| $\partial_\mu = \partial/\partial x_\mu$ | Coordinate derivatives, $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ |
+| $\partial_\mu = \partial/\partial q_\mu$ | Coordinate derivatives, $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ |
 | $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ | Cauchy–Riemann operator |
 | $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 - e_3\partial_3$ | Conjugate operator |
 | $D\bar{D} = \bar{D}D = \Delta$ | Factorisation of the Laplacian |
@@ -501,8 +501,8 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | $E(\tilde q) = \tilde{q}^{\natural}/\lvert \tilde q\rvert^4 = \tilde q^{-1}/\lvert \tilde q\rvert^2$ | Fundamental solution and Cauchy kernel |
 | $\bar{E}(\tilde q) = \tilde q/\lvert \tilde q\rvert^4$ | Fundamental solution of $\bar{D}$ |
 | $DE = ED = 2\pi^2\delta_0$ | Distributional identity; $\delta_0$ is the delta distribution at the origin |
-| $y$ | Fixed point of $\Omega$; centre of the ball $B(y,r)$ |
-| $E(w-y)\nu(w) = \lvert w-y\rvert^{-3}$ | Kernel–normal product |
+| $\tilde p$ | Fixed point of $\Omega$; centre of the ball $B(\tilde p,r)$ |
+| $E(w-\tilde p)\nu(w) = \lvert w-\tilde p\rvert^{-3}$ | Kernel–normal product |
 | $\omega_4 = 2\pi^2$ | Area of the unit sphere $S^3$ |
 | two-sided regular | left regular and right regular |
 

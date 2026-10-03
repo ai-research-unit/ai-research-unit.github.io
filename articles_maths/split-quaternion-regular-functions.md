@@ -18,7 +18,7 @@ $$
 \bar{\nabla} = e_0 \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3} .
 $$
 
-The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial_{\bar z}, \partial_z)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_0$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
+The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial_{\bar A}, \partial_A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_0$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
 
 $$
 \nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial_{q_0}^2 + \partial_{q_1}^2 - \partial_{q_2}^2 - \partial_{q_3}^2\bigr) e_0 .
@@ -66,7 +66,7 @@ which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy�
 
 **Constants.** Every constant is regular, since $\nabla C = 0$; the constants form a four-real-dimensional space.
 
-**The elliptic subalgebra.** On the plane $\mathbb{C} = \mathbb{R}[e_1]$ with $z = q_0 + q_1 e_1$ ($e_1^2 = -1$), a function independent of $q_2,q_3$ satisfies $\nabla F = 2\partial_{\bar z}F$, so $F$ is regular exactly when it is holomorphic in $z$ in the classical sense. Thus every classical holomorphic function of $z = q_0+q_1 e_1$, extended by constancy in $e_2,e_3$, is regular, and $\mathbb{R}[e_1]$ is the elliptic island of the theory.
+**The elliptic subalgebra.** On the plane $\mathbb{C} = \mathbb{R}[e_1]$ with $A = q_0 + q_1 e_1$ ($e_1^2 = -1$), a function independent of $q_2,q_3$ satisfies $\nabla F = 2\partial_{\bar A}F$, so $F$ is regular exactly when it is holomorphic in $A$ in the classical sense. Thus every classical holomorphic function of $A = q_0+q_1 e_1$, extended by constancy in $e_2,e_3$, is regular, and $\mathbb{R}[e_1]$ is the elliptic island of the theory.
 
 **The split-complex planes.** On $\mathbb{D}_2 = \mathbb{R}[e_2]$ with $w = q_0 + q_2 e_2$ ($e_2^2 = +1$), a function independent of $q_1,q_3$ satisfies $\nabla F = (\partial_{q_0} + e_2\partial_{q_2})F$, the **hyperbolic Cauchy–Riemann operator**. Its solutions include the split-complex *conjugates*: the linear function $q_0 - q_2 e_2$ is regular, because $\nabla(q_0 - q_2 e_2) = 1 - e_2^2 = 0$, whereas the linear function $q_0 + q_2 e_2 = w$ is not, since $\nabla w = 1 + e_2^2 = 2$. On the split-complex planes the roles of the variable and its conjugate are exchanged relative to the complex case. The same holds on $\mathbb{D}_3 = \mathbb{R}[e_3]$.
 
@@ -88,7 +88,7 @@ $$
 \bigl(\partial_{q_0}^2 + \partial_{q_1}^2 - \partial_{q_2}^2 - \partial_{q_3}^2\bigr) F = 0 .
 $$
 
-Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial_z\partial_{\bar z} = \tfrac14 \Delta$ in one complex variable.
+Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial_A\partial_{\bar A} = \tfrac14 \Delta$ in one complex variable.
 
 **Proof.** The vanishing $\Box F = 0$ is immediate from $\Box = \bar{\nabla}\nabla$ applied to $\nabla F = 0$; the right-regular case is the same identity with the factors on the other side.
 
@@ -98,7 +98,7 @@ Right-regular functions are likewise harmonic, and the factorization $\Box = \na
 
 The complex analogy fails precisely where the zero divisors intervene, and this is the content of the present article.
 
-**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/z$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
+**Theorem.** On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/A$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.
 
 **Proof.** The singular set of $G$ is $\{N(\tilde q) = 0\}$, which is $\mathcal{N}$, of dimension $3$; a frame around a point of $\mathcal{N}$ is not a compact separating surface but is pierced by the cone.
 
@@ -114,7 +114,7 @@ The split-quaternion case is the **fully indefinite** one: the form is indefinit
 
 ## Summary
 
-The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $z = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/N(\tilde q)^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
+The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = N(\xi)e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/N(\tilde q)^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
 
 ## Summary of Notation
 
@@ -126,7 +126,7 @@ The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_
 | $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ | the ultrahyperbolic operator, signature $(2,2)$ | this article |
 | $\nabla F = 0$ | left-regular (monogenic); $F\nabla=0$ right-regular | this article |
 | $g = \operatorname{diag}(1,1,-1,-1)$ | the Clifford sign matrix | this article |
-| $\mathbb{C} = \mathbb{R}[e_1]$ | the elliptic subalgebra, $z = q_0+q_1 e_1$ | *Split-Quaternion Elementary Functions* |
+| $\mathbb{C} = \mathbb{R}[e_1]$ | the elliptic subalgebra, $A = q_0+q_1 e_1$ | *Split-Quaternion Elementary Functions* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex planes, hyperbolic Cauchy–Riemann operators | *Split-Quaternion Split-Complex Subspaces* |
 | $G(\tilde q) = \tilde{q}^{\natural}/N(\tilde q)^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / characteristic set | *Split-Quaternion Zero Divisors* |

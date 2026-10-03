@@ -2,9 +2,11 @@
 
 ## Introduction
 
-This article introduces the biquaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
+This article introduces the biquaternion algebra as an algebraic structure and works with it as an **algebra over $\mathbb{C}$**. The goal is to define the algebra precisely, establish its basic properties, and describe the **six** distinguished real subspaces that arise from the natural conjugations: four of dimension four, together with the two-dimensional center and the six-dimensional vector subspace.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically. No form is used here: the Hermitian form $\tilde{Q}\tilde{Q}^{*}$, the inner product, and everything measured with them — lengths, signs and orthogonal decompositions — are in the Topology group, where the Hermitian form and the inner product are *The Hermitian Form on the Biquaternion Algebra* and the metric read from them is *Biquaternion Norm and Invertibility*.
+$\mathbb{B}$ can also be considered in other ways — as an algebra over $\mathbb{R}$, as a bimodule over $\mathbb{H}$, and in the corresponding coordinate systems. Those views are the subject of *Different Ways to Consider Biquaternions*. Here $\mathbb{B}$ is read as an algebra over $\mathbb{C}$; the underlying real space is used only for the six subspaces.
+
+The treatment is elementary and self-contained: every claim is either proved or stated as a definition, and no physics is invoked. The anti-Hermitian subspace is defined algebraically. No form appears in this article; the Hermitian form, the inner product and everything measured with them belong to the Topology group. The product of the algebra — its definition, its two scalar–vector parts, and the dot and cross products they are built from — is *Biquaternion Multiplication*, and it is used here as given.
 
 The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication and its conjugation. No facts about $\mathbb{H}$ are restated here.
 
@@ -18,29 +20,15 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}.
 $$
 
-### Two Views: Over $\mathbb{C}$ and Over $\mathbb{R}$
+As a $\mathbb{C}$-algebra it is **four-dimensional**, with complex basis $\{e_0, e_1, e_2, e_3\}$. Its multiplication is the one defined and studied in *Biquaternion Multiplication*; with it the algebra is associative and unital, with unit $e_0$. Its center is the scalar line $\mathbb{C}e_0$. The underlying real space, in which the six subspaces of this article are cut out, is **eight-dimensional**, with real basis $\{e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3\}$.
 
-The biquaternion algebra can be viewed in two equivalent ways, depending on which scalars we allow.
-
-**As a $\mathbb{C}$-algebra.** The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a **four-dimensional algebra over $\mathbb{C}$**: its complex basis is $\{e_0, e_1, e_2, e_3\}$, and every element is a $\mathbb{C}$-linear combination of these four basis elements. The multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The center of this $\mathbb{C}$-algebra is $\mathbb{C}$.
-
-**As an $\mathbb{R}$-algebra.** Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is also naturally a **real vector space of dimension $8$**, with real basis $\{e_0, e_1, e_2, e_3, i e_0, i e_1, i e_2, i e_3\}$. In this view, $\mathbb{B}$ is an **eight-dimensional algebra over $\mathbb{R}$**. The multiplication is $\mathbb{R}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The scalar imaginary $i$ is now an element of the algebra itself, not a scalar, and it lies in the center.
-
-The two views are related by a change of base ring: passing from the quaternion algebra $\mathbb{H}$ to the $\mathbb{C}$-algebra is the operation of **extension of scalars** from $\mathbb{R}$ to $\mathbb{C}$, and passing back is the operation of **restriction of scalars**. The dimension changes as follows:
+The complex dimension four and the real dimension eight are related by
 
 $$
-\dim_{\mathbb{R}} \mathbb{B} = 2 \cdot \dim_{\mathbb{C}} \mathbb{B},
+\dim_{\mathbb{R}} \mathbb{B} = 2 \dim_{\mathbb{C}} \mathbb{B},
 $$
 
-because each complex dimension contributes two real dimensions (the real and imaginary parts of each complex coefficient).
-
-**Which view to use.** The two views are complementary, and both are used in the literature.
-
-- The **$\mathbb{C}$-algebra view** is the natural one when the biquaternions are studied as a complex algebra. In this view, the algebra is four-dimensional and its structure is relatively simple.
-
-- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real Clifford algebras. In this view, the algebra is eight-dimensional, and the six real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
-
-In this article we use both views, and we indicate which one is in force whenever it matters. When we say "$\mathbb{B}$ is four-dimensional," we mean over $\mathbb{C}$. When we say "$\mathbb{B}$ is eight-dimensional," we mean over $\mathbb{R}$. The context will make the field clear.
+because each complex coefficient contributes its real and imaginary parts.
 
 ### Developed Form
 
@@ -72,59 +60,13 @@ $$
 
 The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with all quaternion units: $i e_k = e_k i$.
 
-When $\mathbb{B}$ is viewed as a real vector space of dimension 8, the eight real coordinates of $\tilde{Q}$ are $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3)$. When $\mathbb{B}$ is viewed as a complex vector space of dimension 4, the four complex coordinates are $(Q_0, Q_1, Q_2, Q_3)$.
+As a $\mathbb{C}$-algebra the coordinates of $\tilde{Q}$ are the four complex numbers $(Q_0, Q_1, Q_2, Q_3)$.
 
 ### The Algebra Structure
 
-The algebra $\mathbb{B}$ is a four-dimensional algebra over $\mathbb{C}$, and simultaneously an eight-dimensional algebra over $\mathbb{R}$. In both views it is non-commutative and associative. It is not a division algebra: it has zero divisors, and the study of these is the subject of the divisibility article.
+As a $\mathbb{C}$-algebra $\mathbb{B}$ is four-dimensional, associative and non-commutative. It is not a division algebra: it has zero divisors, and the study of these is the subject of the divisibility article.
 
-The **center** of $\mathbb{B}$ is $\mathbb{C}$ in both views, but with a subtlety. As a $\mathbb{C}$-algebra, the center is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element $\tilde{Q}$ is central iff it commutes with every quaternion unit, and the only such elements are the complex scalars $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same center $\mathbb{C}$ is a real vector space of dimension 2, spanned by $e_0$ and $i e_0$.
-
-### Multiplication
-
-The product of two biquaternions is defined by extending the quaternion product complex-linearly. In developed form,
-
-$$
-\tilde{Q} \circ \tilde{R} = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} Q_\mu R_\nu \, e_\mu e_\nu,
-$$
-
-where the products $e_\mu e_\nu$ are those of the quaternion algebra, extended complex-linearly. In scalar-vector notation, this becomes
-
-$$
-\tilde{Q} \circ \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
-$$
-
-where
-
-$$
-(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k, \qquad [\mathbf{Q}, \mathbf{R}] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
-$$
-
-The symbols $(\mathbf{Q}, \mathbf{R})$ and $[\mathbf{Q}, \mathbf{R}]$ denote the **complex bilinear dot product** and the **complex bilinear cross product**. They reduce to the ordinary dot product and cross product when the coefficients are real.
-
-This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now complex.
-
-**Remark (other products in the literature).** The word *product* on $\mathbb{B}$ does not always mean the Hamilton product above. In particular, the *chiral algebra* of *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation* uses, alongside the Hamilton product, a **Pauli-type** product on the vector parts, $\mathbf u_1\cdot\mathbf u_2 + i\,\mathbf u_1\times\mathbf u_2$, whose dot and cross terms both differ in sign from the product of this article; when that product is used, its conventions must be read from the article that introduces it, not from here. Note also the clash of names: the *outer product* $\odot$ of that chiral algebra is this full product, whereas the *outer product* of §*The Outer Product and the Grades* below is only its antisymmetric part, $p\wedge q = V(p)\times V(q)$.
-
-### The Outer Product and the Grades
-
-The antisymmetric part of the product is the **outer product**,
-$$
-p\wedge q:=\tfrac12\bigl(pq-qp\bigr)=V(p)\times V(q),
-$$
-the cross product of the vector parts: the scalar parts cancel in the commutator, and the identity holds for **all** pairs of biquaternions, not only for vector-like ones. In the notation of the multiplication formula, $pq-qp=2[\mathbf{P},\mathbf{Q}]$, whose right-hand side depends on the vector parts alone; the formula is the biquaternion shadow of the Clifford product and is developed as such in *The Clifford Structure of the Biquaternion Algebra*, where the four components are read as the four grades and the outer product records the grade of a product.
-
-The vanishing of the commutator is therefore a **commutativity criterion**: because the right-hand side depends only on the vector parts,
-
-$$
-p\circ q = q\circ p \quad\Longleftrightarrow\quad [\mathbf{P},\mathbf{Q}] = 0 ,
-$$
-
-that is, if and only if the vector parts are **linearly dependent**. In particular a central element (a scalar) commutes with everything, since its vector part vanishes, and more generally two biquaternions commute exactly when their vector parts are parallel.
-
-**The four grades.** Read geometrically, the four components of a biquaternion carry four distinct grades: the grade-zero part is the real scalar $S(p)e_0$; the grade-one part is the imaginary pure quaternion $iV(p)$; the grade-two part is the real pure quaternion $V(p)$; and the grade-three part is the imaginary scalar $iS(p)e_0$, the pseudoscalar. The product of two vectors is a bivector and the product of a vector with a bivector is a vector, so the algebra fixes the grades of the product from those of the factors, and the outer product isolates the part contributed by the vector parts.
-
-**Remark (the naming).** The quaternion reading names the three units $e_1,e_2,e_3$ vectors, whereas the geometric reading names them areas of grade two; the geometric vectors are the imaginary quaternions $ie_k$. Sangwine, Ell and Le Bihan record that the axial and polar terminology of physics has added to the confusion, since the two terms suggest different types of vector for one algebraic object. This article keeps the quaternion names in the algebra and defers to *The Clifford Structure of the Biquaternion Algebra* for the grade names.
+The **center** of $\mathbb{B}$ is the scalar line $\mathbb{C}e_0 = \{Q_0 e_0 : Q_0 \in \mathbb{C}\}$. As a real space it is spanned by $e_0$ and $ie_0$, and it is the first of the six subspaces below.
 
 ### Conjugations
 
@@ -167,7 +109,7 @@ $$
 where
 
 $$
-\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}=\overline{\tilde{Q}^{\natural}}.
+\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}=\bar{\tilde{Q}}^{\natural}.
 $$
 
 Thus Hermitian conjugation is the composition of the two commuting generators.
@@ -214,7 +156,7 @@ Each of the six has its own article in the **Focus on Subspaces** group of the s
 The relations between them are collected in *Biquaternion Relations Between Subspaces*, and the four conjugations themselves in *Biquaternion Involution Lattice*. What the present article uses of the six, again and again, is the following:
 
 - $\mathbb{C}_{\mathbb{B}}$ is the set of central elements, a copy of $\mathbb{C}$ embedded as the scalar part, $\{\lambda e_0 : \lambda \in \mathbb{C}\}$;
-- $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;
+- $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;
 - $\mathbb{H}_{\mathbb{B}}$ is the set of elements with real coefficients, a copy of the real quaternion algebra, and the only non-commutative one of the six;
 - $i\mathbb{H}_{\mathbb{B}}$ is the set of products $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, a two-sided module over $\mathbb{H}_{\mathbb{B}}$ but not a subalgebra;
 - $\mathbb{M}_+$ is the set of elements with real scalar part and purely imaginary vector part;
@@ -222,7 +164,7 @@ The relations between them are collected in *Biquaternion Relations Between Subs
 
 ### The Six Together
 
-Of the six subspaces, exactly two are subalgebras: the center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$. Both are division algebras. The vector subspace is closed under neither multiplication nor left multiplication by $\mathbb{H}_{\mathbb{B}}$; the anti-quaternion subspace is an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra; and the two sectors $\mathbb{M}_\pm$ are neither. The six are pairwise distinct as sets, and no two of them are equal; their dimensions $2, 6, 4, 4, 4, 4$ sum to more than $8$, so they necessarily overlap, and how they do so is the subject of *Biquaternion Relations Between Subspaces*.
+Of the six subspaces, exactly two are subalgebras: the center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$. Both are division algebras. The other four are not; the closure of each of the six under the product, the commutator and the symmetrized product is tabulated in *Biquaternion Relations Between Subspaces*, and the product behaviour of each is worked out in its own subspace article. The six are pairwise distinct as sets, and no two of them are equal; their dimensions $2, 6, 4, 4, 4, 4$ sum to more than $8$, so they necessarily overlap, and how they do so is the subject of *Biquaternion Relations Between Subspaces*.
 
 ## The Quaternion Decomposition
 
@@ -304,7 +246,7 @@ $$
 \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}),
 $$
 
-the two summands being of real dimensions 2 and 6. It is the decomposition into center and derived subspace, and it is the one with summands of unequal dimension: the other two decompositions split $\mathbb{B}$ into two halves of dimension 4.
+the two summands being of real dimensions 2 and 6. It is the decomposition into scalar and vector parts, and it is the one with summands of unequal dimension: the other two decompositions split $\mathbb{B}$ into two halves of dimension 4.
 
 ## Relation Between the Three Decompositions
 
@@ -401,12 +343,12 @@ The complex conjugation $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ and negate
 
 ## Summary
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.
+The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, a four-dimensional algebra over $\mathbb{C}$ whose underlying real space has dimension eight, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.
 
 It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The **six** distinguished real subspaces are the eigenspaces of those three involutions:
 
 - the **center** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$;
-- the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$, the kernel of $\mathrm{Sc}$, and the derived subspace $[\mathbb{B}, \mathbb{B}]$;
+- the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$ and the kernel of $\mathrm{Sc}$;
 - the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by $\bar{\cdot}$, the subalgebra isomorphic to $\mathbb{H}$;
 - the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of $\bar{\cdot}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra;
 - the **Hermitian subspace** $\mathbb{M}_+$, of dimension 4, fixed by ${}^{*}$;

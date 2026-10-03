@@ -51,13 +51,13 @@ So $(\mathbb{B},N)$ is the standard non-degenerate quadratic space of dimension 
 **Theorem.** The biquaternion norm is multiplicative:
 
 $$
-N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+N(\tilde{Q}\tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
 $$
 
 **Proof.** Compute
 
 $$
-N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
+N(\tilde{Q}\tilde{R}) = (\tilde{Q} \tilde{R}) ((\tilde{Q} \tilde{R}))^{\natural} = \tilde{Q} \tilde{R} \tilde{R}^{\natural} \tilde{Q}^{\natural} = \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural}.
 $$
 
 Since $N(\tilde{R})$ is a complex scalar (a multiple of $e_0$) and $e_0$ is central in $\mathbb{B}$, the factor $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\tilde{Q}^{\natural}$. So
@@ -66,9 +66,9 @@ $$
 \tilde{Q} N(\tilde{R}) \tilde{Q}^{\natural} = N(\tilde{R}) \tilde{Q} \tilde{Q}^{\natural} = N(\tilde{R}) N(\tilde{Q}).
 $$
 
-**Corollary.** If $N(\tilde{Q}) \neq 0$ and $N(\tilde{R}) \neq 0$, then $N(\tilde{Q} \circ \tilde{R}) \neq 0$.
+**Corollary.** If $N(\tilde{Q}) \neq 0$ and $N(\tilde{R}) \neq 0$, then $N(\tilde{Q}\tilde{R}) \neq 0$.
 
-**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is either zero or a zero divisor.
+**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q}\tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is either zero or a zero divisor.
 
 ### The Biquaternion Norm as a Semi-Norm
 
@@ -94,7 +94,7 @@ $$
 r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} .
 $$
 
-**Proof.** The biquaternion norm is a surjective group homomorphism $N : \mathbb{B}^\times \to \mathbb{C}^\times$ — multiplicative, and surjective because $N(\lambda e_0) = \lambda^2$ attains every nonzero complex value — with kernel the norm-one group $G_1 = \{\tilde{Q} : N(\tilde{Q}) = 1\}$. A continuous homomorphism into the abelian group $\mathbb{R}_{>0}$ is trivial on the commutator subgroup; the norm-one group $G_1$ is perfect, equal to its own commutator subgroup, so $\rho$ is trivial on $G_1$ and factors as $\rho = f \circ N$ for a continuous homomorphism $f : \mathbb{C}^\times \to \mathbb{R}_{>0}$. Every such $f$ is $z \mapsto |z|^t$: on the positive reals it is a continuous homomorphism to $\mathbb{R}_{>0}$, hence a power, and the unit circle, being compact and connected, maps to the identity. The normalisation $\rho(\lambda e_0) = f(\lambda^2) = |\lambda|^{2t} = |\lambda|$ forces $t = \tfrac12$, so $\rho(\tilde{Q}) = |N(\tilde{Q})|^{1/2} = r(\tilde{Q})$.
+**Proof.** The biquaternion norm is a surjective group homomorphism $N : \mathbb{B}^\times \to \mathbb{C}^\times$ — multiplicative, and surjective because $N(\lambda e_0) = \lambda^2$ attains every nonzero complex value — with kernel the norm-one group $G_1 = \{\tilde{Q} : N(\tilde{Q}) = 1\}$. A continuous homomorphism into the abelian group $\mathbb{R}_{>0}$ is trivial on the commutator subgroup; the norm-one group $G_1$ is perfect, equal to its own commutator subgroup, so $\rho$ is trivial on $G_1$ and factors as $\rho = f \circ N$ for a continuous homomorphism $f : \mathbb{C}^\times \to \mathbb{R}_{>0}$. Every such $f$ is $\lambda \mapsto |\lambda|^t$: on the positive reals it is a continuous homomorphism to $\mathbb{R}_{>0}$, hence a power, and the unit circle, being compact and connected, maps to the identity. The normalisation $\rho(\lambda e_0) = f(\lambda^2) = |\lambda|^{2t} = |\lambda|$ forces $t = \tfrac12$, so $\rho(\tilde{Q}) = |N(\tilde{Q})|^{1/2} = r(\tilde{Q})$.
 
 The function $r$ is multiplicative, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, by multiplicativity of the biquaternion norm, and satisfies $r(\tilde{Q})^2 = |N(\tilde{Q})|$; it vanishes on the zero divisors, and is therefore a semi-norm on $\mathbb{B}$ while remaining a genuine norm on the units. It is defined by multiplicativity together with the normalisation $r(e_0) = 1$: the proposition says it is the only real size function on the units compatible with those two requirements.
 
@@ -195,7 +195,7 @@ A caution. The biquaternion algebra itself is the even Clifford algebra $\mathbb
 A biquaternion $\tilde{Q}$ is **invertible** if there exists a biquaternion $\tilde{R}$ such that
 
 $$
-\tilde{Q} \circ \tilde{R} = \tilde{R} \circ \tilde{Q} = e_0.
+\tilde{Q}\tilde{R} = \tilde{R}\tilde{Q} = e_0.
 $$
 
 The biquaternion $\tilde{R}$, if it exists, is the **inverse** of $\tilde{Q}$ and is denoted $\tilde{Q}^{-1}$.
@@ -223,12 +223,12 @@ $$
 Then
 
 $$
-\tilde{Q} \circ \tilde{R} = \frac{\tilde{Q} \tilde{Q}^{\natural}}{N(\tilde{Q})} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = e_0,
+\tilde{Q}\tilde{R} = \frac{\tilde{Q} \tilde{Q}^{\natural}}{N(\tilde{Q})} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = e_0,
 $$
 
 so $\tilde{R}$ is a right inverse of $\tilde{Q}$. By the remark above, $\tilde{R}$ is also a left inverse, and hence $\tilde{Q}$ is invertible.
 
-Conversely, suppose $\tilde{Q}$ is invertible. Applying the biquaternion norm to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives
+Conversely, suppose $\tilde{Q}$ is invertible. Applying the biquaternion norm to $\tilde{Q}\tilde{Q}^{-1} = e_0$ and using multiplicativity gives
 
 $$
 N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
@@ -454,21 +454,21 @@ The **scalar part** of the Hermitian form, by contrast, is always non-negative, 
 
 ## The Commutative Four-Dimensional Contrast
 
-The criterion of this article is a statement about a non-commutative algebra. It has a commutative counterpart worth recording, because there every object in the criterion can be computed in closed form. The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*: an element is $q = z_1+z_2e$ with $e^2=+1$ and $z_1,z_2\in\mathbb{C}$, and the multiplicative form on it is the determinant of the two-by-two complex matrix representation, which in the idempotent coordinates is the product of the two components,
+The criterion of this article is a statement about a non-commutative algebra. It has a commutative counterpart worth recording, because there every object in the criterion can be computed in closed form. The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*: an element is $q = A_1+A_2e$ with $e^2=+1$ and $A_1,A_2\in\mathbb{C}$, and the multiplicative form on it is the determinant of the two-by-two complex matrix representation, which in the idempotent coordinates is the product of the two components,
 
 $$
-N(q) = z_1^2 - z_2^2 = \lambda_+\lambda_-, \qquad \lambda_\pm = z_1 \pm z_2 .
+N(q) = A_1^2 - A_2^2 = \lambda_+\lambda_-, \qquad \lambda_\pm = A_1 \pm A_2 .
 $$
 
 Three of the phenomena of this article appear there in their sharpest form.
 
 **The vanishing set is computable.** Because $N(q) = \lambda_+\lambda_-$ is a product in a field, it vanishes exactly when one of the two factors does, so the zero divisors are the union of the two ideals $\mathbb{C}e_+ \cup \mathbb{C}e_-$, where $e_\pm = \tfrac12(1\pm e)$ are the idempotents, and the criterion is again $N(q)\neq0$. The two elements of vanishing norm whose sum is the identity are $e_+$ and $e_-$ — a zero-norm element need not have a zero-norm sum with another — and they are the pair the paper gives as its example. In $\mathbb{B}$ the same criterion holds and the algebra is simple, so no such factorisation of the vanishing set is available; the vanishing set there is a cone.
 
-**The choice of form is forced, and the sign is the content.** The complexified quadratic form carried by the algebra's own two complex components, $z_1^2+z_2^2$, is **not** multiplicative, and the multiplicative form is the difference $z_1^2-z_2^2$. The sign of the square of the second generator, $e^2 = +1$, is what turns the composition law from a sum into a difference, exactly as in the two-dimensional case where the split form replaces the definite one. This algebra is therefore the four-dimensional commutative instance of the fact the table of *Comparison of Norms and Invertibility* records for all eight of its columns, and it is the instance in which the correct form is a difference of the squares of the complex coordinates rather than of their absolute squares: the real form $\lvert z_1\rvert^2-\lvert z_2\rvert^2$, of signature $(2,2)$, is not multiplicative at all.
+**The choice of form is forced, and the sign is the content.** The complexified quadratic form carried by the algebra's own two complex components, $A_1^2+A_2^2$, is **not** multiplicative, and the multiplicative form is the difference $A_1^2-A_2^2$. The sign of the square of the second generator, $e^2 = +1$, is what turns the composition law from a sum into a difference, exactly as in the two-dimensional case where the split form replaces the definite one. This algebra is therefore the four-dimensional commutative instance of the fact the table of *Comparison of Norms and Invertibility* records for all eight of its columns, and it is the instance in which the correct form is a difference of the squares of the complex coordinates rather than of their absolute squares: the real form $\lvert A_1\rvert^2-\lvert A_2\rvert^2$, of signature $(2,2)$, is not multiplicative at all.
 
 **The conjugation is not a real-product involution.** The paper defines its norm and conjugation together, and requires the norm to be multiplicative, $\lvert q_1q_2\rvert^2 = \lvert q_1\rvert^2\lvert q_2\rvert^2$ for arbitrary $q_1,q_2$. It reports that this cannot be arranged with a product that is real: with the conjugation chosen so that the product $q q^\ast$ is the natural one, the product "is still an RB and not a real number", and the three further conjugations proposed in its references [12] and [13] fail likewise. None of the four conjugations the paper knows therefore yields a real product, and a ring-valued norm has to serve in place of a scalar product — the same obstruction that forces the complex-valued $N(\tilde{Q})$ on $\mathbb{B}$, recorded in the section above. The paper attributes the failure of the triangle inequality, its one departure from the complex case, to the conjugation being a **nonlinear** operation.
 
-**An unresolved tension, recorded deliberately.** The corpus does not transcribe the printed norm and conjugation: they are set as one-bit equation images with no text layer, and every displayed equation in this source is in that form. That matters here, because the paper's two statements are not obviously compatible. A conjugation paired with a determinant norm by $q q^\ast = N(q)$ would be the map $q^\ast = z_1 - z_2e$, which is linear, not nonlinear; so either the paper's norm is not the determinant transcribed above, or its conjugation is not the one paired with it in that way, or "nonlinear" is used there in a sense the corpus has not fixed. The corpus records the paper's own report and the algebraic facts it has verified, and asserts no formula for the printed pair until a text-layer copy of the source is available.
+**An unresolved tension, recorded deliberately.** The corpus does not transcribe the printed norm and conjugation: they are set as one-bit equation images with no text layer, and every displayed equation in this source is in that form. That matters here, because the paper's two statements are not obviously compatible. A conjugation paired with a determinant norm by $q q^\ast = N(q)$ would be the map $q^\ast = A_1 - A_2e$, which is linear, not nonlinear; so either the paper's norm is not the determinant transcribed above, or its conjugation is not the one paired with it in that way, or "nonlinear" is used there in a sense the corpus has not fixed. The corpus records the paper's own report and the algebraic facts it has verified, and asserts no formula for the printed pair until a text-layer copy of the source is available.
 
 ## Summary
 

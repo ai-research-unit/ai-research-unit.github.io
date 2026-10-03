@@ -90,9 +90,9 @@ $$
 \mathcal{I}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\}=\mathbb{C}\cdot(e_0+e_1)
 $$
 
-is totally isotropic of real dimension two: every element $\tilde{Q}=z(e_0+e_1)$ has $[\tilde{Q},\tilde{Q}]=|z|^{2}-|z|^{2}=0$, and $[\cdot,\cdot]$ vanishes on the pair.
+is totally isotropic of real dimension two: every element $\tilde{Q}=A(e_0+e_1)$ has $[\tilde{Q},\tilde{Q}]=|A|^{2}-|A|^{2}=0$, and $[\cdot,\cdot]$ vanishes on the pair.
 
-**Proof.** For $\tilde{Q}=z(e_0+e_1)$ the coefficients are $Q_0=Q_1=z$, $Q_2=Q_3=0$, so $[Q,Q]=|z|^{2}-|z|^{2}=0$; for the pair $\tilde{Q}=z(e_0+e_1)$, $\tilde{Q}'=w(e_0+e_1)$ one has $[\tilde{Q},\tilde{Q}']=\bar zw-\bar zw=0$. Maximality is the theorem.
+**Proof.** For $\tilde{Q}=A(e_0+e_1)$ the coefficients are $Q_0=Q_1=A$, $Q_2=Q_3=0$, so $[\tilde{Q},\tilde{Q}]=|A|^{2}-|A|^{2}=0$; for the pair $\tilde{Q}=A(e_0+e_1)$, $\tilde{Q}'=w(e_0+e_1)$ one has $[\tilde{Q},\tilde{Q}']=\bar zw-\bar zw=0$. Maximality is the theorem.
 
 **Remark (the Krein null set is not the null cone).** The two null sets are different objects of the algebra and neither contains the other. The null cone $\mathcal{N}=\{N=0\}$ of *Biquaternion Topology* is the zero-divisor set, a **complex** cone of real dimension $6$; the Krein null set $\{[\tilde{Q},\tilde{Q}]=0\}$ is a **real** cone of real dimension $7$, its defining polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ not being holomorphic. The two exclusions are witnessed on the generators:
 

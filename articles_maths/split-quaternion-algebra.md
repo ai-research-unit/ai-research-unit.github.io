@@ -106,7 +106,7 @@ $$
 
 It negates the three vector basis elements and fixes the scalars.
 
-**Proposition.** The conjugation is an involutive algebra anti-automorphism: it is $\mathbb{R}$-linear, it satisfies $(\tilde q y)^{\natural} = y^{\natural}\, \tilde{q}^{\natural}$ and $(\tilde{q}^{\natural})^{\natural} = \tilde q$, and its fixed-point set is the scalar line $\mathbb{R}$.
+**Proposition.** The conjugation is an involutive algebra anti-automorphism: it is $\mathbb{R}$-linear, it satisfies $(\tilde q \tilde p)^{\natural} = \tilde{p}^{\natural}\, \tilde{q}^{\natural}$ and $(\tilde{q}^{\natural})^{\natural} = \tilde q$, and its fixed-point set is the scalar line $\mathbb{R}$.
 
 **Proof.** Linearity and the second identity are immediate from the definition. For the anti-automorphism property it suffices to check the generators: $(e_1 e_2)^{\natural} = e_3^{\natural} = -e_3$, while $e_2^{\natural} e_1^{\natural} = (-e_2)(-e_1) = e_2 e_1 = -e_3$, and the other products are similar. The fixed points satisfy $q_1 e_1 + q_2 e_2 + q_3 e_3 = -(q_1 e_1 + q_2 e_2 + q_3 e_3)$, hence $q_1 = q_2 = q_3 = 0$.
 
@@ -155,10 +155,10 @@ of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb
 The **inner product** of two split-quaternions is the real scalar
 
 $$
-B(\tilde q, y) = \operatorname{Sc}(\tilde q\, y^{\natural}) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3',
+B(\tilde q, \tilde p) = \operatorname{Sc}(\tilde q\, \tilde{p}^{\natural}) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3,
 $$
 
-for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $y = q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3$. It is symmetric and bilinear, and it is **non-degenerate**: if $B(\tilde q, y) = 0$ for every $y$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.
+for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde p = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3$. It is symmetric and bilinear, and it is **non-degenerate**: if $B(\tilde q, \tilde p) = 0$ for every $\tilde p$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.
 
 Forming the inner product, evaluating it to a scalar and asking when it vanishes is all that is done with it here. Its diagonal value is the product
 
@@ -166,7 +166,7 @@ $$
 B(\tilde q, \tilde q) = \tilde q \tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
-which lies in the centre $S$ and is multiplicative, $(\tilde q y)((\tilde q y))^{\natural} = (\tilde q\tilde{q}^{\natural})(y y^{\natural})$, because $\tilde q\tilde{q}^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $B(\tilde q,\tilde q) = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in *Split-Quaternion Zero Divisors*. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in *Split-Quaternion Norm and Invertibility*.
+which lies in the centre $S$ and is multiplicative, $(\tilde q \tilde p)((\tilde q \tilde p))^{\natural} = (\tilde q\tilde{q}^{\natural})(\tilde p \tilde{p}^{\natural})$, because $\tilde q\tilde{q}^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $B(\tilde q,\tilde q) = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in *Split-Quaternion Zero Divisors*. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in *Split-Quaternion Norm and Invertibility*.
 
 ## The Idempotents and the Split-Complex Subspaces
 
@@ -200,7 +200,7 @@ $$
 \tilde\pi_+^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_+,
 $$
 
-and its analogue for $\tilde\pi_-$, together with $\tilde\pi_+\tilde\pi_- = \tfrac14(1 - e_2^2) = 0$ and $\tilde\pi_+ + \tilde\pi_- = 1$. For non-centrality, $e_1 \tilde\pi_+ = \tfrac12(e_1 + e_3)$ while $\tilde\pi_+ e_1 = \tfrac12(e_1 - e_3)$, so $e_1 \tilde\pi_+ \neq \tilde\pi_+ e_1$. An element $\tilde q \tilde\pi_+$ of the first summand is fixed by right multiplication by $\tilde\pi_+$, since $\tilde q \tilde\pi_+ \tilde\pi_+ = \tilde q \tilde\pi_+$, and the map $\tilde q \mapsto \tilde q \tilde\pi_+$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_+ + \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-)$, and the intersection is zero: if $\tilde q \tilde\pi_+ = y \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_+ \tilde\pi_- = 0$ and the span of $\tilde\pi_+, \tilde\pi_-$ has dimension $2$.
+and its analogue for $\tilde\pi_-$, together with $\tilde\pi_+\tilde\pi_- = \tfrac14(1 - e_2^2) = 0$ and $\tilde\pi_+ + \tilde\pi_- = 1$. For non-centrality, $e_1 \tilde\pi_+ = \tfrac12(e_1 + e_3)$ while $\tilde\pi_+ e_1 = \tfrac12(e_1 - e_3)$, so $e_1 \tilde\pi_+ \neq \tilde\pi_+ e_1$. An element $\tilde q \tilde\pi_+$ of the first summand is fixed by right multiplication by $\tilde\pi_+$, since $\tilde q \tilde\pi_+ \tilde\pi_+ = \tilde q \tilde\pi_+$, and the map $\tilde q \mapsto \tilde q \tilde\pi_+$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_+ + \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_+ + \tilde\pi_-)$, and the intersection is zero: if $\tilde q \tilde\pi_+ = \tilde p \tilde\pi_-$ then multiplying on the right by $\tilde\pi_+$ gives $\tilde q \tilde\pi_+ = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_+ \tilde\pi_- = 0$ and the span of $\tilde\pi_+, \tilde\pi_-$ has dimension $2$.
 
 ### The Split-Complex Subspaces
 
@@ -224,7 +224,7 @@ which exhibits $\mathbb{H}_{\mathrm{s}}$ as a two-dimensional module over the sp
 **Theorem (The Centre).** The centre of $\mathbb{H}_{\mathrm{s}}$ is the scalar line:
 
 $$
-Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q : \tilde q y = y\tilde q \ \text{for all} \ y\} = \mathbb{R} \cdot 1 .
+Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q : \tilde q \tilde p = \tilde p\tilde q \ \text{for all} \ \tilde p\} = \mathbb{R} \cdot 1 .
 $$
 
 **Proof.** The scalars are central. Conversely, suppose $\tilde q = q_0 + \mathbf{v}$ is central. Commuting $\tilde q$ with $e_1$ gives
@@ -243,19 +243,19 @@ so $\mathbf{v} e_1 - e_1 \mathbf{v} = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q
 
 **Theorem (Simplicity).** The split-quaternion algebra is **simple**: it has no two-sided ideal other than $0$ and the algebra itself.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq x \in I$. If $x x^{\natural} \neq 0$ then $x$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{s}}$. If $x x^{\natural} = 0$, then for every real $\lambda$ the element $x + \lambda$ lies in $I$ and
+**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{s}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and
 
 $$
-(x + \lambda)\overline{(x + \lambda)} = x x^{\natural} + 2\lambda \operatorname{Sc}(x) + \lambda^2 = \lambda\big(2\operatorname{Sc}(x) + \lambda\big),
+(\tilde q + \lambda)\overline{(\tilde q + \lambda)} = \tilde q \tilde{q}^{\natural} + 2\lambda \operatorname{Sc}(\tilde q) + \lambda^2 = \lambda\big(2\operatorname{Sc}(\tilde q) + \lambda\big),
 $$
 
-which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(x)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{s}}$. Hence the only two-sided ideals are $0$ and the algebra.
+which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(\tilde q)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{s}}$. Hence the only two-sided ideals are $0$ and the algebra.
 
 The algebra is thus **associative, non-commutative, simple**, with centre $\mathbb{R}$, and it is **not** a division algebra. The combination — associative, non-commutative, simple, centre $\mathbb{R}$, and not a division algebra — is the one the comparisons below set against the quaternions and the split-biquaternions.
 
 ## The Lie Algebra Structure
 
-The algebra carries the commutator bracket $[\tilde q, y] = \tilde q y - y\tilde q$, which makes it a real Lie algebra. The bracket of two elements of $V$ lies in $V$, since
+The algebra carries the commutator bracket $[\tilde q, \tilde p] = \tilde q \tilde p - \tilde p\tilde q$, which makes it a real Lie algebra. The bracket of two elements of $V$ lies in $V$, since
 
 $$
 [e_1, e_2] = 2 e_3, \qquad [e_2, e_3] = -2 e_1, \qquad [e_3, e_1] = 2 e_2 .
@@ -325,11 +325,11 @@ The system is not the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \o
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the split-quaternion conjugation | this article |
 | $\alpha$ | the principal involution, $e_1,e_2 \mapsto -e_1,-e_2$, $e_3 \mapsto e_3$ | this article |
 | $\rho$ | the reversal, $e_1,e_2 \mapsto e_1,e_2$, $e_3 \mapsto -e_3$ | this article |
-| $B(\tilde q,y) = \operatorname{Sc}(\tilde q y^{\natural}) = q_0q_0'+q_1q_1'-q_2q_2'-q_3q_3'$ | the inner product, formed and evaluated algebraically | this article |
+| $B(\tilde q,\tilde p) = \operatorname{Sc}(\tilde q \tilde{p}^{\natural}) = q_0p_0+q_1p_1-q_2p_2-q_3p_3$ | the inner product, formed and evaluated algebraically | this article |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, named here only by forward reference | *Split-Quaternion Norm and Invertibility* |
 | $\tilde\pi_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | this article |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the split-complex subalgebras | this article |
-| $[\tilde q,y] = \tilde q y - y\tilde q$ | the commutator bracket | this article |
+| $[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$ | the commutator bracket | this article |
 | $\mathrm{SL}_2(\mathbb{R})$ | the three-dimensional simple Lie algebra of $V$ | this article |
 | $\mathbb{D}$ | the split-complex numbers, $j^2=+1$ | *Split-Complex Algebra* |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |

@@ -38,10 +38,10 @@ The equality of the two products is checked from the multiplication table: the v
 **Theorem.** The quaternion norm is multiplicative:
 
 $$
-N(pq) = N(p)\,N(\tilde q), \qquad p, \tilde q \in \mathbb{H}.
+N(p\tilde q) = N(p)\,N(\tilde q), \qquad p, \tilde q \in \mathbb{H}.
 $$
 
-*Proof.* Using $(pq)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ is central,
+*Proof.* Using $(p\tilde q)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ is central,
 
 $$
 N(pq) = (pq)(pq)^{\natural} = pq\,\tilde{q}^{\natural}\,p^{\natural} = p\,N(\tilde q)\,p^{\natural} = N(\tilde q)\,p p^{\natural} = N(p)N(\tilde q) .
@@ -111,11 +111,11 @@ The two forms are therefore the same datum: a positive definite quadratic form o
 
 ### Definition
 
-**Definition.** An element $\tilde q\in\mathbb{H}$ is **invertible** if there is $p\in\mathbb{H}$ with $pq = qp = 1$; the element $p$ is then the **inverse** and is written $\tilde q^{-1}$.
+**Definition.** An element $\tilde q\in\mathbb{H}$ is **invertible** if there is $p\in\mathbb{H}$ with $p\tilde q = \tilde q p = 1$; the element $p$ is then the **inverse** and is written $\tilde q^{-1}$.
 
 **Proposition.** The inverse, when it exists, is unique, and the invertible elements of $\mathbb{H}$ form a group under multiplication.
 
-*Proof.* If $p$ and $p'$ are inverses then $p = p1 = p(qp') = (pq)p' = p'$. Closure, associativity, the identity and the existence of inverses are then immediate, so the invertible elements form a group.
+*Proof.* If $p$ and $p'$ are inverses then $p = p1 = p(\tilde q p') = (p\tilde q)p' = p'$. Closure, associativity, the identity and the existence of inverses are then immediate, so the invertible elements form a group.
 
 ### Left and Right Inverses
 
@@ -141,7 +141,7 @@ $$
 
 *Proof.* $(\tilde q)(\tilde{q}^{\natural}/N(\tilde q)) = (\tilde q\tilde{q}^{\natural})/N(\tilde q) = N(\tilde q)/N(\tilde q) = 1$, and $(\tilde{q}^{\natural}/N(\tilde q))(\tilde q) = (\tilde{q}^{\natural} \tilde q)/N(\tilde q) = 1$ because $\tilde{q}^{\natural} \tilde q = N(\tilde q)$ is central.
 
-For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $x$ one has $x^{\natural} = -x$ and $x^{-1} = -x/N(x)$, so the imaginary line is closed under inversion up to the real scale.
+For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\mathbf{q}$ one has $\mathbf{q}^{\natural} = -\mathbf{q}$ and $\mathbf{q}^{-1} = -\mathbf{q}/N(\mathbf{q})$, so the imaginary line is closed under inversion up to the real scale.
 
 ## The Group of Units
 
@@ -207,9 +207,9 @@ The elements of the biquaternion algebra fall into three classes: the invertible
 
 *Proof.* The classes are defined by the mutually exclusive conditions $N\neq 0$, $N = 0$ with $\tilde q\neq 0$, and $\tilde q = 0$. The middle class is empty by positive definiteness, and the first class is the whole punctured algebra.
 
-**Corollary.** Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $a\neq 0$ the equations $ax = b$ and $xa = b$ have the unique solutions $x = a^{-1}b$ and $x = ba^{-1}$ respectively.
+**Corollary.** Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $a\neq 0$ the equations $a\tilde q = b$ and $\tilde q a = b$ have the unique solutions $\tilde q = a^{-1}b$ and $\tilde q = ba^{-1}$ respectively.
 
-*Proof.* The classification makes every non-zero element invertible; multiplying the equation $ax = b$ on the left by $a^{-1}$ gives $x = a^{-1}b$, and uniqueness is the same computation, the right case being symmetric.
+*Proof.* The classification makes every non-zero element invertible; multiplying the equation $a\tilde q = b$ on the left by $a^{-1}$ gives $\tilde q = a^{-1}b$, and uniqueness is the same computation, the right case being symmetric.
 
 The division property is the reason the quaternion algebra stands at the head of its family: it is a four-dimensional real division algebra, and it is the largest-dimensional associative one.
 

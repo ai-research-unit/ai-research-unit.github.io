@@ -62,7 +62,7 @@ the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mat
 **Definition.** The **convolution** of two algebra-valued functions is
 
 $$
-(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(y)\,g(\tilde q-y)\,\mathrm{d}y ,
+(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde p)\,g(\tilde q-\tilde p)\,\mathrm{d}\tilde p ,
 $$
 
 with the product of the algebra inside the integral.
@@ -75,11 +75,11 @@ $$
 
 the product being the product of the algebra.
 
-**Proof.** Substituting $z = \tilde q-y$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.
+**Proof.** Substituting $\tilde r = \tilde q-\tilde p$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.
 
 **Corollary (The Transform Is an Algebra Homomorphism).** The Fourier transform carries convolution to the pointwise product of the algebra and the direct sum to the sum, both products taken in the same order; it is therefore an isomorphism of the convolution algebra onto the algebra of algebra-valued functions with the pointwise product. The convolution is associative, because the algebra product is, but it is **not** commutative: $\widehat{f*g} = \hat f\hat g$ while $\widehat{g*f} = \hat g\hat f$, and the two differ as soon as the values of the transforms fail to commute. The transform is an isomorphism onto the pointwise-product algebra, not onto a commutative algebra, and the non-commutativity of the algebra is exactly what is transported.
 
-**Proof.** The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(y)k(-y)\,\mathrm{d}y$ and $(g*f)(0) = -e_3\int k(y)k(-y)\,\mathrm{d}y$, which differ. Associativity is $\widehat{(f*g)*h} = (\hat f\hat g)\hat h = \hat f(\hat g\hat h)$.
+**Proof.** The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$ and $(g*f)(0) = -e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$, which differ. Associativity is $\widehat{(f*g)*h} = (\hat f\hat g)\hat h = \hat f(\hat g\hat h)$.
 
 ### Approximate Identities and Young's Inequality
 
@@ -117,15 +117,15 @@ so the exponential kernel itself is never a zero divisor, and the transform is w
 
 **Proof.** *Split-Quaternion Elementary Functions*, §*The Exponential*, applied to the element $-\tilde q\xi$.
 
-**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $e^{-\tilde q\xi}$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-y$, and
+**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $e^{-\tilde q\xi}$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde p$, and
 
 $$
-(\tilde q-y)^{-1} = \frac{\overline{\tilde q-y}}{N(\tilde q-y)}
+(\tilde q-\tilde p)^{-1} = \frac{\overline{\tilde q-\tilde p}}{N(\tilde q-\tilde p)}
 $$
 
-exists exactly when $N(\tilde q-y) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
+exists exactly when $N(\tilde q-\tilde p) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
 
-**Proof.** The inverse of an element is $u^{\natural}/N(u)$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
+**Proof.** The inverse of an element is $u^{\natural}/N(u)$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+\tilde p)\xi} \neq e^{-\tilde q\xi}e^{-\tilde p\xi}$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
 
 **Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
 

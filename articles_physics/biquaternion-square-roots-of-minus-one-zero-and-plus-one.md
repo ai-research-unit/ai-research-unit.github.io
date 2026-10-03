@@ -12,7 +12,7 @@ Physically, a root of $-1$ is an **imaginary unit** of the algebra, and the imag
 
 The roots of $+1$ are the **involutions**: the reflections and the parity-type operators, of which the fermion parity $(-1)^F = ie_3$ is an example, and each of which splits the algebra into a complementary pair of projectors. Generators whose square is neither $-1$ nor $+1$ but $0$ — the **parabolic** generators — are exactly the null elements.
 
-**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$, so that it does not collide with the quaternion units; a general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$ and \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair **anticommutes** when $\mu\nu + \nu\mu = 0$.
+**Conventions.** The quaternion basis is $e_0 = 1,e_1,e_2,e_3$ and the scalar imaginary is $i$, so that it does not collide with the quaternion units; a general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$ and $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The material coordinate is $ict\,e_0+\mathbf{x}$ and the informational coordinate is $ct'\,e_0+i\mathbf{x}'$. Throughout, $\mu$ and $\nu$ denote pure real quaternions with $\mu^2 = \nu^2 = -1$, and such a pair **anticommutes** when $\mu\nu + \nu\mu = 0$.
 
 ## The Problem and Its Reduction
 

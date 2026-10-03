@@ -46,7 +46,7 @@ The biquaternion norm is
 $$
 N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + B^2,
 $$
-the sum of the square of the scalar part and the square of the complex norm; this is the biquaternion analogue of $|z|^2 = a^2 + b^2$ for $z = a + bi$, with $a$ replaced by $Q_0$ and $b$ by $B$.
+the sum of the square of the scalar part and the square of the complex norm; this is the biquaternion analogue of $|A|^2 = a^2 + b^2$ for $A = a + bi$, with $a$ replaced by $Q_0$ and $b$ by $B$.
 
 ### The Two Regimes
 
@@ -265,7 +265,7 @@ $$
 
 This element is Hermitian, lies in $\mathbb{M}_+$, and has $N = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
 
-**Comparison.** A general exponent is $\tilde{Q} = q + iq'$ with $q, q'$ real vector parts; the two families commute only when $q$ and $q'$ are parallel, since $[q, iq'] = 2i\,(q \times q')$, and in general the closed form of §*The Exponential* with $Q_0 = 0$ mixes the two families.
+**Comparison.** A general exponent is $\tilde{Q} = \mathbf{q} + i\mathbf{q}'$ with $\mathbf{q}, \mathbf{q}'$ real vector parts; the two families commute only when $\mathbf{q}$ and $\mathbf{q}'$ are parallel, since $[\mathbf{q}, i\mathbf{q}'] = 2i\,(\mathbf{q} \times \mathbf{q}')$, and in general the closed form of §*The Exponential* with $Q_0 = 0$ mixes the two families.
 
 ## The Trigonometric and Hyperbolic Functions
 
@@ -592,7 +592,7 @@ $$
 \tilde{Q}^\alpha = Q_0^\alpha e_0 + \alpha Q_0^{\alpha-1} \mathbf{Q}, \qquad B = 0, \quad \mathbf{Q} \neq 0,
 $$
 
-with $Q_0 \neq 0$ required for invertibility. This involves the linear term $\alpha Q_0^{\alpha-1} \mathbf{Q}$, which is the analogue of the expansion $(1 + x)^\alpha \approx 1 + \alpha x$ for small $x$ with $x^2 = 0$.
+with $Q_0 \neq 0$ required for invertibility. This involves the linear term $\alpha Q_0^{\alpha-1} \mathbf{Q}$, which is the analogue of the expansion $(1 + a)^\alpha \approx 1 + \alpha a$ for small $a$ with $a^2 = 0$.
 
 ### The Case $\mathbf{Q} = 0$
 

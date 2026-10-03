@@ -29,15 +29,15 @@ The first two are the conjugations of the quaternion and of the complex structur
 
 **Definition.** An **antilinear involution** of $\mathbb{B}$ is a real-linear map $\sigma$ with $\sigma^2 = \mathrm{id}$ and $\sigma(\lambda \tilde{Q}) = \bar{\lambda}\sigma(\tilde{Q})$ for $\lambda \in \mathbb{C}$.
 
-**Proposition.** The four conjugations are antilinear involutions, and the first three are antiautomorphisms of the algebra, while the fourth is an antiautomorphism up to the central sign: for $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
+**Proposition.** The four conjugations are antilinear involutions, and the first and the third are antiautomorphisms of the algebra, while the second is an automorphism, reversing nothing, and the fourth is an antiautomorphism up to the central sign: for $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
 
 $$
-(\tilde{Q}\tilde{R})^{\natural} = \tilde{R}^{\natural}\,\tilde{Q}^{\natural} , \qquad (\tilde{Q}\tilde{R})^{*} = \bar{\tilde{Q}}\bar{\tilde{R}} , \qquad (\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*} , \qquad (\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat} .
+(\tilde{Q}\tilde{R})^{\natural} = \tilde{R}^{\natural}\,\tilde{Q}^{\natural} , \qquad \overline{\tilde{Q}\tilde{R}} = \bar{\tilde{Q}}\,\bar{\tilde{R}} , \qquad (\tilde{Q}\tilde{R})^{*} = \tilde{R}^{*}\tilde{Q}^{*} , \qquad (\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat} .
 $$
 
-**Proof.** Each formula is a direct computation from the definitions; the sign in the last follows from $\flat = -{}^{*}$ and ${}^{*}$ being an antiautomorphism, since $-\mathrm{id}$ is central.
+**Proof.** Each formula is a direct computation from the definitions; the sign in the last follows from $\flat = -{}^{*}$ and ${}^{*}$ being an antiautomorphism, since $-\mathrm{id}$ is central. The second formula is the one that does not reverse: coefficient-wise conjugation is multiplicative, because it is a ring homomorphism of $\mathbb{C}$ applied to the coefficients.
 
-The distinction between the second row of the table and the others is the reason the four maps are not interchangeable: $\bar{\cdot}$ reverses nothing, being the coefficient-wise conjugation, while ${}^{\natural}$, ${}^{*}$ and $\flat$ reverse the order of a product.
+The distinction between the second conjugation and the others is the reason the four maps are not interchangeable: $\bar{\cdot}$ reverses nothing, being the coefficient-wise conjugation, while ${}^{\natural}$, ${}^{*}$ and $\flat$ reverse the order of a product.
 
 ## The Group They Generate
 
@@ -66,7 +66,7 @@ Composing the four conjugations, with the convention that the entry is the map a
 | ${}^{*}$ | $\bar{\cdot}$ | ${}^{\natural}$ | $\mathrm{id}$ | $-\mathrm{id}$ |
 | $\flat$ | $-\bar{\cdot}$ | $-{}^{\natural}$ | $-\mathrm{id}$ | $\mathrm{id}$ |
 
-The entry $-\bar{\cdot}$ denotes the map $\tilde{Q} \mapsto -\bar{\tilde{Q}}$. The table contains the two rules of the theorem and shows where the group structure stops: the composite of two maps of the group is the third, while a composite involving $\flat$ may be the negative of a member of the group — as in the two corners $-\bar{\cdot}$ — or the negative of the identity, as in the pairs $(^{\dagger},\flat)$ and $(\flat,^{\dagger})$.
+The entry $-\bar{\cdot}$ denotes the map $\tilde{Q} \mapsto -\bar{\tilde{Q}}$. The table contains the two rules of the theorem and shows where the group structure stops: the composite of two maps of the group is the third, while a composite involving $\flat$ may be the negative of a member of the group — as in the two corners $-\bar{\cdot}$ — or the negative of the identity, as in the pairs $({}^{*},\flat)$ and $(\flat,{}^{*})$.
 
 ## How the Conjugations Permute Each Other
 
@@ -173,9 +173,9 @@ The biquaternion algebra carries four antilinear involutions: quaternion conjuga
 |---|---|
 | ${}^{\natural}$ | quaternion conjugation, the quaternion structure |
 | $\bar{\cdot}$ | complex conjugation, the coefficient-wise conjugation |
-| ${}^{*}$ | Hermitian conjugation, ${}^{\natural}\circ{}^{*}$ |
+| ${}^{*}$ | Hermitian conjugation, $\bar{\cdot}\circ{}^{\natural}$ |
 | $\flat$ | reversal, $-{}^{*}$ |
-| $-\mathrm{id}$ | the central sign, $Q \mapsto -Q$ |
+| $-\mathrm{id}$ | the central sign, $\tilde{Q} \mapsto -\tilde{Q}$ |
 | involution group | $\{ \mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*} \}$, a Klein four-group |
 | fixed space | the elements with $\sigma(\tilde{Q}) = \tilde{Q}$ |
 | anti-fixed space | the elements with $\sigma(\tilde{Q}) = -\tilde{Q}$ |

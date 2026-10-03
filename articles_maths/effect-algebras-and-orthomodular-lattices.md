@@ -7,58 +7,58 @@ This is the fourth article of the Boolean system in Part V, and it occupies the 
 
 The boundary against the general theory is deliberate. Lattices, modularity and the forbidden-sublattice criterion are the subject of *Order Theory and Lattices*; the Boolean case is *Boolean Algebras and Lattices*; the distributive negations are *Heyting Algebras and Intuitionistic Logic* and *MV-Algebras and Many-Valued Logic*. The models of the present algebras come from functional analysis: the projection lattice of a Hilbert space is the standard orthomodular lattice, and the unit interval of a von Neumann algebra is the standard effect algebra. Those objects are constructed in *Banach and Hilbert Spaces* and *Operator Algebras*, and are used here as examples; the present article develops the abstract algebra only. No physics is invoked, and no topology, distance or Hilbert-space structure is developed beyond what the examples require.
 
-Throughout, an ortholattice is written $(L, \wedge, \vee, {}^{\perp}, 0, 1)$ with orthocomplement $a^{\perp}$, and an effect algebra is written $(E, \oplus, 0, 1)$ with orthosupplement $a'$. When an effect algebra is lattice-ordered and its partial sum is the join on orthogonal pairs, its orthosupplement coincides with the orthocomplement of the resulting orthomodular lattice; this is stated precisely below. The projection lattice of a Hilbert space $H$ is written $P(H)$, and the effect algebra of all effects on $H$ is written $\mathcal{E}(H)$.
+Throughout, an ortholattice is written $(L, \wedge, \vee, {}^{\perp}, 0, 1)$ with orthocomplement $\alpha^{\perp}$, and an effect algebra is written $(E, \oplus, 0, 1)$ with orthosupplement $\alpha'$. When an effect algebra is lattice-ordered and its partial sum is the join on orthogonal pairs, its orthosupplement coincides with the orthocomplement of the resulting orthomodular lattice; this is stated precisely below. The projection lattice of a Hilbert space $H$ is written $P(H)$, and the effect algebra of all effects on $H$ is written $\mathcal{E}(H)$.
 
 ## Ortholattices
 
 ### Orthocomplementation
 
-**Definition.** An **orthocomplementation** on a bounded lattice $L$ is a map $a \mapsto a^{\perp}$ such that for all $a, b$:
+**Definition.** An **orthocomplementation** on a bounded lattice $L$ is a map $\alpha \mapsto \alpha^{\perp}$ such that for all $\alpha, \beta$:
 
 $$
-a^{\perp\perp} = a, \qquad a \wedge a^{\perp} = 0, \qquad a \vee a^{\perp} = 1, \qquad a \leq b \implies b^{\perp} \leq a^{\perp} .
+\alpha^{\perp\perp} = \alpha, \qquad \alpha \wedge \alpha^{\perp} = 0, \qquad \alpha \vee \alpha^{\perp} = 1, \qquad \alpha \leq \beta \implies \beta^{\perp} \leq \alpha^{\perp} .
 $$
 
-A lattice with an orthocomplementation is an **ortholattice**; its elements are **orthogonal**, written $a \perp b$, when $a \leq b^{\perp}$. The **interval** $[0,a]$ is the set $\{x : 0 \leq x \leq a\}$ with the inherited order.
+A lattice with an orthocomplementation is an **ortholattice**; its elements are **orthogonal**, written $\alpha \perp \beta$, when $\alpha \leq \beta^{\perp}$. The **interval** $[0,\alpha]$ is the set $\{\beta : 0 \leq \beta \leq \alpha\}$ with the inherited order.
 
-**Theorem.** In an ortholattice, for all $a, b$:
+**Theorem.** In an ortholattice, for all $\alpha, \beta$:
 
 $$
-0^{\perp} = 1, \qquad 1^{\perp} = 0, \qquad a \perp b \iff b \perp a, \qquad a \perp a \iff a = 0,
+0^{\perp} = 1, \qquad 1^{\perp} = 0, \qquad \alpha \perp \beta \iff \beta \perp \alpha, \qquad \alpha \perp \alpha \iff \alpha = 0,
 $$
 
 and the De Morgan laws hold in both forms
 
 $$
-(a \wedge b)^{\perp} = a^{\perp} \vee b^{\perp}, \qquad (a \vee b)^{\perp} = a^{\perp} \wedge b^{\perp} .
+(\alpha \wedge \beta)^{\perp} = \alpha^{\perp} \vee \beta^{\perp}, \qquad (\alpha \vee \beta)^{\perp} = \alpha^{\perp} \wedge \beta^{\perp} .
 $$
 
-**Proof.** The first two are the definition at $0$ and $1$. Orthogonality is symmetric because $a \leq b^{\perp}$ is equivalent to $b \leq a^{\perp}$, both following from $b^{\perp\perp} = b$ and the order reversal. $a \perp a$ means $a \leq a^{\perp}$, and then $a = a \wedge a^{\perp} = 0$; the converse is clear. For De Morgan, $a^{\perp} \vee b^{\perp} \leq (a \wedge b)^{\perp}$ because $a \wedge b \leq a$ gives $a^{\perp} \leq (a\wedge b)^{\perp}$ and similarly for $b$. For the reverse, put $d = a^{\perp} \vee b^{\perp}$. Since $a^{\perp} \leq d$ and $b^{\perp} \leq d$, the order reversal of the orthocomplement gives $d^{\perp} \leq a$ and $d^{\perp} \leq b$, hence $d^{\perp} \leq a \wedge b$, whence $(a \wedge b)^{\perp} \leq d$ by the order reversal again; the second law is the first applied to $a^{\perp}$ and $b^{\perp}$.
+**Proof.** The first two are the definition at $0$ and $1$. Orthogonality is symmetric because $\alpha \leq \beta^{\perp}$ is equivalent to $\beta \leq \alpha^{\perp}$, both following from $\beta^{\perp\perp} = \beta$ and the order reversal. $\alpha \perp \alpha$ means $\alpha \leq \alpha^{\perp}$, and then $\alpha = \alpha \wedge \alpha^{\perp} = 0$; the converse is clear. For De Morgan, $\alpha^{\perp} \vee \beta^{\perp} \leq (\alpha \wedge \beta)^{\perp}$ because $\alpha \wedge \beta \leq \alpha$ gives $\alpha^{\perp} \leq (\alpha\wedge \beta)^{\perp}$ and similarly for $\beta$. For the reverse, put $\delta = \alpha^{\perp} \vee \beta^{\perp}$. Since $\alpha^{\perp} \leq \delta$ and $\beta^{\perp} \leq \delta$, the order reversal of the orthocomplement gives $\delta^{\perp} \leq \alpha$ and $\delta^{\perp} \leq \beta$, hence $\delta^{\perp} \leq \alpha \wedge \beta$, whence $(\alpha \wedge \beta)^{\perp} \leq \delta$ by the order reversal again; the second law is the first applied to $\alpha^{\perp}$ and $\beta^{\perp}$.
 
 ### The Orthomodular Law
 
-**Definition.** An ortholattice $L$ is **orthomodular** if for all $a, b$
+**Definition.** An ortholattice $L$ is **orthomodular** if for all $\alpha, \beta$
 
 $$
-a \leq b \implies b = a \vee (a^{\perp} \wedge b) .
+\alpha \leq \beta \implies \beta = \alpha \vee (\alpha^{\perp} \wedge \beta) .
 $$
 
-The condition is the **orthomodular law**. It is a weakened distributivity: in a distributive ortholattice the law holds because $a \vee (a^{\perp}\wedge b) = (a\vee a^{\perp})\wedge(a\vee b) = b$ when $a \leq b$.
+The condition is the **orthomodular law**. It is a weakened distributivity: in a distributive ortholattice the law holds because $\alpha \vee (\alpha^{\perp}\wedge \beta) = (\alpha\vee \alpha^{\perp})\wedge(\alpha\vee \beta) = \beta$ when $\alpha \leq \beta$.
 
-**Theorem.** The following are equivalent in an ortholattice $L$, for all $a, b$:
+**Theorem.** The following are equivalent in an ortholattice $L$, for all $\alpha, \beta$:
 
-1. $a \leq b$ implies $b = a \vee (a^{\perp} \wedge b)$;
-2. $a \leq b$ and $a^{\perp} \wedge b = 0$ imply $a = b$;
-3. $a \vee (a^{\perp} \wedge (a \vee b)) = a \vee b$;
-4. $a \wedge (a^{\perp} \vee (a \wedge b)) = a \wedge b$.
+1. $\alpha \leq \beta$ implies $\beta = \alpha \vee (\alpha^{\perp} \wedge \beta)$;
+2. $\alpha \leq \beta$ and $\alpha^{\perp} \wedge \beta = 0$ imply $\alpha = \beta$;
+3. $\alpha \vee (\alpha^{\perp} \wedge (\alpha \vee \beta)) = \alpha \vee \beta$;
+4. $\alpha \wedge (\alpha^{\perp} \vee (\alpha \wedge \beta)) = \alpha \wedge \beta$.
 
-**Proof.** The equivalence of (1), (2) and (3) is the standard list of equivalent forms of the orthomodular law: (2) is the statement that no proper element of the interval $[a,b]$ is orthogonal to $a$, and (3) is (1) with the pair $(a, a \vee b)$ substituted for $(a,b)$, so that $a \vee b$ plays the role of the upper element. The form (4) is the **dual** of (3): applying (3) to the pair $(a^{\perp}, b^{\perp})$ gives $a^{\perp} \vee (a \wedge (a^{\perp} \vee b^{\perp})) = a^{\perp} \vee b^{\perp}$, and taking orthocomplements of both sides and using the De Morgan laws gives $a \wedge (a^{\perp} \vee (a \wedge b)) = a \wedge b$. Since the class of ortholattices is self-dual, (4) is equivalent to (3). The verifications are in the standard references.
+**Proof.** The equivalence of (1), (2) and (3) is the standard list of equivalent forms of the orthomodular law: (2) is the statement that no proper element of the interval $[\alpha,\beta]$ is orthogonal to $\alpha$, and (3) is (1) with the pair $(\alpha, \alpha \vee \beta)$ substituted for $(\alpha,\beta)$, so that $\alpha \vee \beta$ plays the role of the upper element. The form (4) is the **dual** of (3): applying (3) to the pair $(\alpha^{\perp}, \beta^{\perp})$ gives $\alpha^{\perp} \vee (\alpha \wedge (\alpha^{\perp} \vee \beta^{\perp})) = \alpha^{\perp} \vee \beta^{\perp}$, and taking orthocomplements of both sides and using the De Morgan laws gives $\alpha \wedge (\alpha^{\perp} \vee (\alpha \wedge \beta)) = \alpha \wedge \beta$. Since the class of ortholattices is self-dual, (4) is equivalent to (3). The verifications are in the standard references.
 
-**Example (Boolean algebras).** A Boolean algebra is an ortholattice with $a^{\perp} = \neg a$, and it is orthomodular because it is distributive. Conversely, the next theorem shows that distributivity is the only case: an ortholattice can satisfy at most this much distributivity without collapsing to a Boolean algebra.
+**Example (Boolean algebras).** A Boolean algebra is an ortholattice with $\alpha^{\perp} = \neg \alpha$, and it is orthomodular because it is distributive. Conversely, the next theorem shows that distributivity is the only case: an ortholattice can satisfy at most this much distributivity without collapsing to a Boolean algebra.
 
 **Theorem.** An orthomodular lattice is a Boolean algebra if and only if it is distributive.
 
-**Proof.** A Boolean algebra is distributive. Conversely, in a distributive orthomodular lattice every element has the unique complement $\neg a = a^{\perp}$, and the complemented distributive laws of *Boolean Algebras and Lattices* are satisfied; the verifications are the same as there, with the orthomodular law supplying the identity $a \vee (a^{\perp}\wedge b) = a \vee b$ for $a \leq b$.
+**Proof.** A Boolean algebra is distributive. Conversely, in a distributive orthomodular lattice every element has the unique complement $\neg \alpha = \alpha^{\perp}$, and the complemented distributive laws of *Boolean Algebras and Lattices* are satisfied; the verifications are the same as there, with the orthomodular law supplying the identity $\alpha \vee (\alpha^{\perp}\wedge \beta) = \alpha \vee \beta$ for $\alpha \leq \beta$.
 
 The theorem is the reason the present article belongs to the Boolean category: the Boolean algebras are exactly the distributive members of the class, and every non-distributive orthomodular lattice is a witness that the Boolean laws are not forced by the order and the complement alone.
 
@@ -96,7 +96,7 @@ $$
 
 The two are different, so distributivity fails.
 
-The two-dimensional case already exhibits the failure in its simplest form: the **orthomodular lattice of the plane** is the set $\{0, H\} \cup \{\text{lines through } 0\}$, and three distinct lines $L_1, L_2, L_3$ generate the sublattice with elements $0, L_1, L_2, L_3, H$, in which $L_i \wedge L_j = 0$ and $L_i \vee L_j = H$ for $i \neq j$. This is the five-element modular orthomodular lattice $M_3$, and it is non-distributive, since $L_1 \wedge (L_2 \vee L_3) = L_1$ while $(L_1 \wedge L_2) \vee (L_1 \wedge L_3) = 0$. The six-element **benzene ring** $O_6$, the cycle of four atoms $a, b, c, d$ with $a \perp b$, $b \perp c$, $c \perp d$ and $d \perp a$, is the smallest non-modular orthomodular lattice.
+The two-dimensional case already exhibits the failure in its simplest form: the **orthomodular lattice of the plane** is the set $\{0, H\} \cup \{\text{lines through } 0\}$, and three distinct lines $L_1, L_2, L_3$ generate the sublattice with elements $0, L_1, L_2, L_3, H$, in which $L_i \wedge L_j = 0$ and $L_i \vee L_j = H$ for $i \neq j$. This is the five-element modular orthomodular lattice $M_3$, and it is non-distributive, since $L_1 \wedge (L_2 \vee L_3) = L_1$ while $(L_1 \wedge L_2) \vee (L_1 \wedge L_3) = 0$. The six-element **benzene ring** $O_6$, the cycle of four atoms $\alpha, \beta, \gamma, \delta$ with $\alpha \perp \beta$, $\beta \perp \gamma$, $\gamma \perp \delta$ and $\delta \perp \alpha$, is the smallest non-modular orthomodular lattice.
 
 **Remark.** The projection lattice is the standard orthomodular lattice. The **coordinatisation** problem — which orthomodular lattices are isomorphic to a lattice $P(H)$ — is the subject of the theorem of Piron and of the deeper results of the literature; the present article uses only the examples and the abstract theory.
 
@@ -104,64 +104,64 @@ The two-dimensional case already exhibits the failure in its simplest form: the 
 
 ### The Axioms
 
-**Definition.** An **effect algebra** is a set $E$ with distinguished elements $0$ and $1$ and a **partial** binary operation $\oplus$, defined on some pairs and written $a \perp b$ when $a \oplus b$ is defined, such that
+**Definition.** An **effect algebra** is a set $E$ with distinguished elements $0$ and $1$ and a **partial** binary operation $\oplus$, defined on some pairs and written $\alpha \perp \beta$ when $\alpha \oplus \beta$ is defined, such that
 
-**(EA1)** if $a \perp b$, then $b \perp a$ and $a \oplus b = b \oplus a$;
+**(EA1)** if $\alpha \perp \beta$, then $\beta \perp \alpha$ and $\alpha \oplus \beta = \beta \oplus \alpha$;
 
-**(EA2)** if $a \perp b$ and $a \oplus b \perp c$, then $b \perp c$, $a \perp b \oplus c$, and $(a \oplus b) \oplus c = a \oplus (b \oplus c)$;
+**(EA2)** if $\alpha \perp \beta$ and $\alpha \oplus \beta \perp \gamma$, then $\beta \perp \gamma$, $\alpha \perp \beta \oplus \gamma$, and $(\alpha \oplus \beta) \oplus \gamma = \alpha \oplus (\beta \oplus \gamma)$;
 
-**(EA3)** for every $a \in E$ there is a unique $a' \in E$ with $a \perp a'$ and $a \oplus a' = 1$;
+**(EA3)** for every $\alpha \in E$ there is a unique $\alpha' \in E$ with $\alpha \perp \alpha'$ and $\alpha \oplus \alpha' = 1$;
 
-**(EA4)** if $a \perp 1$, then $a = 0$.
+**(EA4)** if $\alpha \perp 1$, then $\alpha = 0$.
 
-The element $a'$ is the **orthosupplement** of $a$. The relation $\leq$ is defined by
-
-$$
-a \leq b \iff \text{there is } c \in E \text{ with } a \perp c \text{ and } a \oplus c = b,
-$$
-
-and the element $c$, when it exists, is unique and is written $b \ominus a$.
-
-**Theorem.** In an effect algebra the relation $\leq$ is a partial order with least element $0$ and greatest element $1$; moreover $a \oplus 0 = a$ for all $a$, $a'' = a$, $0' = 1$, $1' = 0$, and
+The element $\alpha'$ is the **orthosupplement** of $\alpha$. The relation $\leq$ is defined by
 
 $$
-a \leq b \iff b' \leq a', \qquad b \ominus a = (a \oplus b')' .
+\alpha \leq \beta \iff \text{there is } \gamma \in E \text{ with } \alpha \perp \gamma \text{ and } \alpha \oplus \gamma = \beta,
 $$
 
-**Proof.** Reflexivity is $a \oplus 0 = a$, which follows from (EA3) applied to $a'$ and (EA1); antisymmetry and transitivity are the standard cancellativity and associativity consequences of (EA2) and (EA3). The order-reversing property of the orthosupplement and the formula for the difference are the standard identities of the theory: if $a \le b$, say $b = a \oplus c$, then $b' = (a\oplus c)' = a' \ominus c \le a'$. The full verification is in the standard references.
+and the element $\gamma$, when it exists, is unique and is written $\beta \ominus \alpha$.
+
+**Theorem.** In an effect algebra the relation $\leq$ is a partial order with least element $0$ and greatest element $1$; moreover $\alpha \oplus 0 = \alpha$ for all $\alpha$, $\alpha'' = \alpha$, $0' = 1$, $1' = 0$, and
+
+$$
+\alpha \leq \beta \iff \beta' \leq \alpha', \qquad \beta \ominus \alpha = (\alpha \oplus \beta')' .
+$$
+
+**Proof.** Reflexivity is $\alpha \oplus 0 = \alpha$, which follows from (EA3) applied to $\alpha'$ and (EA1); antisymmetry and transitivity are the standard cancellativity and associativity consequences of (EA2) and (EA3). The order-reversing property of the orthosupplement and the formula for the difference are the standard identities of the theory: if $\alpha \le \beta$, say $\beta = \alpha \oplus \gamma$, then $\beta' = (\alpha\oplus \gamma)' = \alpha' \ominus \gamma \le \alpha'$. The full verification is in the standard references.
 
 ### The Standard Examples
 
-**Example (the unit interval).** Let $E = [0,1] \subseteq \mathbb{R}$ with $a \oplus b$ defined exactly when $a + b \leq 1$, in which case $a \oplus b = a + b$. The axioms hold with $a' = 1 - a$. This effect algebra is lattice-ordered, and its partial sum is the truncated addition of *MV-Algebras and Many-Valued Logic*; it is the effect algebra of a single real interval. Every positive element generates $1$: for $a > 0$, some $n$-fold multiple of $a$ equals $1$, so $[0,1]$ has no nontrivial proper ideals and is simple.
+**Example (the unit interval).** Let $E = [0,1] \subseteq \mathbb{R}$ with $\alpha \oplus \beta$ defined exactly when $\alpha + \beta \leq 1$, in which case $\alpha \oplus \beta = \alpha + \beta$. The axioms hold with $\alpha' = 1 - \alpha$. This effect algebra is lattice-ordered, and its partial sum is the truncated addition of *MV-Algebras and Many-Valued Logic*; it is the effect algebra of a single real interval. Every positive element generates $1$: for $\alpha > 0$, some $n$-fold multiple of $\alpha$ equals $1$, so $[0,1]$ has no nontrivial proper ideals and is simple.
 
 **Example (projections).** Let $H$ be a Hilbert space and let $P(H)$ be its projection lattice. Define $M \oplus N = M \vee N$ when $M \perp N$, that is, when $M \subseteq N^{\perp}$. Then $P(H)$ is an effect algebra with orthosupplement $M' = M^{\perp}$. Here the operation is the join, and the effect algebra is lattice-ordered; this is the case in which the order alone determines the sum.
 
 **Example (effects of an operator algebra).** Let $M$ be a von Neumann algebra and let
 
 $$
-\mathcal{E}(M) = \{a \in M : 0 \leq a \leq 1\}
+\mathcal{E}(M) = \{\alpha \in M : 0 \leq \alpha \leq 1\}
 $$
 
-be its set of **effects**, the self-adjoint elements with spectrum in $[0,1]$. Define $a \oplus b$ exactly when $a + b \leq 1$, in which case $a \oplus b = a + b$, and put $a' = 1 - a$. The axioms hold, and $\mathcal{E}(M)$ is the **standard effect algebra** of $M$; the projections are exactly the elements $p$ with $p = p^2$, and they form the orthomodular lattice $P(M)$ inside $\mathcal{E}(M)$. When $M = B(H)$ one writes $\mathcal{E}(H)$.
+be its set of **effects**, the self-adjoint elements with spectrum in $[0,1]$. Define $\alpha \oplus \beta$ exactly when $\alpha + \beta \leq 1$, in which case $\alpha \oplus \beta = \alpha + \beta$, and put $\alpha' = 1 - \alpha$. The axioms hold, and $\mathcal{E}(M)$ is the **standard effect algebra** of $M$; the projections are exactly the elements $p$ with $p = p^2$, and they form the orthomodular lattice $P(M)$ inside $\mathcal{E}(M)$. When $M = B(H)$ one writes $\mathcal{E}(H)$.
 
 The projection lattice and the standard effect algebra are the two levels of the same structure: the projections are the *sharp* effects, those that are idempotent, and the effects are the unit interval of the surrounding operator algebra. That operator algebra and the norm on it belong to *Operator Algebras* and *Banach and Hilbert Spaces*; the present article takes only the order and the partial sum.
 
 ### Elementary Consequences
 
-**Theorem.** In an effect algebra $E$, for all $a, b, c$:
+**Theorem.** In an effect algebra $E$, for all $\alpha, \beta, \gamma$:
 
 $$
-a \perp b \implies a \oplus b \geq a, \qquad a \leq b \implies b \ominus a \leq b, \qquad a \le b \iff a' \ge b',
+\alpha \perp \beta \implies \alpha \oplus \beta \geq \alpha, \qquad \alpha \leq \beta \implies \beta \ominus \alpha \leq \beta, \qquad \alpha \le \beta \iff \alpha' \ge \beta',
 $$
 
-and if $a \perp c$ and $b \perp c$ with $a \oplus c = b \oplus c$, then $a = b$.
+and if $\alpha \perp \gamma$ and $\beta \perp \gamma$ with $\alpha \oplus \gamma = \beta \oplus \gamma$, then $\alpha = \beta$.
 
-**Proof.** The first is clear from the order definition, the second follows from $b = a \oplus (b \ominus a)$. The third was stated above. For the cancellation, $a \oplus c = b \oplus c$ and the associativity of $\oplus$ applied to $(a\oplus c)\oplus c'$ give $a \oplus (c \oplus c') = b \oplus (c \oplus c')$, that is, $a \oplus 1 = b \oplus 1$, and by (EA4) applied after subtracting $1$ from the order relation, $a = b$; the argument uses the standard rewritings and is in the references.
+**Proof.** The first is clear from the order definition, the second follows from $\beta = \alpha \oplus (\beta \ominus \alpha)$. The third was stated above. For the cancellation, $\alpha \oplus \gamma = \beta \oplus \gamma$ and the associativity of $\oplus$ applied to $(\alpha\oplus \gamma)\oplus \gamma'$ give $\alpha \oplus (\gamma \oplus \gamma') = \beta \oplus (\gamma \oplus \gamma')$, that is, $\alpha \oplus 1 = \beta \oplus 1$, and by (EA4) applied after subtracting $1$ from the order relation, $\alpha = \beta$; the argument uses the standard rewritings and is in the references.
 
 **Definition.** A **sub-effect-algebra** is a subset containing $0, 1$ and closed under $\oplus$ and ${}'$. An **ideal** of $E$ is a subset $I$ with $0 \in I$, closed under $\oplus$, and downward closed. The **compatibility** relation is
 
 $$
-a \leftrightarrow b \iff \text{there exist } a_1, b_1, c \in E \text{ with } a = a_1 \oplus c,\ b = b_1 \oplus c,\ a_1 \perp b_1 .
+\alpha \leftrightarrow \beta \iff \text{there exist } \alpha_1, \beta_1, \gamma \in E \text{ with } \alpha = \alpha_1 \oplus \gamma,\ \beta = \beta_1 \oplus \gamma,\ \alpha_1 \perp \beta_1 .
 $$
 
 Two elements are compatible exactly when they lie in a common Boolean sub-effect-algebra; a maximal such subalgebra is a **block**, and the blocks are the pieces from which the non-distributive algebra is assembled.
@@ -170,15 +170,15 @@ Two elements are compatible exactly when they lie in a common Boolean sub-effect
 
 ### Orthomodular Lattices as Effect Algebras
 
-**Theorem.** Let $L$ be an orthomodular lattice. Define $a \oplus b = a \vee b$ exactly when $a \perp b$. Then $L$ is an effect algebra, with orthosupplement $a' = a^{\perp}$, and the effect-algebra order is the lattice order. Conversely, an effect algebra that is a lattice and in which $a \oplus b = a \vee b$ for orthogonal $a,b$ is an orthomodular lattice, with $a^{\perp} = a'$.
+**Theorem.** Let $L$ be an orthomodular lattice. Define $\alpha \oplus \beta = \alpha \vee \beta$ exactly when $\alpha \perp \beta$. Then $L$ is an effect algebra, with orthosupplement $\alpha' = \alpha^{\perp}$, and the effect-algebra order is the lattice order. Conversely, an effect algebra that is a lattice and in which $\alpha \oplus \beta = \alpha \vee \beta$ for orthogonal $\alpha,\beta$ is an orthomodular lattice, with $\alpha^{\perp} = \alpha'$.
 
-**Proof.** The axioms (EA1)–(EA4) are the ortholattice laws for orthogonal pairs: (EA1) is the symmetry of orthogonality, (EA2) is associativity for pairwise orthogonal elements, which holds in any lattice because all three joins agree, (EA3) is the existence of the orthocomplement, and (EA4) is $a \le 1^{\perp} = 0$. The orthomodular law is exactly what is needed for the effect-algebra order to recover the lattice order on the whole lattice and not only on the orthogonal pairs: if $a \leq b$ in $L$, then $b = a \vee (a^{\perp}\wedge b) = a \oplus (a^{\perp}\wedge b)$ with $a \perp a^{\perp}\wedge b$, so $a \leq b$ in the effect-algebra order; the converse is immediate.
+**Proof.** The axioms (EA1)–(EA4) are the ortholattice laws for orthogonal pairs: (EA1) is the symmetry of orthogonality, (EA2) is associativity for pairwise orthogonal elements, which holds in any lattice because all three joins agree, (EA3) is the existence of the orthocomplement, and (EA4) is $\alpha \le 1^{\perp} = 0$. The orthomodular law is exactly what is needed for the effect-algebra order to recover the lattice order on the whole lattice and not only on the orthogonal pairs: if $\alpha \leq \beta$ in $L$, then $\beta = \alpha \vee (\alpha^{\perp}\wedge \beta) = \alpha \oplus (\alpha^{\perp}\wedge \beta)$ with $\alpha \perp \alpha^{\perp}\wedge \beta$, so $\alpha \leq \beta$ in the effect-algebra order; the converse is immediate.
 
 ### MV-Algebras as Lattice-Ordered Effect Algebras
 
-**Theorem.** An effect algebra is an MV-algebra if and only if it is lattice-ordered and satisfies the **Riesz decomposition property**: if $c \leq a \oplus b$, then $c = a_1 \oplus b_1$ with $a_1 \leq a$ and $b_1 \leq b$.
+**Theorem.** An effect algebra is an MV-algebra if and only if it is lattice-ordered and satisfies the **Riesz decomposition property**: if $\gamma \leq \alpha \oplus \beta$, then $\gamma = \alpha_1 \oplus \beta_1$ with $\alpha_1 \leq \alpha$ and $\beta_1 \leq \beta$.
 
-**Proof.** In an MV-algebra the partial sum $a \oplus b$ defined exactly when $a \odot \neg b = 0$ makes it an effect algebra, and the lattice order together with Riesz decomposition is the standard characterisation of the MV-algebras among the effect algebras; the decomposition property is what converts the partial sum into the total $\oplus$ of *MV-Algebras and Many-Valued Logic*. The argument is due to Mundici and is quoted.
+**Proof.** In an MV-algebra the partial sum $\alpha \oplus \beta$ defined exactly when $\alpha \odot \neg \beta = 0$ makes it an effect algebra, and the lattice order together with Riesz decomposition is the standard characterisation of the MV-algebras among the effect algebras; the decomposition property is what converts the partial sum into the total $\oplus$ of *MV-Algebras and Many-Valued Logic*. The argument is due to Mundici and is quoted.
 
 The two theorems place the Boolean category in a single picture. An effect algebra is a partial sum with a top and an orthosupplement; adding lattice-orderedness and the Riesz decomposition property gives the MV-algebras; adding instead the condition that the sum be the join on orthogonal pairs gives the orthomodular lattices; and requiring both distributivity and compatibility with the lattice order returns the Boolean algebras. The classes are summarised by the table.
 
@@ -194,11 +194,11 @@ The two theorems place the Boolean category in a single picture. An effect algeb
 
 ### States
 
-**Definition.** A **state** on an effect algebra $E$ is a function $s : E \to [0,1]$ with $s(1) = 1$ and $s(a \oplus b) = s(a) + s(b)$ whenever $a \perp b$. The set of states is the **state space** $S(E)$, a convex set. A state is **faithful** if $s(a) = 0$ implies $a = 0$, and **sharp** if $s(a) \in \{0,1\}$ for all $a$.
+**Definition.** A **state** on an effect algebra $E$ is a function $s : E \to [0,1]$ with $s(1) = 1$ and $s(\alpha \oplus \beta) = s(\alpha) + s(\beta)$ whenever $\alpha \perp \beta$. The set of states is the **state space** $S(E)$, a convex set. A state is **faithful** if $s(\alpha) = 0$ implies $\alpha = 0$, and **sharp** if $s(\alpha) \in \{0,1\}$ for all $\alpha$.
 
 **Theorem.** On the effect algebra $[0,1]$ the only state is the identity.
 
-**Proof.** Let $s$ be a state. Additivity on the partial sum gives $s(k/n) = k/n$ for all $0 \leq k \leq n$ by $k$-fold addition of $1/n$, and monotonicity, which follows from the order definition, gives $s(a) = a$ for irrational $a$ as well.
+**Proof.** Let $s$ be a state. Additivity on the partial sum gives $s(k/n) = k/n$ for all $0 \leq k \leq n$ by $k$-fold addition of $1/n$, and monotonicity, which follows from the order definition, gives $s(\alpha) = \alpha$ for irrational $\alpha$ as well.
 
 **Theorem (Gleason).** Let $H$ be a Hilbert space with $\dim H \geq 3$. Then every state $s$ on the projection lattice $P(H)$ has the form
 
@@ -214,10 +214,10 @@ The state space is the mathematical subject of the **hidden-variable question**:
 
 ### Blocks
 
-**Definition.** Two elements $a, b$ of an effect algebra are **compatible**, written $a \leftrightarrow b$, if there exist $a_1, b_1, c$ with
+**Definition.** Two elements $\alpha, \beta$ of an effect algebra are **compatible**, written $\alpha \leftrightarrow \beta$, if there exist $\alpha_1, \beta_1, \gamma$ with
 
 $$
-a = a_1 \oplus c, \qquad b = b_1 \oplus c, \qquad a_1 \perp b_1 .
+\alpha = \alpha_1 \oplus \gamma, \qquad \beta = \beta_1 \oplus \gamma, \qquad \alpha_1 \perp \beta_1 .
 $$
 
 A **block** is a maximal set of pairwise compatible elements; a block is a Boolean sub-effect-algebra.
@@ -225,18 +225,18 @@ A **block** is a maximal set of pairwise compatible elements; a block is a Boole
 **Theorem.** Every orthomodular lattice is the union of its blocks, and the center
 
 $$
-Z(L) = \{a \in L : a \leftrightarrow b \text{ for every } b \in L\}
+Z(L) = \{\alpha \in L : \alpha \leftrightarrow \beta \text{ for every } \beta \in L\}
 $$
 
 of an orthomodular lattice is a Boolean algebra.
 
 **Proof.** In an orthomodular lattice, two elements are compatible exactly when they generate a Boolean subalgebra, and every element belongs to a maximal such subalgebra, so the blocks cover $L$. The center consists of the elements compatible with all others, so the sublattice it generates is Boolean; the verification is the standard center theorem for orthomodular lattices.
 
-**Example.** The projection lattice $P(H)$ is irreducible for $\dim H \geq 2$, its center being $\{0, I\}$; its blocks are the Boolean algebras of projections lying in a maximal commutative subalgebra of the operator algebra, and the spectral theorem states that every projection lies in one of them. The standard effect algebra $\mathcal{E}(H)$ contains $P(H)$ as its sharp elements, and the projections of $\mathcal{E}(H)$ are exactly the elements $a$ with $a = a^2$. The operator algebra, its norm and its commutative subalgebras belong to *Operator Algebras*; only the compatibility and the block structure are used here.
+**Example.** The projection lattice $P(H)$ is irreducible for $\dim H \geq 2$, its center being $\{0, I\}$; its blocks are the Boolean algebras of projections lying in a maximal commutative subalgebra of the operator algebra, and the spectral theorem states that every projection lies in one of them. The standard effect algebra $\mathcal{E}(H)$ contains $P(H)$ as its sharp elements, and the projections of $\mathcal{E}(H)$ are exactly the elements $\alpha$ with $\alpha = \alpha^2$. The operator algebra, its norm and its commutative subalgebras belong to *Operator Algebras*; only the compatibility and the block structure are used here.
 
 ## Summary
 
-An ortholattice is a bounded lattice with an order-reversing involution $a \mapsto a^{\perp}$ satisfying $a \wedge a^{\perp} = 0$ and $a \vee a^{\perp} = 1$; it is orthomodular when $a \leq b$ implies $b = a \vee (a^{\perp}\wedge b)$, and an orthomodular lattice is a Boolean algebra exactly when it is distributive. The projection lattice $P(H)$ of a Hilbert space is the standard orthomodular lattice; it is distributive only for $\dim H \leq 1$, and for $\dim H \geq 2$ its failure of distributivity is witnessed already by three lines in a plane. An effect algebra is a set with a partial commutative associative sum, a top $1$ and an orthosupplement $a'$ with $a \oplus a' = 1$; every orthomodular lattice is an effect algebra with the sum equal to the join on orthogonal pairs, and the lattice-ordered effect algebras with the Riesz decomposition property are exactly the MV-algebras, so the Boolean algebras are the common distributive case.
+An ortholattice is a bounded lattice with an order-reversing involution $\alpha \mapsto \alpha^{\perp}$ satisfying $\alpha \wedge \alpha^{\perp} = 0$ and $\alpha \vee \alpha^{\perp} = 1$; it is orthomodular when $\alpha \leq \beta$ implies $\beta = \alpha \vee (\alpha^{\perp}\wedge \beta)$, and an orthomodular lattice is a Boolean algebra exactly when it is distributive. The projection lattice $P(H)$ of a Hilbert space is the standard orthomodular lattice; it is distributive only for $\dim H \leq 1$, and for $\dim H \geq 2$ its failure of distributivity is witnessed already by three lines in a plane. An effect algebra is a set with a partial commutative associative sum, a top $1$ and an orthosupplement $\alpha'$ with $\alpha \oplus \alpha' = 1$; every orthomodular lattice is an effect algebra with the sum equal to the join on orthogonal pairs, and the lattice-ordered effect algebras with the Riesz decomposition property are exactly the MV-algebras, so the Boolean algebras are the common distributive case.
 
 The effects of a von Neumann algebra, the self-adjoint elements with spectrum in $[0,1]$, form the standard effect algebra $\mathcal{E}(M)$, in which the projections are the idempotent elements and form the orthomodular lattice $P(M)$; the operators and their norm belong to functional analysis, and the present article uses only the order and the partial sum. States are the additive functionals to $[0,1]$; on the unit interval the identity is the only state, and on the projection lattice of a Hilbert space of dimension at least three Gleason's theorem identifies the states with the density operators. The compatibility relation organises an orthomodular lattice into Boolean blocks, its center is a Boolean algebra, and every orthomodular lattice is covered by its blocks. The Boolean system thus supports one algebra and no analysis, and the non-distributive generalisations of this article are its widest purely algebraic extension, the analysis entering only through the operator-algebra models of Part III.
 
@@ -245,18 +245,18 @@ The effects of a von Neumann algebra, the self-adjoint elements with spectrum in
 | Symbol | Meaning |
 |---|---|
 | $L$ | An ortholattice or orthomodular lattice |
-| $a^{\perp}$ | Orthocomplement, an order-reversing involution |
-| $a \perp b$ | Orthogonality, $a \leq b^{\perp}$ |
-| $a \wedge b$, $a \vee b$ | Meet and join of the lattice order |
+| $\alpha^{\perp}$ | Orthocomplement, an order-reversing involution |
+| $\alpha \perp \beta$ | Orthogonality, $\alpha \leq \beta^{\perp}$ |
+| $\alpha \wedge \beta$, $\alpha \vee \beta$ | Meet and join of the lattice order |
 | $0, 1$ | Least and greatest elements |
 | $P(H)$ | Projection lattice of a Hilbert space, ordered by inclusion |
 | $M^{\perp}$ | Orthogonal complement of a closed subspace |
 | $E$ | An effect algebra |
 | $\oplus$ | Partial commutative associative sum |
-| $a'$ | Orthosupplement, $a \oplus a' = 1$ |
-| $b \ominus a$ | Difference, the unique $c$ with $a \oplus c = b$ when $a \leq b$ |
-| $\mathcal{E}(M)$, $\mathcal{E}(H)$ | Standard effect algebra of the effects, $\{a : 0 \leq a \leq 1\}$ |
-| $a \leftrightarrow b$ | Compatibility |
+| $\alpha'$ | Orthosupplement, $\alpha \oplus \alpha' = 1$ |
+| $\beta \ominus \alpha$ | Difference, the unique $\gamma$ with $\alpha \oplus \gamma = \beta$ when $\alpha \leq \beta$ |
+| $\mathcal{E}(M)$, $\mathcal{E}(H)$ | Standard effect algebra of the effects, $\{\alpha : 0 \leq \alpha \leq 1\}$ |
+| $\alpha \leftrightarrow \beta$ | Compatibility |
 | $Z(E)$ | Center, the elements compatible with everything |
 | $S(E)$ | State space |
 | $H$ | A Hilbert space over $\mathbb{K} \in \{\mathbb{R}, \mathbb{C}\}$ |

@@ -296,13 +296,13 @@ $$
 
 so both the modulus and the angle are real and $\xi = \mathbf{q}/|\mathbf{q}|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar representation $q = r\exp(\mu\theta)$ of the companion article *Quaternion Polar Element Representation*, with $r = R$, $\mu = \xi$ and $\theta = \Theta$ real, and the identification is exact rather than asymptotic: over $500$ random real quaternions the imaginary parts of $R$, $\cos\Theta$ and $\sin\Theta$ vanished identically. The complex representation is available on the same elements and is degenerate there: $Q_i = 0$, hence $\tan\Psi = 0$, $\Psi = 0$ and $Q = Q_r = \tilde{Q}$, a representation by a modulus alone.
 
-**A complex scalar.** If $\tilde{Q} = ze_0$ with $z\in\mathbb{C}$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable, while the complex representation gives
+**A complex scalar.** If $\tilde{Q} = Ae_0$ with $A\in\mathbb{C}$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable, while the complex representation gives
 
 $$
-Q_r = (\operatorname{Re}z)e_0, \qquad Q_i = (\operatorname{Im}z)e_0, \qquad \tan\Psi = \frac{\operatorname{Im}z}{\operatorname{Re}z}\,e_0, \qquad Q = \frac{\operatorname{Re}z}{\cos\Psi}\,e_0 = |z|\,e_0 ,
+Q_r = (\operatorname{Re}A)e_0, \qquad Q_i = (\operatorname{Im}A)e_0, \qquad \tan\Psi = \frac{\operatorname{Im}A}{\operatorname{Re}A}\,e_0, \qquad Q = \frac{\operatorname{Re}A}{\cos\Psi}\,e_0 = |A|\,e_0 ,
 $$
 
-so that $\Psi = (\arg z)e_0$ is a scalar and $\tilde{Q} = |z|\exp\!\big(i(\arg z)e_0\big)$: the complex representation is the ordinary complex polar form of $\mathbb{C}$, with the central scalar imaginary of the algebra in the role of the scalar imaginary of $\mathbb{C}$ and the quaternion modulus collapsed to a scalar. The collapse was checked over $500$ random complex scalars: the vector part of $\tan\Psi$ vanished identically, the modulus reproduced $|z|$ to $6.5\times10^{-14}$, and the angle reproduced $\arg z$ to the last bit.
+so that $\Psi = (\arg A)e_0$ is a scalar and $\tilde{Q} = |A|\exp\!\big(i(\arg A)e_0\big)$: the complex representation is the ordinary complex polar form of $\mathbb{C}$, with the central scalar imaginary of the algebra in the role of the scalar imaginary of $\mathbb{C}$ and the quaternion modulus collapsed to a scalar. The collapse was checked over $500$ random complex scalars: the vector part of $\tan\Psi$ vanished identically, the modulus reproduced $|A|$ to $6.5\times10^{-14}$, and the angle reproduced $\arg A$ to the last bit.
 
 The two limits are disjoint, and together they are the reason the two named representations are complementary rather than competing: the Hamilton representation is the one that carries the quaternion polar form into the biquaternions, and the complex representation is the one that carries the complex polar form.
 

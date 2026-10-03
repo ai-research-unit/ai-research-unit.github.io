@@ -6,7 +6,7 @@ The spectral theory of the Hermitian adjoint on the biquaternion algebra gives t
 
 The general theory is *Spectral Theory on Krein Spaces* and *Definitizable Operators and the Krein–Naĭmark Theorem*; the definite counterpart is *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the operator classes are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the element spectra that the operator spectra are read from are *Biquaternion Spectral Theory*; and the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*.
 
-**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{X})=\tilde{Q}\tilde{X}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $N(\tilde{Q})=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.
+**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $N(\tilde{Q})=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.
 
 ## The Spectral Rules of the Definite Case
 
@@ -53,9 +53,9 @@ $$
 \mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\{0\}\ \text{with multiplicity }4.
 $$
 
-**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{X})=\zeta\tilde{X}\bar\zeta=|\zeta|^{2}\tilde{X}$, which is the first line. For a vector parameter, $\tilde V^{2}=-N(\tilde V)e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{N(\tilde V)}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-N(\bar{\tilde V})e_0=-\overline{N(\tilde V)}e_0$; hence
+**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{P})=\zeta\tilde{P}\bar\zeta=|\zeta|^{2}\tilde{P}$, which is the first line. For a vector parameter, $\tilde V^{2}=-N(\tilde V)e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{N(\tilde V)}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-N(\bar{\tilde V})e_0=-\overline{N(\tilde V)}e_0$; hence
 $$
-\Theta_{\tilde V}^{2}(\tilde{X})=\tilde V^{2}\tilde X(\tilde V^{\dagger})^{2}=|N(\tilde V)|^{2}\tilde X,
+\Theta_{\tilde V}^{2}(\tilde{P})=\tilde V^{2}\tilde P(\tilde V^{\dagger})^{2}=|N(\tilde V)|^{2}\tilde P,
 $$
 so $\Theta_{\tilde V}^{2}=|N(\tilde V)|^{2}\mathrm{id}$. If $N(\tilde V)\neq0$ the matrix $\Phi(\tilde V)$ is traceless with $\Phi(\tilde V)^{2}=-N(\tilde V)I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{N(\tilde V)}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $N(\tilde V)=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
 

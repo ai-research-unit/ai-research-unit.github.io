@@ -158,7 +158,7 @@ The remedy is to test against non-zero-divisors. An element $a$ of a ring $A$ is
 
 **Proposition.** Every module over a semisimple ring is torsion-free. In particular $\operatorname{Mod}(\mathbb{B})$ contains no torsion.
 
-*Proof.* In a semisimple ring every regular element is a unit: if $a$ is regular then $Aa$ is a nonzero left ideal and has a complement $I$ with $A=Aa\oplus I$, and regularity forces $I=0$, since $0\neq z\in I$ would give $az\in Aa\cap I=0$ with $z\neq0$; so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse. If $a$ is regular and $am=0$ then $m=a^{-1}am=0$, so no annihilator contains a regular element.
+*Proof.* In a semisimple ring every regular element is a unit: if $a$ is regular then $Aa$ is a nonzero left ideal and has a complement $I$ with $A=Aa\oplus I$, and regularity forces $I=0$, since $0\neq b\in I$ would give $ab\in Aa\cap I=0$ with $b\neq0$; so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse. If $a$ is regular and $am=0$ then $m=a^{-1}am=0$, so no annihilator contains a regular element.
 
 Torsion therefore classifies nothing over $\mathbb{B}$: the structure theory is the direct-sum decomposition of §*The Category of Left Modules* and the parity of §*Projectivity and the Parity of Freeness*, not a torsion submodule. The same vanishing holds over the division algebra $\mathbb{H}$, so the invariant that governs modules over a principal ideal domain has no analogue in either system.
 

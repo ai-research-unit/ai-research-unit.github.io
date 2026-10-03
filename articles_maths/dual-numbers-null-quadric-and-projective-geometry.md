@@ -3,15 +3,15 @@
 
 ## Introduction
 
-The norm $N(a + \varepsilon b) = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Topology*, where the norm of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
+The norm $N(a + \varepsilon a') = a^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically, following the structural model *Biquaternion Topology*, where the norm of the biquaternions defines the Segre quadric in $\mathbb{P}^3$. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is
 
 $$
-Z = a + \varepsilon b, \qquad a, b \in \mathbb{R},
+A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
 $$
 
-with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\bar{Z} = a - \varepsilon b$, the norm $N(Z) = Z\bar{Z} = a^2$ and its polar form $B(Z, W) = a c$ (a form and a distance, defined in *Dual-Numbers Norm and Invertibility*), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
+with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, the norm $N(A) = A\bar A = a^2$ and its polar form $B(A, B) = a b$ (a form and a distance, defined in *Dual-Numbers Norm and Invertibility*), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
 
 ## The Degenerate Isotropic Cone
 
@@ -20,18 +20,18 @@ with $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$, dual conjugation $\b
 **Definition.** The **isotropic set** of the norm is
 
 $$
-\mathcal{N} = \{Z \in \mathbb{D}' : N(Z) = 0\} = \{Z : a = 0\} = \mathrm{M},
+\mathcal{N} = \{A \in \mathbb{D}' : N(A) = 0\} = \{A : a = 0\} = \mathrm{M},
 $$
 
 the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$.
 
 **Theorem.** $\mathcal{N} = \mathrm{M}$ is a single line through the origin, closed and of real dimension one, and it is a cone with apex $0$; it is the radical of $B$. As a quadratic cone it is a **double line**: the equation $a^2 = 0$ is the square of the linear equation $a = 0$, so the cone is the line $a = 0$ counted twice.
 
-**Proof.** $N(Z) = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$.
+**Proof.** $N(A) = a^2 = 0$ forces $a = 0$, giving the line $\varepsilon\mathbb{R}$; homogeneity gives the cone property; and $a^2$ factors as $a\cdot a$, so the defining polynomial is the square of the linear form $a$.
 
 ### Comparison with a Non-Degenerate Cone
 
-For a non-degenerate binary quadratic form $a^2 - \sigma b^2$ with $\sigma \neq 0$ the isotropic set is a union of two distinct lines through the origin, the two null directions; for the positive-definite form $a^2 + b^2$ it is a single point, the origin. The degenerate dual form is the intermediate case: the two null directions of the split-complex form have coalesced into a single line, and because the form is a perfect square, the coalescence is a genuine doubling rather than a loss. The real dimension of the isotropic set is one, whereas for the split-complex form it is also one (a union of two lines is one-dimensional), but the two cases differ in multiplicity: the dual line is met with multiplicity two by every transverse line, the split-complex pair with multiplicity one each.
+For a non-degenerate binary quadratic form $a^2 - \sigma a'^2$ with $\sigma \neq 0$ the isotropic set is a union of two distinct lines through the origin, the two null directions; for the positive-definite form $a^2 + a'^2$ it is a single point, the origin. The degenerate dual form is the intermediate case: the two null directions of the split-complex form have coalesced into a single line, and because the form is a perfect square, the coalescence is a genuine doubling rather than a loss. The real dimension of the isotropic set is one, whereas for the split-complex form it is also one (a union of two lines is one-dimensional), but the two cases differ in multiplicity: the dual line is met with multiplicity two by every transverse line, the split-complex pair with multiplicity one each.
 
 ## The Projective Line
 
@@ -40,7 +40,7 @@ For a non-degenerate binary quadratic form $a^2 - \sigma b^2$ with $\sigma \neq 
 **Definition.** The **projective dual line** is
 
 $$
-\mathbb{P}(\mathbb{D}') = \mathbb{P}^1(\mathbb{R}) = \{[a : b] : (a,b) \neq (0,0)\},
+\mathbb{P}(\mathbb{D}') = \mathbb{P}^1(\mathbb{R}) = \{[a : a'] : (a,a') \neq (0,0)\},
 $$
 
 the space of lines through the origin of the dual plane; it is a one-dimensional projective space homeomorphic to a circle.
@@ -50,7 +50,7 @@ the space of lines through the origin of the dual plane; it is a one-dimensional
 On the open chart $\{a \neq 0\}$ use the affine coordinate
 
 $$
-t = \frac{b}{a},
+t = \frac{a'}{a},
 $$
 
 the coordinate of the line through the origin of slope $t$, i.e. of the point $[(1, t)] = [1 : t]$; the complement of the chart is the single point
@@ -75,7 +75,7 @@ a point of multiplicity two. It is the unique real point of the projective quadr
 
 ### The Ramified Point
 
-So the projective dual quadric is a **single ramified point** rather than a pair of rational points or a smooth conic. In the affine picture the line $a = 0$ has two ends, $b \to +\infty$ and $b \to -\infty$; the projective line identifies them into one point, and the fact that the projective quadric counts it twice is exactly the statement that both ends are isotropic. A non-degenerate binary form would give two distinct points—the two null directions—or, in the definite case, no real point; the dual form gives one point of multiplicity two, the degenerate intermediate.
+So the projective dual quadric is a **single ramified point** rather than a pair of rational points or a smooth conic. In the affine picture the line $a = 0$ has two ends, $a' \to +\infty$ and $a' \to -\infty$; the projective line identifies them into one point, and the fact that the projective quadric counts it twice is exactly the statement that both ends are isotropic. A non-degenerate binary form would give two distinct points—the two null directions—or, in the definite case, no real point; the dual form gives one point of multiplicity two, the degenerate intermediate.
 
 ## The Parabolic Projectivity
 
@@ -84,10 +84,10 @@ So the projective dual quadric is a **single ramified point** rather than a pair
 Multiplication by the unit $u = 1 + s\varepsilon$ is the shear $S(s)$, which acts on the dual plane by
 
 $$
-S(s)(a + \varepsilon b) = a + (b + sa)\varepsilon.
+S(s)(a + \varepsilon a') = a + (a' + sa)\varepsilon.
 $$
 
-In homogeneous coordinates this is the linear map $[a : b] \mapsto [a : b + sa]$, induced by the matrix
+In homogeneous coordinates this is the linear map $[a : a'] \mapsto [a : a' + sa]$, induced by the matrix
 
 $$
 \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}.
@@ -96,7 +96,7 @@ $$
 **Theorem.** On the affine chart $\{a \neq 0\}$ the shear acts by translation of the coordinate $t$:
 
 $$
-t = \frac{b}{a} \;\longmapsto\; \frac{b + sa}{a} = t + s.
+t = \frac{a'}{a} \;\longmapsto\; \frac{a' + sa}{a} = t + s.
 $$
 
 It fixes the isotropic point $[\varepsilon] = [0:1]$ and no other point, and it is the one-parameter unipotent subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes that point.
@@ -133,23 +133,23 @@ Read on the dual plane rather than on the projective line, the picture is the on
 
 ## Summary
 
-The norm $N(a + \varepsilon b) = a^2$ of the dual numbers has the polar form $B(Z, W) = a c$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathrm{M}$, a cone with apex $0$ that is the **double line** $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathrm{M}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = b/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with the biquaternion null quadric—the smooth Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with two rulings, self-dual polarity and dimension-two null planes—the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.
+The norm $N(a + \varepsilon a') = a^2$ of the dual numbers has the polar form $B(A, B) = a b$, a symmetric $\mathbb{R}$-bilinear form of rank one with radical the maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$. The isotropic set is the single line $\mathrm{M}$, a cone with apex $0$ that is the **double line** $a^2 = 0$; the form admits no polarity, since every point off the isotropic line has the same polar $\mathrm{M}$ and the isotropic line has polar the whole space. On the projective dual line $\mathbb{P}^1(\mathbb{R})$ with affine coordinate $t = a'/a$, the projective quadric is the single point $[\varepsilon] = [0:1]$ of multiplicity two, the ramified point at infinity of the chart. Multiplication by the unit $1 + s\varepsilon$ acts as the shear, which on the projective line is the parabolic projectivity $t \mapsto t + s$ fixing $[\varepsilon]$, the unipotent subgroup of $PGL_2(\mathbb{R})$ that fixes the doubled isotropic point and generates the geometry of the dual plane. Compared with the biquaternion null quadric—the smooth Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with two rulings, self-dual polarity and dimension-two null planes—the dual quadric is the total degeneration forced by rank one: a single doubled point, no rulings, no polarity, and a one-dimensional isotropic subspace.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
-| $Z = a + \varepsilon b$ | General dual number |
-| $a = \operatorname{Re} Z$, $b = \operatorname{Inf} Z$ | Real and infinitesimal parts |
-| $N(Z) = Z\bar{Z} = a^2$ | Norm, rank one |
-| $B(Z,W) = a c$ | Polar form, symmetric bilinear, rank one |
+| $A = a + \varepsilon a'$ | General dual number |
+| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
+| $N(A) = A\bar A = a^2$ | Norm, rank one |
+| $B(A,B) = a b$ | Polar form, symmetric bilinear, rank one |
 | $[B] = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ | Matrix of the polar form $B$ in the basis $(1,\varepsilon)$ |
 | $\mathrm{M} = (\varepsilon) = \operatorname{rad}(B)$ | Maximal ideal, radical, isotropic line |
 | $\mathcal{N} = \mathrm{M}$ | Isotropic set, the double line $a^2 = 0$ |
 | $\mathbb{P}(\mathbb{D}') = \mathbb{P}^1(\mathbb{R})$ | Projective dual line |
-| $[a : b]$ | Homogeneous coordinates; $[\varepsilon] = [0:1]$ |
-| $t = b/a$ | Affine coordinate on $\{a \neq 0\}$ |
+| $[a : a']$ | Homogeneous coordinates; $[\varepsilon] = [0:1]$ |
+| $t = a'/a$ | Affine coordinate on $\{a \neq 0\}$ |
 | $S(s)$ | Shear, parabolic projectivity $t \mapsto t + s$ |
 | $\mathbb{B}$ | Biquaternion algebra, the comparison model, Segre quadric |
 

@@ -8,10 +8,10 @@ This article introduces harmonic analysis on the real line and on Euclidean spac
 The treatment is mathematically honest: every claim is either proved or stated as a definition. The real analysis of the companion article *Real Analysis*, together with Lebesgue measure and integration, is assumed; no abstract topology is invoked. Complex analysis enters only through the elementary identity theorem for holomorphic functions in the qualitative uncertainty principle. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
+\hat{f}(\xi) = \int_{\mathbb{R}} f(a) e^{-2\pi i \xi a} \, da.
 $$
 
-With this normalization the transform is an isometry of $L^2$ and the inversion and Plancherel theorems carry no constants. The real line is treated first, and the definitions are then extended verbatim to $\mathbb{R}^n$ with the pairing $\xi \cdot x$ in place of the product $\xi x$.
+With this normalization the transform is an isometry of $L^2$ and the inversion and Plancherel theorems carry no constants. The real line is treated first, and the definitions are then extended verbatim to $\mathbb{R}^n$ with the pairing $\xi \cdot a$ in place of the product $\xi a$.
 
 ## Fourier Series on the Circle
 
@@ -20,23 +20,23 @@ With this normalization the transform is an isometry of $L^2$ and the inversion 
 Let $\mathbb{T} = \mathbb{R}/\mathbb{Z}$, identified with $[0, 1]$ with endpoints joined. For $f \in L^1(\mathbb{T})$ the **Fourier coefficients** are
 
 $$
-\hat{f}(n) = \int_0^1 f(x) e^{-2\pi i n x} \, dx, \qquad n \in \mathbb{Z},
+\hat{f}(n) = \int_0^1 f(a) e^{-2\pi i n a} \, da, \qquad n \in \mathbb{Z},
 $$
 
-and the **partial sums** are $S_N f(x) = \sum_{n=-N}^{N} \hat{f}(n) e^{2\pi i n x}$.
+and the **partial sums** are $S_N f(a) = \sum_{n=-N}^{N} \hat{f}(n) e^{2\pi i n a}$.
 
 ### The Dirichlet and Fejér Kernels
 
 Writing the partial sum as a convolution,
 
 $$
-S_N f(x) = (f * D_N)(x), \qquad D_N(x) = \sum_{n=-N}^{N} e^{2\pi i n x} = \frac{\sin((2N+1)\pi x)}{\sin(\pi x)},
+S_N f(a) = (f * D_N)(a), \qquad D_N(a) = \sum_{n=-N}^{N} e^{2\pi i n a} = \frac{\sin((2N+1)\pi a)}{\sin(\pi a)},
 $$
 
 where $D_N$ is the **Dirichlet kernel**. The **Fejér kernel** is the Cesàro average $F_N = \frac{1}{N+1} \sum_{k=0}^{N} D_k$, explicitly
 
 $$
-F_N(x) = \frac{1}{N+1} \left( \frac{\sin((N+1)\pi x)}{\sin(\pi x)} \right)^{\!2},
+F_N(a) = \frac{1}{N+1} \left( \frac{\sin((N+1)\pi a)}{\sin(\pi a)} \right)^{\!2},
 $$
 
 and the Cesàro means are $\sigma_N f = f * F_N$.
@@ -47,18 +47,18 @@ The Fejér kernel is non-negative, has integral $1$, and concentrates at the ori
 
 ### Orthogonality, Plancherel, and Riemann–Lebesgue
 
-The functions $e_n(x) = e^{2\pi i n x}$ form an orthonormal basis of $L^2(\mathbb{T})$: $\int_0^1 e_m \overline{e_n} = \delta_{mn}$.
+The functions $e_n(a) = e^{2\pi i n a}$ form an orthonormal basis of $L^2(\mathbb{T})$: $\int_0^1 e_m \overline{e_n} = \delta_{mn}$.
 
 **Theorem (Plancherel, circle).** For $f \in L^2(\mathbb{T})$,
 
 $$
-\sum_{n \in \mathbb{Z}} |\hat{f}(n)|^2 = \int_0^1 |f(x)|^2 \, dx,
+\sum_{n \in \mathbb{Z}} |\hat{f}(n)|^2 = \int_0^1 |f(a)|^2 \, da,
 $$
 
 and $f \mapsto (\hat{f}(n))$ is a unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,
 
 $$
-\sum_{n \in \mathbb{Z}} \hat{f}(n) \overline{\hat{g}(n)} = \int_0^1 f(x) \overline{g(x)} \, dx.
+\sum_{n \in \mathbb{Z}} \hat{f}(n) \overline{\hat{g}(n)} = \int_0^1 f(a) \overline{g(a)} \, da.
 $$
 
 **Theorem (Riemann–Lebesgue).** If $f \in L^1(\mathbb{T})$, then $\hat{f}(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^p(\mathbb{T})$ for $1 \le p < \infty$.
@@ -70,7 +70,7 @@ $$
 For $f \in L^1(\mathbb{R})$ the **Fourier transform** is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i \xi x} \, dx.
+\hat{f}(\xi) = \int_{\mathbb{R}} f(a) e^{-2\pi i \xi a} \, da.
 $$
 
 The integral converges absolutely and $\|\hat{f}\|_\infty \le \|f\|_1$.
@@ -79,17 +79,17 @@ The integral converges absolutely and $\|\hat{f}\|_\infty \le \|f\|_1$.
 
 **Linearity.** $\widehat{af + bg} = a \hat{f} + b \hat{g}$.
 
-**Translation.** If $f_a(x) = f(x - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi a} \hat{f}(\xi)$.
+**Translation.** If $f_a(b) = f(b - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi a} \hat{f}(\xi)$.
 
-**Modulation.** If $g(x) = e^{2\pi i \eta x} f(x)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.
+**Modulation.** If $g(a) = e^{2\pi i \eta a} f(a)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.
 
-**Scaling.** If $f_\lambda(x) = f(\lambda x)$ for $\lambda \neq 0$, then $\widehat{f_\lambda}(\xi) = |\lambda|^{-1} \hat{f}(\xi/\lambda)$.
+**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda \neq 0$, then $\widehat{f_\lambda}(\xi) = |\lambda|^{-1} \hat{f}(\xi/\lambda)$.
 
 **Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{\hat{f}(-\xi)}$.
 
 **Differentiation.** If $f$ is absolutely continuous with $f' \in L^1(\mathbb{R})$, then $\widehat{f'}(\xi) = 2\pi i \xi \, \hat{f}(\xi)$.
 
-**Multiplication by the variable.** If $f \in L^1(\mathbb{R})$ and $x f(x) \in L^1(\mathbb{R})$, then $\hat{f}$ is differentiable and $\widehat{x f}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} \hat{f}(\xi)$.
+**Multiplication by the variable.** If $f \in L^1(\mathbb{R})$ and $a f(a) \in L^1(\mathbb{R})$, then $\hat{f}$ is differentiable and $\widehat{a f}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} \hat{f}(\xi)$.
 
 **Theorem (Riemann–Lebesgue).** If $f \in L^1(\mathbb{R})$, then $\hat{f} \in C_0(\mathbb{R})$ and $\|\hat{f}\|_\infty \le \|f\|_1$. The transform of an interval indicator is computed explicitly; the span of step functions is dense in $L^1$, and $C_0(\mathbb{R})$ is closed.
 
@@ -100,12 +100,12 @@ The integral converges absolutely and $\|\hat{f}\|_\infty \le \|f\|_1$.
 **Theorem (Inversion).** If $f \in L^1(\mathbb{R})$ and $\hat{f} \in L^1(\mathbb{R})$, then
 
 $$
-f(x) = \int_{\mathbb{R}} \hat{f}(\xi) e^{2\pi i \xi x} \, d\xi
+f(a) = \int_{\mathbb{R}} \hat{f}(\xi) e^{2\pi i \xi a} \, d\xi
 $$
 
-for almost every $x$, and for every $x$ if $f$ is continuous.
+for almost every $a$, and for every $a$ if $f$ is continuous.
 
-**Proof.** For $\epsilon > 0$ define $f_\epsilon(x) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi x} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(x) = \epsilon^{-1} e^{-\pi x^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(x) \to \int \hat{f}(\xi) e^{2\pi i \xi x} d\xi$ at every $x$.
+**Proof.** For $\epsilon > 0$ define $f_\epsilon(a) = \int \hat{f}(\xi) e^{-\pi \epsilon^2 \xi^2} e^{2\pi i \xi a} d\xi$. Since $\hat{f} \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} e^{-\pi a^2/\epsilon^2}$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int \hat{f}(\xi) e^{2\pi i \xi a} d\xi$ at every $a$.
 
 ### The Plancherel Theorem
 
@@ -115,9 +115,9 @@ $$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
 $$
 
-**Proof.** For $f \in L^1 \cap L^2$, put $\tilde{f}(x) = \overline{f(-x)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.
+**Proof.** For $f \in L^1 \cap L^2$, put $\tilde{f}(a) = \overline{f(-a)}$. Then $\widehat{f * \tilde{f}} = |\hat{f}|^2$, so inversion at $0$ gives $\int |\hat{f}|^2 = (f * \tilde{f})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.
 
-For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(x) = f(-x)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.
+For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(a) = f(-a)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.
 
 ## The Fourier Transform on $\mathbb{R}^n$
 
@@ -126,18 +126,18 @@ For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated in
 For $f \in L^1(\mathbb{R}^n)$ the **Fourier transform** is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i \xi \cdot x} \, dx, \qquad \xi \cdot x = \sum_{j=1}^{n} \xi_j x_j.
+\hat{f}(\xi) = \int_{\mathbb{R}^n} f(a) e^{-2\pi i \xi \cdot a} \, da, \qquad \xi \cdot a = \sum_{j=1}^{n} \xi_j a_j.
 $$
 
 ### Basic Properties
 
-**Translation.** If $f_a(x) = f(x - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi \cdot a} \hat{f}(\xi)$.
+**Translation.** If $f_a(b) = f(b - a)$, then $\hat{f}_a(\xi) = e^{-2\pi i \xi \cdot a} \hat{f}(\xi)$.
 
-**Modulation.** If $g(x) = e^{2\pi i \eta \cdot x} f(x)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.
+**Modulation.** If $g(a) = e^{2\pi i \eta \cdot a} f(a)$, then $\hat{g}(\xi) = \hat{f}(\xi - \eta)$.
 
-**Scaling.** If $f_\lambda(x) = f(\lambda x)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\xi) = \lambda^{-n} \hat{f}(\xi/\lambda)$.
+**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\xi) = \lambda^{-n} \hat{f}(\xi/\lambda)$.
 
-**Rotation invariance.** If $R$ is orthogonal and $f_R(x) = f(Rx)$, then $\hat{f}_R(\xi) = \hat{f}(R\xi)$; the transform commutes with rotations.
+**Rotation invariance.** If $R$ is orthogonal and $f_R(a) = f(Ra)$, then $\hat{f}_R(\xi) = \hat{f}(R\xi)$; the transform commutes with rotations.
 
 **Differentiation.** For a multi-index $\alpha$, $\widehat{\partial^\alpha f}(\xi) = (2\pi i)^{|\alpha|} \xi^\alpha \hat{f}(\xi)$ whenever the derivatives lie in $L^1$. In particular the Laplacian has symbol $-4\pi^2 |\xi|^2$:
 
@@ -147,7 +147,7 @@ $$
 
 ### Inversion and Plancherel on $\mathbb{R}^n$
 
-**Theorem (Inversion).** If $f \in L^1(\mathbb{R}^n)$ and $\hat{f} \in L^1(\mathbb{R}^n)$, then $f(x) = \int_{\mathbb{R}^n} \hat{f}(\xi) e^{2\pi i \xi \cdot x} d\xi$ for almost every $x$, and everywhere if $f$ is continuous.
+**Theorem (Inversion).** If $f \in L^1(\mathbb{R}^n)$ and $\hat{f} \in L^1(\mathbb{R}^n)$, then $f(a) = \int_{\mathbb{R}^n} \hat{f}(\xi) e^{2\pi i \xi \cdot a} d\xi$ for almost every $a$, and everywhere if $f$ is continuous.
 
 **Theorem (Plancherel).** The Fourier transform extends uniquely to a unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,
 
@@ -164,10 +164,10 @@ $$
 The **convolution** of measurable $f, g : \mathbb{R}^n \to \mathbb{C}$ is
 
 $$
-(f * g)(x) = \int_{\mathbb{R}^n} f(x - y) g(y) \, dy,
+(f * g)(a) = \int_{\mathbb{R}^n} f(a - b) g(b) \, db,
 $$
 
-defined whenever the integral converges for almost every $x$. Convolution is commutative, associative, bilinear, and translation invariant: $(\tau_a f) * g = \tau_a (f * g)$ for $\tau_a f(x) = f(x - a)$.
+defined whenever the integral converges for almost every $a$. Convolution is commutative, associative, bilinear, and translation invariant: $(\tau_a f) * g = \tau_a (f * g)$ for $\tau_a f(b) = f(b - a)$.
 
 **Young's inequality.** If $1 \le p, q, r \le \infty$ and $\frac{1}{p} + \frac{1}{q} = \frac{1}{r} + 1$, then
 
@@ -187,7 +187,7 @@ $$
 \widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
 $$
 
-**Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(y) e^{-2\pi i \xi \cdot y} \big( \int f(x - y) e^{-2\pi i \xi \cdot (x - y)} dx \big) dy$, and the inner integral is $\hat{f}(\xi)$.
+**Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(b) e^{-2\pi i \xi \cdot b} \big( \int f(a - b) e^{-2\pi i \xi \cdot (a - b)} da \big) db$, and the inner integral is $\hat{f}(\xi)$.
 
 The theorem extends to $L^2$ and to tempered distributions in the sense described below.
 
@@ -198,20 +198,20 @@ The theorem extends to $L^2$ and to tempered distributions in the sense describe
 A family $(\phi_\epsilon)_{\epsilon > 0}$ in $L^1(\mathbb{R}^n)$ is an **approximate identity** if $\int \phi_\epsilon = 1$, $\sup_\epsilon \|\phi_\epsilon\|_1 < \infty$, and for every $\delta > 0$,
 
 $$
-\int_{|x| > \delta} |\phi_\epsilon(x)| \, dx \to 0 \qquad (\epsilon \to 0).
+\int_{|a| > \delta} |\phi_\epsilon(a)| \, da \to 0 \qquad (\epsilon \to 0).
 $$
 
 The last condition says that the mass of $\phi_\epsilon$ concentrates near the origin.
 
-**Theorem.** If $(\phi_\epsilon)$ is an approximate identity and $f \in L^p(\mathbb{R}^n)$ with $1 \le p < \infty$, then $\|f * \phi_\epsilon - f\|_p \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $x$ is a Lebesgue point of $f \in L^p$, then $(f * \phi_\epsilon)(x) \to f(x)$.
+**Theorem.** If $(\phi_\epsilon)$ is an approximate identity and $f \in L^p(\mathbb{R}^n)$ with $1 \le p < \infty$, then $\|f * \phi_\epsilon - f\|_p \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^p$, then $(f * \phi_\epsilon)(a) \to f(a)$.
 
 ## The Schwartz Space and Tempered Distributions
 
 ### The Schwartz Space
 
-The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_x |x^\alpha \partial^\beta \phi(x)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.
+The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \phi(a)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.
 
-**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \xi^\alpha \hat{\phi}$ and $\widehat{x^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
+**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \xi^\alpha \hat{\phi}$ and $\widehat{a^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
 
 ### Tempered Distributions
 
@@ -223,7 +223,7 @@ A **tempered distribution** is a continuous linear functional on $\mathcal{S}(\m
 
 These extend the classical operations, and the Fourier transform is a bijection $\mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n)$.
 
-**Examples.** The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/x)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\xi)$. For $0 < \alpha < n$, the transform of $|x|^{-\alpha}$ is a constant multiple of $|\xi|^{\alpha - n}$.
+**Examples.** The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\xi)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\xi|^{\alpha - n}$.
 
 ## The Hardy–Littlewood Maximal Function
 
@@ -232,30 +232,30 @@ These extend the classical operations, and the Fourier transform is a bijection 
 For $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$ the **Hardy–Littlewood maximal function** is
 
 $$
-Mf(x) = \sup_{r > 0} \frac{1}{|B(x, r)|} \int_{B(x, r)} |f(y)| \, dy.
+Mf(a) = \sup_{r > 0} \frac{1}{|B(a, r)|} \int_{B(a, r)} |f(b)| \, db.
 $$
 
 **Theorem (Hardy–Littlewood).** There is a dimensional constant $C_n$ such that for every $f \in L^1(\mathbb{R}^n)$ and every $\lambda > 0$,
 
 $$
-|\{x : Mf(x) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
+|\{a : Mf(a) > \lambda\}| \le \frac{C_n}{\lambda} \|f\|_1.
 $$
 
-**Proof.** For each $x$ with $Mf(x) > \lambda$ choose a ball $B(x, r_x)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.
+**Proof.** For each $a$ with $Mf(a) > \lambda$ choose a ball $B(a, r_a)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.
 
 **Theorem.** For $1 < p \le \infty$ there is $C_{n,p}$ with $\|Mf\|_p \le C_{n,p} \|f\|_p$.
 
-The case $p = \infty$ is immediate; the case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(x) \gtrsim 1/x$ for large $x$, and $1/x \notin L^1$.
+The case $p = \infty$ is immediate; the case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(a) \gtrsim 1/a$ for large $a$, and $1/a \notin L^1$.
 
 ### The Lebesgue Differentiation Theorem
 
 **Theorem (Lebesgue).** If $f \in L^1_{\mathrm{loc}}(\mathbb{R}^n)$, then
 
 $$
-\lim_{r \to 0} \frac{1}{|B(x, r)|} \int_{B(x, r)} f(y) \, dy = f(x)
+\lim_{r \to 0} \frac{1}{|B(a, r)|} \int_{B(a, r)} f(b) \, db = f(a)
 $$
 
-for almost every $x$.
+for almost every $a$.
 
 **Proof.** It suffices to prove the statement for $f \in L^1$. For $\epsilon > 0$ write $f = g + h$ with $g$ continuous and $\|h\|_1 < \epsilon$. For $g$ the statement holds at every point, while the maximal inequality bounds the measure of the set where the oscillation of the averages of $h$ exceeds $\lambda$ by $C_n \|h\|_1/\lambda$. Letting $\epsilon \to 0$ gives the result.
 
@@ -268,8 +268,8 @@ A point where the conclusion holds is a **Lebesgue point** of $f$. The maximal f
 The **Hilbert transform** of $f \in L^p(\mathbb{R})$, $1 \le p < \infty$, is the principal value integral
 
 $$
-Hf(x) = \frac{1}{\pi} \, \mathrm{p.v.} \int_{\mathbb{R}} \frac{f(x - t)}{t} \, dt
-= \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| > \epsilon} \frac{f(x - t)}{t} \, dt.
+Hf(a) = \frac{1}{\pi} \, \mathrm{p.v.} \int_{\mathbb{R}} \frac{f(a - t)}{t} \, dt
+= \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| > \epsilon} \frac{f(a - t)}{t} \, dt.
 $$
 
 The singular integral converges almost everywhere for $f$ in $L^p$, $1 \le p < \infty$, and in $L^2$ it converges in norm.
@@ -282,7 +282,7 @@ $$
 \widehat{Hf}(\xi) = -i \, \mathrm{sgn}(\xi) \, \hat{f}(\xi).
 $$
 
-**Proof.** Let $K_\epsilon(x) = \frac{1}{\pi x} \mathbf{1}_{|x| > \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives
+**Proof.** Let $K_\epsilon(a) = \frac{1}{\pi a} \mathbf{1}_{|a| > \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives
 
 $$
 \hat{K}_\epsilon(\xi) = -i \, \mathrm{sgn}(\xi) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\xi| \epsilon) \right),
@@ -302,7 +302,7 @@ so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator correspondi
 
 **Boundedness on $L^p$.** The Hilbert transform is bounded on $L^p(\mathbb{R})$ for every $1 < p < \infty$: there is $C_p$ with $\|Hf\|_p \le C_p \|f\|_p$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.
 
-**Weak $(1,1)$.** For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{x : |Hf(x)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^p$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^p$ bounds.
+**Weak $(1,1)$.** For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^p$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^p$ bounds.
 
 ## Interpolation and $L^p$ Theory
 
@@ -345,7 +345,7 @@ Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported
 The **Littlewood–Paley square function** of $f$ is
 
 $$
-S f(x) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(x)|^2 \right)^{\!1/2}.
+S f(a) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(a)|^2 \right)^{\!1/2}.
 $$
 
 **Theorem (Littlewood–Paley).** For $1 < p < \infty$ there are constants depending only on $n$, $p$, and $\psi$ such that
@@ -412,32 +412,32 @@ The Riesz potential saturates the Sobolev embedding: it maps $L^p$ into $L^q$ in
 
 ### The Heisenberg Inequality
 
-**Theorem (Heisenberg).** Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $x f \in L^2(\mathbb{R})$, and $\xi \hat{f} \in L^2(\mathbb{R})$. Then
+**Theorem (Heisenberg).** Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $a f \in L^2(\mathbb{R})$, and $\xi \hat{f} \in L^2(\mathbb{R})$. Then
 
 $$
-\left( \int_{\mathbb{R}} x^2 |f(x)|^2 \, dx \right)^{\!1/2}
+\left( \int_{\mathbb{R}} a^2 |f(a)|^2 \, da \right)^{\!1/2}
 \left( \int_{\mathbb{R}} \xi^2 |\hat{f}(\xi)|^2 \, d\xi \right)^{\!1/2}
 \ge \frac{1}{4\pi}.
 $$
 
-Equivalently, for any centers $x_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(x - x_0)^2$ and $(\xi - \xi_0)^2$.
+Equivalently, for any centers $a_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\xi - \xi_0)^2$.
 
-**Proof.** By translation and modulation one may take $x_0 = \xi_0 = 0$. Integration by parts and Plancherel give
+**Proof.** By translation and modulation one may take $a_0 = \xi_0 = 0$. Integration by parts and Plancherel give
 
 $$
-1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} x \, \frac{d}{dx} |f|^2 \, dx \le 2 \int_{\mathbb{R}} |x| \, |f| \, |f'| \, dx
-\le 2 \left( \int_{\mathbb{R}} x^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
+1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} a \, \frac{d}{da} |f|^2 \, da \le 2 \int_{\mathbb{R}} |a| \, |f| \, |f'| \, da
+\le 2 \left( \int_{\mathbb{R}} a^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
 $$
 
 and $\|f'\|_2 = 2\pi \|\xi \hat{f}\|_2$ by Plancherel and the differentiation rule.
 
-Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.
+Equality holds if and only if $f(b) = c \, e^{-a b^2}$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.
 
 ### Qualitative Forms
 
 **Theorem.** There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\hat{f}$ are compactly supported.
 
-**Proof.** If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi x} dx$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$.
+**Proof.** If $f$ is compactly supported, then $\hat{f}(\xi) = \int f(a) e^{-2\pi i \xi a} da$ extends to an entire function of the complex variable $\xi$; if $\hat{f}$ were also compactly supported, the identity theorem for holomorphic functions would force $\hat{f} \equiv 0$.
 
 **Theorem (Amrein–Berthier–Benedicks).** If $f \in L^2(\mathbb{R})$ and both $f$ and $\hat{f}$ are supported on sets of finite Lebesgue measure, then $f = 0$.
 
@@ -445,7 +445,7 @@ These statements are the qualitative counterparts of the Heisenberg inequality: 
 
 ## Summary
 
-Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $\hat{f}(\xi) = \int_{\mathbb{R}} f(x)e^{-2\pi i\xi x}\,dx$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
+Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $\hat{f}(\xi) = \int_{\mathbb{R}} f(a)e^{-2\pi i\xi a}\,da$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
 
 Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^p$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.
 
@@ -458,7 +458,7 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 | $\mathbb{T} = \mathbb{R}/\mathbb{Z}$ | Circle, identified with $[0, 1]$ |
 | $\hat{f}(n)$ | Fourier coefficient on the circle |
 | $D_N, F_N$ | Dirichlet, Fejér kernels |
-| $\hat{f}(\xi) = \int f(x) e^{-2\pi i \xi \cdot x} dx$ | Fourier transform on $\mathbb{R}^n$ |
+| $\hat{f}(\xi) = \int f(a) e^{-2\pi i \xi \cdot a} da$ | Fourier transform on $\mathbb{R}^n$ |
 | $\mathcal{F}$ | Fourier transform operator |
 | $f * g$ | Convolution |
 | $\phi_\epsilon$ | Approximate identity |

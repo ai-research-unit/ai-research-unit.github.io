@@ -295,7 +295,8 @@ The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space 
 
 ## Further Reading
 
-- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the quaternion decomposition and the multiplication of the algebra
+- *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the quaternion decomposition
+- *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product of the algebra
 - *Biquaternion Quaternion Subspace* (`articles_maths/biquaternion-quaternion-subspace.md`), the complementary subspace of the decomposition
 - *Biquaternion Centre Subspace* (`articles_maths/biquaternion-centre-subspace.md`), for the central imaginary unit that generates the subspace and the line $i\mathbb{R}e_0$
 - *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the intersections, the sums and the coordinate blocks of the six

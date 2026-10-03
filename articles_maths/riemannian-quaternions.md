@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde x^2) = x_0^2-\mathbf x\cdot\mathbf x$. A **Riemannian quaternion** is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.
+Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_0^2-\mathbf q\cdot\mathbf q$. A **Riemannian quaternion** is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.
 
 The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the *general equivalence principle*. The third is the **rope**, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.
 
-The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used. The algebra is *Quaternion Algebra*; the norm and the scalar product are *Quaternion Norm and Invertibility*; the quadratic-form vocabulary, the polarisation and the diagonal form are *Quadratic Forms and Polarisation*; the fixed-basis form $\mathrm{Sc}(g\tilde xg\tilde x)$ of a single quaternion, which is the sibling of the present construction, is *Quaternion Metrics*; the moving frame of the classical local differential geometry of three dimensions, in the biquaternion calculus, is *Curves and Surfaces in the Biquaternion Moving Frame*, and the Riemannian theory of curvature and the Levi-Civita connection is *Curvature and Geodesics* and *Riemannian Geometry*; nothing of those is re-derived here.
+The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used. The algebra is *Quaternion Algebra*; the norm and the scalar product are *Quaternion Norm and Invertibility*; the quadratic-form vocabulary, the polarisation and the diagonal form are *Quadratic Forms and Polarisation*; the fixed-basis form $\mathrm{Sc}(g\tilde qg\tilde q)$ of a single quaternion, which is the sibling of the present construction, is *Quaternion Metrics*; the moving frame of the classical local differential geometry of three dimensions, in the biquaternion calculus, is *Curves and Surfaces in the Biquaternion Moving Frame*, and the Riemannian theory of curvature and the Levi-Civita connection is *Curvature and Geodesics* and *Riemannian Geometry*; nothing of those is re-derived here.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde x = x_0e_0+\mathbf x$, with scalar part $\mathrm{Sc}\,\tilde x = x_0$ and vector part $\mathbf x = \mathrm{Vect}\,\tilde x$, the conjugate is $\tilde{x}^{\natural} = x_0e_0-\mathbf x$, and the norm is $N(\tilde x) = \tilde x\tilde{x}^{\natural} = x_0^2+|\mathbf x|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\mathbf q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\mathbf q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\mathbf q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
 
 ## The Frame
 
@@ -92,7 +92,7 @@ a form of signature $(1,3)$ wherever $f>0$, whose single free function is the sq
 
 ### The Metric Is Dynamic
 
-The metric of the frame is the diagonal form $\mathrm{diag}(f,-1/(9f),-1/(9f),-1/(9f))$ in the coefficient coordinates, and the function $f$ is a function of the point. The construction therefore carries a metric that changes from point to point, and the change of the metric is a change of the frame. This is the sense in which the object is the source's generalisation of the fixed interval $\mathrm{Sc}(\tilde x^2)$ of the algebra: the fixed basis is the case $f=1$ with unit weights.
+The metric of the frame is the diagonal form $\mathrm{diag}(f,-1/(9f),-1/(9f),-1/(9f))$ in the coefficient coordinates, and the function $f$ is a function of the point. The construction therefore carries a metric that changes from point to point, and the change of the metric is a change of the frame. This is the sense in which the object is the source's generalisation of the fixed interval $\mathrm{Sc}(\tilde q^2)$ of the algebra: the fixed basis is the case $f=1$ with unit weights.
 
 ## The Leibniz Split and the General Equivalence Principle
 
@@ -180,7 +180,7 @@ and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\ima
 
 ### The Sibling of the Single Quaternion
 
-*Quaternion Metrics* treats the form $Q_g(\tilde x) = \mathrm{Sc}(g\tilde xg\tilde x)$ of a single quaternion $g$ in the fixed basis, which is isometric to the Minkowski form of the algebra by the isometry $L_g$. The two constructions are the two ways of making the interval dynamic while keeping the algebra fixed: the sibling varies the quaternion $g$ against a fixed basis, and the present article varies the frame against a fixed product. The sibling produces a four-parameter family of forms all isometric to one another, whereas the frame produces one diagonal form per frame, and the two families meet in the single form $\mathrm{Sc}(\tilde x^2)$ of the constant frame with unit weights.
+*Quaternion Metrics* treats the form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q)$ of a single quaternion $g$ in the fixed basis, which is isometric to the Minkowski form of the algebra by the isometry $L_g$. The two constructions are the two ways of making the interval dynamic while keeping the algebra fixed: the sibling varies the quaternion $g$ against a fixed basis, and the present article varies the frame against a fixed product. The sibling produces a four-parameter family of forms all isometric to one another, whereas the frame produces one diagonal form per frame, and the two families meet in the single form $\mathrm{Sc}(\tilde q^2)$ of the constant frame with unit weights.
 
 ### The Moving Frame of the Biquaternion Calculus
 
@@ -202,9 +202,9 @@ The construction is the second of the two ways presented in the corpus of making
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra over $\mathbb{R}$ |
 | $e_0=1,e_1,e_2,e_3$ | Fixed basis, $e_k^2=-e_0$ |
-| $\tilde x = x_0e_0+\mathbf x$ | Quaternion, scalar part $x_0$, vector part $\mathbf x$ |
+| $\tilde q = q_0e_0+\mathbf q$ | Quaternion, scalar part $q_0$, vector part $\mathbf q$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
-| $N(\tilde x)=\tilde x\tilde{x}^{\natural}$ | Quaternion norm |
+| $N(\tilde q)=\tilde q\tilde{q}^{\natural}$ | Quaternion norm |
 | $\imath_0,\imath_1,\imath_2,\imath_3$ | Frame functions on the domain |
 | $\hat\imath_\mu=\imath_\mu e_\mu$ | Frame elements, $\hat\imath_0^2=\imath_0^2$, $\hat\imath_k^2=-\imath_k^2$ |
 | $w_0,w_1,w_2,w_3$ | Parity weights, $1,\tfrac13,\tfrac13,\tfrac13$ |

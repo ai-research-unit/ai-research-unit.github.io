@@ -57,7 +57,7 @@ $$
 
 so it is an anti-automorphism of the graded algebra and it preserves the grading; it is $\mathbb{C}$-antilinear in each factor.
 
-*Proof.* The reversion reverses the order of the factors, the grade involution acts on the degree and not on the order, and the coefficient conjugation is a $\mathbb{C}$-antilinear automorphism acting on the coefficients only; the composite therefore reverses the order and preserves the degree, so it is an anti-automorphism, involutive and even. On the algebra this is the Hermitian conjugation \tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}} of the corpus.
+*Proof.* The reversion reverses the order of the factors, the grade involution acts on the degree and not on the order, and the coefficient conjugation is a $\mathbb{C}$-antilinear automorphism acting on the coefficients only; the composite therefore reverses the order and preserves the degree, so it is an anti-automorphism, involutive and even. On the algebra this is the Hermitian conjugation $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ of the corpus.
 
 **Proposition (the adjoint reverses a commutator and preserves an anticommutator).** For homogeneous $a,b$,
 

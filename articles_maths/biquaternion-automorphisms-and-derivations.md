@@ -74,7 +74,7 @@ the complex orthogonal group in three variables. The reason is visible in the ac
 
 Now the ground field is $\mathbb{R}$: $\mathbb{B}$ is eight-dimensional, and automorphisms need only be $\mathbb{R}$-linear, not $\mathbb{C}$-linear, which makes the group strictly larger.
 
-**Automorphisms preserve the center.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $z$ is central, then $\sigma(z)\sigma(\tilde R) = \sigma(z\tilde R) = \sigma(\tilde Rz) = \sigma(\tilde R)\sigma(z)$ for every $\tilde R$, so $\sigma(z)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(z) = \bar{z}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.
+**Automorphisms preserve the center.** If $\sigma$ is an $\mathbb{R}$-algebra automorphism and $A$ is central, then $\sigma(A)\sigma(\tilde R) = \sigma(A\tilde R) = \sigma(\tilde RA) = \sigma(\tilde R)\sigma(A)$ for every $\tilde R$, so $\sigma(A)$ is central. Thus $\sigma$ restricts to an $\mathbb{R}$-algebra automorphism of $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$; since $\mathbb{C}$ as a real algebra has exactly two automorphisms, the identity and $\kappa(A) = \bar{A}$, restriction gives a homomorphism $\rho : \mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}}) = \{\mathrm{id}, \kappa\} \cong \mathbb{Z}/2$.
 
 **The kernel is the $\mathbb{C}$-linear part.** An automorphism lies in $\ker \rho$ exactly when it fixes the center pointwise, and an $\mathbb{R}$-linear map fixing $\mathbb{C}_{\mathbb{B}}$ pointwise is automatically $\mathbb{C}$-linear, since it commutes with multiplication by the central element $i$. Hence $\ker \rho = \mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$, the group computed above; these are precisely the inner automorphisms, by Skolem–Noether.
 
@@ -132,10 +132,10 @@ so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{
 
 Now the ground field is $\mathbb{R}$. An $\mathbb{R}$-linear derivation is required to satisfy the Leibniz rule but need not be $\mathbb{C}$-linear. At first sight this seems to allow a larger space, but in fact it does not.
 
-**Every real derivation is automatically $\mathbb{C}$-linear.** Let $D$ be an $\mathbb{R}$-linear derivation. As in the automorphism case, $D$ maps the center into itself: if $z$ is central, then for every $\tilde R$,
+**Every real derivation is automatically $\mathbb{C}$-linear.** Let $D$ be an $\mathbb{R}$-linear derivation. As in the automorphism case, $D$ maps the center into itself: if $A$ is central, then for every $\tilde R$,
 
 $$
-D(z)\tilde R = D(z\tilde R) - zD(\tilde R) = D(\tilde Rz) - D(\tilde R)z = \tilde RD(z).
+D(A)\tilde R = D(A\tilde R) - AD(\tilde R) = D(\tilde RA) - D(\tilde R)A = \tilde RD(A).
 $$
 
 So $D$ restricts to a derivation $\mathbb{C}_{\mathbb{B}} \to \mathbb{C}_{\mathbb{B}}$. But $\mathbb{C}$ has no nonzero $\mathbb{R}$-linear derivations: a derivation of $\mathbb{C}$ is determined by $D(i)$, and $0 = D(-1) = D(i^{2}) = i\,D(i) + D(i)\,i = 2i\,D(i)$ forces $D(i) = 0$, hence $D$ vanishes on the center. Since $i$ is central, the Leibniz rule then gives $D(i \tilde R) = D(i)\,\tilde R + i\,D(\tilde R) = i\,D(\tilde R)$, so $D$ is $\mathbb{C}$-linear. Therefore $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.

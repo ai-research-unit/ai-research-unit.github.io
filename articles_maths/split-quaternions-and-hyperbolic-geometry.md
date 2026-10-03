@@ -60,7 +60,7 @@ the ratio of the components of a complex eigenvector of $\xi$ for the eigenvalue
 **Theorem (The Eigenline Model).** The map $\zeta$ is a bijection from the timelike sheet onto the upper half-plane
 
 $$
-\mathbb{H} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\},
+\mathbb{H} = \{A \in \mathbb{C} : \operatorname{Im} A > 0\},
 $$
 
 with
@@ -69,7 +69,7 @@ $$
 \operatorname{Im}\zeta(\xi) = \frac{q_1 - q_2}{1 + q_3^2} > 0,
 $$
 
-and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ acting by the fractional linear transformation $z \mapsto (\alpha z + \beta)/(\gamma z + \delta)$,
+and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ acting by the fractional linear transformation $A \mapsto (\alpha A + \beta)/(\gamma A + \delta)$,
 
 $$
 \zeta(g \xi g^{-1}) = \frac{\alpha\,\zeta(\xi) + \beta}{\gamma\,\zeta(\xi) + \delta}.
@@ -77,13 +77,13 @@ $$
 
 The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
 
-**Proof.** *Positivity.* On the sheet, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, so $q_1 - q_2 > 0$ and the displayed formula gives $\operatorname{Im}\zeta > 0$. *Bijectivity.* Given $z = \tilde q + iy \in \mathbb{H}$, put
+**Proof.** *Positivity.* On the sheet, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, so $q_1 - q_2 > 0$ and the displayed formula gives $\operatorname{Im}\zeta > 0$. *Bijectivity.* Given $A = a + ia' \in \mathbb{H}$, put
 
 $$
-M(z) = \begin{pmatrix} \tilde q/y & -(\tilde q^2+y^2)/y \\ 1/y & -\tilde q/y \end{pmatrix},
+M(A) = \begin{pmatrix} a/a' & -(a^2+a'^2)/a' \\ 1/a' & -a/a' \end{pmatrix},
 $$
 
-which is traceless with determinant $1$; the element $\xi \in V$ associated with $M(z)$ then has $N(\xi) = \det M(z) = 1$ and $q_1 > 0$, so it lies in the sheet, and $(z,1)$ is an eigenvector of $\xi$ for $i$, so $\zeta(\xi) = z$. The two constructions are inverse, so $\zeta$ is a bijection. *Equivariance.* The eigenvector of $g\xi g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\xi$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\zeta = i$, so they agree.
+which is traceless with determinant $1$; the element $\xi \in V$ associated with $M(A)$ then has $N(\xi) = \det M(A) = 1$ and $q_1 > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\xi$ for $i$, so $\zeta(\xi) = A$. The two constructions are inverse, so $\zeta$ is a bijection. *Equivariance.* The eigenvector of $g\xi g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\xi$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\zeta = i$, so they agree.
 
 The formula for $\zeta$ is the explicit form of the general statement of *Split-Quaternion Roots of Minus One*, §*The Root Set as a Homogeneous Space*: the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, whose two components are the two copies of the hyperbolic plane, here presented as the upper and lower half-planes.
 
@@ -145,7 +145,7 @@ The model is therefore a realisation of the homogeneous space of *Split-Quaterni
 
 ## The Relation to the Hyperbolic Geometry of Part II
 
-**Theorem (Dictionary with Part II).** Under the identification of the sheet with the hyperbolic plane, the following objects correspond: the geodesics of the model are the intersections of the sheet with the central planes of $V$, and under $\zeta$ they are the vertical lines and the semicircles orthogonal to the real axis of the half-plane; the ideal points are the isotropic lines of the form, that is the points of the null cone, and under $\zeta$ they are the real axis together with the point at infinity; the angle between two geodesics is the angle measured by the metric $-B$ on the sheet and by the hyperbolic metric in the half-plane; the area element is the invariant measure $\mathrm{d}\tilde q\,\mathrm{d}y/y^2$; and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$.
+**Theorem (Dictionary with Part II).** Under the identification of the sheet with the hyperbolic plane, the following objects correspond: the geodesics of the model are the intersections of the sheet with the central planes of $V$, and under $\zeta$ they are the vertical lines and the semicircles orthogonal to the real axis of the half-plane; the ideal points are the isotropic lines of the form, that is the points of the null cone, and under $\zeta$ they are the real axis together with the point at infinity; the angle between two geodesics is the angle measured by the metric $-B$ on the sheet and by the hyperbolic metric in the half-plane; the area element is the invariant measure $\mathrm{d}a\,\mathrm{d}a'/(a')^2$; and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$.
 
 **Proof.** The geodesics of a hyperboloid model are the central sections by *Split-Quaternion Geometry*, §*The Lorentzian Geometry of the Vector Subspace*, and their images under the biholomorphism $\zeta$ are the standard geodesics of the half-plane; the identification of the boundary with the null cone is the statement that the boundary of the hyperbolic plane in this model is the set of isotropic directions, which is the light cone; the remaining identifications are those of *Hyperbolic Geometry*.
 
@@ -158,7 +158,7 @@ The model is therefore a realisation of the homogeneous space of *Split-Quaterni
 **Theorem (Distance and Area in the Three Models).** In the half-plane model the distance and the area element are
 
 $$
-\cosh d(z,w) = 1 + \frac{|z-w|^2}{2\,\operatorname{Im}z\,\operatorname{Im}w}, \qquad \mathrm{d}A = \frac{\mathrm{d}\tilde q\,\mathrm{d}y}{y^2},
+\cosh d(A,w) = 1 + \frac{|A-w|^2}{2\,\operatorname{Im}A\,\operatorname{Im}w}, \qquad \mathrm{d}\mathcal{A} = \frac{\mathrm{d}a\,\mathrm{d}a'}{(a')^2},
 $$
 
 in the disc model they are obtained from these by the Cayley transform, and in the hyperboloid model they are the distance $\cosh d(v,w) = B(v,w)$ and the area element induced by $-B$ on the sheet. The three expressions agree under the identifications of the previous sections, and the function $\cosh d$ is the one whose value at the identity determines the metric.
@@ -175,7 +175,7 @@ The hyperbolic plane is realised on the split-quaternion algebra by the timelike
 
 The unit condition is $N = 1$ together with a choice of sheet; the level set has two sheets, exchanged by $v \mapsto -v$, by the conjugation and by any unit of norm $-1$, and preserved by the identity component of the isometry group. The two sheets correspond to the upper and the lower half-planes.
 
-The models are explicit. The eigenline map $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(z)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
+The models are explicit. The eigenline map $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(A)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
 
 ## Summary of Notation
 
@@ -187,7 +187,7 @@ The models are explicit. The eigenline map $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ is a
 | $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isometry group | *Split-Quaternion Rotations and the Lorentz Group* |
 | $\zeta(\xi) = (q_2-q_1)/(q_3+i)$ | the eigenline map to the upper half-plane | this article |
 | $\mathbb{H}$ | the upper half-plane | *Hyperbolic Geometry* |
-| $M(z)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
+| $M(A)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
 | $w = (\zeta-i)/(\zeta+i)$ | the Cayley transform to the disc | this article |
 | $\mathbb{D}$ | the unit disc, with metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ | this article |
 | elliptic, hyperbolic, parabolic | the three types of isometry, by the trace | *Hyperbolic Geometry* |

@@ -7,13 +7,13 @@ This is the integration article of the Real Numbers system, and it occupies the 
 
 The differential and sequential theory of the line is from *Real Analysis*, and the parts of the present article that concern the elementary theory of the Riemann integral are developed there; the purpose of this article is to isolate the integral as the *slot* of the system $\mathbb{R}$, that is, as the pairing of the line with its dual of functions, and to carry the theory to the point — the Riemann–Stieltjes integral, its integration by parts, the Riesz representation theorem and the comparison with Lebesgue integration — at which the integral of the line becomes a structure in its own right. The measure-theoretic integral on a general measure space is from *Measure Theory and Integration*, and the comparison is drawn where it matters; the special functions of the line, which are the next slot of the system, are not used.
 
-Throughout, $[a,b]$ is a compact interval with $a < b$, a **partition** is a finite set $P = \{a = x_0 < x_1 < \cdots < x_n = b\}$, and for a bounded function $f$ on $[a,b]$ the **upper and lower sums** are
+Throughout, $[a,b]$ is a compact interval with $a < b$, a **partition** is a finite set $P = \{a = c_0 < c_1 < \cdots < c_n = b\}$, and for a bounded function $f$ on $[a,b]$ the **upper and lower sums** are
 
 $$
-U(f,P) = \sum_{i=1}^{n} \sup_{[x_{i-1}, x_i]} f \cdot (x_i - x_{i-1}), \qquad L(f,P) = \sum_{i=1}^{n} \inf_{[x_{i-1}, x_i]} f \cdot (x_i - x_{i-1}) .
+U(f,P) = \sum_{i=1}^{n} \sup_{[c_{i-1}, c_i]} f \cdot (c_i - c_{i-1}), \qquad L(f,P) = \sum_{i=1}^{n} \inf_{[c_{i-1}, c_i]} f \cdot (c_i - c_{i-1}) .
 $$
 
-The integrand is a bounded real function unless stated, the integral is written $\int_a^b f$ or $\int_a^b f(x)\,dx$, the **mesh** of $P$ is $\lVert P\rVert = \max_i (x_i - x_{i-1})$, and $\operatorname{BV}[a,b]$ is the space of functions of bounded variation on $[a,b]$. The integral of a function vanishing outside $[a,b]$ over all of $\mathbb{R}$ is written with the corresponding limits.
+The integrand is a bounded real function unless stated, the integral is written $\int_a^b f$ or $\int_a^b f(c)\,dc$, the **mesh** of $P$ is $\lVert P\rVert = \max_i (c_i - c_{i-1})$, and $\operatorname{BV}[a,b]$ is the space of functions of bounded variation on $[a,b]$. The integral of a function vanishing outside $[a,b]$ over all of $\mathbb{R}$ is written with the corresponding limits.
 
 ## The Riemann Integral
 
@@ -35,15 +35,15 @@ $$
 
 **Proof.** Refining a partition increases the lower sum and decreases the upper sum, so it suffices to compare $P$ and $Q$ by passing to their common refinement $P \cup Q$, for which $L(f,P) \leq L(f, P\cup Q) \leq U(f, P\cup Q) \leq U(f,Q)$. The criterion follows because the infimum of the upper sums and the supremum of the lower sums then coincide exactly when their gap can be made smaller than every $\varepsilon$.
 
-**Definition.** The **oscillation** of $f$ on a set $E$ is $\operatorname{osc}_E f = \sup_E f - \inf_E f$; the **modulus of the partition** of $f$ on $P$ is the sum $\sum_i \operatorname{osc}_{[x_{i-1},x_i]} f \cdot (x_i - x_{i-1}) = U(f,P) - L(f,P)$.
+**Definition.** The **oscillation** of $f$ on a set $E$ is $\operatorname{osc}_E f = \sup_E f - \inf_E f$; the **modulus of the partition** of $f$ on $P$ is the sum $\sum_i \operatorname{osc}_{[c_{i-1},c_i]} f \cdot (c_i - c_{i-1}) = U(f,P) - L(f,P)$.
 
 **Theorem (Riemann sums).** A bounded $f$ is integrable with integral $I$ if and only if for every $\varepsilon > 0$ there is $\delta > 0$ such that
 
 $$
-\left\lvert \sum_{i=1}^{n} f(\xi_i)(x_i - x_{i-1}) - I \right\rvert < \varepsilon
+\left\lvert \sum_{i=1}^{n} f(\xi_i)(c_i - c_{i-1}) - I \right\rvert < \varepsilon
 $$
 
-for every partition $P$ with $\lVert P\rVert < \delta$ and every choice of tags $\xi_i \in [x_{i-1}, x_i]$.
+for every partition $P$ with $\lVert P\rVert < \delta$ and every choice of tags $\xi_i \in [c_{i-1}, c_i]$.
 
 **Proof.** A tagged Riemann sum lies between the lower and upper sums of $P$, so the criterion for integrability implies the convergence of the sums. Conversely, if the sums converge to $I$ uniformly in the tags, then the largest and smallest tagged sums for a partition of small mesh both lie within $\varepsilon$ of $I$, so $U(f,P) - L(f,P) < 2\varepsilon$ and $f$ is integrable with integral $I$.
 
@@ -81,7 +81,7 @@ and $\lvert \int_a^b f\rvert \leq \int_a^b \lvert f\rvert \leq \lVert f\rVert_\i
 
 **Proof.** The upper and lower sums are additive and homogeneous in the integrand for a fixed partition, and the monotonicity is immediate from $\sup f \leq \sup g$ and $\inf f \leq \inf g$ pointwise; the additivity over subintervals follows by adjoining the point $c$ to a partition, and the triangle inequality by applying monotonicity to $\pm f \leq \lvert f\rvert$.
 
-**Definition.** The function $x \mapsto \int_a^x f$ is the **indefinite integral** of $f$ from $a$, and the **mean value** of $f$ on $[a,b]$ is $\frac{1}{b-a}\int_a^b f$.
+**Definition.** The function $c \mapsto \int_a^c f$ is the **indefinite integral** of $f$ from $a$, and the **mean value** of $f$ on $[a,b]$ is $\frac{1}{b-a}\int_a^b f$.
 
 **Theorem (mean value theorems for the integral).** If $f$ is continuous on $[a,b]$ then its mean value is attained: there is $\xi \in [a,b]$ with
 
@@ -95,9 +95,9 @@ and if in addition $f$ is differentiable on $(a,b)$ then $\xi$ may be taken in t
 
 ### The Integral as a Functional
 
-**Theorem.** The map $f \mapsto \int_a^b f$ is a positive linear functional on the space of Riemann integrable functions, and it is bounded with respect to the supremum norm: $\lvert\int_a^b f\rvert \leq (b-a)\lVert f\rVert_\infty$. It is translation-invariant in the sense that $\int_a^b f(x + t)\,dx = \int_{a+t}^{b+t} f(x)\,dx$, and it is the unique positive linear functional on the continuous functions, up to a positive scalar, that is invariant under all translations of the line.
+**Theorem.** The map $f \mapsto \int_a^b f$ is a positive linear functional on the space of Riemann integrable functions, and it is bounded with respect to the supremum norm: $\lvert\int_a^b f\rvert \leq (b-a)\lVert f\rVert_\infty$. It is translation-invariant in the sense that $\int_a^b f(c + t)\,dc = \int_{a+t}^{b+t} f(c)\,dc$, and it is the unique positive linear functional on the continuous functions, up to a positive scalar, that is invariant under all translations of the line.
 
-**Proof.** Linearity is the previous theorem; the bound is the triangle inequality; translation invariance is the change of variables $x \mapsto x+t$, which is an isometry of the line. Uniqueness up to scale is the one-dimensional case of the uniqueness of Haar measure on a locally compact group, as in *Topological Groups* and *Measure Theory and Integration*.
+**Proof.** Linearity is the previous theorem; the bound is the triangle inequality; translation invariance is the change of variables $c \mapsto c+t$, which is an isometry of the line. Uniqueness up to scale is the one-dimensional case of the uniqueness of Haar measure on a locally compact group, as in *Topological Groups* and *Measure Theory and Integration*.
 
 **Remark.** The uniqueness is the algebraic statement of the geometric fact that the integral is the length: the only positive linear functionals invariant under the isometries of the line are the scalar multiples of the integral, and the scalar is fixed by declaring the integral of the indicator of $[0,1]$ to be $1$. This is the integration slot's contribution to the geometry of the system: the length of *Real Line Geometry and Isometries* is the same object as the integral of the indicator function of an interval.
 
@@ -105,15 +105,15 @@ and if in addition $f$ is differentiable on $(a,b)$ then $\xi$ may be taken in t
 
 ### Both Directions
 
-**Theorem (fundamental theorem, first form).** Let $f$ be Riemann integrable on $[a,b]$ and let $F(x) = \int_a^x f$. Then $F$ is continuous on $[a,b]$ and Lipschitz with constant $\lVert f\rVert_\infty$; and if $f$ is continuous at $x_0 \in (a,b)$ then $F$ is differentiable at $x_0$ with $F'(x_0) = f(x_0)$. Consequently if $f$ is continuous on $[a,b]$ then $F$ is differentiable with $F' = f$.
+**Theorem (fundamental theorem, first form).** Let $f$ be Riemann integrable on $[a,b]$ and let $F(c) = \int_a^c f$. Then $F$ is continuous on $[a,b]$ and Lipschitz with constant $\lVert f\rVert_\infty$; and if $f$ is continuous at $c_0 \in (a,b)$ then $F$ is differentiable at $c_0$ with $F'(c_0) = f(c_0)$. Consequently if $f$ is continuous on $[a,b]$ then $F$ is differentiable with $F' = f$.
 
-**Proof.** The estimate $\lvert F(x) - F(y)\rvert \leq \lVert f\rVert_\infty \lvert x-y\rvert$ gives the Lipschitz property. If $f$ is continuous at $x_0$, then for $h \neq 0$,
+**Proof.** The estimate $\lvert F(c) - F(d)\rvert \leq \lVert f\rVert_\infty \lvert c-d\rvert$ gives the Lipschitz property. If $f$ is continuous at $c_0$, then for $h \neq 0$,
 
 $$
-\frac{F(x_0+h) - F(x_0)}{h} - f(x_0) = \frac{1}{h}\int_{x_0}^{x_0+h} (f(t) - f(x_0))\,dt,
+\frac{F(c_0+h) - F(c_0)}{h} - f(c_0) = \frac{1}{h}\int_{c_0}^{c_0+h} (f(t) - f(c_0))\,dt,
 $$
 
-and the absolute value is at most $\sup_{\lvert t-x_0\rvert \leq \lvert h\rvert}\lvert f(t) - f(x_0)\rvert$, which tends to $0$ with $h$.
+and the absolute value is at most $\sup_{\lvert t-c_0\rvert \leq \lvert h\rvert}\lvert f(t) - f(c_0)\rvert$, which tends to $0$ with $h$.
 
 **Theorem (fundamental theorem, second form).** If $F$ is differentiable on $[a,b]$ with $F'$ Riemann integrable, then
 
@@ -123,7 +123,7 @@ $$
 
 Consequently every Riemann integrable function with a primitive satisfies the evaluation formula, and primitives differ by constants.
 
-**Proof.** For a partition $P$, the mean value theorem applied on each subinterval gives $\xi_i$ with $F(x_i) - F(x_{i-1}) = F'(\xi_i)(x_i - x_{i-1})$, and summing gives the tagged Riemann sum $F(b)-F(a)$; as the mesh tends to $0$ the sums converge to $\int_a^b F'$ by integrability. Hence $F(b) - F(a) = \int_a^b F'$, and two primitives of the same function have zero derivative, hence differ by a constant.
+**Proof.** For a partition $P$, the mean value theorem applied on each subinterval gives $\xi_i$ with $F(c_i) - F(c_{i-1}) = F'(\xi_i)(c_i - c_{i-1})$, and summing gives the tagged Riemann sum $F(b)-F(a)$; as the mesh tends to $0$ the sums converge to $\int_a^b F'$ by integrability. Hence $F(b) - F(a) = \int_a^b F'$, and two primitives of the same function have zero derivative, hence differ by a constant.
 
 ### Techniques
 
@@ -138,7 +138,7 @@ $$
 **Theorem (substitution).** Let $\varphi : [\alpha,\beta] \to [a,b]$ be continuously differentiable and increasing with $\varphi(\alpha) = a$, $\varphi(\beta) = b$, and let $f$ be continuous on $[a,b]$. Then
 
 $$
-\int_a^b f(x)\,dx = \int_\alpha^\beta f(\varphi(t))\,\varphi'(t)\,dt .
+\int_a^b f(c)\,dc = \int_\alpha^\beta f(\varphi(t))\,\varphi'(t)\,dt .
 $$
 
 **Proof.** Both sides are differentiable functions of the upper limit with the same derivative, by the chain rule and the first fundamental theorem; they agree at the lower limit, hence everywhere.
@@ -152,10 +152,10 @@ $$
 **Theorem (comparison and Dirichlet tests).** If $0 \leq f \leq g$ and $\int_a^\infty g$ converges, then $\int_a^\infty f$ converges. If $F(c) = \int_a^c f$ is bounded and $g$ decreases to $0$, then $\int_a^\infty f g$ converges; in particular
 
 $$
-\int_1^\infty \frac{dx}{x^p} \text{ converges } \iff p > 1, \qquad \int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2} \text{ converges conditionally.}
+\int_1^\infty \frac{dc}{c^p} \text{ converges } \iff p > 1, \qquad \int_0^\infty \frac{\sin c}{c}\,dc = \frac{\pi}{2} \text{ converges conditionally.}
 $$
 
-**Proof.** The comparison test is the monotone convergence of the function $c \mapsto \int_a^c f$ bounded above. The Dirichlet test is the second mean value theorem applied to $F$ and $g$, which shows that the tails of $\int fg$ are bounded by $2\lVert F\rVert_\infty\, g(N)$. The $p$-integral is computed by the second fundamental theorem, giving $\frac{1}{p-1}$ for $p>1$ and divergence for $p \leq 1$; the Dirichlet integral is evaluated by the standard contour or parameter-differentiation argument and converges conditionally because $\int_1^\infty \lvert \sin x\rvert/x\,dx$ diverges.
+**Proof.** The comparison test is the monotone convergence of the function $c \mapsto \int_a^c f$ bounded above. The Dirichlet test is the second mean value theorem applied to $F$ and $g$, which shows that the tails of $\int fg$ are bounded by $2\lVert F\rVert_\infty\, g(N)$. The $p$-integral is computed by the second fundamental theorem, giving $\frac{1}{p-1}$ for $p>1$ and divergence for $p \leq 1$; the Dirichlet integral is evaluated by the standard contour or parameter-differentiation argument and converges conditionally because $\int_1^\infty \lvert \sin c\rvert/c\,dc$ diverges.
 
 **Definition.** For a function with a singularity at an interior point, the **Cauchy principal value** is
 
@@ -163,7 +163,7 @@ $$
 \mathrm{p.v.}\int_{-\infty}^{\infty} f = \lim_{R\to\infty}\int_{-R}^{R} f ,
 $$
 
-which may exist when the improper integral does not; the principal value of $\int_{-\infty}^\infty x\,dx$ is $0$, while the improper integral does not exist.
+which may exist when the improper integral does not; the principal value of $\int_{-\infty}^\infty c\,dc$ is $0$, while the improper integral does not exist.
 
 ## The Riemann–Stieltjes Integral
 
@@ -172,12 +172,12 @@ which may exist when the improper integral does not; the principal value of $\in
 **Definition.** Let $f, g : [a,b] \to \mathbb{R}$ and let $P$ be a partition with tags $\xi_i$. The **Riemann–Stieltjes sum** is
 
 $$
-S(f,g,P) = \sum_{i=1}^{n} f(\xi_i)\,(g(x_i) - g(x_{i-1})) ,
+S(f,g,P) = \sum_{i=1}^{n} f(\xi_i)\,(g(c_i) - g(c_{i-1})) ,
 $$
 
 and $f$ is **Riemann–Stieltjes integrable** with respect to $g$ with integral $\int_a^b f\,dg$ if the sums converge as the mesh tends to $0$, uniformly in the tags.
 
-**Theorem (existence).** If $f$ is continuous and $g$ is of bounded variation on $[a,b]$, then $\int_a^b f\,dg$ exists. If $g$ is continuously differentiable, then $\int_a^b f\,dg = \int_a^b f g'\,dx$, and if $g$ is the indicator of $[c,b]$ with $a < c < b$, the integral is $f(c)$.
+**Theorem (existence).** If $f$ is continuous and $g$ is of bounded variation on $[a,b]$, then $\int_a^b f\,dg$ exists. If $g$ is continuously differentiable, then $\int_a^b f\,dg = \int_a^b f g'\,dc$, and if $g$ is the indicator of $[c,b]$ with $a < c < b$, the integral is $f(c)$.
 
 **Proof.** A function of bounded variation is the difference of two increasing functions, and for an increasing integrator the sums for a refinement are between the lower and upper Stieltjes sums, which differ by $\operatorname{osc} f \cdot (g(b)-g(a))$ and hence tend to $0$ by the uniform continuity of $f$. The smooth case follows by the mean value theorem and the reduction to Riemann sums; the jump case is immediate from the definition.
 
@@ -197,7 +197,7 @@ $$
 
 for a function $g$ of bounded variation, unique if normalised by $g(a) = 0$ and right-continuity in the interior. The functional is positive if and only if $g$ is increasing, and its norm is the total variation of $g$.
 
-**Proof.** The theorem is Riesz's. A bounded linear functional on $C[a,b]$ is uniformly continuous for the supremum norm, so it extends uniquely to the uniform closure of the step functions, which is the space of regulated functions; the representing function is then $g(x) = \tilde\Lambda(\mathbf{1}_{(a,x]})$, which has bounded variation with $g(a) = 0$ and is right-continuous on $(a,b)$, and the Stieltjes integral of $f$ against it recovers $\Lambda(f)$. Positivity of $\Lambda$ makes $g$ increasing, and the norm of $\Lambda$ is the total variation of $g$ by the definition of the Stieltjes integral. The proof is in *Measure Theory and Integration*.
+**Proof.** The theorem is Riesz's. A bounded linear functional on $C[a,b]$ is uniformly continuous for the supremum norm, so it extends uniquely to the uniform closure of the step functions, which is the space of regulated functions; the representing function is then $g(c) = \tilde\Lambda(\mathbf{1}_{(a,c]})$, which has bounded variation with $g(a) = 0$ and is right-continuous on $(a,b)$, and the Stieltjes integral of $f$ against it recovers $\Lambda(f)$. Positivity of $\Lambda$ makes $g$ increasing, and the norm of $\Lambda$ is the total variation of $g$ by the definition of the Stieltjes integral. The proof is in *Measure Theory and Integration*.
 
 **Remark.** The Riesz representation is the precise form in which the integral of the line is its own dual: the continuous functions on a compact interval have as their dual the signed measures, identified with the functions of bounded variation, and the pairing is the Stieltjes integral. This is the integration slot's structural theorem, and it is the one-dimensional case of the duality between $C_0(X)$ and the space of Radon measures.
 
@@ -217,7 +217,7 @@ for a function $g$ of bounded variation, unique if normalised by $g(a) = 0$ and 
 
 The Riemann integral of a bounded function on $[a,b]$ is defined by the upper and lower Darboux sums, whose infimum and supremum agree for an integrable function; integrability is equivalent to the existence of a partition with $U - L < \varepsilon$ and to the convergence of the tagged Riemann sums, and by Lebesgue's criterion the bounded functions that are Riemann integrable are exactly those that are continuous almost everywhere. Continuous functions, monotone functions and bounded functions with few discontinuities are integrable, the integrable functions form a vector space closed under products and lattice operations, and the integral is linear, positive, additive over subintervals and bounded by $\lVert f\rVert_\infty(b-a)$.
 
-The fundamental theorem of calculus holds in both directions: the indefinite integral of an integrable function is Lipschitz, its derivative is the integrand at every continuity point, and if a differentiable $F$ has Riemann integrable derivative then $\int_a^b F' = F(b) - F(a)$; the parts and substitution formulas follow. Improper integrals over unbounded intervals converge under comparison with the $p$-integrals and under the Dirichlet test, with the Dirichlet integral $\int_0^\infty \sin x/x\,dx = \pi/2$ as the standard conditionally convergent example, and the Cauchy principal value is defined for the symmetric truncations. The Riemann–Stieltjes integral with respect to a function of bounded variation exists for continuous integrands, admits integration by parts, and gives the Riesz representation of the bounded linear functionals on $C[a,b]$ as the Stieltjes integrals against normalised functions of bounded variation. Every Riemann integrable function is Lebesgue integrable with the same integral, the Lebesgue class is strictly larger, and the Lebesgue integral supplies the convergence theorems that the Riemann integral lacks; but on the line and for the functions the corpus uses, the Riemann integral suffices. The integration slot of the system $\mathbb{R}$ is thus complete: it is the pairing of the line with its dual, the source of the length of the geometry and of the duality of the continuous functions.
+The fundamental theorem of calculus holds in both directions: the indefinite integral of an integrable function is Lipschitz, its derivative is the integrand at every continuity point, and if a differentiable $F$ has Riemann integrable derivative then $\int_a^b F' = F(b) - F(a)$; the parts and substitution formulas follow. Improper integrals over unbounded intervals converge under comparison with the $p$-integrals and under the Dirichlet test, with the Dirichlet integral $\int_0^\infty \sin c/c\,dc = \pi/2$ as the standard conditionally convergent example, and the Cauchy principal value is defined for the symmetric truncations. The Riemann–Stieltjes integral with respect to a function of bounded variation exists for continuous integrands, admits integration by parts, and gives the Riesz representation of the bounded linear functionals on $C[a,b]$ as the Stieltjes integrals against normalised functions of bounded variation. Every Riemann integrable function is Lebesgue integrable with the same integral, the Lebesgue class is strictly larger, and the Lebesgue integral supplies the convergence theorems that the Riemann integral lacks; but on the line and for the functions the corpus uses, the Riemann integral suffices. The integration slot of the system $\mathbb{R}$ is thus complete: it is the pairing of the line with its dual, the source of the length of the geometry and of the duality of the continuous functions.
 
 ## Summary of Notation
 
@@ -229,7 +229,7 @@ The fundamental theorem of calculus holds in both directions: the indefinite int
 | $\overline{\int}$, $\underline{\int}$ | Upper and lower integrals |
 | $\int_a^b f$, $\int_a^b f\,dg$ | Riemann and Riemann–Stieltjes integrals |
 | $\operatorname{osc}_E f$ | Oscillation of $f$ on $E$ |
-| $F(x) = \int_a^x f$ | Indefinite integral |
+| $F(c) = \int_a^c f$ | Indefinite integral |
 | $D_f$ | Set of discontinuities of $f$ |
 | $\operatorname{BV}[a,b]$ | Functions of bounded variation |
 | $\mathrm{p.v.}$ | Cauchy principal value |

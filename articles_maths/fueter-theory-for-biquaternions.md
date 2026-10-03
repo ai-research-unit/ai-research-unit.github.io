@@ -94,16 +94,16 @@ among functions with prescribed boundary values, the Euler–Lagrange equation b
 
 ### The Null-Lagrangian Identity
 
-The same statement can be written without boundary data, as an identity between two densities. Write $F = X + iY$ with $X, Y$ real, and let $\partial = \partial_x - i\partial_y$ and $\bar{\partial} = \partial_x + i\partial_y$ be the planar Cauchy–Riemann operators, so that $\partial F = 0$ is the Cauchy–Riemann equation and $\bar{\partial}F = (X_x - Y_y) + i\,(X_y + Y_x)$. The squared modulus of $\bar{\partial}F$ and the Dirichlet density are related by an exact divergence,
+The same statement can be written without boundary data, as an identity between two densities. Write $F = X + iY$ with $X, Y$ real, and let $\partial = \partial_a - i\partial_{a'}$ and $\bar{\partial} = \partial_a + i\partial_{a'}$ be the planar Cauchy–Riemann operators, so that $\partial F = 0$ is the Cauchy–Riemann equation and $\bar{\partial}F = (X_a - Y_{a'}) + i\,(X_{a'} + Y_a)$. The squared modulus of $\bar{\partial}F$ and the Dirichlet density are related by an exact divergence,
 
 $$
-(X_x - Y_y)^2 + (X_y + Y_x)^2 = X_x^2 + X_y^2 + Y_x^2 + Y_y^2 + 2\,(X_yY_x - X_xY_y),
+(X_a - Y_{a'})^2 + (X_{a'} + Y_a)^2 = X_a^2 + X_{a'}^2 + Y_a^2 + Y_{a'}^2 + 2\,(X_{a'}Y_a - X_aY_{a'}),
 $$
 
-and the last term, twice the Jacobian $X_yY_x - X_xY_y$, is a **null Lagrangian**. It is exactly a divergence,
+and the last term, twice the Jacobian $X_{a'}Y_a - X_aY_{a'}$, is a **null Lagrangian**. It is exactly a divergence,
 
 $$
-X_yY_x - X_xY_y = \partial_x(YX_y) - \partial_y(YX_x),
+X_{a'}Y_a - X_aY_{a'} = \partial_a(YX_{a'}) - \partial_{a'}(YX_a),
 $$
 
 so it contributes only a boundary integral to $\int_\Omega$, and the identity itself has been checked numerically to the finite-difference level on a hundred-point grid. The consequence is that the two functionals
@@ -116,19 +116,19 @@ differ by a boundary term and therefore have the **same Euler–Lagrange equatio
 
 ### Lanczos's Statement and Its Four-Dimensional Form
 
-Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial_x + i\partial_y$ and $R^2 = (x-\xi)^2 + (y-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
+Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial_a + i\partial_{a'}$ and $R^2 = (a-\xi)^2 + (a'-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
 
 $$
-\delta\int (X^2 + Y^2)\,dx\,dy = 0
+\delta\int (X^2 + Y^2)\,da\,da' = 0
 $$
 
-subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,dx\,dy$ for every point $(\xi,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
+subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,da\,da'$ for every point $(\xi,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
 
 $$
-\delta\int (X^2 + Y^2 + Z^2 + T^2)\,dx\,dy\,dz\,dt = 0,
+\delta\int (X^2 + Y^2 + Z^2 + T^2)\,da\,db\,dc\,dt = 0,
 $$
 
-with prescribed boundary values of $\int F\nabla R^{-2}\,dx\,dy\,dz\,dt$, and notes that this same principle — with complex components for $F$ and imaginary $t$ — is the "Hamiltonian principle" he applies to the world as a whole, "the universal basis of the whole theory, both as regards the field equations and as regards the dynamics", the boundary conditions for the world being left to be found. The functional is written in the source with the components $X, Y, \ldots$ of the function $F$; if those are read as the components of $F$ itself, the integrand is $|F|^2$ and the unconstrained Euler–Lagrange equation is $F = 0$, so the content is carried by the prescribed conjugate integral. What the corpus records is the principle and the boundary datum, together with the identity above, which is the mechanism by which the Dirichlet energy and the Cauchy–Riemann energy share their Euler–Lagrange system. The four-dimensional case is the same identity with the quaternionic $\tilde{\nabla}$ in place of the planar operators, and the boundary term is the surface term of the dissertation's action.
+with prescribed boundary values of $\int F\nabla R^{-2}\,da\,db\,dc\,dt$, and notes that this same principle — with complex components for $F$ and imaginary $t$ — is the "Hamiltonian principle" he applies to the world as a whole, "the universal basis of the whole theory, both as regards the field equations and as regards the dynamics", the boundary conditions for the world being left to be found. The functional is written in the source with the components $X, Y, \ldots$ of the function $F$; if those are read as the components of $F$ itself, the integrand is $|F|^2$ and the unconstrained Euler–Lagrange equation is $F = 0$, so the content is carried by the prescribed conjugate integral. What the corpus records is the principle and the boundary datum, together with the identity above, which is the mechanism by which the Dirichlet energy and the Cauchy–Riemann energy share their Euler–Lagrange system. The four-dimensional case is the same identity with the quaternionic $\tilde{\nabla}$ in place of the planar operators, and the boundary term is the surface term of the dissertation's action.
 
 ### What the Principle Does and Does Not Say
 
@@ -138,13 +138,13 @@ The principle is the Dirichlet principle, and it is standard; it is recorded her
 
 ### The Axial Extension of a Holomorphic Function
 
-Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(z) = u(x,y) + i\,v(x,y)$ with $z = x + iy$ and $u, v$ real-valued; then $u, v$ are harmonic and satisfy the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$. The **axial extension** of $f_0$ is
+Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(A) = u(a,a') + i\,v(a,a')$ with $A = a + ia'$ and $u, v$ real-valued; then $u, v$ are harmonic and satisfy the Cauchy–Riemann equations $u_a = v_{a'}$, $u_{a'} = -v_a$. The **axial extension** of $f_0$ is
 
 $$
 \tilde{f}_0(\tilde{Q}) = u(q_0, \rho) + \hat{\mathbf{q}}\, v(q_0, \rho), \qquad \hat{\mathbf{q}} = \mathbf{q}/\rho,
 $$
 
-defined for $\rho > 0$ by replacing $x$ by $q_0$, $y$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity: writing $f_0 = f_{0,1} + i f_{0,2}$ with real-coefficient parts, one sets $\tilde{f}_0 = \tilde{f}_{0,1} + i\,\tilde{f}_{0,2}$.
+defined for $\rho > 0$ by replacing $a$ by $q_0$, $a'$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity: writing $f_0 = f_{0,1} + i f_{0,2}$ with real-coefficient parts, one sets $\tilde{f}_0 = \tilde{f}_{0,1} + i\,\tilde{f}_{0,2}$.
 
 ### Fueter's Theorem
 
@@ -166,7 +166,7 @@ so $g$ is left-regular if and only if it is right-regular, and this holds exactl
 
 ### The Kernel and Injectivity
 
-**Proposition.** The map $\tau(f_0) = \Delta_4 \tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(z) = az + b$ with $a, b \in \mathbb{C}$.
+**Proposition.** The map $\tau(f_0) = \Delta_4 \tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(A) = a_1A + a_0$ with $a_0, a_1 \in \mathbb{C}$.
 
 **Proof.** $\tau(f_0) = 0$ iff $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$, $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0 + d$ with $c, d \in \mathbb{R}$, and complex linearity gives all affine functions. Conversely, $\Delta_4$ annihilates constants and linear functions.
 
@@ -184,9 +184,9 @@ A function is **axially symmetric** if $\tilde{F}(q_0 + \hat{\mathbf{q}}\rho)$ d
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde{f}_0$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $y$ by the radius). Then $\tilde{F} = \Delta^{(n-1)/2} \tilde{f}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial_{x_0} + \sum_{j=1}^{n} e_j \partial_{x_j}$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde{f}_0$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $a'$ by the radius). Then $\tilde{F} = \Delta^{(n-1)/2} \tilde{f}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial_0 + \sum_{j=1}^{n} e_j \partial_j$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
 
-Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **holomorphic** on $D(0,R)$, so its Taylor series converges there; the induced series then converges on $B(0,R)$, since $\Delta_4(\tilde{Q}^n)$ is a homogeneous polynomial of degree $n-2$ with at most polynomial growth in $n$, while $|a_n| r^n = O(1)$ for $r < R$ by Cauchy's estimates. Second, the construction has the **affine kernel** $az + b$, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two, $a_0 = a_1 = 0$, equivalently one works modulo affine functions. Third, **parity**: $(n-1)/2$ must be a non-negative integer, so $n$ must be odd, as in the quaternion and biquaternion case $n = 3$.
+Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **holomorphic** on $D(0,R)$, so its Taylor series converges there; the induced series then converges on $B(0,R)$, since $\Delta_4(\tilde{Q}^n)$ is a homogeneous polynomial of degree $n-2$ with at most polynomial growth in $n$, while $|a_n| r^n = O(1)$ for $r < R$ by Cauchy's estimates. Second, the construction has the **affine kernel** $a_1A + a_0$, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two, $a_0 = a_1 = 0$, equivalently one works modulo affine functions. Third, **parity**: $(n-1)/2$ must be a non-negative integer, so $n$ must be odd, as in the quaternion and biquaternion case $n = 3$.
 
 ## Power Series Representations
 
@@ -228,7 +228,7 @@ The Fueter construction sends a holomorphic $f_0$ to the induced function $\tild
 | $\tilde{\nabla} = \partial_0 + \mathbf{D}$, $\mathbf{D} = \sum_k e_k \partial_k$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
 | $\tilde{\nabla}^{\natural} = \partial_0 - \mathbf{D}$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu \partial_\mu^2$ | Four-dimensional Laplacian; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_0$ |
-| $\partial, \bar{\partial}$ | Planar Cauchy–Riemann operators, $\partial = \partial_x - i\partial_y$, $\bar{\partial} = \partial_x + i\partial_y$ (variational section) |
+| $\partial, \bar{\partial}$ | Planar Cauchy–Riemann operators, $\partial = \partial_a - i\partial_{a'}$, $\bar{\partial} = \partial_a + i\partial_{a'}$ (variational section) |
 | $\tilde{F}$ left-regular | $\tilde{\nabla}\tilde{F} = 0$; monogenic in Clifford language |
 | $\tilde{F}$ right-regular | $\tilde{F}\tilde{\nabla} = 0$ |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; on $\mathbb{H}_{\mathbb{B}}$ these form the two-sphere |

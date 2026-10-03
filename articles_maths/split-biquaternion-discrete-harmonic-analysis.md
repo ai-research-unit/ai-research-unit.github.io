@@ -422,7 +422,7 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_\pm$ | Idempotent components |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
-| $K_\rho(\mathbf{x})$ | Split biquaternion Fourier kernel |
+| $K_\rho(\mathbf{Q})$ | Split biquaternion Fourier kernel |
 | $\hat{f}$ | Discrete split-biquaternion Fourier transform |
 | $f * g$ | Convolution |
 | $Z_+, Z_-$ | The two four-dimensional families of zero divisors |

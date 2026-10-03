@@ -13,7 +13,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 ## The Lie Algebra Structure
 
-**Definition.** The **commutator bracket** on $\mathbb{H}$ is $[x,y] = xy-yx$; the algebra $\mathbb{H}$ with this bracket is the **Lie algebra of the quaternion algebra**.
+**Definition.** The **commutator bracket** on $\mathbb{H}$ is $[\tilde q,\tilde p] = \tilde q\tilde p-\tilde p\tilde q$; the algebra $\mathbb{H}$ with this bracket is the **Lie algebra of the quaternion algebra**.
 
 **Proposition.** The bracket is bilinear, alternating and satisfies the Jacobi identity, so $\mathbb{H}$ is a Lie algebra; the centre of the algebra is the centre of the Lie algebra, and the derived subalgebra is the vector subspace,
 
@@ -21,7 +21,7 @@ $$
 [\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}, \qquad Z(\mathbb{H}) = \mathbb{R}_{\mathbb{H}} .
 $$
 
-*Proof.* The bracket of an associative algebra is a Lie bracket, the Jacobi identity being the associativity of multiplication. The commutator of any two quaternions is pure, since $\mathrm{Sc}([x,y]) = \mathrm{Sc}(xy)-\mathrm{Sc}(yx) = 0$, and the pure quaternions are all obtained as commutators, for instance $e_1 = \tfrac12[e_2,e_3]$; hence $[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}$. The centre of the bracket is the set of elements commuting with every quaternion, namely $\mathbb{R}_{\mathbb{H}}$.
+*Proof.* The bracket of an associative algebra is a Lie bracket, the Jacobi identity being the associativity of multiplication. The commutator of any two quaternions is pure, since $\mathrm{Sc}([\tilde q,\tilde p]) = \mathrm{Sc}(\tilde q\tilde p)-\mathrm{Sc}(\tilde p\tilde q) = 0$, and the pure quaternions are all obtained as commutators, for instance $e_1 = \tfrac12[e_2,e_3]$; hence $[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}$. The centre of the bracket is the set of elements commuting with every quaternion, namely $\mathbb{R}_{\mathbb{H}}$.
 
 **Theorem.** As a Lie algebra the quaternion algebra splits as the direct sum of its centre and a simple ideal,
 
@@ -82,7 +82,7 @@ and it is surjective onto the unit sphere when restricted to the imaginary subsp
 **Proposition.** The exponential is not injective; its kernel is the union of the spheres of pure quaternions of radius $2\pi k$ together with the origin,
 
 $$
-\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{x\in\operatorname{Im}\mathbb{H} : |x| = 2\pi k\bigr\},
+\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{\mathbf{q}\in\operatorname{Im}\mathbb{H} : |\mathbf{q}| = 2\pi k\bigr\},
 $$
 
 and its restriction to the open set $\{\tilde q : |\mathbf{q}| < \pi\}$ is a diffeomorphism onto $\mathbb{H}^{\times}\setminus(-\mathbb{R}_{>0})$.
@@ -150,10 +150,10 @@ is a right inverse of the exponential, defined on the complement of the negative
 **Theorem.** The adjoint action of the exponential is the conjugation by its value,
 
 $$
-\exp(t\,\operatorname{ad}_{\mu})(x) = e^{t\mu}\,x\,e^{-t\mu} = \operatorname{Ad}_{e^{t\mu}}(x),
+\exp(t\,\operatorname{ad}_{\mu})(\tilde q) = e^{t\mu}\,\tilde q\,e^{-t\mu} = \operatorname{Ad}_{e^{t\mu}}(\tilde q),
 $$
 
-for every $x\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.
+for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.
 
 *Proof.* The identity $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ is the standard Lie-theoretic identity for an inner derivation, here computed from the series.
 
@@ -187,7 +187,7 @@ The biquaternion case replaces the definite norm by the indefinite complex one: 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra, as algebra and as Lie algebra |
-| $[x,y] = xy-yx$ | Commutator bracket |
+| $[\tilde q,\tilde p] = \tilde q\tilde p-\tilde p\tilde q$ | Commutator bracket |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Centre and derived subalgebra |
 | $\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$ | Lie algebra decomposition |
 | $\exp(\tilde q) = \sum_n \tilde q^n/n!$ | Exponential map |
@@ -197,7 +197,7 @@ The biquaternion case replaces the definite norm by the indefinite complex one: 
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$ | Polar split of the units |
 | $Sp(1)\cong S^3\cong SU(2)$ | Compact subgroup, maximal compact |
 | $\log \tilde q = \ln\lvert \tilde q\rvert+\mu\theta$ | Logarithm, inverse off the negative axis |
-| $\operatorname{Ad}_u(x) = uxu^{-1}$ | Adjoint action; $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ |
+| $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$ | Adjoint action; $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ |
 | $O(3)$ | Orthogonal group of $\operatorname{Im}\mathbb{H}$, from *Quaternion Rotations and Reflections*, where $O(3) = \{\pm\operatorname{Ad}_u : u\in Sp(1)\}$ |
 | $GL_2(\mathbb{C}), U(2), PSL(2,\mathbb{C})$ | Biquaternion unit group, maximal compact, adjoint group |
 

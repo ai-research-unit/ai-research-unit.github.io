@@ -38,13 +38,13 @@ The pair $(\mathbb{R}, d)$ is a **metric space**. Every notion in real analysis 
 The **open ball** of radius $r > 0$ centered at $a$ is
 
 $$
-B(a, r) = \{x \in \mathbb{R} : |x - a| < r\} = (a - r, a + r).
+B(a, r) = \{b \in \mathbb{R} : |b - a| < r\} = (a - r, a + r).
 $$
 
 The **closed ball** is
 
 $$
-\overline{B}(a, r) = \{x \in \mathbb{R} : |x - a| \leq r\} = [a - r, a + r].
+\overline{B}(a, r) = \{b \in \mathbb{R} : |b - a| \leq r\} = [a - r, a + r].
 $$
 
 A **neighborhood** of $a$ is any set containing some $B(a, r)$.
@@ -166,30 +166,30 @@ $$
 Let $f : D \to \mathbb{R}$ with $D \subseteq \mathbb{R}$, and let $a$ be a limit point of $D$. We say
 
 $$
-\lim_{x \to a} f(x) = L
+\lim_{b \to a} f(b) = L
 $$
 
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-x \in D, \; 0 < |x - a| < \delta \implies |f(x) - L| < \epsilon.
+b \in D, \; 0 < |b - a| < \delta \implies |f(b) - L| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
 
-**Sequential criterion.** $\lim_{x \to a} f(x) = L$ iff for every sequence $(x_n)$ in $D \setminus \{a\}$ with $x_n \to a$, we have $f(x_n) \to L$.
+**Sequential criterion.** $\lim_{b \to a} f(b) = L$ iff for every sequence $(b_n)$ in $D \setminus \{a\}$ with $b_n \to a$, we have $f(b_n) \to L$.
 
 ### Continuity
 
-A function $f : D \to \mathbb{R}$ is **continuous at** $a \in D$ if $\lim_{x \to a} f(x) = f(a)$ when $a$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that
+A function $f : D \to \mathbb{R}$ is **continuous at** $a \in D$ if $\lim_{b \to a} f(b) = f(a)$ when $a$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-x \in D, \; |x - a| < \delta \implies |f(x) - f(a)| < \epsilon.
+b \in D, \; |b - a| < \delta \implies |f(b) - f(a)| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
-**Theorem.** $f$ is continuous at $a$ iff for every sequence $(x_n)$ in $D$ with $x_n \to a$, we have $f(x_n) \to f(a)$.
+**Theorem.** $f$ is continuous at $a$ iff for every sequence $(b_n)$ in $D$ with $b_n \to a$, we have $f(b_n) \to f(a)$.
 
 **Theorem.** Sums, products, and quotients (where defined) of continuous functions are continuous. Compositions of continuous functions are continuous.
 
@@ -197,15 +197,15 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 ### The Intermediate Value Theorem
 
-**Theorem (IVT).** If $f : [a, b] \to \mathbb{R}$ is continuous and $y$ lies between $f(a)$ and $f(b)$, then there exists $c \in [a, b]$ with $f(c) = y$.
+**Theorem (IVT).** If $f : [a, b] \to \mathbb{R}$ is continuous and $u$ lies between $f(a)$ and $f(b)$, then there exists $c \in [a, b]$ with $f(c) = u$.
 
-**Proof.** Suppose $f(a) < y < f(b)$. Let
+**Proof.** Suppose $f(a) < u < f(b)$. Let
 
 $$
-S = \{x \in [a, b] : f(x) \leq y\}.
+S = \{v \in [a, b] : f(v) \leq u\}.
 $$
 
-$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$.
+$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq u$. If $f(c) < u$, then for $v$ slightly greater than $c$, $f(v) < u$, contradicting the definition of $c$. Hence $f(c) = u$.
 
 **Corollary.** If $f$ is continuous on $[a, b]$ and $f(a) f(b) < 0$, then $f$ has a root in $(a, b)$.
 
@@ -220,28 +220,28 @@ $S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists.
 A function $f : D \to \mathbb{R}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-x, y \in D, \; |x - y| < \delta \implies |f(x) - f(y)| < \epsilon.
+a, b \in D, \; |a - b| < \delta \implies |f(a) - f(b)| < \epsilon.
 $$
 
 The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
 
-**Theorem.** A uniformly continuous function on a bounded interval is bounded. A continuous function on a bounded interval need not be bounded: $1/x$ on $(0, 1)$ is continuous but unbounded.
+**Theorem.** A uniformly continuous function on a bounded interval is bounded. A continuous function on a bounded interval need not be bounded: $1/a$ on $(0, 1)$ is continuous but unbounded.
 
 ## Differentiation
 
 ### The Derivative
 
-Let $f : (a, b) \to \mathbb{R}$ and $x_0 \in (a, b)$. The **derivative** of $f$ at $x_0$ is
+Let $f : (a, b) \to \mathbb{R}$ and $c_0 \in (a, b)$. The **derivative** of $f$ at $c_0$ is
 
 $$
-f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h},
+f'(c_0) = \lim_{h \to 0} \frac{f(c_0 + h) - f(c_0)}{h},
 $$
 
-provided the limit exists. If it does, $f$ is **differentiable** at $x_0$.
+provided the limit exists. If it does, $f$ is **differentiable** at $c_0$.
 
-**Theorem.** Differentiable implies continuous. The converse fails: $|x|$ is continuous at $0$ but not differentiable there.
+**Theorem.** Differentiable implies continuous. The converse fails: $|a|$ is continuous at $0$ but not differentiable there.
 
 ### Rules of Differentiation
 
@@ -251,12 +251,12 @@ provided the limit exists. If it does, $f$ is **differentiable** at $x_0$.
 
 **Quotient rule.** $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.
 
-**Chain rule.** $(f \circ g)'(x) = f'(g(x)) g'(x)$.
+**Chain rule.** $(f \circ g)'(a) = f'(g(a)) g'(a)$.
 
-**Inverse function rule.** If $f$ is differentiable at $x_0$ with $f'(x_0) \neq 0$ and $f^{-1}$ is defined near $f(x_0)$, then
+**Inverse function rule.** If $f$ is differentiable at $c_0$ with $f'(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then
 
 $$
-(f^{-1})'(f(x_0)) = \frac{1}{f'(x_0)}.
+(f^{-1})'(f(c_0)) = \frac{1}{f'(c_0)}.
 $$
 
 ### The Mean Value Theorem
@@ -271,7 +271,7 @@ $$
 f'(c) = \frac{f(b) - f(a)}{b - a}.
 $$
 
-**Proof.** Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$.
+**Proof.** Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.
 
 **Corollary.** If $f' = 0$ on an interval, $f$ is constant there.
 
@@ -279,19 +279,19 @@ $$
 
 ### Taylor's Theorem
 
-**Theorem (Taylor).** If $f$ is $n$ times differentiable on an interval containing $a$ and $x$, with $f^{(n)}$ continuous on the interval between them, then
+**Theorem (Taylor).** If $f$ is $n$ times differentiable on an interval containing $a$ and $b$, with $f^{(n)}$ continuous on the interval between them, then
 
 $$
-f(x) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (x - a)^k + R_n(x),
+f(b) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (b - a)^k + R_n(b),
 $$
 
 where the remainder is
 
 $$
-R_n(x) = \frac{f^{(n)}(\xi)}{n!} (x - a)^n
+R_n(b) = \frac{f^{(n)}(\xi)}{n!} (b - a)^n
 $$
 
-for some $\xi$ between $a$ and $x$.
+for some $\xi$ between $a$ and $b$.
 
 **Corollary.** If $f^{(n+1)} = 0$ on an interval, $f$ is a polynomial of degree at most $n$ there.
 
@@ -302,16 +302,16 @@ for some $\xi$ between $a$ and $x$.
 Let $f : [a, b] \to \mathbb{R}$ be bounded. A **partition** of $[a, b]$ is a finite set
 
 $$
-P = \{a = x_0 < x_1 < \dots < x_n = b\}.
+P = \{a = c_0 < c_1 < \dots < c_n = b\}.
 $$
 
 The **upper sum** and **lower sum** are
 
 $$
-U(f, P) = \sum_{i=1}^n M_i (x_i - x_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (x_i - x_{i-1}),
+U(f, P) = \sum_{i=1}^n M_i (c_i - c_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (c_i - c_{i-1}),
 $$
 
-where $M_i = \sup_{[x_{i-1}, x_i]} f$ and $m_i = \inf_{[x_{i-1}, x_i]} f$.
+where $M_i = \sup_{[c_{i-1}, c_i]} f$ and $m_i = \inf_{[c_{i-1}, c_i]} f$.
 
 The **upper integral** and **lower integral** are
 
@@ -332,7 +332,7 @@ $$
 **Theorem (Fundamental Theorem of Calculus, I).** If $f$ is continuous on $[a, b]$ and
 
 $$
-F(x) = \int_a^x f(t) \, dt,
+F(c) = \int_a^c f(t) \, dt,
 $$
 
 then $F$ is differentiable on $(a, b)$ and $F' = f$.
@@ -362,7 +362,7 @@ $$
 **Substitution.** If $\phi$ is continuously differentiable and $f$ is continuous, then
 
 $$
-\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(x)) \phi'(x) \, dx.
+\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \phi'(c) \, dc.
 $$
 
 ### Improper Integrals
@@ -377,28 +377,28 @@ provided the limit exists. The integral **converges** if the limit exists and is
 
 **Comparison test.** If $0 \leq f \leq g$ on $[a, \infty)$ and $\int_a^\infty g$ converges, then $\int_a^\infty f$ converges.
 
-**Example.** $\int_1^\infty x^{-p} \, dx$ converges iff $p > 1$.
+**Example.** $\int_1^\infty a^{-p} \, da$ converges iff $p > 1$.
 
 ## Sequences of Functions
 
 ### Pointwise Convergence
 
-A sequence of functions $f_n : D \to \mathbb{R}$ **converges pointwise** to $f : D \to \mathbb{R}$ if for every $x \in D$,
+A sequence of functions $f_n : D \to \mathbb{R}$ **converges pointwise** to $f : D \to \mathbb{R}$ if for every $a \in D$,
 
 $$
-f_n(x) \to f(x).
+f_n(a) \to f(a).
 $$
 
 Pointwise convergence is weak: limits of continuous functions need not be continuous.
 
-**Example.** $f_n(x) = x^n$ on $[0, 1]$ converges pointwise to $0$ on $[0, 1)$ and to $1$ at $x = 1$. The limit is discontinuous.
+**Example.** $f_n(a) = a^n$ on $[0, 1]$ converges pointwise to $0$ on $[0, 1)$ and to $1$ at $a = 1$. The limit is discontinuous.
 
 ### Uniform Convergence
 
 A sequence $(f_n)$ **converges uniformly** to $f$ on $D$ if
 
 $$
-\sup_{x \in D} |f_n(x) - f(x)| \to 0.
+\sup_{a \in D} |f_n(a) - f(a)| \to 0.
 $$
 
 **Theorem.** Uniform convergence implies pointwise convergence. The converse fails.
@@ -417,7 +417,7 @@ $$
 
 A series of functions $\sum f_n$ **converges uniformly** if the sequence of partial sums does.
 
-**Weierstrass M-test.** If $|f_n(x)| \leq M_n$ for all $x \in D$ and $\sum M_n$ converges, then $\sum f_n$ converges uniformly and absolutely on $D$.
+**Weierstrass M-test.** If $|f_n(a)| \leq M_n$ for all $a \in D$ and $\sum M_n$ converges, then $\sum f_n$ converges uniformly and absolutely on $D$.
 
 **Theorem.** A uniformly convergent series of continuous functions has a continuous sum.
 
@@ -432,7 +432,7 @@ A series of functions $\sum f_n$ **converges uniformly** if the sequence of part
 A **power series** centered at $a$ is
 
 $$
-\sum_{n=0}^\infty c_n (x - a)^n, \qquad c_n \in \mathbb{R}.
+\sum_{n=0}^\infty c_n (b - a)^n, \qquad c_n \in \mathbb{R}.
 $$
 
 ### Radius of Convergence
@@ -445,12 +445,12 @@ $$
 
 with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
 
-**Theorem.** The series converges absolutely for $|x - a| < R$ and diverges for $|x - a| > R$. On $|x - a| < R$ it converges uniformly on compact subsets.
+**Theorem.** The series converges absolutely for $|b - a| < R$ and diverges for $|b - a| > R$. On $|b - a| < R$ it converges uniformly on compact subsets.
 
-**Theorem.** A power series is differentiable on $|x - a| < R$, and its derivative is obtained by term-by-term differentiation:
+**Theorem.** A power series is differentiable on $|b - a| < R$, and its derivative is obtained by term-by-term differentiation:
 
 $$
-\frac{d}{dx} \sum_{n=0}^\infty c_n (x - a)^n = \sum_{n=1}^\infty n c_n (x - a)^{n-1}.
+\frac{d}{db} \sum_{n=0}^\infty c_n (b - a)^n = \sum_{n=1}^\infty n c_n (b - a)^{n-1}.
 $$
 
 The differentiated series has the same radius of convergence.
@@ -460,7 +460,7 @@ The differentiated series has the same radius of convergence.
 If $f$ is infinitely differentiable at $a$, its **Taylor series** at $a$ is
 
 $$
-\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x - a)^n.
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (b - a)^n.
 $$
 
 **Theorem.** If $f$ equals its Taylor series on an interval around $a$, then $f$ is **analytic** there.
@@ -470,19 +470,19 @@ $$
 **Caution.** A smooth function need not be analytic. The standard example is
 
 $$
-f(x) = \begin{cases} e^{-1/x^2} & x \neq 0, \\ 0 & x = 0. \end{cases}
+f(a) = \begin{cases} e^{-1/a^2} & a \neq 0, \\ 0 & a = 0. \end{cases}
 $$
 
-All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(x) > 0$ for $x \neq 0$.
+All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(a) > 0$ for $a \neq 0$.
 
 ## The Riemann–Stieltjes Integral
 
 ### Definition
 
-Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{x_0, \dots, x_n\}$ and tags $\xi_i \in [x_{i-1}, x_i]$, the **Riemann–Stieltjes sum** is
+Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{c_0, \dots, c_n\}$ and tags $\xi_i \in [c_{i-1}, c_i]$, the **Riemann–Stieltjes sum** is
 
 $$
-S(f, g, P, \xi) = \sum_{i=1}^n f(\xi_i) (g(x_i) - g(x_{i-1})).
+S(f, g, P, \xi) = \sum_{i=1}^n f(\xi_i) (g(c_i) - g(c_{i-1})).
 $$
 
 If the limit exists as the mesh of $P$ tends to $0$, it is the **Riemann–Stieltjes integral**
@@ -496,7 +496,7 @@ $$
 **Theorem.** If $g$ is continuously differentiable, then
 
 $$
-\int_a^b f \, dg = \int_a^b f g' \, dx.
+\int_a^b f \, dg = \int_a^b f g' \, dc.
 $$
 
 **Theorem (Integration by parts).** If $f$ is integrable with respect to $g$, then $g$ is integrable with respect to $f$ and
@@ -509,7 +509,7 @@ $$
 
 Real analysis is the study of limits, continuity, differentiation and integration on the real line, and it is the base case on which the analysis of every other system of the corpus is modelled. The line carries the distance $d(a, b) = \lvert a - b\rvert$, and with it the convergent sequences, the convergent series, the limits of functions, the continuous functions and the open sets on which the subject is built.
 
-Differentiation and integration are the two central constructions. The derivative $f'(x_0) = \lim_{h \to 0}(f(x_0 + h) - f(x_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.
+Differentiation and integration are the two central constructions. The derivative $f'(c_0) = \lim_{h \to 0}(f(c_0 + h) - f(c_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.
 
 The article also passes from sequences of numbers to sequences of functions, where pointwise and uniform convergence are distinguished, and it develops power series with their radius of convergence. The Riemann–Stieltjes integral closes the treatment.
 
@@ -524,12 +524,12 @@ The article also passes from sequences of numbers to sequences of functions, whe
 | $a_n \to L$ | Convergence of a sequence |
 | $\limsup a_n, \liminf a_n$ | Limit superior, limit inferior |
 | $\sum a_n$ | Series |
-| $\lim_{x \to a} f(x)$ | Limit of a function |
-| $f'(x)$ | Derivative |
+| $\lim_{b \to a} f(b)$ | Limit of a function |
+| $f'(b)$ | Derivative |
 | $\int_a^b f$ | Riemann integral |
 | $\int_a^b f \, dg$ | Riemann–Stieltjes integral |
 | $f_n \to f$ uniformly | Uniform convergence |
-| $\sum c_n (x - a)^n$ | Power series |
+| $\sum c_n (b - a)^n$ | Power series |
 | $R$ | Radius of convergence |
 
 ## Further Reading

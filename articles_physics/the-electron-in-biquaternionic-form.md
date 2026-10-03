@@ -24,7 +24,7 @@ $$
 \tilde{\nabla} = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z.
 $$
 
-Hermitian conjugation \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} defines the two sectors by their fixed points,
+Hermitian conjugation $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ defines the two sectors by their fixed points,
 
 $$
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad

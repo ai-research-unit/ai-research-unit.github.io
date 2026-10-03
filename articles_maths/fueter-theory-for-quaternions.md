@@ -9,7 +9,7 @@ The article uses *Quaternion Regular Functions* for the Cauchy–Riemann operato
 
 The corpus's default base is a commutative ring with identity; the analysis requires the real numbers, so domains are taken in $\mathbb{R}^4$ and functions are quaternion-valued.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $x = x_0+\mathbf{x}$, $\mathbf{x} = x_1e_1+x_2e_2+x_3e_3$, with $\rho = |\mathbf{x}|$ and, for $\rho>0$, the direction $\hat{\mathbf{x}} = \mathbf{x}/\rho$. The partials are $\partial_\mu = \partial/\partial x_\mu$, and $\Delta_4 = \sum_\mu\partial_\mu^2$ is the four-dimensional Laplacian. Vector operations on $\mathbf{F} = F_1e_1+F_2e_2+F_3e_3$ are as in *Quaternion Regular Functions*.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $\tilde q = q_0+\mathbf{q}$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$, with $\rho = |\mathbf{q}|$ and, for $\rho>0$, the direction $\hat{\mathbf{q}} = \mathbf{q}/\rho$. The partials are $\partial_\mu = \partial/\partial q_\mu$, and $\Delta_4 = \sum_\mu\partial_\mu^2$ is the four-dimensional Laplacian. Vector operations on $\mathbf{F} = F_1e_1+F_2e_2+F_3e_3$ are as in *Quaternion Regular Functions*.
 
 ## The Fueter Operator
 
@@ -39,7 +39,7 @@ so $D$ is a square root of $\Delta_4$.
 
 ### Relation to the Cauchy–Riemann Operator
 
-Since $\mathbf{D}^2 = -\Delta_3$ on the vector part, the product $(\partial_0+\mathbf{D})(\partial_0-\mathbf{D})$ equals $\partial_0^2+\Delta_3 = \Delta_4$, so the Fueter operator is the four-dimensional Cauchy–Riemann operator up to normalization. On a slice $\mathbb{C}_I$ (below) the part differentiating along the slice is the classical operator $\partial_{x_0}+I\partial_\rho$, so $DF = 0$ is the quaternionic Cauchy–Riemann equation. In the Clifford language of *Clifford Algebras in Finite Dimensions*, the quaternion algebra is the even subalgebra of $\mathrm{Cl}_{0,3}$,
+Since $\mathbf{D}^2 = -\Delta_3$ on the vector part, the product $(\partial_0+\mathbf{D})(\partial_0-\mathbf{D})$ equals $\partial_0^2+\Delta_3 = \Delta_4$, so the Fueter operator is the four-dimensional Cauchy–Riemann operator up to normalization. On a slice $\mathbb{C}_I$ (below) the part differentiating along the slice is the classical operator $\partial_{q_0}+I\partial_\rho$, so $DF = 0$ is the quaternionic Cauchy–Riemann equation. In the Clifford language of *Clifford Algebras in Finite Dimensions*, the quaternion algebra is the even subalgebra of $\mathrm{Cl}_{0,3}$,
 
 $$
 \mathbb{H}\cong\mathrm{Cl}^0_{0,3}\cong\mathrm{Cl}_{0,2},
@@ -81,34 +81,34 @@ one quaternion equation, equivalently four real equations for the four coefficie
 
 The system can also be written, away from the origin, as identities that trade each first-order equation for a radial derivative of one component and angular derivatives of the others. The rewriting is classical in one complex variable, and it is the source of the name.
 
-**The complex case.** Let $f_0(z) = u(x,y)+iv(x,y)$ be holomorphic on a disc, put $\mathbf{x} = (x,y)$ with $\rho = |\mathbf{x}|>0$, and write $[\mathbf{x}\times\nabla g]_3 = x\,\partial_y g-y\,\partial_x g$ for the out-of-plane component of the two-dimensional cross product. The Cauchy–Riemann relations are equivalent to the two identities
+**The complex case.** Let $f_0(A) = u(a,a')+iv(a,a')$ be holomorphic on a disc, put $\mathbf{a} = (a,a')$ with $\rho = |\mathbf{a}|>0$, and write $[\mathbf{a}\times\nabla g]_3 = a\,\partial_{a'} g-a'\,\partial_a g$ for the out-of-plane component of the two-dimensional cross product. The Cauchy–Riemann relations are equivalent to the two identities
 
 $$
-u = (\hat{\mathbf{x}}\cdot\nabla)(\rho u) - [\mathbf{x}\times\nabla v]_3 ,
+u = (\hat{\mathbf{a}}\cdot\nabla)(\rho u) - [\mathbf{a}\times\nabla v]_3 ,
 \qquad
-v = (\hat{\mathbf{x}}\cdot\nabla)(\rho v) + [\mathbf{x}\times\nabla u]_3 .
+v = (\hat{\mathbf{a}}\cdot\nabla)(\rho v) + [\mathbf{a}\times\nabla u]_3 .
 $$
 
-Since $(\hat{\mathbf{x}}\cdot\nabla)(\rho g) = g+x\partial_xg+y\partial_yg$, the first identity states $0 = x\partial_xu+y\partial_yu-[\mathbf{x}\times\nabla v]_3$ and the second states $0 = x\partial_xv+y\partial_yv+[\mathbf{x}\times\nabla u]_3$; the Cauchy–Riemann relations imply both, and conversely the two rows $(x,y,y,-x)$ and $(-y,x,x,y)$ in the partials $(\partial_xu,\partial_yu,\partial_xv,\partial_yv)$ are orthogonal and their span contains $(1,0,0,-1)$ and $(0,1,1,0)$, so away from $\rho = 0$ the pair is equivalent to $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. The rewriting is called **Debye** because the two real scalars $\psi_E,\psi_M$ that generate the source-free Maxwell solutions and satisfy the wave equation are the **Debye potentials**: the identity is the sense in which an analytic function serves as its own Debye potential, the cross term playing the role of the companion component.
+Since $(\hat{\mathbf{a}}\cdot\nabla)(\rho g) = g+a\partial_ag+a'\partial_{a'}g$, the first identity states $0 = a\partial_au+a'\partial_{a'}u-[\mathbf{a}\times\nabla v]_3$ and the second states $0 = a\partial_av+a'\partial_{a'}v+[\mathbf{a}\times\nabla u]_3$; the Cauchy–Riemann relations imply both, and conversely the two rows $(a,a',a',-a)$ and $(-a',a,a,a')$ in the partials $(\partial_au,\partial_{a'}u,\partial_av,\partial_{a'}v)$ are orthogonal and their span contains $(1,0,0,-1)$ and $(0,1,1,0)$, so away from $\rho = 0$ the pair is equivalent to $\partial_au = \partial_{a'}v$, $\partial_{a'}u = -\partial_av$. The rewriting is called **Debye** because the two real scalars $\psi_E,\psi_M$ that generate the source-free Maxwell solutions and satisfy the wave equation are the **Debye potentials**: the identity is the sense in which an analytic function serves as its own Debye potential, the cross term playing the role of the companion component.
 
-**The quaternion case.** The same contraction applies to the quaternion system. For $F = F_0+\mathbf{F}$ regular with $\mathbf{F} = F_1e_1+F_2e_2+F_3e_3$, and $\mathbf{x} = x_1e_1+x_2e_2+x_3e_3$, $\rho = |\mathbf{x}|>0$, the component $F_0$ satisfies
+**The quaternion case.** The same contraction applies to the quaternion system. For $F = F_0+\mathbf{F}$ regular with $\mathbf{F} = F_1e_1+F_2e_2+F_3e_3$, and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$, $\rho = |\mathbf{q}|>0$, the component $F_0$ satisfies
 
 $$
-F_0 = (\hat{\mathbf{x}}\cdot\nabla)(\rho F_0) + \partial_0(\mathbf{x}\cdot\mathbf{F}) + (\mathbf{x}\times\nabla F_1)_1+(\mathbf{x}\times\nabla F_2)_2+(\mathbf{x}\times\nabla F_3)_3 ,
+F_0 = (\hat{\mathbf{q}}\cdot\nabla)(\rho F_0) + \partial_0(\mathbf{q}\cdot\mathbf{F}) + (\mathbf{q}\times\nabla F_1)_1+(\mathbf{q}\times\nabla F_2)_2+(\mathbf{q}\times\nabla F_3)_3 ,
 $$
 
 and the three companions are obtained by applying the same statement to $-Fe_1$, $-Fe_2$, $-Fe_3$, each again regular, since $D(Fc) = (DF)c$ for a constant $c$ and the scalar component of $-Fe_j$ is $F_j$. The companion for $F_1$ reads
 
 $$
-F_1 = (\hat{\mathbf{x}}\cdot\nabla)(\rho F_1) + \partial_0(-x_1F_0-x_2F_3+x_3F_2) - (\mathbf{x}\times\nabla F_0)_1-(\mathbf{x}\times\nabla F_3)_2+(\mathbf{x}\times\nabla F_2)_3 ,
+F_1 = (\hat{\mathbf{q}}\cdot\nabla)(\rho F_1) + \partial_0(-q_1F_0-q_2F_3+q_3F_2) - (\mathbf{q}\times\nabla F_0)_1-(\mathbf{q}\times\nabla F_3)_2+(\mathbf{q}\times\nabla F_2)_3 ,
 $$
 
-and the remaining two follow the same pattern; in each case one component is expressed through its own radial derivative, the $x_0$-derivative of the inner product of the radius with the other three, and the components of $\mathbf{x}\times\nabla$ of those three.
+and the remaining two follow the same pattern; in each case one component is expressed through its own radial derivative, the $q_0$-derivative of the inner product of the radius with the other three, and the components of $\mathbf{q}\times\nabla$ of those three.
 
-**Structural content.** The identity for $F_0$ collapses. Because $(\hat{\mathbf{x}}\cdot\nabla)(\rho F_0) = F_0+\mathbf{x}\cdot\nabla F_0$ and $\sum_k(\mathbf{x}\times\nabla F_k)_k = \mathbf{x}\cdot\mathrm{rot}\,\mathbf{F}$, the term $F_0$ cancels on the two sides and the relation states
+**Structural content.** The identity for $F_0$ collapses. Because $(\hat{\mathbf{q}}\cdot\nabla)(\rho F_0) = F_0+\mathbf{q}\cdot\nabla F_0$ and $\sum_k(\mathbf{q}\times\nabla F_k)_k = \mathbf{q}\cdot\mathrm{rot}\,\mathbf{F}$, the term $F_0$ cancels on the two sides and the relation states
 
 $$
-0 = \mathbf{x}\cdot\bigl(\partial_0\mathbf{F}+\mathrm{grad}\,F_0+\mathrm{rot}\,\mathbf{F}\bigr) ,
+0 = \mathbf{q}\cdot\bigl(\partial_0\mathbf{F}+\mathrm{grad}\,F_0+\mathrm{rot}\,\mathbf{F}\bigr) ,
 $$
 
 which is the vector part of $DF$ contracted with the radius. Each of the four relations is therefore the radius contraction of one component equation of the system, and every regular $F$ satisfies it; the vector part vanishes in each radial direction precisely because it vanishes outright. The four relations together are a **reformulation** of the system in the source's sense — each component is recovered from radial and angular derivatives of the four — and the source notes that they are not explicitly found in the literature; they are an identity satisfied by regular functions rather than a construction of them, the construction remaining Fueter's.
@@ -123,12 +123,12 @@ $$
 
 componentwise, and the converse fails.
 
-*Proof.* $DF = 0$ gives $\Delta_4F = \bar D(DF) = 0$, and $FD = 0$ gives $\Delta_4F = (FD)\bar D = 0$. The coordinate $x_0$ is harmonic with $Dx_0 = e_0\neq0$.
+*Proof.* $DF = 0$ gives $\Delta_4F = \bar D(DF) = 0$, and $FD = 0$ gives $\Delta_4F = (FD)\bar D = 0$. The coordinate $q_0$ is harmonic with $Dq_0 = e_0\neq0$.
 
-**Theorem (mean value property).** A regular function $F$ near a closed ball $\bar B(x_0,r)$ satisfies
+**Theorem (mean value property).** A regular function $F$ near a closed ball $\bar B(q_0,r)$ satisfies
 
 $$
-F(x_0) = \frac{1}{|B(x_0,r)|}\int_{B(x_0,r)}F\,dV = \frac{1}{|\partial B(x_0,r)|}\int_{\partial B(x_0,r)}F\,dS,
+F(q_0) = \frac{1}{|B(q_0,r)|}\int_{B(q_0,r)}F\,dV = \frac{1}{|\partial B(q_0,r)|}\int_{\partial B(q_0,r)}F\,dS,
 $$
 
 with the ordinary Lebesgue measures on $\mathbb{R}^4$.
@@ -141,31 +141,31 @@ with the ordinary Lebesgue measures on $\mathbb{R}^4$.
 
 ### The Axial Extension of a Holomorphic Function
 
-**Definition.** Let $f_0$ be holomorphic on the disc $D(0,R)\subseteq\mathbb{C}$, written $f_0(z) = u(x,y)+iv(x,y)$ with $z = x+iy$ and $u,v$ real-valued. The **axial extension** of $f_0$ is
+**Definition.** Let $f_0$ be holomorphic on the disc $D(0,R)\subseteq\mathbb{C}$, written $f_0(A) = u(a,a')+iv(a,a')$ with $A = a+ia'$ and $u,v$ real-valued. The **axial extension** of $f_0$ is
 
 $$
-\tilde f_0(x) = u(x_0,\rho)+\hat{\mathbf{x}}\,v(x_0,\rho),
+\tilde f_0(\tilde q) = u(q_0,\rho)+\hat{\mathbf{q}}\,v(q_0,\rho),
 $$
 
-defined for $\rho>0$ by replacing $x$ by $x_0$, $y$ by $\rho$ and the complex unit $i$ by $\hat{\mathbf{x}}$, which is legitimate because $\hat{\mathbf{x}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(x_0,0) = 0$, the extension extends continuously to $\rho = 0$ with value $f_0(x_0)$, and $\tilde f_0(x) = \sum_{n\geq0}a_nx^n$ on $B(0,R)$.
+defined for $\rho>0$ by replacing $a$ by $q_0$, $a'$ by $\rho$ and the complex unit $i$ by $\hat{\mathbf{q}}$, which is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension extends continuously to $\rho = 0$ with value $f_0(q_0)$, and $\tilde f_0(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ on $B(0,R)$.
 
 ### Fueter's Theorem
 
 **Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $\tilde f_0$. Then
 
 $$
-F(x) = \Delta_4\tilde f_0(x) = \frac{2\,\partial_\rho u(x_0,\rho)}{\rho}+\hat{\mathbf{x}}\left(\frac{2\,\partial_\rho v(x_0,\rho)}{\rho}-\frac{2\,v(x_0,\rho)}{\rho^2}\right)
+F(\tilde q) = \Delta_4\tilde f_0(\tilde q) = \frac{2\,\partial_\rho u(q_0,\rho)}{\rho}+\hat{\mathbf{q}}\left(\frac{2\,\partial_\rho v(q_0,\rho)}{\rho}-\frac{2\,v(q_0,\rho)}{\rho^2}\right)
 $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-*Proof.* For $g = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho)$ with central coefficients $A,B$, one has $\partial_{x_k}A = (\partial_\rho A)\hat x_k$, $\sum_ke_k\hat x_k = \hat{\mathbf{x}}$ and $\sum_{j,k}(\partial_{x_k}\hat x_j)e_ke_j = (-3-\hat{\mathbf{x}}^2)/\rho = -2/\rho$, because $\hat{\mathbf{x}}^2 = -1$. Hence $Dg = gD = (\partial_0A-\partial_\rho B-2B/\rho)+\hat{\mathbf{x}}(\partial_0B+\partial_\rho A)$, so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial_0A = \partial_\rho B+2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying the radial form of the three-dimensional Laplacian and the identity $\Delta_{\mathbb{R}^3}(B\hat{\mathbf{x}}) = \hat{\mathbf{x}}(\Delta_{\mathbb{R}^3}B-2B/\rho^2)$ to the harmonic pair $(u,v)$ gives $\Delta_4\tilde f_0 = P+\hat{\mathbf{x}}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$, and the Cauchy–Riemann equations give $Q_\rho+2Q/\rho = \partial_0P$, $-\partial_0Q = P_\rho$; thus $P,Q$ satisfy the regularity system and extend continuously to $\rho = 0$.
+*Proof.* For $g = A(q_0,\rho)+\hat{\mathbf{q}}B(q_0,\rho)$ with central coefficients $A,B$, one has $\partial_{q_k}A = (\partial_\rho A)\hat q_k$, $\sum_ke_k\hat q_k = \hat{\mathbf{q}}$ and $\sum_{j,k}(\partial_{q_k}\hat q_j)e_ke_j = (-3-\hat{\mathbf{q}}^2)/\rho = -2/\rho$, because $\hat{\mathbf{q}}^2 = -1$. Hence $Dg = gD = (\partial_0A-\partial_\rho B-2B/\rho)+\hat{\mathbf{q}}(\partial_0B+\partial_\rho A)$, so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial_0A = \partial_\rho B+2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying the radial form of the three-dimensional Laplacian and the identity $\Delta_{\mathbb{R}^3}(B\hat{\mathbf{q}}) = \hat{\mathbf{q}}(\Delta_{\mathbb{R}^3}B-2B/\rho^2)$ to the harmonic pair $(u,v)$ gives $\Delta_4\tilde f_0(\tilde q) = P+\hat{\mathbf{q}}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$, and the Cauchy–Riemann equations give $Q_\rho+2Q/\rho = \partial_0P$, $-\partial_0Q = P_\rho$; thus $P,Q$ satisfy the regularity system and extend continuously to $\rho = 0$.
 
 ### The Kernel and Injectivity
 
-**Proposition.** The Fueter map $\tau(f_0) = \Delta_4\tilde f_0$ vanishes if and only if $f_0$ is affine, $f_0(z) = az+b$.
+**Proposition.** The Fueter map $\tau(f_0) = \Delta_4\tilde f_0$ vanishes if and only if $f_0$ is affine, $f_0(A) = CA+D$.
 
-*Proof.* $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(x_0)$ and $v = c(x_0)\rho$; then $c' = 0$ and $u = cx_0+d$ with $c,d\in\mathbb{R}$, and complex linearity gives all affine functions. Conversely, $\Delta_4$ annihilates the constants and the linear monomials.
+*Proof.* $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$ and $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0+d$ with $c,d\in\mathbb{R}$, and complex linearity gives all affine functions. Conversely, $\Delta_4$ annihilates the constants and the linear monomials.
 
 **Corollary.** The Fueter map is injective exactly on the holomorphic functions whose Taylor coefficients vanish to order two, $a_0 = a_1 = 0$, its kernel being the affine functions.
 
@@ -181,19 +181,19 @@ $$
 S^2 = \{I\in\operatorname{Im}\mathbb{H} : N(I) = 1\},
 $$
 
-and every non-real quaternion has a unique representation $x = x_0+I\rho$ with $I\in S^2$ and $\rho>0$. Two slices meet only in $\mathbb{R}$ unless $I = \pm J$, in which case they coincide.
+and every non-real quaternion has a unique representation $\tilde q = q_0+I\rho$ with $I\in S^2$ and $\rho>0$. Two slices meet only in $\mathbb{R}$ unless $I = \pm J$, in which case they coincide.
 
-*Proof.* The roots of $-1$ are the pure unit quaternions, which form the unit sphere of the three-dimensional space $\operatorname{Im}\mathbb{H}$, by *Quaternion Roots of Minus One*; the direction $\hat{\mathbf{x}}$ is pure and unit and $\hat{\mathbf{x}}^2 = -1$, giving the representation, and the uniqueness is the uniqueness of the polar form of the vector part. Two slices $\mathbb{C}_I,\mathbb{C}_J$ intersect in the real span of $I,J$, which is larger than $\mathbb{R}$ exactly when $I = \pm J$.
+*Proof.* The roots of $-1$ are the pure unit quaternions, which form the unit sphere of the three-dimensional space $\operatorname{Im}\mathbb{H}$, by *Quaternion Roots of Minus One*; the direction $\hat{\mathbf{q}}$ is pure and unit and $\hat{\mathbf{q}}^2 = -1$, giving the representation, and the uniqueness is the uniqueness of the polar form of the vector part. Two slices $\mathbb{C}_I,\mathbb{C}_J$ intersect in the real span of $I,J$, which is larger than $\mathbb{R}$ exactly when $I = \pm J$.
 
 ### Axially Symmetric Functions and the Harmonic Coefficients
 
-**Definition.** A function $F$ on $\mathbb{H}$ is **axially symmetric** if it depends on the direction $\hat{\mathbf{x}}$ only through $\hat{\mathbf{x}}$ itself, that is, if it has the **axial representation**
+**Definition.** A function $F$ on $\mathbb{H}$ is **axially symmetric** if it depends on the direction $\hat{\mathbf{q}}$ only through $\hat{\mathbf{q}}$ itself, that is, if it has the **axial representation**
 
 $$
-F(x) = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho),
+F(\tilde q) = A(q_0,\rho)+\hat{\mathbf{q}}B(q_0,\rho),
 $$
 
-with $A,B$ the **axial coefficients**, functions of the two variables $x_0,\rho$.
+with $A,B$ the **axial coefficients**, functions of the two variables $q_0,\rho$.
 
 **Proposition.** For an axially symmetric $F$ the left- and right-regularity conditions coincide, and they reduce to
 
@@ -211,15 +211,15 @@ Eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmon
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde f_0$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \Delta^{(n-1)/2}\tilde f_0$ is monogenic, annihilated on the left and on the right by the operator $\partial_{x_0}+\sum_{j=1}^{n}e_j\partial_{x_j}$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde f_0$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \Delta^{(n-1)/2}\tilde f_0$ is monogenic, annihilated on the left and on the right by the operator $\partial_{q_0}+\sum_{j=1}^{n}e_j\partial_{q_j}$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
 
 *Proof.* The power $(n-1)/2$ is a non-negative integer because $n$ is odd, so the operator is ordinary iteration of the Laplacian; the argument of Fueter's theorem generalizes to each odd $n$, the radial computation with $-3$ replaced by $-n$.
 
-**Remark.** Three hypotheses are needed. The function $f_0$ must be holomorphic on $D(0,R)$, so that $\Delta^{(n-1)/2}(\tilde x^n)$ is a homogeneous polynomial of degree $n-1-(n-1)/2$ with at most polynomial growth in $n$ and the induced series converges on $B(0,R)$; the parity exponent $(n-1)/2$ must be a non-negative integer, so $n$ is odd; and the affine kernel $az+b$ remains, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two. None of the three can be dropped.
+**Remark.** Three hypotheses are needed. The function $f_0$ must be holomorphic on $D(0,R)$, so that $\Delta^{(n-1)/2}(\tilde q^n)$ is a homogeneous polynomial of degree $n-1-(n-1)/2$ with at most polynomial growth in $n$ and the induced series converges on $B(0,R)$; the parity exponent $(n-1)/2$ must be a non-negative integer, so $n$ is odd; and the affine kernel $az+b$ remains, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two. None of the three can be dropped.
 
 ## Power Series Representations
 
-A series with quaternionic coefficients on the right, $F(x) = \sum_{n\geq0}x^na_n$, converges absolutely on $|x| < R$ with $R^{-1} = \limsup_n|a_n|^{1/n}$, because $|x^n| = |x|^n$. Its sum is **slice-regular**, or Cullen-regular: holomorphic on each slice. Slice-regular functions form a class distinct from the Fueter-regular ones; for instance $x\mapsto x$ is slice-regular but
+A series with quaternionic coefficients on the right, $F(\tilde q) = \sum_{n\geq0}\tilde q^na_n$, converges absolutely on $|\tilde q| < R$ with $R^{-1} = \limsup_n|a_n|^{1/n}$, because $|\tilde q^n| = |\tilde q|^n$. Its sum is **slice-regular**, or Cullen-regular: holomorphic on each slice. Slice-regular functions form a class distinct from the Fueter-regular ones; for instance $\tilde q\mapsto\tilde q$ is slice-regular but
 
 $$
 Dx = \sum_{\mu=0}^{3}e_\mu e_\mu = e_0^2+e_1^2+e_2^2+e_3^2 = e_0-e_0-e_0-e_0 = -2e_0\neq0 .
@@ -227,10 +227,10 @@ $$
 
 The Fueter construction is exactly the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.
 
-For real Taylor coefficients, $\tilde f_0(x) = \sum_{n\geq0}a_nx^n$ and termwise application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\geq0}a_n\Delta_4(x^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$, since $\Delta_4(x^n)$ has degree $n-2$ and at most polynomial growth; termwise differentiation is therefore justified. In general, with $\mathcal{P}_k$ the homogeneous quaternion-valued polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : DP = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition
+For real Taylor coefficients, $\tilde f_0(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ and termwise application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\geq0}a_n\Delta_4(\tilde q^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$, since $\Delta_4(\tilde q^n)$ has degree $n-2$ and at most polynomial growth; termwise differentiation is therefore justified. In general, with $\mathcal{P}_k$ the homogeneous quaternion-valued polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : DP = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition
 
 $$
-\mathcal{P}_k = \bigoplus_{j=0}^{k}x^j\mathcal{M}_{k-j}
+\mathcal{P}_k = \bigoplus_{j=0}^{k}\tilde q^j\mathcal{M}_{k-j}
 $$
 
 gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $F = \sum_{k\geq0}F_k$ with $F_k\in\mathcal{M}_k$, the four-variable analogue of the Taylor series of one complex variable.
@@ -252,9 +252,9 @@ The relation to Clifford analysis is the identification $\mathbb{H}\cong\mathrm{
 
 ## Summary
 
-The Fueter operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \partial_0-\mathbf{D}$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial_{x_0}+I\partial_\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set. The system also admits a **Debye-type reformulation**, in which each component is expressed through its own radial derivative, the $x_0$-derivative of the radius contracted with the others, and the components of $\mathbf{x}\times\nabla$ of the others; the four relations are the radius contractions of the four component equations, so they hold identically for a regular function, and in one complex variable the same pair of identities is equivalent to the Cauchy–Riemann relations.
+The Fueter operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \partial_0-\mathbf{D}$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial_{q_0}+I\partial_\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set. The system also admits a **Debye-type reformulation**, in which each component is expressed through its own radial derivative, the $q_0$-derivative of the radius contracted with the others, and the components of $\mathbf{q}\times\nabla$ of the others; the four relations are the radius contractions of the four component equations, so they hold identically for a regular function, and in one complex variable the same pair of identities is equivalent to the Cauchy–Riemann relations.
 
-The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4\tilde f_0 = 2u_\rho/\rho+\hat{\mathbf{x}}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $x = x_0+I\rho$, and the axial representation $F = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho)$ reduces regularity to $\partial_0A = \partial_\rho B+2B/\rho$, $\partial_0B = -\partial_\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
+The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4\tilde f_0 = 2u_\rho/\rho+\hat{\mathbf{q}}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $\tilde q = q_0+I\rho$, and the axial representation $F = A(q_0,\rho)+\hat{\mathbf{q}}B(q_0,\rho)$ reduces regularity to $\partial_0A = \partial_\rho B+2B/\rho$, $\partial_0B = -\partial_\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
 
 Regular functions have the induced series and the monogenic Taylor expansion of the Fischer decomposition, while slice-regular series form the distinct class the construction converts into regular functions. The quaternion case is the real-coefficient case of the biquaternion Fueter theory; the biquaternion case differs through the indefiniteness of the norm, the non-spherical root set, the null quadric obstruction, and the failure of ellipticity over $\mathbb{C}$. In Clifford terms, $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, and this article treats the elliptic classical instance of the Fueter–Sce correspondence.
 
@@ -263,7 +263,7 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra, a division algebra |
-| $x = x_0+\mathbf{x}$, $\rho = \lvert\mathbf{x}\rvert$, $\hat{\mathbf{x}} = \mathbf{x}/\rho$ | Variable, modulus of the vector part, direction |
+| $\tilde q = q_0+\mathbf{q}$, $\rho = \lvert\mathbf{q}\rvert$, $\hat{\mathbf{q}} = \mathbf{q}/\rho$ | Variable, modulus of the vector part, direction |
 | $D = \partial_0+\mathbf{D}$, $\mathbf{D} = \sum_k e_k\partial_k$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
 | $\bar D = \partial_0-\mathbf{D}$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu\partial_\mu^2$ | Four-dimensional Laplacian; $D\bar D = \bar DD = \Delta_4$ |
@@ -271,11 +271,11 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | $FD = 0$ | Right-regularity |
 | $\mathrm{div}, \mathrm{grad}, \mathrm{rot}$ | Vector operators in the componentwise system |
 | $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$ | Quaternionic Cauchy–Riemann system |
-| $(\mathbf{x}\times\nabla g)_k$ | Components of the radius–gradient cross product in the Debye-type identities |
+| $(\mathbf{q}\times\nabla g)_k$ | Components of the radius–gradient cross product in the Debye-type identities |
 | $\psi_E$, $\psi_M$ | Debye potentials, the two real scalar generators of source-free Maxwell solutions |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; the imaginary units of $\mathbb{H}$ form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Slice through $I$, a copy of the complex plane |
-| $A, B$ | Axial coefficients, $F = A(x_0,\rho)+\hat{\mathbf{x}}B(x_0,\rho)$ |
+| $A, B$ | Axial coefficients, $F = A(q_0,\rho)+\hat{\mathbf{q}}B(q_0,\rho)$ |
 | $\tilde f_0$, $\tau(f_0) = \Delta_4\tilde f_0$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced regular function |
 | $\mathcal{P}_k$, $\mathcal{M}_k$ | Homogeneous polynomials of degree $k$; monogenic ones; Fischer decomposition |
 | $\mathrm{Cl}^0_{0,3}\cong\mathrm{Cl}_{0,2}\cong\mathbb{H}$ | Clifford identifications of the quaternion algebra |

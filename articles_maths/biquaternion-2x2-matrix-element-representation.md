@@ -328,28 +328,28 @@ E_{11} = \Phi(\tilde\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \qqua
 E_{22} = \Phi(\tilde\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix},
 $$
 $$
-E_{12} = \Phi(\tilde U), \qquad E_{21} = \Phi(\tilde Y), \qquad
-\tilde U = \frac{i e_1 - e_2}{2}, \qquad \tilde Y = \frac{i e_1 + e_2}{2},
+E_{12} = \Phi(\tilde U), \qquad E_{21} = \Phi(\tilde S), \qquad
+\tilde U = \frac{i e_1 - e_2}{2}, \qquad \tilde S = \frac{i e_1 + e_2}{2},
 $$
 
-so that $\{\tilde\Pi_1, \tilde U, \tilde Y, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ and the multiplication is the table of the matrix units,
+so that $\{\tilde\Pi_1, \tilde U, \tilde S, \tilde\Pi_2\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ and the multiplication is the table of the matrix units,
 
 $$
-\tilde\Pi_1\tilde U = \tilde U = \tilde U\tilde\Pi_2, \qquad \tilde\Pi_2\tilde Y = \tilde Y = \tilde Y\tilde\Pi_1, \qquad \tilde U\tilde Y = \tilde\Pi_1, \qquad \tilde Y\tilde U = \tilde\Pi_2,
+\tilde\Pi_1\tilde U = \tilde U = \tilde U\tilde\Pi_2, \qquad \tilde\Pi_2\tilde S = \tilde S = \tilde S\tilde\Pi_1, \qquad \tilde U\tilde S = \tilde\Pi_1, \qquad \tilde S\tilde U = \tilde\Pi_2,
 $$
 
-together with $\tilde U\tilde\Pi_1 = \tilde\Pi_2\tilde U = \tilde\Pi_1\tilde Y = 0$, $\tilde Y\tilde\Pi_2 = 0$, and $\tilde U^2 = \tilde Y^2 = 0$.
+together with $\tilde U\tilde\Pi_1 = \tilde\Pi_2\tilde U = \tilde\Pi_1\tilde S = 0$, $\tilde S\tilde\Pi_2 = 0$, and $\tilde U^2 = \tilde S^2 = 0$.
 
 The matrix units group the basis into one-sided ideals. The two **left ideals** $\mathbb{B}\tilde\Pi_1, \mathbb{B}\tilde\Pi_2$ are the column spaces and the two **right ideals** $\tilde\Pi_1\mathbb{B}, \tilde\Pi_2\mathbb{B}$ are the row spaces, and
 
 $$
-\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde Y) \oplus (\mathbb{C}\tilde U \oplus \mathbb{C}\tilde\Pi_2),
+\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2 = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde S) \oplus (\mathbb{C}\tilde U \oplus \mathbb{C}\tilde\Pi_2),
 $$
 $$
-\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde U) \oplus (\mathbb{C}\tilde Y \oplus \mathbb{C}\tilde\Pi_2).
+\mathbb{B} = \tilde\Pi_1\mathbb{B} \oplus \tilde\Pi_2\mathbb{B} = (\mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde U) \oplus (\mathbb{C}\tilde S \oplus \mathbb{C}\tilde\Pi_2).
 $$
 
-The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde U$ and $\tilde\Pi_2$ with $\tilde Y$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $\tilde Y$ and $\tilde\Pi_2$ with $\tilde U$. Each left ideal is two-dimensional over $\mathbb{C}$ and isomorphic to the simple module $V$; each right ideal is isomorphic to the dual $V^{*}$.
+The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\Pi_1$ with $\tilde U$ and $\tilde\Pi_2$ with $\tilde S$, whereas the left-ideal decomposition groups $\tilde\Pi_1$ with $\tilde S$ and $\tilde\Pi_2$ with $\tilde U$. Each left ideal is two-dimensional over $\mathbb{C}$ and isomorphic to the simple module $V$; each right ideal is isomorphic to the dual $V^{*}$.
 
 The minimal left ideals are parametrized by the projective line. For a $\mathbb{C}$-subspace $W \subseteq V = \mathbb{C}^2$ put
 

@@ -14,21 +14,21 @@ The treatment is mathematically honest: every claim is either proved or stated a
 A split complex number is written
 
 $$
-Z = x + j y, \qquad x, y \in \mathbb{R},
+A = a + j a', \qquad a, a' \in \mathbb{R},
 $$
 
-where $j^2 = +1$. The real number $x$ is the **real part**, and $y$ is the **imaginary part**. We write $x = \operatorname{Re} Z$ and $y = \operatorname{Im} Z$.
+where $j^2 = +1$. The real number $a$ is the **real part**, and $a'$ is the **imaginary part**. We write $a = \operatorname{Re} A$ and $a' = \operatorname{Im} A$.
 
-The **Euclidean modulus** of $Z$ is
-
-$$
-\|Z\|_E = \sqrt{x^2 + y^2},
-$$
-
-and the **Euclidean distance** between two split complex numbers $Z$ and $W$ is
+The **Euclidean modulus** of $A$ is
 
 $$
-d(Z, W) = \|Z - W\|_E.
+\|A\|_E = \sqrt{a^2 + a'^2},
+$$
+
+and the **Euclidean distance** between two split complex numbers $A$ and $B$ is
+
+$$
+d(A, B) = \|A - B\|_E.
 $$
 
 This makes $\mathbb{D}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.
@@ -36,24 +36,24 @@ This makes $\mathbb{D}$ a metric space isometric to $\mathbb{R}^2$. The Euclidea
 The **split modulus** is
 
 $$
-\rho = \sqrt{|x^2 - y^2|},
+\rho = \sqrt{|a^2 - a'^2|},
 $$
 
-which is not a norm. It vanishes on the null cone $x = \pm y$, and it is not subadditive; the quadratic form $x^2-y^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.
+which is not a norm. It vanishes on the null cone $a = \pm a'$, and it is not subadditive; the quadratic form $a^2-a'^2$ from which it is built is indefinite. It is used in the study of the multiplicative structure, not the topological structure.
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centered at $Z_0$ is
+The **open ball** of radius $r > 0$ centered at $A_0$ is
 
 $$
-B(Z_0, r) = \{Z \in \mathbb{D} : \|Z - Z_0\|_E < r\}.
+B(A_0, r) = \{A \in \mathbb{D} : \|A - A_0\|_E < r\}.
 $$
 
 It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{D}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.
 
 ### Open and Closed Sets
 
-A set $U \subseteq \mathbb{D}$ is **open** if for every $Z_0 \in U$ there exists $r > 0$ with $B(Z_0, r) \subseteq U$.
+A set $U \subseteq \mathbb{D}$ is **open** if for every $A_0 \in U$ there exists $r > 0$ with $B(A_0, r) \subseteq U$.
 
 A set $F \subseteq \mathbb{D}$ is **closed** if its complement $\mathbb{D} \setminus F$ is open.
 
@@ -77,76 +77,76 @@ A set $K \subseteq \mathbb{D}$ is **compact** if every open cover of $K$ has a f
 
 ### Limits of Sequences
 
-A sequence $(Z_n)$ of split complex numbers **converges** to $L \in \mathbb{D}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(A_n)$ of split complex numbers **converges** to $L \in \mathbb{D}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-n \geq N \implies \|Z_n - L\|_E < \epsilon.
+n \geq N \implies \|A_n - L\|_E < \epsilon.
 $$
 
-We write $Z_n \to L$ or $\lim_{n \to \infty} Z_n = L$.
+We write $A_n \to L$ or $\lim_{n \to \infty} A_n = L$.
 
-**Uniqueness.** If $Z_n \to L$ and $Z_n \to L'$, then $L = L'$.
+**Uniqueness.** If $A_n \to L$ and $A_n \to L'$, then $L = L'$.
 
-**Componentwise convergence.** Write $Z_n = x_n + j y_n$ and $L = a + j b$. Then
+**Componentwise convergence.** Write $A_n = a_n + j a'_n$ and $L = a + j a'$. Then
 
 $$
-Z_n \to L \iff x_n \to a \text{ and } y_n \to b.
+A_n \to L \iff a_n \to a \text{ and } a'_n \to a'.
 $$
 
 This is the reason split complex convergence is no harder than real convergence: it is two real convergences in parallel.
 
 **Boundedness.** Every convergent sequence is bounded. The converse fails.
 
-**Algebra of limits.** If $Z_n \to L$ and $W_n \to M$, then
+**Algebra of limits.** If $A_n \to L$ and $B_n \to M$, then
 
 $$
-Z_n + W_n \to L + M, \qquad Z_n W_n \to L M.
+A_n + B_n \to L + M, \qquad A_n B_n \to L M.
 $$
 
 There is no quotient rule in general, because $\mathbb{D}$ has zero divisors.
 
 ### Cauchy Sequences
 
-A sequence $(Z_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(A_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-m, n \geq N \implies \|Z_m - Z_n\|_E < \epsilon.
+m, n \geq N \implies \|A_m - A_n\|_E < \epsilon.
 $$
 
 **Theorem.** In $\mathbb{D}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{D}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.
 
 ### Limits of Functions
 
-Let $f : D \to \mathbb{D}$ with $D \subseteq \mathbb{D}$, and let $Z_0$ be a limit point of $D$. We say
+Let $f : D \to \mathbb{D}$ with $D \subseteq \mathbb{D}$, and let $A_0$ be a limit point of $D$. We say
 
 $$
-\lim_{Z \to Z_0} f(Z) = L
+\lim_{A \to A_0} f(A) = L
 $$
 
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Z \in D, \; 0 < \|Z - Z_0\|_E < \delta \implies \|f(Z) - L\|_E < \epsilon.
+A \in D, \; 0 < \|A - A_0\|_E < \delta \implies \|f(A) - L\|_E < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
 
-**Sequential criterion.** $\lim_{Z \to Z_0} f(Z) = L$ iff for every sequence $(Z_n)$ in $D \setminus \{Z_0\}$ with $Z_n \to Z_0$, we have $f(Z_n) \to L$.
+**Sequential criterion.** $\lim_{A \to A_0} f(A) = L$ iff for every sequence $(A_n)$ in $D \setminus \{A_0\}$ with $A_n \to A_0$, we have $f(A_n) \to L$.
 
 **Algebra of limits.** Sums and products of limits are the limits of the sums and products.
 
 ### Continuity
 
-A function $f : D \to \mathbb{D}$ is **continuous at** $Z_0 \in D$ if
+A function $f : D \to \mathbb{D}$ is **continuous at** $A_0 \in D$ if
 
 $$
-\lim_{Z \to Z_0} f(Z) = f(Z_0).
+\lim_{A \to A_0} f(A) = f(A_0).
 $$
 
 Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Z \in D, \; \|Z - Z_0\|_E < \delta \implies \|f(Z) - f(Z_0)\|_E < \epsilon.
+A \in D, \; \|A - A_0\|_E < \delta \implies \|f(A) - f(A_0)\|_E < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -155,14 +155,14 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 **Theorem.** $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.
 
-**Componentwise continuity.** Write $f(Z) = u(x, y) + j v(x, y)$. Then $f$ is continuous at $Z_0 = x_0 + j y_0$ iff $u$ and $v$ are continuous at $(x_0, y_0)$. This reduces split complex continuity to real continuity of two functions of two variables.
+**Componentwise continuity.** Write $f(A) = u(a, a') + j v(a, a')$. Then $f$ is continuous at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are continuous at $(a_0, a'_0)$. This reduces split complex continuity to real continuity of two functions of two variables.
 
 ### Uniform Continuity
 
 A function $f : D \to \mathbb{D}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Z, W \in D, \; \|Z - W\|_E < \delta \implies \|f(Z) - f(W)\|_E < \epsilon.
+A, B \in D, \; \|A - B\|_E < \delta \implies \|f(A) - f(B)\|_E < \epsilon.
 $$
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
@@ -171,13 +171,13 @@ $$
 
 ### The Derivative
 
-Let $f : U \to \mathbb{D}$ with $U$ open, and let $Z_0 \in U$. The **derivative** of $f$ at $Z_0$ is
+Let $f : U \to \mathbb{D}$ with $U$ open, and let $A_0 \in U$. The **derivative** of $f$ at $A_0$ is
 
 $$
-f'(Z_0) = \lim_{h \to 0} \frac{f(Z_0 + h) - f(Z_0)}{h},
+f'(A_0) = \lim_{h \to 0} \frac{f(A_0 + h) - f(A_0)}{h},
 $$
 
-provided the limit exists. If it does, $f$ is **split complex differentiable** at $Z_0$, or **holomorphic** at $Z_0$ in the split sense.
+provided the limit exists. If it does, $f$ is **split complex differentiable** at $A_0$, or **holomorphic** at $A_0$ in the split sense.
 
 The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.
 
@@ -185,18 +185,18 @@ The limit is taken in the split complex plane, so $h$ can approach $0$ from any 
 
 ### The Cauchy–Riemann Equations
 
-Write $f(Z) = u(x, y) + j v(x, y)$, where $Z = x + jy$ and $u, v : U \to \mathbb{R}$.
+Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : U \to \mathbb{R}$.
 
-**Theorem.** $f$ is split complex differentiable at $Z_0 = x_0 + j y_0$ iff $u$ and $v$ are real differentiable at $(x_0, y_0)$ and satisfy the **split Cauchy–Riemann equations**
+**Theorem.** $f$ is split complex differentiable at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are real differentiable at $(a_0, a'_0)$ and satisfy the **split Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = \frac{\partial v}{\partial x}.
+\frac{\partial u}{\partial a} = \frac{\partial v}{\partial a'}, \qquad \frac{\partial u}{\partial a'} = \frac{\partial v}{\partial a}.
 $$
 
 **Proof.** Write $h = h_1 + j h_2$. The difference quotient is
 
 $$
-\frac{f(Z_0 + h) - f(Z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + j (v_x h_1 + v_y h_2)}{h_1 + j h_2} + o(1).
+\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(u_a h_1 + u_{a'} h_2) + j (v_a h_1 + v_{a'} h_2)}{h_1 + j h_2} + o(1).
 $$
 
 For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.
@@ -204,7 +204,7 @@ For the limit to exist independently of the direction of $h$, the numerator must
 **Corollary.** If $f$ is split complex differentiable, then $u$ and $v$ satisfy the **wave equation**:
 
 $$
-\frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial y^2} = 0, \qquad \frac{\partial^2 v}{\partial x^2} - \frac{\partial^2 v}{\partial y^2} = 0.
+\frac{\partial^2 u}{\partial a^2} - \frac{\partial^2 u}{\partial a'^2} = 0, \qquad \frac{\partial^2 v}{\partial a^2} - \frac{\partial^2 v}{\partial a'^2} = 0.
 $$
 
 **Proof.** Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials.
@@ -216,16 +216,16 @@ This is the fundamental difference from complex analysis: the real and imaginary
 Define the **split Wirtinger derivatives**
 
 $$
-\frac{\partial}{\partial Z} = \frac{1}{2}\left( \frac{\partial}{\partial x} + j \frac{\partial}{\partial y} \right), \qquad \frac{\partial}{\partial \bar{Z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} - j \frac{\partial}{\partial y} \right).
+\frac{\partial}{\partial A} = \frac{1}{2}\left( \frac{\partial}{\partial a} + j \frac{\partial}{\partial a'} \right), \qquad \frac{\partial}{\partial \bar{A}} = \frac{1}{2}\left( \frac{\partial}{\partial a} - j \frac{\partial}{\partial a'} \right).
 $$
 
-**Theorem.** $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{Z} = 0$. In that case,
+**Theorem.** $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{A} = 0$. In that case,
 
 $$
-f'(Z) = \frac{\partial f}{\partial Z}.
+f'(A) = \frac{\partial f}{\partial A}.
 $$
 
-The condition $\partial f / \partial \bar{Z} = 0$ is the split Cauchy–Riemann equations in compact form.
+The condition $\partial f / \partial \bar{A} = 0$ is the split Cauchy–Riemann equations in compact form.
 
 ### Rules of Differentiation
 
@@ -235,12 +235,12 @@ The condition $\partial f / \partial \bar{Z} = 0$ is the split Cauchy–Riemann 
 
 **Quotient rule.** $(f/g)' = (f' g - f g')/g^2$ where $g$ is invertible.
 
-**Chain rule.** $(f \circ g)'(Z) = f'(g(Z)) g'(Z)$.
+**Chain rule.** $(f \circ g)'(A) = f'(g(A)) g'(A)$.
 
-**Inverse function rule.** If $f$ is split complex differentiable at $Z_0$ with $f'(Z_0)$ invertible and $f^{-1}$ is defined near $f(Z_0)$, then
+**Inverse function rule.** If $f$ is split complex differentiable at $A_0$ with $f'(A_0)$ invertible and $f^{-1}$ is defined near $f(A_0)$, then
 
 $$
-(f^{-1})'(f(Z_0)) = \frac{1}{f'(Z_0)}.
+(f^{-1})'(f(A_0)) = \frac{1}{f'(A_0)}.
 $$
 
 ## The Idempotent Decomposition
@@ -258,15 +258,15 @@ They satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$, $\Pi_1 \Pi_2 = 0$, and $\Pi_1
 Every split complex number decomposes uniquely as
 
 $$
-Z = Z_+ \Pi_1 + Z_- \Pi_2, \qquad Z_+ = x + y, \quad Z_- = x - y.
+A = A_+ \Pi_1 + A_- \Pi_2, \qquad A_+ = a + a', \quad A_- = a - a'.
 $$
 
 ### Differentiability in the Idempotent Basis
 
-Write $f(Z) = f_+(Z) \Pi_1 + f_-(Z) \Pi_2$, where $f_+$ and $f_-$ are real-valued functions. Then
+Write $f(A) = f_+(A) \Pi_1 + f_-(A) \Pi_2$, where $f_+$ and $f_-$ are real-valued functions. Then
 
 $$
-f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } Z_+ \text{ and } f_- \text{ is differentiable in } Z_-.
+f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } A_+ \text{ and } f_- \text{ is differentiable in } A_-.
 $$
 
 **Proof.** In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable.
@@ -288,7 +288,7 @@ This is the **fundamental theorem of split complex analysis**: differentiability
 Let $\gamma : [a, b] \to \mathbb{D}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
 
 $$
-\int_\gamma f(Z) \, dZ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+\int_\gamma f(A) \, dA = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
 $$
 
 **Linearity.** $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.
@@ -297,32 +297,32 @@ $$
 
 **Additivity.** If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.
 
-**Estimation.** If $\|f(Z)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
+**Estimation.** If $\|f(A)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
 
 $$
-\left\| \int_\gamma f(Z) \, dZ \right\|_E \leq \sqrt{2} M L.
+\left\| \int_\gamma f(A) \, dA \right\|_E \leq \sqrt{2} M L.
 $$
 
-The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Z W\|_E \leq \sqrt{2} \|Z\|_E \|W\|_E$, and the constant is sharp.
+The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|A B\|_E \leq \sqrt{2} \|A\|_E \|B\|_E$, and the constant is sharp.
 
 ### The Cauchy–Goursat Theorem
 
 **Theorem (Cauchy–Goursat, split version).** If $f$ is split complex differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
 
 $$
-\oint_\gamma f(Z) \, dZ = 0.
+\oint_\gamma f(A) \, dA = 0.
 $$
 
 **Proof.** In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour.
 
 ### The Cauchy Integral Formula
 
-There is **no** general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(W - Z)$ has a singularity on the null cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.
+There is **no** general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(B - A)$ has a singularity on the null cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.
 
 However, if the function is written in the idempotent basis, each component has its own Cauchy integral formula:
 
 $$
-f_+(Z_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - Z_+} \, d\zeta_+,
+f_+(A_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - A_+} \, d\zeta_+,
 $$
 
 and similarly for $f_-$. But these are complex formulas applied to real functions, and they require complexification of the components. They are not split complex formulas.
@@ -331,16 +331,16 @@ and similarly for $f_-$. But these are complex formulas applied to real function
 
 ### Definition
 
-A **power series** centered at $Z_0$ is
+A **power series** centered at $A_0$ is
 
 $$
-\sum_{n=0}^\infty c_n (Z - Z_0)^n, \qquad c_n \in \mathbb{D}.
+\sum_{n=0}^\infty c_n (A - A_0)^n, \qquad c_n \in \mathbb{D}.
 $$
 
 In the idempotent basis $c_n = c_{n,+} \Pi_1 + c_{n,-} \Pi_2$, and the series is the pair of real power series
 
 $$
-\sum_{n=0}^\infty c_{n,+} (Z - Z_0)_+^n \Pi_1 + \sum_{n=0}^\infty c_{n,-} (Z - Z_0)_-^n \Pi_2.
+\sum_{n=0}^\infty c_{n,+} (A - A_0)_+^n \Pi_1 + \sum_{n=0}^\infty c_{n,-} (A - A_0)_-^n \Pi_2.
 $$
 
 The **radii of convergence** are the pair of real numbers
@@ -351,25 +351,25 @@ $$
 
 with the conventions $R_\pm = 0$ if the limsup is $\infty$ and $R_\pm = \infty$ if the limsup is $0$.
 
-**Theorem.** The series converges absolutely for $|Z_+ - Z_{0+}| < R_+$ and $|Z_- - Z_{0-}| < R_-$, and diverges if $|Z_+ - Z_{0+}| > R_+$ or $|Z_- - Z_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.
+**Theorem.** The series converges absolutely for $|A_+ - A_{0+}| < R_+$ and $|A_- - A_{0-}| < R_-$, and diverges if $|A_+ - A_{0+}| > R_+$ or $|A_- - A_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.
 
-**Theorem.** A power series is split complex differentiable on the region $|Z_+ - Z_{0+}| < R_+$ and $|Z_- - Z_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:
+**Theorem.** A power series is split complex differentiable on the region $|A_+ - A_{0+}| < R_+$ and $|A_- - A_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:
 
 $$
-\frac{d}{dZ} \sum_{n=0}^\infty c_n (Z - Z_0)^n = \sum_{n=1}^\infty n c_n (Z - Z_0)^{n-1}.
+\frac{d}{dA} \sum_{n=0}^\infty c_n (A - A_0)^n = \sum_{n=1}^\infty n c_n (A - A_0)^{n-1}.
 $$
 
 The differentiated series has the same radii of convergence.
 
 ### Taylor Series
 
-**Theorem (Taylor, split version).** If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(Z_0, r)$, and its components $f_+$ and $f_-$ are real-analytic on that disk, then $f$ has a power series expansion
+**Theorem (Taylor, split version).** If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(A_0, r)$, and its components $f_+$ and $f_-$ are real-analytic on that disk, then $f$ has a power series expansion
 
 $$
-f(Z) = \sum_{n=0}^\infty \frac{f^{(n)}(Z_0)}{n!} (Z - Z_0)^n
+f(A) = \sum_{n=0}^\infty \frac{f^{(n)}(A_0)}{n!} (A - A_0)^n
 $$
 
-valid for $\|Z - Z_0\|_E < r$.
+valid for $\|A - A_0\|_E < r$.
 
 **Proof.** In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.
 
@@ -381,15 +381,15 @@ valid for $\|Z - Z_0\|_E < r$.
 
 ### Classification
 
-Let $f$ be split complex differentiable on a punctured disk $0 < \|Z - Z_0\|_E < R$.
+Let $f$ be split complex differentiable on a punctured disk $0 < \|A - A_0\|_E < R$.
 
-**Removable singularity.** $Z_0$ is removable if $f$ extends to a split complex differentiable function on $\|Z - Z_0\|_E < R$.
+**Removable singularity.** $A_0$ is removable if $f$ extends to a split complex differentiable function on $\|A - A_0\|_E < R$.
 
-**Pole.** $Z_0$ is a pole if $f(Z) \to \infty$ in Euclidean modulus as $Z \to Z_0$.
+**Pole.** $A_0$ is a pole if $f(A) \to \infty$ in Euclidean modulus as $A \to A_0$.
 
-**Essential singularity.** $Z_0$ is an essential singularity if it is neither removable nor a pole.
+**Essential singularity.** $A_0$ is an essential singularity if it is neither removable nor a pole.
 
-**Caution.** The classification is empty under this hypothesis. The component $f_+$ is a function of $Z_+$ alone, and differentiating $f$ at a point with $Z_+ = Z_{0+}$ and $Z_- \neq Z_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Z_{0+}$, and dually for $f_-$. So $f$ extends to $Z_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.
+**Caution.** The classification is empty under this hypothesis. The component $f_+$ is a function of $A_+$ alone, and differentiating $f$ at a point with $A_+ = A_{0+}$ and $A_- \neq A_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $A_{0+}$, and dually for $f_-$. So $f$ extends to $A_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.
 
 ### Residues
 
@@ -405,7 +405,7 @@ The differences between split complex analysis and complex analysis are conseque
 |---|---|---|
 | Multiplication | $i^2 = -1$ | $j^2 = +1$ |
 | Zero divisors | none | $1 \pm j$ |
-| Cauchy–Riemann | $u_x = v_y$, $u_y = -v_x$ | $u_x = v_y$, $u_y = v_x$ |
+| Cauchy–Riemann | $u_a = v_{a'}$, $u_{a'} = -v_a$ | $u_a = v_{a'}$, $u_{a'} = v_a$ |
 | Harmonic equation | $\Delta u = 0$ | $\Box u = 0$ |
 | Cauchy integral | yes | no |
 | Residue theory | yes | no |
@@ -418,7 +418,7 @@ The complex case is rigid: differentiability is a strong condition, and it force
 
 ## Summary
 
-Split complex analysis is the study of differentiable functions of a split complex variable $Z = x + jy$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
+Split complex analysis is the study of differentiable functions of a split complex variable $A = a + ja'$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
 
 The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $\Pi_\pm = (1 \pm j)/2$, which satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$ and $\Pi_1\Pi_2 = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.
 
@@ -430,18 +430,18 @@ The article develops the subject in that basis: contour integrals along paths, p
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
-| $Z = x + jy$ | General split complex number |
-| $\bar{Z} = x - jy$ | Split complex conjugate |
-| $\|Z\|_E = \sqrt{x^2 + y^2}$ | Euclidean modulus |
-| $\rho = \sqrt{|x^2 - y^2|}$ | Split modulus |
-| $B(Z_0, r)$ | Open disk of radius $r$ |
-| $f'(Z)$ | Split complex derivative |
-| $\partial/\partial Z, \partial/\partial \bar{Z}$ | Split Wirtinger derivatives |
+| $A = a + ja'$ | General split complex number |
+| $\bar{A} = a - ja'$ | Split complex conjugate |
+| $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean modulus |
+| $\rho = \sqrt{|a^2 - a'^2|}$ | Split modulus |
+| $B(A_0, r)$ | Open disk of radius $r$ |
+| $f'(A)$ | Split complex derivative |
+| $\partial/\partial A, \partial/\partial \bar{A}$ | Split Wirtinger derivatives |
 | $\Pi_1 = (1 + j)/2$ | Positive idempotent |
 | $\Pi_2 = (1 - j)/2$ | Negative idempotent |
-| $Z = Z_+ \Pi_1 + Z_- \Pi_2$ | Idempotent decomposition |
-| $\int_\gamma f(Z) \, dZ$ | Contour integral |
-| $\Box = \partial_x^2 - \partial_y^2$ | d'Alembertian |
+| $A = A_+ \Pi_1 + A_- \Pi_2$ | Idempotent decomposition |
+| $\int_\gamma f(A) \, dA$ | Contour integral |
+| $\Box = \partial_a^2 - \partial_{a'}^2$ | d'Alembertian |
 
 ## Further Reading
 

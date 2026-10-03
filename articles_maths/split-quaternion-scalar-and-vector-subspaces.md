@@ -51,7 +51,7 @@ The centre is therefore a field, namely $\mathbb{R}$, and $S$ is the only commut
 
 ## Algebra and Module Structure
 
-**The scalar subspace.** $S$ is a subalgebra, isomorphic to $\mathbb{R}$ by $q_0 \mapsto q_0$, and its product is $q_0 \cdot q_0' = q_0 q_0'$. Because it is the centre, $S$ multiplies into every subspace without sign change: $q_0 \tilde q = xa$ for all $\tilde q$, and multiplication by a scalar is scalar extension.
+**The scalar subspace.** $S$ is a subalgebra, isomorphic to $\mathbb{R}$ by $q_0 \mapsto q_0$, and its product is $q_0 \cdot q_0' = q_0 q_0'$. Because it is the centre, $S$ multiplies into every subspace without sign change: $q_0 \tilde q = \tilde q q_0$ for all $\tilde q$, and multiplication by a scalar is scalar extension.
 
 **The vector subspace is not a subalgebra.** The square of a vector leaves $V$: $e_1^2 = -1$ and $e_2^2 = +1$ are scalars, and $e_3^2 = +1$. In general, for $\mathbf{u}, \mathbf{v} \in V$ the product splits as
 
@@ -61,7 +61,7 @@ $$
 
 with scalar part $-B(\mathbf{u},\mathbf{v})$ and the remainder $\tfrac{1}{2}[\mathbf{u},\mathbf{v}] \in V$; for instance $e_1 e_2 = e_3 \in V$ but $e_2 e_1 = -e_3$, while $e_1^2 = -1 \in S$. So $V$ is closed neither under the product nor under taking squares, and it is not a subalgebra of $\mathbb{H}_{\mathrm{s}}$.
 
-**The vector subspace is a Lie algebra.** The commutator $[\tilde q,y] = \tilde q y - y\tilde q$ removes the scalar part, because $\mathbf{u}\mathbf{v} + \mathbf{v}\mathbf{u} = -2B(\mathbf{u},\mathbf{v})\cdot1$ makes the scalar parts of $\tilde q y$ and $y\tilde q$ equal, both being $-B(\tilde q,y)$. Hence $V$ is closed under the bracket:
+**The vector subspace is a Lie algebra.** The commutator $[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$ removes the scalar part, because $\mathbf{u}\mathbf{v} + \mathbf{v}\mathbf{u} = -2B(\mathbf{u},\mathbf{v})\cdot1$ makes the scalar parts of $\tilde q \tilde p$ and $\tilde p\tilde q$ equal, both being $-B(\tilde q,\tilde p)$. Hence $V$ is closed under the bracket:
 
 $$
 [e_1, e_2] = 2e_3, \qquad [e_2, e_3] = -2e_1, \qquad [e_3, e_1] = 2e_2 .
@@ -125,9 +125,9 @@ $$
 [e_1, e_2] = 2e_3, \qquad [e_2, e_3] = -2e_1, \qquad [e_3, e_1] = 2e_2,
 $$
 
-so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $N$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_x$ is $N$-skew for every $x \in V$.
+so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $N$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_{\tilde q}$ is $N$-skew for every $\tilde q \in V$.
 
-**Proof.** The bracket relations follow from the products $e_1e_2 = e_3$, $e_2e_3 = -e_1$, $e_3e_1 = e_2$ together with $e_2e_1 = -e_3$, $e_3e_2 = e_1$, $e_1e_3 = -e_2$. The Jacobi identity is $[[x,y],z] + [[y,z],x] + [[z,x],y] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathrm{SL}_2(\mathbb{R})$. The invariance of $N$ is the identity $B([x,y],z) + B(y,[x,z]) = 0$, which follows from the associativity of the algebra and the multiplicativity $N(ab) = N(a)N(b)$ of the split-quaternion norm.
+**Proof.** The bracket relations follow from the products $e_1e_2 = e_3$, $e_2e_3 = -e_1$, $e_3e_1 = e_2$ together with $e_2e_1 = -e_3$, $e_3e_2 = e_1$, $e_1e_3 = -e_2$. The Jacobi identity is $[[\tilde q,\tilde p],\tilde r] + [[\tilde p,\tilde r],\tilde q] + [[\tilde r,\tilde q],\tilde p] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathrm{SL}_2(\mathbb{R})$. The invariance of $N$ is the identity $B([\tilde q,\tilde p],\tilde r) + B(\tilde p,[\tilde q,\tilde r]) = 0$, which follows from the associativity of the algebra and the multiplicativity $N(ab) = N(a)N(b)$ of the split-quaternion norm.
 
 ## The Involutions on Them
 
@@ -197,7 +197,7 @@ The split-quaternion norm restricts to $N(q_0) = q_0^2$ on $S$, positive definit
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
 | $N(\mathbf{u}) = q_1^2-q_2^2-q_3^2$ on $V$ | the Minkowski form of signature $(2,1)$ | this article |
 | $B(\mathbf{u},\mathbf{v})$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
-| $[\tilde q,y] = \tilde q y-y\tilde q$ | the commutator bracket | this article |
+| $[\tilde q,\tilde p] = \tilde q \tilde p-\tilde p\tilde q$ | the commutator bracket | this article |
 | $V \cong \mathrm{SL}_2(\mathbb{R})$ | the Lie algebra of traceless matrices | this article |
 | $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the split-complex subalgebras | *Split-Quaternion Algebra* |
 | timelike, lightlike, spacelike | the sign trichotomy on $V$ | this article |

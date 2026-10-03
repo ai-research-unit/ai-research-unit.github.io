@@ -11,54 +11,54 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 ### The Complex Exponential
 
-The **complex exponential** is defined for $z \in \mathbb{C}$ by
+The **complex exponential** is defined for $A \in \mathbb{C}$ by
 
 $$
-\exp(z) = \sum_{n=0}^\infty \frac{z^n}{n!}.
+\exp(A) = \sum_{n=0}^\infty \frac{A^n}{n!}.
 $$
 
-The series converges absolutely for every $z$. The function is entire, and it satisfies
+The series converges absolutely for every $A$. The function is entire, and it satisfies
 
 $$
-\exp(z + w) = \exp(z) \exp(w), \qquad \exp(0) = 1, \qquad \exp'(z) = \exp(z).
+\exp(A + B) = \exp(A) \exp(B), \qquad \exp(0) = 1, \qquad \exp'(A) = \exp(A).
 $$
 
-For $z = x + iy$ with $x, y \in \mathbb{R}$,
+For $A = a + i a'$ with $a, a' \in \mathbb{R}$,
 
 $$
-\exp(z) = e^x (\cos y + i \sin y).
+\exp(A) = e^a (\cos a' + i \sin a').
 $$
 
-This is **Euler's formula**, and it is the bridge between the exponential and the trigonometric functions. In particular, for $y = \theta$,
+This is **Euler's formula**, and it is the bridge between the exponential and the trigonometric functions. In particular, for $a' = \theta$,
 
 $$
 e^{i\theta} = \cos\theta + i \sin\theta.
 $$
 
-The exponential is $2\pi i$-periodic: $\exp(z + 2\pi i) = \exp(z)$.
+The exponential is $2\pi i$-periodic: $\exp(A + 2\pi i) = \exp(A)$.
 
 ### The Complex Logarithm
 
 The **complex logarithm** is the multivalued inverse of the exponential:
 
 $$
-\log z = \ln|z| + i \arg z, \qquad z \neq 0.
+\log A = \ln|A| + i \arg A, \qquad A \neq 0.
 $$
 
 The argument is defined modulo $2\pi$, so the logarithm is defined modulo $2\pi i$. The **principal branch** is
 
 $$
-\operatorname{Log} z = \ln|z| + i \operatorname{Arg} z, \qquad -\pi < \operatorname{Arg} z \leq \pi.
+\operatorname{Log} A = \ln|A| + i \operatorname{Arg} A, \qquad -\pi < \operatorname{Arg} A \leq \pi.
 $$
 
-It is holomorphic on $\mathbb{C} \setminus (-\infty, 0]$, with derivative $1/z$. The branch cut along the negative real axis is the price of single-valuedness.
+It is holomorphic on $\mathbb{C} \setminus (-\infty, 0]$, with derivative $1/A$. The branch cut along the negative real axis is the price of single-valuedness.
 
 ### Complex Powers
 
-For $a \in \mathbb{C}$ and $z \neq 0$,
+For $a \in \mathbb{C}$ and $A \neq 0$,
 
 $$
-z^a = \exp(a \log z).
+A^a = \exp(a \log A).
 $$
 
 This is multivalued in general. The principal branch is obtained by using the principal branch of the logarithm.
@@ -70,33 +70,33 @@ This is multivalued in general. The principal branch is obtained by using the pr
 The **complex sine** and **cosine** are defined by
 
 $$
-\sin z = \frac{e^{iz} - e^{-iz}}{2i}, \qquad \cos z = \frac{e^{iz} + e^{-iz}}{2}.
+\sin A = \frac{e^{iA} - e^{-iA}}{2i}, \qquad \cos A = \frac{e^{iA} + e^{-iA}}{2}.
 $$
 
 Both are entire. They satisfy
 
 $$
-\sin' z = \cos z, \qquad \cos' z = -\sin z,
+\sin' A = \cos A, \qquad \cos' A = -\sin A,
 $$
 
 $$
-\sin(z + w) = \sin z \cos w + \cos z \sin w,
+\sin(A + B) = \sin A \cos B + \cos A \sin B,
 $$
 
 $$
-\cos(z + w) = \cos z \cos w - \sin z \sin w,
+\cos(A + B) = \cos A \cos B - \sin A \sin B,
 $$
 
 $$
-\sin^2 z + \cos^2 z = 1.
+\sin^2 A + \cos^2 A = 1.
 $$
 
-They are $2\pi$-periodic, and their zeros are real: $\sin z = 0$ iff $z = n\pi$, $\cos z = 0$ iff $z = \pi/2 + n\pi$.
+They are $2\pi$-periodic, and their zeros are real: $\sin A = 0$ iff $A = n\pi$, $\cos A = 0$ iff $A = \pi/2 + n\pi$.
 
-**Unboundedness.** Unlike the real case, $\sin$ and $\cos$ are unbounded on $\mathbb{C}$. For $z = iy$ with $y \in \mathbb{R}$,
+**Unboundedness.** Unlike the real case, $\sin$ and $\cos$ are unbounded on $\mathbb{C}$. For $A = i a'$ with $a' \in \mathbb{R}$,
 
 $$
-\sin(iy) = i \sinh y, \qquad \cos(iy) = \cosh y.
+\sin(i a') = i \sinh a', \qquad \cos(i a') = \cosh a'.
 $$
 
 ### Hyperbolic Functions
@@ -104,37 +104,37 @@ $$
 The **complex hyperbolic sine** and **cosine** are defined by
 
 $$
-\sinh z = \frac{e^z - e^{-z}}{2}, \qquad \cosh z = \frac{e^z + e^{-z}}{2}.
+\sinh A = \frac{e^A - e^{-A}}{2}, \qquad \cosh A = \frac{e^A + e^{-A}}{2}.
 $$
 
 Both are entire, and they satisfy
 
 $$
-\sinh' z = \cosh z, \qquad \cosh' z = \sinh z,
+\sinh' A = \cosh A, \qquad \cosh' A = \sinh A,
 $$
 
 $$
-\cosh^2 z - \sinh^2 z = 1.
+\cosh^2 A - \sinh^2 A = 1.
 $$
 
 The relation between the trigonometric and hyperbolic functions is
 
 $$
-\sin(iz) = i \sinh z, \qquad \cos(iz) = \cosh z,
+\sin(iA) = i \sinh A, \qquad \cos(iA) = \cosh A,
 $$
 
 $$
-\sinh(iz) = i \sin z, \qquad \cosh(iz) = \cos z.
+\sinh(iA) = i \sin A, \qquad \cosh(iA) = \cos A.
 $$
 
 ### Other Trigonometric and Hyperbolic Functions
 
 $$
-\tan z = \frac{\sin z}{\cos z}, \qquad \cot z = \frac{\cos z}{\sin z},
+\tan A = \frac{\sin A}{\cos A}, \qquad \cot A = \frac{\cos A}{\sin A},
 $$
 
 $$
-\tanh z = \frac{\sinh z}{\cosh z}, \qquad \coth z = \frac{\cosh z}{\sinh z}.
+\tanh A = \frac{\sinh A}{\cosh A}, \qquad \coth A = \frac{\cosh A}{\sinh A}.
 $$
 
 These are meromorphic, with poles where the denominator vanishes.
@@ -144,13 +144,13 @@ These are meromorphic, with poles where the denominator vanishes.
 The **complex arcsine** is defined by
 
 $$
-\arcsin z = -i \log\left( iz + \sqrt{1 - z^2} \right),
+\arcsin A = -i \log\left( iA + \sqrt{1 - A^2} \right),
 $$
 
 where the square root and logarithm are multivalued. The **complex arctangent** is
 
 $$
-\arctan z = \frac{1}{2i} \log \frac{1 + iz}{1 - iz}.
+\arctan A = \frac{1}{2i} \log \frac{1 + iA}{1 - iA}.
 $$
 
 Both are multivalued, and both have branch cuts determined by the branch choices of the square root and logarithm.
@@ -159,23 +159,23 @@ Both are multivalued, and both have branch cuts determined by the branch choices
 
 ### Definition
 
-The **gamma function** is defined for $\operatorname{Re} z > 0$ by
+The **gamma function** is defined for $\operatorname{Re} A > 0$ by
 
 $$
-\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt.
+\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt.
 $$
 
-The integral converges absolutely for $\operatorname{Re} z > 0$ and defines a holomorphic function on that half-plane.
+The integral converges absolutely for $\operatorname{Re} A > 0$ and defines a holomorphic function on that half-plane.
 
 ### Analytic Continuation
 
 The functional equation
 
 $$
-\Gamma(z + 1) = z \Gamma(z)
+\Gamma(A + 1) = A \Gamma(A)
 $$
 
-extends $\Gamma$ meromorphically to all of $\mathbb{C}$, with simple poles at $z = 0, -1, -2, \dots$ and residues
+extends $\Gamma$ meromorphically to all of $\mathbb{C}$, with simple poles at $A = 0, -1, -2, \dots$ and residues
 
 $$
 \operatorname{Res}(\Gamma, -n) = \frac{(-1)^n}{n!}.
@@ -186,47 +186,47 @@ The extended function has no zeros. It satisfies $\Gamma(n + 1) = n!$ for non-ne
 ### The Weierstrass Product
 
 $$
-\frac{1}{\Gamma(z)} = z e^{\gamma z} \prod_{n=1}^\infty \left( 1 + \frac{z}{n} \right) e^{-z/n},
+\frac{1}{\Gamma(A)} = A e^{\gamma A} \prod_{n=1}^\infty \left( 1 + \frac{A}{n} \right) e^{-A/n},
 $$
 
-where $\gamma$ is the Euler–Mascheroni constant. This product converges uniformly on compact subsets of $\mathbb{C}$ and shows that $1/\Gamma$ is entire with zeros at $z = 0, -1, -2, \dots$.
+where $\gamma$ is the Euler–Mascheroni constant. This product converges uniformly on compact subsets of $\mathbb{C}$ and shows that $1/\Gamma$ is entire with zeros at $A = 0, -1, -2, \dots$.
 
 ### Reflection and Duplication
 
 $$
-\Gamma(z) \Gamma(1 - z) = \frac{\pi}{\sin(\pi z)},
+\Gamma(A) \Gamma(1 - A) = \frac{\pi}{\sin(\pi A)},
 $$
 
 $$
-\Gamma(z) \Gamma\left(z + \tfrac{1}{2}\right) = 2^{1-2z} \sqrt{\pi} \, \Gamma(2z).
+\Gamma(A) \Gamma\left(A + \tfrac{1}{2}\right) = 2^{1-2A} \sqrt{\pi} \, \Gamma(2A).
 $$
 
 The reflection formula shows that $\Gamma$ has no zeros, since $1/\Gamma$ is entire and the right side has no zeros.
 
 ### The Beta Function
 
-The **beta function** is defined for $\operatorname{Re} x > 0$, $\operatorname{Re} y > 0$ by
+The **beta function** is defined for $\operatorname{Re} a > 0$, $\operatorname{Re} b > 0$ by
 
 $$
-B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt.
+B(a, b) = \int_0^1 t^{a-1} (1 - t)^{b-1} \, dt.
 $$
 
 It satisfies
 
 $$
-B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
+B(a, b) = \frac{\Gamma(a) \Gamma(b)}{\Gamma(a + b)}.
 $$
 
 **Proof.** Substitute $t = u/(1+u)$ in the beta integral, then use the gamma integral representation for each factor.
 
-It is symmetric: $B(x, y) = B(y, x)$.
+It is symmetric: $B(a, b) = B(b, a)$.
 
 ### Stirling's Formula
 
-As $|z| \to \infty$ with $|\arg z| < \pi$,
+As $|A| \to \infty$ with $|\arg A| < \pi$,
 
 $$
-\Gamma(z) \sim \sqrt{2\pi} \, z^{z - 1/2} e^{-z}.
+\Gamma(A) \sim \sqrt{2\pi} \, A^{A - 1/2} e^{-A}.
 $$
 
 This is the asymptotic expansion of the gamma function, and it is the source of most estimates involving factorials and binomial coefficients.
@@ -288,27 +288,27 @@ The **Riemann hypothesis** states that all non-trivial zeros of $\zeta$ lie on t
 The **lower incomplete gamma function** is
 
 $$
-\gamma(s, z) = \int_0^z t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0.
+\gamma(s, A) = \int_0^A t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0.
 $$
 
 The **upper incomplete gamma function** is
 
 $$
-\Gamma(s, z) = \int_z^\infty t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0,
+\Gamma(s, A) = \int_A^\infty t^{s-1} e^{-t} \, dt, \qquad \operatorname{Re} s > 0,
 $$
 
-where the integral is along a ray from $z$ to infinity avoiding the negative real axis. They satisfy
+where the integral is along a ray from $A$ to infinity avoiding the negative real axis. They satisfy
 
 $$
-\gamma(s, z) + \Gamma(s, z) = \Gamma(s).
+\gamma(s, A) + \Gamma(s, A) = \Gamma(s).
 $$
 
-Both extend meromorphically in $s$ and are entire in $z$.
+Both extend meromorphically in $s$ and are entire in $A$.
 
 ### The Regularized Incomplete Gamma Functions
 
 $$
-P(s, z) = \frac{\gamma(s, z)}{\Gamma(s)}, \qquad Q(s, z) = \frac{\Gamma(s, z)}{\Gamma(s)}.
+P(s, A) = \frac{\gamma(s, A)}{\Gamma(s)}, \qquad Q(s, A) = \frac{\Gamma(s, A)}{\Gamma(s)}.
 $$
 
 These satisfy $P + Q = 1$.
@@ -316,13 +316,13 @@ These satisfy $P + Q = 1$.
 ### The Incomplete Beta Function
 
 $$
-B(z; a, b) = \int_0^z t^{a-1} (1 - t)^{b-1} \, dt, \qquad \operatorname{Re} a > 0, \; \operatorname{Re} b > 0,
+B(A; a, b) = \int_0^A t^{a-1} (1 - t)^{b-1} \, dt, \qquad \operatorname{Re} a > 0, \; \operatorname{Re} b > 0,
 $$
 
-where the integral is along a path from $0$ to $z$ avoiding the branch points $0$ and $1$. The **regularized incomplete beta function** is
+where the integral is along a path from $0$ to $A$ avoiding the branch points $0$ and $1$. The **regularized incomplete beta function** is
 
 $$
-I_z(a, b) = \frac{B(z; a, b)}{B(a, b)}.
+I_A(a, b) = \frac{B(A; a, b)}{B(a, b)}.
 $$
 
 It satisfies $I_0(a, b) = 0$ and $I_1(a, b) = 1$, and it extends meromorphically in $a$ and $b$.
@@ -334,29 +334,29 @@ It satisfies $I_0(a, b) = 0$ and $I_1(a, b) = 1$, and it extends meromorphically
 The **error function** is defined by
 
 $$
-\operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_0^z e^{-t^2} \, dt.
+\operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_0^A e^{-t^2} \, dt.
 $$
 
-The integral is along any path from $0$ to $z$. The integrand is entire, so $\operatorname{erf}$ is entire. It is odd, and it satisfies
+The integral is along any path from $0$ to $A$. The integrand is entire, so $\operatorname{erf}$ is entire. It is odd, and it satisfies
 
 $$
-\operatorname{erf}'(z) = \frac{2}{\sqrt{\pi}} e^{-z^2}.
+\operatorname{erf}'(A) = \frac{2}{\sqrt{\pi}} e^{-A^2}.
 $$
 
 ### The Complementary Error Function
 
 $$
-\operatorname{erfc}(z) = 1 - \operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_z^\infty e^{-t^2} \, dt.
+\operatorname{erfc}(A) = 1 - \operatorname{erf}(A) = \frac{2}{\sqrt{\pi}} \int_A^\infty e^{-t^2} \, dt.
 $$
 
-The integral is along a ray from $z$ to infinity avoiding the essential singularity at infinity.
+The integral is along a ray from $A$ to infinity avoiding the essential singularity at infinity.
 
 ### Asymptotics
 
-As $|z| \to \infty$ with $|\arg z| < 3\pi/4$,
+As $|A| \to \infty$ with $|\arg A| < 3\pi/4$,
 
 $$
-\operatorname{erfc}(z) \sim \frac{e^{-z^2}}{\sqrt{\pi} z}.
+\operatorname{erfc}(A) \sim \frac{e^{-A^2}}{\sqrt{\pi} A}.
 $$
 
 This asymptotic expansion is used in the theory of the heat equation and in probability.
@@ -365,88 +365,88 @@ This asymptotic expansion is used in the theory of the heat equation and in prob
 
 ### Legendre Polynomials
 
-The **Legendre polynomials** $P_n(z)$ are defined by the generating function
+The **Legendre polynomials** $P_n(A)$ are defined by the generating function
 
 $$
-\frac{1}{\sqrt{1 - 2zt + t^2}} = \sum_{n=0}^\infty P_n(z) t^n, \qquad |t| < 1,
+\frac{1}{\sqrt{1 - 2At + t^2}} = \sum_{n=0}^\infty P_n(A) t^n, \qquad |t| < 1,
 $$
 
 where the square root is the principal branch. They satisfy the recurrence
 
 $$
-(n+1) P_{n+1}(z) = (2n+1) z P_n(z) - n P_{n-1}(z),
+(n+1) P_{n+1}(A) = (2n+1) A P_n(A) - n P_{n-1}(A),
 $$
 
-with $P_0 = 1$ and $P_1 = z$. They satisfy Legendre's differential equation
+with $P_0 = 1$ and $P_1 = A$. They satisfy Legendre's differential equation
 
 $$
-(1 - z^2) y'' - 2z y' + n(n+1) y = 0.
+(1 - A^2) w'' - 2A w' + n(n+1) w = 0.
 $$
 
 They are orthogonal on $[-1, 1]$ with respect to the weight $1$:
 
 $$
-\int_{-1}^1 P_m(x) P_n(x) \, dx = \frac{2}{2n+1} \delta_{mn}.
+\int_{-1}^1 P_m(a) P_n(a) \, da = \frac{2}{2n+1} \delta_{mn}.
 $$
 
 ### Chebyshev Polynomials
 
-The **Chebyshev polynomials of the first kind** $T_n(z)$ are defined by
+The **Chebyshev polynomials of the first kind** $T_n(A)$ are defined by
 
 $$
-T_n(z) = \cos(n \arccos z),
+T_n(A) = \cos(n \arccos A),
 $$
 
 where the arccos is the principal branch. They satisfy the recurrence
 
 $$
-T_{n+1}(z) = 2z T_n(z) - T_{n-1}(z),
+T_{n+1}(A) = 2A T_n(A) - T_{n-1}(A),
 $$
 
-with $T_0 = 1$ and $T_1 = z$. They are orthogonal on $[-1, 1]$ with respect to the weight $(1 - x^2)^{-1/2}$:
+with $T_0 = 1$ and $T_1 = A$. They are orthogonal on $[-1, 1]$ with respect to the weight $(1 - a^2)^{-1/2}$:
 
 $$
-\int_{-1}^1 \frac{T_m(x) T_n(x)}{\sqrt{1 - x^2}} \, dx = \begin{cases} \pi & m = n = 0, \\ \pi/2 & m = n \geq 1, \\ 0 & m \neq n. \end{cases}
+\int_{-1}^1 \frac{T_m(a) T_n(a)}{\sqrt{1 - a^2}} \, da = \begin{cases} \pi & m = n = 0, \\ \pi/2 & m = n \geq 1, \\ 0 & m \neq n. \end{cases}
 $$
 
 ### Hermite Polynomials
 
-The **Hermite polynomials** $H_n(z)$ are defined by
+The **Hermite polynomials** $H_n(A)$ are defined by
 
 $$
-H_n(z) = (-1)^n e^{z^2} \frac{d^n}{dz^n} e^{-z^2}.
+H_n(A) = (-1)^n e^{A^2} \frac{d^n}{dA^n} e^{-A^2}.
 $$
 
 They satisfy the recurrence
 
 $$
-H_{n+1}(z) = 2z H_n(z) - 2n H_{n-1}(z),
+H_{n+1}(A) = 2A H_n(A) - 2n H_{n-1}(A),
 $$
 
-with $H_0 = 1$ and $H_1 = 2z$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-x^2}$:
+with $H_0 = 1$ and $H_1 = 2A$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-a^2}$:
 
 $$
-\int_{-\infty}^\infty H_m(x) H_n(x) e^{-x^2} \, dx = 2^n n! \sqrt{\pi} \, \delta_{mn}.
+\int_{-\infty}^\infty H_m(a) H_n(a) e^{-a^2} \, da = 2^n n! \sqrt{\pi} \, \delta_{mn}.
 $$
 
 ### Laguerre Polynomials
 
-The **Laguerre polynomials** $L_n(z)$ are defined by
+The **Laguerre polynomials** $L_n(A)$ are defined by
 
 $$
-L_n(z) = \frac{e^z}{n!} \frac{d^n}{dz^n} (z^n e^{-z}).
+L_n(A) = \frac{e^A}{n!} \frac{d^n}{dA^n} (A^n e^{-A}).
 $$
 
 They satisfy the recurrence
 
 $$
-(n+1) L_{n+1}(z) = (2n+1-z) L_n(z) - n L_{n-1}(z),
+(n+1) L_{n+1}(A) = (2n+1-A) L_n(A) - n L_{n-1}(A),
 $$
 
-with $L_0 = 1$ and $L_1 = 1 - z$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-x}$:
+with $L_0 = 1$ and $L_1 = 1 - A$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-a}$:
 
 $$
-\int_0^\infty L_m(x) L_n(x) e^{-x} \, dx = \delta_{mn}.
+\int_0^\infty L_m(a) L_n(a) e^{-a} \, da = \delta_{mn}.
 $$
 
 ## The Bessel Functions
@@ -456,35 +456,35 @@ $$
 The **Bessel function of the first kind** of order $\nu$ is
 
 $$
-J_\nu(z) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu}.
+J_\nu(A) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{A}{2} \right)^{2n + \nu}.
 $$
 
-The series converges absolutely for all $z$, so $z^{-\nu} J_\nu(z)$ is entire. It satisfies Bessel's differential equation
+The series converges absolutely for all $A$, so $A^{-\nu} J_\nu(A)$ is entire. It satisfies Bessel's differential equation
 
 $$
-z^2 y'' + z y' + (z^2 - \nu^2) y = 0.
+A^2 w'' + A w' + (A^2 - \nu^2) w = 0.
 $$
 
 ### The Bessel Function of the Second Kind
 
 $$
-Y_\nu(z) = \frac{J_\nu(z) \cos(\nu \pi) - J_{-\nu}(z)}{\sin(\nu \pi)}, \qquad \nu \notin \mathbb{Z},
+Y_\nu(A) = \frac{J_\nu(A) \cos(\nu \pi) - J_{-\nu}(A)}{\sin(\nu \pi)}, \qquad \nu \notin \mathbb{Z},
 $$
 
-with the limit taken for integer $\nu$. It is the second linearly independent solution of Bessel's equation. It has a branch point at $z = 0$.
+with the limit taken for integer $\nu$. It is the second linearly independent solution of Bessel's equation. It has a branch point at $A = 0$.
 
 ### Modified Bessel Functions
 
 The **modified Bessel function of the first kind** is
 
 $$
-I_\nu(z) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{z}{2} \right)^{2n + \nu}.
+I_\nu(A) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{A}{2} \right)^{2n + \nu}.
 $$
 
 It satisfies
 
 $$
-z^2 y'' + z y' - (z^2 + \nu^2) y = 0.
+A^2 w'' + A w' - (A^2 + \nu^2) w = 0.
 $$
 
 ### Integral Representations
@@ -492,31 +492,31 @@ $$
 For $\operatorname{Re} \nu > -1/2$,
 
 $$
-J_\nu(z) = \frac{1}{\sqrt{\pi} \, \Gamma(\nu + 1/2)} \left( \frac{z}{2} \right)^\nu \int_{-1}^1 (1 - t^2)^{\nu - 1/2} e^{izt} \, dt.
+J_\nu(A) = \frac{1}{\sqrt{\pi} \, \Gamma(\nu + 1/2)} \left( \frac{A}{2} \right)^\nu \int_{-1}^1 (1 - t^2)^{\nu - 1/2} e^{iAt} \, dt.
 $$
 
 This representation is the source of most asymptotic estimates.
 
 ### Asymptotics
 
-As $|z| \to \infty$ with $|\arg z| < \pi$,
+As $|A| \to \infty$ with $|\arg A| < \pi$,
 
 $$
-J_\nu(z) \sim \sqrt{\frac{2}{\pi z}} \cos\left(z - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
+J_\nu(A) \sim \sqrt{\frac{2}{\pi A}} \cos\left(A - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
 $$
 
 $$
-I_\nu(z) \sim \frac{e^z}{\sqrt{2 \pi z}}, \qquad |\arg z| < \frac{\pi}{2}.
+I_\nu(A) \sim \frac{e^A}{\sqrt{2 \pi A}}, \qquad |\arg A| < \frac{\pi}{2}.
 $$
 
 ## The Airy Functions
 
 ### Definition
 
-The **Airy function** $\operatorname{Ai}(z)$ is defined by the contour integral
+The **Airy function** $\operatorname{Ai}(A)$ is defined by the contour integral
 
 $$
-\operatorname{Ai}(z) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - zt\right) dt,
+\operatorname{Ai}(A) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - At\right) dt,
 $$
 
 where $C$ is a contour in the complex plane that starts at infinity along the ray $\arg t = -\pi/3$ and ends at infinity along the ray $\arg t = \pi/3$. The integral converges because of the cubic term.
@@ -524,23 +524,23 @@ where $C$ is a contour in the complex plane that starts at infinity along the ra
 It satisfies Airy's differential equation
 
 $$
-y'' - z y = 0.
+w'' - A w = 0.
 $$
 
-The second solution $\operatorname{Bi}(z)$ is defined by a similar contour integral with a different contour.
+The second solution $\operatorname{Bi}(A)$ is defined by a similar contour integral with a different contour.
 
 ### Asymptotics
 
-As $|z| \to \infty$ with $|\arg z| < \pi$,
+As $|A| \to \infty$ with $|\arg A| < \pi$,
 
 $$
-\operatorname{Ai}(z) \sim \frac{1}{2 \sqrt{\pi} z^{1/4}} e^{-2 z^{3/2}/3}.
+\operatorname{Ai}(A) \sim \frac{1}{2 \sqrt{\pi} A^{1/4}} e^{-2 A^{3/2}/3}.
 $$
 
-As $|z| \to \infty$ with $|\arg(-z)| < 2\pi/3$,
+As $|A| \to \infty$ with $|\arg(-A)| < 2\pi/3$,
 
 $$
-\operatorname{Ai}(z) \sim \frac{1}{\sqrt{\pi} (-z)^{1/4}} \sin\left(\frac{2 (-z)^{3/2}}{3} + \frac{\pi}{4}\right).
+\operatorname{Ai}(A) \sim \frac{1}{\sqrt{\pi} (-A)^{1/4}} \sin\left(\frac{2 (-A)^{3/2}}{3} + \frac{\pi}{4}\right).
 $$
 
 The Airy functions are the simplest example of functions with a Stokes phenomenon: the asymptotic expansion changes form across certain rays in the complex plane.
@@ -549,18 +549,18 @@ The Airy functions are the simplest example of functions with a Stokes phenomeno
 
 ### Definition
 
-The **Gauss hypergeometric function** is defined for $|z| < 1$ by
+The **Gauss hypergeometric function** is defined for $|A| < 1$ by
 
 $$
-{}_2F_1(a, b; c; z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{z^n}{n!},
+{}_2F_1(a, b; c; A) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{A^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $|z| < 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol. The series converges for $|A| < 1$ and extends analytically to $\mathbb{C} \setminus [1, \infty)$.
 
 It satisfies the hypergeometric differential equation
 
 $$
-z(1 - z) y'' + [c - (a + b + 1) z] y' - ab y = 0.
+A(1 - A) w'' + [c - (a + b + 1) A] w' - ab w = 0.
 $$
 
 ### Integral Representation
@@ -568,29 +568,29 @@ $$
 For $\operatorname{Re} c > \operatorname{Re} b > 0$,
 
 $$
-{}_2F_1(a, b; c; z) = \frac{\Gamma(c)}{\Gamma(b) \Gamma(c - b)} \int_0^1 t^{b-1} (1 - t)^{c-b-1} (1 - zt)^{-a} \, dt.
+{}_2F_1(a, b; c; A) = \frac{\Gamma(c)}{\Gamma(b) \Gamma(c - b)} \int_0^1 t^{b-1} (1 - t)^{c-b-1} (1 - At)^{-a} \, dt.
 $$
 
-The integral is along a path from $0$ to $1$ avoiding the branch point at $t = 1/z$.
+The integral is along a path from $0$ to $1$ avoiding the branch point at $t = 1/A$.
 
 ### Special Cases
 
 $$
-{}_2F_1(1, 1; 2; z) = -\frac{\log(1 - z)}{z},
+{}_2F_1(1, 1; 2; A) = -\frac{\log(1 - A)}{A},
 $$
 
 $$
-{}_2F_1(a, b; b; z) = (1 - z)^{-a},
+{}_2F_1(a, b; b; A) = (1 - A)^{-a},
 $$
 
 $$
-{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; z^2\right) = \frac{\arcsin z}{z}.
+{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; A^2\right) = \frac{\arcsin A}{A}.
 $$
 
 ### The Generalized Hypergeometric Function
 
 $$
-{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; z) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{z^n}{n!}.
+{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; A) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{A^n}{n!}.
 $$
 
 Most named special functions are special cases of ${}_pF_q$.
@@ -625,16 +625,16 @@ $$
 
 ### Elliptic Functions
 
-The **Weierstrass elliptic function** $\wp(z)$ is defined by
+The **Weierstrass elliptic function** $\wp(A)$ is defined by
 
 $$
-\wp(z) = \frac{1}{z^2} + \sum_{(m, n) \neq (0, 0)} \left( \frac{1}{(z - m\omega_1 - n\omega_2)^2} - \frac{1}{(m\omega_1 + n\omega_2)^2} \right),
+\wp(A) = \frac{1}{A^2} + \sum_{(m, n) \neq (0, 0)} \left( \frac{1}{(A - m\omega_1 - n\omega_2)^2} - \frac{1}{(m\omega_1 + n\omega_2)^2} \right),
 $$
 
 where $\omega_1, \omega_2$ are the periods. It is meromorphic and doubly periodic, and it satisfies the differential equation
 
 $$
-\wp'(z)^2 = 4 \wp(z)^3 - g_2 \wp(z) - g_3.
+\wp'(A)^2 = 4 \wp(A)^3 - g_2 \wp(A) - g_3.
 $$
 
 Elliptic functions are the inverse functions of elliptic integrals, and they are the natural setting for the theory of doubly periodic meromorphic functions.
@@ -646,55 +646,56 @@ Elliptic functions are the inverse functions of elliptic integrals, and they are
 The **Lambert W function** is the multivalued inverse of
 
 $$
-f(w) = w e^w.
+f(B) = B e^B.
 $$
 
-That is, $W(z)$ is any solution of
+That is, $W(A)$ is any solution of
 
 $$
-W(z) e^{W(z)} = z.
+W(A) e^{W(A)} = A.
 $$
 
-The function has infinitely many branches $W_k(z)$ for $k \in \mathbb{Z}$, with branch points at $z = 0$ and $z = -1/e$.
+The function has infinitely many branches $W_k(A)$ for $k \in \mathbb{Z}$, with branch points at $A = 0$ and $A = -1/e$.
 
 ### Derivative
 
 $$
-W'(z) = \frac{W(z)}{z(1 + W(z))}, \qquad z \neq 0, \; z \neq -1/e.
+W'(A) = \frac{W(A)}{A(1 + W(A))}, \qquad A \neq 0, \; A \neq -1/e.
 $$
 
 ### Applications
 
-The Lambert W function solves equations of the form $a e^z + b z + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $x^x = a$, where $x = e^{W(\ln a)}$.
+The Lambert W function solves equations of the form $a e^A + b A + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the inversion of the iterated exponential $c^c = a$, where $c = e^{W(\ln a)}$.
 
 ## Summary
 
 The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse and is the first function of the article whose domain is more than the plane.
 
-Integral representations supply the next family: the gamma function as $\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}\,dt$ for $\operatorname{Re} z > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.
+Integral representations supply the next family: the gamma function as $\Gamma(A) = \int_0^\infty t^{A-1}e^{-t}\,dt$ for $\operatorname{Re} A > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.
 
-The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;z)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $w \mapsto we^w$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.
+The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;A)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $B \mapsto Be^B$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $e^z, \log z$ | Complex exponential, logarithm |
-| $\sin z, \cos z, \tan z$ | Complex trigonometric functions |
-| $\sinh z, \cosh z, \tanh z$ | Complex hyperbolic functions |
-| $\Gamma(z)$ | Gamma function |
-| $B(x, y)$ | Beta function |
+| $A = a + i a'$ | Complex variable |
+| $e^A, \log A$ | Complex exponential, logarithm |
+| $\sin A, \cos A, \tan A$ | Complex trigonometric functions |
+| $\sinh A, \cosh A, \tanh A$ | Complex hyperbolic functions |
+| $\Gamma(A)$ | Gamma function |
+| $B(a, b)$ | Beta function |
 | $\zeta(s)$ | Riemann zeta function |
-| $\gamma(s, z), \Gamma(s, z)$ | Incomplete gamma functions |
-| $B(z; a, b), I_z(a, b)$ | Incomplete beta functions |
-| $\operatorname{erf}(z), \operatorname{erfc}(z)$ | Error function, complementary error function |
+| $\gamma(s, A), \Gamma(s, A)$ | Incomplete gamma functions |
+| $B(A; a, b), I_A(a, b)$ | Incomplete beta functions |
+| $\operatorname{erf}(A), \operatorname{erfc}(A)$ | Error function, complementary error function |
 | $P_n, T_n, H_n, L_n$ | Legendre, Chebyshev, Hermite, Laguerre polynomials |
 | $J_\nu, Y_\nu, I_\nu$ | Bessel functions |
 | $\operatorname{Ai}, \operatorname{Bi}$ | Airy functions |
 | ${}_pF_q$ | Generalized hypergeometric function |
 | $K(k), E(k)$ | Complete elliptic integrals |
-| $\wp(z)$ | Weierstrass elliptic function |
-| $W_k(z)$ | Lambert W function, branch $k$ |
+| $\wp(A)$ | Weierstrass elliptic function |
+| $W_k(A)$ | Lambert W function, branch $k$ |
 
 ## Further Reading
 

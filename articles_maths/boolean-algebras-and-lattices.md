@@ -7,7 +7,7 @@ This is the first article of the Boolean system in Part V, and it occupies the *
 
 The boundary against the general theory is deliberate. Lattices, distributivity, modularity, Galois connections and the fixed-point theorems belong to *Order Theory and Lattices* and are used here, not re-derived. The topological slot of the Boolean system is a separate article,which supplies the Stone space, the compactness and the total disconnectedness; nothing topological is developed below. Because the Boolean system is finite in a strong sense — every finitely generated Boolean algebra is finite, and the two-element algebra generates the whole variety — the system supports an algebra and no analysis, and the closing section records why.
 
-Throughout, a lattice is written $(L, \wedge, \vee)$ with meet $\wedge$ and join $\vee$, and its order is $\leq$. The two-element algebra is $\mathbf{2} = \{0,1\}$ with $0 < 1$, and the power set of a set $X$ is $\mathcal{P}(X)$. The complement of an element $a$ of a Boolean algebra is written $\neg a$. The elementary connectives and the satisfaction relation are those of *Logic and Proof*, and the natural numbers that index the generators are those of *The Natural Numbers*, written in parallel in this Part.
+Throughout, a lattice is written $(L, \wedge, \vee)$ with meet $\wedge$ and join $\vee$, and its order is $\leq$. The two-element algebra is $\mathbf{2} = \{0,1\}$ with $0 < 1$, and the power set of a set $X$ is $\mathcal{P}(X)$. The complement of an element $\alpha$ of a Boolean algebra is written $\neg\alpha$. The elementary connectives and the satisfaction relation are those of *Logic and Proof*, and the natural numbers that index the generators are those of *The Natural Numbers*, written in parallel in this Part.
 
 ## Lattices and Their Operations
 
@@ -69,51 +69,51 @@ The theorem is the reason the Boolean system is so rigid: a Boolean algebra is a
 
 ### Definition and the Complement
 
-**Definition.** A **Boolean algebra** is a bounded distributive lattice $(B, \wedge, \vee, 0, 1)$ in which every element $a$ has a **complement**, an element $\neg a$ with
+**Definition.** A **Boolean algebra** is a bounded distributive lattice $(B, \wedge, \vee, 0, 1)$ in which every element $\alpha$ has a **complement**, an element $\neg\alpha$ with
 
 $$
-a \wedge \neg a = 0, \qquad a \vee \neg a = 1 .
+\alpha \wedge \neg\alpha = 0, \qquad \alpha \vee \neg\alpha = 1 .
 $$
 
-A **homomorphism** of Boolean algebras is a map $\varphi : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A **subalgebra** is a subset closed under the three operations; an **ideal** is a nonempty subset $I$ closed under finite joins and downward closed, $a \in I$ and $b \leq a$ implying $b \in I$; a **filter** is the order-dual notion. The algebra $B$ is **trivial** if $0 = 1$.
+A **homomorphism** of Boolean algebras is a map $\varphi : B \to B'$ preserving $\wedge$, $\vee$, $\neg$, $0$ and $1$. A **subalgebra** is a subset closed under the three operations; an **ideal** is a nonempty subset $I$ closed under finite joins and downward closed, $\alpha \in I$ and $\beta \leq \alpha$ implying $\beta \in I$; a **filter** is the order-dual notion. The algebra $B$ is **trivial** if $0 = 1$.
 
 **Theorem.** In a bounded distributive lattice, a complement, when it exists, is unique.
 
-**Proof.** Let $c$ and $d$ both complement $a$. Then
+**Proof.** Let $\beta$ and $\gamma$ both complement $\alpha$. Then
 
 $$
-c = c \wedge 1 = c \wedge (a \vee d) = (c \wedge a) \vee (c \wedge d) = 0 \vee (c \wedge d) = c \wedge d,
+\beta = \beta \wedge 1 = \beta \wedge (\alpha \vee \gamma) = (\beta \wedge \alpha) \vee (\beta \wedge \gamma) = 0 \vee (\beta \wedge \gamma) = \beta \wedge \gamma,
 $$
 
-so $c \leq d$; the same computation with $c$ and $d$ interchanged gives $d \leq c$, whence $c = d$ by antisymmetry.
+so $\beta \leq \gamma$; the same computation with $\beta$ and $\gamma$ interchanged gives $\gamma \leq \beta$, whence $\beta = \gamma$ by antisymmetry.
 
 Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.
 
-**Theorem.** Let $B$ be a Boolean algebra and $a, b \in B$. Then
+**Theorem.** Let $B$ be a Boolean algebra and $\alpha, \beta \in B$. Then
 
 $$
-\neg \neg a = a, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(a \wedge b) = \neg a \vee \neg b, \qquad \neg(a \vee b) = \neg a \wedge \neg b,
-$$
-
-and
-
-$$
-a \leq b \iff a \wedge \neg b = 0 \iff \neg a \vee b = 1 .
-$$
-
-**Proof.** That $a$ is a complement of $\neg a$ follows from the symmetry of the two defining equations, so $\neg\neg a = a$ by uniqueness. The identities $\neg 0 = 1$ and $\neg 1 = 0$ are the defining equations at $a = 0$ and $a = 1$. For De Morgan, put $d = \neg a \vee \neg b$; then
-
-$$
-(a \wedge b) \wedge d = (a \wedge b \wedge \neg a) \vee (a \wedge b \wedge \neg b) = 0 \vee 0 = 0
+\neg \neg \alpha = \alpha, \qquad \neg 0 = 1, \qquad \neg 1 = 0, \qquad \neg(\alpha \wedge \beta) = \neg \alpha \vee \neg \beta, \qquad \neg(\alpha \vee \beta) = \neg \alpha \wedge \neg \beta,
 $$
 
 and
 
 $$
-(a \wedge b) \vee d = (a \vee \neg a \vee \neg b) \wedge (b \vee \neg a \vee \neg b) = 1 \wedge 1 = 1,
+\alpha \leq \beta \iff \alpha \wedge \neg \beta = 0 \iff \neg \alpha \vee \beta = 1 .
 $$
 
-so $d$ complements $a \wedge b$ and equals $\neg(a \wedge b)$ by uniqueness; the other De Morgan law is dual. For the last display, if $a \leq b$ then $a \wedge \neg b \leq b \wedge \neg b = 0$; conversely $a \wedge \neg b = 0$ gives $a = a \wedge 1 = a \wedge (b \vee \neg b) = (a \wedge b) \vee (a \wedge \neg b) = a \wedge b \leq b$, and the equivalence with $\neg a \vee b = 1$ is the De Morgan law applied to $a \wedge \neg b = 0$.
+**Proof.** That $\alpha$ is a complement of $\neg \alpha$ follows from the symmetry of the two defining equations, so $\neg\neg \alpha = \alpha$ by uniqueness. The identities $\neg 0 = 1$ and $\neg 1 = 0$ are the defining equations at $\alpha = 0$ and $\alpha = 1$. For De Morgan, put $\gamma = \neg \alpha \vee \neg \beta$; then
+
+$$
+(\alpha \wedge \beta) \wedge \gamma = (\alpha \wedge \beta \wedge \neg \alpha) \vee (\alpha \wedge \beta \wedge \neg \beta) = 0 \vee 0 = 0
+$$
+
+and
+
+$$
+(\alpha \wedge \beta) \vee \gamma = (\alpha \vee \neg \alpha \vee \neg \beta) \wedge (\beta \vee \neg \alpha \vee \neg \beta) = 1 \wedge 1 = 1,
+$$
+
+so $\gamma$ complements $\alpha \wedge \beta$ and equals $\neg(\alpha \wedge \beta)$ by uniqueness; the other De Morgan law is dual. For the last display, if $\alpha \leq \beta$ then $\alpha \wedge \neg \beta \leq \beta \wedge \neg \beta = 0$; conversely $\alpha \wedge \neg \beta = 0$ gives $\alpha = \alpha \wedge 1 = \alpha \wedge (\beta \vee \neg \beta) = (\alpha \wedge \beta) \vee (\alpha \wedge \neg \beta) = \alpha \wedge \beta \leq \beta$, and the equivalence with $\neg \alpha \vee \beta = 1$ is the De Morgan law applied to $\alpha \wedge \neg \beta = 0$.
 
 ### The Duality Principle
 
@@ -123,9 +123,9 @@ $$
 \wedge \longleftrightarrow \vee, \qquad 0 \longleftrightarrow 1,
 $$
 
-the complement being unchanged. Consequently every theorem of Boolean algebra has a **dual**, obtained by this interchange, and the dual is a theorem; the order is reversed by the passage to the dual, since $a \leq b$ is $a \wedge b = a$ in one reading and $a \vee b = b$ in the other.
+the complement being unchanged. Consequently every theorem of Boolean algebra has a **dual**, obtained by this interchange, and the dual is a theorem; the order is reversed by the passage to the dual, since $\alpha \leq \beta$ is $\alpha \wedge \beta = \alpha$ in one reading and $\alpha \vee \beta = \beta$ in the other.
 
-**Example.** The statement that the join of two elements is their least upper bound dualises to the statement that the meet is their greatest lower bound; the identity $a \vee (b \wedge c) = (a \vee b) \wedge (a \vee c)$ dualises to $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$. The duality is a symmetry of the equational theory rather than a map of an individual algebra into itself; it corresponds to the order-reversing bijection $a \mapsto \neg a$ of the algebra onto its opposite.
+**Example.** The statement that the join of two elements is their least upper bound dualises to the statement that the meet is their greatest lower bound; the identity $\alpha \vee (\beta \wedge \gamma) = (\alpha \vee \beta) \wedge (\alpha \vee \gamma)$ dualises to $\alpha \wedge (\beta \vee \gamma) = (\alpha \wedge \beta) \vee (\alpha \wedge \gamma)$. The duality is a symmetry of the equational theory rather than a map of an individual algebra into itself; it corresponds to the order-reversing bijection $\alpha \mapsto \neg \alpha$ of the algebra onto its opposite.
 
 ### The Two-Element Algebra and the Algebra of Subsets
 
@@ -149,10 +149,10 @@ The power-set example is the source of the intuition, and the representation the
 
 Let $n \geq 0$. A **Boolean function** of $n$ variables is a map $f : \mathbf{2}^n \to \mathbf{2}$. The set of all such maps carries the Boolean operations **pointwise**: $(f \wedge g)(x) = f(x) \wedge g(x)$, and similarly for $\vee$ and $\neg$. With the constant functions $0$ and $1$ this is a Boolean algebra.
 
-Over the field $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, a polynomial is an element of $\mathbb{F}_2[x_1,\dots,x_n]$. Because every element of $\mathbb{F}_2$ satisfies $u^2 = u$, the polynomial $x_i^2 - x_i$ vanishes on all of $\mathbf{2}^n$, and every Boolean function is represented by the **reduced polynomial** obtained by imposing $x_i^2 = x_i$. The reduced monomials are
+Over the field $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, a polynomial is an element of $\mathbb{F}_2[\alpha_1,\dots,\alpha_n]$. Because every element of $\mathbb{F}_2$ satisfies $u^2 = u$, the polynomial $\alpha_i^2 - \alpha_i$ vanishes on all of $\mathbf{2}^n$, and every Boolean function is represented by the **reduced polynomial** obtained by imposing $\alpha_i^2 = \alpha_i$. The reduced monomials are
 
 $$
-x^{e} = x_1^{e_1} x_2^{e_2} \cdots x_n^{e_n}, \qquad e = (e_1, \dots, e_n) \in \mathbf{2}^n,
+\alpha^{e} = \alpha_1^{e_1} \alpha_2^{e_2} \cdots \alpha_n^{e_n}, \qquad e = (e_1, \dots, e_n) \in \mathbf{2}^n,
 $$
 
 there being one for each exponent vector $e$, hence exactly $2^n$ of them.
@@ -160,20 +160,20 @@ there being one for each exponent vector $e$, hence exactly $2^n$ of them.
 **Theorem (algebraic normal form).** Every Boolean function $f$ of $n$ variables has a unique expression
 
 $$
-f(x) = \bigoplus_{e \in \mathbf{2}^n} c_e \, x^{e}, \qquad c_e \in \mathbb{F}_2,
+f(\alpha) = \bigoplus_{e \in \mathbf{2}^n} c_e \, \alpha^{e}, \qquad c_e \in \mathbb{F}_2,
 $$
 
 where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathbb{F}_2$.
 
-**Proof.** The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $x^{e'}$ with $e'$ not above $e$, while $x^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique.
+**Proof.** The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $\alpha^{e'}$ with $e'$ not above $e$, while $\alpha^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique.
 
 The expansion is the **Reed–Muller** expansion. It says that the Boolean functions on $n$ variables form the free $\mathbb{F}_2$-vector space on the $2^n$ reduced monomials, equivalently the free Boolean ring on $n$ generators, discussed.
 
 **Corollary.** There are exactly $2^{2^n}$ Boolean functions of $n$ variables. For $n = 0$ there are two, the two constants $0$ and $1$; for $n = 1$ there are four; for $n = 2$ there are sixteen; for $n = 3$ there are two hundred and fifty-six.
 
-**Example.** For $n = 2$ the reduced monomials are $1, x, y, xy$, and the $16$ functions are the $\mathbb{F}_2$-combinations of them. The **conjunction** is $x \wedge y = xy$, the **disjunction** is $x \vee y = x \oplus y \oplus xy$, and the **NAND** is $x \uparrow y = 1 \oplus xy$. The expansion of the disjunction is verified from the table
+**Example.** For $n = 2$ the reduced monomials are $1, \alpha, \beta, \alpha\beta$, and the $16$ functions are the $\mathbb{F}_2$-combinations of them. The **conjunction** is $\alpha \wedge \beta = \alpha\beta$, the **disjunction** is $\alpha \vee \beta = \alpha \oplus \beta \oplus \alpha\beta$, and the **NAND** is $\alpha \uparrow \beta = 1 \oplus \alpha\beta$. The expansion of the disjunction is verified from the table
 
-| $x$ | $y$ | $xy$ | $x \oplus y$ | $x \oplus y \oplus xy$ |
+| $\alpha$ | $\beta$ | $\alpha\beta$ | $\alpha \oplus \beta$ | $\alpha \oplus \beta \oplus \alpha\beta$ |
 |---|---|---|---|---|
 | $0$ | $0$ | $0$ | $0$ | $0$ |
 | $0$ | $1$ | $0$ | $1$ | $1$ |
@@ -187,16 +187,16 @@ so the expression is correct at all four inputs.
 The **disjunctive normal form** of $f$ is the join of the **minterms** on which $f$ takes the value $1$:
 
 $$
-f = \bigvee_{x \in \mathbf{2}^n,\ f(x)=1} m_x, \qquad m_x = \bigwedge_{i=1}^{n} \begin{cases} y_i & x_i = 1 \\ \neg y_i & x_i = 0,\end{cases}
+f = \bigvee_{x \in \mathbf{2}^n,\ f(x)=1} m_x, \qquad m_x = \bigwedge_{i=1}^{n} \begin{cases} \alpha_i & x_i = 1 \\ \neg \alpha_i & x_i = 0,\end{cases}
 $$
 
-where the algebra variables are written $y_1,\dots,y_n$ to distinguish them from the points $x$. Dually, the **conjunctive normal form** is the meet of the **maxterms** on which $f$ vanishes. Every minterm is an atom of the free algebra, the $2^n$ minterms are pairwise disjoint and their join is $1$, and the disjunctive normal form is the expansion of $f$ in the basis of atoms. The algebraic normal form is the corresponding expansion in the basis of reduced monomials; the two bases are related by the identity $x \vee y = x \oplus y \oplus xy$, which converts one normal form into the other.
+where the algebra variables are written $\alpha_1,\dots,\alpha_n$ to distinguish them from the points $x$. Dually, the **conjunctive normal form** is the meet of the **maxterms** on which $f$ vanishes. Every minterm is an atom of the free algebra, the $2^n$ minterms are pairwise disjoint and their join is $1$, and the disjunctive normal form is the expansion of $f$ in the basis of atoms. The algebraic normal form is the corresponding expansion in the basis of reduced monomials; the two bases are related by the identity $\alpha \vee \beta = \alpha \oplus \beta \oplus \alpha\beta$, which converts one normal form into the other.
 
 ### The Free Boolean Algebra
 
 **Theorem (free Boolean algebra).** The free Boolean algebra on $n$ generators is isomorphic to the algebra of Boolean functions on $n$ variables and to the power set $\mathcal{P}(\mathbf{2}^n)$. It has $2^{2^n}$ elements, and its atoms are the minterms.
 
-**Proof.** A homomorphism from the free algebra on $y_1,\dots,y_n$ to $\mathbf{2}$ is determined by the images of the generators, an arbitrary point of $\mathbf{2}^n$; hence the homomorphisms biject with $\mathbf{2}^n$. The map that sends a function $f$ to the set of points where it is $1$ is a bijection with $\mathcal{P}(\mathbf{2}^n)$, and the pointwise operations correspond to the set operations, so it is an isomorphism onto the power set; its cardinality is $2^{2^n}$. The atoms of a power set are the singletons, corresponding to the functions that vanish except at one point, which are exactly the minterms.
+**Proof.** A homomorphism from the free algebra on $\alpha_1,\dots,\alpha_n$ to $\mathbf{2}$ is determined by the images of the generators, an arbitrary point of $\mathbf{2}^n$; hence the homomorphisms biject with $\mathbf{2}^n$. The map that sends a function $f$ to the set of points where it is $1$ is a bijection with $\mathcal{P}(\mathbf{2}^n)$, and the pointwise operations correspond to the set operations, so it is an isomorphism onto the power set; its cardinality is $2^{2^n}$. The atoms of a power set are the singletons, corresponding to the functions that vanish except at one point, which are exactly the minterms.
 
 ## Boolean Algebras as the Algebra of Propositional Logic
 
@@ -235,24 +235,24 @@ $$
 **Definition.** The **product** of Boolean algebras $B_1, B_2$ is the Cartesian product $B_1 \times B_2$ with the operations defined componentwise. The **quotient** of $B$ by a filter $F$ is $B/\sim_F$, where
 
 $$
-a \sim_F b \iff \text{there is } c \in F \text{ with } a \wedge c = b \wedge c,
+\alpha \sim_F \beta \iff \text{there is } \gamma \in F \text{ with } \alpha \wedge \gamma = \beta \wedge \gamma,
 $$
 
 and dually for an ideal.
 
-**Theorem.** The product is a Boolean algebra, with $\neg(a_1,a_2) = (\neg a_1, \neg a_2)$ and bounds $(0,0)$ and $(1,1)$, and it is the categorical product of $B_1$ and $B_2$. The quotient $B/F$ is a Boolean algebra, and it is trivial if and only if $F = B$.
+**Theorem.** The product is a Boolean algebra, with $\neg(\alpha_1,\alpha_2) = (\neg \alpha_1, \neg \alpha_2)$ and bounds $(0,0)$ and $(1,1)$, and it is the categorical product of $B_1$ and $B_2$. The quotient $B/F$ is a Boolean algebra, and it is trivial if and only if $F = B$.
 
-**Proof.** The componentwise verification is immediate, and the projection maps $B_1 \times B_2 \to B_i$ have the universal property of the product because a pair of homomorphisms assembles into one. For the quotient, the relation $\sim_F$ is a congruence: if $c \in F$ witnesses $a \sim_F b$ and $c' \in F$ witnesses $a' \sim_F b'$, then $c \wedge c' \in F$ witnesses $a \wedge a' \sim_F b \wedge b'$, and for the complement one uses that $a \wedge c = b \wedge c$ implies $\neg a \wedge c = \neg b \wedge c$; the standard filter-quotient computation is in *Order Theory and Lattices*. The quotient identifies $0$ and $1$ exactly when $F$ contains an element $c$ with $0 \wedge c = 1 \wedge c$, that is $c = 0$, and since $0 \in F$ forces $F = B$, the quotient is trivial exactly when $F = B$.
+**Proof.** The componentwise verification is immediate, and the projection maps $B_1 \times B_2 \to B_i$ have the universal property of the product because a pair of homomorphisms assembles into one. For the quotient, the relation $\sim_F$ is a congruence: if $\gamma \in F$ witnesses $\alpha \sim_F \beta$ and $\gamma' \in F$ witnesses $\alpha' \sim_F \beta'$, then $\gamma \wedge \gamma' \in F$ witnesses $\alpha \wedge \alpha' \sim_F \beta \wedge \beta'$, and for the complement one uses that $\alpha \wedge \gamma = \beta \wedge \gamma$ implies $\neg \alpha \wedge \gamma = \neg \beta \wedge \gamma$; the standard filter-quotient computation is in *Order Theory and Lattices*. The quotient identifies $0$ and $1$ exactly when $F$ contains an element $\gamma$ with $0 \wedge \gamma = 1 \wedge \gamma$, that is $\gamma = 0$, and since $0 \in F$ forces $F = B$, the quotient is trivial exactly when $F = B$.
 
 **Example.** The power set $\mathcal{P}(X)$ is the product over $x \in X$ of copies of $\mathbf{2}$: a subset is a $0$–$1$ function on $X$, and the product is taken pointwise. In the finite case every Boolean algebra arises this way, by the following theorem.
 
 ### Atoms and the Finite Structure Theorem
 
-**Definition.** An **atom** of a Boolean algebra $B$ is a minimal nonzero element: an $a \neq 0$ such that $0 \leq b \leq a$ implies $b = 0$ or $b = a$. The algebra is **atomic** if every nonzero element lies above an atom, and **atomless** if it has no atoms.
+**Definition.** An **atom** of a Boolean algebra $B$ is a minimal nonzero element: an $\alpha \neq 0$ such that $0 \leq \beta \leq \alpha$ implies $\beta = 0$ or $\beta = \alpha$. The algebra is **atomic** if every nonzero element lies above an atom, and **atomless** if it has no atoms.
 
 **Theorem (finite representation).** Every finite Boolean algebra is isomorphic to the power set of its set of atoms. In particular a finite Boolean algebra has $2^n$ elements for some $n \geq 0$, and it is determined up to isomorphism by the number $n$ of its atoms.
 
-**Proof.** Let $A$ be the set of atoms of the finite algebra $B$. For $b \in B$ let $A_b = \{a \in A : a \leq b\}$. If $b \neq 0$, then some atom lies below $b$: the interval $[0,b]$ is finite, so a minimal element of the nonempty set $\{x : 0 < x \leq b\}$ is an atom of $B$ lying below $b$. Hence $b = \bigvee A_b$. Indeed the join $c = \bigvee A_b$ satisfies $c \leq b$; if $c < b$ then $b \wedge \neg c \neq 0$ contains an atom $a \leq b \wedge \neg c$, and $a$ lies in $A_b$ but not below $c$, contradicting the definition of $c$. Distinct atoms have meet $0$, since their meet lies below both and is neither of them. The map $b \mapsto A_b$ is therefore injective, and it preserves joins, meets, complements and bounds, so it is an isomorphism onto $\mathcal{P}(A)$; the cardinality is $2^{\lvert A \rvert}$.
+**Proof.** Let $A$ be the set of atoms of the finite algebra $B$. For $\alpha \in B$ let $A_\alpha = \{\beta \in A : \beta \leq \alpha\}$. If $\alpha \neq 0$, then some atom lies below $\alpha$: the interval $[0,\alpha]$ is finite, so a minimal element of the nonempty set $\{\delta : 0 < \delta \leq \alpha\}$ is an atom of $B$ lying below $\alpha$. Hence $\alpha = \bigvee A_\alpha$. Indeed the join $\gamma = \bigvee A_\alpha$ satisfies $\gamma \leq \alpha$; if $\gamma < \alpha$ then $\alpha \wedge \neg \gamma \neq 0$ contains an atom $\beta \leq \alpha \wedge \neg \gamma$, and $\beta$ lies in $A_\alpha$ but not below $\gamma$, contradicting the definition of $\gamma$. Distinct atoms have meet $0$, since their meet lies below both and is neither of them. The map $\alpha \mapsto A_\alpha$ is therefore injective, and it preserves joins, meets, complements and bounds, so it is an isomorphism onto $\mathcal{P}(A)$; the cardinality is $2^{\lvert A \rvert}$.
 
 **Example (the atomless algebra).** The algebra of finite and cofinite subsets of an infinite set is Boolean and atomless; so is the algebra of measurable subsets of $[0,1]$ modulo null sets, the measure algebra of *Measure Theory and Integration*, which is the standard atomless Boolean algebra of cardinality continuum. These show that the finite representation theorem does not extend to the infinite case in the form in which atoms determine the algebra: the measure algebra has no atoms at all. The general representation is the Stone theorem of the topological slot.
 
@@ -266,9 +266,9 @@ The enrichment the system does admit is *topological*, and it lies outside this 
 
 ## Summary
 
-A Boolean algebra is a bounded distributive lattice in which every element has a complement; the complement is unique in a distributive lattice, so complementation is an operation and the theory is equational. The axioms are self-dual under the interchange of $\wedge$ with $\vee$ and $0$ with $1$, which gives the duality principle, and the basic identities — double complement, De Morgan, and the characterisation $a \leq b \iff a \wedge \neg b = 0$ — are forced by the axioms. The two-element algebra $\mathbf{2}$ and the power sets $\mathcal{P}(X)$ are the examples, and the finite Boolean algebras are exactly the power sets of finite sets: every finite Boolean algebra is isomorphic to the power set of its atoms, and so has $2^n$ elements. The infinite case is different, the atomless algebras showing that atoms need not determine the algebra.
+A Boolean algebra is a bounded distributive lattice in which every element has a complement; the complement is unique in a distributive lattice, so complementation is an operation and the theory is equational. The axioms are self-dual under the interchange of $\wedge$ with $\vee$ and $0$ with $1$, which gives the duality principle, and the basic identities — double complement, De Morgan, and the characterisation $\alpha \leq \beta \iff \alpha \wedge \neg \beta = 0$ — are forced by the axioms. The two-element algebra $\mathbf{2}$ and the power sets $\mathcal{P}(X)$ are the examples, and the finite Boolean algebras are exactly the power sets of finite sets: every finite Boolean algebra is isomorphic to the power set of its atoms, and so has $2^n$ elements. The infinite case is different, the atomless algebras showing that atoms need not determine the algebra.
 
-The Boolean functions on $n$ variables form a Boolean algebra of $2^{2^n}$ elements, which is simultaneously the free Boolean algebra on $n$ generators and the power set of $\mathbf{2}^n$. Every such function has a unique algebraic normal form as an $\mathbb{F}_2$-combination of the $2^n$ reduced monomials, and dually a disjunctive normal form as a join of minterms; the two are exchanged by the identity $x \vee y = x \oplus y \oplus xy$. The Lindenbaum–Tarski construction turns any propositional theory into a Boolean algebra, and the homomorphisms of that algebra into $\mathbf{2}$ are exactly the valuations, so the completeness theorem of propositional logic is the statement that $\mathbf{2}$ generates the variety of Boolean algebras. Products and filter-quotients of Boolean algebras are Boolean algebras, the product being the categorical product.
+The Boolean functions on $n$ variables form a Boolean algebra of $2^{2^n}$ elements, which is simultaneously the free Boolean algebra on $n$ generators and the power set of $\mathbf{2}^n$. Every such function has a unique algebraic normal form as an $\mathbb{F}_2$-combination of the $2^n$ reduced monomials, and dually a disjunctive normal form as a join of minterms; the two are exchanged by the identity $\alpha \vee \beta = \alpha \oplus \beta \oplus \alpha\beta$. The Lindenbaum–Tarski construction turns any propositional theory into a Boolean algebra, and the homomorphisms of that algebra into $\mathbf{2}$ are exactly the valuations, so the completeness theorem of propositional logic is the statement that $\mathbf{2}$ generates the variety of Boolean algebras. Products and filter-quotients of Boolean algebras are Boolean algebras, the product being the categorical product.
 
 The Boolean system supports an algebra and no analysis. Its free algebras are finite, it carries no distance of its own, and the enrichment it admits is the topological one of Stone duality, in which the prime ideals form a compact totally disconnected space. That topology, and with it the representation theorem, is not covered here.
 
@@ -280,17 +280,17 @@ The Boolean system supports an algebra and no analysis. Its free algebras are fi
 | $\leq$ | The order of a lattice, $a \leq b \iff a \wedge b = a$ |
 | $0, 1$ | Least and greatest elements of a bounded lattice |
 | $B$ | A Boolean algebra |
-| $\neg a$ | Complement of $a$, unique in a distributive lattice |
+| $\neg\alpha$ | Complement of $\alpha$, unique in a distributive lattice |
 | $\mathbf{2} = \{0,1\}$ | The two-element Boolean algebra |
 | $2$ | The integer two, in cardinalities and exponents |
 | $\mathcal{P}(X)$ | Power set of $X$, the standard Boolean algebra of subsets |
 | $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$ | The field of two elements |
-| $x^{e}$ | Reduced monomial, $e \in \mathbf{2}^n$ |
+| $\alpha^{e}$ | Reduced monomial, $e \in \mathbf{2}^n$ |
 | $\oplus$ | Addition in $\mathbb{F}_2$, the symmetric difference |
 | $\varphi \sim_T \psi$ | Provable equivalence modulo $T$, defining the Lindenbaum–Tarski algebra |
 | $v$ | Valuation, equivalently a homomorphism to $\mathbf{2}$ |
 | $m_x$ | Minterm at the point $x$ |
-| $a \uparrow b$ | NAND, $1 \oplus ab$ |
+| $\alpha \uparrow \beta$ | NAND, $1 \oplus \alpha\beta$ |
 | $B_1 \times B_2$ | Product of Boolean algebras, componentwise |
 | $B/F$ | Quotient by a filter $F$ |
 | $M_3$, $N_5$ | The forbidden sublattices of a non-distributive lattice |

@@ -326,10 +326,10 @@ $$
 
 The regular matrix is not the only $4 \times 4$ realization of $\mathbb{B}$ in use, and the second one worth recording comes from a question with no algebra in it: the eigenvectors of a parameterised family of matrices. Its shape is different enough that the difference is instructive, and the object it is built for — a multiplicative quadratic map into the real matrices, with no counterpart in the regular realization — is the reason for recording it here rather than in a dedicated article.
 
-**The realization.** In the basis $e_0, x, y, z$ with $x = ie_1$, $y = ie_2$, $z = ie_3$, so that
+**The realization.** In the basis $e_0, ie_1, ie_2, ie_3$, for which
 
 $$
-x^2 = y^2 = z^2 = e_0, \qquad xy = iz, \qquad yz = ix, \qquad zx = iy ,
+(ie_1)^2 = (ie_2)^2 = (ie_3)^2 = e_0, \qquad (ie_1)(ie_2) = i(ie_3), \qquad (ie_2)(ie_3) = i(ie_1), \qquad (ie_3)(ie_1) = i(ie_2) ,
 $$
 
 the map on complex coefficients
@@ -342,15 +342,15 @@ is a representation of $\mathbb{B}$. Its first row and column coincide, since $\
 
 **The realization is equivalent to the regular one.** Both are faithful four-dimensional linear realizations of $\mathbb{B} \cong M_2(\mathbb{C})$, and by the module structure of the section above every such realization is two copies of the simple module, $V \oplus V$; so an invertible intertwining matrix exists, and one was exhibited and checked on $100$ random elements, with maximum residual $1.9 \times 10^{-15}$. Nothing in the representation theory of the two distinguishes them, and everything the corpus says about $\rho_L$ as a module carries over.
 
-**What the realization brings.** Each of $x, y, z$ is skew-symmetric for the Minkowski form of *The Minkowski Form and the Modulus-Squared Map in the Matrix Representation*, and the products of the basis elements give a second Hermitian basis of $M_4(\mathbb{C})$: the sixteen matrices
+**What the realization brings.** Each of $ie_1, ie_2, ie_3$ is skew-symmetric for the Minkowski form of *The Minkowski Form and the Modulus-Squared Map in the Matrix Representation*, and the products of the basis elements give a second Hermitian basis of $M_4(\mathbb{C})$: the sixteen matrices
 
 $$
-I,\; xX,\; yY,\; zZ,\quad x,\; X,\; yZ,\; zY,\quad y,\; Y,\; xZ,\; zX,\quad z,\; Z,\; xY,\; yX ,
+I,\; ie_1X,\; ie_2Y,\; ie_3Z,\quad ie_1,\; X,\; ie_2Z,\; ie_3Y,\quad ie_2,\; Y,\; ie_1Z,\; ie_3X,\quad ie_3,\; Z,\; ie_1Y,\; ie_2X ,
 $$
 
-with $X, Y, Z$ the coefficient conjugates of $x, y, z$, each squaring to $I$ and each Hermitian, so that real linear combinations of them are exactly the Hermitian $4 \times 4$ matrices; every one but $I$ is traceless. This was checked entry by entry. The same basis contains generators of the complex Clifford algebra $\mathbb{C}\ell(4)$, namely $x, y, zX, zY$, which anticommute pairwise to $\delta_{ij}I$ up to the conventional factor, so the realization also places $\mathbb{B}$ inside $M_4(\mathbb{C})$ in the Clifford manner of *Biquaternion Other Algebraic Element Representations*.
+with $X, Y, Z$ the coefficient conjugates of $ie_1, ie_2, ie_3$, each squaring to $I$ and each Hermitian, so that real linear combinations of them are exactly the Hermitian $4 \times 4$ matrices; every one but $I$ is traceless. This was checked entry by entry. The same basis contains generators of the complex Clifford algebra $\mathbb{C}\ell(4)$, namely $ie_1, ie_2, ie_3X, ie_3Y$, which anticommute pairwise to $\delta_{ij}I$ up to the conventional factor, so the realization also places $\mathbb{B}$ inside $M_4(\mathbb{C})$ in the Clifford manner of *Biquaternion Other Algebraic Element Representations*.
 
-**The transposition identity is exact in this basis, and these are the matrices of the Maxwell literature.** The realization is the one in which the two $D$'s of the theorem of the transposition section disappear, and this is worth stating because it separates two things that the first basis runs together. Write the left regular matrix of the element $\tilde{Q} = A_0 e_0 + A_1 x + A_2 y + A_3 z$ as
+**The transposition identity is exact in this basis, and these are the matrices of the Maxwell literature.** The realization is the one in which the two $D$'s of the theorem of the transposition section disappear, and this is worth stating because it separates two things that the first basis runs together. Write the left regular matrix of the element $\tilde{Q} = A_0 e_0 + A_1 ie_1 + A_2 ie_2 + A_3 ie_3$ as
 
 $$
 \rho_L(\tilde{Q}) = A_0 I + cF(\mathbf{A}), \qquad
@@ -410,10 +410,10 @@ the coefficients being read off one at a time. Recomputing the expansion on a ra
 **Reading the expansion in the algebra.** The tensor square $\mathbb{B} \otimes_{\mathbb{C}} \mathbb{B}$ is spanned by the sixteen $e_i \otimes e_j$, and the expansion says that this space maps onto the endomorphisms of $\mathbb{B}$: the element $\sum a_{ij}\,e_i \otimes e_j$ is the linear transformation
 
 $$
-\tilde X \longmapsto \sum_{i,j} a_{ij}\, e_i \tilde X e_j,
+\tilde P \longmapsto \sum_{i,j} a_{ij}\, e_i \tilde P e_j,
 $$
 
-and every complex-linear transformation of the algebra arises this way. Such an element is a **biparavector** in the language of the paravector formulation. That the sixteen products already span the endomorphisms is the concrete form of the double centralizer: the left copy supplies the first index and the right copy the second, and the two fill $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ between them. Recomputing the action of the biparavector of a left–right sandwich $\tilde X \mapsto \tilde A\tilde X\tilde B$ against the sandwich itself returns $1.5 \times 10^{-14}$.
+and every complex-linear transformation of the algebra arises this way. Such an element is a **biparavector** in the language of the paravector formulation. That the sixteen products already span the endomorphisms is the concrete form of the double centralizer: the left copy supplies the first index and the right copy the second, and the two fill $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ between them. Recomputing the action of the biparavector of a left–right sandwich $\tilde P \mapsto \tilde A\tilde P\tilde B$ against the sandwich itself returns $1.5 \times 10^{-14}$.
 
 **Where the uniform normalisation comes from.** The constant $4$ in the trace relation is a property of the second realization and not of the regular basis. In the basis $e_0, e_1, e_2, e_3$ of the earlier sections the Gram matrix of the sixteen products is still diagonal, but its diagonal entries are $\pm 4$ rather than $4$, so the coefficient formula there carries the sign of $\operatorname{tr}(P_{ij}^2)$; it is the Hermitian realisation that makes the coefficients uniform. The Hermitian form of the basis and the tensor-square reading are the same objects as the sixteen matrices listed by the realization above, read as outer products rather than as products of the two units.
 
@@ -463,7 +463,7 @@ The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde
 
 The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with the two blocks $A_+$, $A_-$, each similar to $\Phi(\tilde{Q})$ and each a copy of the simple module $V$. So $\rho_L \cong V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\rho_L(\mathbb{B})$ is $\rho_R(\mathbb{B})$, the right copy, of complex dimension $4$. Over $\mathbb{R}$ the regular representation is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The two-sided action of the unit-norm group on $\mathbb{M}_+$ preserves the biquaternion norm and gives a two-to-one homomorphism $SL_2(\mathbb{C}) \to SO^+(1,3)$ with kernel $\{\pm e_0\}$.
 
-A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to $\rho_L$ as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural}$ to the real matrices which the regular realization does not have, in contrast with the congruence-shaped quadratic operator of *Biquaternion 4×4 Regular Matrix Operator Representation*. In that realization the sixteen products $\rho_L(e_i)\rho_R(e_j)$ are the Hermitian outer products $X_iX_j^{\mathsf T}$ and form an orthogonal basis of $\mathbb{M}_4(\mathbb{C})$ for the trace form, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex-linear transformation of the algebra is a biparavector, the two-sided multiplication $\tilde X \mapsto \sum a_{ij}\,e_i\tilde X e_j$.
+A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to $\rho_L$ as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural}$ to the real matrices which the regular realization does not have, in contrast with the congruence-shaped quadratic operator of *Biquaternion 4×4 Regular Matrix Operator Representation*. In that realization the sixteen products $\rho_L(e_i)\rho_R(e_j)$ are the Hermitian outer products $X_iX_j^{\mathsf T}$ and form an orthogonal basis of $\mathbb{M}_4(\mathbb{C})$ for the trace form, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex-linear transformation of the algebra is a biparavector, the two-sided multiplication $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$.
 
 ## Summary of Notation
 
@@ -492,11 +492,11 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}$ | Restriction of scalars |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \rho_R(\mathbb{B})$ | Endomorphism algebra of the regular module |
 | $\rho_L^{\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix |
-| $\Phi'(A_0, A_1, A_2, A_3)$ | Second $4 \times 4$ realization, on the generators $x = ie_1$, $y = ie_2$, $z = ie_3$ with $x^2 = y^2 = z^2 = e_0$ |
-| $X, Y, Z$ | Coefficient conjugates of $x, y, z$, used in the Hermitian basis of that realization |
+| $\Phi'(A_0, A_1, A_2, A_3)$ | Second $4 \times 4$ realization, on the generators $ie_1, ie_2, ie_3$ with $(ie_1)^2 = (ie_2)^2 = (ie_3)^2 = e_0$ |
+| $X, Y, Z$ | Coefficient conjugates of $ie_1, ie_2, ie_3$, used in the Hermitian basis of that realization |
 | $m(A) = A A^{\natural}$ | Modulus-squared map, $I + \mathbb{B} \to M_4(\mathbb{R})$; real and multiplicative |
 | $P_{ij} = \rho_L(e_i)\rho_R(e_j) = X_iX_j^{\mathsf T}$ | The sixteen products; an orthogonal basis of $\mathbb{M}_4(\mathbb{C})$, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$ |
-| $\sum a_{ij}\,e_i \otimes e_j$ | Biparavector, the two-sided transformation $\tilde X \mapsto \sum a_{ij}\,e_i\tilde X e_j$ |
+| $\sum a_{ij}\,e_i \otimes e_j$ | Biparavector, the two-sided transformation $\tilde P \mapsto \sum a_{ij}\,e_i\tilde P e_j$ |
 | $\tilde{G} = \{\tilde{A} : N(\tilde{A}) = 1\}$ | Unit-norm group, $\cong SL_2(\mathbb{C})$ |
 | $\mathbb{M}_+$ | Hermitian subspace of real dimension $4$ |
 | $SO^+(1,3)$ | Identity component of the orthogonal group reached by the two-sided action |

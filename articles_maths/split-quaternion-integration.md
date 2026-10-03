@@ -45,7 +45,7 @@ $$
 \int_\Omega\operatorname{Sc}(Df) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(e_ifn_i) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(fn_ie_i) = \int_{\partial\Omega}\operatorname{Sc}\Big(f\sum_i n_ie_i\Big) = \int_{\partial\Omega}\operatorname{Sc}(fn),
 $$
 
-because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*, so there is a nonzero $y$ with $ny = 0$ and $\operatorname{Sc}(yn) = \operatorname{Sc}(ny) = 0$; a boundary layer with constant values $y$ therefore contributes nothing to the boundary term.
+because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Null Cone and the Maximal Isotropic Subspaces*, so there is a nonzero $\tilde p$ with $n\tilde p = 0$ and $\operatorname{Sc}(\tilde p n) = \operatorname{Sc}(n\tilde p) = 0$; a boundary layer with constant values $\tilde p$ therefore contributes nothing to the boundary term.
 
 ## Integration by Parts and Green's Formulas
 
@@ -65,7 +65,7 @@ $$
 
 while for the identity generator $e_0 = 1$ the same identity holds with the sign $+$.
 
-**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(\tilde q yz) = \operatorname{Sc}(yz\tilde q)$, since $\operatorname{Sc}$ is the trace form of the algebra; hence $\operatorname{Sc}(e_if g^{\natural}) = \operatorname{Sc}(f g^{\natural} e_i) = \operatorname{Sc}(f\,\overline{e_i^{\natural} g})$ because $\tilde q \mapsto \tilde{q}^{\natural}$ is an anti-automorphism. Now $e_i^{\natural} = -e_i$ for $i = 1,2,3$ and $e_0^{\natural} = e_0$, which gives the two signs; they are confirmed by evaluating both sides on the basis.
+**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(\tilde q \tilde p \tilde r) = \operatorname{Sc}(\tilde p \tilde r \tilde q)$, since $\operatorname{Sc}$ is the trace form of the algebra; hence $\operatorname{Sc}(e_if g^{\natural}) = \operatorname{Sc}(f g^{\natural} e_i) = \operatorname{Sc}(f\,\overline{e_i^{\natural} g})$ because $\tilde q \mapsto \tilde{q}^{\natural}$ is an anti-automorphism. Now $e_i^{\natural} = -e_i$ for $i = 1,2,3$ and $e_0^{\natural} = e_0$, which gives the two signs; they are confirmed by evaluating both sides on the basis.
 
 **Corollary (The Formal Adjoint of the Vector Operator).** The operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ is formally *self-adjoint* with respect to the scalar product $\langle f,g\rangle = \int\operatorname{Sc}(f g^{\natural})$: the two signs cancel in
 
@@ -128,7 +128,7 @@ $$
 
 the classical Green identity for the wave operator, with the normal derivative carrying the signs of the form.
 
-**Proof.** For scalar-valued $g$ each $\partial_ig$ is scalar and commutes with the generators, so the two operators agree and the first display is the theorem. For the second, apply the first display to the pair $(Du, v)$ and to the pair $(Dv, u)$ with scalar $u, v$, and subtract: the mixed terms are $\operatorname{Sc}((Du)(Dv))$ and $\operatorname{Sc}((Dv)(Du))$, which are equal by the symmetry $\operatorname{Sc}(\tilde q y) = \operatorname{Sc}(y\tilde q)$ of the scalar part and therefore cancel, while $\operatorname{Sc}((\Box u)v) = v\,\Box u$ because $v$ is scalar. The boundary terms are
+**Proof.** For scalar-valued $g$ each $\partial_ig$ is scalar and commutes with the generators, so the two operators agree and the first display is the theorem. For the second, apply the first display to the pair $(Du, v)$ and to the pair $(Dv, u)$ with scalar $u, v$, and subtract: the mixed terms are $\operatorname{Sc}((Du)(Dv))$ and $\operatorname{Sc}((Dv)(Du))$, which are equal by the symmetry $\operatorname{Sc}(\tilde q \tilde p) = \operatorname{Sc}(\tilde p\tilde q)$ of the scalar part and therefore cancel, while $\operatorname{Sc}((\Box u)v) = v\,\Box u$ because $v$ is scalar. The boundary terms are
 
 $$
 \int_{\partial\Omega}\operatorname{Sc}(Du\,v\,n) - \int_{\partial\Omega}\operatorname{Sc}(Dv\,u\,n) = \int_{\partial\Omega}\big(v\operatorname{Sc}(nDu) - u\operatorname{Sc}(nDv)\big),
@@ -214,7 +214,7 @@ for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomog
 
 **Proof.** $D(E_D*f) = (DE_D)*f = \delta*f = f$, the differentiation passing through the convolution because the coefficients are constant.
 
-**Remark (What Fails in Place of the Cauchy Formula).** Three structural features of the quaternionic Cauchy integral formula are absent here. First the kernel: $(\tilde q-y)^{-1}$ has no counterpart, since $\tilde q-y$ is a zero divisor exactly when it is null, so its reciprocal does not exist on the light cone and the singular set of the available kernel is a three-dimensional cone through the point rather than the point itself. Second analyticity: the solutions of $Df = 0$ satisfy a first-order system whose characteristic variety is the light cone, and by the kernel theorem they include nonzero compactly supported functions, so they are not analytic and carry no identity theorem. Third inversion: the inversion available is one-sided, by the theorem above, and the boundary formula of Green is valued in the trace pairing, so the boundary data do not pass to the interior values through a single multiplication kernel.
+**Remark (What Fails in Place of the Cauchy Formula).** Three structural features of the quaternionic Cauchy integral formula are absent here. First the kernel: $(\tilde q-\tilde p)^{-1}$ has no counterpart, since $\tilde q-\tilde p$ is a zero divisor exactly when it is null, so its reciprocal does not exist on the light cone and the singular set of the available kernel is a three-dimensional cone through the point rather than the point itself. Second analyticity: the solutions of $Df = 0$ satisfy a first-order system whose characteristic variety is the light cone, and by the kernel theorem they include nonzero compactly supported functions, so they are not analytic and carry no identity theorem. Third inversion: the inversion available is one-sided, by the theorem above, and the boundary formula of Green is valued in the trace pairing, so the boundary data do not pass to the interior values through a single multiplication kernel.
 
 ## Principal Values and the Distributional Inverse
 
@@ -259,7 +259,7 @@ The integration of split-quaternion-valued functions is componentwise, with the 
 
 The vector operator is formally self-adjoint, $D^* = D$, and Green's formula reads $\int_\Omega[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int_{\partial\Omega}\operatorname{Sc}(fgn)$, with the classical Green identities for the wave operator as corollaries; the two-sided form is forced by the failure of the two-term Leibniz rule in the non-commutative algebra. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the light cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
 
-There is no Cauchy integral formula: the candidate kernel $(\tilde q-y)^{-1}$ does not exist on the light cone, where the difference of two points is a zero divisor. The inversion that holds is one-sided, $f = D(E_D*f)$; the formula $f = E_D*(Df)$ of the elliptic theory fails, as the large kernel of $D$ shows, and the maximum principle, the mean value property, the identity theorem and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
+There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{-1}$ does not exist on the light cone, where the difference of two points is a zero divisor. The inversion that holds is one-sided, $f = D(E_D*f)$; the formula $f = E_D*(Df)$ of the elliptic theory fails, as the large kernel of $D$ shows, and the maximum principle, the mean value property, the identity theorem and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
 
 ## Summary of Notation
 

@@ -26,14 +26,14 @@ $$
 [\tilde Q,\tilde Q']=\mathrm{Sc}\bigl(\tilde Q^{\natural*}\tilde Q'\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{*}Q'_\mu ,\qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with fundamental symmetry $J={}^{\natural}$; the definite form it induces is $\langle\tilde P,\tilde Q\rangle=[J\tilde P,\tilde Q]=\mathrm{Sc}(\tilde P^{*}\tilde Q)=\sum_\mu P_\mu^{*}Q_\mu$. The **operator adjoint of the Krein form** is written ${}^{\dagger}$, $T^{\dagger}=JT^{*}J$, and ${}^{*}$ on operators is the adjoint for the definite form, so that $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ and $R_{\tilde Q}^{*}=R_{\tilde Q^{*}}$. The maps $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ are the left and the right multiplications.
+with fundamental symmetry $J={}^{\natural}$; the definite form it induces is $\langle\tilde P,\tilde Q\rangle=[J\tilde P,\tilde Q]=\mathrm{Sc}(\tilde P^{*}\tilde Q)=\sum_\mu P_\mu^{*}Q_\mu$. The **operator adjoint of the Krein form** is written ${}^{\dagger}$, $T^{\dagger}=JT^{*}J$, and ${}^{*}$ on operators is the adjoint for the definite form, so that $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ and $R_{\tilde Q}^{*}=R_{\tilde Q^{*}}$. The maps $L_{\tilde Q}(\tilde S)=\tilde Q\tilde S$ and $R_{\tilde Q}(\tilde S)=\tilde S\tilde Q$ are the left and the right multiplications.
 
 ## The Krein Space and the Left Regular Representation
 
 **Definition.** Let $\mathcal{K}$ be $\mathbb{B}$ with the Krein form $[\cdot,\cdot]$ and fundamental symmetry $J={}^{\natural}$, and let
 
 $$
-\mathcal{M}=\{\,L_{\tilde Q}:\tilde Q\in\mathbb{B}\,\},\qquad L_{\tilde Q}(\tilde X)=\tilde Q\tilde X .
+\mathcal{M}=\{\,L_{\tilde Q}:\tilde Q\in\mathbb{B}\,\},\qquad L_{\tilde Q}(\tilde S)=\tilde Q\tilde S .
 $$
 
 $\mathcal{M}$ is the **left regular image** of the biquaternion algebra, the algebra of the left multiplications acting on $\mathbb{B}$.
@@ -50,7 +50,7 @@ $$
 
 the double commutant is the image itself, $\mathcal{M}''=\mathcal{M}$, and the centre of $\mathcal{M}$ is $\mathbb{C}e_0$.
 
-**Proof.** If $T$ commutes with every left multiplication then $T(\tilde X)=T(L_{\tilde X}e_0)=L_{\tilde X}(Te_0)=\tilde X\,Te_0$, so $T=R_{Te_0}$; conversely the left and the right multiplications commute, and the centralizer of the right multiplications is again the left multiplications. The centre is the intersection $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$, because a left multiplication that is also a right one is a central multiplication, and the centre of $\mathbb{B}$ is $\mathbb{C}e_0$.
+**Proof.** If $T$ commutes with every left multiplication then $T(\tilde S)=T(L_{\tilde S}e_0)=L_{\tilde S}(Te_0)=\tilde S\,Te_0$, so $T=R_{Te_0}$; conversely the left and the right multiplications commute, and the centralizer of the right multiplications is again the left multiplications. The centre is the intersection $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$, because a left multiplication that is also a right one is a central multiplication, and the centre of $\mathbb{B}$ is $\mathbb{C}e_0$.
 
 ## The Indefinite Adjoint of a Left Multiplication
 
@@ -59,7 +59,7 @@ the double commutant is the image itself, $\mathcal{M}''=\mathcal{M}$, and the c
 $$
 (L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}} ,
 \qquad\text{that is}\qquad
-(L_{\tilde Q})^{\dagger}(\tilde X)=\tilde X\,\bar{\tilde Q} .
+(L_{\tilde Q})^{\dagger}(\tilde S)=\tilde S\,\bar{\tilde Q} .
 $$
 
 **Proof.** The indefinite adjoint is $T^{\dagger}=JT^{*}J$. For a left multiplication, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$ and $J$ is an anti-automorphism, so $JL_{\tilde Q^{*}}J=R_{J(\tilde Q^{*})}$. Now $J(\tilde Q^{*})=\bar{\tilde Q}$, because $\tilde Q^{*}$ carries the coefficients $\bar Q_0,-\bar Q_1,-\bar Q_2,-\bar Q_3$ and $J$ fixes the centre and negates the vector units, restoring the coefficients $\bar Q_0,\bar Q_1,\bar Q_2,\bar Q_3$. Hence $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$. The same identity is computed for the three operator families in *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*.
@@ -68,7 +68,7 @@ $$
 
 **Proof.** $R_{\bar{\tilde Q}}=L_{\tilde R}$ for some $\tilde R$ forces $R_{\bar{\tilde Q}}\in\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$, hence $\bar{\tilde Q}$ central, hence $\tilde Q$ central; conversely a central parameter makes the two multiplications coincide.
 
-**Corollary (not a Krein–von Neumann algebra, and not a Krein algebra).** $\mathcal{M}$ is not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra on $(\mathbb{B},[\cdot,\cdot])$. Equivalently, the adjoint axiom of a Krein algebra, $[\tilde Q\tilde X,\tilde X']=[\tilde X,\sigma(\tilde Q)\tilde X']$, holds for **no** involution $\sigma$ of the algebra: it would give $L_{\sigma(\tilde Q)}=(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, which forces $\tilde Q$ central for every $\tilde Q$. So the biquaternion algebra carries no Krein-algebra structure for its Krein form, the involution of the algebra being the definite one.
+**Corollary (not a Krein–von Neumann algebra, and not a Krein algebra).** $\mathcal{M}$ is not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra on $(\mathbb{B},[\cdot,\cdot])$. Equivalently, the adjoint axiom of a Krein algebra, $[\tilde Q\tilde S,\tilde S']=[\tilde S,\sigma(\tilde Q)\tilde S']$, holds for **no** involution $\sigma$ of the algebra: it would give $L_{\sigma(\tilde Q)}=(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, which forces $\tilde Q$ central for every $\tilde Q$. So the biquaternion algebra carries no Krein-algebra structure for its Krein form, the involution of the algebra being the definite one.
 
 ## The Krein–von Neumann Envelope
 
@@ -80,7 +80,7 @@ $$
 
 of complex dimension $16$.
 
-**Proof.** A $\dagger$-closed unital subalgebra containing every $L_{\tilde Q}$ contains $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ for every $\tilde Q$, hence contains $R_{\tilde P}$ for every $\tilde P$, since the bar is a bijection; it therefore contains every product $L_{\tilde Q}R_{\tilde P}$. The products act by $\tilde X\mapsto\tilde Q\tilde X\tilde P$, whose linear span is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}$, of complex dimension $4\cdot4=16$, which is all of $\mathcal{L}(\mathbb{B})$ by the enveloping-algebra isomorphism. Conversely, the algebra generated by the left and the right multiplications is $\dagger$-closed, because $(L_{\tilde Q}R_{\tilde P})^{\dagger}=(R_{\tilde P})^{\dagger}(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde P}}R_{\bar{\tilde Q}}$ is again a product of a left and a right multiplication.
+**Proof.** A $\dagger$-closed unital subalgebra containing every $L_{\tilde Q}$ contains $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ for every $\tilde Q$, hence contains $R_{\tilde P}$ for every $\tilde P$, since the bar is a bijection; it therefore contains every product $L_{\tilde Q}R_{\tilde P}$. The products act by $\tilde S\mapsto\tilde Q\tilde S\tilde P$, whose linear span is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}$, of complex dimension $4\cdot4=16$, which is all of $\mathcal{L}(\mathbb{B})$ by the enveloping-algebra isomorphism. Conversely, the algebra generated by the left and the right multiplications is $\dagger$-closed, because $(L_{\tilde Q}R_{\tilde P})^{\dagger}=(R_{\tilde P})^{\dagger}(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde P}}R_{\bar{\tilde Q}}$ is again a product of a left and a right multiplication.
 
 **Remark (the linear span is smaller than the envelope).** The linear span of $\{L_{\tilde Q}\}\cup\{R_{\tilde P}\}$ has complex dimension $4+4-1=7$, the intersection being the centre $\mathbb{C}e_0$; the products are what fill the whole matrix algebra. The numbers $4,4,1,7,16$ record the algebra, its opposite, the centre, the span and the envelope.
 

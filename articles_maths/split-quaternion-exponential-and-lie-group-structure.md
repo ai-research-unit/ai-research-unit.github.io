@@ -11,7 +11,7 @@ This article owns the exponential and the Lie group structure: the algebra as a 
 
 ## The Algebra as a Lie Algebra
 
-**Definition.** The **commutator** $[\tilde q,y] = \tilde q y - y\tilde q$ makes $\mathbb{H}_{\mathrm{s}}$ into a real Lie algebra. Its centre is again the scalar line $S = \mathbb{R}\cdot1$, and the associated Lie algebra modulo the centre is
+**Definition.** The **commutator** $[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$ makes $\mathbb{H}_{\mathrm{s}}$ into a real Lie algebra. Its centre is again the scalar line $S = \mathbb{R}\cdot1$, and the associated Lie algebra modulo the centre is
 
 $$
 \mathbb{H}_{\mathrm{s}}/S \;\cong\; V \;\cong\; \mathrm{SL}_2(\mathbb{R}),
@@ -25,9 +25,9 @@ $$
 [e_1,e_2] = 2e_3, \qquad [e_2,e_3] = -2e_1, \qquad [e_3,e_1] = 2e_2,
 $$
 
-so $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The bracket vanishes on $S$ and on the split-complex planes: $[S, \mathbb{H}_{\mathrm{s}}] = 0$ and $[\mathbb{D}_k, \mathbb{D}_k] = 0$. The form $B(\tilde q,y) = \tfrac{1}{2}(N(\tilde q+y) - N(\tilde q) - N(y))$, restricted to $V$, is invariant under the adjoint action, and the **Killing form** of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ is a nonzero multiple of it; on $V$ it is the form of signature $(2,1)$.
+so $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The bracket vanishes on $S$ and on the split-complex planes: $[S, \mathbb{H}_{\mathrm{s}}] = 0$ and $[\mathbb{D}_k, \mathbb{D}_k] = 0$. The form $B(\tilde q,\tilde p) = \tfrac{1}{2}(N(\tilde q+\tilde p) - N(\tilde q) - N(\tilde p))$, restricted to $V$, is invariant under the adjoint action, and the **Killing form** of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ is a nonzero multiple of it; on $V$ it is the form of signature $(2,1)$.
 
-**Proof.** The brackets are the multiplication table of the algebra. If $\tilde q, y \in V$ then $\tilde q y + y\tilde q$ is scalar and equal to $-2B(\tilde q,y)$, so $[\tilde q,y] = \tilde q y - y\tilde q$ has zero trace and lies in $V$; the vanishing statements on $S$ and on each $\mathbb{D}_k$ are the commutativity of the scalar line and of the plane. Since $V$ is the adjoint module of $\mathrm{SL}_2(\mathbb{R})$ and is irreducible, the space of invariant symmetric bilinear forms on it is one-dimensional, so $B|_V$ and the Killing form differ by a nonzero scalar. Invariance of $B$ follows from the multiplicativity of $N$ along the one-parameter automorphism groups $\operatorname{Ad}_{e^{tw}} = e^{t\,\mathrm{ad}_w}$: differentiating $N\bigl(e^{t\,\mathrm{ad}_w} y\bigr) = N(y)$ at $t=0$ gives $B(\mathrm{ad}_w \tilde q, y) + B(\tilde q, \mathrm{ad}_w y) = 0$.
+**Proof.** The brackets are the multiplication table of the algebra. If $\tilde q, \tilde p \in V$ then $\tilde q \tilde p + \tilde p\tilde q$ is scalar and equal to $-2B(\tilde q,\tilde p)$, so $[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$ has zero trace and lies in $V$; the vanishing statements on $S$ and on each $\mathbb{D}_k$ are the commutativity of the scalar line and of the plane. Since $V$ is the adjoint module of $\mathrm{SL}_2(\mathbb{R})$ and is irreducible, the space of invariant symmetric bilinear forms on it is one-dimensional, so $B|_V$ and the Killing form differ by a nonzero scalar. Invariance of $B$ follows from the multiplicativity of $N$ along the one-parameter automorphism groups $\operatorname{Ad}_{e^{tw}} = e^{t\,\mathrm{ad}_w}$: differentiating $N\bigl(e^{t\,\mathrm{ad}_w} \tilde p\bigr) = N(\tilde p)$ at $t=0$ gives $B(\mathrm{ad}_w \tilde q, \tilde p) + B(\tilde q, \mathrm{ad}_w \tilde p) = 0$.
 
 ## The Group of Units
 
@@ -39,7 +39,7 @@ $$
 
 with inverse $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$. The group has exactly **two connected components**, $\{N > 0\}$ and $\{N < 0\}$, the sign of the split-quaternion norm separating them.
 
-**Proof.** $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ shows that $N(\tilde q)\neq0$ implies invertibility, and $N(\tilde q y) = N(\tilde q)N(y)$ shows that the non-units are exactly the nonzero null elements. The continuous surjection $N : \mathbb{H}_{\mathrm{s}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
+**Proof.** $\tilde q\tilde{q}^{\natural} = N(\tilde q)$ shows that $N(\tilde q)\neq0$ implies invertibility, and $N(\tilde q \tilde p) = N(\tilde q)N(\tilde p)$ shows that the non-units are exactly the nonzero null elements. The continuous surjection $N : \mathbb{H}_{\mathrm{s}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
 
 The identity component $\{N>0\} \cong GL_2^+(\mathbb{R})$ is the part of the group acting by the orientation-preserving half of the Lorentz action; the component $\{N<0\}$ acts by Lorentz transformations reversing time orientation, as in *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -75,15 +75,15 @@ $$
 
 ## The Group Law
 
-The exponential is not a group homomorphism from the additive group of the algebra: $\exp(\tilde q)\exp(y) \neq \exp(\tilde q+y)$ whenever $[\tilde q,y] \neq 0$. The correct statement is the **Baker–Campbell–Hausdorff formula**, whose first terms are
+The exponential is not a group homomorphism from the additive group of the algebra: $\exp(\tilde q)\exp(\tilde p) \neq \exp(\tilde q+\tilde p)$ whenever $[\tilde q,\tilde p] \neq 0$. The correct statement is the **Baker–Campbell–Hausdorff formula**, whose first terms are
 
 $$
-\log\bigl(e^{\tilde q} e^y\bigr) = \tilde q + y + \tfrac{1}{2}[\tilde q,y] + \tfrac{1}{12}\bigl([\tilde q,[\tilde q,y]] - [y,[y,\tilde q]]\bigr) + \cdots,
+\log\bigl(e^{\tilde q} e^\tilde p\bigr) = \tilde q + \tilde p + \tfrac{1}{2}[\tilde q,\tilde p] + \tfrac{1}{12}\bigl([\tilde q,[\tilde q,\tilde p]] - [\tilde p,[\tilde p,\tilde q]]\bigr) + \cdots,
 $$
 
-a series in the free Lie algebra on $\tilde q,y$, convergent near the origin. Consequently the exponential is a local diffeomorphism from a neighbourhood of $0$ on the algebra to a neighbourhood of $1$ in the group of units, with local inverse the logarithm.
+a series in the free Lie algebra on $\tilde q,\tilde p$, convergent near the origin. Consequently the exponential is a local diffeomorphism from a neighbourhood of $0$ on the algebra to a neighbourhood of $1$ in the group of units, with local inverse the logarithm.
 
-**Example.** For $\tilde q = e_1$ and $y = e_2$ one has $e^{e_1}e^{e_2} \neq e^{e_1+e_2}$, because $[e_1,e_2] = 2e_3 \neq 0$; indeed $\log(e^{e_1}e^{e_2}) - (e_1+e_2)$ begins at second order with $\tfrac12[e_1,e_2] = e_3$.
+**Example.** For $\tilde q = e_1$ and $\tilde p = e_2$ one has $e^{e_1}e^{e_2} \neq e^{e_1+e_2}$, because $[e_1,e_2] = 2e_3 \neq 0$; indeed $\log(e^{e_1}e^{e_2}) - (e_1+e_2)$ begins at second order with $\tfrac12[e_1,e_2] = e_3$.
 
 ## Surjectivity of the Exponential
 
@@ -103,7 +103,7 @@ $$
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 
-**Proof.** $e^{2\pi k\mathbf u} = \cos(2\pi k) + \sin(2\pi k)\mathbf u = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $e^{y} = 1$ for real $y$, then $y$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $y$ is traceless with $y^2 = -(2\pi k)^2$, i.e. $y = 2\pi k\,\mathbf u$ with $\mathbf u$ a root of $-1$ (or $y = 0$).
+**Proof.** $e^{2\pi k\mathbf u} = \cos(2\pi k) + \sin(2\pi k)\mathbf u = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $e^{\tilde p} = 1$ for real $\tilde p$, then $\tilde p$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde p$ is traceless with $\tilde p^2 = -(2\pi k)^2$, i.e. $\tilde p = 2\pi k\,\mathbf u$ with $\mathbf u$ a root of $-1$ (or $\tilde p = 0$).
 
 Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -186,7 +186,7 @@ The exponential has the closed form displayed above, with the sign of $N(\mathbf
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, $\cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
-| $[\tilde q,y] = \tilde q y - y\tilde q$ | the commutator making the algebra a Lie algebra | this article |
+| $[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$ | the commutator making the algebra a Lie algebra | this article |
 | $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | the traceless elements under the bracket | *Split-Quaternion Scalar and Vector Subspaces* |
 | $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\}$ | the group of units, $\cong GL_2(\mathbb{R})$, two components | this article |
 | $U = \{N=1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group | *Split-Quaternion Norm and Invertibility* |

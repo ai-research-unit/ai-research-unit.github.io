@@ -47,7 +47,7 @@ $$
 
 a point $\{q_0\}$ when $\tilde q$ is real and a two-sphere of radius $|\mathrm{Vect}\tilde q|$ about the real point $q_0$ otherwise.
 
-*Proof.* $qv = \lambda v$ with $v = 1$ gives $\lambda = \tilde q$, and conversely $(\tilde q-\lambda)v = 0$ with $v\neq0$ forces $\tilde q = \lambda$ because $\mathbb{H}$ has no zero divisors; this is the left spectrum. For the right spectrum, $qv = v\lambda$ gives $\lambda = v^{-1}qv$, and the map $v\mapsto v^{-1}qv$ is the conjugacy action, which fixes the real part and rotates the vector part; the vector part of $v^{-1}qv$ has the same modulus as $\mathrm{Vect}\tilde q$, and every vector of that modulus is attained.
+*Proof.* $\tilde q v = \lambda v$ with $v = 1$ gives $\lambda = \tilde q$, and conversely $(\tilde q-\lambda)v = 0$ with $v\neq0$ forces $\tilde q = \lambda$ because $\mathbb{H}$ has no zero divisors; this is the left spectrum. For the right spectrum, $\tilde q v = v\lambda$ gives $\lambda = v^{-1}\tilde q v$, and the map $v\mapsto v^{-1}\tilde q v$ is the conjugacy action, which fixes the real part and rotates the vector part; the vector part of $v^{-1}\tilde q v$ has the same modulus as $\mathrm{Vect}\tilde q$, and every vector of that modulus is attained.
 
 **Corollary.** For a non-real quaternion the left and right spectra differ: the left spectrum is a single point, the right spectrum a two-sphere. For a real quaternion both are the point $\{q_0\}$.
 
@@ -157,7 +157,7 @@ and the **geometric multiplicity** of the class is its dimension as a right $\ma
 
 **Proposition (left eigenspace).** For $\lambda\in\sigma_L(M)$ the **left eigenspace** $\{v : Mv = \lambda v\}$ is a right $\mathbb{H}$-subspace; for a single quaternion with $\lambda = \tilde q$ it is all of $\mathbb{H}$.
 
-*Proof.* If $Mv = \lambda v$ and $Mw = \lambda w$, then $M(v\alpha+w\beta) = \lambda v\alpha+\lambda w\beta = \lambda(v\alpha+w\beta)$, so the set is a right $\mathbb{H}$-subspace; for $[\tilde q]$ and $\lambda = \tilde q$ every $v$ satisfies $qv = qv$.
+*Proof.* If $Mv = \lambda v$ and $Mw = \lambda w$, then $M(v\alpha+w\beta) = \lambda v\alpha+\lambda w\beta = \lambda(v\alpha+w\beta)$, so the set is a right $\mathbb{H}$-subspace; for $[\tilde q]$ and $\lambda = \tilde q$ every $v$ satisfies $\tilde q v = \tilde q v$.
 
 **Corollary.** For a single quaternion the left eigenspace is all of $\mathbb{H}$ (dimension one over $\mathbb{H}$) while the right eigenspace attached to the fixed representative $\tilde q$ is a complex line (real dimension two); this is the eigenspace reflection of the fact that the left spectrum is a point and the right spectrum a sphere.
 

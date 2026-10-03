@@ -17,19 +17,19 @@ Throughout, the language of arithmetic is $\mathcal{L}_A = \{0, S, +, \cdot, <\}
 
 | | Axiom |
 |---|---|
-| (PA1) | $\forall x\, (S x \neq 0)$ |
-| (PA2) | $\forall x \forall y\, (S x = S y \to x = y)$ |
-| (PA3) | $\forall x\, (x \neq 0 \to \exists y\, x = S y)$ |
-| (PA4) | $\forall x\, (x + 0 = x)$ |
-| (PA5) | $\forall x \forall y\, (x + S y = S(x + y))$ |
-| (PA6) | $\forall x\, (x \cdot 0 = 0)$ |
-| (PA7) | $\forall x \forall y\, (x \cdot S y = x \cdot y + x)$ |
-| (PA8) | $\forall x \forall y\, (x < y \leftrightarrow \exists z\, (x + S z = y))$ |
+| (PA1) | $\forall n\, (S n \neq 0)$ |
+| (PA2) | $\forall n \forall m\, (S n = S m \to n = m)$ |
+| (PA3) | $\forall n\, (n \neq 0 \to \exists m\, n = S m)$ |
+| (PA4) | $\forall n\, (n + 0 = n)$ |
+| (PA5) | $\forall n \forall m\, (n + S m = S(n + m))$ |
+| (PA6) | $\forall n\, (n \cdot 0 = 0)$ |
+| (PA7) | $\forall n \forall m\, (n \cdot S m = n \cdot m + n)$ |
+| (PA8) | $\forall n \forall m\, (n < m \leftrightarrow \exists k\, (n + S k = m))$ |
 
-together with the **induction schema**: for every formula $\varphi(x, \bar y)$ of $\mathcal{L}_A$, the sentence
+together with the **induction schema**: for every formula $\varphi(n, \bar m)$ of $\mathcal{L}_A$, the sentence
 
 $$
-\forall \bar y\, \Bigl( \varphi(0, \bar y) \wedge \forall x\, \bigl(\varphi(x, \bar y) \to \varphi(S x, \bar y)\bigr) \to \forall x\, \varphi(x, \bar y) \Bigr).
+\forall \bar m\, \Bigl( \varphi(0, \bar m) \wedge \forall n\, \bigl(\varphi(n, \bar m) \to \varphi(S n, \bar m)\bigr) \to \forall n\, \varphi(n, \bar m) \Bigr).
 $$
 
 Axioms (PA1)–(PA3) are the successor axioms, (PA4)–(PA7) define addition and multiplication by recursion, and (PA8) defines the order. The induction schema is a *schema*: it is one axiom for each formula, and it is this schema, rather than the single second-order induction axiom of *The Natural Numbers*, that makes PA a first-order theory.
@@ -40,25 +40,25 @@ Axioms (PA1)–(PA3) are the successor axioms, (PA4)–(PA7) define addition and
 
 ### Elementary Consequences
 
-**Theorem.** PA proves the following, for all $x, y, z$:
+**Theorem.** PA proves the following, for all $n, m, k$:
 
 $$
-x + y = y + x, \qquad (x+y)+z = x+(y+z), \qquad x \cdot y = y \cdot x, \qquad (x \cdot y)\cdot z = x\cdot(y\cdot z),
+n + m = m + n, \qquad (n+m)+k = n+(m+k), \qquad n \cdot m = m \cdot n, \qquad (n \cdot m)\cdot k = n\cdot(m\cdot k),
 $$
 
 $$
-x \cdot (y + z) = x\cdot y + x \cdot z, \qquad x + 0 = x = 0 + x, \qquad x \cdot 1 = x, \qquad x \cdot 0 = 0 ,
+n \cdot (m + k) = n\cdot m + n \cdot k, \qquad n + 0 = n = 0 + n, \qquad n \cdot 1 = n, \qquad n \cdot 0 = 0 ,
 $$
 
 and the relation $<$ is a discrete linear order with least element $0$ in which every element has an immediate successor and every nonzero element has an immediate predecessor.
 
-**Proof.** Each semiring law is proved by induction, using the appropriate instance of the induction schema; the proofs are the formal counterparts of the inductions of *The Natural Numbers*. The order properties follow from (PA8): trichotomy and transitivity by induction on the witnesses, discreteness because $S x$ is the immediate successor of $x$ and every nonzero element is a successor by (PA3).
+**Proof.** Each semiring law is proved by induction, using the appropriate instance of the induction schema; the proofs are the formal counterparts of the inductions of *The Natural Numbers*. The order properties follow from (PA8): trichotomy and transitivity by induction on the witnesses, discreteness because $S n$ is the immediate successor of $n$ and every nonzero element is a successor by (PA3).
 
 **Theorem.** PA proves the division algorithm and the existence and uniqueness of prime factorisation; that is, the arithmetic of $\mathbb{N}$ developed in *The Natural Numbers* is formalised in PA.
 
 **Proof.** The division algorithm is proved by induction on the dividend, using (PA8) to compare remainders. The existence of factorisations is proved by strong induction, which is derivable from the induction schema, and uniqueness uses the formalised Euclidean algorithm; the details are standard and are in the references.
 
-**Theorem (arithmetical hierarchy).** The formulas of $\mathcal{L}_A$ are stratified by the **arithmetical hierarchy** $\Sigma_n$, $\Pi_n$: $\Sigma_0 = \Pi_0$ is the class of formulas with only bounded quantifiers, $\Sigma_{n+1}$ is the class of formulas $\exists \bar x\, \psi$ with $\psi \in \Pi_n$, and $\Pi_{n+1}$ is the class of formulas $\forall \bar x\, \psi$ with $\psi \in \Sigma_n$. PA is **$\Sigma_1$-complete**: every true $\Sigma_1$ sentence is a theorem of PA, and every true $\Sigma_1$ sentence is provable already in Q.
+**Theorem (arithmetical hierarchy).** The formulas of $\mathcal{L}_A$ are stratified by the **arithmetical hierarchy** $\Sigma_n$, $\Pi_n$: $\Sigma_0 = \Pi_0$ is the class of formulas with only bounded quantifiers, $\Sigma_{n+1}$ is the class of formulas $\exists \bar n\, \psi$ with $\psi \in \Pi_n$, and $\Pi_{n+1}$ is the class of formulas $\forall \bar n\, \psi$ with $\psi \in \Sigma_n$. PA is **$\Sigma_1$-complete**: every true $\Sigma_1$ sentence is a theorem of PA, and every true $\Sigma_1$ sentence is provable already in Q.
 
 **Proof.** The $\Sigma_1$-completeness is proved by formalising the computation of the witnesses inside PA, using the fact that the proof predicate is primitive recursive and that Q proves the defining equations of the primitive recursive functions. The argument is in *Proof Theory and Type Theory*.
 
@@ -92,15 +92,15 @@ where $D$ is a dense linear order without endpoints.
 
 **Proof.** For nonstandard $a$, the map $n \mapsto a + n$ for $n \in \mathbb{Z}$ is injective and order-preserving by cancellation in $\mathcal{M}$, and the set $B_a = \{a + n : n \in \mathbb{Z}\}$ is convex in $M$; so each block has order type $\mathbb{Z}$. The blocks are ordered by $B_a < B_b$ if $a < b$, and this order is dense: if $a < b$ lie in distinct blocks, then $b - a$ is greater than every standard number, and $c = \lfloor (a+b)/2 \rfloor$, computed in $\mathcal{M}$, is nonstandard and satisfies $a < c < b$, so $B_a < B_c < B_b$. There is no least block above the standard part, because for nonstandard $a$ the element $\lfloor a/2 \rfloor$ is nonstandard and lies in a strictly lower block, and no greatest block, because $2a$ lies in a strictly higher one. Hence the nonstandard part is a densely ordered family of $\mathbb{Z}$-blocks with no endpoints.
 
-**Theorem (overspill).** Let $\mathcal{M}$ be a nonstandard model of PA and let $\varphi(x)$ be a formula with parameters in $M$ such that $\mathcal{M} \models \varphi(n)$ for every standard $n$. Then there is a nonstandard $b \in M$ with $\mathcal{M} \models \varphi(b)$.
+**Theorem (overspill).** Let $\mathcal{M}$ be a nonstandard model of PA and let $\varphi(n)$ be a formula with parameters in $M$ such that $\mathcal{M} \models \varphi(n)$ for every standard $n$. Then there is a nonstandard $b \in M$ with $\mathcal{M} \models \varphi(b)$.
 
-**Proof.** Let $A = \{x \in M : \mathcal{M} \models \varphi(x)\}$. Then $A$ contains the standard part and is closed under successor there, because the successor of a standard element is standard and satisfies $\varphi$. If $A$ contained no nonstandard element, then $A$ would be exactly the standard part, and the formula $\varphi$ would satisfy $\mathcal{M} \models \varphi(0) \wedge \forall x(\varphi(x) \to \varphi(Sx))$, since every element of $A$ is standard and has its successor in $A$. The induction schema in $\mathcal{M}$ would then give $\mathcal{M} \models \forall x\, \varphi(x)$, contradicting that $\mathcal{M}$ has nonstandard elements outside $A$. Hence $A$ contains a nonstandard element.
+**Proof.** Let $A = \{n \in M : \mathcal{M} \models \varphi(n)\}$. Then $A$ contains the standard part and is closed under successor there, because the successor of a standard element is standard and satisfies $\varphi$. If $A$ contained no nonstandard element, then $A$ would be exactly the standard part, and the formula $\varphi$ would satisfy $\mathcal{M} \models \varphi(0) \wedge \forall n(\varphi(n) \to \varphi(Sn))$, since every element of $A$ is standard and has its successor in $A$. The induction schema in $\mathcal{M}$ would then give $\mathcal{M} \models \forall n\, \varphi(n)$, contradicting that $\mathcal{M}$ has nonstandard elements outside $A$. Hence $A$ contains a nonstandard element.
 
-**Corollary.** The standard part is not definable in any nonstandard model, and there is no formula $\sigma(x)$ of $\mathcal{L}_A$ such that $\mathcal{M} \models \sigma(a)$ for exactly the standard $a$. If a definable subset of $M$ is bounded above by a standard element, then it is finite and contained in the standard part, since no element below a standard element is nonstandard.
+**Corollary.** The standard part is not definable in any nonstandard model, and there is no formula $\sigma(n)$ of $\mathcal{L}_A$ such that $\mathcal{M} \models \sigma(a)$ for exactly the standard $a$. If a definable subset of $M$ is bounded above by a standard element, then it is finite and contained in the standard part, since no element below a standard element is nonstandard.
 
-**Corollary (underspill).** Let $\varphi(x)$ hold for all sufficiently small nonstandard $x$ in the sense that there is a nonstandard $b$ with $\mathcal{M} \models \forall x < b\, \varphi(x)$. Then $\varphi(n)$ holds for some standard $n$.
+**Corollary (underspill).** Let $\varphi(n)$ hold for all sufficiently small nonstandard $n$ in the sense that there is a nonstandard $b$ with $\mathcal{M} \models \forall n < b\, \varphi(n)$. Then $\varphi(n)$ holds for some standard $n$.
 
-**Proof.** Suppose $\varphi(n)$ fails for every standard $n$. The formula $x < b \wedge \neg\varphi(x)$ then holds at every standard $x$, because $b$ is nonstandard and $\neg\varphi(n)$ holds by the supposition; overspill gives a nonstandard $c$ satisfying it, so $c < b$ and $\neg\varphi(c)$, contradicting $\mathcal{M} \models \forall x < b\, \varphi(x)$.
+**Proof.** Suppose $\varphi(n)$ fails for every standard $n$. The formula $n < b \wedge \neg\varphi(n)$ then holds at every standard $n$, because $b$ is nonstandard and $\neg\varphi(n)$ holds by the supposition; overspill gives a nonstandard $c$ satisfying it, so $c < b$ and $\neg\varphi(c)$, contradicting $\mathcal{M} \models \forall n < b\, \varphi(n)$.
 
 ## Incompleteness and the Arithmetic of Provability
 
@@ -128,13 +128,13 @@ which is a $\Pi_1$ sentence.
 
 **Corollary.** PA is incomplete, and no recursively axiomatisable consistent theory extending PA is complete; in particular $\operatorname{Th}(\mathbb{N})$ is not recursively axiomatisable. The independent sentences include the consistency statement $\mathrm{Con}_{\mathrm{PA}}$, the Rosser sentence, the Paris–Harrington sentence and the Goodstein sentences.
 
-**Theorem (Tarski).** The set $\operatorname{Th}(\mathbb{N})$ is not definable in $\mathbb{N}$: there is no formula $\tau(x)$ of $\mathcal{L}_A$ such that for every sentence $\sigma$, $\mathbb{N} \models \tau(\#\sigma) \leftrightarrow \sigma$.
+**Theorem (Tarski).** The set $\operatorname{Th}(\mathbb{N})$ is not definable in $\mathbb{N}$: there is no formula $\tau(n)$ of $\mathcal{L}_A$ such that for every sentence $\sigma$, $\mathbb{N} \models \tau(\#\sigma) \leftrightarrow \sigma$.
 
-**Proof.** If such a $\tau$ existed, the diagonal lemma applied to $\neg\tau(x)$ would produce a sentence $\lambda$ with $\mathbb{N} \models \lambda \leftrightarrow \neg \tau(\#\lambda)$, contradicting the definition of $\tau$ at $\sigma = \lambda$. This is Tarski's undefinability theorem.
+**Proof.** If such a $\tau$ existed, the diagonal lemma applied to $\neg\tau(n)$ would produce a sentence $\lambda$ with $\mathbb{N} \models \lambda \leftrightarrow \neg \tau(\#\lambda)$, contradicting the definition of $\tau$ at $\sigma = \lambda$. This is Tarski's undefinability theorem.
 
 ### Decidable Fragments and Definability
 
-**Theorem (Presburger).** The theory of $(\mathbb{N}, 0, S, +, <)$ is complete, decidable and admits quantifier elimination after the addition of the divisibility predicates $n \mid x$ for each positive integer $n$.
+**Theorem (Presburger).** The theory of $(\mathbb{N}, 0, S, +, <)$ is complete, decidable and admits quantifier elimination after the addition of the divisibility predicates $n \mid m$ for each positive integer $n$.
 
 **Proof.** The quantifier-elimination procedure is Presburger's and the decidability follows because the resulting quantifier-free sentences are decidable by computation; the details are in *Model Theory* and *Formal Logic and Computability*.
 

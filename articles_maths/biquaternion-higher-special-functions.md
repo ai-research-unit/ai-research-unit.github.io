@@ -236,7 +236,7 @@ The same analysis applies: in the pure oscillatory regime, the series splits int
 The **gamma function** of a complex variable is defined by the integral
 
 $$
-\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt, \qquad \operatorname{Re} z > 0.
+\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt, \qquad \operatorname{Re} A > 0.
 $$
 
 The natural extension to a biquaternion variable would be
@@ -339,7 +339,7 @@ $$
 
 It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
-In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/z$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
+In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
 In the nilpotent regime, $\tilde{G}(\mathbf{Q}) = -\mathbf{Q}/\|\mathbf{Q}\|_E^4$, which is singular at the origin.
 
@@ -348,17 +348,17 @@ In the nilpotent regime, $\tilde{G}(\mathbf{Q}) = -\mathbf{Q}/\|\mathbf{Q}\|_E^4
 The **Poisson kernel** for the ball of radius $r$ is
 
 $$
-P(\tilde{Q}, \tilde{Y}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{Y}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{Y}\|_E = r.
+P(\tilde{Q}, \tilde{U}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{U}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{U}\|_E = r.
 $$
 
 It is the kernel that solves the Dirichlet problem for the d'Alembertian on the ball. It is the biquaternion analogue of the Poisson kernel in complex analysis.
 
 ### The Green's Function
 
-The **Green's function** for the d'Alembertian on a domain $\Omega$ is the function $G(\tilde{Q}, \tilde{Y})$ that satisfies
+The **Green's function** for the d'Alembertian on a domain $\Omega$ is the function $G(\tilde{Q}, \tilde{U})$ that satisfies
 
 $$
-\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{Y}) = \delta(\tilde{Q} - \tilde{Y}) e_0, \qquad G(\tilde{Q}, \tilde{Y}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
+\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{U}) = \delta(\tilde{Q} - \tilde{U}) e_0, \qquad G(\tilde{Q}, \tilde{U}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
 $$
 
 Its construction is standard from the fundamental solution of the d'Alembertian, and it is the biquaternion analogue of the Green's function in the theory of elliptic partial differential equations.

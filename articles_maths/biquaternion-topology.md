@@ -34,17 +34,17 @@ It is closed, with empty interior, so $\mathbb{B}^\times$ is dense; it is a real
 
 Choose on $\mathbb{B}$ the linear coordinates
 $$
-X_0=Q_0-iQ_3,\qquad X_1=-iQ_1-Q_2,\qquad X_2=-iQ_1+Q_2,\qquad X_3=Q_0+iQ_3,
+Z_0=Q_0-iQ_3,\qquad Z_1=-iQ_1-Q_2,\qquad Z_2=-iQ_1+Q_2,\qquad Z_3=Q_0+iQ_3,
 $$
 an invertible $\mathbb{C}$-linear change of the coordinates $Q_0,\dots,Q_3$. In them the norm is a split form,
 $$
-N(\tilde{Q})=\sum_{\mu=0}^{3}Q_\mu^2=X_0X_3-X_1X_2,
+N(\tilde{Q})=\sum_{\mu=0}^{3}Q_\mu^2=Z_0Z_3-Z_1Z_2,
 $$
-since $X_0X_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $X_1X_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $X_0X_3=X_1X_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
+since $Z_0Z_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $Z_1Z_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $Z_0Z_3=Z_1Z_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
 $$
-(X_0,X_1,X_2,X_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
+(Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
 $$
-lies on the null cone, since $\alpha\gamma\cdot\beta\delta=\alpha\delta\cdot\beta\gamma$, and conversely every null point is of this form: if $X_0\neq0$ the pair $u=(1,X_2/X_0)$, $v=(X_0,X_1)$ reproduces it, and the other cases are the same argument applied to a coordinate that is nonzero. The pair is determined only up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
+lies on the null cone, since $\alpha\gamma\cdot\beta\delta=\alpha\delta\cdot\beta\gamma$, and conversely every null point is of this form: if $Z_0\neq0$ the pair $u=(1,Z_2/Z_0)$, $v=(Z_0,Z_1)$ reproduces it, and the other cases are the same argument applied to a coordinate that is nonzero. The pair is determined only up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. Projectivising gives the **Segre embedding**
 $$
 s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\mapsto[\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta],
 $$
@@ -58,13 +58,13 @@ The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\math
 
 In the coordinates above the polar form of $N$ is
 $$
-B(X,Y)=\tfrac12\bigl(X_0Y_3+X_3Y_0-X_1Y_2-X_2Y_1\bigr),
+B(\tilde R,\tilde S)=\tfrac12\bigl(Z_0Z'_3+Z_3Z'_0-Z_1Z'_2-Z_2Z'_1\bigr),
 $$
-the polarisation of $X_0X_3-X_1X_2$, with $B(X,X)=N(X)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
+the polarisation of $Z_0Z_3-Z_1Z_2$, with $B(\tilde R,\tilde R)=N(\tilde R)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
 $$
 W_{[u]}=\operatorname{span}\{(\alpha,0,\beta,0),\,(0,\alpha,0,\beta)\}=\{(\alpha\sigma,\alpha\tau,\beta\sigma,\beta\tau):\sigma,\tau\in\mathbb{C}\}
 $$
-is totally isotropic: for $X$ built from $\sigma,\tau$ and $Y$ from $\sigma',\tau'$ the form above gives $B(X,Y)=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a **null plane**, and the same holds for
+is totally isotropic: for $\tilde R$ built from $\sigma,\tau$ and $\tilde S$ from $\sigma',\tau'$ the form above gives $B(\tilde R,\tilde S)=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a **null plane**, and the same holds for
 $$
 W^{[v]}=\operatorname{span}\{(\gamma,\delta,0,0),\,(0,0,\gamma,\delta)\},\qquad [v]=[\gamma:\delta].
 $$
@@ -83,11 +83,11 @@ Its real points depend on the real form of *Biquaternion Norm and Invertibility*
 
 ## Lines in $\mathbb{P}^3$, the Klein quadric, and the Plücker embedding
 
-A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $x,y$ of $U$, the **Plücker coordinates** are the six minors
+A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $\tilde Q,\tilde P$ of $U$, the **Plücker coordinates** are the six minors
 $$
-p_{ij}=x_iy_j-x_jy_i,\qquad 0\le i < j\le3,
+p_{ij}=Q_iP_j-Q_jP_i,\qquad 0\le i < j\le3,
 $$
-the coordinates of the decomposable bivector $x\wedge y\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the **Plücker embedding**
+the coordinates of the decomposable bivector $\tilde Q\wedge\tilde P\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the **Plücker embedding**
 $$
 \mathrm{Gr}(2,4)\hookrightarrow\mathbb{P}(\Lambda^2\mathbb{C}^4)=\mathbb{P}^5,
 $$
@@ -194,7 +194,7 @@ Finally, on either pure reality slice the restricted norm is definite, being $q_
 - The null cone $\mathcal{N}=\{N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z}$ is a closed real algebraic cone of real dimension $6$, irreducible, with the origin as its only singular point; it is a manifold away from the apex and non-manifold at the apex, and contractible, being the cone on its link; punctured, it is exactly the zero-divisor set.
 - The link $L=\mathcal{N}\cap S^7_E$ is a closed connected $5$-manifold, an $S^1$-bundle over $S^2\times S^2$, simply connected with $\pi_2(L)\cong\mathbb{Z}$. Since $\pi_2(S^5)=0$, the apex is genuinely singular.
 - The projectivised null cone is the smooth quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, the Segre quadric; the null cone is the affine cone over it, and its two rulings are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$.
-- In the coordinates of §*The Segre embedding* the norm is $X_0X_3-X_1X_2$ and the polar form is $B$; the quadric is the locus of self-polar points, and the polarity gives the tangency, with $Q^2\cap[\tilde{P}]^\perp=\ell_{[u]}\cup m_{[v]}$ at a point of the quadric.
+- In the coordinates of §*The Segre embedding* the norm is $Z_0Z_3-Z_1Z_2$ and the polar form is $B$; the quadric is the locus of self-polar points, and the polarity gives the tangency, with $Q^2\cap[\tilde{P}]^\perp=\ell_{[u]}\cup m_{[v]}$ at a point of the quadric.
 - The quadric sits in the Plücker–Klein geometry of the lines of $\mathbb{P}^3$; its rulings are two conics on the Klein quadric. $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, while $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$, not the automorphism group of the complex quadric.
 - The pure subspace $P\cong\mathbb{C}^3$ is contractible. In its real slice $P\cap\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^3$ the unit sphere is the sphere of real roots of $-1$, $S^2$, which is compact, connected and simply connected with $\pi_2(S^2)\cong\mathbb{Z}$ and is not a group.
 - The restricted norm is definite on each pure real slice, so the light cone of the Minkowski slices meets those slices only at the apex.
@@ -212,11 +212,11 @@ Finally, on either pure reality slice the restricted norm is definite, being $q_
 | $L = \mathcal{N} \cap S^7_E$ | Link of the null cone; $S^1$-bundle over $S^2 \times S^2$, $\pi_1 = 0$, $\pi_2 \cong \mathbb{Z}$ |
 | $Q^2 = \mathbb{P}(\mathcal{N}) \cong \mathbb{P}^1 \times \mathbb{P}^1$ | Projectivised null cone, the Segre quadric |
 | $B(\tilde{P},\tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polar form of $N$, the complex bilinear dot product; $B(e_\mu,e_\nu) = \delta_{\mu\nu}$ |
-| $X_0,\dots,X_3$ | Linear coordinates on $\mathbb{B}$ in which $N = X_0X_3 - X_1X_2$; see §*The Segre embedding* |
+| $Z_0,\dots,Z_3$ | Linear coordinates on $\mathbb{B}$ in which $N = Z_0Z_3 - Z_1Z_2$; see §*The Segre embedding* |
 | $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$; its image is $Q^2$ |
 | $[u] = [\alpha:\beta]$, $[v] = [\gamma:\delta]$ | The two factors of a null point, determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ |
 | $\ell_{[u]}, m_{[v]}$ | The two rulings of $Q^2$; the lines through $[\tilde{P}] \in Q^2$ |
-| $p_{ij} = x_i y_j - x_j y_i$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
+| $p_{ij} = Q_i P_j - Q_j P_i$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
 | $\operatorname{Aut}(Q^2) \cong PO_4(\mathbb{C})$ | Projective automorphisms of the quadric |
 | $P = \{Q_0 = 0\} \cong \mathbb{C}^3$ | Pure biquaternions; contractible |
 | $S^2 = \{\mu \in \mathbb{H}_{\mathbb{B}} : \mu^2 = -e_0\}$ | Sphere of real roots of $-1$ |

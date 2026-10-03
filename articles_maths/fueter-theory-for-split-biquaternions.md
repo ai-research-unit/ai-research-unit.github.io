@@ -75,13 +75,13 @@ with the ordinary measures on $\mathbb{R}^4$, the property following from the fa
 
 ### The Axial Extension of a Holomorphic Function
 
-Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(z) = u(x,y) + iv(x,y)$ with $z = x+iy$ and $u,v$ real-valued, so that $u,v$ are harmonic and satisfy $u_x = v_y$, $u_y = -v_x$. The **axial extension** of $f_0$ is
+Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(C) = u(c,c') + iv(c,c')$ with $C = c+ic'$ and $u,v$ real-valued, so that $u,v$ are harmonic and satisfy $u_c = v_{c'}$, $u_{c'} = -v_c$. The **axial extension** of $f_0$ is
 
 $$
 \tilde{f}_0(\tilde{Q}) = u(q_0,\rho) + \hat{\mathbf{q}}\,v(q_0,\rho) ,
 $$
 
-defined for $\rho > 0$ by replacing $x$ by $q_0$, $y$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.
+defined for $\rho > 0$ by replacing $c$ by $q_0$, $c'$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.
 
 ### Fueter's Theorem
 
@@ -97,7 +97,7 @@ is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is bo
 
 ### The Kernel and Injectivity
 
-**Proposition.** The map $\tau(f_0) = \Delta_4\tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(z) = az+b$ with $a,b \in \mathbb{C}$.
+**Proposition.** The map $\tau(f_0) = \Delta_4\tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(C) = aC+b$ with $a,b \in \mathbb{C}$.
 
 **Proof.** $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$ and $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0+d$ with $c,d \in \mathbb{R}$, and complex linearity gives all affine functions; conversely $\Delta_4$ annihilates affine functions.
 
@@ -125,7 +125,7 @@ eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmon
 
 **Theorem (Fueter–Sce).** Let $n \geq 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde{f}_0$ to $\mathbb{R}^{n+1}$. Then $\tilde{F} = \Delta^{(n-1)/2}\tilde{f}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
 
-Three hypotheses are needed and none can be dropped: $f_0$ must be **holomorphic** on the disc, so its Taylor series converges there; the construction has the **affine kernel** $az+b$, so injectivity requires the Taylor coefficients to vanish to order two; and the **parity** $(n-1)/2$ must be a non-negative integer, so $n$ must be odd.
+Three hypotheses are needed and none can be dropped: $f_0$ must be **holomorphic** on the disc, so its Taylor series converges there; the construction has the **affine kernel** $aC+b$, so injectivity requires the Taylor coefficients to vanish to order two; and the **parity** $(n-1)/2$ must be a non-negative integer, so $n$ must be odd.
 
 ## Power Series Representations
 

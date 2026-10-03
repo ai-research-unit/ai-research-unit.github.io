@@ -45,7 +45,7 @@ Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whene
 
 **Theorem (unitarity).** The reflection $\rho_u$ is unitary, $(\rho_u)^\dagger\rho_u = \rho_u(\rho_u)^\dagger = \mathrm{id}$, if and only if the defect is central and $\delta(u) = u^{-1}$ modulo the centre; equivalently, $\rho_u$ is unitary if and only if $\rho_{\delta(u)} = \rho_{u^{-1}}$, that is the adjoint is the inverse reflection.
 
-**Proof.** $\rho_u$ is unitary iff $(\rho_u)^\dagger = (\rho_u)^{-1} = \rho_{u^{-1}}$; by the explicit form of the adjoint this is $\rho_{\delta(u)} = \rho_{u^{-1}}$, that is $u\,\delta(u) = u\,\delta(u)$... the condition reads $\rho_{\delta(u)} = \rho_{u^{-1}}$; modulo the centre of the parametrisation this is $\delta(u) = u^{-1}$, and the defect $\delta(u)u^{-1} = u^{-2}$ being central is the centrality condition. $\square$
+**Proof.** $\rho_u$ is unitary iff $(\rho_u)^\dagger = (\rho_u)^{-1} = \rho_{u^{-1}}$; by the explicit form of the adjoint this is $\rho_{\delta(u)} = \rho_{u^{-1}}$, which by the kernel of the parametrisation is the centrality of $u\,\delta(u)$; modulo the centre of the parametrisation this is $\delta(u) = u^{-1}$, and the defect $\delta(u)u^{-1} = u^{-2}$ being central is the centrality condition. $\square$
 
 ## The Failure and Examples
 

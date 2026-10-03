@@ -60,12 +60,12 @@ $$
 **Corollary.** The images of the basis are, up to the factor $-i$, the Pauli matrices, and the image of the real quaternion algebra $\iota(\mathbb{H})$ is the set
 
 $$
-\left\{ \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix} : z, w\in\mathbb{C} \right\},
+\left\{ \begin{pmatrix} A & B \\ -\bar B & \bar A \end{pmatrix} : A, B\in\mathbb{C} \right\},
 $$
 
 a four-dimensional real subspace of $M_2(\mathbb{C})$.
 
-*Proof.* Write $z = q_0-iq_3$, $w = -iq_1-q_2$ for real $q_\mu$; then the lower-left entry is $-i q_1+q_2 = -\bar w$ and the lower-right is $q_0+iq_3 = \bar z$. Conversely every such matrix arises from the real quadruple $(q_0,q_1,q_2,q_3) = (\operatorname{Re}z, -\operatorname{Re}w, -\operatorname{Im}w, -\operatorname{Im}z)$.
+*Proof.* Write $A = q_0-iq_3$, $B = -iq_1-q_2$ for real $q_\mu$; then the lower-left entry is $-i q_1+q_2 = -\bar B$ and the lower-right is $q_0+iq_3 = \bar A$. Conversely every such matrix arises from the real quadruple $(q_0,q_1,q_2,q_3) = (\operatorname{Re}A, -\operatorname{Re}B, -\operatorname{Im}B, -\operatorname{Im}A)$.
 
 ## Trace and Determinant
 
@@ -223,7 +223,7 @@ The pattern is that a $2\times2$ matrix realisation over a commutative ring exis
 
 The complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is a four-dimensional complex algebra isomorphic to $M_2(\mathbb{C})$, through the map sending $e_0\mapsto I$ and $e_k\mapsto-i\sigma_k$, with $\Phi(\tilde Q) = Q_0I-i\sum_k Q_k\sigma_k$; the choice is fixed once and is not canonical. The trace of an image is twice the scalar coordinate and the determinant is the quaternion norm, $N(\tilde Q) = \sum_\mu Q_\mu^2$, so invertibility over $\mathbb{R}$ is non-vanishing determinant, and the determinant is a perfect square no longer: over $\mathbb{C}$ it is an arbitrary complex number.
 
-The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$ after complexification.
+The image of the real quaternion algebra is the four-dimensional real space of matrices $\begin{pmatrix} A & B \\ -\bar B & \bar A \end{pmatrix}$, on which the quaternion norm is the determinant and the inner product matches half the Frobenius form, $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2|\tilde q|^2$. Quaternion conjugation is the adjugate, equivalently the antisymmetric-form-dressed transpose $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ with $\epsilon = i\sigma_2$; the scalar subspace maps to the real scalar matrices and the vector subspace to the traceless matrices, giving $M_2(\mathbb{C}) = \mathbb{C}I\oplus\mathrm{SL}_2(\mathbb{C})$ after complexification.
 
 There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its image would be all of $M_2(\mathbb{R})$, which has zero divisors while $\mathbb{H}$ has none; the smallest real representation is the $4\times4$ regular one. The biquaternion algebra is $M_2(\mathbb{C})$ without extension of coefficients, and the split biquaternion algebra is $\mathbb{H}\oplus\mathbb{H}$, whose central idempotents rule out a $2\times2$ matrix realisation over any commutative ring.
 

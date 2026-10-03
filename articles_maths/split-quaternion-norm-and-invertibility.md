@@ -22,24 +22,24 @@ where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the conj
 The form is a real quadratic form of **signature $(2,2)$**, read directly from the diagonal expression as two positive and two negative squares. It is **multiplicative**:
 
 $$
-N(\tilde q y) = N(\tilde q)N(y) \qquad (\tilde q, y \in \mathbb{H}_{\mathrm{s}}).
+N(\tilde q \tilde p) = N(\tilde q)N(\tilde p) \qquad (\tilde q, \tilde p \in \mathbb{H}_{\mathrm{s}}).
 $$
 
-**Proof.** The product $\tilde q\tilde{q}^{\natural}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, y$,
+**Proof.** The product $\tilde q\tilde{q}^{\natural}$ is fixed by the conjugation, hence central; therefore, for all $\tilde q, \tilde p$,
 
 $$
-N(\tilde q y) = (\tilde q y)((\tilde q y))^{\natural} = \tilde q\, y y^{\natural}\, \tilde{q}^{\natural} = \tilde q \tilde{q}^{\natural}\, y y^{\natural} = N(\tilde q)N(y),
+N(\tilde q \tilde p) = (\tilde q \tilde p)((\tilde q \tilde p))^{\natural} = \tilde q\, \tilde p \tilde p^{\natural}\, \tilde{q}^{\natural} = \tilde q \tilde{q}^{\natural}\, \tilde p \tilde p^{\natural} = N(\tilde q)N(\tilde p),
 $$
 
-using $(\tilde q y)^{\natural} = y^{\natural} \tilde{q}^{\natural}$ and the centrality of $y y^{\natural}$.
+using $(\tilde q \tilde p)^{\natural} = \tilde p^{\natural} \tilde{q}^{\natural}$ and the centrality of $\tilde p \tilde p^{\natural}$.
 
 Its polarisation is the bilinear form
 
 $$
-B(\tilde q, y) = \tfrac{1}{2}\big(N(\tilde q+y) - N(\tilde q) - N(y)\big) = q_0 q_0' + q_1 q_1' - q_2 q_2' - q_3 q_3'
+B(\tilde q, \tilde p) = \tfrac{1}{2}\big(N(\tilde q+\tilde p) - N(\tilde q) - N(\tilde p)\big) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3
 $$
 
-for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $y = q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3$. The matrix of $B$ in the basis $1, e_1, e_2, e_3$ is $\operatorname{diag}(+1, +1, -1, -1)$.
+for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde p = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3$. The matrix of $B$ in the basis $1, e_1, e_2, e_3$ is $\operatorname{diag}(+1, +1, -1, -1)$.
 
 ### Multiplicativity and the Sign
 
@@ -47,7 +47,7 @@ The multiplicativity of $N$ has an immediate consequence for the sign.
 
 **Proposition.** The set $\{N > 0\}$ and the set $\{N < 0\}$ are each closed under multiplication, and the product of an element of $\{N>0\}$ with an element of $\{N<0\}$ has $N < 0$. The scalar line and the $e_1$-direction have positive norm, while the $e_2$- and $e_3$-directions have negative norm.
 
-**Proof.** If $N(\tilde q)$ and $N(y)$ are both positive, then $N(\tilde q y) = N(\tilde q)N(y) > 0$, and similarly in the other cases. The signs of the basis elements are $N(1) = N(e_1) = +1$ and $N(e_2) = N(e_3) = -1$.
+**Proof.** If $N(\tilde q)$ and $N(\tilde p)$ are both positive, then $N(\tilde q \tilde p) = N(\tilde q)N(\tilde p) > 0$, and similarly in the other cases. The signs of the basis elements are $N(1) = N(e_1) = +1$ and $N(e_2) = N(e_3) = -1$.
 
 ## Isotropy
 
@@ -59,9 +59,9 @@ $$
 q_0^2 + q_1^2 = q_2^2 + q_3^2 .
 $$
 
-Writing $z = q_0 + ib$ and $w = q_2 + id$ with $i^2 = -1$, the condition is $|z| = |w|$. The isotropic vectors are therefore parametrised by a pair $(z, w)$ of complex numbers of equal modulus.
+Writing $A = q_0 + iq_1$ and $B = q_2 + iq_3$ with $i^2 = -1$, the condition is $|A| = |B|$. The isotropic vectors are therefore parametrised by a pair $(A, B)$ of complex numbers of equal modulus.
 
-**Proof.** The equation $N(\tilde q) = 0$ is $q_0^2 + q_1^2 = q_2^2 + q_3^2$, which in the notation of the statement is $|z|^2 = |w|^2$.
+**Proof.** The equation $N(\tilde q) = 0$ is $q_0^2 + q_1^2 = q_2^2 + q_3^2$, which in the notation of the statement is $|A|^2 = |B|^2$.
 
 **Proposition (Explicit Isotropic Lines).** Write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. If $\tilde q$ is isotropic then $(q_0,q_1) \neq (0,0)$ and $(q_2,q_3) \neq (0,0)$, and $\tilde q$ is a positive multiple of
 
@@ -89,7 +89,7 @@ The isotropic lines are also visible in the vector subspace: the isotropic lines
 
 **Theorem (The Invertibility Criterion).** Let $\tilde q \in \mathbb{H}_{\mathrm{s}}$ be nonzero. The following are equivalent.
 
-1. $\tilde q$ is **invertible**: there exists $y$ with $\tilde q y = y\tilde q = 1$.
+1. $\tilde q$ is **invertible**: there exists $\tilde p$ with $\tilde q \tilde p = \tilde p\tilde q = 1$.
 2. $N(\tilde q) \neq 0$.
 
 When these hold, the inverse is
@@ -105,7 +105,7 @@ $$
 \frac{\tilde{q}^{\natural}}{N(\tilde q)} \cdot \tilde q = \frac{\tilde{q}^{\natural}\tilde q}{N(\tilde q)} = 1,
 $$
 
-so $\tilde q$ is invertible with the displayed inverse. Conversely, suppose $\tilde q$ is invertible, say $\tilde q y = 1$. Applying $N$ and using multiplicativity, $N(\tilde q)N(y) = N(1) = 1$, so $N(\tilde q) \neq 0$. This proves the equivalence of (1) and (2).
+so $\tilde q$ is invertible with the displayed inverse. Conversely, suppose $\tilde q$ is invertible, say $\tilde q \tilde p = 1$. Applying $N$ and using multiplicativity, $N(\tilde q)N(\tilde p) = N(1) = 1$, so $N(\tilde q) \neq 0$. This proves the equivalence of (1) and (2).
 
 **Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $N(\tilde q) = 0$. If $N(\tilde q) = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $N(\tilde q) = 0$ by the criterion.
 
@@ -221,7 +221,7 @@ The invertible elements are the complement of the null cone $\{N = 0\}$, an open
 
 ### The Quaternion Case
 
-For $\mathbb{H}$ the quaternion norm is $N(q) = q_0^2 + q_1^2 + q_2^2 + q_3^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of units is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{s}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
+For $\mathbb{H}$ the quaternion norm is $N(\tilde q) = q_0^2 + q_1^2 + q_2^2 + q_3^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of units is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{s}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
 
 ### The Split-Biquaternion Case
 
@@ -241,7 +241,7 @@ The classification of the elements is a dichotomy plus the zero element: inverti
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, signature $(2,2)$ | this article |
-| $B(\tilde q,y)$ | the polarised bilinear form | this article |
+| $B(\tilde q,\tilde p)$ | the polarised bilinear form | this article |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $N(\tilde q)=0$, and its span | this article |
 | $\mathbb{H}_{\mathrm{s}}^{\times}$ | the group of units $\{N \neq 0\}$ | this article |
 | $U = \{N = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |
