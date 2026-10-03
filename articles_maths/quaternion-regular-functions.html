@@ -55,7 +55,7 @@
 <p>Quaternion analysis, in the sense of one complex variable generalised to four real variables, is built on a first-order operator and the class of functions it annihilates. This article defines that operator and its conjugate, states the system of equations that regularity imposes, proves the harmonicity of regular functions through the factorization of the Laplacian, records the examples that generated the classical theory, and gives the Cauchy integral formula that holds on the quaternion algebra. It is the quaternion member of the family's regularity pair; its counterpart is the biquaternion case, where the algebra is no longer a division algebra and the null cone obstructs the complex analogy. Here the algebra is a division algebra, there is no null cone, and the analogy holds without restriction.</p>
 <p>The article uses <em>Quaternion Algebra</em> and <em>Quaternion Norm and Invertibility</em> for the algebra, the quaternion norm and the inverse, <em>The Scalar and Vector Subspaces of $\mathbb{H}$</em> for the vector-calculus decomposition of the operator, <em>Quaternion Integration</em> for the Cauchy integral formula and its consequences, and <em>Quaternion Special Functions</em> for the exponential that generates the examples. It is adjacent to <em>Fueter Theory for Quaternions</em>, which owns the Fueter construction and the axial and slice approach; this article owns the operator and the system it defines. The classical one-variable model is compared throughout; no physical vocabulary is used, and the first-order operator is the <strong>Cauchy–Riemann operator</strong> of the menu (some older literature calls it the Dirac operator, a name not used in this corpus).</p>
 <p>The corpus's default base is a commutative ring with identity; the analysis requires the real numbers, so the operator is defined over $\mathbb{R}$ and the results are stated for domains in $\mathbb{R}^4$. A separate section treats the three-dimensional theory of the <strong>reduced quaternions</strong> $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a real vector space that is not a subalgebra, whose operator is the reduced Cauchy–Riemann operator of the Riesz system; because that module is a subspace of codimension one, its left and right regularity coincide and the theory is two-sided.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $x = x_0+x_1e_1+x_2e_2+x_3e_3$ with $x_\mu\in\mathbb{R}$; the conjugate is $x^{\natural} = x_0-\mathbf{x}$ and the modulus is $|x| = \sqrt{N(x)}$. The partial derivatives are $\partial_\mu = \partial/\partial x_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\mathbf{f} = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\mathbf{f} = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\mathbf{f} = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; the variable is $\tilde q = q_0+q_1e_1+q_2e_2+q_3e_3$ with $q_\mu\in\mathbb{R}$; the conjugate is $\tilde q^{\natural} = q_0-\mathbf{q}$ and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$. The partial derivatives are $\partial_\mu = \partial/\partial q_\mu$, and the Euclidean Laplacian is $\Delta = \sum_\mu \partial_\mu^2$. The vector operations on $\mathbf{f} = f_1e_1+f_2e_2+f_3e_3$ are $\mathrm{div}\,\mathbf{f} = \sum_k\partial_kf_k$, $\mathrm{grad}\,f_0 = \sum_k(\partial_kf_0)e_k$, and $\mathrm{rot}\,\mathbf{f} = \sum_{j,k,l}\epsilon_{jkl}(\partial_jf_k)e_l$.</p>
 <h2 id="the-cauchyriemann-operator-and-its-conjugate">The Cauchy–Riemann Operator and Its Conjugate</h2>
 <p><strong>Definition.</strong> The <strong>Cauchy–Riemann operator</strong> on $\mathbb{H}$ and its <strong>quaternion conjugate</strong> are</p>
 <p>$$
@@ -67,9 +67,9 @@ $$</p>
 <p>$$
 D\bar D = \bar D D = \Delta,
 $$</p>
-<p>so the Cauchy–Riemann operator factors the Laplacian, exactly as $\partial_z\partial_{\bar z} = \tfrac14\Delta$ in one complex variable.</p>
+<p>so the Cauchy–Riemann operator factors the Laplacian, exactly as $\partial_A\partial_{\bar A} = \tfrac14\Delta$ in one complex variable.</p>
 <p><em>Proof.</em> For $\mu = \nu$ one has $e_\mu e_\mu^{\natural} = e_0$, since $e_0e_0^{\natural} = e_0$ and $e_k e_k^{\natural} = -e_k^2 = e_0$; for $\mu\neq\nu$, $e_\mu e_\nu^{\natural} = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu e_\mu^{\natural}$. Hence all mixed second derivatives cancel in the product, leaving $\sum_\mu\partial_\mu^2 = \Delta$.</p>
-<p><strong>Remark.</strong> The pair $(D,\bar D)$ plays the role of $(\partial_z,\partial_{\bar z})$, but the two operators are not merely the two first-order factors of the Laplacian: because the algebra is non-commutative, the products $D\bar D$ and $\bar D D$ agree as differential operators on the algebra but the operators themselves act on functions by left multiplication and are not interchangeable with right multiplication by a quaternion.</p>
+<p><strong>Remark.</strong> The pair $(D,\bar D)$ plays the role of $(\partial_A,\partial_{\bar A})$, but the two operators are not merely the two first-order factors of the Laplacian: because the algebra is non-commutative, the products $D\bar D$ and $\bar D D$ agree as differential operators on the algebra but the operators themselves act on functions by left multiplication and are not interchangeable with right multiplication by a quaternion.</p>
 <h2 id="regular-functions">Regular Functions</h2>
 <p><strong>Definition.</strong> Let $\Omega\subseteq\mathbb{H}$ be a domain and $f : \Omega\to\mathbb{H}$ continuously differentiable. Then $f$ is <strong>left-regular</strong>, or <strong>left-monogenic</strong>, if</p>
 <p>$$
@@ -97,22 +97,22 @@ $$</p>
 <p><em>Proof.</em> The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.</p>
 <p><strong>Remark.</strong> The ellipticity is exact, and it is the point at which the quaternion algebra differs from the biquaternion algebra: for the quaternion algebra the quaternion norm is definite, so $|\xi|^2$ never vanishes, and the operator has no characteristic set. There is therefore no analogue of the null cone of $\mathbb{B}$.</p>
 <h2 id="examples-and-closure-properties">Examples and Closure Properties</h2>
-<p><strong>Theorem.</strong> Every constant function is regular; the coordinate function $x$ is not regular, since $Dx = \sum_\mu e_\mu e_\mu = -2e_0$; the Cauchy kernel</p>
+<p><strong>Theorem.</strong> Every constant function is regular; the coordinate function $\tilde q$ is not regular, since $D\tilde q = \sum_\mu e_\mu e_\mu = -2e_0$; the Cauchy kernel</p>
 <p>$$
-G(x) = \frac{x^{\natural}}{|x|^4}
+G(\tilde q) = \frac{\tilde q^{\natural}}{|\tilde q|^4}
 $$</p>
-<p>is regular on $\mathbb{H}\setminus\{0\}$; and every classical holomorphic function of the single complex variable $z = x_0+e_1x_1$, extended by constancy in $x_2,x_3$, is regular.</p>
-<p><em>Proof.</em> The constants have vanishing derivatives; the identity gives $Dx = e_0-3e_0 = -2e_0$; the kernel is checked by differentiation, the homogeneity of $G$ in four real variables being $1-4 = -3$, so that $G$ is the fundamental solution; and the single-plane statement follows because on functions independent of $x_2,x_3$ the operator reduces to $Df = 2\partial_{\bar z}f$ with $\partial_{\bar z} = \tfrac12(\partial_0+e_1\partial_1)$.</p>
+<p>is regular on $\mathbb{H}\setminus\{0\}$; and every classical holomorphic function of the single complex variable $A = q_0+e_1q_1$, extended by constancy in $q_2,q_3$, is regular.</p>
+<p><em>Proof.</em> The constants have vanishing derivatives; the identity gives $D\tilde q = e_0-3e_0 = -2e_0$; the kernel is checked by differentiation, the homogeneity of $G$ in four real variables being $1-4 = -3$, so that $G$ is the fundamental solution; and the single-plane statement follows because on functions independent of $q_2,q_3$ the operator reduces to $Df = 2\partial_{\bar A}f$ with $\partial_{\bar A} = \tfrac12(\partial_0+e_1\partial_1)$.</p>
 <p><strong>Proposition (closure).</strong> Regular functions are closed under addition, under right multiplication by constant quaternions, and under left multiplication by real scalars; they are <strong>not</strong> closed under left multiplication by a general quaternion constant. Hence they form a right $\mathbb{H}$-module but not a left one.</p>
-<p><em>Proof.</em> Additivity is clear; for a constant $c$, $D(fc) = (Df)c = 0$ while $D(cf) = \sum_\mu e_\mu c\,\partial_\mu f$ need not vanish, as $D(e_2z) = e_2+e_1e_2e_1 = 2e_2\neq0$ shows.</p>
-<p><strong>Remark.</strong> The failure of left multiplication exhibits the non-commutativity directly: the coordinate $z = x_0+e_1x_1$ is regular and $z^2$ is regular, but the reversed products are not, and the single-plane holomorphic functions are the largest class of regular functions obtained from one complex direction. The Cauchy kernel is regular but is not holomorphic in any single-plane variable, so the hypercomplex class is strictly larger than the single-plane class; the two coincide only in two real dimensions.</p>
+<p><em>Proof.</em> Additivity is clear; for a constant $c$, $D(fc) = (Df)c = 0$ while $D(cf) = \sum_\mu e_\mu c\,\partial_\mu f$ need not vanish, as $D(e_2A) = e_2+e_1e_2e_1 = 2e_2\neq0$ shows.</p>
+<p><strong>Remark.</strong> The failure of left multiplication exhibits the non-commutativity directly: the coordinate $A = q_0+e_1q_1$ is regular and $A^2$ is regular, but the reversed products are not, and the single-plane holomorphic functions are the largest class of regular functions obtained from one complex direction. The Cauchy kernel is regular but is not holomorphic in any single-plane variable, so the hypercomplex class is strictly larger than the single-plane class; the two coincide only in two real dimensions.</p>
 <h2 id="harmonicity-and-the-factorization-of-the-laplacian">Harmonicity and the Factorization of the Laplacian</h2>
 <p><strong>Theorem.</strong> Every left-regular function is harmonic,</p>
 <p>$$
 Df = 0 \implies \Delta f = \bar D(Df) = 0,
 $$</p>
-<p>and every right-regular function is harmonic as well; the harmonic functions form a strictly larger class, since the coordinate $x_0$ is harmonic but $Dx_0 = e_0\neq0$.</p>
-<p><em>Proof.</em> By the factorization $\bar DD = \Delta$, a left-regular $f$ satisfies $\Delta f = \bar D(Df) = 0$; for right-regularity one uses $D\bar D = \Delta$ on the left factor. The coordinate $x_0$ is annihilated by the Laplacian and not by $D$.</p>
+<p>and every right-regular function is harmonic as well; the harmonic functions form a strictly larger class, since the coordinate $q_0$ is harmonic but $Dq_0 = e_0\neq0$.</p>
+<p><em>Proof.</em> By the factorization $\bar DD = \Delta$, a left-regular $f$ satisfies $\Delta f = \bar D(Df) = 0$; for right-regularity one uses $D\bar D = \Delta$ on the left factor. The coordinate $q_0$ is annihilated by the Laplacian and not by $D$.</p>
 <p><strong>Corollary.</strong> Each coefficient $f_\nu$ of a regular function solves the four-dimensional Laplace equation $\sum_\mu\partial_\mu^2f_\nu = 0$, so regular functions are real-analytic and satisfy the mean value property; the converse fails, so regularity is strictly stronger than harmonicity.</p>
 <p><em>Proof.</em> The Laplacian acts componentwise, and the factorization shows the coefficients are harmonic; strictness is the coordinate example. The mean value property and real-analyticity of harmonic functions are standard.</p>
 <h2 id="the-three-dimensional-operator-and-the-logarithmic-derivative">The Three-Dimensional Operator and the Logarithmic Derivative</h2>
@@ -121,7 +121,7 @@ $$</p>
 <p>$$
 D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3 .
 $$</p>
-<p>It agrees with $D$ on functions independent of $x_0$, but its kernel is larger: $D_3f = 0$ does not imply $Df = 0$, since $D = \partial_0+D_3$.</p>
+<p>It agrees with $D$ on functions independent of $q_0$, but its kernel is larger: $D_3f = 0$ does not imply $Df = 0$, since $D = \partial_0+D_3$.</p>
 <p><strong>Proposition (the split and the square).</strong> For a differentiable $g$ on a domain of $\mathbb{R}^3$,</p>
 <p>$$
 D_3g = -\mathrm{div}\mathbf{g}+\mathrm{grad}g_0+\mathrm{rot}\mathbf{g},
@@ -154,7 +154,7 @@ $$</p>
 (D_3+M_{\vec\beta})(D_3-M_{\vec\beta})u = -\Delta_3u-(D_3\vec\beta)u-\vec\beta^2u .
 $$</p>
 <p><em>Proof.</em> Since $u$ is scalar, $D_3(u\vec\beta) = (D_3u)\vec\beta+u\,D_3\vec\beta$; therefore $(D_3+M_{\vec\beta})(D_3-M_{\vec\beta})u = D_3(D_3u-u\vec\beta)+(D_3u-u\vec\beta)\vec\beta = -\Delta_3u-u\,D_3\vec\beta-u\vec\beta^2$, the mixed terms cancelling. The Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2 = v$ is thus the statement that the bracket $-D_3\vec\beta-\vec\beta^2$ is a <em>prescribed</em> scalar, which is what $\vec\beta = \check\partial\phi$ achieves and a general $\vec\beta$ does not.</p>
-<p><strong>Proposition (componentwise reduction to four scalar Schrödinger operators).</strong> Let the coefficient be <strong>separated</strong>, $\vec\alpha = \alpha_1(x_1)e_1+\alpha_2(x_2)e_2+\alpha_3(x_3)e_3$, each $\alpha_k$ a function of its own variable alone, and let $u = \sum_ku_ke_k$. Put $\vec\alpha^{(0)} = \vec\alpha$ and, for $k = 1,2,3$,</p>
+<p><strong>Proposition (componentwise reduction to four scalar Schrödinger operators).</strong> Let the coefficient be <strong>separated</strong>, $\vec\alpha = \alpha_1(q_1)e_1+\alpha_2(q_2)e_2+\alpha_3(q_3)e_3$, each $\alpha_k$ a function of its own variable alone, and let $u = \sum_ku_ke_k$. Put $\vec\alpha^{(0)} = \vec\alpha$ and, for $k = 1,2,3$,</p>
 <p>$$
 \vec\alpha^{(k)} = \alpha_ke_k-\sum_{j\neq k}\alpha_je_j = -e_k\vec\alpha e_k ,
 $$</p>
@@ -176,18 +176,18 @@ $$</p>
 v_k = -D_3\vec\alpha^{(k)}-\vec\alpha^2 ,
 $$</p>
 <p>then $f = (D_3-M_{\vec\alpha})g$ with $g = \sum_kg_ke_k$ solves $D_3f+f\vec\alpha = 0$. The first-order equation therefore inherits the theory of the four scalar operators — fundamental solutions, solvability, boundary values — and the map $g\mapsto(D_3-M_{\vec\alpha})g$ is the way back. It is the exact analogue of the previous section's construction $\mathbf{f} = \check\partial\phi$, with four potentials and four carriers in place of the single one.</p>
-<p><strong>The worked example.</strong> The simplest separated coefficient is $\vec\alpha = \sum_k(x_k-b_k)^{-1}e_k$, a shifted coordinate reciprocal in each direction, with the $b_k$ constants. Then $\partial_k\alpha_k = -\alpha_k^2$ gives $D_3\vec\alpha = -\sum_j\partial_j\alpha_j = \sum_j\alpha_j^2 = -\vec\alpha^2$, so the four potentials are</p>
+<p><strong>The worked example.</strong> The simplest separated coefficient is $\vec\alpha = \sum_k(q_k-b_k)^{-1}e_k$, a shifted coordinate reciprocal in each direction, with the $b_k$ constants. Then $\partial_k\alpha_k = -\alpha_k^2$ gives $D_3\vec\alpha = -\sum_j\partial_j\alpha_j = \sum_j\alpha_j^2 = -\vec\alpha^2$, so the four potentials are</p>
 <p>$$
 v_0 = 0,
 \qquad
-v_k = 2\sum_{j\neq k}\alpha_j^2 = 2\sum_{j\neq k}\frac{1}{(x_j-b_j)^2}\quad(k\ge1),
+v_k = 2\sum_{j\neq k}\alpha_j^2 = 2\sum_{j\neq k}\frac{1}{(q_j-b_j)^2}\quad(k\ge1),
 $$</p>
-<p>and the corresponding solutions of the four scalar equations are $\phi_0 = \prod_j(x_j-b_j)$ for the harmonic case $v_0 = 0$ and $\phi_k = (x_k-b_k)\prod_{j\ne k}(x_j-b_j)^{-1}$; the negatives of the reciprocals, $f_k = 1/\phi_k$, assemble into $f = \sum_kc_kf_ke_k$, which solves $D_3f+f\vec\alpha = 0$ for any constants $c_k$. The example is the smallest one that exercises all four of the potentials, and it shows the case $v_0 = 0$: the $e_0$-component of the reduction is the Laplace equation, as it must be, since $\phi_0$ is a product of one linear factor in each variable and is harmonic.</p>
+<p>and the corresponding solutions of the four scalar equations are $\phi_0 = \prod_j(q_j-b_j)$ for the harmonic case $v_0 = 0$ and $\phi_k = (q_k-b_k)\prod_{j\ne k}(q_j-b_j)^{-1}$; the negatives of the reciprocals, $f_k = 1/\phi_k$, assemble into $f = \sum_kc_kf_ke_k$, which solves $D_3f+f\vec\alpha = 0$ for any constants $c_k$. The example is the smallest one that exercises all four of the potentials, and it shows the case $v_0 = 0$: the $e_0$-component of the reduction is the Laplace equation, as it must be, since $\phi_0$ is a product of one linear factor in each variable and is harmonic.</p>
 <p><strong>Separation is sufficient, not necessary, and the exact condition is a Jacobian condition.</strong> The proof used $\partial_j\vec\alpha = e_j\partial_j\alpha_j$, which <em>is</em> separation, and the display holds for a general vector-valued coefficient exactly when the symmetric part of its Jacobian vanishes,</p>
 <p>$$
 \partial_j\alpha_k+\partial_k\alpha_j = 0 \qquad (j\neq k),
 $$</p>
-<p>separated coefficients being the case of a diagonal Jacobian. The class is strictly larger: the rigid-rotation-like $\vec\alpha = x_2e_1-x_1e_2$ satisfies the condition without being separated, and the display is still exact for it. What separation alone supplies is the <strong>scalarity</strong> of the four brackets, and with it the reading as four scalar equations; for a coefficient in the larger class whose $D_3\vec\alpha^{(k)}$ is not scalar the display holds but no longer separates into four scalar problems. Both statements were checked symbolically on a generic vector-valued coefficient: the difference vanishes identically exactly under the three conditions above.</p>
+<p>separated coefficients being the case of a diagonal Jacobian. The class is strictly larger: the rigid-rotation-like $\vec\alpha = q_2e_1-q_1e_2$ satisfies the condition without being separated, and the display is still exact for it. What separation alone supplies is the <strong>scalarity</strong> of the four brackets, and with it the reading as four scalar equations; for a coefficient in the larger class whose $D_3\vec\alpha^{(k)}$ is not scalar the display holds but no longer separates into four scalar problems. Both statements were checked symbolically on a generic vector-valued coefficient: the difference vanishes identically exactly under the three conditions above.</p>
 <p><strong>The projection device.</strong> The idempotents</p>
 <p>$$
 P^\pm_k = \tfrac12M_{(1\pm ie_k)},
@@ -209,13 +209,13 @@ $$</p>
 \mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\} = \{f_0+f_1e_1+f_2e_2 : f_0,f_1,f_2\in\mathbb{R}\},
 $$</p>
 <p>and the decisive feature is that $\mathcal{A}$ is a three-dimensional real vector space but <strong>not</strong> a subalgebra of $\mathbb{H}$: the product $e_1e_2 = e_3$ leaves it. The subspace is closed under conjugation and under inversion in $\mathbb{H}$, since $f^{\natural} = f_0-f_1e_1-f_2e_2\in\mathcal{A}$ and $f^{-1} = f^{\natural}/(f_0^2+f_1^2+f_2^2)\in\mathcal{A}$ for $f\neq 0$, and the product of two of its elements falls back into it exactly when their vector parts are parallel. The failure of closure is the source of what is distinctive in the theory.</p>
-<p><strong>Definition (reduced Cauchy–Riemann operator).</strong> On $\mathcal{A}$-valued functions of $x = x_0+x_1e_1+x_2e_2$ in a domain of $\mathbb{R}^3$, the <strong>reduced Cauchy–Riemann operator</strong> and its conjugate are</p>
+<p><strong>Definition (reduced Cauchy–Riemann operator).</strong> On $\mathcal{A}$-valued functions of $\tilde q = q_0+q_1e_1+q_2e_2$ in a domain of $\mathbb{R}^3$, the <strong>reduced Cauchy–Riemann operator</strong> and its conjugate are</p>
 <p>$$
 D = \partial_0+e_1\partial_1+e_2\partial_2, \qquad \bar D = \partial_0-e_1\partial_1-e_2\partial_2 .
 $$</p>
 <p><strong>Proposition.</strong> $D\bar D = \bar DD = \Delta_3 = \partial_0^2+\partial_1^2+\partial_2^2$, so the two operators factor the Laplacian of $\mathbb{R}^3$ and every monogenic function is harmonic in each component.</p>
 <p><em>Proof.</em> As in four variables, $e_\mu e_\mu^{\natural} = e_0$ for $\mu = 0,1,2$ and $e_\mu e_\nu^{\natural} = -e_\mu e_\nu = e_\nu e_\mu = -e_\nu e_\mu^{\natural}$ for $\mu\neq\nu$; the mixed second derivatives cancel in the product.</p>
-<p><strong>Remark (the contrast with $D_3$).</strong> The two three-dimensional operators are different objects. The Moisil–Theodoresco operator $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ uses the three imaginary directions and squares by itself, $D_3^2 = -\Delta_3$; the reduced operator $D$ uses one real and two imaginary directions and needs its conjugate, $D\bar D = \Delta_3$. They are exchanged by the rotation that trades the coordinate $x_0$ for $x_3$ and the basis element $e_0$ for $e_3$, and they agree on the functions independent of the traded coordinate.</p>
+<p><strong>Remark (the contrast with $D_3$).</strong> The two three-dimensional operators are different objects. The Moisil–Theodoresco operator $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ uses the three imaginary directions and squares by itself, $D_3^2 = -\Delta_3$; the reduced operator $D$ uses one real and two imaginary directions and needs its conjugate, $D\bar D = \Delta_3$. They are exchanged by the rotation that trades the coordinate $q_0$ for $q_3$ and the basis element $e_0$ for $e_3$, and they agree on the functions independent of the traded coordinate.</p>
 <p><strong>Definition (monogenic).</strong> An $\mathcal{A}$-valued continuously differentiable function $f$ is <strong>monogenic</strong> in $\Omega$ if $Df = 0$, and <strong>anti-monogenic</strong> if $\bar Df = 0$.</p>
 <p><strong>Proposition (component form).</strong> For $f = f_0+f_1e_1+f_2e_2$,</p>
 <p>$$
@@ -253,45 +253,45 @@ $$</p>
 <p>$$
 \{X_n^0, X_n^m, Y_n^m : m = 1,\dots,n+1\}_{n\in\mathbb{N}_0},
 $$</p>
-<p>a system that can be read as a refinement of the spherical harmonics and that carries recurrence relations and preserves the properties of the holomorphic powers $z^n$. Its $L^2(B_r;\mathcal{A})$ norms and its pointwise bounds are</p>
+<p>a system that can be read as a refinement of the spherical harmonics and that carries recurrence relations and preserves the properties of the holomorphic powers $A^n$. Its $L^2(B_r;\mathcal{A})$ norms and its pointwise bounds are</p>
 <p>$$
 \|X_n^{0,\dagger}\| = \sqrt{\frac{r^{2n+3}}{2n+3}}\sqrt{\pi(n+1)}, \qquad
 \|X_n^{m,\dagger}\| = \|Y_n^{m,\dagger}\| = \sqrt{\frac{r^{2n+3}}{2n+3}}\sqrt{\frac{\pi}{2}(n+1)\frac{(n+1+m)!}{(n+1-m)!}},
 $$</p>
 <p>$$
-|X_n^{l,\dagger}(x)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,|x|^n, \qquad
-|Y_n^{m,\dagger}(x)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+m)!}{(n+1-m)!}}\,|x|^n .
+|X_n^{l,\dagger}(\tilde q)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+l)!}{(n+1-l)!}}\,|\tilde q|^n, \qquad
+|Y_n^{m,\dagger}(\tilde q)| \leq \frac{1}{2}(n+1)\sqrt{\frac{(n+1+m)!}{(n+1-m)!}}\,|\tilde q|^n .
 $$</p>
 <p><strong>Theorem (dimension of the monogenic polynomials).</strong> $\dim\mathcal{R}^+(B_r;\mathcal{A};n) = 2n+3$.</p>
 <p>The count is fixed by the ladder: the space of $\mathcal{A}$-valued homogeneous polynomials of degree $n$ has dimension $3(n+1)$, the derivative $\tfrac12\bar D$ maps the monogenic subspace of degree $n$ onto that of degree $n-1$ with kernel of dimension two, and the rank and the kernel dimensions are $2n+1$ and $2$, so the dimension is $2n+3$. Verified in exact arithmetic for $n = 0,\dots,5$: $3,5,7,9,11,13$.</p>
 <p><strong>Remark (dimension counts).</strong> In one complex variable the monogenic polynomials of degree $n$ form a two-dimensional space, spanned by the trace of the holomorphic power and its companion, for every $n$. Here the count grows linearly, $2n+3$, because the two hyperholomorphic constants of each degree account for two dimensions and the remaining $2n+1$ carry the sphere's worth of harmonics that must be paired in each degree. The generic Clifford dimension formula belongs to the Clifford-type systems of <em>Harmonic Analysis over Hypercomplex Systems</em> and does not apply here, because $\mathcal{A}$ is not an algebra.</p>
 <p><strong>Theorem (Fourier expansion; the main part and the constants).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then $f$ decomposes as an orthogonal sum</p>
 <p>$$
-f(x) = g(x)+h(x), \qquad
-g(x) = \sum_{n=0}^{\infty}\Bigl[X_n^{0,\dagger}(x)a_n^0+\sum_{m=1}^{n}\bigl(X_n^{m,\dagger}(x)a_n^m+Y_n^{m,\dagger}(x)b_n^m\bigr)\Bigr],
+f(\tilde q) = g(\tilde q)+h(\tilde q), \qquad
+g(\tilde q) = \sum_{n=0}^{\infty}\Bigl[X_n^{0,\dagger}(\tilde q)a_n^0+\sum_{m=1}^{n}\bigl(X_n^{m,\dagger}(\tilde q)a_n^m+Y_n^{m,\dagger}(\tilde q)b_n^m\bigr)\Bigr],
 $$</p>
 <p>$$
-h(x) = \sum_{n=0}^{\infty}\bigl[X_n^{n+1,\dagger}(x)a_n^{n+1}+Y_n^{n+1,\dagger}(x)b_n^{n+1}\bigr],
+h(\tilde q) = \sum_{n=0}^{\infty}\bigl[X_n^{n+1,\dagger}(\tilde q)a_n^{n+1}+Y_n^{n+1,\dagger}(\tilde q)b_n^{n+1}\bigr],
 $$</p>
 <p>with real coefficients, where $g$ is the <strong>main part</strong> of $f$ and $h$ is the hyperholomorphic constant: the first sum runs over the basis elements up to index $n$, and the second over the two basis elements of index $n+1$, which are the constants of the degree.</p>
 <p><em>Proof.</em> The basis is complete and orthogonal in $L^2(B_r;\mathcal{A})$, so the expansion follows from the usual $L^2$ projection; the two index ranges separate the elements that survive the hypercomplex derivation from those it annihilates.</p>
-<p><strong>Remark.</strong> The orthogonal splitting $f = g+h$ is the exact analogue of the classical fact that $f(z)-f'(0)z$ is orthogonal to the constants, and it is the structural reason the one-variable estimates carry over to this setting. The estimate of the hypercomplex derivative by the growth of its maximum modulus, and the Bloch radius that it gives, are worked out in <em>Bloch's Theorem and the Bloch Constant for Monogenic Functions</em>.</p>
+<p><strong>Remark.</strong> The orthogonal splitting $f = g+h$ is the exact analogue of the classical fact that $f(A)-f'(0)A$ is orthogonal to the constants, and it is the structural reason the one-variable estimates carry over to this setting. The estimate of the hypercomplex derivative by the growth of its maximum modulus, and the Bloch radius that it gives, are worked out in <em>Bloch's Theorem and the Bloch Constant for Monogenic Functions</em>.</p>
 <h2 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h2>
-<p><strong>Theorem (fundamental solution).</strong> The Cauchy kernel $G(x) = x^{\natural}/|x|^4$ satisfies $DG = 0$ for $x\neq0$ and, in the sense of distributions,</p>
+<p><strong>Theorem (fundamental solution).</strong> The Cauchy kernel $G(\tilde q) = \tilde q^{\natural}/|\tilde q|^4$ satisfies $DG = 0$ for $\tilde q\neq0$ and, in the sense of distributions,</p>
 <p>$$
 DG = 2\pi^2\delta_0 e_0 .
 $$</p>
-<p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be continuously differentiable on a bounded domain $\Omega\subseteq\mathbb{H}$ with piecewise smooth boundary $\partial\Omega$, and let $x_0$ be an interior point. Then</p>
+<p><strong>Theorem (Cauchy integral formula).</strong> Let $f$ be continuously differentiable on a bounded domain $\Omega\subseteq\mathbb{H}$ with piecewise smooth boundary $\partial\Omega$, and let $q_0$ be an interior point. Then</p>
 <p>$$
-f(x_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(x-x_0)\,n(x)f(x)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(x-x_0)\,(Df)(x)\,dV,
+f(q_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_0)\,n(\tilde q)f(\tilde q)\,dS - \frac{1}{2\pi^2}\int_{\Omega}G(\tilde q-q_0)\,(Df)(\tilde q)\,dV,
 $$</p>
 <p>where $n$ is the $\mathbb{H}$-valued outward unit normal. If $f$ is regular, the volume term vanishes and</p>
 <p>$$
-f(x_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(x-x_0)\,n(x)f(x)\,dS .
+f(q_0) = \frac{1}{2\pi^2}\int_{\partial\Omega}G(\tilde q-q_0)\,n(\tilde q)f(\tilde q)\,dS .
 $$</p>
-<p><em>Proof.</em> These are the standard results of Clifford analysis in dimension four; the kernel and the constant are computed from the distributional identity $DG = 2\pi^2\delta_0e_0$, which is verified by integrating over a ball of radius $\varepsilon$ and using the homogeneity of $G$. The formula is derived by applying Stokes' theorem to the form $G(x-x_0)n(x)f(x)\,dS$ and subtracting the singular contribution at $x_0$, all products being quaternion products with $G$ on the left and $f$ on the right.</p>
+<p><em>Proof.</em> These are the standard results of Clifford analysis in dimension four; the kernel and the constant are computed from the distributional identity $DG = 2\pi^2\delta_0e_0$, which is verified by integrating over a ball of radius $\varepsilon$ and using the homogeneity of $G$. The formula is derived by applying Stokes' theorem to the form $G(\tilde q-q_0)n(\tilde q)f(\tilde q)\,dS$ and subtracting the singular contribution at $q_0$, all products being quaternion products with $G$ on the left and $f$ on the right.</p>
 <p><strong>Corollary.</strong> On $\mathbb{H}$ the Cauchy integral formula holds on every domain, with no restriction to a subspace and no exceptional set; the mean value property, the maximum principle, Liouville's theorem, the identity theorem, and the residue theory for isolated singularities then follow as for holomorphic functions of one variable, since $\mathbb{H}$ has no zero divisors.</p>
-<p><em>Proof.</em> The kernel is defined and smooth off the origin throughout $\mathbb{H}$; the absence of zero divisors makes the inverse $x^{-1}$ defined for every $x\neq0$ and the singular set a single point. The consequences are standard in Clifford analysis.</p>
+<p><em>Proof.</em> The kernel is defined and smooth off the origin throughout $\mathbb{H}$; the absence of zero divisors makes the inverse $\tilde q^{-1}$ defined for every $\tilde q\neq0$ and the singular set a single point. The consequences are standard in Clifford analysis.</p>
 <h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
 <p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the same operator with complex coefficients, so the Cauchy–Riemann operator on $\mathbb{H}$ is exactly the operator on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of $\mathbb{B}$, where all coefficients are real.</p>
 <div class="table-scroll"><table>
@@ -325,7 +325,7 @@ $$</p>
 </tr>
 <tr>
 <td>Cauchy kernel</td>
-<td>$G = x^{\natural}/\lvert x\rvert^4$, regular off the origin</td>
+<td>$G = \tilde q^{\natural}/\lvert \tilde q\rvert^4$, regular off the origin</td>
 <td>regular only where $N\neq0$; not a fundamental solution on indefinite subspaces</td>
 </tr>
 <tr>
@@ -340,12 +340,12 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The obstruction in the biquaternion case is entirely the null cone: because $N$ is indefinite, the principal symbol $s(\xi)$ is singular on the characteristic set, the Cauchy kernel ceases to be a fundamental solution off the quaternion subspace, and the identity $x^{\natural} x = |x|^2$ used to compute $DG = 0$ fails once the coefficients are complex and null. On the quaternion algebra the quaternion norm is definite, so all of these properties hold globally and the four-variable Cauchy theory is complete. The biquaternion account is in <em>Biquaternion Regular Functions</em>.</p>
+<p>The obstruction in the biquaternion case is entirely the null cone: because $N$ is indefinite, the principal symbol $s(\xi)$ is singular on the characteristic set, the Cauchy kernel ceases to be a fundamental solution off the quaternion subspace, and the identity $\tilde q^{\natural} \tilde q = |\tilde q|^2$ used to compute $DG = 0$ fails once the coefficients are complex and null. On the quaternion algebra the quaternion norm is definite, so all of these properties hold globally and the four-variable Cauchy theory is complete. The biquaternion account is in <em>Biquaternion Regular Functions</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The Cauchy–Riemann operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ factor the Euclidean Laplacian, $D\bar D = \bar DD = \Delta$, through the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$. A function is left-regular if $Df = 0$; regularity is equivalent to the Cauchy–Riemann–Fueter system $\partial_0f_0 = \mathrm{div}\,\mathbf{f}$, $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f} = 0$, a first-order elliptic system of four equations whose principal symbol is invertible everywhere because the quaternion norm is definite.</p>
-<p>Regular functions are closed under addition, right multiplication by constants, and real scaling, but not under left multiplication by general quaternions, so they form a right module; constants and classical holomorphic functions of a single-plane variable are regular, the coordinate function is not, and the genuine radial regular function is the Cauchy kernel $G = x^{\natural}/|x|^4$, of homogeneity $-3$ in four variables. Every regular function is harmonic, but not conversely. The Cauchy integral formula holds on every domain in $\mathbb{H}$, with the kernel $G$ and the constant $1/(2\pi^2)$, and it yields the mean value property, the maximum principle, Liouville's theorem and the residue theory without exception.</p>
+<p>Regular functions are closed under addition, right multiplication by constants, and real scaling, but not under left multiplication by general quaternions, so they form a right module; constants and classical holomorphic functions of a single-plane variable are regular, the coordinate function is not, and the genuine radial regular function is the Cauchy kernel $G = \tilde q^{\natural}/|\tilde q|^4$, of homogeneity $-3$ in four variables. Every regular function is harmonic, but not conversely. The Cauchy integral formula holds on every domain in $\mathbb{H}$, with the kernel $G$ and the constant $1/(2\pi^2)$, and it yields the mean value property, the maximum principle, Liouville's theorem and the residue theory without exception.</p>
 <p>The spatial part $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ is the <strong>Moisil–Theodoresco operator</strong> of the three-dimensional theory: it splits as $-\mathrm{div}+\mathrm{grad}+\mathrm{rot}$, it squares alone to the negative Laplacian, $D_3^2 = -\Delta_3$, and it carries the logarithmic derivative $\check\partial\phi = \phi^{-1}D_3\phi$ and the Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2 = v$, which is equivalent to the three-dimensional Schrödinger equation $\Delta_3\phi+v\phi = 0$ and factorises its operator, $-\Delta_3-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$, on a scalar right factor. The four-dimensional operator needs its conjugate for the same factorisation because only the conjugate removes the mixed term $2\partial_0D_3$ of its square. The same operator carries the equation $D_3f+f\vec\alpha = 0$ with a general vectorial coefficient: for a coefficient with one function of one variable per direction, the product $(D_3+M_{\vec\alpha})(D_3-M_{\vec\alpha})$ acts componentwise as four <em>scalar</em> Schrödinger operators with the four potentials $\vec\alpha^2\pm D_3\vec\alpha^{(k)}$, the reduction is exact precisely for coefficients of skew-symmetric Jacobian, and the idempotents $\tfrac12(1\pm ie_k)$ split a scalar shift into two shifts of opposite sign.</p>
-<p>A second three-dimensional theory uses the <strong>reduced quaternions</strong> $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a three-dimensional real subspace that is closed under conjugation and inversion but is not a subalgebra, since $e_1e_2 = e_3$ leaves it. The reduced Cauchy–Riemann operator $D = \partial_0+e_1\partial_1+e_2\partial_2$ and its conjugate factor the three-dimensional Laplacian, $D\bar D = \bar DD = \Delta_3$, and they are the rotation images of $D_3$ under the exchange of $x_0$ with $x_3$; unlike $D_3$ they act on one real and two imaginary coordinates. In components, $Df = 0$ is the four-equation system $\partial_0f_0 = \partial_1f_1+\partial_2f_2$, $\partial_0f_1 = -\partial_1f_0$, $\partial_0f_2 = -\partial_2f_0$, $\partial_1f_2 = \partial_2f_1$, and it is equivalent both to the right equation $fD = 0$ and to the <strong>Riesz system</strong> $\operatorname{div}F = \operatorname{curl}F = 0$ for $F = (f_0,-f_1,-f_2)$: every monogenic function of this theory is two-sided, a coincidence that fails in four variables. The hypercomplex derivative is $\tfrac12\bar Df$, its vanishing defines the hyperholomorphic constants, and the monogenic primitive is the inverse of that derivative modulo the constants. The solid spherical monogenics form a complete orthogonal system indexed by polynomials $X_n^{l,\dagger}$ and $Y_n^{m,\dagger}$ built from the Legendre functions, with ladder relations under differentiation and primitivation, and the homogeneous monogenic polynomials of degree $n$ form a space of dimension $2n+3$. Every monogenic function decomposes orthogonally into a main part and a hyperholomorphic constant, the analogue of the classical fact that $f(z)-f'(0)z$ is orthogonal to the constants; that decomposition is the basis of the Bloch theorem for monogenic functions.</p>
+<p>A second three-dimensional theory uses the <strong>reduced quaternions</strong> $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a three-dimensional real subspace that is closed under conjugation and inversion but is not a subalgebra, since $e_1e_2 = e_3$ leaves it. The reduced Cauchy–Riemann operator $D = \partial_0+e_1\partial_1+e_2\partial_2$ and its conjugate factor the three-dimensional Laplacian, $D\bar D = \bar DD = \Delta_3$, and they are the rotation images of $D_3$ under the exchange of $q_0$ with $q_3$; unlike $D_3$ they act on one real and two imaginary coordinates. In components, $Df = 0$ is the four-equation system $\partial_0f_0 = \partial_1f_1+\partial_2f_2$, $\partial_0f_1 = -\partial_1f_0$, $\partial_0f_2 = -\partial_2f_0$, $\partial_1f_2 = \partial_2f_1$, and it is equivalent both to the right equation $fD = 0$ and to the <strong>Riesz system</strong> $\operatorname{div}F = \operatorname{curl}F = 0$ for $F = (f_0,-f_1,-f_2)$: every monogenic function of this theory is two-sided, a coincidence that fails in four variables. The hypercomplex derivative is $\tfrac12\bar Df$, its vanishing defines the hyperholomorphic constants, and the monogenic primitive is the inverse of that derivative modulo the constants. The solid spherical monogenics form a complete orthogonal system indexed by polynomials $X_n^{l,\dagger}$ and $Y_n^{m,\dagger}$ built from the Legendre functions, with ladder relations under differentiation and primitivation, and the homogeneous monogenic polynomials of degree $n$ form a space of dimension $2n+3$. Every monogenic function decomposes orthogonally into a main part and a hyperholomorphic constant, the analogue of the classical fact that $f(A)-f'(0)A$ is orthogonal to the constants; that decomposition is the basis of the Bloch theorem for monogenic functions.</p>
 <p>The comparison with the biquaternions isolates the role of the quaternion norm: on $\mathbb{H}$ the definiteness of $N$ makes the operator elliptic everywhere and the Cauchy theory global, while on $\mathbb{B}$ the indefinite form produces the null cone, on which the symbol degenerates and the Cauchy kernel ceases to be fundamental, so the analogy is available only on the quaternion subspace. The Fueter construction and the slice description of regular functions are in <em>Fueter Theory for Quaternions</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -361,8 +361,8 @@ $$</p>
 <td>The quaternion algebra, a division algebra</td>
 </tr>
 <tr>
-<td>$x = x_0+\mathbf{x}$</td>
-<td>Variable quaternion, $x_\mu\in\mathbb{R}$, $\mathbf{x} = x_1e_1+x_2e_2+x_3e_3$</td>
+<td>$\tilde q = q_0+\mathbf{q}$</td>
+<td>Variable quaternion, $q_\mu\in\mathbb{R}$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$</td>
 </tr>
 <tr>
 <td>$\partial_\mu, \Delta = \sum_\mu\partial_\mu^2$</td>
@@ -401,11 +401,11 @@ $$</p>
 <td>Principal symbol, $s s^{\natural} = \lvert\xi\rvert^2$</td>
 </tr>
 <tr>
-<td>$z = x_0+e_1x_1$</td>
-<td>Single-plane complex variable, $\partial_{\bar z} = \tfrac12(\partial_0+e_1\partial_1)$</td>
+<td>$A = q_0+e_1q_1$</td>
+<td>Single-plane complex variable, $\partial_{\bar A} = \tfrac12(\partial_0+e_1\partial_1)$</td>
 </tr>
 <tr>
-<td>$G(x) = x^{\natural}/\lvert x\rvert^4$</td>
+<td>$G(\tilde q) = \tilde q^{\natural}/\lvert \tilde q\rvert^4$</td>
 <td>Cauchy kernel; $DG = 2\pi^2\delta_0e_0$</td>
 </tr>
 <tr>

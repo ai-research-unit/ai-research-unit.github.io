@@ -139,7 +139,7 @@ $$</p>
 x^{\dagger} = \alpha\bigl(x^{r,\sigma}\bigr).
 $$</p>
 <p>The choice between them is the choice of a sign per grade, hence the choice of a signature.</p>
-<p><strong>Example (the biquaternions).</strong> On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the three commuting conjugations ${}^{\natural}$, ${}^{\natural}$ and $\bar{\cdot}$ are involutions; ${}^{\natural}$ conjugates the complex coefficients and $\bar{\cdot} = {}^{\natural}\circ{}^{\natural}$ is the dagger. Their composition rules make $\{\mathrm{id}, {}^{\natural}, {}^{\natural}, \bar{\cdot}\}$ a Klein four-group, which is the smallest case in which the involution of the base and the intrinsic anti-involutions are both visible.</p>
+<p><strong>Example (the biquaternions).</strong> On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the three commuting conjugations ${}^{\natural}$, $\sigma$ and $\bar{\cdot}$ are involutions; $\sigma$ conjugates the complex coefficients and $\bar{\cdot} = \sigma\circ{}^{\natural}$ is the dagger. Their composition rules make $\{\mathrm{id}, {}^{\natural}, \sigma, \bar{\cdot}\}$ a Klein four-group, which is the smallest case in which the involution of the base and the intrinsic anti-involutions are both visible.</p>
 <h3 id="semilinearity">Semilinearity</h3>
 <p>A map $f$ between $A_0$-modules is $\sigma$-<strong>semilinear</strong> if $f(x + y) = f(x) + f(y)$ and $f(ax) = \sigma(a)f(x)$. The dagger is $\sigma$-semilinear, and so is every map of the form $x \mapsto xc$, composed with the dagger. A form $s$ on a right $A_0$-module is $\sigma$-<strong>sesquilinear</strong> if $s(xa, yb) = \sigma(a)s(x,y)b$, the convention of <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group</em>. The passage from the linear to the semilinear theory is exactly the passage from $\sigma = \mathrm{id}$ to a general $\sigma$.</p>
 <h2 id="the-form-and-the-trace-form">The Form and the Trace Form</h2>
@@ -182,7 +182,7 @@ $$</p>
 \langle x, y \rangle = \sum_{i,j}\sigma(x_i)\,H_{ij}\,y_j = x^{\dagger}H\,y ,
 $$</p>
 <p>so the form is represented by a Hermitian matrix, and it is non-degenerate exactly when $H$ is invertible. The <strong>radical</strong> $\operatorname{rad}\langle\cdot,\cdot\rangle = \{x : \langle x, y\rangle = 0$ for all $y\}$ is the kernel of $H$, so the form of a Hilbert algebra is non-degenerate, its radical being zero by positive definiteness.</p>
-<p>The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natural}$: the shared block reserves $\bar{\cdot}$ for Hermitian conjugation and ${}^{\natural}$ for the conjugation of coefficients, which is what makes the article agree with its own use of $\bar{\cdot}$ for the biquaternion Hermitian conjugation.</p>
+<p>The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natural}$: the shared block reserves $\bar{\cdot}$ for Hermitian conjugation and $\sigma$ for the conjugation of coefficients, which is what makes the article agree with its own use of $\bar{\cdot}$ for the biquaternion Hermitian conjugation.</p>
 <h3 id="positivity-of-the-trace-form">Positivity of the Trace Form</h3>
 <p><strong>Example (the biquaternions).</strong> For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the reduced norm. It is $\mathbb{C}$-valued and isotropic, and it vanishes on the zero divisors, its nonzero zeros being exactly the matrices of rank one.</p>
 <p>The dagger changes the picture completely. The form $\operatorname{Trd}(\tilde P\bar{\tilde{Q}})$ is complex-Hermitian with diagonal</p>
@@ -274,7 +274,7 @@ $$</p>
 </tr>
 <tr>
 <td>${}^{\natural}$</td>
-<td>Conjugation of coefficients; on $\mathbb{B}$, $\bar{\cdot} = {}^{\natural}\circ{}^{\natural}$</td>
+<td>The conjugate, negating the vectors; the coefficient conjugation is $\sigma$, so on $\mathbb{B}$, $\bar{\cdot} = \sigma\circ{}^{\natural}$</td>
 </tr>
 <tr>
 <td>$m_x$, $\lambda(x)$</td>

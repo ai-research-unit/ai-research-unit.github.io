@@ -99,12 +99,12 @@ $$</p>
 <p>The first two are the conjugations of the quaternion and of the complex structure; the third is their composite; the fourth is the negative of the third. The names are conventional and are those used throughout the series; the notations ${}^{\natural}$ and $\bar{\cdot}$ are not to be confused with the complex conjugate of a coefficient, which is always written with a star on the coefficient alone.</p>
 <h3 id="linearity-and-antilinearity">Linearity and Antilinearity</h3>
 <p><strong>Definition.</strong> An <strong>antilinear involution</strong> of $\mathbb{B}$ is a real-linear map $\sigma$ with $\sigma^2 = \mathrm{id}$ and $\sigma(\lambda \tilde{Q}) = \bar{\lambda}\sigma(\tilde{Q})$ for $\lambda \in \mathbb{C}$.</p>
-<p><strong>Proposition.</strong> The four conjugations are antilinear involutions, and the first three are antiautomorphisms of the algebra, while the fourth is an antiautomorphism up to the central sign: for $\tilde{Q}, \tilde{R} \in \mathbb{B}$,</p>
+<p><strong>Proposition.</strong> The four conjugations are antilinear involutions, and the first and the third are antiautomorphisms of the algebra, while the second is an automorphism, reversing nothing, and the fourth is an antiautomorphism up to the central sign: for $\tilde{Q}, \tilde{R} \in \mathbb{B}$,</p>
 <p>$$
-(\tilde{Q}\tilde{R})^{\natural} = \tilde{R}^{\natural}\,\tilde{Q}^{\natural} , \qquad (\tilde{Q}\tilde{R})^{*} = \bar{\tilde{Q}}\bar{\tilde{R}} , \qquad (\tilde{Q}\tilde{R})^{\dagger} = \tilde{R}^{*}\tilde{Q}^{*} , \qquad (\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat} .
+(\tilde{Q}\tilde{R})^{\natural} = \tilde{R}^{\natural}\,\tilde{Q}^{\natural} , \qquad \overline{\tilde{Q}\tilde{R}} = \bar{\tilde{Q}}\,\bar{\tilde{R}} , \qquad (\tilde{Q}\tilde{R})^{*} = \tilde{R}^{*}\tilde{Q}^{*} , \qquad (\tilde{Q}\tilde{R})^{\flat} = -\tilde{R}^{\flat}\tilde{Q}^{\flat} .
 $$</p>
-<p><strong>Proof.</strong> Each formula is a direct computation from the definitions; the sign in the last follows from $\flat = -{}^{*}$ and ${}^{*}$ being an antiautomorphism, since $-\mathrm{id}$ is central.</p>
-<p>The distinction between the second row of the table and the others is the reason the four maps are not interchangeable: $\bar{\cdot}$ reverses nothing, being the coefficient-wise conjugation, while ${}^{\natural}$, ${}^{*}$ and $\flat$ reverse the order of a product.</p>
+<p><strong>Proof.</strong> Each formula is a direct computation from the definitions; the sign in the last follows from $\flat = -{}^{*}$ and ${}^{*}$ being an antiautomorphism, since $-\mathrm{id}$ is central. The second formula is the one that does not reverse: coefficient-wise conjugation is multiplicative, because it is a ring homomorphism of $\mathbb{C}$ applied to the coefficients.</p>
+<p>The distinction between the second conjugation and the others is the reason the four maps are not interchangeable: $\bar{\cdot}$ reverses nothing, being the coefficient-wise conjugation, while ${}^{\natural}$, ${}^{*}$ and $\flat$ reverse the order of a product.</p>
 <h2 id="the-group-they-generate">The Group They Generate</h2>
 <h3 id="two-composition-rules">Two Composition Rules</h3>
 <p><strong>Theorem.</strong> The four conjugations are related by</p>
@@ -157,7 +157,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The entry $-\bar{\cdot}$ denotes the map $\tilde{Q} \mapsto -\bar{\tilde{Q}}$. The table contains the two rules of the theorem and shows where the group structure stops: the composite of two maps of the group is the third, while a composite involving $\flat$ may be the negative of a member of the group — as in the two corners $-\bar{\cdot}$ — or the negative of the identity, as in the pairs $(^{\dagger},\flat)$ and $(\flat,^{\dagger})$.</p>
+<p>The entry $-\bar{\cdot}$ denotes the map $\tilde{Q} \mapsto -\bar{\tilde{Q}}$. The table contains the two rules of the theorem and shows where the group structure stops: the composite of two maps of the group is the third, while a composite involving $\flat$ may be the negative of a member of the group — as in the two corners $-\bar{\cdot}$ — or the negative of the identity, as in the pairs $({}^{*},\flat)$ and $(\flat,{}^{*})$.</p>
 <h2 id="how-the-conjugations-permute-each-other">How the Conjugations Permute Each Other</h2>
 <p><strong>Theorem.</strong> Conjugation by an involution $\sigma$, that is the operation $\tau \mapsto \sigma \circ \tau \circ \sigma^{-1}$, permutes the four conjugations among themselves:</p>
 <p>$$
@@ -301,7 +301,7 @@ $$</p>
 </tr>
 <tr>
 <td>${}^{*}$</td>
-<td>Hermitian conjugation, ${}^{\natural}\circ{}^{*}$</td>
+<td>Hermitian conjugation, $\bar{\cdot}\circ{}^{\natural}$</td>
 </tr>
 <tr>
 <td>$\flat$</td>
@@ -309,7 +309,7 @@ $$</p>
 </tr>
 <tr>
 <td>$-\mathrm{id}$</td>
-<td>the central sign, $Q \mapsto -Q$</td>
+<td>the central sign, $\tilde{Q} \mapsto -\tilde{Q}$</td>
 </tr>
 <tr>
 <td>involution group</td>

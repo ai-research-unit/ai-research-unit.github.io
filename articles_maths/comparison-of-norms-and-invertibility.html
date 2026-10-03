@@ -73,7 +73,7 @@
 <tbody>
 <tr>
 <td>formula</td>
-<td>$x^2$</td>
+<td>$a^2$</td>
 <td>$a^2+b^2$</td>
 <td>$a^2-b^2$</td>
 <td>$a^2$</td>
@@ -128,7 +128,7 @@
 </tr>
 <tr>
 <td>Euclidean norm</td>
-<td>$\lvert x\rvert$</td>
+<td>$\lvert a\rvert$</td>
 <td>$\sqrt{N}$</td>
 <td>$\sqrt{a^2+b^2}$</td>
 <td>$\sqrt{a^2+b^2}$</td>
@@ -193,7 +193,7 @@
 <tbody>
 <tr>
 <td>polarised form</td>
-<td>$xy$</td>
+<td>$ab$</td>
 <td>$\operatorname{Re}(\bar ZW)$</td>
 <td>$ac-bd$</td>
 <td>$ac$</td>
@@ -204,7 +204,7 @@
 </tr>
 <tr>
 <td>Hermitian form</td>
-<td>$xx$</td>
+<td>$a^2$</td>
 <td>$Z\bar Z$</td>
 <td>$Z\bar Z$</td>
 <td>$Z\bar Z$</td>
@@ -215,7 +215,7 @@
 </tr>
 <tr>
 <td>Hermitian form scalar part</td>
-<td>$x^2$</td>
+<td>$a^2$</td>
 <td>$a^2+b^2$</td>
 <td>$a^2-b^2$</td>
 <td>$a^2$</td>
@@ -241,12 +241,12 @@
 <h2 id="multiplicativity-and-the-composition-law">Multiplicativity and the Composition Law</h2>
 <p>The norm of every one of the eight algebras is multiplicative:</p>
 <p>$$
-N(xy)=N(x)\,N(y),
+N(\tilde Q\tilde P)=N(\tilde Q)\,N(\tilde P),
 $$</p>
 <p>as in <em>Real Norm and Invertibility</em>, §<em>Multiplicativity</em>, and its counterparts. For the six algebras whose norm is scalar-valued this is a genuine composition law: the form of the product is the product of the forms, so the vanishing set is closed under multiplication and the units are closed under multiplication and inversion. For $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ the composition law is the classical one of the real, complex and quaternion norms and the square root $\sqrt{N}$ is a multiplicative Euclidean norm; for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the square root is taken of an absolute value and the composition law survives in the form of the multiplicative modulus $\rho=\sqrt{\lvert N\rvert}$; for $\mathbb{D}'$ the composition law is the collapse $a^2c^2=(ac)^2$ of a form that remembers only the real part (<em>Split-Complex Norm and Invertibility</em>, §<em>Multiplicativity</em>; <em>Dual-Numbers Norm and Invertibility</em>, §<em>Multiplicativity</em>).</p>
-<p>The two biquaternion columns need the law stated separately, because the value of the form lies in a ring. The biquaternion norm is complex-valued and multiplicative, and $\sqrt{\lvert N\rvert}$ is the <strong>unique</strong> multiplicative real norm on the group of units normalised to agree with the absolute value on the real scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Unique Real Norm, and the Polar Scale</em>). The split biquaternion norm is split complex-valued and multiplicative, and in the idempotent basis the law is componentwise, $N(xy)_\pm=N(x)_\pm N(y)_\pm$, which is the multiplicativity of the ordinary quaternion norm on each half. The single sharpening the last column needs is that a product of two nonzero values of $\mathbb{D}$ can be zero, so multiplicativity does not by itself give the vanishing set as a multiplicative closed class; that role is played by the ideal $\mathrm{M}=(\varepsilon)$.</p>
-<p><strong>Remark (the commutative analogue of the last column).</strong> The four-dimensional commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ of <em>List of Algebras by Dimension</em> has no column in the table, and its norm theory is the complex analogue of the last column: it is what the ring-valued case looks like when the division ring is a field. In the idempotent coordinates $q = \lambda_+e_+ + \lambda_-e_-$, with $\lambda_\pm = z_1 \pm z_2 \in \mathbb{C}$, the norm is their product,
-$$N(q) = \lambda_+\lambda_- = z_1^2 - z_2^2,$$
+<p>The two biquaternion columns need the law stated separately, because the value of the form lies in a ring. The biquaternion norm is complex-valued and multiplicative, and $\sqrt{\lvert N\rvert}$ is the <strong>unique</strong> multiplicative real norm on the group of units normalised to agree with the absolute value on the real scalars (<em>Biquaternion Norm and Invertibility</em>, §<em>The Unique Real Norm, and the Polar Scale</em>). The split biquaternion norm is split complex-valued and multiplicative, and in the idempotent basis the law is componentwise, $N(\tilde Q\tilde P)_\pm=N(\tilde Q)_\pm N(\tilde P)_\pm$, which is the multiplicativity of the ordinary quaternion norm on each half. The single sharpening the last column needs is that a product of two nonzero values of $\mathbb{D}$ can be zero, so multiplicativity does not by itself give the vanishing set as a multiplicative closed class; that role is played by the ideal $\mathrm{M}=(\varepsilon)$.</p>
+<p><strong>Remark (the commutative analogue of the last column).</strong> The four-dimensional commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ of <em>List of Algebras by Dimension</em> has no column in the table, and its norm theory is the complex analogue of the last column: it is what the ring-valued case looks like when the division ring is a field. In the idempotent coordinates $q = \lambda_+e_+ + \lambda_-e_-$, with $\lambda_\pm = A \pm B \in \mathbb{C}$, the norm is their product,
+$$N(q) = \lambda_+\lambda_- = A^2 - B^2,$$
 the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicative, and componentwise in the idempotent basis exactly as in the last column, $N(qq')_\pm = N(q)_\pm N(q')_\pm$. It vanishes on $e_+$ and on $e_-$, since $N(e_\pm) = \tfrac14 - \tfrac14 = 0$, so the vanishing set is the union of the two ideals and the algebra has zero divisors; the two elements of zero norm whose sum is $1$ are $e_+$ and $e_-$, and they are the reason the triangle inequality fails here, the one property its authors report as different from the complex case. The distinction is worth stating because it also settles which object is multiplicative: the real form $\lvert\lambda_+\rvert^2 - \lvert\lambda_-\rvert^2 = a^2+b^2-c^2-d^2$, of signature $(2,2)$, is <strong>not</strong> multiplicative, so the multiplicativity of this case is a property of the ring-valued norm and not of any real quadratic form refined from it.</p>
 <h2 id="the-invertibility-criterion">The Invertibility Criterion</h2>
 <p>The following table compares the criterion of invertibility and the inverse formula for the eight algebras. The eight algebras are the columns, in the fixed order.</p>
@@ -267,7 +267,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 <tbody>
 <tr>
 <td>criterion</td>
-<td>$x\neq 0$</td>
+<td>$a\neq 0$</td>
 <td>$N\neq 0$</td>
 <td>$N\neq 0$</td>
 <td>$a$ a unit of $R$</td>
@@ -289,7 +289,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 </tr>
 <tr>
 <td>inverse</td>
-<td>$1/x$</td>
+<td>$1/a$</td>
 <td>$\bar Z/N$</td>
 <td>$\bar Z/N$</td>
 <td>$a^{-1}-a^{-2}\varepsilon b$</td>
@@ -300,7 +300,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 </tr>
 </tbody>
 </table></div>
-<p>The criterion is the same statement in seven of the eight columns and a genuinely different one in the eighth. For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the element is invertible exactly when its norm is nonzero, and the inverse is the conjugate divided by the norm: $x^{-1}=x/N(x)$ (<em>Real Norm and Invertibility</em>, §<em>Invertibility</em>), $Z^{-1}=\bar Z/N(Z)$ (<em>Complex Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Complex Norm and Invertibility</em>, §<em>Invertibility</em>), $\tilde q^{-1}=\tilde{q}^{\natural}/N(\tilde q)$ (<em>Quaternion Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>), $\tilde Q^{-1}=\tilde{Q}^{\natural}/N(\tilde Q)$ (<em>Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). The dual numbers have the same inverse formula but the criterion is stated on the real part, because the norm is degenerate: $Z=a+\varepsilon b$ is invertible exactly when $a$ is a unit of the base ring, over a field exactly when $a\neq 0$, and the inverse is $a^{-1}-a^{-2}\varepsilon b$ (<em>Dual-Numbers Norm and Invertibility</em>, §<em>Invertibility</em>).</p>
+<p>The criterion is the same statement in seven of the eight columns and a genuinely different one in the eighth. For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the element is invertible exactly when its norm is nonzero, and the inverse is the conjugate divided by the norm: $a^{-1}=a/N(a)$ (<em>Real Norm and Invertibility</em>, §<em>Invertibility</em>), $Z^{-1}=\bar Z/N(Z)$ (<em>Complex Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Complex Norm and Invertibility</em>, §<em>Invertibility</em>), $\tilde q^{-1}=\tilde{q}^{\natural}/N(\tilde q)$ (<em>Quaternion Norm and Invertibility</em>, §<em>Invertibility</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>), $\tilde Q^{-1}=\tilde{Q}^{\natural}/N(\tilde Q)$ (<em>Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). The dual numbers have the same inverse formula but the criterion is stated on the real part, because the norm is degenerate: $Z=a+\varepsilon b$ is invertible exactly when $a$ is a unit of the base ring, over a field exactly when $a\neq 0$, and the inverse is $a^{-1}-a^{-2}\varepsilon b$ (<em>Dual-Numbers Norm and Invertibility</em>, §<em>Invertibility</em>).</p>
 <p>The split biquaternion column is the exception, and it is the one place where the norm is not the criterion. The norm is split complex-valued and anisotropic, so $N(\tilde Q)\neq 0$ holds for every nonzero $\tilde Q$ and says nothing. What decides invertibility is whether $N(\tilde Q)$ is a <strong>unit of $\mathbb{D}$</strong>, equivalently whether both idempotent components $\tilde Q_\pm$ are nonzero, equivalently whether $N(\tilde Q)$ is not a nonzero zero divisor of $\mathbb{D}$ (<em>Split-Biquaternion Norm and Invertibility</em>, §<em>Invertibility</em>). This is a linear condition in the idempotent basis, in contrast with the quadratic conditions of the other seven columns.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p>The following table compares the group of units of the eight algebras: its description, its number of connected components, and its compactness. The eight algebras are the columns, in the fixed order.</p>
@@ -493,7 +493,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 <tbody>
 <tr>
 <td>positive / invertible</td>
-<td>$x>0$</td>
+<td>$a>0$</td>
 <td>$Z\neq 0$</td>
 <td>spacelike $N>0$</td>
 <td>$a\neq 0$</td>
@@ -515,7 +515,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 </tr>
 <tr>
 <td>negative</td>
-<td>$x<0$</td>
+<td>$a<0$</td>
 <td>—</td>
 <td>timelike $N<0$</td>
 <td>—</td>
@@ -539,7 +539,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 </table></div>
 <p>The table records the number of classes the sign of the norm produces: three for $\mathbb{R}$ (positive, zero, negative), but no nonzero null class, because the form is definite; two for the division algebras $\mathbb{C}$ and $\mathbb{H}$ (invertible, zero); three for $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ (spacelike, null, timelike), the null class being the zero-divisor set; three for $\mathbb{D}'$ (invertible, zero divisor, zero); and three for the biquaternion systems (invertible, zero divisor, zero). The empty cells of $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{H}$ in the third and fourth rows are genuine: $\mathbb{C}$ and $\mathbb{H}$ have no element of vanishing norm other than the origin, so their null class is empty and their classification is a dichotomy; $\mathbb{D}'$ has no negative value because its form is semidefinite; and $\mathbb{R}$ has no null class because the only real number of vanishing square is zero. For $\mathbb{D}$ and $\mathbb{H}_{\mathrm{s}}$ the classification is multiplicative — the product of two spacelike elements is spacelike, and so on — so it is a grading of the algebra compatible with its multiplication (<em>Split-Complex Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>; <em>Split-Quaternion Norm and Invertibility</em>, §<em>Distribution of the Invertible Elements</em>). For $\mathbb{H}_{\mathbb{D}}$ the midpoint of the table is the one case not read off from the sign of a scalar: the zero divisors are the elements with exactly one idempotent component zero, and the sign of the norm gives no such information, its value being a nonzero zero divisor of $\mathbb{D}$.</p>
 <h2 id="the-two-polar-series">The Two Polar Series</h2>
-<p>Each algebra of the table has a polar decomposition $x=\rho u$ of every element with non-vanishing norm into a modulus $\rho$ and a unit factor $u$, and the decompositions fall into two series according to the character of the norm and of the unit factor: the <strong>definite polar series</strong> $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose Hermitian scalar part is positive definite and whose unit factor carries a compact factor, and the <strong>indefinite polar series</strong> $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, whose norm is indefinite, degenerate or split-valued and whose unit factor carries a non-compact hyperbolic or parabolic factor. The following table compares the two series and the place of each algebra in them: the modulus, the character of the unit factor, the boundary of the decomposition and the series. The eight algebras are the columns, in the fixed order. The factors into which the unit factor splits are the subject of <em>Comparison of the Polar Element Representation</em> and are not repeated here.</p>
+<p>Each algebra of the table has a polar decomposition $\tilde q=\rho u$ of every element with non-vanishing norm into a modulus $\rho$ and a unit factor $u$, and the decompositions fall into two series according to the character of the norm and of the unit factor: the <strong>definite polar series</strong> $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose Hermitian scalar part is positive definite and whose unit factor carries a compact factor, and the <strong>indefinite polar series</strong> $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, whose norm is indefinite, degenerate or split-valued and whose unit factor carries a non-compact hyperbolic or parabolic factor. The following table compares the two series and the place of each algebra in them: the modulus, the character of the unit factor, the boundary of the decomposition and the series. The eight algebras are the columns, in the fixed order. The factors into which the unit factor splits are the subject of <em>Comparison of the Polar Element Representation</em> and are not repeated here.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -557,7 +557,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 <tbody>
 <tr>
 <td>modulus</td>
-<td>$\lvert x\rvert$</td>
+<td>$\lvert a\rvert$</td>
 <td>$\sqrt{N}$</td>
 <td>$\sqrt{\lvert N\rvert}$</td>
 <td>$\lvert a\rvert$</td>
@@ -619,7 +619,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 <td>the norm of the algebra under discussion</td>
 </tr>
 <tr>
-<td>$N(x)=x^2$</td>
+<td>$N(a)=a^2$</td>
 <td>the norm of $\mathbb{R}$</td>
 </tr>
 <tr>
@@ -679,7 +679,7 @@ the determinant of the matrix representation: $\mathbb{C}$-valued, multiplicativ
 <td>the positive scalars, the identity component of $\mathbb{R}^\times$</td>
 </tr>
 <tr>
-<td>$x=\rho u$</td>
+<td>$\tilde q=\rho u$</td>
 <td>the polar decomposition of an element: modulus and unit factor</td>
 </tr>
 <tr>

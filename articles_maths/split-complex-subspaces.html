@@ -54,11 +54,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the six-subspace lattice that the biquaternion category supports. It is the two-dimensional counterpart of <em>Biquaternion Relations Between Subspaces</em>, and the systematic difference is that the involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.</p>
 <p>The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $Z = a+j b$; conjugate $\bar Z = a-j b$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Z_\pm = a\pm b$; norm $N(Z) = Z\bar Z = a^2-b^2$. The algebra is commutative, so there is no quaternion conjugation and no Hermitian decomposition; those slots of the four-dimensional case are empty here.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no quaternion conjugation and no Hermitian decomposition; those slots of the four-dimensional case are empty here.</p>
 <h2 id="the-two-involutions">The Two Involutions</h2>
-<p>The algebra carries two natural involutions: the split-complex conjugation $\bar{Z} = a-j b$ and the idempotent conjugation (the swap) $\tilde{Z} = (a-b)\Pi_1 + (a+b)\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:</p>
+<p>The algebra carries two natural involutions: the split-complex conjugation $\bar{A} = a-ja'$ and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:</p>
 <p>$$
-\tilde Z = (a-b)\Pi_1 + (a+b)\Pi_2 = (a-b)\tfrac{1+j}{2} + (a+b)\tfrac{1-j}{2} = a - j b = \bar Z.
+A = (a-a')\Pi_1 + (a+a')\Pi_2 = (a-a')\tfrac{1+j}{2} + (a+a')\tfrac{1-j}{2} = a - j a' = \bar A.
 $$</p>
 <p>So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the map sending an element to its "conjugate with respect to the idempotent basis" produces no second structure. In the four-dimensional algebra the corresponding statements are different: $\mathbb{B}$ carries the four involutions $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$, they are pairwise distinct, and they generate six subspaces. Here the whole involution content is a single non-trivial map.</p>
 <h2 id="the-distinguished-subspaces-at-a-glance">The Distinguished Subspaces at a Glance</h2>
@@ -77,7 +77,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{R}_{\mathbb{D}}$</td>
-<td>$\bar Z = Z$</td>
+<td>$\bar A = A$</td>
 <td>$1$</td>
 <td>$1$</td>
 <td>yes, $\cong\mathbb{R}$</td>
@@ -85,15 +85,15 @@ $$</p>
 </tr>
 <tr>
 <td>$j\mathbb{R}_{\mathbb{D}}$</td>
-<td>$\bar Z = -Z$</td>
+<td>$\bar A = -A$</td>
 <td>$j$</td>
 <td>$1$</td>
 <td>no</td>
-<td>$-b^2$, negative definite</td>
+<td>$-a'^2$, negative definite</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\Pi_1$</td>
-<td>$Z_- = 0$</td>
+<td>$A_- = 0$</td>
 <td>$\Pi_1$</td>
 <td>$1$</td>
 <td>ideal, $\cong\mathbb{R}$</td>
@@ -101,7 +101,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{R}\Pi_2$</td>
-<td>$Z_+ = 0$</td>
+<td>$A_+ = 0$</td>
 <td>$\Pi_2$</td>
 <td>$1$</td>
 <td>ideal, $\cong\mathbb{R}$</td>
@@ -113,25 +113,25 @@ $$</p>
 <h2 id="the-decompositions">The Decompositions</h2>
 <p>The involution gives the <strong>scalar–split-vector decomposition</strong></p>
 <p>$$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Z = Z_r + j Z_i, \qquad Z_r = \tfrac12(Z+\bar Z), \quad Z_i = \tfrac12 j^{-1}(Z-\bar Z) = b,
+\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad A = A_r + j A_i, \qquad A_r = \tfrac12(A+\bar A), \quad A_i = \tfrac12 j^{-1}(A-\bar A) = a',
 $$</p>
 <p>and the idempotent basis gives the <strong>idempotent decomposition</strong></p>
 <p>$$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Z = Z_+\Pi_1 + Z_-\Pi_2, \qquad Z_\pm = Z\Pi_\pm = a\pm b.
+\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad A = A_+\Pi_1 + A_-\Pi_2, \qquad A_\pm = A\Pi_\pm = a\pm a'.
 $$</p>
 <p>The two decompositions are related by the coefficient change-of-basis in the plane $\mathbb{D}\cong\mathbb{R}^2$:</p>
 <p>$$
-Z_+ = Z_r + Z_i, \qquad Z_- = Z_r - Z_i,
+A_+ = A_r + A_i, \qquad A_- = A_r - A_i,
 $$</p>
 <p>so the change from the eigenbasis $\{1, j\}$ of the involution to the idempotent basis $\{\Pi_1, \Pi_2\}$ is the linear map</p>
 <p>$$
-\begin{pmatrix} Z_+ \\ Z_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} Z_r \\ Z_i \end{pmatrix}.
+\begin{pmatrix} A_+ \\ A_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} A_r \\ A_i \end{pmatrix}.
 $$</p>
 <p>In the four-dimensional algebra there are three such decompositions, the scalar–vector, the quaternion and the Hermitian; here there are two, and only the first is induced by an involution.</p>
 <h2 id="the-four-coordinate-lines">The Four Coordinate Lines</h2>
-<p>The two real coordinates of $\mathbb{D}$ are $(a,b)$, in the basis $\{1,j\}$. They group into the two lines</p>
+<p>The two real coordinates of $\mathbb{D}$ are $(a,a')$, in the basis $\{1,j\}$. They group into the two lines</p>
 <p>$$
-\langle 1\rangle = \{(a,0)\}, \qquad \langle j\rangle = \{(0,b)\},
+\langle 1\rangle = \{(a,0)\}, \qquad \langle j\rangle = \{(0,a')\},
 $$</p>
 <p>the real and split imaginary coordinate lines. In the idempotent basis the same plane is grouped into the two lines</p>
 <p>$$
@@ -151,7 +151,7 @@ $$</p>
 <tr>
 <td>real line</td>
 <td>$1$</td>
-<td>$b = 0$</td>
+<td>$a' = 0$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -163,13 +163,13 @@ $$</p>
 <tr>
 <td>positive idempotent line</td>
 <td>$\Pi_1$</td>
-<td>$a = b$</td>
+<td>$a = a'$</td>
 <td>$+1$</td>
 </tr>
 <tr>
 <td>negative idempotent line</td>
 <td>$\Pi_2$</td>
-<td>$a = -b$</td>
+<td>$a = -a'$</td>
 <td>$-1$</td>
 </tr>
 </tbody>
@@ -291,12 +291,12 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{R}_{\mathbb{D}}$</td>
-<td>$\bar Z = Z$</td>
+<td>$\bar A = A$</td>
 <td>$+1$</td>
 </tr>
 <tr>
 <td>$j\mathbb{R}_{\mathbb{D}}$</td>
-<td>$\bar Z = -Z$</td>
+<td>$\bar A = -A$</td>
 <td>$-1$</td>
 </tr>
 <tr>
@@ -315,7 +315,7 @@ $$</p>
 <p>$$
 \bar \Pi_1 = \tfrac12(1-j) = \Pi_2, \qquad \bar \Pi_2 = \tfrac12(1+j) = \Pi_1.
 $$</p>
-<p>So the involution is diagonal on the eigenbasis and the swap on the idempotent basis. In the four-dimensional case the four involutions act on the six subspaces with mixed signs; here a single involution acts with the two signs on its own eigenspaces, and interchanges the two idempotent lines. The action table is the whole of the involution information, and it is consistent with the earlier statement $\tilde Z = \bar Z$: the idempotent swap is neither more nor less than the conjugation.</p>
+<p>So the involution is diagonal on the eigenbasis and the swap on the idempotent basis. In the four-dimensional case the four involutions act on the six subspaces with mixed signs; here a single involution acts with the two signs on its own eigenspaces, and interchanges the two idempotent lines. The action table is the whole of the involution information, and it is consistent with the earlier statement $A = \bar A$: the idempotent swap is neither more nor less than the conjugation.</p>
 <h2 id="the-norm-on-each-line">The Norm on Each Line</h2>
 <p>The restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines:</p>
 <div class="table-scroll"><table>
@@ -336,7 +336,7 @@ $$</p>
 </tr>
 <tr>
 <td>$j\mathbb{R}_{\mathbb{D}}$</td>
-<td>$N(j b) = -b^2$</td>
+<td>$N(j a') = -a'^2$</td>
 <td>negative definite</td>
 <td>none</td>
 </tr>
@@ -356,13 +356,13 @@ $$</p>
 </table></div>
 <p>The two eigenlines are the definite lines of the form; the two idempotent lines are the isotropic lines. This is the plane-level version of the statement, made in <em>Split-Complex Zero Divisors</em>, that the null cone is exactly the union of the two idempotent lines, and of the statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin.</p>
 <h2 id="comparison-with-the-two-subspaces-of-math166">Comparison with the Two Subspaces of $\mathbb{C}$</h2>
-<p>The complex field $\mathbb{C}$ is the definite two-dimensional algebra, and its subspace theory is the simplest of all: conjugation $Z \mapsto \bar Z$ is the unique non-trivial involution, with fixed space the real line and anti-fixed space the pure imaginary line, and there are</p>
+<p>The complex field $\mathbb{C}$ is the definite two-dimensional algebra, and its subspace theory is the simplest of all: conjugation $A \mapsto \bar A$ is the unique non-trivial involution, with fixed space the real line and anti-fixed space the pure imaginary line, and there are</p>
 <p>$$
 \mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}},
 \qquad
-\mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ib\},
+\mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ia'\},
 $$</p>
-<p>exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $N(ib) = b^2$, <strong>positive definite</strong>, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-b^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.</p>
+<p>exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $N(ia') = a'^2$, <strong>positive definite</strong>, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -384,8 +384,8 @@ $$</p>
 </tr>
 <tr>
 <td>norm on the anti-fixed line</td>
-<td>$+b^2$ (definite)</td>
-<td>$-b^2$ (definite)</td>
+<td>$+a'^2$ (definite)</td>
+<td>$-a'^2$ (definite)</td>
 </tr>
 <tr>
 <td>idempotents beyond $0,1$</td>
@@ -406,25 +406,25 @@ $$</p>
 </table></div>
 <h2 id="worked-verifications">Worked Verifications</h2>
 <h3 id="an-element-in-all-four-lines">An Element in All Four Lines</h3>
-<p>Take $Z = 4+3j$. Its eigenline coordinates are</p>
+<p>Take $A = 4+3j$. Its eigenline coordinates are</p>
 <p>$$
-Z_r = \tfrac12(Z+\bar Z) = 4, \qquad Z_i = \tfrac12 j^{-1}(Z-\bar Z) = 3,
+A_r = \tfrac12(A+\bar A) = 4, \qquad A_i = \tfrac12 j^{-1}(A-\bar A) = 3,
 $$</p>
-<p>so $Z$ lies in the plane spanned by the two eigenlines with both coordinates nonzero. Its idempotent coordinates are</p>
+<p>so $A$ lies in the plane spanned by the two eigenlines with both coordinates nonzero. Its idempotent coordinates are</p>
 <p>$$
-Z_+ = a+b = 7, \qquad Z_- = a-b = 1,
+A_+ = a+a' = 7, \qquad A_- = a-a' = 1,
 $$</p>
-<p>both nonzero, so $Z$ is a unit; and $Z = 4 + 3 j = 7\Pi_1 + 1\Pi_2$, an identity checked directly in the two bases.</p>
+<p>both nonzero, so $A$ is a unit; and $A = 4 + 3 j = 7\Pi_1 + 1\Pi_2$, an identity checked directly in the two bases.</p>
 <h3 id="a-pair-of-lines-that-spans-the-plane">A Pair of Lines That Spans the Plane</h3>
-<p>The lines $\mathbb{R}_{\mathbb{D}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $Z = j b$ along them,</p>
+<p>The lines $\mathbb{R}_{\mathbb{D}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $A = j a'$ along them,</p>
 <p>$$
-j b = -b + 2b \Pi_1,
+j a' = -a' + 2a' \Pi_1,
 $$</p>
 <p>since $2\Pi_1 = 1 + j$. The coefficients are unique because the intersection is the origin, which is the content of the sum table.</p>
 <h3 id="the-involution-on-both-bases">The Involution on Both Bases</h3>
-<p>For $Z = 4+3j$ the involution gives $\bar Z = 4-3j$; in the eigenbasis this flips the sign of the second coordinate, and in the idempotent basis it swaps the coordinates $7 \leftrightarrow 1$, since $Z = 7\Pi_1 + 1\Pi_2$ and $\bar Z = 1\Pi_1 + 7\Pi_2$. Both readings agree, and the arithmetic is the statement $\bar Z = 7\Pi_2 + 1\Pi_1$.</p>
+<p>For $A = 4+3j$ the involution gives $\bar A = 4-3j$; in the eigenbasis this flips the sign of the second coordinate, and in the idempotent basis it swaps the coordinates $7 \leftrightarrow 1$, since $A = 7\Pi_1 + 1\Pi_2$ and $\bar A = 1\Pi_1 + 7\Pi_2$. Both readings agree, and the arithmetic is the statement $\bar A = 7\Pi_2 + 1\Pi_1$.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-complex algebra has one non-trivial involution, the conjugation $\bar Z = a-j b$, which coincides with the idempotent conjugation, against the four involutions of the biquaternion algebra. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.</p>
+<p>The split-complex algebra has one non-trivial involution, the conjugation $\bar A = a-ja'$, which coincides with the idempotent conjugation, against the four involutions of the biquaternion algebra. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.</p>
 <p>There is no six-subspace lattice of the biquaternion kind, because there is only one non-trivial involution; the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ on the two eigenlines, and the idempotent lines form a second, non-involution decomposition. Compared with $\mathbb{C}$, the split-complex algebra has the same two involutive lines but with the imaginary line's norm reversed in sign, and it has in addition the two idempotent lines, which the field lacks because it has no nontrivial idempotents.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -440,16 +440,16 @@ $$</p>
 <td>Split complex algebra</td>
 </tr>
 <tr>
-<td>$Z = a + j b$</td>
+<td>$A = a + j a'$</td>
 <td>General split complex number</td>
 </tr>
 <tr>
-<td>$\bar{Z} = a - j b$</td>
+<td>$\bar{A} = a - j a'$</td>
 <td>The unique non-trivial involution</td>
 </tr>
 <tr>
-<td>$\tilde{Z} = \bar{Z}$</td>
-<td>Idempotent conjugation; equal to $\bar{Z}$</td>
+<td>$\tilde{A} = \bar{A}$</td>
+<td>Idempotent conjugation; equal to $\bar{A}$</td>
 </tr>
 <tr>
 <td>$\mathbb{R}_{\mathbb{D}}$</td>
@@ -468,15 +468,15 @@ $$</p>
 <td>The two isotropic lines</td>
 </tr>
 <tr>
-<td>$Z_r = a, Z_i = b$</td>
+<td>$A_r = a, A_i = a'$</td>
 <td>Eigenline coordinates</td>
 </tr>
 <tr>
-<td>$Z_\pm = a\pm b$</td>
+<td>$A_\pm = a\pm a'$</td>
 <td>Idempotent coordinates</td>
 </tr>
 <tr>
-<td>$N(Z) = a^2-b^2$</td>
+<td>$N(A) = a^2-a'^2$</td>
 <td>Norm, zero on the idempotent lines</td>
 </tr>
 <tr>

@@ -63,11 +63,11 @@
 <h3 id="the-two-completions">The Two Completions</h3>
 <p><strong>Theorem (Ostrowski).</strong> Every nontrivial absolute value on $\mathbb{Q}$ is equivalent either to the usual absolute value $\lvert\cdot\rvert_\infty$ or to a $p$-adic absolute value $\lvert\cdot\rvert_p$ for a prime $p$. The completion for $\lvert\cdot\rvert_\infty$ is $\mathbb{R}$; the completion for $\lvert\cdot\rvert_p$ is the field $\mathbb{Q}_p$ of $p$-adic numbers.</p>
 <p><strong>Proof.</strong> The classification is Ostrowski's theorem, proved in <em>Absolute Values, Valuations and Completions</em>; the completions are constructed there and in <em>Metric, Uniform and Complete Spaces</em>.</p>
-<p><strong>Corollary (product formula).</strong> For every nonzero rational $x$,</p>
+<p><strong>Corollary (product formula).</strong> For every nonzero rational $a$,</p>
 <p>$$
-\lvert x \rvert_\infty \prod_p \lvert x \rvert_p = 1 .
+\lvert a \rvert_\infty \prod_p \lvert a \rvert_p = 1 .
 $$</p>
-<p><strong>Proof.</strong> Both sides are multiplicative, and it suffices to check the formula for $x = \pm p$; the left side is $p \cdot (1/p) = 1$.</p>
+<p><strong>Proof.</strong> Both sides are multiplicative, and it suffices to check the formula for $a = \pm p$; the left side is $p \cdot (1/p) = 1$.</p>
 <p><strong>Remark.</strong> The product formula is the arithmetic expression of the fact that $\mathbb{Q}$ has one Archimedean place and one place for each prime, and it is the origin of the parallel between Diophantine approximation in $\mathbb{R}$ and in the $p$-adic fields. The present article treats the Archimedean place, where the continued fractions live; the non-Archimedean approximation is developed with the $p$-adic analysis of Part III.</p>
 <h2 id="diophantine-approximation">Diophantine Approximation</h2>
 <h3 id="dirichlets-theorem">Dirichlet's Theorem</h3>
@@ -158,48 +158,48 @@ $$</p>
 <p><strong>Proof.</strong> Since $q_n \geq q_{n-1} + q_{n-2}$, the denominators grow at least as fast as the Fibonacci numbers, so $q_n \to \infty$ and the estimate of the preceding theorem shows that the convergents are Cauchy; their limit $\alpha$ is irrational if the expansion is infinite, and the uniqueness of the expansion follows by induction from the uniqueness of the integer part.</p>
 <p><strong>Theorem (Lagrange).</strong> An irrational $\alpha$ is a quadratic irrational, that is, $\alpha$ satisfies a quadratic equation over $\mathbb{Q}$, if and only if its continued fraction is eventually periodic.</p>
 <p><strong>Proof.</strong> If the expansion is eventually periodic then $\alpha$ is fixed by a fractional linear transformation with integer coefficients, hence satisfies a quadratic equation. Conversely, if $\alpha$ is a root of an integer quadratic then the complete quotients $\alpha_n$ all lie in the same finite set of quadratic irrationals of bounded height, so two of them coincide and the expansion repeats. The argument is Lagrange's; the details are in the references.</p>
-<p><strong>Example.</strong> $\sqrt2 = [1; 2, 2, 2, \dots]$ with convergents $1, 3/2, 7/5, 17/12, \dots$, all of them solving the Pell equation $x^2 - 2y^2 = \pm 1$; and $\varphi = [1; 1, 1, 1, \dots]$ with convergents $F_{n+1}/F_n$ the ratios of consecutive Fibonacci numbers. The number $e$ has the non-periodic expansion $[2; 1, 2, 1, 1, 4, 1, 1, 6, \dots]$, which shows that eventual periodicity genuinely characterises the quadratic irrationals.</p>
+<p><strong>Example.</strong> $\sqrt2 = [1; 2, 2, 2, \dots]$ with convergents $1, 3/2, 7/5, 17/12, \dots$, all of them solving the Pell equation $n^2 - 2m^2 = \pm 1$; and $\varphi = [1; 1, 1, 1, \dots]$ with convergents $F_{n+1}/F_n$ the ratios of consecutive Fibonacci numbers. The number $e$ has the non-periodic expansion $[2; 1, 2, 1, 1, 4, 1, 1, 6, \dots]$, which shows that eventual periodicity genuinely characterises the quadratic irrationals.</p>
 <h3 id="pells-equation">Pell's Equation</h3>
-<p><strong>Theorem.</strong> Let $D$ be a positive nonsquare integer. The equation $x^2 - Dy^2 = 1$ has infinitely many solutions in integers, all obtained from the convergents of $\sqrt D$; if the period of the continued fraction of $\sqrt D$ is $\ell$, then the fundamental solution is $p_{\ell-1} + q_{\ell-1}\sqrt D$ when $\ell$ is even and $p_{2\ell-1} + q_{2\ell-1}\sqrt D$ when $\ell$ is odd, and every solution is a power of the fundamental one in $\mathbb{Z}[\sqrt D]$.</p>
+<p><strong>Theorem.</strong> Let $D$ be a positive nonsquare integer. The equation $n^2 - Dm^2 = 1$ has infinitely many solutions in integers, all obtained from the convergents of $\sqrt D$; if the period of the continued fraction of $\sqrt D$ is $\ell$, then the fundamental solution is $p_{\ell-1} + q_{\ell-1}\sqrt D$ when $\ell$ is even and $p_{2\ell-1} + q_{2\ell-1}\sqrt D$ when $\ell$ is odd, and every solution is a power of the fundamental one in $\mathbb{Z}[\sqrt D]$.</p>
 <p><strong>Proof.</strong> The periodicity of the expansion of the quadratic irrational $\sqrt D$ is Lagrange's theorem; substituting the periodic tail into the transformation $\alpha = a_0 + 1/\alpha_1$ gives a quadratic equation whose solutions are units of norm $1$ in $\mathbb{Z}[\sqrt D]$, that is, solutions of the Pell equation. The powers of the fundamental unit give all solutions because the units of $\mathbb{Z}[\sqrt D]$ form a cyclic group up to sign. The argument is standard and is in the references.</p>
 <p><strong>Example.</strong> For $D = 2$ the period of $\sqrt2$ is $1$ and the fundamental solution is $3 + 2\sqrt2$, giving $3^2 - 2\cdot 2^2 = 1$; its powers $17 + 12\sqrt2$, $99 + 70\sqrt2, \dots$ give the whole solution set. For $D = 61$ the fundamental solution is $1766319049 + 226153980\sqrt{61}$, which shows that the size of the fundamental solution is not controlled by $D$.</p>
 <h2 id="the-gauss-map-and-the-metric-theory">The Gauss Map and the Metric Theory</h2>
 <h3 id="the-gauss-map">The Gauss Map</h3>
 <p><strong>Definition.</strong> The <strong>Gauss map</strong> is</p>
 <p>$$
-T : (0,1) \longrightarrow [0,1), \qquad T(x) = \frac{1}{x} - \left\lfloor \frac{1}{x} \right\rfloor = \left\{ \frac{1}{x} \right\}, \qquad T(0) = 0 .
+T : (0,1) \longrightarrow [0,1), \qquad T(b) = \frac{1}{b} - \left\lfloor \frac{1}{b} \right\rfloor = \left\{ \frac{1}{b} \right\}, \qquad T(0) = 0 .
 $$</p>
-<p>The continued fraction digits of $x \in (0,1)$ are the successive integer parts of the iterates: with $x_0 = x$, $x_{n+1} = T(x_n)$ and $a_{n+1} = \lfloor 1/x_n \rfloor$, one has $x = [0; a_1, a_2, \dots]$.</p>
+<p>The continued fraction digits of $b \in (0,1)$ are the successive integer parts of the iterates: with $b_0 = b$, $b_{n+1} = T(b_n)$ and $a_{n+1} = \lfloor 1/b_n \rfloor$, one has $b = [0; a_1, a_2, \dots]$.</p>
 <p><strong>Theorem (Gauss measure).</strong> The measure</p>
 <p>$$
-d\mu = \frac{1}{\log 2}\,\frac{dx}{1+x}
+d\mu = \frac{1}{\log 2}\,\frac{db}{1+b}
 $$</p>
 <p>is $T$-invariant, $\mu(T^{-1}A) = \mu(A)$ for every measurable $A$, and it is ergodic with respect to $T$.</p>
 <p><strong>Proof.</strong> For an interval $[0,t]$ one computes $T^{-1}([0,t]) = \bigcup_{k \geq 1} [1/(k+t), 1/k]$ and verifies $\mu(T^{-1}([0,t])) = \mu([0,t])$ by the telescoping of $\log(1 + 1/k)$; the intervals generate the Borel sets, so the measure is invariant, and the ergodicity is proved by showing that the only invariant functions are constant, using the decay of the iterates. The computation is Gauss's and the ergodicity is standard; both are in the references.</p>
-<p><strong>Theorem (equidistribution and the Gauss–Kuzmin law).</strong> For almost every $x \in (0,1)$ with respect to Lebesgue measure, and for every interval $A$, the visit frequencies of the orbit of $x$ under the Gauss map tend to $\mu(A)$. In particular the digit distribution converges: for each $k \geq 1$,</p>
+<p><strong>Theorem (equidistribution and the Gauss–Kuzmin law).</strong> For almost every $b \in (0,1)$ with respect to Lebesgue measure, and for every interval $A$, the visit frequencies of the orbit of $b$ under the Gauss map tend to $\mu(A)$. In particular the digit distribution converges: for each $k \geq 1$,</p>
 <p>$$
 \lim_{n\to\infty} \frac{1}{n}\#\{i \leq n : a_i = k\} = \mu\left(\left[\frac{1}{k+1}, \frac{1}{k}\right]\right) = \frac{1}{\log 2}\log\left(1 + \frac{1}{k(k+2)}\right),
 $$</p>
 <p>with the error in the approximation $\mu(T^{-n}([0,t])) = \log(1+t)/\log 2 + O(\lambda^n)$ for some $\lambda < 1$.</p>
 <p><strong>Proof.</strong> The limit of the frequencies is the Birkhoff ergodic theorem applied to the indicator of the interval, and the identification of the limit with the Gauss measure is the invariance; the exponential error is the Gauss–Kuzmin theorem, proved by the bounded distortion of the inverse branches of $T$ and a contraction argument on the space of densities. The details are in <em>Measure Theory and Integration</em> and in the references.</p>
 <h3 id="the-constrained-averages">The Constrained Averages</h3>
-<p><strong>Theorem (Khinchin's constant).</strong> For almost every $x$ the geometric mean of the partial quotients converges:</p>
+<p><strong>Theorem (Khinchin's constant).</strong> For almost every $b$ the geometric mean of the partial quotients converges:</p>
 <p>$$
 \lim_{n\to\infty} (a_1 a_2 \cdots a_n)^{1/n} = K_0, \qquad K_0 = \prod_{k=1}^{\infty}\left(1 + \frac{1}{k(k+2)}\right)^{\log_2 k} = 2.6854520010\dots .
 $$</p>
-<p><strong>Theorem (Lévy's constant).</strong> For almost every $x$ the denominators of the convergents grow exponentially:</p>
+<p><strong>Theorem (Lévy's constant).</strong> For almost every $b$ the denominators of the convergents grow exponentially:</p>
 <p>$$
 \lim_{n\to\infty} q_n^{1/n} = e^{\pi^2/(12\log 2)} = 3.2758229187\dots .
 $$</p>
 <p><strong>Proof.</strong> Both statements are the ergodic theorem applied to the functions $\log a_1$ and $\log q_1$, whose almost-everywhere constancy is the ergodicity of the Gauss map; the evaluation of the integrals gives the constants. The results are Khinchin's and Lévy's and are in the references.</p>
-<p><strong>Theorem (Borel).</strong> The set of $x \in (0,1)$ for which the digit frequencies exist and equal the Gauss–Kuzmin values has full Lebesgue measure; the continued fraction expansion is therefore "normal" for almost every $x$.</p>
+<p><strong>Theorem (Borel).</strong> The set of $b \in (0,1)$ for which the digit frequencies exist and equal the Gauss–Kuzmin values has full Lebesgue measure; the continued fraction expansion is therefore "normal" for almost every $b$.</p>
 <p><strong>Proof.</strong> The ergodicity of the Gauss map gives the existence of the frequencies on a full-measure set, and the identification of the limits with the Gauss measure gives the values; the argument is Borel's normal number theorem, applied to the sequence of digits.</p>
 <h3 id="the-lagrange-spectrum">The Lagrange Spectrum</h3>
 <p><strong>Theorem.</strong> An irrational $\alpha$ is badly approximable if and only if its continued fraction has bounded partial quotients. Consequently the set of badly approximable numbers has Lebesgue measure zero, and the Lagrange constants of the badly approximable numbers form the <strong>Lagrange spectrum</strong>, a closed subset of $(0, \tfrac{1}{\sqrt5}]$ whose largest element is $1/\sqrt5$, attained only by the golden ratio and its images, and whose structure near that value is the Markov spectrum.</p>
 <p><strong>Proof.</strong> If the partial quotients are bounded by $M$, the estimate $q_{n+1} \leq (M+1)q_n$ bounds the ratio and the approximation constant from below; conversely a large partial quotient produces an unusually good approximation, so an unbounded expansion cannot be badly approximable. The measure-zero statement follows from the Gauss–Kuzmin law, and the structure of the spectrum is the classical theory of Markov; the details are in the references.</p>
 <p><strong>Remark.</strong> The Gauss map converts the arithmetic of the continued fraction into the ergodic theory of an expanding map of the interval, and the consequence is that almost every real number has a completely determined digit statistics while the exceptional set — the badly approximable numbers, containing the golden ratio and all the quadratic irrationals — carries the extremal approximation behaviour. This is the exact sense in which Diophantine approximation is a metric theory with an arithmetic skeleton: the typical $\alpha$ is described by the Gauss measure, and the extremal $\alpha$ is described by the continued fraction alone.</p>
 <h2 id="summary">Summary</h2>
-<p>$\mathbb{Q}$ is dense and Archimedean in its completions, and by Ostrowski's theorem its nontrivial absolute values are the usual one and the $p$-adic ones, with $\mathbb{R}$ and $\mathbb{Q}_p$ as completions and the product formula $\lvert x\rvert_\infty\prod_p \lvert x\rvert_p = 1$ linking them. Diophantine approximation studies the Archimedean place: Dirichlet's pigeonhole theorem gives infinitely many rationals with $\lvert \alpha - p/q\rvert < 1/q^2$ for every irrational $\alpha$; Hurwitz's theorem improves the constant to $1/(\sqrt5 q^2)$ and the constant is best possible, attained by the golden ratio, which is the worst approximable irrational. Liouville's theorem bounds the approximation of an algebraic irrational of degree $n$ below by $c/q^n$, which exhibits the Liouville numbers as transcendental, and Roth's theorem sharpens the bound to $c/q^{2+\varepsilon}$ for every $\varepsilon > 0$.</p>
+<p>$\mathbb{Q}$ is dense and Archimedean in its completions, and by Ostrowski's theorem its nontrivial absolute values are the usual one and the $p$-adic ones, with $\mathbb{R}$ and $\mathbb{Q}_p$ as completions and the product formula $\lvert a\rvert_\infty\prod_p \lvert a\rvert_p = 1$ linking them. Diophantine approximation studies the Archimedean place: Dirichlet's pigeonhole theorem gives infinitely many rationals with $\lvert \alpha - p/q\rvert < 1/q^2$ for every irrational $\alpha$; Hurwitz's theorem improves the constant to $1/(\sqrt5 q^2)$ and the constant is best possible, attained by the golden ratio, which is the worst approximable irrational. Liouville's theorem bounds the approximation of an algebraic irrational of degree $n$ below by $c/q^n$, which exhibits the Liouville numbers as transcendental, and Roth's theorem sharpens the bound to $c/q^{2+\varepsilon}$ for every $\varepsilon > 0$.</p>
 <p>Continued fractions are the extremal instrument of the theory: finite continued fractions are the Euclidean algorithm in another notation, the convergents satisfy the recurrence $p_n = a_np_{n-1} + p_{n-2}$, $q_n = a_nq_{n-1}+q_{n-2}$ and the determinant identity $p_nq_{n-1} - p_{n-1}q_n = (-1)^{n-1}$, and they are the best approximations of the second kind, with $\lvert \alpha - p_n/q_n\rvert < 1/(q_nq_{n+1})$. Every irrational has a unique infinite expansion, and by Lagrange's theorem the expansion is eventually periodic exactly for the quadratic irrationals; the periodicity solves Pell's equation, whose solutions are the powers of the fundamental unit of $\mathbb{Z}[\sqrt D]$. The analysis slot of the system $\mathbb{Q}$ is thus the theory of its approximation by its own elements, and it is the point at which the arithmetic of the field becomes a question of real analysis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -259,12 +259,12 @@ $$</p>
 <td>Approximation constants and exponent</td>
 </tr>
 <tr>
-<td>$T(x)$</td>
-<td>Gauss map, $T(x) = 1/x - \lfloor 1/x\rfloor$ on $(0,1]$</td>
+<td>$T(b)$</td>
+<td>Gauss map, $T(b) = 1/b - \lfloor 1/b\rfloor$ on $(0,1]$</td>
 </tr>
 <tr>
 <td>$\mu$</td>
-<td>Gauss measure, $d\mu = \frac{1}{\log 2}\frac{dx}{1+x}$</td>
+<td>Gauss measure, $d\mu = \frac{1}{\log 2}\frac{db}{1+b}$</td>
 </tr>
 <tr>
 <td>$K_0$</td>

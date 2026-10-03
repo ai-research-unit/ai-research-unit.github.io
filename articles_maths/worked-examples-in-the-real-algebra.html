@@ -55,31 +55,31 @@
 <p>This article is the computed companion to the algebraic articles of the real algebra. Where <em>Real Algebra</em> states the definitions and proves the general properties, the present article exhibits them on explicit elements, so that the general statements can be read against a concrete computation: the field operations, the sole involution and its fixed-point subspace, the associated direct-sum decompositions, and the order with its Archimedean and completeness consequences. It is the first rung of the ladder that the worked-example articles of the complex, quaternion and biquaternion algebras continue.</p>
 <p>The elements used throughout are</p>
 <p>$$
-x = -\tfrac{3}{4}, \qquad y = \tfrac{7}{2},
+c = -\tfrac{3}{4}, \qquad d = \tfrac{7}{2},
 $$</p>
-<p>chosen because their arithmetic is exact, because their squares are the small squares $x^2 = \tfrac{9}{16}$ and $y^2 = \tfrac{49}{4}$, and because they have opposite signs, so that the order of $\mathbb{R}$ is visible on the worked pair. Where a statement needs a degenerate example, the elements $0$, $1$ and $-1$ are used. The conventions are those of <em>Real Algebra</em>: the basis is $e_0 = 1$, the sole involution is the identity $\operatorname{id}$, and $\lvert a\rvert$ is the absolute value defined by the order.</p>
+<p>chosen because their arithmetic is exact, because their squares are the small squares $c^2 = \tfrac{9}{16}$ and $d^2 = \tfrac{49}{4}$, and because they have opposite signs, so that the order of $\mathbb{R}$ is visible on the worked pair. Where a statement needs a degenerate example, the elements $0$, $1$ and $-1$ are used. The conventions are those of <em>Real Algebra</em>: the basis is $e_0 = 1$, the sole involution is the identity $\operatorname{id}$, and $\lvert a\rvert$ is the absolute value defined by the order.</p>
 <p>Every numerical value below is exact and rational; no decimal is used.</p>
 <p>Everything computed below is algebraic. The metrical reading of the algebra — the norm and the modulus of <em>Real Norm and Invertibility</em>, the sign decomposition of <em>Real Polar Element Representation</em>, and the Cayley matrix of <em>Real Regular Element Representation</em> — belongs to the later slots of the system and is not used here.</p>
 <h2 id="the-algebra-on-concrete-elements">The Algebra on Concrete Elements</h2>
-<p><strong>Sum, difference and product.</strong> With $x = -\tfrac{3}{4}$ and $y = \tfrac{7}{2}$,</p>
+<p><strong>Sum, difference and product.</strong> With $c = -\tfrac{3}{4}$ and $d = \tfrac{7}{2}$,</p>
 <p>$$
-x + y = -\tfrac{3}{4} + \tfrac{14}{4} = \tfrac{11}{4}, \qquad y - x = \tfrac{14}{4} + \tfrac{3}{4} = \tfrac{17}{4},
+c + d = -\tfrac{3}{4} + \tfrac{14}{4} = \tfrac{11}{4}, \qquad d - c = \tfrac{14}{4} + \tfrac{3}{4} = \tfrac{17}{4},
 $$</p>
 <p>and, applying the field multiplication,</p>
 <p>$$
-x y = -\tfrac{3}{4}\cdot\tfrac{7}{2} = -\tfrac{21}{8}, \qquad y x = \tfrac{7}{2}\cdot\bigl(-\tfrac{3}{4}\bigr) = -\tfrac{21}{8},
+c d = -\tfrac{3}{4}\cdot\tfrac{7}{2} = -\tfrac{21}{8}, \qquad d c = \tfrac{7}{2}\cdot\bigl(-\tfrac{3}{4}\bigr) = -\tfrac{21}{8},
 $$</p>
 <p>the two orders agreeing, the concrete form of commutativity.</p>
 <p><strong>Powers and the absence of zero divisors.</strong> The squares are</p>
 <p>$$
-x^2 = \bigl(-\tfrac{3}{4}\bigr)^2 = \tfrac{9}{16}, \qquad y^2 = \bigl(\tfrac{7}{2}\bigr)^2 = \tfrac{49}{4},
+c^2 = \bigl(-\tfrac{3}{4}\bigr)^2 = \tfrac{9}{16}, \qquad d^2 = \bigl(\tfrac{7}{2}\bigr)^2 = \tfrac{49}{4},
 $$</p>
-<p>and $x^2 = (-x)^2$ although $x \neq -x$: the square forgets the sign while the element does not. The product of the two nonzero worked elements is again nonzero, $xy = -\tfrac{21}{8} \neq 0$, the concrete form of the absence of zero divisors in a field.</p>
-<p><strong>Associativity and distributivity</strong> are illustrated by the two products above agreeing and by $(x+y)^2 = x^2 + 2xy + y^2$, a computation of the same rules which needs no separate display.</p>
+<p>and $c^2 = (-c)^2$ although $c \neq -c$: the square forgets the sign while the element does not. The product of the two nonzero worked elements is again nonzero, $cd = -\tfrac{21}{8} \neq 0$, the concrete form of the absence of zero divisors in a field.</p>
+<p><strong>Associativity and distributivity</strong> are illustrated by the two products above agreeing and by $(c+d)^2 = c^2 + 2cd + d^2$, a computation of the same rules which needs no separate display.</p>
 <h2 id="the-involution-on-concrete-elements">The Involution on Concrete Elements</h2>
 <p>The real algebra carries one involution, the identity.</p>
-<p><strong>The identity.</strong> $\operatorname{id}(x) = x = -\tfrac{3}{4}$ and $\operatorname{id}(y) = y = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$ or of the quaternion conjugation of $\mathbb{H}$ and $\mathbb{B}$. The absence is the mathematical content of the unitary case.</p>
-<p>It is an involution, $\operatorname{id}(\operatorname{id}(x)) = x$ for every $x$, and the relation is immediate because $\operatorname{id}$ is the identity map.</p>
+<p><strong>The identity.</strong> $\operatorname{id}(c) = c = -\tfrac{3}{4}$ and $\operatorname{id}(d) = d = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$ or of the quaternion conjugation of $\mathbb{H}$ and $\mathbb{B}$. The absence is the mathematical content of the unitary case.</p>
+<p>It is an involution, $\operatorname{id}(\operatorname{id}(a)) = a$ for every $a$, and the relation is immediate because $\operatorname{id}$ is the identity map.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -90,17 +90,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$x = -\tfrac{3}{4}$</td>
+<td>$c = -\tfrac{3}{4}$</td>
 <td>$-\tfrac{3}{4}$</td>
 <td>$-\tfrac{3}{4}$</td>
 </tr>
 <tr>
-<td>$y = \tfrac{7}{2}$</td>
+<td>$d = \tfrac{7}{2}$</td>
 <td>$\tfrac{7}{2}$</td>
 <td>$\tfrac{7}{2}$</td>
 </tr>
 <tr>
-<td>$xy = -\tfrac{21}{8}$</td>
+<td>$cd = -\tfrac{21}{8}$</td>
 <td>$-\tfrac{21}{8}$</td>
 <td>$-\tfrac{21}{8}$</td>
 </tr>
@@ -110,9 +110,9 @@ $$</p>
 <p>The fixed-point subspace of the identity involution is the whole algebra, and there is no anti-fixed subspace, because the only candidate involution is trivial.</p>
 <p><strong>The fixed subspace.</strong> An element is fixed exactly when it equals itself, which is always true. For the worked pair,</p>
 <p>$$
-\operatorname{id}(x) = x, \qquad \operatorname{id}(y) = y,
+\operatorname{id}(c) = c, \qquad \operatorname{id}(d) = d,
 $$</p>
-<p>so both $x$ and $y$ lie in the fixed subspace $\mathbb{R}_{\mathbb{R}}$; indeed every real number does. The fixed subspace is the whole algebra, $\mathbb{R}_{\mathbb{R}} = \mathbb{R}$, a real vector space of dimension $1$.</p>
+<p>so both $c$ and $d$ lie in the fixed subspace $\mathbb{R}_{\mathbb{R}}$; indeed every real number does. The fixed subspace is the whole algebra, $\mathbb{R}_{\mathbb{R}} = \mathbb{R}$, a real vector space of dimension $1$.</p>
 <p><strong>The anti-fixed subspace is empty.</strong> An element is anti-fixed exactly when $\operatorname{id}(a) = -a$, i.e. $a = -a$, i.e. $2a = 0$, i.e. $a = 0$. The anti-fixed subspace is therefore the zero subspace $\{0\}$, and it is not a subspace of positive dimension:</p>
 <p>$$
 \{a \in \mathbb{R} : \operatorname{id}(a) = -a\} = \{0\}.
@@ -121,39 +121,39 @@ $$</p>
 <h2 id="the-decompositions-worked">The Decompositions, Worked</h2>
 <p><strong>The eigencomponents of the identity.</strong> Because the involution is trivial, the two eigenprojections coincide on the fixed subspace and the anti-fixed component vanishes:</p>
 <p>$$
-x_+ = \tfrac{1}{2}\bigl(x + \operatorname{id}(x)\bigr) = \tfrac{1}{2}(x+x) = x = -\tfrac{3}{4} \in \mathbb{R}_{\mathbb{R}},
+c_+ = \tfrac{1}{2}\bigl(c + \operatorname{id}(c)\bigr) = \tfrac{1}{2}(c+c) = c = -\tfrac{3}{4} \in \mathbb{R}_{\mathbb{R}},
 $$</p>
 <p>$$
-x_- = \tfrac{1}{2}\bigl(x - \operatorname{id}(x)\bigr) = \tfrac{1}{2}(x-x) = 0 .
+c_- = \tfrac{1}{2}\bigl(c - \operatorname{id}(c)\bigr) = \tfrac{1}{2}(c-c) = 0 .
 $$</p>
 <p>The result is the trivial decomposition $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$ in which the second summand has dimension $0$. This is the <strong>real decomposition</strong> of <em>Real Algebra</em>, and its triviality is the statement that the general involution decomposition has one summand here.</p>
 <p><strong>The Cartesian decomposition.</strong> The decomposition of an element into a fixed part plus an anti-fixed part, $\tfrac{1}{2}(a+\operatorname{id}a) + \tfrac{1}{2}(a-\operatorname{id}a)$, reduces on the worked elements to</p>
 <p>$$
-x = -\tfrac{3}{4} + 0, \qquad y = \tfrac{7}{2} + 0,
+c = -\tfrac{3}{4} + 0, \qquad d = \tfrac{7}{2} + 0,
 $$</p>
 <p>with both anti-fixed parts zero.</p>
 <h2 id="the-order-the-archimedean-property-and-completeness-worked">The Order, the Archimedean Property and Completeness, Worked</h2>
 <p><strong>The order on the worked pair.</strong> The two worked elements have opposite signs,</p>
 <p>$$
-x = -\tfrac{3}{4} < 0 < \tfrac{7}{2} = y,
+c = -\tfrac{3}{4} < 0 < \tfrac{7}{2} = d,
 $$</p>
-<p>and the order separates the two elements while the field structure alone does not: $x < 0 < y$, yet the two have positive squares.</p>
-<p><strong>The Archimedean property.</strong> For $a > 0$ and any $b$ there is $n \in \mathbb{N}$ with $na > b$. With $a = \lvert x\rvert = \tfrac{3}{4}$ and $b = \lvert y\rvert = \tfrac{7}{2}$, the inequality $n\cdot\tfrac{3}{4} > \tfrac{7}{2}$ holds exactly when $n > \tfrac{14}{3}$, so the smallest witness is</p>
+<p>and the order separates the two elements while the field structure alone does not: $c < 0 < d$, yet the two have positive squares.</p>
+<p><strong>The Archimedean property.</strong> For $a > 0$ and any $b$ there is $n \in \mathbb{N}$ with $na > b$. With $a = \lvert c\rvert = \tfrac{3}{4}$ and $b = \lvert d\rvert = \tfrac{7}{2}$, the inequality $n\cdot\tfrac{3}{4} > \tfrac{7}{2}$ holds exactly when $n > \tfrac{14}{3}$, so the smallest witness is</p>
 <p>$$
 n = 5, \qquad 5\cdot\tfrac{3}{4} = \tfrac{15}{4} > \tfrac{7}{2}.
 $$</p>
 <p>No infinitesimal occurs: the multiples of any positive element eventually exceed any bound, which is the Archimedean property checked on the worked numbers.</p>
-<p><strong>Completeness.</strong> Let $S = \{x, 0, y\} = \{-\tfrac{3}{4}, 0, \tfrac{7}{2}\}$. It is non-empty and bounded, and</p>
+<p><strong>Completeness.</strong> Let $S = \{c, 0, d\} = \{-\tfrac{3}{4}, 0, \tfrac{7}{2}\}$. It is non-empty and bounded, and</p>
 <p>$$
-\sup S = \tfrac{7}{2} = y, \qquad \inf S = -\tfrac{3}{4} = x,
+\sup S = \tfrac{7}{2} = d, \qquad \inf S = -\tfrac{3}{4} = c,
 $$</p>
 <p>both attained. A bounded set whose supremum is not attained is $T = \{\tfrac{n}{n+1} : n \in \mathbb{N}\}$, for which $\sup T = 1$ and $1 \notin T$; the existence of the supremum is the completeness axiom, and it is the property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$.</p>
 <p><strong>Existence of roots.</strong> The positive elements of the worked pair have the rational square roots</p>
 <p>$$
-\sqrt{\tfrac{9}{16}} = \tfrac{3}{4} = \lvert x\rvert, \qquad \sqrt{\tfrac{49}{4}} = \tfrac{7}{2} = \lvert y\rvert,
+\sqrt{\tfrac{9}{16}} = \tfrac{3}{4} = \lvert c\rvert, \qquad \sqrt{\tfrac{49}{4}} = \tfrac{7}{2} = \lvert d\rvert,
 $$</p>
-<p>and the non-negative root of the first is the absolute value of $x$ although $x$ is negative; the existence and uniqueness of the non-negative root is a consequence of completeness.</p>
-<p><strong>Density and the irrational.</strong> Between $x$ and $y$ there lies the rational $\tfrac{1}{2}$, and also the irrational $\sqrt{2}$; the set $\{a \in \mathbb{Q} : a^2 < 2\}$ is bounded above in $\mathbb{R}$ with supremum $\sqrt{2} \notin \mathbb{Q}$, which is the completeness of $\mathbb{R}$ used to manufacture an irrational from a rational set.</p>
+<p>and the non-negative root of the first is the absolute value of $c$ although $c$ is negative; the existence and uniqueness of the non-negative root is a consequence of completeness.</p>
+<p><strong>Density and the irrational.</strong> Between $c$ and $d$ there lies the rational $\tfrac{1}{2}$, and also the irrational $\sqrt{2}$; the set $\{a \in \mathbb{Q} : a^2 < 2\}$ is bounded above in $\mathbb{R}$ with supremum $\sqrt{2} \notin \mathbb{Q}$, which is the completeness of $\mathbb{R}$ used to manufacture an irrational from a rational set.</p>
 <h2 id="the-place-in-the-ladder">The Place in the Ladder</h2>
 <p>The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ of the corpus, and every structure computed above is the one-dimensional case of a structure that the higher rungs enrich.</p>
 <div class="table-scroll"><table>
@@ -199,9 +199,9 @@ $$</p>
 </table></div>
 <p>The real column is the base case that the other worked-example articles continue: <em>Worked Examples in the Complex Algebra</em> adds the nontrivial conjugation and the circle, <em>Worked Examples in the Split-Quaternion Algebra</em> adds the indefinite form and its two regimes, and <em>Worked Examples in the Biquaternion Algebra</em> adds the complex norm and its zero divisors. Each of them reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.</p>
 <h2 id="summary">Summary</h2>
-<p>On the worked pair $x = -\tfrac{3}{4}$ and $y = \tfrac{7}{2}$ the real algebra is exhibited concretely: the sum $\tfrac{11}{4}$, the difference $\tfrac{17}{4}$, and the product $xy = -\tfrac{21}{8}$ with $yx = xy$, the concrete form of commutativity.</p>
-<p>The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are units — their inverses are the field inverses $x^{-1} = -\tfrac{4}{3}$ and $y^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-unit, the concrete form of the field property.</p>
-<p>On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert x\rvert$ against $\lvert y\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{x,0,y\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the complex, quaternion and biquaternion worked-example articles.</p>
+<p>On the worked pair $c = -\tfrac{3}{4}$ and $d = \tfrac{7}{2}$ the real algebra is exhibited concretely: the sum $\tfrac{11}{4}$, the difference $\tfrac{17}{4}$, and the product $cd = -\tfrac{21}{8}$ with $dc = cd$, the concrete form of commutativity.</p>
+<p>The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are units — their inverses are the field inverses $c^{-1} = -\tfrac{4}{3}$ and $d^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-unit, the concrete form of the field property.</p>
+<p>On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert c\rvert$ against $\lvert d\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{c,0,d\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the complex, quaternion and biquaternion worked-example articles.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -216,7 +216,7 @@ $$</p>
 <td>the real algebra, the complete ordered field, basis $e_0 = 1$</td>
 </tr>
 <tr>
-<td>$x = -\tfrac{3}{4}$, $y = \tfrac{7}{2}$</td>
+<td>$c = -\tfrac{3}{4}$, $d = \tfrac{7}{2}$</td>
 <td>the worked elements</td>
 </tr>
 <tr>

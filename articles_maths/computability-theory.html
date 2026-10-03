@@ -61,14 +61,14 @@
 <p>$$
 Z(n) = 0, \qquad S(n) = n+1, \qquad P^k_i(n_1,\dots,n_k) = n_i,
 $$</p>
-<p>and closed under <strong>composition</strong>, $h(\bar x) = f(g_1(\bar x),\dots,g_m(\bar x))$, and <strong>primitive recursion</strong>,</p>
+<p>and closed under <strong>composition</strong>, $h(\bar n) = f(g_1(\bar n),\dots,g_m(\bar n))$, and <strong>primitive recursion</strong>,</p>
 <p>$$
-h(\bar x, 0) = f(\bar x), \qquad h(\bar x, S n) = g(\bar x, n, h(\bar x, n)).
+h(\bar n, 0) = f(\bar n), \qquad h(\bar n, S n) = g(\bar n, n, h(\bar n, n)).
 $$</p>
 <p>A relation $R \subseteq \mathbb{N}^k$ is <strong>primitive recursive</strong> if its characteristic function is.</p>
 <p><strong>Theorem.</strong> The primitive recursive functions are total and computable, and they are closed under the bounded operations: if $f$ is primitive recursive then so are</p>
 <p>$$
-\sum_{i \leq n} f(\bar x, i), \qquad \prod_{i \leq n} f(\bar x, i), \qquad \max_{i \leq n} f(\bar x, i), \qquad \min_{i \leq n} f(\bar x, i),
+\sum_{i \leq n} f(\bar n, i), \qquad \prod_{i \leq n} f(\bar n, i), \qquad \max_{i \leq n} f(\bar n, i), \qquad \min_{i \leq n} f(\bar n, i),
 $$</p>
 <p>and bounded quantification over primitive recursive relations yields primitive recursive relations.</p>
 <p><strong>Proof.</strong> Each bounded operation is defined by primitive recursion on $n$, and bounded quantification is the bounded sum or product of the characteristic function; the closure of the class under composition and primitive recursion then gives the result.</p>
@@ -80,27 +80,27 @@ $$</p>
 <p>Then $A$ is total and computable but not primitive recursive.</p>
 <p><strong>Proof.</strong> Totality and computability are by nested recursion. If $A$ were primitive recursive, then so would be the diagonal function $d(n) = A(n,n)$, and one shows by induction on the definition that every primitive recursive function is eventually dominated by $A(m, \cdot)$ for some fixed $m$; but $d$ is not dominated by any $A(m,\cdot)$, since $d(n) = A(n,n) > A(m,n)$ for $n > m$ by the monotonicity of $A$ in its first variable. The domination proof is a routine induction on the clauses defining the primitive recursive functions.</p>
 <h3 id="partial-recursion-and-the-churchturing-thesis">Partial Recursion and the Church–Turing Thesis</h3>
-<p><strong>Definition.</strong> The <strong>partial recursive functions</strong> are the smallest class containing the primitive recursive functions and closed under <strong>unbounded search</strong>: if $g(\bar x, n)$ is partial recursive and total in its last argument whenever it is defined, then</p>
+<p><strong>Definition.</strong> The <strong>partial recursive functions</strong> are the smallest class containing the primitive recursive functions and closed under <strong>unbounded search</strong>: if $g(\bar n, n)$ is partial recursive and total in its last argument whenever it is defined, then</p>
 <p>$$
-f(\bar x) = \mu n\, (g(\bar x, n) = 0),
+f(\bar n) = \mu n\, (g(\bar n, n) = 0),
 $$</p>
-<p>the least $n$ with $g(\bar x, n) = 0$, is partial recursive; the search diverges when no such $n$ exists.</p>
+<p>the least $n$ with $g(\bar n, n) = 0$, is partial recursive; the search diverges when no such $n$ exists.</p>
 <p><strong>Theorem (Church–Turing).</strong> A partial function $\mathbb{N}^k \to \mathbb{N}$ is partial recursive if and only if it is computable by a Turing machine. This identification is the <strong>Church–Turing thesis</strong>; it is a thesis because it identifies a formal class with an informal notion.</p>
 <p><strong>Proof.</strong> The direction from machines to functions is a simulation of a machine by primitive recursion on its configurations, with unbounded search for the halting time; the other direction is the encoding of the recursion scheme by a machine. Both simulations are carried out in <em>Formal Logic and Computability</em>.</p>
-<p><strong>Theorem (Kleene normal form).</strong> There is a primitive recursive predicate $T(e, x, s)$ and a primitive recursive function $U$ such that</p>
+<p><strong>Theorem (Kleene normal form).</strong> There is a primitive recursive predicate $T(e, n, s)$ and a primitive recursive function $U$ such that</p>
 <p>$$
-\varphi_e(x) \simeq U(\mu s\, T(e, x, s)),
+\varphi_e(n) \simeq U(\mu s\, T(e, n, s)),
 $$</p>
-<p>where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(x)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,x) = \varphi_e(x)$ being partial recursive and not total.</p>
-<p><strong>Proof.</strong> $T(e,x,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $x$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of <em>Formal Logic and Computability</em>, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.</p>
+<p>where $\simeq$ means equality of partial functions and the search diverges exactly when $\varphi_e(n)$ diverges. In particular the enumeration $\varphi_e$ is itself partial recursive, the universal function $\Phi(e,n) = \varphi_e(n)$ being partial recursive and not total.</p>
+<p><strong>Proof.</strong> $T(e,n,s)$ asserts that $s$ codes a halting computation of the $e$-th machine on input $n$, and $U$ extracts the output; both are primitive recursive by the arithmetisation of <em>Formal Logic and Computability</em>, and the definition of $\varphi_e$ is the displayed search. The universal function is partial recursive because it is defined by this formula, and not total because of the existence of a halting problem.</p>
 <h3 id="the-recursion-theorem">The Recursion Theorem</h3>
 <p><strong>Theorem (Kleene recursion theorem).</strong> For every total computable function $f : \mathbb{N} \to \mathbb{N}$ there is an index $e$ with</p>
 <p>$$
 \varphi_e = \varphi_{f(e)} .
 $$</p>
-<p><strong>Proof.</strong> By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(x) = \varphi_e(e,x)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then</p>
+<p><strong>Proof.</strong> By the $s$-$m$-$n$ theorem there is a primitive recursive function $s$ with $\varphi_{s(e)}(n) = \varphi_e(e,n)$. Define the total computable function $h(e) = f(s(e))$ and let $v$ be an index of $h$, so that $\varphi_v(e) = h(e)$ for all $e$. Put $e_0 = s(v)$. Then</p>
 <p>$$
-\varphi_{e_0}(x) = \varphi_{s(v)}(x) = \varphi_v(v,x) = h(v) = f(s(v)) = f(e_0),
+\varphi_{e_0}(n) = \varphi_{s(v)}(n) = \varphi_v(v,n) = h(v) = f(s(v)) = f(e_0),
 $$</p>
 <p>so $\varphi_{e_0} = \varphi_{f(e_0)}$. The computation is Kleene's and uses only the $s$-$m$-$n$ theorem and the totality of $f$.</p>
 <p><strong>Corollary (self-reference).</strong> There is an index $e$ with $\varphi_e$ the function that prints $e$, that is, the constant function with value $e$; more generally, every computable transformation of programs has a fixed point in the sense of the theorem. This is the precise form of the diagonal construction that underlies the incompleteness theorems.</p>
@@ -108,8 +108,8 @@ $$</p>
 <h3 id="decidability-and-semi-decidability">Decidability and Semi-Decidability</h3>
 <p><strong>Definition.</strong> A set $A \subseteq \mathbb{N}$ is <strong>decidable</strong> (recursive) if its characteristic function is computable, and <strong>recursively enumerable</strong> (c.e.) if $A = W_e = \operatorname{dom}(\varphi_e)$ for some $e$, equivalently if $A$ is the range of a partial recursive function, equivalently if a machine lists the elements of $A$ without ever listing a non-element.</p>
 <p><strong>Theorem.</strong> A set $A$ is c.e. if and only if it is empty or it is the range of a total computable function. A set is decidable if and only if it and its complement are both c.e.</p>
-<p><strong>Proof.</strong> If $W_e$ is nonempty, choose $a \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $a$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.</p>
-<p><strong>Theorem (halting problem).</strong> The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $x$, whether $\varphi_e(x)$ converges.</p>
+<p><strong>Proof.</strong> If $W_e$ is nonempty, choose $m \in W_e$ and enumerate pairs $(n,s)$ by a primitive recursive bijection; the machine simulates the $e$-th machine for $s$ steps on $n$ and outputs $n$ when it halts, and outputs $m$ otherwise. This gives a total computable function with range $W_e$, and the converse is immediate. For the second statement, if $A$ and its complement are c.e. one decides $A$ by running the two enumerations in parallel; the converse is clear.</p>
+<p><strong>Theorem (halting problem).</strong> The set $K = \{e : \varphi_e(e)\!\downarrow\}$ is c.e. but not decidable, and there is no total computable function deciding, for given $e$ and $n$, whether $\varphi_e(n)$ converges.</p>
 <p><strong>Proof.</strong> $K$ is c.e. because it is the domain of the partial recursive function $e \mapsto \varphi_e(e)$. If $K$ were decidable with characteristic function $k$, the function</p>
 <p>$$
 g(e) = \begin{cases} \varphi_e(e) + 1, & k(e) = 1, \\ 0, & k(e) = 0 \end{cases}
@@ -139,9 +139,9 @@ $$</p>
 <p><strong>Theorem (Post's problem; Friedberg–Muchnik).</strong> There exist c.e. sets $A$ and $B$ with $A \not\leq_T B$ and $B \not\leq_T A$; that is, the c.e. degrees are not linearly ordered by $\leq_T$. The c.e. degrees are dense, and they are not a lattice.</p>
 <p><strong>Proof.</strong> The construction builds $A$ and $B$ by a priority argument with requirements $A \neq \varphi_e^B$ and $B \neq \varphi_e^A$, meeting each requirement on a finite initial segment and preserving the finitely many restraints imposed by earlier requirements. The priority method is Friedberg's and Muchnik's; the density and non-lattice results are later refinements of the same method.</p>
 <h3 id="diophantine-sets">Diophantine Sets</h3>
-<p><strong>Theorem (Matiyasevich, after Davis–Putnam–Robinson).</strong> A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is <strong>Diophantine</strong>: there is a polynomial $P(x, y_1, \dots, y_k)$ with integer coefficients such that</p>
+<p><strong>Theorem (Matiyasevich, after Davis–Putnam–Robinson).</strong> A set $A \subseteq \mathbb{N}$ is c.e. if and only if it is <strong>Diophantine</strong>: there is a polynomial $P(n, m_1, \dots, m_k)$ with integer coefficients such that</p>
 <p>$$
-n \in A \iff \exists y_1 \cdots \exists y_k \in \mathbb{N}\ P(n, y_1, \dots, y_k) = 0 .
+n \in A \iff \exists m_1 \cdots \exists m_k \in \mathbb{N}\ P(n, m_1, \dots, m_k) = 0 .
 $$</p>
 <p><strong>Proof.</strong> A Diophantine set is c.e. by searching for the witnesses. The converse, the MRDP theorem, is proved by showing that every c.e. set is Diophantine and then eliminating the bounded universal quantifier by a coding trick of Davis–Putnam–Robinson; the argument is in the references.</p>
 <p><strong>Corollary (Hilbert's tenth problem).</strong> There is no algorithm deciding, for an arbitrary polynomial with integer coefficients, whether it has a solution in natural numbers; more generally the decision problem for Diophantine equations is undecidable, and this is the effective counterpart of the incompleteness phenomena of <em>Peano Arithmetic and Model Theory</em>.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p><strong>Proof.</strong> An effective null set gives a computable way of compressing the initial segments of its elements, and conversely a short description of a long initial segment defines an effective null set containing $X$; the randomness of $\Omega$ is Chaitin's theorem. The details are in the references.</p>
 <p><strong>Remark.</strong> Kolmogorov complexity is the measure of information content of a finite object, and it gives a definition of randomness that is purely mathematical: a sequence is random when it has no short description. It is the computability-theoretic counterpart of the measure-theoretic probability of Part III, and it is the sharpest form of the statement that almost every sequence is incompressible, since the failure of compressibility is exactly the failure of the sequence to be computable or to lie in an effective null set.</p>
 <h2 id="summary">Summary</h2>
-<p>The primitive recursive functions are built from the zero, successor and projection functions by composition and primitive recursion; they are total and computable and are closed under bounded sums, products and quantification, and they include addition, multiplication, exponentiation, the factorial, the binomial coefficients and the coding functions for finite sequences. The Ackermann function is total and computable but not primitive recursive, so primitive recursion is strictly weaker than computability. Adding unbounded search gives the partial recursive functions, which by the Church–Turing thesis are exactly the Turing-computable partial functions; Kleene's normal form expresses every partial recursive function as $U(\mu s\, T(e,x,s))$ with $T$ and $U$ primitive recursive, and the recursion theorem gives every total computable transformation of programs a fixed point.</p>
+<p>The primitive recursive functions are built from the zero, successor and projection functions by composition and primitive recursion; they are total and computable and are closed under bounded sums, products and quantification, and they include addition, multiplication, exponentiation, the factorial, the binomial coefficients and the coding functions for finite sequences. The Ackermann function is total and computable but not primitive recursive, so primitive recursion is strictly weaker than computability. Adding unbounded search gives the partial recursive functions, which by the Church–Turing thesis are exactly the Turing-computable partial functions; Kleene's normal form expresses every partial recursive function as $U(\mu s\, T(e,n,s))$ with $T$ and $U$ primitive recursive, and the recursion theorem gives every total computable transformation of programs a fixed point.</p>
 <p>A set is decidable if its characteristic function is computable and recursively enumerable if it is the domain of a partial recursive function, equivalently the range of a total one; a set is decidable exactly when it and its complement are c.e. The halting set $K$ is c.e. but not decidable, it is m-complete for the c.e. sets, and Rice's theorem makes every nontrivial index set undecidable; Myhill's theorem upgrades m-equivalence to a computable isomorphism. The arithmetical hierarchy stratifies the definable sets, with $\Sigma_1$ the c.e. sets and $\Pi_1$ their complements, and Post's theorem identifies $\Sigma_{n+1}$ with the sets c.e. in $\emptyset^{(n)}$; the Shoenfield limit lemma identifies $\Delta_2$ with the sets computable in $\emptyset'$. The Turing degrees form an upper semilattice with least element $\mathbf{0}$ and a strictly increasing jump, the c.e. degrees are dense and contain incomparable elements by the Friedberg–Muchnik theorem, and the MRDP theorem identifies the c.e. sets with the Diophantine sets, making the decision problem for Diophantine equations undecidable. The computability theory of $\mathbb{N}$ is thus the effective algebra of the natural numbers, and with the model theory of the previous article it completes the algebra slot of the system.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -193,7 +193,7 @@ $$</p>
 <td>The $e$-th partial recursive function</td>
 </tr>
 <tr>
-<td>$\varphi_e(x)\!\downarrow$</td>
+<td>$\varphi_e(n)\!\downarrow$</td>
 <td>The computation halts</td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ $$</p>
 <td>Halting set $\{e : \varphi_e(e)\!\downarrow\}$</td>
 </tr>
 <tr>
-<td>$T(e,x,s)$, $U$</td>
+<td>$T(e,n,s)$, $U$</td>
 <td>Kleene's normal form predicate and output function</td>
 </tr>
 <tr>

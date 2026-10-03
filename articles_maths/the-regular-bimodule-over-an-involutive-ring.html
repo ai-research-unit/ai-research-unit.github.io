@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Regular Bimodule over an Involutive Ring — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-regular-bimodule-over-an-involutive-ring"><strong>The Regular Bimodule over an Involutive Ring</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a ring $A$ is an anti-automorphism of order two, and it is the same datum as an isomorphism $A \cong A^{\mathrm{op}}$. Carried to the regular bimodule it produces three structures: the twist that turns the left regular module into the right one, a symmetry of the regular bimodule with its swap through the involution, and a Hermitian form on the module with values in $A$ itself, whose isometries are the unitary elements. The left and the right regular modules, indistinguishable in general, become interchangeable, and the module over itself becomes a module with a form.</p>
+<p>The article specialises <em>Modules over an Involutive Ring</em> to the case $M = A$: that article defines the twist $M^{\sigma}$, the dual module and the induced map on the endomorphisms for an arbitrary module, and this one reads the same three constructions on the regular object, where they acquire their ring-theoretic form. It assumes <em>Involutive Rings</em> for the definition, the fixed and the skew elements, and the opposite ring, and <em>The Regular Module and the Regular Bimodule</em> and <em>The Regular Representation as an Algebra of Operators</em> for the regular object and its operators. The forms with positivity, the Hilbert structures and the sesquilinear pairings on a general module are <em>Hilbert Algebras</em>, in Part II; here everything is algebraic and the form takes its values in $A$. The involutions of the biquaternions and their lattice are <em>Biquaternion Involution Lattice</em>, in Part VI.</p>
+<p>Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, and $\sigma$ is written on the right of the argument or as the mark ${}^{*} = \sigma$ where no confusion arises. The fixed set is $A^{\sigma}$, the antisymmetric part is $A^{-} = \{x : \sigma(x) = -x\}$, and the left and right multiplications are $L_a(x) = ax$ and $R_a(x) = xa$. No trace, no positivity and no topology is used.</p>
+<h2 id="the-twist-of-the-regular-module">The Twist of the Regular Module</h2>
+<h3 id="the-twist-of-the-left-regular-module">The twist of the left regular module</h3>
+<p><strong>Definition.</strong> The twist of a left $A$-module $M$ is the same additive group with the right action $x \cdot a = \sigma(a)x$, written $M^{\sigma}$ (<em>Modules over an Involutive Ring</em>).</p>
+<p><strong>Proposition.</strong> The involution $\sigma$ is an isomorphism of right $A$-modules</p>
+<p>$$
+\sigma : ({}_AA)^{\sigma} \longrightarrow A_A , \qquad x \mapsto \sigma(x) ,
+$$</p>
+<p>where $({}_AA)^{\sigma}$ carries $x \cdot a = \sigma(a)x$ and $A_A$ carries $x \cdot a = xa$. Hence the twist of the left regular module is the right regular module up to the comparison $\sigma$, and this comparison is exactly the involution.</p>
+<p><strong>Proof.</strong> The map $\sigma$ is bijective, being an involution, and for the right actions $\sigma(x \cdot a) = \sigma(\sigma(a)x) = \sigma(x)\sigma(\sigma(a)) = \sigma(x)a = \sigma(x) \cdot a$. Additivity is the additivity of $\sigma$.</p>
+<p><strong>Corollary (the commutative case).</strong> If $A$ is commutative and $\sigma$ is any involution, the twisted action is $x \cdot a = \sigma(a)x = x\sigma(a)$, which is the ordinary right action read through $\sigma$; in particular for $\sigma$ the identity the twist fixes the regular bimodule, ${}_AA^{\sigma} = A_A$, and the real and the complex cases below are the two extremes.</p>
+<h3 id="the-involution-is-the-symmetry-of-the-bimodule">The involution is the symmetry of the bimodule</h3>
+<p><strong>Definition.</strong> Let $\sigma$ be an involution of $A$. The <strong>$\sigma$-swap</strong> of the regular bimodule, written ${}^{\mathrm{sw}}{}_AA_A^{\sigma}$, is the same additive group with the left and the right actions interchanged and read through $\sigma$:</p>
+<p>$$
+a \cdot y = y\,\sigma(a), \qquad y \cdot b = \sigma(b)\,y .
+$$</p>
+<p>For the identity involution of a commutative ring the two actions are simply interchanged, and the $\sigma$-swap is the <strong>swap</strong> ${}^{\mathrm{sw}}{}_AA_A$, with $a \cdot x = xa$ and $x \cdot b = bx$. The involution is carried in the definition because over a noncommutative ring the two actions cannot be exchanged by themselves: the untwisted swap is not the target of $\sigma$.</p>
+<p><strong>Proposition.</strong> The involution $\sigma$ is an isomorphism of bimodules</p>
+<p>$$
+\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a) ,
+$$</p>
+<p>and conversely every bimodule isomorphism $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ is of the form $x \mapsto d\,\sigma(x)$ with $d$ a central unit; it is an anti-homomorphism, hence its own inverse when $\varphi(1) = 1$, precisely when $d = 1$. So an involution of $A$ is exactly a bimodule isomorphism of the regular bimodule with its $\sigma$-swap, normalised at the unit.</p>
+<p><strong>Proof.</strong> That $\sigma$ is bijective and additive is the definition of an involution. Inserting $\sigma$ into the target, $a \cdot \sigma(x) \cdot b = \bigl(\sigma(b)\sigma(x)\bigr)\sigma(a) = \sigma(b)\sigma(x)\sigma(a)$, which is the anti-multiplicativity applied to $axb$; so $\sigma$ intertwines the two structures — the left action with the swapped left action and the right action with the swapped right action. For the converse, let $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ be a bimodule isomorphism and put $d = \varphi(1)$. Left linearity gives $\varphi(a) = a \cdot \varphi(1) = \varphi(1)\sigma(a) = d\sigma(a)$, and right linearity gives $\varphi(a) = \varphi(1) \cdot a = \sigma(a)\varphi(1) = \sigma(a)d$; the two agree on every $a$ exactly when $d$ commutes with $\sigma(A) = A$, that is when $d$ is central, and $d$ is a unit because $\varphi$ is bijective. Then $\varphi(xy) = d\sigma(xy) = d\sigma(y)\sigma(x)$ while $\varphi(y)\varphi(x) = d\sigma(y)\,d\sigma(x) = d^2\sigma(y)\sigma(x)$, so $\varphi$ is an anti-homomorphism exactly when $d = 1$, and then it is the involution $\sigma$.</p>
+<p><strong>Corollary.</strong> An involution of $A$ is the same datum as an isomorphism $A \cong A^{\mathrm{op}}$, and the same datum as a bimodule isomorphism of the regular bimodule onto its $\sigma$-swap normalised at the unit: the involution, the opposite-ring isomorphism, and the symmetry of the regular bimodule are three names for one thing.</p>
+<p><strong>Remark (why the swap must be twisted).</strong> The plain swap is recovered from the $\sigma$-swap exactly when $\sigma = \mathrm{id}$, which forces $A$ commutative: for $\sigma \neq \mathrm{id}$ the untwisted swap is not the target of $\sigma$, as the matrix case of the worked examples shows — there $A = M_n(F)$ with $\sigma(X) = X^{*}$, and $a \cdot \sigma(x) \cdot b = \sigma(b)\sigma(x)\sigma(a)$ while the untwisted swap gives $b\,\sigma(x)\,a$, and the two differ whenever $b$ and $\sigma(x)$ fail to commute.</p>
+<h2 id="a-hermitian-form-on-the-regular-module">A Hermitian Form on the Regular Module</h2>
+<h3 id="the-sesquilinear-forms">The sesquilinear forms</h3>
+<p><strong>Definition.</strong> Let $M$ be a left $A$-module over a ring with involution $\sigma$. A map $h : M \times M \to A$ is <strong>$\sigma$-sesquilinear</strong> if it is additive in each variable and</p>
+<p>$$
+h(ax, y) = a\,h(x,y), \qquad h(x, ay) = h(x,y)\,\sigma(a) ;
+$$</p>
+<p>it is <strong>Hermitian</strong> if in addition $h(y,x) = \sigma\bigl(h(x,y)\bigr)$.</p>
+<h3 id="the-canonical-form-of-the-regular-module">The canonical form of the regular module</h3>
+<p><strong>Proposition.</strong> On ${}_AA$ the formula</p>
+<p>$$
+h(x,y) = x\,\sigma(y)
+$$</p>
+<p>is a Hermitian $\sigma$-sesquilinear form with values in $A$, and it is non-degenerate: $h(x,y) = 0$ for all $y$ implies $x = 0$, and $h(x,y) = 0$ for all $x$ implies $y = 0$.</p>
+<p><strong>Proof.</strong> Additivity is the distributivity of $A$. For the two sesquilinearity laws, $h(ax,y) = ax\sigma(y) = a\,h(x,y)$ and $h(x,ay) = x\sigma(ay) = x\sigma(y)\sigma(a) = h(x,y)\sigma(a)$. Hermitianity is $\sigma(h(x,y)) = \sigma(x\sigma(y)) = \sigma(\sigma(y))\sigma(x) = y\sigma(x) = h(y,x)$, using $\sigma^2 = \mathrm{id}$. For non-degeneracy, $h(x,1) = x\sigma(1) = x$ and $h(1,y) = \sigma(y)$, so a vector killed on one side by every argument is killed at the unit and is zero.</p>
+<p><strong>Remark (the two values of the form).</strong> The form is left $A$-linear and right $\sigma$-semilinear, and it is not symmetric but Hermitian; when $A$ is commutative and $\sigma$ is the identity it is the plain product $h(x,y) = xy$, a symmetric bilinear form, and when $A$ is a field the regular form of the field is the ordinary product. Over a ring with a nontrivial involution the form is the algebraic core of the sesquilinear pairings of <em>Hilbert Algebras</em>, without their positivity.</p>
+<h3 id="the-associated-quadratic-form">The associated quadratic form</h3>
+<p><strong>Definition.</strong> The <strong>associated quadratic form</strong> of $h$ is $q(x) = h(x,x) = x\sigma(x)$.</p>
+<p><strong>Proposition.</strong> $q$ satisfies $q(ax) = a\,q(x)\,\sigma(a)$, and $q$ determines the Hermitian form by the polarisation identity</p>
+<p>$$
+h(x,y) + \sigma\bigl(h(y,x)\bigr) = q(x+y) - q(x) - q(y)
+$$</p>
+<p>whenever $2$ is invertible in $A$; for $A = M_n(F)$ over a field of characteristic not two this is the usual passage between the quadratic and the Hermitian form.</p>
+<p><strong>Proof.</strong> $q(ax) = ax\sigma(ax) = ax\sigma(x)\sigma(a) = aq(x)\sigma(a)$. For the polarisation, expand $q(x+y)$ and use $h(y,x) = \sigma(h(x,y))$, so that $h(x,y)+\sigma(h(y,x)) = 2h(x,y)$; the displayed identity is the expansion. The last statement is the matrix computation with $\sigma$ the transpose or the conjugate transpose.</p>
+<h3 id="the-unitary-elements-are-the-isometries">The unitary elements are the isometries</h3>
+<p><strong>Definition.</strong> An element $u \in A$ is <strong>unitary</strong> when $u\sigma(u) = \sigma(u)u = 1$; the unitary elements form the <strong>unitary group</strong> $U(A)$ of the involutive ring, the group of <em>Involutive Rings</em>.</p>
+<p><strong>Proposition.</strong> The $A$-linear isometries of $h$ are exactly the right multiplications $R_u$ by the unitary elements, $u \in U(A)$; they form a group isomorphic to $U(A)$. A left multiplication $L_u$ is an isometry exactly when $u$ is a central unitary element.</p>
+<p><strong>Proof.</strong> The $A$-linear endomorphisms of ${}_AA$ are the right multiplications $R_b$, $\operatorname{End}_A({}_AA) \cong A^{\mathrm{op}}$, by <em>The Regular Module and the Regular Bimodule</em>. Now $h(xb,yb) = xb\,\sigma(yb) = xb\sigma(b)\sigma(y) = x\,b\sigma(b)\,\sigma(y)$, so $R_b$ preserves $h$ for all $x,y$ exactly when $b\sigma(b) = 1$, which for a unit $b$ is the unitary condition. For a left multiplication, $h(ux,uy) = u\,h(x,y)\,\sigma(u)$; preservation forces $u\sigma(u) = 1$ from $x = y = 1$, and then $uz\sigma(u) = z$ for every $z$ in the image of $h$, which is all of $A$ because $h(1,y) = \sigma(y)$; multiplying $uz\sigma(u) = z$ on the right by $u$ gives $uz = zu$, so $u$ is central.</p>
+<p><strong>Corollary (the two readings).</strong> The unitary elements of the involutive ring act on the regular module as the isometries of its canonical form, on the right, and the right regular representation carries the unitary group into the isometry group. A unitary element that is not central acts as an isometry through $R_u$ and not through $L_u$, so the two one-sided readings of the same element differ as soon as the ring is non-commutative.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-matrix-algebra-with-the-conjugate-transpose">The matrix algebra with the conjugate transpose</h3>
+<p>Let $F$ be a field with an involution, for instance $F = \mathbb{C}$ with complex conjugation, let $A = M_n(F)$, and let $\sigma(X) = \overline{X}^{\mathsf{T}} = X^{*}$ be the conjugate transpose. Then the symmetric elements are the Hermitian matrices and the skew elements the anti-Hermitian ones, the unitary elements are the matrices with $UU^{*} = 1$, and the canonical form is $h(X,Y) = XY^{*}$. Its $A$-linear isometries are the right multiplications by the unitary matrices, which is the natural right action of $U(n)$ on the space of matrices; the left multiplications by unitary matrices are isometries only for the scalars, since those are the central unitary elements. The form $h$ is the algebraic Hilbert–Schmidt form of the matrix algebra, and its positivity is Part II.</p>
+<h3 id="the-group-algebra">The group algebra</h3>
+<p>Let $A = F[G]$ for a group $G$, with the involution $\sigma(g) = g^{-1}$ extended $F$-linearly, as in <em>Involutions of a Group Ring</em>. The symmetric elements are the group-ring elements fixed by the antipode, the skew elements those negated by it, the unitary elements are the $x$ with $x^{*}x = 1$, and these include the elements of $G$; the canonical form is $h(x,y) = x\sigma(y)$, and the right multiplications by the group elements are isometries. For $G$ finite and $F$ a field in which $|G|$ is invertible the form is the algebraic descendant of the standard orthogonality of the character table, whose positivity is Part II.</p>
+<h3 id="the-commutative-case">The commutative case</h3>
+<p>If $A$ is commutative and $\sigma$ is the identity then $\sigma$ is the identity involution, the swap of the regular bimodule is the bimodule itself, the canonical form is the product $h(x,y) = xy$, symmetric and non-degenerate when $A$ is a domain, and the unitary elements are the involutions $u^2 = 1$; the $A$-linear isometries are the right multiplications by these elements, which here coincide with the left ones. The split-complex numbers and the dual numbers, whose algebras are <em>Split-Complex Algebra</em> and <em>Dual-Numbers Algebra</em>, are the two degenerate cases of the corpus, and both carry the identity involution with $A = A^{\sigma}$ and $A^{-} = 0$.</p>
+<h3 id="the-biquaternions">The biquaternions</h3>
+<p>The biquaternion algebra $\mathbb{B}$ carries four natural involutions, the complex conjugation, the quaternion conjugation, the conjugate transpose and their product, and each gives its own twist, its own $\sigma$-swap isomorphism and its own Hermitian form on the regular bimodule. The lattice they form is <em>Biquaternion Involution Lattice</em>, in Part VI, where the same regular module is read through each of them; the present article supplies only the general construction.</p>
+<h2 id="summary">Summary</h2>
+<p>For a ring $A$ with an involution $\sigma$ the regular object acquires three structures. The twist of the left regular module is the right regular module up to the comparison $\sigma : ({}_AA)^{\sigma} \to A_A$, which is an isomorphism of right modules; the involution is a bimodule isomorphism of ${}_AA_A$ onto its $\sigma$-swap, $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$, and conversely every bimodule isomorphism of the regular bimodule onto its $\sigma$-swap is $x \mapsto d\sigma(x)$ with $d$ a central unit, the involution itself being the normalised case $d = 1$; over a noncommutative ring the involution must be carried in the target, the plain swap being its commutative case. The regular module carries the canonical Hermitian $\sigma$-sesquilinear form $h(x,y) = x\sigma(y)$ with values in $A$, non-degenerate, with associated quadratic form $q(x) = x\sigma(x)$ and polarisation identity when $2$ is invertible. Its $A$-linear isometries are the right multiplications $R_u$ by the unitary elements $u\sigma(u) = 1$, forming the unitary group $U(A)$, while a left multiplication $L_u$ is an isometry only for a central unitary $u$. The matrix algebra with the conjugate transpose, the group algebra with $g^{*} = g^{-1}$ and the commutative ring with the identity involution are the three worked cases, and the positivity of the form is deferred to Part II.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma$, $A^{\sigma}$, $A^{-}$</td>
+<td>the involution, the symmetric and the skew elements</td>
+</tr>
+<tr>
+<td>$M^{\sigma}$, $x \cdot a = \sigma(a)x$</td>
+<td>the twist of a left module</td>
+</tr>
+<tr>
+<td>$\sigma : ({}_AA)^{\sigma} \to A_A$</td>
+<td>the twist of the regular left module is the right one</td>
+</tr>
+<tr>
+<td>${}^{\mathrm{sw}}{}_AA_A^{\sigma}$, $a \cdot y = y\sigma(a)$, $y \cdot b = \sigma(b)y$</td>
+<td>the $\sigma$-swap of the regular bimodule</td>
+</tr>
+<tr>
+<td>${}^{\mathrm{sw}}{}_AA_A$, $a \cdot x = xa$, $x \cdot b = bx$</td>
+<td>the plain swap, its commutative case</td>
+</tr>
+<tr>
+<td>$\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$</td>
+<td>the involution is the bimodule $\sigma$-swap isomorphism</td>
+</tr>
+<tr>
+<td>$\varphi(x) = d\,\sigma(x)$, $d$ a central unit</td>
+<td>every bimodule $\sigma$-swap isomorphism, $d = 1$ normalised</td>
+</tr>
+<tr>
+<td>$h(x,y) = x\sigma(y)$</td>
+<td>the canonical Hermitian form on ${}_AA$</td>
+</tr>
+<tr>
+<td>$h(ax,y) = ah(x,y)$, $h(x,ay) = h(x,y)\sigma(a)$</td>
+<td>$\sigma$-sesquilinearity</td>
+</tr>
+<tr>
+<td>$h(y,x) = \sigma(h(x,y))$</td>
+<td>Hermitianity</td>
+</tr>
+<tr>
+<td>$q(x) = x\sigma(x)$, $q(ax) = aq(x)\sigma(a)$</td>
+<td>the associated quadratic form</td>
+</tr>
+<tr>
+<td>$U(A) = \{u : u\sigma(u) = 1\}$</td>
+<td>the unitary group</td>
+</tr>
+<tr>
+<td>$R_u$ with $u \in U(A)$</td>
+<td>the $A$-linear isometries of $h$</td>
+</tr>
+<tr>
+<td>$L_u$ is an isometry $\iff u$ central unitary</td>
+<td>the one-sided distinction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for involutions, sesquilinear and Hermitian forms, and the unitary group.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric and skew elements and the structure of involutive rings.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the regular module of a ring with involution and the bilinear forms on it.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for involutions, the forms they define and the unitary groups.</li>
+<li>Tsit-Yuen Lam, <em>Lectures on Modules and Rings</em> (Springer, 1999), for the regular module, its endomorphism ring and the sesquilinear forms over an involutive ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

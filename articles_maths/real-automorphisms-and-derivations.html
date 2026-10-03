@@ -53,52 +53,52 @@
         <h1 id="real-automorphisms-and-derivations"><strong>Real Automorphisms and Derivations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The real algebra $\mathbb{R}$ carries two standard invariants of its algebra structure: the group of algebra <strong>automorphisms</strong> and the Lie space of <strong>derivations</strong>. Both depend on the ground field, so the two views are kept separate and the field is named at each step. The real case is the degenerate base of the family: the automorphism group is trivial over every natural field of definition, and the derivation space vanishes. These are the smallest possible values, and their smallness is a mathematical statement about the complete ordered field rather than an omission.</p>
-<p>The conventions are those of <em>Real Algebra</em>: basis $e_0 = 1$, a general element $x = x e_0$, the sole involution the identity, norm $N(x) = x\,x = x^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\operatorname{id}, \bar{\cdot}\} \cong \mathbb{Z}/2$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$ and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$; the present article is the one-dimensional account of the same two invariants.</p>
+<p>The conventions are those of <em>Real Algebra</em>: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\operatorname{id}, \bar{\cdot}\} \cong \mathbb{Z}/2$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$ and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$; the present article is the one-dimensional account of the same two invariants.</p>
 <p>No physics is invoked and no new results are claimed. Everything below is standard structure theory of the field $\mathbb{R}$, together with two standard facts of its model theory: that the order is definable from the field operations, and that $\mathbb{R}$ is o-minimal.</p>
 <h2 id="standing-facts-the-field-and-the-prime-field">Standing Facts: The Field and the Prime Field</h2>
 <p>The automorphism group and the derivation space of $\mathbb{R}$ are governed by three structural facts, recorded here and used throughout.</p>
 <p><strong>No ideals.</strong> Every nonzero element of $\mathbb{R}$ is invertible, so the only two-sided ideals of $\mathbb{R}$ are $0$ and $\mathbb{R}$: the algebra is a <strong>field</strong>, in particular a division algebra with no proper nonzero ideal. The ideal lattice is the two-point lattice $\{0, \mathbb{R}\}$, the smallest possible.</p>
 <p><strong>The centre.</strong> The centre of $\mathbb{R}$ is $\mathbb{R}$ itself, since the algebra is commutative:</p>
 <p>$$
-Z(\mathbb{R}) = \{x \in \mathbb{R} : xy = yx \ \text{for all} \ y\} = \mathbb{R}.
+Z(\mathbb{R}) = \{a \in \mathbb{R} : ab = ba \ \text{for all} \ b\} = \mathbb{R}.
 $$</p>
 <p>Hence, over the ground field $\mathbb{R}$, the algebra is <strong>central simple</strong> — simple, finite-dimensional, with centre exactly the ground field. This is exactly the distinction that holds for $\mathbb{B}$ over $\mathbb{C}$: $\mathbb{B}$ is central simple over $\mathbb{C}$ and merely simple over $\mathbb{R}$. The two algebras differ not in that distinction but in what the invariant groups turn out to be.</p>
 <p><strong>The prime field.</strong> The image of $\mathbb{Q}$ in $\mathbb{R}$ under $q \mapsto q e_0$ is the <strong>prime field</strong>, the smallest subfield, and it is the fixed field of every automorphism and the zero set of every derivation. It is the field-theoretic analogue of the real subspace $\mathbb{R}_{\mathbb{R}}$ of <em>Real Algebra</em>, which is the whole of $\mathbb{R}$ here; the relevant substructure of $\mathbb{R}$ is not a proper subspace but the prime field, and it is the suspension of the Galois theory of the one-dimensional case.</p>
 <h2 id="automorphisms-over-math33">Automorphisms over $\mathbb{R}$</h2>
 <p>Throughout this section the ground field is $\mathbb{R}$.</p>
-<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-algebra automorphism</strong> of $\mathbb{R}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{R} \to \mathbb{R}$ with $\sigma(xy) = \sigma(x)\sigma(y)$ and $\sigma(e_0) = e_0$. These maps form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{R})$.</p>
-<p><strong>Determination by the identity.</strong> An $\mathbb{R}$-algebra automorphism fixes $e_0 = 1$ by definition and is $\mathbb{R}$-linear, so it fixes every element of the form $x e_0$ with $x \in \mathbb{R}$. Since $\mathbb{R}$ is one-dimensional as a vector space over itself and is spanned over $\mathbb{R}$ by the single vector $e_0$, fixing $e_0$ forces $\sigma = \operatorname{id}$.</p>
+<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-algebra automorphism</strong> of $\mathbb{R}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{R} \to \mathbb{R}$ with $\sigma(ab) = \sigma(a)\sigma(b)$ and $\sigma(e_0) = e_0$. These maps form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{R})$.</p>
+<p><strong>Determination by the identity.</strong> An $\mathbb{R}$-algebra automorphism fixes $e_0 = 1$ by definition and is $\mathbb{R}$-linear, so it fixes every element of the form $a e_0$ with $a \in \mathbb{R}$. Since $\mathbb{R}$ is one-dimensional as a vector space over itself and is spanned over $\mathbb{R}$ by the single vector $e_0$, fixing $e_0$ forces $\sigma = \operatorname{id}$.</p>
 <p><strong>Theorem.</strong> $\operatorname{Aut}_{\mathbb{R}}(\mathbb{R}) = \{\operatorname{id}\}$, the trivial group.</p>
-<p><strong>Proof.</strong> By the display above, $\sigma(x e_0) = x\sigma(e_0) = x e_0$ for every $x$, so $\sigma$ is the identity.</p>
+<p><strong>Proof.</strong> By the display above, $\sigma(a e_0) = a\sigma(e_0) = a e_0$ for every $a$, so $\sigma$ is the identity.</p>
 <p>The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. In the biquaternion case, by contrast, the central simple algebra is $M_2(\mathbb{C})$, whose automorphisms are the inner ones and form $PGL(2,\mathbb{C})$ of dimension $3$; in the complex case the $\mathbb{R}$-automorphism group is $\mathbb{Z}/2$. Here the algebra is the ground field itself, the group of units modulo scalars is $GL_1(\mathbb{R})/\mathbb{R}^\times = 1$, and the automorphism group is trivial.</p>
 <h2 id="automorphisms-of-the-field-and-of-the-ordered-field">Automorphisms of the Field and of the Ordered Field</h2>
 <p>The triviality of $\operatorname{Aut}_{\mathbb{R}}(\mathbb{R})$ is not an artefact of the ground field: it persists when automorphisms are required only to preserve the field or the order.</p>
 <p><strong>Theorem (field automorphisms).</strong> Every field automorphism of $\mathbb{R}$ is the identity.</p>
-<p><strong>Proof.</strong> Let $\sigma$ be a field automorphism. It fixes the prime field $\mathbb{Q}$ pointwise, because it fixes $1$ and hence every integer and every rational. It preserves squares, so $x > 0$ implies $x = y^2$ for some $y \neq 0$ and $\sigma(x) = \sigma(y)^2 > 0$; hence $\sigma$ is <strong>order-preserving</strong>, $x < y \Rightarrow \sigma(x) < \sigma(y)$. An order-preserving bijection of $\mathbb{R}$ that fixes $\mathbb{Q}$ is the identity: given $x$ and any rationals $q < x < r$ one has $q = \sigma(q) < \sigma(x) < \sigma(r) = r$, and since the rationals are dense and $x$ is the supremum of the rationals below it, $\sigma(x) = x$.</p>
+<p><strong>Proof.</strong> Let $\sigma$ be a field automorphism. It fixes the prime field $\mathbb{Q}$ pointwise, because it fixes $1$ and hence every integer and every rational. It preserves squares, so $a > 0$ implies $a = b^2$ for some $b \neq 0$ and $\sigma(a) = \sigma(b)^2 > 0$; hence $\sigma$ is <strong>order-preserving</strong>, $a < b \Rightarrow \sigma(a) < \sigma(b)$. An order-preserving bijection of $\mathbb{R}$ that fixes $\mathbb{Q}$ is the identity: given $a$ and any rationals $q < a < r$ one has $q = \sigma(q) < \sigma(a) < \sigma(r) = r$, and since the rationals are dense and $a$ is the supremum of the rationals below it, $\sigma(a) = a$.</p>
 <p><strong>Theorem (ordered-field automorphisms).</strong> Every automorphism of $\mathbb{R}$ as an ordered field is the identity, and $\operatorname{Aut}(\mathbb{R})$ is the same trivial group whether $\mathbb{R}$ is regarded as a field, as an ordered field, or as an $\mathbb{R}$-algebra.</p>
 <p><strong>Proof.</strong> An ordered-field automorphism is in particular a field automorphism, so it is the identity by the previous theorem; conversely the identity preserves the order.</p>
 <p><strong>The order is definable.</strong> The reason the three automorphism groups coincide is a definability fact rather than a statement about the order axiom by axiom: in the language of fields the order is already present, because</p>
 <p>$$
-x \leq y \iff \exists z \ (z^2 = y - x),
+a \leq b \iff \exists c \ (c^2 = b - a),
 $$</p>
 <p>since a real number is a square exactly when it is non-negative. The order is therefore <strong>definable</strong> from the field operations alone, with no parameters, and every field automorphism is automatically an order automorphism. This is the model-theoretic mechanism that forces the rigidity of $\mathbb{R}$: the order adds no structure to the field, it is recoverable from it, and so it restricts the automorphisms no further.</p>
 <p><strong>The relation to the real closed structure.</strong> The field $\mathbb{R}$ is <strong>real closed</strong>: it admits no ordering other than its own, it has no proper ordered algebraic extension, and every odd-degree polynomial over it has a root. The definability of the order is a consequence of real closedness, and it is the form of it that concerns the automorphism group.</p>
 <h2 id="derivations">Derivations</h2>
 <p><strong>Definition.</strong> An <strong>$\mathbb{R}$-linear derivation</strong> of $\mathbb{R}$ is an $\mathbb{R}$-linear map $D : \mathbb{R} \to \mathbb{R}$ with</p>
 <p>$$
-D(xy) = D(x)\,y + x\,D(y) \qquad (x, y \in \mathbb{R}).
+D(ab) = D(a)\,b + a\,D(b) \qquad (a, b \in \mathbb{R}).
 $$</p>
 <p>The set of such maps is a real vector space, written $\operatorname{Der}_{\mathbb{R}}(\mathbb{R})$, carrying the commutator bracket and hence a Lie algebra structure.</p>
 <p><strong>Every derivation vanishes on the base field.</strong> Every derivation satisfies $D(e_0) = 0$, since $D(e_0) = D(e_0 e_0) = 2D(e_0)$ in characteristic not $2$, and hence $D(q e_0) = 0$ for all $q \in \mathbb{Q}$.</p>
 <p><strong>Theorem.</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$.</p>
 <p><strong>Proof.</strong> A derivation $D$ is $\mathbb{R}$-linear and $\mathbb{R} = \mathbb{R} e_0$, so $D$ is determined by the single value $D(e_0)$. By $\mathbb{R}$-linearity and the derivation rule,</p>
 <p>$$
-D(x) = D(x\,e_0) = x\,D(e_0) + D(x)\,e_0 = x\,D(e_0) + D(x),
+D(a) = D(a\,e_0) = a\,D(e_0) + D(a)\,e_0 = a\,D(e_0) + D(a),
 $$</p>
-<p>so $x D(e_0) = 0$ for all $x$, whence $D(e_0) = 0$; therefore $D = 0$. Equivalently, $D$ is $\mathbb{R}$-linear and $D(1) = 0$, so $D(x) = x D(1) = 0$ for every $x$.</p>
+<p>so $a D(e_0) = 0$ for all $a$, whence $D(e_0) = 0$; therefore $D = 0$. Equivalently, $D$ is $\mathbb{R}$-linear and $D(1) = 0$, so $D(a) = a D(1) = 0$ for every $a$.</p>
 <p><strong>Vanishing of the inner derivations.</strong> For a commutative algebra every inner derivation vanishes:</p>
 <p>$$
-\operatorname{ad}_x(y) = xy - yx = 0 \qquad (x, y \in \mathbb{R}),
+\operatorname{ad}_a(b) = ab - ba = 0 \qquad (a, b \in \mathbb{R}),
 $$</p>
 <p>so the kernel of $\operatorname{ad} : \mathbb{R} \to \operatorname{Der}_{\mathbb{R}}(\mathbb{R})$ is all of $\mathbb{R}$, and the map itself is the zero map. In the biquaternion case $\operatorname{ad} : \mathbb{B} \to \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ has kernel the centre and induces $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}} \cong \mathrm{SL}(2,\mathbb{C})$; here the source and the target both collapse to the commutativity of the field. The complex case is the same one dimension up: its derivation space vanishes over both ground fields, and its inner derivations vanish identically.</p>
 <p><strong>Dimension.</strong> $\dim_{\mathbb{R}} \operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$.</p>
@@ -118,16 +118,16 @@ $$</p>
 <p><strong>Model theory.</strong> The definability of the order makes $\mathbb{R}$ an <strong>o-minimal</strong> structure: every subset of $\mathbb{R}$ definable with parameters in the field language is a finite union of points and intervals. This is the tameness property developed in the companion article <em>O-Minimality</em>; here it is recorded only for the statement it makes about the invariants of this article. A model-theoretic automorphism of $\mathbb{R}$ is a field automorphism, hence the identity, so the structure is rigid; and the rigidity is a consequence of the order being definable, not of the order being primitive. The theory of real closed fields is complete and decidable (Tarski), and it is model complete; the field $\mathbb{R}$ is its unique model up to isomorphism among the complete ordered fields.</p>
 <p><strong>The boundary between the two articles.</strong> This article owns $\operatorname{Aut}$ and $\operatorname{Der}$ as algebra invariants of $\mathbb{R}$; the companion article <em>O-Minimality</em> owns definability, cell decomposition and the tameness of definable sets. The order's definability is stated here only in its automorphism-forcing role, and the model theory of definable sets is left to that article.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The automorphism group is trivial.</strong> Suppose $\sigma$ is an $\mathbb{R}$-algebra automorphism and $x \in \mathbb{R}$. Since $\sigma$ is $\mathbb{R}$-linear and $\sigma(1) = 1$, $\sigma(x) = \sigma(x\cdot 1) = x\,\sigma(1) = x$. For instance $\sigma(1) = 1$ and $\sigma(\tfrac{3}{4}) = \tfrac{3}{4}$; there is no other value an automorphism can assign, because the value on $1$ has already determined it.</p>
+<p><strong>The automorphism group is trivial.</strong> Suppose $\sigma$ is an $\mathbb{R}$-algebra automorphism and $a \in \mathbb{R}$. Since $\sigma$ is $\mathbb{R}$-linear and $\sigma(1) = 1$, $\sigma(a) = \sigma(a\cdot 1) = a\,\sigma(1) = a$. For instance $\sigma(1) = 1$ and $\sigma(\tfrac{3}{4}) = \tfrac{3}{4}$; there is no other value an automorphism can assign, because the value on $1$ has already determined it.</p>
 <p><strong>A field automorphism fixes the sign.</strong> A field automorphism $\sigma$ preserves squares, so a positive number stays positive: $\sigma(4) = \sigma(2^2) = \sigma(2)^2 = 4 > 0$ and $\sigma(-1) = -1$. Hence a sign can never be moved by an automorphism, which is the concrete content of the order-preservation in the proof.</p>
 <p><strong>No nonzero derivation.</strong> Suppose $D$ is an $\mathbb{R}$-linear derivation with $D(1) = c$. Applying the derivation rule to $1 = 1\cdot 1$,</p>
 <p>$$
 c = D(1) = D(1\cdot 1) = D(1)\cdot 1 + 1\cdot D(1) = 2c \implies c = 0,
 $$</p>
-<p>the last step in characteristic $0$; hence $D(x) = xD(1) = 0$ for all $x$ by $\mathbb{R}$-linearity, and $D = 0$. There is no derivation of $\mathbb{R}$ over $\mathbb{R}$.</p>
-<p><strong>The inner derivations.</strong> For every $x \in \mathbb{R}$, $\operatorname{ad}_x = 0$; for instance with $x = -\tfrac{3}{4}$ and $y = \tfrac{7}{2}$,</p>
+<p>the last step in characteristic $0$; hence $D(a) = aD(1) = 0$ for all $a$ by $\mathbb{R}$-linearity, and $D = 0$. There is no derivation of $\mathbb{R}$ over $\mathbb{R}$.</p>
+<p><strong>The inner derivations.</strong> For every $a \in \mathbb{R}$, $\operatorname{ad}_a = 0$; for instance with $a = -\tfrac{3}{4}$ and $b = \tfrac{7}{2}$,</p>
 <p>$$
-[x, y] = xy - yx = -\tfrac{21}{8} - \bigl(-\tfrac{21}{8}\bigr) = 0,
+[a, b] = ab - ba = -\tfrac{21}{8} - \bigl(-\tfrac{21}{8}\bigr) = 0,
 $$</p>
 <p>the two terms being equal by commutativity.</p>
 <h2 id="summary">Summary</h2>
@@ -168,7 +168,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In summary: the automorphism group of $\mathbb{R}$ is trivial as an $\mathbb{R}$-algebra, as a field and as an ordered field, and the order adds no restriction because it is definable from the field operations, $x \leq y \iff \exists z\,(z^2 = y-x)$. The derivation space vanishes over $\mathbb{R}$, since the single basis element $e_0$ is fixed and the derivation rule forces $D(e_0) = 0$, and every inner derivation vanishes because the algebra is commutative. In the complex algebra the automorphism group is $\mathbb{Z}/2$ and the derivation space is zero; in the biquaternion algebra the two invariants are $PGL(2,\mathbb{C})$ and $\mathrm{SL}(2,\mathbb{C})$, of dimension $3$. The real field is the case in which both invariants collapse to the trivial group and the zero space, and the surviving structure is the prime field $\mathbb{Q}$ together with the order that is definable from the field.</p>
+<p>In summary: the automorphism group of $\mathbb{R}$ is trivial as an $\mathbb{R}$-algebra, as a field and as an ordered field, and the order adds no restriction because it is definable from the field operations, $a \leq b \iff \exists c\,(c^2 = b-a)$. The derivation space vanishes over $\mathbb{R}$, since the single basis element $e_0$ is fixed and the derivation rule forces $D(e_0) = 0$, and every inner derivation vanishes because the algebra is commutative. In the complex algebra the automorphism group is $\mathbb{Z}/2$ and the derivation space is zero; in the biquaternion algebra the two invariants are $PGL(2,\mathbb{C})$ and $\mathrm{SL}(2,\mathbb{C})$, of dimension $3$. The real field is the case in which both invariants collapse to the trivial group and the zero space, and the surviving structure is the prime field $\mathbb{Q}$ together with the order that is definable from the field.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -183,7 +183,7 @@ $$</p>
 <td>the real algebra, basis $e_0 = 1$, the complete ordered field</td>
 </tr>
 <tr>
-<td>$x = x e_0$</td>
+<td>$a = a e_0$</td>
 <td>a real number</td>
 </tr>
 <tr>
@@ -203,7 +203,7 @@ $$</p>
 <td>derivations over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\operatorname{ad}_x(y) = [x,y] = xy - yx$</td>
+<td>$\operatorname{ad}_a(b) = [a,b] = ab - ba$</td>
 <td>inner derivation, identically zero</td>
 </tr>
 <tr>
@@ -211,7 +211,7 @@ $$</p>
 <td>the prime field, fixed by every automorphism and killed by every derivation</td>
 </tr>
 <tr>
-<td>$x \leq y \iff \exists z\,(z^2 = y-x)$</td>
+<td>$a \leq b \iff \exists c\,(c^2 = b-a)$</td>
 <td>definability of the order from the field operations</td>
 </tr>
 <tr>

@@ -100,17 +100,17 @@ $$</p>
 <h2 id="matrix-units-in-the-split-quaternion-algebra">Matrix Units in the Split-Quaternion Algebra</h2>
 <p>The off-diagonal matrix units can be written explicitly. Put</p>
 <p>$$
-\tilde q = \tfrac{1}{2}(e_3 - e_1), \qquad y = \tfrac{1}{2}(e_1 + e_3).
+\tilde q = \tfrac{1}{2}(e_3 - e_1), \qquad \tilde p = \tfrac{1}{2}(e_1 + e_3).
 $$</p>
-<p>Then $\{\tilde\pi_+, \tilde q, y, \tilde\pi_-\}$ is an $\mathbb{R}$-basis of $\mathbb{H}_{\mathrm{s}}$, and it satisfies the matrix-unit relations with</p>
+<p>Then $\{\tilde\pi_+, \tilde q, \tilde p, \tilde\pi_-\}$ is an $\mathbb{R}$-basis of $\mathbb{H}_{\mathrm{s}}$, and it satisfies the matrix-unit relations with</p>
 <p>$$
-E_{11} = \tilde\pi_+, \qquad E_{12} = \tilde q, \qquad E_{21} = y, \qquad E_{22} = \tilde\pi_- .
+E_{11} = \tilde\pi_+, \qquad E_{12} = \tilde q, \qquad E_{21} = \tilde p, \qquad E_{22} = \tilde\pi_- .
 $$</p>
 <p>Explicitly, $\tilde\pi_+^2 = \tilde\pi_+$, $\tilde\pi_-^2 = \tilde\pi_-$, $\tilde\pi_+ \tilde\pi_- = \tilde\pi_- \tilde\pi_+ = 0$, $\tilde\pi_+ + \tilde\pi_- = 1$, and</p>
 <p>$$
-\tilde\pi_+ \tilde q = \tilde q = \tilde q \tilde\pi_-, \qquad \tilde\pi_- y = y = y \tilde\pi_+, \qquad \tilde q y = \tilde\pi_+, \qquad y \tilde q = \tilde\pi_-,
+\tilde\pi_+ \tilde q = \tilde q = \tilde q \tilde\pi_-, \qquad \tilde\pi_- \tilde p = \tilde p = \tilde p \tilde\pi_+, \qquad \tilde q \tilde p = \tilde\pi_+, \qquad \tilde p \tilde q = \tilde\pi_-,
 $$</p>
-<p>together with $\tilde q \tilde\pi_+ = \tilde\pi_- \tilde q = 0$, $\tilde\pi_+ y = y \tilde\pi_- = 0$, and $\tilde q^2 = y^2 = 0$. Both $\tilde q$ and $y$ are square zero, so $\{\tilde\pi_+, \tilde q, y, \tilde\pi_-\}$ is a system of matrix units of $\mathbb{H}_{\mathrm{s}}$, with $E_{11} = \tilde\pi_+$, $E_{22} = \tilde\pi_-$, $E_{12} = \tilde q$ and $E_{21} = y$. The names $E_{ij}$ refer to this abstract multiplication table.</p>
+<p>together with $\tilde q \tilde\pi_+ = \tilde\pi_- \tilde q = 0$, $\tilde\pi_+ \tilde p = \tilde p \tilde\pi_- = 0$, and $\tilde q^2 = \tilde p^2 = 0$. Both $\tilde q$ and $\tilde p$ are square zero, so $\{\tilde\pi_+, \tilde q, \tilde p, \tilde\pi_-\}$ is a system of matrix units of $\mathbb{H}_{\mathrm{s}}$, with $E_{11} = \tilde\pi_+$, $E_{22} = \tilde\pi_-$, $E_{12} = \tilde q$ and $E_{21} = \tilde p$. The names $E_{ij}$ refer to this abstract multiplication table.</p>
 <h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
 <p>The <strong>Peirce decomposition</strong> is the decomposition of an algebra relative to a family of orthogonal idempotents; it is the algebraic form of a block decomposition of a matrix.</p>
 <p><strong>One idempotent.</strong> Let $e \in A$ be idempotent and $f = 1 - e$. Every $q_0 \in A$ expands as $q_0 = eae + eaf + fae + faf$, giving the direct sum</p>
@@ -129,22 +129,22 @@ $$</p>
 $$</p>
 <p>and by the table above each summand is one-dimensional over $\mathbb{R}$:</p>
 <p>$$
-\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \mathbb{R} \tilde\pi_+, \qquad \tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde q, \qquad \tilde\pi_- \mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \mathbb{R} y, \qquad \tilde\pi_- \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde\pi_- .
+\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \mathbb{R} \tilde\pi_+, \qquad \tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde q, \qquad \tilde\pi_- \mathbb{H}_{\mathrm{s}} \tilde\pi_+ = \mathbb{R} \tilde p, \qquad \tilde\pi_- \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde\pi_- .
 $$</p>
 <p>So the Peirce decomposition is exactly the matrix-unit decomposition</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q \oplus \mathbb{R} y \oplus \mathbb{R} \tilde\pi_- = \bigoplus_{i,j=1}^{2} \mathbb{R} E_{ij}.
+\mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_- = \bigoplus_{i,j=1}^{2} \mathbb{R} E_{ij}.
 $$</p>
 <p>The diagonal part $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \tilde\pi_- \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde\pi_-$ is the two-dimensional commutative subalgebra isomorphic to $\mathbb{R} \times \mathbb{R}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{R}$, which is the primitivity criterion. The off-diagonal corner $\tilde\pi_+ \mathbb{H}_{\mathrm{s}} \tilde\pi_- = \mathbb{R} \tilde q$ is nonzero, and it is the reason the decomposition of $\mathbb{H}_{\mathrm{s}}$ by the non-central idempotent $\tilde\pi_+$ is a module decomposition and not an algebra decomposition; the element $\tilde\pi_+ e_3 \tilde\pi_- = \tilde q$ detects it.</p>
 <h2 id="the-matrix-unit-decomposition-as-a-sum-of-minimal-ideals">The Matrix-Unit Decomposition as a Sum of Minimal Ideals</h2>
 <p>The matrix units group into one-sided ideals in a second way. With $E_{11} = \tilde\pi_+$ and $E_{22} = \tilde\pi_-$, the two <strong>columns</strong> $\mathbb{H}_{\mathrm{s}} \tilde\pi_+, \mathbb{H}_{\mathrm{s}} \tilde\pi_-$ and the two <strong>rows</strong> $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}, \tilde\pi_- \mathbb{H}_{\mathrm{s}}$ are one-sided ideals, and</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_- = (\mathbb{R} \tilde\pi_+ \oplus \mathbb{R} y) \oplus (\mathbb{R} \tilde q \oplus \mathbb{R} \tilde\pi_-),
+\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_+ \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_- = (\mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde p) \oplus (\mathbb{R} \tilde q \oplus \mathbb{R} \tilde\pi_-),
 $$</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \tilde\pi_+ \mathbb{H}_{\mathrm{s}} \oplus \tilde\pi_- \mathbb{H}_{\mathrm{s}} = (\mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q) \oplus (\mathbb{R} y \oplus \mathbb{R} \tilde\pi_-).
+\mathbb{H}_{\mathrm{s}} = \tilde\pi_+ \mathbb{H}_{\mathrm{s}} \oplus \tilde\pi_- \mathbb{H}_{\mathrm{s}} = (\mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q) \oplus (\mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_-).
 $$</p>
-<p>The first exhibits $\mathbb{H}_{\mathrm{s}}$ as a direct sum of the two minimal left ideals (the columns); the second exhibits it as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\pi_+$ with $\tilde q$ and $\tilde\pi_-$ with $y$, whereas the column decomposition groups $\tilde\pi_+$ with $y$ and $\tilde\pi_-$ with $\tilde q$. Each column is two-dimensional and isomorphic, as a left $\mathbb{H}_{\mathrm{s}}$-module, to $\mathbb{R}^2$; each row is isomorphic to the dual $(\mathbb{R}^2)^{*}$. Since $\mathbb{H}_{\mathrm{s}}$ is simple, a column or a row is never a two-sided ideal; for instance $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ is not stable under right multiplication by $y$.</p>
+<p>The first exhibits $\mathbb{H}_{\mathrm{s}}$ as a direct sum of the two minimal left ideals (the columns); the second exhibits it as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\pi_+$ with $\tilde q$ and $\tilde\pi_-$ with $\tilde p$, whereas the column decomposition groups $\tilde\pi_+$ with $\tilde p$ and $\tilde\pi_-$ with $\tilde q$. Each column is two-dimensional and isomorphic, as a left $\mathbb{H}_{\mathrm{s}}$-module, to $\mathbb{R}^2$; each row is isomorphic to the dual $(\mathbb{R}^2)^{*}$. Since $\mathbb{H}_{\mathrm{s}}$ is simple, a column or a row is never a two-sided ideal; for instance $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ is not stable under right multiplication by $\tilde p$.</p>
 <h2 id="minimal-left-and-right-ideals">Minimal Left and Right Ideals</h2>
 <p>A <strong>minimal left ideal</strong> is a nonzero left ideal containing no nonzero proper left ideal; equivalently, a simple submodule of the left regular module. A <strong>minimal right ideal</strong> is defined the same way on the right.</p>
 <p>Since $\mathbb{H}_{\mathrm{s}}$ is semisimple, every left ideal is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{H}_{\mathrm{s}} e$ for a primitive idempotent $e$. The coordinate examples are the columns $\mathbb{H}_{\mathrm{s}} \tilde\pi_+$ and $\mathbb{H}_{\mathrm{s}} \tilde\pi_-$, and all minimal left ideals are isomorphic as left $\mathbb{H}_{\mathrm{s}}$-modules to the simple module $\mathbb{R}^2$: a general one is obtained from a column by an algebra automorphism, so it is again a column in a suitable basis. Dually, every minimal right ideal is a row and is isomorphic to $(\mathbb{R}^2)^{*}$, the coordinate examples being $\tilde\pi_+ \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_- \mathbb{H}_{\mathrm{s}}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with the simplicity theorem.</p>
@@ -173,9 +173,9 @@ $$</p>
 <p><strong>The biquaternions.</strong> Over $\mathbb{C}$, $\mathbb{B} \cong M_2(\mathbb{C})$ is simple in the same way, its length as a left module over itself is $2$, its idempotents $p, q$ play the role of $\tilde\pi_\pm$, and its matrix units satisfy the same relations; the only change is that the minimal left ideals are indexed by the <strong>complex</strong> projective line $\mathbb{P}^1(\mathbb{C})$, a two-dimensional real surface, rather than the circle $\mathbb{P}^1(\mathbb{R})$. The ideal theory over the base field $\mathbb{R}$ is developed in <em>Biquaternion Ideals and Peirce Decomposition</em>; the passage from $\mathbb{C}$ to $\mathbb{R}$ restricts the parameter space of minimal left ideals to a real circle but leaves the shape of the lattice unchanged.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple: its only two-sided ideals are $0$ and $\mathbb{H}_{\mathrm{s}}$. It is semisimple, artinian, and of length $2$ as a left module over itself, with $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ and $\mathbb{R}^2$ the defining module. Simplicity does not force the division property: $1 + e_2$ is a nonzero zero divisor that nonetheless generates the algebra as a two-sided ideal.</p>
-<p>The standard idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are orthogonal, complete and primitive. With the explicit matrix units $\tilde q = \tfrac{1}{2}(e_3 - e_1)$ and $y = \tfrac{1}{2}(e_1 + e_3)$, the set $\{\tilde\pi_+, \tilde q, y, \tilde\pi_-\}$ is a set of matrix units and the Peirce decomposition is the four-corner decomposition</p>
+<p>The standard idempotents $\tilde\pi_\pm = \tfrac{1}{2}(1 \pm e_2)$ are orthogonal, complete and primitive. With the explicit matrix units $\tilde q = \tfrac{1}{2}(e_3 - e_1)$ and $\tilde p = \tfrac{1}{2}(e_1 + e_3)$, the set $\{\tilde\pi_+, \tilde q, \tilde p, \tilde\pi_-\}$ is a set of matrix units and the Peirce decomposition is the four-corner decomposition</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q \oplus \mathbb{R} y \oplus \mathbb{R} \tilde\pi_- .
+\mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_+ \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_- .
 $$</p>
 <p>The two columns $\mathbb{H}_{\mathrm{s}} \tilde\pi_\pm$ are the minimal left ideals, each isomorphic to $\mathbb{R}^2$; the two rows $\tilde\pi_\pm \mathbb{H}_{\mathrm{s}}$ are the minimal right ideals, each isomorphic to the dual $(\mathbb{R}^2)^{*}$. Every left ideal is $0$, the whole algebra, or a minimal left ideal $L_W$ indexed by a line $W$ in $\mathbb{R}^2$; the minimal left ideals form the middle layer of the lattice and are parametrised by the real projective line $\mathbb{P}^1(\mathbb{R})$. The quaternion algebra, being a division algebra, has no proper ideal at all, while the biquaternion algebra has the same ideal lattice with the complex projective line $\mathbb{P}^1(\mathbb{C})$ in place of the real one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -209,7 +209,7 @@ $$</p>
 <td><em>Split-Quaternion Idempotents and Projections</em></td>
 </tr>
 <tr>
-<td>$\tilde q = \tfrac{1}{2}(e_3-e_1)$, $y = \tfrac{1}{2}(e_1+e_3)$</td>
+<td>$\tilde q = \tfrac{1}{2}(e_3-e_1)$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$</td>
 <td>the off-diagonal matrix units $E_{12}$, $E_{21}$</td>
 <td>this article</td>
 </tr>

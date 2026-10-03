@@ -57,12 +57,12 @@
 <p>The corpus's default base is a commutative ring with identity, but the exponential series, the closed form and the Lie group statements require a complete ordered field, so everything below is stated over $\mathbb{R}$; the algebraic identities remain meaningful for complex coefficients and are used in the comparison.</p>
 <p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : N(\tilde q) = 1\}\cong S^3$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
-<p><strong>Definition.</strong> The <strong>commutator bracket</strong> on $\mathbb{H}$ is $[x,y] = xy-yx$; the algebra $\mathbb{H}$ with this bracket is the <strong>Lie algebra of the quaternion algebra</strong>.</p>
+<p><strong>Definition.</strong> The <strong>commutator bracket</strong> on $\mathbb{H}$ is $[\tilde q,\tilde p] = \tilde q\tilde p-\tilde p\tilde q$; the algebra $\mathbb{H}$ with this bracket is the <strong>Lie algebra of the quaternion algebra</strong>.</p>
 <p><strong>Proposition.</strong> The bracket is bilinear, alternating and satisfies the Jacobi identity, so $\mathbb{H}$ is a Lie algebra; the centre of the algebra is the centre of the Lie algebra, and the derived subalgebra is the vector subspace,</p>
 <p>$$
 [\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}, \qquad Z(\mathbb{H}) = \mathbb{R}_{\mathbb{H}} .
 $$</p>
-<p><em>Proof.</em> The bracket of an associative algebra is a Lie bracket, the Jacobi identity being the associativity of multiplication. The commutator of any two quaternions is pure, since $\mathrm{Sc}([x,y]) = \mathrm{Sc}(xy)-\mathrm{Sc}(yx) = 0$, and the pure quaternions are all obtained as commutators, for instance $e_1 = \tfrac12[e_2,e_3]$; hence $[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}$. The centre of the bracket is the set of elements commuting with every quaternion, namely $\mathbb{R}_{\mathbb{H}}$.</p>
+<p><em>Proof.</em> The bracket of an associative algebra is a Lie bracket, the Jacobi identity being the associativity of multiplication. The commutator of any two quaternions is pure, since $\mathrm{Sc}([\tilde q,\tilde p]) = \mathrm{Sc}(\tilde q\tilde p)-\mathrm{Sc}(\tilde p\tilde q) = 0$, and the pure quaternions are all obtained as commutators, for instance $e_1 = \tfrac12[e_2,e_3]$; hence $[\mathbb{H},\mathbb{H}] = \operatorname{Im}\mathbb{H}$. The centre of the bracket is the set of elements commuting with every quaternion, namely $\mathbb{R}_{\mathbb{H}}$.</p>
 <p><strong>Theorem.</strong> As a Lie algebra the quaternion algebra splits as the direct sum of its centre and a simple ideal,</p>
 <p>$$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3),
@@ -97,7 +97,7 @@ $$</p>
 <p><em>Proof.</em> Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $|\tilde q| > 0$ and $u$ a unit quaternion; writing $u = \cos\theta+\mu\sin\theta$ with $\mu$ a pure unit and $\theta = \arccos(u_0)\in[0,\pi]$ gives $u = \exp(\mu\theta)$ by the closed form, and $|\tilde q| = e^{\ln|\tilde q|}$. Hence $\tilde q = \exp(\ln|\tilde q|+\mu\theta)$. The unit-sphere statement is the case $\ln|\tilde q| = 0$.</p>
 <p><strong>Proposition.</strong> The exponential is not injective; its kernel is the union of the spheres of pure quaternions of radius $2\pi k$ together with the origin,</p>
 <p>$$
-\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{x\in\operatorname{Im}\mathbb{H} : |x| = 2\pi k\bigr\},
+\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{\mathbf{q}\in\operatorname{Im}\mathbb{H} : |\mathbf{q}| = 2\pi k\bigr\},
 $$</p>
 <p>and its restriction to the open set $\{\tilde q : |\mathbf{q}| < \pi\}$ is a diffeomorphism onto $\mathbb{H}^{\times}\setminus(-\mathbb{R}_{>0})$.</p>
 <p><em>Proof.</em> $\exp(\tilde q) = 1$ forces $e^{q_0} = 1$ and $\sin|\mathbf{q}| = 0$ with $\cos|\mathbf{q}| = 1$, so $q_0 = 0$ and $|\mathbf{q}| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.</p>
@@ -136,9 +136,9 @@ $$</p>
 <h2 id="the-adjoint-action-of-the-exponential">The Adjoint Action of the Exponential</h2>
 <p><strong>Theorem.</strong> The adjoint action of the exponential is the conjugation by its value,</p>
 <p>$$
-\exp(t\,\operatorname{ad}_{\mu})(x) = e^{t\mu}\,x\,e^{-t\mu} = \operatorname{Ad}_{e^{t\mu}}(x),
+\exp(t\,\operatorname{ad}_{\mu})(\tilde q) = e^{t\mu}\,\tilde q\,e^{-t\mu} = \operatorname{Ad}_{e^{t\mu}}(\tilde q),
 $$</p>
-<p>for every $x\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.</p>
+<p>for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.</p>
 <p><em>Proof.</em> The identity $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ is the standard Lie-theoretic identity for an inner derivation, here computed from the series.</p>
 <p>The identification of the adjoint action with the rotations of $\operatorname{Im}\mathbb{H}$, the half-angle rule, and the completion of the rotation group to the full orthogonal group by the orientation-reversing maps are the subject of <em>Quaternion Rotations and Reflections</em>; this article supplies the exponential and the adjoint identity that the geometry slot uses.</p>
 <h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
@@ -203,7 +203,7 @@ $$</p>
 <td>The quaternion algebra, as algebra and as Lie algebra</td>
 </tr>
 <tr>
-<td>$[x,y] = xy-yx$</td>
+<td>$[\tilde q,\tilde p] = \tilde q\tilde p-\tilde p\tilde q$</td>
 <td>Commutator bracket</td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@ $$</p>
 <td>Logarithm, inverse off the negative axis</td>
 </tr>
 <tr>
-<td>$\operatorname{Ad}_u(x) = uxu^{-1}$</td>
+<td>$\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$</td>
 <td>Adjoint action; $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$</td>
 </tr>
 <tr>

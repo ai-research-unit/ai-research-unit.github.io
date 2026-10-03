@@ -131,7 +131,7 @@ N(\tilde{\Lambda})=1,
 $$</p>
 <p>Under the matrix isomorphism the operator on the module is the scalar $\rho$ times a norm-one element,</p>
 <p>$$
-Q\;\longmapsto\;\Phi(\tilde{Q})=\rho\,\Phi(\tilde{\Lambda})
+\tilde{Q}\;\longmapsto\;\Phi(\tilde{Q})=\rho\,\Phi(\tilde{\Lambda})
 =\underbrace{\rho}_{\text{scalar}}\;\underbrace{\Phi(B)\,\Phi(\hat{q})}_{\text{in }SL(2,\mathbb{C})},
 $$</p>
 <p>and the action on $S=\mathbb{C}^2$ is left multiplication, $\psi\mapsto\Phi(\tilde{Q})\psi$.</p>
@@ -231,7 +231,7 @@ $$</p>
 <p>$$
 H_{\tilde{Q}}=r^{2}\,H_{\tilde{\Lambda}},
 \qquad\text{so}\qquad
-H_{z\tilde{Q}}=\lvert z\rvert^{2}H_{\tilde{Q}}\quad (z\in\mathbb{C}^{\times}).
+H_{A\tilde{Q}}=\lvert A\rvert^{2}H_{\tilde{Q}}\quad (A\in\mathbb{C}^{\times}).
 $$</p>
 <p>The scale enters <strong>twice</strong>, once from $\tilde{Q}$ and once from $\tilde{Q}^{*}$, and the two copies multiply because the scale is central: the sandwich carries $r^{2}$ where the operator carries $r$. The effect is graded: on lengths the factor is $r^{2}$, on the biquaternion norm it is $r^{4}$, since the norm is quadratic. The polar statement is the same one read backwards,</p>
 <p>$$
@@ -248,9 +248,9 @@ $$</p>
 \qquad
 \Phi(B)\,X\,\Phi(B)=\mathrm{diag}\bigl(e^{\psi},e^{-\psi}\bigr)X ,
 $$</p>
-<p>so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t\,e_0+z\,e_3$ of the anti-Hermitian sector this reads on the $(t,z)$ plane as</p>
+<p>so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t\,e_0+c\,e_3$ of the anti-Hermitian sector this reads on the $(t,c)$ plane as</p>
 <p>$$
-t'=t\cosh\psi+z\sinh\psi, \qquad z'=t\sinh\psi+z\cosh\psi ,
+t'=t\cosh\psi+c\sinh\psi, \qquad c'=t\sinh\psi+c\cosh\psi ,
 $$</p>
 <p>the standard boost with rapidity $\psi$, produced by the rotor that stores $\psi/2$. The exponent that the operator stores is doubled, and the same holds for the rotation angle: the <strong>double rotation</strong> and the <strong>double dilatation</strong> are the two faces of the single statement that the sandwich uses each non-central factor twice, and the central factors once or not at all.</p>
 <p><strong>What the sandwich generates.</strong> Combining the two readings, the map $H_{\tilde{Q}}$ is a dilatation composed with a Lorentz transformation, and as $\tilde{Q}$ runs over all invertible elements the pair $(r^{2},\tilde{\Lambda})$ runs over all positive reals and all of $\mathbb{B}^{\times}_1$. The image of the sandwich action on the four-vector space is therefore</p>
@@ -375,8 +375,8 @@ $$</p>
 <h2 id="the-labels-of-the-twisted-representations">The Labels of the Twisted Representations</h2>
 <p>The twist is a representation-theoretic label, and it combines with the familiar ones. A character of the scaling group is</p>
 <p>$$
-\chi_{a,b}(z)=z^{a}\bar{z}^{b},
-\qquad z=re^{i\theta},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
+\chi_{a,b}(A)=A^{a}\bar{A}^{b},
+\qquad A=re^{i\theta},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
 $$</p>
 <p>the last condition being exactly what makes the character single-valued on $\mathbb{C}^{\times}$. The irreducible finite-dimensional modules of the group of units are then the twisted spinor representations</p>
 <p>$$
@@ -386,13 +386,13 @@ $$</p>
 <p>$$
 a-b\equiv 2j+2j'\pmod 2 .
 $$</p>
-<p>The defining module of $GL(2,\mathbb{C})$ is the twist of the left-handed chirality by the square root of the determinant, $(\tfrac12,0)_{(1,0)}$: the scalar $z$ acts on a spinor by $z$, which is $\det^{1/2}$ since $\det(zI)=z^{2}$.</p>
+<p>The defining module of $GL(2,\mathbb{C})$ is the twist of the left-handed chirality by the square root of the determinant, $(\tfrac12,0)_{(1,0)}$: the scalar $A$ acts on a spinor by $A$, which is $\det^{1/2}$ since $\det(AI)=A^{2}$.</p>
 <p><strong>Reality.</strong> Complex conjugation exchanges the two factors and conjugates the character,</p>
 <p>$$
 \overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)},
 $$</p>
 <p>so a twisted module is self-conjugate exactly when $j=j'$ and $b=a$; in that case the twist is the real pairing of the scale with itself, and the module is of real type, as $(\tfrac12,\tfrac12)_{(1,1)}$ is.</p>
-<p><strong>Unitarity.</strong> A twisted spinor is unitarizable only if the twist is unitary and the norm-one part is trivial. The twist is unitary exactly when the scale exponent is purely imaginary, $\mathrm{Re}(a+b)=0$, since $\lvert\chi_{a,b}(z)\rvert=r^{a+b}$; and the norm-one part admits no non-trivial finite-dimensional unitary representation, by the argument of the previous section. So the twisted spinor representations retain the non-unitarity of the untwisted ones, and the twist never repairs it. On the module the two copies of the operator again collapse in norm but not in value, at the scale as before.</p>
+<p><strong>Unitarity.</strong> A twisted spinor is unitarizable only if the twist is unitary and the norm-one part is trivial. The twist is unitary exactly when the scale exponent is purely imaginary, $\mathrm{Re}(a+b)=0$, since $\lvert\chi_{a,b}(A)\rvert=r^{a+b}$; and the norm-one part admits no non-trivial finite-dimensional unitary representation, by the argument of the previous section. So the twisted spinor representations retain the non-unitarity of the untwisted ones, and the twist never repairs it. On the module the two copies of the operator again collapse in norm but not in value, at the scale as before.</p>
 <h2 id="what-the-algebra-carries">What the Algebra Carries</h2>
 <p>The algebra $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, and its natural self-actions carry a short list of twisted representations.</p>
 <p><strong>Left multiplication.</strong> $\mathbb{B}\cong S\oplus S$ as a left module, so left multiplication carries two copies of the defining twisted module, $2\times(\tfrac12,0)_{\chi}$ with $\chi(\rho)=\rho$; the twist is the same on both copies, since the centre acts by the same scalar.</p>
@@ -403,7 +403,7 @@ $$</p>
 <p>The polar representation writes a biquaternion as an object, $\tilde{Q}=r e^{i\alpha}B\hat{q}$; this article writes it as an operator, and the two descriptions are the same information on the same elements. Acting on the module $S=\mathbb{C}^2$ by left multiplication, its matrix image is $\Phi(\tilde{Q})=\rho\Phi(\tilde{\Lambda})$ with $\rho=\sqrt{N(\tilde{Q})}=re^{i\alpha}$ and $\tilde{\Lambda}=B\hat{q}$ of norm one, so the module is the spinor module of the norm-one group <strong>twisted</strong> by the character $\chi(\rho)=\rho$. The twist does not enlarge the module — by Schur the module stays $\mathbb{C}^2$, irreducible — it changes the weight, and it is the record of the scale and the phase that the polar form carries. The correspondence is one-to-one: scale and phase become the twist, boost and rotor become the norm-one operator, and the order of the factors is preserved. Because it is the operator version of the polar word, the description exists exactly where the polar word does, on the complement of the null cone; the action on the module survives on the cone, but the twist and the modulus do not, and there is nothing to read.</p>
 <p>Acting on the algebra by the Hermitian sandwich, $H_{\tilde{Q}}(\tilde R)=\tilde{Q}\tilde R\tilde{Q}^{*}$, the operator factors as $r^{2}\tilde{\Lambda}\tilde R\tilde{\Lambda}^{*}$. The scale is counted <strong>twice</strong>, once per side, giving $r^{2}$ on lengths and $r^{4}$ on the norm; the phase cancels, since it and its inverse appear on the two sides and are central. The norm-one part, a rotation by the doubled angle followed by a boost of the doubled rapidity, has its stored half-angles doubled by the sandwich: the boost rotor stores $\psi/2$ and produces the rapidity $\psi$, as the diagonal example $\mathrm{diag}(e^{\psi/2},e^{-\psi/2})\mapsto\mathrm{diag}(e^{\psi},e^{-\psi})$ shows exactly. The image of the sandwich is the Lorentz group together with the dilatations, the similitude group $\mathbb{R}_{>0}\times SO^{+}(1,3)$, with no phase anywhere.</p>
 <p>The norm-one case, $r=1$ and $\alpha=0$, is the Lorentz group, the untwisted case, and the only case in which the sandwich is an isometry: it is where the spinor is the module, the double cover is visible as $-e_0\mapsto-I_2$, and the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ are inequivalent, separated by the chiral Casimirs. The other particular cases are read off by switching off one parameter: a central operator gives a pure double dilatation, a real quaternion gives a dilated rotation, a pure boost gives the doubled rapidity, and a vanishing norm removes the operator entirely.</p>
-<p>The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$, and the parity compatibility $a-b\equiv 2j+2j'\pmod 2$. Conjugation sends $(j,j')_{(a,b)}$ to $(j',j)_{(b,a)}$, and unitarity requires a purely imaginary scale exponent and is then still destroyed by the norm-one part. The algebra carries the twisted spinor and the twisted four-vector and no higher module: the rest of the tower is generated by symmetric powers of the twisted spinor, and lives in the tensor category rather than in the algebra.</p>
+<p>The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(A)=A^{a}\bar{A}^{b}$, $a-b\in\mathbb{Z}$, and the parity compatibility $a-b\equiv 2j+2j'\pmod 2$. Conjugation sends $(j,j')_{(a,b)}$ to $(j',j)_{(b,a)}$, and unitarity requires a purely imaginary scale exponent and is then still destroyed by the norm-one part. The algebra carries the twisted spinor and the twisted four-vector and no higher module: the rest of the tower is generated by symmetric powers of the twisted spinor, and lives in the tensor category rather than in the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -462,7 +462,7 @@ $$</p>
 <td>Twist character of the defining module ($\det^{1/2}$)</td>
 </tr>
 <tr>
-<td>$\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$</td>
+<td>$\chi_{a,b}(A)=A^{a}\bar{A}^{b}$, $a-b\in\mathbb{Z}$</td>
 <td>General character of the scaling group</td>
 </tr>
 <tr>

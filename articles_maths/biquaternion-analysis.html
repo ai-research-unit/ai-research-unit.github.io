@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis.</p>
 <p><strong>Theorem (algebra of limits).</strong> If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then</p>
 <p>$$
-\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q}) \circ \tilde{G}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q})\tilde{G}(\tilde{Q}) \to \tilde{L}\tilde{M}.
 $$</p>
 <p><strong>Proof.</strong> For the sum, use the triangle inequality:</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \varepsilon.
 $$</p>
 <p>The function is <strong>continuous on an open set</strong> if it is continuous at every point of the set.</p>
-<p><strong>Theorem (basic properties).</strong> If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.</p>
+<p><strong>Theorem (basic properties).</strong> If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and the pointwise product $\tilde{F}\tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then the composite $\tilde{G}\circ\tilde{F}$ is continuous at $\tilde{Q}_0$.</p>
 <p><strong>Proof.</strong> The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.</p>
 <p><strong>Theorem (component-wise continuity).</strong> A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$.</p>
 <p><strong>Proof.</strong> The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|\tilde{F}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient.</p>

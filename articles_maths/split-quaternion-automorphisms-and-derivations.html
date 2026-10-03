@@ -63,7 +63,7 @@ $$</p>
 <p><strong>Simplicity.</strong> The only two-sided ideals of $\mathbb{H}_{\mathrm{s}}$ are $0$ and $\mathbb{H}_{\mathrm{s}}$.</p>
 <p><strong>The centre.</strong> The centre is $Z(\mathbb{H}_{\mathrm{s}}) = S = \mathbb{R}\cdot 1$, a one-dimensional real space. Hence $\mathbb{H}_{\mathrm{s}}$ is <strong>central simple over $\mathbb{R}$</strong>: simple, of real dimension $4$, with centre exactly $\mathbb{R}$. This is the point of departure from the biquaternion algebra $\mathbb{B}$, which over $\mathbb{R}$ is simple but not central, its centre being the two-dimensional subspace $\mathbb{C}_{\mathbb{B}}$. Because the centre here is one-dimensional, an automorphism can only fix it, and a derivation can only vanish on it; there is no conjugate-linear coset and no étale direction to allow extra structure.</p>
 <h2 id="automorphisms-over-math24">Automorphisms over $\mathbb{R}$</h2>
-<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-algebra automorphism</strong> of $\mathbb{H}_{\mathrm{s}}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $\sigma(\tilde q y) = \sigma(\tilde q)\sigma(y)$ and $\sigma(1) = 1$. They form a group under composition, written $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$.</p>
+<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-algebra automorphism</strong> of $\mathbb{H}_{\mathrm{s}}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ with $\sigma(\tilde q \tilde p) = \sigma(\tilde q)\sigma(\tilde p)$ and $\sigma(1) = 1$. They form a group under composition, written $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$.</p>
 <p><strong>Inner automorphisms.</strong> For an invertible $g \in \mathbb{H}_{\mathrm{s}}$ the map $\iota_g(\tilde q) = g\tilde q g^{-1}$ is an automorphism, the <strong>inner automorphism</strong> determined by $g$. Since the centre is $\mathbb{R}$, the automorphism $\iota_g$ depends only on the class of $g$ modulo nonzero scalars, so $\iota_g = \iota_{\lambda g}$ for $\lambda \in \mathbb{R}^\times$.</p>
 <p><strong>Theorem (Skolem–Noether).</strong> For any field $k$ and $n \geq 1$, every $k$-algebra automorphism of $M_n(k)$ is inner: for each $\sigma$ there exists $g \in GL_n(k)$ with $\sigma(\tilde q) = g\tilde q g^{-1}$ for all $\tilde q$.</p>
 <p><strong>Theorem.</strong> Every $\mathbb{R}$-algebra automorphism of $\mathbb{H}_{\mathrm{s}}$ is inner, and the map</p>
@@ -85,14 +85,14 @@ $$</p>
 <h2 id="derivations">Derivations</h2>
 <p><strong>Definition.</strong> An <strong>$\mathbb{R}$-linear derivation</strong> of $\mathbb{H}_{\mathrm{s}}$ is an $\mathbb{R}$-linear map $D : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ satisfying the Leibniz rule</p>
 <p>$$
-D(\tilde q y) = D(\tilde q)\,y + \tilde q\,D(y) .
+D(\tilde q \tilde p) = D(\tilde q)\,\tilde p + \tilde q\,D(\tilde p) .
 $$</p>
 <p>The derivations form a real Lie algebra under the commutator, written $\mathrm{Der}(\mathbb{H}_{\mathrm{s}})$.</p>
 <p><strong>Inner derivations.</strong> For $a \in \mathbb{H}_{\mathrm{s}}$ the map</p>
 <p>$$
-\mathrm{ad}_a : \tilde q \mapsto [a,\tilde q] = ax - xa
+\mathrm{ad}_a : \tilde q \mapsto [a,\tilde q] = a\tilde q - \tilde q a
 $$</p>
-<p>is a derivation, the <strong>inner derivation</strong> by $a$, and $\mathrm{ad}_a$ depends only on the class of $a$ modulo the centre: $\mathrm{ad}_a = \mathrm{ad}_{a + z}$ for $z \in \mathbb{R}$.</p>
+<p>is a derivation, the <strong>inner derivation</strong> by $a$, and $\mathrm{ad}_a$ depends only on the class of $a$ modulo the centre: $\mathrm{ad}_a = \mathrm{ad}_{a + c}$ for $c \in \mathbb{R}$.</p>
 <p><strong>Theorem.</strong> Every derivation of $\mathbb{H}_{\mathrm{s}}$ is inner, and the map</p>
 <p>$$
 \mathbb{H}_{\mathrm{s}} \longrightarrow \mathrm{Der}(\mathbb{H}_{\mathrm{s}}), \qquad a \longmapsto \mathrm{ad}_a,
@@ -110,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> By Skolem–Noether every automorphism is inner, so $\mathrm{Aut} = \mathrm{Inn}$ and the quotient is trivial.</p>
 <p>The exceptional phenomena that produce outer automorphisms elsewhere — the outer automorphism of $M_n(\mathbb{D})$ for $n \geq 3$ over a division algebra $\mathbb{D} \neq k$, or the triality of $\mathrm{Cl}_{0,8}$ — do not occur for a $2 \times 2$ matrix algebra over a field. Thus for $\mathbb{H}_{\mathrm{s}}$ the outer automorphism group gives no new symmetry, and the whole automorphism group is the inner one, of two components.</p>
 <h3 id="anti-automorphisms">Anti-Automorphisms</h3>
-<p>The conjugations ${}^{\natural}$ and $\rho$ are <strong>anti</strong>-automorphisms, satisfying $(\tilde q y)^{\natural} = y^{\natural}\,\tilde{q}^{\natural}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in <em>Split-Quaternion Involution Lattice</em>. In the Clifford description of <em>Split-Quaternion Other Algebraic Element Representations</em>, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.</p>
+<p>The conjugations ${}^{\natural}$ and $\rho$ are <strong>anti</strong>-automorphisms, satisfying $(\tilde q \tilde p)^{\natural} = \tilde p^{\natural}\,\tilde{q}^{\natural}$, and are not automorphisms, so they do not appear in $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}})$. Together with the automorphism $\alpha$ they make up the involution group of the algebra, treated in <em>Split-Quaternion Involution Lattice</em>. In the Clifford description of <em>Split-Quaternion Other Algebraic Element Representations</em>, the two are the reversal and the Clifford conjugation; the existence of anti-automorphisms outside $\mathrm{Aut}$ is the standard asymmetry between an algebra and its opposite, and it is not an outer automorphism phenomenon.</p>
 <h2 id="the-lie-algebra-statement">The Lie Algebra Statement</h2>
 <p>The three statements fit together as follows. The automorphism group is the Lie group $\mathrm{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$, of dimension $3$ with two components. Its identity component is $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, with Lie algebra $\mathrm{SO}(2,1)$. The derivation algebra is $\mathrm{Der}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$, and it is exactly the Lie algebra of $\mathrm{Aut}$:</p>
 <p>$$

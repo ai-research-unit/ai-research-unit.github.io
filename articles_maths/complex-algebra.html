@@ -66,119 +66,119 @@ i^2 = -1.
 $$</p>
 <p>A general complex number is written in developed form as</p>
 <p>$$
-Z = a\,e_0 + b\,e_1, \qquad a, b \in \mathbb{R},
+A = a\,e_0 + a'\,e_1, \qquad a, a' \in \mathbb{R},
 $$</p>
 <p>or, more compactly, as</p>
 <p>$$
-Z = a + i b, \qquad a, b \in \mathbb{R}.
+A = a + i a', \qquad a, a' \in \mathbb{R}.
 $$</p>
-<p>The real number $a$ is the <strong>real part</strong>, and the real number $b$ is the <strong>imaginary part</strong>. We also write</p>
+<p>The real number $a$ is the <strong>real part</strong>, and the real number $a'$ is the <strong>imaginary part</strong>. We also write</p>
 <p>$$
-Z = a + i b, \qquad a = \operatorname{Re} Z, \quad b = \operatorname{Im} Z.
+A = a + i a', \qquad a = \operatorname{Re} A, \quad a' = \operatorname{Im} A.
 $$</p>
 <p>The notation $i$ is chosen deliberately. In some of the older literature, the imaginary unit is written $j$ or $\sqrt{-1}$, which collides visually with the index $j$ or with the square root sign. This collision is a persistent source of confusion, especially when the complex algebra is tensored with other algebras. Using $i$ for the imaginary unit and reserving $j$ for indices avoids the collision entirely. This is the notation we use throughout the blog.</p>
 <h3 id="basic-properties">Basic Properties</h3>
-<p><strong>Commutative.</strong> Complex multiplication is commutative: $Z W = W Z$.</p>
-<p><strong>Associative.</strong> Complex multiplication is associative: $(Z W) U = Z (W U)$.</p>
+<p><strong>Commutative.</strong> Complex multiplication is commutative: $A B = B A$.</p>
+<p><strong>Associative.</strong> Complex multiplication is associative: $(A B) C = A (B C)$.</p>
 <p><strong>Division algebra.</strong> Every nonzero complex number has a multiplicative inverse, and there are no zero divisors. The conjugation is</p>
 <p>$$
-\bar{Z} = a - i b,
+\bar A = a - i a',
 $$</p>
 <p>and the inverse is built from it with the norm. The norm is a form and a distance, a structure of the layer above this one, and the inverse formula belongs to the companion article <em>Complex Norm and Invertibility</em>; the algebra layer records only that the inverse exists.</p>
 <p><strong>Frobenius theorem.</strong> The complex algebra is one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{H}$. In fact, $\mathbb{C}$ is the only one that is commutative but not ordered.</p>
 <h3 id="the-imaginary-part-and-math20">The Imaginary Part and $\mathbb{R}^2$</h3>
-<p>The pair $(a, b)$ can be identified with a vector in $\mathbb{R}^2$. Under this identification, the product of two complex numbers is</p>
+<p>The pair $(a, a')$ can be identified with a vector in $\mathbb{R}^2$. Under this identification, the product of two complex numbers is</p>
 <p>$$
-Z W = (a c - b d) + (a d + b c) i, \qquad Z = a + i b, \quad W = c + i d.
+A B = (a b - a' b') + (a b' + a' b) i, \qquad A = a + i a', \quad B = b + i b'.
 $$</p>
 <p>This is the formula for the product in the algebra, written in real coordinates. There is no dot product and no cross product in this expression, because $\mathbb{C}$ is commutative and two-dimensional. The multiplication is the only operation of the algebra; the reading of it as a rotation and a scaling of the plane is a geometric one, made in the companion article <em>Rotations and Reflections in the Complex Plane</em>.</p>
 <h2 id="complex-algebra_1">Complex Algebra</h2>
 <h3 id="definition_1">Definition</h3>
 <p>The <strong>complex algebra</strong> is the field $\mathbb{C}$ considered as a two-dimensional real vector space equipped with its field multiplication. As a real vector space, $\mathbb{C}$ has dimension $2$. As a ring, it is a field. A general element is written in developed form as</p>
 <p>$$
-Z = a\,e_0 + b\,e_1, \qquad a, b \in \mathbb{R},
+A = a\,e_0 + a'\,e_1, \qquad a, a' \in \mathbb{R},
 $$</p>
 <p>or, more compactly, as</p>
 <p>$$
-Z = a + i b, \qquad a, b \in \mathbb{R}.
+A = a + i a', \qquad a, a' \in \mathbb{R}.
 $$</p>
 <p>We write</p>
 <p>$$
-Z = a + i b,
+A = a + i a',
 $$</p>
-<p>where $a$ is the <strong>real part</strong> and $b$ is the <strong>imaginary part</strong>. The tilde is absent because $Z$ is an element of the algebra $\mathbb{C}$, not a vector in some larger space.</p>
+<p>where $a$ is the <strong>real part</strong> and $a'$ is the <strong>imaginary part</strong>. The tilde is absent because $A$ is an element of the algebra $\mathbb{C}$, not a vector in some larger space.</p>
 <h3 id="multiplication">Multiplication</h3>
 <p>The product of two complex numbers is defined by extending the real multiplication bilinearly:</p>
 <p>$$
-Z W = (a + i b)(c + i d) = (a c - b d) + (a d + b c) i.
+A B = (a + i a')(b + i b') = (a b - a' b') + (a b' + a' b) i.
 $$</p>
 <p>In developed form,</p>
 <p>$$
-Z W = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} Z_\mu W_\nu \, e_\mu e_\nu,
+A B = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} A_\mu B_\nu \, e_\mu e_\nu,
 $$</p>
 <p>where the products $e_\mu e_\nu$ are those of the complex algebra.</p>
 <h3 id="conjugations">Conjugations</h3>
 <p>There are <strong>two</strong> natural conjugations on $\mathbb{C}$, and they form the two-element group generated by complex conjugation:</p>
-<p><strong>Complex conjugation</strong> $\bar{Z}$:</p>
+<p><strong>Complex conjugation</strong> $\bar A$:</p>
 <p>$$
-\bar{Z} = a - i b.
+\bar A = a - i a'.
 $$</p>
 <p><strong>Identity conjugation</strong> $\operatorname{id}$:</p>
 <p>$$
-\operatorname{id}(Z) = Z.
+\operatorname{id}(A) = A.
 $$</p>
 <p>Each conjugation is an involution: applying it twice returns the original complex number. Each has a fixed-point set, which is a real vector subspace of $\mathbb{C}$. The two subspaces are described in the following sections.</p>
 <h2 id="the-two-fixed-point-subspaces">The Two Fixed-Point Subspaces</h2>
 <p>Each of the two conjugations has a fixed-point set, i.e., a set of complex numbers left invariant by the conjugation. Each fixed-point set is a real vector subspace of $\mathbb{C}$. The two subspaces are described below.</p>
 <h3 id="the-real-subspace">The Real Subspace</h3>
-<p>The fixed points of <strong>complex conjugation</strong> are the complex numbers satisfying $\bar{Z} = Z$. In developed form,</p>
+<p>The fixed points of <strong>complex conjugation</strong> are the complex numbers satisfying $\bar A = A$. In developed form,</p>
 <p>$$
-a - i b = a + i b.
+a - i a' = a + i a'.
 $$</p>
 <p>Comparing the coefficients of $1$ and $i$:</p>
 <ul>
 <li>Coefficient of $1$: $a = a$, always satisfied.</li>
-<li>Coefficient of $i$: $-b = b$, so $b = 0$.</li>
+<li>Coefficient of $i$: $-a' = a'$, so $a' = 0$.</li>
 </ul>
 <p>The fixed points are complex numbers with vanishing imaginary part:</p>
 <p>$$
-Z = a, \qquad a \in \mathbb{R}.
+A = a, \qquad a \in \mathbb{R}.
 $$</p>
 <p>This is the <strong>real subspace</strong> $\mathbb{R}_{\mathbb{C}}$, a copy of the real number line embedded in $\mathbb{C}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{C}$ (isomorphic to $\mathbb{R}$), and it is the only one of the two fixed-point sets that is an ordered field.</p>
 <h3 id="the-complex-subspace">The Complex Subspace</h3>
-<p>The fixed points of the <strong>identity conjugation</strong> are all complex numbers, since $\operatorname{id}(Z) = Z$ for every $Z$. In developed form they are</p>
+<p>The fixed points of the <strong>identity conjugation</strong> are all complex numbers, since $\operatorname{id}(A) = A$ for every $A$. In developed form they are</p>
 <p>$$
-Z = a + i b, \qquad a, b \in \mathbb{R}.
+A = a + i a', \qquad a, a' \in \mathbb{R}.
 $$</p>
 <p>This is the <strong>complex subspace</strong> $\mathbb{C}_{\mathbb{C}}$, a copy of the complex plane embedded in $\mathbb{C}$ as the whole thing. It is a real vector space of dimension $2$. It is a subalgebra of $\mathbb{C}$, and it is a division algebra.</p>
 <h2 id="complex-decomposition">Complex Decomposition</h2>
 <p>The real subspace $\mathbb{R}_{\mathbb{C}}$ and its imaginary translate $i \mathbb{R}_{\mathbb{C}}$ are the two eigenspaces of complex conjugation. Every complex number decomposes uniquely as the sum of a real part and an imaginary part:</p>
 <p>$$
-Z = Z_r + i Z_i, \qquad Z_r \in \mathbb{R}, \quad Z_i \in \mathbb{R}.
+A = a + i a', \qquad a \in \mathbb{R}, \quad a' \in \mathbb{R}.
 $$</p>
-<p>The two components are obtained from the complex conjugation:</p>
+<p>The real and the imaginary parts are obtained from the complex conjugation:</p>
 <p>$$
-Z_r = \frac{1}{2}(Z + \bar{Z}), \qquad Z_i = \frac{1}{2i}(Z - \bar{Z}).
+a = \frac{1}{2}(A + \bar A), \qquad a' = \frac{1}{2i}(A - \bar A).
 $$</p>
-<p>Indeed, $Z_r$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $Z_i$ is real, so $i Z_i$ is negated by complex conjugation.</p>
+<p>Indeed, $a$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $a'$ is real, so $i a'$ is negated by complex conjugation.</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i \mathbb{R}_{\mathbb{C}},
 $$</p>
-<p>where $i \mathbb{R}_{\mathbb{C}}$ is the set of complex numbers of the form $i b$ with $b \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}$ of real dimension $2$.</p>
-<p>This is the <strong>complex decomposition</strong> of a complex number. It expresses $Z$ as a real number plus $i$ times another real number. It is the natural decomposition when we think of $\mathbb{C}$ as the complexification of $\mathbb{R}$.</p>
+<p>where $i \mathbb{R}_{\mathbb{C}}$ is the set of complex numbers of the form $i a'$ with $a' \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}$ of real dimension $2$.</p>
+<p>This is the <strong>complex decomposition</strong> of a complex number. It expresses $A$ as a real number plus $i$ times another real number. It is the natural decomposition when we think of $\mathbb{C}$ as the complexification of $\mathbb{R}$.</p>
 <h2 id="conjugate-decomposition">Conjugate Decomposition</h2>
 <p>The complex conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{C}}$ (eigenvalue $+1$) and the imaginary subspace $i \mathbb{R}_{\mathbb{C}}$ (eigenvalue $-1$). Every complex number decomposes uniquely as</p>
 <p>$$
-Z = Z_+ + Z_-, \qquad Z_+ = Z_r, \quad Z_- = i Z_i.
+A = A_+ + A_-, \qquad A_+ = a, \quad A_- = i a'.
 $$</p>
 <p>This is the same decomposition as above, written in terms of the eigenspaces of the conjugation. It is the algebraic analogue of writing a real number as the sum of its even and odd parts under a reflection.</p>
 <h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
-<p>The quadratic form of the algebra and the inner product are a <strong>form</strong> and a <strong>distance</strong>, structures of the topology layer, which this layer may name but cannot measure with. They are developed in the companion article <em>Complex Norm and Invertibility</em>, which develops the norm $N(Z) = Z\bar{Z}$, its multiplicativity, the Hermitian form, the Euclidean norm and the inner product $\langle Z, W\rangle = \bar{Z}W$. Nothing is proved with them here, and the absence of that development is itself the layer statement of this article: the algebra carries its multiplication, its single nontrivial involution and its two subspaces, and the form enters at the next layer.</p>
+<p>The quadratic form of the algebra and the inner product are a <strong>form</strong> and a <strong>distance</strong>, structures of the topology layer, which this layer may name but cannot measure with. They are developed in the companion article <em>Complex Norm and Invertibility</em>, which develops the norm $N(A) = A\bar{A}$, its multiplicativity, the Hermitian form, the Euclidean norm and the inner product $\langle A, B\rangle = \bar{A}B$. Nothing is proved with them here, and the absence of that development is itself the layer statement of this article: the algebra carries its multiplication, its single nontrivial involution and its two subspaces, and the form enters at the next layer.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex algebra $\mathbb{C}$ is the real algebra of dimension $2$ with basis $1$, $i$ and the single relation $i^2 = -1$. With its multiplication it is a field: commutative, associative and unital, with every nonzero element invertible. A general element is written as $Z = a + i b$.</p>
+<p>The complex algebra $\mathbb{C}$ is the real algebra of dimension $2$ with basis $1$, $i$ and the single relation $i^2 = -1$. With its multiplication it is a field: commutative, associative and unital, with every nonzero element invertible. A general element is written as $A = a + i a'$.</p>
 <p>Complex conjugation is the nontrivial $\mathbb{R}$-linear involution; its fixed subspace is the real subspace $\mathbb{R}_{\mathbb{C}}$, on which it acts as the identity, and its anti-fixed subspace is the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, which it negates. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every complex number decomposes uniquely in each of the two ways the article records: as a real part plus an imaginary part, and as the sum of the $+1$ and $-1$ eigencomponents.</p>
-<p>The quadratic form of the algebra and the inner product — the norm $N(Z) = Z\bar{Z}$, the Hermitian form and the inner product $\langle Z, W\rangle = \bar{Z}W$ — are a form and a distance, structures of the topology layer, and they are developed in the companion article <em>Complex Norm and Invertibility</em>, not here.</p>
+<p>The quadratic form of the algebra and the inner product — the norm $N(A) = A\bar{A}$, the Hermitian form and the inner product $\langle A, B\rangle = \bar{A}B$ — are a form and a distance, structures of the topology layer, and they are developed in the companion article <em>Complex Norm and Invertibility</em>, not here.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -202,26 +202,26 @@ $$</p>
 </tr>
 <tr>
 <td>$e_0 = 1$, $e_1 = i$</td>
-<td>The basis elements, in the developed form $Z = a\,e_0 + b\,e_1$</td>
+<td>The basis elements, in the developed form $A = a\,e_0 + a'\,e_1$</td>
 </tr>
 <tr>
-<td>$Z = a + i b$</td>
+<td>$A = a + i a'$</td>
 <td>General complex number</td>
 </tr>
 <tr>
-<td>$a = \operatorname{Re} Z$</td>
+<td>$a = \operatorname{Re} A$</td>
 <td>Real part</td>
 </tr>
 <tr>
-<td>$b = \operatorname{Im} Z$</td>
+<td>$a' = \operatorname{Im} A$</td>
 <td>Imaginary part</td>
 </tr>
 <tr>
-<td>$\bar{Z} = a - i b$</td>
+<td>$\bar A = a - i a'$</td>
 <td>Complex conjugate</td>
 </tr>
 <tr>
-<td>$\operatorname{id}(Z) = Z$</td>
+<td>$\operatorname{id}(A) = A$</td>
 <td>Identity conjugation</td>
 </tr>
 <tr>

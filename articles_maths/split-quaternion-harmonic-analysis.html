@@ -86,7 +86,7 @@ $$</p>
 <h2 id="convolution-and-the-convolution-theorem">Convolution and the Convolution Theorem</h2>
 <p><strong>Definition.</strong> The <strong>convolution</strong> of two algebra-valued functions is</p>
 <p>$$
-(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(y)\,g(\tilde q-y)\,\mathrm{d}y ,
+(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde p)\,g(\tilde q-\tilde p)\,\mathrm{d}\tilde p ,
 $$</p>
 <p>with the product of the algebra inside the integral.</p>
 <p><strong>Theorem (The Convolution Theorem).</strong> For $f, g \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the convolution is well defined almost everywhere, and</p>
@@ -94,9 +94,9 @@ $$</p>
 \widehat{f * g}(\xi) = \hat f(\xi)\,\hat g(\xi),
 $$</p>
 <p>the product being the product of the algebra.</p>
-<p><strong>Proof.</strong> Substituting $z = \tilde q-y$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.</p>
+<p><strong>Proof.</strong> Substituting $\tilde r = \tilde q-\tilde p$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.</p>
 <p><strong>Corollary (The Transform Is an Algebra Homomorphism).</strong> The Fourier transform carries convolution to the pointwise product of the algebra and the direct sum to the sum, both products taken in the same order; it is therefore an isomorphism of the convolution algebra onto the algebra of algebra-valued functions with the pointwise product. The convolution is associative, because the algebra product is, but it is <strong>not</strong> commutative: $\widehat{f*g} = \hat f\hat g$ while $\widehat{g*f} = \hat g\hat f$, and the two differ as soon as the values of the transforms fail to commute. The transform is an isomorphism onto the pointwise-product algebra, not onto a commutative algebra, and the non-commutativity of the algebra is exactly what is transported.</p>
-<p><strong>Proof.</strong> The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(y)k(-y)\,\mathrm{d}y$ and $(g*f)(0) = -e_3\int k(y)k(-y)\,\mathrm{d}y$, which differ. Associativity is $\widehat{(f*g)*h} = (\hat f\hat g)\hat h = \hat f(\hat g\hat h)$.</p>
+<p><strong>Proof.</strong> The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$ and $(g*f)(0) = -e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$, which differ. Associativity is $\widehat{(f*g)*h} = (\hat f\hat g)\hat h = \hat f(\hat g\hat h)$.</p>
 <h3 id="approximate-identities-and-youngs-inequality">Approximate Identities and Young's Inequality</h3>
 <p><strong>Definition.</strong> An <strong>approximate identity</strong> is a family $(k_\varepsilon)_{\varepsilon>0}$ of integrable algebra-valued functions with $\int k_\varepsilon = 1$, with $\sup_\varepsilon \|k_\varepsilon\|_1$ finite and with the mass concentrating at the origin as $\varepsilon \to 0$; the standard choice is $k_\varepsilon(\tilde q) = \varepsilon^{-4}k(\tilde q/\varepsilon)$ for a fixed integrable $k$ with $\int k = 1$.</p>
 <p><strong>Theorem (Young's Inequality and Convergence).</strong> For $f \in L^p$ and $k \in L^1$,</p>
@@ -118,12 +118,12 @@ N\big(e^{-\tilde q\xi}\big) = e^{-2\operatorname{Sc}(\tilde q\xi)} > 0 ,
 $$</p>
 <p>so the exponential kernel itself is never a zero divisor, and the transform is well defined and bounded on $L^1$ for every frequency.</p>
 <p><strong>Proof.</strong> <em>Split-Quaternion Elementary Functions</em>, §<em>The Exponential</em>, applied to the element $-\tilde q\xi$.</p>
-<p><strong>Theorem (The Inversion Degenerates on the Null Cone).</strong> The kernel $e^{-\tilde q\xi}$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-y$, and</p>
+<p><strong>Theorem (The Inversion Degenerates on the Null Cone).</strong> The kernel $e^{-\tilde q\xi}$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde p$, and</p>
 <p>$$
-(\tilde q-y)^{-1} = \frac{\overline{\tilde q-y}}{N(\tilde q-y)}
+(\tilde q-\tilde p)^{-1} = \frac{\overline{\tilde q-\tilde p}}{N(\tilde q-\tilde p)}
 $$</p>
-<p>exists exactly when $N(\tilde q-y) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.</p>
-<p><strong>Proof.</strong> The inverse of an element is $u^{\natural}/N(u)$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+y)\xi} \neq e^{-\tilde q\xi}e^{-y\xi}$ unless $\tilde q$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>.</p>
+<p>exists exactly when $N(\tilde q-\tilde p) \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.</p>
+<p><strong>Proof.</strong> The inverse of an element is $u^{\natural}/N(u)$ by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>, which likewise gives that $N(u) = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $e^{-(\tilde q+\tilde p)\xi} \neq e^{-\tilde q\xi}e^{-\tilde p\xi}$ unless $\tilde q$ and $\xi$ commute, by <em>Split-Quaternion Elementary Functions</em>, §<em>Non-Commutativity and the One-Variable Case</em>.</p>
 <p><strong>Theorem (The Vanishing Determinant, Stated Precisely).</strong> Let $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then</p>
 <p>$$
 \widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, \hat f(\xi),

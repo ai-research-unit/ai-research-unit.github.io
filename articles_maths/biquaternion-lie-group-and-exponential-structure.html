@@ -59,10 +59,10 @@
 <h2 id="the-unit-quaternions-and-their-complexification">The Unit Quaternions and Their Complexification</h2>
 <p>The <strong>unit quaternions</strong> are the elements of $\mathbb{H}_{\mathbb{B}}$ of norm $1$:</p>
 <p>$$
-S^3 = \{q \in \mathbb{H}_{\mathbb{B}} : N(q) = 1\},
+S^3 = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : N(\tilde q) = 1\},
 $$</p>
-<p>a compact, connected, simply connected real Lie group of real dimension $3$. Every such $q$ is $\cos\theta\, e_0 + \sin\theta\, \hat{n}$ with $\hat{n}$ a real unit vector part, the quaternion exponential.</p>
-<p>Complexifying the coefficients turns $N(q) = 1$ into the same equation over $\mathbb{C}$, giving the <strong>unit-norm subgroup</strong></p>
+<p>a compact, connected, simply connected real Lie group of real dimension $3$. Every such $\tilde q$ is $\cos\theta\, e_0 + \sin\theta\, \hat{n}$ with $\hat{n}$ a real unit vector part, the quaternion exponential.</p>
+<p>Complexifying the coefficients turns $N(\tilde q) = 1$ into the same equation over $\mathbb{C}$, giving the <strong>unit-norm subgroup</strong></p>
 <p>$$
 \mathbb{B}^\times_1 = \{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) = 1\},
 $$</p>
@@ -87,7 +87,7 @@ consistently with the unit quaternions being the unitary part of the norm-one gr
 $$
 U(2)=S^3\cdot U(1)\cong (SU(2)\times U(1))/\{\pm(1,1)\}.
 $$</p>
-<p><strong>Proof.</strong> If $\tilde{Q}\in U(2)$ then $|\det\Phi(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\Phi(\tilde{Q}))^{-1/2}\in U(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\Phi(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_0\}$ is the set of scalars $\lambda e_0$ of determinant $\lambda^2=1$, and the kernel of $S^3\times U(1)\to U(2)$, $(q,\lambda)\mapsto\lambda q$, is $\{\pm(1,1)\}$.</p>
+<p><strong>Proof.</strong> If $\tilde{Q}\in U(2)$ then $|\det\Phi(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\Phi(\tilde{Q}))^{-1/2}\in U(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\Phi(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_0\}$ is the set of scalars $\lambda e_0$ of determinant $\lambda^2=1$, and the kernel of $S^3\times U(1)\to U(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.</p>
 <p><strong>Remark.</strong> The norm-one group $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ is strictly larger: it acts on the defining module too, but it does not preserve the Hermitian form, and unlike $U(2)$ it is non-compact.</p>
 <h2 id="the-enlarged-carrier-and-the-closed-forms-for-su3-and-su4">The Enlarged Carrier and the Closed Forms for SU(3) and SU(4)</h2>
 <p>The groups the algebra reaches directly are $SU(2)=S^3$ and the compact $U(2)$ above, and the ceiling recorded in the physics article <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em> is the statement that no octet of generators with an $\mathfrak{su}(3)$ bracket sits <strong>inside</strong> $\mathbb{B}$. Classical closed forms for $SU(3)$ and $SU(4)$ in terms of biquaternions nevertheless exist, and they cost exactly one enlargement of the carrier: not the algebra but the matrices over the algebra.</p>
@@ -97,7 +97,7 @@ M_n(\mathbb{B})\cong M_n(M_2(\mathbb{C}))\cong M_{2n}(\mathbb{C}),\qquad
 \dim_{\mathbb{C}}M_n(\mathbb{B})=4n^2 .
 $$</p>
 <p>In particular $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{u}(3)$ and hence $\mathfrak{su}(3)$, with its eight generators written as $3\times3$ matrices of biquaternions. This realises the ceiling's answer: the octet is not in $\mathbb{B}$, and it <em>is</em> in $M_3(\mathbb{B})$, for the price of enlarging the carrier by the factor $2$ in each matrix direction. Since $\mathbb{B}\hookrightarrow M_3(\mathbb{B})$ by the scalar matrices, the chain is $\mathfrak{su}(2)=\mathfrak{k}\subset\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset M_3(\mathbb{B})$.</p>
-<p>The closed forms use the Conway operator calculus of <em>The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Conway Operator Basis</em>: $a[\,]b$ is the linear function $z\mapsto azb$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.</p>
+<p>The closed forms use the Conway operator calculus of <em>The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Conway Operator Basis</em>: $a[\,]b$ is the linear function $\tilde{Q}\mapsto a\tilde{Q}b$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.</p>
 <p><strong>Proposition (the three exponentials).</strong> $\mathrm{EXP}$ denoting the exponential series of a linear function, for real $\alpha$, $\beta$ and $\delta_k$,</p>
 <p>$$
 \mathrm{EXP}\Bigl(\tfrac{\alpha}{2}\bigl(a[\,]-[\,]a\bigr)\Bigr)=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr),
@@ -152,7 +152,7 @@ $$</p>
 <h2 id="the-correspondence-with-the-lie-algebra">The Correspondence with the Lie Algebra</h2>
 <p>The exponential is the correspondence between the group and the algebra. Its differential at the identity is the identity, so it is a local diffeomorphism onto a neighbourhood of $e_0$, and the inverse function theorem makes it a chart of $\mathbb{B}^\times$ near the identity; the tangent space at the identity is the whole algebra, since $\mathbb{B}^\times$ is open, with the commutator as bracket (<em>Biquaternion Lie Algebra</em>). The Baker–Campbell–Hausdorff series of the algebra converges near the origin and reproduces the group law there, and the group law $\exp(\tilde A)\exp(\tilde C)$ against $\exp(\tilde A+\tilde C)$ of <em>Biquaternion Elementary Functions</em> is its first two terms. The subgroups correspond to the subalgebras: the compact subalgebra $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ to $S^3$, the trace-free part $\mathrm{B}_0$ to the norm-one group $\mathbb{B}^\times_1$, and the centre $\mathbb{C}e_0$ to $\mathbb{C}^\times e_0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_0\}$.</p>
+<p>The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:N(\tilde q)=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_0\}$.</p>
 <p>The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_0$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_0\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_0$ to the centre.</p>
 <p>Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.</p>
 <p>The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_0$ and acts on the vector part, so the matrix is $\operatorname{diag}(U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.</p>
@@ -174,7 +174,7 @@ $$</p>
 <td>Exponential map; closed form in <em>Biquaternion Elementary Functions</em></td>
 </tr>
 <tr>
-<td>$S^3=\{q\in\mathbb{H}_{\mathbb{B}}:N(q)=1\}$</td>
+<td>$S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:N(\tilde q)=1\}$</td>
 <td>Unit quaternions; compact subgroup of real dimension $3$</td>
 </tr>
 <tr>
@@ -203,7 +203,7 @@ $$</p>
 </tr>
 <tr>
 <td>$a[\,]b$, $\odot$, $D\{\delta\}$</td>
-<td>Conway operator $z\mapsto azb$, its composition, and the diagonal function</td>
+<td>Conway operator $\tilde{Q}\mapsto a\tilde{Q}b$, its composition, and the diagonal function</td>
 </tr>
 <tr>
 <td>$G^{-1}=G^{+\approx}=G^{\dagger}$</td>

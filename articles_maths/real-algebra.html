@@ -204,20 +204,20 @@ $$</p>
 <h3 id="intervals">Intervals</h3>
 <p>For $a, b \in \mathbb{R}$ with $a \leq b$:</p>
 <p>$$
-[a, b] = \{x \in \mathbb{R} : a \leq x \leq b\}, \qquad (a, b) = \{x \in \mathbb{R} : a < x < b\},
+[a, b] = \{c \in \mathbb{R} : a \leq c \leq b\}, \qquad (a, b) = \{c \in \mathbb{R} : a < c < b\},
 $$</p>
 <p>$$
-[a, b) = \{x \in \mathbb{R} : a \leq x < b\}, \qquad (a, b] = \{x \in \mathbb{R} : a < x \leq b\}.
+[a, b) = \{c \in \mathbb{R} : a \leq c < b\}, \qquad (a, b] = \{c \in \mathbb{R} : a < c \leq b\}.
 $$</p>
-<p>Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$ is an interval iff for all $a, b \in S$ with $a < b$, every $x$ with $a < x < b$ lies in $S$.</p>
+<p>Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$ is an interval iff for all $a, b \in S$ with $a < b$, every $c$ with $a < c < b$ lies in $S$.</p>
 <h3 id="bounds">Bounds</h3>
-<p>A set $S \subseteq \mathbb{R}$ is <strong>bounded above</strong> if there exists $M \in \mathbb{R}$ with $x \leq M$ for all $x \in S$. Such an $M$ is an <strong>upper bound</strong>. The <strong>supremum</strong> $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.</p>
-<p>Dually, $S$ is <strong>bounded below</strong> if there exists $m \in \mathbb{R}$ with $m \leq x$ for all $x \in S$, and the <strong>infimum</strong> $\inf S$ is the greatest lower bound.</p>
+<p>A set $S \subseteq \mathbb{R}$ is <strong>bounded above</strong> if there exists $M \in \mathbb{R}$ with $a \leq M$ for all $a \in S$. Such an $M$ is an <strong>upper bound</strong>. The <strong>supremum</strong> $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.</p>
+<p>Dually, $S$ is <strong>bounded below</strong> if there exists $m \in \mathbb{R}$ with $m \leq a$ for all $a \in S$, and the <strong>infimum</strong> $\inf S$ is the greatest lower bound.</p>
 <h3 id="the-completeness-consequences">The Completeness Consequences</h3>
 <p>Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its consequences are:</p>
 <p><strong>Archimedean property.</strong> For any $a \in \mathbb{R}$, there exists $n \in \mathbb{N}$ with $n > a$. Proof: if not, $\mathbb{N}$ is bounded above, so $\sup \mathbb{N}$ exists; then $\sup \mathbb{N} - 1$ is not an upper bound, so some $n > \sup \mathbb{N} - 1$, hence $n + 1 > \sup \mathbb{N}$, contradiction.</p>
 <p><strong>Density of $\mathbb{Q}$.</strong> For any $a, b \in \mathbb{R}$ with $a < b$, there exists $q \in \mathbb{Q}$ with $a < q < b$. Proof: by Archimedes, choose $n$ with $n(b - a) > 1$; then choose $m$ with $m > na$ minimal; then $m/n \in (a, b)$.</p>
-<p><strong>Existence of $n$-th roots.</strong> For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{x \geq 0 : x^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.</p>
+<p><strong>Existence of $n$-th roots.</strong> For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{c \geq 0 : c^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.</p>
 <p><strong>Nested interval property.</strong> If $(I_n)$ is a decreasing sequence of non-empty closed intervals, then $\bigcap_n I_n \neq \emptyset$. Proof: the left endpoints form a set bounded above, whose supremum lies in every $I_n$.</p>
 <h3 id="the-nested-interval-property-and-uniqueness">The Nested Interval Property and Uniqueness</h3>
 <p>The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and, in the metric reading, to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$. Only the order-theoretic form of them is used here: the metric reading is the topological development of <em>Real Topology</em>.</p>

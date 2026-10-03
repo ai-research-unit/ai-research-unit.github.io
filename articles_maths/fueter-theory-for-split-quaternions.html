@@ -96,12 +96,12 @@ $$</p>
 <p><strong>Proof.</strong> $I \in V$ satisfies $I^2 = -N(I)$ (the vector part squares to minus its split-quaternion norm), so $I^2 = -1$ iff $N(I) = 1$, which is the displayed hyperboloid, two-sheeted because $q_1^2 = 1+q_2^2+q_3^2\geq1$; the slice intersection statement is linear algebra.</p>
 <p>This is the first departure from the quaternion theory, where the imaginary units form the two-sphere $S^2$. Here there is no compact imaginary sphere: the imaginary units are unbounded and split into two sheets, so an "imaginary direction" must be selected one root at a time, as in the biquaternion case but for a different reason.</p>
 <h3 id="holomorphic-functions-on-a-slice-are-regular">Holomorphic Functions on a Slice Are Regular</h3>
-<p><strong>Theorem.</strong> Fix an imaginary unit $I$, with slice coordinate $z = q_0 + I\rho$ on $\mathbb{C}_I$, and let $F$ depend only on $q_0$ and $\rho$ (not on the two directions of $V$ orthogonal to $I$). Then</p>
+<p><strong>Theorem.</strong> Fix an imaginary unit $I$, with slice coordinate $A = q_0 + I\rho$ on $\mathbb{C}_I$, and let $F$ depend only on $q_0$ and $\rho$ (not on the two directions of $V$ orthogonal to $I$). Then</p>
 <p>$$
-\nabla F = (\partial_{q_0} + I\partial_\rho)F = 2\partial_{\bar z}F,
+\nabla F = (\partial_{q_0} + I\partial_\rho)F = 2\partial_{\bar A}F,
 $$</p>
-<p>so $F$ is regular if and only if $F$ is holomorphic in $z$ in the classical sense. Hence every classical holomorphic function of $z = q_0+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.</p>
-<p><strong>Proof.</strong> Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar z = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar z} = \tfrac12(\partial_{q_0} + I\partial_\rho)$.</p>
+<p>so $F$ is regular if and only if $F$ is holomorphic in $A$ in the classical sense. Hence every classical holomorphic function of $A = q_0+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.</p>
+<p><strong>Proof.</strong> Restricted to functions of $q_0,\rho$, the operator is $\nabla = e_0\partial_{q_0} + I\partial_\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar A = q_0 - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial_{\bar A} = \tfrac12(\partial_{q_0} + I\partial_\rho)$.</p>
 <p>This slice statement is exact and requires no modification for the split signature, because on a slice the form is definite (the slice is a copy of $\mathbb{C}$). It is the part of the theory that survives intact.</p>
 <h3 id="axial-coordinates-and-the-obstruction-by-the-zero-divisors">Axial Coordinates and the Obstruction by the Zero Divisors</h3>
 <p>For an element $\tilde q = q_0+\mathbf v$ with $N(\mathbf v) > 0$, the <strong>axial coordinates</strong> are</p>
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Remark.</strong> What remains is the slice construction of the previous subsection, which is exact and local to each slice, and the general Clifford-algebraic theory of monogenic functions on $\mathrm{Cl}_{2,2}$, which is signature-independent for the Fischer decomposition below. The axial radial construction is the part that fails, and its failure is measured by the vector part displayed above.</p>
 <h2 id="power-series-representations">Power Series Representations</h2>
 <p><strong>Theorem (right-coefficient series).</strong> A series $F(\tilde q) = \sum_{n\geq0} \tilde q^n a_n$ with coefficients $a_n \in \mathbb{H}_{\mathrm{s}}$ on the right converges absolutely and normally on $\|\tilde q\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, and its sum is <strong>slice-regular</strong> (Cullen-regular): holomorphic on each slice.</p>
-<p><strong>Proof.</strong> The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = z$ and the sum is a power series in the slice variable.</p>
+<p><strong>Proof.</strong> The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = A$ and the sum is a power series in the slice variable.</p>
 <p><strong>Proposition.</strong> The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_0^2+e_1^2+e_2^2+e_3^2 = 1-1+1+1 = 2e_0 \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.</p>
 <p><strong>Theorem (Fischer decomposition).</strong> Let $\mathcal{P}_k$ be the $\mathbb{H}_{\mathrm{s}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \nabla P = 0\}$ the <strong>monogenic homogeneous polynomials</strong>. Then</p>
 <p>$$

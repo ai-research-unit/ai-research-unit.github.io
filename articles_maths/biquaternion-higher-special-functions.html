@@ -197,7 +197,7 @@ $$</p>
 <h3 id="the-definition-problem">The Definition Problem</h3>
 <p>The <strong>gamma function</strong> of a complex variable is defined by the integral</p>
 <p>$$
-\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt, \qquad \operatorname{Re} z > 0.
+\Gamma(A) = \int_0^\infty t^{A-1} e^{-t} \, dt, \qquad \operatorname{Re} A > 0.
 $$</p>
 <p>The natural extension to a biquaternion variable would be</p>
 <p>$$
@@ -278,18 +278,18 @@ $$</p>
 \tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$</p>
 <p>It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.</p>
-<p>In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/z$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.</p>
+<p>In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.</p>
 <p>In the nilpotent regime, $\tilde{G}(\mathbf{Q}) = -\mathbf{Q}/\|\mathbf{Q}\|_E^4$, which is singular at the origin.</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
 <p>$$
-P(\tilde{Q}, \tilde{Y}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{Y}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{Y}\|_E = r.
+P(\tilde{Q}, \tilde{U}) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{U}\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{U}\|_E = r.
 $$</p>
 <p>It is the kernel that solves the Dirichlet problem for the d'Alembertian on the ball. It is the biquaternion analogue of the Poisson kernel in complex analysis.</p>
 <h3 id="the-greens-function">The Green's Function</h3>
-<p>The <strong>Green's function</strong> for the d'Alembertian on a domain $\Omega$ is the function $G(\tilde{Q}, \tilde{Y})$ that satisfies</p>
+<p>The <strong>Green's function</strong> for the d'Alembertian on a domain $\Omega$ is the function $G(\tilde{Q}, \tilde{U})$ that satisfies</p>
 <p>$$
-\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{Y}) = \delta(\tilde{Q} - \tilde{Y}) e_0, \qquad G(\tilde{Q}, \tilde{Y}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
+\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{U}) = \delta(\tilde{Q} - \tilde{U}) e_0, \qquad G(\tilde{Q}, \tilde{U}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
 $$</p>
 <p>Its construction is standard from the fundamental solution of the d'Alembertian, and it is the biquaternion analogue of the Green's function in the theory of elliptic partial differential equations.</p>
 <h3 id="the-open-questions_2">The Open Questions</h3>

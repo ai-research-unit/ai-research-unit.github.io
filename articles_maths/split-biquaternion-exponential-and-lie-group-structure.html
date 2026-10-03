@@ -55,10 +55,10 @@
 <p>The split biquaternion algebra is a real associative algebra of dimension eight, and as such it carries a Lie algebra structure under the commutator, an exponential map into its group of units, and the Lie-group structures attached to the two. This article records the Lie algebra and its decomposition into the two halves, the exponential with its closed form and its kernel, the group of units and the norm-one group, the elliptic and hyperbolic one-parameter subgroups, the polar and exponential parametrisation of an element, and the comparison with the biquaternion case. The algebra and its decomposition are used from <em>Split-Biquaternion Algebra</em> and <em>Split-Biquaternion Ideals and Peirce Decomposition</em>; the quaternion exponential is that of the companion article on the quaternions.</p>
 <p>The treatment is purely mathematical. No physics is invoked; the "Lorentz group" is not used here, and the compact and non-compact subgroups discussed below are named for their mathematical position in the classification of one-parameter subgroups.</p>
 <h2 id="the-algebra-as-a-lie-algebra-and-its-two-halves">The Algebra as a Lie Algebra and Its Two Halves</h2>
-<p><strong>Definition.</strong> The <strong>commutator bracket</strong> on $\mathbb{H}_{\mathbb{D}}$ is $[x,y] = xy - yx$. With this bracket $\mathbb{H}_{\mathbb{D}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of units.</p>
+<p><strong>Definition.</strong> The <strong>commutator bracket</strong> on $\mathbb{H}_{\mathbb{D}}$ is $[\tilde Q,\tilde P] = \tilde Q\tilde P - \tilde P\tilde Q$. With this bracket $\mathbb{H}_{\mathbb{D}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of units.</p>
 <p><strong>Theorem.</strong> In the components of the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ the bracket is componentwise,</p>
 <p>$$
-\left[(x_+,x_-), (y_+,y_-)\right] = \left([x_+,y_+], [x_-,y_-]\right) ,
+\left[(\tilde Q_+,\tilde Q_-), (\tilde P_+,\tilde P_-)\right] = \left([\tilde Q_+,\tilde P_+], [\tilde Q_-,\tilde P_-]\right) ,
 $$</p>
 <p>so that the two halves $\mathbb{H} \tilde\Pi_+$ and $\mathbb{H} \tilde\Pi_-$ are commuting ideals and $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ as Lie algebras.</p>
 <p><strong>Proof.</strong> The decomposition is a ring direct sum, so the commutator of pairs is the pair of commutators.</p>
@@ -70,8 +70,8 @@ $$</p>
 <p><strong>Proof.</strong> In the quaternion Lie algebra $\mathbb{H}$ the commutator of two elements is the vector product of their vector parts, so the centre is $\mathbb{R}e_0$ and the derived algebra is $\mathrm{Im}\,\mathbb{H} \cong \mathrm{SU}(2) \cong \mathrm{SO}(3)$; taking two copies, the centre is $\mathbb{R} \tilde\Pi_+ \oplus \mathbb{R} \tilde\Pi_- = \mathbb{D} e_0$ and the derived algebra is the sum of the two copies of $\mathrm{SO}(3)$. The isomorphism $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ is standard.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="the-series-and-the-closed-form">The Series and the Closed Form</h3>
-<p><strong>Definition.</strong> For $x \in \mathbb{H}_{\mathbb{D}}$ the <strong>exponential</strong> is $\exp(x) = \sum_{n\geq0} x^n/n!$, and it converges for every $x$ because the algebra is finite-dimensional.</p>
-<p><strong>Theorem.</strong> $\exp$ commutes with the splitting: $\exp(x_+,x_-) = (\exp x_+, \exp x_-)$. For a quaternion $q = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in \mathrm{Im}\,\mathbb{H}$,</p>
+<p><strong>Definition.</strong> For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the <strong>exponential</strong> is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.</p>
+<p><strong>Theorem.</strong> $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $q = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in \mathrm{Im}\,\mathbb{H}$,</p>
 <p>$$
 \exp(q) = e^{a}\left(\cos|\mathbf{u}| + \frac{\mathbf{u}}{|\mathbf{u}|}\sin|\mathbf{u}|\right) , \qquad \mathbf{u} \neq 0 ,
 $$</p>
@@ -108,21 +108,21 @@ $$</p>
 <p><strong>Proof.</strong> $\hat{\mathbf{u}}^2 = -e_0$ gives the trigonometric form directly; and $(j\hat{\mathbf{u}})^2 = j^2\hat{\mathbf{u}}^2 = (+1)(-e_0) = -e_0$, so the same form applies to $j\hat{\mathbf{u}}$. Both elements have unit norm.</p>
 <p>The elliptic subgroups are the compact rotations: the group generated is a copy of $SO(2)$ in each case, and the two-sphere of roots of $-e_0$ in $\mathbb{M}_-$, namely the unit imaginary quaternions, parametrises them, as treated in <em>Split-Biquaternion Roots of Minus One</em>.</p>
 <h3 id="the-hyperbolic-subgroups">The Hyperbolic Subgroups</h3>
-<p><strong>Theorem.</strong> The central element $j$ satisfies $j^2 = +e_0$, and $e^{tj} = \cosh t\,e_0 + \sinh t\,j$ is a one-parameter subgroup of the units generated by $j$; any element $x$ with $x^2 = +e_0$ is one of $\pm e_0, \pm j$.</p>
-<p><strong>Proof.</strong> The series for $\exp(tj)$ splits into even and odd parts using $j^2 = e_0$. For the second statement, $x^2 = e_0$ in the components $x_\pm$ gives $x_\pm^2 = e_0$ in the quaternion division algebra $\mathbb{H}$, whose solutions are $x_\pm = \pm e_0$; hence $x$ is one of $(\pm 1, \pm 1)$, that is $\pm e_0$ or $\pm j$.</p>
+<p><strong>Theorem.</strong> The central element $j$ satisfies $j^2 = +e_0$, and $e^{tj} = \cosh t\,e_0 + \sinh t\,j$ is a one-parameter subgroup of the units generated by $j$; any element $\tilde Q$ with $\tilde Q^2 = +e_0$ is one of $\pm e_0, \pm j$.</p>
+<p><strong>Proof.</strong> The series for $\exp(tj)$ splits into even and odd parts using $j^2 = e_0$. For the second statement, $\tilde Q^2 = e_0$ in the components $\tilde Q_\pm$ gives $\tilde Q_\pm^2 = e_0$ in the quaternion division algebra $\mathbb{H}$, whose solutions are $\tilde Q_\pm = \pm e_0$; hence $\tilde Q$ is one of $(\pm 1, \pm 1)$, that is $\pm e_0$ or $\pm j$.</p>
 <p>The hyperbolic one-parameter subgroups are thus generated by the central element $j$, the compact ones by the imaginary quaternion directions of the two halves together with the Hermitian imaginary directions $j\hat{\mathbf{u}}$. The absence of nilpotent elements means there are no parabolic one-parameter subgroups inside the algebra, as recorded in <em>Split-Biquaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
 <p><strong>Theorem.</strong> Every nonzero $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ has a componentwise polar form</p>
 <p>$$
 \tilde{Q} = r_+ \hat{q}_+ \tilde\Pi_+ + r_- \hat{q}_- \tilde\Pi_- , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \hat{q}_\pm \in S^3 ,
 $$</p>
-<p>and every unit has an exponential parametrisation $\tilde{Q} = \exp(x)$ with $x = (x_+, x_-)$ and $x_\pm$ in the quaternion logarithm of $\tilde{Q}_\pm$.</p>
+<p>and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde P)$ with $\tilde P = (\tilde P_+, \tilde P_-)$ and $\tilde P_\pm$ in the quaternion logarithm of $\tilde{Q}_\pm$.</p>
 <p><strong>Proof.</strong> Apply the polar form and the logarithm of a nonzero quaternion in each half.</p>
 <p>Under this parametrisation the norm-one group is the exponential image of the traceless-with-unit-sign part, and the hyperbolic central factor is the exponential of the central line $\mathbb{R} j$. The partial failure of a single global polar form with a split complex scalar — as opposed to the componentwise form above — is exactly the zero divisor phenomenon.</p>
 <h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
 <p>In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple with Lie algebra $\mathrm{GL}(2,\mathbb{C})$, its group of units is $GL(2,\mathbb{C})$ of real dimension $8$, and the norm-one slice corresponds to $SL(2,\mathbb{C})$; the exponential is surjective onto $GL(2,\mathbb{C})$ and the compact retract is $U(2)$. In the split biquaternion case the algebra is the reductive Lie algebra $\mathbb{R}^2\oplus\mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$, the group of units is $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the norm-one group is the compact $S^3\times S^3$ rather than a non-compact $SL(2,\mathbb{C})$. The exponential is again surjective onto the units, with a kernel described componentwise. The compact/non-compact split is measured by the two factors: the biquaternion unit group is a complex group of dimension $8$ whose maximal compact subgroup is $U(2)$, while the split biquaternion unit group is the product of two copies of $SU(2)$ times two positive rays, and its maximal compact subgroup is $S^3\times S^3$. The elliptic and hyperbolic one-parameter subgroups both occur, the elliptic from the imaginary directions with square $-e_0$ and the hyperbolic from the central $j$ with square $+e_0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $e^{a}(\cos|\mathbf{u}| + \hat{\mathbf{u}}\sin|\mathbf{u}|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\hat{\mathbf{u}}$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\hat{\mathbf{u}}$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $x^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.</p>
+<p>The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $e^{a}(\cos|\mathbf{u}| + \hat{\mathbf{u}}\sin|\mathbf{u}|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\hat{\mathbf{u}}$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\hat{\mathbf{u}}$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $\tilde Q^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -137,7 +137,7 @@ $$</p>
 <td>Split biquaternion algebra</td>
 </tr>
 <tr>
-<td>$[x,y] = xy - yx$</td>
+<td>$[\tilde Q,\tilde P] = \tilde Q\tilde P - \tilde P\tilde Q$</td>
 <td>Commutator, the Lie bracket</td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ $$</p>
 <td>Reductive Lie algebra structure</td>
 </tr>
 <tr>
-<td>$\exp(x) = \sum x^n/n!$</td>
+<td>$\exp(\tilde Q) = \sum \tilde Q^n/n!$</td>
 <td>Exponential map</td>
 </tr>
 <tr>

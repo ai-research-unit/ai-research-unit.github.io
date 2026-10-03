@@ -60,7 +60,7 @@
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem.</strong> A quaternion $\tilde q\in\mathbb{H}$ satisfies $\tilde q^2 = -1$ if and only if $\tilde q$ is a pure imaginary quaternion with $N = 1$,</p>
 <p>$$
-\tilde q\in\operatorname{Im}\mathbb{H}\cap Sp(1) = \{x\in\operatorname{Im}\mathbb{H} : N(x) = 1\}.
+\tilde q\in\operatorname{Im}\mathbb{H}\cap Sp(1) = \{\tilde q\in\operatorname{Im}\mathbb{H} : N(\tilde q) = 1\}.
 $$</p>
 <p><em>Proof.</em> Write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_0\in\mathbb{R}$ and $\mathbf{q}\in\operatorname{Im}\mathbb{H}$. The square is</p>
 <p>$$
@@ -82,7 +82,7 @@ $$</p>
 <h2 id="the-classification">The Classification</h2>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
 <p><strong>Theorem.</strong> The root set $\Sigma = \{\xi : \xi^2 = -1\}$ is a single conjugacy class of the unit group $\mathbb{H}^{\times}$ under the adjoint action, and the map $\tilde q\mapsto \tilde q e_1\tilde q^{-1}$ is a surjection $Sp(1)\to\Sigma$ with fibres the cosets of the stabiliser $U(1)$ of $e_1$.</p>
-<p><em>Proof.</em> The adjoint action $\operatorname{Ad}_q(x) = qxq^{-1}$ of a unit quaternion preserves the imaginary subspace and the quaternion norm, hence carries $\Sigma$ to itself, and it is transitive on $\Sigma$: the transitivity of the adjoint action on the imaginary subspace is in <em>Quaternion Rotations and Reflections</em>. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $qe_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$.</p>
+<p><em>Proof.</em> The adjoint action $\operatorname{Ad}_{\tilde q}(\tilde p) = \tilde q\tilde p\tilde q^{-1}$ of a unit quaternion preserves the imaginary subspace and the quaternion norm, hence carries $\Sigma$ to itself, and it is transitive on $\Sigma$: the transitivity of the adjoint action on the imaginary subspace is in <em>Quaternion Rotations and Reflections</em>. Hence $\Sigma$ is one orbit, that is, one conjugacy class. The stabiliser of $e_1$ is the set of units with $\tilde q e_1\tilde q^{-1} = e_1$, namely the units commuting with $e_1$; the commutant of $e_1$ in $\mathbb{H}$ is the two-dimensional plane $\mathbb{R}\oplus\mathbb{R}e_1$, whose unit circle is $U(1) = \{e^{e_1\theta}\}$. The orbit is therefore $Sp(1)/U(1)$ as a set with a transitive action, and the fibres of the orbit map are the cosets of $U(1)$.</p>
 <h3 id="the-homogeneous-space">The Homogeneous Space</h3>
 <p><strong>Theorem.</strong> There is a canonical bijection of homogeneous spaces</p>
 <p>$$
@@ -95,7 +95,7 @@ $$</p>
 <h3 id="status-of-the-roots">Status of the Roots</h3>
 <p>Each root $\xi\in\Sigma$ is a unit quaternion, hence invertible, with $\xi^{-1} = \bar\xi = -\xi$. It generates a subalgebra $\mathbb{R}\oplus\mathbb{R}\xi\cong\mathbb{C}$ inside $\mathbb{H}$, and the square of $\xi$ is the scalar $-1$; this is the sense in which each root gives a copy of the complex numbers inside the quaternions. Distinct roots $\xi\neq\eta$ generate distinct, but conjugate, copies: there is a unit quaternion carrying one onto the other, although no quaternion commutes with two distinct roots except a real number.</p>
 <h2 id="the-relation-to-the-complex-structures-on-math108">The Relation to the Complex Structures on $\mathbb{R}^4$</h2>
-<p><strong>Definition.</strong> A <strong>complex structure</strong> on the real vector space $\mathbb{H}$ is a real-linear map $J : \mathbb{H}\to\mathbb{H}$ with $J^2 = -\mathrm{id}$. A complex structure $J$ is <strong>compatible with the quaternion structure</strong> if it is left multiplication by a root, $J = L_\xi$ with $\xi^2 = -1$, where $L_\xi(x) = \xi x$.</p>
+<p><strong>Definition.</strong> A <strong>complex structure</strong> on the real vector space $\mathbb{H}$ is a real-linear map $J : \mathbb{H}\to\mathbb{H}$ with $J^2 = -\mathrm{id}$. A complex structure $J$ is <strong>compatible with the quaternion structure</strong> if it is left multiplication by a root, $J = L_\xi$ with $\xi^2 = -1$, where $L_\xi(\tilde q) = \xi\tilde q$.</p>
 <p><strong>Theorem.</strong> For every $\xi\in\Sigma$ the operator $L_\xi$ of left multiplication by $\xi$ is a complex structure on $\mathbb{H}$, and the assignment $\xi\mapsto L_\xi$ is a bijection from $\Sigma$ onto the set of complex structures on $\mathbb{H}$ compatible with the quaternion structure.</p>
 <p><em>Proof.</em> Left multiplication is real-linear, and $L_\xi^2 = L_{\xi^2} = L_{-1} = -\mathrm{id}$ because $\xi^2 = -1$. Conversely, if $L_\xi = L_\eta$ then $\xi = L_\xi(1) = L_\eta(1) = \eta$, so the map is injective.</p>
 <p><strong>Proposition.</strong> The three elements $e_1,e_2,e_3$ give three complex structures $I_1,I_2,I_3$ satisfying the quaternion relations</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>The root set of $-1$ grows as soon as the coefficient field is enlarged, and the enlargement is the measure of how far the algebra has moved from the division case.</p>
 <p><strong>Proposition.</strong> In the split quaternion algebra $\mathbb{H}_{\mathrm{s}}$, with basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1e_2$, the solutions of $\xi^2 = -1$ are the points of the level set $N = 1$</p>
 <p>$$
-x_1^2 - x_2^2 - x_3^2 = 1, \qquad \xi = x_1e_1+x_2e_2+x_3e_3 ,
+q_1^2 - q_2^2 - q_3^2 = 1, \qquad \xi = q_1e_1+q_2e_2+q_3e_3 ,
 $$</p>
 <p>a set of dimension two rather than a surface of higher dimension.</p>
 <p>The derivation is in <em>Split-Quaternion Roots of Minus One</em>, where the split quaternion algebra is treated; only the comparison is recorded here.</p>
@@ -135,8 +135,8 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathrm{s}}$</td>
-<td>the level set $x_1^2-x_2^2-x_3^2 = 1$ (in $x_0 = 0$)</td>
-<td>the level set $x_2^2+x_3^2-x_1^2 = 1$ (in $x_0 = 0$), together with $\pm1$</td>
+<td>the level set $q_1^2-q_2^2-q_3^2 = 1$ (in $q_0 = 0$)</td>
+<td>the level set $q_2^2+q_3^2-q_1^2 = 1$ (in $q_0 = 0$), together with $\pm1$</td>
 </tr>
 <tr>
 <td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
@@ -200,7 +200,7 @@ $$</p>
 <td>Root set as a homogeneous space</td>
 </tr>
 <tr>
-<td>$L_\xi(x) = \xi x$</td>
+<td>$L_\xi(\tilde q) = \xi\tilde q$</td>
 <td>Complex structure of left multiplication by a root</td>
 </tr>
 <tr>

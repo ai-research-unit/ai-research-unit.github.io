@@ -77,7 +77,7 @@ $$</p>
 \|\tilde{Q}\tilde{R}\|_E\leq\sqrt{2}\,\|\tilde{Q}\|_E\|\tilde{R}\|_E,
 $$</p>
 <p>and the constant $\sqrt{2}$ cannot be lowered.</p>
-<p><strong>Proof.</strong> Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Element Representation</em>, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{X})\|_F=\sqrt2\|\tilde{X}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm (<em>The Forms in the Matrix Representation of the Biquaternion Algebra</em>, §<em>The Inner Product as the Hilbert–Schmidt Pairing</em>). The Frobenius norm is submultiplicative, so
+<p><strong>Proof.</strong> Under the algebra isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ of <em>Biquaternion 2×2 Matrix Element Representation</em>, which is a linear isometry up to the factor $\sqrt2$, one has $\|\Phi(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm (<em>The Forms in the Matrix Representation of the Biquaternion Algebra</em>, §<em>The Inner Product as the Hilbert–Schmidt Pairing</em>). The Frobenius norm is submultiplicative, so
 $$
 \sqrt2\,\|\tilde{Q}\tilde{R}\|_E=\|\Phi(\tilde{Q})\Phi(\tilde{R})\|_F\leq\|\Phi(\tilde{Q})\|_F\|\Phi(\tilde{R})\|_F=2\|\tilde{Q}\|_E\|\tilde{R}\|_E,
 $$
@@ -86,11 +86,11 @@ which is the inequality. For sharpness take $\tilde{Q}=\tilde{R}=e_0+ie_1$: then
 <p><strong>Proof.</strong> The inequality bounds the product in terms of the factors; inversion is $N(\tilde{Q})^{-1}\tilde{Q}^{\natural}$-based and $N^{-1}$ is continuous off the closed null cone, so the standard arguments apply; the group axioms with continuous operations give a topological group.</p>
 <p><strong>Proposition (the isometries that the algebra supplies).</strong> Multiplication by a central element and the conjugations are orthogonal:</p>
 <p>$$
-\|(z e_0)\tilde{Q}\|_E=|z|\,\|\tilde{Q}\|_E,\qquad
+\|(A e_0)\tilde{Q}\|_E=|A|\,\|\tilde{Q}\|_E,\qquad
 \|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
 $$</p>
-<p>Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{X})=\tilde{U}\tilde{X}\tilde{U}^{*}$ is a Euclidean isometry.</p>
-<p><strong>Proof.</strong> A central multiplier scales every coefficient by $z$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.</p>
+<p>Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{T})=\tilde{U}\tilde{T}\tilde{U}^{*}$ is a Euclidean isometry.</p>
+<p><strong>Proof.</strong> A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\Phi$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.</p>
 <h2 id="the-contractibility-of-the-algebra">The Contractibility of the Algebra</h2>
 <p><strong>Theorem.</strong> $\mathbb{B}$ is contractible; hence it is path-connected and simply connected, with $\pi_n(\mathbb{B})=0$ for every $n\geq1$.</p>
 <p><strong>Proof.</strong> The straight-line homotopy $H(t,\tilde{Q})=(1-t)\tilde{Q}$, $t\in[0,1]$, is jointly continuous with $H(0,\cdot)=\mathrm{id}$ and $H(1,\cdot)\equiv0$, so the identity is homotopic to a constant map.</p>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Multiplication — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-multiplication"><strong>Biquaternion Multiplication</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article defines the <strong>product</strong> of two biquaternions and studies the two halves into which it splits. The product of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the complex-linear extension of the quaternion product. It is associative and unital; it is not commutative, and its failure of commutativity is not arbitrary, because the antisymmetric part of the product is the complex cross product of the two vector parts.</p>
+<p>The product of two biquaternions is always the sum of its symmetric and its antisymmetric part,</p>
+<p>$$
+\tilde{P}\tilde{Q} = \tilde{P}\circ\tilde{Q} + \tilde{P}\wedge\tilde{Q} ,
+$$</p>
+<p>and the two parts are of different kinds. The antisymmetric part is a <strong>pure vector</strong> and makes the algebra a Lie algebra, with the vector subspace as its derived subspace. The symmetric part carries all of the scalar and the mixed scalar–vector terms, and it makes the Hermitian subspace a Jordan algebra. Neither half is a Clifford grade: the split is by order symmetry, not by grade, and the two splits do not coincide.</p>
+<p>The article assumes the elements, the basis and the conjugations from <em>Biquaternion Algebra</em> and <em>Different Ways to Consider Biquaternions</em>, and it defines no form. The graded and Clifford reading of the product is <em>The Clifford Structure of the Biquaternion Algebra</em>; the behaviour of the product, the commutator and the symmetrized product on each of the six subspaces is tabulated in <em>Biquaternion Relations Between Subspaces</em>; the bracket as a Lie algebra is <em>Biquaternion Lie Algebra</em>; the operators $L_{\tilde{P}}$ and $R_{\tilde{P}}$ are <em>The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; and the basis products written out one by one are <em>Worked Examples in the Biquaternion Algebra</em>.</p>
+<p>Throughout, the product of two elements is written by juxtaposition, $\tilde{P}\tilde{Q}$, and $\tilde{P}=P_0+\mathbf{P}$ separates the complex scalar part $P_0$ from the complex vector part $\mathbf{P}=P_1e_1+P_2e_2+P_3e_3$.</p>
+<h2 id="the-product">The Product</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>biquaternion product</strong> is the $\mathbb{C}$-bilinear extension of the quaternion product of the units:</p>
+<p>$$
+e_1e_2 = e_3, \qquad e_2e_3 = e_1, \qquad e_3e_1 = e_2, \qquad e_1^2 = e_2^2 = e_3^2 = -e_0,
+$$</p>
+<p>with central scalar imaginary $i$, $i^2=-1$. In developed form the product of $\tilde{P}=\sum_\mu P_\mu e_\mu$ and $\tilde{Q}=\sum_\nu Q_\nu e_\nu$ is</p>
+<p>$$
+\tilde{P}\tilde{Q} = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} P_\mu Q_\nu \, e_\mu e_\nu .
+$$</p>
+<p>The product is $\mathbb{C}$-bilinear, associative and unital, with unit $e_0$; it is not commutative. The unit relations above are those of <em>Biquaternion Algebra</em> and of the quaternion algebra, extended complex-linearly.</p>
+<h3 id="the-scalarvector-form">The Scalar–Vector Form</h3>
+<p>Write $\tilde{P}=P_0+\mathbf{P}$ and $\tilde{Q}=Q_0+\mathbf{Q}$. Expanding the product by the graded pieces of the two factors, the scalar parts contribute scalars, the two mixed products contribute vectors, and the product of the two vector parts is again a sum of a scalar and a vector. The result is</p>
+<p>$$
+\tilde{P}\tilde{Q} = P_0Q_0 - (\mathbf{P},\mathbf{Q}) + P_0\mathbf{Q} + Q_0\mathbf{P} + \mathbf{P}\times\mathbf{Q} ,
+$$</p>
+<p>where</p>
+<p>$$
+(\mathbf{P},\mathbf{Q}) = \sum_{k=1}^{3} P_kQ_k , \qquad
+\mathbf{P}\times\mathbf{Q} = (P_2Q_3-P_3Q_2)e_1 + (P_3Q_1-P_1Q_3)e_2 + (P_1Q_2-P_2Q_1)e_3 .
+$$</p>
+<p>The two pairings are the <strong>complex bilinear dot product</strong> and the <strong>complex bilinear cross product</strong>. They are $\mathbb{C}$-bilinear, and they reduce to the ordinary dot and cross products when the coefficients are real. The formula has the same shape as the quaternion product — a scalar part, a mixed vector part and a cross-product vector part — with the single difference that the coefficients are complex.</p>
+<h3 id="remark-the-other-products-of-the-literature">Remark (the Other Products of the Literature)</h3>
+<p>The word <em>product</em> on $\mathbb{B}$ does not always mean the Hamilton product above. The <em>chiral algebra</em> of <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em> uses, alongside the Hamilton product, a <strong>Pauli-type</strong> product on the vector parts, $\mathbf{u}_1\cdot\mathbf{u}_2 + i\,\mathbf{u}_1\times\mathbf{u}_2$, whose dot term has the opposite sign to the dot term of this article and whose cross term is the ordinary cross product multiplied by the central $i$ (so a grade-one object where this article has a grade-two one); when that product is used, its conventions must be read from the article that introduces it, not from here. There is also a clash of names: the <em>outer product</em> $\odot$ of that chiral algebra is the full product, whereas the <strong>outer product</strong> $\tilde{P}\wedge\tilde{Q}$ of this article is only its antisymmetric part.</p>
+<h2 id="the-symmetric-part">The Symmetric Part</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>symmetric part</strong>, also called the <strong>symmetrized product</strong> or the <strong>Jordan product</strong>, of two biquaternions is</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} := \tfrac{1}{2}\bigl(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}\bigr).
+$$</p>
+<p>In scalar–vector notation the antisymmetric terms of the product cancel and the mixed terms double:</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} = \bigl(P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr) + P_0\mathbf{Q} + Q_0\mathbf{P} .
+$$</p>
+<p>The symmetrized product is commutative and $\mathbb{C}$-bilinear, and it agrees with the ordinary square on the diagonal:</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} = \tilde{Q}\circ\tilde{P} , \qquad \tilde{P}\circ\tilde{P} = \tilde{P}^2 .
+$$</p>
+<h3 id="it-is-the-polarisation-of-the-square">It Is the Polarisation of the Square</h3>
+<p><strong>Proposition.</strong> The symmetrized product is the polarisation of the square:</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} = \tfrac{1}{2}\Bigl((\tilde{P}+\tilde{Q})^2 - \tilde{P}^2 - \tilde{Q}^2\Bigr).
+$$</p>
+<p><strong>Proof.</strong> Expand $(\tilde{P}+\tilde{Q})^2=\tilde{P}^2+\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}+\tilde{Q}^2$ by bilinearity and divide by two.</p>
+<p>The identity is the reason the symmetrized product, not the full product, is the product of the square: $\tilde{P}\circ\tilde{P}=\tilde{P}^2$, and the symmetric part of $\tilde{P}\tilde{Q}$ is exactly the term that a squaring process can see. Directly,</p>
+<p>$$
+\tilde{P}^2 = \bigl(P_0^2-(\mathbf{P},\mathbf{P})\bigr) + 2P_0\mathbf{P} ,
+$$</p>
+<p>which is a scalar plus a scalar multiple of $\mathbf{P}$ and contains no cross-product term. Every square-root problem $\xi^2=\tilde{Q}$ is therefore a problem in the symmetric part alone, and the outer product plays no part in <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> and <em>Biquaternion Square Roots of a General Element</em>.</p>
+<h3 id="it-is-a-jordan-product">It Is a Jordan Product</h3>
+<p><strong>Theorem.</strong> With the product $\circ$, the algebra $\mathbb{B}$ is a commutative Jordan algebra: $\circ$ is commutative and bilinear, and the Jordan identity</p>
+<p>$$
+(\tilde{P}\circ\tilde{Q})\circ\tilde{P}^2 = \tilde{P}\circ\bigl(\tilde{Q}\circ\tilde{P}^2\bigr)
+$$</p>
+<p>holds for all $\tilde{P},\tilde{Q}$.</p>
+<p><strong>Proof.</strong> The product of an associative algebra satisfies the Jordan identity for the symmetrized product, by the associativity of the underlying product; commutativity and bilinearity are built into the definition. The general theory is <em>Jordan Algebras</em>.</p>
+<p>Two consequences follow. First, the Hermitian subspace $\mathbb{M}_+$ is closed under $\circ$: for $\tilde{P},\tilde{Q}\in\mathbb{M}_+$ the product $\tilde{P}\circ\tilde{Q}$ is again Hermitian, so $\mathbb{M}_+$ is a Jordan subalgebra of $\mathbb{B}$. Second, the scalar part of the symmetrized product is the scalar bilinear form read on the pair,</p>
+<p>$$
+\mathrm{Sc}(\tilde{P}\circ\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0-(\mathbf{P},\mathbf{Q}),
+$$</p>
+<p>since the commutator has no scalar part. It is the scalar bilinear form $B(\tilde{P},\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q})$ of <em>Association and the Transpose on the Biquaternion Algebra</em>, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$, the companion of the polarisation $N(\tilde{P},\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$ of the norm.</p>
+<h2 id="the-antisymmetric-part">The Antisymmetric Part</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>antisymmetric part</strong> of the product, or <strong>outer product</strong>, is</p>
+<p>$$
+\tilde{P}\wedge\tilde{Q} := \tfrac{1}{2}\bigl(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}\bigr).
+$$</p>
+<p>In scalar–vector notation the scalar parts cancel and the mixed terms too, leaving the cross product of the vector parts:</p>
+<p>$$
+\tilde{P}\wedge\tilde{Q} = \mathbf{P}\times\mathbf{Q} .
+$$</p>
+<p>The outer product is <strong>alternating</strong> and $\mathbb{C}$-bilinear, and it is skew:</p>
+<p>$$
+\tilde{P}\wedge\tilde{P} = 0 , \qquad \tilde{P}\wedge\tilde{Q} = -\,\tilde{Q}\wedge\tilde{P} .
+$$</p>
+<p>Its value is a pure vector: the scalar part of $\tilde{P}\wedge\tilde{Q}$ vanishes, for every pair of biquaternions, not only for vector-like ones. The commutator is twice the outer product,</p>
+<p>$$
+[\tilde{P},\tilde{Q}] := \tilde{P}\tilde{Q}-\tilde{Q}\tilde{P} = 2\,\mathbf{P}\times\mathbf{Q} = 2\,\tilde{P}\wedge\tilde{Q} .
+$$</p>
+<h3 id="the-commutativity-criterion">The Commutativity Criterion</h3>
+<p>Because the right-hand side of the outer product depends on the vector parts alone, the vanishing of the commutator is a criterion:</p>
+<p>$$
+\tilde{P}\tilde{Q} = \tilde{Q}\tilde{P} \quad\Longleftrightarrow\quad \mathbf{P}\times\mathbf{Q} = 0 .
+$$</p>
+<p>The cross product of two complex vectors vanishes exactly when the vectors are <strong>linearly dependent</strong>, so two biquaternions commute if and only if their vector parts are parallel. In particular a central element $\tilde{P}=P_0e_0$ commutes with every biquaternion, since its vector part is zero; the converse holds, so this recovers the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ as the set of elements that commute with all of $\mathbb{B}$.</p>
+<h3 id="it-is-a-lie-bracket">It Is a Lie Bracket</h3>
+<p>The commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$ is bilinear, alternating and, by the associativity of the product, satisfies the Jacobi identity; it makes $\mathbb{B}$ a Lie algebra over $\mathbb{C}$. Its image is the kernel of the scalar part, $[\mathbb{B},\mathbb{B}]=\mathrm{Vect}(\mathbb{B})$, the six-dimensional vector subspace, which is therefore the derived subspace; and on pure vectors the bracket is twice the cross product, $[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}$. The trace functional, the trace-free part, the real form and the adjoint maps are <em>Biquaternion Lie Algebra</em>; here only the identity $[\tilde{P},\tilde{Q}]=2\tilde{P}\wedge\tilde{Q}$ with the outer product is recorded.</p>
+<p>Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the outer product is the Clifford outer product of the algebra, and it reads back on the vector parts as the cross product; the identity and the naming consequences are in <em>The Clifford Structure of the Biquaternion Algebra</em>.</p>
+<h3 id="the-closure-of-the-two-sectors">The Closure of the Two Sectors</h3>
+<p>The two halves of the product behave differently with respect to the Hermitian split, and the pattern is worth recording here because it is the origin of the Lie and Jordan structures of the algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde{P},\tilde{Q}$</th>
+<th>$\tilde{P}\wedge\tilde{Q}$</th>
+<th>$\tilde{P}\circ\tilde{Q}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{M}_+$ (Hermitian)</td>
+<td>lies in $\mathbb{M}_-$</td>
+<td>lies in $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$ (anti-Hermitian)</td>
+<td>lies in $\mathbb{M}_-$</td>
+<td>lies in $\mathbb{M}_+$</td>
+</tr>
+</tbody>
+</table></div>
+<p>That is, the antisymmetric part closes on the anti-Hermitian subspace and carries the Hermitian one into it, so $\mathbb{M}_-$ is a Lie subalgebra; the symmetric part closes on the Hermitian subspace, so $\mathbb{M}_+$ is a Jordan subalgebra. The full subspace-by-subspace table, with the centre, the vector subspace, the quaternion subspace and the anti-quaternion subspace, is <em>Biquaternion Relations Between Subspaces</em>.</p>
+<h2 id="the-two-parts-together">The Two Parts Together</h2>
+<h3 id="the-split-is-by-symmetry-not-by-grade">The Split Is by Symmetry, Not by Grade</h3>
+<p>The product is the sum of its two halves,</p>
+<p>$$
+\tilde{P}\tilde{Q} = \tilde{P}\circ\tilde{Q} + \tilde{P}\wedge\tilde{Q} ,
+$$</p>
+<p>and the two halves are read in coordinates as</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>part</th>
+<th>scalar part</th>
+<th>vector part</th>
+<th>symmetry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{P}\circ\tilde{Q}$</td>
+<td>$P_0Q_0-(\mathbf{P},\mathbf{Q})$</td>
+<td>$P_0\mathbf{Q}+Q_0\mathbf{P}$</td>
+<td>symmetric, $\tilde{P}\circ\tilde{Q}=\tilde{Q}\circ\tilde{P}$</td>
+</tr>
+<tr>
+<td>$\tilde{P}\wedge\tilde{Q}$</td>
+<td>$0$</td>
+<td>$\mathbf{P}\times\mathbf{Q}$</td>
+<td>antisymmetric, $\tilde{P}\wedge\tilde{Q}=-\tilde{Q}\wedge\tilde{P}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The antisymmetric part is pure vector and the symmetric part carries the scalar plus the mixed terms. This split is not the Clifford grade split: in the geometric reading the outer product mixes grades, since the complex vector $\mathbf{P}\times\mathbf{Q}$ carries both a grade-one and a grade-two real part. The grade dictionary is <em>The Clifford Structure of the Biquaternion Algebra</em>.</p>
+<h3 id="the-operator-reading">The Operator Reading</h3>
+<p>The two halves are the balanced and the unbalanced one-sided multiplications. With $L_{\tilde{P}}(\tilde{Q})=\tilde{P}\tilde{Q}$ and $R_{\tilde{P}}(\tilde{Q})=\tilde{Q}\tilde{P}$ the left and right multiplications by $\tilde{P}$,</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} = \tfrac{1}{2}\bigl(L_{\tilde{P}}+R_{\tilde{P}}\bigr)(\tilde{Q}) , \qquad \tilde{P}\wedge\tilde{Q} = \tfrac{1}{2}\bigl(L_{\tilde{P}}-R_{\tilde{P}}\bigr)(\tilde{Q}) .
+$$</p>
+<p>The antisymmetric combination $L_{\tilde{P}}-R_{\tilde{P}}$ is the inner derivation $\mathrm{ad}_{\tilde{P}}=L_{\tilde{P}}-R_{\tilde{P}}$ of the algebra, so the outer product is the derivation up to the factor $\tfrac12$, and the symmetric combination $L_{\tilde{P}}+R_{\tilde{P}}$ is twice the symmetrized multiplication by $\tilde{P}$. The operators themselves are <em>The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, and their spectra are <em>The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<h3 id="worked-example">Worked Example</h3>
+<p>Take $\tilde{P}=e_0+e_1$ and $\tilde{Q}=e_2$, so that $P_0=1$, $\mathbf{P}=e_1$, $Q_0=0$ and $\mathbf{Q}=e_2$. The dot product vanishes, $(\mathbf{P},\mathbf{Q})=0$, and the cross product is $\mathbf{P}\times\mathbf{Q}=e_1\times e_2=e_3$. Hence</p>
+<p>$$
+\tilde{P}\circ\tilde{Q} = (1\cdot 0-0)+1\cdot e_2+0\cdot e_1 = e_2 , \qquad \tilde{P}\wedge\tilde{Q} = e_3 , \qquad \tilde{P}\tilde{Q} = e_2+e_3 .
+$$</p>
+<p>Interchanging the factors changes the sign of the outer product and leaves the symmetric part unchanged,</p>
+<p>$$
+\tilde{Q}\tilde{P} = e_2-e_3 , \qquad \tilde{Q}\circ\tilde{P} = e_2 , \qquad \tilde{Q}\wedge\tilde{P} = -e_3 ,
+$$</p>
+<p>so $\tilde{P}\tilde{Q}\neq \tilde{Q}\tilde{P}$ while $\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P} = 2e_2 = 2(\tilde{P}\circ\tilde{Q})$, and the difference is $\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}=2e_3=2(\tilde{P}\wedge\tilde{Q})$, in agreement with the identities above.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion product is the complex-linear extension of the quaternion product; it is associative and unital, and not commutative. It always splits into a symmetric and an antisymmetric part,</p>
+<p>$$
+\tilde{P}\tilde{Q} = \tilde{P}\circ\tilde{Q} + \tilde{P}\wedge\tilde{Q} , \qquad \tilde{P}\circ\tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}) , \qquad \tilde{P}\wedge\tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}) .
+$$</p>
+<p>The <strong>antisymmetric part</strong> is the complex cross product of the vector parts, $\tilde{P}\wedge\tilde{Q}=\mathbf{P}\times\mathbf{Q}$; it is alternating, pure vector, and vanishes exactly when the vector parts are linearly dependent, which is the commutativity criterion. Twice the outer product is the commutator, $[\tilde{P},\tilde{Q}]=2\tilde{P}\wedge\tilde{Q}$; the commutator makes $\mathbb{B}$ a Lie algebra with derived subspace the vector subspace $\mathrm{Vect}(\mathbb{B})$, and under the Clifford identification the outer product is the Clifford outer product of the algebra.</p>
+<p>The <strong>symmetric part</strong> is $\mathbb{C}$-bilinear and commutative, it agrees with the square on the diagonal, $\tilde{P}\circ\tilde{P}=\tilde{P}^2$, and it is the polarisation of the square, $\tilde{P}\circ\tilde{Q}=\tfrac{1}{2}((\tilde{P}+\tilde{Q})^2-\tilde{P}^2-\tilde{Q}^2)$. It makes $\mathbb{B}$ a Jordan algebra; its scalar part is the scalar bilinear form $\mathrm{Sc}(\tilde{P}\circ\tilde{Q})=\mathrm{Sc}(\tilde{P}\tilde{Q})=P_0Q_0-(\mathbf{P},\mathbf{Q})$; it contains all the powers and hence all the square-root problems; and it closes on the Hermitian subspace, which is a Jordan subalgebra. The antisymmetric part closes on the anti-Hermitian subspace, which is a Lie subalgebra.</p>
+<p>Read on the operators, the symmetric part is the balanced multiplication $\tfrac{1}{2}(L_{\tilde{P}}+R_{\tilde{P}})$ and the antisymmetric part the derivation $\tfrac{1}{2}(L_{\tilde{P}}-R_{\tilde{P}})=\tfrac{1}{2}\mathrm{ad}_{\tilde{P}}$. The split is by order symmetry, not by Clifford grade.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{P}\tilde{Q}$</td>
+<td>the biquaternion product</td>
+</tr>
+<tr>
+<td>$\tilde{P}=P_0+\mathbf{P}$</td>
+<td>scalar part plus vector part</td>
+</tr>
+<tr>
+<td>$(\mathbf{P},\mathbf{Q})$</td>
+<td>the complex bilinear dot product, $\sum_k P_kQ_k$</td>
+</tr>
+<tr>
+<td>$\mathbf{P}\times\mathbf{Q}$</td>
+<td>the complex bilinear cross product</td>
+</tr>
+<tr>
+<td>$\tilde{P}\circ\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$</td>
+<td>the symmetric or symmetrized (Jordan) product</td>
+</tr>
+<tr>
+<td>$\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})$</td>
+<td>the antisymmetric part, or outer product</td>
+</tr>
+<tr>
+<td>$[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$</td>
+<td>the commutator, $2\,\tilde{P}\wedge\tilde{Q}$</td>
+</tr>
+<tr>
+<td>$L_{\tilde{P}}$, $R_{\tilde{P}}$</td>
+<td>left and right multiplications by $\tilde{P}$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde{P}}$</td>
+<td>the inner derivation $L_{\tilde{P}}-R_{\tilde{P}}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, the derived subspace $[\mathbb{B},\mathbb{B}]$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part of an element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original product that is extended here.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the outer product as the antisymmetric part of a Clifford product.</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the cross-product form of the outer product and the grade correspondence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

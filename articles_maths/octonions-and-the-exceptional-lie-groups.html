@@ -54,24 +54,24 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is the second half of the representations slot of the octonion system. It describes how the exceptional Lie groups are built out of the octonion algebra: the derivation algebra and the automorphism group $G_2$ directly, the group $F_4$ as the automorphism group of the exceptional Jordan algebra of Hermitian $3\times3$ matrices over $\mathbb{O}$, the groups $E_6$, $E_7$ and $E_8$ from the Freudenthal triple systems and from the magic square, and the associated geometries. The article is a construction of these objects from the octonions, not a classification of them: the classification of the simple Lie algebras and of the simple Lie groups is that of the Part I companions <em>Root Systems and Classification</em> and <em>Finite Simple Groups of Lie Type</em>, and it is cited and not re-derived here.</p>
 <p>The article takes the multiplication, the Fano rule and the associator from <em>Octonion Algebra</em>, the norm and the inner product from <em>Octonion Norm and Invertibility</em>, and the representations of $\mathrm{G}_2$ and the triality of $\operatorname{Spin}(8)$ from <em>Octonion Element Representations</em>. The exceptional Jordan algebra and the magic square are standard constructions; their sources are listed in the Further Reading. The geometry built on the exceptional groups, and the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ of Part II, are not covered here.</p>
-<p><strong>Conventions.</strong> As in <em>Octonion Algebra</em>, the basis is $e_0,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, the Fano lines oriented as in that article, the conjugation $x^{\natural}$, the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, the inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$ and the cross product $u\times v = \operatorname{Vect}(uv)$ on the imaginary space. The operators $L_x,R_x$ are left and right multiplication; the commutator of endomorphisms is written $[A,B] = AB - BA$, so that the associator and the commutator are distinct notations and must not be confused.</p>
+<p><strong>Conventions.</strong> As in <em>Octonion Algebra</em>, the basis is $e_0,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, the Fano lines oriented as in that article, the conjugation $\tilde o^{\natural}$, the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, the inner product $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$ and the cross product $u\times v = \operatorname{Vect}(uv)$ on the imaginary space. The operators $L_{\tilde o},R_{\tilde o}$ are left and right multiplication; the commutator of endomorphisms is written $[A,B] = AB - BA$, so that the associator and the commutator are distinct notations and must not be confused.</p>
 <h2 id="the-automorphism-group-and-the-derivation-algebra">The Automorphism Group and the Derivation Algebra</h2>
 <h3 id="the-derivations">The Derivations</h3>
 <p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathbb{O}$ is a linear map $d : \mathbb{O}\to\mathbb{O}$ with</p>
 <p>$$
-d(xy) = (dx)y + x(dy) \qquad \text{for all }x,y\in\mathbb{O},
+d(\tilde o\tilde p) = (d\tilde o)\tilde p + \tilde o(d\tilde p) \qquad \text{for all }\tilde o,\tilde p\in\mathbb{O},
 $$</p>
 <p>and $\operatorname{Der}(\mathbb{O})$ is the space of all derivations, a Lie subalgebra of $\operatorname{End}(\mathbb{O})$ under the commutator.</p>
-<p><strong>Theorem.</strong> For imaginary $x,y\in\mathbb{O}$ the endomorphism</p>
+<p><strong>Theorem.</strong> For imaginary $\tilde o,\tilde p\in\mathbb{O}$ the endomorphism</p>
 <p>$$
-D_{x,y} = [L_x,L_y] + [L_x,R_y] + [R_x,R_y]
+D_{\tilde o,\tilde p} = [L_{\tilde o},L_{\tilde p}] + [L_{\tilde o},R_{\tilde p}] + [R_{\tilde o},R_{\tilde p}]
 $$</p>
 <p>is a derivation of $\mathbb{O}$, and the derivations $D_{e_i,e_j}$ for $1\leq i,j\leq 7$ span a real vector space of dimension fourteen. Hence</p>
 <p>$$
 \operatorname{Der}(\mathbb{O}) = \operatorname{span}\{D_{e_i,e_j} : 1\leq i,j\leq 7\}
 $$</p>
 <p>is the exceptional simple Lie algebra $\mathrm{G}_2$, and it is contained in $\mathrm{SO}(7)$, acting trivially on $e_0$ and irreducibly on $\operatorname{Im}\mathbb{O}$.</p>
-<p><em>Proof.</em> The verification that each $D_{x,y}$ satisfies the Leibniz rule is finite and is carried out on the basis with the Fano rule; the spanning statement is a linear computation on the $49$ operators $D_{e_i,e_j}$, whose rational rank is fourteen. That the resulting algebra is the exceptional algebra $\mathrm{G}_2$ of rank two is the standard identification, with the standard sources cited; the vanishing on $e_0$ is $D_{x,y}e_0 = x y + xy - yx - xy - xy + yx$ expanded from the definition, which is zero, and skew-adjointness follows from the derivation of the identity $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$.</p>
+<p><em>Proof.</em> The verification that each $D_{\tilde o,\tilde p}$ satisfies the Leibniz rule is finite and is carried out on the basis with the Fano rule; the spanning statement is a linear computation on the $49$ operators $D_{e_i,e_j}$, whose rational rank is fourteen. That the resulting algebra is the exceptional algebra $\mathrm{G}_2$ of rank two is the standard identification, with the standard sources cited; the vanishing on $e_0$ is $D_{\tilde o,\tilde p}e_0 = \tilde o \tilde p + \tilde o\tilde p - \tilde p\tilde o - \tilde o\tilde p - \tilde o\tilde p + \tilde p\tilde o$ expanded from the definition, which is zero, and skew-adjointness follows from the derivation of the identity $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$.</p>
 <h3 id="the-group-math42">The Group $G_2$</h3>
 <p><strong>Theorem.</strong> The automorphism group $\operatorname{Aut}(\mathbb{O})$ is a compact, connected, simply connected simple Lie group $G_2$ of dimension fourteen, with Lie algebra $\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$, and it acts transitively on the unit sphere of the imaginary space with isotropy a copy of $SU(3)$:</p>
 <p>$$
@@ -90,15 +90,15 @@ $$</p>
 <h3 id="hermitian-matrices-over-the-octonions">Hermitian Matrices over the Octonions</h3>
 <p><strong>Definition.</strong> The <strong>exceptional Jordan algebra</strong> is the real vector space</p>
 <p>$$
-\mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & x & y\\ x^{\natural} & \beta & z\\ y^{\natural} & z^{\natural} & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ x,y,z\in\mathbb{O},
+\mathrm{H}_3(\mathbb{O}) = \left\{A\in M_3(\mathbb{O}) : A^* = A\right\}, \qquad A = \begin{pmatrix}\alpha & \tilde o & \tilde p\\ \tilde o^{\natural} & \beta & \tilde r\\ \tilde p^{\natural} & \tilde r^{\natural} & \gamma\end{pmatrix}, \quad \alpha,\beta,\gamma\in\mathbb{R},\ \tilde o,\tilde p,\tilde r\in\mathbb{O},
 $$</p>
 <p>with the symmetrised product $A\circ B = \tfrac{1}{2}(AB + BA)$.</p>
 <p><strong>Proposition.</strong> $\mathrm{H}_3(\mathbb{O})$ is a real vector space of dimension $3 + 3\cdot 8 = 27$; the product $\circ$ is commutative and satisfies the Jordan identity $(A\circ B)\circ(A\circ A) = A\circ(B\circ(A\circ A))$, and the algebra is <strong>exceptional</strong>, that is, it is not isomorphic to a subalgebra of an associative algebra with the symmetrised product.</p>
 <p><em>Proof.</em> The dimension count is immediate: three real diagonal entries and three octonion off-diagonal entries, the conjugate entries determined. The Jordan identity is the standard theorem on Hermitian matrices over a composition algebra, verified by a finite expansion using the alternating property of the associator; exceptionality is the theorem of Albert, quoted as standard.</p>
-<p>The product $\circ$ requires the two octonion products $xy$ and $yx$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.</p>
+<p>The product $\circ$ requires the two octonion products $\tilde o\tilde p$ and $\tilde p\tilde o$ and is well defined although the individual products $AB$ and $BA$ of the matrices depend on the bracketing: the symmetrisation and the Hermitian symmetry together kill the associator terms.</p>
 <p><strong>Definition.</strong> The <strong>determinant</strong> of $A\in\mathrm{H}_3(\mathbb{O})$ is the real cubic form</p>
 <p>$$
-\det A = \alpha\beta\gamma + 2\operatorname{Sc}(xyz) - \alpha\lvert z\rvert^2 - \beta\lvert y\rvert^2 - \gamma\lvert x\rvert^2 ,
+\det A = \alpha\beta\gamma + 2\operatorname{Sc}(\tilde o\tilde p\tilde r) - \alpha\lvert \tilde r\rvert^2 - \beta\lvert \tilde p\rvert^2 - \gamma\lvert \tilde o\rvert^2 ,
 $$</p>
 <p>and the <strong>trace</strong> is $\operatorname{tr}A = \alpha + \beta + \gamma$.</p>
 <p><strong>Theorem.</strong> The determinant is invariant under the product in the sense of the identities of a Jordan algebra of degree three, and its polarisation defines a non-degenerate symmetric trilinear form on $\mathrm{H}_3(\mathbb{O})$; the group of linear transformations preserving the determinant is</p>
@@ -107,7 +107,7 @@ F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O})) = \left\{g\in GL_{27}(\mathbb
 $$</p>
 <p>a compact, connected, simply connected simple Lie group of dimension $52$ and rank four.</p>
 <p><em>Proof.</em> The determinants of the three principal $2\times2$ minors together with $\det$ give the structure of a cubic Jordan algebra; closedness under the inverse and the identities are the standard ones of a Jordan algebra of degree three, verified by expansion. The identification of the automorphism group with the compact $F_4$ and the dimension count $\dim F_4 = 52$ are the standard theorem of Chevalley and Schafer, quoted with the sources cited.</p>
-<p>The appearance of the associative triple $\operatorname{Sc}(xyz)$ in the determinant is the way in which the octonion multiplication enters: the triple product is alternating in $x,y,z$, so the three bracketings agree on its real part, and the non-associativity of $\mathbb{O}$ does not reach the determinant.</p>
+<p>The appearance of the associative triple $\operatorname{Sc}(\tilde o\tilde p\tilde r)$ in the determinant is the way in which the octonion multiplication enters: the triple product is alternating in $\tilde o,\tilde p,\tilde r$, so the three bracketings agree on its real part, and the non-associativity of $\mathbb{O}$ does not reach the determinant.</p>
 <h3 id="the-freudenthal-triple-system-and-the-groups-math99-math100">The Freudenthal Triple System and the Groups $E_6$, $E_7$</h3>
 <p><strong>Definition.</strong> The <strong>Freudenthal triple system</strong> associated with $\mathrm{H}_3(\mathbb{O})$ is the pair $(\mathbb{R}\oplus\mathbb{R}\oplus\mathrm{H}_3(\mathbb{O})\oplus\mathrm{H}_3(\mathbb{O}), [\cdot,\cdot,\cdot])$ with the triple product built from the determinant, the adjoint (the quadratic map $A\mapsto A^\# = A\circ A - \operatorname{tr}(A)A + \cdots$) and the trace pairing.</p>
 <p><strong>Theorem.</strong> The groups associated with the exceptional Jordan algebra are the following.</p>
@@ -222,7 +222,7 @@ $$</p>
 $$</p>
 <p>of complex dimensions $1+1+3+3 = 8$ and $1+3+3 = 7$. That statement is recorded with the octonionic geometry and is not a consequence of the branching rules.</p>
 <h2 id="summary">Summary</h2>
-<p>The exceptional Lie groups are constructed from the octonion algebra as follows. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is spanned by the operators $D_{x,y} = [L_x,L_y] + [L_x,R_y] + [R_x,R_y]$ with $x,y$ imaginary, it has dimension fourteen, and it is the exceptional simple Lie algebra $\mathrm{G}_2$; its group is $G_2 = \operatorname{Aut}(\mathbb{O})$, compact connected simply connected of dimension fourteen, acting on $\operatorname{Im}\mathbb{O}$ with $S^6 = G_2/SU(3)$ and characterised as the stabiliser in $SO(7)$ of the associative three-form $\varphi(u,v,w) = \langle u\times v,w\rangle$.</p>
+<p>The exceptional Lie groups are constructed from the octonion algebra as follows. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is spanned by the operators $D_{\tilde o,\tilde p} = [L_{\tilde o},L_{\tilde p}] + [L_{\tilde o},R_{\tilde p}] + [R_{\tilde o},R_{\tilde p}]$ with $\tilde o,\tilde p$ imaginary, it has dimension fourteen, and it is the exceptional simple Lie algebra $\mathrm{G}_2$; its group is $G_2 = \operatorname{Aut}(\mathbb{O})$, compact connected simply connected of dimension fourteen, acting on $\operatorname{Im}\mathbb{O}$ with $S^6 = G_2/SU(3)$ and characterised as the stabiliser in $SO(7)$ of the associative three-form $\varphi(u,v,w) = \langle u\times v,w\rangle$.</p>
 <p>The exceptional Jordan algebra $\mathrm{H}_3(\mathbb{O})$ of Hermitian $3\times3$ matrices over $\mathbb{O}$, of dimension $27$, with the symmetrised product and the cubic determinant, is exceptional (not special); its automorphism group is $F_4$, of dimension $52$ and rank four, and the group preserving the determinant up to scale is $E_6$, of dimension $78$; the automorphism group of the associated Freudenthal triple system is $E_7$, of dimension $133$, and the Freudenthal–Tits magic square, whose rows and columns are the composition algebras, produces $E_8$, of dimension $248$, from the pair $(\mathbb{O},\mathbb{O})$. The exceptional algebras occur in the last row and column of the square, which is the precise sense in which the octonions are responsible for them.</p>
 <p>Geometrically, the octonions produce the Cayley plane $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$, of dimension sixteen, a Moufang plane with cells in dimensions $0$, $8$ and $16$, together with the Rosenfeld planes of $E_6$, $E_7$ and $E_8$. The classification of the simple Lie algebras and groups is presupposed, in <em>Root Systems and Classification</em> and <em>Finite Simple Groups of Lie Type</em>.</p>
 <p>The representation theory of $\mathrm{E}_8$ carries the same octonionic data. Its adjoint branches under the maximal subgroup $\mathrm{SU}(3)\times\mathrm{E}_6$ as $\mathbf{248} = (\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf{78})\oplus(\mathbf 3,\mathbf{27})\oplus(\bar{\mathbf 3},\overline{\mathbf{27}})$, and the magic-star form of the complexified algebra is $\mathfrak{e}_8^{\mathbb C} = \mathfrak{sl}_3(\mathbb C)\oplus\mathfrak{e}_6^{\mathbb C}\oplus(\mathbb C^3\otimes J)\oplus((\mathbb C^3)^{*}\otimes J^{*})$, with $J$ the complex exceptional Jordan algebra and $\mathbf{27}$ its real form. The $\mathrm{E}_6$ branches in turn under $\mathrm{SU}(3)\times\mathrm{SU}(3)\times\mathrm{SU}(3)$ as $\mathbf{27} = (\bar{\mathbf 3},\mathbf 3,\mathbf 1)\oplus(\mathbf 3,\mathbf 1,\mathbf 3)\oplus(\mathbf 1,\bar{\mathbf 3},\bar{\mathbf 3})$ and $\mathbf{78} = (\mathbf 8,\mathbf 1,\mathbf 1)\oplus(\mathbf 1,\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf 1,\mathbf 8)\oplus(\mathbf 3,\mathbf 3,\bar{\mathbf 3})\oplus(\bar{\mathbf 3},\bar{\mathbf 3},\mathbf 3)$, with three isomorphic factors whose labelling is not fixed by the algebra: the outer automorphism of $\mathrm{E}_6$ is the complex conjugation, of order two, and it exchanges two of the three. The branching rules themselves are quoted from the classification of the maximal subgroups, and the octonionic input is the algebra $\mathrm{E}_8$ and the module $\mathbf{27} = \mathrm{H}_3(\mathbb{O})$.</p>
@@ -240,12 +240,12 @@ $$</p>
 <td>Octonion algebra and its basis, $e_k^2 = -e_0$</td>
 </tr>
 <tr>
-<td>$L_x$, $R_x$</td>
+<td>$L_{\tilde o}$, $R_{\tilde o}$</td>
 <td>Left and right multiplication; $[A,B] = AB - BA$</td>
 </tr>
 <tr>
-<td>$D_{x,y} = [L_x,L_y] + [L_x,R_y] + [R_x,R_y]$</td>
-<td>Derivation of $\mathbb{O}$ for imaginary $x,y$</td>
+<td>$D_{\tilde o,\tilde p} = [L_{\tilde o},L_{\tilde p}] + [L_{\tilde o},R_{\tilde p}] + [R_{\tilde o},R_{\tilde p}]$</td>
+<td>Derivation of $\mathbb{O}$ for imaginary $\tilde o,\tilde p$</td>
 </tr>
 <tr>
 <td>$\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$, $G_2 = \operatorname{Aut}(\mathbb{O})$</td>
@@ -308,7 +308,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for $\mathrm{H}_3(\mathbb{O})$, its determinant and the groups $F_4$ and $E_6$.</li>
-<li>Tonny A. Springer and Ferdinand D. Veldkamp, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 2000), for the derivations $D_{x,y}$, the automorphism group and the exceptional Jordan algebra.</li>
+<li>Tonny A. Springer and Ferdinand D. Veldkamp, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 2000), for the derivations $D_{\tilde o,\tilde p}$, the automorphism group and the exceptional Jordan algebra.</li>
 <li>Hans Freudenthal, <em>Octonions, Jordan Algebras and Exceptional Groups</em> (Springer, 1968), for the triple systems and the construction of $E_7$ and $E_8$.</li>
 <li>John C. Baez, "The octonions", <em>Bulletin of the American Mathematical Society</em> <strong>39</strong> (2002), 145–205, for the magic square, the Cayley plane and the survey of the constructions.</li>
 <li>Ichiro Yokota, <em>Exceptional Lie Groups</em> (Springer, 2009), for the explicit realisations of $G_2$, $F_4$, $E_6$, $E_7$ and $E_8$ from the octonions.</li>

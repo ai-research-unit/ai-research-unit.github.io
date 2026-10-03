@@ -63,16 +63,16 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>A biquaternion $\tilde{Q}$ is a <strong>zero divisor</strong> if it is <strong>nonzero</strong> and there exists a <strong>nonzero</strong> biquaternion $\tilde{R}$ such that</p>
 <p>$$
-\tilde{Q} \circ \tilde{R} = 0 \quad \text{or} \quad \tilde{R} \circ \tilde{Q} = 0.
+\tilde{Q}\tilde{R} = 0 \quad \text{or} \quad \tilde{R}\tilde{Q} = 0.
 $$</p>
-<p>The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is <strong>not</strong> a zero divisor, even though $0 \circ \tilde{R} = 0$ for any $\tilde{R}$.</p>
+<p>The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is <strong>not</strong> a zero divisor, even though $0\,\tilde{R} = 0$ for any $\tilde{R}$.</p>
 <h3 id="criterion">Criterion</h3>
 <p><strong>Theorem.</strong> A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product $\tilde{Q}\tilde{Q}^{\natural}$ vanishes:</p>
 <p>$$
 \tilde{Q}\tilde{Q}^{\natural} = 0.
 $$</p>
-<p><strong>Proof.</strong> Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\tilde{Q}^{\natural} = 0$. Then $\tilde{Q} \tilde{Q}^{\natural} = 0$. Since $\tilde{Q} \neq 0$, we also have $\tilde{Q}^{\natural} \neq 0$. So $\tilde{R} = \tilde{Q}^{\natural}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.</p>
-<p>Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $\tilde{Q}\tilde{Q}^{\natural} = 0$.</p>
+<p><strong>Proof.</strong> Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\tilde{Q}^{\natural} = 0$. Then $\tilde{Q} \tilde{Q}^{\natural} = 0$. Since $\tilde{Q} \neq 0$, we also have $\tilde{Q}^{\natural} \neq 0$. So $\tilde{R} = \tilde{Q}^{\natural}$ is a nonzero biquaternion with $\tilde{Q}\tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.</p>
+<p>Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q}\tilde{R} = 0$. If $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q}\tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $\tilde{Q}\tilde{Q}^{\natural} = 0$.</p>
 <h3 id="the-three-way-classification">The Three-Way Classification</h3>
 <p>Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{B}$ are partitioned into three classes:</p>
 <div class="table-scroll"><table>
@@ -158,7 +158,7 @@ $$</p>
 <h3 id="properties">Properties</h3>
 <p>A pure zero divisor $\tilde{Q}$ has the following properties.</p>
 <ul>
-<li><strong>Self-annihilation.</strong> $\tilde{Q} \circ \tilde{Q} = 0$. The annihilator of $\tilde{Q}$ contains $\tilde{Q}$ itself, and therefore contains the whole complex line spanned by $\tilde{Q}$.</li>
+<li><strong>Self-annihilation.</strong> $\tilde{Q}^2 = 0$. The annihilator of $\tilde{Q}$ contains $\tilde{Q}$ itself, and therefore contains the whole complex line spanned by $\tilde{Q}$.</li>
 <li><strong>Non-invertibility.</strong> By the criterion for invertibility, $\tilde{Q}$ has no inverse.</li>
 <li><strong>Purity preserved.</strong> The scalar part of $\tilde{Q}$ is zero by hypothesis, and the square $\tilde{Q}^2 = 0$ also has zero scalar part. So the property of being pure is preserved under squaring.</li>
 </ul>
@@ -223,10 +223,10 @@ $$</p>
 <li><strong>Nontrivial annihilator.</strong> The element $\tilde{Q} - 2 Q_0 e_0 = 2 Q_0 (\tilde\Pi - e_0)$ is annihilated by $\tilde{Q}$ on the right and on the left:</li>
 </ul>
 <p>$$
-\tilde{Q} \circ (\tilde{Q} - 2 Q_0 e_0) = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0,
+\tilde{Q}(\tilde{Q} - 2 Q_0 e_0) = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0,
 $$</p>
 <p>$$
-(\tilde{Q} - 2 Q_0 e_0) \circ \tilde{Q} = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0.
+(\tilde{Q} - 2 Q_0 e_0)\tilde{Q} = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0.
 $$</p>
 <h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
 <p>The non-pure zero divisors are complex multiples of idempotents, and the idempotents are classified by the roots of $-1$. Those roots are classified in <em>Biquaternion Square Roots of Minus One, Zero and Plus One</em>, and the resulting classification of the idempotents is the subject of <em>Biquaternion Idempotents and Projections</em>; neither is restated here.</p>
@@ -377,7 +377,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.</li>
-<li>William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," <em>Proceedings of the Royal Irish Academy</em> <strong>5</strong> (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^x = 1 + x(j + hk)$.</li>
+<li>William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," <em>Proceedings of the Royal Irish Academy</em> <strong>5</strong> (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^a = 1 + a(j + hk)$.</li>
 <li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the classification of the zero divisors.</li>
 <li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the classification of the roots of $-1$.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic properties of the biquaternions.</li>

@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is the geometry slot of the octonion system. It sets out the geometry that the octonion algebra carries on $\mathbb{R}^8$ and on its imaginary part, the almost complex and nearly Kähler structures on the imaginary unit sphere, the octonionic projective plane, and the calibrated forms that the algebra defines. The article is the octonion member of the geometry slots that this Part traverses one number system at a time; it is not the general theory of the geometry of Part II, which is that of the companions <em>Riemannian Geometry</em>, <em>Symmetric Spaces</em> and <em>Homogeneous Spaces</em>, all written in parallel. The projective geometries of the associative systems are the companions <em>Projective Geometry</em> and <em>Quaternion Geometry</em>, and the geometry of the split systems is <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>.</p>
 <p>The article takes the multiplication and the associator from <em>Octonion Algebra</em>, the norm, the inner product and the unit sphere from <em>Octonion Norm and Invertibility</em>, the operator theory from <em>Octonion Element Representations</em>, and the groups $G_2$, $F_4$ and the Cayley plane from <em>Octonions and the Exceptional Lie Groups</em>. The differential forms and their integrals are those of <em>Differential Forms and Stokes' Theorem</em>, the fibrations those of <em>Fibre Bundles, Connections and Curvature</em>, and the projective geometry of Part II is the companion <em>Projective Geometry</em>. The exceptional holonomy of Part II is the subject of <em>G2 and Spin(7) Manifolds</em> ; the geometry of the other number systems is <em>Quaternion Geometry</em> , for the split systems, <em>Split-Biquaternion Geometry</em> and <em>Split-Biquaternions and Hyperbolic Geometry</em>, written in this batch. The present article supplies the octonionic geometry that these articles use.</p>
-<p><strong>Conventions.</strong> The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $x^{\natural}$, norm $\lvert x\rvert^2 = x x^{\natural} = \langle x,x\rangle$ and inner product $\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the <strong>cross product</strong> is</p>
+<p><strong>Conventions.</strong> The octonions are $\mathbb{O}$ with basis $e_0,\dots,e_7$, conjugation $\tilde o^{\natural}$, norm $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural} = \langle \tilde o,\tilde o\rangle$ and inner product $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$. The imaginary subspace is $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$ with orthonormal basis $e_1,\dots,e_7$, and $S^6$ denotes its unit sphere. For $u,v\in\operatorname{Im}\mathbb{O}$ the <strong>cross product</strong> is</p>
 <p>$$
 u\times v = \operatorname{Vect}(uv) = \tfrac{1}{2}(uv - vu),
 $$</p>
@@ -85,7 +85,7 @@ $$</p>
 <h2 id="the-unit-spheres">The Unit Spheres</h2>
 <h3 id="the-sphere-math44">The Sphere $S^7$</h3>
 <p><strong>Proposition.</strong> The unit sphere $S^7\subset\mathbb{O}$ is a compact Riemannian manifold of dimension seven with the round metric inherited from $\mathbb{R}^8$; it is parallelizable, and it is homogeneous under the action of left multiplication, so that $S^7 = \operatorname{Spin}(7)/G_2$ with the isotropy $G_2$ acting irreducibly on the tangent space $\operatorname{Im}\mathbb{O}$.</p>
-<p><em>Proof.</em> The round metric is the restriction of the Euclidean metric by definition of a submanifold, the parallelizability is the existence of the seven global fields $x\mapsto xe_k$, and the homogeneous description is the orbit theorem of <em>Octonion Element Representations</em>.</p>
+<p><em>Proof.</em> The round metric is the restriction of the Euclidean metric by definition of a submanifold, the parallelizability is the existence of the seven global fields $\tilde o\mapsto \tilde oe_k$, and the homogeneous description is the orbit theorem of <em>Octonion Element Representations</em>.</p>
 <h3 id="the-sphere-math51-and-the-nearly-kahler-structure">The Sphere $S^6$ and the Nearly Kähler Structure</h3>
 <p><strong>Theorem.</strong> For a unit imaginary $u$ the map</p>
 <p>$$
@@ -110,10 +110,10 @@ $$</p>
 <h3 id="the-plane-of-lines">The Plane of Lines</h3>
 <p><strong>Definition.</strong> Let $\mathbb{O}^3$ be the free right $\mathbb{O}$-module of triples, with the equivalence relation on nonzero triples</p>
 <p>$$
-(x_0,x_1,x_2)\sim(x_0u,x_1u,x_2u), \qquad u\in\mathbb{O}^{\times},
+(o_0,o_1,o_2)\sim(o_0u,o_1u,o_2u), \qquad u\in\mathbb{O}^{\times},
 $$</p>
-<p>of right multiplication by a unit octonion. The set of classes is the <strong>octonionic projective plane</strong> $\mathbb{OP}^2$; the class of $(x_0,x_1,x_2)$ is written $[x_0:x_1:x_2]$ and is a <strong>point</strong> of the plane. A <strong>line</strong> is the set of points satisfying a right-linear equation $x_0a_0 + x_1a_1 + x_2a_2 = 0$ with a triple of octonions not all zero.</p>
-<p><strong>Proposition.</strong> The relation $\sim$ is an equivalence relation; the map assigning to a unit octonion the line through a fixed point is well defined; and $\mathbb{OP}^2$ is a compact topological space of real dimension $16$. Two distinct points determine a unique line, and two lines in general position meet in a unique point, so that $\mathbb{OP}^2$ satisfies the incidence axioms of a projective plane; the duality between points and lines is the map sending the point $[x]$ to the line $\{y : \langle x,y\rangle = 0\}$ up to the appropriate side.</p>
+<p>of right multiplication by a unit octonion. The set of classes is the <strong>octonionic projective plane</strong> $\mathbb{OP}^2$; the class of $(o_0,o_1,o_2)$ is written $[o_0:o_1:o_2]$ and is a <strong>point</strong> of the plane. A <strong>line</strong> is the set of points satisfying a right-linear equation $o_0a_0 + o_1a_1 + o_2a_2 = 0$ with a triple of octonions not all zero.</p>
+<p><strong>Proposition.</strong> The relation $\sim$ is an equivalence relation; the map assigning to a unit octonion the line through a fixed point is well defined; and $\mathbb{OP}^2$ is a compact topological space of real dimension $16$. Two distinct points determine a unique line, and two lines in general position meet in a unique point, so that $\mathbb{OP}^2$ satisfies the incidence axioms of a projective plane; the duality between points and lines is the map sending the point $[\tilde o]$ to the line $\{\tilde p : \langle \tilde o,\tilde p\rangle = 0\}$ up to the appropriate side.</p>
 <p><em>Proof.</em> The equivalence relation is the action of the group $\mathbb{O}^{\times}$ on $\mathbb{O}^3\setminus\{0\}$ by right multiplication, which is free; the quotient is compact because the sphere $S^{23}$ is compact and the action restricts to it. Incidence is proved by solving the right-linear systems, which are solvable because $\mathbb{O}$ is a division algebra; the uniqueness statements use the cancellation property of <em>Octonion Norm and Invertibility</em>. The detailed verification of the incidence axioms is standard and is cited.</p>
 <h3 id="the-jordan-model-and-the-cayley-plane">The Jordan Model and the Cayley Plane</h3>
 <p><strong>Theorem.</strong> The octonionic projective plane is isomorphic to the space of rank-one idempotents of trace one in the exceptional Jordan algebra $\mathrm{H}_3(\mathbb{O})$,</p>
@@ -174,7 +174,7 @@ $$</p>
 <td>Imaginary subspace, orthonormal basis $e_1,\dots,e_7$</td>
 </tr>
 <tr>
-<td>$\langle x,y\rangle = \operatorname{Sc}(x y^{\natural})$</td>
+<td>$\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$</td>
 <td>Inner product, Euclidean metric</td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ $$</p>
 <td>Cayley plane, $\dim_{\mathbb{R}} = 16$, Moufang, not Desarguesian</td>
 </tr>
 <tr>
-<td>$[x_0:x_1:x_2]$</td>
+<td>$[o_0:o_1:o_2]$</td>
 <td>Octonionic homogeneous coordinates on $\mathbb{OP}^2$</td>
 </tr>
 <tr>

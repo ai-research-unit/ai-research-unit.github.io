@@ -63,85 +63,85 @@
 $$</p>
 <p>equivalently the two-dimensional free $R$-module with basis $1, \varepsilon$ and the single multiplication rule $\varepsilon^2 = 0$. A general dual number is written as</p>
 <p>$$
-Z = a + \varepsilon b, \qquad a, b \in R,
+A = a + \varepsilon a', \qquad a, a' \in R,
 $$</p>
 <p>and the product of two dual numbers is</p>
 <p>$$
-Z W = (a + \varepsilon b)(c + \varepsilon d) = a c + (a d + b c)\,\varepsilon.
+A B = (a + \varepsilon a')(b + \varepsilon b') = a b + (a b' + a' b)\,\varepsilon.
 $$</p>
-<p>The element $a$ is the <strong>real part</strong> and $b$ the <strong>infinitesimal part</strong>, written</p>
+<p>The element $a$ is the <strong>real part</strong> and $a'$ the <strong>infinitesimal part</strong>, written</p>
 <p>$$
-a = \operatorname{Re} Z, \qquad b = \operatorname{Inf} Z.
+a = \operatorname{Re} A, \qquad a' = \operatorname{Inf} A.
 $$</p>
 <p>The notation $\varepsilon$ is chosen deliberately. In some of the older literature the nilpotent unit is written $i$ or $j$, which collides with the imaginary unit of the complex numbers or with the hyperbolic unit of the split complex numbers; using $\varepsilon$ for the nilpotent unit and reserving $i$ and $j$ for those two cases avoids the collision. The split complex algebra is written $\mathbb{D}$ throughout, so that it does not collide with $\mathbb{D}'$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
-<p><strong>Commutative.</strong> Dual multiplication is commutative, $ZW = WZ$.</p>
-<p><strong>Associative.</strong> Dual multiplication is associative, $(ZW)u = Z(Wu)$.</p>
+<p><strong>Commutative.</strong> Dual multiplication is commutative, $AB = BA$.</p>
+<p><strong>Associative.</strong> Dual multiplication is associative, $(AB)u = A(Bu)$.</p>
 <p><strong>Unit and rank.</strong> The identity is $1$, and $\mathbb{D}'_R$ is a free $R$-module of rank $2$.</p>
 <p><strong>Not a division algebra.</strong> The element $\varepsilon$ is non-zero and satisfies $\varepsilon^2 = 0$, so $\varepsilon$ is a zero divisor. A division algebra is precisely an algebra in which every non-zero element is invertible, so the non-zero nilpotent $\varepsilon$ shows that $\mathbb{D}'_R$ is neither a field nor a division algebra. This is the source of everything that distinguishes it from $\mathbb{C}$.</p>
 <p><strong>Not semisimple.</strong> The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this non-zero nilpotent ideal makes the algebra not semisimple; the ideal theory is developed in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <p><strong>Frobenius theorem.</strong> The dual algebra is not one of the three finite-dimensional associative real division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.</p>
 <h3 id="conjugations">Conjugations</h3>
 <p>There are <strong>two</strong> natural conjugations on $\mathbb{D}'_R$:</p>
-<p><strong>Dual conjugation</strong> $\bar{Z} = a - \varepsilon b$ and <strong>identity conjugation</strong> $\operatorname{id}(Z) = Z$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{D}'_R$, described in the next section.</p>
+<p><strong>Dual conjugation</strong> $\bar A = a - \varepsilon a'$ and <strong>identity conjugation</strong> $\operatorname{id}(A) = A$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{D}'_R$, described in the next section.</p>
 <h3 id="the-isomorphism-with-math52">The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$</h3>
 <p>The definition presents the algebra as the quotient ring $\mathbb{D}'_R \cong R[\varepsilon]/(\varepsilon^2)$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{D}'_k$ has the unique maximal ideal $(\varepsilon)$. Over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, as recorded in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <p><strong>Remark.</strong> For $n \geq 1$ the ring $R[\varepsilon]/(\varepsilon^{n+1})$ is the <strong>truncated polynomial algebra</strong> of order $n$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^{n+1}$; the case $n = 1$ recovers the dual numbers and the case $n = 0$ gives $R$ itself. The higher cases are used in <em>Dual-Numbers Integration</em>.</p>
 <h2 id="the-two-fixed-point-submodules">The Two Fixed-Point Submodules</h2>
 <p>Each of the two conjugations has a fixed-point set. The two submodules are described below.</p>
 <h3 id="the-real-submodule">The Real Submodule</h3>
-<p>The fixed points of <strong>dual conjugation</strong> are the dual numbers satisfying $\bar{Z} = Z$. In developed form,</p>
+<p>The fixed points of <strong>dual conjugation</strong> are the dual numbers satisfying $\bar A = A$. In developed form,</p>
 <p>$$
-a - \varepsilon b = a + \varepsilon b.
+a - \varepsilon a' = a + \varepsilon a'.
 $$</p>
 <p>Comparing the coefficients of $1$ and $\varepsilon$:</p>
 <ul>
 <li>Coefficient of $1$: $a = a$, always satisfied.</li>
-<li>Coefficient of $\varepsilon$: $-b = b$, so $2b = 0$.</li>
+<li>Coefficient of $\varepsilon$: $-a' = a'$, so $2a' = 0$.</li>
 </ul>
-<p>If $2$ is invertible in $R$, then $b = 0$. In that case, the fixed points are dual numbers with vanishing infinitesimal part:</p>
+<p>If $2$ is invertible in $R$, then $a' = 0$. In that case, the fixed points are dual numbers with vanishing infinitesimal part:</p>
 <p>$$
-Z = a, \qquad a \in R.
+A = a, \qquad a \in R.
 $$</p>
 <p>This is the <strong>real submodule</strong> $R_{\mathbb{D}'}$, a copy of $R$ embedded in $\mathbb{D}'_R$ as the real axis. It is an $R$-module of rank $1$. It is a subalgebra of $\mathbb{D}'_R$ (isomorphic to $R$).</p>
 <p>If $2$ is not invertible in $R$, the fixed-point set is larger, and the theory requires more care. We assume from this point on that $2$ is invertible in $R$.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
 <p>The fixed points of the <strong>identity conjugation</strong> are all dual numbers. In developed form,</p>
 <p>$$
-Z = Z.
+A = A.
 $$</p>
 <p>The fixed points are</p>
 <p>$$
-Z = a + \varepsilon b, \qquad a, b \in R.
+A = a + \varepsilon a', \qquad a, a' \in R.
 $$</p>
 <p>This is the <strong>dual submodule</strong> $\mathbb{D}'_{\mathbb{D}'}$, a copy of the dual algebra embedded in itself as the whole thing. It is an $R$-module of rank $2$. It is a subalgebra of $\mathbb{D}'_R$.</p>
-<p>The <strong>infinitesimal submodule</strong> $\varepsilon R_{\mathbb{D}'}$ is not a fixed-point set of either conjugation; it is the set of dual numbers of the form $\varepsilon b$ with $b \in R$. It is the maximal ideal of $\mathbb{D}'_R$, and it is nilpotent of index two.</p>
+<p>The <strong>infinitesimal submodule</strong> $\varepsilon R_{\mathbb{D}'}$ is not a fixed-point set of either conjugation; it is the set of dual numbers of the form $\varepsilon a'$ with $a' \in R$. It is the maximal ideal of $\mathbb{D}'_R$, and it is nilpotent of index two.</p>
 <h2 id="dual-decomposition">Dual Decomposition</h2>
 <p>The real submodule $R_{\mathbb{D}'}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$ are the two eigenspaces of dual conjugation. Every dual number decomposes uniquely as the sum of a real part and an infinitesimal part:</p>
 <p>$$
-Z = Z_r + \varepsilon Z_i, \qquad Z_r \in R, \quad Z_i \in R.
+A = A_r + \varepsilon A_i, \qquad A_r \in R, \quad A_i \in R.
 $$</p>
 <p>The two components are obtained from the dual conjugation:</p>
 <p>$$
-Z_r = \frac{1}{2}(Z + \bar{Z}), \qquad Z_i = \frac{1}{2\varepsilon}(Z - \bar{Z}).
+A_r = \frac{1}{2}(A + \bar A), \qquad A_i = \frac{1}{2\varepsilon}(A - \bar A).
 $$</p>
-<p>The first formula is well-defined because $2$ is invertible in $R$. The second formula is formal: it says that $Z - \bar{Z} = 2\varepsilon b$, so dividing by $2\varepsilon$ recovers $b$. The division by $\varepsilon$ is not an algebra operation, because $\varepsilon$ is not invertible. So the second formula is a convenient notation, not a computation in the algebra.</p>
+<p>The first formula is well-defined because $2$ is invertible in $R$. The second formula is formal: it says that $A - \bar A = 2\varepsilon a'$, so dividing by $2\varepsilon$ recovers $a'$. The division by $\varepsilon$ is not an algebra operation, because $\varepsilon$ is not invertible. So the second formula is a convenient notation, not a computation in the algebra.</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'},
 $$</p>
 <p>where $\varepsilon R_{\mathbb{D}'}$ is the maximal ideal. Both are $R$-modules of rank $1$, and their direct sum is the full algebra $\mathbb{D}'_R$ of rank $2$.</p>
-<p>This is the <strong>dual decomposition</strong> of a dual number. It expresses $Z$ as a real number plus $\varepsilon$ times another real number.</p>
+<p>This is the <strong>dual decomposition</strong> of a dual number. It expresses $A$ as a real number plus $\varepsilon$ times another real number.</p>
 <h2 id="conjugate-decomposition">Conjugate Decomposition</h2>
 <p>The dual conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real submodule $R_{\mathbb{D}'}$ (eigenvalue $+1$) and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$ (eigenvalue $-1$). Every dual number decomposes uniquely as</p>
 <p>$$
-Z = Z_+ + Z_-, \qquad Z_+ = Z_r, \quad Z_- = \varepsilon Z_i.
+A = A_+ + A_-, \qquad A_+ = A_r, \quad A_- = \varepsilon A_i.
 $$</p>
 <p>This is the same decomposition as above, written in terms of the eigenspaces of the conjugation.</p>
 <h2 id="the-maximal-ideal">The Maximal Ideal</h2>
 <p>The ideal $(\varepsilon)$ of $\mathbb{D}'_R$ is</p>
 <p>$$
-\mathrm{M} = (\varepsilon) = \{\varepsilon b : b \in R\}.
+\mathrm{M} = (\varepsilon) = \{\varepsilon a' : a' \in R\}.
 $$</p>
 <p>It is the set of elements with vanishing real part. It is nilpotent of index two:</p>
 <p>$$
@@ -152,21 +152,21 @@ $$</p>
 <li>$\mathrm{M} = (\varepsilon)$ is a nilpotent ideal of index two, and $\mathrm{M}^2 = 0$.</li>
 <li>The quotient $\mathbb{D}'_R / \mathrm{M}$ is isomorphic to $R$.</li>
 <li>Over a field $k$, $\mathrm{M}$ is the <strong>unique</strong> maximal ideal of $\mathbb{D}'_k$, so $\mathbb{D}'_k$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{D}'_R$ are the ideals $\mathrm{P} + \mathrm{M} = \mathrm{P} \oplus R\varepsilon$ for $\mathrm{P}$ maximal in $R$; hence $\mathbb{D}'_R$ is local if and only if $R$ is local.</li>
-<li>The element $a + \varepsilon b$ is invertible if and only if $a \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathrm{M}$ is invertible.</li>
+<li>The element $a + \varepsilon a'$ is invertible if and only if $a \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathrm{M}$ is invertible.</li>
 </ul>
 <p>The maximal ideal is the obstruction to the algebra being a field, and it is the source of the nilpotence in the algebra.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem (group of units).</strong> The <strong>group of units</strong> of $\mathbb{D}'_R$ is</p>
 <p>$$
-(\mathbb{D}'_R)^\times = \{a + \varepsilon b : a \in R^\times\}.
+(\mathbb{D}'_R)^\times = \{a + \varepsilon a' : a \in R^\times\}.
 $$</p>
 <p>An element is invertible if and only if its real part is invertible in $R$. The inverse is</p>
 <p>$$
-(a + \varepsilon b)^{-1} = a^{-1} - a^{-1} b a^{-1} \varepsilon.
+(a + \varepsilon a')^{-1} = a^{-1} - a^{-1} a' a^{-1} \varepsilon.
 $$</p>
 <p>When $R$ is commutative, this simplifies to</p>
 <p>$$
-(a + \varepsilon b)^{-1} = \frac{1}{a} - \frac{b}{a^2} \varepsilon.
+(a + \varepsilon a')^{-1} = \frac{1}{a} - \frac{a'}{a^2} \varepsilon.
 $$</p>
 <p>The group of units is an extension of $R^\times$ by the additive group $R$:</p>
 <p>$$
@@ -176,28 +176,28 @@ $$</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <p>The dual algebra carries a Lie bracket, defined by the commutator</p>
 <p>$$
-[Z, W] = ZW - WZ.
+[A, B] = AB - BA.
 $$</p>
 <p>Since $\mathbb{D}'_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{D}'_R$ is trivial. This is the fundamental difference from the quaternion case, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).</p>
 <p>The <strong>Lie algebra of derivations</strong> of $\mathbb{D}'_R$ is more interesting. A <strong>derivation</strong> is an $R$-linear map $D : \mathbb{D}'_R \to \mathbb{D}'_R$ satisfying the Leibniz rule</p>
 <p>$$
-D(xy) = D(x) y + x D(y).
+D(AB) = D(A) B + A D(B).
 $$</p>
 <p><strong>Theorem.</strong> Every derivation of $\mathbb{D}'_R$ is of the form</p>
 <p>$$
-D(a + \varepsilon b) = c \varepsilon b,
+D(a + \varepsilon a') = c \varepsilon a',
 $$</p>
 <p>for some $c \in R$. In other words, the derivation is determined by its value on $\varepsilon$, and it maps the real part to zero.</p>
 <p><strong>Proof.</strong> Let $D$ be a derivation. Since $D(1) = D(1 \cdot 1) = 2D(1)$, we have $D(1) = 0$ when $2$ is invertible. Then $D(a) = a D(1) = 0$ for all $a \in R$. So $D$ is determined by $D(\varepsilon)$. Since $D(\varepsilon^2) = D(0) = 0$ while $D(\varepsilon^2) = 2 \varepsilon D(\varepsilon)$, we have $\varepsilon D(\varepsilon) = 0$, so $D(\varepsilon)$ lies in the ideal $(\varepsilon)$. Write $D(\varepsilon) = \varepsilon c$ for some $c \in R$. Then</p>
 <p>$$
-D(a + \varepsilon b) = D(a) + D(b) \varepsilon + b D(\varepsilon) = b \varepsilon c.
+D(a + \varepsilon a') = D(a) + D(a') \varepsilon + a' D(\varepsilon) = a' \varepsilon c.
 $$</p>
 <p>So every derivation is of the stated form.</p>
-<p>The module of derivations is isomorphic to $R$, and it is generated by the derivation $\partial_\varepsilon$ that sends $a + \varepsilon b$ to $\varepsilon b$. This derivation is the algebraic content of the derivative: it sends each element to $\varepsilon$ times its infinitesimal part.</p>
+<p>The module of derivations is isomorphic to $R$, and it is generated by the derivation $\partial_\varepsilon$ that sends $a + \varepsilon a'$ to $\varepsilon a'$. This derivation is the algebraic content of the derivative: it sends each element to $\varepsilon$ times its infinitesimal part.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual number algebra $\mathbb{D}'_R$ is the two-dimensional free $R$-module with basis $1$, $\varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $Z = a + \varepsilon b$, with $a$ its real part and $b$ its infinitesimal part.</p>
-<p>Dual conjugation is the involution sending $a + \varepsilon b$ to $a - \varepsilon b$. Its fixed points form the real submodule $R_{\mathbb{D}'}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.</p>
-<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{D}'_R/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{D}'_k$ is local; over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $a + \varepsilon b$ is a unit exactly when its real part $a$ is a unit of $R$, so the group of units is $\{a + \varepsilon b : a \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
+<p>The dual number algebra $\mathbb{D}'_R$ is the two-dimensional free $R$-module with basis $1$, $\varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $A = a + \varepsilon a'$, with $a$ its real part and $a'$ its infinitesimal part.</p>
+<p>Dual conjugation is the involution sending $a + \varepsilon a'$ to $a - \varepsilon a'$. Its fixed points form the real submodule $R_{\mathbb{D}'}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.</p>
+<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{D}'_R/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{D}'_k$ is local; over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $a + \varepsilon a'$ is a unit exactly when its real part $a$ is a unit of $R$, so the group of units is $\{a + \varepsilon a' : a \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -228,23 +228,23 @@ $$</p>
 <td>The $R$-basis of $\mathbb{D}'_R$</td>
 </tr>
 <tr>
-<td>$Z = a + \varepsilon b$</td>
+<td>$A = a + \varepsilon a'$</td>
 <td>General dual number</td>
 </tr>
 <tr>
-<td>$a = \operatorname{Re} Z$</td>
+<td>$a = \operatorname{Re} A$</td>
 <td>Real part</td>
 </tr>
 <tr>
-<td>$b = \operatorname{Inf} Z$</td>
+<td>$a' = \operatorname{Inf} A$</td>
 <td>Infinitesimal part</td>
 </tr>
 <tr>
-<td>$\bar{Z} = a - \varepsilon b$</td>
+<td>$\bar{A} = a - \varepsilon a'$</td>
 <td>Dual conjugation</td>
 </tr>
 <tr>
-<td>$\operatorname{id}(Z) = Z$</td>
+<td>$\operatorname{id}(A) = A$</td>
 <td>Identity conjugation</td>
 </tr>
 <tr>
@@ -260,15 +260,15 @@ $$</p>
 <td>The nilpotent ideal $(\varepsilon)$, $\mathrm{M}^2 = 0$; the unique maximal ideal over a field</td>
 </tr>
 <tr>
-<td>$\partial_\varepsilon(a + \varepsilon b) = \varepsilon b$</td>
+<td>$\partial_\varepsilon(a + \varepsilon a') = \varepsilon a'$</td>
 <td>The derivation, $\operatorname{Der}_R(\mathbb{D}'_R) \cong R$</td>
 </tr>
 <tr>
-<td>$[Z, W] = ZW - WZ$</td>
+<td>$[A, B] = AB - BA$</td>
 <td>Lie bracket, identically zero</td>
 </tr>
 <tr>
-<td>$(\mathbb{D}'_R)^\times = \{a + \varepsilon b : a \in R^\times\}$</td>
+<td>$(\mathbb{D}'_R)^\times = \{a + \varepsilon a' : a \in R^\times\}$</td>
 <td>Group of units</td>
 </tr>
 </tbody>

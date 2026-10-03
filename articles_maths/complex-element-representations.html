@@ -58,11 +58,11 @@
 <h3 id="definition">Definition</h3>
 <p>A <strong>representation</strong> of $\mathbb{C}$ is a complex vector space $V$ together with a bilinear map</p>
 <p>$$
-\rho : \mathbb{C} \times V \to V, \qquad \rho(z, v) = z \cdot v,
+\rho : \mathbb{C} \times V \to V, \qquad \rho(A, v) = A \cdot v,
 $$</p>
 <p>satisfying</p>
 <p>$$
-z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+A \cdot (B \cdot v) = (AB) \cdot v, \qquad 1 \cdot v = v.
 $$</p>
 <p>Equivalently, a representation is an algebra homomorphism</p>
 <p>$$
@@ -72,22 +72,22 @@ $$</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The <strong>regular representation</strong> of $\mathbb{C}$ is $\mathbb{C}$ acting on itself by left multiplication:</p>
 <p>$$
-\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{C}.
+\rho_{\mathrm{reg}}(A) B = A B, \qquad A, B \in \mathbb{C}.
 $$</p>
-<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(A) = A$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.</p>
 <h3 id="the-scalar-maps">The Scalar Maps</h3>
 <p>For each $\lambda \in \mathbb{C}$, the <strong>scalar map</strong> $\rho_\lambda$ is defined on $\mathbb{C}$ by</p>
 <p>$$
-\rho_\lambda(z) w = \lambda z w, \qquad z, w \in \mathbb{C}.
+\rho_\lambda(A) B = \lambda A B, \qquad A, B \in \mathbb{C}.
 $$</p>
-<p>Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. Since a representation must satisfy $1 \cdot w = w$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.</p>
+<p>Equivalently, $\rho_\lambda(A) = \lambda A$ as a complex-linear map. Since a representation must satisfy $1 \cdot B = B$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.</p>
 <h2 id="classification">Classification</h2>
 <h3 id="the-classification-theorem">The Classification Theorem</h3>
 <p><strong>Theorem.</strong> Every finite-dimensional complex representation of $\mathbb{C}$ is isomorphic to a direct sum of copies of the regular representation:</p>
 <p>$$
-V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
+V \cong \mathbb{C}^{\oplus n}, \qquad \rho(A)(v_1, \dots, v_n) = (A v_1, \dots, A v_n).
 $$</p>
-<p><strong>Proof.</strong> The map $z \mapsto z \cdot v$ is $\mathbb{C}$-linear in $z$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $z \cdot v = z\,(1 \cdot v) = z v$ for every $v$. In particular $z \cdot v_i = z v_i$ on a basis, so the action is the scalar multiplication $z \cdot v = zv$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation.</p>
+<p><strong>Proof.</strong> The map $A \mapsto A \cdot v$ is $\mathbb{C}$-linear in $A$ for each fixed $v$, because $\rho$ is a $\mathbb{C}$-algebra homomorphism; hence $A \cdot v = A\,(1 \cdot v) = A v$ for every $v$. In particular $A \cdot v_i = A v_i$ on a basis, so the action is the scalar multiplication $A \cdot v = Av$ and $V \cong \mathbb{C}^{\oplus n}$ as a representation.</p>
 <h3 id="irreducible-representations">Irreducible Representations</h3>
 <p><strong>Theorem.</strong> The regular representation is the unique irreducible complex representation of $\mathbb{C}$, up to isomorphism.</p>
 <p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{C}$ is a field and every non-zero $\mathbb{C}$-linear map $\mathbb{C} \to V$ is injective.</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{C}}(V, \mathbb{C})$ defined by</p>
 <p>$$
-(\rho^*(z) f)(v) = f(\rho(z) v), \qquad z \in \mathbb{C}, \; f \in V^*, \; v \in V.
+(\rho^*(A) f)(v) = f(\rho(A) v), \qquad A \in \mathbb{C}, \; f \in V^*, \; v \in V.
 $$</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$ for finite-dimensional $V$.</p>
@@ -137,14 +137,14 @@ $$</p>
 $$</p>
 <p>satisfies</p>
 <p>$$
-\langle \rho^*(z) f, v \rangle = \langle f, \rho(z) v \rangle.
+\langle \rho^*(A) f, v \rangle = \langle f, \rho(A) v \rangle.
 $$</p>
 <p>This is the definition of the dual representation, written as a pairing.</p>
 <h2 id="tensor-products">Tensor Products</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{C}} W$ defined by</p>
 <p>$$
-z \cdot (v \otimes u) = (z \cdot v) \otimes u = v \otimes (z \cdot u).
+A \cdot (v \otimes u) = (A \cdot v) \otimes u = v \otimes (A \cdot u).
 $$</p>
 <p>The two definitions agree because $\mathbb{C}$ is commutative.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
@@ -159,7 +159,7 @@ $$</p>
 <h3 id="definition_4">Definition</h3>
 <p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a complex-linear map $T : V \to W$ such that</p>
 <p>$$
-T(z \cdot v) = z \cdot T(v), \qquad z \in \mathbb{C}, \; v \in V.
+T(A \cdot v) = A \cdot T(v), \qquad A \in \mathbb{C}, \; v \in V.
 $$</p>
 <p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}}(V, W)$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
@@ -185,7 +185,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>A representation of $\mathbb{C}$ is a complex vector space $V$ together with a bilinear action of $\mathbb{C}$ on it, equivalently an algebra homomorphism $\mathbb{C} \to \operatorname{End}(V)$. Because $\mathbb{C}$ is a field the theory is completely determined: every module over a field is free, and every finite-dimensional representation is isomorphic to a direct sum of copies of the regular representation, $V \cong \mathbb{C}^{\oplus n}$. The regular representation is therefore the unique irreducible representation up to isomorphism, and by Schur's lemma its endomorphism ring is $\mathbb{C}$ itself.</p>
 <p>The representation ring $R(\mathbb{C})$ is the Grothendieck ring of the finite-dimensional representations. It is generated as an abelian group by the class of the regular representation with no relations, so $R(\mathbb{C}) \cong \mathbb{Z}$. The field structure is the source of this simplicity and of every contrast with the split complex case, where $\mathbb{D}$ is a ring with zero divisors rather than a field.</p>
-<p>The article also records the standard constructions on representations: the dual or contragredient representation on $V^*$, defined by $(\rho^*(z)f)(v) = f(\rho(z)v)$; the tensor product, whose action is well defined because $\mathbb{C}$ is commutative; and the homomorphisms, the complex-linear maps intertwining the two actions, with their composition and functorial behaviour. The final section sets out the four essential differences from the representation theory of $\mathbb{D}$.</p>
+<p>The article also records the standard constructions on representations: the dual or contragredient representation on $V^*$, defined by $(\rho^*(A)f)(v) = f(\rho(A)v)$; the tensor product, whose action is well defined because $\mathbb{C}$ is commutative; and the homomorphisms, the complex-linear maps intertwining the two actions, with their composition and functorial behaviour. The final section sets out the four essential differences from the representation theory of $\mathbb{D}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -213,7 +213,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\rho_\lambda$</td>
-<td>Scalar map $z \mapsto \lambda z$</td>
+<td>Scalar map $A \mapsto \lambda A$</td>
 </tr>
 <tr>
 <td>$V^*$</td>

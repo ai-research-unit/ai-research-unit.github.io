@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 T(\tilde q) = 2q_0 = \tilde q + \tilde{q}^{\natural}, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} .
 $$</p>
-<p>Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q y) = D(\tilde q)D(y)$, and $D(\tilde q) \neq 0$ is exactly invertibility.</p>
+<p>Both are real-valued; $T$ is linear and $D$ is multiplicative, $D(\tilde q \tilde p) = D(\tilde q)D(\tilde p)$, and $D(\tilde q) \neq 0$ is exactly invertibility.</p>
 <p><strong>Theorem (Cayley–Hamilton).</strong> Every element satisfies its characteristic equation,</p>
 <p>$$
 \tilde q^2 - T(\tilde q)\,\tilde q + D(\tilde q)\,e_0 = 0, \qquad\text{that is}\qquad \tilde q^2 - 2q_0\,\tilde q + N(\tilde q) = 0 .
@@ -129,7 +129,7 @@ $$</p>
 R(\lambda) - R(\mu) = (\lambda - \mu)\,R(\lambda)R(\mu), \qquad \tilde q\,R(\lambda) = R(\lambda)\,\tilde q,
 $$</p>
 <p>the resolvent identity and commutativity with $\tilde q$, on the common domain of definition.</p>
-<p><strong>Proof.</strong> The inverse formula is the standard $y^{-1} = y^{\natural}/N(y)$ of <em>Split-Quaternion Norm and Invertibility</em> applied to $y = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.</p>
+<p><strong>Proof.</strong> The inverse formula is the standard $\tilde p^{-1} = \tilde p^{\natural}/N(\tilde p)$ of <em>Split-Quaternion Norm and Invertibility</em> applied to $\tilde p = \tilde q-\lambda$, and $N(\tilde q-\lambda) = \lambda^2-2q_0\lambda+N(\tilde q) = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.</p>
 <p><strong>Remark.</strong> $R$ is analytic in $\lambda$ off $\sigma(\tilde q)$ in the sense of $\mathbb{H}_{\mathrm{s}}$-valued functions of a <strong>real or complex central</strong> variable $\lambda$; because $\lambda$ is central, the calculus of one real or complex variable applies to $R$ componentwise. There is no analogue of the Cauchy integral of a non-central variable here.</p>
 <h2 id="the-spectral-radius">The Spectral Radius</h2>
 <p><strong>Definition.</strong> The <strong>spectral radius</strong> of $\tilde q$ is $\rho(\tilde q) = \max\{|\lambda| : \lambda \in \sigma(\tilde q)\}$.</p>

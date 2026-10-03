@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Regular Representation as an Algebra of Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-regular-representation-as-an-algebra-of-operators"><strong>The Regular Representation as an Algebra of Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A module over a ring is the same datum as a representation of that ring, and the module a ring has over itself therefore gives it a representation over itself: the <strong>left regular representation</strong> $L$, with $L_a(x) = ax$. Its image is a subalgebra of the endomorphism ring, and the whole object can be read from it — the commutant is the algebra of right multiplications, the bicommutant closes the representation, the ideals of the ring are the invariant subspaces, and the isotypic decomposition of the regular module becomes a decomposition of the operator algebra. This article is the operator counterpart of <em>The Regular Module and the Regular Bimodule</em>: where that article reads the ring as a module, this one reads the module as a family of operators and applies the commutant and the double centraliser to it.</p>
+<p>The article assumes <em>Modules</em> for the equivalence between a module and a representation, <em>The Regular Module and the Regular Bimodule</em> for the module itself and for the correspondence with the ideals, <em>Left and Right Multiplication in a Ring</em> for the one-sided multiplications and their composition and centraliser laws, and <em>Endomorphisms of a Linear Space</em> and <em>Algebras of Endomorphisms</em> for the operator algebra, its commutant, its bicommutant and the double centraliser theorem. Schur's lemma, the semisimple modules, the isotypic decomposition and the Wedderburn–Artin theorem are <em>Simple and Semisimple Modules</em>, and the density theorem is <em>Module Endomorphisms</em>; all are cited and none is reproved. The commutative case is <em>Multiplication Operators on a Commutative Algebra</em>; the twisted case, where an involution turns the same operators into adjoints, is <em>The Adjoints of the Regular Operators</em>. No form, no norm and no topology is used.</p>
+<p>Throughout, $A$ is a ring with $1 \neq 0$, and $\operatorname{End}(A)$ is the ring of additive endomorphisms of $A$ under composition. When $A$ is a finite-dimensional algebra over a field $F$ we write $\operatorname{End}_F(A)$ and read $A$ as an $F$-linear space, and the results of <em>Algebras of Endomorphisms</em> apply verbatim. The two one-sided multiplications are</p>
+<p>$$
+L_a(x) = ax, \qquad R_a(x) = xa \qquad (a, x \in A),
+$$</p>
+<p>and $L$ and $R$ denote the maps $a \mapsto L_a$ and $a \mapsto R_a$.</p>
+<h2 id="the-left-regular-representation">The Left Regular Representation</h2>
+<h3 id="definition-and-faithfulness">Definition and faithfulness</h3>
+<p><strong>Definition.</strong> The <strong>left regular representation</strong> of $A$ is the map $L : A \to \operatorname{End}(A)$, $a \mapsto L_a$. The <strong>right regular representation</strong> is $R : a \mapsto R_a$.</p>
+<p><strong>Proposition.</strong> $L$ is an injective unital ring homomorphism, and its image $L(A)$ is a subalgebra of $\operatorname{End}(A)$ isomorphic to $A$; $R$ is an injective unital anti-homomorphism, and $R(A) \cong A^{\mathrm{op}}$. The two images commute, $L_aR_b = R_bL_a$, and their product is the two-sided multiplication $x \mapsto axb$.</p>
+<p><strong>Proof.</strong> The laws $L_{a+b} = L_a+L_b$, $L_{ab} = L_aL_b$, $L_1 = \mathrm{id}$ and $R_{a+b} = R_a+R_b$, $R_{ab} = R_bR_a$, $R_1 = \mathrm{id}$ are the composition and commutation laws computed in <em>Left and Right Multiplication in a Ring</em> and recalled here; injectivity is $L_a(1) = a = R_a(1)$, and the two-sided product is associativity.</p>
+<p><strong>Corollary (the two representations are the two readings of one bimodule).</strong> $A$ is a left module over $L(A)$ and a left module over $R(A)^{\mathrm{op}}$, and the two structures commute; together they are the regular bimodule ${}_AA_A$ of <em>The Regular Module and the Regular Bimodule</em> read through its endomorphisms.</p>
+<h3 id="the-representation-attached-to-the-module">The representation attached to the module</h3>
+<p><strong>Proposition.</strong> For a left $A$-module $M$, a representation $\rho : A \to \operatorname{End}_\mathbb{Z}(M)$ is the same datum as the module structure, by $\rho(a)m = am$ (<em>Modules</em> §2). The left regular representation is the representation attached to ${}_AA$, and the right regular representation is the representation attached to $A_A$ read through $A^{\mathrm{op}}$.</p>
+<p><strong>Proof.</strong> The equivalence was recorded in <em>Modules</em> §2; applying it to $M = {}_AA$ and reading the action gives $L_a(x) = ax$, and applying it to $M = A_A$ with scalars on the opposite side gives $R_a(x) = xa$.</p>
+<p><strong>Proposition (the module over the operators).</strong> $A$ is a left module over $L(A)$ by evaluation, $L_a \cdot x = ax$, and this module is ${}_AA$. Hence the left ideals of $A$ are exactly the $L(A)$-submodules of $A$ and the $L(A)$-invariant subspaces, the right ideals are the $R(A)$-invariant subspaces, and the two-sided ideals are the invariant subspaces of the algebra generated by both.</p>
+<p><strong>Proof.</strong> The action is carried through the isomorphism $L : A \to L(A)$, so a subset is stable under every $L_a$ exactly when it is closed under left multiplication by every $a$, that is, when it is a left ideal; the correspondence of ideals with submodules is the theorem of <em>The Regular Module and the Regular Bimodule</em>, and the right and two-sided statements are the mirrored ones.</p>
+<h2 id="the-commutant-and-the-bicommutant">The Commutant and the Bicommutant</h2>
+<h3 id="the-commutant-is-the-right-regular-representation">The commutant is the right regular representation</h3>
+<p><strong>Proposition.</strong> Inside $\operatorname{End}(A)$,</p>
+<p>$$
+L(A)' = \{T : TL_a = L_aT \text{ for all } a \in A\} = R(A) \cong A^{\mathrm{op}} ,
+$$</p>
+<p>and dually $R(A)' = L(A)$.</p>
+<p><strong>Proof.</strong> If $TL_a = L_aT$ for all $a$ then $T(a) = T(L_a1) = L_aT(1) = a\,T(1)$, so $T = R_{T(1)}$; conversely $R_bL_a = L_aR_b$ for every $a,b$ by associativity. The isomorphism $A^{\mathrm{op}} \to R(A)$ is the anti-homomorphism $b \mapsto R_b$ of the preceding section. This is the centraliser computation of <em>Left and Right Multiplication in a Ring</em>, restated in the operator algebra; the dual is the same computation with the sides exchanged.</p>
+<p><strong>Corollary (the centre is the intersection of the two commutants).</strong> $L(A)' \cap R(A)' = L(A) \cap R(A) = L(Z(A))$, and this subalgebra is the image of the bimodule endomorphism ring, $L(Z(A)) \cong \operatorname{End}_{A\text{-}A}(A) \cong Z(A)$.</p>
+<p><strong>Proof.</strong> By the proposition the intersection is $L(A) \cap R(A)$. An operator in both is $L_a = R_b$, that is $ax = xb$ for all $x$; with $x = 1$ one gets $a = b$, and then $ax = xa$ for all $x$, so $a \in Z(A)$; conversely a central $a$ gives $L_a = R_a$. The identification with the bimodule endomorphisms is <em>The Regular Module and the Regular Bimodule</em>.</p>
+<h3 id="the-bicommutant-and-the-double-centraliser">The bicommutant and the double centraliser</h3>
+<p><strong>Proposition (the bicommutant laws).</strong> $L(A) \subseteq L(A)''$, $L(A)' = L(A)'''$, and $L(A)''$ is the largest subalgebra of $\operatorname{End}(A)$ whose commutant is $L(A)' = R(A)$.</p>
+<p><strong>Proof.</strong> These are the Galois-connection laws of <em>Algebras of Endomorphisms</em> applied to the subalgebra $L(A)$.</p>
+<p><strong>Theorem (the double centraliser for the regular representation).</strong> If $A$ is a semisimple ring, then</p>
+<p>$$
+L(A)'' = L(A) .
+$$</p>
+<p><strong>Proof.</strong> A semisimple ring is semisimple as a left module over itself, and by the proposition on the module over the operators the module ${}_AA$ read over $L(A)$ is ${}_AA$; it is therefore semisimple over $L(A)$. The double centraliser theorem of <em>Algebras of Endomorphisms</em> then gives $L(A)'' = L(A)$, the module structure used being the one just identified and the theorem being cited, not reproved.</p>
+<p><strong>Corollary.</strong> For a finite-dimensional semisimple algebra $A$ over a field $F$, the image $L(A)$ is a closed subalgebra of $\operatorname{End}_F(A)$: it is determined by its commutant $R(A)$, and it is the largest subalgebra with that commutant. The matrix algebra and the group algebra below are the two cases.</p>
+<p><strong>Remark (the theorem is not a criterion).</strong> The double centraliser theorem is sufficient and not necessary: the upper triangular algebra of the examples is not semisimple and its regular representation is nevertheless closed, $L(A)'' = L(A)$. What the theorem says is that semisimplicity of the ring supplies the hypothesis; it does not say that the conclusion forces it.</p>
+<h3 id="the-two-sided-operators">The two-sided operators</h3>
+<p><strong>Remark.</strong> The subalgebra generated by $L(A)$ and $R(A)$ inside $\operatorname{End}(A)$ is the image of the multiplication map $A \otimes_\mathbb{Z} A^{\mathrm{op}} \to \operatorname{End}(A)$, $a \otimes b \mapsto L_aR_b$, and its elements are the maps $x \mapsto \sum_i a_ixb_i$; the sandwich $x \mapsto axb$ is the member generated by a single pair, and the family is the full operator algebra of the regular bimodule. The one-sided centraliser computation that identifies $L(A)'$ with $R(A)$ is exactly the statement that this algebra is as large as the two-sided operators allow.</p>
+<h2 id="the-regular-representation-of-a-semisimple-algebra">The Regular Representation of a Semisimple Algebra</h2>
+<h3 id="the-isotypic-decomposition-as-operators">The isotypic decomposition as operators</h3>
+<p><strong>Proposition.</strong> Let $A$ be a finite-dimensional semisimple algebra over a field $F$, with Wedderburn–Artin decomposition $A \cong \bigoplus_i M_{n_i}(D_i)$ and simple left modules $S_i$, and put $D_i = \operatorname{End}_A(S_i)$. Then the regular module decomposes isotypically,</p>
+<p>$$
+{}_AA \;\cong\; \bigoplus_i S_i^{\oplus m_i}, \qquad m_i = \dim_{D_i} S_i ,
+$$</p>
+<p>and consequently $\dim_F A = \sum_i m_i \dim_F S_i$. Reading the operators, $L(A) \cong \prod_i M_{n_i}(D_i)$ acts on the summand $S_i^{\oplus m_i}$ componentwise, and the commutant separates the components: $L(A)' \cong \prod_i M_{m_i}(D_i^{\mathrm{op}})$ up to the choice of decompositions.</p>
+<p><strong>Proof.</strong> The decomposition is Wedderburn–Artin and the isotypic decomposition of a semisimple module, established in <em>Simple and Semisimple Modules</em>; the multiplicity of the isotypic component of type $S_i$ in the regular module is $\dim_{D_i}S_i$ because $A$ is the direct sum of its simple left ideals, each of which is isomorphic to one of the $S_i$. The commutant is the module endomorphism ring of the sum of isotypic components, which is a product of matrix algebras over the division algebras, and the double centraliser of the preceding section closes the computation. The dimension identity is the comparison of the two sides.</p>
+<h3 id="the-regular-operator-of-a-matrix-algebra">The regular operator of a matrix algebra</h3>
+<p><strong>Proposition.</strong> For $A = M_n(F)$, identify $A$ with $F^n \otimes (F^n)^{*}$ by $X \mapsto \sum_{i,j} X_{ij}\, e_i \otimes e_j^{*}$. Under this identification</p>
+<p>$$
+L_a = a \otimes I_n, \qquad R_b = I_n \otimes b^{\mathsf{T}} ,
+$$</p>
+<p>so the left and the right regular operators of the matrix algebra are the two one-sided factors of the Kronecker product. In particular the trace of a regular operator is</p>
+<p>$$
+\operatorname{tr}(L_a) = n \operatorname{tr}(a), \qquad \operatorname{tr}(R_b) = n \operatorname{tr}(b) ,
+$$</p>
+<p>and the regular representation of $M_n(F)$ is the tensor product of the defining representation with its dual.</p>
+<p><strong>Proof.</strong> The coefficient of $e_i \otimes e_j^{*}$ in $L_aR_b(X) = aXb$ is $\sum_{k,l} a_{ik}X_{kl}b_{lj}$, which is the coefficient of $a \otimes b^{\mathsf{T}}$ acting on the basis element $e_k \otimes e_l^{*}$; taking $b = 1$ and $a = 1$ gives the two claims. The trace follows from $\operatorname{tr}(a \otimes I_n) = \operatorname{tr}(a)\operatorname{tr}(I_n) = n\operatorname{tr}(a)$ and the same for the transpose.</p>
+<h3 id="the-commutative-case">The commutative case</h3>
+<p><strong>Proposition.</strong> If $A$ is commutative then $L_a = R_a$ for every $a$, $L(A) = R(A) = L(A)'$, and the regular representation is an isomorphism of $A$ onto a commutative subalgebra of $\operatorname{End}(A)$ equal to its own commutant.</p>
+<p><strong>Proof.</strong> Commutativity gives $ax = xa$ for all $x$, hence $L_a = R_a$; then $L(A) = R(A) = L(A)'$ by the commutant proposition. The image is commutative because $A$ is, and being equal to its commutant it is a maximal commutative subalgebra of $\operatorname{End}(A)$; the operators are read further through the Gelfand transform in <em>Multiplication Operators on a Commutative Algebra</em>.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="the-matrix-algebra">The matrix algebra</h3>
+<p>For $A = M_n(F)$ the regular representation is faithful of dimension $n^2$, its commutant is the algebra of right multiplications $R(A) \cong A^{\mathrm{op}}$, and the centre is $F1$, so the intersection of the two commutants is the scalars. The regular module is $S^{\oplus n}$ with $S = F^n$, and $L(A)$ is the closed subalgebra $\{a \otimes I_n\}$ of $\operatorname{End}_F(F^n \otimes F^n)$. Each left multiplication has trace $n\operatorname{tr}(a)$ and each right multiplication trace $n\operatorname{tr}(b)$.</p>
+<h3 id="the-commutative-algebra">The commutative algebra</h3>
+<p>For a commutative $A$ the two one-sided representations coincide and equal their own commutant. The multiplication operators of <em>Multiplication Operators on a Commutative Algebra</em> are these operators, and the regular representation of a commutative ring is the first example of an abelian algebra of operators acting on itself; for $A = F[x]/(x^2)$, the operator of multiplication by $x$ is nilpotent of index two, and the representation is faithful but the algebra is not semisimple.</p>
+<h3 id="the-upper-triangular-algebra">The upper triangular algebra</h3>
+<p>Let $A$ be the algebra of upper triangular $2 \times 2$ matrices over $F$, of dimension three. It is not semisimple, and $A$ is not semisimple as a left module over itself: the flag $0 \subset Fe_1 \subset F^2$ has no invariant complement. Nevertheless the regular representation is closed, $L(A)'' = L(A)$, and its commutant is $R(A) \cong A^{\mathrm{op}}$, of dimension three. The example shows that the double centraliser conclusion can hold without the semisimplicity hypothesis of the theorem; what fails in the non-semisimple case is the conclusion that the commutant is a product of matrix algebras.</p>
+<h3 id="the-group-algebra">The group algebra</h3>
+<p>For a finite group $G$ and a field $F$ in which $|G|$ is invertible, the group algebra $F[G]$ is semisimple, so the regular representation is closed and the regular module is $\bigoplus_i S_i^{\oplus \dim S_i}$. The left regular representation is the faithful representation whose character is $|G|$ at the identity and zero elsewhere; its decomposition into the irreducible representations is the classical form of the isotypic decomposition, and the operator $L_g$ permutes the basis and has trace zero for $g \neq 1$.</p>
+<h2 id="summary">Summary</h2>
+<p>The left regular representation $L : A \to \operatorname{End}(A)$, $a \mapsto L_a$ with $L_a(x) = ax$, is an injective unital ring homomorphism whose image is a subalgebra isomorphic to $A$; the right regular representation $R$ is an injective unital anti-homomorphism with image $A^{\mathrm{op}}$, it commutes with $L$, and it is the commutant, $L(A)' = R(A) \cong A^{\mathrm{op}}$, dually $R(A)' = L(A)$. The intersection of the two commutants is the image of the centre, $L(A)' \cap R(A)' = L(Z(A)) \cong \operatorname{End}_{A\text{-}A}(A)$. The bicommutant satisfies $L(A) \subseteq L(A)''$ and $L(A)' = L(A)'''$, and the double centraliser theorem gives $L(A)'' = L(A)$ whenever $A$ is semisimple; the theorem is sufficient and not necessary. Read as operators, the ideals are the invariant subspaces, the isotypic decomposition of the semisimple regular module becomes a decomposition with multiplicities $m_i = \dim_{D_i}S_i$ and $\dim_F A = \sum_i m_i \dim_F S_i$, and for the matrix algebra the regular operators are the two Kronecker factors, $L_a = a \otimes I$ and $R_b = I \otimes b^{\mathsf{T}}$, with traces $n\operatorname{tr}(a)$ and $n\operatorname{tr}(b)$. The commutative case is the one in which the representation equals its own commutant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a(x) = ax$</td>
+<td>the left multiplication; the left regular representation is $a \mapsto L_a$</td>
+</tr>
+<tr>
+<td>$R_a(x) = xa$</td>
+<td>the right multiplication, an anti-homomorphism</td>
+</tr>
+<tr>
+<td>$L(A)$, $R(A)$</td>
+<td>the images, subalgebras isomorphic to $A$ and to $A^{\mathrm{op}}$</td>
+</tr>
+<tr>
+<td>$L_aR_b = R_bL_a$</td>
+<td>the two representations commute; $x \mapsto axb$</td>
+</tr>
+<tr>
+<td>$L(A)' = R(A) \cong A^{\mathrm{op}}$</td>
+<td>the commutant is the opposite representation</td>
+</tr>
+<tr>
+<td>$L(A)' \cap R(A)' = L(Z(A))$</td>
+<td>the centre as the bimodule endomorphisms</td>
+</tr>
+<tr>
+<td>$L(A) \subseteq L(A)''$, $L(A)' = L(A)'''$</td>
+<td>the bicommutant laws</td>
+</tr>
+<tr>
+<td>$L(A)'' = L(A)$</td>
+<td>the double centraliser, for a semisimple $A$</td>
+</tr>
+<tr>
+<td>${}_AA \cong \bigoplus_i S_i^{\oplus m_i}$, $m_i = \dim_{D_i}S_i$</td>
+<td>the isotypic decomposition of the semisimple regular module</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(L_a) = n\operatorname{tr}(a)$</td>
+<td>the trace of a regular operator on $M_n(F)$</td>
+</tr>
+<tr>
+<td>$L_a = a \otimes I_n$, $R_b = I_n \otimes b^{\mathsf{T}}$</td>
+<td>the matrix algebra operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for the regular representation, its commutant and the double centraliser theorem.</li>
+<li>Nicolas Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1998), for the representation of a ring on itself and the isotypic decomposition of the regular module.</li>
+<li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Interscience, 1962), for the regular representation of an algebra and its decomposition.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the density theorem and the image of an algebra in its endomorphism ring.</li>
+<li>Joseph J. Rotman, <em>Advanced Modern Algebra</em> (American Mathematical Society, 2nd ed. 2010), for the equivalence between modules and representations and the regular representation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

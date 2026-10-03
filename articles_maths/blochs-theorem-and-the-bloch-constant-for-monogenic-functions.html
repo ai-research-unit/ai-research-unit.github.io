@@ -54,9 +54,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>Bloch's theorem is the foundational statement of geometric function theory that goes beyond the Schwarz lemma: a holomorphic function of one variable with unit derivative at the origin cannot collapse, and its image must contain a disk of a size fixed in advance. The size, the <strong>Bloch constant</strong>, is an absolute number, and its exact value is one of the celebrated open problems of the subject. This article states and proves the analogue of the theorem for <strong>monogenic functions</strong> of the reduced quaternions, where the derivative is the hypercomplex derivative of the Cauchy–Riemann operator in $\mathbb{R}^3$ and the image contains balls in the three-dimensional reduced-quaternion space $\mathcal{A}\cong\mathbb{R}^3$. The analogy is not a metaphor: the classical proof of Bloch's theorem is reproduced through the two auxiliary estimates of the source, and it yields an explicit absolute radius.</p>
 <p>The article is the Bloch-type companion of <em>Quaternion Regular Functions</em>, which owns the reduced-quaternion operator, the Riesz system, the hypercomplex derivative, the hyperholomorphic constants and the spherical monogenics used here without proof. The classical theory is <em>Complex Harmonic Analysis</em> for the Bloch space and the one-variable background, and the comparison with the conformal case is made throughout. The Bloch theorem and the Bloch constant are the only objects claimed here: the estimates of the hypercomplex derivative and of its primitive are the ones proved by the source, restated in this corpus's notation and conventions.</p>
-<p>Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $x = x_0+x_1e_1+x_2e_2$ ranges over $\mathbb{R}^3$; $D = \partial_0+e_1\partial_1+e_2\partial_2$ and $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is <strong>monogenic</strong> when $Df = 0$, and its <strong>hypercomplex derivative</strong> is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the <strong>maximum modulus function</strong> is</p>
+<p>Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_0+q_1e_1+q_2e_2$ ranges over $\mathbb{R}^3$; $D = \partial_0+e_1\partial_1+e_2\partial_2$ and $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is <strong>monogenic</strong> when $Df = 0$, and its <strong>hypercomplex derivative</strong> is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the <strong>maximum modulus function</strong> is</p>
 <p>$$
-\mathcal{M}(f,r) = \max_{|x|\leq r}|f(x)| .
+\mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)| .
 $$</p>
 <p>The space of monogenic functions on $B_r$ is written $\mathcal{R}^+(B_r;\mathcal{A})$, and the homogeneous monogenic polynomials of degree $n$ form a space $\mathcal{R}^+(B_r;\mathcal{A};n)$ of dimension $2n+3$.</p>
 <h2 id="the-classical-theorem-and-its-constant">The Classical Theorem and Its Constant</h2>
@@ -113,28 +113,28 @@ $$</p>
 <h2 id="the-two-auxiliary-estimates">The Two Auxiliary Estimates</h2>
 <p>The two estimates bound the hypercomplex derivative and its primitive by the growth of the maximum modulus of the derivative. They are the exact analogues of the estimates Estermann used in his proof of Picard's great theorem, and they are the only analytic input of the theorem. Both are quoted from the source and rest on the orthogonality of the spherical monogenics to the hyperholomorphic constants.</p>
 <h3 id="the-estimate-for-the-hypercomplex-derivative">The estimate for the hypercomplex derivative</h3>
-<p><strong>Lemma (derivative estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then for $0\leq|x|<r$,</p>
+<p><strong>Lemma (derivative estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then for $0\leq|\tilde q|<r$,</p>
 <p>$$
-\left|(\tfrac12\bar D)f(x)-(\tfrac12\bar D)f(0)\right| \leq \frac{6\,|x|\,r}{(r-|x|)^2}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
+\left|(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right| \leq \frac{6\,|\tilde q|\,r}{(r-|\tilde q|)^2}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
 $$</p>
 <p>The estimate says that the hypercomplex derivative cannot oscillate faster than the inverse square of the distance to the boundary; it is the exact counterpart of the elementary Cauchy estimate in one variable, with the same exponent of the boundary distance.</p>
 <h3 id="the-estimate-for-the-primitive">The estimate for the primitive</h3>
-<p><strong>Lemma (primitive estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$ with $f(0) = 0$. Then for $0\leq|x|<r$,</p>
+<p><strong>Lemma (primitive estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$ with $f(0) = 0$. Then for $0\leq|\tilde q|<r$,</p>
 <p>$$
-\left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(x)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{2}{\sqrt3}\,\frac{|x|^2\left(4|x|^2+9r^2-11|x|r\right)}{(r-|x|)^3}\;\mathcal{M}\!\left((\tfrac12\bar D)f-(\tfrac12\bar D)f(0),\,r\right).
+\left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{2}{\sqrt3}\,\frac{|\tilde q|^2\left(4|\tilde q|^2+9r^2-11|\tilde q|r\right)}{(r-|\tilde q|)^3}\;\mathcal{M}\!\left((\tfrac12\bar D)f-(\tfrac12\bar D)f(0),\,r\right).
 $$</p>
-<p>Here $\mathcal{P}_r$ is the primitive taken on $B_r$, normalised to be orthogonal to the hyperholomorphic constants; the expression in braces is $f$ minus its linear term, the analogue of the classical $f(z)-f'(0)z$.</p>
+<p>Here $\mathcal{P}_r$ is the primitive taken on $B_r$, normalised to be orthogonal to the hyperholomorphic constants; the expression in braces is $f$ minus its linear term, the analogue of the classical $f(A)-f'(0)A$.</p>
 <h3 id="the-combined-estimate">The combined estimate</h3>
 <p>Combining the two lemmas gives the single inequality on which the radius depends.</p>
-<p><strong>Proposition (Estermann-type estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then for $0\leq|x|<r$,</p>
+<p><strong>Proposition (Estermann-type estimate).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then for $0\leq|\tilde q|<r$,</p>
 <p>$$
-\left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(x)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{12}{\sqrt3}\,\frac{|x|^3\,r\left(4|x|^2+9r^2-11|x|r\right)}{(r-|x|)^5}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
+\left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{12}{\sqrt3}\,\frac{|\tilde q|^3\,r\left(4|\tilde q|^2+9r^2-11|\tilde q|r\right)}{(r-|\tilde q|)^5}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
 $$</p>
-<p>The linear term $\mathbf{X}^{0,\dagger}_1(x)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(x) = x_0+\tfrac12x_1e_1+\tfrac12x_2e_2$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.</p>
+<p>The linear term $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.</p>
 <h3 id="the-orthogonality-and-why-it-is-the-crux">The orthogonality, and why it is the crux</h3>
 <p>The estimate above is the reason the monogenic theory admits a Bloch theorem at all, and the reason is the Fourier decomposition $f = g+h$ of <em>Quaternion Regular Functions</em>: $g$, the main part, is orthogonal to the hyperholomorphic constants, and $h$ is a constant for the hypercomplex derivative.</p>
-<p><strong>Proposition (the linear term is the derivative's representative).</strong> For monogenic $f$, the main part of $f$ of degree one is $\mathbf{X}^{0,\dagger}_1(x)\,(\tfrac12\bar D)f(0)$, and $\mathbf{X}^{0,\dagger}_1$ is the monogenic polynomial of degree one with $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$.</p>
-<p>The proposition is the exact analogue of the fact that the linear part of a holomorphic function is $f'(0)z$. In one variable the statement is trivial; here it is the content of the degree-one ladder and of the orthogonality of the main part to the hyperholomorphic constants, and it is what allows $f$ to be compared with its own derivative.</p>
+<p><strong>Proposition (the linear term is the derivative's representative).</strong> For monogenic $f$, the main part of $f$ of degree one is $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, and $\mathbf{X}^{0,\dagger}_1$ is the monogenic polynomial of degree one with $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$.</p>
+<p>The proposition is the exact analogue of the fact that the linear part of a holomorphic function is $f'(0)A$. In one variable the statement is trivial; here it is the content of the degree-one ladder and of the orthogonality of the main part to the hyperholomorphic constants, and it is what allows $f$ to be compared with its own derivative.</p>
 <h2 id="the-auxiliary-function-and-its-maximum">The Auxiliary Function and Its Maximum</h2>
 <p>The radius is extracted from the maximum of the elementary real function that the combined estimate produces.</p>
 <p><strong>Definition (the auxiliary function).</strong> For $r>0$ and $0<\rho<r$,</p>
@@ -166,18 +166,18 @@ $$</p>
 <p>$$
 R = \left(\frac{1}{60}-\frac{62192}{20511149}\sqrt3\right)r\left|(\tfrac12\bar D)f(a)\right| .
 $$</p>
-<p><em>Proof.</em> After the translation that sends $f(a)$ to $0$, the combined estimate bounds $|\mathcal{P}_r\{(\tfrac12\bar D)f(x)-(\tfrac12\bar D)f(a)\}|$ by $4\sqrt3\,\rho^3r(4\rho^2+9r^2-11\rho r)/(r-\rho)^5$ times $\mathcal{M}((\tfrac12\bar D)f,r)$, and on $|x| = \rho$ the reverse triangle inequality gives</p>
+<p><em>Proof.</em> After the translation that sends $f(a)$ to $0$, the combined estimate bounds $|\mathcal{P}_r\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(a)\}|$ by $4\sqrt3\,\rho^3r(4\rho^2+9r^2-11\rho r)/(r-\rho)^5$ times $\mathcal{M}((\tfrac12\bar D)f,r)$, and on $|\tilde q| = \rho$ the reverse triangle inequality gives</p>
 <p>$$
-|f(x)-f(a)| \geq \frac{\rho}{2}\left|(\tfrac12\bar D)f(a)\right| - \left|\mathcal{P}_r\{(\tfrac12\bar D)f(x)-(\tfrac12\bar D)f(a)\}\right| .
+|f(\tilde q)-f(a)| \geq \frac{\rho}{2}\left|(\tfrac12\bar D)f(a)\right| - \left|\mathcal{P}_r\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(a)\}\right| .
 $$</p>
-<p>Inserting the hypothesis $\mathcal{M}\leq 2|(\tfrac12\bar D)f(a)|$ multiplies the second term by $2$, and the resulting lower bound is exactly $g(\rho)|(\tfrac12\bar D)f(a)|$; the maximum lemma then gives the asserted radius at $|x| = r/30$.</p>
+<p>Inserting the hypothesis $\mathcal{M}\leq 2|(\tfrac12\bar D)f(a)|$ multiplies the second term by $2$, and the resulting lower bound is exactly $g(\rho)|(\tfrac12\bar D)f(a)|$; the maximum lemma then gives the asserted radius at $|\tilde q| = r/30$.</p>
 <h2 id="the-global-statement">The Global Statement</h2>
 <p>The passage from the local statement to a statement with no pointwise hypothesis is the argument of Estermann, and it costs a factor of two in the radius.</p>
 <p><strong>Theorem (the global normalisation).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$. Then the image of $f$ contains balls of radius</p>
 <p>$$
-R = \left(\frac{1}{120}-\frac{31096}{20511149}\sqrt3\right)\mathcal{M}\!\left(\left|(\tfrac12\bar D)f(x)\right|(1-|x|),\,r\right).
+R = \left(\frac{1}{120}-\frac{31096}{20511149}\sqrt3\right)\mathcal{M}\!\left(\left|(\tfrac12\bar D)f(\tilde q)\right|(1-|\tilde q|),\,r\right).
 $$</p>
-<p><em>Proof.</em> Assign to $f$ the continuous function $|(\tfrac12\bar D)f(x)|(1-|x|)$ on the closed ball; it attains its maximum at a point $q\in B_r$. With $t = \tfrac12(1-|q|)$ one has $\mathcal{M}(|(\tfrac12\bar D)f|(1-|x|),r) = 2t\,|(\tfrac12\bar D)f(q)|$ and $B_t(q)\subseteq B_r$, and $1-|x|\geq t$ on $B_t(q)$. From $|(\tfrac12\bar D)f(x)|(1-|x|)\leq 2t|(\tfrac12\bar D)f(q)|$ it follows that $|(\tfrac12\bar D)f(x)|\leq 2|(\tfrac12\bar D)f(q)|$ on $B_t(q)$, so the local lemma applies on the ball $B_t(q)$ and gives balls of radius $(1/60-62192\sqrt3/20511149)\,t\,|(\tfrac12\bar D)f(q)|$. Substituting the value of $t$ halves the local constant, producing the factor $1/120$ and the coefficient $31096 = 62192/2$ of $\sqrt3$.</p>
+<p><em>Proof.</em> Assign to $f$ the continuous function $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)$ on the closed ball; it attains its maximum at a point $q\in B_r$. With $t = \tfrac12(1-|q|)$ one has $\mathcal{M}(|(\tfrac12\bar D)f|(1-|\tilde q|),r) = 2t\,|(\tfrac12\bar D)f(q)|$ and $B_t(q)\subseteq B_r$, and $1-|\tilde q|\geq t$ on $B_t(q)$. From $|(\tfrac12\bar D)f(\tilde q)|(1-|\tilde q|)\leq 2t|(\tfrac12\bar D)f(q)|$ it follows that $|(\tfrac12\bar D)f(\tilde q)|\leq 2|(\tfrac12\bar D)f(q)|$ on $B_t(q)$, so the local lemma applies on the ball $B_t(q)$ and gives balls of radius $(1/60-62192\sqrt3/20511149)\,t\,|(\tfrac12\bar D)f(q)|$. Substituting the value of $t$ halves the local constant, producing the factor $1/120$ and the coefficient $31096 = 62192/2$ of $\sqrt3$.</p>
 <p><strong>Theorem (Bloch's theorem for monogenic functions).</strong> Let $f\in\mathcal{R}^+(B_r;\mathcal{A})$ with $\left|(\tfrac12\bar D)f(0)\right| = 1$. Then the image of $f$ contains balls of radius</p>
 <p>$$
 R = \frac{1}{120}-\frac{31096}{20511149}\sqrt3 .
@@ -205,7 +205,7 @@ $$</p>
 <h2 id="comparison-with-the-classical-theory">Comparison with the Classical Theory</h2>
 <p>The comparison isolates three differences between the monogenic and the conformal settings.</p>
 <p><strong>The size of the constant.</strong> The monogenic constant $0.0057074\ldots$ is about fifteen times smaller than $1/12$. The monogenic maps are not conformal, the value space is three-dimensional, and the argument stops at the Estermann normalisation, which is a two-step estimate rather than the extremal one-variable argument. The source itself records that the improvement of the radius is left open, and no claim is made here that the number is best possible.</p>
-<p><strong>The role of the hyperholomorphic constants.</strong> In one variable the subtraction $f(z)-f'(0)z$ removes a term that is already of the form $z$ times a holomorphic function, and the constants of the theory are the constants. In the reduced-quaternion theory the space of hyperholomorphic constants has dimension two in every degree and the main part must be split off from it by an orthogonal projection; the $2n+3$ count of the monogenic polynomials of degree $n$ is the measure of that extra structure. The theorem is available because that projection exists.</p>
+<p><strong>The role of the hyperholomorphic constants.</strong> In one variable the subtraction $f(A)-f'(0)A$ removes a term that is already of the form $A$ times a holomorphic function, and the constants of the theory are the constants. In the reduced-quaternion theory the space of hyperholomorphic constants has dimension two in every degree and the main part must be split off from it by an orthogonal projection; the $2n+3$ count of the monogenic polynomials of degree $n$ is the measure of that extra structure. The theorem is available because that projection exists.</p>
 <p><strong>Earlier hyperholomorphic Bloch constants.</strong> A Bloch constant for hyperholomorphic functions of a quaternionic variable was obtained earlier by Rochon, and the theorem above is the three-dimensional reduced-quaternion analogue with a different function class and a different, explicit constant. The classical higher-dimensional theory of Bloch constants for holomorphic maps of the ball is that of Chen and Gauthier; the monogenic theory is not contained in it, because the monogenic maps are not holomorphic in several complex variables.</p>
 <h2 id="summary">Summary</h2>
 <p>The Bloch theorem for monogenic functions of the reduced quaternions says that a monogenic function of the ball whose hypercomplex derivative at the origin has modulus one has an image containing a ball of the absolute radius $R = 1/120-(31096/20511149)\sqrt3 = 0.005707451\ldots$, independent of the function. The proof is the classical one, run on the reduced-quaternion theory: two estimates bound the hypercomplex derivative and its primitive by the growth of the maximum modulus of the derivative, an elementary real function $g$ supplies the radius through the position of its unique maximum, a local normalisation gives a ball of radius $g(r/30)\,$ times the derivative at a point, and Estermann's maximum argument removes the pointwise hypothesis at the cost of a factor of two.</p>
@@ -245,7 +245,7 @@ $$</p>
 <td>Monogenic primitive, and its normalisation to $B_r$ orthogonal to the constants</td>
 </tr>
 <tr>
-<td>$\mathbf{X}^{0,\dagger}_1(x) = x_0+\tfrac12x_1e_1+\tfrac12x_2e_2$</td>
+<td>$\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$</td>
 <td>Degree-one monogenic polynomial; $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$</td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@ $$</p>
 <td>Homogeneous monogenic polynomials of degree $n$; $\dim = 2n+3$</td>
 </tr>
 <tr>
-<td>$\mathcal{M}(f,r) = \max_{|x|\leq r}|f(x)|$</td>
+<td>$\mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)|$</td>
 <td>Maximum modulus function</td>
 </tr>
 <tr>

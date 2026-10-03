@@ -94,27 +94,27 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous quaternion-valued function on a compact set is bounded and attains its maximum and minimum modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(q_n)$ of quaternions <strong>converges</strong> to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(\tilde q_n)$ of quaternions <strong>converges</strong> to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies |q_n - L| < \epsilon.
+n \geq N \implies |\tilde q_n - L| < \epsilon.
 $$</p>
-<p>We write $q_n \to L$ or $\lim_{n \to \infty} q_n = L$.</p>
-<p><strong>Uniqueness.</strong> If $q_n \to L$ and $q_n \to L'$, then $L = L'$.</p>
-<p><strong>Componentwise convergence.</strong> Write $q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then</p>
+<p>We write $\tilde q_n \to L$ or $\lim_{n \to \infty} \tilde q_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $\tilde q_n \to L$ and $\tilde q_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $\tilde q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then</p>
 <p>$$
-q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
+\tilde q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
 $$</p>
 <p>This is the reason quaternion convergence is no harder than real convergence: it is four real convergences in parallel.</p>
 <p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
-<p><strong>Algebra of limits.</strong> If $q_n \to L$ and $r_n \to M$, then</p>
+<p><strong>Algebra of limits.</strong> If $\tilde q_n \to L$ and $\tilde r_n \to M$, then</p>
 <p>$$
-q_n + r_n \to L + M, \qquad q_n r_n \to L M, \qquad q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
+\tilde q_n + \tilde r_n \to L + M, \qquad \tilde q_n \tilde r_n \to L M, \qquad \tilde q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
 $$</p>
 <p>The quotient rule holds because $\mathbb{H}$ is a division algebra: every non-zero quaternion is invertible.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(\tilde q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies |q_m - q_n| < \epsilon.
+m, n \geq N \implies |\tilde q_m - \tilde q_n| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{H}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{H}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the four components.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -127,7 +127,7 @@ $$</p>
 \tilde q \in D, \; 0 < |\tilde q - q_0| < \delta \implies |f(\tilde q) - L| < \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
-<p><strong>Sequential criterion.</strong> $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(q_n)$ in $D \setminus \{q_0\}$ with $q_n \to q_0$, we have $f(q_n) \to L$.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(\tilde q_n)$ in $D \setminus \{q_0\}$ with $\tilde q_n \to q_0$, we have $f(\tilde q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.</p>
 <h3 id="continuity">Continuity</h3>
 <p>A function $f : D \to \mathbb{H}$ is <strong>continuous at</strong> $q_0 \in D$ if</p>
@@ -158,13 +158,13 @@ $$</p>
 <p>The limit is taken in the quaternion space, so $h$ can approach $0$ from any direction. This is a much stronger condition than real differentiability: the difference quotient must tend to the same limit along every path. The condition is so strong that it forces the function to be affine.</p>
 <p><strong>Theorem.</strong> Quaternion differentiability implies continuity. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
-<p>Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and $u, v_k : U \to \mathbb{R}$.</p>
+<p>Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $u, v_k : U \to \mathbb{R}$.</p>
 <p><strong>Theorem.</strong> $f$ is quaternion differentiable at $q_0$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $q_0$ and satisfy the <strong>quaternion Cauchy–Riemann equations</strong></p>
 <p>$$
-\frac{\partial u}{\partial x_0} = \frac{\partial v_1}{\partial x_1} = \frac{\partial v_2}{\partial x_2} = \frac{\partial v_3}{\partial x_3},
+\frac{\partial u}{\partial q_0} = \frac{\partial v_1}{\partial q_1} = \frac{\partial v_2}{\partial q_2} = \frac{\partial v_3}{\partial q_3},
 $$</p>
 <p>$$
-\frac{\partial u}{\partial x_k} = -\frac{\partial v_k}{\partial x_0}, \qquad k = 1, 2, 3,
+\frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_0}, \qquad k = 1, 2, 3,
 $$</p>
 <p>and the remaining equations obtained by cyclically permuting the indices $1, 2, 3$.</p>
 <p><strong>Proof.</strong> Write $h = h_0 + h_1 e_1 + h_2 e_2 + h_3 e_3$. The difference quotient is</p>
@@ -188,12 +188,12 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>A function $f : U \to \mathbb{H}$ is <strong>monogenic</strong> (or <strong>regular</strong>) if it satisfies the <strong>Cauchy–Riemann–Fueter equation</strong></p>
 <p>$$
-\frac{\partial f}{\partial x_0} + e_1 \frac{\partial f}{\partial x_1} + e_2 \frac{\partial f}{\partial x_2} + e_3 \frac{\partial f}{\partial x_3} = 0.
+\frac{\partial f}{\partial q_0} + e_1 \frac{\partial f}{\partial q_1} + e_2 \frac{\partial f}{\partial q_2} + e_3 \frac{\partial f}{\partial q_3} = 0.
 $$</p>
-<p>Equivalently, if $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ is the <strong>Cauchy–Riemann operator</strong>, then $f$ is monogenic iff $D f = 0$.</p>
-<p>The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial_{x_0} - e_1 \partial_{x_1} - e_2 \partial_{x_2} - e_3 \partial_{x_3}$ satisfy</p>
+<p>Equivalently, if $D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$ is the <strong>Cauchy–Riemann operator</strong>, then $f$ is monogenic iff $D f = 0$.</p>
+<p>The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3}$ satisfy</p>
 <p>$$
-D \bar{D} = \bar{D} D = \partial_{x_0}^2 + \partial_{x_1}^2 + \partial_{x_2}^2 + \partial_{x_3}^2 = \Delta,
+D \bar{D} = \bar{D} D = \partial_{q_0}^2 + \partial_{q_1}^2 + \partial_{q_2}^2 + \partial_{q_3}^2 = \Delta,
 $$</p>
 <p>where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:</p>
 <p>$$
@@ -312,11 +312,11 @@ $$</p>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>Cauchy–Riemann operator</strong> is</p>
 <p>$$
-D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
+D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}.
 $$</p>
 <p>It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by</p>
 <p>$$
-D f = \partial_{x_0} f + e_1 \partial_{x_1} f + e_2 \partial_{x_2} f + e_3 \partial_{x_3} f.
+D f = \partial_{q_0} f + e_1 \partial_{q_1} f + e_2 \partial_{q_2} f + e_3 \partial_{q_3} f.
 $$</p>
 <h3 id="properties_1">Properties</h3>
 <p><strong>Factorization of the Laplacian.</strong> $\bar{D} D = \Delta$.</p>
@@ -329,7 +329,7 @@ $$</p>
 <h3 id="the-relation-to-the-cauchyriemann-operator_1">The Relation to the Cauchy–Riemann Operator</h3>
 <p>In complex analysis, the Cauchy–Riemann operator is</p>
 <p>$$
-\bar{\partial} = \frac{1}{2}(\partial_x + i \partial_y),
+\bar{\partial} = \frac{1}{2}(\partial_a + i \partial_{a'}),
 $$</p>
 <p>and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.</p>
 <h2 id="applications">Applications</h2>
@@ -465,7 +465,7 @@ $$</p>
 <td>Open ball of radius $r$</td>
 </tr>
 <tr>
-<td>$D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$</td>
+<td>$D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$</td>
 <td>Cauchy–Riemann operator</td>
 </tr>
 <tr>

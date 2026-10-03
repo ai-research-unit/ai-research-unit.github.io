@@ -59,15 +59,15 @@
 <h3 id="complete-lattices-and-the-distribution-axiom">Complete Lattices and the Distribution Axiom</h3>
 <p><strong>Definition.</strong> A <strong>frame</strong> is a complete lattice $L$ in which the finite meets distribute over arbitrary joins:</p>
 <p>$$
-a \wedge \bigvee_{i \in I} b_i = \bigvee_{i \in I} (a \wedge b_i)
+\alpha \wedge \bigvee_{i \in I} \beta_i = \bigvee_{i \in I} (\alpha \wedge \beta_i)
 $$</p>
-<p>for every $a \in L$ and every family $(b_i)_{i \in I}$. A <strong>frame homomorphism</strong> is a map $f : L \to M$ preserving finite meets, including the empty meet $1$, and arbitrary joins, including the empty join $0$.</p>
+<p>for every $\alpha \in L$ and every family $(\beta_i)_{i \in I}$. A <strong>frame homomorphism</strong> is a map $f : L \to M$ preserving finite meets, including the empty meet $1$, and arbitrary joins, including the empty join $0$.</p>
 <p><strong>Theorem.</strong> Every frame is a complete Heyting algebra, with</p>
 <p>$$
-a \to b = \bigvee \{c \in L : c \wedge a \leq b\},
+\alpha \to \beta = \bigvee \{\gamma \in L : \gamma \wedge \alpha \leq \beta\},
 $$</p>
 <p>and conversely every complete Heyting algebra is a frame. The underlying lattice of a frame is distributive.</p>
-<p><strong>Proof.</strong> The element displayed is the largest $c$ with $c\wedge a \leq b$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $a\wedge b_i \leq a\wedge\bigvee_i b_i$, so $\bigvee_i(a\wedge b_i)\leq a\wedge\bigvee_i b_i$, while $a\wedge\bigvee_i b_i \leq \bigvee_i(a\wedge b_i)$ follows by applying the adjunction to the element $\bigvee_i(a\wedge b_i)$, which satisfies $c\wedge a\leq \bigvee_i b_i$. Distributivity is immediate from the axiom applied to finite joins.</p>
+<p><strong>Proof.</strong> The element displayed is the largest $\gamma$ with $\gamma\wedge \alpha \leq \beta$ by the distribution axiom, so it is the relative pseudocomplement and residuation holds; this is the definition of a complete Heyting algebra. Conversely, in a complete Heyting algebra the distribution axiom follows from residuation: for every $i$ one has $\alpha\wedge \beta_i \leq \alpha\wedge\bigvee_i \beta_i$, so $\bigvee_i(\alpha\wedge \beta_i)\leq \alpha\wedge\bigvee_i \beta_i$, while $\alpha\wedge\bigvee_i \beta_i \leq \bigvee_i(\alpha\wedge \beta_i)$ follows by applying the adjunction to the element $\bigvee_i(\alpha\wedge \beta_i)$, which satisfies $\gamma\wedge \alpha\leq \bigvee_i \beta_i$. Distributivity is immediate from the axiom applied to finite joins.</p>
 <p><strong>Example (open sets).</strong> Let $X$ be a topological space. The open sets, ordered by inclusion, form a frame $\mathcal{O}(X)$: the join of a family of open sets is its union, the meet of two is the intersection, and the distribution axiom is the set-theoretic identity</p>
 <p>$$
 U \cap \bigcup_{i} V_i = \bigcup_{i} (U \cap V_i).
@@ -76,20 +76,20 @@ $$</p>
 <p><strong>Example (ideals and down-sets).</strong> Let $R$ be a commutative ring and let $\operatorname{Id}(R)$ be the set of ideals ordered by inclusion; it is a complete lattice under arbitrary sums and intersections, and it is a frame. Its elements are the ideals, not the ring. Let $P$ be a poset and let $\operatorname{Dn}(P)$ be the set of down-sets ordered by inclusion; arbitrary unions and intersections of down-sets are down-sets, and the distribution axiom holds, so $\operatorname{Dn}(P)$ is a frame. These two frames are the homes of the ideal theory of <em>Rings</em> and of the order theory of <em>Order Theory and Lattices</em>.</p>
 <p><strong>Example (complete Boolean algebras).</strong> Every complete Boolean algebra is a frame, since a Boolean algebra is distributive and the join is arbitrary; by the theorem above it is therefore a complete Heyting algebra. A Boolean algebra is a frame exactly when it is complete as a lattice, so an incomplete Boolean algebra is not one. The measure algebra of <em>Measure Theory and Integration</em> is the standard atomless complete Boolean algebra, and being atomless it is not spatial as a locale, its point space being empty.</p>
 <h3 id="nuclei-and-sublocales">Nuclei and Sublocales</h3>
-<p><strong>Definition.</strong> A <strong>nucleus</strong> on a frame $L$ is a map $j : L \to L$ that is monotone and extensive ($a \leq j(a)$), idempotent, and preserves finite meets: $j(a\wedge b) = j(a)\wedge j(b)$ and $j(1) = 1$. The <strong>fixed-point set</strong> is</p>
+<p><strong>Definition.</strong> A <strong>nucleus</strong> on a frame $L$ is a map $j : L \to L$ that is monotone and extensive ($\alpha \leq j(\alpha)$), idempotent, and preserves finite meets: $j(\alpha\wedge \beta) = j(\alpha)\wedge j(\beta)$ and $j(1) = 1$. The <strong>fixed-point set</strong> is</p>
 <p>$$
-L_j = \{a \in L : j(a) = a\}.
+L_j = \{\alpha \in L : j(\alpha) = \alpha\}.
 $$</p>
-<p><strong>Theorem.</strong> For every nucleus $j$ on a frame $L$, the fixed-point set $L_j$ is a frame for the order inherited from $L$, with joins $\bigvee_i a_i$ computed as $j\bigl(\bigvee_i a_i\bigr)$ and meets computed as in $L$; the map $j$ is a frame homomorphism onto $L_j$, and this correspondence is a bijection between nuclei and <strong>sublocales</strong> of $L$.</p>
-<p><strong>Proof.</strong> The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i a_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei.</p>
-<p><strong>Example (the double-negation nucleus).</strong> The map $j(a) = \neg\neg a$ is a nucleus on any frame, as in <em>Heyting Algebras and Intuitionistic Logic</em>; its fixed points are the <strong>regular elements</strong>. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the <strong>Booleanization</strong> of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.</p>
+<p><strong>Theorem.</strong> For every nucleus $j$ on a frame $L$, the fixed-point set $L_j$ is a frame for the order inherited from $L$, with joins $\bigvee_i \alpha_i$ computed as $j\bigl(\bigvee_i \alpha_i\bigr)$ and meets computed as in $L$; the map $j$ is a frame homomorphism onto $L_j$, and this correspondence is a bijection between nuclei and <strong>sublocales</strong> of $L$.</p>
+<p><strong>Proof.</strong> The set $L_j$ is closed under meets because $j$ preserves them, and it contains $1$. The join of a family in $L_j$ must be the least fixed point above the family, which is $j(\bigvee_i \alpha_i)$; that this is fixed follows from idempotence and that it is the least follows from monotonicity. The distribution axiom in $L_j$ follows from the distribution axiom in $L$ and the preservation of meets. The correspondence with surjective frame homomorphisms is the standard equivalence between quotient frames and nuclei.</p>
+<p><strong>Example (the double-negation nucleus).</strong> The map $j(\alpha) = \neg\neg \alpha$ is a nucleus on any frame, as in <em>Heyting Algebras and Intuitionistic Logic</em>; its fixed points are the <strong>regular elements</strong>. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the <strong>Booleanization</strong> of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.</p>
 <p><strong>Example (the open-set nucleus).</strong> For a subspace $Y \subseteq X$, the map $U \mapsto U \cap Y$ on $\mathcal{O}(X)$ is not a nucleus; the correct construction is to take the frame $\mathcal{O}(Y)$, which is the image of the frame homomorphism $\mathcal{O}(X) \to \mathcal{O}(Y)$, $U \mapsto U\cap Y$. The nuclei of $\mathcal{O}(X)$ are exactly the sublocales, which include more than the subspaces: the sublocales of a locale form a frame under the reverse of inclusion, and the empty sublocale and the whole locale are among them.</p>
 <h2 id="locales-and-pointfree-topology">Locales and Pointfree Topology</h2>
 <h3 id="the-category-of-locales">The Category of Locales</h3>
 <p>A continuous map $f : X \to Y$ of topological spaces induces a frame homomorphism $f^{-1} : \mathcal{O}(Y) \to \mathcal{O}(X)$, $V \mapsto f^{-1}(V)$, because preimages preserve unions and finite intersections. The assignment $X \mapsto \mathcal{O}(X)$ is therefore a contravariant functor on spaces, and it is turned into a covariant functor by passing to the opposite category.</p>
 <p><strong>Definition.</strong> The category <strong>Loc</strong> of <strong>locales</strong> is the opposite of the category <strong>Frm</strong> of frames and frame homomorphisms; a morphism $L \to M$ of locales is a frame homomorphism $M \to L$. The <strong>open-set functor</strong> is $\mathcal{O} : \mathbf{Top} \to \mathbf{Loc}$, and the <strong>points</strong> of a locale $L$ are the frame homomorphisms $p : L \to \mathbf{2}$; the set of points is written $\operatorname{pt}(L)$, with the topology whose open sets are</p>
 <p>$$
-\operatorname{pt}(L)_a = \{p : p(a) = 1\}, \qquad a \in L .
+\operatorname{pt}(L)_\alpha = \{p : p(\alpha) = 1\}, \qquad \alpha \in L .
 $$</p>
 <p>The assignment $L \mapsto \operatorname{pt}(L)$ is a functor $\operatorname{pt} : \mathbf{Loc} \to \mathbf{Top}$.</p>
 <p><strong>Theorem.</strong> The functor $\mathcal{O}$ is left adjoint to $\operatorname{pt}$:</p>
@@ -97,11 +97,11 @@ $$</p>
 \operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L)),
 $$</p>
 <p>the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $U \mapsto 1$ if $x \in U$ and $0$ otherwise.</p>
-<p><strong>Proof.</strong> A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $a \mapsto \{x : g(x)(a) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.</p>
+<p><strong>Proof.</strong> A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $\alpha \mapsto \{x : g(x)(\alpha) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.</p>
 <h3 id="spatial-and-sober-objects">Spatial and Sober Objects</h3>
 <p><strong>Definition.</strong> A locale $L$ is <strong>spatial</strong> if the frame homomorphism</p>
 <p>$$
-L \longrightarrow \mathcal{O}(\operatorname{pt}(L)), \qquad a \mapsto \operatorname{pt}(L)_a,
+L \longrightarrow \mathcal{O}(\operatorname{pt}(L)), \qquad \alpha \mapsto \operatorname{pt}(L)_\alpha,
 $$</p>
 <p>is an isomorphism; equivalently, if the points separate the elements of $L$. A topological space $X$ is <strong>sober</strong> if every nonempty closed irreducible subset of $X$ is the closure of a unique point.</p>
 <p><strong>Theorem.</strong> The adjunction $\mathcal{O} \dashv \operatorname{pt}$ restricts to an equivalence between the full subcategory of sober spaces and the full subcategory of spatial locales. In particular the open-set functor is full and faithful on sober spaces, and every locale is the quotient of a spatial locale by a sublocale.</p>
@@ -118,10 +118,10 @@ $$</p>
 <h3 id="the-axioms">The Axioms</h3>
 <p><strong>Definition.</strong> A <strong>quantale</strong> is a complete lattice $Q$ with an associative binary operation $\cdot$ that distributes over arbitrary joins on both sides:</p>
 <p>$$
-a \cdot \bigvee_i b_i = \bigvee_i (a \cdot b_i), \qquad \bigvee_i a_i \cdot b = \bigvee_i (a_i \cdot b) .
+\alpha \cdot \bigvee_i \beta_i = \bigvee_i (\alpha \cdot \beta_i), \qquad \bigvee_i \alpha_i \cdot \beta = \bigvee_i (\alpha_i \cdot \beta) .
 $$</p>
-<p>A quantale is <strong>unital</strong> if it has an element $e$ with $e\cdot a = a\cdot e = a$ for all $a$, and <strong>commutative</strong> if $\cdot$ is commutative. A <strong>quantale homomorphism</strong> preserves arbitrary joins and the multiplication, and the unit when there is one.</p>
-<p><strong>Theorem.</strong> A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $a \cdot b = a \wedge b$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.</p>
+<p>A quantale is <strong>unital</strong> if it has an element $e$ with $e\cdot \alpha = \alpha\cdot e = \alpha$ for all $\alpha$, and <strong>commutative</strong> if $\cdot$ is commutative. A <strong>quantale homomorphism</strong> preserves arbitrary joins and the multiplication, and the unit when there is one.</p>
+<p><strong>Theorem.</strong> A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $\alpha \cdot \beta = \alpha \wedge \beta$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.</p>
 <p><strong>Proof.</strong> In a frame the meet is commutative and associative with unit $1$, and it distributes over arbitrary joins by the frame axiom, so the frame is a quantale with $\cdot = \wedge$. Conversely, if in a quantale the multiplication is the meet, then the distribution axiom of the frame is exactly the distribution of $\cdot$ over arbitrary joins, and the lattice is complete by hypothesis.</p>
 <p><strong>Example (relations).</strong> Let $X$ be a set and let $Q = \mathcal{P}(X \times X)$ be the set of binary relations on $X$, ordered by inclusion. The join is union, and the product is composition of relations:</p>
 <p>$$
@@ -131,20 +131,20 @@ $$</p>
 <p><strong>Example (ideals of a ring).</strong> Let $R$ be a commutative ring and let $\operatorname{Id}(R)$ be its frame of ideals. The product of ideals, $IJ = \{\sum_k i_k j_k : i_k \in I, j_k \in J\}$, is associative and distributes over arbitrary sums of ideals, and the unit ideal $R$ is the unit; hence $\operatorname{Id}(R)$ is a commutative unital quantale whose join is the sum of ideals. The ideals form both a frame and a quantale, and the two structures are different: the frame operations are intersection and sum, the quantale product is the ideal product. This is the algebraic example that shows the quantale axioms to be strictly weaker than the frame axioms.</p>
 <p><strong>Example (the free quantale).</strong> For a monoid $M$, the power set $\mathcal{P}(M)$ with</p>
 <p>$$
-A \cdot B = \{ab : a \in A,\ b \in B\}, \qquad \bigvee_i A_i = \bigcup_i A_i
+A \cdot B = \{\alpha\beta : \alpha \in A,\ \beta \in B\}, \qquad \bigvee_i A_i = \bigcup_i A_i
 $$</p>
 <p>is a unital quantale, and it is the free unital quantale on the monoid $M$; when $M$ is the free monoid on a set, this is the quantale of formal languages. The construction is the quantale analogue of the free Boolean algebra of <em>Boolean Algebras and Lattices</em>.</p>
 <h3 id="modules-involutions-and-the-relation-to-frames">Modules, Involutions and the Relation to Frames</h3>
-<p><strong>Definition.</strong> A <strong>left module</strong> over a quantale $Q$ is a complete lattice $M$ with an action $Q \times M \to M$, $(a,x)\mapsto a\cdot x$, associative and distributing over joins in both variables. An <strong>involution</strong> on a quantale is a map ${}^{*}$ with $a^{**} = a$, $(a\cdot b)^{*} = b^{*}\cdot a^{*}$ and $(\bigvee_i a_i)^{*} = \bigvee_i a_i^{*}$; the pair is an <strong>involutive quantale</strong>.</p>
+<p><strong>Definition.</strong> A <strong>left module</strong> over a quantale $Q$ is a complete lattice $M$ with an action $Q \times M \to M$, $(\alpha,x)\mapsto \alpha\cdot x$, associative and distributing over joins in both variables. An <strong>involution</strong> on a quantale is a map ${}^{*}$ with $\alpha^{**} = \alpha$, $(\alpha\cdot \beta)^{*} = \beta^{*}\cdot \alpha^{*}$ and $(\bigvee_i \alpha_i)^{*} = \bigvee_i \alpha_i^{*}$; the pair is an <strong>involutive quantale</strong>.</p>
 <p><strong>Theorem.</strong> Let $Q$ be an involutive quantale. Then the involution is an order isomorphism, and its fixed points,</p>
 <p>$$
-Q^{*} = \{a \in Q : a^{*} = a\},
+Q^{*} = \{\alpha \in Q : \alpha^{*} = \alpha\},
 $$</p>
 <p>form a frame for the order inherited from $Q$, with the joins and meets of $Q$.</p>
 <p><strong>Proof.</strong> The involution preserves arbitrary joins by hypothesis and is its own inverse, so it is a poset isomorphism and preserves arbitrary meets as well; the fixed points are therefore closed under arbitrary joins and meets, and they inherit the distribution of the multiplication from $Q$.</p>
 <p><strong>Example (the quantale of a group).</strong> Let $G$ be a group and let $Q = \mathcal{P}(G)$ with convolution</p>
 <p>$$
-A \cdot B = \{ab : a \in A,\ b \in B\}, \qquad A^{*} = \{a^{-1} : a \in A\}.
+A \cdot B = \{\alpha\beta : \alpha \in A,\ \beta \in B\}, \qquad A^{*} = \{\alpha^{-1} : \alpha \in A\}.
 $$</p>
 <p>This is an involutive unital quantale, with unit $\{e\}$, and it is the quantale of the group algebra at the level of subsets. Its fixed points under ${}^{*}$ are the inverse-closed subsets, and they form a frame; the subgroups are among them but do not themselves form a distributive lattice in general, the subgroup lattice of $\mathbb{Z}/2 \times \mathbb{Z}/2$ being the non-distributive lattice $M_3$ of <em>Effect Algebras and Orthomodular Lattices</em>.</p>
 <p><strong>Remark.</strong> The quantale of a $\mathbb{C}$-algebra — the lattice of closed left ideals with the product inherited from the algebra — is the standard operator-algebraic example; it is studied in <em>Operator Algebras</em> and is not developed here. The construction shows that the quantale axioms apply far beyond the frame case, and it is the reason quantales appear in the algebraic foundations of topology, of logic and of representation theory. No analysis is used in the present article.</p>
@@ -174,12 +174,12 @@ $$</p>
 <td>Arbitrary join and meet in a frame</td>
 </tr>
 <tr>
-<td>$a \to b$</td>
-<td>Relative pseudocomplement, $\bigvee\{c : c\wedge a \leq b\}$</td>
+<td>$\alpha \to \beta$</td>
+<td>Relative pseudocomplement, $\bigvee\{\gamma : \gamma\wedge \alpha \leq \beta\}$</td>
 </tr>
 <tr>
-<td>$\neg a$</td>
-<td>Pseudocomplement, $a \to 0$</td>
+<td>$\neg \alpha$</td>
+<td>Pseudocomplement, $\alpha \to 0$</td>
 </tr>
 <tr>
 <td>$\mathcal{O}(X)$</td>

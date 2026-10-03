@@ -59,40 +59,40 @@
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The dual plane $\mathbb{D}'$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:</p>
 <p>$$
-\chi_\xi(Z) = e^{2\pi i \langle \xi, Z \rangle}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(A) = e^{2\pi i \langle \xi, A \rangle}, \qquad \xi \in \mathbb{D}',
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, Z \rangle = u x + v y, \qquad \xi = u + v\varepsilon, \quad Z = x + y\varepsilon.
+\langle \xi, A \rangle = u a + v a', \qquad \xi = u + v\varepsilon, \quad A = a + \varepsilon a'.
 $$</p>
-<p>The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $x$ and the infinitesimal coefficient $v$ with $y$. It is <strong>not</strong> $\operatorname{Re}(\bar{\xi} Z)$: for dual numbers $\operatorname{Re}(\bar{\xi} Z) = u x$, because the term $-vy\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.</p>
+<p>The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $a$ and the infinitesimal coefficient $v$ with $a'$. It is <strong>not</strong> $\operatorname{Re}(\bar{\xi} A)$: for dual numbers $\operatorname{Re}(\bar{\xi} A) = u a$, because the term $-v a'\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.</p>
 <p>So at the level of the additive group, dual harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a degenerate pairing.</p>
 <h3 id="the-dual-characters">The Dual Characters</h3>
 <p>The <strong>dual characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{D}'$:</p>
 <p>$$
-\chi_\xi(Z) = e^{\langle \xi, Z \rangle \varepsilon}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(A) = e^{\langle \xi, A \rangle \varepsilon}, \qquad \xi \in \mathbb{D}',
 $$</p>
 <p>where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
-\chi_\xi(Z) = 1 + \langle \xi, Z \rangle \varepsilon.
+\chi_\xi(A) = 1 + \langle \xi, A \rangle \varepsilon.
 $$</p>
-<p>These characters take values in the affine line $1 + \mathbb{D}' \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Z \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
+<p>These characters take values in the affine line $1 + \mathbb{D}' \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, A \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
 <p>So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathrm{M}$, so their deviation from the identity lies in the nilpotent maximal ideal.</p>
 <h2 id="the-dual-fourier-transform">The Dual Fourier Transform</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>dual Fourier transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
 <p>$$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(Z) e^{- \langle \xi, Z \rangle \varepsilon} \, dZ,
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(A) e^{- \langle \xi, A \rangle \varepsilon} \, dA,
 $$</p>
-<p>where $dZ$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
+<p>where $dA$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(Z) (1 - \langle \xi, Z \rangle \varepsilon) \, dZ.
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(A) (1 - \langle \xi, A \rangle \varepsilon) \, dA.
 $$</p>
 <p>So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.</p>
 <h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
-<p>Write $f(Z) = u(x, y) + v(x, y) \varepsilon$. Then</p>
+<p>Write $f(A) = u(a, a') + v(a, a') \varepsilon$. Then</p>
 <p>$$
-\hat{f}(\xi) = \int_{\mathbb{R}^2} u(x, y) \, dx \, dy + \left( \int_{\mathbb{R}^2} v(x, y) \, dx \, dy - \int_{\mathbb{R}^2} u(x, y) \langle \xi, Z \rangle \, dx \, dy \right) \varepsilon.
+\hat{f}(\xi) = \int_{\mathbb{R}^2} u(a, a') \, da \, da' + \left( \int_{\mathbb{R}^2} v(a, a') \, da \, da' - \int_{\mathbb{R}^2} u(a, a') \langle \xi, A \rangle \, da \, da' \right) \varepsilon.
 $$</p>
 <p>So the dual Fourier transform has:</p>
 <ul>
@@ -113,9 +113,9 @@ $$</p>
 <tbody>
 <tr>
 <td>Characters</td>
-<td>$e^{i\xi x}$, bounded</td>
-<td>$e^{j\xi x}$, unbounded</td>
-<td>$1 + \xi x \varepsilon$, linear growth</td>
+<td>$e^{i\xi a}$, bounded</td>
+<td>$e^{j\xi a}$, unbounded</td>
+<td>$1 + \xi a \varepsilon$, linear growth</td>
 </tr>
 <tr>
 <td>Transform converges</td>
@@ -148,23 +148,23 @@ $$</p>
 <h3 id="definition_1">Definition</h3>
 <p>On a bounded interval $[-T, T]^2$, the dual Fourier transform</p>
 <p>$$
-\hat{f}(\xi) = \int_{[-T, T]^2} f(Z) e^{- \langle \xi, Z \rangle \varepsilon} \, dZ
+\hat{f}(\xi) = \int_{[-T, T]^2} f(A) e^{- \langle \xi, A \rangle \varepsilon} \, dA
 $$</p>
 <p>converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as above: the real part is the total integral of the real part of $f$, and the infinitesimal part is the total integral of the infinitesimal part minus the first moment of the real part.</p>
 <h3 id="inversion">Inversion</h3>
 <p>The inversion formula is</p>
 <p>$$
-f(Z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\langle \xi, Z \rangle \varepsilon} \, d\xi,
+f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\langle \xi, A \rangle \varepsilon} \, d\xi,
 $$</p>
 <p>under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to</p>
 <p>$$
-f(Z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \langle \xi, Z \rangle \varepsilon) \, d\xi.
+f(A) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \langle \xi, A \rangle \varepsilon) \, d\xi.
 $$</p>
 <p>The real part of the inversion recovers the total integral, and the infinitesimal part recovers the first moment. So the inversion is not a true inversion: it recovers only the total integral and the first moment of the function, not the function itself. This is the degeneracy of the dual Fourier transform.</p>
 <h3 id="why-the-inversion-is-not-complete">Why the Inversion Is Not Complete</h3>
-<p>The dual Fourier transform loses information because the characters $1 + \xi x \varepsilon$ are linear in $\xi$ and do not oscillate. The transform is essentially the map</p>
+<p>The dual Fourier transform loses information because the characters $1 + \xi a \varepsilon$ are linear in $\xi$ and do not oscillate. The transform is essentially the map</p>
 <p>$$
-f \mapsto \left( \int f, \int f \cdot Z \right),
+f \mapsto \left( \int f, \int f \cdot A \right),
 $$</p>
 <p>which records only the zeroth and first moments. Higher moments are lost. So the dual Fourier transform is not invertible on $L^1$, and it does not have a Plancherel theorem in the usual sense.</p>
 <p>This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform.</p>
@@ -172,7 +172,7 @@ $$</p>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>convolution</strong> of $f, g : \mathbb{D}' \to \mathbb{D}'$ is</p>
 <p>$$
-(f * g)(Z) = \int_{\mathbb{D}'} f(Z - W) g(W) \, dW,
+(f * g)(A) = \int_{\mathbb{D}'} f(A - B) g(B) \, dB,
 $$</p>
 <p>whenever the integral converges. This is the convolution on the additive group $\mathbb{D}' \cong \mathbb{R}^2$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
@@ -201,7 +201,7 @@ $$</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
 <p>A sequence $(\phi_n)$ in $L^1(\mathbb{D}')$ is an <strong>approximate identity</strong> if</p>
 <p>$$
-\int_{\mathbb{D}'} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Z\|_E > \delta} |\phi_n(Z)| \, dZ \to 0
+\int_{\mathbb{D}'} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|A\|_E > \delta} |\phi_n(A)| \, dA \to 0
 $$</p>
 <p>for every $\delta > 0$.</p>
 <p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^p(\mathbb{D}')$ for $1 \leq p < \infty$, then</p>
@@ -215,7 +215,7 @@ $$</p>
 <h3 id="operations-on-distributions">Operations on Distributions</h3>
 <p><strong>Differentiation.</strong> For $T \in \mathcal{S}'(\mathbb{D}')$ and $\phi \in \mathcal{S}(\mathbb{D}')$,</p>
 <p>$$
-\langle \partial_x T, \phi \rangle = -\langle T, \partial_x \phi \rangle, \qquad \langle \partial_y T, \phi \rangle = -\langle T, \partial_y \phi \rangle.
+\langle \partial_a T, \phi \rangle = -\langle T, \partial_a \phi \rangle, \qquad \langle \partial_{a'} T, \phi \rangle = -\langle T, \partial_{a'} \phi \rangle.
 $$</p>
 <p><strong>Multiplication by a function.</strong> For $f \in C^\infty(\mathbb{D}')$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{D}')$,</p>
 <p>$$
@@ -242,13 +242,13 @@ $$</p>
 <h3 id="definition_4">Definition</h3>
 <p>The <strong>dual Hilbert transform</strong> of $f : \mathbb{R} \to \mathbb{R}$ is</p>
 <p>$$
-Hf(x) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(y)}{x - y} \, dy,
+Hf(a) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(a')}{a - a'} \, da',
 $$</p>
 <p>where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on the real part of the dual function.</p>
 <h3 id="the-dual-hilbert-transform-on-math112">The Dual Hilbert Transform on $\mathbb{D}'$</h3>
 <p>For $f : \mathbb{D}' \to \mathbb{D}'$, the dual Hilbert transform is defined by</p>
 <p>$$
-Hf(Z) = Hf_r(x) + Hf_i(x) \varepsilon,
+Hf(A) = Hf_r(a) + Hf_i(a) \varepsilon,
 $$</p>
 <p>where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual Hilbert transform is the ordinary real Hilbert transform applied to each component separately.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
@@ -265,13 +265,13 @@ $$</p>
 <h3 id="the-dual-maximal-function">The Dual Maximal Function</h3>
 <p>The <strong>dual Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{D}')$ is</p>
 <p>$$
-Mf(Z) = \sup_{r > 0} \frac{1}{|B(Z, r)|} \int_{B(Z, r)} \|f(W)\|_E \, dW,
+Mf(A) = \sup_{r > 0} \frac{1}{|B(A, r)|} \int_{B(A, r)} \|f(B)\|_E \, dB,
 $$</p>
-<p>where $B(Z, r)$ is the Euclidean ball of radius $r$ centered at $Z$, and $|B(Z, r)|$ is its area.</p>
+<p>where $B(A, r)$ is the Euclidean ball of radius $r$ centered at $A$, and $|B(A, r)|$ is its area.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
 <p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D}')$ and every $\lambda > 0$,</p>
 <p>$$
-|\{Z : Mf(Z) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+|\{A : Mf(A) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$</p>
 <p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^p(\mathbb{D}')$ for $1 < p \leq \infty$.</p>
 <p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
@@ -285,14 +285,14 @@ $$</p>
 <h3 id="singular-integrals">Singular Integrals</h3>
 <p>A <strong>dual Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{D}') \to L^2(\mathbb{D}')$ with a kernel $K : \mathbb{D}' \times \mathbb{D}' \to \mathbb{D}'$ such that</p>
 <p>$$
-Tf(Z) = \int_{\mathbb{D}'} K(Z, W) f(W) \, dW
+Tf(A) = \int_{\mathbb{D}'} K(A, B) f(B) \, dB
 $$</p>
-<p>for $Z \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
+<p>for $A \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
 <p>$$
-\|K(Z, W)\|_E \leq \frac{C}{\|Z - W\|_E},
+\|K(A, B)\|_E \leq \frac{C}{\|A - B\|_E},
 $$</p>
 <p>$$
-\|K(Z, W) - K(Z', W)\|_E \leq C \frac{\|Z - Z'\|_E^\delta}{\|Z - W\|_E^{1+\delta}}, \qquad \|Z - Z'\|_E < \frac{1}{2} \|Z - W\|_E,
+\|K(A, B) - K(A', B)\|_E \leq C \frac{\|A - A'\|_E^\delta}{\|A - B\|_E^{1+\delta}}, \qquad \|A - A'\|_E < \frac{1}{2} \|A - B\|_E,
 $$</p>
 <p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
 <p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^p(\mathbb{D}')$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
@@ -312,16 +312,16 @@ $$</p>
 $$</p>
 <p>So the dual Mellin transform has a real part that is the ordinary Mellin transform of the real part of $f$, and an infinitesimal part that involves the Mellin transform of the infinitesimal part plus the Mellin transform of the real part against $\log t$.</p>
 <h3 id="relation-to-the-dual-fourier-transform">Relation to the Dual Fourier Transform</h3>
-<p>Under the change of variables $t = e^x$, the Mellin transform becomes the dual Fourier transform on the real line:</p>
+<p>Under the change of variables $t = e^a$, the Mellin transform becomes the dual Fourier transform on the real line:</p>
 <p>$$
-\mathcal{M} f(\sigma + \tau \varepsilon) = \int_{-\infty}^\infty e^{(\sigma + \tau \varepsilon) x} f(e^x) \, dx = \hat{g}(\tau),
+\mathcal{M} f(\sigma + \tau \varepsilon) = \int_{-\infty}^\infty e^{(\sigma + \tau \varepsilon) a} f(e^a) \, da = \hat{g}(\tau),
 $$</p>
-<p>where $g(x) = e^{\sigma x} f(e^x)$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.</p>
+<p>where $g(a) = e^{\sigma a} f(e^a)$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.</p>
 <h2 id="the-radon-transform">The Radon Transform</h2>
 <h3 id="definition_6">Definition</h3>
 <p>The <strong>dual Radon transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
 <p>$$
-Rf(\theta, t) = \int_{L(\theta, t)} f(Z) \, ds,
+Rf(\theta, t) = \int_{L(\theta, t)} f(A) \, ds,
 $$</p>
 <p>where $L(\theta, t)$ is the line with normal direction $(\cos\theta, \sin\theta)$ and signed distance $t$ from the origin, and $ds$ is the Euclidean arc length.</p>
 <h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
@@ -334,7 +334,7 @@ $$</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
 <p>$$
-f(Z) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\langle \xi, Z \rangle \varepsilon} \, d\sigma \, d\theta,
+f(A) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\langle \xi, A \rangle \varepsilon} \, d\sigma \, d\theta,
 $$</p>
 <p>where $\xi = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
@@ -357,7 +357,7 @@ $$</p>
 <h3 id="the-dual-wavelet-transform">The Dual Wavelet Transform</h3>
 <p>In the dual setting, the wavelet $\psi$ is allowed to be dual-valued, and the transform becomes</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}'} f(Z) \overline{\psi\left( \frac{Z - b}{a} \right)} \, dZ, \qquad a \in (\mathbb{D}')^\times, \; b \in \mathbb{D}'.
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}'} f(A) \overline{\psi\left( \frac{A - b}{a} \right)} \, dA, \qquad a \in (\mathbb{D}')^\times, \; b \in \mathbb{D}'.
 $$</p>
 <p>The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.</p>
 <h2 id="the-structure-principle">The Structure Principle</h2>
@@ -392,11 +392,15 @@ $$</p>
 <td>Dual unit, $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
-<td>$Z = x + y\varepsilon$</td>
-<td>General dual number, $x = \operatorname{Re} Z$, $y = \operatorname{Inf} Z$</td>
+<td>$A = a + \varepsilon a'$</td>
+<td>General dual number, $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$</td>
 </tr>
 <tr>
-<td>$\chi_\xi(Z) = 1 + \langle \xi, Z \rangle \varepsilon$</td>
+<td>$B = b + \varepsilon b'$</td>
+<td>Second dual number, $b = \operatorname{Re} B$, $b' = \operatorname{Inf} B$</td>
+</tr>
+<tr>
+<td>$\chi_\xi(A) = 1 + \langle \xi, A \rangle \varepsilon$</td>
 <td>Dual character</td>
 </tr>
 <tr>

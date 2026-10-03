@@ -93,11 +93,11 @@ $$</p>
 <p>with the ordinary measures on $\mathbb{R}^4$, the property following from the factorization. On the indefinite subspaces the same operator factors a wave operator, and the elliptic consequences are lost.</p>
 <h2 id="the-fueter-construction">The Fueter Construction</h2>
 <h3 id="the-axial-extension-of-a-holomorphic-function">The Axial Extension of a Holomorphic Function</h3>
-<p>Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(z) = u(x,y) + iv(x,y)$ with $z = x+iy$ and $u,v$ real-valued, so that $u,v$ are harmonic and satisfy $u_x = v_y$, $u_y = -v_x$. The <strong>axial extension</strong> of $f_0$ is</p>
+<p>Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(C) = u(c,c') + iv(c,c')$ with $C = c+ic'$ and $u,v$ real-valued, so that $u,v$ are harmonic and satisfy $u_c = v_{c'}$, $u_{c'} = -v_c$. The <strong>axial extension</strong> of $f_0$ is</p>
 <p>$$
 \tilde{f}_0(\tilde{Q}) = u(q_0,\rho) + \hat{\mathbf{q}}\,v(q_0,\rho) ,
 $$</p>
-<p>defined for $\rho > 0$ by replacing $x$ by $q_0$, $y$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.</p>
+<p>defined for $\rho > 0$ by replacing $c$ by $q_0$, $c'$ by $\rho$, and the complex imaginary unit $i$ by $\hat{\mathbf{q}}$; the replacement is legitimate because $\hat{\mathbf{q}}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.</p>
 <h3 id="fueters-theorem">Fueter's Theorem</h3>
 <p><strong>Theorem (Fueter's construction).</strong> Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $\tilde{f}_0$. Then</p>
 <p>$$
@@ -106,7 +106,7 @@ $$</p>
 <p>is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.</p>
 <p><strong>Proof.</strong> For $g = A(q_0,\rho) + \hat{\mathbf{q}}B(q_0,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla} = (\partial_0A - \partial_\rho B - 2B/\rho) + \hat{\mathbf{q}}(\partial_0B + \partial_\rho A)$, using $\hat{\mathbf{q}}^2 = -1$ and $\sum_{j,k}(\partial_{q_k}\hat{q}_j)e_ke_j = (-3-\hat{\mathbf{q}}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial_0A = \partial_\rho B + 2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.</p>
 <h3 id="the-kernel-and-injectivity">The Kernel and Injectivity</h3>
-<p><strong>Proposition.</strong> The map $\tau(f_0) = \Delta_4\tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(z) = az+b$ with $a,b \in \mathbb{C}$.</p>
+<p><strong>Proposition.</strong> The map $\tau(f_0) = \Delta_4\tilde{f}_0$ vanishes if and only if $f_0$ is affine, $f_0(C) = aC+b$ with $a,b \in \mathbb{C}$.</p>
 <p><strong>Proof.</strong> $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_0)$ and $v = c(q_0)\rho$; then $c' = 0$ and $u = cq_0+d$ with $c,d \in \mathbb{R}$, and complex linearity gives all affine functions; conversely $\Delta_4$ annihilates affine functions.</p>
 <p>So $\tau$ is injective exactly on the holomorphic functions whose Taylor coefficients vanish to order two.</p>
 <h2 id="the-axial-and-slice-approach">The Axial and Slice Approach</h2>
@@ -121,7 +121,7 @@ $$</p>
 <p>eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmonic, while $\Delta_4B = 2B/\rho^2$. On the full algebra, where regularity is the pair of quaternionic regularities, an axially symmetric function is regular if and only if each idempotent component is, so the axial coefficients carry a pair of systems, one per half.</p>
 <h3 id="the-fuetersce-theorem-and-its-hypotheses">The Fueter–Sce Theorem and Its Hypotheses</h3>
 <p><strong>Theorem (Fueter–Sce).</strong> Let $n \geq 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $\tilde{f}_0$ to $\mathbb{R}^{n+1}$. Then $\tilde{F} = \Delta^{(n-1)/2}\tilde{f}_0$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.</p>
-<p>Three hypotheses are needed and none can be dropped: $f_0$ must be <strong>holomorphic</strong> on the disc, so its Taylor series converges there; the construction has the <strong>affine kernel</strong> $az+b$, so injectivity requires the Taylor coefficients to vanish to order two; and the <strong>parity</strong> $(n-1)/2$ must be a non-negative integer, so $n$ must be odd.</p>
+<p>Three hypotheses are needed and none can be dropped: $f_0$ must be <strong>holomorphic</strong> on the disc, so its Taylor series converges there; the construction has the <strong>affine kernel</strong> $aC+b$, so injectivity requires the Taylor coefficients to vanish to order two; and the <strong>parity</strong> $(n-1)/2$ must be a non-negative integer, so $n$ must be odd.</p>
 <h2 id="power-series-representations">Power Series Representations</h2>
 <p>A series with split biquaternion coefficients placed on the right, $f(\tilde{Q}) = \sum_{n\ge0}\tilde{Q}^na_n$, converges absolutely on the set where $\limsup_n\left(\|\tilde{Q}^n\|_E\,\|a_n\|_E\right)^{1/n} < 1$; in particular it converges for $\tilde{Q}$ in the quaternion subspace with $\|\tilde{Q}\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, because on the quaternion subspace the Euclidean norm is multiplicative and $\|\tilde{Q}^n\|_E = \|\tilde{Q}\|_E^n$. Its sum is <strong>slice-regular</strong>, holomorphic on each slice; slice-regular functions form a different class from the Fueter-regular ones. For example $\tilde{Q}\mapsto\tilde{Q}$ is slice-regular, but</p>
 <p>$$

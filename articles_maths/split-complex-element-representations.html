@@ -58,11 +58,11 @@
 <h3 id="definition">Definition</h3>
 <p>A <strong>representation</strong> of $\mathbb{D}$ is a real vector space $V$ together with a bilinear map</p>
 <p>$$
-\rho : \mathbb{D} \times V \to V, \qquad \rho(Z, v) = Z \cdot v,
+\rho : \mathbb{D} \times V \to V, \qquad \rho(A, v) = A \cdot v,
 $$</p>
 <p>satisfying</p>
 <p>$$
-Z \cdot (W \cdot v) = (ZW) \cdot v, \qquad 1 \cdot v = v.
+A \cdot (B \cdot v) = (AB) \cdot v, \qquad 1 \cdot v = v.
 $$</p>
 <p>Equivalently, a representation is an algebra homomorphism</p>
 <p>$$
@@ -86,9 +86,9 @@ $$</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The <strong>regular representation</strong> of $\mathbb{D}$ is $\mathbb{D}$ acting on itself by left multiplication:</p>
 <p>$$
-\rho_{\mathrm{reg}}(Z) W = Z W, \qquad Z, W \in \mathbb{D}.
+\rho_{\mathrm{reg}}(A) B = A B, \qquad A, B \in \mathbb{D}.
 $$</p>
-<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho_{\mathrm{reg}}(Z) = Z$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho_{\mathrm{reg}}(A) = A$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.</p>
 <p>Under the idempotent decomposition,</p>
 <p>$$
 \mathbb{D} = \mathbb{D} \Pi_1 \oplus \mathbb{D} \Pi_2,
@@ -102,12 +102,12 @@ $$</p>
 <p>The two one-dimensional representations of $\mathbb{D}$ are:</p>
 <p><strong>The $+$ representation.</strong> On $\mathbb{R}$, defined by</p>
 <p>$$
-\rho_+(Z) = Z_+ = a + b, \qquad Z = a + j b.
+\rho_+(A) = A_+ = a + a', \qquad A = a + ja'.
 $$</p>
 <p>This is the representation that sends $j$ to $+1$.</p>
 <p><strong>The $-$ representation.</strong> On $\mathbb{R}$, defined by</p>
 <p>$$
-\rho_-(Z) = Z_- = a - b, \qquad Z = a + j b.
+\rho_-(A) = A_- = a - a', \qquad A = a + ja'.
 $$</p>
 <p>This is the representation that sends $j$ to $-1$.</p>
 <p>Both are algebra homomorphisms $\mathbb{D} \to \mathbb{R}$, and they are the only ones. Indeed, if $\rho : \mathbb{D} \to \mathbb{R}$ is an algebra homomorphism, then $\rho(1) = 1$ and $\rho(j)^2 = \rho(j^2) = \rho(1) = 1$, so $\rho(j) = \pm 1$. These are exactly $\rho_+$ and $\rho_-$.</p>
@@ -122,13 +122,13 @@ $$</p>
 <p>$$
 V = V_+ \oplus V_-,
 $$</p>
-<p>with $V_+ = \Pi_1 \cdot V$ and $V_- = \Pi_2 \cdot V$. On $V_+$, the action of $Z = a + j b$ is</p>
+<p>with $V_+ = \Pi_1 \cdot V$ and $V_- = \Pi_2 \cdot V$. On $V_+$, the action of $A = a + ja'$ is</p>
 <p>$$
-Z \cdot v = (a + b) v, \qquad v \in V_+,
+A \cdot v = (a + a') v, \qquad v \in V_+,
 $$</p>
-<p>because $Z \Pi_1 = (a + b) \Pi_1$. So $V_+$ is a direct sum of copies of $\rho_+$. Similarly, on $V_-$,</p>
+<p>because $A \Pi_1 = (a + a') \Pi_1$. So $V_+$ is a direct sum of copies of $\rho_+$. Similarly, on $V_-$,</p>
 <p>$$
-Z \cdot v = (a - b) v, \qquad v \in V_-,
+A \cdot v = (a - a') v, \qquad v \in V_-,
 $$</p>
 <p>so $V_-$ is a direct sum of copies of $\rho_-$.</p>
 <h3 id="irreducible-representations">Irreducible Representations</h3>
@@ -174,7 +174,7 @@ P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+ P_- = P_- P_+ = 0, \qquad P_+ + P_- 
 $$</p>
 <p>So $V = V_+ \oplus V_-$ with $V_+ = \operatorname{im} P_+$ and $V_- = \operatorname{im} P_-$.</p>
 <h3 id="the-action-on-each-component">The Action on Each Component</h3>
-<p>On $V_+$, the action of $Z = a + j b$ is multiplication by $a + b$. On $V_-$, the action is multiplication by $a - b$. So the representation is completely determined by the pair of scalars $(a + b, a - b)$, which is exactly the image of $Z$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
+<p>On $V_+$, the action of $A = a + ja'$ is multiplication by $a + a'$. On $V_-$, the action is multiplication by $a - a'$. So the representation is completely determined by the pair of scalars $(a + a', a - a')$, which is exactly the image of $A$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
 <p>This is the representation-theoretic content of the isomorphism: a representation of $\mathbb{D}$ is the same thing as a pair of real vector spaces, one for each idempotent.</p>
 <h2 id="indecomposable-representations">Indecomposable Representations</h2>
 <h3 id="definition_2">Definition</h3>
@@ -183,13 +183,13 @@ $$</p>
 <p><strong>Proof.</strong> By the classification theorem, $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$. Each summand is indecomposable because it is one-dimensional and any non-zero subrepresentation is the whole thing. Conversely, any indecomposable representation is a single copy of $\rho_+$ or $\rho_-$.</p>
 <p>So $\mathbb{D}$ is a <strong>semisimple</strong> algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a special feature of the split complex algebra, and it is the reason its representation theory is so simple.</p>
 <h2 id="comparison-with-the-complex-case">Comparison with the Complex Case</h2>
-<p>The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(Z) = a \pm b$ on $\mathbb{R}$.</p>
+<p>The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(A) = a \pm a'$ on $\mathbb{R}$.</p>
 <p>The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irreducible representation, whereas $\mathbb{D}$ is not a division algebra: its two irreducible representations are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.</p>
 <h2 id="the-dual-representation">The Dual Representation</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by</p>
 <p>$$
-(\rho^*(Z) f)(v) = f(\rho(Z) v), \qquad Z \in \mathbb{D}, \; f \in V^*, \; v \in V.
+(\rho^*(A) f)(v) = f(\rho(A) v), \qquad A \in \mathbb{D}, \; f \in V^*, \; v \in V.
 $$</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
@@ -203,16 +203,16 @@ $$</p>
 $$</p>
 <p>satisfies</p>
 <p>$$
-\langle \rho^*(Z) f, v \rangle = \langle f, \rho(Z) v \rangle.
+\langle \rho^*(A) f, v \rangle = \langle f, \rho(A) v \rangle.
 $$</p>
 <p>This is the definition of the dual representation, written as a pairing.</p>
 <h2 id="tensor-products">Tensor Products</h2>
 <h3 id="definition_4">Definition</h3>
 <p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by</p>
 <p>$$
-Z \cdot (v \otimes w) = (Z \cdot v) \otimes (Z \cdot w).
+A \cdot (v \otimes w) = (A \cdot v) \otimes (A \cdot w).
 $$</p>
-<p>This is the componentwise (diagonal) action. The alternatives $Z \cdot (v \otimes w) = (Z \cdot v) \otimes w$ and $Z \cdot (v \otimes w) = v \otimes (Z \cdot w)$ agree with each other only when $V$ and $W$ have the same character, so neither of them is the definition.</p>
+<p>This is the componentwise (diagonal) action. The alternatives $A \cdot (v \otimes w) = (A \cdot v) \otimes w$ and $A \cdot (v \otimes w) = v \otimes (A \cdot w)$ agree with each other only when $V$ and $W$ have the same character, so neither of them is the definition.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
 <p><strong>Associativity.</strong> $(U \otimes V) \otimes W \cong U \otimes (V \otimes W)$.</p>
 <p><strong>Commutativity.</strong> $V \otimes W \cong W \otimes V$.</p>
@@ -226,7 +226,7 @@ $$</p>
 <h3 id="definition_5">Definition</h3>
 <p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a linear map $T : V \to W$ such that</p>
 <p>$$
-T(Z \cdot v) = Z \cdot T(v), \qquad Z \in \mathbb{D}, \; v \in V.
+T(A \cdot v) = A \cdot T(v), \qquad A \in \mathbb{D}, \; v \in V.
 $$</p>
 <p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}}(V, W)$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
@@ -259,6 +259,10 @@ $$</p>
 <tr>
 <td>$\mathbb{D}$</td>
 <td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$A = a + ja'$</td>
+<td>General split complex number, $a = \operatorname{Re} A$, $a' = \operatorname{Im} A$</td>
 </tr>
 <tr>
 <td>$\Pi_1 = (1 + j)/2$</td>

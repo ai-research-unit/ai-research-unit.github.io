@@ -76,16 +76,16 @@ $$</p>
 <h2 id="multiplication-in-components">Multiplication in Components</h2>
 <p><strong>Theorem.</strong> The product of $p = p_0+\mathbf{p}$ and $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, in components, is given by the scalar and vector parts</p>
 <p>$$
-\mathrm{Sc}(pq) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
-\mathrm{Vect}(pq) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
+\mathrm{Sc}(p\tilde q) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
+\mathrm{Vect}(p\tilde q) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
 $$</p>
 <p>that is, in coordinates,</p>
 <p>$$
-(pq)_0 = p_0q_0 - p_1q_1 - p_2q_2 - p_3q_3, \qquad
+(p\tilde q)_0 = p_0q_0 - p_1q_1 - p_2q_2 - p_3q_3, \qquad
 \begin{aligned}
-(pq)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
-(pq)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
-(pq)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
+(p\tilde q)_1 &= p_0q_1 + p_1q_0 + p_2q_3 - p_3q_2, \\
+(p\tilde q)_2 &= p_0q_2 - p_1q_3 + p_2q_0 + p_3q_1, \\
+(p\tilde q)_3 &= p_0q_3 + p_1q_2 - p_2q_1 + p_3q_0 .
 \end{aligned}
 $$</p>
 <p><em>Proof.</em> Expanding $(p_0+\mathbf{p})(q_0+\mathbf{q})$ and using $\mathbf{p}\mathbf{q} = -\langle\mathbf{p},\mathbf{q}\rangle+\mathbf{p}\times\mathbf{q}$ gives the scalar and vector parts; the coordinate formulas are the coordinate form of the inner product and the standard cross product, whose components are $(p_2q_3-p_3q_2,\ p_3q_1-p_1q_3,\ p_1q_2-p_2q_1)$.</p>
@@ -166,7 +166,7 @@ $$</p>
 </table></div>
 <p>The table makes the point of the comparison: the quaternion coordinate description is the real one, with four positive signs, and it becomes the biquaternion description by extending the coordinate field. The extra structure of the biquaternion case — the further conjugation and the indefinite form — is exactly what the complexification supplies, and it is not available over $\mathbb{R}$. The biquaternion account is in <em>Biquaternion Four-Vector Element Representation</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(pq)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(pq)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.</p>
+<p>The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(p\tilde q)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(p\tilde q)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.</p>
 <p>The three involutions are the diagonal sign matrices $\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{diag}(-1,1,1,1)$ and $-I$, whose fixed coordinate sets are the first axis, the hyperplane $q_0 = 0$ and the origin. The scalar and vector subspaces are the first axis and that hyperplane, an orthogonal decomposition of the coordinate space, and the quaternion norm is the sum of the four positive squares $[\tilde q]^T[\tilde q]$.</p>
 <p>The biquaternion four-vector representation has the same shape over the complex field, with four complex coordinates, an additional coordinatewise conjugation and an indefinite norm. The quaternion case is the real case, and its four positive signs are the whole of the difference.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

@@ -83,12 +83,12 @@ $$</p>
 \mathrm{H}_{\tilde{Q}\tilde{R}}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{R}}.
 $$</p>
 <p><strong>Proof.</strong> $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{R}}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{R}\tilde T\tilde{R}^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{R})\tilde T(\tilde{Q}\tilde{R})^{\dagger}=\mathrm{H}_{\tilde{Q}\tilde{R}}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{R})^{\dagger}=\tilde{R}^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.</p>
-<p><strong>Proposition (the central rule).</strong> For every central $z$ and every $\tilde T$,</p>
+<p><strong>Proposition (the central rule).</strong> For every central $A$ and every $\tilde T$,</p>
 <p>$$
-\mathrm{H}_{z\tilde{Q}}(\tilde T)=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}(\tilde T),
+\mathrm{H}_{A\tilde{Q}}(\tilde T)=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}(\tilde T),
 $$</p>
 <p>so that a central phase does not change the operator.</p>
-<p><strong>Why the dagger.</strong> The involution ${}^{*}$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde T\mapsto A\tilde TB$ with $A,B$ invertible, those that carry the fixed space of ${}^{*}$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ preserves the fixed spaces of the involution ${}^{*}$ conjugated by the image of the identity, $z\mapsto\tilde{Q}\tilde{Q}^{*}\bar{z}(\tilde{Q}\tilde{Q}^{*})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
+<p><strong>Why the dagger.</strong> The involution ${}^{*}$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde T\mapsto A\tilde TB$ with $A,B$ invertible, those that carry the fixed space of ${}^{*}$ into itself are exactly those with $B=\lambda A^{\dagger}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ preserves the fixed spaces of the involution ${}^{*}$ conjugated by the image of the identity, $A\mapsto\tilde{Q}\tilde{Q}^{*}\bar{A}(\tilde{Q}\tilde{Q}^{*})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
 <p><strong>Theorem (the two sectors are preserved).</strong> For every unit $\tilde{Q}$, the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.</p>
 <p><strong>Proof.</strong> Let $\tilde T\in\mathbb{M}_+$, so that $\tilde{T}^{*}=\tilde T$. Then</p>
 <p>$$
@@ -102,11 +102,11 @@ $$</p>
 <p><strong>Proof.</strong> The biquaternion norm is multiplicative and central, $N(ab)=N(a)N(b)$, and $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $N$, with complex conjugation, which conjugates it. Hence $N(\tilde{Q}\tilde T\tilde{Q}^{*})=N(\tilde{Q})N(\tilde T)N(\tilde{Q})^{*}=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$.</p>
 <p>On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.</p>
 <p><strong>The image of the unit.</strong> Applied to $e_0$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.</p>
-<p><strong>The sandwich is not an automorphism.</strong> For general $\tilde T,\tilde Y$,</p>
+<p><strong>The sandwich is not an automorphism.</strong> For general $\tilde T,\tilde P$,</p>
 <p>$$
-\mathrm{H}_{\tilde{Q}}(\tilde T\tilde Y)=\tilde{Q}\tilde T\tilde Y\tilde{Q}^{*}\neq\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)\left(\tilde{Q}\tilde Y\tilde{Q}^{*}\right)=\mathrm{H}_{\tilde{Q}}(\tilde T)\mathrm{H}_{\tilde{Q}}(\tilde Y),
+\mathrm{H}_{\tilde{Q}}(\tilde T\tilde P)=\tilde{Q}\tilde T\tilde P\tilde{Q}^{*}\neq\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)\left(\tilde{Q}\tilde P\tilde{Q}^{*}\right)=\mathrm{H}_{\tilde{Q}}(\tilde T)\mathrm{H}_{\tilde{Q}}(\tilde P),
 $$</p>
-<p>because the insertion required between $\tilde T$ and $\tilde Y$ is $\tilde{Q}^{*}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<p>because the insertion required between $\tilde T$ and $\tilde P$ is $\tilde{Q}^{*}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="the-kernel-and-the-six-subspaces">The Kernel and the Six Subspaces</h2>
 <p><strong>Theorem (the kernel is the central circle).</strong> $\mathrm{H}_{\tilde{Q}}=\mathrm{id}$ if and only if $\tilde{Q}=e^{i\theta}e_0$ for some real $\theta$.</p>
 <p><strong>Proof.</strong> If $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde T$ for every $\tilde T$, then $\tilde T=e_0$ gives $\tilde{Q}\tilde{Q}^{*}=e_0$, so $\tilde{Q}$ is unitary, and an arbitrary $\tilde T$ gives $\tilde{Q}\tilde T=\tilde T\tilde{Q}$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. Conversely such an element acts trivially, its Hermitian conjugate being its inverse.</p>
@@ -182,11 +182,11 @@ $$</p>
 <ol>
 <li>the sandwich maps each of the six subspaces to itself;</li>
 <li>$B=e_0$;</li>
-<li>$\tilde{Q}=z\hat{q}$ with $z$ central and $\hat{q}$ a unit real quaternion;</li>
+<li>$\tilde{Q}=A\hat{q}$ with $A$ central and $\hat{q}$ a unit real quaternion;</li>
 <li>$\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_0$.</li>
 </ol>
-<p>When they hold, $\mathrm{H}_{\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\hat{q}}$ is a dilation composed with a rotation of the vector space, and every one of the six subspaces is preserved.</p>
-<p><strong>Proof.</strong> $(3)\Rightarrow(4)$: for $\tilde{Q}=z\hat{q}$ one has $\tilde{Q}\tilde{Q}^{*}=\lvert z\rvert^{2}\hat{q}\hat{q}^{\dagger}=\lvert z\rvert^{2}e_0$, since a real quaternion satisfies $\hat{q}^{\dagger}=\hat{q}^{\natural}=\hat{q}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{*}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\hat{q}$ with $\hat{q}$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\hat{q}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{*}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.</p>
+<p>When they hold, $\mathrm{H}_{\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\hat{q}}$ is a dilation composed with a rotation of the vector space, and every one of the six subspaces is preserved.</p>
+<p><strong>Proof.</strong> $(3)\Rightarrow(4)$: for $\tilde{Q}=A\hat{q}$ one has $\tilde{Q}\tilde{Q}^{*}=\lvert A\rvert^{2}\hat{q}\hat{q}^{\dagger}=\lvert A\rvert^{2}e_0$, since a real quaternion satisfies $\hat{q}^{\dagger}=\hat{q}^{\natural}=\hat{q}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{*}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\hat{q}$ with $\hat{q}$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\hat{q}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{*}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.</p>
 <p>The multiplicative criterion and this one meet on the unitary elements: the operators that are multiplicative are exactly those with $\tilde{Q}\tilde{Q}^{*}=e_0$, which are also the elements fixing the time axis, $\mathrm{H}_{\tilde{Q}}(ie_0)=i\tilde{Q}\tilde{Q}^{*}=ie_0$. On the unit-norm slice the operators preserving the subspace structure form</p>
 <p>$$
 \left\{\mathrm{H}_{\hat{q}}:\hat{q}\hat{q}^{\dagger}=e_0\right\}\cong SU(2)/\{\pm e_0\}\cong SO(3),
@@ -221,11 +221,11 @@ $$</p>
 </tbody>
 </table></div>
 <p>Off the unit-norm slice every orbit is rescaled by the same positive factor, so it is enough to classify the orbits on the slice. There the two sectors carry the classification the four-vector calculus uses: on $\mathbb{M}_+$ the Hermitian forms are classified by their signature, and on $\mathbb{M}_-$ the four-vectors split into the timelike, the null and the spacelike classes, with the proper orthochronous component, so that the two time directions are not mixed. The non-zero zero divisors are the null cone, and on the slice they form a single orbit, which is the sense in which the light cone is one geometric object rather than a union of the cones of individual four-vectors.</p>
-<p><strong>Proposition (the infinitesimal operator).</strong> Let $X\in\mathbb{B}$ and let $\tilde T$ be fixed. Then</p>
+<p><strong>Proposition (the infinitesimal operator).</strong> Let $\dot{\tilde{Q}}\in\mathbb{B}$ and let $\tilde T$ be fixed. Then</p>
 <p>$$
-\left.\frac{d}{dt}\right|_{t=0}\mathrm{H}_{e_0+tX}(\tilde T)=X\tilde T+\tilde TX^{\dagger}.
+\left.\frac{d}{dt}\right|_{t=0}\mathrm{H}_{e_0+t\dot{\tilde{Q}}}(\tilde T)=\dot{\tilde{Q}}\tilde T+\tilde T\dot{\tilde{Q}}^{\dagger}.
 $$</p>
-<p><strong>Proof.</strong> Since $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, differentiating the product at $\tilde{Q}=e_0$ gives $\dot{\tilde{Q}}\tilde T+\tilde T\dot{\tilde{Q}}^{\dagger}=X\tilde T+\tilde TX^{\dagger}$.</p>
+<p><strong>Proof.</strong> Since $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, differentiating the product at $\tilde{Q}=e_0$ gives $\dot{\tilde{Q}}\tilde T+\tilde T\dot{\tilde{Q}}^{\dagger}$.</p>
 <p>The formula contains the two symmetries of the algebra in one expression. Along the anti-Hermitian directions, $X^{\dagger}=-X$, the infinitesimal operator is the commutator $[X,\tilde T]$, the infinitesimal rotation; along the Hermitian directions, $X^{\dagger}=X$, it is the anticommutator $X\tilde T+\tilde TX$, the infinitesimal boost. Restricted to the unit-norm slice the operator group is $SL(2,\mathbb{C})$ acting by the sandwich, with Lie algebra $\mathrm{SL}(2,\mathbb{C})$ regarded over $\mathbb{R}$, of real dimension six: the anti-Hermitian generators give the rotations and the Hermitian ones the boosts. The adjoint maps are in <em>Biquaternion Lie Algebra</em> and the exponential in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <h2 id="reflections">Reflections</h2>
 <p>The sandwich also realises the <strong>reflections</strong>, on the subspaces where the multiplication is Clifford. Let $v\in\mathbb{B}$ with $N(v)=1$; the reflection in the hyperplane $v^{\perp}$ is the linear map
@@ -256,7 +256,7 @@ on the algebra. The one-sided action is its diagonal restriction, and the Lorent
 \mathbb{B}^{\times} \cong GL_2(\mathbb{C}),
 $$</p>
 <p>a connected non-compact complex Lie group of complex dimension $4$ and real dimension $8$, with centre $\mathbb{C}^{\times}$. The unit-norm subgroup is $\mathbb{B}^{\times}_1 \cong SL(2,\mathbb{C})$, of complex dimension $3$ and real dimension $6$, the double cover of the Lorentz group of the preceding section. The unitary biquaternions $\tilde{Q}^{*}\tilde{Q} = e_0$ form $U(2)$, the maximal compact subgroup of $\mathbb{B}^{\times}$, and the unit quaternions form $SU(2) = \mathbb{B}^{\times}_1 \cap U(2)$, the maximal compact subgroup of $SL(2,\mathbb{C})$ and the double cover of $SO(3)$.</p>
-<p><strong>Representations of the unit group.</strong> As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $z \mapsto z^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j = \lambda_1 - \lambda_2 \geq 0$, that is, the irreducible $V_j$ below with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$.</p>
+<p><strong>Representations of the unit group.</strong> As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $A \mapsto A^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j = \lambda_1 - \lambda_2 \geq 0$, that is, the irreducible $V_j$ below with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$.</p>
 <h2 id="finite-dimensional-representations-of-the-lorentz-group">Finite-Dimensional Representations of the Lorentz Group</h2>
 <p>Let $G = SL(2,\mathbb{C})$, with real Lie algebra the traceless $2\times2$ complex matrices (<em>Biquaternion Lie Algebra</em>). Its complexification is a sum of two copies of the special linear algebra, the complexified Lorentz algebra:</p>
 <p>$$
@@ -379,7 +379,7 @@ $$</p>
 <td>The dagger sandwich; the action of a unit on the algebra</td>
 </tr>
 <tr>
-<td>$\mathrm{H}_{z\tilde{Q}}=\lvert z\rvert^{2}\mathrm{H}_{\tilde{Q}}$</td>
+<td>$\mathrm{H}_{A\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$</td>
 <td>Central phase invisible; modulus as the dilation</td>
 </tr>
 <tr>
