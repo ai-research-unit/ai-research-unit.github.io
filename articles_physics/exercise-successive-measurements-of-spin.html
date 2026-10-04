@@ -52,13 +52,13 @@
       <div class="article-body">
         <h1 id="exercise-successive-measurements-of-spin"><strong>Exercise: Successive Measurements of Spin</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats <strong>successive measurements</strong>: what happens when a spin state is measured twice in a row, along different directions.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. It is then measured along a direction $\hat{n}_1$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\hat{n}_2$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the <strong>joint probability of both outcomes being spin-up</strong>?</p>
-<p>This exercise illustrates two structural features of quantum mechanics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement <strong>changes the state</strong>, so that successive measurements are not independent.</p>
+<p>This exercise illustrates two structural features of quantum physics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement <strong>changes the state</strong>, so that successive measurements are not independent.</p>
 <h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
 <h3 id="step-1-the-initial-state">Step 1: The initial state</h3>
 <p>The spin-up state along the $z$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_3$:</p>
@@ -218,7 +218,7 @@ $$</p>
 </table></div>
 <p>These exercises illustrate three fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction), <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field), and <strong>sequential measurement</strong> (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.</p>
 <h2 id="summary">Summary</h2>
-<p>We have solved a third exercise in quantum mechanics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
+<p>We have solved a third exercise in quantum physics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents $P_z, P_{n_1}, P_{n_2}$ and the product of the two trace formulas $\mathrm{Tr}(P_{n_1}\circ P_z)\mathrm{Tr}(P_{n_2}\circ P_{n_1})$, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their trace pairing, and the joint probability is the product of the trace formulas.</p>
@@ -274,7 +274,7 @@ $$</p>
 <li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the standard formulation of successive measurements.</li>
 <li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment of the Stern–Gerlach experiment and successive measurements.</li>
 <li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bloch sphere and the composition of qubit measurements.</li>
-<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, <em>Exercise: Measuring Spin Along an Arbitrary Direction</em>, and <em>Exercise: Spin Precession in a Magnetic Field</em>.</li>
+<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, <em>Exercise: Measuring Spin Along an Arbitrary Direction</em>, and <em>Exercise: Spin Precession in a Magnetic Field</em>.</li>
 </ul>
       </div>
     </main>
