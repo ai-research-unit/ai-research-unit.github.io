@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The most general measurement that quantum mechanics admits is not a projective measurement. It is a **positive operator-valued measure**: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{M}_+$, and the condition that a measurement be possible is the condition that they lie in the **positive cone** of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.
+The most general measurement that quantum physics admits is not a projective measurement. It is a **positive operator-valued measure**: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{M}_+$, and the condition that a measurement be possible is the condition that they lie in the **positive cone** of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.
 
 The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_0e_0 + i\mathbf{a}$ with $a_0\in\mathbb{R}$, $\mathbf{a}\in\mathbb{R}^3$, positivity of the operator is
 
@@ -281,4 +281,4 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 - C. W. Helstrom, *Quantum Detection and Estimation Theory* (Academic Press, 1976), for state discrimination and the role of non-projective measurements.
 - I. D. Ivanovic, "How to differentiate between non-orthogonal states," *Physics Letters A* **123** (1987) 257–259; D. Dieks, "Overlap and distinguishability of quantum states," *Physics Letters A* **126** (1988) 303–306; A. Peres, "How to differentiate between non-orthogonal states," *Physics Letters A* **128** (1988) 19, for unambiguous discrimination.
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States* (Cambridge, 2006), for the geometry of the state cone, the effect body, and self-duality.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Decoherence as Idempotent Projection*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Decoherence as Idempotent Projection*.

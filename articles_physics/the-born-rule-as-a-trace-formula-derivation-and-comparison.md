@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Quantum Mechanics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the trace formula
+The companion article *Quantum Physics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the trace formula
 
 $$
 \mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}).
@@ -178,7 +178,7 @@ The trace formula gives measurement **statistics**, not the post-measurement sta
 
 ## Comparison with the Hilbert-Space Statement
 
-In standard quantum mechanics a state is a density operator $\rho$, an observable is $A=\sum_aaP_a$, and $p(a)=\mathrm{Tr}(P_a\rho)$; for a pure state and a rank-one outcome projector this is $p=|\langle\phi|\psi\rangle|^2$. This is a **postulate**, motivateable by Gleason's theorem, decision theory, or envariance, but not derived from the other postulates. Because $\varphi$ is a $*$-isomorphism with $\mathrm{tr}\circ\varphi=\mathrm{Tr}$, the two formulations agree **exactly**:
+In standard quantum physics a state is a density operator $\rho$, an observable is $A=\sum_aaP_a$, and $p(a)=\mathrm{Tr}(P_a\rho)$; for a pure state and a rank-one outcome projector this is $p=|\langle\phi|\psi\rangle|^2$. This is a **postulate**, motivateable by Gleason's theorem, decision theory, or envariance, but not derived from the other postulates. Because $\varphi$ is a $*$-isomorphism with $\mathrm{tr}\circ\varphi=\mathrm{Tr}$, the two formulations agree **exactly**:
 
 $$
 \mathrm{Tr}(\tilde{P}\tilde{\rho})=\mathrm{tr}\bigl(\varphi(\tilde{P})\varphi(\tilde{\rho})\bigr),\qquad
@@ -217,7 +217,7 @@ There is a further uniqueness question: is the trace form the only probability m
 
 **Restated.** Not derived from the algebra: (1) the identification of the pairing with **empirical frequency** — the algebra produces a canonical number in $[0,1]$, and reading it as a probability is the Born rule's empirical content, which no algebraic manipulation removes; (2) the choices of normalization and of the factor $2$, which are conventions, since the scale cancels in probabilities; (3) the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$, of which the biquaternion formula is a restatement for $n=2$, generalizing only the pure-vector statement $|\langle\phi|\psi\rangle|^2$.
 
-**Not explained.** The framework does not derive the uniqueness of the probability measure for a qubit from the algebra alone (Gleason fails in dimension two; Busch's theorem is needed); it does not explain why a particular outcome occurs (the measurement problem is unchanged); and it predicts no deviation from standard quantum mechanics. The claim that the Born rule is "a consequence of the algebra rather than an independent postulate" is correct about the **form** of the rule and the objects it relates, not about its empirical or interpretive content.
+**Not explained.** The framework does not derive the uniqueness of the probability measure for a qubit from the algebra alone (Gleason fails in dimension two; Busch's theorem is needed); it does not explain why a particular outcome occurs (the measurement problem is unchanged); and it predicts no deviation from standard quantum physics. The claim that the Born rule is "a consequence of the algebra rather than an independent postulate" is correct about the **form** of the rule and the objects it relates, not about its empirical or interpretive content.
 
 ## Summary
 
@@ -225,7 +225,7 @@ The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\t
 
 Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\mathrm{Tr}(\tilde\Pi_+(\hat{\mathbf{h}})\tilde{\rho})=\tfrac12(1+\hat{\mathbf{h}}\cdot\mathbf{r})$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_0+i\mathbf{w}$ with $|\mathbf{w}|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_0$; the probabilities are $a_i+\mathbf{w}_i\cdot\mathbf{r}$, as the unsharp and trine examples show.
 
-The comparison with the standard statement is exact, because $\mathbb{B}\cong M_2(\mathbb{C})$ as $*$-algebras: the biquaternion formula and $p=\mathrm{Tr}(E\rho)$ are the same equation, and the pure case is $|\langle\phi|\psi\rangle|^2=\cos^2(\theta/2)$. The formulations differ in what they take as primitive and in the manifest symmetry of the transition probability. The trace is unique up to scale among tracial functionals, but symmetry, invariance and positivity alone leave a two-parameter family, and the normalized positive non-tracial functionals are exactly the states. Uniqueness of the probability measure requires more than the algebra: Gleason fails for a qubit on projections, and Busch's effect-based theorem restores uniqueness. The framework derives the form of the Born rule and its consistency properties, restates the identification with empirical probability, and does not explain outcome selection or predict departures from standard quantum mechanics.
+The comparison with the standard statement is exact, because $\mathbb{B}\cong M_2(\mathbb{C})$ as $*$-algebras: the biquaternion formula and $p=\mathrm{Tr}(E\rho)$ are the same equation, and the pure case is $|\langle\phi|\psi\rangle|^2=\cos^2(\theta/2)$. The formulations differ in what they take as primitive and in the manifest symmetry of the transition probability. The trace is unique up to scale among tracial functionals, but symmetry, invariance and positivity alone leave a two-parameter family, and the normalized positive non-tracial functionals are exactly the states. Uniqueness of the probability measure requires more than the algebra: Gleason fails for a qubit on projections, and Busch's effect-based theorem restores uniqueness. The framework derives the form of the Born rule and its consistency properties, restates the identification with empirical probability, and does not explain outcome selection or predict departures from standard quantum physics.
 
 ## Summary of Notation
 

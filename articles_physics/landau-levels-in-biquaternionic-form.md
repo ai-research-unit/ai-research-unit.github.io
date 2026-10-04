@@ -230,7 +230,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The minimal coupling, the canonical commutator of the mechanical momenta, the Landau gauge reduction, the Landau spectrum and wave functions, the symmetric gauge and the angular momentum quantum number, the guiding centre, the magnetic length, and the degeneracy as a flux count are all standard.
+**Standard quantum physics, transcribed.** The minimal coupling, the canonical commutator of the mechanical momenta, the Landau gauge reduction, the Landau spectrum and wave functions, the symmetric gauge and the angular momentum quantum number, the guiding centre, the magnetic length, and the degeneracy as a flux count are all standard.
 
 **What the biquaternion notation provides.**
 
@@ -244,7 +244,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 - **The many-body problem.** The integer and fractional quantum Hall effects require interacting electrons and the associated many-body Hilbert space; the framework's statements about the single-particle center do not extend to them, and nothing here addresses fractional statistics or the Laughlin wave function.
 - **Geometry and curvature.** Landau levels on curved surfaces or in non-uniform fields involve a position-dependent field strength; whether the centrality of the commutator survives in a useful form is not explored here.
 - **The relativistic problem.** The relativistic Landau problem, with the Dirac or Klein–Gordon equation, has a different spectrum (including the zero mode) and belongs to the relativistic categories; only the non-relativistic spin-0 problem is treated here.
-- **Empirical content.** As elsewhere, whether the reformulation distinguishes itself from scalar Landau-level quantum mechanics is open.
+- **Empirical content.** As elsewhere, whether the reformulation distinguishes itself from scalar Landau-level quantum physics is open.
 
 ## Open Questions
 
@@ -254,7 +254,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 **3. What happens at the zero divisor cone?** The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{M}_-$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.
 
-**4. Empirical content.** Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum mechanics.
+**4. Empirical content.** Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum physics.
 
 ## Summary
 
@@ -274,7 +274,7 @@ $$
 
 and the wave functions $\psi_{n,k}=e^{i(ky+k_zz)}H_n((x-x_0)/\ell_B)e^{-(x-x_0)^2/2\ell_B^2}\chi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $\hat L_z$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
 
-Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|q|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar qB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum mechanics.
+Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|q|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar qB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
 
 ## Summary of Notation
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A symmetry that reverses time is not represented by a unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
+A symmetry that reverses time is not represented by a unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
 
 It establishes four things.
 
@@ -241,7 +241,7 @@ a splitting of exactly $2b$ per pair and linear in the field, while a $\mathcal 
 ## Companion Articles
 
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the three antilinear involutions, the real structure $\flat$, and the distinction between the algebra's and the module's real structures that this article inherits.
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$ and the module action on which time reversal is constructed.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$ and the module action on which time reversal is constructed.
 
 ## Summary
 

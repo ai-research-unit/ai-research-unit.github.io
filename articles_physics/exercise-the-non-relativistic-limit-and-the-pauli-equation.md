@@ -371,4 +371,4 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 - J. J. Sakurai, *Advanced Quantum Mechanics* (Addison-Wesley, 1967), for the emergence of the Pauli equation and the spin–orbit coupling.
 - W. Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 2000), for a step-by-step Foldy–Wouthuysen and Pauli limit.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the fine structure and the hydrogen spectrum.
-- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and *Quantum Mechanics in Biquaternionic Form*.
+- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and *Quantum Physics in Biquaternionic Form*.

@@ -137,13 +137,13 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### Deviations in Quantum Statistics
 
-**The candidate.** *Quaternionic* quantum mechanics is a real alternative to the complex theory with distinctive predictions — most notably a modification of two-particle interference. A reader meeting the word "biquaternion" might expect the framework to inherit them.
+**The candidate.** *Quaternionic* quantum physics is a real alternative to the complex theory with distinctive predictions — most notably a modification of two-particle interference. A reader meeting the word "biquaternion" might expect the framework to inherit them.
 
-**The framework-specific quantity.** None, and this is a structural no-go rather than a gap. $\mathbb{B}$ is an **associative** algebra and is isomorphic to $M_2(\mathbb{C})$; it is a complex algebra, not a quaternionic Hilbert space. Its two-state sector is exactly the standard complex two-state theory. The framework therefore sits on the same side as standard quantum mechanics in every interference test, and it does not inherit the quaternionic programme's deviations.
+**The framework-specific quantity.** None, and this is a structural no-go rather than a gap. $\mathbb{B}$ is an **associative** algebra and is isomorphic to $M_2(\mathbb{C})$; it is a complex algebra, not a quaternionic Hilbert space. Its two-state sector is exactly the standard complex two-state theory. The framework therefore sits on the same side as standard quantum physics in every interference test, and it does not inherit the quaternionic programme's deviations.
 
 **Derived or posited.** The exact complex structure is derived. The deviations are absent by algebra, not merely unverified.
 
-**The existing bound.** Precision interference and two-particle tests are consistent with complex quantum mechanics; the framework shares that agreement exactly. There is no framework-specific number to compare.
+**The existing bound.** Precision interference and two-particle tests are consistent with complex quantum physics; the framework shares that agreement exactly. There is no framework-specific number to compare.
 
 **Verdict.** Not a signature, and a warning. This is the candidate on which a careless writer is most likely to claim a signature — or, worse, to claim the quaternionic predictions under a biquaternionic name. The framework is not a quaternionic Hilbert-space theory, and the predictions of that programme are not available to it.
 
@@ -270,7 +270,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 - *Why Complexify Spacetime?*, for the motivation of the complex structure and its explicit disclaimer of empirical predictions.
 - *The Anti-Hermitian Subspace M- as the Material Sector*, for the identification of the four-vector sector and its signature.
 - *The Hermitian Subspace M+ as the Informational Sector*, for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
-- *Quantum Mechanics in Biquaternionic Form*, for the exact reproduction of the single-qubit formalism.
+- *Quantum Physics in Biquaternionic Form*, for the exact reproduction of the single-qubit formalism.
 - *Relativistic Mechanics in Biquaternionic Form*, for the transcription of the ten mechanical formulas.
 - *The Electron in Biquaternionic Form*, for the tree-level $g=2$ and the absence of the anomaly.
 - *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, for the quoted spectrum and the missing derivation.

@@ -247,7 +247,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 **3. Which real form carries the physics?** The complex null cone and the real cones of the material and informational sectors are different real forms of one locus. This article uses the real form for the state space and the momentum shell and the complex form for the algebraic solution space; whether a single reading covers both, and how the real structure $\flat$ relates them, is not settled here.
 
-**4. Empirical content.** Every statement in this article is a statement about the algebraic location of standard quantities; no prediction distinguishing the reformulation from scalar non-relativistic quantum mechanics is offered.
+**4. Empirical content.** Every statement in this article is a statement about the algebraic location of standard quantities; no prediction distinguishing the reformulation from scalar non-relativistic quantum physics is offered.
 
 ## Summary
 

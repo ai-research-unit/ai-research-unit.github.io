@@ -393,7 +393,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The matching conditions, the step and barrier coefficients, the Ramsauer–Townsend resonances, the exponential tunnelling law, the delta-potential transmission, the bound state of the attractive delta, the transfer matrix, and Levinson's theorem are all standard. The article transcribes them and cites them as standard.
+**Standard quantum physics, transcribed.** The matching conditions, the step and barrier coefficients, the Ramsauer–Townsend resonances, the exponential tunnelling law, the delta-potential transmission, the bound state of the attractive delta, the transfer matrix, and Levinson's theorem are all standard. The article transcribes them and cites them as standard.
 
 **What the biquaternion notation provides.**
 

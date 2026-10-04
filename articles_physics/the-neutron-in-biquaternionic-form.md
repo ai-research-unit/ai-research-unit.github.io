@@ -187,7 +187,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the rotor action, and the trace formula.
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the module's Lorentz action and the spinor representation on which the spin-$\tfrac12$ representation rests.
-- *Spin-$\tfrac12$ Quantum Mechanics in Biquaternionic Form* — the qubit/operator dictionary and the trace formula applied to spin states.
+- *Spin-$\tfrac12$ Quantum Physics in Biquaternionic Form* — the qubit/operator dictionary and the trace formula applied to spin states.
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin observables and their algebra, used here only as the generic spin structure the neutron inherits.
 - *The Spin–Statistics Theorem in Biquaternionic Form* — why the neutron, as a spin-$\tfrac12$ fermion, obeys Fermi–Dirac statistics, another generic rather than neutron-specific consequence.
 - *Canonical Quantization of the Biquaternion Dirac Field* — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.

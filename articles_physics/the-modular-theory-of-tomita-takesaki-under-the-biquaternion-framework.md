@@ -330,7 +330,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector and the four-vectors.
 - Companion article *The Wick Rotation in the Biquaternion Universe*, for the $i$-exchange between the sectors.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the operator algebra of the informational sector.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the operator algebra of the informational sector.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the original development of the modular theory.
 - M. Takesaki, *Theory of Operator Algebras II* (Springer, 2003), for the modular automorphism group and its properties.
 - O. Bratteli and D. W. Robinson, *Operator Algebras and Quantum Statistical Mechanics* 1–2 (Springer, 1987/1997), for the Tomita–Takesaki theorem and the KMS condition.

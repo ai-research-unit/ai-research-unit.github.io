@@ -4,7 +4,7 @@
 
 The double-slit experiment is the minimal experiment in which a quantum amplitude is the **sum of two alternatives**. A particle reaches a screen point by either slit, the two routes contribute two amplitudes, and the intensity at the screen is the squared modulus of their sum. The cross term is the interference pattern; closing one slit removes it. Everything that is strange and everything that is ordinary about quantum amplitudes is visible in this one arrangement.
 
-This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the **central scalar imaginary**, places the exponent $iS/\hbar$ in the material sector $\mathbb{M}_-$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{M}_+$ but with a **spinor in a minimal left ideal** $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Mechanics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Trace-One Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
+This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the **central scalar imaginary**, places the exponent $iS/\hbar$ in the material sector $\mathbb{M}_-$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{M}_+$ but with a **spinor in a minimal left ideal** $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Trace-One Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
 The division between what is established and what is interpretation is stated here and kept explicit.
 
@@ -236,14 +236,14 @@ $$
 V = \frac{2a_1a_2\,|\langle \hat{s}_1,\hat{s}_2\rangle|}{a_1^2 + a_2^2},
 $$
 
-maximal when the two route spinors are parallel (the scalar case) and vanishing when they are orthogonal, whatever the relative phase. Here the route label $j$ is the index of the two terms, not a second factor of the module; describing a path and a spin together as two qubits would require the tensor-product extension that *Quantum Mechanics in Biquaternionic Form* leaves open. This is the **spin-dependent double slit** in the framework's language, and it makes two things visible at once.
+maximal when the two route spinors are parallel (the scalar case) and vanishing when they are orthogonal, whatever the relative phase. Here the route label $j$ is the index of the two terms, not a second factor of the module; describing a path and a spin together as two qubits would require the tensor-product extension that *Quantum Physics in Biquaternionic Form* leaves open. This is the **spin-dependent double slit** in the framework's language, and it makes two things visible at once.
 
 - **The central phase cannot itself produce spin dependence,** because it multiplies both components of the spinor equally; a spin-dependent pattern requires the two routes to differ in their spin part (or a non-central phase, as the preceding section discusses).
 - **Which-path and which-spin are complementary.** Any measurement that reveals which route was taken — including one performed on the spin, if the two routes carry orthogonal spin states — supplies the which-path information and removes the cross term. In the algebra this is the loss of the off-diagonal element of $\tilde{\rho}$, and it is the same operation as in the preceding two sections, applied to the spin label instead of the path label.
 
 ## What the Algebra Supplies and What It Merely Transcribes
 
-**Standard quantum mechanics, transcribed.**
+**Standard quantum physics, transcribed.**
 
 - The sum of two route amplitudes, the relative-phase interference formula, the nodes and maxima, the fringe geometry, and the diffraction envelope are all standard. None is new, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
 
@@ -275,11 +275,11 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 4. **Does the cone reading add content?** The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the biquaternion-norm cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?
 
-5. **More than two paths.** The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that *Quantum Mechanics in Biquaternionic Form* leaves open. Does the cone picture survive, and in what dimension?
+5. **More than two paths.** The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that *Quantum Physics in Biquaternionic Form* leaves open. Does the cone picture survive, and in what dimension?
 
 6. **The local complex structure.** The series makes the complex structure local through $c = 1/\sqrt{\epsilon\mu}$, hence a medium-dependent wavelength $\lambda = c/\nu$; but the $i$ of the phase is a global central element. The relation between the local frame and the global phase is unresolved here, as in the Schrödinger and path-integral articles.
 
-7. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard quantum mechanics. The double slit, on the evidence of this article, does not.
+7. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard quantum physics. The double slit, on the evidence of this article, does not.
 
 ## Summary
 
@@ -303,7 +303,7 @@ A which-path measurement, whether selective (projective) or non-selective (full 
 
 The **spin-summed** two-slit intensity is **root-independent** for a beam with a common spin state: replacing the central $i$ by a fixed non-central root leaves it unchanged. Read without spin analysis, the double slit therefore does not witness the centrality of the phase; that centrality is required by the complex structure of the state module and by the unitarity of the state-vector equation, not by this pattern. The difference between the roots reappears under spin analysis in a basis not aligned with $\hat{\mu}$, and the total intensity differs when the two routes carry different spinors — when it acquires a spin overlap $\langle\hat{s}_1,\hat{s}_2\rangle$ that reduces the visibility (the spin-dependent double slit). The scalar case is the parallel-spinor case.
 
-The algebra supplies the phase's imaginary unit, the sector of its exponent, a state geometry for the which-path qubit, and algebraic accounts of measurement and dephasing. It does not supply the action, the measure, the space of paths, the preferred direction, or the selection of an outcome; and it makes no prediction here that standard quantum mechanics does not.
+The algebra supplies the phase's imaginary unit, the sector of its exponent, a state geometry for the which-path qubit, and algebraic accounts of measurement and dephasing. It does not supply the action, the measure, the space of paths, the preferred direction, or the selection of an outcome; and it makes no prediction here that standard quantum physics does not.
 
 ## Summary of Notation
 
@@ -338,7 +338,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 - *Introduction to the Biquaternion Universe* — the algebra, its two sectors, and the local complex structure.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the anti-Hermitian sector and the four-vectors.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, its idempotents, and the trace formula.
-- *Quantum Mechanics in Biquaternionic Form* — states, observables, the Born rule, and the measurement update.
+- *Quantum Physics in Biquaternionic Form* — states, observables, the Born rule, and the measurement update.
 - *The Schrödinger Equation in Biquaternionic Form* — the wave function as a spinor in a minimal left ideal, and the central imaginary as the complex structure.
 - *The Path Integral in Biquaternionic Form* — the phase $e^{iS/\hbar}$ as a central unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.
 - *The Bloch Ball as the Trace-One Slice of the Future Light Cone* — the state space as a slice of the biquaternion-norm cone.

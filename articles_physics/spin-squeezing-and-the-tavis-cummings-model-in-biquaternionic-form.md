@@ -17,7 +17,7 @@ The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the bosonic mode and its coupling to a two-level system.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the bosonic mode and its coupling to a two-level system.
 - Companion article *The Harmonic Oscillator in Biquaternionic Form*, for the mode algebra of the cavity field.
 
 ## The Collective Spin

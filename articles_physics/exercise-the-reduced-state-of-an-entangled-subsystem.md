@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.
 
@@ -257,7 +257,7 @@ These exercises illustrate five fundamental operations of the quantum formalism:
 
 ## Summary
 
-We have solved a fifth exercise in quantum mechanics — the reduced state of one subsystem of an entangled pair — in two parallel presentations.
+We have solved a fifth exercise in quantum physics — the reduced state of one subsystem of an entangled pair — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through the joint density matrix, the partial trace, and the result $\rho_1 = \frac{1}{2}I$, giving a maximally mixed state with purity $\frac{1}{2}$ and entropy $\log 2$.
 
@@ -291,5 +291,5 @@ The comparison with a product state — where the reduced state is pure — illu
 - E. Schrödinger, "Discussion of probability relations between separated systems," *Mathematical Proceedings of the Cambridge Philosophical Society* **31** (1935) 555–563, for the original discussion of the reduced density matrix.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of reduced states and the partial trace.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the singlet state and the reduced density matrix.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, *Exercise: Successive Measurements of Spin*, and *Exercise: Two Spins in the Singlet State*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, *Exercise: Successive Measurements of Spin*, and *Exercise: Two Spins in the Singlet State*.
 

@@ -289,7 +289,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The construction of the kernel from the evolution operator, the short-time kernel, the Trotter product, the free and oscillator propagators, the Gaussian fluctuation determinant, the semiclassical van Vleck kernel, and the recovery of the Schrödinger equation from the kernel are all standard.
+**Standard quantum physics, transcribed.** The construction of the kernel from the evolution operator, the short-time kernel, the Trotter product, the free and oscillator propagators, the Gaussian fluctuation determinant, the semiclassical van Vleck kernel, and the recovery of the Schrödinger equation from the kernel are all standard.
 
 **What the biquaternion notation provides.**
 
@@ -303,7 +303,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 - **The measure and the space of paths.** The measure is defined by the Trotter limit and is not supplied by the algebra; the paths live in the material sector's configuration space. The companion article records this gap in full; here it appears as the explicit normalisation factors of the discrete product.
 - **The oscillator's infinite spectrum.** The exact oscillator kernel is a closed-form function, but its spectral expansion involves the infinite ladder, which the finite-dimensional algebra does not contain. The kernel is an analytic object outside $\mathbb{B}$ even when it is central.
 - **A biquaternion-valued action.** If the action were algebra-valued rather than a real scalar, the phase would be non-central and the kernel would not factor as $Ke_0$. Whether such a theory is admissible is not addressed here.
-- **Empirical content.** As elsewhere, whether the reformulation predicts anything distinguishing it from scalar path-integral quantum mechanics is open.
+- **Empirical content.** As elsewhere, whether the reformulation predicts anything distinguishing it from scalar path-integral quantum physics is open.
 
 ## Open Questions
 
@@ -313,7 +313,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 **3. What is the status of the oscillator kernel in the algebra?** The kernel is a central function of the endpoints and the time, with an infinite spectral expansion. Whether the framework assigns it a place in a module of functions over $\mathbb{B}$ is not known.
 
-**4. Empirical content.** Nothing in the Schrödinger path-integral reformulation distinguishes it from scalar quantum mechanics.
+**4. Empirical content.** Nothing in the Schrödinger path-integral reformulation distinguishes it from scalar quantum physics.
 
 ## Summary
 
@@ -336,7 +336,7 @@ $$
 
 central, with caustic poles at $\omega t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\psi(x,t+\varepsilon)=\psi-\frac{i\varepsilon}{\hbar}V\psi+\frac{i\hbar\varepsilon}{2m}\psi''+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
-The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\pi i\hbar)^{-3/2}|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}e^{iS_{\mathrm{cl}}/\hbar}$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum mechanics.
+The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\pi i\hbar)^{-3/2}|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}e^{iS_{\mathrm{cl}}/\hbar}$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 
 ## Summary of Notation
 

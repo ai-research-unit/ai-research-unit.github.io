@@ -1,4 +1,4 @@
-# __Spin-1/2 Quantum Mechanics in Biquaternionic Form__
+# __Spin-1/2 Quantum Physics in Biquaternionic Form__
 
 ## Introduction
 
@@ -12,13 +12,13 @@ The consequence is a **structural identification**:
 
 This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
-This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum mechanics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
+This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
-The article is organized as follows. First the two-state system of quantum mechanics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{M}_+$ with the observables is given, and the idempotents with the states. Then the trace formula is stated as the Born rule. Then the relation to the four-vector space $\mathbb{M}_-$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
+The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{M}_+$ with the observables is given, and the idempotents with the states. Then the trace formula is stated as the Born rule. Then the relation to the four-vector space $\mathbb{M}_-$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
 
 The conventions are those of the companion articles: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{M}_+, \mathbb{M}_-$.
 
-## The Two-State System in Quantum Mechanics
+## The Two-State System in Quantum Physics
 
 A **two-state quantum system** is a quantum system whose state space is a two-dimensional complex Hilbert space $\mathcal{H} \cong \mathbb{C}^2$. Equivalently, the pure states are rays in $\mathbb{C}^2$, and the observables are Hermitian operators on $\mathbb{C}^2$.
 
@@ -248,7 +248,7 @@ The subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ act on the spinor space in speci
 - **Hermitian elements** (in $\mathbb{M}_+$) act as **Hermitian operators** on $\mathbb{C}^2$. These are the observables, whose eigenvalues are real.
 - **Anti-Hermitian elements** (in $\mathbb{M}_-$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of unitary transformations, whose exponentials give the unitary group $U(2)$.
 
-The action of the algebra on the spinor space is the fundamental operation of quantum mechanics: the observables act on the states, and the generators act on the states to produce the dynamics.
+The action of the algebra on the spinor space is the fundamental operation of quantum physics: the observables act on the states, and the generators act on the states to produce the dynamics.
 
 ### The Spinor as an Element of a Biquaternion Module
 
@@ -370,7 +370,7 @@ So the correct statement is:
 
 > The biquaternion algebra contains the **complete algebraic structure** of a spin-1/2 quantum system, and it contains the **classical field theory** of a spin-1/2 particle coupled to electromagnetism. It does not contain the **quantization** of the spin-1/2 field, the extension to **bosonic fields**, or the structure of **many-body systems**.
 
-This is a strong structural statement. The biquaternion algebra is not a speculative alternative to quantum mechanics; it is a specific algebraic realization of the spin-1/2 sector of quantum mechanics, embedded in a larger structure that also contains the Lorentz group.
+This is a strong structural statement. The biquaternion algebra is not a speculative alternative to quantum physics; it is a specific algebraic realization of the spin-1/2 sector of quantum physics, embedded in a larger structure that also contains the Lorentz group.
 
 ## Open Questions
 

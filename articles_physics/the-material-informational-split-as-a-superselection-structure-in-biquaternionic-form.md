@@ -19,7 +19,7 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 The companion articles supply the pieces:
 - Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for the four-vector content, the interval, and the anti-Hermitian sector.
 - Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the trace pairing, the Hermitian sector, and the Born rule.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and its irreducibility.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.
 

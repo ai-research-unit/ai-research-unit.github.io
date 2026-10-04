@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Quantum Mechanics in Biquaternionic Form* raises, as the second of its list of open questions, a precise one:
+The companion article *Quantum Physics in Biquaternionic Form* raises, as the second of its list of open questions, a precise one:
 
 > "The formalism is first-quantized. To describe creation and annihilation of particles, one needs a Fock space and operator-valued fields. How does the biquaternion framework extend to this setting?"
 

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Entanglement is the part of quantum mechanics where the conceptual debates are sharpest. The EPR argument, Bell's theorem, the measurement problem, the tension between instantaneous correlations and relativistic causality, and the dispute over whether "classical entanglement" deserves the name — all of these have been argued for decades, and none of them is settled. When a new formulation of quantum mechanics appears, it is natural to ask whether it brings new light to these debates.
+Entanglement is the part of quantum physics where the conceptual debates are sharpest. The EPR argument, Bell's theorem, the measurement problem, the tension between instantaneous correlations and relativistic causality, and the dispute over whether "classical entanglement" deserves the name — all of these have been argued for decades, and none of them is settled. When a new formulation of quantum physics appears, it is natural to ask whether it brings new light to these debates.
 
-This article asks that question for the biquaternion framework developed in the companion articles. The honest answer, stated up front, is: **the framework reframes the debates; it does not resolve them.** It is a reformulation of standard quantum mechanics, not a new theory, and it reproduces all of the standard predictions. It cannot settle an empirical dispute that standard quantum mechanics does not already settle, and it cannot supply a mechanism where standard quantum mechanics has none. What it does do is change the language in which the debates are stated, and in a few places the change of language makes the structure of the problem more visible.
+This article asks that question for the biquaternion framework developed in the companion articles. The honest answer, stated up front, is: **the framework reframes the debates; it does not resolve them.** It is a reformulation of standard quantum physics, not a new theory, and it reproduces all of the standard predictions. It cannot settle an empirical dispute that standard quantum physics does not already settle, and it cannot supply a mechanism where standard quantum physics has none. What it does do is change the language in which the debates are stated, and in a few places the change of language makes the structure of the problem more visible.
 
 The article is organized as follows. First, the biquaternion description of an entangled subsystem is recalled: the singlet as a single algebraic object, the reduced state as a partial trace, the correlation function as a bilinear pairing, and no-signaling as an identity satisfied by the partial trace. Then the five debates are revisited one by one, with a clear statement of what the framework does and does not contribute to each. Then the structural features of the framework that are genuinely new — as structure, not as physics — are collected. The article closes with the open questions that would have to be answered before the framework could be said to bring more than a change of notation.
 
@@ -114,11 +114,11 @@ With the algebraic structure of the entangled subsystem in place, we can ask wha
 
 ### 1. Local realism and "spooky action at a distance"
 
-The EPR argument asks whether quantum mechanics is *complete*: whether the state description exhausts physical reality, or whether there are additional "elements of reality" that the formalism does not represent. The argument proceeds by assuming local realism — that physical properties are localized and that no influence propagates faster than light — and concludes that either quantum mechanics is incomplete or the assumption of local realism is wrong.
+The EPR argument asks whether quantum physics is *complete*: whether the state description exhausts physical reality, or whether there are additional "elements of reality" that the formalism does not represent. The argument proceeds by assuming local realism — that physical properties are localized and that no influence propagates faster than light — and concludes that either quantum physics is incomplete or the assumption of local realism is wrong.
 
 The biquaternion framework does not answer this question. What it does is state the entangled state in a language in which the correlations are visibly *structural* rather than visibly *dynamical*. The singlet is not two systems that then have to be correlated; it is one element of the tensor-product algebra, and the correlation function is a bilinear pairing between that element and a tensor-product observable. Nothing propagates between the particles; there is a pairing rule.
 
-Whether this structural reading satisfies a local-realist depends on what "local realism" is taken to require. If local realism requires that all correlations be traceable to dynamical influences propagating through space, then the framework's reading of entanglement is incompatible with it — as is standard quantum mechanics. If local realism can be rephrased as a requirement on the *structure* of physical states, then the framework offers a language in which the requirement can be more sharply stated. The framework does not legislate which of these readings is correct; it merely makes the structural character of the correlations more explicit.
+Whether this structural reading satisfies a local-realist depends on what "local realism" is taken to require. If local realism requires that all correlations be traceable to dynamical influences propagating through space, then the framework's reading of entanglement is incompatible with it — as is standard quantum physics. If local realism can be rephrased as a requirement on the *structure* of physical states, then the framework offers a language in which the requirement can be more sharply stated. The framework does not legislate which of these readings is correct; it merely makes the structural character of the correlations more explicit.
 
 ### 2. Violation of Bell's inequalities
 
@@ -130,9 +130,9 @@ This is a clarification of where the quantum character sits, not a resolution of
 
 ### 3. The measurement problem
 
-The measurement problem is the fact that standard quantum mechanics has two kinds of time evolution — unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum mechanics), but there is no consensus.
+The measurement problem is the fact that standard quantum physics has two kinds of time evolution — unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.
 
-The biquaternion framework has something structural to offer here. In standard quantum mechanics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
+The biquaternion framework has something structural to offer here. In standard quantum physics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
 - **Unitary elements** $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and generate reversible evolution by rotor conjugation.
 - **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
@@ -206,13 +206,13 @@ It does **not**:
 
 5. **Settle whether "classical entanglement" is genuine entanglement.** The framework offers a natural home for the operational criterion of Korolkova, Sánchez-Soto, and Leuchs, and a structural reason for it, but it does not yet predict anything the operational criterion does not already predict.
 
-6. **Make an empirical prediction that distinguishes it from standard quantum mechanics.** As the companion articles emphasize, empirical contact is the central open problem. Until the framework predicts something that standard quantum mechanics does not, the debates are reframed, not resolved.
+6. **Make an empirical prediction that distinguishes it from standard quantum physics.** As the companion articles emphasize, empirical contact is the central open problem. Until the framework predicts something that standard quantum physics does not, the debates are reframed, not resolved.
 
 ## Open Questions
 
 The questions raised by this article are open, and they constitute a research agenda.
 
-**1. Empirical contact.** What quantitative prediction distinguishes the biquaternion framework from standard quantum mechanics? This is the central question, and the one on which the eventual evaluation of the framework depends. Without it, the framework remains a reformulation.
+**1. Empirical contact.** What quantitative prediction distinguishes the biquaternion framework from standard quantum physics? This is the central question, and the one on which the eventual evaluation of the framework depends. Without it, the framework remains a reformulation.
 
 **2. The dynamics of the two sectors.** The framework describes the algebraic structure of $\mathbb{M}_-$ and $\mathbb{M}_+$, but it does not specify a dynamics that couples them beyond the standard Lorentz coupling via rotor conjugation. A genuinely new coupling would be where new physical content could reside.
 
@@ -226,7 +226,7 @@ The questions raised by this article are open, and they constitute a research ag
 
 ## Summary
 
-The biquaternion framework is a reformulation of quantum mechanics, not a new theory, and its contribution to the entanglement debates is a reframing, not a resolution.
+The biquaternion framework is a reformulation of quantum physics, not a new theory, and its contribution to the entanglement debates is a reframing, not a resolution.
 
 It reformulates:
 
@@ -246,9 +246,9 @@ It does not:
 - Solve the measurement problem.
 - Provide a mechanism for the correlations.
 - Settle the classical-entanglement dispute.
-- Make an empirical prediction that distinguishes it from standard quantum mechanics.
+- Make an empirical prediction that distinguishes it from standard quantum physics.
 
-The honest position is this. The framework makes certain structural features of entanglement more visible, and it gives a natural algebraic home to an operational criterion that the literature has already identified as decisive. Whether that visibility and that home constitute new light on the debates, or merely a more elegant notation for the same unresolved questions, is exactly the question that the framework's own "empirical contact" open problem poses. Until the framework predicts something that standard quantum mechanics does not, the debates are reframed, not resolved.
+The honest position is this. The framework makes certain structural features of entanglement more visible, and it gives a natural algebraic home to an operational criterion that the literature has already identified as decisive. Whether that visibility and that home constitute new light on the debates, or merely a more elegant notation for the same unresolved questions, is exactly the question that the framework's own "empirical contact" open problem poses. Until the framework predicts something that standard quantum physics does not, the debates are reframed, not resolved.
 
 ## Summary of Notation
 
@@ -281,6 +281,6 @@ The honest position is this. The framework makes certain structural features of 
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for the modern understanding of the quantum/classical transition.
 - Robert F. Spekkens, "Evidence for the epistemic view of quantum states: A toy theory," *Physical Review A* **75** (2007) 032110, and subsequent work, for a careful treatment of the quantum/classical divide.
 - Lidia Obojska, "Bi-particle entanglement and its quaternion representation," *Journal of Physics Communications* **2** (2018) 085021, and "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the division-relation reading of the bipartite state and the integer-quotient rule discussed in *The division rule and the admissible divisions*.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Physics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
 - *Mereology and Collective Set Theory* (`articles_maths/mereology-and-collective-set-theory.md`), for the whole-first construction, the division relation as a pre-order, and the language used in *The singlet as one whole*.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.
 
@@ -200,7 +200,7 @@ These two exercises illustrate the two fundamental operations of the quantum for
 
 ## Summary
 
-We have solved a second exercise in quantum mechanics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.
+We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t)$.
 
@@ -232,5 +232,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard formulation of spin dynamics.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of Larmor precession.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the evolution of qubits.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, and *Exercise: Measuring Spin Along an Arbitrary Direction*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, and *Exercise: Measuring Spin Along an Arbitrary Direction*.
 

@@ -54,7 +54,7 @@ $$
 \mathrm{SL}(2,\mathbb{C}) \;=\; \big(\mathbb{M}_- \cap \mathrm{SL}(2,\mathbb{C})\big) \;\oplus\; \big(\mathbb{M}_+ \cap \mathrm{SL}(2,\mathbb{C})\big),
 $$
 
-the first summand containing the rotations (the traceless real pure quaternions), the second the boosts (the traceless imaginary pure quaternions). In the language of the companion article on quantum mechanics, the Lie algebra of the unitary group is $\mathbb{M}_-$; the traceless part of $\mathbb{M}_-$ gives the compact rotations, the traceless part of $\mathbb{M}_+$ the non-compact boosts. The scalar generator $i\alpha e_0$ lies in $\mathbb{M}_-$ but is not traceless: it generates the unitary phase $e^{i\alpha t}e_0$, which has $N = e^{2i\alpha t}e_0 \neq e_0$ and is therefore unitary but not a unit-norm rotor. The rotor group is the traceless part, not all of $\mathbb{M}_-$.
+the first summand containing the rotations (the traceless real pure quaternions), the second the boosts (the traceless imaginary pure quaternions). In the language of the companion article on quantum physics, the Lie algebra of the unitary group is $\mathbb{M}_-$; the traceless part of $\mathbb{M}_-$ gives the compact rotations, the traceless part of $\mathbb{M}_+$ the non-compact boosts. The scalar generator $i\alpha e_0$ lies in $\mathbb{M}_-$ but is not traceless: it generates the unitary phase $e^{i\alpha t}e_0$, which has $N = e^{2i\alpha t}e_0 \neq e_0$ and is therefore unitary but not a unit-norm rotor. The rotor group is the traceless part, not all of $\mathbb{M}_-$.
 
 **The generator is a derivation only for the anti-Hermitian directions.** If $G \in \mathbb{M}_-$ (so $G^{*} = -G$), then
 
@@ -158,7 +158,7 @@ Read in the other direction, this is the free rotor's geodesic flow seen on the 
 
 ## The Rotor Normalisation and Its Counterpart
 
-The rotor is required to have unit **biquaternion norm**, $N(R) = R\bar{R} = e_0$, and this is what makes the conjugation preserve $N(\tilde{Q}) = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_0$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not unitary; while the evolution operator of quantum mechanics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_0 e_0 + i\mathbf{h}$ that has a trace part, is unitary but has
+The rotor is required to have unit **biquaternion norm**, $N(R) = R\bar{R} = e_0$, and this is what makes the conjugation preserve $N(\tilde{Q}) = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_0$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not unitary; while the evolution operator of quantum physics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_0 e_0 + i\mathbf{h}$ that has a trace part, is unitary but has
 
 $$
 N\big(\tilde{U}(t)\big) = \tilde{U}(t)\,\tilde{U}^{\natural}(t) = e^{-2ih_0 t/\hbar} e_0 \neq e_0 .
@@ -291,7 +291,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 - *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the unit-norm condition, and the relation $N(R) = e_0$.
 - *The Poincaré Group and the Biquaternion Frame*, for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
-- *Quantum Mechanics in Biquaternionic Form*, for the evolution operator $U(t) = \exp(-iHt/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the biquaternion norm.
+- *Quantum Physics in Biquaternionic Form*, for the evolution operator $U(t) = \exp(-iHt/\hbar)$, the Lie algebra $\mathbb{M}_-$, and the distinction between unitarity and the biquaternion norm.
 - *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators $g_k = -\tfrac12 e_k$ and the half-angle exponential that produces the factor $2$ of the double cover.
 - *Exercise: Spin Precession in a Magnetic Field*, for the Hamiltonian of a spin in a field and the precession it generates.
 - *The Harmonic Oscillator in Biquaternionic Form*, for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{M}_-$ is an additional step.

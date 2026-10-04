@@ -15,7 +15,7 @@ The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\til
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the two-level algebra and the trace pairing.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the two-level algebra and the trace pairing.
 - Companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, for the atomic levels and the electric-dipole matrix element.
 - Companion article *Exercise: Measuring Spin Along an Arbitrary Direction*, for the spin observable along an arbitrary axis.
 
@@ -86,7 +86,7 @@ Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting i
 
 ### The Selection Rule as a Commutator
 
-A drive transverse to the static field is a Hermitian element built from $ie_1$ and $ie_2$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article *Quantum Mechanics in Biquaternionic Form*,
+A drive transverse to the static field is a Hermitian element built from $ie_1$ and $ie_2$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
 \left[\tilde{H}_Z,\,dE\,ie_1\right] = -2\left(-\frac{\hbar\omega_L}{2}\hat{n}\right)\times(dE\,\hat{e}_1)

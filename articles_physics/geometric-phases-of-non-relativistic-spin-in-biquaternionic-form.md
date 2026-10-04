@@ -19,7 +19,7 @@ The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin operators and the pure-state idempotents.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the pure-state idempotents.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the trace pairing and the Hermitian sector.
 - Companion article *Exercise: Spin Precession in a Magnetic Field*, for the Larmor precession used for the cyclic evolution.
 

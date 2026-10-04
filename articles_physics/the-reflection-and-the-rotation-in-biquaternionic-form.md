@@ -155,7 +155,7 @@ $$
 SL(2,\mathbb{C}) = \{\tilde{\Lambda}\in\mathbb{B} : N(\tilde{\Lambda}) = 1\},
 $$
 
-a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $e_k$ and $ie_k$ under $\Phi$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Mechanics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
+a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $e_k$ and $ie_k$ under $\Phi$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
 
 Two subfamilies are worth separating, because the series uses them differently:
 

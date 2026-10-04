@@ -239,7 +239,7 @@ A clarification of vocabulary is worth making here. The intrinsic spin content o
 
 The obstruction met here is not isolated; it is one instance of a general feature of finite-dimensional algebras, and the companion articles record others.
 
-Inside $\mathbb{B}$ the canonical commutation relation of quantum mechanics, $[\tilde{Q}, \tilde{P}] = i\hbar\,e_0$, cannot be realized: taking the trace of both sides gives $0 = \mathrm{Tr}(i\hbar\,e_0) = 2i\hbar \neq 0$, a contradiction, because the trace of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
+Inside $\mathbb{B}$ the canonical commutation relation of quantum physics, $[\tilde{Q}, \tilde{P}] = i\hbar\,e_0$, cannot be realized: taking the trace of both sides gives $0 = \mathrm{Tr}(i\hbar\,e_0) = 2i\hbar \neq 0$, a contradiction, because the trace of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction and the canonical bracket.
 
 Likewise the rotation generators themselves close inside the algebra — the spin operators are algebra elements — but the *eigenstates* of those operators, the tower of angular momentum states $|l,m\rangle$, do not fit inside the algebra; they live in the modules $D^{(l)}$, of dimensions $2l+1$ growing without bound:

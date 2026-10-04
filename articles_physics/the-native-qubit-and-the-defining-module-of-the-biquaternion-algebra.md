@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The companion articles develop a formulation of quantum mechanics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
+The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
 
-The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$, the rank-one projectors on $S$ are exactly the idempotents of $\mathbb{M}_+$ that have trace one, and the inner product that quantum mechanics requires is the algebra's own trace pairing, restricted to the module.
+The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$, the rank-one projectors on $S$ are exactly the idempotents of $\mathbb{M}_+$ that have trace one, and the inner product that quantum physics requires is the algebra's own trace pairing, restricted to the module.
 
 This is the informational reading of a structural fact. The article does not claim that the biquaternion algebra predicts the existence of a two-state system, nor that it excludes systems of other dimension: it claims that *if* the informational sector is described by $\mathbb{B}$, then its elementary carrier is forced, because an algebra of $2\times2$ complex matrices has exactly one simple module up to isomorphism, and that module is two-dimensional over $\mathbb{C}$. The qubit is native in the sense that it is read off the algebra rather than imposed on it. What is genuinely open is whether the tensor product $\mathbb{B}\otimes\mathbb{B}$, on which the multi-qubit information-theoretic articles of this subcategory depend, is native in the same sense; that question is raised here and left where the companion articles leave it.
 
@@ -49,7 +49,7 @@ $$
 e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
 $$
 
-with $i \mapsto iI_2$ on the central scalar and $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. The assignment is fixed by *Quantum Mechanics in Biquaternionic Form* and is the one used throughout this subcategory. Two consequences are worth recording:
+with $i \mapsto iI_2$ on the central scalar and $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. The assignment is fixed by *Quantum Physics in Biquaternionic Form* and is the one used throughout this subcategory. Two consequences are worth recording:
 
 - the Hermitian basis of $\mathbb{M}_+$, namely $\{e_0, ie_1, ie_2, ie_3\}$, maps to $\{I_2,\sigma_1,\sigma_2,\sigma_3\}$, so the isomorphism sends traceless Hermitian biquaternions to traceless Hermitian matrices;
 - the involution ${}^{*}$ maps to the matrix Hermitian conjugate.
@@ -121,7 +121,7 @@ $$
 
 the two summands being the minimal left ideals spanned by the first and second columns. Both are isomorphic to $S$; they are the two Peirce components of any complete set of matrix units. This is the algebraic origin of the framework's two-component spinor structure, and it is the reason the algebra, not the module, is four-complex-dimensional. The qubit's state vectors occupy one copy of $S$; the algebra is *two* copies of the same module, which is what allows an operator to mix the two components.
 
-It is worth separating the two uses of the word "state" that this structure produces. A **state vector** is an element of $S$; a **state**, in the quantum-mechanical sense of a statistical description, is a positive trace-one element of $\mathbb{M}_+$, which is an operator on $S$. The vector and the operator are related by the rank-one correspondence of the next section. The framework keeps both, and the distinction is the same one that ordinary quantum mechanics draws between a ket and a density operator.
+It is worth separating the two uses of the word "state" that this structure produces. A **state vector** is an element of $S$; a **state**, in the quantum-mechanical sense of a statistical description, is a positive trace-one element of $\mathbb{M}_+$, which is an operator on $S$. The vector and the operator are related by the rank-one correspondence of the next section. The framework keeps both, and the distinction is the same one that ordinary quantum physics draws between a ket and a density operator.
 
 ## States on the Module
 
@@ -243,13 +243,13 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 
 **1. The tensor product.** Is $\mathbb{B}\otimes\mathbb{B}$ native to the framework, or is it imposed? The defining module of $\mathbb{B}\otimes\mathbb{B}$ is $\mathbb{C}^4$, and the composition of two qubits into one four-level system is an assumption about how subsystems combine. This is the central open structural question for the informational reading, and it is inherited from the companion articles on entanglement.
 
-**2. The doubling of the regular module.** The left regular module is $S\oplus S$. The qubit uses one copy. Does the second copy have informational content — a chirality, a superselection rule, or nothing — or is it a redundancy of the matrix representative? *Spin-1/2 Quantum Mechanics in Biquaternionic Form* develops the spinor side of this question.
+**2. The doubling of the regular module.** The left regular module is $S\oplus S$. The qubit uses one copy. Does the second copy have informational content — a chirality, a superselection rule, or nothing — or is it a redundancy of the matrix representative? *Spin-1/2 Quantum Physics in Biquaternionic Form* develops the spinor side of this question.
 
 **3. Higher-dimensional modules.** The algebra's simple module is two-dimensional, but its *projective* representations and its tensor powers are not. Which of those are physically available is the module-theoretic form of the question whether the framework admits qutrits and larger systems.
 
 **4. The status of the inner product at the boundary.** The trace pairing is positive definite on $\mathbb{M}_+$ but the biquaternion norm is degenerate on the rank-one idempotents. The relation between these two pairings — one the Born rule, the other the light-cone structure — is the geometric thread running through this subcategory, and it is pursued in the entropy and positive-cone articles that follow.
 
-**5. Empirical contact.** As for the whole framework, a reformulation of the qubit's carrier predicts nothing that ordinary quantum mechanics does not. The module's nativeness is a statement about how the formalism hangs together, not a new observable.
+**5. Empirical contact.** As for the whole framework, a reformulation of the qubit's carrier predicts nothing that ordinary quantum physics does not. The module's nativeness is a statement about how the formalism hangs together, not a new observable.
 
 ## Summary
 
@@ -288,4 +288,4 @@ What the module does not supply is the composition rule for several qubits: the 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the qubit, the density operator, and the correspondence between pure states and rays.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the geometry of the Bloch ball and the statistical interpretation of the trace pairing.
 - J. S. Bell, "On the problem of hidden variables in quantum mechanics," *Reviews of Modern Physics* **38** (1966) 447–452, for the noncontextual hidden-variable model of a single qubit, which illustrates the special position of the two-dimensional module.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Conventions in the Biquaternion Universe*, *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, and *Spin-1/2 Quantum Mechanics in Biquaternionic Form*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Conventions in the Biquaternion Universe*, *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, and *Spin-1/2 Quantum Physics in Biquaternionic Form*.

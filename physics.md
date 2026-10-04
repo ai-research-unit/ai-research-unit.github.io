@@ -243,10 +243,10 @@
 
 ### Generalities
 
-### <a href="articles_physics/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
-<!-- the postulates of quantum mechanics; states; observables; the Born rule; two-state systems and qubits; dynamics; measurement; composite systems and entanglement; what a comprehensive quantum theory must contain. -->
+### <a href="articles_physics/quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a>
+<!-- the postulates of quantum physics; states; observables; the Born rule; two-state systems and qubits; dynamics; measurement; composite systems and entanglement; what a comprehensive quantum theory must contain. -->
 
-### <a href="articles_physics/quantum-mechanics-in-biquaternionic-form.html">Quantum Mechanics in Biquaternionic Form</a>
+### <a href="articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>
 <!-- the Hermitian subspace; states; observables; the Born rule; dynamics; measurement as an algebraic operation; purity, entropy and fidelity; symmetries; the ten-point checklist; compatibility with relativity; what is structural and what is new. -->
 
 ### <a href="articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Trace-One Slice of the Future Light Cone</a>
@@ -332,8 +332,8 @@
 
 ### Particles of spin 1/2
 
-### <a href="articles_physics/spin-1-2-quantum-mechanics-in-biquaternionic-form.html">Spin-1/2 Quantum Mechanics in Biquaternionic Form</a>
-<!-- the two-state system in quantum mechanics; the algebra as $M_2(\mathbb{C})$; the observables; the idempotents as pure states; the trace formula as the Born rule; the state space and the spinor; the rotations and the boosts; the Dirac equation and the spinor field. -->
+### <a href="articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a>
+<!-- the two-state system in quantum physics; the algebra as $M_2(\mathbb{C})$; the observables; the idempotents as pure states; the trace formula as the Born rule; the state space and the spinor; the rotations and the boosts; the Dirac equation and the spinor field. -->
 
 ### <a href="articles_physics/exercise-measuring-spin-along-an-arbitrary-direction.html">Exercise: Measuring Spin Along an Arbitrary Direction</a>
 <!-- the exercise; solution in the standard formulation and in the biquaternion formulation; limiting cases; the expectation value of the spin. -->
@@ -814,7 +814,7 @@
 ### <a href="articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a>
 <!-- the Dirac propagator and the square; the free kernel explicitly; the spinning worldline and the spin factor; the spin factor in a background field; Feynman's checkerboard; composition and the propagator equation; the measure and the einbein; the chiral pair on the worldline. -->
 
-### <a href="articles_physics/supersymmetric-quantum-mechanics-in-the-biquaternion-framework.html">Supersymmetric Quantum Mechanics in the Biquaternion Framework</a>
+### <a href="articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a>
 <!-- the superalgebra and the partner potentials; the biquaternion supercharge; the 1+1-dimensional realisation; the Dirac oscillator as a supersymmetric system; the Witten index and the chiral zero modes; shape invariance and exactly solvable partners. -->
 
 ### Particles of spin 1 and above

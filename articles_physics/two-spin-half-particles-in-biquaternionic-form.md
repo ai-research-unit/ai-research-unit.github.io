@@ -54,7 +54,7 @@ $$
 
 extended linearly, and they give the reduced states of the two particles.
 
-One structural remark belongs here. The tensor product is the composition rule the framework assumes, not one it derives; the companion articles on biquaternionic quantum mechanics record it among their open questions, and the companion article *Entangled Subsystems in the Biquaternion Framework* uses it directly. Everything below is a statement about $\mathbb{B}\otimes\mathbb{B}$ once that algebra is granted, and the closing section returns to the question.
+One structural remark belongs here. The tensor product is the composition rule the framework assumes, not one it derives; the companion articles on biquaternionic quantum physics record it among their open questions, and the companion article *Entangled Subsystems in the Biquaternion Framework* uses it directly. Everything below is a statement about $\mathbb{B}\otimes\mathbb{B}$ once that algebra is granted, and the closing section returns to the question.
 
 ## The Total Spin Operators
 
@@ -344,7 +344,7 @@ whose four eigenvalue pairs $(s_1,s_3)\in\{\pm1\}^2$ label the four Bell states:
 
 ## The Assumption of Composition
 
-Everything above rests on one assumption that the framework does not derive: that two spin-$\tfrac12$ particles are described by the tensor product $\mathbb{B}\otimes\mathbb{B}$ of their algebras. The algebra is available; the state space $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with its trace is well defined; the partial traces are natural. But whether the composition of two fundamental systems is *forced* by the structure of $\mathbb{B}$, or is a further postulate, is one of the open questions recorded by the companion articles on biquaternionic quantum mechanics. Nothing in this article depends on the answer, and every statement is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once granted.
+Everything above rests on one assumption that the framework does not derive: that two spin-$\tfrac12$ particles are described by the tensor product $\mathbb{B}\otimes\mathbb{B}$ of their algebras. The algebra is available; the state space $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with its trace is well defined; the partial traces are natural. But whether the composition of two fundamental systems is *forced* by the structure of $\mathbb{B}$, or is a further postulate, is one of the open questions recorded by the companion articles on biquaternionic quantum physics. Nothing in this article depends on the answer, and every statement is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once granted.
 
 Two consequences of the assumption are worth naming because they are structural rather than dynamical. First, the composition rule doubles the module dimension: two fundamental modules give a four-dimensional space, and $n$ of them give $2^n$. The framework therefore composes into powers of two and into nothing else; a three-level system cannot be built from fundamental modules, which is the algebraic ceiling examined in the companion problem of the third level. Second, the local operations — the elements $\tilde U_1\otimes\tilde U_2$ — form a proper subgroup of the unitaries of the composite algebra, so the composite carries a notion of locality that the algebra alone does not supply. Both facts are consequences of the tensor-product assumption as much as of the algebra.
 

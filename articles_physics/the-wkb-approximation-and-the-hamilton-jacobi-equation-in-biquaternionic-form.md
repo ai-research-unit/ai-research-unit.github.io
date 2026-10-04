@@ -259,7 +259,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant, the connection formulas, the Maslov index, the Bohr–Sommerfeld condition, the tunnelling exponent, and the quantum potential are all standard. None of them is new here.
+**Standard quantum physics, transcribed.** The amplitude–phase decomposition, the two real equations, the Hamilton–Jacobi equation, the method of characteristics, the optical–mechanical analogy, the transport equation, the WKB amplitude, the van Vleck determinant, the connection formulas, the Maslov index, the Bohr–Sommerfeld condition, the tunnelling exponent, and the quantum potential are all standard. None of them is new here.
 
 **What the biquaternion notation provides.**
 

@@ -6,7 +6,7 @@ This article is about the **Hermitian subspace** $\mathbb{M}_+$, the fixed space
 
 The mathematics of $\mathbb{M}_+$ is standard: it is a four-dimensional real subspace consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation, and its elements satisfy a natural trace formula. All of this is established mathematics.
 
-The **algebraic identification** of $\mathbb{M}_+$ with the operator algebra of a two-state quantum system is now also established: it is developed in detail in the companion article *Quantum Mechanics in Biquaternionic Form*, and it is not a conjecture. What remains a **hypothesis** is whether this algebraic structure is **physically realised** as a distinct sector of the world, in the same sense as the material sector $\mathbb{M}_-$. This is the central question of the article, and the article's honest position is: **we do not yet know, but the structure is rich enough to be worth writing down.**
+The **algebraic identification** of $\mathbb{M}_+$ with the operator algebra of a two-state quantum system is now also established: it is developed in detail in the companion article *Quantum Physics in Biquaternionic Form*, and it is not a conjecture. What remains a **hypothesis** is whether this algebraic structure is **physically realised** as a distinct sector of the world, in the same sense as the material sector $\mathbb{M}_-$. This is the central question of the article, and the article's honest position is: **we do not yet know, but the structure is rich enough to be worth writing down.**
 
 The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled. Then the physical hypothesis is stated clearly, with the honest position on what it does and does not claim. Then the action of $\mathbb{M}_+$ on $\mathbb{M}_-$ and the algebraic identification with the qubit operator algebra are developed. The distinguished elements of $\mathbb{M}_+$ are collected as examples, and the article closes with open questions.
 
@@ -256,7 +256,7 @@ which is the standard spin-1/2 expectation value along the direction $\hat{\bold
 
 ### The Algebraic Identification with Quantum Information
 
-The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structurally identical** to the mathematics of quantum information theory for a single qubit. This is an algebraic fact, established in detail in the companion article *Quantum Mechanics in Biquaternionic Form*.
+The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structurally identical** to the mathematics of quantum information theory for a single qubit. This is an algebraic fact, established in detail in the companion article *Quantum Physics in Biquaternionic Form*.
 
 ### The Correspondence
 
@@ -281,9 +281,9 @@ The correspondence is not an analogy. **It is the same mathematics**, expressed 
 
 ### The Spin Analogy
 
-The correspondence with quantum information is closely related to the **spin-1/2 formalism** of non-relativistic quantum mechanics.
+The correspondence with quantum information is closely related to the **spin-1/2 formalism** of non-relativistic quantum physics.
 
-- In spin-1/2 quantum mechanics, the state space is $\mathbb{C}^2$, and the observables are the Pauli matrices $\sigma_k$ generating $\mathrm{SU}(2)$. The rotation group $SU(2)$ acts on the states.
+- In spin-1/2 quantum physics, the state space is $\mathbb{C}^2$, and the observables are the Pauli matrices $\sigma_k$ generating $\mathrm{SU}(2)$. The rotation group $SU(2)$ acts on the states.
 - In the biquaternion framework, the spinor module of $\mathbb{B}$ is the state space, and the Hermitian elements of $\mathbb{M}_+$ are the observables. The action is by rotor conjugation on the module.
 
 The difference is:
@@ -325,7 +325,7 @@ lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vecto
 - **Idempotent:** $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$.
 - **Unit trace:** $\mathrm{Tr}(\tilde\Pi_\pm) = 2\,\mathrm{Sc}(\tilde\Pi_\pm) = 1$.
 
-These are the biquaternion analogues of **pure-state density matrices** of quantum mechanics. They are the natural "states" of the informational sector.
+These are the biquaternion analogues of **pure-state density matrices** of quantum physics. They are the natural "states" of the informational sector.
 
 ### The Hermitian Forms
 
@@ -383,11 +383,11 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 
 ## Further Reading
 
-- John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the original formulation of quantum mechanics in terms of Hermitian operators and density matrices.
+- John von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1932), for the original formulation of quantum physics in terms of Hermitian operators and density matrices.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of qubits, gates, and measurements.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the spin-1/2 formalism.
-- Roger Penrose, *The Road to Reality* (Knopf, 2004), for the complex structure of quantum mechanics and its relation to spacetime.
-- David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric algebra formulation of quantum mechanics.
+- Roger Penrose, *The Road to Reality* (Knopf, 2004), for the complex structure of quantum physics and its relation to spacetime.
+- David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric algebra formulation of quantum physics.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the modern geometric algebra treatment of spinors and operators.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the algebraic structure of the Clifford algebra $\mathrm{Cl}_{1,3}$.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1993), for the operational reading of states, observables, and measurements used here.

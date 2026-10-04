@@ -107,7 +107,7 @@ $$
 $$
 mapping the defining module $S$ to $\mathbb{C}$. Every module over $\mathbb{B}$ is therefore a complex vector space in disguise, and every complex dimension is doubled when it is read as a biquaternion module.
 
-**Physical reading.** The Morita equivalence is the algebraic reason the framework's linear algebra is complex linear algebra: a biquaternion module is a complex vector space together with the identification $\mathbb{B}\cong M_2(\mathbb{C})$, and the identification is the whole of the extra structure. It is why the representation theory of the framework reproduces the complex representation theory of quantum mechanics, with the doubling as the spin degree of freedom, and why no new linear invariants appear: the module category is the complex one. The field $\mathbb{C}$ of the equivalence is the centre $\mathbb{C}e_0$ of the algebra, the scalar line that carries the two times $ct'+ict$ of the physical dictionary.
+**Physical reading.** The Morita equivalence is the algebraic reason the framework's linear algebra is complex linear algebra: a biquaternion module is a complex vector space together with the identification $\mathbb{B}\cong M_2(\mathbb{C})$, and the identification is the whole of the extra structure. It is why the representation theory of the framework reproduces the complex representation theory of quantum physics, with the doubling as the spin degree of freedom, and why no new linear invariants appear: the module category is the complex one. The field $\mathbb{C}$ of the equivalence is the centre $\mathbb{C}e_0$ of the algebra, the scalar line that carries the two times $ct'+ict$ of the physical dictionary.
 
 ## Torsion
 

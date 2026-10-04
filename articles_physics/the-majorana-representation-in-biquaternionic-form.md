@@ -15,8 +15,8 @@ The article develops the spin-1/2 case fully, states the general construction be
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the state space and the trace pairing.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the state space and the trace pairing.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the spinor phase that the star discards.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the symmetric states and the Dicke basis.
 
@@ -164,7 +164,7 @@ Because the star is the idempotent's axis, it cannot see the phase; the connecti
 
 ### The State Module and the Idempotent
 
-The spinor is not an element of $\mathbb{B}$ itself: as the companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form* records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{M}_+$:
+The spinor is not an element of $\mathbb{B}$ itself: as the companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{M}_+$:
 
 $$
 \tilde\Pi(\psi) = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} = \frac{1}{2}\left(e_0 + i\,\hat{n}(\zeta)\right),

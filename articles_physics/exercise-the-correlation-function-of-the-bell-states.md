@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.
 
@@ -341,7 +341,7 @@ with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is th
 
 ## Summary
 
-We have solved a sixth exercise in quantum mechanics — the spin correlation function of the four Bell states — in two parallel presentations.
+We have solved a sixth exercise in quantum physics — the spin correlation function of the four Bell states — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through the four Bell projectors, their expansions in the Pauli-string basis, and the trace-orthogonality of the Pauli strings, giving the four diagonal correlation matrices $T = \mathrm{diag}(\pm 1, \pm 1, \pm 1)$ and the correlation functions $E = \hat{a}^T T\hat{b}$.
 
@@ -376,5 +376,5 @@ The correlation function is the object measured in Bell-inequality experiments, 
 - J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," *Physics* **1** (1964) 195–200, for the Bell inequalities and the singlet correlations.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of the Bell basis and the correlation function.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of two-spin correlations.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, *Exercise: Successive Measurements of Spin*, *Exercise: Two Spins in the Singlet State*, and *Exercise: The Reduced State of an Entangled Subsystem*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, *Exercise: Successive Measurements of Spin*, *Exercise: Two Spins in the Singlet State*, and *Exercise: The Reduced State of an Entangled Subsystem*.
 

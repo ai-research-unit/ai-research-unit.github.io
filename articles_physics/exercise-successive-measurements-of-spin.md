@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.
 
@@ -14,7 +14,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 
 A spin-$\tfrac{1}{2}$ particle is prepared in the **spin-up state along the $z$-axis**. It is then measured along a direction $\hat{n}_1$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\hat{n}_2$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the **joint probability of both outcomes being spin-up**?
 
-This exercise illustrates two structural features of quantum mechanics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement **changes the state**, so that successive measurements are not independent.
+This exercise illustrates two structural features of quantum physics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement **changes the state**, so that successive measurements are not independent.
 
 ## Solution in the Standard Formulation
 
@@ -221,7 +221,7 @@ These exercises illustrate three fundamental operations of the quantum formalism
 
 ## Summary
 
-We have solved a third exercise in quantum mechanics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.
+We have solved a third exercise in quantum physics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.
 
@@ -248,5 +248,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard formulation of successive measurements.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the Stern–Gerlach experiment and successive measurements.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the composition of qubit measurements.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, and *Exercise: Spin Precession in a Magnetic Field*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, and *Exercise: Spin Precession in a Magnetic Field*.
 

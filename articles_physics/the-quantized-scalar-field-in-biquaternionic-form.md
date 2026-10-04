@@ -211,7 +211,7 @@ $$
 \langle\phi|\hat{\pi}(\mathbf{x})|\Psi\rangle=-i\hbar\,\frac{\delta\Psi}{\delta\phi(\mathbf{x})},
 $$
 
-so the canonical commutator is the identity $\delta\phi(\mathbf{x})/\delta\phi(\mathbf{y})=\delta^{(3)}(\mathbf{x}-\mathbf{y})$ and the field-basis representation is the functional analogue of the coordinate representation of quantum mechanics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
+so the canonical commutator is the identity $\delta\phi(\mathbf{x})/\delta\phi(\mathbf{y})=\delta^{(3)}(\mathbf{x}-\mathbf{y})$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
 
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 

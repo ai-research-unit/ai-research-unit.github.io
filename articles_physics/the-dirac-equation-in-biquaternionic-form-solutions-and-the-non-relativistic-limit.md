@@ -16,7 +16,7 @@ The article is organized as follows. The next section fixes the field, the two n
 
 The material here is the declared foundation for two of the later exercises, on the plane-wave solutions and on the non-relativistic limit and the Pauli equation. The solutions and the limiting procedure are therefore worked out explicitly, with all intermediate steps that those exercises will need.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary with $i^2 = -1$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ used throughout is the one of the companion article *Quantum Mechanics in Biquaternionic Form*,
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary with $i^2 = -1$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ used throughout is the one of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
 e_0 \mapsto I_2, \qquad e_k \mapsto -i\sigma_k, \qquad i \mapsto i I_2,

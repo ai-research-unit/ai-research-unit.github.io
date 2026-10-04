@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.
 
@@ -237,7 +237,7 @@ These exercises illustrate four fundamental operations of the quantum formalism:
 
 ## Summary
 
-We have solved a fourth exercise in quantum mechanics — the joint spin measurement of a singlet state along two arbitrary directions — in two parallel presentations.
+We have solved a fourth exercise in quantum physics — the joint spin measurement of a singlet state along two arbitrary directions — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through the two-qubit state, the tensor-product projector, and the Born rule, giving $p(+,+) = (1/4)(1 - \hat{a}\cdot\hat{b})$.
 
@@ -267,5 +267,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," *Physics* **1** (1964) 195–200, for the Bell inequalities and the singlet correlations.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement and Bell states.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the singlet state.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, and *Exercise: Successive Measurements of Spin*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, *Exercise: Measuring Spin Along an Arbitrary Direction*, *Exercise: Spin Precession in a Magnetic Field*, and *Exercise: Successive Measurements of Spin*.
 

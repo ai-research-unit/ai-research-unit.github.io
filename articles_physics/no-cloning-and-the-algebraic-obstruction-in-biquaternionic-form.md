@@ -277,4 +277,4 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 - A. K. Pati and S. L. Braunstein, "Impossibility of deleting an unknown quantum state," *Nature* **404** (2000) 164–165, for no-deleting.
 - H. Barnum, C. M. Caves, C. A. Fuchs, R. Jozsa, and B. Schumacher, "Noncommuting mixed states cannot be broadcast," *Physical Review Letters* **76** (1996) 2818–2821, for no-broadcasting.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the inner-product proof and the operational setting.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.

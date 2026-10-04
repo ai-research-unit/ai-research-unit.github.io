@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is a dictionary. It translates between two notations for the same algebra: the **Dirac gamma-matrix algebra** of relativistic quantum mechanics, and the **biquaternion algebra** $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. Its purpose is reference: given a gamma-matrix expression, to find the biquaternion that corresponds to it, and given a biquaternion relation, to find its gamma-matrix form.
+This article is a dictionary. It translates between two notations for the same algebra: the **Dirac gamma-matrix algebra** of relativistic quantum physics, and the **biquaternion algebra** $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. Its purpose is reference: given a gamma-matrix expression, to find the biquaternion that corresponds to it, and given a biquaternion relation, to find its gamma-matrix form.
 
 The two notations describe the same mathematical object in different coordinates. The gamma matrices generate the real Clifford algebra the corpus calls $\mathrm{Cl}_{1,3}$; the biquaternions form its **even subalgebra**,
 

@@ -249,7 +249,7 @@ Two entries deserve a sentence. The first is that the algebraic content is real 
 4. **The supercritical regime.** For $Z\alpha$ beyond $j+\tfrac12$ the exact formula loses its bound states; how does the framework describe the diving of the level into the negative continuum?
 5. **Radiative corrections.** The Lamb shift and the anomalous moment are loop effects; the framework's classical equation does not contain them (as the electron article records for $g-2$), and a framework account would require the quantized theory.
 6. **Many-electron and finite-nuclear-size effects.** The article is for one electron in a fixed point-Coulomb field; the framework's account of the electron–electron interaction and of nuclear structure is not developed here.
-7. **Empirical content.** The spectrum predicts nothing beyond standard relativistic quantum mechanics for hydrogen. Whether any framework-level effect distinguishes the two remains the standing open question.
+7. **Empirical content.** The spectrum predicts nothing beyond standard relativistic quantum physics for hydrogen. Whether any framework-level effect distinguishes the two remains the standing open question.
 
 ## Summary
 
@@ -315,4 +315,4 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the non-relativistic comparison and the fine structure.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the relation of biquaternions to $M_2(\mathbb{C})$ and the spinor representation.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the Coulomb problem and the spin–orbit coupling.
-- Companion articles: *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *Exercise: The Non-Relativistic Limit and the Pauli Equation*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *Quantum Mechanics in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+- Companion articles: *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *Exercise: The Non-Relativistic Limit and the Pauli Equation*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *Quantum Physics in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

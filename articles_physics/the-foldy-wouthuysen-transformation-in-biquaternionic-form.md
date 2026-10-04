@@ -214,7 +214,7 @@ The lower block is the same Hamiltonian with the sign of the mass reversed, i.e.
 
 ## What Is Standard and What the Algebra Adds
 
-The transformation, the generator $S_1$, the leading Hamiltonian $\beta mc^2 + \beta O^2/(2mc^2)$, the closed free-particle form $\beta E$, the mean position operator and the Pauli limit are all standard results, transcribed here from the relativistic-quantum-mechanics literature and cited as such. The biquaternion contribution is not a new formula but a placing:
+The transformation, the generator $S_1$, the leading Hamiltonian $\beta mc^2 + \beta O^2/(2mc^2)$, the closed free-particle form $\beta E$, the mean position operator and the Pauli limit are all standard results, transcribed here from the relativistic-quantum-physics literature and cited as such. The biquaternion contribution is not a new formula but a placing:
 
 - The **two gradings** are kept distinct. The FW transformation diagonalises the frame grading (large/small, $\beta$); the biquaternion mass pair is the chirality grading (left/right, $\gamma_5$). They anticommute, so the transformation cannot diagonalise both, and the mass is the obstruction.
 - The **mass term** appears in the transformation as the large, frame-even term whose diagonal form is the non-relativistic gap; in the chiral basis the same mass is the off-diagonal coupling of the biquaternion pair. Moving between the two descriptions is the FW transformation.

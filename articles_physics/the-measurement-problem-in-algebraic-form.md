@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The measurement problem is the unresolved question of how the definite, single outcomes of measurement are related to a formalism whose states evolve deterministically and linearly. It has been argued for a century, and it is not settled. The biquaternion framework of the companion articles is a **reformulation of standard quantum mechanics**: it reproduces the standard predictions, introduces no new empirical content, and therefore cannot settle an interpretive or empirical dispute that standard quantum mechanics does not settle. This article proposes no solution.
+The measurement problem is the unresolved question of how the definite, single outcomes of measurement are related to a formalism whose states evolve deterministically and linearly. It has been argued for a century, and it is not settled. The biquaternion framework of the companion articles is a **reformulation of standard quantum physics**: it reproduces the standard predictions, introduces no new empirical content, and therefore cannot settle an interpretive or empirical dispute that standard quantum physics does not settle. This article proposes no solution.
 
 What it does is narrower, and worth doing carefully. A reformulation changes which notions are primitive, and the measurement problem is stated in terms of primitive notions. The question here is: **stated in the objects of the framework, what is the measurement problem, and what does the restatement change?**
 
@@ -28,7 +28,7 @@ These strands are not independent, but they are distinct, and a reformulation ca
 
 ## The Algebraic Vocabulary
 
-Recall from *Quantum Mechanics in Biquaternionic Form* that a state of the informational sector is an element
+Recall from *Quantum Physics in Biquaternionic Form* that a state of the informational sector is an element
 
 $$
 \tilde{\rho} = \tfrac{1}{2}\left(e_0 + i\,\mathbf{r}\right), \qquad \mathbf{r} \in \mathbb{R}^3, \quad |\mathbf{r}| \leq 1,
@@ -73,7 +73,7 @@ $$
 
 using $\tilde\Pi_\pm^2 = \tilde\Pi_\pm$ and $\mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho}) = p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_\pm$. It does not preserve the biquaternion norm unless $\tilde\Pi_\pm = e_0$, and it is not invertible.
 
-The measurement update of *Quantum Mechanics in Biquaternionic Form* is the normalized version of the idempotent case,
+The measurement update of *Quantum Physics in Biquaternionic Form* is the normalized version of the idempotent case,
 
 $$
 \tilde{\rho} \;\longmapsto\; \frac{\tilde\Pi_\pm\,\tilde{\rho}\,\tilde\Pi_\pm}{\mathrm{Tr}\!\left(\tilde\Pi_\pm\tilde{\rho}\right)} = \tilde\Pi_\pm ,
@@ -170,7 +170,7 @@ Three observations keep this honest.
 
 **Enlarging the algebra does not remove the demand; it relocates it.** The index can be carried by a record — an apparatus, or an environment — and in the framework a record is another element of the algebra, which means passing to a tensor product $\mathbb{B}\otimes\mathbb{B}$ (equivalently, a state in $\mathbb{M}_+^{(A)}\otimes\mathbb{M}_+^{(B)}$). The joint state can be taken pure, and its reduced states can be the mixtures $\tilde{\rho}_d$. But the same structure then reappears one level up: the joint object contains the correlations and no rule selecting a definite record value. This is the von Neumann chain in algebraic form. The framework has no algebraic fixed point that terminates it, because the operation that would terminate it — selection — is exactly what is missing.
 
-**The framework's treatment is single-qubit.** The apparatus, the environment, and the macroscopic record are many-body objects; the framework as developed is a single-qubit formalism extended to finite tensor products, and the many-particle, field-theoretic setting in which a realistic apparatus would live is listed among its open problems (*Quantum Mechanics in Biquaternionic Form*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). The algebraic statement of the selection problem given here is therefore the selection problem *for a qubit*; the apparatus version is inherited by tensor product and not developed. This limitation is recorded rather than papered over: the strand of the measurement problem that concerns a macroscopic apparatus is not addressed at the level the framework currently supports.
+**The framework's treatment is single-qubit.** The apparatus, the environment, and the macroscopic record are many-body objects; the framework as developed is a single-qubit formalism extended to finite tensor products, and the many-particle, field-theoretic setting in which a realistic apparatus would live is listed among its open problems (*Quantum Physics in Biquaternionic Form*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). The algebraic statement of the selection problem given here is therefore the selection problem *for a qubit*; the apparatus version is inherited by tensor product and not developed. This limitation is recorded rather than papered over: the strand of the measurement problem that concerns a macroscopic apparatus is not addressed at the level the framework currently supports.
 
 ## The Preferred Basis and the Cut
 
@@ -188,7 +188,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 3. **The statistics-preserving and selection operations are separated exactly.** $\Phi^{\mathrm{deph}}_1$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{\rho}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
 
-4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{M}_+$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{\rho}$. This is inherited from *Quantum Mechanics in Biquaternionic Form* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
+4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{M}_+$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{\rho}$. This is inherited from *Quantum Physics in Biquaternionic Form* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
 
 5. **The form of the Born rule is algebraic.** The probabilities $p_\pm$ are the trace pairing $\mathrm{Tr}(\tilde\Pi_\pm\tilde{\rho})$. As the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* argues, this derives the **form** of the rule and the objects it relates, not its empirical content: the identification of the pairing with observed frequency is not an algebraic consequence.
 
@@ -202,7 +202,7 @@ The reformulation does not, and is not presented as, resolving the measurement p
 - **Explain probability.** The trace formula gives the numbers; it does not explain why they are frequencies or why a deterministic formalism has probabilities. This is the same division of labour as in the Born-rule article.
 - **Terminate the regress.** Enlarging to a tensor product with a record relocates the selection demand; it does not satisfy it.
 - **Distinguish the standard interpretations.** The framework is compatible with a structural reading and is not committed to Copenhagen, many-worlds, relational, or collapse readings; nothing in the algebra decides among them. In particular, the algebra contains both the unitary and the idempotent descriptions of a measurement, and it does not say which describes the world.
-- **Predict anything new.** As with the rest of the framework, the empirical content of standard quantum mechanics is reproduced, and the question of a distinguishing prediction is open. A reformulation with the same predictions cannot settle an empirical dispute.
+- **Predict anything new.** As with the rest of the framework, the empirical content of standard quantum physics is reproduced, and the question of a distinguishing prediction is open. A reformulation with the same predictions cannot settle an empirical dispute.
 
 The honest summary is a division of labour. The algebraic form makes the *structure* of the problem unusually explicit: one operation form, two element types, a statistics-preserving average whose output is a mixture, and a selection operation that is not a function of the state. It does not make the problem go away, and the gap left open is exactly the gap that was there before, now with a name in the algebra: the element that would have to select is not in the algebra.
 
@@ -250,4 +250,4 @@ What the reformulation changes is the form of the statement: two dynamics become
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for measurement as a completely positive map with classical outcomes, and for conditional expectations.
 - D. Petz, *Quantum Information Theory and Quantum Statistics* (Springer, 2008), for trace-preserving conditional expectations and the fixed-point structure of completely positive maps.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Kraus representation, the dephasing channel, and the reset channel.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*, *The Quantum–Classical Divide in the Biquaternion Framework*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*, *The Quantum–Classical Divide in the Biquaternion Framework*, and *Entangled Subsystems in the Biquaternion Framework*.

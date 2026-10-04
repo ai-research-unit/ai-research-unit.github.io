@@ -35,7 +35,7 @@ The companion articles supply the pieces:
 - Companion article *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the channel induced by a boost on a momentum superposition.
 - Companion article *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner angle, its momentum dependence, and its holonomy.
 - Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
 - Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the trace pairing and the Hermitian sector.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little group and the Casimir invariants.
 

@@ -336,7 +336,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 
 - G. E. Uhlenbeck and S. Goudsmit, "Spinning electrons and the structure of spectra," *Nature* **117** (1926) 264–265, for the introduction of the spinning electron and its magnetic moment.
 - R. de L. Kronig, "Spinning electrons and the structure of spectra," *Nature* **117** (1926) 550, for the early assignment of the spin magnetic moment.
-- W. Pauli, "Zur Quantenmechanik des magnetischen Elektrons," *Zeitschrift für Physik* **43** (1927) 601–623, for the quantum mechanics of the spin magnetic moment and the factor two.
+- W. Pauli, "Zur Quantenmechanik des magnetischen Elektrons," *Zeitschrift für Physik* **43** (1927) 601–623, for the quantum physics of the spin magnetic moment and the factor two.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the relativistic equation whose non-relativistic limit yields $g=2$.
 - A. Landé, "Über den anomalen Zeemaneffekt (Teil I)," *Zeitschrift für Physik* **5** (1921) 231–241, for the vector model and the factor that bears his name.
 - E. U. Condon and G. H. Shortley, *The Theory of Atomic Spectra* (Cambridge, 1935), for the vector model of the atom and the Landé factor.

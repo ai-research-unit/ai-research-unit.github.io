@@ -223,7 +223,7 @@ $$
 \qquad\text{so}\qquad
 J_{\hat{\mu}}(v)=\tfrac12\,[\hat{\mu},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Mechanics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{K}]=-2(\mathbf{h}\times\mathbf{k})$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{K}]=-2(\mathbf{h}\times\mathbf{k})$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\hat{\mu}\cdot\delta_2\hat{\mu}$ is invariant under $J$, because $J$ is a rotation:
 $$

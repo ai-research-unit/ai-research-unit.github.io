@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
 Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation.
 
@@ -21,11 +21,11 @@ is the result of *Exercise: The Correlation Function of the Bell States*, and it
 
 Two honest statements belong in the introduction, and they are revisited at the end.
 
-First, **the framework reproduces both bounds; it does not explain why nature stops at $2\sqrt{2}$.** The derivation below is the standard operator-norm argument, translated into the algebra. It shows that the quantum bound follows from the tensor-product structure and the $\pm1$ spectrum of the observables. It does not supply a principle, beyond that algebra, from which the value $2\sqrt{2}$ could be anticipated. The no-signaling maximum is $4$, and the framework — like ordinary quantum mechanics — offers no reason why the physical world realizes $2\sqrt{2}$ rather than $4$ other than the fact that it is quantum-mechanical.
+First, **the framework reproduces both bounds; it does not explain why nature stops at $2\sqrt{2}$.** The derivation below is the standard operator-norm argument, translated into the algebra. It shows that the quantum bound follows from the tensor-product structure and the $\pm1$ spectrum of the observables. It does not supply a principle, beyond that algebra, from which the value $2\sqrt{2}$ could be anticipated. The no-signaling maximum is $4$, and the framework — like ordinary quantum physics — offers no reason why the physical world realizes $2\sqrt{2}$ rather than $4$ other than the fact that it is quantum-mechanical.
 
 Second, the sharp bound is obtained **after** the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and the cyclic products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the scalar imaginary, $i^2=-1$. On a single factor the trace is twice the scalar part, $\mathrm{Tr}_\mathbb{B}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$, and on the tensor product $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, with $\mathrm{Tr}_\mathbb{B}(e_0)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$. The isomorphism is the one fixed by *Quantum Mechanics in Biquaternionic Form*,
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and the cyclic products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the scalar imaginary, $i^2=-1$. On a single factor the trace is twice the scalar part, $\mathrm{Tr}_\mathbb{B}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$, and on the tensor product $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, with $\mathrm{Tr}_\mathbb{B}(e_0)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*,
 
 $$
 e_0\mapsto I_2,\qquad e_1\mapsto -i\sigma_1,\qquad e_2\mapsto -i\sigma_2,\qquad e_3\mapsto -i\sigma_3,
@@ -392,7 +392,7 @@ $$
 E(\hat{a},\hat{b})=+1,\quad E(\hat{a},\hat{b}')=-1,\quad E(\hat{a}',\hat{b})=+1,\quad E(\hat{a}',\hat{b}')=+1,
 $$
 
-so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot transmit a signal. Quantum mechanics permits $2\sqrt{2}$ and forbids $4$; the framework reproduces the quantum value and, like standard quantum mechanics, does not explain why the world realizes $2\sqrt{2}$ rather than the algebraic maximum.
+so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot transmit a signal. Quantum physics permits $2\sqrt{2}$ and forbids $4$; the framework reproduces the quantum value and, like standard quantum physics, does not explain why the world realizes $2\sqrt{2}$ rather than the algebraic maximum.
 
 ## What the Biquaternion Solution Illustrates
 

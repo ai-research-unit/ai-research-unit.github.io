@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is one of a series of **worked exercises** on quantum mechanics in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. Earlier exercises treated the kinematics of a qubit and of a pair of qubits; each was a single problem solved twice, once in the standard Hilbert-space formulation and once in the biquaternion formulation of the Hermitian subspace $\mathbb{M}_+$. This exercise is different in structure. Its parent is the article *Quantum Channels and the Reversible/Irreversible Dichotomy*, which develops the general state map on $\mathbb{M}_+$ — the quantum channel, its Kraus representation, complete positivity, the Choi matrix, and the reversible/irreversible dichotomy. The reader is assumed to have that formalism and is asked to apply it.
+This is one of a series of **worked exercises** on quantum physics in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. Earlier exercises treated the kinematics of a qubit and of a pair of qubits; each was a single problem solved twice, once in the standard Hilbert-space formulation and once in the biquaternion formulation of the Hermitian subspace $\mathbb{M}_+$. This exercise is different in structure. Its parent is the article *Quantum Channels and the Reversible/Irreversible Dichotomy*, which develops the general state map on $\mathbb{M}_+$ — the quantum channel, its Kraus representation, complete positivity, the Choi matrix, and the reversible/irreversible dichotomy. The reader is assumed to have that formalism and is asked to apply it.
 
 The article is therefore a sequence of independent problems, each in its own section. We work throughout in the notation of the parent, returning to the standard matrix formulation only where the parent itself does (the transpose map, the Choi matrix, and the standard Kraus operators of amplitude damping). The problems are:
 
@@ -336,4 +336,4 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the complete-positivity criterion used in Problem 3.
 - M. B. Ruskai, S. Szarek, and E. Werner, "An analysis of completely-positive trace-preserving maps on $2\times2$ matrices," *Linear Algebra and its Applications* **347** (2002) 159–187, for the affine Bloch-ball picture of qubit channels.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and the earlier exercises of this series.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and the earlier exercises of this series.

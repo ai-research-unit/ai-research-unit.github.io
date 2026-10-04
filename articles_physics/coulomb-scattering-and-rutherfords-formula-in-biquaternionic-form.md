@@ -8,7 +8,7 @@ $$
 \frac{d\sigma}{d\Omega}=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
 $$
 
-the differential cross section that Rutherford obtained from classical mechanics and that non-relativistic quantum mechanics reproduces exactly. It is the one scattering problem of the subcategory with a long-range potential, and it is the problem in which the partial-wave expansion and the Born approximation can be compared on a case in which both are available: the first Born amplitude already has the modulus that Rutherford's formula requires, and the exact amplitude differs from it only by a phase — the Coulomb phase.
+the differential cross section that Rutherford obtained from classical mechanics and that non-relativistic quantum physics reproduces exactly. It is the one scattering problem of the subcategory with a long-range potential, and it is the problem in which the partial-wave expansion and the Born approximation can be compared on a case in which both are available: the first Born amplitude already has the modulus that Rutherford's formula requires, and the exact amplitude differs from it only by a phase — the Coulomb phase.
 
 This article treats the continuum of the same central potential whose bound states the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* solves. It does not repeat the bound-state derivation. The biquaternion content is the by-now-familiar consequence of centrality: the potential multiplies $e_0$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, the scattering amplitude is a scalar function of the angle and the energy, and the phase shifts are central. The radial problem is the same scalar radial problem as in the bound case, continued to positive energy. The framework's contribution is the algebraic location of the amplitude and the phases, and the sector reading of the flux; it is not a new solution of the Coulomb equation.
 
@@ -174,7 +174,7 @@ $$
 =\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
 $$
 
-which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of the classical Rutherford scattering, and quantum mechanics reproduces it because the Coulomb potential is the unique potential for which the partial-wave sum and the classical orbit give the same answer.
+which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of the classical Rutherford scattering, and quantum physics reproduces it because the Coulomb potential is the unique potential for which the partial-wave sum and the classical orbit give the same answer.
 
 The classical route to the same formula is worth recording because it is available here in the elementary form. For a Coulomb potential the orbit is a Kepler hyperbola, and the impact parameter is related to the scattering angle by
 
@@ -255,7 +255,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The Coulomb wave equation, the regular and irregular Coulomb functions, the Coulomb phase, the partial-wave amplitude, the closed-form Coulomb amplitude, Rutherford's formula, the first Born amplitude, and the classical orbit derivation are all standard. This article transcribes them and cites them as standard.
+**Standard quantum physics, transcribed.** The Coulomb wave equation, the regular and irregular Coulomb functions, the Coulomb phase, the partial-wave amplitude, the closed-form Coulomb amplitude, Rutherford's formula, the first Born amplitude, and the classical orbit derivation are all standard. This article transcribes them and cites them as standard.
 
 **What the biquaternion notation provides.**
 

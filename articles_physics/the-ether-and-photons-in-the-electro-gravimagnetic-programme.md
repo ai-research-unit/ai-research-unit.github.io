@@ -363,7 +363,7 @@ is a monochromatic classical wave under a quantum name. The cloud is a spectral 
 particle name. The ball-lightning remark has nothing behind it. And the gravitational-wave claim is
 contradicted by the observation it would have to survive. The programme's own summary of its value
 is that a biquaternion description "allows determining its characteristics at any point in
-space-time what is impossible in models of quantum mechanics" — which is true of any classical field
+space-time what is impossible in models of quantum physics" — which is true of any classical field
 description, and is the same claim the harmonic article has already examined.
 
 ## Summary

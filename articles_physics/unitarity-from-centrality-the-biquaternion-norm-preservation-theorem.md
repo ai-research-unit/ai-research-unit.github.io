@@ -49,7 +49,7 @@ $$
 \|\tilde{Q}\|_{\dagger}^2
 =2\bigl(|x_0|^2+|x_1|^2+|x_2|^2+|x_3|^2\bigr)>0\quad(\tilde{Q}\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum mechanics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -289,7 +289,7 @@ so the hypothesis reads $-\tilde{H}J^\dagger=J\tilde{H}$ for every Hermitian $\t
 
 The results above divide into a standard linear-algebra part and an algebraic part, and the division should be stated rather than left implicit.
 
-**Standard.** The identification of the Hilbert–Schmidt isometries of a matrix algebra under congruence with the unitary group is standard; the multiplicativity of the determinant and the behaviour of the determinant under the adjoint, $\det(A^\dagger)=\det(A)^{*}$, are standard; the isomorphism of the unit-norm group $SL(2,\mathbb{C})$ with the double cover of the Lorentz group is standard, and so is the fact that the unitary group is the norm-preserving group of quantum mechanics. The companion articles on the Schrödinger equation and on angular momentum already use these facts, and nothing here re-derives them.
+**Standard.** The identification of the Hilbert–Schmidt isometries of a matrix algebra under congruence with the unitary group is standard; the multiplicativity of the determinant and the behaviour of the determinant under the adjoint, $\det(A^\dagger)=\det(A)^{*}$, are standard; the isomorphism of the unit-norm group $SL(2,\mathbb{C})$ with the double cover of the Lorentz group is standard, and so is the fact that the unitary group is the norm-preserving group of quantum physics. The companion articles on the Schrödinger equation and on angular momentum already use these facts, and nothing here re-derives them.
 
 **The algebra's.** Three statements are genuinely about $\mathbb{B}$ and its structure, and they are the content the framework adds.
 
@@ -337,7 +337,7 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$
 
 ## Further Reading
 
-- S. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford University Press, 1995), for the quaternionic formulation of quantum mechanics, its unitarity conditions, and the role of the norm.
+- S. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford University Press, 1995), for the quaternionic formulation of quantum physics, its unitarity conditions, and the role of the norm.
 - D. Finkelstein, J. M. Jauch, S. Schiminovich, and D. Speiser, "Foundations of quaternion quantum mechanics", *Journal of Mathematical Physics* **3**, 207 (1962), for the original algebraic treatment of quaternionic quantum theory and its scalar field.
 - G. Birkhoff and J. von Neumann, "The logic of quantum mechanics", *Annals of Mathematics* **37**, 823 (1936), for the argument that the complex field is the appropriate scalar field and the role of a central imaginary unit.
 - A. Sudbery, "Quaternionic analysis", *Mathematical Proceedings of the Cambridge Philosophical Society* **85**, 199 (1979), for the analysis of quaternionic and biquaternionic linear algebra, determinants, and the unimodular group.

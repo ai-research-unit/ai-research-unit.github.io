@@ -23,7 +23,7 @@ The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the phase from the action and the Lagrangian route.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the geometric phase and the solid-angle formula.
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin operator and the idempotents.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operator and the idempotents.
 
 ## The Effect
 

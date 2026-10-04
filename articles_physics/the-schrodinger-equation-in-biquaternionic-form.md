@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For a pure state $|\psi(t)\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum mechanics is
+For a pure state $|\psi(t)\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
 
 $$
 i\hbar\,\partial_t|\psi(t)\rangle = H\,|\psi(t)\rangle,
@@ -10,7 +10,7 @@ $$
 
 and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial_t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Mechanics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t)$ obeying $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{\rho}/dt = [\tilde{H},\tilde{\rho}]$ for $\tilde{\rho} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial_t\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t)$ obeying $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{\rho}/dt = [\tilde{H},\tilde{\rho}]$ for $\tilde{\rho} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial_t\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -248,7 +248,7 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
-1. *The complex structure is supplied, not chosen.* Since $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ contains the central element $i$ by construction, the complex structure of the state module is fixed by the algebra. In a purely quaternionic formulation — wave functions valued in $\mathbb{H}$, with no complexifying factor — there is no central imaginary unit, and one must *choose* a complex structure on the state space, so the choice becomes extra input. Here the algebra supplies it, and the quaternion units, being non-central, are not candidates. This is definitional — $\mathbb{C}$ was put into $\mathbb{B}$ by fiat — but the content is that the same algebra contains both the quaternion units and the central root of $-1$, unique up to sign, that quantum mechanics requires.
+1. *The complex structure is supplied, not chosen.* Since $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ contains the central element $i$ by construction, the complex structure of the state module is fixed by the algebra. In a purely quaternionic formulation — wave functions valued in $\mathbb{H}$, with no complexifying factor — there is no central imaginary unit, and one must *choose* a complex structure on the state space, so the choice becomes extra input. Here the algebra supplies it, and the quaternion units, being non-central, are not candidates. This is definitional — $\mathbb{C}$ was put into $\mathbb{B}$ by fiat — but the content is that the same algebra contains both the quaternion units and the central root of $-1$, unique up to sign, that quantum physics requires.
 
 2. *The observable/generator split is intrinsic.* $\mathbb{M}_+$ and $\mathbb{M}_-$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde{H} \mapsto \tilde{G} = -i\tilde{H}/\hbar$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde{H}$ is Hermitian iff $-i\tilde{H}$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.
 

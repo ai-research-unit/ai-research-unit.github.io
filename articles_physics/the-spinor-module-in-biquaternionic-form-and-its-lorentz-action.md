@@ -44,7 +44,7 @@ Q_0 - iQ_3 & -iQ_1 - Q_2\\[2pt]
 \Phi(e_0) = I_2,\quad \Phi(e_k) = -i\sigma_k,\quad \Phi(i) = i I_2,
 $$
 
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Mechanics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i e_k$ corresponds to $\sigma_k$, and the quaternion relations $e_j e_k = \sum_l \epsilon_{jkl}e_l$ hold on both sides. Two properties of $\Phi$ are used repeatedly:
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i e_k$ corresponds to $\sigma_k$, and the quaternion relations $e_j e_k = \sum_l \epsilon_{jkl}e_l$ hold on both sides. Two properties of $\Phi$ are used repeatedly:
 
 $$
 \Phi(\tilde{Q}\tilde{R}) = \Phi(\tilde{Q})\Phi(\tilde{R}), \qquad

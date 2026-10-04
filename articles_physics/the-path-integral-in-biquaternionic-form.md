@@ -144,7 +144,7 @@ so the norm is not preserved. A path integral built on this phase would not repr
 $$e^{e_3\theta}\;\longmapsto\;\cos\theta\,I_2-i\sin\theta\,\sigma_3=\operatorname{diag}\!\big(e^{-i\theta},\,e^{+i\theta}\big),$$
 so it multiplies the two components by opposite phases. It is a **relative** phase, that is, a spin rotation, not the single global phase a path is supposed to contribute. A genuinely global phase must be central.
 
-**The choice is extra input.** The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the center the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum mechanics, where a complex structure must be chosen as additional input.
+**The choice is extra input.** The central imaginary is supplied by the algebra: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains $\mathbb{C}$ by construction, and within the center the roots of $-1$ are exactly $\pm i$. A real non-central root is a point of the Bloch sphere, and using one fixes a preferred spin axis that the algebra does not supply. The same observation is made by Adler's quaternionic quantum physics, where a complex structure must be chosen as additional input.
 
 **An honest qualification.** A *fixed* non-central root $J$ does not destroy interference: two paths with phases $e^{J S_1/\hbar}$ and $e^{J S_2/\hbar}$ still combine to $2\cos(\Delta S/2\hbar)$ times a unit element of the plane $\operatorname{span}\{e_0,J\}$. What fails is not interference but **canonicity and uniformity**: the phase lives in a chosen complex plane rather than the center, the amplitude is a quaternion rather than a complex number, and the plane is an extra input. The Schrödinger article reaches the same verdict for the same reason, and this article inherits it rather than re-deriving it.
 
@@ -302,7 +302,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard quantum mechanics, transcribed.** The sum over paths, the composition law, the interference formula, the stationary-phase classical limit, the free and short-time kernels, the Gaussian fluctuation determinant, and the Euclidean reduction by Wick rotation are all standard. None of them is new, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
+**Standard quantum physics, transcribed.** The sum over paths, the composition law, the interference formula, the stationary-phase classical limit, the free and short-time kernels, the Gaussian fluctuation determinant, and the Euclidean reduction by Wick rotation are all standard. None of them is new, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
 
 **What the biquaternion notation provides.**
 
@@ -332,7 +332,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 **5. Real-time dynamics.** The path integral is where the sign problem lives: the Euclidean form is computable and the Lorentzian form carries the phase that obstructs simulation. The biquaternion reading does not remove this obstruction; it only names the direction (the $ict$ axis of $\mathbb{M}_-$) along which the phase accumulates. Whether that naming has any computational content is open.
 
-**6. Empirical content.** As elsewhere in the framework, whether the present reformulation yields any prediction distinguishing it from standard quantum mechanics is open. Nothing in this article changes that.
+**6. Empirical content.** As elsewhere in the framework, whether the present reformulation yields any prediction distinguishing it from standard quantum physics is open. Nothing in this article changes that.
 
 ## Summary
 

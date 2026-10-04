@@ -161,7 +161,7 @@ n_+=4k ,
 n_-=0 ,
 $$
 
-and the moduli space of the background has dimension $8k$, twice this number. The relation is not a coincidence. The instanton moduli are the collective coordinates, and the adjoint zero modes are the fermionic partners of those coordinates in the supersymmetric quantum mechanics whose ground states are the instanton states: each bosonic collective coordinate of the ADHM moduli space of *The ADHM Construction and Biquaternion Instanton Data* is paired with a fermionic zero mode, so the $8k$ bosonic coordinates of the framed moduli space correspond to $4k$ adjoint zero modes counted with one chirality and to the doubled count in the full Dirac spectrum. The index
+and the moduli space of the background has dimension $8k$, twice this number. The relation is not a coincidence. The instanton moduli are the collective coordinates, and the adjoint zero modes are the fermionic partners of those coordinates in the supersymmetric quantum physics whose ground states are the instanton states: each bosonic collective coordinate of the ADHM moduli space of *The ADHM Construction and Biquaternion Instanton Data* is paired with a fermionic zero mode, so the $8k$ bosonic coordinates of the framed moduli space correspond to $4k$ adjoint zero modes counted with one chirality and to the doubled count in the full Dirac spectrum. The index
 
 $$
 \mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4k=\tfrac12\dim_{\mathbb R}\mathcal M_k

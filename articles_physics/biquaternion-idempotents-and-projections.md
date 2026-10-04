@@ -128,7 +128,7 @@ Substituting the three families of roots:
 $$
   \tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac{1}{2}\left(e_0+i\hat{\boldsymbol\mu}\right),
 $$
-  which is the **Bloch sphere** of the state space, and the orbit of one vacuum under the rotations is the vacuum manifold. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Quantum Mechanics in Biquaternionic Form*.
+  which is the **Bloch sphere** of the state space, and the orbit of one vacuum under the rotations is the vacuum manifold. See *The Biquaternion Vacuum as a Minimal Idempotent* and *Quantum Physics in Biquaternionic Form*.
 - **Non-trivial roots** $\xi = b\mu+d\nu i$: $\tilde\Pi = \tfrac12e_0\pm\tfrac12(b\mu i-d\nu)$, idempotents combining a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Their vector part mixes a real and an imaginary direction, so they lie in none of the four four-dimensional subspaces, and they are **not** Hermitian: they are idempotents of the algebra but not orthogonal projections, hence not pure states in the sense the quantum articles use. They are the projectors that appear in the Peirce decomposition.
 
 **A note on the null property.** Every idempotent of the classification has $N(\tilde\Pi) = 0$: for $\tilde\Pi = \tfrac12(e_0+\xi i)$,
@@ -151,7 +151,7 @@ This is the algebraic content of the statement that idempotents are projections:
 
 A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection with respect to the Hermitian form, and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \tilde\Pi$, the Hermitian idempotents are exactly the second family of Section 4 and lie in $\mathbb{M}_+$.
 
-**Physical reading: the projection, the state and the measurement.** The Hermitian idempotents of $\mathbb{M}_+$ are the pure states, and the pairing of one with an observable gives the Born probability through the trace; the spectral decomposition of an observable is a sum of orthogonal Hermitian idempotents. The two objects called "projection" must be kept apart here as well: the **idempotent element** $\tilde\Pi$ is a state, and the **sandwich** $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$ is the measurement operation; the operation squares to itself only in the idealised case, while the state is idempotent by definition. The passage from a pure state (idempotent) to a mixed state (not idempotent) is the subject of *Decoherence as Idempotent Projection*, and the pairing with the Born rule is in *Quantum Mechanics in Biquaternionic Form*.
+**Physical reading: the projection, the state and the measurement.** The Hermitian idempotents of $\mathbb{M}_+$ are the pure states, and the pairing of one with an observable gives the Born probability through the trace; the spectral decomposition of an observable is a sum of orthogonal Hermitian idempotents. The two objects called "projection" must be kept apart here as well: the **idempotent element** $\tilde\Pi$ is a state, and the **sandwich** $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$ is the measurement operation; the operation squares to itself only in the idealised case, while the state is idempotent by definition. The passage from a pure state (idempotent) to a mixed state (not idempotent) is the subject of *Decoherence as Idempotent Projection*, and the pairing with the Born rule is in *Quantum Physics in Biquaternionic Form*.
 
 ## 6. Idempotents and the Non-Pure Zero Divisors
 

@@ -229,7 +229,7 @@ $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle\hat N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle\hat N\rangle=1$; the trace formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.
 
-The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{M}_+$ is the space of states of the framework's finite-dimensional quantum mechanics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
+The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{M}_+$ is the space of states of the framework's finite-dimensional quantum physics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
 
 ## Coherent States and the Central Phase
 

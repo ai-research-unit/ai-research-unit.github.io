@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Classical Hamiltonian mechanics and quantum mechanics each equip their observables with a bracket. In classical mechanics the observables are real functions on phase space and the bracket is the **Poisson bracket** $\{f,g\}$. In quantum mechanics the observables are Hermitian operators and the bracket is the **commutator** $[\hat f,\hat g]$. The two brackets have the same abstract shape — each is bilinear, antisymmetric, and satisfies the Jacobi identity — and the standard statement of the correspondence between the two theories is the assignment
+Classical Hamiltonian mechanics and quantum physics each equip their observables with a bracket. In classical mechanics the observables are real functions on phase space and the bracket is the **Poisson bracket** $\{f,g\}$. In quantum physics the observables are Hermitian operators and the bracket is the **commutator** $[\hat f,\hat g]$. The two brackets have the same abstract shape — each is bilinear, antisymmetric, and satisfies the Jacobi identity — and the standard statement of the correspondence between the two theories is the assignment
 
 $$
 \{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}\,[\hat f,\hat g].
@@ -58,7 +58,7 @@ The second and third are the cases that will expose the limit of the corresponde
 
 ## The Quantum Bracket
 
-In quantum mechanics the observables are Hermitian operators $\hat f, \hat g, \dots$ on a Hilbert space, and the bracket is the **commutator**
+In quantum physics the observables are Hermitian operators $\hat f, \hat g, \dots$ on a Hilbert space, and the bracket is the **commutator**
 
 $$
 [\hat f,\hat g] = \hat f\hat g - \hat g\hat f.
@@ -284,7 +284,7 @@ where $\operatorname{symb}$ denotes the Weyl symbol, and the approach is control
 
 ## The Resemblance in the Biquaternion Framework
 
-The companion articles express quantum mechanics in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. It is worth asking what becomes of the correspondence there, because the framework's realization of it is instructive: it exhibits the resemblance exactly in one of the two checks above and not at all in the other.
+The companion articles express quantum physics in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. It is worth asking what becomes of the correspondence there, because the framework's realization of it is instructive: it exhibits the resemblance exactly in one of the two checks above and not at all in the other.
 
 **The observables.** In the framework the observables of a two-state system are the Hermitian elements
 $$
@@ -359,10 +359,10 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 ## Further Reading
 
 - *Angular Momentum and Spin in Biquaternionic Form* (`articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md`), for the commutator $[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.
-- *Quantum Mechanics in Biquaternionic Form* (`articles_physics/quantum-mechanics-in-biquaternionic-form.md`), for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
-- *Spin-1/2 Quantum Mechanics in Biquaternionic Form* (`articles_physics/spin-1-2-quantum-mechanics-in-biquaternionic-form.md`), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $e_k\mapsto-i\sigma_k$ used throughout the framework section.
+- *Quantum Physics in Biquaternionic Form* (`articles_physics/quantum-physics-in-biquaternionic-form.md`), for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
+- *Spin-1/2 Quantum Physics in Biquaternionic Form* (`articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.md`), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $e_k\mapsto-i\sigma_k$ used throughout the framework section.
 - *The Harmonic Oscillator in Biquaternionic Form* (`articles_physics/the-harmonic-oscillator-in-biquaternionic-form.md`), for the proof that $[\tilde{Q},\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.
 - *Biquaternion Automorphisms and Derivations* (`articles_physics/biquaternion-automorphisms-and-derivations.md`), for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.
-- *Quantum Mechanics: Foundations and Structure* (`articles_physics/quantum-mechanics-foundations-and-structure.md`), for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.
+- *Quantum Physics: Foundations and Structure* (`articles_physics/quantum-physics-foundations-and-structure.md`), for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.
 - *The Schrödinger Equation in Biquaternionic Form* (`articles_physics/the-schrodinger-equation-in-biquaternionic-form.md`), for the Heisenberg-picture dynamics $\dot{\hat f}=(1/i\hbar)[\hat f,\hat H]$ and the observable/generator split inside the algebra.

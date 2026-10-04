@@ -1,16 +1,16 @@
-# __Quantum Mechanics: Foundations and Structure__
+# __Quantum Physics: Foundations and Structure__
 
 ## Introduction
 
-This article presents the foundations of standard quantum mechanics. Its purpose is twofold: to serve as an introduction for readers who are new to the subject, and to prepare the ground for a subsequent article on quantum mechanics in the biquaternion framework. The presentation here is entirely conventional: no biquaternions are used, and the formalism is the standard one found in textbooks.
+This article presents the foundations of standard quantum physics. Its purpose is twofold: to serve as an introduction for readers who are new to the subject, and to prepare the ground for a subsequent article on quantum physics in the biquaternion framework. The presentation here is entirely conventional: no biquaternions are used, and the formalism is the standard one found in textbooks.
 
-The article is organized as follows. First the four foundational postulates of quantum mechanics are stated: the state space, the observables, the dynamics, and the measurement rule. Then the two descriptions of states — pure states and density matrices — are developed. Then observables and the Born rule are explained. Then the two-state system (the qubit) and the Bloch sphere are introduced, because they are the simplest illustration of the whole formalism and the ones that will reappear in the biquaternion framework. Then the dynamics of states is recalled, in the Schrödinger, Heisenberg, and von Neumann pictures. Then projective and generalized measurements are described. Then composite systems and entanglement are introduced. The article closes with a checklist of what a comprehensive quantum theory must contain, since this checklist will be the reference for assessing the biquaternion reformulation.
+The article is organized as follows. First the four foundational postulates of quantum physics are stated: the state space, the observables, the dynamics, and the measurement rule. Then the two descriptions of states — pure states and density matrices — are developed. Then observables and the Born rule are explained. Then the two-state system (the qubit) and the Bloch sphere are introduced, because they are the simplest illustration of the whole formalism and the ones that will reappear in the biquaternion framework. Then the dynamics of states is recalled, in the Schrödinger, Heisenberg, and von Neumann pictures. Then projective and generalized measurements are described. Then composite systems and entanglement are introduced. The article closes with a checklist of what a comprehensive quantum theory must contain, since this checklist will be the reference for assessing the biquaternion reformulation.
 
-The presentation is written for a reader who is not assumed to be a quantum-mechanics specialist. Formulas are stated precisely but not derived in full. The reader who wants derivations is referred to the standard texts listed in the Further Reading.
+The presentation is written for a reader who is not assumed to be a quantum-physics specialist. Formulas are stated precisely but not derived in full. The reader who wants derivations is referred to the standard texts listed in the Further Reading.
 
-## The Postulates of Quantum Mechanics
+## The Postulates of Quantum Physics
 
-Quantum mechanics is built on four foundational postulates. They are stated here in the operator formulation, which is the most common in modern practice.
+Quantum physics is built on four foundational postulates. They are stated here in the operator formulation, which is the most common in modern practice.
 
 **Postulate 1 (States).** A physical system is described by a complex Hilbert space $\mathcal{H}$. The state of the system is a positive, trace-class operator $\rho$ on $\mathcal{H}$ with trace one:
 
@@ -146,9 +146,9 @@ $$
 
 The expectation value is a real number, since both $A$ and $\rho$ are Hermitian.
 
-**Interpretation.** The Born rule is the bridge between the mathematical formalism (Hermitian operators, density matrices) and the empirical content of the theory (probabilities of measurement outcomes). It is the rule that gives quantum mechanics its probabilistic character.
+**Interpretation.** The Born rule is the bridge between the mathematical formalism (Hermitian operators, density matrices) and the empirical content of the theory (probabilities of measurement outcomes). It is the rule that gives quantum physics its probabilistic character.
 
-**Axiomatic status.** The Born rule is a postulate, not a theorem, of standard quantum mechanics. It can be motivated in several ways (via Gleason's theorem, via decision-theoretic arguments, via envariance), but it is not derived from the other postulates. This axiomatic status is a feature of the standard framework that will be revisited in the biquaternion reformulation.
+**Axiomatic status.** The Born rule is a postulate, not a theorem, of standard quantum physics. It can be motivated in several ways (via Gleason's theorem, via decision-theoretic arguments, via envariance), but it is not derived from the other postulates. This axiomatic status is a feature of the standard framework that will be revisited in the biquaternion reformulation.
 
 ## Two-State Systems and Qubits
 
@@ -296,7 +296,7 @@ The two pictures are related by a unitary transformation and give the same predi
 
 The evolution generated by a Hermitian Hamiltonian is **unitary**: $U^\dagger U = U U^\dagger = I$. This means the evolution is **reversible**: the state at any time can be recovered from the state at any later time by applying $U^\dagger$.
 
-Reversibility is one of the structural features of quantum mechanics that distinguishes unitary evolution from measurement. The measurement process, described by the projection $P_a$, is not reversible (the information about the parts of the state that are projected out is lost). This distinction between reversible evolution and irreversible measurement is one of the deepest features of the theory.
+Reversibility is one of the structural features of quantum physics that distinguishes unitary evolution from measurement. The measurement process, described by the projection $P_a$, is not reversible (the information about the parts of the state that are projected out is lost). This distinction between reversible evolution and irreversible measurement is one of the deepest features of the theory.
 
 ## Measurement
 
@@ -412,33 +412,33 @@ The discussion above can be summarized as a checklist of what a complete quantum
 
 **10. An interpretation.** A statement of what the formalism means physically: what are states, what are observables, what is measurement, what is the role of the observer.
 
-The first six items are the mathematical skeleton of quantum mechanics. Items 7–9 are structural constraints that any physically viable quantum theory must satisfy. Item 10 is interpretive, and the history of quantum mechanics shows that different interpretations can be attached to the same formalism.
+The first six items are the mathematical skeleton of quantum physics. Items 7–9 are structural constraints that any physically viable quantum theory must satisfy. Item 10 is interpretive, and the history of quantum physics shows that different interpretations can be attached to the same formalism.
 
-Any reformulation of quantum mechanics must reproduce all ten items, or must explain why one of them is not needed, or must replace it with something structurally better.
+Any reformulation of quantum physics must reproduce all ten items, or must explain why one of them is not needed, or must replace it with something structurally better.
 
 ## Open Issues
 
-The standard formalism of quantum mechanics has been extraordinarily successful, but it has several well-known open issues.
+The standard formalism of quantum physics has been extraordinarily successful, but it has several well-known open issues.
 
-**The measurement problem.** The theory has two kinds of time evolution (unitary and projection), and it does not say when one or the other applies. This is the measurement problem. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum mechanics), but there is no consensus.
+**The measurement problem.** The theory has two kinds of time evolution (unitary and projection), and it does not say when one or the other applies. This is the measurement problem. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.
 
 **The Born rule.** The Born rule is a postulate, not a theorem. Attempts to derive it (Gleason, decision theory, envariance) are suggestive but not universally accepted as deriving the rule from first principles.
 
-**Quantization.** The passage from classical mechanics to quantum mechanics is not unique: canonical quantization, path-integral quantization, and deformation quantization can give different results, and the "right" one is not always clear.
+**Quantization.** The passage from classical mechanics to quantum physics is not unique: canonical quantization, path-integral quantization, and deformation quantization can give different results, and the "right" one is not always clear.
 
-**Quantum gravity.** Quantum mechanics and general relativity are difficult to reconcile. The problem of time, the non-renormalizability of gravity, and the role of the observer all appear in quantum gravity, and none is fully resolved.
+**Quantum gravity.** Quantum physics and general relativity are difficult to reconcile. The problem of time, the non-renormalizability of gravity, and the role of the observer all appear in quantum gravity, and none is fully resolved.
 
 **Interpretation.** The meaning of the quantum state (ontic, epistemic, relational), the role of measurement, and the status of probabilities are all subject to ongoing debate.
 
-These open issues are the reason quantum mechanics remains a fertile field for reformulation, and they will be the guiding questions for the biquaternion framework.
+These open issues are the reason quantum physics remains a fertile field for reformulation, and they will be the guiding questions for the biquaternion framework.
 
 ## Summary
 
-Quantum mechanics rests on four postulates: states are density matrices, observables are Hermitian operators, dynamics is unitary, and measurement is projective. From these postulates, the whole theory follows: the Born rule, the Bloch sphere for qubits, the Schrödinger and von Neumann equations, the POVM and Kraus frameworks for generalized measurements, and the tensor-product structure for composite systems.
+Quantum physics rests on four postulates: states are density matrices, observables are Hermitian operators, dynamics is unitary, and measurement is projective. From these postulates, the whole theory follows: the Born rule, the Bloch sphere for qubits, the Schrödinger and von Neumann equations, the POVM and Kraus frameworks for generalized measurements, and the tensor-product structure for composite systems.
 
 The two-state system (the qubit) is the simplest and most instructive illustration. Its pure states form the Bloch sphere, its mixed states form the Bloch ball, and its observables are Hermitian operators on $\mathbb{C}^2$. The Born rule for a qubit depends only on the angle between the Bloch vector and the measurement direction.
 
-The standard formalism has ten structural requirements: a state space, a description of observables, a Born rule, a dynamics, a measurement rule, a composition rule, a symmetry group, a relativistic extension, a classical limit, and an interpretation. Any reformulation of quantum mechanics must address these ten requirements.
+The standard formalism has ten structural requirements: a state space, a description of observables, a Born rule, a dynamics, a measurement rule, a composition rule, a symmetry group, a relativistic extension, a classical limit, and an interpretation. Any reformulation of quantum physics must address these ten requirements.
 
 The standard formalism has several open issues: the measurement problem, the axiomatic status of the Born rule, the non-uniqueness of quantization, the difficulty of quantum gravity, and the interpretation of the quantum state. These are the questions that motivate alternative frameworks, including the biquaternion reformulation.
 

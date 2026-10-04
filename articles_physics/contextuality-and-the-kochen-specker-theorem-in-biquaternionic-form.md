@@ -67,7 +67,7 @@ $$
 v(P)\in\{0,1\}, \qquad \sum_{i}P_i = I \ \Longrightarrow\ \sum_i v(P_i) = 1 .
 $$
 
-Equivalently, no noncontextual deterministic hidden-variable model reproduces the predictions of quantum mechanics for a system of dimension at least three. The theorem is state-independent: it concerns the structure of observables, not any particular state.
+Equivalently, no noncontextual deterministic hidden-variable model reproduces the predictions of quantum physics for a system of dimension at least three. The theorem is state-independent: it concerns the structure of observables, not any particular state.
 
 The hypothesis $d\geq3$ is necessary. For $d=2$ the constraints are satisfiable, as the previous subsection showed. The original proof of Kochen and Specker used a finite set of vectors in $\mathbb{R}^3$; simpler proofs use the Peres–Mermin configuration in $d=4$, which is the two-qubit case relevant to the framework.
 
@@ -215,7 +215,7 @@ The two are related but not identical. The magic square is the stronger statemen
 - It does not prove the Kochen–Specker theorem in its general dimension-$\geq3$ form; only the dimension-four magic-square instance is constructed and verified here. The general theorem, and the original Kochen–Specker and Peres proofs, are imported as standard.
 - It does not resolve the interpretation of contextuality, nor does it supply a mechanism for the context-dependence; the algebra exhibits the obstruction as a fact about commuting subalgebras.
 - It does not go beyond the two-qubit arena; the framework's native composite is $\mathbb{B}\otimes\mathbb{B}$, and larger systems inherit the same tensor-product question raised in the entanglement articles.
-- It does not make an empirical prediction that quantum mechanics does not already make; the Kochen–Specker theorem is a theorem of the standard formalism, and the biquaternion version is its transcription.
+- It does not make an empirical prediction that quantum physics does not already make; the Kochen–Specker theorem is a theorem of the standard formalism, and the biquaternion version is its transcription.
 
 ## Open Questions
 
@@ -265,4 +265,4 @@ State-independent contextuality (the Kochen–Specker theorem and the magic squa
 - A. Cabello, S. Severini, and A. Winter, "Graph-theoretic approach to quantum correlations," *Physical Review Letters* **112** (2014) 040401, for the graph-theoretic formulation of state-independent contextuality.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for contexts, compatible observables, and value assignments.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Pauli group, commuting sets, and the stabilizer structure underlying the magic square.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The CHSH Inequality and Tsirelson's Bound*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The CHSH Inequality and Tsirelson's Bound*, and *Entangled Subsystems in the Biquaternion Framework*.

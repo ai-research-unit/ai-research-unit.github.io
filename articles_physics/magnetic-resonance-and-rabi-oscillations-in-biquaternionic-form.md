@@ -19,9 +19,9 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_\pm(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
 - Companion article *Exercise: Spin Precession in a Magnetic Field*, for the Larmor precession and the evolution biquaternion.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the Schrödinger evolution in the algebra and the trace pairing.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the Schrödinger evolution in the algebra and the trace pairing.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the phase accumulated under a driven field.
 
 ## The Driven Two-Level System
@@ -191,7 +191,7 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_+(\hat{z})$
 
 ## The Bloch Picture
 
-The state at any time can be written $\tilde{\rho}(t) = \tfrac12(e_0 + i\mathbf{r}(t))$, with $\mathbf{r}(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article *Quantum Mechanics in Biquaternionic Form*, the Bloch vector obeys
+The state at any time can be written $\tilde{\rho}(t) = \tfrac12(e_0 + i\mathbf{r}(t))$, with $\mathbf{r}(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
 \dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r},
@@ -205,7 +205,7 @@ for the effective Hamiltonian $\tilde{H}_R = -\tfrac{\hbar}{2}i(\omega_1 e_1+\De
 - **Large detuning** ($|\Delta|\gg\omega_1$): the axis is close to $-z$, the rotation cone is narrow, and the spin remains near its initial pole, executing small oscillations of amplitude $\sim\omega_1/|\Delta|$ — the dispersive regime.
 - **Exact antiresonance** is not a special point for a circular drive; it is special only for a linear drive, where the counter-rotating component becomes corotating. This is the algebraic content of the distinction between the two polarisations.
 
-The Bloch picture is the material of the companion article *Quantum Mechanics in Biquaternionic Form*; here it is used only to display the effective rotation, and the reader is referred to that article for the derivation of the Bloch equation from the trace pairing.
+The Bloch picture is the material of the companion article *Quantum Physics in Biquaternionic Form*; here it is used only to display the effective rotation, and the reader is referred to that article for the derivation of the Bloch equation from the trace pairing.
 
 ## The Biquaternion Reading
 

@@ -385,7 +385,7 @@ Two further structural points belong to this section.
 
 ## What the Biquaternion Form Adds
 
-**Standard quantum mechanics, transcribed.** The dispersion relation, the phase and group velocities, the plane-wave normalisation, the continuity equation, the Gaussian packet, its spreading time, the free propagator, its Fresnel evaluation, and its composition law are all standard. None of them is new here, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
+**Standard quantum physics, transcribed.** The dispersion relation, the phase and group velocities, the plane-wave normalisation, the continuity equation, the Gaussian packet, its spreading time, the free propagator, its Fresnel evaluation, and its composition law are all standard. None of them is new here, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
 
 **What the biquaternion notation provides.**
 

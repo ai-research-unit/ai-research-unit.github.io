@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article is one of a series of **worked exercises** that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
+This article is one of a series of **worked exercises** that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.
 
-Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. The pedagogical value is in seeing the same physical result emerge from both frameworks, and in observing how the algebraic structure of the biquaternion framework handles the objects of quantum mechanics.
+Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. The pedagogical value is in seeing the same physical result emerge from both frameworks, and in observing how the algebraic structure of the biquaternion framework handles the objects of quantum physics.
 
 To keep the two solutions strictly parallel, each is presented in the same four steps: **the state**, **the measurement operator**, **the outcome object**, and **the probability**. The final result is stated in the same form in both solutions.
 
@@ -206,7 +206,7 @@ Both formulations give the same result.
 
 ## Summary
 
-We have solved a simple exercise in quantum mechanics — the probability of measuring spin-up along an arbitrary direction, given a spin-up state along $z$ — in two parallel presentations.
+We have solved a simple exercise in quantum physics — the probability of measuring spin-up along an arbitrary direction, given a spin-up state along $z$ — in two parallel presentations.
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.
 
@@ -234,5 +234,5 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard formulation of spin-$\tfrac{1}{2}$.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the spin-$\tfrac{1}{2}$ measurement.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the Born rule for qubits.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *Spin-1/2 Quantum Physics in Biquaternionic Form*, and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 

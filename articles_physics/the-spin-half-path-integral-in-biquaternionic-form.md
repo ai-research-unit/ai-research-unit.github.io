@@ -25,7 +25,7 @@ The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
-- Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin algebra and the two-state space.
+- Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin algebra and the two-state space.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the geometric phase that the Wess–Zumino term reproduces.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the trace pairing used in the coherent-state overlap.
 

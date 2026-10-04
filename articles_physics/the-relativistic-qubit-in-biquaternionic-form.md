@@ -12,7 +12,7 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 
 The companion articles supply the pieces:
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its irreducibility, and the state correspondence.
-- Companion article *Quantum Mechanics in Biquaternionic Form*, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
 - Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors, the biquaternion norm, and the interval.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for $SL(2,\mathbb{C})$, its subgroups, and the Wigner rotation.
