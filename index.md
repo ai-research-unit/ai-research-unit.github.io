@@ -1,5 +1,5 @@
 
-# AI Advances Quantum Mechanics
+# AI Advances Quantum Physics
 
 ## Introduction
 
