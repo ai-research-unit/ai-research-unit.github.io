@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The six distinguished subspaces of $\mathbb{B}$ are defined by the four involutions, but they are not independent objects: they intersect one another, they sum to subspaces of $\mathbb{B}$, they split the eight real coordinates into four **coordinate blocks**, and they are permuted and negated by the involutions. This article collects those relations in one place, after the six individual articles *Biquaternion Centre Subspace*, *Biquaternion Vector Subspace*, *Biquaternion Quaternion Subspace*, *Biquaternion Anti-Quaternion Subspace*, *Biquaternion Hermitian Subspace* and *Biquaternion Anti-Hermitian Subspace*, and before the structural article *Biquaternion Involution Lattice*, which treats the four involutions themselves.
+The six distinguished subspaces of $\mathbb{B}$ are defined by the four involutions, but they are not independent objects: they intersect one another, they sum to subspaces of $\mathbb{B}$, they split the eight real coordinates into four **coordinate blocks**, and they are permuted and negated by the involutions. This article collects those relations in one place, after *Introduction to the Six Subspaces*, which defines them one to a section, and before the structural article *Biquaternion Involution Lattice*, which treats the four involutions themselves.
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived here from the definitions by the comparison of coefficients, so the article doubles as the index of the six subspaces.
 
@@ -193,12 +193,7 @@ The six distinguished subspaces of $\mathbb{B}$ are organized by three decomposi
 
 ## Further Reading
 
-- *Biquaternion Centre Subspace* (`articles_maths/biquaternion-centre-subspace.md`)
-- *Biquaternion Vector Subspace* (`articles_maths/biquaternion-vector-subspace.md`)
-- *Biquaternion Quaternion Subspace* (`articles_maths/biquaternion-quaternion-subspace.md`)
-- *Biquaternion Anti-Quaternion Subspace* (`articles_maths/biquaternion-anti-quaternion-subspace.md`)
-- *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`)
-- *Biquaternion Anti-Hermitian Subspace* (`articles_maths/biquaternion-anti-hermitian-subspace.md`)
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four involutions, their group structure and the two spaces each defines
 - *Biquaternion Algebra* (`articles_maths/biquaternion-algebra.md`), for the algebra and its three decompositions in their original setting
 - *Biquaternion Multiplication* (`articles_maths/biquaternion-multiplication.md`), for the product, the commutator and the symmetrized product in their original setting

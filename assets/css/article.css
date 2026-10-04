@@ -55,10 +55,11 @@
   font-weight: 700;
   color: var(--color-text);
   text-transform: none;
-  letter-spacing: 0;
+  letter-spacing: 0.01em;
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
-  border-bottom: none;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-border);
 }
 .article-body h2[id^="p0"],
 .article-body h2[id^="p1"] {
@@ -79,6 +80,64 @@
   color: var(--color-text);
   margin-top: 1.5rem;
   margin-bottom: 0.4rem;
+}
+
+/* ── Menu subdivision levels ───────────────────────────────────────────────
+   The menus use more levels than an article does, and each level has one job.
+   Prominence decreases with depth, so the top band is always the most visible:
+     h2               chapter        ## Biquaternions      dark, 2px rule
+     h3 + a link      article entry  ### <a …>Title</a>     blue link
+     h3 (no link)     category band  ### Theory            filled band
+     h4               topic band     #### The Forms        bar, 3px
+     h5               sub-topic tag  ##### Form            bar, 2px
+   A label and an entry are both `###`, and they are told apart structurally:
+   an entry wraps its title in a link, a label has no link — 1643/1643 against
+   221/221, no exception. So the category band is selected by `:not(:has(a))`,
+   and the menu needs no `-`, `--` or `---` in the source: the hashes alone
+   carry the level.
+   Every band rule is scoped to a menu page by `:has(> h3 > a)`. That test is
+   exact: no article in the corpus has a link inside an `h3`, so an article
+   page never matches and its own headings keep their plain style.
+   The bands carry no `text-transform`: the level is told by size, by the
+   accent bar and by the fill, so case in the source is shown as written. */
+/* Level 3 — the category band. The strongest label signal in the menu: a
+   filled band with a thick accent bar, larger and darker than anything under
+   it, so it always outranks the topic and sub-topic bands it contains. */
+.article-body:has(> h3 > a) > h3:not(:has(a)) {
+  font-family: var(--font-ui);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  background: var(--color-accent-soft);
+  border-left: 5px solid var(--color-accent);
+  padding: 0.5rem 0.9rem;
+  margin-top: 2.6rem;
+  margin-bottom: 0.9rem;
+}
+/* Level 4 — the topic band. Same size as the article titles (--size-h3), so it
+   is never smaller than the entries it holds; it sits one notch down by the
+   thinner bar and the missing fill. */
+.article-body:has(> h3 > a) > h4 {
+  font-family: var(--font-ui);
+  font-size: var(--size-h3);
+  font-weight: 700;
+  color: var(--color-text);
+  padding-left: 0.7rem;
+  border-left: 3px solid var(--color-accent);
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+/* Level 5 — the sub-topic tag. Same size as the article titles, told apart by
+   the thinnest bar and the grey tone. Bar thickness separates the three bands. */
+.article-body:has(> h3 > a) > h5 {
+  font-family: var(--font-ui);
+  font-size: var(--size-h3);
+  font-weight: 700;
+  color: #444;
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--color-accent);
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
 }
 .article-body h1 strong,
 .article-body h2 strong,

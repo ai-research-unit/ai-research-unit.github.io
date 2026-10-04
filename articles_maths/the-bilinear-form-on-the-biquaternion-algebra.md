@@ -10,7 +10,7 @@ $$
 
 built on the **natural** conjugation ${}^{\natural}$, which is $\mathbb{C}$-linear, so that the form is $\mathbb{C}$-**bilinear**: scalars may be moved out of either argument. Its diagonal $N(\tilde{Q},\tilde{Q})$ is the biquaternion norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ of *Biquaternion Norm and Invertibility*, and the form is the polarisation of that quadratic form.
 
-This is the form the Algebra group does not use: the articles *Biquaternion Algebra* and the six subspace articles work with ${}^{\natural}$ and with the norm as an algebraic operation, and every metric reading of the norm — its sign, its signature, its definiteness, its Euclidean part — is gathered here. The companion pairings are *The Hermitian Form on the Biquaternion Algebra*, built on the Hermitian conjugation ${}^{*}$, and *The Biquaternion Krein Form and Its Signature*, built on the complex conjugation $\bar{\cdot}$.
+This is the form the Algebra group does not use: the articles *Biquaternion Algebra* and the six subspace articles work with ${}^{\natural}$, without using the norm — its sign, its signature, its definiteness, its Euclidean part. The companion pairings are *The Hermitian Form on the Biquaternion Algebra*, built on the Hermitian conjugation ${}^{*}$, and *The Biquaternion Krein Form and Its Signature*, built on the complex conjugation $\bar{\cdot}$.
 
 ## The Form and Its Polarisation
 

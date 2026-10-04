@@ -72,7 +72,7 @@ $$
 \bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^i = \overline{Q^0}Q^i - Q^0\overline{Q^i} - (\mathbf{Q}\times(\mathbf{Q})^{\natural})^i .
 $$
 
-The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive Hermitian form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Biquaternion Hermitian Subspace*. The vector components are purely imaginary, as the four-vector table of the six subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
+The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive Hermitian form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$ of *Introduction to the Six Subspaces*. The vector components are purely imaginary, as the four-vector table of the six subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish.
 
 **Proposition (the image of the vector basis).** For $k = 1,2,3$,
 

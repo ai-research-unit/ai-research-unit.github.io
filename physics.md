@@ -42,7 +42,7 @@
 
 ## Biquaternion Mathematical Physics
 
-### - Algebra
+### Algebra
 
 ### <a href="articles_physics/biquaternion-algebra.html">Biquaternion Algebra</a>
 <!--$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the algebra structure and the four conjugations; the six distinguished subspaces, indexed to their articles in the Focus on Subspaces group; the quaternion, Hermitian and centre–vector decompositions and the relations between them; the quadratic form, the Hermitian form and the inner product; the physical reading of each: the two sectors, the complex time and complex space coordinates, and the material and informational conventions $ict\,e_0+\mathbf{x}$ and $ct'\,e_0+i\mathbf{x}'$.-->
@@ -74,7 +74,7 @@
 ### <a href="articles_physics/worked-examples-in-the-biquaternion-algebra.html">Worked Examples in the Biquaternion Algebra</a>
 <!--the flagship computed case: the basis products of $\mathbb{B}$ written out; the six distinguished subspaces exhibited on a concrete element; the four conjugations on that element; the idempotents and the two minimal left ideals; explicit zero-divisor pairs $ab=0$ with $a,b\neq0$; the centre exhibited; $\mathbb{C}^2$ realised as a left ideal, hence as a $\mathbb{B}$-module. The physical reading: one element is read at once as a four-position, its conjugate as the reversed four-vector, the idempotents as the chiral projectors, and the zero-divisor pair as a null momentum and its dual, so the computed case is the dictionary made arithmetic.-->
 
-### - Topology
+### Topology
 
 ### <a href="articles_physics/biquaternion-norm-and-invertibility.html">Biquaternion Norm and Invertibility</a>
 <!--the biquaternion norm and its multiplicativity; the biquaternion norm as a semi-norm and the audit of the norm axioms, of which only the sign axiom survives; the unique multiplicative real norm and the polar scale; the Hermitian form and the Euclidean norm; the invertibility criterion and the inverse formula; the group of units; the three-way classification; the physical reading: the interval and the mass shell, the four-velocity of norm $-c^2$, the null momentum of a photon, and the rotor inverse $Q^{-1}=\bar{Q}$ on the unit group versus the dagger.-->
@@ -119,7 +119,7 @@
 ### <a href="articles_physics/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a>
 <!-- physics companion of the mathematical article: the internal spinor space is of complex type, so no internal Majorana condition and no internal Weyl splitting, the reason being that the internal $i$ is the volume element of $\mathrm{Cl}_{3,0}$ and any antilinear internal symmetry is annihilated by it; what exists instead is the conjugate module $\bar S$, a complex module inequivalent to $S$, with ${}^{*}$ tying $S$ to $\bar S$ while the charge-conjugation real structure $\mathcal{C}$ lives on the doubled module $\Delta=S\oplus\bar S$, so the internal spinor has a charge conjugate but no Majorana partner and the doubling is the passage from $\mathbb{B}\cong S\oplus S$ to $\Delta$; the Majorana condition on the ambient four-dimensional module, real in $(1,3)$ in the charge-conjugation normalisation ($KK^{*}=I_4$, halves exchanged, no Majorana-Weyl) and quaternionic in the commuting one; and the quaternionic reading $J(s)=\sigma_2\bar s$, $J^2=-1$, as the Kramers class. -->
 
-### - Focus on Subspaces
+### Focus on Subspaces
 
 ### <a href="articles_physics/the-center-subspace-c-b-as-the-complex-time-sector.html">The Center Subspace C_B as the Complex Time Sector</a>
 <!--the centre as the fixed space of quaternion conjugation; basis; the physical reading as complex time; algebraic properties; examples.-->
@@ -145,7 +145,7 @@
 ### <a href="articles_physics/the-biquaternion-involution-lattice-hermitian-anti-hermitian-and-reversal.html">The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal</a>
 <!--the four conjugations and the six distinguished subspaces named one by one, the center subspace C_B, the vector subspace Vect(B), the quaternion subspace H_B, the antiquaternion subspace iH_B and the two sectors M+ and M-; the composition law and the reversal word in the algebra's own products; complex conjugation as a primitive operation, not expressible by multiplications and additions; the lattice of the four fixed spaces and the four graded projections onto scalar, bivector, vector and pseudoscalar; non-commutation of a biquaternion with its complex conjugate; the matrix realisation; the two pairings and the grades of their vanishing; adjoints and the lattice.-->
 
-### - Analysis
+### Analysis
 
 ### <a href="articles_physics/biquaternion-analysis.html">Biquaternion Analysis</a>
 <!--the Euclidean norm and the metric structure of $\mathbb{B}$; the distance, balls and neighbourhoods; limits of functions and continuity; the problem of differentiability and its two obstructions, the failure of left and right division and the zero divisors; the standard approach and the function theory it defines; functions on a four-dimensional subspace and their partial derivatives; the biquaternionic gradient and its quaternion conjugate; the d'Alembertian $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\Delta-c^{-2}\partial_t^2$; the square of the gradient and the convective derivative; the relation to Fueter and Clifford analysis. The physical reading: the gradient is the four-gradient with $\partial_{ict}$ in the time slot, the d'Alembertian is the wave operator in the series' sign convention, and the failure of differentiability is why the framework differentiates on a four-dimensional real slice rather than on arbitrary biquaternion functions.-->
@@ -183,7 +183,7 @@
 ### <a href="articles_physics/biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>
 <!--the Fourier kernel and the condition on the root; the continuous transform pair, convergence, the Riemann–Lebesgue lemma, the inversion theorem and the Plancherel theorem; the factorisation into complex Fourier transforms; the convolution theorem; the relation to the gradient, the d'Alembertian and the convective derivative; the vanishing-norm issue; the two-unit kernel with one unit per variable, its closed form, its reduction to the one-unit kernel, its inverse and its frequency reversal, and the absent factorisation for two non-commuting units; the transform of a finite positive measure, the quadratic form that is the integral of the biquaternion norm, the negative value at the central imaginary unit, and the Hermitian pairing that repairs it; the relation to the discrete transform, sampling and periodisation. The physical reading: the transform is the momentum representation of a biquaternion field, the Plancherel theorem is the unitarity of the change of basis, and the condition on the kernel is the on-shell condition of a free particle; the two-unit kernel is the two-axis momentum representation, and the failure of the norm positivity is why the framework's states are built on the Hermitian pairing.-->
 
-### - Focus on Element Representations
+### Focus on Element Representations
 
 ### <a href="articles_physics/the-four-vector-element-representation-of-biquaternions.html">The Four-Vector Element Representation of Biquaternions</a>
 <!--the biquaternion as its four complex coefficients; its real and imaginary parts; the column and the dual row; the product in components and the cross-product term that carries the non-commutativity; the conjugations in coordinates; the six subspaces as coordinate conditions and, for each, the three-step chain from the complex coefficients through the real parameters to the physical coordinates; the biquaternion norm with all four signs positive and its two real restrictions, the informational and material signatures; the four-vectors of relativistic physics it carries, and why no index is raised or lowered.-->
@@ -201,7 +201,7 @@
 <!--the polar representation restricted to the six distinguished subspaces; the two criteria, $B = e_0$ exactly when $\tilde{Q}\tilde{Q}^\dagger$ is a positive scalar and $\hat{q} = \pm e_0$ exactly when $\tilde{Q}/\rho$ is Hermitian, with the matrix class of each subspace; then the six subspaces one at a time, each with its element and biquaternion norm, the factors that survive, the explicit factors and worked numbers: the center, where only the modulus survives, the phase is free and the rotor reduces to the central sign; the vector subspace, where the boost axis is $\mathbf{v}\times\mathbf{w}$, the rotor is a unit vector in the plane of $\mathbf{v}$ and $\mathbf{w}$ perpendicular to the boost axis, and the vanishing of the scalar part is exactly that orthogonality; the quaternion subspace, where the boost is absent, the phase is $0$ and the rotor is free, so it exhibits the rotor alone; the antiquaternion subspace, which is the same with the phase frozen at $\pi/2$; the informational sector, where the Hermitian condition admits exactly two branches, the phase is the causal label and the boost factor is explicit in $M = \max(|a|,s)$ and $m = \min(|a|,s)$; the material sector, where the same two branches carry the four-vector, the timelike one reproducing the four-velocity identity $B = -(i/c)\tilde{U}$ and the spacelike one carrying the direction in the rotor; the biquaternion norm, with its five behaviours, as what decides the phase, and the null cones as where the representation fails; the count of the dimensions of each subspace over the four factors; the four coordinate blocks as the consistency check of the six restrictions.-->
 
 
-### - Geometry
+### Geometry
 
 ### <a href="articles_physics/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>
 <!--the isometric motions of the form: the unit sphere $Sp(1)$ and its complexification $\mathrm{SL}(2,\mathbb{C})$; the double covers $\mathrm{SL}(2,\mathbb{C})\to SO^+(1,3)$ and $SU(2)\to SO(3)$; the rotor and the sandwich action, the half-angle and the doubling of the angle; the two-sided action and $SO(4)$; the boosts, or hyperbolic rotations, as the isometries of the indefinite form and the rotations as those of the definite one. The dagger sandwich $\operatorname{H}_{\tilde{Q}}(x)=\tilde{Q}x\tilde{Q}^\dagger$ of an arbitrary unit on the whole algebra, with its carrier, its kernel the central circle $U(1)$, the two kernels against the two-element kernel on the material sector, and the scaling of the biquaternion norm by $|N(\tilde{Q})|^2$; the two-sided sandwich $x\mapsto AxB$ that preserves the sectors is exactly the dagger form; the action on the six subspaces and the operators that preserve the whole subspace structure; the operator of a boost, the operator of a rotation and why the rotation doubles the half-angle while the boost does not; the interval preserved and the product preserved only for the unitary elements, which is the relativity of simultaneity; the mass shell and the light cone as single orbits; the composition of operators and the Wigner rotor. The physical reading: the sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ is the Lorentz transformation of the material sector, the boost is the change of inertial frame, and the doubling of the half-angle is the geometric origin of the spinor double cover. The reflection $\rho_v(x)=-vxv^{-1}$ with $N(v)=1$ on the Clifford vector subspace and the Cartan–Dieudonné generation are stated here; the general statement is *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* of Part II, cited.-->
@@ -225,7 +225,7 @@
 ### <a href="articles_physics/biquaternion-objects-and-their-matrix-correspondences.html">Biquaternion Objects and Their Matrix Correspondences</a>
 <!--the index of the objects of the algebra against their matrix images: the isomorphism $\Phi$ to $M_2(\mathbb{C})$ and the left regular map $\rho_L$ into $M_4(\mathbb{C})$, with $\rho_L$ the isomorphism taken twice, block diagonal with two equal blocks in the column-adapted basis (each similar to $\Phi(\tilde{Q})$ in the idempotent basis) and its image of complex dimension $4$ inside the $16$ of $M_4(\mathbb{C})$; one row per object — the algebra, the unit group, the norm-one group, the unit quaternions, the central scalars, the sign group, the automorphism group and the Lorentz quotient — each with its image under both maps, a column of the further realizations ($8\times8$ real, the $4\times4$ real of $\mathrm{Cl}_{3,1}$, the $2\times2$ quaternionic of $\mathrm{Cl}_{1,3}$ and the coefficient column $\mathbb{C}^4$) and a column of the sets and correspondences attached; the collected sets with their real dimensions, $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$ and the complexification $\mathbb{B}^\times_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ with the quotient $SO^+(1,3)$ and the Lie algebra $\mathrm{B}_0\cong\mathrm{so}(1,3)$; the two double covers $SU(2)\to SO(3)$ and $\mathbb{B}^\times_1\to SO^+(1,3)$ with the common discrete kernel $\{\pm1\}$ and the Lie group structure of the quotient; the physical reading of the two pictures, the two sectors, the spin-group cover and the complex time direction; the two cautions that the determinant is $N$ in the small picture and $N^2$ in the large one and that the automorphism group and the Lorentz quotient are the same abstract group acted differently; an index only, owning no result, citing the articles that own each correspondence and placed last in the geometry section so that it points to no further article. -->
 
-### - Focus on Operator Representations
+### Focus on Operator Representations
 
 ### <a href="articles_physics/the-four-vector-operator-representation-of-biquaternions.html">The Four-Vector Operator Representation of Biquaternions</a>
 <!--the operator read in the four coefficients, and the physical arithmetic of a frame change; the two-step rule obtained by applying the four-vector product rule to $\tilde{Q}$ and then to $\tilde{Q}^{\dagger}=(\overline{Q^0},-\overline{Q^1},-\overline{Q^2},-\overline{Q^3})$; the rule linear in the argument and quadratic in the operand, with the scalar-multiple corollary and the blindness to $i$; the image of the identity $\tilde{Q}\tilde{Q}^{\dagger}$, whose scalar component $\sum_\mu\lvert Q^\mu\rvert^{2}$ is the positive Hermitian form, the Euclidean square, to be contrasted with the complex indefinite biquaternion norm that carries the interval; the image of the vector basis and the vanishing of its scalar component exactly for a real operand; the operator on the scalar and the vector part with the mixing controlled by the intermediate product; the centre and the vector subspace not preserved and the two Hermitian sectors preserved, because the Hermitian condition constrains the argument alone; the two regimes decided by the vanishing of $\sum_\mu(Q^\mu)^2$ and of $Q^0$; the two worked null operands $e_1+ie_2$ and $\tfrac12(e_0-ie_3)$, both depending on $x^0+ix^3$, the first nilpotent and the second the projection onto its own idempotent; and the boost rotor $\tfrac53e_0+\tfrac43ie_3$ of rapidity $2\ln 3$ and $\beta=\tfrac{40}{41}$, whose stored half-rapidity produces the full one and whose image of the identity is $\tfrac{41}{9}e_0+\tfrac{40}{9}ie_3$. -->
@@ -241,7 +241,7 @@
 
 ## Biquaternion Non Relativistic Quantum Theory
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
 <!-- the postulates of quantum mechanics; states; observables; the Born rule; two-state systems and qubits; dynamics; measurement; composite systems and entanglement; what a comprehensive quantum theory must contain. -->
@@ -292,7 +292,7 @@
 <!-- the problem in standard terms; the algebraic vocabulary; the problem in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the reformulation changes and what it does not. -->
 
 
-### - Particles of spin 0
+### Particles of spin 0
 
 ### <a href="articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a>
 <!-- three objects that square to minus one; the scalar imaginary exchanges the two sectors; the wave function as a spinor in the state module; the equation and its solution; why the scalar imaginary and not a quaternion unit; the $\mathbb{M}_-$ and $\mathbb{M}_+$ readings. -->
@@ -330,7 +330,7 @@
 ### <a href="articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a>
 <!-- the algebraic locus; the locus in momentum space, in configuration space and in state space; null solutions of the free equation; what stops at the locus. -->
 
-### - Particles of spin 1/2
+### Particles of spin 1/2
 
 ### <a href="articles_physics/spin-1-2-quantum-mechanics-in-biquaternionic-form.html">Spin-1/2 Quantum Mechanics in Biquaternionic Form</a>
 <!-- the two-state system in quantum mechanics; the algebra as $M_2(\mathbb{C})$; the observables; the idempotents as pure states; the trace formula as the Born rule; the state space and the spinor; the rotations and the boosts; the Dirac equation and the spinor field. -->
@@ -374,7 +374,7 @@
 ### <a href="articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a>
 <!-- the collective spin; the Tavis–Cummings model; the Holstein–Primakoff linearisation; spin squeezing; the biquaternion reading. -->
 
-### - Particles of spin 1 and above
+### Particles of spin 1 and above
 
 ### <a href="articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form</a>
 <!-- the angular-momentum algebra in biquaternion form; coupling two independent systems; the Clebsch–Gordan series; the coupling of two fundamental systems and of two triplets; the transformation inside the algebra; the recursion relations and the Condon–Shortley phase. -->
@@ -394,7 +394,7 @@
 ### <a href="articles_physics/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html">Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</a>
 <!-- the spin-one condensate in mean-field theory; the spinor as a vector in the symmetric sector; ferromagnetic and polar states from the algebra; the energy functional in the framework. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a>
 <!-- the algebra and a matrix representative; the defining module; states on the module; the geometry of the module; what the module supplies and what it does not. -->
@@ -467,7 +467,7 @@
 
 ## Biquaternion Non Relativistic Non Quantum Theory
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a>
 <!-- the standard formulation; the biquaternionic configuration; the Legendre transform; phase space as a single biquaternion; the Poisson bracket; the action, symmetries and conservation. -->
@@ -491,7 +491,7 @@
 ### <a href="articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
 <!-- the classical bracket; the quantum bracket; the canonical pair, normalisation and sign; angular momentum as a second check; where the resemblance holds and where it breaks; deformation and the order-$\hbar^2$ term; the $\hbar\to0$ limit. -->
 
-### - Effects without intrinsic magnetism (spin 0 origin)
+### Effects without intrinsic magnetism (spin 0 origin)
 
 ### <a href="articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a>
 <!-- the worldline in the material sector; inertial frames as rotors; the non-relativistic limit and the boost as a shear; the free particle as the spin-zero benchmark. -->
@@ -511,7 +511,7 @@
 ### <a href="articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a>
 <!-- inertial and rotating frames; the pendulum in the rotating frame; the geometric meaning, geodesic turning and holonomy; the rotor and the double cover; the relation to other geometric phases. -->
 
-### - Effects with intrinsic magnetism (spin ½ origin)
+### Effects with intrinsic magnetism (spin ½ origin)
 
 ### <a href="articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a>
 <!-- the magnetic moment of a current distribution; energy and torque; the Larmor equation; the rotor solution; the Larmor theorem; the gyromagnetic ratio; the relation to the quantum treatment. -->
@@ -522,7 +522,7 @@
 ### <a href="articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of g = 2 in Biquaternionic Form</a>
 <!-- the gyromagnetic factor; the convective theorem and why it gives $g=1$; why convection does not give $g=2$; the algebraic factor two; consistency checks; the measured value and the anomaly. -->
 
-### - Effects with higher multipole origins (spin 1+ origin)
+### Effects with higher multipole origins (spin 1+ origin)
 
 ### <a href="articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html">The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</a>
 <!-- the multipole expansion of a localised source; the multipole tower and the rotation group; the biquaternion transcription of the fields; the monopole and the dipole as algebra elements; the quadrupole tensor and its interaction; why the quadrupole is not an algebra element. -->
@@ -533,7 +533,7 @@
 ### <a href="articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html">Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</a>
 <!-- the two facts; three representation-theoretic roles of the algebra; the truncating product and the truncating gradient; where the tower actually lives; two infinities, one field; the no-go statement; the capacity of the algebra and its enlargements. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>
 <!-- the state space of the informational sector; the entropy functional; the entropy as a function of the biquaternion norm; coarse-graining on the informational sector; monotonicity under coarse-graining; fine and coarse, Liouville and the second law; preparations and partitions. -->
@@ -694,7 +694,7 @@
 
 ## Biquaternion Relativistic Quantum Theory
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>
 <!-- the biquaternionic gradient; the d'Alembertian as a biquaternion norm; the defining equation for the Green's function; the invariant kernel; the massive operator; the first-order kernel; the shifted gradient and the generalized Maxwell-Dirac equation; the Klein-Gordon-Fock-Schrodinger scalar operator, its symbol and the real/non-real dichotomy; the Cauchy/Kirchhoff paragraph; the mutual bigradients and the mutual Maxwell-Dirac operators with a non-central biquaternion structural coefficient, their composition, the weighted light-cone kernel and its symbol, and the source's sign discrepancy; the kernels and the involutions. -->
@@ -717,7 +717,7 @@
 ### <a href="articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a>
 <!-- electron-positron scattering; the exchange and annihilation channels and their relative sign; the cross section and the small-angle luminosity monitoring; crossing symmetry with Møller and its numerical check; the biquaternion reading, the annihilation current and the framework's charge conjugation; positronium as the open bound-state case. -->
 
-### - Particles of spin 0
+### Particles of spin 0
 
 ### <a href="articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>
 <!-- the equation and its operator; second order in time and the conjugate pair; plane waves and the dispersion relation; the conserved current and the two defects; whether the second-order structure fits $\mathbb{M}_-\!/\mathbb{M}_+$; the non-relativistic limit. -->
@@ -731,7 +731,7 @@
 ### <a href="articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>
 <!-- the configuration space and the action; the generating functional and the free Gaussian; the semiclassical expansion; the Wick rotation and the Euclidean functional. -->
 
-### - Particles of spin 1/2
+### Particles of spin 1/2
 
 ### <a href="articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
 <!-- the standard Dirac equation; the gamma matrices and $\mathrm{Cl}_{1,3}$; the algebra and the biquaternionic gradient; the explicit real-linear dictionary from bispinors to biquaternions, with the timelike generator as complex conjugation and a direction-carrying antilinear mass term; the harmonic spinor field, its two frequency-signed projections and the helicity reading of the two components, with the neutrino/antineutrino naming recorded as the source's; the integral representation of the harmonic spinor field — the amplitude operator, the Cauchy-type operator $K_\omega=A^{-1}KA$, the Cauchy integral formula, the Plemelj–Sokhotskii formulas and the boundary-value criterion; relativistic kinematics in biquaternionic form; the biquaternionic Dirac equation; plane-wave solutions; spherical and cylindrical solutions; the relation to the Maxwell equation. -->
@@ -817,7 +817,7 @@
 ### <a href="articles_physics/supersymmetric-quantum-mechanics-in-the-biquaternion-framework.html">Supersymmetric Quantum Mechanics in the Biquaternion Framework</a>
 <!-- the superalgebra and the partner potentials; the biquaternion supercharge; the 1+1-dimensional realisation; the Dirac oscillator as a supersymmetric system; the Witten index and the chiral zero modes; shape invariance and exactly solvable partners. -->
 
-### - Particles of spin 1 and above
+### Particles of spin 1 and above
 
 ### <a href="articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>
 <!-- integer spin and the representation it needs; the carrier inside the algebra; the Hodge dual on the vector part; the self-dual and anti-self-dual split; the spin content of the two halves; duality, helicity and the two halves. -->
@@ -834,7 +834,7 @@
 ### <a href="articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html">Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half</a>
 <!-- the algebra and its defining module; the spin content of the modules; where spin zero lives; tensor products and the generation of higher spin; the explicit cases; tensor powers of the algebra; why the ceiling; the same ceiling in the Clifford algebra. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a>
 <!-- superselection structures, the standard notion; the two sectors as the eigenspaces of an involution; the factor property and the absence of central-projection superselection; what survives, the real-structure grading; the unobservable relative phase; the Cartan decomposition. -->
@@ -859,7 +859,7 @@
 
 ## Biquaternion Relativistic Non Quantum Theory
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>
 <!-- the worldline and the biquaternion norm; the four-velocity and the rapidity; the four-momentum and the mass shell; composition of velocities; the free action; the non-relativistic limit; what the algebra supplies and what it transcribes. -->
@@ -879,7 +879,7 @@
 ### <a href="articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>
 <!-- the conjugate momentum field and the regularity of the Legendre transform; the Hamiltonian density and its equality with the energy density; the Hamiltonian field equations; the field Poisson bracket and its local Jacobi identity; the continuity equation and the energy flux; the density and flux as one Hermitian biquaternion; the sector reading of the density and the energy–charge contrast; the point of contact with the covariant (De Donder–Weyl) formalism; what the transcription does and does not give. -->
 
-### - Effects without intrinsic magnetism (spin 0 origin)
+### Effects without intrinsic magnetism (spin 0 origin)
 
 ### <a href="articles_physics/the-relativistic-central-force-problem-in-biquaternionic-form.html">The Relativistic Central Force Problem in Biquaternionic Form</a>
 <!-- the relativistic central force; the relativistic Binet equation; the inverse-square force and the precessing conic; the non-relativistic limit and consistency; the hidden symmetry and what becomes of the Runge–Lenz vector. -->
@@ -887,7 +887,7 @@
 ### <a href="articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-center.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Center</a>
 <!-- the centre as the scalar's value space; the classical action and the field equation; plane waves and the range of the field; the static central solution; the field energy and the stress–energy; the test particle and the reduction to the central-force problem; why there is no intrinsic magnetism. -->
 
-### - Effects with intrinsic magnetism (spin ½ origin)
+### Effects with intrinsic magnetism (spin ½ origin)
 
 ### <a href="articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>
 <!-- the boost rotor and the instantaneous rest frame; the composition of two boosts and the Wigner rotor; the rotor between neighbouring rest frames; the continuous limit and the Thomas precession rate; the Thomas rotor; uniform circular motion; the spin of a relativistic particle; the Thomas half and spin–orbit coupling. -->
@@ -895,7 +895,7 @@
 ### <a href="articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a>
 <!-- the spin four-vector; the covariant equation from the two available structures; the biquaternion form; the rest frame and the meaning of $g$; the degenerate case $g=2$ and the spin-follows-velocity property; the laboratory-frame limit, Larmor and Thomas. -->
 
-### - Effects with higher multipole origins (spin 1+ origin)
+### Effects with higher multipole origins (spin 1+ origin)
 
 ### <a href="articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a>
 <!-- the quadrupole as a higher multipole; the retarded field of a localised source; the relativistic transformation of the quadrupole; the quadrupole field and its radiation; the quadrupole in the algebra. -->
@@ -903,7 +903,7 @@
 ### <a href="articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a>
 <!-- the multipole series of a localised source; the field-strength biquaternion and its two decompositions; the multipole tower and the two decompositions; covariance of the decomposition; the lowest orders. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>
 <!-- events, displacements and the causal order; the light cone as the zero-divisor cone; the barrier that the rotor group preserves; transitivity and antisymmetry of the causal order; the relative-velocity barrier; the rapidity barrier and its domain; the cone as the characteristic cone of the wave operator. -->
@@ -916,7 +916,7 @@
 
 ## Biquaternion Quantum Fields
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
 <!-- the vacuum as a state; idempotents and minimality; the one-mode vacuum; the vacuum is a zero divisor; the minimal left ideal and the one-particle module; the vacuum manifold; the field vacuum is not an idempotent. -->
@@ -1002,7 +1002,7 @@
 ### <a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
 <!-- spectral triples and their axioms; the biquaternion candidate; the real structure and the KO-dimension; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations, gauge fields and the spectral action; the almost-commutative triple and the finite geometry. -->
 
-### - Particles of spin 0
+### Particles of spin 0
 
 ### <a href="articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>
 <!-- the classical field and its conjugate momentum; the field as a central-valued object; equal-time commutation relations; the mode expansion; the mode algebra and the Fock space; the Hamiltonian, momentum and charge; microcausality and the commutator function. -->
@@ -1022,7 +1022,7 @@
 ### <a href="articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a>
 <!-- the symmetry and its spontaneous breaking; the potential, the vacuum manifold and the order parameter; the Goldstone mode and the mass matrix; the Goldstone current and the decay constant; the theorem and its proof; counting the Goldstone bosons and the coset; the effective Lagrangian and the soft limit. -->
 
-### - Particles of spin 1/2
+### Particles of spin 1/2
 
 ### <a href="articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>
 <!-- the classical field and its conjugate momentum; equal-time anticommutation relations; the field expansion in the plane-wave solutions; anticommutators of the mode operators; the Hamiltonian and the normal-ordering constant; spin and statistics; the relation to the KMS thermal framework. -->
@@ -1060,7 +1060,7 @@
 ### <a href="articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>
 <!-- the vertex function and the form factors; the biquaternion transcription; the one-loop correction; what the algebra supplies here; verification. -->
 
-### - Particles of spin 1 and above
+### Particles of spin 1 and above
 
 ### <a href="articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>
 <!-- the natural variable and why it is not canonical; gauge freedom and the two formulations; the constraint structure; the constraints in biquaternion notation; Gupta–Bleuler quantization; comparison with the scalar field and with the Dirac case. -->
@@ -1095,7 +1095,7 @@
 ### <a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
 <!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a>
 <!-- relative entropy, the standard quantity; the states of the biquaternion algebra; the relative entropy of two biquaternion states; Araki's relative modular operator; relative entropy in quantum field theory. -->
@@ -1132,7 +1132,7 @@
 
 ## Biquaternion Particle Physics and Gauge Fields
 
-### - Generalities
+### Generalities
 
 ### <a href="articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>
 <!-- the global phase symmetry; making the symmetry local; the connection and the covariant derivative; the field strength as the curvature; the gauge principle and the Maxwell field; the non-abelian extension and where the gap is; the mass term and the axial symmetry. -->
@@ -1182,7 +1182,7 @@
 ### <a href="articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a>
 <!-- what the framework already reaches; the colour group and why nothing derives a three; confinement and the absent mechanism; the chiral-fermion issue and the quark couplings; the running coupling and asymptotic freedom; the ledger. -->
 
-### - Particles of spin 0
+### Particles of spin 0
 
 ### <a href="articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a>
 <!-- the scalar, the phase and the covariant derivative; the potential and the non-zero vacuum; the mass from the scalar kinetic term; the would-be Goldstone mode and the count; what the framework does not supply, the non-abelian and electroweak case; and the two external readings that do not use the framework's central scalar — masses as eigenvalues, and the volume element of $\mathrm{Cl}(3)$ as the chirality-flipping element. -->
@@ -1205,7 +1205,7 @@
 ### <a href="articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a>
 <!-- the strong CP problem and the theta parameter; the Peccei–Quinn symmetry as the central phase; the axion potential and its mass; the anomalous coupling and the shift symmetry. -->
 
-### - Particles of spin 1/2
+### Particles of spin 1/2
 
 ### <a href="articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>
 <!-- the two chiral halves and the projectors; chiral gauge symmetry on the Dirac module; what the centre supplies, a vector-like abelian sector; the mass term and the real structure; an external reading of the Majorana condition and the spacetime signature, the verified real-symmetric transform, the printed slips and the non-Hermitian claim kept in its own (2+2) sector; chirality is not the sector split; what the framework supplies, transcribes and does not supply. -->
@@ -1265,7 +1265,7 @@
 ### <a href="articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html">SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</a>
 <!-- the irreducible representations as traceless bisymmetric tensors of degree $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$; the Okubo basis and the three $\mathfrak{su}(2)$ subalgebras I, U, V; the admissibility condition $p-q\equiv0\pmod3$; the octet reduction $\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$; the Zeeman analogy and the Gell-Mann–Okubo formula with its hypercharge and charge splittings; the baryon-octet relation checked against the PDG at $0.58\%$; $m_0$ identified with the spin–mass formula — recorded as external to the biquaternion algebra, which the gauge ceiling keeps at $\mathrm{SU}(2)$. -->
 
-### - Particles of spin 1 and above
+### Particles of spin 1 and above
 
 ### <a href="articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a>
 <!-- the gauge algebra inside the material sector; the non-abelian connection and covariant derivative; the field strength is not gauge invariant; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; the reality condition and the $ict$ direction. -->
@@ -1288,7 +1288,7 @@
 ### <a href="articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a>
 <!-- the gluon in standard quantum chromodynamics; what the framework reaches, the free constituent; the obstructions to the octet; the enlarged carrier and the price of embedding, the gauge potential $\mathcal{A}_\mu=g_sG^a_\mu\lambda_a/2$ as a $3\times3$ traceless anti-Hermitian block of $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, and the explicit biquaternion closed forms of the embedded $\mathrm{SU}(3)$ elements; the boundary of the category. -->
 
-### - Focus on informational aspects
+### Focus on informational aspects
 
 ### <a href="articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a>
 <!-- the gauge orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->

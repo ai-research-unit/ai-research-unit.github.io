@@ -160,5 +160,5 @@ The **fundamental symmetry** of the biquaternion Krein form is the natural conju
 - *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the form whose symmetry this is
 - *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md`), for the operators the symmetry defines
 - *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`) and *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the involutions and their fixed spaces
-- *Biquaternion Centre Subspace* and *Biquaternion Vector Subspace* (`articles_maths/biquaternion-centre-subspace.md`, `articles_maths/biquaternion-vector-subspace.md`), for the two eigenspaces as algebras
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two eigenspaces, the centre and the vector subspace, as algebras
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental symmetry and the parametrisation of the fundamental decompositions

@@ -141,4 +141,4 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the solvability and the solution of $\tilde CX+X\tilde D=c$.
 - *Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity statements at the level of maps.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations and their weights.
-- *Biquaternion Hermitian Subspace* (`articles_maths/biquaternion-hermitian-subspace.md`) and *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the inertia, the cone and the element spectra.
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`) and *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the inertia, the cone and the element spectra.

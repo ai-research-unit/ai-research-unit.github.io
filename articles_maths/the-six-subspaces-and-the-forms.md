@@ -1,0 +1,226 @@
+# __The Six Subspaces and the Forms__
+
+## Introduction
+
+The biquaternion algebra carries three scalar pairings, one for each of its three conjugations, and this article reads all three against the six distinguished subspaces.
+
+$$
+N(\tilde P,\tilde Q) = \mathrm{Sc}\!\left(\tilde P\tilde Q^{\natural}\right) = \sum_\mu P_\mu Q_\mu,
+\qquad
+\langle\tilde P,\tilde Q\rangle = \sum_\mu \overline{P_\mu}Q_\mu,
+\qquad
+[\tilde P,\tilde Q] = \sum_\mu \varepsilon_\mu\overline{P_\mu}Q_\mu ,
+$$
+
+with $\varepsilon = (1,-1,-1,-1)$. The first is the $\mathbb{C}$-**bilinear** form built on the natural conjugation ${}^{\natural}$, whose diagonal is the norm $N$; the second is the $\mathbb{C}$-**sesquilinear** form built on the Hermitian conjugation ${}^{*}$, positive definite; the third is the $\mathbb{C}$-sesquilinear **Krein form** built on ${}^{\natural}\circ\bar{\cdot}$, indefinite. They are treated in the whole algebra in *The Bilinear Form on the Biquaternion Algebra*, *The Hermitian Form on the Biquaternion Algebra* and *The Biquaternion Krein Form and Its Signature*, and in the matrix models in *The Forms in the Matrix Representation of the Biquaternion Algebra*; what is added here is the restriction to the six, the orthogonality of the six with one another, and the isotropic subspaces.
+
+Two structural facts organise everything below. The first is that **all three pairings are diagonal in the complex coefficient system**: their Gram matrices in the basis $e_0, e_1, e_2, e_3$ are
+
+$$
+\bigl(N(e_\mu,e_\nu)\bigr) = I_4, \qquad
+\bigl(\langle e_\mu,e_\nu\rangle\bigr) = I_4, \qquad
+\bigl([e_\mu,e_\nu]\bigr) = \operatorname{diag}(1,-1,-1,-1).
+$$
+
+The second is that the real parts of the first and the third are diagonal in the **real** basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, with the sign patterns
+
+$$
+\mathrm{Re}\,N : \ +,+,+,+,-,-,-,- , \qquad
+\mathrm{Re}\,[\cdot,\cdot] : \ +,-,-,-,+,-,-,- ,
+$$
+
+so that $\mathrm{Re}\,N$ has signature $(4,4)$ on $\mathbb{B} = \mathbb{R}^8$ and $\mathrm{Re}\,[\cdot,\cdot]$ has signature $(2,6)$. The six subspaces are unions of coordinate sets in these two real basis systems, so every restriction is read off the two sign strings. This gives the following table, the first three columns being real signatures and the last two the zero sets.
+
+| subspace | $\mathrm{Re}\,N$ | $\mathrm{Re}\,[\cdot,\cdot]$ | $\langle\cdot,\cdot\rangle$ | $N$-null elements | Krein-null elements |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $(2,0)$ | $(2,0)$ | $0$ | $0$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $(0,6)$ | $(6,0)$ | the nonzero pure null elements, square-zero | $0$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $(4,0)$ | $(1,3)$ | $(4,0)$ | $0$ | a cone of real dimension $3$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $(0,4)$ | $(1,3)$ | $(4,0)$ | $0$ | the same kind of cone |
+| $\mathbb{M}_+$ | $(1,3)$ | $(1,3)$ | $(4,0)$ | $a_0^2 = (\mathbf{p},\mathbf{p})$ | $a_0^2 = (\mathbf{p},\mathbf{p})$ |
+| $\mathbb{M}_-$ | $(3,1)$ | $(1,3)$ | $(4,0)$ | $b_0^2 = (\mathbf{q},\mathbf{q})$ | $b_0^2 = (\mathbf{q},\mathbf{q})$ |
+
+Three features of the table are worth naming before the sections. The Hermitian pairing is **positive definite on every one of the six**, so it distinguishes nothing among them; the bilinear form is complex-valued on the centre and the vector subspace, so its real signature there is that of its real part, and it is definite on the quaternion and anti-quaternion subspaces with opposite signs; and the Krein form has the **same** signature $(1,3)$ on each of the four four-dimensional subspaces, which is the form statement of those four having the same real dimension. The last two columns are read together as follows: on the two Hermitian subspaces the two null sets are **the same set**, the Krein form being the bilinear form up to sign; on the centre both are the single element $0$, the bilinear form having no nonzero null element there and the Krein form being definite; on the vector subspace the bilinear form carries the whole null cone while the Krein form is definite, so the two sets meet only at $0$; and on the quaternion and anti-quaternion subspaces the bilinear form has no nonzero null element while the Krein form has a cone of them.
+
+## The Three Pairings
+
+**Definition.** For $\tilde P, \tilde Q \in \mathbb{B}$ the three pairings are the coefficient sums above. The first is $\mathbb{C}$-bilinear and symmetric, the other two are $\mathbb{C}$-sesquilinear with the first argument conjugate-linear and the second linear, and Hermitian in the sense $\langle\tilde P,\tilde Q\rangle = \overline{\langle\tilde Q,\tilde P\rangle}$ and likewise for $[\cdot,\cdot]$. All three are non-degenerate.
+
+**Proposition (the diagonalizations).** In the complex basis $e_0, e_1, e_2, e_3$ all three pairings are diagonal with the entries displayed in the Introduction; in the real basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$ the real parts of the first and the third are diagonal with the displayed sign patterns, and the Hermitian pairing is diagonal with every entry $1$.
+
+**Proof.** Each pairing is a sum over the four coefficients of a product of one coefficient of $\tilde P$ with one of $\tilde Q$, so the cross terms vanish when the two basis vectors are distinct. The real basis vectors $ie_\mu$ have coefficients equal to $i$ in the complex basis, so $N(ie_\mu, ie_\mu) = i^2 = -1$ while $[ie_\mu, ie_\mu] = \varepsilon_\mu |i|^2 = \varepsilon_\mu$, and $\langle ie_\mu, ie_\mu\rangle = |i|^2 = 1$. $\square$
+
+**Remark (the pairings in the matrix models).** Transported by the isomorphism $\Phi$ of *Biquaternion 2×2 Matrix Element Representation*, the bilinear form is the pairing with the adjugate, $\mathrm{Tr}(\Phi(\tilde P)\Phi(\tilde Q)^{\mathrm{adj}})$, the Hermitian form is the Hilbert–Schmidt pairing $\mathrm{Tr}(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q))$, and the Krein form is the pairing with the conjugate transpose of the adjugate; this dictionary is the content of *The Forms in the Matrix Representation of the Biquaternion Algebra*. The two matrix models of *The Six Subspaces and the Two Matrix Representations* carry these pairings as their trace and determinant invariants: $N(\tilde Q) = \det\Phi(\tilde Q)$ and $\langle\tilde Q,\tilde Q\rangle = \mathrm{Tr}(\Phi(\tilde Q)^{\dagger}\Phi(\tilde Q))$ up to the normalisation of the Hilbert–Schmidt form.
+
+Two facts about the six are read from the diagonalizations at once. The **restriction of the bilinear form to each of the six is non-degenerate**, with Gram determinant $\pm 1$ in the natural basis: $+1$ on the centre, the vector subspace, the quaternion subspace and the anti-quaternion subspace, $-1$ on $\mathbb{M}_+$ and on $\mathbb{M}_-$. And the **restriction of the Krein form is definite exactly on the centre and the vector subspace**, with opposite signs, and has signature $(1,3)$ on each of the other four.
+
+## The Centre Subspace
+
+A central element is $\tilde Q = Ae_0$ with $A = q_0 + iq'_0$, and the three diagonal values are
+
+$$
+N(Ae_0) = A^2, \qquad [Ae_0,Ae_0] = |A|^2, \qquad \langle Ae_0,Ae_0\rangle = |A|^2 .
+$$
+
+The bilinear form is **complex-valued** on the centre, its real part $q_0^2 - (q'_0)^2$ has signature $(1,1)$, and the centre is a hyperbolic plane; but it has **no nonzero null element**, since $A^2 = 0$ forces $A = 0$. The Krein form and the Hermitian form are positive definite there, of signature $(2,0)$, and they agree: the centre is the **positive part** of the Krein space, in the sense of the fundamental decomposition of *The Biquaternion Krein Form and Its Signature*, and it is the two-dimensional positive part of the Hilbert structure of the Hermitian pairing.
+
+The centre is thus the only one of the six that is positive definite for the indefinite form, and the only one on which the bilinear form is complex-valued with a positive definite Krein form. The absence of a null element is the form statement of the centre being a field, and it agrees with the absence of a zero divisor there in *The Six Subspaces and the Zero Divisors*.
+
+## The Vector Subspace
+
+A pure element is $\tilde Q = \mathbf{P} = \sum_k P_ke_k$ with complex coefficients $P_k = q_k + iq'_k$, and the three diagonal values are
+
+$$
+N(\mathbf{P}) = \sum_k P_k^2, \qquad
+[\mathbf{P},\mathbf{P}] = -\sum_k |P_k|^2, \qquad
+\langle\mathbf{P},\mathbf{P}\rangle = \sum_k |P_k|^2 .
+$$
+
+The bilinear form is **complex-valued**, of real part $\sum_k(q_k^2 - (q'_k)^2)$, of signature $(3,3)$, and its real part is the split form of signature $(3,3)$ on the six real vector coordinates. Its null elements are the nonzero pure elements with $(\mathbf{P},\mathbf{P}) = 0$, which are exactly the zero divisors of the vector subspace and are all square-zero by *The Six Subspaces and the Zero Divisors*, a set of real dimension $4$. The Krein form is **negative definite** on the vector subspace, of signature $(0,6)$, and its only Krein-null element is $0$; the vector subspace is the negative part of the Krein space and the negative part of the Hilbert structure.
+
+So the vector subspace is where the two indefinite pairings part company: it is the negative definite subspace for the Krein form and carries the whole null cone of the bilinear form. It is also the only one of the six that contains a nilpotent, and the nilpotent is the element at which the bilinear form has a double zero: $N(\mathbf{P}) = 0$ with $\mathbf{P} \neq 0$ and $\mathbf{P}^2 = 0$ at once.
+
+## The Quaternion Subspace
+
+A real quaternion is $\tilde Q = h = h_0e_0 + h_1e_1 + h_2e_2 + h_3e_3$ with real $h_\mu$, and the diagonal values are
+
+$$
+N(h) = \sum_\mu h_\mu^2 > 0, \qquad
+[h,h] = h_0^2 - h_1^2 - h_2^2 - h_3^2, \qquad
+\langle h,h\rangle = \sum_\mu h_\mu^2 .
+$$
+
+The bilinear form is **real-valued and positive definite** on the quaternion subspace, of signature $(4,0)$, so **no nonzero real quaternion is null**: this is the definiteness version of the quaternion subspace being a division algebra. Its classical form is the sum of four squares, $N(h) = |h|^2$. The Krein form on the same four real coordinates is the form $h_0^2 - h_1^2 - h_2^2 - h_3^2$ of signature $(1,3)$: the quaternion subspace is then a real space of that signature, its Krein-null elements form a cone of real dimension $3$, and none of those elements is a zero divisor, which is the smallest instance of the two null sets being different objects.
+
+**The quaternion subspace is the subspace on which the two indefinite pairings swap roles**: the bilinear form is definite there and the Krein form indefinite, exactly the reverse of the vector subspace. The Hermitian pairing is positive definite, as on every one of the six.
+
+## The Anti-Quaternion Subspace
+
+An element of $i\mathbb{H}_{\mathbb{B}}$ is $\tilde Q = ih$ with $h$ a real quaternion, and the two diagonal values follow from the coefficients being $i$ times real numbers:
+
+$$
+N(ih) = -N(h) < 0, \qquad
+[ih,ih] = h_0^2 - h_1^2 - h_2^2 - h_3^2, \qquad
+\langle ih,ih\rangle = \sum_\mu h_\mu^2 .
+$$
+
+The bilinear form is **real-valued and negative definite** on the anti-quaternion subspace, of signature $(0,4)$, so no nonzero element of it is null: this is the definiteness version of the absence of zero divisors there, and it is the exact mirror of the quaternion subspace, the sign of the form being reversed and nothing else. The Krein form is the **same form of signature $(1,3)$** as on the quaternion subspace, since $|i|^2 = 1$; the same cone of Krein-null elements appears, and again none of its points is a zero divisor. The Hermitian pairing is positive definite, of signature $(4,0)$.
+
+So the quaternion subspace and the anti-quaternion subspace have the **same Krein form and opposite bilinear forms**: the indefinite pairing does not tell them apart, and the bilinear form tells them apart by its sign alone. This is the form counterpart of the two subspaces being related by multiplication by the central unit $i$ in *The Six Subspaces and the Ideals*.
+
+## The Hermitian Subspace
+
+A Hermitian element is $\tilde Q = a_0e_0 + i\mathbf{p}$ with $a_0$ real and $\mathbf{p}$ a real vector, and the diagonal values are
+
+$$
+N(\tilde Q) = a_0^2 - (\mathbf{p},\mathbf{p}), \qquad
+[\tilde Q,\tilde Q] = a_0^2 - (\mathbf{p},\mathbf{p}), \qquad
+\langle\tilde Q,\tilde Q\rangle = a_0^2 + (\mathbf{p},\mathbf{p}) .
+$$
+
+**On the Hermitian subspace the Krein form is the bilinear form**, the same real-valued form of signature $(1,3)$, and the two have the same null elements: $a_0^2 = (\mathbf{p},\mathbf{p})$, a cone of real dimension $3$ whose nonzero points are exactly the zero divisors of $\mathbb{M}_+$ of *The Six Subspaces and the Zero Divisors*, that is the real multiples of the Hermitian idempotents. The Hermitian pairing is positive definite of signature $(4,0)$ and is the sum of four squares on the same four real coordinates.
+
+The polar form of the bilinear form on the Hermitian subspace is
+
+$$
+N(\tilde Q,\tilde R) = a_0r_0 - (\mathbf{p},\mathbf{r}),
+$$
+
+the indefinite symmetric form whose diagonal gives the signature $(1,3)$, and it is the form whose totally isotropic lines are the null directions of $\mathbb{M}_+$, treated below.
+
+## The Anti-Hermitian Subspace
+
+An anti-Hermitian element is $\tilde Q = ib_0e_0 + \mathbf{q}$ with $b_0$ real and $\mathbf{q}$ a real vector, and the diagonal values are
+
+$$
+N(\tilde Q) = -b_0^2 + (\mathbf{q},\mathbf{q}), \qquad
+[\tilde Q,\tilde Q] = b_0^2 - (\mathbf{q},\mathbf{q}), \qquad
+\langle\tilde Q,\tilde Q\rangle = b_0^2 + (\mathbf{q},\mathbf{q}) .
+$$
+
+**On the anti-Hermitian subspace the Krein form is the negative of the bilinear form**, so again the two have the same null elements, $b_0^2 = (\mathbf{q},\mathbf{q})$, the cone of real dimension $3$ of the zero divisors of $\mathbb{M}_-$, and again they are the real multiples of the Hermitian idempotents up to the factor $i$. The bilinear form has signature $(3,1)$ on $\mathbb{M}_-$ where it had $(1,3)$ on $\mathbb{M}_+$, and the Krein form has signature $(1,3)$ on both; the Hermitian pairing is positive definite of signature $(4,0)$ on both.
+
+So the two Hermitian subspaces are the two subspaces of the six on which the two indefinite forms have the **same null set**, and the pair on which they differ by a sign of the whole form: $N$ and $[\cdot,\cdot]$ agree on $\mathbb{M}_+$ and are opposite on $\mathbb{M}_-$. This is the form counterpart of $i\mathbb{M}_+ = \mathbb{M}_-$ and of the observation of *The Six Subspaces and the Ideals* that the two subspaces determine the same minimal ideals.
+
+## The Orthogonal Decomposition
+
+Because all three pairings are diagonal in the complex coefficient system, two of the six are orthogonal exactly when their coefficient supports are disjoint. The supports are
+
+$$
+\mathbb{C}_{\mathbb{B}} : \{0\}, \qquad
+\mathrm{Vect}(\mathbb{B}) : \{1,2,3\}, \qquad
+\mathbb{H}_{\mathbb{B}}, \ i\mathbb{H}_{\mathbb{B}}, \ \mathbb{M}_+, \ \mathbb{M}_- : \{0,1,2,3\},
+$$
+
+so **the centre and the vector subspace are orthogonal for all three pairings, and they are the only pair of the six that is**. Every other pair of the six shares a coefficient, and the corresponding entry of the pairing is a product that does not vanish identically.
+
+**Corollary (the orthogonal decomposition).** For each of the three pairings, the scalar-vector decomposition is orthogonal,
+
+$$
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \perp \mathrm{Vect}(\mathbb{B}),
+$$
+
+the signatures add, $(1,1) + (3,3) = (4,4)$ for the bilinear form, $(2,0) + (0,6) = (2,6)$ for the Krein form and $(2,0) + (6,0) = (8,0)$ for the Hermitian pairing, and the first of these three is the fundamental decomposition of the Krein space of *The Biquaternion Krein Form and Its Signature*, in which the centre is the positive part and the vector subspace the negative part.
+
+## The Isotropic Lines and the Ideals
+
+**Proposition (a line is isotropic exactly when it is spanned by a null element).** For $\tilde P \neq 0$ the complex line $\mathbb{C}\tilde P$ is totally isotropic for the bilinear form exactly when $N(\tilde P) = 0$.
+
+**Proof.** $N(\lambda\tilde P,\mu\tilde P) = \lambda\mu N(\tilde P)$ by bilinearity, and this vanishes for all $\lambda,\mu$ exactly when $N(\tilde P) = 0$. $\square$
+
+Since the null elements of the six are exactly their zero divisors, the isotropic lines of the six are their **zero-divisor lines**: none in the centre, the quaternion subspace and the anti-quaternion subspace, which have no nonzero null element; the complex lines of the nilpotents in the vector subspace; and the complex lines of the real multiples of the Hermitian idempotents in the two Hermitian subspaces.
+
+**Theorem (the minimal ideals are the maximal isotropic one-sided ideals).** Every minimal left ideal and every minimal right ideal of $\mathbb{B}$ is a maximal totally isotropic subspace of the bilinear form. Conversely, a maximal totally isotropic subspace that is a left ideal is a minimal left ideal, and dually on the right.
+
+**Proof.** Let $\tilde Q \neq 0$ be null and let $\tilde X, \tilde Y \in \mathbb{B}$. Then
+
+$$
+N(\tilde X\tilde Q, \tilde Y\tilde Q) = \mathrm{Sc}\!\left(\tilde X\tilde Q\tilde Q^{\natural}\tilde Y^{\natural}\right) = \mathrm{Sc}\!\left(\tilde X N(\tilde Q)\tilde Y^{\natural}\right) = N(\tilde Q)\,\mathrm{Sc}\!\left(\tilde X\tilde Y^{\natural}\right) = 0,
+$$
+
+so the left ideal $\mathbb{B}\tilde Q$ is totally isotropic; it has complex dimension $2$ by *The Six Subspaces and the Ideals*, and a totally isotropic subspace of the four-dimensional complex algebra has complex dimension at most $2$, since the form is non-degenerate and of Witt index $2$. So $\mathbb{B}\tilde Q$ is maximal, and by the same computation on the other side so is $\tilde Q\mathbb{B}$. For the converse, let $I$ be a maximal totally isotropic left ideal; being a left ideal it is a sum of minimal left ideals, and a sum of two distinct ones is not isotropic, because two distinct maximal totally isotropic subspaces of a non-degenerate form do not contain one another and therefore pair non-trivially. So $I$ is a single minimal left ideal. $\square$
+
+The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi, \tilde R, f, \tilde T$ of *The Six Subspaces and the Ideals*, where $\tilde\Pi = \tfrac{1}{2}(e_0 + ie_1)$, $f = e_0 - \tilde\Pi$, $\tilde R = e_3 + ie_2$ and $\tilde T = e_3 - ie_2$, the Gram matrix of the bilinear form is
+
+$$
+\begin{pmatrix}
+0 & 0 & \tfrac{1}{2} & 0 \\
+0 & 0 & 0 & 2 \\
+\tfrac{1}{2} & 0 & 0 & 0 \\
+0 & 2 & 0 & 0
+\end{pmatrix},
+$$
+
+an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\tilde R$ with the nilpotent line $\mathbb{C}\tilde T$. The two minimal left ideals $\mathbb{B}\tilde\Pi = \mathbb{C}\tilde\Pi \oplus \mathbb{C}\tilde R$ and $\mathbb{B}f = \mathbb{C}f \oplus \mathbb{C}\tilde T$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\tilde T$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal: it mixes the two. So the maximal totally isotropic subspaces are the four-dimensional real subspaces on which the form vanishes, they include the six minimal ideals of *The Six Subspaces and the Ideals*, and among them only the minimal ideals carry the algebra structure.
+
+Finally, the isotropic subspaces lying inside a **single** one of the six are no more than lines. The restriction of the bilinear form to each of the six is non-degenerate, of Gram determinant $\pm 1$; the complex subspaces of the six are the centre of complex dimension $1$ and the vector subspace of complex dimension $3$, and by non-degeneracy a totally isotropic complex subspace of a non-degenerate form on a complex space of dimension $d$ has dimension at most $d/2$, so at most $0$ in the centre and at most $1$ in the vector subspace; and the four four-dimensional subspaces are **totally real**, in the sense that $i\tilde Q$ lies in none of them when $\tilde Q \neq 0$ is in one, so they contain no complex subspace at all, and their real forms are definite on the quaternion and anti-quaternion subspaces and of real Witt index $1$ on the two Hermitian subspaces. So each of the vector subspace, the Hermitian subspace and the anti-Hermitian subspace contains isotropic lines and no isotropic plane, and the other three contain no isotropic subspace other than $0$.
+
+## Summary
+
+The algebra carries three pairings, the $\mathbb{C}$-bilinear form of the norm, the positive definite Hermitian pairing and the indefinite Krein form; all three are diagonal in the complex coefficient system, and the real parts of the first and the third are diagonal in the real basis with sign patterns $+,+,+,+,-,-,-,-$ and $+,-,-,-,+,-,-,-$, of signatures $(4,4)$ and $(2,6)$. Restricted to the six, the bilinear form has signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$; the Krein form has $(2,0)$ on the centre, $(0,6)$ on the vector subspace and $(1,3)$ on each of the other four, so that it is definite on the two subspaces that make up the fundamental decomposition and of the same signature on the four four-dimensional ones; and the Hermitian pairing is positive definite on all six and distinguishes nothing. The bilinear form is complex-valued on the centre and the vector subspace and real-valued on the other four; it is positive definite on the quaternion subspace and negative definite on the anti-quaternion subspace, which is the definiteness form of the division algebra property and of the absence of zero divisors there; and it is indefinite on the two Hermitian subspaces, where it coincides with the Krein form up to sign and therefore has the same null set, the cone of the real multiples of the Hermitian idempotents. All three pairings are diagonal in the coefficient system, so the centre and the vector subspace are orthogonal and they are the only orthogonal pair among the six, and the scalar-vector decomposition is an orthogonal decomposition for all three, with the signature arithmetic $(1,1)+(3,3) = (4,4)$ and $(2,0)+(0,6) = (2,6)$. A complex line is totally isotropic for the bilinear form exactly when it is spanned by a null element, so the isotropic lines of the six are the lines of the zero divisors; every minimal left ideal and every minimal right ideal is a maximal totally isotropic subspace, and conversely every maximal totally isotropic subspace that is a one-sided ideal is a minimal one; the form is hyperbolic in the Peirce basis, pairing the two idempotent lines and the two nilpotent lines; and no isotropic subspace beyond a line lies inside a single one of the six, whose restrictions are all non-degenerate. The three pairings themselves, their matrix forms and their signatures on the whole algebra are the business of *The Bilinear Form on the Biquaternion Algebra*, *The Hermitian Form on the Biquaternion Algebra*, *The Biquaternion Krein Form and Its Signature* and *The Forms in the Matrix Representation of the Biquaternion Algebra*; what is added here is the restriction to the six, the orthogonality table and the isotropic structure.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\mathbb{B}$ | the biquaternion algebra |
+| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
+| $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
+| $\mathbb{M}_+, \mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
+| $N(\tilde P,\tilde Q)$ | the bilinear form, the polarisation of the norm $N$ |
+| $\langle\tilde P,\tilde Q\rangle$ | the Hermitian pairing, built on ${}^{*}$ |
+| $[\tilde P,\tilde Q]$ | the Krein form, built on ${}^{\natural}\circ\bar{\cdot}$ |
+| $\varepsilon$ | the sign vector $(1,-1,-1,-1)$ |
+| $\tilde\Pi, \tilde R, f, \tilde T$ | the Peirce basis, in which the bilinear form is hyperbolic |
+
+## Further Reading
+
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
+- *The Six Subspaces and the Zero Divisors* (`articles_maths/the-six-subspaces-and-the-zero-divisors.md`), for the null elements, which are the zero divisors whose lines are the isotropic lines
+- *The Six Subspaces and the Ideals* (`articles_maths/the-six-subspaces-and-the-ideals.md`), for the minimal left and right ideals, which are the maximal totally isotropic one-sided ideals, and for the Peirce basis
+- *The Six Subspaces and the Two Matrix Representations* (`articles_maths/the-six-subspaces-and-the-two-matrix-representations.md`), for the models in which the trace and the determinant carry the same information
+- *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the reading of these signatures as the types of the second-order operator on each subspace
+- *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the bilinear form, its polarisation and its restriction table in the whole algebra
+- *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the Hermitian pairing, its inner product and the Euclidean structure
+- *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the Krein form, its signature and the fundamental decomposition
+- *The Forms in the Matrix Representation of the Biquaternion Algebra* (`articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md`), for the three pairings in the matrix models

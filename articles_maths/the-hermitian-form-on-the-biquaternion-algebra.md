@@ -71,7 +71,7 @@ It is a genuine norm: positive definite, subadditive, homogeneous of degree one,
 
 Three consequences are read from it and are developed in their own articles.
 
-- **The positive definiteness of the quaternion subspace.** On $\mathbb{H}_{\mathbb{B}}$ the norm $N$ is the sum of four real squares, hence positive definite, whereas on $i\mathbb{H}_{\mathbb{B}}$ it is the negative of such a sum; the pair is the real-and-imaginary coefficient splitting of the algebra. The positivity is the content that the Algebra article *Biquaternion Quaternion Subspace* now records only as the algebraic fact that every non-zero element is a unit.
+- **The positive definiteness of the quaternion subspace.** On $\mathbb{H}_{\mathbb{B}}$ the norm $N$ is the sum of four real squares, hence positive definite, whereas on $i\mathbb{H}_{\mathbb{B}}$ it is the negative of such a sum; the pair is the real-and-imaginary coefficient splitting of the algebra. The positivity is the content that the Algebra article *Introduction to the Six Subspaces* now records only as the algebraic fact that every non-zero element is a unit.
 - **The Euclidean topology.** The linear isometry onto $\mathbb{R}^8$, the contractibility of $\mathbb{B}$ and the Euclidean unit sphere $S^7$ are *The Euclidean Topology of the Biquaternion Algebra*.
 - **The unitary group.** The maximal compact subgroup $U(2)$ of the unit group, onto which $\mathbb{B}^\times$ retracts, is *The Unitary Group of the Biquaternion Algebra*.
 

@@ -131,44 +131,13 @@ So $\flat$ is determined by ${}^{*}$ together with the central sign $-1$. The fo
 
 ## The Six Subspaces
 
-The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ (with ${}^{*} = {}^{\natural}\circ\bar{\cdot}$) each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The **six** subspaces so obtained are the distinguished real subspaces of $\mathbb{B}$. Four of them are four-dimensional; the remaining two are the two-dimensional **center** and the six-dimensional **vector subspace**. The fourth conjugation $\flat = -{}^{*}$ is not independent: it has the same two eigenspaces as ${}^{*}$, with the signs exchanged, so it produces no further subspace.
+The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ (with ${}^{*} = {}^{\natural}\circ\bar{\cdot}$) each split $\mathbb{B}$ into a fixed space and an anti-fixed space. The spaces so obtained are the **six distinguished subspaces** of $\mathbb{B}$: the **centre** $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$, fixed by ${}^{\natural}$; the **vector subspace** $\mathrm{Vect}(\mathbb{B})$, of dimension $6$, the anti-fixed space of ${}^{\natural}$ and the kernel of the scalar-part functional; the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension $4$, fixed by $\bar{\cdot}$; the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension $4$, the anti-fixed space of $\bar{\cdot}$; the **Hermitian subspace** $\mathbb{M}_+$, of dimension $4$, fixed by ${}^{*}$; and the **anti-Hermitian subspace** $\mathbb{M}_-$, of dimension $4$, fixed by $\flat = -{}^{*}$. The fourth conjugation produces no space beyond these, its two eigenspaces being those of ${}^{*}$ with the signs exchanged, which is why there are six of them and not eight. Exactly two of the six are subalgebras, the centre $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$, and both are division algebras.
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ |
-|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ (complex, the center) | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0,\ ie_0$ | $2$ |
-| $\mathrm{Vect}(\mathbb{B})$ (vector) | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $6$ |
-| $\mathbb{H}_{\mathbb{B}}$ (quaternion) | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $4$ |
-| $i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion) | $\bar{\tilde{Q}} = -\tilde{Q}$ | $ie_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ |
-| $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $4$ |
-| $\mathbb{M}_-$ (anti-Hermitian) | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $4$ |
-
-Each of the six has its own article in the **Focus on Subspaces** group of the series, where its basis and dimension, its algebra and module structure, its behaviour under the four conjugations and its intersections with the other five are worked out in full:
-
-| subspace | article |
-|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | *Biquaternion Centre Subspace* |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | *Biquaternion Vector Subspace* |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | *Biquaternion Quaternion Subspace* |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | *Biquaternion Anti-Quaternion Subspace* |
-| $\mathbb{M}_+$, the Hermitian subspace | *Biquaternion Hermitian Subspace* |
-| $\mathbb{M}_-$, the anti-Hermitian subspace | *Biquaternion Anti-Hermitian Subspace* |
-
-The relations between them are collected in *Biquaternion Relations Between Subspaces*, and the four conjugations themselves in *Biquaternion Involution Lattice*. What the present article uses of the six, again and again, is the following:
-
-- $\mathbb{C}_{\mathbb{B}}$ is the set of central elements, a copy of $\mathbb{C}$ embedded as the scalar part, $\{\lambda e_0 : \lambda \in \mathbb{C}\}$;
-- $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar-part functional, and it is neither a subalgebra nor a module over $\mathbb{H}_{\mathbb{B}}$;
-- $\mathbb{H}_{\mathbb{B}}$ is the set of elements with real coefficients, a copy of the real quaternion algebra, and the only non-commutative one of the six;
-- $i\mathbb{H}_{\mathbb{B}}$ is the set of products $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, a two-sided module over $\mathbb{H}_{\mathbb{B}}$ but not a subalgebra;
-- $\mathbb{M}_+$ is the set of elements with real scalar part and purely imaginary vector part;
-- $\mathbb{M}_-$ is the set of elements with purely imaginary scalar part and real vector part.
-
-### The Six Together
-
-Of the six subspaces, exactly two are subalgebras: the center $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$. Both are division algebras. The other four are not; the closure of each of the six under the product, the commutator and the symmetrized product is tabulated in *Biquaternion Relations Between Subspaces*, and the product behaviour of each is worked out in its own subspace article. The six are pairwise distinct as sets, and no two of them are equal; their dimensions $2, 6, 4, 4, 4, 4$ sum to more than $8$, so they necessarily overlap, and how they do so is the subject of *Biquaternion Relations Between Subspaces*.
+Each of the six is defined and tabulated in *Introduction to the Six Subspaces*, one subspace to a section. Their bases, the four coordinate blocks out of which they are built, their pairwise intersections, their sums, the action of the four conjugations upon them and the action of the central imaginary unit are *Comparison of the Six Subspaces*, which carries the tables. The present article uses the three decompositions of the following sections and nothing else of the six.
 
 ## The Quaternion Decomposition
 
-The complex conjugation $\bar{\cdot}$ is an involution, and the two subspaces just defined are its eigenspaces: $\mathbb{H}_{\mathbb{B}}$ is the eigenspace of eigenvalue $+1$ and $i\mathbb{H}_{\mathbb{B}}$ the eigenspace of eigenvalue $-1$. Both have real dimension 4, and they are independent, so $\mathbb{B}$ splits as a direct sum of the two.
+The complex conjugation $\bar{\cdot}$ is an involution, and the two subspaces just named are its eigenspaces: $\mathbb{H}_{\mathbb{B}}$ is the eigenspace of eigenvalue $+1$ and $i\mathbb{H}_{\mathbb{B}}$ the eigenspace of eigenvalue $-1$. Both have real dimension 4, and they are independent, so $\mathbb{B}$ splits as a direct sum of the two.
 
 Every biquaternion can be written uniquely as
 
@@ -256,105 +225,15 @@ $$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}, \qquad \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-, \qquad \mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})
 $$
 
-are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$. They are the only decompositions of this kind: each is determined by one of the three, and $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and so gives nothing new. That is why there are six subspaces rather than four or eight.
+are the eigenspace decompositions of the three pairwise commuting involutions $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$, and they are the only decompositions of this kind: $\flat = -{}^{*}$ reproduces the eigenspaces of ${}^{*}$ with the signs exchanged and gives nothing new, so there are exactly three decompositions and six subspaces.
 
-**The four coordinate blocks.** Because the involutions commute, the four-dimensional subspaces are built from four common pieces. Write
-
-$$
-A_1 = \mathbb{R} e_0, \qquad A_2 = \mathbb{R}(ie_0), \qquad B_1 = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1, ie_2, ie_3\}.
-$$
-
-These are the two **scalar blocks** $A_1, A_2$ of dimension 1 and the two **vector blocks** $B_1, B_2$ of dimension 3. The two involutions $\bar{\cdot}$ and ${}^{\natural}$ are diagonal on them, and every one of the six subspaces is a sum of blocks:
-
-| subspace | blocks | $\dim_{\mathbb{R}}$ |
-|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $A_1 \oplus A_2$ | $2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $B_1 \oplus B_2$ | $6$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $A_1 \oplus B_1$ | $4$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $A_2 \oplus B_2$ | $4$ |
-| $\mathbb{M}_+$ | $A_1 \oplus B_2$ | $4$ |
-| $\mathbb{M}_-$ | $A_2 \oplus B_1$ | $4$ |
-
-The pattern is that each of the four four-dimensional subspaces takes one scalar block and one vector block — the four ways of choosing one from each column — while the center takes both scalar blocks and the vector subspace both vector blocks.
-
-**The three pairings.** The three decompositions are exactly the three ways of splitting the four blocks into two complementary pairs: $\{A_1, B_1\}$ against $\{A_2, B_2\}$ gives $\mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$; $\{A_1, B_2\}$ against $\{A_2, B_1\}$ gives $\mathbb{M}_+ \oplus \mathbb{M}_-$; and $\{A_1, A_2\}$ against $\{B_1, B_2\}$ gives $\mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. There are exactly three such pairings of a four-element set into two pairs, so there are exactly three decompositions, and no fourth.
-
-**Intersections.** Two distinct subspaces meet in the blocks they share, so their intersection has dimension $0$, $1$ or $3$, and never $2$ or $4$:
-
-$$
-\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_+=A_1,\qquad
-\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_-=B_1,\qquad
-i\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_+=B_2,\qquad
-i\mathbb{H}_{\mathbb{B}}\cap \mathbb{M}_-=A_2,
-$$
-
-and, in the same way,
-
-$$
-\mathbb{C}_{\mathbb{B}}\cap \mathbb{H}_{\mathbb{B}}=A_1,\qquad
-\mathbb{C}_{\mathbb{B}}\cap i\mathbb{H}_{\mathbb{B}}=A_2,\qquad
-\mathrm{Vect}(\mathbb{B})\cap \mathbb{H}_{\mathbb{B}}=B_1,\qquad
-\mathrm{Vect}(\mathbb{B})\cap i\mathbb{H}_{\mathbb{B}}=B_2,
-$$
-
-$$
-\mathbb{C}_{\mathbb{B}}\cap \mathbb{M}_+=A_1,\qquad
-\mathbb{C}_{\mathbb{B}}\cap \mathbb{M}_-=A_2,\qquad
-\mathrm{Vect}(\mathbb{B})\cap \mathbb{M}_+=B_2,\qquad
-\mathrm{Vect}(\mathbb{B})\cap \mathbb{M}_-=B_1.
-$$
-
-The only pairs of distinct subspaces that meet in $\{0\}$ are the three complementary pairs of the three decompositions:
-
-$$
-\mathbb{M}_+ \cap \mathbb{M}_- = 0, \qquad \mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0, \qquad \mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0.
-$$
-
-Every pair that is not one of these three shares blocks, hence meets in dimension 1 or 3. Equivalently, in the decomposition $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ the intersections with $\mathbb{M}_+$ and $\mathbb{M}_-$ are
-
-$$
-\mathbb{M}_+=A_1\oplus B_2, \qquad \mathbb{M}_-=A_2\oplus B_1,
-$$
-
-which recovers the two displayed factorizations $\mathbb{M}_+ = \mathbb{R} e_0 \oplus \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ and $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$.
-
-**Action of the conjugations.** The quaternion conjugation ${}^{\natural}$ commutes with both $\bar{\cdot}$ and ${}^{*}$, so it preserves each of the six subspaces, and it acts as $+1$ on the scalar blocks and $-1$ on the vector blocks. Multiplication by the central scalar $i$ interchanges the two summands in every decomposition:
-
-$$
-i\,\mathbb{H}_{\mathbb{B}}=i\mathbb{H}_{\mathbb{B}},\qquad
-i\,(i\mathbb{H}_{\mathbb{B}})=\mathbb{H}_{\mathbb{B}},
-$$
-
-and
-
-$$
-i\,\mathbb{M}_+=\mathbb{M}_-,\qquad
-i\,\mathbb{M}_-=\mathbb{M}_+,
-$$
-
-and
-
-$$
-i\,\mathbb{C}_{\mathbb{B}}=\mathbb{C}_{\mathbb{B}},\qquad
-i\,\mathrm{Vect}(\mathbb{B})=\mathrm{Vect}(\mathbb{B}).
-$$
-
-The complex conjugation $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, while Hermitian conjugation ${}^{*}$ fixes $\mathbb{M}_+$ and negates $\mathbb{M}_-$. In particular, it is multiplication by $i$, not quaternion conjugation, that swaps $\mathbb{M}_+$ and $\mathbb{M}_-$; the center and the vector subspace are each stable under it.
+The three are the three ways of splitting the four coordinate blocks into two complementary pairs, they are the only pairs of distinct subspaces whose intersection is trivial, and they are the only pairs that sum to the whole algebra. The blocks, the pairings, the full table of the fifteen pairwise intersections, the sums and the action of the four conjugations on the six subspaces are in *Comparison of the Six Subspaces*.
 
 ## Summary
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, a four-dimensional algebra over $\mathbb{C}$ whose underlying real space has dimension eight, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$. It is associative, non-commutative, and not a division algebra.
 
-It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. The **six** distinguished real subspaces are the eigenspaces of those three involutions:
-
-- the **center** $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$, of dimension 2, fixed by ${}^{\natural}$, a subalgebra isomorphic to $\mathbb{C}$;
-- the **vector subspace** $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : Q_0 = 0\}$, of dimension 6, the anti-fixed space of ${}^{\natural}$ and the kernel of $\mathrm{Sc}$;
-- the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, of dimension 4, fixed by $\bar{\cdot}$, the subalgebra isomorphic to $\mathbb{H}$;
-- the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, of dimension 4, the anti-fixed space of $\bar{\cdot}$, an $\mathbb{H}_{\mathbb{B}}$-module but not a subalgebra;
-- the **Hermitian subspace** $\mathbb{M}_+$, of dimension 4, fixed by ${}^{*}$;
-- the **anti-Hermitian subspace** $\mathbb{M}_-$, of dimension 4, fixed by $\flat$.
-
-The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. They are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, so there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block; two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs.
+It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions and form the Klein four-group together with the identity. They define the six distinguished real subspaces of $\mathbb{B}$: the centre $\mathbb{C}_{\mathbb{B}}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, of dimensions $2$ and $6$, and the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, of dimension $4$. They give the three direct-sum decompositions $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$. The six subspaces and their bases are *Introduction to the Six Subspaces*; the coordinate blocks, the intersections, the sums and the action of the conjugations upon them are *Comparison of the Six Subspaces*.
 
 ## Summary of Notation
 
@@ -379,7 +258,6 @@ The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathb
 | $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, anti-fixed-point set of $\bar{\cdot}$; basis $ie_0, ie_1, ie_2, ie_3$ |
 | $\mathbb{M}_+$ | Hermitian subspace, fixed-point set of ${}^{*}$; basis $e_0, ie_1, ie_2, ie_3$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, fixed-point set of $\flat$; basis $ie_0, e_1, e_2, e_3$ |
-| $A_1, A_2, B_1, B_2$ | The four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$ |
 
 ## Further Reading
 

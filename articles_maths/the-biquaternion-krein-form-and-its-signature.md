@@ -57,14 +57,14 @@ is a fundamental decomposition.
 
 **Proof.** The diagonal value $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is $|Q_0|^{2}$ on the centre and $-\sum_{k}|\tilde Q_k|^{2}$ on the vector subspace, hence positive on $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$ and negative on $\mathbb{V}_{\mathbb{B}}\setminus\{0\}$; the two subspaces are complex lines (respectively the hyperplane $Q_0=0$) so their real dimensions are $2$ and $6$, giving $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$; orthogonality is $\varepsilon_\mu$-weighted: a centre vector has only the $\mu=0$ coefficient and a vector vector only $\mu\neq0$, so $[\tilde{C},\tilde{V}]=0$.
 
-**Remark (the two Lagrange identities).** On the vector subspace the Krein form is nothing but the bilinear form with the opposite sign, and on the Hermitian subspace it is the bilinear form itself:
+**Remark (the two Lagrange identities).** On the anti-Hermitian subspace the Krein form is nothing but the bilinear form with the opposite sign, and on the Hermitian subspace it is the bilinear form itself:
 
 $$
-[\tilde V,\tilde V]=-N(\tilde V)\ \ \text{for}\ \tilde V\in\mathbb{V}_{\mathbb{B}},\qquad
+[\tilde Q,\tilde Q]=-N(\tilde Q)\ \ \text{for}\ \tilde Q\in\mathbb{M}_{-},\qquad
 [\tilde H,\tilde H]=N(\tilde H)\ \ \text{for}\ \tilde H\in\mathbb{M}_{+}.
 $$
 
-**Proof.** Substituting $Q_k$ imaginary... precisely, on $\mathbb{V}_{\mathbb{B}}$ the diagonal of the Krein form is $-\sum_k|Q_k|^{2}$ while $N(\tilde V)=\sum_k Q_k^{2}$; the two agree with opposite sign on the anti-Hermitian subspace, where $Q_k$ is real so $|Q_k|^{2}=Q_k^{2}$ and $N(\tilde V)=\sum_k Q_k^{2}=-\sum_k|Q_k|^{2}$; on the Hermitian subspace $Q_k=iq'_k$ is purely imaginary, so $N(\tilde H)=\sum_k(iq'_k)^{2}=-\sum_k(q'_k)^{2}$, while the Krein diagonal is $|Q_0|^{2}-\sum_k|q'_k|^{2}=q_0^{2}-\sum_k(q'_k)^{2}$, which is the same expression. This is the restriction table of *Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*, read on the Krein form.
+**Proof.** Substituting the coefficients, on the vector subspace the diagonal of the Krein form is $-\sum_k|Q_k|^{2}$, which is real and strictly negative, while $N(\tilde Q)=\sum_k Q_k^{2}$ is complex; the two therefore agree only on the part of the vector subspace where the coefficients are real, which is the anti-Hermitian subspace: there $Q_k$ is real, so $|Q_k|^{2}=Q_k^{2}$ and $N(\tilde Q)=\sum_k Q_k^{2}=-\sum_k|Q_k|^{2}$ also has its vector part real, and the same holds for the scalar part, $[\tilde Q,\tilde Q]=|Q_0|^{2}=b_0^{2}$ against $-N(\tilde Q)=b_0^{2}$. On the Hermitian subspace $Q_k=iq'_k$ is purely imaginary, so $N(\tilde H)=\sum_k(iq'_k)^{2}=-\sum_k(q'_k)^{2}$, while the Krein diagonal is $|Q_0|^{2}-\sum_k|q'_k|^{2}=q_0^{2}-\sum_k(q'_k)^{2}$, which is the same expression. This is the restriction table of *Biquaternion Norm and Invertibility*, §*The Real Forms and Their Signatures*, read on the Krein form.
 
 **Corollary (the Lorentzian slices).** On the real quaternion subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}$ and on the purely imaginary subalgebra $i\mathbb{B}_{\mathbb{R}}$, each of real dimension four, the Krein form has signature $(1,3)$: the two together are the real and the imaginary coefficient halves of the fundamental decomposition, and each is a copy of Minkowski space.
 
@@ -127,7 +127,7 @@ The **Krein form** of the biquaternion algebra is $[\tilde{Q},\tilde{Q}']=\mathr
 | $\varepsilon=(1,-1,-1,-1)$ | The sign vector; the diagonal signs |
 | $(2,6)$ over $\mathbb{R}$, $(1,3)$ over $\mathbb{C}$ | The signature |
 | $\mathbb{C}_{\mathbb{B}},\ \mathbb{V}_{\mathbb{B}}$ | Positive part (centre) and negative part (vector subspace) |
-| $[\tilde V,\tilde V]=-N(\tilde V)$, $[\tilde H,\tilde H]=N(\tilde H)$ | The Lagrange identities |
+| $[\tilde Q,\tilde Q]=-N(\tilde Q)$ on $\mathbb{M}_-$, $[\tilde H,\tilde H]=N(\tilde H)$ | The Lagrange identities |
 | $\{[\tilde{Q},\tilde{Q}]=0\}$ | Krein null set; real cone, dimension $7$ |
 | $\mathbb{C}\cdot(e_0+e_1)$ | A maximal totally isotropic subspace |
 | $\Pi_6$ (over $\mathbb{R}$), $\Pi_3$ (over $\mathbb{C}$) | Pontryagin type of the Krein space |

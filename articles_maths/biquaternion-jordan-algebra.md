@@ -146,7 +146,7 @@ The dimensions $1+2+1$ are the Jordan counterpart of the two minimal left ideals
 
 The Hermitian subspace $\mathbb{M}_+$ is closed under the Jordan product. If $\tilde{P},\tilde{Q}\in\mathbb{M}_+$ then $\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}$ is again Hermitian, so $\tilde{P}\bullet\tilde{Q}\in\mathbb{M}_+$, and with the induced product $\mathbb{M}_+$ is itself a commutative Jordan algebra, this time over $\mathbb{R}$.
 
-It is of real dimension four and of degree two, and it is isomorphic to the Jordan algebra $H_2(\mathbb{C})$ of *Biquaternion Hermitian Subspace*; that article reads the same structure from the side of the Hermitian elements, and *Jordan Algebras* treats the degree-two algebra in general under the heading of the spin factor. The Hermitian subspace is therefore a **Jordan subalgebra** of $\mathbb{B}$ of the special kind, the one real form on which the symmetrized product closes.
+It is of real dimension four and of degree two, and it is isomorphic to the Jordan algebra $H_2(\mathbb{C})$ of *The Six Subspaces and the Jordan Algebra*; that article reads the same structure from the side of the Hermitian elements, and *Jordan Algebras* treats the degree-two algebra in general under the heading of the spin factor. The Hermitian subspace is therefore a **Jordan subalgebra** of $\mathbb{B}$ of the special kind, the one real form on which the symmetrized product closes.
 
 ## The Two Halves of the Product
 
@@ -184,4 +184,4 @@ With the Jordan product $\tilde{P}\bullet\tilde{Q}=\tfrac12(\tilde{P}\tilde{Q}+\
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras*, AMS Colloquium Publications 39 (1968), for the general theory of Jordan algebras, the Peirce decomposition and the degree.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the special Jordan algebras, the envelope and the trace form.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the symmetrized product of quaternions and its idempotents.
-- The companion articles of this series: *Biquaternion Multiplication*, *Biquaternion Lie Algebra*, *Biquaternion Idempotents and Projections*, *Biquaternion Hermitian Subspace*, *Biquaternion Relations Between Subspaces*, and *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System*.
+- The companion articles of this series: *Biquaternion Multiplication*, *Biquaternion Lie Algebra*, *Biquaternion Idempotents and Projections*, *The Six Subspaces and the Jordan Algebra*, *Biquaternion Relations Between Subspaces*, and *The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System*.
