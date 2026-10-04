@@ -16,6 +16,9 @@ biquaternion-rotations-and-lorentz-transformations
 M2C
 
 
+BOTH A BILINEAR ALGEBRA AND A SESQUILINEAR ALGEBRA 
+
+
 WHY HERMITIAN ALBEGRAS AND NOT CLIFFORD ALBEGRAS 
 C existe involution non triviale 
 

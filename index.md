@@ -1,5 +1,5 @@
 
-# AI Rewrites Quantum Mechanics
+# AI Advances Quantum Mechanics
 
 ## Introduction
 

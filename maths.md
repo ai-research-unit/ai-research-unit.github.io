@@ -603,7 +603,7 @@
 ### <a href="articles_maths/vector-spaces-over-finite-fields.html">Vector Spaces over Finite Fields</a>
 <!-- counting subspaces, the Gaussian binomial coefficients, $GL_n(\mathbb{F}_q)$ and its order. -->
 
-## Linear Algebras
+## Bilinear Algebras
 
 ### Theory
 
@@ -745,7 +745,7 @@
 
 ### * Theory
 
-### <a href="articles_maths/involutive-linear-algebras.html">Involutive Linear Algebras</a>
+### <a href="articles_maths/involutive-linear-algebras.html">Involutive Bilinear Algebras</a>
 <!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Hilbert Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
 
 ### <a href="articles_maths/opposite-algebras-and-anti-isomorphisms.html">Opposite Algebras and Anti-Isomorphisms</a>
@@ -818,7 +818,7 @@
 ### <a href="articles_maths/division-algebras.html">Division Algebras</a>
 <!-- Frobenius' theorem over $\mathbb{R}$, Wedderburn's little theorem, the structure theory over a general field by Wedderburn–Artin, the quaternion (symbol) algebras and the Brauer group, Skolem–Noether, and the biquaternion algebras — the tensor products of two quaternion algebras over one field — with the criterion for their being division algebras and their existence over a rational function field by the ramification and Bezoutian method; the composition algebras proper are a statement about a norm and belong to Part II with the other norms. -->
 
-## Symmetric Linear Algebras
+## Symmetric Bilinear Algebras
 
 ### Theory
 
@@ -939,7 +939,7 @@
 ### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-jordan-algebra.html">The Graded Adjoint Action on a Module over a Jordan Algebra</a>
 <!-- the adjoint action of a graded module over a jordan algebra; its compatibility with the grading and the sign rule. -->
 
-## Anti-symmetric Linear Algebras
+## Anti-symmetric Bilinear Algebras
 
 ### Theory
 
@@ -1065,7 +1065,7 @@
 ### <a href="articles_maths/grassmann-variables-and-berezin-integration.html">Grassmann Variables and Berezin Integration</a>
 <!-- odd generators and the $\mathbb{Z}/2$ grading; the Grassmann algebra as the exterior algebra on odd generators; differentiation with respect to an odd variable; Berezin integration, the change-of-variables formula and the Berezinian; the relation to the exterior and symmetric algebras. -->
 
-## Linear Spaces over Linear Algebras
+## Linear Spaces over Bilinear Algebras
 
 ### Theory
 
@@ -1616,7 +1616,7 @@
 ### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-topological-vector-space.html">The Graded Adjoint Action on a Module over a Topological Vector Space</a>
 <!-- the adjoint action of a graded module over a topological vector space; its compatibility with the grading and the sign rule. -->
 
-## Topology on Linear Algebras
+## Topology on Bilinear Algebras
 
 ### Theory
 
@@ -1675,7 +1675,7 @@
 
 ### * Theory
 
-### <a href="articles_maths/involutive-topological-linear-algebras.html">Involutive Topological Linear Algebras</a>
+### <a href="articles_maths/involutive-topological-linear-algebras.html">Involutive Topological Bilinear Algebras</a>
 <!-- a topological algebra with a continuous semilinear involution $\sigma$ relative to a continuous involution $\varsigma$ of the ring of scalars, the involution being an anti-automorphism of order two, the linear case $\varsigma=\mathrm{id}$ and the antilinear case over $\mathbb{C}$ with the conjugation, beside the involutive topological automorphism, an automorphism of order two; continuity at the origin, the homeomorphism, the uniform continuity, determination on a dense subset, and the descent to the Hausdorff quotient by the closure of zero; the topological opposite algebra and the involution as the certificate of a topological isomorphism $A\to A^{\mathrm{op}}$ of order two; the criterion for a linear topology, that for every $n$ there is $m$ with $\sigma(I_m)\subseteq I_n$, the cofinal $\sigma$-stable system $J_n=I_n\cap\sigma(I_n)$, the $I$-adic criterion $\sigma(I)^m\subseteq I$ and the automatic continuity of a linear involution with $\sigma(I)\subseteq I$; the continuous linear involutions $f(x)\mapsto f(b-x)$ of $\mathbb{R}[x]$ with the $(x)$-adic topology, continuous exactly for $b=0$ because the constant term of $(b-x)^m$ is $b^m$, with fixed algebra $\mathbb{R}[x-x^2]$ dense and not closed, and the continuous antilinear $\theta(f)(x)=\overline{f(-x)}$ of $\mathbb{C}[x]$ extending to $\mathbb{C}[[x]]$; the extension of a continuous involution to the completion $\widehat A=\varprojlim_n A/I_n$, with symmetric part the closure of the image of $A^+$ when $2$ is invertible; the symmetric and the skew parts as closed equalizers and closed topological modules over $R^\varsigma$, the symmetric part a closed topological Jordan algebra under the symmetrised product and the skew part a closed topological Lie algebra under the commutator, a dense symmetric part forcing the trivial involution; the topological direct sum $A=A^+\oplus A^-$ by the continuous averaging maps when $2$ is invertible, the projection multiplicative only for an involutive automorphism; the quotient by a closed stable ideal with the induced involution, its symmetric part the image of $A^+$ over a field of characteristic not two and strictly larger in characteristic two, as the swap on $\mathbb{F}_2[x,y]$ modulo $(x+y)$ shows with image $\mathbb{F}_2[x^2]$; the closure of a stable set and the kernel of a continuous morphism; the product algebra with the involution $\sigma\times\tau$, and the exchange involution on $A\times A^{\mathrm{op}}$ whose symmetric part is the diagonal, a subalgebra exactly when $A$ is commutative; the $\mathrm{C}^*$-case, where the involution of a $\mathrm{C}^*$-algebra is isometric and determines the norm, $\lVert a\rVert^2=\lVert a^*a\rVert=r(a^*a)$, so that a *-algebra carries at most one $\mathrm{C}^*$-norm and a unital *-homomorphism of unital $\mathrm{C}^*$-algebras is contractive; and the semilinear case over a topological field, where the fixed field $F^\varsigma$ is a closed subfield of index two and a $\varsigma$-semilinear involution is $F^\varsigma$-linear, so that over a complete valued field a semilinear involution of a finite-dimensional algebra is continuous exactly when $\varsigma$ is, the completeness being necessary because the conjugation of $\mathbb{Q}(\sqrt{2})$ with the topology from $\mathbb{R}$ is a discontinuous semilinear involution of a one-dimensional algebra. **An additional structure on the topological algebra, not a rung of any chain; it stands immediately after *Topological Algebras and Banach Algebras*, whose topological algebra, submultiplicative norm, Banach and $\mathrm{C}^*$-algebras, Gelfand duality and spectral radius it uses, and before *Locally Convex and Fréchet Algebras*; the non-commutative $\mathrm{C}^*$-theory, the states, the positivity and the Gelfand–Naimark theorem are named and deferred to *Operator Algebras* later in this category, and the completed tensor products to *Topological Tensor Products* of the previous category.** -->
 
 ### <a href="articles_maths/operator-algebras.html">Operator Algebras</a>
@@ -1749,7 +1749,7 @@
 ### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-an-involutive-banach-algebra.html">The Graded Adjoint Action on a Module over an Involutive Banach Algebra</a>
 <!-- the adjoint action of a graded module over an involutive banach algebra; its compatibility with the grading and the sign rule. -->
 
-## Topology on Linear Algebras with a degree-2 form
+## Topology on Bilinear Algebras with a degree-2 form
 
 ### Theory (General)
 
@@ -2903,7 +2903,7 @@
 ### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-hilbert-space.html">The Graded Adjoint Action on a Module over a Hilbert Space</a>
 <!-- the adjoint action of a graded module over a hilbert space; its compatibility with the grading and the sign rule. -->
 
-## Analysis on Linear Algebras
+## Analysis on Bilinear Algebras
 
 ### Theory
 
@@ -3973,7 +3973,7 @@
 ### <a href="articles_maths/the-graded-adjoint-action-on-a-module-over-a-complex-vector-space.html">The Graded Adjoint Action on a Module over a Complex Vector Space</a>
 <!-- the adjoint action of a graded module over a complex vector space; its compatibility with the grading and the sign rule. -->
 
-## Geometry on Linear Algebras
+## Geometry on Bilinear Algebras
 
 ### Theory
 
