@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Six Subspaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-six-subspaces"><strong>Introduction to the Six Subspaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of them is an involution. Each one splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and the eight spaces so obtained reduce to six distinct subspaces, the <strong>six distinguished subspaces</strong> of $\mathbb{B}$. The conjugations themselves are not the subject of this article: their definitions, the group they form and the two spaces each defines are in <em>Biquaternion Algebra</em> and <em>Biquaternion Involution Lattice</em>.</p>
+<p>This article treats the six subspaces themselves, one to a section. Each section gives the defining condition of the subspace, the coordinate condition it amounts to, the real basis that exhibits it and its real dimension, and closes with the part it plays. The table is the summary; the sections are the detail.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>defining condition</th>
+<th>real basis</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde{Q}^{\natural} = \tilde{Q}$</td>
+<td>$e_0, ie_0$</td>
+<td>$2$</td>
+<td>the centre of the algebra, a field</td>
+</tr>
+<tr>
+<td>the vector subspace $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\tilde{Q}^{\natural} = -\tilde{Q}$</td>
+<td>$e_1, e_2, e_3, ie_1, ie_2, ie_3$</td>
+<td>$6$</td>
+<td>the kernel of the scalar part, a Lie algebra</td>
+</tr>
+<tr>
+<td>the quaternion subspace $\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>$4$</td>
+<td>a division algebra</td>
+</tr>
+<tr>
+<td>the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
+<td>$ie_0, ie_1, ie_2, ie_3$</td>
+<td>$4$</td>
+<td>a module over $\mathbb{H}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>the Hermitian subspace $\mathbb{M}_+$</td>
+<td>$\tilde{Q}^{*} = \tilde{Q}$</td>
+<td>$e_0, ie_1, ie_2, ie_3$</td>
+<td>$4$</td>
+<td>a Jordan algebra</td>
+</tr>
+<tr>
+<td>the anti-Hermitian subspace $\mathbb{M}_-$</td>
+<td>$\tilde{Q}^{\flat} = \tilde{Q}$</td>
+<td>$ie_0, e_1, e_2, e_3$</td>
+<td>$4$</td>
+<td>a Lie algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p>The six are pairwise distinct. Their relations — the coordinate blocks out of which they are built, their pairwise intersections, their sums, the action of the four conjugations and the action of the central imaginary unit — are the subject of <em>Comparison of the Six Subspaces</em>, and are not treated here. The algebra that each subspace carries is not treated here either: the product and its two halves, the Jordan algebra, the Lie algebra, the units, the zero divisors, the idempotents and projections, the ideals and the Peirce decomposition, the roots of minus one, the two matrix representations, the forms and the analysis are the business of the thematic articles of the group, each stated once for the six.</p>
+<p>Nothing below is a physical statement. The elements are written $\tilde{Q}, \tilde{R}, \tilde{P}, \dots$, their complex coefficients $Q_0, Q_1, Q_2, Q_3$, and the real and imaginary parts of a coefficient $Q_\mu = q_\mu + i q'_\mu$; no other coordinates are used.</p>
+<h2 id="the-centre-subspace">The Centre Subspace</h2>
+<p><strong>Definition.</strong> The <strong>centre subspace</strong> $\mathbb{C}_{\mathbb{B}}$ is the fixed space of quaternion conjugation,</p>
+<p>$$
+\mathbb{C}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\natural} = \tilde{Q} \right\} .
+$$</p>
+<p><strong>Coordinate condition.</strong> Writing $\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ and comparing the two sides of $\tilde{Q}^{\natural} = \tilde{Q}$ coefficient by coefficient, the coefficient of $e_0$ gives no condition while the coefficient of $e_k$ gives $-Q_k = Q_k$, that is $Q_k = 0$, for $k = 1, 2, 3$. The subspace is therefore the set of elements with <strong>vanishing vector part</strong>,</p>
+<p>$$
+\tilde{Q} = Q_0e_0 , \qquad Q_0 \in \mathbb{C} .
+$$</p>
+<p><strong>Basis and dimension.</strong> The real basis is $e_0, ie_0$ and $\dim_{\mathbb{R}}\mathbb{C}_{\mathbb{B}} = 2$. In the eight real coordinates it is the coordinate plane $q_1 = q_2 = q_3 = q'_1 = q'_2 = q'_3 = 0$.</p>
+<p><strong>Role.</strong> It is the centre of the algebra, the set of elements that commute with every element, and it is a commutative subalgebra isomorphic to $\mathbb{C}$; it is one of the two of the six that are closed under the product. Its elements are the <strong>central elements</strong>, written $Ae_0$ with $A \in \mathbb{C}$.</p>
+<h2 id="the-vector-subspace">The Vector Subspace</h2>
+<p><strong>Definition.</strong> The <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B})$ is the anti-fixed space of quaternion conjugation,</p>
+<p>$$
+\mathrm{Vect}(\mathbb{B}) = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\natural} = -\tilde{Q} \right\} .
+$$</p>
+<p><strong>Coordinate condition.</strong> Comparing coefficients, the condition is $Q_0 = 0$: the scalar part vanishes, and the subspace is the kernel of the scalar-part functional $\operatorname{Sc}(\tilde{Q}) = Q_0 = \tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural})$,</p>
+<p>$$
+\tilde{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3 , \qquad Q_1, Q_2, Q_3 \in \mathbb{C} .
+$$</p>
+<p><strong>Basis and dimension.</strong> The real basis is $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and $\dim_{\mathbb{R}}\mathrm{Vect}(\mathbb{B}) = 6$. It is the largest of the six, and the only one of dimension $6$.</p>
+<p><strong>Role.</strong> It is not a subalgebra, since the product of two pure vectors has a scalar part; it is closed under the commutator, the bracket of two pure vectors being twice their cross product. It splits into the real vector triple $\operatorname{span}\{e_1,e_2,e_3\}$ and the imaginary vector triple $\operatorname{span}\{ie_1,ie_2,ie_3\}$, and its elements are the <strong>pure vectors</strong>, written $\mathbf{Q}$.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<p><strong>Definition.</strong> The <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation,</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = \tilde{Q} \right\} .
+$$</p>
+<p><strong>Coordinate condition.</strong> The condition is that each coefficient be fixed by complex conjugation, that is, that each be real, $Q_\mu = q_\mu$ for $\mu = 0, 1, 2, 3$.</p>
+<p><strong>Basis and dimension.</strong> The real basis is $e_0, e_1, e_2, e_3$ and $\dim_{\mathbb{R}}\mathbb{H}_{\mathbb{B}} = 4$. It is the copy of the real quaternion algebra inside $\mathbb{B}$.</p>
+<p><strong>Role.</strong> It is a subalgebra, the second of the two of the six that are closed under the product, and it is a division algebra: every non-zero element is a unit. It is the only one of the six that is non-commutative, and it is the image of the structure map $\mathbb{H} \to \mathbb{B}$, $h \mapsto he_0$.</p>
+<h2 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h2>
+<p><strong>Definition.</strong> The <strong>anti-quaternion subspace</strong> $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation,</p>
+<p>$$
+i\mathbb{H}_{\mathbb{B}} = \left\{ \tilde{Q} \in \mathbb{B} : \bar{\tilde{Q}} = -\tilde{Q} \right\} .
+$$</p>
+<p><strong>Coordinate condition.</strong> The condition is that each coefficient be negated by complex conjugation, that is, that each be purely imaginary, $Q_\mu = iq'_\mu$ for $\mu = 0, 1, 2, 3$.</p>
+<p><strong>Basis and dimension.</strong> The real basis is $ie_0, ie_1, ie_2, ie_3$ and $\dim_{\mathbb{R}}i\mathbb{H}_{\mathbb{B}} = 4$.</p>
+<p><strong>Role.</strong> Its elements are exactly the products $i\tilde{P}$ with $\tilde{P} \in \mathbb{H}_{\mathbb{B}}$, so the subspace is the image of $\mathbb{H}_{\mathbb{B}}$ under multiplication by the central imaginary unit. It is not a subalgebra — the product of two of its elements lands in the quaternion subspace — but it is a two-sided module over $\mathbb{H}_{\mathbb{B}}$. It splits into the imaginary scalar line $\mathbb{R}(ie_0)$ and the imaginary vector triple $\operatorname{span}\{ie_1,ie_2,ie_3\}$.</p>
+<h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
+<p><strong>Definition.</strong> The <strong>Hermitian subspace</strong> $\mathbb{M}_+$ is the fixed space of Hermitian conjugation,</p>
+<p>$$
+\mathbb{M}_+ = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = \tilde{Q} \right\} , \qquad \tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} .
+$$</p>
+<p><strong>Coordinate condition.</strong> Since ${}^{*} = \bar{\cdot}\circ{}^{\natural}$, the condition is that the scalar coefficient be real while the three vector coefficients be purely imaginary,</p>
+<p>$$
+\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 , \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R} .
+$$</p>
+<p><strong>Basis and dimension.</strong> The real basis is $e_0, ie_1, ie_2, ie_3$ and $\dim_{\mathbb{R}}\mathbb{M}_+ = 4$.</p>
+<p><strong>Role.</strong> It is not a subalgebra, but it is closed under the symmetrized product $\tilde{P} \bullet \tilde{Q} = \tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$, which makes it a Jordan algebra. It is the set of elements with real scalar part and purely imaginary vector part.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<p><strong>Definition.</strong> The <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, which is also the fixed space of the reversal $\flat = -{}^{*}$,</p>
+<p>$$
+\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{*} = -\tilde{Q} \right\} = \left\{ \tilde{Q} \in \mathbb{B} : \tilde{Q}^{\flat} = \tilde{Q} \right\} .
+$$</p>
+<p><strong>Coordinate condition.</strong> The condition is the reverse of the Hermitian one: the scalar coefficient is purely imaginary and the three vector coefficients are real,</p>
+<p>$$
+\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 , \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R} .
+$$</p>
+<p><strong>Basis and dimension.</strong> The real basis is $ie_0, e_1, e_2, e_3$ and $\dim_{\mathbb{R}}\mathbb{M}_- = 4$.</p>
+<p><strong>Role.</strong> It is not a subalgebra and it is not closed under the symmetrized product; it is closed under the commutator, and it is a real Lie algebra of dimension four whose centre is the line $\mathbb{R}(ie_0)$. It is the set of elements with purely imaginary scalar part and real vector part, and it is the anti-fixed space of ${}^{*}$ as well as the fixed space of $\flat$.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries four conjugations whose fixed and anti-fixed spaces reduce to six distinct subspaces, the six distinguished subspaces. The centre $\mathbb{C}_{\mathbb{B}}$, the fixed space of quaternion conjugation, is the set of elements with vanishing vector part, of real basis $e_0, ie_0$ and dimension $2$; it is the centre of the algebra and a field. The vector subspace $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation, is the kernel of the scalar part, of real basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and dimension $6$; it is a Lie algebra and not a subalgebra. The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the set of elements with real coefficients, of real basis $e_0, e_1, e_2, e_3$ and dimension $4$; it is a division subalgebra. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, is the set of elements with purely imaginary coefficients, of real basis $ie_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a module over the quaternion subspace and not a subalgebra. The Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian conjugation, is the set of elements with real scalar part and purely imaginary vector part, of real basis $e_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a Jordan algebra under the symmetrized product. The anti-Hermitian subspace $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation and the fixed space of the reversal, is the set of elements with purely imaginary scalar part and real vector part, of real basis $ie_0, e_1, e_2, e_3$ and dimension $4$; it is a real Lie algebra. Exactly two of the six are closed under the product, the centre and the quaternion subspace, and both are division algebras. The six are pairwise distinct; their relations are collected in <em>Comparison of the Six Subspaces</em>, and the algebra each one carries belongs to the thematic articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0, e_1, e_2, e_3$</td>
+<td>the basis, with $e_0$ the unit and $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central imaginary unit, $i^2 = -1$, commuting with every element</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>a general biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + i q'_\mu$</td>
+<td>the complex coefficient of $e_\mu$, with $q_\mu, q'_\mu \in \mathbb{R}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$</td>
+<td>quaternion, complex, Hermitian conjugation and reversal</td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}(\tilde{Q})$</td>
+<td>the scalar part $Q_0$, equal to $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural})$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the centre subspace, fixed by ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, anti-fixed by ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion and anti-quaternion subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\tilde{P} \bullet \tilde{Q}$</td>
+<td>the symmetrized product $\tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Comparison of the Six Subspaces</em> (<code>articles_maths/comparison-of-the-six-subspaces.md</code>), for the coordinate blocks, the intersections, the sums and the action of the conjugations on the six</li>
+<li><em>The Six Subspaces and the Products</em> (<code>articles_maths/the-six-subspaces-and-the-products.md</code>), for the product of two elements of the six, tabulated</li>
+<li><em>The Six Subspaces and the Jordan Algebra</em> (<code>articles_maths/the-six-subspaces-and-the-jordan-algebra.md</code>), for the symmetrized product and the Jordan subalgebras among the six</li>
+<li><em>The Six Subspaces and the Lie Algebra</em> (<code>articles_maths/the-six-subspaces-and-the-lie-algebra.md</code>), for the commutator and the Lie subalgebras among the six</li>
+<li><em>The Six Subspaces and the Units</em> (<code>articles_maths/the-six-subspaces-and-the-units.md</code>), for which elements of each of the six are units, and which of the six contain no nonzero zero divisor</li>
+<li><em>The Six Subspaces and the Zero Divisors</em> (<code>articles_maths/the-six-subspaces-and-the-zero-divisors.md</code>), for the zero divisors of each of the six and for the two families, the square-zero pure ones and the non-pure ones that are multiples of idempotents</li>
+<li><em>The Six Subspaces and the Idempotents and Projections</em> (<code>articles_maths/the-six-subspaces-and-the-idempotents-and-projections.md</code>), for the idempotents that lie in the six and for the projection they carry</li>
+<li><em>The Six Subspaces and the Ideals</em> (<code>articles_maths/the-six-subspaces-and-the-ideals.md</code>), for the minimal one-sided ideals the six determine through their zero divisors and for the Peirce decomposition</li>
+<li><em>The Six Subspaces and the Roots of Minus One</em> (<code>articles_maths/the-six-subspaces-and-the-roots-of-minus-one.md</code>), for which of the six contain a root of $-1$ and which roots</li>
+<li><em>The Six Subspaces and the Two Matrix Representations</em> (<code>articles_maths/the-six-subspaces-and-the-two-matrix-representations.md</code>), for the six in the $2 \times 2$ model of the simple module and in the $4 \times 4$ regular model, and for the two invariants, trace and determinant</li>
+<li><em>The Six Subspaces and the Forms</em> (<code>articles_maths/the-six-subspaces-and-the-forms.md</code>), for the bilinear, Hermitian and Krein pairings restricted to the six, the only orthogonal pair, and the isotropic lines and the minimal ideals</li>
+<li><em>The Six Subspaces and the Analysis</em> (<code>articles_maths/the-six-subspaces-and-the-analysis.md</code>), for the variables and the operators on each of the six, the second-order operator as the operator of the norm, and the ellipticity dichotomy</li>
+<li><em>Biquaternion Algebra</em> (<code>articles_maths/biquaternion-algebra.md</code>), for the algebra, its basis, its conjugations and the three decompositions in their original setting</li>
+<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the four conjugations, the group they generate and the two spaces each defines</li>
+<li><em>Biquaternion Multiplication</em> (<code>articles_maths/biquaternion-multiplication.md</code>), for the product and the two halves into which it splits</li>
+<li><em>Biquaternion Jordan Algebra</em> (<code>articles_maths/biquaternion-jordan-algebra.md</code>), for the symmetrized product and the trace form</li>
+<li><em>Biquaternion Lie Algebra</em> (<code>articles_maths/biquaternion-lie-algebra.md</code>), for the commutator, the derived subalgebra and the adjoint maps</li>
+<li><em>Biquaternion Idempotents and Projections</em> (<code>articles_maths/biquaternion-idempotents-and-projections.md</code>), for the idempotents, the projections and the Peirce corners</li>
+<li><em>Biquaternion Ideals and Peirce Decomposition</em> (<code>articles_maths/biquaternion-ideals-and-peirce-decomposition.md</code>), for the one-sided ideals and the minimal left ideals</li>
+<li><em>Modules over the Biquaternion Algebra</em> (<code>articles_maths/modules-over-the-biquaternion-algebra.md</code>), for the simple module $S$ and the Morita equivalence</li>
+<li><em>Biquaternion Zero Divisors</em> (<code>articles_maths/biquaternion-zero-divisors.md</code>), for the null elements and their distribution</li>
+<li><em>Biquaternion Square Roots of Minus One, Zero and Plus One</em> (<code>articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md</code>), for the root sets and the bijection with the idempotents</li>
+<li><em>Worked Examples in the Biquaternion Algebra</em> (<code>articles_maths/worked-examples-in-the-biquaternion-algebra.md</code>), for the basis products and the computed cases</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

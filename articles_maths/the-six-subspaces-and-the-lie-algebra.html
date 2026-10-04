@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Subspaces and the Lie Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-subspaces-and-the-lie-algebra"><strong>The Six Subspaces and the Lie Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra is associative, and its product splits into a symmetric and an antisymmetric part. The antisymmetric part is the <strong>commutator</strong></p>
+<p>$$
+[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P} , \qquad \tilde{P}\tilde{Q} = \tilde{P} \circ \tilde{Q} + \tfrac{1}{2}[\tilde{P},\tilde{Q}] .
+$$</p>
+<p>The commutator is bilinear, alternating and satisfies the Jacobi identity, so the algebra is a Lie algebra under it; the Jacobi identity is inherited from the associativity of the product and is not proved again here. This article records, for each ordered pair of the six distinguished subspaces, the real span of all brackets of an element of the first with an element of the second, and identifies the Lie subalgebras among the six. The symmetric half is <em>The Six Subspaces and the Jordan Algebra</em>, and the full product is <em>The Six Subspaces and the Products</em>.</p>
+<p>The six subspaces are those of <em>Introduction to the Six Subspaces</em>. The blocks $B_1 = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ are the two vector blocks of <em>Comparison of the Six Subspaces</em>.</p>
+<p>Everything follows from one computation. Because the scalar and vector parts multiply according to the scalar–vector formula and the scalar part of a product is symmetric in the two factors, the commutator kills the scalar parts:</p>
+<p>$$
+[\tilde{P},\tilde{Q}] = 2\,\mathbf{P} \times \mathbf{Q} ,
+$$</p>
+<p>where $\mathbf{P}$ and $\mathbf{Q}$ are the vector parts. <strong>The commutator of two elements is twice the complex cross product of their vector parts, and is therefore a pure vector.</strong> Three consequences follow at once. First $[\mathbb{B},\mathbb{B}] = \mathrm{Vect}(\mathbb{B})$, since the cross products of complex vectors span the whole of the vector subspace. Second the centre of the Lie algebra is $\mathbb{C}_{\mathbb{B}}$, since the vector part of an element that brackets to zero with every element must vanish. Third, the Lie algebra is the direct sum</p>
+<p>$$
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})
+$$</p>
+<p>of the two-dimensional abelian Lie algebra $\mathbb{C}_{\mathbb{B}}$ and the six-dimensional Lie algebra $\mathrm{Vect}(\mathbb{B})$, since $\mathbb{C}_{\mathbb{B}}$ is central, $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra, and the two meet in the origin.</p>
+<p>The vector part of each of the six is one of the four blocks, or zero, or all of them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>vector part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_1 \oplus B_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$B_1$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$B_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$B_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$B_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The cross product of two complex vectors in the blocks $B_1, B_2$ lands according to</p>
+<p>$$
+B_1 \times B_1 = B_1 , \qquad B_1 \times B_2 = B_2 , \qquad B_2 \times B_1 = B_2 , \qquad B_2 \times B_2 = B_1 ,
+$$</p>
+<p>the last because $i^2 = -1$. Combining the two tables gives the whole bracket, tabulated below by the real span. The entry is written $0$ when the bracket vanishes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$[\cdot,\cdot]$</th>
+<th>$\mathbb{C}_{\mathbb{B}}$</th>
+<th>$\mathrm{Vect}(\mathbb{B})$</th>
+<th>$\mathbb{H}_{\mathbb{B}}$</th>
+<th>$i\mathbb{H}_{\mathbb{B}}$</th>
+<th>$\mathbb{M}_+$</th>
+<th>$\mathbb{M}_-$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$0$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$0$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_1$</td>
+<td>$B_2$</td>
+<td>$B_2$</td>
+<td>$B_1$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$0$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_2$</td>
+<td>$B_1$</td>
+<td>$B_1$</td>
+<td>$B_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$0$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_2$</td>
+<td>$B_1$</td>
+<td>$B_1$</td>
+<td>$B_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$0$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$B_1$</td>
+<td>$B_2$</td>
+<td>$B_2$</td>
+<td>$B_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two features of the table are worth naming. It is <strong>antisymmetric</strong>: the entry in the row of $U$ and the column of $V$ equals the entry in the row of $V$ and the column of $U$, which is the alternating property of the bracket. And <strong>it is blind to the distinction between $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$ on the one hand and between $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ on the other</strong>: those two pairs share the same rows and the same columns, precisely because the bracket reads only the vector part, which is $B_1$ for both members of the first pair and $B_2$ for both members of the second. The commutator of two elements of the algebra therefore carries less information about the six than the product does.</p>
+<p><strong>Theorem.</strong> Exactly three of the six distinguished subspaces are Lie subalgebras, namely the centre, the vector subspace and the anti-Hermitian subspace:</p>
+<p>$$
+[\mathbb{C}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}] = 0 , \qquad [\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})] = \mathrm{Vect}(\mathbb{B}) , \qquad [\mathbb{M}_-,\mathbb{M}_-] = B_1 \subseteq \mathbb{M}_- .
+$$</p>
+<p><strong>Proof.</strong> The three are read from the diagonal of the table. The other three diagonal entries leave the subspace: $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}] = B_1$, $[i\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}] = B_1$ and $[\mathbb{M}_+,\mathbb{M}_+] = B_1$, and $B_1$ is contained in $\mathbb{H}_{\mathbb{B}}$ and in $\mathbb{M}_-$ but in neither $i\mathbb{H}_{\mathbb{B}}$ nor $\mathbb{M}_+$, while it is contained in the vector subspace. The centre and the vector subspace are therefore Lie subalgebras, and the anti-Hermitian subspace is one because $B_1$ lies inside it; the quaternion, anti-quaternion and Hermitian subspaces are not.</p>
+<h2 id="the-centre-subspace">The Centre Subspace</h2>
+<p>A central element brackets to zero with everything, because it commutes with everything:</p>
+<p>$$
+[\mathbb{C}_{\mathbb{B}}, \mathbb{B}] = 0 .
+$$</p>
+<p>The centre of the Lie algebra is exactly $\mathbb{C}_{\mathbb{B}}$: an element brackets to zero with every element only if its vector part vanishes, and every central element does. The associative centre and the Lie centre are therefore the same subspace, and it is one of the six. The centre is an abelian Lie subalgebra, and it is the first of the three.</p>
+<h2 id="the-vector-subspace">The Vector Subspace</h2>
+<p>The bracket of two pure vectors is twice their cross product,</p>
+<p>$$
+[\mathbf{P},\mathbf{Q}] = 2\,\mathbf{P} \times \mathbf{Q} ,
+$$</p>
+<p>so the vector subspace is closed under it and the cross products span the whole subspace:</p>
+<p>$$
+[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})] = \mathrm{Vect}(\mathbb{B}) .
+$$</p>
+<p>The vector subspace is the <strong>derived subalgebra</strong> of the algebra, $[\mathbb{B},\mathbb{B}] = \mathrm{Vect}(\mathbb{B})$, and it is <strong>perfect</strong>, being equal to its own derived subalgebra. It is the largest of the three Lie subalgebras of the theorem and the only one that is not commutative. With the centre the bracket vanishes, and with each of the other four it is again the whole vector subspace: the vector subspace brackets onto itself with everything outside the centre, so the whole bracket of the algebra is carried by it.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<p>The bracket of two real quaternions is twice the real cross product of their vector parts:</p>
+<p>$$
+[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}] = B_1 .
+$$</p>
+<p>The quaternion subspace is therefore not a Lie subalgebra; its bracket lands in the real vector triple $B_1$, which is a Lie subalgebra of the vector subspace, being closed under the cross product as the cross product of real vectors. With the anti-quaternion subspace the bracket is the imaginary vector triple,</p>
+<p>$$
+[\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}] = B_2 ,
+$$</p>
+<p>and with the two Hermitian subspaces it is $B_2$ with $\mathbb{M}_+$ and $B_1$ with $\mathbb{M}_-$. With the centre it vanishes and with the vector subspace it is the vector subspace. The row of the quaternion subspace is the same as the row of the anti-Hermitian subspace, since both have vector part $B_1$.</p>
+<h2 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h2>
+<p>The anti-quaternion subspace is not a Lie subalgebra either, and the bracket of two of its elements lands in the <em>other</em> vector block:</p>
+<p>$$
+[i\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}] = B_1 .
+$$</p>
+<p>The reason is the sign $i^2 = -1$: the vector part of an element of $i\mathbb{H}_{\mathbb{B}}$ lies in $B_2$, and the cross product of two vectors of $B_2$ lies in $B_1$. An element and its partner therefore have their bracket in the real vector triple, even though neither has any real vector part. With the quaternion subspace the bracket is $B_2$, with the anti-Hermitian subspace also $B_2$, with the Hermitian subspace $B_1$, with the centre it vanishes, and with the vector subspace it is the vector subspace. The row of the anti-quaternion subspace is the same as the row of the Hermitian subspace, since both have vector part $B_2$.</p>
+<h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
+<p>The vector part of a Hermitian element is imaginary, so the bracket of two Hermitian elements is twice the cross product of two vectors of $B_2$:</p>
+<p>$$
+[\mathbb{M}_+,\mathbb{M}_+] = B_1 .
+$$</p>
+<p>The Hermitian subspace is therefore not a Lie subalgebra: the bracket of two Hermitian elements is a <strong>real</strong> pure vector, and in particular a real element, whereas the Hermitian elements with a real vector part are the anti-Hermitian ones. The bracket pairs the two sectors the other way round, and</p>
+<p>$$
+[\mathbb{M}_+,\mathbb{M}_-] = B_2 \subseteq \mathbb{M}_+ ,
+$$</p>
+<p>so the bracket of a Hermitian with an anti-Hermitian element is an imaginary pure vector and does lie in the Hermitian subspace. With the centre the bracket vanishes and with the vector subspace it is the vector subspace.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<p>The vector part of an anti-Hermitian element is real, so the bracket of two of them stays in the real vector triple:</p>
+<p>$$
+[\mathbb{M}_-,\mathbb{M}_-] = B_1 \subseteq \mathbb{M}_- .
+$$</p>
+<p>The anti-Hermitian subspace is a Lie subalgebra, the third of the three. Its derived subalgebra is $B_1$, the real vector triple, and the central imaginary unit spans its centre, since $[\mathbb{C}_{\mathbb{B}},\mathbb{B}] = 0$ and an element of $\mathbb{M}_-$ with vanishing vector part is a multiple of $ie_0$. The Lie algebra is therefore the direct sum</p>
+<p>$$
+\mathbb{M}_- = \mathbb{R}(ie_0) \oplus B_1
+$$</p>
+<p>of a one-dimensional abelian Lie algebra and the real vector triple. With the Hermitian subspace the bracket is $B_2$, with the quaternion and anti-quaternion subspaces it is $B_1$ and $B_2$ respectively, with the centre it vanishes and with the vector subspace it is the vector subspace.</p>
+<h2 id="summary">Summary</h2>
+<p>The commutator of two biquaternions is twice the complex cross product of their vector parts, and is always a pure vector. Hence the derived subalgebra of the algebra is the vector subspace, $[\mathbb{B},\mathbb{B}] = \mathrm{Vect}(\mathbb{B})$; the centre of the Lie algebra is the centre of the algebra, the two-dimensional abelian $\mathbb{C}_{\mathbb{B}}$; and the algebra is the direct sum $\mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the abelian centre and the six-dimensional vector subspace as Lie algebras. Exactly three of the six distinguished subspaces are Lie subalgebras: the centre, the vector subspace and the anti-Hermitian subspace, the last because the bracket of two of its elements is a real pure vector, which lies inside it. The vector subspace is perfect, being equal to its own derived subalgebra. The quaternion, anti-quaternion and Hermitian subspaces are not closed: each has bracket with itself the real vector triple $B_1$. Because the bracket sees only the vector parts, and the vector parts of the six are the four blocks $0$, $B_1$, $B_2$ and $B_1 \oplus B_2$, the bracket cannot tell the quaternion subspace from the anti-Hermitian one, nor the anti-quaternion subspace from the Hermitian one: the table is two-to-one on those two pairs. The symmetric half of the product is <em>The Six Subspaces and the Jordan Algebra</em>; the Lie theory of the whole algebra — its ideals, its derivations and its relation to the classical Lie algebras — is the business of the Lie theory articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$</td>
+<td>the centre and the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion and anti-quaternion subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$B_1, B_2$</td>
+<td>the real and imaginary vector triples $\operatorname{span}\{e_1,e_2,e_3\}$, $\operatorname{span}\{ie_1,ie_2,ie_3\}$</td>
+</tr>
+<tr>
+<td>$[\tilde{P},\tilde{Q}]$</td>
+<td>the commutator $\tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$</td>
+</tr>
+<tr>
+<td>$\mathbf{P} \times \mathbf{Q}$</td>
+<td>the complex cross product of the vector parts</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Six Subspaces</em> (<code>articles_maths/introduction-to-the-six-subspaces.md</code>), for the six subspaces themselves, one to a section</li>
+<li><em>Comparison of the Six Subspaces</em> (<code>articles_maths/comparison-of-the-six-subspaces.md</code>), for the blocks and the intersections</li>
+<li><em>The Six Subspaces and the Products</em> (<code>articles_maths/the-six-subspaces-and-the-products.md</code>), for the full product and the two halves into which it splits</li>
+<li><em>The Six Subspaces and the Jordan Algebra</em> (<code>articles_maths/the-six-subspaces-and-the-jordan-algebra.md</code>), for the symmetric half of the product</li>
+<li><em>Biquaternion Lie Algebra</em> (<code>articles_maths/biquaternion-lie-algebra.md</code>), for the Jacobi identity, the derived series and the Lie structure of the whole algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

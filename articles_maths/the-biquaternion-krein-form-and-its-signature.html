@@ -86,12 +86,12 @@ $$</p>
 $$</p>
 <p>is a fundamental decomposition.</p>
 <p><strong>Proof.</strong> The diagonal value $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ is $|Q_0|^{2}$ on the centre and $-\sum_{k}|\tilde Q_k|^{2}$ on the vector subspace, hence positive on $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$ and negative on $\mathbb{V}_{\mathbb{B}}\setminus\{0\}$; the two subspaces are complex lines (respectively the hyperplane $Q_0=0$) so their real dimensions are $2$ and $6$, giving $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$; orthogonality is $\varepsilon_\mu$-weighted: a centre vector has only the $\mu=0$ coefficient and a vector vector only $\mu\neq0$, so $[\tilde{C},\tilde{V}]=0$.</p>
-<p><strong>Remark (the two Lagrange identities).</strong> On the vector subspace the Krein form is nothing but the bilinear form with the opposite sign, and on the Hermitian subspace it is the bilinear form itself:</p>
+<p><strong>Remark (the two Lagrange identities).</strong> On the anti-Hermitian subspace the Krein form is nothing but the bilinear form with the opposite sign, and on the Hermitian subspace it is the bilinear form itself:</p>
 <p>$$
-[\tilde V,\tilde V]=-N(\tilde V)\ \ \text{for}\ \tilde V\in\mathbb{V}_{\mathbb{B}},\qquad
+[\tilde Q,\tilde Q]=-N(\tilde Q)\ \ \text{for}\ \tilde Q\in\mathbb{M}_{-},\qquad
 [\tilde H,\tilde H]=N(\tilde H)\ \ \text{for}\ \tilde H\in\mathbb{M}_{+}.
 $$</p>
-<p><strong>Proof.</strong> Substituting $Q_k$ imaginary... precisely, on $\mathbb{V}_{\mathbb{B}}$ the diagonal of the Krein form is $-\sum_k|Q_k|^{2}$ while $N(\tilde V)=\sum_k Q_k^{2}$; the two agree with opposite sign on the anti-Hermitian subspace, where $Q_k$ is real so $|Q_k|^{2}=Q_k^{2}$ and $N(\tilde V)=\sum_k Q_k^{2}=-\sum_k|Q_k|^{2}$; on the Hermitian subspace $Q_k=iq'_k$ is purely imaginary, so $N(\tilde H)=\sum_k(iq'_k)^{2}=-\sum_k(q'_k)^{2}$, while the Krein diagonal is $|Q_0|^{2}-\sum_k|q'_k|^{2}=q_0^{2}-\sum_k(q'_k)^{2}$, which is the same expression. This is the restriction table of <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>, read on the Krein form.</p>
+<p><strong>Proof.</strong> Substituting the coefficients, on the vector subspace the diagonal of the Krein form is $-\sum_k|Q_k|^{2}$, which is real and strictly negative, while $N(\tilde Q)=\sum_k Q_k^{2}$ is complex; the two therefore agree only on the part of the vector subspace where the coefficients are real, which is the anti-Hermitian subspace: there $Q_k$ is real, so $|Q_k|^{2}=Q_k^{2}$ and $N(\tilde Q)=\sum_k Q_k^{2}=-\sum_k|Q_k|^{2}$ also has its vector part real, and the same holds for the scalar part, $[\tilde Q,\tilde Q]=|Q_0|^{2}=b_0^{2}$ against $-N(\tilde Q)=b_0^{2}$. On the Hermitian subspace $Q_k=iq'_k$ is purely imaginary, so $N(\tilde H)=\sum_k(iq'_k)^{2}=-\sum_k(q'_k)^{2}$, while the Krein diagonal is $|Q_0|^{2}-\sum_k|q'_k|^{2}=q_0^{2}-\sum_k(q'_k)^{2}$, which is the same expression. This is the restriction table of <em>Biquaternion Norm and Invertibility</em>, §<em>The Real Forms and Their Signatures</em>, read on the Krein form.</p>
 <p><strong>Corollary (the Lorentzian slices).</strong> On the real quaternion subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}$ and on the purely imaginary subalgebra $i\mathbb{B}_{\mathbb{R}}$, each of real dimension four, the Krein form has signature $(1,3)$: the two together are the real and the imaginary coefficient halves of the fundamental decomposition, and each is a copy of Minkowski space.</p>
 <p><strong>Proof.</strong> On $\mathbb{B}_{\mathbb{R}}$ all coefficients are real, so the Krein diagonal is $q_0^{2}-q_1^{2}-q_2^{2}-q_3^{2}$, of signature $(1,3)$; on $i\mathbb{B}_{\mathbb{R}}$ the coefficients are $ir_\mu$ with $r_\mu$ real, so the diagonal is $r_0^{2}-r_1^{2}-r_2^{2}-r_3^{2}$ again, and the two subspaces are $\varepsilon$-orthogonal complements.</p>
 <h2 id="the-krein-space-structure">The Krein Space Structure</h2>
@@ -148,7 +148,7 @@ $$</p>
 <td>Positive part (centre) and negative part (vector subspace)</td>
 </tr>
 <tr>
-<td>$[\tilde V,\tilde V]=-N(\tilde V)$, $[\tilde H,\tilde H]=N(\tilde H)$</td>
+<td>$[\tilde Q,\tilde Q]=-N(\tilde Q)$ on $\mathbb{M}_-$, $[\tilde H,\tilde H]=N(\tilde H)$</td>
 <td>The Lagrange identities</td>
 </tr>
 <tr>
