@@ -111,11 +111,11 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 ## Power Series and Analytic Functions
 
-**Definition.** A **power series** with coefficients in the algebra is a series $\sum_{n \geq 0} q_2_n \tilde q^n$ with $q_2_n \in \mathbb{H}_{\mathrm{s}}$; it is **absolutely convergent** at $\tilde q$ when $\sum |q_2_n|\,|\tilde q|^n$ converges.
+**Definition.** A **power series** with coefficients in the algebra is a series $\sum_{n \geq 0} q_n \tilde q^n$ with $q_n \in \mathbb{H}_{\mathrm{s}}$; it is **absolutely convergent** at $\tilde q$ when $\sum |q_n|\,|\tilde q|^n$ converges.
 
-**Theorem (Convergence of Power Series).** A power series converges absolutely on the open ball of radius $R = 1/\limsup |q_2_n|^{1/n}$ and defines a continuous function there; the series converges if and only if its four coordinate series converge, and the value is the corresponding coordinate limit. In particular the exponential, the logarithm and the elementary series of *Split-Quaternion Elementary Functions* are defined on their balls of convergence in the coordinate sense.
+**Theorem (Convergence of Power Series).** A power series converges absolutely on the open ball of radius $R = 1/\limsup |q_n|^{1/n}$ and defines a continuous function there; the series converges if and only if its four coordinate series converge, and the value is the corresponding coordinate limit. In particular the exponential, the logarithm and the elementary series of *Split-Quaternion Elementary Functions* are defined on their balls of convergence in the coordinate sense.
 
-**Proof.** Absolute convergence follows from the bound $|q_2_n \tilde q^n| \leq (\sqrt{2})^n|q_2_n||\tilde q|^n$, which reduces to the real majorant series; continuity follows from the continuity of the algebraic operations, and the coordinate statement from the convergence of the four coordinate series.
+**Proof.** Absolute convergence follows from the bound $|q_n \tilde q^n| \leq (\sqrt{2})^n|q_n||\tilde q|^n$, which reduces to the real majorant series; continuity follows from the continuity of the algebraic operations, and the coordinate statement from the convergence of the four coordinate series.
 
 **Corollary (No Identity Theorem).** Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.
 
@@ -213,7 +213,7 @@ The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\parti
 | $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
 | $q_1^2-q_2^2-q_3^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
-| power series $\sum q_2_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |
+| power series $\sum q_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |
 | $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |
 
 ## Further Reading

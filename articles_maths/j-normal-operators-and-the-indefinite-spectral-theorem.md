@@ -2,9 +2,9 @@
 
 ## Introduction
 
-In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the Krein form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the spectra of the algebra's operators are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
+In a positive definite space the normal operators are the ones a spectral theorem can reach, and normality forces the spectrum into a symmetry: normal operators have no reason to be self-adjoint, but they are diagonalised by unitaries, and their spectra are conjugate-symmetric. This article asks what survives of that circle of ideas for the quaternion sesquilinear form. The answer is a partial one, and its partiality is the point: the $J$-normal operators are still those commuting with their $J$-adjoint, the algebra's three operator families are all $J$-normal, the $J$-self-adjoint operators with positive definite partner $JT$ still have real spectra and diagonalisations, and the spectral symmetries still hold — but $J$-normality no longer forces a real spectrum, a $J$-self-adjoint operator need not be diagonalisable, and the $J$-unitary group is not compact. The $J$-adjoint itself is *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the spectra of the algebra's operators are computed in *The Indefinite Spectra of the Operators on the Biquaternion Algebra*; and the group of $J$-unitaries is *The Krein Isometry Group and Its $J$-Contractions*.
 
-**Conventions.** $\mathbb{B}$ is the biquaternion algebra with its Hermitian form $\langle\tilde{Q},\tilde{Q}'\rangle=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ (positive definite, Gram matrix $\mathrm{I}_4$ in the coefficient basis), its Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), and its fundamental symmetry $J={}^{\natural}$. The **Krein adjoint** of a $\mathbb{C}$-linear operator $T$ is $T^{\dagger}=JT^{*}J$, characterised by $[T\tilde{Q},\tilde{Q}']=[\tilde{Q},T^{\dagger}\tilde{Q}']$, where $T^{*}$ is the adjoint for $\langle\cdot,\cdot\rangle$. The algebra's operators are $L_{\tilde{Q}}$, $R_{\tilde{Q}}$ and $\Theta_{\tilde{Q}}$, with $(\Theta_{\tilde{Q}})(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$.
+**Conventions.** $\mathbb{B}$ is the biquaternion algebra with its complex sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ (positive definite, Gram matrix $\mathrm{I}_4$ in the coefficient basis), its quaternion sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ (Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$), and its fundamental symmetry $J={}^{\natural}$. The **Krein adjoint** of a $\mathbb{C}$-linear operator $T$ is $T^{\dagger}=JT^{*}J$, characterised by $\langle\tilde{Q}',T\tilde{Q}\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}',\tilde{Q}\rangle_{\natural*}$, where $T^{*}$ is the adjoint for $\langle\cdot,\cdot\rangle_{*}$. The algebra's operators are $L_{\tilde{Q}}$, $R_{\tilde{Q}}$ and $\Theta_{\tilde{Q}}$, with $(\Theta_{\tilde{Q}})(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$.
 
 ## J-Normality
 
@@ -30,15 +30,15 @@ equivalently if and only if $T^{*}$ commutes with $J TJ$.
 
 **Proof.** $T^{\dagger}=ET^{*}E$, so $T^{\dagger}T=ET^{*}ET$ and $TT^{\dagger}=TET^{*}E$. Multiplying the equality $ET^{*}ET=TET^{*}E$ by $E$ on the left and on the right gives $T^{*}ETE=ETET^{*}$, which is $T^{*}(ETE)=(ETE)T^{*}$.
 
-**Remark (why the definite case is not recovered).** For the Hermitian adjoint the condition is $T^{*}T=TT^{*}$; here the conjugation by $E$ intervenes on both sides, so $J$-normality is *not* the normality of $T$ for $\langle\cdot,\cdot\rangle$ and *not* the normality of $JT$. The two notions coincide only on the operators that commute with $E$ in the appropriate sense.
+**Remark (why the definite case is not recovered).** For the Hermitian adjoint the condition is $T^{*}T=TT^{*}$; here the conjugation by $E$ intervenes on both sides, so $J$-normality is *not* the normality of $T$ for $\langle\cdot,\cdot\rangle_{*}$ and *not* the normality of $JT$. The two notions coincide only on the operators that commute with $E$ in the appropriate sense.
 
 ## The Spectral Theorem for J-Self-Adjoint Operators
 
-**Theorem (the dictionary).** The map $T\mapsto JT$ is a bijection from the $J$-self-adjoint operators onto the self-adjoint operators for $\langle\cdot,\cdot\rangle$, with inverse $S\mapsto JS$; consequently every $J$-self-adjoint operator is $J$ times a Hermitian operator, and its spectrum is the spectrum of that Hermitian operator read through $J$.
+**Theorem (the dictionary).** The map $T\mapsto JT$ is a bijection from the $J$-self-adjoint operators onto the self-adjoint operators for $\langle\cdot,\cdot\rangle_{*}$, with inverse $S\mapsto JS$; consequently every $J$-self-adjoint operator is $J$ times a Hermitian operator, and its spectrum is the spectrum of that Hermitian operator read through $J$.
 
 **Proof.** $T^{\dagger}=T\iff ET^{*}E=T\iff (ET)^{*}=ET$, and $S=ET$ is Hermitian exactly when $S^{*}=S$; the map is its own inverse up to the involutions $E$.
 
-**Theorem (the definite-spectrum case).** Let $T$ be $J$-self-adjoint and suppose that $JT$ is positive definite for $\langle\cdot,\cdot\rangle$. Then $T$ has real spectrum and is diagonalisable over $\mathbb{C}$.
+**Theorem (the definite-spectrum case).** Let $T$ be $J$-self-adjoint and suppose that $JT$ is positive definite for $\langle\cdot,\cdot\rangle_{*}$. Then $T$ has real spectrum and is diagonalisable over $\mathbb{C}$.
 
 **Proof.** Write $S=JT$, positive definite and self-adjoint. Then $T=ES$ and
 
@@ -46,7 +46,7 @@ $$
 S^{1/2}\,T\,S^{-1/2}=S^{1/2}ES^{1/2},
 $$
 
-an operator that is self-adjoint for $\langle\cdot,\cdot\rangle$, since $S^{1/2}$ and $E$ are; it is therefore diagonalisable with real eigenvalues (*Self-Adjoint Elements and the Positive Cone*), and $T$, being similar to it, is diagonalisable with the same real spectrum.
+an operator that is self-adjoint for $\langle\cdot,\cdot\rangle_{*}$, since $S^{1/2}$ and $E$ are; it is therefore diagonalisable with real eigenvalues (*Self-Adjoint Elements and the Positive Cone*), and $T$, being similar to it, is diagonalisable with the same real spectrum.
 
 **Remark (the semidefinite case fails the conclusion).** The hypothesis of positive definiteness cannot be weakened to positive semidefiniteness. With $E=\mathrm{diag}(1,-1,-1,-1)$ and $S=|\tilde{Q}\rangle\langle\tilde{Q}|$ the rank-one operator of the isotropic element $\tilde{Q}=e_0+e_1$, the operator $T=ES$ is $J$-self-adjoint and lies in the $J$-positive cone, while
 
@@ -90,7 +90,7 @@ $$
 
 and in each case the two factors of $T^{\dagger}T$ commute.
 
-**Proof.** $[L_{\tilde{Q}}\tilde{P},\tilde{U}]=[\tilde{P},R_{\bar{\tilde{Q}}}\tilde{U}]$ was computed in *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{N(\tilde{Q})e_0}$, and $\Theta_{N(\tilde{Q})e_0}=|N(\tilde{Q})|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.
+**Proof.** $[L_{\tilde{Q}}\tilde{P},\tilde{U}]=\langle R_{\bar{\tilde{Q}}}\tilde{U},\tilde{P}\rangle_{\natural*}$ was computed in *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; then $L_{\tilde{Q}}^{\dagger}L_{\tilde{Q}}=R_{\bar{\tilde{Q}}}L_{\tilde{Q}}$ and $L_{\tilde{Q}}L_{\tilde{Q}}^{\dagger}=L_{\tilde{Q}}R_{\bar{\tilde{Q}}}$, equal because left and right multiplications commute. The right case is the same. For the sandwich, $\Theta_{\tilde{Q}}^{\dagger}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}}\Theta_{\tilde{Q}}=\Theta_{{}^{\natural}\tilde{Q}\,\tilde{Q}}=\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}$, and $\Theta_{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_0}=|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{2}\mathrm{id}$; the same value is obtained in the other order, because $\tilde{Q}$ and ${}^{\natural}\tilde{Q}$ have the same norm.
 
 **Remark (a product of a left and a right multiplication need not be normal).** The composite $L_{\tilde{Q}}R_{\tilde{R}}$ has Krein adjoint $L_{\bar{\tilde{R}}}R_{\bar{\tilde{Q}}}$, and the normality condition is the commutation of the two parameters; it fails for general $\tilde{Q},\tilde{R}$, so the $J$-normal operators are not the whole of the algebra's operator span.
 
@@ -116,7 +116,7 @@ each eigenvalue of multiplicity two.
 
 **A vector element.** $L_{e_1}$: $J$-normal and not $J$-self-adjoint, with the imaginary spectrum $\{i,-i\}$.
 
-**A sandwich.** $\Theta_{e_1}$: $J$-normal, $J$-self-adjoint and $J$-unitary at once, since $e_1$ lies in the vector subspace and $|N(e_1)|=1$; its spectrum is $\{+1,-1\}$, each of multiplicity two.
+**A sandwich.** $\Theta_{e_1}$: $J$-normal, $J$-self-adjoint and $J$-unitary at once, since $e_1$ lies in the vector subspace and $|\langle e_1,e_1\rangle_{\natural}|=1$; its spectrum is $\{+1,-1\}$, each of multiplicity two.
 
 **A $J$-positive nilpotent.** $T=ES$ with $S=|\tilde{Q}\rangle\langle\tilde{Q}|$ and $\tilde{Q}=e_0+e_1$: $J$-self-adjoint, in the $J$-positive cone, with $T^{2}=0$ and spectrum $\{0\}$; not diagonalisable.
 
@@ -132,7 +132,7 @@ A $\mathbb{C}$-linear operator is $J$-normal when it commutes with its Krein adj
 |---|---|
 | $T^{\dagger}=JT^{*}J$ | The Krein adjoint |
 | $T^{\dagger}T=TT^{\dagger}$ | $J$-normality |
-| $T^{*}ETE=ETET^{*}$, or $[T^{*},JTJ]=0$ | $J$-normality in the coefficient basis |
+| $T^{*}ETE=ETET^{*}$, or $\langle JTJ,T^{*}\rangle_{\natural*}=0$ | $J$-normality in the coefficient basis |
 | $T\mapsto JT$ | The bijection with the Hermitian operators |
 | $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$ | The symmetry for $J$-self-adjoint $T$ |
 | $\lambda\leftrightarrow1/\bar\lambda$ | The symmetry for $J$-unitary $T$ |

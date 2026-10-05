@@ -50,7 +50,7 @@ This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the n
 
 ### The Forms on $\mathbb{M}_+$
 
-The algebra carries three forms, one for each nontrivial conjugation; on $\mathbb{M}_+$ two of them coincide, so two remain. They are the **Hermitian form** and the **bilinear form** $B$, and the one that drops out is the **Krein form** $K$, which agrees with $B$ on this subspace because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a third bilinear form but the *quadratic* form of $B$.
+The algebra carries four forms, the scalar parts of the four products of *The Four Biquaternion Complex Products*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **complex bilinear form**, and the **bilinear form** $B$ (the quaternion bilinear form), which here equals the **quaternion sesquilinear form** $K$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $B$.
 
 **The trace pairing.** The trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
 
@@ -100,7 +100,7 @@ $$
 
 This is not a symmetric bilinear form; it is the antisymmetric part of the full product, and it plays a role in the commutator structure of the algebra.
 
-**Summary of the two forms.** On $\mathbb{M}_+$ two of the three forms of the algebra remain distinct, one Euclidean and one Lorentzian:
+**Summary of the two forms.** On $\mathbb{M}_+$ two of the four forms of the algebra remain distinct, one Euclidean and one Lorentzian:
 
 | Form | Expression | Signature |
 |---|---|---|

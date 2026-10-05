@@ -287,7 +287,7 @@ For the roots, a root of $-1$ is an element of square $-e_0$, of which the algeb
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the zero divisors of the whole algebra, the pure and the non-pure family and the bivector form of the pure ones
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three classifications in the whole algebra
 - *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the idempotents that the non-pure zero divisors are multiples of, and for the minimal ideals the annihilators determine
-- *The Six Subspaces and the Norms* (`articles_maths/the-six-subspaces-and-the-norms.md`), for the isotropic lines, which are exactly the lines spanned by the zero divisors of the vector, Hermitian and anti-Hermitian subspaces
+- *The Six Subspaces and the Four Forms* (`articles_maths/the-six-subspaces-and-the-four-forms.md`), for the isotropic lines, which are exactly the lines spanned by the zero divisors of the vector, Hermitian and anti-Hermitian subspaces
 - *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the null cone as the set on which the second-order operator of the subspace is not elliptic
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product formula
 - *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the square of a pure vector

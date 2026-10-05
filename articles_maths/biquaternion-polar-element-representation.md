@@ -15,16 +15,16 @@ This is the reference form of the series. The three named polar representations 
 The key point of the construction, and the reason it is available where the three named representations are not, is the treatment of the modulus. The modulus of the representation is the **complex** number
 
 $$
-\rho = \sqrt{N(\tilde{Q})} , \qquad N(\tilde{Q}) = \sum_{\mu=0}^{3}Q_\mu^2 ,
+\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} , \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
 $$
 
 whose modulus and phase are the first two of the four factors:
 
 $$
-\rho = r\,e^{i\alpha}, \qquad r = |\rho| = \sqrt{|N(\tilde{Q})|} \ \ge 0, \qquad \alpha = \arg\rho = \tfrac{1}{2}\arg N(\tilde{Q}) .
+\rho = r\,e^{i\alpha}, \qquad r = |\rho| = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} \ \ge 0, \qquad \alpha = \arg\rho = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural} .
 $$
 
-The positive real factor $r$ is therefore always available: the square root of a complex number can always be taken with a non-negative modulus, and the only obstruction is the vanishing of $N(\tilde{Q})$ itself, which is the vanishing of the determinant of the $2\times2$ matrix image. The phase $e^{i\alpha}$ is one of the four factors precisely because the modulus is complex; it is not an accessory, and the partial forms of the companion article differ from this one by which factor absorbs it.
+The positive real factor $r$ is therefore always available: the square root of a complex number can always be taken with a non-negative modulus, and the only obstruction is the vanishing of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ itself, which is the vanishing of the determinant of the $2\times2$ matrix image. The phase $e^{i\alpha}$ is one of the four factors precisely because the modulus is complex; it is not an accessory, and the partial forms of the companion article differ from this one by which factor absorbs it.
 
 The conventions are those of the corpus. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, an element is written $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with complex coefficients, the conjugations are the quaternion conjugation $\tilde{Q}^{\natural}$, the complex conjugation $\bar{\tilde{Q}}$, the Hermitian conjugation $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the centre is $\mathbb{C}_{\mathbb{B}}$, the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace is $\mathbb{M}_+$, and the scalar imaginary is $i$, central. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
 
@@ -102,7 +102,7 @@ The three exponentials are the non-degenerate rows of a single rule, which every
 
 *Proof.* The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$. For $\nu^2 = -e_0$ the powers repeat with period four as $e_0, \nu, -e_0, -\nu$, for $\nu^2 = 0$ every power from the second onward vanishes, and for $\nu^2 = +e_0$ they repeat as $e_0, \nu$; summing each case gives the stated closed form.
 
-All three rows are non-empty in $\mathbb{B}$. The trigonometric row contains the central phase and the rotor, and the hyperbolic row contains the boost. The parabolic row contains no factor of the polar representation but is not empty: the element $\nu = e_1 + ie_2$ satisfies $\nu^2 = 0$ exactly, so its exponential truncates to $\exp(\nu) = e_0 + (e_1+ie_2)$, of norm one and neither a rotor nor a boost. The nilpotent $\nu$ itself lies on the null cone, since $N(\nu) = 0$, and the cone contains the idempotents as well; the boundary word of the polar family is built from those, as the boundary subsection below records. The rule is Lemma 1 of Sangwine & Hitzer, stated there for a hypercomplex root of $-1$, $0$ or $+1$, and the two diagonal rows are what give the four factors.
+All three rows are non-empty in $\mathbb{B}$. The trigonometric row contains the central phase and the rotor, and the hyperbolic row contains the boost. The parabolic row contains no factor of the polar representation but is not empty: the element $\nu = e_1 + ie_2$ satisfies $\nu^2 = 0$ exactly, so its exponential truncates to $\exp(\nu) = e_0 + (e_1+ie_2)$, of norm one and neither a rotor nor a boost. The nilpotent $\nu$ itself lies on the null cone, since $\langle\nu,\nu\rangle_{\natural} = 0$, and the cone contains the idempotents as well; the boundary word of the polar family is built from those, as the boundary subsection below records. The rule is Lemma 1 of Sangwine & Hitzer, stated there for a hypercomplex root of $-1$, $0$ or $+1$, and the two diagonal rows are what give the four factors.
 
 Since the centre $\mathbb{C}_{\mathbb{B}}$ is the whole of the central elements, the phase may be transposed at no cost, $e^{i\alpha}B\hat{q} = B\hat{q}\,e^{i\alpha}$ exactly, and the same holds for the scale. The other two factors may not be transposed. With $B$ of rapidity $\psi = 0.7$ about $\hat{\mathbf{n}} = (1,0.3,0.2)/\|(1,0.3,0.2)\|$ and $\hat{q}$ of angle $\theta = 0.6$ about $\hat{\mathbf{u}} = (\sin0.5,\ 0,\ \cos0.5)$,
 
@@ -143,38 +143,38 @@ The three pairings of the companion article *Biquaternion Partial Polar Element 
 The biquaternion norm is
 
 $$
-N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
 $$
 
 the sum of the squares of the four complex coefficients. It is a complex number, it is central, and it is multiplicative,
 
 $$
-N(\tilde{P}\tilde{Q}) = N(\tilde{P})N(\tilde{Q}).
+\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
 
-In the matrix model it is the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, so $N(\tilde{Q}) = 0$ is exactly the condition that $\tilde{Q}$ be a zero divisor, and the set $\{N = 0\}$ is the algebra's null cone.
+In the matrix model it is the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\Phi(\tilde{Q})$, so $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is exactly the condition that $\tilde{Q}$ be a zero divisor, and the set $\{N = 0\}$ is the algebra's null cone.
 
 ### The Square Root and the Branch
 
 The modulus is the square root of the biquaternion norm. To make it single valued, fix the branch once and for all. Write the biquaternion norm in polar form in $\mathbb{C}$,
 
 $$
-N(\tilde{Q}) = |N(\tilde{Q})|\,e^{i\varphi}, \qquad \varphi = \arg N(\tilde{Q}) \in (-\pi,\pi] ,
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|\,e^{i\varphi}, \qquad \varphi = \arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \in (-\pi,\pi] ,
 $$
 
 and define
 
 $$
-\rho = \sqrt{|N(\tilde{Q})|}\;e^{i\varphi/2} ,
+\rho = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}\;e^{i\varphi/2} ,
 $$
 
-which is the principal square root of $N(\tilde{Q})$. Its modulus and argument are
+which is the principal square root of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. Its modulus and argument are
 
 $$
-r = |\rho| = \sqrt{|N(\tilde{Q})|} \ \ge 0, \qquad \alpha = \arg\rho = \frac{\varphi}{2} \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right] .
+r = |\rho| = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} \ \ge 0, \qquad \alpha = \arg\rho = \frac{\varphi}{2} \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right] .
 $$
 
-The pair $(r,\alpha)$ is unique: the modulus is non-negative by construction and the angle lies in a half-open interval of length $\pi$, so no two pairs give the same $\rho$. The square root $\rho$ is one of the two solutions of $\tilde T^2 = N(\tilde{Q})$, and the branch choice above selects one of them; the other, $-\rho$, has angle $\alpha\pm\pi$ and is outside the interval.
+The pair $(r,\alpha)$ is unique: the modulus is non-negative by construction and the angle lies in a half-open interval of length $\pi$, so no two pairs give the same $\rho$. The square root $\rho$ is one of the two solutions of $\tilde T^2 = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and the branch choice above selects one of them; the other, $-\rho$, has angle $\alpha\pm\pi$ and is outside the interval.
 
 ### The Positive Real Part and the Phase
 
@@ -184,9 +184,9 @@ $$
 \rho = r\,e^{i\alpha},
 $$
 
-with $r$ a positive real and $e^{i\alpha}$ central. This is the sense in which the representation always supplies a positive real factor: the positive real part of the complex square root of the biquaternion norm exists whenever the biquaternion norm is nonzero, and it is the absolute value $|N(\tilde{Q})|^{1/2}$.
+with $r$ a positive real and $e^{i\alpha}$ central. This is the sense in which the representation always supplies a positive real factor: the positive real part of the complex square root of the biquaternion norm exists whenever the biquaternion norm is nonzero, and it is the absolute value $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{1/2}$.
 
-The phase is not a normalisation constant, and its value carries information: it is one half of the argument of the determinant of $\tilde{Q}$, and it is nonzero exactly when $N(\tilde{Q})$ is not a positive real. In the physical reading of the companion articles, $e^{i\alpha}$ is the central phase that the corpus's Noether and gauge articles identify as the algebra's continuous symmetry.
+The phase is not a normalisation constant, and its value carries information: it is one half of the argument of the determinant of $\tilde{Q}$, and it is nonzero exactly when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ is not a positive real. In the physical reading of the companion articles, $e^{i\alpha}$ is the central phase that the corpus's Noether and gauge articles identify as the algebra's continuous symmetry.
 
 ## The Hermitian Positive Factor
 
@@ -201,7 +201,7 @@ $$
 Then $U$ has unit norm,
 
 $$
-N(U) = \frac{N(\tilde{Q})}{\rho^2} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = 1 ,
+\langle U,U\rangle_{\natural} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\rho^2} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} = 1 ,
 $$
 
 so $U$ lies in the algebra's analogue of the special linear group, and the whole content of the decomposition now sits in the split $U = B\hat{q}$.
@@ -217,10 +217,10 @@ $$
 It is Hermitian, since $S^\dagger = (UU^\dagger)^\dagger = UU^\dagger = S$, and it is positive definite, because in the matrix model $\Phi(S) = \Phi(U)\Phi(U)^\dagger$ is a positive definite Hermitian matrix whenever $\Phi(U)$ is invertible. Its biquaternion norm is
 
 $$
-N(S) = N(U)\,N(U^\dagger) = N(U)\,N(U)^{*} = 1 ,
+\langle S,S\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U^\dagger,U^\dagger\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U,U\rangle_{\natural}^{*} = 1 ,
 $$
 
-using multiplicativity, the reality of $N(U) = 1$, and $N(U^\dagger) = N(U)^*$.
+using multiplicativity, the reality of $\langle U,U\rangle_{\natural} = 1$, and $\langle U^\dagger,U^\dagger\rangle_{\natural} = \langle U,U\rangle_{\natural}^*$.
 
 The element $S$ is not itself the boost. The boost is its Hermitian positive square root,
 
@@ -228,7 +228,7 @@ $$
 B = \sqrt{S} , \qquad B^2 = S ,
 $$
 
-which exists and is unique: a positive definite Hermitian matrix has exactly one positive definite Hermitian square root, and the condition $N(S) = 1$ is inherited as $N(B)^2 = N(S) = 1$, so $N(B) = 1$ for the positive root. The element $B$ is not arbitrary in $\mathbb{M}_+$: the square root of a norm-one element has norm one, and that is the normalisation of the boost.
+which exists and is unique: a positive definite Hermitian matrix has exactly one positive definite Hermitian square root, and the condition $\langle S,S\rangle_{\natural} = 1$ is inherited as $\langle B,B\rangle_{\natural}^2 = \langle S,S\rangle_{\natural} = 1$, so $\langle B,B\rangle_{\natural} = 1$ for the positive root. The element $B$ is not arbitrary in $\mathbb{M}_+$: the square root of a norm-one element has norm one, and that is the normalisation of the boost.
 
 ### The Closed Form of the Boost
 
@@ -250,7 +250,7 @@ $$
 \frac{1+\sigma}{2} - \frac{|\mathbf{w}|^2}{2(1+\sigma)} = \frac{(1+\sigma)^2 - |\mathbf{w}|^2}{2(1+\sigma)} = \frac{2\sigma(1+\sigma)}{2(1+\sigma)} = \sigma ,
 $$
 
-where $|\mathbf{w}|^2 = \sigma^2-1$ was used, which is the statement $N(S) = \sigma^2-|\mathbf{w}|^2 = 1$ for the Hermitian element $S$. The result is $\sigma + i\mathbf{w} = S$.
+where $|\mathbf{w}|^2 = \sigma^2-1$ was used, which is the statement $\langle S,S\rangle_{\natural} = \sigma^2-|\mathbf{w}|^2 = 1$ for the Hermitian element $S$. The result is $\sigma + i\mathbf{w} = S$.
 
 ### The Rapidity and the Axis
 
@@ -278,7 +278,7 @@ $$
 \hat{q} = B^{-1}U = B^{\natural}\,U ,
 $$
 
-where $B^{-1} = B^{\natural}$ because $N(B) = 1$ and $BB^{\natural} = N(B)e_0 = e_0$. It is unitary in the matrix sense,
+where $B^{-1} = B^{\natural}$ because $\langle B,B\rangle_{\natural} = 1$ and $BB^{\natural} = \langle B,B\rangle_{\natural}e_0 = e_0$. It is unitary in the matrix sense,
 
 $$
 \hat{q}\,\hat{q}^{\dagger} = B^{-1}UU^{\dagger}B^{-1} = B^{-1}S\,B^{-1} = B^{-1}B^2B^{-1} = e_0 ,
@@ -291,10 +291,10 @@ using $S = B^2$ and the Hermitian character of $B$, which lets $B^{-1}$ pass thr
 More is true: $\hat{q}$ is a real quaternion, that is, an element of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, all four of whose coefficients are real. Two conditions are needed and both hold. First,
 
 $$
-N(\hat{q}) = \frac{N(U)}{N(B)} = 1 ,
+\langle\hat{q},\hat{q}\rangle_{\natural} = \frac{\langle U,U\rangle_{\natural}}{\langle B,B\rangle_{\natural}} = 1 ,
 $$
 
-by multiplicativity, so $\hat{q}$ is a unimodular unitary element, hence in $SU(2)$ in the matrix model. Second, the elements of $\mathbb{B}$ that are simultaneously unitary and of unit norm are exactly the unit real quaternions: an element of $U(2)$ is of the form $e^{i\beta}\tilde A$ with $\tilde A$ a unit real quaternion, and its biquaternion norm is $N(e^{i\beta}\tilde A) = e^{2i\beta}N(\tilde A) = e^{2i\beta}$, so the additional condition $N = 1$ forces $e^{2i\beta} = 1$, hence $\beta = 0$ modulo $\pi$, and leaves $\tilde A$ up to the sign that $N = 1$ fixes.
+by multiplicativity, so $\hat{q}$ is a unimodular unitary element, hence in $SU(2)$ in the matrix model. Second, the elements of $\mathbb{B}$ that are simultaneously unitary and of unit norm are exactly the unit real quaternions: an element of $U(2)$ is of the form $e^{i\beta}\tilde A$ with $\tilde A$ a unit real quaternion, and its biquaternion norm is $\langle e^{i\beta}\tilde A,e^{i\beta}\tilde A\rangle_{\natural} = e^{2i\beta}\langle\tilde A,\tilde A\rangle_{\natural} = e^{2i\beta}$, so the additional condition $N = 1$ forces $e^{2i\beta} = 1$, hence $\beta = 0$ modulo $\pi$, and leaves $\tilde A$ up to the sign that $N = 1$ fixes.
 
 The rotor is therefore an element of
 
@@ -308,7 +308,7 @@ the group of unit real quaternions, of dimension three. It is compact, and it is
 
 ### Statement
 
-**Theorem (polar representation).** Let $\tilde{Q}\in\mathbb{B}$ with $N(\tilde{Q})\neq0$. Then there are unique
+**Theorem (polar representation).** Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Then there are unique
 
 $$
 r \in \mathbb{R}, \quad r>0, \qquad \alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right], \qquad B = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat{\mathbf{n}} \in \mathbb{M}_+, \qquad \hat{q} \in \mathrm{Sp}(1),
@@ -320,7 +320,7 @@ $$
 \tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} .
 $$
 
-Equivalently, $\tilde{Q} = \rho B\hat{q}$ with $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ the principal square root.
+Equivalently, $\tilde{Q} = \rho B\hat{q}$ with $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ the principal square root.
 
 ### Existence
 
@@ -332,21 +332,21 @@ $$
 
 ### Uniqueness
 
-Suppose $\tilde{Q} = r e^{i\alpha}B\hat{q} = r'e^{i\alpha'}B'\hat{q}'$ with both quadruples admissible. Taking norms and using $N(B\hat{q}) = N(B)N(\hat{q}) = 1$ gives $r^2e^{2i\alpha} = (r')^2e^{2i\alpha'}$, so the two principal square roots of $N(\tilde{Q})$ agree, and since $r,r' > 0$ with $\alpha,\alpha'$ in the same half-open interval of length $\pi$, one has $r = r'$ and $\alpha = \alpha'$. Then $U = \tilde{Q}/\rho$ is the same element in both decompositions, so $UU^\dagger$ is the same, and its Hermitian positive square root is unique, so $B = B'$; then $\hat{q} = B^{-1}U = \hat{q}'$.
+Suppose $\tilde{Q} = r e^{i\alpha}B\hat{q} = r'e^{i\alpha'}B'\hat{q}'$ with both quadruples admissible. Taking norms and using $\langle B\hat{q},B\hat{q}\rangle_{\natural} = \langle B,B\rangle_{\natural}\langle\hat{q},\hat{q}\rangle_{\natural} = 1$ gives $r^2e^{2i\alpha} = (r')^2e^{2i\alpha'}$, so the two principal square roots of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ agree, and since $r,r' > 0$ with $\alpha,\alpha'$ in the same half-open interval of length $\pi$, one has $r = r'$ and $\alpha = \alpha'$. Then $U = \tilde{Q}/\rho$ is the same element in both decompositions, so $UU^\dagger$ is the same, and its Hermitian positive square root is unique, so $B = B'$; then $\hat{q} = B^{-1}U = \hat{q}'$.
 
 ### The Domain and the Light Cone
 
-The theorem is stated on the complement of the null cone, $\{N(\tilde{Q})\neq0\}$, and that is exactly its domain: for $N(\tilde{Q}) = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\Phi(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $N(\tilde{Q}) = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.
+The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\Phi(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.
 
 **The condition of existence, in one line.** The polar representation of $\tilde{Q}$ exists if and only if
 
 $$
-N(\tilde{Q})\neq0 ,
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 ,
 $$
 
-that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Biquaternion Norm and Invertibility*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{N(\tilde{Q})}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
+that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Biquaternion Norm and Invertibility*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
 
-**The cone is thin in the algebra.** The condition $N(\tilde{Q}) = 0$ is one complex equation, hence two real equations, $\mathrm{Re}\,N = 0$ and $\mathrm{Im}\,N = 0$, and their gradients are independent away from the origin, so the cone has real codimension two. Counting real dimensions,
+**The cone is thin in the algebra.** The condition $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is one complex equation, hence two real equations, $\mathrm{Re}\,N = 0$ and $\mathrm{Im}\,N = 0$, and their gradients are independent away from the origin, so the cone has real codimension two. Counting real dimensions,
 
 $$
 \dim_{\mathbb{R}}\mathbb{B} = 8, \qquad
@@ -376,14 +376,14 @@ whose last factor is that idempotent, and whose numerical factor $\sqrt2$ is not
 
 ### The Five Steps
 
-The proof above is effective, and it is worth recording as a procedure. Given $\tilde{Q}$ with $N(\tilde{Q})\neq0$:
+The proof above is effective, and it is worth recording as a procedure. Given $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$:
 
 1. Compute the biquaternion norm $N = \sum_\mu Q_\mu^2 \in \mathbb{C}$.
 2. Take its principal square root: write $N = |N|e^{i\varphi}$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}e^{i\varphi/2}$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.
 3. Put $U = \tilde{Q}/\rho$, of unit norm.
 4. Compute $S = UU^\dagger$, and write it as $\sigma e_0 + i\mathbf{w}$ with $\sigma\in\mathbb{R}$, $\mathbf{w}\in\mathbb{R}^3$; then put
    $B = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat{\mathbf{n}} = \mathbf{w}/|\mathbf{w}|$.
-5. Put $\hat{q} = B^{\natural}U$, and verify that its coefficients are real and that $N(\hat{q}) = 1$.
+5. Put $\hat{q} = B^{\natural}U$, and verify that its coefficients are real and that $\langle\hat{q},\hat{q}\rangle_{\natural} = 1$.
 
 The factors so obtained satisfy $\tilde{Q} = r e^{i\alpha}B\hat{q}$ identically. The only step that requires a convention rather than a formula is step 2, where the branch of the square root is fixed by $\alpha \in (-\pi/2,\pi/2]$; the other four steps are forced.
 
@@ -411,7 +411,7 @@ $$
 U_0 = 0.504639332+0.341657461i, \quad U_1 = 0.423148397-0.081490935i, \quad U_2 = 0.846296793-0.162981871i, \quad U_3 = 0 ,
 $$
 
-and $N(U) = 1$ as required.
+and $\langle U,U\rangle_{\natural} = 1$ as required.
 
 *Step 4.* The Hermitian element $S = UU^\dagger$ is
 
@@ -433,7 +433,7 @@ $$
 \hat{q} = B^{\natural}U = 0.470592172\,e_0 + 0.394599292\,e_1 + 0.789198585\,e_2 ,
 $$
 
-all of whose coefficients are real, with $N(\hat{q}) = 1$; its rotation angle is $2.161669$ rad about the axis $(1,2,0)/\sqrt{5}$.
+all of whose coefficients are real, with $\langle\hat{q},\hat{q}\rangle_{\natural} = 1$; its rotation angle is $2.161669$ rad about the axis $(1,2,0)/\sqrt{5}$.
 
 The reconstruction $\tilde{Q} = r e^{i\alpha}B\hat{q}$ was verified in double precision and agrees with $\tilde{Q}$ to $1.6\times10^{-16}$ in each coefficient. Note that the boost axis and the rotation axis are opposite in this example, which is a coincidence of the element and not a structural relation: no relation between the two axes is imposed by the decomposition, and a random element generally has them unrelated.
 
@@ -466,11 +466,11 @@ The example is the reason the representation is a strict refinement of the physi
 
 ### The Scale
 
-The scale is a positive real number, the only factor that is both central and non-compact on the positive side. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\Phi(\tilde{Q})| = |N(\tilde{Q})| = r^2$.
+The scale is a positive real number, the only factor that is both central and non-compact on the positive side. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\Phi(\tilde{Q})| = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = r^2$.
 
 ### The Central Phase
 
-The phase is an element of the centre lying on the unit circle, and it is the only factor that is central and compact. It is determined by the argument of the biquaternion norm, $\alpha = \tfrac{1}{2}\arg N(\tilde{Q})$, and it vanishes exactly when the biquaternion norm is a positive real. It commutes with everything, so it may be written on either side of the other factors; in the physical reading it is the algebra's continuous internal symmetry.
+The phase is an element of the centre lying on the unit circle, and it is the only factor that is central and compact. It is determined by the argument of the biquaternion norm, $\alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and it vanishes exactly when the biquaternion norm is a positive real. It commutes with everything, so it may be written on either side of the other factors; in the physical reading it is the algebra's continuous internal symmetry.
 
 ### The Boost
 
@@ -488,7 +488,7 @@ The rotor is a unit real quaternion: compact, three-dimensional, an element of t
 
 ### What the Sandwich Sees
 
-The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ reads them as follows. The scale enters through the single dilation $\lvert N(\tilde{Q})\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{A\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
+The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ reads them as follows. The scale enters through the single dilation $\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{2}=r^{4}$ of the interval; the central phase enters through nothing at all, since the relation $\mathrm{H}_{A\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$ makes two elements differing by a unit-modulus central phase have the same operator; and the remaining two factors are the boost part and the rotation part of the action, in the order of composition $B\hat{q}$. The kernel of the operator is the phase circle, so the phase is exactly the factor the action discards, while the scale survives only through its fourth power. The operator itself is in *Biquaternion Rotations and Lorentz Transformations*.
 
 **The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q}=re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda}=B\hat{q}$ of unit norm,
 
@@ -519,17 +519,17 @@ in which the operator stores the half-rapidity and produces the rapidity. The sa
 
 ### The Unit-Norm Elements
 
-If $N(\tilde{Q}) = 1$ then $\rho = 1$, $r = 1$ and $\alpha = 0$, and the representation reduces to
+If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1$ then $\rho = 1$, $r = 1$ and $\alpha = 0$, and the representation reduces to
 
 $$
-\tilde{Q} = B\,\hat{q} , \qquad N(\tilde{Q}) = 1 .
+\tilde{Q} = B\,\hat{q} , \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1 .
 $$
 
 This is the Cartan form of the physics articles, in which a Lorentz rotor is written as a boost times a spatial rotation. It is the case of the decomposition in which two of the four factors are trivial, and it is the only case the physics corpus uses.
 
 ### The Central Elements
 
-If $\tilde{Q} = Q_0e_0$ is a complex scalar then $N(\tilde{Q}) = Q_0^2$, and the construction returns $r = |Q_0|$, $B = e_0$, and for the phase the representative of $\arg Q_0$ in $(-\pi/2,\pi/2]$, with the residual sign carried by $\hat{q} = \pm e_0$. The scalar imaginary itself has the decomposition
+If $\tilde{Q} = Q_0e_0$ is a complex scalar then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2$, and the construction returns $r = |Q_0|$, $B = e_0$, and for the phase the representative of $\arg Q_0$ in $(-\pi/2,\pi/2]$, with the residual sign carried by $\hat{q} = \pm e_0$. The scalar imaginary itself has the decomposition
 
 $$
 i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0 ,
@@ -539,11 +539,11 @@ which exhibits the phase factor at its extremal value. This element is the sharp
 
 ### The Real Quaternions
 
-If all four coefficients of $\tilde{Q}$ are real then $N(\tilde{Q}) = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^\dagger = UU^{\natural} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.
+If all four coefficients of $\tilde{Q}$ are real then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, so $\alpha = 0$ and $r = |\tilde{Q}|$ is the quaternion modulus of the companion article. The element $U = \tilde{Q}/r$ is a unit real quaternion, and $S = UU^\dagger = UU^{\natural} = e_0$, so $B = e_0$ and $\hat{q} = U$. The real quaternions therefore have no boost: their polar representation is the quaternion polar representation, and the two representations agree term by term.
 
 ### The Null Elements
 
-If $N(\tilde{Q}) = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $N(\tilde{Q}) = 0$ the matrix $\Phi(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.
+If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ the matrix $\Phi(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.
 
 ## The Commutative Four-Dimensional Alternative
 
@@ -551,7 +551,7 @@ The four-factor representation above is the polar form of $\mathbb{B}$. The comm
 
 The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*: an element is $q = A_1+A_2e$ with $e^2=+1$ and $A_1,A_2\in\mathbb{C}$. Pei, Chang and Ding construct its polar form (*IEEE Trans. Signal Processing* **52** (2004) 2012–2022, §III) and prove three things about it.
 
-**Existence.** The form exists if and only if $N(q) = A_1^2-A_2^2\neq0$ — the domain condition of this article, and here it is also a factorisation statement, since $N(q) = \lambda_+\lambda_-$ in the idempotent coordinates $\lambda_\pm = A_1\pm A_2$. The excluded set is thus the union of the two ideals $\mathbb{C}e_+ \cup \mathbb{C}e_-$, with $e_\pm = \tfrac12(1\pm e)$, on which the element is a multiple of an idempotent; this is the commutative image of the null elements of the section above, and of the cone on which the four factors here fail.
+**Existence.** The form exists if and only if $\langle q,q\rangle_{\natural} = A_1^2-A_2^2\neq0$ — the domain condition of this article, and here it is also a factorisation statement, since $\langle q,q\rangle_{\natural} = \lambda_+\lambda_-$ in the idempotent coordinates $\lambda_\pm = A_1\pm A_2$. The excluded set is thus the union of the two ideals $\mathbb{C}e_+ \cup \mathbb{C}e_-$, with $e_\pm = \tfrac12(1\pm e)$, on which the element is a multiple of an idempotent; this is the commutative image of the null elements of the section above, and of the cone on which the four factors here fail.
 
 **Uniqueness.** The form carries a scale and three phases, and it is unique once the ranges of the three phases are fixed; the uniqueness is proved by showing that the equations for the phases have exactly one solution in those ranges. The uniqueness here is therefore purchased by a range convention, whereas the uniqueness above is a theorem about the factorisation itself.
 
@@ -571,7 +571,7 @@ $$
 R = r\,e^{i\alpha}, \qquad \exp(\xi\Theta) = B\,\hat{q} ,
 $$
 
-so that it groups the first two of the four factors into the modulus $R$ and the last two into the exponential. It is available whenever the vector part is non-null, which is a stronger condition than $N(\tilde{Q})\neq0$.
+so that it groups the first two of the four factors into the modulus $R$ and the last two into the exponential. It is available whenever the vector part is non-null, which is a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
 The **complex form** writes $\tilde{Q} = Q\exp(i\Psi)$ with $Q$ a real quaternion; in the present notation its two factors are
 
@@ -579,7 +579,7 @@ $$
 Q = r\,\hat{q} , \qquad \exp(i\Psi) = e^{i\alpha}\,\hat{q}^{\natural}\,B\,\hat{q} ,
 $$
 
-so that it groups the scale with the rotor into the quaternion modulus and the phase with a conjugated boost into the exponential. Its construction in the companion article proceeds from the real quaternion part of $\tilde{Q}$ and requires that part to be invertible, again a stronger condition than $N(\tilde{Q})\neq0$.
+so that it groups the scale with the rotor into the quaternion modulus and the phase with a conjugated boost into the exponential. Its construction in the companion article proceeds from the real quaternion part of $\tilde{Q}$ and requires that part to be invertible, again a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
 Both partial forms are therefore regroupings of the same four factors, taken in pairs; there are exactly three ways to pair four objects into two pairs, and the third pairing, in which the scale is grouped with the boost and the phase with the rotor, is the Cartan form $\tilde{Q} = (rB)(e^{i\alpha}\hat{q})$, the matrix polar decomposition into a positive Hermitian factor and a unitary factor. All three are treated in the companion article.
 
@@ -588,10 +588,10 @@ Both partial forms are therefore regroupings of the same four factors, taken in 
 Every biquaternion with non-vanishing norm has a unique polar representation
 
 $$
-\tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} , \qquad r = \sqrt{|N(\tilde{Q})|} > 0, \quad \alpha = \tfrac{1}{2}\arg N(\tilde{Q}), \quad B \in \mathbb{M}_+, \quad \hat{q}\in\mathrm{Sp}(1) ,
+\tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} , \qquad r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} > 0, \quad \alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}, \quad B \in \mathbb{M}_+, \quad \hat{q}\in\mathrm{Sp}(1) ,
 $$
 
-in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit real quaternion rotor. The modulus of the decomposition is the complex number $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$, and the positive real factor $r$ is its absolute value, so a positive scale is always available and the phase is one of the four factors rather than a correction. The four factors have real dimensions $1+1+3+3 = 8$, they are unique, and the failure of the decomposition is exactly the null cone $N(\tilde{Q}) = 0$. The decomposition is the reference form of the series: the Hamilton and complex forms of the companion article are the two other pairings of the same four factors, and the Cartan form of the physics articles is the special case $N = 1$ in which the scale and the phase are trivial.
+in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit real quaternion rotor. The modulus of the decomposition is the complex number $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, and the positive real factor $r$ is its absolute value, so a positive scale is always available and the phase is one of the four factors rather than a correction. The four factors have real dimensions $1+1+3+3 = 8$, they are unique, and the failure of the decomposition is exactly the null cone $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The decomposition is the reference form of the series: the Hamilton and complex forms of the companion article are the two other pairings of the same four factors, and the Cartan form of the physics articles is the special case $N = 1$ in which the scale and the phase are trivial.
 
 ## Summary of Notation
 
@@ -599,13 +599,13 @@ in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit re
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu\in\mathbb{C}$ |
 | $i$ | the central scalar imaginary |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\Phi(\tilde{Q})$ |
-| $\rho = \sqrt{N(\tilde{Q})}$ | the complex modulus, the principal square root |
-| $r = \sqrt{|N(\tilde{Q})|}$ | the scale, a positive real |
-| $\alpha = \tfrac{1}{2}\arg N(\tilde{Q})$ | the phase angle, in $(-\pi/2,\pi/2]$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\Phi(\tilde{Q})$ |
+| $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the complex modulus, the principal square root |
+| $r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}$ | the scale, a positive real |
+| $\alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ | the phase angle, in $(-\pi/2,\pi/2]$ |
 | $U = \tilde{Q}/\rho$ | the unit-norm part |
 | $S = UU^\dagger = \sigma e_0 + i\mathbf{w}$ | the Hermitian positive element |
-| $B = \sqrt{S}$ | the boost, Hermitian positive, $N(B) = 1$ |
+| $B = \sqrt{S}$ | the boost, Hermitian positive, $\langle B,B\rangle_{\natural} = 1$ |
 | $\psi$, $\hat{\mathbf{n}}$ | the rapidity and axis of the boost |
 | $\hat{q} = B^{\natural}U$ | the rotor, a unit real quaternion |
 | $\mathbb{M}_+$ | the Hermitian subspace, real scalar part and imaginary vector part |

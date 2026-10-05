@@ -17,7 +17,6 @@ __pycache__/
 
 # Internal review work - confidential, never published, never committed
 REVIEW-PLAN*
-*.thinking
 *.context
 *.ideas
 *.suggestions

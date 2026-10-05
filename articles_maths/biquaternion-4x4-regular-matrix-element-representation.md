@@ -1,93 +1,14 @@
-
 # __Biquaternion 4×4 Regular Matrix Element Representation__
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_j e_k = -e_k e_j$ for $j \neq k$, and with a central scalar imaginary $i$ satisfying $i^2 = -1$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. The algebra, its determinant $N$, its conjugations, its six distinguished subspaces and its matrix realization are those of *Biquaternions as a Vector Space over $\mathbb{C}$* and *Biquaternion Four-Vector Element Representation*.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its four-vector coordinates are those of *Biquaternions as a Vector Space over $\mathbb{C}$* and *Biquaternion Four-Vector Element Representation*.
 
-This article presents the **regular representation** of $\mathbb{B}$: the algebra acting on itself on the left, and the $4 \times 4$ matrix of that action in the coefficient space of *Biquaternion Four-Vector Element Representation*. The word *representation* is used here in both senses at once, the concrete realization and the technical representation of an algebra on a vector space, because the action is the object of study. The article is the third and last of the group, and it uses both predecessors: the coefficient space of the first article, on which the operator is written, and the simple module $V$ of the second, because the algebra is $V \oplus V$ as a left module and the regular representation is therefore reducible. It is the first reducible realization met in this subcategory.
+The **left regular representation** $\rho_L(\tilde Q)(\tilde R)=\tilde Q\tilde R$, its matrix in the basis $e_0,e_1,e_2,e_3$, its multiplicativity and injectivity, the trace $\operatorname{Tr}\rho_L(\tilde Q)=4Q_0$ and the determinant $\det\rho_L(\tilde Q)=N(\tilde Q)^2$, and the six distinguished subspaces in the regular model are *Introduction to the 4×4 Regular Matrix Representation of Biquaternions*; they are used here and not restated.
 
-The article owns the $4 \times 4$ regular matrix, the left and right multiplication operators, the relation between them, including the plausible identity that is false, the decomposition $\mathbb{B} = I_1 \oplus I_2 \cong V \oplus V$, and the centralizer statement. It deliberately does not treat the regular representation of the real quaternions $\mathbb{H}$, which belongs to *Quaternion Element Representations* and is cited once as the restriction to a real subalgebra; it does not treat the eigenvalues, the Cayley–Hamilton identity or the eigenspace dimensions of the regular matrix, which belong to *Biquaternion Spectral Theory*, later in this chapter; and it does not treat the idempotents and the Peirce decomposition, which belong to *Biquaternion Ideals and Peirce Decomposition*, except to cite the idempotent that splits the algebra into its two minimal left ideals. No physical vocabulary is used: the two-sided action of the group of elements of $N=1$ on the Hermitian subspace is a statement of algebra; it is not a spinor, a chirality or a handedness of a physical particle.
+This article is the further development of that representation. It owns the right multiplication and the relation between the two representations, the module structure and the decomposition $\mathbb{B}=I_1\oplus I_2\cong V\oplus V$, the double centralizer, the $8\times8$ real form, and a second $4\times4$ realization with the sixteen products of the biparavectors. It is the first reducible realization met in this subcategory. It does not treat the eigenvalues, the Cayley–Hamilton identity or the eigenspace dimensions of the regular matrix, which belong to *Biquaternion Spectral Theory*; and it does not treat the idempotents and the Peirce decomposition, which belong to *Biquaternion Idempotents and Projections* and *Biquaternion Ideals and Peirce Decomposition*, except to cite the idempotents that split the algebra into its two minimal left ideals. No physical vocabulary is used: the two-sided action of the group of elements of $N=1$ on the Hermitian subspace is a statement of algebra, not a spinor, a chirality or a handedness of a physical particle.
 
-One comparative item is added beyond the regular matrix itself: a second $4 \times 4$ realization of $\mathbb{B}$ taken from the literature on eigenvector bundles, recorded with the multiplicative quadratic map it carries, because it is the natural contrast with both the regular realization and the congruence-shaped operator of *Biquaternion 4×4 Regular Matrix Operator Representation*.
-
-## The Left Regular Representation
-
-**Definition.** The **left regular representation** of $\mathbb{B}$ is the map
-
-$$
-\rho_L : \mathbb{B} \longrightarrow \operatorname{End}_{\mathbb{C}}(\mathbb{B}), \qquad \rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}.
-$$
-
-For each $\tilde{Q}$, the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ is $\mathbb{C}$-linear because multiplication is bilinear, so $\rho_L(\tilde{Q})$ is a $\mathbb{C}$-linear endomorphism of the four-dimensional space $\mathbb{B}$. Writing each endomorphism as a matrix in the basis $e_0, e_1, e_2, e_3$, the same symbol $\rho_L(\tilde{Q})$ denotes the matrix acting on the $4 \times 1$ column $R$ of *Biquaternion Four-Vector Element Representation*:
-
-$$
-\widetilde{\tilde{Q}\tilde{R}} \longleftrightarrow \rho_L(\tilde{Q})\, R .
-$$
-
-**Proposition (the regular matrix is the Cayley matrix).** In the basis $e_0, e_1, e_2, e_3$,
-
-$$
-\rho_L(\tilde{Q}) = \begin{pmatrix}
-Q_0 & -Q_1 & -Q_2 & -Q_3 \\
-Q_1 & Q_0 & -Q_3 & Q_2 \\
-Q_2 & Q_3 & Q_0 & -Q_1 \\
-Q_3 & -Q_2 & Q_1 & Q_0
-\end{pmatrix}.
-$$
-
-Each entry is a single coefficient of $\tilde{Q}$ carrying a sign, and **no entry is a sum of two or more coefficients**, because in this basis each product of basis elements is one basis element times a sign.
-
-**Proof.** The columns of the matrix are the images $\rho_L(\tilde{Q})(e_m) = \tilde{Q}e_m$, expressed in the basis. For $m = 0$ the image is $\tilde{Q}$ itself, giving the first column $(Q_0, Q_1, Q_2, Q_3)$. For $m = k \geq 1$ one uses $e_0 e_k = e_k$ and $e_j e_k = \epsilon^{ijk} e_i$ for $j \neq k$ with $\{i, j, k\} = \{1, 2, 3\}$, so that
-
-$$
-\rho_L(\tilde{Q})(e_k) = Q_0 e_k + Q_k e_k^2 + \sum_{j \neq k} Q_j e_j e_k = Q_0 e_k - Q_k e_0 + \sum_{j \neq k} \epsilon^{ijk} Q_j e_i .
-$$
-
-Expanding with $e_1 e_2 = e_3$, $e_2 e_3 = e_1$, $e_3 e_1 = e_2$ gives the displayed columns, hence the matrix.
-
-**Remark (the same four for a different reason).** The matrix above is $4 \times 4$, and the coefficient space of *Biquaternion Four-Vector Element Representation* has complex dimension $4$. These are the same four for the same reason and not because of a coincidence: the algebra has complex dimension $4$, and the regular representation is the algebra acting on itself, so the space and the index set of the matrix are the same object.
-
-**Example.** For the element $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$, so that $(Q_0, Q_1, Q_2, Q_3) = (2+i, 1-i, 3, i)$, the regular matrix is
-
-$$
-\rho_L(\tilde{Q}) = \begin{pmatrix}
-2+i & -1+i & -3 & -i \\
-1-i & 2+i & -i & 3 \\
-3 & i & 2+i & -1+i \\
-i & -3 & 1-i & 2+i
-\end{pmatrix}.
-$$
-
-The column of $\tilde{R} = e_0 + e_1$, namely $R = (1, 1, 0, 0)$, is carried by this matrix to the column $(1+2i, 3, 3+i, -3+i)$, which is the four-vector of the product $\tilde{Q}\tilde{R}$ computed by the component formula of *Biquaternion Four-Vector Element Representation*.
-
-## The Left Representation Is a Homomorphism
-
-**Theorem (multiplicativity).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
-
-$$
-\rho_L(\tilde{Q})\,\rho_L(\tilde{R}) = \rho_L(\tilde{Q}\tilde{R}).
-$$
-
-Hence $\rho_L$ is an algebra homomorphism and the coefficient space is a left $\mathbb{B}$-module under it.
-
-**Proof.** Both sides are $\mathbb{C}$-linear in the second factor and are computed on the basis. For every $m$, associativity of the algebra gives
-
-$$
-\rho_L(\tilde{Q})\bigl(\rho_L(\tilde{R})(e_m)\bigr) = \tilde{Q}(\tilde{R}e_m) = (\tilde{Q}\tilde{R})e_m = \rho_L(\tilde{Q}\tilde{R})(e_m),
-$$
-
-so the two matrices agree on a basis.
-
-**Example (a concrete check).** For $\tilde{Q} = e_0 + e_1$ and $\tilde{R} = e_0 + e_2$ the product is $\tilde{Q}\tilde{R} = e_0 + e_1 + e_2 + e_3$ and the two matrices are
-
-$$
-\rho_L(\tilde{Q}) = \begin{pmatrix} 1 & -1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \\ 0 & 0 & 1 & 1 \end{pmatrix},
-\qquad
-\rho_L(\tilde{R}) = \begin{pmatrix} 1 & 0 & -1 & 0 \\ 0 & 1 & 0 & 1 \\ 1 & 0 & 1 & 0 \\ 0 & -1 & 0 & 1 \end{pmatrix}.
-$$
-
-The product of the two matrices is the matrix of $\rho_L(\tilde{Q}\tilde{R})$, whose first column is $(1, 1, 1, 1)$ and which is reproduced by the multiplication rule. The reversed order gives $\rho_L(\tilde{R})\rho_L(\tilde{Q}) = \rho_L(\tilde{R}\tilde{Q})$, and the four-vector of $\tilde{R}\tilde{Q}$ is $(1, 1, 1, -1)$, read off the first column of $\rho_L(\tilde{R}\tilde{Q})$; the two orders therefore differ, exactly as $\tilde{Q}\tilde{R} \neq \tilde{R}\tilde{Q}$.
+One comparative item is added beyond the representation itself: a second $4 \times 4$ realization of $\mathbb{B}$ taken from the literature on eigenvector bundles, recorded with the multiplicative quadratic map it carries, because it is the natural contrast with both the regular realization and the congruence-shaped operator of *Biquaternion 4×4 Regular Matrix Operator Representation*.
 
 ## The Right Regular Representation
 
@@ -110,7 +31,7 @@ Q_3 & Q_2 & -Q_1 & Q_0
 \end{pmatrix}.
 $$
 
-**Proof.** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf T}D$, and direct computation of the four products confirms the display.
+**Proof.** The columns are the images $e_m \tilde{Q}$, and one expands as in the left case of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* with the factors in the opposite order. Alternatively, since each $e_m$ is either $e_0$ or one of the $e_k$, and $e_k e_j = -e_j e_k$ for $j \neq k$, the matrix is the transpose of the left matrix conjugated by the fixed sign matrix of the next section, $\rho_R(\tilde{Q}) = D\,\rho_L(\tilde{Q})^{\mathsf T}D$, and direct computation of the four products confirms the display.
 
 **Theorem (the right representation is an anti-homomorphism).** For all $\tilde{Q}, \tilde{R} \in \mathbb{B}$,
 
@@ -138,7 +59,7 @@ $$
 \rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural}),
 $$
 
-where the transpose is taken in the basis $e_0, e_1, e_2, e_3$ fixed above.
+where the transpose is taken in the basis $e_0, e_1, e_2, e_3$ of the corpus.
 
 **Proof.** Transposing the displayed closed form of $\rho_L(\tilde{Q})$ gives
 
@@ -246,28 +167,6 @@ which the form of the theorem above gives at once. The eigenvalues themselves, t
 
 **Remark (the irreducible submodules are the minimal left ideals).** The two invariant subspaces are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_1$ and $I_2 = \mathbb{B}\tilde\Pi_2$ of the algebra. Both afford the module $V$, and the fact that $V$ is the only simple module is the classification of the simple modules. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the diagonal form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *Modules over the Biquaternion Algebra*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
 
-## The Determinant and the Trace
-
-**Corollary (determinant and trace).** For every biquaternion $\tilde{Q}$,
-
-$$
-\det \rho_L(\tilde{Q}) = N(\tilde{Q})^2, \qquad \operatorname{Tr} \rho_L(\tilde{Q}) = 4Q_0 .
-$$
-
-The determinant of the regular matrix is the **square** of $N$, and it is not $N$.
-
-**Proof.** In the adapted basis of the preceding theorem the matrix is diagonal in the two invariant subspaces, so the determinant is the product of the two diagonal groups, $N(\tilde{Q}) \cdot N(\tilde{Q}) = N(\tilde{Q})^2$, and the trace is the sum of their traces, $2Q_0 + 2Q_0 = 4Q_0$. Both quantities are unchanged by the change of basis.
-
-**Example.** For $\tilde{Q} = (2+i)e_0 + (1-i)e_1 + 3e_2 + ie_3$ one has $N(\tilde{Q}) = 11 + 2i$ and
-
-$$
-\det \rho_L(\tilde{Q}) = (11+2i)^2 = 117 + 44i, \qquad \operatorname{Tr}\rho_L(\tilde{Q}) = 4(2+i) = 8 + 4i,
-$$
-
-in agreement with the two diagonal groups of the matrix on this element, each of trace $4+2i$ and determinant $11+2i$.
-
-**Remark (the determinant is not $N$).** The determinant of the regular matrix is $N^2$, and the difference from $N$ is a genuine feature of the regular representation and not a notational slip. Each diagonal group carries $N$ as its determinant, and the regular module is the direct sum of two copies of the simple module, so its determinant is the product of two copies of $N$. The square appears because the regular representation acts on a space of dimension twice that of the simple module; it is the algebraic shadow of the factor $2$ between the two dimensions.
-
 ## The Double Centralizer
 
 **Theorem (the centralizer is the right copy).** The algebra of endomorphisms of the left regular module is the image of the right regular representation,
@@ -316,7 +215,7 @@ $$
 \Phi'(A_0, A_1, A_2, A_3) = \begin{pmatrix} A_0 & A_1 & A_2 & A_3 \\ A_1 & A_0 & -iA_3 & iA_2 \\ A_2 & iA_3 & A_0 & -iA_1 \\ A_3 & -iA_2 & iA_1 & A_0 \end{pmatrix}
 $$
 
-is a representation of $\mathbb{B}$. Its first row and column coincide, since $\Phi'$ is symmetric in the coefficients, which the Cayley matrix above is not; the price is the scalar imaginary scattered through the lower block. The change of basis is what makes the squares $+e_0$: the generators of this realization are the elements $ie_k$, not the $e_k$, and the difference is a change of orientation, the two choices being interchanged by the coefficient conjugation, not two different algebras.
+is a representation of $\mathbb{B}$. Its first row and column coincide, since $\Phi'$ is symmetric in the coefficients, which the Cayley matrix of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* is not; the price is the scalar imaginary scattered through the lower block. The change of basis is what makes the squares $+e_0$: the generators of this realization are the elements $ie_k$, not the $e_k$, and the difference is a change of orientation, the two choices being interchanged by the coefficient conjugation, not two different algebras.
 
 **The realization is equivalent to the regular one.** Both are faithful four-dimensional linear realizations of $\mathbb{B} \cong M_2(\mathbb{C})$, and by the module structure of the section above every such realization is two copies of the simple module, $V \oplus V$; so an invertible intertwining matrix exists, and one was exhibited and checked on $100$ random elements, with maximum residual $1.9 \times 10^{-15}$. Nothing in the representation theory of the two distinguishes them, and everything the corpus says about $\rho_L$ as a module carries over.
 
@@ -393,7 +292,7 @@ $$
 
 and every complex-linear transformation of the algebra arises this way. Such an element is a **biparavector** in the language of the paravector formulation. That the sixteen products already span the endomorphisms is the concrete form of the double centralizer: the left copy supplies the first index and the right copy the second, and the two fill $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ between them. Recomputing the action of the biparavector of a left–right sandwich $\tilde P \mapsto \tilde A\tilde P\tilde B$ against the sandwich itself returns $1.5 \times 10^{-14}$.
 
-**Where the uniform normalisation comes from.** The constant $4$ in the trace relation is a property of the second realization and not of the regular basis. In the basis $e_0, e_1, e_2, e_3$ of the earlier sections the matrix of the sixteen products is still diagonal, but its diagonal entries are $\pm 4$ rather than $4$, so the coefficient formula there carries the sign of $\operatorname{tr}(P_{ij}^2)$; it is the Hermitian realisation that makes the coefficients uniform. The tensor-square reading is the same object as the sixteen matrices listed by the realization above, read as outer products rather than as products of the two units.
+**Where the uniform normalisation comes from.** The constant $4$ in the trace relation is a property of the second realization and not of the regular basis. In the corpus basis $e_0, e_1, e_2, e_3$ the matrix of the sixteen products is still diagonal, but its diagonal entries are $\pm 4$ rather than $4$, so the coefficient formula there carries the sign of $\operatorname{tr}(P_{ij}^2)$; it is the Hermitian realisation that makes the coefficients uniform. The tensor-square reading is the same object as the sixteen matrices listed by the realization above, read as outer products rather than as products of the two units.
 
 ## The Three Classical Functions and Their Matrices
 
@@ -426,7 +325,7 @@ $$
 
 ## Summary
 
-The left regular representation $\rho_L(\tilde{Q})(\tilde{R}) = \tilde{Q}\tilde{R}$ is the algebra acting on itself on the left, and in the basis $e_0, e_1, e_2, e_3$ its matrix is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is a homomorphism, its transpose is the left matrix of the quaternion conjugate, $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$, its determinant is the square of the determinant $N$, $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$.
+The left regular representation $\rho_L$ of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* is the algebra acting on itself on the left, with its Cayley matrix, its multiplicativity, its trace $4Q_0$ and its determinant $N(\tilde{Q})^2$ recorded there. Its transpose is the left matrix of the quaternion conjugate, $\rho_L(\tilde{Q})^{\mathsf{T}} = \rho_L(\tilde{Q}^{\natural})$.
 
 The right regular representation $\rho_R(\tilde{Q})(\tilde{R}) = \tilde{R}\tilde{Q}$ is an anti-homomorphism and the regular representation of the opposite algebra. The naive identity $\rho_R(\tilde{Q}) = \rho_L(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\rho_L(\tilde{Q}^{\natural})^{\mathsf{T}} = \rho_L(\tilde{Q})$ — while what holds is $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D = D\rho_L(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\rho_L - \rho_R$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, which is the precise sense in which left and right differ because the algebra is non-commutative.
 
@@ -443,10 +342,10 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_0$, $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ |
-| $\rho_L(\tilde{Q})$ | Matrix of left multiplication, the Cayley matrix |
+| $\rho_L(\tilde{Q})$ | Matrix of left multiplication, the Cayley matrix of *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* |
 | $\rho_R(\tilde{Q})$ | Matrix of right multiplication |
 | $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix, $\rho_R(\tilde{Q}) = D\rho_L(\tilde{Q})^{\mathsf{T}}D$ |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Determinant; $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$ |
+| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | The norm; $\det\rho_L(\tilde{Q}) = N(\tilde{Q})^2$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subalgebra; its restriction carries the quaternion regular representation of *Quaternion Element Representations* |
@@ -467,6 +366,8 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 
 ## Further Reading
 
+- *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the left regular operator, its Cayley matrix, the multiplicativity, the trace and the determinant, and the six subspace conditions
+
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation of an algebra and the identification of its endomorphism algebra.
 - Charles W. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Interscience, 1962), for the regular module, its decomposition into minimal left ideals and the double centralizer theorem.
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules*, 2nd edition (Springer, 1992), for the regular module as a left module over itself and the centralizer of the left copy.
@@ -474,7 +375,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the regular representation of a quaternion algebra and its complexification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the Cayley matrix of quaternion multiplication and its transpose.
 - *The 4×4 Regular Matrix Representation under the Three Topologies* (`articles_maths/the-4x4-regular-matrix-representation-under-the-three-topologies.md`), for the matrix reading of the three forms and the structure attached to each.
-- *The Six Subspaces and the Two Matrix Representations* (`articles_maths/the-six-subspaces-and-the-two-matrix-representations.md`), for the regular matrix block diagonal in the basis of the two minimal left ideals, with the $2 \times 2$ matrix of the same element in each block, and for the six distinguished subspaces read in both models at once.
+- *Introduction to the 4×4 Regular Matrix Representation of Biquaternions* (`articles_maths/introduction-to-the-4x4-regular-matrix-representation-of-biquaternions.md`), for the regular matrix block diagonal in the basis of the two minimal left ideals, with the $2 \times 2$ matrix of the same element in each block, and for the six distinguished subspaces read in both models at once
 - D. H. Gottlieb, "Eigenbundles, Quaternions, and Berry's Phase," arXiv:math/0304281 [math.AT] (2003), for the second $4 \times 4$ realization and the map $m(A) = A A^{\natural}$ of the section above; the paper's $4 \times 4$ matrices are Example 5 and the map $m(A) = A A^{\natural}$ is its section 5.
 - D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation of Maxwell's equations in which the field matrix is $A_0 I + cF$ of the realization above, the dual form in which the operators stand in the matrix and the field in the column, and the identity $\rho_R = \rho_L^{\mathsf{T}}$ which holds there without a sign matrix; cited for the identification of the second realization with the matrices of the Maxwell literature and for the transposition remark of that section. Its section 5 is the source of the sixteen-product basis and the biparavectors of the section above: the coefficient formula $a_{ij} = \tfrac14\operatorname{tr}(ME_iE_j^{\mathsf{T}})$, the orthogonality of the basis for the trace, and the reading of the products as the tensor square of the algebra acting on itself on both sides. The paper's potential-level equations (13) and (14) are recorded in *Maxwell's Equations in Biquaternionic Form* with their vector parts corrected.
 

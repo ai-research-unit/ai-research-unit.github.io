@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_0$. This is the maximal compact subgroup $U(\mathbb{B})\cong U(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+The complex sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_0$. This is the maximal compact subgroup $U(\mathbb{B})\cong U(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $U(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
 This article collects the *Hermitian* half of the topology of the unit group: the unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Unit Group as a Topological Group* and *Biquaternion Norm and Invertibility*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
 
-**Conventions.** As in the sibling articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the matrix isomorphism of *Biquaternion 2×2 Matrix Element Representation*, which carries the dagger to the conjugate transpose.
+**Conventions.** As in the sibling articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the matrix isomorphism of *Biquaternion 2×2 Matrix Element Representation*, which carries the dagger to the conjugate transpose.
 
 ## The Unitary Biquaternions
 
@@ -19,16 +19,16 @@ $$
 **Theorem ($U(\mathbb{B})\cong U(2)$).** $\Phi$ restricts to an isomorphism of groups $\Phi:U(\mathbb{B})\to U(2)$. In particular $U(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form
 
 $$
-\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ N(\tilde{q})=1,
+\tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1,
 $$
 
 that is, scalar multiples of unit quaternions by phases.
 
-**Proof.** Since $\Phi$ is an algebra isomorphism and $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$ (*Biquaternion 2×2 Matrix Element Representation*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_0$ is equivalent to $\Phi(\tilde{U})^{\dagger}\Phi(\tilde{U})=I$, which defines $U(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $N(\tilde{U})=\det\Phi(\tilde{U})$ makes $|N(\tilde{U})|=1$, so if $\zeta^{2}=N(\tilde{U})$ then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $N(\tilde{A})=1$; a norm-one element is a unit quaternion (*Biquaternion Norm and Invertibility*, §*The Relation to the Hermitian Decomposition*), and $\tilde{U}=\zeta\tilde{A}$.
+**Proof.** Since $\Phi$ is an algebra isomorphism and $\Phi(\tilde{Q}^{*})=\Phi(\tilde{Q})^{\dagger}$ (*Biquaternion 2×2 Matrix Element Representation*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_0$ is equivalent to $\Phi(\tilde{U})^{\dagger}\Phi(\tilde{U})=I$, which defines $U(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\Phi(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $\langle\tilde{A},\tilde{A}\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Biquaternion Norm and Invertibility*, §*The Relation to the Hermitian Decomposition*), and $\tilde{U}=\zeta\tilde{A}$.
 
 **Corollary (the determinant and the norm coincide).** On $U(\mathbb{B})$ the biquaternion norm is the determinant through $\Phi$, and $N:U(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $N$ realises an isomorphism $U(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $N(\tilde{U}\tilde{V})=N(\tilde{U})N(\tilde{V})$ is the multiplicativity of the norm ($\det$ is multiplicative), $N(e_0)=1$, and $|N(\tilde{U})|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $\langle\tilde{U}\tilde{V},\tilde{U}\tilde{V}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{V},\tilde{V}\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_0,e_0\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 
@@ -40,7 +40,7 @@ $$
 
 with the diagonal action, and this quotient is homeomorphic to $S^{1}\times S^{3}$.
 
-**Proof.** The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_0\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(N(\tilde{U}),N(\tilde{U})^{-1/2}\tilde{U})$.
+**Proof.** The normal form writes an element as $A\tilde q$ with $A\in S^{1}$ and $\tilde{q}\in S^{3}$, and the intersection of the two subgroups is $\{A\in S^{1}: A\in\mathbb{H}\}=\{\pm e_0\}$; the product map is a homomorphism because $S^{1}$ is central. The quotient description is the first isomorphism theorem for Lie groups, and the homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is the section $\tilde{U}\mapsto(\langle\tilde{U},\tilde{U}\rangle_{\natural},\langle\tilde{U},\tilde{U}\rangle_{\natural}^{-1/2}\tilde{U})$.
 
 **Remark (not an isomorphism of groups).** The homeomorphism $U(\mathbb{B})\cong S^{1}\times S^{3}$ is not a group isomorphism: its centre is connected, that of $S^{1}\times S^{3}$ is not, and the product map above is two-to-one.
 
@@ -84,7 +84,7 @@ Hence $\mathbb{B}^{\times}\simeq U(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})
 
 **Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{N=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
 
-**Proof.** Let $\tilde{A}\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$. Then $1=N(\tilde{A})=N(\tilde{U})N(\tilde{P})$, with $|N(\tilde{U})|=1$ and $N(\tilde{P})$ a positive real, so $N(\tilde{U})=N(\tilde{P})=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
+**Proof.** Let $\tilde{A}\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{A}=\tilde{U}\tilde{P}$. Then $1=\langle\tilde{A},\tilde{A}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{P},\tilde{P}\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{P},\tilde{P}\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{P},\tilde{P}\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 
 $$
 \tilde{P}_t=\frac{(1-t)\tilde{P}+te_0}{N\bigl((1-t)\tilde{P}+te_0\bigr)^{1/2}}
@@ -137,11 +137,11 @@ is a surjective homomorphism with kernel $U(1)e_0$, so that $U(\mathbb{B})/U(1)\
 
 ## Worked Examples
 
-**A central element.** $\tilde{U}=Ae_0$ is unitary exactly when $|A|=1$, and then $N(\tilde{U})=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
+**A central element.** $\tilde{U}=Ae_0$ is unitary exactly when $|A|=1$, and then $\langle\tilde{U},\tilde{U}\rangle_{\natural}=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
 
-**A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde{U})=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
+**A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde{U},\tilde{U}\rangle_{\natural}=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
 
-**A null scalar multiple.** $\tilde{Q}=A(e_1+ie_2)$ with $A\neq0$ has $N(\tilde{Q})=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
+**A null scalar multiple.** $\tilde{Q}=A(e_1+ie_2)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
 **A negative determinant.** $U(2)$ has determinant of modulus one; the slice $SU(2)=\{N=1\}\cap U(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $N$, and the double cover of $SO(3)$.
 

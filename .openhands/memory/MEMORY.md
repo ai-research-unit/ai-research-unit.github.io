@@ -4,8 +4,8 @@ Specification: `PLAN.md` and the `<!-- ... -->` comments in `maths.md` / `physic
 spec, not decoration.
 
 ## Layout
-- `articles_maths/`, `articles_physics/` — one `.md` per article, plus a `.context` (agent notes) and often
-  `.thinking`. `build.py` renders to HTML; KaTeX 0.16.9 from a CDN in `article_template.html` (no local fonts).
+- `articles_maths/`, `articles_physics/` — one `.md` per article, plus a `.context` (agent notes).
+  `build.py` renders to HTML; KaTeX 0.16.9 from a CDN in `article_template.html` (no local fonts).
 - `_reserve/` — archive of old working notes and subagent instructions. Not published. Left untouched.
 
 ## Layer rule the user enforces
@@ -222,3 +222,12 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   `eps c-bar(v) eps^{-1} = c(*(v))`, so it is a C-intertwiner only for the `e_k` (`Cl_{0,3}`) reading. Never
   write "`S-bar ≅ S` because `B` is simple": simplicity gives uniqueness, not self-conjugacy. Details in the
   2026-09-27 daily log.
+- **Sesquialgebra operator theory (`x ⋆ y = x y^*`)**: the mixed composites are `L_a R_b = S_{ab,1}`,
+  `R_b L_a = S_{a,b^*}`, so `[L_a,R_b] = S_{ab,1} - S_{a,b^*}` — NOT `S_{a,b}` (the outer involution:
+  `L_aR_b(x)=a(xb^*)^*=ab x^*`). Also `R_a = *∘L_a`, not `L_{a^*}`; `ad_a = L_a-R_a = S_{a,1}-T_{1,a^*}`. The ternary
+  pair operator is `Θ_{x,y}=T_{x⋆y,1}` (ordinary left multiplication, linear in `z`), NOT `L_{x⋆y}`; its Lie
+  companion is `ad_{[x,y]}` with the envelope commutator. Caught by recomputation; details in the 2026-09-27 log.
+- **Sandbox python has no numpy.** Use pure Python: exact arithmetic over `F_{p^2}` (p=7, `i^2=-1`, Frobenius
+  as the involution) for algebraic identities, and the closed-form `2×2` largest singular value for operator norms.
+- **Very large heredoc commands in the terminal are silently dropped** (exit 0, nothing printed, no files created).
+  Use the file editor to create long files, or split the heredoc into smaller commands.

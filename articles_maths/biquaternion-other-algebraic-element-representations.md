@@ -95,7 +95,7 @@ The Clifford algebra representation is useful because:
 
 1. **It connects the algebra to the Clifford algebra of the underlying form.** The biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$.
 2. **It makes the geometry explicit.** The Clifford algebra is the natural algebraic structure on a vector space with a quadratic form. In the case of $\mathrm{Cl}_{1,3}$, that form has signature $(1,3)$: one generator squares to $+1$ and three to $-1$.
-3. **It generalizes.** The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ — the Hermitian form of the algebra, since the Clifford vectors correspond to the Hermitian subspace $\mathbb{M}_+$ — and the general theory places it in a broader context.
+3. **It generalizes.** The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ — the complex sesquilinear form of the algebra, since the Clifford vectors correspond to the Hermitian subspace $\mathbb{M}_+$ — and the general theory places it in a broader context.
 
 ## The Conjugation Action
 
@@ -104,7 +104,7 @@ The Clifford algebra representation is useful because:
 The third two-sided action of a unit on the algebra replaces the Hermitian conjugate of the sandwich by the inverse:
 
 $$
-\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad N(\tilde{Q}) \neq 0 .
+\operatorname{Ad}_{\tilde{Q}}(\tilde T) = \tilde{Q}\,\tilde T\,\tilde{Q}^{-1}, \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0 .
 $$
 
 The two differ in what they require of the algebra. The inverse uses the product and the biquaternion norm alone, so $\operatorname{Ad}_{\tilde{Q}}$ is built from the algebra operations; the dagger needs the coefficient conjugation as well, and this is why $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$ while the sandwich is not invariant under that rescaling. The name is the standard one: $\operatorname{Ad}_{\tilde{Q}}$ is the **adjoint action** of the group of units on the algebra.
@@ -277,7 +277,7 @@ All of them present the same algebra. The choice of realization is a choice of h
 
 Each representation involves a choice, and different choices give equivalent but not identical representations.
 
-- **Clifford algebra representation:** the choice of the gamma matrices, which is determined by the choice of the bilinear form and the basis of the underlying vector space.
+- **Clifford algebra representation:** the choice of the gamma matrices, which is determined by the choice of the quaternion bilinear form and the basis of the underlying vector space.
 - **Conjugation action:** the choice of the unit $\tilde{Q}$, which is redundant, since $\operatorname{Ad}_{\lambda\tilde{Q}} = \operatorname{Ad}_{\tilde{Q}}$ for every nonzero central $\lambda$; the action depends on $\tilde{Q}$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}_{\mathbb{B}}^{\times}$.
 
 The choices belonging to the other realizations are recorded in their own articles. Different choices give representations that are related by conjugation, and the algebraic structure of the biquaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.
@@ -308,7 +308,7 @@ The matrix, four-vector and regular realizations, the biquaternion norm read in 
 | $i$ | Central scalar imaginary |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficients of $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | Quaternion subspace and Hermitian subspace of $\mathbb{B}$ |
-| $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$; $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ |
 | $\gamma^\mu$ | Clifford generators, $(\gamma^0)^2 = +1$, $(\gamma^j)^2 = -1$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -1$, central in $\mathrm{Cl}_{1,3}^+$ |

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The spectral theory of the Hermitian adjoint on the biquaternion algebra gives the spectra of the left and right multiplications and of the sandwich, and reads self-adjointness, positivity and unitarity off the element spectrum (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Biquaternion Spectral Theory*). This article does the same for the **Krein adjoint** $T^{\dagger}=J\,T^{*}J$ of *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*. Two facts govern the answer. First, the $J$-self-adjoint operators of the three families are very few: the left and right multiplications by real scalars, and the sandwiches with a parameter in the centre or in the vector subspace. Second, on those families the spectrum comes out **real with signs**: for the sandwich with a vector parameter the spectrum is the pair $\pm|N(\tilde{Q})|$ with multiplicity two each, so the operator has an **inertia** $(2,2)$, while a central parameter gives $(4,0)$; the case $N=0$ degenerates to a single nilpotent value. The general Krein theory allows a non-real spectrum, symmetric about the real axis, and the algebra exhibits it as soon as a mixed sum of a left and a right multiplication is admitted.
+The spectral theory of the Hermitian adjoint on the biquaternion algebra gives the spectra of the left and right multiplications and of the sandwich, and reads self-adjointness, positivity and unitarity off the element spectrum (*The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, *Biquaternion Spectral Theory*). This article does the same for the **Krein adjoint** $T^{\dagger}=J\,T^{*}J$ of *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*. Two facts govern the answer. First, the $J$-self-adjoint operators of the three families are very few: the left and right multiplications by real scalars, and the sandwiches with a parameter in the centre or in the vector subspace. Second, on those families the spectrum comes out **real with signs**: for the sandwich with a vector parameter the spectrum is the pair $\pm|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|$ with multiplicity two each, so the operator has an **inertia** $(2,2)$, while a central parameter gives $(4,0)$; the case $N=0$ degenerates to a single nilpotent value. The general Krein theory allows a non-real spectrum, symmetric about the real axis, and the algebra exhibits it as soon as a mixed sum of a left and a right multiplication is admitted.
 
 The general theory is *Spectral Theory on Krein Spaces* and *Definitizable Operators and the Krein–Naĭmark Theorem*; the definite counterpart is *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*; the operator classes are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the element spectra that the operator spectra are read from are *Biquaternion Spectral Theory*; and the symmetry is *The Fundamental Symmetry of the Biquaternion Algebra*.
 
-**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $N(\tilde{Q})=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.
+**Conventions.** $T^{\dagger}=JT^{*}J$ with $J={}^{\natural}$; $\Theta_{\tilde{Q}}(\tilde{P})=\tilde{Q}\tilde{P}\tilde{Q}^{\dagger}$, $L_{\tilde{Q}}$, $R_{\tilde{Q}}$; $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix model, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\det\Phi(\tilde{Q})$; and the spectra are those of the operators as complex-linear endomorphisms of the four-dimensional complex space $\mathbb{B}$. The Kronecker forms of the definite article are used: $L_{\tilde{Q}}\leftrightarrow\Phi(\tilde{Q})\otimes I$ and $R_{\tilde{R}}\leftrightarrow I\otimes\Phi(\tilde{R})^{\mathsf T}$.
 
 ## The Spectral Rules of the Definite Case
 
@@ -44,22 +44,22 @@ so the spectrum is real and the operator is a real scalar.
 $$
 \mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\bigl\{|\zeta|^{2}\bigr\}\ \text{with multiplicity }4,\qquad\text{inertia }(4,0).
 $$
-- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $N(\tilde V)\neq0$, then
+- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$, then
 $$
-\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\bigl\{|N(\tilde V)|,\,|N(\tilde V)|,\,-|N(\tilde V)|,\,-|N(\tilde V)|\bigr\},\qquad\text{inertia }(2,2).
+\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\bigl\{|\langle\tilde V,\tilde V\rangle_{\natural}|,\,|\langle\tilde V,\tilde V\rangle_{\natural}|,\,-|\langle\tilde V,\tilde V\rangle_{\natural}|,\,-|\langle\tilde V,\tilde V\rangle_{\natural}|\bigr\},\qquad\text{inertia }(2,2).
 $$
-- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ has $N(\tilde V)=0$, then $\Theta_{\tilde{V}}$ is nilpotent of order two, $\Theta_{\tilde{V}}^{2}=0$, and
+- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ has $\langle\tilde V,\tilde V\rangle_{\natural}=0$, then $\Theta_{\tilde{V}}$ is nilpotent of order two, $\Theta_{\tilde{V}}^{2}=0$, and
 $$
 \mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\{0\}\ \text{with multiplicity }4.
 $$
 
-**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{P})=\zeta\tilde{P}\bar\zeta=|\zeta|^{2}\tilde{P}$, which is the first line. For a vector parameter, $\tilde V^{2}=-N(\tilde V)e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{N(\tilde V)}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-N(\bar{\tilde V})e_0=-\overline{N(\tilde V)}e_0$; hence
+**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{P})=\zeta\tilde{P}\bar\zeta=|\zeta|^{2}\tilde{P}$, which is the first line. For a vector parameter, $\tilde V^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{\langle\tilde V,\tilde V\rangle_{\natural}}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-\langle\bar{\tilde V},\bar{\tilde V}\rangle_{\natural}e_0=-\overline{\langle\tilde V,\tilde V\rangle_{\natural}}e_0$; hence
 $$
-\Theta_{\tilde V}^{2}(\tilde{P})=\tilde V^{2}\tilde P(\tilde V^{\dagger})^{2}=|N(\tilde V)|^{2}\tilde P,
+\Theta_{\tilde V}^{2}(\tilde{P})=\tilde V^{2}\tilde P(\tilde V^{\dagger})^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\tilde P,
 $$
-so $\Theta_{\tilde V}^{2}=|N(\tilde V)|^{2}\mathrm{id}$. If $N(\tilde V)\neq0$ the matrix $\Phi(\tilde V)$ is traceless with $\Phi(\tilde V)^{2}=-N(\tilde V)I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{N(\tilde V)}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $N(\tilde V)=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
+so $\Theta_{\tilde V}^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\mathrm{id}$. If $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$ the matrix $\Phi(\tilde V)$ is traceless with $\Phi(\tilde V)^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{\langle\tilde V,\tilde V\rangle_{\natural}}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $\langle\tilde V,\tilde V\rangle_{\natural}=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
 
-**Corollary (the sandwich is definitizable except at the null elements).** A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde V$ with $N(\tilde V)=0$; in that case its spectrum is the real pair $\pm|N(\tilde Q)|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of *Definitizable Operators and the Krein–Naĭmark Theorem*.
+**Corollary (the sandwich is definitizable except at the null elements).** A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde V$ with $\langle\tilde V,\tilde V\rangle_{\natural}=0$; in that case its spectrum is the real pair $\pm|\langle\tilde Q,\tilde Q\rangle_{\natural}|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of *Definitizable Operators and the Krein–Naĭmark Theorem*.
 
 **Proof.** The theorem gives the two diagonalisable regimes; the nilpotent case has no basis of eigenvectors.
 
@@ -99,7 +99,7 @@ $$
 
 **A central scalar.** $\tilde{Q}=t e_0$, $t\in\mathbb{R}$: $L_{\tilde{Q}}$ is $J$-self-adjoint with spectrum $\{t\}$ of multiplicity four.
 
-**A real quaternion.** $\tilde{Q}=\tfrac12+\tfrac{\sqrt3}{2}e_1$: $N(\tilde{Q})=1$ and the eigenvalues of $\Phi(\tilde{Q})$ are $e^{\pm i\pi/3}$; $L_{\tilde{Q}}$ is a unit-norm element, but it is **not** $J$-self-adjoint, and its spectrum $\{e^{\pm i\pi/3}\}$ is not the $J$-self-adjoint spectrum. It is $J$-unitary as a sandwich, by $|N|=1$.
+**A real quaternion.** $\tilde{Q}=\tfrac12+\tfrac{\sqrt3}{2}e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1$ and the eigenvalues of $\Phi(\tilde{Q})$ are $e^{\pm i\pi/3}$; $L_{\tilde{Q}}$ is a unit-norm element, but it is **not** $J$-self-adjoint, and its spectrum $\{e^{\pm i\pi/3}\}$ is not the $J$-self-adjoint spectrum. It is $J$-unitary as a sandwich, by $|N|=1$.
 
 **A vector sandwich of nonzero norm.** $\tilde{Q}=e_1$: $\mathrm{spec}(\Theta_{e_1})=\{1,1,-1,-1\}$, inertia $(2,2)$; the operator is $J$-self-adjoint and $J$-unitary.
 
@@ -111,7 +111,7 @@ $$
 
 ## Summary
 
-For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of the three families are few and their spectra are real with signs. A left or right multiplication is $J$-self-adjoint exactly for a real scalar parameter, and then the spectrum is that scalar with multiplicity four. A sandwich is $J$-self-adjoint exactly for a parameter in the centre or in the vector subspace, and there are two regimes: a central parameter gives $|\zeta|^{2}$ with multiplicity four and inertia $(4,0)$, while a vector parameter of nonzero norm gives the real pair $\pm|N(\tilde{Q})|$ with multiplicity two each and inertia $(2,2)$; a null vector parameter gives the nilpotent operator $\Theta_{\tilde{Q}}^{2}=0$ with the single spectrum $\{0\}$. Every $J$-self-adjoint operator has a spectrum symmetric under conjugation with matching multiplicities, and this is the only general constraint: away from the three families the algebra carries $J$-self-adjoint operators with non-real spectrum, the simplest being $L_{e_1}+R_{e_1}$ with $\{2i,-2i,0\}$, which is not definitizable.
+For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of the three families are few and their spectra are real with signs. A left or right multiplication is $J$-self-adjoint exactly for a real scalar parameter, and then the spectrum is that scalar with multiplicity four. A sandwich is $J$-self-adjoint exactly for a parameter in the centre or in the vector subspace, and there are two regimes: a central parameter gives $|\zeta|^{2}$ with multiplicity four and inertia $(4,0)$, while a vector parameter of nonzero norm gives the real pair $\pm|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|$ with multiplicity two each and inertia $(2,2)$; a null vector parameter gives the nilpotent operator $\Theta_{\tilde{Q}}^{2}=0$ with the single spectrum $\{0\}$. Every $J$-self-adjoint operator has a spectrum symmetric under conjugation with matching multiplicities, and this is the only general constraint: away from the three families the algebra carries $J$-self-adjoint operators with non-real spectrum, the simplest being $L_{e_1}+R_{e_1}$ with $\{2i,-2i,0\}$, which is not definitizable.
 
 ## Summary of Notation
 
@@ -121,7 +121,7 @@ For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of th
 | $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\Phi(\tilde{Q}))$ (twice) | Rule for the left multiplication |
 | $L_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{R}e_0$, spectrum $\{t\}$ (mult. 4) | The left-multiplication case |
 | $\mathrm{spec}(\Theta_{\zeta e_0})=\{\lvert\zeta\rvert^{2}\}$ (mult. 4), inertia $(4,0)$ | The central regime |
-| $\mathrm{spec}(\Theta_{\tilde V})=\{\pm\lvert N(\tilde V)\rvert\}$ (mult. 2), inertia $(2,2)$ | The vector regime |
+| $\mathrm{spec}(\Theta_{\tilde V})=\{\pm\lvert \langle\tilde V,\tilde V\rangle_{\natural}\rvert\}$ (mult. 2), inertia $(2,2)$ | The vector regime |
 | $\Theta_{\tilde V}^{2}=0$, $\mathrm{spec}=\{0\}$ | The null-vector regime |
 | $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$ | The general symmetry |
 | $\mathrm{spec}(L_{e_1}+R_{e_1})=\{2i,-2i,0\}$ | A non-real, non-definitizable spectrum |

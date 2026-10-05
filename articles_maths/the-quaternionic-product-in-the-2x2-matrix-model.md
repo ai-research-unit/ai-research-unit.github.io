@@ -1,0 +1,170 @@
+
+# __The Quaternionic Product in the $2\times2$ Matrix Model__
+
+## Introduction
+
+The product of this group is the **complex quaternionic bilinear product**
+
+$$
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
+$$
+
+the second of the four products of the biquaternion algebra $\mathbb{B}$ (*The Four Biquaternion Complex Products* §*The Complex Quaternionic Bilinear Product*), whose algebra is *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*. The six articles before this one read the product, its square, its idempotents, its zero divisors, its associator, its symmetrisation and its left multiplications. This article re-reads them all in the presentation of the algebra as a matrix algebra,
+
+$$
+\mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
+$$
+
+the only model in the batch that needs a presentation, which is why it comes last. The article belongs to the matrix-representation group of the Topology, beside *The Forms in the Matrix Representation of the Biquaternion Algebra* and *The Unit Group and the Frobenius Norm in the Matrix Representation*, where the pairings of the algebra and their matrix readings are collected.
+
+The article establishes four things. First, the model and the two invariants it carries: the trace of the image is twice the scalar coordinate, and the **determinant of the image is the norm**, so the whole element theory of the batch is read off two numbers. Second, the image of the natural conjugation is
+
+$$
+\Phi(\tilde P^{\natural}) = \operatorname{adj}\Phi(\tilde P) = \varepsilon\,\Phi(\tilde P)^{T}\,\varepsilon^{-1} , \qquad \varepsilon = \Phi(-e_2) ,
+$$
+
+so ${}^{\natural}$ is a **transpose** and not a Hermitian transpose, and the product is the ordinary matrix product with that transpose inserted in the first slot. Third, the batch re-read: the square is the scalar matrix $\det\Phi(\tilde Q)I$, the idempotents are $0$ and $I$ alone, the zero divisors are the singular matrices, the symmetrisation coefficient is half a trace, and the left multiplications are the matrix multiplications, forming the opposite monoid. Fourth, the associator becomes the **failure of the transpose-conjugation to be multiplicative**, $A\star' B = \operatorname{adj}(A)B$, whose defect is that the transpose reverses the order of a product; this is the matrix form of the closed form of the associator of the third article.
+
+## The Model
+
+**Theorem (the model).** The assignment
+
+$$
+\Phi(e_0) = I , \qquad
+\Phi(e_1) = \begin{pmatrix}0&-i\\ -i&0\end{pmatrix} , \qquad
+\Phi(e_2) = \begin{pmatrix}0&-1\\ 1&0\end{pmatrix} , \qquad
+\Phi(e_3) = \begin{pmatrix}-i&0\\ 0&i\end{pmatrix} ,
+$$
+
+extended $\mathbb{C}$-linearly, is an isomorphism of $\mathbb{C}$-algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$; write $J_k = \Phi(e_k)$ for the three images of the imaginary units.
+
+**Proof.** The realization, the multiplicativity and the independence of the four images are *Introduction to the 2×2 Matrix Representation of Biquaternions* §*The Representation Is an Algebra Isomorphism*, proved there on the same explicit images. The images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices, which is all the Pauli matrices are in this article: a shorthand for the images and not a generating set, no statement below being a statement about the algebra they generate. Each image squares to $-I$ and the cyclic products reproduce the quaternion table, for instance
+
+$$
+\Phi(e_1)\Phi(e_2) = \begin{pmatrix}0&-i\\ -i&0\end{pmatrix}\begin{pmatrix}0&-1\\ 1&0\end{pmatrix} = \begin{pmatrix}-i&0\\ 0&i\end{pmatrix} = \Phi(e_3) ,
+$$
+
+so the $\mathbb{C}$-linear extension is an injective homomorphism of $4$-dimensional algebras, hence an isomorphism. $\square$
+
+**Remark (the sign of the convention).** The sign of the images is forced. With the opposite choice, $\Phi(e_1) = \begin{pmatrix}0&i\\ i&0\end{pmatrix}$ and its two companions, the assignment is not multiplicative: $\Phi(e_1)\Phi(e_2) = -\Phi(e_3)$, whereas $e_1e_2 = e_3$ requires the image $+\Phi(e_3)$. The realization used here is the one in which the plain product of the algebra is the matrix product, and it is the convention of the corpus, fixed by *Introduction to the 2×2 Matrix Representation of Biquaternions* §*The Representation* together with *The Clifford Structure of the Biquaternion Algebra*. The conjugation identity of the next section, by contrast, holds for both signs.
+
+**Theorem (the two invariants).** For every $\tilde P \in \mathbb{B}$,
+
+$$
+\operatorname{tr}\Phi(\tilde P) = 2P_0 , \qquad \det\Phi(\tilde P) = \langle\tilde P,\tilde P\rangle_{\natural} = P_0^2+P_1^2+P_2^2+P_3^2 .
+$$
+
+**Proof.** The trace is $2P_0$ because each of the three images of $e_1,e_2,e_3$ is traceless, and the determinant is that read off the matrix of *Introduction to the 2×2 Matrix Representation of Biquaternions* §*The Representation Is an Algebra Isomorphism*: in the coordinates in which the vector part is diagonal, $\Phi(\tilde P)$ has eigenvalues $P_0\pm i\sqrt{P_1^2+P_2^2+P_3^2}$, so the determinant is the sum of the four squares of the coordinates. That sum is the norm $\langle\tilde P,\tilde P\rangle_{\natural}$ of the algebra, the invariant that governs the square of the second article (*Idempotents of the Quaternionic Product* §*The Square and the Idempotent Equation*), and it is also the diagonal of the quaternion bilinear form $\langle\tilde P,\tilde P\rangle_{\natural} = \mathrm{Sc}(\tilde P\tilde P^{\natural})$ of *The Forms in the Matrix Representation of the Biquaternion Algebra*. $\square$
+
+**Corollary (the element theory in two numbers).** An element is a unit exactly when its image is invertible, that is exactly when $\det\Phi(\tilde P) = \langle\tilde P,\tilde P\rangle_{\natural}\neq0$; the zero divisors of the algebra are the elements whose image is singular; and the norm of the second article is the determinant of the model.
+
+## The Image of the Natural Conjugation
+
+**Theorem (the conjugation is the adjugate).** For every $\tilde P\in\mathbb{B}$,
+
+$$
+\Phi(\tilde P^{\natural}) = \operatorname{adj}\Phi(\tilde P) = \varepsilon\,\Phi(\tilde P)^{T}\,\varepsilon^{-1} , \qquad \varepsilon = \Phi(-e_2) = \begin{pmatrix}0&-1\\ 1&0\end{pmatrix} .
+$$
+
+**Proof.** The map is $\mathbb{C}$-linear in $\tilde P$, so it suffices to check the four basis elements. With $J_k = \Phi(e_k)$ one has $\operatorname{adj}I = I$ and $\operatorname{adj}J_k = -J_k$ for $k = 1,2,3$, by direct computation on the explicit images; hence $\operatorname{adj}\Phi(e_0) = I = \Phi(e_0^{\natural})$ and $\operatorname{adj}\Phi(e_k) = -J_k = \Phi(-e_k) = \Phi(e_k^{\natural})$, because the natural conjugation negates the vector part. The transpose form is the identity $\operatorname{adj}X = \varepsilon X^{T}\varepsilon^{-1}$ of *Biquaternion 2×2 Matrix Element Representation* §*The Conjugations in Matrix Form*. $\square$
+
+**Remark (a transpose and not a Hermitian transpose).** The map $\operatorname{adj}A = \varepsilon A^{T}\varepsilon^{-1}$ uses the plain transpose conjugated by the fixed matrix $\varepsilon = \Phi(-e_2)$, not the Hermitian transpose $\bar A^{T}$; it is a $\mathbb{C}$-linear anti-automorphism of $M_2(\mathbb{C})$ of order two, not an automorphism. The difference is what makes $\mathbb{B}$ a split algebra in this model: the Hermitian transpose would give a positive-definite form and a division algebra, and the plain transpose gives the indefinite form $\langle\tilde P,\tilde P\rangle_{\natural} = \sum_\mu P_\mu^2$, which vanishes on the nonzero zero-divisor set of the second article. The two conjugations of the algebra are distinguished the same way in every model: ${}^{\natural}$ is a transpose, and the Hermitian conjugation is the conjugate transpose, which in this realization is the Hermitian adjoint $\bar A^{T}$; it is the first that the product of this group reads.
+
+**Theorem (the anti-automorphism property).** For all $A,B\in M_2(\mathbb{C})$,
+
+$$
+\operatorname{adj}(AB) = \operatorname{adj}(B)\operatorname{adj}(A) , \qquad \operatorname{adj}(AB) \neq \operatorname{adj}(A)\operatorname{adj}(B) \ \text{ in general} .
+$$
+
+**Proof.** $\operatorname{adj}(AB) = \varepsilon(AB)^{T}\varepsilon^{-1} = \varepsilon B^{T}A^{T}\varepsilon^{-1} = \bigl(\varepsilon B^{T}\varepsilon^{-1}\bigr)\bigl(\varepsilon A^{T}\varepsilon^{-1}\bigr) = \operatorname{adj}(B)\operatorname{adj}(A)$, using $(AB)^{T} = B^{T}A^{T}$ and $\varepsilon^{-1}\varepsilon = I$; the inequality follows for any pair whose images do not commute, for instance $\operatorname{adj}(J_1)\operatorname{adj}(J_2) = J_1J_2 = J_3$ against $\operatorname{adj}(J_1J_2) = \operatorname{adj}(J_3) = -J_3$. $\square$
+
+**Remark.** The proof is the whole mechanism of the article. The transpose of a product is the product of the transposes in the **reversed** order, and the model of the product inserts the transpose-conjugation in the first slot; associativity would require the insertion to move across the other factors, and it does not, because moving a transpose across a product reverses the order. The next section makes this precise.
+
+**Theorem (the product in the model).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
+
+$$
+\Phi(\tilde P\star\tilde Q) = \Phi(\tilde P^{\natural})\Phi(\tilde Q) = \operatorname{adj}\bigl(\Phi(\tilde P)\bigr)\Phi(\tilde Q) .
+$$
+
+**Proof.** $\Phi$ is multiplicative and $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$. $\square$
+
+**Theorem (the trace and the determinant of the value).** For all $\tilde P,\tilde Q\in\mathbb{B}$, with $\beta(\tilde P,\tilde Q) = P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3$,
+
+$$
+\operatorname{tr}\Phi(\tilde P\star\tilde Q) = 2\beta(\tilde P,\tilde Q) , \qquad \det\Phi(\tilde P\star\tilde Q) = \langle\tilde P,\tilde P\rangle_{\natural}\langle\tilde Q,\tilde Q\rangle_{\natural} .
+$$
+
+**Proof.** The determinant is multiplicative and $\det\operatorname{adj}(A) = \det A$, so $\det\Phi(\tilde P\star\tilde Q) = \det\Phi(\tilde P)\det\Phi(\tilde Q) = \langle\tilde P,\tilde P\rangle_{\natural}\langle\tilde Q,\tilde Q\rangle_{\natural}$, the norm law of the chapter (*Biquaternion Norm and Invertibility* §*Multiplicativity*). For the trace, $\operatorname{tr}\Phi(\tilde P\star\tilde Q) = 2\,\mathrm{Sc}(\tilde P\star\tilde Q)$ by the trace theorem, and the scalar part of $\tilde P^{\natural}\tilde Q$ is $P_0Q_0+(\mathbf P,\mathbf Q) = \beta(\tilde P,\tilde Q)$. $\square$
+
+**Remark.** The determinant and the trace of the image of a product are the norm and the symmetrisation of the batch: the second article's norm law and the fourth article's coefficient $\beta$ are the two matrix invariants of the value, and with them the norm, the cone, the symmetrisation and the Jordan failure on the Hermitian subspace are all read off the model.
+
+## The Batch Re-Read in Matrices
+
+Let $A = \Phi(\tilde P)$, $B = \Phi(\tilde Q)$, $C = \Phi(\tilde R)$ and write $\star'$ for the transported product, $A\star'B = \operatorname{adj}(A)B$, the adjugate standing for the image of ${}^{\natural}$.
+
+**The square.** $\Phi(\tilde Q\star\tilde Q) = \operatorname{adj}(B)B = \det(B)\,I$, whose trace is $2\det(B) = 2\beta(\tilde Q,\tilde Q) = 2\langle\tilde Q,\tilde Q\rangle_{\natural}$ and whose determinant is $\det(B)^2 = \langle\tilde Q,\tilde Q\rangle_{\natural}^2$; the square is the **scalar matrix** $\langle\tilde Q,\tilde Q\rangle_{\natural}I$, which is the matrix form of the centrality of the square and of the square lemma of the first article.
+
+**The idempotents.** An idempotent satisfies $\operatorname{adj}(B)B = B$; since the left-hand side is the scalar $\det\Phi(\tilde Q)I$, the matrix is $0$ or $I$. The idempotents of the product are therefore the two scalar matrices $0$ and $I$, and **no nontrivial projection of $M_2(\mathbb{C})$ is one**. The Hermitian projections $\Phi\bigl(\tilde\Pi_+(\hat\mu)\bigr) = \tfrac12\bigl(I+i\sum_k\hat\mu_kJ_k\bigr)$ over the real unit vectors $\hat\mu = (\hat\mu_1,\hat\mu_2,\hat\mu_3)$ are idempotent for the ordinary matrix product and are **not** idempotent here; they are the matrices of the Hermitian projectors of the sibling sesquilinear product, and under the product of this group they become square-zero, $\operatorname{adj}(B)B = 0$, which is the displacement described in the first article.
+
+**The zero divisors.** $\det\Phi(\tilde Q) = 0$ cuts out exactly the singular matrices, so the zero-divisor set of the product is the determinant variety of $M_2(\mathbb{C})$; the units are the invertible matrices, of group $GL_2(\mathbb{C})$. The nilpotent set and the zero-divisor set coincide, as the second article proves and as the determinant already shows: $\langle\tilde Q,\tilde Q\rangle_{\natural} = 0$ is $\det\Phi(\tilde Q) = 0$.
+
+**The symmetrisation as the trace.** By the trace theorem the central coefficient of the fourth article is half the trace of the transported product,
+
+$$
+\beta(\tilde P,\tilde Q) = \tfrac12\operatorname{tr}\bigl(\operatorname{adj}(A)B\bigr) , \qquad
+\Phi(\tilde P\circ\tilde Q) = \beta(\tilde P,\tilde Q)\,I = \tfrac12\bigl(\operatorname{adj}(A)B+\operatorname{adj}(B)A\bigr) ,
+$$
+
+a scalar matrix, which is the matrix form of the centrality of the symmetrisation; and the failure of the Jordan identity is a statement about the two ways of multiplying three such twisted products, which is where the model shows least and the elements show most.
+
+**The left multiplications as matrix multiplication.** The left multiplication of the product by $\tilde P$ is, in the model, the ordinary left multiplication by the matrix $\operatorname{adj}(A)$:
+
+$$
+\Phi\bigl(L_{\tilde P}(\tilde X)\bigr) = \operatorname{adj}(A)\Phi(\tilde X) .
+$$
+
+The composition law $L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P}$ of the fifth article is then the anti-automorphism property $\operatorname{adj}(A)\operatorname{adj}(C) = \operatorname{adj}(CA)$, and the monoid of left multiplications is the opposite of the multiplicative monoid, in the model as in the algebra.
+
+**The associator as the failure of the transpose-conjugation to be multiplicative.** The associator of the transported product is
+
+$$
+(A\star'B)\star'C - A\star'(B\star'C) = \operatorname{adj}(B)AC - \operatorname{adj}(BA)C = \bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C ,
+$$
+
+using $\operatorname{adj}(\operatorname{adj}(A)) = A$ and $\operatorname{adj}(BA) = \operatorname{adj}(A)\operatorname{adj}(B)$. The defect is therefore the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term $\operatorname{adj}(B)A$ carries the transposed $B$ past $A$ without reversing. This is exactly the closed form of the associator of the third article, $[\tilde P,\tilde Q,\tilde R] = \bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde R$, transported to matrices, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.
+
+## Summary
+
+In the model of *Biquaternion 2×2 Matrix Element Representation* the algebra $\mathbb{B}$ is the matrix algebra $M_2(\mathbb{C})$, with $\operatorname{tr}\Phi(\tilde P) = 2P_0$ and $\det\Phi(\tilde P) = \langle\tilde P,\tilde P\rangle_{\natural}$, and the natural conjugation is the adjugate $\Phi(\tilde P^{\natural}) = \operatorname{adj}\Phi(\tilde P)$, a transpose-conjugation and not a Hermitian transpose. The product becomes the matrix product with that adjugate inserted in the first slot, $A\star'B = \operatorname{adj}(A)B$, and the batch is read off two invariants: the determinant of the value is the product of the norms, and the trace of the value is twice the symmetrisation coefficient. The square is the scalar matrix $\langle\tilde Q,\tilde Q\rangle_{\natural}I$; the idempotents are $0$ and $I$ alone, so no nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent, the Hermitian projections becoming square-zero instead; the zero divisors are the singular matrices and the units the invertible ones; the symmetrisation is a half trace; the left multiplications are the left multiplications by the transposed matrices, forming the opposite monoid. The associator is the failure of the transpose-conjugation to be multiplicative, $(\operatorname{adj}(B)A-\operatorname{adj}(BA))C$, which is the matrix form of the closed form of the third article, and the realization is the one in which the plain product of the algebra is the matrix product (*Biquaternion 2×2 Matrix Element Representation*).
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
+| $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2 = -e_0$ |
+| $\tilde P = \sum_\mu P_\mu e_\mu$ | an element and its four complex coordinates |
+| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0-\mathbf P$ |
+| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the complex quaternionic bilinear product, the multiplication of this group |
+| $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
+| $\Phi$ | the model $\mathbb{B}\to M_2(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation*, $\Phi(e_0) = I$, $\Phi(e_1) = \begin{pmatrix}0&-i\\ -i&0\end{pmatrix}$, $\Phi(e_2) = \begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$, $\Phi(e_3) = \begin{pmatrix}-i&0\\ 0&i\end{pmatrix}$ |
+| $J_k = \Phi(e_k)$ | the three images of the imaginary units |
+| $I$ | the identity matrix |
+| $\varepsilon = \Phi(-e_2)$ | the fixed matrix of the transpose-conjugation, $\operatorname{adj}(X) = \varepsilon X^{T}\varepsilon^{-1}$ |
+| $\operatorname{adj}(A)$ | the adjugate, the image of ${}^{\natural}$ |
+| $A\star'B = \operatorname{adj}(A)B$ | the transported product |
+| $\langle\tilde P,\tilde P\rangle_{\natural} = \det\Phi(\tilde P) = \sum_\mu P_\mu^2$ | the norm, the determinant of the model |
+| $2P_0$ | the trace of $\Phi(\tilde P)$ |
+| $\beta(\tilde P,\tilde Q) = \sum_\mu P_\mu Q_\mu$ | the coefficient, half the trace of $\operatorname{adj}(A)B$ |
+| $\operatorname{tr}$, $\det$, ${}^{T}$ | the trace, the determinant and the transpose of a matrix |
+
+## Further Reading
+
+- Israel M. Gelfand, *Lectures on Linear Algebra* (Dover, 1989), for the trace, the determinant and the adjugate of a two-by-two matrix.
+- Werner Greub, *Linear Algebra* (Springer, fourth edition, 1975), for the transpose as an anti-automorphism of an endomorphism algebra and its order reversal.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the identification of a full matrix algebra with its endomorphism algebra and for the structure of its units and its singular elements.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the two conjugations of an algebra, the transpose and the Hermitian transpose, and the distinction between them.
+- John Voight, *Quaternion Algebras* (Springer, 2021), for the description of a split algebra by matrices, with the reduced norm as the determinant and the reduced trace as the trace.
+- Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the reading of a twisted product as a product with an anti-automorphism inserted and the defect of its associativity.
+- *The Forms in the Matrix Representation of the Biquaternion Algebra* (`articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md`), for the two pairings of the matrix algebra and the trace identity.
+- *The Unit Group and the Frobenius Norm in the Matrix Representation* (`articles_maths/the-unit-group-and-the-frobenius-norm-in-the-matrix-representation.md`), for the units, the Frobenius norm and the topology of the matrix realization.

@@ -532,15 +532,16 @@ vanishing only for $\tilde{Q} = 0$.
 
 **Physical reading.** The real part of the inner product is the Euclidean pairing of the two elements, the same quantity that makes $\mathbb{B}$ a Hilbert space of real dimension 8, and the diagonal value is the squared norm. The **imaginary part** is a relative phase, the quantity that a pair of states carries and a single state does not; the series reads the interference of two informational states, and Pancharatnam's phase for a pair of polarisations, from exactly this term: see *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*.
 
-### Relation Between the Three Forms
+### Relation Between the Four Forms
 
-The three quadratic objects are distinct and each is used for a different job:
+The four quadratic objects are distinct and each is used for a different job:
 
+- **Complex bilinear form:** $\mathrm{Sc}(\tilde{Q}\tilde{Q}) = \sum_\mu \varepsilon_\mu Q_\mu^2$ with $\varepsilon=(1,-1,-1,-1)$, the scalar part of the plain product and the diagonal of the complex bilinear pairing. Complex-bilinear and symmetric; on the material and informational sectors it is the Euclidean square with the sign of the sector, $-(c^2t^2+\mathbf{x}^2)$ on $\mathbb{M}_-$ and $+(c^2t'^2+\mathbf{x}'^2)$ on $\mathbb{M}_+$. It is the fourth form, the one the older count omitted.
 - **Biquaternion norm:** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Complex in general, central, multiplicative, capable of vanishing for nonzero $\tilde{Q}$. It controls the multiplicative structure: the rotors are its unit elements, and it carries the metric of the material sector.
 - **Hermitian form:** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part is generally nonzero. Not multiplicative. It carries the positive-definite norm used by the operator and informational side of the series.
 - **Inner product:** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, complex in general, Hermitian, linear in the second argument. Its diagonal value equals the scalar part of the Hermitian form, and its imaginary part carries the relative phase of a pair.
 
-The biquaternion norm controls the multiplicative structure, the scalar part of the Hermitian form (equivalently the diagonal of the inner product) controls the topological structure — continuity, completeness, the Euclidean topology — and the full inner product adds the phase.
+The biquaternion norm controls the multiplicative structure, the scalar part of the Hermitian form (equivalently the diagonal of the inner product) controls the topological structure — continuity, completeness, the Euclidean topology — and the full inner product adds the phase. The complex bilinear form and the complex sesquilinear form are the two Euclidean objects of the list, opposite on $\mathbb{M}_-$ and on $\mathbb{M}_+$; the biquaternion norm and the quaternion sesquilinear form are the two Lorentzian ones, and they too are opposite on the two sectors.
 
 ### The Two Real Restrictions
 
@@ -578,7 +579,7 @@ It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ a
 
 The three involutions give three direct-sum decompositions, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, which are the three pairings of the four coordinate blocks $\mathbb{R}e_0$, $\mathbb{R}(ie_0)$, $\operatorname{span}_\mathbb{R}\{e_1,e_2,e_3\}$, $\operatorname{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$; there is no fourth. Each of the four four-dimensional subspaces is one scalar block plus one vector block, and two distinct subspaces meet in dimension $0$, $1$ or $3$, the dimension $0$ occurring exactly for the three complementary pairs. Multiplication by the central $i$ swaps the two sectors and preserves the centre and the vector subspace.
 
-On the algebra sit three quadratic objects, kept apart throughout: the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
+On the algebra sit four quadratic objects, kept apart throughout: the **complex bilinear form** $\mathrm{Sc}(\tilde{Q}\tilde{Q}) = \sum_\mu \varepsilon_\mu Q_\mu^2$, the scalar part of the plain product, indefinite and negative definite on the material sector; the **biquaternion norm** $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, multiplicative and capable of vanishing for nonzero $\tilde{Q}$, which is the level-1 form and reproduces the Minkowski interval on the material coordinate and the opposite signature on the informational one; the **Hermitian form** $\tilde{Q}\tilde{Q}^{*}$, an element of the informational sector whose scalar part is $\sum_\mu |Q_\mu|^2$; and the complex **inner product** $\langle \tilde{P},\tilde{Q}\rangle = \sum_\mu P_\mu^* Q_\mu$, whose diagonal value is that scalar part and whose imaginary part carries the relative phase of a pair.
 
 ## Summary of Notation
 

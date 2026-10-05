@@ -28,7 +28,7 @@ and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto th
 
 **Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$, of scalar part $\mathrm{Sc}(\tilde{R}^{*}\tilde P)=\sum_{\mu}R_{\mu}^{*}P_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
 
-**Example (the norm form, and why it is not here).** The quaternion norm $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the complex bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Biquaternion Norm and Invertibility*).
+**Example (the norm form, and why it is not here).** The quaternion norm $\langle\tilde R,\tilde R\rangle_{\natural}=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the complex bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Biquaternion Norm and Invertibility*).
 
 ## Congruence and the Isometry Group
 
@@ -120,7 +120,7 @@ $$
 
 **The unit form and the norm form.** The unit form has inertia $(2,0,0)$ and signature $2$; the form $\mathrm{diag}(1,-1)$ has inertia $(1,1,0)$ and signature $0$ and is the hyperbolic plane; the form $\mathrm{diag}(1,0)$ has inertia $(1,0,1)$ and rank one. The norm form $N$ is not in the classification at all.
 
-**The congruence by a two-sided operator.** For $S=e_{0}+e_{1}$, of determinant two and invertible, and $H=\mathrm{diag}(1,-1)$, the congruent form $S^{\dagger}HS$ has the same inertia $(1,1,0)$. For $S$ a null element, $N(S)=0$, $S$ is not invertible and the congruence is not an equivalence: the form $\mathrm{diag}(1,0)$ is reached, and the rank drops. This is the algebraic content of the collapse worked in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+**The congruence by a two-sided operator.** For $S=e_{0}+e_{1}$, of determinant two and invertible, and $H=\mathrm{diag}(1,-1)$, the congruent form $S^{\dagger}HS$ has the same inertia $(1,1,0)$. For $S$ a null element, $\langle S,S\rangle_{\natural}=0$, $S$ is not invertible and the congruence is not an equivalence: the form $\mathrm{diag}(1,0)$ is reached, and the rank drops. This is the algebraic content of the collapse worked in *Two-Sided Operators on the Biquaternion Algebra with Hermitian Adjoint*.
 
 **The isometry group of the unit form.** $U(e_{0})=U(2)$: the maps $S$ with $S^{\dagger}S=e_{0}$, exactly the unitary slice, of real dimension four. The isometry group of the hyperbolic plane $\mathrm{diag}(1,-1)$ is $U(1,1)$, indefinite, of real dimension four as well but non-compact: the two forms have the same dimension of the isometry group and different topology, which is the group-level shadow of the difference of the signatures.
 
@@ -136,7 +136,7 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 |---|---|
 | $h_{H}(\tilde R,\tilde P)=\tilde{R}^{*}H\tilde P$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
 | $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$ | The unit form; positive definite; trace form of the dagger |
-| $N(\tilde R)=\sum_{\mu}R_{\mu}^{2}$ | The quaternion norm; **not** a Hermitian form of the dagger |
+| $\langle\tilde R,\tilde R\rangle_{\natural}=\sum_{\mu}R_{\mu}^{2}$ | The quaternion norm; **not** a Hermitian form of the dagger |
 | $H'\sim H \iff H'=S^{\dagger}HS$ | Congruence; the two-sided operator on the form matrix |
 | $(p,q,r)$ | Inertia: positive, negative and null dimensions |
 | $\mathrm{diag}(1_{p},-1_{q},0_{r})$ | Sylvester normal form |

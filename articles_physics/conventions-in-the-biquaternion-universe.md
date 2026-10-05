@@ -420,9 +420,9 @@ The order of authority is therefore one-way. The algebra and its level-1 and lev
 
 One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.
 
-### The Involutions and the Three Forms
+### The Involutions and the Four Forms
 
-The algebra carries four conjugations, and on it there are three forms — not two, and not four. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
+The algebra carries four conjugations, and on it there are four forms, one for each of them. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
 
 **The setting.** $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = \tilde{Q}_0$ is $\mathbb{C}$-linear. The centre is treated in *The Center Subspace $\mathbb{C}_{\mathbb{B}}$ as the Complex Time Sector*, and the forms of the algebra in *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
@@ -452,21 +452,30 @@ A $\mathbb{C}$-linear $a$ carries a scalar out of both slots without conjugating
 
 The fourth column is what the two questions separate, and it is worth stating plainly because the two are easy to conflate. The bar multiplies and reverses nothing, $\overline{\tilde{P}\tilde{Q}} = \bar{\tilde{P}}\bar{\tilde{Q}}$, since it acts on the scalars and on nothing else: it is an order-two automorphism of the algebra over $\mathbb{R}$, $\mathbb{C}$-antilinear, and **not** an anti-automorphism. The natural sign and the star are the two genuine **involutions of the ring** in the strict sense, $(\tilde{P}\tilde{Q})^a = \tilde{Q}^a\tilde{P}^a$. Which of the four multiplies and which reverses is decided by which factor of the tensor product the map touches, the quaternion conjugation being the reversing one. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{P}\tilde{Q})^{\flat} = -\tilde{Q}^{\flat}\tilde{P}^{\flat}$, so it is an involution of the underlying real vector space and nothing more. The four maps and the sign, their fixed and anti-fixed spaces, and the lattice they form are the subject of *The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal*.
 
-**The three forms.** Reading the rule off the table gives exactly three forms,
+**The four forms.** Reading the rule off the table gives exactly four forms,
 
 $$
-B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu, \qquad (\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu, \qquad K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3,
+C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu, \qquad B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural}) = \sum_\mu P_\mu Q_\mu, \qquad (\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}^{*}\tilde{Q}) = \sum_\mu \bar{P}_\mu Q_\mu, \qquad K(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\bar{\tilde{P}}\tilde{Q}) = \bar{P}_0Q_0 - \bar{P}_1Q_1 - \bar{P}_2Q_2 - \bar{P}_3Q_3,
 $$
 
 each being the trace form of its own involution up to the factor of the trace convention, $2h_a(\tilde{P},\tilde{Q}) = \mathrm{Tr}(\tilde{P}^a\tilde{Q})$. Their types and their readings on the algebra and on the material sector are then:
 
 | Form | Involution | Type over $\mathbb{C}$ | On $\mathbb{B}$ | On $\mathbb{M}_-$ |
 |---|---|---|---|---|
+| $C$, the complex bilinear form | $\mathrm{id}$ | $\mathbb{C}$-**bilinear** | complex, Gram $\mathrm{E}$ | $-c^2t^2-x^2-y^2-z^2$, signature $(0,4)$ |
 | $B$, the bilinear form | ${}^{\natural}$ | $\mathbb{C}$-**bilinear** | complex, Gram $I_4$ | $-c^2t^2+x^2+y^2+z^2$, signature $(3,1)$ |
 | $(\cdot,\cdot)$, the Hermitian form | ${}^{*}$ | $\mathbb{C}$-**sesquilinear**, positive definite | signature $(8,0)$ | $c^2t^2+x^2+y^2+z^2$, signature $(4,0)$ |
 | $K$, the Krein form | $\bar{\cdot}$ | $\mathbb{C}$-**sesquilinear**, indefinite | signature $(2,6)$ | $c^2t^2-x^2-y^2-z^2$, signature $(1,3)$ |
 
-Three readings follow, and the names of the involutions must not be allowed to settle them in advance.
+Four readings follow, and the names of the involutions must not be allowed to settle them in advance.
+
+**The complex bilinear form, from the identity.** $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu \varepsilon_\mu P_\mu Q_\mu$ is the scalar part of the plain product, the form of the identity conjugation, and it is the fourth form that the older count of three passed over. Its Gram matrix in the complex basis is $\mathrm{E} = \operatorname{diag}(1,-1,-1,-1)$, its signature on $\mathbb{B}$ is $(4,4)$, and on the material sector it is the **negative** Euclidean square,
+
+$$
+C(\tilde{T},\tilde{T}) = -(c^2t^2+x^2+y^2+z^2), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
+$$
+
+of signature $(0,4)$. It is the form of the plain product, and it differs from the bilinear form $B$ by the sign of the vector part alone, $C(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q})$ against $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q}^{\natural})$.
 
 **The bilinear form, from the natural sign.** $B$ is the bilinear form over $\mathbb{C}$ associated with the biquaternion norm, $B(\tilde{Q},\tilde{Q}) = N(\tilde{Q}) = \sum_\mu Q_\mu^2$ (*Biquaternion Norm and Invertibility*); it is level 1 of the metric above, and its Gram matrix in the complex basis $e_0,e_1,e_2,e_3$ is the identity. Its diagonal is generally complex, so it carries no positivity and is no analytic norm; its unit group is the set of elements of norm one, $\{\tilde{\Lambda} : B(\tilde{\Lambda},\tilde{\Lambda}) = 1\}$, which is $\mathrm{SL}(2,\mathbb{C})$ — the norm is the determinant of the matrix realization — the group the notation table calls the Lorentz group on $\mathbb{M}_-$. It is the form of symmetry and duality.
 
@@ -478,7 +487,7 @@ $$
 K(\tilde{T},\tilde{T}) = c^2t^2 - x^2 - y^2 - z^2 = -N(\tilde{T}), \qquad \tilde{T} = ict\,e_0 + \mathbf{x},
 $$
 
-so the three forms read on the material sector are the interval $N$ of level 2, its negative, and the Euclidean square. A space carrying a definite form and the form $K$ in this relation is a **Krein space**, and $K$ is accordingly the **Krein form** of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is $N$; the third form is recorded here because it completes the classification, and because it is what the bar, and not the star, produces. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the three forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
+so the four forms read on the material sector are the interval $N$ of level 2, its negative, the Euclidean square and its negative. A space carrying a definite form and the form $K$ in this relation is a **Krein space**, and $K$ is accordingly the **Krein form** of the algebra: the definite form is the Hilbert structure, the Krein form the physical metric, and the passage between them is the fundamental symmetry below. The name is Mark Grigorievich Krein's (1907–1989), not Felix Klein's. The framework's own indefinite object at levels 1 and 2 is $N$; the last two forms are recorded here because they complete the classification, and because they are what the plain product and the bar, and not the star, produce. Its isometry group is the Pin group, the companion of the unitary slice that is the group of the star form. The Witt classes of the four forms, their isometry groups, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
 **The fundamental symmetry.** The two sesquilinear forms are related by the natural sign:
 

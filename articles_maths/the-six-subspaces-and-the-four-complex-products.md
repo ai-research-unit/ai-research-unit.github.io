@@ -118,7 +118,7 @@ $$
 \mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}},\quad
 \mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}} .
 $$
-It is therefore closed under all four products at once, and is an associative subalgebra for each of them; under the complex bilinear product it is the division algebra of the real quaternions, since the norm is a sum of four real squares and vanishes only at the origin.
+It is therefore closed under all four products at once, and it is an associative subalgebra for exactly one of them, the complex bilinear product; under that product it is the division algebra of the real quaternions, since the norm is a sum of four real squares and vanishes only at the origin. The other three products are not associative there: their counterexamples in *Comparison Between the Four Biquaternion Products* §*The Failure of Associativity* are triples of the quaternion subspace, so each of them fails associativity inside the subspace already.
 
 **The symmetrisation.** Only the complex bilinear symmetrisation gives a **Jordan algebra**:
 $$

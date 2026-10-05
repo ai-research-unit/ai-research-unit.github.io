@@ -145,7 +145,7 @@ $$
 
 so the split is the split of the value by the natural involution: the symmetric part is the natural-even part and the antisymmetric part the natural-odd part. The natural conjugation fixes the scalar part and reverses the vector part, so **the split of this product is its scalar–vector split**: the symmetric part lies in the scalar line, even in the centre $\mathbb{C}_{\mathbb{B}}$, and the antisymmetric part in the vector subspace $\mathrm{Vect}(\mathbb{B})$ — the statement recorded in *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*.
 
-The two antisymmetric parts of the two bilinear products agree on the vector subspace and differ there only by sign: for pure $\tilde{P},\tilde{Q}$ the mixed terms drop and the second is the negative of the first, so on $\mathrm{Vect}(\mathbb{B})$ the two are the two signs of the same cross product. Off the vector subspace the two differ by the two mixed terms $P_0\mathbf{Q}-Q_0\mathbf{P}$, which is the same difference as between the two symmetric parts, the one carrying the mixed terms $P_0\mathbf{Q}+Q_0\mathbf{P}$ and the other not.
+The two antisymmetric parts of the two bilinear products differ on the vector subspace only by sign: for pure $\tilde{P},\tilde{Q}$ the mixed terms drop and the second is the negative of the first, so on $\mathrm{Vect}(\mathbb{B})$ the two are the two opposite signs of the same cross product. Off the vector subspace the two differ by the two mixed terms $P_0\mathbf{Q}-Q_0\mathbf{P}$, which is the same difference as between the two symmetric parts, the one carrying the mixed terms $P_0\mathbf{Q}+Q_0\mathbf{P}$ and the other not.
 
 ## The Complex Sesquilinear Product
 
@@ -199,7 +199,7 @@ $$
 
 and it is not a conjugate of $\tilde{P}^{\natural}\tilde{Q}^{*}$, so the value carries no involution that the interchange respects and the split is a genuine two-way split.
 
-Neither part respects a subspace of the six. The symmetric part lies in neither $\mathbb{M}_+$ nor $\mathbb{M}_-$ — it is not Hermitian, and not skew-Hermitian either, its vector part carrying both a real and an imaginary term — and the antisymmetric part likewise, its vector part carrying both a real and an imaginary term. This is the one product of the four whose two parts respect no subspace of the six.
+The two parts are confined to no subspace of the six. For a generic pair the symmetric part lies in neither $\mathbb{M}_+$ nor $\mathbb{M}_-$ — it is not Hermitian, and not skew-Hermitian either, its vector part carrying both a real and an imaginary term — and the antisymmetric part likewise, its vector part carrying both a real and an imaginary term. The product is the only one of the four for which this happens; the symmetrisation nonetheless keeps the Hermitian subspace inside itself, as the symmetrisation of every one of the four products does (*The Six Subspaces and the Four Complex Products* §*The Hermitian Subspace*).
 
 ## Summary
 
@@ -207,7 +207,7 @@ Each of the four products of *The Four Biquaternion Complex Products* is the sum
 
 The symmetric part of the complex bilinear product is the Jordan product $\tilde{P}\bullet\tilde{Q}=\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$: $\mathbb{C}$-bilinear, commutative, agreeing with the square on the diagonal, the polarisation of the square, and making $\mathbb{B}$ a Jordan algebra with $\mathbb{M}_+$ as a Jordan subalgebra. Its antisymmetric part is the outer product $\tilde{P}\wedge\tilde{Q}=\mathbf{P}\times\mathbf{Q}$: alternating, pure vector, its vanishing the commutativity criterion, and closing on $\mathbb{M}_-$ as a Lie subalgebra. Read on the operators, the two are the balanced multiplication $\tfrac12(L_{\tilde{P}}+R_{\tilde{P}})$ and the derivation $\tfrac12(L_{\tilde{P}}-R_{\tilde{P}})$.
 
-The symmetric parts of the two bilinear products carry the two bilinear scalar forms $P_0Q_0\mp(\mathbf{P},\mathbf{Q})$, the first filling the whole algebra and the second collapsing to the centre; the two antisymmetric parts are the two signs of the same cross product on the vector subspace, and off it they differ by the two mixed terms. The complex sesquilinear product is the one whose two parts are the two parts of the algebra itself, the Hermitian and the anti-Hermitian subspace. The complex quaternionic sesquilinear product is the one whose two parts respect no subspace of the six. The two sesquilinear splits are only $\mathbb{R}$-bilinear.
+The symmetric parts of the two bilinear products carry the two bilinear scalar forms $P_0Q_0\mp(\mathbf{P},\mathbf{Q})$, the first filling the whole algebra and the second collapsing to the centre; the two antisymmetric parts are the two signs of the same cross product on the vector subspace, and off it they differ by the two mixed terms. The complex sesquilinear product is the one whose two parts are the two parts of the algebra itself, the Hermitian and the anti-Hermitian subspace. The complex quaternionic sesquilinear product is the one whose two parts are confined to no subspace of the six. The two sesquilinear splits are only $\mathbb{R}$-bilinear.
 
 ## Summary of Notation
 

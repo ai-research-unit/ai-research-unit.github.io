@@ -20,7 +20,7 @@ and the Sylvester operator is $L_{\tilde C}+R_{\tilde D}=\Phi(\tilde C)\otimes I
 
 *Proof.* $L_{\tilde C}(\tilde V)=\tilde C\tilde V$ acts on the index of the first tensor factor and $R_{\tilde D}(\tilde V)=\tilde V\tilde D$ on the second; in row-major order the matrix of $\tilde V\mapsto \tilde V\tilde D$ is $I\otimes\Phi(\tilde D)^{T}$, and $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ gives $\Phi(\tilde{Q})\otimes(\Phi(\tilde{Q}))^{\natural}$ since $\Phi(\tilde{Q}^{*})=(\Phi(\tilde{Q}))^{\natural}$. All three were verified as $4\times4$ matrices on random elements.
 
-**Remark (the Hermitian space and the Kronecker identification).** The vectorisation above is the **coordinate** vectorisation of the basis $e_{\mu}$; the Hermitian form of the article is $(\tilde S,\tilde V)=\mathrm{Sc}(\tilde{S}^{*}\tilde V)=\sum_{\mu}S_{\mu}^{*}V_{\mu}$, whose Gram matrix in that basis is the identity. The Kronecker formulas are therefore spectral statements about the operators on the Hermitian space, and the computed spectra below are the spectra with respect to $(\cdot,\cdot)$.
+**Remark (the Hermitian space and the Kronecker identification).** The vectorisation above is the **coordinate** vectorisation of the basis $e_{\mu}$; the complex sesquilinear form of the article is $(\tilde S,\tilde V)=\mathrm{Sc}(\tilde{S}^{*}\tilde V)=\sum_{\mu}S_{\mu}^{*}V_{\mu}$, whose Gram matrix in that basis is the identity. The Kronecker formulas are therefore spectral statements about the operators on the Hermitian space, and the computed spectra below are the spectra with respect to $(\cdot,\cdot)$.
 
 ## The Spectrum of a One-Sided Operator
 
@@ -130,7 +130,7 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 | $\mathrm{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
 | $L_{\tilde C}+R_{\tilde D}$ | Sylvester operator; spectrum $\lambda_{i}+\mu_{j}$ |
 | $(p,q)$ | Inertia of a Hermitian element; $\mathrm{sig}(\Theta_{\tilde{Q}})=(p^{2}+q^{2},2pq)$ |
-| $(\tilde S,\tilde V)=\mathrm{Sc}(\tilde{S}^{*}\tilde V)$ | The Hermitian form of the spectra |
+| $(\tilde S,\tilde V)=\mathrm{Sc}(\tilde{S}^{*}\tilde V)$ | The complex sesquilinear form of the spectra |
 
 ## Further Reading
 

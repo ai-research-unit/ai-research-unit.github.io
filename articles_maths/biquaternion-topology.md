@@ -4,13 +4,13 @@
 
 This article collects the topology of the **null cone** of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its projective geometry: the null cone and its link, the Segre embedding and the two rulings of null planes, the projective null quadric $Q^2$ with its tangency and its polarity, and the Klein–Plücker geometry of the lines of $\mathbb{P}^3$. The Euclidean structure of the ambient space, its contractibility and the Euclidean unit sphere read the *Hermitian* form and belong to *The Euclidean Topology of the Biquaternion Algebra*; they are quoted from there wherever the geometry of the null cone needs them.
 
-The norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ decides invertibility and vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); both treatments are algebraic, and the projective sections below treat the same form geometrically, as the equation of a quadric. The article uses the algebra and fixed-point subspaces of *Biquaternions as a Vector Space over $\mathbb{C}$*, the zero divisor set of *Biquaternion Zero Divisors*, and *Lie Groups*. The polarisation of the norm, its real forms and its associated Clifford algebra are in *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*. No physics is invoked and no new result is claimed.
+The norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ decides invertibility and vanishes exactly on the zero divisors together with the origin (*Biquaternion Norm and Invertibility*, *Biquaternion Zero Divisors*); both treatments are algebraic, and the projective sections below treat the same form geometrically, as the equation of a quadric. The article uses the algebra and fixed-point subspaces of *Biquaternions as a Vector Space over $\mathbb{C}$*, the zero divisor set of *Biquaternion Zero Divisors*, and *Lie Groups*. The polarisation of the norm, its real forms and its associated Clifford algebra are in *Biquaternion Norm and Invertibility*; the Lorentzian and conformal reading of the real slices is in *Biquaternion Lorentzian and Conformal Geometry*. No physics is invoked and no new result is claimed.
 
-**Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — is read on the Hermitian form and is treated in *The Unitary Group of the Biquaternion Algebra*, the algebraic group itself being *The Biquaternion Unit Group as a Topological Group*. This article owns the null cone, its link and their projective geometry, quoting the ambient Euclidean structure from *The Euclidean Topology of the Biquaternion Algebra* and the homotopy type of $\mathbb{B}^\times$ from those articles when a comparison is needed.
+**Scope.** The topology of the **group of units** $\mathbb{B}^\times$ — the polar decomposition, the retractions onto its compact subgroups, the homotopy groups and the universal cover — is read on the complex sesquilinear form and is treated in *The Unitary Group of the Biquaternion Algebra*, the algebraic group itself being *The Biquaternion Unit Group as a Topological Group*. This article owns the null cone, its link and their projective geometry, quoting the ambient Euclidean structure from *The Euclidean Topology of the Biquaternion Algebra* and the homotopy type of $\mathbb{B}^\times$ from those articles when a comparison is needed.
 
-**Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$ and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$.
+**Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The biquaternion norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$.
 
-As a real vector space the algebra is $\mathbb{R}^8$, hence contractible, and the Euclidean structure that exhibits this, the Euclidean unit sphere and the contractibility of the six distinguished subspaces are *The Euclidean Topology of the Biquaternion Algebra*; only the contractibility of the ambient space is quoted here. The distinguished subset studied in this article is the **null cone** $\{N(\tilde{Q})=0\}$ together with its link.
+As a real vector space the algebra is $\mathbb{R}^8$, hence contractible, and the Euclidean structure that exhibits this, the Euclidean unit sphere and the contractibility of the six distinguished subspaces are *The Euclidean Topology of the Biquaternion Algebra*; only the contractibility of the ambient space is quoted here. The distinguished subset studied in this article is the **null cone** $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}$ together with its link.
 
 ## The Ambient Space
 
@@ -21,7 +21,7 @@ The algebra is $\mathbb{R}^8$ with the Euclidean topology of *The Euclidean Topo
 The **null cone**, or singular set, is
 
 $$
-\mathcal{N}=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z},
+\mathcal{N}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}=\{0\}\cup\mathcal{Z},
 $$
 
 where $\mathcal{Z}$ is the zero-divisor set.
@@ -38,7 +38,7 @@ Z_0=Q_0-iQ_3,\qquad Z_1=-iQ_1-Q_2,\qquad Z_2=-iQ_1+Q_2,\qquad Z_3=Q_0+iQ_3,
 $$
 an invertible $\mathbb{C}$-linear change of the coordinates $Q_0,\dots,Q_3$. In them the norm is a split form,
 $$
-N(\tilde{Q})=\sum_{\mu=0}^{3}Q_\mu^2=Z_0Z_3-Z_1Z_2,
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2=Z_0Z_3-Z_1Z_2,
 $$
 since $Z_0Z_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $Z_1Z_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $Z_0Z_3=Z_1Z_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
 $$
@@ -50,7 +50,7 @@ s:\mathbb{P}^1\times\mathbb{P}^1\longrightarrow\mathbb{P}^3,\qquad ([u],[v])\map
 $$
 whose image is exactly the projective null quadric
 $$
-\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}.
+\mathbb{P}(\mathcal{N})=\{[\tilde{Q}]\in\mathbb{P}^3:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}.
 $$
 The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$, and the zero-divisor set is that cone with its apex removed.
 
@@ -58,13 +58,13 @@ The affine null cone is the cone over the Segre variety $\mathbb{P}^1\times\math
 
 In the coordinates above the polar form of $N$ is
 $$
-B(\tilde R,\tilde S)=\tfrac12\bigl(Z_0Z'_3+Z_3Z'_0-Z_1Z'_2-Z_2Z'_1\bigr),
+\langle\tilde R,\tilde S\rangle_{\natural}=\tfrac12\bigl(Z_0Z'_3+Z_3Z'_0-Z_1Z'_2-Z_2Z'_1\bigr),
 $$
-the polarisation of $Z_0Z_3-Z_1Z_2$, with $B(\tilde R,\tilde R)=N(\tilde R)$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
+the polarisation of $Z_0Z_3-Z_1Z_2$, with $\langle\tilde R,\tilde R\rangle_{\natural}$. For each $[u]=[\alpha:\beta]\in\mathbb{P}^1$ the two-dimensional subspace
 $$
 W_{[u]}=\operatorname{span}\{(\alpha,0,\beta,0),\,(0,\alpha,0,\beta)\}=\{(\alpha\sigma,\alpha\tau,\beta\sigma,\beta\tau):\sigma,\tau\in\mathbb{C}\}
 $$
-is totally isotropic: for $\tilde R$ built from $\sigma,\tau$ and $\tilde S$ from $\sigma',\tau'$ the form above gives $B(\tilde R,\tilde S)=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a **null plane**, and the same holds for
+is totally isotropic: for $\tilde R$ built from $\sigma,\tau$ and $\tilde S$ from $\sigma',\tau'$ the form above gives $\langle\tilde R,\tilde S\rangle_{\natural}=\tfrac12\alpha\beta(\sigma\tau'+\tau\sigma'-\tau\sigma'-\sigma\tau')=0$. Since $\dim W_{[u]}=2$ is the maximal isotropic dimension for a non-degenerate form in dimension $4$, $W_{[u]}$ is a **null plane**, and the same holds for
 $$
 W^{[v]}=\operatorname{span}\{(\gamma,\delta,0,0),\,(0,0,\gamma,\delta)\},\qquad [v]=[\gamma:\delta].
 $$
@@ -75,7 +75,7 @@ Their projectivisations $\ell_{[u]}=\mathbb{P}(W_{[u]})$ and $m_{[v]}=\mathbb{P}
 
 The projectivised null cone
 $$
-Q^2=\{[\tilde{Q}]\in\mathbb{P}^3:N(\tilde{Q})=0\}
+Q^2=\{[\tilde{Q}]\in\mathbb{P}^3:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}
 $$
 is a smooth irreducible quadric surface, isomorphic to $\mathbb{P}^1\times\mathbb{P}^1$; it is the classical **Segre quadric**. Non-degeneracy of $B$ gives smoothness, and over $\mathbb{C}$ all smooth quadric surfaces in $\mathbb{P}^3$ are projectively equivalent.
 
@@ -103,15 +103,15 @@ The rulings of $Q^2$ appear in this picture as follows. A line of $Q^2$ is a max
 
 The form $B$ defines a **polarity**, the correlation
 $$
-[\tilde{P}]\longmapsto[\tilde{P}]^{\perp}=\{[\tilde{Q}]:B(\tilde{P},\tilde{Q})=0\},
+[\tilde{P}]\longmapsto[\tilde{P}]^{\perp}=\{[\tilde{Q}]:\langle\tilde{P},\tilde{Q}\rangle_{\natural}=0\},
 $$
-well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff B(\tilde{P},\tilde{P})=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2B(\tilde{P},\cdot\,)$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$,
+well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff \langle\tilde{P},\tilde{P}\rangle_{\natural}=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2\langle\tilde{P},\cdot\,\rangle_{\natural}$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$,
 $$
 Q^2\cap[\tilde{P}]^{\perp}=\ell_{[u]}\cup m_{[v]},
 $$
-one line from each family. For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the biquaternion norm on the line $\tilde{P}+t\tilde{Q}$ is $2t\,B(\tilde{P},\tilde{Q})$, so
+one line from each family. For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the biquaternion norm on the line $\tilde{P}+t\tilde{Q}$ is $2t\,\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, so
 $$
-[\tilde{P}][\tilde{Q}]\subset Q^2\iff B(\tilde{P},\tilde{Q})=0,
+[\tilde{P}][\tilde{Q}]\subset Q^2\iff \langle\tilde{P},\tilde{Q}\rangle_{\natural}=0,
 $$
 in which case the two points lie on a common ruling line. A line through $[\tilde{P}]\in Q^2$ is therefore tangent exactly when its direction lies in the tangent hyperplane; the two ruling lines are tangent, and every other tangent line meets the quadric only at $[\tilde{P}]$.
 
@@ -130,7 +130,7 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 The **link** of the null cone is
 
 $$
-L=\{\tilde{Q}\in\mathbb{B}:N(\tilde{Q})=0,\ \|\tilde{Q}\|_E=1\}=\mathcal{N}\cap S^7_E.
+L=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0,\ \|\tilde{Q}\|_E=1\}=\mathcal{N}\cap S^7_E.
 $$
 
 Every nonzero null element is uniquely $t\,u$ with $t=\|\tilde{Q}\|_E>0$ and $u\in L$, so $\mathcal{N}$ is the cone on $L$ and is contractible (§*The null cone*). Since $\dim_{\mathbb{R}}\mathcal{N}=6$, the link has real dimension $5$. Under $M=uv^{T}$ with $\|u\|=\|v\|=1$,
@@ -185,13 +185,13 @@ $$
 
 compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and not a group, since only $S^0,S^1,S^3$ are groups. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ is its image under multiplication by $i$, homeomorphic to it.
 
-Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-((q'_1)^2+(q'_2)^2+(q'_3)^2)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $N(\tilde{Q})=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*).
+Finally, on either pure reality slice the restricted norm is definite, being $q_1^2+q_2^2+q_3^2$ on $P\cap\mathbb{H}_{\mathbb{B}}$ and $-((q'_1)^2+(q'_2)^2+(q'_3)^2)$ on $P\cap i\mathbb{H}_{\mathbb{B}}$. Hence $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ forces $\tilde{Q}=0$: the only null element of either pure reality slice is the origin, so the light cone meets these three-dimensional spaces only at its apex, unlike the Minkowski slices $\mathbb{M}_\pm$, whose null set is the three-dimensional light cone (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*).
 
 ## Summary
 
 - $\mathbb{B}\cong\mathbb{R}^8$ with the Euclidean topology is contractible, hence path-connected and simply connected with $\pi_n(\mathbb{B})=0$ for all $n\geq1$; the Euclidean structure itself, the six distinguished real subspaces and the Euclidean sphere are *The Euclidean Topology of the Biquaternion Algebra*, §*The Contractibility of the Algebra* and §*The Euclidean Unit Sphere*.
 - The Euclidean unit sphere $S^7_E$ is a closed, compact, connected $7$-manifold but not a group: $\|\cdot\|_E$ is not multiplicative and $S^7_E\not\subseteq\mathbb{B}^\times$. Its Hermitian topology is *The Euclidean Topology of the Biquaternion Algebra*; the level set that is a group, $N=1$, is the norm-one group treated in *The Biquaternion Unit Group as a Topological Group*.
-- The null cone $\mathcal{N}=\{N(\tilde{Q})=0\}=\{0\}\cup\mathcal{Z}$ is a closed real algebraic cone of real dimension $6$, irreducible, with the origin as its only singular point; it is a manifold away from the apex and non-manifold at the apex, and contractible, being the cone on its link; punctured, it is exactly the zero-divisor set.
+- The null cone $\mathcal{N}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0\}=\{0\}\cup\mathcal{Z}$ is a closed real algebraic cone of real dimension $6$, irreducible, with the origin as its only singular point; it is a manifold away from the apex and non-manifold at the apex, and contractible, being the cone on its link; punctured, it is exactly the zero-divisor set.
 - The link $L=\mathcal{N}\cap S^7_E$ is a closed connected $5$-manifold, an $S^1$-bundle over $S^2\times S^2$, simply connected with $\pi_2(L)\cong\mathbb{Z}$. Since $\pi_2(S^5)=0$, the apex is genuinely singular.
 - The projectivised null cone is the smooth quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, the Segre quadric; the null cone is the affine cone over it, and its two rulings are the two families of maximal isotropic null planes, each a $\mathbb{P}^1$.
 - In the coordinates of §*The Segre embedding* the norm is $Z_0Z_3-Z_1Z_2$ and the polar form is $B$; the quadric is the locus of self-polar points, and the polarity gives the tangency, with $Q^2\cap[\tilde{P}]^\perp=\ell_{[u]}\cup m_{[v]}$ at a point of the quadric.
@@ -206,12 +206,12 @@ Finally, on either pure reality slice the restricted norm is definite, being $q_
 | $\mathbb{B} \cong \mathbb{R}^8$ | Biquaternion algebra as a real topological space; contractible |
 | $\|\tilde{Q}\|_E = \big(\sum_{\mu=0}^{3} \|Q_\mu\|^2\big)^{1/2}$ | Euclidean norm; makes $\mathbb{B}$ a topological algebra |
 | $S^7_E = \{\|\tilde{Q}\|_E = 1\}$ | Euclidean unit sphere; a $7$-manifold, not a group |
-| $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\mathcal{N} = \{N(\tilde{Q}) = 0\}$ | Null cone; closed, real dimension $6$, contractible, singular at $0$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
+| $\mathcal{N} = \{\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0\}$ | Null cone; closed, real dimension $6$, contractible, singular at $0$ |
 | $\mathcal{Z}$ | Zero-divisor set; $\mathcal{N} = \{0\} \cup \mathcal{Z}$ |
 | $L = \mathcal{N} \cap S^7_E$ | Link of the null cone; $S^1$-bundle over $S^2 \times S^2$, $\pi_1 = 0$, $\pi_2 \cong \mathbb{Z}$ |
 | $Q^2 = \mathbb{P}(\mathcal{N}) \cong \mathbb{P}^1 \times \mathbb{P}^1$ | Projectivised null cone, the Segre quadric |
-| $B(\tilde{P},\tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | Polar form of $N$, the complex bilinear dot product; $B(e_\mu,e_\nu) = \delta_{\mu\nu}$ |
+| $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \sum_\mu P_\mu Q_\mu$ | Polar form of $N$, the complex bilinear dot product; $\langle e_\mu,e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ |
 | $Z_0,\dots,Z_3$ | Linear coordinates on $\mathbb{B}$ in which $N = Z_0Z_3 - Z_1Z_2$; see §*The Segre embedding* |
 | $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$; its image is $Q^2$ |
 | $[u] = [\alpha:\beta]$, $[v] = [\gamma:\delta]$ | The two factors of a null point, determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ |

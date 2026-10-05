@@ -182,6 +182,6 @@ The biquaternion algebra carries four mixed operators $\Phi^{\theta,\rho}_{\tild
 
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the graded structure of a Clifford algebra, the standard involutions and the inner automorphism group.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the conjugation anti-involutions and their fixed spaces.
-- Winfried Scharlau, *Quadratic and Hermitian Forms*, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the unitary group of a Hermitian form and its determinant-one part.
+- Winfried Scharlau, *Quadratic and Hermitian Forms*, Grundlehren der mathematischen Wissenschaften 270 (Springer, 1985), for the unitary group of a complex sesquilinear form and its determinant-one part.
 - Emil Artin, *Geometric Algebra* (Interscience, 1957; reprint Wiley, 1988), for the orthogonal group as an inner automorphism group and the role of the spinor norm.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge University Press, 10th anniversary ed. 2010), for the unitary group, its centre and the phase as the ambiguity of a state.

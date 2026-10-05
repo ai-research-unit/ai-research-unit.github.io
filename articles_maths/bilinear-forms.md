@@ -214,7 +214,7 @@ Alternating forms behave more rigidly than symmetric ones.
 
 **Proof.** The Gram matrix satisfies $G = -G^T$. Taking determinants, $\det G = \det(-G^T) = (-1)^n \det G$, where $n$ is the rank. Hence $2 \det G = 0$ when $n$ is odd. Since $2$ is invertible this gives $\det G = 0$, contradicting non-degeneracy.
 
-Over a field the same argument shows that the rank of any alternating form is even: the radical is orthogonal to all of $V$, so $V = W \perp \operatorname{rad}(B)$ with $W$ carrying a non-degenerate alternating form of dimension $\operatorname{rank}(B)$, to which the proposition applies.
+Over a field the rank of any alternating form is even, in every characteristic: the radical is orthogonal to all of $V$, so $V = W \perp \operatorname{rad}(B)$ with $W$ carrying a non-degenerate alternating form of dimension $\operatorname{rank}(B)$, and the proposition above applies to $W$ when $2$ is invertible. In characteristic two the determinant argument above gives nothing, $\det G = \det G$, and the conclusion is drawn in §*The Symplectic Basis*, whose normal form is proved over an arbitrary field and exhibits the dimension of a non-degenerate alternating space as twice the number of its blocks.
 
 ### The Symplectic Basis
 

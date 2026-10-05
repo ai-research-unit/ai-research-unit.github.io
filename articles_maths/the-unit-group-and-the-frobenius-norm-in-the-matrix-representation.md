@@ -34,12 +34,12 @@ Two immediate consequences, recorded here because they are read from the realiza
 **Proposition (the unit groups in matrix form).** Under $\Phi$,
 
 $$
-\mathbb{B}^\times \cong GL_2(\mathbb{C}), \qquad \{\tilde{Q} : N(\tilde{Q}) = 1\} \cong SL_2(\mathbb{C}).
+\mathbb{B}^\times \cong GL_2(\mathbb{C}), \qquad \{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1\} \cong SL_2(\mathbb{C}).
 $$
 
-**Proof.** The realization is an algebra isomorphism, so it carries invertible elements to invertible matrices, giving the first statement; and it carries the biquaternion norm to the determinant, $N(\tilde{Q}) = \det\Phi(\tilde{Q})$, so the locus $N = 1$ is the determinant-one locus, giving the second. $\square$
+**Proof.** The realization is an algebra isomorphism, so it carries invertible elements to invertible matrices, giving the first statement; and it carries the biquaternion norm to the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\Phi(\tilde{Q})$, so the locus $N = 1$ is the determinant-one locus, giving the second. $\square$
 
-The unit-norm group is the group that acts on the Hermitian subspace in the two-sided action of *The 4×4 Regular Matrix Representation under the Three Topologies*, §*The Topology Induced by the Hermitian Form*; in the matrix picture it is $SL_2(\mathbb{C})$ acting by $*$-congruence on the Hermitian matrices.
+The unit-norm group is the group that acts on the Hermitian subspace in the two-sided action of *The 4×4 Regular Matrix Representation under the Four Forms*, §*The Topology Induced by the Hermitian Form*; in the matrix picture it is $SL_2(\mathbb{C})$ acting by $*$-congruence on the Hermitian matrices.
 
 ## The Maximal Compact Slice
 
@@ -78,7 +78,7 @@ $$
 
 has image in the identity component $SO^+(1,3)$ of the orthogonal group of the form, because $SL_2(\mathbb{C})$ is connected and the action is continuous.
 
-**Proof.** The action is continuous in $\tilde{A}$, the group $SL_2(\mathbb{C})$ is connected as a complex algebraic group, and the continuous image of a connected set is connected; the image therefore lies in the identity component of the orthogonal group. The double cover itself, with its central kernel of order two, is *The 4×4 Regular Matrix Representation under the Three Topologies*, §*The Topology Induced by the Hermitian Form*; the group and its geometry are *Biquaternion Rotations and Lorentz Transformations*. $\square$
+**Proof.** The action is continuous in $\tilde{A}$, the group $SL_2(\mathbb{C})$ is connected as a complex algebraic group, and the continuous image of a connected set is connected; the image therefore lies in the identity component of the orthogonal group. The double cover itself, with its central kernel of order two, is *The 4×4 Regular Matrix Representation under the Four Forms*, §*The Topology Induced by the Hermitian Form*; the group and its geometry are *Biquaternion Rotations and Lorentz Transformations*. $\square$
 
 ## Summary
 
@@ -92,7 +92,7 @@ The matrix realization is a linear similarity of Euclidean spaces, $\|\Phi(\tild
 | $S^7$ | Euclidean unit sphere of $\mathbb{B}_{\mathbb{R}} \cong \mathbb{R}^8$ |
 | $S^3$, $S^2$ | Unit spheres of the quaternion subspace and of its root set |
 | $GL_2(\mathbb{C})$ | Group of units of the realization |
-| $SL_2(\mathbb{C})$ | Unit-norm group, $\{\tilde{Q} : N(\tilde{Q}) = 1\}$ |
+| $SL_2(\mathbb{C})$ | Unit-norm group, $\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1\}$ |
 | $U(2)$, $SU(2)$ | Maximal compact subgroups of $GL_2(\mathbb{C})$ and $SL_2(\mathbb{C})$ |
 | $\mathrm{Spin}(3) \cong SU(2)$ | Double cover of $SO(3)$ |
 | $SO^+(1,3)$ | Identity component of the orthogonal group, image of the two-sided action |

@@ -61,7 +61,7 @@ An injective unital $*$-homomorphism is isometric.
 
 **Example (the continuous functions).** For $A = C(X,\mathbb{C})$ the norm is $\lVert f\rVert_\infty = r(f)$, and the involution is isometric: $\lVert\bar f\rVert_\infty = \lVert f\rVert_\infty$. The spectral radius is the sup norm, and the $\mathrm{C}^*$-identity is the pointwise identity $\lvert\bar ff\rvert = \lvert f\rvert^2$.
 
-**Example (the convolution algebra).** For $A = L^1(\mathbb{R})$ with the convolution product and the involution $f^*(t) = \overline{f(-t)}$, the involution is not isometric for the $L^1$-norm, $\lVert f^*\rVert_1 = \lVert f\rVert_1$ is true but the norm is not a $\mathrm{C}^*$-norm, since the $\mathrm{C}^*$-identity fails; the $\mathrm{C}^*$-envelope is the reduced $\mathrm{C}^*$-algebra of $\mathbb{R}$, on which the $\mathrm{C}^*$-identity holds.
+**Example (the convolution algebra).** For $A = L^1(\mathbb{R})$ with the convolution product and the involution $f^*(t) = \overline{f(-t)}$, the involution is isometric for the $L^1$-norm, $\lVert f^*\rVert_1 = \lVert f\rVert_1$, but the norm is not a $\mathrm{C}^*$-norm, since the $\mathrm{C}^*$-identity fails; the $\mathrm{C}^*$-envelope is the reduced $\mathrm{C}^*$-algebra of $\mathbb{R}$, on which the $\mathrm{C}^*$-identity holds.
 
 ## The Involution and the Banach *-Norms
 

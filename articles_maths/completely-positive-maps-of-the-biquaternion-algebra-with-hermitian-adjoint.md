@@ -13,7 +13,7 @@ The rank-one case is exactly the sandwich of *Two-Sided Operators on the Biquate
 
 ## Positive Maps and the Cone
 
-**Convention.** The algebra carries the Hermitian form $(\tilde R,\tilde V)=\mathrm{Sc}(\tilde{R}^{*}\tilde V)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde V\succeq0$ implies $\Phi(\tilde V)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
+**Convention.** The algebra carries the complex sesquilinear form $(\tilde R,\tilde V)=\mathrm{Sc}(\tilde{R}^{*}\tilde V)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde V\succeq0$ implies $\Phi(\tilde V)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
 
 **Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde V\succeq0$ then $\tilde{Q}\tilde V\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
 

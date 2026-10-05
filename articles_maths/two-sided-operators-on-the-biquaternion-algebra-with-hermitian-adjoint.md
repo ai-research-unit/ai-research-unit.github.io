@@ -8,7 +8,7 @@ $$
 \Theta_{\tilde{Q}}\colon \mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde{Q}}(\tilde P) = \tilde{Q}\,\tilde P\,\tilde{Q}^{*},
 $$
 
-which is the dagger sandwich $\mathrm{H}_{\tilde{Q}}$ of the corpus. This article studies the family $\{\Theta_{\tilde{Q}}\}$ as a family of operators: the composition law, the behaviour under a change of parameter, the adjoint with respect to the Hermitian form of the algebra, and the three types — self-adjoint, skew-adjoint and unitary — that the adjoint defines.
+which is the dagger sandwich $\mathrm{H}_{\tilde{Q}}$ of the corpus. This article studies the family $\{\Theta_{\tilde{Q}}\}$ as a family of operators: the composition law, the behaviour under a change of parameter, the adjoint with respect to the complex sesquilinear form of the algebra, and the three types — self-adjoint, skew-adjoint and unitary — that the adjoint defines.
 
 The result that organises the article is that **the operator is quadratic in the parameter, while the adjoint is linear in it**. Composition reads $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$ on the nose, but $\Theta_{A\tilde{Q}}=\lvert A\rvert^{2}\Theta_{\tilde{Q}}$ for a central $A$: the map $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ is multiplicative and not additive, and it is blind to the central phase. Two consequences are worked out. The Hermitian and the anti-Hermitian elements **give the same operators**, because $\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$ and $\Theta_{i\tilde{Q}}=\Theta_{\tilde{Q}}$; and a two-sided operator is **never skew-adjoint** unless it vanishes, because the sandwich cannot change the sign of the quadratic form it carries. Both contrast with the one-sided case of the companion article, where the parameter enters linearly and the two sectors give skew and self-adjoint operators respectively.
 
@@ -19,28 +19,28 @@ The article is pure algebra. The algebra, the dagger and the six subspaces are *
 **Definition (the scalar form of the dagger).** For $\tilde P$ and $\tilde S$ in $\mathbb{B}$ put
 
 $$
-(\tilde P,\tilde S) = \mathrm{Sc}\bigl(\tilde{P}^{*}\tilde S\bigr).
+\langle\tilde S,\tilde P\rangle_{*} = \mathrm{Sc}\bigl(\tilde{P}^{*}\tilde S\bigr).
 $$
 
 In the basis $e_{0},e_{1},e_{2},e_{3}$ of *Biquaternions as a Vector Space over $\mathbb{C}$*, with $\tilde P=\sum_{\mu}P_{\mu}e_{\mu}$ and $\tilde S=\sum_{\mu}S_{\mu}e_{\mu}$,
 
 $$
-(\tilde P,\tilde S) = \sum_{\mu=0}^{3} P_{\mu}^{*}S_{\mu},
+\langle\tilde S,\tilde P\rangle_{*} = \sum_{\mu=0}^{3} P_{\mu}^{*}S_{\mu},
 $$
 
-so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{4}$ read in the coefficients (*The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*, §*The Forms and Positivity in Coordinates*).
+so the scalar form of the dagger is the standard complex sesquilinear form of $\mathbb{C}^{4}$ read in the coefficients (*The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*, §*The Forms and Positivity in Coordinates*).
 
 **Proposition (the form is Hermitian, positive definite and non-degenerate).** For all $\tilde P,\tilde S$,
 
 $$
-(\tilde P,\tilde S) = ((\tilde S,\tilde P))^{\natural},\qquad (\tilde P,\tilde P) = \sum_{\mu}\lvert P_{\mu}\rvert^{2} > 0 \ \text{ for } \tilde P\neq0 ,
+\langle\tilde S,\tilde P\rangle_{*} = (\langle\tilde P,\tilde S\rangle_{*})^{\natural},\qquad \langle\tilde P,\tilde P\rangle_{*} = \sum_{\mu}\lvert P_{\mu}\rvert^{2} > 0 \ \text{ for } \tilde P\neq0 ,
 $$
 
-and the form is $\mathbb{C}$-linear in the second argument and conjugate-linear in the first.
+and, as a function of the pair $(\tilde P,\tilde S)$, the form is $\mathbb{C}$-linear in the second argument and conjugate-linear in the first.
 
 *Proof.* The first identity is the involution property of the dagger, the second is the display above, and the two linearities are the definitions.
 
-**Remark (two forms, two roles).** The form $(\cdot,\cdot)$ is the **positive definite** form of the algebra, of signature $(4,0)$ over $\mathbb{C}$; the quaternion norm $N(\tilde{Q})=\sum_{\mu}Q_{\mu}^{2}$ of *Biquaternion Norm and Invertibility* is a **complex quadratic** form, indefinite and isotropic on the null cone. The operator theory of this article is built on the first, and the two must not be interchanged. In particular the Gram matrix of $(\cdot,\cdot)$ in the basis is the identity, $(e_{\mu},e_{\nu})=\delta_{\mu\nu}$, so the basis is orthonormal and the two coordinate blocks $\{e_{0}\}$ and $\{e_{1},e_{2},e_{3}\}$ are orthogonal. There is no such orthogonality for $N$.
+**Remark (two forms, two roles).** The form $\langle\cdot,\cdot\rangle_{*}$ is the **positive definite** form of the algebra, of signature $(4,0)$ over $\mathbb{C}$; the quaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}Q_{\mu}^{2}$ of *Biquaternion Norm and Invertibility* is a **complex quadratic** form, indefinite and isotropic on the null cone. The operator theory of this article is built on the first, and the two must not be interchanged. In particular the Gram matrix of $\langle\cdot,\cdot\rangle_{*}$ in the basis is the identity, $\langle e_{\nu},e_{\mu}\rangle_{*}=\delta_{\mu\nu}$, so the basis is orthonormal and the two coordinate blocks $\{e_{0}\}$ and $\{e_{1},e_{2},e_{3}\}$ are orthogonal. There is no such orthogonality for $\langle\cdot,\cdot\rangle_{\natural}$.
 
 ## The Operator of an Element
 
@@ -82,10 +82,10 @@ In particular $\Theta_{i\tilde{Q}}=\Theta_{\tilde{Q}}$, $\Theta_{-\tilde{Q}}=\Th
 
 ## The Adjoint of a Two-Sided Operator
 
-Let $T$ be a $\mathbb{C}$-linear operator on $\mathbb{B}$. Its **adjoint** $T^{*}$ with respect to $(\cdot,\cdot)$ is the operator with
+Let $T$ be a $\mathbb{C}$-linear operator on $\mathbb{B}$. Its **adjoint** $T^{*}$ with respect to $\langle\cdot,\cdot\rangle_{*}$ is the operator with
 
 $$
-(T\tilde P, \tilde S) = (\tilde P, T^{*}\tilde S) \qquad\text{for all } \tilde P,\tilde S\in\mathbb{B}.
+\langle\tilde S,T\tilde P\rangle_{*} = \langle T^{*}\tilde S,\tilde P\rangle_{*} \qquad\text{for all } \tilde P,\tilde S\in\mathbb{B}.
 $$
 
 The form is positive definite, hence non-degenerate, so the adjoint exists and is unique for every operator.
@@ -99,20 +99,20 @@ $$
 *Proof.* Let $\tilde P,\tilde S\in\mathbb{B}$. Since the dagger is an anti-involution and an involution,
 
 $$
-(\Theta_{\tilde{Q}}\tilde P, \tilde S) = \mathrm{Sc}\bigl((\tilde{Q}\tilde P\tilde{Q}^{*})^{\dagger}\tilde S\bigr) = \mathrm{Sc}\bigl(\tilde{Q}\,\tilde{P}^{*}\tilde{Q}^{*}\tilde S\bigr).
+\langle\tilde S,\Theta_{\tilde{Q}}\tilde P\rangle_{*} = \mathrm{Sc}\bigl((\tilde{Q}\tilde P\tilde{Q}^{*})^{\dagger}\tilde S\bigr) = \mathrm{Sc}\bigl(\tilde{Q}\,\tilde{P}^{*}\tilde{Q}^{*}\tilde S\bigr).
 $$
 
 The scalar part is invariant under cyclic permutation, $\mathrm{Sc}(ab)=\mathrm{Sc}(ba)$, so this equals
 
 $$
-\mathrm{Sc}\bigl(\tilde{P}^{*}\tilde{Q}^{*}\tilde S\,\tilde{Q}\bigr) = \mathrm{Sc}\bigl(\tilde{P}^{*}\,(\tilde{Q}^{*}\tilde S\,\tilde{Q})\bigr) = \bigl(\tilde P,\ \tilde{Q}^{*}\tilde S\,\tilde{Q}\bigr) = \bigl(\tilde P,\ \Theta_{\tilde{Q}^{*}}\tilde S\bigr) .
+\mathrm{Sc}\bigl(\tilde{P}^{*}\tilde{Q}^{*}\tilde S\,\tilde{Q}\bigr) = \mathrm{Sc}\bigl(\tilde{P}^{*}\,(\tilde{Q}^{*}\tilde S\,\tilde{Q})\bigr) = \langle\tilde{Q}^{*}\tilde S\,\tilde{Q},\tilde P\rangle_{*} = \langle\Theta_{\tilde{Q}^{*}}\tilde S,\tilde P\rangle_{*} .
 $$
 
 The adjoint is unique, so $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$. The identity was checked on the four basis elements and on random elements to machine precision.
 
 **Corollary (the dagger is natural for the family).** The assignment $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ carries the dagger of the algebra to the adjoint of the operator: $\Theta_{\tilde{Q}^{*}}=(\Theta_{\tilde{Q}})^{*}$. The family is therefore stable under the adjoint, and the adjoint of $\Theta_{\tilde{Q}}$ is again a two-sided operator, of the adjoint element. In particular $\Theta_{\tilde{Q}}$ is invertible if and only if $\tilde{Q}\in\mathbb{B}^{\times}$, with $(\Theta_{\tilde{Q}})^{-1}=\Theta_{\tilde{Q}^{-1}}$, by the composition law.
 
-**Remark (the real form gives the same adjoint).** The real part $\mathrm{Re}(\cdot,\cdot)$ is a Euclidean inner product on the eight-dimensional real space $\mathbb{B}$, and a $\mathbb{C}$-linear operator is real-linear; its adjoint for the Euclidean form is the same operator $\Theta_{\tilde{Q}^{*}}$, because the defining identity splits into real and imaginary parts and both hold. So no ambiguity arises from the choice between the complex and the real form.
+**Remark (the real form gives the same adjoint).** The real part $\mathrm{Re}\langle\cdot,\cdot\rangle_{*}$ is a Euclidean inner product on the eight-dimensional real space $\mathbb{B}$, and a $\mathbb{C}$-linear operator is real-linear; its adjoint for the Euclidean form is the same operator $\Theta_{\tilde{Q}^{*}}$, because the defining identity splits into real and imaginary parts and both hold. So no ambiguity arises from the choice between the complex and the real form.
 
 ## Self-Adjoint Operators
 
@@ -150,7 +150,7 @@ $$
 
 In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *Biquaternion 2×2 Matrix Element Representation* the dagger is the conjugate transpose, so $U$ is the unitary group $U(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
-**Theorem (the unitary two-sided operators).** For $\tilde{Q}\in\mathbb{B}$, the operator $\Theta_{\tilde{Q}}$ is unitary, $(\Theta_{\tilde{Q}}\tilde P,\Theta_{\tilde{Q}}\tilde S)=(\tilde P,\tilde S)$ for all $\tilde P,\tilde S$, if and only if $\tilde{Q}^{*}\tilde{Q}$ is a central scalar of modulus one:
+**Theorem (the unitary two-sided operators).** For $\tilde{Q}\in\mathbb{B}$, the operator $\Theta_{\tilde{Q}}$ is unitary, $\langle\Theta_{\tilde{Q}}\tilde S,\Theta_{\tilde{Q}}\tilde P\rangle_{*}=\langle\tilde S,\tilde P\rangle_{*}$ for all $\tilde P,\tilde S$, if and only if $\tilde{Q}^{*}\tilde{Q}$ is a central scalar of modulus one:
 
 $$
 \Theta_{\tilde{Q}}\ \text{unitary} \iff \tilde{Q}^{*}\tilde{Q}\in U(1)\,e_{0}.
@@ -178,7 +178,7 @@ and the first map is injective on that quotient.
 
 *Proof.* If $\tilde{R}=\omega\tilde{Q}$ then $\Theta_{\tilde{R}}=\Theta_{\tilde{Q}}$ by the parameter rule. Conversely, let $\Theta_{\tilde{R}}=\Theta_{\tilde{Q}}$ with $\tilde{Q}$ invertible. Applying both to $e_{0}$ gives $\tilde{R}\tilde{R}^{*}=\tilde{Q}\tilde{Q}^{*}$, so $\tilde{R}$ is invertible too, and $\Theta_{\tilde{Q}^{-1}\tilde{R}}(\tilde P)=\Theta_{\tilde{Q}^{-1}}(\Theta_{\tilde{R}}(\tilde P))=\Theta_{\tilde{Q}^{-1}}(\Theta_{\tilde{Q}}(\tilde P))=\tilde P$, so $\Theta_{\tilde{Q}^{-1}\tilde{R}}$ is the identity. That operator is multiplicative and its parameter $\tilde W=\tilde{Q}^{-1}\tilde{R}$ satisfies $\Theta_{\tilde W}(e_{0})=e_{0}$, whence $\tilde W\tilde{W}^{*}=e_{0}$ and $\tilde W\in U$; and $\Theta_{\tilde W}$ being the identity operator, $\tilde W$ is central. A central unitary element is a scalar of modulus one, so $\tilde W=\omega e_{0}$ and $\tilde{R}=\omega\tilde{Q}$.
 
-**Remark (the zero element).** The assignment is not injective overall: $\Theta_{\tilde{Q}}=\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}$ for every $\tilde{Q}$, and $\Theta_{\tilde{Q}}=\Theta_{\tilde{Q}+\tilde{R}}$ can happen without $\tilde{R}$ central, since the sandwich depends on $\tilde{Q}$ through the pair $(\tilde{Q},\tilde{Q}^{*})$ up to the phase. What is true without any hypothesis is that $\Theta_{\tilde{Q}}$ is the zero operator if and only if $\tilde{Q}=0$, because $\Theta_{\tilde{Q}}(e_{0})=\tilde{Q}\tilde{Q}^{*}=0$ forces $\tilde{Q}=0$.
+**Remark (the zero element).** The assignment is not injective overall: $\Theta_{\tilde{Q}}=\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}$ for every $\tilde{Q}$, and $\Theta_{\tilde{Q}}=\Theta_{\tilde{Q}+\tilde{R}}$ can happen without $\tilde{R}$ central, since the sandwich depends on $\tilde{Q}$ through the pair $\langle\tilde{Q}^{*},\tilde{Q}\rangle_{*}$ up to the phase. What is true without any hypothesis is that $\Theta_{\tilde{Q}}$ is the zero operator if and only if $\tilde{Q}=0$, because $\Theta_{\tilde{Q}}(e_{0})=\tilde{Q}\tilde{Q}^{*}=0$ forces $\tilde{Q}=0$.
 
 ## The Image of the Identity and the Cone
 
@@ -221,7 +221,7 @@ which is unitary equivalence of the two-sided operators by a two-sided operator.
 
 **A Hermitian generator and its anti-Hermitian twin.** Let $\tilde{Q}=e_{1}$, of square $e_{1}^{2}=-e_{0}$ and anti-Hermitian, $e_{1}^{\dagger}=-e_{1}$. Then $\tilde{Q}^{*}\tilde{Q}=-e_{1}^{2}=e_{0}$, so $\tilde{Q}\in U$ and $\Theta_{e_{1}}$ is simultaneously self-adjoint, unitary and the inner automorphism $\tilde P\mapsto e_{1}\tilde Pe_{1}^{-1}$. On the vector subspace the corpus reads this operator geometrically: a unit real vector acts as the **rotation by $\pi$ about itself**, since $\Theta_{e_{1}}=e_{1}(\cdot)e_{1}^{-1}$ agrees with $-\rho_{u}$ in the notation of the reflection $\rho_{u}(\tilde P)=-u\tilde Pu^{-1}$ (*The Sandwich Action in Subspaces*, *Biquaternion Versors and the Orthogonal Group*). For $\tilde{Q}=ie_{1}$, the Hermitian twin of $e_{1}$, the operator is the same one, $\Theta_{ie_{1}}=\Theta_{e_{1}}$, while $ie_{1}\in\mathbb{M}_+$: the two sectors give one operator, in agreement with the corollary above.
 
-**A null element.** Let $\tilde{Q}=e_{0}+ie_{3}$, of norm $N(\tilde{Q})=1+i^{2}=0$, so $\tilde{Q}$ is a zero divisor. The element is Hermitian, because both $e_{0}$ and $ie_{3}$ are fixed by the dagger, so $\Theta_{\tilde{Q}}$ is self-adjoint. Its image of the identity is
+**A null element.** Let $\tilde{Q}=e_{0}+ie_{3}$, of norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1+i^{2}=0$, so $\tilde{Q}$ is a zero divisor. The element is Hermitian, because both $e_{0}$ and $ie_{3}$ are fixed by the dagger, so $\Theta_{\tilde{Q}}$ is self-adjoint. Its image of the identity is
 
 $$
 \tilde{Q}\,\tilde{Q}^{*} = \tilde{Q}^{2} = e_{0} + 2ie_{3} + (ie_{3})^{2} = e_{0} + 2ie_{3} + i^{2}e_{3}^{2} = e_{0} + 2ie_{3} + e_{0} = 2\,(e_{0}+ie_{3}),
@@ -229,11 +229,11 @@ $$
 
 using $(ie_{3})^{2}=i^{2}e_{3}^{2}=(-1)(-1)=e_{0}$ for the central imaginary. So $\Theta_{\tilde{Q}}(e_{0})=2\tilde{Q}$ is a Hermitian element of rank one in the matrix model, where $\Phi(\tilde{Q})=\mathrm{diag}(2,0)$: it is positive semidefinite and singular, not a scalar. And $\tilde{Q}^{*}\tilde{Q}=2\tilde{Q}$ is not a central scalar of modulus one, so $\Theta_{\tilde{Q}}$ is neither unitary nor an automorphism. This is the case in which the image of the identity is singular: the operator collapses the algebra onto the rank-one corner that the null element defines, which is why a zero divisor contributes to the kernel phenomena of the last sections and never to a type theorem.
 
-**A check of the adjoint.** For $\tilde P=e_{0}+e_{1}$ and $\tilde S=e_{2}+ie_{3}$, the identity $(\Theta_{\tilde{Q}}\tilde P,\tilde S)=(\tilde P,\Theta_{\tilde{Q}^{*}}\tilde S)$ was verified to machine precision for $\tilde{Q}=e_{1}+ie_{2}$ and for random $\tilde{Q}$, over the four basis elements and over random pairs.
+**A check of the adjoint.** For $\tilde P=e_{0}+e_{1}$ and $\tilde S=e_{2}+ie_{3}$, the identity $\langle\tilde S,\Theta_{\tilde{Q}}\tilde P\rangle_{*}=\langle\Theta_{\tilde{Q}^{*}}\tilde S,\tilde P\rangle_{*}$ was verified to machine precision for $\tilde{Q}=e_{1}+ie_{2}$ and for random $\tilde{Q}$, over the four basis elements and over random pairs.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the positive definite Hermitian form $(\tilde P,\tilde S)=\mathrm{Sc}(\tilde{P}^{*}\tilde S)=\sum_{\mu}P_{\mu}^{*}S_{\mu}$, whose Gram matrix in the basis $e_{\mu}$ is the identity; the two-sided operator of an element is the sandwich $\Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\tilde P\tilde{Q}^{*}$, which is the dagger sandwich of the corpus. The assignment $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ is **multiplicative and quadratic** in the parameter: $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$, $\Theta_{A\tilde{Q}}=\lvert A\rvert^{2}\Theta_{\tilde{Q}}$ for central $A$, whence $\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$; it is not additive, the failure being the cross term $\tilde{Q}\tilde P\tilde{R}^{*}+\tilde{R}\tilde P\tilde{Q}^{*}$. Its **adjoint** is $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$, so the dagger is natural for the family. The type theorems are: $\Theta_{\tilde{Q}}$ is **self-adjoint** exactly when $\tilde{Q}^{*}=\omega\tilde{Q}$ with $\lvert\omega\rvert=1$, which includes both sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ and which makes the two sectors give the same operators; $\Theta_{\tilde{Q}}$ is **unitary** exactly when $\tilde{Q}^{*}\tilde{Q}\in U(1)e_{0}$; $\Theta_{\tilde{Q}}$ is an **automorphism** exactly when $\tilde{Q}\in U$, and then it is the inner automorphism; and $\Theta_{\tilde{Q}}$ is **never skew-adjoint** unless $\tilde{Q}=0$, because the sandwich is quadratic and its numerical range is non-negative. The kernel of the assignment on the units is the central circle, so it factors through $\mathbb{B}^{\times}/U(1)e_{0}$, and the inner automorphisms are $U/U(1)\cong SO(3)$. The image of the identity is the cone $\{\tilde{Q}\tilde{Q}^{*}\}$, whose interior is the image of the units. The last three sections put the operators into the two equivalence relations of the corpus: congruence, of invariant the inertia, and unitary equivalence, of invariant the spectrum, with the two-sided operators of the slice acting as the automorphisms that preserve the cone and the slice.
+The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the positive definite complex sesquilinear form $\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde{P}^{*}\tilde S)=\sum_{\mu}P_{\mu}^{*}S_{\mu}$, whose Gram matrix in the basis $e_{\mu}$ is the identity; the two-sided operator of an element is the sandwich $\Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\tilde P\tilde{Q}^{*}$, which is the dagger sandwich of the corpus. The assignment $\tilde{Q}\mapsto\Theta_{\tilde{Q}}$ is **multiplicative and quadratic** in the parameter: $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$, $\Theta_{A\tilde{Q}}=\lvert A\rvert^{2}\Theta_{\tilde{Q}}$ for central $A$, whence $\Theta_{i\tilde{Q}}=\Theta_{-\tilde{Q}}=\Theta_{\tilde{Q}}$; it is not additive, the failure being the cross term $\tilde{Q}\tilde P\tilde{R}^{*}+\tilde{R}\tilde P\tilde{Q}^{*}$. Its **adjoint** is $(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$, so the dagger is natural for the family. The type theorems are: $\Theta_{\tilde{Q}}$ is **self-adjoint** exactly when $\tilde{Q}^{*}=\omega\tilde{Q}$ with $\lvert\omega\rvert=1$, which includes both sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ and which makes the two sectors give the same operators; $\Theta_{\tilde{Q}}$ is **unitary** exactly when $\tilde{Q}^{*}\tilde{Q}\in U(1)e_{0}$; $\Theta_{\tilde{Q}}$ is an **automorphism** exactly when $\tilde{Q}\in U$, and then it is the inner automorphism; and $\Theta_{\tilde{Q}}$ is **never skew-adjoint** unless $\tilde{Q}=0$, because the sandwich is quadratic and its numerical range is non-negative. The kernel of the assignment on the units is the central circle, so it factors through $\mathbb{B}^{\times}/U(1)e_{0}$, and the inner automorphisms are $U/U(1)\cong SO(3)$. The image of the identity is the cone $\{\tilde{Q}\tilde{Q}^{*}\}$, whose interior is the image of the units. The last three sections put the operators into the two equivalence relations of the corpus: congruence, of invariant the inertia, and unitary equivalence, of invariant the spectrum, with the two-sided operators of the slice acting as the automorphisms that preserve the cone and the slice.
 
 ## Summary of Notation
 
@@ -242,8 +242,8 @@ The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$, $e_{0}=1$, $e_{k}^{2}=-1$ |
 | ${}^{*}$ | Hermitian conjugation; fixed space $\mathbb{M}_+$, anti-fixed $\mathbb{M}_-$ |
 | $\mathbb{C}_{\mathbb{B}}=\{\lambda e_{0}\}$ | Centre of the algebra, the complex scalars |
-| $(\tilde P,\tilde S)=\mathrm{Sc}(\tilde{P}^{*}\tilde S)$ | Scalar form of the dagger; Gram matrix the identity |
-| $N(\tilde{Q})=\sum_{\mu}Q_{\mu}^{2}$ | Biquaternion norm; complex quadratic, indefinite |
+| $\langle\tilde S,\tilde P\rangle_{*}=\mathrm{Sc}(\tilde{P}^{*}\tilde S)$ | Scalar form of the dagger; Gram matrix the identity |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}Q_{\mu}^{2}$ | Biquaternion norm; complex quadratic, indefinite |
 | $\Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\tilde P\tilde{Q}^{*}$ | The two-sided operator of $\tilde{Q}$; the dagger sandwich |
 | $\Theta_{\tilde{Q}\tilde{R}}=\Theta_{\tilde{Q}}\circ\Theta_{\tilde{R}}$ | Composition law; the assignment is multiplicative |
 | $\Theta_{A\tilde{Q}}=\lvert A\rvert^{2}\Theta_{\tilde{Q}}$ | Parameter rule for central $A$; blindness to the phase |

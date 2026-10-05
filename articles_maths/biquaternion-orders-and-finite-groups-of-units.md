@@ -7,7 +7,7 @@ The biquaternion algebra carries integral structures, and the groups of units of
 
 This article is the integral and finite-group entry of the Topology group. The lattice-theoretic treatment of the quaternion orders — rank, index, covolume, duality, base change — is *Lattices and the Quaternion Lattice*; the order theory of the quaternion algebra over $\mathbb{Q}$, with maximality and the arithmetic of the norm, is *Division Algebras*; the Clifford lift of the finite reflection groups and the McKay correspondence are *Reflection Groups and Clifford Algebras with Signed Inner Conjugation* and *Root Systems and Classification*. Those results are cited, not re-derived, and the present article owns their biquaternion statement: the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real slice, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_0\}\cong SO(3)$, the rotor and the rotation $\rho_v(\tilde R)=-v\tilde Rv^{-1}$ are *Biquaternion Rotations and Lorentz Transformations*, cited.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Introduction to the Six Subspaces*). The norm is $N(\tilde{Q})=\sum_\mu Q_\mu^2$, and on the real slice it is the positive definite form $\sum_\mu q_\mu^2$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$, products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_k^2=-e_0$, so that $e_1e_2e_3=-e_0$. The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ is the real slice (*Introduction to the Six Subspaces*). The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$, and on the real slice it is the positive definite form $\sum_\mu q_\mu^2$.
 
 ---
 
@@ -41,7 +41,7 @@ $$
 (\mathcal{L}')^{\times}=\mathcal{L}^{\times}\cup\{\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)\}\cong 2T .
 $$
 
-**Proof.** On real quaternion coordinates the norm is $N(\tilde q)=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^*/N(\tilde q)$ with $\tilde q^*$ the quaternion conjugate, and $\tilde q^*$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $N(\tilde q)=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
+**Proof.** On real quaternion coordinates the norm is $\langle\tilde q,\tilde q\rangle_{\natural}=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^*/\langle\tilde q,\tilde q\rangle_{\natural}$ with $\tilde q^*$ the quaternion conjugate, and $\tilde q^*$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\langle\tilde q,\tilde q\rangle_{\natural}=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_0\pm e_1\pm e_2\pm e_3)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
 
 **Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
@@ -59,7 +59,7 @@ Q^2=-Q^*,
 $$
 and therefore
 $$
-Q^3=Q\,Q^2=-QQ^*=-N(Q)e_0=-e_0,\qquad Q^6=e_0 ,
+Q^3=Q\,Q^2=-QQ^*=-\langle Q,Q\rangle_{\natural}e_0=-e_0,\qquad Q^6=e_0 ,
 $$
 so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.
 
@@ -137,7 +137,7 @@ They form an order in $\mathbb{B}$ over $\mathbb{Z}[i]$, and the larger $\Lambda
 $$
 (e_0+n)^k=e_0+kn .
 $$
-Each of these elements has norm $N(e_0+kn)=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.
+Each of these elements has norm $\langle e_0+kn,e_0+kn\rangle_{\natural}=1+k^2+(ik)^2=1$, since the coefficients of $e_0+kn$ are $Q_0=1$, $Q_1=k$, $Q_2=ik$, $Q_3=0$; a norm-one element has inverse its conjugate and so is a unit. Hence $\Lambda^{\times}$ contains the infinite family $\{e_0+kn:k\in\mathbb{Z}\}$.
 
 **Remark.** The finite unit groups are therefore those of the *real* order, not of the complex one. The presence of nilpotent directions in the complex order is the same phenomenon as the presence of zero divisors in the algebra at large: $\mathbb{B}\cong M_2(\mathbb{C})$ is not a division algebra, and its integral order inherits unipotent units.
 

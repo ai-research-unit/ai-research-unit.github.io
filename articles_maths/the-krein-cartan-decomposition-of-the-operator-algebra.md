@@ -2,20 +2,20 @@
 
 ## Introduction
 
-The Krein form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $U(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*.
+The quaternion sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the quaternion bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $U(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*.
 
-**Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_0,e_1,e_2,e_3$; the Hermitian form has Gram matrix $\mathrm{I}_4$, the bilinear form $\mathrm{I}_4$ and the Krein form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
+**Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_0,e_1,e_2,e_3$; the complex sesquilinear form has Gram matrix $\mathrm{I}_4$, the quaternion bilinear form $\mathrm{I}_4$ and the quaternion sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
 
 ## The Three Adjoints of the Operator Algebra
 
-**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The Three Pairings of the Biquaternion Algebra* define three adjoints,
+**Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The Four Pairings of the Biquaternion Algebra* define three adjoints,
 
 $$
-B(M\tilde{P},\tilde{Q})=B(\tilde{P},M^{\mathsf T}\tilde{Q}),
+\langle M\tilde{P},\tilde{Q}\rangle=\langle\tilde{P},M^{\mathsf T}\tilde{Q}\rangle,
 \qquad
 \langle M\tilde{P},\tilde{Q}\rangle=\langle\tilde{P},M^{*}\tilde{Q}\rangle,
 \qquad
-[M\tilde{P},\tilde{Q}]=[\tilde{P},M^{\dagger}\tilde{Q}],
+\langle\tilde{Q},M\tilde{P}\rangle_{\natural*}=\langle M^{\dagger}\tilde{Q},\tilde{P}\rangle_{\natural*},
 $$
 
 namely the **transpose** $M^{\mathsf T}$, the **Hermitian adjoint** $M^{*}$ and the **Krein adjoint** $M^{\dagger}=JM^{*}J$; in the coefficient basis these are the transpose, the conjugate transpose and the conjugate transpose conjugated by $E$. Each gives an involution of $\mathfrak{g}$,
@@ -58,18 +58,18 @@ $$
 **Theorem (the decomposition and the bracket pattern).** The decomposition is direct, $\dim_{\mathbb{R}}\mathfrak{k}=\dim_{\mathbb{R}}\mathfrak{p}=16$, the relations
 
 $$
-[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k},
+\langle\mathfrak{k},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
-[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p},
+\langle\mathfrak{p},\mathfrak{k}\rangle_{\natural*}\subseteq\mathfrak{p},
 \qquad
-[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k},
+\langle\mathfrak{p},\mathfrak{p}\rangle_{\natural*}\subseteq\mathfrak{k},
 \qquad
 \{\mathfrak{p},\mathfrak{p}\}\subseteq\mathfrak{p}
 $$
 
-hold, with $\{\cdot,\cdot\}$ the anticommutator, so $\mathfrak{k}$ is a Lie subalgebra, $\mathfrak{p}$ is a Jordan subalgebra, and the pair $(\mathfrak{k},\mathfrak{p})$ is a Lie–Jordan pair attached to the Krein form.
+hold, with $\{\cdot,\cdot\}$ the anticommutator, so $\mathfrak{k}$ is a Lie subalgebra, $\mathfrak{p}$ is a Jordan subalgebra, and the pair $(\mathfrak{k},\mathfrak{p})$ is a Lie–Jordan pair attached to the quaternion sesquilinear form.
 
-**Proof.** $\mathfrak{k}$ and $\mathfrak{p}$ are the $\mp1$-eigenspaces of an involution, so they are direct and of equal dimension $32/2=16$. Write $M^{\epsilon}$ for an element with $M^{\dagger}=\epsilon M$, $\epsilon=\pm1$, and use $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. For $M,N\in\mathfrak{k}$ one has $(MN)^{\dagger}=(-N)(-M)=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. For $M\in\mathfrak{k}$ and $N\in\mathfrak{p}$ one has $(MN)^{\dagger}=N(-M)=-NM$ and $(NM)^{\dagger}=(-M)N=-MN$, so $[M,N]^{\dagger}=(MN)^{\dagger}-(NM)^{\dagger}=MN-NM=[M,N]$ and $[M,N]\in\mathfrak{p}$. For $M,N\in\mathfrak{p}$ one has $(MN)^{\dagger}=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. Finally $\{M,N\}^{\dagger}=NM+MN=\{M,N\}$ for $M,N\in\mathfrak{p}$.
+**Proof.** $\mathfrak{k}$ and $\mathfrak{p}$ are the $\mp1$-eigenspaces of an involution, so they are direct and of equal dimension $32/2=16$. Write $M^{\epsilon}$ for an element with $M^{\dagger}=\epsilon M$, $\epsilon=\pm1$, and use $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$. For $M,N\in\mathfrak{k}$ one has $(MN)^{\dagger}=(-N)(-M)=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. For $M\in\mathfrak{k}$ and $N\in\mathfrak{p}$ one has $(MN)^{\dagger}=\langle-M,-M\rangle_{\natural}=-NM$ and $(NM)^{\dagger}=(-M)N=-MN$, so $[M,N]^{\dagger}=(MN)^{\dagger}-(NM)^{\dagger}=MN-NM=[M,N]$ and $[M,N]\in\mathfrak{p}$. For $M,N\in\mathfrak{p}$ one has $(MN)^{\dagger}=NM$, so $[M,N]^{\dagger}=NM-MN=-[M,N]$ and $[M,N]\in\mathfrak{k}$. Finally $\{M,N\}^{\dagger}=NM+MN=\{M,N\}$ for $M,N\in\mathfrak{p}$.
 
 **Remark (the $J$-skew algebra is $J$ times the unitary algebra).** As vector spaces
 
@@ -155,7 +155,7 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 ## Summary
 
-The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_4(\mathbb{C})=GL_4(\mathbb{C})$, of real dimension $32$, and the three pairings of the algebra give its three adjoints: the transpose $M^{\mathsf T}$ for the bilinear form, the Hermitian adjoint $M^{*}$, and the Krein adjoint $M^{\dagger}=JM^{*}J$. The corresponding involutions $M\mapsto-M^{\sigma}$ have the fixed algebras $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$, of real dimensions $12$, $16$ and $16$. The Krein involution splits $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew operators $\mathfrak{k}=\mathfrak{u}(1,3)$ and the $J$-self-adjoint operators $\mathfrak{p}=J\cdot\mathrm{Herm}_4$, each of dimension $16$; $\mathfrak{k}$ is a Lie algebra, $\mathfrak{p}$ a Jordan algebra, and the bracket of $\mathfrak{k}$ with $\mathfrak{p}$ stays in $\mathfrak{p}$. On the group the involution $T\mapsto(T^{\dagger})^{-1}$ has fixed group the non-compact $U(1,3)$, so it is not a Cartan involution; the Cartan involution is the restriction of $T\mapsto(T^{*})^{-1}$, whose fixed group is the maximal compact $U(1)\times U(3)$, with $\dim\mathfrak{k}_{0}=10$ and $\dim\mathfrak{p}_{0}=6$, and whose symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of real dimension $6$. The trace form of $\mathfrak{u}(1,3)$ has signature $(6,10)$, positive on the hyperbolic part and negative on the compact part, and the $J$-positive cone sits inside the Jordan algebra $\mathfrak{p}$.
+The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_4(\mathbb{C})=GL_4(\mathbb{C})$, of real dimension $32$, and the three pairings of the algebra give its three adjoints: the transpose $M^{\mathsf T}$ for the quaternion bilinear form, the Hermitian adjoint $M^{*}$, and the Krein adjoint $M^{\dagger}=JM^{*}J$. The corresponding involutions $M\mapsto-M^{\sigma}$ have the fixed algebras $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$, of real dimensions $12$, $16$ and $16$. The Krein involution splits $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew operators $\mathfrak{k}=\mathfrak{u}(1,3)$ and the $J$-self-adjoint operators $\mathfrak{p}=J\cdot\mathrm{Herm}_4$, each of dimension $16$; $\mathfrak{k}$ is a Lie algebra, $\mathfrak{p}$ a Jordan algebra, and the bracket of $\mathfrak{k}$ with $\mathfrak{p}$ stays in $\mathfrak{p}$. On the group the involution $T\mapsto(T^{\dagger})^{-1}$ has fixed group the non-compact $U(1,3)$, so it is not a Cartan involution; the Cartan involution is the restriction of $T\mapsto(T^{*})^{-1}$, whose fixed group is the maximal compact $U(1)\times U(3)$, with $\dim\mathfrak{k}_{0}=10$ and $\dim\mathfrak{p}_{0}=6$, and whose symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of real dimension $6$. The trace form of $\mathfrak{u}(1,3)$ has signature $(6,10)$, positive on the hyperbolic part and negative on the compact part, and the $J$-positive cone sits inside the Jordan algebra $\mathfrak{p}$.
 
 ## Summary of Notation
 
@@ -174,7 +174,7 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 
 ## Further Reading
 
-- *The Three Pairings of the Biquaternion Algebra* (`articles_maths/the-three-pairings-of-the-biquaternion-algebra.md`), for the three adjoints and the isometry groups
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the three adjoints and the isometry groups
 - *The Krein Isometry Group and Its $J$-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for $U(1,3)$, its maximal compact part and the boosts
 - *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md`), for the Krein adjoint of the algebra's families
 - *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the $J$-positive cone inside the Jordan part
