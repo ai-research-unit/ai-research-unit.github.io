@@ -174,7 +174,7 @@ $$
 
 **Proof.** The first is the antisymmetry of the commutator: $[[x,y],z] = -[[y,x],z]$. The second is the Jacobi identity, rewritten: $[[x,y],z]$ is one of its three cyclic terms. The third is the Jacobi identity applied to the pair $[x,y]$ and the pair $[u,v]$, or equivalently the identity $[[x,y],[u,v]] = [[[x,y],u],v] - [u,[[x,y],v]]$ expanded with Jacobi. $\square$
 
-**Remark.** The triple system is where the Lie structure survives on the whole space, and it is the ternary companion of the antisymmetrisation: it needs the commutator and not the sesquilinear product, it is available whatever the involution does, and it inherits its identities from the associativity of the product. Its operator form, $z \mapsto T_{x,y}(z) = [[x,y],z]$, is one of the operators of *The Ternary Product as an Operator*.
+**Remark.** The triple system is where the Lie structure survives on the whole space, and it is the ternary companion of the antisymmetrisation: it needs the commutator and not the sesquilinear product, it is available whatever the involution does, and it inherits its identities from the associativity of the product. Its operator form, $z \mapsto \mathrm{ad}_{[x,y]}(z) = [[x,y],z]$, is one of the operators of *The Ternary Product as an Operator*.
 
 ### The Two Triple Systems
 
@@ -217,7 +217,7 @@ For $A = \mathbb{H}$ with the quaternion conjugation over $(\mathbb{R},\mathrm{i
 
 ### The Biquaternion Algebra
 
-For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the commutator makes $\mathbb{B}$ a Lie algebra over $\mathbb{C}$, isomorphic to $\mathfrak{gl}(2,\mathbb{C})$, with the trace-free part isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the skew-Hermitian elements form the Lie subalgebra $\mathbb{M}_{-}$ of *The Six Subspaces and the Lie Algebra* and *Biquaternion Lie Algebras*. That layer also exhibits the failure of the theorem above: of the four antisymmetrisations of the four products of the biquaternion algebra exactly the commutator satisfies Jacobi, the star-bracket failing it at the triple $(e_1,e_2,ie_3)$ with the value $4ie_0$.
+For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the star-involution the commutator makes $\mathbb{B}$ a Lie algebra over $\mathbb{C}$, isomorphic to $\mathfrak{gl}(2,\mathbb{C})$, with the trace-free part isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the skew-Hermitian elements form the Lie subalgebra $\mathbb{M}_{-}$ of *The Six Subspaces and the Four Complex Products* and *Biquaternion Lie Algebras*. That layer also exhibits the failure of the theorem above: of the four antisymmetrisations of the four products of the biquaternion algebra exactly the commutator satisfies Jacobi, the star-bracket failing it at the triple $(e_1,e_2,ie_3)$ with the value $4ie_0$.
 
 ## Summary
 

@@ -64,7 +64,7 @@ The Euclidean unit spheres of the algebra and of its distinguished subspaces hav
 | the roots of $-1$ in $\mathbb{H}_{\mathbb{B}}$ | $S^2$ | the traceless anti-Hermitian matrices of Frobenius norm $\sqrt 2$ |
 | the Hermitian subspace $\mathbb{M}_+$ | the null cone and its link | the Hermitian matrices, of signature $(1,3)$ |
 
-The third row is the matrix form of the root sphere of *The Six Subspaces and the Roots of Minus One* and of the classification of *Biquaternion Square Roots of Minus One, Zero and Plus One*; the general topology of the unit sphere is *The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*, and that of the link of the null cone is *Biquaternion Topology*, §*The link of the null cone*.
+The third row is the matrix form of the root sphere of *The Six Subspaces and the Elements* and of the classification of *Biquaternion Square Roots of Minus One, Zero and Plus One*; the general topology of the unit sphere is *The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*, and that of the link of the null cone is *Biquaternion Topology*, §*The link of the null cone*.
 
 ## The Lorentz Group and Its Connectedness
 

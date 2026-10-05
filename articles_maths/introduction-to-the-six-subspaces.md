@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of them is an involution. Each one splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and the eight spaces so obtained reduce to six distinct subspaces, the **six distinguished subspaces** of $\mathbb{B}$. The conjugations themselves are not the subject of this article: their definitions, the group they form and the two spaces each defines are in *Biquaternions as a Vector Space over $\mathbb{C}$* and *Biquaternion Involution Lattice*.
+The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of them is an involution. Each one splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and the eight spaces so obtained reduce to six distinct subspaces, the **six distinguished subspaces** of $\mathbb{B}$. The conjugations themselves are not the subject of this article: their definitions are in *Biquaternions as a Vector Space over $\mathbb{C}$*, the group they form is in *The Group of Involutions* and the two spaces each defines are in *Comparison of the Six Subspaces*.
 
 This article treats the six subspaces themselves, one to a section. Each section gives the defining condition of the subspace, the coordinate condition it amounts to, the real basis that exhibits it and its real dimension, and closes with the part it plays. The table is the summary; the sections are the detail.
 
@@ -143,20 +143,16 @@ The biquaternion algebra carries four conjugations whose fixed and anti-fixed sp
 ## Further Reading
 
 - *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the coordinate blocks, the intersections, the sums and the action of the conjugations on the six
-- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the product of two elements of the six, tabulated
-- *The Six Subspaces and the Jordan Algebra* (`articles_maths/the-six-subspaces-and-the-jordan-algebra.md`), for the symmetrized product and the Jordan subalgebras among the six
-- *The Six Subspaces and the Lie Algebra* (`articles_maths/the-six-subspaces-and-the-lie-algebra.md`), for the commutator and the Lie subalgebras among the six
-- *The Six Subspaces and the Units* (`articles_maths/the-six-subspaces-and-the-units.md`), for which elements of each of the six are units, and which of the six contain no nonzero zero divisor
-- *The Six Subspaces and the Zero Divisors* (`articles_maths/the-six-subspaces-and-the-zero-divisors.md`), for the zero divisors of each of the six and for the two families, the square-zero pure ones and the non-pure ones that are multiples of idempotents
-- *The Six Subspaces and the Idempotents and Projections* (`articles_maths/the-six-subspaces-and-the-idempotents-and-projections.md`), for the idempotents that lie in the six and for the projection they carry
-- *The Six Subspaces and the Ideals* (`articles_maths/the-six-subspaces-and-the-ideals.md`), for the minimal one-sided ideals the six determine through their zero divisors and for the Peirce decomposition
-- *The Six Subspaces and the Roots of Minus One* (`articles_maths/the-six-subspaces-and-the-roots-of-minus-one.md`), for which of the six contain a root of $-1$ and which roots
+- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the four products brought to the six together, the product of two elements of the six, and the Jordan and the Lie algebra each subspace carries and with which product
+- *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for which elements of each of the six are units, which of the six contain no nonzero zero divisor, the zero divisors of each of the six in their two families, the square-zero pure ones and the non-pure ones that are multiples of idempotents, and which of the six contain a root of $-1$
+- *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the idempotents that lie in the six and for the projection they carry, and for the minimal one-sided ideals the six determine through their zero divisors and for the Peirce decomposition
 - *The Six Subspaces and the Two Matrix Representations* (`articles_maths/the-six-subspaces-and-the-two-matrix-representations.md`), for the six in the $2 \times 2$ model of the simple module and in the $4 \times 4$ regular model, and for the two invariants, trace and determinant
-- *The Six Subspaces and the Forms* (`articles_maths/the-six-subspaces-and-the-forms.md`), for the bilinear, Hermitian and Krein pairings restricted to the six, the only orthogonal pair, and the isotropic lines and the minimal ideals
+- *The Six Subspaces and the Norms* (`articles_maths/the-six-subspaces-and-the-norms.md`), for the bilinear, Hermitian and Krein pairings restricted to the six, the only orthogonal pair, and the isotropic lines and the minimal ideals
 - *The Six Subspaces and the Analysis* (`articles_maths/the-six-subspaces-and-the-analysis.md`), for the variables and the operators on each of the six, the second-order operator as the operator of the norm, and the ellipticity dichotomy
 - *Decompositions Along the Six Subspaces* (`articles_maths/decompositions-along-the-six-subspaces.md`), for the three eigenspace decompositions the conjugations cut out, one pair of subspaces to each
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
-- *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four conjugations, the group they generate and the two spaces each defines
+- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the group the four conjugations generate
+- *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the relations between the six and the lattice of the fixed spaces
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the product and its scalar–vector form
 - *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the two parts into which the product splits
 - *Biquaternion Jordan Algebras* (`articles_maths/biquaternion-jordan-algebras.md`), for the symmetrized product and the trace form
@@ -166,4 +162,3 @@ The biquaternion algebra carries four conjugations whose fixed and anti-fixed sp
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the simple module $S$ and the Morita equivalence
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null elements and their distribution
 - *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the root sets and the bijection with the idempotents
-- *Worked Examples in the Biquaternion Algebra* (`articles_maths/worked-examples-in-the-biquaternion-algebra.md`), for the basis products and the computed cases

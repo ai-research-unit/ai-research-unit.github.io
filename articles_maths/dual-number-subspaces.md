@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects the submodule structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the relations among its distinguished submodules. It follows *Dual-Numbers Algebra* for the two conjugations and the two distinguished submodules, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Numbers Ideals and the Maximal Ideal* for the ideal structure. Its structural model is *Biquaternion Relations Between Subspaces*, in which a lattice of six subspaces is organized by the four conjugations; here only one nontrivial conjugation exists, and the lattice is correspondingly small.
+This article collects the submodule structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the relations among its distinguished submodules. It follows *Dual-Numbers Algebra* for the two conjugations and the two distinguished submodules, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Numbers Ideals and the Maximal Ideal* for the ideal structure. Its structural model is *Comparison of the Six Subspaces*, in which a lattice of six subspaces is organized by the four conjugations; here only one nontrivial conjugation exists, and the lattice is correspondingly small.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -43,7 +43,7 @@ It is not a second decomposition but the same one: the two names record the two 
 
 ### There Is No Third Decomposition
 
-The biquaternion algebra carries four conjugations, and their eigenspaces generate six distinct subspaces, which is why *Biquaternion Relations Between Subspaces* has a lattice to organize. Over a field $k$, $\mathbb{D}'_k$ has exactly one nontrivial involution, namely dual conjugation, and hence exactly one pairing of eigenspaces. There is no analogue of the quaternion conjugation $\bar{\cdot}$, of the complex conjugation ${}^{*}$ distinct from it, or of the Hermitian and anti-Hermitian subspaces. So the single decomposition above is the whole of the submodule structure.
+The biquaternion algebra carries four conjugations, and their eigenspaces generate six distinct subspaces, which is why *Comparison of the Six Subspaces* has a lattice to organize. Over a field $k$, $\mathbb{D}'_k$ has exactly one nontrivial involution, namely dual conjugation, and hence exactly one pairing of eigenspaces. There is no analogue of the quaternion conjugation $\bar{\cdot}$, of the complex conjugation ${}^{*}$ distinct from it, or of the Hermitian and anti-Hermitian subspaces. So the single decomposition above is the whole of the submodule structure.
 
 ## The Two Submodules at a Glance
 

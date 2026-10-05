@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ of *The Biquaternion Krein Form and Its Signature* is a Hermitian form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the six distinguished subspaces of *Biquaternion Relations Between Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the Krein Form*, and it fixes the conventions for all three.
+The Krein form $[\tilde{Q},\tilde{Q}']=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ of *The Biquaternion Krein Form and Its Signature* is a Hermitian form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the six distinguished subspaces of *Introduction to the Six Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the Krein Form*, and it fixes the conventions for all three.
 
 **Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\Phi$ the $2\times2$ matrix representation of *Biquaternion 2×2 Matrix Element Representation*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$.
 
@@ -63,7 +63,7 @@ so that each pairing is a Hilbert–Schmidt pairing of $\Phi(\tilde P)$ with $\P
 
 ## The Restrictions to the Six Subspaces
 
-The six subspaces are defined in *Biquaternion Relations Between Subspaces*: the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the **vector subspace** $\mathbb{V}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, the **Hermitian subspace** $\mathbb{M}_{+}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}$, and the **anti-Hermitian subspace** $\mathbb{M}_{-}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}$.
+The six subspaces are defined in *Introduction to the Six Subspaces*: the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the **vector subspace** $\mathbb{V}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, the **Hermitian subspace** $\mathbb{M}_{+}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}$, and the **anti-Hermitian subspace** $\mathbb{M}_{-}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}$.
 
 **Theorem (the restrictions).** With $Q_{\mu}=q_{\mu}+iq'_{\mu}$ the Krein form restricts as follows.
 
@@ -145,5 +145,5 @@ In the coefficient basis the Krein form has the Gram matrix $G=\mathrm{diag}(1,-
 - *The Three Pairings of the Biquaternion Algebra* (`articles_maths/the-three-pairings-of-the-biquaternion-algebra.md`), for the three Gram matrices compared
 - *The Forms in the Matrix Representation of the Biquaternion Algebra* (`articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md`), for the trace identities used here
 - *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`), for the restriction of the norm to the same six subspaces
-- *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the definitions and dimensions of the six subspaces
+- *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the definitions and dimensions of the six subspaces
 - *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for Sylvester's law, congruence and the discriminant

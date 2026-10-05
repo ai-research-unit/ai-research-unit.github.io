@@ -85,7 +85,7 @@ $$
 {}^{\natural}, \qquad \bar{\cdot}, \qquad {}^{*} = {}^{\natural}\circ\bar{\cdot}, \qquad {}^{\flat} = -{}^{*},
 $$
 
-and $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ is a group isomorphic to the Klein four-group. The formulas, the fixed spaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ and $\mathrm{Vect}(\mathbb{B})$, and the composition table are *Biquaternion Involution Lattice*, and only what the Clifford reading uses is recalled here. Under the product the four are not of one kind:
+and $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ is a group isomorphic to the Klein four-group. The formulas are *Biquaternions as a Vector Space over $\mathbb{C}$*, the fixed spaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ and $\mathrm{Vect}(\mathbb{B})$ are *Introduction to the Six Subspaces*, and the composition table is *The Group of Involutions*; only what the Clifford reading uses is recalled here. Under the product the four are not of one kind:
 
 | conjugation | linearity over $\mathbb{R}$ | product rule | kind |
 |---|---|---|---|

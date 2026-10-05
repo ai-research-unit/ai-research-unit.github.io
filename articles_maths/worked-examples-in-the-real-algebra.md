@@ -146,7 +146,7 @@ The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C},
 | anti-fixed subspace | $\{0\}$ | the imaginary line | the pure quaternions | anti-Hermitian subspace |
 | nonzero elements invertible | yes, a field | yes, a field | yes, a division algebra | no, there are zero divisors |
 
-The real column is the base case that the other worked-example articles continue: *Worked Examples in the Complex Algebra* adds the nontrivial conjugation and the circle, *Worked Examples in the Split-Quaternion Algebra* adds the indefinite form and its two regimes, and *Worked Examples in the Biquaternion Algebra* adds the complex norm and its zero divisors. Each of them reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.
+The real column is the base case that the other worked-example articles continue: *Worked Examples in the Complex Algebra* adds the nontrivial conjugation and the circle, *Worked Examples in the Split-Quaternion Algebra* adds the indefinite form and its two regimes. Each of them reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.
 
 ## Summary
 

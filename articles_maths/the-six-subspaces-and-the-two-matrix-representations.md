@@ -72,7 +72,7 @@ $$
 
 so a Hermitian element, whose scalar part is real and whose vector coefficients are purely imaginary, has a Hermitian image in both models, and an anti-Hermitian element has an anti-Hermitian image in both.
 
-**Theorem (the regular matrix is two copies of the $2 \times 2$ matrix).** Let $\tilde\Pi = \tfrac{1}{2}(e_0 + ie_1)$ and $f = e_0 - \tilde\Pi$, so that $\mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}f$ is the splitting of the algebra into two minimal left ideals of *The Six Subspaces and the Ideals*. In the basis $\tilde\Pi, \tilde R, f, \tilde T$ of $\mathbb{B}$, where $\tilde R = e_3 + ie_2$ spans the nilpotent line of $\mathbb{B}\tilde\Pi$ and $\tilde T = e_3 - ie_2$ that of $\mathbb{B}f$, the regular matrix is block diagonal,
+**Theorem (the regular matrix is two copies of the $2 \times 2$ matrix).** Let $\tilde\Pi = \tfrac{1}{2}(e_0 + ie_1)$ and $f = e_0 - \tilde\Pi$, so that $\mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}f$ is the splitting of the algebra into two minimal left ideals of *The Six Subspaces and the Structure*. In the basis $\tilde\Pi, \tilde R, f, \tilde T$ of $\mathbb{B}$, where $\tilde R = e_3 + ie_2$ spans the nilpotent line of $\mathbb{B}\tilde\Pi$ and $\tilde T = e_3 - ie_2$ that of $\mathbb{B}f$, the regular matrix is block diagonal,
 
 $$
 \rho_L(\tilde Q) = \begin{pmatrix} \Phi(\tilde Q) & 0 \\ 0 & \Phi(\tilde Q) \end{pmatrix}
@@ -111,7 +111,7 @@ and conversely an element whose image is traceless has vanishing scalar part, in
 
 The determinants are $\det\Phi(\mathbf{P}) = N(\mathbf{P})$ and $\det\rho_L(\mathbf{P}) = N(\mathbf{P})^2$, so the null elements of the vector subspace, which are its zero divisors, are exactly the singular matrices of the image in either model, and the nilpotents, whose norm has a double zero, are the matrices of rank one in the $2 \times 2$ model, as recorded in *Biquaternion 2×2 Matrix Element Representation*.
 
-The image of the vector subspace under $\Phi$ is the traceless matrices, that is $\mathrm{SL}(2,\mathbb{C})$ as a Lie algebra, and its real form is the image of the real vector triple; both are recorded in *Biquaternion 2×2 Matrix Element Representation*. The commutator of two traceless matrices is traceless, and the corresponding closedness of the vector subspace under the commutator is *The Six Subspaces and the Lie Algebra*.
+The image of the vector subspace under $\Phi$ is the traceless matrices, that is $\mathrm{SL}(2,\mathbb{C})$ as a Lie algebra, and its real form is the image of the real vector triple; both are recorded in *Biquaternion 2×2 Matrix Element Representation*. The commutator of two traceless matrices is traceless, and the corresponding closedness of the vector subspace under the commutator is *The Six Subspaces and the Four Complex Products*.
 
 ## The Quaternion Subspace
 
@@ -130,7 +130,7 @@ $$
 
 so that **in the regular model the image is exactly the real matrices, and the quaternion subspace is the real part of the regular representation**. In the $2 \times 2$ model the entries involve $i$, and the correct condition is the one of the table: $\Phi(h)$ is fixed by $M \mapsto \epsilon\overline{M}\epsilon^{-1}$, that is $M_{22} = \overline{M_{11}}$ and $M_{21} = -\overline{M_{12}}$.
 
-The regular image is more than real: it is $h_0 I_4 + \sum_k h_k\rho_L(e_k)$, a real scalar matrix plus a real-linear combination of the three real skew matrices $\rho_L(e_k)$, which is the matrix form of the quaternion relations. The invariants are $\operatorname{Tr} = 2h_0$ and $\det = N(h) > 0$ in the $2 \times 2$ model, $\operatorname{Tr} = 4h_0$ and $\det = N(h)^2 > 0$ in the regular model, so that in both models the quaternion subspace is a set of matrices of strictly positive determinant: **it is the largest of the six whose images contain no singular matrix**, which is the matrix statement of its being a division algebra, and the same as the absence of zero divisors there in *The Six Subspaces and the Zero Divisors*.
+The regular image is more than real: it is $h_0 I_4 + \sum_k h_k\rho_L(e_k)$, a real scalar matrix plus a real-linear combination of the three real skew matrices $\rho_L(e_k)$, which is the matrix form of the quaternion relations. The invariants are $\operatorname{Tr} = 2h_0$ and $\det = N(h) > 0$ in the $2 \times 2$ model, $\operatorname{Tr} = 4h_0$ and $\det = N(h)^2 > 0$ in the regular model, so that in both models the quaternion subspace is a set of matrices of strictly positive determinant: **it is the largest of the six whose images contain no singular matrix**, which is the matrix statement of its being a division algebra, and the same as the absence of zero divisors there in *The Six Subspaces and the Elements*.
 
 ## The Anti-Quaternion Subspace
 
@@ -154,7 +154,7 @@ $$
 
 and conversely an element with Hermitian image has real scalar part and purely imaginary vector coefficients, in either model. So **the Hermitian subspace is the fixed space of the conjugate transpose in both models**, which the other three conjugations of the algebra are not: realness of the coefficients is an entry condition in the regular model only, and the two quaternion conjugations are never entry conditions.
 
-The invariants are $\operatorname{Tr} = 2a_0$ and $\det = N(\tilde Q) \in \mathbb{R}$ in the $2 \times 2$ model, $\operatorname{Tr} = 4a_0$ and $\det = N(\tilde Q)^2 \geq 0$ in the regular model. The determinant is real in both, so a Hermitian element is a zero divisor exactly when its image is singular, and the image is singular for exactly the null Hermitian elements of *The Six Subspaces and the Zero Divisors*; those are the real multiples of the Hermitian idempotents, which are the rank-one Hermitian matrices of the $2 \times 2$ model, as recorded in the house article.
+The invariants are $\operatorname{Tr} = 2a_0$ and $\det = N(\tilde Q) \in \mathbb{R}$ in the $2 \times 2$ model, $\operatorname{Tr} = 4a_0$ and $\det = N(\tilde Q)^2 \geq 0$ in the regular model. The determinant is real in both, so a Hermitian element is a zero divisor exactly when its image is singular, and the image is singular for exactly the null Hermitian elements of *The Six Subspaces and the Elements*; those are the real multiples of the Hermitian idempotents, which are the rank-one Hermitian matrices of the $2 \times 2$ model, as recorded in the house article.
 
 ## The Anti-Hermitian Subspace
 
@@ -191,6 +191,6 @@ The algebra has two basic matrix models, the irreducible $2 \times 2$ model of t
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the six subspaces themselves, one to a section
 - *Biquaternion 2×2 Matrix Element Representation* (`articles_maths/biquaternion-2x2-matrix-element-representation.md`), for the model $\Phi$, its invariants, its module and its own table of the six in matrix form
 - *Biquaternion 4×4 Regular Matrix Element Representation* (`articles_maths/biquaternion-4x4-regular-matrix-element-representation.md`), for the model $\rho_L$, its left and right operators, the module structure and the double centralizer
-- *The Six Subspaces and the Ideals* (`articles_maths/the-six-subspaces-and-the-ideals.md`), for the two minimal left ideals whose basis makes the regular matrix block diagonal
-- *The Six Subspaces and the Zero Divisors* (`articles_maths/the-six-subspaces-and-the-zero-divisors.md`), for the null elements, which are the singular matrices of the images
-- *The Six Subspaces and the Forms* (`articles_maths/the-six-subspaces-and-the-forms.md`), for the pairings that the trace and the determinant polarise
+- *The Six Subspaces and the Structure* (`articles_maths/the-six-subspaces-and-the-structure.md`), for the two minimal left ideals whose basis makes the regular matrix block diagonal
+- *The Six Subspaces and the Elements* (`articles_maths/the-six-subspaces-and-the-elements.md`), for the null elements, which are the singular matrices of the images
+- *The Six Subspaces and the Norms* (`articles_maths/the-six-subspaces-and-the-norms.md`), for the pairings that the trace and the determinant polarise

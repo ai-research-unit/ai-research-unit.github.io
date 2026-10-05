@@ -24,7 +24,7 @@ The framework results used here are those of the companion articles:
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-1 equation that the same feedback produces.
 - Companion article *The Magnetic Monopole in Biquaternionic Form*, for the source-free half of the Maxwell equation that the subtraction of the feedback isolates.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the metric and the d'Alembertian.
-- Companion article *Biquaternion Idempotents and Projections* and *Biquaternion Involution Lattice*, for the idempotents, the zero divisors and the conjugations.
+- Companion article *Biquaternion Idempotents and Projections* and *The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal*, for the idempotents, the zero divisors and the conjugations.
 - Companion article *The Number of Generations and the Biquaternion Algebra*, for the corpus's standing position that the algebra accommodates but does not derive the particle spectrum.
 
 ## The Mass Term as a Field

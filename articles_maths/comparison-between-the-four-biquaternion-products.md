@@ -98,6 +98,37 @@ The order of the four products matches the order of the objects. The complex bil
 
 Each of the four is read as a multiplication in an article of its own: the complex bilinear product in *Biquaternions as an Algebra over $\mathbb{C}$*, the complex quaternionic bilinear product in *Biquaternions as a Quaternionic Algebra over $\mathbb{C}$*, the complex sesquilinear product in *Biquaternions as a Sesquialgebra over $\mathbb{C}$*, and the complex quaternionic sesquilinear product in *Biquaternions as a Quaternionic Sesquialgebra over $\mathbb{C}$*; the entries of the table above are the statements those four articles prove or quote.
 
+## The Squares, the Idempotents and the Roots
+
+The four products are told apart on a single element by the **square**, and the idempotent and the root problems follow from it. Writing $\tilde P = P_0e_0 + \mathbf P$ and $(\mathbf P,\mathbf P) = P_1^2 + P_2^2 + P_3^2$, the scalar part of the square is
+
+$$
+\mathrm{Sc}\bigl(\tilde P\tilde P\bigr) = P_0^2 - (\mathbf P,\mathbf P), \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\mathbf P,\mathbf P) = N(\tilde P),
+$$
+
+$$
+\mathrm{Sc}\bigl(\tilde P\tilde P^{*}\bigr) = \sum_\mu\lvert P_\mu\rvert^2, \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P^{*}\bigr) = \lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2 .
+$$
+
+These are the four diagonals of *Four Forms but One Topology on the Biquaternion Algebra*, and the same four expressions are the scalar parts of the four products of *Relations Between the Four Biquaternion Products*. Two of them decide the two problems on the spot. The $\natural$-square lies in the centre for every element, being $N(\tilde P)e_0$, so its roots of a central value are the single equation $N(\tilde P) = \lambda$. The complex sesquilinear square has the **non-negative** scalar part $\sum_\mu\lvert P_\mu\rvert^2$, so that product has no root of a negative value at all. The remaining two squares are elements, and their scalar parts are the indefinite complex bilinear and Krein values.
+
+| problem | $\tilde P\tilde P = \tilde P$ | $\tilde P^{\natural}\tilde P = \tilde P$ | $\tilde P\tilde P^{*} = \tilde P$ | $\tilde P^{\natural}\tilde P^{*} = \tilde P$ |
+|---|---|---|---|---|
+| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \xi i)$ for a root $\xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector | $0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$ |
+
+The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of *Biquaternion Idempotents and Projections*; the fourth is a family of a different kind, lying in the real vector subspace.
+
+The square roots of a central value differ in the same way and by the same two structural facts.
+
+| square roots | $\tilde P\tilde P = \lambda e_0$ | $\tilde P^{\natural}\tilde P = \lambda e_0$ | $\tilde P\tilde P^{*} = \lambda e_0$ | $\tilde P^{\natural}\tilde P^{*} = \lambda e_0$ |
+|---|---|---|---|---|
+| of $-e_0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 1$, and $P_0 = \pm i$ | the solutions of $N(\tilde P) = -1$ | none | the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\mathbf P$ with $(\mathbf P,\mathbf P) = 1$ |
+| of $0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 0$, the nilpotents | the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$ | $\tilde P = 0$ alone | the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$ |
+
+The three families of *Biquaternion Square Roots of Minus One, Zero and Plus One* are therefore the three parts of one column of this table, the column of the complex bilinear product, and not a classification of the square of the algebra in general. The other three columns are the same three equations read in the other products, and each of the other three has its reading in the article of that product.
+
 ## Summary
 
 The four products of *The Four Biquaternion Complex Products* are compared in the table above. Each is $\mathbb{C}$-linear in the first argument; the complex bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear in the second, the two products carrying the star are conjugate-linear there. The complex bilinear product is associative, has the two-sided unit $1$, is alternative, flexible and satisfies the degree-three identity, and its left multiplications form a monoid; the ${}^{\natural}$-product is $\mathbb{C}$-bilinear and has the left unit $1$ alone, and it fails associativity, the alternative identities, flexibility and the degree-three identity, as do the two sesquilinear products, which have no identity at all and whose left multiplications do not even form a monoid. Counterexamples are given in each case on the basis elements $e_0$, $e_1$, $e_2$, $e_3$ and on $ie_0$ and $ie_3$.
@@ -119,6 +150,6 @@ Both products without the star are multiplications of a bilinear $\mathbb{C}$-al
 - *The Four Biquaternion Complex Products* (`articles_maths/the-four-biquaternion-complex-products.md`), for the four definitions and their scalar–vector forms.
 - *Relations Between the Four Biquaternion Products* (`articles_maths/relations-between-the-four-biquaternion-products.md`), for the identities that link the four and for the left multiplications.
 - *Decomposition of the Biquaternion Complex Products* (`articles_maths/decomposition-of-the-biquaternion-complex-products.md`), for the symmetric and the antisymmetric part of each of the four products, and the Jordan and the Lie structure the two parts of the complex bilinear product carry.
-- *The Six Subspaces and the Products* (`articles_maths/the-six-subspaces-and-the-products.md`), for the behaviour of the complex bilinear product on the six distinguished subspaces.
+- *The Six Subspaces and the Four Complex Products* (`articles_maths/the-six-subspaces-and-the-four-complex-products.md`), for the four products on the six distinguished subspaces, and for the Jordan and the Lie algebra each of the six carries and with which product.
 - *Biquaternions as a Sesquialgebra over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-sesquialgebra-over-c.md`), for the sesquilinear reading of the complex sesquilinear product and the algebra it defines.
 - *Sesquialgebras* (`articles_maths/sesquialgebras.md`), for the two scalar rules, the collapse theorem and the standard example that the sesquilinear row of the table tests.

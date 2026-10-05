@@ -10,7 +10,7 @@ $$
 
 with $\langle\cdot,\cdot\rangle$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the open unit ball of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
-The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the form is *The Biquaternion Krein Form and Its Signature*; the positive definite form of the bridge is *The Hermitian Form on the Biquaternion Algebra*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *Biquaternion Involution Lattice* and *Biquaternion Relations Between Subspaces*.
+The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra*; the form is *The Biquaternion Krein Form and Its Signature*; the positive definite form of the bridge is *The Hermitian Form on the Biquaternion Algebra*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Six Subspaces*.
 
 **Conventions.** As in the companion articles: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $N(\tilde{Q})=\sum_\mu Q_\mu^{2}$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, Krein form $[\tilde{Q},\tilde{Q}']=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, and $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\Phi(\tilde{Q}^{\natural})=\mathrm{adj}\,\Phi(\tilde{Q})$ (*The Forms in the Matrix Representation of the Biquaternion Algebra*).
 
@@ -61,7 +61,7 @@ of complex dimensions $(1,3)$ and real dimensions $(2,6)$, in agreement with the
 
 **Corollary (the fundamental decomposition is Algebra data).** The fundamental decomposition of the Krein space is exactly the eigenspace splitting of one of the four involutions of the algebra; the six distinguished subspaces and their dimensions determine it, and it needs no choice. The centre is the positive part and the vector subspace the negative part, and the two real slices $\mathbb{B}_{\mathbb{R}},\ i\mathbb{B}_{\mathbb{R}}$ of signature $(1,3)$ cut across it.
 
-**Proof.** The statement is the theorem together with the identification of the fixed and anti-fixed spaces of ${}^{\natural}$ in *Biquaternion Relations Between Subspaces*.
+**Proof.** The statement is the theorem together with the identification of the fixed and anti-fixed spaces of ${}^{\natural}$ in *Comparison of the Six Subspaces*.
 
 ## The Natural Conjugation as an Anti-Automorphism
 
@@ -159,6 +159,6 @@ The **fundamental symmetry** of the biquaternion Krein form is the natural conju
 - *The Fundamental Symmetry* (`articles_maths/the-fundamental-symmetry.md`), for the general theory and the angular operator
 - *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the form whose symmetry this is
 - *J-Self-Adjoint and J-Unitary Operators on the Biquaternion Algebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-biquaternion-algebra.md`), for the operators the symmetry defines
-- *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`) and *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the involutions and their fixed spaces
+- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`) and *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the involutions and their fixed spaces
 - *Introduction to the Six Subspaces* (`articles_maths/introduction-to-the-six-subspaces.md`), for the two eigenspaces, the centre and the vector subspace, as algebras
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental symmetry and the parametrisation of the fundamental decompositions

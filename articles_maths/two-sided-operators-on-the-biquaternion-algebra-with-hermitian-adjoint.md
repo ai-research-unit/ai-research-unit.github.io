@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*Biquaternions as a Vector Space over $\mathbb{C}$*, *Biquaternion Involution Lattice*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
+Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$, the anti-involution whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian subspace $\mathbb{M}_-$ (*Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Six Subspaces*). Every element $\tilde{Q}$ of the algebra defines a **two-sided operator**, the sandwich
 
 $$
 \Theta_{\tilde{Q}}\colon \mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde{Q}}(\tilde P) = \tilde{Q}\,\tilde P\,\tilde{Q}^{*},

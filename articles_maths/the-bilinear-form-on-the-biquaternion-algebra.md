@@ -87,5 +87,5 @@ The bilinear form of the biquaternion algebra is $N(\tilde{P},\tilde{Q}) = \math
 - *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, its polarisation and the real forms with their signatures
 - *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the sesquilinear companion
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the conjugations and the norm as an algebraic operation
-- *Biquaternion Relations Between Subspaces* (`articles_maths/biquaternion-relations-between-subspaces.md`), for the six subspaces
+- *Comparison of the Six Subspaces* (`articles_maths/comparison-of-the-six-subspaces.md`), for the six subspaces
 - *Biquaternion Zero Divisors* (`articles_maths/biquaternion-zero-divisors.md`), for the null cone as the zero-divisor set

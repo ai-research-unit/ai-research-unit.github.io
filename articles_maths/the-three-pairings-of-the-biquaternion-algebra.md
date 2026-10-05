@@ -10,7 +10,7 @@ $$
 
 and the three resulting forms are the **bilinear form** $B$ of *The Bilinear Form on the Biquaternion Algebra*, the **Hermitian form** $\langle\cdot,\cdot\rangle$ of *The Hermitian Form on the Biquaternion Algebra*, and the **Krein form** $[\cdot,\cdot]$ of *The Biquaternion Krein Form and Its Signature*. This article sets them side by side: their conjugation, their linearity, their symmetry, their Gram matrix in the coefficient basis, their signature, and the isometry group each one defines. The comparison is the natural entry into the Krein category, because it shows exactly what the Krein form shares with its two siblings and where it differs.
 
-The fourth conjugation, the reversal $\flat=-\!{}^{*}$, gives a fourth pairing, the negative of the Hermitian one; together with the identity conjugation, which gives the unsymmetric product form $\mathrm{Sc}(\tilde{Q}\tilde{Q}')$, the five pairings exhaust the maps $\sigma\mapsto\Phi_{\sigma}$ built from the four conjugations of *Biquaternion Involution Lattice*.
+The fourth conjugation, the reversal $\flat=-\!{}^{*}$, gives a fourth pairing, the negative of the Hermitian one; together with the identity conjugation, which gives the unsymmetric product form $\mathrm{Sc}(\tilde{Q}\tilde{Q}')$, the five pairings exhaust the maps $\sigma\mapsto\Phi_{\sigma}$ built from the four conjugations of *The Group of Involutions*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\tilde{Q}=\sum_{\mu}Q_{\mu}e_{\mu}$ with $Q_{\mu}\in\mathbb{C}$, units $e_0=1$ and $e_k^{2}=-e_0$, central scalar imaginary $i$, and $\mathrm{Sc}$ the scalar part. The sign vector is $\varepsilon=(1,-1,-1,-1)$ and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde{Q}\mapsto(Q_0,Q_1,Q_2,Q_3)$.
 
@@ -29,7 +29,7 @@ The fourth conjugation, the reversal $\flat=-\!{}^{*}$, gives a fourth pairing, 
 
 They satisfy ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\flat=-{}^{*}$, and $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ is the Klein four-group of pairwise commuting involutions.
 
-**Proof.** These are the definitions and composition rules of *Biquaternion Involution Lattice*, §*The Four Conjugations* and §*Two Composition Rules*; linearity is read from the real coordinates there.
+**Proof.** These are the definitions and composition rules of *The Group of Involutions*, where the four conjugations, their real coordinates and the two composition rules are recorded.
 
 **Definition (the pairing map).** To an involution $\sigma$ associate the pairing
 
@@ -180,7 +180,7 @@ The four conjugations of the algebra generate a Klein four-group, and each non-i
 
 ## Further Reading
 
-- *Biquaternion Involution Lattice* (`articles_maths/biquaternion-involution-lattice.md`), for the four conjugations and their group
+- *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
 - *The Bilinear Form on the Biquaternion Algebra* (`articles_maths/the-bilinear-form-on-the-biquaternion-algebra.md`) and *The Hermitian Form on the Biquaternion Algebra* (`articles_maths/the-hermitian-form-on-the-biquaternion-algebra.md`), for the first two pairings in full
 - *The Biquaternion Krein Form and Its Signature* (`articles_maths/the-biquaternion-krein-form-and-its-signature.md`), for the third, which is this category's subject
 - *The Forms in the Matrix Representation of the Biquaternion Algebra* (`articles_maths/the-forms-in-the-matrix-representation-of-the-biquaternion-algebra.md`), for the same three forms in the $2\times2$ matrix model
