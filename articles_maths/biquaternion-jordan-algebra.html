@@ -52,13 +52,13 @@
       <div class="article-body">
         <h1 id="biquaternion-jordan-algebra"><strong>Biquaternion Jordan Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Every product of two biquaternions splits into a symmetric and an antisymmetric half, and each half carries a structure of its own. The antisymmetric half is the commutator, read in <em>Biquaternion Lie Algebra</em>; the symmetric half is the <strong>symmetrized product</strong>, and with it the biquaternion algebra is a commutative <strong>Jordan algebra</strong>. This article reads that second structure: the Jordan product, the Jordan identity, the trace form, the idempotents and the Peirce decomposition, the Hermitian subspace as a Jordan subalgebra, and the way the two halves of the product divide the distinguished subspaces between them.</p>
-<p>The product and its two halves are from <em>Biquaternion Multiplication</em>; the general theory is <em>Jordan Algebras</em>, and the special case used throughout is its §<em>The Symmetrisation of an Associative Algebra</em>. The algebra, its basis and its two idempotents are from <em>Biquaternion Algebra</em>, <em>Different Ways to Consider Biquaternions</em> and <em>Biquaternion Idempotents and Projections</em>; the subspace-by-subspace behaviour is tabulated in <em>Biquaternion Relations Between Subspaces</em>.</p>
+<p>Every product of two biquaternions splits into a symmetric and an antisymmetric half, and each half carries a structure of its own. The antisymmetric half is half the commutator, read in <em>Biquaternion Lie Algebra</em>; the symmetric half is the <strong>symmetrised product</strong>, and with it the biquaternion algebra is a commutative <strong>Jordan algebra</strong>. This article reads that second structure: the Jordan product, the Jordan identity, the trace form, the idempotents and the Peirce decomposition, the Hermitian subspace as a Jordan subalgebra, and the way the two halves of the product divide the distinguished subspaces between them. The symmetrisation is carried out for all four products of <em>The Four Biquaternion Complex Products</em>, and only the complex bilinear one is a Jordan product; the three others are read in §<em>The Symmetrisation of the Four Products</em>.</p>
+<p>The product is from <em>The Four Biquaternion Complex Products</em> and its four symmetrisations, together with the two halves of each, from <em>Decomposition of the Multiplication</em>; the general theory is <em>Jordan Algebras</em>, and the special case used throughout is its §<em>The Symmetrisation of an Associative Algebra</em>. The algebra, its basis and its two idempotents are from <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>, <em>Biquaternions as a Bilinear Algebra over $\mathbb{C}$</em> and <em>Biquaternion Idempotents and Projections</em>; the subspace-by-subspace behaviour is tabulated in <em>Biquaternion Relations Between Subspaces</em>; and the other halves, the four brackets, are <em>Biquaternion Lie Algebra</em>.</p>
 <p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$, and $(\mathbf{P},\mathbf{Q})=\sum_k P_kQ_k$ is the complex bilinear dot product of the vector parts.</p>
 <hr />
 <h2 id="the-jordan-product">The Jordan Product</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>symmetric part</strong> of the product, also called the <strong>symmetrized product</strong> or the <strong>Jordan product</strong>, is</p>
+<p>The <strong>symmetric part</strong> of the product, also called the <strong>symmetrised product</strong> or the <strong>Jordan product</strong>, is</p>
 <p>$$
 \tilde{P}\bullet\tilde{Q} := \tfrac{1}{2}\bigl(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}\bigr).
 $$</p>
@@ -74,7 +74,7 @@ $$</p>
 <p>$$
 \tilde{P}\tilde{Q} = \tilde{P}\bullet\tilde{Q} + \tilde{P}\wedge\tilde{Q} , \qquad \tilde{P}\wedge\tilde{Q} = \tfrac{1}{2}\bigl(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}\bigr),
 $$</p>
-<p>the second summand being the <strong>outer product</strong> of <em>Biquaternion Multiplication</em>, which is the commutator up to the factor $2$ and is read in <em>Biquaternion Lie Algebra</em>.</p>
+<p>the second summand being the <strong>outer product</strong> of <em>Decomposition of the Multiplication</em>, which is the commutator up to the factor $2$ and is read in <em>Biquaternion Lie Algebra</em>.</p>
 <h3 id="the-polarisation-of-the-square">The Polarisation of the Square</h3>
 <p><strong>Proposition.</strong> The Jordan product is the polarisation of the square:</p>
 <p>$$
@@ -160,16 +160,61 @@ $$</p>
 <p>The dimensions $1+2+1$ are the Jordan counterpart of the two minimal left ideals of <em>Biquaternion Ideals and Peirce Decomposition</em>: the middle space is two-dimensional there as well, and the two one-dimensional ends are the two idempotents.</p>
 <h2 id="the-hermitian-subspace-as-a-jordan-subalgebra">The Hermitian Subspace as a Jordan Subalgebra</h2>
 <p>The Hermitian subspace $\mathbb{M}_+$ is closed under the Jordan product. If $\tilde{P},\tilde{Q}\in\mathbb{M}_+$ then $\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}$ is again Hermitian, so $\tilde{P}\bullet\tilde{Q}\in\mathbb{M}_+$, and with the induced product $\mathbb{M}_+$ is itself a commutative Jordan algebra, this time over $\mathbb{R}$.</p>
-<p>It is of real dimension four and of degree two, and it is isomorphic to the Jordan algebra $H_2(\mathbb{C})$ of <em>The Six Subspaces and the Jordan Algebra</em>; that article reads the same structure from the side of the Hermitian elements, and <em>Jordan Algebras</em> treats the degree-two algebra in general under the heading of the spin factor. The Hermitian subspace is therefore a <strong>Jordan subalgebra</strong> of $\mathbb{B}$ of the special kind, the one real form on which the symmetrized product closes.</p>
+<p>It is of real dimension four and of degree two, and it is isomorphic to the Jordan algebra $H_2(\mathbb{C})$ of <em>The Six Subspaces and the Jordan Algebra</em>; that article reads the same structure from the side of the Hermitian elements, and <em>Jordan Algebras</em> treats the degree-two algebra in general under the heading of the spin factor. The Hermitian subspace is therefore a <strong>Jordan subalgebra</strong> of $\mathbb{B}$ of the special kind, the one real form on which the symmetrised product closes.</p>
 <h2 id="the-two-halves-of-the-product">The Two Halves of the Product</h2>
 <p>The product of two biquaternions carries two structures at once: the outer product makes $\mathbb{B}$ a Lie algebra, read in <em>Biquaternion Lie Algebra</em>, and the Jordan product makes $\mathbb{B}$ a commutative Jordan algebra, read here. The two halves are the two parts of a single bilinear product, the general case being <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em>.</p>
 <p>On the distinguished subspaces the two structures behave in opposite ways, and the contrast is sharpest on the two three-dimensional pieces of the centre decomposition of the Lie algebra. The vector subspace is closed under the outer product — it is the derived subalgebra $[\mathrm{G},\mathrm{G}]=\mathrm{Vect}(\mathbb{B})$ — and it is <strong>not</strong> closed under the Jordan product, since for two pure vectors</p>
 <p>$$
 \mathbf{P}\bullet\mathbf{Q} = -\bigl(\mathbf{P},\mathbf{Q}\bigr)e_0 ,
 $$</p>
-<p>a central scalar, so the Jordan product of two pure vectors leaves the vector subspace as soon as they are not orthogonal. The Hermitian subspace behaves in the mirror fashion: it is closed under the Jordan product and <strong>not</strong> under the outer product, since the outer product of two Hermitian elements is anti-Hermitian and lands in $\mathbb{M}_-$. The action of the symmetrized product on all six distinguished subspaces is the corresponding row of the tables of <em>Biquaternion Relations Between Subspaces</em>, cited and not repeated here.</p>
+<p>a central scalar, so the Jordan product of two pure vectors leaves the vector subspace as soon as they are not orthogonal. The Hermitian subspace behaves in the mirror fashion: it is closed under the Jordan product and <strong>not</strong> under the outer product, since the outer product of two Hermitian elements is anti-Hermitian and lands in $\mathbb{M}_-$. The action of the symmetrised product on all six distinguished subspaces is the corresponding row of the tables of <em>Biquaternion Relations Between Subspaces</em>, cited and not repeated here.</p>
+<h2 id="the-symmetrisation-of-the-four-products">The Symmetrisation of the Four Products</h2>
+<p>The symmetrisation $f^{\mathrm{s}}(\tilde{P},\tilde{Q})=\tfrac12(f(\tilde{P},\tilde{Q})+f(\tilde{Q},\tilde{P}))$ is defined for any binary operation $f$, and applied to the four products of <em>The Four Biquaternion Complex Products</em> it gives the four symmetric halves tabulated in <em>Decomposition of the Multiplication</em>. Only the first of the four is a Jordan product, and the sections above are the development of that one.</p>
+<p><strong>Theorem.</strong> Among the four symmetrisations exactly $\mathcal{A}^{\mathrm{s}}=\bullet$, the symmetrisation of the complex bilinear product, satisfies the Jordan identity.</p>
+<p><strong>Proof.</strong> $\mathcal{A}^{\mathrm{s}}$ is the symmetrisation of the associative product and satisfies the identity. For each of the other three one pair of elements is enough: putting $g=f^{\mathrm{s}}$, so that $g$ is symmetric and the Jordan identity reads $g\bigl(g(\tilde{P},\tilde{Q}),g(\tilde{P},\tilde{P})\bigr)=g\bigl(\tilde{P},g(\tilde{Q},g(\tilde{P},\tilde{P}))\bigr)$, the two sides take the following values at $(\tilde{P},\tilde{Q})$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$f$</th>
+<th>$\tilde{P},\tilde{Q}$</th>
+<th>$g\bigl(g(\tilde{P},\tilde{Q}),g(\tilde{P},\tilde{P})\bigr)$</th>
+<th>$g\bigl(\tilde{P},g(\tilde{Q},g(\tilde{P},\tilde{P}))\bigr)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{B}=\tilde{P}^{\natural}\tilde{Q}$</td>
+<td>$e_1,\ e_1$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathcal{C}=\tilde{P}\tilde{Q}^{*}$</td>
+<td>$e_1,\ e_1$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}=\tilde{P}^{\natural}\tilde{Q}^{*}$</td>
+<td>$e_1,\ e_0$</td>
+<td>$-e_1$</td>
+<td>$e_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark.</strong> The failure of the $\natural$-case has a one-line reason. Its symmetrisation is central, $\mathcal{B}^{\mathrm{s}}(\tilde{P},\tilde{Q})=\phi(\tilde{P},\tilde{Q})e_0$ with $\phi(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$, so both sides of the Jordan identity are central multiples of $e_0$, and the identity reduces to $\phi(\tilde{P},\tilde{Q})\phi(\tilde{P},\tilde{P})=\phi(\tilde{P},\tilde{P})P_0Q_0$, which holds for all $\tilde{P},\tilde{Q}$ exactly when $\phi$ is the scalar-part form $P_0Q_0$; it is not. The witness above is the pair of pure vectors $e_1,e_1$, where $\phi(e_1,e_1)=1$ while the scalar part is $0$.</p>
+<p>The two remaining symmetrisations are the more degenerate ones: they are only $\mathbb{R}$-bilinear, the interchange of the two factors carrying a conjugate-linear slot into a linear one, so neither is a product over $\mathbb{C}$ at all, and the failure is read off the same way.</p>
+<h3 id="the-centre-and-the-hermitian-subspace">The Centre and the Hermitian Subspace</h3>
+<p>The three failing symmetrisations do not all fail in the same way, and the ranges recorded in <em>Decomposition of the Multiplication</em> separate them.</p>
+<p>The symmetrisation of the $\natural$-product is central, and it is the trace form of the $\natural$-product read as a central element:</p>
+<p>$$
+\mathcal{B}^{\mathrm{s}}(\tilde{P},\tilde{Q}) = \bigl(\mathrm{Sc}\,\mathcal{B}^{\mathrm{s}}\bigr)e_0 = \tfrac12\,\mathrm{Tr}\bigl(\tilde{P}^{\natural}\tilde{Q}\bigr)e_0 .
+$$</p>
+<p>Its scalar part is $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$, the companion of $\mathrm{Sc}(\tilde{P}\tilde{Q})=P_0Q_0-(\mathbf{P},\mathbf{Q})$ that the trace form $\mathrm{Tr}(\tilde{P}\bullet\tilde{Q})=2\bigl(P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr)$ of the sections above carries. So the two bilinear scalar parts are the sum and the half-difference of $2P_0Q_0$ and $2(\mathbf{P},\mathbf{Q})$, and their symmetrisations are the two directions of that single trace: the Jordan product fills the algebra, and the $\natural$-symmetrisation retains only the trace direction.</p>
+<p>The symmetrisation of the star-product takes its values in the Hermitian subspace $\mathbb{M}_+$, the Jordan subalgebra of the section above, so that it never leaves it; its scalar part is the real part of the sesquilinear scalar part $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ of <em>Relations Between the Four Biquaternion Products</em>, and its vector part is the imaginary part of the mixed terms. The symmetrisation of the quaternionic sesquilinear product takes its values in neither $\mathbb{M}_+$ nor $\mathbb{M}_-$, and of the four symmetrisations it is the only one that respects no subspace of the six.</p>
 <h2 id="summary">Summary</h2>
 <p>With the Jordan product $\tilde{P}\bullet\tilde{Q}=\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$ the biquaternion algebra is a commutative Jordan algebra, special, of degree two, whose envelope is the associative algebra $\mathbb{B}$ itself. The Jordan identity holds, the trace form $\mathrm{Tr}(\tilde{P}\bullet\tilde{Q})=\mathrm{Tr}(\tilde{P}\tilde{Q})$ is symmetric and associative, and the two idempotents $\tilde{\Pi}_1,\tilde{\Pi}_2$ are Jordan orthogonal and complete, with Peirce dimensions $1+2+1$. The Hermitian subspace $\mathbb{M}_+$ is a Jordan subalgebra isomorphic to $H_2(\mathbb{C})$. The vector subspace is closed under the outer product and not under the Jordan product, the Hermitian subspace is closed under the Jordan product and not under the outer product, so the symmetric and the antisymmetric halves of the product divide the distinguished subspaces between them.</p>
+<p>Of the four products of <em>The Four Biquaternion Complex Products</em> only the complex bilinear one has a Jordan symmetrisation; the symmetrisations of the $\natural$-, the star- and the quaternionic sesquilinear product are commutative but fail the Jordan identity, at $(e_1,e_1)$ for the first two and at $(e_1,e_0)$ for the third. The three failures are of three kinds: the $\natural$-symmetrisation is central-valued, $\mathcal{B}^{\mathrm{s}}=\tfrac12\mathrm{Tr}(\tilde{P}^{\natural}\tilde{Q})e_0$, and fails because its central form is not the scalar-part form; the star-symmetrisation is Hermitian-valued and fills the Jordan subalgebra $\mathbb{M}_+$; and the quaternionic sesquilinear symmetrisation fills no subspace of the six.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -181,11 +226,27 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde{P}\bullet\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$</td>
-<td>Jordan product, the symmetric part</td>
+<td>Jordan product, the symmetric part of the complex bilinear product</td>
 </tr>
 <tr>
 <td>$\tilde{P}\wedge\tilde{Q}=\tfrac{1}{2}(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})$</td>
 <td>Outer product, the antisymmetric part; the commutator is twice it</td>
+</tr>
+<tr>
+<td>$\mathcal{A},\mathcal{B},\mathcal{C},\mathcal{D}$</td>
+<td>the four products as binary operations, $\tilde{P}\tilde{Q}$, $\tilde{P}^{\natural}\tilde{Q}$, $\tilde{P}\tilde{Q}^{*}$, $\tilde{P}^{\natural}\tilde{Q}^{*}$</td>
+</tr>
+<tr>
+<td>$f^{\mathrm{s}}$</td>
+<td>the symmetrisation $\tfrac12(f(\tilde{P},\tilde{Q})+f(\tilde{Q},\tilde{P}))$ of a binary operation $f$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}^{\mathrm{s}}=\tfrac12\mathrm{Tr}(\tilde{P}^{\natural}\tilde{Q})e_0$</td>
+<td>the central symmetrisation of the $\natural$-product, not a Jordan product</td>
+</tr>
+<tr>
+<td>$\mathcal{C}^{\mathrm{s}}$</td>
+<td>the symmetrisation of the star-product, with values in $\mathbb{M}_+$, not a Jordan product</td>
 </tr>
 <tr>
 <td>$\mathbb{B}$ with $\bullet$</td>
@@ -225,8 +286,8 @@ $$</p>
 <ul>
 <li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em>, AMS Colloquium Publications 39 (1968), for the general theory of Jordan algebras, the Peirce decomposition and the degree.</li>
 <li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the special Jordan algebras, the envelope and the trace form.</li>
-<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the symmetrized product of quaternions and its idempotents.</li>
-<li>The companion articles of this series: <em>Biquaternion Multiplication</em>, <em>Biquaternion Lie Algebra</em>, <em>Biquaternion Idempotents and Projections</em>, <em>The Six Subspaces and the Jordan Algebra</em>, <em>Biquaternion Relations Between Subspaces</em>, and <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em>.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the symmetrised product of quaternions and its idempotents.</li>
+<li>The companion articles of this series: <em>The Four Biquaternion Complex Products</em>, <em>Relations Between the Four Biquaternion Products</em>, <em>Decomposition of the Multiplication</em>, <em>Biquaternion Lie Algebra</em>, <em>Biquaternion Idempotents and Projections</em>, <em>The Six Subspaces and the Jordan Algebra</em>, <em>Biquaternion Relations Between Subspaces</em>, and <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em>.</li>
 </ul>
       </div>
     </main>

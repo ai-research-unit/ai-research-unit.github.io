@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conjugate-Linear Maps and the Conjugate Dual — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conjugate-linear-maps-and-the-conjugate-dual"><strong>Conjugate-Linear Maps and the Conjugate Dual</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Over a commutative ring $R$ with an involution $\varsigma$, the additive maps between $R$-modules come in two kinds: the $R$-linear ones and the $\varsigma$<strong>-semilinear</strong> ones, the maps with $f(\lambda x) = \varsigma(\lambda) f(x)$. The two kinds are not disjoint — a map may be both, as the graded-ring remark records — and the semilinear maps are exactly the maps of <em>Sesquilinear Algebras</em> read at the level of the module, and they are what a sesquilinear structure needs: a product linear in one slot and $\varsigma$-semilinear in the other is built out of one linear slot and one semilinear slot, so the second slot must be seen by semilinear maps and not by linear ones.</p>
+<p>This article develops the module theory of those maps and of the dual they define. The <strong>conjugate dual</strong> $M^{\varsigma*}$ is the module of the semilinear maps $M \to R$; it is the receiver of the pairings that are $\varsigma$-semilinear in one variable, just as the ordinary dual is the receiver of the pairings linear in both. The composition of two semilinear maps is linear, so the linear and semilinear endomorphisms together form a graded sum of the additive endomorphisms, a graded ring when the two parts meet only in $0$, and this parity is the skeleton of the whole article.</p>
+<p>The treatment is module-theoretic: no topology, no norm and no form appear. The topological counterpart is <em>The Conjugate Dual of a Sesquilinear Algebra</em>, and the linear theory that is imported at each step is <em>Modules</em>, <em>Linear Maps and Matrices</em> and <em>The Transpose of a Linear Map</em>. The conjugate module $M^{\varsigma}$, which is the same set with the twisted action $\lambda \cdot x = \varsigma(\lambda) x$, is defined in <em>Sesquilinear Algebras</em> and is used throughout.</p>
+<h2 id="the-conjugate-linear-maps">The Conjugate-Linear Maps</h2>
+<h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
+<p><strong>Definition.</strong> Let $M$ and $N$ be $R$-modules. A map $f : M \to N$ is $\varsigma$<strong>-semilinear</strong>, or <strong>conjugate-linear</strong>, when it is additive and</p>
+<p>$$
+f(\lambda x) = \varsigma(\lambda) f(x)
+$$</p>
+<p>for all $\lambda \in R$ and $x \in M$. The set of them is written $\operatorname{Hom}_{\varsigma}(M, N)$, and a semilinear map $M \to M$ is a <strong>conjugate-linear endomorphism</strong> of $M$.</p>
+<p><strong>Proposition.</strong> A semilinear map satisfies $f(0) = 0$ and $f(-x) = -f(x)$, and the semilinear maps $M \to N$ form an abelian group under pointwise addition.</p>
+<p><strong>Proof.</strong> Put $x = 0$ and $\lambda = 0$ for the first, $x = -x$ for the second, both as for a linear map; the sum of two additive maps is additive and satisfies the scalar rule because $\varsigma(\lambda)$ is a scalar, so the sum of two semilinear maps is semilinear, and the negative is semilinear likewise. $\square$</p>
+<p><strong>Example (the involution).</strong> The involution $\varsigma$ of $R$ is itself a $\varsigma$-semilinear map $R \to R$, since $\varsigma(\lambda\mu) = \varsigma(\mu)\varsigma(\lambda)$ with $R$ commutative gives $\varsigma(\lambda \mu) = \varsigma(\lambda)\varsigma(\mu)$; the semilinear maps therefore always exist, and $\varsigma$ is their model. Likewise the involution $x \mapsto x^{*}$ of a sesquilinear algebra is $\varsigma$-semilinear, and it is the semilinear map that the derived operation of <em>Sesquilinear Algebras</em> uses in its second slot.</p>
+<p><strong>Example (matrices).</strong> On $M = N = \mathbb{C}^{n}$ with $\varsigma$ the conjugation, a semilinear map is a map of the form $z \mapsto A \bar{z}$ for a matrix $A$, where $\bar{z}$ is the coordinatewise conjugate. It is additive, and $f(\lambda z) = A \overline{\lambda z} = \bar{\lambda} A \bar{z} = \bar{\lambda} f(z)$; the semilinear maps $\mathbb{C}^{n} \to \mathbb{C}^{n}$ are therefore exactly the matrices acting on the conjugate coordinates, an $n^{2}$-dimensional family over $\mathbb{C}$.</p>
+<h3 id="the-two-readings-by-linear-maps">The Two Readings by Linear Maps</h3>
+<p><strong>Theorem.</strong> For all $R$-modules $M, N$ there are natural isomorphisms of abelian groups</p>
+<p>$$
+\operatorname{Hom}_{\varsigma}(M, N) \;\cong\; \operatorname{Hom}_{R}(M^{\varsigma}, N) \;\cong\; \operatorname{Hom}_{R}(M, N^{\varsigma}).
+$$</p>
+<p><strong>Proof.</strong> A semilinear $f : M \to N$ is additive, so it can be read on the same underlying set with the twisted action: $f(\lambda \cdot x) = f(\varsigma(\lambda) x) = \varsigma(\varsigma(\lambda)) f(x) = \lambda f(x)$, so $f$ is a linear map $M^{\varsigma} \to N$, and the reading is a bijection because it changes nothing but the action declared on the source. On the other side, $f(\lambda x) = \varsigma(\lambda) f(x) = \lambda \cdot f(x)$ says that the same $f$ is a linear map $M \to N^{\varsigma}$. Both readings are natural, a linear $M^{\varsigma} \to N$ being the same rule of assignment as a semilinear $M \to N$. $\square$</p>
+<p><strong>Remark.</strong> The theorem is the definitional reason the two kinds of map are not two unrelated notions: a semilinear map is a linear map with one conjugation on the source or on the target, and the choice of side is a bookkeeping convention, the two being identified by the conjugate module. It also gives the collapse: $\operatorname{Hom}_{\varsigma}(M,N) = \operatorname{Hom}_{R}(M,N)$ for $\varsigma = \mathrm{id}$, and in general a map that is both linear and semilinear satisfies $(\lambda - \varsigma(\lambda)) f = 0$ for every $\lambda$, so a <strong>surjective</strong> map with faithful target is both only when $\varsigma = \mathrm{id}$, which is the collapse of the entry article. Surjectivity cannot be dropped: the witness of the graded-ring remark below is a nonzero map with faithful target that is both, for a nontrivial involution.</p>
+<h3 id="the-parity-of-a-composite">The Parity of a Composite</h3>
+<p><strong>Theorem (the parity rule).</strong> Let $f : M \to N$ and $g : N \to P$ be $R$-linear or $\varsigma$-semilinear. Then</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$g$</th>
+<th>$f$</th>
+<th>$g \circ f$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>linear</td>
+<td>linear</td>
+<td>linear</td>
+</tr>
+<tr>
+<td>linear</td>
+<td>semilinear</td>
+<td>semilinear</td>
+</tr>
+<tr>
+<td>semilinear</td>
+<td>linear</td>
+<td>semilinear</td>
+</tr>
+<tr>
+<td>semilinear</td>
+<td>semilinear</td>
+<td>linear</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Each case is one substitution. If $g$ and $f$ are semilinear, $(g \circ f)(\lambda x) = g(\varsigma(\lambda) f(x)) = \varsigma(\varsigma(\lambda)) g(f(x)) = \lambda (g \circ f)(x)$, using $\varsigma^{2} = \mathrm{id}$; the other three cases substitute only one $\varsigma$ and leave the other slot linear, or none at all. $\square$</p>
+<p><strong>Corollary (the graded ring of endomorphisms).</strong> On an $R$-module $M$, the linear endomorphisms form a subring $\operatorname{End}_{R}(M)$ of the additive endomorphisms, the conjugate-linear endomorphisms form the subgroup $\operatorname{End}_{\varsigma}(M)$, and the sum $\operatorname{End}_{R}(M) + \operatorname{End}_{\varsigma}(M)$ is a subring that is a $\mathbb{Z}/2$-graded ring with components $\operatorname{End}_{R}(M)$ and $\operatorname{End}_{\varsigma}(M)$ whenever the two components meet only in $0$. That happens when $\varsigma \neq \mathrm{id}$ and $R$ contains a $\lambda$ with $\varsigma(\lambda) - \lambda$ invertible — in particular when $\varsigma \neq \mathrm{id}$ and $R$ is a field — and the sum is then the direct sum $\operatorname{End}_{R}(M) \oplus \operatorname{End}_{\varsigma}(M)$.</p>
+<p><strong>Proof.</strong> The parity rule says the degree adds under composition, and by the table the sum is closed under addition and under composition, so it is a subring and the two given parts afford the grading as soon as their intersection is $0$. For the directness, a map that is both linear and semilinear satisfies $(\lambda - \varsigma(\lambda)) f = 0$ for every $\lambda$; if $\varsigma(\lambda) - \lambda$ is invertible this gives $f = 0$, so the intersection is $0$. $\square$</p>
+<p><strong>Remark.</strong> $\operatorname{End}_{\varsigma}(M)$ is not itself a ring: the composite of two odd elements is even, so the odd part is closed under addition and under left and right multiplication by the even part, which makes it a bimodule over $\operatorname{End}_{R}(M)$ and not a subring. The parity rule is the algebraic skeleton of every "signed" or "twisted" construction of the corpus: the graded action, the signed sandwich and the signed adjoint are all read on this $\mathbb{Z}/2$-grading of the operators, and the odd part is the part that a conjugate-linear map occupies.</p>
+<p><strong>Remark (the intersection can be nonzero).</strong> Without the invertibility the two components can meet, and the sum is then not direct. Take $R = \mathbb{Q}[\varepsilon]/(\varepsilon^{2})$ with $\varsigma(\varepsilon) = -\varepsilon$ and $M = N = R$, a faithful module. The map $f(x) = \varepsilon x$ is nonzero, and it is linear because $R$ is commutative while it is semilinear because $\varsigma(\lambda) - \lambda$ is a multiple of $\varepsilon$ and $\varepsilon^{2} = 0$; so $f$ lies in both $\operatorname{End}_{R}(M)$ and $\operatorname{End}_{\varsigma}(M)$. The failure is the same annihilator phenomenon as in <em>The Sesquilinear Product</em>: the involution is the identity only modulo the scalars that annihilate the module.</p>
+<h2 id="the-module-of-conjugate-linear-maps">The Module of Conjugate-Linear Maps</h2>
+<p><strong>Theorem.</strong> $\operatorname{Hom}_{\varsigma}(M, N)$ is an $R$-module for the action $(\lambda \cdot f)(x) = \lambda f(x)$, the identification $\operatorname{Hom}_{\varsigma}(M, N) \cong \operatorname{Hom}_{R}(M^{\varsigma}, N)$ is an isomorphism of $R$-modules, and $\operatorname{Hom}_{\varsigma}(M, N)$ is a bimodule over $\operatorname{End}_{R}(N)$ and $\operatorname{End}_{R}(M)$ for the composition $\alpha f \beta$ with $\alpha \in \operatorname{End}_{R}(N)$ and $\beta \in \operatorname{End}_{R}(M)$.</p>
+<p><strong>Proof.</strong> The map $\lambda \cdot f$ is additive, and $(\lambda \cdot f)(\mu x) = \lambda f(\mu x) = \lambda \varsigma(\mu) f(x) = \varsigma(\mu) (\lambda \cdot f)(x)$, so it is semilinear; the module axioms are those of $N$ read pointwise, and $1 \cdot f = f$. The identification is the theorem above, and both sides carry the same pointwise action, so it is an isomorphism of modules. For the bimodule structure, $\alpha f \beta$ is linear in the outer maps and semilinear in the middle by the parity rule. $\square$</p>
+<p><strong>Remark.</strong> The action is the ordinary one on the target and the twisted one on the source: the module $\operatorname{Hom}_{\varsigma}(M,N)$ is the module $\operatorname{Hom}_{R}(M^{\varsigma},N)$ with its natural action, and reading it as $\operatorname{Hom}_{R}(M,N^{\varsigma})$ transfers the twist to the target instead. There is a single module, presented with the conjugation on whichever side is convenient, and the parity rule is what guarantees that the presentation is consistent.</p>
+<h2 id="the-conjugate-dual">The Conjugate Dual</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $M$ be an $R$-module. The <strong>ordinary dual</strong> is $M^{*} = \operatorname{Hom}_{R}(M, R)$ and the <strong>conjugate dual</strong> is</p>
+<p>$$
+M^{\varsigma*} = \operatorname{Hom}_{\varsigma}(M, R),
+$$</p>
+<p>the semilinear maps of $M$ into the base ring read as an $R$-module.</p>
+<p><strong>Theorem.</strong> There are natural isomorphisms of $R$-modules</p>
+<p>$$
+M^{\varsigma*} \;\cong\; (M^{\varsigma})^{*}, \qquad (M^{\varsigma})^{\varsigma*} \;\cong\; M^{*},
+$$</p>
+<p>and $M^{\varsigma*} = M^{*}$ for $\varsigma = \mathrm{id}$.</p>
+<p><strong>Proof.</strong> The first is the two-readings theorem: a semilinear $M \to R$ is a linear $M^{\varsigma} \to R$. The second applies the first to the conjugate module, since $(M^{\varsigma})^{\varsigma} = M$; the third is the collapse. $\square$</p>
+<p><strong>Remark (notation).</strong> The conjugate dual is not the conjugate module. The conjugate module $M^{\varsigma}$ is the same module with the scalars twisted, and the conjugate dual $M^{\varsigma*}$ is a module of maps into $R$; they are different objects, they carry different symbols, and confusing them is the standard error of the subject. The conjugate dual of $M$ is the ordinary dual of $M^{\varsigma}$, so the two constructions are related by $M^{\varsigma*} \cong (M^{\varsigma})^{*}$; the relation is one-sided, a theorem and not a definition, and it does not say that conjugating and dualising commute: the conjugate of the ordinary dual $(M^{*})^{\varsigma}$ is a different module, identified with $(M^{\varsigma})^{*}$ only through a $\varsigma$-semilinear map and not through a linear one.</p>
+<h3 id="the-pairing">The Pairing</h3>
+<p><strong>Theorem (the two pairings).</strong> The evaluation $(f, x) \mapsto f(x)$ is an $R$-bilinear pairing $M^{\varsigma*} \times M^{\varsigma} \to R$; equivalently it is linear in the first variable and $\varsigma$-semilinear in the second, on $M^{\varsigma*} \times M$. Likewise the ordinary dual gives a pairing $M^{*} \times M \to R$ that is linear in both variables.</p>
+<p><strong>Proof.</strong> $\langle \lambda \cdot f, x \rangle = \lambda \langle f, x \rangle$ because the action on $M^{\varsigma*}$ is the pointwise one, and $\langle f, \lambda \cdot x \rangle = \langle f, \varsigma(\lambda) x \rangle = \varsigma(\varsigma(\lambda)) \langle f, x \rangle = \lambda \langle f, x \rangle$ on $M^{\varsigma}$, which is the $\varsigma$-semilinearity in the second variable when $M$ is read with its own action. The statement for the ordinary dual is the same computation with $\varsigma = \mathrm{id}$. $\square$</p>
+<p><strong>Remark (why the ordinary dual does not see the second slot).</strong> A pairing in which the second slot is $\varsigma$-semilinear cannot be built from the ordinary dual: a linear functional is linear in every variable it meets, so the pairing $M^{*} \times M \to R$ is linear in both slots and no functional of $M^{*}$ can produce the conjugated scalar that a sesquilinear product or a sesquilinear form requires in its second slot. The conjugate dual is exactly the receiver of that second kind of pairing: for every module $P$ there is a natural isomorphism between $\operatorname{Hom}_{R}(P, M^{\varsigma*})$ and the pairings $P \times M \to R$ that are linear in the first variable and $\varsigma$-semilinear in the second, sending a linear map $g$ to the pairing $(p, x) \mapsto g(p)(x)$. The asymmetry of the two slots, which the entry article records for the product, is at the level of the duals the statement that the two slots need two different duals.</p>
+<h3 id="the-transpose-of-a-conjugate-linear-map">The Transpose of a Conjugate-Linear Map</h3>
+<p><strong>Theorem (the transpose flips the two duals).</strong> Let $f : M \to N$ be $\varsigma$-semilinear. Then the pullback $g \mapsto g \circ f$ is a linear map</p>
+<p>$$
+f^{*} : N^{*} \to M^{\varsigma*}, \qquad f^{*} : N^{\varsigma*} \to M^{*},
+$$</p>
+<p>and the two assignments are the same rule on the two duals.</p>
+<p><strong>Proof.</strong> Take $g$ linear $N \to R$: then $(g \circ f)(\lambda x) = g(\varsigma(\lambda) f(x)) = \varsigma(\lambda) (g \circ f)(x)$, so $g \circ f$ is semilinear $M \to R$, an element of $M^{\varsigma*}$; this assignment is linear in $g$. Take $g$ semilinear $N \to R$: then $(g \circ f)(\lambda x) = g(\varsigma(\lambda) f(x)) = \varsigma(\varsigma(\lambda)) (g \circ f)(x) = \lambda (g \circ f)(x)$, so $g \circ f$ is linear, an element of $M^{*}$. $\square$</p>
+<p><strong>Remark.</strong> The transpose of a semilinear map therefore cannot stay on one dual: it exchanges the ordinary and the conjugate dual, because composing with a semilinear map flips the parity. This is the same parity flip as the transposed product of <em>The Sesquilinear Product</em>, read on the dual, and it is why the adjoint of a conjugate-linear operator in the operator theory of the category is a different construction from the adjoint of a linear one. The linear case, where the transpose of $M \to N$ is a map $N^{*} \to M^{*}$, is <em>The Transpose of a Linear Map</em>.</p>
+<h3 id="the-double-conjugate-dual-and-the-evaluation">The Double Conjugate Dual and the Evaluation</h3>
+<p><strong>Theorem (the evaluation is the evaluation of the conjugate module).</strong> The canonical map</p>
+<p>$$
+\mathrm{ev} : M \longrightarrow (M^{\varsigma*})^{*}, \qquad \mathrm{ev}_{x}(f) = f(x),
+$$</p>
+<p>is $\varsigma$-semilinear, and under the identification $(M^{\varsigma*})^{*} \cong (M^{\varsigma})^{**}$ it is the ordinary evaluation $\mathrm{ev} : M^{\varsigma} \to (M^{\varsigma})^{**}$ of the conjugate module.</p>
+<p><strong>Proof.</strong> $\mathrm{ev}_{\lambda x}(f) = f(\lambda x) = \varsigma(\lambda) f(x) = \varsigma(\lambda) \mathrm{ev}_{x}(f)$, so $\mathrm{ev}$ is semilinear; and each $\mathrm{ev}_{x}$ is linear in $f$, so $\mathrm{ev}_{x} \in (M^{\varsigma*})^{*} = \operatorname{Hom}_{R}(M^{\varsigma*}, R)$. By the first isomorphism of the dual theorem, $M^{\varsigma*} \cong (M^{\varsigma})^{*}$, so $(M^{\varsigma*})^{*} \cong (M^{\varsigma})^{**}$, and $\mathrm{ev}$ becomes the map $x \mapsto (\text{evaluation at } x)$ for $M^{\varsigma}$, which is the ordinary evaluation. $\square$</p>
+<p><strong>Corollary (reflexivity is inherited).</strong> If the conjugate module is reflexive, that is if the ordinary evaluation $M^{\varsigma} \to (M^{\varsigma})^{**}$ is an isomorphism, then the evaluation $\mathrm{ev} : M^{\varsigma} \to (M^{\varsigma*})^{*}$ is an isomorphism as well.</p>
+<p><strong>Proof.</strong> By the dual theorem $M^{\varsigma*} \cong (M^{\varsigma})^{*}$, so $(M^{\varsigma*})^{*} \cong (M^{\varsigma})^{**}$, and the theorem above identifies $\mathrm{ev}$ with the ordinary evaluation of $M^{\varsigma}$ under this isomorphism. The two maps are therefore the same map of the same pair of modules, and reflexivity of $M^{\varsigma}$ is exactly the statement that it is an isomorphism. $\square$</p>
+<p><strong>Remark.</strong> The evaluation lives on the conjugate module and is only semilinear on $M$: read on $M$ it is semilinear, read on $M^{\varsigma}$ it is linear, and the two readings are the same map. The bookkeeping rule is that each conjugation flips the parity and two conjugations return it, so every natural map of the theory <strong>out of $M$ into a construction carrying one conjugation</strong> is semilinear on $M$ and linear on the conjugate module. The plain endomorphisms of $M$ are of course still linear on $M$ — the identity is the first of them — and it is the maps that meet the conjugate dual or the conjugate module that are forced to be semilinear.</p>
+<h2 id="the-transport-of-a-structure">The Transport of a Structure</h2>
+<h3 id="along-a-conjugate-linear-map">Along a Conjugate-Linear Map</h3>
+<p><strong>Theorem (transport preserves the parity).</strong> Let $A$ carry a $\varsigma$-sesquilinear product $\cdot_{A}$ and let $\varphi : A \to B$ be a $\varsigma$-semilinear bijection. Then the transported product</p>
+<p>$$
+x \cdot_{B} y = \varphi\bigl( \varphi^{-1}(x) \cdot_{A} \varphi^{-1}(y) \bigr)
+$$</p>
+<p>is a $\varsigma$-sesquilinear product on $B$ of the same parity as $\cdot_{A}$, linear in the first slot and $\varsigma$-semilinear in the second.</p>
+<p><strong>Proof.</strong> In the first slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is linear in its first variable, so their composite is semilinear, and $\varphi$ is semilinear, so the composite is linear. In the second slot, $\varphi^{-1}$ is semilinear and $\cdot_{A}$ is semilinear in its second variable, so the composite is linear, and $\varphi$ is semilinear, so the composite is semilinear. In each slot the variable passes through two semilinear steps and the parity rule applied twice returns the parity of the slot. $\square$</p>
+<p><strong>Remark.</strong> Transport by a conjugate-linear map does <strong>not</strong> reverse the parity, because each slot meets one $\varphi^{-1}$ and one $\varphi$ and the two conjugations cancel. What reverses the parity is the transposition of the product, $x \cdot y \mapsto y \cdot x$, which is the bilinear map $A^{\varsigma} \times A \to A$ of <em>The Sesquilinear Product</em> and the opposite algebra of <em>Sesquilinear Algebras</em>: there the conjugate module comes into the first slot and the parity of the first slot is reversed.</p>
+<h3 id="conjugation-as-the-model">Conjugation as the Model</h3>
+<p><strong>Remark.</strong> The identity map $M \to M^{\varsigma}$ is the universal semilinear map: it is the one that renames the scalars, every other semilinear map factoring through it by the two-readings theorem, and it is the reason the conjugate module is a functor and not merely a set. A <strong>conjugate morphism</strong> of sesquilinear algebras, in the sense of <em>Sesquilinear Algebras</em>, is then exactly a morphism $A \to B^{\varsigma}$: the semilinear maps of this article are the underlying maps of the conjugate morphisms, and the parity rule is the statement that the composite of two conjugate morphisms is a morphism.</p>
+<h2 id="summary">Summary</h2>
+<p>Over a commutative ring $R$ with an involution $\varsigma$, the $\varsigma$-semilinear maps are the additive maps with $f(\lambda x) = \varsigma(\lambda) f(x)$; they are the linear maps of the conjugate module, $\operatorname{Hom}_{\varsigma}(M,N) \cong \operatorname{Hom}_{R}(M^{\varsigma},N) \cong \operatorname{Hom}_{R}(M,N^{\varsigma})$, and they form an $R$-module. Composition adds a parity: two linear maps give a linear map, one of each gives a semilinear map, and two semilinear maps give a linear map, so the linear and semilinear endomorphisms of $M$ together form a $\mathbb{Z}/2$-graded ring with the linear part even and the semilinear part odd, a direct sum when the two parts meet only in $0$ and not otherwise. The conjugate dual $M^{\varsigma*} = \operatorname{Hom}_{\varsigma}(M,R)$ is the ordinary dual of the conjugate module, $M^{\varsigma*} \cong (M^{\varsigma})^{*}$, and it is the receiver of the pairings linear in one variable and $\varsigma$-semilinear in the other, which the ordinary dual cannot see. The transpose of a semilinear map exchanges the two duals, because composing with it flips the parity, and the canonical map into the double conjugate dual is the ordinary evaluation of the conjugate module, semilinear on $M$ and linear on $M^{\varsigma}$. The parity is preserved by transporting a product along a conjugate-linear bijection and reversed by transposing it, so conjugation, duality and transposition are three distinct operations on the same parity bookkeeping.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\varsigma$</td>
+<td>a commutative ring with $1$, and an involution of it</td>
+</tr>
+<tr>
+<td>$f(\lambda x) = \varsigma(\lambda) f(x)$</td>
+<td>a $\varsigma$-semilinear, or conjugate-linear, map</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\varsigma}(M, N)$</td>
+<td>the $R$-module of the semilinear maps $M \to N$</td>
+</tr>
+<tr>
+<td>$M^{\varsigma}$</td>
+<td>the conjugate module, the same set with $\lambda \cdot x = \varsigma(\lambda) x$</td>
+</tr>
+<tr>
+<td>$M^{*}$</td>
+<td>the ordinary dual $\operatorname{Hom}_{R}(M, R)$</td>
+</tr>
+<tr>
+<td>$M^{\varsigma*}$</td>
+<td>the conjugate dual $\operatorname{Hom}_{\varsigma}(M, R) \cong (M^{\varsigma})^{*}$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{R}(M) + \operatorname{End}_{\varsigma}(M)$</td>
+<td>the $\mathbb{Z}/2$-graded ring of the linear and semilinear endomorphisms (direct when the two parts meet only in $0$)</td>
+</tr>
+<tr>
+<td>$f^{*}$</td>
+<td>the transpose, carrying $N^{*} \to M^{\varsigma*}$ and $N^{\varsigma*} \to M^{*}$</td>
+</tr>
+<tr>
+<td>$\mathrm{ev}_{x}(f) = f(x)$</td>
+<td>the evaluation into the double conjugate dual</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>N. Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1989), for the semilinear maps of a module over a ring with an involution, and the reading of a semilinear map as a linear map on one side or the other.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the involution of a ring and the conjugate-linear maps and duals that it produces over such a ring.</li>
+<li>Sterling K. Berberian, <em>Baer *-Rings</em> (Springer, 1972), for the module theory of an involution ring, the Hermitian and the sesquilinear forms read on the conjugate module, and the conjugate dual as the receiver of a semilinear pairing.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the semilinear maps of an algebra with involution and the transport of a structure along a conjugate-linear isomorphism.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

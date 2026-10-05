@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sesquilinear Symmetrised Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sesquilinear-symmetrised-product"><strong>The Sesquilinear Symmetrised Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A sesquilinear product carries a second product, its transpose $y \star x$, and the two together carry a third, their symmetrisation. The <strong>symmetrised sesquilinear product</strong> is the operation</p>
+<p>$$
+x \circ y = \tfrac12\bigl(x \star y + y \star x\bigr),
+$$</p>
+<p>the companion of the symmetrised product of an algebra and the operation under which the Hermitian elements of a sesquilinear algebra close: the symmetrised product of a sesquilinear algebra is <em>The Sesquilinear Symmetrised Product</em>, and the bracket formed by the difference is <em>The Sesquilinear Commutator</em>.</p>
+<p>The interest of the operation is that it is almost, and not quite, a Jordan product, and the whole of this article is the location of the difference. Three facts are proved. The symmetrisation is an $R^{\varsigma}$-bilinear operation and not an $R$-bilinear one, the two scalar parities of the two slots collapsing to the fixed ring. In the derived case $x \star y = xy^{*}$ it lands in the Hermitian part for arbitrary arguments, not only for Hermitian ones, which is sharper than the corresponding statement for the plain symmetrisation. And the Jordan identity, which holds on the Hermitian part through the associativity of the underlying product, fails off that part, where the symmetrised sesquilinear product is no longer the symmetrisation of the underlying product; a two-line witness in $M_2(\mathbb{C})$ is given.</p>
+<p>The setting and the notation are those of <em>Sesquilinear Algebras</em> and <em>The Sesquilinear Product</em>: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an $R$-module with a $\varsigma$-sesquilinear product $\star$, and in the derived case $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and $x \star y = xy^{*}$. The involution on $A$, the two halves $H(A)$ and $S(A)$ and the closure of $H(A)$ under the symmetrised product are <em>Hermitian and Skew-Hermitian Elements</em>; the Jordan algebra that $H(A)$ carries is <em>The Hermitian Jordan Algebra</em>; the triple product of the failure of associativity is <em>The Sesquilinear Associator and the Ternary Product</em> and <em>Algebraic J*-Algebras</em>; and the general theory of the symmetrisation of an associative product is <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>. Throughout, $2$ is invertible in $R$, so that the halving inside $\circ$ is available.</p>
+<hr />
+<h2 id="the-definition">The Definition</h2>
+<h3 id="the-symmetrised-product">The Symmetrised Product</h3>
+<p><strong>Definition.</strong> The <strong>symmetrised sesquilinear product</strong> of the product $\star$ is</p>
+<p>$$
+x \circ y := \tfrac12\bigl(x \star y + y \star x\bigr).
+$$</p>
+<p>It is additive in each variable, because $\star$ is, and it is symmetric,</p>
+<p>$$
+x \circ y = y \circ x ,
+$$</p>
+<p>by the symmetry of the sum. On the diagonal it is the square of the product, $x \circ x = x \star x$; in the derived case that square is the Hermitian square,</p>
+<p>$$
+x \circ x = x \star x = xx^{*},
+$$</p>
+<p>the element of <em>Hermitian Squares and the Algebraic Positive Cone</em>.</p>
+<p><strong>Remark.</strong> The two products $\star$ and $\circ$ are linked by the decomposition</p>
+<p>$$
+x \star y = x \circ y + \tfrac12\bigl(x \star y - y \star x\bigr),
+$$</p>
+<p>whose second summand is the difference bracket $[x,y]_{\varsigma}$ of <em>The Sesquilinear Product</em>, §<em>The Transposed Product</em>; the difference is antisymmetric and takes skew-Hermitian values, and it is read in <em>The Sesquilinear Commutator</em>. The symmetrisation is therefore the symmetric half of the pair, exactly as the Jordan product is the symmetric half of an associative product in <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em>.</p>
+<h3 id="the-scalar-rules">The Scalar Rules</h3>
+<p><strong>Theorem (the symmetrisation is $R^{\varsigma}$-bilinear).</strong> For all $\lambda \in R$ and all $x, y$,</p>
+<p>$$
+(\lambda x) \circ y = \tfrac12 \lambda\,(x \star y) + \tfrac12 \varsigma(\lambda)\,(y \star x) , \qquad x \circ (\lambda y) = \tfrac12 \varsigma(\lambda)\,(x \star y) + \tfrac12 \lambda\,(y \star x) .
+$$</p>
+<p>Consequently $\circ$ is linear in each variable over the fixed ring $R^{\varsigma} = \{\lambda : \varsigma(\lambda) = \lambda\}$, and it is linear in a variable over all of $R$ exactly in the degenerate case $(\varsigma(\lambda) - \lambda)A = 0$ for every $\lambda$, the case in which the product of $A$ is bilinear.</p>
+<p><strong>Proof.</strong> In the first slot, $(\lambda x) \star y = \lambda (x \star y)$ by the first scalar rule of <em>Sesquilinear Algebras</em> and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, the scalar sitting in the second slot of the transposed product; the two terms give the first display, and the second is the same computation with the slots exchanged. For $\lambda \in R^{\varsigma}$ the two displayed right-hand sides both equal $\lambda (x \circ y)$, so $\circ$ is $R^{\varsigma}$-linear in each variable. Conversely, if $(\lambda x) \circ y = \lambda (x \circ y)$ for all $x, y$ then $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $x, y$, which is the degeneracy condition, and the same condition arises from the second variable. $\square$</p>
+<p><strong>Remark.</strong> The symmetrisation does not average the two parities, it destroys them: each slot of $\circ$ receives one linear and one conjugate-linear contribution, so the surviving scalars are exactly the fixed ones. This is the same ring that the two halves of the algebra are modules over, and the reason is the same, that $\varsigma(\lambda) = \lambda$ is what makes a conjugate-linear slot agree with a linear one. For $\varsigma = \mathrm{id}$ the fixed ring is $R$ and the statement is the familiar bilinearity, which is the case of <em>The Self-Adjoint Part of an Algebra</em>.</p>
+<h3 id="the-polarisation-of-the-square">The Polarisation of the Square</h3>
+<p><strong>Proposition.</strong> The symmetrised product is the polarisation of the square:</p>
+<p>$$
+x \circ y = \tfrac12\Bigl((x + y) \star (x + y) - x \star x - y \star y\Bigr).
+$$</p>
+<p><strong>Proof.</strong> The product is additive in each variable, so $(x+y)\star(x+y) = x\star x + x\star y + y\star x + y\star y$; halving the difference gives the symmetrisation. $\square$</p>
+<p><strong>Remark.</strong> The square $x \mapsto x \star x$ determines the product on the diagonal and, by the proposition, the whole symmetrised product off the diagonal: two products with the same squares of all linear combinations have the same symmetrisation. The difference bracket is what the squares do not see, since it takes opposite values on $y \star x$ and $x \star y$ and cancels in every square.</p>
+<hr />
+<h2 id="the-derived-operation">The Derived Operation</h2>
+<h3 id="the-hermitian-value">The Hermitian Value</h3>
+<p><strong>Theorem.</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and let $\star$ be the derived operation $x \star y = xy^{*}$. Then for all $x, y \in A$ the symmetrised product is Hermitian,</p>
+<p>$$
+(x \circ y)^{*} = x \circ y ,
+$$</p>
+<p>so that $\circ$ is an operation $A \times A \to H(A)$.</p>
+<p><strong>Proof.</strong> Conjugation reverses the derived product, $(x \star y)^{*} = y \star x$, by <em>The Sesquilinear Product</em>, §<em>The Conjugate of a Product</em>; hence $(x \circ y)^{*} = \tfrac12\bigl((x \star y)^{*} + (y \star x)^{*}\bigr) = \tfrac12\bigl(y \star x + x \star y\bigr) = x \circ y$. $\square$</p>
+<p><strong>Remark.</strong> The image of the symmetrised sesquilinear product is contained in the Hermitian elements, whatever the two arguments are: the symmetrisation is a map from the whole square $A \times A$ into one half of the algebra. The plain symmetrisation $x \bullet y = \tfrac12(xy + yx)$ has no such property, its value being Hermitian only when the two arguments lie in the right halves; this is the sharpest sense in which the sesquilinear product enters the Hermitian part more easily than the algebra product does.</p>
+<h3 id="the-hermitian-part">The Hermitian Part</h3>
+<p><strong>Theorem (the symmetrisation on the Hermitian part).</strong> For $x, y \in H(A)$ the symmetrised sesquilinear product and the plain symmetrisation agree,</p>
+<p>$$
+x \circ y = \tfrac12\bigl(xy + yx\bigr) = x \bullet y ,
+$$</p>
+<p>and $H(A)$ is closed under both.</p>
+<p><strong>Proof.</strong> For a Hermitian $y$ the derived operation is the algebra product, $x \star y = xy^{*} = xy$, and for a Hermitian $x$ the transposed product is $y \star x = yx$. Adding and halving gives the identity; the closure of $H(A)$ under $\bullet$ is <em>Hermitian and Skew-Hermitian Elements</em>, §<em>The Hermitian Part is a Jordan Algebra</em>. $\square$</p>
+<p><strong>Remark.</strong> On the Hermitian part the two symmetrisations coincide, and off it they differ: the operation $\circ$ is the symmetrisation of the derived product, $\bullet$ the symmetrisation of the algebra product, and the two products agree only on the Hermitian slot. The next section measures the distance.</p>
+<hr />
+<h2 id="the-jordan-identity">The Jordan Identity</h2>
+<h3 id="on-the-hermitian-part">On the Hermitian Part</h3>
+<p><strong>Theorem.</strong> The symmetrised sesquilinear product restricted to $H(A)$ satisfies the Jordan identity,</p>
+<p>$$
+(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr) \qquad \text{for all } x, y \in H(A) ,
+$$</p>
+<p>and with this product $H(A)$ is a commutative Jordan algebra over $R^{\varsigma}$.</p>
+<p><strong>Proof.</strong> On the Hermitian part $\circ$ is the plain symmetrisation $\bullet$, by the theorem above, and $\bullet$ is the symmetrisation $x \bullet y = \tfrac12(xy+yx)$ of the associative product of $A$; the symmetrisation of an associative product satisfies the Jordan identity, by <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>. Commutativity is built into the definition and $R^{\varsigma}$-bilinearity is the scalar theorem above. $\square$</p>
+<p>The Jordan algebra is read in <em>The Hermitian Jordan Algebra</em>, where its idempotents, its Peirce decomposition and its degree are developed.</p>
+<h3 id="off-the-hermitian-part">Off the Hermitian Part</h3>
+<p><strong>Proposition (the Jordan identity fails off the Hermitian part).</strong> In the $R$-algebra $M_{2}(\mathbb{C})$ with the conjugate transpose there are $x, y$ with</p>
+<p>$$
+(x \circ y) \circ (x \circ x) \neq x \circ \bigl(y \circ (x \circ x)\bigr).
+$$</p>
+<p>Take $x = E_{12}$ and $y = E_{22}$, writing $E_{ij}$ for the matrix units. Then</p>
+<p>$$
+x \circ x = E_{12}E_{21} = E_{11} , \qquad x \circ y = \tfrac12\bigl(E_{12}E_{22} + E_{22}E_{21}\bigr) = \tfrac12\bigl(E_{12} + E_{21}\bigr) , \qquad y \circ (x \circ x) = E_{22} \circ E_{11} = 0 ,
+$$</p>
+<p>so the two sides of the Jordan identity are</p>
+<p>$$
+(x \circ y) \circ (x \circ x) = \tfrac14\bigl(E_{12} + E_{21}\bigr) , \qquad x \circ \bigl(y \circ (x \circ x)\bigr) = x \circ 0 = 0 ,
+$$</p>
+<p>and the first is not zero.</p>
+<p><strong>Proof.</strong> The computations are the displays: $E_{12}E_{21} = E_{11}$ and $E_{12}E_{22} = E_{12}$, $E_{22}E_{21} = E_{21}$ by the multiplication of the matrix units, and $E_{22}E_{11} = E_{11}E_{22} = 0$; the symmetrisation of $E_{12}$ with $E_{11}$ is $\tfrac12(E_{12}E_{11} + E_{11}E_{21}) = \tfrac12 E_{21}$, whence $(\tfrac12(E_{12}+E_{21})) \circ E_{11} = \tfrac14(E_{12}+E_{21})$. $\square$</p>
+<p><strong>Remark.</strong> One of the two elements is Hermitian, $y = E_{22}$, and the other is not, $x = E_{12}$; a single element outside $H(A)$ is enough to break the identity. The perturbation is exactly the failure of $x$ to be Hermitian: the value $x \circ x = E_{11} = xx^{*}$ is Hermitian, as the theorem on the Hermitian value promises, but the symmetry of the derived product with one slot off $H(A)$ is the wrong one to carry the identity.</p>
+<h3 id="the-obstruction">The Obstruction</h3>
+<p><strong>Remark (why the Hermitian part is the right domain).</strong> The Jordan identity for a symmetrisation holds when the two products that are being symmetrised agree, and the failure above is the failure of that agreement. On $H(A)$ the derived product coincides with the algebra product, $x \star y = xy$, and the associativity of the algebra product is inherited by the symmetrisation; off $H(A)$ the derived product is a different product, and the identity has no reason to hold, as the witness shows.</p>
+<p><strong>Remark (the associator).</strong> For a general $\varsigma$-sesquilinear product, with no involution on $A$ and no associativity, the obstruction is the non-associativity of the symmetrised pair: the criterion that makes the identity automatic is the associativity of the product being symmetrised, and the derived product $x \star y = xy^{*}$ is not associative, its associator $[x,y,z] = (x \star y) \star z - x \star (y \star z)$ being the object of <em>The Sesquilinear Associator and the Ternary Product</em>. The reason the Hermitian part survives is precisely that there the derived product is the associative one, so that the identity holds for the reason it holds for an associative algebra and not for a sesquilinear one.</p>
+<hr />
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-complex-matrices">The Complex Matrices</h3>
+<p>For $A = M_{n}(\mathbb{C})$ with the conjugate transpose $\dagger$, the derived operation is $x \star y = xy^{\dagger}$ and the symmetrised product is</p>
+<p>$$
+x \circ y = \tfrac12\bigl(xy^{\dagger} + yx^{\dagger}\bigr),
+$$</p>
+<p>an operation from all pairs of matrices into the Hermitian matrices. The Hermitian part is the real vector space of the Hermitian matrices, the fixed ring is $R^{\varsigma} = \mathbb{R}$, and on that space, by the theorem above, the symmetrised product is the ordinary symmetrisation $\tfrac12(xy+yx)$. Off it the identity fails, with the witness of the previous section.</p>
+<h3 id="the-field">The Field</h3>
+<p>For $A = \mathbb{C}$ over the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation and the product $x \star y = x\bar y$, the symmetrisation is</p>
+<p>$$
+x \circ y = \tfrac12\bigl(x\bar y + y\bar x\bigr) = \mathrm{Re}\bigl(x\bar y\bigr),
+$$</p>
+<p>a real number, and every element is Hermitian exactly when it is real. Here the image is all of the Hermitian part $H(A) = \mathbb{R}$, and on that copy of $\mathbb{R}$ the symmetrised product is the ordinary multiplication; the value is the real part of the product $x\bar y$ of <em>The Centre and the Zero Divisors of a Sesquilinear Algebra</em>, §<em>The Sesquilinear Field</em>.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R},\mathrm{id})$ the twist is invisible, so the product is the ordinary one, the symmetrised sesquilinear product is the plain symmetrisation $\tfrac12(xy+yx)$, and the Hermitian elements are the real quaternions. The case is the bilinear one, of <em>The Self-Adjoint Part of an Algebra</em>; it is recorded here for completeness, and it is the degenerate case of the scalar theorem, in which the fixed ring is all of $R$.</p>
+<h3 id="the-biquaternion-case">The Biquaternion Case</h3>
+<p>For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the symmetrised star-product is the Jordan product of the biquaternion block, and the Hermitian part it fills is a Jordan algebra of degree two, read in <em>Biquaternion Jordan Algebra</em> and <em>The Six Subspaces and the Jordan Algebra</em>. The biquaternion layer is the worked case in which all of the operations of this article, the product, the derived product, the symmetrisation and the difference bracket, are computed on a basis of eight elements.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetrised sesquilinear product $x \circ y = \tfrac12(x\star y + y\star x)$ is commutative, additive in each variable and equal to the square on the diagonal, $x \circ x = x\star x$, and it is the symmetric half of the product, the antisymmetric half being the difference bracket $[x,y]_{\varsigma}$. It is $R^{\varsigma}$-bilinear and no more: each slot receives one linear and one conjugate-linear contribution, so the two parities collapse to the fixed ring, and $R$-bilinearity returns exactly in the degenerate case in which the product is bilinear. It is the polarisation of the square, so the squares determine it.</p>
+<p>In the derived case $x \star y = xy^{*}$ of an associative algebra with a $\varsigma$-semilinear involution, the symmetrised product is Hermitian-valued on all pairs, $x \circ y \in H(A)$, sharper than the plain symmetrisation, which is Hermitian only on the Hermitian part. On $H(A)$ the two symmetrisations coincide, $x \circ y = \tfrac12(xy + yx)$, and there the Jordan identity holds and $H(A)$ is a commutative Jordan algebra over $R^{\varsigma}$, by the associativity of the underlying product. Off $H(A)$ the identity fails, and the kernel of the failure is the disagreement between the derived product and the algebra product: the symmetrisation of the derived operation is a Jordan product exactly on the Hermitian part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x \circ y = \tfrac12(x \star y + y \star x)$</td>
+<td>the symmetrised sesquilinear product, the subject of the article</td>
+</tr>
+<tr>
+<td>$x \circ x = x \star x = xx^{*}$</td>
+<td>its diagonal, the Hermitian square</td>
+</tr>
+<tr>
+<td>$x \circ y = \tfrac12((x+y)\star(x+y) - x\star x - y\star y)$</td>
+<td>the polarisation of the square</td>
+</tr>
+<tr>
+<td>$x \star y = x \circ y + \tfrac12\bigl(x \star y - y \star x\bigr)$</td>
+<td>the product split into its symmetric and antisymmetric halves</td>
+</tr>
+<tr>
+<td>$[x,y]_{\varsigma} = x \star y - y \star x$</td>
+<td>the difference bracket, the antisymmetric half</td>
+</tr>
+<tr>
+<td>$R^{\varsigma}$</td>
+<td>the fixed ring, the scalars over which the symmetrisation is bilinear</td>
+</tr>
+<tr>
+<td>$x \bullet y = \tfrac12(xy + yx)$</td>
+<td>the plain symmetrisation, equal to $\circ$ on $H(A)$</td>
+</tr>
+<tr>
+<td>$H(A)$</td>
+<td>the Hermitian elements, the image of $\circ$ in the derived case</td>
+</tr>
+<tr>
+<td>$x = E_{12},\ y = E_{22}$</td>
+<td>the witness pair in $M_2(\mathbb{C})$ for the failure of the Jordan identity off $H(A)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetrised product of an involutive ring and the two halves of the involution.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the symmetrisation of an associative algebra and the Jordan identity it satisfies.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the special Jordan algebras, the symmetrisation and the envelope.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of an algebra and the twisted products they carry.</li>
+<li>The companion articles of this series: <em>Sesquilinear Algebras</em>, <em>The Sesquilinear Product</em>, <em>Hermitian and Skew-Hermitian Elements</em>, <em>The Hermitian Jordan Algebra</em>, <em>The Sesquilinear Commutator</em>, <em>The Sesquilinear Associator and the Ternary Product</em>, and <em>Algebraic J*-Algebras</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

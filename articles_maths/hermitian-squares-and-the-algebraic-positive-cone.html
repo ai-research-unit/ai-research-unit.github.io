@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermitian Squares and the Algebraic Positive Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="hermitian-squares-and-the-algebraic-positive-cone"><strong>Hermitian Squares and the Algebraic Positive Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An element of the form $x^{*}x$ is Hermitian, and the sums of such elements form the smallest set that contains all of them and is closed under addition. That set is the <strong>algebraic positive cone</strong> of the algebra, and it is the part of the algebra whose elements are the sums of Hermitian squares.</p>
+<p>Throughout, $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that the derived operation $x \star y = xy^{*}$ of <em>Sesquilinear Algebras</em> makes $(A,\star)$ a sesquilinear algebra. The underlying associative product is written by juxtaposition, and it is the product for which $*$ is anti-multiplicative, $(xy)^{*} = y^{*}x^{*}$. The squares $x^{*}x$ and $xx^{*}$ are Hermitian by <em>Hermitian and Skew-Hermitian Elements</em>, and $xx^{*} = x \star x$ is the square of $x$ in the derived operation, so the cone can be read either from the involution or from the sesquilinear product.</p>
+<p>What is added here: the definition of the cone and its elementary closures, the scalars that preserve it, its invariance under the congruence $c \mapsto x^{*}cx$, the preorder that it defines together with the properness that makes the preorder partial, and the matrix model, which is proper, against two non-proper examples.</p>
+<h2 id="the-cone-of-hermitian-squares">The Cone of Hermitian Squares</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>algebraic positive cone</strong> of $A$ is the set of the finite sums of Hermitian squares,</p>
+<p>$$
+C(A) = \Bigl\{ \sum_{i=1}^{n} x_i^{*} x_i : n \geq 0,\ x_i \in A \Bigr\} .
+$$</p>
+<p>Its elements are called <strong>positive</strong>, or <strong>sums of Hermitian squares</strong>; the empty sum is $0$.</p>
+<p><strong>Remark.</strong> The set is the smallest subset of $A$ that contains every $x^{*}x$ and is closed under addition, so the definition generates the cone from the squares and imposes nothing else. The definition is the algebraic one: no order on $A$ is assumed, and the name records that in the examples where an order exists, these are exactly the nonnegative elements.</p>
+<h3 id="elementary-closure">Elementary Closure</h3>
+<p><strong>Proposition.</strong> $0 \in C(A)$, the cone is closed under addition, and $C(A) \subseteq H(A)$: every positive element is Hermitian.</p>
+<p><strong>Proof.</strong> The element $0$ is the empty sum. Two sums add by concatenation, which is again a finite sum of Hermitian squares. Each $x^{*}x$ is Hermitian, and a sum of Hermitian elements is Hermitian. $\square$</p>
+<p><strong>Proposition.</strong> $C(A) = \bigl\{ \sum_{i} x_i x_i^{*} \bigr\}$ as well, and $x \star x = xx^{*} \in C(A)$ for every $x$.</p>
+<p><strong>Proof.</strong> Replacing each $x_i$ by $x_i^{*}$ in the definition and using $*^{2} = \mathrm{id}$ exchanges the two forms $x^{*}x$ and $xx^{*}$. The identification $x \star x = xx^{*}$ is the derived product with equal arguments. $\square$</p>
+<p><strong>Remark.</strong> The cone is generated by the squares of the derived operation as much as by those of the involution, since $x \star x = xx^{*}$ and $x^{*} \star x^{*} = x^{*}x$. The ternary product $\{x,y,z\} = xy^{*}z$ attached to the derived operation is the subject of <em>The Sesquilinear Associator and the Ternary Product</em>, and the spaces closed under it, with the squares as their distinguished elements, are the algebraic $J^{*}$-algebras of <em>Algebraic J*-Algebras</em>.</p>
+<h2 id="the-scalar-action">The Scalar Action</h2>
+<h3 id="the-square-semiring">The Square Semiring</h3>
+<p><strong>Definition.</strong> The <strong>square semiring</strong> of the base is</p>
+<p>$$
+Q(R) = \Bigl\{ \sum_{j} \mu_j \varsigma(\mu_j) : \mu_j \in R \Bigr\} \subseteq R .
+$$</p>
+<p><strong>Proposition.</strong> $Q(R)$ is a subsemiring of $R$ containing $1$, and it is contained in the fixed ring $R^{\varsigma}$.</p>
+<p><strong>Proof.</strong> The sum of two elements of $Q(R)$ is again a finite sum of terms $\mu \varsigma(\mu)$, and the product is $(\mu \varsigma(\mu))(\nu \varsigma(\nu)) = (\mu\nu)\varsigma(\mu\nu)$, so $Q(R)$ is closed under addition and multiplication and contains $1 = 1 \cdot \varsigma(1)$. For the fixed ring, $\varsigma(\mu \varsigma(\mu)) = \varsigma(\varsigma(\mu))\varsigma(\mu) = \mu \varsigma(\mu)$, so each term is fixed, and a sum of fixed elements is fixed. $\square$</p>
+<p><strong>Proposition.</strong> For every $\lambda \in Q(R)$ the cone is preserved, $\lambda C(A) \subseteq C(A)$.</p>
+<p><strong>Proof.</strong> It suffices to treat one square and one term, $\lambda = \mu \varsigma(\mu)$. The involution is $\varsigma$-semilinear, so $(\mu x)^{*} = \varsigma(\mu) x^{*}$, and the underlying associative product is $R$-bilinear, so $\varsigma(\mu) x^{*} \cdot \mu x = \varsigma(\mu)\mu\, x^{*} x$; by the commutativity of $R$ this is $\mu \varsigma(\mu)\, x^{*}x$. The general case follows by distributing the scalar over the finite sum. $\square$</p>
+<p><strong>Remark.</strong> The scalars of the square semiring, the sums of the $\varsigma$-squares $\mu \varsigma(\mu)$, therefore preserve the cone, and they depend on the base involution; the converse is not claimed, since an algebra whose cone is $\{0\}$ is preserved by every scalar while the square semiring need not be all of $R$. For $R = \mathbb{C}$ with $\varsigma = \bar z$ the square semiring is the set of the sums of the squares of the moduli, which is the set of the nonnegative real numbers; for $R = \mathbb{C}$ with $\varsigma = \mathrm{id}$ it is the set of the sums of the squares, which is all of $\mathbb{C}$. The second case is the bilinear one, and it already shows that the scalars preserving the cone need not be an ordered semiring.</p>
+<h2 id="congruence">Congruence</h2>
+<h3 id="invariance-under-the-sandwich">Invariance under the Sandwich</h3>
+<p><strong>Proposition.</strong> Let $c \in C(A)$ and $x \in A$. Then $x^{*} c x \in C(A)$.</p>
+<p><strong>Proof.</strong> It suffices to treat $c = y^{*}y$ and to use the associativity of $A$ and the anti-multiplicativity of $*$:</p>
+<p>$$
+x^{*}(y^{*}y)x = (yx)^{*}(yx) ,
+$$</p>
+<p>because $(yx)^{*} = x^{*}y^{*}$. The left side is a Hermitian square, hence an element of the cone, and the general $c$ is a sum of such squares. $\square$</p>
+<p><strong>Remark.</strong> The operation $c \mapsto x^{*}cx$ is the <strong>congruence</strong> of $c$ by $x$, and the proposition says that the cone is invariant under every congruence. It is the algebraic content of the statement that the positive elements are those that stay positive after a change of basis, and it is the property that needs the associativity of $A$: the expression $x^{*}cx$ is built from the underlying product, and it is not available from the derived operation alone. For invertible $x$ the congruence is a bijection of the cone, since $c \mapsto (x^{-1})^{*} c\, x^{-1}$ inverts it, and the cone is then a union of orbits of the congruence group of $A$.</p>
+<h2 id="the-order">The Order</h2>
+<h3 id="the-preorder">The Preorder</h3>
+<p><strong>Definition.</strong> For $x, y \in A$ write $x \preceq y$ when $y - x \in C(A)$.</p>
+<p><strong>Proposition.</strong> The relation $\preceq$ is reflexive and transitive, and it is invariant under translation: from $x \preceq y$ follows $x + z \preceq y + z$ for every $z$. It is antisymmetric if and only if $C(A) \cap (-C(A)) = \{0\}$.</p>
+<p><strong>Proof.</strong> Reflexivity is $x - x = 0 \in C(A)$, transitivity is $(y - x) + (z - y) = z - x \in C(A) + C(A) \subseteq C(A)$, and translation adds the same $z$ to both sides, so the difference $y - x$ is unchanged. For antisymmetry, suppose $x \preceq y$ and $y \preceq x$, so that $y - x \in C(A)$ and $x - y = -(y - x) \in C(A)$; then $y - x \in C(A) \cap (-C(A))$. If the intersection is $\{0\}$ then $y = x$. Conversely, if $c \in C(A) \cap (-C(A))$ is nonzero then $0 \preceq c$ and $c \preceq 0$ with $c \neq 0$, so $\preceq$ is not antisymmetric. $\square$</p>
+<h3 id="properness">Properness</h3>
+<p><strong>Definition.</strong> The cone $C(A)$ is <strong>proper</strong> when $C(A) \cap (-C(A)) = \{0\}$, and a <strong>partial order</strong> is a preorder that is antisymmetric, so by the proposition $\preceq$ is a partial order exactly when the cone is proper.</p>
+<p><strong>Proposition (a sufficient criterion for properness).</strong> Suppose $f : A \to K$ is additive with values in an ordered ring $K$, that $f(x^{*}x) \geq 0$ for every $x$, and that $f(x^{*}x) > 0$ for every $x \neq 0$. Then $C(A)$ is proper, and $f(c) > 0$ for every nonzero $c \in C(A)$.</p>
+<p><strong>Proof.</strong> Let $c = \sum_{i=1}^{n} x_i^{*}x_i \in C(A)$ be nonzero. Some $x_i$ is nonzero, so $f(x_i^{*}x_i) > 0$, and $f(c) = \sum_{i} f(x_i^{*}x_i) \geq f(x_i^{*}x_i) > 0$. Now if $c \in C(A) \cap (-C(A))$ then $f(c) \geq 0$ because $c \in C(A)$, and $f(c) \leq 0$ because $-c \in C(A)$ and $f$ is additive with $f(0) = 0$; hence $f(c) = 0$, which by the first part forces $c = 0$. $\square$</p>
+<p><strong>Remark.</strong> The criterion reduces properness to a single additive map that is strictly positive on the nonzero squares. There is no such map for free: the existence of one is exactly what the non-proper examples below lack, and the maps of the criterion are the positive functionals of the algebra that are strict on the nonzero squares, of which one instance is computed below. This is the precise sense in which no order and no inequality are available at this layer: the cone and the preorder it defines are supplied by the algebra alone, but properness is a condition on the cone and not a theorem about it, so a genuine order is present only when an additional positivity is supplied, and the general sesquilinear algebra carries none.</p>
+<h2 id="the-matrix-model-and-two-non-proper-examples">The Matrix Model and Two Non-Proper Examples</h2>
+<h3 id="the-conjugate-transpose-is-proper">The Conjugate Transpose is Proper</h3>
+<p><strong>Theorem.</strong> Let $A = M_n(\mathbb{C})$ with $\varsigma$ the conjugation and $*$ the conjugate transpose. Then $C(A)$ is proper, and $\preceq$ is a partial order on $M_n(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> Take $f = \operatorname{Re}\circ\operatorname{tr} : M_n(\mathbb{C}) \to \mathbb{R}$, which is additive. Then</p>
+<p>$$
+f(x^{*}x) = \operatorname{tr}(x^{*}x) = \sum_{i,j=1}^{n} |x_{ij}|^{2} ,
+$$</p>
+<p>a sum of squares of moduli, hence a nonnegative real number, and it is $0$ only when every entry of $x$ vanishes, that is only for $x = 0$. The criterion above applies with $K = \mathbb{R}$, so the cone is proper. $\square$</p>
+<p><strong>Remark.</strong> The computation is the standard one and is carried out for all the matrix algebras of the category in <em>Matrix Sesquilinear Algebras</em>; the real part of the trace is the additive map that the criterion requires, and it is strictly positive on the nonzero squares because the entries of $x$ appear in it squared.</p>
+<h3 id="two-non-proper-cones">Two Non-Proper Cones</h3>
+<p><strong>Proposition.</strong> The following two cones are not proper.</p>
+<p>(i) Let $A = \mathbb{C}$ with the trivial involution $* = \mathrm{id}$, so that $\varsigma = \mathrm{id}$ and $x^{*}x = x^{2}$. Then $C(A) = \mathbb{C}$ and $-1 = i \cdot i \in C(A)$.</p>
+<p>(ii) Let $A = M_n(\mathbb{C})$ with the transpose $x \mapsto x^{t}$ as involution, so that $\varsigma = \mathrm{id}$ and $x^{*}x = x^{t}x$. Then $-I = (iI)^{t}(iI) \in C(A)$.</p>
+<p><strong>Proof.</strong> (i) Every complex number is a square, $z = w^{2}$ for some $w$, so $z = w^{*}w \in C(A)$ and the cone is all of $\mathbb{C}$; in particular $-1 = i^{2}$, so $-1 \in C(A) \cap (-C(A))$. (ii) The matrix $x = iI$ satisfies $x^{t} = x$, so $x^{t}x = (iI)(iI) = i^{2}I = -I$, and $-I \in C(A)$; the identity $I = I^{t}I$ also lies in $C(A)$, so $-I = -(I) \in -C(A)$ and the intersection contains $-I \neq 0$. $\square$</p>
+<p><strong>Remark.</strong> The same algebra $M_n(\mathbb{C})$ carries a proper cone with the conjugate transpose and a non-proper one with the transpose, so properness is a property of the involution and not of the algebra under it. The two non-proper examples are both bilinear, with $\varsigma = \mathrm{id}$, while the proper one is the genuinely sesquilinear model, and this is the sharpest sense in which the conjugation in the involution is what the cone needs: it is the conjugation that turns the sum of the squares of the entries into a sum of nonnegative numbers.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebraic positive cone $C(A) = \{\sum_i x_i^{*}x_i\}$ of an associative algebra with a $\varsigma$-semilinear involution is the smallest set containing every Hermitian square $x^{*}x$ and closed under addition; it is contained in the Hermitian elements, it equals $\{\sum_i x_i x_i^{*}\}$, and it is generated by the squares $x\star x = xx^{*}$ of the derived sesquilinear product. It is preserved by the scalars of the square semiring $Q(R) = \{\sum_j \mu_j\varsigma(\mu_j)\}$, which is a subsemiring of the fixed ring and depends on the base involution, and it is invariant under every congruence $c \mapsto x^{*}cx$, by the associativity of the algebra. The relation $x \preceq y \iff y - x \in C(A)$ is a translation-invariant preorder, and it is a partial order exactly when the cone is proper, $C(A) \cap (-C(A)) = \{0\}$; an additive map that is nonnegative on the squares and strictly positive on the nonzero ones forces properness, the trace plays this role in the matrix model $M_n(\mathbb{C})$ with the conjugate transpose, and the cone there is proper, while the trivial involution on $\mathbb{C}$ and the transpose on $M_n(\mathbb{C})$ give non-proper cones, so properness is the property of the involution and not of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C(A) = \{\sum_i x_i^{*}x_i\}$</td>
+<td>the algebraic positive cone, the sums of Hermitian squares</td>
+</tr>
+<tr>
+<td>$x^{*}x$, $xx^{*}$, $x \star x$</td>
+<td>the Hermitian squares; $xx^{*}$ is the square in the derived operation</td>
+</tr>
+<tr>
+<td>$Q(R) = \{\sum_j \mu_j\varsigma(\mu_j)\}$</td>
+<td>the square semiring, whose scalars preserve the cone</td>
+</tr>
+<tr>
+<td>$x^{*}cx$</td>
+<td>the congruence of $c$ by $x$, under which the cone is invariant</td>
+</tr>
+<tr>
+<td>$x \preceq y \iff y - x \in C(A)$</td>
+<td>the preorder defined by the cone</td>
+</tr>
+<tr>
+<td>$C(A) \cap (-C(A)) = \{0\}$</td>
+<td>properness, and the condition for the preorder to be partial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the Hermitian elements, the sums of Hermitian squares and the orders they define over a general ring.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of an algebra and the cones attached to them.</li>
+<li>T. Y. Lam, <em>The Algebraic Theory of Quadratic Forms</em> (Benjamin, 1973), for the sums of squares, the quadratic modules and the orders of an algebraic structure.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the symmetrised product and the Hermitian elements that generate the cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

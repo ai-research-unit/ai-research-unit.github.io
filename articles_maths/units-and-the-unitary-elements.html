@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units and the Unitary Elements — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="units-and-the-unitary-elements"><strong>Units and the Unitary Elements</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A unit is an element with a two-sided inverse, and the invertible elements of an algebra form a group under the product. In an algebra with an involution a second kind of unit singles itself out: one whose inverse is its conjugate. These are the <strong>unitary elements</strong>, the algebraic counterpart of the elements that preserve a sesquilinear structure, and they are the group whose Lie algebra is carried by the skew-Hermitian elements.</p>
+<p>Throughout, $A$ is an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, so that $*$ is additive, $*^{2} = \mathrm{id}$, anti-multiplicative $(xy)^{*} = y^{*}x^{*}$, and $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$. The derived operation $x \star y = xy^{*}$ of <em>Sesquilinear Algebras</em> makes $(A,\star)$ a sesquilinear algebra, and it is that structure which the unitary elements respect. The group of the units is written $A^{\times}$, and the Hermitian and the skew-Hermitian elements $H(A)$ and $S(A)$ are those of <em>Hermitian and Skew-Hermitian Elements</em>. Associativity is assumed from the start here, where <em>Sesquilinear Algebras</em> did not assume it, because the group structure of the units and the multiplicativity of the inner maps both need it.</p>
+<p>What is added here: the unit and its Hermitian property, the definition of the unitary elements and their identification with the units whose inverse is the conjugate, the group structure, the stability under the involution and the inverse, the Hermitian unitary elements, the inner $*$-automorphisms that the unitaries induce, and the worked cases $M_n(\mathbb{C})$, $\mathbb{H}$, the commutative algebras and $\mathbb{B}$.</p>
+<h2 id="the-unit">The Unit</h2>
+<h3 id="the-unit-is-hermitian">The Unit is Hermitian</h3>
+<p><strong>Proposition.</strong> The unit of $A$ is Hermitian: $1^{*} = 1$.</p>
+<p><strong>Proof.</strong> Since $1$ is a right unit, $1^{*}1 = 1^{*}$. Applying the involution and using that it is anti-multiplicative and of order two gives $(1^{*}1)^{*} = 1^{*}(1^{*})^{*} = 1^{*}1$, while the left hand side is also $(1^{*})^{*} = 1$. Hence $1^{*}1 = 1$, and combining this with $1^{*}1 = 1^{*}$ gives $1^{*} = 1$. $\square$</p>
+<p><strong>Remark.</strong> The unit is fixed by the involution, and the proof needs only the unit axiom, the anti-multiplicativity and $*^{2} = \mathrm{id}$. An idempotent is not fixed in the same way: in $R \times R$ with the involution that exchanges the two factors the element $(1,0)$ is a central idempotent, and its conjugate is $(0,1)$, so it is not Hermitian. What singles the unit out is that it is the unit.</p>
+<p><strong>Remark.</strong> The unit belongs to the underlying algebra, and it is not in general a unit of the derived operation. By <em>Sesquilinear Algebras</em> the element $1$ is always a right $\star$-unit, $x \star 1 = x1^{*} = x$, while a left $\star$-unit exists only when $* = \mathrm{id}$, and then $\star$ is the original product. The unit is therefore the unit of the algebra, and the sesquilinear structure is what the unitary elements preserve rather than what supplies the unit.</p>
+<h2 id="the-unitary-elements">The Unitary Elements</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> An element $u \in A$ is <strong>unitary</strong> when</p>
+<p>$$
+u u^{*} = u^{*} u = 1 .
+$$</p>
+<p>The set of the unitary elements is written $U(A)$.</p>
+<p><strong>Proposition.</strong> An element is unitary if and only if it is a unit with $u^{*} = u^{-1}$. Equivalently $U(A) = \{ u \in A^{\times} : u^{-1} = u^{*} \}$, and in particular $U(A) \subseteq A^{\times}$.</p>
+<p><strong>Proof.</strong> If $u u^{*} = u^{*}u = 1$ then $u$ is invertible with two-sided inverse $u^{*}$, so $u \in A^{\times}$ and $u^{-1} = u^{*}$. Conversely if $u \in A^{\times}$ and $u^{-1} = u^{*}$ then $uu^{*} = uu^{-1} = 1$ and $u^{*}u = u^{-1}u = 1$. $\square$</p>
+<p><strong>Remark.</strong> The definition imposes both equations, and neither is redundant. In $M_n(\mathbb{C})$ they are equivalent, since a square matrix with a one-sided inverse has a two-sided one, and it is that equivalence which lets the unitary group there be defined by the single equation $uu^{*} = 1$. In a general algebra the two are separate conditions, and the involution exchanges the one on the left with the one on the right.</p>
+<h3 id="the-group-structure">The Group Structure</h3>
+<p><strong>Theorem.</strong> $U(A)$ is a group under the product, it is a subgroup of $A^{\times}$, and it contains $1$.</p>
+<p><strong>Proof.</strong> The element $1$ is unitary because $1^{*} = 1$ and $11 = 1$. For $u, v \in U(A)$ the product $uv$ is a unit with $(uv)^{-1} = v^{-1}u^{-1} = v^{*}u^{*} = (uv)^{*}$, so $uv$ is unitary by the proposition, and the product in $U(A)$ is the product of $A$, which is associative. For $u \in U(A)$ the inverse $u^{-1} = u^{*}$ satisfies $(u^{-1})^{-1} = u = (u^{-1})^{*}$, since $(u^{*})^{*} = u$, so $u^{-1} \in U(A)$. Hence $U(A)$ is closed under the product and the inverse and contains $1$, and it is a subgroup of $A^{\times}$. $\square$</p>
+<p><strong>Remark.</strong> The proof uses the involution twice, once to exchange the two halves of the condition and once for the inverse, and both uses are instances of $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$. In a commutative algebra the condition collapses to the single equation $uu^{*} = 1$.</p>
+<h2 id="stability-and-inner-automorphisms">Stability and Inner Automorphisms</h2>
+<h3 id="the-involution-and-the-inverse">The Involution and the Inverse</h3>
+<p><strong>Proposition.</strong> If $u$ is unitary then $u^{*}$ is unitary, and the restriction of the involution to $U(A)$ is the inversion map:</p>
+<p>$$
+u^{*} = u^{-1} \quad \text{for every } u \in U(A) .
+$$</p>
+<p>Consequently the restriction of $*$ to $U(A)$ is an involutive anti-automorphism of the group $U(A)$, and it is an automorphism exactly when $U(A)$ is abelian.</p>
+<p><strong>Proof.</strong> For $u \in U(A)$ one has $(u^{*})^{*} = u$, so $u^{*}(u^{*})^{*} = u^{*}u = 1$ and $(u^{*})^{*}u^{*} = uu^{*} = 1$; hence $u^{*} \in U(A)$. The identity $u^{*} = u^{-1}$ is the proposition above. The map $u \mapsto u^{*}$ is of order two, and on $U(A)$ it is inversion, which reverses the product; hence it is an anti-automorphism, and an anti-automorphism of a group is an automorphism exactly when the group is abelian. $\square$</p>
+<p><strong>Definition.</strong> A unitary element is <strong>Hermitian unitary</strong> when $u = u^{*}$.</p>
+<p><strong>Proposition.</strong> The Hermitian unitary elements are exactly the elements $u \in A$ with $u^{2} = 1$ and $u^{*} = u$; they form the set $U(A) \cap H(A)$, and every such $u$ satisfies $u = u^{-1}$.</p>
+<p><strong>Proof.</strong> If $u$ is Hermitian and unitary then $u^{2} = uu = uu^{*} = 1$. Conversely if $u^{2} = 1$ and $u = u^{*}$ then $uu^{*} = u^{2} = 1$ and $u^{*}u = u^{2} = 1$, so $u$ is unitary, and $u = u^{*}$ says it is Hermitian. The last statement is $u^{-1} = u^{*} = u$. $\square$</p>
+<h3 id="inner-math114-automorphisms">Inner $*$-Automorphisms</h3>
+<p><strong>Proposition.</strong> Let $u \in U(A)$. Then the map $\alpha_u : A \to A$ given by $\alpha_u(x) = uxu^{*}$ is a $*$-automorphism of $A$, with inverse $\alpha_{u^{*}} = \alpha_{u}^{-1}$. It carries $H(A)$ to $H(A)$ and $S(A)$ to $S(A)$.</p>
+<p><strong>Proof.</strong> The map is additive and multiplicative, since $\alpha_u(xy) = uxyu^{*} = (uxu^{*})(uyu^{*})$, and it is $R$-linear. It respects the involution, because</p>
+<p>$$
+\alpha_u(x)^{*} = (u x u^{*})^{*} = (u^{*})^{*} x^{*} u^{*} = u x^{*} u^{*} = \alpha_u(x^{*}) ,
+$$</p>
+<p>using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$, and it fixes $1$ since $uu^{*} = 1$. Its inverse is $\alpha_{u^{*}}$, because $\alpha_{u^{*}}(\alpha_u(x)) = u^{*}uxu^{*}(u^{*})^{*} = x$. An element $h$ is Hermitian exactly when $h^{*} = h$, and then $\alpha_u(h)^{*} = \alpha_u(h^{*}) = \alpha_u(h)$, so $\alpha_u(h)$ is Hermitian; the same computation with the minus sign carries $S(A)$ to itself. $\square$</p>
+<p><strong>Proposition.</strong> If $u, v \in U(A)$ then $\alpha_u(v) = uvu^{*}$ is unitary, so each $\alpha_u$ restricts to an automorphism of the group $U(A)$.</p>
+<p><strong>Proof.</strong> Since $(uvu^{*})^{*} = uv^{*}u^{*}$, one has</p>
+<p>$$
+(uvu^{*})(uvu^{*})^{*} = uvu^{*}uv^{*}u^{*} = uvv^{*}u^{*} = uu^{*} = 1 ,
+$$</p>
+<p>using $u^{*}u = 1$ and $vv^{*} = 1$; the computation with the factors in the other order gives $(uvu^{*})^{*}(uvu^{*}) = 1$ as well, so $uvu^{*}$ is unitary. $\square$</p>
+<p><strong>Remark.</strong> The unitary elements act on the algebra by the inner $*$-automorphisms $x \mapsto uxu^{*}$, and the assignment $u \mapsto \alpha_u$ is a homomorphism of $U(A)$ into the $*$-automorphism group of $A$ whose kernel is the set of the central unitary elements, since $\alpha_u$ is the identity exactly when $u$ commutes with every element. The conjugation is the algebraic form of the change of basis under which the Hermitian elements are preserved, and it is the congruence $c \mapsto x^{*}cx$ of <em>Hermitian Squares and the Algebraic Positive Cone</em> taken at $x = u^{*}$, since $\alpha_u(c) = (u^{*})^{*}c\,u^{*}$; for a unitary $u$ that congruence is an automorphism, whereas for a general $x$ it is only additive.</p>
+<p><strong>Remark.</strong> The skew-Hermitian elements are the ones that generate the Lie structure attached to this group, the bracket of two of them being again skew-Hermitian, and they are the subject of <em>The Unitary Lie Algebra</em>.</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-matrix-algebra">The Matrix Algebra</h3>
+<p><strong>Proposition.</strong> Let $A = M_n(\mathbb{C})$ with the conjugate transpose. Then $U(A)$ is the unitary group $U(n)$: the complex matrices $u$ with $u u^{*} = u^{*}u = I$, equivalently $u^{-1} = u^{*}$. The Hermitian unitary elements are the unitary matrices that are Hermitian, equivalently the unitary involutions $u^{2} = I$.</p>
+<p><strong>Proof.</strong> This is the definition of $U(n)$ read in the algebra, and the Hermitian unitary elements are the fixed points of the involution inside $U(n)$, which by the proposition above are the unitary elements with $u^{2} = I$, that is the unitary involutions. $\square$</p>
+<p><strong>Remark.</strong> The unitary matrices are exactly the elements that preserve the pairing $\langle x, y \rangle = x^{*}y$ defined by the conjugate transpose, which is the precise sense in which the unitary elements preserve the sesquilinear structure: $u$ is unitary if and only if $\langle ux, uy \rangle = \langle x, y \rangle$ for all $x, y$, since</p>
+<p>$$
+\langle ux, uy \rangle = (ux)^{*}(uy) = x^{*}u^{*}uy .
+$$</p>
+<p>When $u^{*}u = I$ this is $x^{*}y$, and conversely the equality for all $x$ and $y$, read on the basis vectors, gives $(u^{*}u)_{ij} = \delta_{ij}$, that is $u^{*}u = I$; a square matrix with a one-sided inverse being invertible, $uu^{*} = I$ follows as well and $u$ is unitary.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p><strong>Proposition.</strong> Let $A = \mathbb{H}$ over $R = \mathbb{R}$ with $*$ the quaternion conjugation. Then $\bar q q = q \bar q = \nu(q)1$, where $\nu(q)$ is the sum of the squares of the four coordinates of $q$, and $U(\mathbb{H})$ is the set of the unit quaternions, the elements with $\bar q q = 1$. This group is isomorphic to $\mathrm{SU}(2)$.</p>
+<p><strong>Proof.</strong> The conjugate satisfies $\bar q q = q\bar q = \nu(q)1$ by the multiplication table of the units, so $q^{*}q = qq^{*} = \nu(q)1$ and $q$ is unitary exactly when $\nu(q) = 1$. The unit quaternions are closed under the product because $\nu$ is multiplicative, and the identification with $\mathrm{SU}(2)$ is the isomorphism that sends $q = w + zj$, where $w$ and $z$ are the two complex coordinates of $q$ in the basis $1, j$, to the matrix</p>
+<p>$$
+\begin{pmatrix} w & z \\ -\bar z & \bar w \end{pmatrix} .
+$$</p>
+<p>This map is multiplicative and its determinant is $\nu(q)$, so it carries the unit quaternions onto the unitary matrices of determinant $1$, that is onto $\mathrm{SU}(2)$. $\square$</p>
+<p><strong>Remark.</strong> The two cases differ in what the units are. The algebra $\mathbb{H}$ is a division algebra, so every nonzero element is a unit, and every unit is a real multiple of a unitary element: for $q \neq 0$ one has $\nu(q) \neq 0$, and $q = \sqrt{\nu(q)}\,u$ with $u = q/\sqrt{\nu(q)}$ unitary. In $M_n(\mathbb{C})$ this fails, since an element equal to $\lambda u$ with $u$ unitary satisfies $(\lambda u)(\lambda u)^{*} = \lambda \varsigma(\lambda) I$, a multiple of the identity, and the diagonal matrix with entries $2$ and $1$ is not of that form.</p>
+<h3 id="the-commutative-case">The Commutative Case</h3>
+<p><strong>Proposition.</strong> If $A$ is commutative then $U(A) = \{ u : uu^{*} = 1 \}$, this group is abelian, and the involution restricts to the inversion, which is an automorphism of $U(A)$. In particular $A = \mathbb{C}$ with $*$ the conjugation gives $U(\mathbb{C}) = \{ u : u\bar u = 1 \}$.</p>
+<p><strong>Proof.</strong> In a commutative algebra $uu^{*} = u^{*}u$, so the two halves of the condition coincide and a single equation remains; the group is abelian because $A$ is, and an anti-automorphism of an abelian group is an automorphism. For $\mathbb{C}$ the product $u\bar u$ is the sum of the squares of the two coordinates in the basis $1, i$, so that $u\bar u = 1$ says $a^{2} + b^{2} = 1$ for $u = a + bi$. $\square$</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p><strong>Proposition.</strong> Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $*$ the Hermitian conjugation, the composite of the quaternion conjugation and the conjugation of the coefficients. Then $U(\mathbb{B})$ consists of the elements $P$ with $PP^{*} = P^{*}P = 1$. Under the identification of $\mathbb{B}$ with $M_2(\mathbb{C})$ for which the Hermitian conjugation is the conjugate transpose, $U(\mathbb{B})$ is the unitary group $U(2)$.</p>
+<p><strong>Proof.</strong> The first statement is the definition read in $\mathbb{B}$. For the second, the identification carries $\mathbb{B}$ onto $M_2(\mathbb{C})$ as algebras with involution, the Hermitian conjugation being the composite of the quaternion conjugation and the conjugation of the coefficients, and this composite corresponds to the conjugate transpose of the matrix; the unitary elements are then the unitary $2 \times 2$ matrices. $\square$</p>
+<p><strong>Remark.</strong> The algebra $\mathbb{B}$ has zero divisors, so $U(\mathbb{B})$ is a proper part of the units: the element $2$ is invertible with inverse $\tfrac12$, and it is not unitary since $2 \cdot 2^{*} = 4$. The difference from the previous case is the difference between a division algebra and a full matrix algebra of size two over $\mathbb{C}$, which is what the identification with $M_2(\mathbb{C})$ makes visible.</p>
+<h2 id="summary">Summary</h2>
+<p>In an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, the unit is Hermitian, $1^{*} = 1$, and it is a unit of the derived operation only as a right unit, since a left $\star$-unit exists exactly when $* = \mathrm{id}$. The unitary elements $U(A) = \{u : uu^{*} = u^{*}u = 1\}$ are exactly the units with $u^{*} = u^{-1}$, they form a group under the product containing $1$, and they are stable under the involution and the inverse, the involution restricting to the inversion, an involutive anti-automorphism of $U(A)$ that is an automorphism exactly when $U(A)$ is abelian. The Hermitian unitary elements are the elements with $u^{2} = 1$ and $u = u^{*}$, and every unitary $u$ induces the inner $*$-automorphism $x \mapsto uxu^{*}$, which preserves the Hermitian and the skew-Hermitian elements and restricts to an automorphism of the group $U(A)$. The worked cases are the unitary group $U(n)$ of $M_n(\mathbb{C})$ with the conjugate transpose, the unit quaternions of $\mathbb{H}$ with the quaternion conjugation, the elements with $uu^{*} = 1$ in a commutative algebra, which for $\mathbb{C}$ are those with $u\bar u = 1$, and the group $U(2)$ of the biquaternion algebra with the Hermitian conjugation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1^{*} = 1$</td>
+<td>the unit is Hermitian</td>
+</tr>
+<tr>
+<td>$U(A) = \{u : uu^{*} = u^{*}u = 1\}$</td>
+<td>the unitary elements</td>
+</tr>
+<tr>
+<td>$U(A) = \{u \in A^{\times} : u^{-1} = u^{*}\}$</td>
+<td>the unitaries among the units</td>
+</tr>
+<tr>
+<td>$u^{*} = u^{-1}$ on $U(A)$</td>
+<td>the involution restricts to the inversion</td>
+</tr>
+<tr>
+<td>$U(A) \cap H(A) = \{u : u^{2} = 1, u = u^{*}\}$</td>
+<td>the Hermitian unitary elements</td>
+</tr>
+<tr>
+<td>$\alpha_u(x) = uxu^{*}$</td>
+<td>the inner $*$-automorphism induced by a unitary $u$</td>
+</tr>
+<tr>
+<td>$c \mapsto x^{*}cx$ at $x = u^{*}$</td>
+<td>the inner $*$-automorphism $\alpha_u$ as a congruence</td>
+</tr>
+<tr>
+<td>$U(n)$, $\mathrm{SU}(2)$, $U(2)$</td>
+<td>the worked cases</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the units, the Hermitian elements and the unitary elements of a ring with involution.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the unitary groups and the involutions that define them.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Hermitian and the unitary elements that generate the Jordan and the Lie structures of an algebra with involution.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Graduate Texts in Mathematics 88, Springer, 1982), for the group of units and the inner automorphisms of an associative algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

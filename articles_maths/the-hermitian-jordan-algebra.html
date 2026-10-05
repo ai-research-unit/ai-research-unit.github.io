@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Jordan Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-jordan-algebra"><strong>The Hermitian Jordan Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of a sesquilinear algebra selects the elements it fixes, and those elements are closed under the symmetrised product. The <strong>Hermitian Jordan algebra</strong> of $A$ is the Hermitian part</p>
+<p>$$
+J(A) = \bigl(H(A), \circ\bigr), \qquad x \circ y = \tfrac12\bigl(xy^{*} + yx^{*}\bigr) = \tfrac12\bigl(xy + yx\bigr) \text{ on } H(A),
+$$</p>
+<p>the set $H(A) = \{x : x^{*} = x\}$ with the symmetrised product. It is the single place in the sesquilinear layer where the symmetrisation of the product is a Jordan product, and this article reads the Jordan algebra that arises there: its axioms, the scalars it is an algebra over, its idempotents and Peirce decomposition, its degree, its quadratic representation and its standard cases.</p>
+<p>The whole of the article turns on one difference from the bilinear case. For an involution of an algebra the self-adjoint part is a vector space over the base field and the Jordan algebra is an algebra over that field; for a sesquilinear algebra the two halves are only modules over the <strong>fixed ring</strong> $R^{\varsigma}$, and the Hermitian Jordan algebra is an algebra over $R^{\varsigma}$ and not over $R$. The bilinear theory is <em>The Self-Adjoint Part of an Algebra</em>, and the present article is its sesquilinear counterpart, obtained by cutting the scalars down to the fixed ring and keeping everything else.</p>
+<p>The setting is that of <em>Sesquilinear Algebras</em>: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and $2$ is invertible in $R$. The two halves, their scalar action and the closure of $H(A)$ under the symmetrised product are <em>Hermitian and Skew-Hermitian Elements</em>; the symmetrised product itself, its scalar rules and the failure of the Jordan identity off $H(A)$ are <em>The Sesquilinear Symmetrised Product</em>; the Hermitian idempotents and the associative Peirce decomposition are <em>Hermitian Idempotents and the Peirce Decomposition</em>; the Hermitian squares and the cone they generate are <em>Hermitian Squares and the Algebraic Positive Cone</em>; the general theory of Jordan algebras, their Peirce spaces, their trace forms and their degree is <em>Jordan Algebras</em>; and the Lie algebra carried by the other half is <em>The Unitary Lie Algebra</em>.</p>
+<hr />
+<h2 id="the-hermitian-jordan-algebra_1">The Hermitian Jordan Algebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>Hermitian Jordan algebra</strong> of $A$ is the pair $J(A) = (H(A), \circ)$ formed by the Hermitian elements and the symmetrised product</p>
+<p>$$
+x \circ y = \tfrac12\bigl(xy + yx\bigr),
+$$</p>
+<p>the sesquilinear product $x \star y = xy^{*}$ and its symmetrisation being those of <em>The Sesquilinear Symmetrised Product</em>. The <strong>square</strong> of an element of $J(A)$ is $x^{\circ 2} = x \circ x = x^{2}$, and the unit is the unit $1$ of $A$, which is Hermitian.</p>
+<h3 id="the-axioms">The Axioms</h3>
+<p><strong>Theorem.</strong> $J(A)$ is a commutative Jordan algebra over the fixed ring $R^{\varsigma}$: the product $\circ$ is commutative and $R^{\varsigma}$-bilinear, and it satisfies the Jordan identity</p>
+<p>$$
+(x \circ y) \circ (x \circ x) = x \circ \bigl(y \circ (x \circ x)\bigr)
+$$</p>
+<p>for all $x, y \in H(A)$.</p>
+<p><strong>Proof.</strong> On $H(A)$ the symmetrised sesquilinear product is the plain symmetrisation $\tfrac12(xy+yx)$, and that is the symmetrisation of the associative product of $A$; the symmetrisation of an associative algebra satisfies the Jordan identity, by <em>Jordan Algebras</em>, §<em>The Symmetrisation of an Associative Algebra</em>. Commutativity is by construction, and the $R^{\varsigma}$-bilinearity is the scalar theorem of <em>The Sesquilinear Symmetrised Product</em>: each slot of $\circ$ receives one linear and one conjugate-linear contribution, and the fixed ring is exactly what survives. $\square$</p>
+<p><strong>Remark.</strong> No hypothesis beyond the associativity of $A$ and the invertibility of $2$ is used, and none is needed: the identity is inherited from the envelope rather than verified in the Jordan algebra. The unit $1$ acts as the identity of $J(A)$ because $1 \circ x = \tfrac12(x + x) = x$ for a Hermitian $x$, and $1$ is Hermitian by <em>Units and the Unitary Elements</em>, §<em>The Unit is Hermitian</em>.</p>
+<h3 id="the-envelope">The Envelope</h3>
+<p><strong>Proposition.</strong> $J(A)$ is a special Jordan algebra and its envelope is the associative algebra $A$ with its involution: $J(A)$ is the Hermitian part of the fixed algebra of $*$ inside the symmetrisation $A^{+}$ of $A$.</p>
+<p><strong>Proof.</strong> $H(A)$ is contained in $A$ and is closed under $\circ$, so $J(A)$ is a Jordan subalgebra of the symmetrisation $A^{+}$ of the associative algebra $A$, and a Jordan algebra that is a subalgebra of the symmetrisation of an associative algebra is special, that algebra being its envelope (<em>Special and Exceptional Jordan Algebras</em>). $\square$</p>
+<p><strong>Remark.</strong> The envelope is the whole algebra, not the Hermitian part, and this is what makes every computation in $J(A)$ an ordinary associative computation followed by a symmetrisation. The exceptional Jordan algebras have no such envelope, and none arises here: the involution can only cut a piece out of an associative algebra, it cannot manufacture a new kind of algebra.</p>
+<h3 id="powers">Powers</h3>
+<p><strong>Proposition.</strong> $J(A)$ is power-associative, and for a Hermitian $x$ the powers of the Jordan algebra are the ordinary powers,</p>
+<p>$$
+x^{\circ n} = x^{n} \qquad (n \geq 1).
+$$</p>
+<p><strong>Proof.</strong> A Jordan algebra is power-associative (<em>Jordan Algebras</em>, §<em>Power Associativity</em>); the identification $x^{\circ n} = x^n$ is induction on $n$, the product on a single Hermitian element being the ordinary symmetrisation and the element commuting with its own powers. $\square$</p>
+<p><strong>Remark.</strong> The subalgebra of $J(A)$ generated by one Hermitian element is therefore the span over $R^{\varsigma}$ of its powers, $R^{\varsigma}[x]$, an associative and commutative algebra, the Jordan algebra generated by one element being associative in general. Every square-root problem in $A$ is a problem in $J(A)$ alone; the worked instance is <em>Biquaternion Square Roots of a General Element</em>.</p>
+<h2 id="the-scalars">The Scalars</h2>
+<h3 id="the-fixed-ring">The Fixed Ring</h3>
+<p><strong>Proposition.</strong> $H(A)$ is a module over $R^{\varsigma}$ and not over $R$ in general, and $J(A)$ is an algebra over $R^{\varsigma}$ and not over $R$. A scalar $\lambda$ with $\varsigma(\lambda) = -\lambda$ carries $H(A)$ into $S(A)$, so it is not a scalar of $J(A)$.</p>
+<p><strong>Proof.</strong> For $\lambda \in R^{\varsigma}$ and $h \in H(A)$, $(\lambda h)^{*} = \varsigma(\lambda)h^{*} = \lambda h$, so $\lambda h \in H(A)$; for $\varsigma(\lambda) = -\lambda$ the same computation gives $(\lambda h)^{*} = -\lambda h$, so $\lambda h \in S(A)$ and the scalar leaves the Hermitian part. The closure under scalars is exactly the fixed ring, since $\lambda h$ with $\lambda h \neq 0$ Hermitian forces $\varsigma(\lambda) = \lambda$; this is <em>Hermitian and Skew-Hermitian Elements</em>, §<em>The Scalar Action</em>. $\square$</p>
+<p><strong>Remark.</strong> The scalar story is the one structural place where the sesquilinear Jordan algebra differs from the bilinear one: over a field the self-adjoint part of <em>The Self-Adjoint Part of an Algebra</em> is a vector space over that field, whereas here the scalars are cut down to the fixed ring. In the model $M_n(\mathbb{C})$ with the conjugate transpose the fixed ring is $\mathbb{R}$ and $J(A)$ is a real Jordan algebra while the ambient algebra is a complex one; the multiplication by $i$ is the scalar with $\varsigma(\lambda) = -\lambda$ that carries the Hermitian matrices to the skew-Hermitian ones, which is the statement that the two halves of $A$ are two real forms and not two complex subspaces.</p>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p><strong>Proposition.</strong> Let $\tau$ be a trace on $A$, that is an additive map with $\tau(xy) = \tau(yx)$. Then</p>
+<p>$$
+\tau(x \circ y) = \tau(xy)
+$$</p>
+<p>defines a symmetric $R^{\varsigma}$-bilinear form on $J(A)$, the trace form of the Jordan algebra.</p>
+<p><strong>Proof.</strong> $\tau(x \circ y) = \tfrac12\bigl(\tau(xy) + \tau(yx)\bigr) = \tau(xy)$ by the trace property, and $\tau(xy) = \tau(yx)$ shows the symmetry. The $R^{\varsigma}$-bilinearity is inherited from the product. $\square$</p>
+<p><strong>Remark.</strong> For $A = M_n(\mathbb{C})$ with the ordinary trace the form is $\mathrm{Tr}(x \circ y) = \mathrm{Tr}(xy)$, and on Hermitian $x, y$ it takes real values, being the trace of the product of two Hermitian matrices; it is the trace form of the Jordan algebra and not a form on the ambient algebra, and its general theory, its non-degeneracy and its role in the classification are <em>Jordan Algebras</em>, §<em>The Trace Form</em>. No positivity, no order and no distance is claimed of it here.</p>
+<h2 id="idempotents-and-the-peirce-decomposition">Idempotents and the Peirce Decomposition</h2>
+<h3 id="the-hermitian-idempotents">The Hermitian Idempotents</h3>
+<p><strong>Proposition.</strong> The idempotents of the Jordan algebra $J(A)$ are the idempotents of $A$ that are Hermitian:</p>
+<p>$$
+e \circ e = e \iff e^{2} = e = e^{*} .
+$$</p>
+<p><strong>Proof.</strong> $e \circ e = \tfrac12(e^2 + e^2) = e^2$, so $e \circ e = e$ is $e^2 = e$; an element of $J(A)$ is Hermitian by definition. $\square$</p>
+<p>The Hermitian idempotents, their involution-invariance and their behaviour under the derived operation are <em>Hermitian Idempotents and the Peirce Decomposition</em>, §<em>Idempotents and Hermitian Idempotents</em>.</p>
+<h3 id="jordan-orthogonality">Jordan Orthogonality</h3>
+<p><strong>Definition.</strong> Two idempotents $e, f$ of $J(A)$ are <strong>Jordan orthogonal</strong> when $e \circ f = 0$.</p>
+<p><strong>Proposition.</strong> Let $e, f \in H(A)$ be Hermitian idempotents. Then $e \circ f = 0$ if and only if $ef = fe = 0$.</p>
+<p><strong>Proof.</strong> $e \circ f = \tfrac12(ef + fe)$, so Jordan orthogonality is $ef + fe = 0$. Multiplying by $e$ on the left and on the right gives $efe = -ef$ and $efe = -fe$, whence $ef = fe$; together with $ef = -fe$ and the invertibility of $2$ this gives $ef = 0$. The converse is immediate. $\square$</p>
+<p><strong>Remark.</strong> Jordan orthogonality is the ordinary vanishing of the product for Hermitian idempotents, so a family of pairwise Jordan-orthogonal Hermitian idempotents is a family of pairwise orthogonal projections; the partial order and the compatibility of such families with the involution are read in <em>Hermitian Idempotents and the Peirce Decomposition</em>, §<em>Orthogonality and the Partial Order</em>.</p>
+<h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
+<p><strong>Theorem.</strong> Let $e$ be a Hermitian idempotent of $A$ and put $f = 1 - e$. Then $f$ is a Hermitian idempotent, the Jordan algebra splits as</p>
+<p>$$
+J(A) = \mathrm{J}_1(e) \oplus \mathrm{J}_{1/2}(e) \oplus \mathrm{J}_0(e),
+$$</p>
+<p>where $\mathrm{J}_\lambda(e)$ is the $\lambda$-eigenspace of the operator $x \mapsto e \circ x$ on $J(A)$, and the three spaces are the Hermitian parts of the associative Peirce spaces of $e$:</p>
+<p>$$
+\mathrm{J}_1(e) = H(A) \cap eAe , \qquad \mathrm{J}_{1/2}(e) = H(A) \cap \bigl(eAf \oplus fAe\bigr) , \qquad \mathrm{J}_0(e) = H(A) \cap fAf .
+$$</p>
+<p><strong>Proof.</strong> The associative Peirce decomposition $A = eAe \oplus eAf \oplus fAe \oplus fAf$ is recalled in <em>Hermitian Idempotents and the Peirce Decomposition</em>, §<em>The Classical Splitting</em>, and the involution exchanges the two mixed spaces and fixes the two corners; a Hermitian element therefore has Hermitian components in the three groups $eAe$, $eAf \oplus fAe$ and $fAf$, so $H(A)$ is the sum of the three Hermitian parts displayed. For $h \in H(A) \cap eAe$ one has $eh = h = he$, so $e \circ h = h$; for $h = u + u^{*}$ with $u = eaf \in eAf$ one has $eh = u$ and $he = u^{*}$, so $e \circ h = \tfrac12 h$; and for $h \in H(A) \cap fAf$ one has $eh = he = 0$, so $e \circ h = 0$. The three spaces are therefore eigenspaces for the three distinct eigenvalues $1, \tfrac12, 0$, hence independent and direct, and their sum is $H(A)$. $\square$</p>
+<p><strong>Remark.</strong> The Peirce decomposition of the Jordan algebra is the Hermitian part of the Peirce decomposition of the associative algebra, component by component: the corners of the Jordan algebra are the Hermitian parts of the corners, $R^{\varsigma}e$ and $R^{\varsigma}f$, and the middle space is the Hermitian part of the two mixed spaces together, which is where the off-diagonal part of a Hermitian element lives. The three eigenvalues $1, \tfrac12, 0$ are those of a Jordan algebra in general (<em>Jordan Algebras</em>, §<em>The Peirce Spaces</em>), and the superscript of $\mathrm{J}_{1/2}$ is the halving that the invertibility of $2$ supplies.</p>
+<h3 id="the-degree">The Degree</h3>
+<p><strong>Definition.</strong> A family of pairwise Jordan-orthogonal idempotents of $J(A)$ summing to the unit is <strong>complete</strong>, and the number of its members is the <strong>degree</strong> of the Jordan algebra.</p>
+<p><strong>Proposition.</strong> For $A = M_n(\mathbb{C})$ with the conjugate transpose the Hermitian idempotents are the orthogonal projections of $\mathbb{C}^{n}$ and the degree is $n$; for $n = 1$, and for the field $\mathbb{C}$ with the conjugation, the degree is $1$.</p>
+<p><strong>Proof.</strong> A Hermitian idempotent is a matrix $P$ with $P^2 = P = P^{*}$, that is an orthogonal projection, and its image is the subspace it projects onto. A complete family of pairwise Jordan-orthogonal Hermitian idempotents is a family of pairwise orthogonal projections summing to the identity, that is an orthogonal decomposition of $\mathbb{C}^{n}$ into the images; such a decomposition has at most $n$ nonzero members, and the $n$ matrix units $E_{11}, \dots, E_{nn}$ realise the bound, so the degree is $n$. For $n = 1$ the only nonzero idempotent is $1$, and for $\mathbb{C}$ with the conjugation the Hermitian elements are real and $1$ is the only nonzero idempotent; in both cases the degree is $1$. $\square$</p>
+<p><strong>Remark.</strong> The degree is the number of the pieces of a complete orthogonal decomposition, and it is not the number of elements of a basis of $J(A)$: the two coincide only in the smallest cases. In the biquaternion layer the same invariant is two, the Hermitian subspace carrying two orthogonal idempotents, as recorded in <em>The Six Subspaces and the Jordan Algebra</em>.</p>
+<h2 id="the-quadratic-representation">The Quadratic Representation</h2>
+<p><strong>Definition.</strong> For $x \in H(A)$ the <strong>quadratic representation</strong> is the operator</p>
+<p>$$
+U_x : J(A) \longrightarrow J(A), \qquad U_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y .
+$$</p>
+<p><strong>Proposition.</strong> $U_x$ takes its values in $J(A)$, is $R^{\varsigma}$-linear, and read through the associative product of $A$ it is</p>
+<p>$$
+U_x(y) = xyx .
+$$</p>
+<p><strong>Proof.</strong> For $y \in H(A)$ the element $xyx$ is Hermitian, $(xyx)^{*} = x^{*}y^{*}x^{*} = xyx$, so the operator preserves $J(A)$, and it is $R^{\varsigma}$-linear because the product is $R^{\varsigma}$-bilinear on the Hermitian part. Expanding, $x \circ (x \circ y) = \tfrac14(x^{2}y + 2xyx + yx^{2})$ and $(x \circ x)\circ y = \tfrac12(x^{2}y + yx^{2})$, so the combination displayed is $xyx$. $\square$</p>
+<p><strong>Corollary.</strong> $U_x(x) = x^{3}$ and $U_1 = \mathrm{id}$; the map $x \mapsto U_x$ is quadratic in $x$, and it replaces the associativity that the Jordan product does not have, in the sense that the products of three elements of $J(A)$ are governed by it.</p>
+<p><strong>Proof.</strong> $x x x = x^{3}$ and $1y1 = y$; the quadratic dependence is read from the definition, which is homogeneous of degree two in $x$ and linear in $y$. $\square$</p>
+<h2 id="worked-cases">Worked Cases</h2>
+<h3 id="the-complex-matrices">The Complex Matrices</h3>
+<p>For $A = M_n(\mathbb{C})$ with the conjugate transpose the Hermitian Jordan algebra is the real vector space of the Hermitian matrices with the symmetrised product $\tfrac12(xy + yx)$, spanned over $\mathbb{R}$ by the $n$ diagonal units $E_{ii}$ and the $n(n-1)$ Hermitian and skew-Hermitian off-diagonal combinations $E_{ij} + E_{ji}$ and $i(E_{ij} - E_{ji})$. Its degree is $n$; its trace form is $\mathrm{Tr}(xy)$, real-valued on it; its idempotents are the orthogonal projections; and at the idempotent $E_{11}$ its Peirce spaces are $\mathbb{R}E_{11}$, the Hermitian off-diagonal matrices, and $\mathbb{R}E_{22}$, the eigenvalues being $1, \tfrac12, 0$. The algebra is the Jordan algebra of the Hermitian matrices of <em>Jordan Algebras</em>, §<em>Hermitian Matrices</em>, read over the fixed ring.</p>
+<h3 id="the-field">The Field</h3>
+<p>For $A = \mathbb{C}$ over the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation and the derived product $x \star y = x\bar y$, the Hermitian elements are the real numbers, so $J(A) = \mathbb{R}$ with the ordinary multiplication, of degree $1$. The symmetrised product of two complex numbers is $\mathrm{Re}(x\bar y)$, a real number, and its restriction to the Hermitian part is the multiplication of the reals; the case is the smallest in which the fixed ring is a proper subring of $R$ and the Jordan algebra a proper real form of the algebra.</p>
+<h3 id="the-quaternions">The Quaternions</h3>
+<p>For $A = \mathbb{H}$ with the quaternion conjugation over the datum $(\mathbb{R},\mathrm{id})$ the twist is invisible and the product is bilinear, so the case belongs to <em>The Self-Adjoint Part of an Algebra</em>; the Hermitian elements are the real quaternions and $J(A) = \mathbb{R}$ has degree $1$. It is the case in which the sesquilinear layer and the bilinear one coincide, the fixed ring being the whole of $R$, and it is recorded to mark the boundary.</p>
+<h3 id="the-biquaternion-algebra">The Biquaternion Algebra</h3>
+<p>For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-involution the Hermitian subspace is a Jordan algebra of degree two over $\mathbb{R}$, isomorphic to $H_2(\mathbb{C})$, with the two idempotents $\tilde{\Pi}_1$ and $\tilde{\Pi}_2$ as a complete Jordan-orthogonal family and the Peirce spaces of $\tilde{\Pi}_1$ reading $\mathbb{C}\tilde{\Pi}_1$, the span of $e_1$ and $e_2$, and $\mathbb{C}\tilde{\Pi}_2$. That layer is <em>Biquaternion Jordan Algebra</em> and <em>The Six Subspaces and the Jordan Algebra</em>, and it is the worked case in which everything of this article is computed on a basis of eight elements.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian elements of a sesquilinear algebra with a $\varsigma$-semilinear involution form, under the symmetrised product $x \circ y = \tfrac12(xy + yx)$, a commutative Jordan algebra over the fixed ring $R^{\varsigma}$. It is special with envelope $A$, it is power-associative with $x^{\circ n} = x^{n}$ on the Hermitian elements, and it carries a symmetric trace form $\tau(x \circ y) = \tau(xy)$ whenever the algebra carries a trace. Its idempotents are the Hermitian idempotents of $A$, its Jordan orthogonality is the vanishing of the product for them, its degree is the length of a complete orthogonal decomposition, and its Peirce decomposition at a Hermitian idempotent $e$ is the Hermitian part of the associative Peirce decomposition of $A$ at $e$, with the eigenvalues $1, \tfrac12, 0$ on the Hermitian parts of the corner $eAe$, of the mixed spaces and of the corner $fAf$. Its quadratic representation is $U_x(y) = xyx$.</p>
+<p>The one structural difference from the bilinear theory of <em>The Self-Adjoint Part of an Algebra</em> is the scalars: the base involution is not the identity, the two halves are modules over the fixed ring and not over $R$, and the Jordan algebra is an algebra over $R^{\varsigma}$. Everything else is inherited, and inherited from the envelope: the Jordan identity is the associativity of $A$ read through the symmetrisation, which is the reason the identity holds here and fails for the symmetrised sesquilinear product off the Hermitian part, as <em>The Sesquilinear Symmetrised Product</em> records.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J(A) = (H(A), \circ)$</td>
+<td>the Hermitian Jordan algebra</td>
+</tr>
+<tr>
+<td>$H(A) = \{x : x^{*} = x\}$</td>
+<td>the Hermitian elements, the underlying set of $J(A)$</td>
+</tr>
+<tr>
+<td>$x \circ y = \tfrac12(xy + yx)$</td>
+<td>the symmetrised product, on $H(A)$</td>
+</tr>
+<tr>
+<td>$R^{\varsigma}$</td>
+<td>the fixed ring, the scalars of $J(A)$</td>
+</tr>
+<tr>
+<td>$\tau(x \circ y) = \tau(xy)$</td>
+<td>the trace form of the Jordan algebra</td>
+</tr>
+<tr>
+<td>$e \circ e = e \iff e^2 = e = e^{*}$</td>
+<td>the idempotents of $J(A)$</td>
+</tr>
+<tr>
+<td>$e \circ f = 0 \iff ef = fe = 0$</td>
+<td>Jordan orthogonality of Hermitian idempotents</td>
+</tr>
+<tr>
+<td>$\mathrm{J}_1 \oplus \mathrm{J}_{1/2} \oplus \mathrm{J}_0$</td>
+<td>the Peirce decomposition, the Hermitian parts of $eAe$, $eAf \oplus fAe$ and $fAf$</td>
+</tr>
+<tr>
+<td>$U_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y = xyx$</td>
+<td>the quadratic representation</td>
+</tr>
+<tr>
+<td>$x^{\circ n} = x^{n}$</td>
+<td>the powers of a Hermitian element</td>
+</tr>
+<tr>
+<td>the degree</td>
+<td>the number of members of a complete Jordan-orthogonal family of idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Jordan axioms, the symmetrisation of an associative algebra, the special algebras and their envelopes, the Peirce decomposition and the degree.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the special Jordan algebras, the quadratic representation and the trace form.</li>
+<li>I. N. Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the Hermitian elements of an involutive ring and the symmetrised product they carry.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society Colloquium Publications 44, 1998), for the involutions of an algebra and the two halves they cut.</li>
+<li>The companion articles of this series: <em>Sesquilinear Algebras</em>, <em>The Sesquilinear Symmetrised Product</em>, <em>Hermitian and Skew-Hermitian Elements</em>, <em>Hermitian Idempotents and the Peirce Decomposition</em>, <em>Units and the Unitary Elements</em>, <em>The Unitary Lie Algebra</em>, <em>Hermitian Squares and the Algebraic Positive Cone</em>, and <em>The Self-Adjoint Part of an Algebra</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sesquilinear Product — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sesquilinear-product"><strong>The Sesquilinear Product</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>sesquilinear product</strong> on an $R$-module $A$ is a two-variable map $\star : A \times A \to A$ that is additive in each variable, $R$-linear in the first variable and $\varsigma$-semilinear in the second, where $\varsigma$ is an involution of $R$ (an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^{2} = \mathrm{id}$, as in <em>Sesquilinear Algebras</em>). Beyond additivity the whole definition is the pair of scalar rules</p>
+<p>$$
+(\lambda x) \star y = \lambda (x \star y), \qquad x \star (\lambda y) = \varsigma(\lambda) (x \star y) .
+$$</p>
+<p>This article is the calculus of the product itself: what the two rules force for a product of combinations, how the product becomes an ordinary bilinear map once one copy of the module is conjugated, what the conjugate of a product is, how the transposed product $y \star x$ compares with $x \star y$, and how the one-sided products $a \star x$ and $x \star a$ move the scalars. The module carrying the product, its ideals, its units and its examples are the subject of <em>Sesquilinear Algebras</em>; here the module is fixed and only the product is computed with.</p>
+<p>Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and the product is written $\star$. When the product is the <strong>derived operation</strong> $x \star y = xy^{*}$ of an associative algebra with a $\varsigma$-semilinear involution $*$, the algebra's own product is written by juxtaposition, $xy$, so that the two products are told apart; that case is the standard one and supplies the examples.</p>
+<h2 id="the-axioms-of-the-product">The Axioms of the Product</h2>
+<h3 id="additivity-and-the-two-rules">Additivity and the Two Rules</h3>
+<p><strong>Definition.</strong> The product is <strong>additive in each variable</strong> when $(x + y) \star z = x \star z + y \star z$ and $x \star (y + z) = x \star y + x \star z$ for all $x, y, z$, and it satisfies the two scalar rules above. A product that is additive in each variable and satisfies the two rules is a <strong>$\varsigma$-sesquilinear product</strong>.</p>
+<p><strong>Proposition.</strong> The product vanishes on a zero argument and is homogeneous of degree one in each argument: for all $x, y$,</p>
+<p>$$
+0 \star x = x \star 0 = 0, \qquad (-x) \star y = x \star (-y) = -(x \star y),
+$$</p>
+<p>and additivity in each variable extends to finite sums.</p>
+<p><strong>Proof.</strong> Put $x = 0$ and $y = 0$ in the two distributive laws and use the uniqueness of the neutral element; then put $y = -x$ in $(x + y) \star z = x \star z + y \star z$ and use $0 \star z = 0$. The finite-sum form is induction on the number of terms. $\square$</p>
+<p><strong>Remark.</strong> Nothing beyond additivity and the two rules is assumed. The product need not be associative, commutative or unital, and there need not be an involution on $A$ itself; those further data are named where they are used, and the associativity-free part of the theory is exactly the part computed in this article.</p>
+<h3 id="the-rule-of-the-scalars-of-a-product">The Rule of the Scalars of a Product</h3>
+<p><strong>Proposition (the scalars of a product).</strong> For all $\lambda, \mu \in R$ and all $x, y \in A$,</p>
+<p>$$
+(\lambda x) \star (\mu y) = \lambda \, \varsigma(\mu) \, (x \star y) .
+$$</p>
+<p>More generally, for finite families,</p>
+<p>$$
+\Bigl( \sum_i \lambda_i x_i \Bigr) \star \Bigl( \sum_j \mu_j y_j \Bigr) = \sum_{i,j} \lambda_i \, \varsigma(\mu_j) \, (x_i \star y_j) .
+$$</p>
+<p><strong>Proof.</strong> $(\lambda x) \star (\mu y) = \lambda \bigl( x \star (\mu y) \bigr) = \lambda \, \varsigma(\mu) (x \star y)$, by the first and then the second rule. The general form is this formula applied term by term, additivity carrying the sums through. $\square$</p>
+<p><strong>Corollary (structure constants).</strong> Suppose $A$ is free with basis $(e_i)_{i \in I}$. Writing $e_i \star e_j = \sum_k c_{ij}^{k} e_k$, the product of two elements $x = \sum_i \lambda_i e_i$ and $y = \sum_j \mu_j e_j$ is</p>
+<p>$$
+x \star y = \sum_{i,j,k} \lambda_i \, \varsigma(\mu_j) \, c_{ij}^{k} \, e_k .
+$$</p>
+<p>Conversely, for any family of scalars $c_{ij}^{k}$ the last formula defines a $\varsigma$-sesquilinear product on $A$. So on a free module with a finite basis of $n$ elements the $\varsigma$-sesquilinear products are exactly the $n^{3}$-tuples of scalars, with no condition on the tuple; associativity is not assumed, and it would impose conditions on the tuple.</p>
+<p><strong>Proof.</strong> The first statement is the general scalar rule. For the converse, the formula is additive in each of $\lambda_i$ and $\mu_j$, and reading off the two rules gives $(\lambda x) \star y = \lambda (x \star y)$ from the left slot and $x \star (\mu y) = \varsigma(\mu)(x \star y)$ from the right slot; so the axioms hold without any constraint among the $c_{ij}^{k}$. $\square$</p>
+<p><strong>Remark.</strong> The scalars of the left factor pass through unchanged and the scalars of the right factor come out conjugated. This is the precise sense in which the product is not bilinear: a bilinear product would give $\lambda \mu$, and the rule $\lambda \, \varsigma(\mu)$ is what replaces it.</p>
+<h3 id="the-product-as-a-bilinear-map-on-the-pair">The Product as a Bilinear Map on the Pair</h3>
+<p><strong>Definition.</strong> The <strong>conjugate module</strong> $A^{\varsigma}$ is the additive group $A$ with the twisted scalar action $\lambda \cdot x = \varsigma(\lambda) x$; the definition and its properties are in <em>Sesquilinear Algebras</em>.</p>
+<p><strong>Theorem (the product is bilinear on the pair).</strong> The product, read as a map $A \times A^{\varsigma} \to A$, is $R$-bilinear in the two variables.</p>
+<p><strong>Proof.</strong> In the first variable, $(\lambda x) \star y = \lambda (x \star y)$ is the first rule, and the scalar $\lambda$ acts on the output in $A$. In the second variable, $x \star (\lambda \cdot y) = x \star (\varsigma(\lambda) y) = \varsigma(\varsigma(\lambda)) (x \star y) = \lambda (x \star y)$, the second rule being used once and $\varsigma^{2} = \mathrm{id}$ once. Additivity in each variable is the definition of the product. $\square$</p>
+<p><strong>Remark.</strong> The theorem looks like a tautology and is not. The output lies in $A$ with the <strong>original</strong> scalar action, not the twisted one, so the scalar that the second rule conjugates is returned unconjugated only because $\varsigma$ has order two. Conjugation is a functorial involution on the objects, $(A^{\varsigma})^{\varsigma} = A$, and this reformulation — a $\varsigma$-sesquilinear product is the same thing as an $R$-bilinear map $A \times A^{\varsigma} \to A$ — is the working definition of the category.</p>
+<h2 id="the-conjugate-of-a-product">The Conjugate of a Product</h2>
+<h3 id="the-conjugate-module">The Conjugate Module</h3>
+<p><strong>Proposition.</strong> $A^{\varsigma}$ is an $R$-module, the identity $A \to A^{\varsigma}$ is $\varsigma$-semilinear, and $A^{\varsigma\varsigma} = A$.</p>
+<p><strong>Proof.</strong> The action is additive in $x$ and $\lambda \cdot (\mu \cdot x) = (\mu \lambda) \cdot x$ because $\varsigma$ is multiplicative and $\varsigma^{2} = \mathrm{id}$; the remaining clauses are the definition. $\square$</p>
+<h3 id="the-conjugate-of-a-product_1">The Conjugate of a Product</h3>
+<p><strong>Proposition (conjugation reverses the star-product).</strong> Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $x \star y = xy^{*}$ be the derived operation. Then</p>
+<p>$$
+(x \star y)^{*} = y \star x .
+$$</p>
+<p><strong>Proof.</strong> $(x \star y)^{*} = (xy^{*})^{*} = (y^{*})^{*} x^{*} = y x^{*} = y \star x$, using $(uv)^{*} = v^{*} u^{*}$ and $*^{2} = \mathrm{id}$. $\square$</p>
+<p><strong>Corollary.</strong> The involution carries the star-product to the same star-product with the two factors exchanged, so conjugating a product and transposing it are the same operation.</p>
+<p><strong>Remark.</strong> The plain product obeys the anti-automorphism rule $(xy)^{*} = y^{*} x^{*}$; the star-product obeys the same rule with $\star$ in place of the product, $(x \star y)^{*} = y \star x$. So the same involution $*$ is an anti-automorphism for the star-product as well as for the plain product: the star-product is not a second kind of object but the plain product read through $*$.</p>
+<p><strong>Remark (the boundary).</strong> A general $\varsigma$-sesquilinear product carries no involution on $A$, so there is no conjugate $x^{*}$ and hence no conjugate of a product: the conjugate <strong>module</strong> $A^{\varsigma}$ always exists, the conjugate of a product exists only for the derived operation of an involutive algebra. The distinction is the reason <em>Anti-Automorphisms Twisted by the Base Involution</em> treats the involution as extra data.</p>
+<h2 id="the-transposed-product">The Transposed Product</h2>
+<h3 id="the-transposed-product-and-the-difference">The Transposed Product and the Difference</h3>
+<p><strong>Definition.</strong> The <strong>transposed product</strong> of $x$ and $y$ is $y \star x$, and the <strong>difference</strong> is the bracket</p>
+<p>$$
+[x, y]_{\varsigma} = x \star y - y \star x .
+$$</p>
+<p><strong>Proposition (the transposed product has the opposite parity).</strong> The map $(x, y) \mapsto y \star x$ is $\varsigma$-semilinear in the first variable and $R$-linear in the second, so it is $R$-bilinear as a map $A^{\varsigma} \times A \to A$, with the conjugate module in the first factor. It is a $\varsigma$-sesquilinear product of the original parity only when the twist is invisible, that is when $\varsigma = \mathrm{id}$ or $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, y, x$, the degenerate case of <em>Sesquilinear Algebras</em> again.</p>
+<p><strong>Proof.</strong> In the first slot, $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$, which is semilinearity; in the second slot, $(\lambda y) \star x = \lambda(y \star x)$, which is linearity. Reading the first slot with the twisted action of $A^{\varsigma}$ makes the map $R$-bilinear, exactly as the theorem that the product is bilinear on the pair. Semilinearity and linearity in the first slot agree only when $\varsigma = \mathrm{id}$. $\square$</p>
+<p><strong>Remark.</strong> The parity of the transposed product is the reverse of the parity of the product: the product is the bilinear map $A \times A^{\varsigma} \to A$, the transposed product the bilinear map $A^{\varsigma} \times A \to A$. The reversal is the product-level form of the asymmetry of the opposite algebra of <em>Sesquilinear Algebras</em>, where the conjugate module comes into the first factor rather than the second.</p>
+<p><strong>Proposition.</strong> $[x, y]_{\varsigma} = -[y, x]_{\varsigma}$ and $[x, x]_{\varsigma} = 0$.</p>
+<p><strong>Proof.</strong> Both statements are the antisymmetry of the subtraction. $\square$</p>
+<p><strong>Theorem (when transposition changes nothing).</strong> Let $A$ be a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $\star$ be the derived operation. Then $x \star y = y \star x$ for all $x, y$ if and only if $* = \mathrm{id}$ and the product of $A$ is commutative.</p>
+<p><strong>Proof.</strong> If $x \star y = y \star x$ for all $x, y$, put $y = 1$ and use $1^{*} = 1$: then $x = x \star 1 = 1 \star x = x^{*}$ for every $x$, so $*$ is the identity; the product is then the original one, and $x \star y = y \star x$ is its commutativity. Conversely, if $* = \mathrm{id}$ then $\star$ is the original product, which is transposition-invariant exactly when $A$ is commutative. $\square$</p>
+<p><strong>Corollary (the faithful case).</strong> If $A$ is faithful over $R$, then $* = \mathrm{id}$ forces $\varsigma = \mathrm{id}$: the compatibility $(\lambda x)^{*} = \varsigma(\lambda) x^{*}$ with $* = \mathrm{id}$ gives $(\lambda - \varsigma(\lambda)) x = 0$ for every $\lambda$ and every $x$, and faithfulness gives $\lambda = \varsigma(\lambda)$. So for an algebra of full type with $\varsigma \neq \mathrm{id}$ the involution $*$ on $A$ is nontrivial, and the transposed product always differs from the product. The converse does not hold: $\varsigma = \mathrm{id}$ does not force $* = \mathrm{id}$, and on the commutative algebra $\mathbb{C} \times \mathbb{C}$ the swap $(z, w) \mapsto (w, z)$ is a $\mathbb{C}$-linear involution of order two whose derived operation $x \star y = xy^{*}$ is not transposition-invariant. The sharp criterion stays $* = \mathrm{id}$ and $A$ commutative.</p>
+<p><strong>Remark (faithfulness cannot be dropped).</strong> Without faithfulness the involution on $A$ can be the identity while the base involution is not. Take $R = \mathbb{Q}[\varepsilon]/(\varepsilon^{2})$ with $\varsigma(\varepsilon) = -\varepsilon$ and $A = R/(\varepsilon) = \mathbb{Q}$ with its usual multiplication and $* = \mathrm{id}$. Then $*$ is $\varsigma$-semilinear, because $\varepsilon$ acts as $0$ on $A$ and $\varepsilon$ is the only place where $\varsigma$ differs from the identity; the product is commutative, hence transposition-invariant, and $\varsigma \neq \mathrm{id}$. The involution is the identity only modulo $\operatorname{ann}_{R}(A)$, which is the honest conclusion in the absence of faithfulness, in agreement with <em>The Collapse at the Identity</em>. For an algebra of full type with $\varsigma \neq \mathrm{id}$ the transposed product therefore always differs from the product, and a genuine sesquilinear product is never symmetric.</p>
+<h3 id="the-hermitian-and-the-skew-hermitian-parts">The Hermitian and the Skew-Hermitian Parts</h3>
+<p><strong>Proposition.</strong> Let $\star$ be the derived operation of an algebra with a $\varsigma$-semilinear involution $*$, and suppose $2$ is invertible in $R$. Then the product splits as</p>
+<p>$$
+x \star y = \tfrac{1}{2}\bigl( x \star y + y \star x \bigr) + \tfrac{1}{2}\bigl( x \star y - y \star x \bigr),
+$$</p>
+<p>the symmetrised part $x \star y + y \star x$ is <strong>Hermitian</strong>, $(x \star y + y \star x)^{*} = x \star y + y \star x$, and the difference $x \star y - y \star x$ is <strong>skew-Hermitian</strong>, $(x \star y - y \star x)^{*} = -(x \star y - y \star x)$.</p>
+<p><strong>Proof.</strong> By the conjugate-of-a-product identity, $(x \star y)^{*} = y \star x$, so the conjugate of the symmetrised part is itself and the conjugate of the difference is its negative; the factor $\tfrac{1}{2}$ exists because $2$ is invertible. $\square$</p>
+<p><strong>Remark.</strong> The identity is the whole of the symmetry it states: the symmetrised part of the product is Hermitian and the difference is skew-Hermitian. It does not say more. In particular the difference $[x, y]_{\varsigma} = x \star y - y \star x$ is antisymmetric and takes skew-Hermitian values, but it satisfies no Jacobi identity in general, so it is not itself a Lie bracket; the bracket under which the skew-Hermitian elements form a Lie algebra is the ordinary commutator $xy - yx$, a different operation, treated in <em>The Sesquilinear Commutator</em> and <em>The Unitary Lie Algebra</em>. Likewise the symmetrised product $x \star y + y \star x = xy^{*} + yx^{*}$ is not the Jordan product $xy + yx$ of the algebra.</p>
+<h2 id="the-one-sided-products">The One-Sided Products</h2>
+<h3 id="the-left-and-the-right-product">The Left and the Right Product</h3>
+<p><strong>Definition.</strong> For $a \in A$ the <strong>left product</strong> and the <strong>right product</strong> by $a$ are the maps</p>
+<p>$$
+L_{a}(x) = a \star x, \qquad R_{a}(x) = x \star a .
+$$</p>
+<p><strong>Proposition.</strong> $L_{a}$ is $\varsigma$-semilinear and $R_{a}$ is $R$-linear. Equivalently, $L_{a}$ is $R$-linear as a map $A^{\varsigma} \to A$, and $R_{a}$ is $R$-linear as a map $A \to A$ and as a map $A^{\varsigma} \to A^{\varsigma}$.</p>
+<p><strong>Proof.</strong> $L_{a}(\lambda x) = a \star (\lambda x) = \varsigma(\lambda)(a \star x) = \varsigma(\lambda) L_{a}(x)$, so $L_{a}$ is $\varsigma$-semilinear; then $L_{a}(\lambda \cdot x) = L_{a}(\varsigma(\lambda) x) = \varsigma(\varsigma(\lambda)) L_{a}(x) = \lambda L_{a}(x)$, so $L_{a}$ is linear on the conjugate module. For $R_{a}$, $R_{a}(\lambda x) = (\lambda x) \star a = \lambda (x \star a) = \lambda R_{a}(x)$ by the first rule, and the same computation with $\lambda \cdot x$ shows that $R_{a}$ is linear for the twisted action as well. $\square$</p>
+<p><strong>Remark.</strong> The two one-sided products are two families of operators of opposite parity: the left products are conjugate-linear on $A$ and linear on $A^{\varsigma}$, the right products are linear on both. When the product is associative the left products turn $A$ into a left $A$-module and the right products into a right $A$-module, and these are the two module structures that the asymmetry of the slots produces; without associativity the two families are only families of operators, since $L_{a} \circ L_{b} = L_{a \star b}$ is the associative law. The operator theory is in <em>The Left and Right Multiplication Operators of a Sesquilinear Algebra</em>.</p>
+<h3 id="the-twisted-composition">The Twisted Composition</h3>
+<p><strong>Proposition.</strong> The composites $L_{a} \circ L_{b}$ and $R_{a} \circ R_{b}$ are $R$-linear: they are composites of two $\varsigma$-semilinear maps and of two linear maps respectively. When the product is associative, $L_{a} \circ R_{b} = R_{b} \circ L_{a}$.</p>
+<p><strong>Proof.</strong> For the composites, apply the parity twice: $\varsigma^{2} = \mathrm{id}$ returns a linear map from a composite of two conjugate-linear ones, and a composite of two linear ones is linear. The commutation of the two families is the associative law $(a \star x) \star b = a \star (x \star b)$, which is exactly the equality of $L_{a}R_{b}$ and $R_{b}L_{a}$ at every $x$. $\square$</p>
+<p><strong>Remark.</strong> A composite of two left products is linear while a single left product is conjugate-linear, so the left products form a representation of $A$ by linear operators only when the twist is invisible: $L_{a}$ is $R$-linear exactly when $\varsigma = \mathrm{id}$ or $(\lambda - \varsigma(\lambda)) a \star x = 0$ for all $\lambda$ and $x$, the condition of <em>Sesquilinear Algebras</em>. The composition laws and the representation are read in <em>The Left and Right Multiplication Operators of a Sesquilinear Algebra</em>, to which the present parity statement is the first input.</p>
+<h2 id="summary">Summary</h2>
+<p>A $\varsigma$-sesquilinear product is additive in each variable with $(\lambda x) \star y = \lambda(x \star y)$ and $x \star (\lambda y) = \varsigma(\lambda)(x \star y)$. The two rules force $(\lambda x) \star (\mu y) = \lambda \, \varsigma(\mu) (x \star y)$, so on a free module with a finite basis of $n$ elements the product is an $n^{3}$-tuple of structure constants with no condition among them, and the only difference from a bilinear product is the conjugated scalar of the right factor. Read on the conjugate module $A^{\varsigma}$, the product is an ordinary $R$-bilinear map $A \times A^{\varsigma} \to A$, the output keeping the original action; this is the working form of the definition. For the derived operation $x \star y = xy^{*}$ of an involutive algebra, conjugation reverses the product, $(x \star y)^{*} = y \star x$, so the symmetrised product is Hermitian and the difference skew-Hermitian. The transposed product $y \star x$ is of the opposite parity, bilinear on $A^{\varsigma} \times A$, and it equals the product exactly when the involution on $A$ is the identity and $A$ is commutative; for an algebra of full type with $\varsigma \neq \mathrm{id}$ it therefore always differs from the product. The left products are conjugate-linear and the right products linear, and when the product is associative they make $A$ a left and a right module; the composite of two left products is linear through the square $\varsigma^{2} = \mathrm{id}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R$, $\varsigma$</td>
+<td>a commutative ring with $1$, and an involution of it</td>
+</tr>
+<tr>
+<td>$A$, $\star$</td>
+<td>an $R$-module, and a $\varsigma$-sesquilinear product on it</td>
+</tr>
+<tr>
+<td>$xy$</td>
+<td>the product of an associative algebra, written by juxtaposition when the derived operation is in play</td>
+</tr>
+<tr>
+<td>$x \mapsto x^{*}$</td>
+<td>a $\varsigma$-semilinear involution, the extra datum of the standard case</td>
+</tr>
+<tr>
+<td>$x \star y = xy^{*}$</td>
+<td>the derived operation, the standard sesquilinear product</td>
+</tr>
+<tr>
+<td>$A^{\varsigma}$</td>
+<td>the conjugate module, the scalars acting by $\lambda \cdot x = \varsigma(\lambda) x$</td>
+</tr>
+<tr>
+<td>$(\lambda x) \star (\mu y) = \lambda \varsigma(\mu)(x \star y)$</td>
+<td>the rule of the scalars of a product</td>
+</tr>
+<tr>
+<td>$c_{ij}^{k}$</td>
+<td>the structure constants, $e_i \star e_j = \sum_k c_{ij}^{k} e_k$</td>
+</tr>
+<tr>
+<td>$[x, y]_{\varsigma}$</td>
+<td>the difference $x \star y - y \star x$</td>
+</tr>
+<tr>
+<td>$L_{a}$, $R_{a}$</td>
+<td>the left and the right product, $L_{a}(x) = a \star x$ and $R_{a}(x) = x \star a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>N. Bourbaki, <em>Algebra I: Chapters 1–3</em> (Springer, 1989), for the semilinear algebra of a module over a ring with an involution, the setting in which a sesquilinear map is read as an ordinary bilinear map.</li>
+<li>Nathan Jacobson, <em>Structure of Rings</em> (American Mathematical Society, 1956), for the involution of a ring and the conjugate-linear maps it produces, which is the datum that makes a sesquilinear product different from a bilinear one.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the linear and the conjugate-linear kinds of anti-automorphism and the constraint the twist puts on them.</li>
+<li>Richard V. Kadison and John R. Ringrose, <em>Fundamentals of the Theory of Operator Algebras</em>, volume 1 (Academic Press, 1983), for the conjugate-linear operators, taken here algebraically and without the topology.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

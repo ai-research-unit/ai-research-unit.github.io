@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Group of Involutions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-group-of-involutions"><strong>The Group of Involutions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries two distinguished involutive anti-automorphisms, the <strong>Hermitian conjugation</strong> ${}^{*}$ and the <strong>quaternion conjugation</strong> ${}^{\natural}$. They commute, and together with the identity and their composite, the complex conjugation $\bar{\cdot}$, they form a group of order four, the <strong>Klein four-group</strong> $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$. This article treats the two maps and the group they generate: the two composition rules, the Cayley table, the subgroups, and the place of the fourth conjugation, the reversal, outside the group.</p>
+<p>The article reads the maps as involutions of the algebra and nothing else. The formulas of the four conjugations, the composition table that includes the reversal, and the lattice of fixed spaces they produce are <em>Biquaternion Involution Lattice</em>; the algebra, its basis and its four conjugations are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>. Neither is repeated here.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, the coefficients complex; units $e_0=1$ and $e_k^{2}=-e_0$; central scalar imaginary $i$; sign vector $\varepsilon=(1,-1,-1,-1)$. On the coefficients the four involutions act by</p>
+<p>$$
+({\tilde Q}^{\mathrm{id}})_\mu=Q_\mu , \qquad (\tilde Q^{\natural})_\mu=\varepsilon_\mu Q_\mu , \qquad ({\tilde Q}^{*})_\mu=\varepsilon_\mu \bar Q_\mu , \qquad (\bar{\tilde Q})_\mu=\bar Q_\mu .
+$$</p>
+<h2 id="the-extra-involution">The Extra Involution</h2>
+<p><strong>Definition.</strong> The <strong>Hermitian conjugation</strong> is the antilinear involution</p>
+<p>$$
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_0e_0-\bar Q_1e_1-\bar Q_2e_2-\bar Q_3e_3 ,
+$$</p>
+<p>the C<em>-involution of the algebra, and the </em><em>quaternion conjugation</em>* is the linear involution</p>
+<p>$$
+\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3 ,
+$$</p>
+<p>the <strong>extra involution</strong>: the second anti-automorphism of order two that the algebra carries.</p>
+<p><strong>Proposition (both reverse the product).</strong> For $\tilde Q,\tilde R\in\mathbb{B}$,</p>
+<p>$$
+(\tilde Q\tilde R)^{*}=\tilde R^{*}\tilde Q^{*}, \qquad (\tilde Q\tilde R)^{\natural}=\tilde R^{\natural}\tilde Q^{\natural}, \qquad \overline{\tilde Q\tilde R}=\bar{\tilde Q}\,\bar{\tilde R} .
+$$</p>
+<p>Thus ${}^{*}$ and ${}^{\natural}$ are anti-automorphisms, reversing the order of every product, while the complex conjugation is an automorphism, reversing nothing.</p>
+<p><strong>Proof.</strong> The formulas are read on the coefficients. The natural sign $\varepsilon$ multiplies the $\mu$-th coefficient of both factors, and $\varepsilon_\mu^{2}=1$, so the sign survives the expansion while the two factors exchange places; the bar is a ring homomorphism of $\mathbb{C}$ applied coefficient-wise, hence multiplicative and order-preserving.</p>
+<p><strong>Proposition (order two, and they commute).</strong> Each of the two is its own inverse, the two commute, and their composite is the complex conjugation:</p>
+<p>$$
+{}^{*}\circ{}^{*}=\mathrm{id}, \qquad {}^{\natural}\circ{}^{\natural}=\mathrm{id}, \qquad {}^{*}\circ{}^{\natural}={}^{\natural}\circ{}^{*}=\bar{\cdot} .
+$$</p>
+<p><strong>Proof.</strong> On each coefficient the natural sign is an involution, the bar is an involution, and the two commute, one multiplying by $\pm1$ and the other conjugating the scalar; composing the two coefficient rules gives the bar alone. The order of the two factors makes no difference because the two coefficient operations commute.</p>
+<p><strong>Remark (why the extra involution is not the C*-involution).</strong> Two differences separate it from ${}^{*}$. First, ${}^{\natural}$ is <strong>linear</strong>, commuting with the scalars of $\mathbb{C}$, whereas a C<em>-involution is conjugate-linear and ${}^{*}$ is so, ${}^{*}(\lambda\tilde Q)=\bar\lambda\,\tilde Q^{*}$ for $\lambda\in\mathbb{C}$. Second, ${}^{\natural}$ fixes the centre pointwise while ${}^{*}$ fixes it only up to the coefficient conjugation. In the matrix picture the extra involution is the composition of the coefficient conjugation with the conjugate transpose, $\natural=\bar{\cdot}\circ{}^{*}$, the C</em>-involution read after the coefficients are conjugated (<em>Biquaternion 2×2 Matrix Element Representation</em>). <strong>The extra involution is the second, independent anti-automorphism of order two that the algebra carries.</strong></p>
+<h2 id="the-group-of-involutions_1">The Group of Involutions</h2>
+<p><strong>Theorem.</strong> The set</p>
+<p>$$
+G=\{\mathrm{id},\,{}^{*},\,{}^{\natural},\,\bar{\cdot}\}
+$$</p>
+<p>is a group under composition, and it is the Klein four-group $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$: every element is its own inverse, and the composite of two distinct non-identity elements is the third.</p>
+<p><strong>Proof.</strong> Closure is the six products ${}^{*}\circ{}^{\natural}={}^{\natural}\circ{}^{*}=\bar{\cdot}$, ${}^{*}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{*}={}^{\natural}$ and ${}^{\natural}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{\natural}={}^{*}$, which lie in $G$ by the propositions above, together with the squares, which are $\mathrm{id}$. Composition of maps is associative, $\mathrm{id}$ is the unit, and every element is its own inverse. A group of order four in which every element has order two has no element of order four, hence is not cyclic, and is therefore $V_{4}$.</p>
+<p>The Cayley table, the entry being the map applied first in the row and then in the column, is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\circ$</th>
+<th>$\mathrm{id}$</th>
+<th>${}^{*}$</th>
+<th>${}^{\natural}$</th>
+<th>$\bar{\cdot}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{id}$</td>
+<td>$\mathrm{id}$</td>
+<td>${}^{*}$</td>
+<td>${}^{\natural}$</td>
+<td>$\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>${}^{*}$</td>
+<td>$\mathrm{id}$</td>
+<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>${}^{\natural}$</td>
+<td>$\bar{\cdot}$</td>
+<td>$\mathrm{id}$</td>
+<td>${}^{*}$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\cdot}$</td>
+<td>${}^{\natural}$</td>
+<td>${}^{*}$</td>
+<td>$\mathrm{id}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the group is abelian).</strong> Every square is the identity and the table is symmetric, so the four maps may be applied in any order, and the conjugation action of the group on itself is trivial. <strong>The group is abelian, and the four involutions commute pairwise.</strong></p>
+<p><strong>Remark (the reversal is outside).</strong> The fourth conjugation of the algebra, the reversal $\flat=-{}^{*}$, is not an element of $G$: its square is $\mathrm{id}$, but $\flat\circ{}^{*}=-\mathrm{id}$ is not one of the four, so the set $\{{}^{*},{}^{\natural},\bar{\cdot},\flat\}$ is not closed. The reversal is an anti-automorphism only up to the central sign, since $(\tilde Q\tilde R)^{\flat}=-\tilde R^{\flat}\tilde Q^{\flat}$, and its compositions are read in the composition table of <em>Biquaternion Involution Lattice</em>.</p>
+<h2 id="the-structure-of-the-group">The Structure of the Group</h2>
+<p><strong>Proposition (the subgroups).</strong> The group has exactly three subgroups of order two, one for each non-identity element,</p>
+<p>$$
+\{\mathrm{id},{}^{*}\}, \qquad \{\mathrm{id},{}^{\natural}\}, \qquad \{\mathrm{id},\bar{\cdot}\},
+$$</p>
+<p>and no subgroup of order three; its only subgroup of order four is $G$ itself. Each of the three is the subgroup generated by one of the three non-identity elements, and the three are the only proper subgroups.</p>
+<p><strong>Proof.</strong> A subgroup order divides the order of the group, so the orders available are one, two and four; an element of order two generates a subgroup of order two, and each of the three non-identity elements is its own inverse, so each generates one. No two of them generate the same subgroup, since the elements are distinct, and a subgroup of order two contains the identity and one further element. A subgroup of order three would have an element of order three by Lagrange applied to the prime $3$, and the group has none.</p>
+<p><strong>Proposition (two generate the group).</strong> Any two distinct non-identity elements of the group generate it. In particular the pair ${}^{\natural}$, ${}^{*}$ presented in the two Propositions of §<em>The Extra Involution</em> generates $G$, the third element being their composite $\bar{\cdot}$.</p>
+<p><strong>Proof.</strong> Each non-identity element has order two, and the composite of two distinct ones is the third, which is contained in the subgroup they generate; the subgroup therefore contains three non-identity elements and the identity, and is $G$.</p>
+<p><strong>Remark (two choices of generators).</strong> <em>Biquaternions as a Vector Space over $\mathbb{C}$</em> and <em>Biquaternion Involution Lattice</em> write the two generators as ${}^{\natural}$ and $\bar{\cdot}$; this article writes them as ${}^{\natural}$ and ${}^{*}$. The two choices describe the same group, since ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ and $\bar{\cdot}={}^{*}\circ{}^{\natural}$, and either pair generates the third element. The pair is a choice of presentation and not a property of the group.</p>
+<p><strong>Remark (the group is elementary abelian).</strong> The group is the direct product of the two subgroups $\{\mathrm{id},{}^{*}\}$ and $\{\mathrm{id},{}^{\natural}\}$, whose intersection is $\{\mathrm{id}\}$, so</p>
+<p>$$
+G=\{\mathrm{id},{}^{*}\}\times\{\mathrm{id},{}^{\natural}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2} ,
+$$</p>
+<p>with the third order-two subgroup the diagonal $\{\mathrm{id},\bar{\cdot}\}$. Every element has order two, so the exponent of the group is two and the group is generated by its involutions, which is the reason the group is called the group of involutions. <strong>The group is elementary abelian of order four, and its three involutions together with the identity are the four maps of the table.</strong></p>
+<p><strong>Proof.</strong> The two subgroups are normal, being index two and of order two, their intersection is trivial and their product contains four elements; the diagonal subgroup is generated by their composites, which are all equal to $\bar{\cdot}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra carries two commuting involutive anti-automorphisms of order two, the Hermitian conjugation ${}^{*}$ and the quaternion conjugation ${}^{\natural}$; the first is the C*-involution, conjugate-linear, and the second is the extra involution, linear, both reversing the order of every product. With the identity and their composite, the complex conjugation $\bar{\cdot}$, they form the Klein four-group $G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, in which every element is its own inverse, the composite of two distinct non-identity elements is the third, and the table is symmetric. The group has exactly three proper subgroups, the order-two subgroups generated by the three non-identity elements, any two of which generate the group; it is elementary abelian, the direct product of the subgroups of ${}^{*}$ and of ${}^{\natural}$, and its exponent is two. The reversal $\flat=-{}^{*}$ lies outside the group, being an anti-automorphism only up to the central sign.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{*}$</td>
+<td>Hermitian conjugation, the C*-involution, $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>quaternion conjugation, the extra involution, linear of order two</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>complex conjugation, the composite ${}^{*}\circ{}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\flat=-{}^{*}$</td>
+<td>the reversal, outside the group</td>
+</tr>
+<tr>
+<td>$G=\{\mathrm{id},{}^{*},{}^{\natural},\bar{\cdot}\}$</td>
+<td>the group of involutions, the Klein four-group</td>
+</tr>
+<tr>
+<td>$\{\mathrm{id},{}^{*}\}$, $\{\mathrm{id},{}^{\natural}\}$, $\{\mathrm{id},\bar{\cdot}\}$</td>
+<td>the three subgroups of order two</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector of the natural conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Biquaternions as a Vector Space over $\mathbb{C}$</em> (<code>articles_maths/biquaternions-as-a-vector-space-over-c.md</code>), for the algebra, its basis and its four conjugations</li>
+<li><em>Biquaternion Involution Lattice</em> (<code>articles_maths/biquaternion-involution-lattice.md</code>), for the formulas of the conjugations, the composition table and the lattice of fixed spaces</li>
+<li><em>Biquaternion 2×2 Matrix Element Representation</em> (<code>articles_maths/biquaternion-2x2-matrix-element-representation.md</code>), for the matrix picture in which the extra involution is the coefficient conjugation composed with the conjugate transpose</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
