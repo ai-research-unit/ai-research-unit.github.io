@@ -10,7 +10,7 @@ Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of 
 
 ## The Data Table
 
-The table is the summary; each row is justified in the sections below. In the last two columns "right" means that $1$ is a right unit and not a left one, and "no" means that there is no unit of either kind.
+The table is the summary; each row is justified in the sections below.
 
 | Example | datum $(R,\varsigma)$ | involution / twist | product $\star$ | associative | commutative | unit | full type |
 |---|---|---|---|---|---|---|---|
@@ -22,10 +22,12 @@ The table is the summary; each row is justified in the sections below. In the la
 | $M_n(\mathbb{C})$, $n \geq 2$ | $(\mathbb{C},\text{conj})$ | second slot ${}^{*} = \overline{X}^{T}$ | $ST^{*}$ | no | no | right | yes |
 | $\mathbb{B}$ | $(\mathbb{C},\text{conj})$ | second slot $*$ | $PQ^{*}$ | no | no | right | yes |
 | $\mathbb{B}$ | $(\mathbb{C},\mathrm{id})$ | trivial | $PQ$ | yes | no | yes | yes |
-| $\mathbb{B}$ | $(\mathbb{C},\mathrm{id})$ | first slot ${}^{\natural}$ | ${}^{\natural}PQ$ | no | no | none | yes |
+| $\mathbb{B}$ | $(\mathbb{C},\mathrm{id})$ | first slot ${}^{\natural}$ | ${}^{\natural}PQ$ | no | no | left | yes |
 | $\mathbb{B}$ | $(\mathbb{C},\text{conj})$ | first slot ${}^{\natural}$, second slot $*$ | ${}^{\natural}PQ^{*}$ | no | no | none | yes |
 | $R[G]$ | $(R,\varsigma)$ | second slot $g \mapsto g^{-1}$ | $xy^{*}$ | only $\varsigma = \mathrm{id}$, $G$ of exponent two | same | right | yes |
 | any $R$-module | any $(R,\varsigma)$ | any | $0$ | yes | yes | none | no |
+
+In the column **involution / twist** the involution named is the one carried by the second slot in the derived form $x\star y = xy^{*}$, and "first slot ${}^{\natural}$" records that the product is not of the derived form but twists its first slot by the $\mathbb{C}$-linear ${}^{\natural}$, as the biquaternion entries below explain. In the column **unit**, "right" means that $e_0$ is a right unit and not a left one, "left" means that $e_0$ is a left unit and not a right one, and "none" means that there is no unit of either kind.
 
 ## The Field with Its Involution
 
@@ -37,13 +39,13 @@ $$
 
 The associator vanishes for all $x, y, z$ exactly when $\varsigma = \mathrm{id}$ (take $y = 1$), and the same test with the commutator shows that the product is commutative on the same condition. The element $1$ is a right unit, $z\star1 = z$, and it is not a left unit when $\varsigma \neq \mathrm{id}$, since $1\star z = \varsigma(z)$. This is the smallest genuinely sesquilinear example, and it is the one the collapse theorem is read on: the field is faithful over itself with generating products, so it is of full type, and it is neither associative nor commutative as soon as the involution is nontrivial.
 
-**Example (the complex numbers).** With $K = \mathbb{C}$ and $\varsigma$ the conjugation the product is $x\star y = x\bar y$, the standard sesquilinear product on the plane, not associative and not commutative, with $1$ a right unit and no two-sided one. This is the case $n = 1$ of the matrix example below, and the simplest instance of the collapse: read over $(\mathbb{C},\varsigma)$ it is genuinely sesquilinear, while read over $(\mathbb{R},\mathrm{id})$ the same product is $\mathbb{R}$-bilinear and the object is an ordinary, non-associative real algebra on two generators. The two readings are *Real Forms of a Sesquialgebra*.
+**Example (the complex numbers).** With $K = \mathbb{C}$ and $\varsigma$ the conjugation the product is $x\star y = x\bar y$, the standard sesquilinear product on the plane, not associative and not commutative, with $1$ a right unit and no two-sided one. This is the case $n = 1$ of the matrix example below, and the simplest instance of the collapse: read over $(\mathbb{C},\varsigma)$ it is genuinely sesquilinear, while read over $(\mathbb{R},\mathrm{id})$ the same product is $\mathbb{R}$-bilinear and the object is an ordinary, non-associative real algebra of rank two. The two readings are *Real Forms of a Sesquialgebra*.
 
 ## The Real Algebras and the Collapse
 
 ### The Split Complex and the Dual Numbers
 
-**Example.** Let $A$ be $\mathbb{D}$, $\mathbb{D}'$ or any real algebra, with an $\mathbb{R}$-linear involution ${}^{*}$ and the derived product $x\star y = xy^{*}$. The datum is $(\mathbb{R},\mathrm{id})$, the second scalar rule is the first, the product is $\mathbb{R}$-bilinear, and the object is an ordinary real algebra: this is the collapse of the category, and every statement about it is a statement about algebras. The derived operation is associative exactly when $xy^{*}$ is the algebra product, that is exactly when ${}^{*} = \mathrm{id}$; for the involution $j\mapsto -j$ of $\mathbb{D}$ it is not, and the failure is the same one as over the complex numbers. The products of the split complex numbers are the prototypes of the two-dimensional entries, and the idempotents $e_{\pm} = \tfrac12(1\pm j)$ are Hermitian for $j\mapsto -j$, since the involution fixes $j$ and $1$.
+**Example.** Let $A$ be $\mathbb{D}$, $\mathbb{D}'$ or any real algebra, with an $\mathbb{R}$-linear involution ${}^{*}$ and the derived product $x\star y = xy^{*}$. The datum is $(\mathbb{R},\mathrm{id})$, the second scalar rule is the first, the product is $\mathbb{R}$-bilinear, and the object is an ordinary real algebra: this is the collapse of the category, and every statement about it is a statement about algebras. The derived operation is associative exactly when $xy^{*}$ is the algebra product, that is exactly when ${}^{*} = \mathrm{id}$; for the involution $j\mapsto -j$ of $\mathbb{D}$ it is not, and the failure is the same one as over the complex numbers. The products of the split complex numbers are the prototypes of the rank-two entries, and the idempotents $e_{\pm} = \tfrac12(1\pm j)$ are Hermitian for $j\mapsto -j$, since the involution fixes $j$ and $1$.
 
 ### The Quaternions
 
@@ -73,11 +75,11 @@ and it is not commutative, on the witness $E_{12}\star I = E_{12}$ against $I\st
 
 ### The Linear Conjugation and the Bilinear Twist
 
-**Example.** Let $A = \mathbb{B}$ over $(\mathbb{C},\mathrm{id})$ with the quaternion conjugation ${}^{\natural}$ and the product $P\,{}^{\natural}Q$. This is the caution of *Biquaternions as a Sesquialgebra over $\mathbb{C}$* read as an entry of the table: ${}^{\natural}$ is $\mathbb{C}$-**linear**, since it fixes the complex scalars, so a slot twisted by it is still $\mathbb{C}$-linear, the product is $\mathbb{C}$-bilinear, and the datum is $(\mathbb{C},\mathrm{id})$. The product is not associative and has no unit at all, since $P\,{}^{\natural}Q$ with $Q = e_0$ gives ${}^{\natural}P$. The entry is in the list because it is the example that decides the shape of the definition: a product whose **second** slot carries the star is sesquilinear for the conjugation whatever the first slot carries, while a product whose second slot carries ${}^{\natural}$ is bilinear, and the two are told apart by the datum and not by the coordinates.
+**Example.** Let $A = \mathbb{B}$ over $(\mathbb{C},\mathrm{id})$ with the quaternion conjugation ${}^{\natural}$ carried by the **first** slot, and the product ${}^{\natural}PQ$. This is the caution of *Biquaternions as a Sesquialgebra over $\mathbb{C}$* read as an entry of the table: ${}^{\natural}$ is $\mathbb{C}$-**linear**, since it fixes the complex scalars, so a slot read through it is still $\mathbb{C}$-linear, the product is $\mathbb{C}$-bilinear, and the datum is $(\mathbb{C},\mathrm{id})$. The product is not associative, and it has a left unit and no right one: the product with $P = e_0$ is $Q$, while the product with $Q = e_0$ is ${}^{\natural}P$, so $e_0$ acts on the left and not on the right. The entry is in the list because it fixes the shape of the definition: the conjugation that makes a product sesquilinear is the conjugate-linear ${}^{*}$, a product whose **second** slot carried ${}^{\natural}$ in its place would be bilinear, and a product whose second slot carries ${}^{*}$ is sesquilinear whatever its first slot carries.
 
 ### The Four Products
 
-**Example.** The four products of *The Four Biquaternion Complex Products* are read in the table as four entries on one algebra: the algebra product $PQ$, the linear twist $P\,{}^{\natural}Q$, the derived operation $PQ^{*}$, and the mixed product $P\,{}^{\natural}Q^{*}$. The first two are $\mathbb{C}$-bilinear and belong to $(\mathbb{C},\mathrm{id})$, the second two are conjugate-linear in the second slot and belong to $(\mathbb{C},\varsigma)$. Each of the four makes $\mathbb{B}$ a sesquialgebra for its own datum — associativity is not one of the axioms, and the two scalar rules alone do not separate the four — and exactly one of them, $PQ^{*}$, is the derived operation of the algebra with a conjugate-linear involution, the criterion being the two conditions (i) and (ii) of the article named. This is the sharpest warning of the list against identifying an object with its product: the algebra is one, the products are four, and the datum and the derived form are the data that tell them apart.
+**Example.** The four products of *The Four Biquaternion Complex Products* are read in the table as four entries on one algebra: the algebra product $PQ$, the linear twist ${}^{\natural}PQ$, the derived operation $PQ^{*}$, and the mixed product ${}^{\natural}PQ^{*}$. The first two are $\mathbb{C}$-bilinear and belong to $(\mathbb{C},\mathrm{id})$, the second two are conjugate-linear in the second slot and belong to $(\mathbb{C},\varsigma)$. Each of the four makes $\mathbb{B}$ a sesquialgebra for its own datum — associativity is not one of the axioms, and the two scalar rules alone do not separate the four — and exactly one of them, $PQ^{*}$, is the derived operation of the algebra with a conjugate-linear involution; the two conditions that single it out are those of *Biquaternions as a Sesquialgebra over $\mathbb{C}$*. This is the sharpest warning of the list against identifying an object with its product: the algebra is one, the products are four, and the datum and the derived form are the data that tell them apart.
 
 ## The Group Algebra
 
@@ -153,4 +155,4 @@ The governing fact is the **collapse**: with $\varsigma = \mathrm{id}$ the objec
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the classification and the examples of the algebras that the collapsed entries are read on.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of the classical algebras and their semilinear counterparts.
-- Kenneth R. Goodearl and Robert B. Warfield, Jr., *An Introduction to Noncommutative Noetherian Rings* (Cambridge University Press, second edition, 2004), for the group algebras, their involutions and their units.
+- Donald S. Passman, *The Algebraic Structure of Group Rings* (Wiley, 1977), for the group algebras, their units and their zero divisors.
